@@ -14,8 +14,7 @@ trait WebRequestOnErrorOccurredEvent[TCallback] extends StObject {
 }
 object WebRequestOnErrorOccurredEvent {
   
-  @scala.inline
-  def apply[TCallback](
+  inline def apply[TCallback](
     addListener: (TCallback, RequestFilter) => Unit,
     hasListener: TCallback => Boolean,
     removeListener: TCallback => Unit
@@ -24,16 +23,12 @@ object WebRequestOnErrorOccurredEvent {
     __obj.asInstanceOf[WebRequestOnErrorOccurredEvent[TCallback]]
   }
   
-  @scala.inline
-  implicit class WebRequestOnErrorOccurredEventMutableBuilder[Self <: WebRequestOnErrorOccurredEvent[?], TCallback] (val x: Self & WebRequestOnErrorOccurredEvent[TCallback]) extends AnyVal {
+  extension [Self <: WebRequestOnErrorOccurredEvent[?], TCallback](x: Self & WebRequestOnErrorOccurredEvent[TCallback]) {
     
-    @scala.inline
-    def setAddListener(value: (TCallback, RequestFilter) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+    inline def setAddListener(value: (TCallback, RequestFilter) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
+    inline def setHasListener(value: TCallback => Boolean): Self = StObject.set(x, "hasListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+    inline def setRemoveListener(value: TCallback => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
   }
 }

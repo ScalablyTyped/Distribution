@@ -58,8 +58,7 @@ object QioFS {
   }
   object NodeStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       atime: Date,
       blksize: Double,
       blocks: Double,
@@ -86,71 +85,49 @@ object QioFS {
       __obj.asInstanceOf[NodeStats]
     }
     
-    @scala.inline
-    implicit class NodeStatsMutableBuilder[Self <: NodeStats] (val x: Self) extends AnyVal {
+    extension [Self <: NodeStats](x: Self) {
       
-      @scala.inline
-      def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
+      inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
+      inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
+      inline def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCharacterDevice(value: () => Boolean): Self = StObject.set(x, "isCharacterDevice", js.Any.fromFunction0(value))
+      inline def setIsCharacterDevice(value: () => Boolean): Self = StObject.set(x, "isCharacterDevice", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
+      inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFIFO(value: () => Boolean): Self = StObject.set(x, "isFIFO", js.Any.fromFunction0(value))
+      inline def setIsFIFO(value: () => Boolean): Self = StObject.set(x, "isFIFO", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
+      inline def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSocket(value: () => Boolean): Self = StObject.set(x, "isSocket", js.Any.fromFunction0(value))
+      inline def setIsSocket(value: () => Boolean): Self = StObject.set(x, "isSocket", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
+      inline def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
+      inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: NodeStats): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: NodeStats): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
+      inline def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,20 +143,16 @@ object QioFS {
   }
   object Stats {
     
-    @scala.inline
-    def apply(node: NodeStats, size: Double): Stats = {
+    inline def apply(node: NodeStats, size: Double): Stats = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setNode(value: NodeStats): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: NodeStats): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

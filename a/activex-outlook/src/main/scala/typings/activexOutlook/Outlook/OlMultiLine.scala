@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMultiLine extends StObject
 object OlMultiLine {
   
-  @scala.inline
-  def olAlwaysMultiLine: `2` = 2.asInstanceOf[`2`]
+  inline def olAlwaysMultiLine: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olAlwaysSingleLine: `1` = 1.asInstanceOf[`1`]
+  inline def olAlwaysSingleLine: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olWidthMultiLine: `0` = 0.asInstanceOf[`0`]
+  inline def olWidthMultiLine: `0` = 0.asInstanceOf[`0`]
 }

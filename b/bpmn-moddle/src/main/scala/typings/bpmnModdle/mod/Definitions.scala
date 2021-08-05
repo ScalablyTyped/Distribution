@@ -32,8 +32,7 @@ trait Definitions
 }
 object Definitions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     diagrams: BPMNDiagram,
@@ -53,52 +52,36 @@ object Definitions {
     __obj.asInstanceOf[Definitions]
   }
   
-  @scala.inline
-  implicit class DefinitionsMutableBuilder[Self <: Definitions] (val x: Self) extends AnyVal {
+  extension [Self <: Definitions](x: Self) {
     
-    @scala.inline
-    def setDiagrams(value: BPMNDiagram): Self = StObject.set(x, "diagrams", value.asInstanceOf[js.Any])
+    inline def setDiagrams(value: BPMNDiagram): Self = StObject.set(x, "diagrams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEr(value: String): Self = StObject.set(x, "er", value.asInstanceOf[js.Any])
+    inline def setEr(value: String): Self = StObject.set(x, "er", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErVersion(value: String): Self = StObject.set(x, "erVersion", value.asInstanceOf[js.Any])
+    inline def setErVersion(value: String): Self = StObject.set(x, "erVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionLanguage(value: String): Self = StObject.set(x, "expressionLanguage", value.asInstanceOf[js.Any])
+    inline def setExpressionLanguage(value: String): Self = StObject.set(x, "expressionLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationship(value: js.Array[Relationship]): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    inline def setRelationship(value: js.Array[Relationship]): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipVarargs(value: Relationship*): Self = StObject.set(x, "relationship", js.Array(value :_*))
+    inline def setRelationshipVarargs(value: Relationship*): Self = StObject.set(x, "relationship", js.Array(value :_*))
     
-    @scala.inline
-    def setRootElements(value: js.Array[RootElement]): Self = StObject.set(x, "rootElements", value.asInstanceOf[js.Any])
+    inline def setRootElements(value: js.Array[RootElement]): Self = StObject.set(x, "rootElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootElementsVarargs(value: RootElement*): Self = StObject.set(x, "rootElements", js.Array(value :_*))
+    inline def setRootElementsVarargs(value: RootElement*): Self = StObject.set(x, "rootElements", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetNamespace(value: String): Self = StObject.set(x, "targetNamespace", value.asInstanceOf[js.Any])
+    inline def setTargetNamespace(value: String): Self = StObject.set(x, "targetNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeLanguage(value: String): Self = StObject.set(x, "typeLanguage", value.asInstanceOf[js.Any])
+    inline def setTypeLanguage(value: String): Self = StObject.set(x, "typeLanguage", value.asInstanceOf[js.Any])
   }
 }

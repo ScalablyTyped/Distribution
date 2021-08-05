@@ -10,16 +10,13 @@ trait EnumValuesAliasMemberGroupRole extends StObject {
 }
 object EnumValuesAliasMemberGroupRole {
   
-  @scala.inline
-  def apply(enumValues: AliasMemberGroupRole): EnumValuesAliasMemberGroupRole = {
+  inline def apply(enumValues: AliasMemberGroupRole): EnumValuesAliasMemberGroupRole = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAliasMemberGroupRole]
   }
   
-  @scala.inline
-  implicit class EnumValuesAliasMemberGroupRoleMutableBuilder[Self <: EnumValuesAliasMemberGroupRole] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAliasMemberGroupRole](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AliasMemberGroupRole): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AliasMemberGroupRole): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

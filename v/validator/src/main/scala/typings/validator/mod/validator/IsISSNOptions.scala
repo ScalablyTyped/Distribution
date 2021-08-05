@@ -20,25 +20,19 @@ trait IsISSNOptions extends StObject {
 }
 object IsISSNOptions {
   
-  @scala.inline
-  def apply(): IsISSNOptions = {
+  inline def apply(): IsISSNOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsISSNOptions]
   }
   
-  @scala.inline
-  implicit class IsISSNOptionsMutableBuilder[Self <: IsISSNOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsISSNOptions](x: Self) {
     
-    @scala.inline
-    def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
+    inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCase_sensitiveUndefined: Self = StObject.set(x, "case_sensitive", js.undefined)
+    inline def setCase_sensitiveUndefined: Self = StObject.set(x, "case_sensitive", js.undefined)
     
-    @scala.inline
-    def setRequire_hyphen(value: Boolean): Self = StObject.set(x, "require_hyphen", value.asInstanceOf[js.Any])
+    inline def setRequire_hyphen(value: Boolean): Self = StObject.set(x, "require_hyphen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequire_hyphenUndefined: Self = StObject.set(x, "require_hyphen", js.undefined)
+    inline def setRequire_hyphenUndefined: Self = StObject.set(x, "require_hyphen", js.undefined)
   }
 }

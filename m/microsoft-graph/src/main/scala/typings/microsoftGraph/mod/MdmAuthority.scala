@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MdmAuthority extends StObject
 object MdmAuthority {
   
-  @scala.inline
-  def intune: typings.microsoftGraph.microsoftGraphStrings.intune = "intune".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.intune]
+  inline def intune: typings.microsoftGraph.microsoftGraphStrings.intune = "intune".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.intune]
   
-  @scala.inline
-  def office365: typings.microsoftGraph.microsoftGraphStrings.office365 = "office365".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.office365]
+  inline def office365: typings.microsoftGraph.microsoftGraphStrings.office365 = "office365".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.office365]
   
-  @scala.inline
-  def sccm: typings.microsoftGraph.microsoftGraphStrings.sccm = "sccm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sccm]
+  inline def sccm: typings.microsoftGraph.microsoftGraphStrings.sccm = "sccm".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sccm]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }

@@ -14,25 +14,19 @@ trait Room extends StObject {
 }
 object Room {
   
-  @scala.inline
-  def apply(room: String, sender: String): Room = {
+  inline def apply(room: String, sender: String): Room = {
     val __obj = js.Dynamic.literal(room = room.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[Room]
   }
   
-  @scala.inline
-  implicit class RoomMutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
+  extension [Self <: Room](x: Self) {
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

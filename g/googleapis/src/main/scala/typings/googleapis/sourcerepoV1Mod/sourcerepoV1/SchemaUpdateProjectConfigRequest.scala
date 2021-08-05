@@ -23,25 +23,19 @@ trait SchemaUpdateProjectConfigRequest extends StObject {
 }
 object SchemaUpdateProjectConfigRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateProjectConfigRequest = {
+  inline def apply(): SchemaUpdateProjectConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateProjectConfigRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateProjectConfigRequestMutableBuilder[Self <: SchemaUpdateProjectConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateProjectConfigRequest](x: Self) {
     
-    @scala.inline
-    def setProjectConfig(value: SchemaProjectConfig): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
+    inline def setProjectConfig(value: SchemaProjectConfig): Self = StObject.set(x, "projectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectConfigUndefined: Self = StObject.set(x, "projectConfig", js.undefined)
+    inline def setProjectConfigUndefined: Self = StObject.set(x, "projectConfig", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -11,7 +11,7 @@ object storybookStaticsServerMod {
   @js.native
   class StorybookStaticsServer () extends StObject {
     
-    var server: js.Any = js.native
+    /* private */ var server: js.Any = js.native
     
     def start(hasPort: Port): js.Promise[js.Object] = js.native
     

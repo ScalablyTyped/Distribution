@@ -12,25 +12,19 @@ trait ExcelTable extends StObject {
 }
 object ExcelTable {
   
-  @scala.inline
-  def apply(columns: js.Array[ExcelColumn], rows: js.Array[ExcelRow]): ExcelTable = {
+  inline def apply(columns: js.Array[ExcelColumn], rows: js.Array[ExcelRow]): ExcelTable = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelTable]
   }
   
-  @scala.inline
-  implicit class ExcelTableMutableBuilder[Self <: ExcelTable] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelTable](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[ExcelColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[ExcelColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: ExcelColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ExcelColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: js.Array[ExcelRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[ExcelRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: ExcelRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: ExcelRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

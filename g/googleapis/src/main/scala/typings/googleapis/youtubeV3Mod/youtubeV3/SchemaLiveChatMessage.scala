@@ -39,43 +39,31 @@ trait SchemaLiveChatMessage extends StObject {
 }
 object SchemaLiveChatMessage {
   
-  @scala.inline
-  def apply(): SchemaLiveChatMessage = {
+  inline def apply(): SchemaLiveChatMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatMessage]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatMessageMutableBuilder[Self <: SchemaLiveChatMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatMessage](x: Self) {
     
-    @scala.inline
-    def setAuthorDetails(value: SchemaLiveChatMessageAuthorDetails): Self = StObject.set(x, "authorDetails", value.asInstanceOf[js.Any])
+    inline def setAuthorDetails(value: SchemaLiveChatMessageAuthorDetails): Self = StObject.set(x, "authorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorDetailsUndefined: Self = StObject.set(x, "authorDetails", js.undefined)
+    inline def setAuthorDetailsUndefined: Self = StObject.set(x, "authorDetails", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: SchemaLiveChatMessageSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: SchemaLiveChatMessageSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

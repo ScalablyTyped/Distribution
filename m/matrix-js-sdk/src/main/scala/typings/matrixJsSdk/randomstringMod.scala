@@ -10,6 +10,5 @@ object randomstringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def randomString(len: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(len.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def randomString(len: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("randomString")(len.asInstanceOf[js.Any]).asInstanceOf[String]
 }

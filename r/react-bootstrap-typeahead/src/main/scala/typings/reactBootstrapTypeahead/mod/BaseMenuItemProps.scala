@@ -14,19 +14,15 @@ trait BaseMenuItemProps
 }
 object BaseMenuItemProps {
   
-  @scala.inline
-  def apply(): BaseMenuItemProps = {
+  inline def apply(): BaseMenuItemProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseMenuItemProps]
   }
   
-  @scala.inline
-  implicit class BaseMenuItemPropsMutableBuilder[Self <: BaseMenuItemProps] (val x: Self) extends AnyVal {
+  extension [Self <: BaseMenuItemProps](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ trait subscribeSuccessArgs
 }
 object subscribeSuccessArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: String,
     channels: js.Array[String],
     client: client,
@@ -46,25 +45,18 @@ object subscribeSuccessArgs {
     __obj.asInstanceOf[subscribeSuccessArgs]
   }
   
-  @scala.inline
-  implicit class subscribeSuccessArgsMutableBuilder[Self <: subscribeSuccessArgs] (val x: Self) extends AnyVal {
+  extension [Self <: subscribeSuccessArgs](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
+    inline def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedClients(value: js.Array[subscribedClient]): Self = StObject.set(x, "subscribedClients", value.asInstanceOf[js.Any])
+    inline def setSubscribedClients(value: js.Array[subscribedClient]): Self = StObject.set(x, "subscribedClients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "subscribedClients", js.Array(value :_*))
+    inline def setSubscribedClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "subscribedClients", js.Array(value :_*))
   }
 }

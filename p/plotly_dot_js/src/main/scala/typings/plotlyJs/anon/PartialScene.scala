@@ -43,88 +43,61 @@ trait PartialScene extends StObject {
 }
 object PartialScene {
   
-  @scala.inline
-  def apply(): PartialScene = {
+  inline def apply(): PartialScene = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialScene]
   }
   
-  @scala.inline
-  implicit class PartialSceneMutableBuilder[Self <: PartialScene] (val x: Self) extends AnyVal {
+  extension [Self <: PartialScene](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: PartialAnnotations | js.Array[PartialAnnotations]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: PartialAnnotations | js.Array[PartialAnnotations]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setAnnotationsVarargs(value: PartialAnnotations*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: PartialAnnotations*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
-    @scala.inline
-    def setAspectmode(value: auto | cube | data | manual): Self = StObject.set(x, "aspectmode", value.asInstanceOf[js.Any])
+    inline def setAspectmode(value: auto | cube | data | manual): Self = StObject.set(x, "aspectmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectmodeUndefined: Self = StObject.set(x, "aspectmode", js.undefined)
+    inline def setAspectmodeUndefined: Self = StObject.set(x, "aspectmode", js.undefined)
     
-    @scala.inline
-    def setAspectratio(value: PartialPoint): Self = StObject.set(x, "aspectratio", value.asInstanceOf[js.Any])
+    inline def setAspectratio(value: PartialPoint): Self = StObject.set(x, "aspectratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectratioUndefined: Self = StObject.set(x, "aspectratio", js.undefined)
+    inline def setAspectratioUndefined: Self = StObject.set(x, "aspectratio", js.undefined)
     
-    @scala.inline
-    def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+    inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+    inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    @scala.inline
-    def setCamera(value: PartialCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: PartialCamera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setCaptureevents(value: Boolean): Self = StObject.set(x, "captureevents", value.asInstanceOf[js.Any])
+    inline def setCaptureevents(value: Boolean): Self = StObject.set(x, "captureevents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureeventsUndefined: Self = StObject.set(x, "captureevents", js.undefined)
+    inline def setCaptureeventsUndefined: Self = StObject.set(x, "captureevents", js.undefined)
     
-    @scala.inline
-    def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: PartialDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setDragmode(value: orbit | turntable | zoom | pan | `false`): Self = StObject.set(x, "dragmode", value.asInstanceOf[js.Any])
+    inline def setDragmode(value: orbit | turntable | zoom | pan | `false`): Self = StObject.set(x, "dragmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragmodeUndefined: Self = StObject.set(x, "dragmode", js.undefined)
+    inline def setDragmodeUndefined: Self = StObject.set(x, "dragmode", js.undefined)
     
-    @scala.inline
-    def setHovermode(value: closest | `false`): Self = StObject.set(x, "hovermode", value.asInstanceOf[js.Any])
+    inline def setHovermode(value: closest | `false`): Self = StObject.set(x, "hovermode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHovermodeUndefined: Self = StObject.set(x, "hovermode", js.undefined)
+    inline def setHovermodeUndefined: Self = StObject.set(x, "hovermode", js.undefined)
     
-    @scala.inline
-    def setXaxis(value: PartialSceneAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    inline def setXaxis(value: PartialSceneAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
+    inline def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
     
-    @scala.inline
-    def setYaxis(value: PartialSceneAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    inline def setYaxis(value: PartialSceneAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
+    inline def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
     
-    @scala.inline
-    def setZaxis(value: PartialSceneAxis): Self = StObject.set(x, "zaxis", value.asInstanceOf[js.Any])
+    inline def setZaxis(value: PartialSceneAxis): Self = StObject.set(x, "zaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZaxisUndefined: Self = StObject.set(x, "zaxis", js.undefined)
+    inline def setZaxisUndefined: Self = StObject.set(x, "zaxis", js.undefined)
   }
 }

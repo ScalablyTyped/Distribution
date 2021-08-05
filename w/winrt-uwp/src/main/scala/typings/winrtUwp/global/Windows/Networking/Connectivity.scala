@@ -234,24 +234,21 @@ object Connectivity {
       * @return The established APN connection.
       */
     /* static member */
-    @scala.inline
-    def acquireConnectionAsync(CellularApnContext: typings.winrtUwp.Windows.Networking.Connectivity.CellularApnContext): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionSession] = ^.asInstanceOf[js.Dynamic].applyDynamic("acquireConnectionAsync")(CellularApnContext.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionSession]]
+    inline def acquireConnectionAsync(CellularApnContext: typings.winrtUwp.Windows.Networking.Connectivity.CellularApnContext): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionSession] = ^.asInstanceOf[js.Dynamic].applyDynamic("acquireConnectionAsync")(CellularApnContext.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionSession]]
     
     /**
       * Specifies a RoutePolicy that the Http stack (WinInet) will follow when routing traffic.
       * @param RoutePolicy Indicates the policy for traffic routing.
       */
     /* static member */
-    @scala.inline
-    def addHttpRoutePolicy(RoutePolicy: typings.winrtUwp.Windows.Networking.Connectivity.RoutePolicy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHttpRoutePolicy")(RoutePolicy.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addHttpRoutePolicy(RoutePolicy: typings.winrtUwp.Windows.Networking.Connectivity.RoutePolicy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHttpRoutePolicy")(RoutePolicy.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes a previously specified RoutePolicy from the Http stack (WinInet).
       * @param RoutePolicy The RoutePolicy to remove.
       */
     /* static member */
-    @scala.inline
-    def removeHttpRoutePolicy(RoutePolicy: typings.winrtUwp.Windows.Networking.Connectivity.RoutePolicy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHttpRoutePolicy")(RoutePolicy.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeHttpRoutePolicy(RoutePolicy: typings.winrtUwp.Windows.Networking.Connectivity.RoutePolicy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHttpRoutePolicy")(RoutePolicy.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /** Represents the current status information for the data plan associated with a connection. */
@@ -548,12 +545,10 @@ object Connectivity {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_networkstatuschanged(`type`: networkstatuschanged, listener: NetworkStatusChangedEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_networkstatuschanged(`type`: networkstatuschanged, listener: NetworkStatusChangedEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns an array of ConnectionProfile objects that match the filtering criteria defined by ConnectionProfileFilter .
@@ -561,40 +556,35 @@ object Connectivity {
       * @return An array of ConnectionProfile objects.
       */
     /* static member */
-    @scala.inline
-    def findConnectionProfilesAsync(pProfileFilter: typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfileFilter): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConnectionProfilesAsync")(pProfileFilter.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findConnectionProfilesAsync(pProfileFilter: typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfileFilter): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findConnectionProfilesAsync")(pProfileFilter.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets a list of profiles for connections, active or otherwise, on the local machine.
       * @return An array of ConnectionProfile objects.
       */
     /* static member */
-    @scala.inline
-    def getConnectionProfiles(): IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionProfiles")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile]]
+    inline def getConnectionProfiles(): IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionProfiles")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile]]
     
     /**
       * Gets a list of host names associated with the local machine.
       * @return An array of host names for the local machine.
       */
     /* static member */
-    @scala.inline
-    def getHostNames(): IVectorView[typings.winrtUwp.Windows.Networking.HostName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostNames")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Networking.HostName]]
+    inline def getHostNames(): IVectorView[typings.winrtUwp.Windows.Networking.HostName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostNames")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Networking.HostName]]
     
     /**
       * Gets the connection profile associated with the internet connection currently used by the local machine.
       * @return The profile for the connection currently used to connect the machine to the Internet, or null if there is no connection profile with a suitable connection.
       */
     /* static member */
-    @scala.inline
-    def getInternetConnectionProfile(): typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetConnectionProfile")().asInstanceOf[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile]
+    inline def getInternetConnectionProfile(): typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetConnectionProfile")().asInstanceOf[typings.winrtUwp.Windows.Networking.Connectivity.ConnectionProfile]
     
     /**
       * Gets an array of LanIdentifier objects that contain locality information for each NetworkAdapter object that currently connected to a network.
       * @return An array of LanIdentifier objects.
       */
     /* static member */
-    @scala.inline
-    def getLanIdentifiers(): IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanIdentifiers")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifier]]
+    inline def getLanIdentifiers(): IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanIdentifiers")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifier]]
     
     /**
       * Gets proxy configuration for a connection using the specified URI.
@@ -602,8 +592,7 @@ object Connectivity {
       * @return Information about the connection proxy.
       */
     /* static member */
-    @scala.inline
-    def getProxyConfigurationAsync(uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ProxyConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyConfigurationAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ProxyConfiguration]]
+    inline def getProxyConfigurationAsync(uri: Uri): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ProxyConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyConfigurationAsync")(uri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Networking.Connectivity.ProxyConfiguration]]
     
     /**
       * Gets a sorted list of EndpointPair objects.
@@ -612,8 +601,7 @@ object Connectivity {
       * @return A sorted array of EndpointPair objects.
       */
     /* static member */
-    @scala.inline
-    def getSortedEndpointPairs(
+    inline def getSortedEndpointPairs(
       destinationList: IIterable[typings.winrtUwp.Windows.Networking.EndpointPair],
       sortOptions: typings.winrtUwp.Windows.Networking.HostNameSortOptions
     ): IVectorView[typings.winrtUwp.Windows.Networking.EndpointPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSortedEndpointPairs")(destinationList.asInstanceOf[js.Any], sortOptions.asInstanceOf[js.Any])).asInstanceOf[IVectorView[typings.winrtUwp.Windows.Networking.EndpointPair]]
@@ -623,16 +611,13 @@ object Connectivity {
     @JSGlobal("Windows.Networking.Connectivity.NetworkInformation.onnetworkstatuschanged")
     @js.native
     def onnetworkstatuschanged: NetworkStatusChangedEventHandler = js.native
-    @scala.inline
-    def onnetworkstatuschanged_=(x: NetworkStatusChangedEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
+    inline def onnetworkstatuschanged_=(x: NetworkStatusChangedEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnetworkstatuschanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_networkstatuschanged(`type`: networkstatuschanged, listener: NetworkStatusChangedEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_networkstatuschanged(`type`: networkstatuschanged, listener: NetworkStatusChangedEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** Represents a connected network. */

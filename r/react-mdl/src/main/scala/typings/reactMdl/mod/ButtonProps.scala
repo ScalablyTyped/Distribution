@@ -19,31 +19,23 @@ trait ButtonProps
 }
 object ButtonProps {
   
-  @scala.inline
-  def apply(): ButtonProps = {
+  inline def apply(): ButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonProps]
   }
   
-  @scala.inline
-  implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonProps](x: Self) {
     
-    @scala.inline
-    def setAccent(value: Boolean): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+    inline def setAccent(value: Boolean): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
+    inline def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
     
-    @scala.inline
-    def setColored(value: Boolean): Self = StObject.set(x, "colored", value.asInstanceOf[js.Any])
+    inline def setColored(value: Boolean): Self = StObject.set(x, "colored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColoredUndefined: Self = StObject.set(x, "colored", js.undefined)
+    inline def setColoredUndefined: Self = StObject.set(x, "colored", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
   }
 }

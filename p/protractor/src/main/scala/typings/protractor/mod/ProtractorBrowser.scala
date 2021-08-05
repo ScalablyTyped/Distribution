@@ -164,6 +164,5 @@ object ProtractorBrowser {
   @JSImport("protractor", "ProtractorBrowser.By")
   @js.native
   def By: typings.protractor.locatorsMod.ProtractorBy = js.native
-  @scala.inline
-  def By_=(x: typings.protractor.locatorsMod.ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
+  inline def By_=(x: typings.protractor.locatorsMod.ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
 }

@@ -18,34 +18,25 @@ trait UpdateModel extends StObject {
 }
 object UpdateModel {
   
-  @scala.inline
-  def apply(): UpdateModel = {
+  inline def apply(): UpdateModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateModel]
   }
   
-  @scala.inline
-  implicit class UpdateModelMutableBuilder[Self <: UpdateModel] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateModel](x: Self) {
     
-    @scala.inline
-    def setAdditional_collaborators(value: js.Array[Collaborator | String | ZendeskID]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
+    inline def setAdditional_collaborators(value: js.Array[Collaborator | String | ZendeskID]): Self = StObject.set(x, "additional_collaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditional_collaboratorsUndefined: Self = StObject.set(x, "additional_collaborators", js.undefined)
+    inline def setAdditional_collaboratorsUndefined: Self = StObject.set(x, "additional_collaborators", js.undefined)
     
-    @scala.inline
-    def setAdditional_collaboratorsVarargs(value: (Collaborator | String | ZendeskID)*): Self = StObject.set(x, "additional_collaborators", js.Array(value :_*))
+    inline def setAdditional_collaboratorsVarargs(value: (Collaborator | String | ZendeskID)*): Self = StObject.set(x, "additional_collaborators", js.Array(value :_*))
     
-    @scala.inline
-    def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: typings.nodeZendesk.mod.Requests.Comments.CreateModel): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setSolved(value: Boolean): Self = StObject.set(x, "solved", value.asInstanceOf[js.Any])
+    inline def setSolved(value: Boolean): Self = StObject.set(x, "solved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolvedUndefined: Self = StObject.set(x, "solved", js.undefined)
+    inline def setSolvedUndefined: Self = StObject.set(x, "solved", js.undefined)
   }
 }

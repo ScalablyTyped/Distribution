@@ -45,21 +45,16 @@ object resourcePolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourcePolicyState): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourcePolicyState, opts: CustomResourceOptions): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
+    inline def get(name: String, id: Input[ID]): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
+    inline def get(name: String, id: Input[ID], state: ResourcePolicyState): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
+    inline def get(name: String, id: Input[ID], state: ResourcePolicyState, opts: CustomResourceOptions): ResourcePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourcePolicy]
     
     /**
       * Returns true if the given object is an instance of ResourcePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/resourcePolicy.ResourcePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/resourcePolicy.ResourcePolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/resourcePolicy.ResourcePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/resourcePolicy.ResourcePolicy */ Boolean]
   }
   
   trait ResourcePolicyArgs extends StObject {
@@ -71,17 +66,14 @@ object resourcePolicyMod {
   }
   object ResourcePolicyArgs {
     
-    @scala.inline
-    def apply(policy: Input[String]): ResourcePolicyArgs = {
+    inline def apply(policy: Input[String]): ResourcePolicyArgs = {
       val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourcePolicyArgs]
     }
     
-    @scala.inline
-    implicit class ResourcePolicyArgsMutableBuilder[Self <: ResourcePolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourcePolicyArgs](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +86,16 @@ object resourcePolicyMod {
   }
   object ResourcePolicyState {
     
-    @scala.inline
-    def apply(): ResourcePolicyState = {
+    inline def apply(): ResourcePolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourcePolicyState]
     }
     
-    @scala.inline
-    implicit class ResourcePolicyStateMutableBuilder[Self <: ResourcePolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: ResourcePolicyState](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     }
   }
 }

@@ -19,7 +19,6 @@ object componentInitOrderTableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getOrder(component: Component): `4` | `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrder")(component.asInstanceOf[js.Any]).asInstanceOf[`4` | `5`]
+    inline def getOrder(component: Component): `4` | `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrder")(component.asInstanceOf[js.Any]).asInstanceOf[`4` | `5`]
   }
 }

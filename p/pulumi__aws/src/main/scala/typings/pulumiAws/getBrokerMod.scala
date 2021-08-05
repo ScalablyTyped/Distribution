@@ -18,14 +18,10 @@ object getBrokerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBroker(): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")().asInstanceOf[js.Promise[GetBrokerResult]]
-  @scala.inline
-  def getBroker(args: Unit, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
-  @scala.inline
-  def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBrokerResult]]
-  @scala.inline
-  def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
+  inline def getBroker(): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")().asInstanceOf[js.Promise[GetBrokerResult]]
+  inline def getBroker(args: Unit, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
+  inline def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBrokerResult]]
+  inline def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
   
   trait GetBrokerArgs extends StObject {
     
@@ -45,38 +41,28 @@ object getBrokerMod {
   }
   object GetBrokerArgs {
     
-    @scala.inline
-    def apply(): GetBrokerArgs = {
+    inline def apply(): GetBrokerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetBrokerArgs]
     }
     
-    @scala.inline
-    implicit class GetBrokerArgsMutableBuilder[Self <: GetBrokerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBrokerArgs](x: Self) {
       
-      @scala.inline
-      def setBrokerId(value: String): Self = StObject.set(x, "brokerId", value.asInstanceOf[js.Any])
+      inline def setBrokerId(value: String): Self = StObject.set(x, "brokerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerIdUndefined: Self = StObject.set(x, "brokerId", js.undefined)
+      inline def setBrokerIdUndefined: Self = StObject.set(x, "brokerId", js.undefined)
       
-      @scala.inline
-      def setBrokerName(value: String): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
+      inline def setBrokerName(value: String): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerNameUndefined: Self = StObject.set(x, "brokerName", js.undefined)
+      inline def setBrokerNameUndefined: Self = StObject.set(x, "brokerName", js.undefined)
       
-      @scala.inline
-      def setLogs(value: GetBrokerLogs): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: GetBrokerLogs): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
+      inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -125,8 +111,7 @@ object getBrokerMod {
   }
   object GetBrokerResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       autoMinorVersionUpgrade: Boolean,
       brokerId: String,
@@ -150,83 +135,57 @@ object getBrokerMod {
       __obj.asInstanceOf[GetBrokerResult]
     }
     
-    @scala.inline
-    implicit class GetBrokerResultMutableBuilder[Self <: GetBrokerResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBrokerResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+      inline def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerId(value: String): Self = StObject.set(x, "brokerId", value.asInstanceOf[js.Any])
+      inline def setBrokerId(value: String): Self = StObject.set(x, "brokerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerName(value: String): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
+      inline def setBrokerName(value: String): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguration(value: GetBrokerConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: GetBrokerConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentMode(value: String): Self = StObject.set(x, "deploymentMode", value.asInstanceOf[js.Any])
+      inline def setDeploymentMode(value: String): Self = StObject.set(x, "deploymentMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionOptions(value: js.Array[GetBrokerEncryptionOption]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
+      inline def setEncryptionOptions(value: js.Array[GetBrokerEncryptionOption]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionOptionsVarargs(value: GetBrokerEncryptionOption*): Self = StObject.set(x, "encryptionOptions", js.Array(value :_*))
+      inline def setEncryptionOptionsVarargs(value: GetBrokerEncryptionOption*): Self = StObject.set(x, "encryptionOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setEngineType(value: String): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
+      inline def setEngineType(value: String): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostInstanceType(value: String): Self = StObject.set(x, "hostInstanceType", value.asInstanceOf[js.Any])
+      inline def setHostInstanceType(value: String): Self = StObject.set(x, "hostInstanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstances(value: js.Array[GetBrokerInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: js.Array[GetBrokerInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesVarargs(value: GetBrokerInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: GetBrokerInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
       
-      @scala.inline
-      def setLogs(value: typings.pulumiAws.outputMod.mq.GetBrokerLogs): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: typings.pulumiAws.outputMod.mq.GetBrokerLogs): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
+      inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
       
-      @scala.inline
-      def setMaintenanceWindowStartTime(value: GetBrokerMaintenanceWindowStartTime): Self = StObject.set(x, "maintenanceWindowStartTime", value.asInstanceOf[js.Any])
+      inline def setMaintenanceWindowStartTime(value: GetBrokerMaintenanceWindowStartTime): Self = StObject.set(x, "maintenanceWindowStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
+      inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: js.Array[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[GetBrokerUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[GetBrokerUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: GetBrokerUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: GetBrokerUser*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
 }

@@ -13,19 +13,15 @@ trait IdentitySecurityDefaultsEnforcementPolicy
 }
 object IdentitySecurityDefaultsEnforcementPolicy {
   
-  @scala.inline
-  def apply(): IdentitySecurityDefaultsEnforcementPolicy = {
+  inline def apply(): IdentitySecurityDefaultsEnforcementPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitySecurityDefaultsEnforcementPolicy]
   }
   
-  @scala.inline
-  implicit class IdentitySecurityDefaultsEnforcementPolicyMutableBuilder[Self <: IdentitySecurityDefaultsEnforcementPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitySecurityDefaultsEnforcementPolicy](x: Self) {
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
   }
 }

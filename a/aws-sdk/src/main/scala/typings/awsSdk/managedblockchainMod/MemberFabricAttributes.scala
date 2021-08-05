@@ -18,25 +18,19 @@ trait MemberFabricAttributes extends StObject {
 }
 object MemberFabricAttributes {
   
-  @scala.inline
-  def apply(): MemberFabricAttributes = {
+  inline def apply(): MemberFabricAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemberFabricAttributes]
   }
   
-  @scala.inline
-  implicit class MemberFabricAttributesMutableBuilder[Self <: MemberFabricAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: MemberFabricAttributes](x: Self) {
     
-    @scala.inline
-    def setAdminUsername(value: UsernameString): Self = StObject.set(x, "AdminUsername", value.asInstanceOf[js.Any])
+    inline def setAdminUsername(value: UsernameString): Self = StObject.set(x, "AdminUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminUsernameUndefined: Self = StObject.set(x, "AdminUsername", js.undefined)
+    inline def setAdminUsernameUndefined: Self = StObject.set(x, "AdminUsername", js.undefined)
     
-    @scala.inline
-    def setCaEndpoint(value: String): Self = StObject.set(x, "CaEndpoint", value.asInstanceOf[js.Any])
+    inline def setCaEndpoint(value: String): Self = StObject.set(x, "CaEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaEndpointUndefined: Self = StObject.set(x, "CaEndpoint", js.undefined)
+    inline def setCaEndpointUndefined: Self = StObject.set(x, "CaEndpoint", js.undefined)
   }
 }

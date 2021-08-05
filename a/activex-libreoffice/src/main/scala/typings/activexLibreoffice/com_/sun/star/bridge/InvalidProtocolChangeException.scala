@@ -22,19 +22,15 @@ trait InvalidProtocolChangeException
 }
 object InvalidProtocolChangeException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, invalidProperty: ProtocolProperty, reason: Double): InvalidProtocolChangeException = {
+  inline def apply(Context: XInterface, Message: String, invalidProperty: ProtocolProperty, reason: Double): InvalidProtocolChangeException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], invalidProperty = invalidProperty.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidProtocolChangeException]
   }
   
-  @scala.inline
-  implicit class InvalidProtocolChangeExceptionMutableBuilder[Self <: InvalidProtocolChangeException] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidProtocolChangeException](x: Self) {
     
-    @scala.inline
-    def setInvalidProperty(value: ProtocolProperty): Self = StObject.set(x, "invalidProperty", value.asInstanceOf[js.Any])
+    inline def setInvalidProperty(value: ProtocolProperty): Self = StObject.set(x, "invalidProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

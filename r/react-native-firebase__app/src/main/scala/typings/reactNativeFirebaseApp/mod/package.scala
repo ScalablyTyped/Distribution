@@ -5,5 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def default: typings.reactNativeFirebaseApp.mod.ReactNativeFirebase.Module = typings.reactNativeFirebaseApp.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.reactNativeFirebaseApp.mod.ReactNativeFirebase.Module]
+inline def default: typings.reactNativeFirebaseApp.mod.ReactNativeFirebase.Module = typings.reactNativeFirebaseApp.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.reactNativeFirebaseApp.mod.ReactNativeFirebase.Module]

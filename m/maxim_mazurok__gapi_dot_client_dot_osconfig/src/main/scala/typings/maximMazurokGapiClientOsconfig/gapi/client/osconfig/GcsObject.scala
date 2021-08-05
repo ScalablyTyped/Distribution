@@ -17,31 +17,23 @@ trait GcsObject extends StObject {
 }
 object GcsObject {
   
-  @scala.inline
-  def apply(): GcsObject = {
+  inline def apply(): GcsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcsObject]
   }
   
-  @scala.inline
-  implicit class GcsObjectMutableBuilder[Self <: GcsObject] (val x: Self) extends AnyVal {
+  extension [Self <: GcsObject](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setGenerationNumber(value: String): Self = StObject.set(x, "generationNumber", value.asInstanceOf[js.Any])
+    inline def setGenerationNumber(value: String): Self = StObject.set(x, "generationNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationNumberUndefined: Self = StObject.set(x, "generationNumber", js.undefined)
+    inline def setGenerationNumberUndefined: Self = StObject.set(x, "generationNumber", js.undefined)
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
   }
 }

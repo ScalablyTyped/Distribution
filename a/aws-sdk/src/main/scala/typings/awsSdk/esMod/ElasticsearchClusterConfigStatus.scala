@@ -18,19 +18,15 @@ trait ElasticsearchClusterConfigStatus extends StObject {
 }
 object ElasticsearchClusterConfigStatus {
   
-  @scala.inline
-  def apply(Options: ElasticsearchClusterConfig, Status: OptionStatus): ElasticsearchClusterConfigStatus = {
+  inline def apply(Options: ElasticsearchClusterConfig, Status: OptionStatus): ElasticsearchClusterConfigStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchClusterConfigStatus]
   }
   
-  @scala.inline
-  implicit class ElasticsearchClusterConfigStatusMutableBuilder[Self <: ElasticsearchClusterConfigStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchClusterConfigStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: ElasticsearchClusterConfig): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ElasticsearchClusterConfig): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

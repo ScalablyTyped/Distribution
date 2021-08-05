@@ -13,16 +13,13 @@ trait DeleteTrailRequest extends StObject {
 }
 object DeleteTrailRequest {
   
-  @scala.inline
-  def apply(Name: String): DeleteTrailRequest = {
+  inline def apply(Name: String): DeleteTrailRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrailRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTrailRequestMutableBuilder[Self <: DeleteTrailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTrailRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

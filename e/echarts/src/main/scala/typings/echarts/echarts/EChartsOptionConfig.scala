@@ -14,31 +14,23 @@ trait EChartsOptionConfig extends StObject {
 }
 object EChartsOptionConfig {
   
-  @scala.inline
-  def apply(): EChartsOptionConfig = {
+  inline def apply(): EChartsOptionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EChartsOptionConfig]
   }
   
-  @scala.inline
-  implicit class EChartsOptionConfigMutableBuilder[Self <: EChartsOptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EChartsOptionConfig](x: Self) {
     
-    @scala.inline
-    def setLazyUpdate(value: Boolean): Self = StObject.set(x, "lazyUpdate", value.asInstanceOf[js.Any])
+    inline def setLazyUpdate(value: Boolean): Self = StObject.set(x, "lazyUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLazyUpdateUndefined: Self = StObject.set(x, "lazyUpdate", js.undefined)
+    inline def setLazyUpdateUndefined: Self = StObject.set(x, "lazyUpdate", js.undefined)
     
-    @scala.inline
-    def setNotMerge(value: Boolean): Self = StObject.set(x, "notMerge", value.asInstanceOf[js.Any])
+    inline def setNotMerge(value: Boolean): Self = StObject.set(x, "notMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotMergeUndefined: Self = StObject.set(x, "notMerge", js.undefined)
+    inline def setNotMergeUndefined: Self = StObject.set(x, "notMerge", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

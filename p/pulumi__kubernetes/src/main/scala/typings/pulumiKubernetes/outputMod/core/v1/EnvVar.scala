@@ -26,22 +26,17 @@ trait EnvVar extends StObject {
 }
 object EnvVar {
   
-  @scala.inline
-  def apply(name: String, value: String, valueFrom: EnvVarSource): EnvVar = {
+  inline def apply(name: String, value: String, valueFrom: EnvVarSource): EnvVar = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueFrom = valueFrom.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvVar]
   }
   
-  @scala.inline
-  implicit class EnvVarMutableBuilder[Self <: EnvVar] (val x: Self) extends AnyVal {
+  extension [Self <: EnvVar](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFrom(value: EnvVarSource): Self = StObject.set(x, "valueFrom", value.asInstanceOf[js.Any])
+    inline def setValueFrom(value: EnvVarSource): Self = StObject.set(x, "valueFrom", value.asInstanceOf[js.Any])
   }
 }

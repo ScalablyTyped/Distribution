@@ -22,8 +22,7 @@ object typesMod {
   }
   object MDCTextFieldFoundationMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       characterCounter: MDCTextFieldCharacterCounterFoundation,
       helperText: MDCTextFieldHelperTextFoundation,
       leadingIcon: MDCTextFieldIconFoundation,
@@ -33,20 +32,15 @@ object typesMod {
       __obj.asInstanceOf[MDCTextFieldFoundationMap]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldFoundationMapMutableBuilder[Self <: MDCTextFieldFoundationMap] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldFoundationMap](x: Self) {
       
-      @scala.inline
-      def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = StObject.set(x, "characterCounter", value.asInstanceOf[js.Any])
+      inline def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = StObject.set(x, "characterCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelperText(value: MDCTextFieldHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
+      inline def setHelperText(value: MDCTextFieldHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "leadingIcon", value.asInstanceOf[js.Any])
+      inline def setLeadingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "leadingIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "trailingIcon", value.asInstanceOf[js.Any])
+      inline def setTrailingIcon(value: MDCTextFieldIconFoundation): Self = StObject.set(x, "trailingIcon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,8 +61,7 @@ object typesMod {
   }
   object MDCTextFieldNativeInputElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabled: Boolean,
       maxLength: Double,
       required: Boolean,
@@ -81,26 +74,19 @@ object typesMod {
       __obj.asInstanceOf[MDCTextFieldNativeInputElement]
     }
     
-    @scala.inline
-    implicit class MDCTextFieldNativeInputElementMutableBuilder[Self <: MDCTextFieldNativeInputElement] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTextFieldNativeInputElement](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidity(value: PickValidityStatebadInput): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
+      inline def setValidity(value: PickValidityStatebadInput): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

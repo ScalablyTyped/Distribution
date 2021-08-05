@@ -14,8 +14,7 @@ trait DeploymentGroup
 }
 object DeploymentGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     machineCount: Double,
     machines: js.Array[DeploymentMachine],
@@ -27,16 +26,12 @@ object DeploymentGroup {
     __obj.asInstanceOf[DeploymentGroup]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupMutableBuilder[Self <: DeploymentGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroup](x: Self) {
     
-    @scala.inline
-    def setMachineCount(value: Double): Self = StObject.set(x, "machineCount", value.asInstanceOf[js.Any])
+    inline def setMachineCount(value: Double): Self = StObject.set(x, "machineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachines(value: js.Array[DeploymentMachine]): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
+    inline def setMachines(value: js.Array[DeploymentMachine]): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachinesVarargs(value: DeploymentMachine*): Self = StObject.set(x, "machines", js.Array(value :_*))
+    inline def setMachinesVarargs(value: DeploymentMachine*): Self = StObject.set(x, "machines", js.Array(value :_*))
   }
 }

@@ -26,52 +26,37 @@ trait GoogleDatastoreAdminV1Index extends StObject {
 }
 object GoogleDatastoreAdminV1Index {
   
-  @scala.inline
-  def apply(): GoogleDatastoreAdminV1Index = {
+  inline def apply(): GoogleDatastoreAdminV1Index = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDatastoreAdminV1Index]
   }
   
-  @scala.inline
-  implicit class GoogleDatastoreAdminV1IndexMutableBuilder[Self <: GoogleDatastoreAdminV1Index] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDatastoreAdminV1Index](x: Self) {
     
-    @scala.inline
-    def setAncestor(value: String): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
+    inline def setAncestor(value: String): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
+    inline def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
     
-    @scala.inline
-    def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: String): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
+    inline def setIndexIdUndefined: Self = StObject.set(x, "indexId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Array[GoogleDatastoreAdminV1IndexedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[GoogleDatastoreAdminV1IndexedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: GoogleDatastoreAdminV1IndexedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: GoogleDatastoreAdminV1IndexedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -53,62 +53,44 @@ object filesystem {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setGetFileSystemSize(value: () => Double): Self = StObject.set(x, "getFileSystemSize", js.Any.fromFunction0(value))
+      inline def setGetFileSystemSize(value: () => Double): Self = StObject.set(x, "getFileSystemSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileSystemSizeUndefined: Self = StObject.set(x, "getFileSystemSize", js.undefined)
+      inline def setGetFileSystemSizeUndefined: Self = StObject.set(x, "getFileSystemSize", js.undefined)
       
-      @scala.inline
-      def setGetFileSystemType(value: () => Double): Self = StObject.set(x, "getFileSystemType", js.Any.fromFunction0(value))
+      inline def setGetFileSystemType(value: () => Double): Self = StObject.set(x, "getFileSystemType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileSystemTypeUndefined: Self = StObject.set(x, "getFileSystemType", js.undefined)
+      inline def setGetFileSystemTypeUndefined: Self = StObject.set(x, "getFileSystemType", js.undefined)
       
-      @scala.inline
-      def setGetReaderType(value: () => String): Self = StObject.set(x, "getReaderType", js.Any.fromFunction0(value))
+      inline def setGetReaderType(value: () => String): Self = StObject.set(x, "getReaderType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetReaderTypeUndefined: Self = StObject.set(x, "getReaderType", js.undefined)
+      inline def setGetReaderTypeUndefined: Self = StObject.set(x, "getReaderType", js.undefined)
       
-      @scala.inline
-      def setGetStringEncoding(value: () => String): Self = StObject.set(x, "getStringEncoding", js.Any.fromFunction0(value))
+      inline def setGetStringEncoding(value: () => String): Self = StObject.set(x, "getStringEncoding", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStringEncodingUndefined: Self = StObject.set(x, "getStringEncoding", js.undefined)
+      inline def setGetStringEncodingUndefined: Self = StObject.set(x, "getStringEncoding", js.undefined)
       
-      @scala.inline
-      def setSetFileSystemSize(value: /* fileSystemSize */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFileSystemSize", js.Any.fromFunction1(value))
+      inline def setSetFileSystemSize(value: /* fileSystemSize */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFileSystemSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFileSystemSizeUndefined: Self = StObject.set(x, "setFileSystemSize", js.undefined)
+      inline def setSetFileSystemSizeUndefined: Self = StObject.set(x, "setFileSystemSize", js.undefined)
       
-      @scala.inline
-      def setSetFileSystemType(value: /* fileSystemType */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFileSystemType", js.Any.fromFunction1(value))
+      inline def setSetFileSystemType(value: /* fileSystemType */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFileSystemType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFileSystemTypeUndefined: Self = StObject.set(x, "setFileSystemType", js.undefined)
+      inline def setSetFileSystemTypeUndefined: Self = StObject.set(x, "setFileSystemType", js.undefined)
       
-      @scala.inline
-      def setSetReaderType(value: /* readerType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setReaderType", js.Any.fromFunction1(value))
+      inline def setSetReaderType(value: /* readerType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setReaderType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetReaderTypeUndefined: Self = StObject.set(x, "setReaderType", js.undefined)
+      inline def setSetReaderTypeUndefined: Self = StObject.set(x, "setReaderType", js.undefined)
       
-      @scala.inline
-      def setSetStringEncoding(value: /* stringEncoding */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStringEncoding", js.Any.fromFunction1(value))
+      inline def setSetStringEncoding(value: /* stringEncoding */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStringEncoding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStringEncodingUndefined: Self = StObject.set(x, "setStringEncoding", js.undefined)
+      inline def setSetStringEncodingUndefined: Self = StObject.set(x, "setStringEncoding", js.undefined)
     }
   }
   
@@ -117,8 +99,7 @@ object filesystem {
        with IHTML5
   object IChrome {
     
-    @scala.inline
-    def apply(): IChrome = {
+    inline def apply(): IChrome = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IChrome]
     }
@@ -152,38 +133,28 @@ object filesystem {
   }
   object ICordova {
     
-    @scala.inline
-    def apply(): ICordova = {
+    inline def apply(): ICordova = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICordova]
     }
     
-    @scala.inline
-    implicit class ICordovaMutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
+    extension [Self <: ICordova](x: Self) {
       
-      @scala.inline
-      def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      inline def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setReadMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
+      inline def setReadMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
+      inline def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
       
-      @scala.inline
-      def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
+      inline def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+      inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
       
-      @scala.inline
-      def setWriteMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
+      inline def setWriteMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteMetadataUndefined: Self = StObject.set(x, "writeMetadata", js.undefined)
+      inline def setWriteMetadataUndefined: Self = StObject.set(x, "writeMetadata", js.undefined)
     }
   }
   
@@ -218,44 +189,32 @@ object filesystem {
   }
   object IDirectoryEntry {
     
-    @scala.inline
-    def apply(): IDirectoryEntry = {
+    inline def apply(): IDirectoryEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDirectoryEntry]
     }
     
-    @scala.inline
-    implicit class IDirectoryEntryMutableBuilder[Self <: IDirectoryEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IDirectoryEntry](x: Self) {
       
-      @scala.inline
-      def setGetDirectory(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getDirectory", js.Any.fromFunction1(value))
+      inline def setGetDirectory(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getDirectory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDirectoryUndefined: Self = StObject.set(x, "getDirectory", js.undefined)
+      inline def setGetDirectoryUndefined: Self = StObject.set(x, "getDirectory", js.undefined)
       
-      @scala.inline
-      def setGetEntry(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
+      inline def setGetEntry(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEntryUndefined: Self = StObject.set(x, "getEntry", js.undefined)
+      inline def setGetEntryUndefined: Self = StObject.set(x, "getEntry", js.undefined)
       
-      @scala.inline
-      def setGetFile(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
+      inline def setGetFile(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
+      inline def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
       
-      @scala.inline
-      def setReadEntries(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readEntries", js.Any.fromFunction1(value))
+      inline def setReadEntries(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readEntries", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadEntriesUndefined: Self = StObject.set(x, "readEntries", js.undefined)
+      inline def setReadEntriesUndefined: Self = StObject.set(x, "readEntries", js.undefined)
       
-      @scala.inline
-      def setRemoveRecursively(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeRecursively", js.Any.fromFunction1(value))
+      inline def setRemoveRecursively(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeRecursively", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveRecursivelyUndefined: Self = StObject.set(x, "removeRecursively", js.undefined)
+      inline def setRemoveRecursivelyUndefined: Self = StObject.set(x, "removeRecursively", js.undefined)
     }
   }
   
@@ -310,68 +269,48 @@ object filesystem {
   }
   object IEntry {
     
-    @scala.inline
-    def apply(): IEntry = {
+    inline def apply(): IEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEntry]
     }
     
-    @scala.inline
-    implicit class IEntryMutableBuilder[Self <: IEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IEntry](x: Self) {
       
-      @scala.inline
-      def setCopyTo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
+      inline def setCopyTo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "copyTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopyToUndefined: Self = StObject.set(x, "copyTo", js.undefined)
+      inline def setCopyToUndefined: Self = StObject.set(x, "copyTo", js.undefined)
       
-      @scala.inline
-      def setGetFileSystem(value: () => typings.senchaTouch.Ext.device.filesystem.IFileSystem): Self = StObject.set(x, "getFileSystem", js.Any.fromFunction0(value))
+      inline def setGetFileSystem(value: () => typings.senchaTouch.Ext.device.filesystem.IFileSystem): Self = StObject.set(x, "getFileSystem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileSystemUndefined: Self = StObject.set(x, "getFileSystem", js.undefined)
+      inline def setGetFileSystemUndefined: Self = StObject.set(x, "getFileSystem", js.undefined)
       
-      @scala.inline
-      def setGetFullPath(value: () => String): Self = StObject.set(x, "getFullPath", js.Any.fromFunction0(value))
+      inline def setGetFullPath(value: () => String): Self = StObject.set(x, "getFullPath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFullPathUndefined: Self = StObject.set(x, "getFullPath", js.undefined)
+      inline def setGetFullPathUndefined: Self = StObject.set(x, "getFullPath", js.undefined)
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
+      inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
       
-      @scala.inline
-      def setGetParent(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
+      inline def setGetParent(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
+      inline def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
       
-      @scala.inline
-      def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
+      inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+      inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
       
-      @scala.inline
-      def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
+      inline def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
+      inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
       
-      @scala.inline
-      def setMoveTo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction1(value))
+      inline def setMoveTo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoveToUndefined: Self = StObject.set(x, "moveTo", js.undefined)
+      inline def setMoveToUndefined: Self = StObject.set(x, "moveTo", js.undefined)
       
-      @scala.inline
-      def setRemove(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     }
   }
   
@@ -411,50 +350,36 @@ object filesystem {
   }
   object IFileEntry {
     
-    @scala.inline
-    def apply(): IFileEntry = {
+    inline def apply(): IFileEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFileEntry]
     }
     
-    @scala.inline
-    implicit class IFileEntryMutableBuilder[Self <: IFileEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IFileEntry](x: Self) {
       
-      @scala.inline
-      def setGetEntry(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
+      inline def setGetEntry(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEntryUndefined: Self = StObject.set(x, "getEntry", js.undefined)
+      inline def setGetEntryUndefined: Self = StObject.set(x, "getEntry", js.undefined)
       
-      @scala.inline
-      def setGetOffset(value: () => Double): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
+      inline def setGetOffset(value: () => Double): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffsetUndefined: Self = StObject.set(x, "getOffset", js.undefined)
+      inline def setGetOffsetUndefined: Self = StObject.set(x, "getOffset", js.undefined)
       
-      @scala.inline
-      def setRead(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setSeek(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+      inline def setSeek(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSeekUndefined: Self = StObject.set(x, "seek", js.undefined)
+      inline def setSeekUndefined: Self = StObject.set(x, "seek", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
+      inline def setTruncate(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      @scala.inline
-      def setWrite(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
   }
   
@@ -469,20 +394,16 @@ object filesystem {
   }
   object IFileSystem {
     
-    @scala.inline
-    def apply(): typings.senchaTouch.Ext.device.filesystem.IFileSystem = {
+    inline def apply(): typings.senchaTouch.Ext.device.filesystem.IFileSystem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.senchaTouch.Ext.device.filesystem.IFileSystem]
     }
     
-    @scala.inline
-    implicit class IFileSystemMutableBuilder[Self <: typings.senchaTouch.Ext.device.filesystem.IFileSystem] (val x: Self) extends AnyVal {
+    extension [Self <: typings.senchaTouch.Ext.device.filesystem.IFileSystem](x: Self) {
       
-      @scala.inline
-      def setGetRoot(value: () => IDirectoryEntry): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+      inline def setGetRoot(value: () => IDirectoryEntry): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
+      inline def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
     }
   }
   
@@ -497,20 +418,16 @@ object filesystem {
   }
   object IHTML5 {
     
-    @scala.inline
-    def apply(): IHTML5 = {
+    inline def apply(): IHTML5 = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IHTML5]
     }
     
-    @scala.inline
-    implicit class IHTML5MutableBuilder[Self <: IHTML5] (val x: Self) extends AnyVal {
+    extension [Self <: IHTML5](x: Self) {
       
-      @scala.inline
-      def setRequestFileSystem(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
+      inline def setRequestFileSystem(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestFileSystemUndefined: Self = StObject.set(x, "requestFileSystem", js.undefined)
+      inline def setRequestFileSystemUndefined: Self = StObject.set(x, "requestFileSystem", js.undefined)
     }
   }
   
@@ -542,38 +459,28 @@ object filesystem {
   }
   object IPhoneGap {
     
-    @scala.inline
-    def apply(): IPhoneGap = {
+    inline def apply(): IPhoneGap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    @scala.inline
-    implicit class IPhoneGapMutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
+    extension [Self <: IPhoneGap](x: Self) {
       
-      @scala.inline
-      def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
+      inline def setDownload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "download", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setReadMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
+      inline def setReadMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
+      inline def setReadMetadataUndefined: Self = StObject.set(x, "readMetadata", js.undefined)
       
-      @scala.inline
-      def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
+      inline def setUpload(value: /* config */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "upload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+      inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
       
-      @scala.inline
-      def setWriteMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
+      inline def setWriteMetadata(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "writeMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteMetadataUndefined: Self = StObject.set(x, "writeMetadata", js.undefined)
+      inline def setWriteMetadataUndefined: Self = StObject.set(x, "writeMetadata", js.undefined)
     }
   }
   
@@ -588,20 +495,16 @@ object filesystem {
   }
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }
     
-    @scala.inline
-    implicit class ISenchaMutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
+    extension [Self <: ISencha](x: Self) {
       
-      @scala.inline
-      def setRequestFileSystem(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
+      inline def setRequestFileSystem(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "requestFileSystem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestFileSystemUndefined: Self = StObject.set(x, "requestFileSystem", js.undefined)
+      inline def setRequestFileSystemUndefined: Self = StObject.set(x, "requestFileSystem", js.undefined)
     }
   }
   

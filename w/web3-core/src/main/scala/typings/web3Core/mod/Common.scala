@@ -14,28 +14,21 @@ trait Common extends StObject {
 }
 object Common {
   
-  @scala.inline
-  def apply(customChain: CustomChainParams): Common = {
+  inline def apply(customChain: CustomChainParams): Common = {
     val __obj = js.Dynamic.literal(customChain = customChain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Common]
   }
   
-  @scala.inline
-  implicit class CommonMutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
+  extension [Self <: Common](x: Self) {
     
-    @scala.inline
-    def setBaseChain(value: chain): Self = StObject.set(x, "baseChain", value.asInstanceOf[js.Any])
+    inline def setBaseChain(value: chain): Self = StObject.set(x, "baseChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseChainUndefined: Self = StObject.set(x, "baseChain", js.undefined)
+    inline def setBaseChainUndefined: Self = StObject.set(x, "baseChain", js.undefined)
     
-    @scala.inline
-    def setCustomChain(value: CustomChainParams): Self = StObject.set(x, "customChain", value.asInstanceOf[js.Any])
+    inline def setCustomChain(value: CustomChainParams): Self = StObject.set(x, "customChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardfork(value: hardfork): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
+    inline def setHardfork(value: hardfork): Self = StObject.set(x, "hardfork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
+    inline def setHardforkUndefined: Self = StObject.set(x, "hardfork", js.undefined)
   }
 }

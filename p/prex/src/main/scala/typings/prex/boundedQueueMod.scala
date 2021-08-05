@@ -18,11 +18,11 @@ object boundedQueueMod {
   class AsyncBoundedQueue[T] () extends StObject {
     def this(iterable: Iterable[T | js.Thenable[T]]) = this()
     
-    var _dequeue: js.Any = js.native
+    /* private */ var _dequeue: js.Any = js.native
     
-    var _queue: js.Any = js.native
+    /* private */ var _queue: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
     /**
       * Consumes all items in the queue until the queue ends.

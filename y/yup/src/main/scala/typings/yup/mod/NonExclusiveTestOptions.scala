@@ -16,19 +16,15 @@ trait NonExclusiveTestOptions[P /* <: Record[String, js.Any] */, C]
 }
 object NonExclusiveTestOptions {
   
-  @scala.inline
-  def apply[P /* <: Record[String, js.Any] */, C](test: TestFunction[js.Any, C]): NonExclusiveTestOptions[P, C] = {
+  inline def apply[P /* <: Record[String, js.Any] */, C](test: TestFunction[js.Any, C]): NonExclusiveTestOptions[P, C] = {
     val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonExclusiveTestOptions[P, C]]
   }
   
-  @scala.inline
-  implicit class NonExclusiveTestOptionsMutableBuilder[Self <: NonExclusiveTestOptions[?, ?], P /* <: Record[String, js.Any] */, C] (val x: Self & (NonExclusiveTestOptions[P, C])) extends AnyVal {
+  extension [Self <: NonExclusiveTestOptions[?, ?], P /* <: Record[String, js.Any] */, C](x: Self & (NonExclusiveTestOptions[P, C])) {
     
-    @scala.inline
-    def setExclusive(value: `false`): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: `false`): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
   }
 }

@@ -105,8 +105,7 @@ object configMod {
   }
   object ConfigAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addVisitedLinkClass: Boolean,
       audio: PauseOnFadeToZero,
       cleanupWikifierOutput: Boolean,
@@ -123,41 +122,29 @@ object configMod {
       __obj.asInstanceOf[ConfigAPI]
     }
     
-    @scala.inline
-    implicit class ConfigAPIMutableBuilder[Self <: ConfigAPI] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigAPI](x: Self) {
       
-      @scala.inline
-      def setAddVisitedLinkClass(value: Boolean): Self = StObject.set(x, "addVisitedLinkClass", value.asInstanceOf[js.Any])
+      inline def setAddVisitedLinkClass(value: Boolean): Self = StObject.set(x, "addVisitedLinkClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudio(value: PauseOnFadeToZero): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: PauseOnFadeToZero): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanupWikifierOutput(value: Boolean): Self = StObject.set(x, "cleanupWikifierOutput", value.asInstanceOf[js.Any])
+      inline def setCleanupWikifierOutput(value: Boolean): Self = StObject.set(x, "cleanupWikifierOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistory(value: Controls): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Controls): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadDelay(value: Double): Self = StObject.set(x, "loadDelay", value.asInstanceOf[js.Any])
+      inline def setLoadDelay(value: Double): Self = StObject.set(x, "loadDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacros(value: IfAssignmentError): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
+      inline def setMacros(value: IfAssignmentError): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation(value: Override): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: Override): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassages(value: Descriptions): Self = StObject.set(x, "passages", value.asInstanceOf[js.Any])
+      inline def setPassages(value: Descriptions): Self = StObject.set(x, "passages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaves(value: Autoload): Self = StObject.set(x, "saves", value.asInstanceOf[js.Any])
+      inline def setSaves(value: Autoload): Self = StObject.set(x, "saves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi(value: StowBarInitially): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: StowBarInitially): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,18 +159,15 @@ object configMod {
   }
   object SaveDetails {
     
-    @scala.inline
-    def apply(`type`: autosave | disk | serialize | slot): SaveDetails = {
+    inline def apply(`type`: autosave | disk | serialize | slot): SaveDetails = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SaveDetails]
     }
     
-    @scala.inline
-    implicit class SaveDetailsMutableBuilder[Self <: SaveDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SaveDetails](x: Self) {
       
-      @scala.inline
-      def setType(value: autosave | disk | serialize | slot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: autosave | disk | serialize | slot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

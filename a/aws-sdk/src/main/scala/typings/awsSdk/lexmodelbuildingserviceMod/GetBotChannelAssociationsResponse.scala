@@ -18,28 +18,21 @@ trait GetBotChannelAssociationsResponse extends StObject {
 }
 object GetBotChannelAssociationsResponse {
   
-  @scala.inline
-  def apply(): GetBotChannelAssociationsResponse = {
+  inline def apply(): GetBotChannelAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBotChannelAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class GetBotChannelAssociationsResponseMutableBuilder[Self <: GetBotChannelAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBotChannelAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setBotChannelAssociations(value: BotChannelAssociationList): Self = StObject.set(x, "botChannelAssociations", value.asInstanceOf[js.Any])
+    inline def setBotChannelAssociations(value: BotChannelAssociationList): Self = StObject.set(x, "botChannelAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotChannelAssociationsUndefined: Self = StObject.set(x, "botChannelAssociations", js.undefined)
+    inline def setBotChannelAssociationsUndefined: Self = StObject.set(x, "botChannelAssociations", js.undefined)
     
-    @scala.inline
-    def setBotChannelAssociationsVarargs(value: BotChannelAssociation*): Self = StObject.set(x, "botChannelAssociations", js.Array(value :_*))
+    inline def setBotChannelAssociationsVarargs(value: BotChannelAssociation*): Self = StObject.set(x, "botChannelAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

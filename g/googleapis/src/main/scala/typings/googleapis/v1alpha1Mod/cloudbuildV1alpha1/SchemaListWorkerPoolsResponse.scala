@@ -16,22 +16,17 @@ trait SchemaListWorkerPoolsResponse extends StObject {
 }
 object SchemaListWorkerPoolsResponse {
   
-  @scala.inline
-  def apply(): SchemaListWorkerPoolsResponse = {
+  inline def apply(): SchemaListWorkerPoolsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListWorkerPoolsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListWorkerPoolsResponseMutableBuilder[Self <: SchemaListWorkerPoolsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListWorkerPoolsResponse](x: Self) {
     
-    @scala.inline
-    def setWorkerPools(value: js.Array[SchemaWorkerPool]): Self = StObject.set(x, "workerPools", value.asInstanceOf[js.Any])
+    inline def setWorkerPools(value: js.Array[SchemaWorkerPool]): Self = StObject.set(x, "workerPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
+    inline def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
     
-    @scala.inline
-    def setWorkerPoolsVarargs(value: SchemaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
+    inline def setWorkerPoolsVarargs(value: SchemaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
   }
 }

@@ -29,31 +29,23 @@ trait IntegerBezierSegment2D extends StObject {
 }
 object IntegerBezierSegment2D {
   
-  @scala.inline
-  def apply(C1x: Double, C1y: Double, C2x: Double, C2y: Double, Px: Double, Py: Double): IntegerBezierSegment2D = {
+  inline def apply(C1x: Double, C1y: Double, C2x: Double, C2y: Double, Px: Double, Py: Double): IntegerBezierSegment2D = {
     val __obj = js.Dynamic.literal(C1x = C1x.asInstanceOf[js.Any], C1y = C1y.asInstanceOf[js.Any], C2x = C2x.asInstanceOf[js.Any], C2y = C2y.asInstanceOf[js.Any], Px = Px.asInstanceOf[js.Any], Py = Py.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerBezierSegment2D]
   }
   
-  @scala.inline
-  implicit class IntegerBezierSegment2DMutableBuilder[Self <: IntegerBezierSegment2D] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerBezierSegment2D](x: Self) {
     
-    @scala.inline
-    def setC1x(value: Double): Self = StObject.set(x, "C1x", value.asInstanceOf[js.Any])
+    inline def setC1x(value: Double): Self = StObject.set(x, "C1x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC1y(value: Double): Self = StObject.set(x, "C1y", value.asInstanceOf[js.Any])
+    inline def setC1y(value: Double): Self = StObject.set(x, "C1y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC2x(value: Double): Self = StObject.set(x, "C2x", value.asInstanceOf[js.Any])
+    inline def setC2x(value: Double): Self = StObject.set(x, "C2x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC2y(value: Double): Self = StObject.set(x, "C2y", value.asInstanceOf[js.Any])
+    inline def setC2y(value: Double): Self = StObject.set(x, "C2y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPx(value: Double): Self = StObject.set(x, "Px", value.asInstanceOf[js.Any])
+    inline def setPx(value: Double): Self = StObject.set(x, "Px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPy(value: Double): Self = StObject.set(x, "Py", value.asInstanceOf[js.Any])
+    inline def setPy(value: Double): Self = StObject.set(x, "Py", value.asInstanceOf[js.Any])
   }
 }

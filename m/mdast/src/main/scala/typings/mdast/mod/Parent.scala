@@ -10,8 +10,7 @@ trait Parent
      with typings.unist.mod.Parent
 object Parent {
   
-  @scala.inline
-  def apply(children: js.Array[Node], `type`: String): Parent = {
+  inline def apply(children: js.Array[Node], `type`: String): Parent = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]

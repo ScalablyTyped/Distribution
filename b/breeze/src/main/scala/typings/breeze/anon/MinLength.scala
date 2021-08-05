@@ -14,25 +14,19 @@ trait MinLength extends StObject {
 }
 object MinLength {
   
-  @scala.inline
-  def apply(maxLength: Double, minLength: Double): MinLength = {
+  inline def apply(maxLength: Double, minLength: Double): MinLength = {
     val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinLength]
   }
   
-  @scala.inline
-  implicit class MinLengthMutableBuilder[Self <: MinLength] (val x: Self) extends AnyVal {
+  extension [Self <: MinLength](x: Self) {
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
+    inline def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
+    inline def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
   }
 }

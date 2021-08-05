@@ -33,37 +33,27 @@ trait IonNavLink extends StObject {
 }
 object IonNavLink {
   
-  @scala.inline
-  def apply(routerDirection: RouterDirection): IonNavLink = {
+  inline def apply(routerDirection: RouterDirection): IonNavLink = {
     val __obj = js.Dynamic.literal(routerDirection = routerDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonNavLink]
   }
   
-  @scala.inline
-  implicit class IonNavLinkMutableBuilder[Self <: IonNavLink] (val x: Self) extends AnyVal {
+  extension [Self <: IonNavLink](x: Self) {
     
-    @scala.inline
-    def setComponent(value: NavComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: NavComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentNull: Self = StObject.set(x, "component", null)
+    inline def setComponentNull: Self = StObject.set(x, "component", null)
     
-    @scala.inline
-    def setComponentProps(value: ComponentProps[Null]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
+    inline def setComponentProps(value: ComponentProps[Null]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
+    inline def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "routerAnimation", js.Any.fromFunction2(value))
+    inline def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "routerAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRouterAnimationUndefined: Self = StObject.set(x, "routerAnimation", js.undefined)
+    inline def setRouterAnimationUndefined: Self = StObject.set(x, "routerAnimation", js.undefined)
     
-    @scala.inline
-    def setRouterDirection(value: RouterDirection): Self = StObject.set(x, "routerDirection", value.asInstanceOf[js.Any])
+    inline def setRouterDirection(value: RouterDirection): Self = StObject.set(x, "routerDirection", value.asInstanceOf[js.Any])
   }
 }

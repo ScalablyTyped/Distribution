@@ -10,12 +10,9 @@ object iconsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def errorIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorIconMarkup")().asInstanceOf[String]
+  inline def errorIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("errorIconMarkup")().asInstanceOf[String]
   
-  @scala.inline
-  def successIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("successIconMarkup")().asInstanceOf[String]
+  inline def successIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("successIconMarkup")().asInstanceOf[String]
   
-  @scala.inline
-  def warningIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("warningIconMarkup")().asInstanceOf[String]
+  inline def warningIconMarkup(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("warningIconMarkup")().asInstanceOf[String]
 }

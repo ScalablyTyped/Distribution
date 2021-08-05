@@ -46,94 +46,65 @@ trait AndroidManagedAppProtection
 }
 object AndroidManagedAppProtection {
   
-  @scala.inline
-  def apply(): AndroidManagedAppProtection = {
+  inline def apply(): AndroidManagedAppProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidManagedAppProtection]
   }
   
-  @scala.inline
-  implicit class AndroidManagedAppProtectionMutableBuilder[Self <: AndroidManagedAppProtection] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidManagedAppProtection](x: Self) {
     
-    @scala.inline
-    def setApps(value: NullableOption[js.Array[ManagedMobileApp]]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
+    inline def setApps(value: NullableOption[js.Array[ManagedMobileApp]]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsNull: Self = StObject.set(x, "apps", null)
+    inline def setAppsNull: Self = StObject.set(x, "apps", null)
     
-    @scala.inline
-    def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
+    inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
-    @scala.inline
-    def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: ManagedMobileApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomBrowserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "customBrowserDisplayName", value.asInstanceOf[js.Any])
+    inline def setCustomBrowserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "customBrowserDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomBrowserDisplayNameNull: Self = StObject.set(x, "customBrowserDisplayName", null)
+    inline def setCustomBrowserDisplayNameNull: Self = StObject.set(x, "customBrowserDisplayName", null)
     
-    @scala.inline
-    def setCustomBrowserDisplayNameUndefined: Self = StObject.set(x, "customBrowserDisplayName", js.undefined)
+    inline def setCustomBrowserDisplayNameUndefined: Self = StObject.set(x, "customBrowserDisplayName", js.undefined)
     
-    @scala.inline
-    def setCustomBrowserPackageId(value: NullableOption[String]): Self = StObject.set(x, "customBrowserPackageId", value.asInstanceOf[js.Any])
+    inline def setCustomBrowserPackageId(value: NullableOption[String]): Self = StObject.set(x, "customBrowserPackageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomBrowserPackageIdNull: Self = StObject.set(x, "customBrowserPackageId", null)
+    inline def setCustomBrowserPackageIdNull: Self = StObject.set(x, "customBrowserPackageId", null)
     
-    @scala.inline
-    def setCustomBrowserPackageIdUndefined: Self = StObject.set(x, "customBrowserPackageId", js.undefined)
+    inline def setCustomBrowserPackageIdUndefined: Self = StObject.set(x, "customBrowserPackageId", js.undefined)
     
-    @scala.inline
-    def setDeployedAppCount(value: Double): Self = StObject.set(x, "deployedAppCount", value.asInstanceOf[js.Any])
+    inline def setDeployedAppCount(value: Double): Self = StObject.set(x, "deployedAppCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedAppCountUndefined: Self = StObject.set(x, "deployedAppCount", js.undefined)
+    inline def setDeployedAppCountUndefined: Self = StObject.set(x, "deployedAppCount", js.undefined)
     
-    @scala.inline
-    def setDeploymentSummary(value: NullableOption[ManagedAppPolicyDeploymentSummary]): Self = StObject.set(x, "deploymentSummary", value.asInstanceOf[js.Any])
+    inline def setDeploymentSummary(value: NullableOption[ManagedAppPolicyDeploymentSummary]): Self = StObject.set(x, "deploymentSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentSummaryNull: Self = StObject.set(x, "deploymentSummary", null)
+    inline def setDeploymentSummaryNull: Self = StObject.set(x, "deploymentSummary", null)
     
-    @scala.inline
-    def setDeploymentSummaryUndefined: Self = StObject.set(x, "deploymentSummary", js.undefined)
+    inline def setDeploymentSummaryUndefined: Self = StObject.set(x, "deploymentSummary", js.undefined)
     
-    @scala.inline
-    def setDisableAppEncryptionIfDeviceEncryptionIsEnabled(value: Boolean): Self = StObject.set(x, "disableAppEncryptionIfDeviceEncryptionIsEnabled", value.asInstanceOf[js.Any])
+    inline def setDisableAppEncryptionIfDeviceEncryptionIsEnabled(value: Boolean): Self = StObject.set(x, "disableAppEncryptionIfDeviceEncryptionIsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableAppEncryptionIfDeviceEncryptionIsEnabledUndefined: Self = StObject.set(x, "disableAppEncryptionIfDeviceEncryptionIsEnabled", js.undefined)
+    inline def setDisableAppEncryptionIfDeviceEncryptionIsEnabledUndefined: Self = StObject.set(x, "disableAppEncryptionIfDeviceEncryptionIsEnabled", js.undefined)
     
-    @scala.inline
-    def setEncryptAppData(value: Boolean): Self = StObject.set(x, "encryptAppData", value.asInstanceOf[js.Any])
+    inline def setEncryptAppData(value: Boolean): Self = StObject.set(x, "encryptAppData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptAppDataUndefined: Self = StObject.set(x, "encryptAppData", js.undefined)
+    inline def setEncryptAppDataUndefined: Self = StObject.set(x, "encryptAppData", js.undefined)
     
-    @scala.inline
-    def setMinimumRequiredPatchVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumRequiredPatchVersion", value.asInstanceOf[js.Any])
+    inline def setMinimumRequiredPatchVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumRequiredPatchVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumRequiredPatchVersionNull: Self = StObject.set(x, "minimumRequiredPatchVersion", null)
+    inline def setMinimumRequiredPatchVersionNull: Self = StObject.set(x, "minimumRequiredPatchVersion", null)
     
-    @scala.inline
-    def setMinimumRequiredPatchVersionUndefined: Self = StObject.set(x, "minimumRequiredPatchVersion", js.undefined)
+    inline def setMinimumRequiredPatchVersionUndefined: Self = StObject.set(x, "minimumRequiredPatchVersion", js.undefined)
     
-    @scala.inline
-    def setMinimumWarningPatchVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumWarningPatchVersion", value.asInstanceOf[js.Any])
+    inline def setMinimumWarningPatchVersion(value: NullableOption[String]): Self = StObject.set(x, "minimumWarningPatchVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumWarningPatchVersionNull: Self = StObject.set(x, "minimumWarningPatchVersion", null)
+    inline def setMinimumWarningPatchVersionNull: Self = StObject.set(x, "minimumWarningPatchVersion", null)
     
-    @scala.inline
-    def setMinimumWarningPatchVersionUndefined: Self = StObject.set(x, "minimumWarningPatchVersion", js.undefined)
+    inline def setMinimumWarningPatchVersionUndefined: Self = StObject.set(x, "minimumWarningPatchVersion", js.undefined)
     
-    @scala.inline
-    def setScreenCaptureBlocked(value: Boolean): Self = StObject.set(x, "screenCaptureBlocked", value.asInstanceOf[js.Any])
+    inline def setScreenCaptureBlocked(value: Boolean): Self = StObject.set(x, "screenCaptureBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenCaptureBlockedUndefined: Self = StObject.set(x, "screenCaptureBlocked", js.undefined)
+    inline def setScreenCaptureBlockedUndefined: Self = StObject.set(x, "screenCaptureBlocked", js.undefined)
   }
 }

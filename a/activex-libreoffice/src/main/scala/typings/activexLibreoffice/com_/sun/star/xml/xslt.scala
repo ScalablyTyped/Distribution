@@ -27,8 +27,7 @@ object xslt {
   }
   object XSLT2Transformer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       InputStream: XInputStream,
       OutputStream: XOutputStream,
       acquire: () => Unit,
@@ -49,11 +48,9 @@ object xslt {
       __obj.asInstanceOf[XSLT2Transformer]
     }
     
-    @scala.inline
-    implicit class XSLT2TransformerMutableBuilder[Self <: XSLT2Transformer] (val x: Self) extends AnyVal {
+    extension [Self <: XSLT2Transformer](x: Self) {
       
-      @scala.inline
-      def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -71,8 +68,7 @@ object xslt {
   }
   object XSLTTransformer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       InputStream: XInputStream,
       OutputStream: XOutputStream,
       acquire: () => Unit,
@@ -93,11 +89,9 @@ object xslt {
       __obj.asInstanceOf[XSLTTransformer]
     }
     
-    @scala.inline
-    implicit class XSLTTransformerMutableBuilder[Self <: XSLTTransformer] (val x: Self) extends AnyVal {
+    extension [Self <: XSLTTransformer](x: Self) {
       
-      @scala.inline
-      def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -113,8 +107,7 @@ object xslt {
        with XInitialization
   object XXSLTTransformer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       InputStream: XInputStream,
       OutputStream: XOutputStream,
       acquire: () => Unit,

@@ -15,8 +15,7 @@ trait XEnumerationAccess
 }
 object XEnumerationAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     acquire: () => Unit,
     createEnumeration: () => XEnumeration,
@@ -29,10 +28,8 @@ object XEnumerationAccess {
     __obj.asInstanceOf[XEnumerationAccess]
   }
   
-  @scala.inline
-  implicit class XEnumerationAccessMutableBuilder[Self <: XEnumerationAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XEnumerationAccess](x: Self) {
     
-    @scala.inline
-    def setCreateEnumeration(value: () => XEnumeration): Self = StObject.set(x, "createEnumeration", js.Any.fromFunction0(value))
+    inline def setCreateEnumeration(value: () => XEnumeration): Self = StObject.set(x, "createEnumeration", js.Any.fromFunction0(value))
   }
 }

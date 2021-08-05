@@ -86,8 +86,7 @@ object priorityQueueMod {
   }
   object PriorityQueue {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clear: () => Unit,
       dequeue: () => T,
       enqueue: T => Boolean,
@@ -101,32 +100,23 @@ object priorityQueueMod {
       __obj.asInstanceOf[PriorityQueue[T]]
     }
     
-    @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
+    extension [Self <: PriorityQueue[?], T](x: Self & PriorityQueue[T]) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDequeue(value: () => T): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
+      inline def setDequeue(value: () => T): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnqueue(value: T => Boolean): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
+      inline def setEnqueue(value: T => Boolean): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+      inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsKeyQueued(value: String => Boolean): Self = StObject.set(x, "isKeyQueued", js.Any.fromFunction1(value))
+      inline def setIsKeyQueued(value: String => Boolean): Self = StObject.set(x, "isKeyQueued", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsQueued(value: T => Boolean): Self = StObject.set(x, "isQueued", js.Any.fromFunction1(value))
+      inline def setIsQueued(value: T => Boolean): Self = StObject.set(x, "isQueued", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReprioritize(value: () => Unit): Self = StObject.set(x, "reprioritize", js.Any.fromFunction0(value))
+      inline def setReprioritize(value: () => Unit): Self = StObject.set(x, "reprioritize", js.Any.fromFunction0(value))
     }
   }
 }

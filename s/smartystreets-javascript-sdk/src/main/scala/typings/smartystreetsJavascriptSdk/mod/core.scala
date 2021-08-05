@@ -181,35 +181,23 @@ object core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def internationalStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("internationalStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup]]
-    @scala.inline
-    def internationalStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("internationalStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup]]
+    inline def internationalStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("internationalStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup]]
+    inline def internationalStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("internationalStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.internationalStreet.Lookup]]
     
-    @scala.inline
-    def usAutocomplete(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocomplete")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup]]
-    @scala.inline
-    def usAutocomplete(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocomplete")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup]]
+    inline def usAutocomplete(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocomplete")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup]]
+    inline def usAutocomplete(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocomplete")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocomplete.Lookup]]
     
-    @scala.inline
-    def usAutocompletePro(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocompletePro")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup]]
-    @scala.inline
-    def usAutocompletePro(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocompletePro")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup]]
+    inline def usAutocompletePro(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocompletePro")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup]]
+    inline def usAutocompletePro(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usAutocompletePro")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usAutocompletePro.Lookup]]
     
-    @scala.inline
-    def usExtract(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usExtract")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup]]
-    @scala.inline
-    def usExtract(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usExtract")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup]]
+    inline def usExtract(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usExtract")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup]]
+    inline def usExtract(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usExtract")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usExtract.Lookup]]
     
-    @scala.inline
-    def usStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup]]
-    @scala.inline
-    def usStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup]]
+    inline def usStreet(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup]]
+    inline def usStreet(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usStreet")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usStreet.Lookup]]
     
-    @scala.inline
-    def usZipcode(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usZipcode")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup]]
-    @scala.inline
-    def usZipcode(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usZipcode")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup]]
+    inline def usZipcode(credentials: SharedCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usZipcode")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup]]
+    inline def usZipcode(credentials: StaticCredentials): Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup] = ^.asInstanceOf[js.Dynamic].applyDynamic("usZipcode")(credentials.asInstanceOf[js.Any]).asInstanceOf[Client[typings.smartystreetsJavascriptSdk.mod.usZipcode.Lookup]]
   }
   
   trait Client[T]
@@ -220,17 +208,14 @@ object core {
   }
   object Client {
     
-    @scala.inline
-    def apply[T](send: T => js.Promise[T], sender: js.Any): Client[T] = {
+    inline def apply[T](send: T => js.Promise[T], sender: js.Any): Client[T] = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction1(send), sender = sender.asInstanceOf[js.Any])
       __obj.asInstanceOf[Client[T]]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client[?], T] (val x: Self & Client[T]) extends AnyVal {
+    extension [Self <: Client[?], T](x: Self & Client[T]) {
       
-      @scala.inline
-      def setSend(value: T => js.Promise[T]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: T => js.Promise[T]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
@@ -240,17 +225,14 @@ object core {
   }
   object ClientInstance {
     
-    @scala.inline
-    def apply(sender: js.Any): ClientInstance = {
+    inline def apply(sender: js.Any): ClientInstance = {
       val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientInstance]
     }
     
-    @scala.inline
-    implicit class ClientInstanceMutableBuilder[Self <: ClientInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ClientInstance](x: Self) {
       
-      @scala.inline
-      def setSender(value: js.Any): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: js.Any): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     }
   }
   

@@ -17,14 +17,11 @@ trait RememberAuthentication extends StObject
 object RememberAuthentication {
   
   /** Do not remember the authentication data (use it once and immediately forget about it). */
-  @scala.inline
-  def NO: `0` = 0.asInstanceOf[`0`]
+  inline def NO: `0` = 0.asInstanceOf[`0`]
   
   /** Remember the authentication data "forever". */
-  @scala.inline
-  def PERSISTENT: `2` = 2.asInstanceOf[`2`]
+  inline def PERSISTENT: `2` = 2.asInstanceOf[`2`]
   
   /** Remember the authentication data, but only until the end of the current session. */
-  @scala.inline
-  def SESSION: `1` = 1.asInstanceOf[`1`]
+  inline def SESSION: `1` = 1.asInstanceOf[`1`]
 }

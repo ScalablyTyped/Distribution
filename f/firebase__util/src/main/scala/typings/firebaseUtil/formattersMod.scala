@@ -10,6 +10,5 @@ object formattersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ordinal(i: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(i.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ordinal(i: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(i.asInstanceOf[js.Any]).asInstanceOf[String]
 }

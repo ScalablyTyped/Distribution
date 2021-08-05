@@ -30,25 +30,19 @@ trait EnhancedElementInstance[T] extends StObject {
 }
 object EnhancedElementInstance {
   
-  @scala.inline
-  def apply[T](locateStrategy: LocateStrategy, name: String, parent: T, selector: String): EnhancedElementInstance[T] = {
+  inline def apply[T](locateStrategy: LocateStrategy, name: String, parent: T, selector: String): EnhancedElementInstance[T] = {
     val __obj = js.Dynamic.literal(locateStrategy = locateStrategy.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedElementInstance[T]]
   }
   
-  @scala.inline
-  implicit class EnhancedElementInstanceMutableBuilder[Self <: EnhancedElementInstance[?], T] (val x: Self & EnhancedElementInstance[T]) extends AnyVal {
+  extension [Self <: EnhancedElementInstance[?], T](x: Self & EnhancedElementInstance[T]) {
     
-    @scala.inline
-    def setLocateStrategy(value: LocateStrategy): Self = StObject.set(x, "locateStrategy", value.asInstanceOf[js.Any])
+    inline def setLocateStrategy(value: LocateStrategy): Self = StObject.set(x, "locateStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: T): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: T): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

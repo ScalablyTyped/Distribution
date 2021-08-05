@@ -13,22 +13,17 @@ trait ArtistRelationships extends StObject {
 }
 object ArtistRelationships {
   
-  @scala.inline
-  def apply(albums: Relationship[Album]): ArtistRelationships = {
+  inline def apply(albums: Relationship[Album]): ArtistRelationships = {
     val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistRelationships]
   }
   
-  @scala.inline
-  implicit class ArtistRelationshipsMutableBuilder[Self <: ArtistRelationships] (val x: Self) extends AnyVal {
+  extension [Self <: ArtistRelationships](x: Self) {
     
-    @scala.inline
-    def setAlbums(value: Relationship[Album]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
+    inline def setAlbums(value: Relationship[Album]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenres(value: Relationship[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+    inline def setGenres(value: Relationship[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
+    inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
   }
 }

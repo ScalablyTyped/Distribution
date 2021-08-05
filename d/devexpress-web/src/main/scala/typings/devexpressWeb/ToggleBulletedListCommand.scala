@@ -23,19 +23,15 @@ trait ToggleBulletedListCommand
 }
 object ToggleBulletedListCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleBulletedListCommand = {
+  inline def apply(execute: () => Boolean, getState: () => CommandState[Boolean]): ToggleBulletedListCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ToggleBulletedListCommand]
   }
   
-  @scala.inline
-  implicit class ToggleBulletedListCommandMutableBuilder[Self <: ToggleBulletedListCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ToggleBulletedListCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[Boolean]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[Boolean]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

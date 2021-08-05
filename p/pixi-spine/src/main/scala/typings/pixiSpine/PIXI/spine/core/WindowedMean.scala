@@ -24,8 +24,7 @@ trait WindowedMean extends StObject {
 }
 object WindowedMean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addValue: Double => Unit,
     addedValues: Double,
     dirty: Boolean,
@@ -39,34 +38,24 @@ object WindowedMean {
     __obj.asInstanceOf[WindowedMean]
   }
   
-  @scala.inline
-  implicit class WindowedMeanMutableBuilder[Self <: WindowedMean] (val x: Self) extends AnyVal {
+  extension [Self <: WindowedMean](x: Self) {
     
-    @scala.inline
-    def setAddValue(value: Double => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction1(value))
+    inline def setAddValue(value: Double => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddedValues(value: Double): Self = StObject.set(x, "addedValues", value.asInstanceOf[js.Any])
+    inline def setAddedValues(value: Double): Self = StObject.set(x, "addedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMean(value: () => Double): Self = StObject.set(x, "getMean", js.Any.fromFunction0(value))
+    inline def setGetMean(value: () => Double): Self = StObject.set(x, "getMean", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasEnoughData(value: () => Boolean): Self = StObject.set(x, "hasEnoughData", js.Any.fromFunction0(value))
+    inline def setHasEnoughData(value: () => Boolean): Self = StObject.set(x, "hasEnoughData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLastValue(value: Double): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
+    inline def setLastValue(value: Double): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

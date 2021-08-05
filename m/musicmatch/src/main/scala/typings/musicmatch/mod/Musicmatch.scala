@@ -44,8 +44,7 @@ trait Musicmatch extends StObject {
 }
 object Musicmatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     album: AlbumParams => js.Promise[js.Any],
     albumTracks: AlbumTracksParams => js.Promise[js.Any],
     artist: ArtistParams => js.Promise[js.Any],
@@ -69,61 +68,42 @@ object Musicmatch {
     __obj.asInstanceOf[Musicmatch]
   }
   
-  @scala.inline
-  implicit class MusicmatchMutableBuilder[Self <: Musicmatch] (val x: Self) extends AnyVal {
+  extension [Self <: Musicmatch](x: Self) {
     
-    @scala.inline
-    def setAlbum(value: AlbumParams => js.Promise[js.Any]): Self = StObject.set(x, "album", js.Any.fromFunction1(value))
+    inline def setAlbum(value: AlbumParams => js.Promise[js.Any]): Self = StObject.set(x, "album", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlbumTracks(value: AlbumTracksParams => js.Promise[js.Any]): Self = StObject.set(x, "albumTracks", js.Any.fromFunction1(value))
+    inline def setAlbumTracks(value: AlbumTracksParams => js.Promise[js.Any]): Self = StObject.set(x, "albumTracks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArtist(value: ArtistParams => js.Promise[js.Any]): Self = StObject.set(x, "artist", js.Any.fromFunction1(value))
+    inline def setArtist(value: ArtistParams => js.Promise[js.Any]): Self = StObject.set(x, "artist", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArtistAlbums(value: ArtistAlbumsParams => js.Promise[js.Any]): Self = StObject.set(x, "artistAlbums", js.Any.fromFunction1(value))
+    inline def setArtistAlbums(value: ArtistAlbumsParams => js.Promise[js.Any]): Self = StObject.set(x, "artistAlbums", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArtistRelated(value: ArtistRelatedParams => js.Promise[js.Any]): Self = StObject.set(x, "artistRelated", js.Any.fromFunction1(value))
+    inline def setArtistRelated(value: ArtistRelatedParams => js.Promise[js.Any]): Self = StObject.set(x, "artistRelated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArtistSearch(value: ArtistSearchParams => js.Promise[js.Any]): Self = StObject.set(x, "artistSearch", js.Any.fromFunction1(value))
+    inline def setArtistSearch(value: ArtistSearchParams => js.Promise[js.Any]): Self = StObject.set(x, "artistSearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChartArtists(value: ChartArtistsParams => js.Promise[js.Any]): Self = StObject.set(x, "chartArtists", js.Any.fromFunction1(value))
+    inline def setChartArtists(value: ChartArtistsParams => js.Promise[js.Any]): Self = StObject.set(x, "chartArtists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChartTracks(value: ChartTracksParams => js.Promise[js.Any]): Self = StObject.set(x, "chartTracks", js.Any.fromFunction1(value))
+    inline def setChartTracks(value: ChartTracksParams => js.Promise[js.Any]): Self = StObject.set(x, "chartTracks", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatcherLyrics(value: MatcherLyricsParams => js.Promise[js.Any]): Self = StObject.set(x, "matcherLyrics", js.Any.fromFunction1(value))
+    inline def setMatcherLyrics(value: MatcherLyricsParams => js.Promise[js.Any]): Self = StObject.set(x, "matcherLyrics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatcherSubtitle(value: MatcherSubtitleParams => js.Promise[js.Any]): Self = StObject.set(x, "matcherSubtitle", js.Any.fromFunction1(value))
+    inline def setMatcherSubtitle(value: MatcherSubtitleParams => js.Promise[js.Any]): Self = StObject.set(x, "matcherSubtitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMatcherTrack(value: MatcherTrackParams => js.Promise[js.Any]): Self = StObject.set(x, "matcherTrack", js.Any.fromFunction1(value))
+    inline def setMatcherTrack(value: MatcherTrackParams => js.Promise[js.Any]): Self = StObject.set(x, "matcherTrack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrack(value: TrackParams => js.Promise[js.Any]): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
+    inline def setTrack(value: TrackParams => js.Promise[js.Any]): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrackLyrics(value: TrackLyricsParams => js.Promise[js.Any]): Self = StObject.set(x, "trackLyrics", js.Any.fromFunction1(value))
+    inline def setTrackLyrics(value: TrackLyricsParams => js.Promise[js.Any]): Self = StObject.set(x, "trackLyrics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrackLyricsAdd(value: TrackLyricsAddParams => js.Promise[js.Any]): Self = StObject.set(x, "trackLyricsAdd", js.Any.fromFunction1(value))
+    inline def setTrackLyricsAdd(value: TrackLyricsAddParams => js.Promise[js.Any]): Self = StObject.set(x, "trackLyricsAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrackLyricsFeedback(value: TrackLyricsFeedbackParams => js.Promise[js.Any]): Self = StObject.set(x, "trackLyricsFeedback", js.Any.fromFunction1(value))
+    inline def setTrackLyricsFeedback(value: TrackLyricsFeedbackParams => js.Promise[js.Any]): Self = StObject.set(x, "trackLyricsFeedback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrackSearch(value: TrackSearchParams => js.Promise[TrackSearchResult]): Self = StObject.set(x, "trackSearch", js.Any.fromFunction1(value))
+    inline def setTrackSearch(value: TrackSearchParams => js.Promise[TrackSearchResult]): Self = StObject.set(x, "trackSearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrackSnippet(value: TrackSnippetParams => js.Promise[js.Any]): Self = StObject.set(x, "trackSnippet", js.Any.fromFunction1(value))
+    inline def setTrackSnippet(value: TrackSnippetParams => js.Promise[js.Any]): Self = StObject.set(x, "trackSnippet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrackSubtitle(value: TrackSubtitleParams => js.Promise[js.Any]): Self = StObject.set(x, "trackSubtitle", js.Any.fromFunction1(value))
+    inline def setTrackSubtitle(value: TrackSubtitleParams => js.Promise[js.Any]): Self = StObject.set(x, "trackSubtitle", js.Any.fromFunction1(value))
   }
 }

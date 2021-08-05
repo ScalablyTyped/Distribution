@@ -406,439 +406,295 @@ trait SchemaContentRating extends StObject {
 }
 object SchemaContentRating {
   
-  @scala.inline
-  def apply(): SchemaContentRating = {
+  inline def apply(): SchemaContentRating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContentRating]
   }
   
-  @scala.inline
-  implicit class SchemaContentRatingMutableBuilder[Self <: SchemaContentRating] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContentRating](x: Self) {
     
-    @scala.inline
-    def setAcbRating(value: String): Self = StObject.set(x, "acbRating", value.asInstanceOf[js.Any])
+    inline def setAcbRating(value: String): Self = StObject.set(x, "acbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcbRatingUndefined: Self = StObject.set(x, "acbRating", js.undefined)
+    inline def setAcbRatingUndefined: Self = StObject.set(x, "acbRating", js.undefined)
     
-    @scala.inline
-    def setAgcomRating(value: String): Self = StObject.set(x, "agcomRating", value.asInstanceOf[js.Any])
+    inline def setAgcomRating(value: String): Self = StObject.set(x, "agcomRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgcomRatingUndefined: Self = StObject.set(x, "agcomRating", js.undefined)
+    inline def setAgcomRatingUndefined: Self = StObject.set(x, "agcomRating", js.undefined)
     
-    @scala.inline
-    def setAnatelRating(value: String): Self = StObject.set(x, "anatelRating", value.asInstanceOf[js.Any])
+    inline def setAnatelRating(value: String): Self = StObject.set(x, "anatelRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnatelRatingUndefined: Self = StObject.set(x, "anatelRating", js.undefined)
+    inline def setAnatelRatingUndefined: Self = StObject.set(x, "anatelRating", js.undefined)
     
-    @scala.inline
-    def setBbfcRating(value: String): Self = StObject.set(x, "bbfcRating", value.asInstanceOf[js.Any])
+    inline def setBbfcRating(value: String): Self = StObject.set(x, "bbfcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBbfcRatingUndefined: Self = StObject.set(x, "bbfcRating", js.undefined)
+    inline def setBbfcRatingUndefined: Self = StObject.set(x, "bbfcRating", js.undefined)
     
-    @scala.inline
-    def setBfvcRating(value: String): Self = StObject.set(x, "bfvcRating", value.asInstanceOf[js.Any])
+    inline def setBfvcRating(value: String): Self = StObject.set(x, "bfvcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBfvcRatingUndefined: Self = StObject.set(x, "bfvcRating", js.undefined)
+    inline def setBfvcRatingUndefined: Self = StObject.set(x, "bfvcRating", js.undefined)
     
-    @scala.inline
-    def setBmukkRating(value: String): Self = StObject.set(x, "bmukkRating", value.asInstanceOf[js.Any])
+    inline def setBmukkRating(value: String): Self = StObject.set(x, "bmukkRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBmukkRatingUndefined: Self = StObject.set(x, "bmukkRating", js.undefined)
+    inline def setBmukkRatingUndefined: Self = StObject.set(x, "bmukkRating", js.undefined)
     
-    @scala.inline
-    def setCatvRating(value: String): Self = StObject.set(x, "catvRating", value.asInstanceOf[js.Any])
+    inline def setCatvRating(value: String): Self = StObject.set(x, "catvRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatvRatingUndefined: Self = StObject.set(x, "catvRating", js.undefined)
+    inline def setCatvRatingUndefined: Self = StObject.set(x, "catvRating", js.undefined)
     
-    @scala.inline
-    def setCatvfrRating(value: String): Self = StObject.set(x, "catvfrRating", value.asInstanceOf[js.Any])
+    inline def setCatvfrRating(value: String): Self = StObject.set(x, "catvfrRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatvfrRatingUndefined: Self = StObject.set(x, "catvfrRating", js.undefined)
+    inline def setCatvfrRatingUndefined: Self = StObject.set(x, "catvfrRating", js.undefined)
     
-    @scala.inline
-    def setCbfcRating(value: String): Self = StObject.set(x, "cbfcRating", value.asInstanceOf[js.Any])
+    inline def setCbfcRating(value: String): Self = StObject.set(x, "cbfcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCbfcRatingUndefined: Self = StObject.set(x, "cbfcRating", js.undefined)
+    inline def setCbfcRatingUndefined: Self = StObject.set(x, "cbfcRating", js.undefined)
     
-    @scala.inline
-    def setCccRating(value: String): Self = StObject.set(x, "cccRating", value.asInstanceOf[js.Any])
+    inline def setCccRating(value: String): Self = StObject.set(x, "cccRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCccRatingUndefined: Self = StObject.set(x, "cccRating", js.undefined)
+    inline def setCccRatingUndefined: Self = StObject.set(x, "cccRating", js.undefined)
     
-    @scala.inline
-    def setCceRating(value: String): Self = StObject.set(x, "cceRating", value.asInstanceOf[js.Any])
+    inline def setCceRating(value: String): Self = StObject.set(x, "cceRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCceRatingUndefined: Self = StObject.set(x, "cceRating", js.undefined)
+    inline def setCceRatingUndefined: Self = StObject.set(x, "cceRating", js.undefined)
     
-    @scala.inline
-    def setChfilmRating(value: String): Self = StObject.set(x, "chfilmRating", value.asInstanceOf[js.Any])
+    inline def setChfilmRating(value: String): Self = StObject.set(x, "chfilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChfilmRatingUndefined: Self = StObject.set(x, "chfilmRating", js.undefined)
+    inline def setChfilmRatingUndefined: Self = StObject.set(x, "chfilmRating", js.undefined)
     
-    @scala.inline
-    def setChvrsRating(value: String): Self = StObject.set(x, "chvrsRating", value.asInstanceOf[js.Any])
+    inline def setChvrsRating(value: String): Self = StObject.set(x, "chvrsRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChvrsRatingUndefined: Self = StObject.set(x, "chvrsRating", js.undefined)
+    inline def setChvrsRatingUndefined: Self = StObject.set(x, "chvrsRating", js.undefined)
     
-    @scala.inline
-    def setCicfRating(value: String): Self = StObject.set(x, "cicfRating", value.asInstanceOf[js.Any])
+    inline def setCicfRating(value: String): Self = StObject.set(x, "cicfRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCicfRatingUndefined: Self = StObject.set(x, "cicfRating", js.undefined)
+    inline def setCicfRatingUndefined: Self = StObject.set(x, "cicfRating", js.undefined)
     
-    @scala.inline
-    def setCnaRating(value: String): Self = StObject.set(x, "cnaRating", value.asInstanceOf[js.Any])
+    inline def setCnaRating(value: String): Self = StObject.set(x, "cnaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCnaRatingUndefined: Self = StObject.set(x, "cnaRating", js.undefined)
+    inline def setCnaRatingUndefined: Self = StObject.set(x, "cnaRating", js.undefined)
     
-    @scala.inline
-    def setCncRating(value: String): Self = StObject.set(x, "cncRating", value.asInstanceOf[js.Any])
+    inline def setCncRating(value: String): Self = StObject.set(x, "cncRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCncRatingUndefined: Self = StObject.set(x, "cncRating", js.undefined)
+    inline def setCncRatingUndefined: Self = StObject.set(x, "cncRating", js.undefined)
     
-    @scala.inline
-    def setCsaRating(value: String): Self = StObject.set(x, "csaRating", value.asInstanceOf[js.Any])
+    inline def setCsaRating(value: String): Self = StObject.set(x, "csaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsaRatingUndefined: Self = StObject.set(x, "csaRating", js.undefined)
+    inline def setCsaRatingUndefined: Self = StObject.set(x, "csaRating", js.undefined)
     
-    @scala.inline
-    def setCscfRating(value: String): Self = StObject.set(x, "cscfRating", value.asInstanceOf[js.Any])
+    inline def setCscfRating(value: String): Self = StObject.set(x, "cscfRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCscfRatingUndefined: Self = StObject.set(x, "cscfRating", js.undefined)
+    inline def setCscfRatingUndefined: Self = StObject.set(x, "cscfRating", js.undefined)
     
-    @scala.inline
-    def setCzfilmRating(value: String): Self = StObject.set(x, "czfilmRating", value.asInstanceOf[js.Any])
+    inline def setCzfilmRating(value: String): Self = StObject.set(x, "czfilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCzfilmRatingUndefined: Self = StObject.set(x, "czfilmRating", js.undefined)
+    inline def setCzfilmRatingUndefined: Self = StObject.set(x, "czfilmRating", js.undefined)
     
-    @scala.inline
-    def setDjctqRating(value: String): Self = StObject.set(x, "djctqRating", value.asInstanceOf[js.Any])
+    inline def setDjctqRating(value: String): Self = StObject.set(x, "djctqRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDjctqRatingReasons(value: js.Array[String]): Self = StObject.set(x, "djctqRatingReasons", value.asInstanceOf[js.Any])
+    inline def setDjctqRatingReasons(value: js.Array[String]): Self = StObject.set(x, "djctqRatingReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDjctqRatingReasonsUndefined: Self = StObject.set(x, "djctqRatingReasons", js.undefined)
+    inline def setDjctqRatingReasonsUndefined: Self = StObject.set(x, "djctqRatingReasons", js.undefined)
     
-    @scala.inline
-    def setDjctqRatingReasonsVarargs(value: String*): Self = StObject.set(x, "djctqRatingReasons", js.Array(value :_*))
+    inline def setDjctqRatingReasonsVarargs(value: String*): Self = StObject.set(x, "djctqRatingReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setDjctqRatingUndefined: Self = StObject.set(x, "djctqRating", js.undefined)
+    inline def setDjctqRatingUndefined: Self = StObject.set(x, "djctqRating", js.undefined)
     
-    @scala.inline
-    def setEcbmctRating(value: String): Self = StObject.set(x, "ecbmctRating", value.asInstanceOf[js.Any])
+    inline def setEcbmctRating(value: String): Self = StObject.set(x, "ecbmctRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcbmctRatingUndefined: Self = StObject.set(x, "ecbmctRating", js.undefined)
+    inline def setEcbmctRatingUndefined: Self = StObject.set(x, "ecbmctRating", js.undefined)
     
-    @scala.inline
-    def setEefilmRating(value: String): Self = StObject.set(x, "eefilmRating", value.asInstanceOf[js.Any])
+    inline def setEefilmRating(value: String): Self = StObject.set(x, "eefilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEefilmRatingUndefined: Self = StObject.set(x, "eefilmRating", js.undefined)
+    inline def setEefilmRatingUndefined: Self = StObject.set(x, "eefilmRating", js.undefined)
     
-    @scala.inline
-    def setEgfilmRating(value: String): Self = StObject.set(x, "egfilmRating", value.asInstanceOf[js.Any])
+    inline def setEgfilmRating(value: String): Self = StObject.set(x, "egfilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgfilmRatingUndefined: Self = StObject.set(x, "egfilmRating", js.undefined)
+    inline def setEgfilmRatingUndefined: Self = StObject.set(x, "egfilmRating", js.undefined)
     
-    @scala.inline
-    def setEirinRating(value: String): Self = StObject.set(x, "eirinRating", value.asInstanceOf[js.Any])
+    inline def setEirinRating(value: String): Self = StObject.set(x, "eirinRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEirinRatingUndefined: Self = StObject.set(x, "eirinRating", js.undefined)
+    inline def setEirinRatingUndefined: Self = StObject.set(x, "eirinRating", js.undefined)
     
-    @scala.inline
-    def setFcbmRating(value: String): Self = StObject.set(x, "fcbmRating", value.asInstanceOf[js.Any])
+    inline def setFcbmRating(value: String): Self = StObject.set(x, "fcbmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcbmRatingUndefined: Self = StObject.set(x, "fcbmRating", js.undefined)
+    inline def setFcbmRatingUndefined: Self = StObject.set(x, "fcbmRating", js.undefined)
     
-    @scala.inline
-    def setFcoRating(value: String): Self = StObject.set(x, "fcoRating", value.asInstanceOf[js.Any])
+    inline def setFcoRating(value: String): Self = StObject.set(x, "fcoRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcoRatingUndefined: Self = StObject.set(x, "fcoRating", js.undefined)
+    inline def setFcoRatingUndefined: Self = StObject.set(x, "fcoRating", js.undefined)
     
-    @scala.inline
-    def setFmocRating(value: String): Self = StObject.set(x, "fmocRating", value.asInstanceOf[js.Any])
+    inline def setFmocRating(value: String): Self = StObject.set(x, "fmocRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFmocRatingUndefined: Self = StObject.set(x, "fmocRating", js.undefined)
+    inline def setFmocRatingUndefined: Self = StObject.set(x, "fmocRating", js.undefined)
     
-    @scala.inline
-    def setFpbRating(value: String): Self = StObject.set(x, "fpbRating", value.asInstanceOf[js.Any])
+    inline def setFpbRating(value: String): Self = StObject.set(x, "fpbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpbRatingReasons(value: js.Array[String]): Self = StObject.set(x, "fpbRatingReasons", value.asInstanceOf[js.Any])
+    inline def setFpbRatingReasons(value: js.Array[String]): Self = StObject.set(x, "fpbRatingReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpbRatingReasonsUndefined: Self = StObject.set(x, "fpbRatingReasons", js.undefined)
+    inline def setFpbRatingReasonsUndefined: Self = StObject.set(x, "fpbRatingReasons", js.undefined)
     
-    @scala.inline
-    def setFpbRatingReasonsVarargs(value: String*): Self = StObject.set(x, "fpbRatingReasons", js.Array(value :_*))
+    inline def setFpbRatingReasonsVarargs(value: String*): Self = StObject.set(x, "fpbRatingReasons", js.Array(value :_*))
     
-    @scala.inline
-    def setFpbRatingUndefined: Self = StObject.set(x, "fpbRating", js.undefined)
+    inline def setFpbRatingUndefined: Self = StObject.set(x, "fpbRating", js.undefined)
     
-    @scala.inline
-    def setFskRating(value: String): Self = StObject.set(x, "fskRating", value.asInstanceOf[js.Any])
+    inline def setFskRating(value: String): Self = StObject.set(x, "fskRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFskRatingUndefined: Self = StObject.set(x, "fskRating", js.undefined)
+    inline def setFskRatingUndefined: Self = StObject.set(x, "fskRating", js.undefined)
     
-    @scala.inline
-    def setGrfilmRating(value: String): Self = StObject.set(x, "grfilmRating", value.asInstanceOf[js.Any])
+    inline def setGrfilmRating(value: String): Self = StObject.set(x, "grfilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrfilmRatingUndefined: Self = StObject.set(x, "grfilmRating", js.undefined)
+    inline def setGrfilmRatingUndefined: Self = StObject.set(x, "grfilmRating", js.undefined)
     
-    @scala.inline
-    def setIcaaRating(value: String): Self = StObject.set(x, "icaaRating", value.asInstanceOf[js.Any])
+    inline def setIcaaRating(value: String): Self = StObject.set(x, "icaaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcaaRatingUndefined: Self = StObject.set(x, "icaaRating", js.undefined)
+    inline def setIcaaRatingUndefined: Self = StObject.set(x, "icaaRating", js.undefined)
     
-    @scala.inline
-    def setIfcoRating(value: String): Self = StObject.set(x, "ifcoRating", value.asInstanceOf[js.Any])
+    inline def setIfcoRating(value: String): Self = StObject.set(x, "ifcoRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfcoRatingUndefined: Self = StObject.set(x, "ifcoRating", js.undefined)
+    inline def setIfcoRatingUndefined: Self = StObject.set(x, "ifcoRating", js.undefined)
     
-    @scala.inline
-    def setIlfilmRating(value: String): Self = StObject.set(x, "ilfilmRating", value.asInstanceOf[js.Any])
+    inline def setIlfilmRating(value: String): Self = StObject.set(x, "ilfilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIlfilmRatingUndefined: Self = StObject.set(x, "ilfilmRating", js.undefined)
+    inline def setIlfilmRatingUndefined: Self = StObject.set(x, "ilfilmRating", js.undefined)
     
-    @scala.inline
-    def setIncaaRating(value: String): Self = StObject.set(x, "incaaRating", value.asInstanceOf[js.Any])
+    inline def setIncaaRating(value: String): Self = StObject.set(x, "incaaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncaaRatingUndefined: Self = StObject.set(x, "incaaRating", js.undefined)
+    inline def setIncaaRatingUndefined: Self = StObject.set(x, "incaaRating", js.undefined)
     
-    @scala.inline
-    def setKfcbRating(value: String): Self = StObject.set(x, "kfcbRating", value.asInstanceOf[js.Any])
+    inline def setKfcbRating(value: String): Self = StObject.set(x, "kfcbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKfcbRatingUndefined: Self = StObject.set(x, "kfcbRating", js.undefined)
+    inline def setKfcbRatingUndefined: Self = StObject.set(x, "kfcbRating", js.undefined)
     
-    @scala.inline
-    def setKijkwijzerRating(value: String): Self = StObject.set(x, "kijkwijzerRating", value.asInstanceOf[js.Any])
+    inline def setKijkwijzerRating(value: String): Self = StObject.set(x, "kijkwijzerRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKijkwijzerRatingUndefined: Self = StObject.set(x, "kijkwijzerRating", js.undefined)
+    inline def setKijkwijzerRatingUndefined: Self = StObject.set(x, "kijkwijzerRating", js.undefined)
     
-    @scala.inline
-    def setKmrbRating(value: String): Self = StObject.set(x, "kmrbRating", value.asInstanceOf[js.Any])
+    inline def setKmrbRating(value: String): Self = StObject.set(x, "kmrbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmrbRatingUndefined: Self = StObject.set(x, "kmrbRating", js.undefined)
+    inline def setKmrbRatingUndefined: Self = StObject.set(x, "kmrbRating", js.undefined)
     
-    @scala.inline
-    def setLsfRating(value: String): Self = StObject.set(x, "lsfRating", value.asInstanceOf[js.Any])
+    inline def setLsfRating(value: String): Self = StObject.set(x, "lsfRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLsfRatingUndefined: Self = StObject.set(x, "lsfRating", js.undefined)
+    inline def setLsfRatingUndefined: Self = StObject.set(x, "lsfRating", js.undefined)
     
-    @scala.inline
-    def setMccaaRating(value: String): Self = StObject.set(x, "mccaaRating", value.asInstanceOf[js.Any])
+    inline def setMccaaRating(value: String): Self = StObject.set(x, "mccaaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMccaaRatingUndefined: Self = StObject.set(x, "mccaaRating", js.undefined)
+    inline def setMccaaRatingUndefined: Self = StObject.set(x, "mccaaRating", js.undefined)
     
-    @scala.inline
-    def setMccypRating(value: String): Self = StObject.set(x, "mccypRating", value.asInstanceOf[js.Any])
+    inline def setMccypRating(value: String): Self = StObject.set(x, "mccypRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMccypRatingUndefined: Self = StObject.set(x, "mccypRating", js.undefined)
+    inline def setMccypRatingUndefined: Self = StObject.set(x, "mccypRating", js.undefined)
     
-    @scala.inline
-    def setMcstRating(value: String): Self = StObject.set(x, "mcstRating", value.asInstanceOf[js.Any])
+    inline def setMcstRating(value: String): Self = StObject.set(x, "mcstRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMcstRatingUndefined: Self = StObject.set(x, "mcstRating", js.undefined)
+    inline def setMcstRatingUndefined: Self = StObject.set(x, "mcstRating", js.undefined)
     
-    @scala.inline
-    def setMdaRating(value: String): Self = StObject.set(x, "mdaRating", value.asInstanceOf[js.Any])
+    inline def setMdaRating(value: String): Self = StObject.set(x, "mdaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdaRatingUndefined: Self = StObject.set(x, "mdaRating", js.undefined)
+    inline def setMdaRatingUndefined: Self = StObject.set(x, "mdaRating", js.undefined)
     
-    @scala.inline
-    def setMedietilsynetRating(value: String): Self = StObject.set(x, "medietilsynetRating", value.asInstanceOf[js.Any])
+    inline def setMedietilsynetRating(value: String): Self = StObject.set(x, "medietilsynetRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedietilsynetRatingUndefined: Self = StObject.set(x, "medietilsynetRating", js.undefined)
+    inline def setMedietilsynetRatingUndefined: Self = StObject.set(x, "medietilsynetRating", js.undefined)
     
-    @scala.inline
-    def setMekuRating(value: String): Self = StObject.set(x, "mekuRating", value.asInstanceOf[js.Any])
+    inline def setMekuRating(value: String): Self = StObject.set(x, "mekuRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMekuRatingUndefined: Self = StObject.set(x, "mekuRating", js.undefined)
+    inline def setMekuRatingUndefined: Self = StObject.set(x, "mekuRating", js.undefined)
     
-    @scala.inline
-    def setMenaMpaaRating(value: String): Self = StObject.set(x, "menaMpaaRating", value.asInstanceOf[js.Any])
+    inline def setMenaMpaaRating(value: String): Self = StObject.set(x, "menaMpaaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenaMpaaRatingUndefined: Self = StObject.set(x, "menaMpaaRating", js.undefined)
+    inline def setMenaMpaaRatingUndefined: Self = StObject.set(x, "menaMpaaRating", js.undefined)
     
-    @scala.inline
-    def setMibacRating(value: String): Self = StObject.set(x, "mibacRating", value.asInstanceOf[js.Any])
+    inline def setMibacRating(value: String): Self = StObject.set(x, "mibacRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMibacRatingUndefined: Self = StObject.set(x, "mibacRating", js.undefined)
+    inline def setMibacRatingUndefined: Self = StObject.set(x, "mibacRating", js.undefined)
     
-    @scala.inline
-    def setMocRating(value: String): Self = StObject.set(x, "mocRating", value.asInstanceOf[js.Any])
+    inline def setMocRating(value: String): Self = StObject.set(x, "mocRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMocRatingUndefined: Self = StObject.set(x, "mocRating", js.undefined)
+    inline def setMocRatingUndefined: Self = StObject.set(x, "mocRating", js.undefined)
     
-    @scala.inline
-    def setMoctwRating(value: String): Self = StObject.set(x, "moctwRating", value.asInstanceOf[js.Any])
+    inline def setMoctwRating(value: String): Self = StObject.set(x, "moctwRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoctwRatingUndefined: Self = StObject.set(x, "moctwRating", js.undefined)
+    inline def setMoctwRatingUndefined: Self = StObject.set(x, "moctwRating", js.undefined)
     
-    @scala.inline
-    def setMpaaRating(value: String): Self = StObject.set(x, "mpaaRating", value.asInstanceOf[js.Any])
+    inline def setMpaaRating(value: String): Self = StObject.set(x, "mpaaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpaaRatingUndefined: Self = StObject.set(x, "mpaaRating", js.undefined)
+    inline def setMpaaRatingUndefined: Self = StObject.set(x, "mpaaRating", js.undefined)
     
-    @scala.inline
-    def setMpaatRating(value: String): Self = StObject.set(x, "mpaatRating", value.asInstanceOf[js.Any])
+    inline def setMpaatRating(value: String): Self = StObject.set(x, "mpaatRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpaatRatingUndefined: Self = StObject.set(x, "mpaatRating", js.undefined)
+    inline def setMpaatRatingUndefined: Self = StObject.set(x, "mpaatRating", js.undefined)
     
-    @scala.inline
-    def setMtrcbRating(value: String): Self = StObject.set(x, "mtrcbRating", value.asInstanceOf[js.Any])
+    inline def setMtrcbRating(value: String): Self = StObject.set(x, "mtrcbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtrcbRatingUndefined: Self = StObject.set(x, "mtrcbRating", js.undefined)
+    inline def setMtrcbRatingUndefined: Self = StObject.set(x, "mtrcbRating", js.undefined)
     
-    @scala.inline
-    def setNbcRating(value: String): Self = StObject.set(x, "nbcRating", value.asInstanceOf[js.Any])
+    inline def setNbcRating(value: String): Self = StObject.set(x, "nbcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbcRatingUndefined: Self = StObject.set(x, "nbcRating", js.undefined)
+    inline def setNbcRatingUndefined: Self = StObject.set(x, "nbcRating", js.undefined)
     
-    @scala.inline
-    def setNbcplRating(value: String): Self = StObject.set(x, "nbcplRating", value.asInstanceOf[js.Any])
+    inline def setNbcplRating(value: String): Self = StObject.set(x, "nbcplRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbcplRatingUndefined: Self = StObject.set(x, "nbcplRating", js.undefined)
+    inline def setNbcplRatingUndefined: Self = StObject.set(x, "nbcplRating", js.undefined)
     
-    @scala.inline
-    def setNfrcRating(value: String): Self = StObject.set(x, "nfrcRating", value.asInstanceOf[js.Any])
+    inline def setNfrcRating(value: String): Self = StObject.set(x, "nfrcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfrcRatingUndefined: Self = StObject.set(x, "nfrcRating", js.undefined)
+    inline def setNfrcRatingUndefined: Self = StObject.set(x, "nfrcRating", js.undefined)
     
-    @scala.inline
-    def setNfvcbRating(value: String): Self = StObject.set(x, "nfvcbRating", value.asInstanceOf[js.Any])
+    inline def setNfvcbRating(value: String): Self = StObject.set(x, "nfvcbRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfvcbRatingUndefined: Self = StObject.set(x, "nfvcbRating", js.undefined)
+    inline def setNfvcbRatingUndefined: Self = StObject.set(x, "nfvcbRating", js.undefined)
     
-    @scala.inline
-    def setNkclvRating(value: String): Self = StObject.set(x, "nkclvRating", value.asInstanceOf[js.Any])
+    inline def setNkclvRating(value: String): Self = StObject.set(x, "nkclvRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNkclvRatingUndefined: Self = StObject.set(x, "nkclvRating", js.undefined)
+    inline def setNkclvRatingUndefined: Self = StObject.set(x, "nkclvRating", js.undefined)
     
-    @scala.inline
-    def setOflcRating(value: String): Self = StObject.set(x, "oflcRating", value.asInstanceOf[js.Any])
+    inline def setOflcRating(value: String): Self = StObject.set(x, "oflcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOflcRatingUndefined: Self = StObject.set(x, "oflcRating", js.undefined)
+    inline def setOflcRatingUndefined: Self = StObject.set(x, "oflcRating", js.undefined)
     
-    @scala.inline
-    def setPefilmRating(value: String): Self = StObject.set(x, "pefilmRating", value.asInstanceOf[js.Any])
+    inline def setPefilmRating(value: String): Self = StObject.set(x, "pefilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPefilmRatingUndefined: Self = StObject.set(x, "pefilmRating", js.undefined)
+    inline def setPefilmRatingUndefined: Self = StObject.set(x, "pefilmRating", js.undefined)
     
-    @scala.inline
-    def setRcnofRating(value: String): Self = StObject.set(x, "rcnofRating", value.asInstanceOf[js.Any])
+    inline def setRcnofRating(value: String): Self = StObject.set(x, "rcnofRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRcnofRatingUndefined: Self = StObject.set(x, "rcnofRating", js.undefined)
+    inline def setRcnofRatingUndefined: Self = StObject.set(x, "rcnofRating", js.undefined)
     
-    @scala.inline
-    def setResorteviolenciaRating(value: String): Self = StObject.set(x, "resorteviolenciaRating", value.asInstanceOf[js.Any])
+    inline def setResorteviolenciaRating(value: String): Self = StObject.set(x, "resorteviolenciaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResorteviolenciaRatingUndefined: Self = StObject.set(x, "resorteviolenciaRating", js.undefined)
+    inline def setResorteviolenciaRatingUndefined: Self = StObject.set(x, "resorteviolenciaRating", js.undefined)
     
-    @scala.inline
-    def setRtcRating(value: String): Self = StObject.set(x, "rtcRating", value.asInstanceOf[js.Any])
+    inline def setRtcRating(value: String): Self = StObject.set(x, "rtcRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtcRatingUndefined: Self = StObject.set(x, "rtcRating", js.undefined)
+    inline def setRtcRatingUndefined: Self = StObject.set(x, "rtcRating", js.undefined)
     
-    @scala.inline
-    def setRteRating(value: String): Self = StObject.set(x, "rteRating", value.asInstanceOf[js.Any])
+    inline def setRteRating(value: String): Self = StObject.set(x, "rteRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRteRatingUndefined: Self = StObject.set(x, "rteRating", js.undefined)
+    inline def setRteRatingUndefined: Self = StObject.set(x, "rteRating", js.undefined)
     
-    @scala.inline
-    def setRussiaRating(value: String): Self = StObject.set(x, "russiaRating", value.asInstanceOf[js.Any])
+    inline def setRussiaRating(value: String): Self = StObject.set(x, "russiaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRussiaRatingUndefined: Self = StObject.set(x, "russiaRating", js.undefined)
+    inline def setRussiaRatingUndefined: Self = StObject.set(x, "russiaRating", js.undefined)
     
-    @scala.inline
-    def setSkfilmRating(value: String): Self = StObject.set(x, "skfilmRating", value.asInstanceOf[js.Any])
+    inline def setSkfilmRating(value: String): Self = StObject.set(x, "skfilmRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkfilmRatingUndefined: Self = StObject.set(x, "skfilmRating", js.undefined)
+    inline def setSkfilmRatingUndefined: Self = StObject.set(x, "skfilmRating", js.undefined)
     
-    @scala.inline
-    def setSmaisRating(value: String): Self = StObject.set(x, "smaisRating", value.asInstanceOf[js.Any])
+    inline def setSmaisRating(value: String): Self = StObject.set(x, "smaisRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmaisRatingUndefined: Self = StObject.set(x, "smaisRating", js.undefined)
+    inline def setSmaisRatingUndefined: Self = StObject.set(x, "smaisRating", js.undefined)
     
-    @scala.inline
-    def setSmsaRating(value: String): Self = StObject.set(x, "smsaRating", value.asInstanceOf[js.Any])
+    inline def setSmsaRating(value: String): Self = StObject.set(x, "smsaRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsaRatingUndefined: Self = StObject.set(x, "smsaRating", js.undefined)
+    inline def setSmsaRatingUndefined: Self = StObject.set(x, "smsaRating", js.undefined)
     
-    @scala.inline
-    def setTvpgRating(value: String): Self = StObject.set(x, "tvpgRating", value.asInstanceOf[js.Any])
+    inline def setTvpgRating(value: String): Self = StObject.set(x, "tvpgRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvpgRatingUndefined: Self = StObject.set(x, "tvpgRating", js.undefined)
+    inline def setTvpgRatingUndefined: Self = StObject.set(x, "tvpgRating", js.undefined)
     
-    @scala.inline
-    def setYtRating(value: String): Self = StObject.set(x, "ytRating", value.asInstanceOf[js.Any])
+    inline def setYtRating(value: String): Self = StObject.set(x, "ytRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYtRatingUndefined: Self = StObject.set(x, "ytRating", js.undefined)
+    inline def setYtRatingUndefined: Self = StObject.set(x, "ytRating", js.undefined)
   }
 }

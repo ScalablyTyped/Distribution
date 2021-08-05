@@ -15,31 +15,23 @@ trait PublishCompositeConfig1[InLevel1, OutLevel] extends StObject {
 }
 object PublishCompositeConfig1 {
   
-  @scala.inline
-  def apply[InLevel1, OutLevel](find: InLevel1 => Cursor[OutLevel, OutLevel]): PublishCompositeConfig1[InLevel1, OutLevel] = {
+  inline def apply[InLevel1, OutLevel](find: InLevel1 => Cursor[OutLevel, OutLevel]): PublishCompositeConfig1[InLevel1, OutLevel] = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
     __obj.asInstanceOf[PublishCompositeConfig1[InLevel1, OutLevel]]
   }
   
-  @scala.inline
-  implicit class PublishCompositeConfig1MutableBuilder[Self <: PublishCompositeConfig1[?, ?], InLevel1, OutLevel] (val x: Self & (PublishCompositeConfig1[InLevel1, OutLevel])) extends AnyVal {
+  extension [Self <: PublishCompositeConfig1[?, ?], InLevel1, OutLevel](x: Self & (PublishCompositeConfig1[InLevel1, OutLevel])) {
     
-    @scala.inline
-    def setChildren(value: js.Array[PublishCompositeConfig2[InLevel1, OutLevel, js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[PublishCompositeConfig2[InLevel1, OutLevel, js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: (PublishCompositeConfig2[InLevel1, OutLevel, js.Any])*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (PublishCompositeConfig2[InLevel1, OutLevel, js.Any])*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
+    inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
+    inline def setCollectionNameUndefined: Self = StObject.set(x, "collectionName", js.undefined)
     
-    @scala.inline
-    def setFind(value: InLevel1 => Cursor[OutLevel, OutLevel]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: InLevel1 => Cursor[OutLevel, OutLevel]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }
 }

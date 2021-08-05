@@ -20,8 +20,7 @@ trait AggregatedDataForResultTrend extends StObject {
 }
 object AggregatedDataForResultTrend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: js.Any,
     resultsByOutcome: NumberDictionary[AggregatedResultsByOutcome],
     testResultsContext: TestResultsContext,
@@ -31,19 +30,14 @@ object AggregatedDataForResultTrend {
     __obj.asInstanceOf[AggregatedDataForResultTrend]
   }
   
-  @scala.inline
-  implicit class AggregatedDataForResultTrendMutableBuilder[Self <: AggregatedDataForResultTrend] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedDataForResultTrend](x: Self) {
     
-    @scala.inline
-    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsByOutcome", value.asInstanceOf[js.Any])
+    inline def setResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsByOutcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResultsContext(value: TestResultsContext): Self = StObject.set(x, "testResultsContext", value.asInstanceOf[js.Any])
+    inline def setTestResultsContext(value: TestResultsContext): Self = StObject.set(x, "testResultsContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalTests(value: Double): Self = StObject.set(x, "totalTests", value.asInstanceOf[js.Any])
+    inline def setTotalTests(value: Double): Self = StObject.set(x, "totalTests", value.asInstanceOf[js.Any])
   }
 }

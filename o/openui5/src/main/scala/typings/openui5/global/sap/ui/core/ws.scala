@@ -18,8 +18,7 @@ object ws {
     @JSGlobal("sap.ui.core.ws.ReadyState.CLOSED")
     @js.native
     def CLOSED: js.Any = js.native
-    @scala.inline
-    def CLOSED_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
+    inline def CLOSED_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
     
     /**
       * The connection is going through the closing handshake.
@@ -27,8 +26,7 @@ object ws {
     @JSGlobal("sap.ui.core.ws.ReadyState.CLOSING")
     @js.native
     def CLOSING: js.Any = js.native
-    @scala.inline
-    def CLOSING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+    inline def CLOSING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
     
     /**
       * The connection has not yet been established.
@@ -36,8 +34,7 @@ object ws {
     @JSGlobal("sap.ui.core.ws.ReadyState.CONNECTING")
     @js.native
     def CONNECTING: js.Any = js.native
-    @scala.inline
-    def CONNECTING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+    inline def CONNECTING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
     
     /**
       * The WebSocket connection is established and communication is possible.
@@ -45,8 +42,7 @@ object ws {
     @JSGlobal("sap.ui.core.ws.ReadyState.OPEN")
     @js.native
     def OPEN: js.Any = js.native
-    @scala.inline
-    def OPEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+    inline def OPEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("sap.ui.core.ws.SapPcpWebSocket")
@@ -77,8 +73,7 @@ object ws {
       @JSGlobal("sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS.v10")
       @js.native
       def v10: js.Any = js.native
-      @scala.inline
-      def v10_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v10")(x.asInstanceOf[js.Any])
+      inline def v10_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v10")(x.asInstanceOf[js.Any])
     }
   }
   

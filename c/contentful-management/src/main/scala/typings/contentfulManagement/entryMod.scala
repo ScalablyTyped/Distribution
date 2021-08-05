@@ -20,11 +20,9 @@ object entryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapEntry(http: AxiosInstance, data: EntryProp): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEntry")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Entry]
+  inline def wrapEntry(http: AxiosInstance, data: EntryProp): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEntry")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Entry]
   
-  @scala.inline
-  def wrapEntryCollection(http: AxiosInstance, data: CollectionProp[EntryProp]): Collection[Entry, EntryProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEntryCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Entry, EntryProp]]
+  inline def wrapEntryCollection(http: AxiosInstance, data: CollectionProp[EntryProp]): Collection[Entry, EntryProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapEntryCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Entry, EntryProp]]
   
   trait Entry
     extends StObject
@@ -33,8 +31,7 @@ object entryMod {
        with EntryApi
   object Entry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       archive: () => js.Promise[Entry],
       delete: () => js.Promise[Unit],
       fields: Record[String, js.Any],
@@ -234,8 +231,7 @@ object entryMod {
   }
   object EntryApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       archive: () => js.Promise[Entry],
       delete: () => js.Promise[Unit],
       getSnapshot: String => js.Promise[Snapshot[EntryProp]],
@@ -253,44 +249,31 @@ object entryMod {
       __obj.asInstanceOf[EntryApi]
     }
     
-    @scala.inline
-    implicit class EntryApiMutableBuilder[Self <: EntryApi] (val x: Self) extends AnyVal {
+    extension [Self <: EntryApi](x: Self) {
       
-      @scala.inline
-      def setArchive(value: () => js.Promise[Entry]): Self = StObject.set(x, "archive", js.Any.fromFunction0(value))
+      inline def setArchive(value: () => js.Promise[Entry]): Self = StObject.set(x, "archive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSnapshot(value: String => js.Promise[Snapshot[EntryProp]]): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
+      inline def setGetSnapshot(value: String => js.Promise[Snapshot[EntryProp]]): Self = StObject.set(x, "getSnapshot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSnapshots(value: () => js.Promise[Collection[Snapshot[EntryProp], SnapshotProps[EntryProp]]]): Self = StObject.set(x, "getSnapshots", js.Any.fromFunction0(value))
+      inline def setGetSnapshots(value: () => js.Promise[Collection[Snapshot[EntryProp], SnapshotProps[EntryProp]]]): Self = StObject.set(x, "getSnapshots", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsArchived(value: () => Boolean): Self = StObject.set(x, "isArchived", js.Any.fromFunction0(value))
+      inline def setIsArchived(value: () => Boolean): Self = StObject.set(x, "isArchived", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDraft(value: () => Boolean): Self = StObject.set(x, "isDraft", js.Any.fromFunction0(value))
+      inline def setIsDraft(value: () => Boolean): Self = StObject.set(x, "isDraft", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPublished(value: () => Boolean): Self = StObject.set(x, "isPublished", js.Any.fromFunction0(value))
+      inline def setIsPublished(value: () => Boolean): Self = StObject.set(x, "isPublished", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUpdated(value: () => Boolean): Self = StObject.set(x, "isUpdated", js.Any.fromFunction0(value))
+      inline def setIsUpdated(value: () => Boolean): Self = StObject.set(x, "isUpdated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPublish(value: () => js.Promise[Entry]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
+      inline def setPublish(value: () => js.Promise[Entry]): Self = StObject.set(x, "publish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnarchive(value: () => js.Promise[Entry]): Self = StObject.set(x, "unarchive", js.Any.fromFunction0(value))
+      inline def setUnarchive(value: () => js.Promise[Entry]): Self = StObject.set(x, "unarchive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnpublish(value: () => js.Promise[Entry]): Self = StObject.set(x, "unpublish", js.Any.fromFunction0(value))
+      inline def setUnpublish(value: () => js.Promise[Entry]): Self = StObject.set(x, "unpublish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[Entry]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[Entry]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -304,26 +287,20 @@ object entryMod {
   }
   object EntryProp {
     
-    @scala.inline
-    def apply(fields: Record[String, js.Any], sys: EntrySys): EntryProp = {
+    inline def apply(fields: Record[String, js.Any], sys: EntrySys): EntryProp = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryProp]
     }
     
-    @scala.inline
-    implicit class EntryPropMutableBuilder[Self <: EntryProp] (val x: Self) extends AnyVal {
+    extension [Self <: EntryProp](x: Self) {
       
-      @scala.inline
-      def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Record[String, js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: MetadataProps): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSys(value: EntrySys): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: EntrySys): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,8 +322,7 @@ object entryMod {
   }
   object EntrySys {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contentType: Sys,
       createdAt: String,
       environment: Sys,
@@ -360,38 +336,27 @@ object entryMod {
       __obj.asInstanceOf[EntrySys]
     }
     
-    @scala.inline
-    implicit class EntrySysMutableBuilder[Self <: EntrySys] (val x: Self) extends AnyVal {
+    extension [Self <: EntrySys](x: Self) {
       
-      @scala.inline
-      def setContentType(value: Sys): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: Sys): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: Sys): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Sys): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstPublishedAt(value: String): Self = StObject.set(x, "firstPublishedAt", value.asInstanceOf[js.Any])
+      inline def setFirstPublishedAt(value: String): Self = StObject.set(x, "firstPublishedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstPublishedAtUndefined: Self = StObject.set(x, "firstPublishedAt", js.undefined)
+      inline def setFirstPublishedAtUndefined: Self = StObject.set(x, "firstPublishedAt", js.undefined)
       
-      @scala.inline
-      def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
+      inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
+      inline def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
       
-      @scala.inline
-      def setPublishedBy(value: Sys): Self = StObject.set(x, "publishedBy", value.asInstanceOf[js.Any])
+      inline def setPublishedBy(value: Sys): Self = StObject.set(x, "publishedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishedByUndefined: Self = StObject.set(x, "publishedBy", js.undefined)
+      inline def setPublishedByUndefined: Self = StObject.set(x, "publishedBy", js.undefined)
       
-      @scala.inline
-      def setPublishedCounter(value: Double): Self = StObject.set(x, "publishedCounter", value.asInstanceOf[js.Any])
+      inline def setPublishedCounter(value: Double): Self = StObject.set(x, "publishedCounter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishedCounterUndefined: Self = StObject.set(x, "publishedCounter", js.undefined)
+      inline def setPublishedCounterUndefined: Self = StObject.set(x, "publishedCounter", js.undefined)
     }
   }
 }

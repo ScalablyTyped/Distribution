@@ -16,19 +16,15 @@ trait RoomStatusPermanent
 }
 object RoomStatusPermanent {
   
-  @scala.inline
-  def apply(status: normal | closed, timestamp: Null): RoomStatusPermanent = {
+  inline def apply(status: normal | closed, timestamp: Null): RoomStatusPermanent = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomStatusPermanent]
   }
   
-  @scala.inline
-  implicit class RoomStatusPermanentMutableBuilder[Self <: RoomStatusPermanent] (val x: Self) extends AnyVal {
+  extension [Self <: RoomStatusPermanent](x: Self) {
     
-    @scala.inline
-    def setStatus(value: normal | closed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: normal | closed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Null): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Null): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

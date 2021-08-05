@@ -13,16 +13,13 @@ trait CertissuerString
 }
 object CertissuerString {
   
-  @scala.inline
-  def apply(certissuer: String): CertissuerString = {
+  inline def apply(certissuer: String): CertissuerString = {
     val __obj = js.Dynamic.literal(certissuer = certissuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertissuerString]
   }
   
-  @scala.inline
-  implicit class CertissuerStringMutableBuilder[Self <: CertissuerString] (val x: Self) extends AnyVal {
+  extension [Self <: CertissuerString](x: Self) {
     
-    @scala.inline
-    def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
+    inline def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
   }
 }

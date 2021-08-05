@@ -78,8 +78,7 @@ trait SFSymbol extends StObject {
 }
 object SFSymbol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyBlackWeight: () => Unit,
     applyBoldWeight: () => Unit,
     applyFont: Font => Unit,
@@ -96,40 +95,28 @@ object SFSymbol {
     __obj.asInstanceOf[SFSymbol]
   }
   
-  @scala.inline
-  implicit class SFSymbolMutableBuilder[Self <: SFSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: SFSymbol](x: Self) {
     
-    @scala.inline
-    def setApplyBlackWeight(value: () => Unit): Self = StObject.set(x, "applyBlackWeight", js.Any.fromFunction0(value))
+    inline def setApplyBlackWeight(value: () => Unit): Self = StObject.set(x, "applyBlackWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyBoldWeight(value: () => Unit): Self = StObject.set(x, "applyBoldWeight", js.Any.fromFunction0(value))
+    inline def setApplyBoldWeight(value: () => Unit): Self = StObject.set(x, "applyBoldWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyFont(value: Font => Unit): Self = StObject.set(x, "applyFont", js.Any.fromFunction1(value))
+    inline def setApplyFont(value: Font => Unit): Self = StObject.set(x, "applyFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplyHeavyWeight(value: () => Unit): Self = StObject.set(x, "applyHeavyWeight", js.Any.fromFunction0(value))
+    inline def setApplyHeavyWeight(value: () => Unit): Self = StObject.set(x, "applyHeavyWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyLightWeight(value: () => Unit): Self = StObject.set(x, "applyLightWeight", js.Any.fromFunction0(value))
+    inline def setApplyLightWeight(value: () => Unit): Self = StObject.set(x, "applyLightWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyMediumWeight(value: () => Unit): Self = StObject.set(x, "applyMediumWeight", js.Any.fromFunction0(value))
+    inline def setApplyMediumWeight(value: () => Unit): Self = StObject.set(x, "applyMediumWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyRegularWeight(value: () => Unit): Self = StObject.set(x, "applyRegularWeight", js.Any.fromFunction0(value))
+    inline def setApplyRegularWeight(value: () => Unit): Self = StObject.set(x, "applyRegularWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplySemiboldWeight(value: () => Unit): Self = StObject.set(x, "applySemiboldWeight", js.Any.fromFunction0(value))
+    inline def setApplySemiboldWeight(value: () => Unit): Self = StObject.set(x, "applySemiboldWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyThinWeight(value: () => Unit): Self = StObject.set(x, "applyThinWeight", js.Any.fromFunction0(value))
+    inline def setApplyThinWeight(value: () => Unit): Self = StObject.set(x, "applyThinWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyUltraLightWeight(value: () => Unit): Self = StObject.set(x, "applyUltraLightWeight", js.Any.fromFunction0(value))
+    inline def setApplyUltraLightWeight(value: () => Unit): Self = StObject.set(x, "applyUltraLightWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }
 }

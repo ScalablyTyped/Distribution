@@ -24,8 +24,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[E /* <: ElementType[js.Any] */](props: BoxProps[E]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[E /* <: ElementType[js.Any] */](props: BoxProps[E]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object background {
     
@@ -57,8 +56,7 @@ object mod {
       @JSImport("ui-box", "borderRadius.propAliases.borderRadius")
       @js.native
       def borderRadius: js.Array[String] = js.native
-      @scala.inline
-      def borderRadius_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderRadius")(x.asInstanceOf[js.Any])
+      inline def borderRadius_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderRadius")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("ui-box", "borderRadius.propEnhancers")
@@ -89,23 +87,19 @@ object mod {
       @JSImport("ui-box", "borders.propAliases.borderColor")
       @js.native
       def borderColor: js.Array[String] = js.native
-      @scala.inline
-      def borderColor_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
+      inline def borderColor_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderColor")(x.asInstanceOf[js.Any])
       
       @JSImport("ui-box", "borders.propAliases.borderStyle")
       @js.native
       def borderStyle: js.Array[String] = js.native
-      @scala.inline
-      def borderStyle_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderStyle")(x.asInstanceOf[js.Any])
+      inline def borderStyle_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderStyle")(x.asInstanceOf[js.Any])
       
       @JSImport("ui-box", "borders.propAliases.borderWidth")
       @js.native
       def borderWidth: js.Array[String] = js.native
-      @scala.inline
-      def borderWidth_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderWidth")(x.asInstanceOf[js.Any])
+      inline def borderWidth_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("borderWidth")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def border_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("border")(x.asInstanceOf[js.Any])
+      inline def border_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("border")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("ui-box", "borders.propEnhancers")
@@ -140,11 +134,9 @@ object mod {
     val propValidators: PropValidators = js.native
   }
   
-  @scala.inline
-  def clearStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")().asInstanceOf[Unit]
+  inline def clearStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStyles")().asInstanceOf[Unit]
   
-  @scala.inline
-  def configureSafeHref(configObject: SafeHrefConfigObj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSafeHref")(configObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configureSafeHref(configObject: SafeHrefConfigObj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureSafeHref")(configObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object dimensions {
     
@@ -165,8 +157,7 @@ object mod {
     val propValidators: PropValidators = js.native
   }
   
-  @scala.inline
-  def extractStyles(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("extractStyles")().asInstanceOf[Cache]
+  inline def extractStyles(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("extractStyles")().asInstanceOf[Cache]
   
   object flex {
     
@@ -321,8 +312,7 @@ object mod {
   @js.native
   val propTypes: PropTypesMapping = js.native
   
-  @scala.inline
-  def setClassNamePrefix(prefix: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClassNamePrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setClassNamePrefix(prefix: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClassNamePrefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object spacing {
     
@@ -343,11 +333,9 @@ object mod {
     val propValidators: PropValidators = js.native
   }
   
-  @scala.inline
-  def splitBoxProps[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBoxProps")(props.asInstanceOf[js.Any]).asInstanceOf[SplitBoxProps[P]]
+  inline def splitBoxProps[P /* <: EnhancerProps */](props: P): SplitBoxProps[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBoxProps")(props.asInstanceOf[js.Any]).asInstanceOf[SplitBoxProps[P]]
   
-  @scala.inline
-  def splitProps[P /* <: Dictionary[js.Any] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitProps")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[SplitProps[P, K]]
+  inline def splitProps[P /* <: Dictionary[js.Any] */, K /* <: /* keyof P */ String */](props: P, keys: js.Array[K]): SplitProps[P, K] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitProps")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[SplitProps[P, K]]
   
   object text {
     

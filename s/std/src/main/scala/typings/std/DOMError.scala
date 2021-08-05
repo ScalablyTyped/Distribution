@@ -11,16 +11,13 @@ trait DOMError extends StObject {
 }
 object DOMError {
   
-  @scala.inline
-  def apply(name: java.lang.String): DOMError = {
+  inline def apply(name: java.lang.String): DOMError = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMError]
   }
   
-  @scala.inline
-  implicit class DOMErrorMutableBuilder[Self <: DOMError] (val x: Self) extends AnyVal {
+  extension [Self <: DOMError](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

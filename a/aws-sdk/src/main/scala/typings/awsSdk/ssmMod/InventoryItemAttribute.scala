@@ -18,19 +18,15 @@ trait InventoryItemAttribute extends StObject {
 }
 object InventoryItemAttribute {
   
-  @scala.inline
-  def apply(DataType: InventoryAttributeDataType, Name: InventoryItemAttributeName): InventoryItemAttribute = {
+  inline def apply(DataType: InventoryAttributeDataType, Name: InventoryItemAttributeName): InventoryItemAttribute = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryItemAttribute]
   }
   
-  @scala.inline
-  implicit class InventoryItemAttributeMutableBuilder[Self <: InventoryItemAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: InventoryItemAttribute](x: Self) {
     
-    @scala.inline
-    def setDataType(value: InventoryAttributeDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: InventoryAttributeDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: InventoryItemAttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: InventoryItemAttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

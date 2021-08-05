@@ -38,8 +38,7 @@ trait SystemInfoVideoSourceInfo extends StObject {
 }
 object SystemInfoVideoSourceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     number: Double,
     `type`: SystemInfoVideoSourceType | TV | AV | SVIDEO | COMP | PC | HDMI | SCART | DVI | MEDIA
   ): SystemInfoVideoSourceInfo = {
@@ -48,19 +47,14 @@ object SystemInfoVideoSourceInfo {
     __obj.asInstanceOf[SystemInfoVideoSourceInfo]
   }
   
-  @scala.inline
-  implicit class SystemInfoVideoSourceInfoMutableBuilder[Self <: SystemInfoVideoSourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoVideoSourceInfo](x: Self) {
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: Boolean): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: Boolean): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setType(value: SystemInfoVideoSourceType | TV | AV | SVIDEO | COMP | PC | HDMI | SCART | DVI | MEDIA): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SystemInfoVideoSourceType | TV | AV | SVIDEO | COMP | PC | HDMI | SCART | DVI | MEDIA): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

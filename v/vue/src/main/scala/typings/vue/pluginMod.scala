@@ -22,17 +22,14 @@ object pluginMod {
   }
   object PluginObject {
     
-    @scala.inline
-    def apply[T](install: (/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[T]) => Unit): PluginObject[T] = {
+    inline def apply[T](install: (/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[T]) => Unit): PluginObject[T] = {
       val __obj = js.Dynamic.literal(install = js.Any.fromFunction2(install))
       __obj.asInstanceOf[PluginObject[T]]
     }
     
-    @scala.inline
-    implicit class PluginObjectMutableBuilder[Self <: PluginObject[?], T] (val x: Self & PluginObject[T]) extends AnyVal {
+    extension [Self <: PluginObject[?], T](x: Self & PluginObject[T]) {
       
-      @scala.inline
-      def setInstall(value: (/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[T]) => Unit): Self = StObject.set(x, "install", js.Any.fromFunction2(value))
+      inline def setInstall(value: (/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[T]) => Unit): Self = StObject.set(x, "install", js.Any.fromFunction2(value))
     }
   }
 }

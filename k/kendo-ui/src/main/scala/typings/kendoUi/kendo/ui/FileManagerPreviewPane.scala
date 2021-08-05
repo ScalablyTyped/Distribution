@@ -16,37 +16,27 @@ trait FileManagerPreviewPane extends StObject {
 }
 object FileManagerPreviewPane {
   
-  @scala.inline
-  def apply(): FileManagerPreviewPane = {
+  inline def apply(): FileManagerPreviewPane = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerPreviewPane]
   }
   
-  @scala.inline
-  implicit class FileManagerPreviewPaneMutableBuilder[Self <: FileManagerPreviewPane] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerPreviewPane](x: Self) {
     
-    @scala.inline
-    def setMetaFields(value: js.Any): Self = StObject.set(x, "metaFields", value.asInstanceOf[js.Any])
+    inline def setMetaFields(value: js.Any): Self = StObject.set(x, "metaFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaFieldsUndefined: Self = StObject.set(x, "metaFields", js.undefined)
+    inline def setMetaFieldsUndefined: Self = StObject.set(x, "metaFields", js.undefined)
     
-    @scala.inline
-    def setMultipleFilesTemplate(value: String | js.Function): Self = StObject.set(x, "multipleFilesTemplate", value.asInstanceOf[js.Any])
+    inline def setMultipleFilesTemplate(value: String | js.Function): Self = StObject.set(x, "multipleFilesTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleFilesTemplateUndefined: Self = StObject.set(x, "multipleFilesTemplate", js.undefined)
+    inline def setMultipleFilesTemplateUndefined: Self = StObject.set(x, "multipleFilesTemplate", js.undefined)
     
-    @scala.inline
-    def setNoFileTemplate(value: String | js.Function): Self = StObject.set(x, "noFileTemplate", value.asInstanceOf[js.Any])
+    inline def setNoFileTemplate(value: String | js.Function): Self = StObject.set(x, "noFileTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoFileTemplateUndefined: Self = StObject.set(x, "noFileTemplate", js.undefined)
+    inline def setNoFileTemplateUndefined: Self = StObject.set(x, "noFileTemplate", js.undefined)
     
-    @scala.inline
-    def setSingleFileTemplate(value: String | js.Function): Self = StObject.set(x, "singleFileTemplate", value.asInstanceOf[js.Any])
+    inline def setSingleFileTemplate(value: String | js.Function): Self = StObject.set(x, "singleFileTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleFileTemplateUndefined: Self = StObject.set(x, "singleFileTemplate", js.undefined)
+    inline def setSingleFileTemplateUndefined: Self = StObject.set(x, "singleFileTemplate", js.undefined)
   }
 }

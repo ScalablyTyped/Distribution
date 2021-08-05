@@ -28,8 +28,7 @@ trait Zone extends StObject {
 }
 object Zone {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apex_alias: String,
     email: String,
     expire: Double,
@@ -45,37 +44,26 @@ object Zone {
     __obj.asInstanceOf[Zone]
   }
   
-  @scala.inline
-  implicit class ZoneMutableBuilder[Self <: Zone] (val x: Self) extends AnyVal {
+  extension [Self <: Zone](x: Self) {
     
-    @scala.inline
-    def setApex_alias(value: String): Self = StObject.set(x, "apex_alias", value.asInstanceOf[js.Any])
+    inline def setApex_alias(value: String): Self = StObject.set(x, "apex_alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+    inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_ns(value: String): Self = StObject.set(x, "primary_ns", value.asInstanceOf[js.Any])
+    inline def setPrimary_ns(value: String): Self = StObject.set(x, "primary_ns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

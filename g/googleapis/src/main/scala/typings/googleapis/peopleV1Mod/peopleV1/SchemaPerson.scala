@@ -179,289 +179,195 @@ trait SchemaPerson extends StObject {
 }
 object SchemaPerson {
   
-  @scala.inline
-  def apply(): SchemaPerson = {
+  inline def apply(): SchemaPerson = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPerson]
   }
   
-  @scala.inline
-  implicit class SchemaPersonMutableBuilder[Self <: SchemaPerson] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPerson](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[SchemaAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[SchemaAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setAddressesVarargs(value: SchemaAddress*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: SchemaAddress*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
+    inline def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
+    inline def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
     
-    @scala.inline
-    def setAgeRanges(value: js.Array[SchemaAgeRangeType]): Self = StObject.set(x, "ageRanges", value.asInstanceOf[js.Any])
+    inline def setAgeRanges(value: js.Array[SchemaAgeRangeType]): Self = StObject.set(x, "ageRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeRangesUndefined: Self = StObject.set(x, "ageRanges", js.undefined)
+    inline def setAgeRangesUndefined: Self = StObject.set(x, "ageRanges", js.undefined)
     
-    @scala.inline
-    def setAgeRangesVarargs(value: SchemaAgeRangeType*): Self = StObject.set(x, "ageRanges", js.Array(value :_*))
+    inline def setAgeRangesVarargs(value: SchemaAgeRangeType*): Self = StObject.set(x, "ageRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setBiographies(value: js.Array[SchemaBiography]): Self = StObject.set(x, "biographies", value.asInstanceOf[js.Any])
+    inline def setBiographies(value: js.Array[SchemaBiography]): Self = StObject.set(x, "biographies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiographiesUndefined: Self = StObject.set(x, "biographies", js.undefined)
+    inline def setBiographiesUndefined: Self = StObject.set(x, "biographies", js.undefined)
     
-    @scala.inline
-    def setBiographiesVarargs(value: SchemaBiography*): Self = StObject.set(x, "biographies", js.Array(value :_*))
+    inline def setBiographiesVarargs(value: SchemaBiography*): Self = StObject.set(x, "biographies", js.Array(value :_*))
     
-    @scala.inline
-    def setBirthdays(value: js.Array[SchemaBirthday]): Self = StObject.set(x, "birthdays", value.asInstanceOf[js.Any])
+    inline def setBirthdays(value: js.Array[SchemaBirthday]): Self = StObject.set(x, "birthdays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirthdaysUndefined: Self = StObject.set(x, "birthdays", js.undefined)
+    inline def setBirthdaysUndefined: Self = StObject.set(x, "birthdays", js.undefined)
     
-    @scala.inline
-    def setBirthdaysVarargs(value: SchemaBirthday*): Self = StObject.set(x, "birthdays", js.Array(value :_*))
+    inline def setBirthdaysVarargs(value: SchemaBirthday*): Self = StObject.set(x, "birthdays", js.Array(value :_*))
     
-    @scala.inline
-    def setBraggingRights(value: js.Array[SchemaBraggingRights]): Self = StObject.set(x, "braggingRights", value.asInstanceOf[js.Any])
+    inline def setBraggingRights(value: js.Array[SchemaBraggingRights]): Self = StObject.set(x, "braggingRights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBraggingRightsUndefined: Self = StObject.set(x, "braggingRights", js.undefined)
+    inline def setBraggingRightsUndefined: Self = StObject.set(x, "braggingRights", js.undefined)
     
-    @scala.inline
-    def setBraggingRightsVarargs(value: SchemaBraggingRights*): Self = StObject.set(x, "braggingRights", js.Array(value :_*))
+    inline def setBraggingRightsVarargs(value: SchemaBraggingRights*): Self = StObject.set(x, "braggingRights", js.Array(value :_*))
     
-    @scala.inline
-    def setCoverPhotos(value: js.Array[SchemaCoverPhoto]): Self = StObject.set(x, "coverPhotos", value.asInstanceOf[js.Any])
+    inline def setCoverPhotos(value: js.Array[SchemaCoverPhoto]): Self = StObject.set(x, "coverPhotos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverPhotosUndefined: Self = StObject.set(x, "coverPhotos", js.undefined)
+    inline def setCoverPhotosUndefined: Self = StObject.set(x, "coverPhotos", js.undefined)
     
-    @scala.inline
-    def setCoverPhotosVarargs(value: SchemaCoverPhoto*): Self = StObject.set(x, "coverPhotos", js.Array(value :_*))
+    inline def setCoverPhotosVarargs(value: SchemaCoverPhoto*): Self = StObject.set(x, "coverPhotos", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddresses(value: js.Array[SchemaEmailAddress]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
+    inline def setEmailAddresses(value: js.Array[SchemaEmailAddress]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
+    inline def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
     
-    @scala.inline
-    def setEmailAddressesVarargs(value: SchemaEmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: SchemaEmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[SchemaEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[SchemaEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: SchemaEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: SchemaEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setGenders(value: js.Array[SchemaGender]): Self = StObject.set(x, "genders", value.asInstanceOf[js.Any])
+    inline def setGenders(value: js.Array[SchemaGender]): Self = StObject.set(x, "genders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGendersUndefined: Self = StObject.set(x, "genders", js.undefined)
+    inline def setGendersUndefined: Self = StObject.set(x, "genders", js.undefined)
     
-    @scala.inline
-    def setGendersVarargs(value: SchemaGender*): Self = StObject.set(x, "genders", js.Array(value :_*))
+    inline def setGendersVarargs(value: SchemaGender*): Self = StObject.set(x, "genders", js.Array(value :_*))
     
-    @scala.inline
-    def setImClients(value: js.Array[SchemaImClient]): Self = StObject.set(x, "imClients", value.asInstanceOf[js.Any])
+    inline def setImClients(value: js.Array[SchemaImClient]): Self = StObject.set(x, "imClients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImClientsUndefined: Self = StObject.set(x, "imClients", js.undefined)
+    inline def setImClientsUndefined: Self = StObject.set(x, "imClients", js.undefined)
     
-    @scala.inline
-    def setImClientsVarargs(value: SchemaImClient*): Self = StObject.set(x, "imClients", js.Array(value :_*))
+    inline def setImClientsVarargs(value: SchemaImClient*): Self = StObject.set(x, "imClients", js.Array(value :_*))
     
-    @scala.inline
-    def setInterests(value: js.Array[SchemaInterest]): Self = StObject.set(x, "interests", value.asInstanceOf[js.Any])
+    inline def setInterests(value: js.Array[SchemaInterest]): Self = StObject.set(x, "interests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterestsUndefined: Self = StObject.set(x, "interests", js.undefined)
+    inline def setInterestsUndefined: Self = StObject.set(x, "interests", js.undefined)
     
-    @scala.inline
-    def setInterestsVarargs(value: SchemaInterest*): Self = StObject.set(x, "interests", js.Array(value :_*))
+    inline def setInterestsVarargs(value: SchemaInterest*): Self = StObject.set(x, "interests", js.Array(value :_*))
     
-    @scala.inline
-    def setLocales(value: js.Array[SchemaLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    inline def setLocales(value: js.Array[SchemaLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    @scala.inline
-    def setLocalesVarargs(value: SchemaLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
+    inline def setLocalesVarargs(value: SchemaLocale*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
-    @scala.inline
-    def setMemberships(value: js.Array[SchemaMembership]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
+    inline def setMemberships(value: js.Array[SchemaMembership]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
+    inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    @scala.inline
-    def setMembershipsVarargs(value: SchemaMembership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: SchemaMembership*): Self = StObject.set(x, "memberships", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: SchemaPersonMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaPersonMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setNames(value: js.Array[SchemaName]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[SchemaName]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: SchemaName*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: SchemaName*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setNicknames(value: js.Array[SchemaNickname]): Self = StObject.set(x, "nicknames", value.asInstanceOf[js.Any])
+    inline def setNicknames(value: js.Array[SchemaNickname]): Self = StObject.set(x, "nicknames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNicknamesUndefined: Self = StObject.set(x, "nicknames", js.undefined)
+    inline def setNicknamesUndefined: Self = StObject.set(x, "nicknames", js.undefined)
     
-    @scala.inline
-    def setNicknamesVarargs(value: SchemaNickname*): Self = StObject.set(x, "nicknames", js.Array(value :_*))
+    inline def setNicknamesVarargs(value: SchemaNickname*): Self = StObject.set(x, "nicknames", js.Array(value :_*))
     
-    @scala.inline
-    def setOccupations(value: js.Array[SchemaOccupation]): Self = StObject.set(x, "occupations", value.asInstanceOf[js.Any])
+    inline def setOccupations(value: js.Array[SchemaOccupation]): Self = StObject.set(x, "occupations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccupationsUndefined: Self = StObject.set(x, "occupations", js.undefined)
+    inline def setOccupationsUndefined: Self = StObject.set(x, "occupations", js.undefined)
     
-    @scala.inline
-    def setOccupationsVarargs(value: SchemaOccupation*): Self = StObject.set(x, "occupations", js.Array(value :_*))
+    inline def setOccupationsVarargs(value: SchemaOccupation*): Self = StObject.set(x, "occupations", js.Array(value :_*))
     
-    @scala.inline
-    def setOrganizations(value: js.Array[SchemaOrganization]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+    inline def setOrganizations(value: js.Array[SchemaOrganization]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
+    inline def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
     
-    @scala.inline
-    def setOrganizationsVarargs(value: SchemaOrganization*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+    inline def setOrganizationsVarargs(value: SchemaOrganization*): Self = StObject.set(x, "organizations", js.Array(value :_*))
     
-    @scala.inline
-    def setPhoneNumbers(value: js.Array[SchemaPhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
+    inline def setPhoneNumbers(value: js.Array[SchemaPhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
+    inline def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
     
-    @scala.inline
-    def setPhoneNumbersVarargs(value: SchemaPhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: SchemaPhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
     
-    @scala.inline
-    def setPhotos(value: js.Array[SchemaPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: js.Array[SchemaPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
+    inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
-    @scala.inline
-    def setPhotosVarargs(value: SchemaPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: SchemaPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
     
-    @scala.inline
-    def setRelations(value: js.Array[SchemaRelation]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: js.Array[SchemaRelation]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
+    inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
-    @scala.inline
-    def setRelationsVarargs(value: SchemaRelation*): Self = StObject.set(x, "relations", js.Array(value :_*))
+    inline def setRelationsVarargs(value: SchemaRelation*): Self = StObject.set(x, "relations", js.Array(value :_*))
     
-    @scala.inline
-    def setRelationshipInterests(value: js.Array[SchemaRelationshipInterest]): Self = StObject.set(x, "relationshipInterests", value.asInstanceOf[js.Any])
+    inline def setRelationshipInterests(value: js.Array[SchemaRelationshipInterest]): Self = StObject.set(x, "relationshipInterests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipInterestsUndefined: Self = StObject.set(x, "relationshipInterests", js.undefined)
+    inline def setRelationshipInterestsUndefined: Self = StObject.set(x, "relationshipInterests", js.undefined)
     
-    @scala.inline
-    def setRelationshipInterestsVarargs(value: SchemaRelationshipInterest*): Self = StObject.set(x, "relationshipInterests", js.Array(value :_*))
+    inline def setRelationshipInterestsVarargs(value: SchemaRelationshipInterest*): Self = StObject.set(x, "relationshipInterests", js.Array(value :_*))
     
-    @scala.inline
-    def setRelationshipStatuses(value: js.Array[SchemaRelationshipStatus]): Self = StObject.set(x, "relationshipStatuses", value.asInstanceOf[js.Any])
+    inline def setRelationshipStatuses(value: js.Array[SchemaRelationshipStatus]): Self = StObject.set(x, "relationshipStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipStatusesUndefined: Self = StObject.set(x, "relationshipStatuses", js.undefined)
+    inline def setRelationshipStatusesUndefined: Self = StObject.set(x, "relationshipStatuses", js.undefined)
     
-    @scala.inline
-    def setRelationshipStatusesVarargs(value: SchemaRelationshipStatus*): Self = StObject.set(x, "relationshipStatuses", js.Array(value :_*))
+    inline def setRelationshipStatusesVarargs(value: SchemaRelationshipStatus*): Self = StObject.set(x, "relationshipStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setResidences(value: js.Array[SchemaResidence]): Self = StObject.set(x, "residences", value.asInstanceOf[js.Any])
+    inline def setResidences(value: js.Array[SchemaResidence]): Self = StObject.set(x, "residences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidencesUndefined: Self = StObject.set(x, "residences", js.undefined)
+    inline def setResidencesUndefined: Self = StObject.set(x, "residences", js.undefined)
     
-    @scala.inline
-    def setResidencesVarargs(value: SchemaResidence*): Self = StObject.set(x, "residences", js.Array(value :_*))
+    inline def setResidencesVarargs(value: SchemaResidence*): Self = StObject.set(x, "residences", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setSipAddresses(value: js.Array[SchemaSipAddress]): Self = StObject.set(x, "sipAddresses", value.asInstanceOf[js.Any])
+    inline def setSipAddresses(value: js.Array[SchemaSipAddress]): Self = StObject.set(x, "sipAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipAddressesUndefined: Self = StObject.set(x, "sipAddresses", js.undefined)
+    inline def setSipAddressesUndefined: Self = StObject.set(x, "sipAddresses", js.undefined)
     
-    @scala.inline
-    def setSipAddressesVarargs(value: SchemaSipAddress*): Self = StObject.set(x, "sipAddresses", js.Array(value :_*))
+    inline def setSipAddressesVarargs(value: SchemaSipAddress*): Self = StObject.set(x, "sipAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setSkills(value: js.Array[SchemaSkill]): Self = StObject.set(x, "skills", value.asInstanceOf[js.Any])
+    inline def setSkills(value: js.Array[SchemaSkill]): Self = StObject.set(x, "skills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillsUndefined: Self = StObject.set(x, "skills", js.undefined)
+    inline def setSkillsUndefined: Self = StObject.set(x, "skills", js.undefined)
     
-    @scala.inline
-    def setSkillsVarargs(value: SchemaSkill*): Self = StObject.set(x, "skills", js.Array(value :_*))
+    inline def setSkillsVarargs(value: SchemaSkill*): Self = StObject.set(x, "skills", js.Array(value :_*))
     
-    @scala.inline
-    def setTaglines(value: js.Array[SchemaTagline]): Self = StObject.set(x, "taglines", value.asInstanceOf[js.Any])
+    inline def setTaglines(value: js.Array[SchemaTagline]): Self = StObject.set(x, "taglines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaglinesUndefined: Self = StObject.set(x, "taglines", js.undefined)
+    inline def setTaglinesUndefined: Self = StObject.set(x, "taglines", js.undefined)
     
-    @scala.inline
-    def setTaglinesVarargs(value: SchemaTagline*): Self = StObject.set(x, "taglines", js.Array(value :_*))
+    inline def setTaglinesVarargs(value: SchemaTagline*): Self = StObject.set(x, "taglines", js.Array(value :_*))
     
-    @scala.inline
-    def setUrls(value: js.Array[SchemaUrl]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[SchemaUrl]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: SchemaUrl*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: SchemaUrl*): Self = StObject.set(x, "urls", js.Array(value :_*))
     
-    @scala.inline
-    def setUserDefined(value: js.Array[SchemaUserDefined]): Self = StObject.set(x, "userDefined", value.asInstanceOf[js.Any])
+    inline def setUserDefined(value: js.Array[SchemaUserDefined]): Self = StObject.set(x, "userDefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedUndefined: Self = StObject.set(x, "userDefined", js.undefined)
+    inline def setUserDefinedUndefined: Self = StObject.set(x, "userDefined", js.undefined)
     
-    @scala.inline
-    def setUserDefinedVarargs(value: SchemaUserDefined*): Self = StObject.set(x, "userDefined", js.Array(value :_*))
+    inline def setUserDefinedVarargs(value: SchemaUserDefined*): Self = StObject.set(x, "userDefined", js.Array(value :_*))
   }
 }

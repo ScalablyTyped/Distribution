@@ -16,8 +16,7 @@ trait ColorTimeline
 }
 object ColorTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     curves: js.Any,
     frames: ArrayLike[Double],
@@ -35,16 +34,12 @@ object ColorTimeline {
     __obj.asInstanceOf[ColorTimeline]
   }
   
-  @scala.inline
-  implicit class ColorTimelineMutableBuilder[Self <: ColorTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: ColorTimeline](x: Self) {
     
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFrame(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction6(value))
+    inline def setSetFrame(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setSlotIndex(value: Double): Self = StObject.set(x, "slotIndex", value.asInstanceOf[js.Any])
+    inline def setSlotIndex(value: Double): Self = StObject.set(x, "slotIndex", value.asInstanceOf[js.Any])
   }
 }

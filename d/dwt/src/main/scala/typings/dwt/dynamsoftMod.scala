@@ -26,20 +26,17 @@ object dynamsoftMod extends Shortcut {
     @JSImport("dwt/Dynamsoft", "DynamsoftStatic.FileUploader")
     @js.native
     def FileUploader: typings.dwt.dynamsoftFileUploaderMod.FileUploader = js.native
-    @scala.inline
-    def FileUploader_=(x: FileUploader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileUploader")(x.asInstanceOf[js.Any])
+    inline def FileUploader_=(x: FileUploader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileUploader")(x.asInstanceOf[js.Any])
     
     @JSImport("dwt/Dynamsoft", "DynamsoftStatic.Lib")
     @js.native
     def Lib: DynamsoftLib = js.native
-    @scala.inline
-    def Lib_=(x: DynamsoftLib): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lib")(x.asInstanceOf[js.Any])
+    inline def Lib_=(x: DynamsoftLib): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Lib")(x.asInstanceOf[js.Any])
     
     @JSImport("dwt/Dynamsoft", "DynamsoftStatic.MSG")
     @js.native
     def MSG: Messages = js.native
-    @scala.inline
-    def MSG_=(x: Messages): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MSG")(x.asInstanceOf[js.Any])
+    inline def MSG_=(x: Messages): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MSG")(x.asInstanceOf[js.Any])
     
     object WebTwain {
       
@@ -51,8 +48,7 @@ object dynamsoftMod extends Shortcut {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def NewSettings(): Settings = ^.asInstanceOf[js.Dynamic].applyDynamic("NewSettings")().asInstanceOf[Settings]
+          inline def NewSettings(): Settings = ^.asInstanceOf[js.Dynamic].applyDynamic("NewSettings")().asInstanceOf[Settings]
         }
       }
     }
@@ -60,14 +56,12 @@ object dynamsoftMod extends Shortcut {
     @JSImport("dwt/Dynamsoft", "DynamsoftStatic.WebTwainEnv")
     @js.native
     def WebTwainEnv: typings.dwt.dynamsoftMod.WebTwainEnv = js.native
-    @scala.inline
-    def WebTwainEnv_=(x: WebTwainEnv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebTwainEnv")(x.asInstanceOf[js.Any])
+    inline def WebTwainEnv_=(x: WebTwainEnv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebTwainEnv")(x.asInstanceOf[js.Any])
     
     @JSImport("dwt/Dynamsoft", "DynamsoftStatic.managerEnv")
     @js.native
     def managerEnv: ManagerEnv = js.native
-    @scala.inline
-    def managerEnv_=(x: ManagerEnv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("managerEnv")(x.asInstanceOf[js.Any])
+    inline def managerEnv_=(x: ManagerEnv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("managerEnv")(x.asInstanceOf[js.Any])
   }
   
   trait Container extends StObject {
@@ -86,47 +80,34 @@ object dynamsoftMod extends Shortcut {
   }
   object Container {
     
-    @scala.inline
-    def apply(WebTwainId: String): Container = {
+    inline def apply(WebTwainId: String): Container = {
       val __obj = js.Dynamic.literal(WebTwainId = WebTwainId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Container]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+    extension [Self <: Container](x: Self) {
       
-      @scala.inline
-      def setBLocalService(value: Boolean): Self = StObject.set(x, "bLocalService", value.asInstanceOf[js.Any])
+      inline def setBLocalService(value: Boolean): Self = StObject.set(x, "bLocalService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLocalServiceUndefined: Self = StObject.set(x, "bLocalService", js.undefined)
+      inline def setBLocalServiceUndefined: Self = StObject.set(x, "bLocalService", js.undefined)
       
-      @scala.inline
-      def setBNoUI(value: Boolean): Self = StObject.set(x, "bNoUI", value.asInstanceOf[js.Any])
+      inline def setBNoUI(value: Boolean): Self = StObject.set(x, "bNoUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBNoUIUndefined: Self = StObject.set(x, "bNoUI", js.undefined)
+      inline def setBNoUIUndefined: Self = StObject.set(x, "bNoUI", js.undefined)
       
-      @scala.inline
-      def setContainerId(value: String): Self = StObject.set(x, "ContainerId", value.asInstanceOf[js.Any])
+      inline def setContainerId(value: String): Self = StObject.set(x, "ContainerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerIdUndefined: Self = StObject.set(x, "ContainerId", js.undefined)
+      inline def setContainerIdUndefined: Self = StObject.set(x, "ContainerId", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String | Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
       
-      @scala.inline
-      def setWebTwainId(value: String): Self = StObject.set(x, "WebTwainId", value.asInstanceOf[js.Any])
+      inline def setWebTwainId(value: String): Self = StObject.set(x, "WebTwainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
     }
   }
   
@@ -141,20 +122,16 @@ object dynamsoftMod extends Shortcut {
   }
   object DSLibDetect {
     
-    @scala.inline
-    def apply(scriptLoaded: Boolean, ssl: Boolean): DSLibDetect = {
+    inline def apply(scriptLoaded: Boolean, ssl: Boolean): DSLibDetect = {
       val __obj = js.Dynamic.literal(scriptLoaded = scriptLoaded.asInstanceOf[js.Any], ssl = ssl.asInstanceOf[js.Any])
       __obj.asInstanceOf[DSLibDetect]
     }
     
-    @scala.inline
-    implicit class DSLibDetectMutableBuilder[Self <: DSLibDetect] (val x: Self) extends AnyVal {
+    extension [Self <: DSLibDetect](x: Self) {
       
-      @scala.inline
-      def setScriptLoaded(value: Boolean): Self = StObject.set(x, "scriptLoaded", value.asInstanceOf[js.Any])
+      inline def setScriptLoaded(value: Boolean): Self = StObject.set(x, "scriptLoaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,8 +264,7 @@ object dynamsoftMod extends Shortcut {
   }
   object DSLibEnv {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       WSSession: Double,
       WSVersion: String,
       bChrome: Boolean,
@@ -319,83 +295,57 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DSLibEnv]
     }
     
-    @scala.inline
-    implicit class DSLibEnvMutableBuilder[Self <: DSLibEnv] (val x: Self) extends AnyVal {
+    extension [Self <: DSLibEnv](x: Self) {
       
-      @scala.inline
-      def setBChrome(value: Boolean): Self = StObject.set(x, "bChrome", value.asInstanceOf[js.Any])
+      inline def setBChrome(value: Boolean): Self = StObject.set(x, "bChrome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBEdge(value: Boolean): Self = StObject.set(x, "bEdge", value.asInstanceOf[js.Any])
+      inline def setBEdge(value: Boolean): Self = StObject.set(x, "bEdge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBFileSystem(value: Boolean): Self = StObject.set(x, "bFileSystem", value.asInstanceOf[js.Any])
+      inline def setBFileSystem(value: Boolean): Self = StObject.set(x, "bFileSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBFirefox(value: Boolean): Self = StObject.set(x, "bFirefox", value.asInstanceOf[js.Any])
+      inline def setBFirefox(value: Boolean): Self = StObject.set(x, "bFirefox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBIE(value: Boolean): Self = StObject.set(x, "bIE", value.asInstanceOf[js.Any])
+      inline def setBIE(value: Boolean): Self = StObject.set(x, "bIE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLinux(value: Boolean): Self = StObject.set(x, "bLinux", value.asInstanceOf[js.Any])
+      inline def setBLinux(value: Boolean): Self = StObject.set(x, "bLinux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBMac(value: Boolean): Self = StObject.set(x, "bMac", value.asInstanceOf[js.Any])
+      inline def setBMac(value: Boolean): Self = StObject.set(x, "bMac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBMobile(value: Boolean): Self = StObject.set(x, "bMobile", value.asInstanceOf[js.Any])
+      inline def setBMobile(value: Boolean): Self = StObject.set(x, "bMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBSafari(value: Boolean): Self = StObject.set(x, "bSafari", value.asInstanceOf[js.Any])
+      inline def setBSafari(value: Boolean): Self = StObject.set(x, "bSafari", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBWin(value: Boolean): Self = StObject.set(x, "bWin", value.asInstanceOf[js.Any])
+      inline def setBWin(value: Boolean): Self = StObject.set(x, "bWin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBWin64(value: Boolean): Self = StObject.set(x, "bWin64", value.asInstanceOf[js.Any])
+      inline def setBWin64(value: Boolean): Self = StObject.set(x, "bWin64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPluginLength(value: Double): Self = StObject.set(x, "iPluginLength", value.asInstanceOf[js.Any])
+      inline def setIPluginLength(value: Double): Self = StObject.set(x, "iPluginLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDesktopViewer(value: () => Boolean): Self = StObject.set(x, "isDesktopViewer", js.Any.fromFunction0(value))
+      inline def setIsDesktopViewer(value: () => Boolean): Self = StObject.set(x, "isDesktopViewer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMobileViewer(value: () => Boolean): Self = StObject.set(x, "isMobileViewer", js.Any.fromFunction0(value))
+      inline def setIsMobileViewer(value: () => Boolean): Self = StObject.set(x, "isMobileViewer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPadViewer(value: () => Boolean): Self = StObject.set(x, "isPadViewer", js.Any.fromFunction0(value))
+      inline def setIsPadViewer(value: () => Boolean): Self = StObject.set(x, "isPadViewer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsX64(value: Boolean): Self = StObject.set(x, "isX64", value.asInstanceOf[js.Any])
+      inline def setIsX64(value: Boolean): Self = StObject.set(x, "isX64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacOSX(value: String): Self = StObject.set(x, "macOSX", value.asInstanceOf[js.Any])
+      inline def setMacOSX(value: String): Self = StObject.set(x, "macOSX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+      inline def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathType(value: Double): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
+      inline def setPathType(value: Double): Self = StObject.set(x, "pathType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrChromeVersion(value: Double | String): Self = StObject.set(x, "strChromeVersion", value.asInstanceOf[js.Any])
+      inline def setStrChromeVersion(value: Double | String): Self = StObject.set(x, "strChromeVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrFirefoxVersion(value: Double | String): Self = StObject.set(x, "strFirefoxVersion", value.asInstanceOf[js.Any])
+      inline def setStrFirefoxVersion(value: Double | String): Self = StObject.set(x, "strFirefoxVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrIEVersion(value: Double | String): Self = StObject.set(x, "strIEVersion", value.asInstanceOf[js.Any])
+      inline def setStrIEVersion(value: Double | String): Self = StObject.set(x, "strIEVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWSSession(value: Double): Self = StObject.set(x, "WSSession", value.asInstanceOf[js.Any])
+      inline def setWSSession(value: Double): Self = StObject.set(x, "WSSession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWSVersion(value: String): Self = StObject.set(x, "WSVersion", value.asInstanceOf[js.Any])
+      inline def setWSVersion(value: String): Self = StObject.set(x, "WSVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -411,35 +361,26 @@ object dynamsoftMod extends Shortcut {
   }
   object DWTInitialConfig {
     
-    @scala.inline
-    def apply(WebTwainId: String): DWTInitialConfig = {
+    inline def apply(WebTwainId: String): DWTInitialConfig = {
       val __obj = js.Dynamic.literal(WebTwainId = WebTwainId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DWTInitialConfig]
     }
     
-    @scala.inline
-    implicit class DWTInitialConfigMutableBuilder[Self <: DWTInitialConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DWTInitialConfig](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
       
-      @scala.inline
-      def setSSLPort(value: String): Self = StObject.set(x, "SSLPort", value.asInstanceOf[js.Any])
+      inline def setSSLPort(value: String): Self = StObject.set(x, "SSLPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSLPortUndefined: Self = StObject.set(x, "SSLPort", js.undefined)
+      inline def setSSLPortUndefined: Self = StObject.set(x, "SSLPort", js.undefined)
       
-      @scala.inline
-      def setWebTwainId(value: String): Self = StObject.set(x, "WebTwainId", value.asInstanceOf[js.Any])
+      inline def setWebTwainId(value: String): Self = StObject.set(x, "WebTwainId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -457,8 +398,7 @@ object dynamsoftMod extends Shortcut {
   }
   object DisplayInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buttons: js.Any,
       customProgressText: js.Any,
       dialogText: js.Any,
@@ -469,23 +409,17 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DisplayInfo]
     }
     
-    @scala.inline
-    implicit class DisplayInfoMutableBuilder[Self <: DisplayInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayInfo](x: Self) {
       
-      @scala.inline
-      def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomProgressText(value: js.Any): Self = StObject.set(x, "customProgressText", value.asInstanceOf[js.Any])
+      inline def setCustomProgressText(value: js.Any): Self = StObject.set(x, "customProgressText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogText(value: js.Any): Self = StObject.set(x, "dialogText", value.asInstanceOf[js.Any])
+      inline def setDialogText(value: js.Any): Self = StObject.set(x, "dialogText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessages(value: js.Any): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
+      inline def setErrorMessages(value: js.Any): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneralMessages(value: js.Any): Self = StObject.set(x, "generalMessages", value.asInstanceOf[js.Any])
+      inline def setGeneralMessages(value: js.Any): Self = StObject.set(x, "generalMessages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -540,8 +474,7 @@ object dynamsoftMod extends Shortcut {
   }
   object DynamsoftLib {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: (HTMLElement, String, EventListenerOrEventListenerObject) => Unit,
       debug: Boolean,
       detect: DSLibDetect,
@@ -557,38 +490,27 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[DynamsoftLib]
     }
     
-    @scala.inline
-    implicit class DynamsoftLibMutableBuilder[Self <: DynamsoftLib] (val x: Self) extends AnyVal {
+    extension [Self <: DynamsoftLib](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (HTMLElement, String, EventListenerOrEventListenerObject) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
+      inline def setAddEventListener(value: (HTMLElement, String, EventListenerOrEventListenerObject) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetect(value: DSLibDetect): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
+      inline def setDetect(value: DSLibDetect): Self = StObject.set(x, "detect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDlgLoadingShowStatus(value: Boolean): Self = StObject.set(x, "dlgLoadingShowStatus", value.asInstanceOf[js.Any])
+      inline def setDlgLoadingShowStatus(value: Boolean): Self = StObject.set(x, "dlgLoadingShowStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: DSLibEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: DSLibEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetScript(value: (String, Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "getScript", js.Any.fromFunction3(value))
+      inline def setGetScript(value: (String, Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "getScript", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetScripts(value: (js.Array[String], Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "getScripts", js.Any.fromFunction3(value))
+      inline def setGetScripts(value: (js.Array[String], Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "getScripts", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHideMask(value: () => Unit): Self = StObject.set(x, "hideMask", js.Any.fromFunction0(value))
+      inline def setHideMask(value: () => Unit): Self = StObject.set(x, "hideMask", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMask(value: () => Unit): Self = StObject.set(x, "showMask", js.Any.fromFunction0(value))
+      inline def setShowMask(value: () => Unit): Self = StObject.set(x, "showMask", js.Any.fromFunction0(value))
     }
   }
   
@@ -600,20 +522,16 @@ object dynamsoftMod extends Shortcut {
   }
   object ManagerEnv {
     
-    @scala.inline
-    def apply(IfUpdateService: Boolean, resourcesPath: String): ManagerEnv = {
+    inline def apply(IfUpdateService: Boolean, resourcesPath: String): ManagerEnv = {
       val __obj = js.Dynamic.literal(IfUpdateService = IfUpdateService.asInstanceOf[js.Any], resourcesPath = resourcesPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManagerEnv]
     }
     
-    @scala.inline
-    implicit class ManagerEnvMutableBuilder[Self <: ManagerEnv] (val x: Self) extends AnyVal {
+    extension [Self <: ManagerEnv](x: Self) {
       
-      @scala.inline
-      def setIfUpdateService(value: Boolean): Self = StObject.set(x, "IfUpdateService", value.asInstanceOf[js.Any])
+      inline def setIfUpdateService(value: Boolean): Self = StObject.set(x, "IfUpdateService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesPath(value: String): Self = StObject.set(x, "resourcesPath", value.asInstanceOf[js.Any])
+      inline def setResourcesPath(value: String): Self = StObject.set(x, "resourcesPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -677,8 +595,7 @@ object dynamsoftMod extends Shortcut {
   }
   object Messages {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ConvertingToBase64: String,
       ConvertingToBlob: String,
       Downloading: String,
@@ -712,92 +629,63 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[Messages]
     }
     
-    @scala.inline
-    implicit class MessagesMutableBuilder[Self <: Messages] (val x: Self) extends AnyVal {
+    extension [Self <: Messages](x: Self) {
       
-      @scala.inline
-      def setConvertingToBase64(value: String): Self = StObject.set(x, "ConvertingToBase64", value.asInstanceOf[js.Any])
+      inline def setConvertingToBase64(value: String): Self = StObject.set(x, "ConvertingToBase64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConvertingToBlob(value: String): Self = StObject.set(x, "ConvertingToBlob", value.asInstanceOf[js.Any])
+      inline def setConvertingToBlob(value: String): Self = StObject.set(x, "ConvertingToBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloading(value: String): Self = StObject.set(x, "Downloading", value.asInstanceOf[js.Any])
+      inline def setDownloading(value: String): Self = StObject.set(x, "Downloading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErr_BrowserNotSupportWasm(value: String): Self = StObject.set(x, "Err_BrowserNotSupportWasm", value.asInstanceOf[js.Any])
+      inline def setErr_BrowserNotSupportWasm(value: String): Self = StObject.set(x, "Err_BrowserNotSupportWasm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_AllJsLoaded(value: String): Self = StObject.set(x, "Init_AllJsLoaded", value.asInstanceOf[js.Any])
+      inline def setInit_AllJsLoaded(value: String): Self = StObject.set(x, "Init_AllJsLoaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_CheckDWT(value: String): Self = StObject.set(x, "Init_CheckDWT", value.asInstanceOf[js.Any])
+      inline def setInit_CheckDWT(value: String): Self = StObject.set(x, "Init_CheckDWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_CheckDWTVersion(value: String): Self = StObject.set(x, "Init_CheckDWTVersion", value.asInstanceOf[js.Any])
+      inline def setInit_CheckDWTVersion(value: String): Self = StObject.set(x, "Init_CheckDWTVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_CheckingLicense(value: String): Self = StObject.set(x, "Init_CheckingLicense", value.asInstanceOf[js.Any])
+      inline def setInit_CheckingLicense(value: String): Self = StObject.set(x, "Init_CheckingLicense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_CompilingWasm(value: String): Self = StObject.set(x, "Init_CompilingWasm", value.asInstanceOf[js.Any])
+      inline def setInit_CompilingWasm(value: String): Self = StObject.set(x, "Init_CompilingWasm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_ConfiguringDWT(value: String): Self = StObject.set(x, "Init_ConfiguringDWT", value.asInstanceOf[js.Any])
+      inline def setInit_ConfiguringDWT(value: String): Self = StObject.set(x, "Init_ConfiguringDWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_CreatingDWT(value: String): Self = StObject.set(x, "Init_CreatingDWT", value.asInstanceOf[js.Any])
+      inline def setInit_CreatingDWT(value: String): Self = StObject.set(x, "Init_CreatingDWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_DownloadingWasm(value: String): Self = StObject.set(x, "Init_DownloadingWasm", value.asInstanceOf[js.Any])
+      inline def setInit_DownloadingWasm(value: String): Self = StObject.set(x, "Init_DownloadingWasm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_FireBeforeInitEvt(value: String): Self = StObject.set(x, "Init_FireBeforeInitEvt", value.asInstanceOf[js.Any])
+      inline def setInit_FireBeforeInitEvt(value: String): Self = StObject.set(x, "Init_FireBeforeInitEvt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_GetLicenseInfoForDWT(value: String): Self = StObject.set(x, "Init_GetLicenseInfoForDWT", value.asInstanceOf[js.Any])
+      inline def setInit_GetLicenseInfoForDWT(value: String): Self = StObject.set(x, "Init_GetLicenseInfoForDWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_InitActiveX(value: String): Self = StObject.set(x, "Init_InitActiveX", value.asInstanceOf[js.Any])
+      inline def setInit_InitActiveX(value: String): Self = StObject.set(x, "Init_InitActiveX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_InitDynamsoftService(value: String): Self = StObject.set(x, "Init_InitDynamsoftService", value.asInstanceOf[js.Any])
+      inline def setInit_InitDynamsoftService(value: String): Self = StObject.set(x, "Init_InitDynamsoftService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_InitH5(value: String): Self = StObject.set(x, "Init_InitH5", value.asInstanceOf[js.Any])
+      inline def setInit_InitH5(value: String): Self = StObject.set(x, "Init_InitH5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_InitWasm(value: String): Self = StObject.set(x, "Init_InitWasm", value.asInstanceOf[js.Any])
+      inline def setInit_InitWasm(value: String): Self = StObject.set(x, "Init_InitWasm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_LoadingViewerJs(value: String): Self = StObject.set(x, "Init_LoadingViewerJs", value.asInstanceOf[js.Any])
+      inline def setInit_LoadingViewerJs(value: String): Self = StObject.set(x, "Init_LoadingViewerJs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_LookingLicense(value: String): Self = StObject.set(x, "Init_LookingLicense", value.asInstanceOf[js.Any])
+      inline def setInit_LookingLicense(value: String): Self = StObject.set(x, "Init_LookingLicense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit_SetLicenseForDWT(value: String): Self = StObject.set(x, "Init_SetLicenseForDWT", value.asInstanceOf[js.Any])
+      inline def setInit_SetLicenseForDWT(value: String): Self = StObject.set(x, "Init_SetLicenseForDWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: String): Self = StObject.set(x, "Loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: String): Self = StObject.set(x, "Loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingPdf(value: String): Self = StObject.set(x, "LoadingPdf", value.asInstanceOf[js.Any])
+      inline def setLoadingPdf(value: String): Self = StObject.set(x, "LoadingPdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingTiff(value: String): Self = StObject.set(x, "LoadingTiff", value.asInstanceOf[js.Any])
+      inline def setLoadingTiff(value: String): Self = StObject.set(x, "LoadingTiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavingPdf(value: String): Self = StObject.set(x, "SavingPdf", value.asInstanceOf[js.Any])
+      inline def setSavingPdf(value: String): Self = StObject.set(x, "SavingPdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavingTiff(value: String): Self = StObject.set(x, "SavingTiff", value.asInstanceOf[js.Any])
+      inline def setSavingTiff(value: String): Self = StObject.set(x, "SavingTiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploading(value: String): Self = StObject.set(x, "Uploading", value.asInstanceOf[js.Any])
+      inline def setUploading(value: String): Self = StObject.set(x, "Uploading", value.asInstanceOf[js.Any])
     }
   }
   
@@ -817,8 +705,7 @@ object dynamsoftMod extends Shortcut {
   }
   object Product {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bActiveXEdition: Boolean,
       bChromeEdition: Boolean,
       bHTML5Edition: Boolean,
@@ -830,26 +717,19 @@ object dynamsoftMod extends Shortcut {
       __obj.asInstanceOf[Product]
     }
     
-    @scala.inline
-    implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
+    extension [Self <: Product](x: Self) {
       
-      @scala.inline
-      def setBActiveXEdition(value: Boolean): Self = StObject.set(x, "bActiveXEdition", value.asInstanceOf[js.Any])
+      inline def setBActiveXEdition(value: Boolean): Self = StObject.set(x, "bActiveXEdition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBChromeEdition(value: Boolean): Self = StObject.set(x, "bChromeEdition", value.asInstanceOf[js.Any])
+      inline def setBChromeEdition(value: Boolean): Self = StObject.set(x, "bChromeEdition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBHTML5Edition(value: Boolean): Self = StObject.set(x, "bHTML5Edition", value.asInstanceOf[js.Any])
+      inline def setBHTML5Edition(value: Boolean): Self = StObject.set(x, "bHTML5Edition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBPluginEdition(value: Boolean): Self = StObject.set(x, "bPluginEdition", value.asInstanceOf[js.Any])
+      inline def setBPluginEdition(value: Boolean): Self = StObject.set(x, "bPluginEdition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

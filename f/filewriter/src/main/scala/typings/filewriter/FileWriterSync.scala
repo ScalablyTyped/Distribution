@@ -51,8 +51,7 @@ trait FileWriterSync extends StObject {
 }
 object FileWriterSync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     length: Double,
     position: Double,
     seek: Double => Unit,
@@ -63,22 +62,16 @@ object FileWriterSync {
     __obj.asInstanceOf[FileWriterSync]
   }
   
-  @scala.inline
-  implicit class FileWriterSyncMutableBuilder[Self <: FileWriterSync] (val x: Self) extends AnyVal {
+  extension [Self <: FileWriterSync](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+    inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTruncate(value: Double => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
+    inline def setTruncate(value: Double => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: Blob => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: Blob => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

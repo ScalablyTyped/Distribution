@@ -179,16 +179,14 @@ object Usb {
       * @return A UsbConfigurationDescriptor object that contains fields of a USB configuration descriptor.
       */
     /* static member */
-    @scala.inline
-    def parse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): typings.winrtUwp.Windows.Devices.Usb.UsbConfigurationDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Usb.UsbConfigurationDescriptor]
+    inline def parse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): typings.winrtUwp.Windows.Devices.Usb.UsbConfigurationDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Usb.UsbConfigurationDescriptor]
     
     /**
       * Retrieves the first 9 bytes of a USB configuration descriptor in a UsbConfigurationDescriptor object that is contained in a UsbDescriptor object.
       * @param descriptor The UsbDescriptor object to parse.
       */
     /* static member */
-    @scala.inline
-    def tryParse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): Parsed = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[Parsed]
+    inline def tryParse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): Parsed = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[Parsed]
   }
   
   /** Defines constants that indicate the recipient of a USB control transfer. The recipient is defined in the setup packet of the control request. See Table 9.2 of section 9.3 of the Universal Serial Bus (USB) specification (www.usb.org). */
@@ -291,8 +289,7 @@ object Usb {
       * @return Returns an IAsyncOperation(UsbDevice) object that returns the results of the operation.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Usb.UsbDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Usb.UsbDevice]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Usb.UsbDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Usb.UsbDevice]]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string that the app can pass to DeviceInformation.FindAllAsync in order to find a specific type of USB device.
@@ -300,8 +297,7 @@ object Usb {
       * @return String formatted as an AQS query.
       */
     /* static member */
-    @scala.inline
-    def getDeviceClassSelector(usbClass: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceClassSelector")(usbClass.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceClassSelector(usbClass: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceClassSelector")(usbClass.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string, based on vendor and product identifiers, specified by the app. The app passes the string to DeviceInformation.FindAllAsync in order to find a specific type of USB device.
@@ -310,8 +306,7 @@ object Usb {
       * @return String formatted as an AQS query.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(vendorId: Double, productId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDeviceSelector(vendorId: Double, productId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Gets an Advanced Query Syntax (AQS) string, based on vendor, product, and device interface GUID identifiers, specified by the app. The app passes the string to DeviceInformation.FindAllAsync in order to find a specific type of USB device.
       * @param vendorId Specifies the vendor identifier for the device as assigned by the USB specification committee. Possible values are 0 through 0xffff.
@@ -320,16 +315,14 @@ object Usb {
       * @return String formatted as an AQS query.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(vendorId: Double, productId: Double, winUsbInterfaceClass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any], winUsbInterfaceClass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDeviceSelector(vendorId: Double, productId: Double, winUsbInterfaceClass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(vendorId.asInstanceOf[js.Any], productId.asInstanceOf[js.Any], winUsbInterfaceClass.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Gets an Advanced Query Syntax (AQS) string, based on the device interface GUID identifier, specified by the app. The app passes the string to DeviceInformation.FindAllAsync in order to find a specific type of USB device.
       * @param winUsbInterfaceClass The device interface GUID exposed by the Winusb.sys driver. See the remarks section.
       * @return String formatted as an AQS query.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(winUsbInterfaceClass: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(winUsbInterfaceClass.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(winUsbInterfaceClass: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(winUsbInterfaceClass.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Provides a way for the app to get an Advanced Query Syntax (AQS) string by specifying the class code, subclass code, and the protocol code defined by the device. The properties in this class are passed in the call to GetDeviceClassSelector . */
@@ -370,72 +363,63 @@ object Usb {
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.activeSync")
     @js.native
     def activeSync: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def activeSync_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeSync")(x.asInstanceOf[js.Any])
+    inline def activeSync_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeSync")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for the device that conforms to the Communication Device Class (CDC). */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.cdcControl")
     @js.native
     def cdcControl: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def cdcControl_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cdcControl")(x.asInstanceOf[js.Any])
+    inline def cdcControl_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cdcControl")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for the device that conforms to the Device Firmware Update device class. */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.deviceFirmwareUpdate")
     @js.native
     def deviceFirmwareUpdate: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def deviceFirmwareUpdate_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceFirmwareUpdate")(x.asInstanceOf[js.Any])
+    inline def deviceFirmwareUpdate_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceFirmwareUpdate")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for an infrared transceiver that conforms to the IrDA class defined as per the IrDA Bridge Device Definition 1.0 specification. */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.irda")
     @js.native
     def irda: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def irda_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("irda")(x.asInstanceOf[js.Any])
+    inline def irda_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("irda")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for a device that conforms to the USB test and measurement class (USBTMC). */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.measurement")
     @js.native
     def measurement: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def measurement_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("measurement")(x.asInstanceOf[js.Any])
+    inline def measurement_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("measurement")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for the device that conforms to the Palm Sync device class. */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.palmSync")
     @js.native
     def palmSync: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def palmSync_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("palmSync")(x.asInstanceOf[js.Any])
+    inline def palmSync_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("palmSync")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for a device that conforms to the USB Personal Healthcare Device Class (PHDC). */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.personalHealthcare")
     @js.native
     def personalHealthcare: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def personalHealthcare_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("personalHealthcare")(x.asInstanceOf[js.Any])
+    inline def personalHealthcare_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("personalHealthcare")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for a device that conforms to the Physical Interface Devices (PID) specification. */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.physical")
     @js.native
     def physical: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def physical_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("physical")(x.asInstanceOf[js.Any])
+    inline def physical_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("physical")(x.asInstanceOf[js.Any])
     
     /** Gets the device class object for a custom device that has 0xFF class code. This indicates that the device does not belong to a class approved by USB-IF. */
     /* static member */
     @JSGlobal("Windows.Devices.Usb.UsbDeviceClasses.vendorSpecific")
     @js.native
     def vendorSpecific: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass = js.native
-    @scala.inline
-    def vendorSpecific_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vendorSpecific")(x.asInstanceOf[js.Any])
+    inline def vendorSpecific_=(x: typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vendorSpecific")(x.asInstanceOf[js.Any])
   }
   
   /** Derives information from the USB device descriptor of the device. For an explanation of the device descriptor, see Table 9.8 in the Universal Serial Bus Specification. */
@@ -517,16 +501,14 @@ object Usb {
       * @return A UsbEndpointDescriptor object that contains the USB endpoint descriptor.
       */
     /* static member */
-    @scala.inline
-    def parse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor]
+    inline def parse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor]
     
     /**
       * Retrieves the USB endpoint descriptor in a UsbEndpointDescriptor object that is contained in a UsbDescriptor object.
       * @param descriptor The UsbDescriptor object to parse.
       */
     /* static member */
-    @scala.inline
-    def tryParse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): ParsedReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[ParsedReturnValue]
+    inline def tryParse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): ParsedReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[ParsedReturnValue]
   }
   
   /** Defines constants that indicate the type of USB endpoint: control, bulk, isochronous, or interrupt. */
@@ -621,16 +603,14 @@ object Usb {
       * @return A UsbInterfaceDescriptor object describes the alternate setting.
       */
     /* static member */
-    @scala.inline
-    def parse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceDescriptor]
+    inline def parse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Usb.UsbInterfaceDescriptor]
     
     /**
       * Retrieves information about the alternate setting in a UsbInterfaceDescriptor object that is contained in a UsbDescriptor object.
       * @param descriptor The UsbDescriptor object to parse.
       */
     /* static member */
-    @scala.inline
-    def tryParse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): ParsedUsbInterfaceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[ParsedUsbInterfaceDescriptor]
+    inline def tryParse(descriptor: typings.winrtUwp.Windows.Devices.Usb.UsbDescriptor): ParsedUsbInterfaceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(descriptor.asInstanceOf[js.Any]).asInstanceOf[ParsedUsbInterfaceDescriptor]
   }
   
   /** Provides information about an alternate setting and select that setting. The app can get the USB interface descriptors for the setting and its endpoints, and determine whether this setting is currently selected. */

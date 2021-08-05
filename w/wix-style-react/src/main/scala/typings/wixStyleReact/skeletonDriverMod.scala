@@ -24,8 +24,7 @@ object skeletonDriverMod {
   }
   object SkeletonDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getNumLines: () => Double,
       hasAlignment: SkeletonAlignment => Boolean,
@@ -36,20 +35,15 @@ object skeletonDriverMod {
       __obj.asInstanceOf[SkeletonDriver]
     }
     
-    @scala.inline
-    implicit class SkeletonDriverMutableBuilder[Self <: SkeletonDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SkeletonDriver](x: Self) {
       
-      @scala.inline
-      def setGetNumLines(value: () => Double): Self = StObject.set(x, "getNumLines", js.Any.fromFunction0(value))
+      inline def setGetNumLines(value: () => Double): Self = StObject.set(x, "getNumLines", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasAlignment(value: SkeletonAlignment => Boolean): Self = StObject.set(x, "hasAlignment", js.Any.fromFunction1(value))
+      inline def setHasAlignment(value: SkeletonAlignment => Boolean): Self = StObject.set(x, "hasAlignment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasSizes(value: SkeletonContentSize => Boolean): Self = StObject.set(x, "hasSizes", js.Any.fromFunction1(value))
+      inline def setHasSizes(value: SkeletonContentSize => Boolean): Self = StObject.set(x, "hasSizes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasSpacing(value: SkeletonSpacing => Boolean): Self = StObject.set(x, "hasSpacing", js.Any.fromFunction1(value))
+      inline def setHasSpacing(value: SkeletonSpacing => Boolean): Self = StObject.set(x, "hasSpacing", js.Any.fromFunction1(value))
     }
   }
 }

@@ -14,16 +14,13 @@ trait CordovaPackageJson
 }
 object CordovaPackageJson {
   
-  @scala.inline
-  def apply(cordova: Platforms, name: String, version: String): CordovaPackageJson = {
+  inline def apply(cordova: Platforms, name: String, version: String): CordovaPackageJson = {
     val __obj = js.Dynamic.literal(cordova = cordova.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPackageJson]
   }
   
-  @scala.inline
-  implicit class CordovaPackageJsonMutableBuilder[Self <: CordovaPackageJson] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPackageJson](x: Self) {
     
-    @scala.inline
-    def setCordova(value: Platforms): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+    inline def setCordova(value: Platforms): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
   }
 }

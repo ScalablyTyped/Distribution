@@ -18,28 +18,21 @@ trait ListProvisioningTemplatesResponse extends StObject {
 }
 object ListProvisioningTemplatesResponse {
   
-  @scala.inline
-  def apply(): ListProvisioningTemplatesResponse = {
+  inline def apply(): ListProvisioningTemplatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProvisioningTemplatesResponse]
   }
   
-  @scala.inline
-  implicit class ListProvisioningTemplatesResponseMutableBuilder[Self <: ListProvisioningTemplatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProvisioningTemplatesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTemplates(value: ProvisioningTemplateListing): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: ProvisioningTemplateListing): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    @scala.inline
-    def setTemplatesVarargs(value: ProvisioningTemplateSummary*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: ProvisioningTemplateSummary*): Self = StObject.set(x, "templates", js.Array(value :_*))
   }
 }

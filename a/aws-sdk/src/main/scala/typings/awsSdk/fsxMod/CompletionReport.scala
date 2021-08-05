@@ -28,34 +28,25 @@ trait CompletionReport extends StObject {
 }
 object CompletionReport {
   
-  @scala.inline
-  def apply(Enabled: Flag): CompletionReport = {
+  inline def apply(Enabled: Flag): CompletionReport = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionReport]
   }
   
-  @scala.inline
-  implicit class CompletionReportMutableBuilder[Self <: CompletionReport] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionReport](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Flag): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Flag): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setPath(value: ArchivePath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: ArchivePath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
-    @scala.inline
-    def setScope(value: ReportScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: ReportScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
   }
 }

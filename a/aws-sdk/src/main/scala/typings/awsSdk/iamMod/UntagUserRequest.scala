@@ -18,22 +18,17 @@ trait UntagUserRequest extends StObject {
 }
 object UntagUserRequest {
   
-  @scala.inline
-  def apply(TagKeys: tagKeyListType, UserName: existingUserNameType): UntagUserRequest = {
+  inline def apply(TagKeys: tagKeyListType, UserName: existingUserNameType): UntagUserRequest = {
     val __obj = js.Dynamic.literal(TagKeys = TagKeys.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagUserRequest]
   }
   
-  @scala.inline
-  implicit class UntagUserRequestMutableBuilder[Self <: UntagUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UntagUserRequest](x: Self) {
     
-    @scala.inline
-    def setTagKeys(value: tagKeyListType): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: tagKeyListType): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysVarargs(value: tagKeyType*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: tagKeyType*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

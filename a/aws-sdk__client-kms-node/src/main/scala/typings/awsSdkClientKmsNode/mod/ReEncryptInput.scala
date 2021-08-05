@@ -11,8 +11,7 @@ trait ReEncryptInput
      with typings.awsSdkClientKmsNode.typesReEncryptInputMod.ReEncryptInput
 object ReEncryptInput {
   
-  @scala.inline
-  def apply(CiphertextBlob: ArrayBuffer | ArrayBufferView | String, DestinationKeyId: String): ReEncryptInput = {
+  inline def apply(CiphertextBlob: ArrayBuffer | ArrayBufferView | String, DestinationKeyId: String): ReEncryptInput = {
     val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any], DestinationKeyId = DestinationKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReEncryptInput]
   }

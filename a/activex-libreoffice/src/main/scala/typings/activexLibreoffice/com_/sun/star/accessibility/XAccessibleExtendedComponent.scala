@@ -69,8 +69,7 @@ trait XAccessibleExtendedComponent
 }
 object XAccessibleExtendedComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Background: Color,
     Bounds: Rectangle,
     Font: XFont,
@@ -100,25 +99,18 @@ object XAccessibleExtendedComponent {
     __obj.asInstanceOf[XAccessibleExtendedComponent]
   }
   
-  @scala.inline
-  implicit class XAccessibleExtendedComponentMutableBuilder[Self <: XAccessibleExtendedComponent] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleExtendedComponent](x: Self) {
     
-    @scala.inline
-    def setFont(value: XFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: XFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFont(value: () => XFont): Self = StObject.set(x, "getFont", js.Any.fromFunction0(value))
+    inline def setGetFont(value: () => XFont): Self = StObject.set(x, "getFont", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitledBorderText(value: () => String): Self = StObject.set(x, "getTitledBorderText", js.Any.fromFunction0(value))
+    inline def setGetTitledBorderText(value: () => String): Self = StObject.set(x, "getTitledBorderText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetToolTipText(value: () => String): Self = StObject.set(x, "getToolTipText", js.Any.fromFunction0(value))
+    inline def setGetToolTipText(value: () => String): Self = StObject.set(x, "getToolTipText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTitledBorderText(value: String): Self = StObject.set(x, "TitledBorderText", value.asInstanceOf[js.Any])
+    inline def setTitledBorderText(value: String): Self = StObject.set(x, "TitledBorderText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipText(value: String): Self = StObject.set(x, "ToolTipText", value.asInstanceOf[js.Any])
+    inline def setToolTipText(value: String): Self = StObject.set(x, "ToolTipText", value.asInstanceOf[js.Any])
   }
 }

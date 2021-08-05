@@ -12,14 +12,10 @@ object iifMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def iif[T, F](condition: js.Function0[Boolean]): Observable[T | F] = ^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any]).asInstanceOf[Observable[T | F]]
-  @scala.inline
-  def iif[T, F](condition: js.Function0[Boolean], trueResult: Unit, falseResult: SubscribableOrPromise[F]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
-  @scala.inline
-  def iif[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
-  @scala.inline
-  def iif[T, F](
+  inline def iif[T, F](condition: js.Function0[Boolean]): Observable[T | F] = ^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any]).asInstanceOf[Observable[T | F]]
+  inline def iif[T, F](condition: js.Function0[Boolean], trueResult: Unit, falseResult: SubscribableOrPromise[F]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+  inline def iif[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("iif")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+  inline def iif[T, F](
     condition: js.Function0[Boolean],
     trueResult: SubscribableOrPromise[T],
     falseResult: SubscribableOrPromise[F]

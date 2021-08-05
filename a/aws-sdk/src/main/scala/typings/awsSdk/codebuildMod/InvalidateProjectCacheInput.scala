@@ -13,16 +13,13 @@ trait InvalidateProjectCacheInput extends StObject {
 }
 object InvalidateProjectCacheInput {
   
-  @scala.inline
-  def apply(projectName: NonEmptyString): InvalidateProjectCacheInput = {
+  inline def apply(projectName: NonEmptyString): InvalidateProjectCacheInput = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidateProjectCacheInput]
   }
   
-  @scala.inline
-  implicit class InvalidateProjectCacheInputMutableBuilder[Self <: InvalidateProjectCacheInput] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidateProjectCacheInput](x: Self) {
     
-    @scala.inline
-    def setProjectName(value: NonEmptyString): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: NonEmptyString): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

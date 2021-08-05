@@ -28,34 +28,25 @@ trait SchemaErrorSummary extends StObject {
 }
 object SchemaErrorSummary {
   
-  @scala.inline
-  def apply(): SchemaErrorSummary = {
+  inline def apply(): SchemaErrorSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorSummary]
   }
   
-  @scala.inline
-  implicit class SchemaErrorSummaryMutableBuilder[Self <: SchemaErrorSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorSummary](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
-    @scala.inline
-    def setErrorLogEntries(value: js.Array[SchemaErrorLogEntry]): Self = StObject.set(x, "errorLogEntries", value.asInstanceOf[js.Any])
+    inline def setErrorLogEntries(value: js.Array[SchemaErrorLogEntry]): Self = StObject.set(x, "errorLogEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorLogEntriesUndefined: Self = StObject.set(x, "errorLogEntries", js.undefined)
+    inline def setErrorLogEntriesUndefined: Self = StObject.set(x, "errorLogEntries", js.undefined)
     
-    @scala.inline
-    def setErrorLogEntriesVarargs(value: SchemaErrorLogEntry*): Self = StObject.set(x, "errorLogEntries", js.Array(value :_*))
+    inline def setErrorLogEntriesVarargs(value: SchemaErrorLogEntry*): Self = StObject.set(x, "errorLogEntries", js.Array(value :_*))
   }
 }

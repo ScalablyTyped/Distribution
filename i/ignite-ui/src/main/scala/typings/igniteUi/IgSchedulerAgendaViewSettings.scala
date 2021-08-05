@@ -20,19 +20,15 @@ trait IgSchedulerAgendaViewSettings
 }
 object IgSchedulerAgendaViewSettings {
   
-  @scala.inline
-  def apply(): IgSchedulerAgendaViewSettings = {
+  inline def apply(): IgSchedulerAgendaViewSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgSchedulerAgendaViewSettings]
   }
   
-  @scala.inline
-  implicit class IgSchedulerAgendaViewSettingsMutableBuilder[Self <: IgSchedulerAgendaViewSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgSchedulerAgendaViewSettings](x: Self) {
     
-    @scala.inline
-    def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
+    inline def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
+    inline def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
   }
 }

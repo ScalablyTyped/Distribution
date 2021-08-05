@@ -60,8 +60,7 @@ trait IterableChanges[V] extends StObject {
 }
 object IterableChanges {
   
-  @scala.inline
-  def apply[V](
+  inline def apply[V](
     forEachAddedItem: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit,
     forEachIdentityChange: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit,
     forEachItem: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit,
@@ -79,23 +78,17 @@ object IterableChanges {
     __obj.asInstanceOf[IterableChanges[V]]
   }
   
-  @scala.inline
-  implicit class IterableChangesMutableBuilder[Self <: IterableChanges[?], V] (val x: Self & IterableChanges[V]) extends AnyVal {
+  extension [Self <: IterableChanges[?], V](x: Self & IterableChanges[V]) {
     
-    @scala.inline
-    def setForEachAddedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))
+    inline def setForEachAddedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachIdentityChange(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachIdentityChange", js.Any.fromFunction1(value))
+    inline def setForEachIdentityChange(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachIdentityChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachItem", js.Any.fromFunction1(value))
+    inline def setForEachItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachMovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachMovedItem", js.Any.fromFunction1(value))
+    inline def setForEachMovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachMovedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachOperation(
+    inline def setForEachOperation(
       value: js.Function3[
           /* record */ IterableChangeRecord[V], 
           /* previousIndex */ Double | Null, 
@@ -104,10 +97,8 @@ object IterableChanges {
         ] => Unit
     ): Self = StObject.set(x, "forEachOperation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachPreviousItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachPreviousItem", js.Any.fromFunction1(value))
+    inline def setForEachPreviousItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachPreviousItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachRemovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachRemovedItem", js.Any.fromFunction1(value))
+    inline def setForEachRemovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachRemovedItem", js.Any.fromFunction1(value))
   }
 }

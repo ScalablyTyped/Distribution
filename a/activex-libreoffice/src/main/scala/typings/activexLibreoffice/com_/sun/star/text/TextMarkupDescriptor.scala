@@ -23,8 +23,7 @@ trait TextMarkupDescriptor extends StObject {
 }
 object TextMarkupDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aIdentifier: String,
     nLength: Double,
     nOffset: Double,
@@ -35,22 +34,16 @@ object TextMarkupDescriptor {
     __obj.asInstanceOf[TextMarkupDescriptor]
   }
   
-  @scala.inline
-  implicit class TextMarkupDescriptorMutableBuilder[Self <: TextMarkupDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: TextMarkupDescriptor](x: Self) {
     
-    @scala.inline
-    def setAIdentifier(value: String): Self = StObject.set(x, "aIdentifier", value.asInstanceOf[js.Any])
+    inline def setAIdentifier(value: String): Self = StObject.set(x, "aIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNLength(value: Double): Self = StObject.set(x, "nLength", value.asInstanceOf[js.Any])
+    inline def setNLength(value: Double): Self = StObject.set(x, "nLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOffset(value: Double): Self = StObject.set(x, "nOffset", value.asInstanceOf[js.Any])
+    inline def setNOffset(value: Double): Self = StObject.set(x, "nOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNType(value: Double): Self = StObject.set(x, "nType", value.asInstanceOf[js.Any])
+    inline def setNType(value: Double): Self = StObject.set(x, "nType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXMarkupInfoContainer(value: XStringKeyMap): Self = StObject.set(x, "xMarkupInfoContainer", value.asInstanceOf[js.Any])
+    inline def setXMarkupInfoContainer(value: XStringKeyMap): Self = StObject.set(x, "xMarkupInfoContainer", value.asInstanceOf[js.Any])
   }
 }

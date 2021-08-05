@@ -162,8 +162,7 @@ trait Api extends StObject {
 }
 object Api {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     conformance: js.Any => js.Promise[Response],
     create: Entry => js.Promise[Response],
     delete: Entry => js.Promise[Response],
@@ -189,69 +188,48 @@ object Api {
     __obj.asInstanceOf[Api]
   }
   
-  @scala.inline
-  implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+  extension [Self <: Api](x: Self) {
     
-    @scala.inline
-    def setConformance(value: js.Any => js.Promise[Response]): Self = StObject.set(x, "conformance", js.Any.fromFunction1(value))
+    inline def setConformance(value: js.Any => js.Promise[Response]): Self = StObject.set(x, "conformance", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreate(value: Entry => js.Promise[Response]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Entry => js.Promise[Response]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: Entry => js.Promise[Response]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: Entry => js.Promise[Response]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDocument(value: Entry => js.Promise[Response]): Self = StObject.set(x, "document", js.Any.fromFunction1(value))
+    inline def setDocument(value: Entry => js.Promise[Response]): Self = StObject.set(x, "document", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrain(
+    inline def setDrain(
       value: (SearchParams, js.Function1[/* entries */ js.Array[Entry], js.Any], js.Function0[js.Any], js.Function1[/* error */ js.Any, js.Any]) => Unit
     ): Self = StObject.set(x, "drain", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFetchAll(value: SearchParams => js.Promise[js.Array[Entry]]): Self = StObject.set(x, "fetchAll", js.Any.fromFunction1(value))
+    inline def setFetchAll(value: SearchParams => js.Promise[js.Array[Entry]]): Self = StObject.set(x, "fetchAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFetchAllWithReferences(value: (SearchParams, js.Array[String]) => js.Any): Self = StObject.set(x, "fetchAllWithReferences", js.Any.fromFunction2(value))
+    inline def setFetchAllWithReferences(value: (SearchParams, js.Array[String]) => js.Any): Self = StObject.set(x, "fetchAllWithReferences", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHistory(value: HistoryParams => js.Promise[Response]): Self = StObject.set(x, "history", js.Any.fromFunction1(value))
+    inline def setHistory(value: HistoryParams => js.Promise[Response]): Self = StObject.set(x, "history", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNextPage(value: Bundle => js.Promise[Response]): Self = StObject.set(x, "nextPage", js.Any.fromFunction1(value))
+    inline def setNextPage(value: Bundle => js.Promise[Response]): Self = StObject.set(x, "nextPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrevPage(value: Bundle => js.Promise[Response]): Self = StObject.set(x, "prevPage", js.Any.fromFunction1(value))
+    inline def setPrevPage(value: Bundle => js.Promise[Response]): Self = StObject.set(x, "prevPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProfile(value: ResourceType => js.Promise[Response]): Self = StObject.set(x, "profile", js.Any.fromFunction1(value))
+    inline def setProfile(value: ResourceType => js.Promise[Response]): Self = StObject.set(x, "profile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRead(value: ReadParams => js.Promise[Response]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: ReadParams => js.Promise[Response]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolve(value: ResolveParams => js.Promise[Response]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+    inline def setResolve(value: ResolveParams => js.Promise[Response]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResourceHistory(value: HistoryParams => js.Promise[Response]): Self = StObject.set(x, "resourceHistory", js.Any.fromFunction1(value))
+    inline def setResourceHistory(value: HistoryParams => js.Promise[Response]): Self = StObject.set(x, "resourceHistory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearch(value: SearchParams => js.Promise[Response]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: SearchParams => js.Promise[Response]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransaction(value: Bundle => js.Promise[Response]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+    inline def setTransaction(value: Bundle => js.Promise[Response]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypeHistory(value: HistoryParams => js.Promise[Response]): Self = StObject.set(x, "typeHistory", js.Any.fromFunction1(value))
+    inline def setTypeHistory(value: HistoryParams => js.Promise[Response]): Self = StObject.set(x, "typeHistory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: Entry => js.Promise[Response]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: Entry => js.Promise[Response]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidate(value: Entry => js.Promise[Response]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: Entry => js.Promise[Response]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVread(value: VersionReadParams => js.Promise[Response]): Self = StObject.set(x, "vread", js.Any.fromFunction1(value))
+    inline def setVread(value: VersionReadParams => js.Promise[Response]): Self = StObject.set(x, "vread", js.Any.fromFunction1(value))
   }
 }

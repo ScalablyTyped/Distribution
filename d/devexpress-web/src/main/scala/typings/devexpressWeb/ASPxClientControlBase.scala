@@ -65,8 +65,7 @@ trait ASPxClientControlBase extends StObject {
 }
 object ASPxClientControlBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetClientVisible: () => Boolean,
     GetMainElement: () => js.Any,
     GetParentControl: () => js.Any,
@@ -82,37 +81,26 @@ object ASPxClientControlBase {
     __obj.asInstanceOf[ASPxClientControlBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientControlBaseMutableBuilder[Self <: ASPxClientControlBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientControlBase](x: Self) {
     
-    @scala.inline
-    def setGetClientVisible(value: () => Boolean): Self = StObject.set(x, "GetClientVisible", js.Any.fromFunction0(value))
+    inline def setGetClientVisible(value: () => Boolean): Self = StObject.set(x, "GetClientVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMainElement(value: () => js.Any): Self = StObject.set(x, "GetMainElement", js.Any.fromFunction0(value))
+    inline def setGetMainElement(value: () => js.Any): Self = StObject.set(x, "GetMainElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentControl(value: () => js.Any): Self = StObject.set(x, "GetParentControl", js.Any.fromFunction0(value))
+    inline def setGetParentControl(value: () => js.Any): Self = StObject.set(x, "GetParentControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInCallback(value: () => Boolean): Self = StObject.set(x, "InCallback", js.Any.fromFunction0(value))
+    inline def setInCallback(value: () => Boolean): Self = StObject.set(x, "InCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]]): Self = StObject.set(x, "Init", value.asInstanceOf[js.Any])
+    inline def setInit(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]]): Self = StObject.set(x, "Init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendMessageToAssistiveTechnology(value: String => Unit): Self = StObject.set(x, "SendMessageToAssistiveTechnology", js.Any.fromFunction1(value))
+    inline def setSendMessageToAssistiveTechnology(value: String => Unit): Self = StObject.set(x, "SendMessageToAssistiveTechnology", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetClientVisible(value: Boolean => Unit): Self = StObject.set(x, "SetClientVisible", js.Any.fromFunction1(value))
+    inline def setSetClientVisible(value: Boolean => Unit): Self = StObject.set(x, "SetClientVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
   }
 }

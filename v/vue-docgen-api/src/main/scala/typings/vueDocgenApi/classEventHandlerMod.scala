@@ -12,8 +12,7 @@ object classEventHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
     path: NodePath[js.Any, js.Any],
     astPath: File_

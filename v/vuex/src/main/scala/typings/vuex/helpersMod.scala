@@ -15,8 +15,7 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createNamespacedHelpers(namespace: String): NamespacedMappers = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespacedHelpers")(namespace.asInstanceOf[js.Any]).asInstanceOf[NamespacedMappers]
+  inline def createNamespacedHelpers(namespace: String): NamespacedMappers = ^.asInstanceOf[js.Dynamic].applyDynamic("createNamespacedHelpers")(namespace.asInstanceOf[js.Any]).asInstanceOf[NamespacedMappers]
   
   @JSImport("vuex/types/helpers", "mapActions")
   @js.native
@@ -214,8 +213,7 @@ object helpersMod {
   }
   object NamespacedMappers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mapActions: Mapper[ActionMethod] & MapperForAction,
       mapGetters: Mapper[Computed],
       mapMutations: Mapper[MutationMethod] & MapperForMutation,
@@ -225,20 +223,15 @@ object helpersMod {
       __obj.asInstanceOf[NamespacedMappers]
     }
     
-    @scala.inline
-    implicit class NamespacedMappersMutableBuilder[Self <: NamespacedMappers] (val x: Self) extends AnyVal {
+    extension [Self <: NamespacedMappers](x: Self) {
       
-      @scala.inline
-      def setMapActions(value: Mapper[ActionMethod] & MapperForAction): Self = StObject.set(x, "mapActions", value.asInstanceOf[js.Any])
+      inline def setMapActions(value: Mapper[ActionMethod] & MapperForAction): Self = StObject.set(x, "mapActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapGetters(value: Mapper[Computed]): Self = StObject.set(x, "mapGetters", value.asInstanceOf[js.Any])
+      inline def setMapGetters(value: Mapper[Computed]): Self = StObject.set(x, "mapGetters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapMutations(value: Mapper[MutationMethod] & MapperForMutation): Self = StObject.set(x, "mapMutations", value.asInstanceOf[js.Any])
+      inline def setMapMutations(value: Mapper[MutationMethod] & MapperForMutation): Self = StObject.set(x, "mapMutations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapState(value: Mapper[Computed] & MapperForState): Self = StObject.set(x, "mapState", value.asInstanceOf[js.Any])
+      inline def setMapState(value: Mapper[Computed] & MapperForState): Self = StObject.set(x, "mapState", value.asInstanceOf[js.Any])
     }
   }
 }

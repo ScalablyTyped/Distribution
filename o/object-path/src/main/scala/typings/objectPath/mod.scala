@@ -11,95 +11,73 @@ object mod {
   /**
     * Binds an object
     */
-  @scala.inline
-  def apply[T /* <: js.Object */](`object`: T): ObjectPathBound[T] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectPathBound[T]]
+  inline def apply[T /* <: js.Object */](`object`: T): ObjectPathBound[T] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectPathBound[T]]
   
   @JSImport("object-path", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def coalesce[TResult](`object`: js.Object, paths: js.Array[Path]): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
-  @scala.inline
-  def coalesce[TResult](`object`: js.Object, paths: js.Array[Path], defaultValue: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
-  @scala.inline
-  def coalesce[TResult](`object`: js.Object, paths: Path): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
-  @scala.inline
-  def coalesce[TResult](`object`: js.Object, paths: Path, defaultValue: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def coalesce[TResult](`object`: js.Object, paths: js.Array[Path]): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def coalesce[TResult](`object`: js.Object, paths: js.Array[Path], defaultValue: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def coalesce[TResult](`object`: js.Object, paths: Path): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def coalesce[TResult](`object`: js.Object, paths: Path, defaultValue: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
   
-  @scala.inline
-  def coalesce_TResult_TResult[TResult](`object`: js.Object, paths: js.Array[Path], defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def coalesce_TResult_TResult[TResult](`object`: js.Object, paths: js.Array[Path], defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
   /**
     * Get the first non undefined property
     */
-  @scala.inline
-  def coalesce_TResult_TResult[TResult](`object`: js.Object, paths: Path, defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def coalesce_TResult_TResult[TResult](`object`: js.Object, paths: Path, defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("coalesce")(`object`.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
   
-  @scala.inline
-  def create(): ObjectPathStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ObjectPathStatic]
-  @scala.inline
-  def create(options: Options): ObjectPathStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ObjectPathStatic]
+  inline def create(): ObjectPathStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ObjectPathStatic]
+  inline def create(options: Options): ObjectPathStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ObjectPathStatic]
   
   /**
     * Deletes a member from object or array
     */
-  @scala.inline
-  def del(`object`: js.Object, path: Path): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def del(`object`: js.Object, path: Path): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Empty a path. Arrays are set to length 0, objects have all elements deleted, strings
     * are set to empty, numbers to 0, everything else is set to null
     */
-  @scala.inline
-  def empty(`object`: js.Object, path: Path): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def empty(`object`: js.Object, path: Path): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def ensureExists[TResult](`object`: js.Object, path: Path): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
-  @scala.inline
-  def ensureExists[TResult](`object`: js.Object, path: Path, defaultValue: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def ensureExists[TResult](`object`: js.Object, path: Path): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def ensureExists[TResult](`object`: js.Object, path: Path, defaultValue: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
   
   /**
     * Set a value if it doesn't exist, do nothing if it does
     */
-  @scala.inline
-  def ensureExists_TResult_TResult[TResult](`object`: js.Object, path: Path, defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def ensureExists_TResult_TResult[TResult](`object`: js.Object, path: Path, defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureExists")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
   
   /**
     * Get a path from an object
     */
-  @scala.inline
-  def get(`object`: js.Object, path: Path): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get[TResult](`object`: js.Object, path: Path, defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
+  inline def get(`object`: js.Object, path: Path): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get[TResult](`object`: js.Object, path: Path, defaultValue: TResult): TResult = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TResult]
   
   /**
     * Tests path existence
     */
-  @scala.inline
-  def has(`object`: js.Object, path: Path): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has(`object`: js.Object, path: Path): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Insert an item in an array path
     */
-  @scala.inline
-  def insert(`object`: js.Object, path: Path, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def insert(`object`: js.Object, path: Path, value: js.Any, at: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], at.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insert(`object`: js.Object, path: Path, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insert(`object`: js.Object, path: Path, value: js.Any, at: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], at.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create (if path isn't an array) and push the value to it. Can push unlimited number of values
     */
-  @scala.inline
-  def push(`object`: js.Object, path: Path, items: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def push(`object`: js.Object, path: Path, items: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set a path to a value
     * @return Any existing value on the path if any
     */
-  @scala.inline
-  def set[TResult](`object`: js.Object, path: Path, value: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
-  @scala.inline
-  def set[TResult](`object`: js.Object, path: Path, value: TResult, doNotReplace: Boolean): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], doNotReplace.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def set[TResult](`object`: js.Object, path: Path, value: TResult): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
+  inline def set[TResult](`object`: js.Object, path: Path, value: TResult, doNotReplace: Boolean): js.UndefOr[TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], doNotReplace.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[TResult]]
   
   @JSImport("object-path", "withInheritedProps")
   @js.native
@@ -107,10 +85,8 @@ object mod {
   /**
     * Binds an object
     */
-  @scala.inline
-  def withInheritedProps[T /* <: js.Object */](`object`: T): ObjectPathBound[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInheritedProps")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectPathBound[T]]
-  @scala.inline
-  def withInheritedProps_=(x: ObjectPathStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withInheritedProps")(x.asInstanceOf[js.Any])
+  inline def withInheritedProps[T /* <: js.Object */](`object`: T): ObjectPathBound[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withInheritedProps")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectPathBound[T]]
+  inline def withInheritedProps_=(x: ObjectPathStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withInheritedProps")(x.asInstanceOf[js.Any])
   
   @js.native
   trait ObjectPathBound[T /* <: js.Object */] extends StObject {
@@ -249,20 +225,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIncludeInheritedProps(value: Boolean): Self = StObject.set(x, "includeInheritedProps", value.asInstanceOf[js.Any])
+      inline def setIncludeInheritedProps(value: Boolean): Self = StObject.set(x, "includeInheritedProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeInheritedPropsUndefined: Self = StObject.set(x, "includeInheritedProps", js.undefined)
+      inline def setIncludeInheritedPropsUndefined: Self = StObject.set(x, "includeInheritedProps", js.undefined)
     }
   }
   

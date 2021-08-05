@@ -15,8 +15,7 @@ trait XAppDispatchProvider
      with XDispatchProvider
 object XAppDispatchProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedCommandGroups: SafeArray[Double],
     acquire: () => Unit,
     getConfigurableDispatchInformation: Double => SafeArray[DispatchInformation],

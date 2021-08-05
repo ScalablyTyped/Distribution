@@ -12,6 +12,6 @@ object repositoryMod {
   abstract class Repository protected () extends StObject {
     def this(client: IgApiClient) = this()
     
-    var client: IgApiClient = js.native
+    /* protected */ var client: IgApiClient = js.native
   }
 }

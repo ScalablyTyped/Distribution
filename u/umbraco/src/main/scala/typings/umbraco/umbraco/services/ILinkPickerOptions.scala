@@ -14,16 +14,13 @@ trait ILinkPickerOptions extends StObject {
 }
 object ILinkPickerOptions {
   
-  @scala.inline
-  def apply(callback: js.Function): ILinkPickerOptions = {
+  inline def apply(callback: js.Function): ILinkPickerOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILinkPickerOptions]
   }
   
-  @scala.inline
-  implicit class ILinkPickerOptionsMutableBuilder[Self <: ILinkPickerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILinkPickerOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
   }
 }

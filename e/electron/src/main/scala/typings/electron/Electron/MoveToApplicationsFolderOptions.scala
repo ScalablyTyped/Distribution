@@ -15,19 +15,15 @@ trait MoveToApplicationsFolderOptions extends StObject {
 }
 object MoveToApplicationsFolderOptions {
   
-  @scala.inline
-  def apply(): MoveToApplicationsFolderOptions = {
+  inline def apply(): MoveToApplicationsFolderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveToApplicationsFolderOptions]
   }
   
-  @scala.inline
-  implicit class MoveToApplicationsFolderOptionsMutableBuilder[Self <: MoveToApplicationsFolderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MoveToApplicationsFolderOptions](x: Self) {
     
-    @scala.inline
-    def setConflictHandler(value: /* conflictType */ exists | existsAndRunning => Boolean): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction1(value))
+    inline def setConflictHandler(value: /* conflictType */ exists | existsAndRunning => Boolean): Self = StObject.set(x, "conflictHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
+    inline def setConflictHandlerUndefined: Self = StObject.set(x, "conflictHandler", js.undefined)
   }
 }

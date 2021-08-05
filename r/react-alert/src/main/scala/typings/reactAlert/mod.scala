@@ -60,21 +60,17 @@ object mod {
   @js.native
   val types: Types_ = js.native
   
-  @scala.inline
-  def useAlert(): AlertManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useAlert")().asInstanceOf[AlertManager]
-  @scala.inline
-  def useAlert(context: Context[js.UndefOr[AlertManager]]): AlertManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useAlert")(context.asInstanceOf[js.Any]).asInstanceOf[AlertManager]
+  inline def useAlert(): AlertManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useAlert")().asInstanceOf[AlertManager]
+  inline def useAlert(context: Context[js.UndefOr[AlertManager]]): AlertManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useAlert")(context.asInstanceOf[js.Any]).asInstanceOf[AlertManager]
   
-  @scala.inline
-  def withAlert[P /* <: Alert */](): js.Function1[
+  inline def withAlert[P /* <: Alert */](): js.Function1[
     /* c */ ComponentType[P], 
     ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withAlert")().asInstanceOf[js.Function1[
     /* c */ ComponentType[P], 
     ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
   ]]
-  @scala.inline
-  def withAlert[P /* <: Alert */](context: Context[js.UndefOr[AlertManager]]): js.Function1[
+  inline def withAlert[P /* <: Alert */](context: Context[js.UndefOr[AlertManager]]): js.Function1[
     /* c */ ComponentType[P], 
     ComponentType[Pick[P, Exclude[/* keyof P */ String, alert]]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withAlert")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -94,29 +90,22 @@ object mod {
   }
   object AlertComponentProps {
     
-    @scala.inline
-    def apply(close: () => Unit, id: String, options: AlertCustomOptionsWithType): AlertComponentProps = {
+    inline def apply(close: () => Unit, id: String, options: AlertCustomOptionsWithType): AlertComponentProps = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlertComponentProps]
     }
     
-    @scala.inline
-    implicit class AlertComponentPropsMutableBuilder[Self <: AlertComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlertComponentProps](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOptions(value: AlertCustomOptionsWithType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: AlertCustomOptionsWithType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,17 +117,14 @@ object mod {
   }
   object AlertComponentPropsWithStyle {
     
-    @scala.inline
-    def apply(close: () => Unit, id: String, options: AlertCustomOptionsWithType, style: CSSProperties): AlertComponentPropsWithStyle = {
+    inline def apply(close: () => Unit, id: String, options: AlertCustomOptionsWithType, style: CSSProperties): AlertComponentPropsWithStyle = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlertComponentPropsWithStyle]
     }
     
-    @scala.inline
-    implicit class AlertComponentPropsWithStyleMutableBuilder[Self <: AlertComponentPropsWithStyle] (val x: Self) extends AnyVal {
+    extension [Self <: AlertComponentPropsWithStyle](x: Self) {
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,32 +147,24 @@ object mod {
   }
   object AlertCustomOptions {
     
-    @scala.inline
-    def apply(): AlertCustomOptions = {
+    inline def apply(): AlertCustomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertCustomOptions]
     }
     
-    @scala.inline
-    implicit class AlertCustomOptionsMutableBuilder[Self <: AlertCustomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AlertCustomOptions](x: Self) {
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -198,20 +176,16 @@ object mod {
   }
   object AlertCustomOptionsWithType {
     
-    @scala.inline
-    def apply(): AlertCustomOptionsWithType = {
+    inline def apply(): AlertCustomOptionsWithType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlertCustomOptionsWithType]
     }
     
-    @scala.inline
-    implicit class AlertCustomOptionsWithTypeMutableBuilder[Self <: AlertCustomOptionsWithType] (val x: Self) extends AnyVal {
+    extension [Self <: AlertCustomOptionsWithType](x: Self) {
       
-      @scala.inline
-      def setType(value: AlertType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AlertType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -259,32 +233,23 @@ object mod {
   trait AlertPosition extends StObject
   object AlertPosition {
     
-    @scala.inline
-    def `bottom center`: typings.reactAlert.reactAlertStrings.`bottom center` = ("bottom center").asInstanceOf[typings.reactAlert.reactAlertStrings.`bottom center`]
+    inline def `bottom center`: typings.reactAlert.reactAlertStrings.`bottom center` = ("bottom center").asInstanceOf[typings.reactAlert.reactAlertStrings.`bottom center`]
     
-    @scala.inline
-    def `bottom left`: typings.reactAlert.reactAlertStrings.`bottom left` = ("bottom left").asInstanceOf[typings.reactAlert.reactAlertStrings.`bottom left`]
+    inline def `bottom left`: typings.reactAlert.reactAlertStrings.`bottom left` = ("bottom left").asInstanceOf[typings.reactAlert.reactAlertStrings.`bottom left`]
     
-    @scala.inline
-    def `bottom right`: typings.reactAlert.reactAlertStrings.`bottom right` = ("bottom right").asInstanceOf[typings.reactAlert.reactAlertStrings.`bottom right`]
+    inline def `bottom right`: typings.reactAlert.reactAlertStrings.`bottom right` = ("bottom right").asInstanceOf[typings.reactAlert.reactAlertStrings.`bottom right`]
     
-    @scala.inline
-    def middle: typings.reactAlert.reactAlertStrings.middle = "middle".asInstanceOf[typings.reactAlert.reactAlertStrings.middle]
+    inline def middle: typings.reactAlert.reactAlertStrings.middle = "middle".asInstanceOf[typings.reactAlert.reactAlertStrings.middle]
     
-    @scala.inline
-    def `middle left`: typings.reactAlert.reactAlertStrings.`middle left` = ("middle left").asInstanceOf[typings.reactAlert.reactAlertStrings.`middle left`]
+    inline def `middle left`: typings.reactAlert.reactAlertStrings.`middle left` = ("middle left").asInstanceOf[typings.reactAlert.reactAlertStrings.`middle left`]
     
-    @scala.inline
-    def `middle right`: typings.reactAlert.reactAlertStrings.`middle right` = ("middle right").asInstanceOf[typings.reactAlert.reactAlertStrings.`middle right`]
+    inline def `middle right`: typings.reactAlert.reactAlertStrings.`middle right` = ("middle right").asInstanceOf[typings.reactAlert.reactAlertStrings.`middle right`]
     
-    @scala.inline
-    def `top center`: typings.reactAlert.reactAlertStrings.`top center` = ("top center").asInstanceOf[typings.reactAlert.reactAlertStrings.`top center`]
+    inline def `top center`: typings.reactAlert.reactAlertStrings.`top center` = ("top center").asInstanceOf[typings.reactAlert.reactAlertStrings.`top center`]
     
-    @scala.inline
-    def `top left`: typings.reactAlert.reactAlertStrings.`top left` = ("top left").asInstanceOf[typings.reactAlert.reactAlertStrings.`top left`]
+    inline def `top left`: typings.reactAlert.reactAlertStrings.`top left` = ("top left").asInstanceOf[typings.reactAlert.reactAlertStrings.`top left`]
     
-    @scala.inline
-    def `top right`: typings.reactAlert.reactAlertStrings.`top right` = ("top right").asInstanceOf[typings.reactAlert.reactAlertStrings.`top right`]
+    inline def `top right`: typings.reactAlert.reactAlertStrings.`top right` = ("top right").asInstanceOf[typings.reactAlert.reactAlertStrings.`top right`]
   }
   
   trait AlertProviderProps
@@ -345,59 +310,42 @@ object mod {
   }
   object AlertProviderProps {
     
-    @scala.inline
-    def apply(template: ComponentType[AlertComponentPropsWithStyle]): AlertProviderProps = {
+    inline def apply(template: ComponentType[AlertComponentPropsWithStyle]): AlertProviderProps = {
       val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlertProviderProps]
     }
     
-    @scala.inline
-    implicit class AlertProviderPropsMutableBuilder[Self <: AlertProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlertProviderProps](x: Self) {
       
-      @scala.inline
-      def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setContext(value: Context[js.UndefOr[AlertManager]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context[js.UndefOr[AlertManager]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPosition(value: AlertPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: AlertPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: ComponentType[AlertComponentPropsWithStyle]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: ComponentType[AlertComponentPropsWithStyle]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTransition(value: AlertTransition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: AlertTransition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      @scala.inline
-      def setType(value: AlertType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AlertType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -408,11 +356,9 @@ object mod {
   trait AlertTransition extends StObject
   object AlertTransition {
     
-    @scala.inline
-    def fade: typings.reactAlert.reactAlertStrings.fade = "fade".asInstanceOf[typings.reactAlert.reactAlertStrings.fade]
+    inline def fade: typings.reactAlert.reactAlertStrings.fade = "fade".asInstanceOf[typings.reactAlert.reactAlertStrings.fade]
     
-    @scala.inline
-    def scale: typings.reactAlert.reactAlertStrings.scale = "scale".asInstanceOf[typings.reactAlert.reactAlertStrings.scale]
+    inline def scale: typings.reactAlert.reactAlertStrings.scale = "scale".asInstanceOf[typings.reactAlert.reactAlertStrings.scale]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -423,14 +369,11 @@ object mod {
   trait AlertType extends StObject
   object AlertType {
     
-    @scala.inline
-    def error: typings.reactAlert.reactAlertStrings.error = "error".asInstanceOf[typings.reactAlert.reactAlertStrings.error]
+    inline def error: typings.reactAlert.reactAlertStrings.error = "error".asInstanceOf[typings.reactAlert.reactAlertStrings.error]
     
-    @scala.inline
-    def info: typings.reactAlert.reactAlertStrings.info = "info".asInstanceOf[typings.reactAlert.reactAlertStrings.info]
+    inline def info: typings.reactAlert.reactAlertStrings.info = "info".asInstanceOf[typings.reactAlert.reactAlertStrings.info]
     
-    @scala.inline
-    def success: typings.reactAlert.reactAlertStrings.success = "success".asInstanceOf[typings.reactAlert.reactAlertStrings.success]
+    inline def success: typings.reactAlert.reactAlertStrings.success = "success".asInstanceOf[typings.reactAlert.reactAlertStrings.success]
   }
   
   trait Positions_ extends StObject {
@@ -455,41 +398,30 @@ object mod {
   }
   object Positions_ {
     
-    @scala.inline
-    def apply(): Positions_ = {
+    inline def apply(): Positions_ = {
       val __obj = js.Dynamic.literal(BOTTOM_CENTER = "bottom center", BOTTOM_LEFT = "bottom left", BOTTOM_RIGHT = "bottom right", MIDDLE = "middle", MIDDLE_LEFT = "middle left", MIDDLE_RIGHT = "middle right", TOP_CENTER = "top center", TOP_LEFT = "top left", TOP_RIGHT = "top right")
       __obj.asInstanceOf[Positions_]
     }
     
-    @scala.inline
-    implicit class Positions_MutableBuilder[Self <: Positions_] (val x: Self) extends AnyVal {
+    extension [Self <: Positions_](x: Self) {
       
-      @scala.inline
-      def setBOTTOM_CENTER(value: `bottom center`): Self = StObject.set(x, "BOTTOM_CENTER", value.asInstanceOf[js.Any])
+      inline def setBOTTOM_CENTER(value: `bottom center`): Self = StObject.set(x, "BOTTOM_CENTER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBOTTOM_LEFT(value: `bottom left`): Self = StObject.set(x, "BOTTOM_LEFT", value.asInstanceOf[js.Any])
+      inline def setBOTTOM_LEFT(value: `bottom left`): Self = StObject.set(x, "BOTTOM_LEFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBOTTOM_RIGHT(value: `bottom right`): Self = StObject.set(x, "BOTTOM_RIGHT", value.asInstanceOf[js.Any])
+      inline def setBOTTOM_RIGHT(value: `bottom right`): Self = StObject.set(x, "BOTTOM_RIGHT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIDDLE(value: middle): Self = StObject.set(x, "MIDDLE", value.asInstanceOf[js.Any])
+      inline def setMIDDLE(value: middle): Self = StObject.set(x, "MIDDLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIDDLE_LEFT(value: `middle left`): Self = StObject.set(x, "MIDDLE_LEFT", value.asInstanceOf[js.Any])
+      inline def setMIDDLE_LEFT(value: `middle left`): Self = StObject.set(x, "MIDDLE_LEFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIDDLE_RIGHT(value: `middle right`): Self = StObject.set(x, "MIDDLE_RIGHT", value.asInstanceOf[js.Any])
+      inline def setMIDDLE_RIGHT(value: `middle right`): Self = StObject.set(x, "MIDDLE_RIGHT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOP_CENTER(value: `top center`): Self = StObject.set(x, "TOP_CENTER", value.asInstanceOf[js.Any])
+      inline def setTOP_CENTER(value: `top center`): Self = StObject.set(x, "TOP_CENTER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOP_LEFT(value: `top left`): Self = StObject.set(x, "TOP_LEFT", value.asInstanceOf[js.Any])
+      inline def setTOP_LEFT(value: `top left`): Self = StObject.set(x, "TOP_LEFT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOP_RIGHT(value: `top right`): Self = StObject.set(x, "TOP_RIGHT", value.asInstanceOf[js.Any])
+      inline def setTOP_RIGHT(value: `top right`): Self = StObject.set(x, "TOP_RIGHT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -501,20 +433,16 @@ object mod {
   }
   object Transitions_ {
     
-    @scala.inline
-    def apply(): Transitions_ = {
+    inline def apply(): Transitions_ = {
       val __obj = js.Dynamic.literal(FADE = "fade", SCALE = "scale")
       __obj.asInstanceOf[Transitions_]
     }
     
-    @scala.inline
-    implicit class Transitions_MutableBuilder[Self <: Transitions_] (val x: Self) extends AnyVal {
+    extension [Self <: Transitions_](x: Self) {
       
-      @scala.inline
-      def setFADE(value: fade): Self = StObject.set(x, "FADE", value.asInstanceOf[js.Any])
+      inline def setFADE(value: fade): Self = StObject.set(x, "FADE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCALE(value: scale): Self = StObject.set(x, "SCALE", value.asInstanceOf[js.Any])
+      inline def setSCALE(value: scale): Self = StObject.set(x, "SCALE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -528,23 +456,18 @@ object mod {
   }
   object Types_ {
     
-    @scala.inline
-    def apply(): Types_ = {
+    inline def apply(): Types_ = {
       val __obj = js.Dynamic.literal(ERROR = "error", INFO = "info", SUCCESS = "success")
       __obj.asInstanceOf[Types_]
     }
     
-    @scala.inline
-    implicit class Types_MutableBuilder[Self <: Types_] (val x: Self) extends AnyVal {
+    extension [Self <: Types_](x: Self) {
       
-      @scala.inline
-      def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: info): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: info): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUCCESS(value: success): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
+      inline def setSUCCESS(value: success): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
     }
   }
 }

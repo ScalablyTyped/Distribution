@@ -34,37 +34,27 @@ trait LighteningContrastLevel extends StObject {
 }
 object LighteningContrastLevel {
   
-  @scala.inline
-  def apply(): LighteningContrastLevel = {
+  inline def apply(): LighteningContrastLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LighteningContrastLevel]
   }
   
-  @scala.inline
-  implicit class LighteningContrastLevelMutableBuilder[Self <: LighteningContrastLevel] (val x: Self) extends AnyVal {
+  extension [Self <: LighteningContrastLevel](x: Self) {
     
-    @scala.inline
-    def setLighteningContrastLevel(value: Double): Self = StObject.set(x, "lighteningContrastLevel", value.asInstanceOf[js.Any])
+    inline def setLighteningContrastLevel(value: Double): Self = StObject.set(x, "lighteningContrastLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighteningContrastLevelUndefined: Self = StObject.set(x, "lighteningContrastLevel", js.undefined)
+    inline def setLighteningContrastLevelUndefined: Self = StObject.set(x, "lighteningContrastLevel", js.undefined)
     
-    @scala.inline
-    def setLighteningLevel(value: Double): Self = StObject.set(x, "lighteningLevel", value.asInstanceOf[js.Any])
+    inline def setLighteningLevel(value: Double): Self = StObject.set(x, "lighteningLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighteningLevelUndefined: Self = StObject.set(x, "lighteningLevel", js.undefined)
+    inline def setLighteningLevelUndefined: Self = StObject.set(x, "lighteningLevel", js.undefined)
     
-    @scala.inline
-    def setRednessLevel(value: Double): Self = StObject.set(x, "rednessLevel", value.asInstanceOf[js.Any])
+    inline def setRednessLevel(value: Double): Self = StObject.set(x, "rednessLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRednessLevelUndefined: Self = StObject.set(x, "rednessLevel", js.undefined)
+    inline def setRednessLevelUndefined: Self = StObject.set(x, "rednessLevel", js.undefined)
     
-    @scala.inline
-    def setSmoothnessLevel(value: Double): Self = StObject.set(x, "smoothnessLevel", value.asInstanceOf[js.Any])
+    inline def setSmoothnessLevel(value: Double): Self = StObject.set(x, "smoothnessLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothnessLevelUndefined: Self = StObject.set(x, "smoothnessLevel", js.undefined)
+    inline def setSmoothnessLevelUndefined: Self = StObject.set(x, "smoothnessLevel", js.undefined)
   }
 }

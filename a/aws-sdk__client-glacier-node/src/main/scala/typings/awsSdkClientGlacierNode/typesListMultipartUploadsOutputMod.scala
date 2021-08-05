@@ -31,32 +31,24 @@ object typesListMultipartUploadsOutputMod {
   }
   object ListMultipartUploadsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListMultipartUploadsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListMultipartUploadsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListMultipartUploadsOutput]
     }
     
-    @scala.inline
-    implicit class ListMultipartUploadsOutputMutableBuilder[Self <: ListMultipartUploadsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListMultipartUploadsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+      inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
       
-      @scala.inline
-      def setUploadsList(value: js.Array[UnmarshalledUploadListElement]): Self = StObject.set(x, "UploadsList", value.asInstanceOf[js.Any])
+      inline def setUploadsList(value: js.Array[UnmarshalledUploadListElement]): Self = StObject.set(x, "UploadsList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadsListUndefined: Self = StObject.set(x, "UploadsList", js.undefined)
+      inline def setUploadsListUndefined: Self = StObject.set(x, "UploadsList", js.undefined)
       
-      @scala.inline
-      def setUploadsListVarargs(value: UnmarshalledUploadListElement*): Self = StObject.set(x, "UploadsList", js.Array(value :_*))
+      inline def setUploadsListVarargs(value: UnmarshalledUploadListElement*): Self = StObject.set(x, "UploadsList", js.Array(value :_*))
     }
   }
 }

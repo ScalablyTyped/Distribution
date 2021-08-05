@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: String, callback: ExifCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, callback: ExifCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("exif", JSImport.Namespace)
   @js.native
@@ -54,8 +53,7 @@ object mod {
   }
   object ExifData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exif: ApertureValue,
       gps: GPSAltitude,
       image: Copyright,
@@ -67,26 +65,19 @@ object mod {
       __obj.asInstanceOf[ExifData]
     }
     
-    @scala.inline
-    implicit class ExifDataMutableBuilder[Self <: ExifData] (val x: Self) extends AnyVal {
+    extension [Self <: ExifData](x: Self) {
       
-      @scala.inline
-      def setExif(value: ApertureValue): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
+      inline def setExif(value: ApertureValue): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGps(value: GPSAltitude): Self = StObject.set(x, "gps", value.asInstanceOf[js.Any])
+      inline def setGps(value: GPSAltitude): Self = StObject.set(x, "gps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: Copyright): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Copyright): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteroperability(value: InteropIndex): Self = StObject.set(x, "interoperability", value.asInstanceOf[js.Any])
+      inline def setInteroperability(value: InteropIndex): Self = StObject.set(x, "interoperability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMakernote(value: AutoBracketing): Self = StObject.set(x, "makernote", value.asInstanceOf[js.Any])
+      inline def setMakernote(value: AutoBracketing): Self = StObject.set(x, "makernote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: Compression): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: Compression): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,104 +125,72 @@ object mod {
   }
   object ExifOptions {
     
-    @scala.inline
-    def apply(): ExifOptions = {
+    inline def apply(): ExifOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExifOptions]
     }
     
-    @scala.inline
-    implicit class ExifOptionsMutableBuilder[Self <: ExifOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExifOptions](x: Self) {
       
-      @scala.inline
-      def setAgfaMaxEntries(value: Double): Self = StObject.set(x, "agfaMaxEntries", value.asInstanceOf[js.Any])
+      inline def setAgfaMaxEntries(value: Double): Self = StObject.set(x, "agfaMaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgfaMaxEntriesUndefined: Self = StObject.set(x, "agfaMaxEntries", js.undefined)
+      inline def setAgfaMaxEntriesUndefined: Self = StObject.set(x, "agfaMaxEntries", js.undefined)
       
-      @scala.inline
-      def setEpsonMaxEntries(value: Double): Self = StObject.set(x, "epsonMaxEntries", value.asInstanceOf[js.Any])
+      inline def setEpsonMaxEntries(value: Double): Self = StObject.set(x, "epsonMaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpsonMaxEntriesUndefined: Self = StObject.set(x, "epsonMaxEntries", js.undefined)
+      inline def setEpsonMaxEntriesUndefined: Self = StObject.set(x, "epsonMaxEntries", js.undefined)
       
-      @scala.inline
-      def setFixThumbnailOffset(value: Boolean): Self = StObject.set(x, "fixThumbnailOffset", value.asInstanceOf[js.Any])
+      inline def setFixThumbnailOffset(value: Boolean): Self = StObject.set(x, "fixThumbnailOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixThumbnailOffsetUndefined: Self = StObject.set(x, "fixThumbnailOffset", js.undefined)
+      inline def setFixThumbnailOffsetUndefined: Self = StObject.set(x, "fixThumbnailOffset", js.undefined)
       
-      @scala.inline
-      def setFujifilmMaxEntries(value: Double): Self = StObject.set(x, "fujifilmMaxEntries", value.asInstanceOf[js.Any])
+      inline def setFujifilmMaxEntries(value: Double): Self = StObject.set(x, "fujifilmMaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFujifilmMaxEntriesUndefined: Self = StObject.set(x, "fujifilmMaxEntries", js.undefined)
+      inline def setFujifilmMaxEntriesUndefined: Self = StObject.set(x, "fujifilmMaxEntries", js.undefined)
       
-      @scala.inline
-      def setIfd0MaxEntries(value: Double): Self = StObject.set(x, "ifd0MaxEntries", value.asInstanceOf[js.Any])
+      inline def setIfd0MaxEntries(value: Double): Self = StObject.set(x, "ifd0MaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfd0MaxEntriesUndefined: Self = StObject.set(x, "ifd0MaxEntries", js.undefined)
+      inline def setIfd0MaxEntriesUndefined: Self = StObject.set(x, "ifd0MaxEntries", js.undefined)
       
-      @scala.inline
-      def setIfd1MaxEntries(value: Double): Self = StObject.set(x, "ifd1MaxEntries", value.asInstanceOf[js.Any])
+      inline def setIfd1MaxEntries(value: Double): Self = StObject.set(x, "ifd1MaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfd1MaxEntriesUndefined: Self = StObject.set(x, "ifd1MaxEntries", js.undefined)
+      inline def setIfd1MaxEntriesUndefined: Self = StObject.set(x, "ifd1MaxEntries", js.undefined)
       
-      @scala.inline
-      def setImage(value: String | Buffer): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String | Buffer): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
+      inline def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
+      inline def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
       
-      @scala.inline
-      def setMaxGpsEntries(value: Double): Self = StObject.set(x, "maxGpsEntries", value.asInstanceOf[js.Any])
+      inline def setMaxGpsEntries(value: Double): Self = StObject.set(x, "maxGpsEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxGpsEntriesUndefined: Self = StObject.set(x, "maxGpsEntries", js.undefined)
+      inline def setMaxGpsEntriesUndefined: Self = StObject.set(x, "maxGpsEntries", js.undefined)
       
-      @scala.inline
-      def setMaxInteroperabilityEntries(value: Double): Self = StObject.set(x, "maxInteroperabilityEntries", value.asInstanceOf[js.Any])
+      inline def setMaxInteroperabilityEntries(value: Double): Self = StObject.set(x, "maxInteroperabilityEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInteroperabilityEntriesUndefined: Self = StObject.set(x, "maxInteroperabilityEntries", js.undefined)
+      inline def setMaxInteroperabilityEntriesUndefined: Self = StObject.set(x, "maxInteroperabilityEntries", js.undefined)
       
-      @scala.inline
-      def setNoPadding(value: Boolean): Self = StObject.set(x, "noPadding", value.asInstanceOf[js.Any])
+      inline def setNoPadding(value: Boolean): Self = StObject.set(x, "noPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoPaddingUndefined: Self = StObject.set(x, "noPadding", js.undefined)
+      inline def setNoPaddingUndefined: Self = StObject.set(x, "noPadding", js.undefined)
       
-      @scala.inline
-      def setOlympusMaxEntries(value: Double): Self = StObject.set(x, "olympusMaxEntries", value.asInstanceOf[js.Any])
+      inline def setOlympusMaxEntries(value: Double): Self = StObject.set(x, "olympusMaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOlympusMaxEntriesUndefined: Self = StObject.set(x, "olympusMaxEntries", js.undefined)
+      inline def setOlympusMaxEntriesUndefined: Self = StObject.set(x, "olympusMaxEntries", js.undefined)
       
-      @scala.inline
-      def setPanasonicMaxEntries(value: Double): Self = StObject.set(x, "panasonicMaxEntries", value.asInstanceOf[js.Any])
+      inline def setPanasonicMaxEntries(value: Double): Self = StObject.set(x, "panasonicMaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanasonicMaxEntriesUndefined: Self = StObject.set(x, "panasonicMaxEntries", js.undefined)
+      inline def setPanasonicMaxEntriesUndefined: Self = StObject.set(x, "panasonicMaxEntries", js.undefined)
       
-      @scala.inline
-      def setSanyoMaxEntries(value: Double): Self = StObject.set(x, "sanyoMaxEntries", value.asInstanceOf[js.Any])
+      inline def setSanyoMaxEntries(value: Double): Self = StObject.set(x, "sanyoMaxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanyoMaxEntriesUndefined: Self = StObject.set(x, "sanyoMaxEntries", js.undefined)
+      inline def setSanyoMaxEntriesUndefined: Self = StObject.set(x, "sanyoMaxEntries", js.undefined)
       
-      @scala.inline
-      def setTiffOffsets(value: Double): Self = StObject.set(x, "tiffOffsets", value.asInstanceOf[js.Any])
+      inline def setTiffOffsets(value: Double): Self = StObject.set(x, "tiffOffsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiffOffsetsUndefined: Self = StObject.set(x, "tiffOffsets", js.undefined)
+      inline def setTiffOffsetsUndefined: Self = StObject.set(x, "tiffOffsets", js.undefined)
     }
   }
 }

@@ -11,19 +11,15 @@ trait SubmitConfigSourceResponse extends StObject {
 }
 object SubmitConfigSourceResponse {
   
-  @scala.inline
-  def apply(): SubmitConfigSourceResponse = {
+  inline def apply(): SubmitConfigSourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubmitConfigSourceResponse]
   }
   
-  @scala.inline
-  implicit class SubmitConfigSourceResponseMutableBuilder[Self <: SubmitConfigSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitConfigSourceResponse](x: Self) {
     
-    @scala.inline
-    def setServiceConfig(value: Service): Self = StObject.set(x, "serviceConfig", value.asInstanceOf[js.Any])
+    inline def setServiceConfig(value: Service): Self = StObject.set(x, "serviceConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigUndefined: Self = StObject.set(x, "serviceConfig", js.undefined)
+    inline def setServiceConfigUndefined: Self = StObject.set(x, "serviceConfig", js.undefined)
   }
 }

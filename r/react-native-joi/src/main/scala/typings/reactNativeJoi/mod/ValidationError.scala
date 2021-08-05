@@ -18,8 +18,7 @@ trait ValidationError
 }
 object ValidationError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _object: js.Any,
     annotate: () => String,
     details: js.Array[ValidationErrorItem],
@@ -31,19 +30,14 @@ object ValidationError {
     __obj.asInstanceOf[ValidationError]
   }
   
-  @scala.inline
-  implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationError](x: Self) {
     
-    @scala.inline
-    def setAnnotate(value: () => String): Self = StObject.set(x, "annotate", js.Any.fromFunction0(value))
+    inline def setAnnotate(value: () => String): Self = StObject.set(x, "annotate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetails(value: js.Array[ValidationErrorItem]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[ValidationErrorItem]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsVarargs(value: ValidationErrorItem*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ValidationErrorItem*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def set_object(value: js.Any): Self = StObject.set(x, "_object", value.asInstanceOf[js.Any])
+    inline def set_object(value: js.Any): Self = StObject.set(x, "_object", value.asInstanceOf[js.Any])
   }
 }

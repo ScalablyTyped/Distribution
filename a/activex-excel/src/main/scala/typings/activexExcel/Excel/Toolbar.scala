@@ -14,7 +14,7 @@ trait Toolbar extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.Toolbar_typekey")
+  /* private */ @JSName("Excel.Toolbar_typekey")
   var ExcelDotToolbar_typekey: Toolbar
   
   var Height: Double
@@ -43,8 +43,7 @@ trait Toolbar extends StObject {
 }
 object Toolbar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BuiltIn: Boolean,
     Creator: XlCreator,
@@ -67,55 +66,38 @@ object Toolbar {
     __obj.asInstanceOf[Toolbar]
   }
   
-  @scala.inline
-  implicit class ToolbarMutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
+  extension [Self <: Toolbar](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
+    inline def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotToolbar_typekey(value: Toolbar): Self = StObject.set(x, "Excel.Toolbar_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotToolbar_typekey(value: Toolbar): Self = StObject.set(x, "Excel.Toolbar_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection(value: XlToolbarProtection): Self = StObject.set(x, "Protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: XlToolbarProtection): Self = StObject.set(x, "Protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToolbarButtons(value: ToolbarButtons): Self = StObject.set(x, "ToolbarButtons", value.asInstanceOf[js.Any])
+    inline def setToolbarButtons(value: ToolbarButtons): Self = StObject.set(x, "ToolbarButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

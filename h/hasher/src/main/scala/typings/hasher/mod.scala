@@ -157,8 +157,7 @@ object mod extends Shortcut {
     }
     object HasherStatic {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         VERSION: String,
         appendHash: String,
         changed: Signal[js.Any],
@@ -181,59 +180,41 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HasherStatic]
       }
       
-      @scala.inline
-      implicit class HasherStaticMutableBuilder[Self <: HasherStatic] (val x: Self) extends AnyVal {
+      extension [Self <: HasherStatic](x: Self) {
         
-        @scala.inline
-        def setAppendHash(value: String): Self = StObject.set(x, "appendHash", value.asInstanceOf[js.Any])
+        inline def setAppendHash(value: String): Self = StObject.set(x, "appendHash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChanged(value: Signal[js.Any]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+        inline def setChanged(value: Signal[js.Any]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+        inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetBaseURL(value: () => String): Self = StObject.set(x, "getBaseURL", js.Any.fromFunction0(value))
+        inline def setGetBaseURL(value: () => String): Self = StObject.set(x, "getBaseURL", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetHash(value: () => String): Self = StObject.set(x, "getHash", js.Any.fromFunction0(value))
+        inline def setGetHash(value: () => String): Self = StObject.set(x, "getHash", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetHashAsArray(value: () => js.Array[String]): Self = StObject.set(x, "getHashAsArray", js.Any.fromFunction0(value))
+        inline def setGetHashAsArray(value: () => js.Array[String]): Self = StObject.set(x, "getHashAsArray", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+        inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+        inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInitialized(value: Signal[js.Any]): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
+        inline def setInitialized(value: Signal[js.Any]): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+        inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setPrependHash(value: String): Self = StObject.set(x, "prependHash", value.asInstanceOf[js.Any])
+        inline def setPrependHash(value: String): Self = StObject.set(x, "prependHash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceHash(value: /* repeated */ String => Unit): Self = StObject.set(x, "replaceHash", js.Any.fromFunction1(value))
+        inline def setReplaceHash(value: /* repeated */ String => Unit): Self = StObject.set(x, "replaceHash", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+        inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetHash(value: /* repeated */ String => Unit): Self = StObject.set(x, "setHash", js.Any.fromFunction1(value))
+        inline def setSetHash(value: /* repeated */ String => Unit): Self = StObject.set(x, "setHash", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+        inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStopped(value: Signal[js.Any]): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+        inline def setStopped(value: Signal[js.Any]): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
+        inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
       }
     }
   }

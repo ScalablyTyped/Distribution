@@ -11,16 +11,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(PushNotification: PushNotificationStatic): Window = {
+  inline def apply(PushNotification: PushNotificationStatic): Window = {
     val __obj = js.Dynamic.literal(PushNotification = PushNotification.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setPushNotification(value: PushNotificationStatic): Self = StObject.set(x, "PushNotification", value.asInstanceOf[js.Any])
+    inline def setPushNotification(value: PushNotificationStatic): Self = StObject.set(x, "PushNotification", value.asInstanceOf[js.Any])
   }
 }

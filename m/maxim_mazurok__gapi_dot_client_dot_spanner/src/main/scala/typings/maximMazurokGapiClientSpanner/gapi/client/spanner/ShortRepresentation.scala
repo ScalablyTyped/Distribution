@@ -22,29 +22,23 @@ trait ShortRepresentation extends StObject {
 }
 object ShortRepresentation {
   
-  @scala.inline
-  def apply(): ShortRepresentation = {
+  inline def apply(): ShortRepresentation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShortRepresentation]
   }
   
-  @scala.inline
-  implicit class ShortRepresentationMutableBuilder[Self <: ShortRepresentation] (val x: Self) extends AnyVal {
+  extension [Self <: ShortRepresentation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setSubqueries(
+    inline def setSubqueries(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ShortRepresentation & TopLevel[js.Any]
     ): Self = StObject.set(x, "subqueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubqueriesUndefined: Self = StObject.set(x, "subqueries", js.undefined)
+    inline def setSubqueriesUndefined: Self = StObject.set(x, "subqueries", js.undefined)
   }
 }

@@ -23,34 +23,25 @@ trait DescribeOrganizationConfigRuleStatusesRequest extends StObject {
 }
 object DescribeOrganizationConfigRuleStatusesRequest {
   
-  @scala.inline
-  def apply(): DescribeOrganizationConfigRuleStatusesRequest = {
+  inline def apply(): DescribeOrganizationConfigRuleStatusesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrganizationConfigRuleStatusesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConfigRuleStatusesRequestMutableBuilder[Self <: DescribeOrganizationConfigRuleStatusesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConfigRuleStatusesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: CosmosPageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: CosmosPageLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRuleNames(value: OrganizationConfigRuleNames): Self = StObject.set(x, "OrganizationConfigRuleNames", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfigRuleNames(value: OrganizationConfigRuleNames): Self = StObject.set(x, "OrganizationConfigRuleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConfigRuleNamesUndefined: Self = StObject.set(x, "OrganizationConfigRuleNames", js.undefined)
+    inline def setOrganizationConfigRuleNamesUndefined: Self = StObject.set(x, "OrganizationConfigRuleNames", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "OrganizationConfigRuleNames", js.Array(value :_*))
+    inline def setOrganizationConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "OrganizationConfigRuleNames", js.Array(value :_*))
   }
 }

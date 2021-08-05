@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sudo-block"
-version := "3.0.0-7a2165"
+version := "3.0.0-49b6bc"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

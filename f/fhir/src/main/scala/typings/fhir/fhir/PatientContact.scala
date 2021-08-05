@@ -53,67 +53,47 @@ trait PatientContact
 }
 object PatientContact {
   
-  @scala.inline
-  def apply(): PatientContact = {
+  inline def apply(): PatientContact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatientContact]
   }
   
-  @scala.inline
-  implicit class PatientContactMutableBuilder[Self <: PatientContact] (val x: Self) extends AnyVal {
+  extension [Self <: PatientContact](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setGender(value: code): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: code): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
-    @scala.inline
-    def setName(value: HumanName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: HumanName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setRelationship(value: js.Array[CodeableConcept]): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    inline def setRelationship(value: js.Array[CodeableConcept]): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
+    inline def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
     
-    @scala.inline
-    def setRelationshipVarargs(value: CodeableConcept*): Self = StObject.set(x, "relationship", js.Array(value :_*))
+    inline def setRelationshipVarargs(value: CodeableConcept*): Self = StObject.set(x, "relationship", js.Array(value :_*))
     
-    @scala.inline
-    def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
+    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
+    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
     
-    @scala.inline
-    def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
+    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
     
-    @scala.inline
-    def set_gender(value: Element): Self = StObject.set(x, "_gender", value.asInstanceOf[js.Any])
+    inline def set_gender(value: Element): Self = StObject.set(x, "_gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_genderUndefined: Self = StObject.set(x, "_gender", js.undefined)
+    inline def set_genderUndefined: Self = StObject.set(x, "_gender", js.undefined)
   }
 }

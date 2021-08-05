@@ -24,25 +24,19 @@ trait SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest extends StObject {
 }
 object SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest = {
+  inline def apply(): SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2CreateStoredInfoTypeRequest](x: Self) {
     
-    @scala.inline
-    def setConfig(value: SchemaGooglePrivacyDlpV2StoredInfoTypeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaGooglePrivacyDlpV2StoredInfoTypeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setStoredInfoTypeId(value: String): Self = StObject.set(x, "storedInfoTypeId", value.asInstanceOf[js.Any])
+    inline def setStoredInfoTypeId(value: String): Self = StObject.set(x, "storedInfoTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredInfoTypeIdUndefined: Self = StObject.set(x, "storedInfoTypeId", js.undefined)
+    inline def setStoredInfoTypeIdUndefined: Self = StObject.set(x, "storedInfoTypeId", js.undefined)
   }
 }

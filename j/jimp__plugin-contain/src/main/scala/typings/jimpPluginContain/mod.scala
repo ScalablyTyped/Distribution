@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Contain = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Contain]
+  inline def default(): Contain = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Contain]
   
   @js.native
   trait Contain extends StObject {

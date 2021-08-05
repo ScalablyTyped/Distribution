@@ -18,40 +18,29 @@ trait LocalForageOptions
 }
 object LocalForageOptions {
   
-  @scala.inline
-  def apply(): LocalForageOptions = {
+  inline def apply(): LocalForageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalForageOptions]
   }
   
-  @scala.inline
-  implicit class LocalForageOptionsMutableBuilder[Self <: LocalForageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocalForageOptions](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDriver(value: String | js.Array[String]): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String | js.Array[String]): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
+    inline def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
     
-    @scala.inline
-    def setDriverVarargs(value: String*): Self = StObject.set(x, "driver", js.Array(value :_*))
+    inline def setDriverVarargs(value: String*): Self = StObject.set(x, "driver", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

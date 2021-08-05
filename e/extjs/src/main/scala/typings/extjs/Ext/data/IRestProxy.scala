@@ -17,25 +17,19 @@ trait IRestProxy
 }
 object IRestProxy {
   
-  @scala.inline
-  def apply(): IRestProxy = {
+  inline def apply(): IRestProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRestProxy]
   }
   
-  @scala.inline
-  implicit class IRestProxyMutableBuilder[Self <: IRestProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IRestProxy](x: Self) {
     
-    @scala.inline
-    def setAppendId(value: Boolean): Self = StObject.set(x, "appendId", value.asInstanceOf[js.Any])
+    inline def setAppendId(value: Boolean): Self = StObject.set(x, "appendId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendIdUndefined: Self = StObject.set(x, "appendId", js.undefined)
+    inline def setAppendIdUndefined: Self = StObject.set(x, "appendId", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

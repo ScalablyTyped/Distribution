@@ -13,19 +13,15 @@ trait RuntimeConfiguration extends StObject {
 }
 object RuntimeConfiguration {
   
-  @scala.inline
-  def apply(): RuntimeConfiguration = {
+  inline def apply(): RuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuntimeConfiguration]
   }
   
-  @scala.inline
-  implicit class RuntimeConfigurationMutableBuilder[Self <: RuntimeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeConfiguration](x: Self) {
     
-    @scala.inline
-    def setTelemetryConfiguration(value: TelemetryConfiguration): Self = StObject.set(x, "TelemetryConfiguration", value.asInstanceOf[js.Any])
+    inline def setTelemetryConfiguration(value: TelemetryConfiguration): Self = StObject.set(x, "TelemetryConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryConfigurationUndefined: Self = StObject.set(x, "TelemetryConfiguration", js.undefined)
+    inline def setTelemetryConfigurationUndefined: Self = StObject.set(x, "TelemetryConfiguration", js.undefined)
   }
 }

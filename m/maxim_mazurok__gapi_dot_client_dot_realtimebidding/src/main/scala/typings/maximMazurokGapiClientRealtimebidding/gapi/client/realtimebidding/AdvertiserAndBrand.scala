@@ -23,37 +23,27 @@ trait AdvertiserAndBrand extends StObject {
 }
 object AdvertiserAndBrand {
   
-  @scala.inline
-  def apply(): AdvertiserAndBrand = {
+  inline def apply(): AdvertiserAndBrand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserAndBrand]
   }
   
-  @scala.inline
-  implicit class AdvertiserAndBrandMutableBuilder[Self <: AdvertiserAndBrand] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserAndBrand](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
+    inline def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
+    inline def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
-    @scala.inline
-    def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
+    inline def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
+    inline def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
     
-    @scala.inline
-    def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
+    inline def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandNameUndefined: Self = StObject.set(x, "brandName", js.undefined)
+    inline def setBrandNameUndefined: Self = StObject.set(x, "brandName", js.undefined)
   }
 }

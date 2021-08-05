@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StyleSheetOrigin extends StObject
 object StyleSheetOrigin {
   
-  @scala.inline
-  def injected: typings.devtoolsProtocol.devtoolsProtocolStrings.injected = "injected".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.injected]
+  inline def injected: typings.devtoolsProtocol.devtoolsProtocolStrings.injected = "injected".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.injected]
   
-  @scala.inline
-  def inspector: typings.devtoolsProtocol.devtoolsProtocolStrings.inspector = "inspector".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.inspector]
+  inline def inspector: typings.devtoolsProtocol.devtoolsProtocolStrings.inspector = "inspector".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.inspector]
   
-  @scala.inline
-  def regular: typings.devtoolsProtocol.devtoolsProtocolStrings.regular = "regular".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.regular]
+  inline def regular: typings.devtoolsProtocol.devtoolsProtocolStrings.regular = "regular".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.regular]
   
-  @scala.inline
-  def `user-agent`: typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent` = "user-agent".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent`]
+  inline def `user-agent`: typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent` = "user-agent".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`user-agent`]
 }

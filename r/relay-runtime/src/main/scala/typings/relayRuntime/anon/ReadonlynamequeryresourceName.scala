@@ -19,22 +19,17 @@ trait ReadonlynamequeryresourceName
 }
 object ReadonlynamequeryresourceName {
   
-  @scala.inline
-  def apply(profilerContext: js.Any, resourceID: Double): ReadonlynamequeryresourceName = {
+  inline def apply(profilerContext: js.Any, resourceID: Double): ReadonlynamequeryresourceName = {
     val __obj = js.Dynamic.literal(name = "queryresource.retain", profilerContext = profilerContext.asInstanceOf[js.Any], resourceID = resourceID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlynamequeryresourceName]
   }
   
-  @scala.inline
-  implicit class ReadonlynamequeryresourceNameMutableBuilder[Self <: ReadonlynamequeryresourceName] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlynamequeryresourceName](x: Self) {
     
-    @scala.inline
-    def setName(value: queryresourceDotretain): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: queryresourceDotretain): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilerContext(value: js.Any): Self = StObject.set(x, "profilerContext", value.asInstanceOf[js.Any])
+    inline def setProfilerContext(value: js.Any): Self = StObject.set(x, "profilerContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceID(value: Double): Self = StObject.set(x, "resourceID", value.asInstanceOf[js.Any])
+    inline def setResourceID(value: Double): Self = StObject.set(x, "resourceID", value.asInstanceOf[js.Any])
   }
 }

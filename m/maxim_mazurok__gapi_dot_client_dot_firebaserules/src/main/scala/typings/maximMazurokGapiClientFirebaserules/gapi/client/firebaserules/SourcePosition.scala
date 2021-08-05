@@ -23,43 +23,31 @@ trait SourcePosition extends StObject {
 }
 object SourcePosition {
   
-  @scala.inline
-  def apply(): SourcePosition = {
+  inline def apply(): SourcePosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourcePosition]
   }
   
-  @scala.inline
-  implicit class SourcePositionMutableBuilder[Self <: SourcePosition] (val x: Self) extends AnyVal {
+  extension [Self <: SourcePosition](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setCurrentOffset(value: Double): Self = StObject.set(x, "currentOffset", value.asInstanceOf[js.Any])
+    inline def setCurrentOffset(value: Double): Self = StObject.set(x, "currentOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentOffsetUndefined: Self = StObject.set(x, "currentOffset", js.undefined)
+    inline def setCurrentOffsetUndefined: Self = StObject.set(x, "currentOffset", js.undefined)
     
-    @scala.inline
-    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

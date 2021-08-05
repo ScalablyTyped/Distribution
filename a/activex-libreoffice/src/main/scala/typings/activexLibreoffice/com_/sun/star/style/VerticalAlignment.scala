@@ -17,14 +17,11 @@ trait VerticalAlignment extends StObject
 object VerticalAlignment {
   
   /** set the vertical alignment to the bottom margin from the container object. */
-  @scala.inline
-  def BOTTOM: `2` = 2.asInstanceOf[`2`]
+  inline def BOTTOM: `2` = 2.asInstanceOf[`2`]
   
   /** set the vertical alignment to the top margin from the container object. */
-  @scala.inline
-  def MIDDLE: `1` = 1.asInstanceOf[`1`]
+  inline def MIDDLE: `1` = 1.asInstanceOf[`1`]
   
   /** set the vertical alignment to the center between the top and bottom margins from the container object. */
-  @scala.inline
-  def TOP: `0` = 0.asInstanceOf[`0`]
+  inline def TOP: `0` = 0.asInstanceOf[`0`]
 }

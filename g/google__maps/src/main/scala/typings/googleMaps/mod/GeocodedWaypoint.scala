@@ -33,8 +33,7 @@ trait GeocodedWaypoint extends StObject {
 }
 object GeocodedWaypoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     geocoder_status: GeocodedWaypointStatus,
     partial_match: Boolean,
     place_id: String,
@@ -44,22 +43,16 @@ object GeocodedWaypoint {
     __obj.asInstanceOf[GeocodedWaypoint]
   }
   
-  @scala.inline
-  implicit class GeocodedWaypointMutableBuilder[Self <: GeocodedWaypoint] (val x: Self) extends AnyVal {
+  extension [Self <: GeocodedWaypoint](x: Self) {
     
-    @scala.inline
-    def setGeocoder_status(value: GeocodedWaypointStatus): Self = StObject.set(x, "geocoder_status", value.asInstanceOf[js.Any])
+    inline def setGeocoder_status(value: GeocodedWaypointStatus): Self = StObject.set(x, "geocoder_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
+    inline def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

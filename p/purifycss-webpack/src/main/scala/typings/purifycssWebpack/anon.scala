@@ -20,47 +20,34 @@ object anon {
   }
   object Info {
     
-    @scala.inline
-    def apply(): Info = {
+    inline def apply(): Info = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setInfo(value: Boolean): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Boolean): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String | Boolean): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String | Boolean): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setRejected(value: Boolean): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      inline def setRejected(value: Boolean): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectedUndefined: Self = StObject.set(x, "rejected", js.undefined)
+      inline def setRejectedUndefined: Self = StObject.set(x, "rejected", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
 }

@@ -36,8 +36,7 @@ trait XDefaultMethod
 }
 object XDefaultMethod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultMethodName: String,
     acquire: () => Unit,
     getDefaultMethodName: () => String,
@@ -48,13 +47,10 @@ object XDefaultMethod {
     __obj.asInstanceOf[XDefaultMethod]
   }
   
-  @scala.inline
-  implicit class XDefaultMethodMutableBuilder[Self <: XDefaultMethod] (val x: Self) extends AnyVal {
+  extension [Self <: XDefaultMethod](x: Self) {
     
-    @scala.inline
-    def setDefaultMethodName(value: String): Self = StObject.set(x, "DefaultMethodName", value.asInstanceOf[js.Any])
+    inline def setDefaultMethodName(value: String): Self = StObject.set(x, "DefaultMethodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultMethodName(value: () => String): Self = StObject.set(x, "getDefaultMethodName", js.Any.fromFunction0(value))
+    inline def setGetDefaultMethodName(value: () => String): Self = StObject.set(x, "getDefaultMethodName", js.Any.fromFunction0(value))
   }
 }

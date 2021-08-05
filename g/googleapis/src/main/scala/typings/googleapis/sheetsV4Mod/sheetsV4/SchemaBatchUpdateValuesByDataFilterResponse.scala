@@ -43,52 +43,37 @@ trait SchemaBatchUpdateValuesByDataFilterResponse extends StObject {
 }
 object SchemaBatchUpdateValuesByDataFilterResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchUpdateValuesByDataFilterResponse = {
+  inline def apply(): SchemaBatchUpdateValuesByDataFilterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchUpdateValuesByDataFilterResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchUpdateValuesByDataFilterResponseMutableBuilder[Self <: SchemaBatchUpdateValuesByDataFilterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchUpdateValuesByDataFilterResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[SchemaUpdateValuesByDataFilterResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[SchemaUpdateValuesByDataFilterResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: SchemaUpdateValuesByDataFilterResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaUpdateValuesByDataFilterResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
-    @scala.inline
-    def setTotalUpdatedCells(value: Double): Self = StObject.set(x, "totalUpdatedCells", value.asInstanceOf[js.Any])
+    inline def setTotalUpdatedCells(value: Double): Self = StObject.set(x, "totalUpdatedCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUpdatedCellsUndefined: Self = StObject.set(x, "totalUpdatedCells", js.undefined)
+    inline def setTotalUpdatedCellsUndefined: Self = StObject.set(x, "totalUpdatedCells", js.undefined)
     
-    @scala.inline
-    def setTotalUpdatedColumns(value: Double): Self = StObject.set(x, "totalUpdatedColumns", value.asInstanceOf[js.Any])
+    inline def setTotalUpdatedColumns(value: Double): Self = StObject.set(x, "totalUpdatedColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUpdatedColumnsUndefined: Self = StObject.set(x, "totalUpdatedColumns", js.undefined)
+    inline def setTotalUpdatedColumnsUndefined: Self = StObject.set(x, "totalUpdatedColumns", js.undefined)
     
-    @scala.inline
-    def setTotalUpdatedRows(value: Double): Self = StObject.set(x, "totalUpdatedRows", value.asInstanceOf[js.Any])
+    inline def setTotalUpdatedRows(value: Double): Self = StObject.set(x, "totalUpdatedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUpdatedRowsUndefined: Self = StObject.set(x, "totalUpdatedRows", js.undefined)
+    inline def setTotalUpdatedRowsUndefined: Self = StObject.set(x, "totalUpdatedRows", js.undefined)
     
-    @scala.inline
-    def setTotalUpdatedSheets(value: Double): Self = StObject.set(x, "totalUpdatedSheets", value.asInstanceOf[js.Any])
+    inline def setTotalUpdatedSheets(value: Double): Self = StObject.set(x, "totalUpdatedSheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUpdatedSheetsUndefined: Self = StObject.set(x, "totalUpdatedSheets", js.undefined)
+    inline def setTotalUpdatedSheetsUndefined: Self = StObject.set(x, "totalUpdatedSheets", js.undefined)
   }
 }

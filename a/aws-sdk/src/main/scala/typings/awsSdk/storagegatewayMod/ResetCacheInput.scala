@@ -10,16 +10,13 @@ trait ResetCacheInput extends StObject {
 }
 object ResetCacheInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): ResetCacheInput = {
+  inline def apply(GatewayARN: GatewayARN): ResetCacheInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetCacheInput]
   }
   
-  @scala.inline
-  implicit class ResetCacheInputMutableBuilder[Self <: ResetCacheInput] (val x: Self) extends AnyVal {
+  extension [Self <: ResetCacheInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

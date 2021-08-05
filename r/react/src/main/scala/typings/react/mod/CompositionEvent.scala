@@ -13,8 +13,7 @@ trait CompositionEvent[T]
 }
 object CompositionEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: EventTarget & T,
@@ -37,10 +36,8 @@ object CompositionEvent {
     __obj.asInstanceOf[CompositionEvent[T]]
   }
   
-  @scala.inline
-  implicit class CompositionEventMutableBuilder[Self <: CompositionEvent[?], T] (val x: Self & CompositionEvent[T]) extends AnyVal {
+  extension [Self <: CompositionEvent[?], T](x: Self & CompositionEvent[T]) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

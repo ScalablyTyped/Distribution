@@ -35,43 +35,31 @@ trait FindInPageOptions extends StObject {
 }
 object FindInPageOptions {
   
-  @scala.inline
-  def apply(): FindInPageOptions = {
+  inline def apply(): FindInPageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindInPageOptions]
   }
   
-  @scala.inline
-  implicit class FindInPageOptionsMutableBuilder[Self <: FindInPageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FindInPageOptions](x: Self) {
     
-    @scala.inline
-    def setFindNext(value: Boolean): Self = StObject.set(x, "findNext", value.asInstanceOf[js.Any])
+    inline def setFindNext(value: Boolean): Self = StObject.set(x, "findNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindNextUndefined: Self = StObject.set(x, "findNext", js.undefined)
+    inline def setFindNextUndefined: Self = StObject.set(x, "findNext", js.undefined)
     
-    @scala.inline
-    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
-    @scala.inline
-    def setMedialCapitalAsWordStart(value: Boolean): Self = StObject.set(x, "medialCapitalAsWordStart", value.asInstanceOf[js.Any])
+    inline def setMedialCapitalAsWordStart(value: Boolean): Self = StObject.set(x, "medialCapitalAsWordStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedialCapitalAsWordStartUndefined: Self = StObject.set(x, "medialCapitalAsWordStart", js.undefined)
+    inline def setMedialCapitalAsWordStartUndefined: Self = StObject.set(x, "medialCapitalAsWordStart", js.undefined)
     
-    @scala.inline
-    def setWordStart(value: Boolean): Self = StObject.set(x, "wordStart", value.asInstanceOf[js.Any])
+    inline def setWordStart(value: Boolean): Self = StObject.set(x, "wordStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordStartUndefined: Self = StObject.set(x, "wordStart", js.undefined)
+    inline def setWordStartUndefined: Self = StObject.set(x, "wordStart", js.undefined)
   }
 }

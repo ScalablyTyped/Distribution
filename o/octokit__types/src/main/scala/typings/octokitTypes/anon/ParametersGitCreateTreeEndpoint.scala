@@ -18,8 +18,7 @@ trait ParametersGitCreateTreeEndpoint extends StObject {
 }
 object ParametersGitCreateTreeEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: GitCreateTreeEndpoint,
     request: GitCreateTreeRequestOptions,
     response: OctokitResponse[GitCreateTreeResponseData]
@@ -28,16 +27,12 @@ object ParametersGitCreateTreeEndpoint {
     __obj.asInstanceOf[ParametersGitCreateTreeEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersGitCreateTreeEndpointMutableBuilder[Self <: ParametersGitCreateTreeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersGitCreateTreeEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: GitCreateTreeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: GitCreateTreeEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: GitCreateTreeRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: GitCreateTreeRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitCreateTreeResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitCreateTreeResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

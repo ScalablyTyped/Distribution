@@ -15,10 +15,8 @@ object mod {
     * @param options Settings for the hyphenation function.
     * @returns Depending on the options a synchronous or asynchronous hyphenation function.
     */
-  @scala.inline
-  def apply(patternsDefinition: ReadonlyPatternsDefinitio): HyphenationFunctionAsync | HyphenationFunctionSync = ^.asInstanceOf[js.Dynamic].apply(patternsDefinition.asInstanceOf[js.Any]).asInstanceOf[HyphenationFunctionAsync | HyphenationFunctionSync]
-  @scala.inline
-  def apply(patternsDefinition: ReadonlyPatternsDefinitio, options: ReadonlyFactoryOptions): HyphenationFunctionAsync | HyphenationFunctionSync = (^.asInstanceOf[js.Dynamic].apply(patternsDefinition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HyphenationFunctionAsync | HyphenationFunctionSync]
+  inline def apply(patternsDefinition: ReadonlyPatternsDefinitio): HyphenationFunctionAsync | HyphenationFunctionSync = ^.asInstanceOf[js.Dynamic].apply(patternsDefinition.asInstanceOf[js.Any]).asInstanceOf[HyphenationFunctionAsync | HyphenationFunctionSync]
+  inline def apply(patternsDefinition: ReadonlyPatternsDefinitio, options: ReadonlyFactoryOptions): HyphenationFunctionAsync | HyphenationFunctionSync = (^.asInstanceOf[js.Dynamic].apply(patternsDefinition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HyphenationFunctionAsync | HyphenationFunctionSync]
   
   @JSImport("hyphen", JSImport.Namespace)
   @js.native
@@ -61,44 +59,32 @@ object mod {
   }
   object FactoryOptions {
     
-    @scala.inline
-    def apply(): FactoryOptions = {
+    inline def apply(): FactoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FactoryOptions]
     }
     
-    @scala.inline
-    implicit class FactoryOptionsMutableBuilder[Self <: FactoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FactoryOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
+      inline def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
+      inline def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
       
-      @scala.inline
-      def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
+      inline def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
+      inline def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
     }
   }
   
@@ -147,32 +133,24 @@ object mod {
   }
   object HyphenationOptions {
     
-    @scala.inline
-    def apply(): HyphenationOptions = {
+    inline def apply(): HyphenationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HyphenationOptions]
     }
     
-    @scala.inline
-    implicit class HyphenationOptionsMutableBuilder[Self <: HyphenationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HyphenationOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
+      inline def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
+      inline def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
       
-      @scala.inline
-      def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
+      inline def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
+      inline def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
     }
   }
   
@@ -189,26 +167,20 @@ object mod {
   }
   object PatternsDefinition {
     
-    @scala.inline
-    def apply(exceptions: js.Array[String], patterns: js.Array[String]): PatternsDefinition = {
+    inline def apply(exceptions: js.Array[String], patterns: js.Array[String]): PatternsDefinition = {
       val __obj = js.Dynamic.literal(exceptions = exceptions.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[PatternsDefinition]
     }
     
-    @scala.inline
-    implicit class PatternsDefinitionMutableBuilder[Self <: PatternsDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: PatternsDefinition](x: Self) {
       
-      @scala.inline
-      def setExceptions(value: js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+      inline def setExceptions(value: js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+      inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
       
-      @scala.inline
-      def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     }
   }
 }

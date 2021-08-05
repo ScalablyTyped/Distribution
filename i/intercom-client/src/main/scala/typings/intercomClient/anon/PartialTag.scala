@@ -16,31 +16,23 @@ trait PartialTag extends StObject {
 }
 object PartialTag {
   
-  @scala.inline
-  def apply(): PartialTag = {
+  inline def apply(): PartialTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTag]
   }
   
-  @scala.inline
-  implicit class PartialTagMutableBuilder[Self <: PartialTag] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTag](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: tag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

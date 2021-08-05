@@ -18,28 +18,21 @@ trait ListPublicKeysResponse extends StObject {
 }
 object ListPublicKeysResponse {
   
-  @scala.inline
-  def apply(): ListPublicKeysResponse = {
+  inline def apply(): ListPublicKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPublicKeysResponse]
   }
   
-  @scala.inline
-  implicit class ListPublicKeysResponseMutableBuilder[Self <: ListPublicKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPublicKeysResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPublicKeyList(value: PublicKeyList): Self = StObject.set(x, "PublicKeyList", value.asInstanceOf[js.Any])
+    inline def setPublicKeyList(value: PublicKeyList): Self = StObject.set(x, "PublicKeyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyListUndefined: Self = StObject.set(x, "PublicKeyList", js.undefined)
+    inline def setPublicKeyListUndefined: Self = StObject.set(x, "PublicKeyList", js.undefined)
     
-    @scala.inline
-    def setPublicKeyListVarargs(value: PublicKey*): Self = StObject.set(x, "PublicKeyList", js.Array(value :_*))
+    inline def setPublicKeyListVarargs(value: PublicKey*): Self = StObject.set(x, "PublicKeyList", js.Array(value :_*))
   }
 }

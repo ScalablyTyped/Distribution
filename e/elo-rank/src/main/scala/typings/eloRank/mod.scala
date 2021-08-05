@@ -38,8 +38,7 @@ object mod {
   }
   object EloRank {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getExpected: (Double, Double) => Double,
       getKFactor: () => Double,
       setKFactor: Double => Unit,
@@ -49,20 +48,15 @@ object mod {
       __obj.asInstanceOf[EloRank]
     }
     
-    @scala.inline
-    implicit class EloRankMutableBuilder[Self <: EloRank] (val x: Self) extends AnyVal {
+    extension [Self <: EloRank](x: Self) {
       
-      @scala.inline
-      def setGetExpected(value: (Double, Double) => Double): Self = StObject.set(x, "getExpected", js.Any.fromFunction2(value))
+      inline def setGetExpected(value: (Double, Double) => Double): Self = StObject.set(x, "getExpected", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetKFactor(value: () => Double): Self = StObject.set(x, "getKFactor", js.Any.fromFunction0(value))
+      inline def setGetKFactor(value: () => Double): Self = StObject.set(x, "getKFactor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetKFactor(value: Double => Unit): Self = StObject.set(x, "setKFactor", js.Any.fromFunction1(value))
+      inline def setSetKFactor(value: Double => Unit): Self = StObject.set(x, "setKFactor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateRating(value: (Double, Double, Double) => Double): Self = StObject.set(x, "updateRating", js.Any.fromFunction3(value))
+      inline def setUpdateRating(value: (Double, Double, Double) => Double): Self = StObject.set(x, "updateRating", js.Any.fromFunction3(value))
     }
   }
 }

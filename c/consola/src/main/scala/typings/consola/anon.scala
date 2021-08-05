@@ -36,8 +36,7 @@ object anon {
   }
   object typeinlogTypeConsolaLogOb {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       debug: ConsolaLogObject,
       error: ConsolaLogObject,
       fatal: ConsolaLogObject,
@@ -55,44 +54,31 @@ object anon {
       __obj.asInstanceOf[typeinlogTypeConsolaLogOb]
     }
     
-    @scala.inline
-    implicit class typeinlogTypeConsolaLogObMutableBuilder[Self <: typeinlogTypeConsolaLogOb] (val x: Self) extends AnyVal {
+    extension [Self <: typeinlogTypeConsolaLogOb](x: Self) {
       
-      @scala.inline
-      def setDebug(value: ConsolaLogObject): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: ConsolaLogObject): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: ConsolaLogObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ConsolaLogObject): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatal(value: ConsolaLogObject): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: ConsolaLogObject): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: ConsolaLogObject): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: ConsolaLogObject): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ConsolaLogObject): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ConsolaLogObject): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReady(value: ConsolaLogObject): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: ConsolaLogObject): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilent(value: ConsolaLogObject): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: ConsolaLogObject): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: ConsolaLogObject): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: ConsolaLogObject): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: ConsolaLogObject): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: ConsolaLogObject): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: ConsolaLogObject): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: ConsolaLogObject): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: ConsolaLogObject): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: ConsolaLogObject): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: ConsolaLogObject): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: ConsolaLogObject): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,8 +19,7 @@ trait String
 }
 object String {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -44,19 +43,14 @@ object String {
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setPrefixed(value: scala.Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
+    inline def setPrefixed(value: scala.Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuote(value: java.lang.String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: java.lang.String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

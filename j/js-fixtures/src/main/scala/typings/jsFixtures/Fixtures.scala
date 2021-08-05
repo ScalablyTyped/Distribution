@@ -33,8 +33,7 @@ trait Fixtures extends StObject {
 }
 object Fixtures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendLoad: /* repeated */ String => Unit,
     appendSet: String => Unit,
     body: () => String,
@@ -52,43 +51,30 @@ object Fixtures {
     __obj.asInstanceOf[Fixtures]
   }
   
-  @scala.inline
-  implicit class FixturesMutableBuilder[Self <: Fixtures] (val x: Self) extends AnyVal {
+  extension [Self <: Fixtures](x: Self) {
     
-    @scala.inline
-    def setAppendLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "appendLoad", js.Any.fromFunction1(value))
+    inline def setAppendLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "appendLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendSet(value: String => Unit): Self = StObject.set(x, "appendSet", js.Any.fromFunction1(value))
+    inline def setAppendSet(value: String => Unit): Self = StObject.set(x, "appendSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBody(value: () => String): Self = StObject.set(x, "body", js.Any.fromFunction0(value))
+    inline def setBody(value: () => String): Self = StObject.set(x, "body", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCleanUp(value: () => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction0(value))
+    inline def setCleanUp(value: () => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
+    inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreload(value: /* repeated */ String => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
+    inline def setPreload(value: /* repeated */ String => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRead(value: /* repeated */ String => String): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: /* repeated */ String => String): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: String => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindow(value: () => Window): Self = StObject.set(x, "window", js.Any.fromFunction0(value))
+    inline def setWindow(value: () => Window): Self = StObject.set(x, "window", js.Any.fromFunction0(value))
   }
 }

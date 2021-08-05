@@ -11,41 +11,35 @@ object emberRunloopStrings {
   sealed trait actions
     extends StObject
        with EmberRunQueues
-  @scala.inline
-  def actions: actions = "actions".asInstanceOf[actions]
+  inline def actions: actions = "actions".asInstanceOf[actions]
   
   @js.native
   sealed trait afterRender
     extends StObject
        with EmberRunQueues
-  @scala.inline
-  def afterRender: afterRender = "afterRender".asInstanceOf[afterRender]
+  inline def afterRender: afterRender = "afterRender".asInstanceOf[afterRender]
   
   @js.native
   sealed trait destroy
     extends StObject
        with EmberRunQueues
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait render
     extends StObject
        with EmberRunQueues
-  @scala.inline
-  def render: render = "render".asInstanceOf[render]
+  inline def render: render = "render".asInstanceOf[render]
   
   @js.native
   sealed trait routerTransitions
     extends StObject
        with EmberRunQueues
-  @scala.inline
-  def routerTransitions: routerTransitions = "routerTransitions".asInstanceOf[routerTransitions]
+  inline def routerTransitions: routerTransitions = "routerTransitions".asInstanceOf[routerTransitions]
   
   @js.native
   sealed trait sync
     extends StObject
        with EmberRunQueues
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
+  inline def sync: sync = "sync".asInstanceOf[sync]
 }

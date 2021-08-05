@@ -21,20 +21,17 @@ object FormLocation {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormLocation.Content")
   @js.native
   def Content: typings.mendixmodelsdk.pagesMod.pages.FormLocation = js.native
-  @scala.inline
-  def Content_=(x: typings.mendixmodelsdk.pagesMod.pages.FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: typings.mendixmodelsdk.pagesMod.pages.FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormLocation.ModalPopup")
   @js.native
   def ModalPopup: typings.mendixmodelsdk.pagesMod.pages.FormLocation = js.native
-  @scala.inline
-  def ModalPopup_=(x: typings.mendixmodelsdk.pagesMod.pages.FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModalPopup")(x.asInstanceOf[js.Any])
+  inline def ModalPopup_=(x: typings.mendixmodelsdk.pagesMod.pages.FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModalPopup")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.FormLocation.Popup")
   @js.native
   def Popup: typings.mendixmodelsdk.pagesMod.pages.FormLocation = js.native
-  @scala.inline
-  def Popup_=(x: typings.mendixmodelsdk.pagesMod.pages.FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Popup")(x.asInstanceOf[js.Any])
+  inline def Popup_=(x: typings.mendixmodelsdk.pagesMod.pages.FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Popup")(x.asInstanceOf[js.Any])
 }

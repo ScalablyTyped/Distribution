@@ -19,16 +19,12 @@ object FilenameDisplayFormat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FULL: `0` = 0.asInstanceOf[`0`]
+    inline def FULL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NAME: `2` = 2.asInstanceOf[`2`]
+    inline def NAME: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NAME_AND_EXT: `3` = 3.asInstanceOf[`3`]
+    inline def NAME_AND_EXT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def PATH: `1` = 1.asInstanceOf[`1`]
+    inline def PATH: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -30,8 +30,7 @@ trait Attachment extends StObject {
 }
 object Attachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContent: () => String,
     getContentId: () => String,
     getDisposition: () => String,
@@ -48,40 +47,28 @@ object Attachment {
     __obj.asInstanceOf[Attachment]
   }
   
-  @scala.inline
-  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+  extension [Self <: Attachment](x: Self) {
     
-    @scala.inline
-    def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentId(value: () => String): Self = StObject.set(x, "getContentId", js.Any.fromFunction0(value))
+    inline def setGetContentId(value: () => String): Self = StObject.set(x, "getContentId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisposition(value: () => String): Self = StObject.set(x, "getDisposition", js.Any.fromFunction0(value))
+    inline def setGetDisposition(value: () => String): Self = StObject.set(x, "getDisposition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilename(value: () => String): Self = StObject.set(x, "getFilename", js.Any.fromFunction0(value))
+    inline def setGetFilename(value: () => String): Self = StObject.set(x, "getFilename", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+    inline def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContentId(value: String => Unit): Self = StObject.set(x, "setContentId", js.Any.fromFunction1(value))
+    inline def setSetContentId(value: String => Unit): Self = StObject.set(x, "setContentId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisposition(value: String => Unit): Self = StObject.set(x, "setDisposition", js.Any.fromFunction1(value))
+    inline def setSetDisposition(value: String => Unit): Self = StObject.set(x, "setDisposition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilename(value: String => Unit): Self = StObject.set(x, "setFilename", js.Any.fromFunction1(value))
+    inline def setSetFilename(value: String => Unit): Self = StObject.set(x, "setFilename", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetType(value: String => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: String => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => typings.sendgrid.anon.Content): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => typings.sendgrid.anon.Content): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

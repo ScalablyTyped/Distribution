@@ -10,8 +10,7 @@ trait ArtistRelatedParams
      with Pageable
 object ArtistRelatedParams {
   
-  @scala.inline
-  def apply(): ArtistRelatedParams = {
+  inline def apply(): ArtistRelatedParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtistRelatedParams]
   }

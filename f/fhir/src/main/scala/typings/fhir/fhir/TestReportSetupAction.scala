@@ -23,25 +23,19 @@ trait TestReportSetupAction
 }
 object TestReportSetupAction {
   
-  @scala.inline
-  def apply(): TestReportSetupAction = {
+  inline def apply(): TestReportSetupAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestReportSetupAction]
   }
   
-  @scala.inline
-  implicit class TestReportSetupActionMutableBuilder[Self <: TestReportSetupAction] (val x: Self) extends AnyVal {
+  extension [Self <: TestReportSetupAction](x: Self) {
     
-    @scala.inline
-    def setAssert(value: TestReportSetupActionAssert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: TestReportSetupActionAssert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
+    inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
-    @scala.inline
-    def setOperation(value: TestReportSetupActionOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: TestReportSetupActionOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

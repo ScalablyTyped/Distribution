@@ -25,8 +25,7 @@ trait AchievedConsistency extends StObject {
 }
 object AchievedConsistency {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     achievedConsistency: consistencies,
     customPayload: js.Any,
     queriedHost: String,
@@ -39,31 +38,22 @@ object AchievedConsistency {
     __obj.asInstanceOf[AchievedConsistency]
   }
   
-  @scala.inline
-  implicit class AchievedConsistencyMutableBuilder[Self <: AchievedConsistency] (val x: Self) extends AnyVal {
+  extension [Self <: AchievedConsistency](x: Self) {
     
-    @scala.inline
-    def setAchievedConsistency(value: consistencies): Self = StObject.set(x, "achievedConsistency", value.asInstanceOf[js.Any])
+    inline def setAchievedConsistency(value: consistencies): Self = StObject.set(x, "achievedConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPayload(value: js.Any): Self = StObject.set(x, "customPayload", value.asInstanceOf[js.Any])
+    inline def setCustomPayload(value: js.Any): Self = StObject.set(x, "customPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriedHost(value: String): Self = StObject.set(x, "queriedHost", value.asInstanceOf[js.Any])
+    inline def setQueriedHost(value: String): Self = StObject.set(x, "queriedHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeculativeExecutions(value: Double): Self = StObject.set(x, "speculativeExecutions", value.asInstanceOf[js.Any])
+    inline def setSpeculativeExecutions(value: Double): Self = StObject.set(x, "speculativeExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceId(value: Uuid): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+    inline def setTraceId(value: Uuid): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriedHosts(value: StringDictionary[js.Any]): Self = StObject.set(x, "triedHosts", value.asInstanceOf[js.Any])
+    inline def setTriedHosts(value: StringDictionary[js.Any]): Self = StObject.set(x, "triedHosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

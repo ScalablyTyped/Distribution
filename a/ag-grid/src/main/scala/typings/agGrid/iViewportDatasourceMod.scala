@@ -21,26 +21,20 @@ object iViewportDatasourceMod {
   }
   object IViewportDatasource {
     
-    @scala.inline
-    def apply(init: IViewportDatasourceParams => Unit, setViewportRange: (Double, Double) => Unit): IViewportDatasource = {
+    inline def apply(init: IViewportDatasourceParams => Unit, setViewportRange: (Double, Double) => Unit): IViewportDatasource = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), setViewportRange = js.Any.fromFunction2(setViewportRange))
       __obj.asInstanceOf[IViewportDatasource]
     }
     
-    @scala.inline
-    implicit class IViewportDatasourceMutableBuilder[Self <: IViewportDatasource] (val x: Self) extends AnyVal {
+    extension [Self <: IViewportDatasource](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setInit(value: IViewportDatasourceParams => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: IViewportDatasourceParams => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetViewportRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setViewportRange", js.Any.fromFunction2(value))
+      inline def setSetViewportRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setViewportRange", js.Any.fromFunction2(value))
     }
   }
   
@@ -57,8 +51,7 @@ object iViewportDatasourceMod {
   }
   object IViewportDatasourceParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getRow: Double => RowNode,
       setRowCount: Double => Unit,
       setRowData: NumberDictionary[js.Any] => Unit
@@ -67,17 +60,13 @@ object iViewportDatasourceMod {
       __obj.asInstanceOf[IViewportDatasourceParams]
     }
     
-    @scala.inline
-    implicit class IViewportDatasourceParamsMutableBuilder[Self <: IViewportDatasourceParams] (val x: Self) extends AnyVal {
+    extension [Self <: IViewportDatasourceParams](x: Self) {
       
-      @scala.inline
-      def setGetRow(value: Double => RowNode): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
+      inline def setGetRow(value: Double => RowNode): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRowCount(value: Double => Unit): Self = StObject.set(x, "setRowCount", js.Any.fromFunction1(value))
+      inline def setSetRowCount(value: Double => Unit): Self = StObject.set(x, "setRowCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRowData(value: NumberDictionary[js.Any] => Unit): Self = StObject.set(x, "setRowData", js.Any.fromFunction1(value))
+      inline def setSetRowData(value: NumberDictionary[js.Any] => Unit): Self = StObject.set(x, "setRowData", js.Any.fromFunction1(value))
     }
   }
 }

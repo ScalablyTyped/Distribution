@@ -14,22 +14,17 @@ trait GetLoadBalancerAccessLogs extends StObject {
 }
 object GetLoadBalancerAccessLogs {
   
-  @scala.inline
-  def apply(bucket: String, enabled: Boolean, prefix: String): GetLoadBalancerAccessLogs = {
+  inline def apply(bucket: String, enabled: Boolean, prefix: String): GetLoadBalancerAccessLogs = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLoadBalancerAccessLogs]
   }
   
-  @scala.inline
-  implicit class GetLoadBalancerAccessLogsMutableBuilder[Self <: GetLoadBalancerAccessLogs] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoadBalancerAccessLogs](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

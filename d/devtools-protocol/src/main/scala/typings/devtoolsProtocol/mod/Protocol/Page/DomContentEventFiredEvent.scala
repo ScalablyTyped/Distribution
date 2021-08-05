@@ -11,16 +11,13 @@ trait DomContentEventFiredEvent extends StObject {
 }
 object DomContentEventFiredEvent {
   
-  @scala.inline
-  def apply(timestamp: MonotonicTime): DomContentEventFiredEvent = {
+  inline def apply(timestamp: MonotonicTime): DomContentEventFiredEvent = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomContentEventFiredEvent]
   }
   
-  @scala.inline
-  implicit class DomContentEventFiredEventMutableBuilder[Self <: DomContentEventFiredEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DomContentEventFiredEvent](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

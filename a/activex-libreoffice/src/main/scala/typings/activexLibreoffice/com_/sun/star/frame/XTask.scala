@@ -32,8 +32,7 @@ trait XTask
 }
 object XTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComponentWindow: XWindow,
     ContainerWindow: XWindow,
     Controller: XController,
@@ -71,19 +70,14 @@ object XTask {
     __obj.asInstanceOf[XTask]
   }
   
-  @scala.inline
-  implicit class XTaskMutableBuilder[Self <: XTask] (val x: Self) extends AnyVal {
+  extension [Self <: XTask](x: Self) {
     
-    @scala.inline
-    def setArrangeWindowsHorizontal(value: () => Unit): Self = StObject.set(x, "arrangeWindowsHorizontal", js.Any.fromFunction0(value))
+    inline def setArrangeWindowsHorizontal(value: () => Unit): Self = StObject.set(x, "arrangeWindowsHorizontal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setArrangeWindowsVertical(value: () => Unit): Self = StObject.set(x, "arrangeWindowsVertical", js.Any.fromFunction0(value))
+    inline def setArrangeWindowsVertical(value: () => Unit): Self = StObject.set(x, "arrangeWindowsVertical", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTileWindows(value: () => Unit): Self = StObject.set(x, "tileWindows", js.Any.fromFunction0(value))
+    inline def setTileWindows(value: () => Unit): Self = StObject.set(x, "tileWindows", js.Any.fromFunction0(value))
   }
 }

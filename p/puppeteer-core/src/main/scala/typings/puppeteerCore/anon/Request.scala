@@ -16,25 +16,19 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(Request: js.Symbol, RequestFailed: js.Symbol, RequestFinished: js.Symbol, Response: js.Symbol): Request = {
+  inline def apply(Request: js.Symbol, RequestFailed: js.Symbol, RequestFinished: js.Symbol, Response: js.Symbol): Request = {
     val __obj = js.Dynamic.literal(Request = Request.asInstanceOf[js.Any], RequestFailed = RequestFailed.asInstanceOf[js.Any], RequestFinished = RequestFinished.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setRequest(value: js.Symbol): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Symbol): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestFailed(value: js.Symbol): Self = StObject.set(x, "RequestFailed", value.asInstanceOf[js.Any])
+    inline def setRequestFailed(value: js.Symbol): Self = StObject.set(x, "RequestFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestFinished(value: js.Symbol): Self = StObject.set(x, "RequestFinished", value.asInstanceOf[js.Any])
+    inline def setRequestFinished(value: js.Symbol): Self = StObject.set(x, "RequestFinished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: js.Symbol): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: js.Symbol): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
   }
 }

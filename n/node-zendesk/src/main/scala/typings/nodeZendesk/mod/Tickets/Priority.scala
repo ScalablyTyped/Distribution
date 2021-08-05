@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Priority extends StObject
 object Priority {
   
-  @scala.inline
-  def high: typings.nodeZendesk.nodeZendeskStrings.high = "high".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.high]
+  inline def high: typings.nodeZendesk.nodeZendeskStrings.high = "high".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.high]
   
-  @scala.inline
-  def low: typings.nodeZendesk.nodeZendeskStrings.low = "low".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.low]
+  inline def low: typings.nodeZendesk.nodeZendeskStrings.low = "low".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.low]
   
-  @scala.inline
-  def normal: typings.nodeZendesk.nodeZendeskStrings.normal = "normal".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.normal]
+  inline def normal: typings.nodeZendesk.nodeZendeskStrings.normal = "normal".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.normal]
   
-  @scala.inline
-  def urgent: typings.nodeZendesk.nodeZendeskStrings.urgent = "urgent".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.urgent]
+  inline def urgent: typings.nodeZendesk.nodeZendeskStrings.urgent = "urgent".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.urgent]
 }

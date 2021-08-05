@@ -25,25 +25,19 @@ trait StartLoggingOptions extends StObject {
 }
 object StartLoggingOptions {
   
-  @scala.inline
-  def apply(): StartLoggingOptions = {
+  inline def apply(): StartLoggingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartLoggingOptions]
   }
   
-  @scala.inline
-  implicit class StartLoggingOptionsMutableBuilder[Self <: StartLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setCaptureMode(value: default | includeSensitive | everything): Self = StObject.set(x, "captureMode", value.asInstanceOf[js.Any])
+    inline def setCaptureMode(value: default | includeSensitive | everything): Self = StObject.set(x, "captureMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureModeUndefined: Self = StObject.set(x, "captureMode", js.undefined)
+    inline def setCaptureModeUndefined: Self = StObject.set(x, "captureMode", js.undefined)
     
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
   }
 }

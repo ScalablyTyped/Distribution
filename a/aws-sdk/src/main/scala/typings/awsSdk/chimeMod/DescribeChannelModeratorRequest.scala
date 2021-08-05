@@ -18,19 +18,15 @@ trait DescribeChannelModeratorRequest extends StObject {
 }
 object DescribeChannelModeratorRequest {
   
-  @scala.inline
-  def apply(ChannelArn: ChimeArn, ChannelModeratorArn: ChimeArn): DescribeChannelModeratorRequest = {
+  inline def apply(ChannelArn: ChimeArn, ChannelModeratorArn: ChimeArn): DescribeChannelModeratorRequest = {
     val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any], ChannelModeratorArn = ChannelModeratorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelModeratorRequest]
   }
   
-  @scala.inline
-  implicit class DescribeChannelModeratorRequestMutableBuilder[Self <: DescribeChannelModeratorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChannelModeratorRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelModeratorArn(value: ChimeArn): Self = StObject.set(x, "ChannelModeratorArn", value.asInstanceOf[js.Any])
+    inline def setChannelModeratorArn(value: ChimeArn): Self = StObject.set(x, "ChannelModeratorArn", value.asInstanceOf[js.Any])
   }
 }

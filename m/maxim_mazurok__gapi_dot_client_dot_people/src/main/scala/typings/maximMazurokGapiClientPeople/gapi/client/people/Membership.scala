@@ -17,31 +17,23 @@ trait Membership extends StObject {
 }
 object Membership {
   
-  @scala.inline
-  def apply(): Membership = {
+  inline def apply(): Membership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Membership]
   }
   
-  @scala.inline
-  implicit class MembershipMutableBuilder[Self <: Membership] (val x: Self) extends AnyVal {
+  extension [Self <: Membership](x: Self) {
     
-    @scala.inline
-    def setContactGroupMembership(value: ContactGroupMembership): Self = StObject.set(x, "contactGroupMembership", value.asInstanceOf[js.Any])
+    inline def setContactGroupMembership(value: ContactGroupMembership): Self = StObject.set(x, "contactGroupMembership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactGroupMembershipUndefined: Self = StObject.set(x, "contactGroupMembership", js.undefined)
+    inline def setContactGroupMembershipUndefined: Self = StObject.set(x, "contactGroupMembership", js.undefined)
     
-    @scala.inline
-    def setDomainMembership(value: DomainMembership): Self = StObject.set(x, "domainMembership", value.asInstanceOf[js.Any])
+    inline def setDomainMembership(value: DomainMembership): Self = StObject.set(x, "domainMembership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainMembershipUndefined: Self = StObject.set(x, "domainMembership", js.undefined)
+    inline def setDomainMembershipUndefined: Self = StObject.set(x, "domainMembership", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

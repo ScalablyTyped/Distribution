@@ -23,28 +23,21 @@ trait ArchiveOutputSettings extends StObject {
 }
 object ArchiveOutputSettings {
   
-  @scala.inline
-  def apply(ContainerSettings: ArchiveContainerSettings): ArchiveOutputSettings = {
+  inline def apply(ContainerSettings: ArchiveContainerSettings): ArchiveOutputSettings = {
     val __obj = js.Dynamic.literal(ContainerSettings = ContainerSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveOutputSettings]
   }
   
-  @scala.inline
-  implicit class ArchiveOutputSettingsMutableBuilder[Self <: ArchiveOutputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ArchiveOutputSettings](x: Self) {
     
-    @scala.inline
-    def setContainerSettings(value: ArchiveContainerSettings): Self = StObject.set(x, "ContainerSettings", value.asInstanceOf[js.Any])
+    inline def setContainerSettings(value: ArchiveContainerSettings): Self = StObject.set(x, "ContainerSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: string): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: string): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "Extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "Extension", js.undefined)
     
-    @scala.inline
-    def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
+    inline def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
+    inline def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
   }
 }

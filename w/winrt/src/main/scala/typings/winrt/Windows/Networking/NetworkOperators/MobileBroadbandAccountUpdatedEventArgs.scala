@@ -9,8 +9,7 @@ trait MobileBroadbandAccountUpdatedEventArgs
      with IMobileBroadbandAccountUpdatedEventArgs
 object MobileBroadbandAccountUpdatedEventArgs {
   
-  @scala.inline
-  def apply(hasDeviceInformationChanged: Boolean, hasNetworkChanged: Boolean, networkAccountId: String): MobileBroadbandAccountUpdatedEventArgs = {
+  inline def apply(hasDeviceInformationChanged: Boolean, hasNetworkChanged: Boolean, networkAccountId: String): MobileBroadbandAccountUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(hasDeviceInformationChanged = hasDeviceInformationChanged.asInstanceOf[js.Any], hasNetworkChanged = hasNetworkChanged.asInstanceOf[js.Any], networkAccountId = networkAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandAccountUpdatedEventArgs]
   }

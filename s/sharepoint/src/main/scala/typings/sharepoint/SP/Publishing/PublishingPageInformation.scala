@@ -27,8 +27,7 @@ trait PublishingPageInformation
 }
 object PublishingPageInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -45,25 +44,18 @@ object PublishingPageInformation {
     __obj.asInstanceOf[PublishingPageInformation]
   }
   
-  @scala.inline
-  implicit class PublishingPageInformationMutableBuilder[Self <: PublishingPageInformation] (val x: Self) extends AnyVal {
+  extension [Self <: PublishingPageInformation](x: Self) {
     
-    @scala.inline
-    def setGet_folder(value: () => Folder): Self = StObject.set(x, "get_folder", js.Any.fromFunction0(value))
+    inline def setGet_folder(value: () => Folder): Self = StObject.set(x, "get_folder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_pageLayoutListItem(value: () => ListItem[js.Any]): Self = StObject.set(x, "get_pageLayoutListItem", js.Any.fromFunction0(value))
+    inline def setGet_pageLayoutListItem(value: () => ListItem[js.Any]): Self = StObject.set(x, "get_pageLayoutListItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_folder(value: Folder => Folder): Self = StObject.set(x, "set_folder", js.Any.fromFunction1(value))
+    inline def setSet_folder(value: Folder => Folder): Self = StObject.set(x, "set_folder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_pageLayoutListItem(value: ListItem[js.Any] => ListItem[js.Any]): Self = StObject.set(x, "set_pageLayoutListItem", js.Any.fromFunction1(value))
+    inline def setSet_pageLayoutListItem(value: ListItem[js.Any] => ListItem[js.Any]): Self = StObject.set(x, "set_pageLayoutListItem", js.Any.fromFunction1(value))
   }
 }

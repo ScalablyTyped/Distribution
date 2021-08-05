@@ -25,25 +25,19 @@ trait GooglePrivacyDlpV2OutputStorageConfig extends StObject {
 }
 object GooglePrivacyDlpV2OutputStorageConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2OutputStorageConfig = {
+  inline def apply(): GooglePrivacyDlpV2OutputStorageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2OutputStorageConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2OutputStorageConfigMutableBuilder[Self <: GooglePrivacyDlpV2OutputStorageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2OutputStorageConfig](x: Self) {
     
-    @scala.inline
-    def setOutputSchema(value: String): Self = StObject.set(x, "outputSchema", value.asInstanceOf[js.Any])
+    inline def setOutputSchema(value: String): Self = StObject.set(x, "outputSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSchemaUndefined: Self = StObject.set(x, "outputSchema", js.undefined)
+    inline def setOutputSchemaUndefined: Self = StObject.set(x, "outputSchema", js.undefined)
     
-    @scala.inline
-    def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

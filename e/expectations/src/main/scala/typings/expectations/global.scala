@@ -39,6 +39,5 @@ object global {
   @JSGlobal("expect")
   @js.native
   def expect: IExpectations = js.native
-  @scala.inline
-  def expect_=(x: IExpectations): Unit = js.Dynamic.global.updateDynamic("expect")(x.asInstanceOf[js.Any])
+  inline def expect_=(x: IExpectations): Unit = js.Dynamic.global.updateDynamic("expect")(x.asInstanceOf[js.Any])
 }

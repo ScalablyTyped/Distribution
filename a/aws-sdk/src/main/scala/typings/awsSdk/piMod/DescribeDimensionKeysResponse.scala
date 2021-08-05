@@ -33,49 +33,35 @@ trait DescribeDimensionKeysResponse extends StObject {
 }
 object DescribeDimensionKeysResponse {
   
-  @scala.inline
-  def apply(): DescribeDimensionKeysResponse = {
+  inline def apply(): DescribeDimensionKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDimensionKeysResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDimensionKeysResponseMutableBuilder[Self <: DescribeDimensionKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDimensionKeysResponse](x: Self) {
     
-    @scala.inline
-    def setAlignedEndTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
+    inline def setAlignedEndTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignedEndTimeUndefined: Self = StObject.set(x, "AlignedEndTime", js.undefined)
+    inline def setAlignedEndTimeUndefined: Self = StObject.set(x, "AlignedEndTime", js.undefined)
     
-    @scala.inline
-    def setAlignedStartTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedStartTime", value.asInstanceOf[js.Any])
+    inline def setAlignedStartTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignedStartTimeUndefined: Self = StObject.set(x, "AlignedStartTime", js.undefined)
+    inline def setAlignedStartTimeUndefined: Self = StObject.set(x, "AlignedStartTime", js.undefined)
     
-    @scala.inline
-    def setKeys(value: DimensionKeyDescriptionList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: DimensionKeyDescriptionList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: DimensionKeyDescription*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: DimensionKeyDescription*): Self = StObject.set(x, "Keys", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPartitionKeys(value: ResponsePartitionKeyList): Self = StObject.set(x, "PartitionKeys", value.asInstanceOf[js.Any])
+    inline def setPartitionKeys(value: ResponsePartitionKeyList): Self = StObject.set(x, "PartitionKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
+    inline def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
     
-    @scala.inline
-    def setPartitionKeysVarargs(value: ResponsePartitionKey*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
+    inline def setPartitionKeysVarargs(value: ResponsePartitionKey*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
   }
 }

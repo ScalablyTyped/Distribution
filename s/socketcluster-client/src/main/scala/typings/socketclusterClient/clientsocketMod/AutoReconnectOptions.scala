@@ -16,37 +16,27 @@ trait AutoReconnectOptions extends StObject {
 }
 object AutoReconnectOptions {
   
-  @scala.inline
-  def apply(): AutoReconnectOptions = {
+  inline def apply(): AutoReconnectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoReconnectOptions]
   }
   
-  @scala.inline
-  implicit class AutoReconnectOptionsMutableBuilder[Self <: AutoReconnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AutoReconnectOptions](x: Self) {
     
-    @scala.inline
-    def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
+    inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
+    inline def setInitialDelayUndefined: Self = StObject.set(x, "initialDelay", js.undefined)
     
-    @scala.inline
-    def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
+    inline def setMaxDelay(value: Double): Self = StObject.set(x, "maxDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
+    inline def setMaxDelayUndefined: Self = StObject.set(x, "maxDelay", js.undefined)
     
-    @scala.inline
-    def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+    inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
+    inline def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
-    @scala.inline
-    def setRandomness(value: Double): Self = StObject.set(x, "randomness", value.asInstanceOf[js.Any])
+    inline def setRandomness(value: Double): Self = StObject.set(x, "randomness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomnessUndefined: Self = StObject.set(x, "randomness", js.undefined)
+    inline def setRandomnessUndefined: Self = StObject.set(x, "randomness", js.undefined)
   }
 }

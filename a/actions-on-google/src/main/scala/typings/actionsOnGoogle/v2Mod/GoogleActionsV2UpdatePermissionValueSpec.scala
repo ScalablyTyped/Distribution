@@ -18,28 +18,21 @@ trait GoogleActionsV2UpdatePermissionValueSpec extends StObject {
 }
 object GoogleActionsV2UpdatePermissionValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2UpdatePermissionValueSpec = {
+  inline def apply(): GoogleActionsV2UpdatePermissionValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2UpdatePermissionValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2UpdatePermissionValueSpecMutableBuilder[Self <: GoogleActionsV2UpdatePermissionValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2UpdatePermissionValueSpec](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
   }
 }

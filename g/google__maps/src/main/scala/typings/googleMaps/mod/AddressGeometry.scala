@@ -29,25 +29,19 @@ trait AddressGeometry extends StObject {
 }
 object AddressGeometry {
   
-  @scala.inline
-  def apply(bounds: LatLngBounds, location: LatLngLiteral, location_type: LocationType, viewport: LatLngBounds): AddressGeometry = {
+  inline def apply(bounds: LatLngBounds, location: LatLngLiteral, location_type: LocationType, viewport: LatLngBounds): AddressGeometry = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], location_type = location_type.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressGeometry]
   }
   
-  @scala.inline
-  implicit class AddressGeometryMutableBuilder[Self <: AddressGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: AddressGeometry](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation_type(value: LocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
+    inline def setLocation_type(value: LocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: LatLngBounds): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: LatLngBounds): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

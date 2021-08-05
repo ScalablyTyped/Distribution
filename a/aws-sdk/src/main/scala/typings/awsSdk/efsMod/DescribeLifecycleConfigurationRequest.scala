@@ -13,16 +13,13 @@ trait DescribeLifecycleConfigurationRequest extends StObject {
 }
 object DescribeLifecycleConfigurationRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId): DescribeLifecycleConfigurationRequest = {
+  inline def apply(FileSystemId: FileSystemId): DescribeLifecycleConfigurationRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLifecycleConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLifecycleConfigurationRequestMutableBuilder[Self <: DescribeLifecycleConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLifecycleConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
   }
 }

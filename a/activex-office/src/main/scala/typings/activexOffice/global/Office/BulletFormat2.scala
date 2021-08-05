@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.BulletFormat2")
 @js.native
-class BulletFormat2 protected ()
+/* private */ class BulletFormat2 ()
   extends StObject
      with typings.activexOffice.Office.BulletFormat2 {
   
@@ -28,7 +28,7 @@ class BulletFormat2 protected ()
   /* CompleteClass */
   override val Number: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.BulletFormat2_typekey")
   var OfficeDotBulletFormat2_typekey: typings.activexOffice.Office.BulletFormat2 = js.native
   

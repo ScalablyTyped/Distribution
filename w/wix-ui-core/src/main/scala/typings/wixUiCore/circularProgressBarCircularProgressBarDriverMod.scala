@@ -42,8 +42,7 @@ object circularProgressBarCircularProgressBarDriverMod {
   }
   object CircularProgressBarDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getLabelTextContent: () => String,
       getValue: () => String,
@@ -58,32 +57,23 @@ object circularProgressBarCircularProgressBarDriverMod {
       __obj.asInstanceOf[CircularProgressBarDriver]
     }
     
-    @scala.inline
-    implicit class CircularProgressBarDriverMutableBuilder[Self <: CircularProgressBarDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressBarDriver](x: Self) {
       
-      @scala.inline
-      def setGetLabelTextContent(value: () => String): Self = StObject.set(x, "getLabelTextContent", js.Any.fromFunction0(value))
+      inline def setGetLabelTextContent(value: () => String): Self = StObject.set(x, "getLabelTextContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+      inline def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCompleted(value: () => Boolean): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
+      inline def setIsCompleted(value: () => Boolean): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorIconDisplayed(value: () => Boolean): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
+      inline def setIsErrorIconDisplayed(value: () => Boolean): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLabelDisplayed(value: () => Boolean): Self = StObject.set(x, "isLabelDisplayed", js.Any.fromFunction0(value))
+      inline def setIsLabelDisplayed(value: () => Boolean): Self = StObject.set(x, "isLabelDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPercentagesProgressDisplayed(value: () => Boolean): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
+      inline def setIsPercentagesProgressDisplayed(value: () => Boolean): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccessIconDisplayed(value: () => Boolean): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
+      inline def setIsSuccessIconDisplayed(value: () => Boolean): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
     }
   }
 }

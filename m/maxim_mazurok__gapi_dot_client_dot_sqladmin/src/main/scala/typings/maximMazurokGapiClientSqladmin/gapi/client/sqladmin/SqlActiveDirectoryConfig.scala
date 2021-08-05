@@ -14,25 +14,19 @@ trait SqlActiveDirectoryConfig extends StObject {
 }
 object SqlActiveDirectoryConfig {
   
-  @scala.inline
-  def apply(): SqlActiveDirectoryConfig = {
+  inline def apply(): SqlActiveDirectoryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlActiveDirectoryConfig]
   }
   
-  @scala.inline
-  implicit class SqlActiveDirectoryConfigMutableBuilder[Self <: SqlActiveDirectoryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SqlActiveDirectoryConfig](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

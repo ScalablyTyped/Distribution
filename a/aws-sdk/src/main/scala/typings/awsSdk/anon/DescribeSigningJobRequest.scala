@@ -19,22 +19,17 @@ trait DescribeSigningJobRequest extends StObject {
 }
 object DescribeSigningJobRequest {
   
-  @scala.inline
-  def apply(jobId: JobId): DescribeSigningJobRequest = {
+  inline def apply(jobId: JobId): DescribeSigningJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSigningJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSigningJobRequestMutableBuilder[Self <: DescribeSigningJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSigningJobRequest](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
   }
 }

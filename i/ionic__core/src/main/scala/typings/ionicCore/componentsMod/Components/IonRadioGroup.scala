@@ -23,28 +23,21 @@ trait IonRadioGroup extends StObject {
 }
 object IonRadioGroup {
   
-  @scala.inline
-  def apply(allowEmptySelection: Boolean, name: String): IonRadioGroup = {
+  inline def apply(allowEmptySelection: Boolean, name: String): IonRadioGroup = {
     val __obj = js.Dynamic.literal(allowEmptySelection = allowEmptySelection.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRadioGroup]
   }
   
-  @scala.inline
-  implicit class IonRadioGroupMutableBuilder[Self <: IonRadioGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IonRadioGroup](x: Self) {
     
-    @scala.inline
-    def setAllowEmptySelection(value: Boolean): Self = StObject.set(x, "allowEmptySelection", value.asInstanceOf[js.Any])
+    inline def setAllowEmptySelection(value: Boolean): Self = StObject.set(x, "allowEmptySelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

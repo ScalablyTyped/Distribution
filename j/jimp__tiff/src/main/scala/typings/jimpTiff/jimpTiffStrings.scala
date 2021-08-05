@@ -8,6 +8,5 @@ object jimpTiffStrings {
   
   @js.native
   sealed trait imageSlashtiff extends StObject
-  @scala.inline
-  def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
+  inline def imageSlashtiff: imageSlashtiff = "image/tiff".asInstanceOf[imageSlashtiff]
 }

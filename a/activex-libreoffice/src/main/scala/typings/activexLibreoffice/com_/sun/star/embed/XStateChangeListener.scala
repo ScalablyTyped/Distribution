@@ -34,8 +34,7 @@ trait XStateChangeListener
 }
 object XStateChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     changingState: (EventObject, Double, Double) => Unit,
     disposing: EventObject => Unit,
@@ -47,13 +46,10 @@ object XStateChangeListener {
     __obj.asInstanceOf[XStateChangeListener]
   }
   
-  @scala.inline
-  implicit class XStateChangeListenerMutableBuilder[Self <: XStateChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XStateChangeListener](x: Self) {
     
-    @scala.inline
-    def setChangingState(value: (EventObject, Double, Double) => Unit): Self = StObject.set(x, "changingState", js.Any.fromFunction3(value))
+    inline def setChangingState(value: (EventObject, Double, Double) => Unit): Self = StObject.set(x, "changingState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStateChanged(value: (EventObject, Double, Double) => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction3(value))
+    inline def setStateChanged(value: (EventObject, Double, Double) => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction3(value))
   }
 }

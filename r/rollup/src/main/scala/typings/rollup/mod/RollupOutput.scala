@@ -10,16 +10,13 @@ trait RollupOutput extends StObject {
 }
 object RollupOutput {
   
-  @scala.inline
-  def apply(output: Array[OutputChunk | OutputAsset]): RollupOutput = {
+  inline def apply(output: Array[OutputChunk | OutputAsset]): RollupOutput = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupOutput]
   }
   
-  @scala.inline
-  implicit class RollupOutputMutableBuilder[Self <: RollupOutput] (val x: Self) extends AnyVal {
+  extension [Self <: RollupOutput](x: Self) {
     
-    @scala.inline
-    def setOutput(value: Array[OutputChunk | OutputAsset]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Array[OutputChunk | OutputAsset]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,8 @@ object unstableUseMediaQueryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def default(query: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(query: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(query: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait MuiMediaQueryList extends StObject {
     
@@ -25,8 +23,7 @@ object unstableUseMediaQueryMod {
   }
   object MuiMediaQueryList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: MuiMediaQueryListListener => Unit,
       matches: Boolean,
       removeListener: MuiMediaQueryListListener => Unit
@@ -35,17 +32,13 @@ object unstableUseMediaQueryMod {
       __obj.asInstanceOf[MuiMediaQueryList]
     }
     
-    @scala.inline
-    implicit class MuiMediaQueryListMutableBuilder[Self <: MuiMediaQueryList] (val x: Self) extends AnyVal {
+    extension [Self <: MuiMediaQueryList](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: MuiMediaQueryListListener => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: MuiMediaQueryListListener => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveListener(value: MuiMediaQueryListListener => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: MuiMediaQueryListListener => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -55,17 +48,14 @@ object unstableUseMediaQueryMod {
   }
   object MuiMediaQueryListEvent {
     
-    @scala.inline
-    def apply(matches: Boolean): MuiMediaQueryListEvent = {
+    inline def apply(matches: Boolean): MuiMediaQueryListEvent = {
       val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any])
       __obj.asInstanceOf[MuiMediaQueryListEvent]
     }
     
-    @scala.inline
-    implicit class MuiMediaQueryListEventMutableBuilder[Self <: MuiMediaQueryListEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MuiMediaQueryListEvent](x: Self) {
       
-      @scala.inline
-      def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,32 +71,24 @@ object unstableUseMediaQueryMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultMatches(value: Boolean): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
+      inline def setDefaultMatches(value: Boolean): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMatchesUndefined: Self = StObject.set(x, "defaultMatches", js.undefined)
+      inline def setDefaultMatchesUndefined: Self = StObject.set(x, "defaultMatches", js.undefined)
       
-      @scala.inline
-      def setNoSsr(value: Boolean): Self = StObject.set(x, "noSsr", value.asInstanceOf[js.Any])
+      inline def setNoSsr(value: Boolean): Self = StObject.set(x, "noSsr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSsrUndefined: Self = StObject.set(x, "noSsr", js.undefined)
+      inline def setNoSsrUndefined: Self = StObject.set(x, "noSsr", js.undefined)
       
-      @scala.inline
-      def setSsrMatchMedia(value: /* query */ String => MuiMediaQueryList): Self = StObject.set(x, "ssrMatchMedia", js.Any.fromFunction1(value))
+      inline def setSsrMatchMedia(value: /* query */ String => MuiMediaQueryList): Self = StObject.set(x, "ssrMatchMedia", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSsrMatchMediaUndefined: Self = StObject.set(x, "ssrMatchMedia", js.undefined)
+      inline def setSsrMatchMediaUndefined: Self = StObject.set(x, "ssrMatchMedia", js.undefined)
     }
   }
 }

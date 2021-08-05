@@ -18,28 +18,21 @@ trait PrincipalPermissions extends StObject {
 }
 object PrincipalPermissions {
   
-  @scala.inline
-  def apply(): PrincipalPermissions = {
+  inline def apply(): PrincipalPermissions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrincipalPermissions]
   }
   
-  @scala.inline
-  implicit class PrincipalPermissionsMutableBuilder[Self <: PrincipalPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: PrincipalPermissions](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: PermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: PermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipal(value: DataLakePrincipal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: DataLakePrincipal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait CreateMultipartUploadInput
      with typings.awsSdkClientS3Browser.typesCreateMultipartUploadInputMod.CreateMultipartUploadInput
 object CreateMultipartUploadInput {
   
-  @scala.inline
-  def apply(Bucket: String, Key: String): CreateMultipartUploadInput = {
+  inline def apply(Bucket: String, Key: String): CreateMultipartUploadInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMultipartUploadInput]
   }

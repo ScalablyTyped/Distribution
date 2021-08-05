@@ -18,25 +18,19 @@ trait ErrorInfo extends StObject {
 }
 object ErrorInfo {
   
-  @scala.inline
-  def apply(): ErrorInfo = {
+  inline def apply(): ErrorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorInfo]
   }
   
-  @scala.inline
-  implicit class ErrorInfoMutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorInfo](x: Self) {
     
-    @scala.inline
-    def setExecutionMessage(value: ExecutionMessage): Self = StObject.set(x, "executionMessage", value.asInstanceOf[js.Any])
+    inline def setExecutionMessage(value: ExecutionMessage): Self = StObject.set(x, "executionMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionMessageUndefined: Self = StObject.set(x, "executionMessage", js.undefined)
+    inline def setExecutionMessageUndefined: Self = StObject.set(x, "executionMessage", js.undefined)
     
-    @scala.inline
-    def setPutFailuresCount(value: Long): Self = StObject.set(x, "putFailuresCount", value.asInstanceOf[js.Any])
+    inline def setPutFailuresCount(value: Long): Self = StObject.set(x, "putFailuresCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPutFailuresCountUndefined: Self = StObject.set(x, "putFailuresCount", js.undefined)
+    inline def setPutFailuresCountUndefined: Self = StObject.set(x, "putFailuresCount", js.undefined)
   }
 }

@@ -22,20 +22,16 @@ object couponSmallMod extends Shortcut {
   }
   object CouponSmallProps {
     
-    @scala.inline
-    def apply(): CouponSmallProps = {
+    inline def apply(): CouponSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CouponSmallProps]
     }
     
-    @scala.inline
-    implicit class CouponSmallPropsMutableBuilder[Self <: CouponSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: CouponSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

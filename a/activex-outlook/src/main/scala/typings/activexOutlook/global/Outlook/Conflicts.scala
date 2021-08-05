@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Conflicts")
 @js.native
-class Conflicts protected ()
+/* private */ class Conflicts ()
   extends StObject
      with typings.activexOutlook.Outlook.Conflicts {
   
@@ -35,7 +35,7 @@ class Conflicts protected ()
   /* CompleteClass */
   override def Item(Index: js.Any): typings.activexOutlook.Outlook.Conflict = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Conflicts_typekey")
   var OutlookDotConflicts_typekey: typings.activexOutlook.Outlook.Conflicts = js.native
   

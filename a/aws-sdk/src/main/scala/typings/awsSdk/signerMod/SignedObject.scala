@@ -13,19 +13,15 @@ trait SignedObject extends StObject {
 }
 object SignedObject {
   
-  @scala.inline
-  def apply(): SignedObject = {
+  inline def apply(): SignedObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignedObject]
   }
   
-  @scala.inline
-  implicit class SignedObjectMutableBuilder[Self <: SignedObject] (val x: Self) extends AnyVal {
+  extension [Self <: SignedObject](x: Self) {
     
-    @scala.inline
-    def setS3(value: S3SignedObject): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3SignedObject): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
   }
 }

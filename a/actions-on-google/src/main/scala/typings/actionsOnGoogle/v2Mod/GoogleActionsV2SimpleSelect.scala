@@ -13,22 +13,17 @@ trait GoogleActionsV2SimpleSelect extends StObject {
 }
 object GoogleActionsV2SimpleSelect {
   
-  @scala.inline
-  def apply(): GoogleActionsV2SimpleSelect = {
+  inline def apply(): GoogleActionsV2SimpleSelect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2SimpleSelect]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2SimpleSelectMutableBuilder[Self <: GoogleActionsV2SimpleSelect] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2SimpleSelect](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[GoogleActionsV2SimpleSelectItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[GoogleActionsV2SimpleSelectItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: GoogleActionsV2SimpleSelectItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GoogleActionsV2SimpleSelectItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

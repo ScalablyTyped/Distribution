@@ -11,19 +11,15 @@ trait BackgroundSuggestionState extends StObject {
 }
 object BackgroundSuggestionState {
   
-  @scala.inline
-  def apply(): BackgroundSuggestionState = {
+  inline def apply(): BackgroundSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundSuggestionState]
   }
   
-  @scala.inline
-  implicit class BackgroundSuggestionStateMutableBuilder[Self <: BackgroundSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundSuggestionState](x: Self) {
     
-    @scala.inline
-    def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+    inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
+    inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
   }
 }

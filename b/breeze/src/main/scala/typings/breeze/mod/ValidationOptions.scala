@@ -40,6 +40,5 @@ object ValidationOptions {
   @JSImport("breeze", "ValidationOptions.defaultInstance")
   @js.native
   def defaultInstance: typings.breeze.breeze.ValidationOptions = js.native
-  @scala.inline
-  def defaultInstance_=(x: typings.breeze.breeze.ValidationOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
+  inline def defaultInstance_=(x: typings.breeze.breeze.ValidationOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
 }

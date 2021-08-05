@@ -15,25 +15,19 @@ trait Compare[RecordType] extends StObject {
 }
 object Compare {
   
-  @scala.inline
-  def apply[RecordType](): Compare[RecordType] = {
+  inline def apply[RecordType](): Compare[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Compare[RecordType]]
   }
   
-  @scala.inline
-  implicit class CompareMutableBuilder[Self <: Compare[?], RecordType] (val x: Self & Compare[RecordType]) extends AnyVal {
+  extension [Self <: Compare[?], RecordType](x: Self & Compare[RecordType]) {
     
-    @scala.inline
-    def setCompare(value: (RecordType, RecordType, /* sortOrder */ js.UndefOr[SortOrder]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction3(value))
+    inline def setCompare(value: (RecordType, RecordType, /* sortOrder */ js.UndefOr[SortOrder]) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Double): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Double): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

@@ -71,71 +71,50 @@ object enigmaJS {
   }
   object IConfig {
     
-    @scala.inline
-    def apply(schema: js.Object, url: String): IConfig = {
+    inline def apply(schema: js.Object, url: String): IConfig = {
       val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConfig]
     }
     
-    @scala.inline
-    implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IConfig](x: Self) {
       
-      @scala.inline
-      def setCreateSocket(value: js.Any): Self = StObject.set(x, "createSocket", value.asInstanceOf[js.Any])
+      inline def setCreateSocket(value: js.Any): Self = StObject.set(x, "createSocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateSocketUndefined: Self = StObject.set(x, "createSocket", js.undefined)
+      inline def setCreateSocketUndefined: Self = StObject.set(x, "createSocket", js.undefined)
       
-      @scala.inline
-      def setMixins(value: js.Array[IMixin]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      inline def setMixins(value: js.Array[IMixin]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+      inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      @scala.inline
-      def setMixinsVarargs(value: IMixin*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: IMixin*): Self = StObject.set(x, "mixins", js.Array(value :_*))
       
-      @scala.inline
-      def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Any): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: js.Any): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: js.Any): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRequestInterceptors(value: js.Array[IRequestInterceptors]): Self = StObject.set(x, "requestInterceptors", value.asInstanceOf[js.Any])
+      inline def setRequestInterceptors(value: js.Array[IRequestInterceptors]): Self = StObject.set(x, "requestInterceptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestInterceptorsUndefined: Self = StObject.set(x, "requestInterceptors", js.undefined)
+      inline def setRequestInterceptorsUndefined: Self = StObject.set(x, "requestInterceptors", js.undefined)
       
-      @scala.inline
-      def setRequestInterceptorsVarargs(value: IRequestInterceptors*): Self = StObject.set(x, "requestInterceptors", js.Array(value :_*))
+      inline def setRequestInterceptorsVarargs(value: IRequestInterceptors*): Self = StObject.set(x, "requestInterceptors", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseInterceptors(value: js.Array[IResponseInterceptors]): Self = StObject.set(x, "responseInterceptors", value.asInstanceOf[js.Any])
+      inline def setResponseInterceptors(value: js.Array[IResponseInterceptors]): Self = StObject.set(x, "responseInterceptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseInterceptorsUndefined: Self = StObject.set(x, "responseInterceptors", js.undefined)
+      inline def setResponseInterceptorsUndefined: Self = StObject.set(x, "responseInterceptors", js.undefined)
       
-      @scala.inline
-      def setResponseInterceptorsVarargs(value: IResponseInterceptors*): Self = StObject.set(x, "responseInterceptors", js.Array(value :_*))
+      inline def setResponseInterceptorsVarargs(value: IResponseInterceptors*): Self = StObject.set(x, "responseInterceptors", js.Array(value :_*))
       
-      @scala.inline
-      def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuspendOnClose(value: Boolean): Self = StObject.set(x, "suspendOnClose", value.asInstanceOf[js.Any])
+      inline def setSuspendOnClose(value: Boolean): Self = StObject.set(x, "suspendOnClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuspendOnCloseUndefined: Self = StObject.set(x, "suspendOnClose", js.undefined)
+      inline def setSuspendOnCloseUndefined: Self = StObject.set(x, "suspendOnClose", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,35 +193,26 @@ object enigmaJS {
   }
   object IMixin {
     
-    @scala.inline
-    def apply(init: Api => Unit, types: js.Array[MixinType]): IMixin = {
+    inline def apply(init: Api => Unit, types: js.Array[MixinType]): IMixin = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMixin]
     }
     
-    @scala.inline
-    implicit class IMixinMutableBuilder[Self <: IMixin] (val x: Self) extends AnyVal {
+    extension [Self <: IMixin](x: Self) {
       
-      @scala.inline
-      def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+      inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
-      @scala.inline
-      def setInit(value: Api => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: Api => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOverride(value: js.Any): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: js.Any): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setTypes(value: js.Array[MixinType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[MixinType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesVarargs(value: MixinType*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: MixinType*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
   
@@ -253,20 +223,16 @@ object enigmaJS {
   }
   object IProtocol {
     
-    @scala.inline
-    def apply(): IProtocol = {
+    inline def apply(): IProtocol = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProtocol]
     }
     
-    @scala.inline
-    implicit class IProtocolMutableBuilder[Self <: IProtocol] (val x: Self) extends AnyVal {
+    extension [Self <: IProtocol](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+      inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     }
   }
   
@@ -284,20 +250,16 @@ object enigmaJS {
   }
   object IRequestInterceptors {
     
-    @scala.inline
-    def apply(): IRequestInterceptors = {
+    inline def apply(): IRequestInterceptors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IRequestInterceptors]
     }
     
-    @scala.inline
-    implicit class IRequestInterceptorsMutableBuilder[Self <: IRequestInterceptors] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestInterceptors](x: Self) {
       
-      @scala.inline
-      def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Any): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
+      inline def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Any): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
+      inline def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
     }
   }
   
@@ -325,26 +287,20 @@ object enigmaJS {
   }
   object IResponseInterceptors {
     
-    @scala.inline
-    def apply(): IResponseInterceptors = {
+    inline def apply(): IResponseInterceptors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IResponseInterceptors]
     }
     
-    @scala.inline
-    implicit class IResponseInterceptorsMutableBuilder[Self <: IResponseInterceptors] (val x: Self) extends AnyVal {
+    extension [Self <: IResponseInterceptors](x: Self) {
       
-      @scala.inline
-      def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
+      inline def setOnFulfilled(value: (/* session */ ISession, /* request */ js.Any, /* result */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onFulfilled", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
+      inline def setOnFulfilledUndefined: Self = StObject.set(x, "onFulfilled", js.undefined)
       
-      @scala.inline
-      def setOnRejected(value: (/* session */ ISession, /* request */ js.Any, /* error */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onRejected", js.Any.fromFunction3(value))
+      inline def setOnRejected(value: (/* session */ ISession, /* request */ js.Any, /* error */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onRejected", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRejectedUndefined: Self = StObject.set(x, "onRejected", js.undefined)
+      inline def setOnRejectedUndefined: Self = StObject.set(x, "onRejected", js.undefined)
     }
   }
   

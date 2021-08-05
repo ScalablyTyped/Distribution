@@ -21,31 +21,25 @@ trait FlexGrowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
 }
 object FlexGrowProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexGrowProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): FlexGrowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexGrowProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class FlexGrowPropsMutableBuilder[Self <: FlexGrowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexGrowProps[ThemeType]) extends AnyVal {
+  extension [Self <: FlexGrowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FlexGrowProps[ThemeType]) {
     
-    @scala.inline
-    def setFlexGrow(
+    inline def setFlexGrow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexGrowNull: Self = StObject.set(x, "flexGrow", null)
+    inline def setFlexGrowNull: Self = StObject.set(x, "flexGrow", null)
     
-    @scala.inline
-    def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
+    inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
-    @scala.inline
-    def setFlexGrowVarargs(
+    inline def setFlexGrowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any) | Null)*
     ): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
   }

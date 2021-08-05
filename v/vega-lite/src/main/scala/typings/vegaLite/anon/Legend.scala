@@ -18,8 +18,7 @@ trait Legend extends StObject {
 }
 object Legend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: NonPositionScaleChannel,
     legend: LegendInternal,
     scaleType: typings.vegaLite.scaleMod.ScaleType
@@ -28,22 +27,16 @@ object Legend {
     __obj.asInstanceOf[Legend]
   }
   
-  @scala.inline
-  implicit class LegendMutableBuilder[Self <: Legend] (val x: Self) extends AnyVal {
+  extension [Self <: Legend](x: Self) {
     
-    @scala.inline
-    def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegend(value: LegendInternal): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: LegendInternal): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+    inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
   }
 }

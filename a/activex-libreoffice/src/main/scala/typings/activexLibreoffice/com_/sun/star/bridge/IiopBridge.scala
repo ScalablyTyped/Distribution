@@ -23,8 +23,7 @@ trait IiopBridge
      with XComponent
 object IiopBridge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Description: String,
     Name: String,
     acquire: () => Unit,

@@ -13,8 +13,7 @@ trait StripeBankTokenResponse
 }
 object StripeBankTokenResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bank_account: Bankname,
     client_ip: String,
     created: Double,
@@ -30,10 +29,8 @@ object StripeBankTokenResponse {
     __obj.asInstanceOf[StripeBankTokenResponse]
   }
   
-  @scala.inline
-  implicit class StripeBankTokenResponseMutableBuilder[Self <: StripeBankTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StripeBankTokenResponse](x: Self) {
     
-    @scala.inline
-    def setBank_account(value: Bankname): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
+    inline def setBank_account(value: Bankname): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
   }
 }

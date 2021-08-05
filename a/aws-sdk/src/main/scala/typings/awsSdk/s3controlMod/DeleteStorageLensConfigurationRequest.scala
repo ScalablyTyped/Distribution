@@ -18,19 +18,15 @@ trait DeleteStorageLensConfigurationRequest extends StObject {
 }
 object DeleteStorageLensConfigurationRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, ConfigId: ConfigId): DeleteStorageLensConfigurationRequest = {
+  inline def apply(AccountId: AccountId, ConfigId: ConfigId): DeleteStorageLensConfigurationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ConfigId = ConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStorageLensConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteStorageLensConfigurationRequestMutableBuilder[Self <: DeleteStorageLensConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteStorageLensConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigId(value: ConfigId): Self = StObject.set(x, "ConfigId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: ConfigId): Self = StObject.set(x, "ConfigId", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ object Backtracer {
   @JSGlobal("Backtracer.ACCURATE")
   @js.native
   def ACCURATE: typings.fridaGum.Backtracer = js.native
-  @scala.inline
-  def ACCURATE_=(x: typings.fridaGum.Backtracer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCURATE")(x.asInstanceOf[js.Any])
+  inline def ACCURATE_=(x: typings.fridaGum.Backtracer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCURATE")(x.asInstanceOf[js.Any])
   
   /**
     * The fuzzy backtracers perform forensics on the stack in order to guess
@@ -37,6 +36,5 @@ object Backtracer {
   @JSGlobal("Backtracer.FUZZY")
   @js.native
   def FUZZY: typings.fridaGum.Backtracer = js.native
-  @scala.inline
-  def FUZZY_=(x: typings.fridaGum.Backtracer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FUZZY")(x.asInstanceOf[js.Any])
+  inline def FUZZY_=(x: typings.fridaGum.Backtracer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FUZZY")(x.asInstanceOf[js.Any])
 }

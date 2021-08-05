@@ -121,8 +121,7 @@ trait ContextMenuParams extends StObject {
 }
 object ContextMenuParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dictionarySuggestions: js.Array[String],
     editFlags: EditFlags,
     frameCharset: String,
@@ -147,67 +146,46 @@ object ContextMenuParams {
     __obj.asInstanceOf[ContextMenuParams]
   }
   
-  @scala.inline
-  implicit class ContextMenuParamsMutableBuilder[Self <: ContextMenuParams] (val x: Self) extends AnyVal {
+  extension [Self <: ContextMenuParams](x: Self) {
     
-    @scala.inline
-    def setDictionarySuggestions(value: js.Array[String]): Self = StObject.set(x, "dictionarySuggestions", value.asInstanceOf[js.Any])
+    inline def setDictionarySuggestions(value: js.Array[String]): Self = StObject.set(x, "dictionarySuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictionarySuggestionsVarargs(value: String*): Self = StObject.set(x, "dictionarySuggestions", js.Array(value :_*))
+    inline def setDictionarySuggestionsVarargs(value: String*): Self = StObject.set(x, "dictionarySuggestions", js.Array(value :_*))
     
-    @scala.inline
-    def setEditFlags(value: EditFlags): Self = StObject.set(x, "editFlags", value.asInstanceOf[js.Any])
+    inline def setEditFlags(value: EditFlags): Self = StObject.set(x, "editFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCharset(value: String): Self = StObject.set(x, "frameCharset", value.asInstanceOf[js.Any])
+    inline def setFrameCharset(value: String): Self = StObject.set(x, "frameCharset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameURL(value: String): Self = StObject.set(x, "frameURL", value.asInstanceOf[js.Any])
+    inline def setFrameURL(value: String): Self = StObject.set(x, "frameURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasImageContents(value: Boolean): Self = StObject.set(x, "hasImageContents", value.asInstanceOf[js.Any])
+    inline def setHasImageContents(value: Boolean): Self = StObject.set(x, "hasImageContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFieldType(value: String): Self = StObject.set(x, "inputFieldType", value.asInstanceOf[js.Any])
+    inline def setInputFieldType(value: String): Self = StObject.set(x, "inputFieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
+    inline def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
+    inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
+    inline def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaFlags(value: MediaFlags): Self = StObject.set(x, "mediaFlags", value.asInstanceOf[js.Any])
+    inline def setMediaFlags(value: MediaFlags): Self = StObject.set(x, "mediaFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: none | image | audio | video | canvas | file | plugin): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: none | image | audio | video | canvas | file | plugin): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuSourceType(value: none | mouse | keyboard | touch | touchMenu): Self = StObject.set(x, "menuSourceType", value.asInstanceOf[js.Any])
+    inline def setMenuSourceType(value: none | mouse | keyboard | touch | touchMenu): Self = StObject.set(x, "menuSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMisspelledWord(value: String): Self = StObject.set(x, "misspelledWord", value.asInstanceOf[js.Any])
+    inline def setMisspelledWord(value: String): Self = StObject.set(x, "misspelledWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageURL(value: String): Self = StObject.set(x, "pageURL", value.asInstanceOf[js.Any])
+    inline def setPageURL(value: String): Self = StObject.set(x, "pageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
+    inline def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcURL(value: String): Self = StObject.set(x, "srcURL", value.asInstanceOf[js.Any])
+    inline def setSrcURL(value: String): Self = StObject.set(x, "srcURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+    inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

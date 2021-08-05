@@ -13,16 +13,13 @@ trait GetFunctionConcurrencyRequest extends StObject {
 }
 object GetFunctionConcurrencyRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName): GetFunctionConcurrencyRequest = {
+  inline def apply(FunctionName: FunctionName): GetFunctionConcurrencyRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionConcurrencyRequest]
   }
   
-  @scala.inline
-  implicit class GetFunctionConcurrencyRequestMutableBuilder[Self <: GetFunctionConcurrencyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionConcurrencyRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
   }
 }

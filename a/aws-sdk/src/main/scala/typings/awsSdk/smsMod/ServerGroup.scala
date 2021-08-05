@@ -23,34 +23,25 @@ trait ServerGroup extends StObject {
 }
 object ServerGroup {
   
-  @scala.inline
-  def apply(): ServerGroup = {
+  inline def apply(): ServerGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerGroup]
   }
   
-  @scala.inline
-  implicit class ServerGroupMutableBuilder[Self <: ServerGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ServerGroup](x: Self) {
     
-    @scala.inline
-    def setName(value: ServerGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ServerGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
+    inline def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerGroupIdUndefined: Self = StObject.set(x, "serverGroupId", js.undefined)
+    inline def setServerGroupIdUndefined: Self = StObject.set(x, "serverGroupId", js.undefined)
     
-    @scala.inline
-    def setServerList(value: ServerList): Self = StObject.set(x, "serverList", value.asInstanceOf[js.Any])
+    inline def setServerList(value: ServerList): Self = StObject.set(x, "serverList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerListUndefined: Self = StObject.set(x, "serverList", js.undefined)
+    inline def setServerListUndefined: Self = StObject.set(x, "serverList", js.undefined)
     
-    @scala.inline
-    def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value :_*))
+    inline def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value :_*))
   }
 }

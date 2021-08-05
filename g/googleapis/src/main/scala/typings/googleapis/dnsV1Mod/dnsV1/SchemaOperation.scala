@@ -28,61 +28,43 @@ trait SchemaOperation extends StObject {
 }
 object SchemaOperation {
   
-  @scala.inline
-  def apply(): SchemaOperation = {
+  inline def apply(): SchemaOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperation]
   }
   
-  @scala.inline
-  implicit class SchemaOperationMutableBuilder[Self <: SchemaOperation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperation](x: Self) {
     
-    @scala.inline
-    def setDnsKeyContext(value: SchemaOperationDnsKeyContext): Self = StObject.set(x, "dnsKeyContext", value.asInstanceOf[js.Any])
+    inline def setDnsKeyContext(value: SchemaOperationDnsKeyContext): Self = StObject.set(x, "dnsKeyContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsKeyContextUndefined: Self = StObject.set(x, "dnsKeyContext", js.undefined)
+    inline def setDnsKeyContextUndefined: Self = StObject.set(x, "dnsKeyContext", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setZoneContext(value: SchemaOperationManagedZoneContext): Self = StObject.set(x, "zoneContext", value.asInstanceOf[js.Any])
+    inline def setZoneContext(value: SchemaOperationManagedZoneContext): Self = StObject.set(x, "zoneContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneContextUndefined: Self = StObject.set(x, "zoneContext", js.undefined)
+    inline def setZoneContextUndefined: Self = StObject.set(x, "zoneContext", js.undefined)
   }
 }

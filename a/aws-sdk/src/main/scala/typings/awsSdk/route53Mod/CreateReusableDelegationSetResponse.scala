@@ -18,19 +18,15 @@ trait CreateReusableDelegationSetResponse extends StObject {
 }
 object CreateReusableDelegationSetResponse {
   
-  @scala.inline
-  def apply(DelegationSet: DelegationSet, Location: ResourceURI): CreateReusableDelegationSetResponse = {
+  inline def apply(DelegationSet: DelegationSet, Location: ResourceURI): CreateReusableDelegationSetResponse = {
     val __obj = js.Dynamic.literal(DelegationSet = DelegationSet.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReusableDelegationSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateReusableDelegationSetResponseMutableBuilder[Self <: CreateReusableDelegationSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReusableDelegationSetResponse](x: Self) {
     
-    @scala.inline
-    def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
+    inline def setDelegationSet(value: DelegationSet): Self = StObject.set(x, "DelegationSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: ResourceURI): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ResourceURI): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
   }
 }

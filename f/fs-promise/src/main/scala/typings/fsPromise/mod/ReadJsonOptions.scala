@@ -14,25 +14,19 @@ trait ReadJsonOptions extends StObject {
 }
 object ReadJsonOptions {
   
-  @scala.inline
-  def apply(encoding: String, reviver: (js.Any, js.Any) => js.Any): ReadJsonOptions = {
+  inline def apply(encoding: String, reviver: (js.Any, js.Any) => js.Any): ReadJsonOptions = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], reviver = js.Any.fromFunction2(reviver))
     __obj.asInstanceOf[ReadJsonOptions]
   }
   
-  @scala.inline
-  implicit class ReadJsonOptionsMutableBuilder[Self <: ReadJsonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadJsonOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
-    @scala.inline
-    def setReviver(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+    inline def setReviver(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
   }
 }

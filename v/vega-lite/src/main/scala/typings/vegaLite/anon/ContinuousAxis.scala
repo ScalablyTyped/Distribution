@@ -22,8 +22,7 @@ trait ContinuousAxis extends StObject {
 }
 object ContinuousAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     continuousAxis: x | y,
     continuousAxisChannelDef: PositionFieldDef[String],
     continuousAxisChannelDef2: SecondaryFieldDef[String],
@@ -34,22 +33,16 @@ object ContinuousAxis {
     __obj.asInstanceOf[ContinuousAxis]
   }
   
-  @scala.inline
-  implicit class ContinuousAxisMutableBuilder[Self <: ContinuousAxis] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousAxis](x: Self) {
     
-    @scala.inline
-    def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])
+    inline def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousAxisChannelDef(value: PositionFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDef", value.asInstanceOf[js.Any])
+    inline def setContinuousAxisChannelDef(value: PositionFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousAxisChannelDef2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDef2", value.asInstanceOf[js.Any])
+    inline def setContinuousAxisChannelDef2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDef2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousAxisChannelDefError(value: SecondaryFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDefError", value.asInstanceOf[js.Any])
+    inline def setContinuousAxisChannelDefError(value: SecondaryFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDefError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousAxisChannelDefError2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDefError2", value.asInstanceOf[js.Any])
+    inline def setContinuousAxisChannelDefError2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDefError2", value.asInstanceOf[js.Any])
   }
 }

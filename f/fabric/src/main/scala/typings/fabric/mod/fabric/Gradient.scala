@@ -44,10 +44,8 @@ object Gradient {
     * @param {Object} obj
     * @param {Object} [options] Options object
     */
-  @scala.inline
-  def forObject(obj: js.Any): typings.fabric.fabricImplMod.Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
-  @scala.inline
-  def forObject(obj: js.Any, options: IGradientOptions): typings.fabric.fabricImplMod.Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
+  inline def forObject(obj: js.Any): typings.fabric.fabricImplMod.Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
+  inline def forObject(obj: js.Any, options: IGradientOptions): typings.fabric.fabricImplMod.Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
   
   /**
     * Returns {@link fabric.Gradient} instance from an SVG element
@@ -59,6 +57,5 @@ object Gradient {
     * @see http://www.w3.org/TR/SVG/pservers.html#LinearGradientElement
     * @see http://www.w3.org/TR/SVG/pservers.html#RadialGradientElement
     */
-  @scala.inline
-  def fromElement(el: SVGGradientElement, instance: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(el.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
+  inline def fromElement(el: SVGGradientElement, instance: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(el.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
 }

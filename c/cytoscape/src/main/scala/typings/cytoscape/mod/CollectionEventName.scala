@@ -27,45 +27,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CollectionEventName extends StObject
 object CollectionEventName {
   
-  @scala.inline
-  def add: typings.cytoscape.cytoscapeStrings.add = "add".asInstanceOf[typings.cytoscape.cytoscapeStrings.add]
+  inline def add: typings.cytoscape.cytoscapeStrings.add = "add".asInstanceOf[typings.cytoscape.cytoscapeStrings.add]
   
-  @scala.inline
-  def data: typings.cytoscape.cytoscapeStrings.data = "data".asInstanceOf[typings.cytoscape.cytoscapeStrings.data]
+  inline def data: typings.cytoscape.cytoscapeStrings.data = "data".asInstanceOf[typings.cytoscape.cytoscapeStrings.data]
   
-  @scala.inline
-  def drag: typings.cytoscape.cytoscapeStrings.drag = "drag".asInstanceOf[typings.cytoscape.cytoscapeStrings.drag]
+  inline def drag: typings.cytoscape.cytoscapeStrings.drag = "drag".asInstanceOf[typings.cytoscape.cytoscapeStrings.drag]
   
-  @scala.inline
-  def free: typings.cytoscape.cytoscapeStrings.free = "free".asInstanceOf[typings.cytoscape.cytoscapeStrings.free]
+  inline def free: typings.cytoscape.cytoscapeStrings.free = "free".asInstanceOf[typings.cytoscape.cytoscapeStrings.free]
   
-  @scala.inline
-  def grab: typings.cytoscape.cytoscapeStrings.grab = "grab".asInstanceOf[typings.cytoscape.cytoscapeStrings.grab]
+  inline def grab: typings.cytoscape.cytoscapeStrings.grab = "grab".asInstanceOf[typings.cytoscape.cytoscapeStrings.grab]
   
-  @scala.inline
-  def grabon: typings.cytoscape.cytoscapeStrings.grabon = "grabon".asInstanceOf[typings.cytoscape.cytoscapeStrings.grabon]
+  inline def grabon: typings.cytoscape.cytoscapeStrings.grabon = "grabon".asInstanceOf[typings.cytoscape.cytoscapeStrings.grabon]
   
-  @scala.inline
-  def lock: typings.cytoscape.cytoscapeStrings.lock = "lock".asInstanceOf[typings.cytoscape.cytoscapeStrings.lock]
+  inline def lock: typings.cytoscape.cytoscapeStrings.lock = "lock".asInstanceOf[typings.cytoscape.cytoscapeStrings.lock]
   
-  @scala.inline
-  def position: typings.cytoscape.cytoscapeStrings.position = "position".asInstanceOf[typings.cytoscape.cytoscapeStrings.position]
+  inline def position: typings.cytoscape.cytoscapeStrings.position = "position".asInstanceOf[typings.cytoscape.cytoscapeStrings.position]
   
-  @scala.inline
-  def remove: typings.cytoscape.cytoscapeStrings.remove = "remove".asInstanceOf[typings.cytoscape.cytoscapeStrings.remove]
+  inline def remove: typings.cytoscape.cytoscapeStrings.remove = "remove".asInstanceOf[typings.cytoscape.cytoscapeStrings.remove]
   
-  @scala.inline
-  def scratch: typings.cytoscape.cytoscapeStrings.scratch = "scratch".asInstanceOf[typings.cytoscape.cytoscapeStrings.scratch]
+  inline def scratch: typings.cytoscape.cytoscapeStrings.scratch = "scratch".asInstanceOf[typings.cytoscape.cytoscapeStrings.scratch]
   
-  @scala.inline
-  def select: typings.cytoscape.cytoscapeStrings.select = "select".asInstanceOf[typings.cytoscape.cytoscapeStrings.select]
+  inline def select: typings.cytoscape.cytoscapeStrings.select = "select".asInstanceOf[typings.cytoscape.cytoscapeStrings.select]
   
-  @scala.inline
-  def style: typings.cytoscape.cytoscapeStrings.style = "style".asInstanceOf[typings.cytoscape.cytoscapeStrings.style]
+  inline def style: typings.cytoscape.cytoscapeStrings.style = "style".asInstanceOf[typings.cytoscape.cytoscapeStrings.style]
   
-  @scala.inline
-  def unlock: typings.cytoscape.cytoscapeStrings.unlock = "unlock".asInstanceOf[typings.cytoscape.cytoscapeStrings.unlock]
+  inline def unlock: typings.cytoscape.cytoscapeStrings.unlock = "unlock".asInstanceOf[typings.cytoscape.cytoscapeStrings.unlock]
   
-  @scala.inline
-  def unselect: typings.cytoscape.cytoscapeStrings.unselect = "unselect".asInstanceOf[typings.cytoscape.cytoscapeStrings.unselect]
+  inline def unselect: typings.cytoscape.cytoscapeStrings.unselect = "unselect".asInstanceOf[typings.cytoscape.cytoscapeStrings.unselect]
 }

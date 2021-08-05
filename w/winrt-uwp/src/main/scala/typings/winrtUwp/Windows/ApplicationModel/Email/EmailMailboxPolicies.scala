@@ -27,8 +27,7 @@ trait EmailMailboxPolicies extends StObject {
 }
 object EmailMailboxPolicies {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowSmimeSoftCertificates: Boolean,
     allowedSmimeEncryptionAlgorithmNegotiation: EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation,
     mustEncryptSmimeMessages: Boolean,
@@ -40,25 +39,18 @@ object EmailMailboxPolicies {
     __obj.asInstanceOf[EmailMailboxPolicies]
   }
   
-  @scala.inline
-  implicit class EmailMailboxPoliciesMutableBuilder[Self <: EmailMailboxPolicies] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxPolicies](x: Self) {
     
-    @scala.inline
-    def setAllowSmimeSoftCertificates(value: Boolean): Self = StObject.set(x, "allowSmimeSoftCertificates", value.asInstanceOf[js.Any])
+    inline def setAllowSmimeSoftCertificates(value: Boolean): Self = StObject.set(x, "allowSmimeSoftCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedSmimeEncryptionAlgorithmNegotiation(value: EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation): Self = StObject.set(x, "allowedSmimeEncryptionAlgorithmNegotiation", value.asInstanceOf[js.Any])
+    inline def setAllowedSmimeEncryptionAlgorithmNegotiation(value: EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation): Self = StObject.set(x, "allowedSmimeEncryptionAlgorithmNegotiation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustEncryptSmimeMessages(value: Boolean): Self = StObject.set(x, "mustEncryptSmimeMessages", value.asInstanceOf[js.Any])
+    inline def setMustEncryptSmimeMessages(value: Boolean): Self = StObject.set(x, "mustEncryptSmimeMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustSignSmimeMessages(value: Boolean): Self = StObject.set(x, "mustSignSmimeMessages", value.asInstanceOf[js.Any])
+    inline def setMustSignSmimeMessages(value: Boolean): Self = StObject.set(x, "mustSignSmimeMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredSmimeEncryptionAlgorithm(value: EmailMailboxSmimeEncryptionAlgorithm): Self = StObject.set(x, "requiredSmimeEncryptionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setRequiredSmimeEncryptionAlgorithm(value: EmailMailboxSmimeEncryptionAlgorithm): Self = StObject.set(x, "requiredSmimeEncryptionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredSmimeSigningAlgorithm(value: EmailMailboxSmimeSigningAlgorithm): Self = StObject.set(x, "requiredSmimeSigningAlgorithm", value.asInstanceOf[js.Any])
+    inline def setRequiredSmimeSigningAlgorithm(value: EmailMailboxSmimeSigningAlgorithm): Self = StObject.set(x, "requiredSmimeSigningAlgorithm", value.asInstanceOf[js.Any])
   }
 }

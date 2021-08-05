@@ -15,14 +15,14 @@ object dataMarkerMod {
   trait DataMarkerAnnotation
     extends typings.antvComponent.groupComponentMod.default[DataMarkerAnnotationCfg] {
     
-    var autoAdjust: js.Any = js.native
+    /* private */ var autoAdjust: js.Any = js.native
     
-    var getShapeAttrs: js.Any = js.native
+    /* private */ var getShapeAttrs: js.Any = js.native
     
-    var renderLine: js.Any = js.native
+    /* private */ var renderLine: js.Any = js.native
     
-    var renderPoint: js.Any = js.native
+    /* private */ var renderPoint: js.Any = js.native
     
-    var renderText: js.Any = js.native
+    /* private */ var renderText: js.Any = js.native
   }
 }

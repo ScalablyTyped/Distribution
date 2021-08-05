@@ -28,40 +28,29 @@ trait GetStatementResultResponse extends StObject {
 }
 object GetStatementResultResponse {
   
-  @scala.inline
-  def apply(Records: SqlRecords): GetStatementResultResponse = {
+  inline def apply(Records: SqlRecords): GetStatementResultResponse = {
     val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStatementResultResponse]
   }
   
-  @scala.inline
-  implicit class GetStatementResultResponseMutableBuilder[Self <: GetStatementResultResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetStatementResultResponse](x: Self) {
     
-    @scala.inline
-    def setColumnMetadata(value: ColumnMetadataList): Self = StObject.set(x, "ColumnMetadata", value.asInstanceOf[js.Any])
+    inline def setColumnMetadata(value: ColumnMetadataList): Self = StObject.set(x, "ColumnMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnMetadataUndefined: Self = StObject.set(x, "ColumnMetadata", js.undefined)
+    inline def setColumnMetadataUndefined: Self = StObject.set(x, "ColumnMetadata", js.undefined)
     
-    @scala.inline
-    def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnMetadata", js.Array(value :_*))
+    inline def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRecords(value: SqlRecords): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: SqlRecords): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsVarargs(value: FieldList*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: FieldList*): Self = StObject.set(x, "Records", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalNumRows(value: Long): Self = StObject.set(x, "TotalNumRows", value.asInstanceOf[js.Any])
+    inline def setTotalNumRows(value: Long): Self = StObject.set(x, "TotalNumRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalNumRowsUndefined: Self = StObject.set(x, "TotalNumRows", js.undefined)
+    inline def setTotalNumRowsUndefined: Self = StObject.set(x, "TotalNumRows", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait GoogleCloudVisionV1p4beta1BoundingPoly extends StObject {
 }
 object GoogleCloudVisionV1p4beta1BoundingPoly {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1BoundingPoly = {
+  inline def apply(): GoogleCloudVisionV1p4beta1BoundingPoly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1BoundingPoly]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1BoundingPolyMutableBuilder[Self <: GoogleCloudVisionV1p4beta1BoundingPoly] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1BoundingPoly](x: Self) {
     
-    @scala.inline
-    def setNormalizedVertices(value: js.Array[GoogleCloudVisionV1p4beta1NormalizedVertex]): Self = StObject.set(x, "normalizedVertices", value.asInstanceOf[js.Any])
+    inline def setNormalizedVertices(value: js.Array[GoogleCloudVisionV1p4beta1NormalizedVertex]): Self = StObject.set(x, "normalizedVertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
+    inline def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
     
-    @scala.inline
-    def setNormalizedVerticesVarargs(value: GoogleCloudVisionV1p4beta1NormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
+    inline def setNormalizedVerticesVarargs(value: GoogleCloudVisionV1p4beta1NormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
     
-    @scala.inline
-    def setVertices(value: js.Array[GoogleCloudVisionV1p4beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[GoogleCloudVisionV1p4beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    @scala.inline
-    def setVerticesVarargs(value: GoogleCloudVisionV1p4beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: GoogleCloudVisionV1p4beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

@@ -12,25 +12,19 @@ trait TouchOptionsArray extends StObject {
 }
 object TouchOptionsArray {
   
-  @scala.inline
-  def apply(): TouchOptionsArray = {
+  inline def apply(): TouchOptionsArray = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchOptionsArray]
   }
   
-  @scala.inline
-  implicit class TouchOptionsArrayMutableBuilder[Self <: TouchOptionsArray] (val x: Self) extends AnyVal {
+  extension [Self <: TouchOptionsArray](x: Self) {
     
-    @scala.inline
-    def `set-d`(value: String): Self = StObject.set(x, "-d", value.asInstanceOf[js.Any])
+    inline def `set-d`(value: String): Self = StObject.set(x, "-d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-dUndefined`: Self = StObject.set(x, "-d", js.undefined)
+    inline def `set-dUndefined`: Self = StObject.set(x, "-d", js.undefined)
     
-    @scala.inline
-    def `set-r`(value: String): Self = StObject.set(x, "-r", value.asInstanceOf[js.Any])
+    inline def `set-r`(value: String): Self = StObject.set(x, "-r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set-rUndefined`: Self = StObject.set(x, "-r", js.undefined)
+    inline def `set-rUndefined`: Self = StObject.set(x, "-r", js.undefined)
   }
 }

@@ -16,20 +16,16 @@ object anon {
   }
   object Actions {
     
-    @scala.inline
-    def apply(actions: TooltipActionsContextData, state: TooltipStateContextData): Actions = {
+    inline def apply(actions: TooltipActionsContextData, state: TooltipStateContextData): Actions = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Actions]
     }
     
-    @scala.inline
-    implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+    extension [Self <: Actions](x: Self) {
       
-      @scala.inline
-      def setActions(value: TooltipActionsContextData): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: TooltipActionsContextData): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: TooltipStateContextData): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TooltipStateContextData): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

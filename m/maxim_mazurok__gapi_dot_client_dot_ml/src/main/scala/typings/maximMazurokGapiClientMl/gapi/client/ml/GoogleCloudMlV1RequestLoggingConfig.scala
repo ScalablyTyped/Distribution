@@ -21,25 +21,19 @@ trait GoogleCloudMlV1RequestLoggingConfig extends StObject {
 }
 object GoogleCloudMlV1RequestLoggingConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1RequestLoggingConfig = {
+  inline def apply(): GoogleCloudMlV1RequestLoggingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1RequestLoggingConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1RequestLoggingConfigMutableBuilder[Self <: GoogleCloudMlV1RequestLoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1RequestLoggingConfig](x: Self) {
     
-    @scala.inline
-    def setBigqueryTableName(value: String): Self = StObject.set(x, "bigqueryTableName", value.asInstanceOf[js.Any])
+    inline def setBigqueryTableName(value: String): Self = StObject.set(x, "bigqueryTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryTableNameUndefined: Self = StObject.set(x, "bigqueryTableName", js.undefined)
+    inline def setBigqueryTableNameUndefined: Self = StObject.set(x, "bigqueryTableName", js.undefined)
     
-    @scala.inline
-    def setSamplingPercentage(value: Double): Self = StObject.set(x, "samplingPercentage", value.asInstanceOf[js.Any])
+    inline def setSamplingPercentage(value: Double): Self = StObject.set(x, "samplingPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingPercentageUndefined: Self = StObject.set(x, "samplingPercentage", js.undefined)
+    inline def setSamplingPercentageUndefined: Self = StObject.set(x, "samplingPercentage", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object labelStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: ILabelStyleProps): ILabelStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILabelStyles]
+  inline def getStyles(props: ILabelStyleProps): ILabelStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILabelStyles]
 }

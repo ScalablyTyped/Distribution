@@ -10,16 +10,13 @@ trait BlurEvent[TSuggestion] extends StObject {
 }
 object BlurEvent {
   
-  @scala.inline
-  def apply[TSuggestion](highlightedSuggestion: TSuggestion): BlurEvent[TSuggestion] = {
+  inline def apply[TSuggestion](highlightedSuggestion: TSuggestion): BlurEvent[TSuggestion] = {
     val __obj = js.Dynamic.literal(highlightedSuggestion = highlightedSuggestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlurEvent[TSuggestion]]
   }
   
-  @scala.inline
-  implicit class BlurEventMutableBuilder[Self <: BlurEvent[?], TSuggestion] (val x: Self & BlurEvent[TSuggestion]) extends AnyVal {
+  extension [Self <: BlurEvent[?], TSuggestion](x: Self & BlurEvent[TSuggestion]) {
     
-    @scala.inline
-    def setHighlightedSuggestion(value: TSuggestion): Self = StObject.set(x, "highlightedSuggestion", value.asInstanceOf[js.Any])
+    inline def setHighlightedSuggestion(value: TSuggestion): Self = StObject.set(x, "highlightedSuggestion", value.asInstanceOf[js.Any])
   }
 }

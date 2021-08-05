@@ -13,17 +13,14 @@ trait DSNodeComma
 }
 object DSNodeComma {
   
-  @scala.inline
-  def apply(): DSNodeComma = {
+  inline def apply(): DSNodeComma = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Comma")
     __obj.asInstanceOf[DSNodeComma]
   }
   
-  @scala.inline
-  implicit class DSNodeCommaMutableBuilder[Self <: DSNodeComma] (val x: Self) extends AnyVal {
+  extension [Self <: DSNodeComma](x: Self) {
     
-    @scala.inline
-    def setType(value: Comma): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Comma): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

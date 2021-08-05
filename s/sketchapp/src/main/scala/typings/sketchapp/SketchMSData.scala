@@ -18,8 +18,7 @@ trait SketchMSData extends StObject {
 }
 object SketchMSData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     document: SketchMSDocument,
     meta: SketchMSMeta,
     pages: js.Array[SketchMSPageLayer],
@@ -30,28 +29,20 @@ object SketchMSData {
     __obj.asInstanceOf[SketchMSData]
   }
   
-  @scala.inline
-  implicit class SketchMSDataMutableBuilder[Self <: SketchMSData] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSData](x: Self) {
     
-    @scala.inline
-    def setDocument(value: SketchMSDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: SketchMSDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: SketchMSMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: SketchMSMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: js.Array[SketchMSPageLayer]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[SketchMSPageLayer]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesVarargs(value: SketchMSPageLayer*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: SketchMSPageLayer*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setPreviews(value: js.Array[SketchMSPreview]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+    inline def setPreviews(value: js.Array[SketchMSPreview]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewsVarargs(value: SketchMSPreview*): Self = StObject.set(x, "previews", js.Array(value :_*))
+    inline def setPreviewsVarargs(value: SketchMSPreview*): Self = StObject.set(x, "previews", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: SketchMSUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: SketchMSUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait ReportHeapSnapshotProgressEventDataType extends StObject {
 }
 object ReportHeapSnapshotProgressEventDataType {
   
-  @scala.inline
-  def apply(done: Double, total: Double): ReportHeapSnapshotProgressEventDataType = {
+  inline def apply(done: Double, total: Double): ReportHeapSnapshotProgressEventDataType = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportHeapSnapshotProgressEventDataType]
   }
   
-  @scala.inline
-  implicit class ReportHeapSnapshotProgressEventDataTypeMutableBuilder[Self <: ReportHeapSnapshotProgressEventDataType] (val x: Self) extends AnyVal {
+  extension [Self <: ReportHeapSnapshotProgressEventDataType](x: Self) {
     
-    @scala.inline
-    def setDone(value: Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedUndefined: Self = StObject.set(x, "finished", js.undefined)
+    inline def setFinishedUndefined: Self = StObject.set(x, "finished", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

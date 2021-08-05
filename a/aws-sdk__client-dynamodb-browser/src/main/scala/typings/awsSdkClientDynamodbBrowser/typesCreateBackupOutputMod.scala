@@ -26,23 +26,18 @@ object typesCreateBackupOutputMod {
   }
   object CreateBackupOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateBackupOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateBackupOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateBackupOutput]
     }
     
-    @scala.inline
-    implicit class CreateBackupOutputMutableBuilder[Self <: CreateBackupOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBackupOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupDetails(value: UnmarshalledBackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
+      inline def setBackupDetails(value: UnmarshalledBackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
+      inline def setBackupDetailsUndefined: Self = StObject.set(x, "BackupDetails", js.undefined)
     }
   }
 }

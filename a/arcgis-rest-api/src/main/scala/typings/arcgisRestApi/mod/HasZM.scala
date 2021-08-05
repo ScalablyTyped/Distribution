@@ -12,25 +12,19 @@ trait HasZM extends StObject {
 }
 object HasZM {
   
-  @scala.inline
-  def apply(): HasZM = {
+  inline def apply(): HasZM = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HasZM]
   }
   
-  @scala.inline
-  implicit class HasZMMutableBuilder[Self <: HasZM] (val x: Self) extends AnyVal {
+  extension [Self <: HasZM](x: Self) {
     
-    @scala.inline
-    def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
+    inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
+    inline def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
     
-    @scala.inline
-    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+    inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+    inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
   }
 }

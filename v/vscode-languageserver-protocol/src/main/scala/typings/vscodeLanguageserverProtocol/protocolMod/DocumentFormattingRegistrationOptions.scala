@@ -10,8 +10,7 @@ trait DocumentFormattingRegistrationOptions
      with WorkDoneProgressOptions
 object DocumentFormattingRegistrationOptions {
   
-  @scala.inline
-  def apply(): DocumentFormattingRegistrationOptions = {
+  inline def apply(): DocumentFormattingRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[DocumentFormattingRegistrationOptions]
   }

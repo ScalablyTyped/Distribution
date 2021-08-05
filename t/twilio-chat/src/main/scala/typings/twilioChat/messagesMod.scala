@@ -32,9 +32,9 @@ object messagesMod {
       * @returns {Promise<SyncPaginator<Message>>} last page of messages by default
       * @private
       */
-    var _getMessages: js.Any = js.native
+    /* private */ var _getMessages: js.Any = js.native
     
-    var _upsertMessage: js.Any = js.native
+    /* private */ var _upsertMessage: js.Any = js.native
     
     val channel: Channel = js.native
     
@@ -47,9 +47,9 @@ object messagesMod {
       */
     def getMessages(pageSize: js.Any, anchor: js.Any, direction: js.Any): js.Promise[SyncPaginator[Message]] = js.native
     
-    val messagesByIndex: js.Any = js.native
+    /* private */ val messagesByIndex: js.Any = js.native
     
-    var messagesListPromise: js.Any = js.native
+    /* private */ var messagesListPromise: js.Any = js.native
     
     /**
       * Send Message to the channel
@@ -71,7 +71,7 @@ object messagesMod {
     def sendMedia(mediaContent: SendMediaOptions): js.Promise[js.Any] = js.native
     def sendMedia(mediaContent: SendMediaOptions, attributes: js.Any): js.Promise[js.Any] = js.native
     
-    val services: js.Any = js.native
+    /* private */ val services: js.Any = js.native
     
     /**
       * Subscribe to the Messages Event Stream
@@ -82,7 +82,7 @@ object messagesMod {
     
     def unsubscribe(): js.Promise[Unit] = js.native
     
-    var wrapPaginator: js.Any = js.native
+    /* private */ var wrapPaginator: js.Any = js.native
   }
   
   trait MessagesServices extends StObject {
@@ -95,23 +95,18 @@ object messagesMod {
   }
   object MessagesServices {
     
-    @scala.inline
-    def apply(mcsClient: McsClient, session: Session, syncClient: SyncClient): MessagesServices = {
+    inline def apply(mcsClient: McsClient, session: Session, syncClient: SyncClient): MessagesServices = {
       val __obj = js.Dynamic.literal(mcsClient = mcsClient.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], syncClient = syncClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessagesServices]
     }
     
-    @scala.inline
-    implicit class MessagesServicesMutableBuilder[Self <: MessagesServices] (val x: Self) extends AnyVal {
+    extension [Self <: MessagesServices](x: Self) {
       
-      @scala.inline
-      def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
+      inline def setMcsClient(value: McsClient): Self = StObject.set(x, "mcsClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+      inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
     }
   }
 }

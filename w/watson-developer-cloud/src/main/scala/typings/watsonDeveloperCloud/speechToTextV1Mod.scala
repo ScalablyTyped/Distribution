@@ -19,15 +19,13 @@ object speechToTextV1Mod {
   @JSImport("watson-developer-cloud/speech-to-text/v1", "ERR_NO_CORPORA")
   @js.native
   def ERR_NO_CORPORA: String = js.native
-  @scala.inline
-  def ERR_NO_CORPORA_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_NO_CORPORA")(x.asInstanceOf[js.Any])
+  inline def ERR_NO_CORPORA_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_NO_CORPORA")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("watson-developer-cloud/speech-to-text/v1", "ERR_TIMEOUT")
   @js.native
   def ERR_TIMEOUT: String = js.native
-  @scala.inline
-  def ERR_TIMEOUT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_TIMEOUT")(x.asInstanceOf[js.Any])
+  inline def ERR_TIMEOUT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_TIMEOUT")(x.asInstanceOf[js.Any])
   
   @js.native
   trait SpeechToTextV1

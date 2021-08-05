@@ -18,25 +18,19 @@ trait LintPolicyRequest extends StObject {
 }
 object LintPolicyRequest {
   
-  @scala.inline
-  def apply(): LintPolicyRequest = {
+  inline def apply(): LintPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LintPolicyRequest]
   }
   
-  @scala.inline
-  implicit class LintPolicyRequestMutableBuilder[Self <: LintPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LintPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
+    inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
+    inline def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
   }
 }

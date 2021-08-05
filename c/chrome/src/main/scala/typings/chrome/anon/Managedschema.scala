@@ -10,16 +10,13 @@ trait Managedschema extends StObject {
 }
 object Managedschema {
   
-  @scala.inline
-  def apply(managed_schema: String): Managedschema = {
+  inline def apply(managed_schema: String): Managedschema = {
     val __obj = js.Dynamic.literal(managed_schema = managed_schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[Managedschema]
   }
   
-  @scala.inline
-  implicit class ManagedschemaMutableBuilder[Self <: Managedschema] (val x: Self) extends AnyVal {
+  extension [Self <: Managedschema](x: Self) {
     
-    @scala.inline
-    def setManaged_schema(value: String): Self = StObject.set(x, "managed_schema", value.asInstanceOf[js.Any])
+    inline def setManaged_schema(value: String): Self = StObject.set(x, "managed_schema", value.asInstanceOf[js.Any])
   }
 }

@@ -11,10 +11,8 @@ object getPartitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPartition(): js.Promise[GetPartitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPartition")().asInstanceOf[js.Promise[GetPartitionResult]]
-  @scala.inline
-  def getPartition(opts: InvokeOptions): js.Promise[GetPartitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPartition")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPartitionResult]]
+  inline def getPartition(): js.Promise[GetPartitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPartition")().asInstanceOf[js.Promise[GetPartitionResult]]
+  inline def getPartition(opts: InvokeOptions): js.Promise[GetPartitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPartition")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPartitionResult]]
   
   trait GetPartitionResult extends StObject {
     
@@ -35,23 +33,18 @@ object getPartitionMod {
   }
   object GetPartitionResult {
     
-    @scala.inline
-    def apply(dnsSuffix: String, id: String, partition: String): GetPartitionResult = {
+    inline def apply(dnsSuffix: String, id: String, partition: String): GetPartitionResult = {
       val __obj = js.Dynamic.literal(dnsSuffix = dnsSuffix.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPartitionResult]
     }
     
-    @scala.inline
-    implicit class GetPartitionResultMutableBuilder[Self <: GetPartitionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPartitionResult](x: Self) {
       
-      @scala.inline
-      def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
+      inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     }
   }
 }

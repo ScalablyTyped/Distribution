@@ -19,8 +19,7 @@ object modelsMod {
   }
   object ErrorOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       missingScenarioInFeature: Boolean,
       missingScenarioInStepDefinitions: Boolean,
       missingStepInFeature: Boolean,
@@ -30,20 +29,15 @@ object modelsMod {
       __obj.asInstanceOf[ErrorOptions]
     }
     
-    @scala.inline
-    implicit class ErrorOptionsMutableBuilder[Self <: ErrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorOptions](x: Self) {
       
-      @scala.inline
-      def setMissingScenarioInFeature(value: Boolean): Self = StObject.set(x, "missingScenarioInFeature", value.asInstanceOf[js.Any])
+      inline def setMissingScenarioInFeature(value: Boolean): Self = StObject.set(x, "missingScenarioInFeature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingScenarioInStepDefinitions(value: Boolean): Self = StObject.set(x, "missingScenarioInStepDefinitions", value.asInstanceOf[js.Any])
+      inline def setMissingScenarioInStepDefinitions(value: Boolean): Self = StObject.set(x, "missingScenarioInStepDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingStepInFeature(value: Boolean): Self = StObject.set(x, "missingStepInFeature", value.asInstanceOf[js.Any])
+      inline def setMissingStepInFeature(value: Boolean): Self = StObject.set(x, "missingStepInFeature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingStepInStepDefinitions(value: Boolean): Self = StObject.set(x, "missingStepInStepDefinitions", value.asInstanceOf[js.Any])
+      inline def setMissingStepInStepDefinitions(value: Boolean): Self = StObject.set(x, "missingStepInStepDefinitions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,23 +49,18 @@ object modelsMod {
   }
   object FeatureFromStepDefinitions {
     
-    @scala.inline
-    def apply(scenarios: js.Array[ScenarioFromStepDefinitions], title: String): FeatureFromStepDefinitions = {
+    inline def apply(scenarios: js.Array[ScenarioFromStepDefinitions], title: String): FeatureFromStepDefinitions = {
       val __obj = js.Dynamic.literal(scenarios = scenarios.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeatureFromStepDefinitions]
     }
     
-    @scala.inline
-    implicit class FeatureFromStepDefinitionsMutableBuilder[Self <: FeatureFromStepDefinitions] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureFromStepDefinitions](x: Self) {
       
-      @scala.inline
-      def setScenarios(value: js.Array[ScenarioFromStepDefinitions]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
+      inline def setScenarios(value: js.Array[ScenarioFromStepDefinitions]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenariosVarargs(value: ScenarioFromStepDefinitions*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+      inline def setScenariosVarargs(value: ScenarioFromStepDefinitions*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,38 +76,28 @@ object modelsMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setErrors(value: ErrorOptions | Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: ErrorOptions | Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setLoadRelativePath(value: Boolean): Self = StObject.set(x, "loadRelativePath", value.asInstanceOf[js.Any])
+      inline def setLoadRelativePath(value: Boolean): Self = StObject.set(x, "loadRelativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadRelativePathUndefined: Self = StObject.set(x, "loadRelativePath", js.undefined)
+      inline def setLoadRelativePathUndefined: Self = StObject.set(x, "loadRelativePath", js.undefined)
       
-      @scala.inline
-      def setScenarioNameTemplate(value: /* vars */ ScenarioNameTemplateVars => String): Self = StObject.set(x, "scenarioNameTemplate", js.Any.fromFunction1(value))
+      inline def setScenarioNameTemplate(value: /* vars */ ScenarioNameTemplateVars => String): Self = StObject.set(x, "scenarioNameTemplate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScenarioNameTemplateUndefined: Self = StObject.set(x, "scenarioNameTemplate", js.undefined)
+      inline def setScenarioNameTemplateUndefined: Self = StObject.set(x, "scenarioNameTemplate", js.undefined)
       
-      @scala.inline
-      def setTagFilter(value: String): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
+      inline def setTagFilter(value: String): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
+      inline def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
     }
   }
   
@@ -136,8 +115,7 @@ object modelsMod {
   }
   object ParsedFeature {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       options: Options,
       scenarioOutlines: js.Array[ParsedScenarioOutline],
       scenarios: js.Array[ParsedScenario],
@@ -148,32 +126,23 @@ object modelsMod {
       __obj.asInstanceOf[ParsedFeature]
     }
     
-    @scala.inline
-    implicit class ParsedFeatureMutableBuilder[Self <: ParsedFeature] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedFeature](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioOutlines(value: js.Array[ParsedScenarioOutline]): Self = StObject.set(x, "scenarioOutlines", value.asInstanceOf[js.Any])
+      inline def setScenarioOutlines(value: js.Array[ParsedScenarioOutline]): Self = StObject.set(x, "scenarioOutlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioOutlinesVarargs(value: ParsedScenarioOutline*): Self = StObject.set(x, "scenarioOutlines", js.Array(value :_*))
+      inline def setScenarioOutlinesVarargs(value: ParsedScenarioOutline*): Self = StObject.set(x, "scenarioOutlines", js.Array(value :_*))
       
-      @scala.inline
-      def setScenarios(value: js.Array[ParsedScenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
+      inline def setScenarios(value: js.Array[ParsedScenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenariosVarargs(value: ParsedScenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+      inline def setScenariosVarargs(value: ParsedScenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,8 +160,7 @@ object modelsMod {
   }
   object ParsedScenario {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lineNumber: Double,
       skippedViaTagFilter: Boolean,
       steps: js.Array[ParsedStep],
@@ -203,29 +171,21 @@ object modelsMod {
       __obj.asInstanceOf[ParsedScenario]
     }
     
-    @scala.inline
-    implicit class ParsedScenarioMutableBuilder[Self <: ParsedScenario] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedScenario](x: Self) {
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkippedViaTagFilter(value: Boolean): Self = StObject.set(x, "skippedViaTagFilter", value.asInstanceOf[js.Any])
+      inline def setSkippedViaTagFilter(value: Boolean): Self = StObject.set(x, "skippedViaTagFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: js.Array[ParsedStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[ParsedStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: ParsedStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: ParsedStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,8 +205,7 @@ object modelsMod {
   }
   object ParsedScenarioOutline {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       lineNumber: Double,
       scenarios: js.Array[ParsedScenario],
       skippedViaTagFilter: Boolean,
@@ -258,35 +217,25 @@ object modelsMod {
       __obj.asInstanceOf[ParsedScenarioOutline]
     }
     
-    @scala.inline
-    implicit class ParsedScenarioOutlineMutableBuilder[Self <: ParsedScenarioOutline] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedScenarioOutline](x: Self) {
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarios(value: js.Array[ParsedScenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
+      inline def setScenarios(value: js.Array[ParsedScenario]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenariosVarargs(value: ParsedScenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+      inline def setScenariosVarargs(value: ParsedScenario*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
       
-      @scala.inline
-      def setSkippedViaTagFilter(value: Boolean): Self = StObject.set(x, "skippedViaTagFilter", value.asInstanceOf[js.Any])
+      inline def setSkippedViaTagFilter(value: Boolean): Self = StObject.set(x, "skippedViaTagFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: js.Array[ParsedStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[ParsedStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: ParsedStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: ParsedStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -302,26 +251,20 @@ object modelsMod {
   }
   object ParsedStep {
     
-    @scala.inline
-    def apply(keyword: String, lineNumber: Double, stepArgument: String | js.Object, stepText: String): ParsedStep = {
+    inline def apply(keyword: String, lineNumber: Double, stepArgument: String | js.Object, stepText: String): ParsedStep = {
       val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], stepArgument = stepArgument.asInstanceOf[js.Any], stepText = stepText.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedStep]
     }
     
-    @scala.inline
-    implicit class ParsedStepMutableBuilder[Self <: ParsedStep] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedStep](x: Self) {
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepArgument(value: String | js.Object): Self = StObject.set(x, "stepArgument", value.asInstanceOf[js.Any])
+      inline def setStepArgument(value: String | js.Object): Self = StObject.set(x, "stepArgument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepText(value: String): Self = StObject.set(x, "stepText", value.asInstanceOf[js.Any])
+      inline def setStepText(value: String): Self = StObject.set(x, "stepText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,23 +276,18 @@ object modelsMod {
   }
   object ScenarioFromStepDefinitions {
     
-    @scala.inline
-    def apply(steps: js.Array[StepFromStepDefinitions], title: String): ScenarioFromStepDefinitions = {
+    inline def apply(steps: js.Array[StepFromStepDefinitions], title: String): ScenarioFromStepDefinitions = {
       val __obj = js.Dynamic.literal(steps = steps.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScenarioFromStepDefinitions]
     }
     
-    @scala.inline
-    implicit class ScenarioFromStepDefinitionsMutableBuilder[Self <: ScenarioFromStepDefinitions] (val x: Self) extends AnyVal {
+    extension [Self <: ScenarioFromStepDefinitions](x: Self) {
       
-      @scala.inline
-      def setSteps(value: js.Array[StepFromStepDefinitions]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[StepFromStepDefinitions]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsVarargs(value: StepFromStepDefinitions*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: StepFromStepDefinitions*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -365,8 +303,7 @@ object modelsMod {
   }
   object ScenarioNameTemplateVars {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       featureTags: js.Array[String],
       featureTitle: String,
       scenarioTags: js.Array[String],
@@ -376,26 +313,19 @@ object modelsMod {
       __obj.asInstanceOf[ScenarioNameTemplateVars]
     }
     
-    @scala.inline
-    implicit class ScenarioNameTemplateVarsMutableBuilder[Self <: ScenarioNameTemplateVars] (val x: Self) extends AnyVal {
+    extension [Self <: ScenarioNameTemplateVars](x: Self) {
       
-      @scala.inline
-      def setFeatureTags(value: js.Array[String]): Self = StObject.set(x, "featureTags", value.asInstanceOf[js.Any])
+      inline def setFeatureTags(value: js.Array[String]): Self = StObject.set(x, "featureTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureTagsVarargs(value: String*): Self = StObject.set(x, "featureTags", js.Array(value :_*))
+      inline def setFeatureTagsVarargs(value: String*): Self = StObject.set(x, "featureTags", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatureTitle(value: String): Self = StObject.set(x, "featureTitle", value.asInstanceOf[js.Any])
+      inline def setFeatureTitle(value: String): Self = StObject.set(x, "featureTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioTags(value: js.Array[String]): Self = StObject.set(x, "scenarioTags", value.asInstanceOf[js.Any])
+      inline def setScenarioTags(value: js.Array[String]): Self = StObject.set(x, "scenarioTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioTagsVarargs(value: String*): Self = StObject.set(x, "scenarioTags", js.Array(value :_*))
+      inline def setScenarioTagsVarargs(value: String*): Self = StObject.set(x, "scenarioTags", js.Array(value :_*))
       
-      @scala.inline
-      def setScenarioTitle(value: String): Self = StObject.set(x, "scenarioTitle", value.asInstanceOf[js.Any])
+      inline def setScenarioTitle(value: String): Self = StObject.set(x, "scenarioTitle", value.asInstanceOf[js.Any])
     }
   }
   

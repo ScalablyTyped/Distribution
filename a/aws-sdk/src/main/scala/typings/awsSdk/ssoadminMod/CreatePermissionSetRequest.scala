@@ -38,46 +38,33 @@ trait CreatePermissionSetRequest extends StObject {
 }
 object CreatePermissionSetRequest {
   
-  @scala.inline
-  def apply(InstanceArn: InstanceArn, Name: PermissionSetName): CreatePermissionSetRequest = {
+  inline def apply(InstanceArn: InstanceArn, Name: PermissionSetName): CreatePermissionSetRequest = {
     val __obj = js.Dynamic.literal(InstanceArn = InstanceArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePermissionSetRequest]
   }
   
-  @scala.inline
-  implicit class CreatePermissionSetRequestMutableBuilder[Self <: CreatePermissionSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePermissionSetRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: PermissionSetDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: PermissionSetDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: PermissionSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PermissionSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelayState(value: RelayState): Self = StObject.set(x, "RelayState", value.asInstanceOf[js.Any])
+    inline def setRelayState(value: RelayState): Self = StObject.set(x, "RelayState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelayStateUndefined: Self = StObject.set(x, "RelayState", js.undefined)
+    inline def setRelayStateUndefined: Self = StObject.set(x, "RelayState", js.undefined)
     
-    @scala.inline
-    def setSessionDuration(value: Duration): Self = StObject.set(x, "SessionDuration", value.asInstanceOf[js.Any])
+    inline def setSessionDuration(value: Duration): Self = StObject.set(x, "SessionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionDurationUndefined: Self = StObject.set(x, "SessionDuration", js.undefined)
+    inline def setSessionDurationUndefined: Self = StObject.set(x, "SessionDuration", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait ListSchema extends StObject {
 }
 object ListSchema {
   
-  @scala.inline
-  def apply(Field: js.Array[FieldSchema]): ListSchema = {
+  inline def apply(Field: js.Array[FieldSchema]): ListSchema = {
     val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSchema]
   }
   
-  @scala.inline
-  implicit class ListSchemaMutableBuilder[Self <: ListSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ListSchema](x: Self) {
     
-    @scala.inline
-    def setField(value: js.Array[FieldSchema]): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: js.Array[FieldSchema]): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldVarargs(value: FieldSchema*): Self = StObject.set(x, "Field", js.Array(value :_*))
+    inline def setFieldVarargs(value: FieldSchema*): Self = StObject.set(x, "Field", js.Array(value :_*))
   }
 }

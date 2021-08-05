@@ -17,37 +17,27 @@ trait SelectTappConfig extends StObject {
 }
 object SelectTappConfig {
   
-  @scala.inline
-  def apply(): SelectTappConfig = {
+  inline def apply(): SelectTappConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectTappConfig]
   }
   
-  @scala.inline
-  implicit class SelectTappConfigMutableBuilder[Self <: SelectTappConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SelectTappConfig](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInternalName(value: String): Self = StObject.set(x, "internalName", value.asInstanceOf[js.Any])
+    inline def setInternalName(value: String): Self = StObject.set(x, "internalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalNameUndefined: Self = StObject.set(x, "internalName", js.undefined)
+    inline def setInternalNameUndefined: Self = StObject.set(x, "internalName", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
+    inline def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowNameUndefined: Self = StObject.set(x, "showName", js.undefined)
+    inline def setShowNameUndefined: Self = StObject.set(x, "showName", js.undefined)
   }
 }

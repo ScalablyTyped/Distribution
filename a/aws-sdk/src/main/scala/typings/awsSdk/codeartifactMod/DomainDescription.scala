@@ -53,67 +53,47 @@ trait DomainDescription extends StObject {
 }
 object DomainDescription {
   
-  @scala.inline
-  def apply(): DomainDescription = {
+  inline def apply(): DomainDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDescription]
   }
   
-  @scala.inline
-  implicit class DomainDescriptionMutableBuilder[Self <: DomainDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDescription](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setAssetSizeBytes(value: Long): Self = StObject.set(x, "assetSizeBytes", value.asInstanceOf[js.Any])
+    inline def setAssetSizeBytes(value: Long): Self = StObject.set(x, "assetSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetSizeBytesUndefined: Self = StObject.set(x, "assetSizeBytes", js.undefined)
+    inline def setAssetSizeBytesUndefined: Self = StObject.set(x, "assetSizeBytes", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
-    @scala.inline
-    def setEncryptionKey(value: Arn): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: Arn): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+    inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    @scala.inline
-    def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: AccountId): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: AccountId): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRepositoryCount(value: Integer): Self = StObject.set(x, "repositoryCount", value.asInstanceOf[js.Any])
+    inline def setRepositoryCount(value: Integer): Self = StObject.set(x, "repositoryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryCountUndefined: Self = StObject.set(x, "repositoryCount", js.undefined)
+    inline def setRepositoryCountUndefined: Self = StObject.set(x, "repositoryCount", js.undefined)
     
-    @scala.inline
-    def setS3BucketArn(value: Arn): Self = StObject.set(x, "s3BucketArn", value.asInstanceOf[js.Any])
+    inline def setS3BucketArn(value: Arn): Self = StObject.set(x, "s3BucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketArnUndefined: Self = StObject.set(x, "s3BucketArn", js.undefined)
+    inline def setS3BucketArnUndefined: Self = StObject.set(x, "s3BucketArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DomainStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DomainStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

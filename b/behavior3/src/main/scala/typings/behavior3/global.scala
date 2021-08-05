@@ -2396,7 +2396,6 @@ object global {
       * (consult http://www.ietf.org/rfc/rfc4122.txt).
       *
       */
-    @scala.inline
-    def createUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createUUID")().asInstanceOf[String]
+    inline def createUUID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createUUID")().asInstanceOf[String]
   }
 }

@@ -8,11 +8,9 @@ object simpleStatisticsStrings {
   
   @js.native
   sealed trait gaussian extends StObject
-  @scala.inline
-  def gaussian: gaussian = "gaussian".asInstanceOf[gaussian]
+  inline def gaussian: gaussian = "gaussian".asInstanceOf[gaussian]
   
   @js.native
   sealed trait nrd extends StObject
-  @scala.inline
-  def nrd: nrd = "nrd".asInstanceOf[nrd]
+  inline def nrd: nrd = "nrd".asInstanceOf[nrd]
 }

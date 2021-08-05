@@ -91,8 +91,7 @@ object global {
       val ^ : js.Any = js.native
       
       /** Register an extension. */
-      @scala.inline
-      def register(`extension`: typings.scratchEnv.ScratchExtension): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def register(`extension`: typings.scratchEnv.ScratchExtension): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
   }
   

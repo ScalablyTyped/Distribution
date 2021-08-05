@@ -23,31 +23,23 @@ trait TargetSummary extends StObject {
 }
 object TargetSummary {
   
-  @scala.inline
-  def apply(): TargetSummary = {
+  inline def apply(): TargetSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetSummary]
   }
   
-  @scala.inline
-  implicit class TargetSummaryMutableBuilder[Self <: TargetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TargetSummary](x: Self) {
     
-    @scala.inline
-    def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
+    inline def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAddressUndefined: Self = StObject.set(x, "TargetAddress", js.undefined)
+    inline def setTargetAddressUndefined: Self = StObject.set(x, "TargetAddress", js.undefined)
     
-    @scala.inline
-    def setTargetStatus(value: TargetStatus): Self = StObject.set(x, "TargetStatus", value.asInstanceOf[js.Any])
+    inline def setTargetStatus(value: TargetStatus): Self = StObject.set(x, "TargetStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetStatusUndefined: Self = StObject.set(x, "TargetStatus", js.undefined)
+    inline def setTargetStatusUndefined: Self = StObject.set(x, "TargetStatus", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
   }
 }

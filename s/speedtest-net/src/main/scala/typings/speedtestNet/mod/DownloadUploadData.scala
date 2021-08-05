@@ -18,28 +18,21 @@ trait DownloadUploadData extends StObject {
 }
 object DownloadUploadData {
   
-  @scala.inline
-  def apply(bandwidth: Double, bytes: Double, elapsed: Double): DownloadUploadData = {
+  inline def apply(bandwidth: Double, bytes: Double, elapsed: Double): DownloadUploadData = {
     val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], elapsed = elapsed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadUploadData]
   }
   
-  @scala.inline
-  implicit class DownloadUploadDataMutableBuilder[Self <: DownloadUploadData] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadUploadData](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+    inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

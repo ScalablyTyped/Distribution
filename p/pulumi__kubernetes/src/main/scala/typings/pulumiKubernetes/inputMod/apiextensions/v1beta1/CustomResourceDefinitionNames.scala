@@ -42,49 +42,35 @@ trait CustomResourceDefinitionNames extends StObject {
 }
 object CustomResourceDefinitionNames {
   
-  @scala.inline
-  def apply(kind: Input[String], plural: Input[String]): CustomResourceDefinitionNames = {
+  inline def apply(kind: Input[String], plural: Input[String]): CustomResourceDefinitionNames = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceDefinitionNames]
   }
   
-  @scala.inline
-  implicit class CustomResourceDefinitionNamesMutableBuilder[Self <: CustomResourceDefinitionNames] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceDefinitionNames](x: Self) {
     
-    @scala.inline
-    def setCategories(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: Input[String]*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: Input[String]*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListKind(value: Input[String]): Self = StObject.set(x, "listKind", value.asInstanceOf[js.Any])
+    inline def setListKind(value: Input[String]): Self = StObject.set(x, "listKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListKindUndefined: Self = StObject.set(x, "listKind", js.undefined)
+    inline def setListKindUndefined: Self = StObject.set(x, "listKind", js.undefined)
     
-    @scala.inline
-    def setPlural(value: Input[String]): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+    inline def setPlural(value: Input[String]): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "shortNames", value.asInstanceOf[js.Any])
+    inline def setShortNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "shortNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNamesUndefined: Self = StObject.set(x, "shortNames", js.undefined)
+    inline def setShortNamesUndefined: Self = StObject.set(x, "shortNames", js.undefined)
     
-    @scala.inline
-    def setShortNamesVarargs(value: Input[String]*): Self = StObject.set(x, "shortNames", js.Array(value :_*))
+    inline def setShortNamesVarargs(value: Input[String]*): Self = StObject.set(x, "shortNames", js.Array(value :_*))
     
-    @scala.inline
-    def setSingular(value: Input[String]): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+    inline def setSingular(value: Input[String]): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
+    inline def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
   }
 }

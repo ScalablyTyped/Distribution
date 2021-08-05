@@ -13,25 +13,19 @@ trait CustomFoundation extends StObject {
 }
 object CustomFoundation {
   
-  @scala.inline
-  def apply(): CustomFoundation = {
+  inline def apply(): CustomFoundation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomFoundation]
   }
   
-  @scala.inline
-  implicit class CustomFoundationMutableBuilder[Self <: CustomFoundation] (val x: Self) extends AnyVal {
+  extension [Self <: CustomFoundation](x: Self) {
     
-    @scala.inline
-    def setBase(value: CustomBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: CustomBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setPalette(value: CustomPalette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: CustomPalette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait FormattedTestResult extends StObject {
 }
 object FormattedTestResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assertionResults: js.Array[FormattedAssertionResult],
     coverage: js.Any,
     endTime: Double,
@@ -41,34 +40,24 @@ object FormattedTestResult {
     __obj.asInstanceOf[FormattedTestResult]
   }
   
-  @scala.inline
-  implicit class FormattedTestResultMutableBuilder[Self <: FormattedTestResult] (val x: Self) extends AnyVal {
+  extension [Self <: FormattedTestResult](x: Self) {
     
-    @scala.inline
-    def setAssertionResults(value: js.Array[FormattedAssertionResult]): Self = StObject.set(x, "assertionResults", value.asInstanceOf[js.Any])
+    inline def setAssertionResults(value: js.Array[FormattedAssertionResult]): Self = StObject.set(x, "assertionResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssertionResultsVarargs(value: FormattedAssertionResult*): Self = StObject.set(x, "assertionResults", js.Array(value :_*))
+    inline def setAssertionResultsVarargs(value: FormattedAssertionResult*): Self = StObject.set(x, "assertionResults", js.Array(value :_*))
     
-    @scala.inline
-    def setCoverage(value: js.Any): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: js.Any): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: failed | passed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: failed | passed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

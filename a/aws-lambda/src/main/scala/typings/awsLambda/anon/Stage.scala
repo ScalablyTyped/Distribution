@@ -19,8 +19,7 @@ trait Stage extends StObject {
 }
 object Stage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `execution-id`: String,
     pipeline: String,
     stage: String,
@@ -32,22 +31,16 @@ object Stage {
     __obj.asInstanceOf[Stage]
   }
   
-  @scala.inline
-  implicit class StageMutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
+  extension [Self <: Stage](x: Self) {
     
-    @scala.inline
-    def `setExecution-id`(value: String): Self = StObject.set(x, "execution-id", value.asInstanceOf[js.Any])
+    inline def `setExecution-id`(value: String): Self = StObject.set(x, "execution-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipeline(value: String): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: String): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: CodePipelineStageState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CodePipelineStageState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

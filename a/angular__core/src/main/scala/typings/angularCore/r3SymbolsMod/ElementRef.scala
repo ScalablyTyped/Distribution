@@ -43,16 +43,13 @@ trait ElementRef[T] extends StObject {
 }
 object ElementRef {
   
-  @scala.inline
-  def apply[T](nativeElement: T): ElementRef[T] = {
+  inline def apply[T](nativeElement: T): ElementRef[T] = {
     val __obj = js.Dynamic.literal(nativeElement = nativeElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementRef[T]]
   }
   
-  @scala.inline
-  implicit class ElementRefMutableBuilder[Self <: ElementRef[?], T] (val x: Self & ElementRef[T]) extends AnyVal {
+  extension [Self <: ElementRef[?], T](x: Self & ElementRef[T]) {
     
-    @scala.inline
-    def setNativeElement(value: T): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])
+    inline def setNativeElement(value: T): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])
   }
 }

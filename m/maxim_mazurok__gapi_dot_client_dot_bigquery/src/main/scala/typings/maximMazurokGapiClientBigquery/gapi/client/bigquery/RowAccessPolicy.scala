@@ -27,43 +27,31 @@ trait RowAccessPolicy extends StObject {
 }
 object RowAccessPolicy {
   
-  @scala.inline
-  def apply(): RowAccessPolicy = {
+  inline def apply(): RowAccessPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowAccessPolicy]
   }
   
-  @scala.inline
-  implicit class RowAccessPolicyMutableBuilder[Self <: RowAccessPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RowAccessPolicy](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setFilterPredicate(value: String): Self = StObject.set(x, "filterPredicate", value.asInstanceOf[js.Any])
+    inline def setFilterPredicate(value: String): Self = StObject.set(x, "filterPredicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPredicateUndefined: Self = StObject.set(x, "filterPredicate", js.undefined)
+    inline def setFilterPredicateUndefined: Self = StObject.set(x, "filterPredicate", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: String): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
     
-    @scala.inline
-    def setRowAccessPolicyReference(value: RowAccessPolicyReference): Self = StObject.set(x, "rowAccessPolicyReference", value.asInstanceOf[js.Any])
+    inline def setRowAccessPolicyReference(value: RowAccessPolicyReference): Self = StObject.set(x, "rowAccessPolicyReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowAccessPolicyReferenceUndefined: Self = StObject.set(x, "rowAccessPolicyReference", js.undefined)
+    inline def setRowAccessPolicyReferenceUndefined: Self = StObject.set(x, "rowAccessPolicyReference", js.undefined)
   }
 }

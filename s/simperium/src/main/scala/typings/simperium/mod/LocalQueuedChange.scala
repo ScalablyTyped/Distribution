@@ -12,24 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocalQueuedChange[T] extends StObject
 object LocalQueuedChange {
   
-  @scala.inline
-  def Id[T](id: EntityId, `object`: T): typings.simperium.anon.Id[T] = {
+  inline def Id[T](id: EntityId, `object`: T): typings.simperium.anon.Id[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("modify")
     __obj.asInstanceOf[typings.simperium.anon.Id[T]]
   }
   
-  @scala.inline
-  def Object[T](`object`: T, originalChange: Change[T]): typings.simperium.anon.Object[T] = {
+  inline def Object[T](`object`: T, originalChange: Change[T]): typings.simperium.anon.Object[T] = {
     val __obj = js.Dynamic.literal(originalChange = originalChange.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("full")
     __obj.asInstanceOf[typings.simperium.anon.Object[T]]
   }
   
-  @scala.inline
-  def Type(id: EntityId): typings.simperium.anon.Type = {
+  inline def Type(id: EntityId): typings.simperium.anon.Type = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("remove")
     __obj.asInstanceOf[typings.simperium.anon.Type]

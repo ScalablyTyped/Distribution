@@ -13,16 +13,13 @@ trait DeleteAnalysisSchemeResponse extends StObject {
 }
 object DeleteAnalysisSchemeResponse {
   
-  @scala.inline
-  def apply(AnalysisScheme: AnalysisSchemeStatus): DeleteAnalysisSchemeResponse = {
+  inline def apply(AnalysisScheme: AnalysisSchemeStatus): DeleteAnalysisSchemeResponse = {
     val __obj = js.Dynamic.literal(AnalysisScheme = AnalysisScheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAnalysisSchemeResponse]
   }
   
-  @scala.inline
-  implicit class DeleteAnalysisSchemeResponseMutableBuilder[Self <: DeleteAnalysisSchemeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAnalysisSchemeResponse](x: Self) {
     
-    @scala.inline
-    def setAnalysisScheme(value: AnalysisSchemeStatus): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
+    inline def setAnalysisScheme(value: AnalysisSchemeStatus): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
   }
 }

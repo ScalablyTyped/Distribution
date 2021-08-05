@@ -33,14 +33,12 @@ object HttpConnectionOptionHeaderValue {
     * @return An HttpConnectionOptionHeaderValue instance.
     */
   /* static member */
-  @scala.inline
-  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue]
+  inline def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue]
   
   /**
     * Determines whether a string is valid HttpConnectionOptionHeaderValue information.
     * @param input The string to validate.
     */
   /* static member */
-  @scala.inline
-  def tryParse(input: String): ConnectionOptionHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ConnectionOptionHeaderValue]
+  inline def tryParse(input: String): ConnectionOptionHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ConnectionOptionHeaderValue]
 }

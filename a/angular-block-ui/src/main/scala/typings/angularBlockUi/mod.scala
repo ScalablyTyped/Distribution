@@ -122,74 +122,52 @@ object mod {
     }
     object BlockUIConfig {
       
-      @scala.inline
-      def apply(): BlockUIConfig = {
+      inline def apply(): BlockUIConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BlockUIConfig]
       }
       
-      @scala.inline
-      implicit class BlockUIConfigMutableBuilder[Self <: BlockUIConfig] (val x: Self) extends AnyVal {
+      extension [Self <: BlockUIConfig](x: Self) {
         
-        @scala.inline
-        def setAutoBlock(value: Boolean): Self = StObject.set(x, "autoBlock", value.asInstanceOf[js.Any])
+        inline def setAutoBlock(value: Boolean): Self = StObject.set(x, "autoBlock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoBlockUndefined: Self = StObject.set(x, "autoBlock", js.undefined)
+        inline def setAutoBlockUndefined: Self = StObject.set(x, "autoBlock", js.undefined)
         
-        @scala.inline
-        def setAutoInjectBodyBlock(value: Boolean): Self = StObject.set(x, "autoInjectBodyBlock", value.asInstanceOf[js.Any])
+        inline def setAutoInjectBodyBlock(value: Boolean): Self = StObject.set(x, "autoInjectBodyBlock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoInjectBodyBlockUndefined: Self = StObject.set(x, "autoInjectBodyBlock", js.undefined)
+        inline def setAutoInjectBodyBlockUndefined: Self = StObject.set(x, "autoInjectBodyBlock", js.undefined)
         
-        @scala.inline
-        def setBlockBrowserNavigation(value: Boolean): Self = StObject.set(x, "blockBrowserNavigation", value.asInstanceOf[js.Any])
+        inline def setBlockBrowserNavigation(value: Boolean): Self = StObject.set(x, "blockBrowserNavigation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockBrowserNavigationUndefined: Self = StObject.set(x, "blockBrowserNavigation", js.undefined)
+        inline def setBlockBrowserNavigationUndefined: Self = StObject.set(x, "blockBrowserNavigation", js.undefined)
         
-        @scala.inline
-        def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+        inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+        inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
         
-        @scala.inline
-        def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+        inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+        inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         
-        @scala.inline
-        def setRequestFilter(value: /* config */ IRequestConfig => String | Boolean): Self = StObject.set(x, "requestFilter", js.Any.fromFunction1(value))
+        inline def setRequestFilter(value: /* config */ IRequestConfig => String | Boolean): Self = StObject.set(x, "requestFilter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
+        inline def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
         
-        @scala.inline
-        def setResetOnException(value: Boolean): Self = StObject.set(x, "resetOnException", value.asInstanceOf[js.Any])
+        inline def setResetOnException(value: Boolean): Self = StObject.set(x, "resetOnException", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResetOnExceptionUndefined: Self = StObject.set(x, "resetOnException", js.undefined)
+        inline def setResetOnExceptionUndefined: Self = StObject.set(x, "resetOnException", js.undefined)
         
-        @scala.inline
-        def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+        inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
         
-        @scala.inline
-        def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+        inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+        inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
       }
     }
     
@@ -199,17 +177,14 @@ object mod {
     }
     object BlockUIInstances {
       
-      @scala.inline
-      def apply(get: String => BlockUIService): BlockUIInstances = {
+      inline def apply(get: String => BlockUIService): BlockUIInstances = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
         __obj.asInstanceOf[BlockUIInstances]
       }
       
-      @scala.inline
-      implicit class BlockUIInstancesMutableBuilder[Self <: BlockUIInstances] (val x: Self) extends AnyVal {
+      extension [Self <: BlockUIInstances](x: Self) {
         
-        @scala.inline
-        def setGet(value: String => BlockUIService): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        inline def setGet(value: String => BlockUIService): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       }
     }
     

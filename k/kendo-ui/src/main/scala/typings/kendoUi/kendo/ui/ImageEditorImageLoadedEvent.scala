@@ -12,19 +12,15 @@ trait ImageEditorImageLoadedEvent
 }
 object ImageEditorImageLoadedEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ImageEditor): ImageEditorImageLoadedEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ImageEditor): ImageEditorImageLoadedEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageEditorImageLoadedEvent]
   }
   
-  @scala.inline
-  implicit class ImageEditorImageLoadedEventMutableBuilder[Self <: ImageEditorImageLoadedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEditorImageLoadedEvent](x: Self) {
     
-    @scala.inline
-    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object usePreviousMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def usePrevious[T](value: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePrevious")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  inline def usePrevious[T](value: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePrevious")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 }

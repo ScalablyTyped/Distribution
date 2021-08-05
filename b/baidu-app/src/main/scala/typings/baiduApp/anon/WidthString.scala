@@ -10,16 +10,13 @@ trait WidthString extends StObject {
 }
 object WidthString {
   
-  @scala.inline
-  def apply(width: String): WidthString = {
+  inline def apply(width: String): WidthString = {
     val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidthString]
   }
   
-  @scala.inline
-  implicit class WidthStringMutableBuilder[Self <: WidthString] (val x: Self) extends AnyVal {
+  extension [Self <: WidthString](x: Self) {
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

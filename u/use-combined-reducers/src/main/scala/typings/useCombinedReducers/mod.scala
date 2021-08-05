@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T, A](
+  inline def default[T, A](
     combinedReducers: Record[
       /* keyof T */ String, 
       js.Tuple2[

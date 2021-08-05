@@ -12,19 +12,15 @@ trait FancyReporterOptions
 }
 object FancyReporterOptions {
   
-  @scala.inline
-  def apply(): FancyReporterOptions = {
+  inline def apply(): FancyReporterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancyReporterOptions]
   }
   
-  @scala.inline
-  implicit class FancyReporterOptionsMutableBuilder[Self <: FancyReporterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FancyReporterOptions](x: Self) {
     
-    @scala.inline
-    def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
+    inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
+    inline def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
   }
 }

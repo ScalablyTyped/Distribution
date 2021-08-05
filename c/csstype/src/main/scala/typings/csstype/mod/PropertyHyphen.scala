@@ -14,31 +14,23 @@ trait PropertyHyphen extends StObject {
 }
 object PropertyHyphen {
   
-  @scala.inline
-  def apply(): PropertyHyphen = {
+  inline def apply(): PropertyHyphen = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyHyphen]
   }
   
-  @scala.inline
-  implicit class PropertyHyphenMutableBuilder[Self <: PropertyHyphen] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyHyphen](x: Self) {
     
-    @scala.inline
-    def setInherits(value: PropertyInheritsProperty): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
+    inline def setInherits(value: PropertyInheritsProperty): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
+    inline def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
     
-    @scala.inline
-    def `setInitial-value`(value: String): Self = StObject.set(x, "initial-value", value.asInstanceOf[js.Any])
+    inline def `setInitial-value`(value: String): Self = StObject.set(x, "initial-value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setInitial-valueUndefined`: Self = StObject.set(x, "initial-value", js.undefined)
+    inline def `setInitial-valueUndefined`: Self = StObject.set(x, "initial-value", js.undefined)
     
-    @scala.inline
-    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

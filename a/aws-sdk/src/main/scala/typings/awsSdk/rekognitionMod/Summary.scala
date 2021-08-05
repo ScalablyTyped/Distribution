@@ -10,19 +10,15 @@ trait Summary extends StObject {
 }
 object Summary {
   
-  @scala.inline
-  def apply(): Summary = {
+  inline def apply(): Summary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Summary]
   }
   
-  @scala.inline
-  implicit class SummaryMutableBuilder[Self <: Summary] (val x: Self) extends AnyVal {
+  extension [Self <: Summary](x: Self) {
     
-    @scala.inline
-    def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
+    inline def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
+    inline def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
   }
 }

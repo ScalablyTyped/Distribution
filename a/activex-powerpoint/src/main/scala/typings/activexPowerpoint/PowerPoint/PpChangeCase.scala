@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpChangeCase extends StObject
 object PpChangeCase {
   
-  @scala.inline
-  def ppCaseLower: `2` = 2.asInstanceOf[`2`]
+  inline def ppCaseLower: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppCaseSentence: `1` = 1.asInstanceOf[`1`]
+  inline def ppCaseSentence: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppCaseTitle: `4` = 4.asInstanceOf[`4`]
+  inline def ppCaseTitle: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppCaseToggle: `5` = 5.asInstanceOf[`5`]
+  inline def ppCaseToggle: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppCaseUpper: `3` = 3.asInstanceOf[`3`]
+  inline def ppCaseUpper: `3` = 3.asInstanceOf[`3`]
 }

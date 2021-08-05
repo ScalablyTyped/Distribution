@@ -9,8 +9,7 @@ trait EasClientDeviceInformation
      with IEasClientDeviceInformation
 object EasClientDeviceInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendlyName: String,
     id: String,
     operatingSystem: String,

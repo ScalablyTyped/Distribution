@@ -27,17 +27,14 @@ object mod {
   }
   object StripeConfigOptions {
     
-    @scala.inline
-    def apply(stripeAccount: String): StripeConfigOptions = {
+    inline def apply(stripeAccount: String): StripeConfigOptions = {
       val __obj = js.Dynamic.literal(stripeAccount = stripeAccount.asInstanceOf[js.Any])
       __obj.asInstanceOf[StripeConfigOptions]
     }
     
-    @scala.inline
-    implicit class StripeConfigOptionsMutableBuilder[Self <: StripeConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StripeConfigOptions](x: Self) {
       
-      @scala.inline
-      def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
+      inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,54 +80,39 @@ object mod {
   }
   object StripeError {
     
-    @scala.inline
-    def apply(`type`: errorType): StripeError = {
+    inline def apply(`type`: errorType): StripeError = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StripeError]
     }
     
-    @scala.inline
-    implicit class StripeErrorMutableBuilder[Self <: StripeError] (val x: Self) extends AnyVal {
+    extension [Self <: StripeError](x: Self) {
       
-      @scala.inline
-      def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+      inline def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChargeUndefined: Self = StObject.set(x, "charge", js.undefined)
+      inline def setChargeUndefined: Self = StObject.set(x, "charge", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDecline_code(value: String): Self = StObject.set(x, "decline_code", value.asInstanceOf[js.Any])
+      inline def setDecline_code(value: String): Self = StObject.set(x, "decline_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecline_codeUndefined: Self = StObject.set(x, "decline_code", js.undefined)
+      inline def setDecline_codeUndefined: Self = StObject.set(x, "decline_code", js.undefined)
       
-      @scala.inline
-      def setDoc_url(value: String): Self = StObject.set(x, "doc_url", value.asInstanceOf[js.Any])
+      inline def setDoc_url(value: String): Self = StObject.set(x, "doc_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoc_urlUndefined: Self = StObject.set(x, "doc_url", js.undefined)
+      inline def setDoc_urlUndefined: Self = StObject.set(x, "doc_url", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+      inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
       
-      @scala.inline
-      def setType(value: errorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: errorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,25 +217,18 @@ object mod {
   trait errorType extends StObject
   object errorType {
     
-    @scala.inline
-    def api_connection_error: typings.stripejs.stripejsStrings.api_connection_error = "api_connection_error".asInstanceOf[typings.stripejs.stripejsStrings.api_connection_error]
+    inline def api_connection_error: typings.stripejs.stripejsStrings.api_connection_error = "api_connection_error".asInstanceOf[typings.stripejs.stripejsStrings.api_connection_error]
     
-    @scala.inline
-    def api_error: typings.stripejs.stripejsStrings.api_error = "api_error".asInstanceOf[typings.stripejs.stripejsStrings.api_error]
+    inline def api_error: typings.stripejs.stripejsStrings.api_error = "api_error".asInstanceOf[typings.stripejs.stripejsStrings.api_error]
     
-    @scala.inline
-    def authentication_error: typings.stripejs.stripejsStrings.authentication_error = "authentication_error".asInstanceOf[typings.stripejs.stripejsStrings.authentication_error]
+    inline def authentication_error: typings.stripejs.stripejsStrings.authentication_error = "authentication_error".asInstanceOf[typings.stripejs.stripejsStrings.authentication_error]
     
-    @scala.inline
-    def card_error: typings.stripejs.stripejsStrings.card_error = "card_error".asInstanceOf[typings.stripejs.stripejsStrings.card_error]
+    inline def card_error: typings.stripejs.stripejsStrings.card_error = "card_error".asInstanceOf[typings.stripejs.stripejsStrings.card_error]
     
-    @scala.inline
-    def idempotency_error: typings.stripejs.stripejsStrings.idempotency_error = "idempotency_error".asInstanceOf[typings.stripejs.stripejsStrings.idempotency_error]
+    inline def idempotency_error: typings.stripejs.stripejsStrings.idempotency_error = "idempotency_error".asInstanceOf[typings.stripejs.stripejsStrings.idempotency_error]
     
-    @scala.inline
-    def invalid_request_error: typings.stripejs.stripejsStrings.invalid_request_error = "invalid_request_error".asInstanceOf[typings.stripejs.stripejsStrings.invalid_request_error]
+    inline def invalid_request_error: typings.stripejs.stripejsStrings.invalid_request_error = "invalid_request_error".asInstanceOf[typings.stripejs.stripejsStrings.invalid_request_error]
     
-    @scala.inline
-    def rate_limit_error: typings.stripejs.stripejsStrings.rate_limit_error = "rate_limit_error".asInstanceOf[typings.stripejs.stripejsStrings.rate_limit_error]
+    inline def rate_limit_error: typings.stripejs.stripejsStrings.rate_limit_error = "rate_limit_error".asInstanceOf[typings.stripejs.stripejsStrings.rate_limit_error]
   }
 }

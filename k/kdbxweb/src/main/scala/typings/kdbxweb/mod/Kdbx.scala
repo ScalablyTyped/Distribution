@@ -73,12 +73,9 @@ object Kdbx {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(credentials: Credentials, name: String): Kdbx = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Kdbx]
+  inline def create(credentials: Credentials, name: String): Kdbx = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Kdbx]
   
-  @scala.inline
-  def load(data: ArrayBuffer, credentials: Credentials): js.Promise[Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Kdbx]]
+  inline def load(data: ArrayBuffer, credentials: Credentials): js.Promise[Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Kdbx]]
   
-  @scala.inline
-  def loadXml(data: String, credentials: Credentials): js.Promise[Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadXml")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Kdbx]]
+  inline def loadXml(data: String, credentials: Credentials): js.Promise[Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadXml")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Kdbx]]
 }

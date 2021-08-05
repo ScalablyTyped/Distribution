@@ -18,28 +18,21 @@ trait DescribeNetworkAclsResult extends StObject {
 }
 object DescribeNetworkAclsResult {
   
-  @scala.inline
-  def apply(): DescribeNetworkAclsResult = {
+  inline def apply(): DescribeNetworkAclsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNetworkAclsResult]
   }
   
-  @scala.inline
-  implicit class DescribeNetworkAclsResultMutableBuilder[Self <: DescribeNetworkAclsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNetworkAclsResult](x: Self) {
     
-    @scala.inline
-    def setNetworkAcls(value: NetworkAclList): Self = StObject.set(x, "NetworkAcls", value.asInstanceOf[js.Any])
+    inline def setNetworkAcls(value: NetworkAclList): Self = StObject.set(x, "NetworkAcls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAclsUndefined: Self = StObject.set(x, "NetworkAcls", js.undefined)
+    inline def setNetworkAclsUndefined: Self = StObject.set(x, "NetworkAcls", js.undefined)
     
-    @scala.inline
-    def setNetworkAclsVarargs(value: NetworkAcl*): Self = StObject.set(x, "NetworkAcls", js.Array(value :_*))
+    inline def setNetworkAclsVarargs(value: NetworkAcl*): Self = StObject.set(x, "NetworkAcls", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

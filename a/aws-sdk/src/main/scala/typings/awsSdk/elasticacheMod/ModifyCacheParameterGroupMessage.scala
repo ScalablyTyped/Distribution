@@ -18,22 +18,17 @@ trait ModifyCacheParameterGroupMessage extends StObject {
 }
 object ModifyCacheParameterGroupMessage {
   
-  @scala.inline
-  def apply(CacheParameterGroupName: String, ParameterNameValues: ParameterNameValueList): ModifyCacheParameterGroupMessage = {
+  inline def apply(CacheParameterGroupName: String, ParameterNameValues: ParameterNameValueList): ModifyCacheParameterGroupMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName.asInstanceOf[js.Any], ParameterNameValues = ParameterNameValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCacheParameterGroupMessage]
   }
   
-  @scala.inline
-  implicit class ModifyCacheParameterGroupMessageMutableBuilder[Self <: ModifyCacheParameterGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyCacheParameterGroupMessage](x: Self) {
     
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
+    inline def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
+    inline def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
   }
 }

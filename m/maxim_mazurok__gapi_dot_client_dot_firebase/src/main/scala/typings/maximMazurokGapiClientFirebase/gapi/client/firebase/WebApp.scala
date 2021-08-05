@@ -34,52 +34,37 @@ trait WebApp extends StObject {
 }
 object WebApp {
   
-  @scala.inline
-  def apply(): WebApp = {
+  inline def apply(): WebApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebApp]
   }
   
-  @scala.inline
-  implicit class WebAppMutableBuilder[Self <: WebApp] (val x: Self) extends AnyVal {
+  extension [Self <: WebApp](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setAppUrls(value: js.Array[String]): Self = StObject.set(x, "appUrls", value.asInstanceOf[js.Any])
+    inline def setAppUrls(value: js.Array[String]): Self = StObject.set(x, "appUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUrlsUndefined: Self = StObject.set(x, "appUrls", js.undefined)
+    inline def setAppUrlsUndefined: Self = StObject.set(x, "appUrls", js.undefined)
     
-    @scala.inline
-    def setAppUrlsVarargs(value: String*): Self = StObject.set(x, "appUrls", js.Array(value :_*))
+    inline def setAppUrlsVarargs(value: String*): Self = StObject.set(x, "appUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setWebId(value: String): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
+    inline def setWebId(value: String): Self = StObject.set(x, "webId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebIdUndefined: Self = StObject.set(x, "webId", js.undefined)
+    inline def setWebIdUndefined: Self = StObject.set(x, "webId", js.undefined)
   }
 }

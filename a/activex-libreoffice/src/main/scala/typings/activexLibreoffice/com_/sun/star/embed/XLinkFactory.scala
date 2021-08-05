@@ -38,8 +38,7 @@ trait XLinkFactory
 }
 object XLinkFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstanceLinkUserInit: (SeqEquiv[Double], String, XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
     queryInterface: `type` => js.Any,
@@ -49,11 +48,9 @@ object XLinkFactory {
     __obj.asInstanceOf[XLinkFactory]
   }
   
-  @scala.inline
-  implicit class XLinkFactoryMutableBuilder[Self <: XLinkFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XLinkFactory](x: Self) {
     
-    @scala.inline
-    def setCreateInstanceLinkUserInit(
+    inline def setCreateInstanceLinkUserInit(
       value: (SeqEquiv[Double], String, XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface
     ): Self = StObject.set(x, "createInstanceLinkUserInit", js.Any.fromFunction6(value))
   }

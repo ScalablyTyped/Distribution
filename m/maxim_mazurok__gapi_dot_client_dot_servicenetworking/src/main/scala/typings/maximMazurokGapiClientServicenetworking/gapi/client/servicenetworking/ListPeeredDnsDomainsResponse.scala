@@ -11,22 +11,17 @@ trait ListPeeredDnsDomainsResponse extends StObject {
 }
 object ListPeeredDnsDomainsResponse {
   
-  @scala.inline
-  def apply(): ListPeeredDnsDomainsResponse = {
+  inline def apply(): ListPeeredDnsDomainsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPeeredDnsDomainsResponse]
   }
   
-  @scala.inline
-  implicit class ListPeeredDnsDomainsResponseMutableBuilder[Self <: ListPeeredDnsDomainsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPeeredDnsDomainsResponse](x: Self) {
     
-    @scala.inline
-    def setPeeredDnsDomains(value: js.Array[PeeredDnsDomain]): Self = StObject.set(x, "peeredDnsDomains", value.asInstanceOf[js.Any])
+    inline def setPeeredDnsDomains(value: js.Array[PeeredDnsDomain]): Self = StObject.set(x, "peeredDnsDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeeredDnsDomainsUndefined: Self = StObject.set(x, "peeredDnsDomains", js.undefined)
+    inline def setPeeredDnsDomainsUndefined: Self = StObject.set(x, "peeredDnsDomains", js.undefined)
     
-    @scala.inline
-    def setPeeredDnsDomainsVarargs(value: PeeredDnsDomain*): Self = StObject.set(x, "peeredDnsDomains", js.Array(value :_*))
+    inline def setPeeredDnsDomainsVarargs(value: PeeredDnsDomain*): Self = StObject.set(x, "peeredDnsDomains", js.Array(value :_*))
   }
 }

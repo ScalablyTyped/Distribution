@@ -91,21 +91,16 @@ object lightsailKeyPairMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: KeyPairState): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def get(name: String, id: Input[ID]): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def get(name: String, id: Input[ID], state: KeyPairState): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
     
     /**
       * Returns true if the given object is an instance of KeyPair.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ Boolean]
   }
   
   trait KeyPairArgs extends StObject {
@@ -132,38 +127,28 @@ object lightsailKeyPairMod {
   }
   object KeyPairArgs {
     
-    @scala.inline
-    def apply(): KeyPairArgs = {
+    inline def apply(): KeyPairArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyPairArgs]
     }
     
-    @scala.inline
-    implicit class KeyPairArgsMutableBuilder[Self <: KeyPairArgs] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPairArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
+      inline def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPgpKeyUndefined: Self = StObject.set(x, "pgpKey", js.undefined)
+      inline def setPgpKeyUndefined: Self = StObject.set(x, "pgpKey", js.undefined)
       
-      @scala.inline
-      def setPublicKey(value: Input[String]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: Input[String]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+      inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     }
   }
   
@@ -220,68 +205,48 @@ object lightsailKeyPairMod {
   }
   object KeyPairState {
     
-    @scala.inline
-    def apply(): KeyPairState = {
+    inline def apply(): KeyPairState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyPairState]
     }
     
-    @scala.inline
-    implicit class KeyPairStateMutableBuilder[Self <: KeyPairState] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPairState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEncryptedFingerprint(value: Input[String]): Self = StObject.set(x, "encryptedFingerprint", value.asInstanceOf[js.Any])
+      inline def setEncryptedFingerprint(value: Input[String]): Self = StObject.set(x, "encryptedFingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedFingerprintUndefined: Self = StObject.set(x, "encryptedFingerprint", js.undefined)
+      inline def setEncryptedFingerprintUndefined: Self = StObject.set(x, "encryptedFingerprint", js.undefined)
       
-      @scala.inline
-      def setEncryptedPrivateKey(value: Input[String]): Self = StObject.set(x, "encryptedPrivateKey", value.asInstanceOf[js.Any])
+      inline def setEncryptedPrivateKey(value: Input[String]): Self = StObject.set(x, "encryptedPrivateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptedPrivateKeyUndefined: Self = StObject.set(x, "encryptedPrivateKey", js.undefined)
+      inline def setEncryptedPrivateKeyUndefined: Self = StObject.set(x, "encryptedPrivateKey", js.undefined)
       
-      @scala.inline
-      def setFingerprint(value: Input[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: Input[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+      inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
+      inline def setPgpKey(value: Input[String]): Self = StObject.set(x, "pgpKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPgpKeyUndefined: Self = StObject.set(x, "pgpKey", js.undefined)
+      inline def setPgpKeyUndefined: Self = StObject.set(x, "pgpKey", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setPublicKey(value: Input[String]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: Input[String]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+      inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     }
   }
 }

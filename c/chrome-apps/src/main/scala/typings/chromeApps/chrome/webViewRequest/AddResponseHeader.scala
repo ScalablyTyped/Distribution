@@ -16,23 +16,19 @@ trait AddResponseHeader
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseHeader
 }
 object AddResponseHeader {
   
-  @scala.inline
-  def apply(instanceType: String): AddResponseHeader = {
+  inline def apply(instanceType: String): AddResponseHeader = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "AddResponseHeader")
     __obj.asInstanceOf[AddResponseHeader]
   }
   
-  @scala.inline
-  implicit class AddResponseHeaderMutableBuilder[Self <: AddResponseHeader] (val x: Self) extends AnyVal {
+  extension [Self <: AddResponseHeader](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.AddResponseHeader): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.AddResponseHeader): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

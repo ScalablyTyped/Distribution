@@ -14,8 +14,7 @@ trait LiveLiveSearchResult
 }
 object LiveLiveSearchResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Author,
     description: String,
     image: String,
@@ -30,10 +29,8 @@ object LiveLiveSearchResult {
     __obj.asInstanceOf[LiveLiveSearchResult]
   }
   
-  @scala.inline
-  implicit class LiveLiveSearchResultMutableBuilder[Self <: LiveLiveSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: LiveLiveSearchResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: LIVE): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LIVE): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

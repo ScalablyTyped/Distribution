@@ -18,25 +18,19 @@ trait GetContextKeysForPrincipalPolicyRequest extends StObject {
 }
 object GetContextKeysForPrincipalPolicyRequest {
   
-  @scala.inline
-  def apply(PolicySourceArn: arnType): GetContextKeysForPrincipalPolicyRequest = {
+  inline def apply(PolicySourceArn: arnType): GetContextKeysForPrincipalPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicySourceArn = PolicySourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContextKeysForPrincipalPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetContextKeysForPrincipalPolicyRequestMutableBuilder[Self <: GetContextKeysForPrincipalPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetContextKeysForPrincipalPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyInputList(value: SimulationPolicyListType): Self = StObject.set(x, "PolicyInputList", value.asInstanceOf[js.Any])
+    inline def setPolicyInputList(value: SimulationPolicyListType): Self = StObject.set(x, "PolicyInputList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyInputListUndefined: Self = StObject.set(x, "PolicyInputList", js.undefined)
+    inline def setPolicyInputListUndefined: Self = StObject.set(x, "PolicyInputList", js.undefined)
     
-    @scala.inline
-    def setPolicyInputListVarargs(value: policyDocumentType*): Self = StObject.set(x, "PolicyInputList", js.Array(value :_*))
+    inline def setPolicyInputListVarargs(value: policyDocumentType*): Self = StObject.set(x, "PolicyInputList", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicySourceArn(value: arnType): Self = StObject.set(x, "PolicySourceArn", value.asInstanceOf[js.Any])
+    inline def setPolicySourceArn(value: arnType): Self = StObject.set(x, "PolicySourceArn", value.asInstanceOf[js.Any])
   }
 }

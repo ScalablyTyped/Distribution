@@ -18,19 +18,15 @@ trait GetSegmentRequest extends StObject {
 }
 object GetSegmentRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, SegmentId: string): GetSegmentRequest = {
+  inline def apply(ApplicationId: string, SegmentId: string): GetSegmentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentRequest]
   }
   
-  @scala.inline
-  implicit class GetSegmentRequestMutableBuilder[Self <: GetSegmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSegmentRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
   }
 }

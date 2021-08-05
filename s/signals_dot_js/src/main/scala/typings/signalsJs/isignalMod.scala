@@ -27,11 +27,9 @@ object isignalMod {
     @js.native
     val ^ : js.Symbol = js.native
     
-    @scala.inline
-    implicit class ISignalMutableBuilder[Self <: ISignal] (val x: Self) extends AnyVal {
+    extension [Self <: ISignal](x: Self) {
       
-      @scala.inline
-      def setAdd(value: js.Function => ISlot): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: js.Function => ISlot): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     }
   }
 }

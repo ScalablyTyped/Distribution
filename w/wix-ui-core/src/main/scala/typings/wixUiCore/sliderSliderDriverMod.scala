@@ -12,6 +12,5 @@ object sliderSliderDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sliderDriverFactory(hasElementEventTrigger: Element): AriaLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[AriaLabel]
+  inline def sliderDriverFactory(hasElementEventTrigger: Element): AriaLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[AriaLabel]
 }

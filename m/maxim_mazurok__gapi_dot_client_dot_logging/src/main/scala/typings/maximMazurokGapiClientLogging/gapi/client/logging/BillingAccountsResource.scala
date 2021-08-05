@@ -18,8 +18,7 @@ trait BillingAccountsResource extends StObject {
 }
 object BillingAccountsResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buckets: BucketsResource,
     exclusions: ExclusionsResource,
     locations: LocationsResource,
@@ -30,22 +29,16 @@ object BillingAccountsResource {
     __obj.asInstanceOf[BillingAccountsResource]
   }
   
-  @scala.inline
-  implicit class BillingAccountsResourceMutableBuilder[Self <: BillingAccountsResource] (val x: Self) extends AnyVal {
+  extension [Self <: BillingAccountsResource](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: BucketsResource): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: BucketsResource): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusions(value: ExclusionsResource): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: ExclusionsResource): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogs(value: LogsResource): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    inline def setLogs(value: LogsResource): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinks(value: SinksResource): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
+    inline def setSinks(value: SinksResource): Self = StObject.set(x, "sinks", value.asInstanceOf[js.Any])
   }
 }

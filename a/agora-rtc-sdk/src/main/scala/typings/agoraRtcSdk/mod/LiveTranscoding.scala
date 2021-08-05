@@ -156,97 +156,67 @@ trait LiveTranscoding extends StObject {
 }
 object LiveTranscoding {
   
-  @scala.inline
-  def apply(images: js.Array[TranscodingWatermark], transcodingUsers: js.Array[TranscodingUser]): LiveTranscoding = {
+  inline def apply(images: js.Array[TranscodingWatermark], transcodingUsers: js.Array[TranscodingUser]): LiveTranscoding = {
     val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], transcodingUsers = transcodingUsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveTranscoding]
   }
   
-  @scala.inline
-  implicit class LiveTranscodingMutableBuilder[Self <: LiveTranscoding] (val x: Self) extends AnyVal {
+  extension [Self <: LiveTranscoding](x: Self) {
     
-    @scala.inline
-    def setAudioBitrate(value: Double): Self = StObject.set(x, "audioBitrate", value.asInstanceOf[js.Any])
+    inline def setAudioBitrate(value: Double): Self = StObject.set(x, "audioBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioBitrateUndefined: Self = StObject.set(x, "audioBitrate", js.undefined)
+    inline def setAudioBitrateUndefined: Self = StObject.set(x, "audioBitrate", js.undefined)
     
-    @scala.inline
-    def setAudioChannels(value: `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "audioChannels", value.asInstanceOf[js.Any])
+    inline def setAudioChannels(value: `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "audioChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioChannelsUndefined: Self = StObject.set(x, "audioChannels", js.undefined)
+    inline def setAudioChannelsUndefined: Self = StObject.set(x, "audioChannels", js.undefined)
     
-    @scala.inline
-    def setAudioSampleRate(value: `32000` | `44100` | `48000`): Self = StObject.set(x, "audioSampleRate", value.asInstanceOf[js.Any])
+    inline def setAudioSampleRate(value: `32000` | `44100` | `48000`): Self = StObject.set(x, "audioSampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSampleRateUndefined: Self = StObject.set(x, "audioSampleRate", js.undefined)
+    inline def setAudioSampleRateUndefined: Self = StObject.set(x, "audioSampleRate", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setImages(value: js.Array[TranscodingWatermark]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[TranscodingWatermark]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesVarargs(value: TranscodingWatermark*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: TranscodingWatermark*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setLowLatency(value: Boolean): Self = StObject.set(x, "lowLatency", value.asInstanceOf[js.Any])
+    inline def setLowLatency(value: Boolean): Self = StObject.set(x, "lowLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowLatencyUndefined: Self = StObject.set(x, "lowLatency", js.undefined)
+    inline def setLowLatencyUndefined: Self = StObject.set(x, "lowLatency", js.undefined)
     
-    @scala.inline
-    def setTranscodingUsers(value: js.Array[TranscodingUser]): Self = StObject.set(x, "transcodingUsers", value.asInstanceOf[js.Any])
+    inline def setTranscodingUsers(value: js.Array[TranscodingUser]): Self = StObject.set(x, "transcodingUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscodingUsersVarargs(value: TranscodingUser*): Self = StObject.set(x, "transcodingUsers", js.Array(value :_*))
+    inline def setTranscodingUsersVarargs(value: TranscodingUser*): Self = StObject.set(x, "transcodingUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setUserCount(value: Double): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])
+    inline def setUserCount(value: Double): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCountUndefined: Self = StObject.set(x, "userCount", js.undefined)
+    inline def setUserCountUndefined: Self = StObject.set(x, "userCount", js.undefined)
     
-    @scala.inline
-    def setVideoBitrate(value: Double): Self = StObject.set(x, "videoBitrate", value.asInstanceOf[js.Any])
+    inline def setVideoBitrate(value: Double): Self = StObject.set(x, "videoBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoBitrateUndefined: Self = StObject.set(x, "videoBitrate", js.undefined)
+    inline def setVideoBitrateUndefined: Self = StObject.set(x, "videoBitrate", js.undefined)
     
-    @scala.inline
-    def setVideoCodecProfile(value: `66` | `77` | `100`): Self = StObject.set(x, "videoCodecProfile", value.asInstanceOf[js.Any])
+    inline def setVideoCodecProfile(value: `66` | `77` | `100`): Self = StObject.set(x, "videoCodecProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCodecProfileUndefined: Self = StObject.set(x, "videoCodecProfile", js.undefined)
+    inline def setVideoCodecProfileUndefined: Self = StObject.set(x, "videoCodecProfile", js.undefined)
     
-    @scala.inline
-    def setVideoFramerate(value: Double): Self = StObject.set(x, "videoFramerate", value.asInstanceOf[js.Any])
+    inline def setVideoFramerate(value: Double): Self = StObject.set(x, "videoFramerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoFramerateUndefined: Self = StObject.set(x, "videoFramerate", js.undefined)
+    inline def setVideoFramerateUndefined: Self = StObject.set(x, "videoFramerate", js.undefined)
     
-    @scala.inline
-    def setVideoGop(value: Double): Self = StObject.set(x, "videoGop", value.asInstanceOf[js.Any])
+    inline def setVideoGop(value: Double): Self = StObject.set(x, "videoGop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoGopUndefined: Self = StObject.set(x, "videoGop", js.undefined)
+    inline def setVideoGopUndefined: Self = StObject.set(x, "videoGop", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -13,15 +13,13 @@ trait Class
      with Node
 object Class {
   
-  @scala.inline
-  def ClassDeclaration(body: ClassBody): typings.estree.mod.ClassDeclaration = {
+  inline def ClassDeclaration(body: ClassBody): typings.estree.mod.ClassDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = null)
     __obj.updateDynamic("type")("ClassDeclaration")
     __obj.asInstanceOf[typings.estree.mod.ClassDeclaration]
   }
   
-  @scala.inline
-  def ClassExpression(body: ClassBody): typings.estree.mod.ClassExpression = {
+  inline def ClassExpression(body: ClassBody): typings.estree.mod.ClassExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassExpression")
     __obj.asInstanceOf[typings.estree.mod.ClassExpression]

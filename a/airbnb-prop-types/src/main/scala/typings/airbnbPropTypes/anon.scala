@@ -18,38 +18,28 @@ object anon {
   }
   object Gt {
     
-    @scala.inline
-    def apply(): Gt = {
+    inline def apply(): Gt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Gt]
     }
     
-    @scala.inline
-    implicit class GtMutableBuilder[Self <: Gt] (val x: Self) extends AnyVal {
+    extension [Self <: Gt](x: Self) {
       
-      @scala.inline
-      def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+      inline def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+      inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
       
-      @scala.inline
-      def setGte(value: Double): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+      inline def setGte(value: Double): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+      inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
       
-      @scala.inline
-      def setLt(value: Double): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+      inline def setLt(value: Double): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+      inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
       
-      @scala.inline
-      def setLte(value: Double): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+      inline def setLte(value: Double): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+      inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
     }
   }
   
@@ -59,20 +49,16 @@ object anon {
   }
   object StripHOCs {
     
-    @scala.inline
-    def apply(stripHOCs: js.Array[String]): StripHOCs = {
+    inline def apply(stripHOCs: js.Array[String]): StripHOCs = {
       val __obj = js.Dynamic.literal(stripHOCs = stripHOCs.asInstanceOf[js.Any])
       __obj.asInstanceOf[StripHOCs]
     }
     
-    @scala.inline
-    implicit class StripHOCsMutableBuilder[Self <: StripHOCs] (val x: Self) extends AnyVal {
+    extension [Self <: StripHOCs](x: Self) {
       
-      @scala.inline
-      def setStripHOCs(value: js.Array[String]): Self = StObject.set(x, "stripHOCs", value.asInstanceOf[js.Any])
+      inline def setStripHOCs(value: js.Array[String]): Self = StObject.set(x, "stripHOCs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripHOCsVarargs(value: String*): Self = StObject.set(x, "stripHOCs", js.Array(value :_*))
+      inline def setStripHOCsVarargs(value: String*): Self = StObject.set(x, "stripHOCs", js.Array(value :_*))
     }
   }
 }

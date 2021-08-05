@@ -21,23 +21,18 @@ object glacier {
   }
   object VaultNotification {
     
-    @scala.inline
-    def apply(events: Input[js.Array[Input[String]]], snsTopic: Input[String]): VaultNotification = {
+    inline def apply(events: Input[js.Array[Input[String]]], snsTopic: Input[String]): VaultNotification = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], snsTopic = snsTopic.asInstanceOf[js.Any])
       __obj.asInstanceOf[VaultNotification]
     }
     
-    @scala.inline
-    implicit class VaultNotificationMutableBuilder[Self <: VaultNotification] (val x: Self) extends AnyVal {
+    extension [Self <: VaultNotification](x: Self) {
       
-      @scala.inline
-      def setEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: Input[String]*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Input[String]*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setSnsTopic(value: Input[String]): Self = StObject.set(x, "snsTopic", value.asInstanceOf[js.Any])
+      inline def setSnsTopic(value: Input[String]): Self = StObject.set(x, "snsTopic", value.asInstanceOf[js.Any])
     }
   }
 }

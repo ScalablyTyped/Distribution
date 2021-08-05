@@ -11,6 +11,5 @@ object isElementMatchesSelectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: HTMLElement, selector: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(element: HTMLElement, selector: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

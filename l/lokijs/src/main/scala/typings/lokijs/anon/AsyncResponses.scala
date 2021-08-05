@@ -12,25 +12,19 @@ trait AsyncResponses extends StObject {
 }
 object AsyncResponses {
   
-  @scala.inline
-  def apply(): AsyncResponses = {
+  inline def apply(): AsyncResponses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncResponses]
   }
   
-  @scala.inline
-  implicit class AsyncResponsesMutableBuilder[Self <: AsyncResponses] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncResponses](x: Self) {
     
-    @scala.inline
-    def setAsyncResponses(value: Boolean): Self = StObject.set(x, "asyncResponses", value.asInstanceOf[js.Any])
+    inline def setAsyncResponses(value: Boolean): Self = StObject.set(x, "asyncResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncResponsesUndefined: Self = StObject.set(x, "asyncResponses", js.undefined)
+    inline def setAsyncResponsesUndefined: Self = StObject.set(x, "asyncResponses", js.undefined)
     
-    @scala.inline
-    def setAsyncTimeout(value: Double): Self = StObject.set(x, "asyncTimeout", value.asInstanceOf[js.Any])
+    inline def setAsyncTimeout(value: Double): Self = StObject.set(x, "asyncTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncTimeoutUndefined: Self = StObject.set(x, "asyncTimeout", js.undefined)
+    inline def setAsyncTimeoutUndefined: Self = StObject.set(x, "asyncTimeout", js.undefined)
   }
 }

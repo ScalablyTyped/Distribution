@@ -40,8 +40,7 @@ object playcustomappMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Playcustomapp
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object playcustomappMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object playcustomappMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def playcustomapp(options: Options): Playcustomapp = ^.asInstanceOf[js.Dynamic].applyDynamic("playcustomapp")(options.asInstanceOf[js.Any]).asInstanceOf[Playcustomapp]
+  inline def playcustomapp(options: Options): Playcustomapp = ^.asInstanceOf[js.Dynamic].applyDynamic("playcustomapp")(options.asInstanceOf[js.Any]).asInstanceOf[Playcustomapp]
   
-  @scala.inline
-  def playcustomapp_v1(version: v1): Playcustomapp = ^.asInstanceOf[js.Dynamic].applyDynamic("playcustomapp")(version.asInstanceOf[js.Any]).asInstanceOf[Playcustomapp]
+  inline def playcustomapp_v1(version: v1): Playcustomapp = ^.asInstanceOf[js.Dynamic].applyDynamic("playcustomapp")(version.asInstanceOf[js.Any]).asInstanceOf[Playcustomapp]
 }

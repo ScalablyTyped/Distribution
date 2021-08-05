@@ -77,11 +77,11 @@ object dataSnapshotMod {
       */
     def hasChildren(): Boolean = js.native
     
-    val index_ : js.Any = js.native
+    /* private */ val index_ : js.Any = js.native
     
     def key: String = js.native
     
-    val node_ : js.Any = js.native
+    /* private */ val node_ : js.Any = js.native
     
     /**
       * Returns the number of children for this DataSnapshot.
@@ -91,7 +91,7 @@ object dataSnapshotMod {
     
     def ref: Reference = js.native
     
-    val ref_ : js.Any = js.native
+    /* private */ val ref_ : js.Any = js.native
     
     def toJSON(): js.Any = js.native
     

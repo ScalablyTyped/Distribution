@@ -10,10 +10,8 @@ object stateIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reduce(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")().asInstanceOf[State]
-  @scala.inline
-  def reduce(state: State): State = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any]).asInstanceOf[State]
+  inline def reduce(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")().asInstanceOf[State]
+  inline def reduce(state: State): State = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any]).asInstanceOf[State]
   
   type State = Double
 }

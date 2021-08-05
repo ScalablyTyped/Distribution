@@ -46,52 +46,37 @@ trait SchemaFilterView extends StObject {
 }
 object SchemaFilterView {
   
-  @scala.inline
-  def apply(): SchemaFilterView = {
+  inline def apply(): SchemaFilterView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilterView]
   }
   
-  @scala.inline
-  implicit class SchemaFilterViewMutableBuilder[Self <: SchemaFilterView] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilterView](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: StringDictionary[SchemaFilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: StringDictionary[SchemaFilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setFilterViewId(value: Double): Self = StObject.set(x, "filterViewId", value.asInstanceOf[js.Any])
+    inline def setFilterViewId(value: Double): Self = StObject.set(x, "filterViewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterViewIdUndefined: Self = StObject.set(x, "filterViewId", js.undefined)
+    inline def setFilterViewIdUndefined: Self = StObject.set(x, "filterViewId", js.undefined)
     
-    @scala.inline
-    def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+    inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
+    inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setSortSpecs(value: js.Array[SchemaSortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
+    inline def setSortSpecs(value: js.Array[SchemaSortSpec]): Self = StObject.set(x, "sortSpecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
+    inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    @scala.inline
-    def setSortSpecsVarargs(value: SchemaSortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SchemaSortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

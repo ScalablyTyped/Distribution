@@ -12,19 +12,15 @@ trait CursorResult extends StObject {
 }
 object CursorResult {
   
-  @scala.inline
-  def apply(cursorOffset: Double, formatted: String): CursorResult = {
+  inline def apply(cursorOffset: Double, formatted: String): CursorResult = {
     val __obj = js.Dynamic.literal(cursorOffset = cursorOffset.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorResult]
   }
   
-  @scala.inline
-  implicit class CursorResultMutableBuilder[Self <: CursorResult] (val x: Self) extends AnyVal {
+  extension [Self <: CursorResult](x: Self) {
     
-    @scala.inline
-    def setCursorOffset(value: Double): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
+    inline def setCursorOffset(value: Double): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+    inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
   }
 }

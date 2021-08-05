@@ -13,16 +13,13 @@ trait DeleteContainerInput extends StObject {
 }
 object DeleteContainerInput {
   
-  @scala.inline
-  def apply(ContainerName: ContainerName): DeleteContainerInput = {
+  inline def apply(ContainerName: ContainerName): DeleteContainerInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteContainerInput]
   }
   
-  @scala.inline
-  implicit class DeleteContainerInputMutableBuilder[Self <: DeleteContainerInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteContainerInput](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }
 }

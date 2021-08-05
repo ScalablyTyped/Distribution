@@ -8,6 +8,5 @@ object angularResourceStrings {
   
   @js.native
   sealed trait $resource extends StObject
-  @scala.inline
-  def $resource: $resource = "$resource".asInstanceOf[$resource]
+  inline def $resource: $resource = "$resource".asInstanceOf[$resource]
 }

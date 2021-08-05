@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Win32LobAppMsiPackageType extends StObject
 object Win32LobAppMsiPackageType {
   
-  @scala.inline
-  def dualPurpose: typings.microsoftGraph.microsoftGraphStrings.dualPurpose = "dualPurpose".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dualPurpose]
+  inline def dualPurpose: typings.microsoftGraph.microsoftGraphStrings.dualPurpose = "dualPurpose".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dualPurpose]
   
-  @scala.inline
-  def perMachine: typings.microsoftGraph.microsoftGraphStrings.perMachine = "perMachine".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.perMachine]
+  inline def perMachine: typings.microsoftGraph.microsoftGraphStrings.perMachine = "perMachine".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.perMachine]
   
-  @scala.inline
-  def perUser: typings.microsoftGraph.microsoftGraphStrings.perUser = "perUser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.perUser]
+  inline def perUser: typings.microsoftGraph.microsoftGraphStrings.perUser = "perUser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.perUser]
 }

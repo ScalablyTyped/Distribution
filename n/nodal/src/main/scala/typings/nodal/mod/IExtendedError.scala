@@ -15,25 +15,19 @@ trait IExtendedError
 }
 object IExtendedError {
   
-  @scala.inline
-  def apply(message: String, name: String): IExtendedError = {
+  inline def apply(message: String, name: String): IExtendedError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtendedError]
   }
   
-  @scala.inline
-  implicit class IExtendedErrorMutableBuilder[Self <: IExtendedError] (val x: Self) extends AnyVal {
+  extension [Self <: IExtendedError](x: Self) {
     
-    @scala.inline
-    def setDetails(value: js.Object): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Object): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setNotFound(value: Boolean): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: Boolean): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+    inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
   }
 }

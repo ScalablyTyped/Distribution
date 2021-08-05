@@ -12,19 +12,15 @@ trait Offsets extends StObject {
 }
 object Offsets {
   
-  @scala.inline
-  def apply(x: Double, y: Double): Offsets = {
+  inline def apply(x: Double, y: Double): Offsets = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Offsets]
   }
   
-  @scala.inline
-  implicit class OffsetsMutableBuilder[Self <: Offsets] (val x: Self) extends AnyVal {
+  extension [Self <: Offsets](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

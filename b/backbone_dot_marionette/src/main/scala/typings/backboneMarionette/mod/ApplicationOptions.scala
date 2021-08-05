@@ -15,16 +15,13 @@ trait ApplicationOptions
 }
 object ApplicationOptions {
   
-  @scala.inline
-  def apply(region: String): ApplicationOptions = {
+  inline def apply(region: String): ApplicationOptions = {
     val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationOptions]
   }
   
-  @scala.inline
-  implicit class ApplicationOptionsMutableBuilder[Self <: ApplicationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationOptions](x: Self) {
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }
 }

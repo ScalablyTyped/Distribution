@@ -15,25 +15,19 @@ trait ServiceVersion extends StObject {
 }
 object ServiceVersion {
   
-  @scala.inline
-  def apply(): ServiceVersion = {
+  inline def apply(): ServiceVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceVersion]
   }
   
-  @scala.inline
-  implicit class ServiceVersionMutableBuilder[Self <: ServiceVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceVersion](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVersionUrl(value: String): Self = StObject.set(x, "versionUrl", value.asInstanceOf[js.Any])
+    inline def setVersionUrl(value: String): Self = StObject.set(x, "versionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUrlUndefined: Self = StObject.set(x, "versionUrl", js.undefined)
+    inline def setVersionUrlUndefined: Self = StObject.set(x, "versionUrl", js.undefined)
   }
 }

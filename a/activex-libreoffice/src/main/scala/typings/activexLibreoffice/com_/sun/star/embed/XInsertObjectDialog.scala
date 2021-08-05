@@ -30,8 +30,7 @@ trait XInsertObjectDialog
 }
 object XInsertObjectDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstanceByDialog: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XInsertObjectDialog {
     __obj.asInstanceOf[XInsertObjectDialog]
   }
   
-  @scala.inline
-  implicit class XInsertObjectDialogMutableBuilder[Self <: XInsertObjectDialog] (val x: Self) extends AnyVal {
+  extension [Self <: XInsertObjectDialog](x: Self) {
     
-    @scala.inline
-    def setCreateInstanceByDialog(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = StObject.set(x, "createInstanceByDialog", js.Any.fromFunction3(value))
+    inline def setCreateInstanceByDialog(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = StObject.set(x, "createInstanceByDialog", js.Any.fromFunction3(value))
   }
 }

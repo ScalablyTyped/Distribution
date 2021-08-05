@@ -12,6 +12,5 @@ object bufferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buffer[T](closingNotifier: Observable[js.Any]): OperatorFunction[T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(closingNotifier.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Array[T]]]
+  inline def buffer[T](closingNotifier: Observable[js.Any]): OperatorFunction[T, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(closingNotifier.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, js.Array[T]]]
 }

@@ -64,8 +64,7 @@ object srcComponentsEllipsisTooltipEllipsisTooltipMod {
     @JSImport("wix-ui-core/src/components/ellipsis-tooltip/EllipsisTooltip", "EllipsisTooltip.defaultProps")
     @js.native
     def defaultProps: ShowTooltip = js.native
-    @scala.inline
-    def defaultProps_=(x: ShowTooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ShowTooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait EllipsisTooltipProps extends StObject {
@@ -83,35 +82,26 @@ object srcComponentsEllipsisTooltipEllipsisTooltipMod {
   }
   object EllipsisTooltipProps {
     
-    @scala.inline
-    def apply(children: js.Any => DictotherPropName): EllipsisTooltipProps = {
+    inline def apply(children: js.Any => DictotherPropName): EllipsisTooltipProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[EllipsisTooltipProps]
     }
     
-    @scala.inline
-    implicit class EllipsisTooltipPropsMutableBuilder[Self <: EllipsisTooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: EllipsisTooltipProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any => DictotherPropName): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: js.Any => DictotherPropName): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+      inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+      inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
     }
   }
   
@@ -125,8 +115,7 @@ object srcComponentsEllipsisTooltipEllipsisTooltipMod {
   }
   object EllipsisTooltipState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Tooltip: ComponentClass[js.Object, ComponentState],
       isTooltipActivated: Boolean,
       tooltipStyles: RuntimeStylesheet
@@ -135,17 +124,13 @@ object srcComponentsEllipsisTooltipEllipsisTooltipMod {
       __obj.asInstanceOf[EllipsisTooltipState]
     }
     
-    @scala.inline
-    implicit class EllipsisTooltipStateMutableBuilder[Self <: EllipsisTooltipState] (val x: Self) extends AnyVal {
+    extension [Self <: EllipsisTooltipState](x: Self) {
       
-      @scala.inline
-      def setIsTooltipActivated(value: Boolean): Self = StObject.set(x, "isTooltipActivated", value.asInstanceOf[js.Any])
+      inline def setIsTooltipActivated(value: Boolean): Self = StObject.set(x, "isTooltipActivated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltip(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipStyles(value: RuntimeStylesheet): Self = StObject.set(x, "tooltipStyles", value.asInstanceOf[js.Any])
+      inline def setTooltipStyles(value: RuntimeStylesheet): Self = StObject.set(x, "tooltipStyles", value.asInstanceOf[js.Any])
     }
   }
 }

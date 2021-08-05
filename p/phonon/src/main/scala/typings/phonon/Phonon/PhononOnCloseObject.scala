@@ -10,16 +10,13 @@ trait PhononOnCloseObject extends StObject {
 }
 object PhononOnCloseObject {
   
-  @scala.inline
-  def apply(close: () => Unit): PhononOnCloseObject = {
+  inline def apply(close: () => Unit): PhononOnCloseObject = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[PhononOnCloseObject]
   }
   
-  @scala.inline
-  implicit class PhononOnCloseObjectMutableBuilder[Self <: PhononOnCloseObject] (val x: Self) extends AnyVal {
+  extension [Self <: PhononOnCloseObject](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

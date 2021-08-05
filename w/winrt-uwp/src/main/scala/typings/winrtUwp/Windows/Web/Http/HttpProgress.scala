@@ -27,8 +27,7 @@ trait HttpProgress extends StObject {
 }
 object HttpProgress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bytesReceived: Double,
     bytesSent: Double,
     retries: Double,
@@ -40,25 +39,18 @@ object HttpProgress {
     __obj.asInstanceOf[HttpProgress]
   }
   
-  @scala.inline
-  implicit class HttpProgressMutableBuilder[Self <: HttpProgress] (val x: Self) extends AnyVal {
+  extension [Self <: HttpProgress](x: Self) {
     
-    @scala.inline
-    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: HttpProgressStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: HttpProgressStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesToReceive(value: Double): Self = StObject.set(x, "totalBytesToReceive", value.asInstanceOf[js.Any])
+    inline def setTotalBytesToReceive(value: Double): Self = StObject.set(x, "totalBytesToReceive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesToSend(value: Double): Self = StObject.set(x, "totalBytesToSend", value.asInstanceOf[js.Any])
+    inline def setTotalBytesToSend(value: Double): Self = StObject.set(x, "totalBytesToSend", value.asInstanceOf[js.Any])
   }
 }

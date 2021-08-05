@@ -57,43 +57,31 @@ trait CacheResource extends StObject {
 }
 object CacheResource {
   
-  @scala.inline
-  def apply(filePath: String, playTime: Double): CacheResource = {
+  inline def apply(filePath: String, playTime: Double): CacheResource = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], playTime = playTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheResource]
   }
   
-  @scala.inline
-  implicit class CacheResourceMutableBuilder[Self <: CacheResource] (val x: Self) extends AnyVal {
+  extension [Self <: CacheResource](x: Self) {
     
-    @scala.inline
-    def setCacheResource(value: Boolean): Self = StObject.set(x, "cacheResource", value.asInstanceOf[js.Any])
+    inline def setCacheResource(value: Boolean): Self = StObject.set(x, "cacheResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheResourceUndefined: Self = StObject.set(x, "cacheResource", js.undefined)
+    inline def setCacheResourceUndefined: Self = StObject.set(x, "cacheResource", js.undefined)
     
-    @scala.inline
-    def setCycle(value: Double): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    inline def setCycle(value: Double): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setPlayTime(value: Double): Self = StObject.set(x, "playTime", value.asInstanceOf[js.Any])
+    inline def setPlayTime(value: Double): Self = StObject.set(x, "playTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
   }
 }

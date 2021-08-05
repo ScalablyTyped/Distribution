@@ -13,16 +13,13 @@ trait TextDocumentProviderFeature[T] extends StObject {
 }
 object TextDocumentProviderFeature {
   
-  @scala.inline
-  def apply[T](getProvider: typings.vscode.mod.TextDocument => T): TextDocumentProviderFeature[T] = {
+  inline def apply[T](getProvider: typings.vscode.mod.TextDocument => T): TextDocumentProviderFeature[T] = {
     val __obj = js.Dynamic.literal(getProvider = js.Any.fromFunction1(getProvider))
     __obj.asInstanceOf[TextDocumentProviderFeature[T]]
   }
   
-  @scala.inline
-  implicit class TextDocumentProviderFeatureMutableBuilder[Self <: TextDocumentProviderFeature[?], T] (val x: Self & TextDocumentProviderFeature[T]) extends AnyVal {
+  extension [Self <: TextDocumentProviderFeature[?], T](x: Self & TextDocumentProviderFeature[T]) {
     
-    @scala.inline
-    def setGetProvider(value: typings.vscode.mod.TextDocument => T): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
+    inline def setGetProvider(value: typings.vscode.mod.TextDocument => T): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
   }
 }

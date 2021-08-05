@@ -13,16 +13,13 @@ trait DeleteRelationalDatabaseSnapshotRequest extends StObject {
 }
 object DeleteRelationalDatabaseSnapshotRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseSnapshotName: ResourceName): DeleteRelationalDatabaseSnapshotRequest = {
+  inline def apply(relationalDatabaseSnapshotName: ResourceName): DeleteRelationalDatabaseSnapshotRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseSnapshotName = relationalDatabaseSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRelationalDatabaseSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRelationalDatabaseSnapshotRequestMutableBuilder[Self <: DeleteRelationalDatabaseSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRelationalDatabaseSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
   }
 }

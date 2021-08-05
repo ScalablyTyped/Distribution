@@ -14,16 +14,13 @@ trait IonVoiceRecordEnd
 }
 object IonVoiceRecordEnd {
   
-  @scala.inline
-  def apply(complete: Resouce => Unit): IonVoiceRecordEnd = {
+  inline def apply(complete: Resouce => Unit): IonVoiceRecordEnd = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
     __obj.asInstanceOf[IonVoiceRecordEnd]
   }
   
-  @scala.inline
-  implicit class IonVoiceRecordEndMutableBuilder[Self <: IonVoiceRecordEnd] (val x: Self) extends AnyVal {
+  extension [Self <: IonVoiceRecordEnd](x: Self) {
     
-    @scala.inline
-    def setComplete(value: Resouce => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: Resouce => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }
 }

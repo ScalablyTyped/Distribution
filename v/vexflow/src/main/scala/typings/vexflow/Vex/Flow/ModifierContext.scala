@@ -28,8 +28,7 @@ trait ModifierContext extends StObject {
 }
 object ModifierContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addModifier: Modifier => ModifierContext,
     getExtraLeftPx: () => Double,
     getExtraRightPx: () => Double,
@@ -44,34 +43,24 @@ object ModifierContext {
     __obj.asInstanceOf[ModifierContext]
   }
   
-  @scala.inline
-  implicit class ModifierContextMutableBuilder[Self <: ModifierContext] (val x: Self) extends AnyVal {
+  extension [Self <: ModifierContext](x: Self) {
     
-    @scala.inline
-    def setAddModifier(value: Modifier => ModifierContext): Self = StObject.set(x, "addModifier", js.Any.fromFunction1(value))
+    inline def setAddModifier(value: Modifier => ModifierContext): Self = StObject.set(x, "addModifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetExtraLeftPx(value: () => Double): Self = StObject.set(x, "getExtraLeftPx", js.Any.fromFunction0(value))
+    inline def setGetExtraLeftPx(value: () => Double): Self = StObject.set(x, "getExtraLeftPx", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExtraRightPx(value: () => Double): Self = StObject.set(x, "getExtraRightPx", js.Any.fromFunction0(value))
+    inline def setGetExtraRightPx(value: () => Double): Self = StObject.set(x, "getExtraRightPx", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMetrics(value: () => Extraleftpx): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
+    inline def setGetMetrics(value: () => Extraleftpx): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModifiers(value: String => js.Array[Modifier]): Self = StObject.set(x, "getModifiers", js.Any.fromFunction1(value))
+    inline def setGetModifiers(value: String => js.Array[Modifier]): Self = StObject.set(x, "getModifiers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => Leftshift): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => Leftshift): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostFormat(value: () => Unit): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
+    inline def setPostFormat(value: () => Unit): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
+    inline def setPreFormat(value: () => Unit): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
   }
 }

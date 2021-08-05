@@ -28,8 +28,7 @@ trait SubscriptionEvaluationResult extends StObject {
 }
 object SubscriptionEvaluationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     evaluationJobStatus: EvaluationOperationStatus,
     events: EventsEvaluationResult,
     id: String,
@@ -39,19 +38,14 @@ object SubscriptionEvaluationResult {
     __obj.asInstanceOf[SubscriptionEvaluationResult]
   }
   
-  @scala.inline
-  implicit class SubscriptionEvaluationResultMutableBuilder[Self <: SubscriptionEvaluationResult] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionEvaluationResult](x: Self) {
     
-    @scala.inline
-    def setEvaluationJobStatus(value: EvaluationOperationStatus): Self = StObject.set(x, "evaluationJobStatus", value.asInstanceOf[js.Any])
+    inline def setEvaluationJobStatus(value: EvaluationOperationStatus): Self = StObject.set(x, "evaluationJobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: EventsEvaluationResult): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: EventsEvaluationResult): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: NotificationsEvaluationResult): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: NotificationsEvaluationResult): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
   }
 }

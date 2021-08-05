@@ -70,47 +70,34 @@ object stickyTypesMod {
   }
   object IStickyProps {
     
-    @scala.inline
-    def apply(): IStickyProps = {
+    inline def apply(): IStickyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStickyProps]
     }
     
-    @scala.inline
-    implicit class IStickyPropsMutableBuilder[Self <: IStickyProps] (val x: Self) extends AnyVal {
+    extension [Self <: IStickyProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IStickyProps]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IStickyProps]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IStickyProps | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IStickyProps | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setIsScrollSynced(value: Boolean): Self = StObject.set(x, "isScrollSynced", value.asInstanceOf[js.Any])
+      inline def setIsScrollSynced(value: Boolean): Self = StObject.set(x, "isScrollSynced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScrollSyncedUndefined: Self = StObject.set(x, "isScrollSynced", js.undefined)
+      inline def setIsScrollSyncedUndefined: Self = StObject.set(x, "isScrollSynced", js.undefined)
       
-      @scala.inline
-      def setStickyBackgroundColor(value: String): Self = StObject.set(x, "stickyBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setStickyBackgroundColor(value: String): Self = StObject.set(x, "stickyBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyBackgroundColorUndefined: Self = StObject.set(x, "stickyBackgroundColor", js.undefined)
+      inline def setStickyBackgroundColorUndefined: Self = StObject.set(x, "stickyBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
+      inline def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
+      inline def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
       
-      @scala.inline
-      def setStickyPosition(value: StickyPositionType): Self = StObject.set(x, "stickyPosition", value.asInstanceOf[js.Any])
+      inline def setStickyPosition(value: StickyPositionType): Self = StObject.set(x, "stickyPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyPositionUndefined: Self = StObject.set(x, "stickyPosition", js.undefined)
+      inline def setStickyPositionUndefined: Self = StObject.set(x, "stickyPosition", js.undefined)
     }
   }
 }

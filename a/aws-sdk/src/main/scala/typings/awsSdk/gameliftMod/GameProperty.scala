@@ -18,19 +18,15 @@ trait GameProperty extends StObject {
 }
 object GameProperty {
   
-  @scala.inline
-  def apply(Key: GamePropertyKey, Value: GamePropertyValue): GameProperty = {
+  inline def apply(Key: GamePropertyKey, Value: GamePropertyValue): GameProperty = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameProperty]
   }
   
-  @scala.inline
-  implicit class GamePropertyMutableBuilder[Self <: GameProperty] (val x: Self) extends AnyVal {
+  extension [Self <: GameProperty](x: Self) {
     
-    @scala.inline
-    def setKey(value: GamePropertyKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: GamePropertyKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: GamePropertyValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: GamePropertyValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

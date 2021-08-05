@@ -21,13 +21,11 @@ object SubmitBehaviourType {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SubmitBehaviourType.OnEndEditing")
   @js.native
   def OnEndEditing: SubmitBehaviourType = js.native
-  @scala.inline
-  def OnEndEditing_=(x: SubmitBehaviourType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEndEditing")(x.asInstanceOf[js.Any])
+  inline def OnEndEditing_=(x: SubmitBehaviourType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnEndEditing")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SubmitBehaviourType.WhileEditing")
   @js.native
   def WhileEditing: SubmitBehaviourType = js.native
-  @scala.inline
-  def WhileEditing_=(x: SubmitBehaviourType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WhileEditing")(x.asInstanceOf[js.Any])
+  inline def WhileEditing_=(x: SubmitBehaviourType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WhileEditing")(x.asInstanceOf[js.Any])
 }

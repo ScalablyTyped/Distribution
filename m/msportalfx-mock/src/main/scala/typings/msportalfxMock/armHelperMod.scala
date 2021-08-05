@@ -23,8 +23,7 @@ object armHelperMod {
       * @param next The next handler in express.
       * @param callback The handler to be called if the request should be handled by mock/proxy.
       */
-    @scala.inline
-    def handleRequest(req: js.Any, res: js.Any, next: js.Any, callback: HandleRequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequest")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def handleRequest(req: js.Any, res: js.Any, next: js.Any, callback: HandleRequestCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleRequest")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Proxies request to target, and pipes failures back immediatly.
@@ -34,14 +33,10 @@ object armHelperMod {
       * @param defaultVal If proxy is not setup will return this.
       * @return A promise that resolve with the content if the proxied request succeeds, and reject if the request failed.
       */
-    @scala.inline
-    def proxyReq[T](req: js.Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
-    @scala.inline
-    def proxyReq[T](req: js.Any, res: js.Any): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
-    @scala.inline
-    def proxyReq[T](req: js.Any, res: js.Any, defaultVal: T): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
-    @scala.inline
-    def proxyReq[T](req: js.Any, res: Unit, defaultVal: T): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def proxyReq[T](req: js.Any): Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any]).asInstanceOf[Promise[T]]
+    inline def proxyReq[T](req: js.Any, res: js.Any): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def proxyReq[T](req: js.Any, res: js.Any, defaultVal: T): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
+    inline def proxyReq[T](req: js.Any, res: Unit, defaultVal: T): Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxyReq")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], defaultVal.asInstanceOf[js.Any])).asInstanceOf[Promise[T]]
     
     type HandleRequestCallback = js.Function1[/* armManager */ Manager, Unit]
   }

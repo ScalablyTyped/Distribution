@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.LineFormat")
 @js.native
-class LineFormat protected ()
+/* private */ class LineFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.LineFormat {
   
@@ -59,7 +59,7 @@ class LineFormat protected ()
   /* CompleteClass */
   var Pattern: MsoPatternType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.LineFormat_typekey")
   var PowerPointDotLineFormat_typekey: typings.activexPowerpoint.PowerPoint.LineFormat = js.native
   

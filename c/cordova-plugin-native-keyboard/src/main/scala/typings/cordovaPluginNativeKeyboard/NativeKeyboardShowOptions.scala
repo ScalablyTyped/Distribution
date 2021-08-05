@@ -164,160 +164,109 @@ trait NativeKeyboardShowOptions extends StObject {
 }
 object NativeKeyboardShowOptions {
   
-  @scala.inline
-  def apply(onSubmit: String => Unit): NativeKeyboardShowOptions = {
+  inline def apply(onSubmit: String => Unit): NativeKeyboardShowOptions = {
     val __obj = js.Dynamic.literal(onSubmit = js.Any.fromFunction1(onSubmit))
     __obj.asInstanceOf[NativeKeyboardShowOptions]
   }
   
-  @scala.inline
-  implicit class NativeKeyboardShowOptionsMutableBuilder[Self <: NativeKeyboardShowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NativeKeyboardShowOptions](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+    inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
-    @scala.inline
-    def setAutoscrollElement(value: js.Any): Self = StObject.set(x, "autoscrollElement", value.asInstanceOf[js.Any])
+    inline def setAutoscrollElement(value: js.Any): Self = StObject.set(x, "autoscrollElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscrollElementUndefined: Self = StObject.set(x, "autoscrollElement", js.undefined)
+    inline def setAutoscrollElementUndefined: Self = StObject.set(x, "autoscrollElement", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setCounterStyle(value: String): Self = StObject.set(x, "counterStyle", value.asInstanceOf[js.Any])
+    inline def setCounterStyle(value: String): Self = StObject.set(x, "counterStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterStyleUndefined: Self = StObject.set(x, "counterStyle", js.undefined)
+    inline def setCounterStyleUndefined: Self = StObject.set(x, "counterStyle", js.undefined)
     
-    @scala.inline
-    def setKeepOpenAfterSubmit(value: Boolean): Self = StObject.set(x, "keepOpenAfterSubmit", value.asInstanceOf[js.Any])
+    inline def setKeepOpenAfterSubmit(value: Boolean): Self = StObject.set(x, "keepOpenAfterSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepOpenAfterSubmitUndefined: Self = StObject.set(x, "keepOpenAfterSubmit", js.undefined)
+    inline def setKeepOpenAfterSubmitUndefined: Self = StObject.set(x, "keepOpenAfterSubmit", js.undefined)
     
-    @scala.inline
-    def setLeftButton(value: LeftButtonOptions): Self = StObject.set(x, "leftButton", value.asInstanceOf[js.Any])
+    inline def setLeftButton(value: LeftButtonOptions): Self = StObject.set(x, "leftButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftButtonUndefined: Self = StObject.set(x, "leftButton", js.undefined)
+    inline def setLeftButtonUndefined: Self = StObject.set(x, "leftButton", js.undefined)
     
-    @scala.inline
-    def setMaxChars(value: Double): Self = StObject.set(x, "maxChars", value.asInstanceOf[js.Any])
+    inline def setMaxChars(value: Double): Self = StObject.set(x, "maxChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCharsUndefined: Self = StObject.set(x, "maxChars", js.undefined)
+    inline def setMaxCharsUndefined: Self = StObject.set(x, "maxChars", js.undefined)
     
-    @scala.inline
-    def setOnKeyboardDidHide(value: () => Unit): Self = StObject.set(x, "onKeyboardDidHide", js.Any.fromFunction0(value))
+    inline def setOnKeyboardDidHide(value: () => Unit): Self = StObject.set(x, "onKeyboardDidHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnKeyboardDidHideUndefined: Self = StObject.set(x, "onKeyboardDidHide", js.undefined)
+    inline def setOnKeyboardDidHideUndefined: Self = StObject.set(x, "onKeyboardDidHide", js.undefined)
     
-    @scala.inline
-    def setOnKeyboardDidShow(value: () => Unit): Self = StObject.set(x, "onKeyboardDidShow", js.Any.fromFunction0(value))
+    inline def setOnKeyboardDidShow(value: () => Unit): Self = StObject.set(x, "onKeyboardDidShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnKeyboardDidShowUndefined: Self = StObject.set(x, "onKeyboardDidShow", js.undefined)
+    inline def setOnKeyboardDidShowUndefined: Self = StObject.set(x, "onKeyboardDidShow", js.undefined)
     
-    @scala.inline
-    def setOnKeyboardWillHide(value: () => Unit): Self = StObject.set(x, "onKeyboardWillHide", js.Any.fromFunction0(value))
+    inline def setOnKeyboardWillHide(value: () => Unit): Self = StObject.set(x, "onKeyboardWillHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnKeyboardWillHideUndefined: Self = StObject.set(x, "onKeyboardWillHide", js.undefined)
+    inline def setOnKeyboardWillHideUndefined: Self = StObject.set(x, "onKeyboardWillHide", js.undefined)
     
-    @scala.inline
-    def setOnKeyboardWillShow(value: () => Unit): Self = StObject.set(x, "onKeyboardWillShow", js.Any.fromFunction0(value))
+    inline def setOnKeyboardWillShow(value: () => Unit): Self = StObject.set(x, "onKeyboardWillShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnKeyboardWillShowUndefined: Self = StObject.set(x, "onKeyboardWillShow", js.undefined)
+    inline def setOnKeyboardWillShowUndefined: Self = StObject.set(x, "onKeyboardWillShow", js.undefined)
     
-    @scala.inline
-    def setOnSubmit(value: String => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    inline def setOnSubmit(value: String => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTextChanged(value: /* text */ String => Unit): Self = StObject.set(x, "onTextChanged", js.Any.fromFunction1(value))
+    inline def setOnTextChanged(value: /* text */ String => Unit): Self = StObject.set(x, "onTextChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTextChangedUndefined: Self = StObject.set(x, "onTextChanged", js.undefined)
+    inline def setOnTextChangedUndefined: Self = StObject.set(x, "onTextChanged", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderColor(value: String): Self = StObject.set(x, "placeholderColor", value.asInstanceOf[js.Any])
+    inline def setPlaceholderColor(value: String): Self = StObject.set(x, "placeholderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderColorUndefined: Self = StObject.set(x, "placeholderColor", js.undefined)
+    inline def setPlaceholderColorUndefined: Self = StObject.set(x, "placeholderColor", js.undefined)
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setRightButton(value: ButtonOptions): Self = StObject.set(x, "rightButton", value.asInstanceOf[js.Any])
+    inline def setRightButton(value: ButtonOptions): Self = StObject.set(x, "rightButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightButtonUndefined: Self = StObject.set(x, "rightButton", js.undefined)
+    inline def setRightButtonUndefined: Self = StObject.set(x, "rightButton", js.undefined)
     
-    @scala.inline
-    def setScrollToBottomAfterMessengerShows(value: Boolean): Self = StObject.set(x, "scrollToBottomAfterMessengerShows", value.asInstanceOf[js.Any])
+    inline def setScrollToBottomAfterMessengerShows(value: Boolean): Self = StObject.set(x, "scrollToBottomAfterMessengerShows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToBottomAfterMessengerShowsUndefined: Self = StObject.set(x, "scrollToBottomAfterMessengerShows", js.undefined)
+    inline def setScrollToBottomAfterMessengerShowsUndefined: Self = StObject.set(x, "scrollToBottomAfterMessengerShows", js.undefined)
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
-    @scala.inline
-    def setShowKeyboard(value: Boolean): Self = StObject.set(x, "showKeyboard", value.asInstanceOf[js.Any])
+    inline def setShowKeyboard(value: Boolean): Self = StObject.set(x, "showKeyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowKeyboardUndefined: Self = StObject.set(x, "showKeyboard", js.undefined)
+    inline def setShowKeyboardUndefined: Self = StObject.set(x, "showKeyboard", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTextViewBackgroundColor(value: String): Self = StObject.set(x, "textViewBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setTextViewBackgroundColor(value: String): Self = StObject.set(x, "textViewBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextViewBackgroundColorUndefined: Self = StObject.set(x, "textViewBackgroundColor", js.undefined)
+    inline def setTextViewBackgroundColorUndefined: Self = StObject.set(x, "textViewBackgroundColor", js.undefined)
     
-    @scala.inline
-    def setTextViewBorderColor(value: String): Self = StObject.set(x, "textViewBorderColor", value.asInstanceOf[js.Any])
+    inline def setTextViewBorderColor(value: String): Self = StObject.set(x, "textViewBorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextViewBorderColorUndefined: Self = StObject.set(x, "textViewBorderColor", js.undefined)
+    inline def setTextViewBorderColorUndefined: Self = StObject.set(x, "textViewBorderColor", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -16,28 +16,21 @@ trait MlDeleteJob
 }
 object MlDeleteJob {
   
-  @scala.inline
-  def apply(job_id: String): MlDeleteJob = {
+  inline def apply(job_id: String): MlDeleteJob = {
     val __obj = js.Dynamic.literal(job_id = job_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlDeleteJob]
   }
   
-  @scala.inline
-  implicit class MlDeleteJobMutableBuilder[Self <: MlDeleteJob] (val x: Self) extends AnyVal {
+  extension [Self <: MlDeleteJob](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
+    inline def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
+    inline def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
   }
 }

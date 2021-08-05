@@ -9,22 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(maxParallel: Double, opts: Null, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(maxParallel: Double, opts: Unit, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(maxParallel: Double, opts: Options, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(ontransform: OnTransform): Transform = ^.asInstanceOf[js.Dynamic].apply(ontransform.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Double, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Null, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Unit, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Options, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(maxParallel: Double, opts: Null, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(maxParallel: Double, opts: Unit, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(maxParallel: Double, opts: Options, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(maxParallel.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(ontransform: OnTransform): Transform = ^.asInstanceOf[js.Dynamic].apply(ontransform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(opts: Double, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: Null, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: Unit, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: Options, ontransform: OnTransform): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], ontransform.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("parallel-transform", JSImport.Namespace)
@@ -53,20 +45,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+      inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
+      inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
     }
   }
 }

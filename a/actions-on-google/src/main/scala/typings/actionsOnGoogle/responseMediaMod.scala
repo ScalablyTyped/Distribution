@@ -78,41 +78,30 @@ object responseMediaMod {
   }
   object MediaObjectOptions {
     
-    @scala.inline
-    def apply(url: String): MediaObjectOptions = {
+    inline def apply(url: String): MediaObjectOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaObjectOptions]
     }
     
-    @scala.inline
-    implicit class MediaObjectOptionsMutableBuilder[Self <: MediaObjectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MediaObjectOptions](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIcon(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,26 +124,20 @@ object responseMediaMod {
   }
   object MediaResponseOptions {
     
-    @scala.inline
-    def apply(objects: js.Array[MediaObjectString]): MediaResponseOptions = {
+    inline def apply(objects: js.Array[MediaObjectString]): MediaResponseOptions = {
       val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaResponseOptions]
     }
     
-    @scala.inline
-    implicit class MediaResponseOptionsMutableBuilder[Self <: MediaResponseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MediaResponseOptions](x: Self) {
       
-      @scala.inline
-      def setObjects(value: js.Array[MediaObjectString]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: js.Array[MediaObjectString]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectsVarargs(value: MediaObjectString*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: MediaObjectString*): Self = StObject.set(x, "objects", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: GoogleActionsV2MediaResponseMediaType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: GoogleActionsV2MediaResponseMediaType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

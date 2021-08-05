@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleEnableBackground extends StObject
 object styleEnableBackground {
   
-  @scala.inline
-  def styleEnableBackgroundAccumulate: `1` = 1.asInstanceOf[`1`]
+  inline def styleEnableBackgroundAccumulate: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleEnableBackgroundInherit: `3` = 3.asInstanceOf[`3`]
+  inline def styleEnableBackgroundInherit: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleEnableBackgroundNew: `2` = 2.asInstanceOf[`2`]
+  inline def styleEnableBackgroundNew: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleEnableBackgroundNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleEnableBackgroundNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleEnableBackground_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleEnableBackground_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

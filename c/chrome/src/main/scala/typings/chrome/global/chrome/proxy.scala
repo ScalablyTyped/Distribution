@@ -23,12 +23,10 @@ object proxy {
   @JSGlobal("chrome.proxy.onProxyError")
   @js.native
   def onProxyError: ProxyErrorEvent = js.native
-  @scala.inline
-  def onProxyError_=(x: ProxyErrorEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onProxyError")(x.asInstanceOf[js.Any])
+  inline def onProxyError_=(x: ProxyErrorEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onProxyError")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.proxy.settings")
   @js.native
   def settings: ChromeSetting = js.native
-  @scala.inline
-  def settings_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
+  inline def settings_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
 }

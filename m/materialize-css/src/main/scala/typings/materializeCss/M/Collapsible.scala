@@ -21,19 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Collapsible {
   
-  @scala.inline
-  def apply(close: Double => Unit, open: Double => Unit): Collapsible = {
+  inline def apply(close: Double => Unit, open: Double => Unit): Collapsible = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction1(close), open = js.Any.fromFunction1(open))
     __obj.asInstanceOf[Collapsible]
   }
   
-  @scala.inline
-  implicit class CollapsibleMutableBuilder[Self <: Collapsible] (val x: Self) extends AnyVal {
+  extension [Self <: Collapsible](x: Self) {
     
-    @scala.inline
-    def setClose(value: Double => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: Double => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpen(value: Double => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: Double => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

@@ -12,19 +12,15 @@ trait Targetdefaults extends StObject {
 }
 object Targetdefaults {
   
-  @scala.inline
-  def apply(target_defaults: Cflags, variables: Clang): Targetdefaults = {
+  inline def apply(target_defaults: Cflags, variables: Clang): Targetdefaults = {
     val __obj = js.Dynamic.literal(target_defaults = target_defaults.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Targetdefaults]
   }
   
-  @scala.inline
-  implicit class TargetdefaultsMutableBuilder[Self <: Targetdefaults] (val x: Self) extends AnyVal {
+  extension [Self <: Targetdefaults](x: Self) {
     
-    @scala.inline
-    def setTarget_defaults(value: Cflags): Self = StObject.set(x, "target_defaults", value.asInstanceOf[js.Any])
+    inline def setTarget_defaults(value: Cflags): Self = StObject.set(x, "target_defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: Clang): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Clang): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

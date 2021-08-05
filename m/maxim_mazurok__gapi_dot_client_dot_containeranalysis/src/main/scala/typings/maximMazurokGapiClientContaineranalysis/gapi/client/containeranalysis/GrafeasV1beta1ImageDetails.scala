@@ -11,19 +11,15 @@ trait GrafeasV1beta1ImageDetails extends StObject {
 }
 object GrafeasV1beta1ImageDetails {
   
-  @scala.inline
-  def apply(): GrafeasV1beta1ImageDetails = {
+  inline def apply(): GrafeasV1beta1ImageDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrafeasV1beta1ImageDetails]
   }
   
-  @scala.inline
-  implicit class GrafeasV1beta1ImageDetailsMutableBuilder[Self <: GrafeasV1beta1ImageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GrafeasV1beta1ImageDetails](x: Self) {
     
-    @scala.inline
-    def setDerivedImage(value: Derived): Self = StObject.set(x, "derivedImage", value.asInstanceOf[js.Any])
+    inline def setDerivedImage(value: Derived): Self = StObject.set(x, "derivedImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDerivedImageUndefined: Self = StObject.set(x, "derivedImage", js.undefined)
+    inline def setDerivedImageUndefined: Self = StObject.set(x, "derivedImage", js.undefined)
   }
 }

@@ -76,8 +76,7 @@ object mod extends Shortcut {
   }
   object Mermaid {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contentLoaded: () => Unit,
       htmlLabels: Boolean,
       init: /* nodes */ String | Node | NodeList => Unit,
@@ -95,29 +94,21 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Mermaid]
     }
     
-    @scala.inline
-    implicit class MermaidMutableBuilder[Self <: Mermaid] (val x: Self) extends AnyVal {
+    extension [Self <: Mermaid](x: Self) {
       
-      @scala.inline
-      def setContentLoaded(value: () => Unit): Self = StObject.set(x, "contentLoaded", js.Any.fromFunction0(value))
+      inline def setContentLoaded(value: () => Unit): Self = StObject.set(x, "contentLoaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHtmlLabels(value: Boolean): Self = StObject.set(x, "htmlLabels", value.asInstanceOf[js.Any])
+      inline def setHtmlLabels(value: Boolean): Self = StObject.set(x, "htmlLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(value: /* nodes */ String | Node | NodeList => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* nodes */ String | Node | NodeList => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitialize(value: /* config */ Config => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      inline def setInitialize(value: /* config */ Config => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMermaidAPI(value: TypeofmermaidAPI): Self = StObject.set(x, "mermaidAPI", value.asInstanceOf[js.Any])
+      inline def setMermaidAPI(value: TypeofmermaidAPI): Self = StObject.set(x, "mermaidAPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParse(value: /* text */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* text */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* id */ String, /* txt */ String, /* cb */ js.Function2[
               /* svgCode */ String, 
               /* bindFunctions */ js.Function1[/* element */ Element, Unit], 
@@ -125,8 +116,7 @@ object mod extends Shortcut {
             ], /* container */ js.UndefOr[String]) => String
       ): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setStartOnLoad(value: Boolean): Self = StObject.set(x, "startOnLoad", value.asInstanceOf[js.Any])
+      inline def setStartOnLoad(value: Boolean): Self = StObject.set(x, "startOnLoad", value.asInstanceOf[js.Any])
     }
   }
   

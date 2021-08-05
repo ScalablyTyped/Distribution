@@ -26,8 +26,7 @@ trait Add extends StObject {
 }
 object Add {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: js.Any,
     `match`: js.Any,
     normalize: js.Any,
@@ -43,34 +42,24 @@ object Add {
     __obj.asInstanceOf[Add]
   }
   
-  @scala.inline
-  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
+  extension [Self <: Add](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Any): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: js.Any): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalize(value: js.Any): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    inline def setNormalize(value: js.Any): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPretest(value: js.Any): Self = StObject.set(x, "pretest", value.asInstanceOf[js.Any])
+    inline def setPretest(value: js.Any): Self = StObject.set(x, "pretest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRe(value: Emailfuzzy): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
+    inline def setRe(value: Emailfuzzy): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: js.Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: js.Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSchemaAt(value: js.Any): Self = StObject.set(x, "testSchemaAt", value.asInstanceOf[js.Any])
+    inline def setTestSchemaAt(value: js.Any): Self = StObject.set(x, "testSchemaAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlds(value: js.Any): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
+    inline def setTlds(value: js.Any): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
   }
 }

@@ -47,8 +47,7 @@ trait SmartCardProvisioning extends StObject {
 }
 object SmartCardProvisioning {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAuthorityKeyContainerNameAsync: js.Any,
     getChallengeContextAsync: () => IPromiseWithIAsyncOperation[SmartCardChallengeContext],
     getIdAsync: () => IPromiseWithIAsyncOperation[String],
@@ -61,28 +60,20 @@ object SmartCardProvisioning {
     __obj.asInstanceOf[SmartCardProvisioning]
   }
   
-  @scala.inline
-  implicit class SmartCardProvisioningMutableBuilder[Self <: SmartCardProvisioning] (val x: Self) extends AnyVal {
+  extension [Self <: SmartCardProvisioning](x: Self) {
     
-    @scala.inline
-    def setGetAuthorityKeyContainerNameAsync(value: js.Any): Self = StObject.set(x, "getAuthorityKeyContainerNameAsync", value.asInstanceOf[js.Any])
+    inline def setGetAuthorityKeyContainerNameAsync(value: js.Any): Self = StObject.set(x, "getAuthorityKeyContainerNameAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChallengeContextAsync(value: () => IPromiseWithIAsyncOperation[SmartCardChallengeContext]): Self = StObject.set(x, "getChallengeContextAsync", js.Any.fromFunction0(value))
+    inline def setGetChallengeContextAsync(value: () => IPromiseWithIAsyncOperation[SmartCardChallengeContext]): Self = StObject.set(x, "getChallengeContextAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIdAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "getIdAsync", js.Any.fromFunction0(value))
+    inline def setGetIdAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "getIdAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNameAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "getNameAsync", js.Any.fromFunction0(value))
+    inline def setGetNameAsync(value: () => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "getNameAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestPinChangeAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "requestPinChangeAsync", js.Any.fromFunction0(value))
+    inline def setRequestPinChangeAsync(value: () => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "requestPinChangeAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestPinResetAsync(value: SmartCardPinResetHandler => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "requestPinResetAsync", js.Any.fromFunction1(value))
+    inline def setRequestPinResetAsync(value: SmartCardPinResetHandler => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "requestPinResetAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSmartCard(value: SmartCard): Self = StObject.set(x, "smartCard", value.asInstanceOf[js.Any])
+    inline def setSmartCard(value: SmartCard): Self = StObject.set(x, "smartCard", value.asInstanceOf[js.Any])
   }
 }

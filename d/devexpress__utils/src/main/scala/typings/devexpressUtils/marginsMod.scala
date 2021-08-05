@@ -22,7 +22,6 @@ object marginsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def empty(): Margins = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Margins]
+    inline def empty(): Margins = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Margins]
   }
 }

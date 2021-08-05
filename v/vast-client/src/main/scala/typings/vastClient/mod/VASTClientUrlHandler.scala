@@ -12,16 +12,13 @@ trait VASTClientUrlHandler extends StObject {
 }
 object VASTClientUrlHandler {
   
-  @scala.inline
-  def apply(get: (String, Timeout, FnCall) => Unit): VASTClientUrlHandler = {
+  inline def apply(get: (String, Timeout, FnCall) => Unit): VASTClientUrlHandler = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get))
     __obj.asInstanceOf[VASTClientUrlHandler]
   }
   
-  @scala.inline
-  implicit class VASTClientUrlHandlerMutableBuilder[Self <: VASTClientUrlHandler] (val x: Self) extends AnyVal {
+  extension [Self <: VASTClientUrlHandler](x: Self) {
     
-    @scala.inline
-    def setGet(value: (String, Timeout, FnCall) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+    inline def setGet(value: (String, Timeout, FnCall) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
   }
 }

@@ -28,25 +28,19 @@ trait SchemaHistogramResult extends StObject {
 }
 object SchemaHistogramResult {
   
-  @scala.inline
-  def apply(): SchemaHistogramResult = {
+  inline def apply(): SchemaHistogramResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistogramResult]
   }
   
-  @scala.inline
-  implicit class SchemaHistogramResultMutableBuilder[Self <: SchemaHistogramResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistogramResult](x: Self) {
     
-    @scala.inline
-    def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
+    inline def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
+    inline def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
     
-    @scala.inline
-    def setValues(value: StringDictionary[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StringDictionary[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

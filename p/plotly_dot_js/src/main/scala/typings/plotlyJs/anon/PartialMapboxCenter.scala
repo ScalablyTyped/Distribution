@@ -13,25 +13,19 @@ trait PartialMapboxCenter extends StObject {
 }
 object PartialMapboxCenter {
   
-  @scala.inline
-  def apply(): PartialMapboxCenter = {
+  inline def apply(): PartialMapboxCenter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMapboxCenter]
   }
   
-  @scala.inline
-  implicit class PartialMapboxCenterMutableBuilder[Self <: PartialMapboxCenter] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMapboxCenter](x: Self) {
     
-    @scala.inline
-    def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
+    inline def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
-    @scala.inline
-    def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
+    inline def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLonUndefined: Self = StObject.set(x, "lon", js.undefined)
+    inline def setLonUndefined: Self = StObject.set(x, "lon", js.undefined)
   }
 }

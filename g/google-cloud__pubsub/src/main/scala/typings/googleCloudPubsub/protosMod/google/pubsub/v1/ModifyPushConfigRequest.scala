@@ -43,10 +43,8 @@ object ModifyPushConfigRequest {
     * @returns ModifyPushConfigRequest instance
     */
   /* static member */
-  @scala.inline
-  def create(): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ModifyPushConfigRequest]
-  @scala.inline
-  def create(properties: IModifyPushConfigRequest): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  inline def create(): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ModifyPushConfigRequest]
+  inline def create(properties: IModifyPushConfigRequest): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Decodes a ModifyPushConfigRequest message from the specified reader or buffer.
@@ -57,14 +55,10 @@ object ModifyPushConfigRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ModifyPushConfigRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyPushConfigRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ModifyPushConfigRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyPushConfigRequest]
+  inline def decode(reader: Reader): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  inline def decode(reader: Reader, length: Double): ModifyPushConfigRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyPushConfigRequest]
+  inline def decode(reader: Uint8Array): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  inline def decode(reader: Uint8Array, length: Double): ModifyPushConfigRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Decodes a ModifyPushConfigRequest message from the specified reader or buffer, length delimited.
@@ -74,10 +68,8 @@ object ModifyPushConfigRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  inline def decodeDelimited(reader: Reader): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  inline def decodeDelimited(reader: Uint8Array): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Encodes the specified ModifyPushConfigRequest message. Does not implicitly {@link google.pubsub.v1.ModifyPushConfigRequest.verify|verify} messages.
@@ -86,10 +78,8 @@ object ModifyPushConfigRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IModifyPushConfigRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IModifyPushConfigRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IModifyPushConfigRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IModifyPushConfigRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ModifyPushConfigRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.ModifyPushConfigRequest.verify|verify} messages.
@@ -98,10 +88,8 @@ object ModifyPushConfigRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IModifyPushConfigRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IModifyPushConfigRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IModifyPushConfigRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IModifyPushConfigRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ModifyPushConfigRequest message from a plain object. Also converts values to their respective internal types.
@@ -109,8 +97,7 @@ object ModifyPushConfigRequest {
     * @returns ModifyPushConfigRequest
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ModifyPushConfigRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ModifyPushConfigRequest]
   
   /**
     * Creates a plain object from a ModifyPushConfigRequest message. Also converts values to other types if specified.
@@ -119,10 +106,8 @@ object ModifyPushConfigRequest {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: ModifyPushConfigRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ModifyPushConfigRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ModifyPushConfigRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ModifyPushConfigRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ModifyPushConfigRequest message.
@@ -130,6 +115,5 @@ object ModifyPushConfigRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

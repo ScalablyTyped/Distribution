@@ -19,29 +19,22 @@ trait CrossTransform
 }
 object CrossTransform {
   
-  @scala.inline
-  def apply(): CrossTransform = {
+  inline def apply(): CrossTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("cross")
     __obj.asInstanceOf[CrossTransform]
   }
   
-  @scala.inline
-  implicit class CrossTransformMutableBuilder[Self <: CrossTransform] (val x: Self) extends AnyVal {
+  extension [Self <: CrossTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setFilter(value: ExprString): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ExprString): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setType(value: cross): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: cross): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -45,61 +45,43 @@ trait BandingProperties extends StObject {
 }
 object BandingProperties {
   
-  @scala.inline
-  def apply(): BandingProperties = {
+  inline def apply(): BandingProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BandingProperties]
   }
   
-  @scala.inline
-  implicit class BandingPropertiesMutableBuilder[Self <: BandingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BandingProperties](x: Self) {
     
-    @scala.inline
-    def setFirstBandColor(value: Color): Self = StObject.set(x, "firstBandColor", value.asInstanceOf[js.Any])
+    inline def setFirstBandColor(value: Color): Self = StObject.set(x, "firstBandColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBandColorStyle(value: ColorStyle): Self = StObject.set(x, "firstBandColorStyle", value.asInstanceOf[js.Any])
+    inline def setFirstBandColorStyle(value: ColorStyle): Self = StObject.set(x, "firstBandColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBandColorStyleUndefined: Self = StObject.set(x, "firstBandColorStyle", js.undefined)
+    inline def setFirstBandColorStyleUndefined: Self = StObject.set(x, "firstBandColorStyle", js.undefined)
     
-    @scala.inline
-    def setFirstBandColorUndefined: Self = StObject.set(x, "firstBandColor", js.undefined)
+    inline def setFirstBandColorUndefined: Self = StObject.set(x, "firstBandColor", js.undefined)
     
-    @scala.inline
-    def setFooterColor(value: Color): Self = StObject.set(x, "footerColor", value.asInstanceOf[js.Any])
+    inline def setFooterColor(value: Color): Self = StObject.set(x, "footerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterColorStyle(value: ColorStyle): Self = StObject.set(x, "footerColorStyle", value.asInstanceOf[js.Any])
+    inline def setFooterColorStyle(value: ColorStyle): Self = StObject.set(x, "footerColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterColorStyleUndefined: Self = StObject.set(x, "footerColorStyle", js.undefined)
+    inline def setFooterColorStyleUndefined: Self = StObject.set(x, "footerColorStyle", js.undefined)
     
-    @scala.inline
-    def setFooterColorUndefined: Self = StObject.set(x, "footerColor", js.undefined)
+    inline def setFooterColorUndefined: Self = StObject.set(x, "footerColor", js.undefined)
     
-    @scala.inline
-    def setHeaderColor(value: Color): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
+    inline def setHeaderColor(value: Color): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderColorStyle(value: ColorStyle): Self = StObject.set(x, "headerColorStyle", value.asInstanceOf[js.Any])
+    inline def setHeaderColorStyle(value: ColorStyle): Self = StObject.set(x, "headerColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderColorStyleUndefined: Self = StObject.set(x, "headerColorStyle", js.undefined)
+    inline def setHeaderColorStyleUndefined: Self = StObject.set(x, "headerColorStyle", js.undefined)
     
-    @scala.inline
-    def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
+    inline def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
     
-    @scala.inline
-    def setSecondBandColor(value: Color): Self = StObject.set(x, "secondBandColor", value.asInstanceOf[js.Any])
+    inline def setSecondBandColor(value: Color): Self = StObject.set(x, "secondBandColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondBandColorStyle(value: ColorStyle): Self = StObject.set(x, "secondBandColorStyle", value.asInstanceOf[js.Any])
+    inline def setSecondBandColorStyle(value: ColorStyle): Self = StObject.set(x, "secondBandColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondBandColorStyleUndefined: Self = StObject.set(x, "secondBandColorStyle", js.undefined)
+    inline def setSecondBandColorStyleUndefined: Self = StObject.set(x, "secondBandColorStyle", js.undefined)
     
-    @scala.inline
-    def setSecondBandColorUndefined: Self = StObject.set(x, "secondBandColor", js.undefined)
+    inline def setSecondBandColorUndefined: Self = StObject.set(x, "secondBandColor", js.undefined)
   }
 }

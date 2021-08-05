@@ -209,214 +209,146 @@ object container {
   }
   object IAbstractContainer {
     
-    @scala.inline
-    def apply(): IAbstractContainer = {
+    inline def apply(): IAbstractContainer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstractContainer]
     }
     
-    @scala.inline
-    implicit class IAbstractContainerMutableBuilder[Self <: IAbstractContainer] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstractContainer](x: Self) {
       
-      @scala.inline
-      def setActiveItem(value: js.Any): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
+      inline def setActiveItem(value: js.Any): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveItemUndefined: Self = StObject.set(x, "activeItem", js.undefined)
+      inline def setActiveItemUndefined: Self = StObject.set(x, "activeItem", js.undefined)
       
-      @scala.inline
-      def setAdd(value: /* component */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: /* component */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+      inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      @scala.inline
-      def setAfterLayout(value: /* layout */ js.UndefOr[typings.extjs.Ext.layout.container.IContainer] => Unit): Self = StObject.set(x, "afterLayout", js.Any.fromFunction1(value))
+      inline def setAfterLayout(value: /* layout */ js.UndefOr[typings.extjs.Ext.layout.container.IContainer] => Unit): Self = StObject.set(x, "afterLayout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterLayoutUndefined: Self = StObject.set(x, "afterLayout", js.undefined)
+      inline def setAfterLayoutUndefined: Self = StObject.set(x, "afterLayout", js.undefined)
       
-      @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
+      inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
       
-      @scala.inline
-      def setBubbleEvents(value: Array): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
+      inline def setBubbleEvents(value: Array): Self = StObject.set(x, "bubbleEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbleEventsUndefined: Self = StObject.set(x, "bubbleEvents", js.undefined)
+      inline def setBubbleEventsUndefined: Self = StObject.set(x, "bubbleEvents", js.undefined)
       
-      @scala.inline
-      def setCascade(
+      inline def setCascade(
         value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => typings.extjs.Ext.IContainer
       ): Self = StObject.set(x, "cascade", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+      inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
       
-      @scala.inline
-      def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
+      inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
-      @scala.inline
-      def setContains(value: (/* comp */ js.UndefOr[IComponent], /* deep */ js.UndefOr[Boolean]) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+      inline def setContains(value: (/* comp */ js.UndefOr[IComponent], /* deep */ js.UndefOr[Boolean]) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      @scala.inline
-      def setDefaultType(value: java.lang.String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
+      inline def setDefaultType(value: java.lang.String): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
+      inline def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
       
-      @scala.inline
-      def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+      inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      @scala.inline
-      def setDetachOnRemove(value: Boolean): Self = StObject.set(x, "detachOnRemove", value.asInstanceOf[js.Any])
+      inline def setDetachOnRemove(value: Boolean): Self = StObject.set(x, "detachOnRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachOnRemoveUndefined: Self = StObject.set(x, "detachOnRemove", js.undefined)
+      inline def setDetachOnRemoveUndefined: Self = StObject.set(x, "detachOnRemove", js.undefined)
       
-      @scala.inline
-      def setDisable(value: () => IAbstractContainer): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => IAbstractContainer): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setDoLayout(value: () => typings.extjs.Ext.container.IContainer): Self = StObject.set(x, "doLayout", js.Any.fromFunction0(value))
+      inline def setDoLayout(value: () => typings.extjs.Ext.container.IContainer): Self = StObject.set(x, "doLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDoLayoutUndefined: Self = StObject.set(x, "doLayout", js.undefined)
+      inline def setDoLayoutUndefined: Self = StObject.set(x, "doLayout", js.undefined)
       
-      @scala.inline
-      def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+      inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      @scala.inline
-      def setGetComponent(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction1(value))
+      inline def setGetComponent(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
+      inline def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
       
-      @scala.inline
-      def setGetLayout(value: () => typings.extjs.Ext.layout.container.IContainer): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      inline def setGetLayout(value: () => typings.extjs.Ext.layout.container.IContainer): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+      inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
-      @scala.inline
-      def setGetRefItems(value: /* deep */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction1(value))
+      inline def setGetRefItems(value: /* deep */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
+      inline def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
       
-      @scala.inline
-      def setInsert(value: (/* index */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any]) => IComponent): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      inline def setInsert(value: (/* index */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any]) => IComponent): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      @scala.inline
-      def setIsAncestor(value: /* possibleDescendant */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "isAncestor", js.Any.fromFunction1(value))
+      inline def setIsAncestor(value: /* possibleDescendant */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "isAncestor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsAncestorUndefined: Self = StObject.set(x, "isAncestor", js.undefined)
+      inline def setIsAncestorUndefined: Self = StObject.set(x, "isAncestor", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMove(value: (/* fromIdx */ js.UndefOr[js.Any], /* toIdx */ js.UndefOr[Double]) => IComponent): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
+      inline def setMove(value: (/* fromIdx */ js.UndefOr[js.Any], /* toIdx */ js.UndefOr[Double]) => IComponent): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+      inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
       
-      @scala.inline
-      def setOnAdd(value: (/* component */ js.UndefOr[IComponent], /* position */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
+      inline def setOnAdd(value: (/* component */ js.UndefOr[IComponent], /* position */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+      inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      @scala.inline
-      def setOnBeforeAdd(value: /* item */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
+      inline def setOnBeforeAdd(value: /* item */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
+      inline def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
       
-      @scala.inline
-      def setOnPosition(value: () => Unit): Self = StObject.set(x, "onPosition", js.Any.fromFunction0(value))
+      inline def setOnPosition(value: () => Unit): Self = StObject.set(x, "onPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPositionUndefined: Self = StObject.set(x, "onPosition", js.undefined)
+      inline def setOnPositionUndefined: Self = StObject.set(x, "onPosition", js.undefined)
       
-      @scala.inline
-      def setOnRemove(value: (/* component */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
+      inline def setOnRemove(value: (/* component */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+      inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
+      inline def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+      inline def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+      inline def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
+      inline def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQueryByIdUndefined: Self = StObject.set(x, "queryById", js.undefined)
+      inline def setQueryByIdUndefined: Self = StObject.set(x, "queryById", js.undefined)
       
-      @scala.inline
-      def setQueryByUndefined: Self = StObject.set(x, "queryBy", js.undefined)
+      inline def setQueryByUndefined: Self = StObject.set(x, "queryBy", js.undefined)
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRemove(value: (/* component */ js.UndefOr[js.Any], /* autoDestroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* component */ js.UndefOr[js.Any], /* autoDestroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAll(value: /* autoDestroy */ js.UndefOr[Boolean] => Array): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
+      inline def setRemoveAll(value: /* autoDestroy */ js.UndefOr[Boolean] => Array): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
+      inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setSuspendLayout(value: Boolean): Self = StObject.set(x, "suspendLayout", value.asInstanceOf[js.Any])
+      inline def setSuspendLayout(value: Boolean): Self = StObject.set(x, "suspendLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuspendLayoutUndefined: Self = StObject.set(x, "suspendLayout", js.undefined)
+      inline def setSuspendLayoutUndefined: Self = StObject.set(x, "suspendLayout", js.undefined)
     }
   }
   
@@ -438,32 +370,24 @@ object container {
   }
   object IButtonGroup {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.container.IButtonGroup = {
+    inline def apply(): typings.extjs.Ext.container.IButtonGroup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.container.IButtonGroup]
     }
     
-    @scala.inline
-    implicit class IButtonGroupMutableBuilder[Self <: typings.extjs.Ext.container.IButtonGroup] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.container.IButtonGroup](x: Self) {
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
+      inline def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultButtonUIUndefined: Self = StObject.set(x, "defaultButtonUI", js.undefined)
+      inline def setDefaultButtonUIUndefined: Self = StObject.set(x, "defaultButtonUI", js.undefined)
       
-      @scala.inline
-      def setOnBeforeAdd(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
+      inline def setOnBeforeAdd(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
+      inline def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
     }
   }
   
@@ -485,26 +409,20 @@ object container {
   }
   object IContainer {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.container.IContainer = {
+    inline def apply(): typings.extjs.Ext.container.IContainer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.container.IContainer]
     }
     
-    @scala.inline
-    implicit class IContainerMutableBuilder[Self <: typings.extjs.Ext.container.IContainer] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.container.IContainer](x: Self) {
       
-      @scala.inline
-      def setAnchorSize(value: js.Any): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
+      inline def setAnchorSize(value: js.Any): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
+      inline def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
       
-      @scala.inline
-      def setGetChildByElement(value: (/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "getChildByElement", js.Any.fromFunction2(value))
+      inline def setGetChildByElement(value: (/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "getChildByElement", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetChildByElementUndefined: Self = StObject.set(x, "getChildByElement", js.undefined)
+      inline def setGetChildByElementUndefined: Self = StObject.set(x, "getChildByElement", js.undefined)
     }
   }
   
@@ -571,64 +489,46 @@ object container {
   }
   object IDockingContainer {
     
-    @scala.inline
-    def apply(): IDockingContainer = {
+    inline def apply(): IDockingContainer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDockingContainer]
     }
     
-    @scala.inline
-    implicit class IDockingContainerMutableBuilder[Self <: IDockingContainer] (val x: Self) extends AnyVal {
+    extension [Self <: IDockingContainer](x: Self) {
       
-      @scala.inline
-      def setAddDocked(value: (/* component */ js.UndefOr[js.Any], /* pos */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "addDocked", js.Any.fromFunction2(value))
+      inline def setAddDocked(value: (/* component */ js.UndefOr[js.Any], /* pos */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "addDocked", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddDockedUndefined: Self = StObject.set(x, "addDocked", js.undefined)
+      inline def setAddDockedUndefined: Self = StObject.set(x, "addDocked", js.undefined)
       
-      @scala.inline
-      def setDefaultDockWeights(value: js.Any): Self = StObject.set(x, "defaultDockWeights", value.asInstanceOf[js.Any])
+      inline def setDefaultDockWeights(value: js.Any): Self = StObject.set(x, "defaultDockWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDockWeightsUndefined: Self = StObject.set(x, "defaultDockWeights", js.undefined)
+      inline def setDefaultDockWeightsUndefined: Self = StObject.set(x, "defaultDockWeights", js.undefined)
       
-      @scala.inline
-      def setGetDockedComponent(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
+      inline def setGetDockedComponent(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDockedComponentUndefined: Self = StObject.set(x, "getDockedComponent", js.undefined)
+      inline def setGetDockedComponentUndefined: Self = StObject.set(x, "getDockedComponent", js.undefined)
       
-      @scala.inline
-      def setGetDockedItems(
+      inline def setGetDockedItems(
         value: (/* selector */ js.UndefOr[java.lang.String], /* beforeBody */ js.UndefOr[Boolean]) => Array
       ): Self = StObject.set(x, "getDockedItems", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
+      inline def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
       
-      @scala.inline
-      def setInsertDocked(value: (/* pos */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "insertDocked", js.Any.fromFunction2(value))
+      inline def setInsertDocked(value: (/* pos */ js.UndefOr[Double], /* component */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "insertDocked", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInsertDockedUndefined: Self = StObject.set(x, "insertDocked", js.undefined)
+      inline def setInsertDockedUndefined: Self = StObject.set(x, "insertDocked", js.undefined)
       
-      @scala.inline
-      def setOnDockedAdd(value: /* component */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "onDockedAdd", js.Any.fromFunction1(value))
+      inline def setOnDockedAdd(value: /* component */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "onDockedAdd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDockedAddUndefined: Self = StObject.set(x, "onDockedAdd", js.undefined)
+      inline def setOnDockedAddUndefined: Self = StObject.set(x, "onDockedAdd", js.undefined)
       
-      @scala.inline
-      def setOnDockedRemove(value: /* component */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "onDockedRemove", js.Any.fromFunction1(value))
+      inline def setOnDockedRemove(value: /* component */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "onDockedRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDockedRemoveUndefined: Self = StObject.set(x, "onDockedRemove", js.undefined)
+      inline def setOnDockedRemoveUndefined: Self = StObject.set(x, "onDockedRemove", js.undefined)
       
-      @scala.inline
-      def setRemoveDocked(value: (/* item */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "removeDocked", js.Any.fromFunction2(value))
+      inline def setRemoveDocked(value: (/* item */ js.UndefOr[IComponent], /* autoDestroy */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "removeDocked", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveDockedUndefined: Self = StObject.set(x, "removeDocked", js.undefined)
+      inline def setRemoveDockedUndefined: Self = StObject.set(x, "removeDocked", js.undefined)
     }
   }
   
@@ -647,26 +547,20 @@ object container {
   }
   object IViewport {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.container.IViewport = {
+    inline def apply(): typings.extjs.Ext.container.IViewport = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.container.IViewport]
     }
     
-    @scala.inline
-    implicit class IViewportMutableBuilder[Self <: typings.extjs.Ext.container.IViewport] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.container.IViewport](x: Self) {
       
-      @scala.inline
-      def setIsViewport(value: Boolean): Self = StObject.set(x, "isViewport", value.asInstanceOf[js.Any])
+      inline def setIsViewport(value: Boolean): Self = StObject.set(x, "isViewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsViewportUndefined: Self = StObject.set(x, "isViewport", js.undefined)
+      inline def setIsViewportUndefined: Self = StObject.set(x, "isViewport", js.undefined)
       
-      @scala.inline
-      def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
+      inline def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+      inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     }
   }
 }

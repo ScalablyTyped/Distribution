@@ -11,16 +11,13 @@ trait Document[TSchema] extends StObject {
 }
 object Document {
   
-  @scala.inline
-  def apply[TSchema](document: OptionalId[TSchema]): Document[TSchema] = {
+  inline def apply[TSchema](document: OptionalId[TSchema]): Document[TSchema] = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document[TSchema]]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document[?], TSchema] (val x: Self & Document[TSchema]) extends AnyVal {
+  extension [Self <: Document[?], TSchema](x: Self & Document[TSchema]) {
     
-    @scala.inline
-    def setDocument(value: OptionalId[TSchema]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: OptionalId[TSchema]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait PluginServiceGlobalRegistration extends StObject {
 }
 object PluginServiceGlobalRegistration {
   
-  @scala.inline
-  def apply(): PluginServiceGlobalRegistration = {
+  inline def apply(): PluginServiceGlobalRegistration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PluginServiceGlobalRegistration]
   }
   
-  @scala.inline
-  implicit class PluginServiceGlobalRegistrationMutableBuilder[Self <: PluginServiceGlobalRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: PluginServiceGlobalRegistration](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

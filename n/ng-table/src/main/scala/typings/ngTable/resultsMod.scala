@@ -36,26 +36,20 @@ object resultsMod {
   }
   object IDataRowGroup {
     
-    @scala.inline
-    def apply[T]($hideRows: Boolean, data: js.Array[T], value: String): IDataRowGroup[T] = {
+    inline def apply[T]($hideRows: Boolean, data: js.Array[T], value: String): IDataRowGroup[T] = {
       val __obj = js.Dynamic.literal($hideRows = $hideRows.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDataRowGroup[T]]
     }
     
-    @scala.inline
-    implicit class IDataRowGroupMutableBuilder[Self <: IDataRowGroup[?], T] (val x: Self & IDataRowGroup[T]) extends AnyVal {
+    extension [Self <: IDataRowGroup[?], T](x: Self & IDataRowGroup[T]) {
       
-      @scala.inline
-      def set$hideRows(value: Boolean): Self = StObject.set(x, "$hideRows", value.asInstanceOf[js.Any])
+      inline def set$hideRows(value: Boolean): Self = StObject.set(x, "$hideRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,20 +18,16 @@ trait NumberNode
 }
 object NumberNode {
   
-  @scala.inline
-  def apply(value: String): NumberNode = {
+  inline def apply(value: String): NumberNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Number")
     __obj.asInstanceOf[NumberNode]
   }
   
-  @scala.inline
-  implicit class NumberNodeMutableBuilder[Self <: NumberNode] (val x: Self) extends AnyVal {
+  extension [Self <: NumberNode](x: Self) {
     
-    @scala.inline
-    def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

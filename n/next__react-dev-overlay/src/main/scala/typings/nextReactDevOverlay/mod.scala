@@ -16,21 +16,15 @@ object mod {
   @js.native
   val ReactDevOverlay: FunctionComponent[js.Object] = js.native
   
-  @scala.inline
-  def getNodeError(error: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def getNodeError(error: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeError")(error.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @scala.inline
-  def onBuildError(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBuildError")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onBuildError(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBuildError")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def onBuildOk(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBuildOk")().asInstanceOf[Unit]
+  inline def onBuildOk(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBuildOk")().asInstanceOf[Unit]
   
-  @scala.inline
-  def onRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRefresh")().asInstanceOf[Unit]
+  inline def onRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onRefresh")().asInstanceOf[Unit]
   
-  @scala.inline
-  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+  inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   
-  @scala.inline
-  def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
+  inline def unregister(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")().asInstanceOf[Unit]
 }

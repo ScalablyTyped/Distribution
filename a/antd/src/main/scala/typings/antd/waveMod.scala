@@ -26,21 +26,20 @@ object waveMod {
     @JSImport("antd/lib/_util/wave", "default.contextType")
     @js.native
     def contextType: Context[ConfigConsumerProps] = js.native
-    @scala.inline
-    def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait Wave
     extends Component[InsertExtraNode, js.Object, js.Any] {
     
-    var animationStart: js.Any = js.native
+    /* private */ var animationStart: js.Any = js.native
     
-    var animationStartId: js.Any = js.native
+    /* private */ var animationStartId: js.Any = js.native
     
     def bindAnimationEvent(node: HTMLElement): js.UndefOr[Cancel] = js.native
     
-    var clickWaveTimeoutId: js.Any = js.native
+    /* private */ var clickWaveTimeoutId: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MWave(): Unit = js.native
@@ -48,20 +47,20 @@ object waveMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MWave(): Unit = js.native
     
-    var containerRef: js.Any = js.native
+    /* private */ var containerRef: js.Any = js.native
     
     @JSName("context")
     var context_Wave: ConfigConsumerProps = js.native
     
-    var csp: js.Any = js.native
+    /* private */ var csp: js.Any = js.native
     
-    var destroyed: js.Any = js.native
+    /* private */ var destroyed: js.Any = js.native
     
-    var extraNode: js.Any = js.native
+    /* private */ var extraNode: js.Any = js.native
     
     def getAttributeName(): String = js.native
     
-    var instance: js.Any = js.native
+    /* private */ var instance: js.Any = js.native
     
     def onClick(node: HTMLElement, waveColor: String): Unit = js.native
     

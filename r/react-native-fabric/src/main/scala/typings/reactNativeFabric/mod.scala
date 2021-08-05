@@ -37,20 +37,16 @@ object mod extends Shortcut {
   }
   object Fabric {
     
-    @scala.inline
-    def apply(Answers: LogAddToCart, Crashlytics: Crash): Fabric = {
+    inline def apply(Answers: LogAddToCart, Crashlytics: Crash): Fabric = {
       val __obj = js.Dynamic.literal(Answers = Answers.asInstanceOf[js.Any], Crashlytics = Crashlytics.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fabric]
     }
     
-    @scala.inline
-    implicit class FabricMutableBuilder[Self <: Fabric] (val x: Self) extends AnyVal {
+    extension [Self <: Fabric](x: Self) {
       
-      @scala.inline
-      def setAnswers(value: LogAddToCart): Self = StObject.set(x, "Answers", value.asInstanceOf[js.Any])
+      inline def setAnswers(value: LogAddToCart): Self = StObject.set(x, "Answers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrashlytics(value: Crash): Self = StObject.set(x, "Crashlytics", value.asInstanceOf[js.Any])
+      inline def setCrashlytics(value: Crash): Self = StObject.set(x, "Crashlytics", value.asInstanceOf[js.Any])
     }
   }
   

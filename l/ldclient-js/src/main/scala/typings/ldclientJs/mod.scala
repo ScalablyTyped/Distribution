@@ -23,25 +23,19 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def initialize(envKey: String, user: LDUser): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[LDClient]
-    @scala.inline
-    def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LDClient]
+    inline def initialize(envKey: String, user: LDUser): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[LDClient]
+    inline def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LDClient]
     
     @JSImport("ldclient-js", "default.version")
     @js.native
     def version: String = js.native
-    @scala.inline
-    def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createConsoleLogger(minimumLevel: String): LDLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(minimumLevel.asInstanceOf[js.Any]).asInstanceOf[LDLogger]
+  inline def createConsoleLogger(minimumLevel: String): LDLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(minimumLevel.asInstanceOf[js.Any]).asInstanceOf[LDLogger]
   
-  @scala.inline
-  def initialize(envKey: String, user: LDUser): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[LDClient]
-  @scala.inline
-  def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LDClient]
+  inline def initialize(envKey: String, user: LDUser): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[LDClient]
+  inline def initialize(envKey: String, user: LDUser, options: LDOptions): LDClient = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(envKey.asInstanceOf[js.Any], user.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LDClient]
   
   @JSImport("ldclient-js", "version")
   @js.native
@@ -93,26 +87,20 @@ object mod {
   }
   object LDOptions {
     
-    @scala.inline
-    def apply(): LDOptions = {
+    inline def apply(): LDOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LDOptions]
     }
     
-    @scala.inline
-    implicit class LDOptionsMutableBuilder[Self <: LDOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LDOptions](x: Self) {
       
-      @scala.inline
-      def setFetchGoals(value: Boolean): Self = StObject.set(x, "fetchGoals", value.asInstanceOf[js.Any])
+      inline def setFetchGoals(value: Boolean): Self = StObject.set(x, "fetchGoals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchGoalsUndefined: Self = StObject.set(x, "fetchGoals", js.undefined)
+      inline def setFetchGoalsUndefined: Self = StObject.set(x, "fetchGoals", js.undefined)
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     }
   }
 }

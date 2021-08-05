@@ -10,16 +10,13 @@ trait NextPageNumber extends StObject {
 }
 object NextPageNumber {
   
-  @scala.inline
-  def apply(nextPage: Double): NextPageNumber = {
+  inline def apply(nextPage: Double): NextPageNumber = {
     val __obj = js.Dynamic.literal(nextPage = nextPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextPageNumber]
   }
   
-  @scala.inline
-  implicit class NextPageNumberMutableBuilder[Self <: NextPageNumber] (val x: Self) extends AnyVal {
+  extension [Self <: NextPageNumber](x: Self) {
     
-    @scala.inline
-    def setNextPage(value: Double): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
+    inline def setNextPage(value: Double): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
   }
 }

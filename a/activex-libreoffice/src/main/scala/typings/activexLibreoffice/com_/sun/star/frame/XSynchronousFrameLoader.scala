@@ -37,8 +37,7 @@ trait XSynchronousFrameLoader
 }
 object XSynchronousFrameLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancel: () => Unit,
     load: (SeqEquiv[PropertyValue], XFrame) => Boolean,
@@ -49,13 +48,10 @@ object XSynchronousFrameLoader {
     __obj.asInstanceOf[XSynchronousFrameLoader]
   }
   
-  @scala.inline
-  implicit class XSynchronousFrameLoaderMutableBuilder[Self <: XSynchronousFrameLoader] (val x: Self) extends AnyVal {
+  extension [Self <: XSynchronousFrameLoader](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoad(value: (SeqEquiv[PropertyValue], XFrame) => Boolean): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    inline def setLoad(value: (SeqEquiv[PropertyValue], XFrame) => Boolean): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
   }
 }

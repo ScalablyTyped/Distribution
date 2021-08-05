@@ -19,25 +19,19 @@ trait InitOptions extends StObject {
 }
 object InitOptions {
   
-  @scala.inline
-  def apply(appId: String, channelUrl: String): InitOptions = {
+  inline def apply(appId: String, channelUrl: String): InitOptions = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], channelUrl = channelUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
   
-  @scala.inline
-  implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitOptions](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
+    inline def setChannelUrl(value: String): Self = StObject.set(x, "channelUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer(value: PlayerOptions): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: PlayerOptions): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
+    inline def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
   }
 }

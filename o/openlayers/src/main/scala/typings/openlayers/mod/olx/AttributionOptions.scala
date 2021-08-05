@@ -10,16 +10,13 @@ trait AttributionOptions extends StObject {
 }
 object AttributionOptions {
   
-  @scala.inline
-  def apply(html: String): AttributionOptions = {
+  inline def apply(html: String): AttributionOptions = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributionOptions]
   }
   
-  @scala.inline
-  implicit class AttributionOptionsMutableBuilder[Self <: AttributionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AttributionOptions](x: Self) {
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }
 }

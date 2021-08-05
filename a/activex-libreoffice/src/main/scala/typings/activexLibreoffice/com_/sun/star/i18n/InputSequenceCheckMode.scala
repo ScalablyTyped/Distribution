@@ -17,13 +17,10 @@ object InputSequenceCheckMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BASIC: `1` = 1.asInstanceOf[`1`]
+    inline def BASIC: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PASSTHROUGH: `0` = 0.asInstanceOf[`0`]
+    inline def PASSTHROUGH: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def STRICT: `2` = 2.asInstanceOf[`2`]
+    inline def STRICT: `2` = 2.asInstanceOf[`2`]
   }
 }

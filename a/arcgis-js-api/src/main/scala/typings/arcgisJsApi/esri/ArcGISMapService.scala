@@ -50,8 +50,7 @@ trait ArcGISMapService extends StObject {
 }
 object ArcGISMapService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capabilities: ArcGISMapServiceCapabilities,
     copyright: String,
     fullExtent: Extent,
@@ -63,25 +62,18 @@ object ArcGISMapService {
     __obj.asInstanceOf[ArcGISMapService]
   }
   
-  @scala.inline
-  implicit class ArcGISMapServiceMutableBuilder[Self <: ArcGISMapService] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISMapService](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: ArcGISMapServiceCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: ArcGISMapServiceCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullExtent(value: Extent): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
+    inline def setFullExtent(value: Extent): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

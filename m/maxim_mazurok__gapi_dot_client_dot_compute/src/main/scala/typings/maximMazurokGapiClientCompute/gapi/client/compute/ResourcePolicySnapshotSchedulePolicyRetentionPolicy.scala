@@ -14,25 +14,19 @@ trait ResourcePolicySnapshotSchedulePolicyRetentionPolicy extends StObject {
 }
 object ResourcePolicySnapshotSchedulePolicyRetentionPolicy {
   
-  @scala.inline
-  def apply(): ResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
+  inline def apply(): ResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourcePolicySnapshotSchedulePolicyRetentionPolicy]
   }
   
-  @scala.inline
-  implicit class ResourcePolicySnapshotSchedulePolicyRetentionPolicyMutableBuilder[Self <: ResourcePolicySnapshotSchedulePolicyRetentionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ResourcePolicySnapshotSchedulePolicyRetentionPolicy](x: Self) {
     
-    @scala.inline
-    def setMaxRetentionDays(value: Double): Self = StObject.set(x, "maxRetentionDays", value.asInstanceOf[js.Any])
+    inline def setMaxRetentionDays(value: Double): Self = StObject.set(x, "maxRetentionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetentionDaysUndefined: Self = StObject.set(x, "maxRetentionDays", js.undefined)
+    inline def setMaxRetentionDaysUndefined: Self = StObject.set(x, "maxRetentionDays", js.undefined)
     
-    @scala.inline
-    def setOnSourceDiskDelete(value: String): Self = StObject.set(x, "onSourceDiskDelete", value.asInstanceOf[js.Any])
+    inline def setOnSourceDiskDelete(value: String): Self = StObject.set(x, "onSourceDiskDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSourceDiskDeleteUndefined: Self = StObject.set(x, "onSourceDiskDelete", js.undefined)
+    inline def setOnSourceDiskDeleteUndefined: Self = StObject.set(x, "onSourceDiskDelete", js.undefined)
   }
 }

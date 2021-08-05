@@ -10,19 +10,15 @@ trait VpnGatewaysGetStatusResponse extends StObject {
 }
 object VpnGatewaysGetStatusResponse {
   
-  @scala.inline
-  def apply(): VpnGatewaysGetStatusResponse = {
+  inline def apply(): VpnGatewaysGetStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnGatewaysGetStatusResponse]
   }
   
-  @scala.inline
-  implicit class VpnGatewaysGetStatusResponseMutableBuilder[Self <: VpnGatewaysGetStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VpnGatewaysGetStatusResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: VpnGatewayStatus): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: VpnGatewayStatus): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

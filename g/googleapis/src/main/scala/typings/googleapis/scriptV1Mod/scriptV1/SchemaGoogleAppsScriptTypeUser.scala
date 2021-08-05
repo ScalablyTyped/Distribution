@@ -31,37 +31,27 @@ trait SchemaGoogleAppsScriptTypeUser extends StObject {
 }
 object SchemaGoogleAppsScriptTypeUser {
   
-  @scala.inline
-  def apply(): SchemaGoogleAppsScriptTypeUser = {
+  inline def apply(): SchemaGoogleAppsScriptTypeUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeUser]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleAppsScriptTypeUserMutableBuilder[Self <: SchemaGoogleAppsScriptTypeUser] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleAppsScriptTypeUser](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
+    inline def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
+    inline def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
   }
 }

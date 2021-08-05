@@ -38,8 +38,7 @@ trait CloudwatchMetricAction extends StObject {
 }
 object CloudwatchMetricAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     metricName: String,
     metricNamespace: String,
     metricUnit: String,
@@ -50,28 +49,20 @@ object CloudwatchMetricAction {
     __obj.asInstanceOf[CloudwatchMetricAction]
   }
   
-  @scala.inline
-  implicit class CloudwatchMetricActionMutableBuilder[Self <: CloudwatchMetricAction] (val x: Self) extends AnyVal {
+  extension [Self <: CloudwatchMetricAction](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamespace(value: String): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
+    inline def setMetricNamespace(value: String): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTimestamp(value: String): Self = StObject.set(x, "metricTimestamp", value.asInstanceOf[js.Any])
+    inline def setMetricTimestamp(value: String): Self = StObject.set(x, "metricTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTimestampUndefined: Self = StObject.set(x, "metricTimestamp", js.undefined)
+    inline def setMetricTimestampUndefined: Self = StObject.set(x, "metricTimestamp", js.undefined)
     
-    @scala.inline
-    def setMetricUnit(value: String): Self = StObject.set(x, "metricUnit", value.asInstanceOf[js.Any])
+    inline def setMetricUnit(value: String): Self = StObject.set(x, "metricUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricValue(value: String): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
+    inline def setMetricValue(value: String): Self = StObject.set(x, "metricValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

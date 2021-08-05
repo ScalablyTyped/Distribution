@@ -20,26 +20,20 @@ object rowContextMod extends Shortcut {
   }
   object RowContextState {
     
-    @scala.inline
-    def apply(): RowContextState = {
+    inline def apply(): RowContextState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowContextState]
     }
     
-    @scala.inline
-    implicit class RowContextStateMutableBuilder[Self <: RowContextState] (val x: Self) extends AnyVal {
+    extension [Self <: RowContextState](x: Self) {
       
-      @scala.inline
-      def setGutter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   

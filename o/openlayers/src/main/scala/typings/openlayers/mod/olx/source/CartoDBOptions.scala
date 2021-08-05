@@ -35,79 +35,55 @@ trait CartoDBOptions extends StObject {
 }
 object CartoDBOptions {
   
-  @scala.inline
-  def apply(account: String): CartoDBOptions = {
+  inline def apply(account: String): CartoDBOptions = {
     val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any])
     __obj.asInstanceOf[CartoDBOptions]
   }
   
-  @scala.inline
-  implicit class CartoDBOptionsMutableBuilder[Self <: CartoDBOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CartoDBOptions](x: Self) {
     
-    @scala.inline
-    def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+    inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+    inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    @scala.inline
-    def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
     
-    @scala.inline
-    def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+    inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+    inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
     
-    @scala.inline
-    def setConfig(value: GlobalObject): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: GlobalObject): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    @scala.inline
-    def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    @scala.inline
-    def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
-    @scala.inline
-    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

@@ -21,19 +21,15 @@ trait ResourceMetricSource extends StObject {
 }
 object ResourceMetricSource {
   
-  @scala.inline
-  def apply(name: String, target: MetricTarget): ResourceMetricSource = {
+  inline def apply(name: String, target: MetricTarget): ResourceMetricSource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceMetricSource]
   }
   
-  @scala.inline
-  implicit class ResourceMetricSourceMutableBuilder[Self <: ResourceMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceMetricSource](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: MetricTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: MetricTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

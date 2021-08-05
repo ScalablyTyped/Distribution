@@ -14,8 +14,7 @@ trait String_
 }
 object String_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
     clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
@@ -37,10 +36,8 @@ object String_ {
     __obj.asInstanceOf[String_]
   }
   
-  @scala.inline
-  implicit class String_MutableBuilder[Self <: String_] (val x: Self) extends AnyVal {
+  extension [Self <: String_](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

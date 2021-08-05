@@ -32,61 +32,43 @@ trait PosCustomBatchRequestEntry extends StObject {
 }
 object PosCustomBatchRequestEntry {
   
-  @scala.inline
-  def apply(): PosCustomBatchRequestEntry = {
+  inline def apply(): PosCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PosCustomBatchRequestEntry]
   }
   
-  @scala.inline
-  implicit class PosCustomBatchRequestEntryMutableBuilder[Self <: PosCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PosCustomBatchRequestEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setInventory(value: PosInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
+    inline def setInventory(value: PosInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
+    inline def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setSale(value: PosSale): Self = StObject.set(x, "sale", value.asInstanceOf[js.Any])
+    inline def setSale(value: PosSale): Self = StObject.set(x, "sale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleUndefined: Self = StObject.set(x, "sale", js.undefined)
+    inline def setSaleUndefined: Self = StObject.set(x, "sale", js.undefined)
     
-    @scala.inline
-    def setStore(value: PosStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: PosStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
+    inline def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
+    inline def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    @scala.inline
-    def setTargetMerchantId(value: String): Self = StObject.set(x, "targetMerchantId", value.asInstanceOf[js.Any])
+    inline def setTargetMerchantId(value: String): Self = StObject.set(x, "targetMerchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetMerchantIdUndefined: Self = StObject.set(x, "targetMerchantId", js.undefined)
+    inline def setTargetMerchantIdUndefined: Self = StObject.set(x, "targetMerchantId", js.undefined)
   }
 }

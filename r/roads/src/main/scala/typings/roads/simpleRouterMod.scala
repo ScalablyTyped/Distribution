@@ -43,23 +43,18 @@ object simpleRouterMod {
   }
   object RouteDetails {
     
-    @scala.inline
-    def apply(method: String, path: String, route: Route): RouteDetails = {
+    inline def apply(method: String, path: String, route: Route): RouteDetails = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteDetails]
     }
     
-    @scala.inline
-    implicit class RouteDetailsMutableBuilder[Self <: RouteDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RouteDetails](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,7 +77,7 @@ object simpleRouterMod {
       next: ResponseMiddleware
     ): js.Promise[typings.roads.responseMod.default] = js.native
     
-    var _routes: js.Array[RouteDetails] = js.native
+    /* protected */ var _routes: js.Array[RouteDetails] = js.native
     
     /**
       * Adds a route to this router. The route is a function that will match the standard roads request signature.
@@ -124,20 +119,16 @@ object simpleRouterMod {
   }
   object SimpleRouterURL {
     
-    @scala.inline
-    def apply(href: String, query: ParsedUrlQuery): SimpleRouterURL = {
+    inline def apply(href: String, query: ParsedUrlQuery): SimpleRouterURL = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, search = null, slashes = null)
       __obj.asInstanceOf[SimpleRouterURL]
     }
     
-    @scala.inline
-    implicit class SimpleRouterURLMutableBuilder[Self <: SimpleRouterURL] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleRouterURL](x: Self) {
       
-      @scala.inline
-      def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     }
   }
 }

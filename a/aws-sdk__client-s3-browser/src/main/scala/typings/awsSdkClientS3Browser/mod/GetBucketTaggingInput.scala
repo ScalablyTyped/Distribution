@@ -9,8 +9,7 @@ trait GetBucketTaggingInput
      with typings.awsSdkClientS3Browser.typesGetBucketTaggingInputMod.GetBucketTaggingInput
 object GetBucketTaggingInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketTaggingInput = {
+  inline def apply(Bucket: String): GetBucketTaggingInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketTaggingInput]
   }

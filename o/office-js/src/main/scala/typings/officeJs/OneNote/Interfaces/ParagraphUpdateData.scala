@@ -25,25 +25,19 @@ trait ParagraphUpdateData extends StObject {
 }
 object ParagraphUpdateData {
   
-  @scala.inline
-  def apply(): ParagraphUpdateData = {
+  inline def apply(): ParagraphUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphUpdateData]
   }
   
-  @scala.inline
-  implicit class ParagraphUpdateDataMutableBuilder[Self <: ParagraphUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphUpdateData](x: Self) {
     
-    @scala.inline
-    def setImage(value: ImageUpdateData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageUpdateData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setTable(value: TableUpdateData): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: TableUpdateData): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

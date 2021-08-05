@@ -12,6 +12,5 @@ object nativeLinearGradientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: NativeLinearGradientProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(props: NativeLinearGradientProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

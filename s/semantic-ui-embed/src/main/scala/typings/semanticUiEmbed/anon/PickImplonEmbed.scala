@@ -15,19 +15,16 @@ trait PickImplonEmbed extends StObject {
 }
 object PickImplonEmbed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onEmbed: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
   ): PickImplonEmbed = {
     val __obj = js.Dynamic.literal(onEmbed = onEmbed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonEmbed]
   }
   
-  @scala.inline
-  implicit class PickImplonEmbedMutableBuilder[Self <: PickImplonEmbed] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonEmbed](x: Self) {
     
-    @scala.inline
-    def setOnEmbed(
+    inline def setOnEmbed(
       value: js.ThisFunction1[/* this */ JQuery, /* parameters */ ParametersSettings, ParametersSettings]
     ): Self = StObject.set(x, "onEmbed", value.asInstanceOf[js.Any])
   }

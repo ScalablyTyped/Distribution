@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDefaultConfig(config: Config_): Config_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Config_]
+  inline def createDefaultConfig(config: Config_): Config_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Config_]
 }

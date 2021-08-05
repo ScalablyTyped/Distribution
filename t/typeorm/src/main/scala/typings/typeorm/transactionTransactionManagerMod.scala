@@ -11,6 +11,5 @@ object transactionTransactionManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TransactionManager(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionManager")().asInstanceOf[ParameterDecorator]
+  inline def TransactionManager(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionManager")().asInstanceOf[ParameterDecorator]
 }

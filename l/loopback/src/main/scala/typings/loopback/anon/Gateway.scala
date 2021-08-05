@@ -12,19 +12,15 @@ trait Gateway extends StObject {
 }
 object Gateway {
   
-  @scala.inline
-  def apply(gateway: String, port: Double): Gateway = {
+  inline def apply(gateway: String, port: Double): Gateway = {
     val __obj = js.Dynamic.literal(gateway = gateway.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gateway]
   }
   
-  @scala.inline
-  implicit class GatewayMutableBuilder[Self <: Gateway] (val x: Self) extends AnyVal {
+  extension [Self <: Gateway](x: Self) {
     
-    @scala.inline
-    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+    inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object backgroundsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

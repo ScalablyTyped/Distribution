@@ -13,19 +13,15 @@ trait CreateResourceGroupRequest extends StObject {
 }
 object CreateResourceGroupRequest {
   
-  @scala.inline
-  def apply(resourceGroupTags: ResourceGroupTags): CreateResourceGroupRequest = {
+  inline def apply(resourceGroupTags: ResourceGroupTags): CreateResourceGroupRequest = {
     val __obj = js.Dynamic.literal(resourceGroupTags = resourceGroupTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResourceGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateResourceGroupRequestMutableBuilder[Self <: CreateResourceGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResourceGroupRequest](x: Self) {
     
-    @scala.inline
-    def setResourceGroupTags(value: ResourceGroupTags): Self = StObject.set(x, "resourceGroupTags", value.asInstanceOf[js.Any])
+    inline def setResourceGroupTags(value: ResourceGroupTags): Self = StObject.set(x, "resourceGroupTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupTagsVarargs(value: ResourceGroupTag*): Self = StObject.set(x, "resourceGroupTags", js.Array(value :_*))
+    inline def setResourceGroupTagsVarargs(value: ResourceGroupTag*): Self = StObject.set(x, "resourceGroupTags", js.Array(value :_*))
   }
 }

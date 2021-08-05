@@ -14,31 +14,23 @@ trait Watch extends StObject {
 }
 object Watch {
   
-  @scala.inline
-  def apply(): Watch = {
+  inline def apply(): Watch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Watch]
   }
   
-  @scala.inline
-  implicit class WatchMutableBuilder[Self <: Watch] (val x: Self) extends AnyVal {
+  extension [Self <: Watch](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setWatch(value: js.Function): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: js.Function): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

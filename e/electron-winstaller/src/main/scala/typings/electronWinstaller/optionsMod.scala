@@ -28,74 +28,52 @@ object optionsMod {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(): Metadata = {
+    inline def apply(): Metadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String | PersonMetadata): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String | PersonMetadata): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setAuthors(value: String | js.Array[PersonMetadata]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+      inline def setAuthors(value: String | js.Array[PersonMetadata]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
+      inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
       
-      @scala.inline
-      def setAuthorsVarargs(value: PersonMetadata*): Self = StObject.set(x, "authors", js.Array(value :_*))
+      inline def setAuthorsVarargs(value: PersonMetadata*): Self = StObject.set(x, "authors", js.Array(value :_*))
       
-      @scala.inline
-      def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwners(value: String | js.Array[PersonMetadata]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: String | js.Array[PersonMetadata]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+      inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
       
-      @scala.inline
-      def setOwnersVarargs(value: PersonMetadata*): Self = StObject.set(x, "owners", js.Array(value :_*))
+      inline def setOwnersVarargs(value: PersonMetadata*): Self = StObject.set(x, "owners", js.Array(value :_*))
       
-      @scala.inline
-      def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+      inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+      inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -247,167 +225,114 @@ object optionsMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(appDirectory: String): Options = {
+    inline def apply(appDirectory: String): Options = {
       val __obj = js.Dynamic.literal(appDirectory = appDirectory.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppDirectory(value: String): Self = StObject.set(x, "appDirectory", value.asInstanceOf[js.Any])
+      inline def setAppDirectory(value: String): Self = StObject.set(x, "appDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthors(value: String): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
+      inline def setAuthors(value: String): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
+      inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
       
-      @scala.inline
-      def setCertificateFile(value: String): Self = StObject.set(x, "certificateFile", value.asInstanceOf[js.Any])
+      inline def setCertificateFile(value: String): Self = StObject.set(x, "certificateFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateFileUndefined: Self = StObject.set(x, "certificateFile", js.undefined)
+      inline def setCertificateFileUndefined: Self = StObject.set(x, "certificateFile", js.undefined)
       
-      @scala.inline
-      def setCertificatePassword(value: String): Self = StObject.set(x, "certificatePassword", value.asInstanceOf[js.Any])
+      inline def setCertificatePassword(value: String): Self = StObject.set(x, "certificatePassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePasswordUndefined: Self = StObject.set(x, "certificatePassword", js.undefined)
+      inline def setCertificatePasswordUndefined: Self = StObject.set(x, "certificatePassword", js.undefined)
       
-      @scala.inline
-      def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExe(value: String): Self = StObject.set(x, "exe", value.asInstanceOf[js.Any])
+      inline def setExe(value: String): Self = StObject.set(x, "exe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExeUndefined: Self = StObject.set(x, "exe", js.undefined)
+      inline def setExeUndefined: Self = StObject.set(x, "exe", js.undefined)
       
-      @scala.inline
-      def setFixUpPaths(value: Boolean): Self = StObject.set(x, "fixUpPaths", value.asInstanceOf[js.Any])
+      inline def setFixUpPaths(value: Boolean): Self = StObject.set(x, "fixUpPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixUpPathsUndefined: Self = StObject.set(x, "fixUpPaths", js.undefined)
+      inline def setFixUpPathsUndefined: Self = StObject.set(x, "fixUpPaths", js.undefined)
       
-      @scala.inline
-      def setFrameworkVersion(value: String): Self = StObject.set(x, "frameworkVersion", value.asInstanceOf[js.Any])
+      inline def setFrameworkVersion(value: String): Self = StObject.set(x, "frameworkVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameworkVersionUndefined: Self = StObject.set(x, "frameworkVersion", js.undefined)
+      inline def setFrameworkVersionUndefined: Self = StObject.set(x, "frameworkVersion", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+      inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
       
-      @scala.inline
-      def setLoadingGif(value: String): Self = StObject.set(x, "loadingGif", value.asInstanceOf[js.Any])
+      inline def setLoadingGif(value: String): Self = StObject.set(x, "loadingGif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingGifUndefined: Self = StObject.set(x, "loadingGif", js.undefined)
+      inline def setLoadingGifUndefined: Self = StObject.set(x, "loadingGif", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNoDelta(value: Boolean): Self = StObject.set(x, "noDelta", value.asInstanceOf[js.Any])
+      inline def setNoDelta(value: Boolean): Self = StObject.set(x, "noDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoDeltaUndefined: Self = StObject.set(x, "noDelta", js.undefined)
+      inline def setNoDeltaUndefined: Self = StObject.set(x, "noDelta", js.undefined)
       
-      @scala.inline
-      def setNoMsi(value: Boolean): Self = StObject.set(x, "noMsi", value.asInstanceOf[js.Any])
+      inline def setNoMsi(value: Boolean): Self = StObject.set(x, "noMsi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoMsiUndefined: Self = StObject.set(x, "noMsi", js.undefined)
+      inline def setNoMsiUndefined: Self = StObject.set(x, "noMsi", js.undefined)
       
-      @scala.inline
-      def setOutputDirectory(value: String): Self = StObject.set(x, "outputDirectory", value.asInstanceOf[js.Any])
+      inline def setOutputDirectory(value: String): Self = StObject.set(x, "outputDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputDirectoryUndefined: Self = StObject.set(x, "outputDirectory", js.undefined)
+      inline def setOutputDirectoryUndefined: Self = StObject.set(x, "outputDirectory", js.undefined)
       
-      @scala.inline
-      def setOwners(value: String): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+      inline def setOwners(value: String): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+      inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
       
-      @scala.inline
-      def setRemoteReleases(value: String): Self = StObject.set(x, "remoteReleases", value.asInstanceOf[js.Any])
+      inline def setRemoteReleases(value: String): Self = StObject.set(x, "remoteReleases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteReleasesUndefined: Self = StObject.set(x, "remoteReleases", js.undefined)
+      inline def setRemoteReleasesUndefined: Self = StObject.set(x, "remoteReleases", js.undefined)
       
-      @scala.inline
-      def setRemoteToken(value: String): Self = StObject.set(x, "remoteToken", value.asInstanceOf[js.Any])
+      inline def setRemoteToken(value: String): Self = StObject.set(x, "remoteToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteTokenUndefined: Self = StObject.set(x, "remoteToken", js.undefined)
+      inline def setRemoteTokenUndefined: Self = StObject.set(x, "remoteToken", js.undefined)
       
-      @scala.inline
-      def setSetupExe(value: String): Self = StObject.set(x, "setupExe", value.asInstanceOf[js.Any])
+      inline def setSetupExe(value: String): Self = StObject.set(x, "setupExe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupExeUndefined: Self = StObject.set(x, "setupExe", js.undefined)
+      inline def setSetupExeUndefined: Self = StObject.set(x, "setupExe", js.undefined)
       
-      @scala.inline
-      def setSetupIcon(value: String): Self = StObject.set(x, "setupIcon", value.asInstanceOf[js.Any])
+      inline def setSetupIcon(value: String): Self = StObject.set(x, "setupIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupIconUndefined: Self = StObject.set(x, "setupIcon", js.undefined)
+      inline def setSetupIconUndefined: Self = StObject.set(x, "setupIcon", js.undefined)
       
-      @scala.inline
-      def setSetupMsi(value: String): Self = StObject.set(x, "setupMsi", value.asInstanceOf[js.Any])
+      inline def setSetupMsi(value: String): Self = StObject.set(x, "setupMsi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupMsiUndefined: Self = StObject.set(x, "setupMsi", js.undefined)
+      inline def setSetupMsiUndefined: Self = StObject.set(x, "setupMsi", js.undefined)
       
-      @scala.inline
-      def setSignWithParams(value: String): Self = StObject.set(x, "signWithParams", value.asInstanceOf[js.Any])
+      inline def setSignWithParams(value: String): Self = StObject.set(x, "signWithParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignWithParamsUndefined: Self = StObject.set(x, "signWithParams", js.undefined)
+      inline def setSignWithParamsUndefined: Self = StObject.set(x, "signWithParams", js.undefined)
       
-      @scala.inline
-      def setSkipUpdateIcon(value: Boolean): Self = StObject.set(x, "skipUpdateIcon", value.asInstanceOf[js.Any])
+      inline def setSkipUpdateIcon(value: Boolean): Self = StObject.set(x, "skipUpdateIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUpdateIconUndefined: Self = StObject.set(x, "skipUpdateIcon", js.undefined)
+      inline def setSkipUpdateIconUndefined: Self = StObject.set(x, "skipUpdateIcon", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUsePackageJson(value: Boolean): Self = StObject.set(x, "usePackageJson", value.asInstanceOf[js.Any])
+      inline def setUsePackageJson(value: Boolean): Self = StObject.set(x, "usePackageJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePackageJsonUndefined: Self = StObject.set(x, "usePackageJson", js.undefined)
+      inline def setUsePackageJsonUndefined: Self = StObject.set(x, "usePackageJson", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -421,29 +346,22 @@ object optionsMod {
   }
   object PersonMetadata {
     
-    @scala.inline
-    def apply(name: String): PersonMetadata = {
+    inline def apply(name: String): PersonMetadata = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersonMetadata]
     }
     
-    @scala.inline
-    implicit class PersonMetadataMutableBuilder[Self <: PersonMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: PersonMetadata](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

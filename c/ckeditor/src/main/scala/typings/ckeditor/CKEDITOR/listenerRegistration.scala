@@ -10,16 +10,13 @@ trait listenerRegistration extends StObject {
 }
 object listenerRegistration {
   
-  @scala.inline
-  def apply(removeListener: () => Unit): listenerRegistration = {
+  inline def apply(removeListener: () => Unit): listenerRegistration = {
     val __obj = js.Dynamic.literal(removeListener = js.Any.fromFunction0(removeListener))
     __obj.asInstanceOf[listenerRegistration]
   }
   
-  @scala.inline
-  implicit class listenerRegistrationMutableBuilder[Self <: listenerRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: listenerRegistration](x: Self) {
     
-    @scala.inline
-    def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
+    inline def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
   }
 }

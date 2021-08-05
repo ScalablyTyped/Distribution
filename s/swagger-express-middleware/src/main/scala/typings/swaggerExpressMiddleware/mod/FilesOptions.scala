@@ -14,31 +14,23 @@ trait FilesOptions extends StObject {
 }
 object FilesOptions {
   
-  @scala.inline
-  def apply(): FilesOptions = {
+  inline def apply(): FilesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilesOptions]
   }
   
-  @scala.inline
-  implicit class FilesOptionsMutableBuilder[Self <: FilesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilesOptions](x: Self) {
     
-    @scala.inline
-    def setApiPath(value: String): Self = StObject.set(x, "apiPath", value.asInstanceOf[js.Any])
+    inline def setApiPath(value: String): Self = StObject.set(x, "apiPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiPathUndefined: Self = StObject.set(x, "apiPath", js.undefined)
+    inline def setApiPathUndefined: Self = StObject.set(x, "apiPath", js.undefined)
     
-    @scala.inline
-    def setRawFilesPath(value: String): Self = StObject.set(x, "rawFilesPath", value.asInstanceOf[js.Any])
+    inline def setRawFilesPath(value: String): Self = StObject.set(x, "rawFilesPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawFilesPathUndefined: Self = StObject.set(x, "rawFilesPath", js.undefined)
+    inline def setRawFilesPathUndefined: Self = StObject.set(x, "rawFilesPath", js.undefined)
     
-    @scala.inline
-    def setUseBasePath(value: Boolean): Self = StObject.set(x, "useBasePath", value.asInstanceOf[js.Any])
+    inline def setUseBasePath(value: Boolean): Self = StObject.set(x, "useBasePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBasePathUndefined: Self = StObject.set(x, "useBasePath", js.undefined)
+    inline def setUseBasePathUndefined: Self = StObject.set(x, "useBasePath", js.undefined)
   }
 }

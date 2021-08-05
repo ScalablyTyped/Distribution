@@ -17,11 +17,9 @@ object teamSpaceMembershipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapTeamSpaceMembership(http: AxiosInstance, data: TeamSpaceMembershipProps): TeamSpaceMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamSpaceMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[TeamSpaceMembership]
+  inline def wrapTeamSpaceMembership(http: AxiosInstance, data: TeamSpaceMembershipProps): TeamSpaceMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamSpaceMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[TeamSpaceMembership]
   
-  @scala.inline
-  def wrapTeamSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamSpaceMembershipProps]): Collection[TeamSpaceMembership, TeamSpaceMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamSpaceMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[TeamSpaceMembership, TeamSpaceMembershipProps]]
+  inline def wrapTeamSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamSpaceMembershipProps]): Collection[TeamSpaceMembership, TeamSpaceMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamSpaceMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[TeamSpaceMembership, TeamSpaceMembershipProps]]
   
   trait Options extends StObject {
     
@@ -31,26 +29,20 @@ object teamSpaceMembershipMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setQuery(value: QueryOptions): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: QueryOptions): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
+      inline def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
     }
   }
   
@@ -109,8 +101,7 @@ object teamSpaceMembershipMod {
   }
   object TeamSpaceMembership {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       admin: Boolean,
       delete: () => js.Promise[Unit],
       roles: js.Array[MetaLinkProps],
@@ -122,14 +113,11 @@ object teamSpaceMembershipMod {
       __obj.asInstanceOf[TeamSpaceMembership]
     }
     
-    @scala.inline
-    implicit class TeamSpaceMembershipMutableBuilder[Self <: TeamSpaceMembership] (val x: Self) extends AnyVal {
+    extension [Self <: TeamSpaceMembership](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[TeamSpaceMembership]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[TeamSpaceMembership]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -152,26 +140,20 @@ object teamSpaceMembershipMod {
   }
   object TeamSpaceMembershipProps {
     
-    @scala.inline
-    def apply(admin: Boolean, roles: js.Array[MetaLinkProps], sys: MetaSysProps): TeamSpaceMembershipProps = {
+    inline def apply(admin: Boolean, roles: js.Array[MetaLinkProps], sys: MetaSysProps): TeamSpaceMembershipProps = {
       val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[TeamSpaceMembershipProps]
     }
     
-    @scala.inline
-    implicit class TeamSpaceMembershipPropsMutableBuilder[Self <: TeamSpaceMembershipProps] (val x: Self) extends AnyVal {
+    extension [Self <: TeamSpaceMembershipProps](x: Self) {
       
-      @scala.inline
-      def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+      inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[MetaLinkProps]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: MetaLinkProps*): Self = StObject.set(x, "roles", js.Array(value :_*))
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,22 +15,17 @@ trait FilterOptions extends StObject {
 }
 object FilterOptions {
   
-  @scala.inline
-  def apply(): FilterOptions = {
+  inline def apply(): FilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterOptions]
   }
   
-  @scala.inline
-  implicit class FilterOptionsMutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilterOptions](x: Self) {
     
-    @scala.inline
-    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateNull: Self = StObject.set(x, "validate", null)
+    inline def setValidateNull: Self = StObject.set(x, "validate", null)
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

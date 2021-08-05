@@ -14,25 +14,19 @@ trait CustomEventClickAnnotation extends StObject {
 }
 object CustomEventClickAnnotation {
   
-  @scala.inline
-  def apply(): CustomEventClickAnnotation = {
+  inline def apply(): CustomEventClickAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomEventClickAnnotation]
   }
   
-  @scala.inline
-  implicit class CustomEventClickAnnotationMutableBuilder[Self <: CustomEventClickAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: CustomEventClickAnnotation](x: Self) {
     
-    @scala.inline
-    def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
+    inline def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
+    inline def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

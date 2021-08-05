@@ -17,26 +17,20 @@ object mod {
   }
   object ShareAPIPolyfillData {
     
-    @scala.inline
-    def apply(): ShareAPIPolyfillData = {
+    inline def apply(): ShareAPIPolyfillData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShareAPIPolyfillData]
     }
     
-    @scala.inline
-    implicit class ShareAPIPolyfillDataMutableBuilder[Self <: ShareAPIPolyfillData] (val x: Self) extends AnyVal {
+    extension [Self <: ShareAPIPolyfillData](x: Self) {
       
-      @scala.inline
-      def setFbId(value: String): Self = StObject.set(x, "fbId", value.asInstanceOf[js.Any])
+      inline def setFbId(value: String): Self = StObject.set(x, "fbId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFbIdUndefined: Self = StObject.set(x, "fbId", js.undefined)
+      inline def setFbIdUndefined: Self = StObject.set(x, "fbId", js.undefined)
       
-      @scala.inline
-      def setHashtags(value: String): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
+      inline def setHashtags(value: String): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtagsUndefined: Self = StObject.set(x, "hashtags", js.undefined)
+      inline def setHashtagsUndefined: Self = StObject.set(x, "hashtags", js.undefined)
     }
   }
   
@@ -68,86 +62,60 @@ object mod {
   }
   object ShareAPIPolyfillOptions {
     
-    @scala.inline
-    def apply(): ShareAPIPolyfillOptions = {
+    inline def apply(): ShareAPIPolyfillOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShareAPIPolyfillOptions]
     }
     
-    @scala.inline
-    implicit class ShareAPIPolyfillOptionsMutableBuilder[Self <: ShareAPIPolyfillOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShareAPIPolyfillOptions](x: Self) {
       
-      @scala.inline
-      def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFacebook(value: Boolean): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+      inline def setFacebook(value: Boolean): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacebookUndefined: Self = StObject.set(x, "facebook", js.undefined)
+      inline def setFacebookUndefined: Self = StObject.set(x, "facebook", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLinkedin(value: Boolean): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
+      inline def setLinkedin(value: Boolean): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkedinUndefined: Self = StObject.set(x, "linkedin", js.undefined)
+      inline def setLinkedinUndefined: Self = StObject.set(x, "linkedin", js.undefined)
       
-      @scala.inline
-      def setMessenger(value: Boolean): Self = StObject.set(x, "messenger", value.asInstanceOf[js.Any])
+      inline def setMessenger(value: Boolean): Self = StObject.set(x, "messenger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessengerUndefined: Self = StObject.set(x, "messenger", js.undefined)
+      inline def setMessengerUndefined: Self = StObject.set(x, "messenger", js.undefined)
       
-      @scala.inline
-      def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      inline def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+      inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
       
-      @scala.inline
-      def setSkype(value: Boolean): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
+      inline def setSkype(value: Boolean): Self = StObject.set(x, "skype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkypeUndefined: Self = StObject.set(x, "skype", js.undefined)
+      inline def setSkypeUndefined: Self = StObject.set(x, "skype", js.undefined)
       
-      @scala.inline
-      def setSms(value: Boolean): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
+      inline def setSms(value: Boolean): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsUndefined: Self = StObject.set(x, "sms", js.undefined)
+      inline def setSmsUndefined: Self = StObject.set(x, "sms", js.undefined)
       
-      @scala.inline
-      def setTelegram(value: Boolean): Self = StObject.set(x, "telegram", value.asInstanceOf[js.Any])
+      inline def setTelegram(value: Boolean): Self = StObject.set(x, "telegram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTelegramUndefined: Self = StObject.set(x, "telegram", js.undefined)
+      inline def setTelegramUndefined: Self = StObject.set(x, "telegram", js.undefined)
       
-      @scala.inline
-      def setTwitter(value: Boolean): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+      inline def setTwitter(value: Boolean): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
+      inline def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
       
-      @scala.inline
-      def setWhatsapp(value: Boolean): Self = StObject.set(x, "whatsapp", value.asInstanceOf[js.Any])
+      inline def setWhatsapp(value: Boolean): Self = StObject.set(x, "whatsapp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhatsappUndefined: Self = StObject.set(x, "whatsapp", js.undefined)
+      inline def setWhatsappUndefined: Self = StObject.set(x, "whatsapp", js.undefined)
     }
   }
   

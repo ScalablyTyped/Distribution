@@ -19,28 +19,21 @@ trait ErrorSettings extends StObject {
 }
 object ErrorSettings {
   
-  @scala.inline
-  def apply(): ErrorSettings = {
+  inline def apply(): ErrorSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorSettings]
   }
   
-  @scala.inline
-  implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorSettings](x: Self) {
     
-    @scala.inline
-    def setMessage(value: js.Array[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Array[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setMessageVarargs(value: String*): Self = StObject.set(x, "message", js.Array(value :_*))
+    inline def setMessageVarargs(value: String*): Self = StObject.set(x, "message", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -20,22 +20,17 @@ trait DeserializeHandlerOutput[Output /* <: js.Object */] extends StObject {
 }
 object DeserializeHandlerOutput {
   
-  @scala.inline
-  def apply[Output /* <: js.Object */](response: js.Any): DeserializeHandlerOutput[Output] = {
+  inline def apply[Output /* <: js.Object */](response: js.Any): DeserializeHandlerOutput[Output] = {
     val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeserializeHandlerOutput[Output]]
   }
   
-  @scala.inline
-  implicit class DeserializeHandlerOutputMutableBuilder[Self <: DeserializeHandlerOutput[?], Output /* <: js.Object */] (val x: Self & DeserializeHandlerOutput[Output]) extends AnyVal {
+  extension [Self <: DeserializeHandlerOutput[?], Output /* <: js.Object */](x: Self & DeserializeHandlerOutput[Output]) {
     
-    @scala.inline
-    def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

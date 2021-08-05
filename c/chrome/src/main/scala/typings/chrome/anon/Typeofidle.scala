@@ -18,8 +18,7 @@ trait Typeofidle extends StObject {
 }
 object Typeofidle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAutoLockDelay: js.Function1[/* delay */ Double, Unit] => Unit,
     onStateChanged: IdleStateChangedEvent,
     queryState: (Double, js.Function1[/* newState */ IdleState, Unit]) => Unit,
@@ -29,19 +28,14 @@ object Typeofidle {
     __obj.asInstanceOf[Typeofidle]
   }
   
-  @scala.inline
-  implicit class TypeofidleMutableBuilder[Self <: Typeofidle] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofidle](x: Self) {
     
-    @scala.inline
-    def setGetAutoLockDelay(value: js.Function1[/* delay */ Double, Unit] => Unit): Self = StObject.set(x, "getAutoLockDelay", js.Any.fromFunction1(value))
+    inline def setGetAutoLockDelay(value: js.Function1[/* delay */ Double, Unit] => Unit): Self = StObject.set(x, "getAutoLockDelay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStateChanged(value: IdleStateChangedEvent): Self = StObject.set(x, "onStateChanged", value.asInstanceOf[js.Any])
+    inline def setOnStateChanged(value: IdleStateChangedEvent): Self = StObject.set(x, "onStateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryState(value: (Double, js.Function1[/* newState */ IdleState, Unit]) => Unit): Self = StObject.set(x, "queryState", js.Any.fromFunction2(value))
+    inline def setQueryState(value: (Double, js.Function1[/* newState */ IdleState, Unit]) => Unit): Self = StObject.set(x, "queryState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetDetectionInterval(value: Double => Unit): Self = StObject.set(x, "setDetectionInterval", js.Any.fromFunction1(value))
+    inline def setSetDetectionInterval(value: Double => Unit): Self = StObject.set(x, "setDetectionInterval", js.Any.fromFunction1(value))
   }
 }

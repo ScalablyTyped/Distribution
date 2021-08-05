@@ -14,19 +14,15 @@ trait OnLocalServiceLostCallbackResult extends StObject {
 }
 object OnLocalServiceLostCallbackResult {
   
-  @scala.inline
-  def apply(serviceName: String, serviceType: String): OnLocalServiceLostCallbackResult = {
+  inline def apply(serviceName: String, serviceType: String): OnLocalServiceLostCallbackResult = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnLocalServiceLostCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnLocalServiceLostCallbackResultMutableBuilder[Self <: OnLocalServiceLostCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnLocalServiceLostCallbackResult](x: Self) {
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
   }
 }

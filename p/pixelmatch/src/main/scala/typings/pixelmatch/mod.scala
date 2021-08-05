@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     /** Image data of the first image to compare. Note: image dimensions must be equal. */
   img1: Buffer | Uint8Array | Uint8ClampedArray,
     /** Image data of the second image to compare. Note: image dimensions must be equal. */
@@ -78,56 +77,40 @@ object mod {
   }
   object PixelmatchOptions {
     
-    @scala.inline
-    def apply(): PixelmatchOptions = {
+    inline def apply(): PixelmatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PixelmatchOptions]
     }
     
-    @scala.inline
-    implicit class PixelmatchOptionsMutableBuilder[Self <: PixelmatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PixelmatchOptions](x: Self) {
       
-      @scala.inline
-      def setAaColor(value: RGBTuple): Self = StObject.set(x, "aaColor", value.asInstanceOf[js.Any])
+      inline def setAaColor(value: RGBTuple): Self = StObject.set(x, "aaColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAaColorUndefined: Self = StObject.set(x, "aaColor", js.undefined)
+      inline def setAaColorUndefined: Self = StObject.set(x, "aaColor", js.undefined)
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setDiffColor(value: RGBTuple): Self = StObject.set(x, "diffColor", value.asInstanceOf[js.Any])
+      inline def setDiffColor(value: RGBTuple): Self = StObject.set(x, "diffColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffColorAlt(value: RGBTuple): Self = StObject.set(x, "diffColorAlt", value.asInstanceOf[js.Any])
+      inline def setDiffColorAlt(value: RGBTuple): Self = StObject.set(x, "diffColorAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffColorAltUndefined: Self = StObject.set(x, "diffColorAlt", js.undefined)
+      inline def setDiffColorAltUndefined: Self = StObject.set(x, "diffColorAlt", js.undefined)
       
-      @scala.inline
-      def setDiffColorUndefined: Self = StObject.set(x, "diffColor", js.undefined)
+      inline def setDiffColorUndefined: Self = StObject.set(x, "diffColor", js.undefined)
       
-      @scala.inline
-      def setDiffMask(value: Boolean): Self = StObject.set(x, "diffMask", value.asInstanceOf[js.Any])
+      inline def setDiffMask(value: Boolean): Self = StObject.set(x, "diffMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiffMaskUndefined: Self = StObject.set(x, "diffMask", js.undefined)
+      inline def setDiffMaskUndefined: Self = StObject.set(x, "diffMask", js.undefined)
       
-      @scala.inline
-      def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
+      inline def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAAUndefined: Self = StObject.set(x, "includeAA", js.undefined)
+      inline def setIncludeAAUndefined: Self = StObject.set(x, "includeAA", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
   

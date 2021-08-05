@@ -18,8 +18,7 @@ trait FlexGrow extends StObject {
 }
 object FlexGrow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignItems: String,
     backgroundColor: String,
     flexDirection: String,
@@ -30,22 +29,16 @@ object FlexGrow {
     __obj.asInstanceOf[FlexGrow]
   }
   
-  @scala.inline
-  implicit class FlexGrowMutableBuilder[Self <: FlexGrow] (val x: Self) extends AnyVal {
+  extension [Self <: FlexGrow](x: Self) {
     
-    @scala.inline
-    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexGrow(value: Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+    inline def setFlexGrow(value: Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
   }
 }

@@ -36,10 +36,8 @@ object mod {
   
   object create {
     
-    @scala.inline
-    def apply(container: Null, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
-    @scala.inline
-    def apply(container: HTMLElement, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+    inline def apply(container: Null, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
+    inline def apply(container: HTMLElement, options: js.Any): TimetableInstance = (^.asInstanceOf[js.Dynamic].apply(container.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TimetableInstance]
     
     @JSImport("drag-timetable", "create")
     @js.native

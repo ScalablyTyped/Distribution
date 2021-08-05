@@ -38,8 +38,7 @@ trait HtmlLegend extends StObject {
 }
 object HtmlLegend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     container: IGetSet[String, HtmlLegend],
     highlightSelected: IGetSet[String, HtmlLegend],
     horizontal: IGetSet[String, HtmlLegend],
@@ -51,25 +50,18 @@ object HtmlLegend {
     __obj.asInstanceOf[HtmlLegend]
   }
   
-  @scala.inline
-  implicit class HtmlLegendMutableBuilder[Self <: HtmlLegend] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlLegend](x: Self) {
     
-    @scala.inline
-    def setContainer(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightSelected(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "highlightSelected", value.asInstanceOf[js.Any])
+    inline def setHighlightSelected(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "highlightSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontal(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendItemClass(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "legendItemClass", value.asInstanceOf[js.Any])
+    inline def setLegendItemClass(value: IGetSet[String, HtmlLegend]): Self = StObject.set(x, "legendItemClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendText(value: IGetSet[js.Function, HtmlLegend]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
+    inline def setLegendText(value: IGetSet[js.Function, HtmlLegend]): Self = StObject.set(x, "legendText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: IGetSet[Double, HtmlLegend]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: IGetSet[Double, HtmlLegend]): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
   }
 }

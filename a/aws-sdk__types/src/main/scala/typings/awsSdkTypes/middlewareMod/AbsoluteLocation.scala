@@ -16,19 +16,15 @@ trait AbsoluteLocation extends StObject {
 }
 object AbsoluteLocation {
   
-  @scala.inline
-  def apply(): AbsoluteLocation = {
+  inline def apply(): AbsoluteLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AbsoluteLocation]
   }
   
-  @scala.inline
-  implicit class AbsoluteLocationMutableBuilder[Self <: AbsoluteLocation] (val x: Self) extends AnyVal {
+  extension [Self <: AbsoluteLocation](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

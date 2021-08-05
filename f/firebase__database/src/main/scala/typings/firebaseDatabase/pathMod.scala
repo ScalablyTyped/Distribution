@@ -62,9 +62,9 @@ object pathMod {
       */
     def parent(): Path | Null = js.native
     
-    var pieceNum_ : js.Any = js.native
+    /* private */ var pieceNum_ : js.Any = js.native
     
-    var pieces_ : js.Any = js.native
+    /* private */ var pieces_ : js.Any = js.native
     
     /**
       * @return {!Path}
@@ -94,16 +94,14 @@ object pathMod {
       * @param {!Path} right
       * @return {number} -1, 0, 1 if left is less, equal, or greater than the right.
       */
-    @scala.inline
-    def comparePaths(left: Path, right: Path): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("comparePaths")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def comparePaths(left: Path, right: Path): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("comparePaths")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * @param {!Path} outerPath
       * @param {!Path} innerPath
       * @return {!Path} The path from outerPath to innerPath
       */
-    @scala.inline
-    def relativePath(outerPath: Path, innerPath: Path): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("relativePath")(outerPath.asInstanceOf[js.Any], innerPath.asInstanceOf[js.Any])).asInstanceOf[Path]
+    inline def relativePath(outerPath: Path, innerPath: Path): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("relativePath")(outerPath.asInstanceOf[js.Any], innerPath.asInstanceOf[js.Any])).asInstanceOf[Path]
   }
   
   @JSImport("@firebase/database/dist/src/core/util/Path", "ValidationPath")
@@ -116,14 +114,14 @@ object pathMod {
     def this(path: Path, errorPrefix_ : String) = this()
     
     /** @type {number} Initialize to number of '/' chars needed in path. */
-    var byteLength_ : js.Any = js.native
+    /* private */ var byteLength_ : js.Any = js.native
     
-    var checkValid_ : js.Any = js.native
+    /* private */ var checkValid_ : js.Any = js.native
     
-    var errorPrefix_ : js.Any = js.native
+    /* private */ var errorPrefix_ : js.Any = js.native
     
     /** @type {!Array<string>} */
-    var parts_ : js.Any = js.native
+    /* private */ var parts_ : js.Any = js.native
     
     def pop(): Unit = js.native
     

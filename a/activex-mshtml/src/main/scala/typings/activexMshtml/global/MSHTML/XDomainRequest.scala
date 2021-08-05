@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.XDomainRequest")
 @js.native
-class XDomainRequest protected ()
+/* private */ class XDomainRequest ()
   extends StObject
      with typings.activexMshtml.MSHTML.XDomainRequest {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.XDomainRequest_typekey")
   var MSHTMLDotXDomainRequest_typekey: typings.activexMshtml.MSHTML.XDomainRequest = js.native
   

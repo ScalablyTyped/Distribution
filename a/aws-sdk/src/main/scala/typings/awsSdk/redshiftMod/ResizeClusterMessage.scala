@@ -33,40 +33,29 @@ trait ResizeClusterMessage extends StObject {
 }
 object ResizeClusterMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): ResizeClusterMessage = {
+  inline def apply(ClusterIdentifier: String): ResizeClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeClusterMessage]
   }
   
-  @scala.inline
-  implicit class ResizeClusterMessageMutableBuilder[Self <: ResizeClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeClusterMessage](x: Self) {
     
-    @scala.inline
-    def setClassic(value: BooleanOptional): Self = StObject.set(x, "Classic", value.asInstanceOf[js.Any])
+    inline def setClassic(value: BooleanOptional): Self = StObject.set(x, "Classic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassicUndefined: Self = StObject.set(x, "Classic", js.undefined)
+    inline def setClassicUndefined: Self = StObject.set(x, "Classic", js.undefined)
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterType(value: String): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
+    inline def setClusterType(value: String): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
+    inline def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
-    @scala.inline
-    def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
+    inline def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
+    inline def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlReadingOrder extends StObject
 object XlReadingOrder {
   
-  @scala.inline
-  def xlContext: `-5002` = -5002.asInstanceOf[`-5002`]
+  inline def xlContext: `-5002` = -5002.asInstanceOf[`-5002`]
   
-  @scala.inline
-  def xlLTR: `-5003` = -5003.asInstanceOf[`-5003`]
+  inline def xlLTR: `-5003` = -5003.asInstanceOf[`-5003`]
   
-  @scala.inline
-  def xlRTL: `-5004` = -5004.asInstanceOf[`-5004`]
+  inline def xlRTL: `-5004` = -5004.asInstanceOf[`-5004`]
 }

@@ -32,37 +32,27 @@ trait SeriesStatesOptionsObject extends StObject {
 }
 object SeriesStatesOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesStatesOptionsObject = {
+  inline def apply(): SeriesStatesOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesStatesOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesStatesOptionsObjectMutableBuilder[Self <: SeriesStatesOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesStatesOptionsObject](x: Self) {
     
-    @scala.inline
-    def setHover(value: SeriesStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: SeriesStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setInactive(value: SeriesStatesInactiveOptionsObject): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+    inline def setInactive(value: SeriesStatesInactiveOptionsObject): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+    inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
-    @scala.inline
-    def setNormal(value: SeriesStatesNormalOptionsObject): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: SeriesStatesNormalOptionsObject): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
-    @scala.inline
-    def setSelect(value: SeriesStatesSelectOptionsObject): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: SeriesStatesSelectOptionsObject): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

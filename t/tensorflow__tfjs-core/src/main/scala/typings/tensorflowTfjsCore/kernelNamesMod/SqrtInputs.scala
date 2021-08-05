@@ -11,19 +11,15 @@ trait SqrtInputs extends StObject {
 }
 object SqrtInputs {
   
-  @scala.inline
-  def apply(): SqrtInputs = {
+  inline def apply(): SqrtInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqrtInputs]
   }
   
-  @scala.inline
-  implicit class SqrtInputsMutableBuilder[Self <: SqrtInputs] (val x: Self) extends AnyVal {
+  extension [Self <: SqrtInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

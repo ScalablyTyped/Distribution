@@ -50,8 +50,7 @@ trait FileSavePicker extends StObject {
 }
 object FileSavePicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     continuationData: ValueSet,
     defaultFileExtension: String,
@@ -68,40 +67,28 @@ object FileSavePicker {
     __obj.asInstanceOf[FileSavePicker]
   }
   
-  @scala.inline
-  implicit class FileSavePickerMutableBuilder[Self <: FileSavePicker] (val x: Self) extends AnyVal {
+  extension [Self <: FileSavePicker](x: Self) {
     
-    @scala.inline
-    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
+    inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
+    inline def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFileExtension(value: String): Self = StObject.set(x, "defaultFileExtension", value.asInstanceOf[js.Any])
+    inline def setDefaultFileExtension(value: String): Self = StObject.set(x, "defaultFileExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+    inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeChoices(value: IMap[String, IVector[String]]): Self = StObject.set(x, "fileTypeChoices", value.asInstanceOf[js.Any])
+    inline def setFileTypeChoices(value: IMap[String, IVector[String]]): Self = StObject.set(x, "fileTypeChoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickSaveFileAndContinue(value: () => Unit): Self = StObject.set(x, "pickSaveFileAndContinue", js.Any.fromFunction0(value))
+    inline def setPickSaveFileAndContinue(value: () => Unit): Self = StObject.set(x, "pickSaveFileAndContinue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickSaveFileAsync(value: () => IPromiseWithIAsyncOperation[StorageFile]): Self = StObject.set(x, "pickSaveFileAsync", js.Any.fromFunction0(value))
+    inline def setPickSaveFileAsync(value: () => IPromiseWithIAsyncOperation[StorageFile]): Self = StObject.set(x, "pickSaveFileAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
+    inline def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedFileName(value: String): Self = StObject.set(x, "suggestedFileName", value.asInstanceOf[js.Any])
+    inline def setSuggestedFileName(value: String): Self = StObject.set(x, "suggestedFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedSaveFile(value: StorageFile): Self = StObject.set(x, "suggestedSaveFile", value.asInstanceOf[js.Any])
+    inline def setSuggestedSaveFile(value: StorageFile): Self = StObject.set(x, "suggestedSaveFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
+    inline def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
   }
 }

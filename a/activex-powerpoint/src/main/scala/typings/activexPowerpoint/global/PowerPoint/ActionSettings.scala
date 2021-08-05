@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ActionSettings")
 @js.native
-class ActionSettings protected ()
+/* private */ class ActionSettings ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ActionSettings {
   
@@ -23,7 +23,7 @@ class ActionSettings protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ActionSettings_typekey")
   var PowerPointDotActionSettings_typekey: typings.activexPowerpoint.PowerPoint.ActionSettings = js.native
 }

@@ -11,16 +11,13 @@ trait ReplicationReplicaLinkUpInfo extends StObject {
 }
 object ReplicationReplicaLinkUpInfo {
   
-  @scala.inline
-  def apply(master_link_status: UP): ReplicationReplicaLinkUpInfo = {
+  inline def apply(master_link_status: UP): ReplicationReplicaLinkUpInfo = {
     val __obj = js.Dynamic.literal(master_link_status = master_link_status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationReplicaLinkUpInfo]
   }
   
-  @scala.inline
-  implicit class ReplicationReplicaLinkUpInfoMutableBuilder[Self <: ReplicationReplicaLinkUpInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationReplicaLinkUpInfo](x: Self) {
     
-    @scala.inline
-    def setMaster_link_status(value: UP): Self = StObject.set(x, "master_link_status", value.asInstanceOf[js.Any])
+    inline def setMaster_link_status(value: UP): Self = StObject.set(x, "master_link_status", value.asInstanceOf[js.Any])
   }
 }

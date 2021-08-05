@@ -13,19 +13,15 @@ trait PolicyStatus extends StObject {
 }
 object PolicyStatus {
   
-  @scala.inline
-  def apply(): PolicyStatus = {
+  inline def apply(): PolicyStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyStatus]
   }
   
-  @scala.inline
-  implicit class PolicyStatusMutableBuilder[Self <: PolicyStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyStatus](x: Self) {
     
-    @scala.inline
-    def setIsPublic(value: IsPublic): Self = StObject.set(x, "IsPublic", value.asInstanceOf[js.Any])
+    inline def setIsPublic(value: IsPublic): Self = StObject.set(x, "IsPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPublicUndefined: Self = StObject.set(x, "IsPublic", js.undefined)
+    inline def setIsPublicUndefined: Self = StObject.set(x, "IsPublic", js.undefined)
   }
 }

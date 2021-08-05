@@ -14,28 +14,21 @@ trait CenterOffset extends StObject {
 }
 object CenterOffset {
   
-  @scala.inline
-  def apply(centerOffset: Double): CenterOffset = {
+  inline def apply(centerOffset: Double): CenterOffset = {
     val __obj = js.Dynamic.literal(centerOffset = centerOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[CenterOffset]
   }
   
-  @scala.inline
-  implicit class CenterOffsetMutableBuilder[Self <: CenterOffset] (val x: Self) extends AnyVal {
+  extension [Self <: CenterOffset](x: Self) {
     
-    @scala.inline
-    def setCenterOffset(value: Double): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
+    inline def setCenterOffset(value: Double): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

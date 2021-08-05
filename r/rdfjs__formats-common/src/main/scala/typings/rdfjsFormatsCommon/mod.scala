@@ -17,12 +17,10 @@ object mod {
   @JSImport("@rdfjs/formats-common", "parsers")
   @js.native
   def parsers: SinkMap[EventEmitter, Stream[Quad]] = js.native
-  @scala.inline
-  def parsers_=(x: SinkMap[EventEmitter, Stream[Quad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsers")(x.asInstanceOf[js.Any])
+  inline def parsers_=(x: SinkMap[EventEmitter, Stream[Quad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsers")(x.asInstanceOf[js.Any])
   
   @JSImport("@rdfjs/formats-common", "serializers")
   @js.native
   def serializers: SinkMap[Stream[Quad], EventEmitter] = js.native
-  @scala.inline
-  def serializers_=(x: SinkMap[Stream[Quad], EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializers")(x.asInstanceOf[js.Any])
+  inline def serializers_=(x: SinkMap[Stream[Quad], EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializers")(x.asInstanceOf[js.Any])
 }

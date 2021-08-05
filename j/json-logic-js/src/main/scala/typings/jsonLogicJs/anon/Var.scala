@@ -18,8 +18,7 @@ trait Var
 }
 object Var {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `var`: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | (js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
     ]) | (js.Tuple2[
@@ -32,11 +31,9 @@ object Var {
     __obj.asInstanceOf[Var]
   }
   
-  @scala.inline
-  implicit class VarMutableBuilder[Self <: Var] (val x: Self) extends AnyVal {
+  extension [Self <: Var](x: Self) {
     
-    @scala.inline
-    def setVar(
+    inline def setVar(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | (js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]) | (js.Tuple2[
@@ -45,8 +42,7 @@ object Var {
         ])
     ): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarVarargs(
+    inline def setVarVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)*
     ): Self = StObject.set(x, "var", js.Array(value :_*))
   }

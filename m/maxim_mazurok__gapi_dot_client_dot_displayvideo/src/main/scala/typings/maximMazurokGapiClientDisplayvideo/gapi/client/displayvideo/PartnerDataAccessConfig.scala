@@ -11,19 +11,15 @@ trait PartnerDataAccessConfig extends StObject {
 }
 object PartnerDataAccessConfig {
   
-  @scala.inline
-  def apply(): PartnerDataAccessConfig = {
+  inline def apply(): PartnerDataAccessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartnerDataAccessConfig]
   }
   
-  @scala.inline
-  implicit class PartnerDataAccessConfigMutableBuilder[Self <: PartnerDataAccessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerDataAccessConfig](x: Self) {
     
-    @scala.inline
-    def setSdfConfig(value: SdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
+    inline def setSdfConfig(value: SdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdfConfigUndefined: Self = StObject.set(x, "sdfConfig", js.undefined)
+    inline def setSdfConfigUndefined: Self = StObject.set(x, "sdfConfig", js.undefined)
   }
 }

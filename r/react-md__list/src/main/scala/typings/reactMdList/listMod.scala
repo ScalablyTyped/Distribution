@@ -39,32 +39,24 @@ object listMod {
   }
   object ListProps {
     
-    @scala.inline
-    def apply(): ListProps = {
+    inline def apply(): ListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListProps]
     }
     
-    @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListProps](x: Self) {
       
-      @scala.inline
-      def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+      inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+      inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+      inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
+      inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
     }
   }
 }

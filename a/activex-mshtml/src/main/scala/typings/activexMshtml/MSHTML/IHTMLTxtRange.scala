@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLTxtRange extends StObject {
   
-  @JSName("MSHTML.IHTMLTxtRange_typekey")
+  /* private */ @JSName("MSHTML.IHTMLTxtRange_typekey")
   var MSHTMLDotIHTMLTxtRange_typekey: IHTMLTxtRange = js.native
   
   /** @param start [start=true] */

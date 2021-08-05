@@ -20,40 +20,29 @@ trait ConvertIdResult extends StObject {
 }
 object ConvertIdResult {
   
-  @scala.inline
-  def apply(): ConvertIdResult = {
+  inline def apply(): ConvertIdResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConvertIdResult]
   }
   
-  @scala.inline
-  implicit class ConvertIdResultMutableBuilder[Self <: ConvertIdResult] (val x: Self) extends AnyVal {
+  extension [Self <: ConvertIdResult](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(value: NullableOption[GenericError]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: NullableOption[GenericError]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsNull: Self = StObject.set(x, "errorDetails", null)
+    inline def setErrorDetailsNull: Self = StObject.set(x, "errorDetails", null)
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setSourceId(value: NullableOption[String]): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: NullableOption[String]): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdNull: Self = StObject.set(x, "sourceId", null)
+    inline def setSourceIdNull: Self = StObject.set(x, "sourceId", null)
     
-    @scala.inline
-    def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
+    inline def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: NullableOption[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: NullableOption[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdNull: Self = StObject.set(x, "targetId", null)
+    inline def setTargetIdNull: Self = StObject.set(x, "targetId", null)
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

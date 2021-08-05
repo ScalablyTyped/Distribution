@@ -12,19 +12,15 @@ trait TableListViewModelTriggerActionEvent extends StObject {
 }
 object TableListViewModelTriggerActionEvent {
   
-  @scala.inline
-  def apply(action: ActionButton | ActionToggle, item: TableListListItem): TableListViewModelTriggerActionEvent = {
+  inline def apply(action: ActionButton | ActionToggle, item: TableListListItem): TableListViewModelTriggerActionEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableListViewModelTriggerActionEvent]
   }
   
-  @scala.inline
-  implicit class TableListViewModelTriggerActionEventMutableBuilder[Self <: TableListViewModelTriggerActionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TableListViewModelTriggerActionEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: TableListListItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: TableListListItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

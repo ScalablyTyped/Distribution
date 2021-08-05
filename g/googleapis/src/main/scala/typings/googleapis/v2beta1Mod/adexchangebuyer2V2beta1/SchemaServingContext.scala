@@ -42,49 +42,35 @@ trait SchemaServingContext extends StObject {
 }
 object SchemaServingContext {
   
-  @scala.inline
-  def apply(): SchemaServingContext = {
+  inline def apply(): SchemaServingContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServingContext]
   }
   
-  @scala.inline
-  implicit class SchemaServingContextMutableBuilder[Self <: SchemaServingContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServingContext](x: Self) {
     
-    @scala.inline
-    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setAppType(value: SchemaAppContext): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
+    inline def setAppType(value: SchemaAppContext): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppTypeUndefined: Self = StObject.set(x, "appType", js.undefined)
+    inline def setAppTypeUndefined: Self = StObject.set(x, "appType", js.undefined)
     
-    @scala.inline
-    def setAuctionType(value: SchemaAuctionContext): Self = StObject.set(x, "auctionType", value.asInstanceOf[js.Any])
+    inline def setAuctionType(value: SchemaAuctionContext): Self = StObject.set(x, "auctionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuctionTypeUndefined: Self = StObject.set(x, "auctionType", js.undefined)
+    inline def setAuctionTypeUndefined: Self = StObject.set(x, "auctionType", js.undefined)
     
-    @scala.inline
-    def setLocation(value: SchemaLocationContext): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SchemaLocationContext): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: SchemaPlatformContext): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: SchemaPlatformContext): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setSecurityType(value: SchemaSecurityContext): Self = StObject.set(x, "securityType", value.asInstanceOf[js.Any])
+    inline def setSecurityType(value: SchemaSecurityContext): Self = StObject.set(x, "securityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityTypeUndefined: Self = StObject.set(x, "securityType", js.undefined)
+    inline def setSecurityTypeUndefined: Self = StObject.set(x, "securityType", js.undefined)
   }
 }

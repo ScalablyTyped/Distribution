@@ -20,25 +20,19 @@ trait SchemaTestOrderCustomerMarketingRightsInfo extends StObject {
 }
 object SchemaTestOrderCustomerMarketingRightsInfo {
   
-  @scala.inline
-  def apply(): SchemaTestOrderCustomerMarketingRightsInfo = {
+  inline def apply(): SchemaTestOrderCustomerMarketingRightsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestOrderCustomerMarketingRightsInfo]
   }
   
-  @scala.inline
-  implicit class SchemaTestOrderCustomerMarketingRightsInfoMutableBuilder[Self <: SchemaTestOrderCustomerMarketingRightsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestOrderCustomerMarketingRightsInfo](x: Self) {
     
-    @scala.inline
-    def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
+    inline def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitMarketingPreferenceUndefined: Self = StObject.set(x, "explicitMarketingPreference", js.undefined)
+    inline def setExplicitMarketingPreferenceUndefined: Self = StObject.set(x, "explicitMarketingPreference", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
   }
 }

@@ -13,14 +13,9 @@ object primaryColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def PrimaryColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def PrimaryColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def PrimaryColumn(`type`: Unit, options: ColumnOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def PrimaryColumn(`type`: ColumnType): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(`type`.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def PrimaryColumn(`type`: ColumnType, options: ColumnOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def PrimaryColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")().asInstanceOf[PropertyDecorator]
+  inline def PrimaryColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def PrimaryColumn(`type`: Unit, options: ColumnOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def PrimaryColumn(`type`: ColumnType): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(`type`.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def PrimaryColumn(`type`: ColumnType, options: ColumnOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("PrimaryColumn")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
 }

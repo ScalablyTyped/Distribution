@@ -13,19 +13,15 @@ trait CreateAttributeGroupResponse extends StObject {
 }
 object CreateAttributeGroupResponse {
   
-  @scala.inline
-  def apply(): CreateAttributeGroupResponse = {
+  inline def apply(): CreateAttributeGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAttributeGroupResponse]
   }
   
-  @scala.inline
-  implicit class CreateAttributeGroupResponseMutableBuilder[Self <: CreateAttributeGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAttributeGroupResponse](x: Self) {
     
-    @scala.inline
-    def setAttributeGroup(value: AttributeGroup): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
+    inline def setAttributeGroup(value: AttributeGroup): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeGroupUndefined: Self = StObject.set(x, "attributeGroup", js.undefined)
+    inline def setAttributeGroupUndefined: Self = StObject.set(x, "attributeGroup", js.undefined)
   }
 }

@@ -19,26 +19,22 @@ trait Border extends StObject
 object Border {
   
   /** selects the bottom border. */
-  @scala.inline
-  def BOTTOM: `1` = 1.asInstanceOf[`1`]
+  inline def BOTTOM: `1` = 1.asInstanceOf[`1`]
   
   /**
     * selects the left border.
     *
     * the cells to the right of the deleted cells are moved left.
     */
-  @scala.inline
-  def LEFT: `3` = 3.asInstanceOf[`3`]
+  inline def LEFT: `3` = 3.asInstanceOf[`3`]
   
   /**
     * selects the right border.
     *
     * the cells to the right of the inserted cells are moved right.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
   
   /** selects the top border. */
-  @scala.inline
-  def TOP: `0` = 0.asInstanceOf[`0`]
+  inline def TOP: `0` = 0.asInstanceOf[`0`]
 }

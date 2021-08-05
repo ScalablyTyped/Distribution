@@ -37,8 +37,7 @@ object tpuMod {
     @JSImport("googleapis/build/src/apis/tpu", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tpu] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tpu]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tpu]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/tpu", "VERSIONS.v1alpha1")
@@ -55,8 +54,7 @@ object tpuMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu
       ] = js.native
-    @scala.inline
-    def v1alpha1_=(
+    inline def v1alpha1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -98,8 +96,7 @@ object tpuMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -143,14 +140,10 @@ object tpuMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def tpu(options: Options): Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(options.asInstanceOf[js.Any]).asInstanceOf[Tpu]
-  @scala.inline
-  def tpu(options: typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Options): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu]
+  inline def tpu(options: Options): Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(options.asInstanceOf[js.Any]).asInstanceOf[Tpu]
+  inline def tpu(options: typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Options): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu]
   
-  @scala.inline
-  def tpu_v1(version: v1): Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(version.asInstanceOf[js.Any]).asInstanceOf[Tpu]
+  inline def tpu_v1(version: v1): Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(version.asInstanceOf[js.Any]).asInstanceOf[Tpu]
   
-  @scala.inline
-  def tpu_v1alpha1(version: v1alpha1): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu]
+  inline def tpu_v1alpha1(version: v1alpha1): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu]
 }

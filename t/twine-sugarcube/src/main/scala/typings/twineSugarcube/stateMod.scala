@@ -184,20 +184,16 @@ object stateMod {
   }
   object StoryMoment {
     
-    @scala.inline
-    def apply(title: String, variables: SugarCubeStoryVariables): StoryMoment = {
+    inline def apply(title: String, variables: SugarCubeStoryVariables): StoryMoment = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoryMoment]
     }
     
-    @scala.inline
-    implicit class StoryMomentMutableBuilder[Self <: StoryMoment] (val x: Self) extends AnyVal {
+    extension [Self <: StoryMoment](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: SugarCubeStoryVariables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: SugarCubeStoryVariables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
 }

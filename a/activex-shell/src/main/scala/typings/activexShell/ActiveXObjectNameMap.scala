@@ -16,21 +16,17 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(ShellDotApplication: Shell, ShellDotFolderView: ShellFolderViewOC): ActiveXObjectNameMap = {
+  inline def apply(ShellDotApplication: Shell, ShellDotFolderView: ShellFolderViewOC): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("Shell.Application")(ShellDotApplication.asInstanceOf[js.Any])
     __obj.updateDynamic("Shell.FolderView")(ShellDotFolderView.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setShellDotApplication(value: Shell): Self = StObject.set(x, "Shell.Application", value.asInstanceOf[js.Any])
+    inline def setShellDotApplication(value: Shell): Self = StObject.set(x, "Shell.Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellDotFolderView(value: ShellFolderViewOC): Self = StObject.set(x, "Shell.FolderView", value.asInstanceOf[js.Any])
+    inline def setShellDotFolderView(value: ShellFolderViewOC): Self = StObject.set(x, "Shell.FolderView", value.asInstanceOf[js.Any])
   }
 }

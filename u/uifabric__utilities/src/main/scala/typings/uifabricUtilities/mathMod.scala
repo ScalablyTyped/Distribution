@@ -12,21 +12,15 @@ object mathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculatePrecision(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def calculatePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculatePrecision(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculatePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def fitContentToBounds(options: IFitContentToBoundsOptions): ISize = ^.asInstanceOf[js.Dynamic].applyDynamic("fitContentToBounds")(options.asInstanceOf[js.Any]).asInstanceOf[ISize]
+  inline def fitContentToBounds(options: IFitContentToBoundsOptions): ISize = ^.asInstanceOf[js.Dynamic].applyDynamic("fitContentToBounds")(options.asInstanceOf[js.Any]).asInstanceOf[ISize]
   
-  @scala.inline
-  def getDistanceBetweenPoints(point1: Point, point2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDistanceBetweenPoints(point1: Point, point2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistanceBetweenPoints")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def precisionRound(value: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def precisionRound(value: Double, precision: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def precisionRound(value: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def precisionRound(value: Double, precision: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* Rewritten from type alias, can be one of: 
     - typings.uifabricUtilities.uifabricUtilitiesStrings.contain
@@ -35,11 +29,9 @@ object mathMod {
   trait FitMode extends StObject
   object FitMode {
     
-    @scala.inline
-    def contain: typings.uifabricUtilities.uifabricUtilitiesStrings.contain = "contain".asInstanceOf[typings.uifabricUtilities.uifabricUtilitiesStrings.contain]
+    inline def contain: typings.uifabricUtilities.uifabricUtilitiesStrings.contain = "contain".asInstanceOf[typings.uifabricUtilities.uifabricUtilitiesStrings.contain]
     
-    @scala.inline
-    def cover: typings.uifabricUtilities.uifabricUtilitiesStrings.cover = "cover".asInstanceOf[typings.uifabricUtilities.uifabricUtilitiesStrings.cover]
+    inline def cover: typings.uifabricUtilities.uifabricUtilitiesStrings.cover = "cover".asInstanceOf[typings.uifabricUtilities.uifabricUtilitiesStrings.cover]
   }
   
   trait IFitContentToBoundsOptions extends StObject {
@@ -68,29 +60,22 @@ object mathMod {
   }
   object IFitContentToBoundsOptions {
     
-    @scala.inline
-    def apply(boundsSize: ISize, contentSize: ISize, mode: FitMode): IFitContentToBoundsOptions = {
+    inline def apply(boundsSize: ISize, contentSize: ISize, mode: FitMode): IFitContentToBoundsOptions = {
       val __obj = js.Dynamic.literal(boundsSize = boundsSize.asInstanceOf[js.Any], contentSize = contentSize.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFitContentToBoundsOptions]
     }
     
-    @scala.inline
-    implicit class IFitContentToBoundsOptionsMutableBuilder[Self <: IFitContentToBoundsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFitContentToBoundsOptions](x: Self) {
       
-      @scala.inline
-      def setBoundsSize(value: ISize): Self = StObject.set(x, "boundsSize", value.asInstanceOf[js.Any])
+      inline def setBoundsSize(value: ISize): Self = StObject.set(x, "boundsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentSize(value: ISize): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
+      inline def setContentSize(value: ISize): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+      inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+      inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
       
-      @scala.inline
-      def setMode(value: FitMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: FitMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
 }

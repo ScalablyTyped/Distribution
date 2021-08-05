@@ -19,29 +19,22 @@ trait AnPlusB
 }
 object AnPlusB {
   
-  @scala.inline
-  def apply(): AnPlusB = {
+  inline def apply(): AnPlusB = {
     val __obj = js.Dynamic.literal(a = null, b = null)
     __obj.updateDynamic("type")("AnPlusB")
     __obj.asInstanceOf[AnPlusB]
   }
   
-  @scala.inline
-  implicit class AnPlusBMutableBuilder[Self <: AnPlusB] (val x: Self) extends AnyVal {
+  extension [Self <: AnPlusB](x: Self) {
     
-    @scala.inline
-    def setA(value: String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANull: Self = StObject.set(x, "a", null)
+    inline def setANull: Self = StObject.set(x, "a", null)
     
-    @scala.inline
-    def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBNull: Self = StObject.set(x, "b", null)
+    inline def setBNull: Self = StObject.set(x, "b", null)
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.AnPlusB): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.AnPlusB): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait AccessibleListBox
      with XAccessibleExtendedComponent
 object AccessibleListBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

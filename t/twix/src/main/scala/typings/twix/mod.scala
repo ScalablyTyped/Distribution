@@ -17,8 +17,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def twix(start: Moment, end: Moment): Twix = (^.asInstanceOf[js.Dynamic].applyDynamic("twix")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Twix]
+    inline def twix(start: Moment, end: Moment): Twix = (^.asInstanceOf[js.Dynamic].applyDynamic("twix")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Twix]
     
     @JSImport("moment", "twixClass")
     @js.native
@@ -32,20 +31,16 @@ object mod {
     }
     object Duration {
       
-      @scala.inline
-      def apply(afterMoment: String => String, beforeMoment: String => String): Duration = {
+      inline def apply(afterMoment: String => String, beforeMoment: String => String): Duration = {
         val __obj = js.Dynamic.literal(afterMoment = js.Any.fromFunction1(afterMoment), beforeMoment = js.Any.fromFunction1(beforeMoment))
         __obj.asInstanceOf[Duration]
       }
       
-      @scala.inline
-      implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+      extension [Self <: Duration](x: Self) {
         
-        @scala.inline
-        def setAfterMoment(value: String => String): Self = StObject.set(x, "afterMoment", js.Any.fromFunction1(value))
+        inline def setAfterMoment(value: String => String): Self = StObject.set(x, "afterMoment", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBeforeMoment(value: String => String): Self = StObject.set(x, "beforeMoment", js.Any.fromFunction1(value))
+        inline def setBeforeMoment(value: String => String): Self = StObject.set(x, "beforeMoment", js.Any.fromFunction1(value))
       }
     }
     
@@ -188,134 +183,92 @@ object mod {
   }
   object TwixFormatOptions {
     
-    @scala.inline
-    def apply(): TwixFormatOptions = {
+    inline def apply(): TwixFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TwixFormatOptions]
     }
     
-    @scala.inline
-    implicit class TwixFormatOptionsMutableBuilder[Self <: TwixFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TwixFormatOptions](x: Self) {
       
-      @scala.inline
-      def setAllDay(value: js.Any): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+      inline def setAllDay(value: js.Any): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
+      inline def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
       
-      @scala.inline
-      def setDayFormat(value: String): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
+      inline def setDayFormat(value: String): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
+      inline def setDayFormatUndefined: Self = StObject.set(x, "dayFormat", js.undefined)
       
-      @scala.inline
-      def setExplicitAllDay(value: Boolean): Self = StObject.set(x, "explicitAllDay", value.asInstanceOf[js.Any])
+      inline def setExplicitAllDay(value: Boolean): Self = StObject.set(x, "explicitAllDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitAllDayUndefined: Self = StObject.set(x, "explicitAllDay", js.undefined)
+      inline def setExplicitAllDayUndefined: Self = StObject.set(x, "explicitAllDay", js.undefined)
       
-      @scala.inline
-      def setGroupMeridiems(value: Boolean): Self = StObject.set(x, "groupMeridiems", value.asInstanceOf[js.Any])
+      inline def setGroupMeridiems(value: Boolean): Self = StObject.set(x, "groupMeridiems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupMeridiemsUndefined: Self = StObject.set(x, "groupMeridiems", js.undefined)
+      inline def setGroupMeridiemsUndefined: Self = StObject.set(x, "groupMeridiems", js.undefined)
       
-      @scala.inline
-      def setHideDate(value: Boolean): Self = StObject.set(x, "hideDate", value.asInstanceOf[js.Any])
+      inline def setHideDate(value: Boolean): Self = StObject.set(x, "hideDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDateUndefined: Self = StObject.set(x, "hideDate", js.undefined)
+      inline def setHideDateUndefined: Self = StObject.set(x, "hideDate", js.undefined)
       
-      @scala.inline
-      def setHideTime(value: Boolean): Self = StObject.set(x, "hideTime", value.asInstanceOf[js.Any])
+      inline def setHideTime(value: Boolean): Self = StObject.set(x, "hideTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideTimeUndefined: Self = StObject.set(x, "hideTime", js.undefined)
+      inline def setHideTimeUndefined: Self = StObject.set(x, "hideTime", js.undefined)
       
-      @scala.inline
-      def setHideYear(value: Boolean): Self = StObject.set(x, "hideYear", value.asInstanceOf[js.Any])
+      inline def setHideYear(value: Boolean): Self = StObject.set(x, "hideYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideYearUndefined: Self = StObject.set(x, "hideYear", js.undefined)
+      inline def setHideYearUndefined: Self = StObject.set(x, "hideYear", js.undefined)
       
-      @scala.inline
-      def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
+      inline def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourFormatUndefined: Self = StObject.set(x, "hourFormat", js.undefined)
+      inline def setHourFormatUndefined: Self = StObject.set(x, "hourFormat", js.undefined)
       
-      @scala.inline
-      def setImplicitMinutes(value: Boolean): Self = StObject.set(x, "implicitMinutes", value.asInstanceOf[js.Any])
+      inline def setImplicitMinutes(value: Boolean): Self = StObject.set(x, "implicitMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicitMinutesUndefined: Self = StObject.set(x, "implicitMinutes", js.undefined)
+      inline def setImplicitMinutesUndefined: Self = StObject.set(x, "implicitMinutes", js.undefined)
       
-      @scala.inline
-      def setImplicitYear(value: Boolean): Self = StObject.set(x, "implicitYear", value.asInstanceOf[js.Any])
+      inline def setImplicitYear(value: Boolean): Self = StObject.set(x, "implicitYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicitYearUndefined: Self = StObject.set(x, "implicitYear", js.undefined)
+      inline def setImplicitYearUndefined: Self = StObject.set(x, "implicitYear", js.undefined)
       
-      @scala.inline
-      def setLastNightEndsAt(value: Double): Self = StObject.set(x, "lastNightEndsAt", value.asInstanceOf[js.Any])
+      inline def setLastNightEndsAt(value: Double): Self = StObject.set(x, "lastNightEndsAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastNightEndsAtUndefined: Self = StObject.set(x, "lastNightEndsAt", js.undefined)
+      inline def setLastNightEndsAtUndefined: Self = StObject.set(x, "lastNightEndsAt", js.undefined)
       
-      @scala.inline
-      def setMeridiemFormat(value: String): Self = StObject.set(x, "meridiemFormat", value.asInstanceOf[js.Any])
+      inline def setMeridiemFormat(value: String): Self = StObject.set(x, "meridiemFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeridiemFormatUndefined: Self = StObject.set(x, "meridiemFormat", js.undefined)
+      inline def setMeridiemFormatUndefined: Self = StObject.set(x, "meridiemFormat", js.undefined)
       
-      @scala.inline
-      def setMinuteFormat(value: String): Self = StObject.set(x, "minuteFormat", value.asInstanceOf[js.Any])
+      inline def setMinuteFormat(value: String): Self = StObject.set(x, "minuteFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteFormatUndefined: Self = StObject.set(x, "minuteFormat", js.undefined)
+      inline def setMinuteFormatUndefined: Self = StObject.set(x, "minuteFormat", js.undefined)
       
-      @scala.inline
-      def setMonthFormat(value: String): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
+      inline def setMonthFormat(value: String): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
+      inline def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
       
-      @scala.inline
-      def setShowDate(value: Boolean): Self = StObject.set(x, "showDate", value.asInstanceOf[js.Any])
+      inline def setShowDate(value: Boolean): Self = StObject.set(x, "showDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDateUndefined: Self = StObject.set(x, "showDate", js.undefined)
+      inline def setShowDateUndefined: Self = StObject.set(x, "showDate", js.undefined)
       
-      @scala.inline
-      def setShowDayOfWeek(value: Boolean): Self = StObject.set(x, "showDayOfWeek", value.asInstanceOf[js.Any])
+      inline def setShowDayOfWeek(value: Boolean): Self = StObject.set(x, "showDayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDayOfWeekUndefined: Self = StObject.set(x, "showDayOfWeek", js.undefined)
+      inline def setShowDayOfWeekUndefined: Self = StObject.set(x, "showDayOfWeek", js.undefined)
       
-      @scala.inline
-      def setSpaceBeforeMeridiem(value: Boolean): Self = StObject.set(x, "spaceBeforeMeridiem", value.asInstanceOf[js.Any])
+      inline def setSpaceBeforeMeridiem(value: Boolean): Self = StObject.set(x, "spaceBeforeMeridiem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceBeforeMeridiemUndefined: Self = StObject.set(x, "spaceBeforeMeridiem", js.undefined)
+      inline def setSpaceBeforeMeridiemUndefined: Self = StObject.set(x, "spaceBeforeMeridiem", js.undefined)
       
-      @scala.inline
-      def setTwentyFourHour(value: Boolean): Self = StObject.set(x, "twentyFourHour", value.asInstanceOf[js.Any])
+      inline def setTwentyFourHour(value: Boolean): Self = StObject.set(x, "twentyFourHour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwentyFourHourUndefined: Self = StObject.set(x, "twentyFourHour", js.undefined)
+      inline def setTwentyFourHourUndefined: Self = StObject.set(x, "twentyFourHour", js.undefined)
       
-      @scala.inline
-      def setWeekdayFormat(value: String): Self = StObject.set(x, "weekdayFormat", value.asInstanceOf[js.Any])
+      inline def setWeekdayFormat(value: String): Self = StObject.set(x, "weekdayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayFormatUndefined: Self = StObject.set(x, "weekdayFormat", js.undefined)
+      inline def setWeekdayFormatUndefined: Self = StObject.set(x, "weekdayFormat", js.undefined)
       
-      @scala.inline
-      def setYearFormat(value: String): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
+      inline def setYearFormat(value: String): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearFormatUndefined: Self = StObject.set(x, "yearFormat", js.undefined)
+      inline def setYearFormatUndefined: Self = StObject.set(x, "yearFormat", js.undefined)
     }
   }
   
@@ -327,20 +280,16 @@ object mod {
   }
   object TwixIter {
     
-    @scala.inline
-    def apply(hasNext: () => Boolean, next: () => Twix): TwixIter = {
+    inline def apply(hasNext: () => Boolean, next: () => Twix): TwixIter = {
       val __obj = js.Dynamic.literal(hasNext = js.Any.fromFunction0(hasNext), next = js.Any.fromFunction0(next))
       __obj.asInstanceOf[TwixIter]
     }
     
-    @scala.inline
-    implicit class TwixIterMutableBuilder[Self <: TwixIter] (val x: Self) extends AnyVal {
+    extension [Self <: TwixIter](x: Self) {
       
-      @scala.inline
-      def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
+      inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: () => Twix): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Twix): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
   }
   
@@ -352,20 +301,16 @@ object mod {
   }
   object TwixParseAndFormatOptions {
     
-    @scala.inline
-    def apply(): TwixParseAndFormatOptions = {
+    inline def apply(): TwixParseAndFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TwixParseAndFormatOptions]
     }
     
-    @scala.inline
-    implicit class TwixParseAndFormatOptionsMutableBuilder[Self <: TwixParseAndFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TwixParseAndFormatOptions](x: Self) {
       
-      @scala.inline
-      def setParseStrict(value: Boolean): Self = StObject.set(x, "parseStrict", value.asInstanceOf[js.Any])
+      inline def setParseStrict(value: Boolean): Self = StObject.set(x, "parseStrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseStrictUndefined: Self = StObject.set(x, "parseStrict", js.undefined)
+      inline def setParseStrictUndefined: Self = StObject.set(x, "parseStrict", js.undefined)
     }
   }
   
@@ -377,26 +322,20 @@ object mod {
   }
   object TwixSimpleFormatOptions {
     
-    @scala.inline
-    def apply(): TwixSimpleFormatOptions = {
+    inline def apply(): TwixSimpleFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TwixSimpleFormatOptions]
     }
     
-    @scala.inline
-    implicit class TwixSimpleFormatOptionsMutableBuilder[Self <: TwixSimpleFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TwixSimpleFormatOptions](x: Self) {
       
-      @scala.inline
-      def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+      inline def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
+      inline def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+      inline def setTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -406,20 +345,16 @@ object mod {
   }
   object TwixStatic {
     
-    @scala.inline
-    def apply(): TwixStatic = {
+    inline def apply(): TwixStatic = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TwixStatic]
     }
     
-    @scala.inline
-    implicit class TwixStaticMutableBuilder[Self <: TwixStatic] (val x: Self) extends AnyVal {
+    extension [Self <: TwixStatic](x: Self) {
       
-      @scala.inline
-      def setFormatTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "formatTemplate", js.Any.fromFunction2(value))
+      inline def setFormatTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "formatTemplate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatTemplateUndefined: Self = StObject.set(x, "formatTemplate", js.undefined)
+      inline def setFormatTemplateUndefined: Self = StObject.set(x, "formatTemplate", js.undefined)
     }
   }
 }

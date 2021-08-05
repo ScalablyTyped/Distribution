@@ -18,19 +18,15 @@ trait IngressStatus extends StObject {
 }
 object IngressStatus {
   
-  @scala.inline
-  def apply(): IngressStatus = {
+  inline def apply(): IngressStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngressStatus]
   }
   
-  @scala.inline
-  implicit class IngressStatusMutableBuilder[Self <: IngressStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IngressStatus](x: Self) {
     
-    @scala.inline
-    def setLoadBalancer(value: Input[LoadBalancerStatus]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+    inline def setLoadBalancer(value: Input[LoadBalancerStatus]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
+    inline def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
   }
 }

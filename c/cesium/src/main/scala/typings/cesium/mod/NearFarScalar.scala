@@ -43,34 +43,22 @@ object NearFarScalar {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clone_(nearFarScalar: NearFarScalar): NearFarScalar = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(nearFarScalar.asInstanceOf[js.Any]).asInstanceOf[NearFarScalar]
-  @scala.inline
-  def clone_(nearFarScalar: NearFarScalar, result: NearFarScalar): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(nearFarScalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
+  inline def clone_(nearFarScalar: NearFarScalar): NearFarScalar = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(nearFarScalar.asInstanceOf[js.Any]).asInstanceOf[NearFarScalar]
+  inline def clone_(nearFarScalar: NearFarScalar, result: NearFarScalar): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(nearFarScalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
   
   /* static member */
-  @scala.inline
-  def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: Unit, right: NearFarScalar): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: NearFarScalar): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def equals_(left: NearFarScalar, right: NearFarScalar): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")().asInstanceOf[Boolean]
+  inline def equals_(left: Unit, right: NearFarScalar): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_(left: NearFarScalar): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def equals_(left: NearFarScalar, right: NearFarScalar): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def pack(value: NearFarScalar, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def pack(value: NearFarScalar, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def pack(value: NearFarScalar, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def pack(value: NearFarScalar, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /* static member */
-  @scala.inline
-  def unpack(array: js.Array[Double]): NearFarScalar = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[NearFarScalar]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double, result: NearFarScalar): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Unit, result: NearFarScalar): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
+  inline def unpack(array: js.Array[Double]): NearFarScalar = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[NearFarScalar]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: NearFarScalar): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: NearFarScalar): NearFarScalar = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[NearFarScalar]
 }

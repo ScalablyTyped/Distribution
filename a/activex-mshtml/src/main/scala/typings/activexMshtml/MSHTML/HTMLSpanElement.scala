@@ -10,7 +10,7 @@ trait HTMLSpanElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLSpanElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLSpanElement_typekey")
   var MSHTMLDotHTMLSpanElement_typekey: HTMLSpanElement = js.native
   
   var accessKey: String = js.native

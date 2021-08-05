@@ -26,55 +26,39 @@ trait TrainingRun extends StObject {
 }
 object TrainingRun {
   
-  @scala.inline
-  def apply(): TrainingRun = {
+  inline def apply(): TrainingRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingRun]
   }
   
-  @scala.inline
-  implicit class TrainingRunMutableBuilder[Self <: TrainingRun] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingRun](x: Self) {
     
-    @scala.inline
-    def setDataSplitResult(value: DataSplitResult): Self = StObject.set(x, "dataSplitResult", value.asInstanceOf[js.Any])
+    inline def setDataSplitResult(value: DataSplitResult): Self = StObject.set(x, "dataSplitResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSplitResultUndefined: Self = StObject.set(x, "dataSplitResult", js.undefined)
+    inline def setDataSplitResultUndefined: Self = StObject.set(x, "dataSplitResult", js.undefined)
     
-    @scala.inline
-    def setEvaluationMetrics(value: EvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
+    inline def setEvaluationMetrics(value: EvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
+    inline def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
     
-    @scala.inline
-    def setGlobalExplanations(value: js.Array[GlobalExplanation]): Self = StObject.set(x, "globalExplanations", value.asInstanceOf[js.Any])
+    inline def setGlobalExplanations(value: js.Array[GlobalExplanation]): Self = StObject.set(x, "globalExplanations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalExplanationsUndefined: Self = StObject.set(x, "globalExplanations", js.undefined)
+    inline def setGlobalExplanationsUndefined: Self = StObject.set(x, "globalExplanations", js.undefined)
     
-    @scala.inline
-    def setGlobalExplanationsVarargs(value: GlobalExplanation*): Self = StObject.set(x, "globalExplanations", js.Array(value :_*))
+    inline def setGlobalExplanationsVarargs(value: GlobalExplanation*): Self = StObject.set(x, "globalExplanations", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: js.Array[IterationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[IterationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: IterationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: IterationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTrainingOptions(value: TrainingOptions): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
+    inline def setTrainingOptions(value: TrainingOptions): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
+    inline def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
   }
 }

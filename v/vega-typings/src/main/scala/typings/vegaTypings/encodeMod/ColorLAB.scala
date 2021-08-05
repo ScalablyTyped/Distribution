@@ -14,22 +14,17 @@ trait ColorLAB extends StObject {
 }
 object ColorLAB {
   
-  @scala.inline
-  def apply(a: NumericValueRef, b: NumericValueRef, l: NumericValueRef): ColorLAB = {
+  inline def apply(a: NumericValueRef, b: NumericValueRef, l: NumericValueRef): ColorLAB = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorLAB]
   }
   
-  @scala.inline
-  implicit class ColorLABMutableBuilder[Self <: ColorLAB] (val x: Self) extends AnyVal {
+  extension [Self <: ColorLAB](x: Self) {
     
-    @scala.inline
-    def setA(value: NumericValueRef): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: NumericValueRef): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: NumericValueRef): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: NumericValueRef): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: NumericValueRef): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: NumericValueRef): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
   }
 }

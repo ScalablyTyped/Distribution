@@ -17,23 +17,18 @@ object anon {
   }
   object Full {
     
-    @scala.inline
-    def apply(full: Thumbnail, large: Thumbnail, small: Thumbnail): Full = {
+    inline def apply(full: Thumbnail, large: Thumbnail, small: Thumbnail): Full = {
       val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], large = large.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
       __obj.asInstanceOf[Full]
     }
     
-    @scala.inline
-    implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
+    extension [Self <: Full](x: Self) {
       
-      @scala.inline
-      def setFull(value: Thumbnail): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Thumbnail): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLarge(value: Thumbnail): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Thumbnail): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmall(value: Thumbnail): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Thumbnail): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,17 +38,14 @@ object anon {
   }
   object Typecast {
     
-    @scala.inline
-    def apply(typecast: Boolean): Typecast = {
+    inline def apply(typecast: Boolean): Typecast = {
       val __obj = js.Dynamic.literal(typecast = typecast.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typecast]
     }
     
-    @scala.inline
-    implicit class TypecastMutableBuilder[Self <: Typecast] (val x: Self) extends AnyVal {
+    extension [Self <: Typecast](x: Self) {
       
-      @scala.inline
-      def setTypecast(value: Boolean): Self = StObject.set(x, "typecast", value.asInstanceOf[js.Any])
+      inline def setTypecast(value: Boolean): Self = StObject.set(x, "typecast", value.asInstanceOf[js.Any])
     }
   }
 }

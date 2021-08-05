@@ -10,8 +10,7 @@ trait AbortMultipartUploadExceptionsUnion
      with NoSuchUpload
 object AbortMultipartUploadExceptionsUnion {
   
-  @scala.inline
-  def apply(): AbortMultipartUploadExceptionsUnion = {
+  inline def apply(): AbortMultipartUploadExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "NoSuchUpload")
     __obj.asInstanceOf[AbortMultipartUploadExceptionsUnion]
   }

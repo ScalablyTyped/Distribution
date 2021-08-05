@@ -31,31 +31,23 @@ trait UnixConnectOptions
 }
 object UnixConnectOptions {
   
-  @scala.inline
-  def apply(path: String): UnixConnectOptions = {
+  inline def apply(path: String): UnixConnectOptions = {
     val __obj = js.Dynamic.literal(family = "unix", path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixConnectOptions]
   }
   
-  @scala.inline
-  implicit class UnixConnectOptionsMutableBuilder[Self <: UnixConnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnixConnectOptions](x: Self) {
     
-    @scala.inline
-    def setFamily(value: unix): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: unix): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     
-    @scala.inline
-    def setType(value: UnixSocketType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UnixSocketType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

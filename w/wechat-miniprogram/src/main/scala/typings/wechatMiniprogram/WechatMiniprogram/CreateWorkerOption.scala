@@ -14,19 +14,15 @@ trait CreateWorkerOption extends StObject {
 }
 object CreateWorkerOption {
   
-  @scala.inline
-  def apply(): CreateWorkerOption = {
+  inline def apply(): CreateWorkerOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateWorkerOption]
   }
   
-  @scala.inline
-  implicit class CreateWorkerOptionMutableBuilder[Self <: CreateWorkerOption] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkerOption](x: Self) {
     
-    @scala.inline
-    def setUseExperimentalWorker(value: Boolean): Self = StObject.set(x, "useExperimentalWorker", value.asInstanceOf[js.Any])
+    inline def setUseExperimentalWorker(value: Boolean): Self = StObject.set(x, "useExperimentalWorker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExperimentalWorkerUndefined: Self = StObject.set(x, "useExperimentalWorker", js.undefined)
+    inline def setUseExperimentalWorkerUndefined: Self = StObject.set(x, "useExperimentalWorker", js.undefined)
   }
 }

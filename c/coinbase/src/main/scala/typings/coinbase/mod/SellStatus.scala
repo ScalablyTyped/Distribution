@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SellStatus extends StObject
 object SellStatus {
   
-  @scala.inline
-  def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
+  inline def canceled: typings.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typings.coinbase.coinbaseStrings.canceled]
   
-  @scala.inline
-  def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
+  inline def completed: typings.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typings.coinbase.coinbaseStrings.completed]
   
-  @scala.inline
-  def created: typings.coinbase.coinbaseStrings.created = "created".asInstanceOf[typings.coinbase.coinbaseStrings.created]
+  inline def created: typings.coinbase.coinbaseStrings.created = "created".asInstanceOf[typings.coinbase.coinbaseStrings.created]
 }

@@ -12,8 +12,7 @@ trait DatagramSocketMessageReceivedEventArgs
      with IDatagramSocketMessageReceivedEventArgs
 object DatagramSocketMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDataReader: () => DataReader,
     getDataStream: () => IInputStream,
     localAddress: HostName,

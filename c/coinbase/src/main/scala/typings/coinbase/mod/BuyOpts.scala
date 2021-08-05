@@ -43,52 +43,37 @@ trait BuyOpts extends StObject {
 }
 object BuyOpts {
   
-  @scala.inline
-  def apply(currency: String): BuyOpts = {
+  inline def apply(currency: String): BuyOpts = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuyOpts]
   }
   
-  @scala.inline
-  implicit class BuyOptsMutableBuilder[Self <: BuyOpts] (val x: Self) extends AnyVal {
+  extension [Self <: BuyOpts](x: Self) {
     
-    @scala.inline
-    def setAgree_btc_amount_varies(value: Boolean): Self = StObject.set(x, "agree_btc_amount_varies", value.asInstanceOf[js.Any])
+    inline def setAgree_btc_amount_varies(value: Boolean): Self = StObject.set(x, "agree_btc_amount_varies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgree_btc_amount_variesUndefined: Self = StObject.set(x, "agree_btc_amount_varies", js.undefined)
+    inline def setAgree_btc_amount_variesUndefined: Self = StObject.set(x, "agree_btc_amount_varies", js.undefined)
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+    inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
-    @scala.inline
-    def setQuote(value: Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
-    @scala.inline
-    def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

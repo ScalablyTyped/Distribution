@@ -15,20 +15,16 @@ trait BooleanHeaderValue
 }
 object BooleanHeaderValue {
   
-  @scala.inline
-  def apply(value: Boolean): BooleanHeaderValue = {
+  inline def apply(value: Boolean): BooleanHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[BooleanHeaderValue]
   }
   
-  @scala.inline
-  implicit class BooleanHeaderValueMutableBuilder[Self <: BooleanHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanHeaderValue](x: Self) {
     
-    @scala.inline
-    def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

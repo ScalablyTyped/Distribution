@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Column extends StObject {
   
-  @JSName("ADOX.Column_typekey")
+  /* private */ @JSName("ADOX.Column_typekey")
   var ADOXDotColumn_typekey: Column
   
   var Attributes: ColumnAttributesEnum
@@ -37,8 +37,7 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADOXDotColumn_typekey: Column,
     Attributes: ColumnAttributesEnum,
     DefinedSize: Double,
@@ -56,40 +55,28 @@ object Column {
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setADOXDotColumn_typekey(value: Column): Self = StObject.set(x, "ADOX.Column_typekey", value.asInstanceOf[js.Any])
+    inline def setADOXDotColumn_typekey(value: Column): Self = StObject.set(x, "ADOX.Column_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: ColumnAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ColumnAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinedSize(value: Double): Self = StObject.set(x, "DefinedSize", value.asInstanceOf[js.Any])
+    inline def setDefinedSize(value: Double): Self = StObject.set(x, "DefinedSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericScale(value: Double): Self = StObject.set(x, "NumericScale", value.asInstanceOf[js.Any])
+    inline def setNumericScale(value: Double): Self = StObject.set(x, "NumericScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCatalog(value: Catalog): Self = StObject.set(x, "ParentCatalog", value.asInstanceOf[js.Any])
+    inline def setParentCatalog(value: Catalog): Self = StObject.set(x, "ParentCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
+    inline def setRelatedColumn(value: String): Self = StObject.set(x, "RelatedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: SortOrderEnum): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrderEnum): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait WipeAction extends StObject {
 }
 object WipeAction {
   
-  @scala.inline
-  def apply(): WipeAction = {
+  inline def apply(): WipeAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WipeAction]
   }
   
-  @scala.inline
-  implicit class WipeActionMutableBuilder[Self <: WipeAction] (val x: Self) extends AnyVal {
+  extension [Self <: WipeAction](x: Self) {
     
-    @scala.inline
-    def setPreserveFrp(value: Boolean): Self = StObject.set(x, "preserveFrp", value.asInstanceOf[js.Any])
+    inline def setPreserveFrp(value: Boolean): Self = StObject.set(x, "preserveFrp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFrpUndefined: Self = StObject.set(x, "preserveFrp", js.undefined)
+    inline def setPreserveFrpUndefined: Self = StObject.set(x, "preserveFrp", js.undefined)
     
-    @scala.inline
-    def setWipeAfterDays(value: Double): Self = StObject.set(x, "wipeAfterDays", value.asInstanceOf[js.Any])
+    inline def setWipeAfterDays(value: Double): Self = StObject.set(x, "wipeAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWipeAfterDaysUndefined: Self = StObject.set(x, "wipeAfterDays", js.undefined)
+    inline def setWipeAfterDaysUndefined: Self = StObject.set(x, "wipeAfterDays", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait AddScriptToEvaluateOnLoadRequest extends StObject {
 }
 object AddScriptToEvaluateOnLoadRequest {
   
-  @scala.inline
-  def apply(scriptSource: String): AddScriptToEvaluateOnLoadRequest = {
+  inline def apply(scriptSource: String): AddScriptToEvaluateOnLoadRequest = {
     val __obj = js.Dynamic.literal(scriptSource = scriptSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddScriptToEvaluateOnLoadRequest]
   }
   
-  @scala.inline
-  implicit class AddScriptToEvaluateOnLoadRequestMutableBuilder[Self <: AddScriptToEvaluateOnLoadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddScriptToEvaluateOnLoadRequest](x: Self) {
     
-    @scala.inline
-    def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
+    inline def setScriptSource(value: String): Self = StObject.set(x, "scriptSource", value.asInstanceOf[js.Any])
   }
 }

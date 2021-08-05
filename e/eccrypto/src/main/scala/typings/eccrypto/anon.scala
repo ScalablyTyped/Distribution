@@ -15,26 +15,20 @@ object anon {
   }
   object EphemPrivateKey {
     
-    @scala.inline
-    def apply(): EphemPrivateKey = {
+    inline def apply(): EphemPrivateKey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EphemPrivateKey]
     }
     
-    @scala.inline
-    implicit class EphemPrivateKeyMutableBuilder[Self <: EphemPrivateKey] (val x: Self) extends AnyVal {
+    extension [Self <: EphemPrivateKey](x: Self) {
       
-      @scala.inline
-      def setEphemPrivateKey(value: Buffer): Self = StObject.set(x, "ephemPrivateKey", value.asInstanceOf[js.Any])
+      inline def setEphemPrivateKey(value: Buffer): Self = StObject.set(x, "ephemPrivateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemPrivateKeyUndefined: Self = StObject.set(x, "ephemPrivateKey", js.undefined)
+      inline def setEphemPrivateKeyUndefined: Self = StObject.set(x, "ephemPrivateKey", js.undefined)
       
-      @scala.inline
-      def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     }
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmTextAlign extends StObject
 object fmTextAlign {
   
-  @scala.inline
-  def fmTextAlignCenter: `2` = 2.asInstanceOf[`2`]
+  inline def fmTextAlignCenter: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmTextAlignLeft: `1` = 1.asInstanceOf[`1`]
+  inline def fmTextAlignLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmTextAlignRight: `3` = 3.asInstanceOf[`3`]
+  inline def fmTextAlignRight: `3` = 3.asInstanceOf[`3`]
 }

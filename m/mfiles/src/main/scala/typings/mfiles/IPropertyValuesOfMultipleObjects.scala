@@ -14,22 +14,17 @@ trait IPropertyValuesOfMultipleObjects extends StObject {
 }
 object IPropertyValuesOfMultipleObjects {
   
-  @scala.inline
-  def apply(Clone: () => IPropertyValuesOfMultipleObjects, Count: Double, Item: Double => IPropertyValues): IPropertyValuesOfMultipleObjects = {
+  inline def apply(Clone: () => IPropertyValuesOfMultipleObjects, Count: Double, Item: Double => IPropertyValues): IPropertyValuesOfMultipleObjects = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IPropertyValuesOfMultipleObjects]
   }
   
-  @scala.inline
-  implicit class IPropertyValuesOfMultipleObjectsMutableBuilder[Self <: IPropertyValuesOfMultipleObjects] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValuesOfMultipleObjects](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyValuesOfMultipleObjects): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyValuesOfMultipleObjects): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IPropertyValues): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IPropertyValues): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

@@ -18,28 +18,21 @@ trait ListTypesResponse extends StObject {
 }
 object ListTypesResponse {
   
-  @scala.inline
-  def apply(): ListTypesResponse = {
+  inline def apply(): ListTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTypesResponse]
   }
   
-  @scala.inline
-  implicit class ListTypesResponseMutableBuilder[Self <: ListTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTypes(value: TypeList): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: TypeList): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

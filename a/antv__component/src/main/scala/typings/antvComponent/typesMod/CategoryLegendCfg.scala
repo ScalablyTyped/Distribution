@@ -70,73 +70,51 @@ trait CategoryLegendCfg
 }
 object CategoryLegendCfg {
   
-  @scala.inline
-  def apply(container: IGroup, items: js.Array[ListItem]): CategoryLegendCfg = {
+  inline def apply(container: IGroup, items: js.Array[ListItem]): CategoryLegendCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryLegendCfg]
   }
   
-  @scala.inline
-  implicit class CategoryLegendCfgMutableBuilder[Self <: CategoryLegendCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryLegendCfg](x: Self) {
     
-    @scala.inline
-    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+    inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
-    @scala.inline
-    def setItemName(value: LegendItemNameCfg): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: LegendItemNameCfg): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
+    inline def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
     
-    @scala.inline
-    def setItemSpacing(value: Double): Self = StObject.set(x, "itemSpacing", value.asInstanceOf[js.Any])
+    inline def setItemSpacing(value: Double): Self = StObject.set(x, "itemSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemSpacingUndefined: Self = StObject.set(x, "itemSpacing", js.undefined)
+    inline def setItemSpacingUndefined: Self = StObject.set(x, "itemSpacing", js.undefined)
     
-    @scala.inline
-    def setItemValue(value: LegendItemValueCfg): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
+    inline def setItemValue(value: LegendItemValueCfg): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemValueUndefined: Self = StObject.set(x, "itemValue", js.undefined)
+    inline def setItemValueUndefined: Self = StObject.set(x, "itemValue", js.undefined)
     
-    @scala.inline
-    def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
+    inline def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
+    inline def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: LegendMarkerCfg): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: LegendMarkerCfg): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxItemWidth(value: Double): Self = StObject.set(x, "maxItemWidth", value.asInstanceOf[js.Any])
+    inline def setMaxItemWidth(value: Double): Self = StObject.set(x, "maxItemWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemWidthUndefined: Self = StObject.set(x, "maxItemWidth", js.undefined)
+    inline def setMaxItemWidthUndefined: Self = StObject.set(x, "maxItemWidth", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
   }
 }

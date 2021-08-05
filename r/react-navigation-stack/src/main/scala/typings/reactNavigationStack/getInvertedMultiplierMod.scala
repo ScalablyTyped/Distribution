@@ -13,6 +13,5 @@ object getInvertedMultiplierMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(gestureDirection: GestureDirection): `1` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(gestureDirection.asInstanceOf[js.Any]).asInstanceOf[`1` | `-1`]
+  inline def default(gestureDirection: GestureDirection): `1` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(gestureDirection.asInstanceOf[js.Any]).asInstanceOf[`1` | `-1`]
 }

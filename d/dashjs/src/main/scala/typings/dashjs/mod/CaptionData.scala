@@ -28,64 +28,45 @@ trait CaptionData extends StObject {
 }
 object CaptionData {
   
-  @scala.inline
-  def apply(end: Double, start: Double): CaptionData = {
+  inline def apply(end: Double, start: Double): CaptionData = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionData]
   }
   
-  @scala.inline
-  implicit class CaptionDataMutableBuilder[Self <: CaptionData] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionData](x: Self) {
     
-    @scala.inline
-    def setCueID(value: String): Self = StObject.set(x, "cueID", value.asInstanceOf[js.Any])
+    inline def setCueID(value: String): Self = StObject.set(x, "cueID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCueIDUndefined: Self = StObject.set(x, "cueID", js.undefined)
+    inline def setCueIDUndefined: Self = StObject.set(x, "cueID", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEmbeddedImages(value: StringDictionary[String]): Self = StObject.set(x, "embeddedImages", value.asInstanceOf[js.Any])
+    inline def setEmbeddedImages(value: StringDictionary[String]): Self = StObject.set(x, "embeddedImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedImagesUndefined: Self = StObject.set(x, "embeddedImages", js.undefined)
+    inline def setEmbeddedImagesUndefined: Self = StObject.set(x, "embeddedImages", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setIsd(value: js.Object): Self = StObject.set(x, "isd", value.asInstanceOf[js.Any])
+    inline def setIsd(value: js.Object): Self = StObject.set(x, "isd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsdUndefined: Self = StObject.set(x, "isd", js.undefined)
+    inline def setIsdUndefined: Self = StObject.set(x, "isd", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: Align): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Align): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

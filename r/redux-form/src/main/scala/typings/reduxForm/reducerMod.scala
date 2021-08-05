@@ -29,32 +29,24 @@ object reducerMod extends Shortcut {
   }
   object FieldState {
     
-    @scala.inline
-    def apply(): FieldState = {
+    inline def apply(): FieldState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldState]
     }
     
-    @scala.inline
-    implicit class FieldStateMutableBuilder[Self <: FieldState] (val x: Self) extends AnyVal {
+    extension [Self <: FieldState](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
+      inline def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
       
-      @scala.inline
-      def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
+      inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
     }
   }
   
@@ -90,68 +82,48 @@ object reducerMod extends Shortcut {
   }
   object FormState {
     
-    @scala.inline
-    def apply(registeredFields: js.Array[RegisteredFieldState]): FormState = {
+    inline def apply(registeredFields: js.Array[RegisteredFieldState]): FormState = {
       val __obj = js.Dynamic.literal(registeredFields = registeredFields.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormState]
     }
     
-    @scala.inline
-    implicit class FormStateMutableBuilder[Self <: FormState] (val x: Self) extends AnyVal {
+    extension [Self <: FormState](x: Self) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAnyTouched(value: Boolean): Self = StObject.set(x, "anyTouched", value.asInstanceOf[js.Any])
+      inline def setAnyTouched(value: Boolean): Self = StObject.set(x, "anyTouched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnyTouchedUndefined: Self = StObject.set(x, "anyTouched", js.undefined)
+      inline def setAnyTouchedUndefined: Self = StObject.set(x, "anyTouched", js.undefined)
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFields(value: StringDictionary[FieldState]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: StringDictionary[FieldState]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setRegisteredFields(value: js.Array[RegisteredFieldState]): Self = StObject.set(x, "registeredFields", value.asInstanceOf[js.Any])
+      inline def setRegisteredFields(value: js.Array[RegisteredFieldState]): Self = StObject.set(x, "registeredFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisteredFieldsVarargs(value: RegisteredFieldState*): Self = StObject.set(x, "registeredFields", js.Array(value :_*))
+      inline def setRegisteredFieldsVarargs(value: RegisteredFieldState*): Self = StObject.set(x, "registeredFields", js.Array(value :_*))
       
-      @scala.inline
-      def setSubmitErrors(value: StringDictionary[String]): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
+      inline def setSubmitErrors(value: StringDictionary[String]): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
+      inline def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
       
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
+      inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitFailedUndefined: Self = StObject.set(x, "submitFailed", js.undefined)
+      inline def setSubmitFailedUndefined: Self = StObject.set(x, "submitFailed", js.undefined)
       
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
+      inline def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
+      inline def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
       
-      @scala.inline
-      def setValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   
@@ -167,24 +139,19 @@ object reducerMod extends Shortcut {
   }
   object RegisteredFieldState {
     
-    @scala.inline
-    def apply(count: Double, name: String, `type`: FieldType): RegisteredFieldState = {
+    inline def apply(count: Double, name: String, `type`: FieldType): RegisteredFieldState = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegisteredFieldState]
     }
     
-    @scala.inline
-    implicit class RegisteredFieldStateMutableBuilder[Self <: RegisteredFieldState] (val x: Self) extends AnyVal {
+    extension [Self <: RegisteredFieldState](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

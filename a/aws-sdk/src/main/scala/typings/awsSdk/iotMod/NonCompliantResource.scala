@@ -23,31 +23,23 @@ trait NonCompliantResource extends StObject {
 }
 object NonCompliantResource {
   
-  @scala.inline
-  def apply(): NonCompliantResource = {
+  inline def apply(): NonCompliantResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonCompliantResource]
   }
   
-  @scala.inline
-  implicit class NonCompliantResourceMutableBuilder[Self <: NonCompliantResource] (val x: Self) extends AnyVal {
+  extension [Self <: NonCompliantResource](x: Self) {
     
-    @scala.inline
-    def setAdditionalInfo(value: StringMap): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
+    inline def setAdditionalInfo(value: StringMap): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalInfoUndefined: Self = StObject.set(x, "additionalInfo", js.undefined)
+    inline def setAdditionalInfoUndefined: Self = StObject.set(x, "additionalInfo", js.undefined)
     
-    @scala.inline
-    def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
+    inline def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

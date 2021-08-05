@@ -13,16 +13,13 @@ trait ComponentUnbind extends StObject {
 }
 object ComponentUnbind {
   
-  @scala.inline
-  def apply(unbind: () => Unit): ComponentUnbind = {
+  inline def apply(unbind: () => Unit): ComponentUnbind = {
     val __obj = js.Dynamic.literal(unbind = js.Any.fromFunction0(unbind))
     __obj.asInstanceOf[ComponentUnbind]
   }
   
-  @scala.inline
-  implicit class ComponentUnbindMutableBuilder[Self <: ComponentUnbind] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentUnbind](x: Self) {
     
-    @scala.inline
-    def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+    inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
   }
 }

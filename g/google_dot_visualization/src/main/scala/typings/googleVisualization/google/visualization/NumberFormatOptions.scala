@@ -49,61 +49,43 @@ trait NumberFormatOptions extends StObject {
 }
 object NumberFormatOptions {
   
-  @scala.inline
-  def apply(): NumberFormatOptions = {
+  inline def apply(): NumberFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumberFormatOptions]
   }
   
-  @scala.inline
-  implicit class NumberFormatOptionsMutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatOptions](x: Self) {
     
-    @scala.inline
-    def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
+    inline def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalSymbolUndefined: Self = StObject.set(x, "decimalSymbol", js.undefined)
+    inline def setDecimalSymbolUndefined: Self = StObject.set(x, "decimalSymbol", js.undefined)
     
-    @scala.inline
-    def setFractionDigits(value: Double): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
+    inline def setFractionDigits(value: Double): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFractionDigitsUndefined: Self = StObject.set(x, "fractionDigits", js.undefined)
+    inline def setFractionDigitsUndefined: Self = StObject.set(x, "fractionDigits", js.undefined)
     
-    @scala.inline
-    def setGroupingSymbol(value: String): Self = StObject.set(x, "groupingSymbol", value.asInstanceOf[js.Any])
+    inline def setGroupingSymbol(value: String): Self = StObject.set(x, "groupingSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingSymbolUndefined: Self = StObject.set(x, "groupingSymbol", js.undefined)
+    inline def setGroupingSymbolUndefined: Self = StObject.set(x, "groupingSymbol", js.undefined)
     
-    @scala.inline
-    def setNegativeColor(value: String): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
+    inline def setNegativeColor(value: String): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
-    @scala.inline
-    def setNegativeParens(value: Boolean): Self = StObject.set(x, "negativeParens", value.asInstanceOf[js.Any])
+    inline def setNegativeParens(value: Boolean): Self = StObject.set(x, "negativeParens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeParensUndefined: Self = StObject.set(x, "negativeParens", js.undefined)
+    inline def setNegativeParensUndefined: Self = StObject.set(x, "negativeParens", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

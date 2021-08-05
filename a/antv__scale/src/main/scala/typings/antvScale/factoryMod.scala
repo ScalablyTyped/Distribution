@@ -19,11 +19,9 @@ object factoryMod {
     def this(cfg: ScaleConfig) = this()
   }
   
-  @scala.inline
-  def getScale(key: String): ScaleConstructor[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(key.asInstanceOf[js.Any]).asInstanceOf[ScaleConstructor[default]]
+  inline def getScale(key: String): ScaleConstructor[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(key.asInstanceOf[js.Any]).asInstanceOf[ScaleConstructor[default]]
   
-  @scala.inline
-  def registerScale(key: String, cls: ScaleConstructor[default]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScale")(key.asInstanceOf[js.Any], cls.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerScale(key: String, cls: ScaleConstructor[default]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerScale")(key.asInstanceOf[js.Any], cls.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ScaleConstructor[T /* <: default */] = Instantiable1[/* cfg */ ScaleConfig, T]
 }

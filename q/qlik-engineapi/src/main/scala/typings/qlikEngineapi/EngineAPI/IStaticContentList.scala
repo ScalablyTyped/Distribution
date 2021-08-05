@@ -13,16 +13,13 @@ trait IStaticContentList extends StObject {
 }
 object IStaticContentList {
   
-  @scala.inline
-  def apply(qItems: IStaticContentListItem): IStaticContentList = {
+  inline def apply(qItems: IStaticContentListItem): IStaticContentList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStaticContentList]
   }
   
-  @scala.inline
-  implicit class IStaticContentListMutableBuilder[Self <: IStaticContentList] (val x: Self) extends AnyVal {
+  extension [Self <: IStaticContentList](x: Self) {
     
-    @scala.inline
-    def setQItems(value: IStaticContentListItem): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: IStaticContentListItem): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
   }
 }

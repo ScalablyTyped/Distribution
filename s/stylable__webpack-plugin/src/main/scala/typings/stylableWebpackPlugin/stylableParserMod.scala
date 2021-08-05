@@ -17,14 +17,14 @@ object stylableParserMod {
       useWeakDeps: Boolean
     ) = this()
     
-    var compilation: js.Any = js.native
+    /* private */ var compilation: js.Any = js.native
     
-    var normalModuleFactory: js.Any = js.native
+    /* private */ var normalModuleFactory: js.Any = js.native
     
     def parse(_source: String, state: js.Any): js.Any = js.native
     
-    var stylable: js.Any = js.native
+    /* private */ var stylable: js.Any = js.native
     
-    var useWeakDeps: js.Any = js.native
+    /* private */ var useWeakDeps: js.Any = js.native
   }
 }

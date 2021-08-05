@@ -14,25 +14,19 @@ trait BinaryIndex extends StObject {
 }
 object BinaryIndex {
   
-  @scala.inline
-  def apply(dirty: Boolean, name: String, values: js.Array[Double]): BinaryIndex = {
+  inline def apply(dirty: Boolean, name: String, values: js.Array[Double]): BinaryIndex = {
     val __obj = js.Dynamic.literal(dirty = dirty.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinaryIndex]
   }
   
-  @scala.inline
-  implicit class BinaryIndexMutableBuilder[Self <: BinaryIndex] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryIndex](x: Self) {
     
-    @scala.inline
-    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

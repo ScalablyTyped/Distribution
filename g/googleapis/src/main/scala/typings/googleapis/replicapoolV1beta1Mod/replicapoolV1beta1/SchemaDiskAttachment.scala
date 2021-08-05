@@ -22,25 +22,19 @@ trait SchemaDiskAttachment extends StObject {
 }
 object SchemaDiskAttachment {
   
-  @scala.inline
-  def apply(): SchemaDiskAttachment = {
+  inline def apply(): SchemaDiskAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiskAttachment]
   }
   
-  @scala.inline
-  implicit class SchemaDiskAttachmentMutableBuilder[Self <: SchemaDiskAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiskAttachment](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }
 }

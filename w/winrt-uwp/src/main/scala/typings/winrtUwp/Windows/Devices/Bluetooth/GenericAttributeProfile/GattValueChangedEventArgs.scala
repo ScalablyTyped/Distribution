@@ -17,19 +17,15 @@ trait GattValueChangedEventArgs extends StObject {
 }
 object GattValueChangedEventArgs {
   
-  @scala.inline
-  def apply(characteristicValue: IBuffer, timestamp: Date): GattValueChangedEventArgs = {
+  inline def apply(characteristicValue: IBuffer, timestamp: Date): GattValueChangedEventArgs = {
     val __obj = js.Dynamic.literal(characteristicValue = characteristicValue.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[GattValueChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class GattValueChangedEventArgsMutableBuilder[Self <: GattValueChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GattValueChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCharacteristicValue(value: IBuffer): Self = StObject.set(x, "characteristicValue", value.asInstanceOf[js.Any])
+    inline def setCharacteristicValue(value: IBuffer): Self = StObject.set(x, "characteristicValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

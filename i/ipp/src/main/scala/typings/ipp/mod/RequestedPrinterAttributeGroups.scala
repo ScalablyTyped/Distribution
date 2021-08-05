@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestedPrinterAttributeGroups extends StObject
 object RequestedPrinterAttributeGroups {
   
-  @scala.inline
-  def all: typings.ipp.ippStrings.all = "all".asInstanceOf[typings.ipp.ippStrings.all]
+  inline def all: typings.ipp.ippStrings.all = "all".asInstanceOf[typings.ipp.ippStrings.all]
   
-  @scala.inline
-  def `job-template`: typings.ipp.ippStrings.`job-template` = "job-template".asInstanceOf[typings.ipp.ippStrings.`job-template`]
+  inline def `job-template`: typings.ipp.ippStrings.`job-template` = "job-template".asInstanceOf[typings.ipp.ippStrings.`job-template`]
   
-  @scala.inline
-  def `printer-description`: typings.ipp.ippStrings.`printer-description` = "printer-description".asInstanceOf[typings.ipp.ippStrings.`printer-description`]
+  inline def `printer-description`: typings.ipp.ippStrings.`printer-description` = "printer-description".asInstanceOf[typings.ipp.ippStrings.`printer-description`]
 }

@@ -27,8 +27,7 @@ trait SnackbarProps extends StObject {
 }
 object SnackbarProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottomNavigation: Boolean,
     message: String,
     onRequestClose: () => Unit,
@@ -39,46 +38,32 @@ object SnackbarProps {
     __obj.asInstanceOf[SnackbarProps]
   }
   
-  @scala.inline
-  implicit class SnackbarPropsMutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
+  extension [Self <: SnackbarProps](x: Self) {
     
-    @scala.inline
-    def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
+    inline def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTextUndefined: Self = StObject.set(x, "actionText", js.undefined)
+    inline def setActionTextUndefined: Self = StObject.set(x, "actionText", js.undefined)
     
-    @scala.inline
-    def setBottomNavigation(value: Boolean): Self = StObject.set(x, "bottomNavigation", value.asInstanceOf[js.Any])
+    inline def setBottomNavigation(value: Boolean): Self = StObject.set(x, "bottomNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: ButtonProps): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: ButtonProps): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnActionPress(value: () => Unit): Self = StObject.set(x, "onActionPress", js.Any.fromFunction0(value))
+    inline def setOnActionPress(value: () => Unit): Self = StObject.set(x, "onActionPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnActionPressUndefined: Self = StObject.set(x, "onActionPress", js.undefined)
+    inline def setOnActionPressUndefined: Self = StObject.set(x, "onActionPress", js.undefined)
     
-    @scala.inline
-    def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+    inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStyle(value: Message): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Message): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

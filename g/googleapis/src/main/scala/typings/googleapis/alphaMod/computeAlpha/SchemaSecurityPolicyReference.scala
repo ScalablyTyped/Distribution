@@ -10,19 +10,15 @@ trait SchemaSecurityPolicyReference extends StObject {
 }
 object SchemaSecurityPolicyReference {
   
-  @scala.inline
-  def apply(): SchemaSecurityPolicyReference = {
+  inline def apply(): SchemaSecurityPolicyReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityPolicyReference]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityPolicyReferenceMutableBuilder[Self <: SchemaSecurityPolicyReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityPolicyReference](x: Self) {
     
-    @scala.inline
-    def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
+    inline def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
+    inline def setSecurityPolicyUndefined: Self = StObject.set(x, "securityPolicy", js.undefined)
   }
 }

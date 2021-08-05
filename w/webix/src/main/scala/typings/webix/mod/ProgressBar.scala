@@ -15,6 +15,5 @@ trait ProgressBar extends StObject {
 }
 object ProgressBar {
   
-  @scala.inline
-  def apply: ProgressBar = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[ProgressBar]
+  inline def apply: ProgressBar = ^.asInstanceOf[js.Dynamic].selectDynamic("ProgressBar").asInstanceOf[ProgressBar]
 }

@@ -11,16 +11,13 @@ trait EventEmitterIEventEmitter extends StObject {
 }
 object EventEmitterIEventEmitter {
   
-  @scala.inline
-  def apply(eventEmitter: IEventEmitter): EventEmitterIEventEmitter = {
+  inline def apply(eventEmitter: IEventEmitter): EventEmitterIEventEmitter = {
     val __obj = js.Dynamic.literal(eventEmitter = eventEmitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventEmitterIEventEmitter]
   }
   
-  @scala.inline
-  implicit class EventEmitterIEventEmitterMutableBuilder[Self <: EventEmitterIEventEmitter] (val x: Self) extends AnyVal {
+  extension [Self <: EventEmitterIEventEmitter](x: Self) {
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
   }
 }

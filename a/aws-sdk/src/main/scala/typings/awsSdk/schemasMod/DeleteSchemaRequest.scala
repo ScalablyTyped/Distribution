@@ -18,19 +18,15 @@ trait DeleteSchemaRequest extends StObject {
 }
 object DeleteSchemaRequest {
   
-  @scala.inline
-  def apply(RegistryName: string, SchemaName: string): DeleteSchemaRequest = {
+  inline def apply(RegistryName: string, SchemaName: string): DeleteSchemaRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSchemaRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSchemaRequestMutableBuilder[Self <: DeleteSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
   }
 }

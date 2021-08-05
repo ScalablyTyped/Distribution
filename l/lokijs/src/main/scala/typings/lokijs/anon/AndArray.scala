@@ -11,19 +11,15 @@ trait AndArray extends StObject {
 }
 object AndArray {
   
-  @scala.inline
-  def apply($and: js.Array[js.Any]): AndArray = {
+  inline def apply($and: js.Array[js.Any]): AndArray = {
     val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndArray]
   }
   
-  @scala.inline
-  implicit class AndArrayMutableBuilder[Self <: AndArray] (val x: Self) extends AnyVal {
+  extension [Self <: AndArray](x: Self) {
     
-    @scala.inline
-    def set$and(value: js.Array[js.Any]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
+    inline def set$and(value: js.Array[js.Any]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$andVarargs(value: js.Any*): Self = StObject.set(x, "$and", js.Array(value :_*))
+    inline def set$andVarargs(value: js.Any*): Self = StObject.set(x, "$and", js.Array(value :_*))
   }
 }

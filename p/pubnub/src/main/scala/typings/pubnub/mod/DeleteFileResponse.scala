@@ -10,16 +10,13 @@ trait DeleteFileResponse extends StObject {
 }
 object DeleteFileResponse {
   
-  @scala.inline
-  def apply(status: String): DeleteFileResponse = {
+  inline def apply(status: String): DeleteFileResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileResponse]
   }
   
-  @scala.inline
-  implicit class DeleteFileResponseMutableBuilder[Self <: DeleteFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

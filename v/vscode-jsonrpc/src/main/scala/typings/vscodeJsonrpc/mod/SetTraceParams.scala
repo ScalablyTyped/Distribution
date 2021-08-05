@@ -10,16 +10,13 @@ trait SetTraceParams extends StObject {
 }
 object SetTraceParams {
   
-  @scala.inline
-  def apply(value: TraceValues): SetTraceParams = {
+  inline def apply(value: TraceValues): SetTraceParams = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTraceParams]
   }
   
-  @scala.inline
-  implicit class SetTraceParamsMutableBuilder[Self <: SetTraceParams] (val x: Self) extends AnyVal {
+  extension [Self <: SetTraceParams](x: Self) {
     
-    @scala.inline
-    def setValue(value: TraceValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TraceValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

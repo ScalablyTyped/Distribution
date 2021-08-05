@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputStyle extends StObject
 object InputStyle {
   
-  @scala.inline
-  def contenteditable: typings.codemirror.codemirrorStrings.contenteditable = "contenteditable".asInstanceOf[typings.codemirror.codemirrorStrings.contenteditable]
+  inline def contenteditable: typings.codemirror.codemirrorStrings.contenteditable = "contenteditable".asInstanceOf[typings.codemirror.codemirrorStrings.contenteditable]
   
-  @scala.inline
-  def textarea: typings.codemirror.codemirrorStrings.textarea = "textarea".asInstanceOf[typings.codemirror.codemirrorStrings.textarea]
+  inline def textarea: typings.codemirror.codemirrorStrings.textarea = "textarea".asInstanceOf[typings.codemirror.codemirrorStrings.textarea]
 }

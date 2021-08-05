@@ -13,8 +13,7 @@ trait RTCRtcCapabilities extends StObject {
 }
 object RTCRtcCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codecs: js.Array[RTCRtpCodecCapability],
     headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
   ): RTCRtcCapabilities = {
@@ -22,19 +21,14 @@ object RTCRtcCapabilities {
     __obj.asInstanceOf[RTCRtcCapabilities]
   }
   
-  @scala.inline
-  implicit class RTCRtcCapabilitiesMutableBuilder[Self <: RTCRtcCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtcCapabilities](x: Self) {
     
-    @scala.inline
-    def setCodecs(value: js.Array[RTCRtpCodecCapability]): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
+    inline def setCodecs(value: js.Array[RTCRtpCodecCapability]): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecsVarargs(value: RTCRtpCodecCapability*): Self = StObject.set(x, "codecs", js.Array(value :_*))
+    inline def setCodecsVarargs(value: RTCRtpCodecCapability*): Self = StObject.set(x, "codecs", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaderExtensions(value: js.Array[RTCRtpHeaderExtensionCapability]): Self = StObject.set(x, "headerExtensions", value.asInstanceOf[js.Any])
+    inline def setHeaderExtensions(value: js.Array[RTCRtpHeaderExtensionCapability]): Self = StObject.set(x, "headerExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderExtensionsVarargs(value: RTCRtpHeaderExtensionCapability*): Self = StObject.set(x, "headerExtensions", js.Array(value :_*))
+    inline def setHeaderExtensionsVarargs(value: RTCRtpHeaderExtensionCapability*): Self = StObject.set(x, "headerExtensions", js.Array(value :_*))
   }
 }

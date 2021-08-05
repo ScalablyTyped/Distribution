@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object toUrlSearchParamsMod {
   
-  @scala.inline
-  def apply(): URLSearchParams = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[URLSearchParams]
-  @scala.inline
-  def apply(hasArgSearchParamsHashAlgMtimeModeOptions: js.Any): URLSearchParams = ^.asInstanceOf[js.Dynamic].apply(hasArgSearchParamsHashAlgMtimeModeOptions.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
+  inline def apply(): URLSearchParams = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[URLSearchParams]
+  inline def apply(hasArgSearchParamsHashAlgMtimeModeOptions: js.Any): URLSearchParams = ^.asInstanceOf[js.Dynamic].apply(hasArgSearchParamsHashAlgMtimeModeOptions.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
   
   @JSImport("ipfs-http-client/dist/src/lib/to-url-search-params", JSImport.Namespace)
   @js.native

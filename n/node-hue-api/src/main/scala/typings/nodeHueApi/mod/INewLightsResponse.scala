@@ -14,16 +14,13 @@ trait INewLightsResponse
 }
 object INewLightsResponse {
   
-  @scala.inline
-  def apply(lastscan: String): INewLightsResponse = {
+  inline def apply(lastscan: String): INewLightsResponse = {
     val __obj = js.Dynamic.literal(lastscan = lastscan.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewLightsResponse]
   }
   
-  @scala.inline
-  implicit class INewLightsResponseMutableBuilder[Self <: INewLightsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: INewLightsResponse](x: Self) {
     
-    @scala.inline
-    def setLastscan(value: String): Self = StObject.set(x, "lastscan", value.asInstanceOf[js.Any])
+    inline def setLastscan(value: String): Self = StObject.set(x, "lastscan", value.asInstanceOf[js.Any])
   }
 }

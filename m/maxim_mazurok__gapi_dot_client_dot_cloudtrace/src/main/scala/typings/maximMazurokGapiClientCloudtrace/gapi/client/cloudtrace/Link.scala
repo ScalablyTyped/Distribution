@@ -20,37 +20,27 @@ trait Link extends StObject {
 }
 object Link {
   
-  @scala.inline
-  def apply(): Link = {
+  inline def apply(): Link = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Link]
   }
   
-  @scala.inline
-  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+  extension [Self <: Link](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+    inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
+    inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
-    @scala.inline
-    def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+    inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
+    inline def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

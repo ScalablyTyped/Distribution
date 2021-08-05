@@ -47,43 +47,31 @@ trait BigQueryDestination extends StObject {
 }
 object BigQueryDestination {
   
-  @scala.inline
-  def apply(): BigQueryDestination = {
+  inline def apply(): BigQueryDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BigQueryDestination]
   }
   
-  @scala.inline
-  implicit class BigQueryDestinationMutableBuilder[Self <: BigQueryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: BigQueryDestination](x: Self) {
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setPartitionSpec(value: PartitionSpec): Self = StObject.set(x, "partitionSpec", value.asInstanceOf[js.Any])
+    inline def setPartitionSpec(value: PartitionSpec): Self = StObject.set(x, "partitionSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionSpecUndefined: Self = StObject.set(x, "partitionSpec", js.undefined)
+    inline def setPartitionSpecUndefined: Self = StObject.set(x, "partitionSpec", js.undefined)
     
-    @scala.inline
-    def setSeparateTablesPerAssetType(value: Boolean): Self = StObject.set(x, "separateTablesPerAssetType", value.asInstanceOf[js.Any])
+    inline def setSeparateTablesPerAssetType(value: Boolean): Self = StObject.set(x, "separateTablesPerAssetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparateTablesPerAssetTypeUndefined: Self = StObject.set(x, "separateTablesPerAssetType", js.undefined)
+    inline def setSeparateTablesPerAssetTypeUndefined: Self = StObject.set(x, "separateTablesPerAssetType", js.undefined)
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

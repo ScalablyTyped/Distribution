@@ -13,16 +13,13 @@ trait TypefaceFontProviderFactory extends StObject {
 }
 object TypefaceFontProviderFactory {
   
-  @scala.inline
-  def apply(Make: () => TypefaceFontProvider): TypefaceFontProviderFactory = {
+  inline def apply(Make: () => TypefaceFontProvider): TypefaceFontProviderFactory = {
     val __obj = js.Dynamic.literal(Make = js.Any.fromFunction0(Make))
     __obj.asInstanceOf[TypefaceFontProviderFactory]
   }
   
-  @scala.inline
-  implicit class TypefaceFontProviderFactoryMutableBuilder[Self <: TypefaceFontProviderFactory] (val x: Self) extends AnyVal {
+  extension [Self <: TypefaceFontProviderFactory](x: Self) {
     
-    @scala.inline
-    def setMake(value: () => TypefaceFontProvider): Self = StObject.set(x, "Make", js.Any.fromFunction0(value))
+    inline def setMake(value: () => TypefaceFontProvider): Self = StObject.set(x, "Make", js.Any.fromFunction0(value))
   }
 }

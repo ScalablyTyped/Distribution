@@ -18,31 +18,23 @@ trait BatchGetBuildBatchesOutput extends StObject {
 }
 object BatchGetBuildBatchesOutput {
   
-  @scala.inline
-  def apply(): BatchGetBuildBatchesOutput = {
+  inline def apply(): BatchGetBuildBatchesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetBuildBatchesOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetBuildBatchesOutputMutableBuilder[Self <: BatchGetBuildBatchesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetBuildBatchesOutput](x: Self) {
     
-    @scala.inline
-    def setBuildBatches(value: BuildBatches): Self = StObject.set(x, "buildBatches", value.asInstanceOf[js.Any])
+    inline def setBuildBatches(value: BuildBatches): Self = StObject.set(x, "buildBatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildBatchesNotFound(value: BuildBatchIds): Self = StObject.set(x, "buildBatchesNotFound", value.asInstanceOf[js.Any])
+    inline def setBuildBatchesNotFound(value: BuildBatchIds): Self = StObject.set(x, "buildBatchesNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildBatchesNotFoundUndefined: Self = StObject.set(x, "buildBatchesNotFound", js.undefined)
+    inline def setBuildBatchesNotFoundUndefined: Self = StObject.set(x, "buildBatchesNotFound", js.undefined)
     
-    @scala.inline
-    def setBuildBatchesNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildBatchesNotFound", js.Array(value :_*))
+    inline def setBuildBatchesNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildBatchesNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildBatchesUndefined: Self = StObject.set(x, "buildBatches", js.undefined)
+    inline def setBuildBatchesUndefined: Self = StObject.set(x, "buildBatches", js.undefined)
     
-    @scala.inline
-    def setBuildBatchesVarargs(value: BuildBatch*): Self = StObject.set(x, "buildBatches", js.Array(value :_*))
+    inline def setBuildBatchesVarargs(value: BuildBatch*): Self = StObject.set(x, "buildBatches", js.Array(value :_*))
   }
 }

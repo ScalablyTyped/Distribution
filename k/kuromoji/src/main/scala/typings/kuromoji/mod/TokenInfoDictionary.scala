@@ -26,8 +26,7 @@ trait TokenInfoDictionary extends StObject {
 }
 object TokenInfoDictionary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addMapping: (Double, Double) => Unit,
     buildDictionary: js.Array[js.Array[js.Any]] => NumberDictionary[String],
     getFeatures: String => String,
@@ -41,31 +40,22 @@ object TokenInfoDictionary {
     __obj.asInstanceOf[TokenInfoDictionary]
   }
   
-  @scala.inline
-  implicit class TokenInfoDictionaryMutableBuilder[Self <: TokenInfoDictionary] (val x: Self) extends AnyVal {
+  extension [Self <: TokenInfoDictionary](x: Self) {
     
-    @scala.inline
-    def setAddMapping(value: (Double, Double) => Unit): Self = StObject.set(x, "addMapping", js.Any.fromFunction2(value))
+    inline def setAddMapping(value: (Double, Double) => Unit): Self = StObject.set(x, "addMapping", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBuildDictionary(value: js.Array[js.Array[js.Any]] => NumberDictionary[String]): Self = StObject.set(x, "buildDictionary", js.Any.fromFunction1(value))
+    inline def setBuildDictionary(value: js.Array[js.Array[js.Any]] => NumberDictionary[String]): Self = StObject.set(x, "buildDictionary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFeatures(value: String => String): Self = StObject.set(x, "getFeatures", js.Any.fromFunction1(value))
+    inline def setGetFeatures(value: String => String): Self = StObject.set(x, "getFeatures", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadDictionary(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadDictionary", js.Any.fromFunction1(value))
+    inline def setLoadDictionary(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadDictionary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadPosVector(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadPosVector", js.Any.fromFunction1(value))
+    inline def setLoadPosVector(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadPosVector", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadTargetMap(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadTargetMap", js.Any.fromFunction1(value))
+    inline def setLoadTargetMap(value: Uint8Array => TokenInfoDictionary): Self = StObject.set(x, "loadTargetMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPut(value: (Double, Double, Double, String, String) => Double): Self = StObject.set(x, "put", js.Any.fromFunction5(value))
+    inline def setPut(value: (Double, Double, Double, String, String) => Double): Self = StObject.set(x, "put", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTargetMapToBuffer(value: () => Uint8Array): Self = StObject.set(x, "targetMapToBuffer", js.Any.fromFunction0(value))
+    inline def setTargetMapToBuffer(value: () => Uint8Array): Self = StObject.set(x, "targetMapToBuffer", js.Any.fromFunction0(value))
   }
 }

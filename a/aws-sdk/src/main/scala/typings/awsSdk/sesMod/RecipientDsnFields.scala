@@ -43,52 +43,37 @@ trait RecipientDsnFields extends StObject {
 }
 object RecipientDsnFields {
   
-  @scala.inline
-  def apply(Action: DsnAction, Status: DsnStatus): RecipientDsnFields = {
+  inline def apply(Action: DsnAction, Status: DsnStatus): RecipientDsnFields = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientDsnFields]
   }
   
-  @scala.inline
-  implicit class RecipientDsnFieldsMutableBuilder[Self <: RecipientDsnFields] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientDsnFields](x: Self) {
     
-    @scala.inline
-    def setAction(value: DsnAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: DsnAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticCode(value: DiagnosticCode): Self = StObject.set(x, "DiagnosticCode", value.asInstanceOf[js.Any])
+    inline def setDiagnosticCode(value: DiagnosticCode): Self = StObject.set(x, "DiagnosticCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticCodeUndefined: Self = StObject.set(x, "DiagnosticCode", js.undefined)
+    inline def setDiagnosticCodeUndefined: Self = StObject.set(x, "DiagnosticCode", js.undefined)
     
-    @scala.inline
-    def setExtensionFields(value: ExtensionFieldList): Self = StObject.set(x, "ExtensionFields", value.asInstanceOf[js.Any])
+    inline def setExtensionFields(value: ExtensionFieldList): Self = StObject.set(x, "ExtensionFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionFieldsUndefined: Self = StObject.set(x, "ExtensionFields", js.undefined)
+    inline def setExtensionFieldsUndefined: Self = StObject.set(x, "ExtensionFields", js.undefined)
     
-    @scala.inline
-    def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value :_*))
+    inline def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value :_*))
     
-    @scala.inline
-    def setFinalRecipient(value: Address): Self = StObject.set(x, "FinalRecipient", value.asInstanceOf[js.Any])
+    inline def setFinalRecipient(value: Address): Self = StObject.set(x, "FinalRecipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalRecipientUndefined: Self = StObject.set(x, "FinalRecipient", js.undefined)
+    inline def setFinalRecipientUndefined: Self = StObject.set(x, "FinalRecipient", js.undefined)
     
-    @scala.inline
-    def setLastAttemptDate(value: LastAttemptDate): Self = StObject.set(x, "LastAttemptDate", value.asInstanceOf[js.Any])
+    inline def setLastAttemptDate(value: LastAttemptDate): Self = StObject.set(x, "LastAttemptDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAttemptDateUndefined: Self = StObject.set(x, "LastAttemptDate", js.undefined)
+    inline def setLastAttemptDateUndefined: Self = StObject.set(x, "LastAttemptDate", js.undefined)
     
-    @scala.inline
-    def setRemoteMta(value: RemoteMta): Self = StObject.set(x, "RemoteMta", value.asInstanceOf[js.Any])
+    inline def setRemoteMta(value: RemoteMta): Self = StObject.set(x, "RemoteMta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteMtaUndefined: Self = StObject.set(x, "RemoteMta", js.undefined)
+    inline def setRemoteMtaUndefined: Self = StObject.set(x, "RemoteMta", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DsnStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DsnStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

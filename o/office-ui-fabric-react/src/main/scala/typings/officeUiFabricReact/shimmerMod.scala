@@ -32,8 +32,7 @@ object shimmerMod {
     @JSImport("office-ui-fabric-react/lib/components/Shimmer", "ShimmerBase.defaultProps")
     @js.native
     def defaultProps: IShimmerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Shimmer", "ShimmerCircle")

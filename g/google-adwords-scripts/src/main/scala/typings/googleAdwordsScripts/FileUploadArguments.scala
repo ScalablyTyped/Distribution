@@ -14,31 +14,23 @@ trait FileUploadArguments extends StObject {
 }
 object FileUploadArguments {
   
-  @scala.inline
-  def apply(): FileUploadArguments = {
+  inline def apply(): FileUploadArguments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileUploadArguments]
   }
   
-  @scala.inline
-  implicit class FileUploadArgumentsMutableBuilder[Self <: FileUploadArguments] (val x: Self) extends AnyVal {
+  extension [Self <: FileUploadArguments](x: Self) {
     
-    @scala.inline
-    def setFileLocale(value: String): Self = StObject.set(x, "fileLocale", value.asInstanceOf[js.Any])
+    inline def setFileLocale(value: String): Self = StObject.set(x, "fileLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileLocaleUndefined: Self = StObject.set(x, "fileLocale", js.undefined)
+    inline def setFileLocaleUndefined: Self = StObject.set(x, "fileLocale", js.undefined)
     
-    @scala.inline
-    def setMoneyInMicros(value: Boolean): Self = StObject.set(x, "moneyInMicros", value.asInstanceOf[js.Any])
+    inline def setMoneyInMicros(value: Boolean): Self = StObject.set(x, "moneyInMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoneyInMicrosUndefined: Self = StObject.set(x, "moneyInMicros", js.undefined)
+    inline def setMoneyInMicrosUndefined: Self = StObject.set(x, "moneyInMicros", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait HighlightResult[TDoc] extends StObject {
 }
 object HighlightResult {
   
-  @scala.inline
-  def apply[TDoc](_highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[TDoc], objectID: String): HighlightResult[TDoc] = {
+  inline def apply[TDoc](_highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[TDoc], objectID: String): HighlightResult[TDoc] = {
     val __obj = js.Dynamic.literal(_highlightResult = _highlightResult.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightResult[TDoc]]
   }
   
-  @scala.inline
-  implicit class HighlightResultMutableBuilder[Self <: HighlightResult[?], TDoc] (val x: Self & HighlightResult[TDoc]) extends AnyVal {
+  extension [Self <: HighlightResult[?], TDoc](x: Self & HighlightResult[TDoc]) {
     
-    @scala.inline
-    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[TDoc]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
+    inline def set_highlightResult(value: typings.reactInstantsearchCore.mod.HighlightResult[TDoc]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
   }
 }

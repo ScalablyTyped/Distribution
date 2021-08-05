@@ -17,17 +17,14 @@ object configMod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(disabled: Boolean): Config = {
+    inline def apply(disabled: Boolean): Config = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     }
   }
   

@@ -12,25 +12,19 @@ trait UpdateProfile extends StObject {
 }
 object UpdateProfile {
   
-  @scala.inline
-  def apply(): UpdateProfile = {
+  inline def apply(): UpdateProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateProfile]
   }
   
-  @scala.inline
-  implicit class UpdateProfileMutableBuilder[Self <: UpdateProfile] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProfile](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setPhotoURL(value: String): Self = StObject.set(x, "photoURL", value.asInstanceOf[js.Any])
+    inline def setPhotoURL(value: String): Self = StObject.set(x, "photoURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoURLUndefined: Self = StObject.set(x, "photoURL", js.undefined)
+    inline def setPhotoURLUndefined: Self = StObject.set(x, "photoURL", js.undefined)
   }
 }

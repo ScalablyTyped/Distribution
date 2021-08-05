@@ -12,19 +12,15 @@ trait DistributionOriginCustomHeader extends StObject {
 }
 object DistributionOriginCustomHeader {
   
-  @scala.inline
-  def apply(name: String, value: String): DistributionOriginCustomHeader = {
+  inline def apply(name: String, value: String): DistributionOriginCustomHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOriginCustomHeader]
   }
   
-  @scala.inline
-  implicit class DistributionOriginCustomHeaderMutableBuilder[Self <: DistributionOriginCustomHeader] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOriginCustomHeader](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

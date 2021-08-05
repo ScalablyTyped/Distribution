@@ -13,16 +13,13 @@ trait DescribeAuditStreamConfigurationRequest extends StObject {
 }
 object DescribeAuditStreamConfigurationRequest {
   
-  @scala.inline
-  def apply(FleetArn: FleetArn): DescribeAuditStreamConfigurationRequest = {
+  inline def apply(FleetArn: FleetArn): DescribeAuditStreamConfigurationRequest = {
     val __obj = js.Dynamic.literal(FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAuditStreamConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAuditStreamConfigurationRequestMutableBuilder[Self <: DescribeAuditStreamConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditStreamConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

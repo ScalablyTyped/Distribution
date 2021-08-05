@@ -14,25 +14,19 @@ trait ModifyTemplateVersionTagRequest extends StObject {
 }
 object ModifyTemplateVersionTagRequest {
   
-  @scala.inline
-  def apply(): ModifyTemplateVersionTagRequest = {
+  inline def apply(): ModifyTemplateVersionTagRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyTemplateVersionTagRequest]
   }
   
-  @scala.inline
-  implicit class ModifyTemplateVersionTagRequestMutableBuilder[Self <: ModifyTemplateVersionTagRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTemplateVersionTagRequest](x: Self) {
     
-    @scala.inline
-    def setRemoveOnly(value: Boolean): Self = StObject.set(x, "removeOnly", value.asInstanceOf[js.Any])
+    inline def setRemoveOnly(value: Boolean): Self = StObject.set(x, "removeOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveOnlyUndefined: Self = StObject.set(x, "removeOnly", js.undefined)
+    inline def setRemoveOnlyUndefined: Self = StObject.set(x, "removeOnly", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

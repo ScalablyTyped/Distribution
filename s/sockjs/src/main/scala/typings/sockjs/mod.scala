@@ -17,10 +17,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
-  @scala.inline
-  def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+  inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
   @js.native
   trait Connection
@@ -94,62 +92,44 @@ object mod {
   }
   object ServerOptions {
     
-    @scala.inline
-    def apply(): ServerOptions = {
+    inline def apply(): ServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerOptions]
     }
     
-    @scala.inline
-    implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServerOptions](x: Self) {
       
-      @scala.inline
-      def setDisconnect_delay(value: Double): Self = StObject.set(x, "disconnect_delay", value.asInstanceOf[js.Any])
+      inline def setDisconnect_delay(value: Double): Self = StObject.set(x, "disconnect_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnect_delayUndefined: Self = StObject.set(x, "disconnect_delay", js.undefined)
+      inline def setDisconnect_delayUndefined: Self = StObject.set(x, "disconnect_delay", js.undefined)
       
-      @scala.inline
-      def setHeartbeat_delay(value: Double): Self = StObject.set(x, "heartbeat_delay", value.asInstanceOf[js.Any])
+      inline def setHeartbeat_delay(value: Double): Self = StObject.set(x, "heartbeat_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeat_delayUndefined: Self = StObject.set(x, "heartbeat_delay", js.undefined)
+      inline def setHeartbeat_delayUndefined: Self = StObject.set(x, "heartbeat_delay", js.undefined)
       
-      @scala.inline
-      def setJsessionid(value: js.Any): Self = StObject.set(x, "jsessionid", value.asInstanceOf[js.Any])
+      inline def setJsessionid(value: js.Any): Self = StObject.set(x, "jsessionid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsessionidUndefined: Self = StObject.set(x, "jsessionid", js.undefined)
+      inline def setJsessionidUndefined: Self = StObject.set(x, "jsessionid", js.undefined)
       
-      @scala.inline
-      def setLog(value: (/* severity */ String, /* message */ String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* severity */ String, /* message */ String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setResponse_limit(value: Double): Self = StObject.set(x, "response_limit", value.asInstanceOf[js.Any])
+      inline def setResponse_limit(value: Double): Self = StObject.set(x, "response_limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse_limitUndefined: Self = StObject.set(x, "response_limit", js.undefined)
+      inline def setResponse_limitUndefined: Self = StObject.set(x, "response_limit", js.undefined)
       
-      @scala.inline
-      def setSockjs_url(value: String): Self = StObject.set(x, "sockjs_url", value.asInstanceOf[js.Any])
+      inline def setSockjs_url(value: String): Self = StObject.set(x, "sockjs_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockjs_urlUndefined: Self = StObject.set(x, "sockjs_url", js.undefined)
+      inline def setSockjs_urlUndefined: Self = StObject.set(x, "sockjs_url", js.undefined)
       
-      @scala.inline
-      def setWebsocket(value: Boolean): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
+      inline def setWebsocket(value: Boolean): Self = StObject.set(x, "websocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsocketUndefined: Self = StObject.set(x, "websocket", js.undefined)
+      inline def setWebsocketUndefined: Self = StObject.set(x, "websocket", js.undefined)
     }
   }
 }

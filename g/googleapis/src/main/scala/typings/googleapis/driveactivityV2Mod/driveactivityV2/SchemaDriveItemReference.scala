@@ -31,37 +31,27 @@ trait SchemaDriveItemReference extends StObject {
 }
 object SchemaDriveItemReference {
   
-  @scala.inline
-  def apply(): SchemaDriveItemReference = {
+  inline def apply(): SchemaDriveItemReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDriveItemReference]
   }
   
-  @scala.inline
-  implicit class SchemaDriveItemReferenceMutableBuilder[Self <: SchemaDriveItemReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDriveItemReference](x: Self) {
     
-    @scala.inline
-    def setFile(value: SchemaFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: SchemaFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setFolder(value: SchemaFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: SchemaFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

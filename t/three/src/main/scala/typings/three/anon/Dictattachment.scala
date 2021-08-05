@@ -13,17 +13,14 @@ trait Dictattachment
 }
 object Dictattachment {
   
-  @scala.inline
-  def apply(`type`: String): Dictattachment = {
+  inline def apply(`type`: String): Dictattachment = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictattachment]
   }
   
-  @scala.inline
-  implicit class DictattachmentMutableBuilder[Self <: Dictattachment] (val x: Self) extends AnyVal {
+  extension [Self <: Dictattachment](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

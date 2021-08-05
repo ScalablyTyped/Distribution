@@ -18,25 +18,19 @@ trait HLSFragmentSelector extends StObject {
 }
 object HLSFragmentSelector {
   
-  @scala.inline
-  def apply(): HLSFragmentSelector = {
+  inline def apply(): HLSFragmentSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HLSFragmentSelector]
   }
   
-  @scala.inline
-  implicit class HLSFragmentSelectorMutableBuilder[Self <: HLSFragmentSelector] (val x: Self) extends AnyVal {
+  extension [Self <: HLSFragmentSelector](x: Self) {
     
-    @scala.inline
-    def setFragmentSelectorType(value: HLSFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
+    inline def setFragmentSelectorType(value: HLSFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentSelectorTypeUndefined: Self = StObject.set(x, "FragmentSelectorType", js.undefined)
+    inline def setFragmentSelectorTypeUndefined: Self = StObject.set(x, "FragmentSelectorType", js.undefined)
     
-    @scala.inline
-    def setTimestampRange(value: HLSTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
+    inline def setTimestampRange(value: HLSTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampRangeUndefined: Self = StObject.set(x, "TimestampRange", js.undefined)
+    inline def setTimestampRangeUndefined: Self = StObject.set(x, "TimestampRange", js.undefined)
   }
 }

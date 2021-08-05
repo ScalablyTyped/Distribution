@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorChangeMediaElementCommandArguments
 }
 object ASPxClientHtmlEditorChangeMediaElementCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCommandName: () => String,
     align: String,
     id: String,
@@ -51,22 +50,16 @@ object ASPxClientHtmlEditorChangeMediaElementCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorChangeMediaElementCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorChangeMediaElementCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorChangeMediaElementCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorChangeMediaElementCommandArguments](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCommandName(value: () => String): Self = StObject.set(x, "GetCommandName", js.Any.fromFunction0(value))
+    inline def setGetCommandName(value: () => String): Self = StObject.set(x, "GetCommandName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
   }
 }

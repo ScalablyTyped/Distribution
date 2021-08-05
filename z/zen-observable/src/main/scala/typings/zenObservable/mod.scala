@@ -22,17 +22,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def from[R](observable: ArrayLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def from[R](observable: ArrayLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   /* static member */
-  @scala.inline
-  def from[R](observable: Observable[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
-  @scala.inline
-  def from[R](observable: ObservableLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def from[R](observable: Observable[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def from[R](observable: ObservableLike[R]): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(observable.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   
   /* static member */
-  @scala.inline
-  def of[R](items: R*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
+  inline def of[R](items: R*): Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(items.asInstanceOf[js.Any]).asInstanceOf[Observable[R]]
   
   @js.native
   trait Observable[T] extends StObject {
@@ -73,17 +69,14 @@ object mod {
     }
     object SymbolConstructor {
       
-      @scala.inline
-      def apply(observable: js.Symbol): SymbolConstructor = {
+      inline def apply(observable: js.Symbol): SymbolConstructor = {
         val __obj = js.Dynamic.literal(observable = observable.asInstanceOf[js.Any])
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      @scala.inline
-      implicit class SymbolConstructorMutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: SymbolConstructor](x: Self) {
         
-        @scala.inline
-        def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
+        inline def setObservable(value: js.Symbol): Self = StObject.set(x, "observable", value.asInstanceOf[js.Any])
       }
     }
     
@@ -107,38 +100,28 @@ object mod {
       }
       object Observer {
         
-        @scala.inline
-        def apply[T](): Observer[T] = {
+        inline def apply[T](): Observer[T] = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Observer[T]]
         }
         
-        @scala.inline
-        implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+        extension [Self <: Observer[?], T](x: Self & Observer[T]) {
           
-          @scala.inline
-          def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+          inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+          inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
           
-          @scala.inline
-          def setError(value: /* errorValue */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+          inline def setError(value: /* errorValue */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+          inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
           
-          @scala.inline
-          def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+          inline def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+          inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
           
-          @scala.inline
-          def setStart(value: /* subscription */ Subscription => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+          inline def setStart(value: /* subscription */ Subscription => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+          inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
         }
       }
       
@@ -152,20 +135,16 @@ object mod {
       }
       object Subscription {
         
-        @scala.inline
-        def apply(closed: Boolean, unsubscribe: () => Unit): Subscription = {
+        inline def apply(closed: Boolean, unsubscribe: () => Unit): Subscription = {
           val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
           __obj.asInstanceOf[Subscription]
         }
         
-        @scala.inline
-        implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+        extension [Self <: Subscription](x: Self) {
           
-          @scala.inline
-          def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+          inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+          inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
         }
       }
       
@@ -181,26 +160,20 @@ object mod {
       }
       object SubscriptionObserver {
         
-        @scala.inline
-        def apply[T](closed: Boolean, complete: () => Unit, error: js.Any => Unit, next: T => Unit): SubscriptionObserver[T] = {
+        inline def apply[T](closed: Boolean, complete: () => Unit, error: js.Any => Unit, next: T => Unit): SubscriptionObserver[T] = {
           val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
           __obj.asInstanceOf[SubscriptionObserver[T]]
         }
         
-        @scala.inline
-        implicit class SubscriptionObserverMutableBuilder[Self <: SubscriptionObserver[?], T] (val x: Self & SubscriptionObserver[T]) extends AnyVal {
+        extension [Self <: SubscriptionObserver[?], T](x: Self & SubscriptionObserver[T]) {
           
-          @scala.inline
-          def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+          inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+          inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+          inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+          inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
         }
       }
     }

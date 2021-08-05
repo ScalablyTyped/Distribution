@@ -14,25 +14,19 @@ trait MediaFile extends StObject {
 }
 object MediaFile {
   
-  @scala.inline
-  def apply(): MediaFile = {
+  inline def apply(): MediaFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaFile]
   }
   
-  @scala.inline
-  implicit class MediaFileMutableBuilder[Self <: MediaFile] (val x: Self) extends AnyVal {
+  extension [Self <: MediaFile](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: String): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: String): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

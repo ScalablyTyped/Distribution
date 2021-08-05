@@ -31,35 +31,26 @@ object anon {
   }
   object OptionsencodingEncoding {
     
-    @scala.inline
-    def apply(encoding: (js.UndefOr[Encoding | Null]) & Encoding): OptionsencodingEncoding = {
+    inline def apply(encoding: (js.UndefOr[Encoding | Null]) & Encoding): OptionsencodingEncoding = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsencodingEncoding]
     }
     
-    @scala.inline
-    implicit class OptionsencodingEncodingMutableBuilder[Self <: OptionsencodingEncoding] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsencodingEncoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: (js.UndefOr[Encoding | Null]) & Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: (js.UndefOr[Encoding | Null]) & Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthNull: Self = StObject.set(x, "length", null)
+      inline def setLengthNull: Self = StObject.set(x, "length", null)
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitNull: Self = StObject.set(x, "limit", null)
+      inline def setLimitNull: Self = StObject.set(x, "limit", null)
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
 }

@@ -19,31 +19,25 @@ trait Rational extends StObject {
   /** Returns the Rational Value as a Double */
   val Value: Double
   
-  @JSName("WIA.Rational_typekey")
+  /* private */ @JSName("WIA.Rational_typekey")
   var WIADotRational_typekey: Rational
 }
 object Rational {
   
-  @scala.inline
-  def apply(Denominator: Double, Numerator: Double, Value: Double, WIADotRational_typekey: Rational): Rational = {
+  inline def apply(Denominator: Double, Numerator: Double, Value: Double, WIADotRational_typekey: Rational): Rational = {
     val __obj = js.Dynamic.literal(Denominator = Denominator.asInstanceOf[js.Any], Numerator = Numerator.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("WIA.Rational_typekey")(WIADotRational_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rational]
   }
   
-  @scala.inline
-  implicit class RationalMutableBuilder[Self <: Rational] (val x: Self) extends AnyVal {
+  extension [Self <: Rational](x: Self) {
     
-    @scala.inline
-    def setDenominator(value: Double): Self = StObject.set(x, "Denominator", value.asInstanceOf[js.Any])
+    inline def setDenominator(value: Double): Self = StObject.set(x, "Denominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumerator(value: Double): Self = StObject.set(x, "Numerator", value.asInstanceOf[js.Any])
+    inline def setNumerator(value: Double): Self = StObject.set(x, "Numerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotRational_typekey(value: Rational): Self = StObject.set(x, "WIA.Rational_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotRational_typekey(value: Rational): Self = StObject.set(x, "WIA.Rational_typekey", value.asInstanceOf[js.Any])
   }
 }

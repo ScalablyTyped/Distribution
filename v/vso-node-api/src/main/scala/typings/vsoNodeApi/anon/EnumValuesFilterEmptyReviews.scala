@@ -10,16 +10,13 @@ trait EnumValuesFilterEmptyReviews extends StObject {
 }
 object EnumValuesFilterEmptyReviews {
   
-  @scala.inline
-  def apply(enumValues: FilterEmptyReviews): EnumValuesFilterEmptyReviews = {
+  inline def apply(enumValues: FilterEmptyReviews): EnumValuesFilterEmptyReviews = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFilterEmptyReviews]
   }
   
-  @scala.inline
-  implicit class EnumValuesFilterEmptyReviewsMutableBuilder[Self <: EnumValuesFilterEmptyReviews] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFilterEmptyReviews](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FilterEmptyReviews): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FilterEmptyReviews): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -20,19 +20,15 @@ trait SchemaFailedLocation extends StObject {
 }
 object SchemaFailedLocation {
   
-  @scala.inline
-  def apply(): SchemaFailedLocation = {
+  inline def apply(): SchemaFailedLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFailedLocation]
   }
   
-  @scala.inline
-  implicit class SchemaFailedLocationMutableBuilder[Self <: SchemaFailedLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFailedLocation](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

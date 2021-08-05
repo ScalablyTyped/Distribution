@@ -17,19 +17,15 @@ trait BelongsToManySetAssociationsMixinOptions extends StObject {
 }
 object BelongsToManySetAssociationsMixinOptions {
   
-  @scala.inline
-  def apply(): BelongsToManySetAssociationsMixinOptions = {
+  inline def apply(): BelongsToManySetAssociationsMixinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BelongsToManySetAssociationsMixinOptions]
   }
   
-  @scala.inline
-  implicit class BelongsToManySetAssociationsMixinOptionsMutableBuilder[Self <: BelongsToManySetAssociationsMixinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BelongsToManySetAssociationsMixinOptions](x: Self) {
     
-    @scala.inline
-    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

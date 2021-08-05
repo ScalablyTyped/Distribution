@@ -49,49 +49,35 @@ trait AppOptions
 }
 object AppOptions {
   
-  @scala.inline
-  def apply(): AppOptions = {
+  inline def apply(): AppOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppOptions]
   }
   
-  @scala.inline
-  implicit class AppOptionsMutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppOptions](x: Self) {
     
-    @scala.inline
-    def setGlobalData(value: js.Object): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
+    inline def setGlobalData(value: js.Object): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalDataUndefined: Self = StObject.set(x, "globalData", js.undefined)
+    inline def setGlobalDataUndefined: Self = StObject.set(x, "globalData", js.undefined)
     
-    @scala.inline
-    def setOnError(value: js.ThisFunction1[/* this */ App, /* msg */ String, Unit]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(value: js.ThisFunction1[/* this */ App, /* msg */ String, Unit]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnHide(value: js.ThisFunction0[/* this */ App, Unit]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
+    inline def setOnHide(value: js.ThisFunction0[/* this */ App, Unit]): Self = StObject.set(x, "onHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    @scala.inline
-    def setOnLaunch(value: js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]): Self = StObject.set(x, "onLaunch", value.asInstanceOf[js.Any])
+    inline def setOnLaunch(value: js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]): Self = StObject.set(x, "onLaunch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
+    inline def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    inline def setOnShow(value: js.ThisFunction1[/* this */ App, /* option */ LaunchOptions, Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    @scala.inline
-    def setOnUnlaunch(value: js.ThisFunction0[/* this */ App, Unit]): Self = StObject.set(x, "onUnlaunch", value.asInstanceOf[js.Any])
+    inline def setOnUnlaunch(value: js.ThisFunction0[/* this */ App, Unit]): Self = StObject.set(x, "onUnlaunch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUnlaunchUndefined: Self = StObject.set(x, "onUnlaunch", js.undefined)
+    inline def setOnUnlaunchUndefined: Self = StObject.set(x, "onUnlaunch", js.undefined)
   }
 }

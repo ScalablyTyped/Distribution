@@ -11,10 +11,8 @@ object interpolateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interpolate[T](input: js.Array[Double], output: js.Array[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
-  @scala.inline
-  def interpolate[T](input: js.Array[Double], output: js.Array[T], hasIsClampEaseMixer: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], hasIsClampEaseMixer.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
+  inline def interpolate[T](input: js.Array[Double], output: js.Array[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
+  inline def interpolate[T](input: js.Array[Double], output: js.Array[T], hasIsClampEaseMixer: InterpolateOptions[T]): js.Function1[/* v */ Double, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], hasIsClampEaseMixer.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, T]]
   
   trait InterpolateOptions[T] extends StObject {
     
@@ -26,38 +24,28 @@ object interpolateMod {
   }
   object InterpolateOptions {
     
-    @scala.inline
-    def apply[T](): InterpolateOptions[T] = {
+    inline def apply[T](): InterpolateOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InterpolateOptions[T]]
     }
     
-    @scala.inline
-    implicit class InterpolateOptionsMutableBuilder[Self <: InterpolateOptions[?], T] (val x: Self & InterpolateOptions[T]) extends AnyVal {
+    extension [Self <: InterpolateOptions[?], T](x: Self & InterpolateOptions[T]) {
       
-      @scala.inline
-      def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+      inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
+      inline def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
       
-      @scala.inline
-      def setEase(value: MixEasing): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: MixEasing): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseFunction1(value: /* v */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
+      inline def setEaseFunction1(value: /* v */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
+      inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      @scala.inline
-      def setEaseVarargs(value: Easing*): Self = StObject.set(x, "ease", js.Array(value :_*))
+      inline def setEaseVarargs(value: Easing*): Self = StObject.set(x, "ease", js.Array(value :_*))
       
-      @scala.inline
-      def setMixer(value: (T, T) => Mix[T]): Self = StObject.set(x, "mixer", js.Any.fromFunction2(value))
+      inline def setMixer(value: (T, T) => Mix[T]): Self = StObject.set(x, "mixer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMixerUndefined: Self = StObject.set(x, "mixer", js.undefined)
+      inline def setMixerUndefined: Self = StObject.set(x, "mixer", js.undefined)
     }
   }
   

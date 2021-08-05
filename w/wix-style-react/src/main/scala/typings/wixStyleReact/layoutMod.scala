@@ -35,32 +35,24 @@ object layoutMod extends Shortcut {
   }
   object CellProps {
     
-    @scala.inline
-    def apply(): CellProps = {
+    inline def apply(): CellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellProps]
     }
     
-    @scala.inline
-    implicit class CellPropsMutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
+    extension [Self <: CellProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -82,56 +74,40 @@ object layoutMod extends Shortcut {
   }
   object LayoutProps {
     
-    @scala.inline
-    def apply(): LayoutProps = {
+    inline def apply(): LayoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutProps]
     }
     
-    @scala.inline
-    implicit class LayoutPropsMutableBuilder[Self <: LayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: LayoutProps](x: Self) {
       
-      @scala.inline
-      def setAlignItems(value: AlignItemsProperty): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+      inline def setAlignItems(value: AlignItemsProperty): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+      inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setGap(value: GapProperty[String | Double]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+      inline def setGap(value: GapProperty[String | Double]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+      inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
       
-      @scala.inline
-      def setJustifyItems(value: JustifyItemsProperty): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
+      inline def setJustifyItems(value: JustifyItemsProperty): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
+      inline def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: GridAutoRowsProperty[String | Double]): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: GridAutoRowsProperty[String | Double]): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     }
   }
   

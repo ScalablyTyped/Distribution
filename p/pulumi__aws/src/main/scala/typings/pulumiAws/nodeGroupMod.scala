@@ -132,21 +132,16 @@ object nodeGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NodeGroupState): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NodeGroupState, opts: CustomResourceOptions): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
+    inline def get(name: String, id: Input[ID]): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
+    inline def get(name: String, id: Input[ID], state: NodeGroupState): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
+    inline def get(name: String, id: Input[ID], state: NodeGroupState, opts: CustomResourceOptions): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
     
     /**
       * Returns true if the given object is an instance of NodeGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean]
   }
   
   trait NodeGroupArgs extends StObject {
@@ -225,8 +220,7 @@ object nodeGroupMod {
   }
   object NodeGroupArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clusterName: Input[String],
       nodeRoleArn: Input[String],
       scalingConfig: Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig],
@@ -236,89 +230,61 @@ object nodeGroupMod {
       __obj.asInstanceOf[NodeGroupArgs]
     }
     
-    @scala.inline
-    implicit class NodeGroupArgsMutableBuilder[Self <: NodeGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NodeGroupArgs](x: Self) {
       
-      @scala.inline
-      def setAmiType(value: Input[String]): Self = StObject.set(x, "amiType", value.asInstanceOf[js.Any])
+      inline def setAmiType(value: Input[String]): Self = StObject.set(x, "amiType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
+      inline def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
       
-      @scala.inline
-      def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskSize(value: Input[Double]): Self = StObject.set(x, "diskSize", value.asInstanceOf[js.Any])
+      inline def setDiskSize(value: Input[Double]): Self = StObject.set(x, "diskSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskSizeUndefined: Self = StObject.set(x, "diskSize", js.undefined)
+      inline def setDiskSizeUndefined: Self = StObject.set(x, "diskSize", js.undefined)
       
-      @scala.inline
-      def setForceUpdateVersion(value: Input[Boolean]): Self = StObject.set(x, "forceUpdateVersion", value.asInstanceOf[js.Any])
+      inline def setForceUpdateVersion(value: Input[Boolean]): Self = StObject.set(x, "forceUpdateVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUpdateVersionUndefined: Self = StObject.set(x, "forceUpdateVersion", js.undefined)
+      inline def setForceUpdateVersionUndefined: Self = StObject.set(x, "forceUpdateVersion", js.undefined)
       
-      @scala.inline
-      def setInstanceTypes(value: Input[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
+      inline def setInstanceTypes(value: Input[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
+      inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
       
-      @scala.inline
-      def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLaunchTemplate(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
+      inline def setLaunchTemplate(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
+      inline def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
       
-      @scala.inline
-      def setNodeGroupName(value: Input[String]): Self = StObject.set(x, "nodeGroupName", value.asInstanceOf[js.Any])
+      inline def setNodeGroupName(value: Input[String]): Self = StObject.set(x, "nodeGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeGroupNameUndefined: Self = StObject.set(x, "nodeGroupName", js.undefined)
+      inline def setNodeGroupNameUndefined: Self = StObject.set(x, "nodeGroupName", js.undefined)
       
-      @scala.inline
-      def setNodeRoleArn(value: Input[String]): Self = StObject.set(x, "nodeRoleArn", value.asInstanceOf[js.Any])
+      inline def setNodeRoleArn(value: Input[String]): Self = StObject.set(x, "nodeRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseVersion(value: Input[String]): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
+      inline def setReleaseVersion(value: Input[String]): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
+      inline def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
       
-      @scala.inline
-      def setRemoteAccess(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]): Self = StObject.set(x, "remoteAccess", value.asInstanceOf[js.Any])
+      inline def setRemoteAccess(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]): Self = StObject.set(x, "remoteAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteAccessUndefined: Self = StObject.set(x, "remoteAccess", js.undefined)
+      inline def setRemoteAccessUndefined: Self = StObject.set(x, "remoteAccess", js.undefined)
       
-      @scala.inline
-      def setScalingConfig(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig]): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
+      inline def setScalingConfig(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig]): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -413,128 +379,88 @@ object nodeGroupMod {
   }
   object NodeGroupState {
     
-    @scala.inline
-    def apply(): NodeGroupState = {
+    inline def apply(): NodeGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeGroupState]
     }
     
-    @scala.inline
-    implicit class NodeGroupStateMutableBuilder[Self <: NodeGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: NodeGroupState](x: Self) {
       
-      @scala.inline
-      def setAmiType(value: Input[String]): Self = StObject.set(x, "amiType", value.asInstanceOf[js.Any])
+      inline def setAmiType(value: Input[String]): Self = StObject.set(x, "amiType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
+      inline def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+      inline def setClusterName(value: Input[String]): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+      inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
       
-      @scala.inline
-      def setDiskSize(value: Input[Double]): Self = StObject.set(x, "diskSize", value.asInstanceOf[js.Any])
+      inline def setDiskSize(value: Input[Double]): Self = StObject.set(x, "diskSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskSizeUndefined: Self = StObject.set(x, "diskSize", js.undefined)
+      inline def setDiskSizeUndefined: Self = StObject.set(x, "diskSize", js.undefined)
       
-      @scala.inline
-      def setForceUpdateVersion(value: Input[Boolean]): Self = StObject.set(x, "forceUpdateVersion", value.asInstanceOf[js.Any])
+      inline def setForceUpdateVersion(value: Input[Boolean]): Self = StObject.set(x, "forceUpdateVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUpdateVersionUndefined: Self = StObject.set(x, "forceUpdateVersion", js.undefined)
+      inline def setForceUpdateVersionUndefined: Self = StObject.set(x, "forceUpdateVersion", js.undefined)
       
-      @scala.inline
-      def setInstanceTypes(value: Input[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
+      inline def setInstanceTypes(value: Input[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
+      inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
       
-      @scala.inline
-      def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLaunchTemplate(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
+      inline def setLaunchTemplate(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
+      inline def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
       
-      @scala.inline
-      def setNodeGroupName(value: Input[String]): Self = StObject.set(x, "nodeGroupName", value.asInstanceOf[js.Any])
+      inline def setNodeGroupName(value: Input[String]): Self = StObject.set(x, "nodeGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeGroupNameUndefined: Self = StObject.set(x, "nodeGroupName", js.undefined)
+      inline def setNodeGroupNameUndefined: Self = StObject.set(x, "nodeGroupName", js.undefined)
       
-      @scala.inline
-      def setNodeRoleArn(value: Input[String]): Self = StObject.set(x, "nodeRoleArn", value.asInstanceOf[js.Any])
+      inline def setNodeRoleArn(value: Input[String]): Self = StObject.set(x, "nodeRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeRoleArnUndefined: Self = StObject.set(x, "nodeRoleArn", js.undefined)
+      inline def setNodeRoleArnUndefined: Self = StObject.set(x, "nodeRoleArn", js.undefined)
       
-      @scala.inline
-      def setReleaseVersion(value: Input[String]): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
+      inline def setReleaseVersion(value: Input[String]): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
+      inline def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
       
-      @scala.inline
-      def setRemoteAccess(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]): Self = StObject.set(x, "remoteAccess", value.asInstanceOf[js.Any])
+      inline def setRemoteAccess(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]): Self = StObject.set(x, "remoteAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteAccessUndefined: Self = StObject.set(x, "remoteAccess", js.undefined)
+      inline def setRemoteAccessUndefined: Self = StObject.set(x, "remoteAccess", js.undefined)
       
-      @scala.inline
-      def setResources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.eks.NodeGroupResource]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.eks.NodeGroupResource]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setResourcesVarargs(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupResource]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupResource]*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setScalingConfig(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig]): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
+      inline def setScalingConfig(value: Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig]): Self = StObject.set(x, "scalingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingConfigUndefined: Self = StObject.set(x, "scalingConfig", js.undefined)
+      inline def setScalingConfigUndefined: Self = StObject.set(x, "scalingConfig", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

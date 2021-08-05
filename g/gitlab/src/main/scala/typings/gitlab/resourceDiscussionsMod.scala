@@ -198,7 +198,7 @@ object resourceDiscussionsMod {
     def removeNote(resourceId: Double, resource2Id: Double, discussionId: Double, noteId: Double): js.Promise[js.Object] = js.native
     def removeNote(resourceId: Double, resource2Id: Double, discussionId: Double, noteId: Double, options: Sudo): js.Promise[js.Object] = js.native
     
-    var resource2Type: String = js.native
+    /* protected */ var resource2Type: String = js.native
     
     def show(resourceId: String, resource2Id: String, discussionId: String): js.Promise[GetResponse] = js.native
     def show(resourceId: String, resource2Id: String, discussionId: String, options: Sudo): js.Promise[GetResponse] = js.native

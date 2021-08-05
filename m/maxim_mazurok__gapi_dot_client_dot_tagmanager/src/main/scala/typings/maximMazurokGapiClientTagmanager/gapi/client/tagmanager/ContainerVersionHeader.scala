@@ -50,97 +50,67 @@ trait ContainerVersionHeader extends StObject {
 }
 object ContainerVersionHeader {
   
-  @scala.inline
-  def apply(): ContainerVersionHeader = {
+  inline def apply(): ContainerVersionHeader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerVersionHeader]
   }
   
-  @scala.inline
-  implicit class ContainerVersionHeaderMutableBuilder[Self <: ContainerVersionHeader] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerVersionHeader](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
+    inline def setContainerVersionId(value: String): Self = StObject.set(x, "containerVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
+    inline def setContainerVersionIdUndefined: Self = StObject.set(x, "containerVersionId", js.undefined)
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumClients(value: String): Self = StObject.set(x, "numClients", value.asInstanceOf[js.Any])
+    inline def setNumClients(value: String): Self = StObject.set(x, "numClients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumClientsUndefined: Self = StObject.set(x, "numClients", js.undefined)
+    inline def setNumClientsUndefined: Self = StObject.set(x, "numClients", js.undefined)
     
-    @scala.inline
-    def setNumCustomTemplates(value: String): Self = StObject.set(x, "numCustomTemplates", value.asInstanceOf[js.Any])
+    inline def setNumCustomTemplates(value: String): Self = StObject.set(x, "numCustomTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumCustomTemplatesUndefined: Self = StObject.set(x, "numCustomTemplates", js.undefined)
+    inline def setNumCustomTemplatesUndefined: Self = StObject.set(x, "numCustomTemplates", js.undefined)
     
-    @scala.inline
-    def setNumMacros(value: String): Self = StObject.set(x, "numMacros", value.asInstanceOf[js.Any])
+    inline def setNumMacros(value: String): Self = StObject.set(x, "numMacros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumMacrosUndefined: Self = StObject.set(x, "numMacros", js.undefined)
+    inline def setNumMacrosUndefined: Self = StObject.set(x, "numMacros", js.undefined)
     
-    @scala.inline
-    def setNumRules(value: String): Self = StObject.set(x, "numRules", value.asInstanceOf[js.Any])
+    inline def setNumRules(value: String): Self = StObject.set(x, "numRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRulesUndefined: Self = StObject.set(x, "numRules", js.undefined)
+    inline def setNumRulesUndefined: Self = StObject.set(x, "numRules", js.undefined)
     
-    @scala.inline
-    def setNumTags(value: String): Self = StObject.set(x, "numTags", value.asInstanceOf[js.Any])
+    inline def setNumTags(value: String): Self = StObject.set(x, "numTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumTagsUndefined: Self = StObject.set(x, "numTags", js.undefined)
+    inline def setNumTagsUndefined: Self = StObject.set(x, "numTags", js.undefined)
     
-    @scala.inline
-    def setNumTriggers(value: String): Self = StObject.set(x, "numTriggers", value.asInstanceOf[js.Any])
+    inline def setNumTriggers(value: String): Self = StObject.set(x, "numTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumTriggersUndefined: Self = StObject.set(x, "numTriggers", js.undefined)
+    inline def setNumTriggersUndefined: Self = StObject.set(x, "numTriggers", js.undefined)
     
-    @scala.inline
-    def setNumVariables(value: String): Self = StObject.set(x, "numVariables", value.asInstanceOf[js.Any])
+    inline def setNumVariables(value: String): Self = StObject.set(x, "numVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumVariablesUndefined: Self = StObject.set(x, "numVariables", js.undefined)
+    inline def setNumVariablesUndefined: Self = StObject.set(x, "numVariables", js.undefined)
     
-    @scala.inline
-    def setNumZones(value: String): Self = StObject.set(x, "numZones", value.asInstanceOf[js.Any])
+    inline def setNumZones(value: String): Self = StObject.set(x, "numZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumZonesUndefined: Self = StObject.set(x, "numZones", js.undefined)
+    inline def setNumZonesUndefined: Self = StObject.set(x, "numZones", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

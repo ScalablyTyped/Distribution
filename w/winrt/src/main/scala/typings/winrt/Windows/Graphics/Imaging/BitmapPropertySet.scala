@@ -13,8 +13,7 @@ trait BitmapPropertySet
      with IMap[String, BitmapTypedValue]
 object BitmapPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     first: () => IIterator[IKeyValuePair[String, BitmapTypedValue]],
     getView: () => IMapView[String, BitmapTypedValue],

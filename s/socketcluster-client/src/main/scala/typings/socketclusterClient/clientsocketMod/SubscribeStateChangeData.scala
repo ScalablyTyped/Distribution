@@ -15,8 +15,7 @@ trait SubscribeStateChangeData
 }
 object SubscribeStateChangeData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: String,
     newChannelState: ChannelState,
     oldChannelState: ChannelState,
@@ -26,13 +25,10 @@ object SubscribeStateChangeData {
     __obj.asInstanceOf[SubscribeStateChangeData]
   }
   
-  @scala.inline
-  implicit class SubscribeStateChangeDataMutableBuilder[Self <: SubscribeStateChangeData] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeStateChangeData](x: Self) {
     
-    @scala.inline
-    def setNewChannelState(value: ChannelState): Self = StObject.set(x, "newChannelState", value.asInstanceOf[js.Any])
+    inline def setNewChannelState(value: ChannelState): Self = StObject.set(x, "newChannelState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldChannelState(value: ChannelState): Self = StObject.set(x, "oldChannelState", value.asInstanceOf[js.Any])
+    inline def setOldChannelState(value: ChannelState): Self = StObject.set(x, "oldChannelState", value.asInstanceOf[js.Any])
   }
 }

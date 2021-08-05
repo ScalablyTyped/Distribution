@@ -18,8 +18,7 @@ trait BatchGetAggregateResourceConfigRequest extends StObject {
 }
 object BatchGetAggregateResourceConfigRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigurationAggregatorName: ConfigurationAggregatorName,
     ResourceIdentifiers: ResourceIdentifiersList
   ): BatchGetAggregateResourceConfigRequest = {
@@ -27,16 +26,12 @@ object BatchGetAggregateResourceConfigRequest {
     __obj.asInstanceOf[BatchGetAggregateResourceConfigRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetAggregateResourceConfigRequestMutableBuilder[Self <: BatchGetAggregateResourceConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetAggregateResourceConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifiers(value: ResourceIdentifiersList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifiers(value: ResourceIdentifiersList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
+    inline def setResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
   }
 }

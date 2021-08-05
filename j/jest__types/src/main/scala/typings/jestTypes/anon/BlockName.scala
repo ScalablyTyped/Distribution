@@ -19,22 +19,17 @@ trait BlockName
 }
 object BlockName {
   
-  @scala.inline
-  def apply(blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): BlockName = {
+  inline def apply(blockName: typings.jestTypes.circusMod.BlockName, mode: BlockMode): BlockName = {
     val __obj = js.Dynamic.literal(blockName = blockName.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], name = "finish_describe_definition")
     __obj.asInstanceOf[BlockName]
   }
   
-  @scala.inline
-  implicit class BlockNameMutableBuilder[Self <: BlockName] (val x: Self) extends AnyVal {
+  extension [Self <: BlockName](x: Self) {
     
-    @scala.inline
-    def setBlockName(value: typings.jestTypes.circusMod.BlockName): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
+    inline def setBlockName(value: typings.jestTypes.circusMod.BlockName): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: BlockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: BlockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: finish_describe_definition): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: finish_describe_definition): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

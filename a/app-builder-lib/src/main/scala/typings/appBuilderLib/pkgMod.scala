@@ -19,22 +19,18 @@ object pkgMod {
   class PkgTarget protected () extends Target {
     def this(packager: default, outDir: String) = this()
     
-    var buildComponentPackage: js.Any = js.native
+    /* private */ var buildComponentPackage: js.Any = js.native
     
-    var customizeDistributionConfiguration: js.Any = js.native
+    /* private */ var customizeDistributionConfiguration: js.Any = js.native
     
     @JSName("options")
     val options_PkgTarget: PkgOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
   }
   
-  @scala.inline
-  def prepareProductBuildArgs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")().asInstanceOf[js.Array[String]]
-  @scala.inline
-  def prepareProductBuildArgs(identity: Null, keychain: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")(identity.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def prepareProductBuildArgs(identity: Identity): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def prepareProductBuildArgs(identity: Identity, keychain: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")(identity.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def prepareProductBuildArgs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")().asInstanceOf[js.Array[String]]
+  inline def prepareProductBuildArgs(identity: Null, keychain: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")(identity.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def prepareProductBuildArgs(identity: Identity): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def prepareProductBuildArgs(identity: Identity, keychain: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")(identity.asInstanceOf[js.Any], keychain.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

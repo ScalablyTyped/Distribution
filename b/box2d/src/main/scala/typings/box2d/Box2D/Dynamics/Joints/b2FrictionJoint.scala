@@ -47,8 +47,7 @@ trait b2FrictionJoint
 }
 object b2FrictionJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAnchorA: () => b2Vec2,
     GetAnchorB: () => b2Vec2,
     GetBodyA: () => b2Body,
@@ -71,25 +70,18 @@ object b2FrictionJoint {
     __obj.asInstanceOf[b2FrictionJoint]
   }
   
-  @scala.inline
-  implicit class b2FrictionJointMutableBuilder[Self <: b2FrictionJoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2FrictionJoint](x: Self) {
     
-    @scala.inline
-    def setGetMaxForce(value: () => Double): Self = StObject.set(x, "GetMaxForce", js.Any.fromFunction0(value))
+    inline def setGetMaxForce(value: () => Double): Self = StObject.set(x, "GetMaxForce", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxTorque(value: () => Double): Self = StObject.set(x, "GetMaxTorque", js.Any.fromFunction0(value))
+    inline def setGetMaxTorque(value: () => Double): Self = StObject.set(x, "GetMaxTorque", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setM_angularMass(value: Double): Self = StObject.set(x, "m_angularMass", value.asInstanceOf[js.Any])
+    inline def setM_angularMass(value: Double): Self = StObject.set(x, "m_angularMass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM_linearMass(value: b2Mat22): Self = StObject.set(x, "m_linearMass", value.asInstanceOf[js.Any])
+    inline def setM_linearMass(value: b2Mat22): Self = StObject.set(x, "m_linearMass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMaxForce(value: Double => Unit): Self = StObject.set(x, "SetMaxForce", js.Any.fromFunction1(value))
+    inline def setSetMaxForce(value: Double => Unit): Self = StObject.set(x, "SetMaxForce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaxTorque(value: Double => Unit): Self = StObject.set(x, "SetMaxTorque", js.Any.fromFunction1(value))
+    inline def setSetMaxTorque(value: Double => Unit): Self = StObject.set(x, "SetMaxTorque", js.Any.fromFunction1(value))
   }
 }

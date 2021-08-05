@@ -59,40 +59,29 @@ trait ExecuteManyOptions extends StObject {
 }
 object ExecuteManyOptions {
   
-  @scala.inline
-  def apply(): ExecuteManyOptions = {
+  inline def apply(): ExecuteManyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteManyOptions]
   }
   
-  @scala.inline
-  implicit class ExecuteManyOptionsMutableBuilder[Self <: ExecuteManyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteManyOptions](x: Self) {
     
-    @scala.inline
-    def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+    inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
     
-    @scala.inline
-    def setBatchErrors(value: Boolean): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
+    inline def setBatchErrors(value: Boolean): Self = StObject.set(x, "batchErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
+    inline def setBatchErrorsUndefined: Self = StObject.set(x, "batchErrors", js.undefined)
     
-    @scala.inline
-    def setBindDefs(value: (Record[String, BindDefinition]) | js.Array[BindDefinition]): Self = StObject.set(x, "bindDefs", value.asInstanceOf[js.Any])
+    inline def setBindDefs(value: (Record[String, BindDefinition]) | js.Array[BindDefinition]): Self = StObject.set(x, "bindDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindDefsUndefined: Self = StObject.set(x, "bindDefs", js.undefined)
+    inline def setBindDefsUndefined: Self = StObject.set(x, "bindDefs", js.undefined)
     
-    @scala.inline
-    def setBindDefsVarargs(value: BindDefinition*): Self = StObject.set(x, "bindDefs", js.Array(value :_*))
+    inline def setBindDefsVarargs(value: BindDefinition*): Self = StObject.set(x, "bindDefs", js.Array(value :_*))
     
-    @scala.inline
-    def setDmlRowCounts(value: Boolean): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
+    inline def setDmlRowCounts(value: Boolean): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
+    inline def setDmlRowCountsUndefined: Self = StObject.set(x, "dmlRowCounts", js.undefined)
   }
 }

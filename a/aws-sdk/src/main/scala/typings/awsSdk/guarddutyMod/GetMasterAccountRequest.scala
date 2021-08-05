@@ -13,16 +13,13 @@ trait GetMasterAccountRequest extends StObject {
 }
 object GetMasterAccountRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId): GetMasterAccountRequest = {
+  inline def apply(DetectorId: DetectorId): GetMasterAccountRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMasterAccountRequest]
   }
   
-  @scala.inline
-  implicit class GetMasterAccountRequestMutableBuilder[Self <: GetMasterAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMasterAccountRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

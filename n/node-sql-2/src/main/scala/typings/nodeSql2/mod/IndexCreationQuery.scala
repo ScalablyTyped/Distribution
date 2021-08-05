@@ -22,8 +22,7 @@ trait IndexCreationQuery
 }
 object IndexCreationQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fulltext: () => IndexCreationQuery,
     on: /* repeated */ (Column[js.Any, js.Any]) | OrderByValueNode => IndexCreationQuery,
     spatial: () => IndexCreationQuery,
@@ -37,25 +36,18 @@ object IndexCreationQuery {
     __obj.asInstanceOf[IndexCreationQuery]
   }
   
-  @scala.inline
-  implicit class IndexCreationQueryMutableBuilder[Self <: IndexCreationQuery] (val x: Self) extends AnyVal {
+  extension [Self <: IndexCreationQuery](x: Self) {
     
-    @scala.inline
-    def setFulltext(value: () => IndexCreationQuery): Self = StObject.set(x, "fulltext", js.Any.fromFunction0(value))
+    inline def setFulltext(value: () => IndexCreationQuery): Self = StObject.set(x, "fulltext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: /* repeated */ (Column[js.Any, js.Any]) | OrderByValueNode => IndexCreationQuery): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+    inline def setOn(value: /* repeated */ (Column[js.Any, js.Any]) | OrderByValueNode => IndexCreationQuery): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpatial(value: () => IndexCreationQuery): Self = StObject.set(x, "spatial", js.Any.fromFunction0(value))
+    inline def setSpatial(value: () => IndexCreationQuery): Self = StObject.set(x, "spatial", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnique(value: () => IndexCreationQuery): Self = StObject.set(x, "unique", js.Any.fromFunction0(value))
+    inline def setUnique(value: () => IndexCreationQuery): Self = StObject.set(x, "unique", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUsing(value: String => IndexCreationQuery): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
+    inline def setUsing(value: String => IndexCreationQuery): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithParser(value: String => IndexCreationQuery): Self = StObject.set(x, "withParser", js.Any.fromFunction1(value))
+    inline def setWithParser(value: String => IndexCreationQuery): Self = StObject.set(x, "withParser", js.Any.fromFunction1(value))
   }
 }

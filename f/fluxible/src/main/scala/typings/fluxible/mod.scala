@@ -259,23 +259,18 @@ object mod {
   }
   object FluxibleConfiguration {
     
-    @scala.inline
-    def apply(component: js.Any): FluxibleConfiguration = {
+    inline def apply(component: js.Any): FluxibleConfiguration = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxibleConfiguration]
     }
     
-    @scala.inline
-    implicit class FluxibleConfigurationMutableBuilder[Self <: FluxibleConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: FluxibleConfiguration](x: Self) {
       
-      @scala.inline
-      def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentActionHandler(value: () => Unit): Self = StObject.set(x, "componentActionHandler", js.Any.fromFunction0(value))
+      inline def setComponentActionHandler(value: () => Unit): Self = StObject.set(x, "componentActionHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComponentActionHandlerUndefined: Self = StObject.set(x, "componentActionHandler", js.undefined)
+      inline def setComponentActionHandlerUndefined: Self = StObject.set(x, "componentActionHandler", js.undefined)
     }
   }
 }

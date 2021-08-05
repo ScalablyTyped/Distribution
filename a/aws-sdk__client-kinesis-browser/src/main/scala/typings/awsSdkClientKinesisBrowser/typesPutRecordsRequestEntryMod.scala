@@ -28,26 +28,20 @@ object typesPutRecordsRequestEntryMod {
   }
   object PutRecordsRequestEntry {
     
-    @scala.inline
-    def apply(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String): PutRecordsRequestEntry = {
+    inline def apply(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String): PutRecordsRequestEntry = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRecordsRequestEntry]
     }
     
-    @scala.inline
-    implicit class PutRecordsRequestEntryMutableBuilder[Self <: PutRecordsRequestEntry] (val x: Self) extends AnyVal {
+    extension [Self <: PutRecordsRequestEntry](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitHashKey(value: String): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
+      inline def setExplicitHashKey(value: String): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitHashKeyUndefined: Self = StObject.set(x, "ExplicitHashKey", js.undefined)
+      inline def setExplicitHashKeyUndefined: Self = StObject.set(x, "ExplicitHashKey", js.undefined)
       
-      @scala.inline
-      def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
+      inline def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,17 +57,14 @@ object typesPutRecordsRequestEntryMod {
   }
   object UnmarshalledPutRecordsRequestEntry {
     
-    @scala.inline
-    def apply(Data: Uint8Array, PartitionKey: String): UnmarshalledPutRecordsRequestEntry = {
+    inline def apply(Data: Uint8Array, PartitionKey: String): UnmarshalledPutRecordsRequestEntry = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledPutRecordsRequestEntry]
     }
     
-    @scala.inline
-    implicit class UnmarshalledPutRecordsRequestEntryMutableBuilder[Self <: UnmarshalledPutRecordsRequestEntry] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledPutRecordsRequestEntry](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }
   }
 }

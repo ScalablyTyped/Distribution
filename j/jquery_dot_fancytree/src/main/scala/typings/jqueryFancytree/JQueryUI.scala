@@ -13,17 +13,14 @@ object JQueryUI {
   }
   object UI {
     
-    @scala.inline
-    def apply(fancytree: FancytreeStatic): UI = {
+    inline def apply(fancytree: FancytreeStatic): UI = {
       val __obj = js.Dynamic.literal(fancytree = fancytree.asInstanceOf[js.Any])
       __obj.asInstanceOf[UI]
     }
     
-    @scala.inline
-    implicit class UIMutableBuilder[Self <: UI] (val x: Self) extends AnyVal {
+    extension [Self <: UI](x: Self) {
       
-      @scala.inline
-      def setFancytree(value: FancytreeStatic): Self = StObject.set(x, "fancytree", value.asInstanceOf[js.Any])
+      inline def setFancytree(value: FancytreeStatic): Self = StObject.set(x, "fancytree", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -94,7 +94,7 @@ trait Application extends StObject {
   
   val Name: String = js.native
   
-  @JSName("Outlook.Application_typekey")
+  /* private */ @JSName("Outlook.Application_typekey")
   var OutlookDotApplication_typekey: typings.activexOutlook.Outlook.Application = js.native
   
   val Parent: js.Any = js.native

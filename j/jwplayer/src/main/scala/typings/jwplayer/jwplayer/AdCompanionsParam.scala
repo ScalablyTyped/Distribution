@@ -12,22 +12,17 @@ trait AdCompanionsParam extends StObject {
 }
 object AdCompanionsParam {
   
-  @scala.inline
-  def apply(companions: js.Array[js.Any], tag: String): AdCompanionsParam = {
+  inline def apply(companions: js.Array[js.Any], tag: String): AdCompanionsParam = {
     val __obj = js.Dynamic.literal(companions = companions.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdCompanionsParam]
   }
   
-  @scala.inline
-  implicit class AdCompanionsParamMutableBuilder[Self <: AdCompanionsParam] (val x: Self) extends AnyVal {
+  extension [Self <: AdCompanionsParam](x: Self) {
     
-    @scala.inline
-    def setCompanions(value: js.Array[js.Any]): Self = StObject.set(x, "companions", value.asInstanceOf[js.Any])
+    inline def setCompanions(value: js.Array[js.Any]): Self = StObject.set(x, "companions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionsVarargs(value: js.Any*): Self = StObject.set(x, "companions", js.Array(value :_*))
+    inline def setCompanionsVarargs(value: js.Any*): Self = StObject.set(x, "companions", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

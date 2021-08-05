@@ -151,10 +151,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#all
     */
   /* static member */
-  @scala.inline
-  def all(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def all(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def all(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def all(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all completed reminders._
@@ -164,10 +162,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allcompleted
     */
   /* static member */
-  @scala.inline
-  def allCompleted(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allCompleted")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allCompleted(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allCompleted")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allCompleted(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allCompleted")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allCompleted(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allCompleted")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches due reminders._
@@ -177,10 +173,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allduebetween
     */
   /* static member */
-  @scala.inline
-  def allDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("allDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all reminders due last week._
@@ -188,10 +182,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allduelastweek
     */
   /* static member */
-  @scala.inline
-  def allDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all reminders due next week._
@@ -199,10 +191,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allduenextweek
     */
   /* static member */
-  @scala.inline
-  def allDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueNextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueNextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueNextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueNextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all reminders due this week._
@@ -210,10 +200,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allduethisweek
     */
   /* static member */
-  @scala.inline
-  def allDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all reminders due today._
@@ -221,10 +209,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allduetoday
     */
   /* static member */
-  @scala.inline
-  def allDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all reminders due tomorrow._
@@ -232,10 +218,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allduetomorrow
     */
   /* static member */
-  @scala.inline
-  def allDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueTomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueTomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueTomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueTomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all reminders due yesterday._
@@ -243,10 +227,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#alldueyesterday
     */
   /* static member */
-  @scala.inline
-  def allDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueYesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueYesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueYesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allDueYesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches all incomplete reminders._
@@ -256,10 +238,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#allincomplete
     */
   /* static member */
-  @scala.inline
-  def allIncomplete(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allIncomplete")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def allIncomplete(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allIncomplete")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allIncomplete(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allIncomplete")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def allIncomplete(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allIncomplete")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders._
@@ -269,10 +249,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedbetween
     */
   /* static member */
-  @scala.inline
-  def completedBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders._
@@ -282,10 +260,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedduebetween
     */
   /* static member */
-  @scala.inline
-  def completedDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("completedDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders due last week._
@@ -293,10 +269,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedduelastweek
     */
   /* static member */
-  @scala.inline
-  def completedDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders due next week._
@@ -304,10 +278,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedduenextweek
     */
   /* static member */
-  @scala.inline
-  def completedDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueNextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueNextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueNextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueNextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders due this week._
@@ -315,10 +287,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedduethisweek
     */
   /* static member */
-  @scala.inline
-  def completedDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders due today._
@@ -326,10 +296,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedduetoday
     */
   /* static member */
-  @scala.inline
-  def completedDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders due tomorrow._
@@ -337,10 +305,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedduetomorrow
     */
   /* static member */
-  @scala.inline
-  def completedDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueTomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueTomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueTomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueTomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches completed reminders due yesterday._
@@ -348,10 +314,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completeddueyesterday
     */
   /* static member */
-  @scala.inline
-  def completedDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueYesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueYesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueYesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedDueYesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches reminders completed last week._
@@ -361,10 +325,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedlastweek
     */
   /* static member */
-  @scala.inline
-  def completedLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches reminders completed this week._
@@ -374,10 +336,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedthisweek
     */
   /* static member */
-  @scala.inline
-  def completedThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches reminders completed today._
@@ -387,10 +347,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#completedtoday
     */
   /* static member */
-  @scala.inline
-  def completedToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def completedToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def completedToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("completedToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders._
@@ -400,10 +358,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompleteduebetween
     */
   /* static member */
-  @scala.inline
-  def incompleteDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def incompleteDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueBetween(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueBetween(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = (^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueBetween")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders due last week._
@@ -411,10 +367,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompleteduelastweek
     */
   /* static member */
-  @scala.inline
-  def incompleteDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def incompleteDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueLastWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueLastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueLastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueLastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders due next week._
@@ -422,10 +376,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompleteduenextweek
     */
   /* static member */
-  @scala.inline
-  def incompleteDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueNextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def incompleteDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueNextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueNextWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueNextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueNextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueNextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders due this week._
@@ -433,10 +385,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompleteduethisweek
     */
   /* static member */
-  @scala.inline
-  def incompleteDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def incompleteDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueThisWeek(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueThisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueThisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueThisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders due today._
@@ -444,10 +394,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompleteduetoday
     */
   /* static member */
-  @scala.inline
-  def incompleteDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def incompleteDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueToday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueToday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueToday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueToday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders due tomorrow._
@@ -455,10 +403,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompleteduetomorrow
     */
   /* static member */
-  @scala.inline
-  def incompleteDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueTomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def incompleteDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueTomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueTomorrow(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueTomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueTomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueTomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches incomplete reminders due yesterday._
@@ -466,10 +412,8 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#incompletedueyesterday
     */
   /* static member */
-  @scala.inline
-  def incompleteDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueYesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def incompleteDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueYesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueYesterday(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueYesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def incompleteDueYesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("incompleteDueYesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
   
   /**
     * _Fetches the schedule of reminders._
@@ -480,8 +424,6 @@ object Reminder {
     * @see https://docs.scriptable.app/reminder/#scheduled
     */
   /* static member */
-  @scala.inline
-  def scheduled(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduled")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
-  @scala.inline
-  def scheduled(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduled")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def scheduled(): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduled")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
+  inline def scheduled(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.Reminder]] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduled")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.Reminder]]]
 }

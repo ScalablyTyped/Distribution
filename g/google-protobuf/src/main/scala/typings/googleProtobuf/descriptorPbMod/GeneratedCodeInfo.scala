@@ -78,11 +78,9 @@ object GeneratedCodeInfo {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Annotation]
+    inline def deserializeBinary(bytes: Uint8Array): Annotation = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Annotation]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Annotation, reader: BinaryReader): Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Annotation]
+    inline def deserializeBinaryFromReader(message: Annotation, reader: BinaryReader): Annotation = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Annotation]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.Annotation.extensions")
     @js.native
@@ -91,17 +89,13 @@ object GeneratedCodeInfo {
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.Annotation.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Annotation, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Annotation, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Annotation): typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Annotation): typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
     
     trait AsObject extends StObject {
       
@@ -115,47 +109,35 @@ object GeneratedCodeInfo {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(pathList: js.Array[Double]): typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject = {
+      inline def apply(pathList: js.Array[Double]): typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject = {
         val __obj = js.Dynamic.literal(pathList = pathList.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject](x: Self) {
         
-        @scala.inline
-        def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+        inline def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+        inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
         
-        @scala.inline
-        def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+        inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
         
-        @scala.inline
-        def setPathList(value: js.Array[Double]): Self = StObject.set(x, "pathList", value.asInstanceOf[js.Any])
+        inline def setPathList(value: js.Array[Double]): Self = StObject.set(x, "pathList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathListVarargs(value: Double*): Self = StObject.set(x, "pathList", js.Array(value :_*))
+        inline def setPathListVarargs(value: Double*): Self = StObject.set(x, "pathList", js.Array(value :_*))
         
-        @scala.inline
-        def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+        inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
+        inline def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
+  inline def deserializeBinary(bytes: Uint8Array): GeneratedCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GeneratedCodeInfo]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: GeneratedCodeInfo, reader: BinaryReader): GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GeneratedCodeInfo]
+  inline def deserializeBinaryFromReader(message: GeneratedCodeInfo, reader: BinaryReader): GeneratedCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GeneratedCodeInfo]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.extensions")
   @js.native
@@ -164,17 +146,13 @@ object GeneratedCodeInfo {
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: GeneratedCodeInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: GeneratedCodeInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: GeneratedCodeInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: GeneratedCodeInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -182,22 +160,18 @@ object GeneratedCodeInfo {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       annotationList: js.Array[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
     ): AsObject = {
       val __obj = js.Dynamic.literal(annotationList = annotationList.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setAnnotationList(value: js.Array[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]): Self = StObject.set(x, "annotationList", value.asInstanceOf[js.Any])
+      inline def setAnnotationList(value: js.Array[typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]): Self = StObject.set(x, "annotationList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationListVarargs(value: typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject*): Self = StObject.set(x, "annotationList", js.Array(value :_*))
+      inline def setAnnotationListVarargs(value: typings.googleProtobuf.descriptorPbMod.GeneratedCodeInfo.Annotation.AsObject*): Self = StObject.set(x, "annotationList", js.Array(value :_*))
     }
   }
 }

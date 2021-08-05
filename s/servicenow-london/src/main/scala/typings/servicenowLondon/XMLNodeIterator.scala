@@ -12,19 +12,15 @@ trait XMLNodeIterator extends StObject {
 }
 object XMLNodeIterator {
   
-  @scala.inline
-  def apply(hasNext: () => Boolean, next: () => XMLNode): XMLNodeIterator = {
+  inline def apply(hasNext: () => Boolean, next: () => XMLNode): XMLNodeIterator = {
     val __obj = js.Dynamic.literal(hasNext = js.Any.fromFunction0(hasNext), next = js.Any.fromFunction0(next))
     __obj.asInstanceOf[XMLNodeIterator]
   }
   
-  @scala.inline
-  implicit class XMLNodeIteratorMutableBuilder[Self <: XMLNodeIterator] (val x: Self) extends AnyVal {
+  extension [Self <: XMLNodeIterator](x: Self) {
     
-    @scala.inline
-    def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
+    inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNext(value: () => XMLNode): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => XMLNode): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }
 }

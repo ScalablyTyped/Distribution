@@ -10,16 +10,13 @@ trait IQVersion extends StObject {
 }
 object IQVersion {
   
-  @scala.inline
-  def apply(qComponentVersion: String): IQVersion = {
+  inline def apply(qComponentVersion: String): IQVersion = {
     val __obj = js.Dynamic.literal(qComponentVersion = qComponentVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQVersion]
   }
   
-  @scala.inline
-  implicit class IQVersionMutableBuilder[Self <: IQVersion] (val x: Self) extends AnyVal {
+  extension [Self <: IQVersion](x: Self) {
     
-    @scala.inline
-    def setQComponentVersion(value: String): Self = StObject.set(x, "qComponentVersion", value.asInstanceOf[js.Any])
+    inline def setQComponentVersion(value: String): Self = StObject.set(x, "qComponentVersion", value.asInstanceOf[js.Any])
   }
 }

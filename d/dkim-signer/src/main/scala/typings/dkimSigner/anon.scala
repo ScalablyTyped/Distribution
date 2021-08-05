@@ -14,20 +14,16 @@ object anon {
   }
   object FieldNames {
     
-    @scala.inline
-    def apply(fieldNames: String, headers: String): FieldNames = {
+    inline def apply(fieldNames: String, headers: String): FieldNames = {
       val __obj = js.Dynamic.literal(fieldNames = fieldNames.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldNames]
     }
     
-    @scala.inline
-    implicit class FieldNamesMutableBuilder[Self <: FieldNames] (val x: Self) extends AnyVal {
+    extension [Self <: FieldNames](x: Self) {
       
-      @scala.inline
-      def setFieldNames(value: String): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+      inline def setFieldNames(value: String): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String, value: String): Key = {
+    inline def apply(key: String, value: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

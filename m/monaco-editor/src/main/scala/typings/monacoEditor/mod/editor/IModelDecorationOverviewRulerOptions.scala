@@ -15,16 +15,13 @@ trait IModelDecorationOverviewRulerOptions
 }
 object IModelDecorationOverviewRulerOptions {
   
-  @scala.inline
-  def apply(position: OverviewRulerLane): IModelDecorationOverviewRulerOptions = {
+  inline def apply(position: OverviewRulerLane): IModelDecorationOverviewRulerOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelDecorationOverviewRulerOptions]
   }
   
-  @scala.inline
-  implicit class IModelDecorationOverviewRulerOptionsMutableBuilder[Self <: IModelDecorationOverviewRulerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IModelDecorationOverviewRulerOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: OverviewRulerLane): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: OverviewRulerLane): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

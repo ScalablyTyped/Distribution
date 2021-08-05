@@ -10,10 +10,8 @@ object mod {
   /**
     * Decode special characters in `value`.
     */
-  @scala.inline
-  def apply[WC, TC, RC](value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply[WC, TC, RC](value: String, options: Partial[ParseEntitiesOptions[WC, TC, RC]]): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply[WC, TC, RC](value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply[WC, TC, RC](value: String, options: Partial[ParseEntitiesOptions[WC, TC, RC]]): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("parse-entities", JSImport.Namespace)
   @js.native
@@ -32,20 +30,16 @@ object mod {
   }
   object Location {
     
-    @scala.inline
-    def apply(end: Position, start: Position): Location = {
+    inline def apply(end: Position, start: Position): Location = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,8 +152,7 @@ object mod {
   }
   object ParseEntitiesOptions {
     
-    @scala.inline
-    def apply[WC, TC, RC](
+    inline def apply[WC, TC, RC](
       additional: String,
       attribute: Boolean,
       nonTerminated: Boolean,
@@ -175,38 +168,27 @@ object mod {
       __obj.asInstanceOf[ParseEntitiesOptions[WC, TC, RC]]
     }
     
-    @scala.inline
-    implicit class ParseEntitiesOptionsMutableBuilder[Self <: ParseEntitiesOptions[?, ?, ?], WC, TC, RC] (val x: Self & (ParseEntitiesOptions[WC, TC, RC])) extends AnyVal {
+    extension [Self <: ParseEntitiesOptions[?, ?, ?], WC, TC, RC](x: Self & (ParseEntitiesOptions[WC, TC, RC])) {
       
-      @scala.inline
-      def setAdditional(value: String): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
+      inline def setAdditional(value: String): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonTerminated(value: Boolean): Self = StObject.set(x, "nonTerminated", value.asInstanceOf[js.Any])
+      inline def setNonTerminated(value: Boolean): Self = StObject.set(x, "nonTerminated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference(value: ReferenceHandler[RC]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: ReferenceHandler[RC]): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceContext(value: RC): Self = StObject.set(x, "referenceContext", value.asInstanceOf[js.Any])
+      inline def setReferenceContext(value: RC): Self = StObject.set(x, "referenceContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TextHandler[TC]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextHandler[TC]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextContext(value: TC): Self = StObject.set(x, "textContext", value.asInstanceOf[js.Any])
+      inline def setTextContext(value: TC): Self = StObject.set(x, "textContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: ErrorHandler[WC]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: ErrorHandler[WC]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningContext(value: WC): Self = StObject.set(x, "warningContext", value.asInstanceOf[js.Any])
+      inline def setWarningContext(value: WC): Self = StObject.set(x, "warningContext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,32 +204,24 @@ object mod {
   }
   object Position {
     
-    @scala.inline
-    def apply(column: Double, line: Double, offset: Double): Position = {
+    inline def apply(column: Double, line: Double, offset: Double): Position = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent(value: js.Array[Double]): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: js.Array[Double]): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value :_*))
+      inline def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value :_*))
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   

@@ -21,22 +21,17 @@ trait XLSXConsts extends StObject {
 }
 object XLSXConsts {
   
-  @scala.inline
-  def apply(): XLSXConsts = {
+  inline def apply(): XLSXConsts = {
     val __obj = js.Dynamic.literal(SHEET_HIDDEN = 1, SHEET_VERYHIDDEN = 2, SHEET_VISIBLE = 0)
     __obj.asInstanceOf[XLSXConsts]
   }
   
-  @scala.inline
-  implicit class XLSXConstsMutableBuilder[Self <: XLSXConsts] (val x: Self) extends AnyVal {
+  extension [Self <: XLSXConsts](x: Self) {
     
-    @scala.inline
-    def setSHEET_HIDDEN(value: `1`): Self = StObject.set(x, "SHEET_HIDDEN", value.asInstanceOf[js.Any])
+    inline def setSHEET_HIDDEN(value: `1`): Self = StObject.set(x, "SHEET_HIDDEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHEET_VERYHIDDEN(value: `2`): Self = StObject.set(x, "SHEET_VERYHIDDEN", value.asInstanceOf[js.Any])
+    inline def setSHEET_VERYHIDDEN(value: `2`): Self = StObject.set(x, "SHEET_VERYHIDDEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHEET_VISIBLE(value: `0`): Self = StObject.set(x, "SHEET_VISIBLE", value.asInstanceOf[js.Any])
+    inline def setSHEET_VISIBLE(value: `0`): Self = StObject.set(x, "SHEET_VISIBLE", value.asInstanceOf[js.Any])
   }
 }

@@ -46,8 +46,7 @@ trait SelectChangeEventDataeven extends StObject {
 }
 object SelectChangeEventDataeven {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Array[Poi],
     event: MouseEvent,
     id: String,
@@ -61,34 +60,24 @@ object SelectChangeEventDataeven {
     __obj.asInstanceOf[SelectChangeEventDataeven]
   }
   
-  @scala.inline
-  implicit class SelectChangeEventDataevenMutableBuilder[Self <: SelectChangeEventDataeven] (val x: Self) extends AnyVal {
+  extension [Self <: SelectChangeEventDataeven](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Poi*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoWindow(value: InfoWindow[js.Any]): Self = StObject.set(x, "infoWindow", value.asInstanceOf[js.Any])
+    inline def setInfoWindow(value: InfoWindow[js.Any]): Self = StObject.set(x, "infoWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoWindowContentDom(value: HTMLDivElement): Self = StObject.set(x, "infoWindowContentDom", value.asInstanceOf[js.Any])
+    inline def setInfoWindowContentDom(value: HTMLDivElement): Self = StObject.set(x, "infoWindowContentDom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
+    inline def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: Marker[js.Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker[js.Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
   }
 }

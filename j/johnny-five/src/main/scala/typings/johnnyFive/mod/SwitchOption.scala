@@ -14,22 +14,17 @@ trait SwitchOption extends StObject {
 }
 object SwitchOption {
   
-  @scala.inline
-  def apply(pin: Double | String): SwitchOption = {
+  inline def apply(pin: Double | String): SwitchOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchOption]
   }
   
-  @scala.inline
-  implicit class SwitchOptionMutableBuilder[Self <: SwitchOption] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchOption](x: Self) {
     
-    @scala.inline
-    def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NO | NC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NO | NC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

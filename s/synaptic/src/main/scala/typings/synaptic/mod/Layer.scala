@@ -130,8 +130,7 @@ object Layer {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+    inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   /**
@@ -149,8 +148,7 @@ object Layer {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+    inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   @js.native
@@ -243,32 +241,24 @@ object Layer {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
+      inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
+      inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
       
-      @scala.inline
-      def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setSquash(value: (/* x */ Double, /* derivate */ Boolean) => Double): Self = StObject.set(x, "squash", js.Any.fromFunction2(value))
+      inline def setSquash(value: (/* x */ Double, /* derivate */ Boolean) => Double): Self = StObject.set(x, "squash", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
+      inline def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
     }
   }
 }

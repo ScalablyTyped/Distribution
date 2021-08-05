@@ -409,23 +409,18 @@ object anon {
   }
   object FileName {
     
-    @scala.inline
-    def apply(parsedTsConfig: ParsedCommandLine): FileName = {
+    inline def apply(parsedTsConfig: ParsedCommandLine): FileName = {
       val __obj = js.Dynamic.literal(parsedTsConfig = parsedTsConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileName]
     }
     
-    @scala.inline
-    implicit class FileNameMutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
+    extension [Self <: FileName](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setParsedTsConfig(value: ParsedCommandLine): Self = StObject.set(x, "parsedTsConfig", value.asInstanceOf[js.Any])
+      inline def setParsedTsConfig(value: ParsedCommandLine): Self = StObject.set(x, "parsedTsConfig", value.asInstanceOf[js.Any])
     }
   }
   
@@ -468,125 +463,86 @@ object anon {
   }
   object PartialIOptions {
     
-    @scala.inline
-    def apply(): PartialIOptions = {
+    inline def apply(): PartialIOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialIOptions]
     }
     
-    @scala.inline
-    implicit class PartialIOptionsMutableBuilder[Self <: PartialIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialIOptions](x: Self) {
       
-      @scala.inline
-      def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
+      inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortOnErrorUndefined: Self = StObject.set(x, "abortOnError", js.undefined)
+      inline def setAbortOnErrorUndefined: Self = StObject.set(x, "abortOnError", js.undefined)
       
-      @scala.inline
-      def setCacheRoot(value: String): Self = StObject.set(x, "cacheRoot", value.asInstanceOf[js.Any])
+      inline def setCacheRoot(value: String): Self = StObject.set(x, "cacheRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheRootUndefined: Self = StObject.set(x, "cacheRoot", js.undefined)
+      inline def setCacheRootUndefined: Self = StObject.set(x, "cacheRoot", js.undefined)
       
-      @scala.inline
-      def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
+      inline def setCleanUndefined: Self = StObject.set(x, "clean", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setObjectHashIgnoreUnknownHack(value: Boolean): Self = StObject.set(x, "objectHashIgnoreUnknownHack", value.asInstanceOf[js.Any])
+      inline def setObjectHashIgnoreUnknownHack(value: Boolean): Self = StObject.set(x, "objectHashIgnoreUnknownHack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectHashIgnoreUnknownHackUndefined: Self = StObject.set(x, "objectHashIgnoreUnknownHack", js.undefined)
+      inline def setObjectHashIgnoreUnknownHackUndefined: Self = StObject.set(x, "objectHashIgnoreUnknownHack", js.undefined)
       
-      @scala.inline
-      def setRollupCommonJSResolveHack(value: Boolean): Self = StObject.set(x, "rollupCommonJSResolveHack", value.asInstanceOf[js.Any])
+      inline def setRollupCommonJSResolveHack(value: Boolean): Self = StObject.set(x, "rollupCommonJSResolveHack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollupCommonJSResolveHackUndefined: Self = StObject.set(x, "rollupCommonJSResolveHack", js.undefined)
+      inline def setRollupCommonJSResolveHackUndefined: Self = StObject.set(x, "rollupCommonJSResolveHack", js.undefined)
       
-      @scala.inline
-      def setSourceMapCallback(value: (/* id */ String, /* map */ String) => Unit): Self = StObject.set(x, "sourceMapCallback", js.Any.fromFunction2(value))
+      inline def setSourceMapCallback(value: (/* id */ String, /* map */ String) => Unit): Self = StObject.set(x, "sourceMapCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSourceMapCallbackUndefined: Self = StObject.set(x, "sourceMapCallback", js.undefined)
+      inline def setSourceMapCallbackUndefined: Self = StObject.set(x, "sourceMapCallback", js.undefined)
       
-      @scala.inline
-      def setTransformers(value: js.Array[TransformerFactoryCreator]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
+      inline def setTransformers(value: js.Array[TransformerFactoryCreator]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
+      inline def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
       
-      @scala.inline
-      def setTransformersVarargs(value: TransformerFactoryCreator*): Self = StObject.set(x, "transformers", js.Array(value :_*))
+      inline def setTransformersVarargs(value: TransformerFactoryCreator*): Self = StObject.set(x, "transformers", js.Array(value :_*))
       
-      @scala.inline
-      def setTsconfig(value: String): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
+      inline def setTsconfig(value: String): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsconfigDefaults(value: js.Any): Self = StObject.set(x, "tsconfigDefaults", value.asInstanceOf[js.Any])
+      inline def setTsconfigDefaults(value: js.Any): Self = StObject.set(x, "tsconfigDefaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsconfigDefaultsUndefined: Self = StObject.set(x, "tsconfigDefaults", js.undefined)
+      inline def setTsconfigDefaultsUndefined: Self = StObject.set(x, "tsconfigDefaults", js.undefined)
       
-      @scala.inline
-      def setTsconfigOverride(value: js.Any): Self = StObject.set(x, "tsconfigOverride", value.asInstanceOf[js.Any])
+      inline def setTsconfigOverride(value: js.Any): Self = StObject.set(x, "tsconfigOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsconfigOverrideUndefined: Self = StObject.set(x, "tsconfigOverride", js.undefined)
+      inline def setTsconfigOverrideUndefined: Self = StObject.set(x, "tsconfigOverride", js.undefined)
       
-      @scala.inline
-      def setTsconfigUndefined: Self = StObject.set(x, "tsconfig", js.undefined)
+      inline def setTsconfigUndefined: Self = StObject.set(x, "tsconfig", js.undefined)
       
-      @scala.inline
-      def setTypescript(value: TypeoftsTypes): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
+      inline def setTypescript(value: TypeoftsTypes): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypescriptUndefined: Self = StObject.set(x, "typescript", js.undefined)
+      inline def setTypescriptUndefined: Self = StObject.set(x, "typescript", js.undefined)
       
-      @scala.inline
-      def setUseTsconfigDeclarationDir(value: Boolean): Self = StObject.set(x, "useTsconfigDeclarationDir", value.asInstanceOf[js.Any])
+      inline def setUseTsconfigDeclarationDir(value: Boolean): Self = StObject.set(x, "useTsconfigDeclarationDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTsconfigDeclarationDirUndefined: Self = StObject.set(x, "useTsconfigDeclarationDir", js.undefined)
+      inline def setUseTsconfigDeclarationDirUndefined: Self = StObject.set(x, "useTsconfigDeclarationDir", js.undefined)
       
-      @scala.inline
-      def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
+      inline def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
+      inline def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
     }
   }
   
@@ -596,17 +552,14 @@ object anon {
   }
   object TypeofScriptSnapshot {
     
-    @scala.inline
-    def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
+    inline def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
       val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    @scala.inline
-    implicit class TypeofScriptSnapshotMutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofScriptSnapshot](x: Self) {
       
-      @scala.inline
-      def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
+      inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }
   }
   

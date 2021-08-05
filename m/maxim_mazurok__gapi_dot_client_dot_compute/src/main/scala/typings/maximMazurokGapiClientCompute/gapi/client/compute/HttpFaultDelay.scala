@@ -17,25 +17,19 @@ trait HttpFaultDelay extends StObject {
 }
 object HttpFaultDelay {
   
-  @scala.inline
-  def apply(): HttpFaultDelay = {
+  inline def apply(): HttpFaultDelay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpFaultDelay]
   }
   
-  @scala.inline
-  implicit class HttpFaultDelayMutableBuilder[Self <: HttpFaultDelay] (val x: Self) extends AnyVal {
+  extension [Self <: HttpFaultDelay](x: Self) {
     
-    @scala.inline
-    def setFixedDelay(value: Duration): Self = StObject.set(x, "fixedDelay", value.asInstanceOf[js.Any])
+    inline def setFixedDelay(value: Duration): Self = StObject.set(x, "fixedDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedDelayUndefined: Self = StObject.set(x, "fixedDelay", js.undefined)
+    inline def setFixedDelayUndefined: Self = StObject.set(x, "fixedDelay", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
   }
 }

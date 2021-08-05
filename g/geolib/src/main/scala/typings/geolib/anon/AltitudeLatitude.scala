@@ -23,31 +23,23 @@ trait AltitudeLatitude extends StObject {
 }
 object AltitudeLatitude {
   
-  @scala.inline
-  def apply(): AltitudeLatitude = {
+  inline def apply(): AltitudeLatitude = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AltitudeLatitude]
   }
   
-  @scala.inline
-  implicit class AltitudeLatitudeMutableBuilder[Self <: AltitudeLatitude] (val x: Self) extends AnyVal {
+  extension [Self <: AltitudeLatitude](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: AltitudeKeys): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: AltitudeKeys): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: lat | latitude | `1`): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: lat | latitude | `1`): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: typings.geolib.geolibNumbers.`0` | lng | lon | longitude): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: typings.geolib.geolibNumbers.`0` | lng | lon | longitude): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }
 }

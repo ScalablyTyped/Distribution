@@ -21,28 +21,21 @@ trait SchemaXcodeVersion extends StObject {
 }
 object SchemaXcodeVersion {
   
-  @scala.inline
-  def apply(): SchemaXcodeVersion = {
+  inline def apply(): SchemaXcodeVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaXcodeVersion]
   }
   
-  @scala.inline
-  implicit class SchemaXcodeVersionMutableBuilder[Self <: SchemaXcodeVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaXcodeVersion](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

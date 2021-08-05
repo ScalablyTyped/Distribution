@@ -17,34 +17,25 @@ trait Certreq extends StObject {
 }
 object Certreq {
   
-  @scala.inline
-  def apply(mi: MessageImprint): Certreq = {
+  inline def apply(mi: MessageImprint): Certreq = {
     val __obj = js.Dynamic.literal(mi = mi.asInstanceOf[js.Any])
     __obj.asInstanceOf[Certreq]
   }
   
-  @scala.inline
-  implicit class CertreqMutableBuilder[Self <: Certreq] (val x: Self) extends AnyVal {
+  extension [Self <: Certreq](x: Self) {
     
-    @scala.inline
-    def setCertreq(value: Boolean): Self = StObject.set(x, "certreq", value.asInstanceOf[js.Any])
+    inline def setCertreq(value: Boolean): Self = StObject.set(x, "certreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertreqUndefined: Self = StObject.set(x, "certreq", js.undefined)
+    inline def setCertreqUndefined: Self = StObject.set(x, "certreq", js.undefined)
     
-    @scala.inline
-    def setMi(value: MessageImprint): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
+    inline def setMi(value: MessageImprint): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

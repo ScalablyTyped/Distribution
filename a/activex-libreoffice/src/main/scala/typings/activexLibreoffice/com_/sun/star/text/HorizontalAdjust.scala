@@ -21,8 +21,7 @@ object HorizontalAdjust {
     *
     * centric adjusted.
     */
-  @scala.inline
-  def CENTER: `1` = 1.asInstanceOf[`1`]
+  inline def CENTER: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the object is left adjusted.
@@ -31,8 +30,7 @@ object HorizontalAdjust {
     *
     * text flows to the left side of the object.
     */
-  @scala.inline
-  def LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def LEFT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the object is right adjusted.
@@ -41,6 +39,5 @@ object HorizontalAdjust {
     *
     * text flows to the right side of the object.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
 }

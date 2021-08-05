@@ -20,8 +20,8 @@ object sourceMessageStreamMod {
     
     def _transform(chunk: Buffer, encoding: String, callback: TransformCallback): Unit = js.native
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    val uri: js.Any = js.native
+    /* private */ val uri: js.Any = js.native
   }
 }

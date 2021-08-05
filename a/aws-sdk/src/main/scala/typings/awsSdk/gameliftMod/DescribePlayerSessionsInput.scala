@@ -38,49 +38,35 @@ trait DescribePlayerSessionsInput extends StObject {
 }
 object DescribePlayerSessionsInput {
   
-  @scala.inline
-  def apply(): DescribePlayerSessionsInput = {
+  inline def apply(): DescribePlayerSessionsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePlayerSessionsInput]
   }
   
-  @scala.inline
-  implicit class DescribePlayerSessionsInputMutableBuilder[Self <: DescribePlayerSessionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePlayerSessionsInput](x: Self) {
     
-    @scala.inline
-    def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
+    inline def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
+    inline def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
     
-    @scala.inline
-    def setPlayerSessionId(value: PlayerSessionId): Self = StObject.set(x, "PlayerSessionId", value.asInstanceOf[js.Any])
+    inline def setPlayerSessionId(value: PlayerSessionId): Self = StObject.set(x, "PlayerSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerSessionIdUndefined: Self = StObject.set(x, "PlayerSessionId", js.undefined)
+    inline def setPlayerSessionIdUndefined: Self = StObject.set(x, "PlayerSessionId", js.undefined)
     
-    @scala.inline
-    def setPlayerSessionStatusFilter(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerSessionStatusFilter", value.asInstanceOf[js.Any])
+    inline def setPlayerSessionStatusFilter(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerSessionStatusFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerSessionStatusFilterUndefined: Self = StObject.set(x, "PlayerSessionStatusFilter", js.undefined)
+    inline def setPlayerSessionStatusFilterUndefined: Self = StObject.set(x, "PlayerSessionStatusFilter", js.undefined)
   }
 }

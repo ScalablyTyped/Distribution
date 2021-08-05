@@ -14,22 +14,17 @@ trait OpenSettings extends StObject {
 }
 object OpenSettings {
   
-  @scala.inline
-  def apply(data: js.Any, headers: js.Any, method: String): OpenSettings = {
+  inline def apply(data: js.Any, headers: js.Any, method: String): OpenSettings = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenSettings]
   }
   
-  @scala.inline
-  implicit class OpenSettingsMutableBuilder[Self <: OpenSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OpenSettings](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

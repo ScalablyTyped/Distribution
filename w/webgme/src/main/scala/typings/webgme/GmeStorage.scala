@@ -54,8 +54,7 @@ object GmeStorage {
   }
   object CommitObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _id: CommitHash,
       message: String,
       parents: js.Array[CommitHash],
@@ -69,35 +68,25 @@ object GmeStorage {
       __obj.asInstanceOf[CommitObject]
     }
     
-    @scala.inline
-    implicit class CommitObjectMutableBuilder[Self <: CommitObject] (val x: Self) extends AnyVal {
+    extension [Self <: CommitObject](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParents(value: js.Array[CommitHash]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[CommitHash]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsVarargs(value: CommitHash*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitHash*): Self = StObject.set(x, "parents", js.Array(value :_*))
       
-      @scala.inline
-      def setRoot(value: ObjectHash): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: ObjectHash): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdater(value: js.Array[String]): Self = StObject.set(x, "updater", value.asInstanceOf[js.Any])
+      inline def setUpdater(value: js.Array[String]): Self = StObject.set(x, "updater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdaterVarargs(value: String*): Self = StObject.set(x, "updater", js.Array(value :_*))
+      inline def setUpdaterVarargs(value: String*): Self = StObject.set(x, "updater", js.Array(value :_*))
       
-      @scala.inline
-      def set_id(value: CommitHash): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: CommitHash): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,23 +99,18 @@ object GmeStorage {
   }
   object CommitResult {
     
-    @scala.inline
-    def apply(hash: CommitHash): CommitResult = {
+    inline def apply(hash: CommitHash): CommitResult = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommitResult]
     }
     
-    @scala.inline
-    implicit class CommitResultMutableBuilder[Self <: CommitResult] (val x: Self) extends AnyVal {
+    extension [Self <: CommitResult](x: Self) {
       
-      @scala.inline
-      def setHash(value: CommitHash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: CommitHash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: SYNCED | FORKED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: SYNCED | FORKED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

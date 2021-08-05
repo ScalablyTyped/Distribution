@@ -32,10 +32,8 @@ object mod {
     def shutdown(addr: String): Unit = js.native
   }
   
-  @scala.inline
-  def socket(`type`: String): Socket_ = ^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket_]
-  @scala.inline
-  def socket(`type`: String, opts: Options): Socket_ = (^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Socket_]
+  inline def socket(`type`: String): Socket_ = ^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket_]
+  inline def socket(`type`: String, opts: Options): Socket_ = (^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Socket_]
   
   trait Options extends StObject {
     
@@ -71,107 +69,74 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChan(value: js.Array[String]): Self = StObject.set(x, "chan", value.asInstanceOf[js.Any])
+      inline def setChan(value: js.Array[String]): Self = StObject.set(x, "chan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChanUndefined: Self = StObject.set(x, "chan", js.undefined)
+      inline def setChanUndefined: Self = StObject.set(x, "chan", js.undefined)
       
-      @scala.inline
-      def setChanVarargs(value: String*): Self = StObject.set(x, "chan", js.Array(value :_*))
+      inline def setChanVarargs(value: String*): Self = StObject.set(x, "chan", js.Array(value :_*))
       
-      @scala.inline
-      def setIpv6(value: Boolean): Self = StObject.set(x, "ipv6", value.asInstanceOf[js.Any])
+      inline def setIpv6(value: Boolean): Self = StObject.set(x, "ipv6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6Undefined: Self = StObject.set(x, "ipv6", js.undefined)
+      inline def setIpv6Undefined: Self = StObject.set(x, "ipv6", js.undefined)
       
-      @scala.inline
-      def setLinger(value: Double): Self = StObject.set(x, "linger", value.asInstanceOf[js.Any])
+      inline def setLinger(value: Double): Self = StObject.set(x, "linger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLingerUndefined: Self = StObject.set(x, "linger", js.undefined)
+      inline def setLingerUndefined: Self = StObject.set(x, "linger", js.undefined)
       
-      @scala.inline
-      def setMaxreconn(value: Double): Self = StObject.set(x, "maxreconn", value.asInstanceOf[js.Any])
+      inline def setMaxreconn(value: Double): Self = StObject.set(x, "maxreconn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxreconnUndefined: Self = StObject.set(x, "maxreconn", js.undefined)
+      inline def setMaxreconnUndefined: Self = StObject.set(x, "maxreconn", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setRcvbuf(value: Double): Self = StObject.set(x, "rcvbuf", value.asInstanceOf[js.Any])
+      inline def setRcvbuf(value: Double): Self = StObject.set(x, "rcvbuf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRcvbufUndefined: Self = StObject.set(x, "rcvbuf", js.undefined)
+      inline def setRcvbufUndefined: Self = StObject.set(x, "rcvbuf", js.undefined)
       
-      @scala.inline
-      def setRcvmaxsize(value: Double): Self = StObject.set(x, "rcvmaxsize", value.asInstanceOf[js.Any])
+      inline def setRcvmaxsize(value: Double): Self = StObject.set(x, "rcvmaxsize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRcvmaxsizeUndefined: Self = StObject.set(x, "rcvmaxsize", js.undefined)
+      inline def setRcvmaxsizeUndefined: Self = StObject.set(x, "rcvmaxsize", js.undefined)
       
-      @scala.inline
-      def setRcvprio(value: Double): Self = StObject.set(x, "rcvprio", value.asInstanceOf[js.Any])
+      inline def setRcvprio(value: Double): Self = StObject.set(x, "rcvprio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRcvprioUndefined: Self = StObject.set(x, "rcvprio", js.undefined)
+      inline def setRcvprioUndefined: Self = StObject.set(x, "rcvprio", js.undefined)
       
-      @scala.inline
-      def setRcvtimeo(value: Double): Self = StObject.set(x, "rcvtimeo", value.asInstanceOf[js.Any])
+      inline def setRcvtimeo(value: Double): Self = StObject.set(x, "rcvtimeo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRcvtimeoUndefined: Self = StObject.set(x, "rcvtimeo", js.undefined)
+      inline def setRcvtimeoUndefined: Self = StObject.set(x, "rcvtimeo", js.undefined)
       
-      @scala.inline
-      def setReconn(value: Double): Self = StObject.set(x, "reconn", value.asInstanceOf[js.Any])
+      inline def setReconn(value: Double): Self = StObject.set(x, "reconn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnUndefined: Self = StObject.set(x, "reconn", js.undefined)
+      inline def setReconnUndefined: Self = StObject.set(x, "reconn", js.undefined)
       
-      @scala.inline
-      def setSndbuf(value: Double): Self = StObject.set(x, "sndbuf", value.asInstanceOf[js.Any])
+      inline def setSndbuf(value: Double): Self = StObject.set(x, "sndbuf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSndbufUndefined: Self = StObject.set(x, "sndbuf", js.undefined)
+      inline def setSndbufUndefined: Self = StObject.set(x, "sndbuf", js.undefined)
       
-      @scala.inline
-      def setSndprio(value: Double): Self = StObject.set(x, "sndprio", value.asInstanceOf[js.Any])
+      inline def setSndprio(value: Double): Self = StObject.set(x, "sndprio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSndprioUndefined: Self = StObject.set(x, "sndprio", js.undefined)
+      inline def setSndprioUndefined: Self = StObject.set(x, "sndprio", js.undefined)
       
-      @scala.inline
-      def setSndtimeo(value: Double): Self = StObject.set(x, "sndtimeo", value.asInstanceOf[js.Any])
+      inline def setSndtimeo(value: Double): Self = StObject.set(x, "sndtimeo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSndtimeoUndefined: Self = StObject.set(x, "sndtimeo", js.undefined)
+      inline def setSndtimeoUndefined: Self = StObject.set(x, "sndtimeo", js.undefined)
       
-      @scala.inline
-      def setTcpnodelay(value: Boolean): Self = StObject.set(x, "tcpnodelay", value.asInstanceOf[js.Any])
+      inline def setTcpnodelay(value: Boolean): Self = StObject.set(x, "tcpnodelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTcpnodelayUndefined: Self = StObject.set(x, "tcpnodelay", js.undefined)
+      inline def setTcpnodelayUndefined: Self = StObject.set(x, "tcpnodelay", js.undefined)
       
-      @scala.inline
-      def setWsopt(value: text | binary): Self = StObject.set(x, "wsopt", value.asInstanceOf[js.Any])
+      inline def setWsopt(value: text | binary): Self = StObject.set(x, "wsopt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWsoptUndefined: Self = StObject.set(x, "wsopt", js.undefined)
+      inline def setWsoptUndefined: Self = StObject.set(x, "wsopt", js.undefined)
     }
   }
 }

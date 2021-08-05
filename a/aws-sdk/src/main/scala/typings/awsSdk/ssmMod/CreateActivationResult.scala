@@ -18,25 +18,19 @@ trait CreateActivationResult extends StObject {
 }
 object CreateActivationResult {
   
-  @scala.inline
-  def apply(): CreateActivationResult = {
+  inline def apply(): CreateActivationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateActivationResult]
   }
   
-  @scala.inline
-  implicit class CreateActivationResultMutableBuilder[Self <: CreateActivationResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateActivationResult](x: Self) {
     
-    @scala.inline
-    def setActivationCode(value: ActivationCode): Self = StObject.set(x, "ActivationCode", value.asInstanceOf[js.Any])
+    inline def setActivationCode(value: ActivationCode): Self = StObject.set(x, "ActivationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationCodeUndefined: Self = StObject.set(x, "ActivationCode", js.undefined)
+    inline def setActivationCodeUndefined: Self = StObject.set(x, "ActivationCode", js.undefined)
     
-    @scala.inline
-    def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
+    inline def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivationIdUndefined: Self = StObject.set(x, "ActivationId", js.undefined)
+    inline def setActivationIdUndefined: Self = StObject.set(x, "ActivationId", js.undefined)
   }
 }

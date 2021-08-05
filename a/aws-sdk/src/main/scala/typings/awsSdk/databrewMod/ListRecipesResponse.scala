@@ -18,25 +18,19 @@ trait ListRecipesResponse extends StObject {
 }
 object ListRecipesResponse {
   
-  @scala.inline
-  def apply(Recipes: RecipeList): ListRecipesResponse = {
+  inline def apply(Recipes: RecipeList): ListRecipesResponse = {
     val __obj = js.Dynamic.literal(Recipes = Recipes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecipesResponse]
   }
   
-  @scala.inline
-  implicit class ListRecipesResponseMutableBuilder[Self <: ListRecipesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecipesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRecipes(value: RecipeList): Self = StObject.set(x, "Recipes", value.asInstanceOf[js.Any])
+    inline def setRecipes(value: RecipeList): Self = StObject.set(x, "Recipes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipesVarargs(value: Recipe*): Self = StObject.set(x, "Recipes", js.Array(value :_*))
+    inline def setRecipesVarargs(value: Recipe*): Self = StObject.set(x, "Recipes", js.Array(value :_*))
   }
 }

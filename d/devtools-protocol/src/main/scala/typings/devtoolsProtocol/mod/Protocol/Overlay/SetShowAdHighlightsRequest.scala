@@ -13,16 +13,13 @@ trait SetShowAdHighlightsRequest extends StObject {
 }
 object SetShowAdHighlightsRequest {
   
-  @scala.inline
-  def apply(show: Boolean): SetShowAdHighlightsRequest = {
+  inline def apply(show: Boolean): SetShowAdHighlightsRequest = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowAdHighlightsRequest]
   }
   
-  @scala.inline
-  implicit class SetShowAdHighlightsRequestMutableBuilder[Self <: SetShowAdHighlightsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowAdHighlightsRequest](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

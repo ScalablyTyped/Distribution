@@ -12,22 +12,17 @@ trait LiHTMLAttributes[T]
 }
 object LiHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): LiHTMLAttributes[T] = {
+  inline def apply[T](): LiHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class LiHTMLAttributesMutableBuilder[Self <: LiHTMLAttributes[?], T] (val x: Self & LiHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: LiHTMLAttributes[?], T](x: Self & LiHTMLAttributes[T]) {
     
-    @scala.inline
-    def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

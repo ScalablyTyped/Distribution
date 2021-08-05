@@ -14,28 +14,21 @@ trait ListSpacesResponse extends StObject {
 }
 object ListSpacesResponse {
   
-  @scala.inline
-  def apply(): ListSpacesResponse = {
+  inline def apply(): ListSpacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSpacesResponse]
   }
   
-  @scala.inline
-  implicit class ListSpacesResponseMutableBuilder[Self <: ListSpacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSpacesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSpaces(value: js.Array[Space]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+    inline def setSpaces(value: js.Array[Space]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
-    @scala.inline
-    def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value :_*))
   }
 }

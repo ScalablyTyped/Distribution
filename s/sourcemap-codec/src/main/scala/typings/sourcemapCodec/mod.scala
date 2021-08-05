@@ -10,11 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(mappings: String): SourceMapMappings = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(mappings.asInstanceOf[js.Any]).asInstanceOf[SourceMapMappings]
+  inline def decode(mappings: String): SourceMapMappings = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(mappings.asInstanceOf[js.Any]).asInstanceOf[SourceMapMappings]
   
-  @scala.inline
-  def encode(decoded: SourceMapMappings): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(decoded.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(decoded: SourceMapMappings): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(decoded.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type SourceMapLine = js.Array[SourceMapSegment]
   

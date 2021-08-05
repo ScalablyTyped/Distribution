@@ -28,37 +28,27 @@ trait SentimentScore extends StObject {
 }
 object SentimentScore {
   
-  @scala.inline
-  def apply(): SentimentScore = {
+  inline def apply(): SentimentScore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SentimentScore]
   }
   
-  @scala.inline
-  implicit class SentimentScoreMutableBuilder[Self <: SentimentScore] (val x: Self) extends AnyVal {
+  extension [Self <: SentimentScore](x: Self) {
     
-    @scala.inline
-    def setMixed(value: Float): Self = StObject.set(x, "Mixed", value.asInstanceOf[js.Any])
+    inline def setMixed(value: Float): Self = StObject.set(x, "Mixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixedUndefined: Self = StObject.set(x, "Mixed", js.undefined)
+    inline def setMixedUndefined: Self = StObject.set(x, "Mixed", js.undefined)
     
-    @scala.inline
-    def setNegative(value: Float): Self = StObject.set(x, "Negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Float): Self = StObject.set(x, "Negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeUndefined: Self = StObject.set(x, "Negative", js.undefined)
+    inline def setNegativeUndefined: Self = StObject.set(x, "Negative", js.undefined)
     
-    @scala.inline
-    def setNeutral(value: Float): Self = StObject.set(x, "Neutral", value.asInstanceOf[js.Any])
+    inline def setNeutral(value: Float): Self = StObject.set(x, "Neutral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeutralUndefined: Self = StObject.set(x, "Neutral", js.undefined)
+    inline def setNeutralUndefined: Self = StObject.set(x, "Neutral", js.undefined)
     
-    @scala.inline
-    def setPositive(value: Float): Self = StObject.set(x, "Positive", value.asInstanceOf[js.Any])
+    inline def setPositive(value: Float): Self = StObject.set(x, "Positive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveUndefined: Self = StObject.set(x, "Positive", js.undefined)
+    inline def setPositiveUndefined: Self = StObject.set(x, "Positive", js.undefined)
   }
 }

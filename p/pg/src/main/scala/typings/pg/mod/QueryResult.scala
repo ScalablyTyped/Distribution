@@ -12,19 +12,15 @@ trait QueryResult[R /* <: QueryResultRow */]
 }
 object QueryResult {
   
-  @scala.inline
-  def apply[R /* <: QueryResultRow */](command: String, fields: js.Array[FieldDef], oid: Double, rowCount: Double, rows: js.Array[R]): QueryResult[R] = {
+  inline def apply[R /* <: QueryResultRow */](command: String, fields: js.Array[FieldDef], oid: Double, rowCount: Double, rows: js.Array[R]): QueryResult[R] = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult[R]]
   }
   
-  @scala.inline
-  implicit class QueryResultMutableBuilder[Self <: QueryResult[?], R /* <: QueryResultRow */] (val x: Self & QueryResult[R]) extends AnyVal {
+  extension [Self <: QueryResult[?], R /* <: QueryResultRow */](x: Self & QueryResult[R]) {
     
-    @scala.inline
-    def setRows(value: js.Array[R]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[R]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

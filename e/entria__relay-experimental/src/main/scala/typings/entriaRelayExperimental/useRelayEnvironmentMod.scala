@@ -11,6 +11,5 @@ object useRelayEnvironmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useRelayEnvironment(): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("useRelayEnvironment")().asInstanceOf[Environment]
+  inline def useRelayEnvironment(): Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("useRelayEnvironment")().asInstanceOf[Environment]
 }

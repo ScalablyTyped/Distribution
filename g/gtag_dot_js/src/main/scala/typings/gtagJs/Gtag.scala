@@ -24,44 +24,32 @@ object Gtag {
   }
   object ControlParams {
     
-    @scala.inline
-    def apply(): ControlParams = {
+    inline def apply(): ControlParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ControlParams]
     }
     
-    @scala.inline
-    implicit class ControlParamsMutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
+    extension [Self <: ControlParams](x: Self) {
       
-      @scala.inline
-      def setEvent_callback(value: () => Unit): Self = StObject.set(x, "event_callback", js.Any.fromFunction0(value))
+      inline def setEvent_callback(value: () => Unit): Self = StObject.set(x, "event_callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEvent_callbackUndefined: Self = StObject.set(x, "event_callback", js.undefined)
+      inline def setEvent_callbackUndefined: Self = StObject.set(x, "event_callback", js.undefined)
       
-      @scala.inline
-      def setEvent_timeout(value: Double): Self = StObject.set(x, "event_timeout", value.asInstanceOf[js.Any])
+      inline def setEvent_timeout(value: Double): Self = StObject.set(x, "event_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent_timeoutUndefined: Self = StObject.set(x, "event_timeout", js.undefined)
+      inline def setEvent_timeoutUndefined: Self = StObject.set(x, "event_timeout", js.undefined)
       
-      @scala.inline
-      def setGroups(value: String | js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: String | js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setSend_to(value: String | js.Array[String]): Self = StObject.set(x, "send_to", value.asInstanceOf[js.Any])
+      inline def setSend_to(value: String | js.Array[String]): Self = StObject.set(x, "send_to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSend_toUndefined: Self = StObject.set(x, "send_to", js.undefined)
+      inline def setSend_toUndefined: Self = StObject.set(x, "send_to", js.undefined)
       
-      @scala.inline
-      def setSend_toVarargs(value: String*): Self = StObject.set(x, "send_to", js.Array(value :_*))
+      inline def setSend_toVarargs(value: String*): Self = StObject.set(x, "send_to", js.Array(value :_*))
     }
   }
   
@@ -97,74 +85,51 @@ object Gtag {
   trait EventNames extends StObject
   object EventNames {
     
-    @scala.inline
-    def add_payment_info: typings.gtagJs.gtagJsStrings.add_payment_info = "add_payment_info".asInstanceOf[typings.gtagJs.gtagJsStrings.add_payment_info]
+    inline def add_payment_info: typings.gtagJs.gtagJsStrings.add_payment_info = "add_payment_info".asInstanceOf[typings.gtagJs.gtagJsStrings.add_payment_info]
     
-    @scala.inline
-    def add_to_cart: typings.gtagJs.gtagJsStrings.add_to_cart = "add_to_cart".asInstanceOf[typings.gtagJs.gtagJsStrings.add_to_cart]
+    inline def add_to_cart: typings.gtagJs.gtagJsStrings.add_to_cart = "add_to_cart".asInstanceOf[typings.gtagJs.gtagJsStrings.add_to_cart]
     
-    @scala.inline
-    def add_to_wishlist: typings.gtagJs.gtagJsStrings.add_to_wishlist = "add_to_wishlist".asInstanceOf[typings.gtagJs.gtagJsStrings.add_to_wishlist]
+    inline def add_to_wishlist: typings.gtagJs.gtagJsStrings.add_to_wishlist = "add_to_wishlist".asInstanceOf[typings.gtagJs.gtagJsStrings.add_to_wishlist]
     
-    @scala.inline
-    def begin_checkout: typings.gtagJs.gtagJsStrings.begin_checkout = "begin_checkout".asInstanceOf[typings.gtagJs.gtagJsStrings.begin_checkout]
+    inline def begin_checkout: typings.gtagJs.gtagJsStrings.begin_checkout = "begin_checkout".asInstanceOf[typings.gtagJs.gtagJsStrings.begin_checkout]
     
-    @scala.inline
-    def checkout_progress: typings.gtagJs.gtagJsStrings.checkout_progress = "checkout_progress".asInstanceOf[typings.gtagJs.gtagJsStrings.checkout_progress]
+    inline def checkout_progress: typings.gtagJs.gtagJsStrings.checkout_progress = "checkout_progress".asInstanceOf[typings.gtagJs.gtagJsStrings.checkout_progress]
     
-    @scala.inline
-    def exception: typings.gtagJs.gtagJsStrings.exception = "exception".asInstanceOf[typings.gtagJs.gtagJsStrings.exception]
+    inline def exception: typings.gtagJs.gtagJsStrings.exception = "exception".asInstanceOf[typings.gtagJs.gtagJsStrings.exception]
     
-    @scala.inline
-    def generate_lead: typings.gtagJs.gtagJsStrings.generate_lead = "generate_lead".asInstanceOf[typings.gtagJs.gtagJsStrings.generate_lead]
+    inline def generate_lead: typings.gtagJs.gtagJsStrings.generate_lead = "generate_lead".asInstanceOf[typings.gtagJs.gtagJsStrings.generate_lead]
     
-    @scala.inline
-    def login: typings.gtagJs.gtagJsStrings.login = "login".asInstanceOf[typings.gtagJs.gtagJsStrings.login]
+    inline def login: typings.gtagJs.gtagJsStrings.login = "login".asInstanceOf[typings.gtagJs.gtagJsStrings.login]
     
-    @scala.inline
-    def page_view: typings.gtagJs.gtagJsStrings.page_view = "page_view".asInstanceOf[typings.gtagJs.gtagJsStrings.page_view]
+    inline def page_view: typings.gtagJs.gtagJsStrings.page_view = "page_view".asInstanceOf[typings.gtagJs.gtagJsStrings.page_view]
     
-    @scala.inline
-    def purchase: typings.gtagJs.gtagJsStrings.purchase = "purchase".asInstanceOf[typings.gtagJs.gtagJsStrings.purchase]
+    inline def purchase: typings.gtagJs.gtagJsStrings.purchase = "purchase".asInstanceOf[typings.gtagJs.gtagJsStrings.purchase]
     
-    @scala.inline
-    def refund: typings.gtagJs.gtagJsStrings.refund = "refund".asInstanceOf[typings.gtagJs.gtagJsStrings.refund]
+    inline def refund: typings.gtagJs.gtagJsStrings.refund = "refund".asInstanceOf[typings.gtagJs.gtagJsStrings.refund]
     
-    @scala.inline
-    def remove_from_cart: typings.gtagJs.gtagJsStrings.remove_from_cart = "remove_from_cart".asInstanceOf[typings.gtagJs.gtagJsStrings.remove_from_cart]
+    inline def remove_from_cart: typings.gtagJs.gtagJsStrings.remove_from_cart = "remove_from_cart".asInstanceOf[typings.gtagJs.gtagJsStrings.remove_from_cart]
     
-    @scala.inline
-    def screen_view: typings.gtagJs.gtagJsStrings.screen_view = "screen_view".asInstanceOf[typings.gtagJs.gtagJsStrings.screen_view]
+    inline def screen_view: typings.gtagJs.gtagJsStrings.screen_view = "screen_view".asInstanceOf[typings.gtagJs.gtagJsStrings.screen_view]
     
-    @scala.inline
-    def search: typings.gtagJs.gtagJsStrings.search = "search".asInstanceOf[typings.gtagJs.gtagJsStrings.search]
+    inline def search: typings.gtagJs.gtagJsStrings.search = "search".asInstanceOf[typings.gtagJs.gtagJsStrings.search]
     
-    @scala.inline
-    def select_content: typings.gtagJs.gtagJsStrings.select_content = "select_content".asInstanceOf[typings.gtagJs.gtagJsStrings.select_content]
+    inline def select_content: typings.gtagJs.gtagJsStrings.select_content = "select_content".asInstanceOf[typings.gtagJs.gtagJsStrings.select_content]
     
-    @scala.inline
-    def set_checkout_option: typings.gtagJs.gtagJsStrings.set_checkout_option = "set_checkout_option".asInstanceOf[typings.gtagJs.gtagJsStrings.set_checkout_option]
+    inline def set_checkout_option: typings.gtagJs.gtagJsStrings.set_checkout_option = "set_checkout_option".asInstanceOf[typings.gtagJs.gtagJsStrings.set_checkout_option]
     
-    @scala.inline
-    def share: typings.gtagJs.gtagJsStrings.share = "share".asInstanceOf[typings.gtagJs.gtagJsStrings.share]
+    inline def share: typings.gtagJs.gtagJsStrings.share = "share".asInstanceOf[typings.gtagJs.gtagJsStrings.share]
     
-    @scala.inline
-    def sign_up: typings.gtagJs.gtagJsStrings.sign_up = "sign_up".asInstanceOf[typings.gtagJs.gtagJsStrings.sign_up]
+    inline def sign_up: typings.gtagJs.gtagJsStrings.sign_up = "sign_up".asInstanceOf[typings.gtagJs.gtagJsStrings.sign_up]
     
-    @scala.inline
-    def timing_complete: typings.gtagJs.gtagJsStrings.timing_complete = "timing_complete".asInstanceOf[typings.gtagJs.gtagJsStrings.timing_complete]
+    inline def timing_complete: typings.gtagJs.gtagJsStrings.timing_complete = "timing_complete".asInstanceOf[typings.gtagJs.gtagJsStrings.timing_complete]
     
-    @scala.inline
-    def view_item: typings.gtagJs.gtagJsStrings.view_item = "view_item".asInstanceOf[typings.gtagJs.gtagJsStrings.view_item]
+    inline def view_item: typings.gtagJs.gtagJsStrings.view_item = "view_item".asInstanceOf[typings.gtagJs.gtagJsStrings.view_item]
     
-    @scala.inline
-    def view_item_list: typings.gtagJs.gtagJsStrings.view_item_list = "view_item_list".asInstanceOf[typings.gtagJs.gtagJsStrings.view_item_list]
+    inline def view_item_list: typings.gtagJs.gtagJsStrings.view_item_list = "view_item_list".asInstanceOf[typings.gtagJs.gtagJsStrings.view_item_list]
     
-    @scala.inline
-    def view_promotion: typings.gtagJs.gtagJsStrings.view_promotion = "view_promotion".asInstanceOf[typings.gtagJs.gtagJsStrings.view_promotion]
+    inline def view_promotion: typings.gtagJs.gtagJsStrings.view_promotion = "view_promotion".asInstanceOf[typings.gtagJs.gtagJsStrings.view_promotion]
     
-    @scala.inline
-    def view_search_results: typings.gtagJs.gtagJsStrings.view_search_results = "view_search_results".asInstanceOf[typings.gtagJs.gtagJsStrings.view_search_results]
+    inline def view_search_results: typings.gtagJs.gtagJsStrings.view_search_results = "view_search_results".asInstanceOf[typings.gtagJs.gtagJsStrings.view_search_results]
   }
   
   trait EventParams extends StObject {
@@ -211,140 +176,96 @@ object Gtag {
   }
   object EventParams {
     
-    @scala.inline
-    def apply(): EventParams = {
+    inline def apply(): EventParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventParams]
     }
     
-    @scala.inline
-    implicit class EventParamsMutableBuilder[Self <: EventParams] (val x: Self) extends AnyVal {
+    extension [Self <: EventParams](x: Self) {
       
-      @scala.inline
-      def setCheckout_option(value: String): Self = StObject.set(x, "checkout_option", value.asInstanceOf[js.Any])
+      inline def setCheckout_option(value: String): Self = StObject.set(x, "checkout_option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckout_optionUndefined: Self = StObject.set(x, "checkout_option", js.undefined)
+      inline def setCheckout_optionUndefined: Self = StObject.set(x, "checkout_option", js.undefined)
       
-      @scala.inline
-      def setCheckout_step(value: Double): Self = StObject.set(x, "checkout_step", value.asInstanceOf[js.Any])
+      inline def setCheckout_step(value: Double): Self = StObject.set(x, "checkout_step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckout_stepUndefined: Self = StObject.set(x, "checkout_step", js.undefined)
+      inline def setCheckout_stepUndefined: Self = StObject.set(x, "checkout_step", js.undefined)
       
-      @scala.inline
-      def setContent_id(value: String): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
+      inline def setContent_id(value: String): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
+      inline def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+      inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
       
-      @scala.inline
-      def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+      inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+      inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEvent_category(value: String): Self = StObject.set(x, "event_category", value.asInstanceOf[js.Any])
+      inline def setEvent_category(value: String): Self = StObject.set(x, "event_category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent_categoryUndefined: Self = StObject.set(x, "event_category", js.undefined)
+      inline def setEvent_categoryUndefined: Self = StObject.set(x, "event_category", js.undefined)
       
-      @scala.inline
-      def setEvent_label(value: String): Self = StObject.set(x, "event_label", value.asInstanceOf[js.Any])
+      inline def setEvent_label(value: String): Self = StObject.set(x, "event_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent_labelUndefined: Self = StObject.set(x, "event_label", js.undefined)
+      inline def setEvent_labelUndefined: Self = StObject.set(x, "event_label", js.undefined)
       
-      @scala.inline
-      def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+      inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setPromotions(value: js.Array[Promotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
+      inline def setPromotions(value: js.Array[Promotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
+      inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
       
-      @scala.inline
-      def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+      inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
       
-      @scala.inline
-      def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
+      inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen_nameUndefined: Self = StObject.set(x, "screen_name", js.undefined)
+      inline def setScreen_nameUndefined: Self = StObject.set(x, "screen_name", js.undefined)
       
-      @scala.inline
-      def setSearch_term(value: String): Self = StObject.set(x, "search_term", value.asInstanceOf[js.Any])
+      inline def setSearch_term(value: String): Self = StObject.set(x, "search_term", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_termUndefined: Self = StObject.set(x, "search_term", js.undefined)
+      inline def setSearch_termUndefined: Self = StObject.set(x, "search_term", js.undefined)
       
-      @scala.inline
-      def setShipping(value: Currency): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: Currency): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+      inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
       
-      @scala.inline
-      def setTax(value: Currency): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+      inline def setTax(value: Currency): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
+      inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
       
-      @scala.inline
-      def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
+      inline def setTransaction_id(value: String): Self = StObject.set(x, "transaction_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
+      inline def setTransaction_idUndefined: Self = StObject.set(x, "transaction_id", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -389,68 +310,48 @@ object Gtag {
   }
   object Item {
     
-    @scala.inline
-    def apply(): Item = {
+    inline def apply(): Item = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
+      inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
+      inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
+      inline def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
       
-      @scala.inline
-      def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
+      inline def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
+      inline def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLocation_id(value: String): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
+      inline def setLocation_id(value: String): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation_idUndefined: Self = StObject.set(x, "location_id", js.undefined)
+      inline def setLocation_idUndefined: Self = StObject.set(x, "location_id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrice(value: Currency): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+      inline def setPrice(value: Currency): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+      inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
       
-      @scala.inline
-      def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     }
   }
   
@@ -466,38 +367,28 @@ object Gtag {
   }
   object Promotion {
     
-    @scala.inline
-    def apply(): Promotion = {
+    inline def apply(): Promotion = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Promotion]
     }
     
-    @scala.inline
-    implicit class PromotionMutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
+    extension [Self <: Promotion](x: Self) {
       
-      @scala.inline
-      def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
+      inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
+      inline def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
       
-      @scala.inline
-      def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
+      inline def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
+      inline def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

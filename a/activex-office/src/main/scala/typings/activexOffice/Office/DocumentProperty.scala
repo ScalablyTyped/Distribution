@@ -18,7 +18,7 @@ trait DocumentProperty[TApplication] extends StObject {
   
   var Name: String
   
-  @JSName("Office.DocumentProperty_typekey")
+  /* private */ @JSName("Office.DocumentProperty_typekey")
   var OfficeDotDocumentProperty_typekey: DocumentProperty[TApplication]
   
   var Parent: js.Any
@@ -29,8 +29,7 @@ trait DocumentProperty[TApplication] extends StObject {
 }
 object DocumentProperty {
   
-  @scala.inline
-  def apply[TApplication](
+  inline def apply[TApplication](
     Application: TApplication,
     Creator: Double,
     Delete: () => Unit,
@@ -47,37 +46,26 @@ object DocumentProperty {
     __obj.asInstanceOf[DocumentProperty[TApplication]]
   }
   
-  @scala.inline
-  implicit class DocumentPropertyMutableBuilder[Self <: DocumentProperty[?], TApplication] (val x: Self & DocumentProperty[TApplication]) extends AnyVal {
+  extension [Self <: DocumentProperty[?], TApplication](x: Self & DocumentProperty[TApplication]) {
     
-    @scala.inline
-    def setApplication(value: TApplication): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: TApplication): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLinkSource(value: String): Self = StObject.set(x, "LinkSource", value.asInstanceOf[js.Any])
+    inline def setLinkSource(value: String): Self = StObject.set(x, "LinkSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkToContent(value: Boolean): Self = StObject.set(x, "LinkToContent", value.asInstanceOf[js.Any])
+    inline def setLinkToContent(value: Boolean): Self = StObject.set(x, "LinkToContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotDocumentProperty_typekey(value: DocumentProperty[TApplication]): Self = StObject.set(x, "Office.DocumentProperty_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotDocumentProperty_typekey(value: DocumentProperty[TApplication]): Self = StObject.set(x, "Office.DocumentProperty_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoDocProperties): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoDocProperties): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

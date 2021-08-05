@@ -28,8 +28,7 @@ trait ReferenceDataSourceDescription extends StObject {
 }
 object ReferenceDataSourceDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReferenceId: Id,
     S3ReferenceDataSourceDescription: S3ReferenceDataSourceDescription,
     TableName: InAppTableName
@@ -38,22 +37,16 @@ object ReferenceDataSourceDescription {
     __obj.asInstanceOf[ReferenceDataSourceDescription]
   }
   
-  @scala.inline
-  implicit class ReferenceDataSourceDescriptionMutableBuilder[Self <: ReferenceDataSourceDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceDataSourceDescription](x: Self) {
     
-    @scala.inline
-    def setReferenceId(value: Id): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: Id): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceSchema(value: SourceSchema): Self = StObject.set(x, "ReferenceSchema", value.asInstanceOf[js.Any])
+    inline def setReferenceSchema(value: SourceSchema): Self = StObject.set(x, "ReferenceSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceSchemaUndefined: Self = StObject.set(x, "ReferenceSchema", js.undefined)
+    inline def setReferenceSchemaUndefined: Self = StObject.set(x, "ReferenceSchema", js.undefined)
     
-    @scala.inline
-    def setS3ReferenceDataSourceDescription(value: S3ReferenceDataSourceDescription): Self = StObject.set(x, "S3ReferenceDataSourceDescription", value.asInstanceOf[js.Any])
+    inline def setS3ReferenceDataSourceDescription(value: S3ReferenceDataSourceDescription): Self = StObject.set(x, "S3ReferenceDataSourceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: InAppTableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: InAppTableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

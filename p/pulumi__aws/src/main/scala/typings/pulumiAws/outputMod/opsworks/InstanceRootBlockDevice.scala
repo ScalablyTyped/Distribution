@@ -16,28 +16,21 @@ trait InstanceRootBlockDevice extends StObject {
 }
 object InstanceRootBlockDevice {
   
-  @scala.inline
-  def apply(iops: Double, volumeSize: Double, volumeType: String): InstanceRootBlockDevice = {
+  inline def apply(iops: Double, volumeSize: Double, volumeType: String): InstanceRootBlockDevice = {
     val __obj = js.Dynamic.literal(iops = iops.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceRootBlockDevice]
   }
   
-  @scala.inline
-  implicit class InstanceRootBlockDeviceMutableBuilder[Self <: InstanceRootBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceRootBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
   }
 }

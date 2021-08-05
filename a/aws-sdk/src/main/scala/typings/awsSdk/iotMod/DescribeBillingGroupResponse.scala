@@ -38,49 +38,35 @@ trait DescribeBillingGroupResponse extends StObject {
 }
 object DescribeBillingGroupResponse {
   
-  @scala.inline
-  def apply(): DescribeBillingGroupResponse = {
+  inline def apply(): DescribeBillingGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBillingGroupResponse]
   }
   
-  @scala.inline
-  implicit class DescribeBillingGroupResponseMutableBuilder[Self <: DescribeBillingGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBillingGroupResponse](x: Self) {
     
-    @scala.inline
-    def setBillingGroupArn(value: BillingGroupArn): Self = StObject.set(x, "billingGroupArn", value.asInstanceOf[js.Any])
+    inline def setBillingGroupArn(value: BillingGroupArn): Self = StObject.set(x, "billingGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupArnUndefined: Self = StObject.set(x, "billingGroupArn", js.undefined)
+    inline def setBillingGroupArnUndefined: Self = StObject.set(x, "billingGroupArn", js.undefined)
     
-    @scala.inline
-    def setBillingGroupId(value: BillingGroupId): Self = StObject.set(x, "billingGroupId", value.asInstanceOf[js.Any])
+    inline def setBillingGroupId(value: BillingGroupId): Self = StObject.set(x, "billingGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupIdUndefined: Self = StObject.set(x, "billingGroupId", js.undefined)
+    inline def setBillingGroupIdUndefined: Self = StObject.set(x, "billingGroupId", js.undefined)
     
-    @scala.inline
-    def setBillingGroupMetadata(value: BillingGroupMetadata): Self = StObject.set(x, "billingGroupMetadata", value.asInstanceOf[js.Any])
+    inline def setBillingGroupMetadata(value: BillingGroupMetadata): Self = StObject.set(x, "billingGroupMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupMetadataUndefined: Self = StObject.set(x, "billingGroupMetadata", js.undefined)
+    inline def setBillingGroupMetadataUndefined: Self = StObject.set(x, "billingGroupMetadata", js.undefined)
     
-    @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
+    inline def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupNameUndefined: Self = StObject.set(x, "billingGroupName", js.undefined)
+    inline def setBillingGroupNameUndefined: Self = StObject.set(x, "billingGroupName", js.undefined)
     
-    @scala.inline
-    def setBillingGroupProperties(value: BillingGroupProperties): Self = StObject.set(x, "billingGroupProperties", value.asInstanceOf[js.Any])
+    inline def setBillingGroupProperties(value: BillingGroupProperties): Self = StObject.set(x, "billingGroupProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupPropertiesUndefined: Self = StObject.set(x, "billingGroupProperties", js.undefined)
+    inline def setBillingGroupPropertiesUndefined: Self = StObject.set(x, "billingGroupProperties", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

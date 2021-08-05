@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(user_args: UserArgs): js.Function3[
+  inline def apply(user_args: UserArgs): js.Function3[
     /* a */ ndarray[Double], 
     /* b */ ndarray[Double], 
     /* repeated */ ndarray[Double], 
@@ -44,17 +43,14 @@ object mod {
   }
   object BlockIndice {
     
-    @scala.inline
-    def apply(blockIndices: Double): BlockIndice = {
+    inline def apply(blockIndices: Double): BlockIndice = {
       val __obj = js.Dynamic.literal(blockIndices = blockIndices.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockIndice]
     }
     
-    @scala.inline
-    implicit class BlockIndiceMutableBuilder[Self <: BlockIndice] (val x: Self) extends AnyVal {
+    extension [Self <: BlockIndice](x: Self) {
       
-      @scala.inline
-      def setBlockIndices(value: Double): Self = StObject.set(x, "blockIndices", value.asInstanceOf[js.Any])
+      inline def setBlockIndices(value: Double): Self = StObject.set(x, "blockIndices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,23 +64,18 @@ object mod {
   }
   object OffsetArg {
     
-    @scala.inline
-    def apply(array: Double, offset: js.Array[Double]): OffsetArg = {
+    inline def apply(array: Double, offset: js.Array[Double]): OffsetArg = {
       val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[OffsetArg]
     }
     
-    @scala.inline
-    implicit class OffsetArgMutableBuilder[Self <: OffsetArg] (val x: Self) extends AnyVal {
+    extension [Self <: OffsetArg](x: Self) {
       
-      @scala.inline
-      def setArray(value: Double): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: Double): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
     }
   }
   
@@ -122,8 +113,7 @@ object mod {
   }
   object Procedure {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       argTypes: js.Array[ArgType],
       arrayArgs: js.Array[Double],
       arrayBlockIndices: js.Array[Double],
@@ -143,83 +133,57 @@ object mod {
       __obj.asInstanceOf[Procedure]
     }
     
-    @scala.inline
-    implicit class ProcedureMutableBuilder[Self <: Procedure] (val x: Self) extends AnyVal {
+    extension [Self <: Procedure](x: Self) {
       
-      @scala.inline
-      def setArgTypes(value: js.Array[ArgType]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
+      inline def setArgTypes(value: js.Array[ArgType]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgTypesVarargs(value: ArgType*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
+      inline def setArgTypesVarargs(value: ArgType*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setArrayArgs(value: js.Array[Double]): Self = StObject.set(x, "arrayArgs", value.asInstanceOf[js.Any])
+      inline def setArrayArgs(value: js.Array[Double]): Self = StObject.set(x, "arrayArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayArgsVarargs(value: Double*): Self = StObject.set(x, "arrayArgs", js.Array(value :_*))
+      inline def setArrayArgsVarargs(value: Double*): Self = StObject.set(x, "arrayArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setArrayBlockIndices(value: js.Array[Double]): Self = StObject.set(x, "arrayBlockIndices", value.asInstanceOf[js.Any])
+      inline def setArrayBlockIndices(value: js.Array[Double]): Self = StObject.set(x, "arrayBlockIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayBlockIndicesVarargs(value: Double*): Self = StObject.set(x, "arrayBlockIndices", js.Array(value :_*))
+      inline def setArrayBlockIndicesVarargs(value: Double*): Self = StObject.set(x, "arrayBlockIndices", js.Array(value :_*))
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
+      inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
       
-      @scala.inline
-      def setBody(value: CompiledRoutine): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: CompiledRoutine): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuncName(value: String): Self = StObject.set(x, "funcName", value.asInstanceOf[js.Any])
+      inline def setFuncName(value: String): Self = StObject.set(x, "funcName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexArgs(value: js.Array[Double]): Self = StObject.set(x, "indexArgs", value.asInstanceOf[js.Any])
+      inline def setIndexArgs(value: js.Array[Double]): Self = StObject.set(x, "indexArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexArgsVarargs(value: Double*): Self = StObject.set(x, "indexArgs", js.Array(value :_*))
+      inline def setIndexArgsVarargs(value: Double*): Self = StObject.set(x, "indexArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setOffsetArgIndex(value: js.Array[Double]): Self = StObject.set(x, "offsetArgIndex", value.asInstanceOf[js.Any])
+      inline def setOffsetArgIndex(value: js.Array[Double]): Self = StObject.set(x, "offsetArgIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetArgIndexVarargs(value: Double*): Self = StObject.set(x, "offsetArgIndex", js.Array(value :_*))
+      inline def setOffsetArgIndexVarargs(value: Double*): Self = StObject.set(x, "offsetArgIndex", js.Array(value :_*))
       
-      @scala.inline
-      def setOffsetArgs(value: js.Array[OffsetArg]): Self = StObject.set(x, "offsetArgs", value.asInstanceOf[js.Any])
+      inline def setOffsetArgs(value: js.Array[OffsetArg]): Self = StObject.set(x, "offsetArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetArgsVarargs(value: OffsetArg*): Self = StObject.set(x, "offsetArgs", js.Array(value :_*))
+      inline def setOffsetArgsVarargs(value: OffsetArg*): Self = StObject.set(x, "offsetArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setPost(value: CompiledRoutine): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+      inline def setPost(value: CompiledRoutine): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPre(value: CompiledRoutine): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: CompiledRoutine): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalarArgs(value: js.Array[Double]): Self = StObject.set(x, "scalarArgs", value.asInstanceOf[js.Any])
+      inline def setScalarArgs(value: js.Array[Double]): Self = StObject.set(x, "scalarArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalarArgsVarargs(value: Double*): Self = StObject.set(x, "scalarArgs", js.Array(value :_*))
+      inline def setScalarArgsVarargs(value: Double*): Self = StObject.set(x, "scalarArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setShapeArgs(value: js.Array[Double]): Self = StObject.set(x, "shapeArgs", value.asInstanceOf[js.Any])
+      inline def setShapeArgs(value: js.Array[Double]): Self = StObject.set(x, "shapeArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeArgsVarargs(value: Double*): Self = StObject.set(x, "shapeArgs", js.Array(value :_*))
+      inline def setShapeArgsVarargs(value: Double*): Self = StObject.set(x, "shapeArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setShimArgs(value: js.Array[String]): Self = StObject.set(x, "shimArgs", value.asInstanceOf[js.Any])
+      inline def setShimArgs(value: js.Array[String]): Self = StObject.set(x, "shimArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShimArgsVarargs(value: String*): Self = StObject.set(x, "shimArgs", js.Array(value :_*))
+      inline def setShimArgsVarargs(value: String*): Self = StObject.set(x, "shimArgs", js.Array(value :_*))
     }
   }
   
@@ -243,8 +207,7 @@ object mod {
   }
   object UserArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: js.Array[ArgType],
       blockSize: Double,
       body: CompiledRoutine,
@@ -257,38 +220,27 @@ object mod {
       __obj.asInstanceOf[UserArgs]
     }
     
-    @scala.inline
-    implicit class UserArgsMutableBuilder[Self <: UserArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserArgs](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[ArgType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[ArgType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: ArgType*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: ArgType*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: CompiledRoutine): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: CompiledRoutine): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuncName(value: String): Self = StObject.set(x, "funcName", value.asInstanceOf[js.Any])
+      inline def setFuncName(value: String): Self = StObject.set(x, "funcName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPost(value: CompiledRoutine): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+      inline def setPost(value: CompiledRoutine): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPre(value: CompiledRoutine): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: CompiledRoutine): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintCode(value: Boolean): Self = StObject.set(x, "printCode", value.asInstanceOf[js.Any])
+      inline def setPrintCode(value: Boolean): Self = StObject.set(x, "printCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintCodeUndefined: Self = StObject.set(x, "printCode", js.undefined)
+      inline def setPrintCodeUndefined: Self = StObject.set(x, "printCode", js.undefined)
     }
   }
 }

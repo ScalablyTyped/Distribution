@@ -17,34 +17,25 @@ trait OutdatedLibrary extends StObject {
 }
 object OutdatedLibrary {
   
-  @scala.inline
-  def apply(): OutdatedLibrary = {
+  inline def apply(): OutdatedLibrary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutdatedLibrary]
   }
   
-  @scala.inline
-  implicit class OutdatedLibraryMutableBuilder[Self <: OutdatedLibrary] (val x: Self) extends AnyVal {
+  extension [Self <: OutdatedLibrary](x: Self) {
     
-    @scala.inline
-    def setLearnMoreUrls(value: js.Array[String]): Self = StObject.set(x, "learnMoreUrls", value.asInstanceOf[js.Any])
+    inline def setLearnMoreUrls(value: js.Array[String]): Self = StObject.set(x, "learnMoreUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLearnMoreUrlsUndefined: Self = StObject.set(x, "learnMoreUrls", js.undefined)
+    inline def setLearnMoreUrlsUndefined: Self = StObject.set(x, "learnMoreUrls", js.undefined)
     
-    @scala.inline
-    def setLearnMoreUrlsVarargs(value: String*): Self = StObject.set(x, "learnMoreUrls", js.Array(value :_*))
+    inline def setLearnMoreUrlsVarargs(value: String*): Self = StObject.set(x, "learnMoreUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setLibraryName(value: String): Self = StObject.set(x, "libraryName", value.asInstanceOf[js.Any])
+    inline def setLibraryName(value: String): Self = StObject.set(x, "libraryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibraryNameUndefined: Self = StObject.set(x, "libraryName", js.undefined)
+    inline def setLibraryNameUndefined: Self = StObject.set(x, "libraryName", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

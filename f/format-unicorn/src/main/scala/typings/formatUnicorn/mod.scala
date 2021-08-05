@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: java.lang.String, replacements: js.Object): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  inline def apply(str: java.lang.String, replacements: js.Object): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   
   @JSImport("format-unicorn/safe", JSImport.Namespace)
   @js.native

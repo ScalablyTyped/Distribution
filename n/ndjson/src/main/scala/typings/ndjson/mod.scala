@@ -13,15 +13,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(): ThroughStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[ThroughStream]
-  @scala.inline
-  def parse(opts: ParseOptions): ThroughStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ThroughStream]
+  inline def parse(): ThroughStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[ThroughStream]
+  inline def parse(opts: ParseOptions): ThroughStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ThroughStream]
   
-  @scala.inline
-  def stringify(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")().asInstanceOf[Transform]
-  @scala.inline
-  def stringify(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def stringify(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")().asInstanceOf[Transform]
+  inline def stringify(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   trait ParseOptions extends StObject {
     
@@ -29,20 +25,16 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

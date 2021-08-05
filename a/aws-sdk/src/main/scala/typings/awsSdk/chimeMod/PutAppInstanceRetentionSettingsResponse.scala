@@ -18,25 +18,19 @@ trait PutAppInstanceRetentionSettingsResponse extends StObject {
 }
 object PutAppInstanceRetentionSettingsResponse {
   
-  @scala.inline
-  def apply(): PutAppInstanceRetentionSettingsResponse = {
+  inline def apply(): PutAppInstanceRetentionSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAppInstanceRetentionSettingsResponse]
   }
   
-  @scala.inline
-  implicit class PutAppInstanceRetentionSettingsResponseMutableBuilder[Self <: PutAppInstanceRetentionSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutAppInstanceRetentionSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setAppInstanceRetentionSettings(value: AppInstanceRetentionSettings): Self = StObject.set(x, "AppInstanceRetentionSettings", value.asInstanceOf[js.Any])
+    inline def setAppInstanceRetentionSettings(value: AppInstanceRetentionSettings): Self = StObject.set(x, "AppInstanceRetentionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceRetentionSettingsUndefined: Self = StObject.set(x, "AppInstanceRetentionSettings", js.undefined)
+    inline def setAppInstanceRetentionSettingsUndefined: Self = StObject.set(x, "AppInstanceRetentionSettings", js.undefined)
     
-    @scala.inline
-    def setInitiateDeletionTimestamp(value: Timestamp): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
+    inline def setInitiateDeletionTimestamp(value: Timestamp): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiateDeletionTimestampUndefined: Self = StObject.set(x, "InitiateDeletionTimestamp", js.undefined)
+    inline def setInitiateDeletionTimestampUndefined: Self = StObject.set(x, "InitiateDeletionTimestamp", js.undefined)
   }
 }

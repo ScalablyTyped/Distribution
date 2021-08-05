@@ -20,8 +20,7 @@ trait IVaultElectronicSignatureOperations extends StObject {
 }
 object IVaultElectronicSignatureOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddEmptySignature: (IObjVer, String) => IObjectVersionAndProperties,
     AddEmptySignatures: IObjVer => IObjectVersionAndProperties,
     DisconnectSignature: (IObjVer, String) => IObjectVersionAndProperties,
@@ -33,25 +32,18 @@ object IVaultElectronicSignatureOperations {
     __obj.asInstanceOf[IVaultElectronicSignatureOperations]
   }
   
-  @scala.inline
-  implicit class IVaultElectronicSignatureOperationsMutableBuilder[Self <: IVaultElectronicSignatureOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultElectronicSignatureOperations](x: Self) {
     
-    @scala.inline
-    def setAddEmptySignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignature", js.Any.fromFunction2(value))
+    inline def setAddEmptySignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignature", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddEmptySignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignatures", js.Any.fromFunction1(value))
+    inline def setAddEmptySignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignatures", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisconnectSignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignature", js.Any.fromFunction2(value))
+    inline def setDisconnectSignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignature", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisconnectSignatureEx(value: (IObjVer, String, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatureEx", js.Any.fromFunction3(value))
+    inline def setDisconnectSignatureEx(value: (IObjVer, String, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatureEx", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDisconnectSignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatures", js.Any.fromFunction1(value))
+    inline def setDisconnectSignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatures", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisconnectSignaturesEx(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignaturesEx", js.Any.fromFunction2(value))
+    inline def setDisconnectSignaturesEx(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignaturesEx", js.Any.fromFunction2(value))
   }
 }

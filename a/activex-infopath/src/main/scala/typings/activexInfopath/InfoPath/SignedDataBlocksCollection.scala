@@ -8,15 +8,14 @@ trait SignedDataBlocksCollection extends StObject {
   
   val Count: Double
   
-  @JSName("InfoPath.SignedDataBlocksCollection_typekey")
+  /* private */ @JSName("InfoPath.SignedDataBlocksCollection_typekey")
   var InfoPathDotSignedDataBlocksCollection_typekey: SignedDataBlocksCollection
   
   def Item(varIndex: js.Any): SignedDataBlockObject
 }
 object SignedDataBlocksCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     InfoPathDotSignedDataBlocksCollection_typekey: SignedDataBlocksCollection,
     Item: js.Any => SignedDataBlockObject
@@ -26,16 +25,12 @@ object SignedDataBlocksCollection {
     __obj.asInstanceOf[SignedDataBlocksCollection]
   }
   
-  @scala.inline
-  implicit class SignedDataBlocksCollectionMutableBuilder[Self <: SignedDataBlocksCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SignedDataBlocksCollection](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotSignedDataBlocksCollection_typekey(value: SignedDataBlocksCollection): Self = StObject.set(x, "InfoPath.SignedDataBlocksCollection_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSignedDataBlocksCollection_typekey(value: SignedDataBlocksCollection): Self = StObject.set(x, "InfoPath.SignedDataBlocksCollection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => SignedDataBlockObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => SignedDataBlockObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

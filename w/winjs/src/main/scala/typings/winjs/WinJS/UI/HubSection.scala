@@ -41,8 +41,7 @@ trait HubSection extends StObject {
 }
 object HubSection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentElement: HTMLElement,
     dispose: () => Unit,
     element: HTMLElement,
@@ -53,22 +52,16 @@ object HubSection {
     __obj.asInstanceOf[HubSection]
   }
   
-  @scala.inline
-  implicit class HubSectionMutableBuilder[Self <: HubSection] (val x: Self) extends AnyVal {
+  extension [Self <: HubSection](x: Self) {
     
-    @scala.inline
-    def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHeaderStatic(value: Boolean): Self = StObject.set(x, "isHeaderStatic", value.asInstanceOf[js.Any])
+    inline def setIsHeaderStatic(value: Boolean): Self = StObject.set(x, "isHeaderStatic", value.asInstanceOf[js.Any])
   }
 }

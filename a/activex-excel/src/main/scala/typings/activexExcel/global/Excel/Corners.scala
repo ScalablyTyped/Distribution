@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Corners")
 @js.native
-class Corners protected ()
+/* private */ class Corners ()
   extends StObject
      with typings.activexExcel.Excel.Corners {
   
@@ -17,7 +17,7 @@ class Corners protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Corners_typekey")
   var ExcelDotCorners_typekey: typings.activexExcel.Excel.Corners = js.native
   

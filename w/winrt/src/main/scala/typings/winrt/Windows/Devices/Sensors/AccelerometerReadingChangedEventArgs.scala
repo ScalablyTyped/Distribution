@@ -9,8 +9,7 @@ trait AccelerometerReadingChangedEventArgs
      with IAccelerometerReadingChangedEventArgs
 object AccelerometerReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: AccelerometerReading): AccelerometerReadingChangedEventArgs = {
+  inline def apply(reading: AccelerometerReading): AccelerometerReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerReadingChangedEventArgs]
   }

@@ -30,8 +30,7 @@ trait XOOXMLDocumentPropertiesImporter
 }
 object XOOXMLDocumentPropertiesImporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     importProperties: (XStorage, XDocumentProperties) => Unit,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object XOOXMLDocumentPropertiesImporter {
     __obj.asInstanceOf[XOOXMLDocumentPropertiesImporter]
   }
   
-  @scala.inline
-  implicit class XOOXMLDocumentPropertiesImporterMutableBuilder[Self <: XOOXMLDocumentPropertiesImporter] (val x: Self) extends AnyVal {
+  extension [Self <: XOOXMLDocumentPropertiesImporter](x: Self) {
     
-    @scala.inline
-    def setImportProperties(value: (XStorage, XDocumentProperties) => Unit): Self = StObject.set(x, "importProperties", js.Any.fromFunction2(value))
+    inline def setImportProperties(value: (XStorage, XDocumentProperties) => Unit): Self = StObject.set(x, "importProperties", js.Any.fromFunction2(value))
   }
 }

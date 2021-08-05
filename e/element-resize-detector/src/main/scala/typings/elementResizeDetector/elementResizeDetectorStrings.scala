@@ -8,11 +8,9 @@ object elementResizeDetectorStrings {
   
   @js.native
   sealed trait `object` extends StObject
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait scroll extends StObject
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
 }

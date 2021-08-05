@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](config: RouteConfig[T]): Matcher[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Matcher[T]]
+  inline def default[T](config: RouteConfig[T]): Matcher[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Matcher[T]]
   
   trait Match[T] extends StObject {
     
@@ -24,26 +23,20 @@ object mod {
   }
   object Match {
     
-    @scala.inline
-    def apply[T](page: T, url: String): Match[T] = {
+    inline def apply[T](page: T, url: String): Match[T] = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], params = null)
       __obj.asInstanceOf[Match[T]]
     }
     
-    @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match[?], T] (val x: Self & Match[T]) extends AnyVal {
+    extension [Self <: Match[?], T](x: Self & Match[T]) {
       
-      @scala.inline
-      def setPage(value: T): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: T): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsNull: Self = StObject.set(x, "params", null)
+      inline def setParamsNull: Self = StObject.set(x, "params", null)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

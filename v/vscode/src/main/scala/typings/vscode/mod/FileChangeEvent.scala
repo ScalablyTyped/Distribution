@@ -18,20 +18,16 @@ trait FileChangeEvent extends StObject {
 }
 object FileChangeEvent {
   
-  @scala.inline
-  def apply(`type`: FileChangeType, uri: Uri): FileChangeEvent = {
+  inline def apply(`type`: FileChangeType, uri: Uri): FileChangeEvent = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileChangeEvent]
   }
   
-  @scala.inline
-  implicit class FileChangeEventMutableBuilder[Self <: FileChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FileChangeEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: FileChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FileChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

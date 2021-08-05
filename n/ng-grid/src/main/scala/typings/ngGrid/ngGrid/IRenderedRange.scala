@@ -12,19 +12,15 @@ trait IRenderedRange extends StObject {
 }
 object IRenderedRange {
   
-  @scala.inline
-  def apply(bottomRow: Double, topRow: Double): IRenderedRange = {
+  inline def apply(bottomRow: Double, topRow: Double): IRenderedRange = {
     val __obj = js.Dynamic.literal(bottomRow = bottomRow.asInstanceOf[js.Any], topRow = topRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderedRange]
   }
   
-  @scala.inline
-  implicit class IRenderedRangeMutableBuilder[Self <: IRenderedRange] (val x: Self) extends AnyVal {
+  extension [Self <: IRenderedRange](x: Self) {
     
-    @scala.inline
-    def setBottomRow(value: Double): Self = StObject.set(x, "bottomRow", value.asInstanceOf[js.Any])
+    inline def setBottomRow(value: Double): Self = StObject.set(x, "bottomRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopRow(value: Double): Self = StObject.set(x, "topRow", value.asInstanceOf[js.Any])
+    inline def setTopRow(value: Double): Self = StObject.set(x, "topRow", value.asInstanceOf[js.Any])
   }
 }

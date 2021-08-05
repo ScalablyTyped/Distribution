@@ -15,23 +15,18 @@ object anon {
   }
   object DebouncedSearch {
     
-    @scala.inline
-    def apply(debouncedSearch: String => Unit, filteredIconsMetadata: js.Array[IconMetadata]): DebouncedSearch = {
+    inline def apply(debouncedSearch: String => Unit, filteredIconsMetadata: js.Array[IconMetadata]): DebouncedSearch = {
       val __obj = js.Dynamic.literal(debouncedSearch = js.Any.fromFunction1(debouncedSearch), filteredIconsMetadata = filteredIconsMetadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DebouncedSearch]
     }
     
-    @scala.inline
-    implicit class DebouncedSearchMutableBuilder[Self <: DebouncedSearch] (val x: Self) extends AnyVal {
+    extension [Self <: DebouncedSearch](x: Self) {
       
-      @scala.inline
-      def setDebouncedSearch(value: String => Unit): Self = StObject.set(x, "debouncedSearch", js.Any.fromFunction1(value))
+      inline def setDebouncedSearch(value: String => Unit): Self = StObject.set(x, "debouncedSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilteredIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "filteredIconsMetadata", value.asInstanceOf[js.Any])
+      inline def setFilteredIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "filteredIconsMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "filteredIconsMetadata", js.Array(value :_*))
+      inline def setFilteredIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "filteredIconsMetadata", js.Array(value :_*))
     }
   }
 }

@@ -17,31 +17,23 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(): Color = {
+  inline def apply(): Color = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
+    inline def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
-    @scala.inline
-    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
+    inline def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
-    @scala.inline
-    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+    inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+    inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
   }
 }

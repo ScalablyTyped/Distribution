@@ -12,6 +12,5 @@ object withGridMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withGrid(StoryFn: StoryFn[js.Any], context: StoryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("withGrid")(StoryFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def withGrid(StoryFn: StoryFn[js.Any], context: StoryContext): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("withGrid")(StoryFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

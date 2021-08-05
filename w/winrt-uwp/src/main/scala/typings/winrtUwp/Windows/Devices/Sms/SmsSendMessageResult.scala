@@ -31,8 +31,7 @@ trait SmsSendMessageResult extends StObject {
 }
 object SmsSendMessageResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellularClass: CellularClass,
     isErrorTransient: Boolean,
     isSuccessful: Boolean,
@@ -45,28 +44,20 @@ object SmsSendMessageResult {
     __obj.asInstanceOf[SmsSendMessageResult]
   }
   
-  @scala.inline
-  implicit class SmsSendMessageResultMutableBuilder[Self <: SmsSendMessageResult] (val x: Self) extends AnyVal {
+  extension [Self <: SmsSendMessageResult](x: Self) {
     
-    @scala.inline
-    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
+    inline def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsErrorTransient(value: Boolean): Self = StObject.set(x, "isErrorTransient", value.asInstanceOf[js.Any])
+    inline def setIsErrorTransient(value: Boolean): Self = StObject.set(x, "isErrorTransient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
+    inline def setIsSuccessful(value: Boolean): Self = StObject.set(x, "isSuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageReferenceNumbers(value: IVectorView[Double]): Self = StObject.set(x, "messageReferenceNumbers", value.asInstanceOf[js.Any])
+    inline def setMessageReferenceNumbers(value: IVectorView[Double]): Self = StObject.set(x, "messageReferenceNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModemErrorCode(value: SmsModemErrorCode): Self = StObject.set(x, "modemErrorCode", value.asInstanceOf[js.Any])
+    inline def setModemErrorCode(value: SmsModemErrorCode): Self = StObject.set(x, "modemErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkCauseCode(value: Double): Self = StObject.set(x, "networkCauseCode", value.asInstanceOf[js.Any])
+    inline def setNetworkCauseCode(value: Double): Self = StObject.set(x, "networkCauseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportFailureCause(value: Double): Self = StObject.set(x, "transportFailureCause", value.asInstanceOf[js.Any])
+    inline def setTransportFailureCause(value: Double): Self = StObject.set(x, "transportFailureCause", value.asInstanceOf[js.Any])
   }
 }

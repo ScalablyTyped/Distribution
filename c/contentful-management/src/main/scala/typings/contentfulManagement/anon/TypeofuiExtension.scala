@@ -17,8 +17,7 @@ trait TypeofuiExtension extends StObject {
 }
 object TypeofuiExtension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapUiExtension: (AxiosInstance, UIExtensionProps) => UIExtension,
     wrapUiExtensionCollection: (AxiosInstance, CollectionProp[UIExtensionProps]) => Collection[UIExtension, UIExtensionProps]
   ): TypeofuiExtension = {
@@ -26,14 +25,11 @@ object TypeofuiExtension {
     __obj.asInstanceOf[TypeofuiExtension]
   }
   
-  @scala.inline
-  implicit class TypeofuiExtensionMutableBuilder[Self <: TypeofuiExtension] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofuiExtension](x: Self) {
     
-    @scala.inline
-    def setWrapUiExtension(value: (AxiosInstance, UIExtensionProps) => UIExtension): Self = StObject.set(x, "wrapUiExtension", js.Any.fromFunction2(value))
+    inline def setWrapUiExtension(value: (AxiosInstance, UIExtensionProps) => UIExtension): Self = StObject.set(x, "wrapUiExtension", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapUiExtensionCollection(
+    inline def setWrapUiExtensionCollection(
       value: (AxiosInstance, CollectionProp[UIExtensionProps]) => Collection[UIExtension, UIExtensionProps]
     ): Self = StObject.set(x, "wrapUiExtensionCollection", js.Any.fromFunction2(value))
   }

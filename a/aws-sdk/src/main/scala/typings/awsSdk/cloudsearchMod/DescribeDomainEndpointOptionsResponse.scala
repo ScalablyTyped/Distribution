@@ -13,19 +13,15 @@ trait DescribeDomainEndpointOptionsResponse extends StObject {
 }
 object DescribeDomainEndpointOptionsResponse {
   
-  @scala.inline
-  def apply(): DescribeDomainEndpointOptionsResponse = {
+  inline def apply(): DescribeDomainEndpointOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDomainEndpointOptionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDomainEndpointOptionsResponseMutableBuilder[Self <: DescribeDomainEndpointOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDomainEndpointOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setDomainEndpointOptions(value: DomainEndpointOptionsStatus): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
+    inline def setDomainEndpointOptions(value: DomainEndpointOptionsStatus): Self = StObject.set(x, "DomainEndpointOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "DomainEndpointOptions", js.undefined)
+    inline def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "DomainEndpointOptions", js.undefined)
   }
 }

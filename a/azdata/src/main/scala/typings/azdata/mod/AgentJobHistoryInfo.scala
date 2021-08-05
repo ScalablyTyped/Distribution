@@ -42,8 +42,7 @@ trait AgentJobHistoryInfo extends StObject {
 }
 object AgentJobHistoryInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     instanceId: Double,
     jobId: String,
     jobName: String,
@@ -66,61 +65,42 @@ object AgentJobHistoryInfo {
     __obj.asInstanceOf[AgentJobHistoryInfo]
   }
   
-  @scala.inline
-  implicit class AgentJobHistoryInfoMutableBuilder[Self <: AgentJobHistoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AgentJobHistoryInfo](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorEmailed(value: String): Self = StObject.set(x, "operatorEmailed", value.asInstanceOf[js.Any])
+    inline def setOperatorEmailed(value: String): Self = StObject.set(x, "operatorEmailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNetsent(value: String): Self = StObject.set(x, "operatorNetsent", value.asInstanceOf[js.Any])
+    inline def setOperatorNetsent(value: String): Self = StObject.set(x, "operatorNetsent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorPaged(value: String): Self = StObject.set(x, "operatorPaged", value.asInstanceOf[js.Any])
+    inline def setOperatorPaged(value: String): Self = StObject.set(x, "operatorPaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetriesAttempted(value: String): Self = StObject.set(x, "retriesAttempted", value.asInstanceOf[js.Any])
+    inline def setRetriesAttempted(value: String): Self = StObject.set(x, "retriesAttempted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunDate(value: String): Self = StObject.set(x, "runDate", value.asInstanceOf[js.Any])
+    inline def setRunDate(value: String): Self = StObject.set(x, "runDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunDuration(value: String): Self = StObject.set(x, "runDuration", value.asInstanceOf[js.Any])
+    inline def setRunDuration(value: String): Self = StObject.set(x, "runDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunStatus(value: Double): Self = StObject.set(x, "runStatus", value.asInstanceOf[js.Any])
+    inline def setRunStatus(value: Double): Self = StObject.set(x, "runStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlMessageId(value: String): Self = StObject.set(x, "sqlMessageId", value.asInstanceOf[js.Any])
+    inline def setSqlMessageId(value: String): Self = StObject.set(x, "sqlMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlSeverity(value: String): Self = StObject.set(x, "sqlSeverity", value.asInstanceOf[js.Any])
+    inline def setSqlSeverity(value: String): Self = StObject.set(x, "sqlSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
+    inline def setStepName(value: String): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSteps(value: js.Array[AgentJobStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[AgentJobStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsVarargs(value: AgentJobStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: AgentJobStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

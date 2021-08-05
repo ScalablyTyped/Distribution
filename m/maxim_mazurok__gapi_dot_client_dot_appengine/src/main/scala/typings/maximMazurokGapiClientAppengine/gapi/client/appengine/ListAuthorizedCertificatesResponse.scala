@@ -14,28 +14,21 @@ trait ListAuthorizedCertificatesResponse extends StObject {
 }
 object ListAuthorizedCertificatesResponse {
   
-  @scala.inline
-  def apply(): ListAuthorizedCertificatesResponse = {
+  inline def apply(): ListAuthorizedCertificatesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAuthorizedCertificatesResponse]
   }
   
-  @scala.inline
-  implicit class ListAuthorizedCertificatesResponseMutableBuilder[Self <: ListAuthorizedCertificatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAuthorizedCertificatesResponse](x: Self) {
     
-    @scala.inline
-    def setCertificates(value: js.Array[AuthorizedCertificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: js.Array[AuthorizedCertificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
+    inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    @scala.inline
-    def setCertificatesVarargs(value: AuthorizedCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: AuthorizedCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

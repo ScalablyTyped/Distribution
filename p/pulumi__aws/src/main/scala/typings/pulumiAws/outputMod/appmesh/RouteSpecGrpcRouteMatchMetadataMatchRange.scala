@@ -18,19 +18,15 @@ trait RouteSpecGrpcRouteMatchMetadataMatchRange extends StObject {
 }
 object RouteSpecGrpcRouteMatchMetadataMatchRange {
   
-  @scala.inline
-  def apply(end: Double, start: Double): RouteSpecGrpcRouteMatchMetadataMatchRange = {
+  inline def apply(end: Double, start: Double): RouteSpecGrpcRouteMatchMetadataMatchRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecGrpcRouteMatchMetadataMatchRange]
   }
   
-  @scala.inline
-  implicit class RouteSpecGrpcRouteMatchMetadataMatchRangeMutableBuilder[Self <: RouteSpecGrpcRouteMatchMetadataMatchRange] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecGrpcRouteMatchMetadataMatchRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

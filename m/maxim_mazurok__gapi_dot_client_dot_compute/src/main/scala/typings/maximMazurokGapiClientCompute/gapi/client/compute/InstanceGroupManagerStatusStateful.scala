@@ -18,25 +18,19 @@ trait InstanceGroupManagerStatusStateful extends StObject {
 }
 object InstanceGroupManagerStatusStateful {
   
-  @scala.inline
-  def apply(): InstanceGroupManagerStatusStateful = {
+  inline def apply(): InstanceGroupManagerStatusStateful = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagerStatusStateful]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagerStatusStatefulMutableBuilder[Self <: InstanceGroupManagerStatusStateful] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagerStatusStateful](x: Self) {
     
-    @scala.inline
-    def setHasStatefulConfig(value: Boolean): Self = StObject.set(x, "hasStatefulConfig", value.asInstanceOf[js.Any])
+    inline def setHasStatefulConfig(value: Boolean): Self = StObject.set(x, "hasStatefulConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasStatefulConfigUndefined: Self = StObject.set(x, "hasStatefulConfig", js.undefined)
+    inline def setHasStatefulConfigUndefined: Self = StObject.set(x, "hasStatefulConfig", js.undefined)
     
-    @scala.inline
-    def setPerInstanceConfigs(value: InstanceGroupManagerStatusStatefulPerInstanceConfigs): Self = StObject.set(x, "perInstanceConfigs", value.asInstanceOf[js.Any])
+    inline def setPerInstanceConfigs(value: InstanceGroupManagerStatusStatefulPerInstanceConfigs): Self = StObject.set(x, "perInstanceConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerInstanceConfigsUndefined: Self = StObject.set(x, "perInstanceConfigs", js.undefined)
+    inline def setPerInstanceConfigsUndefined: Self = StObject.set(x, "perInstanceConfigs", js.undefined)
   }
 }

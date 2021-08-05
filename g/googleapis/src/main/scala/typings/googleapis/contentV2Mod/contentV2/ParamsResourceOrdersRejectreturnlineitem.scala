@@ -35,37 +35,27 @@ trait ParamsResourceOrdersRejectreturnlineitem
 }
 object ParamsResourceOrdersRejectreturnlineitem {
   
-  @scala.inline
-  def apply(): ParamsResourceOrdersRejectreturnlineitem = {
+  inline def apply(): ParamsResourceOrdersRejectreturnlineitem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceOrdersRejectreturnlineitem]
   }
   
-  @scala.inline
-  implicit class ParamsResourceOrdersRejectreturnlineitemMutableBuilder[Self <: ParamsResourceOrdersRejectreturnlineitem] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceOrdersRejectreturnlineitem](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaOrdersRejectReturnLineItemRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaOrdersRejectReturnLineItemRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

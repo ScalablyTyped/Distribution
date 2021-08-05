@@ -16,22 +16,17 @@ trait SchemaGetOrderNotesResponse extends StObject {
 }
 object SchemaGetOrderNotesResponse {
   
-  @scala.inline
-  def apply(): SchemaGetOrderNotesResponse = {
+  inline def apply(): SchemaGetOrderNotesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetOrderNotesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetOrderNotesResponseMutableBuilder[Self <: SchemaGetOrderNotesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetOrderNotesResponse](x: Self) {
     
-    @scala.inline
-    def setNotes(value: js.Array[SchemaMarketplaceNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: js.Array[SchemaMarketplaceNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setNotesVarargs(value: SchemaMarketplaceNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: SchemaMarketplaceNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
   }
 }

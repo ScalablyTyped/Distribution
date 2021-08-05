@@ -23,34 +23,25 @@ trait DescribeElasticGpusResult extends StObject {
 }
 object DescribeElasticGpusResult {
   
-  @scala.inline
-  def apply(): DescribeElasticGpusResult = {
+  inline def apply(): DescribeElasticGpusResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeElasticGpusResult]
   }
   
-  @scala.inline
-  implicit class DescribeElasticGpusResultMutableBuilder[Self <: DescribeElasticGpusResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticGpusResult](x: Self) {
     
-    @scala.inline
-    def setElasticGpuSet(value: ElasticGpuSet): Self = StObject.set(x, "ElasticGpuSet", value.asInstanceOf[js.Any])
+    inline def setElasticGpuSet(value: ElasticGpuSet): Self = StObject.set(x, "ElasticGpuSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticGpuSetUndefined: Self = StObject.set(x, "ElasticGpuSet", js.undefined)
+    inline def setElasticGpuSetUndefined: Self = StObject.set(x, "ElasticGpuSet", js.undefined)
     
-    @scala.inline
-    def setElasticGpuSetVarargs(value: ElasticGpus*): Self = StObject.set(x, "ElasticGpuSet", js.Array(value :_*))
+    inline def setElasticGpuSetVarargs(value: ElasticGpus*): Self = StObject.set(x, "ElasticGpuSet", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

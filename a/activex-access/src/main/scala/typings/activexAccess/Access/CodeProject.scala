@@ -9,7 +9,7 @@ trait CodeProject extends StObject {
   
   val AccessConnection: typings.activexAdodb.ADODB.Connection = js.native
   
-  @JSName("Access.CodeProject_typekey")
+  /* private */ @JSName("Access.CodeProject_typekey")
   var AccessDotCodeProject_typekey: CodeProject = js.native
   
   def AddSharedImage(SharedImageName: String, FileName: String): Unit = js.native

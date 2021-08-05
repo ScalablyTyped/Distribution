@@ -18,31 +18,23 @@ trait Credentials extends StObject {
 }
 object Credentials {
   
-  @scala.inline
-  def apply(): Credentials = {
+  inline def apply(): Credentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Credentials]
   }
   
-  @scala.inline
-  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+  extension [Self <: Credentials](x: Self) {
     
-    @scala.inline
-    def setCredential_details(value: CredentialDetails): Self = StObject.set(x, "credential_details", value.asInstanceOf[js.Any])
+    inline def setCredential_details(value: CredentialDetails): Self = StObject.set(x, "credential_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_detailsUndefined: Self = StObject.set(x, "credential_details", js.undefined)
+    inline def setCredential_detailsUndefined: Self = StObject.set(x, "credential_details", js.undefined)
     
-    @scala.inline
-    def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
+    inline def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_idUndefined: Self = StObject.set(x, "credential_id", js.undefined)
+    inline def setCredential_idUndefined: Self = StObject.set(x, "credential_id", js.undefined)
     
-    @scala.inline
-    def setSource_type(value: String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
+    inline def setSource_type(value: String): Self = StObject.set(x, "source_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
+    inline def setSource_typeUndefined: Self = StObject.set(x, "source_type", js.undefined)
   }
 }

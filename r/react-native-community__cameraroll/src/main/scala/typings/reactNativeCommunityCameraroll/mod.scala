@@ -18,44 +18,35 @@ object mod {
   /**
     * Delete a photo from the camera roll or media library. photoUris is an array of photo uri's.
     */
-  @scala.inline
-  def deletePhotos(photoUris: js.Array[String]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("deletePhotos")(photoUris.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def deletePhotos(photoUris: js.Array[String]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("deletePhotos")(photoUris.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def getAlbums(params: GetAlbumsParams): js.Promise[js.Array[Album]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlbums")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Album]]]
+  inline def getAlbums(params: GetAlbumsParams): js.Promise[js.Array[Album]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlbums")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Album]]]
   
   /**
     * Returns a Promise with photo identifier objects from the local camera
     * roll of the device matching shape defined by `getPhotosReturnChecker`.
     */
-  @scala.inline
-  def getPhotos(params: GetPhotosParams): js.Promise[PhotoIdentifiersPage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPhotos")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PhotoIdentifiersPage]]
+  inline def getPhotos(params: GetPhotosParams): js.Promise[PhotoIdentifiersPage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPhotos")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PhotoIdentifiersPage]]
   
   /**
     * Saves the photo or video to the camera roll or photo library.
     */
-  @scala.inline
-  def save(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def save(tag: String, options: SaveToCameraRollOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def save(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def save(tag: String, options: SaveToCameraRollOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * `CameraRoll.saveImageWithTag()` is deprecated. Use `CameraRoll.saveToCameraRoll()` instead.
     */
-  @scala.inline
-  def saveImageWithTag(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveImageWithTag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def saveImageWithTag(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveImageWithTag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /**
     * Saves the photo or video to the camera roll or photo library.
     */
-  @scala.inline
-  def saveToCameraRoll(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def saveToCameraRoll(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def saveToCameraRoll_photo(tag: String, `type`: photo): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def saveToCameraRoll_photo(tag: String, `type`: photo): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def saveToCameraRoll_video(tag: String, `type`: video): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def saveToCameraRoll_video(tag: String, `type`: video): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait Album extends StObject {
     
@@ -65,20 +56,16 @@ object mod {
   }
   object Album {
     
-    @scala.inline
-    def apply(count: Double, title: String): Album = {
+    inline def apply(count: Double, title: String): Album = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Album]
     }
     
-    @scala.inline
-    implicit class AlbumMutableBuilder[Self <: Album] (val x: Self) extends AnyVal {
+    extension [Self <: Album](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,14 +77,11 @@ object mod {
   trait AssetType extends StObject
   object AssetType {
     
-    @scala.inline
-    def All: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All = "All".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All]
+    inline def All: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All = "All".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All]
     
-    @scala.inline
-    def Photos: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Photos = "Photos".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Photos]
+    inline def Photos: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Photos = "Photos".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Photos]
     
-    @scala.inline
-    def Videos: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Videos = "Videos".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Videos]
+    inline def Videos: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Videos = "Videos".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Videos]
   }
   
   trait GetAlbumsParams extends StObject {
@@ -106,20 +90,16 @@ object mod {
   }
   object GetAlbumsParams {
     
-    @scala.inline
-    def apply(): GetAlbumsParams = {
+    inline def apply(): GetAlbumsParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAlbumsParams]
     }
     
-    @scala.inline
-    implicit class GetAlbumsParamsMutableBuilder[Self <: GetAlbumsParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetAlbumsParams](x: Self) {
       
-      @scala.inline
-      def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+      inline def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+      inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     }
   }
   
@@ -184,71 +164,50 @@ object mod {
   }
   object GetPhotosParams {
     
-    @scala.inline
-    def apply(first: Double): GetPhotosParams = {
+    inline def apply(first: Double): GetPhotosParams = {
       val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPhotosParams]
     }
     
-    @scala.inline
-    implicit class GetPhotosParamsMutableBuilder[Self <: GetPhotosParams] (val x: Self) extends AnyVal {
+    extension [Self <: GetPhotosParams](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+      inline def setAssetType(value: AssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+      inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
       
-      @scala.inline
-      def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromTime(value: Double): Self = StObject.set(x, "fromTime", value.asInstanceOf[js.Any])
+      inline def setFromTime(value: Double): Self = StObject.set(x, "fromTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromTimeUndefined: Self = StObject.set(x, "fromTime", js.undefined)
+      inline def setFromTimeUndefined: Self = StObject.set(x, "fromTime", js.undefined)
       
-      @scala.inline
-      def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+      inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+      inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
       
-      @scala.inline
-      def setGroupTypes(value: GroupType): Self = StObject.set(x, "groupTypes", value.asInstanceOf[js.Any])
+      inline def setGroupTypes(value: GroupType): Self = StObject.set(x, "groupTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupTypesUndefined: Self = StObject.set(x, "groupTypes", js.undefined)
+      inline def setGroupTypesUndefined: Self = StObject.set(x, "groupTypes", js.undefined)
       
-      @scala.inline
-      def setInclude(value: js.Array[Include]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[Include]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: Include*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: Include*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+      inline def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
+      inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
       
-      @scala.inline
-      def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+      inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setToTime(value: Double): Self = StObject.set(x, "toTime", value.asInstanceOf[js.Any])
+      inline def setToTime(value: Double): Self = StObject.set(x, "toTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToTimeUndefined: Self = StObject.set(x, "toTime", js.undefined)
+      inline def setToTimeUndefined: Self = StObject.set(x, "toTime", js.undefined)
     }
   }
   
@@ -264,26 +223,19 @@ object mod {
   trait GroupType extends StObject
   object GroupType {
     
-    @scala.inline
-    def Album: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Album = "Album".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Album]
+    inline def Album: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Album = "Album".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Album]
     
-    @scala.inline
-    def All: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All = "All".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All]
+    inline def All: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All = "All".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.All]
     
-    @scala.inline
-    def Event: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Event = "Event".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Event]
+    inline def Event: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Event = "Event".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Event]
     
-    @scala.inline
-    def Faces: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Faces = "Faces".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Faces]
+    inline def Faces: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Faces = "Faces".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Faces]
     
-    @scala.inline
-    def Library: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Library = "Library".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Library]
+    inline def Library: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Library = "Library".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Library]
     
-    @scala.inline
-    def PhotoStream: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.PhotoStream = "PhotoStream".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.PhotoStream]
+    inline def PhotoStream: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.PhotoStream = "PhotoStream".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.PhotoStream]
     
-    @scala.inline
-    def SavedPhotos: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.SavedPhotos = "SavedPhotos".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.SavedPhotos]
+    inline def SavedPhotos: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.SavedPhotos = "SavedPhotos".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.SavedPhotos]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -296,20 +248,15 @@ object mod {
   trait Include extends StObject
   object Include {
     
-    @scala.inline
-    def fileSize: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.fileSize = "fileSize".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.fileSize]
+    inline def fileSize: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.fileSize = "fileSize".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.fileSize]
     
-    @scala.inline
-    def filename: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.filename = "filename".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.filename]
+    inline def filename: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.filename = "filename".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.filename]
     
-    @scala.inline
-    def imageSize: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.imageSize = "imageSize".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.imageSize]
+    inline def imageSize: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.imageSize = "imageSize".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.imageSize]
     
-    @scala.inline
-    def location: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.location = "location".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.location]
+    inline def location: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.location = "location".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.location]
     
-    @scala.inline
-    def playableDuration: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.playableDuration = "playableDuration".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.playableDuration]
+    inline def playableDuration: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.playableDuration = "playableDuration".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.playableDuration]
   }
   
   trait PhotoIdentifier extends StObject {
@@ -318,17 +265,14 @@ object mod {
   }
   object PhotoIdentifier {
     
-    @scala.inline
-    def apply(node: Groupname): PhotoIdentifier = {
+    inline def apply(node: Groupname): PhotoIdentifier = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhotoIdentifier]
     }
     
-    @scala.inline
-    implicit class PhotoIdentifierMutableBuilder[Self <: PhotoIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoIdentifier](x: Self) {
       
-      @scala.inline
-      def setNode(value: Groupname): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Groupname): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -340,23 +284,18 @@ object mod {
   }
   object PhotoIdentifiersPage {
     
-    @scala.inline
-    def apply(edges: js.Array[PhotoIdentifier], page_info: Endcursor): PhotoIdentifiersPage = {
+    inline def apply(edges: js.Array[PhotoIdentifier], page_info: Endcursor): PhotoIdentifiersPage = {
       val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], page_info = page_info.asInstanceOf[js.Any])
       __obj.asInstanceOf[PhotoIdentifiersPage]
     }
     
-    @scala.inline
-    implicit class PhotoIdentifiersPageMutableBuilder[Self <: PhotoIdentifiersPage] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoIdentifiersPage](x: Self) {
       
-      @scala.inline
-      def setEdges(value: js.Array[PhotoIdentifier]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[PhotoIdentifier]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesVarargs(value: PhotoIdentifier*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: PhotoIdentifier*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
-      @scala.inline
-      def setPage_info(value: Endcursor): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
+      inline def setPage_info(value: Endcursor): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -368,26 +307,20 @@ object mod {
   }
   object SaveToCameraRollOptions {
     
-    @scala.inline
-    def apply(): SaveToCameraRollOptions = {
+    inline def apply(): SaveToCameraRollOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SaveToCameraRollOptions]
     }
     
-    @scala.inline
-    implicit class SaveToCameraRollOptionsMutableBuilder[Self <: SaveToCameraRollOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SaveToCameraRollOptions](x: Self) {
       
-      @scala.inline
-      def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+      inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+      inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
       
-      @scala.inline
-      def setType(value: photo | video | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: photo | video | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

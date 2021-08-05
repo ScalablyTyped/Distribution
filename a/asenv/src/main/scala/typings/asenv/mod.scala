@@ -10,21 +10,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEnv(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[String]
+  inline def getEnv(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[String]
   
-  @scala.inline
-  def isDevelopment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevelopment")().asInstanceOf[Boolean]
+  inline def isDevelopment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevelopment")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isProduction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProduction")().asInstanceOf[Boolean]
+  inline def isProduction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProduction")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTest(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTest")().asInstanceOf[Boolean]
+  inline def isTest(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTest")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def setEnv(env: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEnv(env: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def unlessProduction(handle: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unlessProduction")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def unlessProduction(handle: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unlessProduction")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

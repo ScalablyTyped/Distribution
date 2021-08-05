@@ -19,19 +19,15 @@ trait UpdateInformationEntry extends StObject {
 }
 object UpdateInformationEntry {
   
-  @scala.inline
-  def apply(Description: String, UpdateDocument: XElement): UpdateInformationEntry = {
+  inline def apply(Description: String, UpdateDocument: XElement): UpdateInformationEntry = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], UpdateDocument = UpdateDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInformationEntry]
   }
   
-  @scala.inline
-  implicit class UpdateInformationEntryMutableBuilder[Self <: UpdateInformationEntry] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInformationEntry](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDocument(value: XElement): Self = StObject.set(x, "UpdateDocument", value.asInstanceOf[js.Any])
+    inline def setUpdateDocument(value: XElement): Self = StObject.set(x, "UpdateDocument", value.asInstanceOf[js.Any])
   }
 }

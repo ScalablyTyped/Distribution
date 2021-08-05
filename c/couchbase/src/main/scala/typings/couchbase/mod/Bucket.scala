@@ -523,32 +523,24 @@ object Bucket {
     }
     object Meta {
       
-      @scala.inline
-      def apply(errors: js.Any, facets: js.Any, maxScore: Double, status: js.Any, took: Double, totalHits: Double): Meta = {
+      inline def apply(errors: js.Any, facets: js.Any, maxScore: Double, status: js.Any, took: Double, totalHits: Double): Meta = {
         val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], facets = facets.asInstanceOf[js.Any], maxScore = maxScore.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], took = took.asInstanceOf[js.Any], totalHits = totalHits.asInstanceOf[js.Any])
         __obj.asInstanceOf[Meta]
       }
       
-      @scala.inline
-      implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+      extension [Self <: Meta](x: Self) {
         
-        @scala.inline
-        def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFacets(value: js.Any): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
+        inline def setFacets(value: js.Any): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxScore(value: Double): Self = StObject.set(x, "maxScore", value.asInstanceOf[js.Any])
+        inline def setMaxScore(value: Double): Self = StObject.set(x, "maxScore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTook(value: Double): Self = StObject.set(x, "took", value.asInstanceOf[js.Any])
+        inline def setTook(value: Double): Self = StObject.set(x, "took", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotalHits(value: Double): Self = StObject.set(x, "totalHits", value.asInstanceOf[js.Any])
+        inline def setTotalHits(value: Double): Self = StObject.set(x, "totalHits", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -719,17 +711,14 @@ object Bucket {
     }
     object Meta {
       
-      @scala.inline
-      def apply(requestID: Double): typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta = {
+      inline def apply(requestID: Double): typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta = {
         val __obj = js.Dynamic.literal(requestID = requestID.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta]
       }
       
-      @scala.inline
-      implicit class MetaMutableBuilder[Self <: typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta] (val x: Self) extends AnyVal {
+      extension [Self <: typings.couchbase.mod.Bucket.N1qlQueryResponse.Meta](x: Self) {
         
-        @scala.inline
-        def setRequestID(value: Double): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
+        inline def setRequestID(value: Double): Self = StObject.set(x, "requestID", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -901,17 +890,14 @@ object Bucket {
     }
     object Meta {
       
-      @scala.inline
-      def apply(total_rows: Double): typings.couchbase.mod.Bucket.ViewQueryResponse.Meta = {
+      inline def apply(total_rows: Double): typings.couchbase.mod.Bucket.ViewQueryResponse.Meta = {
         val __obj = js.Dynamic.literal(total_rows = total_rows.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.couchbase.mod.Bucket.ViewQueryResponse.Meta]
       }
       
-      @scala.inline
-      implicit class MetaMutableBuilder[Self <: typings.couchbase.mod.Bucket.ViewQueryResponse.Meta] (val x: Self) extends AnyVal {
+      extension [Self <: typings.couchbase.mod.Bucket.ViewQueryResponse.Meta](x: Self) {
         
-        @scala.inline
-        def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
+        inline def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
       }
     }
   }

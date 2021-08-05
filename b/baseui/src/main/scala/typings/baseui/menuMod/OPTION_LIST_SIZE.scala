@@ -18,13 +18,10 @@ object OPTION_LIST_SIZE {
   @js.native
   val ^ : OPTION_LIST_SIZE = js.native
   
-  @scala.inline
-  implicit class OPTION_LIST_SIZEMutableBuilder[Self <: OPTION_LIST_SIZE] (val x: Self) extends AnyVal {
+  extension [Self <: OPTION_LIST_SIZE](x: Self) {
     
-    @scala.inline
-    def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: compact): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

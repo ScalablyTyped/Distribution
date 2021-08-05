@@ -16,19 +16,15 @@ trait DevicePickerFilter extends StObject {
 }
 object DevicePickerFilter {
   
-  @scala.inline
-  def apply(supportedDeviceClasses: IVector[DeviceClass], supportedDeviceSelectors: IVector[String]): DevicePickerFilter = {
+  inline def apply(supportedDeviceClasses: IVector[DeviceClass], supportedDeviceSelectors: IVector[String]): DevicePickerFilter = {
     val __obj = js.Dynamic.literal(supportedDeviceClasses = supportedDeviceClasses.asInstanceOf[js.Any], supportedDeviceSelectors = supportedDeviceSelectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePickerFilter]
   }
   
-  @scala.inline
-  implicit class DevicePickerFilterMutableBuilder[Self <: DevicePickerFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DevicePickerFilter](x: Self) {
     
-    @scala.inline
-    def setSupportedDeviceClasses(value: IVector[DeviceClass]): Self = StObject.set(x, "supportedDeviceClasses", value.asInstanceOf[js.Any])
+    inline def setSupportedDeviceClasses(value: IVector[DeviceClass]): Self = StObject.set(x, "supportedDeviceClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedDeviceSelectors(value: IVector[String]): Self = StObject.set(x, "supportedDeviceSelectors", value.asInstanceOf[js.Any])
+    inline def setSupportedDeviceSelectors(value: IVector[String]): Self = StObject.set(x, "supportedDeviceSelectors", value.asInstanceOf[js.Any])
   }
 }

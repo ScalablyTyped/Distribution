@@ -21,13 +21,11 @@ object Window {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Window = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Window]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Window = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Window]
   
   /* static member */
   @JSGlobal("kendo.ui.Window.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Window = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Window): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

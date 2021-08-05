@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QueryParamsHandling extends StObject
 object QueryParamsHandling {
   
-  @scala.inline
-  def _empty: typings.angularRouter.angularRouterStrings._empty = "".asInstanceOf[typings.angularRouter.angularRouterStrings._empty]
+  inline def _empty: typings.angularRouter.angularRouterStrings._empty = "".asInstanceOf[typings.angularRouter.angularRouterStrings._empty]
   
-  @scala.inline
-  def merge: typings.angularRouter.angularRouterStrings.merge = "merge".asInstanceOf[typings.angularRouter.angularRouterStrings.merge]
+  inline def merge: typings.angularRouter.angularRouterStrings.merge = "merge".asInstanceOf[typings.angularRouter.angularRouterStrings.merge]
   
-  @scala.inline
-  def preserve: typings.angularRouter.angularRouterStrings.preserve = "preserve".asInstanceOf[typings.angularRouter.angularRouterStrings.preserve]
+  inline def preserve: typings.angularRouter.angularRouterStrings.preserve = "preserve".asInstanceOf[typings.angularRouter.angularRouterStrings.preserve]
 }

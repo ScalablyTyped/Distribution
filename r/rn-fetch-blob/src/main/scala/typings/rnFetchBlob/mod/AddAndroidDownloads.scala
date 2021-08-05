@@ -44,55 +44,39 @@ trait AddAndroidDownloads extends StObject {
 }
 object AddAndroidDownloads {
   
-  @scala.inline
-  def apply(): AddAndroidDownloads = {
+  inline def apply(): AddAndroidDownloads = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddAndroidDownloads]
   }
   
-  @scala.inline
-  implicit class AddAndroidDownloadsMutableBuilder[Self <: AddAndroidDownloads] (val x: Self) extends AnyVal {
+  extension [Self <: AddAndroidDownloads](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setMediaScannable(value: Boolean): Self = StObject.set(x, "mediaScannable", value.asInstanceOf[js.Any])
+    inline def setMediaScannable(value: Boolean): Self = StObject.set(x, "mediaScannable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaScannableUndefined: Self = StObject.set(x, "mediaScannable", js.undefined)
+    inline def setMediaScannableUndefined: Self = StObject.set(x, "mediaScannable", js.undefined)
     
-    @scala.inline
-    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUseDownloadManager(value: Boolean): Self = StObject.set(x, "useDownloadManager", value.asInstanceOf[js.Any])
+    inline def setUseDownloadManager(value: Boolean): Self = StObject.set(x, "useDownloadManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDownloadManagerUndefined: Self = StObject.set(x, "useDownloadManager", js.undefined)
+    inline def setUseDownloadManagerUndefined: Self = StObject.set(x, "useDownloadManager", js.undefined)
   }
 }

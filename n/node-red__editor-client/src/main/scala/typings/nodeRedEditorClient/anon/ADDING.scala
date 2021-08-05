@@ -36,8 +36,7 @@ trait ADDING extends StObject {
 }
 object ADDING {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADDING: Double,
     DEFAULT: Double,
     EDITING: Double,
@@ -57,49 +56,34 @@ object ADDING {
     __obj.asInstanceOf[ADDING]
   }
   
-  @scala.inline
-  implicit class ADDINGMutableBuilder[Self <: ADDING] (val x: Self) extends AnyVal {
+  extension [Self <: ADDING](x: Self) {
     
-    @scala.inline
-    def setADDING(value: Double): Self = StObject.set(x, "ADDING", value.asInstanceOf[js.Any])
+    inline def setADDING(value: Double): Self = StObject.set(x, "ADDING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDEFAULT(value: Double): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
+    inline def setDEFAULT(value: Double): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEDITING(value: Double): Self = StObject.set(x, "EDITING", value.asInstanceOf[js.Any])
+    inline def setEDITING(value: Double): Self = StObject.set(x, "EDITING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXPORT(value: Double): Self = StObject.set(x, "EXPORT", value.asInstanceOf[js.Any])
+    inline def setEXPORT(value: Double): Self = StObject.set(x, "EXPORT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGROUP_DRAGGING(value: Double): Self = StObject.set(x, "GROUP_DRAGGING", value.asInstanceOf[js.Any])
+    inline def setGROUP_DRAGGING(value: Double): Self = StObject.set(x, "GROUP_DRAGGING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGROUP_RESIZE(value: Double): Self = StObject.set(x, "GROUP_RESIZE", value.asInstanceOf[js.Any])
+    inline def setGROUP_RESIZE(value: Double): Self = StObject.set(x, "GROUP_RESIZE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIMPORT(value: Double): Self = StObject.set(x, "IMPORT", value.asInstanceOf[js.Any])
+    inline def setIMPORT(value: Double): Self = StObject.set(x, "IMPORT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIMPORT_DRAGGING(value: Double): Self = StObject.set(x, "IMPORT_DRAGGING", value.asInstanceOf[js.Any])
+    inline def setIMPORT_DRAGGING(value: Double): Self = StObject.set(x, "IMPORT_DRAGGING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJOINING(value: Double): Self = StObject.set(x, "JOINING", value.asInstanceOf[js.Any])
+    inline def setJOINING(value: Double): Self = StObject.set(x, "JOINING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMOVING(value: Double): Self = StObject.set(x, "MOVING", value.asInstanceOf[js.Any])
+    inline def setMOVING(value: Double): Self = StObject.set(x, "MOVING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMOVING_ACTIVE(value: Double): Self = StObject.set(x, "MOVING_ACTIVE", value.asInstanceOf[js.Any])
+    inline def setMOVING_ACTIVE(value: Double): Self = StObject.set(x, "MOVING_ACTIVE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPANNING(value: Double): Self = StObject.set(x, "PANNING", value.asInstanceOf[js.Any])
+    inline def setPANNING(value: Double): Self = StObject.set(x, "PANNING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUICK_JOINING(value: Double): Self = StObject.set(x, "QUICK_JOINING", value.asInstanceOf[js.Any])
+    inline def setQUICK_JOINING(value: Double): Self = StObject.set(x, "QUICK_JOINING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSELECTING_NODE(value: Double): Self = StObject.set(x, "SELECTING_NODE", value.asInstanceOf[js.Any])
+    inline def setSELECTING_NODE(value: Double): Self = StObject.set(x, "SELECTING_NODE", value.asInstanceOf[js.Any])
   }
 }

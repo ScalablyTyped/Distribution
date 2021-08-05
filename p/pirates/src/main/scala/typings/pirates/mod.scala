@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addHook(hook: Hook): RevertFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(hook.asInstanceOf[js.Any]).asInstanceOf[RevertFunction]
-  @scala.inline
-  def addHook(hook: Hook, opts: Options): RevertFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(hook.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RevertFunction]
+  inline def addHook(hook: Hook): RevertFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(hook.asInstanceOf[js.Any]).asInstanceOf[RevertFunction]
+  inline def addHook(hook: Hook, opts: Options): RevertFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("addHook")(hook.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RevertFunction]
   
   type Hook = js.Function2[/* code */ String, /* filename */ String, String]
   
@@ -40,35 +38,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExts(value: js.Array[String]): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
+      inline def setExts(value: js.Array[String]): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtsUndefined: Self = StObject.set(x, "exts", js.undefined)
+      inline def setExtsUndefined: Self = StObject.set(x, "exts", js.undefined)
       
-      @scala.inline
-      def setExtsVarargs(value: String*): Self = StObject.set(x, "exts", js.Array(value :_*))
+      inline def setExtsVarargs(value: String*): Self = StObject.set(x, "exts", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreNodeModules(value: Boolean): Self = StObject.set(x, "ignoreNodeModules", value.asInstanceOf[js.Any])
+      inline def setIgnoreNodeModules(value: Boolean): Self = StObject.set(x, "ignoreNodeModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNodeModulesUndefined: Self = StObject.set(x, "ignoreNodeModules", js.undefined)
+      inline def setIgnoreNodeModulesUndefined: Self = StObject.set(x, "ignoreNodeModules", js.undefined)
       
-      @scala.inline
-      def setMatcher(value: /* code */ String => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
+      inline def setMatcher(value: /* code */ String => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
+      inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
     }
   }
   

@@ -20,19 +20,15 @@ trait SchemaSensitiveTextAnnotation extends StObject {
 }
 object SchemaSensitiveTextAnnotation {
   
-  @scala.inline
-  def apply(): SchemaSensitiveTextAnnotation = {
+  inline def apply(): SchemaSensitiveTextAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSensitiveTextAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaSensitiveTextAnnotationMutableBuilder[Self <: SchemaSensitiveTextAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSensitiveTextAnnotation](x: Self) {
     
-    @scala.inline
-    def setDetails(value: StringDictionary[SchemaDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: StringDictionary[SchemaDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

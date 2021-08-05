@@ -10,8 +10,7 @@ trait RestoreObjectOutput
      with typings.awsSdkClientS3Node.typesRestoreObjectOutputMod.RestoreObjectOutput
 object RestoreObjectOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): RestoreObjectOutput = {
+  inline def apply($metadata: ResponseMetadata): RestoreObjectOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreObjectOutput]
   }

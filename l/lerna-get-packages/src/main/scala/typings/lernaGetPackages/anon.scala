@@ -12,23 +12,18 @@ object anon {
   }
   object AdditionalTsTypings {
     
-    @scala.inline
-    def apply(): AdditionalTsTypings = {
+    inline def apply(): AdditionalTsTypings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdditionalTsTypings]
     }
     
-    @scala.inline
-    implicit class AdditionalTsTypingsMutableBuilder[Self <: AdditionalTsTypings] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalTsTypings](x: Self) {
       
-      @scala.inline
-      def setAdditionalTsTypings(value: js.Array[String]): Self = StObject.set(x, "additionalTsTypings", value.asInstanceOf[js.Any])
+      inline def setAdditionalTsTypings(value: js.Array[String]): Self = StObject.set(x, "additionalTsTypings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalTsTypingsUndefined: Self = StObject.set(x, "additionalTsTypings", js.undefined)
+      inline def setAdditionalTsTypingsUndefined: Self = StObject.set(x, "additionalTsTypings", js.undefined)
       
-      @scala.inline
-      def setAdditionalTsTypingsVarargs(value: String*): Self = StObject.set(x, "additionalTsTypings", js.Array(value :_*))
+      inline def setAdditionalTsTypingsVarargs(value: String*): Self = StObject.set(x, "additionalTsTypings", js.Array(value :_*))
     }
   }
   
@@ -46,38 +41,28 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply(name: String, version: String): Config = {
+    inline def apply(name: String, version: String): Config = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfig(value: AdditionalTsTypings): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AdditionalTsTypings): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: String): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -69,8 +69,7 @@ object parserBlockMod {
   }
   object ParserBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       State: Instantiable4[
           /* src */ String, 
           /* md */ MarkdownIt, 
@@ -86,17 +85,13 @@ object parserBlockMod {
       __obj.asInstanceOf[ParserBlock]
     }
     
-    @scala.inline
-    implicit class ParserBlockMutableBuilder[Self <: ParserBlock] (val x: Self) extends AnyVal {
+    extension [Self <: ParserBlock](x: Self) {
       
-      @scala.inline
-      def setParse(value: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
+      inline def setParse(value: (String, MarkdownIt, js.Any, js.Array[typings.markdownIt.tokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRuler(value: typings.markdownIt.rulerMod.^[RuleBlock]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+      inline def setRuler(value: typings.markdownIt.rulerMod.^[RuleBlock]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(
+      inline def setState(
         value: Instantiable4[
               /* src */ String, 
               /* md */ MarkdownIt, 
@@ -106,8 +101,7 @@ object parserBlockMod {
             ]
       ): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenize(value: (typings.markdownIt.stateBlockMod.^, Double, Double) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
+      inline def setTokenize(value: (typings.markdownIt.stateBlockMod.^, Double, Double) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
     }
   }
   

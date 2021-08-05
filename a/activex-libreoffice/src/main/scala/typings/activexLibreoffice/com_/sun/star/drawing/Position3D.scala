@@ -18,22 +18,17 @@ trait Position3D extends StObject {
 }
 object Position3D {
   
-  @scala.inline
-  def apply(PositionX: Double, PositionY: Double, PositionZ: Double): Position3D = {
+  inline def apply(PositionX: Double, PositionY: Double, PositionZ: Double): Position3D = {
     val __obj = js.Dynamic.literal(PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], PositionZ = PositionZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position3D]
   }
   
-  @scala.inline
-  implicit class Position3DMutableBuilder[Self <: Position3D] (val x: Self) extends AnyVal {
+  extension [Self <: Position3D](x: Self) {
     
-    @scala.inline
-    def setPositionX(value: Double): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
+    inline def setPositionX(value: Double): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionY(value: Double): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
+    inline def setPositionY(value: Double): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionZ(value: Double): Self = StObject.set(x, "PositionZ", value.asInstanceOf[js.Any])
+    inline def setPositionZ(value: Double): Self = StObject.set(x, "PositionZ", value.asInstanceOf[js.Any])
   }
 }

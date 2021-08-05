@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(containers: js.Array[HTMLElement]): Drake = ^.asInstanceOf[js.Dynamic].apply(containers.asInstanceOf[js.Any]).asInstanceOf[Drake]
-  @scala.inline
-  def apply(containers: js.Array[HTMLElement], options: DragulaOptions): Drake = (^.asInstanceOf[js.Dynamic].apply(containers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Drake]
+  inline def apply(containers: js.Array[HTMLElement]): Drake = ^.asInstanceOf[js.Dynamic].apply(containers.asInstanceOf[js.Any]).asInstanceOf[Drake]
+  inline def apply(containers: js.Array[HTMLElement], options: DragulaOptions): Drake = (^.asInstanceOf[js.Dynamic].apply(containers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Drake]
   
   @JSImport("react-dragula", JSImport.Namespace)
   @js.native

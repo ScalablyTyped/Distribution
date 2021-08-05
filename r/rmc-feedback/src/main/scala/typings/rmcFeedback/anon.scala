@@ -12,17 +12,14 @@ object anon {
   }
   object Active {
     
-    @scala.inline
-    def apply(active: Boolean): Active = {
+    inline def apply(active: Boolean): Active = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[Active]
     }
     
-    @scala.inline
-    implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+    extension [Self <: Active](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object Disabled {
     
-    @scala.inline
-    def apply(disabled: Boolean): Disabled = {
+    inline def apply(disabled: Boolean): Disabled = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disabled]
     }
     
-    @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+    extension [Self <: Disabled](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     }
   }
 }

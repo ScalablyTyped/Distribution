@@ -18,25 +18,19 @@ trait SchemaLiveChatModeratorSnippet extends StObject {
 }
 object SchemaLiveChatModeratorSnippet {
   
-  @scala.inline
-  def apply(): SchemaLiveChatModeratorSnippet = {
+  inline def apply(): SchemaLiveChatModeratorSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatModeratorSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatModeratorSnippetMutableBuilder[Self <: SchemaLiveChatModeratorSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatModeratorSnippet](x: Self) {
     
-    @scala.inline
-    def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
+    inline def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
+    inline def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
     
-    @scala.inline
-    def setModeratorDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "moderatorDetails", value.asInstanceOf[js.Any])
+    inline def setModeratorDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "moderatorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeratorDetailsUndefined: Self = StObject.set(x, "moderatorDetails", js.undefined)
+    inline def setModeratorDetailsUndefined: Self = StObject.set(x, "moderatorDetails", js.undefined)
   }
 }

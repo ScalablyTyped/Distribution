@@ -23,31 +23,23 @@ trait USD extends StObject {
 }
 object USD {
   
-  @scala.inline
-  def apply(): USD = {
+  inline def apply(): USD = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[USD]
   }
   
-  @scala.inline
-  implicit class USDMutableBuilder[Self <: USD] (val x: Self) extends AnyVal {
+  extension [Self <: USD](x: Self) {
     
-    @scala.inline
-    def setCents(value: Cents): Self = StObject.set(x, "Cents", value.asInstanceOf[js.Any])
+    inline def setCents(value: Cents): Self = StObject.set(x, "Cents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCentsUndefined: Self = StObject.set(x, "Cents", js.undefined)
+    inline def setCentsUndefined: Self = StObject.set(x, "Cents", js.undefined)
     
-    @scala.inline
-    def setDollars(value: Dollars): Self = StObject.set(x, "Dollars", value.asInstanceOf[js.Any])
+    inline def setDollars(value: Dollars): Self = StObject.set(x, "Dollars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDollarsUndefined: Self = StObject.set(x, "Dollars", js.undefined)
+    inline def setDollarsUndefined: Self = StObject.set(x, "Dollars", js.undefined)
     
-    @scala.inline
-    def setTenthFractionsOfACent(value: TenthFractionsOfACent): Self = StObject.set(x, "TenthFractionsOfACent", value.asInstanceOf[js.Any])
+    inline def setTenthFractionsOfACent(value: TenthFractionsOfACent): Self = StObject.set(x, "TenthFractionsOfACent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenthFractionsOfACentUndefined: Self = StObject.set(x, "TenthFractionsOfACent", js.undefined)
+    inline def setTenthFractionsOfACentUndefined: Self = StObject.set(x, "TenthFractionsOfACent", js.undefined)
   }
 }

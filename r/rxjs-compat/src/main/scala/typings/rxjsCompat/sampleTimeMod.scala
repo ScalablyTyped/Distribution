@@ -10,10 +10,8 @@ object sampleTimeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sampleTime[T](period: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sampleTime")(period.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def sampleTime[T](
+  inline def sampleTime[T](period: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sampleTime")(period.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def sampleTime[T](
     period: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleTime")(period.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]

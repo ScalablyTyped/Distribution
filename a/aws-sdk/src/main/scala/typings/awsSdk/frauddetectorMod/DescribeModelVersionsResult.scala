@@ -18,28 +18,21 @@ trait DescribeModelVersionsResult extends StObject {
 }
 object DescribeModelVersionsResult {
   
-  @scala.inline
-  def apply(): DescribeModelVersionsResult = {
+  inline def apply(): DescribeModelVersionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeModelVersionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeModelVersionsResultMutableBuilder[Self <: DescribeModelVersionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeModelVersionsResult](x: Self) {
     
-    @scala.inline
-    def setModelVersionDetails(value: modelVersionDetailList): Self = StObject.set(x, "modelVersionDetails", value.asInstanceOf[js.Any])
+    inline def setModelVersionDetails(value: modelVersionDetailList): Self = StObject.set(x, "modelVersionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionDetailsUndefined: Self = StObject.set(x, "modelVersionDetails", js.undefined)
+    inline def setModelVersionDetailsUndefined: Self = StObject.set(x, "modelVersionDetails", js.undefined)
     
-    @scala.inline
-    def setModelVersionDetailsVarargs(value: ModelVersionDetail*): Self = StObject.set(x, "modelVersionDetails", js.Array(value :_*))
+    inline def setModelVersionDetailsVarargs(value: ModelVersionDetail*): Self = StObject.set(x, "modelVersionDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

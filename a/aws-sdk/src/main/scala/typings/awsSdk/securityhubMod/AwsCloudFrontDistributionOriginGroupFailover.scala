@@ -13,19 +13,15 @@ trait AwsCloudFrontDistributionOriginGroupFailover extends StObject {
 }
 object AwsCloudFrontDistributionOriginGroupFailover {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionOriginGroupFailover = {
+  inline def apply(): AwsCloudFrontDistributionOriginGroupFailover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginGroupFailover]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionOriginGroupFailoverMutableBuilder[Self <: AwsCloudFrontDistributionOriginGroupFailover] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionOriginGroupFailover](x: Self) {
     
-    @scala.inline
-    def setStatusCodes(value: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
+    inline def setStatusCodes(value: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodesUndefined: Self = StObject.set(x, "StatusCodes", js.undefined)
+    inline def setStatusCodesUndefined: Self = StObject.set(x, "StatusCodes", js.undefined)
   }
 }

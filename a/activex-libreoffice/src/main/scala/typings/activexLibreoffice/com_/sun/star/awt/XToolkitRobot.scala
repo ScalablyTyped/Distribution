@@ -22,8 +22,7 @@ trait XToolkitRobot extends StObject {
 }
 object XToolkitRobot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     keyPress: KeyEvent => Unit,
     keyRelease: KeyEvent => Unit,
     mouseMove: MouseEvent => Unit,
@@ -34,22 +33,16 @@ object XToolkitRobot {
     __obj.asInstanceOf[XToolkitRobot]
   }
   
-  @scala.inline
-  implicit class XToolkitRobotMutableBuilder[Self <: XToolkitRobot] (val x: Self) extends AnyVal {
+  extension [Self <: XToolkitRobot](x: Self) {
     
-    @scala.inline
-    def setKeyPress(value: KeyEvent => Unit): Self = StObject.set(x, "keyPress", js.Any.fromFunction1(value))
+    inline def setKeyPress(value: KeyEvent => Unit): Self = StObject.set(x, "keyPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyRelease(value: KeyEvent => Unit): Self = StObject.set(x, "keyRelease", js.Any.fromFunction1(value))
+    inline def setKeyRelease(value: KeyEvent => Unit): Self = StObject.set(x, "keyRelease", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseMove(value: MouseEvent => Unit): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1(value))
+    inline def setMouseMove(value: MouseEvent => Unit): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMousePress(value: MouseEvent => Unit): Self = StObject.set(x, "mousePress", js.Any.fromFunction1(value))
+    inline def setMousePress(value: MouseEvent => Unit): Self = StObject.set(x, "mousePress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseRelease(value: MouseEvent => Unit): Self = StObject.set(x, "mouseRelease", js.Any.fromFunction1(value))
+    inline def setMouseRelease(value: MouseEvent => Unit): Self = StObject.set(x, "mouseRelease", js.Any.fromFunction1(value))
   }
 }

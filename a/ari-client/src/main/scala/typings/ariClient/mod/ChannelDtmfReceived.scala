@@ -26,8 +26,7 @@ trait ChannelDtmfReceived
 }
 object ChannelDtmfReceived {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     channel: Channel,
     digit: String,
@@ -40,16 +39,12 @@ object ChannelDtmfReceived {
     __obj.asInstanceOf[ChannelDtmfReceived]
   }
   
-  @scala.inline
-  implicit class ChannelDtmfReceivedMutableBuilder[Self <: ChannelDtmfReceived] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelDtmfReceived](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigit(value: String): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
+    inline def setDigit(value: String): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
+    inline def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
   }
 }

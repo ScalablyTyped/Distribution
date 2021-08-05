@@ -22,25 +22,19 @@ trait SchemaMetadataCredentialsFromPlugin extends StObject {
 }
 object SchemaMetadataCredentialsFromPlugin {
   
-  @scala.inline
-  def apply(): SchemaMetadataCredentialsFromPlugin = {
+  inline def apply(): SchemaMetadataCredentialsFromPlugin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetadataCredentialsFromPlugin]
   }
   
-  @scala.inline
-  implicit class SchemaMetadataCredentialsFromPluginMutableBuilder[Self <: SchemaMetadataCredentialsFromPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetadataCredentialsFromPlugin](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStructConfig(value: String): Self = StObject.set(x, "structConfig", value.asInstanceOf[js.Any])
+    inline def setStructConfig(value: String): Self = StObject.set(x, "structConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructConfigUndefined: Self = StObject.set(x, "structConfig", js.undefined)
+    inline def setStructConfigUndefined: Self = StObject.set(x, "structConfig", js.undefined)
   }
 }

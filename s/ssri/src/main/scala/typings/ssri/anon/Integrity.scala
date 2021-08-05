@@ -24,61 +24,43 @@ trait Integrity extends StObject {
 }
 object Integrity {
   
-  @scala.inline
-  def apply(): Integrity = {
+  inline def apply(): Integrity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Integrity]
   }
   
-  @scala.inline
-  implicit class IntegrityMutableBuilder[Self <: Integrity] (val x: Self) extends AnyVal {
+  extension [Self <: Integrity](x: Self) {
     
-    @scala.inline
-    def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
-    @scala.inline
-    def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+    inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
     
-    @scala.inline
-    def setIntegrity(value: String | IntegrityLike | HashLike): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+    inline def setIntegrity(value: String | IntegrityLike | HashLike): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+    inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setPickAlgorithm(value: (/* algo1 */ String, /* algo2 */ String) => String): Self = StObject.set(x, "pickAlgorithm", js.Any.fromFunction2(value))
+    inline def setPickAlgorithm(value: (/* algo1 */ String, /* algo2 */ String) => String): Self = StObject.set(x, "pickAlgorithm", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPickAlgorithmUndefined: Self = StObject.set(x, "pickAlgorithm", js.undefined)
+    inline def setPickAlgorithmUndefined: Self = StObject.set(x, "pickAlgorithm", js.undefined)
     
-    @scala.inline
-    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

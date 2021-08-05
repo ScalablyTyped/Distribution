@@ -16,32 +16,24 @@ object anon {
   }
   object Opacity {
     
-    @scala.inline
-    def apply(): Opacity = {
+    inline def apply(): Opacity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Opacity]
     }
     
-    @scala.inline
-    implicit class OpacityMutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
+    extension [Self <: Opacity](x: Self) {
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+      inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
       
-      @scala.inline
-      def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     }
   }
 }

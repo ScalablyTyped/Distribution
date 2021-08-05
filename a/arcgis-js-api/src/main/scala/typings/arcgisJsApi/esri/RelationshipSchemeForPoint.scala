@@ -69,8 +69,7 @@ trait RelationshipSchemeForPoint
 }
 object RelationshipSchemeForPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colorsForClassBreaks: js.Array[RelationshipSchemeForPointColorsForClassBreaks],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -87,37 +86,26 @@ object RelationshipSchemeForPoint {
     __obj.asInstanceOf[RelationshipSchemeForPoint]
   }
   
-  @scala.inline
-  implicit class RelationshipSchemeForPointMutableBuilder[Self <: RelationshipSchemeForPoint] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipSchemeForPoint](x: Self) {
     
-    @scala.inline
-    def setColorsForClassBreaks(value: js.Array[RelationshipSchemeForPointColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
+    inline def setColorsForClassBreaks(value: js.Array[RelationshipSchemeForPointColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsForClassBreaksVarargs(value: RelationshipSchemeForPointColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value :_*))
+    inline def setColorsForClassBreaksVarargs(value: RelationshipSchemeForPointColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataColor(value: Color_): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
+    inline def setNoDataColor(value: Color_): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutline(value: RelationshipSchemeForPointOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: RelationshipSchemeForPointOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

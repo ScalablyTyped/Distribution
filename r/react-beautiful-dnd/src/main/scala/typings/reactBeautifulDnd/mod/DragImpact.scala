@@ -14,25 +14,19 @@ trait DragImpact extends StObject {
 }
 object DragImpact {
   
-  @scala.inline
-  def apply(displaced: DisplacementGroups, displacedBy: DisplacedBy): DragImpact = {
+  inline def apply(displaced: DisplacementGroups, displacedBy: DisplacedBy): DragImpact = {
     val __obj = js.Dynamic.literal(displaced = displaced.asInstanceOf[js.Any], displacedBy = displacedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragImpact]
   }
   
-  @scala.inline
-  implicit class DragImpactMutableBuilder[Self <: DragImpact] (val x: Self) extends AnyVal {
+  extension [Self <: DragImpact](x: Self) {
     
-    @scala.inline
-    def setAt(value: ImpactLocation): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: ImpactLocation): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
-    @scala.inline
-    def setDisplaced(value: DisplacementGroups): Self = StObject.set(x, "displaced", value.asInstanceOf[js.Any])
+    inline def setDisplaced(value: DisplacementGroups): Self = StObject.set(x, "displaced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplacedBy(value: DisplacedBy): Self = StObject.set(x, "displacedBy", value.asInstanceOf[js.Any])
+    inline def setDisplacedBy(value: DisplacedBy): Self = StObject.set(x, "displacedBy", value.asInstanceOf[js.Any])
   }
 }

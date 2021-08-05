@@ -18,22 +18,17 @@ trait PiiOutputDataConfig extends StObject {
 }
 object PiiOutputDataConfig {
   
-  @scala.inline
-  def apply(S3Uri: S3Uri): PiiOutputDataConfig = {
+  inline def apply(S3Uri: S3Uri): PiiOutputDataConfig = {
     val __obj = js.Dynamic.literal(S3Uri = S3Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PiiOutputDataConfig]
   }
   
-  @scala.inline
-  implicit class PiiOutputDataConfigMutableBuilder[Self <: PiiOutputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PiiOutputDataConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

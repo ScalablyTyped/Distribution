@@ -44,26 +44,20 @@ object collapsibleMod {
   }
   object CollapsibleProps {
     
-    @scala.inline
-    def apply(): CollapsibleProps = {
+    inline def apply(): CollapsibleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollapsibleProps]
     }
     
-    @scala.inline
-    implicit class CollapsiblePropsMutableBuilder[Self <: CollapsibleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapsibleProps](x: Self) {
       
-      @scala.inline
-      def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
 }

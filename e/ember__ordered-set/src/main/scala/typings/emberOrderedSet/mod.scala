@@ -24,8 +24,7 @@ object mod {
     // from usage what the type would be, this wouldn't be required, but until
     // it does, this is better than *not* allowing it.
     // tslint:disable-next-line:no-unnecessary-generics
-    @scala.inline
-    def create[T](): OrderedSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OrderedSet[T]]
+    inline def create[T](): OrderedSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[OrderedSet[T]]
   }
   
   @js.native

@@ -35,43 +35,31 @@ trait CellTower extends StObject {
 }
 object CellTower {
   
-  @scala.inline
-  def apply(cellId: Double, locationAreaCode: Double, mobileCountryCode: Double, mobileNetworkCode: Double): CellTower = {
+  inline def apply(cellId: Double, locationAreaCode: Double, mobileCountryCode: Double, mobileNetworkCode: Double): CellTower = {
     val __obj = js.Dynamic.literal(cellId = cellId.asInstanceOf[js.Any], locationAreaCode = locationAreaCode.asInstanceOf[js.Any], mobileCountryCode = mobileCountryCode.asInstanceOf[js.Any], mobileNetworkCode = mobileNetworkCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellTower]
   }
   
-  @scala.inline
-  implicit class CellTowerMutableBuilder[Self <: CellTower] (val x: Self) extends AnyVal {
+  extension [Self <: CellTower](x: Self) {
     
-    @scala.inline
-    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+    inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
-    @scala.inline
-    def setCellId(value: Double): Self = StObject.set(x, "cellId", value.asInstanceOf[js.Any])
+    inline def setCellId(value: Double): Self = StObject.set(x, "cellId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationAreaCode(value: Double): Self = StObject.set(x, "locationAreaCode", value.asInstanceOf[js.Any])
+    inline def setLocationAreaCode(value: Double): Self = StObject.set(x, "locationAreaCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileCountryCode(value: Double): Self = StObject.set(x, "mobileCountryCode", value.asInstanceOf[js.Any])
+    inline def setMobileCountryCode(value: Double): Self = StObject.set(x, "mobileCountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileNetworkCode(value: Double): Self = StObject.set(x, "mobileNetworkCode", value.asInstanceOf[js.Any])
+    inline def setMobileNetworkCode(value: Double): Self = StObject.set(x, "mobileNetworkCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalStrength(value: Double): Self = StObject.set(x, "signalStrength", value.asInstanceOf[js.Any])
+    inline def setSignalStrength(value: Double): Self = StObject.set(x, "signalStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalStrengthUndefined: Self = StObject.set(x, "signalStrength", js.undefined)
+    inline def setSignalStrengthUndefined: Self = StObject.set(x, "signalStrength", js.undefined)
     
-    @scala.inline
-    def setTimingAdvance(value: Double): Self = StObject.set(x, "timingAdvance", value.asInstanceOf[js.Any])
+    inline def setTimingAdvance(value: Double): Self = StObject.set(x, "timingAdvance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingAdvanceUndefined: Self = StObject.set(x, "timingAdvance", js.undefined)
+    inline def setTimingAdvanceUndefined: Self = StObject.set(x, "timingAdvance", js.undefined)
   }
 }

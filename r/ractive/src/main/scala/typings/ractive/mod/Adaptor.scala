@@ -25,8 +25,7 @@ trait Adaptor extends StObject {
 }
 object Adaptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filter: (js.Any, String, Ractive[Ractive[js.Any]]) => Boolean,
     wrap: (Ractive[Ractive[js.Any]], js.Any, String, AdaptorPrefixer) => AdaptorHandle
   ): Adaptor = {
@@ -34,13 +33,10 @@ object Adaptor {
     __obj.asInstanceOf[Adaptor]
   }
   
-  @scala.inline
-  implicit class AdaptorMutableBuilder[Self <: Adaptor] (val x: Self) extends AnyVal {
+  extension [Self <: Adaptor](x: Self) {
     
-    @scala.inline
-    def setFilter(value: (js.Any, String, Ractive[Ractive[js.Any]]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
+    inline def setFilter(value: (js.Any, String, Ractive[Ractive[js.Any]]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWrap(value: (Ractive[Ractive[js.Any]], js.Any, String, AdaptorPrefixer) => AdaptorHandle): Self = StObject.set(x, "wrap", js.Any.fromFunction4(value))
+    inline def setWrap(value: (Ractive[Ractive[js.Any]], js.Any, String, AdaptorPrefixer) => AdaptorHandle): Self = StObject.set(x, "wrap", js.Any.fromFunction4(value))
   }
 }

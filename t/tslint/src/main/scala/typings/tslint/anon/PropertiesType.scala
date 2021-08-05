@@ -12,20 +12,16 @@ trait PropertiesType extends StObject {
 }
 object PropertiesType {
   
-  @scala.inline
-  def apply(properties: Tags, `type`: String): PropertiesType = {
+  inline def apply(properties: Tags, `type`: String): PropertiesType = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesType]
   }
   
-  @scala.inline
-  implicit class PropertiesTypeMutableBuilder[Self <: PropertiesType] (val x: Self) extends AnyVal {
+  extension [Self <: PropertiesType](x: Self) {
     
-    @scala.inline
-    def setProperties(value: Tags): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Tags): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

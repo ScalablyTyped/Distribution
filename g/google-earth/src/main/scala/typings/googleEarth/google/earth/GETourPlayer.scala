@@ -45,8 +45,7 @@ trait GETourPlayer extends StObject {
 }
 object GETourPlayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentTime: () => Double,
     getDuration: () => Double,
     pause: () => Unit,
@@ -59,28 +58,20 @@ object GETourPlayer {
     __obj.asInstanceOf[GETourPlayer]
   }
   
-  @scala.inline
-  implicit class GETourPlayerMutableBuilder[Self <: GETourPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: GETourPlayer](x: Self) {
     
-    @scala.inline
-    def setGetCurrentTime(value: () => Double): Self = StObject.set(x, "getCurrentTime", js.Any.fromFunction0(value))
+    inline def setGetCurrentTime(value: () => Double): Self = StObject.set(x, "getCurrentTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+    inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCurrentTime(value: Double => Unit): Self = StObject.set(x, "setCurrentTime", js.Any.fromFunction1(value))
+    inline def setSetCurrentTime(value: Double => Unit): Self = StObject.set(x, "setCurrentTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTour(value: KmlTour => Unit): Self = StObject.set(x, "setTour", js.Any.fromFunction1(value))
+    inline def setSetTour(value: KmlTour => Unit): Self = StObject.set(x, "setTour", js.Any.fromFunction1(value))
   }
 }

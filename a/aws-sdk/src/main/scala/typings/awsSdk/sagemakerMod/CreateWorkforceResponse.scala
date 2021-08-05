@@ -13,16 +13,13 @@ trait CreateWorkforceResponse extends StObject {
 }
 object CreateWorkforceResponse {
   
-  @scala.inline
-  def apply(WorkforceArn: WorkforceArn): CreateWorkforceResponse = {
+  inline def apply(WorkforceArn: WorkforceArn): CreateWorkforceResponse = {
     val __obj = js.Dynamic.literal(WorkforceArn = WorkforceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkforceResponse]
   }
   
-  @scala.inline
-  implicit class CreateWorkforceResponseMutableBuilder[Self <: CreateWorkforceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkforceResponse](x: Self) {
     
-    @scala.inline
-    def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
+    inline def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
   }
 }

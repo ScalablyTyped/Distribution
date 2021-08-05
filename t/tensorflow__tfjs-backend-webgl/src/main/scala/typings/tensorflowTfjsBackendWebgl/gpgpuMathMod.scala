@@ -21,16 +21,12 @@ object gpgpuMathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compileProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): GPGPUBinary = (^.asInstanceOf[js.Dynamic].applyDynamic("compileProgram")(gpgpu.asInstanceOf[js.Any], program.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[GPGPUBinary]
+  inline def compileProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): GPGPUBinary = (^.asInstanceOf[js.Dynamic].applyDynamic("compileProgram")(gpgpu.asInstanceOf[js.Any], program.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[GPGPUBinary]
   
-  @scala.inline
-  def makeShaderKey(program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeShaderKey")(program.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def makeShaderKey(program: GPGPUProgram, inputs: js.Array[TensorData], output: TensorData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeShaderKey")(program.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def runProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, binary: GPGPUBinary, inputs: js.Array[TensorData], output: TensorData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runProgram")(gpgpu.asInstanceOf[js.Any], binary.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def runProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](
+  inline def runProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](gpgpu: GPGPUContext, binary: GPGPUBinary, inputs: js.Array[TensorData], output: TensorData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runProgram")(gpgpu.asInstanceOf[js.Any], binary.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def runProgram[T /* <: Tensor[Rank] */, K /* <: Tensor[Rank] */](
     gpgpu: GPGPUContext,
     binary: GPGPUBinary,
     inputs: js.Array[TensorData],
@@ -58,8 +54,7 @@ object gpgpuMathMod {
   }
   object GPGPUBinary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inShapeInfos: js.Array[ShapeInfo],
       infLoc: WebGLUniformLocation,
       nanLoc: WebGLUniformLocation,
@@ -73,35 +68,25 @@ object gpgpuMathMod {
       __obj.asInstanceOf[GPGPUBinary]
     }
     
-    @scala.inline
-    implicit class GPGPUBinaryMutableBuilder[Self <: GPGPUBinary] (val x: Self) extends AnyVal {
+    extension [Self <: GPGPUBinary](x: Self) {
       
-      @scala.inline
-      def setInShapeInfos(value: js.Array[ShapeInfo]): Self = StObject.set(x, "inShapeInfos", value.asInstanceOf[js.Any])
+      inline def setInShapeInfos(value: js.Array[ShapeInfo]): Self = StObject.set(x, "inShapeInfos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInShapeInfosVarargs(value: ShapeInfo*): Self = StObject.set(x, "inShapeInfos", js.Array(value :_*))
+      inline def setInShapeInfosVarargs(value: ShapeInfo*): Self = StObject.set(x, "inShapeInfos", js.Array(value :_*))
       
-      @scala.inline
-      def setInfLoc(value: WebGLUniformLocation): Self = StObject.set(x, "infLoc", value.asInstanceOf[js.Any])
+      inline def setInfLoc(value: WebGLUniformLocation): Self = StObject.set(x, "infLoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanLoc(value: WebGLUniformLocation): Self = StObject.set(x, "nanLoc", value.asInstanceOf[js.Any])
+      inline def setNanLoc(value: WebGLUniformLocation): Self = StObject.set(x, "nanLoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutShapeInfo(value: ShapeInfo): Self = StObject.set(x, "outShapeInfo", value.asInstanceOf[js.Any])
+      inline def setOutShapeInfo(value: ShapeInfo): Self = StObject.set(x, "outShapeInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgram(value: GPGPUProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: GPGPUProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "uniformLocations", value.asInstanceOf[js.Any])
+      inline def setUniformLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "uniformLocations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebGLProgram(value: WebGLProgram): Self = StObject.set(x, "webGLProgram", value.asInstanceOf[js.Any])
+      inline def setWebGLProgram(value: WebGLProgram): Self = StObject.set(x, "webGLProgram", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,53 +118,38 @@ object gpgpuMathMod {
   }
   object GPGPUProgram {
     
-    @scala.inline
-    def apply(outputShape: js.Array[Double], userCode: String, variableNames: js.Array[String]): GPGPUProgram = {
+    inline def apply(outputShape: js.Array[Double], userCode: String, variableNames: js.Array[String]): GPGPUProgram = {
       val __obj = js.Dynamic.literal(outputShape = outputShape.asInstanceOf[js.Any], userCode = userCode.asInstanceOf[js.Any], variableNames = variableNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[GPGPUProgram]
     }
     
-    @scala.inline
-    implicit class GPGPUProgramMutableBuilder[Self <: GPGPUProgram] (val x: Self) extends AnyVal {
+    extension [Self <: GPGPUProgram](x: Self) {
       
-      @scala.inline
-      def setOutPackingScheme(value: PackingScheme): Self = StObject.set(x, "outPackingScheme", value.asInstanceOf[js.Any])
+      inline def setOutPackingScheme(value: PackingScheme): Self = StObject.set(x, "outPackingScheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutPackingSchemeUndefined: Self = StObject.set(x, "outPackingScheme", js.undefined)
+      inline def setOutPackingSchemeUndefined: Self = StObject.set(x, "outPackingScheme", js.undefined)
       
-      @scala.inline
-      def setOutTexUsage(value: TextureUsage): Self = StObject.set(x, "outTexUsage", value.asInstanceOf[js.Any])
+      inline def setOutTexUsage(value: TextureUsage): Self = StObject.set(x, "outTexUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutTexUsageUndefined: Self = StObject.set(x, "outTexUsage", js.undefined)
+      inline def setOutTexUsageUndefined: Self = StObject.set(x, "outTexUsage", js.undefined)
       
-      @scala.inline
-      def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
+      inline def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
+      inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setPackedInputs(value: Boolean): Self = StObject.set(x, "packedInputs", value.asInstanceOf[js.Any])
+      inline def setPackedInputs(value: Boolean): Self = StObject.set(x, "packedInputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackedInputsUndefined: Self = StObject.set(x, "packedInputs", js.undefined)
+      inline def setPackedInputsUndefined: Self = StObject.set(x, "packedInputs", js.undefined)
       
-      @scala.inline
-      def setPackedOutput(value: Boolean): Self = StObject.set(x, "packedOutput", value.asInstanceOf[js.Any])
+      inline def setPackedOutput(value: Boolean): Self = StObject.set(x, "packedOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackedOutputUndefined: Self = StObject.set(x, "packedOutput", js.undefined)
+      inline def setPackedOutputUndefined: Self = StObject.set(x, "packedOutput", js.undefined)
       
-      @scala.inline
-      def setUserCode(value: String): Self = StObject.set(x, "userCode", value.asInstanceOf[js.Any])
+      inline def setUserCode(value: String): Self = StObject.set(x, "userCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableNames(value: js.Array[String]): Self = StObject.set(x, "variableNames", value.asInstanceOf[js.Any])
+      inline def setVariableNames(value: js.Array[String]): Self = StObject.set(x, "variableNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableNamesVarargs(value: String*): Self = StObject.set(x, "variableNames", js.Array(value :_*))
+      inline def setVariableNamesVarargs(value: String*): Self = StObject.set(x, "variableNames", js.Array(value :_*))
     }
   }
   
@@ -195,32 +165,24 @@ object gpgpuMathMod {
   }
   object TensorData {
     
-    @scala.inline
-    def apply(isUniform: Boolean, shape: js.Array[Double], texData: TextureData): TensorData = {
+    inline def apply(isUniform: Boolean, shape: js.Array[Double], texData: TextureData): TensorData = {
       val __obj = js.Dynamic.literal(isUniform = isUniform.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], texData = texData.asInstanceOf[js.Any])
       __obj.asInstanceOf[TensorData]
     }
     
-    @scala.inline
-    implicit class TensorDataMutableBuilder[Self <: TensorData] (val x: Self) extends AnyVal {
+    extension [Self <: TensorData](x: Self) {
       
-      @scala.inline
-      def setIsUniform(value: Boolean): Self = StObject.set(x, "isUniform", value.asInstanceOf[js.Any])
+      inline def setIsUniform(value: Boolean): Self = StObject.set(x, "isUniform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
       
-      @scala.inline
-      def setTexData(value: TextureData): Self = StObject.set(x, "texData", value.asInstanceOf[js.Any])
+      inline def setTexData(value: TextureData): Self = StObject.set(x, "texData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformValues(value: TypedArray): Self = StObject.set(x, "uniformValues", value.asInstanceOf[js.Any])
+      inline def setUniformValues(value: TypedArray): Self = StObject.set(x, "uniformValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformValuesUndefined: Self = StObject.set(x, "uniformValues", js.undefined)
+      inline def setUniformValuesUndefined: Self = StObject.set(x, "uniformValues", js.undefined)
     }
   }
 }

@@ -113,8 +113,7 @@ object v1 {
   }
   object MutatingWebhook {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       admissionReviewVersions: js.Array[String],
       clientConfig: WebhookClientConfig,
       failurePolicy: String,
@@ -131,47 +130,33 @@ object v1 {
       __obj.asInstanceOf[MutatingWebhook]
     }
     
-    @scala.inline
-    implicit class MutatingWebhookMutableBuilder[Self <: MutatingWebhook] (val x: Self) extends AnyVal {
+    extension [Self <: MutatingWebhook](x: Self) {
       
-      @scala.inline
-      def setAdmissionReviewVersions(value: js.Array[String]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
+      inline def setAdmissionReviewVersions(value: js.Array[String]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdmissionReviewVersionsVarargs(value: String*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
+      inline def setAdmissionReviewVersionsVarargs(value: String*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setClientConfig(value: WebhookClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
+      inline def setClientConfig(value: WebhookClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailurePolicy(value: String): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
+      inline def setFailurePolicy(value: String): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchPolicy(value: String): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
+      inline def setMatchPolicy(value: String): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceSelector(value: LabelSelector): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
+      inline def setNamespaceSelector(value: LabelSelector): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectSelector(value: LabelSelector): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
+      inline def setObjectSelector(value: LabelSelector): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReinvocationPolicy(value: String): Self = StObject.set(x, "reinvocationPolicy", value.asInstanceOf[js.Any])
+      inline def setReinvocationPolicy(value: String): Self = StObject.set(x, "reinvocationPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRules(value: js.Array[RuleWithOperations]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[RuleWithOperations]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: RuleWithOperations*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: RuleWithOperations*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setSideEffects(value: String): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
+      inline def setSideEffects(value: String): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,29 +187,22 @@ object v1 {
   }
   object MutatingWebhookConfiguration {
     
-    @scala.inline
-    def apply(metadata: ObjectMeta, webhooks: js.Array[MutatingWebhook]): MutatingWebhookConfiguration = {
+    inline def apply(metadata: ObjectMeta, webhooks: js.Array[MutatingWebhook]): MutatingWebhookConfiguration = {
       val __obj = js.Dynamic.literal(apiVersion = "admissionregistration.k8s.io/v1", kind = "MutatingWebhookConfiguration", metadata = metadata.asInstanceOf[js.Any], webhooks = webhooks.asInstanceOf[js.Any])
       __obj.asInstanceOf[MutatingWebhookConfiguration]
     }
     
-    @scala.inline
-    implicit class MutatingWebhookConfigurationMutableBuilder[Self <: MutatingWebhookConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: MutatingWebhookConfiguration](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: admissionregistrationDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: admissionregistrationDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.MutatingWebhookConfiguration): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.MutatingWebhookConfiguration): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooks(value: js.Array[MutatingWebhook]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: js.Array[MutatingWebhook]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooksVarargs(value: MutatingWebhook*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+      inline def setWebhooksVarargs(value: MutatingWebhook*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
     }
   }
   
@@ -266,8 +244,7 @@ object v1 {
   }
   object RuleWithOperations {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiGroups: js.Array[String],
       apiVersions: js.Array[String],
       operations: js.Array[String],
@@ -278,35 +255,25 @@ object v1 {
       __obj.asInstanceOf[RuleWithOperations]
     }
     
-    @scala.inline
-    implicit class RuleWithOperationsMutableBuilder[Self <: RuleWithOperations] (val x: Self) extends AnyVal {
+    extension [Self <: RuleWithOperations](x: Self) {
       
-      @scala.inline
-      def setApiGroups(value: js.Array[String]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
+      inline def setApiGroups(value: js.Array[String]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiGroupsVarargs(value: String*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
+      inline def setApiGroupsVarargs(value: String*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setApiVersions(value: js.Array[String]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
+      inline def setApiVersions(value: js.Array[String]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
+      inline def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setOperations(value: js.Array[String]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: js.Array[String]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationsVarargs(value: String*): Self = StObject.set(x, "operations", js.Array(value :_*))
+      inline def setOperationsVarargs(value: String*): Self = StObject.set(x, "operations", js.Array(value :_*))
       
-      @scala.inline
-      def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,26 +304,20 @@ object v1 {
   }
   object ServiceReference {
     
-    @scala.inline
-    def apply(name: String, namespace: String, path: String, port: Double): ServiceReference = {
+    inline def apply(name: String, namespace: String, path: String, port: Double): ServiceReference = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceReference]
     }
     
-    @scala.inline
-    implicit class ServiceReferenceMutableBuilder[Self <: ServiceReference] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceReference](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -453,8 +414,7 @@ object v1 {
   }
   object ValidatingWebhook {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       admissionReviewVersions: js.Array[String],
       clientConfig: WebhookClientConfig,
       failurePolicy: String,
@@ -470,44 +430,31 @@ object v1 {
       __obj.asInstanceOf[ValidatingWebhook]
     }
     
-    @scala.inline
-    implicit class ValidatingWebhookMutableBuilder[Self <: ValidatingWebhook] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatingWebhook](x: Self) {
       
-      @scala.inline
-      def setAdmissionReviewVersions(value: js.Array[String]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
+      inline def setAdmissionReviewVersions(value: js.Array[String]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdmissionReviewVersionsVarargs(value: String*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
+      inline def setAdmissionReviewVersionsVarargs(value: String*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setClientConfig(value: WebhookClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
+      inline def setClientConfig(value: WebhookClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailurePolicy(value: String): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
+      inline def setFailurePolicy(value: String): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchPolicy(value: String): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
+      inline def setMatchPolicy(value: String): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceSelector(value: LabelSelector): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
+      inline def setNamespaceSelector(value: LabelSelector): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectSelector(value: LabelSelector): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
+      inline def setObjectSelector(value: LabelSelector): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRules(value: js.Array[RuleWithOperations]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[RuleWithOperations]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: RuleWithOperations*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: RuleWithOperations*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setSideEffects(value: String): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
+      inline def setSideEffects(value: String): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -538,29 +485,22 @@ object v1 {
   }
   object ValidatingWebhookConfiguration {
     
-    @scala.inline
-    def apply(metadata: ObjectMeta, webhooks: js.Array[ValidatingWebhook]): ValidatingWebhookConfiguration = {
+    inline def apply(metadata: ObjectMeta, webhooks: js.Array[ValidatingWebhook]): ValidatingWebhookConfiguration = {
       val __obj = js.Dynamic.literal(apiVersion = "admissionregistration.k8s.io/v1", kind = "ValidatingWebhookConfiguration", metadata = metadata.asInstanceOf[js.Any], webhooks = webhooks.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidatingWebhookConfiguration]
     }
     
-    @scala.inline
-    implicit class ValidatingWebhookConfigurationMutableBuilder[Self <: ValidatingWebhookConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatingWebhookConfiguration](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: admissionregistrationDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: admissionregistrationDotk8sDotioSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ValidatingWebhookConfiguration): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ValidatingWebhookConfiguration): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooks(value: js.Array[ValidatingWebhook]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: js.Array[ValidatingWebhook]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooksVarargs(value: ValidatingWebhook*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+      inline def setWebhooksVarargs(value: ValidatingWebhook*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
     }
   }
   
@@ -598,23 +538,18 @@ object v1 {
   }
   object WebhookClientConfig {
     
-    @scala.inline
-    def apply(caBundle: String, service: ServiceReference, url: String): WebhookClientConfig = {
+    inline def apply(caBundle: String, service: ServiceReference, url: String): WebhookClientConfig = {
       val __obj = js.Dynamic.literal(caBundle = caBundle.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebhookClientConfig]
     }
     
-    @scala.inline
-    implicit class WebhookClientConfigMutableBuilder[Self <: WebhookClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookClientConfig](x: Self) {
       
-      @scala.inline
-      def setCaBundle(value: String): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
+      inline def setCaBundle(value: String): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: ServiceReference): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: ServiceReference): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

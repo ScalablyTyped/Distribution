@@ -28,8 +28,7 @@ trait HasTouchedEndDate extends StObject {
 }
 object HasTouchedEndDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $hasTouchedEndDate: Boolean,
     $hasTouchedStartDate: Boolean,
     $lastValidEndDate: String,
@@ -43,31 +42,22 @@ object HasTouchedEndDate {
     __obj.asInstanceOf[HasTouchedEndDate]
   }
   
-  @scala.inline
-  implicit class HasTouchedEndDateMutableBuilder[Self <: HasTouchedEndDate] (val x: Self) extends AnyVal {
+  extension [Self <: HasTouchedEndDate](x: Self) {
     
-    @scala.inline
-    def set$hasTouchedEndDate(value: Boolean): Self = StObject.set(x, "$hasTouchedEndDate", value.asInstanceOf[js.Any])
+    inline def set$hasTouchedEndDate(value: Boolean): Self = StObject.set(x, "$hasTouchedEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$hasTouchedStartDate(value: Boolean): Self = StObject.set(x, "$hasTouchedStartDate", value.asInstanceOf[js.Any])
+    inline def set$hasTouchedStartDate(value: Boolean): Self = StObject.set(x, "$hasTouchedStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$lastValidEndDate(value: String): Self = StObject.set(x, "$lastValidEndDate", value.asInstanceOf[js.Any])
+    inline def set$lastValidEndDate(value: String): Self = StObject.set(x, "$lastValidEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$lastValidStartDate(value: String): Self = StObject.set(x, "$lastValidStartDate", value.asInstanceOf[js.Any])
+    inline def set$lastValidStartDate(value: String): Self = StObject.set(x, "$lastValidStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedEndDate(value: String): Self = StObject.set(x, "receivedEndDate", value.asInstanceOf[js.Any])
+    inline def setReceivedEndDate(value: String): Self = StObject.set(x, "receivedEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedFocusName(value: String): Self = StObject.set(x, "receivedFocusName", value.asInstanceOf[js.Any])
+    inline def setReceivedFocusName(value: String): Self = StObject.set(x, "receivedFocusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedIsFocus(value: Boolean): Self = StObject.set(x, "receivedIsFocus", value.asInstanceOf[js.Any])
+    inline def setReceivedIsFocus(value: Boolean): Self = StObject.set(x, "receivedIsFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedStartDate(value: String): Self = StObject.set(x, "receivedStartDate", value.asInstanceOf[js.Any])
+    inline def setReceivedStartDate(value: String): Self = StObject.set(x, "receivedStartDate", value.asInstanceOf[js.Any])
   }
 }

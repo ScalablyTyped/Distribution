@@ -34,44 +34,32 @@ object mod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
+      inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
       
-      @scala.inline
-      def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
+      inline def setRespawn(value: Boolean): Self = StObject.set(x, "respawn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRespawnUndefined: Self = StObject.set(x, "respawn", js.undefined)
+      inline def setRespawnUndefined: Self = StObject.set(x, "respawn", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setWorkerListener(value: () => Unit): Self = StObject.set(x, "workerListener", js.Any.fromFunction0(value))
+      inline def setWorkerListener(value: () => Unit): Self = StObject.set(x, "workerListener", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWorkerListenerUndefined: Self = StObject.set(x, "workerListener", js.undefined)
+      inline def setWorkerListenerUndefined: Self = StObject.set(x, "workerListener", js.undefined)
     }
   }
   

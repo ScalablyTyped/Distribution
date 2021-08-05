@@ -55,41 +55,41 @@ object xdsClientMod {
         ]
     ): Unit = js.native
     
-    var adsCall: js.Any = js.native
+    /* private */ var adsCall: js.Any = js.native
     
-    var adsClient: js.Any = js.native
+    /* private */ var adsClient: js.Any = js.native
     
-    var adsNode: js.Any = js.native
+    /* private */ var adsNode: js.Any = js.native
     
-    var adsState: js.Any = js.native
+    /* private */ var adsState: js.Any = js.native
     
-    var clusterStatsMap: js.Any = js.native
+    /* private */ var clusterStatsMap: js.Any = js.native
     
-    var handleAdsResponse: js.Any = js.native
+    /* private */ var handleAdsResponse: js.Any = js.native
     
-    var hasShutdown: js.Any = js.native
+    /* private */ var hasShutdown: js.Any = js.native
     
-    var latestLrsSettings: js.Any = js.native
+    /* private */ var latestLrsSettings: js.Any = js.native
     
-    var lrsCall: js.Any = js.native
+    /* private */ var lrsCall: js.Any = js.native
     
-    var lrsClient: js.Any = js.native
+    /* private */ var lrsClient: js.Any = js.native
     
-    var lrsNode: js.Any = js.native
+    /* private */ var lrsNode: js.Any = js.native
     
     /**
       * Start the ADS stream if the client exists and there is not already an
       * existing stream, and there
       */
-    var maybeStartAdsStream: js.Any = js.native
+    /* private */ var maybeStartAdsStream: js.Any = js.native
     
-    var maybeStartLrsStream: js.Any = js.native
+    /* private */ var maybeStartLrsStream: js.Any = js.native
     
     /**
       * Reject an update. This should be called without updating the local
       * nonce and version info.
       */
-    var nack: js.Any = js.native
+    /* private */ var nack: js.Any = js.native
     
     def removeClusterWatcher(
       clusterName: String,
@@ -105,15 +105,15 @@ object xdsClientMod {
         ]
     ): Unit = js.native
     
-    var reportStreamError: js.Any = js.native
+    /* private */ var reportStreamError: js.Any = js.native
     
-    var sendStats: js.Any = js.native
+    /* private */ var sendStats: js.Any = js.native
     
     def shutdown(): Unit = js.native
     
-    var statsTimer: js.Any = js.native
+    /* private */ var statsTimer: js.Any = js.native
     
-    var updateNames: js.Any = js.native
+    /* private */ var updateNames: js.Any = js.native
   }
   
   type AdsTypeUrl = EdsTypeUrl | CdsTypeUrl | RdsTypeUrl | LdsTypeUrl
@@ -136,8 +136,7 @@ object xdsClientMod {
   }
   object Watcher {
     
-    @scala.inline
-    def apply[UpdateType](
+    inline def apply[UpdateType](
       onResourceDoesNotExist: () => Unit,
       onTransientError: StatusObject => Unit,
       onValidUpdate: UpdateType => Unit
@@ -146,17 +145,13 @@ object xdsClientMod {
       __obj.asInstanceOf[Watcher[UpdateType]]
     }
     
-    @scala.inline
-    implicit class WatcherMutableBuilder[Self <: Watcher[?], UpdateType] (val x: Self & Watcher[UpdateType]) extends AnyVal {
+    extension [Self <: Watcher[?], UpdateType](x: Self & Watcher[UpdateType]) {
       
-      @scala.inline
-      def setOnResourceDoesNotExist(value: () => Unit): Self = StObject.set(x, "onResourceDoesNotExist", js.Any.fromFunction0(value))
+      inline def setOnResourceDoesNotExist(value: () => Unit): Self = StObject.set(x, "onResourceDoesNotExist", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTransientError(value: StatusObject => Unit): Self = StObject.set(x, "onTransientError", js.Any.fromFunction1(value))
+      inline def setOnTransientError(value: StatusObject => Unit): Self = StObject.set(x, "onTransientError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValidUpdate(value: UpdateType => Unit): Self = StObject.set(x, "onValidUpdate", js.Any.fromFunction1(value))
+      inline def setOnValidUpdate(value: UpdateType => Unit): Self = StObject.set(x, "onValidUpdate", js.Any.fromFunction1(value))
     }
   }
   
@@ -166,17 +161,14 @@ object xdsClientMod {
   }
   object XdsClusterDropStats {
     
-    @scala.inline
-    def apply(addCallDropped: String => Unit): XdsClusterDropStats = {
+    inline def apply(addCallDropped: String => Unit): XdsClusterDropStats = {
       val __obj = js.Dynamic.literal(addCallDropped = js.Any.fromFunction1(addCallDropped))
       __obj.asInstanceOf[XdsClusterDropStats]
     }
     
-    @scala.inline
-    implicit class XdsClusterDropStatsMutableBuilder[Self <: XdsClusterDropStats] (val x: Self) extends AnyVal {
+    extension [Self <: XdsClusterDropStats](x: Self) {
       
-      @scala.inline
-      def setAddCallDropped(value: String => Unit): Self = StObject.set(x, "addCallDropped", js.Any.fromFunction1(value))
+      inline def setAddCallDropped(value: String => Unit): Self = StObject.set(x, "addCallDropped", js.Any.fromFunction1(value))
     }
   }
   
@@ -188,20 +180,16 @@ object xdsClientMod {
   }
   object XdsClusterLocalityStats {
     
-    @scala.inline
-    def apply(addCallFinished: Boolean => Unit, addCallStarted: () => Unit): XdsClusterLocalityStats = {
+    inline def apply(addCallFinished: Boolean => Unit, addCallStarted: () => Unit): XdsClusterLocalityStats = {
       val __obj = js.Dynamic.literal(addCallFinished = js.Any.fromFunction1(addCallFinished), addCallStarted = js.Any.fromFunction0(addCallStarted))
       __obj.asInstanceOf[XdsClusterLocalityStats]
     }
     
-    @scala.inline
-    implicit class XdsClusterLocalityStatsMutableBuilder[Self <: XdsClusterLocalityStats] (val x: Self) extends AnyVal {
+    extension [Self <: XdsClusterLocalityStats](x: Self) {
       
-      @scala.inline
-      def setAddCallFinished(value: Boolean => Unit): Self = StObject.set(x, "addCallFinished", js.Any.fromFunction1(value))
+      inline def setAddCallFinished(value: Boolean => Unit): Self = StObject.set(x, "addCallFinished", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddCallStarted(value: () => Unit): Self = StObject.set(x, "addCallStarted", js.Any.fromFunction0(value))
+      inline def setAddCallStarted(value: () => Unit): Self = StObject.set(x, "addCallStarted", js.Any.fromFunction0(value))
     }
   }
 }

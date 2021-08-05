@@ -16,19 +16,15 @@ trait SchemaCallFunctionRequest extends StObject {
 }
 object SchemaCallFunctionRequest {
   
-  @scala.inline
-  def apply(): SchemaCallFunctionRequest = {
+  inline def apply(): SchemaCallFunctionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCallFunctionRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCallFunctionRequestMutableBuilder[Self <: SchemaCallFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCallFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

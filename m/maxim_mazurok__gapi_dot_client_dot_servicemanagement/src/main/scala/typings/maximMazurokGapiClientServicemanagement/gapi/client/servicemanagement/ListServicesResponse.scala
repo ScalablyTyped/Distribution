@@ -14,28 +14,21 @@ trait ListServicesResponse extends StObject {
 }
 object ListServicesResponse {
   
-  @scala.inline
-  def apply(): ListServicesResponse = {
+  inline def apply(): ListServicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServicesResponse]
   }
   
-  @scala.inline
-  implicit class ListServicesResponseMutableBuilder[Self <: ListServicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServicesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setServices(value: js.Array[ManagedService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[ManagedService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: ManagedService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: ManagedService*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

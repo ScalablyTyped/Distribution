@@ -40,22 +40,17 @@ trait KeyboardEvent extends StObject {
 }
 object KeyboardEvent {
   
-  @scala.inline
-  def apply(element: Element, event: KeyboardEvent, key: Double): KeyboardEvent = {
+  inline def apply(element: Element, event: KeyboardEvent, key: Double): KeyboardEvent = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardEvent]
   }
   
-  @scala.inline
-  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardEvent](x: Self) {
     
-    @scala.inline
-    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

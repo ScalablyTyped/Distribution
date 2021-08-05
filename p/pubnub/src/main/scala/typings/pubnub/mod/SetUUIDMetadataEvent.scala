@@ -15,16 +15,13 @@ trait SetUUIDMetadataEvent[UUIDCustom /* <: ObjectCustom */]
 }
 object SetUUIDMetadataEvent {
   
-  @scala.inline
-  def apply[UUIDCustom /* <: ObjectCustom */](channel: String, message: DataEventType[UUIDCustom], timetoken: Double): SetUUIDMetadataEvent[UUIDCustom] = {
+  inline def apply[UUIDCustom /* <: ObjectCustom */](channel: String, message: DataEventType[UUIDCustom], timetoken: Double): SetUUIDMetadataEvent[UUIDCustom] = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any], subscription = null)
     __obj.asInstanceOf[SetUUIDMetadataEvent[UUIDCustom]]
   }
   
-  @scala.inline
-  implicit class SetUUIDMetadataEventMutableBuilder[Self <: SetUUIDMetadataEvent[?], UUIDCustom /* <: ObjectCustom */] (val x: Self & SetUUIDMetadataEvent[UUIDCustom]) extends AnyVal {
+  extension [Self <: SetUUIDMetadataEvent[?], UUIDCustom /* <: ObjectCustom */](x: Self & SetUUIDMetadataEvent[UUIDCustom]) {
     
-    @scala.inline
-    def setMessage(value: DataEventType[UUIDCustom]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: DataEventType[UUIDCustom]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

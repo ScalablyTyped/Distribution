@@ -24,6 +24,5 @@ object QuantitativeScale {
   @JSImport("plottable", "QuantitativeScale._DEFAULT_NUM_TICKS")
   @js.native
   def _DEFAULT_NUM_TICKS: Double = js.native
-  @scala.inline
-  def _DEFAULT_NUM_TICKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_TICKS")(x.asInstanceOf[js.Any])
+  inline def _DEFAULT_NUM_TICKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_TICKS")(x.asInstanceOf[js.Any])
 }

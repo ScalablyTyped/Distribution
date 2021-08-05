@@ -26,31 +26,23 @@ trait SchemaExecutionStageState extends StObject {
 }
 object SchemaExecutionStageState {
   
-  @scala.inline
-  def apply(): SchemaExecutionStageState = {
+  inline def apply(): SchemaExecutionStageState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExecutionStageState]
   }
   
-  @scala.inline
-  implicit class SchemaExecutionStageStateMutableBuilder[Self <: SchemaExecutionStageState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExecutionStageState](x: Self) {
     
-    @scala.inline
-    def setCurrentStateTime(value: String): Self = StObject.set(x, "currentStateTime", value.asInstanceOf[js.Any])
+    inline def setCurrentStateTime(value: String): Self = StObject.set(x, "currentStateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStateTimeUndefined: Self = StObject.set(x, "currentStateTime", js.undefined)
+    inline def setCurrentStateTimeUndefined: Self = StObject.set(x, "currentStateTime", js.undefined)
     
-    @scala.inline
-    def setExecutionStageName(value: String): Self = StObject.set(x, "executionStageName", value.asInstanceOf[js.Any])
+    inline def setExecutionStageName(value: String): Self = StObject.set(x, "executionStageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStageNameUndefined: Self = StObject.set(x, "executionStageName", js.undefined)
+    inline def setExecutionStageNameUndefined: Self = StObject.set(x, "executionStageName", js.undefined)
     
-    @scala.inline
-    def setExecutionStageState(value: String): Self = StObject.set(x, "executionStageState", value.asInstanceOf[js.Any])
+    inline def setExecutionStageState(value: String): Self = StObject.set(x, "executionStageState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStageStateUndefined: Self = StObject.set(x, "executionStageState", js.undefined)
+    inline def setExecutionStageStateUndefined: Self = StObject.set(x, "executionStageState", js.undefined)
   }
 }

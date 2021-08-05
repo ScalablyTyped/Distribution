@@ -25,32 +25,23 @@ object ord {
   @js.native
   val URI: /* "Ord" */ String = js.native
   
-  @scala.inline
-  def between[A](O: Ord_[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, Boolean]]]
+  inline def between[A](O: Ord_[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, Boolean]]]
   
-  @scala.inline
-  def clamp[A](O: Ord_[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, A]]]
+  inline def clamp[A](O: Ord_[A]): js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* low */ A, /* hi */ A, js.Function1[/* x */ A, A]]]
   
-  @scala.inline
-  def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Ord_[A], Ord_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Ord_[A], Ord_[B]]]
+  inline def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Ord_[A], Ord_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Ord_[A], Ord_[B]]]
   
-  @scala.inline
-  def fromCompare[A](compare: js.Function2[/* x */ A, /* y */ A, Ordering]): Ord_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompare")(compare.asInstanceOf[js.Any]).asInstanceOf[Ord_[A]]
+  inline def fromCompare[A](compare: js.Function2[/* x */ A, /* y */ A, Ordering]): Ord_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompare")(compare.asInstanceOf[js.Any]).asInstanceOf[Ord_[A]]
   
-  @scala.inline
-  def geq[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("geq")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
+  inline def geq[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("geq")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
   
-  @scala.inline
-  def getDualOrd[A](O: Ord_[A]): Ord_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDualOrd")(O.asInstanceOf[js.Any]).asInstanceOf[Ord_[A]]
+  inline def getDualOrd[A](O: Ord_[A]): Ord_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDualOrd")(O.asInstanceOf[js.Any]).asInstanceOf[Ord_[A]]
   
-  @scala.inline
-  def getMonoid[A](): Monoid[Ord_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")().asInstanceOf[Monoid[Ord_[A]]]
+  inline def getMonoid[A](): Monoid[Ord_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")().asInstanceOf[Monoid[Ord_[A]]]
   
-  @scala.inline
-  def getSemigroup[A](): Semigroup[Ord_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")().asInstanceOf[Semigroup[Ord_[A]]]
+  inline def getSemigroup[A](): Semigroup[Ord_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")().asInstanceOf[Semigroup[Ord_[A]]]
   
-  @scala.inline
-  def getTupleOrd[T /* <: js.Array[Ord_[js.Any]] */](
+  inline def getTupleOrd[T /* <: js.Array[Ord_[js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ords because its type T is not an array type */ ords: T
   ): Ord_[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -62,20 +53,15 @@ object ord {
     */ typings.fpTs.fpTsStrings.getTupleOrd & TopLevel[T]
   ]]
   
-  @scala.inline
-  def gt[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
+  inline def gt[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
   
-  @scala.inline
-  def leq[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("leq")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
+  inline def leq[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("leq")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
   
-  @scala.inline
-  def lt[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
+  inline def lt[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, Boolean]]
   
-  @scala.inline
-  def max[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
+  inline def max[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
   
-  @scala.inline
-  def min[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
+  inline def min[A](O: Ord_[A]): js.Function2[/* x */ A, /* y */ A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
   
   @JSImport("fp-ts", "ord.ord")
   @js.native

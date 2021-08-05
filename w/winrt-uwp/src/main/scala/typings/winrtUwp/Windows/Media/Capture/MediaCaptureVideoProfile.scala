@@ -31,8 +31,7 @@ trait MediaCaptureVideoProfile extends StObject {
 }
 object MediaCaptureVideoProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getConcurrency: () => IVectorView[MediaCaptureVideoProfile],
     id: String,
     supportedPhotoMediaDescription: IVectorView[MediaCaptureVideoProfileMediaDescription],
@@ -44,25 +43,18 @@ object MediaCaptureVideoProfile {
     __obj.asInstanceOf[MediaCaptureVideoProfile]
   }
   
-  @scala.inline
-  implicit class MediaCaptureVideoProfileMutableBuilder[Self <: MediaCaptureVideoProfile] (val x: Self) extends AnyVal {
+  extension [Self <: MediaCaptureVideoProfile](x: Self) {
     
-    @scala.inline
-    def setGetConcurrency(value: () => IVectorView[MediaCaptureVideoProfile]): Self = StObject.set(x, "getConcurrency", js.Any.fromFunction0(value))
+    inline def setGetConcurrency(value: () => IVectorView[MediaCaptureVideoProfile]): Self = StObject.set(x, "getConcurrency", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPhotoMediaDescription(value: IVectorView[MediaCaptureVideoProfileMediaDescription]): Self = StObject.set(x, "supportedPhotoMediaDescription", value.asInstanceOf[js.Any])
+    inline def setSupportedPhotoMediaDescription(value: IVectorView[MediaCaptureVideoProfileMediaDescription]): Self = StObject.set(x, "supportedPhotoMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPreviewMediaDescription(value: IVectorView[MediaCaptureVideoProfileMediaDescription]): Self = StObject.set(x, "supportedPreviewMediaDescription", value.asInstanceOf[js.Any])
+    inline def setSupportedPreviewMediaDescription(value: IVectorView[MediaCaptureVideoProfileMediaDescription]): Self = StObject.set(x, "supportedPreviewMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedRecordMediaDescription(value: IVectorView[MediaCaptureVideoProfileMediaDescription]): Self = StObject.set(x, "supportedRecordMediaDescription", value.asInstanceOf[js.Any])
+    inline def setSupportedRecordMediaDescription(value: IVectorView[MediaCaptureVideoProfileMediaDescription]): Self = StObject.set(x, "supportedRecordMediaDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceId(value: String): Self = StObject.set(x, "videoDeviceId", value.asInstanceOf[js.Any])
   }
 }

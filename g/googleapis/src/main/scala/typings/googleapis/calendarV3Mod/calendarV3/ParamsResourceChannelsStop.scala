@@ -24,25 +24,19 @@ trait ParamsResourceChannelsStop
 }
 object ParamsResourceChannelsStop {
   
-  @scala.inline
-  def apply(): ParamsResourceChannelsStop = {
+  inline def apply(): ParamsResourceChannelsStop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceChannelsStop]
   }
   
-  @scala.inline
-  implicit class ParamsResourceChannelsStopMutableBuilder[Self <: ParamsResourceChannelsStop] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceChannelsStop](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaChannel): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaChannel): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

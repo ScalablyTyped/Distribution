@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sharedb", "PubSub")
 @js.native
-abstract class PubSub protected () extends StObject {
-  protected def this(options: PubSubOptions) = this()
+/* protected */ abstract class PubSub () extends StObject {
+  /* protected */ def this(options: PubSubOptions) = this()
   
   /* private */ def _createStream(channel: js.Any): Unit = js.native
   
@@ -25,9 +25,9 @@ abstract class PubSub protected () extends StObject {
   def close(): Unit = js.native
   def close(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   
-  var nextStreamId: Double = js.native
+  /* protected */ var nextStreamId: Double = js.native
   
-  var prefix: js.UndefOr[String] = js.native
+  /* protected */ var prefix: js.UndefOr[String] = js.native
   
   def publish(
     channels: js.Array[String],
@@ -35,16 +35,16 @@ abstract class PubSub protected () extends StObject {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   
-  var streams: StringDictionary[Stream] = js.native
+  /* protected */ var streams: StringDictionary[Stream] = js.native
   
-  var streamsCount: Double = js.native
+  /* protected */ var streamsCount: Double = js.native
   
   def subscribe(
     channel: String,
     callback: js.Function2[/* err */ Error | Null, /* stream */ js.UndefOr[Stream], Unit]
   ): Unit = js.native
   
-  var subscribed: StringDictionary[Boolean] = js.native
+  /* protected */ var subscribed: StringDictionary[Boolean] = js.native
 }
 object PubSub {
   
@@ -53,6 +53,5 @@ object PubSub {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def shallowCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def shallowCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

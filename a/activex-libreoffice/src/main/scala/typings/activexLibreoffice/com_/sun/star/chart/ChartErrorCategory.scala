@@ -28,16 +28,14 @@ object ChartErrorCategory {
     * The values for these are given as absolute numbers in {@link ChartStatistics.ConstantErrorLow} and {@link ChartStatistics.ConstantErrorHigh}
     * @see ChartStatistics
     */
-  @scala.inline
-  def CONSTANT_VALUE: `5` = 5.asInstanceOf[`5`]
+  inline def CONSTANT_VALUE: `5` = 5.asInstanceOf[`5`]
   
   /**
     * The length of the error indicators for all data points is calculated by taking the percentage given as {@link ChartStatistics.ErrorMargin} of the
     * largest data point value.
     * @see ChartStatistics
     */
-  @scala.inline
-  def ERROR_MARGIN: `4` = 4.asInstanceOf[`4`]
+  inline def ERROR_MARGIN: `4` = 4.asInstanceOf[`4`]
   
   /**
     * error indicators are not displayed.
@@ -54,22 +52,18 @@ object ChartErrorCategory {
     *
     * displays no regression curve.
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * The length of the error indicators is calculated for each data point by taking the percentage given as {@link ChartStatistics.PercentageError} of its
     * value.
     * @see ChartStatistics
     */
-  @scala.inline
-  def PERCENT: `3` = 3.asInstanceOf[`3`]
+  inline def PERCENT: `3` = 3.asInstanceOf[`3`]
   
   /** displays error indicators for the standard deviation (square root of variance) of the data row. */
-  @scala.inline
-  def STANDARD_DEVIATION: `2` = 2.asInstanceOf[`2`]
+  inline def STANDARD_DEVIATION: `2` = 2.asInstanceOf[`2`]
   
   /** displays error indicators for the variance of the data row. */
-  @scala.inline
-  def VARIANCE: `1` = 1.asInstanceOf[`1`]
+  inline def VARIANCE: `1` = 1.asInstanceOf[`1`]
 }

@@ -31,38 +31,28 @@ object imageMod {
   }
   object ImageProps {
     
-    @scala.inline
-    def apply(): ImageProps = {
+    inline def apply(): ImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageProps]
     }
     
-    @scala.inline
-    implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageProps](x: Self) {
       
-      @scala.inline
-      def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+      inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+      inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      @scala.inline
-      def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+      inline def setRounded(value: Boolean): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+      inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
       
-      @scala.inline
-      def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
     }
   }
 }

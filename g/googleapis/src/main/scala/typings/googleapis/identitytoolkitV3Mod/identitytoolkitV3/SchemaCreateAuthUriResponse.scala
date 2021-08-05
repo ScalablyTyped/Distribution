@@ -57,73 +57,51 @@ trait SchemaCreateAuthUriResponse extends StObject {
 }
 object SchemaCreateAuthUriResponse {
   
-  @scala.inline
-  def apply(): SchemaCreateAuthUriResponse = {
+  inline def apply(): SchemaCreateAuthUriResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateAuthUriResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCreateAuthUriResponseMutableBuilder[Self <: SchemaCreateAuthUriResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateAuthUriResponse](x: Self) {
     
-    @scala.inline
-    def setAllProviders(value: js.Array[String]): Self = StObject.set(x, "allProviders", value.asInstanceOf[js.Any])
+    inline def setAllProviders(value: js.Array[String]): Self = StObject.set(x, "allProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllProvidersUndefined: Self = StObject.set(x, "allProviders", js.undefined)
+    inline def setAllProvidersUndefined: Self = StObject.set(x, "allProviders", js.undefined)
     
-    @scala.inline
-    def setAllProvidersVarargs(value: String*): Self = StObject.set(x, "allProviders", js.Array(value :_*))
+    inline def setAllProvidersVarargs(value: String*): Self = StObject.set(x, "allProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setAuthUri(value: String): Self = StObject.set(x, "authUri", value.asInstanceOf[js.Any])
+    inline def setAuthUri(value: String): Self = StObject.set(x, "authUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUriUndefined: Self = StObject.set(x, "authUri", js.undefined)
+    inline def setAuthUriUndefined: Self = StObject.set(x, "authUri", js.undefined)
     
-    @scala.inline
-    def setCaptchaRequired(value: Boolean): Self = StObject.set(x, "captchaRequired", value.asInstanceOf[js.Any])
+    inline def setCaptchaRequired(value: Boolean): Self = StObject.set(x, "captchaRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptchaRequiredUndefined: Self = StObject.set(x, "captchaRequired", js.undefined)
+    inline def setCaptchaRequiredUndefined: Self = StObject.set(x, "captchaRequired", js.undefined)
     
-    @scala.inline
-    def setForExistingProvider(value: Boolean): Self = StObject.set(x, "forExistingProvider", value.asInstanceOf[js.Any])
+    inline def setForExistingProvider(value: Boolean): Self = StObject.set(x, "forExistingProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForExistingProviderUndefined: Self = StObject.set(x, "forExistingProvider", js.undefined)
+    inline def setForExistingProviderUndefined: Self = StObject.set(x, "forExistingProvider", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
+    inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
-    @scala.inline
-    def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
+    inline def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredUndefined: Self = StObject.set(x, "registered", js.undefined)
+    inline def setRegisteredUndefined: Self = StObject.set(x, "registered", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
-    @scala.inline
-    def setSigninMethods(value: js.Array[String]): Self = StObject.set(x, "signinMethods", value.asInstanceOf[js.Any])
+    inline def setSigninMethods(value: js.Array[String]): Self = StObject.set(x, "signinMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninMethodsUndefined: Self = StObject.set(x, "signinMethods", js.undefined)
+    inline def setSigninMethodsUndefined: Self = StObject.set(x, "signinMethods", js.undefined)
     
-    @scala.inline
-    def setSigninMethodsVarargs(value: String*): Self = StObject.set(x, "signinMethods", js.Array(value :_*))
+    inline def setSigninMethodsVarargs(value: String*): Self = StObject.set(x, "signinMethods", js.Array(value :_*))
   }
 }

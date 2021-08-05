@@ -14,28 +14,21 @@ trait Limit extends StObject {
 }
 object Limit {
   
-  @scala.inline
-  def apply(datasetId: String): Limit = {
+  inline def apply(datasetId: String): Limit = {
     val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
   
-  @scala.inline
-  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+  extension [Self <: Limit](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

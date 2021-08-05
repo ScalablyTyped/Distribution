@@ -40,53 +40,38 @@ object circleMod {
   }
   object CirclePickerProps {
     
-    @scala.inline
-    def apply(): CirclePickerProps = {
+    inline def apply(): CirclePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CirclePickerProps]
     }
     
-    @scala.inline
-    implicit class CirclePickerPropsMutableBuilder[Self <: CirclePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: CirclePickerProps](x: Self) {
       
-      @scala.inline
-      def setCircleSize(value: Double): Self = StObject.set(x, "circleSize", value.asInstanceOf[js.Any])
+      inline def setCircleSize(value: Double): Self = StObject.set(x, "circleSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleSizeUndefined: Self = StObject.set(x, "circleSize", js.undefined)
+      inline def setCircleSizeUndefined: Self = StObject.set(x, "circleSize", js.undefined)
       
-      @scala.inline
-      def setCircleSpacing(value: Double): Self = StObject.set(x, "circleSpacing", value.asInstanceOf[js.Any])
+      inline def setCircleSpacing(value: Double): Self = StObject.set(x, "circleSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleSpacingUndefined: Self = StObject.set(x, "circleSpacing", js.undefined)
+      inline def setCircleSpacingUndefined: Self = StObject.set(x, "circleSpacing", js.undefined)
       
-      @scala.inline
-      def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
+      inline def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSwatchHoverUndefined: Self = StObject.set(x, "onSwatchHover", js.undefined)
+      inline def setOnSwatchHoverUndefined: Self = StObject.set(x, "onSwatchHover", js.undefined)
       
-      @scala.inline
-      def setStyles(value: PartialClassesCirclePicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialClassesCirclePicke): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -96,17 +81,14 @@ object circleMod {
   }
   object CirclePickerStylesProps {
     
-    @scala.inline
-    def apply(card: CSSProperties): CirclePickerStylesProps = {
+    inline def apply(card: CSSProperties): CirclePickerStylesProps = {
       val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any])
       __obj.asInstanceOf[CirclePickerStylesProps]
     }
     
-    @scala.inline
-    implicit class CirclePickerStylesPropsMutableBuilder[Self <: CirclePickerStylesProps] (val x: Self) extends AnyVal {
+    extension [Self <: CirclePickerStylesProps](x: Self) {
       
-      @scala.inline
-      def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     }
   }
 }

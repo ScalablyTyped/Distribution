@@ -10,19 +10,15 @@ trait DiagramSelectOptions extends StObject {
 }
 object DiagramSelectOptions {
   
-  @scala.inline
-  def apply(): DiagramSelectOptions = {
+  inline def apply(): DiagramSelectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramSelectOptions]
   }
   
-  @scala.inline
-  implicit class DiagramSelectOptionsMutableBuilder[Self <: DiagramSelectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramSelectOptions](x: Self) {
     
-    @scala.inline
-    def setAddToSelection(value: Boolean): Self = StObject.set(x, "addToSelection", value.asInstanceOf[js.Any])
+    inline def setAddToSelection(value: Boolean): Self = StObject.set(x, "addToSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddToSelectionUndefined: Self = StObject.set(x, "addToSelection", js.undefined)
+    inline def setAddToSelectionUndefined: Self = StObject.set(x, "addToSelection", js.undefined)
   }
 }

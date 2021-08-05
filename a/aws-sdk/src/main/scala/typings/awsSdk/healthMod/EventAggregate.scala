@@ -18,25 +18,19 @@ trait EventAggregate extends StObject {
 }
 object EventAggregate {
   
-  @scala.inline
-  def apply(): EventAggregate = {
+  inline def apply(): EventAggregate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventAggregate]
   }
   
-  @scala.inline
-  implicit class EventAggregateMutableBuilder[Self <: EventAggregate] (val x: Self) extends AnyVal {
+  extension [Self <: EventAggregate](x: Self) {
     
-    @scala.inline
-    def setAggregateValue(value: aggregateValue): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
+    inline def setAggregateValue(value: aggregateValue): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateValueUndefined: Self = StObject.set(x, "aggregateValue", js.undefined)
+    inline def setAggregateValueUndefined: Self = StObject.set(x, "aggregateValue", js.undefined)
     
-    @scala.inline
-    def setCount(value: count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

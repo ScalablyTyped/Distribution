@@ -19,19 +19,15 @@ trait AtomClassRequest extends StObject {
 }
 object AtomClassRequest {
   
-  @scala.inline
-  def apply(atomClass: Double, atoms: SafeArray[Double]): AtomClassRequest = {
+  inline def apply(atomClass: Double, atoms: SafeArray[Double]): AtomClassRequest = {
     val __obj = js.Dynamic.literal(atomClass = atomClass.asInstanceOf[js.Any], atoms = atoms.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtomClassRequest]
   }
   
-  @scala.inline
-  implicit class AtomClassRequestMutableBuilder[Self <: AtomClassRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AtomClassRequest](x: Self) {
     
-    @scala.inline
-    def setAtomClass(value: Double): Self = StObject.set(x, "atomClass", value.asInstanceOf[js.Any])
+    inline def setAtomClass(value: Double): Self = StObject.set(x, "atomClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtoms(value: SafeArray[Double]): Self = StObject.set(x, "atoms", value.asInstanceOf[js.Any])
+    inline def setAtoms(value: SafeArray[Double]): Self = StObject.set(x, "atoms", value.asInstanceOf[js.Any])
   }
 }

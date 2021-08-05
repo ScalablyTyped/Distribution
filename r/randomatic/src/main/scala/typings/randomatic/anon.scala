@@ -14,29 +14,22 @@ object anon {
   }
   object Chars {
     
-    @scala.inline
-    def apply(): Chars = {
+    inline def apply(): Chars = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Chars]
     }
     
-    @scala.inline
-    implicit class CharsMutableBuilder[Self <: Chars] (val x: Self) extends AnyVal {
+    extension [Self <: Chars](x: Self) {
       
-      @scala.inline
-      def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
+      inline def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     }
   }
 }

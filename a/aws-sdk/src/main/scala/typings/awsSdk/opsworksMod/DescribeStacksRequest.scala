@@ -13,22 +13,17 @@ trait DescribeStacksRequest extends StObject {
 }
 object DescribeStacksRequest {
   
-  @scala.inline
-  def apply(): DescribeStacksRequest = {
+  inline def apply(): DescribeStacksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStacksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeStacksRequestMutableBuilder[Self <: DescribeStacksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStacksRequest](x: Self) {
     
-    @scala.inline
-    def setStackIds(value: Strings): Self = StObject.set(x, "StackIds", value.asInstanceOf[js.Any])
+    inline def setStackIds(value: Strings): Self = StObject.set(x, "StackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdsUndefined: Self = StObject.set(x, "StackIds", js.undefined)
+    inline def setStackIdsUndefined: Self = StObject.set(x, "StackIds", js.undefined)
     
-    @scala.inline
-    def setStackIdsVarargs(value: String*): Self = StObject.set(x, "StackIds", js.Array(value :_*))
+    inline def setStackIdsVarargs(value: String*): Self = StObject.set(x, "StackIds", js.Array(value :_*))
   }
 }

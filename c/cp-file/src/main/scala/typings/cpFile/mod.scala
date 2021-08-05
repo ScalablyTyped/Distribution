@@ -21,10 +21,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(source: String, destination: String): js.Promise[Unit] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] & ProgressEmitter]
-  @scala.inline
-  def apply(source: String, destination: String, options: Options): js.Promise[Unit] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] & ProgressEmitter]
+  inline def apply(source: String, destination: String): js.Promise[Unit] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] & ProgressEmitter]
+  inline def apply(source: String, destination: String, options: Options): js.Promise[Unit] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] & ProgressEmitter]
   
   @JSImport("cp-file", JSImport.Namespace)
   @js.native
@@ -40,10 +38,8 @@ object mod {
   	cpFile.sync('source/unicorn.png', 'destination/unicorn.png');
   	```
   	*/
-  @scala.inline
-  def sync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def sync(source: String, destination: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sync(source: String, destination: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sync(source: String, destination: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -55,20 +51,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     }
   }
   
@@ -101,29 +93,22 @@ object mod {
   }
   object ProgressData {
     
-    @scala.inline
-    def apply(destinationPath: String, percent: Double, size: Double, sourcePath: String, writtenBytes: Double): ProgressData = {
+    inline def apply(destinationPath: String, percent: Double, size: Double, sourcePath: String, writtenBytes: Double): ProgressData = {
       val __obj = js.Dynamic.literal(destinationPath = destinationPath.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], sourcePath = sourcePath.asInstanceOf[js.Any], writtenBytes = writtenBytes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressData]
     }
     
-    @scala.inline
-    implicit class ProgressDataMutableBuilder[Self <: ProgressData] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressData](x: Self) {
       
-      @scala.inline
-      def setDestinationPath(value: String): Self = StObject.set(x, "destinationPath", value.asInstanceOf[js.Any])
+      inline def setDestinationPath(value: String): Self = StObject.set(x, "destinationPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
+      inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrittenBytes(value: Double): Self = StObject.set(x, "writtenBytes", value.asInstanceOf[js.Any])
+      inline def setWrittenBytes(value: Double): Self = StObject.set(x, "writtenBytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,17 +122,14 @@ object mod {
   }
   object ProgressEmitter {
     
-    @scala.inline
-    def apply(on: (progress, js.Function1[/* data */ ProgressData, Unit]) => js.Promise[Unit]): ProgressEmitter = {
+    inline def apply(on: (progress, js.Function1[/* data */ ProgressData, Unit]) => js.Promise[Unit]): ProgressEmitter = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
       __obj.asInstanceOf[ProgressEmitter]
     }
     
-    @scala.inline
-    implicit class ProgressEmitterMutableBuilder[Self <: ProgressEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressEmitter](x: Self) {
       
-      @scala.inline
-      def setOn(value: (progress, js.Function1[/* data */ ProgressData, Unit]) => js.Promise[Unit]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (progress, js.Function1[/* data */ ProgressData, Unit]) => js.Promise[Unit]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
 }

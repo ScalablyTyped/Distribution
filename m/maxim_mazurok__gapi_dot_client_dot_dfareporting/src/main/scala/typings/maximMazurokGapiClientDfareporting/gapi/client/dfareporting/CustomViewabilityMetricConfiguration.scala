@@ -23,37 +23,27 @@ trait CustomViewabilityMetricConfiguration extends StObject {
 }
 object CustomViewabilityMetricConfiguration {
   
-  @scala.inline
-  def apply(): CustomViewabilityMetricConfiguration = {
+  inline def apply(): CustomViewabilityMetricConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomViewabilityMetricConfiguration]
   }
   
-  @scala.inline
-  implicit class CustomViewabilityMetricConfigurationMutableBuilder[Self <: CustomViewabilityMetricConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CustomViewabilityMetricConfiguration](x: Self) {
     
-    @scala.inline
-    def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
+    inline def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
+    inline def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
     
-    @scala.inline
-    def setTimeMillis(value: Double): Self = StObject.set(x, "timeMillis", value.asInstanceOf[js.Any])
+    inline def setTimeMillis(value: Double): Self = StObject.set(x, "timeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMillisUndefined: Self = StObject.set(x, "timeMillis", js.undefined)
+    inline def setTimeMillisUndefined: Self = StObject.set(x, "timeMillis", js.undefined)
     
-    @scala.inline
-    def setTimePercent(value: Double): Self = StObject.set(x, "timePercent", value.asInstanceOf[js.Any])
+    inline def setTimePercent(value: Double): Self = StObject.set(x, "timePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePercentUndefined: Self = StObject.set(x, "timePercent", js.undefined)
+    inline def setTimePercentUndefined: Self = StObject.set(x, "timePercent", js.undefined)
     
-    @scala.inline
-    def setViewabilityPercent(value: Double): Self = StObject.set(x, "viewabilityPercent", value.asInstanceOf[js.Any])
+    inline def setViewabilityPercent(value: Double): Self = StObject.set(x, "viewabilityPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewabilityPercentUndefined: Self = StObject.set(x, "viewabilityPercent", js.undefined)
+    inline def setViewabilityPercentUndefined: Self = StObject.set(x, "viewabilityPercent", js.undefined)
   }
 }

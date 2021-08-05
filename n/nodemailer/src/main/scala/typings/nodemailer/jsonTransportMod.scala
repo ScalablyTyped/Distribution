@@ -60,8 +60,7 @@ object jsonTransportMod {
   }
   object JSONTransport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       logger: Logger,
       mailer: typings.nodemailer.mailerMod.^,
       name: String,
@@ -76,17 +75,13 @@ object jsonTransportMod {
       __obj.asInstanceOf[JSONTransport]
     }
     
-    @scala.inline
-    implicit class JSONTransportMutableBuilder[Self <: JSONTransport] (val x: Self) extends AnyVal {
+    extension [Self <: JSONTransport](x: Self) {
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailer(value: typings.nodemailer.mailerMod.^): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
+      inline def setMailer(value: typings.nodemailer.mailerMod.^): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,23 +98,18 @@ object jsonTransportMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal(jsonTransport = true)
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setJsonTransport(value: `true`): Self = StObject.set(x, "jsonTransport", value.asInstanceOf[js.Any])
+      inline def setJsonTransport(value: `true`): Self = StObject.set(x, "jsonTransport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipEncoding(value: Boolean): Self = StObject.set(x, "skipEncoding", value.asInstanceOf[js.Any])
+      inline def setSkipEncoding(value: Boolean): Self = StObject.set(x, "skipEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipEncodingUndefined: Self = StObject.set(x, "skipEncoding", js.undefined)
+      inline def setSkipEncodingUndefined: Self = StObject.set(x, "skipEncoding", js.undefined)
     }
   }
   
@@ -136,23 +126,18 @@ object jsonTransportMod {
   }
   object SentMessageInfo {
     
-    @scala.inline
-    def apply(envelope: Envelope, message: String, messageId: String): SentMessageInfo = {
+    inline def apply(envelope: Envelope, message: String, messageId: String): SentMessageInfo = {
       val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    @scala.inline
-    implicit class SentMessageInfoMutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SentMessageInfo](x: Self) {
       
-      @scala.inline
-      def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
+      inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     }
   }
 }

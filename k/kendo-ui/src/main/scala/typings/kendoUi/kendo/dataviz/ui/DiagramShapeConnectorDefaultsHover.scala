@@ -12,25 +12,19 @@ trait DiagramShapeConnectorDefaultsHover extends StObject {
 }
 object DiagramShapeConnectorDefaultsHover {
   
-  @scala.inline
-  def apply(): DiagramShapeConnectorDefaultsHover = {
+  inline def apply(): DiagramShapeConnectorDefaultsHover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramShapeConnectorDefaultsHover]
   }
   
-  @scala.inline
-  implicit class DiagramShapeConnectorDefaultsHoverMutableBuilder[Self <: DiagramShapeConnectorDefaultsHover] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramShapeConnectorDefaultsHover](x: Self) {
     
-    @scala.inline
-    def setFill(value: String | DiagramShapeConnectorDefaultsHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String | DiagramShapeConnectorDefaultsHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: String | DiagramShapeConnectorDefaultsHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String | DiagramShapeConnectorDefaultsHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

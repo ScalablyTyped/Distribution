@@ -22,9 +22,9 @@ trait FormattingContext extends StObject {
   
   var contextNode: IndentationNodeContext
   
-  var contextNodeAllOnSameLine: js.Any
+  /* private */ var contextNodeAllOnSameLine: js.Any
   
-  var contextNodeBlockIsOnOneLine: js.Any
+  /* private */ var contextNodeBlockIsOnOneLine: js.Any
   
   var currentTokenParent: IndentationNodeContext
   
@@ -32,17 +32,17 @@ trait FormattingContext extends StObject {
   
   var formattingRequestKind: FormattingRequestKind
   
-  var nextNodeAllOnSameLine: js.Any
+  /* private */ var nextNodeAllOnSameLine: js.Any
   
-  var nextNodeBlockIsOnOneLine: js.Any
+  /* private */ var nextNodeBlockIsOnOneLine: js.Any
   
   var nextTokenParent: IndentationNodeContext
   
   var nextTokenSpan: TokenSpan
   
-  var snapshot: js.Any
+  /* private */ var snapshot: js.Any
   
-  var tokensAreOnSameLine: js.Any
+  /* private */ var tokensAreOnSameLine: js.Any
   
   def updateContext(
     currentTokenSpan: TokenSpan,
@@ -54,8 +54,7 @@ trait FormattingContext extends StObject {
 }
 object FormattingContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BlockIsOnOneLine: IndentationNodeContext => Boolean,
     ContextNodeAllOnSameLine: () => Boolean,
     ContextNodeBlockIsOnOneLine: () => Boolean,
@@ -81,53 +80,37 @@ object FormattingContext {
     __obj.asInstanceOf[FormattingContext]
   }
   
-  @scala.inline
-  implicit class FormattingContextMutableBuilder[Self <: FormattingContext] (val x: Self) extends AnyVal {
+  extension [Self <: FormattingContext](x: Self) {
     
-    @scala.inline
-    def setBlockIsOnOneLine(value: IndentationNodeContext => Boolean): Self = StObject.set(x, "BlockIsOnOneLine", js.Any.fromFunction1(value))
+    inline def setBlockIsOnOneLine(value: IndentationNodeContext => Boolean): Self = StObject.set(x, "BlockIsOnOneLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContextNode(value: IndentationNodeContext): Self = StObject.set(x, "contextNode", value.asInstanceOf[js.Any])
+    inline def setContextNode(value: IndentationNodeContext): Self = StObject.set(x, "contextNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNodeAllOnSameLine(value: () => Boolean): Self = StObject.set(x, "ContextNodeAllOnSameLine", js.Any.fromFunction0(value))
+    inline def setContextNodeAllOnSameLine(value: () => Boolean): Self = StObject.set(x, "ContextNodeAllOnSameLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContextNodeBlockIsOnOneLine(value: () => Boolean): Self = StObject.set(x, "ContextNodeBlockIsOnOneLine", js.Any.fromFunction0(value))
+    inline def setContextNodeBlockIsOnOneLine(value: () => Boolean): Self = StObject.set(x, "ContextNodeBlockIsOnOneLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCurrentTokenParent(value: IndentationNodeContext): Self = StObject.set(x, "currentTokenParent", value.asInstanceOf[js.Any])
+    inline def setCurrentTokenParent(value: IndentationNodeContext): Self = StObject.set(x, "currentTokenParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTokenSpan(value: TokenSpan): Self = StObject.set(x, "currentTokenSpan", value.asInstanceOf[js.Any])
+    inline def setCurrentTokenSpan(value: TokenSpan): Self = StObject.set(x, "currentTokenSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattingRequestKind(value: FormattingRequestKind): Self = StObject.set(x, "formattingRequestKind", value.asInstanceOf[js.Any])
+    inline def setFormattingRequestKind(value: FormattingRequestKind): Self = StObject.set(x, "formattingRequestKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNodeAllOnSameLine(value: () => Boolean): Self = StObject.set(x, "NextNodeAllOnSameLine", js.Any.fromFunction0(value))
+    inline def setNextNodeAllOnSameLine(value: () => Boolean): Self = StObject.set(x, "NextNodeAllOnSameLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNextNodeBlockIsOnOneLine(value: () => Boolean): Self = StObject.set(x, "NextNodeBlockIsOnOneLine", js.Any.fromFunction0(value))
+    inline def setNextNodeBlockIsOnOneLine(value: () => Boolean): Self = StObject.set(x, "NextNodeBlockIsOnOneLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNextTokenParent(value: IndentationNodeContext): Self = StObject.set(x, "nextTokenParent", value.asInstanceOf[js.Any])
+    inline def setNextTokenParent(value: IndentationNodeContext): Self = StObject.set(x, "nextTokenParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenSpan(value: TokenSpan): Self = StObject.set(x, "nextTokenSpan", value.asInstanceOf[js.Any])
+    inline def setNextTokenSpan(value: TokenSpan): Self = StObject.set(x, "nextTokenSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIsOnOneLine(value: IndentationNodeContext => Boolean): Self = StObject.set(x, "NodeIsOnOneLine", js.Any.fromFunction1(value))
+    inline def setNodeIsOnOneLine(value: IndentationNodeContext => Boolean): Self = StObject.set(x, "NodeIsOnOneLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensAreOnSameLine(value: () => Boolean): Self = StObject.set(x, "TokensAreOnSameLine", js.Any.fromFunction0(value))
+    inline def setTokensAreOnSameLine(value: () => Boolean): Self = StObject.set(x, "TokensAreOnSameLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateContext(
+    inline def setUpdateContext(
       value: (TokenSpan, IndentationNodeContext, TokenSpan, IndentationNodeContext, IndentationNodeContext) => Unit
     ): Self = StObject.set(x, "updateContext", js.Any.fromFunction5(value))
   }

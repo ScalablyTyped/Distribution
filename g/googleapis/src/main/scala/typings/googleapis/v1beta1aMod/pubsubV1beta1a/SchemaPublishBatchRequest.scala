@@ -21,28 +21,21 @@ trait SchemaPublishBatchRequest extends StObject {
 }
 object SchemaPublishBatchRequest {
   
-  @scala.inline
-  def apply(): SchemaPublishBatchRequest = {
+  inline def apply(): SchemaPublishBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublishBatchRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPublishBatchRequestMutableBuilder[Self <: SchemaPublishBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublishBatchRequest](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[SchemaPubsubMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[SchemaPubsubMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: SchemaPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SchemaPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

@@ -24,52 +24,37 @@ trait ColumnDefinition[Name /* <: String */, Type]
 }
 object ColumnDefinition {
   
-  @scala.inline
-  def apply[Name /* <: String */, Type](dataType: String): ColumnDefinition[Name, Type] = {
+  inline def apply[Name /* <: String */, Type](dataType: String): ColumnDefinition[Name, Type] = {
     val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefinition[Name, Type]]
   }
   
-  @scala.inline
-  implicit class ColumnDefinitionMutableBuilder[Self <: ColumnDefinition[?, ?], Name /* <: String */, Type] (val x: Self & (ColumnDefinition[Name, Type])) extends AnyVal {
+  extension [Self <: ColumnDefinition[?, ?], Name /* <: String */, Type](x: Self & (ColumnDefinition[Name, Type])) {
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: Type): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Type): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setJsType(value: Type): Self = StObject.set(x, "jsType", value.asInstanceOf[js.Any])
+    inline def setJsType(value: Type): Self = StObject.set(x, "jsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsTypeUndefined: Self = StObject.set(x, "jsType", js.undefined)
+    inline def setJsTypeUndefined: Self = StObject.set(x, "jsType", js.undefined)
     
-    @scala.inline
-    def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
+    inline def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
+    inline def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
     
-    @scala.inline
-    def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: Boolean): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+    inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
-    @scala.inline
-    def setReferences(value: typings.nodeSql2.anon.Column): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: typings.nodeSql2.anon.Column): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

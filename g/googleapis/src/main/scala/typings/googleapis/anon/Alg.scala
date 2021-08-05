@@ -20,49 +20,35 @@ trait Alg extends StObject {
 }
 object Alg {
   
-  @scala.inline
-  def apply(): Alg = {
+  inline def apply(): Alg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alg]
   }
   
-  @scala.inline
-  implicit class AlgMutableBuilder[Self <: Alg] (val x: Self) extends AnyVal {
+  extension [Self <: Alg](x: Self) {
     
-    @scala.inline
-    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+    inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
     
-    @scala.inline
-    def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
-    @scala.inline
-    def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
+    inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKidUndefined: Self = StObject.set(x, "kid", js.undefined)
+    inline def setKidUndefined: Self = StObject.set(x, "kid", js.undefined)
     
-    @scala.inline
-    def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+    inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
+    inline def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
     
-    @scala.inline
-    def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
-    @scala.inline
-    def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
   }
 }

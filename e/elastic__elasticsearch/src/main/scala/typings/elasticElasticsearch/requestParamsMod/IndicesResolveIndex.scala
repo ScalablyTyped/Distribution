@@ -19,25 +19,19 @@ trait IndicesResolveIndex
 }
 object IndicesResolveIndex {
   
-  @scala.inline
-  def apply(name: String | js.Array[String]): IndicesResolveIndex = {
+  inline def apply(name: String | js.Array[String]): IndicesResolveIndex = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesResolveIndex]
   }
   
-  @scala.inline
-  implicit class IndicesResolveIndexMutableBuilder[Self <: IndicesResolveIndex] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesResolveIndex](x: Self) {
     
-    @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
+    inline def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
+    inline def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
-    @scala.inline
-    def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

@@ -42,8 +42,7 @@ object balance {
   }
   object IBalance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       available: js.Array[ISourceType],
       livemode: Boolean,
       `object`: String,
@@ -54,23 +53,17 @@ object balance {
       __obj.asInstanceOf[IBalance]
     }
     
-    @scala.inline
-    implicit class IBalanceMutableBuilder[Self <: IBalance] (val x: Self) extends AnyVal {
+    extension [Self <: IBalance](x: Self) {
       
-      @scala.inline
-      def setAvailable(value: js.Array[ISourceType]): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+      inline def setAvailable(value: js.Array[ISourceType]): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailableVarargs(value: ISourceType*): Self = StObject.set(x, "available", js.Array(value :_*))
+      inline def setAvailableVarargs(value: ISourceType*): Self = StObject.set(x, "available", js.Array(value :_*))
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: js.Array[ISourceType]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: js.Array[ISourceType]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingVarargs(value: ISourceType*): Self = StObject.set(x, "pending", js.Array(value :_*))
+      inline def setPendingVarargs(value: ISourceType*): Self = StObject.set(x, "pending", js.Array(value :_*))
     }
   }
   
@@ -102,46 +95,34 @@ object balance {
   }
   object IBalanceListOptions {
     
-    @scala.inline
-    def apply(): IBalanceListOptions = {
+    inline def apply(): IBalanceListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBalanceListOptions]
     }
     
-    @scala.inline
-    implicit class IBalanceListOptionsMutableBuilder[Self <: IBalanceListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IBalanceListOptions](x: Self) {
       
-      @scala.inline
-      def setAvailable_on(value: String | IDateFilter): Self = StObject.set(x, "available_on", value.asInstanceOf[js.Any])
+      inline def setAvailable_on(value: String | IDateFilter): Self = StObject.set(x, "available_on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailable_onUndefined: Self = StObject.set(x, "available_on", js.undefined)
+      inline def setAvailable_onUndefined: Self = StObject.set(x, "available_on", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setPayout(value: String): Self = StObject.set(x, "payout", value.asInstanceOf[js.Any])
+      inline def setPayout(value: String): Self = StObject.set(x, "payout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayoutUndefined: Self = StObject.set(x, "payout", js.undefined)
+      inline def setPayoutUndefined: Self = StObject.set(x, "payout", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: charge | refund | adjustment | application_fee | application_fee_refund | transfer | payment | payout | payout_failure | stripe_fee | network_cost
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -210,8 +191,7 @@ object balance {
   }
   object IBalanceTransaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       available_on: Double,
       created: Double,
@@ -231,62 +211,43 @@ object balance {
       __obj.asInstanceOf[IBalanceTransaction]
     }
     
-    @scala.inline
-    implicit class IBalanceTransactionMutableBuilder[Self <: IBalanceTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: IBalanceTransaction](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailable_on(value: Double): Self = StObject.set(x, "available_on", value.asInstanceOf[js.Any])
+      inline def setAvailable_on(value: Double): Self = StObject.set(x, "available_on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExchange_rate(value: Double): Self = StObject.set(x, "exchange_rate", value.asInstanceOf[js.Any])
+      inline def setExchange_rate(value: Double): Self = StObject.set(x, "exchange_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExchange_rateNull: Self = StObject.set(x, "exchange_rate", null)
+      inline def setExchange_rateNull: Self = StObject.set(x, "exchange_rate", null)
       
-      @scala.inline
-      def setExchange_rateUndefined: Self = StObject.set(x, "exchange_rate", js.undefined)
+      inline def setExchange_rateUndefined: Self = StObject.set(x, "exchange_rate", js.undefined)
       
-      @scala.inline
-      def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
+      inline def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFee_details(value: js.Array[Amount]): Self = StObject.set(x, "fee_details", value.asInstanceOf[js.Any])
+      inline def setFee_details(value: js.Array[Amount]): Self = StObject.set(x, "fee_details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFee_detailsVarargs(value: Amount*): Self = StObject.set(x, "fee_details", js.Array(value :_*))
+      inline def setFee_detailsVarargs(value: Amount*): Self = StObject.set(x, "fee_details", js.Array(value :_*))
       
-      @scala.inline
-      def setNet(value: Double): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
+      inline def setNet(value: Double): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String | IResourceObject): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | IResourceObject): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_transfers(value: IList[ITransfer]): Self = StObject.set(x, "source_transfers", value.asInstanceOf[js.Any])
+      inline def setSource_transfers(value: IList[ITransfer]): Self = StObject.set(x, "source_transfers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_transfersUndefined: Self = StObject.set(x, "source_transfers", js.undefined)
+      inline def setSource_transfersUndefined: Self = StObject.set(x, "source_transfers", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,23 +261,18 @@ object balance {
   }
   object ISourceType {
     
-    @scala.inline
-    def apply(amount: Double, currency: String, source_types: Alipayaccount): ISourceType = {
+    inline def apply(amount: Double, currency: String, source_types: Alipayaccount): ISourceType = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], source_types = source_types.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISourceType]
     }
     
-    @scala.inline
-    implicit class ISourceTypeMutableBuilder[Self <: ISourceType] (val x: Self) extends AnyVal {
+    extension [Self <: ISourceType](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource_types(value: Alipayaccount): Self = StObject.set(x, "source_types", value.asInstanceOf[js.Any])
+      inline def setSource_types(value: Alipayaccount): Self = StObject.set(x, "source_types", value.asInstanceOf[js.Any])
     }
   }
 }

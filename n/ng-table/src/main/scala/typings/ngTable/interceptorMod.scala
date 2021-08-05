@@ -15,26 +15,20 @@ object interceptorMod {
   }
   object IInterceptor {
     
-    @scala.inline
-    def apply[T](): IInterceptor[T] = {
+    inline def apply[T](): IInterceptor[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInterceptor[T]]
     }
     
-    @scala.inline
-    implicit class IInterceptorMutableBuilder[Self <: IInterceptor[?], T] (val x: Self & IInterceptor[T]) extends AnyVal {
+    extension [Self <: IInterceptor[?], T](x: Self & IInterceptor[T]) {
       
-      @scala.inline
-      def setResponse(value: (/* data */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
+      inline def setResponse(value: (/* data */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResponseError(value: (/* reason */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "responseError", js.Any.fromFunction2(value))
+      inline def setResponseError(value: (/* reason */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "responseError", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
+      inline def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
 }

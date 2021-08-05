@@ -18,19 +18,15 @@ trait IMeassureListItemLayout
 }
 object IMeassureListItemLayout {
   
-  @scala.inline
-  def apply(qData: Null, qInfo: INxInfo, qMeta: INxMetaTitleDescriptionTag): IMeassureListItemLayout = {
+  inline def apply(qData: Null, qInfo: INxInfo, qMeta: INxMetaTitleDescriptionTag): IMeassureListItemLayout = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMeassureListItemLayout]
   }
   
-  @scala.inline
-  implicit class IMeassureListItemLayoutMutableBuilder[Self <: IMeassureListItemLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IMeassureListItemLayout](x: Self) {
     
-    @scala.inline
-    def setQData(value: Null): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: Null): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMetaTitleDescriptionTag): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMetaTitleDescriptionTag): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait GoogleCloudVisionV1p2beta1ProductKeyValue extends StObject {
 }
 object GoogleCloudVisionV1p2beta1ProductKeyValue {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p2beta1ProductKeyValue = {
+  inline def apply(): GoogleCloudVisionV1p2beta1ProductKeyValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1ProductKeyValue]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1ProductKeyValueMutableBuilder[Self <: GoogleCloudVisionV1p2beta1ProductKeyValue] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p2beta1ProductKeyValue](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

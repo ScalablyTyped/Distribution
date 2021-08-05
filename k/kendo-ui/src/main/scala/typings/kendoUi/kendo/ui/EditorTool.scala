@@ -22,58 +22,41 @@ trait EditorTool extends StObject {
 }
 object EditorTool {
   
-  @scala.inline
-  def apply(): EditorTool = {
+  inline def apply(): EditorTool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorTool]
   }
   
-  @scala.inline
-  implicit class EditorToolMutableBuilder[Self <: EditorTool] (val x: Self) extends AnyVal {
+  extension [Self <: EditorTool](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setExec(value: js.Function): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    inline def setExec(value: js.Function): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[EditorToolItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[EditorToolItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: EditorToolItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: EditorToolItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPalette(value: String | js.Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: String | js.Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait GcipSettings extends StObject {
 }
 object GcipSettings {
   
-  @scala.inline
-  def apply(): GcipSettings = {
+  inline def apply(): GcipSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcipSettings]
   }
   
-  @scala.inline
-  implicit class GcipSettingsMutableBuilder[Self <: GcipSettings] (val x: Self) extends AnyVal {
+  extension [Self <: GcipSettings](x: Self) {
     
-    @scala.inline
-    def setLoginPageUri(value: String): Self = StObject.set(x, "loginPageUri", value.asInstanceOf[js.Any])
+    inline def setLoginPageUri(value: String): Self = StObject.set(x, "loginPageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginPageUriUndefined: Self = StObject.set(x, "loginPageUri", js.undefined)
+    inline def setLoginPageUriUndefined: Self = StObject.set(x, "loginPageUri", js.undefined)
     
-    @scala.inline
-    def setTenantIds(value: js.Array[String]): Self = StObject.set(x, "tenantIds", value.asInstanceOf[js.Any])
+    inline def setTenantIds(value: js.Array[String]): Self = StObject.set(x, "tenantIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantIdsUndefined: Self = StObject.set(x, "tenantIds", js.undefined)
+    inline def setTenantIdsUndefined: Self = StObject.set(x, "tenantIds", js.undefined)
     
-    @scala.inline
-    def setTenantIdsVarargs(value: String*): Self = StObject.set(x, "tenantIds", js.Array(value :_*))
+    inline def setTenantIdsVarargs(value: String*): Self = StObject.set(x, "tenantIds", js.Array(value :_*))
   }
 }

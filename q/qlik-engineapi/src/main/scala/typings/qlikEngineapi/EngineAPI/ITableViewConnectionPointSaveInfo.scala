@@ -21,22 +21,17 @@ trait ITableViewConnectionPointSaveInfo extends StObject {
 }
 object ITableViewConnectionPointSaveInfo {
   
-  @scala.inline
-  def apply(qFields: js.Array[String], qPos: IPoint): ITableViewConnectionPointSaveInfo = {
+  inline def apply(qFields: js.Array[String], qPos: IPoint): ITableViewConnectionPointSaveInfo = {
     val __obj = js.Dynamic.literal(qFields = qFields.asInstanceOf[js.Any], qPos = qPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITableViewConnectionPointSaveInfo]
   }
   
-  @scala.inline
-  implicit class ITableViewConnectionPointSaveInfoMutableBuilder[Self <: ITableViewConnectionPointSaveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ITableViewConnectionPointSaveInfo](x: Self) {
     
-    @scala.inline
-    def setQFields(value: js.Array[String]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
+    inline def setQFields(value: js.Array[String]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldsVarargs(value: String*): Self = StObject.set(x, "qFields", js.Array(value :_*))
+    inline def setQFieldsVarargs(value: String*): Self = StObject.set(x, "qFields", js.Array(value :_*))
     
-    @scala.inline
-    def setQPos(value: IPoint): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
+    inline def setQPos(value: IPoint): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
   }
 }

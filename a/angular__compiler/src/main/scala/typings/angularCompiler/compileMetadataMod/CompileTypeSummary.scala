@@ -12,23 +12,18 @@ trait CompileTypeSummary extends StObject {
 }
 object CompileTypeSummary {
   
-  @scala.inline
-  def apply(`type`: CompileTypeMetadata): CompileTypeSummary = {
+  inline def apply(`type`: CompileTypeMetadata): CompileTypeSummary = {
     val __obj = js.Dynamic.literal(summaryKind = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileTypeSummary]
   }
   
-  @scala.inline
-  implicit class CompileTypeSummaryMutableBuilder[Self <: CompileTypeSummary] (val x: Self) extends AnyVal {
+  extension [Self <: CompileTypeSummary](x: Self) {
     
-    @scala.inline
-    def setSummaryKind(value: CompileSummaryKind): Self = StObject.set(x, "summaryKind", value.asInstanceOf[js.Any])
+    inline def setSummaryKind(value: CompileSummaryKind): Self = StObject.set(x, "summaryKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryKindNull: Self = StObject.set(x, "summaryKind", null)
+    inline def setSummaryKindNull: Self = StObject.set(x, "summaryKind", null)
     
-    @scala.inline
-    def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CompileTypeMetadata): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

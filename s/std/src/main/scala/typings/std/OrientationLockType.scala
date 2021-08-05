@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrientationLockType extends StObject
 object OrientationLockType {
   
-  @scala.inline
-  def any: typings.std.stdStrings.any = "any".asInstanceOf[typings.std.stdStrings.any]
+  inline def any: typings.std.stdStrings.any = "any".asInstanceOf[typings.std.stdStrings.any]
   
-  @scala.inline
-  def landscape: typings.std.stdStrings.landscape = "landscape".asInstanceOf[typings.std.stdStrings.landscape]
+  inline def landscape: typings.std.stdStrings.landscape = "landscape".asInstanceOf[typings.std.stdStrings.landscape]
   
-  @scala.inline
-  def `landscape-primary`: typings.std.stdStrings.`landscape-primary` = "landscape-primary".asInstanceOf[typings.std.stdStrings.`landscape-primary`]
+  inline def `landscape-primary`: typings.std.stdStrings.`landscape-primary` = "landscape-primary".asInstanceOf[typings.std.stdStrings.`landscape-primary`]
   
-  @scala.inline
-  def `landscape-secondary`: typings.std.stdStrings.`landscape-secondary` = "landscape-secondary".asInstanceOf[typings.std.stdStrings.`landscape-secondary`]
+  inline def `landscape-secondary`: typings.std.stdStrings.`landscape-secondary` = "landscape-secondary".asInstanceOf[typings.std.stdStrings.`landscape-secondary`]
   
-  @scala.inline
-  def natural: typings.std.stdStrings.natural = "natural".asInstanceOf[typings.std.stdStrings.natural]
+  inline def natural: typings.std.stdStrings.natural = "natural".asInstanceOf[typings.std.stdStrings.natural]
   
-  @scala.inline
-  def portrait: typings.std.stdStrings.portrait = "portrait".asInstanceOf[typings.std.stdStrings.portrait]
+  inline def portrait: typings.std.stdStrings.portrait = "portrait".asInstanceOf[typings.std.stdStrings.portrait]
   
-  @scala.inline
-  def `portrait-primary`: typings.std.stdStrings.`portrait-primary` = "portrait-primary".asInstanceOf[typings.std.stdStrings.`portrait-primary`]
+  inline def `portrait-primary`: typings.std.stdStrings.`portrait-primary` = "portrait-primary".asInstanceOf[typings.std.stdStrings.`portrait-primary`]
   
-  @scala.inline
-  def `portrait-secondary`: typings.std.stdStrings.`portrait-secondary` = "portrait-secondary".asInstanceOf[typings.std.stdStrings.`portrait-secondary`]
+  inline def `portrait-secondary`: typings.std.stdStrings.`portrait-secondary` = "portrait-secondary".asInstanceOf[typings.std.stdStrings.`portrait-secondary`]
 }

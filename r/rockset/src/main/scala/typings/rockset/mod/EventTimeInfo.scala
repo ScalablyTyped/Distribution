@@ -17,28 +17,21 @@ trait EventTimeInfo extends StObject {
 }
 object EventTimeInfo {
   
-  @scala.inline
-  def apply(field: String): EventTimeInfo = {
+  inline def apply(field: String): EventTimeInfo = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTimeInfo]
   }
   
-  @scala.inline
-  implicit class EventTimeInfoMutableBuilder[Self <: EventTimeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EventTimeInfo](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
+    inline def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
+    inline def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
   }
 }

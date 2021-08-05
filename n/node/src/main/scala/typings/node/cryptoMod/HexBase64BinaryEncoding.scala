@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HexBase64BinaryEncoding extends StObject
 object HexBase64BinaryEncoding {
   
-  @scala.inline
-  def base64: typings.node.nodeStrings.base64 = "base64".asInstanceOf[typings.node.nodeStrings.base64]
+  inline def base64: typings.node.nodeStrings.base64 = "base64".asInstanceOf[typings.node.nodeStrings.base64]
   
-  @scala.inline
-  def binary: typings.node.nodeStrings.binary = "binary".asInstanceOf[typings.node.nodeStrings.binary]
+  inline def binary: typings.node.nodeStrings.binary = "binary".asInstanceOf[typings.node.nodeStrings.binary]
   
-  @scala.inline
-  def hex: typings.node.nodeStrings.hex = "hex".asInstanceOf[typings.node.nodeStrings.hex]
+  inline def hex: typings.node.nodeStrings.hex = "hex".asInstanceOf[typings.node.nodeStrings.hex]
 }

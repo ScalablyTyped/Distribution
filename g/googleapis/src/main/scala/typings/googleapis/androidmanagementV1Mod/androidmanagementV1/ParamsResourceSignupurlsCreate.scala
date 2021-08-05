@@ -35,31 +35,23 @@ trait ParamsResourceSignupurlsCreate
 }
 object ParamsResourceSignupurlsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceSignupurlsCreate = {
+  inline def apply(): ParamsResourceSignupurlsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSignupurlsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSignupurlsCreateMutableBuilder[Self <: ParamsResourceSignupurlsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSignupurlsCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+    inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+    inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

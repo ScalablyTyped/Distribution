@@ -14,8 +14,7 @@ trait EventTask
 }
 object EventTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callback: js.Function,
     cancelScheduleRequest: () => Unit,
     invoke: js.Function,
@@ -29,10 +28,8 @@ object EventTask {
     __obj.asInstanceOf[EventTask]
   }
   
-  @scala.inline
-  implicit class EventTaskMutableBuilder[Self <: EventTask] (val x: Self) extends AnyVal {
+  extension [Self <: EventTask](x: Self) {
     
-    @scala.inline
-    def setType(value: eventTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: eventTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

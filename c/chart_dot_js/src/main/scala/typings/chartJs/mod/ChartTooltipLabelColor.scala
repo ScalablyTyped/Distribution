@@ -12,25 +12,19 @@ trait ChartTooltipLabelColor extends StObject {
 }
 object ChartTooltipLabelColor {
   
-  @scala.inline
-  def apply(backgroundColor: ChartColor, borderColor: ChartColor): ChartTooltipLabelColor = {
+  inline def apply(backgroundColor: ChartColor, borderColor: ChartColor): ChartTooltipLabelColor = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartTooltipLabelColor]
   }
   
-  @scala.inline
-  implicit class ChartTooltipLabelColorMutableBuilder[Self <: ChartTooltipLabelColor] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTooltipLabelColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: ChartColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ChartColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorVarargs(value: String*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+    inline def setBackgroundColorVarargs(value: String*): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderColor(value: ChartColor): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ChartColor): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorVarargs(value: String*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
+    inline def setBorderColorVarargs(value: String*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
   }
 }

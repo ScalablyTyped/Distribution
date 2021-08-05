@@ -12,8 +12,7 @@ trait Created extends StObject {
 }
 object Created {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created: typings.wxServerSdk.wxServerSdkNumbers.`0` | typings.wxServerSdk.wxServerSdkNumbers.`1`,
     updated: typings.wxServerSdk.wxServerSdkNumbers.`0` | typings.wxServerSdk.wxServerSdkNumbers.`1`
   ): Created = {
@@ -21,13 +20,10 @@ object Created {
     __obj.asInstanceOf[Created]
   }
   
-  @scala.inline
-  implicit class CreatedMutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
+  extension [Self <: Created](x: Self) {
     
-    @scala.inline
-    def setCreated(value: typings.wxServerSdk.wxServerSdkNumbers.`0` | typings.wxServerSdk.wxServerSdkNumbers.`1`): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: typings.wxServerSdk.wxServerSdkNumbers.`0` | typings.wxServerSdk.wxServerSdkNumbers.`1`): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: typings.wxServerSdk.wxServerSdkNumbers.`0` | typings.wxServerSdk.wxServerSdkNumbers.`1`): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: typings.wxServerSdk.wxServerSdkNumbers.`0` | typings.wxServerSdk.wxServerSdkNumbers.`1`): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

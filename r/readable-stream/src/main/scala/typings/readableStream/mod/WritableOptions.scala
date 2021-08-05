@@ -50,17 +50,14 @@ trait WritableOptions
 }
 object WritableOptions {
   
-  @scala.inline
-  def apply(): WritableOptions = {
+  inline def apply(): WritableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WritableOptions]
   }
   
-  @scala.inline
-  implicit class WritableOptionsMutableBuilder[Self <: WritableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WritableOptions](x: Self) {
     
-    @scala.inline
-    def setDestroy(
+    inline def setDestroy(
       value: js.ThisFunction2[
           /* this */ Writable, 
           /* error */ Error | Null, 
@@ -69,11 +66,9 @@ object WritableOptions {
         ]
     ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setFinal(
+    inline def setFinal(
       value: js.ThisFunction1[
           /* this */ Writable, 
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
@@ -81,11 +76,9 @@ object WritableOptions {
         ]
     ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
+    inline def setFinalUndefined: Self = StObject.set(x, "final", js.undefined)
     
-    @scala.inline
-    def setWrite(
+    inline def setWrite(
       value: js.ThisFunction3[
           /* this */ Writable, 
           /* chunk */ js.Any, 
@@ -95,11 +88,9 @@ object WritableOptions {
         ]
     ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     
-    @scala.inline
-    def setWritev(
+    inline def setWritev(
       value: js.ThisFunction2[
           /* this */ Writable, 
           /* chunk */ ArrayLike[Chunk], 
@@ -108,7 +99,6 @@ object WritableOptions {
         ]
     ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
+    inline def setWritevUndefined: Self = StObject.set(x, "writev", js.undefined)
   }
 }

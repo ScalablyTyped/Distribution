@@ -179,26 +179,20 @@ object mod {
   }
   object Bucket {
     
-    @scala.inline
-    def apply(bucket: Double, count: Double, range: js.Array[Double]): Bucket = {
+    inline def apply(bucket: Double, count: Double, range: js.Array[Double]): Bucket = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bucket]
     }
     
-    @scala.inline
-    implicit class BucketMutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
+    extension [Self <: Bucket](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Double): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Double): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     }
   }
   
@@ -242,47 +236,34 @@ object mod {
   }
   object StatsOpts {
     
-    @scala.inline
-    def apply(): StatsOpts = {
+    inline def apply(): StatsOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatsOpts]
     }
     
-    @scala.inline
-    implicit class StatsOptsMutableBuilder[Self <: StatsOpts] (val x: Self) extends AnyVal {
+    extension [Self <: StatsOpts](x: Self) {
       
-      @scala.inline
-      def setBucket_extension_interval(value: Double): Self = StObject.set(x, "bucket_extension_interval", value.asInstanceOf[js.Any])
+      inline def setBucket_extension_interval(value: Double): Self = StObject.set(x, "bucket_extension_interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucket_extension_intervalUndefined: Self = StObject.set(x, "bucket_extension_interval", js.undefined)
+      inline def setBucket_extension_intervalUndefined: Self = StObject.set(x, "bucket_extension_interval", js.undefined)
       
-      @scala.inline
-      def setBucket_precision(value: Double): Self = StObject.set(x, "bucket_precision", value.asInstanceOf[js.Any])
+      inline def setBucket_precision(value: Double): Self = StObject.set(x, "bucket_precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucket_precisionUndefined: Self = StObject.set(x, "bucket_precision", js.undefined)
+      inline def setBucket_precisionUndefined: Self = StObject.set(x, "bucket_precision", js.undefined)
       
-      @scala.inline
-      def setBuckets(value: js.Array[Double]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+      inline def setBuckets(value: js.Array[Double]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+      inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
       
-      @scala.inline
-      def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+      inline def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value :_*))
       
-      @scala.inline
-      def setSampling(value: Boolean): Self = StObject.set(x, "sampling", value.asInstanceOf[js.Any])
+      inline def setSampling(value: Boolean): Self = StObject.set(x, "sampling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingUndefined: Self = StObject.set(x, "sampling", js.undefined)
+      inline def setSamplingUndefined: Self = StObject.set(x, "sampling", js.undefined)
       
-      @scala.inline
-      def setStore_data(value: Boolean): Self = StObject.set(x, "store_data", value.asInstanceOf[js.Any])
+      inline def setStore_data(value: Boolean): Self = StObject.set(x, "store_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore_dataUndefined: Self = StObject.set(x, "store_data", js.undefined)
+      inline def setStore_dataUndefined: Self = StObject.set(x, "store_data", js.undefined)
     }
   }
 }

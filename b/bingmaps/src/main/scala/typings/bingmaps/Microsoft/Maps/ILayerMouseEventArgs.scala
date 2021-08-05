@@ -14,16 +14,13 @@ trait ILayerMouseEventArgs extends StObject {
 }
 object ILayerMouseEventArgs {
   
-  @scala.inline
-  def apply(primitive: IPrimitive): ILayerMouseEventArgs = {
+  inline def apply(primitive: IPrimitive): ILayerMouseEventArgs = {
     val __obj = js.Dynamic.literal(primitive = primitive.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayerMouseEventArgs]
   }
   
-  @scala.inline
-  implicit class ILayerMouseEventArgsMutableBuilder[Self <: ILayerMouseEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ILayerMouseEventArgs](x: Self) {
     
-    @scala.inline
-    def setPrimitive(value: IPrimitive): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
+    inline def setPrimitive(value: IPrimitive): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
   }
 }

@@ -55,11 +55,9 @@ object global {
     }
     
     /* static member */
-    @scala.inline
-    def noConflict(): typings.viewerjs.Viewer = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.viewerjs.Viewer]
+    inline def noConflict(): typings.viewerjs.Viewer = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.viewerjs.Viewer]
     
     /* static member */
-    @scala.inline
-    def setDefaults(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaults(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

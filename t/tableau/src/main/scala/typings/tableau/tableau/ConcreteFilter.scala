@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConcreteFilter extends StObject
 object ConcreteFilter {
   
-  @scala.inline
-  def CategoricalFilter(
+  inline def CategoricalFilter(
     getAppliedValues: () => js.Array[DataValue],
     getFieldAsync: () => js.Promise[Field],
     getFieldName: () => String,
@@ -25,8 +24,7 @@ object ConcreteFilter {
     __obj.asInstanceOf[typings.tableau.tableau.CategoricalFilter]
   }
   
-  @scala.inline
-  def QuantitativeFilter(
+  inline def QuantitativeFilter(
     getDomainMax: () => DataValue,
     getDomainMin: () => DataValue,
     getFieldAsync: () => js.Promise[Field],
@@ -41,8 +39,7 @@ object ConcreteFilter {
     __obj.asInstanceOf[typings.tableau.tableau.QuantitativeFilter]
   }
   
-  @scala.inline
-  def RelativeDateFilter(
+  inline def RelativeDateFilter(
     getFieldAsync: () => js.Promise[Field],
     getFieldName: () => String,
     getFilterType: () => FilterType,

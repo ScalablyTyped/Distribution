@@ -32,8 +32,7 @@ trait Layout extends StObject {
 }
 object Layout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: Double,
     fromJs: js.Function6[
       /* left */ Double, 
@@ -54,14 +53,11 @@ object Layout {
     __obj.asInstanceOf[Layout]
   }
   
-  @scala.inline
-  implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+  extension [Self <: Layout](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromJs(
+    inline def setFromJs(
       value: js.Function6[
           /* left */ Double, 
           /* right */ Double, 
@@ -73,19 +69,14 @@ object Layout {
         ] => Unit
     ): Self = StObject.set(x, "fromJs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -222,7 +222,7 @@ object syncmapMod {
     
     def sid: String = js.native
     
-    val syncMapImpl: js.Any = js.native
+    /* private */ val syncMapImpl: js.Any = js.native
     
     def `type`: String = js.native
     
@@ -268,32 +268,32 @@ object syncmapMod {
       */
     def this(services: MapServices, descriptor: MapDescriptor, removalHandler: RemovalHandler) = this()
     
-    var _getItemFromServer: js.Any = js.native
+    /* private */ var _getItemFromServer: js.Any = js.native
     
-    var _handleItemMutated: js.Any = js.native
+    /* private */ var _handleItemMutated: js.Any = js.native
     
     /**
       * @private
       */
     /* protected */ def _handleItemRemoved(key: js.Any, eventId: js.Any, oldData: js.Any, dateUpdated: Date, remote: Boolean): Unit = js.native
     
-    var _putItemToServer: js.Any = js.native
+    /* private */ var _putItemToServer: js.Any = js.native
     
-    var _putItemUnconditionally: js.Any = js.native
+    /* private */ var _putItemUnconditionally: js.Any = js.native
     
-    var _putItemWithIfMatch: js.Any = js.native
+    /* private */ var _putItemWithIfMatch: js.Any = js.native
     
-    var _updateRootDateUpdated: js.Any = js.native
+    /* private */ var _updateRootDateUpdated: js.Any = js.native
     
-    val cache: js.Any = js.native
+    /* private */ val cache: js.Any = js.native
     
     def dateExpires: String = js.native
     
     def dateUpdated: Date = js.native
     
-    val descriptor: js.Any = js.native
+    /* private */ val descriptor: js.Any = js.native
     
-    var emitItemMutationEvent: js.Any = js.native
+    /* private */ var emitItemMutationEvent: js.Any = js.native
     
     def get(key: String): js.Promise[MapItem] = js.native
     
@@ -324,12 +324,12 @@ object syncmapMod {
     
     def setTtl(ttl: Double): js.Promise[Unit] = js.native
     
-    var shouldIgnoreEvent: js.Any = js.native
+    /* private */ var shouldIgnoreEvent: js.Any = js.native
     
     def update(key: String, obj: js.Object): js.Promise[MapItem] = js.native
     def update(key: String, obj: js.Object, itemMetadataUpdates: ItemMetadata): js.Promise[MapItem] = js.native
     
-    val updateMergingQueue: js.Any = js.native
+    /* private */ val updateMergingQueue: js.Any = js.native
     
     def uri: String = js.native
   }
@@ -340,20 +340,16 @@ object syncmapMod {
   }
   object ItemMetadata {
     
-    @scala.inline
-    def apply(): ItemMetadata = {
+    inline def apply(): ItemMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemMetadata]
     }
     
-    @scala.inline
-    implicit class ItemMetadataMutableBuilder[Self <: ItemMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ItemMetadata](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -379,8 +375,7 @@ object syncmapMod {
   }
   object MapDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date_expires: String,
       date_updated: Date,
       last_event_id: Double,
@@ -394,41 +389,29 @@ object syncmapMod {
       __obj.asInstanceOf[MapDescriptor]
     }
     
-    @scala.inline
-    implicit class MapDescriptorMutableBuilder[Self <: MapDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: MapDescriptor](x: Self) {
       
-      @scala.inline
-      def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
+      inline def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate_updated(value: Date): Self = StObject.set(x, "date_updated", value.asInstanceOf[js.Any])
+      inline def setDate_updated(value: Date): Self = StObject.set(x, "date_updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[MapItemDescriptor]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[MapItemDescriptor]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: MapItemDescriptor*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: MapItemDescriptor*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
+      inline def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinks(value: js.Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
+      inline def setUnique_name(value: String): Self = StObject.set(x, "unique_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

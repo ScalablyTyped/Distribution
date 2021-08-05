@@ -31,8 +31,7 @@ trait CoreTransformationContext extends StObject {
 }
 object CoreTransformationContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endLexicalEnvironment: () => js.UndefOr[js.Array[Statement]],
     factory: NodeFactory,
     getCompilerOptions: () => CompilerOptions,
@@ -46,31 +45,22 @@ object CoreTransformationContext {
     __obj.asInstanceOf[CoreTransformationContext]
   }
   
-  @scala.inline
-  implicit class CoreTransformationContextMutableBuilder[Self <: CoreTransformationContext] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTransformationContext](x: Self) {
     
-    @scala.inline
-    def setEndLexicalEnvironment(value: () => js.UndefOr[js.Array[Statement]]): Self = StObject.set(x, "endLexicalEnvironment", js.Any.fromFunction0(value))
+    inline def setEndLexicalEnvironment(value: () => js.UndefOr[js.Array[Statement]]): Self = StObject.set(x, "endLexicalEnvironment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFactory(value: NodeFactory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: NodeFactory): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCompilerOptions(value: () => CompilerOptions): Self = StObject.set(x, "getCompilerOptions", js.Any.fromFunction0(value))
+    inline def setGetCompilerOptions(value: () => CompilerOptions): Self = StObject.set(x, "getCompilerOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHoistFunctionDeclaration(value: FunctionDeclaration => Unit): Self = StObject.set(x, "hoistFunctionDeclaration", js.Any.fromFunction1(value))
+    inline def setHoistFunctionDeclaration(value: FunctionDeclaration => Unit): Self = StObject.set(x, "hoistFunctionDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHoistVariableDeclaration(value: Identifier => Unit): Self = StObject.set(x, "hoistVariableDeclaration", js.Any.fromFunction1(value))
+    inline def setHoistVariableDeclaration(value: Identifier => Unit): Self = StObject.set(x, "hoistVariableDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResumeLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "resumeLexicalEnvironment", js.Any.fromFunction0(value))
+    inline def setResumeLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "resumeLexicalEnvironment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "startLexicalEnvironment", js.Any.fromFunction0(value))
+    inline def setStartLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "startLexicalEnvironment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuspendLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "suspendLexicalEnvironment", js.Any.fromFunction0(value))
+    inline def setSuspendLexicalEnvironment(value: () => Unit): Self = StObject.set(x, "suspendLexicalEnvironment", js.Any.fromFunction0(value))
   }
 }

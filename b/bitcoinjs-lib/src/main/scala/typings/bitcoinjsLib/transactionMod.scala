@@ -11,7 +11,7 @@ object transactionMod {
   @js.native
   class Transaction () extends StObject {
     
-    var __toBuffer: js.Any = js.native
+    /* private */ var __toBuffer: js.Any = js.native
     
     def addInput(hash: Buffer, index: Double): Double = js.native
     def addInput(hash: Buffer, index: Double, sequence: Double): Double = js.native
@@ -102,16 +102,12 @@ object transactionMod {
     @js.native
     val SIGHASH_SINGLE: /* 3 */ Double = js.native
     
-    @scala.inline
-    def fromBuffer(buffer: Buffer): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Transaction]
-    @scala.inline
-    def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], _NO_STRICT.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+    inline def fromBuffer(buffer: Buffer): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+    inline def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], _NO_STRICT.asInstanceOf[js.Any])).asInstanceOf[Transaction]
     
-    @scala.inline
-    def fromHex(hex: String): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+    inline def fromHex(hex: String): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Transaction]
     
-    @scala.inline
-    def isCoinbaseHash(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoinbaseHash")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isCoinbaseHash(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoinbaseHash")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   trait Input extends StObject {
@@ -128,32 +124,24 @@ object transactionMod {
   }
   object Input {
     
-    @scala.inline
-    def apply(hash: Buffer, index: Double, script: Buffer, sequence: Double, witness: js.Array[Buffer]): Input = {
+    inline def apply(hash: Buffer, index: Double, script: Buffer, sequence: Double, witness: js.Array[Buffer]): Input = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], witness = witness.asInstanceOf[js.Any])
       __obj.asInstanceOf[Input]
     }
     
-    @scala.inline
-    implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+    extension [Self <: Input](x: Self) {
       
-      @scala.inline
-      def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWitness(value: js.Array[Buffer]): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
+      inline def setWitness(value: js.Array[Buffer]): Self = StObject.set(x, "witness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWitnessVarargs(value: Buffer*): Self = StObject.set(x, "witness", js.Array(value :_*))
+      inline def setWitnessVarargs(value: Buffer*): Self = StObject.set(x, "witness", js.Array(value :_*))
     }
   }
   
@@ -165,20 +153,16 @@ object transactionMod {
   }
   object Output {
     
-    @scala.inline
-    def apply(script: Buffer, value: Double): Output = {
+    inline def apply(script: Buffer, value: Double): Output = {
       val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Output]
     }
     
-    @scala.inline
-    implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+    extension [Self <: Output](x: Self) {
       
-      @scala.inline
-      def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

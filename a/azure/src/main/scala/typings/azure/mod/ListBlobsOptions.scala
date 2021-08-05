@@ -12,19 +12,15 @@ trait ListBlobsOptions
 }
 object ListBlobsOptions {
   
-  @scala.inline
-  def apply(marker: String): ListBlobsOptions = {
+  inline def apply(marker: String): ListBlobsOptions = {
     val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBlobsOptions]
   }
   
-  @scala.inline
-  implicit class ListBlobsOptionsMutableBuilder[Self <: ListBlobsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListBlobsOptions](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
   }
 }

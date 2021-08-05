@@ -49,39 +49,29 @@ object projectMod extends Shortcut {
   }
   object SelectionProjection {
     
-    @scala.inline
-    def apply(field: String, `type`: TupleStoreType): SelectionProjection = {
+    inline def apply(field: String, `type`: TupleStoreType): SelectionProjection = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionProjection]
     }
     
-    @scala.inline
-    implicit class SelectionProjectionMutableBuilder[Self <: SelectionProjection] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionProjection](x: Self) {
       
-      @scala.inline
-      def setChannel(value: SingleDefUnitChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: SingleDefUnitChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasLegend(value: Boolean): Self = StObject.set(x, "hasLegend", value.asInstanceOf[js.Any])
+      inline def setHasLegend(value: Boolean): Self = StObject.set(x, "hasLegend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasLegendUndefined: Self = StObject.set(x, "hasLegend", js.undefined)
+      inline def setHasLegendUndefined: Self = StObject.set(x, "hasLegend", js.undefined)
       
-      @scala.inline
-      def setSignals(value: Visual): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
+      inline def setSignals(value: Visual): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+      inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      @scala.inline
-      def setType(value: TupleStoreType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TupleStoreType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,14 +83,11 @@ object projectMod extends Shortcut {
   trait TupleStoreType extends StObject
   object TupleStoreType {
     
-    @scala.inline
-    def E: typings.vegaLite.vegaLiteStrings.E = "E".asInstanceOf[typings.vegaLite.vegaLiteStrings.E]
+    inline def E: typings.vegaLite.vegaLiteStrings.E = "E".asInstanceOf[typings.vegaLite.vegaLiteStrings.E]
     
-    @scala.inline
-    def R: typings.vegaLite.vegaLiteStrings.R = "R".asInstanceOf[typings.vegaLite.vegaLiteStrings.R]
+    inline def R: typings.vegaLite.vegaLiteStrings.R = "R".asInstanceOf[typings.vegaLite.vegaLiteStrings.R]
     
-    @scala.inline
-    def `R-RE`: typings.vegaLite.vegaLiteStrings.`R-RE` = "R-RE".asInstanceOf[typings.vegaLite.vegaLiteStrings.`R-RE`]
+    inline def `R-RE`: typings.vegaLite.vegaLiteStrings.`R-RE` = "R-RE".asInstanceOf[typings.vegaLite.vegaLiteStrings.`R-RE`]
   }
   
   type _To = TransformCompiler

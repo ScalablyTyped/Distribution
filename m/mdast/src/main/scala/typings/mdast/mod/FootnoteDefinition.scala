@@ -19,23 +19,18 @@ trait FootnoteDefinition
 }
 object FootnoteDefinition {
   
-  @scala.inline
-  def apply(children: js.Array[BlockContent], identifier: String): FootnoteDefinition = {
+  inline def apply(children: js.Array[BlockContent], identifier: String): FootnoteDefinition = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("footnoteDefinition")
     __obj.asInstanceOf[FootnoteDefinition]
   }
   
-  @scala.inline
-  implicit class FootnoteDefinitionMutableBuilder[Self <: FootnoteDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: FootnoteDefinition](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: BlockContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: BlockContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: footnoteDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: footnoteDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

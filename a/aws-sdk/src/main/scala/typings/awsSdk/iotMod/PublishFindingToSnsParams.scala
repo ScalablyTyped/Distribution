@@ -13,16 +13,13 @@ trait PublishFindingToSnsParams extends StObject {
 }
 object PublishFindingToSnsParams {
   
-  @scala.inline
-  def apply(topicArn: SnsTopicArn): PublishFindingToSnsParams = {
+  inline def apply(topicArn: SnsTopicArn): PublishFindingToSnsParams = {
     val __obj = js.Dynamic.literal(topicArn = topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishFindingToSnsParams]
   }
   
-  @scala.inline
-  implicit class PublishFindingToSnsParamsMutableBuilder[Self <: PublishFindingToSnsParams] (val x: Self) extends AnyVal {
+  extension [Self <: PublishFindingToSnsParams](x: Self) {
     
-    @scala.inline
-    def setTopicArn(value: SnsTopicArn): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: SnsTopicArn): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
   }
 }

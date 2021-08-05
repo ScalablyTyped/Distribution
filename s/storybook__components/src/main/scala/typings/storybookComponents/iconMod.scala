@@ -19,17 +19,14 @@ object iconMod {
   }
   object IconsProps {
     
-    @scala.inline
-    def apply(icon: IconKey): IconsProps = {
+    inline def apply(icon: IconKey): IconsProps = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconsProps]
     }
     
-    @scala.inline
-    implicit class IconsPropsMutableBuilder[Self <: IconsProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconsProps](x: Self) {
       
-      @scala.inline
-      def setIcon(value: IconKey): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconKey): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
   }
 }

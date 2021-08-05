@@ -23,43 +23,31 @@ trait OperationProgress extends StObject {
 }
 object OperationProgress {
   
-  @scala.inline
-  def apply(): OperationProgress = {
+  inline def apply(): OperationProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperationProgress]
   }
   
-  @scala.inline
-  implicit class OperationProgressMutableBuilder[Self <: OperationProgress] (val x: Self) extends AnyVal {
+  extension [Self <: OperationProgress](x: Self) {
     
-    @scala.inline
-    def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStages(value: js.Array[OperationProgress]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
+    inline def setStages(value: js.Array[OperationProgress]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
+    inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
-    @scala.inline
-    def setStagesVarargs(value: OperationProgress*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: OperationProgress*): Self = StObject.set(x, "stages", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

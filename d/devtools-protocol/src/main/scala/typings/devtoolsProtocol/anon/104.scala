@@ -13,22 +13,17 @@ trait `104` extends StObject {
 }
 object `104` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SynthesizeScrollGestureRequest], returnType: Unit): `104` = {
+  inline def apply(paramsType: js.Array[SynthesizeScrollGestureRequest], returnType: Unit): `104` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`104`]
   }
   
-  @scala.inline
-  implicit class `104MutableBuilder`[Self <: `104`] (val x: Self) extends AnyVal {
+  extension [Self <: `104`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SynthesizeScrollGestureRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SynthesizeScrollGestureRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SynthesizeScrollGestureRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SynthesizeScrollGestureRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

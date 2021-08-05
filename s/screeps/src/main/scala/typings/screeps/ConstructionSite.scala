@@ -49,8 +49,7 @@ trait ConstructionSite[T /* <: BuildableStructureConstant */]
 }
 object ConstructionSite {
   
-  @scala.inline
-  def apply[T /* <: BuildableStructureConstant */](
+  inline def apply[T /* <: BuildableStructureConstant */](
     effects: js.Array[RoomObjectEffect],
     id: Id[ConstructionSite[T]],
     my: Boolean,
@@ -65,28 +64,20 @@ object ConstructionSite {
     __obj.asInstanceOf[ConstructionSite[T]]
   }
   
-  @scala.inline
-  implicit class ConstructionSiteMutableBuilder[Self <: ConstructionSite[?], T /* <: BuildableStructureConstant */] (val x: Self & ConstructionSite[T]) extends AnyVal {
+  extension [Self <: ConstructionSite[?], T /* <: BuildableStructureConstant */](x: Self & ConstructionSite[T]) {
     
-    @scala.inline
-    def setId(value: Id[ConstructionSite[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[ConstructionSite[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    inline def setMy(value: Boolean): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Owner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
+    inline def setProgressTotal(value: Double): Self = StObject.set(x, "progressTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: () => Double): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Double): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStructureType(value: T): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
+    inline def setStructureType(value: T): Self = StObject.set(x, "structureType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,10 +17,10 @@ object baseMod {
        with Attribute {
     def this(cfg: AttributeCfg) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getAttributeValue: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _parseCfg: js.Any = js.native
     
     /**
@@ -29,7 +29,7 @@ object baseMod {
       * @param scale
       * @private
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _toOriginParam: js.Any = js.native
     
     /* CompleteClass */
@@ -42,7 +42,7 @@ object baseMod {
       * 默认的回调函数（用户没有自定义 callback，或者用户自定义 callback 返回空的时候，使用 values 映射）
       * @param params
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var defaultCallback: js.Any = js.native
     
     /**
@@ -96,9 +96,9 @@ object baseMod {
   
   trait Attribute extends StObject {
     
-    var _getAttributeValue: js.Any
+    /* private */ var _getAttributeValue: js.Any
     
-    var _parseCfg: js.Any
+    /* private */ var _parseCfg: js.Any
     
     /**
       * 通过 scale 拿到数据对应的原始的参数
@@ -106,7 +106,7 @@ object baseMod {
       * @param scale
       * @private
       */
-    var _toOriginParam: js.Any
+    /* private */ var _toOriginParam: js.Any
     
     def callback(args: js.Any*): js.Array[js.Any]
     @JSName("callback")
@@ -116,7 +116,7 @@ object baseMod {
       * 默认的回调函数（用户没有自定义 callback，或者用户自定义 callback 返回空的时候，使用 values 映射）
       * @param params
       */
-    var defaultCallback: js.Any
+    /* private */ var defaultCallback: js.Any
     
     /**
       * 获取所有的维度名
@@ -158,8 +158,7 @@ object baseMod {
   }
   object Attribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _getAttributeValue: js.Any,
       _parseCfg: js.Any,
       _toOriginParam: js.Any,
@@ -181,62 +180,43 @@ object baseMod {
       __obj.asInstanceOf[Attribute]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute](x: Self) {
       
-      @scala.inline
-      def setCallback(value: CallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: CallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCallback(value: js.Any): Self = StObject.set(x, "defaultCallback", value.asInstanceOf[js.Any])
+      inline def setDefaultCallback(value: js.Any): Self = StObject.set(x, "defaultCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetFields(value: () => js.Array[String]): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+      inline def setGetFields(value: () => js.Array[String]): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLinearValue(value: Double => Double | String): Self = StObject.set(x, "getLinearValue", js.Any.fromFunction1(value))
+      inline def setGetLinearValue(value: Double => Double | String): Self = StObject.set(x, "getLinearValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNames(value: () => js.Array[js.Any]): Self = StObject.set(x, "getNames", js.Any.fromFunction0(value))
+      inline def setGetNames(value: () => js.Array[js.Any]): Self = StObject.set(x, "getNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScale(value: String => Scale): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
+      inline def setGetScale(value: String => Scale): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
+      inline def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapping(value: /* repeated */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "mapping", js.Any.fromFunction1(value))
+      inline def setMapping(value: /* repeated */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "mapping", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setScales(value: js.Array[Scale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+      inline def setScales(value: js.Array[Scale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalesVarargs(value: Scale*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: Scale*): Self = StObject.set(x, "scales", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
       
-      @scala.inline
-      def set_getAttributeValue(value: js.Any): Self = StObject.set(x, "_getAttributeValue", value.asInstanceOf[js.Any])
+      inline def set_getAttributeValue(value: js.Any): Self = StObject.set(x, "_getAttributeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_parseCfg(value: js.Any): Self = StObject.set(x, "_parseCfg", value.asInstanceOf[js.Any])
+      inline def set_parseCfg(value: js.Any): Self = StObject.set(x, "_parseCfg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_toOriginParam(value: js.Any): Self = StObject.set(x, "_toOriginParam", value.asInstanceOf[js.Any])
+      inline def set_toOriginParam(value: js.Any): Self = StObject.set(x, "_toOriginParam", value.asInstanceOf[js.Any])
     }
   }
   

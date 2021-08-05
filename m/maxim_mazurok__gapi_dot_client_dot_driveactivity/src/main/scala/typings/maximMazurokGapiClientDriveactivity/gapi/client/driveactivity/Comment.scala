@@ -20,40 +20,29 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(): Comment = {
+  inline def apply(): Comment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
+    inline def setAssignment(value: Assignment): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
+    inline def setAssignmentUndefined: Self = StObject.set(x, "assignment", js.undefined)
     
-    @scala.inline
-    def setMentionedUsers(value: js.Array[User]): Self = StObject.set(x, "mentionedUsers", value.asInstanceOf[js.Any])
+    inline def setMentionedUsers(value: js.Array[User]): Self = StObject.set(x, "mentionedUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
+    inline def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
     
-    @scala.inline
-    def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
+    inline def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setPost(value: Post): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: Post): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setSuggestion(value: Suggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+    inline def setSuggestion(value: Suggestion): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
+    inline def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
   }
 }

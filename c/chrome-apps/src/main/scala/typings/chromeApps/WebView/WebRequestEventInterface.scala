@@ -89,8 +89,7 @@ trait WebRequestEventInterface extends StObject {
 }
 object WebRequestEventInterface {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onAuthRequired: WebAuthenticationChallengeEvent,
     onBeforeRedirect: WebRedirectionResponseEvent,
     onBeforeRequest: WebRequestBodyEvent,
@@ -107,40 +106,28 @@ object WebRequestEventInterface {
     __obj.asInstanceOf[WebRequestEventInterface]
   }
   
-  @scala.inline
-  implicit class WebRequestEventInterfaceMutableBuilder[Self <: WebRequestEventInterface] (val x: Self) extends AnyVal {
+  extension [Self <: WebRequestEventInterface](x: Self) {
     
-    @scala.inline
-    def setOnAuthRequired(value: WebAuthenticationChallengeEvent): Self = StObject.set(x, "onAuthRequired", value.asInstanceOf[js.Any])
+    inline def setOnAuthRequired(value: WebAuthenticationChallengeEvent): Self = StObject.set(x, "onAuthRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBeforeRedirect(value: WebRedirectionResponseEvent): Self = StObject.set(x, "onBeforeRedirect", value.asInstanceOf[js.Any])
+    inline def setOnBeforeRedirect(value: WebRedirectionResponseEvent): Self = StObject.set(x, "onBeforeRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBeforeRequest(value: WebRequestBodyEvent): Self = StObject.set(x, "onBeforeRequest", value.asInstanceOf[js.Any])
+    inline def setOnBeforeRequest(value: WebRequestBodyEvent): Self = StObject.set(x, "onBeforeRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBeforeSendHeaders(value: WebRequestHeadersEvent): Self = StObject.set(x, "onBeforeSendHeaders", value.asInstanceOf[js.Any])
+    inline def setOnBeforeSendHeaders(value: WebRequestHeadersEvent): Self = StObject.set(x, "onBeforeSendHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCompleted(value: WebResponseCacheEvent): Self = StObject.set(x, "onCompleted", value.asInstanceOf[js.Any])
+    inline def setOnCompleted(value: WebResponseCacheEvent): Self = StObject.set(x, "onCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnErrorOccured(value: WebResponseErrorEvent): Self = StObject.set(x, "onErrorOccured", value.asInstanceOf[js.Any])
+    inline def setOnErrorOccured(value: WebResponseErrorEvent): Self = StObject.set(x, "onErrorOccured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnHeadersReceived(value: WebResponseHeadersEvent): Self = StObject.set(x, "onHeadersReceived", value.asInstanceOf[js.Any])
+    inline def setOnHeadersReceived(value: WebResponseHeadersEvent): Self = StObject.set(x, "onHeadersReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMessage(value: OnMessageEvent): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
+    inline def setOnMessage(value: OnMessageEvent): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRequest(value: OnRequestEvent): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
+    inline def setOnRequest(value: OnRequestEvent): Self = StObject.set(x, "onRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResponseStarted(value: WebResponseCacheEvent): Self = StObject.set(x, "onResponseStarted", value.asInstanceOf[js.Any])
+    inline def setOnResponseStarted(value: WebResponseCacheEvent): Self = StObject.set(x, "onResponseStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSendHeaders(value: WebRequestHeadersEvent): Self = StObject.set(x, "onSendHeaders", value.asInstanceOf[js.Any])
+    inline def setOnSendHeaders(value: WebRequestHeadersEvent): Self = StObject.set(x, "onSendHeaders", value.asInstanceOf[js.Any])
   }
 }

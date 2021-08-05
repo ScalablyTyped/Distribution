@@ -23,34 +23,25 @@ trait DeviceFilter extends StObject {
 }
 object DeviceFilter {
   
-  @scala.inline
-  def apply(): DeviceFilter = {
+  inline def apply(): DeviceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceFilter]
   }
   
-  @scala.inline
-  implicit class DeviceFilterMutableBuilder[Self <: DeviceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceFilter](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: DeviceFilterAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: DeviceFilterAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setOperator(value: RuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: RuleOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setValues(value: DeviceFilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: DeviceFilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

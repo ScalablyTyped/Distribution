@@ -44,17 +44,14 @@ object auditregistration {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @scala.inline
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.auditSinkMod.AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkMod.AuditSink]
-      @scala.inline
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.auditSinkMod.AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkMod.AuditSink]
+      inline def get(name: String, id: Input[ID]): typings.pulumiKubernetes.auditSinkMod.AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkMod.AuditSink]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.auditSinkMod.AuditSink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkMod.AuditSink]
       
       /**
         * Returns true if the given object is an instance of AuditSink.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSink.AuditSink */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes", "auditregistration.v1alpha1.AuditSinkList")
@@ -88,17 +85,14 @@ object auditregistration {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @scala.inline
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.auditSinkListMod.AuditSinkList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkListMod.AuditSinkList]
-      @scala.inline
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.auditSinkListMod.AuditSinkList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkListMod.AuditSinkList]
+      inline def get(name: String, id: Input[ID]): typings.pulumiKubernetes.auditSinkListMod.AuditSinkList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkListMod.AuditSinkList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.auditSinkListMod.AuditSinkList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.auditSinkListMod.AuditSinkList]
       
       /**
         * Returns true if the given object is an instance of AuditSinkList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkList.AuditSinkList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkList.AuditSinkList */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkList.AuditSinkList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/auditregistration/v1alpha1/auditSinkList.AuditSinkList */ Boolean]
     }
   }
 }

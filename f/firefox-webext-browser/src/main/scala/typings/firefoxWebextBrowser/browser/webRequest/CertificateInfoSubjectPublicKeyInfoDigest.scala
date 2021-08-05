@@ -10,16 +10,13 @@ trait CertificateInfoSubjectPublicKeyInfoDigest extends StObject {
 }
 object CertificateInfoSubjectPublicKeyInfoDigest {
   
-  @scala.inline
-  def apply(sha256: String): CertificateInfoSubjectPublicKeyInfoDigest = {
+  inline def apply(sha256: String): CertificateInfoSubjectPublicKeyInfoDigest = {
     val __obj = js.Dynamic.literal(sha256 = sha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateInfoSubjectPublicKeyInfoDigest]
   }
   
-  @scala.inline
-  implicit class CertificateInfoSubjectPublicKeyInfoDigestMutableBuilder[Self <: CertificateInfoSubjectPublicKeyInfoDigest] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateInfoSubjectPublicKeyInfoDigest](x: Self) {
     
-    @scala.inline
-    def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+    inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait TabbarRenderTab extends StObject {
 }
 object TabbarRenderTab {
   
-  @scala.inline
-  def apply(content: Element, tab: Element): TabbarRenderTab = {
+  inline def apply(content: Element, tab: Element): TabbarRenderTab = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabbarRenderTab]
   }
   
-  @scala.inline
-  implicit class TabbarRenderTabMutableBuilder[Self <: TabbarRenderTab] (val x: Self) extends AnyVal {
+  extension [Self <: TabbarRenderTab](x: Self) {
     
-    @scala.inline
-    def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTab(value: Element): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: Element): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

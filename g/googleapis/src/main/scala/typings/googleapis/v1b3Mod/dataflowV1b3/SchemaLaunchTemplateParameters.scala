@@ -27,31 +27,23 @@ trait SchemaLaunchTemplateParameters extends StObject {
 }
 object SchemaLaunchTemplateParameters {
   
-  @scala.inline
-  def apply(): SchemaLaunchTemplateParameters = {
+  inline def apply(): SchemaLaunchTemplateParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLaunchTemplateParameters]
   }
   
-  @scala.inline
-  implicit class SchemaLaunchTemplateParametersMutableBuilder[Self <: SchemaLaunchTemplateParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLaunchTemplateParameters](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: SchemaRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: SchemaRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

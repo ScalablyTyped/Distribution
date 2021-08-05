@@ -23,25 +23,19 @@ trait DeletePermissionRequest extends StObject {
 }
 object DeletePermissionRequest {
   
-  @scala.inline
-  def apply(CertificateAuthorityArn: Arn, Principal: Principal): DeletePermissionRequest = {
+  inline def apply(CertificateAuthorityArn: Arn, Principal: Principal): DeletePermissionRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePermissionRequest]
   }
   
-  @scala.inline
-  implicit class DeletePermissionRequestMutableBuilder[Self <: DeletePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAccount(value: AccountId): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
+    inline def setSourceAccount(value: AccountId): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
+    inline def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
   }
 }

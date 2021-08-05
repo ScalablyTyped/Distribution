@@ -15,16 +15,13 @@ trait FormValidationProps[T /* <: js.Object */]
 }
 object FormValidationProps {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](children: ValidationContext[T] => ReactNode, config: FieldsConfig[T]): FormValidationProps[T] = {
+  inline def apply[T /* <: js.Object */](children: ValidationContext[T] => ReactNode, config: FieldsConfig[T]): FormValidationProps[T] = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormValidationProps[T]]
   }
   
-  @scala.inline
-  implicit class FormValidationPropsMutableBuilder[Self <: FormValidationProps[?], T /* <: js.Object */] (val x: Self & FormValidationProps[T]) extends AnyVal {
+  extension [Self <: FormValidationProps[?], T /* <: js.Object */](x: Self & FormValidationProps[T]) {
     
-    @scala.inline
-    def setChildren(value: ValidationContext[T] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: ValidationContext[T] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }
 }

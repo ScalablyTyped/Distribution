@@ -64,56 +64,39 @@ object functions {
   trait FunctionsErrorCode extends StObject
   object FunctionsErrorCode {
     
-    @scala.inline
-    def aborted: typings.firebase.firebaseStrings.aborted = "aborted".asInstanceOf[typings.firebase.firebaseStrings.aborted]
+    inline def aborted: typings.firebase.firebaseStrings.aborted = "aborted".asInstanceOf[typings.firebase.firebaseStrings.aborted]
     
-    @scala.inline
-    def `already-exists`: typings.firebase.firebaseStrings.`already-exists` = "already-exists".asInstanceOf[typings.firebase.firebaseStrings.`already-exists`]
+    inline def `already-exists`: typings.firebase.firebaseStrings.`already-exists` = "already-exists".asInstanceOf[typings.firebase.firebaseStrings.`already-exists`]
     
-    @scala.inline
-    def cancelled: typings.firebase.firebaseStrings.cancelled = "cancelled".asInstanceOf[typings.firebase.firebaseStrings.cancelled]
+    inline def cancelled: typings.firebase.firebaseStrings.cancelled = "cancelled".asInstanceOf[typings.firebase.firebaseStrings.cancelled]
     
-    @scala.inline
-    def `data-loss`: typings.firebase.firebaseStrings.`data-loss` = "data-loss".asInstanceOf[typings.firebase.firebaseStrings.`data-loss`]
+    inline def `data-loss`: typings.firebase.firebaseStrings.`data-loss` = "data-loss".asInstanceOf[typings.firebase.firebaseStrings.`data-loss`]
     
-    @scala.inline
-    def `deadline-exceeded`: typings.firebase.firebaseStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.firebase.firebaseStrings.`deadline-exceeded`]
+    inline def `deadline-exceeded`: typings.firebase.firebaseStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.firebase.firebaseStrings.`deadline-exceeded`]
     
-    @scala.inline
-    def `failed-precondition`: typings.firebase.firebaseStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.firebase.firebaseStrings.`failed-precondition`]
+    inline def `failed-precondition`: typings.firebase.firebaseStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.firebase.firebaseStrings.`failed-precondition`]
     
-    @scala.inline
-    def internal: typings.firebase.firebaseStrings.internal = "internal".asInstanceOf[typings.firebase.firebaseStrings.internal]
+    inline def internal: typings.firebase.firebaseStrings.internal = "internal".asInstanceOf[typings.firebase.firebaseStrings.internal]
     
-    @scala.inline
-    def `invalid-argument`: typings.firebase.firebaseStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.firebase.firebaseStrings.`invalid-argument`]
+    inline def `invalid-argument`: typings.firebase.firebaseStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.firebase.firebaseStrings.`invalid-argument`]
     
-    @scala.inline
-    def `not-found`: typings.firebase.firebaseStrings.`not-found` = "not-found".asInstanceOf[typings.firebase.firebaseStrings.`not-found`]
+    inline def `not-found`: typings.firebase.firebaseStrings.`not-found` = "not-found".asInstanceOf[typings.firebase.firebaseStrings.`not-found`]
     
-    @scala.inline
-    def ok: typings.firebase.firebaseStrings.ok = "ok".asInstanceOf[typings.firebase.firebaseStrings.ok]
+    inline def ok: typings.firebase.firebaseStrings.ok = "ok".asInstanceOf[typings.firebase.firebaseStrings.ok]
     
-    @scala.inline
-    def `out-of-range`: typings.firebase.firebaseStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.firebase.firebaseStrings.`out-of-range`]
+    inline def `out-of-range`: typings.firebase.firebaseStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.firebase.firebaseStrings.`out-of-range`]
     
-    @scala.inline
-    def `permission-denied`: typings.firebase.firebaseStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.firebase.firebaseStrings.`permission-denied`]
+    inline def `permission-denied`: typings.firebase.firebaseStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.firebase.firebaseStrings.`permission-denied`]
     
-    @scala.inline
-    def `resource-exhausted`: typings.firebase.firebaseStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.firebase.firebaseStrings.`resource-exhausted`]
+    inline def `resource-exhausted`: typings.firebase.firebaseStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.firebase.firebaseStrings.`resource-exhausted`]
     
-    @scala.inline
-    def unauthenticated: typings.firebase.firebaseStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.firebase.firebaseStrings.unauthenticated]
+    inline def unauthenticated: typings.firebase.firebaseStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.firebase.firebaseStrings.unauthenticated]
     
-    @scala.inline
-    def unavailable: typings.firebase.firebaseStrings.unavailable = "unavailable".asInstanceOf[typings.firebase.firebaseStrings.unavailable]
+    inline def unavailable: typings.firebase.firebaseStrings.unavailable = "unavailable".asInstanceOf[typings.firebase.firebaseStrings.unavailable]
     
-    @scala.inline
-    def unimplemented: typings.firebase.firebaseStrings.unimplemented = "unimplemented".asInstanceOf[typings.firebase.firebaseStrings.unimplemented]
+    inline def unimplemented: typings.firebase.firebaseStrings.unimplemented = "unimplemented".asInstanceOf[typings.firebase.firebaseStrings.unimplemented]
     
-    @scala.inline
-    def unknown: typings.firebase.firebaseStrings.unknown = "unknown".asInstanceOf[typings.firebase.firebaseStrings.unknown]
+    inline def unknown: typings.firebase.firebaseStrings.unknown = "unknown".asInstanceOf[typings.firebase.firebaseStrings.unknown]
   }
   
   type HttpsCallable = js.Function1[/* data */ js.UndefOr[js.Any], js.Promise[HttpsCallableResult]]
@@ -124,20 +107,16 @@ object functions {
   }
   object HttpsCallableOptions {
     
-    @scala.inline
-    def apply(): HttpsCallableOptions = {
+    inline def apply(): HttpsCallableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpsCallableOptions]
     }
     
-    @scala.inline
-    implicit class HttpsCallableOptionsMutableBuilder[Self <: HttpsCallableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpsCallableOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -147,17 +126,14 @@ object functions {
   }
   object HttpsCallableResult {
     
-    @scala.inline
-    def apply(data: js.Any): HttpsCallableResult = {
+    inline def apply(data: js.Any): HttpsCallableResult = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpsCallableResult]
     }
     
-    @scala.inline
-    implicit class HttpsCallableResultMutableBuilder[Self <: HttpsCallableResult] (val x: Self) extends AnyVal {
+    extension [Self <: HttpsCallableResult](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,23 +154,18 @@ object functions {
   }
   object HttpsError {
     
-    @scala.inline
-    def apply(code: FunctionsErrorCode, message: String, name: String): HttpsError = {
+    inline def apply(code: FunctionsErrorCode, message: String, name: String): HttpsError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpsError]
     }
     
-    @scala.inline
-    implicit class HttpsErrorMutableBuilder[Self <: HttpsError] (val x: Self) extends AnyVal {
+    extension [Self <: HttpsError](x: Self) {
       
-      @scala.inline
-      def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     }
   }
 }

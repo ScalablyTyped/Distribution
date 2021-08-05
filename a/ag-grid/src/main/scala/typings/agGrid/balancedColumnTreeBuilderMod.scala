@@ -20,9 +20,9 @@ object balancedColumnTreeBuilderMod {
     
     /* private */ def checkForDeprecatedItems(colDef: js.Any): js.Any = js.native
     
-    var columnUtils: js.Any = js.native
+    /* private */ var columnUtils: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createAutoGroupTreeItem(balancedColumnTree: js.Any, column: js.Any): js.Any = js.native
     
@@ -40,11 +40,11 @@ object balancedColumnTreeBuilderMod {
     
     /* private */ def findMaxDept(treeChildren: js.Any, dept: js.Any): js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def isColumnGroup(abstractColDef: js.Any): js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     def mergeColDefs(colDef: ColDef): ColDef = js.native
     

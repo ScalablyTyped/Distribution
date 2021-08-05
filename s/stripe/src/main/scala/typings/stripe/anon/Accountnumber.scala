@@ -28,25 +28,19 @@ trait Accountnumber extends StObject {
 }
 object Accountnumber {
   
-  @scala.inline
-  def apply(account_number: String, bank_name: String, routing_number: String, swift_code: String): Accountnumber = {
+  inline def apply(account_number: String, bank_name: String, routing_number: String, swift_code: String): Accountnumber = {
     val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], bank_name = bank_name.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], swift_code = swift_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accountnumber]
   }
   
-  @scala.inline
-  implicit class AccountnumberMutableBuilder[Self <: Accountnumber] (val x: Self) extends AnyVal {
+  extension [Self <: Accountnumber](x: Self) {
     
-    @scala.inline
-    def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
+    inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
+    inline def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
+    inline def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwift_code(value: String): Self = StObject.set(x, "swift_code", value.asInstanceOf[js.Any])
+    inline def setSwift_code(value: String): Self = StObject.set(x, "swift_code", value.asInstanceOf[js.Any])
   }
 }

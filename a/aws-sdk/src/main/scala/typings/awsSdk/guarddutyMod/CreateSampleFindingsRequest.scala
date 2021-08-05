@@ -18,25 +18,19 @@ trait CreateSampleFindingsRequest extends StObject {
 }
 object CreateSampleFindingsRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId): CreateSampleFindingsRequest = {
+  inline def apply(DetectorId: DetectorId): CreateSampleFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSampleFindingsRequest]
   }
   
-  @scala.inline
-  implicit class CreateSampleFindingsRequestMutableBuilder[Self <: CreateSampleFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSampleFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingTypes(value: FindingTypes): Self = StObject.set(x, "FindingTypes", value.asInstanceOf[js.Any])
+    inline def setFindingTypes(value: FindingTypes): Self = StObject.set(x, "FindingTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingTypesUndefined: Self = StObject.set(x, "FindingTypes", js.undefined)
+    inline def setFindingTypesUndefined: Self = StObject.set(x, "FindingTypes", js.undefined)
     
-    @scala.inline
-    def setFindingTypesVarargs(value: FindingType*): Self = StObject.set(x, "FindingTypes", js.Array(value :_*))
+    inline def setFindingTypesVarargs(value: FindingType*): Self = StObject.set(x, "FindingTypes", js.Array(value :_*))
   }
 }

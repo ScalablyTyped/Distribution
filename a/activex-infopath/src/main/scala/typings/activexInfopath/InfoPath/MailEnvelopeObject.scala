@@ -10,7 +10,7 @@ trait MailEnvelopeObject extends StObject {
   
   var CC: String
   
-  @JSName("InfoPath.MailEnvelopeObject_typekey")
+  /* private */ @JSName("InfoPath.MailEnvelopeObject_typekey")
   var InfoPathDotMailEnvelopeObject_typekey: MailEnvelopeObject
   
   var Subject: String
@@ -21,8 +21,7 @@ trait MailEnvelopeObject extends StObject {
 }
 object MailEnvelopeObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BCC: String,
     CC: String,
     InfoPathDotMailEnvelopeObject_typekey: MailEnvelopeObject,
@@ -35,25 +34,18 @@ object MailEnvelopeObject {
     __obj.asInstanceOf[MailEnvelopeObject]
   }
   
-  @scala.inline
-  implicit class MailEnvelopeObjectMutableBuilder[Self <: MailEnvelopeObject] (val x: Self) extends AnyVal {
+  extension [Self <: MailEnvelopeObject](x: Self) {
     
-    @scala.inline
-    def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
+    inline def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+    inline def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotMailEnvelopeObject_typekey(value: MailEnvelopeObject): Self = StObject.set(x, "InfoPath.MailEnvelopeObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotMailEnvelopeObject_typekey(value: MailEnvelopeObject): Self = StObject.set(x, "InfoPath.MailEnvelopeObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

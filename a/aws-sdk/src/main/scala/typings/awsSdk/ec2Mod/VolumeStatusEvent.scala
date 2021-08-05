@@ -38,49 +38,35 @@ trait VolumeStatusEvent extends StObject {
 }
 object VolumeStatusEvent {
   
-  @scala.inline
-  def apply(): VolumeStatusEvent = {
+  inline def apply(): VolumeStatusEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeStatusEvent]
   }
   
-  @scala.inline
-  implicit class VolumeStatusEventMutableBuilder[Self <: VolumeStatusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeStatusEvent](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "EventId", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setNotAfter(value: MillisecondDateTime): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: MillisecondDateTime): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
+    inline def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
-    @scala.inline
-    def setNotBefore(value: MillisecondDateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: MillisecondDateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
+    inline def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
   }
 }

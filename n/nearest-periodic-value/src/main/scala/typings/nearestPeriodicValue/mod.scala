@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(point: Double, value: Double, period: Double): Double = (^.asInstanceOf[js.Dynamic].apply(point.asInstanceOf[js.Any], value.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(point: Double, value: Double, period: Double): Double = (^.asInstanceOf[js.Dynamic].apply(point.asInstanceOf[js.Any], value.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("nearest-periodic-value", JSImport.Namespace)
   @js.native

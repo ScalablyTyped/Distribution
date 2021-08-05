@@ -111,7 +111,7 @@ trait TaskItem extends StObject {
   
   var Ordinal: Double = js.native
   
-  @JSName("Outlook.TaskItem_typekey")
+  /* private */ @JSName("Outlook.TaskItem_typekey")
   var OutlookDotTaskItem_typekey: TaskItem = js.native
   
   val OutlookInternalVersion: Double = js.native

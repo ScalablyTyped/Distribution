@@ -12,7 +12,6 @@ object querystringMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def stringify(queryParams: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(queryParams.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(queryParams: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(queryParams.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

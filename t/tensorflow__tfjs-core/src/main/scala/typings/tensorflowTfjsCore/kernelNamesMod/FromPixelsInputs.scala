@@ -15,16 +15,13 @@ trait FromPixelsInputs extends StObject {
 }
 object FromPixelsInputs {
   
-  @scala.inline
-  def apply(pixels: PixelData | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement): FromPixelsInputs = {
+  inline def apply(pixels: PixelData | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement): FromPixelsInputs = {
     val __obj = js.Dynamic.literal(pixels = pixels.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromPixelsInputs]
   }
   
-  @scala.inline
-  implicit class FromPixelsInputsMutableBuilder[Self <: FromPixelsInputs] (val x: Self) extends AnyVal {
+  extension [Self <: FromPixelsInputs](x: Self) {
     
-    @scala.inline
-    def setPixels(value: PixelData | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
+    inline def setPixels(value: PixelData | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
   }
 }

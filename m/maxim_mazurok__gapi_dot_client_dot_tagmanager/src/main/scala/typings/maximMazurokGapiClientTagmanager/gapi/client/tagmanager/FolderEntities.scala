@@ -20,46 +20,33 @@ trait FolderEntities extends StObject {
 }
 object FolderEntities {
   
-  @scala.inline
-  def apply(): FolderEntities = {
+  inline def apply(): FolderEntities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FolderEntities]
   }
   
-  @scala.inline
-  implicit class FolderEntitiesMutableBuilder[Self <: FolderEntities] (val x: Self) extends AnyVal {
+  extension [Self <: FolderEntities](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: js.Array[Tag]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
+    inline def setTagVarargs(value: Tag*): Self = StObject.set(x, "tag", js.Array(value :_*))
     
-    @scala.inline
-    def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: js.Array[Trigger]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    @scala.inline
-    def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+    inline def setTriggerVarargs(value: Trigger*): Self = StObject.set(x, "trigger", js.Array(value :_*))
     
-    @scala.inline
-    def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: js.Array[Variable]): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
-    @scala.inline
-    def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
+    inline def setVariableVarargs(value: Variable*): Self = StObject.set(x, "variable", js.Array(value :_*))
   }
 }

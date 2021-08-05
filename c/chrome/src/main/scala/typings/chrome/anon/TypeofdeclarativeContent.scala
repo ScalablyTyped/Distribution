@@ -31,8 +31,7 @@ trait TypeofdeclarativeContent extends StObject {
 }
 object TypeofdeclarativeContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PageStateMatcher: Instantiable1[/* options */ PageStateMatcherProperties, PageStateMatcher],
     PageStateMatcherProperties: Instantiable0[PageStateMatcherProperties],
     SetIcon: Instantiable1[/* options */ js.UndefOr[ImageData], SetIcon],
@@ -43,22 +42,16 @@ object TypeofdeclarativeContent {
     __obj.asInstanceOf[TypeofdeclarativeContent]
   }
   
-  @scala.inline
-  implicit class TypeofdeclarativeContentMutableBuilder[Self <: TypeofdeclarativeContent] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofdeclarativeContent](x: Self) {
     
-    @scala.inline
-    def setOnPageChanged(value: PageChangedEvent): Self = StObject.set(x, "onPageChanged", value.asInstanceOf[js.Any])
+    inline def setOnPageChanged(value: PageChangedEvent): Self = StObject.set(x, "onPageChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStateMatcher(value: Instantiable1[/* options */ PageStateMatcherProperties, PageStateMatcher]): Self = StObject.set(x, "PageStateMatcher", value.asInstanceOf[js.Any])
+    inline def setPageStateMatcher(value: Instantiable1[/* options */ PageStateMatcherProperties, PageStateMatcher]): Self = StObject.set(x, "PageStateMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStateMatcherProperties(value: Instantiable0[PageStateMatcherProperties]): Self = StObject.set(x, "PageStateMatcherProperties", value.asInstanceOf[js.Any])
+    inline def setPageStateMatcherProperties(value: Instantiable0[PageStateMatcherProperties]): Self = StObject.set(x, "PageStateMatcherProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIcon(value: Instantiable1[/* options */ js.UndefOr[ImageData], SetIcon]): Self = StObject.set(x, "SetIcon", value.asInstanceOf[js.Any])
+    inline def setSetIcon(value: Instantiable1[/* options */ js.UndefOr[ImageData], SetIcon]): Self = StObject.set(x, "SetIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPageAction(value: Instantiable0[ShowPageAction]): Self = StObject.set(x, "ShowPageAction", value.asInstanceOf[js.Any])
+    inline def setShowPageAction(value: Instantiable0[ShowPageAction]): Self = StObject.set(x, "ShowPageAction", value.asInstanceOf[js.Any])
   }
 }

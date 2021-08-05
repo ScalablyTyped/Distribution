@@ -13,16 +13,13 @@ trait RotateEncryptionKeyMessage extends StObject {
 }
 object RotateEncryptionKeyMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): RotateEncryptionKeyMessage = {
+  inline def apply(ClusterIdentifier: String): RotateEncryptionKeyMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateEncryptionKeyMessage]
   }
   
-  @scala.inline
-  implicit class RotateEncryptionKeyMessageMutableBuilder[Self <: RotateEncryptionKeyMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RotateEncryptionKeyMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait TokenProps
 }
 object TokenProps {
   
-  @scala.inline
-  def apply(): TokenProps = {
+  inline def apply(): TokenProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TokenProps]
   }
   
-  @scala.inline
-  implicit class TokenPropsMutableBuilder[Self <: TokenProps] (val x: Self) extends AnyVal {
+  extension [Self <: TokenProps](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
+    inline def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+    inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
   }
 }

@@ -20,17 +20,14 @@ object typesDeregisterStreamConsumerOutputMod {
   }
   object DeregisterStreamConsumerOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeregisterStreamConsumerOutput = {
+    inline def apply($metadata: ResponseMetadata): DeregisterStreamConsumerOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeregisterStreamConsumerOutput]
     }
     
-    @scala.inline
-    implicit class DeregisterStreamConsumerOutputMutableBuilder[Self <: DeregisterStreamConsumerOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeregisterStreamConsumerOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

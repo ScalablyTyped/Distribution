@@ -14,17 +14,14 @@ trait SequenceType
 }
 object SequenceType {
   
-  @scala.inline
-  def apply(name: MapperType, required: Boolean, serializedName: String, `type`: Element): SequenceType = {
+  inline def apply(name: MapperType, required: Boolean, serializedName: String, `type`: Element): SequenceType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], serializedName = serializedName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SequenceType]
   }
   
-  @scala.inline
-  implicit class SequenceTypeMutableBuilder[Self <: SequenceType] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceType](x: Self) {
     
-    @scala.inline
-    def setType(value: Element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -16,9 +16,9 @@ object hoverFeatureMod {
     
     /* private */ def addMouseHoverListeners(element: js.Any): js.Any = js.native
     
-    var columnHoverService: js.Any = js.native
+    /* private */ var columnHoverService: js.Any = js.native
     
-    var columns: js.Any = js.native
+    /* private */ var columns: js.Any = js.native
     
     /* private */ def onMouseOut(): js.Any = js.native
     

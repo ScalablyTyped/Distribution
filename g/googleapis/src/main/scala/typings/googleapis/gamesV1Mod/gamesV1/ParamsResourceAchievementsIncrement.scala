@@ -36,37 +36,27 @@ trait ParamsResourceAchievementsIncrement
 }
 object ParamsResourceAchievementsIncrement {
   
-  @scala.inline
-  def apply(): ParamsResourceAchievementsIncrement = {
+  inline def apply(): ParamsResourceAchievementsIncrement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAchievementsIncrement]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAchievementsIncrementMutableBuilder[Self <: ParamsResourceAchievementsIncrement] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAchievementsIncrement](x: Self) {
     
-    @scala.inline
-    def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
+    inline def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
+    inline def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setStepsToIncrement(value: Double): Self = StObject.set(x, "stepsToIncrement", value.asInstanceOf[js.Any])
+    inline def setStepsToIncrement(value: Double): Self = StObject.set(x, "stepsToIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsToIncrementUndefined: Self = StObject.set(x, "stepsToIncrement", js.undefined)
+    inline def setStepsToIncrementUndefined: Self = StObject.set(x, "stepsToIncrement", js.undefined)
   }
 }

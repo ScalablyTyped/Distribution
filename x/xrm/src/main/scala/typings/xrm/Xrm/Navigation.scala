@@ -131,29 +131,22 @@ object Navigation {
   }
   object AlertStrings {
     
-    @scala.inline
-    def apply(text: String): AlertStrings = {
+    inline def apply(text: String): AlertStrings = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlertStrings]
     }
     
-    @scala.inline
-    implicit class AlertStringsMutableBuilder[Self <: AlertStrings] (val x: Self) extends AnyVal {
+    extension [Self <: AlertStrings](x: Self) {
       
-      @scala.inline
-      def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
+      inline def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
+      inline def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -169,17 +162,14 @@ object Navigation {
   }
   object ConfirmResult {
     
-    @scala.inline
-    def apply(confirmed: Boolean): ConfirmResult = {
+    inline def apply(confirmed: Boolean): ConfirmResult = {
       val __obj = js.Dynamic.literal(confirmed = confirmed.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfirmResult]
     }
     
-    @scala.inline
-    implicit class ConfirmResultMutableBuilder[Self <: ConfirmResult] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmResult](x: Self) {
       
-      @scala.inline
-      def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
+      inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,41 +202,30 @@ object Navigation {
   }
   object ConfirmStrings {
     
-    @scala.inline
-    def apply(text: String): ConfirmStrings = {
+    inline def apply(text: String): ConfirmStrings = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfirmStrings]
     }
     
-    @scala.inline
-    implicit class ConfirmStringsMutableBuilder[Self <: ConfirmStrings] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmStrings](x: Self) {
       
-      @scala.inline
-      def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
+      inline def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
+      inline def setCancelButtonLabelUndefined: Self = StObject.set(x, "cancelButtonLabel", js.undefined)
       
-      @scala.inline
-      def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
+      inline def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
+      inline def setConfirmButtonLabelUndefined: Self = StObject.set(x, "confirmButtonLabel", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -264,20 +243,16 @@ object Navigation {
   }
   object DialogSizeOptions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): DialogSizeOptions = {
+    inline def apply(height: Double, width: Double): DialogSizeOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogSizeOptions]
     }
     
-    @scala.inline
-    implicit class DialogSizeOptionsMutableBuilder[Self <: DialogSizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DialogSizeOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -378,116 +353,80 @@ object Navigation {
   }
   object EntityFormOptions {
     
-    @scala.inline
-    def apply(): EntityFormOptions = {
+    inline def apply(): EntityFormOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EntityFormOptions]
     }
     
-    @scala.inline
-    implicit class EntityFormOptionsMutableBuilder[Self <: EntityFormOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntityFormOptions](x: Self) {
       
-      @scala.inline
-      def setCmdbar(value: Boolean): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
+      inline def setCmdbar(value: Boolean): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
+      inline def setCmdbarUndefined: Self = StObject.set(x, "cmdbar", js.undefined)
       
-      @scala.inline
-      def setCreateFromEntity(value: LookupValue): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
+      inline def setCreateFromEntity(value: LookupValue): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFromEntityUndefined: Self = StObject.set(x, "createFromEntity", js.undefined)
+      inline def setCreateFromEntityUndefined: Self = StObject.set(x, "createFromEntity", js.undefined)
       
-      @scala.inline
-      def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+      inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+      inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
       
-      @scala.inline
-      def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
+      inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityNameUndefined: Self = StObject.set(x, "entityName", js.undefined)
+      inline def setEntityNameUndefined: Self = StObject.set(x, "entityName", js.undefined)
       
-      @scala.inline
-      def setFormId(value: String): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
+      inline def setFormId(value: String): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormIdUndefined: Self = StObject.set(x, "formId", js.undefined)
+      inline def setFormIdUndefined: Self = StObject.set(x, "formId", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIsCrossEntityNavigate(value: Boolean): Self = StObject.set(x, "isCrossEntityNavigate", value.asInstanceOf[js.Any])
+      inline def setIsCrossEntityNavigate(value: Boolean): Self = StObject.set(x, "isCrossEntityNavigate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCrossEntityNavigateUndefined: Self = StObject.set(x, "isCrossEntityNavigate", js.undefined)
+      inline def setIsCrossEntityNavigateUndefined: Self = StObject.set(x, "isCrossEntityNavigate", js.undefined)
       
-      @scala.inline
-      def setIsOfflineSyncError(value: Boolean): Self = StObject.set(x, "isOfflineSyncError", value.asInstanceOf[js.Any])
+      inline def setIsOfflineSyncError(value: Boolean): Self = StObject.set(x, "isOfflineSyncError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOfflineSyncErrorUndefined: Self = StObject.set(x, "isOfflineSyncError", js.undefined)
+      inline def setIsOfflineSyncErrorUndefined: Self = StObject.set(x, "isOfflineSyncError", js.undefined)
       
-      @scala.inline
-      def setNavBar(value: NavBarDisplay): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
+      inline def setNavBar(value: NavBarDisplay): Self = StObject.set(x, "navBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavBarUndefined: Self = StObject.set(x, "navBar", js.undefined)
+      inline def setNavBarUndefined: Self = StObject.set(x, "navBar", js.undefined)
       
-      @scala.inline
-      def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
+      inline def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenInNewWindowUndefined: Self = StObject.set(x, "openInNewWindow", js.undefined)
+      inline def setOpenInNewWindowUndefined: Self = StObject.set(x, "openInNewWindow", js.undefined)
       
-      @scala.inline
-      def setProcessId(value: String): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: String): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+      inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
       
-      @scala.inline
-      def setProcessInstanceId(value: String): Self = StObject.set(x, "processInstanceId", value.asInstanceOf[js.Any])
+      inline def setProcessInstanceId(value: String): Self = StObject.set(x, "processInstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessInstanceIdUndefined: Self = StObject.set(x, "processInstanceId", js.undefined)
+      inline def setProcessInstanceIdUndefined: Self = StObject.set(x, "processInstanceId", js.undefined)
       
-      @scala.inline
-      def setRelationship(value: Relationship): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+      inline def setRelationship(value: Relationship): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
+      inline def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
       
-      @scala.inline
-      def setSelectedStageId(value: String): Self = StObject.set(x, "selectedStageId", value.asInstanceOf[js.Any])
+      inline def setSelectedStageId(value: String): Self = StObject.set(x, "selectedStageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStageIdUndefined: Self = StObject.set(x, "selectedStageId", js.undefined)
+      inline def setSelectedStageIdUndefined: Self = StObject.set(x, "selectedStageId", js.undefined)
       
-      @scala.inline
-      def setUseQuickCreateForm(value: Boolean): Self = StObject.set(x, "useQuickCreateForm", value.asInstanceOf[js.Any])
+      inline def setUseQuickCreateForm(value: Boolean): Self = StObject.set(x, "useQuickCreateForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseQuickCreateFormUndefined: Self = StObject.set(x, "useQuickCreateForm", js.undefined)
+      inline def setUseQuickCreateFormUndefined: Self = StObject.set(x, "useQuickCreateForm", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWindowPosition(value: WindowPositions): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
+      inline def setWindowPosition(value: WindowPositions): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
+      inline def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
     }
   }
   
@@ -516,32 +455,24 @@ object Navigation {
   }
   object ErrorDialogOptions {
     
-    @scala.inline
-    def apply(): ErrorDialogOptions = {
+    inline def apply(): ErrorDialogOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorDialogOptions]
     }
     
-    @scala.inline
-    implicit class ErrorDialogOptionsMutableBuilder[Self <: ErrorDialogOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorDialogOptions](x: Self) {
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -569,26 +500,20 @@ object Navigation {
   }
   object FileDetails {
     
-    @scala.inline
-    def apply(fileContent: String, fileName: String, fileSize: Double, mimeType: String): FileDetails = {
+    inline def apply(fileContent: String, fileName: String, fileSize: Double, mimeType: String): FileDetails = {
       val __obj = js.Dynamic.literal(fileContent = fileContent.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileDetails]
     }
     
-    @scala.inline
-    implicit class FileDetailsMutableBuilder[Self <: FileDetails] (val x: Self) extends AnyVal {
+    extension [Self <: FileDetails](x: Self) {
       
-      @scala.inline
-      def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+      inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -620,35 +545,26 @@ object Navigation {
   }
   object NavigationOptions {
     
-    @scala.inline
-    def apply(target: `1` | `2`): NavigationOptions = {
+    inline def apply(target: `1` | `2`): NavigationOptions = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationOptions]
     }
     
-    @scala.inline
-    implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double | SizeValue): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | SizeValue): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPosition(value: `1` | `2`): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: `1` | `2`): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setTarget(value: `1` | `2`): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: `1` | `2`): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double | SizeValue): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | SizeValue): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
     
     trait SizeValue extends StObject {
@@ -665,20 +581,16 @@ object Navigation {
     }
     object SizeValue {
       
-      @scala.inline
-      def apply(unit: Percentsign | px, value: Double): SizeValue = {
+      inline def apply(unit: Percentsign | px, value: Double): SizeValue = {
         val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[SizeValue]
       }
       
-      @scala.inline
-      implicit class SizeValueMutableBuilder[Self <: SizeValue] (val x: Self) extends AnyVal {
+      extension [Self <: SizeValue](x: Self) {
         
-        @scala.inline
-        def setUnit(value: Percentsign | px): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+        inline def setUnit(value: Percentsign | px): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -692,20 +604,16 @@ object Navigation {
   }
   object OpenFormResult {
     
-    @scala.inline
-    def apply(savedEntityReference: js.Array[LookupValue]): OpenFormResult = {
+    inline def apply(savedEntityReference: js.Array[LookupValue]): OpenFormResult = {
       val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenFormResult]
     }
     
-    @scala.inline
-    implicit class OpenFormResultMutableBuilder[Self <: OpenFormResult] (val x: Self) extends AnyVal {
+    extension [Self <: OpenFormResult](x: Self) {
       
-      @scala.inline
-      def setSavedEntityReference(value: js.Array[LookupValue]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
+      inline def setSavedEntityReference(value: js.Array[LookupValue]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedEntityReferenceVarargs(value: LookupValue*): Self = StObject.set(x, "savedEntityReference", js.Array(value :_*))
+      inline def setSavedEntityReferenceVarargs(value: LookupValue*): Self = StObject.set(x, "savedEntityReference", js.Array(value :_*))
     }
   }
   
@@ -720,17 +628,14 @@ object Navigation {
   }
   object OpenWebresourceOptions {
     
-    @scala.inline
-    def apply(height: Double, openInNewWindow: Boolean, width: Double): OpenWebresourceOptions = {
+    inline def apply(height: Double, openInNewWindow: Boolean, width: Double): OpenWebresourceOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], openInNewWindow = openInNewWindow.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenWebresourceOptions]
     }
     
-    @scala.inline
-    implicit class OpenWebresourceOptionsMutableBuilder[Self <: OpenWebresourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenWebresourceOptions](x: Self) {
       
-      @scala.inline
-      def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
+      inline def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
     }
   }
   
@@ -755,32 +660,24 @@ object Navigation {
   }
   object PageInputEntityList {
     
-    @scala.inline
-    def apply(entityName: String): PageInputEntityList = {
+    inline def apply(entityName: String): PageInputEntityList = {
       val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any], pageType = "entitylist")
       __obj.asInstanceOf[PageInputEntityList]
     }
     
-    @scala.inline
-    implicit class PageInputEntityListMutableBuilder[Self <: PageInputEntityList] (val x: Self) extends AnyVal {
+    extension [Self <: PageInputEntityList](x: Self) {
       
-      @scala.inline
-      def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
+      inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageType(value: entitylist): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
+      inline def setPageType(value: entitylist): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
+      inline def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
+      inline def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
       
-      @scala.inline
-      def setViewType(value: savedquery | userquery): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+      inline def setViewType(value: savedquery | userquery): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
+      inline def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
     }
   }
   
@@ -845,80 +742,56 @@ object Navigation {
   }
   object PageInputEntityRecord {
     
-    @scala.inline
-    def apply(entityName: String): PageInputEntityRecord = {
+    inline def apply(entityName: String): PageInputEntityRecord = {
       val __obj = js.Dynamic.literal(entityName = entityName.asInstanceOf[js.Any], pageType = "entityrecord")
       __obj.asInstanceOf[PageInputEntityRecord]
     }
     
-    @scala.inline
-    implicit class PageInputEntityRecordMutableBuilder[Self <: PageInputEntityRecord] (val x: Self) extends AnyVal {
+    extension [Self <: PageInputEntityRecord](x: Self) {
       
-      @scala.inline
-      def setCreateFromEntity(value: Boolean): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
+      inline def setCreateFromEntity(value: Boolean): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFromEntityUndefined: Self = StObject.set(x, "createFromEntity", js.undefined)
+      inline def setCreateFromEntityUndefined: Self = StObject.set(x, "createFromEntity", js.undefined)
       
-      @scala.inline
-      def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+      inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+      inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
       
-      @scala.inline
-      def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
+      inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormId(value: String): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
+      inline def setFormId(value: String): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormIdUndefined: Self = StObject.set(x, "formId", js.undefined)
+      inline def setFormIdUndefined: Self = StObject.set(x, "formId", js.undefined)
       
-      @scala.inline
-      def setIsCrossEntityNavigate(value: Boolean): Self = StObject.set(x, "isCrossEntityNavigate", value.asInstanceOf[js.Any])
+      inline def setIsCrossEntityNavigate(value: Boolean): Self = StObject.set(x, "isCrossEntityNavigate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCrossEntityNavigateUndefined: Self = StObject.set(x, "isCrossEntityNavigate", js.undefined)
+      inline def setIsCrossEntityNavigateUndefined: Self = StObject.set(x, "isCrossEntityNavigate", js.undefined)
       
-      @scala.inline
-      def setIsOfflineSyncError(value: Boolean): Self = StObject.set(x, "isOfflineSyncError", value.asInstanceOf[js.Any])
+      inline def setIsOfflineSyncError(value: Boolean): Self = StObject.set(x, "isOfflineSyncError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOfflineSyncErrorUndefined: Self = StObject.set(x, "isOfflineSyncError", js.undefined)
+      inline def setIsOfflineSyncErrorUndefined: Self = StObject.set(x, "isOfflineSyncError", js.undefined)
       
-      @scala.inline
-      def setPageType(value: entityrecord): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
+      inline def setPageType(value: entityrecord): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: String): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: String): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+      inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
       
-      @scala.inline
-      def setProcessInstanceId(value: String): Self = StObject.set(x, "processInstanceId", value.asInstanceOf[js.Any])
+      inline def setProcessInstanceId(value: String): Self = StObject.set(x, "processInstanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessInstanceIdUndefined: Self = StObject.set(x, "processInstanceId", js.undefined)
+      inline def setProcessInstanceIdUndefined: Self = StObject.set(x, "processInstanceId", js.undefined)
       
-      @scala.inline
-      def setRelationship(value: Relationship): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+      inline def setRelationship(value: Relationship): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
+      inline def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
       
-      @scala.inline
-      def setSelectedStageId(value: String): Self = StObject.set(x, "selectedStageId", value.asInstanceOf[js.Any])
+      inline def setSelectedStageId(value: String): Self = StObject.set(x, "selectedStageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStageIdUndefined: Self = StObject.set(x, "selectedStageId", js.undefined)
+      inline def setSelectedStageIdUndefined: Self = StObject.set(x, "selectedStageId", js.undefined)
     }
   }
   
@@ -938,26 +811,20 @@ object Navigation {
   }
   object PageInputHtmlWebResource {
     
-    @scala.inline
-    def apply(webresourceName: String): PageInputHtmlWebResource = {
+    inline def apply(webresourceName: String): PageInputHtmlWebResource = {
       val __obj = js.Dynamic.literal(pageType = "webresource", webresourceName = webresourceName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageInputHtmlWebResource]
     }
     
-    @scala.inline
-    implicit class PageInputHtmlWebResourceMutableBuilder[Self <: PageInputHtmlWebResource] (val x: Self) extends AnyVal {
+    extension [Self <: PageInputHtmlWebResource](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setPageType(value: webresource): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
+      inline def setPageType(value: webresource): Self = StObject.set(x, "pageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebresourceName(value: String): Self = StObject.set(x, "webresourceName", value.asInstanceOf[js.Any])
+      inline def setWebresourceName(value: String): Self = StObject.set(x, "webresourceName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -995,38 +862,28 @@ object Navigation {
   }
   object Relationship {
     
-    @scala.inline
-    def apply(attributeName: String, name: String): Relationship = {
+    inline def apply(attributeName: String, name: String): Relationship = {
       val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Relationship]
     }
     
-    @scala.inline
-    implicit class RelationshipMutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
+    extension [Self <: Relationship](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationPropertyName(value: String): Self = StObject.set(x, "navigationPropertyName", value.asInstanceOf[js.Any])
+      inline def setNavigationPropertyName(value: String): Self = StObject.set(x, "navigationPropertyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigationPropertyNameUndefined: Self = StObject.set(x, "navigationPropertyName", js.undefined)
+      inline def setNavigationPropertyNameUndefined: Self = StObject.set(x, "navigationPropertyName", js.undefined)
       
-      @scala.inline
-      def setRelationshipType(value: RelationshipType): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
+      inline def setRelationshipType(value: RelationshipType): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationshipTypeUndefined: Self = StObject.set(x, "relationshipType", js.undefined)
+      inline def setRelationshipTypeUndefined: Self = StObject.set(x, "relationshipType", js.undefined)
       
-      @scala.inline
-      def setRoleType(value: RoleType): Self = StObject.set(x, "roleType", value.asInstanceOf[js.Any])
+      inline def setRoleType(value: RoleType): Self = StObject.set(x, "roleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleTypeUndefined: Self = StObject.set(x, "roleType", js.undefined)
+      inline def setRoleTypeUndefined: Self = StObject.set(x, "roleType", js.undefined)
     }
   }
 }

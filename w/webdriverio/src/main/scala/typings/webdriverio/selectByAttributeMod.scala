@@ -10,6 +10,5 @@ object selectByAttributeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(attribute: js.Any, value: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(attribute.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def default(attribute: js.Any, value: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(attribute.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

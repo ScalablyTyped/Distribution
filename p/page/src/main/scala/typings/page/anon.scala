@@ -21,44 +21,32 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setDecodeURLComponents(value: Boolean): Self = StObject.set(x, "decodeURLComponents", value.asInstanceOf[js.Any])
+      inline def setDecodeURLComponents(value: Boolean): Self = StObject.set(x, "decodeURLComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeURLComponentsUndefined: Self = StObject.set(x, "decodeURLComponents", js.undefined)
+      inline def setDecodeURLComponentsUndefined: Self = StObject.set(x, "decodeURLComponents", js.undefined)
       
-      @scala.inline
-      def setDispatch(value: Boolean): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
+      inline def setDispatch(value: Boolean): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
+      inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      @scala.inline
-      def setHashbang(value: Boolean): Self = StObject.set(x, "hashbang", value.asInstanceOf[js.Any])
+      inline def setHashbang(value: Boolean): Self = StObject.set(x, "hashbang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashbangUndefined: Self = StObject.set(x, "hashbang", js.undefined)
+      inline def setHashbangUndefined: Self = StObject.set(x, "hashbang", js.undefined)
       
-      @scala.inline
-      def setPopstate(value: Boolean): Self = StObject.set(x, "popstate", value.asInstanceOf[js.Any])
+      inline def setPopstate(value: Boolean): Self = StObject.set(x, "popstate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopstateUndefined: Self = StObject.set(x, "popstate", js.undefined)
+      inline def setPopstateUndefined: Self = StObject.set(x, "popstate", js.undefined)
     }
   }
 }

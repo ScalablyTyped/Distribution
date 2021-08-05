@@ -13,19 +13,15 @@ trait FileSystemFailureDetails extends StObject {
 }
 object FileSystemFailureDetails {
   
-  @scala.inline
-  def apply(): FileSystemFailureDetails = {
+  inline def apply(): FileSystemFailureDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSystemFailureDetails]
   }
   
-  @scala.inline
-  implicit class FileSystemFailureDetailsMutableBuilder[Self <: FileSystemFailureDetails] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemFailureDetails](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

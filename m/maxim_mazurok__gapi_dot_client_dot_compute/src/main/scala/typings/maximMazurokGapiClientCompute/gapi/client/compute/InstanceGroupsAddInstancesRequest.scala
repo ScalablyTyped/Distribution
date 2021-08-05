@@ -11,22 +11,17 @@ trait InstanceGroupsAddInstancesRequest extends StObject {
 }
 object InstanceGroupsAddInstancesRequest {
   
-  @scala.inline
-  def apply(): InstanceGroupsAddInstancesRequest = {
+  inline def apply(): InstanceGroupsAddInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupsAddInstancesRequest]
   }
   
-  @scala.inline
-  implicit class InstanceGroupsAddInstancesRequestMutableBuilder[Self <: InstanceGroupsAddInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupsAddInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[InstanceReference]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: InstanceReference*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: InstanceReference*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

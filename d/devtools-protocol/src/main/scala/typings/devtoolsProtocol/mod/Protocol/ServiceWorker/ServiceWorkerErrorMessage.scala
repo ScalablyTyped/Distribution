@@ -21,8 +21,7 @@ trait ServiceWorkerErrorMessage extends StObject {
 }
 object ServiceWorkerErrorMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columnNumber: integer,
     errorMessage: String,
     lineNumber: integer,
@@ -34,25 +33,18 @@ object ServiceWorkerErrorMessage {
     __obj.asInstanceOf[ServiceWorkerErrorMessage]
   }
   
-  @scala.inline
-  implicit class ServiceWorkerErrorMessageMutableBuilder[Self <: ServiceWorkerErrorMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceWorkerErrorMessage](x: Self) {
     
-    @scala.inline
-    def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    inline def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

@@ -45,8 +45,7 @@ trait XTable
 }
 object XTable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnCount: Double,
     Columns: XTableColumns,
     PropertySetInfo: XPropertySetInfo,
@@ -83,19 +82,14 @@ object XTable {
     __obj.asInstanceOf[XTable]
   }
   
-  @scala.inline
-  implicit class XTableMutableBuilder[Self <: XTable] (val x: Self) extends AnyVal {
+  extension [Self <: XTable](x: Self) {
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCursor(value: () => XCellCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction0(value))
+    inline def setCreateCursor(value: () => XCellCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateCursorByRange(value: XCellRange => XCellCursor): Self = StObject.set(x, "createCursorByRange", js.Any.fromFunction1(value))
+    inline def setCreateCursorByRange(value: XCellRange => XCellCursor): Self = StObject.set(x, "createCursorByRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
   }
 }

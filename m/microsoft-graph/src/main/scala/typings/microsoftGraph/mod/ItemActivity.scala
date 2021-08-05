@@ -22,49 +22,35 @@ trait ItemActivity
 }
 object ItemActivity {
   
-  @scala.inline
-  def apply(): ItemActivity = {
+  inline def apply(): ItemActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemActivity]
   }
   
-  @scala.inline
-  implicit class ItemActivityMutableBuilder[Self <: ItemActivity] (val x: Self) extends AnyVal {
+  extension [Self <: ItemActivity](x: Self) {
     
-    @scala.inline
-    def setAccess(value: NullableOption[AccessAction]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: NullableOption[AccessAction]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessNull: Self = StObject.set(x, "access", null)
+    inline def setAccessNull: Self = StObject.set(x, "access", null)
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    @scala.inline
-    def setActivityDateTime(value: NullableOption[String]): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
+    inline def setActivityDateTime(value: NullableOption[String]): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityDateTimeNull: Self = StObject.set(x, "activityDateTime", null)
+    inline def setActivityDateTimeNull: Self = StObject.set(x, "activityDateTime", null)
     
-    @scala.inline
-    def setActivityDateTimeUndefined: Self = StObject.set(x, "activityDateTime", js.undefined)
+    inline def setActivityDateTimeUndefined: Self = StObject.set(x, "activityDateTime", js.undefined)
     
-    @scala.inline
-    def setActor(value: NullableOption[IdentitySet]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: NullableOption[IdentitySet]): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorNull: Self = StObject.set(x, "actor", null)
+    inline def setActorNull: Self = StObject.set(x, "actor", null)
     
-    @scala.inline
-    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+    inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
-    @scala.inline
-    def setDriveItem(value: NullableOption[DriveItem]): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
+    inline def setDriveItem(value: NullableOption[DriveItem]): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveItemNull: Self = StObject.set(x, "driveItem", null)
+    inline def setDriveItemNull: Self = StObject.set(x, "driveItem", null)
     
-    @scala.inline
-    def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
+    inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
   }
 }

@@ -66,7 +66,7 @@ object repoManagerMod {
     /**
       * @private {!Object.<string, Object<string, !fb.core.Repo>>}
       */
-    var repos_ : js.Any = js.native
+    /* private */ var repos_ : js.Any = js.native
     
     def resume(): Unit = js.native
     
@@ -74,7 +74,7 @@ object repoManagerMod {
       * If true, new Repos will be created to use ReadonlyRestClient (for testing purposes).
       * @private {boolean}
       */
-    var useRestClient_ : js.Any = js.native
+    /* private */ var useRestClient_ : js.Any = js.native
   }
   /* static members */
   object RepoManager {
@@ -83,7 +83,6 @@ object repoManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getInstance(): RepoManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[RepoManager]
+    inline def getInstance(): RepoManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[RepoManager]
   }
 }

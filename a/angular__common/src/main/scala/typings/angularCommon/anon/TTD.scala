@@ -14,31 +14,23 @@ trait TTD extends StObject {
 }
 object TTD {
   
-  @scala.inline
-  def apply(JPY: js.Array[String], TTD: js.Array[String], USD: js.Array[String]): TTD = {
+  inline def apply(JPY: js.Array[String], TTD: js.Array[String], USD: js.Array[String]): TTD = {
     val __obj = js.Dynamic.literal(JPY = JPY.asInstanceOf[js.Any], TTD = TTD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[TTD]
   }
   
-  @scala.inline
-  implicit class TTDMutableBuilder[Self <: TTD] (val x: Self) extends AnyVal {
+  extension [Self <: TTD](x: Self) {
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setTTD(value: js.Array[String]): Self = StObject.set(x, "TTD", value.asInstanceOf[js.Any])
+    inline def setTTD(value: js.Array[String]): Self = StObject.set(x, "TTD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTDVarargs(value: String*): Self = StObject.set(x, "TTD", js.Array(value :_*))
+    inline def setTTDVarargs(value: String*): Self = StObject.set(x, "TTD", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

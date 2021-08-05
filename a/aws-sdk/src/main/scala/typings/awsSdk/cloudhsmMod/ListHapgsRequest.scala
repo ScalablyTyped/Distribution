@@ -13,19 +13,15 @@ trait ListHapgsRequest extends StObject {
 }
 object ListHapgsRequest {
   
-  @scala.inline
-  def apply(): ListHapgsRequest = {
+  inline def apply(): ListHapgsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHapgsRequest]
   }
   
-  @scala.inline
-  implicit class ListHapgsRequestMutableBuilder[Self <: ListHapgsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListHapgsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

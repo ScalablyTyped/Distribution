@@ -44,17 +44,14 @@ object certificatesMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @scala.inline
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest]
-      @scala.inline
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest]
+      inline def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest]
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequest.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequest.CertificateSigningRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequest.CertificateSigningRequest */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequest.CertificateSigningRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequest.CertificateSigningRequest */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/certificates", "v1.CertificateSigningRequestList")
@@ -88,17 +85,14 @@ object certificatesMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @scala.inline
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList]
-      @scala.inline
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList]
+      inline def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList]
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequestList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean]
     }
   }
   
@@ -142,17 +136,14 @@ object certificatesMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @scala.inline
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest]
-      @scala.inline
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest]
+      inline def get(name: String, id: Input[ID]): typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest]
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequest.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequest.CertificateSigningRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequest.CertificateSigningRequest */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequest.CertificateSigningRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequest.CertificateSigningRequest */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/certificates", "v1beta1.CertificateSigningRequestList")
@@ -193,17 +184,14 @@ object certificatesMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @scala.inline
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList]
-      @scala.inline
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList]
+      inline def get(name: String, id: Input[ID]): typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList]
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequestList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean]
     }
   }
 }

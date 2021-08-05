@@ -8,16 +8,13 @@ object justifiedLayoutStrings {
   
   @js.native
   sealed trait center extends StObject
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait justify extends StObject
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait left extends StObject
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
 }

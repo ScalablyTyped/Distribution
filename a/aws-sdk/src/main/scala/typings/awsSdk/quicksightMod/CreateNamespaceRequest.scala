@@ -28,31 +28,23 @@ trait CreateNamespaceRequest extends StObject {
 }
 object CreateNamespaceRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, IdentityStore: IdentityStore, Namespace: Namespace): CreateNamespaceRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, IdentityStore: IdentityStore, Namespace: Namespace): CreateNamespaceRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], IdentityStore = IdentityStore.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNamespaceRequest]
   }
   
-  @scala.inline
-  implicit class CreateNamespaceRequestMutableBuilder[Self <: CreateNamespaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNamespaceRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityStore(value: IdentityStore): Self = StObject.set(x, "IdentityStore", value.asInstanceOf[js.Any])
+    inline def setIdentityStore(value: IdentityStore): Self = StObject.set(x, "IdentityStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -484,6 +484,5 @@ object ASPxClientDateEdit {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientDateEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientDateEdit]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientDateEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientDateEdit]
 }

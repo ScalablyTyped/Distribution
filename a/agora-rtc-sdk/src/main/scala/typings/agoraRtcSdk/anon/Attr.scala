@@ -18,19 +18,15 @@ trait Attr extends StObject {
 }
 object Attr {
   
-  @scala.inline
-  def apply(attr: Double, uid: String | Double): Attr = {
+  inline def apply(attr: Double, uid: String | Double): Attr = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attr]
   }
   
-  @scala.inline
-  implicit class AttrMutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
+  extension [Self <: Attr](x: Self) {
     
-    @scala.inline
-    def setAttr(value: Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String | Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String | Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

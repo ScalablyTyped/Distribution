@@ -12,19 +12,15 @@ trait SemanticRolesKeyword extends StObject {
 }
 object SemanticRolesKeyword {
   
-  @scala.inline
-  def apply(): SemanticRolesKeyword = {
+  inline def apply(): SemanticRolesKeyword = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticRolesKeyword]
   }
   
-  @scala.inline
-  implicit class SemanticRolesKeywordMutableBuilder[Self <: SemanticRolesKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticRolesKeyword](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

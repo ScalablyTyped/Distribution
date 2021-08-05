@@ -17,25 +17,19 @@ trait FirstAndThirdPartyAudienceTargetingSetting extends StObject {
 }
 object FirstAndThirdPartyAudienceTargetingSetting {
   
-  @scala.inline
-  def apply(): FirstAndThirdPartyAudienceTargetingSetting = {
+  inline def apply(): FirstAndThirdPartyAudienceTargetingSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirstAndThirdPartyAudienceTargetingSetting]
   }
   
-  @scala.inline
-  implicit class FirstAndThirdPartyAudienceTargetingSettingMutableBuilder[Self <: FirstAndThirdPartyAudienceTargetingSetting] (val x: Self) extends AnyVal {
+  extension [Self <: FirstAndThirdPartyAudienceTargetingSetting](x: Self) {
     
-    @scala.inline
-    def setFirstAndThirdPartyAudienceId(value: String): Self = StObject.set(x, "firstAndThirdPartyAudienceId", value.asInstanceOf[js.Any])
+    inline def setFirstAndThirdPartyAudienceId(value: String): Self = StObject.set(x, "firstAndThirdPartyAudienceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstAndThirdPartyAudienceIdUndefined: Self = StObject.set(x, "firstAndThirdPartyAudienceId", js.undefined)
+    inline def setFirstAndThirdPartyAudienceIdUndefined: Self = StObject.set(x, "firstAndThirdPartyAudienceId", js.undefined)
     
-    @scala.inline
-    def setRecency(value: String): Self = StObject.set(x, "recency", value.asInstanceOf[js.Any])
+    inline def setRecency(value: String): Self = StObject.set(x, "recency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecencyUndefined: Self = StObject.set(x, "recency", js.undefined)
+    inline def setRecencyUndefined: Self = StObject.set(x, "recency", js.undefined)
   }
 }

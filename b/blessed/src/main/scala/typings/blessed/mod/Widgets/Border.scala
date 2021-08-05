@@ -34,49 +34,35 @@ trait Border extends StObject {
 }
 object Border {
   
-  @scala.inline
-  def apply(): Border = {
+  inline def apply(): Border = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setBg(value: Double): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+    inline def setBg(value: Double): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+    inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
-    @scala.inline
-    def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
-    @scala.inline
-    def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
+    inline def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChUndefined: Self = StObject.set(x, "ch", js.undefined)
+    inline def setChUndefined: Self = StObject.set(x, "ch", js.undefined)
     
-    @scala.inline
-    def setFg(value: Double): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+    inline def setFg(value: Double): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
+    inline def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
     
-    @scala.inline
-    def setType(value: line | bg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: line | bg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

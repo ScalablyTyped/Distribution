@@ -29,55 +29,39 @@ trait StackFrame extends StObject {
 }
 object StackFrame {
   
-  @scala.inline
-  def apply(): StackFrame = {
+  inline def apply(): StackFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackFrame]
   }
   
-  @scala.inline
-  implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+  extension [Self <: StackFrame](x: Self) {
     
-    @scala.inline
-    def setColumnNumber(value: String): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: String): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+    inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
-    @scala.inline
-    def setFileName(value: TruncatableString): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: TruncatableString): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: TruncatableString): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: TruncatableString): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
-    @scala.inline
-    def setLineNumber(value: String): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: String): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
-    @scala.inline
-    def setLoadModule(value: Module): Self = StObject.set(x, "loadModule", value.asInstanceOf[js.Any])
+    inline def setLoadModule(value: Module): Self = StObject.set(x, "loadModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadModuleUndefined: Self = StObject.set(x, "loadModule", js.undefined)
+    inline def setLoadModuleUndefined: Self = StObject.set(x, "loadModule", js.undefined)
     
-    @scala.inline
-    def setOriginalFunctionName(value: TruncatableString): Self = StObject.set(x, "originalFunctionName", value.asInstanceOf[js.Any])
+    inline def setOriginalFunctionName(value: TruncatableString): Self = StObject.set(x, "originalFunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalFunctionNameUndefined: Self = StObject.set(x, "originalFunctionName", js.undefined)
+    inline def setOriginalFunctionNameUndefined: Self = StObject.set(x, "originalFunctionName", js.undefined)
     
-    @scala.inline
-    def setSourceVersion(value: TruncatableString): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
+    inline def setSourceVersion(value: TruncatableString): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
+    inline def setSourceVersionUndefined: Self = StObject.set(x, "sourceVersion", js.undefined)
   }
 }

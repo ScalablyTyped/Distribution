@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2ConversationType extends StObject
 object GoogleActionsV2ConversationType {
   
-  @scala.inline
-  def ACTIVE: typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE = "ACTIVE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE]
+  inline def ACTIVE: typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE = "ACTIVE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ACTIVE]
   
-  @scala.inline
-  def NEW: typings.actionsOnGoogle.actionsOnGoogleStrings.NEW = "NEW".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.NEW]
+  inline def NEW: typings.actionsOnGoogle.actionsOnGoogleStrings.NEW = "NEW".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.NEW]
   
-  @scala.inline
-  def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
+  inline def TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED = "TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.TYPE_UNSPECIFIED]
 }

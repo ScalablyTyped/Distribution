@@ -13,16 +13,13 @@ trait GetInstanceStateRequest extends StObject {
 }
 object GetInstanceStateRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName): GetInstanceStateRequest = {
+  inline def apply(instanceName: ResourceName): GetInstanceStateRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceStateRequest]
   }
   
-  @scala.inline
-  implicit class GetInstanceStateRequestMutableBuilder[Self <: GetInstanceStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceStateRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

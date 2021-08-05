@@ -261,8 +261,7 @@ trait OmitTimeDialogset extends StObject {
 }
 object OmitTimeDialogset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $getProperty: /* name */ String => js.Any,
     $getPropertyGetter: /* propertyName */ String => js.Any,
     $getPropertySetter: /* propertyName */ String => js.Any,
@@ -316,199 +315,136 @@ object OmitTimeDialogset {
     __obj.asInstanceOf[OmitTimeDialogset]
   }
   
-  @scala.inline
-  implicit class OmitTimeDialogsetMutableBuilder[Self <: OmitTimeDialogset] (val x: Self) extends AnyVal {
+  extension [Self <: OmitTimeDialogset](x: Self) {
     
-    @scala.inline
-    def set$getProperty(value: /* name */ String => js.Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
+    inline def set$getProperty(value: /* name */ String => js.Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set$getPropertyGetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertyGetter", js.Any.fromFunction1(value))
+    inline def set$getPropertyGetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertyGetter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set$getPropertySetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertySetter", js.Any.fromFunction1(value))
+    inline def set$getPropertySetter(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "$getPropertySetter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set$props(value: js.Any): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
+    inline def set$props(value: js.Any): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$setProperty(value: (/* name */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "$setProperty", js.Any.fromFunction2(value))
+    inline def set$setProperty(value: (/* name */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "$setProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
+    inline def set$trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "$trigger", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => TimeDialog): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => TimeDialog): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConstructor(value: /* properties */ js.UndefOr[Properties[TimeDialog, Omit[TimeDialog, set]]] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* properties */ js.UndefOr[Properties[TimeDialog, Omit[TimeDialog, set]]] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefineChangeEvent(value: js.Any): Self = StObject.set(x, "defineChangeEvent", value.asInstanceOf[js.Any])
+    inline def setDefineChangeEvent(value: js.Any): Self = StObject.set(x, "defineChangeEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefineChangeEventUndefined: Self = StObject.set(x, "defineChangeEvent", js.undefined)
+    inline def setDefineChangeEventUndefined: Self = StObject.set(x, "defineChangeEvent", js.undefined)
     
-    @scala.inline
-    def setDefineEvent(value: js.Any): Self = StObject.set(x, "defineEvent", value.asInstanceOf[js.Any])
+    inline def setDefineEvent(value: js.Any): Self = StObject.set(x, "defineEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefineEventUndefined: Self = StObject.set(x, "defineEvent", js.undefined)
+    inline def setDefineEventUndefined: Self = StObject.set(x, "defineEvent", js.undefined)
     
-    @scala.inline
-    def setDefineEvents(value: js.Any): Self = StObject.set(x, "defineEvents", value.asInstanceOf[js.Any])
+    inline def setDefineEvents(value: js.Any): Self = StObject.set(x, "defineEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefineEventsUndefined: Self = StObject.set(x, "defineEvents", js.undefined)
+    inline def setDefineEventsUndefined: Self = StObject.set(x, "defineEvents", js.undefined)
     
-    @scala.inline
-    def setDefineProperties(value: js.Any): Self = StObject.set(x, "defineProperties", value.asInstanceOf[js.Any])
+    inline def setDefineProperties(value: js.Any): Self = StObject.set(x, "defineProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinePropertiesUndefined: Self = StObject.set(x, "defineProperties", js.undefined)
+    inline def setDefinePropertiesUndefined: Self = StObject.set(x, "defineProperties", js.undefined)
     
-    @scala.inline
-    def setDefineProperty(value: js.Any): Self = StObject.set(x, "defineProperty", value.asInstanceOf[js.Any])
+    inline def setDefineProperty(value: js.Any): Self = StObject.set(x, "defineProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinePropertyUndefined: Self = StObject.set(x, "defineProperty", js.undefined)
+    inline def setDefinePropertyUndefined: Self = StObject.set(x, "defineProperty", js.undefined)
     
-    @scala.inline
-    def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setJsxAttributes(value: JSXAttributes[TimeDialog, Omit[TimeDialog, set | jsxAttributes]]): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: JSXAttributes[TimeDialog, Omit[TimeDialog, set | jsxAttributes]]): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOff(
+    inline def setOff(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => TimeDialog
     ): Self = StObject.set(x, "off", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOn(
+    inline def setOn(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => TimeDialog
     ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnClose(value: Listeners[TimeDialogCloseEvent[TimeDialog]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    inline def setOnClose(value: Listeners[TimeDialogCloseEvent[TimeDialog]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDateChanged(value: ChangeListeners[TimeDialog, date]): Self = StObject.set(x, "onDateChanged", value.asInstanceOf[js.Any])
+    inline def setOnDateChanged(value: ChangeListeners[TimeDialog, date]): Self = StObject.set(x, "onDateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSelect(value: Listeners[TimeDialogSelectEvent[TimeDialog]]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+    inline def setOnSelect(value: Listeners[TimeDialogSelectEvent[TimeDialog]]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnce(
+    inline def setOnce(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], js.Any], /* context */ js.UndefOr[js.Object]) => TimeDialog
     ): Self = StObject.set(x, "once", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOpen(value: () => TimeDialog): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => TimeDialog): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTrigger(value: /* type */ String => TimeDialog): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
+    inline def setTrigger(value: /* type */ String => TimeDialog): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTriggerAsync(value: /* type */ String => js.Promise[TimeDialog]): Self = StObject.set(x, "triggerAsync", js.Any.fromFunction1(value))
+    inline def setTriggerAsync(value: /* type */ String => js.Promise[TimeDialog]): Self = StObject.set(x, "triggerAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
+    inline def set_checkDisposed(value: () => Unit): Self = StObject.set(x, "_checkDisposed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_decodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_decodeProperty", js.Any.fromFunction2(value))
+    inline def set_decodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_decodeProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_dispose(value: /* skipNative */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "_dispose", js.Any.fromFunction1(value))
+    inline def set_dispose(value: /* skipNative */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "_dispose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_encodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_encodeProperty", js.Any.fromFunction2(value))
+    inline def set_encodeProperty(value: (/* propertyName */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "_encodeProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_getDefaultPropertyValue(value: /* propertyName */ String => Unit): Self = StObject.set(x, "_getDefaultPropertyValue", js.Any.fromFunction1(value))
+    inline def set_getDefaultPropertyValue(value: /* propertyName */ String => Unit): Self = StObject.set(x, "_getDefaultPropertyValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_getStoredProperty(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getStoredProperty", js.Any.fromFunction1(value))
+    inline def set_getStoredProperty(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getStoredProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_getTypeDef(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getTypeDef", js.Any.fromFunction1(value))
+    inline def set_getTypeDef(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_getTypeDef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_getXMLAttributes(value: () => js.Array[js.Tuple2[String, js.Any]]): Self = StObject.set(x, "_getXMLAttributes", js.Any.fromFunction0(value))
+    inline def set_getXMLAttributes(value: () => js.Array[js.Tuple2[String, js.Any]]): Self = StObject.set(x, "_getXMLAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_getXMLContent(value: () => js.Array[String]): Self = StObject.set(x, "_getXMLContent", js.Any.fromFunction0(value))
+    inline def set_getXMLContent(value: () => js.Array[String]): Self = StObject.set(x, "_getXMLContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_getXMLElementName(value: () => String): Self = StObject.set(x, "_getXMLElementName", js.Any.fromFunction0(value))
+    inline def set_getXMLElementName(value: () => String): Self = StObject.set(x, "_getXMLElementName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_getXMLFooter(value: /* hasChild */ Boolean => String): Self = StObject.set(x, "_getXMLFooter", js.Any.fromFunction1(value))
+    inline def set_getXMLFooter(value: /* hasChild */ Boolean => String): Self = StObject.set(x, "_getXMLFooter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_getXMLHeader(value: /* hasChild */ Boolean => String): Self = StObject.set(x, "_getXMLHeader", js.Any.fromFunction1(value))
+    inline def set_getXMLHeader(value: /* hasChild */ Boolean => String): Self = StObject.set(x, "_getXMLHeader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_isDisposed(value: `true`): Self = StObject.set(x, "_isDisposed", value.asInstanceOf[js.Any])
+    inline def set_isDisposed(value: `true`): Self = StObject.set(x, "_isDisposed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_isDisposedUndefined: Self = StObject.set(x, "_isDisposed", js.undefined)
+    inline def set_isDisposedUndefined: Self = StObject.set(x, "_isDisposed", js.undefined)
     
-    @scala.inline
-    def set_isListening(value: /* eventType */ String => Boolean): Self = StObject.set(x, "_isListening", js.Any.fromFunction1(value))
+    inline def set_isListening(value: /* eventType */ String => Boolean): Self = StObject.set(x, "_isListening", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_listen(value: (/* eventName */ String, /* listening */ Boolean) => Unit): Self = StObject.set(x, "_listen", js.Any.fromFunction2(value))
+    inline def set_listen(value: (/* eventName */ String, /* listening */ Boolean) => Unit): Self = StObject.set(x, "_listen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_nativeCall(value: (/* methodName */ String, /* parameters */ js.Object) => js.Any): Self = StObject.set(x, "_nativeCall", js.Any.fromFunction2(value))
+    inline def set_nativeCall(value: (/* methodName */ String, /* parameters */ js.Object) => js.Any): Self = StObject.set(x, "_nativeCall", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_nativeCreate(value: /* param */ js.UndefOr[StringDictionary[js.Any]] => Unit): Self = StObject.set(x, "_nativeCreate", js.Any.fromFunction1(value))
+    inline def set_nativeCreate(value: /* param */ js.UndefOr[StringDictionary[js.Any]] => Unit): Self = StObject.set(x, "_nativeCreate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_nativeGet(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_nativeGet", js.Any.fromFunction1(value))
+    inline def set_nativeGet(value: /* propertyName */ String => js.Any): Self = StObject.set(x, "_nativeGet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_nativeListen(value: (/* eventType */ String, /* listen */ Boolean) => Unit): Self = StObject.set(x, "_nativeListen", js.Any.fromFunction2(value))
+    inline def set_nativeListen(value: (/* eventType */ String, /* listen */ Boolean) => Unit): Self = StObject.set(x, "_nativeListen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_nativeSet(value: (/* propertyName */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "_nativeSet", js.Any.fromFunction2(value))
+    inline def set_nativeSet(value: (/* propertyName */ String, /* value */ js.Any) => Unit): Self = StObject.set(x, "_nativeSet", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_nativeType(value: () => String): Self = StObject.set(x, "_nativeType", js.Any.fromFunction0(value))
+    inline def set_nativeType(value: () => String): Self = StObject.set(x, "_nativeType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_onoff(value: (/* eventType */ String, /* listening */ Boolean, /* listener */ js.Function) => Unit): Self = StObject.set(x, "_onoff", js.Any.fromFunction3(value))
+    inline def set_onoff(value: (/* eventType */ String, /* listening */ Boolean, /* listener */ js.Function) => Unit): Self = StObject.set(x, "_onoff", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def set_register(value: () => Unit): Self = StObject.set(x, "_register", js.Any.fromFunction0(value))
+    inline def set_register(value: () => Unit): Self = StObject.set(x, "_register", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_release(value: () => Unit): Self = StObject.set(x, "_release", js.Any.fromFunction0(value))
+    inline def set_release(value: () => Unit): Self = StObject.set(x, "_release", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_reorderProperties(value: /* propertyNames */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "_reorderProperties", js.Any.fromFunction1(value))
+    inline def set_reorderProperties(value: /* propertyNames */ js.Array[String] => js.Array[String]): Self = StObject.set(x, "_reorderProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_storeProperty(value: (/* propertyName */ String, /* encodedValue */ js.Any) => Unit): Self = StObject.set(x, "_storeProperty", js.Any.fromFunction2(value))
+    inline def set_storeProperty(value: (/* propertyName */ String, /* encodedValue */ js.Any) => Unit): Self = StObject.set(x, "_storeProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean): Self = StObject.set(x, "_trigger", js.Any.fromFunction2(value))
+    inline def set_trigger(value: (/* eventType */ String, /* eventData */ js.UndefOr[js.Object]) => Boolean): Self = StObject.set(x, "_trigger", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_triggerChangeEvent(value: (/* propertyName */ String, /* newEncodedValue */ js.Any) => Unit): Self = StObject.set(x, "_triggerChangeEvent", js.Any.fromFunction2(value))
+    inline def set_triggerChangeEvent(value: (/* propertyName */ String, /* newEncodedValue */ js.Any) => Unit): Self = StObject.set(x, "_triggerChangeEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_wasSet(value: /* propertyName */ String => Boolean): Self = StObject.set(x, "_wasSet", js.Any.fromFunction1(value))
+    inline def set_wasSet(value: /* propertyName */ String => Boolean): Self = StObject.set(x, "_wasSet", js.Any.fromFunction1(value))
   }
 }

@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(opts: Unit, callback: TaskCallback): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(opts: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(opts: IOptions, callback: TaskCallback): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(opts: Unit, callback: TaskCallback): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  inline def apply(opts: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(opts: IOptions, callback: TaskCallback): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-tsd", JSImport.Namespace)
   @js.native
@@ -33,38 +29,28 @@ object mod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+      inline def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
+      inline def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
       
-      @scala.inline
-      def setOpts(value: js.Object): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: js.Object): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
     }
   }
 }

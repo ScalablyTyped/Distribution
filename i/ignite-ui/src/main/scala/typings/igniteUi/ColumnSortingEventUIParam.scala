@@ -28,40 +28,29 @@ trait ColumnSortingEventUIParam extends StObject {
 }
 object ColumnSortingEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnSortingEventUIParam = {
+  inline def apply(): ColumnSortingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnSortingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnSortingEventUIParamMutableBuilder[Self <: ColumnSortingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnSortingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setNewExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
+    inline def setNewExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewExpressionsUndefined: Self = StObject.set(x, "newExpressions", js.undefined)
+    inline def setNewExpressionsUndefined: Self = StObject.set(x, "newExpressions", js.undefined)
     
-    @scala.inline
-    def setNewExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "newExpressions", js.Array(value :_*))
+    inline def setNewExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "newExpressions", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

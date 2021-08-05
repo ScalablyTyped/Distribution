@@ -23,31 +23,23 @@ trait SecurityGroupReference extends StObject {
 }
 object SecurityGroupReference {
   
-  @scala.inline
-  def apply(): SecurityGroupReference = {
+  inline def apply(): SecurityGroupReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityGroupReference]
   }
   
-  @scala.inline
-  implicit class SecurityGroupReferenceMutableBuilder[Self <: SecurityGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityGroupReference](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setReferencingVpcId(value: String): Self = StObject.set(x, "ReferencingVpcId", value.asInstanceOf[js.Any])
+    inline def setReferencingVpcId(value: String): Self = StObject.set(x, "ReferencingVpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencingVpcIdUndefined: Self = StObject.set(x, "ReferencingVpcId", js.undefined)
+    inline def setReferencingVpcIdUndefined: Self = StObject.set(x, "ReferencingVpcId", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
+    inline def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
   }
 }

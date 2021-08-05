@@ -16,8 +16,7 @@ trait KikGetFromCameraCallbacks extends StObject {
 }
 object KikGetFromCameraCallbacks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onCancel: () => Unit,
     onComplete: js.Array[String] => Unit,
     onPhoto: (String, Double) => Unit,
@@ -27,19 +26,14 @@ object KikGetFromCameraCallbacks {
     __obj.asInstanceOf[KikGetFromCameraCallbacks]
   }
   
-  @scala.inline
-  implicit class KikGetFromCameraCallbacksMutableBuilder[Self <: KikGetFromCameraCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: KikGetFromCameraCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+    inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnComplete(value: js.Array[String] => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: js.Array[String] => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPhoto(value: (String, Double) => Unit): Self = StObject.set(x, "onPhoto", js.Any.fromFunction2(value))
+    inline def setOnPhoto(value: (String, Double) => Unit): Self = StObject.set(x, "onPhoto", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSelect(value: Double => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: Double => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
   }
 }

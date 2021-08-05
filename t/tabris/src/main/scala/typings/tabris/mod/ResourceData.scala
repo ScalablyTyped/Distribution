@@ -13,25 +13,19 @@ trait ResourceData[Resources /* <: ResourceBaseData[js.Any] */, RawType] extends
 }
 object ResourceData {
   
-  @scala.inline
-  def apply[Resources /* <: ResourceBaseData[js.Any] */, RawType](): ResourceData[Resources, RawType] = {
+  inline def apply[Resources /* <: ResourceBaseData[js.Any] */, RawType](): ResourceData[Resources, RawType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceData[Resources, RawType]]
   }
   
-  @scala.inline
-  implicit class ResourceDataMutableBuilder[Self <: ResourceData[?, ?], Resources /* <: ResourceBaseData[js.Any] */, RawType] (val x: Self & (ResourceData[Resources, RawType])) extends AnyVal {
+  extension [Self <: ResourceData[?, ?], Resources /* <: ResourceBaseData[js.Any] */, RawType](x: Self & (ResourceData[Resources, RawType])) {
     
-    @scala.inline
-    def setBuild(value: Selectable[RawType]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Selectable[RawType]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    @scala.inline
-    def setConstructor(value: Selectable[RawType]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Selectable[RawType]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
   }
 }

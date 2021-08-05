@@ -14,25 +14,19 @@ trait PaginationParams
 }
 object PaginationParams {
   
-  @scala.inline
-  def apply(): PaginationParams = {
+  inline def apply(): PaginationParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaginationParams]
   }
   
-  @scala.inline
-  implicit class PaginationParamsMutableBuilder[Self <: PaginationParams] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationParams](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

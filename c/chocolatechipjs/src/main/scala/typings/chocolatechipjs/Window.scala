@@ -116,22 +116,17 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply($: ChocolateChipStatic, chocolatechipjs: ChocolateChipStatic, jsonp: js.Any): Window = {
+  inline def apply($: ChocolateChipStatic, chocolatechipjs: ChocolateChipStatic, jsonp: js.Any): Window = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], chocolatechipjs = chocolatechipjs.asInstanceOf[js.Any], jsonp = jsonp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def set$(value: ChocolateChipStatic): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+    inline def set$(value: ChocolateChipStatic): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChocolatechipjs(value: ChocolateChipStatic): Self = StObject.set(x, "chocolatechipjs", value.asInstanceOf[js.Any])
+    inline def setChocolatechipjs(value: ChocolateChipStatic): Self = StObject.set(x, "chocolatechipjs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonp(value: js.Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    inline def setJsonp(value: js.Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
   }
 }

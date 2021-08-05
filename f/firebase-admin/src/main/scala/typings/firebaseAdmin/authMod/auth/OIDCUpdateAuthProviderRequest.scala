@@ -39,37 +39,27 @@ trait OIDCUpdateAuthProviderRequest
 }
 object OIDCUpdateAuthProviderRequest {
   
-  @scala.inline
-  def apply(): OIDCUpdateAuthProviderRequest = {
+  inline def apply(): OIDCUpdateAuthProviderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OIDCUpdateAuthProviderRequest]
   }
   
-  @scala.inline
-  implicit class OIDCUpdateAuthProviderRequestMutableBuilder[Self <: OIDCUpdateAuthProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OIDCUpdateAuthProviderRequest](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
   }
 }

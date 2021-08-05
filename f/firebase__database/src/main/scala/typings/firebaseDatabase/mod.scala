@@ -86,8 +86,7 @@ object mod {
     @JSImport("@firebase/database", "Query.getCancelAndContextArgs_")
     @js.native
     def getCancelAndContextArgs_ : js.Any = js.native
-    @scala.inline
-    def getCancelAndContextArgs__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCancelAndContextArgs_")(x.asInstanceOf[js.Any])
+    inline def getCancelAndContextArgs__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCancelAndContextArgs_")(x.asInstanceOf[js.Any])
     
     /**
       * Validates that limit* has been called with the correct combination of parameters
@@ -97,8 +96,7 @@ object mod {
     @JSImport("@firebase/database", "Query.validateLimit_")
     @js.native
     def validateLimit_ : js.Any = js.native
-    @scala.inline
-    def validateLimit__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateLimit_")(x.asInstanceOf[js.Any])
+    inline def validateLimit__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateLimit_")(x.asInstanceOf[js.Any])
     
     /**
       * Validates start/end values for queries.
@@ -108,8 +106,7 @@ object mod {
     @JSImport("@firebase/database", "Query.validateQueryEndpoints_")
     @js.native
     def validateQueryEndpoints_ : js.Any = js.native
-    @scala.inline
-    def validateQueryEndpoints__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateQueryEndpoints_")(x.asInstanceOf[js.Any])
+    inline def validateQueryEndpoints__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateQueryEndpoints_")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@firebase/database", "Reference")
@@ -139,28 +136,19 @@ object mod {
     @JSImport("@firebase/database", "ServerValue.TIMESTAMP")
     @js.native
     def TIMESTAMP: Sv = js.native
-    @scala.inline
-    def TIMESTAMP_=(x: Sv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMESTAMP")(x.asInstanceOf[js.Any])
+    inline def TIMESTAMP_=(x: Sv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMESTAMP")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def increment(delta: Double): SvIncrement = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(delta.asInstanceOf[js.Any]).asInstanceOf[SvIncrement]
+    inline def increment(delta: Double): SvIncrement = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(delta.asInstanceOf[js.Any]).asInstanceOf[SvIncrement]
   }
   
-  @scala.inline
-  def enableLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[Unit]
-  @scala.inline
-  def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def enableLogging(logger_ : js.Function1[/* a */ String, Unit], persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def enableLogging(logger_ : Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def enableLogging(logger_ : Boolean, persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def enableLogging(logger_ : Unit, persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def enableLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[Unit]
+  inline def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableLogging(logger_ : js.Function1[/* a */ String, Unit], persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def enableLogging(logger_ : Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableLogging(logger_ : Boolean, persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def enableLogging(logger_ : Unit, persistent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger_.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerDatabase(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDatabase")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerDatabase(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDatabase")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* augmented module */
   object firebaseAppTypesAugmentingMod {
@@ -171,20 +159,16 @@ object mod {
     }
     object FirebaseApp {
       
-      @scala.inline
-      def apply(): FirebaseApp = {
+      inline def apply(): FirebaseApp = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FirebaseApp]
       }
       
-      @scala.inline
-      implicit class FirebaseAppMutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
+      extension [Self <: FirebaseApp](x: Self) {
         
-        @scala.inline
-        def setDatabase(value: /* databaseURL */ js.UndefOr[String] => FirebaseDatabase): Self = StObject.set(x, "database", js.Any.fromFunction1(value))
+        inline def setDatabase(value: /* databaseURL */ js.UndefOr[String] => FirebaseDatabase): Self = StObject.set(x, "database", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+        inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       }
     }
     
@@ -194,20 +178,16 @@ object mod {
     }
     object FirebaseNamespace {
       
-      @scala.inline
-      def apply(): typings.firebaseDatabase.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace = {
+      inline def apply(): typings.firebaseDatabase.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.firebaseDatabase.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace]
       }
       
-      @scala.inline
-      implicit class FirebaseNamespaceMutableBuilder[Self <: typings.firebaseDatabase.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace] (val x: Self) extends AnyVal {
+      extension [Self <: typings.firebaseDatabase.mod.firebaseAppTypesAugmentingMod.FirebaseNamespace](x: Self) {
         
-        @scala.inline
-        def setDatabase(value: Call): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+        inline def setDatabase(value: Call): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+        inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       }
     }
   }

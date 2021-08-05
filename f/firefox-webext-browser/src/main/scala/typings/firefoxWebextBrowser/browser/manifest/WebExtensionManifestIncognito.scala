@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebExtensionManifestIncognito extends StObject
 object WebExtensionManifestIncognito {
   
-  @scala.inline
-  def not_allowed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed = "not_allowed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed]
+  inline def not_allowed: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed = "not_allowed".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed]
   
-  @scala.inline
-  def spanning: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning = "spanning".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning]
+  inline def spanning: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning = "spanning".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning]
 }

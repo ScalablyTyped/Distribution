@@ -39,46 +39,33 @@ trait ScenePluginFileConfig extends StObject {
 }
 object ScenePluginFileConfig {
   
-  @scala.inline
-  def apply(key: String): ScenePluginFileConfig = {
+  inline def apply(key: String): ScenePluginFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScenePluginFileConfig]
   }
   
-  @scala.inline
-  implicit class ScenePluginFileConfigMutableBuilder[Self <: ScenePluginFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ScenePluginFileConfig](x: Self) {
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneKey(value: String): Self = StObject.set(x, "sceneKey", value.asInstanceOf[js.Any])
+    inline def setSceneKey(value: String): Self = StObject.set(x, "sceneKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneKeyUndefined: Self = StObject.set(x, "sceneKey", js.undefined)
+    inline def setSceneKeyUndefined: Self = StObject.set(x, "sceneKey", js.undefined)
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemKeyUndefined: Self = StObject.set(x, "systemKey", js.undefined)
+    inline def setSystemKeyUndefined: Self = StObject.set(x, "systemKey", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String | js.Function): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | js.Function): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
+    inline def setXhrSettingsUndefined: Self = StObject.set(x, "xhrSettings", js.undefined)
   }
 }

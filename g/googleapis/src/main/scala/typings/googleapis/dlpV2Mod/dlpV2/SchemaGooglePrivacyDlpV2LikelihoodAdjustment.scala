@@ -28,25 +28,19 @@ trait SchemaGooglePrivacyDlpV2LikelihoodAdjustment extends StObject {
 }
 object SchemaGooglePrivacyDlpV2LikelihoodAdjustment {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2LikelihoodAdjustment = {
+  inline def apply(): SchemaGooglePrivacyDlpV2LikelihoodAdjustment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2LikelihoodAdjustment]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2LikelihoodAdjustmentMutableBuilder[Self <: SchemaGooglePrivacyDlpV2LikelihoodAdjustment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2LikelihoodAdjustment](x: Self) {
     
-    @scala.inline
-    def setFixedLikelihood(value: String): Self = StObject.set(x, "fixedLikelihood", value.asInstanceOf[js.Any])
+    inline def setFixedLikelihood(value: String): Self = StObject.set(x, "fixedLikelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedLikelihoodUndefined: Self = StObject.set(x, "fixedLikelihood", js.undefined)
+    inline def setFixedLikelihoodUndefined: Self = StObject.set(x, "fixedLikelihood", js.undefined)
     
-    @scala.inline
-    def setRelativeLikelihood(value: Double): Self = StObject.set(x, "relativeLikelihood", value.asInstanceOf[js.Any])
+    inline def setRelativeLikelihood(value: Double): Self = StObject.set(x, "relativeLikelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeLikelihoodUndefined: Self = StObject.set(x, "relativeLikelihood", js.undefined)
+    inline def setRelativeLikelihoodUndefined: Self = StObject.set(x, "relativeLikelihood", js.undefined)
   }
 }

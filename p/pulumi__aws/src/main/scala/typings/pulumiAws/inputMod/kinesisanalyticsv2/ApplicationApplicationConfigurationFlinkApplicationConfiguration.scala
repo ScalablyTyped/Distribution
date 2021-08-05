@@ -36,43 +36,35 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfiguration extends S
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfiguration {
   
-  @scala.inline
-  def apply(): ApplicationApplicationConfigurationFlinkApplicationConfiguration = {
+  inline def apply(): ApplicationApplicationConfigurationFlinkApplicationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationApplicationConfigurationFlinkApplicationConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationFlinkApplicationConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationFlinkApplicationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationFlinkApplicationConfiguration](x: Self) {
     
-    @scala.inline
-    def setCheckpointConfiguration(
+    inline def setCheckpointConfiguration(
       value: Input[
           ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration
         ]
     ): Self = StObject.set(x, "checkpointConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckpointConfigurationUndefined: Self = StObject.set(x, "checkpointConfiguration", js.undefined)
+    inline def setCheckpointConfigurationUndefined: Self = StObject.set(x, "checkpointConfiguration", js.undefined)
     
-    @scala.inline
-    def setMonitoringConfiguration(
+    inline def setMonitoringConfiguration(
       value: Input[
           ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration
         ]
     ): Self = StObject.set(x, "monitoringConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringConfigurationUndefined: Self = StObject.set(x, "monitoringConfiguration", js.undefined)
+    inline def setMonitoringConfigurationUndefined: Self = StObject.set(x, "monitoringConfiguration", js.undefined)
     
-    @scala.inline
-    def setParallelismConfiguration(
+    inline def setParallelismConfiguration(
       value: Input[
           ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration
         ]
     ): Self = StObject.set(x, "parallelismConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelismConfigurationUndefined: Self = StObject.set(x, "parallelismConfiguration", js.undefined)
+    inline def setParallelismConfigurationUndefined: Self = StObject.set(x, "parallelismConfiguration", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait TypeDerived extends StObject {
 }
 object TypeDerived {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType): TypeDerived = {
+  inline def apply($parent: TypeDerived, $type: ElementType): TypeDerived = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeDerived]
   }
   
-  @scala.inline
-  implicit class TypeDerivedMutableBuilder[Self <: TypeDerived] (val x: Self) extends AnyVal {
+  extension [Self <: TypeDerived](x: Self) {
     
-    @scala.inline
-    def set$parent(value: TypeDerived): Self = StObject.set(x, "$parent", value.asInstanceOf[js.Any])
+    inline def set$parent(value: TypeDerived): Self = StObject.set(x, "$parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$type(value: ElementType): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+    inline def set$type(value: ElementType): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
   }
 }

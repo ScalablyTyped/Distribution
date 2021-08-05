@@ -10,16 +10,13 @@ trait RemoteTrackPublicationOptions extends StObject {
 }
 object RemoteTrackPublicationOptions {
   
-  @scala.inline
-  def apply(logLevel: LogLevel | LogLevels): RemoteTrackPublicationOptions = {
+  inline def apply(logLevel: LogLevel | LogLevels): RemoteTrackPublicationOptions = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteTrackPublicationOptions]
   }
   
-  @scala.inline
-  implicit class RemoteTrackPublicationOptionsMutableBuilder[Self <: RemoteTrackPublicationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteTrackPublicationOptions](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
   }
 }

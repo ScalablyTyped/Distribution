@@ -606,8 +606,7 @@ object amLegendMod {
   }
   object AmLegend {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: (String, js.Function1[/* e */ DataItem, Unit]) => Unit,
       align: String,
       autoMargins: Boolean,
@@ -659,149 +658,101 @@ object amLegendMod {
       __obj.asInstanceOf[AmLegend]
     }
     
-    @scala.inline
-    implicit class AmLegendMutableBuilder[Self <: AmLegend] (val x: Self) extends AnyVal {
+    extension [Self <: AmLegend](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: (String, js.Function1[/* e */ DataItem, Unit]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (String, js.Function1[/* e */ DataItem, Unit]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoMargins(value: Boolean): Self = StObject.set(x, "autoMargins", value.asInstanceOf[js.Any])
+      inline def setAutoMargins(value: Boolean): Self = StObject.set(x, "autoMargins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundAlpha(value: Double): Self = StObject.set(x, "backgroundAlpha", value.asInstanceOf[js.Any])
+      inline def setBackgroundAlpha(value: Double): Self = StObject.set(x, "backgroundAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderAlpha(value: Double): Self = StObject.set(x, "borderAlpha", value.asInstanceOf[js.Any])
+      inline def setBorderAlpha(value: Double): Self = StObject.set(x, "borderAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEqualWidths(value: Boolean): Self = StObject.set(x, "equalWidths", value.asInstanceOf[js.Any])
+      inline def setEqualWidths(value: Boolean): Self = StObject.set(x, "equalWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalGap(value: Double): Self = StObject.set(x, "horizontalGap", value.asInstanceOf[js.Any])
+      inline def setHorizontalGap(value: Double): Self = StObject.set(x, "horizontalGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
+      inline def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerBorderAlpha(value: Double): Self = StObject.set(x, "markerBorderAlpha", value.asInstanceOf[js.Any])
+      inline def setMarkerBorderAlpha(value: Double): Self = StObject.set(x, "markerBorderAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerBorderColor(value: String): Self = StObject.set(x, "markerBorderColor", value.asInstanceOf[js.Any])
+      inline def setMarkerBorderColor(value: String): Self = StObject.set(x, "markerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerBorderThickness(value: Double): Self = StObject.set(x, "markerBorderThickness", value.asInstanceOf[js.Any])
+      inline def setMarkerBorderThickness(value: Double): Self = StObject.set(x, "markerBorderThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerDisabledColor(value: String): Self = StObject.set(x, "markerDisabledColor", value.asInstanceOf[js.Any])
+      inline def setMarkerDisabledColor(value: String): Self = StObject.set(x, "markerDisabledColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerLabelGap(value: Double): Self = StObject.set(x, "markerLabelGap", value.asInstanceOf[js.Any])
+      inline def setMarkerLabelGap(value: Double): Self = StObject.set(x, "markerLabelGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
+      inline def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerType(value: String): Self = StObject.set(x, "markerType", value.asInstanceOf[js.Any])
+      inline def setMarkerType(value: String): Self = StObject.set(x, "markerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxColumns(value: Double): Self = StObject.set(x, "maxColumns", value.asInstanceOf[js.Any])
+      inline def setMaxColumns(value: Double): Self = StObject.set(x, "maxColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReversedOrder(value: Boolean): Self = StObject.set(x, "reversedOrder", value.asInstanceOf[js.Any])
+      inline def setReversedOrder(value: Boolean): Self = StObject.set(x, "reversedOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollOverColor(value: String): Self = StObject.set(x, "rollOverColor", value.asInstanceOf[js.Any])
+      inline def setRollOverColor(value: String): Self = StObject.set(x, "rollOverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollOverGraphAlpha(value: Double): Self = StObject.set(x, "rollOverGraphAlpha", value.asInstanceOf[js.Any])
+      inline def setRollOverGraphAlpha(value: Double): Self = StObject.set(x, "rollOverGraphAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowEntries(value: Boolean): Self = StObject.set(x, "showEntries", value.asInstanceOf[js.Any])
+      inline def setShowEntries(value: Boolean): Self = StObject.set(x, "showEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchColor(value: String): Self = StObject.set(x, "switchColor", value.asInstanceOf[js.Any])
+      inline def setSwitchColor(value: String): Self = StObject.set(x, "switchColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchType(value: String): Self = StObject.set(x, "switchType", value.asInstanceOf[js.Any])
+      inline def setSwitchType(value: String): Self = StObject.set(x, "switchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchable(value: Boolean): Self = StObject.set(x, "switchable", value.asInstanceOf[js.Any])
+      inline def setSwitchable(value: Boolean): Self = StObject.set(x, "switchable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextClickEnabled(value: Boolean): Self = StObject.set(x, "textClickEnabled", value.asInstanceOf[js.Any])
+      inline def setTextClickEnabled(value: Boolean): Self = StObject.set(x, "textClickEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseGraphSettings(value: Boolean): Self = StObject.set(x, "useGraphSettings", value.asInstanceOf[js.Any])
+      inline def setUseGraphSettings(value: Boolean): Self = StObject.set(x, "useGraphSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseMarkerColorForLabels(value: Boolean): Self = StObject.set(x, "useMarkerColorForLabels", value.asInstanceOf[js.Any])
+      inline def setUseMarkerColorForLabels(value: Boolean): Self = StObject.set(x, "useMarkerColorForLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueAlign(value: String): Self = StObject.set(x, "valueAlign", value.asInstanceOf[js.Any])
+      inline def setValueAlign(value: String): Self = StObject.set(x, "valueAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
+      inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueWidth(value: Double): Self = StObject.set(x, "valueWidth", value.asInstanceOf[js.Any])
+      inline def setValueWidth(value: Double): Self = StObject.set(x, "valueWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalGap(value: Double): Self = StObject.set(x, "verticalGap", value.asInstanceOf[js.Any])
+      inline def setVerticalGap(value: Double): Self = StObject.set(x, "verticalGap", value.asInstanceOf[js.Any])
     }
   }
 }

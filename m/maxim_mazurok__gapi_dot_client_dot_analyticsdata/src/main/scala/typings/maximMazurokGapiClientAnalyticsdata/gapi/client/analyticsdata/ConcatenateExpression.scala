@@ -18,28 +18,21 @@ trait ConcatenateExpression extends StObject {
 }
 object ConcatenateExpression {
   
-  @scala.inline
-  def apply(): ConcatenateExpression = {
+  inline def apply(): ConcatenateExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConcatenateExpression]
   }
   
-  @scala.inline
-  implicit class ConcatenateExpressionMutableBuilder[Self <: ConcatenateExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ConcatenateExpression](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
+    inline def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
+    inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
     
-    @scala.inline
-    def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
   }
 }

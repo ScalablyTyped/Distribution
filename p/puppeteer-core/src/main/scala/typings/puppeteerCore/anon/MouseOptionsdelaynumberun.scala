@@ -16,31 +16,23 @@ trait MouseOptionsdelaynumberun extends StObject {
 }
 object MouseOptionsdelaynumberun {
   
-  @scala.inline
-  def apply(): MouseOptionsdelaynumberun = {
+  inline def apply(): MouseOptionsdelaynumberun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MouseOptionsdelaynumberun]
   }
   
-  @scala.inline
-  implicit class MouseOptionsdelaynumberunMutableBuilder[Self <: MouseOptionsdelaynumberun] (val x: Self) extends AnyVal {
+  extension [Self <: MouseOptionsdelaynumberun](x: Self) {
     
-    @scala.inline
-    def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+    inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+    inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
   }
 }

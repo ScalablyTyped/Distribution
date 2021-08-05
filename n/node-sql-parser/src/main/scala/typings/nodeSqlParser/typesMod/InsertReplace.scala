@@ -22,41 +22,30 @@ trait InsertReplace
 }
 object InsertReplace {
   
-  @scala.inline
-  def apply(table: js.Any, `type`: replace | insert, values: js.Array[InsertReplaceValue]): InsertReplace = {
+  inline def apply(table: js.Any, `type`: replace | insert, values: js.Array[InsertReplaceValue]): InsertReplace = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], columns = null, db = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertReplace]
   }
   
-  @scala.inline
-  implicit class InsertReplaceMutableBuilder[Self <: InsertReplace] (val x: Self) extends AnyVal {
+  extension [Self <: InsertReplace](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsNull: Self = StObject.set(x, "columns", null)
+    inline def setColumnsNull: Self = StObject.set(x, "columns", null)
     
-    @scala.inline
-    def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbNull: Self = StObject.set(x, "db", null)
+    inline def setDbNull: Self = StObject.set(x, "db", null)
     
-    @scala.inline
-    def setTable(value: js.Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: js.Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: replace | insert): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: replace | insert): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[InsertReplaceValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[InsertReplaceValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: InsertReplaceValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: InsertReplaceValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

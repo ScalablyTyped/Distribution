@@ -45,7 +45,6 @@ object services {
     @JSImport("zetapush-js", "services.Macro.DEFAULT_DEPLOYMENT_ID")
     @js.native
     def DEFAULT_DEPLOYMENT_ID: String = js.native
-    @scala.inline
-    def DEFAULT_DEPLOYMENT_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_DEPLOYMENT_ID")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_DEPLOYMENT_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_DEPLOYMENT_ID")(x.asInstanceOf[js.Any])
   }
 }

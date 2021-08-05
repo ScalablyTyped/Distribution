@@ -13,19 +13,15 @@ trait CompressImageSuccessData extends StObject {
 }
 object CompressImageSuccessData {
   
-  @scala.inline
-  def apply(): CompressImageSuccessData = {
+  inline def apply(): CompressImageSuccessData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompressImageSuccessData]
   }
   
-  @scala.inline
-  implicit class CompressImageSuccessDataMutableBuilder[Self <: CompressImageSuccessData] (val x: Self) extends AnyVal {
+  extension [Self <: CompressImageSuccessData](x: Self) {
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
+    inline def setTempFilePathUndefined: Self = StObject.set(x, "tempFilePath", js.undefined)
   }
 }

@@ -24,26 +24,20 @@ object typesWriteEventStreamMod {
   }
   object WriteEventStream {
     
-    @scala.inline
-    def apply(): WriteEventStream = {
+    inline def apply(): WriteEventStream = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteEventStream]
     }
     
-    @scala.inline
-    implicit class WriteEventStreamMutableBuilder[Self <: WriteEventStream] (val x: Self) extends AnyVal {
+    extension [Self <: WriteEventStream](x: Self) {
       
-      @scala.inline
-      def setDestinationStreamArn(value: String): Self = StObject.set(x, "DestinationStreamArn", value.asInstanceOf[js.Any])
+      inline def setDestinationStreamArn(value: String): Self = StObject.set(x, "DestinationStreamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationStreamArnUndefined: Self = StObject.set(x, "DestinationStreamArn", js.undefined)
+      inline def setDestinationStreamArnUndefined: Self = StObject.set(x, "DestinationStreamArn", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     }
   }
 }

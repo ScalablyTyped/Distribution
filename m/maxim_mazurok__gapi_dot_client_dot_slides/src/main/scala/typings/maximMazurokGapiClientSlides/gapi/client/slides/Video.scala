@@ -20,37 +20,27 @@ trait Video extends StObject {
 }
 object Video {
   
-  @scala.inline
-  def apply(): Video = {
+  inline def apply(): Video = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Video]
   }
   
-  @scala.inline
-  implicit class VideoMutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
+  extension [Self <: Video](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
+    inline def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
+    inline def setVideoPropertiesUndefined: Self = StObject.set(x, "videoProperties", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait ASPxClientMenuCollection
 }
 object ASPxClientMenuCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginCallback: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientControlCollection]],
     BrowserWindowResized: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlCollection]],
     CallbackError: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[ASPxClientControlCollection]],
@@ -43,13 +42,10 @@ object ASPxClientMenuCollection {
     __obj.asInstanceOf[ASPxClientMenuCollection]
   }
   
-  @scala.inline
-  implicit class ASPxClientMenuCollectionMutableBuilder[Self <: ASPxClientMenuCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientMenuCollection](x: Self) {
     
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = StObject.set(x, "HideAll", js.Any.fromFunction0(value))
+    inline def setHideAll(value: () => Unit): Self = StObject.set(x, "HideAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRecalculateAll(value: () => Unit): Self = StObject.set(x, "RecalculateAll", js.Any.fromFunction0(value))
+    inline def setRecalculateAll(value: () => Unit): Self = StObject.set(x, "RecalculateAll", js.Any.fromFunction0(value))
   }
 }

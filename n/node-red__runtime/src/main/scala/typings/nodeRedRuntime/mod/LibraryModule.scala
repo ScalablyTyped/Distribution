@@ -32,19 +32,15 @@ trait LibraryModule extends StObject {
 }
 object LibraryModule {
   
-  @scala.inline
-  def apply(getEntry: Library => js.Promise[String | js.Object], saveEntry: Body => js.Promise[Unit]): LibraryModule = {
+  inline def apply(getEntry: Library => js.Promise[String | js.Object], saveEntry: Body => js.Promise[Unit]): LibraryModule = {
     val __obj = js.Dynamic.literal(getEntry = js.Any.fromFunction1(getEntry), saveEntry = js.Any.fromFunction1(saveEntry))
     __obj.asInstanceOf[LibraryModule]
   }
   
-  @scala.inline
-  implicit class LibraryModuleMutableBuilder[Self <: LibraryModule] (val x: Self) extends AnyVal {
+  extension [Self <: LibraryModule](x: Self) {
     
-    @scala.inline
-    def setGetEntry(value: Library => js.Promise[String | js.Object]): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
+    inline def setGetEntry(value: Library => js.Promise[String | js.Object]): Self = StObject.set(x, "getEntry", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveEntry(value: Body => js.Promise[Unit]): Self = StObject.set(x, "saveEntry", js.Any.fromFunction1(value))
+    inline def setSaveEntry(value: Body => js.Promise[Unit]): Self = StObject.set(x, "saveEntry", js.Any.fromFunction1(value))
   }
 }

@@ -12,19 +12,15 @@ trait Asc extends StObject {
 }
 object Asc {
   
-  @scala.inline
-  def apply(asc: scala.Double, desc: scala.Double): Asc = {
+  inline def apply(asc: scala.Double, desc: scala.Double): Asc = {
     val __obj = js.Dynamic.literal(asc = asc.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Asc]
   }
   
-  @scala.inline
-  implicit class AscMutableBuilder[Self <: Asc] (val x: Self) extends AnyVal {
+  extension [Self <: Asc](x: Self) {
     
-    @scala.inline
-    def setAsc(value: scala.Double): Self = StObject.set(x, "asc", value.asInstanceOf[js.Any])
+    inline def setAsc(value: scala.Double): Self = StObject.set(x, "asc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: scala.Double): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: scala.Double): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }
 }

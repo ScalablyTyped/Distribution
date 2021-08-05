@@ -38,28 +38,21 @@ trait ReplicaSet extends StObject {
 }
 object ReplicaSet {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: ReplicaSetSpec, status: ReplicaSetStatus): ReplicaSet = {
+  inline def apply(metadata: ObjectMeta, spec: ReplicaSetSpec, status: ReplicaSetStatus): ReplicaSet = {
     val __obj = js.Dynamic.literal(apiVersion = "apps/v1", kind = "ReplicaSet", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaSet]
   }
   
-  @scala.inline
-  implicit class ReplicaSetMutableBuilder[Self <: ReplicaSet] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicaSet](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: appsSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: appsSlashv1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicaSet): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicaSet): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: ReplicaSetSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: ReplicaSetSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ReplicaSetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReplicaSetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

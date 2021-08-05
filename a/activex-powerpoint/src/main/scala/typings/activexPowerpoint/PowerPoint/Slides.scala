@@ -34,7 +34,7 @@ trait Slides extends StObject {
   def Paste(): SlideRange = js.native
   def Paste(Index: Double): SlideRange = js.native
   
-  @JSName("PowerPoint.Slides_typekey")
+  /* private */ @JSName("PowerPoint.Slides_typekey")
   var PowerPointDotSlides_typekey: Slides = js.native
   
   def Range(): SlideRange = js.native

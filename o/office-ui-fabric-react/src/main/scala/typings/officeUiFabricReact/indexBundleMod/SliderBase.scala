@@ -21,6 +21,5 @@ object SliderBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "SliderBase.defaultProps")
   @js.native
   def defaultProps: ISliderProps = js.native
-  @scala.inline
-  def defaultProps_=(x: ISliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: ISliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

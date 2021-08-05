@@ -26,8 +26,7 @@ trait QueryResultType[T] extends StObject {
 }
 object QueryResultType {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     command: DELETE | INSERT | SELECT | UPDATE,
     fields: js.Array[FieldType],
     notices: js.Array[NoticeType],
@@ -39,40 +38,28 @@ object QueryResultType {
     __obj.asInstanceOf[QueryResultType[T]]
   }
   
-  @scala.inline
-  implicit class QueryResultTypeMutableBuilder[Self <: QueryResultType[?], T] (val x: Self & QueryResultType[T]) extends AnyVal {
+  extension [Self <: QueryResultType[?], T](x: Self & QueryResultType[T]) {
     
-    @scala.inline
-    def setCommand(value: DELETE | INSERT | SELECT | UPDATE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: DELETE | INSERT | SELECT | UPDATE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[FieldType]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldType]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldType*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldType*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setNotices(value: js.Array[NoticeType]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
+    inline def setNotices(value: js.Array[NoticeType]): Self = StObject.set(x, "notices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoticesVarargs(value: NoticeType*): Self = StObject.set(x, "notices", js.Array(value :_*))
+    inline def setNoticesVarargs(value: NoticeType*): Self = StObject.set(x, "notices", js.Array(value :_*))
     
-    @scala.inline
-    def setOid(value: Double): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+    inline def setOid(value: Double): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidNull: Self = StObject.set(x, "oid", null)
+    inline def setOidNull: Self = StObject.set(x, "oid", null)
     
-    @scala.inline
-    def setRowAsArray(value: Boolean): Self = StObject.set(x, "rowAsArray", value.asInstanceOf[js.Any])
+    inline def setRowAsArray(value: Boolean): Self = StObject.set(x, "rowAsArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

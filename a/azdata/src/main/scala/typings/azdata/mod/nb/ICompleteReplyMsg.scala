@@ -13,17 +13,14 @@ trait ICompleteReplyMsg
 }
 object ICompleteReplyMsg {
   
-  @scala.inline
-  def apply(content: ICompletionContent, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): ICompleteReplyMsg = {
+  inline def apply(content: ICompletionContent, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): ICompleteReplyMsg = {
     val __obj = js.Dynamic.literal(channel = "shell", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompleteReplyMsg]
   }
   
-  @scala.inline
-  implicit class ICompleteReplyMsgMutableBuilder[Self <: ICompleteReplyMsg] (val x: Self) extends AnyVal {
+  extension [Self <: ICompleteReplyMsg](x: Self) {
     
-    @scala.inline
-    def setContent(value: ICompletionContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ICompletionContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait IssueCollection extends StObject {
 }
 object IssueCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     append: (String, js.Array[Issue]) => Unit,
     clear: () => Unit,
     dispose: () => Unit,
@@ -40,31 +39,22 @@ object IssueCollection {
     __obj.asInstanceOf[IssueCollection]
   }
   
-  @scala.inline
-  implicit class IssueCollectionMutableBuilder[Self <: IssueCollection] (val x: Self) extends AnyVal {
+  extension [Self <: IssueCollection](x: Self) {
     
-    @scala.inline
-    def setAppend(value: (String, js.Array[Issue]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+    inline def setAppend(value: (String, js.Array[Issue]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: String => js.Array[Issue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.Array[Issue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet(value: (String, js.Array[Issue]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, js.Array[Issue]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

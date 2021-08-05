@@ -33,37 +33,27 @@ trait ExclusionPreview extends StObject {
 }
 object ExclusionPreview {
   
-  @scala.inline
-  def apply(description: Text, recommendation: Text, scopes: ScopeList, title: Text): ExclusionPreview = {
+  inline def apply(description: Text, recommendation: Text, scopes: ScopeList, title: Text): ExclusionPreview = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], recommendation = recommendation.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExclusionPreview]
   }
   
-  @scala.inline
-  implicit class ExclusionPreviewMutableBuilder[Self <: ExclusionPreview] (val x: Self) extends AnyVal {
+  extension [Self <: ExclusionPreview](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Text): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendation(value: Text): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
+    inline def setRecommendation(value: Text): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: ScopeList): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: ScopeList): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: Scope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

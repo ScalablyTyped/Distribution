@@ -15,8 +15,7 @@ trait EntryExitStates[TContext] extends StObject {
 }
 object EntryExitStates {
   
-  @scala.inline
-  def apply[TContext](
+  inline def apply[TContext](
     entry: Set[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]],
     exit: Set[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]
   ): EntryExitStates[TContext] = {
@@ -24,13 +23,10 @@ object EntryExitStates {
     __obj.asInstanceOf[EntryExitStates[TContext]]
   }
   
-  @scala.inline
-  implicit class EntryExitStatesMutableBuilder[Self <: EntryExitStates[?], TContext] (val x: Self & EntryExitStates[TContext]) extends AnyVal {
+  extension [Self <: EntryExitStates[?], TContext](x: Self & EntryExitStates[TContext]) {
     
-    @scala.inline
-    def setEntry(value: Set[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: Set[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit(value: Set[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: Set[StateNode[TContext, js.Any, EventObject, ContextTContext[TContext]]]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
   }
 }

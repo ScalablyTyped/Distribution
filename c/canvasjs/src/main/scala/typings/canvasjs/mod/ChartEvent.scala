@@ -43,8 +43,7 @@ trait ChartEvent extends StObject {
 }
 object ChartEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: Chart,
     dataPoint: ChartDataPoint,
     dataPointIndex: Double,
@@ -57,28 +56,20 @@ object ChartEvent {
     __obj.asInstanceOf[ChartEvent]
   }
   
-  @scala.inline
-  implicit class ChartEventMutableBuilder[Self <: ChartEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChartEvent](x: Self) {
     
-    @scala.inline
-    def setChart(value: Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: Chart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPoint(value: ChartDataPoint): Self = StObject.set(x, "dataPoint", value.asInstanceOf[js.Any])
+    inline def setDataPoint(value: ChartDataPoint): Self = StObject.set(x, "dataPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPointIndex(value: Double): Self = StObject.set(x, "dataPointIndex", value.asInstanceOf[js.Any])
+    inline def setDataPointIndex(value: Double): Self = StObject.set(x, "dataPointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSeries(value: ChartDataSeriesOptions): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
+    inline def setDataSeries(value: ChartDataSeriesOptions): Self = StObject.set(x, "dataSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSeriesIndex(value: Double): Self = StObject.set(x, "dataSeriesIndex", value.asInstanceOf[js.Any])
+    inline def setDataSeriesIndex(value: Double): Self = StObject.set(x, "dataSeriesIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait UriHandler extends StObject {
 }
 object UriHandler {
   
-  @scala.inline
-  def apply(handleUri: Uri => ProviderResult[Unit]): UriHandler = {
+  inline def apply(handleUri: Uri => ProviderResult[Unit]): UriHandler = {
     val __obj = js.Dynamic.literal(handleUri = js.Any.fromFunction1(handleUri))
     __obj.asInstanceOf[UriHandler]
   }
   
-  @scala.inline
-  implicit class UriHandlerMutableBuilder[Self <: UriHandler] (val x: Self) extends AnyVal {
+  extension [Self <: UriHandler](x: Self) {
     
-    @scala.inline
-    def setHandleUri(value: Uri => ProviderResult[Unit]): Self = StObject.set(x, "handleUri", js.Any.fromFunction1(value))
+    inline def setHandleUri(value: Uri => ProviderResult[Unit]): Self = StObject.set(x, "handleUri", js.Any.fromFunction1(value))
   }
 }

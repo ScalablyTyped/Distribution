@@ -67,7 +67,7 @@ object bagMod {
       */
     def count(element: T): Double = js.native
     
-    var dictionary: js.Any = js.native
+    /* private */ var dictionary: js.Any = js.native
     
     /**
       * Executes the provided function once for each element
@@ -84,7 +84,7 @@ object bagMod {
       */
     def isEmpty(): Boolean = js.native
     
-    var nElements: js.Any = js.native
+    /* private */ var nElements: js.Any = js.native
     
     /**
       * Removes nCopies of the specified object to this bag.
@@ -117,6 +117,6 @@ object bagMod {
       */
     def toSet(): typings.typescriptCollections.setMod.default[T] = js.native
     
-    var toStrF: js.Any = js.native
+    /* private */ var toStrF: js.Any = js.native
   }
 }

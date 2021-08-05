@@ -11,19 +11,15 @@ trait PartialFormGroupProps extends StObject {
 }
 object PartialFormGroupProps {
   
-  @scala.inline
-  def apply(): PartialFormGroupProps = {
+  inline def apply(): PartialFormGroupProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFormGroupProps]
   }
   
-  @scala.inline
-  implicit class PartialFormGroupPropsMutableBuilder[Self <: PartialFormGroupProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFormGroupProps](x: Self) {
     
-    @scala.inline
-    def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+    inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+    inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
   }
 }

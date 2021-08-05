@@ -11,16 +11,13 @@ trait CloseViewPayload extends StObject {
 }
 object CloseViewPayload {
   
-  @scala.inline
-  def apply(view: Identity): CloseViewPayload = {
+  inline def apply(view: Identity): CloseViewPayload = {
     val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseViewPayload]
   }
   
-  @scala.inline
-  implicit class CloseViewPayloadMutableBuilder[Self <: CloseViewPayload] (val x: Self) extends AnyVal {
+  extension [Self <: CloseViewPayload](x: Self) {
     
-    @scala.inline
-    def setView(value: Identity): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: Identity): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

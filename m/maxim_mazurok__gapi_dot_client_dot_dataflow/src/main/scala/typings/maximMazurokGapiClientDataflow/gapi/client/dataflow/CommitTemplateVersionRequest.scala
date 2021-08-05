@@ -11,19 +11,15 @@ trait CommitTemplateVersionRequest extends StObject {
 }
 object CommitTemplateVersionRequest {
   
-  @scala.inline
-  def apply(): CommitTemplateVersionRequest = {
+  inline def apply(): CommitTemplateVersionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitTemplateVersionRequest]
   }
   
-  @scala.inline
-  implicit class CommitTemplateVersionRequestMutableBuilder[Self <: CommitTemplateVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CommitTemplateVersionRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateVersion(value: TemplateVersion): Self = StObject.set(x, "templateVersion", value.asInstanceOf[js.Any])
+    inline def setTemplateVersion(value: TemplateVersion): Self = StObject.set(x, "templateVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateVersionUndefined: Self = StObject.set(x, "templateVersion", js.undefined)
+    inline def setTemplateVersionUndefined: Self = StObject.set(x, "templateVersion", js.undefined)
   }
 }

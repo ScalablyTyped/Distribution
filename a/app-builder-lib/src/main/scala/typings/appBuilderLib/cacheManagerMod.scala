@@ -27,9 +27,9 @@ object cacheManagerMod {
     
     def copyIfValid(digest: String): js.Promise[Boolean] = js.native
     
-    val executableFile: js.Any = js.native
+    /* private */ val executableFile: js.Any = js.native
     
-    var newDigest: js.Any = js.native
+    /* private */ var newDigest: js.Any = js.native
     
     def save(): js.Promise[Unit] = js.native
   }
@@ -43,12 +43,10 @@ object cacheManagerMod {
     @JSImport("app-builder-lib/out/util/cacheManager", "BuildCacheManager.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def digest(hash: Hash, files: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(hash.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def digest(hash: Hash, files: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(hash.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait BuildCacheInfo extends StObject {
     
@@ -56,17 +54,14 @@ object cacheManagerMod {
   }
   object BuildCacheInfo {
     
-    @scala.inline
-    def apply(executableDigest: String): BuildCacheInfo = {
+    inline def apply(executableDigest: String): BuildCacheInfo = {
       val __obj = js.Dynamic.literal(executableDigest = executableDigest.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildCacheInfo]
     }
     
-    @scala.inline
-    implicit class BuildCacheInfoMutableBuilder[Self <: BuildCacheInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BuildCacheInfo](x: Self) {
       
-      @scala.inline
-      def setExecutableDigest(value: String): Self = StObject.set(x, "executableDigest", value.asInstanceOf[js.Any])
+      inline def setExecutableDigest(value: String): Self = StObject.set(x, "executableDigest", value.asInstanceOf[js.Any])
     }
   }
 }

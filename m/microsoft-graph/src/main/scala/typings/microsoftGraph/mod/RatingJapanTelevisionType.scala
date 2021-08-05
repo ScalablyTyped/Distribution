@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RatingJapanTelevisionType extends StObject
 object RatingJapanTelevisionType {
   
-  @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
+  inline def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   
-  @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
+  inline def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   
-  @scala.inline
-  def explicitAllowed: typings.microsoftGraph.microsoftGraphStrings.explicitAllowed = "explicitAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.explicitAllowed]
+  inline def explicitAllowed: typings.microsoftGraph.microsoftGraphStrings.explicitAllowed = "explicitAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.explicitAllowed]
 }

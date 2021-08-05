@@ -42,8 +42,7 @@ trait HighlightsRepositoryEditReelResponseReel extends StObject {
 }
 object HighlightsRepositoryEditReelResponseReel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     can_reply: Boolean,
     can_reshare: Boolean,
     contains_stitched_media_blocked_by_rm: Boolean,
@@ -66,61 +65,42 @@ object HighlightsRepositoryEditReelResponseReel {
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseReel]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseReelMutableBuilder[Self <: HighlightsRepositoryEditReelResponseReel] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseReel](x: Self) {
     
-    @scala.inline
-    def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
+    inline def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
+    inline def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains_stitched_media_blocked_by_rm(value: Boolean): Self = StObject.set(x, "contains_stitched_media_blocked_by_rm", value.asInstanceOf[js.Any])
+    inline def setContains_stitched_media_blocked_by_rm(value: Boolean): Self = StObject.set(x, "contains_stitched_media_blocked_by_rm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCover_media(value: HighlightsRepositoryEditReelResponseCoverMedia): Self = StObject.set(x, "cover_media", value.asInstanceOf[js.Any])
+    inline def setCover_media(value: HighlightsRepositoryEditReelResponseCoverMedia): Self = StObject.set(x, "cover_media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_pride_media(value: Boolean): Self = StObject.set(x, "has_pride_media", value.asInstanceOf[js.Any])
+    inline def setHas_pride_media(value: Boolean): Self = StObject.set(x, "has_pride_media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[HighlightsRepositoryEditReelResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[HighlightsRepositoryEditReelResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: HighlightsRepositoryEditReelResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: HighlightsRepositoryEditReelResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
+    inline def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
+    inline def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefetch_count(value: Double): Self = StObject.set(x, "prefetch_count", value.asInstanceOf[js.Any])
+    inline def setPrefetch_count(value: Double): Self = StObject.set(x, "prefetch_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanked_position(value: Double): Self = StObject.set(x, "ranked_position", value.asInstanceOf[js.Any])
+    inline def setRanked_position(value: Double): Self = StObject.set(x, "ranked_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
+    inline def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeen(value: Null): Self = StObject.set(x, "seen", value.asInstanceOf[js.Any])
+    inline def setSeen(value: Null): Self = StObject.set(x, "seen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeen_ranked_position(value: Double): Self = StObject.set(x, "seen_ranked_position", value.asInstanceOf[js.Any])
+    inline def setSeen_ranked_position(value: Double): Self = StObject.set(x, "seen_ranked_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: HighlightsRepositoryEditReelResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: HighlightsRepositoryEditReelResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

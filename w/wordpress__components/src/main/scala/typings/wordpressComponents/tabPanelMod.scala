@@ -70,53 +70,38 @@ object tabPanelMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(children: Tab => Element, tabs: js.Array[Tab]): Props = {
+      inline def apply(children: Tab => Element, tabs: js.Array[Tab]): Props = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), tabs = tabs.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+        inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+        inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
         
-        @scala.inline
-        def setChildren(value: Tab => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+        inline def setChildren(value: Tab => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setInitialTabName(value: String): Self = StObject.set(x, "initialTabName", value.asInstanceOf[js.Any])
+        inline def setInitialTabName(value: String): Self = StObject.set(x, "initialTabName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialTabNameUndefined: Self = StObject.set(x, "initialTabName", js.undefined)
+        inline def setInitialTabNameUndefined: Self = StObject.set(x, "initialTabName", js.undefined)
         
-        @scala.inline
-        def setOnSelect(value: /* tabName */ String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+        inline def setOnSelect(value: /* tabName */ String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+        inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
         
-        @scala.inline
-        def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+        inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+        inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
         
-        @scala.inline
-        def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+        inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+        inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
       }
     }
     
@@ -145,26 +130,20 @@ object tabPanelMod {
     }
     object Tab {
       
-      @scala.inline
-      def apply(name: String, title: String): Tab = {
+      inline def apply(name: String, title: String): Tab = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[Tab]
       }
       
-      @scala.inline
-      implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+      extension [Self <: Tab](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
   }

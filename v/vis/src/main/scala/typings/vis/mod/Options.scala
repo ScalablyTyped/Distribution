@@ -39,97 +39,67 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+    inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+    inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     
-    @scala.inline
-    def setClickToUse(value: Boolean): Self = StObject.set(x, "clickToUse", value.asInstanceOf[js.Any])
+    inline def setClickToUse(value: Boolean): Self = StObject.set(x, "clickToUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickToUseUndefined: Self = StObject.set(x, "clickToUse", js.undefined)
+    inline def setClickToUseUndefined: Self = StObject.set(x, "clickToUse", js.undefined)
     
-    @scala.inline
-    def setConfigure(value: NetworkConfigure): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
+    inline def setConfigure(value: NetworkConfigure): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
+    inline def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
     
-    @scala.inline
-    def setEdges(value: EdgeOptions): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: EdgeOptions): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
-    @scala.inline
-    def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setInteraction(value: js.Any): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: js.Any): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
+    inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
-    @scala.inline
-    def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setLocales(value: Locales): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    inline def setLocales(value: Locales): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
-    @scala.inline
-    def setManipulation(value: js.Any): Self = StObject.set(x, "manipulation", value.asInstanceOf[js.Any])
+    inline def setManipulation(value: js.Any): Self = StObject.set(x, "manipulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManipulationUndefined: Self = StObject.set(x, "manipulation", js.undefined)
+    inline def setManipulationUndefined: Self = StObject.set(x, "manipulation", js.undefined)
     
-    @scala.inline
-    def setNodes(value: NodeOptions): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: NodeOptions): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setPhysics(value: js.Any): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+    inline def setPhysics(value: js.Any): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
+    inline def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

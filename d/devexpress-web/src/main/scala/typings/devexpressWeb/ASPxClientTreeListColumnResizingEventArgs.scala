@@ -18,16 +18,13 @@ trait ASPxClientTreeListColumnResizingEventArgs
 }
 object ASPxClientTreeListColumnResizingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, column: ASPxClientTreeListColumn): ASPxClientTreeListColumnResizingEventArgs = {
+  inline def apply(cancel: Boolean, column: ASPxClientTreeListColumn): ASPxClientTreeListColumnResizingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListColumnResizingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListColumnResizingEventArgsMutableBuilder[Self <: ASPxClientTreeListColumnResizingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListColumnResizingEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

@@ -35,37 +35,27 @@ trait SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse extends 
 }
 object SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse = {
+  inline def apply(): SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponseMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudHealthcareV1alphaFhirRestImportResourcesResponse](x: Self) {
     
-    @scala.inline
-    def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: String): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
-    @scala.inline
-    def setInputSize(value: String): Self = StObject.set(x, "inputSize", value.asInstanceOf[js.Any])
+    inline def setInputSize(value: String): Self = StObject.set(x, "inputSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSizeUndefined: Self = StObject.set(x, "inputSize", js.undefined)
+    inline def setInputSizeUndefined: Self = StObject.set(x, "inputSize", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSuccessCount(value: String): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: String): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
+    inline def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
   }
 }

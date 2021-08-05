@@ -22,8 +22,7 @@ trait Font
 }
 object Font {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     isBold: Boolean,
@@ -37,25 +36,18 @@ object Font {
     __obj.asInstanceOf[Font]
   }
   
-  @scala.inline
-  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+  extension [Self <: Font](x: Self) {
     
-    @scala.inline
-    def setIsBold(value: Boolean): Self = StObject.set(x, "isBold", value.asInstanceOf[js.Any])
+    inline def setIsBold(value: Boolean): Self = StObject.set(x, "isBold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsItalic(value: Boolean): Self = StObject.set(x, "isItalic", value.asInstanceOf[js.Any])
+    inline def setIsItalic(value: Boolean): Self = StObject.set(x, "isItalic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStrikeThrough(value: Boolean): Self = StObject.set(x, "isStrikeThrough", value.asInstanceOf[js.Any])
+    inline def setIsStrikeThrough(value: Boolean): Self = StObject.set(x, "isStrikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnderline(value: Boolean): Self = StObject.set(x, "isUnderline", value.asInstanceOf[js.Any])
+    inline def setIsUnderline(value: Boolean): Self = StObject.set(x, "isUnderline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

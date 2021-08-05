@@ -10,16 +10,13 @@ trait ScaleYTransform extends StObject {
 }
 object ScaleYTransform {
   
-  @scala.inline
-  def apply(scaleY: Double): ScaleYTransform = {
+  inline def apply(scaleY: Double): ScaleYTransform = {
     val __obj = js.Dynamic.literal(scaleY = scaleY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleYTransform]
   }
   
-  @scala.inline
-  implicit class ScaleYTransformMutableBuilder[Self <: ScaleYTransform] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleYTransform](x: Self) {
     
-    @scala.inline
-    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
   }
 }

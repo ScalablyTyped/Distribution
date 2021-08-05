@@ -24,17 +24,14 @@ object mod {
   }
   object HTMLtoJSX {
     
-    @scala.inline
-    def apply(convert: String => String): HTMLtoJSX = {
+    inline def apply(convert: String => String): HTMLtoJSX = {
       val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert))
       __obj.asInstanceOf[HTMLtoJSX]
     }
     
-    @scala.inline
-    implicit class HTMLtoJSXMutableBuilder[Self <: HTMLtoJSX] (val x: Self) extends AnyVal {
+    extension [Self <: HTMLtoJSX](x: Self) {
       
-      @scala.inline
-      def setConvert(value: String => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
+      inline def setConvert(value: String => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     }
   }
 }

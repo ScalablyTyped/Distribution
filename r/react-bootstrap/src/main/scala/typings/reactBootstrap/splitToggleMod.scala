@@ -22,8 +22,7 @@ object splitToggleMod {
        with DropdownToggleProps
   object SplitToggleProps {
     
-    @scala.inline
-    def apply(): SplitToggleProps = {
+    inline def apply(): SplitToggleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SplitToggleProps]
     }

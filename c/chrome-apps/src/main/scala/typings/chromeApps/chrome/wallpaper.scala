@@ -62,38 +62,28 @@ object wallpaper {
   }
   object WallpaperDetails {
     
-    @scala.inline
-    def apply(filename: String, layout: WallpaperLayout | WallpaperLayoutType): WallpaperDetails = {
+    inline def apply(filename: String, layout: WallpaperLayout | WallpaperLayoutType): WallpaperDetails = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
       __obj.asInstanceOf[WallpaperDetails]
     }
     
-    @scala.inline
-    implicit class WallpaperDetailsMutableBuilder[Self <: WallpaperDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WallpaperDetails](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: WallpaperLayout | WallpaperLayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: WallpaperLayout | WallpaperLayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -105,13 +95,10 @@ object wallpaper {
   trait WallpaperLayoutType extends StObject
   object WallpaperLayoutType {
     
-    @scala.inline
-    def CENTER: typings.chromeApps.chromeAppsStrings.CENTER = "CENTER".asInstanceOf[typings.chromeApps.chromeAppsStrings.CENTER]
+    inline def CENTER: typings.chromeApps.chromeAppsStrings.CENTER = "CENTER".asInstanceOf[typings.chromeApps.chromeAppsStrings.CENTER]
     
-    @scala.inline
-    def CENTER_CROPPED: typings.chromeApps.chromeAppsStrings.CENTER_CROPPED = "CENTER_CROPPED".asInstanceOf[typings.chromeApps.chromeAppsStrings.CENTER_CROPPED]
+    inline def CENTER_CROPPED: typings.chromeApps.chromeAppsStrings.CENTER_CROPPED = "CENTER_CROPPED".asInstanceOf[typings.chromeApps.chromeAppsStrings.CENTER_CROPPED]
     
-    @scala.inline
-    def STRETCH: typings.chromeApps.chromeAppsStrings.STRETCH = "STRETCH".asInstanceOf[typings.chromeApps.chromeAppsStrings.STRETCH]
+    inline def STRETCH: typings.chromeApps.chromeAppsStrings.STRETCH = "STRETCH".asInstanceOf[typings.chromeApps.chromeAppsStrings.STRETCH]
   }
 }

@@ -30,10 +30,8 @@ object encodingMod {
       * encoding.b64decode(str)
       * encoding.b64decode(str, 'rawstd')
       */
-    @scala.inline
-    def b64decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def b64decode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def b64decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def b64decode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Base64 decode a string.
@@ -45,21 +43,15 @@ object encodingMod {
       * encoding.b64encode(str)
       * encoding.b64encode(str, 'rawstd')
       */
-    @scala.inline
-    def b64encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def b64encode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def b64encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def b64encode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @scala.inline
-  def b64decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def b64decode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def b64decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def b64decode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64decode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def b64encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def b64encode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def b64encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def b64encode(input: String, encoding: Base64Variant): String = (^.asInstanceOf[js.Dynamic].applyDynamic("b64encode")(input.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.k6.k6Strings.std
@@ -70,17 +62,13 @@ object encodingMod {
   trait Base64Variant extends StObject
   object Base64Variant {
     
-    @scala.inline
-    def rawstd: typings.k6.k6Strings.rawstd = "rawstd".asInstanceOf[typings.k6.k6Strings.rawstd]
+    inline def rawstd: typings.k6.k6Strings.rawstd = "rawstd".asInstanceOf[typings.k6.k6Strings.rawstd]
     
-    @scala.inline
-    def rawurl: typings.k6.k6Strings.rawurl = "rawurl".asInstanceOf[typings.k6.k6Strings.rawurl]
+    inline def rawurl: typings.k6.k6Strings.rawurl = "rawurl".asInstanceOf[typings.k6.k6Strings.rawurl]
     
-    @scala.inline
-    def std: typings.k6.k6Strings.std = "std".asInstanceOf[typings.k6.k6Strings.std]
+    inline def std: typings.k6.k6Strings.std = "std".asInstanceOf[typings.k6.k6Strings.std]
     
-    @scala.inline
-    def url: typings.k6.k6Strings.url = "url".asInstanceOf[typings.k6.k6Strings.url]
+    inline def url: typings.k6.k6Strings.url = "url".asInstanceOf[typings.k6.k6Strings.url]
   }
   
   /**

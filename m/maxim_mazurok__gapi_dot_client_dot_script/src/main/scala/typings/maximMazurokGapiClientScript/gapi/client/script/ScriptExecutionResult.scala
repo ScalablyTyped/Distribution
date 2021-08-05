@@ -11,19 +11,15 @@ trait ScriptExecutionResult extends StObject {
 }
 object ScriptExecutionResult {
   
-  @scala.inline
-  def apply(): ScriptExecutionResult = {
+  inline def apply(): ScriptExecutionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptExecutionResult]
   }
   
-  @scala.inline
-  implicit class ScriptExecutionResultMutableBuilder[Self <: ScriptExecutionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptExecutionResult](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Value): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Value): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
+    inline def setReturnValueUndefined: Self = StObject.set(x, "returnValue", js.undefined)
   }
 }

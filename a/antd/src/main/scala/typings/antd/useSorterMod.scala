@@ -19,8 +19,7 @@ object useSorterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[RecordType](
+  inline def default[RecordType](
     hasPrefixClsMergedColumnsOnSorterChangeSortDirectionsTableLocaleShowSorterTooltip: SorterConfig[RecordType]
   ): js.Tuple4[
     TransformColumns[RecordType], 
@@ -34,8 +33,7 @@ object useSorterMod {
     js.Function0[SorterResult[RecordType] | js.Array[SorterResult[RecordType]]]
   ]]
   
-  @scala.inline
-  def getSortData[RecordType](
+  inline def getSortData[RecordType](
     data: js.Array[RecordType],
     sortStates: js.Array[SortState[RecordType]],
     childrenColumnName: String
@@ -53,29 +51,22 @@ object useSorterMod {
   }
   object SortState {
     
-    @scala.inline
-    def apply[RecordType](column: ColumnType[RecordType], key: Key, multiplePriority: Double | `false`): SortState[RecordType] = {
+    inline def apply[RecordType](column: ColumnType[RecordType], key: Key, multiplePriority: Double | `false`): SortState[RecordType] = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], multiplePriority = multiplePriority.asInstanceOf[js.Any], sortOrder = null)
       __obj.asInstanceOf[SortState[RecordType]]
     }
     
-    @scala.inline
-    implicit class SortStateMutableBuilder[Self <: SortState[?], RecordType] (val x: Self & SortState[RecordType]) extends AnyVal {
+    extension [Self <: SortState[?], RecordType](x: Self & SortState[RecordType]) {
       
-      @scala.inline
-      def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiplePriority(value: Double | `false`): Self = StObject.set(x, "multiplePriority", value.asInstanceOf[js.Any])
+      inline def setMultiplePriority(value: Double | `false`): Self = StObject.set(x, "multiplePriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
+      inline def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
     }
   }
   

@@ -20,25 +20,19 @@ trait SyncConstructorOptions extends StObject {
 }
 object SyncConstructorOptions {
   
-  @scala.inline
-  def apply(): SyncConstructorOptions = {
+  inline def apply(): SyncConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncConstructorOptions]
   }
   
-  @scala.inline
-  implicit class SyncConstructorOptionsMutableBuilder[Self <: SyncConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SyncConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setGetFile(value: /* filename */ String => String): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
+    inline def setGetFile(value: /* filename */ String => String): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
+    inline def setGetFileUndefined: Self = StObject.set(x, "getFile", js.undefined)
   }
 }

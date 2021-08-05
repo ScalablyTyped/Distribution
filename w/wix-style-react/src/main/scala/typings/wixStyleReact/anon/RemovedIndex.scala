@@ -12,19 +12,15 @@ trait RemovedIndex extends StObject {
 }
 object RemovedIndex {
   
-  @scala.inline
-  def apply(addedIndex: Double, removedIndex: Double): RemovedIndex = {
+  inline def apply(addedIndex: Double, removedIndex: Double): RemovedIndex = {
     val __obj = js.Dynamic.literal(addedIndex = addedIndex.asInstanceOf[js.Any], removedIndex = removedIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovedIndex]
   }
   
-  @scala.inline
-  implicit class RemovedIndexMutableBuilder[Self <: RemovedIndex] (val x: Self) extends AnyVal {
+  extension [Self <: RemovedIndex](x: Self) {
     
-    @scala.inline
-    def setAddedIndex(value: Double): Self = StObject.set(x, "addedIndex", value.asInstanceOf[js.Any])
+    inline def setAddedIndex(value: Double): Self = StObject.set(x, "addedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedIndex(value: Double): Self = StObject.set(x, "removedIndex", value.asInstanceOf[js.Any])
+    inline def setRemovedIndex(value: Double): Self = StObject.set(x, "removedIndex", value.asInstanceOf[js.Any])
   }
 }

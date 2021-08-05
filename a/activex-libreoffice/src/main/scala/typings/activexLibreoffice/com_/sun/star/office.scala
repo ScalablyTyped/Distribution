@@ -34,8 +34,7 @@ object office {
   }
   object Quickstart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       createAndSetVeto: (Boolean, Boolean, Boolean) => Unit,
       createAutoStart: (Boolean, Boolean) => Unit,
@@ -50,20 +49,15 @@ object office {
       __obj.asInstanceOf[Quickstart]
     }
     
-    @scala.inline
-    implicit class QuickstartMutableBuilder[Self <: Quickstart] (val x: Self) extends AnyVal {
+    extension [Self <: Quickstart](x: Self) {
       
-      @scala.inline
-      def setCreateAndSetVeto(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "createAndSetVeto", js.Any.fromFunction3(value))
+      inline def setCreateAndSetVeto(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "createAndSetVeto", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreateAutoStart(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "createAutoStart", js.Any.fromFunction2(value))
+      inline def setCreateAutoStart(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "createAutoStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+      inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateStart(value: Boolean => Unit): Self = StObject.set(x, "createStart", js.Any.fromFunction1(value))
+      inline def setCreateStart(value: Boolean => Unit): Self = StObject.set(x, "createStart", js.Any.fromFunction1(value))
     }
   }
   
@@ -99,8 +93,7 @@ object office {
   }
   object XAnnotation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Anchor: js.Any,
       Author: String,
       DateTime: DateTime,
@@ -127,29 +120,21 @@ object office {
       __obj.asInstanceOf[XAnnotation]
     }
     
-    @scala.inline
-    implicit class XAnnotationMutableBuilder[Self <: XAnnotation] (val x: Self) extends AnyVal {
+    extension [Self <: XAnnotation](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: js.Any): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: js.Any): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTime(value: DateTime): Self = StObject.set(x, "DateTime", value.asInstanceOf[js.Any])
+      inline def setDateTime(value: DateTime): Self = StObject.set(x, "DateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitials(value: String): Self = StObject.set(x, "Initials", value.asInstanceOf[js.Any])
+      inline def setInitials(value: String): Self = StObject.set(x, "Initials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: RealPoint2D): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: RealPoint2D): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: RealSize2D): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+      inline def setSize(value: RealSize2D): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextRange(value: XText): Self = StObject.set(x, "TextRange", value.asInstanceOf[js.Any])
+      inline def setTextRange(value: XText): Self = StObject.set(x, "TextRange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,8 +152,7 @@ object office {
   }
   object XAnnotationAccess {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createAndInsertAnnotation: () => XAnnotation,
       createAnnotationEnumeration: () => XAnnotationEnumeration,
       removeAnnotation: XAnnotation => Unit
@@ -177,17 +161,13 @@ object office {
       __obj.asInstanceOf[XAnnotationAccess]
     }
     
-    @scala.inline
-    implicit class XAnnotationAccessMutableBuilder[Self <: XAnnotationAccess] (val x: Self) extends AnyVal {
+    extension [Self <: XAnnotationAccess](x: Self) {
       
-      @scala.inline
-      def setCreateAndInsertAnnotation(value: () => XAnnotation): Self = StObject.set(x, "createAndInsertAnnotation", js.Any.fromFunction0(value))
+      inline def setCreateAndInsertAnnotation(value: () => XAnnotation): Self = StObject.set(x, "createAndInsertAnnotation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateAnnotationEnumeration(value: () => XAnnotationEnumeration): Self = StObject.set(x, "createAnnotationEnumeration", js.Any.fromFunction0(value))
+      inline def setCreateAnnotationEnumeration(value: () => XAnnotationEnumeration): Self = StObject.set(x, "createAnnotationEnumeration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveAnnotation(value: XAnnotation => Unit): Self = StObject.set(x, "removeAnnotation", js.Any.fromFunction1(value))
+      inline def setRemoveAnnotation(value: XAnnotation => Unit): Self = StObject.set(x, "removeAnnotation", js.Any.fromFunction1(value))
     }
   }
   
@@ -205,20 +185,16 @@ object office {
   }
   object XAnnotationEnumeration {
     
-    @scala.inline
-    def apply(hasMoreElements: () => Boolean, nextElement: () => XAnnotation): XAnnotationEnumeration = {
+    inline def apply(hasMoreElements: () => Boolean, nextElement: () => XAnnotation): XAnnotationEnumeration = {
       val __obj = js.Dynamic.literal(hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement))
       __obj.asInstanceOf[XAnnotationEnumeration]
     }
     
-    @scala.inline
-    implicit class XAnnotationEnumerationMutableBuilder[Self <: XAnnotationEnumeration] (val x: Self) extends AnyVal {
+    extension [Self <: XAnnotationEnumeration](x: Self) {
       
-      @scala.inline
-      def setHasMoreElements(value: () => Boolean): Self = StObject.set(x, "hasMoreElements", js.Any.fromFunction0(value))
+      inline def setHasMoreElements(value: () => Boolean): Self = StObject.set(x, "hasMoreElements", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextElement(value: () => XAnnotation): Self = StObject.set(x, "nextElement", js.Any.fromFunction0(value))
+      inline def setNextElement(value: () => XAnnotation): Self = StObject.set(x, "nextElement", js.Any.fromFunction0(value))
     }
   }
 }

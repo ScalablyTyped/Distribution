@@ -36,27 +36,27 @@ object xmlHttpRequestMod {
     
     var UNSENT: Double = js.native
     
-    var _aborting: js.Any = js.native
+    /* private */ var _aborting: js.Any = js.native
     
-    var _anonymous: js.Any = js.native
+    /* private */ var _anonymous: js.Any = js.native
     
     /* private */ def _dispatchProgress(eventType: js.Any): js.Any = js.native
     
-    var _error: js.Any = js.native
+    /* private */ var _error: js.Any = js.native
     
     /* private */ def _finalizeHeaders(): js.Any = js.native
     
-    var _headers: js.Any = js.native
+    /* private */ var _headers: js.Any = js.native
     
-    var _lengthComputable: js.Any = js.native
+    /* private */ var _lengthComputable: js.Any = js.native
     
-    var _loadedBytes: js.Any = js.native
+    /* private */ var _loadedBytes: js.Any = js.native
     
-    var _loweredHeaders: js.Any = js.native
+    /* private */ var _loweredHeaders: js.Any = js.native
     
-    var _method: js.Any = js.native
+    /* private */ var _method: js.Any = js.native
     
-    var _mimeOverride: js.Any = js.native
+    /* private */ var _mimeOverride: js.Any = js.native
     
     /* private */ def _onHttpRequestError(request: js.Any, error: js.Any): js.Any = js.native
     
@@ -78,19 +78,19 @@ object xmlHttpRequestMod {
     
     /* private */ def _parseUrl(urlString: js.Any, user: js.Any, password: js.Any): js.Any = js.native
     
-    var _privateHeaders: js.Any = js.native
+    /* private */ var _privateHeaders: js.Any = js.native
     
-    var _request: js.Any = js.native
+    /* private */ var _request: js.Any = js.native
     
-    var _response: js.Any = js.native
+    /* private */ var _response: js.Any = js.native
     
-    var _responseHeaders: js.Any = js.native
+    /* private */ var _responseHeaders: js.Any = js.native
     
-    var _responseParts: js.Any = js.native
+    /* private */ var _responseParts: js.Any = js.native
     
-    var _restrictedHeaders: js.Any = js.native
+    /* private */ var _restrictedHeaders: js.Any = js.native
     
-    var _restrictedMethods: js.Any = js.native
+    /* private */ var _restrictedMethods: js.Any = js.native
     
     /* private */ def _sendFile(data: js.Any): js.Any = js.native
     
@@ -102,13 +102,13 @@ object xmlHttpRequestMod {
     
     /* private */ def _setReadyState(readyState: js.Any): js.Any = js.native
     
-    var _sync: js.Any = js.native
+    /* private */ var _sync: js.Any = js.native
     
-    var _totalBytes: js.Any = js.native
+    /* private */ var _totalBytes: js.Any = js.native
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
-    var _userAgent: js.Any = js.native
+    /* private */ var _userAgent: js.Any = js.native
     
     def abort(): Unit = js.native
     
@@ -173,77 +173,64 @@ object xmlHttpRequestMod {
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.DONE")
     @js.native
     def DONE: Double = js.native
-    @scala.inline
-    def DONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DONE")(x.asInstanceOf[js.Any])
+    inline def DONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DONE")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.HEADERS_RECEIVED")
     @js.native
     def HEADERS_RECEIVED: Double = js.native
-    @scala.inline
-    def HEADERS_RECEIVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADERS_RECEIVED")(x.asInstanceOf[js.Any])
+    inline def HEADERS_RECEIVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEADERS_RECEIVED")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.InvalidStateError")
     @js.native
     def InvalidStateError: Instantiable0[typings.xhr2Cookies.errorsMod.InvalidStateError] = js.native
-    @scala.inline
-    def InvalidStateError_=(x: Instantiable0[InvalidStateError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvalidStateError")(x.asInstanceOf[js.Any])
+    inline def InvalidStateError_=(x: Instantiable0[InvalidStateError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InvalidStateError")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.LOADING")
     @js.native
     def LOADING: Double = js.native
-    @scala.inline
-    def LOADING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING")(x.asInstanceOf[js.Any])
+    inline def LOADING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOADING")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.NetworkError")
     @js.native
     def NetworkError: Instantiable0[typings.xhr2Cookies.errorsMod.NetworkError] = js.native
-    @scala.inline
-    def NetworkError_=(x: Instantiable0[NetworkError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NetworkError")(x.asInstanceOf[js.Any])
+    inline def NetworkError_=(x: Instantiable0[NetworkError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NetworkError")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.OPENED")
     @js.native
     def OPENED: Double = js.native
-    @scala.inline
-    def OPENED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED")(x.asInstanceOf[js.Any])
+    inline def OPENED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.ProgressEvent")
     @js.native
     def ProgressEvent: Instantiable1[/* type */ String, typings.xhr2Cookies.progressEventMod.ProgressEvent] = js.native
-    @scala.inline
-    def ProgressEvent_=(x: Instantiable1[/* type */ String, ProgressEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressEvent")(x.asInstanceOf[js.Any])
+    inline def ProgressEvent_=(x: Instantiable1[/* type */ String, ProgressEvent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressEvent")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.SecurityError")
     @js.native
     def SecurityError: Instantiable0[typings.xhr2Cookies.errorsMod.SecurityError] = js.native
-    @scala.inline
-    def SecurityError_=(x: Instantiable0[SecurityError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecurityError")(x.asInstanceOf[js.Any])
+    inline def SecurityError_=(x: Instantiable0[SecurityError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SecurityError")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.SyntaxError")
     @js.native
     def SyntaxError: Instantiable0[typings.xhr2Cookies.errorsMod.SyntaxError] = js.native
-    @scala.inline
-    def SyntaxError_=(x: Instantiable0[SyntaxError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
+    inline def SyntaxError_=(x: Instantiable0[SyntaxError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.UNSENT")
     @js.native
     def UNSENT: Double = js.native
-    @scala.inline
-    def UNSENT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSENT")(x.asInstanceOf[js.Any])
+    inline def UNSENT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSENT")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.XMLHttpRequestUpload")
     @js.native
     def XMLHttpRequestUpload: Instantiable0[typings.xhr2Cookies.xmlHttpRequestUploadMod.XMLHttpRequestUpload] = js.native
-    @scala.inline
-    def XMLHttpRequestUpload_=(x: Instantiable0[XMLHttpRequestUpload]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XMLHttpRequestUpload")(x.asInstanceOf[js.Any])
+    inline def XMLHttpRequestUpload_=(x: Instantiable0[XMLHttpRequestUpload]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XMLHttpRequestUpload")(x.asInstanceOf[js.Any])
     
     @JSImport("xhr2-cookies/dist/xml-http-request", "XMLHttpRequest.cookieJar")
     @js.native
     def cookieJar: js.Any = js.native
-    @scala.inline
-    def cookieJar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieJar")(x.asInstanceOf[js.Any])
+    inline def cookieJar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieJar")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def nodejsSet(options: BaseUrl): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nodejsSet")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def nodejsSet(options: BaseUrl): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nodejsSet")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait XHRUrl
@@ -254,20 +241,16 @@ object xmlHttpRequestMod {
   }
   object XHRUrl {
     
-    @scala.inline
-    def apply(href: String): XHRUrl = {
+    inline def apply(href: String): XHRUrl = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[XHRUrl]
     }
     
-    @scala.inline
-    implicit class XHRUrlMutableBuilder[Self <: XHRUrl] (val x: Self) extends AnyVal {
+    extension [Self <: XHRUrl](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -277,20 +260,16 @@ object xmlHttpRequestMod {
   }
   object XMLHttpRequestOptions {
     
-    @scala.inline
-    def apply(): XMLHttpRequestOptions = {
+    inline def apply(): XMLHttpRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XMLHttpRequestOptions]
     }
     
-    @scala.inline
-    implicit class XMLHttpRequestOptionsMutableBuilder[Self <: XMLHttpRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XMLHttpRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAnon(value: Boolean): Self = StObject.set(x, "anon", value.asInstanceOf[js.Any])
+      inline def setAnon(value: Boolean): Self = StObject.set(x, "anon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnonUndefined: Self = StObject.set(x, "anon", js.undefined)
+      inline def setAnonUndefined: Self = StObject.set(x, "anon", js.undefined)
     }
   }
 }

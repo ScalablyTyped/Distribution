@@ -16,25 +16,19 @@ trait GoldDto extends StObject {
 }
 object GoldDto {
   
-  @scala.inline
-  def apply(base: Double, purchasable: Boolean, sell: Double, total: Double): GoldDto = {
+  inline def apply(base: Double, purchasable: Boolean, sell: Double, total: Double): GoldDto = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], purchasable = purchasable.asInstanceOf[js.Any], sell = sell.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoldDto]
   }
   
-  @scala.inline
-  implicit class GoldDtoMutableBuilder[Self <: GoldDto] (val x: Self) extends AnyVal {
+  extension [Self <: GoldDto](x: Self) {
     
-    @scala.inline
-    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchasable(value: Boolean): Self = StObject.set(x, "purchasable", value.asInstanceOf[js.Any])
+    inline def setPurchasable(value: Boolean): Self = StObject.set(x, "purchasable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSell(value: Double): Self = StObject.set(x, "sell", value.asInstanceOf[js.Any])
+    inline def setSell(value: Double): Self = StObject.set(x, "sell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

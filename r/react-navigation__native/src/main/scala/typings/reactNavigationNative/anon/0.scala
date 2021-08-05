@@ -10,16 +10,13 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(getInitialState: () => js.Promise[js.UndefOr[PartialPickReadonlykeystrHistory]]): `0` = {
+  inline def apply(getInitialState: () => js.Promise[js.UndefOr[PartialPickReadonlykeystrHistory]]): `0` = {
     val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction0(getInitialState))
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setGetInitialState(value: () => js.Promise[js.UndefOr[PartialPickReadonlykeystrHistory]]): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
+    inline def setGetInitialState(value: () => js.Promise[js.UndefOr[PartialPickReadonlykeystrHistory]]): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
   }
 }

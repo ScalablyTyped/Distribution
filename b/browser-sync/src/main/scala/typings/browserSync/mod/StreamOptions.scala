@@ -16,34 +16,27 @@ trait StreamOptions extends StObject {
 }
 object StreamOptions {
   
-  @scala.inline
-  def apply(): StreamOptions = {
+  inline def apply(): StreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamOptions]
   }
   
-  @scala.inline
-  implicit class StreamOptionsMutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StreamOptions](x: Self) {
     
-    @scala.inline
-    def setMatch(
+    inline def setMatch(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any) | (js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any
         ])
     ): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setMatchVarargs(
+    inline def setMatchVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify mm.Pattern */ js.Any)*
     ): Self = StObject.set(x, "match", js.Array(value :_*))
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
   }
 }

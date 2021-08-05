@@ -5,17 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ scala.Double = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_SCROLLING_RESET_TIME_INTERVAL").asInstanceOf[/* 150 */ scala.Double]
+inline def DEFAULT_SCROLLING_RESET_TIME_INTERVAL: /* 150 */ scala.Double = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_SCROLLING_RESET_TIME_INTERVAL").asInstanceOf[/* 150 */ scala.Double]
 
-@scala.inline
-def accessibilityOverscanIndicesGetter: typings.reactVirtualized.esGridMod.OverscanIndicesGetter = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("accessibilityOverscanIndicesGetter").asInstanceOf[typings.reactVirtualized.esGridMod.OverscanIndicesGetter]
+inline def accessibilityOverscanIndicesGetter: typings.reactVirtualized.esGridMod.OverscanIndicesGetter = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("accessibilityOverscanIndicesGetter").asInstanceOf[typings.reactVirtualized.esGridMod.OverscanIndicesGetter]
 
-@scala.inline
-def defaultCellRangeRenderer: typings.reactVirtualized.esGridMod.GridCellRangeRenderer = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultCellRangeRenderer").asInstanceOf[typings.reactVirtualized.esGridMod.GridCellRangeRenderer]
+inline def defaultCellRangeRenderer: typings.reactVirtualized.esGridMod.GridCellRangeRenderer = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultCellRangeRenderer").asInstanceOf[typings.reactVirtualized.esGridMod.GridCellRangeRenderer]
 
-@scala.inline
-def defaultOverscanIndicesGetter: typings.reactVirtualized.esGridMod.OverscanIndicesGetter = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultOverscanIndicesGetter").asInstanceOf[typings.reactVirtualized.esGridMod.OverscanIndicesGetter]
+inline def defaultOverscanIndicesGetter: typings.reactVirtualized.esGridMod.OverscanIndicesGetter = typings.reactVirtualized.esGridMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultOverscanIndicesGetter").asInstanceOf[typings.reactVirtualized.esGridMod.OverscanIndicesGetter]
 
 type GridCellRangeRenderer = js.Function1[
 /* params */ typings.reactVirtualized.esGridMod.GridCellRangeProps, 

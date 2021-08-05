@@ -226,21 +226,16 @@ object distributionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Distribution]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Distribution]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DistributionState): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Distribution]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DistributionState, opts: CustomResourceOptions): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+    inline def get(name: String, id: Input[ID]): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+    inline def get(name: String, id: Input[ID], state: DistributionState): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+    inline def get(name: String, id: Input[ID], state: DistributionState, opts: CustomResourceOptions): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Distribution]
     
     /**
       * Returns true if the given object is an instance of Distribution.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean]
   }
   
   trait DistributionArgs extends StObject {
@@ -379,8 +374,7 @@ object distributionMod {
   }
   object DistributionArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultCacheBehavior: Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior],
       enabled: Input[Boolean],
       origins: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]],
@@ -391,130 +385,91 @@ object distributionMod {
       __obj.asInstanceOf[DistributionArgs]
     }
     
-    @scala.inline
-    implicit class DistributionArgsMutableBuilder[Self <: DistributionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionArgs](x: Self) {
       
-      @scala.inline
-      def setAliases(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: Input[String]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: Input[String]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCustomErrorResponses(
+      inline def setCustomErrorResponses(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]]
             ]
       ): Self = StObject.set(x, "customErrorResponses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomErrorResponsesUndefined: Self = StObject.set(x, "customErrorResponses", js.undefined)
+      inline def setCustomErrorResponsesUndefined: Self = StObject.set(x, "customErrorResponses", js.undefined)
       
-      @scala.inline
-      def setCustomErrorResponsesVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]*): Self = StObject.set(x, "customErrorResponses", js.Array(value :_*))
+      inline def setCustomErrorResponsesVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]*): Self = StObject.set(x, "customErrorResponses", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultCacheBehavior(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior]): Self = StObject.set(x, "defaultCacheBehavior", value.asInstanceOf[js.Any])
+      inline def setDefaultCacheBehavior(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior]): Self = StObject.set(x, "defaultCacheBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRootObject(value: Input[String]): Self = StObject.set(x, "defaultRootObject", value.asInstanceOf[js.Any])
+      inline def setDefaultRootObject(value: Input[String]): Self = StObject.set(x, "defaultRootObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRootObjectUndefined: Self = StObject.set(x, "defaultRootObject", js.undefined)
+      inline def setDefaultRootObjectUndefined: Self = StObject.set(x, "defaultRootObject", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVersion(value: Input[String]): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
+      inline def setHttpVersion(value: Input[String]): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVersionUndefined: Self = StObject.set(x, "httpVersion", js.undefined)
+      inline def setHttpVersionUndefined: Self = StObject.set(x, "httpVersion", js.undefined)
       
-      @scala.inline
-      def setIsIpv6Enabled(value: Input[Boolean]): Self = StObject.set(x, "isIpv6Enabled", value.asInstanceOf[js.Any])
+      inline def setIsIpv6Enabled(value: Input[Boolean]): Self = StObject.set(x, "isIpv6Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIpv6EnabledUndefined: Self = StObject.set(x, "isIpv6Enabled", js.undefined)
+      inline def setIsIpv6EnabledUndefined: Self = StObject.set(x, "isIpv6Enabled", js.undefined)
       
-      @scala.inline
-      def setLoggingConfig(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+      inline def setLoggingConfig(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
+      inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
       
-      @scala.inline
-      def setOrderedCacheBehaviors(
+      inline def setOrderedCacheBehaviors(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]]
             ]
       ): Self = StObject.set(x, "orderedCacheBehaviors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedCacheBehaviorsUndefined: Self = StObject.set(x, "orderedCacheBehaviors", js.undefined)
+      inline def setOrderedCacheBehaviorsUndefined: Self = StObject.set(x, "orderedCacheBehaviors", js.undefined)
       
-      @scala.inline
-      def setOrderedCacheBehaviorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]*): Self = StObject.set(x, "orderedCacheBehaviors", js.Array(value :_*))
+      inline def setOrderedCacheBehaviorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]*): Self = StObject.set(x, "orderedCacheBehaviors", js.Array(value :_*))
       
-      @scala.inline
-      def setOriginGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]]]): Self = StObject.set(x, "originGroups", value.asInstanceOf[js.Any])
+      inline def setOriginGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]]]): Self = StObject.set(x, "originGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginGroupsUndefined: Self = StObject.set(x, "originGroups", js.undefined)
+      inline def setOriginGroupsUndefined: Self = StObject.set(x, "originGroups", js.undefined)
       
-      @scala.inline
-      def setOriginGroupsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]*): Self = StObject.set(x, "originGroups", js.Array(value :_*))
+      inline def setOriginGroupsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]*): Self = StObject.set(x, "originGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setOrigins(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]*): Self = StObject.set(x, "origins", js.Array(value :_*))
       
-      @scala.inline
-      def setPriceClass(value: Input[String]): Self = StObject.set(x, "priceClass", value.asInstanceOf[js.Any])
+      inline def setPriceClass(value: Input[String]): Self = StObject.set(x, "priceClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriceClassUndefined: Self = StObject.set(x, "priceClass", js.undefined)
+      inline def setPriceClassUndefined: Self = StObject.set(x, "priceClass", js.undefined)
       
-      @scala.inline
-      def setRestrictions(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+      inline def setRestrictions(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retainOnDelete", value.asInstanceOf[js.Any])
+      inline def setRetainOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retainOnDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainOnDeleteUndefined: Self = StObject.set(x, "retainOnDelete", js.undefined)
+      inline def setRetainOnDeleteUndefined: Self = StObject.set(x, "retainOnDelete", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setViewerCertificate(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate]): Self = StObject.set(x, "viewerCertificate", value.asInstanceOf[js.Any])
+      inline def setViewerCertificate(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate]): Self = StObject.set(x, "viewerCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForDeployment(value: Input[Boolean]): Self = StObject.set(x, "waitForDeployment", value.asInstanceOf[js.Any])
+      inline def setWaitForDeployment(value: Input[Boolean]): Self = StObject.set(x, "waitForDeployment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForDeploymentUndefined: Self = StObject.set(x, "waitForDeployment", js.undefined)
+      inline def setWaitForDeploymentUndefined: Self = StObject.set(x, "waitForDeployment", js.undefined)
       
-      @scala.inline
-      def setWebAclId(value: Input[String]): Self = StObject.set(x, "webAclId", value.asInstanceOf[js.Any])
+      inline def setWebAclId(value: Input[String]): Self = StObject.set(x, "webAclId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAclIdUndefined: Self = StObject.set(x, "webAclId", js.undefined)
+      inline def setWebAclIdUndefined: Self = StObject.set(x, "webAclId", js.undefined)
     }
   }
   
@@ -710,208 +665,144 @@ object distributionMod {
   }
   object DistributionState {
     
-    @scala.inline
-    def apply(): DistributionState = {
+    inline def apply(): DistributionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DistributionState]
     }
     
-    @scala.inline
-    implicit class DistributionStateMutableBuilder[Self <: DistributionState] (val x: Self) extends AnyVal {
+    extension [Self <: DistributionState](x: Self) {
       
-      @scala.inline
-      def setAliases(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: Input[String]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: Input[String]*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCallerReference(value: Input[String]): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
+      inline def setCallerReference(value: Input[String]): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallerReferenceUndefined: Self = StObject.set(x, "callerReference", js.undefined)
+      inline def setCallerReferenceUndefined: Self = StObject.set(x, "callerReference", js.undefined)
       
-      @scala.inline
-      def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Input[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCustomErrorResponses(
+      inline def setCustomErrorResponses(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]]
             ]
       ): Self = StObject.set(x, "customErrorResponses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomErrorResponsesUndefined: Self = StObject.set(x, "customErrorResponses", js.undefined)
+      inline def setCustomErrorResponsesUndefined: Self = StObject.set(x, "customErrorResponses", js.undefined)
       
-      @scala.inline
-      def setCustomErrorResponsesVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]*): Self = StObject.set(x, "customErrorResponses", js.Array(value :_*))
+      inline def setCustomErrorResponsesVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]*): Self = StObject.set(x, "customErrorResponses", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultCacheBehavior(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior]): Self = StObject.set(x, "defaultCacheBehavior", value.asInstanceOf[js.Any])
+      inline def setDefaultCacheBehavior(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior]): Self = StObject.set(x, "defaultCacheBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCacheBehaviorUndefined: Self = StObject.set(x, "defaultCacheBehavior", js.undefined)
+      inline def setDefaultCacheBehaviorUndefined: Self = StObject.set(x, "defaultCacheBehavior", js.undefined)
       
-      @scala.inline
-      def setDefaultRootObject(value: Input[String]): Self = StObject.set(x, "defaultRootObject", value.asInstanceOf[js.Any])
+      inline def setDefaultRootObject(value: Input[String]): Self = StObject.set(x, "defaultRootObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRootObjectUndefined: Self = StObject.set(x, "defaultRootObject", js.undefined)
+      inline def setDefaultRootObjectUndefined: Self = StObject.set(x, "defaultRootObject", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEtag(value: Input[String]): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: Input[String]): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
+      inline def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
       
-      @scala.inline
-      def setHttpVersion(value: Input[String]): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
+      inline def setHttpVersion(value: Input[String]): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVersionUndefined: Self = StObject.set(x, "httpVersion", js.undefined)
+      inline def setHttpVersionUndefined: Self = StObject.set(x, "httpVersion", js.undefined)
       
-      @scala.inline
-      def setInProgressValidationBatches(value: Input[Double]): Self = StObject.set(x, "inProgressValidationBatches", value.asInstanceOf[js.Any])
+      inline def setInProgressValidationBatches(value: Input[Double]): Self = StObject.set(x, "inProgressValidationBatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInProgressValidationBatchesUndefined: Self = StObject.set(x, "inProgressValidationBatches", js.undefined)
+      inline def setInProgressValidationBatchesUndefined: Self = StObject.set(x, "inProgressValidationBatches", js.undefined)
       
-      @scala.inline
-      def setIsIpv6Enabled(value: Input[Boolean]): Self = StObject.set(x, "isIpv6Enabled", value.asInstanceOf[js.Any])
+      inline def setIsIpv6Enabled(value: Input[Boolean]): Self = StObject.set(x, "isIpv6Enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIpv6EnabledUndefined: Self = StObject.set(x, "isIpv6Enabled", js.undefined)
+      inline def setIsIpv6EnabledUndefined: Self = StObject.set(x, "isIpv6Enabled", js.undefined)
       
-      @scala.inline
-      def setLastModifiedTime(value: Input[String]): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
+      inline def setLastModifiedTime(value: Input[String]): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
+      inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
       
-      @scala.inline
-      def setLoggingConfig(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+      inline def setLoggingConfig(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
+      inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
       
-      @scala.inline
-      def setOrderedCacheBehaviors(
+      inline def setOrderedCacheBehaviors(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]]
             ]
       ): Self = StObject.set(x, "orderedCacheBehaviors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedCacheBehaviorsUndefined: Self = StObject.set(x, "orderedCacheBehaviors", js.undefined)
+      inline def setOrderedCacheBehaviorsUndefined: Self = StObject.set(x, "orderedCacheBehaviors", js.undefined)
       
-      @scala.inline
-      def setOrderedCacheBehaviorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]*): Self = StObject.set(x, "orderedCacheBehaviors", js.Array(value :_*))
+      inline def setOrderedCacheBehaviorsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]*): Self = StObject.set(x, "orderedCacheBehaviors", js.Array(value :_*))
       
-      @scala.inline
-      def setOriginGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]]]): Self = StObject.set(x, "originGroups", value.asInstanceOf[js.Any])
+      inline def setOriginGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]]]): Self = StObject.set(x, "originGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginGroupsUndefined: Self = StObject.set(x, "originGroups", js.undefined)
+      inline def setOriginGroupsUndefined: Self = StObject.set(x, "originGroups", js.undefined)
       
-      @scala.inline
-      def setOriginGroupsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]*): Self = StObject.set(x, "originGroups", js.Array(value :_*))
+      inline def setOriginGroupsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]*): Self = StObject.set(x, "originGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setOrigins(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+      inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
       
-      @scala.inline
-      def setOriginsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]*): Self = StObject.set(x, "origins", js.Array(value :_*))
       
-      @scala.inline
-      def setPriceClass(value: Input[String]): Self = StObject.set(x, "priceClass", value.asInstanceOf[js.Any])
+      inline def setPriceClass(value: Input[String]): Self = StObject.set(x, "priceClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriceClassUndefined: Self = StObject.set(x, "priceClass", js.undefined)
+      inline def setPriceClassUndefined: Self = StObject.set(x, "priceClass", js.undefined)
       
-      @scala.inline
-      def setRestrictions(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+      inline def setRestrictions(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+      inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
       
-      @scala.inline
-      def setRetainOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retainOnDelete", value.asInstanceOf[js.Any])
+      inline def setRetainOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retainOnDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetainOnDeleteUndefined: Self = StObject.set(x, "retainOnDelete", js.undefined)
+      inline def setRetainOnDeleteUndefined: Self = StObject.set(x, "retainOnDelete", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTrustedSigners(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionTrustedSigner]]]): Self = StObject.set(x, "trustedSigners", value.asInstanceOf[js.Any])
+      inline def setTrustedSigners(value: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionTrustedSigner]]]): Self = StObject.set(x, "trustedSigners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustedSignersUndefined: Self = StObject.set(x, "trustedSigners", js.undefined)
+      inline def setTrustedSignersUndefined: Self = StObject.set(x, "trustedSigners", js.undefined)
       
-      @scala.inline
-      def setTrustedSignersVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionTrustedSigner]*): Self = StObject.set(x, "trustedSigners", js.Array(value :_*))
+      inline def setTrustedSignersVarargs(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionTrustedSigner]*): Self = StObject.set(x, "trustedSigners", js.Array(value :_*))
       
-      @scala.inline
-      def setViewerCertificate(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate]): Self = StObject.set(x, "viewerCertificate", value.asInstanceOf[js.Any])
+      inline def setViewerCertificate(value: Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate]): Self = StObject.set(x, "viewerCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewerCertificateUndefined: Self = StObject.set(x, "viewerCertificate", js.undefined)
+      inline def setViewerCertificateUndefined: Self = StObject.set(x, "viewerCertificate", js.undefined)
       
-      @scala.inline
-      def setWaitForDeployment(value: Input[Boolean]): Self = StObject.set(x, "waitForDeployment", value.asInstanceOf[js.Any])
+      inline def setWaitForDeployment(value: Input[Boolean]): Self = StObject.set(x, "waitForDeployment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForDeploymentUndefined: Self = StObject.set(x, "waitForDeployment", js.undefined)
+      inline def setWaitForDeploymentUndefined: Self = StObject.set(x, "waitForDeployment", js.undefined)
       
-      @scala.inline
-      def setWebAclId(value: Input[String]): Self = StObject.set(x, "webAclId", value.asInstanceOf[js.Any])
+      inline def setWebAclId(value: Input[String]): Self = StObject.set(x, "webAclId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAclIdUndefined: Self = StObject.set(x, "webAclId", js.undefined)
+      inline def setWebAclIdUndefined: Self = StObject.set(x, "webAclId", js.undefined)
     }
   }
 }

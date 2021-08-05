@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportingMimeTypeValue extends StObject
 object ExportingMimeTypeValue {
   
-  @scala.inline
-  def applicationSlashpdf: typings.highcharts.highchartsStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typings.highcharts.highchartsStrings.applicationSlashpdf]
+  inline def applicationSlashpdf: typings.highcharts.highchartsStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typings.highcharts.highchartsStrings.applicationSlashpdf]
   
-  @scala.inline
-  def imageSlashjpeg: typings.highcharts.highchartsStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashjpeg]
+  inline def imageSlashjpeg: typings.highcharts.highchartsStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashjpeg]
   
-  @scala.inline
-  def imageSlashpng: typings.highcharts.highchartsStrings.imageSlashpng = "image/png".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashpng]
+  inline def imageSlashpng: typings.highcharts.highchartsStrings.imageSlashpng = "image/png".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashpng]
   
-  @scala.inline
-  def imageSlashsvgPlussignxml: typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml]
+  inline def imageSlashsvgPlussignxml: typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[typings.highcharts.highchartsStrings.imageSlashsvgPlussignxml]
 }

@@ -12,9 +12,7 @@ object personaInitialsColorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPersonaInitialsColor(props: PickIPersonaPropsprimaryT): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonaInitialsColor")(props.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getPersonaInitialsColor(props: PickIPersonaPropsprimaryT): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonaInitialsColor")(props.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def initialsColorPropToColorCode(props: IPersonaProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("initialsColorPropToColorCode")(props.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def initialsColorPropToColorCode(props: IPersonaProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("initialsColorPropToColorCode")(props.asInstanceOf[js.Any]).asInstanceOf[String]
 }

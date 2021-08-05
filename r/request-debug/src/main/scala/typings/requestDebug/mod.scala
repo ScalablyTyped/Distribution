@@ -15,10 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](request: RequestAPI[TRequest, TOptions, TUriUrlOptions]): Unit = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](
+  inline def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](request: RequestAPI[TRequest, TOptions, TUriUrlOptions]): Unit = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply[TRequest /* <: Request */, TOptions /* <: CoreOptions */, TUriUrlOptions /* <: RequiredUriUrl */](
     request: RequestAPI[TRequest, TOptions, TUriUrlOptions],
     cb: LogCallback[TRequest, TOptions, TUriUrlOptions]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -49,20 +47,17 @@ object mod {
   trait LogData extends StObject
   object LogData {
     
-    @scala.inline
-    def RedirectData(debugId: Double, headers: Headers, statusCode: Double, uri: String): typings.requestDebug.mod.RedirectData = {
+    inline def RedirectData(debugId: Double, headers: Headers, statusCode: Double, uri: String): typings.requestDebug.mod.RedirectData = {
       val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.requestDebug.mod.RedirectData]
     }
     
-    @scala.inline
-    def RequestData(debugId: Double, headers: Headers, method: String, uri: String): typings.requestDebug.mod.RequestData = {
+    inline def RequestData(debugId: Double, headers: Headers, method: String, uri: String): typings.requestDebug.mod.RequestData = {
       val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.requestDebug.mod.RequestData]
     }
     
-    @scala.inline
-    def ResponseData(debugId: Double, headers: Headers, statusCode: Double): typings.requestDebug.mod.ResponseData = {
+    inline def ResponseData(debugId: Double, headers: Headers, statusCode: Double): typings.requestDebug.mod.ResponseData = {
       val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.requestDebug.mod.ResponseData]
     }
@@ -77,17 +72,13 @@ object mod {
   trait LogPhase extends StObject
   object LogPhase {
     
-    @scala.inline
-    def auth: typings.requestDebug.requestDebugStrings.auth = "auth".asInstanceOf[typings.requestDebug.requestDebugStrings.auth]
+    inline def auth: typings.requestDebug.requestDebugStrings.auth = "auth".asInstanceOf[typings.requestDebug.requestDebugStrings.auth]
     
-    @scala.inline
-    def redirect: typings.requestDebug.requestDebugStrings.redirect = "redirect".asInstanceOf[typings.requestDebug.requestDebugStrings.redirect]
+    inline def redirect: typings.requestDebug.requestDebugStrings.redirect = "redirect".asInstanceOf[typings.requestDebug.requestDebugStrings.redirect]
     
-    @scala.inline
-    def request: typings.requestDebug.requestDebugStrings.request = "request".asInstanceOf[typings.requestDebug.requestDebugStrings.request]
+    inline def request: typings.requestDebug.requestDebugStrings.request = "request".asInstanceOf[typings.requestDebug.requestDebugStrings.request]
     
-    @scala.inline
-    def response: typings.requestDebug.requestDebugStrings.response = "response".asInstanceOf[typings.requestDebug.requestDebugStrings.response]
+    inline def response: typings.requestDebug.requestDebugStrings.response = "response".asInstanceOf[typings.requestDebug.requestDebugStrings.response]
   }
   
   trait RedirectData
@@ -104,26 +95,20 @@ object mod {
   }
   object RedirectData {
     
-    @scala.inline
-    def apply(debugId: Double, headers: Headers, statusCode: Double, uri: String): RedirectData = {
+    inline def apply(debugId: Double, headers: Headers, statusCode: Double, uri: String): RedirectData = {
       val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedirectData]
     }
     
-    @scala.inline
-    implicit class RedirectDataMutableBuilder[Self <: RedirectData] (val x: Self) extends AnyVal {
+    extension [Self <: RedirectData](x: Self) {
       
-      @scala.inline
-      def setDebugId(value: Double): Self = StObject.set(x, "debugId", value.asInstanceOf[js.Any])
+      inline def setDebugId(value: Double): Self = StObject.set(x, "debugId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,32 +128,24 @@ object mod {
   }
   object RequestData {
     
-    @scala.inline
-    def apply(debugId: Double, headers: Headers, method: String, uri: String): RequestData = {
+    inline def apply(debugId: Double, headers: Headers, method: String, uri: String): RequestData = {
       val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestData]
     }
     
-    @scala.inline
-    implicit class RequestDataMutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
+    extension [Self <: RequestData](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setDebugId(value: Double): Self = StObject.set(x, "debugId", value.asInstanceOf[js.Any])
+      inline def setDebugId(value: Double): Self = StObject.set(x, "debugId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,29 +163,22 @@ object mod {
   }
   object ResponseData {
     
-    @scala.inline
-    def apply(debugId: Double, headers: Headers, statusCode: Double): ResponseData = {
+    inline def apply(debugId: Double, headers: Headers, statusCode: Double): ResponseData = {
       val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseData]
     }
     
-    @scala.inline
-    implicit class ResponseDataMutableBuilder[Self <: ResponseData] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseData](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setDebugId(value: Double): Self = StObject.set(x, "debugId", value.asInstanceOf[js.Any])
+      inline def setDebugId(value: Double): Self = StObject.set(x, "debugId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

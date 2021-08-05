@@ -48,8 +48,7 @@ trait SignedCertificateTimestamp extends StObject {
 }
 object SignedCertificateTimestamp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hashAlgorithm: String,
     logDescription: String,
     logId: String,
@@ -63,31 +62,22 @@ object SignedCertificateTimestamp {
     __obj.asInstanceOf[SignedCertificateTimestamp]
   }
   
-  @scala.inline
-  implicit class SignedCertificateTimestampMutableBuilder[Self <: SignedCertificateTimestamp] (val x: Self) extends AnyVal {
+  extension [Self <: SignedCertificateTimestamp](x: Self) {
     
-    @scala.inline
-    def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
+    inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDescription(value: String): Self = StObject.set(x, "logDescription", value.asInstanceOf[js.Any])
+    inline def setLogDescription(value: String): Self = StObject.set(x, "logDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogId(value: String): Self = StObject.set(x, "logId", value.asInstanceOf[js.Any])
+    inline def setLogId(value: String): Self = StObject.set(x, "logId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureData(value: String): Self = StObject.set(x, "signatureData", value.asInstanceOf[js.Any])
+    inline def setSignatureData(value: String): Self = StObject.set(x, "signatureData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

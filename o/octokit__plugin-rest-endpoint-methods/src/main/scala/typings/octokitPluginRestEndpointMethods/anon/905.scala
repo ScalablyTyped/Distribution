@@ -24,8 +24,7 @@ trait `905` extends StObject {
 }
 object `905` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ReposCreateDeploymentEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[
       ReposCreateDeploymentResponseData | ReposCreateDeploymentResponse202Data | ReposCreateDeploymentResponse409Data
@@ -35,14 +34,11 @@ object `905` {
     __obj.asInstanceOf[`905`]
   }
   
-  @scala.inline
-  implicit class `905MutableBuilder`[Self <: `905`] (val x: Self) extends AnyVal {
+  extension [Self <: `905`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[ReposCreateDeploymentEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[ReposCreateDeploymentEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           ReposCreateDeploymentResponseData | ReposCreateDeploymentResponse202Data | ReposCreateDeploymentResponse409Data
         ]

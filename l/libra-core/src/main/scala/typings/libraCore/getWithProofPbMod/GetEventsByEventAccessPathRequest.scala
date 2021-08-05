@@ -44,11 +44,9 @@ object GetEventsByEventAccessPathRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): GetEventsByEventAccessPathRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetEventsByEventAccessPathRequest]
+  inline def deserializeBinary(bytes: Uint8Array): GetEventsByEventAccessPathRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetEventsByEventAccessPathRequest]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: GetEventsByEventAccessPathRequest, reader: BinaryReader): GetEventsByEventAccessPathRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetEventsByEventAccessPathRequest]
+  inline def deserializeBinaryFromReader(message: GetEventsByEventAccessPathRequest, reader: BinaryReader): GetEventsByEventAccessPathRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetEventsByEventAccessPathRequest]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest.extensions")
   @js.native
@@ -57,17 +55,13 @@ object GetEventsByEventAccessPathRequest {
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathRequest.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: GetEventsByEventAccessPathRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: GetEventsByEventAccessPathRequest, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: GetEventsByEventAccessPathRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: GetEventsByEventAccessPathRequest): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -81,29 +75,22 @@ object GetEventsByEventAccessPathRequest {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(ascending: Boolean, limit: String, startEventSeqNum: String): AsObject = {
+    inline def apply(ascending: Boolean, limit: String, startEventSeqNum: String): AsObject = {
       val __obj = js.Dynamic.literal(ascending = ascending.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], startEventSeqNum = startEventSeqNum.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setAccessPath(value: typings.libraCore.accessPathPbMod.AccessPath.AsObject): Self = StObject.set(x, "accessPath", value.asInstanceOf[js.Any])
+      inline def setAccessPath(value: typings.libraCore.accessPathPbMod.AccessPath.AsObject): Self = StObject.set(x, "accessPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessPathUndefined: Self = StObject.set(x, "accessPath", js.undefined)
+      inline def setAccessPathUndefined: Self = StObject.set(x, "accessPath", js.undefined)
       
-      @scala.inline
-      def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+      inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartEventSeqNum(value: String): Self = StObject.set(x, "startEventSeqNum", value.asInstanceOf[js.Any])
+      inline def setStartEventSeqNum(value: String): Self = StObject.set(x, "startEventSeqNum", value.asInstanceOf[js.Any])
     }
   }
 }

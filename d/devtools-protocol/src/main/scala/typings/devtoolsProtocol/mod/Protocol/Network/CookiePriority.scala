@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CookiePriority extends StObject
 object CookiePriority {
   
-  @scala.inline
-  def High: typings.devtoolsProtocol.devtoolsProtocolStrings.High = "High".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.High]
+  inline def High: typings.devtoolsProtocol.devtoolsProtocolStrings.High = "High".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.High]
   
-  @scala.inline
-  def Low: typings.devtoolsProtocol.devtoolsProtocolStrings.Low = "Low".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Low]
+  inline def Low: typings.devtoolsProtocol.devtoolsProtocolStrings.Low = "Low".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Low]
   
-  @scala.inline
-  def Medium: typings.devtoolsProtocol.devtoolsProtocolStrings.Medium = "Medium".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Medium]
+  inline def Medium: typings.devtoolsProtocol.devtoolsProtocolStrings.Medium = "Medium".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Medium]
 }

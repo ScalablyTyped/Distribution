@@ -27,46 +27,33 @@ trait ReadonlyIcon extends StObject {
 }
 object ReadonlyIcon {
   
-  @scala.inline
-  def apply(url: String): ReadonlyIcon = {
+  inline def apply(url: String): ReadonlyIcon = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIcon]
   }
   
-  @scala.inline
-  implicit class ReadonlyIconMutableBuilder[Self <: ReadonlyIcon] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyIcon](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setLabelOrigin(value: Point): Self = StObject.set(x, "labelOrigin", value.asInstanceOf[js.Any])
+    inline def setLabelOrigin(value: Point): Self = StObject.set(x, "labelOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelOriginUndefined: Self = StObject.set(x, "labelOrigin", js.undefined)
+    inline def setLabelOriginUndefined: Self = StObject.set(x, "labelOrigin", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: Point): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Point): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setScaledSize(value: Size): Self = StObject.set(x, "scaledSize", value.asInstanceOf[js.Any])
+    inline def setScaledSize(value: Size): Self = StObject.set(x, "scaledSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaledSizeUndefined: Self = StObject.set(x, "scaledSize", js.undefined)
+    inline def setScaledSizeUndefined: Self = StObject.set(x, "scaledSize", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

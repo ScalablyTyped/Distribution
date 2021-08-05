@@ -40,8 +40,7 @@ trait BluetoothLEAdvertisement extends StObject {
 }
 object BluetoothLEAdvertisement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataSections: IVector[BluetoothLEAdvertisementDataSection],
     flags: BluetoothLEAdvertisementFlags,
     getManufacturerDataByCompanyId: Double => IVectorView[BluetoothLEManufacturerData],
@@ -54,28 +53,20 @@ object BluetoothLEAdvertisement {
     __obj.asInstanceOf[BluetoothLEAdvertisement]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementMutableBuilder[Self <: BluetoothLEAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisement](x: Self) {
     
-    @scala.inline
-    def setDataSections(value: IVector[BluetoothLEAdvertisementDataSection]): Self = StObject.set(x, "dataSections", value.asInstanceOf[js.Any])
+    inline def setDataSections(value: IVector[BluetoothLEAdvertisementDataSection]): Self = StObject.set(x, "dataSections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: BluetoothLEAdvertisementFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: BluetoothLEAdvertisementFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetManufacturerDataByCompanyId(value: Double => IVectorView[BluetoothLEManufacturerData]): Self = StObject.set(x, "getManufacturerDataByCompanyId", js.Any.fromFunction1(value))
+    inline def setGetManufacturerDataByCompanyId(value: Double => IVectorView[BluetoothLEManufacturerData]): Self = StObject.set(x, "getManufacturerDataByCompanyId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSectionsByType(value: Double => IVectorView[BluetoothLEAdvertisementDataSection]): Self = StObject.set(x, "getSectionsByType", js.Any.fromFunction1(value))
+    inline def setGetSectionsByType(value: Double => IVectorView[BluetoothLEAdvertisementDataSection]): Self = StObject.set(x, "getSectionsByType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerData(value: IVector[BluetoothLEManufacturerData]): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
+    inline def setManufacturerData(value: IVector[BluetoothLEManufacturerData]): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUuids(value: IVector[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
+    inline def setServiceUuids(value: IVector[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
   }
 }

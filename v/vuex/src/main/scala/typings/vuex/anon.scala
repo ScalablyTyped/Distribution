@@ -24,38 +24,28 @@ object anon {
   }
   object Actions {
     
-    @scala.inline
-    def apply[S](): Actions[S] = {
+    inline def apply[S](): Actions[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Actions[S]]
     }
     
-    @scala.inline
-    implicit class ActionsMutableBuilder[Self <: Actions[?], S] (val x: Self & Actions[S]) extends AnyVal {
+    extension [Self <: Actions[?], S](x: Self & Actions[S]) {
       
-      @scala.inline
-      def setActions(value: ActionTree[S, S]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: ActionTree[S, S]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setGetters(value: GetterTree[S, S]): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
+      inline def setGetters(value: GetterTree[S, S]): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
+      inline def setGettersUndefined: Self = StObject.set(x, "getters", js.undefined)
       
-      @scala.inline
-      def setModules(value: ModuleTree[S]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: ModuleTree[S]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setMutations(value: MutationTree[S]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
+      inline def setMutations(value: MutationTree[S]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
+      inline def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
     }
   }
   

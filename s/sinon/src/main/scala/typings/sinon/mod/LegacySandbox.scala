@@ -11,16 +11,13 @@ trait LegacySandbox extends StObject {
 }
 object LegacySandbox {
   
-  @scala.inline
-  def apply(sandbox: `0`): LegacySandbox = {
+  inline def apply(sandbox: `0`): LegacySandbox = {
     val __obj = js.Dynamic.literal(sandbox = sandbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegacySandbox]
   }
   
-  @scala.inline
-  implicit class LegacySandboxMutableBuilder[Self <: LegacySandbox] (val x: Self) extends AnyVal {
+  extension [Self <: LegacySandbox](x: Self) {
     
-    @scala.inline
-    def setSandbox(value: `0`): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: `0`): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
   }
 }

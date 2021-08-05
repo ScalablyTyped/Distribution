@@ -18,28 +18,21 @@ trait DescribeReplicationSubnetGroupsResponse extends StObject {
 }
 object DescribeReplicationSubnetGroupsResponse {
   
-  @scala.inline
-  def apply(): DescribeReplicationSubnetGroupsResponse = {
+  inline def apply(): DescribeReplicationSubnetGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReplicationSubnetGroupsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeReplicationSubnetGroupsResponseMutableBuilder[Self <: DescribeReplicationSubnetGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReplicationSubnetGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReplicationSubnetGroups(value: ReplicationSubnetGroups): Self = StObject.set(x, "ReplicationSubnetGroups", value.asInstanceOf[js.Any])
+    inline def setReplicationSubnetGroups(value: ReplicationSubnetGroups): Self = StObject.set(x, "ReplicationSubnetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationSubnetGroupsUndefined: Self = StObject.set(x, "ReplicationSubnetGroups", js.undefined)
+    inline def setReplicationSubnetGroupsUndefined: Self = StObject.set(x, "ReplicationSubnetGroups", js.undefined)
     
-    @scala.inline
-    def setReplicationSubnetGroupsVarargs(value: ReplicationSubnetGroup*): Self = StObject.set(x, "ReplicationSubnetGroups", js.Array(value :_*))
+    inline def setReplicationSubnetGroupsVarargs(value: ReplicationSubnetGroup*): Self = StObject.set(x, "ReplicationSubnetGroups", js.Array(value :_*))
   }
 }

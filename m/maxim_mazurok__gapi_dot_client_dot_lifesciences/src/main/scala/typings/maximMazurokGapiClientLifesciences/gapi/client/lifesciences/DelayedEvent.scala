@@ -17,28 +17,21 @@ trait DelayedEvent extends StObject {
 }
 object DelayedEvent {
   
-  @scala.inline
-  def apply(): DelayedEvent = {
+  inline def apply(): DelayedEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DelayedEvent]
   }
   
-  @scala.inline
-  implicit class DelayedEventMutableBuilder[Self <: DelayedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DelayedEvent](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
   }
 }

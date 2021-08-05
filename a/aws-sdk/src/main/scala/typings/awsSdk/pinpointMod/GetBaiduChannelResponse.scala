@@ -10,16 +10,13 @@ trait GetBaiduChannelResponse extends StObject {
 }
 object GetBaiduChannelResponse {
   
-  @scala.inline
-  def apply(BaiduChannelResponse: BaiduChannelResponse): GetBaiduChannelResponse = {
+  inline def apply(BaiduChannelResponse: BaiduChannelResponse): GetBaiduChannelResponse = {
     val __obj = js.Dynamic.literal(BaiduChannelResponse = BaiduChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBaiduChannelResponse]
   }
   
-  @scala.inline
-  implicit class GetBaiduChannelResponseMutableBuilder[Self <: GetBaiduChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBaiduChannelResponse](x: Self) {
     
-    @scala.inline
-    def setBaiduChannelResponse(value: BaiduChannelResponse): Self = StObject.set(x, "BaiduChannelResponse", value.asInstanceOf[js.Any])
+    inline def setBaiduChannelResponse(value: BaiduChannelResponse): Self = StObject.set(x, "BaiduChannelResponse", value.asInstanceOf[js.Any])
   }
 }

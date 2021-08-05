@@ -12,28 +12,21 @@ trait BroadcastUrlsResponse extends StObject {
 }
 object BroadcastUrlsResponse {
   
-  @scala.inline
-  def apply(): BroadcastUrlsResponse = {
+  inline def apply(): BroadcastUrlsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BroadcastUrlsResponse]
   }
   
-  @scala.inline
-  implicit class BroadcastUrlsResponseMutableBuilder[Self <: BroadcastUrlsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BroadcastUrlsResponse](x: Self) {
     
-    @scala.inline
-    def setHls(value: String): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
+    inline def setHls(value: String): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsUndefined: Self = StObject.set(x, "hls", js.undefined)
+    inline def setHlsUndefined: Self = StObject.set(x, "hls", js.undefined)
     
-    @scala.inline
-    def setRtmp(value: js.Array[BroadcastOutputOptionsRtmp]): Self = StObject.set(x, "rtmp", value.asInstanceOf[js.Any])
+    inline def setRtmp(value: js.Array[BroadcastOutputOptionsRtmp]): Self = StObject.set(x, "rtmp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtmpUndefined: Self = StObject.set(x, "rtmp", js.undefined)
+    inline def setRtmpUndefined: Self = StObject.set(x, "rtmp", js.undefined)
     
-    @scala.inline
-    def setRtmpVarargs(value: BroadcastOutputOptionsRtmp*): Self = StObject.set(x, "rtmp", js.Array(value :_*))
+    inline def setRtmpVarargs(value: BroadcastOutputOptionsRtmp*): Self = StObject.set(x, "rtmp", js.Array(value :_*))
   }
 }

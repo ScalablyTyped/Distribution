@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CellType extends StObject
 object CellType {
   
-  @scala.inline
-  def code: typings.jupyterlabNbformat.jupyterlabNbformatStrings.code = "code".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.code]
+  inline def code: typings.jupyterlabNbformat.jupyterlabNbformatStrings.code = "code".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.code]
   
-  @scala.inline
-  def markdown: typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown = "markdown".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown]
+  inline def markdown: typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown = "markdown".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.markdown]
   
-  @scala.inline
-  def raw: typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw = "raw".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw]
+  inline def raw: typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw = "raw".asInstanceOf[typings.jupyterlabNbformat.jupyterlabNbformatStrings.raw]
 }

@@ -9,8 +9,7 @@ trait DeleteUserEndpointsInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteUserEndpointsInputMod.DeleteUserEndpointsInput
 object DeleteUserEndpointsInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, UserId: String): DeleteUserEndpointsInput = {
+  inline def apply(ApplicationId: String, UserId: String): DeleteUserEndpointsInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserEndpointsInput]
   }

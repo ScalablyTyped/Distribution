@@ -99,6 +99,5 @@ object Package {
   @JSGlobal("Windows.ApplicationModel.Package.current")
   @js.native
   def current: typings.winrtUwp.Windows.ApplicationModel.Package = js.native
-  @scala.inline
-  def current_=(x: typings.winrtUwp.Windows.ApplicationModel.Package): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+  inline def current_=(x: typings.winrtUwp.Windows.ApplicationModel.Package): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
 }

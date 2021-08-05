@@ -36,8 +36,7 @@ object BluetoothLEAppearance {
     * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
     */
   /* static member */
-  @scala.inline
-  def fromParts(appearanceCategory: Double, appearanceSubCategory: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance = (^.asInstanceOf[js.Dynamic].applyDynamic("fromParts")(appearanceCategory.asInstanceOf[js.Any], appearanceSubCategory.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance]
+  inline def fromParts(appearanceCategory: Double, appearanceSubCategory: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance = (^.asInstanceOf[js.Dynamic].applyDynamic("fromParts")(appearanceCategory.asInstanceOf[js.Any], appearanceSubCategory.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance]
   
   /**
     * Creates a BluetoothLEAppearance object by supplying for raw integer values representing the Category and Subcategory of the Bluetooth LE device.
@@ -45,6 +44,5 @@ object BluetoothLEAppearance {
     * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
     */
   /* static member */
-  @scala.inline
-  def fromRawValue(rawValue: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRawValue")(rawValue.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance]
+  inline def fromRawValue(rawValue: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRawValue")(rawValue.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothLEAppearance]
 }

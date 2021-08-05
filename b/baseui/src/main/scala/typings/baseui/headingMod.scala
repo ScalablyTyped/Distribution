@@ -23,20 +23,16 @@ object headingMod {
   }
   object HeadingLevelProps {
     
-    @scala.inline
-    def apply(): HeadingLevelProps = {
+    inline def apply(): HeadingLevelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeadingLevelProps]
     }
     
-    @scala.inline
-    implicit class HeadingLevelPropsMutableBuilder[Self <: HeadingLevelProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeadingLevelProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -48,20 +44,16 @@ object headingMod {
   }
   object HeadingProps {
     
-    @scala.inline
-    def apply(): HeadingProps = {
+    inline def apply(): HeadingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeadingProps]
     }
     
-    @scala.inline
-    implicit class HeadingPropsMutableBuilder[Self <: HeadingProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeadingProps](x: Self) {
       
-      @scala.inline
-      def setStyleLevel(value: Double): Self = StObject.set(x, "styleLevel", value.asInstanceOf[js.Any])
+      inline def setStyleLevel(value: Double): Self = StObject.set(x, "styleLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleLevelUndefined: Self = StObject.set(x, "styleLevel", js.undefined)
+      inline def setStyleLevelUndefined: Self = StObject.set(x, "styleLevel", js.undefined)
     }
   }
 }

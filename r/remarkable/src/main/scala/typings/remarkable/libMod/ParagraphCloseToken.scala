@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ParagraphCloseToken {
   
-  @scala.inline
-  def apply(level: Double, tight: Boolean): ParagraphCloseToken = {
+  inline def apply(level: Double, tight: Boolean): ParagraphCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("paragraph_close")
     __obj.asInstanceOf[ParagraphCloseToken]
   }
   
-  @scala.inline
-  implicit class ParagraphCloseTokenMutableBuilder[Self <: ParagraphCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: paragraph_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: paragraph_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

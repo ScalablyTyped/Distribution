@@ -24,28 +24,21 @@ trait UsersGetContextForUserEndpoint extends StObject {
 }
 object UsersGetContextForUserEndpoint {
   
-  @scala.inline
-  def apply(username: String): UsersGetContextForUserEndpoint = {
+  inline def apply(username: String): UsersGetContextForUserEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersGetContextForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersGetContextForUserEndpointMutableBuilder[Self <: UsersGetContextForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersGetContextForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setSubject_id(value: String): Self = StObject.set(x, "subject_id", value.asInstanceOf[js.Any])
+    inline def setSubject_id(value: String): Self = StObject.set(x, "subject_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject_idUndefined: Self = StObject.set(x, "subject_id", js.undefined)
+    inline def setSubject_idUndefined: Self = StObject.set(x, "subject_id", js.undefined)
     
-    @scala.inline
-    def setSubject_type(value: organization | repository | issue | pull_request): Self = StObject.set(x, "subject_type", value.asInstanceOf[js.Any])
+    inline def setSubject_type(value: organization | repository | issue | pull_request): Self = StObject.set(x, "subject_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject_typeUndefined: Self = StObject.set(x, "subject_type", js.undefined)
+    inline def setSubject_typeUndefined: Self = StObject.set(x, "subject_type", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

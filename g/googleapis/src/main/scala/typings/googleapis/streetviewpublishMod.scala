@@ -40,8 +40,7 @@ object streetviewpublishMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Streetviewpublish
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object streetviewpublishMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object streetviewpublishMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def streetviewpublish(options: Options): Streetviewpublish = ^.asInstanceOf[js.Dynamic].applyDynamic("streetviewpublish")(options.asInstanceOf[js.Any]).asInstanceOf[Streetviewpublish]
+  inline def streetviewpublish(options: Options): Streetviewpublish = ^.asInstanceOf[js.Dynamic].applyDynamic("streetviewpublish")(options.asInstanceOf[js.Any]).asInstanceOf[Streetviewpublish]
   
-  @scala.inline
-  def streetviewpublish_v1(version: v1): Streetviewpublish = ^.asInstanceOf[js.Dynamic].applyDynamic("streetviewpublish")(version.asInstanceOf[js.Any]).asInstanceOf[Streetviewpublish]
+  inline def streetviewpublish_v1(version: v1): Streetviewpublish = ^.asInstanceOf[js.Dynamic].applyDynamic("streetviewpublish")(version.asInstanceOf[js.Any]).asInstanceOf[Streetviewpublish]
 }

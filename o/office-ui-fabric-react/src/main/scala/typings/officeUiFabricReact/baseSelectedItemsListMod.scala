@@ -27,9 +27,9 @@ object baseSelectedItemsListMod {
     @JSName("UNSAFE_componentWillUpdate")
     def UNSAFE_componentWillUpdate_MBaseSelectedItemsList(newProps: P, newState: IBaseSelectedItemsListState[js.Any]): Unit = js.native
     
-    var _canRemoveItem: js.Any = js.native
+    /* private */ var _canRemoveItem: js.Any = js.native
     
-    var _onSelectedItemsUpdated: js.Any = js.native
+    /* private */ var _onSelectedItemsUpdated: js.Any = js.native
     
     /* CompleteClass */
     override def addItems(items: js.Array[T]): Unit = js.native
@@ -67,9 +67,9 @@ object baseSelectedItemsListMod {
     
     def replaceItem(itemToReplace: T, itemsToReplaceWith: js.Array[T]): Unit = js.native
     
-    var root: HTMLElement = js.native
+    /* protected */ var root: HTMLElement = js.native
     
-    var selection: Selection[IObjectWithKey] = js.native
+    /* protected */ var selection: Selection[IObjectWithKey] = js.native
     
     def unselectAll(): Unit = js.native
     
@@ -87,20 +87,16 @@ object baseSelectedItemsListMod {
   }
   object IBaseSelectedItemsListState {
     
-    @scala.inline
-    def apply[T](items: js.Array[T]): IBaseSelectedItemsListState[T] = {
+    inline def apply[T](items: js.Array[T]): IBaseSelectedItemsListState[T] = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBaseSelectedItemsListState[T]]
     }
     
-    @scala.inline
-    implicit class IBaseSelectedItemsListStateMutableBuilder[Self <: IBaseSelectedItemsListState[?], T] (val x: Self & IBaseSelectedItemsListState[T]) extends AnyVal {
+    extension [Self <: IBaseSelectedItemsListState[?], T](x: Self & IBaseSelectedItemsListState[T]) {
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
 }

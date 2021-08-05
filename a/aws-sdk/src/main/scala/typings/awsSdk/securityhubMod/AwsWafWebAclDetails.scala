@@ -28,40 +28,29 @@ trait AwsWafWebAclDetails extends StObject {
 }
 object AwsWafWebAclDetails {
   
-  @scala.inline
-  def apply(): AwsWafWebAclDetails = {
+  inline def apply(): AwsWafWebAclDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsWafWebAclDetails]
   }
   
-  @scala.inline
-  implicit class AwsWafWebAclDetailsMutableBuilder[Self <: AwsWafWebAclDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsWafWebAclDetails](x: Self) {
     
-    @scala.inline
-    def setDefaultAction(value: NonEmptyString): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
+    inline def setDefaultAction(value: NonEmptyString): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultActionUndefined: Self = StObject.set(x, "DefaultAction", js.undefined)
+    inline def setDefaultActionUndefined: Self = StObject.set(x, "DefaultAction", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRules(value: AwsWafWebAclRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: AwsWafWebAclRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: AwsWafWebAclRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: AwsWafWebAclRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
-    @scala.inline
-    def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
+    inline def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAclIdUndefined: Self = StObject.set(x, "WebAclId", js.undefined)
+    inline def setWebAclIdUndefined: Self = StObject.set(x, "WebAclId", js.undefined)
   }
 }

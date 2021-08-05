@@ -15,8 +15,7 @@ trait MoveCursorTo
      with IHasTarget
 object MoveCursorTo {
   
-  @scala.inline
-  def apply(): MoveCursorTo = {
+  inline def apply(): MoveCursorTo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveCursorTo]
   }

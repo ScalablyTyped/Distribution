@@ -15,19 +15,15 @@ trait ProductionAchievementRequirement extends StObject {
 }
 object ProductionAchievementRequirement {
   
-  @scala.inline
-  def apply(achiev: Achievement, pow: Double): ProductionAchievementRequirement = {
+  inline def apply(achiev: Achievement, pow: Double): ProductionAchievementRequirement = {
     val __obj = js.Dynamic.literal(achiev = achiev.asInstanceOf[js.Any], pow = pow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductionAchievementRequirement]
   }
   
-  @scala.inline
-  implicit class ProductionAchievementRequirementMutableBuilder[Self <: ProductionAchievementRequirement] (val x: Self) extends AnyVal {
+  extension [Self <: ProductionAchievementRequirement](x: Self) {
     
-    @scala.inline
-    def setAchiev(value: Achievement): Self = StObject.set(x, "achiev", value.asInstanceOf[js.Any])
+    inline def setAchiev(value: Achievement): Self = StObject.set(x, "achiev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPow(value: Double): Self = StObject.set(x, "pow", value.asInstanceOf[js.Any])
+    inline def setPow(value: Double): Self = StObject.set(x, "pow", value.asInstanceOf[js.Any])
   }
 }

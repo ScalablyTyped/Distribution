@@ -18,25 +18,19 @@ trait NamespaceError extends StObject {
 }
 object NamespaceError {
   
-  @scala.inline
-  def apply(): NamespaceError = {
+  inline def apply(): NamespaceError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamespaceError]
   }
   
-  @scala.inline
-  implicit class NamespaceErrorMutableBuilder[Self <: NamespaceError] (val x: Self) extends AnyVal {
+  extension [Self <: NamespaceError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setType(value: NamespaceErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: NamespaceErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

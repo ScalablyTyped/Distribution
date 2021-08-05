@@ -19,8 +19,7 @@ trait XAudio
 }
 object XAudio {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
     Begin: js.Any,
@@ -49,13 +48,10 @@ object XAudio {
     __obj.asInstanceOf[XAudio]
   }
   
-  @scala.inline
-  implicit class XAudioMutableBuilder[Self <: XAudio] (val x: Self) extends AnyVal {
+  extension [Self <: XAudio](x: Self) {
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
   }
 }

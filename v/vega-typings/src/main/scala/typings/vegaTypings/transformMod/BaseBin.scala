@@ -59,58 +59,41 @@ trait BaseBin extends StObject {
 }
 object BaseBin {
   
-  @scala.inline
-  def apply(): BaseBin = {
+  inline def apply(): BaseBin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseBin]
   }
   
-  @scala.inline
-  implicit class BaseBinMutableBuilder[Self <: BaseBin] (val x: Self) extends AnyVal {
+  extension [Self <: BaseBin](x: Self) {
     
-    @scala.inline
-    def setBase(value: Double | SignalRef): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Double | SignalRef): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setDivide(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
+    inline def setDivide(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivideUndefined: Self = StObject.set(x, "divide", js.undefined)
+    inline def setDivideUndefined: Self = StObject.set(x, "divide", js.undefined)
     
-    @scala.inline
-    def setMaxbins(value: Double | SignalRef): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
+    inline def setMaxbins(value: Double | SignalRef): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxbinsUndefined: Self = StObject.set(x, "maxbins", js.undefined)
+    inline def setMaxbinsUndefined: Self = StObject.set(x, "maxbins", js.undefined)
     
-    @scala.inline
-    def setMinstep(value: Double | SignalRef): Self = StObject.set(x, "minstep", value.asInstanceOf[js.Any])
+    inline def setMinstep(value: Double | SignalRef): Self = StObject.set(x, "minstep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinstepUndefined: Self = StObject.set(x, "minstep", js.undefined)
+    inline def setMinstepUndefined: Self = StObject.set(x, "minstep", js.undefined)
     
-    @scala.inline
-    def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+    inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setSteps(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

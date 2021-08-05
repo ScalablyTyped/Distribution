@@ -239,7 +239,7 @@ object webdriverCommandsMod {
     
     val method: HttpMethod = js.native
     
-    var params: js.Any = js.native
+    /* private */ var params: js.Any = js.native
     
     var responseData: js.Any = js.native
     
@@ -250,8 +250,7 @@ object webdriverCommandsMod {
     val url: String = js.native
   }
   
-  @scala.inline
-  def parseWebDriverCommand(url: js.Any, method: js.Any): WebDriverCommand = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWebDriverCommand")(url.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[WebDriverCommand]
+  inline def parseWebDriverCommand(url: js.Any, method: js.Any): WebDriverCommand = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWebDriverCommand")(url.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[WebDriverCommand]
   
   /* Rewritten from type alias, can be one of: 
     - typings.blockingProxy.blockingProxyStrings.GET
@@ -261,14 +260,11 @@ object webdriverCommandsMod {
   trait HttpMethod extends StObject
   object HttpMethod {
     
-    @scala.inline
-    def DELETE: typings.blockingProxy.blockingProxyStrings.DELETE = "DELETE".asInstanceOf[typings.blockingProxy.blockingProxyStrings.DELETE]
+    inline def DELETE: typings.blockingProxy.blockingProxyStrings.DELETE = "DELETE".asInstanceOf[typings.blockingProxy.blockingProxyStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.blockingProxy.blockingProxyStrings.GET = "GET".asInstanceOf[typings.blockingProxy.blockingProxyStrings.GET]
+    inline def GET: typings.blockingProxy.blockingProxyStrings.GET = "GET".asInstanceOf[typings.blockingProxy.blockingProxyStrings.GET]
     
-    @scala.inline
-    def POST: typings.blockingProxy.blockingProxyStrings.POST = "POST".asInstanceOf[typings.blockingProxy.blockingProxyStrings.POST]
+    inline def POST: typings.blockingProxy.blockingProxyStrings.POST = "POST".asInstanceOf[typings.blockingProxy.blockingProxyStrings.POST]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -280,16 +276,12 @@ object webdriverCommandsMod {
   trait paramKey extends StObject
   object paramKey {
     
-    @scala.inline
-    def elementId: typings.blockingProxy.blockingProxyStrings.elementId = "elementId".asInstanceOf[typings.blockingProxy.blockingProxyStrings.elementId]
+    inline def elementId: typings.blockingProxy.blockingProxyStrings.elementId = "elementId".asInstanceOf[typings.blockingProxy.blockingProxyStrings.elementId]
     
-    @scala.inline
-    def name: typings.blockingProxy.blockingProxyStrings.name = "name".asInstanceOf[typings.blockingProxy.blockingProxyStrings.name]
+    inline def name: typings.blockingProxy.blockingProxyStrings.name = "name".asInstanceOf[typings.blockingProxy.blockingProxyStrings.name]
     
-    @scala.inline
-    def propertyName: typings.blockingProxy.blockingProxyStrings.propertyName = "propertyName".asInstanceOf[typings.blockingProxy.blockingProxyStrings.propertyName]
+    inline def propertyName: typings.blockingProxy.blockingProxyStrings.propertyName = "propertyName".asInstanceOf[typings.blockingProxy.blockingProxyStrings.propertyName]
     
-    @scala.inline
-    def sessionId: typings.blockingProxy.blockingProxyStrings.sessionId = "sessionId".asInstanceOf[typings.blockingProxy.blockingProxyStrings.sessionId]
+    inline def sessionId: typings.blockingProxy.blockingProxyStrings.sessionId = "sessionId".asInstanceOf[typings.blockingProxy.blockingProxyStrings.sessionId]
   }
 }

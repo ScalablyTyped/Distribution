@@ -22,8 +22,7 @@ trait Buy extends StObject {
 }
 object Buy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buy: scala.Double,
     get: scala.Double,
     install: scala.Double,
@@ -37,28 +36,20 @@ object Buy {
     __obj.asInstanceOf[Buy]
   }
   
-  @scala.inline
-  implicit class BuyMutableBuilder[Self <: Buy] (val x: Self) extends AnyVal {
+  extension [Self <: Buy](x: Self) {
     
-    @scala.inline
-    def setBuy(value: scala.Double): Self = StObject.set(x, "buy", value.asInstanceOf[js.Any])
+    inline def setBuy(value: scala.Double): Self = StObject.set(x, "buy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: scala.Double): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: scala.Double): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstall(value: scala.Double): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+    inline def setInstall(value: scala.Double): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseRequest(value: scala.Double): Self = StObject.set(x, "purchaseRequest", value.asInstanceOf[js.Any])
+    inline def setPurchaseRequest(value: scala.Double): Self = StObject.set(x, "purchaseRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: scala.Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: scala.Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTry(value: scala.Double): Self = StObject.set(x, "try", value.asInstanceOf[js.Any])
+    inline def setTry(value: scala.Double): Self = StObject.set(x, "try", value.asInstanceOf[js.Any])
   }
 }

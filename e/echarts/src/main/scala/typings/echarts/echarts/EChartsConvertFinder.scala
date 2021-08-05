@@ -38,103 +38,71 @@ trait EChartsConvertFinder extends StObject {
 }
 object EChartsConvertFinder {
   
-  @scala.inline
-  def apply(): EChartsConvertFinder = {
+  inline def apply(): EChartsConvertFinder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EChartsConvertFinder]
   }
   
-  @scala.inline
-  implicit class EChartsConvertFinderMutableBuilder[Self <: EChartsConvertFinder] (val x: Self) extends AnyVal {
+  extension [Self <: EChartsConvertFinder](x: Self) {
     
-    @scala.inline
-    def setGeoId(value: String): Self = StObject.set(x, "geoId", value.asInstanceOf[js.Any])
+    inline def setGeoId(value: String): Self = StObject.set(x, "geoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoIdUndefined: Self = StObject.set(x, "geoId", js.undefined)
+    inline def setGeoIdUndefined: Self = StObject.set(x, "geoId", js.undefined)
     
-    @scala.inline
-    def setGeoIndex(value: Double): Self = StObject.set(x, "geoIndex", value.asInstanceOf[js.Any])
+    inline def setGeoIndex(value: Double): Self = StObject.set(x, "geoIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoIndexUndefined: Self = StObject.set(x, "geoIndex", js.undefined)
+    inline def setGeoIndexUndefined: Self = StObject.set(x, "geoIndex", js.undefined)
     
-    @scala.inline
-    def setGeoName(value: String): Self = StObject.set(x, "geoName", value.asInstanceOf[js.Any])
+    inline def setGeoName(value: String): Self = StObject.set(x, "geoName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoNameUndefined: Self = StObject.set(x, "geoName", js.undefined)
+    inline def setGeoNameUndefined: Self = StObject.set(x, "geoName", js.undefined)
     
-    @scala.inline
-    def setGridId(value: String): Self = StObject.set(x, "gridId", value.asInstanceOf[js.Any])
+    inline def setGridId(value: String): Self = StObject.set(x, "gridId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridIdUndefined: Self = StObject.set(x, "gridId", js.undefined)
+    inline def setGridIdUndefined: Self = StObject.set(x, "gridId", js.undefined)
     
-    @scala.inline
-    def setGridIndex(value: Double): Self = StObject.set(x, "gridIndex", value.asInstanceOf[js.Any])
+    inline def setGridIndex(value: Double): Self = StObject.set(x, "gridIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridIndexUndefined: Self = StObject.set(x, "gridIndex", js.undefined)
+    inline def setGridIndexUndefined: Self = StObject.set(x, "gridIndex", js.undefined)
     
-    @scala.inline
-    def setGridName(value: String): Self = StObject.set(x, "gridName", value.asInstanceOf[js.Any])
+    inline def setGridName(value: String): Self = StObject.set(x, "gridName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridNameUndefined: Self = StObject.set(x, "gridName", js.undefined)
+    inline def setGridNameUndefined: Self = StObject.set(x, "gridName", js.undefined)
     
-    @scala.inline
-    def setSeriesId(value: String): Self = StObject.set(x, "seriesId", value.asInstanceOf[js.Any])
+    inline def setSeriesId(value: String): Self = StObject.set(x, "seriesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesIdUndefined: Self = StObject.set(x, "seriesId", js.undefined)
+    inline def setSeriesIdUndefined: Self = StObject.set(x, "seriesId", js.undefined)
     
-    @scala.inline
-    def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
+    inline def setSeriesIndex(value: Double): Self = StObject.set(x, "seriesIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
+    inline def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
     
-    @scala.inline
-    def setSeriesName(value: String): Self = StObject.set(x, "seriesName", value.asInstanceOf[js.Any])
+    inline def setSeriesName(value: String): Self = StObject.set(x, "seriesName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesNameUndefined: Self = StObject.set(x, "seriesName", js.undefined)
+    inline def setSeriesNameUndefined: Self = StObject.set(x, "seriesName", js.undefined)
     
-    @scala.inline
-    def setXAxisId(value: String): Self = StObject.set(x, "xAxisId", value.asInstanceOf[js.Any])
+    inline def setXAxisId(value: String): Self = StObject.set(x, "xAxisId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisIdUndefined: Self = StObject.set(x, "xAxisId", js.undefined)
+    inline def setXAxisIdUndefined: Self = StObject.set(x, "xAxisId", js.undefined)
     
-    @scala.inline
-    def setXAxisIndex(value: Double): Self = StObject.set(x, "xAxisIndex", value.asInstanceOf[js.Any])
+    inline def setXAxisIndex(value: Double): Self = StObject.set(x, "xAxisIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisIndexUndefined: Self = StObject.set(x, "xAxisIndex", js.undefined)
+    inline def setXAxisIndexUndefined: Self = StObject.set(x, "xAxisIndex", js.undefined)
     
-    @scala.inline
-    def setXAxisName(value: String): Self = StObject.set(x, "xAxisName", value.asInstanceOf[js.Any])
+    inline def setXAxisName(value: String): Self = StObject.set(x, "xAxisName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisNameUndefined: Self = StObject.set(x, "xAxisName", js.undefined)
+    inline def setXAxisNameUndefined: Self = StObject.set(x, "xAxisName", js.undefined)
     
-    @scala.inline
-    def setYAxisId(value: String): Self = StObject.set(x, "yAxisId", value.asInstanceOf[js.Any])
+    inline def setYAxisId(value: String): Self = StObject.set(x, "yAxisId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisIdUndefined: Self = StObject.set(x, "yAxisId", js.undefined)
+    inline def setYAxisIdUndefined: Self = StObject.set(x, "yAxisId", js.undefined)
     
-    @scala.inline
-    def setYAxisIndex(value: Double): Self = StObject.set(x, "yAxisIndex", value.asInstanceOf[js.Any])
+    inline def setYAxisIndex(value: Double): Self = StObject.set(x, "yAxisIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisIndexUndefined: Self = StObject.set(x, "yAxisIndex", js.undefined)
+    inline def setYAxisIndexUndefined: Self = StObject.set(x, "yAxisIndex", js.undefined)
     
-    @scala.inline
-    def setYAxisName(value: String): Self = StObject.set(x, "yAxisName", value.asInstanceOf[js.Any])
+    inline def setYAxisName(value: String): Self = StObject.set(x, "yAxisName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisNameUndefined: Self = StObject.set(x, "yAxisName", js.undefined)
+    inline def setYAxisNameUndefined: Self = StObject.set(x, "yAxisName", js.undefined)
   }
 }

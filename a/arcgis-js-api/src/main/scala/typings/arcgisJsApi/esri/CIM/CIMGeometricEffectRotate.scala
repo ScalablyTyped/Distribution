@@ -19,23 +19,18 @@ trait CIMGeometricEffectRotate
 }
 object CIMGeometricEffectRotate {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectRotate = {
+  inline def apply(): CIMGeometricEffectRotate = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectRotate")
     __obj.asInstanceOf[CIMGeometricEffectRotate]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectRotateMutableBuilder[Self <: CIMGeometricEffectRotate] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectRotate](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectRotate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -8,14 +8,13 @@ trait RegularExpressionLiteral
   extends StObject
      with IASTToken {
   
-  var _text: js.Any
+  /* private */ var _text: js.Any
   
-  var _valueText: js.Any
+  /* private */ var _valueText: js.Any
 }
 object RegularExpressionLiteral {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,13 +44,10 @@ object RegularExpressionLiteral {
     __obj.asInstanceOf[RegularExpressionLiteral]
   }
   
-  @scala.inline
-  implicit class RegularExpressionLiteralMutableBuilder[Self <: RegularExpressionLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: RegularExpressionLiteral](x: Self) {
     
-    @scala.inline
-    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

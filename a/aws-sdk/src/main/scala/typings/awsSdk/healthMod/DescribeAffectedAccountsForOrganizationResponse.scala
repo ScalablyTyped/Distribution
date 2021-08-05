@@ -23,34 +23,25 @@ trait DescribeAffectedAccountsForOrganizationResponse extends StObject {
 }
 object DescribeAffectedAccountsForOrganizationResponse {
   
-  @scala.inline
-  def apply(): DescribeAffectedAccountsForOrganizationResponse = {
+  inline def apply(): DescribeAffectedAccountsForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAffectedAccountsForOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAffectedAccountsForOrganizationResponseMutableBuilder[Self <: DescribeAffectedAccountsForOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAffectedAccountsForOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setAffectedAccounts(value: affectedAccountsList): Self = StObject.set(x, "affectedAccounts", value.asInstanceOf[js.Any])
+    inline def setAffectedAccounts(value: affectedAccountsList): Self = StObject.set(x, "affectedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectedAccountsUndefined: Self = StObject.set(x, "affectedAccounts", js.undefined)
+    inline def setAffectedAccountsUndefined: Self = StObject.set(x, "affectedAccounts", js.undefined)
     
-    @scala.inline
-    def setAffectedAccountsVarargs(value: accountId*): Self = StObject.set(x, "affectedAccounts", js.Array(value :_*))
+    inline def setAffectedAccountsVarargs(value: accountId*): Self = StObject.set(x, "affectedAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setEventScopeCode(value: eventScopeCode): Self = StObject.set(x, "eventScopeCode", value.asInstanceOf[js.Any])
+    inline def setEventScopeCode(value: eventScopeCode): Self = StObject.set(x, "eventScopeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventScopeCodeUndefined: Self = StObject.set(x, "eventScopeCode", js.undefined)
+    inline def setEventScopeCodeUndefined: Self = StObject.set(x, "eventScopeCode", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

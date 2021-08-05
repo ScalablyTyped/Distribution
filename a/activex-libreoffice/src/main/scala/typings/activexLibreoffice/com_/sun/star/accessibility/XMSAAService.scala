@@ -23,8 +23,7 @@ trait XMSAAService
 }
 object XMSAAService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
@@ -38,13 +37,10 @@ object XMSAAService {
     __obj.asInstanceOf[XMSAAService]
   }
   
-  @scala.inline
-  implicit class XMSAAServiceMutableBuilder[Self <: XMSAAService] (val x: Self) extends AnyVal {
+  extension [Self <: XMSAAService](x: Self) {
     
-    @scala.inline
-    def setGetAccObjectPtr(value: (Double, Double, Double) => Double): Self = StObject.set(x, "getAccObjectPtr", js.Any.fromFunction3(value))
+    inline def setGetAccObjectPtr(value: (Double, Double, Double) => Double): Self = StObject.set(x, "getAccObjectPtr", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHandleWindowOpened(value: Double => Unit): Self = StObject.set(x, "handleWindowOpened", js.Any.fromFunction1(value))
+    inline def setHandleWindowOpened(value: Double => Unit): Self = StObject.set(x, "handleWindowOpened", js.Any.fromFunction1(value))
   }
 }

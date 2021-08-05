@@ -18,22 +18,17 @@ trait DescribeTrustedAdvisorCheckResultRequest extends StObject {
 }
 object DescribeTrustedAdvisorCheckResultRequest {
   
-  @scala.inline
-  def apply(checkId: String): DescribeTrustedAdvisorCheckResultRequest = {
+  inline def apply(checkId: String): DescribeTrustedAdvisorCheckResultRequest = {
     val __obj = js.Dynamic.literal(checkId = checkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTrustedAdvisorCheckResultRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTrustedAdvisorCheckResultRequestMutableBuilder[Self <: DescribeTrustedAdvisorCheckResultRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrustedAdvisorCheckResultRequest](x: Self) {
     
-    @scala.inline
-    def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
+    inline def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

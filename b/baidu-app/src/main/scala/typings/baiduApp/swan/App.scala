@@ -13,16 +13,13 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(getCurrentPage: () => Page[js.Object, js.Object]): App = {
+  inline def apply(getCurrentPage: () => Page[js.Object, js.Object]): App = {
     val __obj = js.Dynamic.literal(getCurrentPage = js.Any.fromFunction0(getCurrentPage))
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setGetCurrentPage(value: () => Page[js.Object, js.Object]): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
+    inline def setGetCurrentPage(value: () => Page[js.Object, js.Object]): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
   }
 }

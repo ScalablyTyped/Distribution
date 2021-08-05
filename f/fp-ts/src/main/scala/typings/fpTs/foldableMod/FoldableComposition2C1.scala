@@ -27,8 +27,7 @@ trait FoldableComposition2C1[F /* <: /* import warning: transforms.QualifyRefere
 }
 object FoldableComposition2C1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](
     foldMap: Monoid[js.Any] => js.Function2[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ /* fa */ js.Any, 
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
@@ -41,11 +40,9 @@ object FoldableComposition2C1 {
     __obj.asInstanceOf[FoldableComposition2C1[F, G, E]]
   }
   
-  @scala.inline
-  implicit class FoldableComposition2C1MutableBuilder[Self <: FoldableComposition2C1[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E] (val x: Self & (FoldableComposition2C1[F, G, E])) extends AnyVal {
+  extension [Self <: FoldableComposition2C1[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](x: Self & (FoldableComposition2C1[F, G, E])) {
     
-    @scala.inline
-    def setFoldMap(
+    inline def setFoldMap(
       value: Monoid[js.Any] => js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ /* fa */ js.Any, 
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
@@ -53,13 +50,11 @@ object FoldableComposition2C1 {
         ]
     ): Self = StObject.set(x, "foldMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ js.Any, js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Kind<G, A>> */ js.Any, js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction3(value))
   }

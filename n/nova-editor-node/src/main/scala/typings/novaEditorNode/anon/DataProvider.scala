@@ -11,16 +11,13 @@ trait DataProvider[E] extends StObject {
 }
 object DataProvider {
   
-  @scala.inline
-  def apply[E](dataProvider: TreeDataProvider[E]): DataProvider[E] = {
+  inline def apply[E](dataProvider: TreeDataProvider[E]): DataProvider[E] = {
     val __obj = js.Dynamic.literal(dataProvider = dataProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProvider[E]]
   }
   
-  @scala.inline
-  implicit class DataProviderMutableBuilder[Self <: DataProvider[?], E] (val x: Self & DataProvider[E]) extends AnyVal {
+  extension [Self <: DataProvider[?], E](x: Self & DataProvider[E]) {
     
-    @scala.inline
-    def setDataProvider(value: TreeDataProvider[E]): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
+    inline def setDataProvider(value: TreeDataProvider[E]): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
   }
 }

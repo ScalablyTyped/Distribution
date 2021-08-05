@@ -10,19 +10,15 @@ trait TaskDefaults extends StObject {
 }
 object TaskDefaults {
   
-  @scala.inline
-  def apply(): TaskDefaults = {
+  inline def apply(): TaskDefaults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskDefaults]
   }
   
-  @scala.inline
-  implicit class TaskDefaultsMutableBuilder[Self <: TaskDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefaults](x: Self) {
     
-    @scala.inline
-    def setLogDriver(value: Driver): Self = StObject.set(x, "LogDriver", value.asInstanceOf[js.Any])
+    inline def setLogDriver(value: Driver): Self = StObject.set(x, "LogDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogDriverUndefined: Self = StObject.set(x, "LogDriver", js.undefined)
+    inline def setLogDriverUndefined: Self = StObject.set(x, "LogDriver", js.undefined)
   }
 }

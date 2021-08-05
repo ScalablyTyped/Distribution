@@ -48,8 +48,7 @@ trait GetEventPredictionRequest extends StObject {
 }
 object GetEventPredictionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     detectorId: String,
     entities: listOfEntities,
     eventId: String,
@@ -61,40 +60,28 @@ object GetEventPredictionRequest {
     __obj.asInstanceOf[GetEventPredictionRequest]
   }
   
-  @scala.inline
-  implicit class GetEventPredictionRequestMutableBuilder[Self <: GetEventPredictionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEventPredictionRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: String): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: String): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
+    inline def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
+    inline def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
     
-    @scala.inline
-    def setEntities(value: listOfEntities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: listOfEntities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimestamp(value: String): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
+    inline def setEventTimestamp(value: String): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeName(value: String): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
+    inline def setEventTypeName(value: String): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventVariables(value: EventVariableMap): Self = StObject.set(x, "eventVariables", value.asInstanceOf[js.Any])
+    inline def setEventVariables(value: EventVariableMap): Self = StObject.set(x, "eventVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalModelEndpointDataBlobs(value: ExternalModelEndpointDataBlobMap): Self = StObject.set(x, "externalModelEndpointDataBlobs", value.asInstanceOf[js.Any])
+    inline def setExternalModelEndpointDataBlobs(value: ExternalModelEndpointDataBlobMap): Self = StObject.set(x, "externalModelEndpointDataBlobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalModelEndpointDataBlobsUndefined: Self = StObject.set(x, "externalModelEndpointDataBlobs", js.undefined)
+    inline def setExternalModelEndpointDataBlobsUndefined: Self = StObject.set(x, "externalModelEndpointDataBlobs", js.undefined)
   }
 }

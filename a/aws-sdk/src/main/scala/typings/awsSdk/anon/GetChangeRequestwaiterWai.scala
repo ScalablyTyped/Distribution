@@ -19,22 +19,17 @@ trait GetChangeRequestwaiterWai extends StObject {
 }
 object GetChangeRequestwaiterWai {
   
-  @scala.inline
-  def apply(Id: ResourceId): GetChangeRequestwaiterWai = {
+  inline def apply(Id: ResourceId): GetChangeRequestwaiterWai = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChangeRequestwaiterWai]
   }
   
-  @scala.inline
-  implicit class GetChangeRequestwaiterWaiMutableBuilder[Self <: GetChangeRequestwaiterWai] (val x: Self) extends AnyVal {
+  extension [Self <: GetChangeRequestwaiterWai](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

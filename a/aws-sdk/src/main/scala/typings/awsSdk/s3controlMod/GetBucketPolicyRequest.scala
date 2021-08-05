@@ -18,19 +18,15 @@ trait GetBucketPolicyRequest extends StObject {
 }
 object GetBucketPolicyRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Bucket: BucketName): GetBucketPolicyRequest = {
+  inline def apply(AccountId: AccountId, Bucket: BucketName): GetBucketPolicyRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetBucketPolicyRequestMutableBuilder[Self <: GetBucketPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
   }
 }

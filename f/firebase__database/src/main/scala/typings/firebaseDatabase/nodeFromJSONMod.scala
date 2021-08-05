@@ -11,12 +11,8 @@ object nodeFromJSONMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nodeFromJSON(): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")().asInstanceOf[Node]
-  @scala.inline
-  def nodeFromJSON(json: js.Any): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Node]
-  @scala.inline
-  def nodeFromJSON(json: js.Any, priority: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
-  @scala.inline
-  def nodeFromJSON(json: Null, priority: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def nodeFromJSON(): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")().asInstanceOf[Node]
+  inline def nodeFromJSON(json: js.Any): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def nodeFromJSON(json: js.Any, priority: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def nodeFromJSON(json: Null, priority: js.Any): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeFromJSON")(json.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Node]
 }

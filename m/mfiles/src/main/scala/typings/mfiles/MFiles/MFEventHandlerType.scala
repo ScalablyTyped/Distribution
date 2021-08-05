@@ -157,225 +157,151 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFEventHandlerType extends StObject
 object MFEventHandlerType {
   
-  @scala.inline
-  def AfterBeginTransaction: `57` = 57.asInstanceOf[`57`]
+  inline def AfterBeginTransaction: `57` = 57.asInstanceOf[`57`]
   
-  @scala.inline
-  def AfterBringOnline: `54` = 54.asInstanceOf[`54`]
+  inline def AfterBringOnline: `54` = 54.asInstanceOf[`54`]
   
-  @scala.inline
-  def AfterCancelCheckout: `9` = 9.asInstanceOf[`9`]
+  inline def AfterCancelCheckout: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def AfterCancelCheckoutFinalize: `60` = 60.asInstanceOf[`60`]
+  inline def AfterCancelCheckoutFinalize: `60` = 60.asInstanceOf[`60`]
   
-  @scala.inline
-  def AfterCancelCreateObject: `30` = 30.asInstanceOf[`30`]
+  inline def AfterCancelCreateObject: `30` = 30.asInstanceOf[`30`]
   
-  @scala.inline
-  def AfterCheckInChanges: `5` = 5.asInstanceOf[`5`]
+  inline def AfterCheckInChanges: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def AfterCheckInChangesFinalize: `56` = 56.asInstanceOf[`56`]
+  inline def AfterCheckInChangesFinalize: `56` = 56.asInstanceOf[`56`]
   
-  @scala.inline
-  def AfterCheckOut: `7` = 7.asInstanceOf[`7`]
+  inline def AfterCheckOut: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def AfterCreateLoginAccount: `37` = 37.asInstanceOf[`37`]
+  inline def AfterCreateLoginAccount: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def AfterCreateNewObjectFinalize: `3` = 3.asInstanceOf[`3`]
+  inline def AfterCreateNewObjectFinalize: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def AfterCreateNewValueListItem: `21` = 21.asInstanceOf[`21`]
+  inline def AfterCreateNewValueListItem: `21` = 21.asInstanceOf[`21`]
   
-  @scala.inline
-  def AfterCreateUserAccount: `43` = 43.asInstanceOf[`43`]
+  inline def AfterCreateUserAccount: `43` = 43.asInstanceOf[`43`]
   
-  @scala.inline
-  def AfterCreateUserGroup: `49` = 49.asInstanceOf[`49`]
+  inline def AfterCreateUserGroup: `49` = 49.asInstanceOf[`49`]
   
-  @scala.inline
-  def AfterCreateView: `69` = 69.asInstanceOf[`69`]
+  inline def AfterCreateView: `69` = 69.asInstanceOf[`69`]
   
-  @scala.inline
-  def AfterDeleteObject: `11` = 11.asInstanceOf[`11`]
+  inline def AfterDeleteObject: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def AfterDeleteView: `73` = 73.asInstanceOf[`73`]
+  inline def AfterDeleteView: `73` = 73.asInstanceOf[`73`]
   
-  @scala.inline
-  def AfterDestroyObject: `13` = 13.asInstanceOf[`13`]
+  inline def AfterDestroyObject: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def AfterDestroyObjectVersion: `32` = 32.asInstanceOf[`32`]
+  inline def AfterDestroyObjectVersion: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def AfterFileDownload: `19` = 19.asInstanceOf[`19`]
+  inline def AfterFileDownload: `19` = 19.asInstanceOf[`19`]
   
-  @scala.inline
-  def AfterFileUpload: `17` = 17.asInstanceOf[`17`]
+  inline def AfterFileUpload: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def AfterLoginToVault: `23` = 23.asInstanceOf[`23`]
+  inline def AfterLoginToVault: `23` = 23.asInstanceOf[`23`]
   
-  @scala.inline
-  def AfterLogoutFromVault: `25` = 25.asInstanceOf[`25`]
+  inline def AfterLogoutFromVault: `25` = 25.asInstanceOf[`25`]
   
-  @scala.inline
-  def AfterModifyLoginAccount: `39` = 39.asInstanceOf[`39`]
+  inline def AfterModifyLoginAccount: `39` = 39.asInstanceOf[`39`]
   
-  @scala.inline
-  def AfterModifyMFilesCredentials: `65` = 65.asInstanceOf[`65`]
+  inline def AfterModifyMFilesCredentials: `65` = 65.asInstanceOf[`65`]
   
-  @scala.inline
-  def AfterModifyUserAccount: `45` = 45.asInstanceOf[`45`]
+  inline def AfterModifyUserAccount: `45` = 45.asInstanceOf[`45`]
   
-  @scala.inline
-  def AfterModifyUserGroup: `51` = 51.asInstanceOf[`51`]
+  inline def AfterModifyUserGroup: `51` = 51.asInstanceOf[`51`]
   
-  @scala.inline
-  def AfterModifyView: `71` = 71.asInstanceOf[`71`]
+  inline def AfterModifyView: `71` = 71.asInstanceOf[`71`]
   
-  @scala.inline
-  def AfterRemoveLoginAccount: `41` = 41.asInstanceOf[`41`]
+  inline def AfterRemoveLoginAccount: `41` = 41.asInstanceOf[`41`]
   
-  @scala.inline
-  def AfterRemoveUserAccount: `47` = 47.asInstanceOf[`47`]
+  inline def AfterRemoveUserAccount: `47` = 47.asInstanceOf[`47`]
   
-  @scala.inline
-  def AfterRemoveUserGroup: `53` = 53.asInstanceOf[`53`]
+  inline def AfterRemoveUserGroup: `53` = 53.asInstanceOf[`53`]
   
-  @scala.inline
-  def AfterRunScheduledJob: `27` = 27.asInstanceOf[`27`]
+  inline def AfterRunScheduledJob: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def AfterSetObjectPermissions: `15` = 15.asInstanceOf[`15`]
+  inline def AfterSetObjectPermissions: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def AfterSetProperties: `2` = 2.asInstanceOf[`2`]
+  inline def AfterSetProperties: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def AfterUndeleteObject: `62` = 62.asInstanceOf[`62`]
+  inline def AfterUndeleteObject: `62` = 62.asInstanceOf[`62`]
   
-  @scala.inline
-  def AfterUndeleteObjectFinalize: `63` = 63.asInstanceOf[`63`]
+  inline def AfterUndeleteObjectFinalize: `63` = 63.asInstanceOf[`63`]
   
-  @scala.inline
-  def BeforeCancelCheckout: `8` = 8.asInstanceOf[`8`]
+  inline def BeforeCancelCheckout: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def BeforeCancelCreateObject: `29` = 29.asInstanceOf[`29`]
+  inline def BeforeCancelCreateObject: `29` = 29.asInstanceOf[`29`]
   
-  @scala.inline
-  def BeforeCheckInChanges: `4` = 4.asInstanceOf[`4`]
+  inline def BeforeCheckInChanges: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def BeforeCheckInChangesFinalize: `67` = 67.asInstanceOf[`67`]
+  inline def BeforeCheckInChangesFinalize: `67` = 67.asInstanceOf[`67`]
   
-  @scala.inline
-  def BeforeCheckOut: `6` = 6.asInstanceOf[`6`]
+  inline def BeforeCheckOut: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def BeforeCommitTransaction: `58` = 58.asInstanceOf[`58`]
+  inline def BeforeCommitTransaction: `58` = 58.asInstanceOf[`58`]
   
-  @scala.inline
-  def BeforeCreateLoginAccount: `36` = 36.asInstanceOf[`36`]
+  inline def BeforeCreateLoginAccount: `36` = 36.asInstanceOf[`36`]
   
-  @scala.inline
-  def BeforeCreateNewObjectFinalize: `28` = 28.asInstanceOf[`28`]
+  inline def BeforeCreateNewObjectFinalize: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def BeforeCreateNewValueListItem: `20` = 20.asInstanceOf[`20`]
+  inline def BeforeCreateNewValueListItem: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def BeforeCreateUserAccount: `42` = 42.asInstanceOf[`42`]
+  inline def BeforeCreateUserAccount: `42` = 42.asInstanceOf[`42`]
   
-  @scala.inline
-  def BeforeCreateUserGroup: `48` = 48.asInstanceOf[`48`]
+  inline def BeforeCreateUserGroup: `48` = 48.asInstanceOf[`48`]
   
-  @scala.inline
-  def BeforeCreateView: `68` = 68.asInstanceOf[`68`]
+  inline def BeforeCreateView: `68` = 68.asInstanceOf[`68`]
   
-  @scala.inline
-  def BeforeDeleteObject: `10` = 10.asInstanceOf[`10`]
+  inline def BeforeDeleteObject: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def BeforeDeleteView: `72` = 72.asInstanceOf[`72`]
+  inline def BeforeDeleteView: `72` = 72.asInstanceOf[`72`]
   
-  @scala.inline
-  def BeforeDestroyObject: `12` = 12.asInstanceOf[`12`]
+  inline def BeforeDestroyObject: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def BeforeDestroyObjectVersion: `31` = 31.asInstanceOf[`31`]
+  inline def BeforeDestroyObjectVersion: `31` = 31.asInstanceOf[`31`]
   
-  @scala.inline
-  def BeforeFileDownload: `18` = 18.asInstanceOf[`18`]
+  inline def BeforeFileDownload: `18` = 18.asInstanceOf[`18`]
   
-  @scala.inline
-  def BeforeFileUpload: `16` = 16.asInstanceOf[`16`]
+  inline def BeforeFileUpload: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def BeforeLoginToVault: `22` = 22.asInstanceOf[`22`]
+  inline def BeforeLoginToVault: `22` = 22.asInstanceOf[`22`]
   
-  @scala.inline
-  def BeforeLogoutFromVault: `24` = 24.asInstanceOf[`24`]
+  inline def BeforeLogoutFromVault: `24` = 24.asInstanceOf[`24`]
   
-  @scala.inline
-  def BeforeModifyLoginAccount: `38` = 38.asInstanceOf[`38`]
+  inline def BeforeModifyLoginAccount: `38` = 38.asInstanceOf[`38`]
   
-  @scala.inline
-  def BeforeModifyMFilesCredentials: `64` = 64.asInstanceOf[`64`]
+  inline def BeforeModifyMFilesCredentials: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def BeforeModifyUserAccount: `44` = 44.asInstanceOf[`44`]
+  inline def BeforeModifyUserAccount: `44` = 44.asInstanceOf[`44`]
   
-  @scala.inline
-  def BeforeModifyUserGroup: `50` = 50.asInstanceOf[`50`]
+  inline def BeforeModifyUserGroup: `50` = 50.asInstanceOf[`50`]
   
-  @scala.inline
-  def BeforeModifyView: `70` = 70.asInstanceOf[`70`]
+  inline def BeforeModifyView: `70` = 70.asInstanceOf[`70`]
   
-  @scala.inline
-  def BeforeRemoveLoginAccount: `40` = 40.asInstanceOf[`40`]
+  inline def BeforeRemoveLoginAccount: `40` = 40.asInstanceOf[`40`]
   
-  @scala.inline
-  def BeforeRemoveUserAccount: `46` = 46.asInstanceOf[`46`]
+  inline def BeforeRemoveUserAccount: `46` = 46.asInstanceOf[`46`]
   
-  @scala.inline
-  def BeforeRemoveUserGroup: `52` = 52.asInstanceOf[`52`]
+  inline def BeforeRemoveUserGroup: `52` = 52.asInstanceOf[`52`]
   
-  @scala.inline
-  def BeforeReturnView: `66` = 66.asInstanceOf[`66`]
+  inline def BeforeReturnView: `66` = 66.asInstanceOf[`66`]
   
-  @scala.inline
-  def BeforeRollbackTransaction: `59` = 59.asInstanceOf[`59`]
+  inline def BeforeRollbackTransaction: `59` = 59.asInstanceOf[`59`]
   
-  @scala.inline
-  def BeforeRunScheduledJob: `26` = 26.asInstanceOf[`26`]
+  inline def BeforeRunScheduledJob: `26` = 26.asInstanceOf[`26`]
   
-  @scala.inline
-  def BeforeSetObjectPermissions: `14` = 14.asInstanceOf[`14`]
+  inline def BeforeSetObjectPermissions: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def BeforeSetProperties: `1` = 1.asInstanceOf[`1`]
+  inline def BeforeSetProperties: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def BeforeTakeOffline: `55` = 55.asInstanceOf[`55`]
+  inline def BeforeTakeOffline: `55` = 55.asInstanceOf[`55`]
   
-  @scala.inline
-  def BeforeUndeleteObject: `61` = 61.asInstanceOf[`61`]
+  inline def BeforeUndeleteObject: `61` = 61.asInstanceOf[`61`]
   
-  @scala.inline
-  def Replication_AfterCheckInChanges: `34` = 34.asInstanceOf[`34`]
+  inline def Replication_AfterCheckInChanges: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def Replication_AfterCreateNewObjectFinalize: `33` = 33.asInstanceOf[`33`]
+  inline def Replication_AfterCreateNewObjectFinalize: `33` = 33.asInstanceOf[`33`]
   
-  @scala.inline
-  def TypeUndefined: `0` = 0.asInstanceOf[`0`]
+  inline def TypeUndefined: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def VaultExtensionMethod: `35` = 35.asInstanceOf[`35`]
+  inline def VaultExtensionMethod: `35` = 35.asInstanceOf[`35`]
 }

@@ -28,37 +28,27 @@ trait ValidationMessage extends StObject {
 }
 object ValidationMessage {
   
-  @scala.inline
-  def apply(): ValidationMessage = {
+  inline def apply(): ValidationMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationMessage]
   }
   
-  @scala.inline
-  implicit class ValidationMessageMutableBuilder[Self <: ValidationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMessage](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ValidationMessageString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ValidationMessageString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
-    @scala.inline
-    def setOptionName(value: ConfigurationOptionName): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
+    inline def setOptionName(value: ConfigurationOptionName): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
+    inline def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: ValidationSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: ValidationSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "Severity", js.undefined)
   }
 }

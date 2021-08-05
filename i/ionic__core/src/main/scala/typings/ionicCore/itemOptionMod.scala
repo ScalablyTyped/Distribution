@@ -39,7 +39,7 @@ object itemOptionMod {
       */
     var expandable: Boolean = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     @JSName("render")
     def render_MItemOption(): js.Any = js.native

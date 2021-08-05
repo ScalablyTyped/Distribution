@@ -17,37 +17,27 @@ trait PartialClassNameMapGridLiImgFullHeight extends StObject {
 }
 object PartialClassNameMapGridLiImgFullHeight {
   
-  @scala.inline
-  def apply(): PartialClassNameMapGridLiImgFullHeight = {
+  inline def apply(): PartialClassNameMapGridLiImgFullHeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapGridLiImgFullHeight]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapGridLiImgFullHeightMutableBuilder[Self <: PartialClassNameMapGridLiImgFullHeight] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapGridLiImgFullHeight](x: Self) {
     
-    @scala.inline
-    def setImgFullHeight(value: String): Self = StObject.set(x, "imgFullHeight", value.asInstanceOf[js.Any])
+    inline def setImgFullHeight(value: String): Self = StObject.set(x, "imgFullHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgFullHeightUndefined: Self = StObject.set(x, "imgFullHeight", js.undefined)
+    inline def setImgFullHeightUndefined: Self = StObject.set(x, "imgFullHeight", js.undefined)
     
-    @scala.inline
-    def setImgFullWidth(value: String): Self = StObject.set(x, "imgFullWidth", value.asInstanceOf[js.Any])
+    inline def setImgFullWidth(value: String): Self = StObject.set(x, "imgFullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgFullWidthUndefined: Self = StObject.set(x, "imgFullWidth", js.undefined)
+    inline def setImgFullWidthUndefined: Self = StObject.set(x, "imgFullWidth", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTile(value: String): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: String): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait TextEditorComponent extends StObject {
 }
 object TextEditorComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pixelPositionForMouseEvent: ClientX => PixelPosition,
     pixelPositionForScreenPosition: PointLike => PixelPosition,
     screenPositionForMouseEvent: ClientX => Point,
@@ -29,19 +28,14 @@ object TextEditorComponent {
     __obj.asInstanceOf[TextEditorComponent]
   }
   
-  @scala.inline
-  implicit class TextEditorComponentMutableBuilder[Self <: TextEditorComponent] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditorComponent](x: Self) {
     
-    @scala.inline
-    def setPixelPositionForMouseEvent(value: ClientX => PixelPosition): Self = StObject.set(x, "pixelPositionForMouseEvent", js.Any.fromFunction1(value))
+    inline def setPixelPositionForMouseEvent(value: ClientX => PixelPosition): Self = StObject.set(x, "pixelPositionForMouseEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPixelPositionForScreenPosition(value: PointLike => PixelPosition): Self = StObject.set(x, "pixelPositionForScreenPosition", js.Any.fromFunction1(value))
+    inline def setPixelPositionForScreenPosition(value: PointLike => PixelPosition): Self = StObject.set(x, "pixelPositionForScreenPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScreenPositionForMouseEvent(value: ClientX => Point): Self = StObject.set(x, "screenPositionForMouseEvent", js.Any.fromFunction1(value))
+    inline def setScreenPositionForMouseEvent(value: ClientX => Point): Self = StObject.set(x, "screenPositionForMouseEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScreenPositionForPixelPosition(value: PixelPosition => Point): Self = StObject.set(x, "screenPositionForPixelPosition", js.Any.fromFunction1(value))
+    inline def setScreenPositionForPixelPosition(value: PixelPosition => Point): Self = StObject.set(x, "screenPositionForPixelPosition", js.Any.fromFunction1(value))
   }
 }

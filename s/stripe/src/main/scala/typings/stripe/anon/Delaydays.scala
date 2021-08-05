@@ -44,37 +44,27 @@ trait Delaydays extends StObject {
 }
 object Delaydays {
   
-  @scala.inline
-  def apply(): Delaydays = {
+  inline def apply(): Delaydays = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Delaydays]
   }
   
-  @scala.inline
-  implicit class DelaydaysMutableBuilder[Self <: Delaydays] (val x: Self) extends AnyVal {
+  extension [Self <: Delaydays](x: Self) {
     
-    @scala.inline
-    def setDelay_days(value: Double | String): Self = StObject.set(x, "delay_days", value.asInstanceOf[js.Any])
+    inline def setDelay_days(value: Double | String): Self = StObject.set(x, "delay_days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay_daysUndefined: Self = StObject.set(x, "delay_days", js.undefined)
+    inline def setDelay_daysUndefined: Self = StObject.set(x, "delay_days", js.undefined)
     
-    @scala.inline
-    def setInterval(value: manual | daily | weekly | monthly): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: manual | daily | weekly | monthly): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setMonthly_anchor(value: Double): Self = StObject.set(x, "monthly_anchor", value.asInstanceOf[js.Any])
+    inline def setMonthly_anchor(value: Double): Self = StObject.set(x, "monthly_anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthly_anchorUndefined: Self = StObject.set(x, "monthly_anchor", js.undefined)
+    inline def setMonthly_anchorUndefined: Self = StObject.set(x, "monthly_anchor", js.undefined)
     
-    @scala.inline
-    def setWeekly_anchor(value: monday | tuesday | wednesday | thursday | friday | saturday | sunday): Self = StObject.set(x, "weekly_anchor", value.asInstanceOf[js.Any])
+    inline def setWeekly_anchor(value: monday | tuesday | wednesday | thursday | friday | saturday | sunday): Self = StObject.set(x, "weekly_anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekly_anchorUndefined: Self = StObject.set(x, "weekly_anchor", js.undefined)
+    inline def setWeekly_anchorUndefined: Self = StObject.set(x, "weekly_anchor", js.undefined)
   }
 }

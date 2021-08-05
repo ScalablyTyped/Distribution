@@ -48,64 +48,45 @@ trait LicenseOperationFailure extends StObject {
 }
 object LicenseOperationFailure {
   
-  @scala.inline
-  def apply(): LicenseOperationFailure = {
+  inline def apply(): LicenseOperationFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicenseOperationFailure]
   }
   
-  @scala.inline
-  implicit class LicenseOperationFailureMutableBuilder[Self <: LicenseOperationFailure] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseOperationFailure](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setFailureTime(value: DateTime): Self = StObject.set(x, "FailureTime", value.asInstanceOf[js.Any])
+    inline def setFailureTime(value: DateTime): Self = StObject.set(x, "FailureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureTimeUndefined: Self = StObject.set(x, "FailureTime", js.undefined)
+    inline def setFailureTimeUndefined: Self = StObject.set(x, "FailureTime", js.undefined)
     
-    @scala.inline
-    def setMetadataList(value: MetadataList): Self = StObject.set(x, "MetadataList", value.asInstanceOf[js.Any])
+    inline def setMetadataList(value: MetadataList): Self = StObject.set(x, "MetadataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
+    inline def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
     
-    @scala.inline
-    def setMetadataListVarargs(value: Metadata*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
+    inline def setMetadataListVarargs(value: Metadata*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
     
-    @scala.inline
-    def setOperationName(value: String): Self = StObject.set(x, "OperationName", value.asInstanceOf[js.Any])
+    inline def setOperationName(value: String): Self = StObject.set(x, "OperationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationNameUndefined: Self = StObject.set(x, "OperationName", js.undefined)
+    inline def setOperationNameUndefined: Self = StObject.set(x, "OperationName", js.undefined)
     
-    @scala.inline
-    def setOperationRequestedBy(value: String): Self = StObject.set(x, "OperationRequestedBy", value.asInstanceOf[js.Any])
+    inline def setOperationRequestedBy(value: String): Self = StObject.set(x, "OperationRequestedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationRequestedByUndefined: Self = StObject.set(x, "OperationRequestedBy", js.undefined)
+    inline def setOperationRequestedByUndefined: Self = StObject.set(x, "OperationRequestedBy", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
     
-    @scala.inline
-    def setResourceOwnerId(value: String): Self = StObject.set(x, "ResourceOwnerId", value.asInstanceOf[js.Any])
+    inline def setResourceOwnerId(value: String): Self = StObject.set(x, "ResourceOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOwnerIdUndefined: Self = StObject.set(x, "ResourceOwnerId", js.undefined)
+    inline def setResourceOwnerIdUndefined: Self = StObject.set(x, "ResourceOwnerId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

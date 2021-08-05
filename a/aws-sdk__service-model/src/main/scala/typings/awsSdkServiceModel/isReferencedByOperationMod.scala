@@ -11,6 +11,5 @@ object isReferencedByOperationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isReferencedByOperation(model: ApiModel, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferencedByOperation")(model.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReferencedByOperation(model: ApiModel, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferencedByOperation")(model.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

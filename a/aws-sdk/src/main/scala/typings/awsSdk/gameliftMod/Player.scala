@@ -28,37 +28,27 @@ trait Player extends StObject {
 }
 object Player {
   
-  @scala.inline
-  def apply(): Player = {
+  inline def apply(): Player = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Player]
   }
   
-  @scala.inline
-  implicit class PlayerMutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
+  extension [Self <: Player](x: Self) {
     
-    @scala.inline
-    def setLatencyInMs(value: LatencyMap): Self = StObject.set(x, "LatencyInMs", value.asInstanceOf[js.Any])
+    inline def setLatencyInMs(value: LatencyMap): Self = StObject.set(x, "LatencyInMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyInMsUndefined: Self = StObject.set(x, "LatencyInMs", js.undefined)
+    inline def setLatencyInMsUndefined: Self = StObject.set(x, "LatencyInMs", js.undefined)
     
-    @scala.inline
-    def setPlayerAttributes(value: PlayerAttributeMap): Self = StObject.set(x, "PlayerAttributes", value.asInstanceOf[js.Any])
+    inline def setPlayerAttributes(value: PlayerAttributeMap): Self = StObject.set(x, "PlayerAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerAttributesUndefined: Self = StObject.set(x, "PlayerAttributes", js.undefined)
+    inline def setPlayerAttributesUndefined: Self = StObject.set(x, "PlayerAttributes", js.undefined)
     
-    @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
+    inline def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
+    inline def setPlayerIdUndefined: Self = StObject.set(x, "PlayerId", js.undefined)
     
-    @scala.inline
-    def setTeam(value: NonZeroAndMaxString): Self = StObject.set(x, "Team", value.asInstanceOf[js.Any])
+    inline def setTeam(value: NonZeroAndMaxString): Self = StObject.set(x, "Team", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamUndefined: Self = StObject.set(x, "Team", js.undefined)
+    inline def setTeamUndefined: Self = StObject.set(x, "Team", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ object mod {
     var url: String = js.native
   }
   
-  @scala.inline
-  def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
+  inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
   trait Blob extends StObject {
     
@@ -45,29 +44,22 @@ object mod {
   }
   object Blob {
     
-    @scala.inline
-    def apply(byte_size: Double, checksum: String, content_type: String, filename: String, signed_id: String): Blob = {
+    inline def apply(byte_size: Double, checksum: String, content_type: String, filename: String, signed_id: String): Blob = {
       val __obj = js.Dynamic.literal(byte_size = byte_size.asInstanceOf[js.Any], checksum = checksum.asInstanceOf[js.Any], content_type = content_type.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], signed_id = signed_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Blob]
     }
     
-    @scala.inline
-    implicit class BlobMutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
+    extension [Self <: Blob](x: Self) {
       
-      @scala.inline
-      def setByte_size(value: Double): Self = StObject.set(x, "byte_size", value.asInstanceOf[js.Any])
+      inline def setByte_size(value: Double): Self = StObject.set(x, "byte_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigned_id(value: String): Self = StObject.set(x, "signed_id", value.asInstanceOf[js.Any])
+      inline def setSigned_id(value: String): Self = StObject.set(x, "signed_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,26 +71,20 @@ object mod {
   }
   object DirectUploadDelegate {
     
-    @scala.inline
-    def apply(): DirectUploadDelegate = {
+    inline def apply(): DirectUploadDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectUploadDelegate]
     }
     
-    @scala.inline
-    implicit class DirectUploadDelegateMutableBuilder[Self <: DirectUploadDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: DirectUploadDelegate](x: Self) {
       
-      @scala.inline
-      def setDirectUploadWillCreateBlobWithXHR(value: /* xhr */ XMLHttpRequest => Unit): Self = StObject.set(x, "directUploadWillCreateBlobWithXHR", js.Any.fromFunction1(value))
+      inline def setDirectUploadWillCreateBlobWithXHR(value: /* xhr */ XMLHttpRequest => Unit): Self = StObject.set(x, "directUploadWillCreateBlobWithXHR", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDirectUploadWillCreateBlobWithXHRUndefined: Self = StObject.set(x, "directUploadWillCreateBlobWithXHR", js.undefined)
+      inline def setDirectUploadWillCreateBlobWithXHRUndefined: Self = StObject.set(x, "directUploadWillCreateBlobWithXHR", js.undefined)
       
-      @scala.inline
-      def setDirectUploadWillStoreFileWithXHR(value: /* xhr */ XMLHttpRequest => Unit): Self = StObject.set(x, "directUploadWillStoreFileWithXHR", js.Any.fromFunction1(value))
+      inline def setDirectUploadWillStoreFileWithXHR(value: /* xhr */ XMLHttpRequest => Unit): Self = StObject.set(x, "directUploadWillStoreFileWithXHR", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDirectUploadWillStoreFileWithXHRUndefined: Self = StObject.set(x, "directUploadWillStoreFileWithXHR", js.undefined)
+      inline def setDirectUploadWillStoreFileWithXHRUndefined: Self = StObject.set(x, "directUploadWillStoreFileWithXHR", js.undefined)
     }
   }
 }

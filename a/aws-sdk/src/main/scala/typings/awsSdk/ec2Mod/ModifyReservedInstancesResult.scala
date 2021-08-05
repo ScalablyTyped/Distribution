@@ -13,19 +13,15 @@ trait ModifyReservedInstancesResult extends StObject {
 }
 object ModifyReservedInstancesResult {
   
-  @scala.inline
-  def apply(): ModifyReservedInstancesResult = {
+  inline def apply(): ModifyReservedInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyReservedInstancesResult]
   }
   
-  @scala.inline
-  implicit class ModifyReservedInstancesResultMutableBuilder[Self <: ModifyReservedInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyReservedInstancesResult](x: Self) {
     
-    @scala.inline
-    def setReservedInstancesModificationId(value: String): Self = StObject.set(x, "ReservedInstancesModificationId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesModificationId(value: String): Self = StObject.set(x, "ReservedInstancesModificationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesModificationIdUndefined: Self = StObject.set(x, "ReservedInstancesModificationId", js.undefined)
+    inline def setReservedInstancesModificationIdUndefined: Self = StObject.set(x, "ReservedInstancesModificationId", js.undefined)
   }
 }

@@ -19,7 +19,7 @@ object keytipManagerMod {
       * @param uniqueID - Unique ID, will default to the next unique ID if not passed
       * @returns IUniqueKeytip object
       */
-    var _getUniqueKtp: js.Any = js.native
+    /* private */ var _getUniqueKtp: js.Any = js.native
     
     /**
       * Adds the overflowSetSequence to the keytipProps if its parent keytip also has it
@@ -110,16 +110,14 @@ object keytipManagerMod {
     @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipManager", "KeytipManager._instance")
     @js.native
     def _instance: js.Any = js.native
-    @scala.inline
-    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /**
       * Static function to get singleton KeytipManager instance
       *
       * @returns Singleton KeytipManager instance
       */
-    @scala.inline
-    def getInstance(): KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[KeytipManager]
+    inline def getInstance(): KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[KeytipManager]
   }
   
   trait IUniqueKeytip extends StObject {
@@ -130,20 +128,16 @@ object keytipManagerMod {
   }
   object IUniqueKeytip {
     
-    @scala.inline
-    def apply(keytip: IKeytipProps, uniqueID: String): IUniqueKeytip = {
+    inline def apply(keytip: IKeytipProps, uniqueID: String): IUniqueKeytip = {
       val __obj = js.Dynamic.literal(keytip = keytip.asInstanceOf[js.Any], uniqueID = uniqueID.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUniqueKeytip]
     }
     
-    @scala.inline
-    implicit class IUniqueKeytipMutableBuilder[Self <: IUniqueKeytip] (val x: Self) extends AnyVal {
+    extension [Self <: IUniqueKeytip](x: Self) {
       
-      @scala.inline
-      def setKeytip(value: IKeytipProps): Self = StObject.set(x, "keytip", value.asInstanceOf[js.Any])
+      inline def setKeytip(value: IKeytipProps): Self = StObject.set(x, "keytip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueID(value: String): Self = StObject.set(x, "uniqueID", value.asInstanceOf[js.Any])
+      inline def setUniqueID(value: String): Self = StObject.set(x, "uniqueID", value.asInstanceOf[js.Any])
     }
   }
 }

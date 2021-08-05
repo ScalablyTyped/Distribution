@@ -24,8 +24,7 @@ object UdpSocket {
   }
   object Implementation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bind: (String, Double, js.Function0[Unit]) => Unit,
       destroy: js.Function0[Unit] => Unit,
       getInfo: js.Function1[/* socketInfo */ SocketInfo, Unit] => Unit,
@@ -35,20 +34,15 @@ object UdpSocket {
       __obj.asInstanceOf[Implementation]
     }
     
-    @scala.inline
-    implicit class ImplementationMutableBuilder[Self <: Implementation] (val x: Self) extends AnyVal {
+    extension [Self <: Implementation](x: Self) {
       
-      @scala.inline
-      def setBind(value: (String, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
+      inline def setBind(value: (String, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDestroy(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetInfo(value: js.Function1[/* socketInfo */ SocketInfo, Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+      inline def setGetInfo(value: js.Function1[/* socketInfo */ SocketInfo, Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSendTo(value: (ArrayBuffer, String, Double, js.Function1[/* bytesWritten */ Double, Unit]) => Unit): Self = StObject.set(x, "sendTo", js.Any.fromFunction4(value))
+      inline def setSendTo(value: (ArrayBuffer, String, Double, js.Function1[/* bytesWritten */ Double, Unit]) => Unit): Self = StObject.set(x, "sendTo", js.Any.fromFunction4(value))
     }
   }
   
@@ -67,26 +61,20 @@ object UdpSocket {
   }
   object RecvFromInfo {
     
-    @scala.inline
-    def apply(address: String, data: ArrayBuffer, port: Double, resultCode: Double): RecvFromInfo = {
+    inline def apply(address: String, data: ArrayBuffer, port: Double, resultCode: Double): RecvFromInfo = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], resultCode = resultCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecvFromInfo]
     }
     
-    @scala.inline
-    implicit class RecvFromInfoMutableBuilder[Self <: RecvFromInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RecvFromInfo](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCode(value: Double): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: Double): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,8 +94,7 @@ object UdpSocket {
   }
   object Socket {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bind: (String, Double) => js.Promise[Unit],
       destroy: () => js.Promise[Unit],
       getInfo: () => js.Promise[SocketInfo],
@@ -118,23 +105,17 @@ object UdpSocket {
       __obj.asInstanceOf[Socket]
     }
     
-    @scala.inline
-    implicit class SocketMutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
+    extension [Self <: Socket](x: Self) {
       
-      @scala.inline
-      def setBind(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+      inline def setBind(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroy(value: () => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInfo(value: () => js.Promise[SocketInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+      inline def setGetInfo(value: () => js.Promise[SocketInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSendTo(value: Method3[ArrayBuffer, String, Double, Double]): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
+      inline def setSendTo(value: Method3[ArrayBuffer, String, Double, Double]): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,20 +131,16 @@ object UdpSocket {
   }
   object SocketInfo {
     
-    @scala.inline
-    def apply(localAddress: String, localPort: Double): SocketInfo = {
+    inline def apply(localAddress: String, localPort: Double): SocketInfo = {
       val __obj = js.Dynamic.literal(localAddress = localAddress.asInstanceOf[js.Any], localPort = localPort.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketInfo]
     }
     
-    @scala.inline
-    implicit class SocketInfoMutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SocketInfo](x: Self) {
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
     }
   }
 }

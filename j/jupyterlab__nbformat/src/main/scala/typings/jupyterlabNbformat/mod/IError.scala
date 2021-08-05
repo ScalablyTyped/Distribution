@@ -33,28 +33,21 @@ trait IError
 }
 object IError {
   
-  @scala.inline
-  def apply(ename: String, evalue: String, traceback: js.Array[String]): IError = {
+  inline def apply(ename: String, evalue: String, traceback: js.Array[String]): IError = {
     val __obj = js.Dynamic.literal(ename = ename.asInstanceOf[js.Any], evalue = evalue.asInstanceOf[js.Any], output_type = "error", traceback = traceback.asInstanceOf[js.Any])
     __obj.asInstanceOf[IError]
   }
   
-  @scala.inline
-  implicit class IErrorMutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
+  extension [Self <: IError](x: Self) {
     
-    @scala.inline
-    def setEname(value: String): Self = StObject.set(x, "ename", value.asInstanceOf[js.Any])
+    inline def setEname(value: String): Self = StObject.set(x, "ename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvalue(value: String): Self = StObject.set(x, "evalue", value.asInstanceOf[js.Any])
+    inline def setEvalue(value: String): Self = StObject.set(x, "evalue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_type(value: error): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: error): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceback(value: js.Array[String]): Self = StObject.set(x, "traceback", value.asInstanceOf[js.Any])
+    inline def setTraceback(value: js.Array[String]): Self = StObject.set(x, "traceback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value :_*))
+    inline def setTracebackVarargs(value: String*): Self = StObject.set(x, "traceback", js.Array(value :_*))
   }
 }

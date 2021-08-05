@@ -37,40 +37,29 @@ trait SchemaVmEndpointNatMappingsInterfaceNatMappings extends StObject {
 }
 object SchemaVmEndpointNatMappingsInterfaceNatMappings {
   
-  @scala.inline
-  def apply(): SchemaVmEndpointNatMappingsInterfaceNatMappings = {
+  inline def apply(): SchemaVmEndpointNatMappingsInterfaceNatMappings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVmEndpointNatMappingsInterfaceNatMappings]
   }
   
-  @scala.inline
-  implicit class SchemaVmEndpointNatMappingsInterfaceNatMappingsMutableBuilder[Self <: SchemaVmEndpointNatMappingsInterfaceNatMappings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVmEndpointNatMappingsInterfaceNatMappings](x: Self) {
     
-    @scala.inline
-    def setNatIpPortRanges(value: js.Array[String]): Self = StObject.set(x, "natIpPortRanges", value.asInstanceOf[js.Any])
+    inline def setNatIpPortRanges(value: js.Array[String]): Self = StObject.set(x, "natIpPortRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatIpPortRangesUndefined: Self = StObject.set(x, "natIpPortRanges", js.undefined)
+    inline def setNatIpPortRangesUndefined: Self = StObject.set(x, "natIpPortRanges", js.undefined)
     
-    @scala.inline
-    def setNatIpPortRangesVarargs(value: String*): Self = StObject.set(x, "natIpPortRanges", js.Array(value :_*))
+    inline def setNatIpPortRangesVarargs(value: String*): Self = StObject.set(x, "natIpPortRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setNumTotalNatPorts(value: Double): Self = StObject.set(x, "numTotalNatPorts", value.asInstanceOf[js.Any])
+    inline def setNumTotalNatPorts(value: Double): Self = StObject.set(x, "numTotalNatPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumTotalNatPortsUndefined: Self = StObject.set(x, "numTotalNatPorts", js.undefined)
+    inline def setNumTotalNatPortsUndefined: Self = StObject.set(x, "numTotalNatPorts", js.undefined)
     
-    @scala.inline
-    def setSourceAliasIpRange(value: String): Self = StObject.set(x, "sourceAliasIpRange", value.asInstanceOf[js.Any])
+    inline def setSourceAliasIpRange(value: String): Self = StObject.set(x, "sourceAliasIpRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAliasIpRangeUndefined: Self = StObject.set(x, "sourceAliasIpRange", js.undefined)
+    inline def setSourceAliasIpRangeUndefined: Self = StObject.set(x, "sourceAliasIpRange", js.undefined)
     
-    @scala.inline
-    def setSourceVirtualIp(value: String): Self = StObject.set(x, "sourceVirtualIp", value.asInstanceOf[js.Any])
+    inline def setSourceVirtualIp(value: String): Self = StObject.set(x, "sourceVirtualIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVirtualIpUndefined: Self = StObject.set(x, "sourceVirtualIp", js.undefined)
+    inline def setSourceVirtualIpUndefined: Self = StObject.set(x, "sourceVirtualIp", js.undefined)
   }
 }

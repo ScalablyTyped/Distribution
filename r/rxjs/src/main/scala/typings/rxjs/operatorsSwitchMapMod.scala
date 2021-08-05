@@ -10,8 +10,7 @@ object operatorsSwitchMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def switchMap[T, R](
+  inline def switchMap[T, R](
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 

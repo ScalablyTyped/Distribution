@@ -185,10 +185,8 @@ object tilegrid {
       * @api
       */
     /* static member */
-    @scala.inline
-    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject): WMTS = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any]).asInstanceOf[WMTS]
-    @scala.inline
-    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject, opt_extent: Extent_): WMTS = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[WMTS]
+    inline def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject): WMTS = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any]).asInstanceOf[WMTS]
+    inline def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject, opt_extent: Extent_): WMTS = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[WMTS]
   }
   
   /**
@@ -197,8 +195,6 @@ object tilegrid {
     * @return Tile grid instance.
     * @api
     */
-  @scala.inline
-  def createXYZ(): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")().asInstanceOf[TileGrid]
-  @scala.inline
-  def createXYZ(opt_options: XYZOptions): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")(opt_options.asInstanceOf[js.Any]).asInstanceOf[TileGrid]
+  inline def createXYZ(): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")().asInstanceOf[TileGrid]
+  inline def createXYZ(opt_options: XYZOptions): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")(opt_options.asInstanceOf[js.Any]).asInstanceOf[TileGrid]
 }

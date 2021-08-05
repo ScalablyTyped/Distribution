@@ -12,25 +12,19 @@ trait BatchToSpaceNDAttrs extends StObject {
 }
 object BatchToSpaceNDAttrs {
   
-  @scala.inline
-  def apply(blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): BatchToSpaceNDAttrs = {
+  inline def apply(blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): BatchToSpaceNDAttrs = {
     val __obj = js.Dynamic.literal(blockShape = blockShape.asInstanceOf[js.Any], crops = crops.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchToSpaceNDAttrs]
   }
   
-  @scala.inline
-  implicit class BatchToSpaceNDAttrsMutableBuilder[Self <: BatchToSpaceNDAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: BatchToSpaceNDAttrs](x: Self) {
     
-    @scala.inline
-    def setBlockShape(value: js.Array[Double]): Self = StObject.set(x, "blockShape", value.asInstanceOf[js.Any])
+    inline def setBlockShape(value: js.Array[Double]): Self = StObject.set(x, "blockShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockShapeVarargs(value: Double*): Self = StObject.set(x, "blockShape", js.Array(value :_*))
+    inline def setBlockShapeVarargs(value: Double*): Self = StObject.set(x, "blockShape", js.Array(value :_*))
     
-    @scala.inline
-    def setCrops(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "crops", value.asInstanceOf[js.Any])
+    inline def setCrops(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "crops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "crops", js.Array(value :_*))
+    inline def setCropsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "crops", js.Array(value :_*))
   }
 }

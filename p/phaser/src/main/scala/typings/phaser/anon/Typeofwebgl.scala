@@ -168,8 +168,7 @@ trait Typeofwebgl extends StObject {
 }
 object Typeofwebgl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssetManager: Instantiable2[
       /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
       /* pathPrefix */ js.UndefOr[String], 
@@ -266,11 +265,9 @@ object Typeofwebgl {
     __obj.asInstanceOf[Typeofwebgl]
   }
   
-  @scala.inline
-  implicit class TypeofwebglMutableBuilder[Self <: Typeofwebgl] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofwebgl](x: Self) {
     
-    @scala.inline
-    def setAssetManager(
+    inline def setAssetManager(
       value: Instantiable2[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           /* pathPrefix */ js.UndefOr[String], 
@@ -278,14 +275,11 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "AssetManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor2Attribute(value: Instantiable0[Color2Attribute]): Self = StObject.set(x, "Color2Attribute", value.asInstanceOf[js.Any])
+    inline def setColor2Attribute(value: Instantiable0[Color2Attribute]): Self = StObject.set(x, "Color2Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorAttribute(value: Instantiable0[ColorAttribute]): Self = StObject.set(x, "ColorAttribute", value.asInstanceOf[js.Any])
+    inline def setColorAttribute(value: Instantiable0[ColorAttribute]): Self = StObject.set(x, "ColorAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGLTexture(
+    inline def setGLTexture(
       value: Instantiable3[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           /* image */ HTMLImageElement, 
@@ -294,56 +288,39 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "GLTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM00(value: /* 0 */ Double): Self = StObject.set(x, "M00", value.asInstanceOf[js.Any])
+    inline def setM00(value: /* 0 */ Double): Self = StObject.set(x, "M00", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM01(value: /* 4 */ Double): Self = StObject.set(x, "M01", value.asInstanceOf[js.Any])
+    inline def setM01(value: /* 4 */ Double): Self = StObject.set(x, "M01", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM02(value: /* 8 */ Double): Self = StObject.set(x, "M02", value.asInstanceOf[js.Any])
+    inline def setM02(value: /* 8 */ Double): Self = StObject.set(x, "M02", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM03(value: /* 12 */ Double): Self = StObject.set(x, "M03", value.asInstanceOf[js.Any])
+    inline def setM03(value: /* 12 */ Double): Self = StObject.set(x, "M03", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM10(value: /* 1 */ Double): Self = StObject.set(x, "M10", value.asInstanceOf[js.Any])
+    inline def setM10(value: /* 1 */ Double): Self = StObject.set(x, "M10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM11(value: /* 5 */ Double): Self = StObject.set(x, "M11", value.asInstanceOf[js.Any])
+    inline def setM11(value: /* 5 */ Double): Self = StObject.set(x, "M11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM12(value: /* 9 */ Double): Self = StObject.set(x, "M12", value.asInstanceOf[js.Any])
+    inline def setM12(value: /* 9 */ Double): Self = StObject.set(x, "M12", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM13(value: /* 13 */ Double): Self = StObject.set(x, "M13", value.asInstanceOf[js.Any])
+    inline def setM13(value: /* 13 */ Double): Self = StObject.set(x, "M13", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM20(value: /* 2 */ Double): Self = StObject.set(x, "M20", value.asInstanceOf[js.Any])
+    inline def setM20(value: /* 2 */ Double): Self = StObject.set(x, "M20", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM21(value: /* 6 */ Double): Self = StObject.set(x, "M21", value.asInstanceOf[js.Any])
+    inline def setM21(value: /* 6 */ Double): Self = StObject.set(x, "M21", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM22(value: /* 10 */ Double): Self = StObject.set(x, "M22", value.asInstanceOf[js.Any])
+    inline def setM22(value: /* 10 */ Double): Self = StObject.set(x, "M22", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM23(value: /* 14 */ Double): Self = StObject.set(x, "M23", value.asInstanceOf[js.Any])
+    inline def setM23(value: /* 14 */ Double): Self = StObject.set(x, "M23", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM30(value: /* 3 */ Double): Self = StObject.set(x, "M30", value.asInstanceOf[js.Any])
+    inline def setM30(value: /* 3 */ Double): Self = StObject.set(x, "M30", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM31(value: /* 7 */ Double): Self = StObject.set(x, "M31", value.asInstanceOf[js.Any])
+    inline def setM31(value: /* 7 */ Double): Self = StObject.set(x, "M31", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM32(value: /* 11 */ Double): Self = StObject.set(x, "M32", value.asInstanceOf[js.Any])
+    inline def setM32(value: /* 11 */ Double): Self = StObject.set(x, "M32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM33(value: /* 15 */ Double): Self = StObject.set(x, "M33", value.asInstanceOf[js.Any])
+    inline def setM33(value: /* 15 */ Double): Self = StObject.set(x, "M33", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedWebGLRenderingContext(
+    inline def setManagedWebGLRenderingContext(
       value: Instantiable2[
           /* canvasOrContext */ HTMLCanvasElement | WebGLRenderingContext, 
           /* contextConfig */ js.UndefOr[js.Any], 
@@ -351,11 +328,9 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "ManagedWebGLRenderingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix4(value: Instantiable0[Matrix4] & TypeofMatrix4): Self = StObject.set(x, "Matrix4", value.asInstanceOf[js.Any])
+    inline def setMatrix4(value: Instantiable0[Matrix4] & TypeofMatrix4): Self = StObject.set(x, "Matrix4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMesh(
+    inline def setMesh(
       value: Instantiable4[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           /* attributes */ js.Array[VertexAttribute], 
@@ -365,11 +340,9 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "Mesh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrthoCamera(value: Instantiable2[/* viewportWidth */ Double, /* viewportHeight */ Double, OrthoCamera]): Self = StObject.set(x, "OrthoCamera", value.asInstanceOf[js.Any])
+    inline def setOrthoCamera(value: Instantiable2[/* viewportWidth */ Double, /* viewportHeight */ Double, OrthoCamera]): Self = StObject.set(x, "OrthoCamera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonBatcher(
+    inline def setPolygonBatcher(
       value: Instantiable3[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           /* twoColorTint */ js.UndefOr[Boolean], 
@@ -378,14 +351,11 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "PolygonBatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition2Attribute(value: Instantiable0[Position2Attribute]): Self = StObject.set(x, "Position2Attribute", value.asInstanceOf[js.Any])
+    inline def setPosition2Attribute(value: Instantiable0[Position2Attribute]): Self = StObject.set(x, "Position2Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition3Attribute(value: Instantiable0[Position3Attribute]): Self = StObject.set(x, "Position3Attribute", value.asInstanceOf[js.Any])
+    inline def setPosition3Attribute(value: Instantiable0[Position3Attribute]): Self = StObject.set(x, "Position3Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneRenderer(
+    inline def setSceneRenderer(
       value: Instantiable3[
           /* canvas */ HTMLCanvasElement, 
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
@@ -394,8 +364,7 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "SceneRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShader(
+    inline def setShader(
       value: (Instantiable3[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           /* vertexShader */ String, 
@@ -404,8 +373,7 @@ object Typeofwebgl {
         ]) & TypeofShader
     ): Self = StObject.set(x, "Shader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeRenderer(
+    inline def setShapeRenderer(
       value: Instantiable2[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           /* maxVertices */ js.UndefOr[Double], 
@@ -413,16 +381,14 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "ShapeRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkeletonDebugRenderer(
+    inline def setSkeletonDebugRenderer(
       value: (Instantiable1[
           /* context */ ManagedWebGLRenderingContext | WebGLRenderingContext, 
           SkeletonDebugRenderer
         ]) & TypeofSkeletonDebugRender
     ): Self = StObject.set(x, "SkeletonDebugRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkeletonRenderer(
+    inline def setSkeletonRenderer(
       value: (Instantiable2[
           /* context */ ManagedWebGLRenderingContext, 
           /* twoColorTint */ js.UndefOr[Boolean], 
@@ -430,11 +396,9 @@ object Typeofwebgl {
         ]) & TypeofSkeletonRendererQUADTRIANGLES
     ): Self = StObject.set(x, "SkeletonRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexCoordAttribute(value: Instantiable1[/* unit */ js.UndefOr[Double], TexCoordAttribute]): Self = StObject.set(x, "TexCoordAttribute", value.asInstanceOf[js.Any])
+    inline def setTexCoordAttribute(value: Instantiable1[/* unit */ js.UndefOr[Double], TexCoordAttribute]): Self = StObject.set(x, "TexCoordAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVector3(
+    inline def setVector3(
       value: Instantiable3[
           /* x */ js.UndefOr[Double], 
           /* y */ js.UndefOr[Double], 
@@ -443,8 +407,7 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "Vector3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexAttribute(
+    inline def setVertexAttribute(
       value: Instantiable3[
           /* name */ String, 
           /* type */ VertexAttributeType, 
@@ -453,7 +416,6 @@ object Typeofwebgl {
         ]
     ): Self = StObject.set(x, "VertexAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebGLBlendModeConverter(value: Instantiable0[WebGLBlendModeConverter] & TypeofWebGLBlendModeConve): Self = StObject.set(x, "WebGLBlendModeConverter", value.asInstanceOf[js.Any])
+    inline def setWebGLBlendModeConverter(value: Instantiable0[WebGLBlendModeConverter] & TypeofWebGLBlendModeConve): Self = StObject.set(x, "WebGLBlendModeConverter", value.asInstanceOf[js.Any])
   }
 }

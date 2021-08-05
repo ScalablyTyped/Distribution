@@ -11,6 +11,5 @@ object useCacheDisplayValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(values: js.Array[DisplayLabelValueType]): js.Array[DisplayLabelValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[js.Array[DisplayLabelValueType]]
+  inline def default(values: js.Array[DisplayLabelValueType]): js.Array[DisplayLabelValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(values.asInstanceOf[js.Any]).asInstanceOf[js.Array[DisplayLabelValueType]]
 }

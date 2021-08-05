@@ -13,19 +13,15 @@ trait CreateTableResponse extends StObject {
 }
 object CreateTableResponse {
   
-  @scala.inline
-  def apply(): CreateTableResponse = {
+  inline def apply(): CreateTableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTableResponse]
   }
   
-  @scala.inline
-  implicit class CreateTableResponseMutableBuilder[Self <: CreateTableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTableResponse](x: Self) {
     
-    @scala.inline
-    def setTable(value: Table): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Table): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
   }
 }

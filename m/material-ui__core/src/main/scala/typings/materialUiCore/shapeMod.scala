@@ -17,17 +17,14 @@ object shapeMod extends Shortcut {
   }
   object Shape {
     
-    @scala.inline
-    def apply(borderRadius: Double): Shape = {
+    inline def apply(borderRadius: Double): Shape = {
       val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any])
       __obj.asInstanceOf[Shape]
     }
     
-    @scala.inline
-    implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
+    extension [Self <: Shape](x: Self) {
       
-      @scala.inline
-      def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+      inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,20 +35,16 @@ object shapeMod extends Shortcut {
   }
   object ShapeOptions {
     
-    @scala.inline
-    def apply(): ShapeOptions = {
+    inline def apply(): ShapeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShapeOptions]
     }
     
-    @scala.inline
-    implicit class ShapeOptionsMutableBuilder[Self <: ShapeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShapeOptions](x: Self) {
       
-      @scala.inline
-      def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+      inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     }
   }
   

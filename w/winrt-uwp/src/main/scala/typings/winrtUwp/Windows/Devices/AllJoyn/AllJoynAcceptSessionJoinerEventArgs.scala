@@ -27,8 +27,7 @@ trait AllJoynAcceptSessionJoinerEventArgs extends StObject {
 }
 object AllJoynAcceptSessionJoinerEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: () => Unit,
     sameNetwork: Boolean,
     samePhysicalNode: Boolean,
@@ -40,25 +39,18 @@ object AllJoynAcceptSessionJoinerEventArgs {
     __obj.asInstanceOf[AllJoynAcceptSessionJoinerEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynAcceptSessionJoinerEventArgsMutableBuilder[Self <: AllJoynAcceptSessionJoinerEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynAcceptSessionJoinerEventArgs](x: Self) {
     
-    @scala.inline
-    def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
+    inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSameNetwork(value: Boolean): Self = StObject.set(x, "sameNetwork", value.asInstanceOf[js.Any])
+    inline def setSameNetwork(value: Boolean): Self = StObject.set(x, "sameNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamePhysicalNode(value: Boolean): Self = StObject.set(x, "samePhysicalNode", value.asInstanceOf[js.Any])
+    inline def setSamePhysicalNode(value: Boolean): Self = StObject.set(x, "samePhysicalNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionPort(value: Double): Self = StObject.set(x, "sessionPort", value.asInstanceOf[js.Any])
+    inline def setSessionPort(value: Double): Self = StObject.set(x, "sessionPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficType(value: AllJoynTrafficType): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
+    inline def setTrafficType(value: AllJoynTrafficType): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
   }
 }

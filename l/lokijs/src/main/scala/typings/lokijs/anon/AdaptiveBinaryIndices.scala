@@ -10,19 +10,15 @@ trait AdaptiveBinaryIndices extends StObject {
 }
 object AdaptiveBinaryIndices {
   
-  @scala.inline
-  def apply(): AdaptiveBinaryIndices = {
+  inline def apply(): AdaptiveBinaryIndices = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdaptiveBinaryIndices]
   }
   
-  @scala.inline
-  implicit class AdaptiveBinaryIndicesMutableBuilder[Self <: AdaptiveBinaryIndices] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveBinaryIndices](x: Self) {
     
-    @scala.inline
-    def setAdaptiveBinaryIndices(value: Boolean): Self = StObject.set(x, "adaptiveBinaryIndices", value.asInstanceOf[js.Any])
+    inline def setAdaptiveBinaryIndices(value: Boolean): Self = StObject.set(x, "adaptiveBinaryIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptiveBinaryIndicesUndefined: Self = StObject.set(x, "adaptiveBinaryIndices", js.undefined)
+    inline def setAdaptiveBinaryIndicesUndefined: Self = StObject.set(x, "adaptiveBinaryIndices", js.undefined)
   }
 }

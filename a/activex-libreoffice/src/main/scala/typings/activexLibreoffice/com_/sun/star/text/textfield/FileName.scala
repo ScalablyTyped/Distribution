@@ -37,8 +37,7 @@ trait FileName
 }
 object FileName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -70,16 +69,12 @@ object FileName {
     __obj.asInstanceOf[FileName]
   }
   
-  @scala.inline
-  implicit class FileNameMutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
+  extension [Self <: FileName](x: Self) {
     
-    @scala.inline
-    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+    inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
+    inline def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteReplicaAction extends StObject {
 }
 object DeleteReplicaAction {
   
-  @scala.inline
-  def apply(RegionName: RegionName): DeleteReplicaAction = {
+  inline def apply(RegionName: RegionName): DeleteReplicaAction = {
     val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReplicaAction]
   }
   
-  @scala.inline
-  implicit class DeleteReplicaActionMutableBuilder[Self <: DeleteReplicaAction] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReplicaAction](x: Self) {
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
   }
 }

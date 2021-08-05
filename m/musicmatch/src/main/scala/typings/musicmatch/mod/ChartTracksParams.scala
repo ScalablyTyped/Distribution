@@ -14,25 +14,19 @@ trait ChartTracksParams
 }
 object ChartTracksParams {
   
-  @scala.inline
-  def apply(): ChartTracksParams = {
+  inline def apply(): ChartTracksParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartTracksParams]
   }
   
-  @scala.inline
-  implicit class ChartTracksParamsMutableBuilder[Self <: ChartTracksParams] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTracksParams](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setF_has_lyrics(value: TBoolean): Self = StObject.set(x, "f_has_lyrics", value.asInstanceOf[js.Any])
+    inline def setF_has_lyrics(value: TBoolean): Self = StObject.set(x, "f_has_lyrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF_has_lyricsUndefined: Self = StObject.set(x, "f_has_lyrics", js.undefined)
+    inline def setF_has_lyricsUndefined: Self = StObject.set(x, "f_has_lyrics", js.undefined)
   }
 }

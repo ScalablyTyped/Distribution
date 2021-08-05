@@ -13,19 +13,15 @@ trait CreateBucketOutput extends StObject {
 }
 object CreateBucketOutput {
   
-  @scala.inline
-  def apply(): CreateBucketOutput = {
+  inline def apply(): CreateBucketOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBucketOutput]
   }
   
-  @scala.inline
-  implicit class CreateBucketOutputMutableBuilder[Self <: CreateBucketOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBucketOutput](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

@@ -12,22 +12,17 @@ trait CodeLensList extends StObject {
 }
 object CodeLensList {
   
-  @scala.inline
-  def apply(dispose: () => Unit, lenses: js.Array[CodeLens]): CodeLensList = {
+  inline def apply(dispose: () => Unit, lenses: js.Array[CodeLens]): CodeLensList = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), lenses = lenses.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeLensList]
   }
   
-  @scala.inline
-  implicit class CodeLensListMutableBuilder[Self <: CodeLensList] (val x: Self) extends AnyVal {
+  extension [Self <: CodeLensList](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLenses(value: js.Array[CodeLens]): Self = StObject.set(x, "lenses", value.asInstanceOf[js.Any])
+    inline def setLenses(value: js.Array[CodeLens]): Self = StObject.set(x, "lenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLensesVarargs(value: CodeLens*): Self = StObject.set(x, "lenses", js.Array(value :_*))
+    inline def setLensesVarargs(value: CodeLens*): Self = StObject.set(x, "lenses", js.Array(value :_*))
   }
 }

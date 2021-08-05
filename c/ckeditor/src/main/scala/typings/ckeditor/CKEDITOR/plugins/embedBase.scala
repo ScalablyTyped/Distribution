@@ -63,8 +63,7 @@ object embedBase {
   }
   object request {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callback: () => Unit,
       cancel: () => Unit,
       errorCallback: String => Unit,
@@ -76,26 +75,19 @@ object embedBase {
       __obj.asInstanceOf[request]
     }
     
-    @scala.inline
-    implicit class requestMutableBuilder[Self <: request] (val x: Self) extends AnyVal {
+    extension [Self <: request](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setErrorCallback(value: String => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
+      inline def setErrorCallback(value: String => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponse(value: StringDictionary[String]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: StringDictionary[String]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTask(value: task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+      inline def setTask(value: task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

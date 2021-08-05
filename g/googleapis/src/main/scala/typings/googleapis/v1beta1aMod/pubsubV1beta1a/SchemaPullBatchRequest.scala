@@ -31,31 +31,23 @@ trait SchemaPullBatchRequest extends StObject {
 }
 object SchemaPullBatchRequest {
   
-  @scala.inline
-  def apply(): SchemaPullBatchRequest = {
+  inline def apply(): SchemaPullBatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPullBatchRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPullBatchRequestMutableBuilder[Self <: SchemaPullBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPullBatchRequest](x: Self) {
     
-    @scala.inline
-    def setMaxEvents(value: Double): Self = StObject.set(x, "maxEvents", value.asInstanceOf[js.Any])
+    inline def setMaxEvents(value: Double): Self = StObject.set(x, "maxEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEventsUndefined: Self = StObject.set(x, "maxEvents", js.undefined)
+    inline def setMaxEventsUndefined: Self = StObject.set(x, "maxEvents", js.undefined)
     
-    @scala.inline
-    def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
+    inline def setReturnImmediately(value: Boolean): Self = StObject.set(x, "returnImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
+    inline def setReturnImmediatelyUndefined: Self = StObject.set(x, "returnImmediately", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

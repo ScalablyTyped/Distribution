@@ -19,34 +19,25 @@ trait BottomRadius extends StObject {
 }
 object BottomRadius {
   
-  @scala.inline
-  def apply(bottomRadius: Double, length: Double, topRadius: Double): BottomRadius = {
+  inline def apply(bottomRadius: Double, length: Double, topRadius: Double): BottomRadius = {
     val __obj = js.Dynamic.literal(bottomRadius = bottomRadius.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], topRadius = topRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomRadius]
   }
   
-  @scala.inline
-  implicit class BottomRadiusMutableBuilder[Self <: BottomRadius] (val x: Self) extends AnyVal {
+  extension [Self <: BottomRadius](x: Self) {
     
-    @scala.inline
-    def setBottomRadius(value: Double): Self = StObject.set(x, "bottomRadius", value.asInstanceOf[js.Any])
+    inline def setBottomRadius(value: Double): Self = StObject.set(x, "bottomRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlices(value: Double): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
+    inline def setSlices(value: Double): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
+    inline def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     
-    @scala.inline
-    def setTopRadius(value: Double): Self = StObject.set(x, "topRadius", value.asInstanceOf[js.Any])
+    inline def setTopRadius(value: Double): Self = StObject.set(x, "topRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
+    inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }
 }

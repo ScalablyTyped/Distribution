@@ -21,43 +21,31 @@ trait Argument extends StObject {
 }
 object Argument {
   
-  @scala.inline
-  def apply(): Argument = {
+  inline def apply(): Argument = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Argument]
   }
   
-  @scala.inline
-  implicit class ArgumentMutableBuilder[Self <: Argument] (val x: Self) extends AnyVal {
+  extension [Self <: Argument](x: Self) {
     
-    @scala.inline
-    def setArgument(value: typings.std.Date | Double | String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: typings.std.Date | Double | String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+    inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
     
-    @scala.inline
-    def setComponent(value: dxChart): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxChart): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

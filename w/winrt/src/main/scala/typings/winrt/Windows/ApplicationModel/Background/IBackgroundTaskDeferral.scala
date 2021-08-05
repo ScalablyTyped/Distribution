@@ -10,16 +10,13 @@ trait IBackgroundTaskDeferral extends StObject {
 }
 object IBackgroundTaskDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): IBackgroundTaskDeferral = {
+  inline def apply(complete: () => Unit): IBackgroundTaskDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[IBackgroundTaskDeferral]
   }
   
-  @scala.inline
-  implicit class IBackgroundTaskDeferralMutableBuilder[Self <: IBackgroundTaskDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: IBackgroundTaskDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

@@ -34,41 +34,31 @@ trait redis
 }
 object redis {
   
-  @scala.inline
-  def apply(): redis = {
+  inline def apply(): redis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[redis]
   }
   
-  @scala.inline
-  implicit class redisMutableBuilder[Self <: redis] (val x: Self) extends AnyVal {
+  extension [Self <: redis](x: Self) {
     
-    @scala.inline
-    def setBlacklist(
+    inline def setBlacklist(
       value: String | RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* command */ String, Boolean])])
     ): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlacklistFunction1(value: /* command */ String => Boolean): Self = StObject.set(x, "blacklist", js.Any.fromFunction1(value))
+    inline def setBlacklistFunction1(value: /* command */ String => Boolean): Self = StObject.set(x, "blacklist", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+    inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
-    @scala.inline
-    def setBlacklistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     
-    @scala.inline
-    def setWhitelist(
+    inline def setWhitelist(
       value: String | RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* command */ String, Boolean])])
     ): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistFunction1(value: /* command */ String => Boolean): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
+    inline def setWhitelistFunction1(value: /* command */ String => Boolean): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    @scala.inline
-    def setWhitelistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

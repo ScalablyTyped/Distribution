@@ -19,6 +19,5 @@ object Text {
   @JSImport("antd-mobile", "Text.defaultProps")
   @js.native
   def defaultProps: Component = js.native
-  @scala.inline
-  def defaultProps_=(x: Component): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Component): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

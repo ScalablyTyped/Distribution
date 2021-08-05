@@ -20,8 +20,7 @@ trait XNumericalDataSequence
 }
 object XNumericalDataSequence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NumericalData: SafeArray[Double],
     acquire: () => Unit,
     getNumericalData: () => SafeArray[Double],
@@ -32,13 +31,10 @@ object XNumericalDataSequence {
     __obj.asInstanceOf[XNumericalDataSequence]
   }
   
-  @scala.inline
-  implicit class XNumericalDataSequenceMutableBuilder[Self <: XNumericalDataSequence] (val x: Self) extends AnyVal {
+  extension [Self <: XNumericalDataSequence](x: Self) {
     
-    @scala.inline
-    def setGetNumericalData(value: () => SafeArray[Double]): Self = StObject.set(x, "getNumericalData", js.Any.fromFunction0(value))
+    inline def setGetNumericalData(value: () => SafeArray[Double]): Self = StObject.set(x, "getNumericalData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumericalData(value: SafeArray[Double]): Self = StObject.set(x, "NumericalData", value.asInstanceOf[js.Any])
+    inline def setNumericalData(value: SafeArray[Double]): Self = StObject.set(x, "NumericalData", value.asInstanceOf[js.Any])
   }
 }

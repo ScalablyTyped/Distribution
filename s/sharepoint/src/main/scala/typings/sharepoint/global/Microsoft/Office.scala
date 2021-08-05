@@ -23,12 +23,10 @@ object Office {
         val ^ : js.Any = js.native
         
         /* static member */
-        @scala.inline
-        def setLike(context: ClientContext, listId: String, itemId: Double, like: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLike")(context.asInstanceOf[js.Any], listId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], like.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def setLike(context: ClientContext, listId: String, itemId: Double, like: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLike")(context.asInstanceOf[js.Any], listId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], like.asInstanceOf[js.Any])).asInstanceOf[Unit]
         
         /* static member */
-        @scala.inline
-        def setRating(context: ClientContext, listId: String, itemId: Double, rating: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRating")(context.asInstanceOf[js.Any], listId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], rating.asInstanceOf[js.Any])).asInstanceOf[Unit]
+        inline def setRating(context: ClientContext, listId: String, itemId: Double, rating: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setRating")(context.asInstanceOf[js.Any], listId.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], rating.asInstanceOf[js.Any])).asInstanceOf[Unit]
       }
     }
   }

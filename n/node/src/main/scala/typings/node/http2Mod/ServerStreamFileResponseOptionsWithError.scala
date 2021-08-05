@@ -13,19 +13,15 @@ trait ServerStreamFileResponseOptionsWithError
 }
 object ServerStreamFileResponseOptionsWithError {
   
-  @scala.inline
-  def apply(): ServerStreamFileResponseOptionsWithError = {
+  inline def apply(): ServerStreamFileResponseOptionsWithError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerStreamFileResponseOptionsWithError]
   }
   
-  @scala.inline
-  implicit class ServerStreamFileResponseOptionsWithErrorMutableBuilder[Self <: ServerStreamFileResponseOptionsWithError] (val x: Self) extends AnyVal {
+  extension [Self <: ServerStreamFileResponseOptionsWithError](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* err */ ErrnoException => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* err */ ErrnoException => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
   }
 }

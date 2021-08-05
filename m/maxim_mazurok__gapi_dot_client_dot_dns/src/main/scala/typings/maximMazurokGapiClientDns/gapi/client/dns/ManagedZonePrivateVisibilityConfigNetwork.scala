@@ -13,25 +13,19 @@ trait ManagedZonePrivateVisibilityConfigNetwork extends StObject {
 }
 object ManagedZonePrivateVisibilityConfigNetwork {
   
-  @scala.inline
-  def apply(): ManagedZonePrivateVisibilityConfigNetwork = {
+  inline def apply(): ManagedZonePrivateVisibilityConfigNetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedZonePrivateVisibilityConfigNetwork]
   }
   
-  @scala.inline
-  implicit class ManagedZonePrivateVisibilityConfigNetworkMutableBuilder[Self <: ManagedZonePrivateVisibilityConfigNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedZonePrivateVisibilityConfigNetwork](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNetworkUrl(value: String): Self = StObject.set(x, "networkUrl", value.asInstanceOf[js.Any])
+    inline def setNetworkUrl(value: String): Self = StObject.set(x, "networkUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUrlUndefined: Self = StObject.set(x, "networkUrl", js.undefined)
+    inline def setNetworkUrlUndefined: Self = StObject.set(x, "networkUrl", js.undefined)
   }
 }

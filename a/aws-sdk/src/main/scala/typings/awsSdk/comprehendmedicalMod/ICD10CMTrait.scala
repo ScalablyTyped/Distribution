@@ -18,25 +18,19 @@ trait ICD10CMTrait extends StObject {
 }
 object ICD10CMTrait {
   
-  @scala.inline
-  def apply(): ICD10CMTrait = {
+  inline def apply(): ICD10CMTrait = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICD10CMTrait]
   }
   
-  @scala.inline
-  implicit class ICD10CMTraitMutableBuilder[Self <: ICD10CMTrait] (val x: Self) extends AnyVal {
+  extension [Self <: ICD10CMTrait](x: Self) {
     
-    @scala.inline
-    def setName(value: ICD10CMTraitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ICD10CMTraitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
   }
 }

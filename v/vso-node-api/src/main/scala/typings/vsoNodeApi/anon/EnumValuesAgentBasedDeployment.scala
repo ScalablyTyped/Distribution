@@ -10,16 +10,13 @@ trait EnumValuesAgentBasedDeployment extends StObject {
 }
 object EnumValuesAgentBasedDeployment {
   
-  @scala.inline
-  def apply(enumValues: AgentBasedDeployment): EnumValuesAgentBasedDeployment = {
+  inline def apply(enumValues: AgentBasedDeployment): EnumValuesAgentBasedDeployment = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAgentBasedDeployment]
   }
   
-  @scala.inline
-  implicit class EnumValuesAgentBasedDeploymentMutableBuilder[Self <: EnumValuesAgentBasedDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAgentBasedDeployment](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AgentBasedDeployment): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AgentBasedDeployment): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -21,20 +21,17 @@ object AppServiceState {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.AppServiceState.Consumable")
   @js.native
   def Consumable: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState = js.native
-  @scala.inline
-  def Consumable_=(x: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Consumable")(x.asInstanceOf[js.Any])
+  inline def Consumable_=(x: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Consumable")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.AppServiceState.Deprecated")
   @js.native
   def Deprecated: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState = js.native
-  @scala.inline
-  def Deprecated_=(x: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Deprecated")(x.asInstanceOf[js.Any])
+  inline def Deprecated_=(x: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Deprecated")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.AppServiceState.Draft")
   @js.native
   def Draft: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState = js.native
-  @scala.inline
-  def Draft_=(x: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Draft")(x.asInstanceOf[js.Any])
+  inline def Draft_=(x: typings.mendixmodelsdk.webservicesMod.webservices.AppServiceState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Draft")(x.asInstanceOf[js.Any])
 }

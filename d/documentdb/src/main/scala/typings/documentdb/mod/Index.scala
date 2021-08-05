@@ -14,22 +14,17 @@ trait Index extends StObject {
 }
 object Index {
   
-  @scala.inline
-  def apply(DataType: String, Kind: IndexKind, Precision: Double): Index = {
+  inline def apply(DataType: String, Kind: IndexKind, Precision: Double): Index = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any], Kind = Kind.asInstanceOf[js.Any], Precision = Precision.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: IndexKind): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: IndexKind): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
   }
 }

@@ -31,25 +31,19 @@ trait SetVariableValueRequest extends StObject {
 }
 object SetVariableValueRequest {
   
-  @scala.inline
-  def apply(callFrameId: CallFrameId, newValue: CallArgument, scopeNumber: integer, variableName: String): SetVariableValueRequest = {
+  inline def apply(callFrameId: CallFrameId, newValue: CallArgument, scopeNumber: integer, variableName: String): SetVariableValueRequest = {
     val __obj = js.Dynamic.literal(callFrameId = callFrameId.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], scopeNumber = scopeNumber.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetVariableValueRequest]
   }
   
-  @scala.inline
-  implicit class SetVariableValueRequestMutableBuilder[Self <: SetVariableValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetVariableValueRequest](x: Self) {
     
-    @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
+    inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeNumber(value: integer): Self = StObject.set(x, "scopeNumber", value.asInstanceOf[js.Any])
+    inline def setScopeNumber(value: integer): Self = StObject.set(x, "scopeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
+    inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
   }
 }

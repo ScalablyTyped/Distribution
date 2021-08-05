@@ -11,19 +11,15 @@ trait Control extends StObject {
 }
 object Control {
   
-  @scala.inline
-  def apply(): Control = {
+  inline def apply(): Control = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Control]
   }
   
-  @scala.inline
-  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+  extension [Self <: Control](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
   }
 }

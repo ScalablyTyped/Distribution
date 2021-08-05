@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ControlFormat")
 @js.native
-class ControlFormat protected ()
+/* private */ class ControlFormat ()
   extends StObject
      with typings.activexExcel.Excel.ControlFormat

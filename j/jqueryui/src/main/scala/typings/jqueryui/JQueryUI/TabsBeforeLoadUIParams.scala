@@ -18,25 +18,19 @@ trait TabsBeforeLoadUIParams extends StObject {
 }
 object TabsBeforeLoadUIParams {
   
-  @scala.inline
-  def apply(ajaxSettings: js.Any, jqXHR: JQueryXHR, panel: JQuery, tab: JQuery): TabsBeforeLoadUIParams = {
+  inline def apply(ajaxSettings: js.Any, jqXHR: JQueryXHR, panel: JQuery, tab: JQuery): TabsBeforeLoadUIParams = {
     val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings.asInstanceOf[js.Any], jqXHR = jqXHR.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsBeforeLoadUIParams]
   }
   
-  @scala.inline
-  implicit class TabsBeforeLoadUIParamsMutableBuilder[Self <: TabsBeforeLoadUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: TabsBeforeLoadUIParams](x: Self) {
     
-    @scala.inline
-    def setAjaxSettings(value: js.Any): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
+    inline def setAjaxSettings(value: js.Any): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
+    inline def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanel(value: JQuery): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: JQuery): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTab(value: JQuery): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: JQuery): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

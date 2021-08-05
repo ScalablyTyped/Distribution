@@ -13,19 +13,15 @@ trait Target extends StObject {
 }
 object Target {
   
-  @scala.inline
-  def apply(name: String, target: HTMLElement): Target = {
+  inline def apply(name: String, target: HTMLElement): Target = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
   
-  @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+  extension [Self <: Target](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

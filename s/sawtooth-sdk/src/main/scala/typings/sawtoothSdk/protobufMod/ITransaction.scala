@@ -18,40 +18,29 @@ trait ITransaction extends StObject {
 }
 object ITransaction {
   
-  @scala.inline
-  def apply(): ITransaction = {
+  inline def apply(): ITransaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITransaction]
   }
   
-  @scala.inline
-  implicit class ITransactionMutableBuilder[Self <: ITransaction] (val x: Self) extends AnyVal {
+  extension [Self <: ITransaction](x: Self) {
     
-    @scala.inline
-    def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNull: Self = StObject.set(x, "header", null)
+    inline def setHeaderNull: Self = StObject.set(x, "header", null)
     
-    @scala.inline
-    def setHeaderSignature(value: String): Self = StObject.set(x, "headerSignature", value.asInstanceOf[js.Any])
+    inline def setHeaderSignature(value: String): Self = StObject.set(x, "headerSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderSignatureNull: Self = StObject.set(x, "headerSignature", null)
+    inline def setHeaderSignatureNull: Self = StObject.set(x, "headerSignature", null)
     
-    @scala.inline
-    def setHeaderSignatureUndefined: Self = StObject.set(x, "headerSignature", js.undefined)
+    inline def setHeaderSignatureUndefined: Self = StObject.set(x, "headerSignature", js.undefined)
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadNull: Self = StObject.set(x, "payload", null)
+    inline def setPayloadNull: Self = StObject.set(x, "payload", null)
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

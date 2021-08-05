@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ListBox extends StObject {
   
-  @JSName("Access.ListBox_typekey")
+  /* private */ @JSName("Access.ListBox_typekey")
   var AccessDotListBox_typekey: ListBox = js.native
   
   var AddColon: Boolean = js.native

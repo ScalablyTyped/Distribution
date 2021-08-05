@@ -38,8 +38,7 @@ trait CreateRateBasedRuleRequest extends StObject {
 }
 object CreateRateBasedRuleRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangeToken: ChangeToken,
     MetricName: MetricName,
     Name: ResourceName,
@@ -50,31 +49,22 @@ object CreateRateBasedRuleRequest {
     __obj.asInstanceOf[CreateRateBasedRuleRequest]
   }
   
-  @scala.inline
-  implicit class CreateRateBasedRuleRequestMutableBuilder[Self <: CreateRateBasedRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRateBasedRuleRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateKey(value: RateKey): Self = StObject.set(x, "RateKey", value.asInstanceOf[js.Any])
+    inline def setRateKey(value: RateKey): Self = StObject.set(x, "RateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateLimit(value: RateLimit): Self = StObject.set(x, "RateLimit", value.asInstanceOf[js.Any])
+    inline def setRateLimit(value: RateLimit): Self = StObject.set(x, "RateLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

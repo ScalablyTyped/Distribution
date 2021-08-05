@@ -22,25 +22,19 @@ trait SchemaTestRulesetRequest extends StObject {
 }
 object SchemaTestRulesetRequest {
   
-  @scala.inline
-  def apply(): SchemaTestRulesetRequest = {
+  inline def apply(): SchemaTestRulesetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestRulesetRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTestRulesetRequestMutableBuilder[Self <: SchemaTestRulesetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestRulesetRequest](x: Self) {
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTestSuite(value: SchemaTestSuite): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
+    inline def setTestSuite(value: SchemaTestSuite): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSuiteUndefined: Self = StObject.set(x, "testSuite", js.undefined)
+    inline def setTestSuiteUndefined: Self = StObject.set(x, "testSuite", js.undefined)
   }
 }

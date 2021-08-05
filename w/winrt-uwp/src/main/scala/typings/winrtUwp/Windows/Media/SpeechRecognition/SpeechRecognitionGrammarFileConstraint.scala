@@ -25,8 +25,7 @@ trait SpeechRecognitionGrammarFileConstraint extends StObject {
 }
 object SpeechRecognitionGrammarFileConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     grammarFile: StorageFile,
     isEnabled: Boolean,
     probability: SpeechRecognitionConstraintProbability,
@@ -38,22 +37,16 @@ object SpeechRecognitionGrammarFileConstraint {
     __obj.asInstanceOf[SpeechRecognitionGrammarFileConstraint]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionGrammarFileConstraintMutableBuilder[Self <: SpeechRecognitionGrammarFileConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionGrammarFileConstraint](x: Self) {
     
-    @scala.inline
-    def setGrammarFile(value: StorageFile): Self = StObject.set(x, "grammarFile", value.asInstanceOf[js.Any])
+    inline def setGrammarFile(value: StorageFile): Self = StObject.set(x, "grammarFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    inline def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

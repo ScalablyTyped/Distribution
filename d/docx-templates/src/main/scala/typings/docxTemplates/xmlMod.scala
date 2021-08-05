@@ -11,13 +11,10 @@ object xmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildXml(node: Node, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildXml")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def buildXml(node: Node, options: XmlOptions, indent: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildXml")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildXml(node: Node, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildXml")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildXml(node: Node, options: XmlOptions, indent: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildXml")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def parseXml(templateXml: String): js.Promise[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(templateXml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Node]]
+  inline def parseXml(templateXml: String): js.Promise[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(templateXml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Node]]
   
   trait XmlOptions extends StObject {
     
@@ -25,17 +22,14 @@ object xmlMod {
   }
   object XmlOptions {
     
-    @scala.inline
-    def apply(literalXmlDelimiter: String): XmlOptions = {
+    inline def apply(literalXmlDelimiter: String): XmlOptions = {
       val __obj = js.Dynamic.literal(literalXmlDelimiter = literalXmlDelimiter.asInstanceOf[js.Any])
       __obj.asInstanceOf[XmlOptions]
     }
     
-    @scala.inline
-    implicit class XmlOptionsMutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XmlOptions](x: Self) {
       
-      @scala.inline
-      def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
+      inline def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
     }
   }
 }

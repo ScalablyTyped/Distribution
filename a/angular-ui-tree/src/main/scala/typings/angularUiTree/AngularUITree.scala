@@ -31,8 +31,7 @@ object AngularUITree {
   }
   object ICallbacks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accept: (/* source */ ITreeNodeScope, /* destination */ ITreeNodeScope, /* destinationIndex */ Double) => Boolean,
       dragStart: /* eventInfo */ IEventInfo => Unit,
       dropped: /* eventInfo */ IEventInfo => Unit
@@ -41,19 +40,15 @@ object AngularUITree {
       __obj.asInstanceOf[ICallbacks]
     }
     
-    @scala.inline
-    implicit class ICallbacksMutableBuilder[Self <: ICallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: ICallbacks](x: Self) {
       
-      @scala.inline
-      def setAccept(
+      inline def setAccept(
         value: (/* source */ ITreeNodeScope, /* destination */ ITreeNodeScope, /* destinationIndex */ Double) => Boolean
       ): Self = StObject.set(x, "accept", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDragStart(value: /* eventInfo */ IEventInfo => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
+      inline def setDragStart(value: /* eventInfo */ IEventInfo => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropped(value: /* eventInfo */ IEventInfo => Unit): Self = StObject.set(x, "dropped", js.Any.fromFunction1(value))
+      inline def setDropped(value: /* eventInfo */ IEventInfo => Unit): Self = StObject.set(x, "dropped", js.Any.fromFunction1(value))
     }
   }
   
@@ -71,26 +66,20 @@ object AngularUITree {
   }
   object IEventInfo {
     
-    @scala.inline
-    def apply(dest: Index, elements: js.Any, pos: IPosition, source: IEventSourceInfo): IEventInfo = {
+    inline def apply(dest: Index, elements: js.Any, pos: IPosition, source: IEventSourceInfo): IEventInfo = {
       val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEventInfo]
     }
     
-    @scala.inline
-    implicit class IEventInfoMutableBuilder[Self <: IEventInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IEventInfo](x: Self) {
       
-      @scala.inline
-      def setDest(value: Index): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: Index): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: IPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: IPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: IEventSourceInfo): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: IEventSourceInfo): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,26 +95,20 @@ object AngularUITree {
   }
   object IEventSourceInfo {
     
-    @scala.inline
-    def apply(cloneModel: js.Any, index: Double, nodeScope: ITreeNodeScope, nodesScope: ITreeNodeScope): IEventSourceInfo = {
+    inline def apply(cloneModel: js.Any, index: Double, nodeScope: ITreeNodeScope, nodesScope: ITreeNodeScope): IEventSourceInfo = {
       val __obj = js.Dynamic.literal(cloneModel = cloneModel.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], nodeScope = nodeScope.asInstanceOf[js.Any], nodesScope = nodesScope.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEventSourceInfo]
     }
     
-    @scala.inline
-    implicit class IEventSourceInfoMutableBuilder[Self <: IEventSourceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IEventSourceInfo](x: Self) {
       
-      @scala.inline
-      def setCloneModel(value: js.Any): Self = StObject.set(x, "cloneModel", value.asInstanceOf[js.Any])
+      inline def setCloneModel(value: js.Any): Self = StObject.set(x, "cloneModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeScope(value: ITreeNodeScope): Self = StObject.set(x, "nodeScope", value.asInstanceOf[js.Any])
+      inline def setNodeScope(value: ITreeNodeScope): Self = StObject.set(x, "nodeScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesScope(value: ITreeNodeScope): Self = StObject.set(x, "nodesScope", value.asInstanceOf[js.Any])
+      inline def setNodesScope(value: ITreeNodeScope): Self = StObject.set(x, "nodesScope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,8 +160,7 @@ object AngularUITree {
   }
   object IPosition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dirAx: Double,
       dirX: Double,
       dirY: Double,
@@ -202,62 +184,43 @@ object AngularUITree {
       __obj.asInstanceOf[IPosition]
     }
     
-    @scala.inline
-    implicit class IPositionMutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
+    extension [Self <: IPosition](x: Self) {
       
-      @scala.inline
-      def setDirAx(value: Double): Self = StObject.set(x, "dirAx", value.asInstanceOf[js.Any])
+      inline def setDirAx(value: Double): Self = StObject.set(x, "dirAx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirX(value: Double): Self = StObject.set(x, "dirX", value.asInstanceOf[js.Any])
+      inline def setDirX(value: Double): Self = StObject.set(x, "dirX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirY(value: Double): Self = StObject.set(x, "dirY", value.asInstanceOf[js.Any])
+      inline def setDirY(value: Double): Self = StObject.set(x, "dirY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistAxX(value: Double): Self = StObject.set(x, "distAxX", value.asInstanceOf[js.Any])
+      inline def setDistAxX(value: Double): Self = StObject.set(x, "distAxX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistAxY(value: Double): Self = StObject.set(x, "distAxY", value.asInstanceOf[js.Any])
+      inline def setDistAxY(value: Double): Self = StObject.set(x, "distAxY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistX(value: Double): Self = StObject.set(x, "distX", value.asInstanceOf[js.Any])
+      inline def setDistX(value: Double): Self = StObject.set(x, "distX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistY(value: Double): Self = StObject.set(x, "distY", value.asInstanceOf[js.Any])
+      inline def setDistY(value: Double): Self = StObject.set(x, "distY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDirX(value: Double): Self = StObject.set(x, "lastDirX", value.asInstanceOf[js.Any])
+      inline def setLastDirX(value: Double): Self = StObject.set(x, "lastDirX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDirY(value: Double): Self = StObject.set(x, "lastDirY", value.asInstanceOf[js.Any])
+      inline def setLastDirY(value: Double): Self = StObject.set(x, "lastDirY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastX(value: Double): Self = StObject.set(x, "lastX", value.asInstanceOf[js.Any])
+      inline def setLastX(value: Double): Self = StObject.set(x, "lastX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastY(value: Double): Self = StObject.set(x, "lastY", value.asInstanceOf[js.Any])
+      inline def setLastY(value: Double): Self = StObject.set(x, "lastY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoving(value: Boolean): Self = StObject.set(x, "moving", value.asInstanceOf[js.Any])
+      inline def setMoving(value: Boolean): Self = StObject.set(x, "moving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowX(value: Double): Self = StObject.set(x, "nowX", value.asInstanceOf[js.Any])
+      inline def setNowX(value: Double): Self = StObject.set(x, "nowX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowY(value: Double): Self = StObject.set(x, "nowY", value.asInstanceOf[js.Any])
+      inline def setNowY(value: Double): Self = StObject.set(x, "nowY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
+      inline def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
+      inline def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,26 +237,20 @@ object AngularUITree {
   }
   object ITreeNode {
     
-    @scala.inline
-    def apply(id: Double | String, nodes: js.Array[ITreeNode], title: String): ITreeNode = {
+    inline def apply(id: Double | String, nodes: js.Array[ITreeNode], title: String): ITreeNode = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITreeNode]
     }
     
-    @scala.inline
-    implicit class ITreeNodeMutableBuilder[Self <: ITreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: ITreeNode](x: Self) {
       
-      @scala.inline
-      def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[ITreeNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[ITreeNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: ITreeNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: ITreeNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   

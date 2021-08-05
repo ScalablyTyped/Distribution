@@ -15,19 +15,15 @@ trait IStackedColumnChart
 }
 object IStackedColumnChart {
   
-  @scala.inline
-  def apply(): IStackedColumnChart = {
+  inline def apply(): IStackedColumnChart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStackedColumnChart]
   }
   
-  @scala.inline
-  implicit class IStackedColumnChartMutableBuilder[Self <: IStackedColumnChart] (val x: Self) extends AnyVal {
+  extension [Self <: IStackedColumnChart](x: Self) {
     
-    @scala.inline
-    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
   }
 }

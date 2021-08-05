@@ -34,26 +34,23 @@ object anchorAnchorMod {
     @JSImport("antd/lib/anchor/Anchor", "default.Link")
     @js.native
     def Link: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink = js.native
-    @scala.inline
-    def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
+    inline def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/anchor/Anchor", "default.contextType")
     @js.native
     def contextType: Context[ConfigConsumerProps] = js.native
-    @scala.inline
-    def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/anchor/Anchor", "default.defaultProps")
     @js.native
     def defaultProps: Affix = js.native
-    @scala.inline
-    def defaultProps_=(x: Affix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Affix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait Anchor extends Component[AnchorProps, AnchorState, ConfigConsumerProps] {
     
-    var animating: js.Any = js.native
+    /* private */ var animating: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MAnchor(): Unit = js.native
@@ -77,19 +74,19 @@ object anchorAnchorMod {
     
     def handleScrollTo(link: String): Unit = js.native
     
-    var inkNode: js.Any = js.native
+    /* private */ var inkNode: js.Any = js.native
     
-    var links: js.Any = js.native
+    /* private */ var links: js.Any = js.native
     
-    var prefixCls: js.Any = js.native
+    /* private */ var prefixCls: js.Any = js.native
     
     def registerLink(link: String): Unit = js.native
     
     def saveInkNode(node: HTMLSpanElement): Unit = js.native
     
-    var scrollContainer: js.Any = js.native
+    /* private */ var scrollContainer: js.Any = js.native
     
-    var scrollEvent: js.Any = js.native
+    /* private */ var scrollEvent: js.Any = js.native
     
     def setCurrentActiveLink(link: String): Unit = js.native
     
@@ -100,7 +97,7 @@ object anchorAnchorMod {
     
     def updateInk(): Unit = js.native
     
-    var wrapperRef: js.Any = js.native
+    /* private */ var wrapperRef: js.Any = js.native
   }
   
   type AnchorContainer = HTMLElement | Window
@@ -123,26 +120,20 @@ object anchorAnchorMod {
   }
   object AnchorDefaultProps {
     
-    @scala.inline
-    def apply(affix: Boolean, getContainer: () => AnchorContainer, prefixCls: String, showInkInFixed: Boolean): AnchorDefaultProps = {
+    inline def apply(affix: Boolean, getContainer: () => AnchorContainer, prefixCls: String, showInkInFixed: Boolean): AnchorDefaultProps = {
       val __obj = js.Dynamic.literal(affix = affix.asInstanceOf[js.Any], getContainer = js.Any.fromFunction0(getContainer), prefixCls = prefixCls.asInstanceOf[js.Any], showInkInFixed = showInkInFixed.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnchorDefaultProps]
     }
     
-    @scala.inline
-    implicit class AnchorDefaultPropsMutableBuilder[Self <: AnchorDefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: AnchorDefaultProps](x: Self) {
       
-      @scala.inline
-      def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
+      inline def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetContainer(value: () => AnchorContainer): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => AnchorContainer): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowInkInFixed(value: Boolean): Self = StObject.set(x, "showInkInFixed", value.asInstanceOf[js.Any])
+      inline def setShowInkInFixed(value: Boolean): Self = StObject.set(x, "showInkInFixed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,92 +172,64 @@ object anchorAnchorMod {
   }
   object AnchorProps {
     
-    @scala.inline
-    def apply(): AnchorProps = {
+    inline def apply(): AnchorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnchorProps]
     }
     
-    @scala.inline
-    implicit class AnchorPropsMutableBuilder[Self <: AnchorProps] (val x: Self) extends AnyVal {
+    extension [Self <: AnchorProps](x: Self) {
       
-      @scala.inline
-      def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
+      inline def setAffix(value: Boolean): Self = StObject.set(x, "affix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAffixUndefined: Self = StObject.set(x, "affix", js.undefined)
+      inline def setAffixUndefined: Self = StObject.set(x, "affix", js.undefined)
       
-      @scala.inline
-      def setBounds(value: Double): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Double): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: () => AnchorContainer): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => AnchorContainer): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
-      @scala.inline
-      def setGetCurrentAnchor(value: () => String): Self = StObject.set(x, "getCurrentAnchor", js.Any.fromFunction0(value))
+      inline def setGetCurrentAnchor(value: () => String): Self = StObject.set(x, "getCurrentAnchor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentAnchorUndefined: Self = StObject.set(x, "getCurrentAnchor", js.undefined)
+      inline def setGetCurrentAnchorUndefined: Self = StObject.set(x, "getCurrentAnchor", js.undefined)
       
-      @scala.inline
-      def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+      inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
+      inline def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* currentActiveLink */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* currentActiveLink */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Href) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Href) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setShowInkInFixed(value: Boolean): Self = StObject.set(x, "showInkInFixed", value.asInstanceOf[js.Any])
+      inline def setShowInkInFixed(value: Boolean): Self = StObject.set(x, "showInkInFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowInkInFixedUndefined: Self = StObject.set(x, "showInkInFixed", js.undefined)
+      inline def setShowInkInFixedUndefined: Self = StObject.set(x, "showInkInFixed", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTargetOffset(value: Double): Self = StObject.set(x, "targetOffset", value.asInstanceOf[js.Any])
+      inline def setTargetOffset(value: Double): Self = StObject.set(x, "targetOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetOffsetUndefined: Self = StObject.set(x, "targetOffset", js.undefined)
+      inline def setTargetOffsetUndefined: Self = StObject.set(x, "targetOffset", js.undefined)
     }
   }
   
@@ -276,20 +239,16 @@ object anchorAnchorMod {
   }
   object AnchorState {
     
-    @scala.inline
-    def apply(): AnchorState = {
+    inline def apply(): AnchorState = {
       val __obj = js.Dynamic.literal(activeLink = null)
       __obj.asInstanceOf[AnchorState]
     }
     
-    @scala.inline
-    implicit class AnchorStateMutableBuilder[Self <: AnchorState] (val x: Self) extends AnyVal {
+    extension [Self <: AnchorState](x: Self) {
       
-      @scala.inline
-      def setActiveLink(value: String): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
+      inline def setActiveLink(value: String): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveLinkNull: Self = StObject.set(x, "activeLink", null)
+      inline def setActiveLinkNull: Self = StObject.set(x, "activeLink", null)
     }
   }
   
@@ -309,35 +268,26 @@ object anchorAnchorMod {
   }
   object AntAnchor {
     
-    @scala.inline
-    def apply(registerLink: String => Unit, scrollTo: String => Unit, unregisterLink: String => Unit): AntAnchor = {
+    inline def apply(registerLink: String => Unit, scrollTo: String => Unit, unregisterLink: String => Unit): AntAnchor = {
       val __obj = js.Dynamic.literal(registerLink = js.Any.fromFunction1(registerLink), scrollTo = js.Any.fromFunction1(scrollTo), unregisterLink = js.Any.fromFunction1(unregisterLink), activeLink = null)
       __obj.asInstanceOf[AntAnchor]
     }
     
-    @scala.inline
-    implicit class AntAnchorMutableBuilder[Self <: AntAnchor] (val x: Self) extends AnyVal {
+    extension [Self <: AntAnchor](x: Self) {
       
-      @scala.inline
-      def setActiveLink(value: String): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
+      inline def setActiveLink(value: String): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveLinkNull: Self = StObject.set(x, "activeLink", null)
+      inline def setActiveLinkNull: Self = StObject.set(x, "activeLink", null)
       
-      @scala.inline
-      def setOnClick(value: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Href) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* e */ MouseEvent[HTMLElement, NativeMouseEvent], /* link */ Href) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRegisterLink(value: String => Unit): Self = StObject.set(x, "registerLink", js.Any.fromFunction1(value))
+      inline def setRegisterLink(value: String => Unit): Self = StObject.set(x, "registerLink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollTo(value: String => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      inline def setScrollTo(value: String => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnregisterLink(value: String => Unit): Self = StObject.set(x, "unregisterLink", js.Any.fromFunction1(value))
+      inline def setUnregisterLink(value: String => Unit): Self = StObject.set(x, "unregisterLink", js.Any.fromFunction1(value))
     }
   }
 }

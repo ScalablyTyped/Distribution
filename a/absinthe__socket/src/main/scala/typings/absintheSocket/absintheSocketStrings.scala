@@ -12,55 +12,47 @@ object absintheSocketStrings {
   sealed trait canceled
     extends StObject
        with RequestStatus
-  @scala.inline
-  def canceled: canceled = "canceled".asInstanceOf[canceled]
+  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
   sealed trait canceling
     extends StObject
        with RequestStatus
-  @scala.inline
-  def canceling: canceling = "canceling".asInstanceOf[canceling]
+  inline def canceling: canceling = "canceling".asInstanceOf[canceling]
   
   @js.native
   sealed trait mutation
     extends StObject
        with GqlOperationType
-  @scala.inline
-  def mutation: mutation = "mutation".asInstanceOf[mutation]
+  inline def mutation: mutation = "mutation".asInstanceOf[mutation]
   
   @js.native
   sealed trait pending
     extends StObject
        with RequestStatus
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait query
     extends StObject
        with GqlOperationType
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
   sealed trait sending
     extends StObject
        with RequestStatus
-  @scala.inline
-  def sending: sending = "sending".asInstanceOf[sending]
+  inline def sending: sending = "sending".asInstanceOf[sending]
   
   @js.native
   sealed trait sent
     extends StObject
        with RequestStatus
-  @scala.inline
-  def sent: sent = "sent".asInstanceOf[sent]
+  inline def sent: sent = "sent".asInstanceOf[sent]
   
   @js.native
   sealed trait subscription
     extends StObject
        with GqlOperationType
-  @scala.inline
-  def subscription: subscription = "subscription".asInstanceOf[subscription]
+  inline def subscription: subscription = "subscription".asInstanceOf[subscription]
 }

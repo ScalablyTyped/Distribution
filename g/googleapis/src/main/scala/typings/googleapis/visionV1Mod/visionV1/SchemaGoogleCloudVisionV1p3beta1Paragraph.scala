@@ -38,40 +38,29 @@ trait SchemaGoogleCloudVisionV1p3beta1Paragraph extends StObject {
 }
 object SchemaGoogleCloudVisionV1p3beta1Paragraph {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p3beta1Paragraph = {
+  inline def apply(): SchemaGoogleCloudVisionV1p3beta1Paragraph = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1Paragraph]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1ParagraphMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1Paragraph] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p3beta1Paragraph](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setProperty(value: SchemaGoogleCloudVisionV1p3beta1TextAnnotationTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: SchemaGoogleCloudVisionV1p3beta1TextAnnotationTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setWords(value: js.Array[SchemaGoogleCloudVisionV1p3beta1Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[SchemaGoogleCloudVisionV1p3beta1Word]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: SchemaGoogleCloudVisionV1p3beta1Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: SchemaGoogleCloudVisionV1p3beta1Word*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

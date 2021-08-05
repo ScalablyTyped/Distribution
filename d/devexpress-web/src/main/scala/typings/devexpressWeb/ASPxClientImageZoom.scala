@@ -29,8 +29,7 @@ trait ASPxClientImageZoom
 }
 object ASPxClientImageZoom {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -52,10 +51,8 @@ object ASPxClientImageZoom {
     __obj.asInstanceOf[ASPxClientImageZoom]
   }
   
-  @scala.inline
-  implicit class ASPxClientImageZoomMutableBuilder[Self <: ASPxClientImageZoom] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientImageZoom](x: Self) {
     
-    @scala.inline
-    def setSetImageProperties(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "SetImageProperties", js.Any.fromFunction5(value))
+    inline def setSetImageProperties(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "SetImageProperties", js.Any.fromFunction5(value))
   }
 }

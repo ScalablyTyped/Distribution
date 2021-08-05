@@ -13,16 +13,13 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPa
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism {
   
-  @scala.inline
-  def apply(count: Double): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism = {
+  inline def apply(count: Double): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }
 }

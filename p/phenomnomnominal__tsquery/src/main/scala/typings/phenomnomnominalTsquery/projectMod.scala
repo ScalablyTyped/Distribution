@@ -11,9 +11,7 @@ object projectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def project(configFilePath: String): js.Array[SourceFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[SourceFile]]
+  inline def project(configFilePath: String): js.Array[SourceFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[SourceFile]]
   
-  @scala.inline
-  def projectFiles(configFilePath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("projectFiles")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def projectFiles(configFilePath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("projectFiles")(configFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

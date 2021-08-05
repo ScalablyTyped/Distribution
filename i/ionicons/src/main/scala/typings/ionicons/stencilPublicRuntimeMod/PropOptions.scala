@@ -41,58 +41,41 @@ trait PropOptions extends StObject {
 }
 object PropOptions {
   
-  @scala.inline
-  def apply(): PropOptions = {
+  inline def apply(): PropOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropOptions]
   }
   
-  @scala.inline
-  implicit class PropOptionsMutableBuilder[Self <: PropOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PropOptions](x: Self) {
     
-    @scala.inline
-    def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNull: Self = StObject.set(x, "attribute", null)
+    inline def setAttributeNull: Self = StObject.set(x, "attribute", null)
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+    inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setMutable(value: Boolean): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
+    inline def setMutable(value: Boolean): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutableUndefined: Self = StObject.set(x, "mutable", js.undefined)
+    inline def setMutableUndefined: Self = StObject.set(x, "mutable", js.undefined)
     
-    @scala.inline
-    def setReflect(value: Boolean): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
+    inline def setReflect(value: Boolean): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflectToAttr(value: Boolean): Self = StObject.set(x, "reflectToAttr", value.asInstanceOf[js.Any])
+    inline def setReflectToAttr(value: Boolean): Self = StObject.set(x, "reflectToAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflectToAttrUndefined: Self = StObject.set(x, "reflectToAttr", js.undefined)
+    inline def setReflectToAttrUndefined: Self = StObject.set(x, "reflectToAttr", js.undefined)
     
-    @scala.inline
-    def setReflectUndefined: Self = StObject.set(x, "reflect", js.undefined)
+    inline def setReflectUndefined: Self = StObject.set(x, "reflect", js.undefined)
   }
 }

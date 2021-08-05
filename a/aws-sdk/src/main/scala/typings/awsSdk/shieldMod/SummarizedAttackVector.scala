@@ -18,25 +18,19 @@ trait SummarizedAttackVector extends StObject {
 }
 object SummarizedAttackVector {
   
-  @scala.inline
-  def apply(VectorType: String): SummarizedAttackVector = {
+  inline def apply(VectorType: String): SummarizedAttackVector = {
     val __obj = js.Dynamic.literal(VectorType = VectorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummarizedAttackVector]
   }
   
-  @scala.inline
-  implicit class SummarizedAttackVectorMutableBuilder[Self <: SummarizedAttackVector] (val x: Self) extends AnyVal {
+  extension [Self <: SummarizedAttackVector](x: Self) {
     
-    @scala.inline
-    def setVectorCounters(value: SummarizedCounterList): Self = StObject.set(x, "VectorCounters", value.asInstanceOf[js.Any])
+    inline def setVectorCounters(value: SummarizedCounterList): Self = StObject.set(x, "VectorCounters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVectorCountersUndefined: Self = StObject.set(x, "VectorCounters", js.undefined)
+    inline def setVectorCountersUndefined: Self = StObject.set(x, "VectorCounters", js.undefined)
     
-    @scala.inline
-    def setVectorCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "VectorCounters", js.Array(value :_*))
+    inline def setVectorCountersVarargs(value: SummarizedCounter*): Self = StObject.set(x, "VectorCounters", js.Array(value :_*))
     
-    @scala.inline
-    def setVectorType(value: String): Self = StObject.set(x, "VectorType", value.asInstanceOf[js.Any])
+    inline def setVectorType(value: String): Self = StObject.set(x, "VectorType", value.asInstanceOf[js.Any])
   }
 }

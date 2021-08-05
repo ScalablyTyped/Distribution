@@ -13,17 +13,14 @@ trait NullLiteral
 }
 object NullLiteral {
   
-  @scala.inline
-  def apply(loc: SourceLocation): NullLiteral = {
+  inline def apply(loc: SourceLocation): NullLiteral = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[NullLiteral]
   }
   
-  @scala.inline
-  implicit class NullLiteralMutableBuilder[Self <: NullLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: NullLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

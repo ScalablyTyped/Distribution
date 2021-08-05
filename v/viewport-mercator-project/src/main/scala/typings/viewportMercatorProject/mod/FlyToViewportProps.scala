@@ -14,19 +14,15 @@ trait FlyToViewportProps
 }
 object FlyToViewportProps {
   
-  @scala.inline
-  def apply(height: Double, latitude: Double, longitude: Double, width: Double, zoom: Double): FlyToViewportProps = {
+  inline def apply(height: Double, latitude: Double, longitude: Double, width: Double, zoom: Double): FlyToViewportProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlyToViewportProps]
   }
   
-  @scala.inline
-  implicit class FlyToViewportPropsMutableBuilder[Self <: FlyToViewportProps] (val x: Self) extends AnyVal {
+  extension [Self <: FlyToViewportProps](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

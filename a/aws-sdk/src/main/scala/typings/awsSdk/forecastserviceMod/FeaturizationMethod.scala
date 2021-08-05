@@ -18,22 +18,17 @@ trait FeaturizationMethod extends StObject {
 }
 object FeaturizationMethod {
   
-  @scala.inline
-  def apply(FeaturizationMethodName: FeaturizationMethodName): FeaturizationMethod = {
+  inline def apply(FeaturizationMethodName: FeaturizationMethodName): FeaturizationMethod = {
     val __obj = js.Dynamic.literal(FeaturizationMethodName = FeaturizationMethodName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeaturizationMethod]
   }
   
-  @scala.inline
-  implicit class FeaturizationMethodMutableBuilder[Self <: FeaturizationMethod] (val x: Self) extends AnyVal {
+  extension [Self <: FeaturizationMethod](x: Self) {
     
-    @scala.inline
-    def setFeaturizationMethodName(value: FeaturizationMethodName): Self = StObject.set(x, "FeaturizationMethodName", value.asInstanceOf[js.Any])
+    inline def setFeaturizationMethodName(value: FeaturizationMethodName): Self = StObject.set(x, "FeaturizationMethodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturizationMethodParameters(value: FeaturizationMethodParameters): Self = StObject.set(x, "FeaturizationMethodParameters", value.asInstanceOf[js.Any])
+    inline def setFeaturizationMethodParameters(value: FeaturizationMethodParameters): Self = StObject.set(x, "FeaturizationMethodParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturizationMethodParametersUndefined: Self = StObject.set(x, "FeaturizationMethodParameters", js.undefined)
+    inline def setFeaturizationMethodParametersUndefined: Self = StObject.set(x, "FeaturizationMethodParameters", js.undefined)
   }
 }

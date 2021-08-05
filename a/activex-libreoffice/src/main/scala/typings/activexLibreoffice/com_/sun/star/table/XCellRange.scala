@@ -49,8 +49,7 @@ trait XCellRange
 }
 object XCellRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getCellByPosition: (Double, Double) => XCell,
     getCellRangeByName: String => XCellRange,
@@ -62,16 +61,12 @@ object XCellRange {
     __obj.asInstanceOf[XCellRange]
   }
   
-  @scala.inline
-  implicit class XCellRangeMutableBuilder[Self <: XCellRange] (val x: Self) extends AnyVal {
+  extension [Self <: XCellRange](x: Self) {
     
-    @scala.inline
-    def setGetCellByPosition(value: (Double, Double) => XCell): Self = StObject.set(x, "getCellByPosition", js.Any.fromFunction2(value))
+    inline def setGetCellByPosition(value: (Double, Double) => XCell): Self = StObject.set(x, "getCellByPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCellRangeByName(value: String => XCellRange): Self = StObject.set(x, "getCellRangeByName", js.Any.fromFunction1(value))
+    inline def setGetCellRangeByName(value: String => XCellRange): Self = StObject.set(x, "getCellRangeByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCellRangeByPosition(value: (Double, Double, Double, Double) => XCellRange): Self = StObject.set(x, "getCellRangeByPosition", js.Any.fromFunction4(value))
+    inline def setGetCellRangeByPosition(value: (Double, Double, Double, Double) => XCellRange): Self = StObject.set(x, "getCellRangeByPosition", js.Any.fromFunction4(value))
   }
 }

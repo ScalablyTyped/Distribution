@@ -11,6 +11,5 @@ object buildTypesAddContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ariaLive: String): HTMLDivElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ariaLive.asInstanceOf[js.Any]).asInstanceOf[HTMLDivElement]
+  inline def default(ariaLive: String): HTMLDivElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ariaLive.asInstanceOf[js.Any]).asInstanceOf[HTMLDivElement]
 }

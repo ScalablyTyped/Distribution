@@ -83,67 +83,47 @@ trait IConstraintRenderDefinition extends StObject {
 }
 object IConstraintRenderDefinition {
   
-  @scala.inline
-  def apply(): IConstraintRenderDefinition = {
+  inline def apply(): IConstraintRenderDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConstraintRenderDefinition]
   }
   
-  @scala.inline
-  implicit class IConstraintRenderDefinitionMutableBuilder[Self <: IConstraintRenderDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IConstraintRenderDefinition](x: Self) {
     
-    @scala.inline
-    def setAnchorColor(value: Double): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
+    inline def setAnchorColor(value: Double): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorColorUndefined: Self = StObject.set(x, "anchorColor", js.undefined)
+    inline def setAnchorColorUndefined: Self = StObject.set(x, "anchorColor", js.undefined)
     
-    @scala.inline
-    def setAnchorSize(value: Double): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
+    inline def setAnchorSize(value: Double): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
+    inline def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
     
-    @scala.inline
-    def setAnchors(value: Boolean): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
+    inline def setAnchors(value: Boolean): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)
+    inline def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)
     
-    @scala.inline
-    def setLineColor(value: Double): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: Double): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineOpacity(value: Double): Self = StObject.set(x, "lineOpacity", value.asInstanceOf[js.Any])
+    inline def setLineOpacity(value: Double): Self = StObject.set(x, "lineOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineOpacityUndefined: Self = StObject.set(x, "lineOpacity", js.undefined)
+    inline def setLineOpacityUndefined: Self = StObject.set(x, "lineOpacity", js.undefined)
     
-    @scala.inline
-    def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
+    inline def setLineThickness(value: Double): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
+    inline def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
     
-    @scala.inline
-    def setPinSize(value: Double): Self = StObject.set(x, "pinSize", value.asInstanceOf[js.Any])
+    inline def setPinSize(value: Double): Self = StObject.set(x, "pinSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinSizeUndefined: Self = StObject.set(x, "pinSize", js.undefined)
+    inline def setPinSizeUndefined: Self = StObject.set(x, "pinSize", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcImportXMLOption extends StObject
 object AcImportXMLOption {
   
-  @scala.inline
-  def acAppendData: `2` = 2.asInstanceOf[`2`]
+  inline def acAppendData: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acStructureAndData: `1` = 1.asInstanceOf[`1`]
+  inline def acStructureAndData: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acStructureOnly: `0` = 0.asInstanceOf[`0`]
+  inline def acStructureOnly: `0` = 0.asInstanceOf[`0`]
 }

@@ -37,15 +37,15 @@ object channelChannelMod {
     def defaultAction(action: Unit, payload: js.Any, senderIdentity: ProviderIdentity): js.Any = js.native
     def defaultAction(action: Unit, payload: Unit, senderIdentity: ProviderIdentity): js.Any = js.native
     
-    var defaultSet: js.Any = js.native
+    /* private */ var defaultSet: js.Any = js.native
     
-    var errorMiddleware: js.Any = js.native
+    /* private */ var errorMiddleware: js.Any = js.native
     
     def onError(func: js.Function3[/* action */ String, /* error */ js.Any, /* id */ Identity, js.Any]): Unit = js.native
     
-    var postAction: js.Any = js.native
+    /* private */ var postAction: js.Any = js.native
     
-    var preAction: js.Any = js.native
+    /* private */ var preAction: js.Any = js.native
     
     def processAction(action: String, payload: js.Any, senderIdentity: ProviderIdentity): js.Promise[js.Any] = js.native
     
@@ -65,7 +65,7 @@ object channelChannelMod {
         ]
     ): Unit = js.native
     
-    var subscriptions: js.Any = js.native
+    /* protected */ var subscriptions: js.Any = js.native
   }
   
   @JSImport("openfin/_v2/api/interappbus/channel/channel", "ProtectedItems")
@@ -95,20 +95,16 @@ object channelChannelMod {
   }
   object ChannelMessagePayload {
     
-    @scala.inline
-    def apply(action: String, payload: js.Any, uuid: String): ChannelMessagePayload = {
+    inline def apply(action: String, payload: js.Any, uuid: String): ChannelMessagePayload = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelMessagePayload]
     }
     
-    @scala.inline
-    implicit class ChannelMessagePayloadMutableBuilder[Self <: ChannelMessagePayload] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelMessagePayload](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   

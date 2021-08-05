@@ -10,19 +10,15 @@ trait PlotSupertrendChangeTrendLineOptions extends StObject {
 }
 object PlotSupertrendChangeTrendLineOptions {
   
-  @scala.inline
-  def apply(): PlotSupertrendChangeTrendLineOptions = {
+  inline def apply(): PlotSupertrendChangeTrendLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSupertrendChangeTrendLineOptions]
   }
   
-  @scala.inline
-  implicit class PlotSupertrendChangeTrendLineOptionsMutableBuilder[Self <: PlotSupertrendChangeTrendLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSupertrendChangeTrendLineOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotSupertrendChangeTrendLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotSupertrendChangeTrendLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

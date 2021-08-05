@@ -14,31 +14,23 @@ trait UploadValidation extends StObject {
 }
 object UploadValidation {
   
-  @scala.inline
-  def apply(): UploadValidation = {
+  inline def apply(): UploadValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadValidation]
   }
   
-  @scala.inline
-  implicit class UploadValidationMutableBuilder[Self <: UploadValidation] (val x: Self) extends AnyVal {
+  extension [Self <: UploadValidation](x: Self) {
     
-    @scala.inline
-    def setAllowedExtensions(value: js.Any): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
+    inline def setAllowedExtensions(value: js.Any): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
+    inline def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
     
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
     
-    @scala.inline
-    def setMinFileSize(value: Double): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
+    inline def setMinFileSize(value: Double): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinFileSizeUndefined: Self = StObject.set(x, "minFileSize", js.undefined)
+    inline def setMinFileSizeUndefined: Self = StObject.set(x, "minFileSize", js.undefined)
   }
 }

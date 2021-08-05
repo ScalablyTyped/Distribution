@@ -23,28 +23,21 @@ trait ListThingsInBillingGroupRequest extends StObject {
 }
 object ListThingsInBillingGroupRequest {
   
-  @scala.inline
-  def apply(billingGroupName: BillingGroupName): ListThingsInBillingGroupRequest = {
+  inline def apply(billingGroupName: BillingGroupName): ListThingsInBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingsInBillingGroupRequest]
   }
   
-  @scala.inline
-  implicit class ListThingsInBillingGroupRequestMutableBuilder[Self <: ListThingsInBillingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListThingsInBillingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
+    inline def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

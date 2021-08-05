@@ -29,6 +29,5 @@ object shutdownMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsTimeout: CtxIpfsAny): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def handler(hasHasIpfsTimeout: CtxIpfsAny): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

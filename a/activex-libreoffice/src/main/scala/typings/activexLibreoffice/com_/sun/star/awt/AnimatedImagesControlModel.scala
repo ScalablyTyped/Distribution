@@ -34,8 +34,7 @@ trait AnimatedImagesControlModel
 }
 object AnimatedImagesControlModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoRepeat: Boolean,
     DefaultControl: String,
     Height: Double,
@@ -85,10 +84,8 @@ object AnimatedImagesControlModel {
     __obj.asInstanceOf[AnimatedImagesControlModel]
   }
   
-  @scala.inline
-  implicit class AnimatedImagesControlModelMutableBuilder[Self <: AnimatedImagesControlModel] (val x: Self) extends AnyVal {
+  extension [Self <: AnimatedImagesControlModel](x: Self) {
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
   }
 }

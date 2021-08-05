@@ -14,31 +14,23 @@ trait BackupOption extends StObject {
 }
 object BackupOption {
   
-  @scala.inline
-  def apply(): BackupOption = {
+  inline def apply(): BackupOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupOption]
   }
   
-  @scala.inline
-  implicit class BackupOptionMutableBuilder[Self <: BackupOption] (val x: Self) extends AnyVal {
+  extension [Self <: BackupOption](x: Self) {
     
-    @scala.inline
-    def setBackupOption(value: Color): Self = StObject.set(x, "backupOption", value.asInstanceOf[js.Any])
+    inline def setBackupOption(value: Color): Self = StObject.set(x, "backupOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupOptionUndefined: Self = StObject.set(x, "backupOption", js.undefined)
+    inline def setBackupOptionUndefined: Self = StObject.set(x, "backupOption", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

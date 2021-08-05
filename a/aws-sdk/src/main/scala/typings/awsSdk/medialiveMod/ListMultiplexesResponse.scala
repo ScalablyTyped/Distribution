@@ -18,28 +18,21 @@ trait ListMultiplexesResponse extends StObject {
 }
 object ListMultiplexesResponse {
   
-  @scala.inline
-  def apply(): ListMultiplexesResponse = {
+  inline def apply(): ListMultiplexesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMultiplexesResponse]
   }
   
-  @scala.inline
-  implicit class ListMultiplexesResponseMutableBuilder[Self <: ListMultiplexesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMultiplexesResponse](x: Self) {
     
-    @scala.inline
-    def setMultiplexes(value: listOfMultiplexSummary): Self = StObject.set(x, "Multiplexes", value.asInstanceOf[js.Any])
+    inline def setMultiplexes(value: listOfMultiplexSummary): Self = StObject.set(x, "Multiplexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexesUndefined: Self = StObject.set(x, "Multiplexes", js.undefined)
+    inline def setMultiplexesUndefined: Self = StObject.set(x, "Multiplexes", js.undefined)
     
-    @scala.inline
-    def setMultiplexesVarargs(value: MultiplexSummary*): Self = StObject.set(x, "Multiplexes", js.Array(value :_*))
+    inline def setMultiplexesVarargs(value: MultiplexSummary*): Self = StObject.set(x, "Multiplexes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

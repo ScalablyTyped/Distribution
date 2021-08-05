@@ -17,16 +17,12 @@ object FlexLayout {
   @js.native
   val ^ : FlexLayout = js.native
   
-  @scala.inline
-  implicit class FlexLayoutMutableBuilder[Self <: FlexLayout] (val x: Self) extends AnyVal {
+  extension [Self <: FlexLayout](x: Self) {
     
-    @scala.inline
-    def set$getSize(value: js.Array[js.Any]): Self = StObject.set(x, "$getSize", value.asInstanceOf[js.Any])
+    inline def set$getSize(value: js.Array[js.Any]): Self = StObject.set(x, "$getSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$getSizeVarargs(value: js.Any*): Self = StObject.set(x, "$getSize", js.Array(value :_*))
+    inline def set$getSizeVarargs(value: js.Any*): Self = StObject.set(x, "$getSize", js.Array(value :_*))
     
-    @scala.inline
-    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }
 }

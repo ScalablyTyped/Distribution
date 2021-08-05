@@ -12,25 +12,19 @@ trait MapLayerDefaultsMarkerTooltipAnimation extends StObject {
 }
 object MapLayerDefaultsMarkerTooltipAnimation {
   
-  @scala.inline
-  def apply(): MapLayerDefaultsMarkerTooltipAnimation = {
+  inline def apply(): MapLayerDefaultsMarkerTooltipAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerDefaultsMarkerTooltipAnimation]
   }
   
-  @scala.inline
-  implicit class MapLayerDefaultsMarkerTooltipAnimationMutableBuilder[Self <: MapLayerDefaultsMarkerTooltipAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerDefaultsMarkerTooltipAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: MapLayerDefaultsMarkerTooltipAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: MapLayerDefaultsMarkerTooltipAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: MapLayerDefaultsMarkerTooltipAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: MapLayerDefaultsMarkerTooltipAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

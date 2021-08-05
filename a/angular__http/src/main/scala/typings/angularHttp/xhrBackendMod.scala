@@ -21,9 +21,9 @@ object xhrBackendMod {
     def this(_cookieName: String, _headerName: String) = this()
     def this(_cookieName: Unit, _headerName: String) = this()
     
-    var _cookieName: js.Any = js.native
+    /* private */ var _cookieName: js.Any = js.native
     
-    var _headerName: js.Any = js.native
+    /* private */ var _headerName: js.Any = js.native
   }
   
   @JSImport("@angular/http/src/backends/xhr_backend", "XHRBackend")
@@ -31,11 +31,11 @@ object xhrBackendMod {
   class XHRBackend protected () extends ConnectionBackend {
     def this(_browserXHR: BrowserXhr, _baseResponseOptions: ResponseOptions, _xsrfStrategy: XSRFStrategy) = this()
     
-    var _baseResponseOptions: js.Any = js.native
+    /* private */ var _baseResponseOptions: js.Any = js.native
     
-    var _browserXHR: js.Any = js.native
+    /* private */ var _browserXHR: js.Any = js.native
     
-    var _xsrfStrategy: js.Any = js.native
+    /* private */ var _xsrfStrategy: js.Any = js.native
     
     def createConnection(request: Request): XHRConnection = js.native
   }

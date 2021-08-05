@@ -14,28 +14,21 @@ trait GooglePrivacyDlpV2ListStoredInfoTypesResponse extends StObject {
 }
 object GooglePrivacyDlpV2ListStoredInfoTypesResponse {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ListStoredInfoTypesResponse = {
+  inline def apply(): GooglePrivacyDlpV2ListStoredInfoTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ListStoredInfoTypesResponse]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ListStoredInfoTypesResponseMutableBuilder[Self <: GooglePrivacyDlpV2ListStoredInfoTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ListStoredInfoTypesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setStoredInfoTypes(value: js.Array[GooglePrivacyDlpV2StoredInfoType]): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
+    inline def setStoredInfoTypes(value: js.Array[GooglePrivacyDlpV2StoredInfoType]): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredInfoTypesUndefined: Self = StObject.set(x, "storedInfoTypes", js.undefined)
+    inline def setStoredInfoTypesUndefined: Self = StObject.set(x, "storedInfoTypes", js.undefined)
     
-    @scala.inline
-    def setStoredInfoTypesVarargs(value: GooglePrivacyDlpV2StoredInfoType*): Self = StObject.set(x, "storedInfoTypes", js.Array(value :_*))
+    inline def setStoredInfoTypesVarargs(value: GooglePrivacyDlpV2StoredInfoType*): Self = StObject.set(x, "storedInfoTypes", js.Array(value :_*))
   }
 }

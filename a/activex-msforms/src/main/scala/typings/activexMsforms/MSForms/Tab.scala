@@ -16,7 +16,7 @@ trait Tab extends StObject {
   
   var Index: Double
   
-  @JSName("MSForms.Tab_typekey")
+  /* private */ @JSName("MSForms.Tab_typekey")
   var MSFormsDotTab_typekey: Tab
   
   var Name: String
@@ -27,8 +27,7 @@ trait Tab extends StObject {
 }
 object Tab {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Accelerator: String,
     Caption: String,
     ControlTipText: String,
@@ -44,34 +43,24 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  @scala.inline
-  implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+  extension [Self <: Tab](x: Self) {
     
-    @scala.inline
-    def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
+    inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlTipText(value: String): Self = StObject.set(x, "ControlTipText", value.asInstanceOf[js.Any])
+    inline def setControlTipText(value: String): Self = StObject.set(x, "ControlTipText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotTab_typekey(value: Tab): Self = StObject.set(x, "MSForms.Tab_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotTab_typekey(value: Tab): Self = StObject.set(x, "MSForms.Tab_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

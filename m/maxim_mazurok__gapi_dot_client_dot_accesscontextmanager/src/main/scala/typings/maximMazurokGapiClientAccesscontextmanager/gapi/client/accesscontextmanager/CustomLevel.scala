@@ -11,19 +11,15 @@ trait CustomLevel extends StObject {
 }
 object CustomLevel {
   
-  @scala.inline
-  def apply(): CustomLevel = {
+  inline def apply(): CustomLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomLevel]
   }
   
-  @scala.inline
-  implicit class CustomLevelMutableBuilder[Self <: CustomLevel] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLevel](x: Self) {
     
-    @scala.inline
-    def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
+    inline def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
   }
 }

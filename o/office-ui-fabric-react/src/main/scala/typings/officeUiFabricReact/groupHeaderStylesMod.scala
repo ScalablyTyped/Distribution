@@ -12,6 +12,5 @@ object groupHeaderStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IGroupHeaderStyleProps): IGroupHeaderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IGroupHeaderStyles]
+  inline def getStyles(props: IGroupHeaderStyleProps): IGroupHeaderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IGroupHeaderStyles]
 }

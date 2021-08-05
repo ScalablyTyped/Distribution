@@ -21,25 +21,19 @@ trait SchemaRename extends StObject {
 }
 object SchemaRename {
   
-  @scala.inline
-  def apply(): SchemaRename = {
+  inline def apply(): SchemaRename = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRename]
   }
   
-  @scala.inline
-  implicit class SchemaRenameMutableBuilder[Self <: SchemaRename] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRename](x: Self) {
     
-    @scala.inline
-    def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
+    inline def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
+    inline def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
     
-    @scala.inline
-    def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
+    inline def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
+    inline def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
   }
 }

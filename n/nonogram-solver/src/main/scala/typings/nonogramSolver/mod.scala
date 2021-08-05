@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(filename: String): Result = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def apply(filename: String): Result = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   @JSImport("nonogram-solver", JSImport.Namespace)
   @js.native
@@ -51,35 +50,26 @@ object mod {
   }
   object Input {
     
-    @scala.inline
-    def apply(columns: js.Array[js.Array[Double]], rows: js.Array[js.Array[Double]]): Input = {
+    inline def apply(columns: js.Array[js.Array[Double]], rows: js.Array[js.Array[Double]]): Input = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[Input]
     }
     
-    @scala.inline
-    implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+    extension [Self <: Input](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: js.Array[State]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Array[State]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentVarargs(value: State*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: State*): Self = StObject.set(x, "content", js.Array(value :_*))
       
-      @scala.inline
-      def setRows(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
   
@@ -91,20 +81,16 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(puzzle: Puzzle, status: State): Result = {
+    inline def apply(puzzle: Puzzle, status: State): Result = {
       val __obj = js.Dynamic.literal(puzzle = puzzle.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setPuzzle(value: Puzzle): Self = StObject.set(x, "puzzle", value.asInstanceOf[js.Any])
+      inline def setPuzzle(value: Puzzle): Self = StObject.set(x, "puzzle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: State): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: State): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,13 +102,10 @@ object mod {
   trait State extends StObject
   object State {
     
-    @scala.inline
-    def `-1`: typings.nonogramSolver.nonogramSolverNumbers.`-1` = -1.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`-1`]
+    inline def `-1`: typings.nonogramSolver.nonogramSolverNumbers.`-1` = -1.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`-1`]
     
-    @scala.inline
-    def `0`: typings.nonogramSolver.nonogramSolverNumbers.`0` = 0.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`0`]
+    inline def `0`: typings.nonogramSolver.nonogramSolverNumbers.`0` = 0.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.nonogramSolver.nonogramSolverNumbers.`1` = 1.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`1`]
+    inline def `1`: typings.nonogramSolver.nonogramSolverNumbers.`1` = 1.asInstanceOf[typings.nonogramSolver.nonogramSolverNumbers.`1`]
   }
 }

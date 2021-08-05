@@ -18,8 +18,7 @@ trait MarkupContent extends StObject {
 }
 object MarkupContent {
   
-  @scala.inline
-  def apply(kind: MarkupKind, value: String): MarkupContent = {
+  inline def apply(kind: MarkupKind, value: String): MarkupContent = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkupContent]
   }
@@ -31,16 +30,12 @@ object MarkupContent {
   /**
     * Checks whether the given value conforms to the [MarkupContent](#MarkupContent) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean]
   
-  @scala.inline
-  implicit class MarkupContentMutableBuilder[Self <: MarkupContent] (val x: Self) extends AnyVal {
+  extension [Self <: MarkupContent](x: Self) {
     
-    @scala.inline
-    def setKind(value: MarkupKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: MarkupKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

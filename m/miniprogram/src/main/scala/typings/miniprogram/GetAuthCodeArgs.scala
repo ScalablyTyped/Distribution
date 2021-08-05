@@ -26,19 +26,15 @@ trait GetAuthCodeArgs
 }
 object GetAuthCodeArgs {
   
-  @scala.inline
-  def apply(scopes: String | js.Array[String]): GetAuthCodeArgs = {
+  inline def apply(scopes: String | js.Array[String]): GetAuthCodeArgs = {
     val __obj = js.Dynamic.literal(scopes = scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAuthCodeArgs]
   }
   
-  @scala.inline
-  implicit class GetAuthCodeArgsMutableBuilder[Self <: GetAuthCodeArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthCodeArgs](x: Self) {
     
-    @scala.inline
-    def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

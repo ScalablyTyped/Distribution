@@ -18,22 +18,17 @@ trait GetVoiceTemplateRequest extends StObject {
 }
 object GetVoiceTemplateRequest {
   
-  @scala.inline
-  def apply(TemplateName: string): GetVoiceTemplateRequest = {
+  inline def apply(TemplateName: string): GetVoiceTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVoiceTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GetVoiceTemplateRequestMutableBuilder[Self <: GetVoiceTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

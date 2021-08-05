@@ -372,122 +372,84 @@ object argumentArgumentMod {
   }
   object ArgumentsNamed {
     
-    @scala.inline
-    def apply(): ArgumentsNamed = {
+    inline def apply(): ArgumentsNamed = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArgumentsNamed]
     }
     
-    @scala.inline
-    implicit class ArgumentsNamedMutableBuilder[Self <: ArgumentsNamed] (val x: Self) extends AnyVal {
+    extension [Self <: ArgumentsNamed](x: Self) {
       
-      @scala.inline
-      def setCOMPLETE_PURCHASE_VALUE(value: CompletePurchaseArgument): Self = StObject.set(x, "COMPLETE_PURCHASE_VALUE", value.asInstanceOf[js.Any])
+      inline def setCOMPLETE_PURCHASE_VALUE(value: CompletePurchaseArgument): Self = StObject.set(x, "COMPLETE_PURCHASE_VALUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOMPLETE_PURCHASE_VALUEUndefined: Self = StObject.set(x, "COMPLETE_PURCHASE_VALUE", js.undefined)
+      inline def setCOMPLETE_PURCHASE_VALUEUndefined: Self = StObject.set(x, "COMPLETE_PURCHASE_VALUE", js.undefined)
       
-      @scala.inline
-      def setCONFIRMATION(value: ConfirmationArgument): Self = StObject.set(x, "CONFIRMATION", value.asInstanceOf[js.Any])
+      inline def setCONFIRMATION(value: ConfirmationArgument): Self = StObject.set(x, "CONFIRMATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONFIRMATIONUndefined: Self = StObject.set(x, "CONFIRMATION", js.undefined)
+      inline def setCONFIRMATIONUndefined: Self = StObject.set(x, "CONFIRMATION", js.undefined)
       
-      @scala.inline
-      def setDATETIME(value: DateTimeArgument): Self = StObject.set(x, "DATETIME", value.asInstanceOf[js.Any])
+      inline def setDATETIME(value: DateTimeArgument): Self = StObject.set(x, "DATETIME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDATETIMEUndefined: Self = StObject.set(x, "DATETIME", js.undefined)
+      inline def setDATETIMEUndefined: Self = StObject.set(x, "DATETIME", js.undefined)
       
-      @scala.inline
-      def setDELIVERY_ADDRESS_VALUE(value: DeliveryAddressArgument): Self = StObject.set(x, "DELIVERY_ADDRESS_VALUE", value.asInstanceOf[js.Any])
+      inline def setDELIVERY_ADDRESS_VALUE(value: DeliveryAddressArgument): Self = StObject.set(x, "DELIVERY_ADDRESS_VALUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDELIVERY_ADDRESS_VALUEUndefined: Self = StObject.set(x, "DELIVERY_ADDRESS_VALUE", js.undefined)
+      inline def setDELIVERY_ADDRESS_VALUEUndefined: Self = StObject.set(x, "DELIVERY_ADDRESS_VALUE", js.undefined)
       
-      @scala.inline
-      def setDIGITAL_PURCHASE_CHECK_RESULT(value: DigitalPurchaseCheckArgument): Self = StObject.set(x, "DIGITAL_PURCHASE_CHECK_RESULT", value.asInstanceOf[js.Any])
+      inline def setDIGITAL_PURCHASE_CHECK_RESULT(value: DigitalPurchaseCheckArgument): Self = StObject.set(x, "DIGITAL_PURCHASE_CHECK_RESULT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDIGITAL_PURCHASE_CHECK_RESULTUndefined: Self = StObject.set(x, "DIGITAL_PURCHASE_CHECK_RESULT", js.undefined)
+      inline def setDIGITAL_PURCHASE_CHECK_RESULTUndefined: Self = StObject.set(x, "DIGITAL_PURCHASE_CHECK_RESULT", js.undefined)
       
-      @scala.inline
-      def setIS_FINAL_REPROMPT(value: FinalRepromptArgument): Self = StObject.set(x, "IS_FINAL_REPROMPT", value.asInstanceOf[js.Any])
+      inline def setIS_FINAL_REPROMPT(value: FinalRepromptArgument): Self = StObject.set(x, "IS_FINAL_REPROMPT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIS_FINAL_REPROMPTUndefined: Self = StObject.set(x, "IS_FINAL_REPROMPT", js.undefined)
+      inline def setIS_FINAL_REPROMPTUndefined: Self = StObject.set(x, "IS_FINAL_REPROMPT", js.undefined)
       
-      @scala.inline
-      def setLINK(value: DeepLinkArgument): Self = StObject.set(x, "LINK", value.asInstanceOf[js.Any])
+      inline def setLINK(value: DeepLinkArgument): Self = StObject.set(x, "LINK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLINKUndefined: Self = StObject.set(x, "LINK", js.undefined)
+      inline def setLINKUndefined: Self = StObject.set(x, "LINK", js.undefined)
       
-      @scala.inline
-      def setMEDIA_STATUS(value: MediaStatusArgument): Self = StObject.set(x, "MEDIA_STATUS", value.asInstanceOf[js.Any])
+      inline def setMEDIA_STATUS(value: MediaStatusArgument): Self = StObject.set(x, "MEDIA_STATUS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEDIA_STATUSUndefined: Self = StObject.set(x, "MEDIA_STATUS", js.undefined)
+      inline def setMEDIA_STATUSUndefined: Self = StObject.set(x, "MEDIA_STATUS", js.undefined)
       
-      @scala.inline
-      def setNEW_SURFACE(value: NewSurfaceArgument): Self = StObject.set(x, "NEW_SURFACE", value.asInstanceOf[js.Any])
+      inline def setNEW_SURFACE(value: NewSurfaceArgument): Self = StObject.set(x, "NEW_SURFACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNEW_SURFACEUndefined: Self = StObject.set(x, "NEW_SURFACE", js.undefined)
+      inline def setNEW_SURFACEUndefined: Self = StObject.set(x, "NEW_SURFACE", js.undefined)
       
-      @scala.inline
-      def setOPTION(value: OptionArgument): Self = StObject.set(x, "OPTION", value.asInstanceOf[js.Any])
+      inline def setOPTION(value: OptionArgument): Self = StObject.set(x, "OPTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOPTIONUndefined: Self = StObject.set(x, "OPTION", js.undefined)
+      inline def setOPTIONUndefined: Self = StObject.set(x, "OPTION", js.undefined)
       
-      @scala.inline
-      def setPERMISSION(value: PermissionArgument): Self = StObject.set(x, "PERMISSION", value.asInstanceOf[js.Any])
+      inline def setPERMISSION(value: PermissionArgument): Self = StObject.set(x, "PERMISSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPERMISSIONUndefined: Self = StObject.set(x, "PERMISSION", js.undefined)
+      inline def setPERMISSIONUndefined: Self = StObject.set(x, "PERMISSION", js.undefined)
       
-      @scala.inline
-      def setPLACE(value: PlaceArgument): Self = StObject.set(x, "PLACE", value.asInstanceOf[js.Any])
+      inline def setPLACE(value: PlaceArgument): Self = StObject.set(x, "PLACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLACEUndefined: Self = StObject.set(x, "PLACE", js.undefined)
+      inline def setPLACEUndefined: Self = StObject.set(x, "PLACE", js.undefined)
       
-      @scala.inline
-      def setREGISTER_UPDATE(value: RegisterUpdateArgument): Self = StObject.set(x, "REGISTER_UPDATE", value.asInstanceOf[js.Any])
+      inline def setREGISTER_UPDATE(value: RegisterUpdateArgument): Self = StObject.set(x, "REGISTER_UPDATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGISTER_UPDATEUndefined: Self = StObject.set(x, "REGISTER_UPDATE", js.undefined)
+      inline def setREGISTER_UPDATEUndefined: Self = StObject.set(x, "REGISTER_UPDATE", js.undefined)
       
-      @scala.inline
-      def setREPROMPT_COUNT(value: RepromptArgument): Self = StObject.set(x, "REPROMPT_COUNT", value.asInstanceOf[js.Any])
+      inline def setREPROMPT_COUNT(value: RepromptArgument): Self = StObject.set(x, "REPROMPT_COUNT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREPROMPT_COUNTUndefined: Self = StObject.set(x, "REPROMPT_COUNT", js.undefined)
+      inline def setREPROMPT_COUNTUndefined: Self = StObject.set(x, "REPROMPT_COUNT", js.undefined)
       
-      @scala.inline
-      def setSIGN_IN(value: SignInArgument): Self = StObject.set(x, "SIGN_IN", value.asInstanceOf[js.Any])
+      inline def setSIGN_IN(value: SignInArgument): Self = StObject.set(x, "SIGN_IN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSIGN_INUndefined: Self = StObject.set(x, "SIGN_IN", js.undefined)
+      inline def setSIGN_INUndefined: Self = StObject.set(x, "SIGN_IN", js.undefined)
       
-      @scala.inline
-      def setTRANSACTION_DECISION_VALUE(value: TransactionDecisionArgument): Self = StObject.set(x, "TRANSACTION_DECISION_VALUE", value.asInstanceOf[js.Any])
+      inline def setTRANSACTION_DECISION_VALUE(value: TransactionDecisionArgument): Self = StObject.set(x, "TRANSACTION_DECISION_VALUE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSACTION_DECISION_VALUEUndefined: Self = StObject.set(x, "TRANSACTION_DECISION_VALUE", js.undefined)
+      inline def setTRANSACTION_DECISION_VALUEUndefined: Self = StObject.set(x, "TRANSACTION_DECISION_VALUE", js.undefined)
       
-      @scala.inline
-      def setTRANSACTION_REQUIREMENTS_CHECK_RESULT(value: TransactionRequirementsArgument): Self = StObject.set(x, "TRANSACTION_REQUIREMENTS_CHECK_RESULT", value.asInstanceOf[js.Any])
+      inline def setTRANSACTION_REQUIREMENTS_CHECK_RESULT(value: TransactionRequirementsArgument): Self = StObject.set(x, "TRANSACTION_REQUIREMENTS_CHECK_RESULT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSACTION_REQUIREMENTS_CHECK_RESULTUndefined: Self = StObject.set(x, "TRANSACTION_REQUIREMENTS_CHECK_RESULT", js.undefined)
+      inline def setTRANSACTION_REQUIREMENTS_CHECK_RESULTUndefined: Self = StObject.set(x, "TRANSACTION_REQUIREMENTS_CHECK_RESULT", js.undefined)
       
-      @scala.inline
-      def setUPDATES_USER_ID(value: UpdatePermissionUserIdArgument): Self = StObject.set(x, "UPDATES_USER_ID", value.asInstanceOf[js.Any])
+      inline def setUPDATES_USER_ID(value: UpdatePermissionUserIdArgument): Self = StObject.set(x, "UPDATES_USER_ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUPDATES_USER_IDUndefined: Self = StObject.set(x, "UPDATES_USER_ID", js.undefined)
+      inline def setUPDATES_USER_IDUndefined: Self = StObject.set(x, "UPDATES_USER_ID", js.undefined)
     }
   }
   
@@ -498,8 +460,7 @@ object argumentArgumentMod {
   /* name */ StringDictionary[js.UndefOr[Argument]]
   object ArgumentsParsed {
     
-    @scala.inline
-    def apply(): ArgumentsParsed = {
+    inline def apply(): ArgumentsParsed = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArgumentsParsed]
     }
@@ -514,20 +475,17 @@ object argumentArgumentMod {
   trait _Argument extends StObject
   object _Argument {
     
-    @scala.inline
-    def GoogleActionsV2DateTime(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2DateTime = {
+    inline def GoogleActionsV2DateTime(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2DateTime = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.actionsOnGoogle.v2Mod.GoogleActionsV2DateTime]
     }
     
-    @scala.inline
-    def GoogleActionsV2Location(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2Location = {
+    inline def GoogleActionsV2Location(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2Location = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.actionsOnGoogle.v2Mod.GoogleActionsV2Location]
     }
     
-    @scala.inline
-    def GoogleRpcStatus(): typings.actionsOnGoogle.v2Mod.GoogleRpcStatus = {
+    inline def GoogleRpcStatus(): typings.actionsOnGoogle.v2Mod.GoogleRpcStatus = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.actionsOnGoogle.v2Mod.GoogleRpcStatus]
     }

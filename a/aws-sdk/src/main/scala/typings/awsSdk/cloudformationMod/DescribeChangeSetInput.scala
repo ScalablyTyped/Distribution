@@ -23,28 +23,21 @@ trait DescribeChangeSetInput extends StObject {
 }
 object DescribeChangeSetInput {
   
-  @scala.inline
-  def apply(ChangeSetName: ChangeSetNameOrId): DescribeChangeSetInput = {
+  inline def apply(ChangeSetName: ChangeSetNameOrId): DescribeChangeSetInput = {
     val __obj = js.Dynamic.literal(ChangeSetName = ChangeSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChangeSetInput]
   }
   
-  @scala.inline
-  implicit class DescribeChangeSetInputMutableBuilder[Self <: DescribeChangeSetInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChangeSetInput](x: Self) {
     
-    @scala.inline
-    def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
+    inline def setChangeSetName(value: ChangeSetNameOrId): Self = StObject.set(x, "ChangeSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ trait UserIndexMark
 }
 object UserIndexMark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlternativeText: String,
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
@@ -38,10 +37,8 @@ object UserIndexMark {
     __obj.asInstanceOf[UserIndexMark]
   }
   
-  @scala.inline
-  implicit class UserIndexMarkMutableBuilder[Self <: UserIndexMark] (val x: Self) extends AnyVal {
+  extension [Self <: UserIndexMark](x: Self) {
     
-    @scala.inline
-    def setUserIndexName(value: String): Self = StObject.set(x, "UserIndexName", value.asInstanceOf[js.Any])
+    inline def setUserIndexName(value: String): Self = StObject.set(x, "UserIndexName", value.asInstanceOf[js.Any])
   }
 }

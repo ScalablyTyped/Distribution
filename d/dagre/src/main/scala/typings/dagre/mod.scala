@@ -108,62 +108,39 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def components(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("components")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+      inline def components(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("components")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
       
-      @scala.inline
-      def dijkstra(graph: Graph[js.Object], source: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def dijkstra(graph: Graph[js.Object], source: String, weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @scala.inline
-      def dijkstraAll(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      @scala.inline
-      def dijkstraAll(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstraAll(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def dijkstraAll(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @scala.inline
-      def findCycles(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findCycles")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+      inline def findCycles(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findCycles")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
       
-      @scala.inline
-      def floydWarchall(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      @scala.inline
-      def floydWarchall(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      @scala.inline
-      def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def floydWarchall(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def floydWarchall(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @scala.inline
-      def isAcyclic(graph: Graph[js.Object]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAcyclic")(graph.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isAcyclic(graph: Graph[js.Object]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAcyclic")(graph.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def postorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-      @scala.inline
-      def postorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      inline def postorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      inline def postorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       
-      @scala.inline
-      def preorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("preorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-      @scala.inline
-      def preorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("preorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      inline def preorder(graph: Graph[js.Object], nodeNames: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("preorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+      inline def preorder(graph: Graph[js.Object], nodeNames: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("preorder")(graph.asInstanceOf[js.Any], nodeNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
       
-      @scala.inline
-      def prim[T](graph: Graph[T]): Graph[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prim")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[T]]
-      @scala.inline
-      def prim[T](graph: Graph[T], weightFn: WeightFn): Graph[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("prim")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[Graph[T]]
+      inline def prim[T](graph: Graph[T]): Graph[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("prim")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[T]]
+      inline def prim[T](graph: Graph[T], weightFn: WeightFn): Graph[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("prim")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[Graph[T]]
       
-      @scala.inline
-      def tarjam(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tarjam")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+      inline def tarjam(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tarjam")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
       
-      @scala.inline
-      def topsort(graph: Graph[js.Object]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("topsort")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+      inline def topsort(graph: Graph[js.Object]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("topsort")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     }
     
     object json {
@@ -172,18 +149,14 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def read(graph: js.Any): Graph[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[js.Object]]
+      inline def read(graph: js.Any): Graph[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[js.Object]]
       
-      @scala.inline
-      def write(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def write(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     }
   }
   
-  @scala.inline
-  def layout(graph: Graph[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def layout(graph: Graph[js.Object], layout: GraphLabel & NodeConfig & EdgeConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def layout(graph: Graph[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def layout(graph: Graph[js.Object], layout: GraphLabel & NodeConfig & EdgeConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any], layout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Edge extends StObject {
     
@@ -195,26 +168,20 @@ object mod {
   }
   object Edge {
     
-    @scala.inline
-    def apply(v: String, w: String): Edge = {
+    inline def apply(v: String, w: String): Edge = {
       val __obj = js.Dynamic.literal(v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[Edge]
     }
     
-    @scala.inline
-    implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+    extension [Self <: Edge](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,50 +201,36 @@ object mod {
   }
   object EdgeConfig {
     
-    @scala.inline
-    def apply(): EdgeConfig = {
+    inline def apply(): EdgeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EdgeConfig]
     }
     
-    @scala.inline
-    implicit class EdgeConfigMutableBuilder[Self <: EdgeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EdgeConfig](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLabeloffest(value: Double): Self = StObject.set(x, "labeloffest", value.asInstanceOf[js.Any])
+      inline def setLabeloffest(value: Double): Self = StObject.set(x, "labeloffest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabeloffestUndefined: Self = StObject.set(x, "labeloffest", js.undefined)
+      inline def setLabeloffestUndefined: Self = StObject.set(x, "labeloffest", js.undefined)
       
-      @scala.inline
-      def setLablepos(value: l | c | r): Self = StObject.set(x, "lablepos", value.asInstanceOf[js.Any])
+      inline def setLablepos(value: l | c | r): Self = StObject.set(x, "lablepos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLableposUndefined: Self = StObject.set(x, "lablepos", js.undefined)
+      inline def setLableposUndefined: Self = StObject.set(x, "lablepos", js.undefined)
       
-      @scala.inline
-      def setMinlen(value: Double): Self = StObject.set(x, "minlen", value.asInstanceOf[js.Any])
+      inline def setMinlen(value: Double): Self = StObject.set(x, "minlen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinlenUndefined: Self = StObject.set(x, "minlen", js.undefined)
+      inline def setMinlenUndefined: Self = StObject.set(x, "minlen", js.undefined)
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -291,20 +244,16 @@ object mod {
   }
   object GraphEdge {
     
-    @scala.inline
-    def apply(points: js.Array[X]): GraphEdge = {
+    inline def apply(points: js.Array[X]): GraphEdge = {
       val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphEdge]
     }
     
-    @scala.inline
-    implicit class GraphEdgeMutableBuilder[Self <: GraphEdge] (val x: Self) extends AnyVal {
+    extension [Self <: GraphEdge](x: Self) {
       
-      @scala.inline
-      def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value :_*))
     }
   }
   
@@ -336,86 +285,60 @@ object mod {
   }
   object GraphLabel {
     
-    @scala.inline
-    def apply(): GraphLabel = {
+    inline def apply(): GraphLabel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GraphLabel]
     }
     
-    @scala.inline
-    implicit class GraphLabelMutableBuilder[Self <: GraphLabel] (val x: Self) extends AnyVal {
+    extension [Self <: GraphLabel](x: Self) {
       
-      @scala.inline
-      def setAcyclicer(value: String): Self = StObject.set(x, "acyclicer", value.asInstanceOf[js.Any])
+      inline def setAcyclicer(value: String): Self = StObject.set(x, "acyclicer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcyclicerUndefined: Self = StObject.set(x, "acyclicer", js.undefined)
+      inline def setAcyclicerUndefined: Self = StObject.set(x, "acyclicer", js.undefined)
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
+      inline def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompoundUndefined: Self = StObject.set(x, "compound", js.undefined)
+      inline def setCompoundUndefined: Self = StObject.set(x, "compound", js.undefined)
       
-      @scala.inline
-      def setEdgesep(value: Double): Self = StObject.set(x, "edgesep", value.asInstanceOf[js.Any])
+      inline def setEdgesep(value: Double): Self = StObject.set(x, "edgesep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesepUndefined: Self = StObject.set(x, "edgesep", js.undefined)
+      inline def setEdgesepUndefined: Self = StObject.set(x, "edgesep", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMarginx(value: Double): Self = StObject.set(x, "marginx", value.asInstanceOf[js.Any])
+      inline def setMarginx(value: Double): Self = StObject.set(x, "marginx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginxUndefined: Self = StObject.set(x, "marginx", js.undefined)
+      inline def setMarginxUndefined: Self = StObject.set(x, "marginx", js.undefined)
       
-      @scala.inline
-      def setMarginy(value: Double): Self = StObject.set(x, "marginy", value.asInstanceOf[js.Any])
+      inline def setMarginy(value: Double): Self = StObject.set(x, "marginy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginyUndefined: Self = StObject.set(x, "marginy", js.undefined)
+      inline def setMarginyUndefined: Self = StObject.set(x, "marginy", js.undefined)
       
-      @scala.inline
-      def setNodesep(value: Double): Self = StObject.set(x, "nodesep", value.asInstanceOf[js.Any])
+      inline def setNodesep(value: Double): Self = StObject.set(x, "nodesep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesepUndefined: Self = StObject.set(x, "nodesep", js.undefined)
+      inline def setNodesepUndefined: Self = StObject.set(x, "nodesep", js.undefined)
       
-      @scala.inline
-      def setRankdir(value: String): Self = StObject.set(x, "rankdir", value.asInstanceOf[js.Any])
+      inline def setRankdir(value: String): Self = StObject.set(x, "rankdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankdirUndefined: Self = StObject.set(x, "rankdir", js.undefined)
+      inline def setRankdirUndefined: Self = StObject.set(x, "rankdir", js.undefined)
       
-      @scala.inline
-      def setRanker(value: String): Self = StObject.set(x, "ranker", value.asInstanceOf[js.Any])
+      inline def setRanker(value: String): Self = StObject.set(x, "ranker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankerUndefined: Self = StObject.set(x, "ranker", js.undefined)
+      inline def setRankerUndefined: Self = StObject.set(x, "ranker", js.undefined)
       
-      @scala.inline
-      def setRanksep(value: Double): Self = StObject.set(x, "ranksep", value.asInstanceOf[js.Any])
+      inline def setRanksep(value: Double): Self = StObject.set(x, "ranksep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRanksepUndefined: Self = StObject.set(x, "ranksep", js.undefined)
+      inline def setRanksepUndefined: Self = StObject.set(x, "ranksep", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -431,26 +354,20 @@ object mod {
   }
   object NodeConfig {
     
-    @scala.inline
-    def apply(): NodeConfig = {
+    inline def apply(): NodeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeConfig]
     }
     
-    @scala.inline
-    implicit class NodeConfigMutableBuilder[Self <: NodeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NodeConfig](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

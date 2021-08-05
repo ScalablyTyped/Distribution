@@ -15,7 +15,7 @@ object pipeResolverMockMod {
   class MockPipeResolver protected () extends PipeResolver {
     def this(refector: CompileReflector) = this()
     
-    var _pipes: js.Any = js.native
+    /* private */ var _pipes: js.Any = js.native
     
     /**
       * Overrides the {@link Pipe} for a pipe.

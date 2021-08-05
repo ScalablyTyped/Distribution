@@ -16,9 +16,9 @@ object arrayTypeAdapterMod {
     extends TypeAdapter[js.Any] {
     def this(tyson: Tyson, typeToken: TypeToken[js.Any]) = this()
     
-    var _typeToken: js.Any = js.native
+    /* private */ var _typeToken: js.Any = js.native
     
-    var _tyson: js.Any = js.native
+    /* private */ var _tyson: js.Any = js.native
     
     /* private */ def convertSingleOrMultiTypeArray(isFrom: js.Any, inArray: js.Any): js.Any = js.native
   }

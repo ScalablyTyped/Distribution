@@ -35,8 +35,7 @@ trait OsData extends StObject {
 }
 object OsData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arch: String,
     build: String,
     codename: String,
@@ -55,46 +54,32 @@ object OsData {
     __obj.asInstanceOf[OsData]
   }
   
-  @scala.inline
-  implicit class OsDataMutableBuilder[Self <: OsData] (val x: Self) extends AnyVal {
+  extension [Self <: OsData](x: Self) {
     
-    @scala.inline
-    def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+    inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodename(value: String): Self = StObject.set(x, "codename", value.asInstanceOf[js.Any])
+    inline def setCodename(value: String): Self = StObject.set(x, "codename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodepage(value: String): Self = StObject.set(x, "codepage", value.asInstanceOf[js.Any])
+    inline def setCodepage(value: String): Self = StObject.set(x, "codepage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistro(value: String): Self = StObject.set(x, "distro", value.asInstanceOf[js.Any])
+    inline def setDistro(value: String): Self = StObject.set(x, "distro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernel(value: String): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
+    inline def setKernel(value: String): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogofile(value: String): Self = StObject.set(x, "logofile", value.asInstanceOf[js.Any])
+    inline def setLogofile(value: String): Self = StObject.set(x, "logofile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicepack(value: String): Self = StObject.set(x, "servicepack", value.asInstanceOf[js.Any])
+    inline def setServicepack(value: String): Self = StObject.set(x, "servicepack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUefi(value: Boolean): Self = StObject.set(x, "uefi", value.asInstanceOf[js.Any])
+    inline def setUefi(value: Boolean): Self = StObject.set(x, "uefi", value.asInstanceOf[js.Any])
   }
 }

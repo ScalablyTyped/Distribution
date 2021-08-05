@@ -11,8 +11,6 @@ object reactDollarDollarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(selector: js.Any): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
-  @scala.inline
-  def default(selector: js.Any, hasPropsState: Props): js.Promise[js.Array[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], hasPropsState.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def default(selector: js.Any): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
+  inline def default(selector: js.Any, hasPropsState: Props): js.Promise[js.Array[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], hasPropsState.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[js.Object]]]
 }

@@ -23,28 +23,21 @@ trait DecoratorHandle extends StObject {
 }
 object DecoratorHandle {
   
-  @scala.inline
-  def apply(teardown: () => Unit): DecoratorHandle = {
+  inline def apply(teardown: () => Unit): DecoratorHandle = {
     val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction0(teardown))
     __obj.asInstanceOf[DecoratorHandle]
   }
   
-  @scala.inline
-  implicit class DecoratorHandleMutableBuilder[Self <: DecoratorHandle] (val x: Self) extends AnyVal {
+  extension [Self <: DecoratorHandle](x: Self) {
     
-    @scala.inline
-    def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
+    inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+    inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
-    @scala.inline
-    def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+    inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

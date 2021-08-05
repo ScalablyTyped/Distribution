@@ -23,8 +23,7 @@ object fadeLoaderMod {
     @JSImport("react-spinners/FadeLoader", "default.defaultProps")
     @js.native
     def defaultProps: LoaderHeightWidthRadiusProps = js.native
-    @scala.inline
-    def defaultProps_=(x: LoaderHeightWidthRadiusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: LoaderHeightWidthRadiusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

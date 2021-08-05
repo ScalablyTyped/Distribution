@@ -12,16 +12,13 @@ trait INetworkOperatorNotificationTrigger
 }
 object INetworkOperatorNotificationTrigger {
   
-  @scala.inline
-  def apply(networkAccountId: String): INetworkOperatorNotificationTrigger = {
+  inline def apply(networkAccountId: String): INetworkOperatorNotificationTrigger = {
     val __obj = js.Dynamic.literal(networkAccountId = networkAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[INetworkOperatorNotificationTrigger]
   }
   
-  @scala.inline
-  implicit class INetworkOperatorNotificationTriggerMutableBuilder[Self <: INetworkOperatorNotificationTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: INetworkOperatorNotificationTrigger](x: Self) {
     
-    @scala.inline
-    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ object componentStepMod {
   class WorksStep protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
     var active: Double = js.native
@@ -26,9 +26,9 @@ object componentStepMod {
     
     var `class`: String = js.native
     
-    var elementRef: js.Any = js.native
+    /* private */ var elementRef: js.Any = js.native
     
-    var m_active: js.Any = js.native
+    /* private */ var m_active: js.Any = js.native
     
     def ngAfterViewInit(): Unit = js.native
     
@@ -36,7 +36,7 @@ object componentStepMod {
     
     var onMove: EventEmitter[StepEvent] = js.native
     
-    var wrapperElement: js.Any = js.native
+    /* private */ var wrapperElement: js.Any = js.native
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStepItem")
@@ -46,14 +46,14 @@ object componentStepMod {
        with AfterContentInit {
     def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
-    var contentElement: js.Any = js.native
+    /* private */ var contentElement: js.Any = js.native
     
-    var elementRef: js.Any = js.native
+    /* private */ var elementRef: js.Any = js.native
     
-    var m_title: js.Any = js.native
+    /* private */ var m_title: js.Any = js.native
     
     /**
       * A callback method that is invoked immediately after
@@ -70,7 +70,7 @@ object componentStepMod {
     
     var titleChild: WorksStepTitle = js.native
     
-    var titleElement: js.Any = js.native
+    /* private */ var titleElement: js.Any = js.native
   }
   
   @JSImport("homeworks/lib/ng2-homeworks/src/components/step/component.step", "WorksStepTitle")
@@ -78,7 +78,7 @@ object componentStepMod {
   class WorksStepTitle protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
     var elementRef: ElementRef[js.Any] = js.native

@@ -45,23 +45,18 @@ trait LinkedDataTypeAddedEventArgs extends StObject {
 }
 object LinkedDataTypeAddedEventArgs {
   
-  @scala.inline
-  def apply(serviceId: Double, source: EventSource | Local | Remote): LinkedDataTypeAddedEventArgs = {
+  inline def apply(serviceId: Double, source: EventSource | Local | Remote): LinkedDataTypeAddedEventArgs = {
     val __obj = js.Dynamic.literal(serviceId = serviceId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LinkedDataTypeLinkedDataTypeAdded")
     __obj.asInstanceOf[LinkedDataTypeAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class LinkedDataTypeAddedEventArgsMutableBuilder[Self <: LinkedDataTypeAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedDataTypeAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LinkedDataTypeLinkedDataTypeAdded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LinkedDataTypeLinkedDataTypeAdded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait TextChangeRange extends StObject {
 }
 object TextChangeRange {
   
-  @scala.inline
-  def apply(newLength: Double, span: TextSpan): TextChangeRange = {
+  inline def apply(newLength: Double, span: TextSpan): TextChangeRange = {
     val __obj = js.Dynamic.literal(newLength = newLength.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextChangeRange]
   }
   
-  @scala.inline
-  implicit class TextChangeRangeMutableBuilder[Self <: TextChangeRange] (val x: Self) extends AnyVal {
+  extension [Self <: TextChangeRange](x: Self) {
     
-    @scala.inline
-    def setNewLength(value: Double): Self = StObject.set(x, "newLength", value.asInstanceOf[js.Any])
+    inline def setNewLength(value: Double): Self = StObject.set(x, "newLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpan(value: TextSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: TextSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait XExactName
 }
 object XExactName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getExactName: String => String,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XExactName {
     __obj.asInstanceOf[XExactName]
   }
   
-  @scala.inline
-  implicit class XExactNameMutableBuilder[Self <: XExactName] (val x: Self) extends AnyVal {
+  extension [Self <: XExactName](x: Self) {
     
-    @scala.inline
-    def setGetExactName(value: String => String): Self = StObject.set(x, "getExactName", js.Any.fromFunction1(value))
+    inline def setGetExactName(value: String => String): Self = StObject.set(x, "getExactName", js.Any.fromFunction1(value))
   }
 }

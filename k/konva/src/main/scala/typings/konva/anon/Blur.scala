@@ -87,8 +87,7 @@ trait Blur extends StObject {
 }
 object Blur {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Blur: Filter,
     Brighten: Filter,
     Contrast: Filter,
@@ -113,64 +112,44 @@ object Blur {
     __obj.asInstanceOf[Blur]
   }
   
-  @scala.inline
-  implicit class BlurMutableBuilder[Self <: Blur] (val x: Self) extends AnyVal {
+  extension [Self <: Blur](x: Self) {
     
-    @scala.inline
-    def setBlur(value: Filter): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: Filter): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrighten(value: Filter): Self = StObject.set(x, "Brighten", value.asInstanceOf[js.Any])
+    inline def setBrighten(value: Filter): Self = StObject.set(x, "Brighten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrast(value: Filter): Self = StObject.set(x, "Contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Filter): Self = StObject.set(x, "Contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmboss(value: Filter): Self = StObject.set(x, "Emboss", value.asInstanceOf[js.Any])
+    inline def setEmboss(value: Filter): Self = StObject.set(x, "Emboss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhance(value: Filter): Self = StObject.set(x, "Enhance", value.asInstanceOf[js.Any])
+    inline def setEnhance(value: Filter): Self = StObject.set(x, "Enhance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayscale(value: Filter): Self = StObject.set(x, "Grayscale", value.asInstanceOf[js.Any])
+    inline def setGrayscale(value: Filter): Self = StObject.set(x, "Grayscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHSL(value: Filter): Self = StObject.set(x, "HSL", value.asInstanceOf[js.Any])
+    inline def setHSL(value: Filter): Self = StObject.set(x, "HSL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHSV(value: Filter): Self = StObject.set(x, "HSV", value.asInstanceOf[js.Any])
+    inline def setHSV(value: Filter): Self = StObject.set(x, "HSV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvert(value: Filter): Self = StObject.set(x, "Invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: Filter): Self = StObject.set(x, "Invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKaleidoscope(value: Filter): Self = StObject.set(x, "Kaleidoscope", value.asInstanceOf[js.Any])
+    inline def setKaleidoscope(value: Filter): Self = StObject.set(x, "Kaleidoscope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMask(value: Filter): Self = StObject.set(x, "Mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Filter): Self = StObject.set(x, "Mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoise(value: Filter): Self = StObject.set(x, "Noise", value.asInstanceOf[js.Any])
+    inline def setNoise(value: Filter): Self = StObject.set(x, "Noise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelate(value: Filter): Self = StObject.set(x, "Pixelate", value.asInstanceOf[js.Any])
+    inline def setPixelate(value: Filter): Self = StObject.set(x, "Pixelate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosterize(value: Filter): Self = StObject.set(x, "Posterize", value.asInstanceOf[js.Any])
+    inline def setPosterize(value: Filter): Self = StObject.set(x, "Posterize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGB(value: Filter): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
+    inline def setRGB(value: Filter): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGBA(value: Filter): Self = StObject.set(x, "RGBA", value.asInstanceOf[js.Any])
+    inline def setRGBA(value: Filter): Self = StObject.set(x, "RGBA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSepia(value: Filter): Self = StObject.set(x, "Sepia", value.asInstanceOf[js.Any])
+    inline def setSepia(value: Filter): Self = StObject.set(x, "Sepia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolarize(value: Filter): Self = StObject.set(x, "Solarize", value.asInstanceOf[js.Any])
+    inline def setSolarize(value: Filter): Self = StObject.set(x, "Solarize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Filter): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Filter): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
   }
 }

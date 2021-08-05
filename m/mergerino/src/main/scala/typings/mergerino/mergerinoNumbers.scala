@@ -11,6 +11,5 @@ object mergerinoNumbers {
   sealed trait `0`
     extends StObject
        with _Falsy
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
 }

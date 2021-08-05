@@ -10,20 +10,17 @@ object dfVisibleStrings {
   sealed trait both
     extends StObject
        with Direction
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait horizontal
     extends StObject
        with Direction
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait vertical
     extends StObject
        with Direction
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

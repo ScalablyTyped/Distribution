@@ -27,28 +27,21 @@ trait ResourceMetricSource extends StObject {
 }
 object ResourceMetricSource {
   
-  @scala.inline
-  def apply(name: Input[String]): ResourceMetricSource = {
+  inline def apply(name: Input[String]): ResourceMetricSource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceMetricSource]
   }
   
-  @scala.inline
-  implicit class ResourceMetricSourceMutableBuilder[Self <: ResourceMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceMetricSource](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAverageUtilization(value: Input[Double]): Self = StObject.set(x, "targetAverageUtilization", value.asInstanceOf[js.Any])
+    inline def setTargetAverageUtilization(value: Input[Double]): Self = StObject.set(x, "targetAverageUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAverageUtilizationUndefined: Self = StObject.set(x, "targetAverageUtilization", js.undefined)
+    inline def setTargetAverageUtilizationUndefined: Self = StObject.set(x, "targetAverageUtilization", js.undefined)
     
-    @scala.inline
-    def setTargetAverageValue(value: Input[String]): Self = StObject.set(x, "targetAverageValue", value.asInstanceOf[js.Any])
+    inline def setTargetAverageValue(value: Input[String]): Self = StObject.set(x, "targetAverageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAverageValueUndefined: Self = StObject.set(x, "targetAverageValue", js.undefined)
+    inline def setTargetAverageValueUndefined: Self = StObject.set(x, "targetAverageValue", js.undefined)
   }
 }

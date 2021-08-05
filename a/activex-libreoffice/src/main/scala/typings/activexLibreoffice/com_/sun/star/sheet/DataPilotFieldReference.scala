@@ -30,8 +30,7 @@ trait DataPilotFieldReference extends StObject {
 }
 object DataPilotFieldReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReferenceField: String,
     ReferenceItemName: String,
     ReferenceItemType: Double,
@@ -41,19 +40,14 @@ object DataPilotFieldReference {
     __obj.asInstanceOf[DataPilotFieldReference]
   }
   
-  @scala.inline
-  implicit class DataPilotFieldReferenceMutableBuilder[Self <: DataPilotFieldReference] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotFieldReference](x: Self) {
     
-    @scala.inline
-    def setReferenceField(value: String): Self = StObject.set(x, "ReferenceField", value.asInstanceOf[js.Any])
+    inline def setReferenceField(value: String): Self = StObject.set(x, "ReferenceField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceItemName(value: String): Self = StObject.set(x, "ReferenceItemName", value.asInstanceOf[js.Any])
+    inline def setReferenceItemName(value: String): Self = StObject.set(x, "ReferenceItemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceItemType(value: Double): Self = StObject.set(x, "ReferenceItemType", value.asInstanceOf[js.Any])
+    inline def setReferenceItemType(value: Double): Self = StObject.set(x, "ReferenceItemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceType(value: Double): Self = StObject.set(x, "ReferenceType", value.asInstanceOf[js.Any])
+    inline def setReferenceType(value: Double): Self = StObject.set(x, "ReferenceType", value.asInstanceOf[js.Any])
   }
 }

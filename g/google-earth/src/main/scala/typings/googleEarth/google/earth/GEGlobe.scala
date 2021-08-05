@@ -21,8 +21,7 @@ trait GEGlobe
 }
 object GEGlobe {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -45,13 +44,10 @@ object GEGlobe {
     __obj.asInstanceOf[GEGlobe]
   }
   
-  @scala.inline
-  implicit class GEGlobeMutableBuilder[Self <: GEGlobe] (val x: Self) extends AnyVal {
+  extension [Self <: GEGlobe](x: Self) {
     
-    @scala.inline
-    def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
+    inline def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroundAltitude(value: (Double, Double) => Double): Self = StObject.set(x, "getGroundAltitude", js.Any.fromFunction2(value))
+    inline def setGetGroundAltitude(value: (Double, Double) => Double): Self = StObject.set(x, "getGroundAltitude", js.Any.fromFunction2(value))
   }
 }

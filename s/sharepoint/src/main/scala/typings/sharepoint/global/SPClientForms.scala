@@ -37,16 +37,13 @@ object SPClientForms {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def GetClientForm(qualifier: String): typings.sharepoint.SPClientForms.ClientForm = ^.asInstanceOf[js.Dynamic].applyDynamic("GetClientForm")(qualifier.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientForms.ClientForm]
+    inline def GetClientForm(qualifier: String): typings.sharepoint.SPClientForms.ClientForm = ^.asInstanceOf[js.Dynamic].applyDynamic("GetClientForm")(qualifier.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientForms.ClientForm]
     
     /* static member */
-    @scala.inline
-    def RegisterClientForm(qualifier: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClientForm")(qualifier.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def RegisterClientForm(qualifier: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClientForm")(qualifier.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def SubmitClientForm(qualifier: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("SubmitClientForm")(qualifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def SubmitClientForm(qualifier: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("SubmitClientForm")(qualifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object ClientValidation {

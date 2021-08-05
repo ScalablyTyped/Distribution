@@ -10,19 +10,15 @@ trait PlotSolidgaugeAnimationOptions extends StObject {
 }
 object PlotSolidgaugeAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotSolidgaugeAnimationOptions = {
+  inline def apply(): PlotSolidgaugeAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSolidgaugeAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotSolidgaugeAnimationOptionsMutableBuilder[Self <: PlotSolidgaugeAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSolidgaugeAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

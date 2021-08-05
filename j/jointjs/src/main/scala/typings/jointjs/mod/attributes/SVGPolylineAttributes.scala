@@ -12,19 +12,15 @@ trait SVGPolylineAttributes
 }
 object SVGPolylineAttributes {
   
-  @scala.inline
-  def apply(): SVGPolylineAttributes = {
+  inline def apply(): SVGPolylineAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGPolylineAttributes]
   }
   
-  @scala.inline
-  implicit class SVGPolylineAttributesMutableBuilder[Self <: SVGPolylineAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPolylineAttributes](x: Self) {
     
-    @scala.inline
-    def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
   }
 }

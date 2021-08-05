@@ -28,34 +28,25 @@ trait DeleteAttributesRequest extends StObject {
 }
 object DeleteAttributesRequest {
   
-  @scala.inline
-  def apply(DomainName: String, ItemName: String): DeleteAttributesRequest = {
+  inline def apply(DomainName: String, ItemName: String): DeleteAttributesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAttributesRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAttributesRequestMutableBuilder[Self <: DeleteAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: DeletableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: DeletableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: DeletableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: DeletableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpected(value: UpdateCondition): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: UpdateCondition): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+    inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

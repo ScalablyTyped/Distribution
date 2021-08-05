@@ -42,94 +42,66 @@ object localeMod {
   }
   object CustomLocale {
     
-    @scala.inline
-    def apply(months: Shorthand, weekdays: Longhand): CustomLocale = {
+    inline def apply(months: Shorthand, weekdays: Longhand): CustomLocale = {
       val __obj = js.Dynamic.literal(months = months.asInstanceOf[js.Any], weekdays = weekdays.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomLocale]
     }
     
-    @scala.inline
-    implicit class CustomLocaleMutableBuilder[Self <: CustomLocale] (val x: Self) extends AnyVal {
+    extension [Self <: CustomLocale](x: Self) {
       
-      @scala.inline
-      def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
+      inline def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmPMUndefined: Self = StObject.set(x, "amPM", js.undefined)
+      inline def setAmPMUndefined: Self = StObject.set(x, "amPM", js.undefined)
       
-      @scala.inline
-      def setDaysInMonth(
+      inline def setDaysInMonth(
         value: js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double]
       ): Self = StObject.set(x, "daysInMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysInMonthUndefined: Self = StObject.set(x, "daysInMonth", js.undefined)
+      inline def setDaysInMonthUndefined: Self = StObject.set(x, "daysInMonth", js.undefined)
       
-      @scala.inline
-      def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+      inline def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
+      inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
-      @scala.inline
-      def setHourAriaLabel(value: String): Self = StObject.set(x, "hourAriaLabel", value.asInstanceOf[js.Any])
+      inline def setHourAriaLabel(value: String): Self = StObject.set(x, "hourAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourAriaLabelUndefined: Self = StObject.set(x, "hourAriaLabel", js.undefined)
+      inline def setHourAriaLabelUndefined: Self = StObject.set(x, "hourAriaLabel", js.undefined)
       
-      @scala.inline
-      def setMinuteAriaLabel(value: String): Self = StObject.set(x, "minuteAriaLabel", value.asInstanceOf[js.Any])
+      inline def setMinuteAriaLabel(value: String): Self = StObject.set(x, "minuteAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteAriaLabelUndefined: Self = StObject.set(x, "minuteAriaLabel", js.undefined)
+      inline def setMinuteAriaLabelUndefined: Self = StObject.set(x, "minuteAriaLabel", js.undefined)
       
-      @scala.inline
-      def setMonths(value: Shorthand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: Shorthand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdinal(value: /* nth */ Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
+      inline def setOrdinal(value: /* nth */ Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
+      inline def setOrdinalUndefined: Self = StObject.set(x, "ordinal", js.undefined)
       
-      @scala.inline
-      def setRangeSeparator(value: String): Self = StObject.set(x, "rangeSeparator", value.asInstanceOf[js.Any])
+      inline def setRangeSeparator(value: String): Self = StObject.set(x, "rangeSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeSeparatorUndefined: Self = StObject.set(x, "rangeSeparator", js.undefined)
+      inline def setRangeSeparatorUndefined: Self = StObject.set(x, "rangeSeparator", js.undefined)
       
-      @scala.inline
-      def setScrollTitle(value: String): Self = StObject.set(x, "scrollTitle", value.asInstanceOf[js.Any])
+      inline def setScrollTitle(value: String): Self = StObject.set(x, "scrollTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTitleUndefined: Self = StObject.set(x, "scrollTitle", js.undefined)
+      inline def setScrollTitleUndefined: Self = StObject.set(x, "scrollTitle", js.undefined)
       
-      @scala.inline
-      def setTime_24hr(value: Boolean): Self = StObject.set(x, "time_24hr", value.asInstanceOf[js.Any])
+      inline def setTime_24hr(value: Boolean): Self = StObject.set(x, "time_24hr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime_24hrUndefined: Self = StObject.set(x, "time_24hr", js.undefined)
+      inline def setTime_24hrUndefined: Self = StObject.set(x, "time_24hr", js.undefined)
       
-      @scala.inline
-      def setToggleTitle(value: String): Self = StObject.set(x, "toggleTitle", value.asInstanceOf[js.Any])
+      inline def setToggleTitle(value: String): Self = StObject.set(x, "toggleTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleTitleUndefined: Self = StObject.set(x, "toggleTitle", js.undefined)
+      inline def setToggleTitleUndefined: Self = StObject.set(x, "toggleTitle", js.undefined)
       
-      @scala.inline
-      def setWeekAbbreviation(value: String): Self = StObject.set(x, "weekAbbreviation", value.asInstanceOf[js.Any])
+      inline def setWeekAbbreviation(value: String): Self = StObject.set(x, "weekAbbreviation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekAbbreviationUndefined: Self = StObject.set(x, "weekAbbreviation", js.undefined)
+      inline def setWeekAbbreviationUndefined: Self = StObject.set(x, "weekAbbreviation", js.undefined)
       
-      @scala.inline
-      def setWeekdays(value: Longhand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      inline def setWeekdays(value: Longhand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearAriaLabel(value: String): Self = StObject.set(x, "yearAriaLabel", value.asInstanceOf[js.Any])
+      inline def setYearAriaLabel(value: String): Self = StObject.set(x, "yearAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearAriaLabelUndefined: Self = StObject.set(x, "yearAriaLabel", js.undefined)
+      inline def setYearAriaLabelUndefined: Self = StObject.set(x, "yearAriaLabel", js.undefined)
     }
   }
   
@@ -167,8 +139,7 @@ object localeMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amPM: js.Tuple2[String, String],
       daysInMonth: js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double],
       firstDayOfWeek: Double,
@@ -189,55 +160,39 @@ object localeMod {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
+      inline def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysInMonth(
+      inline def setDaysInMonth(
         value: js.Tuple12[Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double]
       ): Self = StObject.set(x, "daysInMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+      inline def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourAriaLabel(value: String): Self = StObject.set(x, "hourAriaLabel", value.asInstanceOf[js.Any])
+      inline def setHourAriaLabel(value: String): Self = StObject.set(x, "hourAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteAriaLabel(value: String): Self = StObject.set(x, "minuteAriaLabel", value.asInstanceOf[js.Any])
+      inline def setMinuteAriaLabel(value: String): Self = StObject.set(x, "minuteAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthAriaLabel(value: String): Self = StObject.set(x, "monthAriaLabel", value.asInstanceOf[js.Any])
+      inline def setMonthAriaLabel(value: String): Self = StObject.set(x, "monthAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: Shorthand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: Shorthand): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdinal(value: Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
+      inline def setOrdinal(value: Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRangeSeparator(value: String): Self = StObject.set(x, "rangeSeparator", value.asInstanceOf[js.Any])
+      inline def setRangeSeparator(value: String): Self = StObject.set(x, "rangeSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTitle(value: String): Self = StObject.set(x, "scrollTitle", value.asInstanceOf[js.Any])
+      inline def setScrollTitle(value: String): Self = StObject.set(x, "scrollTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime_24hr(value: Boolean): Self = StObject.set(x, "time_24hr", value.asInstanceOf[js.Any])
+      inline def setTime_24hr(value: Boolean): Self = StObject.set(x, "time_24hr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleTitle(value: String): Self = StObject.set(x, "toggleTitle", value.asInstanceOf[js.Any])
+      inline def setToggleTitle(value: String): Self = StObject.set(x, "toggleTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekAbbreviation(value: String): Self = StObject.set(x, "weekAbbreviation", value.asInstanceOf[js.Any])
+      inline def setWeekAbbreviation(value: String): Self = StObject.set(x, "weekAbbreviation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdays(value: Longhand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      inline def setWeekdays(value: Longhand): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearAriaLabel(value: String): Self = StObject.set(x, "yearAriaLabel", value.asInstanceOf[js.Any])
+      inline def setYearAriaLabel(value: String): Self = StObject.set(x, "yearAriaLabel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,190 +263,128 @@ object localeMod {
   trait key extends StObject
   object key {
     
-    @scala.inline
-    def default: typings.flatpickr.flatpickrStrings.default = "default".asInstanceOf[typings.flatpickr.flatpickrStrings.default]
+    inline def default: typings.flatpickr.flatpickrStrings.default = "default".asInstanceOf[typings.flatpickr.flatpickrStrings.default]
     
-    @scala.inline
-    def ar: typings.flatpickr.flatpickrStrings.ar = "ar".asInstanceOf[typings.flatpickr.flatpickrStrings.ar]
+    inline def ar: typings.flatpickr.flatpickrStrings.ar = "ar".asInstanceOf[typings.flatpickr.flatpickrStrings.ar]
     
-    @scala.inline
-    def at: typings.flatpickr.flatpickrStrings.at = "at".asInstanceOf[typings.flatpickr.flatpickrStrings.at]
+    inline def at: typings.flatpickr.flatpickrStrings.at = "at".asInstanceOf[typings.flatpickr.flatpickrStrings.at]
     
-    @scala.inline
-    def az: typings.flatpickr.flatpickrStrings.az = "az".asInstanceOf[typings.flatpickr.flatpickrStrings.az]
+    inline def az: typings.flatpickr.flatpickrStrings.az = "az".asInstanceOf[typings.flatpickr.flatpickrStrings.az]
     
-    @scala.inline
-    def be: typings.flatpickr.flatpickrStrings.be = "be".asInstanceOf[typings.flatpickr.flatpickrStrings.be]
+    inline def be: typings.flatpickr.flatpickrStrings.be = "be".asInstanceOf[typings.flatpickr.flatpickrStrings.be]
     
-    @scala.inline
-    def bg: typings.flatpickr.flatpickrStrings.bg = "bg".asInstanceOf[typings.flatpickr.flatpickrStrings.bg]
+    inline def bg: typings.flatpickr.flatpickrStrings.bg = "bg".asInstanceOf[typings.flatpickr.flatpickrStrings.bg]
     
-    @scala.inline
-    def bn: typings.flatpickr.flatpickrStrings.bn = "bn".asInstanceOf[typings.flatpickr.flatpickrStrings.bn]
+    inline def bn: typings.flatpickr.flatpickrStrings.bn = "bn".asInstanceOf[typings.flatpickr.flatpickrStrings.bn]
     
-    @scala.inline
-    def bs: typings.flatpickr.flatpickrStrings.bs = "bs".asInstanceOf[typings.flatpickr.flatpickrStrings.bs]
+    inline def bs: typings.flatpickr.flatpickrStrings.bs = "bs".asInstanceOf[typings.flatpickr.flatpickrStrings.bs]
     
-    @scala.inline
-    def ca: typings.flatpickr.flatpickrStrings.ca = "ca".asInstanceOf[typings.flatpickr.flatpickrStrings.ca]
+    inline def ca: typings.flatpickr.flatpickrStrings.ca = "ca".asInstanceOf[typings.flatpickr.flatpickrStrings.ca]
     
-    @scala.inline
-    def cat: typings.flatpickr.flatpickrStrings.cat = "cat".asInstanceOf[typings.flatpickr.flatpickrStrings.cat]
+    inline def cat: typings.flatpickr.flatpickrStrings.cat = "cat".asInstanceOf[typings.flatpickr.flatpickrStrings.cat]
     
-    @scala.inline
-    def cs: typings.flatpickr.flatpickrStrings.cs = "cs".asInstanceOf[typings.flatpickr.flatpickrStrings.cs]
+    inline def cs: typings.flatpickr.flatpickrStrings.cs = "cs".asInstanceOf[typings.flatpickr.flatpickrStrings.cs]
     
-    @scala.inline
-    def cy: typings.flatpickr.flatpickrStrings.cy = "cy".asInstanceOf[typings.flatpickr.flatpickrStrings.cy]
+    inline def cy: typings.flatpickr.flatpickrStrings.cy = "cy".asInstanceOf[typings.flatpickr.flatpickrStrings.cy]
     
-    @scala.inline
-    def da: typings.flatpickr.flatpickrStrings.da = "da".asInstanceOf[typings.flatpickr.flatpickrStrings.da]
+    inline def da: typings.flatpickr.flatpickrStrings.da = "da".asInstanceOf[typings.flatpickr.flatpickrStrings.da]
     
-    @scala.inline
-    def de: typings.flatpickr.flatpickrStrings.de = "de".asInstanceOf[typings.flatpickr.flatpickrStrings.de]
+    inline def de: typings.flatpickr.flatpickrStrings.de = "de".asInstanceOf[typings.flatpickr.flatpickrStrings.de]
     
-    @scala.inline
-    def en: typings.flatpickr.flatpickrStrings.en = "en".asInstanceOf[typings.flatpickr.flatpickrStrings.en]
+    inline def en: typings.flatpickr.flatpickrStrings.en = "en".asInstanceOf[typings.flatpickr.flatpickrStrings.en]
     
-    @scala.inline
-    def eo: typings.flatpickr.flatpickrStrings.eo = "eo".asInstanceOf[typings.flatpickr.flatpickrStrings.eo]
+    inline def eo: typings.flatpickr.flatpickrStrings.eo = "eo".asInstanceOf[typings.flatpickr.flatpickrStrings.eo]
     
-    @scala.inline
-    def es: typings.flatpickr.flatpickrStrings.es = "es".asInstanceOf[typings.flatpickr.flatpickrStrings.es]
+    inline def es: typings.flatpickr.flatpickrStrings.es = "es".asInstanceOf[typings.flatpickr.flatpickrStrings.es]
     
-    @scala.inline
-    def et: typings.flatpickr.flatpickrStrings.et = "et".asInstanceOf[typings.flatpickr.flatpickrStrings.et]
+    inline def et: typings.flatpickr.flatpickrStrings.et = "et".asInstanceOf[typings.flatpickr.flatpickrStrings.et]
     
-    @scala.inline
-    def fa: typings.flatpickr.flatpickrStrings.fa = "fa".asInstanceOf[typings.flatpickr.flatpickrStrings.fa]
+    inline def fa: typings.flatpickr.flatpickrStrings.fa = "fa".asInstanceOf[typings.flatpickr.flatpickrStrings.fa]
     
-    @scala.inline
-    def fi: typings.flatpickr.flatpickrStrings.fi = "fi".asInstanceOf[typings.flatpickr.flatpickrStrings.fi]
+    inline def fi: typings.flatpickr.flatpickrStrings.fi = "fi".asInstanceOf[typings.flatpickr.flatpickrStrings.fi]
     
-    @scala.inline
-    def fo: typings.flatpickr.flatpickrStrings.fo = "fo".asInstanceOf[typings.flatpickr.flatpickrStrings.fo]
+    inline def fo: typings.flatpickr.flatpickrStrings.fo = "fo".asInstanceOf[typings.flatpickr.flatpickrStrings.fo]
     
-    @scala.inline
-    def fr: typings.flatpickr.flatpickrStrings.fr = "fr".asInstanceOf[typings.flatpickr.flatpickrStrings.fr]
+    inline def fr: typings.flatpickr.flatpickrStrings.fr = "fr".asInstanceOf[typings.flatpickr.flatpickrStrings.fr]
     
-    @scala.inline
-    def gr: typings.flatpickr.flatpickrStrings.gr = "gr".asInstanceOf[typings.flatpickr.flatpickrStrings.gr]
+    inline def gr: typings.flatpickr.flatpickrStrings.gr = "gr".asInstanceOf[typings.flatpickr.flatpickrStrings.gr]
     
-    @scala.inline
-    def he: typings.flatpickr.flatpickrStrings.he = "he".asInstanceOf[typings.flatpickr.flatpickrStrings.he]
+    inline def he: typings.flatpickr.flatpickrStrings.he = "he".asInstanceOf[typings.flatpickr.flatpickrStrings.he]
     
-    @scala.inline
-    def hi: typings.flatpickr.flatpickrStrings.hi = "hi".asInstanceOf[typings.flatpickr.flatpickrStrings.hi]
+    inline def hi: typings.flatpickr.flatpickrStrings.hi = "hi".asInstanceOf[typings.flatpickr.flatpickrStrings.hi]
     
-    @scala.inline
-    def hr: typings.flatpickr.flatpickrStrings.hr = "hr".asInstanceOf[typings.flatpickr.flatpickrStrings.hr]
+    inline def hr: typings.flatpickr.flatpickrStrings.hr = "hr".asInstanceOf[typings.flatpickr.flatpickrStrings.hr]
     
-    @scala.inline
-    def hu: typings.flatpickr.flatpickrStrings.hu = "hu".asInstanceOf[typings.flatpickr.flatpickrStrings.hu]
+    inline def hu: typings.flatpickr.flatpickrStrings.hu = "hu".asInstanceOf[typings.flatpickr.flatpickrStrings.hu]
     
-    @scala.inline
-    def id: typings.flatpickr.flatpickrStrings.id = "id".asInstanceOf[typings.flatpickr.flatpickrStrings.id]
+    inline def id: typings.flatpickr.flatpickrStrings.id = "id".asInstanceOf[typings.flatpickr.flatpickrStrings.id]
     
-    @scala.inline
-    def is: typings.flatpickr.flatpickrStrings.is = "is".asInstanceOf[typings.flatpickr.flatpickrStrings.is]
+    inline def is: typings.flatpickr.flatpickrStrings.is = "is".asInstanceOf[typings.flatpickr.flatpickrStrings.is]
     
-    @scala.inline
-    def it: typings.flatpickr.flatpickrStrings.it = "it".asInstanceOf[typings.flatpickr.flatpickrStrings.it]
+    inline def it: typings.flatpickr.flatpickrStrings.it = "it".asInstanceOf[typings.flatpickr.flatpickrStrings.it]
     
-    @scala.inline
-    def ja: typings.flatpickr.flatpickrStrings.ja = "ja".asInstanceOf[typings.flatpickr.flatpickrStrings.ja]
+    inline def ja: typings.flatpickr.flatpickrStrings.ja = "ja".asInstanceOf[typings.flatpickr.flatpickrStrings.ja]
     
-    @scala.inline
-    def ka: typings.flatpickr.flatpickrStrings.ka = "ka".asInstanceOf[typings.flatpickr.flatpickrStrings.ka]
+    inline def ka: typings.flatpickr.flatpickrStrings.ka = "ka".asInstanceOf[typings.flatpickr.flatpickrStrings.ka]
     
-    @scala.inline
-    def km: typings.flatpickr.flatpickrStrings.km = "km".asInstanceOf[typings.flatpickr.flatpickrStrings.km]
+    inline def km: typings.flatpickr.flatpickrStrings.km = "km".asInstanceOf[typings.flatpickr.flatpickrStrings.km]
     
-    @scala.inline
-    def ko: typings.flatpickr.flatpickrStrings.ko = "ko".asInstanceOf[typings.flatpickr.flatpickrStrings.ko]
+    inline def ko: typings.flatpickr.flatpickrStrings.ko = "ko".asInstanceOf[typings.flatpickr.flatpickrStrings.ko]
     
-    @scala.inline
-    def kz: typings.flatpickr.flatpickrStrings.kz = "kz".asInstanceOf[typings.flatpickr.flatpickrStrings.kz]
+    inline def kz: typings.flatpickr.flatpickrStrings.kz = "kz".asInstanceOf[typings.flatpickr.flatpickrStrings.kz]
     
-    @scala.inline
-    def lt: typings.flatpickr.flatpickrStrings.lt = "lt".asInstanceOf[typings.flatpickr.flatpickrStrings.lt]
+    inline def lt: typings.flatpickr.flatpickrStrings.lt = "lt".asInstanceOf[typings.flatpickr.flatpickrStrings.lt]
     
-    @scala.inline
-    def lv: typings.flatpickr.flatpickrStrings.lv = "lv".asInstanceOf[typings.flatpickr.flatpickrStrings.lv]
+    inline def lv: typings.flatpickr.flatpickrStrings.lv = "lv".asInstanceOf[typings.flatpickr.flatpickrStrings.lv]
     
-    @scala.inline
-    def mk: typings.flatpickr.flatpickrStrings.mk = "mk".asInstanceOf[typings.flatpickr.flatpickrStrings.mk]
+    inline def mk: typings.flatpickr.flatpickrStrings.mk = "mk".asInstanceOf[typings.flatpickr.flatpickrStrings.mk]
     
-    @scala.inline
-    def mn: typings.flatpickr.flatpickrStrings.mn = "mn".asInstanceOf[typings.flatpickr.flatpickrStrings.mn]
+    inline def mn: typings.flatpickr.flatpickrStrings.mn = "mn".asInstanceOf[typings.flatpickr.flatpickrStrings.mn]
     
-    @scala.inline
-    def ms: typings.flatpickr.flatpickrStrings.ms = "ms".asInstanceOf[typings.flatpickr.flatpickrStrings.ms]
+    inline def ms: typings.flatpickr.flatpickrStrings.ms = "ms".asInstanceOf[typings.flatpickr.flatpickrStrings.ms]
     
-    @scala.inline
-    def my: typings.flatpickr.flatpickrStrings.my = "my".asInstanceOf[typings.flatpickr.flatpickrStrings.my]
+    inline def my: typings.flatpickr.flatpickrStrings.my = "my".asInstanceOf[typings.flatpickr.flatpickrStrings.my]
     
-    @scala.inline
-    def nl: typings.flatpickr.flatpickrStrings.nl = "nl".asInstanceOf[typings.flatpickr.flatpickrStrings.nl]
+    inline def nl: typings.flatpickr.flatpickrStrings.nl = "nl".asInstanceOf[typings.flatpickr.flatpickrStrings.nl]
     
-    @scala.inline
-    def no: typings.flatpickr.flatpickrStrings.no = "no".asInstanceOf[typings.flatpickr.flatpickrStrings.no]
+    inline def no: typings.flatpickr.flatpickrStrings.no = "no".asInstanceOf[typings.flatpickr.flatpickrStrings.no]
     
-    @scala.inline
-    def pa: typings.flatpickr.flatpickrStrings.pa = "pa".asInstanceOf[typings.flatpickr.flatpickrStrings.pa]
+    inline def pa: typings.flatpickr.flatpickrStrings.pa = "pa".asInstanceOf[typings.flatpickr.flatpickrStrings.pa]
     
-    @scala.inline
-    def pl: typings.flatpickr.flatpickrStrings.pl = "pl".asInstanceOf[typings.flatpickr.flatpickrStrings.pl]
+    inline def pl: typings.flatpickr.flatpickrStrings.pl = "pl".asInstanceOf[typings.flatpickr.flatpickrStrings.pl]
     
-    @scala.inline
-    def pt: typings.flatpickr.flatpickrStrings.pt = "pt".asInstanceOf[typings.flatpickr.flatpickrStrings.pt]
+    inline def pt: typings.flatpickr.flatpickrStrings.pt = "pt".asInstanceOf[typings.flatpickr.flatpickrStrings.pt]
     
-    @scala.inline
-    def ro: typings.flatpickr.flatpickrStrings.ro = "ro".asInstanceOf[typings.flatpickr.flatpickrStrings.ro]
+    inline def ro: typings.flatpickr.flatpickrStrings.ro = "ro".asInstanceOf[typings.flatpickr.flatpickrStrings.ro]
     
-    @scala.inline
-    def ru: typings.flatpickr.flatpickrStrings.ru = "ru".asInstanceOf[typings.flatpickr.flatpickrStrings.ru]
+    inline def ru: typings.flatpickr.flatpickrStrings.ru = "ru".asInstanceOf[typings.flatpickr.flatpickrStrings.ru]
     
-    @scala.inline
-    def si: typings.flatpickr.flatpickrStrings.si = "si".asInstanceOf[typings.flatpickr.flatpickrStrings.si]
+    inline def si: typings.flatpickr.flatpickrStrings.si = "si".asInstanceOf[typings.flatpickr.flatpickrStrings.si]
     
-    @scala.inline
-    def sk: typings.flatpickr.flatpickrStrings.sk = "sk".asInstanceOf[typings.flatpickr.flatpickrStrings.sk]
+    inline def sk: typings.flatpickr.flatpickrStrings.sk = "sk".asInstanceOf[typings.flatpickr.flatpickrStrings.sk]
     
-    @scala.inline
-    def sl: typings.flatpickr.flatpickrStrings.sl = "sl".asInstanceOf[typings.flatpickr.flatpickrStrings.sl]
+    inline def sl: typings.flatpickr.flatpickrStrings.sl = "sl".asInstanceOf[typings.flatpickr.flatpickrStrings.sl]
     
-    @scala.inline
-    def sq: typings.flatpickr.flatpickrStrings.sq = "sq".asInstanceOf[typings.flatpickr.flatpickrStrings.sq]
+    inline def sq: typings.flatpickr.flatpickrStrings.sq = "sq".asInstanceOf[typings.flatpickr.flatpickrStrings.sq]
     
-    @scala.inline
-    def sr: typings.flatpickr.flatpickrStrings.sr = "sr".asInstanceOf[typings.flatpickr.flatpickrStrings.sr]
+    inline def sr: typings.flatpickr.flatpickrStrings.sr = "sr".asInstanceOf[typings.flatpickr.flatpickrStrings.sr]
     
-    @scala.inline
-    def sv: typings.flatpickr.flatpickrStrings.sv = "sv".asInstanceOf[typings.flatpickr.flatpickrStrings.sv]
+    inline def sv: typings.flatpickr.flatpickrStrings.sv = "sv".asInstanceOf[typings.flatpickr.flatpickrStrings.sv]
     
-    @scala.inline
-    def th: typings.flatpickr.flatpickrStrings.th = "th".asInstanceOf[typings.flatpickr.flatpickrStrings.th]
+    inline def th: typings.flatpickr.flatpickrStrings.th = "th".asInstanceOf[typings.flatpickr.flatpickrStrings.th]
     
-    @scala.inline
-    def tr: typings.flatpickr.flatpickrStrings.tr = "tr".asInstanceOf[typings.flatpickr.flatpickrStrings.tr]
+    inline def tr: typings.flatpickr.flatpickrStrings.tr = "tr".asInstanceOf[typings.flatpickr.flatpickrStrings.tr]
     
-    @scala.inline
-    def uk: typings.flatpickr.flatpickrStrings.uk = "uk".asInstanceOf[typings.flatpickr.flatpickrStrings.uk]
+    inline def uk: typings.flatpickr.flatpickrStrings.uk = "uk".asInstanceOf[typings.flatpickr.flatpickrStrings.uk]
     
-    @scala.inline
-    def uz: typings.flatpickr.flatpickrStrings.uz = "uz".asInstanceOf[typings.flatpickr.flatpickrStrings.uz]
+    inline def uz: typings.flatpickr.flatpickrStrings.uz = "uz".asInstanceOf[typings.flatpickr.flatpickrStrings.uz]
     
-    @scala.inline
-    def uz_latn: typings.flatpickr.flatpickrStrings.uz_latn = "uz_latn".asInstanceOf[typings.flatpickr.flatpickrStrings.uz_latn]
+    inline def uz_latn: typings.flatpickr.flatpickrStrings.uz_latn = "uz_latn".asInstanceOf[typings.flatpickr.flatpickrStrings.uz_latn]
     
-    @scala.inline
-    def vn: typings.flatpickr.flatpickrStrings.vn = "vn".asInstanceOf[typings.flatpickr.flatpickrStrings.vn]
+    inline def vn: typings.flatpickr.flatpickrStrings.vn = "vn".asInstanceOf[typings.flatpickr.flatpickrStrings.vn]
     
-    @scala.inline
-    def zh: typings.flatpickr.flatpickrStrings.zh = "zh".asInstanceOf[typings.flatpickr.flatpickrStrings.zh]
+    inline def zh: typings.flatpickr.flatpickrStrings.zh = "zh".asInstanceOf[typings.flatpickr.flatpickrStrings.zh]
     
-    @scala.inline
-    def zh_tw: typings.flatpickr.flatpickrStrings.zh_tw = "zh_tw".asInstanceOf[typings.flatpickr.flatpickrStrings.zh_tw]
+    inline def zh_tw: typings.flatpickr.flatpickrStrings.zh_tw = "zh_tw".asInstanceOf[typings.flatpickr.flatpickrStrings.zh_tw]
   }
 }

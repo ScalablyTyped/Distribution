@@ -30,31 +30,23 @@ trait EmphasisItemStyle extends StObject {
 }
 object EmphasisItemStyle {
   
-  @scala.inline
-  def apply(): EmphasisItemStyle = {
+  inline def apply(): EmphasisItemStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmphasisItemStyle]
   }
   
-  @scala.inline
-  implicit class EmphasisItemStyleMutableBuilder[Self <: EmphasisItemStyle] (val x: Self) extends AnyVal {
+  extension [Self <: EmphasisItemStyle](x: Self) {
     
-    @scala.inline
-    def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+    inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
-    @scala.inline
-    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BorderRadius): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

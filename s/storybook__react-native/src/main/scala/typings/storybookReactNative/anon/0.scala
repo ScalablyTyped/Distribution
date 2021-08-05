@@ -10,19 +10,15 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(transform: js.Array[Scale]): `0` = {
+  inline def apply(transform: js.Array[Scale]): `0` = {
     val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setTransform(value: js.Array[Scale]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Array[Scale]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformVarargs(value: Scale*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Scale*): Self = StObject.set(x, "transform", js.Array(value :_*))
   }
 }

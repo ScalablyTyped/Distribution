@@ -16,34 +16,25 @@ trait ResizePanelOptions extends StObject {
 }
 object ResizePanelOptions {
   
-  @scala.inline
-  def apply(): ResizePanelOptions = {
+  inline def apply(): ResizePanelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizePanelOptions]
   }
   
-  @scala.inline
-  implicit class ResizePanelOptionsMutableBuilder[Self <: ResizePanelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResizePanelOptions](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDockingPanels(value: js.Array[DockingPanel]): Self = StObject.set(x, "dockingPanels", value.asInstanceOf[js.Any])
+    inline def setDockingPanels(value: js.Array[DockingPanel]): Self = StObject.set(x, "dockingPanels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockingPanelsUndefined: Self = StObject.set(x, "dockingPanels", js.undefined)
+    inline def setDockingPanelsUndefined: Self = StObject.set(x, "dockingPanels", js.undefined)
     
-    @scala.inline
-    def setDockingPanelsVarargs(value: DockingPanel*): Self = StObject.set(x, "dockingPanels", js.Array(value :_*))
+    inline def setDockingPanelsVarargs(value: DockingPanel*): Self = StObject.set(x, "dockingPanels", js.Array(value :_*))
     
-    @scala.inline
-    def setViewer(value: Viewer3D): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
+    inline def setViewer(value: Viewer3D): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewerUndefined: Self = StObject.set(x, "viewer", js.undefined)
+    inline def setViewerUndefined: Self = StObject.set(x, "viewer", js.undefined)
   }
 }

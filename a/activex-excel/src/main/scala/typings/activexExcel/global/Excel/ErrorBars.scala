@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ErrorBars")
 @js.native
-class ErrorBars protected ()
+/* private */ class ErrorBars ()
   extends StObject
      with typings.activexExcel.Excel.ErrorBars {
   
@@ -30,7 +30,7 @@ class ErrorBars protected ()
   /* CompleteClass */
   var EndStyle: XlEndStyleCap = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ErrorBars_typekey")
   var ExcelDotErrorBars_typekey: typings.activexExcel.Excel.ErrorBars = js.native
   

@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlertFeedback extends StObject
 object AlertFeedback {
   
-  @scala.inline
-  def benignPositive: typings.microsoftGraph.microsoftGraphStrings.benignPositive = "benignPositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.benignPositive]
+  inline def benignPositive: typings.microsoftGraph.microsoftGraphStrings.benignPositive = "benignPositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.benignPositive]
   
-  @scala.inline
-  def falsePositive: typings.microsoftGraph.microsoftGraphStrings.falsePositive = "falsePositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.falsePositive]
+  inline def falsePositive: typings.microsoftGraph.microsoftGraphStrings.falsePositive = "falsePositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.falsePositive]
   
-  @scala.inline
-  def truePositive: typings.microsoftGraph.microsoftGraphStrings.truePositive = "truePositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.truePositive]
+  inline def truePositive: typings.microsoftGraph.microsoftGraphStrings.truePositive = "truePositive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.truePositive]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

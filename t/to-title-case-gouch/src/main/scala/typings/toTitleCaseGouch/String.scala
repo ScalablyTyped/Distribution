@@ -10,16 +10,13 @@ trait String extends StObject {
 }
 object String {
   
-  @scala.inline
-  def apply(toTitleCase: () => java.lang.String): String = {
+  inline def apply(toTitleCase: () => java.lang.String): String = {
     val __obj = js.Dynamic.literal(toTitleCase = js.Any.fromFunction0(toTitleCase))
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setToTitleCase(value: () => java.lang.String): Self = StObject.set(x, "toTitleCase", js.Any.fromFunction0(value))
+    inline def setToTitleCase(value: () => java.lang.String): Self = StObject.set(x, "toTitleCase", js.Any.fromFunction0(value))
   }
 }

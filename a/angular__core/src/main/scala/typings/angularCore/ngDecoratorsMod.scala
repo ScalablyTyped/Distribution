@@ -14,8 +14,7 @@ object ngDecoratorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAngularDecorators(typeChecker: TypeChecker, decorators: js.Array[Decorator]): js.Array[NgDecorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAngularDecorators")(typeChecker.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[js.Array[NgDecorator]]
+  inline def getAngularDecorators(typeChecker: TypeChecker, decorators: js.Array[Decorator]): js.Array[NgDecorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAngularDecorators")(typeChecker.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[js.Array[NgDecorator]]
   
   @js.native
   trait CallExpressionDecorator
@@ -38,26 +37,20 @@ object ngDecoratorsMod {
   }
   object NgDecorator {
     
-    @scala.inline
-    def apply(importNode: ImportDeclaration, moduleName: String, name: String, node: CallExpressionDecorator): NgDecorator = {
+    inline def apply(importNode: ImportDeclaration, moduleName: String, name: String, node: CallExpressionDecorator): NgDecorator = {
       val __obj = js.Dynamic.literal(importNode = importNode.asInstanceOf[js.Any], moduleName = moduleName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[NgDecorator]
     }
     
-    @scala.inline
-    implicit class NgDecoratorMutableBuilder[Self <: NgDecorator] (val x: Self) extends AnyVal {
+    extension [Self <: NgDecorator](x: Self) {
       
-      @scala.inline
-      def setImportNode(value: ImportDeclaration): Self = StObject.set(x, "importNode", value.asInstanceOf[js.Any])
+      inline def setImportNode(value: ImportDeclaration): Self = StObject.set(x, "importNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
+      inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: CallExpressionDecorator): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: CallExpressionDecorator): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
 }

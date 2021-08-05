@@ -80,8 +80,7 @@ object mod {
   }
   object BiMap {
     
-    @scala.inline
-    def apply[TValue](
+    inline def apply[TValue](
       clear: () => Unit,
       delete: String => Unit,
       deleteValue: TValue => Unit,
@@ -99,44 +98,31 @@ object mod {
       __obj.asInstanceOf[BiMap[TValue]]
     }
     
-    @scala.inline
-    implicit class BiMapMutableBuilder[Self <: BiMap[?], TValue] (val x: Self & BiMap[TValue]) extends AnyVal {
+    extension [Self <: BiMap[?], TValue](x: Self & BiMap[TValue]) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteValue(value: TValue => Unit): Self = StObject.set(x, "deleteValue", js.Any.fromFunction1(value))
+      inline def setDeleteValue(value: TValue => Unit): Self = StObject.set(x, "deleteValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntries(value: () => IterableIterator[js.Tuple2[String, TValue]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntries(value: () => IterableIterator[js.Tuple2[String, TValue]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetKey(value: TValue => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+      inline def setGetKey(value: TValue => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasValue(value: TValue => Boolean): Self = StObject.set(x, "hasValue", js.Any.fromFunction1(value))
+      inline def setHasValue(value: TValue => Boolean): Self = StObject.set(x, "hasValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: () => IterableIterator[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => IterableIterator[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (String, TValue) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, TValue) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: () => IterableIterator[TValue]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValues(value: () => IterableIterator[TValue]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
     }
   }
 }

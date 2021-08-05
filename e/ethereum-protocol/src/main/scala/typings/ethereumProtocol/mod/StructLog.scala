@@ -27,8 +27,7 @@ trait StructLog extends StObject {
 }
 object StructLog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     depth: Double,
     error: String,
     gas: Double,
@@ -43,40 +42,28 @@ object StructLog {
     __obj.asInstanceOf[StructLog]
   }
   
-  @scala.inline
-  implicit class StructLogMutableBuilder[Self <: StructLog] (val x: Self) extends AnyVal {
+  extension [Self <: StructLog](x: Self) {
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+    inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGasCost(value: Double): Self = StObject.set(x, "gasCost", value.asInstanceOf[js.Any])
+    inline def setGasCost(value: Double): Self = StObject.set(x, "gasCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: js.Array[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: js.Array[String]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryVarargs(value: String*): Self = StObject.set(x, "memory", js.Array(value :_*))
+    inline def setMemoryVarargs(value: String*): Self = StObject.set(x, "memory", js.Array(value :_*))
     
-    @scala.inline
-    def setOp(value: OpCode): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: OpCode): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+    inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
     
-    @scala.inline
-    def setStorage(value: StringDictionary[String]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: StringDictionary[String]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
   }
 }

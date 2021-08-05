@@ -11,16 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object KoLiteActivityBindingHandler {
   
-  @scala.inline
-  def apply(defaultOptions: KoLiteActivityDefaultOptions): KoLiteActivityBindingHandler = {
+  inline def apply(defaultOptions: KoLiteActivityDefaultOptions): KoLiteActivityBindingHandler = {
     val __obj = js.Dynamic.literal(defaultOptions = defaultOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[KoLiteActivityBindingHandler]
   }
   
-  @scala.inline
-  implicit class KoLiteActivityBindingHandlerMutableBuilder[Self <: KoLiteActivityBindingHandler] (val x: Self) extends AnyVal {
+  extension [Self <: KoLiteActivityBindingHandler](x: Self) {
     
-    @scala.inline
-    def setDefaultOptions(value: KoLiteActivityDefaultOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultOptions(value: KoLiteActivityDefaultOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
   }
 }

@@ -22,25 +22,19 @@ trait SchemaStatusCondition extends StObject {
 }
 object SchemaStatusCondition {
   
-  @scala.inline
-  def apply(): SchemaStatusCondition = {
+  inline def apply(): SchemaStatusCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStatusCondition]
   }
   
-  @scala.inline
-  implicit class SchemaStatusConditionMutableBuilder[Self <: SchemaStatusCondition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStatusCondition](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

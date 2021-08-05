@@ -12,25 +12,19 @@ trait TileLayoutGap extends StObject {
 }
 object TileLayoutGap {
   
-  @scala.inline
-  def apply(): TileLayoutGap = {
+  inline def apply(): TileLayoutGap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayoutGap]
   }
   
-  @scala.inline
-  implicit class TileLayoutGapMutableBuilder[Self <: TileLayoutGap] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayoutGap](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

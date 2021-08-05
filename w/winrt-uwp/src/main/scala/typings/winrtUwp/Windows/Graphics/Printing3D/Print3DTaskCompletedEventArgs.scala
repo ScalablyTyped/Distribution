@@ -15,19 +15,15 @@ trait Print3DTaskCompletedEventArgs extends StObject {
 }
 object Print3DTaskCompletedEventArgs {
   
-  @scala.inline
-  def apply(completion: Print3DTaskCompletion, extendedStatus: Print3DTaskDetail): Print3DTaskCompletedEventArgs = {
+  inline def apply(completion: Print3DTaskCompletion, extendedStatus: Print3DTaskDetail): Print3DTaskCompletedEventArgs = {
     val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], extendedStatus = extendedStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Print3DTaskCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class Print3DTaskCompletedEventArgsMutableBuilder[Self <: Print3DTaskCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: Print3DTaskCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCompletion(value: Print3DTaskCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+    inline def setCompletion(value: Print3DTaskCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedStatus(value: Print3DTaskDetail): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
+    inline def setExtendedStatus(value: Print3DTaskDetail): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
   }
 }

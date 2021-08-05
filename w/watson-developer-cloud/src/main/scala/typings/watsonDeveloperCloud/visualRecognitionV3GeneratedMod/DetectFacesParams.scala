@@ -32,55 +32,39 @@ trait DetectFacesParams extends StObject {
 }
 object DetectFacesParams {
   
-  @scala.inline
-  def apply(): DetectFacesParams = {
+  inline def apply(): DetectFacesParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectFacesParams]
   }
   
-  @scala.inline
-  implicit class DetectFacesParamsMutableBuilder[Self <: DetectFacesParams] (val x: Self) extends AnyVal {
+  extension [Self <: DetectFacesParams](x: Self) {
     
-    @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
+    inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
+    inline def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setImages_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "images_file", value.asInstanceOf[js.Any])
+    inline def setImages_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "images_file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages_fileUndefined: Self = StObject.set(x, "images_file", js.undefined)
+    inline def setImages_fileUndefined: Self = StObject.set(x, "images_file", js.undefined)
     
-    @scala.inline
-    def setImages_file_content_type(value: String): Self = StObject.set(x, "images_file_content_type", value.asInstanceOf[js.Any])
+    inline def setImages_file_content_type(value: String): Self = StObject.set(x, "images_file_content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages_file_content_typeUndefined: Self = StObject.set(x, "images_file_content_type", js.undefined)
+    inline def setImages_file_content_typeUndefined: Self = StObject.set(x, "images_file_content_type", js.undefined)
     
-    @scala.inline
-    def setImages_filename(value: String): Self = StObject.set(x, "images_filename", value.asInstanceOf[js.Any])
+    inline def setImages_filename(value: String): Self = StObject.set(x, "images_filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages_filenameUndefined: Self = StObject.set(x, "images_filename", js.undefined)
+    inline def setImages_filenameUndefined: Self = StObject.set(x, "images_filename", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

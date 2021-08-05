@@ -15,16 +15,13 @@ trait WriteFileFailCallbackResult extends StObject {
 }
 object WriteFileFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): WriteFileFailCallbackResult = {
+  inline def apply(errMsg: String): WriteFileFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteFileFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class WriteFileFailCallbackResultMutableBuilder[Self <: WriteFileFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: WriteFileFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

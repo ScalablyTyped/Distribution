@@ -22,33 +22,25 @@ trait FavoriteTemplatesContentItem extends StObject {
 }
 object FavoriteTemplatesContentItem {
   
-  @scala.inline
-  def apply(): FavoriteTemplatesContentItem = {
+  inline def apply(): FavoriteTemplatesContentItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FavoriteTemplatesContentItem]
   }
   
-  @scala.inline
-  implicit class FavoriteTemplatesContentItemMutableBuilder[Self <: FavoriteTemplatesContentItem] (val x: Self) extends AnyVal {
+  extension [Self <: FavoriteTemplatesContentItem](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setFavoritedDate(value: String): Self = StObject.set(x, "favoritedDate", value.asInstanceOf[js.Any])
+    inline def setFavoritedDate(value: String): Self = StObject.set(x, "favoritedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavoritedDateUndefined: Self = StObject.set(x, "favoritedDate", js.undefined)
+    inline def setFavoritedDateUndefined: Self = StObject.set(x, "favoritedDate", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

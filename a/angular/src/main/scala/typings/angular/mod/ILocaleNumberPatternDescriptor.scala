@@ -26,8 +26,7 @@ trait ILocaleNumberPatternDescriptor extends StObject {
 }
 object ILocaleNumberPatternDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gSize: Double,
     lgSize: Double,
     maxFrac: Double,
@@ -42,34 +41,24 @@ object ILocaleNumberPatternDescriptor {
     __obj.asInstanceOf[ILocaleNumberPatternDescriptor]
   }
   
-  @scala.inline
-  implicit class ILocaleNumberPatternDescriptorMutableBuilder[Self <: ILocaleNumberPatternDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ILocaleNumberPatternDescriptor](x: Self) {
     
-    @scala.inline
-    def setGSize(value: Double): Self = StObject.set(x, "gSize", value.asInstanceOf[js.Any])
+    inline def setGSize(value: Double): Self = StObject.set(x, "gSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLgSize(value: Double): Self = StObject.set(x, "lgSize", value.asInstanceOf[js.Any])
+    inline def setLgSize(value: Double): Self = StObject.set(x, "lgSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFrac(value: Double): Self = StObject.set(x, "maxFrac", value.asInstanceOf[js.Any])
+    inline def setMaxFrac(value: Double): Self = StObject.set(x, "maxFrac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinFrac(value: Double): Self = StObject.set(x, "minFrac", value.asInstanceOf[js.Any])
+    inline def setMinFrac(value: Double): Self = StObject.set(x, "minFrac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinInt(value: Double): Self = StObject.set(x, "minInt", value.asInstanceOf[js.Any])
+    inline def setMinInt(value: Double): Self = StObject.set(x, "minInt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegPre(value: String): Self = StObject.set(x, "negPre", value.asInstanceOf[js.Any])
+    inline def setNegPre(value: String): Self = StObject.set(x, "negPre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegSuf(value: String): Self = StObject.set(x, "negSuf", value.asInstanceOf[js.Any])
+    inline def setNegSuf(value: String): Self = StObject.set(x, "negSuf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosPre(value: String): Self = StObject.set(x, "posPre", value.asInstanceOf[js.Any])
+    inline def setPosPre(value: String): Self = StObject.set(x, "posPre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosSuf(value: String): Self = StObject.set(x, "posSuf", value.asInstanceOf[js.Any])
+    inline def setPosSuf(value: String): Self = StObject.set(x, "posSuf", value.asInstanceOf[js.Any])
   }
 }

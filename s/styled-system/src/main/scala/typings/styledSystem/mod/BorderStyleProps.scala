@@ -68,107 +68,85 @@ trait BorderStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends St
 }
 object BorderStyleProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BorderStyleProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BorderStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderStyleProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class BorderStylePropsMutableBuilder[Self <: BorderStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & BorderStyleProps[ThemeType]) extends AnyVal {
+  extension [Self <: BorderStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & BorderStyleProps[ThemeType]) {
     
-    @scala.inline
-    def setBorderBottomStyle(
+    inline def setBorderBottomStyle(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottomStyle */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomStyleNull: Self = StObject.set(x, "borderBottomStyle", null)
+    inline def setBorderBottomStyleNull: Self = StObject.set(x, "borderBottomStyle", null)
     
-    @scala.inline
-    def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
+    inline def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
     
-    @scala.inline
-    def setBorderBottomStyleVarargs(
+    inline def setBorderBottomStyleVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottomStyle */ js.Any) | Null)*
     ): Self = StObject.set(x, "borderBottomStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderLeftStyle(
+    inline def setBorderLeftStyle(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeftStyle */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftStyleNull: Self = StObject.set(x, "borderLeftStyle", null)
+    inline def setBorderLeftStyleNull: Self = StObject.set(x, "borderLeftStyle", null)
     
-    @scala.inline
-    def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
+    inline def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
     
-    @scala.inline
-    def setBorderLeftStyleVarargs(
+    inline def setBorderLeftStyleVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderLeftStyle */ js.Any) | Null)*
     ): Self = StObject.set(x, "borderLeftStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderRightStyle(
+    inline def setBorderRightStyle(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRightStyle */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightStyleNull: Self = StObject.set(x, "borderRightStyle", null)
+    inline def setBorderRightStyleNull: Self = StObject.set(x, "borderRightStyle", null)
     
-    @scala.inline
-    def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
+    inline def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
     
-    @scala.inline
-    def setBorderRightStyleVarargs(
+    inline def setBorderRightStyleVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRightStyle */ js.Any) | Null)*
     ): Self = StObject.set(x, "borderRightStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderStyle(
+    inline def setBorderStyle(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStyleNull: Self = StObject.set(x, "borderStyle", null)
+    inline def setBorderStyleNull: Self = StObject.set(x, "borderStyle", null)
     
-    @scala.inline
-    def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+    inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
-    @scala.inline
-    def setBorderStyleVarargs(
+    inline def setBorderStyleVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any) | Null)*
     ): Self = StObject.set(x, "borderStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderTopStyle(
+    inline def setBorderTopStyle(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTopStyle */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopStyleNull: Self = StObject.set(x, "borderTopStyle", null)
+    inline def setBorderTopStyleNull: Self = StObject.set(x, "borderTopStyle", null)
     
-    @scala.inline
-    def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
+    inline def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
     
-    @scala.inline
-    def setBorderTopStyleVarargs(
+    inline def setBorderTopStyleVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderTopStyle */ js.Any) | Null)*
     ): Self = StObject.set(x, "borderTopStyle", js.Array(value :_*))
   }

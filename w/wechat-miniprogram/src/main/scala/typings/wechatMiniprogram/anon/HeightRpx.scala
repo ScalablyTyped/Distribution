@@ -20,25 +20,19 @@ trait HeightRpx extends StObject {
 }
 object HeightRpx {
   
-  @scala.inline
-  def apply(height: Double, heightRpx: Double, lineCount: Double, lineHeight: Double): HeightRpx = {
+  inline def apply(height: Double, heightRpx: Double, lineCount: Double, lineHeight: Double): HeightRpx = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], heightRpx = heightRpx.asInstanceOf[js.Any], lineCount = lineCount.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightRpx]
   }
   
-  @scala.inline
-  implicit class HeightRpxMutableBuilder[Self <: HeightRpx] (val x: Self) extends AnyVal {
+  extension [Self <: HeightRpx](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightRpx(value: Double): Self = StObject.set(x, "heightRpx", value.asInstanceOf[js.Any])
+    inline def setHeightRpx(value: Double): Self = StObject.set(x, "heightRpx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
+    inline def setLineCount(value: Double): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }
 }

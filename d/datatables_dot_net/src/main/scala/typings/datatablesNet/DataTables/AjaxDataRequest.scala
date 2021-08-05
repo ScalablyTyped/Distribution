@@ -23,8 +23,7 @@ trait AjaxDataRequest extends StObject {
 }
 object AjaxDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     columns: js.Array[AjaxDataRequestColumn],
     data: js.Any,
     draw: Double,
@@ -37,34 +36,24 @@ object AjaxDataRequest {
     __obj.asInstanceOf[AjaxDataRequest]
   }
   
-  @scala.inline
-  implicit class AjaxDataRequestMutableBuilder[Self <: AjaxDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxDataRequest](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[AjaxDataRequestColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[AjaxDataRequestColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: AjaxDataRequestColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: AjaxDataRequestColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
+    inline def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: js.Array[AjaxDataRequestOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: js.Array[AjaxDataRequestOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderVarargs(value: AjaxDataRequestOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: AjaxDataRequestOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
     
-    @scala.inline
-    def setSearch(value: AjaxDataRequestSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: AjaxDataRequestSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

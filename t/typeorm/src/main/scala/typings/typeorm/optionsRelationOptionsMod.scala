@@ -75,71 +75,50 @@ object optionsRelationOptionsMod {
   }
   object RelationOptions {
     
-    @scala.inline
-    def apply(): RelationOptions = {
+    inline def apply(): RelationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RelationOptions]
     }
     
-    @scala.inline
-    implicit class RelationOptionsMutableBuilder[Self <: RelationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RelationOptions](x: Self) {
       
-      @scala.inline
-      def setCascade(value: Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+      inline def setCascade(value: Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+      inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
       
-      @scala.inline
-      def setCascadeVarargs(value: (insert | update | remove | `soft-remove` | recover)*): Self = StObject.set(x, "cascade", js.Array(value :_*))
+      inline def setCascadeVarargs(value: (insert | update | remove | `soft-remove` | recover)*): Self = StObject.set(x, "cascade", js.Array(value :_*))
       
-      @scala.inline
-      def setDeferrable(value: DeferrableType): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
+      inline def setDeferrable(value: DeferrableType): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+      inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
       
-      @scala.inline
-      def setEager(value: Boolean): Self = StObject.set(x, "eager", value.asInstanceOf[js.Any])
+      inline def setEager(value: Boolean): Self = StObject.set(x, "eager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEagerUndefined: Self = StObject.set(x, "eager", js.undefined)
+      inline def setEagerUndefined: Self = StObject.set(x, "eager", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+      inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+      inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
       
-      @scala.inline
-      def setOnDelete(value: OnDeleteType): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
+      inline def setOnDelete(value: OnDeleteType): Self = StObject.set(x, "onDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: OnUpdateType): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: OnUpdateType): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
+      inline def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
+      inline def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
       
-      @scala.inline
-      def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     }
   }
 }

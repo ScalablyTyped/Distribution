@@ -13,25 +13,19 @@ trait FocusElement extends StObject {
 }
 object FocusElement {
   
-  @scala.inline
-  def apply(): FocusElement = {
+  inline def apply(): FocusElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FocusElement]
   }
   
-  @scala.inline
-  implicit class FocusElementMutableBuilder[Self <: FocusElement] (val x: Self) extends AnyVal {
+  extension [Self <: FocusElement](x: Self) {
     
-    @scala.inline
-    def setFocusElement(value: element | Boolean): Self = StObject.set(x, "focusElement", value.asInstanceOf[js.Any])
+    inline def setFocusElement(value: element | Boolean): Self = StObject.set(x, "focusElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusElementUndefined: Self = StObject.set(x, "focusElement", js.undefined)
+    inline def setFocusElementUndefined: Self = StObject.set(x, "focusElement", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

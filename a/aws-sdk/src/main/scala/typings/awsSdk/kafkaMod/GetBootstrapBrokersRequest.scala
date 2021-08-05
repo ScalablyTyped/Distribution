@@ -15,16 +15,13 @@ trait GetBootstrapBrokersRequest extends StObject {
 }
 object GetBootstrapBrokersRequest {
   
-  @scala.inline
-  def apply(ClusterArn: string): GetBootstrapBrokersRequest = {
+  inline def apply(ClusterArn: string): GetBootstrapBrokersRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBootstrapBrokersRequest]
   }
   
-  @scala.inline
-  implicit class GetBootstrapBrokersRequestMutableBuilder[Self <: GetBootstrapBrokersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBootstrapBrokersRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait QueryBuilder extends StObject {
 }
 object QueryBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindings: () => js.Array[js.Any],
     cql: () => String,
     eachRow: (js.Function2[/* n */ Double, /* row */ Row, js.Any], js.Function1[/* err */ Error, js.Any]) => Unit,
@@ -37,24 +36,18 @@ object QueryBuilder {
     __obj.asInstanceOf[QueryBuilder]
   }
   
-  @scala.inline
-  implicit class QueryBuilderMutableBuilder[Self <: QueryBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: QueryBuilder](x: Self) {
     
-    @scala.inline
-    def setBindings(value: () => js.Array[js.Any]): Self = StObject.set(x, "bindings", js.Any.fromFunction0(value))
+    inline def setBindings(value: () => js.Array[js.Any]): Self = StObject.set(x, "bindings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCql(value: () => String): Self = StObject.set(x, "cql", js.Any.fromFunction0(value))
+    inline def setCql(value: () => String): Self = StObject.set(x, "cql", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEachRow(
+    inline def setEachRow(
       value: (js.Function2[/* n */ Double, /* row */ Row, js.Any], js.Function1[/* err */ Error, js.Any]) => Unit
     ): Self = StObject.set(x, "eachRow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExec(value: ValueCallback[ResultSet] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+    inline def setExec(value: ValueCallback[ResultSet] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStream(value: StreamParams => Unit): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
+    inline def setStream(value: StreamParams => Unit): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
   }
 }

@@ -27,8 +27,7 @@ trait MapViewImmediateClickEvent extends StObject {
 }
 object MapViewImmediateClickEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     button: js.Any,
     buttons: Double,
     mapPoint: Point,
@@ -43,34 +42,24 @@ object MapViewImmediateClickEvent {
     __obj.asInstanceOf[MapViewImmediateClickEvent]
   }
   
-  @scala.inline
-  implicit class MapViewImmediateClickEventMutableBuilder[Self <: MapViewImmediateClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MapViewImmediateClickEvent](x: Self) {
     
-    @scala.inline
-    def setButton(value: js.Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: js.Any): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
+    inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `immediate-click`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `immediate-click`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

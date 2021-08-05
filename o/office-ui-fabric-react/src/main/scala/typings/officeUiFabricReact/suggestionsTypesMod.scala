@@ -65,26 +65,20 @@ object suggestionsTypesMod {
   }
   object ISuggestionModel {
     
-    @scala.inline
-    def apply[T](item: T, selected: Boolean): ISuggestionModel[T] = {
+    inline def apply[T](item: T, selected: Boolean): ISuggestionModel[T] = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionModel[T]]
     }
     
-    @scala.inline
-    implicit class ISuggestionModelMutableBuilder[Self <: ISuggestionModel[?], T] (val x: Self & ISuggestionModel[T]) extends AnyVal {
+    extension [Self <: ISuggestionModel[?], T](x: Self & ISuggestionModel[T]) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +107,7 @@ object suggestionsTypesMod {
   }
   object ISuggestions {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       executeSelectedAction: () => Unit,
       focusAboveSuggestions: () => Unit,
       focusBelowSuggestions: () => Unit,
@@ -127,29 +120,21 @@ object suggestionsTypesMod {
       __obj.asInstanceOf[ISuggestions[T]]
     }
     
-    @scala.inline
-    implicit class ISuggestionsMutableBuilder[Self <: ISuggestions[?], T] (val x: Self & ISuggestions[T]) extends AnyVal {
+    extension [Self <: ISuggestions[?], T](x: Self & ISuggestions[T]) {
       
-      @scala.inline
-      def setExecuteSelectedAction(value: () => Unit): Self = StObject.set(x, "executeSelectedAction", js.Any.fromFunction0(value))
+      inline def setExecuteSelectedAction(value: () => Unit): Self = StObject.set(x, "executeSelectedAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusAboveSuggestions(value: () => Unit): Self = StObject.set(x, "focusAboveSuggestions", js.Any.fromFunction0(value))
+      inline def setFocusAboveSuggestions(value: () => Unit): Self = StObject.set(x, "focusAboveSuggestions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusBelowSuggestions(value: () => Unit): Self = StObject.set(x, "focusBelowSuggestions", js.Any.fromFunction0(value))
+      inline def setFocusBelowSuggestions(value: () => Unit): Self = StObject.set(x, "focusBelowSuggestions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusSearchForMoreButton(value: () => Unit): Self = StObject.set(x, "focusSearchForMoreButton", js.Any.fromFunction0(value))
+      inline def setFocusSearchForMoreButton(value: () => Unit): Self = StObject.set(x, "focusSearchForMoreButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasSuggestedAction(value: () => Boolean): Self = StObject.set(x, "hasSuggestedAction", js.Any.fromFunction0(value))
+      inline def setHasSuggestedAction(value: () => Boolean): Self = StObject.set(x, "hasSuggestedAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasSuggestedActionSelected(value: () => Boolean): Self = StObject.set(x, "hasSuggestedActionSelected", js.Any.fromFunction0(value))
+      inline def setHasSuggestedActionSelected(value: () => Boolean): Self = StObject.set(x, "hasSuggestedActionSelected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTryHandleKeyDown(value: (Double, Double) => Boolean): Self = StObject.set(x, "tryHandleKeyDown", js.Any.fromFunction2(value))
+      inline def setTryHandleKeyDown(value: (Double, Double) => Boolean): Self = StObject.set(x, "tryHandleKeyDown", js.Any.fromFunction2(value))
     }
   }
   
@@ -374,41 +359,30 @@ object suggestionsTypesMod {
   }
   object ISuggestionsStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ISuggestionsStyleProps = {
+    inline def apply(theme: ITheme): ISuggestionsStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsStyleProps]
     }
     
-    @scala.inline
-    implicit class ISuggestionsStylePropsMutableBuilder[Self <: ISuggestionsStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setForceResolveButtonSelected(value: Boolean): Self = StObject.set(x, "forceResolveButtonSelected", value.asInstanceOf[js.Any])
+      inline def setForceResolveButtonSelected(value: Boolean): Self = StObject.set(x, "forceResolveButtonSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceResolveButtonSelectedUndefined: Self = StObject.set(x, "forceResolveButtonSelected", js.undefined)
+      inline def setForceResolveButtonSelectedUndefined: Self = StObject.set(x, "forceResolveButtonSelected", js.undefined)
       
-      @scala.inline
-      def setSearchForMoreButtonSelected(value: Boolean): Self = StObject.set(x, "searchForMoreButtonSelected", value.asInstanceOf[js.Any])
+      inline def setSearchForMoreButtonSelected(value: Boolean): Self = StObject.set(x, "searchForMoreButtonSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchForMoreButtonSelectedUndefined: Self = StObject.set(x, "searchForMoreButtonSelected", js.undefined)
+      inline def setSearchForMoreButtonSelectedUndefined: Self = StObject.set(x, "searchForMoreButtonSelected", js.undefined)
       
-      @scala.inline
-      def setSuggestionsClassName(value: String): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
+      inline def setSuggestionsClassName(value: String): Self = StObject.set(x, "suggestionsClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsClassNameUndefined: Self = StObject.set(x, "suggestionsClassName", js.undefined)
+      inline def setSuggestionsClassNameUndefined: Self = StObject.set(x, "suggestionsClassName", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -440,80 +414,56 @@ object suggestionsTypesMod {
   }
   object ISuggestionsStyles {
     
-    @scala.inline
-    def apply(subComponentStyles: ISuggestionsSubComponentStyles): ISuggestionsStyles = {
+    inline def apply(subComponentStyles: ISuggestionsSubComponentStyles): ISuggestionsStyles = {
       val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsStyles]
     }
     
-    @scala.inline
-    implicit class ISuggestionsStylesMutableBuilder[Self <: ISuggestionsStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsStyles](x: Self) {
       
-      @scala.inline
-      def setForceResolveButton(value: IStyle): Self = StObject.set(x, "forceResolveButton", value.asInstanceOf[js.Any])
+      inline def setForceResolveButton(value: IStyle): Self = StObject.set(x, "forceResolveButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceResolveButtonNull: Self = StObject.set(x, "forceResolveButton", null)
+      inline def setForceResolveButtonNull: Self = StObject.set(x, "forceResolveButton", null)
       
-      @scala.inline
-      def setForceResolveButtonUndefined: Self = StObject.set(x, "forceResolveButton", js.undefined)
+      inline def setForceResolveButtonUndefined: Self = StObject.set(x, "forceResolveButton", js.undefined)
       
-      @scala.inline
-      def setNoSuggestions(value: IStyle): Self = StObject.set(x, "noSuggestions", value.asInstanceOf[js.Any])
+      inline def setNoSuggestions(value: IStyle): Self = StObject.set(x, "noSuggestions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSuggestionsNull: Self = StObject.set(x, "noSuggestions", null)
+      inline def setNoSuggestionsNull: Self = StObject.set(x, "noSuggestions", null)
       
-      @scala.inline
-      def setNoSuggestionsUndefined: Self = StObject.set(x, "noSuggestions", js.undefined)
+      inline def setNoSuggestionsUndefined: Self = StObject.set(x, "noSuggestions", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSearchForMoreButton(value: IStyle): Self = StObject.set(x, "searchForMoreButton", value.asInstanceOf[js.Any])
+      inline def setSearchForMoreButton(value: IStyle): Self = StObject.set(x, "searchForMoreButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchForMoreButtonNull: Self = StObject.set(x, "searchForMoreButton", null)
+      inline def setSearchForMoreButtonNull: Self = StObject.set(x, "searchForMoreButton", null)
       
-      @scala.inline
-      def setSearchForMoreButtonUndefined: Self = StObject.set(x, "searchForMoreButton", js.undefined)
+      inline def setSearchForMoreButtonUndefined: Self = StObject.set(x, "searchForMoreButton", js.undefined)
       
-      @scala.inline
-      def setSubComponentStyles(value: ISuggestionsSubComponentStyles): Self = StObject.set(x, "subComponentStyles", value.asInstanceOf[js.Any])
+      inline def setSubComponentStyles(value: ISuggestionsSubComponentStyles): Self = StObject.set(x, "subComponentStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsAvailable(value: IStyle): Self = StObject.set(x, "suggestionsAvailable", value.asInstanceOf[js.Any])
+      inline def setSuggestionsAvailable(value: IStyle): Self = StObject.set(x, "suggestionsAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsAvailableNull: Self = StObject.set(x, "suggestionsAvailable", null)
+      inline def setSuggestionsAvailableNull: Self = StObject.set(x, "suggestionsAvailable", null)
       
-      @scala.inline
-      def setSuggestionsAvailableUndefined: Self = StObject.set(x, "suggestionsAvailable", js.undefined)
+      inline def setSuggestionsAvailableUndefined: Self = StObject.set(x, "suggestionsAvailable", js.undefined)
       
-      @scala.inline
-      def setSuggestionsContainer(value: IStyle): Self = StObject.set(x, "suggestionsContainer", value.asInstanceOf[js.Any])
+      inline def setSuggestionsContainer(value: IStyle): Self = StObject.set(x, "suggestionsContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsContainerNull: Self = StObject.set(x, "suggestionsContainer", null)
+      inline def setSuggestionsContainerNull: Self = StObject.set(x, "suggestionsContainer", null)
       
-      @scala.inline
-      def setSuggestionsContainerUndefined: Self = StObject.set(x, "suggestionsContainer", js.undefined)
+      inline def setSuggestionsContainerUndefined: Self = StObject.set(x, "suggestionsContainer", js.undefined)
       
-      @scala.inline
-      def setTitle(value: IStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: IStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleNull: Self = StObject.set(x, "title", null)
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -524,20 +474,16 @@ object suggestionsTypesMod {
   }
   object ISuggestionsSubComponentStyles {
     
-    @scala.inline
-    def apply(spinner: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): ISuggestionsSubComponentStyles = {
+    inline def apply(spinner: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): ISuggestionsSubComponentStyles = {
       val __obj = js.Dynamic.literal(spinner = spinner.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsSubComponentStyles]
     }
     
-    @scala.inline
-    implicit class ISuggestionsSubComponentStylesMutableBuilder[Self <: ISuggestionsSubComponentStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsSubComponentStyles](x: Self) {
       
-      @scala.inline
-      def setSpinner(value: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      inline def setSpinner(value: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerFunction1(value: ISpinnerStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "spinner", js.Any.fromFunction1(value))
+      inline def setSpinnerFunction1(value: ISpinnerStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "spinner", js.Any.fromFunction1(value))
     }
   }
 }

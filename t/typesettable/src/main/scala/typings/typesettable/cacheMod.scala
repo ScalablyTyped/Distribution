@@ -16,7 +16,7 @@ object cacheMod {
       */
     def this(compute: js.Function1[/* k */ String, T]) = this()
     
-    var cache: js.Any = js.native
+    /* private */ var cache: js.Any = js.native
     
     /**
       * Reset the cache empty.
@@ -25,7 +25,7 @@ object cacheMod {
       */
     def clear(): Cache[T] = js.native
     
-    var compute: js.Any = js.native
+    /* private */ var compute: js.Any = js.native
     
     /**
       * Attempt to look up k in the cache, computing the result if it isn't

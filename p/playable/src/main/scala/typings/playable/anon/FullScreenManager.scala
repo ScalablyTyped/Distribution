@@ -23,8 +23,7 @@ trait FullScreenManager extends StObject {
 }
 object FullScreenManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventEmitter: IEventEmitter,
     fullScreenManager: IFullScreenManager,
     textMap: ITextMap,
@@ -35,22 +34,16 @@ object FullScreenManager {
     __obj.asInstanceOf[FullScreenManager]
   }
   
-  @scala.inline
-  implicit class FullScreenManagerMutableBuilder[Self <: FullScreenManager] (val x: Self) extends AnyVal {
+  extension [Self <: FullScreenManager](x: Self) {
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullScreenManager(value: IFullScreenManager): Self = StObject.set(x, "fullScreenManager", value.asInstanceOf[js.Any])
+    inline def setFullScreenManager(value: IFullScreenManager): Self = StObject.set(x, "fullScreenManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+    inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

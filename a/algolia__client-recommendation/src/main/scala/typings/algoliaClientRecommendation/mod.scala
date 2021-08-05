@@ -24,11 +24,9 @@ object mod {
   @js.native
   val createRecommendationClient: CreateClient[RecommendationClient, RecommendationClientOptions & ClientTransporterOptions] = js.native
   
-  @scala.inline
-  def getPersonalizationStrategy(base: RecommendationClient): js.Function1[/* requestOptions */ js.UndefOr[RequestOptions], ReadonlyPromiseGetPersona] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonalizationStrategy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* requestOptions */ js.UndefOr[RequestOptions], ReadonlyPromiseGetPersona]]
+  inline def getPersonalizationStrategy(base: RecommendationClient): js.Function1[/* requestOptions */ js.UndefOr[RequestOptions], ReadonlyPromiseGetPersona] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonalizationStrategy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* requestOptions */ js.UndefOr[RequestOptions], ReadonlyPromiseGetPersona]]
   
-  @scala.inline
-  def setPersonalizationStrategy(base: RecommendationClient): js.Function2[
+  inline def setPersonalizationStrategy(base: RecommendationClient): js.Function2[
     /* personalizationStrategy */ PersonalizationStrategy, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseSetPersona
@@ -57,8 +55,7 @@ object mod {
   }
   object GetPersonalizationStrategyResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       eventsScoring: js.Array[EventName],
       facetsScoring: js.Array[FacetName],
       personalizationImpact: Double
@@ -67,23 +64,17 @@ object mod {
       __obj.asInstanceOf[GetPersonalizationStrategyResponse]
     }
     
-    @scala.inline
-    implicit class GetPersonalizationStrategyResponseMutableBuilder[Self <: GetPersonalizationStrategyResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetPersonalizationStrategyResponse](x: Self) {
       
-      @scala.inline
-      def setEventsScoring(value: js.Array[EventName]): Self = StObject.set(x, "eventsScoring", value.asInstanceOf[js.Any])
+      inline def setEventsScoring(value: js.Array[EventName]): Self = StObject.set(x, "eventsScoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsScoringVarargs(value: EventName*): Self = StObject.set(x, "eventsScoring", js.Array(value :_*))
+      inline def setEventsScoringVarargs(value: EventName*): Self = StObject.set(x, "eventsScoring", js.Array(value :_*))
       
-      @scala.inline
-      def setFacetsScoring(value: js.Array[FacetName]): Self = StObject.set(x, "facetsScoring", value.asInstanceOf[js.Any])
+      inline def setFacetsScoring(value: js.Array[FacetName]): Self = StObject.set(x, "facetsScoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetsScoringVarargs(value: FacetName*): Self = StObject.set(x, "facetsScoring", js.Array(value :_*))
+      inline def setFacetsScoringVarargs(value: FacetName*): Self = StObject.set(x, "facetsScoring", js.Array(value :_*))
       
-      @scala.inline
-      def setPersonalizationImpact(value: Double): Self = StObject.set(x, "personalizationImpact", value.asInstanceOf[js.Any])
+      inline def setPersonalizationImpact(value: Double): Self = StObject.set(x, "personalizationImpact", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,29 +97,22 @@ object mod {
   }
   object PersonalizationStrategy {
     
-    @scala.inline
-    def apply(eventsScoring: js.Array[EventType], facetsScoring: js.Array[Score], personalizationImpact: Double): PersonalizationStrategy = {
+    inline def apply(eventsScoring: js.Array[EventType], facetsScoring: js.Array[Score], personalizationImpact: Double): PersonalizationStrategy = {
       val __obj = js.Dynamic.literal(eventsScoring = eventsScoring.asInstanceOf[js.Any], facetsScoring = facetsScoring.asInstanceOf[js.Any], personalizationImpact = personalizationImpact.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersonalizationStrategy]
     }
     
-    @scala.inline
-    implicit class PersonalizationStrategyMutableBuilder[Self <: PersonalizationStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: PersonalizationStrategy](x: Self) {
       
-      @scala.inline
-      def setEventsScoring(value: js.Array[EventType]): Self = StObject.set(x, "eventsScoring", value.asInstanceOf[js.Any])
+      inline def setEventsScoring(value: js.Array[EventType]): Self = StObject.set(x, "eventsScoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsScoringVarargs(value: EventType*): Self = StObject.set(x, "eventsScoring", js.Array(value :_*))
+      inline def setEventsScoringVarargs(value: EventType*): Self = StObject.set(x, "eventsScoring", js.Array(value :_*))
       
-      @scala.inline
-      def setFacetsScoring(value: js.Array[Score]): Self = StObject.set(x, "facetsScoring", value.asInstanceOf[js.Any])
+      inline def setFacetsScoring(value: js.Array[Score]): Self = StObject.set(x, "facetsScoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetsScoringVarargs(value: Score*): Self = StObject.set(x, "facetsScoring", js.Array(value :_*))
+      inline def setFacetsScoringVarargs(value: Score*): Self = StObject.set(x, "facetsScoring", js.Array(value :_*))
       
-      @scala.inline
-      def setPersonalizationImpact(value: Double): Self = StObject.set(x, "personalizationImpact", value.asInstanceOf[js.Any])
+      inline def setPersonalizationImpact(value: Double): Self = StObject.set(x, "personalizationImpact", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,20 +130,16 @@ object mod {
   }
   object RecommendationClient {
     
-    @scala.inline
-    def apply(appId: String, transporter: Transporter): RecommendationClient = {
+    inline def apply(appId: String, transporter: Transporter): RecommendationClient = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], transporter = transporter.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecommendationClient]
     }
     
-    @scala.inline
-    implicit class RecommendationClientMutableBuilder[Self <: RecommendationClient] (val x: Self) extends AnyVal {
+    extension [Self <: RecommendationClient](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransporter(value: Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
+      inline def setTransporter(value: Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,26 +162,20 @@ object mod {
   }
   object RecommendationClientOptions {
     
-    @scala.inline
-    def apply(apiKey: String, appId: String): RecommendationClientOptions = {
+    inline def apply(apiKey: String, appId: String): RecommendationClientOptions = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecommendationClientOptions]
     }
     
-    @scala.inline
-    implicit class RecommendationClientOptionsMutableBuilder[Self <: RecommendationClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RecommendationClientOptions](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     }
   }
   
@@ -219,23 +193,18 @@ object mod {
   }
   object SetPersonalizationStrategyResponse {
     
-    @scala.inline
-    def apply(message: String): SetPersonalizationStrategyResponse = {
+    inline def apply(message: String): SetPersonalizationStrategyResponse = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetPersonalizationStrategyResponse]
     }
     
-    @scala.inline
-    implicit class SetPersonalizationStrategyResponseMutableBuilder[Self <: SetPersonalizationStrategyResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SetPersonalizationStrategyResponse](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
 }

@@ -23,28 +23,21 @@ trait CopyCommand extends StObject {
 }
 object CopyCommand {
   
-  @scala.inline
-  def apply(DataTableName: DataTableName): CopyCommand = {
+  inline def apply(DataTableName: DataTableName): CopyCommand = {
     val __obj = js.Dynamic.literal(DataTableName = DataTableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyCommand]
   }
   
-  @scala.inline
-  implicit class CopyCommandMutableBuilder[Self <: CopyCommand] (val x: Self) extends AnyVal {
+  extension [Self <: CopyCommand](x: Self) {
     
-    @scala.inline
-    def setCopyOptions(value: CopyOptions): Self = StObject.set(x, "CopyOptions", value.asInstanceOf[js.Any])
+    inline def setCopyOptions(value: CopyOptions): Self = StObject.set(x, "CopyOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyOptionsUndefined: Self = StObject.set(x, "CopyOptions", js.undefined)
+    inline def setCopyOptionsUndefined: Self = StObject.set(x, "CopyOptions", js.undefined)
     
-    @scala.inline
-    def setDataTableColumns(value: DataTableColumns): Self = StObject.set(x, "DataTableColumns", value.asInstanceOf[js.Any])
+    inline def setDataTableColumns(value: DataTableColumns): Self = StObject.set(x, "DataTableColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableColumnsUndefined: Self = StObject.set(x, "DataTableColumns", js.undefined)
+    inline def setDataTableColumnsUndefined: Self = StObject.set(x, "DataTableColumns", js.undefined)
     
-    @scala.inline
-    def setDataTableName(value: DataTableName): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
+    inline def setDataTableName(value: DataTableName): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
   }
 }

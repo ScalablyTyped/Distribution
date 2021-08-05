@@ -23,25 +23,19 @@ trait PutFileSystemPolicyRequest extends StObject {
 }
 object PutFileSystemPolicyRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId, Policy: Policy): PutFileSystemPolicyRequest = {
+  inline def apply(FileSystemId: FileSystemId, Policy: Policy): PutFileSystemPolicyRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutFileSystemPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutFileSystemPolicyRequestMutableBuilder[Self <: PutFileSystemPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutFileSystemPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setBypassPolicyLockoutSafetyCheck(value: BypassPolicyLockoutSafetyCheck): Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
+    inline def setBypassPolicyLockoutSafetyCheck(value: BypassPolicyLockoutSafetyCheck): Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassPolicyLockoutSafetyCheckUndefined: Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", js.undefined)
+    inline def setBypassPolicyLockoutSafetyCheckUndefined: Self = StObject.set(x, "BypassPolicyLockoutSafetyCheck", js.undefined)
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
   }
 }

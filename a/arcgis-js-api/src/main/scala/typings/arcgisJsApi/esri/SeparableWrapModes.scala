@@ -29,8 +29,7 @@ trait SeparableWrapModes
 }
 object SeparableWrapModes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     horizontal: clamp | repeat | mirror,
@@ -41,13 +40,10 @@ object SeparableWrapModes {
     __obj.asInstanceOf[SeparableWrapModes]
   }
   
-  @scala.inline
-  implicit class SeparableWrapModesMutableBuilder[Self <: SeparableWrapModes] (val x: Self) extends AnyVal {
+  extension [Self <: SeparableWrapModes](x: Self) {
     
-    @scala.inline
-    def setHorizontal(value: clamp | repeat | mirror): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: clamp | repeat | mirror): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical(value: clamp | repeat | mirror): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: clamp | repeat | mirror): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
   }
 }

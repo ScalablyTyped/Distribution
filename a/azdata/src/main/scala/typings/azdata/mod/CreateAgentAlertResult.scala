@@ -12,16 +12,13 @@ trait CreateAgentAlertResult
 }
 object CreateAgentAlertResult {
   
-  @scala.inline
-  def apply(alert: AgentJobStepInfo, errorMessage: String, success: Boolean): CreateAgentAlertResult = {
+  inline def apply(alert: AgentJobStepInfo, errorMessage: String, success: Boolean): CreateAgentAlertResult = {
     val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAgentAlertResult]
   }
   
-  @scala.inline
-  implicit class CreateAgentAlertResultMutableBuilder[Self <: CreateAgentAlertResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAgentAlertResult](x: Self) {
     
-    @scala.inline
-    def setAlert(value: AgentJobStepInfo): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+    inline def setAlert(value: AgentJobStepInfo): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
   }
 }

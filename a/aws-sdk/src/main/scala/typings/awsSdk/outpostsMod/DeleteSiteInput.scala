@@ -10,16 +10,13 @@ trait DeleteSiteInput extends StObject {
 }
 object DeleteSiteInput {
   
-  @scala.inline
-  def apply(SiteId: SiteId): DeleteSiteInput = {
+  inline def apply(SiteId: SiteId): DeleteSiteInput = {
     val __obj = js.Dynamic.literal(SiteId = SiteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSiteInput]
   }
   
-  @scala.inline
-  implicit class DeleteSiteInputMutableBuilder[Self <: DeleteSiteInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSiteInput](x: Self) {
     
-    @scala.inline
-    def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
   }
 }

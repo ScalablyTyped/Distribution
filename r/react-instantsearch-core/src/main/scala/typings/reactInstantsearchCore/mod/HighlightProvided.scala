@@ -28,16 +28,13 @@ trait HighlightProvided[TDoc] extends StObject {
 }
 object HighlightProvided {
   
-  @scala.inline
-  def apply[TDoc](highlight: HighlightProperty[TDoc] => js.Array[IsHighlighted]): HighlightProvided[TDoc] = {
+  inline def apply[TDoc](highlight: HighlightProperty[TDoc] => js.Array[IsHighlighted]): HighlightProvided[TDoc] = {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction1(highlight))
     __obj.asInstanceOf[HighlightProvided[TDoc]]
   }
   
-  @scala.inline
-  implicit class HighlightProvidedMutableBuilder[Self <: HighlightProvided[?], TDoc] (val x: Self & HighlightProvided[TDoc]) extends AnyVal {
+  extension [Self <: HighlightProvided[?], TDoc](x: Self & HighlightProvided[TDoc]) {
     
-    @scala.inline
-    def setHighlight(value: HighlightProperty[TDoc] => js.Array[IsHighlighted]): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))
+    inline def setHighlight(value: HighlightProperty[TDoc] => js.Array[IsHighlighted]): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))
   }
 }

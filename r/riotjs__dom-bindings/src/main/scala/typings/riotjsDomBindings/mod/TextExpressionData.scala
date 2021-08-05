@@ -13,17 +13,14 @@ trait TextExpressionData
 }
 object TextExpressionData {
   
-  @scala.inline
-  def apply(childNodeIndex: Double, evaluate: js.Any => js.Any, `type`: ExpressionType): TextExpressionData = {
+  inline def apply(childNodeIndex: Double, evaluate: js.Any => js.Any, `type`: ExpressionType): TextExpressionData = {
     val __obj = js.Dynamic.literal(childNodeIndex = childNodeIndex.asInstanceOf[js.Any], evaluate = js.Any.fromFunction1(evaluate))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextExpressionData]
   }
   
-  @scala.inline
-  implicit class TextExpressionDataMutableBuilder[Self <: TextExpressionData] (val x: Self) extends AnyVal {
+  extension [Self <: TextExpressionData](x: Self) {
     
-    @scala.inline
-    def setChildNodeIndex(value: Double): Self = StObject.set(x, "childNodeIndex", value.asInstanceOf[js.Any])
+    inline def setChildNodeIndex(value: Double): Self = StObject.set(x, "childNodeIndex", value.asInstanceOf[js.Any])
   }
 }

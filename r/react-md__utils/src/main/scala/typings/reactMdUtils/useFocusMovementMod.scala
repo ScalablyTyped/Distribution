@@ -15,8 +15,7 @@ object useFocusMovementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusMovement")(hasDefaultFocusedIndexOnChangeOptions.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
+  inline def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusMovement")(hasDefaultFocusedIndexOnChangeOptions.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
   trait KeyboardFocusOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */]
     extends StObject
@@ -29,8 +28,7 @@ object useFocusMovementMod {
   }
   object KeyboardFocusOptions {
     
-    @scala.inline
-    def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+    inline def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
       decrementKeys: js.Array[IncrementMovementKey],
       incrementKeys: js.Array[IncrementMovementKey],
       items: js.Array[D],
@@ -41,14 +39,11 @@ object useFocusMovementMod {
       __obj.asInstanceOf[KeyboardFocusOptions[D, CE, IE]]
     }
     
-    @scala.inline
-    implicit class KeyboardFocusOptionsMutableBuilder[Self <: KeyboardFocusOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (KeyboardFocusOptions[D, CE, IE])) extends AnyVal {
+    extension [Self <: KeyboardFocusOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (KeyboardFocusOptions[D, CE, IE])) {
       
-      @scala.inline
-      def setDefaultFocusedIndex(value: Double): Self = StObject.set(x, "defaultFocusedIndex", value.asInstanceOf[js.Any])
+      inline def setDefaultFocusedIndex(value: Double): Self = StObject.set(x, "defaultFocusedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocusedIndexUndefined: Self = StObject.set(x, "defaultFocusedIndex", js.undefined)
+      inline def setDefaultFocusedIndexUndefined: Self = StObject.set(x, "defaultFocusedIndex", js.undefined)
     }
   }
 }

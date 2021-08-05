@@ -14,19 +14,16 @@ trait PickImplonFailure extends StObject {
 }
 object PickImplonFailure {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onFailure: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit]
   ): PickImplonFailure = {
     val __obj = js.Dynamic.literal(onFailure = onFailure.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonFailure]
   }
   
-  @scala.inline
-  implicit class PickImplonFailureMutableBuilder[Self <: PickImplonFailure] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonFailure](x: Self) {
     
-    @scala.inline
-    def setOnFailure(
+    inline def setOnFailure(
       value: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit]
     ): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
   }

@@ -33,8 +33,7 @@ trait ISignatureSettings extends StObject {
 }
 object ISignatureSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdditionalInfo: String,
     Clone: () => ISignatureSettings,
     FreeFormTextPropertyID: Double,
@@ -52,43 +51,30 @@ object ISignatureSettings {
     __obj.asInstanceOf[ISignatureSettings]
   }
   
-  @scala.inline
-  implicit class ISignatureSettingsMutableBuilder[Self <: ISignatureSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ISignatureSettings](x: Self) {
     
-    @scala.inline
-    def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
+    inline def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => ISignatureSettings): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISignatureSettings): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFreeFormTextPropertyID(value: Double): Self = StObject.set(x, "FreeFormTextPropertyID", value.asInstanceOf[js.Any])
+    inline def setFreeFormTextPropertyID(value: Double): Self = StObject.set(x, "FreeFormTextPropertyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFreeFormTextPrompted(value: Boolean): Self = StObject.set(x, "IsFreeFormTextPrompted", value.asInstanceOf[js.Any])
+    inline def setIsFreeFormTextPrompted(value: Boolean): Self = StObject.set(x, "IsFreeFormTextPrompted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "IsRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSeparateSignatureObject(value: Boolean): Self = StObject.set(x, "IsSeparateSignatureObject", value.asInstanceOf[js.Any])
+    inline def setIsSeparateSignatureObject(value: Boolean): Self = StObject.set(x, "IsSeparateSignatureObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestationPropertyID(value: Double): Self = StObject.set(x, "ManifestationPropertyID", value.asInstanceOf[js.Any])
+    inline def setManifestationPropertyID(value: Double): Self = StObject.set(x, "ManifestationPropertyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptInfoType(value: MFSignaturePromptInfoType): Self = StObject.set(x, "PromptInfoType", value.asInstanceOf[js.Any])
+    inline def setPromptInfoType(value: MFSignaturePromptInfoType): Self = StObject.set(x, "PromptInfoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureIdentifier(value: String): Self = StObject.set(x, "SignatureIdentifier", value.asInstanceOf[js.Any])
+    inline def setSignatureIdentifier(value: String): Self = StObject.set(x, "SignatureIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturePromptInfoFixed(value: ISignaturePromptInfo): Self = StObject.set(x, "SignaturePromptInfoFixed", value.asInstanceOf[js.Any])
+    inline def setSignaturePromptInfoFixed(value: ISignaturePromptInfo): Self = StObject.set(x, "SignaturePromptInfoFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturePromptInfoMetadataBased(value: ISignaturePromptInfoMetadataBased): Self = StObject.set(x, "SignaturePromptInfoMetadataBased", value.asInstanceOf[js.Any])
+    inline def setSignaturePromptInfoMetadataBased(value: ISignaturePromptInfoMetadataBased): Self = StObject.set(x, "SignaturePromptInfoMetadataBased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturePromptInfoSelectable(value: ISignaturePromptInfoSelectable): Self = StObject.set(x, "SignaturePromptInfoSelectable", value.asInstanceOf[js.Any])
+    inline def setSignaturePromptInfoSelectable(value: ISignaturePromptInfoSelectable): Self = StObject.set(x, "SignaturePromptInfoSelectable", value.asInstanceOf[js.Any])
   }
 }

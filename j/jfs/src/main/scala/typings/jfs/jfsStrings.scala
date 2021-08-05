@@ -8,11 +8,9 @@ object jfsStrings {
   
   @js.native
   sealed trait memory extends StObject
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
   sealed trait single extends StObject
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  inline def single: single = "single".asInstanceOf[single]
 }

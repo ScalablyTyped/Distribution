@@ -25,31 +25,23 @@ trait LineItemBudget extends StObject {
 }
 object LineItemBudget {
   
-  @scala.inline
-  def apply(): LineItemBudget = {
+  inline def apply(): LineItemBudget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineItemBudget]
   }
   
-  @scala.inline
-  implicit class LineItemBudgetMutableBuilder[Self <: LineItemBudget] (val x: Self) extends AnyVal {
+  extension [Self <: LineItemBudget](x: Self) {
     
-    @scala.inline
-    def setBudgetAllocationType(value: String): Self = StObject.set(x, "budgetAllocationType", value.asInstanceOf[js.Any])
+    inline def setBudgetAllocationType(value: String): Self = StObject.set(x, "budgetAllocationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetAllocationTypeUndefined: Self = StObject.set(x, "budgetAllocationType", js.undefined)
+    inline def setBudgetAllocationTypeUndefined: Self = StObject.set(x, "budgetAllocationType", js.undefined)
     
-    @scala.inline
-    def setBudgetUnit(value: String): Self = StObject.set(x, "budgetUnit", value.asInstanceOf[js.Any])
+    inline def setBudgetUnit(value: String): Self = StObject.set(x, "budgetUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetUnitUndefined: Self = StObject.set(x, "budgetUnit", js.undefined)
+    inline def setBudgetUnitUndefined: Self = StObject.set(x, "budgetUnit", js.undefined)
     
-    @scala.inline
-    def setMaxAmount(value: String): Self = StObject.set(x, "maxAmount", value.asInstanceOf[js.Any])
+    inline def setMaxAmount(value: String): Self = StObject.set(x, "maxAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAmountUndefined: Self = StObject.set(x, "maxAmount", js.undefined)
+    inline def setMaxAmountUndefined: Self = StObject.set(x, "maxAmount", js.undefined)
   }
 }

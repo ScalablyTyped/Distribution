@@ -23,31 +23,23 @@ trait DescribeDashboardResponse extends StObject {
 }
 object DescribeDashboardResponse {
   
-  @scala.inline
-  def apply(): DescribeDashboardResponse = {
+  inline def apply(): DescribeDashboardResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDashboardResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDashboardResponseMutableBuilder[Self <: DescribeDashboardResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDashboardResponse](x: Self) {
     
-    @scala.inline
-    def setDashboard(value: Dashboard): Self = StObject.set(x, "Dashboard", value.asInstanceOf[js.Any])
+    inline def setDashboard(value: Dashboard): Self = StObject.set(x, "Dashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardUndefined: Self = StObject.set(x, "Dashboard", js.undefined)
+    inline def setDashboardUndefined: Self = StObject.set(x, "Dashboard", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

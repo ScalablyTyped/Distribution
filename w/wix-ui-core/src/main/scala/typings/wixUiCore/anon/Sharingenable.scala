@@ -10,17 +10,14 @@ trait Sharingenable extends StObject {
 }
 object Sharingenable {
   
-  @scala.inline
-  def apply(`sharing-enable`: Boolean): Sharingenable = {
+  inline def apply(`sharing-enable`: Boolean): Sharingenable = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("sharing-enable")(`sharing-enable`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sharingenable]
   }
   
-  @scala.inline
-  implicit class SharingenableMutableBuilder[Self <: Sharingenable] (val x: Self) extends AnyVal {
+  extension [Self <: Sharingenable](x: Self) {
     
-    @scala.inline
-    def `setSharing-enable`(value: Boolean): Self = StObject.set(x, "sharing-enable", value.asInstanceOf[js.Any])
+    inline def `setSharing-enable`(value: Boolean): Self = StObject.set(x, "sharing-enable", value.asInstanceOf[js.Any])
   }
 }

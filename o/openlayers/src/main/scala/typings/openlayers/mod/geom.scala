@@ -820,10 +820,8 @@ object geom {
       * @api stable
       */
     /* static member */
-    @scala.inline
-    def circular(sphere: Sphere, center: Coordinate_, radius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(sphere.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-    @scala.inline
-    def circular(sphere: Sphere, center: Coordinate_, radius: Double, opt_n: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(sphere.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    inline def circular(sphere: Sphere, center: Coordinate_, radius: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(sphere.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    inline def circular(sphere: Sphere, center: Coordinate_, radius: Double, opt_n: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("circular")(sphere.asInstanceOf[js.Any], center.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], opt_n.asInstanceOf[js.Any])).asInstanceOf[Polygon]
     
     /**
       * Create a regular polygon from a circle.
@@ -835,14 +833,10 @@ object geom {
       * @api
       */
     /* static member */
-    @scala.inline
-    def fromCircle(circle: Circle): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any]).asInstanceOf[Polygon]
-    @scala.inline
-    def fromCircle(circle: Circle, opt_sides: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-    @scala.inline
-    def fromCircle(circle: Circle, opt_sides: Double, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
-    @scala.inline
-    def fromCircle(circle: Circle, opt_sides: Unit, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    inline def fromCircle(circle: Circle): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+    inline def fromCircle(circle: Circle, opt_sides: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    inline def fromCircle(circle: Circle, opt_sides: Double, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
+    inline def fromCircle(circle: Circle, opt_sides: Unit, opt_angle: Double): Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCircle")(circle.asInstanceOf[js.Any], opt_sides.asInstanceOf[js.Any], opt_angle.asInstanceOf[js.Any])).asInstanceOf[Polygon]
     
     /**
       * Create a polygon from an extent. The layout used is `XY`.
@@ -851,8 +845,7 @@ object geom {
       * @api
       */
     /* static member */
-    @scala.inline
-    def fromExtent(extent: Extent_): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[Polygon]
+    inline def fromExtent(extent: Extent_): Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtent")(extent.asInstanceOf[js.Any]).asInstanceOf[Polygon]
   }
   
   /**
@@ -921,17 +914,13 @@ object geom {
   trait GeometryLayout extends StObject
   object GeometryLayout {
     
-    @scala.inline
-    def XY: typings.openlayers.openlayersStrings.XY = "XY".asInstanceOf[typings.openlayers.openlayersStrings.XY]
+    inline def XY: typings.openlayers.openlayersStrings.XY = "XY".asInstanceOf[typings.openlayers.openlayersStrings.XY]
     
-    @scala.inline
-    def XYM: typings.openlayers.openlayersStrings.XYM = "XYM".asInstanceOf[typings.openlayers.openlayersStrings.XYM]
+    inline def XYM: typings.openlayers.openlayersStrings.XYM = "XYM".asInstanceOf[typings.openlayers.openlayersStrings.XYM]
     
-    @scala.inline
-    def XYZ: typings.openlayers.openlayersStrings.XYZ = "XYZ".asInstanceOf[typings.openlayers.openlayersStrings.XYZ]
+    inline def XYZ: typings.openlayers.openlayersStrings.XYZ = "XYZ".asInstanceOf[typings.openlayers.openlayersStrings.XYZ]
     
-    @scala.inline
-    def XYZM: typings.openlayers.openlayersStrings.XYZM = "XYZM".asInstanceOf[typings.openlayers.openlayersStrings.XYZM]
+    inline def XYZM: typings.openlayers.openlayersStrings.XYZM = "XYZM".asInstanceOf[typings.openlayers.openlayersStrings.XYZM]
   }
   
   /**
@@ -953,31 +942,22 @@ object geom {
   trait GeometryType extends StObject
   object GeometryType {
     
-    @scala.inline
-    def Circle: typings.openlayers.openlayersStrings.Circle = "Circle".asInstanceOf[typings.openlayers.openlayersStrings.Circle]
+    inline def Circle: typings.openlayers.openlayersStrings.Circle = "Circle".asInstanceOf[typings.openlayers.openlayersStrings.Circle]
     
-    @scala.inline
-    def GeometryCollection: typings.openlayers.openlayersStrings.GeometryCollection = "GeometryCollection".asInstanceOf[typings.openlayers.openlayersStrings.GeometryCollection]
+    inline def GeometryCollection: typings.openlayers.openlayersStrings.GeometryCollection = "GeometryCollection".asInstanceOf[typings.openlayers.openlayersStrings.GeometryCollection]
     
-    @scala.inline
-    def LineString: typings.openlayers.openlayersStrings.LineString = "LineString".asInstanceOf[typings.openlayers.openlayersStrings.LineString]
+    inline def LineString: typings.openlayers.openlayersStrings.LineString = "LineString".asInstanceOf[typings.openlayers.openlayersStrings.LineString]
     
-    @scala.inline
-    def LinearRing: typings.openlayers.openlayersStrings.LinearRing = "LinearRing".asInstanceOf[typings.openlayers.openlayersStrings.LinearRing]
+    inline def LinearRing: typings.openlayers.openlayersStrings.LinearRing = "LinearRing".asInstanceOf[typings.openlayers.openlayersStrings.LinearRing]
     
-    @scala.inline
-    def MultiLineString: typings.openlayers.openlayersStrings.MultiLineString = "MultiLineString".asInstanceOf[typings.openlayers.openlayersStrings.MultiLineString]
+    inline def MultiLineString: typings.openlayers.openlayersStrings.MultiLineString = "MultiLineString".asInstanceOf[typings.openlayers.openlayersStrings.MultiLineString]
     
-    @scala.inline
-    def MultiPoint: typings.openlayers.openlayersStrings.MultiPoint = "MultiPoint".asInstanceOf[typings.openlayers.openlayersStrings.MultiPoint]
+    inline def MultiPoint: typings.openlayers.openlayersStrings.MultiPoint = "MultiPoint".asInstanceOf[typings.openlayers.openlayersStrings.MultiPoint]
     
-    @scala.inline
-    def MultiPolygon: typings.openlayers.openlayersStrings.MultiPolygon = "MultiPolygon".asInstanceOf[typings.openlayers.openlayersStrings.MultiPolygon]
+    inline def MultiPolygon: typings.openlayers.openlayersStrings.MultiPolygon = "MultiPolygon".asInstanceOf[typings.openlayers.openlayersStrings.MultiPolygon]
     
-    @scala.inline
-    def Point: typings.openlayers.openlayersStrings.Point = "Point".asInstanceOf[typings.openlayers.openlayersStrings.Point]
+    inline def Point: typings.openlayers.openlayersStrings.Point = "Point".asInstanceOf[typings.openlayers.openlayersStrings.Point]
     
-    @scala.inline
-    def Polygon: typings.openlayers.openlayersStrings.Polygon = "Polygon".asInstanceOf[typings.openlayers.openlayersStrings.Polygon]
+    inline def Polygon: typings.openlayers.openlayersStrings.Polygon = "Polygon".asInstanceOf[typings.openlayers.openlayersStrings.Polygon]
   }
 }

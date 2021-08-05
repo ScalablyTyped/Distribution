@@ -25,8 +25,7 @@ trait Arm64Instruction
 }
 object Arm64Instruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: NativePointer,
     groups: js.Array[String],
     mnemonic: String,
@@ -41,25 +40,18 @@ object Arm64Instruction {
     __obj.asInstanceOf[Arm64Instruction]
   }
   
-  @scala.inline
-  implicit class Arm64InstructionMutableBuilder[Self <: Arm64Instruction] (val x: Self) extends AnyVal {
+  extension [Self <: Arm64Instruction](x: Self) {
     
-    @scala.inline
-    def setOperands(value: js.Array[Arm64Operand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+    inline def setOperands(value: js.Array[Arm64Operand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperandsVarargs(value: Arm64Operand*): Self = StObject.set(x, "operands", js.Array(value :_*))
+    inline def setOperandsVarargs(value: Arm64Operand*): Self = StObject.set(x, "operands", js.Array(value :_*))
     
-    @scala.inline
-    def setRegsRead(value: js.Array[Arm64Register]): Self = StObject.set(x, "regsRead", value.asInstanceOf[js.Any])
+    inline def setRegsRead(value: js.Array[Arm64Register]): Self = StObject.set(x, "regsRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegsReadVarargs(value: Arm64Register*): Self = StObject.set(x, "regsRead", js.Array(value :_*))
+    inline def setRegsReadVarargs(value: Arm64Register*): Self = StObject.set(x, "regsRead", js.Array(value :_*))
     
-    @scala.inline
-    def setRegsWritten(value: js.Array[Arm64Register]): Self = StObject.set(x, "regsWritten", value.asInstanceOf[js.Any])
+    inline def setRegsWritten(value: js.Array[Arm64Register]): Self = StObject.set(x, "regsWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegsWrittenVarargs(value: Arm64Register*): Self = StObject.set(x, "regsWritten", js.Array(value :_*))
+    inline def setRegsWrittenVarargs(value: Arm64Register*): Self = StObject.set(x, "regsWritten", js.Array(value :_*))
   }
 }

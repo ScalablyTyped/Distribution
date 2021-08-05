@@ -9,8 +9,7 @@ trait FileRemovedEventArgs
      with IFileRemovedEventArgs
 object FileRemovedEventArgs {
   
-  @scala.inline
-  def apply(id: String): FileRemovedEventArgs = {
+  inline def apply(id: String): FileRemovedEventArgs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileRemovedEventArgs]
   }

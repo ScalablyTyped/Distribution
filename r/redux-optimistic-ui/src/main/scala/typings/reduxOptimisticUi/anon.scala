@@ -24,21 +24,17 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: Double, `type`: String): Id = {
+    inline def apply(id: Double, `type`: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,17 +47,14 @@ object anon {
   }
   object Optimistic {
     
-    @scala.inline
-    def apply(optimistic: Id): Optimistic = {
+    inline def apply(optimistic: Id): Optimistic = {
       val __obj = js.Dynamic.literal(optimistic = optimistic.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optimistic]
     }
     
-    @scala.inline
-    implicit class OptimisticMutableBuilder[Self <: Optimistic] (val x: Self) extends AnyVal {
+    extension [Self <: Optimistic](x: Self) {
       
-      @scala.inline
-      def setOptimistic(value: Id): Self = StObject.set(x, "optimistic", value.asInstanceOf[js.Any])
+      inline def setOptimistic(value: Id): Self = StObject.set(x, "optimistic", value.asInstanceOf[js.Any])
     }
   }
 }

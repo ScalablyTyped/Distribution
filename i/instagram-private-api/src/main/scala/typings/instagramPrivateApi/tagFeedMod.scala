@@ -15,7 +15,7 @@ object tagFeedMod {
   class TagFeed protected () extends Feed[TagFeedResponse, TagFeedResponseItemsItem] {
     def this(client: IgApiClient) = this()
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[TagFeedResponse] = js.native
     

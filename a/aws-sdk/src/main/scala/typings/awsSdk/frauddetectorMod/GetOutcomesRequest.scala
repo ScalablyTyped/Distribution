@@ -23,31 +23,23 @@ trait GetOutcomesRequest extends StObject {
 }
 object GetOutcomesRequest {
   
-  @scala.inline
-  def apply(): GetOutcomesRequest = {
+  inline def apply(): GetOutcomesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOutcomesRequest]
   }
   
-  @scala.inline
-  implicit class GetOutcomesRequestMutableBuilder[Self <: GetOutcomesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetOutcomesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: OutcomesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: OutcomesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

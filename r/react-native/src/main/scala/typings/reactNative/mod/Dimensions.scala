@@ -58,6 +58,5 @@ trait Dimensions extends StObject {
 }
 object Dimensions {
   
-  @scala.inline
-  def apply: Dimensions = ^.asInstanceOf[js.Dynamic].selectDynamic("Dimensions").asInstanceOf[Dimensions]
+  inline def apply: Dimensions = ^.asInstanceOf[js.Dynamic].selectDynamic("Dimensions").asInstanceOf[Dimensions]
 }

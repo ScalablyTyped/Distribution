@@ -34,12 +34,9 @@ object mod extends Shortcut {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def caching(IConfig: StoreConfig & CacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[Cache]
-    @scala.inline
-    def caching(IConfig: RedisStoreClusterConfig): ClusterCache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[ClusterCache]
-    @scala.inline
-    def caching(IConfig: RedisStoreSingleNodeConfig): SingleNodeCache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[SingleNodeCache]
+    inline def caching(IConfig: StoreConfig & CacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[Cache]
+    inline def caching(IConfig: RedisStoreClusterConfig): ClusterCache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[ClusterCache]
+    inline def caching(IConfig: RedisStoreSingleNodeConfig): SingleNodeCache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[SingleNodeCache]
   }
   
   object CacheManagerIORedis {
@@ -61,23 +58,18 @@ object mod extends Shortcut {
     }
     object ClusterOptions {
       
-      @scala.inline
-      def apply(nodes: js.Array[ClusterNode], options: typings.ioredis.mod.ClusterOptions): ClusterOptions = {
+      inline def apply(nodes: js.Array[ClusterNode], options: typings.ioredis.mod.ClusterOptions): ClusterOptions = {
         val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClusterOptions]
       }
       
-      @scala.inline
-      implicit class ClusterOptionsMutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ClusterOptions](x: Self) {
         
-        @scala.inline
-        def setNodes(value: js.Array[ClusterNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+        inline def setNodes(value: js.Array[ClusterNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodesVarargs(value: ClusterNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+        inline def setNodesVarargs(value: ClusterNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
         
-        @scala.inline
-        def setOptions(value: typings.ioredis.mod.ClusterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: typings.ioredis.mod.ClusterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
     }
     
@@ -86,8 +78,7 @@ object mod extends Shortcut {
          with RedisStore
     object RedisClusterStore {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         del: /* repeated */ js.Any => js.Promise[js.Any],
         get: /* repeated */ js.Any => js.Promise[js.Any],
         getClient: () => Redis | Cluster,
@@ -107,8 +98,7 @@ object mod extends Shortcut {
          with RedisStore
     object RedisSingleNodeStore {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         del: /* repeated */ js.Any => js.Promise[js.Any],
         get: /* repeated */ js.Any => js.Promise[js.Any],
         getClient: () => Redis | Cluster,
@@ -147,8 +137,7 @@ object mod extends Shortcut {
     }
     object RedisStore {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         del: /* repeated */ js.Any => js.Promise[js.Any],
         get: /* repeated */ js.Any => js.Promise[js.Any],
         getClient: () => Redis | Cluster,
@@ -162,29 +151,21 @@ object mod extends Shortcut {
         __obj.asInstanceOf[RedisStore]
       }
       
-      @scala.inline
-      implicit class RedisStoreMutableBuilder[Self <: RedisStore] (val x: Self) extends AnyVal {
+      extension [Self <: RedisStore](x: Self) {
         
-        @scala.inline
-        def setDel(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+        inline def setDel(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetClient(value: () => Redis | Cluster): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
+        inline def setGetClient(value: () => Redis | Cluster): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsCacheableValue(value: js.Any => Boolean): Self = StObject.set(x, "isCacheableValue", js.Any.fromFunction1(value))
+        inline def setIsCacheableValue(value: js.Any => Boolean): Self = StObject.set(x, "isCacheableValue", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setKeys(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+        inline def setKeys(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setName(value: redis): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: redis): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReset(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+        inline def setReset(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTtl(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
+        inline def setTtl(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
       }
     }
     
@@ -201,26 +182,20 @@ object mod extends Shortcut {
     }
     object RedisStoreClusterConfig {
       
-      @scala.inline
-      def apply(clusterConfig: ClusterOptions, store: RedisStoreConstructor, ttl: Double | TtlFunction): RedisStoreClusterConfig = {
+      inline def apply(clusterConfig: ClusterOptions, store: RedisStoreConstructor, ttl: Double | TtlFunction): RedisStoreClusterConfig = {
         val __obj = js.Dynamic.literal(clusterConfig = clusterConfig.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
         __obj.asInstanceOf[RedisStoreClusterConfig]
       }
       
-      @scala.inline
-      implicit class RedisStoreClusterConfigMutableBuilder[Self <: RedisStoreClusterConfig] (val x: Self) extends AnyVal {
+      extension [Self <: RedisStoreClusterConfig](x: Self) {
         
-        @scala.inline
-        def setClusterConfig(value: ClusterOptions): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
+        inline def setClusterConfig(value: ClusterOptions): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setStore(value: RedisStoreConstructor): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+        inline def setStore(value: RedisStoreConstructor): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       }
     }
     
@@ -233,19 +208,16 @@ object mod extends Shortcut {
     }
     object RedisStoreConstructor {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         create: (/* repeated */ RedisStoreClusterConfig) | (/* repeated */ RedisStoreSingleNodeConfig) => RedisClusterStore | RedisSingleNodeStore
       ): RedisStoreConstructor = {
         val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
         __obj.asInstanceOf[RedisStoreConstructor]
       }
       
-      @scala.inline
-      implicit class RedisStoreConstructorMutableBuilder[Self <: RedisStoreConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: RedisStoreConstructor](x: Self) {
         
-        @scala.inline
-        def setCreate(
+        inline def setCreate(
           value: (/* repeated */ RedisStoreClusterConfig) | (/* repeated */ RedisStoreSingleNodeConfig) => RedisClusterStore | RedisSingleNodeStore
         ): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       }
@@ -263,23 +235,18 @@ object mod extends Shortcut {
     }
     object RedisStoreSingleNodeConfig {
       
-      @scala.inline
-      def apply(store: RedisStoreConstructor, ttl: Double | TtlFunction): RedisStoreSingleNodeConfig = {
+      inline def apply(store: RedisStoreConstructor, ttl: Double | TtlFunction): RedisStoreSingleNodeConfig = {
         val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
         __obj.asInstanceOf[RedisStoreSingleNodeConfig]
       }
       
-      @scala.inline
-      implicit class RedisStoreSingleNodeConfigMutableBuilder[Self <: RedisStoreSingleNodeConfig] (val x: Self) extends AnyVal {
+      extension [Self <: RedisStoreSingleNodeConfig](x: Self) {
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setStore(value: RedisStoreConstructor): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+        inline def setStore(value: RedisStoreConstructor): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       }
     }
     

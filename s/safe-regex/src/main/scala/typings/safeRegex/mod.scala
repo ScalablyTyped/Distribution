@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(re: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(re: String, opts: Limit): Boolean = (^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(re: RegExp): Boolean = ^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(re: RegExp, opts: Limit): Boolean = (^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(re: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(re: String, opts: Limit): Boolean = (^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(re: RegExp): Boolean = ^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(re: RegExp, opts: Limit): Boolean = (^.asInstanceOf[js.Dynamic].apply(re.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("safe-regex", JSImport.Namespace)
   @js.native

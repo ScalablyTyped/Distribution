@@ -21,8 +21,7 @@ trait XLinguServiceManager2
      with XComponent
 object XLinguServiceManager2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Hyphenator: XHyphenator,
     SpellChecker: XSpellChecker,
     Thesaurus: XThesaurus,

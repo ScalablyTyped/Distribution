@@ -14,20 +14,16 @@ object anon {
   }
   object Cb {
     
-    @scala.inline
-    def apply(cb: js.Any, opts: js.Any): Cb = {
+    inline def apply(cb: js.Any, opts: js.Any): Cb = {
       val __obj = js.Dynamic.literal(cb = cb.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cb]
     }
     
-    @scala.inline
-    implicit class CbMutableBuilder[Self <: Cb] (val x: Self) extends AnyVal {
+    extension [Self <: Cb](x: Self) {
       
-      @scala.inline
-      def setCb(value: js.Any): Self = StObject.set(x, "cb", value.asInstanceOf[js.Any])
+      inline def setCb(value: js.Any): Self = StObject.set(x, "cb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply(config: Cookies, name: js.Any): Config = {
+    inline def apply(config: Cookies, name: js.Any): Config = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Cookies): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Cookies): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,62 +66,44 @@ object anon {
   }
   object Cookies {
     
-    @scala.inline
-    def apply(url: String): Cookies = {
+    inline def apply(url: String): Cookies = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cookies]
     }
     
-    @scala.inline
-    implicit class CookiesMutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
+    extension [Self <: Cookies](x: Self) {
       
-      @scala.inline
-      def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+      inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+      inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+      inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
       
-      @scala.inline
-      def setJSend(value: Boolean): Self = StObject.set(x, "jSend", value.asInstanceOf[js.Any])
+      inline def setJSend(value: Boolean): Self = StObject.set(x, "jSend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSendUndefined: Self = StObject.set(x, "jSend", js.undefined)
+      inline def setJSendUndefined: Self = StObject.set(x, "jSend", js.undefined)
       
-      @scala.inline
-      def setOpts(value: js.Object): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: js.Object): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
       
-      @scala.inline
-      def setReplyCookies(value: js.Array[String]): Self = StObject.set(x, "replyCookies", value.asInstanceOf[js.Any])
+      inline def setReplyCookies(value: js.Array[String]): Self = StObject.set(x, "replyCookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyCookiesUndefined: Self = StObject.set(x, "replyCookies", js.undefined)
+      inline def setReplyCookiesUndefined: Self = StObject.set(x, "replyCookies", js.undefined)
       
-      @scala.inline
-      def setReplyCookiesVarargs(value: String*): Self = StObject.set(x, "replyCookies", js.Array(value :_*))
+      inline def setReplyCookiesVarargs(value: String*): Self = StObject.set(x, "replyCookies", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

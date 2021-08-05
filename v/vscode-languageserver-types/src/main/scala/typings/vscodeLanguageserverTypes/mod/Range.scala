@@ -18,8 +18,7 @@ trait Range extends StObject {
 }
 object Range {
   
-  @scala.inline
-  def apply(end: Position, start: Position): Range = {
+  inline def apply(end: Position, start: Position): Range = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]
   }
@@ -35,29 +34,23 @@ object Range {
     * @param endLine The end line number.
     * @param endCharacter The end character.
     */
-  @scala.inline
-  def create(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[Range]
+  inline def create(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[Range]
   /**
     * Create a new Range liternal.
     * @param start The range's start position.
     * @param end The range's end position.
     */
-  @scala.inline
-  def create(start: Position, end: Position): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Range]
+  inline def create(start: Position, end: Position): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Range]
   
   /**
     * Checks whether the given literal conforms to the [Range](#Range) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

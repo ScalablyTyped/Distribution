@@ -18,28 +18,21 @@ trait UnassignIpv6AddressesResult extends StObject {
 }
 object UnassignIpv6AddressesResult {
   
-  @scala.inline
-  def apply(): UnassignIpv6AddressesResult = {
+  inline def apply(): UnassignIpv6AddressesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnassignIpv6AddressesResult]
   }
   
-  @scala.inline
-  implicit class UnassignIpv6AddressesResultMutableBuilder[Self <: UnassignIpv6AddressesResult] (val x: Self) extends AnyVal {
+  extension [Self <: UnassignIpv6AddressesResult](x: Self) {
     
-    @scala.inline
-    def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
-    @scala.inline
-    def setUnassignedIpv6Addresses(value: Ipv6AddressList): Self = StObject.set(x, "UnassignedIpv6Addresses", value.asInstanceOf[js.Any])
+    inline def setUnassignedIpv6Addresses(value: Ipv6AddressList): Self = StObject.set(x, "UnassignedIpv6Addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnassignedIpv6AddressesUndefined: Self = StObject.set(x, "UnassignedIpv6Addresses", js.undefined)
+    inline def setUnassignedIpv6AddressesUndefined: Self = StObject.set(x, "UnassignedIpv6Addresses", js.undefined)
     
-    @scala.inline
-    def setUnassignedIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "UnassignedIpv6Addresses", js.Array(value :_*))
+    inline def setUnassignedIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "UnassignedIpv6Addresses", js.Array(value :_*))
   }
 }

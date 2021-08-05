@@ -11,51 +11,43 @@ object iotaLibJsStrings {
   sealed trait Gi
     extends StObject
        with IOTAUnit
-  @scala.inline
-  def Gi: Gi = "Gi".asInstanceOf[Gi]
+  inline def Gi: Gi = "Gi".asInstanceOf[Gi]
   
   @js.native
   sealed trait Ki
     extends StObject
        with IOTAUnit
-  @scala.inline
-  def Ki: Ki = "Ki".asInstanceOf[Ki]
+  inline def Ki: Ki = "Ki".asInstanceOf[Ki]
   
   @js.native
   sealed trait Mi
     extends StObject
        with IOTAUnit
-  @scala.inline
-  def Mi: Mi = "Mi".asInstanceOf[Mi]
+  inline def Mi: Mi = "Mi".asInstanceOf[Mi]
   
   @js.native
   sealed trait Pi
     extends StObject
        with IOTAUnit
-  @scala.inline
-  def Pi: Pi = "Pi".asInstanceOf[Pi]
+  inline def Pi: Pi = "Pi".asInstanceOf[Pi]
   
   @js.native
   sealed trait Ti
     extends StObject
        with IOTAUnit
-  @scala.inline
-  def Ti: Ti = "Ti".asInstanceOf[Ti]
+  inline def Ti: Ti = "Ti".asInstanceOf[Ti]
   
   @js.native
   sealed trait i
     extends StObject
        with IOTAUnit
-  @scala.inline
-  def i: i = "i".asInstanceOf[i]
+  inline def i: i = "i".asInstanceOf[i]
   
   @js.native
   sealed trait tcp extends StObject
-  @scala.inline
-  def tcp: tcp = "tcp".asInstanceOf[tcp]
+  inline def tcp: tcp = "tcp".asInstanceOf[tcp]
   
   @js.native
   sealed trait udp extends StObject
-  @scala.inline
-  def udp: udp = "udp".asInstanceOf[udp]
+  inline def udp: udp = "udp".asInstanceOf[udp]
 }

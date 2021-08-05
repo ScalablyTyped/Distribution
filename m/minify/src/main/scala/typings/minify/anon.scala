@@ -16,20 +16,16 @@ object anon {
   }
   object MaxSize {
     
-    @scala.inline
-    def apply(): MaxSize = {
+    inline def apply(): MaxSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaxSize]
     }
     
-    @scala.inline
-    implicit class MaxSizeMutableBuilder[Self <: MaxSize] (val x: Self) extends AnyVal {
+    extension [Self <: MaxSize](x: Self) {
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     }
   }
 }

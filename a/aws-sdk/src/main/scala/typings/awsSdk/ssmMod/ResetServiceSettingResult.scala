@@ -13,19 +13,15 @@ trait ResetServiceSettingResult extends StObject {
 }
 object ResetServiceSettingResult {
   
-  @scala.inline
-  def apply(): ResetServiceSettingResult = {
+  inline def apply(): ResetServiceSettingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetServiceSettingResult]
   }
   
-  @scala.inline
-  implicit class ResetServiceSettingResultMutableBuilder[Self <: ResetServiceSettingResult] (val x: Self) extends AnyVal {
+  extension [Self <: ResetServiceSettingResult](x: Self) {
     
-    @scala.inline
-    def setServiceSetting(value: ServiceSetting): Self = StObject.set(x, "ServiceSetting", value.asInstanceOf[js.Any])
+    inline def setServiceSetting(value: ServiceSetting): Self = StObject.set(x, "ServiceSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSettingUndefined: Self = StObject.set(x, "ServiceSetting", js.undefined)
+    inline def setServiceSettingUndefined: Self = StObject.set(x, "ServiceSetting", js.undefined)
   }
 }

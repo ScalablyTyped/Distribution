@@ -21,31 +21,23 @@ trait Audio extends StObject {
 }
 object Audio {
   
-  @scala.inline
-  def apply(): Audio = {
+  inline def apply(): Audio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Audio]
   }
   
-  @scala.inline
-  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
+  extension [Self <: Audio](x: Self) {
     
-    @scala.inline
-    def setHighBoost(value: Boolean): Self = StObject.set(x, "highBoost", value.asInstanceOf[js.Any])
+    inline def setHighBoost(value: Boolean): Self = StObject.set(x, "highBoost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighBoostUndefined: Self = StObject.set(x, "highBoost", js.undefined)
+    inline def setHighBoostUndefined: Self = StObject.set(x, "highBoost", js.undefined)
     
-    @scala.inline
-    def setLowBoost(value: Boolean): Self = StObject.set(x, "lowBoost", value.asInstanceOf[js.Any])
+    inline def setLowBoost(value: Boolean): Self = StObject.set(x, "lowBoost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowBoostUndefined: Self = StObject.set(x, "lowBoost", js.undefined)
+    inline def setLowBoostUndefined: Self = StObject.set(x, "lowBoost", js.undefined)
     
-    @scala.inline
-    def setLufs(value: Double): Self = StObject.set(x, "lufs", value.asInstanceOf[js.Any])
+    inline def setLufs(value: Double): Self = StObject.set(x, "lufs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLufsUndefined: Self = StObject.set(x, "lufs", js.undefined)
+    inline def setLufsUndefined: Self = StObject.set(x, "lufs", js.undefined)
   }
 }

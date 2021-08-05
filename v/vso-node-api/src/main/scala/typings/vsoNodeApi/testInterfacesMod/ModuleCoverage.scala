@@ -22,8 +22,7 @@ trait ModuleCoverage extends StObject {
 }
 object ModuleCoverage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blockCount: Double,
     blockData: js.Array[Double],
     functions: js.Array[FunctionCoverage],
@@ -36,34 +35,24 @@ object ModuleCoverage {
     __obj.asInstanceOf[ModuleCoverage]
   }
   
-  @scala.inline
-  implicit class ModuleCoverageMutableBuilder[Self <: ModuleCoverage] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleCoverage](x: Self) {
     
-    @scala.inline
-    def setBlockCount(value: Double): Self = StObject.set(x, "blockCount", value.asInstanceOf[js.Any])
+    inline def setBlockCount(value: Double): Self = StObject.set(x, "blockCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockData(value: js.Array[Double]): Self = StObject.set(x, "blockData", value.asInstanceOf[js.Any])
+    inline def setBlockData(value: js.Array[Double]): Self = StObject.set(x, "blockData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDataVarargs(value: Double*): Self = StObject.set(x, "blockData", js.Array(value :_*))
+    inline def setBlockDataVarargs(value: Double*): Self = StObject.set(x, "blockData", js.Array(value :_*))
     
-    @scala.inline
-    def setFunctions(value: js.Array[FunctionCoverage]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: js.Array[FunctionCoverage]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsVarargs(value: FunctionCoverage*): Self = StObject.set(x, "functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: FunctionCoverage*): Self = StObject.set(x, "functions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAge(value: Double): Self = StObject.set(x, "signatureAge", value.asInstanceOf[js.Any])
+    inline def setSignatureAge(value: Double): Self = StObject.set(x, "signatureAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: CoverageStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: CoverageStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
   }
 }

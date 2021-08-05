@@ -18,23 +18,18 @@ object anon {
   }
   object Additions {
     
-    @scala.inline
-    def apply(additions: Double, deletions: Double, total: Double): Additions = {
+    inline def apply(additions: Double, deletions: Double, total: Double): Additions = {
       val __obj = js.Dynamic.literal(additions = additions.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Additions]
     }
     
-    @scala.inline
-    implicit class AdditionsMutableBuilder[Self <: Additions] (val x: Self) extends AnyVal {
+    extension [Self <: Additions](x: Self) {
       
-      @scala.inline
-      def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+      inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+      inline def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,23 +43,18 @@ object anon {
   }
   object Admin {
     
-    @scala.inline
-    def apply(admin: Boolean, pull: Boolean, push: Boolean): Admin = {
+    inline def apply(admin: Boolean, pull: Boolean, push: Boolean): Admin = {
       val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any])
       __obj.asInstanceOf[Admin]
     }
     
-    @scala.inline
-    implicit class AdminMutableBuilder[Self <: Admin] (val x: Self) extends AnyVal {
+    extension [Self <: Admin](x: Self) {
       
-      @scala.inline
-      def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+      inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPull(value: Boolean): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+      inline def setPull(value: Boolean): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+      inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,8 +78,7 @@ object anon {
   }
   object Bloburl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additions: Double,
       blob_url: String,
       changes: Double,
@@ -102,32 +91,23 @@ object anon {
       __obj.asInstanceOf[Bloburl]
     }
     
-    @scala.inline
-    implicit class BloburlMutableBuilder[Self <: Bloburl] (val x: Self) extends AnyVal {
+    extension [Self <: Bloburl](x: Self) {
       
-      @scala.inline
-      def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+      inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlob_url(value: String): Self = StObject.set(x, "blob_url", value.asInstanceOf[js.Any])
+      inline def setBlob_url(value: String): Self = StObject.set(x, "blob_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+      inline def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
+      inline def setDeletions(value: Double): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw_url(value: String): Self = StObject.set(x, "raw_url", value.asInstanceOf[js.Any])
+      inline def setRaw_url(value: String): Self = StObject.set(x, "raw_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: modified): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: modified): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,20 +119,16 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: From, title: From): Body = {
+    inline def apply(body: From, title: From): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: From): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: From): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: From): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: From): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,26 +144,20 @@ object anon {
   }
   object Collaborators {
     
-    @scala.inline
-    def apply(collaborators: Double, name: String, private_repos: Double, space: Double): Collaborators = {
+    inline def apply(collaborators: Double, name: String, private_repos: Double, space: Double): Collaborators = {
       val __obj = js.Dynamic.literal(collaborators = collaborators.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], private_repos = private_repos.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
       __obj.asInstanceOf[Collaborators]
     }
     
-    @scala.inline
-    implicit class CollaboratorsMutableBuilder[Self <: Collaborators] (val x: Self) extends AnyVal {
+    extension [Self <: Collaborators](x: Self) {
       
-      @scala.inline
-      def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+      inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivate_repos(value: Double): Self = StObject.set(x, "private_repos", value.asInstanceOf[js.Any])
+      inline def setPrivate_repos(value: Double): Self = StObject.set(x, "private_repos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,17 +167,14 @@ object anon {
   }
   object From {
     
-    @scala.inline
-    def apply(from: String): From = {
+    inline def apply(from: String): From = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
       __obj.asInstanceOf[From]
     }
     
-    @scala.inline
-    implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
+    extension [Self <: From](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,20 +186,16 @@ object anon {
   }
   object Html {
     
-    @scala.inline
-    def apply(html: String, self: String): Html = {
+    inline def apply(html: String, self: String): Html = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
       __obj.asInstanceOf[Html]
     }
     
-    @scala.inline
-    implicit class HtmlMutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
+    extension [Self <: Html](x: Self) {
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelf(value: String): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+      inline def setSelf(value: String): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,26 +211,20 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(collaborators: Double, name: String, privateRepos: Double, space: Double): Name = {
+    inline def apply(collaborators: Double, name: String, privateRepos: Double, space: Double): Name = {
       val __obj = js.Dynamic.literal(collaborators = collaborators.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], privateRepos = privateRepos.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+      inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateRepos(value: Double): Self = StObject.set(x, "privateRepos", value.asInstanceOf[js.Any])
+      inline def setPrivateRepos(value: Double): Self = StObject.set(x, "privateRepos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,26 +240,20 @@ object anon {
   }
   object Payload {
     
-    @scala.inline
-    def apply(payload: String, signature: String, verified: Boolean): Payload = {
+    inline def apply(payload: String, signature: String, verified: Boolean): Payload = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], reason = "valid", signature = signature.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: valid): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: valid): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+      inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     }
   }
 }

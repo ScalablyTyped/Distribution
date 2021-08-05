@@ -15,22 +15,17 @@ trait GetCookiesRequest extends StObject {
 }
 object GetCookiesRequest {
   
-  @scala.inline
-  def apply(): GetCookiesRequest = {
+  inline def apply(): GetCookiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCookiesRequest]
   }
   
-  @scala.inline
-  implicit class GetCookiesRequestMutableBuilder[Self <: GetCookiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCookiesRequest](x: Self) {
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

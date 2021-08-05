@@ -10,16 +10,13 @@ trait StaticFunctions extends StObject {
 }
 object StaticFunctions {
   
-  @scala.inline
-  def apply(Buttons: ButtonStaticFunctions): StaticFunctions = {
+  inline def apply(Buttons: ButtonStaticFunctions): StaticFunctions = {
     val __obj = js.Dynamic.literal(Buttons = Buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticFunctions]
   }
   
-  @scala.inline
-  implicit class StaticFunctionsMutableBuilder[Self <: StaticFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: StaticFunctions](x: Self) {
     
-    @scala.inline
-    def setButtons(value: ButtonStaticFunctions): Self = StObject.set(x, "Buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: ButtonStaticFunctions): Self = StObject.set(x, "Buttons", value.asInstanceOf[js.Any])
   }
 }

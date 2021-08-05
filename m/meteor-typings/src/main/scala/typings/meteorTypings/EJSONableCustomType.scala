@@ -14,23 +14,18 @@ trait EJSONableCustomType extends StObject {
 }
 object EJSONableCustomType {
   
-  @scala.inline
-  def apply(equals_ : js.Object => Boolean, toJSONValue: () => JSONable, typeName: () => String): EJSONableCustomType = {
+  inline def apply(equals_ : js.Object => Boolean, toJSONValue: () => JSONable, typeName: () => String): EJSONableCustomType = {
     val __obj = js.Dynamic.literal(toJSONValue = js.Any.fromFunction0(toJSONValue), typeName = js.Any.fromFunction0(typeName))
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[EJSONableCustomType]
   }
   
-  @scala.inline
-  implicit class EJSONableCustomTypeMutableBuilder[Self <: EJSONableCustomType] (val x: Self) extends AnyVal {
+  extension [Self <: EJSONableCustomType](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: js.Object => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSONValue(value: () => JSONable): Self = StObject.set(x, "toJSONValue", js.Any.fromFunction0(value))
+    inline def setToJSONValue(value: () => JSONable): Self = StObject.set(x, "toJSONValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTypeName(value: () => String): Self = StObject.set(x, "typeName", js.Any.fromFunction0(value))
+    inline def setTypeName(value: () => String): Self = StObject.set(x, "typeName", js.Any.fromFunction0(value))
   }
 }

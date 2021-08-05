@@ -13,8 +13,7 @@ object badgeStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): BadgeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[BadgeStyle]
+  inline def default(theme: Theme): BadgeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[BadgeStyle]
   
   trait BadgeStyle extends StObject {
     
@@ -36,8 +35,7 @@ object badgeStyleMod {
   }
   object BadgeStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dot: ViewStyle,
       dotSizelarge: ViewStyle,
       text: TextStyle,
@@ -51,32 +49,23 @@ object badgeStyleMod {
       __obj.asInstanceOf[BadgeStyle]
     }
     
-    @scala.inline
-    implicit class BadgeStyleMutableBuilder[Self <: BadgeStyle] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeStyle](x: Self) {
       
-      @scala.inline
-      def setDot(value: ViewStyle): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: ViewStyle): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotSizelarge(value: ViewStyle): Self = StObject.set(x, "dotSizelarge", value.asInstanceOf[js.Any])
+      inline def setDotSizelarge(value: ViewStyle): Self = StObject.set(x, "dotSizelarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextCorner(value: ViewStyle): Self = StObject.set(x, "textCorner", value.asInstanceOf[js.Any])
+      inline def setTextCorner(value: ViewStyle): Self = StObject.set(x, "textCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextCornerWrap(value: ViewStyle): Self = StObject.set(x, "textCornerWrap", value.asInstanceOf[js.Any])
+      inline def setTextCornerWrap(value: ViewStyle): Self = StObject.set(x, "textCornerWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextCornerlarge(value: ViewStyle): Self = StObject.set(x, "textCornerlarge", value.asInstanceOf[js.Any])
+      inline def setTextCornerlarge(value: ViewStyle): Self = StObject.set(x, "textCornerlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDom(value: ViewStyle): Self = StObject.set(x, "textDom", value.asInstanceOf[js.Any])
+      inline def setTextDom(value: ViewStyle): Self = StObject.set(x, "textDom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     }
   }
 }

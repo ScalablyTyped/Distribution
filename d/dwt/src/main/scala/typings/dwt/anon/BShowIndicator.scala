@@ -18,25 +18,19 @@ trait BShowIndicator extends StObject {
 }
 object BShowIndicator {
   
-  @scala.inline
-  def apply(): BShowIndicator = {
+  inline def apply(): BShowIndicator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BShowIndicator]
   }
   
-  @scala.inline
-  implicit class BShowIndicatorMutableBuilder[Self <: BShowIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: BShowIndicator](x: Self) {
     
-    @scala.inline
-    def setBShowIndicator(value: Boolean): Self = StObject.set(x, "bShowIndicator", value.asInstanceOf[js.Any])
+    inline def setBShowIndicator(value: Boolean): Self = StObject.set(x, "bShowIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBShowIndicatorUndefined: Self = StObject.set(x, "bShowIndicator", js.undefined)
+    inline def setBShowIndicatorUndefined: Self = StObject.set(x, "bShowIndicator", js.undefined)
     
-    @scala.inline
-    def setBShowUI(value: Boolean): Self = StObject.set(x, "bShowUI", value.asInstanceOf[js.Any])
+    inline def setBShowUI(value: Boolean): Self = StObject.set(x, "bShowUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBShowUIUndefined: Self = StObject.set(x, "bShowUI", js.undefined)
+    inline def setBShowUIUndefined: Self = StObject.set(x, "bShowUI", js.undefined)
   }
 }

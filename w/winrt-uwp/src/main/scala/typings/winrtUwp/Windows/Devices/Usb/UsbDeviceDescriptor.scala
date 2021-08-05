@@ -27,8 +27,7 @@ trait UsbDeviceDescriptor extends StObject {
 }
 object UsbDeviceDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bcdDeviceRevision: Double,
     bcdUsb: Double,
     maxPacketSize0: Double,
@@ -40,25 +39,18 @@ object UsbDeviceDescriptor {
     __obj.asInstanceOf[UsbDeviceDescriptor]
   }
   
-  @scala.inline
-  implicit class UsbDeviceDescriptorMutableBuilder[Self <: UsbDeviceDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UsbDeviceDescriptor](x: Self) {
     
-    @scala.inline
-    def setBcdDeviceRevision(value: Double): Self = StObject.set(x, "bcdDeviceRevision", value.asInstanceOf[js.Any])
+    inline def setBcdDeviceRevision(value: Double): Self = StObject.set(x, "bcdDeviceRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBcdUsb(value: Double): Self = StObject.set(x, "bcdUsb", value.asInstanceOf[js.Any])
+    inline def setBcdUsb(value: Double): Self = StObject.set(x, "bcdUsb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPacketSize0(value: Double): Self = StObject.set(x, "maxPacketSize0", value.asInstanceOf[js.Any])
+    inline def setMaxPacketSize0(value: Double): Self = StObject.set(x, "maxPacketSize0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfConfigurations(value: Double): Self = StObject.set(x, "numberOfConfigurations", value.asInstanceOf[js.Any])
+    inline def setNumberOfConfigurations(value: Double): Self = StObject.set(x, "numberOfConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+    inline def setVendorId(value: Double): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
   }
 }

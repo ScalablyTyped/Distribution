@@ -21,28 +21,21 @@ trait AddTargetedPublishersRequest extends StObject {
 }
 object AddTargetedPublishersRequest {
   
-  @scala.inline
-  def apply(): AddTargetedPublishersRequest = {
+  inline def apply(): AddTargetedPublishersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddTargetedPublishersRequest]
   }
   
-  @scala.inline
-  implicit class AddTargetedPublishersRequestMutableBuilder[Self <: AddTargetedPublishersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddTargetedPublishersRequest](x: Self) {
     
-    @scala.inline
-    def setPublisherIds(value: js.Array[String]): Self = StObject.set(x, "publisherIds", value.asInstanceOf[js.Any])
+    inline def setPublisherIds(value: js.Array[String]): Self = StObject.set(x, "publisherIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherIdsUndefined: Self = StObject.set(x, "publisherIds", js.undefined)
+    inline def setPublisherIdsUndefined: Self = StObject.set(x, "publisherIds", js.undefined)
     
-    @scala.inline
-    def setPublisherIdsVarargs(value: String*): Self = StObject.set(x, "publisherIds", js.Array(value :_*))
+    inline def setPublisherIdsVarargs(value: String*): Self = StObject.set(x, "publisherIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
+    inline def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
+    inline def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
   }
 }

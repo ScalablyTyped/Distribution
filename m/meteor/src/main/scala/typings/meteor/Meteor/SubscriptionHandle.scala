@@ -14,19 +14,15 @@ trait SubscriptionHandle extends StObject {
 }
 object SubscriptionHandle {
   
-  @scala.inline
-  def apply(ready: () => Boolean, stop: () => Unit): SubscriptionHandle = {
+  inline def apply(ready: () => Boolean, stop: () => Unit): SubscriptionHandle = {
     val __obj = js.Dynamic.literal(ready = js.Any.fromFunction0(ready), stop = js.Any.fromFunction0(stop))
     __obj.asInstanceOf[SubscriptionHandle]
   }
   
-  @scala.inline
-  implicit class SubscriptionHandleMutableBuilder[Self <: SubscriptionHandle] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionHandle](x: Self) {
     
-    @scala.inline
-    def setReady(value: () => Boolean): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    inline def setReady(value: () => Boolean): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

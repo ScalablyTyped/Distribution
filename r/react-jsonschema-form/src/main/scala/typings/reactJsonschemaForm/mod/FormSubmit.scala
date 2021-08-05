@@ -10,16 +10,13 @@ trait FormSubmit[T] extends StObject {
 }
 object FormSubmit {
   
-  @scala.inline
-  def apply[T](formData: T): FormSubmit[T] = {
+  inline def apply[T](formData: T): FormSubmit[T] = {
     val __obj = js.Dynamic.literal(formData = formData.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormSubmit[T]]
   }
   
-  @scala.inline
-  implicit class FormSubmitMutableBuilder[Self <: FormSubmit[?], T] (val x: Self & FormSubmit[T]) extends AnyVal {
+  extension [Self <: FormSubmit[?], T](x: Self & FormSubmit[T]) {
     
-    @scala.inline
-    def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
   }
 }

@@ -21,25 +21,19 @@ trait Duration extends StObject {
 }
 object Duration {
   
-  @scala.inline
-  def apply(): Duration = {
+  inline def apply(): Duration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

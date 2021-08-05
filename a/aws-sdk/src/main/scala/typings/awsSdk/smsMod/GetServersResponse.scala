@@ -28,40 +28,29 @@ trait GetServersResponse extends StObject {
 }
 object GetServersResponse {
   
-  @scala.inline
-  def apply(): GetServersResponse = {
+  inline def apply(): GetServersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetServersResponse]
   }
   
-  @scala.inline
-  implicit class GetServersResponseMutableBuilder[Self <: GetServersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetServersResponse](x: Self) {
     
-    @scala.inline
-    def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedOnUndefined: Self = StObject.set(x, "lastModifiedOn", js.undefined)
+    inline def setLastModifiedOnUndefined: Self = StObject.set(x, "lastModifiedOn", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setServerCatalogStatus(value: ServerCatalogStatus): Self = StObject.set(x, "serverCatalogStatus", value.asInstanceOf[js.Any])
+    inline def setServerCatalogStatus(value: ServerCatalogStatus): Self = StObject.set(x, "serverCatalogStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCatalogStatusUndefined: Self = StObject.set(x, "serverCatalogStatus", js.undefined)
+    inline def setServerCatalogStatusUndefined: Self = StObject.set(x, "serverCatalogStatus", js.undefined)
     
-    @scala.inline
-    def setServerList(value: ServerList): Self = StObject.set(x, "serverList", value.asInstanceOf[js.Any])
+    inline def setServerList(value: ServerList): Self = StObject.set(x, "serverList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerListUndefined: Self = StObject.set(x, "serverList", js.undefined)
+    inline def setServerListUndefined: Self = StObject.set(x, "serverList", js.undefined)
     
-    @scala.inline
-    def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value :_*))
+    inline def setServerListVarargs(value: Server*): Self = StObject.set(x, "serverList", js.Array(value :_*))
   }
 }

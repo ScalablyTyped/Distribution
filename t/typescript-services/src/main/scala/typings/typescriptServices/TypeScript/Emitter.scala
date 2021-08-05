@@ -20,11 +20,11 @@ trait Emitter extends StObject {
     resolvePath: js.Function1[/* path */ String, String]
   ): Unit = js.native
   
-  var currentVariableDeclaration: js.Any = js.native
+  /* private */ var currentVariableDeclaration: js.Any = js.native
   
-  var declStack: js.Any = js.native
+  /* private */ var declStack: js.Any = js.native
   
-  var detachedCommentsElement: js.Any = js.native
+  /* private */ var detachedCommentsElement: js.Any = js.native
   
   var document: Document = js.native
   
@@ -278,7 +278,7 @@ trait Emitter extends StObject {
   
   var emittingFileName: String = js.native
   
-  var exportAssignment: js.Any = js.native
+  /* private */ var exportAssignment: js.Any = js.native
   
   var extendsPrologueEmitted: Boolean = js.native
   
@@ -312,7 +312,7 @@ trait Emitter extends StObject {
   
   var inArrowFunction: Boolean = js.native
   
-  var inWithBlock: js.Any = js.native
+  /* private */ var inWithBlock: js.Any = js.native
   
   var indenter: Indenter = js.native
   
@@ -342,7 +342,7 @@ trait Emitter extends StObject {
   
   /* private */ def requiresExtendsBlock(moduleElements: js.Any): js.Any = js.native
   
-  var semanticInfoChain: js.Any = js.native
+  /* private */ var semanticInfoChain: js.Any = js.native
   
   def setContainer(c: Double): Double = js.native
   

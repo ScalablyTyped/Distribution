@@ -29,8 +29,7 @@ object tabBarIndexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): typings.materialTabs.tabBarComponentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabBarComponentMod.MDCTabBar]
+    inline def attachTo(root: Element): typings.materialTabs.tabBarComponentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabBarComponentMod.MDCTabBar]
   }
   
   @JSImport("@material/tabs/tab-bar/index", "MDCTabBarFoundation")
@@ -64,8 +63,7 @@ object tabBarIndexMod {
     @JSImport("@material/tabs/tab-bar/index", "tabBarCssClasses.UPGRADED")
     @js.native
     def UPGRADED: String = js.native
-    @scala.inline
-    def UPGRADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPGRADED")(x.asInstanceOf[js.Any])
+    inline def UPGRADED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPGRADED")(x.asInstanceOf[js.Any])
   }
   
   object tabBarStrings {
@@ -77,19 +75,16 @@ object tabBarIndexMod {
     @JSImport("@material/tabs/tab-bar/index", "tabBarStrings.CHANGE_EVENT")
     @js.native
     def CHANGE_EVENT: String = js.native
-    @scala.inline
-    def CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE_EVENT")(x.asInstanceOf[js.Any])
+    inline def CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE_EVENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs/tab-bar/index", "tabBarStrings.INDICATOR_SELECTOR")
     @js.native
     def INDICATOR_SELECTOR: String = js.native
-    @scala.inline
-    def INDICATOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def INDICATOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDICATOR_SELECTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/tabs/tab-bar/index", "tabBarStrings.TAB_SELECTOR")
     @js.native
     def TAB_SELECTOR: String = js.native
-    @scala.inline
-    def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def TAB_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

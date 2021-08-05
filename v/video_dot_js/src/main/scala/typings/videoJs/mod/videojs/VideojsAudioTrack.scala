@@ -21,34 +21,25 @@ trait VideojsAudioTrack extends StObject {
 }
 object VideojsAudioTrack {
   
-  @scala.inline
-  def apply(enabled: Boolean, id: String, kind: String, label: String, language: String): VideojsAudioTrack = {
+  inline def apply(enabled: Boolean, id: String, kind: String, label: String, language: String): VideojsAudioTrack = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], sourceBuffer = null)
     __obj.asInstanceOf[VideojsAudioTrack]
   }
   
-  @scala.inline
-  implicit class VideojsAudioTrackMutableBuilder[Self <: VideojsAudioTrack] (val x: Self) extends AnyVal {
+  extension [Self <: VideojsAudioTrack](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBuffer(value: SourceBuffer): Self = StObject.set(x, "sourceBuffer", value.asInstanceOf[js.Any])
+    inline def setSourceBuffer(value: SourceBuffer): Self = StObject.set(x, "sourceBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBufferNull: Self = StObject.set(x, "sourceBuffer", null)
+    inline def setSourceBufferNull: Self = StObject.set(x, "sourceBuffer", null)
   }
 }

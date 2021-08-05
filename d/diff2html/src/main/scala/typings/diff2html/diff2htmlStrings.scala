@@ -14,100 +14,85 @@ object diff2htmlStrings {
   sealed trait char
     extends StObject
        with DiffStyleType
-  @scala.inline
-  def char: char = "char".asInstanceOf[char]
+  inline def char: char = "char".asInstanceOf[char]
   
   @js.native
   sealed trait `d2h-cntx`
     extends StObject
        with CSSLineClass
-  @scala.inline
-  def `d2h-cntx`: `d2h-cntx` = "d2h-cntx".asInstanceOf[`d2h-cntx`]
+  inline def `d2h-cntx`: `d2h-cntx` = "d2h-cntx".asInstanceOf[`d2h-cntx`]
   
   @js.native
   sealed trait `d2h-del`
     extends StObject
        with CSSLineClass
-  @scala.inline
-  def `d2h-del`: `d2h-del` = "d2h-del".asInstanceOf[`d2h-del`]
+  inline def `d2h-del`: `d2h-del` = "d2h-del".asInstanceOf[`d2h-del`]
   
   @js.native
   sealed trait `d2h-del d2h-change`
     extends StObject
        with CSSLineClass
-  @scala.inline
-  def `d2h-del d2h-change`: `d2h-del d2h-change` = ("d2h-del d2h-change").asInstanceOf[`d2h-del d2h-change`]
+  inline def `d2h-del d2h-change`: `d2h-del d2h-change` = ("d2h-del d2h-change").asInstanceOf[`d2h-del d2h-change`]
   
   @js.native
   sealed trait `d2h-info`
     extends StObject
        with CSSLineClass
-  @scala.inline
-  def `d2h-info`: `d2h-info` = "d2h-info".asInstanceOf[`d2h-info`]
+  inline def `d2h-info`: `d2h-info` = "d2h-info".asInstanceOf[`d2h-info`]
   
   @js.native
   sealed trait `d2h-ins`
     extends StObject
        with CSSLineClass
-  @scala.inline
-  def `d2h-ins`: `d2h-ins` = "d2h-ins".asInstanceOf[`d2h-ins`]
+  inline def `d2h-ins`: `d2h-ins` = "d2h-ins".asInstanceOf[`d2h-ins`]
   
   @js.native
   sealed trait `d2h-ins d2h-change`
     extends StObject
        with CSSLineClass
-  @scala.inline
-  def `d2h-ins d2h-change`: `d2h-ins d2h-change` = ("d2h-ins d2h-change").asInstanceOf[`d2h-ins d2h-change`]
+  inline def `d2h-ins d2h-change`: `d2h-ins d2h-change` = ("d2h-ins d2h-change").asInstanceOf[`d2h-ins d2h-change`]
   
   @js.native
   sealed trait `line-by-line`
     extends StObject
        with OutputFormatType
-  @scala.inline
-  def `line-by-line`: `line-by-line` = "line-by-line".asInstanceOf[`line-by-line`]
+  inline def `line-by-line`: `line-by-line` = "line-by-line".asInstanceOf[`line-by-line`]
   
   @js.native
   sealed trait lines
     extends StObject
        with LineMatchingType
-  @scala.inline
-  def lines: lines = "lines".asInstanceOf[lines]
+  inline def lines: lines = "lines".asInstanceOf[lines]
   
   @js.native
   sealed trait none
     extends StObject
        with LineMatchingType
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait `side-by-side`
     extends StObject
        with OutputFormatType
-  @scala.inline
-  def `side-by-side`: `side-by-side` = "side-by-side".asInstanceOf[`side-by-side`]
+  inline def `side-by-side`: `side-by-side` = "side-by-side".asInstanceOf[`side-by-side`]
   
   @js.native
   sealed trait start extends StObject
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait stop extends StObject
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
   sealed trait word
     extends StObject
        with DiffStyleType
-  @scala.inline
-  def word: word = "word".asInstanceOf[word]
+  inline def word: word = "word".asInstanceOf[word]
   
   @js.native
   sealed trait words
     extends StObject
        with LineMatchingType
-  @scala.inline
-  def words: words = "words".asInstanceOf[words]
+  inline def words: words = "words".asInstanceOf[words]
 }

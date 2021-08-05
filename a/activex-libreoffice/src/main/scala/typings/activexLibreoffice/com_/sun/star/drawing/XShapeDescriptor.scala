@@ -22,8 +22,7 @@ trait XShapeDescriptor
 }
 object XShapeDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ShapeType: String,
     acquire: () => Unit,
     getShapeType: () => String,
@@ -34,13 +33,10 @@ object XShapeDescriptor {
     __obj.asInstanceOf[XShapeDescriptor]
   }
   
-  @scala.inline
-  implicit class XShapeDescriptorMutableBuilder[Self <: XShapeDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeDescriptor](x: Self) {
     
-    @scala.inline
-    def setGetShapeType(value: () => String): Self = StObject.set(x, "getShapeType", js.Any.fromFunction0(value))
+    inline def setGetShapeType(value: () => String): Self = StObject.set(x, "getShapeType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShapeType(value: String): Self = StObject.set(x, "ShapeType", value.asInstanceOf[js.Any])
+    inline def setShapeType(value: String): Self = StObject.set(x, "ShapeType", value.asInstanceOf[js.Any])
   }
 }

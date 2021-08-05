@@ -28,8 +28,7 @@ trait Fn
 }
 object Fn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asyncError: typings.std.Error,
     fn: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
     hookType: HookType
@@ -38,25 +37,18 @@ object Fn {
     __obj.asInstanceOf[Fn]
   }
   
-  @scala.inline
-  implicit class FnMutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
+  extension [Self <: Fn](x: Self) {
     
-    @scala.inline
-    def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
+    inline def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFn(value: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    inline def setFn(value: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHookType(value: HookType): Self = StObject.set(x, "hookType", value.asInstanceOf[js.Any])
+    inline def setHookType(value: HookType): Self = StObject.set(x, "hookType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: add_hook): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: add_hook): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

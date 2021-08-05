@@ -90,12 +90,9 @@ object mod {
     def isConnected(): Boolean = js.native
   }
   
-  @scala.inline
-  def Errors(`type`: String, id: String, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
-  @scala.inline
-  def Errors(`type`: String, id: Double, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
-  @scala.inline
-  def Errors(`type`: String, id: Null, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
+  inline def Errors(`type`: String, id: String, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
+  inline def Errors(`type`: String, id: Double, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
+  inline def Errors(`type`: String, id: Null, data: js.Any): js.Any | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("Errors")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any | Null]
   
   @JSImport("json-rpc-ws", "Server")
   @js.native
@@ -117,11 +114,9 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @scala.inline
-  def createClient[TConnection /* <: Connection */](): Client[TConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client[TConnection]]
+  inline def createClient[TConnection /* <: Connection */](): Client[TConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client[TConnection]]
   
-  @scala.inline
-  def createServer[TConnection /* <: Connection */](): Server[TConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server[TConnection]]
+  inline def createServer[TConnection /* <: Connection */](): Server[TConnection] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server[TConnection]]
   
   @js.native
   trait Connection extends StObject {
@@ -183,44 +178,32 @@ object mod {
   }
   object Payload {
     
-    @scala.inline
-    def apply[ParamType](id: String, method: String): Payload[ParamType] = {
+    inline def apply[ParamType](id: String, method: String): Payload[ParamType] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload[ParamType]]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload[?], ParamType] (val x: Self & Payload[ParamType]) extends AnyVal {
+    extension [Self <: Payload[?], ParamType](x: Self & Payload[ParamType]) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonrpc(value: `2Dot0`): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
+      inline def setJsonrpc(value: `2Dot0`): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonrpcUndefined: Self = StObject.set(x, "jsonrpc", js.undefined)
+      inline def setJsonrpcUndefined: Self = StObject.set(x, "jsonrpc", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: ParamType): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: ParamType): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
   

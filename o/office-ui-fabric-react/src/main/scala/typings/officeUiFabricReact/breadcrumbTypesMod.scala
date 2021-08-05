@@ -38,17 +38,14 @@ object breadcrumbTypesMod {
   }
   object IBreadcrumb {
     
-    @scala.inline
-    def apply(focus: () => Unit): IBreadcrumb = {
+    inline def apply(focus: () => Unit): IBreadcrumb = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IBreadcrumb]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbMutableBuilder[Self <: IBreadcrumb] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumb](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -62,8 +59,7 @@ object breadcrumbTypesMod {
   }
   object IBreadcrumbData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       props: IBreadcrumbProps,
       renderedItems: js.Array[IBreadcrumbItem],
       renderedOverflowItems: js.Array[IBreadcrumbItem]
@@ -72,23 +68,17 @@ object breadcrumbTypesMod {
       __obj.asInstanceOf[IBreadcrumbData]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbDataMutableBuilder[Self <: IBreadcrumbData] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumbData](x: Self) {
       
-      @scala.inline
-      def setProps(value: IBreadcrumbProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: IBreadcrumbProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "renderedItems", value.asInstanceOf[js.Any])
+      inline def setRenderedItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "renderedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedItems", js.Array(value :_*))
+      inline def setRenderedItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedItems", js.Array(value :_*))
       
-      @scala.inline
-      def setRenderedOverflowItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "renderedOverflowItems", value.asInstanceOf[js.Any])
+      inline def setRenderedOverflowItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "renderedOverflowItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedOverflowItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedOverflowItems", js.Array(value :_*))
+      inline def setRenderedOverflowItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "renderedOverflowItems", js.Array(value :_*))
     }
   }
   
@@ -142,52 +132,38 @@ object breadcrumbTypesMod {
   }
   object IBreadcrumbItem {
     
-    @scala.inline
-    def apply(key: String, text: String): IBreadcrumbItem = {
+    inline def apply(key: String, text: String): IBreadcrumbItem = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBreadcrumbItem]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbItemMutableBuilder[Self <: IBreadcrumbItem] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumbItem](x: Self) {
       
-      @scala.inline
-      def setAs(value: h1 | h2 | h3 | h4 | h5 | h6 | a): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: h1 | h2 | h3 | h4 | h5 | h6 | a): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setIsCurrentItem(value: Boolean): Self = StObject.set(x, "isCurrentItem", value.asInstanceOf[js.Any])
+      inline def setIsCurrentItem(value: Boolean): Self = StObject.set(x, "isCurrentItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrentItemUndefined: Self = StObject.set(x, "isCurrentItem", js.undefined)
+      inline def setIsCurrentItemUndefined: Self = StObject.set(x, "isCurrentItem", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(
+      inline def setOnClick(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[IBreadcrumbItem]) => Unit
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,120 +249,84 @@ object breadcrumbTypesMod {
   }
   object IBreadcrumbProps {
     
-    @scala.inline
-    def apply(items: js.Array[IBreadcrumbItem]): IBreadcrumbProps = {
+    inline def apply(items: js.Array[IBreadcrumbItem]): IBreadcrumbProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBreadcrumbProps]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbPropsMutableBuilder[Self <: IBreadcrumbProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumbProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IBreadcrumb]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IBreadcrumb]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IBreadcrumb | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IBreadcrumb | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDividerAs(value: IComponentAs[IDividerAsProps]): Self = StObject.set(x, "dividerAs", value.asInstanceOf[js.Any])
+      inline def setDividerAs(value: IComponentAs[IDividerAsProps]): Self = StObject.set(x, "dividerAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerAsUndefined: Self = StObject.set(x, "dividerAs", js.undefined)
+      inline def setDividerAsUndefined: Self = StObject.set(x, "dividerAs", js.undefined)
       
-      @scala.inline
-      def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
+      inline def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
+      inline def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[IBreadcrumbItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IBreadcrumbItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxDisplayedItems(value: Double): Self = StObject.set(x, "maxDisplayedItems", value.asInstanceOf[js.Any])
+      inline def setMaxDisplayedItems(value: Double): Self = StObject.set(x, "maxDisplayedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDisplayedItemsUndefined: Self = StObject.set(x, "maxDisplayedItems", js.undefined)
+      inline def setMaxDisplayedItemsUndefined: Self = StObject.set(x, "maxDisplayedItems", js.undefined)
       
-      @scala.inline
-      def setOnGrowData(value: /* data */ IBreadcrumbData => js.UndefOr[IBreadcrumbData]): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
+      inline def setOnGrowData(value: /* data */ IBreadcrumbData => js.UndefOr[IBreadcrumbData]): Self = StObject.set(x, "onGrowData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGrowDataUndefined: Self = StObject.set(x, "onGrowData", js.undefined)
+      inline def setOnGrowDataUndefined: Self = StObject.set(x, "onGrowData", js.undefined)
       
-      @scala.inline
-      def setOnReduceData(value: /* data */ IBreadcrumbData => js.UndefOr[IBreadcrumbData]): Self = StObject.set(x, "onReduceData", js.Any.fromFunction1(value))
+      inline def setOnReduceData(value: /* data */ IBreadcrumbData => js.UndefOr[IBreadcrumbData]): Self = StObject.set(x, "onReduceData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReduceDataUndefined: Self = StObject.set(x, "onReduceData", js.undefined)
+      inline def setOnReduceDataUndefined: Self = StObject.set(x, "onReduceData", js.undefined)
       
-      @scala.inline
-      def setOnRenderItem(
+      inline def setOnRenderItem(
         value: (/* props */ js.UndefOr[IBreadcrumbItem], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IBreadcrumbItem], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderItemUndefined: Self = StObject.set(x, "onRenderItem", js.undefined)
+      inline def setOnRenderItemUndefined: Self = StObject.set(x, "onRenderItem", js.undefined)
       
-      @scala.inline
-      def setOnRenderOverflowIcon(
+      inline def setOnRenderOverflowIcon(
         value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderOverflowIcon", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderOverflowIconUndefined: Self = StObject.set(x, "onRenderOverflowIcon", js.undefined)
+      inline def setOnRenderOverflowIconUndefined: Self = StObject.set(x, "onRenderOverflowIcon", js.undefined)
       
-      @scala.inline
-      def setOverflowAriaLabel(value: String): Self = StObject.set(x, "overflowAriaLabel", value.asInstanceOf[js.Any])
+      inline def setOverflowAriaLabel(value: String): Self = StObject.set(x, "overflowAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowAriaLabelUndefined: Self = StObject.set(x, "overflowAriaLabel", js.undefined)
+      inline def setOverflowAriaLabelUndefined: Self = StObject.set(x, "overflowAriaLabel", js.undefined)
       
-      @scala.inline
-      def setOverflowButtonAs(value: IComponentAs[IButtonProps]): Self = StObject.set(x, "overflowButtonAs", value.asInstanceOf[js.Any])
+      inline def setOverflowButtonAs(value: IComponentAs[IButtonProps]): Self = StObject.set(x, "overflowButtonAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButtonAsUndefined: Self = StObject.set(x, "overflowButtonAs", js.undefined)
+      inline def setOverflowButtonAsUndefined: Self = StObject.set(x, "overflowButtonAs", js.undefined)
       
-      @scala.inline
-      def setOverflowIndex(value: Double): Self = StObject.set(x, "overflowIndex", value.asInstanceOf[js.Any])
+      inline def setOverflowIndex(value: Double): Self = StObject.set(x, "overflowIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowIndexUndefined: Self = StObject.set(x, "overflowIndex", js.undefined)
+      inline def setOverflowIndexUndefined: Self = StObject.set(x, "overflowIndex", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IBreadcrumbStyleProps, IBreadcrumbStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IBreadcrumbStyleProps, IBreadcrumbStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IBreadcrumbStyleProps => DeepPartial[IBreadcrumbStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IBreadcrumbStyleProps => DeepPartial[IBreadcrumbStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTooltipHostProps(value: ITooltipHostProps): Self = StObject.set(x, "tooltipHostProps", value.asInstanceOf[js.Any])
+      inline def setTooltipHostProps(value: ITooltipHostProps): Self = StObject.set(x, "tooltipHostProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipHostPropsUndefined: Self = StObject.set(x, "tooltipHostProps", js.undefined)
+      inline def setTooltipHostPropsUndefined: Self = StObject.set(x, "tooltipHostProps", js.undefined)
     }
   }
   
@@ -398,23 +338,18 @@ object breadcrumbTypesMod {
   }
   object IBreadcrumbStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IBreadcrumbStyleProps = {
+    inline def apply(theme: ITheme): IBreadcrumbStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBreadcrumbStyleProps]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbStylePropsMutableBuilder[Self <: IBreadcrumbStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumbStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -438,86 +373,60 @@ object breadcrumbTypesMod {
   }
   object IBreadcrumbStyles {
     
-    @scala.inline
-    def apply(): IBreadcrumbStyles = {
+    inline def apply(): IBreadcrumbStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBreadcrumbStyles]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbStylesMutableBuilder[Self <: IBreadcrumbStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumbStyles](x: Self) {
       
-      @scala.inline
-      def setChevron(value: IStyle): Self = StObject.set(x, "chevron", value.asInstanceOf[js.Any])
+      inline def setChevron(value: IStyle): Self = StObject.set(x, "chevron", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChevronNull: Self = StObject.set(x, "chevron", null)
+      inline def setChevronNull: Self = StObject.set(x, "chevron", null)
       
-      @scala.inline
-      def setChevronUndefined: Self = StObject.set(x, "chevron", js.undefined)
+      inline def setChevronUndefined: Self = StObject.set(x, "chevron", js.undefined)
       
-      @scala.inline
-      def setItem(value: IStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: IStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLink(value: IStyle): Self = StObject.set(x, "itemLink", value.asInstanceOf[js.Any])
+      inline def setItemLink(value: IStyle): Self = StObject.set(x, "itemLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLinkNull: Self = StObject.set(x, "itemLink", null)
+      inline def setItemLinkNull: Self = StObject.set(x, "itemLink", null)
       
-      @scala.inline
-      def setItemLinkUndefined: Self = StObject.set(x, "itemLink", js.undefined)
+      inline def setItemLinkUndefined: Self = StObject.set(x, "itemLink", js.undefined)
       
-      @scala.inline
-      def setItemNull: Self = StObject.set(x, "item", null)
+      inline def setItemNull: Self = StObject.set(x, "item", null)
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setList(value: IStyle): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: IStyle): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListItem(value: IStyle): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+      inline def setListItem(value: IStyle): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListItemNull: Self = StObject.set(x, "listItem", null)
+      inline def setListItemNull: Self = StObject.set(x, "listItem", null)
       
-      @scala.inline
-      def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
       
-      @scala.inline
-      def setListNull: Self = StObject.set(x, "list", null)
+      inline def setListNull: Self = StObject.set(x, "list", null)
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setOverflow(value: IStyle): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: IStyle): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButton(value: IStyle): Self = StObject.set(x, "overflowButton", value.asInstanceOf[js.Any])
+      inline def setOverflowButton(value: IStyle): Self = StObject.set(x, "overflowButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowButtonNull: Self = StObject.set(x, "overflowButton", null)
+      inline def setOverflowButtonNull: Self = StObject.set(x, "overflowButton", null)
       
-      @scala.inline
-      def setOverflowButtonUndefined: Self = StObject.set(x, "overflowButton", js.undefined)
+      inline def setOverflowButtonUndefined: Self = StObject.set(x, "overflowButton", js.undefined)
       
-      @scala.inline
-      def setOverflowNull: Self = StObject.set(x, "overflow", null)
+      inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -533,20 +442,16 @@ object breadcrumbTypesMod {
   }
   object IDividerAsProps {
     
-    @scala.inline
-    def apply(): IDividerAsProps = {
+    inline def apply(): IDividerAsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDividerAsProps]
     }
     
-    @scala.inline
-    implicit class IDividerAsPropsMutableBuilder[Self <: IDividerAsProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDividerAsProps](x: Self) {
       
-      @scala.inline
-      def setItem(value: IBreadcrumbItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: IBreadcrumbItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     }
   }
 }

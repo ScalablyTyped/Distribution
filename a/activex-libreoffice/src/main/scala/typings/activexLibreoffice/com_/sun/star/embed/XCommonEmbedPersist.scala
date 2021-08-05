@@ -43,8 +43,7 @@ trait XCommonEmbedPersist
 }
 object XCommonEmbedPersist {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     isReadonly: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -56,16 +55,12 @@ object XCommonEmbedPersist {
     __obj.asInstanceOf[XCommonEmbedPersist]
   }
   
-  @scala.inline
-  implicit class XCommonEmbedPersistMutableBuilder[Self <: XCommonEmbedPersist] (val x: Self) extends AnyVal {
+  extension [Self <: XCommonEmbedPersist](x: Self) {
     
-    @scala.inline
-    def setIsReadonly(value: () => Boolean): Self = StObject.set(x, "isReadonly", js.Any.fromFunction0(value))
+    inline def setIsReadonly(value: () => Boolean): Self = StObject.set(x, "isReadonly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReload(value: (SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction2(value))
+    inline def setReload(value: (SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStoreOwn(value: () => Unit): Self = StObject.set(x, "storeOwn", js.Any.fromFunction0(value))
+    inline def setStoreOwn(value: () => Unit): Self = StObject.set(x, "storeOwn", js.Any.fromFunction0(value))
   }
 }

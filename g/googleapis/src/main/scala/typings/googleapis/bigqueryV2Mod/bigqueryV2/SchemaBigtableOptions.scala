@@ -35,34 +35,25 @@ trait SchemaBigtableOptions extends StObject {
 }
 object SchemaBigtableOptions {
   
-  @scala.inline
-  def apply(): SchemaBigtableOptions = {
+  inline def apply(): SchemaBigtableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBigtableOptions]
   }
   
-  @scala.inline
-  implicit class SchemaBigtableOptionsMutableBuilder[Self <: SchemaBigtableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBigtableOptions](x: Self) {
     
-    @scala.inline
-    def setColumnFamilies(value: js.Array[SchemaBigtableColumnFamily]): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
+    inline def setColumnFamilies(value: js.Array[SchemaBigtableColumnFamily]): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)
+    inline def setColumnFamiliesUndefined: Self = StObject.set(x, "columnFamilies", js.undefined)
     
-    @scala.inline
-    def setColumnFamiliesVarargs(value: SchemaBigtableColumnFamily*): Self = StObject.set(x, "columnFamilies", js.Array(value :_*))
+    inline def setColumnFamiliesVarargs(value: SchemaBigtableColumnFamily*): Self = StObject.set(x, "columnFamilies", js.Array(value :_*))
     
-    @scala.inline
-    def setIgnoreUnspecifiedColumnFamilies(value: Boolean): Self = StObject.set(x, "ignoreUnspecifiedColumnFamilies", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnspecifiedColumnFamilies(value: Boolean): Self = StObject.set(x, "ignoreUnspecifiedColumnFamilies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnspecifiedColumnFamiliesUndefined: Self = StObject.set(x, "ignoreUnspecifiedColumnFamilies", js.undefined)
+    inline def setIgnoreUnspecifiedColumnFamiliesUndefined: Self = StObject.set(x, "ignoreUnspecifiedColumnFamilies", js.undefined)
     
-    @scala.inline
-    def setReadRowkeyAsString(value: Boolean): Self = StObject.set(x, "readRowkeyAsString", value.asInstanceOf[js.Any])
+    inline def setReadRowkeyAsString(value: Boolean): Self = StObject.set(x, "readRowkeyAsString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadRowkeyAsStringUndefined: Self = StObject.set(x, "readRowkeyAsString", js.undefined)
+    inline def setReadRowkeyAsStringUndefined: Self = StObject.set(x, "readRowkeyAsString", js.undefined)
   }
 }

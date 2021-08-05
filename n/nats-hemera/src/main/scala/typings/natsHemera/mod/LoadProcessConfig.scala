@@ -10,19 +10,15 @@ trait LoadProcessConfig extends StObject {
 }
 object LoadProcessConfig {
   
-  @scala.inline
-  def apply(): LoadProcessConfig = {
+  inline def apply(): LoadProcessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadProcessConfig]
   }
   
-  @scala.inline
-  implicit class LoadProcessConfigMutableBuilder[Self <: LoadProcessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoadProcessConfig](x: Self) {
     
-    @scala.inline
-    def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
+    inline def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
+    inline def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
   }
 }

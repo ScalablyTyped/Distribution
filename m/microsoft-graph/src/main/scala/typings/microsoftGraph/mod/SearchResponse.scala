@@ -12,37 +12,27 @@ trait SearchResponse extends StObject {
 }
 object SearchResponse {
   
-  @scala.inline
-  def apply(): SearchResponse = {
+  inline def apply(): SearchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchResponse]
   }
   
-  @scala.inline
-  implicit class SearchResponseMutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResponse](x: Self) {
     
-    @scala.inline
-    def setHitsContainers(value: NullableOption[js.Array[SearchHitsContainer]]): Self = StObject.set(x, "hitsContainers", value.asInstanceOf[js.Any])
+    inline def setHitsContainers(value: NullableOption[js.Array[SearchHitsContainer]]): Self = StObject.set(x, "hitsContainers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsContainersNull: Self = StObject.set(x, "hitsContainers", null)
+    inline def setHitsContainersNull: Self = StObject.set(x, "hitsContainers", null)
     
-    @scala.inline
-    def setHitsContainersUndefined: Self = StObject.set(x, "hitsContainers", js.undefined)
+    inline def setHitsContainersUndefined: Self = StObject.set(x, "hitsContainers", js.undefined)
     
-    @scala.inline
-    def setHitsContainersVarargs(value: SearchHitsContainer*): Self = StObject.set(x, "hitsContainers", js.Array(value :_*))
+    inline def setHitsContainersVarargs(value: SearchHitsContainer*): Self = StObject.set(x, "hitsContainers", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchTerms(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "searchTerms", value.asInstanceOf[js.Any])
+    inline def setSearchTerms(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "searchTerms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTermsNull: Self = StObject.set(x, "searchTerms", null)
+    inline def setSearchTermsNull: Self = StObject.set(x, "searchTerms", null)
     
-    @scala.inline
-    def setSearchTermsUndefined: Self = StObject.set(x, "searchTerms", js.undefined)
+    inline def setSearchTermsUndefined: Self = StObject.set(x, "searchTerms", js.undefined)
     
-    @scala.inline
-    def setSearchTermsVarargs(value: String*): Self = StObject.set(x, "searchTerms", js.Array(value :_*))
+    inline def setSearchTermsVarargs(value: String*): Self = StObject.set(x, "searchTerms", js.Array(value :_*))
   }
 }

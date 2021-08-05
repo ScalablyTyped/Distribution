@@ -17,31 +17,23 @@ trait IFullscreenControlParameters extends StObject {
 }
 object IFullscreenControlParameters {
   
-  @scala.inline
-  def apply(): IFullscreenControlParameters = {
+  inline def apply(): IFullscreenControlParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFullscreenControlParameters]
   }
   
-  @scala.inline
-  implicit class IFullscreenControlParametersMutableBuilder[Self <: IFullscreenControlParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IFullscreenControlParameters](x: Self) {
     
-    @scala.inline
-    def setData(value: Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Title): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOptions(value: IBaseButtonParametersOptiAdjustMapMargin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IBaseButtonParametersOptiAdjustMapMargin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Expanded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

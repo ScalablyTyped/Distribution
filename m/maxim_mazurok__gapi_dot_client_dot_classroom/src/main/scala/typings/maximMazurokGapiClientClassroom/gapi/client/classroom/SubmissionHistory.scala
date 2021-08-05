@@ -14,25 +14,19 @@ trait SubmissionHistory extends StObject {
 }
 object SubmissionHistory {
   
-  @scala.inline
-  def apply(): SubmissionHistory = {
+  inline def apply(): SubmissionHistory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubmissionHistory]
   }
   
-  @scala.inline
-  implicit class SubmissionHistoryMutableBuilder[Self <: SubmissionHistory] (val x: Self) extends AnyVal {
+  extension [Self <: SubmissionHistory](x: Self) {
     
-    @scala.inline
-    def setGradeHistory(value: GradeHistory): Self = StObject.set(x, "gradeHistory", value.asInstanceOf[js.Any])
+    inline def setGradeHistory(value: GradeHistory): Self = StObject.set(x, "gradeHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradeHistoryUndefined: Self = StObject.set(x, "gradeHistory", js.undefined)
+    inline def setGradeHistoryUndefined: Self = StObject.set(x, "gradeHistory", js.undefined)
     
-    @scala.inline
-    def setStateHistory(value: StateHistory): Self = StObject.set(x, "stateHistory", value.asInstanceOf[js.Any])
+    inline def setStateHistory(value: StateHistory): Self = StObject.set(x, "stateHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateHistoryUndefined: Self = StObject.set(x, "stateHistory", js.undefined)
+    inline def setStateHistoryUndefined: Self = StObject.set(x, "stateHistory", js.undefined)
   }
 }

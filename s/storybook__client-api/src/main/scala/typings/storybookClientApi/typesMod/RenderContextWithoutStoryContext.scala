@@ -54,8 +54,7 @@ trait RenderContextWithoutStoryContext extends StObject {
 }
 object RenderContextWithoutStoryContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyLoaders: () => js.Promise[StoryContext],
     argTypes: ArgTypes,
     args: Args,
@@ -78,70 +77,48 @@ object RenderContextWithoutStoryContext {
     __obj.asInstanceOf[RenderContextWithoutStoryContext]
   }
   
-  @scala.inline
-  implicit class RenderContextWithoutStoryContextMutableBuilder[Self <: RenderContextWithoutStoryContext] (val x: Self) extends AnyVal {
+  extension [Self <: RenderContextWithoutStoryContext](x: Self) {
     
-    @scala.inline
-    def setApplyLoaders(value: () => js.Promise[StoryContext]): Self = StObject.set(x, "applyLoaders", js.Any.fromFunction0(value))
+    inline def setApplyLoaders(value: () => js.Promise[StoryContext]): Self = StObject.set(x, "applyLoaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setArgTypes(value: ArgTypes): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
+    inline def setArgTypes(value: ArgTypes): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+    inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDecorated(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
+    inline def setGetDecorated(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getDecorated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOriginal(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getOriginal", js.Any.fromFunction0(value))
+    inline def setGetOriginal(value: () => StoryFn[js.Any]): Self = StObject.set(x, "getOriginal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHooks(value: HooksContext): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: HooksContext): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialArgs(value: Args): Self = StObject.set(x, "initialArgs", value.asInstanceOf[js.Any])
+    inline def setInitialArgs(value: Args): Self = StObject.set(x, "initialArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowError(value: Description => Unit): Self = StObject.set(x, "showError", js.Any.fromFunction1(value))
+    inline def setShowError(value: Description => Unit): Self = StObject.set(x, "showError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowException(value: Error => Unit): Self = StObject.set(x, "showException", js.Any.fromFunction1(value))
+    inline def setShowException(value: Error => Unit): Self = StObject.set(x, "showException", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowMain(value: () => Unit): Self = StObject.set(x, "showMain", js.Any.fromFunction0(value))
+    inline def setShowMain(value: () => Unit): Self = StObject.set(x, "showMain", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+    inline def setStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
+    inline def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
+    inline def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnboundStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "unboundStoryFn", value.asInstanceOf[js.Any])
+    inline def setUnboundStoryFn(value: StoryFn[js.Any]): Self = StObject.set(x, "unboundStoryFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnboundStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction1(value))
+    inline def setUnboundStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnboundStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction2(value))
+    inline def setUnboundStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "unboundStoryFn", js.Any.fromFunction2(value))
   }
 }

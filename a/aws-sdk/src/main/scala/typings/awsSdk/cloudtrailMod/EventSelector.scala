@@ -28,43 +28,31 @@ trait EventSelector extends StObject {
 }
 object EventSelector {
   
-  @scala.inline
-  def apply(): EventSelector = {
+  inline def apply(): EventSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventSelector]
   }
   
-  @scala.inline
-  implicit class EventSelectorMutableBuilder[Self <: EventSelector] (val x: Self) extends AnyVal {
+  extension [Self <: EventSelector](x: Self) {
     
-    @scala.inline
-    def setDataResources(value: DataResources): Self = StObject.set(x, "DataResources", value.asInstanceOf[js.Any])
+    inline def setDataResources(value: DataResources): Self = StObject.set(x, "DataResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataResourcesUndefined: Self = StObject.set(x, "DataResources", js.undefined)
+    inline def setDataResourcesUndefined: Self = StObject.set(x, "DataResources", js.undefined)
     
-    @scala.inline
-    def setDataResourcesVarargs(value: DataResource*): Self = StObject.set(x, "DataResources", js.Array(value :_*))
+    inline def setDataResourcesVarargs(value: DataResource*): Self = StObject.set(x, "DataResources", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeManagementEventSources(value: ExcludeManagementEventSources): Self = StObject.set(x, "ExcludeManagementEventSources", value.asInstanceOf[js.Any])
+    inline def setExcludeManagementEventSources(value: ExcludeManagementEventSources): Self = StObject.set(x, "ExcludeManagementEventSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeManagementEventSourcesUndefined: Self = StObject.set(x, "ExcludeManagementEventSources", js.undefined)
+    inline def setExcludeManagementEventSourcesUndefined: Self = StObject.set(x, "ExcludeManagementEventSources", js.undefined)
     
-    @scala.inline
-    def setExcludeManagementEventSourcesVarargs(value: String*): Self = StObject.set(x, "ExcludeManagementEventSources", js.Array(value :_*))
+    inline def setExcludeManagementEventSourcesVarargs(value: String*): Self = StObject.set(x, "ExcludeManagementEventSources", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeManagementEvents(value: Boolean): Self = StObject.set(x, "IncludeManagementEvents", value.asInstanceOf[js.Any])
+    inline def setIncludeManagementEvents(value: Boolean): Self = StObject.set(x, "IncludeManagementEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeManagementEventsUndefined: Self = StObject.set(x, "IncludeManagementEvents", js.undefined)
+    inline def setIncludeManagementEventsUndefined: Self = StObject.set(x, "IncludeManagementEvents", js.undefined)
     
-    @scala.inline
-    def setReadWriteType(value: ReadWriteType): Self = StObject.set(x, "ReadWriteType", value.asInstanceOf[js.Any])
+    inline def setReadWriteType(value: ReadWriteType): Self = StObject.set(x, "ReadWriteType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadWriteTypeUndefined: Self = StObject.set(x, "ReadWriteType", js.undefined)
+    inline def setReadWriteTypeUndefined: Self = StObject.set(x, "ReadWriteType", js.undefined)
   }
 }

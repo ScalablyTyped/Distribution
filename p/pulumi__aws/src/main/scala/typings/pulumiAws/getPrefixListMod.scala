@@ -12,14 +12,10 @@ object getPrefixListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPrefixList(): js.Promise[GetPrefixListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")().asInstanceOf[js.Promise[GetPrefixListResult]]
-  @scala.inline
-  def getPrefixList(args: Unit, opts: InvokeOptions): js.Promise[GetPrefixListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrefixListResult]]
-  @scala.inline
-  def getPrefixList(args: GetPrefixListArgs): js.Promise[GetPrefixListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPrefixListResult]]
-  @scala.inline
-  def getPrefixList(args: GetPrefixListArgs, opts: InvokeOptions): js.Promise[GetPrefixListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrefixListResult]]
+  inline def getPrefixList(): js.Promise[GetPrefixListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")().asInstanceOf[js.Promise[GetPrefixListResult]]
+  inline def getPrefixList(args: Unit, opts: InvokeOptions): js.Promise[GetPrefixListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrefixListResult]]
+  inline def getPrefixList(args: GetPrefixListArgs): js.Promise[GetPrefixListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPrefixListResult]]
+  inline def getPrefixList(args: GetPrefixListArgs, opts: InvokeOptions): js.Promise[GetPrefixListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixList")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrefixListResult]]
   
   trait GetPrefixListArgs extends StObject {
     
@@ -40,35 +36,26 @@ object getPrefixListMod {
   }
   object GetPrefixListArgs {
     
-    @scala.inline
-    def apply(): GetPrefixListArgs = {
+    inline def apply(): GetPrefixListArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPrefixListArgs]
     }
     
-    @scala.inline
-    implicit class GetPrefixListArgsMutableBuilder[Self <: GetPrefixListArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetPrefixListArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetPrefixListFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetPrefixListFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetPrefixListFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetPrefixListFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrefixListId(value: String): Self = StObject.set(x, "prefixListId", value.asInstanceOf[js.Any])
+      inline def setPrefixListId(value: String): Self = StObject.set(x, "prefixListId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixListIdUndefined: Self = StObject.set(x, "prefixListId", js.undefined)
+      inline def setPrefixListIdUndefined: Self = StObject.set(x, "prefixListId", js.undefined)
     }
   }
   
@@ -95,41 +82,30 @@ object getPrefixListMod {
   }
   object GetPrefixListResult {
     
-    @scala.inline
-    def apply(cidrBlocks: js.Array[String], id: String, name: String): GetPrefixListResult = {
+    inline def apply(cidrBlocks: js.Array[String], id: String, name: String): GetPrefixListResult = {
       val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPrefixListResult]
     }
     
-    @scala.inline
-    implicit class GetPrefixListResultMutableBuilder[Self <: GetPrefixListResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPrefixListResult](x: Self) {
       
-      @scala.inline
-      def setCidrBlocks(value: js.Array[String]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
+      inline def setCidrBlocks(value: js.Array[String]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidrBlocksVarargs(value: String*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
+      inline def setCidrBlocksVarargs(value: String*): Self = StObject.set(x, "cidrBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetPrefixListFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetPrefixListFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetPrefixListFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetPrefixListFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixListId(value: String): Self = StObject.set(x, "prefixListId", value.asInstanceOf[js.Any])
+      inline def setPrefixListId(value: String): Self = StObject.set(x, "prefixListId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixListIdUndefined: Self = StObject.set(x, "prefixListId", js.undefined)
+      inline def setPrefixListIdUndefined: Self = StObject.set(x, "prefixListId", js.undefined)
     }
   }
 }

@@ -10,18 +10,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mapStackTrace(stack: String, done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mapStackTrace(
+  inline def mapStackTrace(stack: String, done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mapStackTrace(
     stack: String,
     done: js.Function1[/* mappedStack */ js.Array[String], Unit],
     opts: MapStackTraceOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mapStackTrace(stack: Unit, done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mapStackTrace(
+  inline def mapStackTrace(stack: Unit, done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mapStackTrace(
     stack: Unit,
     done: js.Function1[/* mappedStack */ js.Array[String], Unit],
     opts: MapStackTraceOptions
@@ -40,32 +36,24 @@ object mod {
   }
   object MapStackTraceOptions {
     
-    @scala.inline
-    def apply(): MapStackTraceOptions = {
+    inline def apply(): MapStackTraceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapStackTraceOptions]
     }
     
-    @scala.inline
-    implicit class MapStackTraceOptionsMutableBuilder[Self <: MapStackTraceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapStackTraceOptions](x: Self) {
       
-      @scala.inline
-      def setCacheGlobally(value: Boolean): Self = StObject.set(x, "cacheGlobally", value.asInstanceOf[js.Any])
+      inline def setCacheGlobally(value: Boolean): Self = StObject.set(x, "cacheGlobally", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheGloballyUndefined: Self = StObject.set(x, "cacheGlobally", js.undefined)
+      inline def setCacheGloballyUndefined: Self = StObject.set(x, "cacheGlobally", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* line */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* line */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
 }

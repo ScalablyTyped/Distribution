@@ -11,16 +11,13 @@ trait RelayRelayPaginationProp extends StObject {
 }
 object RelayRelayPaginationProp {
   
-  @scala.inline
-  def apply(relay: RelayPaginationProp): RelayRelayPaginationProp = {
+  inline def apply(relay: RelayPaginationProp): RelayRelayPaginationProp = {
     val __obj = js.Dynamic.literal(relay = relay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayRelayPaginationProp]
   }
   
-  @scala.inline
-  implicit class RelayRelayPaginationPropMutableBuilder[Self <: RelayRelayPaginationProp] (val x: Self) extends AnyVal {
+  extension [Self <: RelayRelayPaginationProp](x: Self) {
     
-    @scala.inline
-    def setRelay(value: RelayPaginationProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
+    inline def setRelay(value: RelayPaginationProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
   }
 }

@@ -35,17 +35,14 @@ object initializerConfigMod {
   }
   object ConstantConfig {
     
-    @scala.inline
-    def apply(value: Double): ConstantConfig = {
+    inline def apply(value: Double): ConstantConfig = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstantConfig]
     }
     
-    @scala.inline
-    implicit class ConstantConfigMutableBuilder[Self <: ConstantConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ConstantConfig](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,14 +56,11 @@ object initializerConfigMod {
   trait Distribution extends StObject
   object Distribution {
     
-    @scala.inline
-    def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = "normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal]
+    inline def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = "normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal]
     
-    @scala.inline
-    def truncatedNormal: truncatedNormal_ = "truncatedNormal".asInstanceOf[truncatedNormal_]
+    inline def truncatedNormal: truncatedNormal_ = "truncatedNormal".asInstanceOf[truncatedNormal_]
     
-    @scala.inline
-    def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = "uniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform]
+    inline def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = "uniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -77,14 +71,11 @@ object initializerConfigMod {
   trait DistributionSerialization extends StObject
   object DistributionSerialization {
     
-    @scala.inline
-    def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = "normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal]
+    inline def normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal = "normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.normal]
     
-    @scala.inline
-    def truncated_normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncated_normal = "truncated_normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncated_normal]
+    inline def truncated_normal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncated_normal = "truncated_normal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.truncated_normal]
     
-    @scala.inline
-    def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = "uniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform]
+    inline def uniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform = "uniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.uniform]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -95,14 +86,11 @@ object initializerConfigMod {
   trait FanMode extends StObject
   object FanMode {
     
-    @scala.inline
-    def fanAvg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanAvg = "fanAvg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanAvg]
+    inline def fanAvg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanAvg = "fanAvg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanAvg]
     
-    @scala.inline
-    def fanIn: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanIn = "fanIn".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanIn]
+    inline def fanIn: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanIn = "fanIn".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanIn]
     
-    @scala.inline
-    def fanOut: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanOut = "fanOut".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanOut]
+    inline def fanOut: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanOut = "fanOut".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fanOut]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -113,14 +101,11 @@ object initializerConfigMod {
   trait FanModeSerialization extends StObject
   object FanModeSerialization {
     
-    @scala.inline
-    def fan_avg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_avg = "fan_avg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_avg]
+    inline def fan_avg: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_avg = "fan_avg".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_avg]
     
-    @scala.inline
-    def fan_in: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_in = "fan_in".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_in]
+    inline def fan_in: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_in = "fan_in".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_in]
     
-    @scala.inline
-    def fan_out: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_out = "fan_out".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_out]
+    inline def fan_out: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_out = "fan_out".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.fan_out]
   }
   
   trait IdentityConfig extends StObject {
@@ -129,20 +114,16 @@ object initializerConfigMod {
   }
   object IdentityConfig {
     
-    @scala.inline
-    def apply(): IdentityConfig = {
+    inline def apply(): IdentityConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdentityConfig]
     }
     
-    @scala.inline
-    implicit class IdentityConfigMutableBuilder[Self <: IdentityConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IdentityConfig](x: Self) {
       
-      @scala.inline
-      def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+      inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
+      inline def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
     }
   }
   
@@ -163,32 +144,23 @@ object initializerConfigMod {
   trait InitializerClassName extends StObject
   object InitializerClassName {
     
-    @scala.inline
-    def Constant: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant = "Constant".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant]
+    inline def Constant: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant = "Constant".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant]
     
-    @scala.inline
-    def Identity: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity = "Identity".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity]
+    inline def Identity: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity = "Identity".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity]
     
-    @scala.inline
-    def Ones: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones = "Ones".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones]
+    inline def Ones: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones = "Ones".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones]
     
-    @scala.inline
-    def Orthogonal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal = "Orthogonal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal]
+    inline def Orthogonal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal = "Orthogonal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal]
     
-    @scala.inline
-    def RandomNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal = "RandomNormal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal]
+    inline def RandomNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal = "RandomNormal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal]
     
-    @scala.inline
-    def RandomUniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform = "RandomUniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform]
+    inline def RandomUniform: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform = "RandomUniform".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform]
     
-    @scala.inline
-    def TruncatedNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal = "TruncatedNormal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal]
+    inline def TruncatedNormal: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal = "TruncatedNormal".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal]
     
-    @scala.inline
-    def VarianceScaling: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling = "VarianceScaling".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling]
+    inline def VarianceScaling: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling = "VarianceScaling".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling]
     
-    @scala.inline
-    def Zeros: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros = "Zeros".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros]
+    inline def Zeros: typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros = "Zeros".asInstanceOf[typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros]
   }
   
   type InitializerSerialization = ZerosSerialization | OnesSerialization | ConstantSerialization | RandomUniformSerialization | RandomNormalSerialization | TruncatedNormalSerialization | IdentitySerialization | VarianceScalingSerialization | OrthogonalSerialization
@@ -203,26 +175,20 @@ object initializerConfigMod {
   }
   object OrthogonalConfig {
     
-    @scala.inline
-    def apply(): OrthogonalConfig = {
+    inline def apply(): OrthogonalConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrthogonalConfig]
     }
     
-    @scala.inline
-    implicit class OrthogonalConfigMutableBuilder[Self <: OrthogonalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OrthogonalConfig](x: Self) {
       
-      @scala.inline
-      def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+      inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
+      inline def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
       
-      @scala.inline
-      def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
   
@@ -238,32 +204,24 @@ object initializerConfigMod {
   }
   object RandomNormalConfig {
     
-    @scala.inline
-    def apply(): RandomNormalConfig = {
+    inline def apply(): RandomNormalConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RandomNormalConfig]
     }
     
-    @scala.inline
-    implicit class RandomNormalConfigMutableBuilder[Self <: RandomNormalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RandomNormalConfig](x: Self) {
       
-      @scala.inline
-      def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+      inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+      inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
       
-      @scala.inline
-      def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
       
-      @scala.inline
-      def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+      inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
+      inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
     }
   }
   
@@ -279,32 +237,24 @@ object initializerConfigMod {
   }
   object RandomUniformConfig {
     
-    @scala.inline
-    def apply(): RandomUniformConfig = {
+    inline def apply(): RandomUniformConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RandomUniformConfig]
     }
     
-    @scala.inline
-    implicit class RandomUniformConfigMutableBuilder[Self <: RandomUniformConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RandomUniformConfig](x: Self) {
       
-      @scala.inline
-      def setMaxval(value: Double): Self = StObject.set(x, "maxval", value.asInstanceOf[js.Any])
+      inline def setMaxval(value: Double): Self = StObject.set(x, "maxval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxvalUndefined: Self = StObject.set(x, "maxval", js.undefined)
+      inline def setMaxvalUndefined: Self = StObject.set(x, "maxval", js.undefined)
       
-      @scala.inline
-      def setMinval(value: Double): Self = StObject.set(x, "minval", value.asInstanceOf[js.Any])
+      inline def setMinval(value: Double): Self = StObject.set(x, "minval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinvalUndefined: Self = StObject.set(x, "minval", js.undefined)
+      inline def setMinvalUndefined: Self = StObject.set(x, "minval", js.undefined)
       
-      @scala.inline
-      def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
   
@@ -320,32 +270,24 @@ object initializerConfigMod {
   }
   object TruncatedNormalConfig {
     
-    @scala.inline
-    def apply(): TruncatedNormalConfig = {
+    inline def apply(): TruncatedNormalConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TruncatedNormalConfig]
     }
     
-    @scala.inline
-    implicit class TruncatedNormalConfigMutableBuilder[Self <: TruncatedNormalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TruncatedNormalConfig](x: Self) {
       
-      @scala.inline
-      def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+      inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+      inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
       
-      @scala.inline
-      def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
       
-      @scala.inline
-      def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+      inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
+      inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
     }
   }
   
@@ -363,38 +305,28 @@ object initializerConfigMod {
   }
   object VarianceScalingConfig {
     
-    @scala.inline
-    def apply(): VarianceScalingConfig = {
+    inline def apply(): VarianceScalingConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VarianceScalingConfig]
     }
     
-    @scala.inline
-    implicit class VarianceScalingConfigMutableBuilder[Self <: VarianceScalingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: VarianceScalingConfig](x: Self) {
       
-      @scala.inline
-      def setDistribution(value: DistributionSerialization): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+      inline def setDistribution(value: DistributionSerialization): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+      inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
       
-      @scala.inline
-      def setMode(value: FanModeSerialization): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: FanModeSerialization): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
   

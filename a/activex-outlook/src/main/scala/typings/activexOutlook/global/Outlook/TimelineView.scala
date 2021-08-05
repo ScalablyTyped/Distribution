@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.TimelineView")
 @js.native
-class TimelineView protected ()
+/* private */ class TimelineView ()
   extends StObject
      with typings.activexOutlook.Outlook.TimelineView {
   
@@ -64,7 +64,7 @@ class TimelineView protected ()
   /* CompleteClass */
   var Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.TimelineView_typekey")
   var OutlookDotTimelineView_typekey: typings.activexOutlook.Outlook.TimelineView = js.native
   

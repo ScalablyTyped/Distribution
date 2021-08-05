@@ -18,19 +18,15 @@ trait EncryptionAtRestOptionsStatus extends StObject {
 }
 object EncryptionAtRestOptionsStatus {
   
-  @scala.inline
-  def apply(Options: EncryptionAtRestOptions, Status: OptionStatus): EncryptionAtRestOptionsStatus = {
+  inline def apply(Options: EncryptionAtRestOptions, Status: OptionStatus): EncryptionAtRestOptionsStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionAtRestOptionsStatus]
   }
   
-  @scala.inline
-  implicit class EncryptionAtRestOptionsStatusMutableBuilder[Self <: EncryptionAtRestOptionsStatus] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionAtRestOptionsStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: EncryptionAtRestOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: EncryptionAtRestOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

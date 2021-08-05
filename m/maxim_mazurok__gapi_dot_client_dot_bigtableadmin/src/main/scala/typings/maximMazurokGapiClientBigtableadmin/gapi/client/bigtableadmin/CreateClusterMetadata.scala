@@ -28,41 +28,31 @@ trait CreateClusterMetadata extends StObject {
 }
 object CreateClusterMetadata {
   
-  @scala.inline
-  def apply(): CreateClusterMetadata = {
+  inline def apply(): CreateClusterMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClusterMetadata]
   }
   
-  @scala.inline
-  implicit class CreateClusterMetadataMutableBuilder[Self <: CreateClusterMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterMetadata](x: Self) {
     
-    @scala.inline
-    def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
+    inline def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
     
-    @scala.inline
-    def setOriginalRequest(value: CreateClusterRequest): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
+    inline def setOriginalRequest(value: CreateClusterRequest): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalRequestUndefined: Self = StObject.set(x, "originalRequest", js.undefined)
+    inline def setOriginalRequestUndefined: Self = StObject.set(x, "originalRequest", js.undefined)
     
-    @scala.inline
-    def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
+    inline def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
     
-    @scala.inline
-    def setTables(
+    inline def setTables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress}
       */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
   }
 }

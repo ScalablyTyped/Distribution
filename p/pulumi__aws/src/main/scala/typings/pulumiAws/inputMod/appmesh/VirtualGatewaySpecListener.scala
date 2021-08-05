@@ -24,28 +24,21 @@ trait VirtualGatewaySpecListener extends StObject {
 }
 object VirtualGatewaySpecListener {
   
-  @scala.inline
-  def apply(portMapping: Input[VirtualGatewaySpecListenerPortMapping]): VirtualGatewaySpecListener = {
+  inline def apply(portMapping: Input[VirtualGatewaySpecListenerPortMapping]): VirtualGatewaySpecListener = {
     val __obj = js.Dynamic.literal(portMapping = portMapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewaySpecListener]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecListenerMutableBuilder[Self <: VirtualGatewaySpecListener] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpecListener](x: Self) {
     
-    @scala.inline
-    def setHealthCheck(value: Input[VirtualGatewaySpecListenerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: Input[VirtualGatewaySpecListenerHealthCheck]): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
-    @scala.inline
-    def setPortMapping(value: Input[VirtualGatewaySpecListenerPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
+    inline def setPortMapping(value: Input[VirtualGatewaySpecListenerPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTls(value: Input[VirtualGatewaySpecListenerTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Input[VirtualGatewaySpecListenerTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

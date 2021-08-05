@@ -12,16 +12,13 @@ trait AltimeterReadingChangedEventArgs extends StObject {
 }
 object AltimeterReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: AltimeterReading): AltimeterReadingChangedEventArgs = {
+  inline def apply(reading: AltimeterReading): AltimeterReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltimeterReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class AltimeterReadingChangedEventArgsMutableBuilder[Self <: AltimeterReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AltimeterReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: AltimeterReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: AltimeterReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

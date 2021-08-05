@@ -38,7 +38,7 @@ trait Field extends StObject {
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
-  @JSName("DAO.Field2_typekey")
+  /* private */ @JSName("DAO.Field2_typekey")
   var DAODotField2_typekey: Field = js.native
   
   val DataUpdatable: Boolean = js.native

@@ -17,28 +17,21 @@ trait IsDisabledAtPrepopulation extends StObject {
 }
 object IsDisabledAtPrepopulation {
   
-  @scala.inline
-  def apply(resolver: /* variableSource */ String => js.Promise[js.Any]): IsDisabledAtPrepopulation = {
+  inline def apply(resolver: /* variableSource */ String => js.Promise[js.Any]): IsDisabledAtPrepopulation = {
     val __obj = js.Dynamic.literal(resolver = js.Any.fromFunction1(resolver))
     __obj.asInstanceOf[IsDisabledAtPrepopulation]
   }
   
-  @scala.inline
-  implicit class IsDisabledAtPrepopulationMutableBuilder[Self <: IsDisabledAtPrepopulation] (val x: Self) extends AnyVal {
+  extension [Self <: IsDisabledAtPrepopulation](x: Self) {
     
-    @scala.inline
-    def setIsDisabledAtPrepopulation(value: Boolean): Self = StObject.set(x, "isDisabledAtPrepopulation", value.asInstanceOf[js.Any])
+    inline def setIsDisabledAtPrepopulation(value: Boolean): Self = StObject.set(x, "isDisabledAtPrepopulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDisabledAtPrepopulationUndefined: Self = StObject.set(x, "isDisabledAtPrepopulation", js.undefined)
+    inline def setIsDisabledAtPrepopulationUndefined: Self = StObject.set(x, "isDisabledAtPrepopulation", js.undefined)
     
-    @scala.inline
-    def setResolver(value: /* variableSource */ String => js.Promise[js.Any]): Self = StObject.set(x, "resolver", js.Any.fromFunction1(value))
+    inline def setResolver(value: /* variableSource */ String => js.Promise[js.Any]): Self = StObject.set(x, "resolver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

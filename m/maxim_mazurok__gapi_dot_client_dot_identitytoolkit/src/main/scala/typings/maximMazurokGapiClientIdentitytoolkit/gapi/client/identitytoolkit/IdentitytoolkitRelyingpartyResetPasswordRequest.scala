@@ -20,37 +20,27 @@ trait IdentitytoolkitRelyingpartyResetPasswordRequest extends StObject {
 }
 object IdentitytoolkitRelyingpartyResetPasswordRequest {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartyResetPasswordRequest = {
+  inline def apply(): IdentitytoolkitRelyingpartyResetPasswordRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyResetPasswordRequest]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartyResetPasswordRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartyResetPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartyResetPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
+    inline def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPasswordUndefined: Self = StObject.set(x, "newPassword", js.undefined)
+    inline def setNewPasswordUndefined: Self = StObject.set(x, "newPassword", js.undefined)
     
-    @scala.inline
-    def setOldPassword(value: String): Self = StObject.set(x, "oldPassword", value.asInstanceOf[js.Any])
+    inline def setOldPassword(value: String): Self = StObject.set(x, "oldPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldPasswordUndefined: Self = StObject.set(x, "oldPassword", js.undefined)
+    inline def setOldPasswordUndefined: Self = StObject.set(x, "oldPassword", js.undefined)
     
-    @scala.inline
-    def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
+    inline def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
+    inline def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
   }
 }

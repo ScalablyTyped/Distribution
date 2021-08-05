@@ -11,6 +11,5 @@ object cliCommandMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Command]
+  inline def default(): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Command]
 }

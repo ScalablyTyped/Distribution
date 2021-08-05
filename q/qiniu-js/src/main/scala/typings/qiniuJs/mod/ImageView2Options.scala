@@ -32,8 +32,7 @@ trait ImageView2Options extends StObject {
 }
 object ImageView2Options {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: jpg | gif | png | webp | String,
     h: Double,
     mode: `0` | `1` | `2` | `3` | `4` | `5`,
@@ -44,22 +43,16 @@ object ImageView2Options {
     __obj.asInstanceOf[ImageView2Options]
   }
   
-  @scala.inline
-  implicit class ImageView2OptionsMutableBuilder[Self <: ImageView2Options] (val x: Self) extends AnyVal {
+  extension [Self <: ImageView2Options](x: Self) {
     
-    @scala.inline
-    def setFormat(value: jpg | gif | png | webp | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: jpg | gif | png | webp | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: `0` | `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: `0` | `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

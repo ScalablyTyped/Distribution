@@ -28,8 +28,7 @@ trait Order extends StObject {
 }
 object Order {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amount: Double,
     created: Double,
     id: String,
@@ -43,46 +42,32 @@ object Order {
     __obj.asInstanceOf[Order]
   }
   
-  @scala.inline
-  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+  extension [Self <: Order](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingAmount(value: Double): Self = StObject.set(x, "remainingAmount", value.asInstanceOf[js.Any])
+    inline def setRemainingAmount(value: Double): Self = StObject.set(x, "remainingAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: MarketResourceConstant): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: MarketResourceConstant): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomName(value: String): Self = StObject.set(x, "roomName", value.asInstanceOf[js.Any])
+    inline def setRoomName(value: String): Self = StObject.set(x, "roomName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomNameUndefined: Self = StObject.set(x, "roomName", js.undefined)
+    inline def setRoomNameUndefined: Self = StObject.set(x, "roomName", js.undefined)
     
-    @scala.inline
-    def setTotalAmount(value: Double): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
+    inline def setTotalAmount(value: Double): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
+    inline def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -22,55 +22,39 @@ trait ContainerLogsOptions extends StObject {
 }
 object ContainerLogsOptions {
   
-  @scala.inline
-  def apply(): ContainerLogsOptions = {
+  inline def apply(): ContainerLogsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerLogsOptions]
   }
   
-  @scala.inline
-  implicit class ContainerLogsOptionsMutableBuilder[Self <: ContainerLogsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerLogsOptions](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Boolean): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Boolean): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+    inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
     
-    @scala.inline
-    def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    @scala.inline
-    def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+    inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
-    @scala.inline
-    def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+    inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     
-    @scala.inline
-    def setTail(value: Double): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+    inline def setTail(value: Double): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
+    inline def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
     
-    @scala.inline
-    def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
   }
 }

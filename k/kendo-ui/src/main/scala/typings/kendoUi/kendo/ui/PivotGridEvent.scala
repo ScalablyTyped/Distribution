@@ -14,22 +14,17 @@ trait PivotGridEvent extends StObject {
 }
 object PivotGridEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PivotGrid): PivotGridEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PivotGrid): PivotGridEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridEvent]
   }
   
-  @scala.inline
-  implicit class PivotGridEventMutableBuilder[Self <: PivotGridEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGridEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: PivotGrid): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: PivotGrid): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

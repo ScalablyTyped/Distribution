@@ -62,7 +62,7 @@ class MeshAttachment protected ()
   /* CompleteClass */
   override def newLinkedMesh(): typings.pixiSpine.PIXI.spine.core.MeshAttachment = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var parentMesh: js.Any = js.native
   
   /* CompleteClass */

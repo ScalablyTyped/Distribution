@@ -11,16 +11,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(prettyPhoto: moduleJQueryStatic): JQueryStatic = {
+  inline def apply(prettyPhoto: moduleJQueryStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(prettyPhoto = prettyPhoto.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setPrettyPhoto(value: moduleJQueryStatic): Self = StObject.set(x, "prettyPhoto", value.asInstanceOf[js.Any])
+    inline def setPrettyPhoto(value: moduleJQueryStatic): Self = StObject.set(x, "prettyPhoto", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait AlgorithmImage extends StObject {
 }
 object AlgorithmImage {
   
-  @scala.inline
-  def apply(dockerURI: DockerURI): AlgorithmImage = {
+  inline def apply(dockerURI: DockerURI): AlgorithmImage = {
     val __obj = js.Dynamic.literal(dockerURI = dockerURI.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlgorithmImage]
   }
   
-  @scala.inline
-  implicit class AlgorithmImageMutableBuilder[Self <: AlgorithmImage] (val x: Self) extends AnyVal {
+  extension [Self <: AlgorithmImage](x: Self) {
     
-    @scala.inline
-    def setDockerURI(value: DockerURI): Self = StObject.set(x, "dockerURI", value.asInstanceOf[js.Any])
+    inline def setDockerURI(value: DockerURI): Self = StObject.set(x, "dockerURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

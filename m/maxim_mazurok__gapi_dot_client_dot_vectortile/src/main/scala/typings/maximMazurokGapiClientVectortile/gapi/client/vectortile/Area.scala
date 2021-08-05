@@ -44,64 +44,45 @@ trait Area extends StObject {
 }
 object Area {
   
-  @scala.inline
-  def apply(): Area = {
+  inline def apply(): Area = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Area]
   }
   
-  @scala.inline
-  implicit class AreaMutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
+  extension [Self <: Area](x: Self) {
     
-    @scala.inline
-    def setHasExternalEdges(value: Boolean): Self = StObject.set(x, "hasExternalEdges", value.asInstanceOf[js.Any])
+    inline def setHasExternalEdges(value: Boolean): Self = StObject.set(x, "hasExternalEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasExternalEdgesUndefined: Self = StObject.set(x, "hasExternalEdges", js.undefined)
+    inline def setHasExternalEdgesUndefined: Self = StObject.set(x, "hasExternalEdges", js.undefined)
     
-    @scala.inline
-    def setInternalEdges(value: js.Array[Double]): Self = StObject.set(x, "internalEdges", value.asInstanceOf[js.Any])
+    inline def setInternalEdges(value: js.Array[Double]): Self = StObject.set(x, "internalEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalEdgesUndefined: Self = StObject.set(x, "internalEdges", js.undefined)
+    inline def setInternalEdgesUndefined: Self = StObject.set(x, "internalEdges", js.undefined)
     
-    @scala.inline
-    def setInternalEdgesVarargs(value: Double*): Self = StObject.set(x, "internalEdges", js.Array(value :_*))
+    inline def setInternalEdgesVarargs(value: Double*): Self = StObject.set(x, "internalEdges", js.Array(value :_*))
     
-    @scala.inline
-    def setLoopBreaks(value: js.Array[Double]): Self = StObject.set(x, "loopBreaks", value.asInstanceOf[js.Any])
+    inline def setLoopBreaks(value: js.Array[Double]): Self = StObject.set(x, "loopBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopBreaksUndefined: Self = StObject.set(x, "loopBreaks", js.undefined)
+    inline def setLoopBreaksUndefined: Self = StObject.set(x, "loopBreaks", js.undefined)
     
-    @scala.inline
-    def setLoopBreaksVarargs(value: Double*): Self = StObject.set(x, "loopBreaks", js.Array(value :_*))
+    inline def setLoopBreaksVarargs(value: Double*): Self = StObject.set(x, "loopBreaks", js.Array(value :_*))
     
-    @scala.inline
-    def setTriangleIndices(value: js.Array[Double]): Self = StObject.set(x, "triangleIndices", value.asInstanceOf[js.Any])
+    inline def setTriangleIndices(value: js.Array[Double]): Self = StObject.set(x, "triangleIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleIndicesUndefined: Self = StObject.set(x, "triangleIndices", js.undefined)
+    inline def setTriangleIndicesUndefined: Self = StObject.set(x, "triangleIndices", js.undefined)
     
-    @scala.inline
-    def setTriangleIndicesVarargs(value: Double*): Self = StObject.set(x, "triangleIndices", js.Array(value :_*))
+    inline def setTriangleIndicesVarargs(value: Double*): Self = StObject.set(x, "triangleIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVertexOffsets(value: Vertex2DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
+    inline def setVertexOffsets(value: Vertex2DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
+    inline def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
     
-    @scala.inline
-    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
+    inline def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
+    inline def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
   }
 }

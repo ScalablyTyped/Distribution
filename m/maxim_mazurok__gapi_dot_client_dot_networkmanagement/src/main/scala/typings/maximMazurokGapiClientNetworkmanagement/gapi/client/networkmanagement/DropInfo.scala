@@ -14,25 +14,19 @@ trait DropInfo extends StObject {
 }
 object DropInfo {
   
-  @scala.inline
-  def apply(): DropInfo = {
+  inline def apply(): DropInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropInfo]
   }
   
-  @scala.inline
-  implicit class DropInfoMutableBuilder[Self <: DropInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DropInfo](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
+    inline def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
   }
 }

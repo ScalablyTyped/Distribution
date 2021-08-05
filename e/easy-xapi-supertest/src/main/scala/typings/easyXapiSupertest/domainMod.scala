@@ -29,6 +29,5 @@ object domainMod {
     def run(fn: js.Function): Unit = js.native
   }
   
-  @scala.inline
-  def create(): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Domain]
+  inline def create(): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Domain]
 }

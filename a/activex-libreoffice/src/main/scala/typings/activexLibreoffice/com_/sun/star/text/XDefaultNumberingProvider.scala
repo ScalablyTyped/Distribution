@@ -40,8 +40,7 @@ trait XDefaultNumberingProvider
 }
 object XDefaultNumberingProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDefaultContinuousNumberingLevels: Locale => SafeArray[PropertyValues],
     getDefaultOutlineNumberings: Locale => SafeArray[XIndexAccess],
@@ -52,13 +51,10 @@ object XDefaultNumberingProvider {
     __obj.asInstanceOf[XDefaultNumberingProvider]
   }
   
-  @scala.inline
-  implicit class XDefaultNumberingProviderMutableBuilder[Self <: XDefaultNumberingProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XDefaultNumberingProvider](x: Self) {
     
-    @scala.inline
-    def setGetDefaultContinuousNumberingLevels(value: Locale => SafeArray[PropertyValues]): Self = StObject.set(x, "getDefaultContinuousNumberingLevels", js.Any.fromFunction1(value))
+    inline def setGetDefaultContinuousNumberingLevels(value: Locale => SafeArray[PropertyValues]): Self = StObject.set(x, "getDefaultContinuousNumberingLevels", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultOutlineNumberings(value: Locale => SafeArray[XIndexAccess]): Self = StObject.set(x, "getDefaultOutlineNumberings", js.Any.fromFunction1(value))
+    inline def setGetDefaultOutlineNumberings(value: Locale => SafeArray[XIndexAccess]): Self = StObject.set(x, "getDefaultOutlineNumberings", js.Any.fromFunction1(value))
   }
 }

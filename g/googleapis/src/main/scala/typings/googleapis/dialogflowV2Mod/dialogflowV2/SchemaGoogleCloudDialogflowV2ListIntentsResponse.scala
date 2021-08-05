@@ -23,28 +23,21 @@ trait SchemaGoogleCloudDialogflowV2ListIntentsResponse extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2ListIntentsResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2ListIntentsResponse = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2ListIntentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2ListIntentsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2ListIntentsResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2ListIntentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2ListIntentsResponse](x: Self) {
     
-    @scala.inline
-    def setIntents(value: js.Array[SchemaGoogleCloudDialogflowV2Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: js.Array[SchemaGoogleCloudDialogflowV2Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+    inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    @scala.inline
-    def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

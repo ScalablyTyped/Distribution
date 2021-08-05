@@ -14,19 +14,15 @@ trait PredictionSubstring extends StObject {
 }
 object PredictionSubstring {
   
-  @scala.inline
-  def apply(length: Double, offset: Double): PredictionSubstring = {
+  inline def apply(length: Double, offset: Double): PredictionSubstring = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredictionSubstring]
   }
   
-  @scala.inline
-  implicit class PredictionSubstringMutableBuilder[Self <: PredictionSubstring] (val x: Self) extends AnyVal {
+  extension [Self <: PredictionSubstring](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

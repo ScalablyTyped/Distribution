@@ -13,19 +13,15 @@ trait MeshStatus extends StObject {
 }
 object MeshStatus {
   
-  @scala.inline
-  def apply(): MeshStatus = {
+  inline def apply(): MeshStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshStatus]
   }
   
-  @scala.inline
-  implicit class MeshStatusMutableBuilder[Self <: MeshStatus] (val x: Self) extends AnyVal {
+  extension [Self <: MeshStatus](x: Self) {
     
-    @scala.inline
-    def setStatus(value: MeshStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MeshStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

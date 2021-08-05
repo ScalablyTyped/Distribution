@@ -13,22 +13,17 @@ trait Stages extends StObject {
 }
 object Stages {
   
-  @scala.inline
-  def apply(): Stages = {
+  inline def apply(): Stages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Stages]
   }
   
-  @scala.inline
-  implicit class StagesMutableBuilder[Self <: Stages] (val x: Self) extends AnyVal {
+  extension [Self <: Stages](x: Self) {
     
-    @scala.inline
-    def setItem(value: ListOfStage): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ListOfStage): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setItemVarargs(value: Stage*): Self = StObject.set(x, "item", js.Array(value :_*))
+    inline def setItemVarargs(value: Stage*): Self = StObject.set(x, "item", js.Array(value :_*))
   }
 }

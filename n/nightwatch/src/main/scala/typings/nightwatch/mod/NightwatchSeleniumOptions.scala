@@ -56,8 +56,7 @@ trait NightwatchSeleniumOptions extends StObject {
 }
 object NightwatchSeleniumOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cli_args: js.Any,
     host: String,
     log_path: String | Boolean,
@@ -70,28 +69,20 @@ object NightwatchSeleniumOptions {
     __obj.asInstanceOf[NightwatchSeleniumOptions]
   }
   
-  @scala.inline
-  implicit class NightwatchSeleniumOptionsMutableBuilder[Self <: NightwatchSeleniumOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchSeleniumOptions](x: Self) {
     
-    @scala.inline
-    def setCli_args(value: js.Any): Self = StObject.set(x, "cli_args", value.asInstanceOf[js.Any])
+    inline def setCli_args(value: js.Any): Self = StObject.set(x, "cli_args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_path(value: String | Boolean): Self = StObject.set(x, "log_path", value.asInstanceOf[js.Any])
+    inline def setLog_path(value: String | Boolean): Self = StObject.set(x, "log_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer_path(value: String): Self = StObject.set(x, "server_path", value.asInstanceOf[js.Any])
+    inline def setServer_path(value: String): Self = StObject.set(x, "server_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_process(value: Boolean): Self = StObject.set(x, "start_process", value.asInstanceOf[js.Any])
+    inline def setStart_process(value: Boolean): Self = StObject.set(x, "start_process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_session(value: Boolean): Self = StObject.set(x, "start_session", value.asInstanceOf[js.Any])
+    inline def setStart_session(value: Boolean): Self = StObject.set(x, "start_session", value.asInstanceOf[js.Any])
   }
 }

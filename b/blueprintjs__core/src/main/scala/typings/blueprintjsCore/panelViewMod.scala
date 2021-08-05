@@ -15,11 +15,11 @@ object panelViewMod {
     def this(props: IPanelViewProps) = this()
     def this(props: IPanelViewProps, context: js.Any) = this()
     
-    var handleClose: js.Any = js.native
+    /* private */ var handleClose: js.Any = js.native
     
-    var maybeRenderBack: js.Any = js.native
+    /* private */ var maybeRenderBack: js.Any = js.native
     
-    var maybeRenderHeader: js.Any = js.native
+    /* private */ var maybeRenderHeader: js.Any = js.native
   }
   
   trait IPanelViewProps extends StObject {
@@ -47,8 +47,7 @@ object panelViewMod {
   }
   object IPanelViewProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onClose: IPanel[js.Any] => Unit,
       onOpen: IPanel[js.Any] => Unit,
       panel: IPanel[js.Object],
@@ -58,26 +57,19 @@ object panelViewMod {
       __obj.asInstanceOf[IPanelViewProps]
     }
     
-    @scala.inline
-    implicit class IPanelViewPropsMutableBuilder[Self <: IPanelViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPanelViewProps](x: Self) {
       
-      @scala.inline
-      def setOnClose(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpen(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setOnOpen(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPanel(value: IPanel[js.Object]): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: IPanel[js.Object]): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousPanel(value: IPanel[js.Object]): Self = StObject.set(x, "previousPanel", value.asInstanceOf[js.Any])
+      inline def setPreviousPanel(value: IPanel[js.Object]): Self = StObject.set(x, "previousPanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousPanelUndefined: Self = StObject.set(x, "previousPanel", js.undefined)
+      inline def setPreviousPanelUndefined: Self = StObject.set(x, "previousPanel", js.undefined)
       
-      @scala.inline
-      def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
+      inline def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
     }
   }
 }

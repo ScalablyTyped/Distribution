@@ -18,25 +18,19 @@ trait CustomAmi extends StObject {
 }
 object CustomAmi {
   
-  @scala.inline
-  def apply(): CustomAmi = {
+  inline def apply(): CustomAmi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomAmi]
   }
   
-  @scala.inline
-  implicit class CustomAmiMutableBuilder[Self <: CustomAmi] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAmi](x: Self) {
     
-    @scala.inline
-    def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
-    @scala.inline
-    def setVirtualizationType(value: VirtualizationType): Self = StObject.set(x, "VirtualizationType", value.asInstanceOf[js.Any])
+    inline def setVirtualizationType(value: VirtualizationType): Self = StObject.set(x, "VirtualizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualizationTypeUndefined: Self = StObject.set(x, "VirtualizationType", js.undefined)
+    inline def setVirtualizationTypeUndefined: Self = StObject.set(x, "VirtualizationType", js.undefined)
   }
 }

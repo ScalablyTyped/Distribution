@@ -13,28 +13,23 @@ object middlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyMiddleware(
+  inline def applyMiddleware(
     argv: js.Promise[Arguments],
     yargs: YargsInstance,
     middlewares: js.Array[Middleware],
     beforeValidation: Boolean
   ): Arguments | js.Promise[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(argv.asInstanceOf[js.Any], yargs.asInstanceOf[js.Any], middlewares.asInstanceOf[js.Any], beforeValidation.asInstanceOf[js.Any])).asInstanceOf[Arguments | js.Promise[Arguments]]
-  @scala.inline
-  def applyMiddleware(
+  inline def applyMiddleware(
     argv: Arguments,
     yargs: YargsInstance,
     middlewares: js.Array[Middleware],
     beforeValidation: Boolean
   ): Arguments | js.Promise[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMiddleware")(argv.asInstanceOf[js.Any], yargs.asInstanceOf[js.Any], middlewares.asInstanceOf[js.Any], beforeValidation.asInstanceOf[js.Any])).asInstanceOf[Arguments | js.Promise[Arguments]]
   
-  @scala.inline
-  def commandMiddlewareFactory(): js.Array[Middleware] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandMiddlewareFactory")().asInstanceOf[js.Array[Middleware]]
-  @scala.inline
-  def commandMiddlewareFactory(commandMiddleware: js.Array[MiddlewareCallback]): js.Array[Middleware] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandMiddlewareFactory")(commandMiddleware.asInstanceOf[js.Any]).asInstanceOf[js.Array[Middleware]]
+  inline def commandMiddlewareFactory(): js.Array[Middleware] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandMiddlewareFactory")().asInstanceOf[js.Array[Middleware]]
+  inline def commandMiddlewareFactory(commandMiddleware: js.Array[MiddlewareCallback]): js.Array[Middleware] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandMiddlewareFactory")(commandMiddleware.asInstanceOf[js.Any]).asInstanceOf[js.Array[Middleware]]
   
-  @scala.inline
-  def globalMiddlewareFactory[T](globalMiddleware: js.Array[Middleware], context: T): js.Function2[
+  inline def globalMiddlewareFactory[T](globalMiddleware: js.Array[Middleware], context: T): js.Function2[
     /* callback */ MiddlewareCallback | js.Array[MiddlewareCallback], 
     /* applyBeforeValidation */ js.UndefOr[Boolean], 
     T

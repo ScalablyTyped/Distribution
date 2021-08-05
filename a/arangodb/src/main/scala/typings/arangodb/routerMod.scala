@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object routerMod {
   
-  @scala.inline
-  def apply(): Router = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Router]
+  inline def apply(): Router = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Router]
   
   @JSImport("@arangodb/foxx/router", JSImport.Namespace)
   @js.native

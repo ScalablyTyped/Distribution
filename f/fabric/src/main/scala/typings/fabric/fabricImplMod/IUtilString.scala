@@ -36,8 +36,7 @@ trait IUtilString extends StObject {
 }
 object IUtilString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     camelize: String => String,
     capitalize: (String, Boolean) => String,
     escapeXml: String => String,
@@ -47,19 +46,14 @@ object IUtilString {
     __obj.asInstanceOf[IUtilString]
   }
   
-  @scala.inline
-  implicit class IUtilStringMutableBuilder[Self <: IUtilString] (val x: Self) extends AnyVal {
+  extension [Self <: IUtilString](x: Self) {
     
-    @scala.inline
-    def setCamelize(value: String => String): Self = StObject.set(x, "camelize", js.Any.fromFunction1(value))
+    inline def setCamelize(value: String => String): Self = StObject.set(x, "camelize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCapitalize(value: (String, Boolean) => String): Self = StObject.set(x, "capitalize", js.Any.fromFunction2(value))
+    inline def setCapitalize(value: (String, Boolean) => String): Self = StObject.set(x, "capitalize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEscapeXml(value: String => String): Self = StObject.set(x, "escapeXml", js.Any.fromFunction1(value))
+    inline def setEscapeXml(value: String => String): Self = StObject.set(x, "escapeXml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGraphemeSplit(value: String => js.Array[String]): Self = StObject.set(x, "graphemeSplit", js.Any.fromFunction1(value))
+    inline def setGraphemeSplit(value: String => js.Array[String]): Self = StObject.set(x, "graphemeSplit", js.Any.fromFunction1(value))
   }
 }

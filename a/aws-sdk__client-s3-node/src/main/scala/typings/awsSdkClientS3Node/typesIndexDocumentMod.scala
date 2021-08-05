@@ -15,17 +15,14 @@ object typesIndexDocumentMod {
   }
   object IndexDocument {
     
-    @scala.inline
-    def apply(Suffix: String): IndexDocument = {
+    inline def apply(Suffix: String): IndexDocument = {
       val __obj = js.Dynamic.literal(Suffix = Suffix.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndexDocument]
     }
     
-    @scala.inline
-    implicit class IndexDocumentMutableBuilder[Self <: IndexDocument] (val x: Self) extends AnyVal {
+    extension [Self <: IndexDocument](x: Self) {
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
     }
   }
   

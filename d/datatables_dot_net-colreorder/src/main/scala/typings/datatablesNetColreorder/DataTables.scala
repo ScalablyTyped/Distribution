@@ -13,17 +13,14 @@ object DataTables {
   }
   object Api {
     
-    @scala.inline
-    def apply(colReorder: Move): Api = {
+    inline def apply(colReorder: Move): Api = {
       val __obj = js.Dynamic.literal(colReorder = colReorder.asInstanceOf[js.Any])
       __obj.asInstanceOf[Api]
     }
     
-    @scala.inline
-    implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+    extension [Self <: Api](x: Self) {
       
-      @scala.inline
-      def setColReorder(value: Move): Self = StObject.set(x, "colReorder", value.asInstanceOf[js.Any])
+      inline def setColReorder(value: Move): Self = StObject.set(x, "colReorder", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,44 +53,32 @@ object DataTables {
   }
   object ColReorderSettings {
     
-    @scala.inline
-    def apply(reorderCallback: () => Unit): ColReorderSettings = {
+    inline def apply(reorderCallback: () => Unit): ColReorderSettings = {
       val __obj = js.Dynamic.literal(reorderCallback = js.Any.fromFunction0(reorderCallback))
       __obj.asInstanceOf[ColReorderSettings]
     }
     
-    @scala.inline
-    implicit class ColReorderSettingsMutableBuilder[Self <: ColReorderSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ColReorderSettings](x: Self) {
       
-      @scala.inline
-      def setFixedColumnsLeft(value: Double): Self = StObject.set(x, "fixedColumnsLeft", value.asInstanceOf[js.Any])
+      inline def setFixedColumnsLeft(value: Double): Self = StObject.set(x, "fixedColumnsLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedColumnsLeftUndefined: Self = StObject.set(x, "fixedColumnsLeft", js.undefined)
+      inline def setFixedColumnsLeftUndefined: Self = StObject.set(x, "fixedColumnsLeft", js.undefined)
       
-      @scala.inline
-      def setFixedColumnsRight(value: Double): Self = StObject.set(x, "fixedColumnsRight", value.asInstanceOf[js.Any])
+      inline def setFixedColumnsRight(value: Double): Self = StObject.set(x, "fixedColumnsRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedColumnsRightUndefined: Self = StObject.set(x, "fixedColumnsRight", js.undefined)
+      inline def setFixedColumnsRightUndefined: Self = StObject.set(x, "fixedColumnsRight", js.undefined)
       
-      @scala.inline
-      def setOrder(value: js.Array[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: js.Array[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
       
-      @scala.inline
-      def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
+      inline def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
+      inline def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
       
-      @scala.inline
-      def setReorderCallback(value: () => Unit): Self = StObject.set(x, "reorderCallback", js.Any.fromFunction0(value))
+      inline def setReorderCallback(value: () => Unit): Self = StObject.set(x, "reorderCallback", js.Any.fromFunction0(value))
     }
   }
   
@@ -106,20 +91,16 @@ object DataTables {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setColReorder(value: Boolean | ColReorderSettings): Self = StObject.set(x, "colReorder", value.asInstanceOf[js.Any])
+      inline def setColReorder(value: Boolean | ColReorderSettings): Self = StObject.set(x, "colReorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColReorderUndefined: Self = StObject.set(x, "colReorder", js.undefined)
+      inline def setColReorderUndefined: Self = StObject.set(x, "colReorder", js.undefined)
     }
   }
 }

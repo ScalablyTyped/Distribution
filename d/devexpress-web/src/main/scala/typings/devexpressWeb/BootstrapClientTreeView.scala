@@ -19,8 +19,7 @@ trait BootstrapClientTreeView
 }
 object BootstrapClientTreeView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTreeView]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTreeView]],
@@ -57,10 +56,8 @@ object BootstrapClientTreeView {
     __obj.asInstanceOf[BootstrapClientTreeView]
   }
   
-  @scala.inline
-  implicit class BootstrapClientTreeViewMutableBuilder[Self <: BootstrapClientTreeView] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientTreeView](x: Self) {
     
-    @scala.inline
-    def setSetSelectedNode(value: BootstrapClientTreeViewNode => Unit): Self = StObject.set(x, "SetSelectedNode", js.Any.fromFunction1(value))
+    inline def setSetSelectedNode(value: BootstrapClientTreeViewNode => Unit): Self = StObject.set(x, "SetSelectedNode", js.Any.fromFunction1(value))
   }
 }

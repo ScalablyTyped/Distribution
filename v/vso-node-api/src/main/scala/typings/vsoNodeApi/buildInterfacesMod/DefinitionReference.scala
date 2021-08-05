@@ -60,8 +60,7 @@ trait DefinitionReference extends StObject {
 }
 object DefinitionReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdDate: Date,
     id: Double,
     name: String,
@@ -78,37 +77,26 @@ object DefinitionReference {
     __obj.asInstanceOf[DefinitionReference]
   }
   
-  @scala.inline
-  implicit class DefinitionReferenceMutableBuilder[Self <: DefinitionReference] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionReference](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueStatus(value: DefinitionQueueStatus): Self = StObject.set(x, "queueStatus", value.asInstanceOf[js.Any])
+    inline def setQueueStatus(value: DefinitionQueueStatus): Self = StObject.set(x, "queueStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DefinitionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DefinitionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

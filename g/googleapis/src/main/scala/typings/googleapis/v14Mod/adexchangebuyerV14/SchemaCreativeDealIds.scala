@@ -22,28 +22,21 @@ trait SchemaCreativeDealIds extends StObject {
 }
 object SchemaCreativeDealIds {
   
-  @scala.inline
-  def apply(): SchemaCreativeDealIds = {
+  inline def apply(): SchemaCreativeDealIds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreativeDealIds]
   }
   
-  @scala.inline
-  implicit class SchemaCreativeDealIdsMutableBuilder[Self <: SchemaCreativeDealIds] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreativeDealIds](x: Self) {
     
-    @scala.inline
-    def setDealStatuses(value: js.Array[ArcStatus]): Self = StObject.set(x, "dealStatuses", value.asInstanceOf[js.Any])
+    inline def setDealStatuses(value: js.Array[ArcStatus]): Self = StObject.set(x, "dealStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealStatusesUndefined: Self = StObject.set(x, "dealStatuses", js.undefined)
+    inline def setDealStatusesUndefined: Self = StObject.set(x, "dealStatuses", js.undefined)
     
-    @scala.inline
-    def setDealStatusesVarargs(value: ArcStatus*): Self = StObject.set(x, "dealStatuses", js.Array(value :_*))
+    inline def setDealStatusesVarargs(value: ArcStatus*): Self = StObject.set(x, "dealStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

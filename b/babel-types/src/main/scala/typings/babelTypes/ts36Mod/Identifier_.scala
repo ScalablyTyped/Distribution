@@ -21,26 +21,20 @@ trait Identifier_
 }
 object Identifier_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, name: String, start: Double): Identifier_ = {
+  inline def apply(end: Double, loc: SourceLocation, name: String, start: Double): Identifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[Identifier_]
   }
   
-  @scala.inline
-  implicit class Identifier_MutableBuilder[Self <: Identifier_] (val x: Self) extends AnyVal {
+  extension [Self <: Identifier_](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
   }
 }

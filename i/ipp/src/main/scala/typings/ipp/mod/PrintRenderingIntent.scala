@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintRenderingIntent extends StObject
 object PrintRenderingIntent {
   
-  @scala.inline
-  def absolute: typings.ipp.ippStrings.absolute = "absolute".asInstanceOf[typings.ipp.ippStrings.absolute]
+  inline def absolute: typings.ipp.ippStrings.absolute = "absolute".asInstanceOf[typings.ipp.ippStrings.absolute]
   
-  @scala.inline
-  def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
+  inline def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
   
-  @scala.inline
-  def perceptual: typings.ipp.ippStrings.perceptual = "perceptual".asInstanceOf[typings.ipp.ippStrings.perceptual]
+  inline def perceptual: typings.ipp.ippStrings.perceptual = "perceptual".asInstanceOf[typings.ipp.ippStrings.perceptual]
   
-  @scala.inline
-  def relative: typings.ipp.ippStrings.relative = "relative".asInstanceOf[typings.ipp.ippStrings.relative]
+  inline def relative: typings.ipp.ippStrings.relative = "relative".asInstanceOf[typings.ipp.ippStrings.relative]
   
-  @scala.inline
-  def `relative-bpc`: typings.ipp.ippStrings.`relative-bpc` = "relative-bpc".asInstanceOf[typings.ipp.ippStrings.`relative-bpc`]
+  inline def `relative-bpc`: typings.ipp.ippStrings.`relative-bpc` = "relative-bpc".asInstanceOf[typings.ipp.ippStrings.`relative-bpc`]
   
-  @scala.inline
-  def saturation: typings.ipp.ippStrings.saturation = "saturation".asInstanceOf[typings.ipp.ippStrings.saturation]
+  inline def saturation: typings.ipp.ippStrings.saturation = "saturation".asInstanceOf[typings.ipp.ippStrings.saturation]
 }

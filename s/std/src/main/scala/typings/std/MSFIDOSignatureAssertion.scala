@@ -12,17 +12,14 @@ trait MSFIDOSignatureAssertion
 }
 object MSFIDOSignatureAssertion {
   
-  @scala.inline
-  def apply(id: java.lang.String, signature: MSFIDOSignature, `type`: MSCredentialType): MSFIDOSignatureAssertion = {
+  inline def apply(id: java.lang.String, signature: MSFIDOSignature, `type`: MSCredentialType): MSFIDOSignatureAssertion = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSFIDOSignatureAssertion]
   }
   
-  @scala.inline
-  implicit class MSFIDOSignatureAssertionMutableBuilder[Self <: MSFIDOSignatureAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: MSFIDOSignatureAssertion](x: Self) {
     
-    @scala.inline
-    def setSignature(value: MSFIDOSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: MSFIDOSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait Baseline extends StObject {
 }
 object Baseline {
   
-  @scala.inline
-  def apply(): Baseline = {
+  inline def apply(): Baseline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Baseline]
   }
   
-  @scala.inline
-  implicit class BaselineMutableBuilder[Self <: Baseline] (val x: Self) extends AnyVal {
+  extension [Self <: Baseline](x: Self) {
     
-    @scala.inline
-    def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+    inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
     
-    @scala.inline
-    def setMinSpeed(value: Double): Self = StObject.set(x, "minSpeed", value.asInstanceOf[js.Any])
+    inline def setMinSpeed(value: Double): Self = StObject.set(x, "minSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSpeedUndefined: Self = StObject.set(x, "minSpeed", js.undefined)
+    inline def setMinSpeedUndefined: Self = StObject.set(x, "minSpeed", js.undefined)
   }
 }

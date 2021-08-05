@@ -32,22 +32,17 @@ trait KeyEvent
 }
 object KeyEvent {
   
-  @scala.inline
-  def apply(KeyChar: String, KeyCode: Double, KeyFunc: Double, Modifiers: Double, Source: XInterface): KeyEvent = {
+  inline def apply(KeyChar: String, KeyCode: Double, KeyFunc: Double, Modifiers: Double, Source: XInterface): KeyEvent = {
     val __obj = js.Dynamic.literal(KeyChar = KeyChar.asInstanceOf[js.Any], KeyCode = KeyCode.asInstanceOf[js.Any], KeyFunc = KeyFunc.asInstanceOf[js.Any], Modifiers = Modifiers.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyEvent]
   }
   
-  @scala.inline
-  implicit class KeyEventMutableBuilder[Self <: KeyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyEvent](x: Self) {
     
-    @scala.inline
-    def setKeyChar(value: String): Self = StObject.set(x, "KeyChar", value.asInstanceOf[js.Any])
+    inline def setKeyChar(value: String): Self = StObject.set(x, "KeyChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
+    inline def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyFunc(value: Double): Self = StObject.set(x, "KeyFunc", value.asInstanceOf[js.Any])
+    inline def setKeyFunc(value: Double): Self = StObject.set(x, "KeyFunc", value.asInstanceOf[js.Any])
   }
 }

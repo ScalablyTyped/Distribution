@@ -14,25 +14,19 @@ trait ManagedInstanceInstanceHealth extends StObject {
 }
 object ManagedInstanceInstanceHealth {
   
-  @scala.inline
-  def apply(): ManagedInstanceInstanceHealth = {
+  inline def apply(): ManagedInstanceInstanceHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedInstanceInstanceHealth]
   }
   
-  @scala.inline
-  implicit class ManagedInstanceInstanceHealthMutableBuilder[Self <: ManagedInstanceInstanceHealth] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedInstanceInstanceHealth](x: Self) {
     
-    @scala.inline
-    def setDetailedHealthState(value: String): Self = StObject.set(x, "detailedHealthState", value.asInstanceOf[js.Any])
+    inline def setDetailedHealthState(value: String): Self = StObject.set(x, "detailedHealthState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedHealthStateUndefined: Self = StObject.set(x, "detailedHealthState", js.undefined)
+    inline def setDetailedHealthStateUndefined: Self = StObject.set(x, "detailedHealthState", js.undefined)
     
-    @scala.inline
-    def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
   }
 }

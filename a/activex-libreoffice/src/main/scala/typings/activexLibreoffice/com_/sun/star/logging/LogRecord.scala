@@ -49,8 +49,7 @@ trait LogRecord extends StObject {
 }
 object LogRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Level: Double,
     LogTime: DateTime,
     LoggerName: String,
@@ -64,31 +63,22 @@ object LogRecord {
     __obj.asInstanceOf[LogRecord]
   }
   
-  @scala.inline
-  implicit class LogRecordMutableBuilder[Self <: LogRecord] (val x: Self) extends AnyVal {
+  extension [Self <: LogRecord](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTime(value: DateTime): Self = StObject.set(x, "LogTime", value.asInstanceOf[js.Any])
+    inline def setLogTime(value: DateTime): Self = StObject.set(x, "LogTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerName(value: String): Self = StObject.set(x, "LoggerName", value.asInstanceOf[js.Any])
+    inline def setLoggerName(value: String): Self = StObject.set(x, "LoggerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceClassName(value: String): Self = StObject.set(x, "SourceClassName", value.asInstanceOf[js.Any])
+    inline def setSourceClassName(value: String): Self = StObject.set(x, "SourceClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMethodName(value: String): Self = StObject.set(x, "SourceMethodName", value.asInstanceOf[js.Any])
+    inline def setSourceMethodName(value: String): Self = StObject.set(x, "SourceMethodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadID(value: String): Self = StObject.set(x, "ThreadID", value.asInstanceOf[js.Any])
+    inline def setThreadID(value: String): Self = StObject.set(x, "ThreadID", value.asInstanceOf[js.Any])
   }
 }

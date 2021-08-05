@@ -28,37 +28,27 @@ trait MeetingRoomConfiguration extends StObject {
 }
 object MeetingRoomConfiguration {
   
-  @scala.inline
-  def apply(): MeetingRoomConfiguration = {
+  inline def apply(): MeetingRoomConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeetingRoomConfiguration]
   }
   
-  @scala.inline
-  implicit class MeetingRoomConfigurationMutableBuilder[Self <: MeetingRoomConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MeetingRoomConfiguration](x: Self) {
     
-    @scala.inline
-    def setEndOfMeetingReminder(value: EndOfMeetingReminder): Self = StObject.set(x, "EndOfMeetingReminder", value.asInstanceOf[js.Any])
+    inline def setEndOfMeetingReminder(value: EndOfMeetingReminder): Self = StObject.set(x, "EndOfMeetingReminder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfMeetingReminderUndefined: Self = StObject.set(x, "EndOfMeetingReminder", js.undefined)
+    inline def setEndOfMeetingReminderUndefined: Self = StObject.set(x, "EndOfMeetingReminder", js.undefined)
     
-    @scala.inline
-    def setInstantBooking(value: InstantBooking): Self = StObject.set(x, "InstantBooking", value.asInstanceOf[js.Any])
+    inline def setInstantBooking(value: InstantBooking): Self = StObject.set(x, "InstantBooking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstantBookingUndefined: Self = StObject.set(x, "InstantBooking", js.undefined)
+    inline def setInstantBookingUndefined: Self = StObject.set(x, "InstantBooking", js.undefined)
     
-    @scala.inline
-    def setRequireCheckIn(value: RequireCheckIn): Self = StObject.set(x, "RequireCheckIn", value.asInstanceOf[js.Any])
+    inline def setRequireCheckIn(value: RequireCheckIn): Self = StObject.set(x, "RequireCheckIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireCheckInUndefined: Self = StObject.set(x, "RequireCheckIn", js.undefined)
+    inline def setRequireCheckInUndefined: Self = StObject.set(x, "RequireCheckIn", js.undefined)
     
-    @scala.inline
-    def setRoomUtilizationMetricsEnabled(value: Boolean): Self = StObject.set(x, "RoomUtilizationMetricsEnabled", value.asInstanceOf[js.Any])
+    inline def setRoomUtilizationMetricsEnabled(value: Boolean): Self = StObject.set(x, "RoomUtilizationMetricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomUtilizationMetricsEnabledUndefined: Self = StObject.set(x, "RoomUtilizationMetricsEnabled", js.undefined)
+    inline def setRoomUtilizationMetricsEnabledUndefined: Self = StObject.set(x, "RoomUtilizationMetricsEnabled", js.undefined)
   }
 }

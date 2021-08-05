@@ -19,19 +19,15 @@ trait CustomDocumentOpenContext extends StObject {
 }
 object CustomDocumentOpenContext {
   
-  @scala.inline
-  def apply(): CustomDocumentOpenContext = {
+  inline def apply(): CustomDocumentOpenContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomDocumentOpenContext]
   }
   
-  @scala.inline
-  implicit class CustomDocumentOpenContextMutableBuilder[Self <: CustomDocumentOpenContext] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDocumentOpenContext](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupIdUndefined: Self = StObject.set(x, "backupId", js.undefined)
+    inline def setBackupIdUndefined: Self = StObject.set(x, "backupId", js.undefined)
   }
 }

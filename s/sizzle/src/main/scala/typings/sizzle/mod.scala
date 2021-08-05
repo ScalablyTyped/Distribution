@@ -49,8 +49,7 @@ object mod extends Shortcut {
   }
   object Selectors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attrHandle: AttrHandleFunctions,
       cacheLength: Double,
       createPseudo: CreatePseudoFunction => PseudoFunction,
@@ -95,35 +94,25 @@ object mod extends Shortcut {
     
     type PseudoFunctions = StringDictionary[PseudoFunction]
     
-    @scala.inline
-    implicit class SelectorsMutableBuilder[Self <: Selectors] (val x: Self) extends AnyVal {
+    extension [Self <: Selectors](x: Self) {
       
-      @scala.inline
-      def setAttrHandle(value: AttrHandleFunctions): Self = StObject.set(x, "attrHandle", value.asInstanceOf[js.Any])
+      inline def setAttrHandle(value: AttrHandleFunctions): Self = StObject.set(x, "attrHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheLength(value: Double): Self = StObject.set(x, "cacheLength", value.asInstanceOf[js.Any])
+      inline def setCacheLength(value: Double): Self = StObject.set(x, "cacheLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatePseudo(value: CreatePseudoFunction => PseudoFunction): Self = StObject.set(x, "createPseudo", js.Any.fromFunction1(value))
+      inline def setCreatePseudo(value: CreatePseudoFunction => PseudoFunction): Self = StObject.set(x, "createPseudo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilter(value: FilterFunctions): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: FilterFunctions): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFind(value: FindFunctions): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+      inline def setFind(value: FindFunctions): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: Matches): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Matches): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreFilter(value: PreFilterFunctions): Self = StObject.set(x, "preFilter", value.asInstanceOf[js.Any])
+      inline def setPreFilter(value: PreFilterFunctions): Self = StObject.set(x, "preFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPseudos(value: PseudoFunctions): Self = StObject.set(x, "pseudos", value.asInstanceOf[js.Any])
+      inline def setPseudos(value: PseudoFunctions): Self = StObject.set(x, "pseudos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFilters(value: SetFilterFunctions): Self = StObject.set(x, "setFilters", value.asInstanceOf[js.Any])
+      inline def setSetFilters(value: SetFilterFunctions): Self = StObject.set(x, "setFilters", value.asInstanceOf[js.Any])
     }
     
     type SetFilterFunction = js.Function3[

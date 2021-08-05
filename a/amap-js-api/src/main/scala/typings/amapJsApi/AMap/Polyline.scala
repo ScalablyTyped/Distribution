@@ -94,8 +94,7 @@ object Polyline {
   }
   object GetOptionsResult {
     
-    @scala.inline
-    def apply[ExtraData](
+    inline def apply[ExtraData](
       borderWeight: Double,
       bubble: Boolean,
       clickable: Boolean,
@@ -121,41 +120,29 @@ object Polyline {
       __obj.asInstanceOf[GetOptionsResult[ExtraData]]
     }
     
-    @scala.inline
-    implicit class GetOptionsResultMutableBuilder[Self <: GetOptionsResult[?], ExtraData] (val x: Self & GetOptionsResult[ExtraData]) extends AnyVal {
+    extension [Self <: GetOptionsResult[?], ExtraData](x: Self & GetOptionsResult[ExtraData]) {
       
-      @scala.inline
-      def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
+      inline def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirColor(value: String): Self = StObject.set(x, "dirColor", value.asInstanceOf[js.Any])
+      inline def setDirColor(value: String): Self = StObject.set(x, "dirColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirImg(value: String): Self = StObject.set(x, "dirImg", value.asInstanceOf[js.Any])
+      inline def setDirImg(value: String): Self = StObject.set(x, "dirImg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+      inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
+      inline def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineCap(value: StrokeLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+      inline def setLineCap(value: StrokeLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineJoin(value: StrokeLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+      inline def setLineJoin(value: StrokeLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
+      inline def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,59 +188,42 @@ object Polyline {
   }
   object Options {
     
-    @scala.inline
-    def apply[ExtraData](): Options[ExtraData] = {
+    inline def apply[ExtraData](): Options[ExtraData] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
+    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
       
-      @scala.inline
-      def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
+      inline def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWeightUndefined: Self = StObject.set(x, "borderWeight", js.undefined)
+      inline def setBorderWeightUndefined: Self = StObject.set(x, "borderWeight", js.undefined)
       
-      @scala.inline
-      def setDirColor(value: String): Self = StObject.set(x, "dirColor", value.asInstanceOf[js.Any])
+      inline def setDirColor(value: String): Self = StObject.set(x, "dirColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirColorUndefined: Self = StObject.set(x, "dirColor", js.undefined)
+      inline def setDirColorUndefined: Self = StObject.set(x, "dirColor", js.undefined)
       
-      @scala.inline
-      def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+      inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+      inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
       
-      @scala.inline
-      def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
+      inline def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOutlineUndefined: Self = StObject.set(x, "isOutline", js.undefined)
+      inline def setIsOutlineUndefined: Self = StObject.set(x, "isOutline", js.undefined)
       
-      @scala.inline
-      def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+      inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
       
-      @scala.inline
-      def setPath(value: js.Array[LocationValue]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[LocationValue]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: LocationValue*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LocationValue*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
+      inline def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDirUndefined: Self = StObject.set(x, "showDir", js.undefined)
+      inline def setShowDirUndefined: Self = StObject.set(x, "showDir", js.undefined)
     }
   }
 }

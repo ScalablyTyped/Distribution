@@ -13,19 +13,15 @@ trait CreateContainerServiceRegistryLoginResult extends StObject {
 }
 object CreateContainerServiceRegistryLoginResult {
   
-  @scala.inline
-  def apply(): CreateContainerServiceRegistryLoginResult = {
+  inline def apply(): CreateContainerServiceRegistryLoginResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateContainerServiceRegistryLoginResult]
   }
   
-  @scala.inline
-  implicit class CreateContainerServiceRegistryLoginResultMutableBuilder[Self <: CreateContainerServiceRegistryLoginResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateContainerServiceRegistryLoginResult](x: Self) {
     
-    @scala.inline
-    def setRegistryLogin(value: ContainerServiceRegistryLogin): Self = StObject.set(x, "registryLogin", value.asInstanceOf[js.Any])
+    inline def setRegistryLogin(value: ContainerServiceRegistryLogin): Self = StObject.set(x, "registryLogin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryLoginUndefined: Self = StObject.set(x, "registryLogin", js.undefined)
+    inline def setRegistryLoginUndefined: Self = StObject.set(x, "registryLogin", js.undefined)
   }
 }

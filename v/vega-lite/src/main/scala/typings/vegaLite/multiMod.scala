@@ -20,6 +20,5 @@ object multiMod {
   @js.native
   val default: SelectionCompiler[multi] = js.native
   
-  @scala.inline
-  def singleOrMultiSignals(model: UnitModel, selCmpt: SelectionComponent[single | multi]): js.Array[On] = (^.asInstanceOf[js.Dynamic].applyDynamic("singleOrMultiSignals")(model.asInstanceOf[js.Any], selCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Array[On]]
+  inline def singleOrMultiSignals(model: UnitModel, selCmpt: SelectionComponent[single | multi]): js.Array[On] = (^.asInstanceOf[js.Dynamic].applyDynamic("singleOrMultiSignals")(model.asInstanceOf[js.Any], selCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Array[On]]
 }

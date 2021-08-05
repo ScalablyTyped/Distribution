@@ -23,16 +23,13 @@ trait DBASEConnectionProperties
 }
 object DBASEConnectionProperties {
   
-  @scala.inline
-  def apply(CharSet: String, ShowDeleted: Boolean, password: String, user: String): DBASEConnectionProperties = {
+  inline def apply(CharSet: String, ShowDeleted: Boolean, password: String, user: String): DBASEConnectionProperties = {
     val __obj = js.Dynamic.literal(CharSet = CharSet.asInstanceOf[js.Any], ShowDeleted = ShowDeleted.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBASEConnectionProperties]
   }
   
-  @scala.inline
-  implicit class DBASEConnectionPropertiesMutableBuilder[Self <: DBASEConnectionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DBASEConnectionProperties](x: Self) {
     
-    @scala.inline
-    def setShowDeleted(value: Boolean): Self = StObject.set(x, "ShowDeleted", value.asInstanceOf[js.Any])
+    inline def setShowDeleted(value: Boolean): Self = StObject.set(x, "ShowDeleted", value.asInstanceOf[js.Any])
   }
 }

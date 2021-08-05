@@ -11,19 +11,15 @@ trait UseLegacySql extends StObject {
 }
 object UseLegacySql {
   
-  @scala.inline
-  def apply(): UseLegacySql = {
+  inline def apply(): UseLegacySql = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseLegacySql]
   }
   
-  @scala.inline
-  implicit class UseLegacySqlMutableBuilder[Self <: UseLegacySql] (val x: Self) extends AnyVal {
+  extension [Self <: UseLegacySql](x: Self) {
     
-    @scala.inline
-    def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
+    inline def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
+    inline def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
   }
 }

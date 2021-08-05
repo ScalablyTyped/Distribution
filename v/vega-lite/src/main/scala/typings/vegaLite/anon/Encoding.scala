@@ -24,8 +24,7 @@ trait Encoding extends StObject {
 }
 object Encoding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size,
     order: Unit
   ): Encoding = {
@@ -33,15 +32,12 @@ object Encoding {
     __obj.asInstanceOf[Encoding]
   }
   
-  @scala.inline
-  implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+  extension [Self <: Encoding](x: Self) {
     
-    @scala.inline
-    def setEncoding(
+    inline def setEncoding(
       value: text | fill | stroke | color | shape | typings.vegaLite.vegaLiteStrings.x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
     ): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: Unit): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Unit): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

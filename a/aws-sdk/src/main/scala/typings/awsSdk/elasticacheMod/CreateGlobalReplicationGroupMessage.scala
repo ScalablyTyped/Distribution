@@ -23,25 +23,19 @@ trait CreateGlobalReplicationGroupMessage extends StObject {
 }
 object CreateGlobalReplicationGroupMessage {
   
-  @scala.inline
-  def apply(GlobalReplicationGroupIdSuffix: String, PrimaryReplicationGroupId: String): CreateGlobalReplicationGroupMessage = {
+  inline def apply(GlobalReplicationGroupIdSuffix: String, PrimaryReplicationGroupId: String): CreateGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(GlobalReplicationGroupIdSuffix = GlobalReplicationGroupIdSuffix.asInstanceOf[js.Any], PrimaryReplicationGroupId = PrimaryReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGlobalReplicationGroupMessage]
   }
   
-  @scala.inline
-  implicit class CreateGlobalReplicationGroupMessageMutableBuilder[Self <: CreateGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGlobalReplicationGroupMessage](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroupDescription(value: String): Self = StObject.set(x, "GlobalReplicationGroupDescription", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupDescription(value: String): Self = StObject.set(x, "GlobalReplicationGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupDescriptionUndefined: Self = StObject.set(x, "GlobalReplicationGroupDescription", js.undefined)
+    inline def setGlobalReplicationGroupDescriptionUndefined: Self = StObject.set(x, "GlobalReplicationGroupDescription", js.undefined)
     
-    @scala.inline
-    def setGlobalReplicationGroupIdSuffix(value: String): Self = StObject.set(x, "GlobalReplicationGroupIdSuffix", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupIdSuffix(value: String): Self = StObject.set(x, "GlobalReplicationGroupIdSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryReplicationGroupId(value: String): Self = StObject.set(x, "PrimaryReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setPrimaryReplicationGroupId(value: String): Self = StObject.set(x, "PrimaryReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

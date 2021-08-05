@@ -22,37 +22,27 @@ trait Handle extends StObject {
 }
 object Handle {
   
-  @scala.inline
-  def apply(): Handle = {
+  inline def apply(): Handle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Handle]
   }
   
-  @scala.inline
-  implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+  extension [Self <: Handle](x: Self) {
     
-    @scala.inline
-    def setBar(value: Width): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: Width): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
+    inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
-    @scala.inline
-    def setHandle(value: Bordertop): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Bordertop): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
-    @scala.inline
-    def `setOffset-x`(value: js.Any): Self = StObject.set(x, "offset-x", value.asInstanceOf[js.Any])
+    inline def `setOffset-x`(value: js.Any): Self = StObject.set(x, "offset-x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-xUndefined`: Self = StObject.set(x, "offset-x", js.undefined)
+    inline def `setOffset-xUndefined`: Self = StObject.set(x, "offset-x", js.undefined)
     
-    @scala.inline
-    def `setOffset-y`(value: js.Any): Self = StObject.set(x, "offset-y", value.asInstanceOf[js.Any])
+    inline def `setOffset-y`(value: js.Any): Self = StObject.set(x, "offset-y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOffset-yUndefined`: Self = StObject.set(x, "offset-y", js.undefined)
+    inline def `setOffset-yUndefined`: Self = StObject.set(x, "offset-y", js.undefined)
   }
 }

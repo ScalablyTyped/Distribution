@@ -20,14 +20,12 @@ object screenBufferHDMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def loadImage(
+  inline def loadImage(
     url: String,
     calback: js.Function2[/* error */ js.UndefOr[js.Any], /* image */ js.UndefOr[ScreenBufferHD], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadImage")(url.asInstanceOf[js.Any], calback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
-  @scala.inline
-  def loadImage(
+  inline def loadImage(
     url: String,
     options: `0`,
     callback: js.Function2[/* error */ js.Any, /* image */ ScreenBufferHD, Unit]
@@ -79,122 +77,84 @@ object screenBufferHDMod {
   }
   object Attributes {
     
-    @scala.inline
-    def apply(b: Double, bgB: Double, bgG: Double, bgR: Double, g: Double, r: Double): Attributes = {
+    inline def apply(b: Double, bgB: Double, bgG: Double, bgR: Double, g: Double, r: Double): Attributes = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], bgB = bgB.asInstanceOf[js.Any], bgG = bgG.asInstanceOf[js.Any], bgR = bgR.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attributes]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: Attributes](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+      inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgA(value: Double): Self = StObject.set(x, "bgA", value.asInstanceOf[js.Any])
+      inline def setBgA(value: Double): Self = StObject.set(x, "bgA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgAUndefined: Self = StObject.set(x, "bgA", js.undefined)
+      inline def setBgAUndefined: Self = StObject.set(x, "bgA", js.undefined)
       
-      @scala.inline
-      def setBgB(value: Double): Self = StObject.set(x, "bgB", value.asInstanceOf[js.Any])
+      inline def setBgB(value: Double): Self = StObject.set(x, "bgB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgDefaultColor(value: Boolean): Self = StObject.set(x, "bgDefaultColor", value.asInstanceOf[js.Any])
+      inline def setBgDefaultColor(value: Boolean): Self = StObject.set(x, "bgDefaultColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgDefaultColorUndefined: Self = StObject.set(x, "bgDefaultColor", js.undefined)
+      inline def setBgDefaultColorUndefined: Self = StObject.set(x, "bgDefaultColor", js.undefined)
       
-      @scala.inline
-      def setBgG(value: Double): Self = StObject.set(x, "bgG", value.asInstanceOf[js.Any])
+      inline def setBgG(value: Double): Self = StObject.set(x, "bgG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgR(value: Double): Self = StObject.set(x, "bgR", value.asInstanceOf[js.Any])
+      inline def setBgR(value: Double): Self = StObject.set(x, "bgR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlink(value: Boolean): Self = StObject.set(x, "blink", value.asInstanceOf[js.Any])
+      inline def setBlink(value: Boolean): Self = StObject.set(x, "blink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlinkUndefined: Self = StObject.set(x, "blink", js.undefined)
+      inline def setBlinkUndefined: Self = StObject.set(x, "blink", js.undefined)
       
-      @scala.inline
-      def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+      inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      @scala.inline
-      def setCharTransparency(value: Boolean): Self = StObject.set(x, "charTransparency", value.asInstanceOf[js.Any])
+      inline def setCharTransparency(value: Boolean): Self = StObject.set(x, "charTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharTransparencyUndefined: Self = StObject.set(x, "charTransparency", js.undefined)
+      inline def setCharTransparencyUndefined: Self = StObject.set(x, "charTransparency", js.undefined)
       
-      @scala.inline
-      def setDefaultColor(value: Boolean): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
+      inline def setDefaultColor(value: Boolean): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultColorUndefined: Self = StObject.set(x, "defaultColor", js.undefined)
+      inline def setDefaultColorUndefined: Self = StObject.set(x, "defaultColor", js.undefined)
       
-      @scala.inline
-      def setDim(value: Boolean): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+      inline def setDim(value: Boolean): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
+      inline def setDimUndefined: Self = StObject.set(x, "dim", js.undefined)
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrike(value: Boolean): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
+      inline def setStrike(value: Boolean): Self = StObject.set(x, "strike", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrikeUndefined: Self = StObject.set(x, "strike", js.undefined)
+      inline def setStrikeUndefined: Self = StObject.set(x, "strike", js.undefined)
       
-      @scala.inline
-      def setStyleTransparency(value: Boolean): Self = StObject.set(x, "styleTransparency", value.asInstanceOf[js.Any])
+      inline def setStyleTransparency(value: Boolean): Self = StObject.set(x, "styleTransparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleTransparencyUndefined: Self = StObject.set(x, "styleTransparency", js.undefined)
+      inline def setStyleTransparencyUndefined: Self = StObject.set(x, "styleTransparency", js.undefined)
       
-      @scala.inline
-      def setTransparency(value: Boolean): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+      inline def setTransparency(value: Boolean): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+      inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
       
-      @scala.inline
-      def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+      inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+      inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     }
   }
   
@@ -226,8 +186,7 @@ object screenBufferHDMod {
   }
   object BlendFn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hardLight: (/* src */ Double, /* dst */ Double) => Double,
       multiply: (/* src */ Double, /* dst */ Double) => Double,
       normal: (/* src */ Double, /* dst */ Double) => Double,
@@ -239,26 +198,19 @@ object screenBufferHDMod {
       __obj.asInstanceOf[BlendFn]
     }
     
-    @scala.inline
-    implicit class BlendFnMutableBuilder[Self <: BlendFn] (val x: Self) extends AnyVal {
+    extension [Self <: BlendFn](x: Self) {
       
-      @scala.inline
-      def setHardLight(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "hardLight", js.Any.fromFunction2(value))
+      inline def setHardLight(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "hardLight", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMultiply(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "multiply", js.Any.fromFunction2(value))
+      inline def setMultiply(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "multiply", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNormal(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "normal", js.Any.fromFunction2(value))
+      inline def setNormal(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "normal", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOverlay(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "overlay", js.Any.fromFunction2(value))
+      inline def setOverlay(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "overlay", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScreen(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "screen", js.Any.fromFunction2(value))
+      inline def setScreen(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "screen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSoftLight(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "softLight", js.Any.fromFunction2(value))
+      inline def setSoftLight(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "softLight", js.Any.fromFunction2(value))
     }
   }
   
@@ -278,23 +230,18 @@ object screenBufferHDMod {
   }
   object Blending {
     
-    @scala.inline
-    def apply(blendSrcFgWithDstBg: Boolean, fn: (/* src */ Double, /* dst */ Double) => Double, opacity: Double): Blending = {
+    inline def apply(blendSrcFgWithDstBg: Boolean, fn: (/* src */ Double, /* dst */ Double) => Double, opacity: Double): Blending = {
       val __obj = js.Dynamic.literal(blendSrcFgWithDstBg = blendSrcFgWithDstBg.asInstanceOf[js.Any], fn = js.Any.fromFunction2(fn), opacity = opacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[Blending]
     }
     
-    @scala.inline
-    implicit class BlendingMutableBuilder[Self <: Blending] (val x: Self) extends AnyVal {
+    extension [Self <: Blending](x: Self) {
       
-      @scala.inline
-      def setBlendSrcFgWithDstBg(value: Boolean): Self = StObject.set(x, "blendSrcFgWithDstBg", value.asInstanceOf[js.Any])
+      inline def setBlendSrcFgWithDstBg(value: Boolean): Self = StObject.set(x, "blendSrcFgWithDstBg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFn(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     }
   }
   

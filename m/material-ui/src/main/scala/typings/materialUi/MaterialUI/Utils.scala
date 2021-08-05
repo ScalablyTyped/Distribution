@@ -22,24 +22,19 @@ object Utils {
     }
     object MuiColorObject {
       
-      @scala.inline
-      def apply(`type`: String, values: js.Array[Double]): MuiColorObject = {
+      inline def apply(`type`: String, values: js.Array[Double]): MuiColorObject = {
         val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[MuiColorObject]
       }
       
-      @scala.inline
-      implicit class MuiColorObjectMutableBuilder[Self <: MuiColorObject] (val x: Self) extends AnyVal {
+      extension [Self <: MuiColorObject](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+        inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
       }
     }
   }
@@ -66,8 +61,7 @@ object Utils {
   }
   object Dom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: (Element, String) => Unit,
       forceRedraw: HTMLElement => Unit,
       getStyleAttributeAsNumber: (HTMLElement, String) => Double,
@@ -82,35 +76,25 @@ object Utils {
       __obj.asInstanceOf[Dom]
     }
     
-    @scala.inline
-    implicit class DomMutableBuilder[Self <: Dom] (val x: Self) extends AnyVal {
+    extension [Self <: Dom](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: (Element, String) => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction2(value))
+      inline def setAddClass(value: (Element, String) => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setForceRedraw(value: HTMLElement => Unit): Self = StObject.set(x, "forceRedraw", js.Any.fromFunction1(value))
+      inline def setForceRedraw(value: HTMLElement => Unit): Self = StObject.set(x, "forceRedraw", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStyleAttributeAsNumber(value: (HTMLElement, String) => Double): Self = StObject.set(x, "getStyleAttributeAsNumber", js.Any.fromFunction2(value))
+      inline def setGetStyleAttributeAsNumber(value: (HTMLElement, String) => Double): Self = StObject.set(x, "getStyleAttributeAsNumber", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHasClass(value: (Element, String) => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction2(value))
+      inline def setHasClass(value: (Element, String) => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsDescendant(value: (Node, Node) => Boolean): Self = StObject.set(x, "isDescendant", js.Any.fromFunction2(value))
+      inline def setIsDescendant(value: (Node, Node) => Boolean): Self = StObject.set(x, "isDescendant", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOffset(value: Element => Left): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+      inline def setOffset(value: Element => Left): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: (Element, String) => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction2(value))
+      inline def setRemoveClass(value: (Element, String) => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToggleClass(value: (Element, String) => Unit): Self = StObject.set(x, "toggleClass", js.Any.fromFunction2(value))
+      inline def setToggleClass(value: (Element, String) => Unit): Self = StObject.set(x, "toggleClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWithoutTransition(value: (HTMLElement, js.Function0[Unit]) => Unit): Self = StObject.set(x, "withoutTransition", js.Any.fromFunction2(value))
+      inline def setWithoutTransition(value: (HTMLElement, js.Function0[Unit]) => Unit): Self = StObject.set(x, "withoutTransition", js.Any.fromFunction2(value))
     }
   }
   
@@ -126,8 +110,7 @@ object Utils {
   }
   object Events {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isKeyboard: Event => Boolean,
       off: (Element, String, EventListener) => Unit,
       on: (Element, String, EventListener) => Unit,
@@ -137,20 +120,15 @@ object Utils {
       __obj.asInstanceOf[Events]
     }
     
-    @scala.inline
-    implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+    extension [Self <: Events](x: Self) {
       
-      @scala.inline
-      def setIsKeyboard(value: Event => Boolean): Self = StObject.set(x, "isKeyboard", js.Any.fromFunction1(value))
+      inline def setIsKeyboard(value: Event => Boolean): Self = StObject.set(x, "isKeyboard", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOff(value: (Element, String, EventListener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction3(value))
+      inline def setOff(value: (Element, String, EventListener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOn(value: (Element, String, EventListener) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
+      inline def setOn(value: (Element, String, EventListener) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnce(value: (Element, String, EventListener) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction3(value))
+      inline def setOnce(value: (Element, String, EventListener) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction3(value))
     }
   }
 }

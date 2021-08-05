@@ -25,8 +25,7 @@ object componentsMessageMod {
     @JSImport("react-intl/src/components/message", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -49,32 +48,24 @@ object componentsMessageMod {
   }
   object Props {
     
-    @scala.inline
-    def apply[V /* <: Record[String, js.Any] */](): Props[V] = {
+    inline def apply[V /* <: Record[String, js.Any] */](): Props[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props[V]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], V /* <: Record[String, js.Any] */] (val x: Self & Props[V]) extends AnyVal {
+    extension [Self <: Props[?], V /* <: Record[String, js.Any] */](x: Self & Props[V]) {
       
-      @scala.inline
-      def setChildren(value: /* nodes */ ReactNodeArray => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* nodes */ ReactNodeArray => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setTagName(value: ElementType[js.Any]): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: ElementType[js.Any]): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
-      @scala.inline
-      def setValues(value: V): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: V): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
 }

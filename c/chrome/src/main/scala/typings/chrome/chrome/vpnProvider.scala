@@ -54,8 +54,7 @@ object vpnProvider {
   }
   object VpnSessionParameters {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       dnsServer: js.Array[String],
       exclusionList: js.Array[String],
@@ -65,50 +64,35 @@ object vpnProvider {
       __obj.asInstanceOf[VpnSessionParameters]
     }
     
-    @scala.inline
-    implicit class VpnSessionParametersMutableBuilder[Self <: VpnSessionParameters] (val x: Self) extends AnyVal {
+    extension [Self <: VpnSessionParameters](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcastAddress(value: String): Self = StObject.set(x, "broadcastAddress", value.asInstanceOf[js.Any])
+      inline def setBroadcastAddress(value: String): Self = StObject.set(x, "broadcastAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcastAddressUndefined: Self = StObject.set(x, "broadcastAddress", js.undefined)
+      inline def setBroadcastAddressUndefined: Self = StObject.set(x, "broadcastAddress", js.undefined)
       
-      @scala.inline
-      def setDnsServer(value: js.Array[String]): Self = StObject.set(x, "dnsServer", value.asInstanceOf[js.Any])
+      inline def setDnsServer(value: js.Array[String]): Self = StObject.set(x, "dnsServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsServerVarargs(value: String*): Self = StObject.set(x, "dnsServer", js.Array(value :_*))
+      inline def setDnsServerVarargs(value: String*): Self = StObject.set(x, "dnsServer", js.Array(value :_*))
       
-      @scala.inline
-      def setDomainSearch(value: js.Array[String]): Self = StObject.set(x, "domainSearch", value.asInstanceOf[js.Any])
+      inline def setDomainSearch(value: js.Array[String]): Self = StObject.set(x, "domainSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainSearchUndefined: Self = StObject.set(x, "domainSearch", js.undefined)
+      inline def setDomainSearchUndefined: Self = StObject.set(x, "domainSearch", js.undefined)
       
-      @scala.inline
-      def setDomainSearchVarargs(value: String*): Self = StObject.set(x, "domainSearch", js.Array(value :_*))
+      inline def setDomainSearchVarargs(value: String*): Self = StObject.set(x, "domainSearch", js.Array(value :_*))
       
-      @scala.inline
-      def setExclusionList(value: js.Array[String]): Self = StObject.set(x, "exclusionList", value.asInstanceOf[js.Any])
+      inline def setExclusionList(value: js.Array[String]): Self = StObject.set(x, "exclusionList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusionListVarargs(value: String*): Self = StObject.set(x, "exclusionList", js.Array(value :_*))
+      inline def setExclusionListVarargs(value: String*): Self = StObject.set(x, "exclusionList", js.Array(value :_*))
       
-      @scala.inline
-      def setInclusionList(value: js.Array[String]): Self = StObject.set(x, "inclusionList", value.asInstanceOf[js.Any])
+      inline def setInclusionList(value: js.Array[String]): Self = StObject.set(x, "inclusionList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusionListVarargs(value: String*): Self = StObject.set(x, "inclusionList", js.Array(value :_*))
+      inline def setInclusionListVarargs(value: String*): Self = StObject.set(x, "inclusionList", js.Array(value :_*))
       
-      @scala.inline
-      def setMtu(value: String): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
+      inline def setMtu(value: String): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
+      inline def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
     }
   }
   

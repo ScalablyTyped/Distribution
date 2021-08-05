@@ -16,8 +16,7 @@ trait ExcludedDisplayKeyword
 }
 object ExcludedDisplayKeyword {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAdGroup: () => AdGroup,
     getCampaign: () => Campaign,
     getId: () => Double,
@@ -28,16 +27,12 @@ object ExcludedDisplayKeyword {
     __obj.asInstanceOf[ExcludedDisplayKeyword]
   }
   
-  @scala.inline
-  implicit class ExcludedDisplayKeywordMutableBuilder[Self <: ExcludedDisplayKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedDisplayKeyword](x: Self) {
     
-    @scala.inline
-    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

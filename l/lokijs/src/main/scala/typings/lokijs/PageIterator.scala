@@ -14,22 +14,17 @@ trait PageIterator extends StObject {
 }
 object PageIterator {
   
-  @scala.inline
-  def apply(collection: Double, docIndex: Double, pageIndex: Double): PageIterator = {
+  inline def apply(collection: Double, docIndex: Double, pageIndex: Double): PageIterator = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], docIndex = docIndex.asInstanceOf[js.Any], pageIndex = pageIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageIterator]
   }
   
-  @scala.inline
-  implicit class PageIteratorMutableBuilder[Self <: PageIterator] (val x: Self) extends AnyVal {
+  extension [Self <: PageIterator](x: Self) {
     
-    @scala.inline
-    def setCollection(value: Double): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: Double): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocIndex(value: Double): Self = StObject.set(x, "docIndex", value.asInstanceOf[js.Any])
+    inline def setDocIndex(value: Double): Self = StObject.set(x, "docIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
   }
 }

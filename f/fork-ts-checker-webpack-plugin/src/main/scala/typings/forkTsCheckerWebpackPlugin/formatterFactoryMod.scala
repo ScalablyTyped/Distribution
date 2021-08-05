@@ -14,23 +14,17 @@ object formatterFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFormatter[T /* <: NotConfigurableFormatterType */](): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")().asInstanceOf[Formatter]
-  @scala.inline
-  def createFormatter[T /* <: NotConfigurableFormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
-  @scala.inline
-  def createFormatter[T /* <: ConfigurableFormatterType */](
+  inline def createFormatter[T /* <: NotConfigurableFormatterType */](): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")().asInstanceOf[Formatter]
+  inline def createFormatter[T /* <: NotConfigurableFormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  inline def createFormatter[T /* <: ConfigurableFormatterType */](
     `type`: T,
     options: /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory.ConfigurableFormatterOptions[T] */ js.Any
   ): Formatter = (^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Formatter]
-  @scala.inline
-  def createFormatter[T /* <: FormatterType */](`type`: T, options: js.Object): Formatter = (^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Formatter]
+  inline def createFormatter[T /* <: FormatterType */](`type`: T, options: js.Object): Formatter = (^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Formatter]
   
-  @scala.inline
-  def createFormatter_T_ConfigurableFormatterType[T /* <: ConfigurableFormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  inline def createFormatter_T_ConfigurableFormatterType[T /* <: ConfigurableFormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
   
-  @scala.inline
-  def createFormatter_T_FormatterType[T /* <: FormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
+  inline def createFormatter_T_FormatterType[T /* <: FormatterType */](`type`: T): Formatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormatter")(`type`.asInstanceOf[js.Any]).asInstanceOf[Formatter]
   
   type ComplexFormatterOptions[T /* <: FormatterType */] = /* import warning: importer.ImportType#apply Failed type conversion: fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/formatter/FormatterFactory.ConfigurableFormatterOptions[T] */ js.Any
   
@@ -40,17 +34,14 @@ object formatterFactoryMod {
   }
   object ConfigurableFormatterOptions {
     
-    @scala.inline
-    def apply(codeframe: BabelCodeFrameOptions): ConfigurableFormatterOptions = {
+    inline def apply(codeframe: BabelCodeFrameOptions): ConfigurableFormatterOptions = {
       val __obj = js.Dynamic.literal(codeframe = codeframe.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurableFormatterOptions]
     }
     
-    @scala.inline
-    implicit class ConfigurableFormatterOptionsMutableBuilder[Self <: ConfigurableFormatterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurableFormatterOptions](x: Self) {
       
-      @scala.inline
-      def setCodeframe(value: BabelCodeFrameOptions): Self = StObject.set(x, "codeframe", value.asInstanceOf[js.Any])
+      inline def setCodeframe(value: BabelCodeFrameOptions): Self = StObject.set(x, "codeframe", value.asInstanceOf[js.Any])
     }
   }
   

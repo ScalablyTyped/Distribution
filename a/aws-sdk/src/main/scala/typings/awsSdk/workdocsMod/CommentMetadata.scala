@@ -33,43 +33,31 @@ trait CommentMetadata extends StObject {
 }
 object CommentMetadata {
   
-  @scala.inline
-  def apply(): CommentMetadata = {
+  inline def apply(): CommentMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentMetadata]
   }
   
-  @scala.inline
-  implicit class CommentMetadataMutableBuilder[Self <: CommentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CommentMetadata](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: CommentIdType): Self = StObject.set(x, "CommentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: CommentIdType): Self = StObject.set(x, "CommentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentIdUndefined: Self = StObject.set(x, "CommentId", js.undefined)
+    inline def setCommentIdUndefined: Self = StObject.set(x, "CommentId", js.undefined)
     
-    @scala.inline
-    def setCommentStatus(value: CommentStatusType): Self = StObject.set(x, "CommentStatus", value.asInstanceOf[js.Any])
+    inline def setCommentStatus(value: CommentStatusType): Self = StObject.set(x, "CommentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentStatusUndefined: Self = StObject.set(x, "CommentStatus", js.undefined)
+    inline def setCommentStatusUndefined: Self = StObject.set(x, "CommentStatus", js.undefined)
     
-    @scala.inline
-    def setContributor(value: User): Self = StObject.set(x, "Contributor", value.asInstanceOf[js.Any])
+    inline def setContributor(value: User): Self = StObject.set(x, "Contributor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributorUndefined: Self = StObject.set(x, "Contributor", js.undefined)
+    inline def setContributorUndefined: Self = StObject.set(x, "Contributor", js.undefined)
     
-    @scala.inline
-    def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setRecipientId(value: IdType): Self = StObject.set(x, "RecipientId", value.asInstanceOf[js.Any])
+    inline def setRecipientId(value: IdType): Self = StObject.set(x, "RecipientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientIdUndefined: Self = StObject.set(x, "RecipientId", js.undefined)
+    inline def setRecipientIdUndefined: Self = StObject.set(x, "RecipientId", js.undefined)
   }
 }

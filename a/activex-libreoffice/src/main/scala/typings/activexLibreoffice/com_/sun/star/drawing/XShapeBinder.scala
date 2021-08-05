@@ -26,8 +26,7 @@ trait XShapeBinder
 }
 object XShapeBinder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     bind: XShapes => XShape,
     queryInterface: `type` => js.Any,
@@ -38,13 +37,10 @@ object XShapeBinder {
     __obj.asInstanceOf[XShapeBinder]
   }
   
-  @scala.inline
-  implicit class XShapeBinderMutableBuilder[Self <: XShapeBinder] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeBinder](x: Self) {
     
-    @scala.inline
-    def setBind(value: XShapes => XShape): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+    inline def setBind(value: XShapes => XShape): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnbind(value: XShape => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
+    inline def setUnbind(value: XShape => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
   }
 }

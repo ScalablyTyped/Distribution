@@ -12,19 +12,15 @@ trait FontSizeNumberTextAlignString extends StObject {
 }
 object FontSizeNumberTextAlignString {
   
-  @scala.inline
-  def apply(fontSize: Double, textAlign: String): FontSizeNumberTextAlignString = {
+  inline def apply(fontSize: Double, textAlign: String): FontSizeNumberTextAlignString = {
     val __obj = js.Dynamic.literal(fontSize = fontSize.asInstanceOf[js.Any], textAlign = textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSizeNumberTextAlignString]
   }
   
-  @scala.inline
-  implicit class FontSizeNumberTextAlignStringMutableBuilder[Self <: FontSizeNumberTextAlignString] (val x: Self) extends AnyVal {
+  extension [Self <: FontSizeNumberTextAlignString](x: Self) {
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
   }
 }

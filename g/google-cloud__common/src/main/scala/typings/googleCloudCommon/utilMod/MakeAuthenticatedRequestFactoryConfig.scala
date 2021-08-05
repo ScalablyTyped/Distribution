@@ -43,49 +43,35 @@ trait MakeAuthenticatedRequestFactoryConfig
 }
 object MakeAuthenticatedRequestFactoryConfig {
   
-  @scala.inline
-  def apply(): MakeAuthenticatedRequestFactoryConfig = {
+  inline def apply(): MakeAuthenticatedRequestFactoryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MakeAuthenticatedRequestFactoryConfig]
   }
   
-  @scala.inline
-  implicit class MakeAuthenticatedRequestFactoryConfigMutableBuilder[Self <: MakeAuthenticatedRequestFactoryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MakeAuthenticatedRequestFactoryConfig](x: Self) {
     
-    @scala.inline
-    def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
+    inline def setAuthClient(value: GoogleAuth): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
+    inline def setAuthClientUndefined: Self = StObject.set(x, "authClient", js.undefined)
     
-    @scala.inline
-    def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
+    inline def setAutoRetry(value: Boolean): Self = StObject.set(x, "autoRetry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
+    inline def setAutoRetryUndefined: Self = StObject.set(x, "autoRetry", js.undefined)
     
-    @scala.inline
-    def setCustomEndpoint(value: Boolean): Self = StObject.set(x, "customEndpoint", value.asInstanceOf[js.Any])
+    inline def setCustomEndpoint(value: Boolean): Self = StObject.set(x, "customEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEndpointUndefined: Self = StObject.set(x, "customEndpoint", js.undefined)
+    inline def setCustomEndpointUndefined: Self = StObject.set(x, "customEndpoint", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
     
-    @scala.inline
-    def setStream(value: Duplexify): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Duplexify): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

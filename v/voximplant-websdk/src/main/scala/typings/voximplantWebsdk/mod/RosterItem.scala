@@ -36,8 +36,7 @@ trait RosterItem extends StObject {
 }
 object RosterItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     groups: js.Array[String],
     id: String,
     name: String,
@@ -48,28 +47,20 @@ object RosterItem {
     __obj.asInstanceOf[RosterItem]
   }
   
-  @scala.inline
-  implicit class RosterItemMutableBuilder[Self <: RosterItem] (val x: Self) extends AnyVal {
+  extension [Self <: RosterItem](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscription_type(value: Double): Self = StObject.set(x, "subscription_type", value.asInstanceOf[js.Any])
+    inline def setSubscription_type(value: Double): Self = StObject.set(x, "subscription_type", value.asInstanceOf[js.Any])
   }
 }

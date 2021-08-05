@@ -16,20 +16,16 @@ trait ExportAllDeclaration
 }
 object ExportAllDeclaration {
   
-  @scala.inline
-  def apply(source: Literal): ExportAllDeclaration = {
+  inline def apply(source: Literal): ExportAllDeclaration = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[ExportAllDeclaration]
   }
   
-  @scala.inline
-  implicit class ExportAllDeclarationMutableBuilder[Self <: ExportAllDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAllDeclaration](x: Self) {
     
-    @scala.inline
-    def setSource(value: Literal): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Literal): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ExportAllDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ExportAllDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -65,8 +65,7 @@ trait IOutcome extends StObject {
 }
 object IOutcome {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     network_status: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval,
     seller_message: String,
     `type`: authorized | manual_review | issuer_declined | blocked | invalid
@@ -76,52 +75,36 @@ object IOutcome {
     __obj.asInstanceOf[IOutcome]
   }
   
-  @scala.inline
-  implicit class IOutcomeMutableBuilder[Self <: IOutcome] (val x: Self) extends AnyVal {
+  extension [Self <: IOutcome](x: Self) {
     
-    @scala.inline
-    def setNetwork_status(value: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval): Self = StObject.set(x, "network_status", value.asInstanceOf[js.Any])
+    inline def setNetwork_status(value: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval): Self = StObject.set(x, "network_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonNull: Self = StObject.set(x, "reason", null)
+    inline def setReasonNull: Self = StObject.set(x, "reason", null)
     
-    @scala.inline
-    def setRisk_level(value: String): Self = StObject.set(x, "risk_level", value.asInstanceOf[js.Any])
+    inline def setRisk_level(value: String): Self = StObject.set(x, "risk_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRisk_levelNull: Self = StObject.set(x, "risk_level", null)
+    inline def setRisk_levelNull: Self = StObject.set(x, "risk_level", null)
     
-    @scala.inline
-    def setRisk_levelUndefined: Self = StObject.set(x, "risk_level", js.undefined)
+    inline def setRisk_levelUndefined: Self = StObject.set(x, "risk_level", js.undefined)
     
-    @scala.inline
-    def setRisk_score(value: Double): Self = StObject.set(x, "risk_score", value.asInstanceOf[js.Any])
+    inline def setRisk_score(value: Double): Self = StObject.set(x, "risk_score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRisk_scoreNull: Self = StObject.set(x, "risk_score", null)
+    inline def setRisk_scoreNull: Self = StObject.set(x, "risk_score", null)
     
-    @scala.inline
-    def setRisk_scoreUndefined: Self = StObject.set(x, "risk_score", js.undefined)
+    inline def setRisk_scoreUndefined: Self = StObject.set(x, "risk_score", js.undefined)
     
-    @scala.inline
-    def setRule(value: String | js.Array[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: String | js.Array[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNull: Self = StObject.set(x, "rule", null)
+    inline def setRuleNull: Self = StObject.set(x, "rule", null)
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value :_*))
+    inline def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value :_*))
     
-    @scala.inline
-    def setSeller_message(value: String): Self = StObject.set(x, "seller_message", value.asInstanceOf[js.Any])
+    inline def setSeller_message(value: String): Self = StObject.set(x, "seller_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: authorized | manual_review | issuer_declined | blocked | invalid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: authorized | manual_review | issuer_declined | blocked | invalid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

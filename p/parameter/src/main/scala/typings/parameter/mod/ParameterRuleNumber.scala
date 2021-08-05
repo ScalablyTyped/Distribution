@@ -30,29 +30,22 @@ trait ParameterRuleNumber
 }
 object ParameterRuleNumber {
   
-  @scala.inline
-  def apply(`type`: int | integer | number | intQuestionmark | integerQuestionmark | numberQuestionmark): ParameterRuleNumber = {
+  inline def apply(`type`: int | integer | number | intQuestionmark | integerQuestionmark | numberQuestionmark): ParameterRuleNumber = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleNumber]
   }
   
-  @scala.inline
-  implicit class ParameterRuleNumberMutableBuilder[Self <: ParameterRuleNumber] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleNumber](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setType(value: int | integer | number | intQuestionmark | integerQuestionmark | numberQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: int | integer | number | intQuestionmark | integerQuestionmark | numberQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

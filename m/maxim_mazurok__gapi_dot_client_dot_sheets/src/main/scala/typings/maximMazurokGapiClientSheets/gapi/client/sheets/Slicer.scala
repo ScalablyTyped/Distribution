@@ -20,31 +20,23 @@ trait Slicer extends StObject {
 }
 object Slicer {
   
-  @scala.inline
-  def apply(): Slicer = {
+  inline def apply(): Slicer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Slicer]
   }
   
-  @scala.inline
-  implicit class SlicerMutableBuilder[Self <: Slicer] (val x: Self) extends AnyVal {
+  extension [Self <: Slicer](x: Self) {
     
-    @scala.inline
-    def setPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSlicerId(value: Double): Self = StObject.set(x, "slicerId", value.asInstanceOf[js.Any])
+    inline def setSlicerId(value: Double): Self = StObject.set(x, "slicerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicerIdUndefined: Self = StObject.set(x, "slicerId", js.undefined)
+    inline def setSlicerIdUndefined: Self = StObject.set(x, "slicerId", js.undefined)
     
-    @scala.inline
-    def setSpec(value: SlicerSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: SlicerSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

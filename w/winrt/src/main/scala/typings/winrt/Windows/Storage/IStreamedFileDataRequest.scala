@@ -10,16 +10,13 @@ trait IStreamedFileDataRequest extends StObject {
 }
 object IStreamedFileDataRequest {
   
-  @scala.inline
-  def apply(failAndClose: StreamedFileFailureMode => Unit): IStreamedFileDataRequest = {
+  inline def apply(failAndClose: StreamedFileFailureMode => Unit): IStreamedFileDataRequest = {
     val __obj = js.Dynamic.literal(failAndClose = js.Any.fromFunction1(failAndClose))
     __obj.asInstanceOf[IStreamedFileDataRequest]
   }
   
-  @scala.inline
-  implicit class IStreamedFileDataRequestMutableBuilder[Self <: IStreamedFileDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamedFileDataRequest](x: Self) {
     
-    @scala.inline
-    def setFailAndClose(value: StreamedFileFailureMode => Unit): Self = StObject.set(x, "failAndClose", js.Any.fromFunction1(value))
+    inline def setFailAndClose(value: StreamedFileFailureMode => Unit): Self = StObject.set(x, "failAndClose", js.Any.fromFunction1(value))
   }
 }

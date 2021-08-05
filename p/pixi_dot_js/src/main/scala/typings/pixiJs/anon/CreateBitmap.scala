@@ -17,37 +17,27 @@ trait CreateBitmap extends StObject {
 }
 object CreateBitmap {
   
-  @scala.inline
-  def apply(): CreateBitmap = {
+  inline def apply(): CreateBitmap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBitmap]
   }
   
-  @scala.inline
-  implicit class CreateBitmapMutableBuilder[Self <: CreateBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBitmap](x: Self) {
     
-    @scala.inline
-    def setAlphaMode(value: ALPHA_MODES): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
+    inline def setAlphaMode(value: ALPHA_MODES): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
+    inline def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
     
-    @scala.inline
-    def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+    inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
+    inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
-    @scala.inline
-    def setCreateBitmap(value: Boolean): Self = StObject.set(x, "createBitmap", value.asInstanceOf[js.Any])
+    inline def setCreateBitmap(value: Boolean): Self = StObject.set(x, "createBitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateBitmapUndefined: Self = StObject.set(x, "createBitmap", js.undefined)
+    inline def setCreateBitmapUndefined: Self = StObject.set(x, "createBitmap", js.undefined)
     
-    @scala.inline
-    def setCrossorigin(value: Boolean): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
+    inline def setCrossorigin(value: Boolean): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
+    inline def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
   }
 }

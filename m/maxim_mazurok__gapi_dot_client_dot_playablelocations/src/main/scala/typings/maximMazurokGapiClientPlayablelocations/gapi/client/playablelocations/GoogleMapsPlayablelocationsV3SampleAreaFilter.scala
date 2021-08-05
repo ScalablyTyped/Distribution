@@ -15,19 +15,15 @@ trait GoogleMapsPlayablelocationsV3SampleAreaFilter extends StObject {
 }
 object GoogleMapsPlayablelocationsV3SampleAreaFilter {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SampleAreaFilter = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SampleAreaFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleAreaFilter]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleAreaFilterMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleAreaFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SampleAreaFilter](x: Self) {
     
-    @scala.inline
-    def setS2CellId(value: String): Self = StObject.set(x, "s2CellId", value.asInstanceOf[js.Any])
+    inline def setS2CellId(value: String): Self = StObject.set(x, "s2CellId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS2CellIdUndefined: Self = StObject.set(x, "s2CellId", js.undefined)
+    inline def setS2CellIdUndefined: Self = StObject.set(x, "s2CellId", js.undefined)
   }
 }

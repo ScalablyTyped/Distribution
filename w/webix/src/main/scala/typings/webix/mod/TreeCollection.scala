@@ -200,6 +200,5 @@ trait TreeCollection extends StObject {
 }
 object TreeCollection {
   
-  @scala.inline
-  def apply: TreeCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeCollection").asInstanceOf[TreeCollectionFactory]
+  inline def apply: TreeCollectionFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("TreeCollection").asInstanceOf[TreeCollectionFactory]
 }

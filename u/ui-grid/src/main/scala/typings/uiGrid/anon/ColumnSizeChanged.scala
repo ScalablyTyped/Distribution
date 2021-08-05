@@ -17,16 +17,13 @@ trait ColumnSizeChanged extends StObject {
 }
 object ColumnSizeChanged {
   
-  @scala.inline
-  def apply(columnSizeChanged: (IScope, columnSizeChangedHandler) => Unit): ColumnSizeChanged = {
+  inline def apply(columnSizeChanged: (IScope, columnSizeChangedHandler) => Unit): ColumnSizeChanged = {
     val __obj = js.Dynamic.literal(columnSizeChanged = js.Any.fromFunction2(columnSizeChanged))
     __obj.asInstanceOf[ColumnSizeChanged]
   }
   
-  @scala.inline
-  implicit class ColumnSizeChangedMutableBuilder[Self <: ColumnSizeChanged] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnSizeChanged](x: Self) {
     
-    @scala.inline
-    def setColumnSizeChanged(value: (IScope, columnSizeChangedHandler) => Unit): Self = StObject.set(x, "columnSizeChanged", js.Any.fromFunction2(value))
+    inline def setColumnSizeChanged(value: (IScope, columnSizeChangedHandler) => Unit): Self = StObject.set(x, "columnSizeChanged", js.Any.fromFunction2(value))
   }
 }

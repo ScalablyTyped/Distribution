@@ -63,73 +63,51 @@ trait SchemaParagraphElement extends StObject {
 }
 object SchemaParagraphElement {
   
-  @scala.inline
-  def apply(): SchemaParagraphElement = {
+  inline def apply(): SchemaParagraphElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParagraphElement]
   }
   
-  @scala.inline
-  implicit class SchemaParagraphElementMutableBuilder[Self <: SchemaParagraphElement] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParagraphElement](x: Self) {
     
-    @scala.inline
-    def setAutoText(value: SchemaAutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
+    inline def setAutoText(value: SchemaAutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
+    inline def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
     
-    @scala.inline
-    def setColumnBreak(value: SchemaColumnBreak): Self = StObject.set(x, "columnBreak", value.asInstanceOf[js.Any])
+    inline def setColumnBreak(value: SchemaColumnBreak): Self = StObject.set(x, "columnBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnBreakUndefined: Self = StObject.set(x, "columnBreak", js.undefined)
+    inline def setColumnBreakUndefined: Self = StObject.set(x, "columnBreak", js.undefined)
     
-    @scala.inline
-    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
-    @scala.inline
-    def setEquation(value: SchemaEquation): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
+    inline def setEquation(value: SchemaEquation): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquationUndefined: Self = StObject.set(x, "equation", js.undefined)
+    inline def setEquationUndefined: Self = StObject.set(x, "equation", js.undefined)
     
-    @scala.inline
-    def setFootnoteReference(value: SchemaFootnoteReference): Self = StObject.set(x, "footnoteReference", value.asInstanceOf[js.Any])
+    inline def setFootnoteReference(value: SchemaFootnoteReference): Self = StObject.set(x, "footnoteReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteReferenceUndefined: Self = StObject.set(x, "footnoteReference", js.undefined)
+    inline def setFootnoteReferenceUndefined: Self = StObject.set(x, "footnoteReference", js.undefined)
     
-    @scala.inline
-    def setHorizontalRule(value: SchemaHorizontalRule): Self = StObject.set(x, "horizontalRule", value.asInstanceOf[js.Any])
+    inline def setHorizontalRule(value: SchemaHorizontalRule): Self = StObject.set(x, "horizontalRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalRuleUndefined: Self = StObject.set(x, "horizontalRule", js.undefined)
+    inline def setHorizontalRuleUndefined: Self = StObject.set(x, "horizontalRule", js.undefined)
     
-    @scala.inline
-    def setInlineObjectElement(value: SchemaInlineObjectElement): Self = StObject.set(x, "inlineObjectElement", value.asInstanceOf[js.Any])
+    inline def setInlineObjectElement(value: SchemaInlineObjectElement): Self = StObject.set(x, "inlineObjectElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineObjectElementUndefined: Self = StObject.set(x, "inlineObjectElement", js.undefined)
+    inline def setInlineObjectElementUndefined: Self = StObject.set(x, "inlineObjectElement", js.undefined)
     
-    @scala.inline
-    def setPageBreak(value: SchemaPageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
+    inline def setPageBreak(value: SchemaPageBreak): Self = StObject.set(x, "pageBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
+    inline def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setTextRun(value: SchemaTextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
+    inline def setTextRun(value: SchemaTextRun): Self = StObject.set(x, "textRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
+    inline def setTextRunUndefined: Self = StObject.set(x, "textRun", js.undefined)
   }
 }

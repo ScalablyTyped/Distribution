@@ -12,8 +12,7 @@ object initialStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param additions because its type Additions is not an array type */ additions: Additions
   ): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(additions.asInstanceOf[js.Any]).asInstanceOf[State]
   

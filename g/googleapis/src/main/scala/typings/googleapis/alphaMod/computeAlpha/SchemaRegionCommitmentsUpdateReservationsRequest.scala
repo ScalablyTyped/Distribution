@@ -14,22 +14,17 @@ trait SchemaRegionCommitmentsUpdateReservationsRequest extends StObject {
 }
 object SchemaRegionCommitmentsUpdateReservationsRequest {
   
-  @scala.inline
-  def apply(): SchemaRegionCommitmentsUpdateReservationsRequest = {
+  inline def apply(): SchemaRegionCommitmentsUpdateReservationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionCommitmentsUpdateReservationsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegionCommitmentsUpdateReservationsRequestMutableBuilder[Self <: SchemaRegionCommitmentsUpdateReservationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionCommitmentsUpdateReservationsRequest](x: Self) {
     
-    @scala.inline
-    def setReservations(value: js.Array[SchemaReservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
+    inline def setReservations(value: js.Array[SchemaReservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
+    inline def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
-    @scala.inline
-    def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
   }
 }

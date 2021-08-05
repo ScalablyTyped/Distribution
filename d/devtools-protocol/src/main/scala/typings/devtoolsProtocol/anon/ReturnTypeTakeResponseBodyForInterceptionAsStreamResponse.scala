@@ -14,8 +14,7 @@ trait ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse extends StObject
 }
 object ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[TakeResponseBodyForInterceptionAsStreamRequest],
     returnType: TakeResponseBodyForInterceptionAsStreamResponse
   ): ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse = {
@@ -23,16 +22,12 @@ object ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse {
     __obj.asInstanceOf[ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeTakeResponseBodyForInterceptionAsStreamResponseMutableBuilder[Self <: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeTakeResponseBodyForInterceptionAsStreamResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[TakeResponseBodyForInterceptionAsStreamRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[TakeResponseBodyForInterceptionAsStreamRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: TakeResponseBodyForInterceptionAsStreamRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: TakeResponseBodyForInterceptionAsStreamRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: TakeResponseBodyForInterceptionAsStreamResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: TakeResponseBodyForInterceptionAsStreamResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

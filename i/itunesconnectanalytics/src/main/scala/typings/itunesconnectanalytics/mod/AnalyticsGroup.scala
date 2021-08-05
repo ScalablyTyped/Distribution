@@ -12,19 +12,15 @@ trait AnalyticsGroup extends StObject {
 }
 object AnalyticsGroup {
   
-  @scala.inline
-  def apply(key: String, title: String): AnalyticsGroup = {
+  inline def apply(key: String, title: String): AnalyticsGroup = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsGroup]
   }
   
-  @scala.inline
-  implicit class AnalyticsGroupMutableBuilder[Self <: AnalyticsGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsGroup](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

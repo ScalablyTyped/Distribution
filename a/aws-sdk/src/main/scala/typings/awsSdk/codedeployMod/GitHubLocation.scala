@@ -18,25 +18,19 @@ trait GitHubLocation extends StObject {
 }
 object GitHubLocation {
   
-  @scala.inline
-  def apply(): GitHubLocation = {
+  inline def apply(): GitHubLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GitHubLocation]
   }
   
-  @scala.inline
-  implicit class GitHubLocationMutableBuilder[Self <: GitHubLocation] (val x: Self) extends AnyVal {
+  extension [Self <: GitHubLocation](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+    inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
-    @scala.inline
-    def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
   }
 }

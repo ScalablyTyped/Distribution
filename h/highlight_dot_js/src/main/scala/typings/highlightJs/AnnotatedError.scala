@@ -21,31 +21,23 @@ trait AnnotatedError
 }
 object AnnotatedError {
   
-  @scala.inline
-  def apply(message: String, name: String): AnnotatedError = {
+  inline def apply(message: String, name: String): AnnotatedError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotatedError]
   }
   
-  @scala.inline
-  implicit class AnnotatedErrorMutableBuilder[Self <: AnnotatedError] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotatedError](x: Self) {
     
-    @scala.inline
-    def setBadRule(value: Mode): Self = StObject.set(x, "badRule", value.asInstanceOf[js.Any])
+    inline def setBadRule(value: Mode): Self = StObject.set(x, "badRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadRuleUndefined: Self = StObject.set(x, "badRule", js.undefined)
+    inline def setBadRuleUndefined: Self = StObject.set(x, "badRule", js.undefined)
     
-    @scala.inline
-    def setLanguageName(value: String): Self = StObject.set(x, "languageName", value.asInstanceOf[js.Any])
+    inline def setLanguageName(value: String): Self = StObject.set(x, "languageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNameUndefined: Self = StObject.set(x, "languageName", js.undefined)
+    inline def setLanguageNameUndefined: Self = StObject.set(x, "languageName", js.undefined)
     
-    @scala.inline
-    def setMode(value: Mode | Language): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode | Language): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

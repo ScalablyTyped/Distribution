@@ -13,16 +13,13 @@ trait DeleteSchemaInput extends StObject {
 }
 object DeleteSchemaInput {
   
-  @scala.inline
-  def apply(SchemaId: SchemaId): DeleteSchemaInput = {
+  inline def apply(SchemaId: SchemaId): DeleteSchemaInput = {
     val __obj = js.Dynamic.literal(SchemaId = SchemaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSchemaInput]
   }
   
-  @scala.inline
-  implicit class DeleteSchemaInputMutableBuilder[Self <: DeleteSchemaInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSchemaInput](x: Self) {
     
-    @scala.inline
-    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
+    inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
   }
 }

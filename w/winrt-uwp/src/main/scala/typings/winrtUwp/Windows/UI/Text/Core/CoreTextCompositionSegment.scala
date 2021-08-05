@@ -15,19 +15,15 @@ trait CoreTextCompositionSegment extends StObject {
 }
 object CoreTextCompositionSegment {
   
-  @scala.inline
-  def apply(preconversionString: String, range: CoreTextRange): CoreTextCompositionSegment = {
+  inline def apply(preconversionString: String, range: CoreTextRange): CoreTextCompositionSegment = {
     val __obj = js.Dynamic.literal(preconversionString = preconversionString.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreTextCompositionSegment]
   }
   
-  @scala.inline
-  implicit class CoreTextCompositionSegmentMutableBuilder[Self <: CoreTextCompositionSegment] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextCompositionSegment](x: Self) {
     
-    @scala.inline
-    def setPreconversionString(value: String): Self = StObject.set(x, "preconversionString", value.asInstanceOf[js.Any])
+    inline def setPreconversionString(value: String): Self = StObject.set(x, "preconversionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

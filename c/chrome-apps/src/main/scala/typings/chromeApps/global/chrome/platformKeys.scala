@@ -46,14 +46,12 @@ object platformKeys {
     @JSGlobal("chrome.platformKeys.ClientCertificateType.ECDSA_SIGN")
     @js.native
     def ECDSA_SIGN: ecdsaSign = js.native
-    @scala.inline
-    def ECDSA_SIGN_=(x: ecdsaSign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ECDSA_SIGN")(x.asInstanceOf[js.Any])
+    inline def ECDSA_SIGN_=(x: ecdsaSign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ECDSA_SIGN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.platformKeys.ClientCertificateType.RSA_SIGN")
     @js.native
     def RSA_SIGN: rsaSign = js.native
-    @scala.inline
-    def RSA_SIGN_=(x: rsaSign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_SIGN")(x.asInstanceOf[js.Any])
+    inline def RSA_SIGN_=(x: rsaSign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RSA_SIGN")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -79,8 +77,7 @@ object platformKeys {
     * @see[WebCrypto's importKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#SubtleCrypto-method-importKey}
     * @see[CryptoKey docs]{@link http://www.w3.org/TR/WebCryptoAPI/#dfn-CryptoKey}
     */
-  @scala.inline
-  def getKeyPair(
+  inline def getKeyPair(
     certificate: ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
@@ -97,8 +94,7 @@ object platformKeys {
     * @param callback Will provide *matches*: The list of certificates that match the request, that the
     *                 app has permission for and, if *interactive* is true, that were selected by the user.
     */
-  @scala.inline
-  def selectClientCertificates(details: SelectDetails, callback: js.Function1[/* matches */ js.Array[Match], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectClientCertificates")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def selectClientCertificates(details: SelectDetails, callback: js.Function1[/* matches */ js.Array[Match], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectClientCertificates")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * An implementation of WebCrypto's SubtleCrypto
@@ -106,8 +102,7 @@ object platformKeys {
     * certificates that are available to this app.
     * @see[SubtleCrypto]{@link http://www.w3.org/TR/WebCryptoAPI/#subtlecrypto-interface}
     */
-  @scala.inline
-  def subtleCrypto(): SubtleCrypto = ^.asInstanceOf[js.Dynamic].applyDynamic("subtleCrypto")().asInstanceOf[SubtleCrypto]
+  inline def subtleCrypto(): SubtleCrypto = ^.asInstanceOf[js.Dynamic].applyDynamic("subtleCrypto")().asInstanceOf[SubtleCrypto]
   
   /**
     * Checks whether *details.serverCertificateChain* can be trusted
@@ -120,6 +115,5 @@ object platformKeys {
     * The implementation is supposed to respect the EKU serverAuth and to
     * support subject alternative names.
     */
-  @scala.inline
-  def verifyTLSServerCertificate(details: VerificationDetails, callback: js.Function1[/* result */ VerificationResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyTLSServerCertificate")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verifyTLSServerCertificate(details: VerificationDetails, callback: js.Function1[/* result */ VerificationResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyTLSServerCertificate")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

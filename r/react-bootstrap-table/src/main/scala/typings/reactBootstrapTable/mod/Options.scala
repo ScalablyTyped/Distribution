@@ -712,580 +712,399 @@ trait Options[TRow /* <: js.Object */] extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */](): Options[TRow] = {
+  inline def apply[TRow /* <: js.Object */](): Options[TRow] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options[TRow]]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options[?], TRow /* <: js.Object */] (val x: Self & Options[TRow]) extends AnyVal {
+  extension [Self <: Options[?], TRow /* <: js.Object */](x: Self & Options[TRow]) {
     
-    @scala.inline
-    def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[js.Any]], /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterColumnFilter", js.Any.fromFunction2(value))
+    inline def setAfterColumnFilter(value: (/* filterConds */ js.Array[FilterData[js.Any]], /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterColumnFilter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterColumnFilterUndefined: Self = StObject.set(x, "afterColumnFilter", js.undefined)
+    inline def setAfterColumnFilterUndefined: Self = StObject.set(x, "afterColumnFilter", js.undefined)
     
-    @scala.inline
-    def setAfterDeleteRow(value: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterDeleteRow", js.Any.fromFunction2(value))
+    inline def setAfterDeleteRow(value: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterDeleteRow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterDeleteRowUndefined: Self = StObject.set(x, "afterDeleteRow", js.undefined)
+    inline def setAfterDeleteRowUndefined: Self = StObject.set(x, "afterDeleteRow", js.undefined)
     
-    @scala.inline
-    def setAfterInsertRow(value: /* row */ TRow => Unit): Self = StObject.set(x, "afterInsertRow", js.Any.fromFunction1(value))
+    inline def setAfterInsertRow(value: /* row */ TRow => Unit): Self = StObject.set(x, "afterInsertRow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterInsertRowUndefined: Self = StObject.set(x, "afterInsertRow", js.undefined)
+    inline def setAfterInsertRowUndefined: Self = StObject.set(x, "afterInsertRow", js.undefined)
     
-    @scala.inline
-    def setAfterSearch(value: (/* search */ String, /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterSearch", js.Any.fromFunction2(value))
+    inline def setAfterSearch(value: (/* search */ String, /* result */ js.Array[TRow]) => Unit): Self = StObject.set(x, "afterSearch", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterSearchUndefined: Self = StObject.set(x, "afterSearch", js.undefined)
+    inline def setAfterSearchUndefined: Self = StObject.set(x, "afterSearch", js.undefined)
     
-    @scala.inline
-    def setAfterTableComplete(value: () => Unit): Self = StObject.set(x, "afterTableComplete", js.Any.fromFunction0(value))
+    inline def setAfterTableComplete(value: () => Unit): Self = StObject.set(x, "afterTableComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAfterTableCompleteUndefined: Self = StObject.set(x, "afterTableComplete", js.undefined)
+    inline def setAfterTableCompleteUndefined: Self = StObject.set(x, "afterTableComplete", js.undefined)
     
-    @scala.inline
-    def setAlwaysShowAllBtns(value: Boolean): Self = StObject.set(x, "alwaysShowAllBtns", value.asInstanceOf[js.Any])
+    inline def setAlwaysShowAllBtns(value: Boolean): Self = StObject.set(x, "alwaysShowAllBtns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysShowAllBtnsUndefined: Self = StObject.set(x, "alwaysShowAllBtns", js.undefined)
+    inline def setAlwaysShowAllBtnsUndefined: Self = StObject.set(x, "alwaysShowAllBtns", js.undefined)
     
-    @scala.inline
-    def setBeforeShowError(value: (/* type */ EditValidatorType, /* msg */ String, /* title */ String) => Boolean | Unit): Self = StObject.set(x, "beforeShowError", js.Any.fromFunction3(value))
+    inline def setBeforeShowError(value: (/* type */ EditValidatorType, /* msg */ String, /* title */ String) => Boolean | Unit): Self = StObject.set(x, "beforeShowError", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeShowErrorUndefined: Self = StObject.set(x, "beforeShowError", js.undefined)
+    inline def setBeforeShowErrorUndefined: Self = StObject.set(x, "beforeShowError", js.undefined)
     
-    @scala.inline
-    def setBtnGroup(value: /* props */ ButtonGroupProps => ReactElement): Self = StObject.set(x, "btnGroup", js.Any.fromFunction1(value))
+    inline def setBtnGroup(value: /* props */ ButtonGroupProps => ReactElement): Self = StObject.set(x, "btnGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBtnGroupUndefined: Self = StObject.set(x, "btnGroup", js.undefined)
+    inline def setBtnGroupUndefined: Self = StObject.set(x, "btnGroup", js.undefined)
     
-    @scala.inline
-    def setClearSearch(value: Boolean): Self = StObject.set(x, "clearSearch", value.asInstanceOf[js.Any])
+    inline def setClearSearch(value: Boolean): Self = StObject.set(x, "clearSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearSearchBtn(
+    inline def setClearSearchBtn(
       value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
     ): Self = StObject.set(x, "clearSearchBtn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearSearchBtnUndefined: Self = StObject.set(x, "clearSearchBtn", js.undefined)
+    inline def setClearSearchBtnUndefined: Self = StObject.set(x, "clearSearchBtn", js.undefined)
     
-    @scala.inline
-    def setClearSearchUndefined: Self = StObject.set(x, "clearSearch", js.undefined)
+    inline def setClearSearchUndefined: Self = StObject.set(x, "clearSearch", js.undefined)
     
-    @scala.inline
-    def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
+    inline def setCloseText(value: String): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
+    inline def setCloseTextUndefined: Self = StObject.set(x, "closeText", js.undefined)
     
-    @scala.inline
-    def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
+    inline def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSearchUndefined: Self = StObject.set(x, "defaultSearch", js.undefined)
+    inline def setDefaultSearchUndefined: Self = StObject.set(x, "defaultSearch", js.undefined)
     
-    @scala.inline
-    def setDefaultSortName(value: /* keyof TRow */ String): Self = StObject.set(x, "defaultSortName", value.asInstanceOf[js.Any])
+    inline def setDefaultSortName(value: /* keyof TRow */ String): Self = StObject.set(x, "defaultSortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSortNameUndefined: Self = StObject.set(x, "defaultSortName", js.undefined)
+    inline def setDefaultSortNameUndefined: Self = StObject.set(x, "defaultSortName", js.undefined)
     
-    @scala.inline
-    def setDefaultSortOrder(value: SortOrder): Self = StObject.set(x, "defaultSortOrder", value.asInstanceOf[js.Any])
+    inline def setDefaultSortOrder(value: SortOrder): Self = StObject.set(x, "defaultSortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSortOrderUndefined: Self = StObject.set(x, "defaultSortOrder", js.undefined)
+    inline def setDefaultSortOrderUndefined: Self = StObject.set(x, "defaultSortOrder", js.undefined)
     
-    @scala.inline
-    def setDeleteBtn(
+    inline def setDeleteBtn(
       value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
     ): Self = StObject.set(x, "deleteBtn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteBtnUndefined: Self = StObject.set(x, "deleteBtn", js.undefined)
+    inline def setDeleteBtnUndefined: Self = StObject.set(x, "deleteBtn", js.undefined)
     
-    @scala.inline
-    def setDeleteText(value: String): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
+    inline def setDeleteText(value: String): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTextUndefined: Self = StObject.set(x, "deleteText", js.undefined)
+    inline def setDeleteTextUndefined: Self = StObject.set(x, "deleteText", js.undefined)
     
-    @scala.inline
-    def setExpandAll(value: Boolean): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
+    inline def setExpandAll(value: Boolean): Self = StObject.set(x, "expandAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
+    inline def setExpandAllUndefined: Self = StObject.set(x, "expandAll", js.undefined)
     
-    @scala.inline
-    def setExpandBodyClass(
+    inline def setExpandBodyClass(
       value: String | (js.Function3[/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean, String])
     ): Self = StObject.set(x, "expandBodyClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandBodyClassFunction3(value: (/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean) => String): Self = StObject.set(x, "expandBodyClass", js.Any.fromFunction3(value))
+    inline def setExpandBodyClassFunction3(value: (/* row */ TRow, /* rowIndex */ Double, /* isExpanding */ Boolean) => String): Self = StObject.set(x, "expandBodyClass", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExpandBodyClassUndefined: Self = StObject.set(x, "expandBodyClass", js.undefined)
+    inline def setExpandBodyClassUndefined: Self = StObject.set(x, "expandBodyClass", js.undefined)
     
-    @scala.inline
-    def setExpandBy(value: ExpandBy): Self = StObject.set(x, "expandBy", value.asInstanceOf[js.Any])
+    inline def setExpandBy(value: ExpandBy): Self = StObject.set(x, "expandBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandByUndefined: Self = StObject.set(x, "expandBy", js.undefined)
+    inline def setExpandByUndefined: Self = StObject.set(x, "expandBy", js.undefined)
     
-    @scala.inline
-    def setExpandParentClass(value: String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String])): Self = StObject.set(x, "expandParentClass", value.asInstanceOf[js.Any])
+    inline def setExpandParentClass(value: String | (js.Function2[/* row */ TRow, /* rowIndex */ Double, String])): Self = StObject.set(x, "expandParentClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandParentClassFunction2(value: (/* row */ TRow, /* rowIndex */ Double) => String): Self = StObject.set(x, "expandParentClass", js.Any.fromFunction2(value))
+    inline def setExpandParentClassFunction2(value: (/* row */ TRow, /* rowIndex */ Double) => String): Self = StObject.set(x, "expandParentClass", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExpandParentClassUndefined: Self = StObject.set(x, "expandParentClass", js.undefined)
+    inline def setExpandParentClassUndefined: Self = StObject.set(x, "expandParentClass", js.undefined)
     
-    @scala.inline
-    def setExpandRowBgColor(value: String): Self = StObject.set(x, "expandRowBgColor", value.asInstanceOf[js.Any])
+    inline def setExpandRowBgColor(value: String): Self = StObject.set(x, "expandRowBgColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandRowBgColorUndefined: Self = StObject.set(x, "expandRowBgColor", js.undefined)
+    inline def setExpandRowBgColorUndefined: Self = StObject.set(x, "expandRowBgColor", js.undefined)
     
-    @scala.inline
-    def setExpanding(value: js.Array[Double | String]): Self = StObject.set(x, "expanding", value.asInstanceOf[js.Any])
+    inline def setExpanding(value: js.Array[Double | String]): Self = StObject.set(x, "expanding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandingUndefined: Self = StObject.set(x, "expanding", js.undefined)
+    inline def setExpandingUndefined: Self = StObject.set(x, "expanding", js.undefined)
     
-    @scala.inline
-    def setExpandingVarargs(value: (Double | String)*): Self = StObject.set(x, "expanding", js.Array(value :_*))
+    inline def setExpandingVarargs(value: (Double | String)*): Self = StObject.set(x, "expanding", js.Array(value :_*))
     
-    @scala.inline
-    def setExportCSVBtn(
+    inline def setExportCSVBtn(
       value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
     ): Self = StObject.set(x, "exportCSVBtn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExportCSVBtnUndefined: Self = StObject.set(x, "exportCSVBtn", js.undefined)
+    inline def setExportCSVBtnUndefined: Self = StObject.set(x, "exportCSVBtn", js.undefined)
     
-    @scala.inline
-    def setExportCSVSeparator(value: String): Self = StObject.set(x, "exportCSVSeparator", value.asInstanceOf[js.Any])
+    inline def setExportCSVSeparator(value: String): Self = StObject.set(x, "exportCSVSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportCSVSeparatorUndefined: Self = StObject.set(x, "exportCSVSeparator", js.undefined)
+    inline def setExportCSVSeparatorUndefined: Self = StObject.set(x, "exportCSVSeparator", js.undefined)
     
-    @scala.inline
-    def setExportCSVText(value: String): Self = StObject.set(x, "exportCSVText", value.asInstanceOf[js.Any])
+    inline def setExportCSVText(value: String): Self = StObject.set(x, "exportCSVText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportCSVTextUndefined: Self = StObject.set(x, "exportCSVText", js.undefined)
+    inline def setExportCSVTextUndefined: Self = StObject.set(x, "exportCSVText", js.undefined)
     
-    @scala.inline
-    def setFirstPage(value: js.Any): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
+    inline def setFirstPage(value: js.Any): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageTitle(value: String): Self = StObject.set(x, "firstPageTitle", value.asInstanceOf[js.Any])
+    inline def setFirstPageTitle(value: String): Self = StObject.set(x, "firstPageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPageTitleUndefined: Self = StObject.set(x, "firstPageTitle", js.undefined)
+    inline def setFirstPageTitleUndefined: Self = StObject.set(x, "firstPageTitle", js.undefined)
     
-    @scala.inline
-    def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
+    inline def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
     
-    @scala.inline
-    def setHandleConfirmDeleteRow(value: (/* next */ js.Function0[Unit], /* rowKeys */ js.Array[Double | String]) => Unit): Self = StObject.set(x, "handleConfirmDeleteRow", js.Any.fromFunction2(value))
+    inline def setHandleConfirmDeleteRow(value: (/* next */ js.Function0[Unit], /* rowKeys */ js.Array[Double | String]) => Unit): Self = StObject.set(x, "handleConfirmDeleteRow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHandleConfirmDeleteRowUndefined: Self = StObject.set(x, "handleConfirmDeleteRow", js.undefined)
+    inline def setHandleConfirmDeleteRowUndefined: Self = StObject.set(x, "handleConfirmDeleteRow", js.undefined)
     
-    @scala.inline
-    def setHidePageListOnlyOnePage(value: Boolean): Self = StObject.set(x, "hidePageListOnlyOnePage", value.asInstanceOf[js.Any])
+    inline def setHidePageListOnlyOnePage(value: Boolean): Self = StObject.set(x, "hidePageListOnlyOnePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidePageListOnlyOnePageUndefined: Self = StObject.set(x, "hidePageListOnlyOnePage", js.undefined)
+    inline def setHidePageListOnlyOnePageUndefined: Self = StObject.set(x, "hidePageListOnlyOnePage", js.undefined)
     
-    @scala.inline
-    def setHideSizePerPage(value: Boolean): Self = StObject.set(x, "hideSizePerPage", value.asInstanceOf[js.Any])
+    inline def setHideSizePerPage(value: Boolean): Self = StObject.set(x, "hideSizePerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSizePerPageUndefined: Self = StObject.set(x, "hideSizePerPage", js.undefined)
+    inline def setHideSizePerPageUndefined: Self = StObject.set(x, "hideSizePerPage", js.undefined)
     
-    @scala.inline
-    def setIgnoreEditable(value: Boolean): Self = StObject.set(x, "ignoreEditable", value.asInstanceOf[js.Any])
+    inline def setIgnoreEditable(value: Boolean): Self = StObject.set(x, "ignoreEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreEditableUndefined: Self = StObject.set(x, "ignoreEditable", js.undefined)
+    inline def setIgnoreEditableUndefined: Self = StObject.set(x, "ignoreEditable", js.undefined)
     
-    @scala.inline
-    def setInsertBtn(
+    inline def setInsertBtn(
       value: /* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit] => ReactElement
     ): Self = StObject.set(x, "insertBtn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertBtnUndefined: Self = StObject.set(x, "insertBtn", js.undefined)
+    inline def setInsertBtnUndefined: Self = StObject.set(x, "insertBtn", js.undefined)
     
-    @scala.inline
-    def setInsertFailIndicator(value: String): Self = StObject.set(x, "insertFailIndicator", value.asInstanceOf[js.Any])
+    inline def setInsertFailIndicator(value: String): Self = StObject.set(x, "insertFailIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertFailIndicatorUndefined: Self = StObject.set(x, "insertFailIndicator", js.undefined)
+    inline def setInsertFailIndicatorUndefined: Self = StObject.set(x, "insertFailIndicator", js.undefined)
     
-    @scala.inline
-    def setInsertModal(
+    inline def setInsertModal(
       value: (/* onModalClose */ js.Function0[Unit], /* onSave */ js.Function1[/* row */ TRow, Unit], /* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ StringDictionary[String], /* ignoreEditable */ Boolean) => ReactElement
     ): Self = StObject.set(x, "insertModal", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setInsertModalBody(
+    inline def setInsertModalBody(
       value: (/* columns */ js.Array[InsertModalColumnDescription[TRow]], /* validateState */ StringDictionary[String], /* ignoreEditable */ Boolean) => ReactElement
     ): Self = StObject.set(x, "insertModalBody", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInsertModalBodyUndefined: Self = StObject.set(x, "insertModalBody", js.undefined)
+    inline def setInsertModalBodyUndefined: Self = StObject.set(x, "insertModalBody", js.undefined)
     
-    @scala.inline
-    def setInsertModalFooter(value: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement): Self = StObject.set(x, "insertModalFooter", js.Any.fromFunction2(value))
+    inline def setInsertModalFooter(value: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement): Self = StObject.set(x, "insertModalFooter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertModalFooterUndefined: Self = StObject.set(x, "insertModalFooter", js.undefined)
+    inline def setInsertModalFooterUndefined: Self = StObject.set(x, "insertModalFooter", js.undefined)
     
-    @scala.inline
-    def setInsertModalHeader(value: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement): Self = StObject.set(x, "insertModalHeader", js.Any.fromFunction2(value))
+    inline def setInsertModalHeader(value: (/* closeModal */ js.Function0[Unit], /* save */ js.Function0[Unit]) => ReactElement): Self = StObject.set(x, "insertModalHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertModalHeaderUndefined: Self = StObject.set(x, "insertModalHeader", js.undefined)
+    inline def setInsertModalHeaderUndefined: Self = StObject.set(x, "insertModalHeader", js.undefined)
     
-    @scala.inline
-    def setInsertModalUndefined: Self = StObject.set(x, "insertModal", js.undefined)
+    inline def setInsertModalUndefined: Self = StObject.set(x, "insertModal", js.undefined)
     
-    @scala.inline
-    def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+    inline def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+    inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     
-    @scala.inline
-    def setIsValidKey(value: /* key */ Double | String => String | Unit): Self = StObject.set(x, "isValidKey", js.Any.fromFunction1(value))
+    inline def setIsValidKey(value: /* key */ Double | String => String | Unit): Self = StObject.set(x, "isValidKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsValidKeyUndefined: Self = StObject.set(x, "isValidKey", js.undefined)
+    inline def setIsValidKeyUndefined: Self = StObject.set(x, "isValidKey", js.undefined)
     
-    @scala.inline
-    def setKeepSizePerPageState(value: Boolean): Self = StObject.set(x, "keepSizePerPageState", value.asInstanceOf[js.Any])
+    inline def setKeepSizePerPageState(value: Boolean): Self = StObject.set(x, "keepSizePerPageState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepSizePerPageStateUndefined: Self = StObject.set(x, "keepSizePerPageState", js.undefined)
+    inline def setKeepSizePerPageStateUndefined: Self = StObject.set(x, "keepSizePerPageState", js.undefined)
     
-    @scala.inline
-    def setLastPage(value: js.Any): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
+    inline def setLastPage(value: js.Any): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPageTitle(value: String): Self = StObject.set(x, "lastPageTitle", value.asInstanceOf[js.Any])
+    inline def setLastPageTitle(value: String): Self = StObject.set(x, "lastPageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPageTitleUndefined: Self = StObject.set(x, "lastPageTitle", js.undefined)
+    inline def setLastPageTitleUndefined: Self = StObject.set(x, "lastPageTitle", js.undefined)
     
-    @scala.inline
-    def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
+    inline def setLastPageUndefined: Self = StObject.set(x, "lastPage", js.undefined)
     
-    @scala.inline
-    def setNextPage(value: js.Any): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
+    inline def setNextPage(value: js.Any): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTitle(value: String): Self = StObject.set(x, "nextPageTitle", value.asInstanceOf[js.Any])
+    inline def setNextPageTitle(value: String): Self = StObject.set(x, "nextPageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTitleUndefined: Self = StObject.set(x, "nextPageTitle", js.undefined)
+    inline def setNextPageTitleUndefined: Self = StObject.set(x, "nextPageTitle", js.undefined)
     
-    @scala.inline
-    def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
+    inline def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
     
-    @scala.inline
-    def setNoAutoBOM(value: Boolean): Self = StObject.set(x, "noAutoBOM", value.asInstanceOf[js.Any])
+    inline def setNoAutoBOM(value: Boolean): Self = StObject.set(x, "noAutoBOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAutoBOMUndefined: Self = StObject.set(x, "noAutoBOM", js.undefined)
+    inline def setNoAutoBOMUndefined: Self = StObject.set(x, "noAutoBOM", js.undefined)
     
-    @scala.inline
-    def setNoDataText(value: String | ReactElement): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
+    inline def setNoDataText(value: String | ReactElement): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
+    inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
     
-    @scala.inline
-    def setOnAddRow(
+    inline def setOnAddRow(
       value: (/* row */ TRow, /* colInfo */ js.Array[ColumnDescription[TRow]], /* errorCallback */ js.Function1[/* message */ String, Unit]) => String | Boolean
     ): Self = StObject.set(x, "onAddRow", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnAddRowUndefined: Self = StObject.set(x, "onAddRow", js.undefined)
+    inline def setOnAddRowUndefined: Self = StObject.set(x, "onAddRow", js.undefined)
     
-    @scala.inline
-    def setOnCellEdit(
+    inline def setOnCellEdit(
       value: (/* row */ TRow, /* fieldName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ /* value */ js.Any) => /* import warning: importer.ImportType#apply Failed type conversion: TRow[string & keyof TRow] */ js.Any
     ): Self = StObject.set(x, "onCellEdit", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnCellEditUndefined: Self = StObject.set(x, "onCellEdit", js.undefined)
+    inline def setOnCellEditUndefined: Self = StObject.set(x, "onCellEdit", js.undefined)
     
-    @scala.inline
-    def setOnDeleteRow(value: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit): Self = StObject.set(x, "onDeleteRow", js.Any.fromFunction2(value))
+    inline def setOnDeleteRow(value: (/* rowKeys */ js.Array[Double | String], /* rows */ js.Array[TRow]) => Unit): Self = StObject.set(x, "onDeleteRow", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDeleteRowUndefined: Self = StObject.set(x, "onDeleteRow", js.undefined)
+    inline def setOnDeleteRowUndefined: Self = StObject.set(x, "onDeleteRow", js.undefined)
     
-    @scala.inline
-    def setOnExpand(
+    inline def setOnExpand(
       value: (/* rowKey */ Double | String, /* isExpand */ Boolean, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onExpand", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+    inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
     
-    @scala.inline
-    def setOnExportToCSV(value: () => js.Array[TRow]): Self = StObject.set(x, "onExportToCSV", js.Any.fromFunction0(value))
+    inline def setOnExportToCSV(value: () => js.Array[TRow]): Self = StObject.set(x, "onExportToCSV", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnExportToCSVUndefined: Self = StObject.set(x, "onExportToCSV", js.undefined)
+    inline def setOnExportToCSVUndefined: Self = StObject.set(x, "onExportToCSV", js.undefined)
     
-    @scala.inline
-    def setOnFilterChange(value: /* filterObject */ FilterData[js.Any] => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction1(value))
+    inline def setOnFilterChange(value: /* filterObject */ FilterData[js.Any] => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFilterChangeUndefined: Self = StObject.set(x, "onFilterChange", js.undefined)
+    inline def setOnFilterChangeUndefined: Self = StObject.set(x, "onFilterChange", js.undefined)
     
-    @scala.inline
-    def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
+    inline def setOnMouseEnter(value: () => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+    inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    @scala.inline
-    def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
+    inline def setOnMouseLeave(value: () => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
-    @scala.inline
-    def setOnPageChange(value: (/* page */ Double, /* sizePerPage */ Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
+    inline def setOnPageChange(value: (/* page */ Double, /* sizePerPage */ Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
+    inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
     
-    @scala.inline
-    def setOnRowClick(
+    inline def setOnRowClick(
       value: (/* row */ TRow, /* columnIndex */ Double, /* rowIndex */ Double, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onRowClick", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+    inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
-    @scala.inline
-    def setOnRowDoubleClick(value: (/* row */ TRow, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction2(value))
+    inline def setOnRowDoubleClick(value: (/* row */ TRow, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
+    inline def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
     
-    @scala.inline
-    def setOnRowMouseOut(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction2(value))
+    inline def setOnRowMouseOut(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
+    inline def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
     
-    @scala.inline
-    def setOnRowMouseOver(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction2(value))
+    inline def setOnRowMouseOver(value: (/* row */ TRow, /* e */ MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
+    inline def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
     
-    @scala.inline
-    def setOnSearchChange(
+    inline def setOnSearchChange(
       value: (/* searchText */ String, /* colInfos */ js.Array[ColumnDescription[TRow]], /* multiColumnSearch */ Boolean) => Unit
     ): Self = StObject.set(x, "onSearchChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnSearchChangeUndefined: Self = StObject.set(x, "onSearchChange", js.undefined)
+    inline def setOnSearchChangeUndefined: Self = StObject.set(x, "onSearchChange", js.undefined)
     
-    @scala.inline
-    def setOnSizePerPageList(value: /* sizePerPage */ Double => Unit): Self = StObject.set(x, "onSizePerPageList", js.Any.fromFunction1(value))
+    inline def setOnSizePerPageList(value: /* sizePerPage */ Double => Unit): Self = StObject.set(x, "onSizePerPageList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSizePerPageListUndefined: Self = StObject.set(x, "onSizePerPageList", js.undefined)
+    inline def setOnSizePerPageListUndefined: Self = StObject.set(x, "onSizePerPageList", js.undefined)
     
-    @scala.inline
-    def setOnSortChange(
+    inline def setOnSortChange(
       value: ((/* sortName */ js.Array[/* keyof TRow */ String]) | (/* keyof TRow */ /* sortName */ String), (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder)) => Unit
     ): Self = StObject.set(x, "onSortChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnSortChangeUndefined: Self = StObject.set(x, "onSortChange", js.undefined)
+    inline def setOnSortChangeUndefined: Self = StObject.set(x, "onSortChange", js.undefined)
     
-    @scala.inline
-    def setOnlyOneExpanding(value: Boolean): Self = StObject.set(x, "onlyOneExpanding", value.asInstanceOf[js.Any])
+    inline def setOnlyOneExpanding(value: Boolean): Self = StObject.set(x, "onlyOneExpanding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyOneExpandingUndefined: Self = StObject.set(x, "onlyOneExpanding", js.undefined)
+    inline def setOnlyOneExpandingUndefined: Self = StObject.set(x, "onlyOneExpanding", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStartIndex(value: Double): Self = StObject.set(x, "pageStartIndex", value.asInstanceOf[js.Any])
+    inline def setPageStartIndex(value: Double): Self = StObject.set(x, "pageStartIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStartIndexUndefined: Self = StObject.set(x, "pageStartIndex", js.undefined)
+    inline def setPageStartIndexUndefined: Self = StObject.set(x, "pageStartIndex", js.undefined)
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPaginationPanel(value: /* props */ PaginationPanelProps => ReactElement): Self = StObject.set(x, "paginationPanel", js.Any.fromFunction1(value))
+    inline def setPaginationPanel(value: /* props */ PaginationPanelProps => ReactElement): Self = StObject.set(x, "paginationPanel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPaginationPanelUndefined: Self = StObject.set(x, "paginationPanel", js.undefined)
+    inline def setPaginationPanelUndefined: Self = StObject.set(x, "paginationPanel", js.undefined)
     
-    @scala.inline
-    def setPaginationPosition(value: PaginationPostion): Self = StObject.set(x, "paginationPosition", value.asInstanceOf[js.Any])
+    inline def setPaginationPosition(value: PaginationPostion): Self = StObject.set(x, "paginationPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationPositionUndefined: Self = StObject.set(x, "paginationPosition", js.undefined)
+    inline def setPaginationPositionUndefined: Self = StObject.set(x, "paginationPosition", js.undefined)
     
-    @scala.inline
-    def setPaginationShowsTotal(
+    inline def setPaginationShowsTotal(
       value: Boolean | (js.Function3[/* start */ Double, /* to */ Double, /* total */ Double, String | ReactElement])
     ): Self = StObject.set(x, "paginationShowsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationShowsTotalFunction3(value: (/* start */ Double, /* to */ Double, /* total */ Double) => String | ReactElement): Self = StObject.set(x, "paginationShowsTotal", js.Any.fromFunction3(value))
+    inline def setPaginationShowsTotalFunction3(value: (/* start */ Double, /* to */ Double, /* total */ Double) => String | ReactElement): Self = StObject.set(x, "paginationShowsTotal", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPaginationShowsTotalUndefined: Self = StObject.set(x, "paginationShowsTotal", js.undefined)
+    inline def setPaginationShowsTotalUndefined: Self = StObject.set(x, "paginationShowsTotal", js.undefined)
     
-    @scala.inline
-    def setPaginationSize(value: Double): Self = StObject.set(x, "paginationSize", value.asInstanceOf[js.Any])
+    inline def setPaginationSize(value: Double): Self = StObject.set(x, "paginationSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationSizeUndefined: Self = StObject.set(x, "paginationSize", js.undefined)
+    inline def setPaginationSizeUndefined: Self = StObject.set(x, "paginationSize", js.undefined)
     
-    @scala.inline
-    def setPrePage(value: js.Any): Self = StObject.set(x, "prePage", value.asInstanceOf[js.Any])
+    inline def setPrePage(value: js.Any): Self = StObject.set(x, "prePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrePageTitle(value: String): Self = StObject.set(x, "prePageTitle", value.asInstanceOf[js.Any])
+    inline def setPrePageTitle(value: String): Self = StObject.set(x, "prePageTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrePageTitleUndefined: Self = StObject.set(x, "prePageTitle", js.undefined)
+    inline def setPrePageTitleUndefined: Self = StObject.set(x, "prePageTitle", js.undefined)
     
-    @scala.inline
-    def setPrePageUndefined: Self = StObject.set(x, "prePage", js.undefined)
+    inline def setPrePageUndefined: Self = StObject.set(x, "prePage", js.undefined)
     
-    @scala.inline
-    def setPrintToolBar(value: Boolean): Self = StObject.set(x, "printToolBar", value.asInstanceOf[js.Any])
+    inline def setPrintToolBar(value: Boolean): Self = StObject.set(x, "printToolBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintToolBarUndefined: Self = StObject.set(x, "printToolBar", js.undefined)
+    inline def setPrintToolBarUndefined: Self = StObject.set(x, "printToolBar", js.undefined)
     
-    @scala.inline
-    def setSaveText(value: String): Self = StObject.set(x, "saveText", value.asInstanceOf[js.Any])
+    inline def setSaveText(value: String): Self = StObject.set(x, "saveText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveTextUndefined: Self = StObject.set(x, "saveText", js.undefined)
+    inline def setSaveTextUndefined: Self = StObject.set(x, "saveText", js.undefined)
     
-    @scala.inline
-    def setSearchDelayTime(value: Double): Self = StObject.set(x, "searchDelayTime", value.asInstanceOf[js.Any])
+    inline def setSearchDelayTime(value: Double): Self = StObject.set(x, "searchDelayTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchDelayTimeUndefined: Self = StObject.set(x, "searchDelayTime", js.undefined)
+    inline def setSearchDelayTimeUndefined: Self = StObject.set(x, "searchDelayTime", js.undefined)
     
-    @scala.inline
-    def setSearchField(value: /* props */ SearchFieldProps => ReactElement): Self = StObject.set(x, "searchField", js.Any.fromFunction1(value))
+    inline def setSearchField(value: /* props */ SearchFieldProps => ReactElement): Self = StObject.set(x, "searchField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchFieldUndefined: Self = StObject.set(x, "searchField", js.undefined)
+    inline def setSearchFieldUndefined: Self = StObject.set(x, "searchField", js.undefined)
     
-    @scala.inline
-    def setSearchPanel(value: /* props */ SearchPanelProps => ReactElement): Self = StObject.set(x, "searchPanel", js.Any.fromFunction1(value))
+    inline def setSearchPanel(value: /* props */ SearchPanelProps => ReactElement): Self = StObject.set(x, "searchPanel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchPanelUndefined: Self = StObject.set(x, "searchPanel", js.undefined)
+    inline def setSearchPanelUndefined: Self = StObject.set(x, "searchPanel", js.undefined)
     
-    @scala.inline
-    def setShowSelectedOnlyBtn(
+    inline def setShowSelectedOnlyBtn(
       value: (/* onClick */ js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit], /* showSelected */ Boolean) => ReactElement
     ): Self = StObject.set(x, "showSelectedOnlyBtn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowSelectedOnlyBtnUndefined: Self = StObject.set(x, "showSelectedOnlyBtn", js.undefined)
+    inline def setShowSelectedOnlyBtnUndefined: Self = StObject.set(x, "showSelectedOnlyBtn", js.undefined)
     
-    @scala.inline
-    def setSizePerPage(value: Double): Self = StObject.set(x, "sizePerPage", value.asInstanceOf[js.Any])
+    inline def setSizePerPage(value: Double): Self = StObject.set(x, "sizePerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPageDropDown(value: /* props */ SizePerPageFunctionProps => ReactElement): Self = StObject.set(x, "sizePerPageDropDown", js.Any.fromFunction1(value))
+    inline def setSizePerPageDropDown(value: /* props */ SizePerPageFunctionProps => ReactElement): Self = StObject.set(x, "sizePerPageDropDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSizePerPageDropDownUndefined: Self = StObject.set(x, "sizePerPageDropDown", js.undefined)
+    inline def setSizePerPageDropDownUndefined: Self = StObject.set(x, "sizePerPageDropDown", js.undefined)
     
-    @scala.inline
-    def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
+    inline def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPageListUndefined: Self = StObject.set(x, "sizePerPageList", js.undefined)
+    inline def setSizePerPageListUndefined: Self = StObject.set(x, "sizePerPageList", js.undefined)
     
-    @scala.inline
-    def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
+    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
     
-    @scala.inline
-    def setSizePerPageUndefined: Self = StObject.set(x, "sizePerPage", js.undefined)
+    inline def setSizePerPageUndefined: Self = StObject.set(x, "sizePerPage", js.undefined)
     
-    @scala.inline
-    def setSortIndicator(value: Boolean): Self = StObject.set(x, "sortIndicator", value.asInstanceOf[js.Any])
+    inline def setSortIndicator(value: Boolean): Self = StObject.set(x, "sortIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortIndicatorUndefined: Self = StObject.set(x, "sortIndicator", js.undefined)
+    inline def setSortIndicatorUndefined: Self = StObject.set(x, "sortIndicator", js.undefined)
     
-    @scala.inline
-    def setSortName(value: (/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])): Self = StObject.set(x, "sortName", value.asInstanceOf[js.Any])
+    inline def setSortName(value: (/* keyof TRow */ String) | (js.Array[/* keyof TRow */ String])): Self = StObject.set(x, "sortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortNameUndefined: Self = StObject.set(x, "sortName", js.undefined)
+    inline def setSortNameUndefined: Self = StObject.set(x, "sortName", js.undefined)
     
-    @scala.inline
-    def setSortNameVarargs(value: (/* keyof TRow */ String)*): Self = StObject.set(x, "sortName", js.Array(value :_*))
+    inline def setSortNameVarargs(value: (/* keyof TRow */ String)*): Self = StObject.set(x, "sortName", js.Array(value :_*))
     
-    @scala.inline
-    def setSortOrder(value: SortOrder | js.Array[SortOrder]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder | js.Array[SortOrder]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    @scala.inline
-    def setSortOrderVarargs(value: SortOrder*): Self = StObject.set(x, "sortOrder", js.Array(value :_*))
+    inline def setSortOrderVarargs(value: SortOrder*): Self = StObject.set(x, "sortOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setToolBar(value: /* props */ ToolBarProps => ReactElement): Self = StObject.set(x, "toolBar", js.Any.fromFunction1(value))
+    inline def setToolBar(value: /* props */ ToolBarProps => ReactElement): Self = StObject.set(x, "toolBar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToolBarUndefined: Self = StObject.set(x, "toolBar", js.undefined)
+    inline def setToolBarUndefined: Self = StObject.set(x, "toolBar", js.undefined)
     
-    @scala.inline
-    def setWithFirstAndLast(value: Boolean): Self = StObject.set(x, "withFirstAndLast", value.asInstanceOf[js.Any])
+    inline def setWithFirstAndLast(value: Boolean): Self = StObject.set(x, "withFirstAndLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithFirstAndLastUndefined: Self = StObject.set(x, "withFirstAndLast", js.undefined)
+    inline def setWithFirstAndLastUndefined: Self = StObject.set(x, "withFirstAndLast", js.undefined)
     
-    @scala.inline
-    def setWithoutNoDataText(value: Boolean): Self = StObject.set(x, "withoutNoDataText", value.asInstanceOf[js.Any])
+    inline def setWithoutNoDataText(value: Boolean): Self = StObject.set(x, "withoutNoDataText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithoutNoDataTextUndefined: Self = StObject.set(x, "withoutNoDataText", js.undefined)
+    inline def setWithoutNoDataTextUndefined: Self = StObject.set(x, "withoutNoDataText", js.undefined)
   }
 }

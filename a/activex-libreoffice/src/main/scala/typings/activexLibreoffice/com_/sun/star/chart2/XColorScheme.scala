@@ -24,8 +24,7 @@ trait XColorScheme
 }
 object XColorScheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getColorByIndex: Double => Color,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XColorScheme {
     __obj.asInstanceOf[XColorScheme]
   }
   
-  @scala.inline
-  implicit class XColorSchemeMutableBuilder[Self <: XColorScheme] (val x: Self) extends AnyVal {
+  extension [Self <: XColorScheme](x: Self) {
     
-    @scala.inline
-    def setGetColorByIndex(value: Double => Color): Self = StObject.set(x, "getColorByIndex", js.Any.fromFunction1(value))
+    inline def setGetColorByIndex(value: Double => Color): Self = StObject.set(x, "getColorByIndex", js.Any.fromFunction1(value))
   }
 }

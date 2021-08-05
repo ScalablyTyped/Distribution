@@ -14,31 +14,23 @@ trait EventMessageResponse
 }
 object EventMessageResponse {
   
-  @scala.inline
-  def apply(): EventMessageResponse = {
+  inline def apply(): EventMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventMessageResponse]
   }
   
-  @scala.inline
-  implicit class EventMessageResponseMutableBuilder[Self <: EventMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EventMessageResponse](x: Self) {
     
-    @scala.inline
-    def setProposedNewTime(value: NullableOption[TimeSlot]): Self = StObject.set(x, "proposedNewTime", value.asInstanceOf[js.Any])
+    inline def setProposedNewTime(value: NullableOption[TimeSlot]): Self = StObject.set(x, "proposedNewTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposedNewTimeNull: Self = StObject.set(x, "proposedNewTime", null)
+    inline def setProposedNewTimeNull: Self = StObject.set(x, "proposedNewTime", null)
     
-    @scala.inline
-    def setProposedNewTimeUndefined: Self = StObject.set(x, "proposedNewTime", js.undefined)
+    inline def setProposedNewTimeUndefined: Self = StObject.set(x, "proposedNewTime", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: NullableOption[ResponseType]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: NullableOption[ResponseType]): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeNull: Self = StObject.set(x, "responseType", null)
+    inline def setResponseTypeNull: Self = StObject.set(x, "responseType", null)
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
   }
 }

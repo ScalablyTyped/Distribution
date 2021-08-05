@@ -24,8 +24,7 @@ object timeMod {
     @JSImport("fundamental-react/lib/Time/Time", "default.displayName")
     @js.native
     def displayName: typings.fundamentalReact.fundamentalReactStrings.Time = js.native
-    @scala.inline
-    def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Time): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Time): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   type Time = Component[TimeProps, js.Object, js.Any]
@@ -48,56 +47,40 @@ object timeMod {
   }
   object TimeBaseProps {
     
-    @scala.inline
-    def apply(): TimeBaseProps = {
+    inline def apply(): TimeBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeBaseProps]
     }
     
-    @scala.inline
-    implicit class TimeBasePropsMutableBuilder[Self <: TimeBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimeBaseProps](x: Self) {
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setFormat12Hours(value: Boolean): Self = StObject.set(x, "format12Hours", value.asInstanceOf[js.Any])
+      inline def setFormat12Hours(value: Boolean): Self = StObject.set(x, "format12Hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat12HoursUndefined: Self = StObject.set(x, "format12Hours", js.undefined)
+      inline def setFormat12HoursUndefined: Self = StObject.set(x, "format12Hours", js.undefined)
       
-      @scala.inline
-      def setShowHour(value: Boolean): Self = StObject.set(x, "showHour", value.asInstanceOf[js.Any])
+      inline def setShowHour(value: Boolean): Self = StObject.set(x, "showHour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHourUndefined: Self = StObject.set(x, "showHour", js.undefined)
+      inline def setShowHourUndefined: Self = StObject.set(x, "showHour", js.undefined)
       
-      @scala.inline
-      def setShowMinute(value: Boolean): Self = StObject.set(x, "showMinute", value.asInstanceOf[js.Any])
+      inline def setShowMinute(value: Boolean): Self = StObject.set(x, "showMinute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMinuteUndefined: Self = StObject.set(x, "showMinute", js.undefined)
+      inline def setShowMinuteUndefined: Self = StObject.set(x, "showMinute", js.undefined)
       
-      @scala.inline
-      def setShowSecond(value: Boolean): Self = StObject.set(x, "showSecond", value.asInstanceOf[js.Any])
+      inline def setShowSecond(value: Boolean): Self = StObject.set(x, "showSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
+      inline def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
       
-      @scala.inline
-      def setSpinners(value: Boolean): Self = StObject.set(x, "spinners", value.asInstanceOf[js.Any])
+      inline def setSpinners(value: Boolean): Self = StObject.set(x, "spinners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnersUndefined: Self = StObject.set(x, "spinners", js.undefined)
+      inline def setSpinnersUndefined: Self = StObject.set(x, "spinners", js.undefined)
       
-      @scala.inline
-      def setTime(value: Hour): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Hour): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
   
@@ -140,110 +123,76 @@ object timeMod {
   }
   object TimeProps {
     
-    @scala.inline
-    def apply(): TimeProps = {
+    inline def apply(): TimeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimeProps]
     }
     
-    @scala.inline
-    implicit class TimePropsMutableBuilder[Self <: TimeProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimeProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHoursDownButtonProps(value: js.Any): Self = StObject.set(x, "hoursDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setHoursDownButtonProps(value: js.Any): Self = StObject.set(x, "hoursDownButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursDownButtonPropsUndefined: Self = StObject.set(x, "hoursDownButtonProps", js.undefined)
+      inline def setHoursDownButtonPropsUndefined: Self = StObject.set(x, "hoursDownButtonProps", js.undefined)
       
-      @scala.inline
-      def setHoursInputProps(value: js.Any): Self = StObject.set(x, "hoursInputProps", value.asInstanceOf[js.Any])
+      inline def setHoursInputProps(value: js.Any): Self = StObject.set(x, "hoursInputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursInputPropsUndefined: Self = StObject.set(x, "hoursInputProps", js.undefined)
+      inline def setHoursInputPropsUndefined: Self = StObject.set(x, "hoursInputProps", js.undefined)
       
-      @scala.inline
-      def setHoursUpButtonProps(value: js.Any): Self = StObject.set(x, "hoursUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setHoursUpButtonProps(value: js.Any): Self = StObject.set(x, "hoursUpButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoursUpButtonPropsUndefined: Self = StObject.set(x, "hoursUpButtonProps", js.undefined)
+      inline def setHoursUpButtonPropsUndefined: Self = StObject.set(x, "hoursUpButtonProps", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLocalizedText(value: MeridiemAM): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: MeridiemAM): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      @scala.inline
-      def setMeridiemDownButtonProps(value: js.Any): Self = StObject.set(x, "meridiemDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setMeridiemDownButtonProps(value: js.Any): Self = StObject.set(x, "meridiemDownButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeridiemDownButtonPropsUndefined: Self = StObject.set(x, "meridiemDownButtonProps", js.undefined)
+      inline def setMeridiemDownButtonPropsUndefined: Self = StObject.set(x, "meridiemDownButtonProps", js.undefined)
       
-      @scala.inline
-      def setMeridiemInputProps(value: js.Any): Self = StObject.set(x, "meridiemInputProps", value.asInstanceOf[js.Any])
+      inline def setMeridiemInputProps(value: js.Any): Self = StObject.set(x, "meridiemInputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeridiemInputPropsUndefined: Self = StObject.set(x, "meridiemInputProps", js.undefined)
+      inline def setMeridiemInputPropsUndefined: Self = StObject.set(x, "meridiemInputProps", js.undefined)
       
-      @scala.inline
-      def setMeridiemUpButtonProps(value: js.Any): Self = StObject.set(x, "meridiemUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setMeridiemUpButtonProps(value: js.Any): Self = StObject.set(x, "meridiemUpButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeridiemUpButtonPropsUndefined: Self = StObject.set(x, "meridiemUpButtonProps", js.undefined)
+      inline def setMeridiemUpButtonPropsUndefined: Self = StObject.set(x, "meridiemUpButtonProps", js.undefined)
       
-      @scala.inline
-      def setMinutesDownButtonProps(value: js.Any): Self = StObject.set(x, "minutesDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setMinutesDownButtonProps(value: js.Any): Self = StObject.set(x, "minutesDownButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesDownButtonPropsUndefined: Self = StObject.set(x, "minutesDownButtonProps", js.undefined)
+      inline def setMinutesDownButtonPropsUndefined: Self = StObject.set(x, "minutesDownButtonProps", js.undefined)
       
-      @scala.inline
-      def setMinutesInputProps(value: js.Any): Self = StObject.set(x, "minutesInputProps", value.asInstanceOf[js.Any])
+      inline def setMinutesInputProps(value: js.Any): Self = StObject.set(x, "minutesInputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesInputPropsUndefined: Self = StObject.set(x, "minutesInputProps", js.undefined)
+      inline def setMinutesInputPropsUndefined: Self = StObject.set(x, "minutesInputProps", js.undefined)
       
-      @scala.inline
-      def setMinutesUpButtonProps(value: js.Any): Self = StObject.set(x, "minutesUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setMinutesUpButtonProps(value: js.Any): Self = StObject.set(x, "minutesUpButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutesUpButtonPropsUndefined: Self = StObject.set(x, "minutesUpButtonProps", js.undefined)
+      inline def setMinutesUpButtonPropsUndefined: Self = StObject.set(x, "minutesUpButtonProps", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* time */ Hour => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* time */ Hour => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSecondsDownButtonProps(value: js.Any): Self = StObject.set(x, "secondsDownButtonProps", value.asInstanceOf[js.Any])
+      inline def setSecondsDownButtonProps(value: js.Any): Self = StObject.set(x, "secondsDownButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsDownButtonPropsUndefined: Self = StObject.set(x, "secondsDownButtonProps", js.undefined)
+      inline def setSecondsDownButtonPropsUndefined: Self = StObject.set(x, "secondsDownButtonProps", js.undefined)
       
-      @scala.inline
-      def setSecondsInputProps(value: js.Any): Self = StObject.set(x, "secondsInputProps", value.asInstanceOf[js.Any])
+      inline def setSecondsInputProps(value: js.Any): Self = StObject.set(x, "secondsInputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsInputPropsUndefined: Self = StObject.set(x, "secondsInputProps", js.undefined)
+      inline def setSecondsInputPropsUndefined: Self = StObject.set(x, "secondsInputProps", js.undefined)
       
-      @scala.inline
-      def setSecondsUpButtonProps(value: js.Any): Self = StObject.set(x, "secondsUpButtonProps", value.asInstanceOf[js.Any])
+      inline def setSecondsUpButtonProps(value: js.Any): Self = StObject.set(x, "secondsUpButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsUpButtonPropsUndefined: Self = StObject.set(x, "secondsUpButtonProps", js.undefined)
+      inline def setSecondsUpButtonPropsUndefined: Self = StObject.set(x, "secondsUpButtonProps", js.undefined)
     }
   }
 }

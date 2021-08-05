@@ -12,11 +12,11 @@ object abstractDistanceCalculatorMod {
   @js.native
   abstract class AbstractDistanceCalculator () extends StObject {
     
-    var _maxDistance: Double = js.native
+    /* protected */ var _maxDistance: Double = js.native
     
     /* protected */ def _setDefaults(): Unit = js.native
     
-    var _whitePoint: G = js.native
+    /* protected */ var _whitePoint: G = js.native
     
     def calculateNormalized(colorA: Point, colorB: Point): Double = js.native
     

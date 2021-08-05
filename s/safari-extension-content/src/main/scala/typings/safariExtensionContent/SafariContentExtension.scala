@@ -10,16 +10,13 @@ trait SafariContentExtension extends StObject {
 }
 object SafariContentExtension {
   
-  @scala.inline
-  def apply(baseURI: String): SafariContentExtension = {
+  inline def apply(baseURI: String): SafariContentExtension = {
     val __obj = js.Dynamic.literal(baseURI = baseURI.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafariContentExtension]
   }
   
-  @scala.inline
-  implicit class SafariContentExtensionMutableBuilder[Self <: SafariContentExtension] (val x: Self) extends AnyVal {
+  extension [Self <: SafariContentExtension](x: Self) {
     
-    @scala.inline
-    def setBaseURI(value: String): Self = StObject.set(x, "baseURI", value.asInstanceOf[js.Any])
+    inline def setBaseURI(value: String): Self = StObject.set(x, "baseURI", value.asInstanceOf[js.Any])
   }
 }

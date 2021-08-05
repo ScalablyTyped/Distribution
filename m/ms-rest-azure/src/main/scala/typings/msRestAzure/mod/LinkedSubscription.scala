@@ -44,8 +44,7 @@ trait LinkedSubscription extends StObject {
 }
 object LinkedSubscription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizationSource: String,
     environmentName: String,
     id: String,
@@ -58,28 +57,20 @@ object LinkedSubscription {
     __obj.asInstanceOf[LinkedSubscription]
   }
   
-  @scala.inline
-  implicit class LinkedSubscriptionMutableBuilder[Self <: LinkedSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedSubscription](x: Self) {
     
-    @scala.inline
-    def setAuthorizationSource(value: String): Self = StObject.set(x, "authorizationSource", value.asInstanceOf[js.Any])
+    inline def setAuthorizationSource(value: String): Self = StObject.set(x, "authorizationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentName(value: String): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: String): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: LinkedUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: LinkedUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

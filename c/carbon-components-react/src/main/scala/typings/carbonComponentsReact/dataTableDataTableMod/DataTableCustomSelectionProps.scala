@@ -31,8 +31,7 @@ trait DataTableCustomSelectionProps[R /* <: DataTableRow[String] */] extends StO
 }
 object DataTableCustomSelectionProps {
   
-  @scala.inline
-  def apply[R /* <: DataTableRow[String] */](
+  inline def apply[R /* <: DataTableRow[String] */](
     checked: (NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: R['isSelected'] */ js.Any
     ]) | Boolean,
@@ -46,43 +45,32 @@ object DataTableCustomSelectionProps {
     __obj.asInstanceOf[DataTableCustomSelectionProps[R]]
   }
   
-  @scala.inline
-  implicit class DataTableCustomSelectionPropsMutableBuilder[Self <: DataTableCustomSelectionProps[?], R /* <: DataTableRow[String] */] (val x: Self & DataTableCustomSelectionProps[R]) extends AnyVal {
+  extension [Self <: DataTableCustomSelectionProps[?], R /* <: DataTableRow[String] */](x: Self & DataTableCustomSelectionProps[R]) {
     
-    @scala.inline
-    def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+    inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+    inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
     
-    @scala.inline
-    def setChecked(
+    inline def setChecked(
       value: (NonNullable[
           /* import warning: importer.ImportType#apply Failed type conversion: R['isSelected'] */ js.Any
         ]) | Boolean
     ): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(
+    inline def setDisabled(
       value: /* import warning: importer.ImportType#apply Failed type conversion: R['disabled'] */ js.Any
     ): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSelect(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRadio(value: Extract[js.UndefOr[Boolean], Boolean]): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    inline def setRadio(value: Extract[js.UndefOr[Boolean], Boolean]): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
+    inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
   }
 }

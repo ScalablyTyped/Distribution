@@ -37,32 +37,24 @@ object Overview {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.datavisualization.Overview.Model = {
+    inline def apply(): typings.ejWebAll.ej.datavisualization.Overview.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Overview.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Overview.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.datavisualization.Overview.Model](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setSourceID(value: String): Self = StObject.set(x, "sourceID", value.asInstanceOf[js.Any])
+      inline def setSourceID(value: String): Self = StObject.set(x, "sourceID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceIDUndefined: Self = StObject.set(x, "sourceID", js.undefined)
+      inline def setSourceIDUndefined: Self = StObject.set(x, "sourceID", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

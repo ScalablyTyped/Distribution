@@ -25,8 +25,7 @@ trait ParentNode extends StObject {
 }
 object ParentNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     append: /* repeated */ Node | String => Unit,
     children: HTMLCollection,
     prepend: /* repeated */ Node | String => Unit
@@ -35,16 +34,12 @@ object ParentNode {
     __obj.asInstanceOf[ParentNode]
   }
   
-  @scala.inline
-  implicit class ParentNodeMutableBuilder[Self <: ParentNode] (val x: Self) extends AnyVal {
+  extension [Self <: ParentNode](x: Self) {
     
-    @scala.inline
-    def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildren(value: HTMLCollection): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: HTMLCollection): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrepend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction1(value))
+    inline def setPrepend(value: /* repeated */ Node | String => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction1(value))
   }
 }

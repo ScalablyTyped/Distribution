@@ -11,22 +11,17 @@ trait ClientStatusResponse extends StObject {
 }
 object ClientStatusResponse {
   
-  @scala.inline
-  def apply(): ClientStatusResponse = {
+  inline def apply(): ClientStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientStatusResponse]
   }
   
-  @scala.inline
-  implicit class ClientStatusResponseMutableBuilder[Self <: ClientStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ClientStatusResponse](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Array[ClientConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Array[ClientConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setConfigVarargs(value: ClientConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
+    inline def setConfigVarargs(value: ClientConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
   }
 }

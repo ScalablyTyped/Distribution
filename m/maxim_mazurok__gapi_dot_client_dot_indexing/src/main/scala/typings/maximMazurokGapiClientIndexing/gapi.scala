@@ -21,20 +21,16 @@ object gapi {
       }
       object PublishUrlNotificationResponse {
         
-        @scala.inline
-        def apply(): PublishUrlNotificationResponse = {
+        inline def apply(): PublishUrlNotificationResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[PublishUrlNotificationResponse]
         }
         
-        @scala.inline
-        implicit class PublishUrlNotificationResponseMutableBuilder[Self <: PublishUrlNotificationResponse] (val x: Self) extends AnyVal {
+        extension [Self <: PublishUrlNotificationResponse](x: Self) {
           
-          @scala.inline
-          def setUrlNotificationMetadata(value: UrlNotificationMetadata): Self = StObject.set(x, "urlNotificationMetadata", value.asInstanceOf[js.Any])
+          inline def setUrlNotificationMetadata(value: UrlNotificationMetadata): Self = StObject.set(x, "urlNotificationMetadata", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlNotificationMetadataUndefined: Self = StObject.set(x, "urlNotificationMetadata", js.undefined)
+          inline def setUrlNotificationMetadataUndefined: Self = StObject.set(x, "urlNotificationMetadata", js.undefined)
         }
       }
       
@@ -51,32 +47,24 @@ object gapi {
       }
       object UrlNotification {
         
-        @scala.inline
-        def apply(): UrlNotification = {
+        inline def apply(): UrlNotification = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[UrlNotification]
         }
         
-        @scala.inline
-        implicit class UrlNotificationMutableBuilder[Self <: UrlNotification] (val x: Self) extends AnyVal {
+        extension [Self <: UrlNotification](x: Self) {
           
-          @scala.inline
-          def setNotifyTime(value: String): Self = StObject.set(x, "notifyTime", value.asInstanceOf[js.Any])
+          inline def setNotifyTime(value: String): Self = StObject.set(x, "notifyTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNotifyTimeUndefined: Self = StObject.set(x, "notifyTime", js.undefined)
+          inline def setNotifyTimeUndefined: Self = StObject.set(x, "notifyTime", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+          inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         }
       }
       
@@ -93,32 +81,24 @@ object gapi {
       }
       object UrlNotificationMetadata {
         
-        @scala.inline
-        def apply(): UrlNotificationMetadata = {
+        inline def apply(): UrlNotificationMetadata = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[UrlNotificationMetadata]
         }
         
-        @scala.inline
-        implicit class UrlNotificationMetadataMutableBuilder[Self <: UrlNotificationMetadata] (val x: Self) extends AnyVal {
+        extension [Self <: UrlNotificationMetadata](x: Self) {
           
-          @scala.inline
-          def setLatestRemove(value: UrlNotification): Self = StObject.set(x, "latestRemove", value.asInstanceOf[js.Any])
+          inline def setLatestRemove(value: UrlNotification): Self = StObject.set(x, "latestRemove", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLatestRemoveUndefined: Self = StObject.set(x, "latestRemove", js.undefined)
+          inline def setLatestRemoveUndefined: Self = StObject.set(x, "latestRemove", js.undefined)
           
-          @scala.inline
-          def setLatestUpdate(value: UrlNotification): Self = StObject.set(x, "latestUpdate", value.asInstanceOf[js.Any])
+          inline def setLatestUpdate(value: UrlNotification): Self = StObject.set(x, "latestUpdate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLatestUpdateUndefined: Self = StObject.set(x, "latestUpdate", js.undefined)
+          inline def setLatestUpdateUndefined: Self = StObject.set(x, "latestUpdate", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         }
       }
       

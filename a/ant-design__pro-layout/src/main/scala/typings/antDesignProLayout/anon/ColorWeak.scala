@@ -12,25 +12,19 @@ trait ColorWeak extends StObject {
 }
 object ColorWeak {
   
-  @scala.inline
-  def apply(): ColorWeak = {
+  inline def apply(): ColorWeak = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorWeak]
   }
   
-  @scala.inline
-  implicit class ColorWeakMutableBuilder[Self <: ColorWeak] (val x: Self) extends AnyVal {
+  extension [Self <: ColorWeak](x: Self) {
     
-    @scala.inline
-    def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
+    inline def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorWeakUndefined: Self = StObject.set(x, "colorWeak", js.undefined)
+    inline def setColorWeakUndefined: Self = StObject.set(x, "colorWeak", js.undefined)
     
-    @scala.inline
-    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+    inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+    inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
   }
 }

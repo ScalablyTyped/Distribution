@@ -19,8 +19,7 @@ trait XTitleChangeBroadcaster
 }
 object XTitleChangeBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addTitleChangeListener: XTitleChangeListener => Unit,
     queryInterface: `type` => js.Any,
@@ -31,13 +30,10 @@ object XTitleChangeBroadcaster {
     __obj.asInstanceOf[XTitleChangeBroadcaster]
   }
   
-  @scala.inline
-  implicit class XTitleChangeBroadcasterMutableBuilder[Self <: XTitleChangeBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XTitleChangeBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddTitleChangeListener(value: XTitleChangeListener => Unit): Self = StObject.set(x, "addTitleChangeListener", js.Any.fromFunction1(value))
+    inline def setAddTitleChangeListener(value: XTitleChangeListener => Unit): Self = StObject.set(x, "addTitleChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTitleChangeListener(value: XTitleChangeListener => Unit): Self = StObject.set(x, "removeTitleChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveTitleChangeListener(value: XTitleChangeListener => Unit): Self = StObject.set(x, "removeTitleChangeListener", js.Any.fromFunction1(value))
   }
 }

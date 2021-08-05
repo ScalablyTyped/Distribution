@@ -16,17 +16,14 @@ object typesSameFileContentExceptionMod {
   }
   object SameFileContentException {
     
-    @scala.inline
-    def apply(): SameFileContentException = {
+    inline def apply(): SameFileContentException = {
       val __obj = js.Dynamic.literal(name = "SameFileContentException")
       __obj.asInstanceOf[SameFileContentException]
     }
     
-    @scala.inline
-    implicit class SameFileContentExceptionMutableBuilder[Self <: SameFileContentException] (val x: Self) extends AnyVal {
+    extension [Self <: SameFileContentException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SameFileContentException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

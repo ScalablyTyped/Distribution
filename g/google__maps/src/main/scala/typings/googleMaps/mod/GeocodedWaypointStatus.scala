@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeocodedWaypointStatus extends StObject
 object GeocodedWaypointStatus {
   
-  @scala.inline
-  def OK: typings.googleMaps.googleMapsStrings.OK = "OK".asInstanceOf[typings.googleMaps.googleMapsStrings.OK]
+  inline def OK: typings.googleMaps.googleMapsStrings.OK = "OK".asInstanceOf[typings.googleMaps.googleMapsStrings.OK]
   
-  @scala.inline
-  def ZERO_RESULTS: typings.googleMaps.googleMapsStrings.ZERO_RESULTS = "ZERO_RESULTS".asInstanceOf[typings.googleMaps.googleMapsStrings.ZERO_RESULTS]
+  inline def ZERO_RESULTS: typings.googleMaps.googleMapsStrings.ZERO_RESULTS = "ZERO_RESULTS".asInstanceOf[typings.googleMaps.googleMapsStrings.ZERO_RESULTS]
 }

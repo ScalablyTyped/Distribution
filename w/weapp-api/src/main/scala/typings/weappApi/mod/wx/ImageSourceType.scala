@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageSourceType extends StObject
 object ImageSourceType {
   
-  @scala.inline
-  def album: typings.weappApi.weappApiStrings.album = "album".asInstanceOf[typings.weappApi.weappApiStrings.album]
+  inline def album: typings.weappApi.weappApiStrings.album = "album".asInstanceOf[typings.weappApi.weappApiStrings.album]
   
-  @scala.inline
-  def camera: typings.weappApi.weappApiStrings.camera = "camera".asInstanceOf[typings.weappApi.weappApiStrings.camera]
+  inline def camera: typings.weappApi.weappApiStrings.camera = "camera".asInstanceOf[typings.weappApi.weappApiStrings.camera]
 }

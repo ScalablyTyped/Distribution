@@ -21,8 +21,7 @@ trait PaymentMethodGateway extends StObject {
 }
 object PaymentMethodGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]],
     delete: String => js.Promise[Unit],
     find: String => js.Promise[PaymentMethod],
@@ -34,25 +33,18 @@ object PaymentMethodGateway {
     __obj.asInstanceOf[PaymentMethodGateway]
   }
   
-  @scala.inline
-  implicit class PaymentMethodGatewayMutableBuilder[Self <: PaymentMethodGateway] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodGateway](x: Self) {
     
-    @scala.inline
-    def setCreate(value: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFind(value: String => js.Promise[PaymentMethod]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => js.Promise[PaymentMethod]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGrant(value: (String, AllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "grant", js.Any.fromFunction2(value))
+    inline def setGrant(value: (String, AllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "grant", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRevoke(value: String => js.Promise[Unit]): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
+    inline def setRevoke(value: String => js.Promise[Unit]): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: (String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

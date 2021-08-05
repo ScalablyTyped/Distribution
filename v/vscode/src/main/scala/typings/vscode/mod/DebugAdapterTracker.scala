@@ -41,49 +41,35 @@ trait DebugAdapterTracker extends StObject {
 }
 object DebugAdapterTracker {
   
-  @scala.inline
-  def apply(): DebugAdapterTracker = {
+  inline def apply(): DebugAdapterTracker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugAdapterTracker]
   }
   
-  @scala.inline
-  implicit class DebugAdapterTrackerMutableBuilder[Self <: DebugAdapterTracker] (val x: Self) extends AnyVal {
+  extension [Self <: DebugAdapterTracker](x: Self) {
     
-    @scala.inline
-    def setOnDidSendMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onDidSendMessage", js.Any.fromFunction1(value))
+    inline def setOnDidSendMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onDidSendMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidSendMessageUndefined: Self = StObject.set(x, "onDidSendMessage", js.undefined)
+    inline def setOnDidSendMessageUndefined: Self = StObject.set(x, "onDidSendMessage", js.undefined)
     
-    @scala.inline
-    def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnExit(value: (/* code */ js.UndefOr[Double], /* signal */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction2(value))
+    inline def setOnExit(value: (/* code */ js.UndefOr[Double], /* signal */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+    inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    @scala.inline
-    def setOnWillReceiveMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onWillReceiveMessage", js.Any.fromFunction1(value))
+    inline def setOnWillReceiveMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onWillReceiveMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnWillReceiveMessageUndefined: Self = StObject.set(x, "onWillReceiveMessage", js.undefined)
+    inline def setOnWillReceiveMessageUndefined: Self = StObject.set(x, "onWillReceiveMessage", js.undefined)
     
-    @scala.inline
-    def setOnWillStartSession(value: () => Unit): Self = StObject.set(x, "onWillStartSession", js.Any.fromFunction0(value))
+    inline def setOnWillStartSession(value: () => Unit): Self = StObject.set(x, "onWillStartSession", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnWillStartSessionUndefined: Self = StObject.set(x, "onWillStartSession", js.undefined)
+    inline def setOnWillStartSessionUndefined: Self = StObject.set(x, "onWillStartSession", js.undefined)
     
-    @scala.inline
-    def setOnWillStopSession(value: () => Unit): Self = StObject.set(x, "onWillStopSession", js.Any.fromFunction0(value))
+    inline def setOnWillStopSession(value: () => Unit): Self = StObject.set(x, "onWillStopSession", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnWillStopSessionUndefined: Self = StObject.set(x, "onWillStopSession", js.undefined)
+    inline def setOnWillStopSessionUndefined: Self = StObject.set(x, "onWillStopSession", js.undefined)
   }
 }

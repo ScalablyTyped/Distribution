@@ -13,8 +13,7 @@ trait Charset
 }
 object Charset {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -35,10 +34,8 @@ object Charset {
     __obj.asInstanceOf[Charset]
   }
   
-  @scala.inline
-  implicit class CharsetMutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
+  extension [Self <: Charset](x: Self) {
     
-    @scala.inline
-    def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait SerialisedInvertedIndex extends StObject {
 }
 object SerialisedInvertedIndex {
   
-  @scala.inline
-  def apply(root: InvertedIndexNode): SerialisedInvertedIndex = {
+  inline def apply(root: InvertedIndexNode): SerialisedInvertedIndex = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerialisedInvertedIndex]
   }
   
-  @scala.inline
-  implicit class SerialisedInvertedIndexMutableBuilder[Self <: SerialisedInvertedIndex] (val x: Self) extends AnyVal {
+  extension [Self <: SerialisedInvertedIndex](x: Self) {
     
-    @scala.inline
-    def setRoot(value: InvertedIndexNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: InvertedIndexNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

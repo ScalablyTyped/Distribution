@@ -17,20 +17,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: Record[String, js.Any], project: Record[String, js.Any]): Data = {
+    inline def apply(data: Record[String, js.Any], project: Record[String, js.Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: Record[String, js.Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Record[String, js.Any]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,23 +40,18 @@ object anon {
   }
   object Description {
     
-    @scala.inline
-    def apply(description: String, name: String, title: String): Description = {
+    inline def apply(description: String, name: String, title: String): Description = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,20 +63,16 @@ object anon {
   }
   object DocBlocksRegExp {
     
-    @scala.inline
-    def apply(docBlocksRegExp: RegExp, inlineRegExp: RegExp): DocBlocksRegExp = {
+    inline def apply(docBlocksRegExp: RegExp, inlineRegExp: RegExp): DocBlocksRegExp = {
       val __obj = js.Dynamic.literal(docBlocksRegExp = docBlocksRegExp.asInstanceOf[js.Any], inlineRegExp = inlineRegExp.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocBlocksRegExp]
     }
     
-    @scala.inline
-    implicit class DocBlocksRegExpMutableBuilder[Self <: DocBlocksRegExp] (val x: Self) extends AnyVal {
+    extension [Self <: DocBlocksRegExp](x: Self) {
       
-      @scala.inline
-      def setDocBlocksRegExp(value: RegExp): Self = StObject.set(x, "docBlocksRegExp", value.asInstanceOf[js.Any])
+      inline def setDocBlocksRegExp(value: RegExp): Self = StObject.set(x, "docBlocksRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineRegExp(value: RegExp): Self = StObject.set(x, "inlineRegExp", value.asInstanceOf[js.Any])
+      inline def setInlineRegExp(value: RegExp): Self = StObject.set(x, "inlineRegExp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,44 +90,32 @@ object anon {
   }
   object GetGroup {
     
-    @scala.inline
-    def apply(parse: (String, String, String) => Description, path: String): GetGroup = {
+    inline def apply(parse: (String, String, String) => Description, path: String): GetGroup = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction3(parse), path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetGroup]
     }
     
-    @scala.inline
-    implicit class GetGroupMutableBuilder[Self <: GetGroup] (val x: Self) extends AnyVal {
+    extension [Self <: GetGroup](x: Self) {
       
-      @scala.inline
-      def setGetGroup(value: () => String): Self = StObject.set(x, "getGroup", js.Any.fromFunction0(value))
+      inline def setGetGroup(value: () => String): Self = StObject.set(x, "getGroup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGroupUndefined: Self = StObject.set(x, "getGroup", js.undefined)
+      inline def setGetGroupUndefined: Self = StObject.set(x, "getGroup", js.undefined)
       
-      @scala.inline
-      def setMarkdownFields(value: js.Array[String]): Self = StObject.set(x, "markdownFields", value.asInstanceOf[js.Any])
+      inline def setMarkdownFields(value: js.Array[String]): Self = StObject.set(x, "markdownFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkdownFieldsUndefined: Self = StObject.set(x, "markdownFields", js.undefined)
+      inline def setMarkdownFieldsUndefined: Self = StObject.set(x, "markdownFields", js.undefined)
       
-      @scala.inline
-      def setMarkdownFieldsVarargs(value: String*): Self = StObject.set(x, "markdownFields", js.Array(value :_*))
+      inline def setMarkdownFieldsVarargs(value: String*): Self = StObject.set(x, "markdownFields", js.Array(value :_*))
       
-      @scala.inline
-      def setMarkdownRemovePTags(value: js.Array[String]): Self = StObject.set(x, "markdownRemovePTags", value.asInstanceOf[js.Any])
+      inline def setMarkdownRemovePTags(value: js.Array[String]): Self = StObject.set(x, "markdownRemovePTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkdownRemovePTagsUndefined: Self = StObject.set(x, "markdownRemovePTags", js.undefined)
+      inline def setMarkdownRemovePTagsUndefined: Self = StObject.set(x, "markdownRemovePTags", js.undefined)
       
-      @scala.inline
-      def setMarkdownRemovePTagsVarargs(value: String*): Self = StObject.set(x, "markdownRemovePTags", js.Array(value :_*))
+      inline def setMarkdownRemovePTagsVarargs(value: String*): Self = StObject.set(x, "markdownRemovePTags", js.Array(value :_*))
       
-      @scala.inline
-      def setParse(value: (String, String, String) => Description): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
+      inline def setParse(value: (String, String, String) => Description): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,20 +127,16 @@ object anon {
   }
   object Global {
     
-    @scala.inline
-    def apply(global: js.Any, local: js.Any): Global = {
+    inline def apply(global: js.Any, local: js.Any): Global = {
       val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
       __obj.asInstanceOf[Global]
     }
     
-    @scala.inline
-    implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+    extension [Self <: Global](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: js.Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocal(value: js.Any): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: js.Any): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,17 +146,14 @@ object anon {
   }
   object PostFilter {
     
-    @scala.inline
-    def apply(postFilter: (js.Array[ParsedFile], js.Array[String]) => Unit): PostFilter = {
+    inline def apply(postFilter: (js.Array[ParsedFile], js.Array[String]) => Unit): PostFilter = {
       val __obj = js.Dynamic.literal(postFilter = js.Any.fromFunction2(postFilter))
       __obj.asInstanceOf[PostFilter]
     }
     
-    @scala.inline
-    implicit class PostFilterMutableBuilder[Self <: PostFilter] (val x: Self) extends AnyVal {
+    extension [Self <: PostFilter](x: Self) {
       
-      @scala.inline
-      def setPostFilter(value: (js.Array[ParsedFile], js.Array[String]) => Unit): Self = StObject.set(x, "postFilter", js.Any.fromFunction2(value))
+      inline def setPostFilter(value: (js.Array[ParsedFile], js.Array[String]) => Unit): Self = StObject.set(x, "postFilter", js.Any.fromFunction2(value))
     }
   }
 }

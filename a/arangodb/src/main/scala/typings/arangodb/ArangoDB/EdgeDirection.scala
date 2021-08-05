@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EdgeDirection extends StObject
 object EdgeDirection {
   
-  @scala.inline
-  def any: typings.arangodb.arangodbStrings.any = "any".asInstanceOf[typings.arangodb.arangodbStrings.any]
+  inline def any: typings.arangodb.arangodbStrings.any = "any".asInstanceOf[typings.arangodb.arangodbStrings.any]
   
-  @scala.inline
-  def inbound: typings.arangodb.arangodbStrings.inbound = "inbound".asInstanceOf[typings.arangodb.arangodbStrings.inbound]
+  inline def inbound: typings.arangodb.arangodbStrings.inbound = "inbound".asInstanceOf[typings.arangodb.arangodbStrings.inbound]
   
-  @scala.inline
-  def outbound: typings.arangodb.arangodbStrings.outbound = "outbound".asInstanceOf[typings.arangodb.arangodbStrings.outbound]
+  inline def outbound: typings.arangodb.arangodbStrings.outbound = "outbound".asInstanceOf[typings.arangodb.arangodbStrings.outbound]
 }

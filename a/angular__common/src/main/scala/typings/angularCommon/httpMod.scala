@@ -69,8 +69,7 @@ object httpMod {
     /**
       * Disable the default XSRF protection.
       */
-    @scala.inline
-    def disable(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
+    inline def disable(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
     
     /**
       * Configure XSRF protection.
@@ -80,10 +79,8 @@ object httpMod {
       * - Header name default is `X-XSRF-TOKEN`.
       *
       */
-    @scala.inline
-    def withOptions(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")().asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
-    @scala.inline
-    def withOptions(options: CookieName): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
+    inline def withOptions(): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")().asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
+    inline def withOptions(options: CookieName): ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")(options.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[typings.angularCommon.httpHttpMod.HttpClientXsrfModule]]
   }
   
   @JSImport("@angular/common/http", "HttpErrorResponse")
@@ -255,8 +252,7 @@ object httpMod {
   abstract class ɵangularPackagesCommonHttpHttpB ()
     extends typings.angularCommon.httpHttpMod.ɵangularPackagesCommonHttpHttpB
   
-  @scala.inline
-  def ɵangularPackagesCommonHttpHttpC(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_http_http_c")().asInstanceOf[js.Object]
+  inline def ɵangularPackagesCommonHttpHttpC(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_common_http_http_c")().asInstanceOf[js.Object]
   
   @JSImport("@angular/common/http", "\u0275angular_packages_common_http_http_d")
   @js.native

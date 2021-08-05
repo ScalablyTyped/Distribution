@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Dash extends StObject
 object Dash {
   
-  @scala.inline
-  def dash: typings.plotlyJs.plotlyJsStrings.dash = "dash".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dash]
+  inline def dash: typings.plotlyJs.plotlyJsStrings.dash = "dash".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dash]
   
-  @scala.inline
-  def dashdot: typings.plotlyJs.plotlyJsStrings.dashdot = "dashdot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dashdot]
+  inline def dashdot: typings.plotlyJs.plotlyJsStrings.dashdot = "dashdot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dashdot]
   
-  @scala.inline
-  def dot: typings.plotlyJs.plotlyJsStrings.dot = "dot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dot]
+  inline def dot: typings.plotlyJs.plotlyJsStrings.dot = "dot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.dot]
   
-  @scala.inline
-  def longdash: typings.plotlyJs.plotlyJsStrings.longdash = "longdash".asInstanceOf[typings.plotlyJs.plotlyJsStrings.longdash]
+  inline def longdash: typings.plotlyJs.plotlyJsStrings.longdash = "longdash".asInstanceOf[typings.plotlyJs.plotlyJsStrings.longdash]
   
-  @scala.inline
-  def longdashdot: typings.plotlyJs.plotlyJsStrings.longdashdot = "longdashdot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.longdashdot]
+  inline def longdashdot: typings.plotlyJs.plotlyJsStrings.longdashdot = "longdashdot".asInstanceOf[typings.plotlyJs.plotlyJsStrings.longdashdot]
   
-  @scala.inline
-  def solid: typings.plotlyJs.plotlyJsStrings.solid = "solid".asInstanceOf[typings.plotlyJs.plotlyJsStrings.solid]
+  inline def solid: typings.plotlyJs.plotlyJsStrings.solid = "solid".asInstanceOf[typings.plotlyJs.plotlyJsStrings.solid]
 }

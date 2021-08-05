@@ -28,26 +28,20 @@ object Options {
   }
   object BufferLoad {
     
-    @scala.inline
-    def apply(): BufferLoad = {
+    inline def apply(): BufferLoad = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferLoad]
     }
     
-    @scala.inline
-    implicit class BufferLoadMutableBuilder[Self <: BufferLoad] (val x: Self) extends AnyVal {
+    extension [Self <: BufferLoad](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
+      inline def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
+      inline def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
     }
   }
   
@@ -76,44 +70,32 @@ object Options {
   }
   object CopyMarker {
     
-    @scala.inline
-    def apply(): CopyMarker = {
+    inline def apply(): CopyMarker = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CopyMarker]
     }
     
-    @scala.inline
-    implicit class CopyMarkerMutableBuilder[Self <: CopyMarker] (val x: Self) extends AnyVal {
+    extension [Self <: CopyMarker](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+      inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+      inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      @scala.inline
-      def setTailed(value: Boolean): Self = StObject.set(x, "tailed", value.asInstanceOf[js.Any])
+      inline def setTailed(value: Boolean): Self = StObject.set(x, "tailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTailedUndefined: Self = StObject.set(x, "tailed", js.undefined)
+      inline def setTailedUndefined: Self = StObject.set(x, "tailed", js.undefined)
     }
   }
   
@@ -187,134 +169,92 @@ object Options {
   }
   object FindDisplayMarker {
     
-    @scala.inline
-    def apply(): FindDisplayMarker = {
+    inline def apply(): FindDisplayMarker = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindDisplayMarker]
     }
     
-    @scala.inline
-    implicit class FindDisplayMarkerMutableBuilder[Self <: FindDisplayMarker] (val x: Self) extends AnyVal {
+    extension [Self <: FindDisplayMarker](x: Self) {
       
-      @scala.inline
-      def setContainedInBufferRange(value: RangeCompatible): Self = StObject.set(x, "containedInBufferRange", value.asInstanceOf[js.Any])
+      inline def setContainedInBufferRange(value: RangeCompatible): Self = StObject.set(x, "containedInBufferRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainedInBufferRangeUndefined: Self = StObject.set(x, "containedInBufferRange", js.undefined)
+      inline def setContainedInBufferRangeUndefined: Self = StObject.set(x, "containedInBufferRange", js.undefined)
       
-      @scala.inline
-      def setContainedInScreenRange(value: RangeCompatible): Self = StObject.set(x, "containedInScreenRange", value.asInstanceOf[js.Any])
+      inline def setContainedInScreenRange(value: RangeCompatible): Self = StObject.set(x, "containedInScreenRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainedInScreenRangeUndefined: Self = StObject.set(x, "containedInScreenRange", js.undefined)
+      inline def setContainedInScreenRangeUndefined: Self = StObject.set(x, "containedInScreenRange", js.undefined)
       
-      @scala.inline
-      def setContainsBufferPosition(value: PointCompatible): Self = StObject.set(x, "containsBufferPosition", value.asInstanceOf[js.Any])
+      inline def setContainsBufferPosition(value: PointCompatible): Self = StObject.set(x, "containsBufferPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsBufferPositionUndefined: Self = StObject.set(x, "containsBufferPosition", js.undefined)
+      inline def setContainsBufferPositionUndefined: Self = StObject.set(x, "containsBufferPosition", js.undefined)
       
-      @scala.inline
-      def setContainsBufferRange(value: RangeCompatible): Self = StObject.set(x, "containsBufferRange", value.asInstanceOf[js.Any])
+      inline def setContainsBufferRange(value: RangeCompatible): Self = StObject.set(x, "containsBufferRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsBufferRangeUndefined: Self = StObject.set(x, "containsBufferRange", js.undefined)
+      inline def setContainsBufferRangeUndefined: Self = StObject.set(x, "containsBufferRange", js.undefined)
       
-      @scala.inline
-      def setEndBufferPosition(value: PointCompatible): Self = StObject.set(x, "endBufferPosition", value.asInstanceOf[js.Any])
+      inline def setEndBufferPosition(value: PointCompatible): Self = StObject.set(x, "endBufferPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndBufferPositionUndefined: Self = StObject.set(x, "endBufferPosition", js.undefined)
+      inline def setEndBufferPositionUndefined: Self = StObject.set(x, "endBufferPosition", js.undefined)
       
-      @scala.inline
-      def setEndBufferRow(value: Double): Self = StObject.set(x, "endBufferRow", value.asInstanceOf[js.Any])
+      inline def setEndBufferRow(value: Double): Self = StObject.set(x, "endBufferRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndBufferRowUndefined: Self = StObject.set(x, "endBufferRow", js.undefined)
+      inline def setEndBufferRowUndefined: Self = StObject.set(x, "endBufferRow", js.undefined)
       
-      @scala.inline
-      def setEndScreenPosition(value: PointCompatible): Self = StObject.set(x, "endScreenPosition", value.asInstanceOf[js.Any])
+      inline def setEndScreenPosition(value: PointCompatible): Self = StObject.set(x, "endScreenPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndScreenPositionUndefined: Self = StObject.set(x, "endScreenPosition", js.undefined)
+      inline def setEndScreenPositionUndefined: Self = StObject.set(x, "endScreenPosition", js.undefined)
       
-      @scala.inline
-      def setEndScreenRow(value: Double): Self = StObject.set(x, "endScreenRow", value.asInstanceOf[js.Any])
+      inline def setEndScreenRow(value: Double): Self = StObject.set(x, "endScreenRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndScreenRowUndefined: Self = StObject.set(x, "endScreenRow", js.undefined)
+      inline def setEndScreenRowUndefined: Self = StObject.set(x, "endScreenRow", js.undefined)
       
-      @scala.inline
-      def setEndsInBufferRange(value: RangeCompatible): Self = StObject.set(x, "endsInBufferRange", value.asInstanceOf[js.Any])
+      inline def setEndsInBufferRange(value: RangeCompatible): Self = StObject.set(x, "endsInBufferRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndsInBufferRangeUndefined: Self = StObject.set(x, "endsInBufferRange", js.undefined)
+      inline def setEndsInBufferRangeUndefined: Self = StObject.set(x, "endsInBufferRange", js.undefined)
       
-      @scala.inline
-      def setEndsInScreenRange(value: RangeCompatible): Self = StObject.set(x, "endsInScreenRange", value.asInstanceOf[js.Any])
+      inline def setEndsInScreenRange(value: RangeCompatible): Self = StObject.set(x, "endsInScreenRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndsInScreenRangeUndefined: Self = StObject.set(x, "endsInScreenRange", js.undefined)
+      inline def setEndsInScreenRangeUndefined: Self = StObject.set(x, "endsInScreenRange", js.undefined)
       
-      @scala.inline
-      def setIntersectsBufferRange(value: RangeCompatible): Self = StObject.set(x, "intersectsBufferRange", value.asInstanceOf[js.Any])
+      inline def setIntersectsBufferRange(value: RangeCompatible): Self = StObject.set(x, "intersectsBufferRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectsBufferRangeUndefined: Self = StObject.set(x, "intersectsBufferRange", js.undefined)
+      inline def setIntersectsBufferRangeUndefined: Self = StObject.set(x, "intersectsBufferRange", js.undefined)
       
-      @scala.inline
-      def setIntersectsBufferRowRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "intersectsBufferRowRange", value.asInstanceOf[js.Any])
+      inline def setIntersectsBufferRowRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "intersectsBufferRowRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectsBufferRowRangeUndefined: Self = StObject.set(x, "intersectsBufferRowRange", js.undefined)
+      inline def setIntersectsBufferRowRangeUndefined: Self = StObject.set(x, "intersectsBufferRowRange", js.undefined)
       
-      @scala.inline
-      def setIntersectsScreenRange(value: RangeCompatible): Self = StObject.set(x, "intersectsScreenRange", value.asInstanceOf[js.Any])
+      inline def setIntersectsScreenRange(value: RangeCompatible): Self = StObject.set(x, "intersectsScreenRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectsScreenRangeUndefined: Self = StObject.set(x, "intersectsScreenRange", js.undefined)
+      inline def setIntersectsScreenRangeUndefined: Self = StObject.set(x, "intersectsScreenRange", js.undefined)
       
-      @scala.inline
-      def setIntersectsScreenRowRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "intersectsScreenRowRange", value.asInstanceOf[js.Any])
+      inline def setIntersectsScreenRowRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "intersectsScreenRowRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectsScreenRowRangeUndefined: Self = StObject.set(x, "intersectsScreenRowRange", js.undefined)
+      inline def setIntersectsScreenRowRangeUndefined: Self = StObject.set(x, "intersectsScreenRowRange", js.undefined)
       
-      @scala.inline
-      def setStartBufferPosition(value: PointCompatible): Self = StObject.set(x, "startBufferPosition", value.asInstanceOf[js.Any])
+      inline def setStartBufferPosition(value: PointCompatible): Self = StObject.set(x, "startBufferPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartBufferPositionUndefined: Self = StObject.set(x, "startBufferPosition", js.undefined)
+      inline def setStartBufferPositionUndefined: Self = StObject.set(x, "startBufferPosition", js.undefined)
       
-      @scala.inline
-      def setStartBufferRow(value: Double): Self = StObject.set(x, "startBufferRow", value.asInstanceOf[js.Any])
+      inline def setStartBufferRow(value: Double): Self = StObject.set(x, "startBufferRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartBufferRowUndefined: Self = StObject.set(x, "startBufferRow", js.undefined)
+      inline def setStartBufferRowUndefined: Self = StObject.set(x, "startBufferRow", js.undefined)
       
-      @scala.inline
-      def setStartScreenPosition(value: PointCompatible): Self = StObject.set(x, "startScreenPosition", value.asInstanceOf[js.Any])
+      inline def setStartScreenPosition(value: PointCompatible): Self = StObject.set(x, "startScreenPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartScreenPositionUndefined: Self = StObject.set(x, "startScreenPosition", js.undefined)
+      inline def setStartScreenPositionUndefined: Self = StObject.set(x, "startScreenPosition", js.undefined)
       
-      @scala.inline
-      def setStartScreenRow(value: Double): Self = StObject.set(x, "startScreenRow", value.asInstanceOf[js.Any])
+      inline def setStartScreenRow(value: Double): Self = StObject.set(x, "startScreenRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartScreenRowUndefined: Self = StObject.set(x, "startScreenRow", js.undefined)
+      inline def setStartScreenRowUndefined: Self = StObject.set(x, "startScreenRow", js.undefined)
       
-      @scala.inline
-      def setStartsInBufferRange(value: RangeCompatible): Self = StObject.set(x, "startsInBufferRange", value.asInstanceOf[js.Any])
+      inline def setStartsInBufferRange(value: RangeCompatible): Self = StObject.set(x, "startsInBufferRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsInBufferRangeUndefined: Self = StObject.set(x, "startsInBufferRange", js.undefined)
+      inline def setStartsInBufferRangeUndefined: Self = StObject.set(x, "startsInBufferRange", js.undefined)
       
-      @scala.inline
-      def setStartsInScreenRange(value: RangeCompatible): Self = StObject.set(x, "startsInScreenRange", value.asInstanceOf[js.Any])
+      inline def setStartsInScreenRange(value: RangeCompatible): Self = StObject.set(x, "startsInScreenRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsInScreenRangeUndefined: Self = StObject.set(x, "startsInScreenRange", js.undefined)
+      inline def setStartsInScreenRangeUndefined: Self = StObject.set(x, "startsInScreenRange", js.undefined)
     }
   }
   
@@ -349,68 +289,48 @@ object Options {
   }
   object FindMarker {
     
-    @scala.inline
-    def apply(): FindMarker = {
+    inline def apply(): FindMarker = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FindMarker]
     }
     
-    @scala.inline
-    implicit class FindMarkerMutableBuilder[Self <: FindMarker] (val x: Self) extends AnyVal {
+    extension [Self <: FindMarker](x: Self) {
       
-      @scala.inline
-      def setContainsPoint(value: PointCompatible): Self = StObject.set(x, "containsPoint", value.asInstanceOf[js.Any])
+      inline def setContainsPoint(value: PointCompatible): Self = StObject.set(x, "containsPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsPointUndefined: Self = StObject.set(x, "containsPoint", js.undefined)
+      inline def setContainsPointUndefined: Self = StObject.set(x, "containsPoint", js.undefined)
       
-      @scala.inline
-      def setContainsRange(value: RangeCompatible): Self = StObject.set(x, "containsRange", value.asInstanceOf[js.Any])
+      inline def setContainsRange(value: RangeCompatible): Self = StObject.set(x, "containsRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsRangeUndefined: Self = StObject.set(x, "containsRange", js.undefined)
+      inline def setContainsRangeUndefined: Self = StObject.set(x, "containsRange", js.undefined)
       
-      @scala.inline
-      def setEndPosition(value: PointCompatible): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+      inline def setEndPosition(value: PointCompatible): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+      inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
       
-      @scala.inline
-      def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
+      inline def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndRowUndefined: Self = StObject.set(x, "endRow", js.undefined)
+      inline def setEndRowUndefined: Self = StObject.set(x, "endRow", js.undefined)
       
-      @scala.inline
-      def setEndsInRange(value: RangeCompatible): Self = StObject.set(x, "endsInRange", value.asInstanceOf[js.Any])
+      inline def setEndsInRange(value: RangeCompatible): Self = StObject.set(x, "endsInRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndsInRangeUndefined: Self = StObject.set(x, "endsInRange", js.undefined)
+      inline def setEndsInRangeUndefined: Self = StObject.set(x, "endsInRange", js.undefined)
       
-      @scala.inline
-      def setIntersectsRow(value: Double): Self = StObject.set(x, "intersectsRow", value.asInstanceOf[js.Any])
+      inline def setIntersectsRow(value: Double): Self = StObject.set(x, "intersectsRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectsRowUndefined: Self = StObject.set(x, "intersectsRow", js.undefined)
+      inline def setIntersectsRowUndefined: Self = StObject.set(x, "intersectsRow", js.undefined)
       
-      @scala.inline
-      def setStartPosition(value: PointCompatible): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+      inline def setStartPosition(value: PointCompatible): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+      inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
       
-      @scala.inline
-      def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+      inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
+      inline def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
       
-      @scala.inline
-      def setStartsInRange(value: RangeCompatible): Self = StObject.set(x, "startsInRange", value.asInstanceOf[js.Any])
+      inline def setStartsInRange(value: RangeCompatible): Self = StObject.set(x, "startsInRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsInRangeUndefined: Self = StObject.set(x, "startsInRange", js.undefined)
+      inline def setStartsInRangeUndefined: Self = StObject.set(x, "startsInRange", js.undefined)
     }
   }
   
@@ -424,26 +344,20 @@ object Options {
   }
   object ScanContext {
     
-    @scala.inline
-    def apply(): ScanContext = {
+    inline def apply(): ScanContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScanContext]
     }
     
-    @scala.inline
-    implicit class ScanContextMutableBuilder[Self <: ScanContext] (val x: Self) extends AnyVal {
+    extension [Self <: ScanContext](x: Self) {
       
-      @scala.inline
-      def setLeadingContextLineCount(value: Double): Self = StObject.set(x, "leadingContextLineCount", value.asInstanceOf[js.Any])
+      inline def setLeadingContextLineCount(value: Double): Self = StObject.set(x, "leadingContextLineCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingContextLineCountUndefined: Self = StObject.set(x, "leadingContextLineCount", js.undefined)
+      inline def setLeadingContextLineCountUndefined: Self = StObject.set(x, "leadingContextLineCount", js.undefined)
       
-      @scala.inline
-      def setTrailingContextLineCount(value: Double): Self = StObject.set(x, "trailingContextLineCount", value.asInstanceOf[js.Any])
+      inline def setTrailingContextLineCount(value: Double): Self = StObject.set(x, "trailingContextLineCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingContextLineCountUndefined: Self = StObject.set(x, "trailingContextLineCount", js.undefined)
+      inline def setTrailingContextLineCountUndefined: Self = StObject.set(x, "trailingContextLineCount", js.undefined)
     }
   }
 }

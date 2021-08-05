@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MobileAppPublishingState extends StObject
 object MobileAppPublishingState {
   
-  @scala.inline
-  def notPublished: typings.microsoftGraph.microsoftGraphStrings.notPublished = "notPublished".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notPublished]
+  inline def notPublished: typings.microsoftGraph.microsoftGraphStrings.notPublished = "notPublished".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notPublished]
   
-  @scala.inline
-  def processing: typings.microsoftGraph.microsoftGraphStrings.processing = "processing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.processing]
+  inline def processing: typings.microsoftGraph.microsoftGraphStrings.processing = "processing".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.processing]
   
-  @scala.inline
-  def published: typings.microsoftGraph.microsoftGraphStrings.published = "published".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.published]
+  inline def published: typings.microsoftGraph.microsoftGraphStrings.published = "published".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.published]
 }

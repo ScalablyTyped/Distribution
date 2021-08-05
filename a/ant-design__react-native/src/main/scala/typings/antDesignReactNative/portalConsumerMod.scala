@@ -37,23 +37,18 @@ object portalConsumerMod {
   }
   object PortalConsumerProps {
     
-    @scala.inline
-    def apply(manager: PortalMethods): PortalConsumerProps = {
+    inline def apply(manager: PortalMethods): PortalConsumerProps = {
       val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortalConsumerProps]
     }
     
-    @scala.inline
-    implicit class PortalConsumerPropsMutableBuilder[Self <: PortalConsumerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortalConsumerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setManager(value: PortalMethods): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setManager(value: PortalMethods): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     }
   }
 }

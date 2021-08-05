@@ -14,25 +14,19 @@ trait ForeignKey extends StObject {
 }
 object ForeignKey {
   
-  @scala.inline
-  def apply(): ForeignKey = {
+  inline def apply(): ForeignKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForeignKey]
   }
   
-  @scala.inline
-  implicit class ForeignKeyMutableBuilder[Self <: ForeignKey] (val x: Self) extends AnyVal {
+  extension [Self <: ForeignKey](x: Self) {
     
-    @scala.inline
-    def setForeignKey(value: ForeignKeyMetadata): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
+    inline def setForeignKey(value: ForeignKeyMetadata): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
+    inline def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
-    @scala.inline
-    def setUniqueConstraint(value: UniqueMetadata): Self = StObject.set(x, "uniqueConstraint", value.asInstanceOf[js.Any])
+    inline def setUniqueConstraint(value: UniqueMetadata): Self = StObject.set(x, "uniqueConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueConstraintUndefined: Self = StObject.set(x, "uniqueConstraint", js.undefined)
+    inline def setUniqueConstraintUndefined: Self = StObject.set(x, "uniqueConstraint", js.undefined)
   }
 }

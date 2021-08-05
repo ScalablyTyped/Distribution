@@ -22,20 +22,17 @@ object default {
   @JSImport("vue-i18n", "default.availabilities")
   @js.native
   def availabilities: typings.vueI18n.mod.VueI18n.IntlAvailability = js.native
-  @scala.inline
-  def availabilities_=(x: typings.vueI18n.mod.VueI18n.IntlAvailability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availabilities")(x.asInstanceOf[js.Any])
+  inline def availabilities_=(x: typings.vueI18n.mod.VueI18n.IntlAvailability): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availabilities")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("vue-i18n", "default.install")
   @js.native
   def install: PluginFunction[scala.Nothing] = js.native
-  @scala.inline
-  def install_=(x: PluginFunction[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
+  inline def install_=(x: PluginFunction[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("install")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("vue-i18n", "default.version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

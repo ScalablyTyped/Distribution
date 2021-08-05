@@ -47,58 +47,41 @@ trait SchemaServingConfig extends StObject {
 }
 object SchemaServingConfig {
   
-  @scala.inline
-  def apply(): SchemaServingConfig = {
+  inline def apply(): SchemaServingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaServingConfigMutableBuilder[Self <: SchemaServingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServingConfig](x: Self) {
     
-    @scala.inline
-    def setAppAssociation(value: String): Self = StObject.set(x, "appAssociation", value.asInstanceOf[js.Any])
+    inline def setAppAssociation(value: String): Self = StObject.set(x, "appAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppAssociationUndefined: Self = StObject.set(x, "appAssociation", js.undefined)
+    inline def setAppAssociationUndefined: Self = StObject.set(x, "appAssociation", js.undefined)
     
-    @scala.inline
-    def setCleanUrls(value: Boolean): Self = StObject.set(x, "cleanUrls", value.asInstanceOf[js.Any])
+    inline def setCleanUrls(value: Boolean): Self = StObject.set(x, "cleanUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCleanUrlsUndefined: Self = StObject.set(x, "cleanUrls", js.undefined)
+    inline def setCleanUrlsUndefined: Self = StObject.set(x, "cleanUrls", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setRedirects(value: js.Array[SchemaRedirect]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+    inline def setRedirects(value: js.Array[SchemaRedirect]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
+    inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
     
-    @scala.inline
-    def setRedirectsVarargs(value: SchemaRedirect*): Self = StObject.set(x, "redirects", js.Array(value :_*))
+    inline def setRedirectsVarargs(value: SchemaRedirect*): Self = StObject.set(x, "redirects", js.Array(value :_*))
     
-    @scala.inline
-    def setRewrites(value: js.Array[SchemaRewrite]): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
+    inline def setRewrites(value: js.Array[SchemaRewrite]): Self = StObject.set(x, "rewrites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRewritesUndefined: Self = StObject.set(x, "rewrites", js.undefined)
+    inline def setRewritesUndefined: Self = StObject.set(x, "rewrites", js.undefined)
     
-    @scala.inline
-    def setRewritesVarargs(value: SchemaRewrite*): Self = StObject.set(x, "rewrites", js.Array(value :_*))
+    inline def setRewritesVarargs(value: SchemaRewrite*): Self = StObject.set(x, "rewrites", js.Array(value :_*))
     
-    @scala.inline
-    def setTrailingSlashBehavior(value: String): Self = StObject.set(x, "trailingSlashBehavior", value.asInstanceOf[js.Any])
+    inline def setTrailingSlashBehavior(value: String): Self = StObject.set(x, "trailingSlashBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingSlashBehaviorUndefined: Self = StObject.set(x, "trailingSlashBehavior", js.undefined)
+    inline def setTrailingSlashBehaviorUndefined: Self = StObject.set(x, "trailingSlashBehavior", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait TokensProvider extends StObject {
 }
 object TokensProvider {
   
-  @scala.inline
-  def apply(getInitialState: () => IState, tokenize: (String, IState) => ILineTokens): TokensProvider = {
+  inline def apply(getInitialState: () => IState, tokenize: (String, IState) => ILineTokens): TokensProvider = {
     val __obj = js.Dynamic.literal(getInitialState = js.Any.fromFunction0(getInitialState), tokenize = js.Any.fromFunction2(tokenize))
     __obj.asInstanceOf[TokensProvider]
   }
   
-  @scala.inline
-  implicit class TokensProviderMutableBuilder[Self <: TokensProvider] (val x: Self) extends AnyVal {
+  extension [Self <: TokensProvider](x: Self) {
     
-    @scala.inline
-    def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
+    inline def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTokenize(value: (String, IState) => ILineTokens): Self = StObject.set(x, "tokenize", js.Any.fromFunction2(value))
+    inline def setTokenize(value: (String, IState) => ILineTokens): Self = StObject.set(x, "tokenize", js.Any.fromFunction2(value))
   }
 }

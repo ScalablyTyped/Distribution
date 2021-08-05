@@ -12,13 +12,13 @@ object stylishFormatterMod {
   @js.native
   class Formatter () extends AbstractFormatter {
     
-    var getPositionMaxSize: js.Any = js.native
+    /* private */ var getPositionMaxSize: js.Any = js.native
     
-    var getRuleMaxSize: js.Any = js.native
+    /* private */ var getRuleMaxSize: js.Any = js.native
     
-    var mapToMessages: js.Any = js.native
+    /* private */ var mapToMessages: js.Any = js.native
     
-    var pad: js.Any = js.native
+    /* private */ var pad: js.Any = js.native
   }
   /* static members */
   object Formatter {
@@ -30,7 +30,6 @@ object stylishFormatterMod {
     @JSImport("tslint/lib/formatters/stylishFormatter", "Formatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

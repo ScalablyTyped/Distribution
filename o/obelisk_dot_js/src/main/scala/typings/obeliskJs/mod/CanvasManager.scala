@@ -18,12 +18,9 @@ object CanvasManager {
   @JSImport("obelisk.js", "CanvasManager.defaultCanvas")
   @js.native
   def defaultCanvas: HTMLCanvasElement = js.native
-  @scala.inline
-  def defaultCanvas_=(x: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCanvas")(x.asInstanceOf[js.Any])
+  inline def defaultCanvas_=(x: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCanvas")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getDefaultCanvas(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultCanvas")().asInstanceOf[HTMLCanvasElement]
+  inline def getDefaultCanvas(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultCanvas")().asInstanceOf[HTMLCanvasElement]
   
-  @scala.inline
-  def getNewCanvas(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getNewCanvas")().asInstanceOf[HTMLCanvasElement]
+  inline def getNewCanvas(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getNewCanvas")().asInstanceOf[HTMLCanvasElement]
 }

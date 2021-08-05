@@ -12,8 +12,7 @@ trait CachedCompletionEntryDetails
 }
 object CachedCompletionEntryDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     docComment: String,
     fullSymbolName: String,
     isResolved: () => Boolean,
@@ -27,10 +26,8 @@ object CachedCompletionEntryDetails {
     __obj.asInstanceOf[CachedCompletionEntryDetails]
   }
   
-  @scala.inline
-  implicit class CachedCompletionEntryDetailsMutableBuilder[Self <: CachedCompletionEntryDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CachedCompletionEntryDetails](x: Self) {
     
-    @scala.inline
-    def setIsResolved(value: () => Boolean): Self = StObject.set(x, "isResolved", js.Any.fromFunction0(value))
+    inline def setIsResolved(value: () => Boolean): Self = StObject.set(x, "isResolved", js.Any.fromFunction0(value))
   }
 }

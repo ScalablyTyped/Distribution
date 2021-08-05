@@ -22,10 +22,8 @@ object mod {
   @js.native
   class default () extends MaskedInput
   
-  @scala.inline
-  def conformToMask(text: String, mask: js.Function1[/* value */ String, maskArray], config: js.Any): conformToMaskResult = (^.asInstanceOf[js.Dynamic].applyDynamic("conformToMask")(text.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[conformToMaskResult]
-  @scala.inline
-  def conformToMask(text: String, mask: maskArray, config: js.Any): conformToMaskResult = (^.asInstanceOf[js.Dynamic].applyDynamic("conformToMask")(text.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[conformToMaskResult]
+  inline def conformToMask(text: String, mask: js.Function1[/* value */ String, maskArray], config: js.Any): conformToMaskResult = (^.asInstanceOf[js.Dynamic].applyDynamic("conformToMask")(text.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[conformToMaskResult]
+  inline def conformToMask(text: String, mask: maskArray, config: js.Any): conformToMaskResult = (^.asInstanceOf[js.Dynamic].applyDynamic("conformToMask")(text.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[conformToMaskResult]
   
   @js.native
   trait MaskedInput
@@ -66,66 +64,48 @@ object mod {
   }
   object MaskedInputProps {
     
-    @scala.inline
-    def apply(): MaskedInputProps = {
+    inline def apply(): MaskedInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaskedInputProps]
     }
     
-    @scala.inline
-    implicit class MaskedInputPropsMutableBuilder[Self <: MaskedInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: MaskedInputProps](x: Self) {
       
-      @scala.inline
-      def setGuide(value: Boolean): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
+      inline def setGuide(value: Boolean): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
+      inline def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
       
-      @scala.inline
-      def setKeepCharPositions(value: Boolean): Self = StObject.set(x, "keepCharPositions", value.asInstanceOf[js.Any])
+      inline def setKeepCharPositions(value: Boolean): Self = StObject.set(x, "keepCharPositions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepCharPositionsUndefined: Self = StObject.set(x, "keepCharPositions", js.undefined)
+      inline def setKeepCharPositionsUndefined: Self = StObject.set(x, "keepCharPositions", js.undefined)
       
-      @scala.inline
-      def setMask(value: maskArray | (js.Function1[/* value */ String, maskArray])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: maskArray | (js.Function1[/* value */ String, maskArray])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskFunction1(value: /* value */ String => maskArray): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
+      inline def setMaskFunction1(value: /* value */ String => maskArray): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
+      inline def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
       
-      @scala.inline
-      def setPipe(
+      inline def setPipe(
         value: (/* conformedValue */ String, /* config */ js.Any) => `false` | String | IndexesOfPipedChars
       ): Self = StObject.set(x, "pipe", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
+      inline def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
       
-      @scala.inline
-      def setPlaceholderChar(value: String): Self = StObject.set(x, "placeholderChar", value.asInstanceOf[js.Any])
+      inline def setPlaceholderChar(value: String): Self = StObject.set(x, "placeholderChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderCharUndefined: Self = StObject.set(x, "placeholderChar", js.undefined)
+      inline def setPlaceholderCharUndefined: Self = StObject.set(x, "placeholderChar", js.undefined)
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* ref */ js.Function1[/* inputElement */ HTMLElement, Unit], /* props */ js.Any) => js.Any
       ): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setShowMask(value: Boolean): Self = StObject.set(x, "showMask", value.asInstanceOf[js.Any])
+      inline def setShowMask(value: Boolean): Self = StObject.set(x, "showMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMaskUndefined: Self = StObject.set(x, "showMask", js.undefined)
+      inline def setShowMaskUndefined: Self = StObject.set(x, "showMask", js.undefined)
     }
   }
   
@@ -137,20 +117,16 @@ object mod {
   }
   object conformToMaskResult {
     
-    @scala.inline
-    def apply(conformedValue: String, meta: SomeCharsRejected): conformToMaskResult = {
+    inline def apply(conformedValue: String, meta: SomeCharsRejected): conformToMaskResult = {
       val __obj = js.Dynamic.literal(conformedValue = conformedValue.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[conformToMaskResult]
     }
     
-    @scala.inline
-    implicit class conformToMaskResultMutableBuilder[Self <: conformToMaskResult] (val x: Self) extends AnyVal {
+    extension [Self <: conformToMaskResult](x: Self) {
       
-      @scala.inline
-      def setConformedValue(value: String): Self = StObject.set(x, "conformedValue", value.asInstanceOf[js.Any])
+      inline def setConformedValue(value: String): Self = StObject.set(x, "conformedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: SomeCharsRejected): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: SomeCharsRejected): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   

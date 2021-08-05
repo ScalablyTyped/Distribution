@@ -21,20 +21,16 @@ object stackContextMod {
   }
   object StackContextState {
     
-    @scala.inline
-    def apply(isInOutlet: () => Boolean, registerIonPage: (HTMLElement, RouteInfo[js.Any]) => Unit): StackContextState = {
+    inline def apply(isInOutlet: () => Boolean, registerIonPage: (HTMLElement, RouteInfo[js.Any]) => Unit): StackContextState = {
       val __obj = js.Dynamic.literal(isInOutlet = js.Any.fromFunction0(isInOutlet), registerIonPage = js.Any.fromFunction2(registerIonPage))
       __obj.asInstanceOf[StackContextState]
     }
     
-    @scala.inline
-    implicit class StackContextStateMutableBuilder[Self <: StackContextState] (val x: Self) extends AnyVal {
+    extension [Self <: StackContextState](x: Self) {
       
-      @scala.inline
-      def setIsInOutlet(value: () => Boolean): Self = StObject.set(x, "isInOutlet", js.Any.fromFunction0(value))
+      inline def setIsInOutlet(value: () => Boolean): Self = StObject.set(x, "isInOutlet", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterIonPage(value: (HTMLElement, RouteInfo[js.Any]) => Unit): Self = StObject.set(x, "registerIonPage", js.Any.fromFunction2(value))
+      inline def setRegisterIonPage(value: (HTMLElement, RouteInfo[js.Any]) => Unit): Self = StObject.set(x, "registerIonPage", js.Any.fromFunction2(value))
     }
   }
 }

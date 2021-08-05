@@ -28,37 +28,27 @@ trait PropertyType extends StObject {
 }
 object PropertyType {
   
-  @scala.inline
-  def apply(): PropertyType = {
+  inline def apply(): PropertyType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyType]
   }
   
-  @scala.inline
-  implicit class PropertyTypeMutableBuilder[Self <: PropertyType] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyType](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: Attribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: Attribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setMeasurement(value: Measurement): Self = StObject.set(x, "measurement", value.asInstanceOf[js.Any])
+    inline def setMeasurement(value: Measurement): Self = StObject.set(x, "measurement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasurementUndefined: Self = StObject.set(x, "measurement", js.undefined)
+    inline def setMeasurementUndefined: Self = StObject.set(x, "measurement", js.undefined)
     
-    @scala.inline
-    def setMetric(value: Metric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Metric): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait FeatureFormViewModelValueChangeEvent extends StObject {
 }
 object FeatureFormViewModelValueChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     feature: Graphic,
     fieldName: String,
     layer: FeatureLayer,
@@ -30,22 +29,16 @@ object FeatureFormViewModelValueChangeEvent {
     __obj.asInstanceOf[FeatureFormViewModelValueChangeEvent]
   }
   
-  @scala.inline
-  implicit class FeatureFormViewModelValueChangeEventMutableBuilder[Self <: FeatureFormViewModelValueChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureFormViewModelValueChangeEvent](x: Self) {
     
-    @scala.inline
-    def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double | String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double | String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

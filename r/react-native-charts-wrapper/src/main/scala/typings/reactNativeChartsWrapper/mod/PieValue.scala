@@ -12,22 +12,17 @@ trait PieValue extends StObject {
 }
 object PieValue {
   
-  @scala.inline
-  def apply(value: Double): PieValue = {
+  inline def apply(value: Double): PieValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieValue]
   }
   
-  @scala.inline
-  implicit class PieValueMutableBuilder[Self <: PieValue] (val x: Self) extends AnyVal {
+  extension [Self <: PieValue](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

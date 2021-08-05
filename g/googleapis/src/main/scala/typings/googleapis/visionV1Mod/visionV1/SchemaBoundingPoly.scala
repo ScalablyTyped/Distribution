@@ -21,31 +21,23 @@ trait SchemaBoundingPoly extends StObject {
 }
 object SchemaBoundingPoly {
   
-  @scala.inline
-  def apply(): SchemaBoundingPoly = {
+  inline def apply(): SchemaBoundingPoly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBoundingPoly]
   }
   
-  @scala.inline
-  implicit class SchemaBoundingPolyMutableBuilder[Self <: SchemaBoundingPoly] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBoundingPoly](x: Self) {
     
-    @scala.inline
-    def setNormalizedVertices(value: js.Array[SchemaNormalizedVertex]): Self = StObject.set(x, "normalizedVertices", value.asInstanceOf[js.Any])
+    inline def setNormalizedVertices(value: js.Array[SchemaNormalizedVertex]): Self = StObject.set(x, "normalizedVertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
+    inline def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
     
-    @scala.inline
-    def setNormalizedVerticesVarargs(value: SchemaNormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
+    inline def setNormalizedVerticesVarargs(value: SchemaNormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
     
-    @scala.inline
-    def setVertices(value: js.Array[SchemaVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[SchemaVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    @scala.inline
-    def setVerticesVarargs(value: SchemaVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: SchemaVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

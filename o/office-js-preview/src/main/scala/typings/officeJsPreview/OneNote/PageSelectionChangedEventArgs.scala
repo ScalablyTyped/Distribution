@@ -31,20 +31,16 @@ trait PageSelectionChangedEventArgs extends StObject {
 }
 object PageSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(oldId: String): PageSelectionChangedEventArgs = {
+  inline def apply(oldId: String): PageSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PageSelectionChanged")
     __obj.asInstanceOf[PageSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PageSelectionChangedEventArgsMutableBuilder[Self <: PageSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PageSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOldId(value: String): Self = StObject.set(x, "oldId", value.asInstanceOf[js.Any])
+    inline def setOldId(value: String): Self = StObject.set(x, "oldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PageSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PageSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

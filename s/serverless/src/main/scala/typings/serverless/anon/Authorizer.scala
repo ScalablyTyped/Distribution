@@ -19,37 +19,27 @@ trait Authorizer extends StObject {
 }
 object Authorizer {
   
-  @scala.inline
-  def apply(mehtod: HttpMethod, path: String): Authorizer = {
+  inline def apply(mehtod: HttpMethod, path: String): Authorizer = {
     val __obj = js.Dynamic.literal(mehtod = mehtod.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Authorizer]
   }
   
-  @scala.inline
-  implicit class AuthorizerMutableBuilder[Self <: Authorizer] (val x: Self) extends AnyVal {
+  extension [Self <: Authorizer](x: Self) {
     
-    @scala.inline
-    def setAuthorizer(value: js.Any): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
+    inline def setAuthorizer(value: js.Any): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
+    inline def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
-    @scala.inline
-    def setCors(value: js.Any): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: js.Any): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
-    @scala.inline
-    def setIntegration(value: String): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    inline def setIntegration(value: String): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
+    inline def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
     
-    @scala.inline
-    def setMehtod(value: HttpMethod): Self = StObject.set(x, "mehtod", value.asInstanceOf[js.Any])
+    inline def setMehtod(value: HttpMethod): Self = StObject.set(x, "mehtod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

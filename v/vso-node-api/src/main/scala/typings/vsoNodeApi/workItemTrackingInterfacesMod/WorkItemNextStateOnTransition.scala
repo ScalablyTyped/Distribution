@@ -28,25 +28,19 @@ trait WorkItemNextStateOnTransition extends StObject {
 }
 object WorkItemNextStateOnTransition {
   
-  @scala.inline
-  def apply(errorCode: String, id: Double, message: String, stateOnTransition: String): WorkItemNextStateOnTransition = {
+  inline def apply(errorCode: String, id: Double, message: String, stateOnTransition: String): WorkItemNextStateOnTransition = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], stateOnTransition = stateOnTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemNextStateOnTransition]
   }
   
-  @scala.inline
-  implicit class WorkItemNextStateOnTransitionMutableBuilder[Self <: WorkItemNextStateOnTransition] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemNextStateOnTransition](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateOnTransition(value: String): Self = StObject.set(x, "stateOnTransition", value.asInstanceOf[js.Any])
+    inline def setStateOnTransition(value: String): Self = StObject.set(x, "stateOnTransition", value.asInstanceOf[js.Any])
   }
 }

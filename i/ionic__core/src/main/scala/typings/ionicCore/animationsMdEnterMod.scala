@@ -12,6 +12,5 @@ object animationsMdEnterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mdEnterAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def mdEnterAnimation(baseEl: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

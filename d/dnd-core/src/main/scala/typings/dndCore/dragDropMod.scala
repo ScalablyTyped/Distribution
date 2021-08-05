@@ -36,6 +36,5 @@ object dragDropMod {
   @js.native
   val PUBLISH_DRAG_SOURCE: /* "dnd-core/PUBLISH_DRAG_SOURCE" */ String = js.native
   
-  @scala.inline
-  def createDragDropActions(manager: DragDropManager): DragDropActions = ^.asInstanceOf[js.Dynamic].applyDynamic("createDragDropActions")(manager.asInstanceOf[js.Any]).asInstanceOf[DragDropActions]
+  inline def createDragDropActions(manager: DragDropManager): DragDropActions = ^.asInstanceOf[js.Dynamic].applyDynamic("createDragDropActions")(manager.asInstanceOf[js.Any]).asInstanceOf[DragDropActions]
 }

@@ -22,8 +22,7 @@ trait ClassNameOptimizations extends StObject {
 }
 object ClassNameOptimizations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classNameOptimizations: Boolean,
     minify: Boolean,
     removeComments: Boolean,
@@ -36,28 +35,20 @@ object ClassNameOptimizations {
     __obj.asInstanceOf[ClassNameOptimizations]
   }
   
-  @scala.inline
-  implicit class ClassNameOptimizationsMutableBuilder[Self <: ClassNameOptimizations] (val x: Self) extends AnyVal {
+  extension [Self <: ClassNameOptimizations](x: Self) {
     
-    @scala.inline
-    def setClassNameOptimizations(value: Boolean): Self = StObject.set(x, "classNameOptimizations", value.asInstanceOf[js.Any])
+    inline def setClassNameOptimizations(value: Boolean): Self = StObject.set(x, "classNameOptimizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+    inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveComments(value: Boolean): Self = StObject.set(x, "removeComments", value.asInstanceOf[js.Any])
+    inline def setRemoveComments(value: Boolean): Self = StObject.set(x, "removeComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEmptyNodes(value: Boolean): Self = StObject.set(x, "removeEmptyNodes", value.asInstanceOf[js.Any])
+    inline def setRemoveEmptyNodes(value: Boolean): Self = StObject.set(x, "removeEmptyNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStylableDirectives(value: Boolean): Self = StObject.set(x, "removeStylableDirectives", value.asInstanceOf[js.Any])
+    inline def setRemoveStylableDirectives(value: Boolean): Self = StObject.set(x, "removeStylableDirectives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUnusedComponents(value: Boolean): Self = StObject.set(x, "removeUnusedComponents", value.asInstanceOf[js.Any])
+    inline def setRemoveUnusedComponents(value: Boolean): Self = StObject.set(x, "removeUnusedComponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNamespaces(value: Boolean): Self = StObject.set(x, "shortNamespaces", value.asInstanceOf[js.Any])
+    inline def setShortNamespaces(value: Boolean): Self = StObject.set(x, "shortNamespaces", value.asInstanceOf[js.Any])
   }
 }

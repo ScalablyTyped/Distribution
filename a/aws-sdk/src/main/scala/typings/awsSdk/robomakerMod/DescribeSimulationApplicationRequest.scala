@@ -18,22 +18,17 @@ trait DescribeSimulationApplicationRequest extends StObject {
 }
 object DescribeSimulationApplicationRequest {
   
-  @scala.inline
-  def apply(application: Arn): DescribeSimulationApplicationRequest = {
+  inline def apply(application: Arn): DescribeSimulationApplicationRequest = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSimulationApplicationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSimulationApplicationRequestMutableBuilder[Self <: DescribeSimulationApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSimulationApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersion(value: Version): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
+    inline def setApplicationVersion(value: Version): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
+    inline def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
   }
 }

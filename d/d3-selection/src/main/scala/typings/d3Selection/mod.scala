@@ -23,8 +23,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): Selection_[
+  inline def create[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
     Unit, 
     Null, 
@@ -35,90 +34,61 @@ object mod {
     Null, 
     Unit
   ]]
-  @scala.inline
-  def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[NewGElement, Unit, Null, Unit]]
+  inline def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[NewGElement, Unit, Null, Unit]]
   
-  @scala.inline
-  def creator[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): js.ThisFunction0[
+  inline def creator[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): js.ThisFunction0[
     /* this */ BaseType, 
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[
     /* this */ BaseType, 
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any
   ]]
-  @scala.inline
-  def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NewGElement]]
+  inline def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NewGElement]]
   
-  @scala.inline
-  def local[T](): Local_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[Local_[T]]
+  inline def local[T](): Local_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[Local_[T]]
   
-  @scala.inline
-  def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, Boolean]]
+  inline def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, Boolean]]
   
-  @scala.inline
-  def namespace(prefixedLocal: String): NamespaceLocalObject | String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespace")(prefixedLocal.asInstanceOf[js.Any]).asInstanceOf[NamespaceLocalObject | String]
+  inline def namespace(prefixedLocal: String): NamespaceLocalObject | String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespace")(prefixedLocal.asInstanceOf[js.Any]).asInstanceOf[NamespaceLocalObject | String]
   
   @JSImport("d3-selection", "namespaces")
   @js.native
   val namespaces: NamespaceMap = js.native
   
-  @scala.inline
-  def pointer(event: js.Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
-  @scala.inline
-  def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def pointer(event: js.Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @scala.inline
-  def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
-  @scala.inline
-  def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  inline def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  inline def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
-  @scala.inline
-  def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, OldDatum, Null, Unit]]
-  @scala.inline
-  def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[EnterElement, OldDatum, Null, Unit]]
-  @scala.inline
-  def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Document, OldDatum, Null, Unit]]
-  @scala.inline
-  def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Element, OldDatum, Null, Unit]]
-  @scala.inline
-  def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Window, OldDatum, Null, Unit]]
-  @scala.inline
-  def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
+  inline def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, OldDatum, Null, Unit]]
+  inline def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[EnterElement, OldDatum, Null, Unit]]
+  inline def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Document, OldDatum, Null, Unit]]
+  inline def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Element, OldDatum, Null, Unit]]
+  inline def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Window, OldDatum, Null, Unit]]
+  inline def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
   
-  @scala.inline
-  def selectAll(): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")().asInstanceOf[Selection_[Null, Unit, Null, Unit]]
-  @scala.inline
-  def selectAll(selector: Null): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
-  @scala.inline
-  def selectAll(selector: Unit): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
-  @scala.inline
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
-  @scala.inline
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
-  @scala.inline
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
-  @scala.inline
-  def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
+  inline def selectAll(): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")().asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  inline def selectAll(selector: Null): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  inline def selectAll(selector: Unit): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  inline def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
   
   @JSImport("d3-selection", "selection")
   @js.native
   val selection: SelectionFn = js.native
   
-  @scala.inline
-  def selector[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, DescElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("selector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, DescElement]]
+  inline def selector[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, DescElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("selector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, DescElement]]
   
-  @scala.inline
-  def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorAll")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]]]
+  inline def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorAll")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]]]
   
-  @scala.inline
-  def style(node: Element, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def style(node: Element, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def window(DOMNode: Document): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
-  @scala.inline
-  def window(DOMNode: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
-  @scala.inline
-  def window(DOMNode: Window): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
+  inline def window(DOMNode: Document): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
+  inline def window(DOMNode: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
+  inline def window(DOMNode: Window): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
   
   trait ArrayLike[T]
     extends StObject
@@ -130,20 +100,16 @@ object mod {
   }
   object ArrayLike {
     
-    @scala.inline
-    def apply[T](item: Double => T | Null, length: Double): ArrayLike[T] = {
+    inline def apply[T](item: Double => T | Null, length: Double): ArrayLike[T] = {
       val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrayLike[T]]
     }
     
-    @scala.inline
-    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
+    extension [Self <: ArrayLike[?], T](x: Self & ArrayLike[T]) {
       
-      @scala.inline
-      def setItem(value: Double => T | Null): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => T | Null): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,20 +123,16 @@ object mod {
   }
   object ClientPointEvent {
     
-    @scala.inline
-    def apply(clientX: Double, clientY: Double): ClientPointEvent = {
+    inline def apply(clientX: Double, clientY: Double): ClientPointEvent = {
       val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientPointEvent]
     }
     
-    @scala.inline
-    implicit class ClientPointEventMutableBuilder[Self <: ClientPointEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ClientPointEvent](x: Self) {
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,23 +157,18 @@ object mod {
   }
   object CustomEventParameters {
     
-    @scala.inline
-    def apply(bubbles: Boolean, cancelable: Boolean, detail: js.Any): CustomEventParameters = {
+    inline def apply(bubbles: Boolean, cancelable: Boolean, detail: js.Any): CustomEventParameters = {
       val __obj = js.Dynamic.literal(bubbles = bubbles.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomEventParameters]
     }
     
-    @scala.inline
-    implicit class CustomEventParametersMutableBuilder[Self <: CustomEventParameters] (val x: Self) extends AnyVal {
+    extension [Self <: CustomEventParameters](x: Self) {
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: js.Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: js.Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,8 +188,7 @@ object mod {
   }
   object EnterElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appendChild: Node => Node,
       insertBefore: (Node, Node) => Node,
       namespaceURI: String,
@@ -244,26 +200,19 @@ object mod {
       __obj.asInstanceOf[EnterElement]
     }
     
-    @scala.inline
-    implicit class EnterElementMutableBuilder[Self <: EnterElement] (val x: Self) extends AnyVal {
+    extension [Self <: EnterElement](x: Self) {
       
-      @scala.inline
-      def setAppendChild(value: Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+      inline def setAppendChild(value: Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsertBefore(value: (Node, Node) => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+      inline def setInsertBefore(value: (Node, Node) => Node): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
+      inline def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerDocument(value: Document): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
+      inline def setOwnerDocument(value: Document): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerySelector(value: String => Element): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
+      inline def setQuerySelector(value: String => Element): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuerySelectorAll(value: String => NodeListOf[Element]): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction1(value))
+      inline def setQuerySelectorAll(value: String => NodeListOf[Element]): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction1(value))
     }
   }
   
@@ -297,23 +246,18 @@ object mod {
   }
   object Local_ {
     
-    @scala.inline
-    def apply[T](get: Element => js.UndefOr[T], remove: Element => Boolean, set: (Element, T) => Element): Local_[T] = {
+    inline def apply[T](get: Element => js.UndefOr[T], remove: Element => Boolean, set: (Element, T) => Element): Local_[T] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Local_[T]]
     }
     
-    @scala.inline
-    implicit class Local_MutableBuilder[Self <: Local_[?], T] (val x: Self & Local_[T]) extends AnyVal {
+    extension [Self <: Local_[?], T](x: Self & Local_[T]) {
       
-      @scala.inline
-      def setGet(value: Element => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Element => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: Element => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Element => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (Element, T) => Element): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (Element, T) => Element): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -331,20 +275,16 @@ object mod {
   }
   object NamespaceLocalObject {
     
-    @scala.inline
-    def apply(local: String, space: String): NamespaceLocalObject = {
+    inline def apply(local: String, space: String): NamespaceLocalObject = {
       val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
       __obj.asInstanceOf[NamespaceLocalObject]
     }
     
-    @scala.inline
-    implicit class NamespaceLocalObjectMutableBuilder[Self <: NamespaceLocalObject] (val x: Self) extends AnyVal {
+    extension [Self <: NamespaceLocalObject](x: Self) {
       
-      @scala.inline
-      def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     }
   }
   

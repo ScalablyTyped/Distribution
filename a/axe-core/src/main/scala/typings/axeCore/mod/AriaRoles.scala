@@ -22,65 +22,46 @@ trait AriaRoles extends StObject {
 }
 object AriaRoles {
   
-  @scala.inline
-  def apply(`type`: AriaRolesType | DpubRolesType): AriaRoles = {
+  inline def apply(`type`: AriaRolesType | DpubRolesType): AriaRoles = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AriaRoles]
   }
   
-  @scala.inline
-  implicit class AriaRolesMutableBuilder[Self <: AriaRoles] (val x: Self) extends AnyVal {
+  extension [Self <: AriaRoles](x: Self) {
     
-    @scala.inline
-    def setAllowedAttrs(value: js.Array[String]): Self = StObject.set(x, "allowedAttrs", value.asInstanceOf[js.Any])
+    inline def setAllowedAttrs(value: js.Array[String]): Self = StObject.set(x, "allowedAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedAttrsUndefined: Self = StObject.set(x, "allowedAttrs", js.undefined)
+    inline def setAllowedAttrsUndefined: Self = StObject.set(x, "allowedAttrs", js.undefined)
     
-    @scala.inline
-    def setAllowedAttrsVarargs(value: String*): Self = StObject.set(x, "allowedAttrs", js.Array(value :_*))
+    inline def setAllowedAttrsVarargs(value: String*): Self = StObject.set(x, "allowedAttrs", js.Array(value :_*))
     
-    @scala.inline
-    def setNameFromContent(value: Boolean): Self = StObject.set(x, "nameFromContent", value.asInstanceOf[js.Any])
+    inline def setNameFromContent(value: Boolean): Self = StObject.set(x, "nameFromContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFromContentUndefined: Self = StObject.set(x, "nameFromContent", js.undefined)
+    inline def setNameFromContentUndefined: Self = StObject.set(x, "nameFromContent", js.undefined)
     
-    @scala.inline
-    def setRequiredAttrs(value: js.Array[String]): Self = StObject.set(x, "requiredAttrs", value.asInstanceOf[js.Any])
+    inline def setRequiredAttrs(value: js.Array[String]): Self = StObject.set(x, "requiredAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredAttrsUndefined: Self = StObject.set(x, "requiredAttrs", js.undefined)
+    inline def setRequiredAttrsUndefined: Self = StObject.set(x, "requiredAttrs", js.undefined)
     
-    @scala.inline
-    def setRequiredAttrsVarargs(value: String*): Self = StObject.set(x, "requiredAttrs", js.Array(value :_*))
+    inline def setRequiredAttrsVarargs(value: String*): Self = StObject.set(x, "requiredAttrs", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredContext(value: js.Array[String]): Self = StObject.set(x, "requiredContext", value.asInstanceOf[js.Any])
+    inline def setRequiredContext(value: js.Array[String]): Self = StObject.set(x, "requiredContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredContextUndefined: Self = StObject.set(x, "requiredContext", js.undefined)
+    inline def setRequiredContextUndefined: Self = StObject.set(x, "requiredContext", js.undefined)
     
-    @scala.inline
-    def setRequiredContextVarargs(value: String*): Self = StObject.set(x, "requiredContext", js.Array(value :_*))
+    inline def setRequiredContextVarargs(value: String*): Self = StObject.set(x, "requiredContext", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiredOwned(value: js.Array[String]): Self = StObject.set(x, "requiredOwned", value.asInstanceOf[js.Any])
+    inline def setRequiredOwned(value: js.Array[String]): Self = StObject.set(x, "requiredOwned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredOwnedUndefined: Self = StObject.set(x, "requiredOwned", js.undefined)
+    inline def setRequiredOwnedUndefined: Self = StObject.set(x, "requiredOwned", js.undefined)
     
-    @scala.inline
-    def setRequiredOwnedVarargs(value: String*): Self = StObject.set(x, "requiredOwned", js.Array(value :_*))
+    inline def setRequiredOwnedVarargs(value: String*): Self = StObject.set(x, "requiredOwned", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: AriaRolesType | DpubRolesType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AriaRolesType | DpubRolesType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsupported(value: Boolean): Self = StObject.set(x, "unsupported", value.asInstanceOf[js.Any])
+    inline def setUnsupported(value: Boolean): Self = StObject.set(x, "unsupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsupportedUndefined: Self = StObject.set(x, "unsupported", js.undefined)
+    inline def setUnsupportedUndefined: Self = StObject.set(x, "unsupported", js.undefined)
   }
 }

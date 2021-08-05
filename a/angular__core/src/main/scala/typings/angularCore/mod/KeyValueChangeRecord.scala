@@ -23,28 +23,21 @@ trait KeyValueChangeRecord[K, V] extends StObject {
 }
 object KeyValueChangeRecord {
   
-  @scala.inline
-  def apply[K, V](key: K): KeyValueChangeRecord[K, V] = {
+  inline def apply[K, V](key: K): KeyValueChangeRecord[K, V] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], currentValue = null, previousValue = null)
     __obj.asInstanceOf[KeyValueChangeRecord[K, V]]
   }
   
-  @scala.inline
-  implicit class KeyValueChangeRecordMutableBuilder[Self <: KeyValueChangeRecord[?, ?], K, V] (val x: Self & (KeyValueChangeRecord[K, V])) extends AnyVal {
+  extension [Self <: KeyValueChangeRecord[?, ?], K, V](x: Self & (KeyValueChangeRecord[K, V])) {
     
-    @scala.inline
-    def setCurrentValue(value: V): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+    inline def setCurrentValue(value: V): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentValueNull: Self = StObject.set(x, "currentValue", null)
+    inline def setCurrentValueNull: Self = StObject.set(x, "currentValue", null)
     
-    @scala.inline
-    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousValue(value: V): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: V): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousValueNull: Self = StObject.set(x, "previousValue", null)
+    inline def setPreviousValueNull: Self = StObject.set(x, "previousValue", null)
   }
 }

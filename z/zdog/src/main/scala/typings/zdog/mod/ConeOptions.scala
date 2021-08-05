@@ -13,19 +13,15 @@ trait ConeOptions
 }
 object ConeOptions {
   
-  @scala.inline
-  def apply(): ConeOptions = {
+  inline def apply(): ConeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConeOptions]
   }
   
-  @scala.inline
-  implicit class ConeOptionsMutableBuilder[Self <: ConeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConeOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
   }
 }

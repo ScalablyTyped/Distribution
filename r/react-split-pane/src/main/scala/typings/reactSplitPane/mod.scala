@@ -30,12 +30,10 @@ object mod {
     @JSImport("react-split-pane", "default.defaultProps")
     @js.native
     def defaultProps: SplitPaneProps = js.native
-    @scala.inline
-    def defaultProps_=(x: SplitPaneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: SplitPaneProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def getSizeUpdate(props: SplitPaneProps, state: SplitPaneState): PartialSplitPaneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeUpdate")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialSplitPaneState]
+    inline def getSizeUpdate(props: SplitPaneProps, state: SplitPaneState): PartialSplitPaneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getSizeUpdate")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialSplitPaneState]
   }
   
   @JSImport("react-split-pane", "Pane")
@@ -64,44 +62,32 @@ object mod {
   }
   object PaneProps {
     
-    @scala.inline
-    def apply(): PaneProps = {
+    inline def apply(): PaneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaneProps]
     }
     
-    @scala.inline
-    implicit class PanePropsMutableBuilder[Self <: PaneProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaneProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setEleRef(value: /* el */ HTMLDivElement => Unit): Self = StObject.set(x, "eleRef", js.Any.fromFunction1(value))
+      inline def setEleRef(value: /* el */ HTMLDivElement => Unit): Self = StObject.set(x, "eleRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEleRefUndefined: Self = StObject.set(x, "eleRef", js.undefined)
+      inline def setEleRefUndefined: Self = StObject.set(x, "eleRef", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSplit(value: Split): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: Split): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+      inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -114,11 +100,9 @@ object mod {
   trait Split extends StObject
   object Split {
     
-    @scala.inline
-    def horizontal: typings.reactSplitPane.reactSplitPaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSplitPane.reactSplitPaneStrings.horizontal]
+    inline def horizontal: typings.reactSplitPane.reactSplitPaneStrings.horizontal = "horizontal".asInstanceOf[typings.reactSplitPane.reactSplitPaneStrings.horizontal]
     
-    @scala.inline
-    def vertical: typings.reactSplitPane.reactSplitPaneStrings.vertical = "vertical".asInstanceOf[typings.reactSplitPane.reactSplitPaneStrings.vertical]
+    inline def vertical: typings.reactSplitPane.reactSplitPaneStrings.vertical = "vertical".asInstanceOf[typings.reactSplitPane.reactSplitPaneStrings.vertical]
   }
   
   @js.native
@@ -180,134 +164,92 @@ object mod {
   }
   object SplitPaneProps {
     
-    @scala.inline
-    def apply(): SplitPaneProps = {
+    inline def apply(): SplitPaneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SplitPaneProps]
     }
     
-    @scala.inline
-    implicit class SplitPanePropsMutableBuilder[Self <: SplitPaneProps] (val x: Self) extends AnyVal {
+    extension [Self <: SplitPaneProps](x: Self) {
       
-      @scala.inline
-      def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
+      inline def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowResizeUndefined: Self = StObject.set(x, "allowResize", js.undefined)
+      inline def setAllowResizeUndefined: Self = StObject.set(x, "allowResize", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultSize(value: Size): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(value: Size): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
+      inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Size): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Size): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setMinSize(value: Size): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Size): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* newSize */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* newSize */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnDragFinished(value: /* newSize */ Double => Unit): Self = StObject.set(x, "onDragFinished", js.Any.fromFunction1(value))
+      inline def setOnDragFinished(value: /* newSize */ Double => Unit): Self = StObject.set(x, "onDragFinished", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragFinishedUndefined: Self = StObject.set(x, "onDragFinished", js.undefined)
+      inline def setOnDragFinishedUndefined: Self = StObject.set(x, "onDragFinished", js.undefined)
       
-      @scala.inline
-      def setOnDragStarted(value: () => Unit): Self = StObject.set(x, "onDragStarted", js.Any.fromFunction0(value))
+      inline def setOnDragStarted(value: () => Unit): Self = StObject.set(x, "onDragStarted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragStartedUndefined: Self = StObject.set(x, "onDragStarted", js.undefined)
+      inline def setOnDragStartedUndefined: Self = StObject.set(x, "onDragStarted", js.undefined)
       
-      @scala.inline
-      def setOnResizerClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onResizerClick", js.Any.fromFunction1(value))
+      inline def setOnResizerClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onResizerClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizerClickUndefined: Self = StObject.set(x, "onResizerClick", js.undefined)
+      inline def setOnResizerClickUndefined: Self = StObject.set(x, "onResizerClick", js.undefined)
       
-      @scala.inline
-      def setOnResizerDoubleClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onResizerDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnResizerDoubleClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onResizerDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizerDoubleClickUndefined: Self = StObject.set(x, "onResizerDoubleClick", js.undefined)
+      inline def setOnResizerDoubleClickUndefined: Self = StObject.set(x, "onResizerDoubleClick", js.undefined)
       
-      @scala.inline
-      def setPane1Style(value: CSSProperties): Self = StObject.set(x, "pane1Style", value.asInstanceOf[js.Any])
+      inline def setPane1Style(value: CSSProperties): Self = StObject.set(x, "pane1Style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPane1StyleUndefined: Self = StObject.set(x, "pane1Style", js.undefined)
+      inline def setPane1StyleUndefined: Self = StObject.set(x, "pane1Style", js.undefined)
       
-      @scala.inline
-      def setPane2Style(value: CSSProperties): Self = StObject.set(x, "pane2Style", value.asInstanceOf[js.Any])
+      inline def setPane2Style(value: CSSProperties): Self = StObject.set(x, "pane2Style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPane2StyleUndefined: Self = StObject.set(x, "pane2Style", js.undefined)
+      inline def setPane2StyleUndefined: Self = StObject.set(x, "pane2Style", js.undefined)
       
-      @scala.inline
-      def setPaneStyle(value: CSSProperties): Self = StObject.set(x, "paneStyle", value.asInstanceOf[js.Any])
+      inline def setPaneStyle(value: CSSProperties): Self = StObject.set(x, "paneStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaneStyleUndefined: Self = StObject.set(x, "paneStyle", js.undefined)
+      inline def setPaneStyleUndefined: Self = StObject.set(x, "paneStyle", js.undefined)
       
-      @scala.inline
-      def setPrimary(value: first | second): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: first | second): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
       
-      @scala.inline
-      def setResizerClassName(value: String): Self = StObject.set(x, "resizerClassName", value.asInstanceOf[js.Any])
+      inline def setResizerClassName(value: String): Self = StObject.set(x, "resizerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizerClassNameUndefined: Self = StObject.set(x, "resizerClassName", js.undefined)
+      inline def setResizerClassNameUndefined: Self = StObject.set(x, "resizerClassName", js.undefined)
       
-      @scala.inline
-      def setResizerStyle(value: CSSProperties): Self = StObject.set(x, "resizerStyle", value.asInstanceOf[js.Any])
+      inline def setResizerStyle(value: CSSProperties): Self = StObject.set(x, "resizerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizerStyleUndefined: Self = StObject.set(x, "resizerStyle", js.undefined)
+      inline def setResizerStyleUndefined: Self = StObject.set(x, "resizerStyle", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSplit(value: vertical | horizontal): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: vertical | horizontal): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+      inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -319,20 +261,16 @@ object mod {
   }
   object SplitPaneState {
     
-    @scala.inline
-    def apply(active: Boolean, resized: Boolean): SplitPaneState = {
+    inline def apply(active: Boolean, resized: Boolean): SplitPaneState = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], resized = resized.asInstanceOf[js.Any])
       __obj.asInstanceOf[SplitPaneState]
     }
     
-    @scala.inline
-    implicit class SplitPaneStateMutableBuilder[Self <: SplitPaneState] (val x: Self) extends AnyVal {
+    extension [Self <: SplitPaneState](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResized(value: Boolean): Self = StObject.set(x, "resized", value.asInstanceOf[js.Any])
+      inline def setResized(value: Boolean): Self = StObject.set(x, "resized", value.asInstanceOf[js.Any])
     }
   }
 }

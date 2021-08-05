@@ -15,17 +15,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(resolveWithObject = true)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setResolveWithObject(value: `true`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
+      inline def setResolveWithObject(value: `true`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,23 +36,18 @@ object anon {
   }
   object B {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): B = {
+    inline def apply(b: Double, g: Double, r: Double): B = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[B]
     }
     
-    @scala.inline
-    implicit class BMutableBuilder[Self <: B] (val x: Self) extends AnyVal {
+    extension [Self <: B](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,32 +61,24 @@ object anon {
   }
   object Brightness {
     
-    @scala.inline
-    def apply(): Brightness = {
+    inline def apply(): Brightness = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Brightness]
     }
     
-    @scala.inline
-    implicit class BrightnessMutableBuilder[Self <: Brightness] (val x: Self) extends AnyVal {
+    extension [Self <: Brightness](x: Self) {
       
-      @scala.inline
-      def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+      inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
+      inline def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
       
-      @scala.inline
-      def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
+      inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
       
-      @scala.inline
-      def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+      inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+      inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     }
   }
   
@@ -108,23 +92,18 @@ object anon {
   }
   object Buffer {
     
-    @scala.inline
-    def apply(buffer: Boolean, file: Boolean, stream: Boolean): Buffer = {
+    inline def apply(buffer: Boolean, file: Boolean, stream: Boolean): Buffer = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buffer]
     }
     
-    @scala.inline
-    implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+    extension [Self <: Buffer](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Boolean): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,17 +113,14 @@ object anon {
   }
   object Create {
     
-    @scala.inline
-    def apply(create: typings.sharp.mod.Create): Create = {
+    inline def apply(create: typings.sharp.mod.Create): Create = {
       val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any])
       __obj.asInstanceOf[Create]
     }
     
-    @scala.inline
-    implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+    extension [Self <: Create](x: Self) {
       
-      @scala.inline
-      def setCreate(value: typings.sharp.mod.Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: typings.sharp.mod.Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,23 +134,18 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply(current: Double, high: Double, max: Double): Current = {
+    inline def apply(current: Double, high: Double, max: Double): Current = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
       __obj.asInstanceOf[Current]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+    extension [Self <: Current](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+      inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,20 +157,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: typings.node.Buffer, info: OutputInfo): Data = {
+    inline def apply(data: typings.node.Buffer, info: OutputInfo): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: typings.node.Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: typings.node.Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: OutputInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: OutputInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,20 +178,16 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(current: Double, max: Double): Max = {
+    inline def apply(current: Double, max: Double): Max = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any])
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,17 +197,14 @@ object anon {
   }
   object Raw {
     
-    @scala.inline
-    def apply(raw: typings.sharp.mod.Raw): Raw = {
+    inline def apply(raw: typings.sharp.mod.Raw): Raw = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Raw]
     }
     
-    @scala.inline
-    implicit class RawMutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
+    extension [Self <: Raw](x: Self) {
       
-      @scala.inline
-      def setRaw(value: typings.sharp.mod.Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: typings.sharp.mod.Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,17 +214,14 @@ object anon {
   }
   object ResolveWithObject {
     
-    @scala.inline
-    def apply(): ResolveWithObject = {
+    inline def apply(): ResolveWithObject = {
       val __obj = js.Dynamic.literal(resolveWithObject = false)
       __obj.asInstanceOf[ResolveWithObject]
     }
     
-    @scala.inline
-    implicit class ResolveWithObjectMutableBuilder[Self <: ResolveWithObject] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveWithObject](x: Self) {
       
-      @scala.inline
-      def setResolveWithObject(value: `false`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
+      inline def setResolveWithObject(value: `false`): Self = StObject.set(x, "resolveWithObject", value.asInstanceOf[js.Any])
     }
   }
 }

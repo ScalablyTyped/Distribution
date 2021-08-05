@@ -18,18 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourcePriority extends StObject
 object ResourcePriority {
   
-  @scala.inline
-  def High: typings.webdriverio.webdriverioStrings.High = "High".asInstanceOf[typings.webdriverio.webdriverioStrings.High]
+  inline def High: typings.webdriverio.webdriverioStrings.High = "High".asInstanceOf[typings.webdriverio.webdriverioStrings.High]
   
-  @scala.inline
-  def Low: typings.webdriverio.webdriverioStrings.Low = "Low".asInstanceOf[typings.webdriverio.webdriverioStrings.Low]
+  inline def Low: typings.webdriverio.webdriverioStrings.Low = "Low".asInstanceOf[typings.webdriverio.webdriverioStrings.Low]
   
-  @scala.inline
-  def Medium: typings.webdriverio.webdriverioStrings.Medium = "Medium".asInstanceOf[typings.webdriverio.webdriverioStrings.Medium]
+  inline def Medium: typings.webdriverio.webdriverioStrings.Medium = "Medium".asInstanceOf[typings.webdriverio.webdriverioStrings.Medium]
   
-  @scala.inline
-  def VeryHigh: typings.webdriverio.webdriverioStrings.VeryHigh = "VeryHigh".asInstanceOf[typings.webdriverio.webdriverioStrings.VeryHigh]
+  inline def VeryHigh: typings.webdriverio.webdriverioStrings.VeryHigh = "VeryHigh".asInstanceOf[typings.webdriverio.webdriverioStrings.VeryHigh]
   
-  @scala.inline
-  def VeryLow: typings.webdriverio.webdriverioStrings.VeryLow = "VeryLow".asInstanceOf[typings.webdriverio.webdriverioStrings.VeryLow]
+  inline def VeryLow: typings.webdriverio.webdriverioStrings.VeryLow = "VeryLow".asInstanceOf[typings.webdriverio.webdriverioStrings.VeryLow]
 }

@@ -48,61 +48,43 @@ trait LogStream extends StObject {
 }
 object LogStream {
   
-  @scala.inline
-  def apply(): LogStream = {
+  inline def apply(): LogStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogStream]
   }
   
-  @scala.inline
-  implicit class LogStreamMutableBuilder[Self <: LogStream] (val x: Self) extends AnyVal {
+  extension [Self <: LogStream](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setFirstEventTimestamp(value: Timestamp): Self = StObject.set(x, "firstEventTimestamp", value.asInstanceOf[js.Any])
+    inline def setFirstEventTimestamp(value: Timestamp): Self = StObject.set(x, "firstEventTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstEventTimestampUndefined: Self = StObject.set(x, "firstEventTimestamp", js.undefined)
+    inline def setFirstEventTimestampUndefined: Self = StObject.set(x, "firstEventTimestamp", js.undefined)
     
-    @scala.inline
-    def setLastEventTimestamp(value: Timestamp): Self = StObject.set(x, "lastEventTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastEventTimestamp(value: Timestamp): Self = StObject.set(x, "lastEventTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEventTimestampUndefined: Self = StObject.set(x, "lastEventTimestamp", js.undefined)
+    inline def setLastEventTimestampUndefined: Self = StObject.set(x, "lastEventTimestamp", js.undefined)
     
-    @scala.inline
-    def setLastIngestionTime(value: Timestamp): Self = StObject.set(x, "lastIngestionTime", value.asInstanceOf[js.Any])
+    inline def setLastIngestionTime(value: Timestamp): Self = StObject.set(x, "lastIngestionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastIngestionTimeUndefined: Self = StObject.set(x, "lastIngestionTime", js.undefined)
+    inline def setLastIngestionTimeUndefined: Self = StObject.set(x, "lastIngestionTime", js.undefined)
     
-    @scala.inline
-    def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
+    inline def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
+    inline def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
     
-    @scala.inline
-    def setStoredBytes(value: StoredBytes): Self = StObject.set(x, "storedBytes", value.asInstanceOf[js.Any])
+    inline def setStoredBytes(value: StoredBytes): Self = StObject.set(x, "storedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredBytesUndefined: Self = StObject.set(x, "storedBytes", js.undefined)
+    inline def setStoredBytesUndefined: Self = StObject.set(x, "storedBytes", js.undefined)
     
-    @scala.inline
-    def setUploadSequenceToken(value: SequenceToken): Self = StObject.set(x, "uploadSequenceToken", value.asInstanceOf[js.Any])
+    inline def setUploadSequenceToken(value: SequenceToken): Self = StObject.set(x, "uploadSequenceToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadSequenceTokenUndefined: Self = StObject.set(x, "uploadSequenceToken", js.undefined)
+    inline def setUploadSequenceTokenUndefined: Self = StObject.set(x, "uploadSequenceToken", js.undefined)
   }
 }

@@ -157,6 +157,5 @@ trait Client extends StObject {
 }
 object Client {
   
-  @scala.inline
-  def apply: ClientStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Client").asInstanceOf[ClientStatic]
+  inline def apply: ClientStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Client").asInstanceOf[ClientStatic]
 }

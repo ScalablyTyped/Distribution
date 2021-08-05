@@ -14,9 +14,9 @@ object dtmfMod {
     /** @internal */
     def this(incomingInfoRequest: IncomingInfoRequest, tone: String, duration: Double) = this()
     
-    var _duration: js.Any = js.native
+    /* private */ var _duration: js.Any = js.native
     
-    var _tone: js.Any = js.native
+    /* private */ var _tone: js.Any = js.native
     
     def duration: Double = js.native
     

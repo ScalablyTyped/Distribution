@@ -35,40 +35,28 @@ object PanoseWeight {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ANYTHING: `0` = 0.asInstanceOf[`0`]
+    inline def ANYTHING: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def BLACK: `10` = 10.asInstanceOf[`10`]
+    inline def BLACK: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def BOLD: `8` = 8.asInstanceOf[`8`]
+    inline def BOLD: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def BOOK: `5` = 5.asInstanceOf[`5`]
+    inline def BOOK: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def DEMI_BOLD: `7` = 7.asInstanceOf[`7`]
+    inline def DEMI_BOLD: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def HEAVY: `9` = 9.asInstanceOf[`9`]
+    inline def HEAVY: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def LIGHT: `3` = 3.asInstanceOf[`3`]
+    inline def LIGHT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def MEDIUM: `6` = 6.asInstanceOf[`6`]
+    inline def MEDIUM: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def NORD: `11` = 11.asInstanceOf[`11`]
+    inline def NORD: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def NO_FIT: `1` = 1.asInstanceOf[`1`]
+    inline def NO_FIT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def THIN: `4` = 4.asInstanceOf[`4`]
+    inline def THIN: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def VERY_LIGHT: `2` = 2.asInstanceOf[`2`]
+    inline def VERY_LIGHT: `2` = 2.asInstanceOf[`2`]
   }
 }

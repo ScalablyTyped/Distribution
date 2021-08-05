@@ -13,19 +13,15 @@ trait Timezone extends StObject {
 }
 object Timezone {
   
-  @scala.inline
-  def apply(): Timezone = {
+  inline def apply(): Timezone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Timezone]
   }
   
-  @scala.inline
-  implicit class TimezoneMutableBuilder[Self <: Timezone] (val x: Self) extends AnyVal {
+  extension [Self <: Timezone](x: Self) {
     
-    @scala.inline
-    def setTimezoneName(value: String): Self = StObject.set(x, "TimezoneName", value.asInstanceOf[js.Any])
+    inline def setTimezoneName(value: String): Self = StObject.set(x, "TimezoneName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneNameUndefined: Self = StObject.set(x, "TimezoneName", js.undefined)
+    inline def setTimezoneNameUndefined: Self = StObject.set(x, "TimezoneName", js.undefined)
   }
 }

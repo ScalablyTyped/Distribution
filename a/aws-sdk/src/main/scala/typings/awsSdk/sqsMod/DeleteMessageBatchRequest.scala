@@ -18,22 +18,17 @@ trait DeleteMessageBatchRequest extends StObject {
 }
 object DeleteMessageBatchRequest {
   
-  @scala.inline
-  def apply(Entries: DeleteMessageBatchRequestEntryList, QueueUrl: String): DeleteMessageBatchRequest = {
+  inline def apply(Entries: DeleteMessageBatchRequestEntryList, QueueUrl: String): DeleteMessageBatchRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMessageBatchRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMessageBatchRequestMutableBuilder[Self <: DeleteMessageBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMessageBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: DeleteMessageBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: DeleteMessageBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: DeleteMessageBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: DeleteMessageBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

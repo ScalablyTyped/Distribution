@@ -12,6 +12,5 @@ object resolve4Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(host: String, resolver: Typeofdns): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
+  inline def default(host: String, resolver: Typeofdns): js.Promise[js.Array[RecordWithTtl]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(host.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[RecordWithTtl]]]
 }

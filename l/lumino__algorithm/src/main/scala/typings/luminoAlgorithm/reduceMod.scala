@@ -11,13 +11,11 @@ object reduceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reduce[T](
+  inline def reduce[T](
     `object`: IterableOrArrayLike[T],
     fn: js.Function3[/* accumulator */ T, /* value */ T, /* index */ Double, T]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def reduce[T, U](
+  inline def reduce[T, U](
     `object`: IterableOrArrayLike[T],
     fn: js.Function3[/* accumulator */ U, /* value */ T, /* index */ Double, U],
     initial: U

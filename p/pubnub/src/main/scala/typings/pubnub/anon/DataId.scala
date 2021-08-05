@@ -16,23 +16,18 @@ trait DataId extends StObject {
 }
 object DataId {
   
-  @scala.inline
-  def apply(data: Id): DataId = {
+  inline def apply(data: Id): DataId = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
     __obj.updateDynamic("type")("uuid")
     __obj.asInstanceOf[DataId]
   }
   
-  @scala.inline
-  implicit class DataIdMutableBuilder[Self <: DataId] (val x: Self) extends AnyVal {
+  extension [Self <: DataId](x: Self) {
     
-    @scala.inline
-    def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

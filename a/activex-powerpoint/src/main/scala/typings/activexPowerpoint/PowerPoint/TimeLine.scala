@@ -14,13 +14,12 @@ trait TimeLine extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.TimeLine_typekey")
+  /* private */ @JSName("PowerPoint.TimeLine_typekey")
   var PowerPointDotTimeLine_typekey: TimeLine
 }
 object TimeLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     InteractiveSequences: Sequences,
     MainSequence: Sequence,
@@ -32,22 +31,16 @@ object TimeLine {
     __obj.asInstanceOf[TimeLine]
   }
   
-  @scala.inline
-  implicit class TimeLineMutableBuilder[Self <: TimeLine] (val x: Self) extends AnyVal {
+  extension [Self <: TimeLine](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveSequences(value: Sequences): Self = StObject.set(x, "InteractiveSequences", value.asInstanceOf[js.Any])
+    inline def setInteractiveSequences(value: Sequences): Self = StObject.set(x, "InteractiveSequences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainSequence(value: Sequence): Self = StObject.set(x, "MainSequence", value.asInstanceOf[js.Any])
+    inline def setMainSequence(value: Sequence): Self = StObject.set(x, "MainSequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTimeLine_typekey(value: TimeLine): Self = StObject.set(x, "PowerPoint.TimeLine_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTimeLine_typekey(value: TimeLine): Self = StObject.set(x, "PowerPoint.TimeLine_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait Restore extends StObject {
 }
 object Restore {
   
-  @scala.inline
-  def apply(): Restore = {
+  inline def apply(): Restore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Restore]
   }
   
-  @scala.inline
-  implicit class RestoreMutableBuilder[Self <: Restore] (val x: Self) extends AnyVal {
+  extension [Self <: Restore](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

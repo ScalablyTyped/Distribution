@@ -22,12 +22,10 @@ object useRouteCacheMod {
     @JSImport("@react-navigation/core/lib/typescript/src/useRouteCache", "SUPPRESS_STATE_ACCESS_WARNING.value")
     @js.native
     def value: Boolean = js.native
-    @scala.inline
-    def value_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    inline def value_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def default_routes[State /* <: NavigationState[ParamListBase] */](
+  inline def default_routes[State /* <: NavigationState[ParamListBase] */](
     routes: /* import warning: importer.ImportType#apply Failed type conversion: State['routes'] */ js.Any
   ): js.Array[Route[String, js.UndefOr[js.Object]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[Route[String, js.UndefOr[js.Object]]]]
 }

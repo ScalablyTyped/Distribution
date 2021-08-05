@@ -17,28 +17,21 @@ trait BatchAnnotateFilesRequest extends StObject {
 }
 object BatchAnnotateFilesRequest {
   
-  @scala.inline
-  def apply(): BatchAnnotateFilesRequest = {
+  inline def apply(): BatchAnnotateFilesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchAnnotateFilesRequest]
   }
   
-  @scala.inline
-  implicit class BatchAnnotateFilesRequestMutableBuilder[Self <: BatchAnnotateFilesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAnnotateFilesRequest](x: Self) {
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRequests(value: js.Array[AnnotateFileRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[AnnotateFileRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: AnnotateFileRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: AnnotateFileRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
   }
 }

@@ -15,32 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: InputType): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: InputType, format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: RawObject): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: RawObject, format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
-  @scala.inline
-  def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double]): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double], format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: InputType): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: InputType, format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: InputType, format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: RawObject): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: RawObject, format: Unit, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+  inline def apply(gl: WebGLRenderingContext, input: RawObject, format: GLenum, `type`: GLenum): Texture = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Texture]
   
   @JSImport("gl-texture2d", JSImport.Namespace)
   @js.native
@@ -60,23 +47,18 @@ object mod {
   }
   object RawObject {
     
-    @scala.inline
-    def apply(height: Double, raw: ArrayBufferView | InputType | ImageBitmap, width: Double): RawObject = {
+    inline def apply(height: Double, raw: ArrayBufferView | InputType | ImageBitmap, width: Double): RawObject = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[RawObject]
     }
     
-    @scala.inline
-    implicit class RawObjectMutableBuilder[Self <: RawObject] (val x: Self) extends AnyVal {
+    extension [Self <: RawObject](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: ArrayBufferView | InputType | ImageBitmap): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: ArrayBufferView | InputType | ImageBitmap): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   

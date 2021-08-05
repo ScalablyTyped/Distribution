@@ -18,22 +18,17 @@ trait SetBreakpointParameterType extends StObject {
 }
 object SetBreakpointParameterType {
   
-  @scala.inline
-  def apply(location: Location): SetBreakpointParameterType = {
+  inline def apply(location: Location): SetBreakpointParameterType = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointParameterType]
   }
   
-  @scala.inline
-  implicit class SetBreakpointParameterTypeMutableBuilder[Self <: SetBreakpointParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: SetBreakpointParameterType](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

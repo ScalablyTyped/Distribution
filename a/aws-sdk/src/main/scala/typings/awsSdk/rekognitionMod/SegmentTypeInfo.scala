@@ -18,25 +18,19 @@ trait SegmentTypeInfo extends StObject {
 }
 object SegmentTypeInfo {
   
-  @scala.inline
-  def apply(): SegmentTypeInfo = {
+  inline def apply(): SegmentTypeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentTypeInfo]
   }
   
-  @scala.inline
-  implicit class SegmentTypeInfoMutableBuilder[Self <: SegmentTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentTypeInfo](x: Self) {
     
-    @scala.inline
-    def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
+    inline def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
+    inline def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
     
-    @scala.inline
-    def setType(value: SegmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: SegmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

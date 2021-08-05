@@ -23,8 +23,7 @@ trait XLibraryContainerExport
 }
 object XLibraryContainerExport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     exportLibrary: (String, String, XInteractionHandler) => Unit,
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XLibraryContainerExport {
     __obj.asInstanceOf[XLibraryContainerExport]
   }
   
-  @scala.inline
-  implicit class XLibraryContainerExportMutableBuilder[Self <: XLibraryContainerExport] (val x: Self) extends AnyVal {
+  extension [Self <: XLibraryContainerExport](x: Self) {
     
-    @scala.inline
-    def setExportLibrary(value: (String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "exportLibrary", js.Any.fromFunction3(value))
+    inline def setExportLibrary(value: (String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "exportLibrary", js.Any.fromFunction3(value))
   }
 }

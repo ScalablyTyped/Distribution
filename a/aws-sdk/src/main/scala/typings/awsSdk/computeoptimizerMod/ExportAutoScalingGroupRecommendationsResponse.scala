@@ -18,25 +18,19 @@ trait ExportAutoScalingGroupRecommendationsResponse extends StObject {
 }
 object ExportAutoScalingGroupRecommendationsResponse {
   
-  @scala.inline
-  def apply(): ExportAutoScalingGroupRecommendationsResponse = {
+  inline def apply(): ExportAutoScalingGroupRecommendationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportAutoScalingGroupRecommendationsResponse]
   }
   
-  @scala.inline
-  implicit class ExportAutoScalingGroupRecommendationsResponseMutableBuilder[Self <: ExportAutoScalingGroupRecommendationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAutoScalingGroupRecommendationsResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
+    inline def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
+    inline def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
   }
 }

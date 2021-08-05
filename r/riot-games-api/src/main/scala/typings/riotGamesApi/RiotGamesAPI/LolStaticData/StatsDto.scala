@@ -48,8 +48,7 @@ trait StatsDto extends StObject {
 }
 object StatsDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     armor: Double,
     armorperlevel: Double,
     attackdamage: Double,
@@ -75,67 +74,46 @@ object StatsDto {
     __obj.asInstanceOf[StatsDto]
   }
   
-  @scala.inline
-  implicit class StatsDtoMutableBuilder[Self <: StatsDto] (val x: Self) extends AnyVal {
+  extension [Self <: StatsDto](x: Self) {
     
-    @scala.inline
-    def setArmor(value: Double): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
+    inline def setArmor(value: Double): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArmorperlevel(value: Double): Self = StObject.set(x, "armorperlevel", value.asInstanceOf[js.Any])
+    inline def setArmorperlevel(value: Double): Self = StObject.set(x, "armorperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackdamage(value: Double): Self = StObject.set(x, "attackdamage", value.asInstanceOf[js.Any])
+    inline def setAttackdamage(value: Double): Self = StObject.set(x, "attackdamage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackdamageperlevel(value: Double): Self = StObject.set(x, "attackdamageperlevel", value.asInstanceOf[js.Any])
+    inline def setAttackdamageperlevel(value: Double): Self = StObject.set(x, "attackdamageperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackrange(value: Double): Self = StObject.set(x, "attackrange", value.asInstanceOf[js.Any])
+    inline def setAttackrange(value: Double): Self = StObject.set(x, "attackrange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackspeedoffset(value: Double): Self = StObject.set(x, "attackspeedoffset", value.asInstanceOf[js.Any])
+    inline def setAttackspeedoffset(value: Double): Self = StObject.set(x, "attackspeedoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackspeedperlevel(value: Double): Self = StObject.set(x, "attackspeedperlevel", value.asInstanceOf[js.Any])
+    inline def setAttackspeedperlevel(value: Double): Self = StObject.set(x, "attackspeedperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrit(value: Double): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+    inline def setCrit(value: Double): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCritperlevel(value: Double): Self = StObject.set(x, "critperlevel", value.asInstanceOf[js.Any])
+    inline def setCritperlevel(value: Double): Self = StObject.set(x, "critperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHp(value: Double): Self = StObject.set(x, "hp", value.asInstanceOf[js.Any])
+    inline def setHp(value: Double): Self = StObject.set(x, "hp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHpperlevel(value: Double): Self = StObject.set(x, "hpperlevel", value.asInstanceOf[js.Any])
+    inline def setHpperlevel(value: Double): Self = StObject.set(x, "hpperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHpregen(value: Double): Self = StObject.set(x, "hpregen", value.asInstanceOf[js.Any])
+    inline def setHpregen(value: Double): Self = StObject.set(x, "hpregen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHpregenperlevel(value: Double): Self = StObject.set(x, "hpregenperlevel", value.asInstanceOf[js.Any])
+    inline def setHpregenperlevel(value: Double): Self = StObject.set(x, "hpregenperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovespeed(value: Double): Self = StObject.set(x, "movespeed", value.asInstanceOf[js.Any])
+    inline def setMovespeed(value: Double): Self = StObject.set(x, "movespeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMp(value: Double): Self = StObject.set(x, "mp", value.asInstanceOf[js.Any])
+    inline def setMp(value: Double): Self = StObject.set(x, "mp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpperlevel(value: Double): Self = StObject.set(x, "mpperlevel", value.asInstanceOf[js.Any])
+    inline def setMpperlevel(value: Double): Self = StObject.set(x, "mpperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpregen(value: Double): Self = StObject.set(x, "mpregen", value.asInstanceOf[js.Any])
+    inline def setMpregen(value: Double): Self = StObject.set(x, "mpregen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpregenperlevel(value: Double): Self = StObject.set(x, "mpregenperlevel", value.asInstanceOf[js.Any])
+    inline def setMpregenperlevel(value: Double): Self = StObject.set(x, "mpregenperlevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellblock(value: Double): Self = StObject.set(x, "spellblock", value.asInstanceOf[js.Any])
+    inline def setSpellblock(value: Double): Self = StObject.set(x, "spellblock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellblockperlevel(value: Double): Self = StObject.set(x, "spellblockperlevel", value.asInstanceOf[js.Any])
+    inline def setSpellblockperlevel(value: Double): Self = StObject.set(x, "spellblockperlevel", value.asInstanceOf[js.Any])
   }
 }

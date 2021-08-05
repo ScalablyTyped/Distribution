@@ -51,45 +51,33 @@ trait Currency
 }
 object Currency {
   
-  @scala.inline
-  def apply(): Currency = {
+  inline def apply(): Currency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Currency]
   }
   
-  @scala.inline
-  implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+  extension [Self <: Currency](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setParser(value: /* value */ String => Double | typings.std.Date): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+    inline def setParser(value: /* value */ String => Double | typings.std.Date): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+    inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: billions | currency | day | decimal_ | exponential | fixedPoint | largeNumber | longDate | longTime | millions | millisecond | month | monthAndDay | monthAndYear | percent | quarter | quarterAndYear | shortDate | shortTime | thousands | trillions | year | dayOfWeek | hour | longDateLongTime | minute | second | shortDateShortTime
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

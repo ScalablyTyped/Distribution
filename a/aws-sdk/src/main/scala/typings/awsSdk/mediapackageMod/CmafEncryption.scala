@@ -15,22 +15,17 @@ trait CmafEncryption extends StObject {
 }
 object CmafEncryption {
   
-  @scala.inline
-  def apply(SpekeKeyProvider: SpekeKeyProvider): CmafEncryption = {
+  inline def apply(SpekeKeyProvider: SpekeKeyProvider): CmafEncryption = {
     val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[CmafEncryption]
   }
   
-  @scala.inline
-  implicit class CmafEncryptionMutableBuilder[Self <: CmafEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: CmafEncryption](x: Self) {
     
-    @scala.inline
-    def setKeyRotationIntervalSeconds(value: integer): Self = StObject.set(x, "KeyRotationIntervalSeconds", value.asInstanceOf[js.Any])
+    inline def setKeyRotationIntervalSeconds(value: integer): Self = StObject.set(x, "KeyRotationIntervalSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRotationIntervalSecondsUndefined: Self = StObject.set(x, "KeyRotationIntervalSeconds", js.undefined)
+    inline def setKeyRotationIntervalSecondsUndefined: Self = StObject.set(x, "KeyRotationIntervalSeconds", js.undefined)
     
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
+    inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
   }
 }

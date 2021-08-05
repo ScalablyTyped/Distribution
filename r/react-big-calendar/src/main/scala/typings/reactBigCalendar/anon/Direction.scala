@@ -20,22 +20,17 @@ trait Direction[TEvent /* <: js.Object */] extends StObject {
 }
 object Direction {
   
-  @scala.inline
-  def apply[TEvent /* <: js.Object */](action: resize | move, direction: UP | DOWN | LEFT | RIGHT, event: TEvent): Direction[TEvent] = {
+  inline def apply[TEvent /* <: js.Object */](action: resize | move, direction: UP | DOWN | LEFT | RIGHT, event: TEvent): Direction[TEvent] = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[Direction[TEvent]]
   }
   
-  @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction[?], TEvent /* <: js.Object */] (val x: Self & Direction[TEvent]) extends AnyVal {
+  extension [Self <: Direction[?], TEvent /* <: js.Object */](x: Self & Direction[TEvent]) {
     
-    @scala.inline
-    def setAction(value: resize | move): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: resize | move): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: UP | DOWN | LEFT | RIGHT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: UP | DOWN | LEFT | RIGHT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait WebAclRuleStatementRuleGroupReferenceStatement extends StObject {
 }
 object WebAclRuleStatementRuleGroupReferenceStatement {
   
-  @scala.inline
-  def apply(arn: String): WebAclRuleStatementRuleGroupReferenceStatement = {
+  inline def apply(arn: String): WebAclRuleStatementRuleGroupReferenceStatement = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementRuleGroupReferenceStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementRuleGroupReferenceStatementMutableBuilder[Self <: WebAclRuleStatementRuleGroupReferenceStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementRuleGroupReferenceStatement](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedRules(value: js.Array[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]): Self = StObject.set(x, "excludedRules", value.asInstanceOf[js.Any])
+    inline def setExcludedRules(value: js.Array[WebAclRuleStatementRuleGroupReferenceStatementExcludedRule]): Self = StObject.set(x, "excludedRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedRulesUndefined: Self = StObject.set(x, "excludedRules", js.undefined)
+    inline def setExcludedRulesUndefined: Self = StObject.set(x, "excludedRules", js.undefined)
     
-    @scala.inline
-    def setExcludedRulesVarargs(value: WebAclRuleStatementRuleGroupReferenceStatementExcludedRule*): Self = StObject.set(x, "excludedRules", js.Array(value :_*))
+    inline def setExcludedRulesVarargs(value: WebAclRuleStatementRuleGroupReferenceStatementExcludedRule*): Self = StObject.set(x, "excludedRules", js.Array(value :_*))
   }
 }

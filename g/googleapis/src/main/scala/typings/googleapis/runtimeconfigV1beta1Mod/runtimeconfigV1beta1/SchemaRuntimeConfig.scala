@@ -30,25 +30,19 @@ trait SchemaRuntimeConfig extends StObject {
 }
 object SchemaRuntimeConfig {
   
-  @scala.inline
-  def apply(): SchemaRuntimeConfig = {
+  inline def apply(): SchemaRuntimeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRuntimeConfig]
   }
   
-  @scala.inline
-  implicit class SchemaRuntimeConfigMutableBuilder[Self <: SchemaRuntimeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRuntimeConfig](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

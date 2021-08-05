@@ -17,8 +17,7 @@ trait IDataRequest extends StObject {
 }
 object IDataRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: DataPackage,
     deadline: Date,
     failWithDisplayText: String => Unit,
@@ -28,19 +27,14 @@ object IDataRequest {
     __obj.asInstanceOf[IDataRequest]
   }
   
-  @scala.inline
-  implicit class IDataRequestMutableBuilder[Self <: IDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IDataRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: DataPackage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DataPackage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailWithDisplayText(value: String => Unit): Self = StObject.set(x, "failWithDisplayText", js.Any.fromFunction1(value))
+    inline def setFailWithDisplayText(value: String => Unit): Self = StObject.set(x, "failWithDisplayText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDeferral(value: () => DataRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => DataRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SVGElement extends StObject {
   
-  @JSName("MSHTML.SVGElement_typekey")
+  /* private */ @JSName("MSHTML.SVGElement_typekey")
   var MSHTMLDotSVGElement_typekey: SVGElement = js.native
   
   val all: js.Any = js.native

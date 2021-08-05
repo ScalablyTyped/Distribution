@@ -12,10 +12,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def hash128(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def hash128(`val`: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash128(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hash128(`val`: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object x86 {
@@ -24,14 +22,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def hash128(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def hash128(`val`: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash128(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hash128(`val`: String, seed: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash128")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def hash32(`val`: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hash32")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def hash32(`val`: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hash32")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def hash32(`val`: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hash32")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def hash32(`val`: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hash32")(`val`.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

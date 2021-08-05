@@ -13,8 +13,7 @@ trait FolderPicker
      with IFolderPicker
 object FolderPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     continuationData: ValueSet,
     fileTypeFilter: IVector[String],

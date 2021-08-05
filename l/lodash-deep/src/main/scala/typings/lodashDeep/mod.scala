@@ -10,10 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deepMapValues(`object`: js.Any, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def deepMapValues(`object`: js.Any, callback: js.Any, propertyPath: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deepMapValues(`object`: js.Any, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def deepMapValues(`object`: js.Any, callback: js.Any, propertyPath: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* augmented module */
   object lodashAugmentingMod {

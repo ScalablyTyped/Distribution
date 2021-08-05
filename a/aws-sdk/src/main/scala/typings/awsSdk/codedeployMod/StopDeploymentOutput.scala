@@ -18,25 +18,19 @@ trait StopDeploymentOutput extends StObject {
 }
 object StopDeploymentOutput {
   
-  @scala.inline
-  def apply(): StopDeploymentOutput = {
+  inline def apply(): StopDeploymentOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopDeploymentOutput]
   }
   
-  @scala.inline
-  implicit class StopDeploymentOutputMutableBuilder[Self <: StopDeploymentOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StopDeploymentOutput](x: Self) {
     
-    @scala.inline
-    def setStatus(value: StopStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StopStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: Message): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: Message): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

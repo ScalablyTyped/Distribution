@@ -20,8 +20,7 @@ trait IgnoreConstraints extends StObject {
 }
 object IgnoreConstraints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ignoreConstraints: scala.Double,
     includeAll: scala.Double,
     includeChildren: scala.Double,
@@ -33,25 +32,18 @@ object IgnoreConstraints {
     __obj.asInstanceOf[IgnoreConstraints]
   }
   
-  @scala.inline
-  implicit class IgnoreConstraintsMutableBuilder[Self <: IgnoreConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreConstraints](x: Self) {
     
-    @scala.inline
-    def setIgnoreConstraints(value: scala.Double): Self = StObject.set(x, "ignoreConstraints", value.asInstanceOf[js.Any])
+    inline def setIgnoreConstraints(value: scala.Double): Self = StObject.set(x, "ignoreConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAll(value: scala.Double): Self = StObject.set(x, "includeAll", value.asInstanceOf[js.Any])
+    inline def setIncludeAll(value: scala.Double): Self = StObject.set(x, "includeAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeChildren(value: scala.Double): Self = StObject.set(x, "includeChildren", value.asInstanceOf[js.Any])
+    inline def setIncludeChildren(value: scala.Double): Self = StObject.set(x, "includeChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSelf(value: scala.Double): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
+    inline def setIncludeSelf(value: scala.Double): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSubTree(value: scala.Double): Self = StObject.set(x, "includeSubTree", value.asInstanceOf[js.Any])
+    inline def setIncludeSubTree(value: scala.Double): Self = StObject.set(x, "includeSubTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

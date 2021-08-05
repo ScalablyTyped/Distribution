@@ -18,6 +18,5 @@ object guid {
     * Create an RFC4122 version 4 compliant GUID.
     * @returns A new GUID.
     */
-  @scala.inline
-  def create(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[String]
+  inline def create(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[String]
 }

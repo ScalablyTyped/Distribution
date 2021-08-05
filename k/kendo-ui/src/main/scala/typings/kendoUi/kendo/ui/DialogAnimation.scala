@@ -12,25 +12,19 @@ trait DialogAnimation extends StObject {
 }
 object DialogAnimation {
   
-  @scala.inline
-  def apply(): DialogAnimation = {
+  inline def apply(): DialogAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogAnimation]
   }
   
-  @scala.inline
-  implicit class DialogAnimationMutableBuilder[Self <: DialogAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: DialogAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: DialogAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: DialogAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: DialogAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: DialogAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

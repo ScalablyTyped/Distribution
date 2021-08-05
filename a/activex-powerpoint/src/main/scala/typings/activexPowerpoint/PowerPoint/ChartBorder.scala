@@ -18,15 +18,14 @@ trait ChartBorder extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ChartBorder_typekey")
+  /* private */ @JSName("PowerPoint.ChartBorder_typekey")
   var PowerPointDotChartBorder_typekey: ChartBorder
   
   var Weight: js.Any
 }
 object ChartBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Color: js.Any,
     ColorIndex: js.Any,
@@ -41,31 +40,22 @@ object ChartBorder {
     __obj.asInstanceOf[ChartBorder]
   }
   
-  @scala.inline
-  implicit class ChartBorderMutableBuilder[Self <: ChartBorder] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBorder](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: js.Any): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: js.Any): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotChartBorder_typekey(value: ChartBorder): Self = StObject.set(x, "PowerPoint.ChartBorder_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotChartBorder_typekey(value: ChartBorder): Self = StObject.set(x, "PowerPoint.ChartBorder_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: js.Any): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: js.Any): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
   }
 }

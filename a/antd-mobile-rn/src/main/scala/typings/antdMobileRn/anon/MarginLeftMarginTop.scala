@@ -16,25 +16,19 @@ trait MarginLeftMarginTop extends StObject {
 }
 object MarginLeftMarginTop {
   
-  @scala.inline
-  def apply(height: Double, marginLeft: Double, marginTop: Double, width: Double): MarginLeftMarginTop = {
+  inline def apply(height: Double, marginLeft: Double, marginTop: Double, width: Double): MarginLeftMarginTop = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], marginTop = marginTop.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginLeftMarginTop]
   }
   
-  @scala.inline
-  implicit class MarginLeftMarginTopMutableBuilder[Self <: MarginLeftMarginTop] (val x: Self) extends AnyVal {
+  extension [Self <: MarginLeftMarginTop](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

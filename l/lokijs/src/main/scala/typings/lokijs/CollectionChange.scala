@@ -14,22 +14,17 @@ trait CollectionChange extends StObject {
 }
 object CollectionChange {
   
-  @scala.inline
-  def apply(name: String, obj: js.Any, operation: String): CollectionChange = {
+  inline def apply(name: String, obj: js.Any, operation: String): CollectionChange = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], obj = obj.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionChange]
   }
   
-  @scala.inline
-  implicit class CollectionChangeMutableBuilder[Self <: CollectionChange] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionChange](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObj(value: js.Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+    inline def setObj(value: js.Any): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

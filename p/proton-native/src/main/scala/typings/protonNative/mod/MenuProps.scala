@@ -13,19 +13,15 @@ trait MenuProps extends StObject {
 }
 object MenuProps {
   
-  @scala.inline
-  def apply(): MenuProps = {
+  inline def apply(): MenuProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuProps]
   }
   
-  @scala.inline
-  implicit class MenuPropsMutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
+  extension [Self <: MenuProps](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

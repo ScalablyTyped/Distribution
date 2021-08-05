@@ -12,41 +12,35 @@ object sidewayAddressStrings {
   sealed trait forbidden
     extends StObject
        with Cidr
-  @scala.inline
-  def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
+  inline def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
   
   @js.native
   sealed trait ipv4
     extends StObject
        with Version
-  @scala.inline
-  def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
+  inline def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
   
   @js.native
   sealed trait ipv6
     extends StObject
        with Version
-  @scala.inline
-  def ipv6: ipv6 = "ipv6".asInstanceOf[ipv6]
+  inline def ipv6: ipv6 = "ipv6".asInstanceOf[ipv6]
   
   @js.native
   sealed trait ipvfuture
     extends StObject
        with Version
-  @scala.inline
-  def ipvfuture: ipvfuture = "ipvfuture".asInstanceOf[ipvfuture]
+  inline def ipvfuture: ipvfuture = "ipvfuture".asInstanceOf[ipvfuture]
   
   @js.native
   sealed trait optional
     extends StObject
        with Cidr
-  @scala.inline
-  def optional: optional = "optional".asInstanceOf[optional]
+  inline def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
   sealed trait required
     extends StObject
        with Cidr
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  inline def required: required = "required".asInstanceOf[required]
 }

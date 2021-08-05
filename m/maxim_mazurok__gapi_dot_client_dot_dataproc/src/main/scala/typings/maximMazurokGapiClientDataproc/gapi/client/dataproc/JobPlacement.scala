@@ -14,25 +14,19 @@ trait JobPlacement extends StObject {
 }
 object JobPlacement {
   
-  @scala.inline
-  def apply(): JobPlacement = {
+  inline def apply(): JobPlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobPlacement]
   }
   
-  @scala.inline
-  implicit class JobPlacementMutableBuilder[Self <: JobPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: JobPlacement](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
+    inline def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
+    inline def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
   }
 }

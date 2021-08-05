@@ -22,20 +22,16 @@ object typesAbortMultipartUploadOutputMod {
   }
   object AbortMultipartUploadOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): AbortMultipartUploadOutput = {
+    inline def apply($metadata: ResponseMetadata): AbortMultipartUploadOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbortMultipartUploadOutput]
     }
     
-    @scala.inline
-    implicit class AbortMultipartUploadOutputMutableBuilder[Self <: AbortMultipartUploadOutput] (val x: Self) extends AnyVal {
+    extension [Self <: AbortMultipartUploadOutput](x: Self) {
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     }
   }
 }

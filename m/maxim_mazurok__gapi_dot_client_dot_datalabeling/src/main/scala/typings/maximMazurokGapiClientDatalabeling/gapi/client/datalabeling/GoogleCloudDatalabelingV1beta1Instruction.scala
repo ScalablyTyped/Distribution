@@ -38,70 +38,49 @@ trait GoogleCloudDatalabelingV1beta1Instruction extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1Instruction {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1Instruction = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1Instruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Instruction]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1InstructionMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Instruction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1Instruction](x: Self) {
     
-    @scala.inline
-    def setBlockingResources(value: js.Array[String]): Self = StObject.set(x, "blockingResources", value.asInstanceOf[js.Any])
+    inline def setBlockingResources(value: js.Array[String]): Self = StObject.set(x, "blockingResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
+    inline def setBlockingResourcesUndefined: Self = StObject.set(x, "blockingResources", js.undefined)
     
-    @scala.inline
-    def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
+    inline def setBlockingResourcesVarargs(value: String*): Self = StObject.set(x, "blockingResources", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCsvInstruction(value: GoogleCloudDatalabelingV1beta1CsvInstruction): Self = StObject.set(x, "csvInstruction", value.asInstanceOf[js.Any])
+    inline def setCsvInstruction(value: GoogleCloudDatalabelingV1beta1CsvInstruction): Self = StObject.set(x, "csvInstruction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvInstructionUndefined: Self = StObject.set(x, "csvInstruction", js.undefined)
+    inline def setCsvInstructionUndefined: Self = StObject.set(x, "csvInstruction", js.undefined)
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPdfInstruction(value: GoogleCloudDatalabelingV1beta1PdfInstruction): Self = StObject.set(x, "pdfInstruction", value.asInstanceOf[js.Any])
+    inline def setPdfInstruction(value: GoogleCloudDatalabelingV1beta1PdfInstruction): Self = StObject.set(x, "pdfInstruction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfInstructionUndefined: Self = StObject.set(x, "pdfInstruction", js.undefined)
+    inline def setPdfInstructionUndefined: Self = StObject.set(x, "pdfInstruction", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

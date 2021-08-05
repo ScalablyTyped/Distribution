@@ -22,14 +22,11 @@ object winOptionsMod {
   trait RequestedExecutionLevel extends StObject
   object RequestedExecutionLevel {
     
-    @scala.inline
-    def asInvoker: typings.appBuilderLib.appBuilderLibStrings.asInvoker = "asInvoker".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.asInvoker]
+    inline def asInvoker: typings.appBuilderLib.appBuilderLibStrings.asInvoker = "asInvoker".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.asInvoker]
     
-    @scala.inline
-    def highestAvailable: typings.appBuilderLib.appBuilderLibStrings.highestAvailable = "highestAvailable".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.highestAvailable]
+    inline def highestAvailable: typings.appBuilderLib.appBuilderLibStrings.highestAvailable = "highestAvailable".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.highestAvailable]
     
-    @scala.inline
-    def requireAdministrator: typings.appBuilderLib.appBuilderLibStrings.requireAdministrator = "requireAdministrator".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.requireAdministrator]
+    inline def requireAdministrator: typings.appBuilderLib.appBuilderLibStrings.requireAdministrator = "requireAdministrator".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.requireAdministrator]
   }
   
   trait WindowsConfiguration
@@ -138,163 +135,112 @@ object winOptionsMod {
   }
   object WindowsConfiguration {
     
-    @scala.inline
-    def apply(): WindowsConfiguration = {
+    inline def apply(): WindowsConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WindowsConfiguration]
     }
     
-    @scala.inline
-    implicit class WindowsConfigurationMutableBuilder[Self <: WindowsConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WindowsConfiguration](x: Self) {
       
-      @scala.inline
-      def setAdditionalCertificateFile(value: String): Self = StObject.set(x, "additionalCertificateFile", value.asInstanceOf[js.Any])
+      inline def setAdditionalCertificateFile(value: String): Self = StObject.set(x, "additionalCertificateFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalCertificateFileNull: Self = StObject.set(x, "additionalCertificateFile", null)
+      inline def setAdditionalCertificateFileNull: Self = StObject.set(x, "additionalCertificateFile", null)
       
-      @scala.inline
-      def setAdditionalCertificateFileUndefined: Self = StObject.set(x, "additionalCertificateFile", js.undefined)
+      inline def setAdditionalCertificateFileUndefined: Self = StObject.set(x, "additionalCertificateFile", js.undefined)
       
-      @scala.inline
-      def setCertificateFile(value: String): Self = StObject.set(x, "certificateFile", value.asInstanceOf[js.Any])
+      inline def setCertificateFile(value: String): Self = StObject.set(x, "certificateFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateFileNull: Self = StObject.set(x, "certificateFile", null)
+      inline def setCertificateFileNull: Self = StObject.set(x, "certificateFile", null)
       
-      @scala.inline
-      def setCertificateFileUndefined: Self = StObject.set(x, "certificateFile", js.undefined)
+      inline def setCertificateFileUndefined: Self = StObject.set(x, "certificateFile", js.undefined)
       
-      @scala.inline
-      def setCertificatePassword(value: String): Self = StObject.set(x, "certificatePassword", value.asInstanceOf[js.Any])
+      inline def setCertificatePassword(value: String): Self = StObject.set(x, "certificatePassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePasswordNull: Self = StObject.set(x, "certificatePassword", null)
+      inline def setCertificatePasswordNull: Self = StObject.set(x, "certificatePassword", null)
       
-      @scala.inline
-      def setCertificatePasswordUndefined: Self = StObject.set(x, "certificatePassword", js.undefined)
+      inline def setCertificatePasswordUndefined: Self = StObject.set(x, "certificatePassword", js.undefined)
       
-      @scala.inline
-      def setCertificateSha1(value: String): Self = StObject.set(x, "certificateSha1", value.asInstanceOf[js.Any])
+      inline def setCertificateSha1(value: String): Self = StObject.set(x, "certificateSha1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateSha1Null: Self = StObject.set(x, "certificateSha1", null)
+      inline def setCertificateSha1Null: Self = StObject.set(x, "certificateSha1", null)
       
-      @scala.inline
-      def setCertificateSha1Undefined: Self = StObject.set(x, "certificateSha1", js.undefined)
+      inline def setCertificateSha1Undefined: Self = StObject.set(x, "certificateSha1", js.undefined)
       
-      @scala.inline
-      def setCertificateSubjectName(value: String): Self = StObject.set(x, "certificateSubjectName", value.asInstanceOf[js.Any])
+      inline def setCertificateSubjectName(value: String): Self = StObject.set(x, "certificateSubjectName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateSubjectNameNull: Self = StObject.set(x, "certificateSubjectName", null)
+      inline def setCertificateSubjectNameNull: Self = StObject.set(x, "certificateSubjectName", null)
       
-      @scala.inline
-      def setCertificateSubjectNameUndefined: Self = StObject.set(x, "certificateSubjectName", js.undefined)
+      inline def setCertificateSubjectNameUndefined: Self = StObject.set(x, "certificateSubjectName", js.undefined)
       
-      @scala.inline
-      def setLegalTrademarks(value: String): Self = StObject.set(x, "legalTrademarks", value.asInstanceOf[js.Any])
+      inline def setLegalTrademarks(value: String): Self = StObject.set(x, "legalTrademarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegalTrademarksNull: Self = StObject.set(x, "legalTrademarks", null)
+      inline def setLegalTrademarksNull: Self = StObject.set(x, "legalTrademarks", null)
       
-      @scala.inline
-      def setLegalTrademarksUndefined: Self = StObject.set(x, "legalTrademarks", js.undefined)
+      inline def setLegalTrademarksUndefined: Self = StObject.set(x, "legalTrademarks", js.undefined)
       
-      @scala.inline
-      def setPublisherName(value: String | js.Array[String]): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+      inline def setPublisherName(value: String | js.Array[String]): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisherNameNull: Self = StObject.set(x, "publisherName", null)
+      inline def setPublisherNameNull: Self = StObject.set(x, "publisherName", null)
       
-      @scala.inline
-      def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
+      inline def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
       
-      @scala.inline
-      def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value :_*))
+      inline def setPublisherNameVarargs(value: String*): Self = StObject.set(x, "publisherName", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestedExecutionLevel(value: RequestedExecutionLevel): Self = StObject.set(x, "requestedExecutionLevel", value.asInstanceOf[js.Any])
+      inline def setRequestedExecutionLevel(value: RequestedExecutionLevel): Self = StObject.set(x, "requestedExecutionLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedExecutionLevelNull: Self = StObject.set(x, "requestedExecutionLevel", null)
+      inline def setRequestedExecutionLevelNull: Self = StObject.set(x, "requestedExecutionLevel", null)
       
-      @scala.inline
-      def setRequestedExecutionLevelUndefined: Self = StObject.set(x, "requestedExecutionLevel", js.undefined)
+      inline def setRequestedExecutionLevelUndefined: Self = StObject.set(x, "requestedExecutionLevel", js.undefined)
       
-      @scala.inline
-      def setRfc3161TimeStampServer(value: String): Self = StObject.set(x, "rfc3161TimeStampServer", value.asInstanceOf[js.Any])
+      inline def setRfc3161TimeStampServer(value: String): Self = StObject.set(x, "rfc3161TimeStampServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRfc3161TimeStampServerNull: Self = StObject.set(x, "rfc3161TimeStampServer", null)
+      inline def setRfc3161TimeStampServerNull: Self = StObject.set(x, "rfc3161TimeStampServer", null)
       
-      @scala.inline
-      def setRfc3161TimeStampServerUndefined: Self = StObject.set(x, "rfc3161TimeStampServer", js.undefined)
+      inline def setRfc3161TimeStampServerUndefined: Self = StObject.set(x, "rfc3161TimeStampServer", js.undefined)
       
-      @scala.inline
-      def setSign(value: CustomWindowsSign | String): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+      inline def setSign(value: CustomWindowsSign | String): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignAndEditExecutable(value: Boolean): Self = StObject.set(x, "signAndEditExecutable", value.asInstanceOf[js.Any])
+      inline def setSignAndEditExecutable(value: Boolean): Self = StObject.set(x, "signAndEditExecutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignAndEditExecutableUndefined: Self = StObject.set(x, "signAndEditExecutable", js.undefined)
+      inline def setSignAndEditExecutableUndefined: Self = StObject.set(x, "signAndEditExecutable", js.undefined)
       
-      @scala.inline
-      def setSignDlls(value: Boolean): Self = StObject.set(x, "signDlls", value.asInstanceOf[js.Any])
+      inline def setSignDlls(value: Boolean): Self = StObject.set(x, "signDlls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignDllsUndefined: Self = StObject.set(x, "signDlls", js.undefined)
+      inline def setSignDllsUndefined: Self = StObject.set(x, "signDlls", js.undefined)
       
-      @scala.inline
-      def setSignFunction2(
+      inline def setSignFunction2(
         value: (/* configuration */ CustomWindowsSignTaskConfiguration, /* packager */ js.UndefOr[WinPackager]) => js.Promise[js.Any]
       ): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSignNull: Self = StObject.set(x, "sign", null)
+      inline def setSignNull: Self = StObject.set(x, "sign", null)
       
-      @scala.inline
-      def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
+      inline def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
       
-      @scala.inline
-      def setSigningHashAlgorithms(value: js.Array[sha1 | sha256]): Self = StObject.set(x, "signingHashAlgorithms", value.asInstanceOf[js.Any])
+      inline def setSigningHashAlgorithms(value: js.Array[sha1 | sha256]): Self = StObject.set(x, "signingHashAlgorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningHashAlgorithmsNull: Self = StObject.set(x, "signingHashAlgorithms", null)
+      inline def setSigningHashAlgorithmsNull: Self = StObject.set(x, "signingHashAlgorithms", null)
       
-      @scala.inline
-      def setSigningHashAlgorithmsUndefined: Self = StObject.set(x, "signingHashAlgorithms", js.undefined)
+      inline def setSigningHashAlgorithmsUndefined: Self = StObject.set(x, "signingHashAlgorithms", js.undefined)
       
-      @scala.inline
-      def setSigningHashAlgorithmsVarargs(value: (sha1 | sha256)*): Self = StObject.set(x, "signingHashAlgorithms", js.Array(value :_*))
+      inline def setSigningHashAlgorithmsVarargs(value: (sha1 | sha256)*): Self = StObject.set(x, "signingHashAlgorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setTarget(value: TargetConfigType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: TargetConfigType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNull: Self = StObject.set(x, "target", null)
+      inline def setTargetNull: Self = StObject.set(x, "target", null)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value :_*))
+      inline def setTargetVarargs(value: (String | TargetConfiguration)*): Self = StObject.set(x, "target", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeStampServer(value: String): Self = StObject.set(x, "timeStampServer", value.asInstanceOf[js.Any])
+      inline def setTimeStampServer(value: String): Self = StObject.set(x, "timeStampServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStampServerNull: Self = StObject.set(x, "timeStampServer", null)
+      inline def setTimeStampServerNull: Self = StObject.set(x, "timeStampServer", null)
       
-      @scala.inline
-      def setTimeStampServerUndefined: Self = StObject.set(x, "timeStampServer", js.undefined)
+      inline def setTimeStampServerUndefined: Self = StObject.set(x, "timeStampServer", js.undefined)
       
-      @scala.inline
-      def setVerifyUpdateCodeSignature(value: Boolean): Self = StObject.set(x, "verifyUpdateCodeSignature", value.asInstanceOf[js.Any])
+      inline def setVerifyUpdateCodeSignature(value: Boolean): Self = StObject.set(x, "verifyUpdateCodeSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyUpdateCodeSignatureUndefined: Self = StObject.set(x, "verifyUpdateCodeSignature", js.undefined)
+      inline def setVerifyUpdateCodeSignatureUndefined: Self = StObject.set(x, "verifyUpdateCodeSignature", js.undefined)
     }
   }
 }

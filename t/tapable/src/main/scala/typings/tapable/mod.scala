@@ -255,7 +255,7 @@ object mod {
     /** @deprecated Private internals. Do not use directly */
     var _pluginCompat: Hook[js.Any, js.Any, js.Any, js.Any, js.Any] = js.native
     
-    var _plugins: StringDictionary[js.Array[Handler]] = js.native
+    /* private */ var _plugins: StringDictionary[js.Array[Handler]] = js.native
     
     /**
       * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
@@ -468,8 +468,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def mixin(proto: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(proto.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mixin(proto: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(proto.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     type CallbackFunction = js.Function3[
         /* err */ js.UndefOr[Error], 
@@ -487,17 +486,14 @@ object mod {
     }
     object Plugin {
       
-      @scala.inline
-      def apply(apply: /* repeated */ js.Any => Unit): Plugin = {
+      inline def apply(apply: /* repeated */ js.Any => Unit): Plugin = {
         val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
         __obj.asInstanceOf[Plugin]
       }
       
-      @scala.inline
-      implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+      extension [Self <: Plugin](x: Self) {
         
-        @scala.inline
-        def setApply(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+        inline def setApply(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       }
     }
   }
@@ -508,18 +504,15 @@ object mod {
   }
   object HookCompileOptions {
     
-    @scala.inline
-    def apply(`type`: TapType): HookCompileOptions = {
+    inline def apply(`type`: TapType): HookCompileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HookCompileOptions]
     }
     
-    @scala.inline
-    implicit class HookCompileOptionsMutableBuilder[Self <: HookCompileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HookCompileOptions](x: Self) {
       
-      @scala.inline
-      def setType(value: TapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -539,8 +532,7 @@ object mod {
   }
   object Tap {
     
-    @scala.inline
-    def apply[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult](
+    inline def apply[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult](
       fn: (TArg1, TArg2, TArg3, /* repeated */ js.Any) => js.Promise[THookResult] | THookResult | Unit,
       name: String,
       `type`: TTapType
@@ -550,40 +542,29 @@ object mod {
       __obj.asInstanceOf[Tap[TTapType, TArg1, TArg2, TArg3, THookResult]]
     }
     
-    @scala.inline
-    implicit class TapMutableBuilder[Self <: Tap[?, ?, ?, ?, ?], TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] (val x: Self & (Tap[TTapType, TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
+    extension [Self <: Tap[?, ?, ?, ?, ?], TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult](x: Self & (Tap[TTapType, TArg1, TArg2, TArg3, THookResult])) {
       
-      @scala.inline
-      def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
       
-      @scala.inline
-      def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setFn(
+      inline def setFn(
         value: (TArg1, TArg2, TArg3, /* repeated */ js.Any) => js.Promise[THookResult] | THookResult | Unit
       ): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStage(value: Double): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: Double): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
       
-      @scala.inline
-      def setType(value: TTapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TTapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -605,13 +586,10 @@ object mod {
   trait TapType extends StObject
   object TapType {
     
-    @scala.inline
-    def async: typings.tapable.tapableStrings.async = "async".asInstanceOf[typings.tapable.tapableStrings.async]
+    inline def async: typings.tapable.tapableStrings.async = "async".asInstanceOf[typings.tapable.tapableStrings.async]
     
-    @scala.inline
-    def promise: typings.tapable.tapableStrings.promise = "promise".asInstanceOf[typings.tapable.tapableStrings.promise]
+    inline def promise: typings.tapable.tapableStrings.promise = "promise".asInstanceOf[typings.tapable.tapableStrings.promise]
     
-    @scala.inline
-    def sync: typings.tapable.tapableStrings.sync = "sync".asInstanceOf[typings.tapable.tapableStrings.sync]
+    inline def sync: typings.tapable.tapableStrings.sync = "sync".asInstanceOf[typings.tapable.tapableStrings.sync]
   }
 }

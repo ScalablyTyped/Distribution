@@ -19,8 +19,7 @@ trait XAutoTextEntry
 }
 object XAutoTextEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     applyTo: XTextRange => Unit,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XAutoTextEntry {
     __obj.asInstanceOf[XAutoTextEntry]
   }
   
-  @scala.inline
-  implicit class XAutoTextEntryMutableBuilder[Self <: XAutoTextEntry] (val x: Self) extends AnyVal {
+  extension [Self <: XAutoTextEntry](x: Self) {
     
-    @scala.inline
-    def setApplyTo(value: XTextRange => Unit): Self = StObject.set(x, "applyTo", js.Any.fromFunction1(value))
+    inline def setApplyTo(value: XTextRange => Unit): Self = StObject.set(x, "applyTo", js.Any.fromFunction1(value))
   }
 }

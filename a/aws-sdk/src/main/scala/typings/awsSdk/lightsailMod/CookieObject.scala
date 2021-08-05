@@ -18,28 +18,21 @@ trait CookieObject extends StObject {
 }
 object CookieObject {
   
-  @scala.inline
-  def apply(): CookieObject = {
+  inline def apply(): CookieObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CookieObject]
   }
   
-  @scala.inline
-  implicit class CookieObjectMutableBuilder[Self <: CookieObject] (val x: Self) extends AnyVal {
+  extension [Self <: CookieObject](x: Self) {
     
-    @scala.inline
-    def setCookiesAllowList(value: StringList): Self = StObject.set(x, "cookiesAllowList", value.asInstanceOf[js.Any])
+    inline def setCookiesAllowList(value: StringList): Self = StObject.set(x, "cookiesAllowList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesAllowListUndefined: Self = StObject.set(x, "cookiesAllowList", js.undefined)
+    inline def setCookiesAllowListUndefined: Self = StObject.set(x, "cookiesAllowList", js.undefined)
     
-    @scala.inline
-    def setCookiesAllowListVarargs(value: String*): Self = StObject.set(x, "cookiesAllowList", js.Array(value :_*))
+    inline def setCookiesAllowListVarargs(value: String*): Self = StObject.set(x, "cookiesAllowList", js.Array(value :_*))
     
-    @scala.inline
-    def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

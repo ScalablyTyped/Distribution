@@ -33,8 +33,7 @@ trait EasClientDeviceInformation extends StObject {
 }
 object EasClientDeviceInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendlyName: String,
     id: String,
     operatingSystem: String,
@@ -48,31 +47,22 @@ object EasClientDeviceInformation {
     __obj.asInstanceOf[EasClientDeviceInformation]
   }
   
-  @scala.inline
-  implicit class EasClientDeviceInformationMutableBuilder[Self <: EasClientDeviceInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EasClientDeviceInformation](x: Self) {
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemFirmwareVersion(value: String): Self = StObject.set(x, "systemFirmwareVersion", value.asInstanceOf[js.Any])
+    inline def setSystemFirmwareVersion(value: String): Self = StObject.set(x, "systemFirmwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemHardwareVersion(value: String): Self = StObject.set(x, "systemHardwareVersion", value.asInstanceOf[js.Any])
+    inline def setSystemHardwareVersion(value: String): Self = StObject.set(x, "systemHardwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemManufacturer(value: String): Self = StObject.set(x, "systemManufacturer", value.asInstanceOf[js.Any])
+    inline def setSystemManufacturer(value: String): Self = StObject.set(x, "systemManufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemProductName(value: String): Self = StObject.set(x, "systemProductName", value.asInstanceOf[js.Any])
+    inline def setSystemProductName(value: String): Self = StObject.set(x, "systemProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSku(value: String): Self = StObject.set(x, "systemSku", value.asInstanceOf[js.Any])
+    inline def setSystemSku(value: String): Self = StObject.set(x, "systemSku", value.asInstanceOf[js.Any])
   }
 }

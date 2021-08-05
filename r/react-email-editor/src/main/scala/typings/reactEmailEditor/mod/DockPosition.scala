@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DockPosition extends StObject
 object DockPosition {
   
-  @scala.inline
-  def left: typings.reactEmailEditor.reactEmailEditorStrings.left = "left".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.left]
+  inline def left: typings.reactEmailEditor.reactEmailEditorStrings.left = "left".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.left]
   
-  @scala.inline
-  def right: typings.reactEmailEditor.reactEmailEditorStrings.right = "right".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.right]
+  inline def right: typings.reactEmailEditor.reactEmailEditorStrings.right = "right".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.right]
 }

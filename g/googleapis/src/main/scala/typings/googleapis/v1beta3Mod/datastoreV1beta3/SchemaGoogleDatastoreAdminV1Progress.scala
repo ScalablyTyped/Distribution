@@ -23,25 +23,19 @@ trait SchemaGoogleDatastoreAdminV1Progress extends StObject {
 }
 object SchemaGoogleDatastoreAdminV1Progress {
   
-  @scala.inline
-  def apply(): SchemaGoogleDatastoreAdminV1Progress = {
+  inline def apply(): SchemaGoogleDatastoreAdminV1Progress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1Progress]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1ProgressMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1Progress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDatastoreAdminV1Progress](x: Self) {
     
-    @scala.inline
-    def setWorkCompleted(value: String): Self = StObject.set(x, "workCompleted", value.asInstanceOf[js.Any])
+    inline def setWorkCompleted(value: String): Self = StObject.set(x, "workCompleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkCompletedUndefined: Self = StObject.set(x, "workCompleted", js.undefined)
+    inline def setWorkCompletedUndefined: Self = StObject.set(x, "workCompleted", js.undefined)
     
-    @scala.inline
-    def setWorkEstimated(value: String): Self = StObject.set(x, "workEstimated", value.asInstanceOf[js.Any])
+    inline def setWorkEstimated(value: String): Self = StObject.set(x, "workEstimated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkEstimatedUndefined: Self = StObject.set(x, "workEstimated", js.undefined)
+    inline def setWorkEstimatedUndefined: Self = StObject.set(x, "workEstimated", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait characteristicsArrayuuids extends StObject {
 }
 object characteristicsArrayuuids {
   
-  @scala.inline
-  def apply(characteristics: js.Array[Properties], errMsg: ok | String): characteristicsArrayuuids = {
+  inline def apply(characteristics: js.Array[Properties], errMsg: ok | String): characteristicsArrayuuids = {
     val __obj = js.Dynamic.literal(characteristics = characteristics.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[characteristicsArrayuuids]
   }
   
-  @scala.inline
-  implicit class characteristicsArrayuuidsMutableBuilder[Self <: characteristicsArrayuuids] (val x: Self) extends AnyVal {
+  extension [Self <: characteristicsArrayuuids](x: Self) {
     
-    @scala.inline
-    def setCharacteristics(value: js.Array[Properties]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
+    inline def setCharacteristics(value: js.Array[Properties]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacteristicsVarargs(value: Properties*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
+    inline def setCharacteristicsVarargs(value: Properties*): Self = StObject.set(x, "characteristics", js.Array(value :_*))
     
-    @scala.inline
-    def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

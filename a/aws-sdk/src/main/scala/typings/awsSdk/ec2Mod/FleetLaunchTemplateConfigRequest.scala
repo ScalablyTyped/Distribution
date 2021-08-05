@@ -18,28 +18,21 @@ trait FleetLaunchTemplateConfigRequest extends StObject {
 }
 object FleetLaunchTemplateConfigRequest {
   
-  @scala.inline
-  def apply(): FleetLaunchTemplateConfigRequest = {
+  inline def apply(): FleetLaunchTemplateConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetLaunchTemplateConfigRequest]
   }
   
-  @scala.inline
-  implicit class FleetLaunchTemplateConfigRequestMutableBuilder[Self <: FleetLaunchTemplateConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FleetLaunchTemplateConfigRequest](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplateSpecification(value: FleetLaunchTemplateSpecificationRequest): Self = StObject.set(x, "LaunchTemplateSpecification", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateSpecification(value: FleetLaunchTemplateSpecificationRequest): Self = StObject.set(x, "LaunchTemplateSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateSpecificationUndefined: Self = StObject.set(x, "LaunchTemplateSpecification", js.undefined)
+    inline def setLaunchTemplateSpecificationUndefined: Self = StObject.set(x, "LaunchTemplateSpecification", js.undefined)
     
-    @scala.inline
-    def setOverrides(value: FleetLaunchTemplateOverridesListRequest): Self = StObject.set(x, "Overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: FleetLaunchTemplateOverridesListRequest): Self = StObject.set(x, "Overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "Overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "Overrides", js.undefined)
     
-    @scala.inline
-    def setOverridesVarargs(value: FleetLaunchTemplateOverridesRequest*): Self = StObject.set(x, "Overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: FleetLaunchTemplateOverridesRequest*): Self = StObject.set(x, "Overrides", js.Array(value :_*))
   }
 }

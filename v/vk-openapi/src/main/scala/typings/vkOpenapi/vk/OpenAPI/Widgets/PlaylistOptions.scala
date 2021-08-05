@@ -10,19 +10,15 @@ trait PlaylistOptions extends StObject {
 }
 object PlaylistOptions {
   
-  @scala.inline
-  def apply(): PlaylistOptions = {
+  inline def apply(): PlaylistOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaylistOptions]
   }
   
-  @scala.inline
-  implicit class PlaylistOptionsMutableBuilder[Self <: PlaylistOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistOptions](x: Self) {
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

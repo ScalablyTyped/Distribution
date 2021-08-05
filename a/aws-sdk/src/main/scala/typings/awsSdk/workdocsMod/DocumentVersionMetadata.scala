@@ -73,91 +73,63 @@ trait DocumentVersionMetadata extends StObject {
 }
 object DocumentVersionMetadata {
   
-  @scala.inline
-  def apply(): DocumentVersionMetadata = {
+  inline def apply(): DocumentVersionMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentVersionMetadata]
   }
   
-  @scala.inline
-  implicit class DocumentVersionMetadataMutableBuilder[Self <: DocumentVersionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentVersionMetadata](x: Self) {
     
-    @scala.inline
-    def setContentCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentCreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setContentCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentCreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentCreatedTimestampUndefined: Self = StObject.set(x, "ContentCreatedTimestamp", js.undefined)
+    inline def setContentCreatedTimestampUndefined: Self = StObject.set(x, "ContentCreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setContentModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setContentModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ContentModifiedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentModifiedTimestampUndefined: Self = StObject.set(x, "ContentModifiedTimestamp", js.undefined)
+    inline def setContentModifiedTimestampUndefined: Self = StObject.set(x, "ContentModifiedTimestamp", js.undefined)
     
-    @scala.inline
-    def setContentType(value: DocumentContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: DocumentContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setCreatorId(value: IdType): Self = StObject.set(x, "CreatorId", value.asInstanceOf[js.Any])
+    inline def setCreatorId(value: IdType): Self = StObject.set(x, "CreatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorIdUndefined: Self = StObject.set(x, "CreatorId", js.undefined)
+    inline def setCreatorIdUndefined: Self = StObject.set(x, "CreatorId", js.undefined)
     
-    @scala.inline
-    def setId(value: DocumentVersionIdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: DocumentVersionIdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
+    inline def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSignature(value: HashType): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: HashType): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "Signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "Signature", js.undefined)
     
-    @scala.inline
-    def setSize(value: SizeType): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SizeType): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
-    @scala.inline
-    def setSource(value: DocumentSourceUrlMap): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: DocumentSourceUrlMap): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DocumentStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DocumentStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setThumbnail(value: DocumentThumbnailUrlMap): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: DocumentThumbnailUrlMap): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailUndefined: Self = StObject.set(x, "Thumbnail", js.undefined)
+    inline def setThumbnailUndefined: Self = StObject.set(x, "Thumbnail", js.undefined)
   }
 }

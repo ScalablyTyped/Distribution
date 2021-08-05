@@ -28,37 +28,27 @@ trait ExplanationOfBenefitInsurance
 }
 object ExplanationOfBenefitInsurance {
   
-  @scala.inline
-  def apply(): ExplanationOfBenefitInsurance = {
+  inline def apply(): ExplanationOfBenefitInsurance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExplanationOfBenefitInsurance]
   }
   
-  @scala.inline
-  implicit class ExplanationOfBenefitInsuranceMutableBuilder[Self <: ExplanationOfBenefitInsurance] (val x: Self) extends AnyVal {
+  extension [Self <: ExplanationOfBenefitInsurance](x: Self) {
     
-    @scala.inline
-    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+    inline def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
+    inline def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
     
-    @scala.inline
-    def setPreAuthRef(value: js.Array[String]): Self = StObject.set(x, "preAuthRef", value.asInstanceOf[js.Any])
+    inline def setPreAuthRef(value: js.Array[String]): Self = StObject.set(x, "preAuthRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreAuthRefUndefined: Self = StObject.set(x, "preAuthRef", js.undefined)
+    inline def setPreAuthRefUndefined: Self = StObject.set(x, "preAuthRef", js.undefined)
     
-    @scala.inline
-    def setPreAuthRefVarargs(value: String*): Self = StObject.set(x, "preAuthRef", js.Array(value :_*))
+    inline def setPreAuthRefVarargs(value: String*): Self = StObject.set(x, "preAuthRef", js.Array(value :_*))
     
-    @scala.inline
-    def set_preAuthRef(value: js.Array[Element]): Self = StObject.set(x, "_preAuthRef", value.asInstanceOf[js.Any])
+    inline def set_preAuthRef(value: js.Array[Element]): Self = StObject.set(x, "_preAuthRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_preAuthRefUndefined: Self = StObject.set(x, "_preAuthRef", js.undefined)
+    inline def set_preAuthRefUndefined: Self = StObject.set(x, "_preAuthRef", js.undefined)
     
-    @scala.inline
-    def set_preAuthRefVarargs(value: Element*): Self = StObject.set(x, "_preAuthRef", js.Array(value :_*))
+    inline def set_preAuthRefVarargs(value: Element*): Self = StObject.set(x, "_preAuthRef", js.Array(value :_*))
   }
 }

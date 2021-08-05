@@ -34,35 +34,26 @@ object mod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setPre(value: Handler): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+      inline def setPre(value: Handler): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreFunction2(value: (/* ctx */ Context, /* next */ Next) => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
+      inline def setPreFunction2(value: (/* ctx */ Context, /* next */ Next) => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      @scala.inline
-      def setValidate(value: ContinueOnError): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: ContinueOnError): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -91,14 +82,12 @@ object mod extends Shortcut {
   trait OutputValidation extends StObject
   object OutputValidation {
     
-    @scala.inline
-    def Body(): typings.koaJoiRouter.anon.Body = {
+    inline def Body(): typings.koaJoiRouter.anon.Body = {
       val __obj = js.Dynamic.literal(body = null)
       __obj.asInstanceOf[typings.koaJoiRouter.anon.Body]
     }
     
-    @scala.inline
-    def Headers(): typings.koaJoiRouter.anon.Headers = {
+    inline def Headers(): typings.koaJoiRouter.anon.Headers = {
       val __obj = js.Dynamic.literal(headers = null)
       __obj.asInstanceOf[typings.koaJoiRouter.anon.Headers]
     }
@@ -197,29 +186,22 @@ object mod extends Shortcut {
   }
   object Spec {
     
-    @scala.inline
-    def apply(handler: Handler, method: String | js.Array[String], path: String | RegExp): Spec = {
+    inline def apply(handler: Handler, method: String | js.Array[String], path: String | RegExp): Spec = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Spec]
     }
     
-    @scala.inline
-    implicit class SpecMutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
+    extension [Self <: Spec](x: Self) {
       
-      @scala.inline
-      def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerFunction2(value: (/* ctx */ Context, /* next */ Next) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      inline def setHandlerFunction2(value: (/* ctx */ Context, /* next */ Next) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMethod(value: String | js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String | js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String | RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,23 +229,18 @@ object mod extends Shortcut {
     }
     object Request {
       
-      @scala.inline
-      def apply(params: StringDictionary[String]): Request = {
+      inline def apply(params: StringDictionary[String]): Request = {
         val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+        inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         
-        @scala.inline
-        def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       }
     }
   }

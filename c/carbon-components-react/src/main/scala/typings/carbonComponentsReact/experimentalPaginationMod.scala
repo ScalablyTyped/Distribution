@@ -42,83 +42,58 @@ object experimentalPaginationMod extends Shortcut {
   }
   object ExperimentalPaginationProps {
     
-    @scala.inline
-    def apply(): ExperimentalPaginationProps = {
+    inline def apply(): ExperimentalPaginationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExperimentalPaginationProps]
     }
     
-    @scala.inline
-    implicit class ExperimentalPaginationPropsMutableBuilder[Self <: ExperimentalPaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExperimentalPaginationProps](x: Self) {
       
-      @scala.inline
-      def setBackwardText(value: String): Self = StObject.set(x, "backwardText", value.asInstanceOf[js.Any])
+      inline def setBackwardText(value: String): Self = StObject.set(x, "backwardText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackwardTextUndefined: Self = StObject.set(x, "backwardText", js.undefined)
+      inline def setBackwardTextUndefined: Self = StObject.set(x, "backwardText", js.undefined)
       
-      @scala.inline
-      def setForwardText(value: String): Self = StObject.set(x, "forwardText", value.asInstanceOf[js.Any])
+      inline def setForwardText(value: String): Self = StObject.set(x, "forwardText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardTextUndefined: Self = StObject.set(x, "forwardText", js.undefined)
+      inline def setForwardTextUndefined: Self = StObject.set(x, "forwardText", js.undefined)
       
-      @scala.inline
-      def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
+      inline def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
+      inline def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
       
-      @scala.inline
-      def setItemRangeText(value: (/* min */ Double, /* max */ Double, /* total */ Double) => String): Self = StObject.set(x, "itemRangeText", js.Any.fromFunction3(value))
+      inline def setItemRangeText(value: (/* min */ Double, /* max */ Double, /* total */ Double) => String): Self = StObject.set(x, "itemRangeText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setItemRangeTextUndefined: Self = StObject.set(x, "itemRangeText", js.undefined)
+      inline def setItemRangeTextUndefined: Self = StObject.set(x, "itemRangeText", js.undefined)
       
-      @scala.inline
-      def setItemText(value: (/* min */ Double, /* max */ Double) => String): Self = StObject.set(x, "itemText", js.Any.fromFunction2(value))
+      inline def setItemText(value: (/* min */ Double, /* max */ Double) => String): Self = StObject.set(x, "itemText", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setItemTextUndefined: Self = StObject.set(x, "itemText", js.undefined)
+      inline def setItemTextUndefined: Self = StObject.set(x, "itemText", js.undefined)
       
-      @scala.inline
-      def setItemsPerPageText(value: String): Self = StObject.set(x, "itemsPerPageText", value.asInstanceOf[js.Any])
+      inline def setItemsPerPageText(value: String): Self = StObject.set(x, "itemsPerPageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsPerPageTextUndefined: Self = StObject.set(x, "itemsPerPageText", js.undefined)
+      inline def setItemsPerPageTextUndefined: Self = StObject.set(x, "itemsPerPageText", js.undefined)
       
-      @scala.inline
-      def setPageRangeText(value: (/* current */ Double | String, /* total */ Double) => String): Self = StObject.set(x, "pageRangeText", js.Any.fromFunction2(value))
+      inline def setPageRangeText(value: (/* current */ Double | String, /* total */ Double) => String): Self = StObject.set(x, "pageRangeText", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPageRangeTextUndefined: Self = StObject.set(x, "pageRangeText", js.undefined)
+      inline def setPageRangeTextUndefined: Self = StObject.set(x, "pageRangeText", js.undefined)
       
-      @scala.inline
-      def setPageSizes(value: js.Array[Double]): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
+      inline def setPageSizes(value: js.Array[Double]): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
+      inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
       
-      @scala.inline
-      def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
+      inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
       
-      @scala.inline
-      def setPageText(value: /* currentPage */ Double => String): Self = StObject.set(x, "pageText", js.Any.fromFunction1(value))
+      inline def setPageText(value: /* currentPage */ Double => String): Self = StObject.set(x, "pageText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageTextUndefined: Self = StObject.set(x, "pageText", js.undefined)
+      inline def setPageTextUndefined: Self = StObject.set(x, "pageText", js.undefined)
       
-      @scala.inline
-      def setPagesUnknown(value: Boolean): Self = StObject.set(x, "pagesUnknown", value.asInstanceOf[js.Any])
+      inline def setPagesUnknown(value: Boolean): Self = StObject.set(x, "pagesUnknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesUnknownUndefined: Self = StObject.set(x, "pagesUnknown", js.undefined)
+      inline def setPagesUnknownUndefined: Self = StObject.set(x, "pagesUnknown", js.undefined)
       
-      @scala.inline
-      def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+      inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+      inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
     }
   }
   

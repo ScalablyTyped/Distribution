@@ -17,37 +17,27 @@ trait ModelTitleElement[T] extends StObject {
 }
 object ModelTitleElement {
   
-  @scala.inline
-  def apply[T](): ModelTitleElement[T] = {
+  inline def apply[T](): ModelTitleElement[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelTitleElement[T]]
   }
   
-  @scala.inline
-  implicit class ModelTitleElementMutableBuilder[Self <: ModelTitleElement[?], T] (val x: Self & ModelTitleElement[T]) extends AnyVal {
+  extension [Self <: ModelTitleElement[?], T](x: Self & ModelTitleElement[T]) {
     
-    @scala.inline
-    def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setTitleElement(value: dxElement): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
+    inline def setTitleElement(value: dxElement): Self = StObject.set(x, "titleElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleElementUndefined: Self = StObject.set(x, "titleElement", js.undefined)
+    inline def setTitleElementUndefined: Self = StObject.set(x, "titleElement", js.undefined)
   }
 }

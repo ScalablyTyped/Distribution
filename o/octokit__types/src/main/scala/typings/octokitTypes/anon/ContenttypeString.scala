@@ -10,17 +10,14 @@ trait ContenttypeString extends StObject {
 }
 object ContenttypeString {
   
-  @scala.inline
-  def apply(`content-type`: String): ContenttypeString = {
+  inline def apply(`content-type`: String): ContenttypeString = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("content-type")(`content-type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContenttypeString]
   }
   
-  @scala.inline
-  implicit class ContenttypeStringMutableBuilder[Self <: ContenttypeString] (val x: Self) extends AnyVal {
+  extension [Self <: ContenttypeString](x: Self) {
     
-    @scala.inline
-    def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
+    inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
   }
 }

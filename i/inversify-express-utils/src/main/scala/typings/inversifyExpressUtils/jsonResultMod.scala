@@ -16,7 +16,7 @@ object jsonResultMod {
        with JsonResult {
     def this(json: js.Any, statusCode: Double, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
@@ -33,7 +33,7 @@ object jsonResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
     val json: js.Any
     
@@ -41,8 +41,7 @@ object jsonResultMod {
   }
   object JsonResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiController: js.Any,
       executeAsync: () => js.Promise[HttpResponseMessage],
       json: js.Any,
@@ -52,17 +51,13 @@ object jsonResultMod {
       __obj.asInstanceOf[JsonResult]
     }
     
-    @scala.inline
-    implicit class JsonResultMutableBuilder[Self <: JsonResult] (val x: Self) extends AnyVal {
+    extension [Self <: JsonResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait IObjectComparer extends StObject {
 }
 object IObjectComparer {
   
-  @scala.inline
-  def apply(Compare: (IObjectVersion, IObjectVersion) => Double): IObjectComparer = {
+  inline def apply(Compare: (IObjectVersion, IObjectVersion) => Double): IObjectComparer = {
     val __obj = js.Dynamic.literal(Compare = js.Any.fromFunction2(Compare))
     __obj.asInstanceOf[IObjectComparer]
   }
   
-  @scala.inline
-  implicit class IObjectComparerMutableBuilder[Self <: IObjectComparer] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectComparer](x: Self) {
     
-    @scala.inline
-    def setCompare(value: (IObjectVersion, IObjectVersion) => Double): Self = StObject.set(x, "Compare", js.Any.fromFunction2(value))
+    inline def setCompare(value: (IObjectVersion, IObjectVersion) => Double): Self = StObject.set(x, "Compare", js.Any.fromFunction2(value))
   }
 }

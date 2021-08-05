@@ -79,65 +79,47 @@ object mod {
     @js.native
     val ^ : ERROR_CODES = js.native
     
-    @scala.inline
-    implicit class ERROR_CODESMutableBuilder[Self <: ERROR_CODES] (val x: Self) extends AnyVal {
+    extension [Self <: ERROR_CODES](x: Self) {
       
-      @scala.inline
-      def set421(value: `Service not availableComma closing control connection`): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
+      inline def set421(value: `Service not availableComma closing control connection`): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set425(value: `CanApostrophet open data connection`): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
+      inline def set425(value: `CanApostrophet open data connection`): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set426(value: `Connection closedComma transfer aborted`): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
+      inline def set426(value: `Connection closedComma transfer aborted`): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set450(
+      inline def set450(
         value: `Requested file action not taken Slash File unavailable LeftparenthesiseDotgDotComma file busyRightparenthesis`
       ): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set451(value: `Requested action abortedColon local error in processing`): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
+      inline def set451(value: `Requested action abortedColon local error in processing`): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set452(value: `Requested action not taken Slash Insufficient storage space in system`): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
+      inline def set452(value: `Requested action not taken Slash Insufficient storage space in system`): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set500(value: `Syntax error Slash Command unrecognized`): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+      inline def set500(value: `Syntax error Slash Command unrecognized`): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set501(value: `Syntax error in parameters or arguments`): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
+      inline def set501(value: `Syntax error in parameters or arguments`): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set502(value: `Command not implemented`): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
+      inline def set502(value: `Command not implemented`): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set503(value: `Bad sequence of commands`): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+      inline def set503(value: `Bad sequence of commands`): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set504(value: `Command not implemented for that parameter`): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
+      inline def set504(value: `Command not implemented for that parameter`): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set530(value: `Not logged in`): Self = StObject.set(x, "530", value.asInstanceOf[js.Any])
+      inline def set530(value: `Not logged in`): Self = StObject.set(x, "530", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set532(value: `Need account for storing files`): Self = StObject.set(x, "532", value.asInstanceOf[js.Any])
+      inline def set532(value: `Need account for storing files`): Self = StObject.set(x, "532", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set550(
+      inline def set550(
         value: `Requested action not taken Slash File unavailable LeftparenthesiseDotgDotComma file not foundComma no accessRightparenthesis`
       ): Self = StObject.set(x, "550", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set551(value: `Requested action abortedColon page type unknown`): Self = StObject.set(x, "551", value.asInstanceOf[js.Any])
+      inline def set551(value: `Requested action abortedColon page type unknown`): Self = StObject.set(x, "551", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set552(
+      inline def set552(
         value: `Requested file action aborted Slash Exceeded storage allocation Leftparenthesisfor current directory or datasetRightparenthesis`
       ): Self = StObject.set(x, "552", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set553(value: `Requested action not taken Slash File name not allowed`): Self = StObject.set(x, "553", value.asInstanceOf[js.Any])
+      inline def set553(value: `Requested action not taken Slash File name not allowed`): Self = StObject.set(x, "553", value.asInstanceOf[js.Any])
     }
   }
   

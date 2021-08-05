@@ -13,19 +13,15 @@ trait Multipoint
 }
 object Multipoint {
   
-  @scala.inline
-  def apply(points: js.Array[Position]): Multipoint = {
+  inline def apply(points: js.Array[Position]): Multipoint = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[Multipoint]
   }
   
-  @scala.inline
-  implicit class MultipointMutableBuilder[Self <: Multipoint] (val x: Self) extends AnyVal {
+  extension [Self <: Multipoint](x: Self) {
     
-    @scala.inline
-    def setPoints(value: js.Array[Position]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Position]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Position*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Position*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

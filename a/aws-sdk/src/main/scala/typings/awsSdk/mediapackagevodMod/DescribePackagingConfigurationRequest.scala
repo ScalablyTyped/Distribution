@@ -13,16 +13,13 @@ trait DescribePackagingConfigurationRequest extends StObject {
 }
 object DescribePackagingConfigurationRequest {
   
-  @scala.inline
-  def apply(Id: string): DescribePackagingConfigurationRequest = {
+  inline def apply(Id: string): DescribePackagingConfigurationRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePackagingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DescribePackagingConfigurationRequestMutableBuilder[Self <: DescribePackagingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePackagingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait FailoverDBClusterMessage extends StObject {
 }
 object FailoverDBClusterMessage {
   
-  @scala.inline
-  def apply(): FailoverDBClusterMessage = {
+  inline def apply(): FailoverDBClusterMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailoverDBClusterMessage]
   }
   
-  @scala.inline
-  implicit class FailoverDBClusterMessageMutableBuilder[Self <: FailoverDBClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: FailoverDBClusterMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
+    inline def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setTargetDBInstanceIdentifier(value: String): Self = StObject.set(x, "TargetDBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setTargetDBInstanceIdentifier(value: String): Self = StObject.set(x, "TargetDBInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDBInstanceIdentifierUndefined: Self = StObject.set(x, "TargetDBInstanceIdentifier", js.undefined)
+    inline def setTargetDBInstanceIdentifierUndefined: Self = StObject.set(x, "TargetDBInstanceIdentifier", js.undefined)
   }
 }

@@ -29,28 +29,21 @@ trait SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1EntityTypeEntityMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity](x: Self) {
     
-    @scala.inline
-    def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
+    inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
+    inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    @scala.inline
-    def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -64,8 +64,7 @@ object dropdownContainerMod {
     @JSImport("rbx/components/dropdown/dropdown-container", "DROPDOWN_DEFAULTS.alignments")
     @js.native
     def alignments: js.Array[right] = js.native
-    @scala.inline
-    def alignments_=(x: js.Array[right]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignments")(x.asInstanceOf[js.Any])
+    inline def alignments_=(x: js.Array[right]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignments")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rbx/components/dropdown/dropdown-container", "DropdownContainer")
@@ -74,7 +73,7 @@ object dropdownContainerMod {
     extends PureComponent[DropdownContainerProps, DropdownContainerState, js.Any] {
     def this(props: DropdownContainerProps) = this()
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MDropdownContainer(): Unit = js.native
@@ -82,9 +81,9 @@ object dropdownContainerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDropdownContainer(): Unit = js.native
     
-    val handleClick: js.Any = js.native
+    /* private */ val handleClick: js.Any = js.native
     
-    val ref: js.Any = js.native
+    /* private */ val ref: js.Any = js.native
   }
   /* static members */
   object DropdownContainer {
@@ -96,8 +95,7 @@ object dropdownContainerMod {
     @JSImport("rbx/components/dropdown/dropdown-container", "DropdownContainer.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait DropdownContainerModifierProps extends StObject {
@@ -118,62 +116,44 @@ object dropdownContainerMod {
   }
   object DropdownContainerModifierProps {
     
-    @scala.inline
-    def apply(): DropdownContainerModifierProps = {
+    inline def apply(): DropdownContainerModifierProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownContainerModifierProps]
     }
     
-    @scala.inline
-    implicit class DropdownContainerModifierPropsMutableBuilder[Self <: DropdownContainerModifierProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownContainerModifierProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAlign(value: right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
+      inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
+      inline def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: Ref[HTMLElement | SVGElement | ComponentType[js.Object]]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[HTMLElement | SVGElement | ComponentType[js.Object]]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ (HTMLElement | SVGElement | ComponentType[js.Object]) | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ (HTMLElement | SVGElement | ComponentType[js.Object]) | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setManaged(value: Boolean): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
+      inline def setManaged(value: Boolean): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagedUndefined: Self = StObject.set(x, "managed", js.undefined)
+      inline def setManagedUndefined: Self = StObject.set(x, "managed", js.undefined)
       
-      @scala.inline
-      def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+      inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
     }
   }
   
@@ -270,264 +250,180 @@ object dropdownContainerMod {
   }
   object DropdownContainerProps {
     
-    @scala.inline
-    def apply(): DropdownContainerProps = {
+    inline def apply(): DropdownContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownContainerProps]
     }
     
-    @scala.inline
-    implicit class DropdownContainerPropsMutableBuilder[Self <: DropdownContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownContainerProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAlign(value: right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(
+      inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
       ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Double | String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
+      inline def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
+      inline def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
       
-      @scala.inline
-      def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
+      inline def setBadgeOutlined(value: Boolean): Self = StObject.set(x, "badgeOutlined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
+      inline def setBadgeOutlinedUndefined: Self = StObject.set(x, "badgeOutlined", js.undefined)
       
-      @scala.inline
-      def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
+      inline def setBadgeRounded(value: Boolean): Self = StObject.set(x, "badgeRounded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
+      inline def setBadgeRoundedUndefined: Self = StObject.set(x, "badgeRounded", js.undefined)
       
-      @scala.inline
-      def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
+      inline def setBadgeSize(value: small | medium | large): Self = StObject.set(x, "badgeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
+      inline def setBadgeSizeUndefined: Self = StObject.set(x, "badgeSize", js.undefined)
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
+      inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
+      inline def setClearfixUndefined: Self = StObject.set(x, "clearfix", js.undefined)
       
-      @scala.inline
-      def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
+      inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
+      inline def setClippedUndefined: Self = StObject.set(x, "clipped", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
+      inline def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
+      inline def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: Ref[HTMLElement | SVGElement | ComponentType[js.Object]]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[HTMLElement | SVGElement | ComponentType[js.Object]]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ (HTMLElement | SVGElement | ComponentType[js.Object]) | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ (HTMLElement | SVGElement | ComponentType[js.Object]) | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+      inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+      inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
       
-      @scala.inline
-      def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
       
-      @scala.inline
-      def setManaged(value: Boolean): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
+      inline def setManaged(value: Boolean): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagedUndefined: Self = StObject.set(x, "managed", js.undefined)
+      inline def setManagedUndefined: Self = StObject.set(x, "managed", js.undefined)
       
-      @scala.inline
-      def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
+      inline def setMarginless(value: Boolean): Self = StObject.set(x, "marginless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
+      inline def setMarginlessUndefined: Self = StObject.set(x, "marginless", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
+      inline def setPaddingless(value: Boolean): Self = StObject.set(x, "paddingless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
+      inline def setPaddinglessUndefined: Self = StObject.set(x, "paddingless", js.undefined)
       
-      @scala.inline
-      def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+      inline def setPull(value: left | right): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
+      inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
       
-      @scala.inline
-      def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
+      inline def setRadiusless(value: Boolean): Self = StObject.set(x, "radiusless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
+      inline def setRadiuslessUndefined: Self = StObject.set(x, "radiusless", js.undefined)
       
-      @scala.inline
-      def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: BinVariablesbreakpointsLi): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: BinVariablesbreakpointsLi): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      @scala.inline
-      def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
+      inline def setShadowless(value: Boolean): Self = StObject.set(x, "shadowless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
+      inline def setShadowlessUndefined: Self = StObject.set(x, "shadowless", js.undefined)
       
-      @scala.inline
-      def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
+      inline def setSrOnly(value: Boolean): Self = StObject.set(x, "srOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
+      inline def setSrOnlyUndefined: Self = StObject.set(x, "srOnly", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: centered | justified | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: centered | justified | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextColor(
+      inline def setTextColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
       ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setTextSize(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+      inline def setTextSize(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+      inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
       
-      @scala.inline
-      def setTextTransform(value: capitalized | lowercase | uppercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+      inline def setTextTransform(value: capitalized | lowercase | uppercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
       
-      @scala.inline
-      def setTextWeight(value: light | medium | normal | semibold | bold): Self = StObject.set(x, "textWeight", value.asInstanceOf[js.Any])
+      inline def setTextWeight(value: light | medium | normal | semibold | bold): Self = StObject.set(x, "textWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextWeightUndefined: Self = StObject.set(x, "textWeight", js.undefined)
+      inline def setTextWeightUndefined: Self = StObject.set(x, "textWeight", js.undefined)
       
-      @scala.inline
-      def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Double | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipActive(value: Boolean): Self = StObject.set(x, "tooltipActive", value.asInstanceOf[js.Any])
+      inline def setTooltipActive(value: Boolean): Self = StObject.set(x, "tooltipActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipActiveUndefined: Self = StObject.set(x, "tooltipActive", js.undefined)
+      inline def setTooltipActiveUndefined: Self = StObject.set(x, "tooltipActive", js.undefined)
       
-      @scala.inline
-      def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "tooltipColor", value.asInstanceOf[js.Any])
+      inline def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "tooltipColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipColorUndefined: Self = StObject.set(x, "tooltipColor", js.undefined)
+      inline def setTooltipColorUndefined: Self = StObject.set(x, "tooltipColor", js.undefined)
       
-      @scala.inline
-      def setTooltipMultiline(value: Boolean): Self = StObject.set(x, "tooltipMultiline", value.asInstanceOf[js.Any])
+      inline def setTooltipMultiline(value: Boolean): Self = StObject.set(x, "tooltipMultiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipMultilineUndefined: Self = StObject.set(x, "tooltipMultiline", js.undefined)
+      inline def setTooltipMultilineUndefined: Self = StObject.set(x, "tooltipMultiline", js.undefined)
       
-      @scala.inline
-      def setTooltipPosition(value: top | right | bottom | left): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+      inline def setTooltipPosition(value: top | right | bottom | left): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+      inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
       
-      @scala.inline
-      def setTooltipResponsive(value: KinVariablesbreakpointsto): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
+      inline def setTooltipResponsive(value: KinVariablesbreakpointsto): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)
+      inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)
       
-      @scala.inline
-      def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      @scala.inline
-      def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+      inline def setUnselectable(value: Boolean): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+      inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      @scala.inline
-      def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+      inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
     }
   }
   
@@ -537,17 +433,14 @@ object dropdownContainerMod {
   }
   object DropdownContainerState {
     
-    @scala.inline
-    def apply(active: Boolean): DropdownContainerState = {
+    inline def apply(active: Boolean): DropdownContainerState = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropdownContainerState]
     }
     
-    @scala.inline
-    implicit class DropdownContainerStateMutableBuilder[Self <: DropdownContainerState] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownContainerState](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
@@ -558,17 +451,14 @@ object dropdownContainerMod {
   }
   object DropdownVariables {
     
-    @scala.inline
-    def apply(): DropdownVariables = {
+    inline def apply(): DropdownVariables = {
       val __obj = js.Dynamic.literal(alignments = "right")
       __obj.asInstanceOf[DropdownVariables]
     }
     
-    @scala.inline
-    implicit class DropdownVariablesMutableBuilder[Self <: DropdownVariables] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownVariables](x: Self) {
       
-      @scala.inline
-      def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
+      inline def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
   }
   
@@ -578,17 +468,14 @@ object dropdownContainerMod {
   }
   object DropdownVariablesDefaults {
     
-    @scala.inline
-    def apply(): DropdownVariablesDefaults = {
+    inline def apply(): DropdownVariablesDefaults = {
       val __obj = js.Dynamic.literal(alignments = "right")
       __obj.asInstanceOf[DropdownVariablesDefaults]
     }
     
-    @scala.inline
-    implicit class DropdownVariablesDefaultsMutableBuilder[Self <: DropdownVariablesDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownVariablesDefaults](x: Self) {
       
-      @scala.inline
-      def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
+      inline def setAlignments(value: right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
   }
   

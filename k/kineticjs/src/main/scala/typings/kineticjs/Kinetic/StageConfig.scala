@@ -18,22 +18,17 @@ trait StageConfig
 }
 object StageConfig {
   
-  @scala.inline
-  def apply(container: String, height: Double, width: Double): StageConfig = {
+  inline def apply(container: String, height: Double, width: Double): StageConfig = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[StageConfig]
   }
   
-  @scala.inline
-  implicit class StageConfigMutableBuilder[Self <: StageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StageConfig](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

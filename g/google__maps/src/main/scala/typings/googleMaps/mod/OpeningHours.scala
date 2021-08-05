@@ -22,28 +22,21 @@ trait OpeningHours extends StObject {
 }
 object OpeningHours {
   
-  @scala.inline
-  def apply(open_now: Boolean, periods: js.Array[OpeningPeriod], weekday_text: js.Array[String]): OpeningHours = {
+  inline def apply(open_now: Boolean, periods: js.Array[OpeningPeriod], weekday_text: js.Array[String]): OpeningHours = {
     val __obj = js.Dynamic.literal(open_now = open_now.asInstanceOf[js.Any], periods = periods.asInstanceOf[js.Any], weekday_text = weekday_text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpeningHours]
   }
   
-  @scala.inline
-  implicit class OpeningHoursMutableBuilder[Self <: OpeningHours] (val x: Self) extends AnyVal {
+  extension [Self <: OpeningHours](x: Self) {
     
-    @scala.inline
-    def setOpen_now(value: Boolean): Self = StObject.set(x, "open_now", value.asInstanceOf[js.Any])
+    inline def setOpen_now(value: Boolean): Self = StObject.set(x, "open_now", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriods(value: js.Array[OpeningPeriod]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+    inline def setPeriods(value: js.Array[OpeningPeriod]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodsVarargs(value: OpeningPeriod*): Self = StObject.set(x, "periods", js.Array(value :_*))
+    inline def setPeriodsVarargs(value: OpeningPeriod*): Self = StObject.set(x, "periods", js.Array(value :_*))
     
-    @scala.inline
-    def setWeekday_text(value: js.Array[String]): Self = StObject.set(x, "weekday_text", value.asInstanceOf[js.Any])
+    inline def setWeekday_text(value: js.Array[String]): Self = StObject.set(x, "weekday_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekday_textVarargs(value: String*): Self = StObject.set(x, "weekday_text", js.Array(value :_*))
+    inline def setWeekday_textVarargs(value: String*): Self = StObject.set(x, "weekday_text", js.Array(value :_*))
   }
 }

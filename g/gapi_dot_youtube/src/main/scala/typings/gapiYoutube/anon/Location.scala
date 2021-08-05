@@ -23,22 +23,17 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(location: Elevation, locationDescription: String, recordingDate: String): Location = {
+  inline def apply(location: Elevation, locationDescription: String, recordingDate: String): Location = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], locationDescription = locationDescription.asInstanceOf[js.Any], recordingDate = recordingDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Elevation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Elevation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationDescription(value: String): Self = StObject.set(x, "locationDescription", value.asInstanceOf[js.Any])
+    inline def setLocationDescription(value: String): Self = StObject.set(x, "locationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingDate(value: String): Self = StObject.set(x, "recordingDate", value.asInstanceOf[js.Any])
+    inline def setRecordingDate(value: String): Self = StObject.set(x, "recordingDate", value.asInstanceOf[js.Any])
   }
 }

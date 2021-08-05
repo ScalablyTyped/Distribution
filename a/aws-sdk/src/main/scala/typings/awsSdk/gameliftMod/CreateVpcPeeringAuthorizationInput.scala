@@ -18,19 +18,15 @@ trait CreateVpcPeeringAuthorizationInput extends StObject {
 }
 object CreateVpcPeeringAuthorizationInput {
   
-  @scala.inline
-  def apply(GameLiftAwsAccountId: NonZeroAndMaxString, PeerVpcId: NonZeroAndMaxString): CreateVpcPeeringAuthorizationInput = {
+  inline def apply(GameLiftAwsAccountId: NonZeroAndMaxString, PeerVpcId: NonZeroAndMaxString): CreateVpcPeeringAuthorizationInput = {
     val __obj = js.Dynamic.literal(GameLiftAwsAccountId = GameLiftAwsAccountId.asInstanceOf[js.Any], PeerVpcId = PeerVpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcPeeringAuthorizationInput]
   }
   
-  @scala.inline
-  implicit class CreateVpcPeeringAuthorizationInputMutableBuilder[Self <: CreateVpcPeeringAuthorizationInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVpcPeeringAuthorizationInput](x: Self) {
     
-    @scala.inline
-    def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftAwsAccountId", value.asInstanceOf[js.Any])
+    inline def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftAwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
+    inline def setPeerVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
   }
 }

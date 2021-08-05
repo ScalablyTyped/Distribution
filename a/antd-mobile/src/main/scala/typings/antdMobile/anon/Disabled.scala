@@ -12,19 +12,15 @@ trait Disabled extends StObject {
 }
 object Disabled {
   
-  @scala.inline
-  def apply(disabled: Boolean, prefixCls: String): Disabled = {
+  inline def apply(disabled: Boolean, prefixCls: String): Disabled = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Disabled]
   }
   
-  @scala.inline
-  implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+  extension [Self <: Disabled](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+    inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
   }
 }

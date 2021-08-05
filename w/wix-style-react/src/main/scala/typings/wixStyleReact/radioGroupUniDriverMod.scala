@@ -13,8 +13,7 @@ object radioGroupUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRadioButtonsGetter(base: BaseUniDriver, body: HTMLElement): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createRadioButtonsGetter")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def createRadioButtonsGetter(base: BaseUniDriver, body: HTMLElement): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("createRadioButtonsGetter")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   @js.native
   trait RadioGroupUniDriver

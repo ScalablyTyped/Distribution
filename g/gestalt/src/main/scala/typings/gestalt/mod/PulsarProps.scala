@@ -12,25 +12,19 @@ trait PulsarProps extends StObject {
 }
 object PulsarProps {
   
-  @scala.inline
-  def apply(): PulsarProps = {
+  inline def apply(): PulsarProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PulsarProps]
   }
   
-  @scala.inline
-  implicit class PulsarPropsMutableBuilder[Self <: PulsarProps] (val x: Self) extends AnyVal {
+  extension [Self <: PulsarProps](x: Self) {
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+    inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

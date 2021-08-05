@@ -15,16 +15,14 @@ object transitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     router: Router[DefaultDependencies],
     toState: State,
     fromState: Null,
     opts: NavigationOptions,
     callback: DoneFn
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(router.asInstanceOf[js.Any], toState.asInstanceOf[js.Any], fromState.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  @scala.inline
-  def default(
+  inline def default(
     router: Router[DefaultDependencies],
     toState: State,
     fromState: State,

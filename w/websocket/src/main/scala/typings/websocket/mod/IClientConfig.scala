@@ -27,25 +27,19 @@ trait IClientConfig
 }
 object IClientConfig {
   
-  @scala.inline
-  def apply(): IClientConfig = {
+  inline def apply(): IClientConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientConfig]
   }
   
-  @scala.inline
-  implicit class IClientConfigMutableBuilder[Self <: IClientConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IClientConfig](x: Self) {
     
-    @scala.inline
-    def setTlsOptions(value: RequestOptions): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
+    inline def setTlsOptions(value: RequestOptions): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
+    inline def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
     
-    @scala.inline
-    def setWebSocketVersion(value: Double): Self = StObject.set(x, "webSocketVersion", value.asInstanceOf[js.Any])
+    inline def setWebSocketVersion(value: Double): Self = StObject.set(x, "webSocketVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebSocketVersionUndefined: Self = StObject.set(x, "webSocketVersion", js.undefined)
+    inline def setWebSocketVersionUndefined: Self = StObject.set(x, "webSocketVersion", js.undefined)
   }
 }

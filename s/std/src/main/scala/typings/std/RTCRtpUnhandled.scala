@@ -14,31 +14,23 @@ trait RTCRtpUnhandled extends StObject {
 }
 object RTCRtpUnhandled {
   
-  @scala.inline
-  def apply(): RTCRtpUnhandled = {
+  inline def apply(): RTCRtpUnhandled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCRtpUnhandled]
   }
   
-  @scala.inline
-  implicit class RTCRtpUnhandledMutableBuilder[Self <: RTCRtpUnhandled] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpUnhandled](x: Self) {
     
-    @scala.inline
-    def setMuxId(value: java.lang.String): Self = StObject.set(x, "muxId", value.asInstanceOf[js.Any])
+    inline def setMuxId(value: java.lang.String): Self = StObject.set(x, "muxId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuxIdUndefined: Self = StObject.set(x, "muxId", js.undefined)
+    inline def setMuxIdUndefined: Self = StObject.set(x, "muxId", js.undefined)
     
-    @scala.inline
-    def setPayloadType(value: Double): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
+    inline def setPayloadType(value: Double): Self = StObject.set(x, "payloadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadTypeUndefined: Self = StObject.set(x, "payloadType", js.undefined)
+    inline def setPayloadTypeUndefined: Self = StObject.set(x, "payloadType", js.undefined)
     
-    @scala.inline
-    def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
+    inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrcUndefined: Self = StObject.set(x, "ssrc", js.undefined)
+    inline def setSsrcUndefined: Self = StObject.set(x, "ssrc", js.undefined)
   }
 }

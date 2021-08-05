@@ -27,15 +27,15 @@ object messageBundleMod {
       _locale: String
     ) = this()
     
-    var _htmlParser: js.Any = js.native
+    /* private */ var _htmlParser: js.Any = js.native
     
-    var _implicitAttrs: js.Any = js.native
+    /* private */ var _implicitAttrs: js.Any = js.native
     
-    var _implicitTags: js.Any = js.native
+    /* private */ var _implicitTags: js.Any = js.native
     
-    var _locale: js.Any = js.native
+    /* private */ var _locale: js.Any = js.native
     
-    var _messages: js.Any = js.native
+    /* private */ var _messages: js.Any = js.native
     
     def getMessages(): js.Array[Message] = js.native
     

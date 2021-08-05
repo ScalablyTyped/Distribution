@@ -13,25 +13,19 @@ trait BandOffset extends StObject {
 }
 object BandOffset {
   
-  @scala.inline
-  def apply(): BandOffset = {
+  inline def apply(): BandOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BandOffset]
   }
   
-  @scala.inline
-  implicit class BandOffsetMutableBuilder[Self <: BandOffset] (val x: Self) extends AnyVal {
+  extension [Self <: BandOffset](x: Self) {
     
-    @scala.inline
-    def setBand(value: Double | Boolean): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double | Boolean): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double | VgValueRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | VgValueRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

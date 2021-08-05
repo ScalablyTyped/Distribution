@@ -10,19 +10,15 @@ trait Mount extends StObject {
 }
 object Mount {
   
-  @scala.inline
-  def apply(): Mount = {
+  inline def apply(): Mount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mount]
   }
   
-  @scala.inline
-  implicit class MountMutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
+  extension [Self <: Mount](x: Self) {
     
-    @scala.inline
-    def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+    inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
+    inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
   }
 }

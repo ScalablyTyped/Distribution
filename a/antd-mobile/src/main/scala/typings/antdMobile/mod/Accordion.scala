@@ -19,12 +19,10 @@ object Accordion {
   @JSImport("antd-mobile", "Accordion.Panel")
   @js.native
   def Panel: js.Any = js.native
-  @scala.inline
-  def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
+  inline def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile", "Accordion.defaultProps")
   @js.native
   def defaultProps: PrefixCls = js.native
-  @scala.inline
-  def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -20,8 +20,7 @@ trait InnerRadius extends StObject {
 }
 object InnerRadius {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     innerRadius: Double,
     outerRadius: Double,
     phiSegments: Double,
@@ -33,25 +32,18 @@ object InnerRadius {
     __obj.asInstanceOf[InnerRadius]
   }
   
-  @scala.inline
-  implicit class InnerRadiusMutableBuilder[Self <: InnerRadius] (val x: Self) extends AnyVal {
+  extension [Self <: InnerRadius](x: Self) {
     
-    @scala.inline
-    def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
+    inline def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhiSegments(value: Double): Self = StObject.set(x, "phiSegments", value.asInstanceOf[js.Any])
+    inline def setPhiSegments(value: Double): Self = StObject.set(x, "phiSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
+    inline def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaSegments(value: Double): Self = StObject.set(x, "thetaSegments", value.asInstanceOf[js.Any])
+    inline def setThetaSegments(value: Double): Self = StObject.set(x, "thetaSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
+    inline def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
   }
 }

@@ -50,20 +50,17 @@ object timePickerConstantsMod {
     @JSImport("wix-ui-core/dist/src/components/time-picker/constants", "AmPmStrings.capitalized")
     @js.native
     def capitalized: Am = js.native
-    @scala.inline
-    def capitalized_=(x: Am): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capitalized")(x.asInstanceOf[js.Any])
+    inline def capitalized_=(x: Am): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capitalized")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/time-picker/constants", "AmPmStrings.lowercase")
     @js.native
     def lowercase: Am = js.native
-    @scala.inline
-    def lowercase_=(x: Am): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lowercase")(x.asInstanceOf[js.Any])
+    inline def lowercase_=(x: Am): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lowercase")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/time-picker/constants", "AmPmStrings.uppercase")
     @js.native
     def uppercase: Am = js.native
-    @scala.inline
-    def uppercase_=(x: Am): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uppercase")(x.asInstanceOf[js.Any])
+    inline def uppercase_=(x: Am): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uppercase")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/dist/src/components/time-picker/constants", "BLANK")

@@ -23,34 +23,25 @@ trait Browser
 }
 object Browser {
   
-  @scala.inline
-  def apply(browser: String, os: String, resolution: String, url: String, version: String): Browser = {
+  inline def apply(browser: String, os: String, resolution: String, url: String, version: String): Browser = {
     val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Browser]
   }
   
-  @scala.inline
-  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+  extension [Self <: Browser](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: String): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnel(value: Unit): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+    inline def setTunnel(value: Unit): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+    inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

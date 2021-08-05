@@ -18,19 +18,15 @@ trait SketchEdges3DProperties
 }
 object SketchEdges3DProperties {
   
-  @scala.inline
-  def apply(): SketchEdges3DProperties = {
+  inline def apply(): SketchEdges3DProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SketchEdges3DProperties]
   }
   
-  @scala.inline
-  implicit class SketchEdges3DPropertiesMutableBuilder[Self <: SketchEdges3DProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SketchEdges3DProperties](x: Self) {
     
-    @scala.inline
-    def setType(value: sketch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sketch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

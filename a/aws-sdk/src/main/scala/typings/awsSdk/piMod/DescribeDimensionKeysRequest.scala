@@ -63,8 +63,7 @@ trait DescribeDimensionKeysRequest extends StObject {
 }
 object DescribeDimensionKeysRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndTime: ISOTimestamp,
     GroupBy: DimensionGroup,
     Identifier: String,
@@ -76,55 +75,38 @@ object DescribeDimensionKeysRequest {
     __obj.asInstanceOf[DescribeDimensionKeysRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDimensionKeysRequestMutableBuilder[Self <: DescribeDimensionKeysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDimensionKeysRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: ISOTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: ISOTimestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: MetricQueryFilterMap): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: MetricQueryFilterMap): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setGroupBy(value: DimensionGroup): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: DimensionGroup): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPartitionBy(value: DimensionGroup): Self = StObject.set(x, "PartitionBy", value.asInstanceOf[js.Any])
+    inline def setPartitionBy(value: DimensionGroup): Self = StObject.set(x, "PartitionBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionByUndefined: Self = StObject.set(x, "PartitionBy", js.undefined)
+    inline def setPartitionByUndefined: Self = StObject.set(x, "PartitionBy", js.undefined)
     
-    @scala.inline
-    def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "PeriodInSeconds", value.asInstanceOf[js.Any])
+    inline def setPeriodInSeconds(value: Integer): Self = StObject.set(x, "PeriodInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodInSecondsUndefined: Self = StObject.set(x, "PeriodInSeconds", js.undefined)
+    inline def setPeriodInSecondsUndefined: Self = StObject.set(x, "PeriodInSeconds", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: ISOTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: ISOTimestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

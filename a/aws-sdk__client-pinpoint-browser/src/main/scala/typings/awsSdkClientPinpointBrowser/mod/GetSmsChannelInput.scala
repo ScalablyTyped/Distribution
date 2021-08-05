@@ -9,8 +9,7 @@ trait GetSmsChannelInput
      with typings.awsSdkClientPinpointBrowser.typesGetSmsChannelInputMod.GetSmsChannelInput
 object GetSmsChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetSmsChannelInput = {
+  inline def apply(ApplicationId: String): GetSmsChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSmsChannelInput]
   }

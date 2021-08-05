@@ -46,8 +46,7 @@ trait ImageInspectInfo extends StObject {
 }
 object ImageInspectInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Architecture: String,
     Author: String,
     Comment: String,
@@ -70,64 +69,44 @@ object ImageInspectInfo {
     __obj.asInstanceOf[ImageInspectInfo]
   }
   
-  @scala.inline
-  implicit class ImageInspectInfoMutableBuilder[Self <: ImageInspectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ImageInspectInfo](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: AttachStdin): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: AttachStdin): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerConfig(value: ArgsEscaped): Self = StObject.set(x, "ContainerConfig", value.asInstanceOf[js.Any])
+    inline def setContainerConfig(value: ArgsEscaped): Self = StObject.set(x, "ContainerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerVersion(value: String): Self = StObject.set(x, "DockerVersion", value.asInstanceOf[js.Any])
+    inline def setDockerVersion(value: String): Self = StObject.set(x, "DockerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphDriver(value: Data): Self = StObject.set(x, "GraphDriver", value.asInstanceOf[js.Any])
+    inline def setGraphDriver(value: Data): Self = StObject.set(x, "GraphDriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoDigests(value: js.Array[String]): Self = StObject.set(x, "RepoDigests", value.asInstanceOf[js.Any])
+    inline def setRepoDigests(value: js.Array[String]): Self = StObject.set(x, "RepoDigests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoDigestsVarargs(value: String*): Self = StObject.set(x, "RepoDigests", js.Array(value :_*))
+    inline def setRepoDigestsVarargs(value: String*): Self = StObject.set(x, "RepoDigests", js.Array(value :_*))
     
-    @scala.inline
-    def setRepoTags(value: js.Array[String]): Self = StObject.set(x, "RepoTags", value.asInstanceOf[js.Any])
+    inline def setRepoTags(value: js.Array[String]): Self = StObject.set(x, "RepoTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoTagsVarargs(value: String*): Self = StObject.set(x, "RepoTags", js.Array(value :_*))
+    inline def setRepoTagsVarargs(value: String*): Self = StObject.set(x, "RepoTags", js.Array(value :_*))
     
-    @scala.inline
-    def setRootFS(value: BaseLayer): Self = StObject.set(x, "RootFS", value.asInstanceOf[js.Any])
+    inline def setRootFS(value: BaseLayer): Self = StObject.set(x, "RootFS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualSize(value: Double): Self = StObject.set(x, "VirtualSize", value.asInstanceOf[js.Any])
+    inline def setVirtualSize(value: Double): Self = StObject.set(x, "VirtualSize", value.asInstanceOf[js.Any])
   }
 }

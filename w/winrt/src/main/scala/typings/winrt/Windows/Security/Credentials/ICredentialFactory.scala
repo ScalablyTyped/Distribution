@@ -10,16 +10,13 @@ trait ICredentialFactory extends StObject {
 }
 object ICredentialFactory {
   
-  @scala.inline
-  def apply(createPasswordCredential: (String, String, String) => PasswordCredential): ICredentialFactory = {
+  inline def apply(createPasswordCredential: (String, String, String) => PasswordCredential): ICredentialFactory = {
     val __obj = js.Dynamic.literal(createPasswordCredential = js.Any.fromFunction3(createPasswordCredential))
     __obj.asInstanceOf[ICredentialFactory]
   }
   
-  @scala.inline
-  implicit class ICredentialFactoryMutableBuilder[Self <: ICredentialFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ICredentialFactory](x: Self) {
     
-    @scala.inline
-    def setCreatePasswordCredential(value: (String, String, String) => PasswordCredential): Self = StObject.set(x, "createPasswordCredential", js.Any.fromFunction3(value))
+    inline def setCreatePasswordCredential(value: (String, String, String) => PasswordCredential): Self = StObject.set(x, "createPasswordCredential", js.Any.fromFunction3(value))
   }
 }

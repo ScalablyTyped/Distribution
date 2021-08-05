@@ -18,22 +18,17 @@ trait SetChildNodesEvent extends StObject {
 }
 object SetChildNodesEvent {
   
-  @scala.inline
-  def apply(nodes: js.Array[Node], parentId: NodeId): SetChildNodesEvent = {
+  inline def apply(nodes: js.Array[Node], parentId: NodeId): SetChildNodesEvent = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetChildNodesEvent]
   }
   
-  @scala.inline
-  implicit class SetChildNodesEventMutableBuilder[Self <: SetChildNodesEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SetChildNodesEvent](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: NodeId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
   }
 }

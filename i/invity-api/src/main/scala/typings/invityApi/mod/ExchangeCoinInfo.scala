@@ -19,28 +19,21 @@ trait ExchangeCoinInfo extends StObject {
 }
 object ExchangeCoinInfo {
   
-  @scala.inline
-  def apply(category: String, name: String, ticker: String): ExchangeCoinInfo = {
+  inline def apply(category: String, name: String, ticker: String): ExchangeCoinInfo = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ticker = ticker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeCoinInfo]
   }
   
-  @scala.inline
-  implicit class ExchangeCoinInfoMutableBuilder[Self <: ExchangeCoinInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeCoinInfo](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
+    inline def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

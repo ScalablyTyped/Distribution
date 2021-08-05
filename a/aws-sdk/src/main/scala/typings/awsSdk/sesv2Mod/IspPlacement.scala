@@ -18,25 +18,19 @@ trait IspPlacement extends StObject {
 }
 object IspPlacement {
   
-  @scala.inline
-  def apply(): IspPlacement = {
+  inline def apply(): IspPlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IspPlacement]
   }
   
-  @scala.inline
-  implicit class IspPlacementMutableBuilder[Self <: IspPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: IspPlacement](x: Self) {
     
-    @scala.inline
-    def setIspName(value: IspName): Self = StObject.set(x, "IspName", value.asInstanceOf[js.Any])
+    inline def setIspName(value: IspName): Self = StObject.set(x, "IspName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIspNameUndefined: Self = StObject.set(x, "IspName", js.undefined)
+    inline def setIspNameUndefined: Self = StObject.set(x, "IspName", js.undefined)
     
-    @scala.inline
-    def setPlacementStatistics(value: PlacementStatistics): Self = StObject.set(x, "PlacementStatistics", value.asInstanceOf[js.Any])
+    inline def setPlacementStatistics(value: PlacementStatistics): Self = StObject.set(x, "PlacementStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementStatisticsUndefined: Self = StObject.set(x, "PlacementStatistics", js.undefined)
+    inline def setPlacementStatisticsUndefined: Self = StObject.set(x, "PlacementStatistics", js.undefined)
   }
 }

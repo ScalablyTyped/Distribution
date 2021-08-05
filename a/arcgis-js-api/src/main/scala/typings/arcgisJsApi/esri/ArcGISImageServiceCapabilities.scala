@@ -26,8 +26,7 @@ trait ArcGISImageServiceCapabilities
 }
 object ArcGISImageServiceCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     operations: ArcGISImageServiceCapabilitiesOperations,
@@ -38,13 +37,10 @@ object ArcGISImageServiceCapabilities {
     __obj.asInstanceOf[ArcGISImageServiceCapabilities]
   }
   
-  @scala.inline
-  implicit class ArcGISImageServiceCapabilitiesMutableBuilder[Self <: ArcGISImageServiceCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISImageServiceCapabilities](x: Self) {
     
-    @scala.inline
-    def setOperations(value: ArcGISImageServiceCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: ArcGISImageServiceCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: ArcGISImageServiceCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: ArcGISImageServiceCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

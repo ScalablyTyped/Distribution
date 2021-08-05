@@ -40,8 +40,7 @@ trait XTextConvert
 }
 object XTextConvert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     convertToTable: (SeqEquiv[SeqEquiv[sequence[XTextRange]]], SeqEquiv[SeqEquiv[PropertyValues]], SeqEquiv[PropertyValues], PropertyValues) => XTextTable,
     convertToTextFrame: (XTextRange, XTextRange, PropertyValues) => XTextContent,
@@ -52,15 +51,12 @@ object XTextConvert {
     __obj.asInstanceOf[XTextConvert]
   }
   
-  @scala.inline
-  implicit class XTextConvertMutableBuilder[Self <: XTextConvert] (val x: Self) extends AnyVal {
+  extension [Self <: XTextConvert](x: Self) {
     
-    @scala.inline
-    def setConvertToTable(
+    inline def setConvertToTable(
       value: (SeqEquiv[SeqEquiv[sequence[XTextRange]]], SeqEquiv[SeqEquiv[PropertyValues]], SeqEquiv[PropertyValues], PropertyValues) => XTextTable
     ): Self = StObject.set(x, "convertToTable", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setConvertToTextFrame(value: (XTextRange, XTextRange, PropertyValues) => XTextContent): Self = StObject.set(x, "convertToTextFrame", js.Any.fromFunction3(value))
+    inline def setConvertToTextFrame(value: (XTextRange, XTextRange, PropertyValues) => XTextContent): Self = StObject.set(x, "convertToTextFrame", js.Any.fromFunction3(value))
   }
 }

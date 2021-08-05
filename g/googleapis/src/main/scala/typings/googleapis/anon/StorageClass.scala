@@ -12,25 +12,19 @@ trait StorageClass extends StObject {
 }
 object StorageClass {
   
-  @scala.inline
-  def apply(): StorageClass = {
+  inline def apply(): StorageClass = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageClass]
   }
   
-  @scala.inline
-  implicit class StorageClassMutableBuilder[Self <: StorageClass] (val x: Self) extends AnyVal {
+  extension [Self <: StorageClass](x: Self) {
     
-    @scala.inline
-    def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

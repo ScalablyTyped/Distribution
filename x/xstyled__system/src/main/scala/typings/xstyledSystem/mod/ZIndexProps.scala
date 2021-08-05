@@ -14,27 +14,22 @@ trait ZIndexProps extends StObject {
 }
 object ZIndexProps {
   
-  @scala.inline
-  def apply(): ZIndexProps = {
+  inline def apply(): ZIndexProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZIndexProps]
   }
   
-  @scala.inline
-  implicit class ZIndexPropsMutableBuilder[Self <: ZIndexProps] (val x: Self) extends AnyVal {
+  extension [Self <: ZIndexProps](x: Self) {
     
-    @scala.inline
-    def setZIndex(
+    inline def setZIndex(
       value: ResponsiveValue[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey
         ]
     ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
-    @scala.inline
-    def setZIndexVarargs(
+    inline def setZIndexVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | AliasKey)*
     ): Self = StObject.set(x, "zIndex", js.Array(value :_*))
   }

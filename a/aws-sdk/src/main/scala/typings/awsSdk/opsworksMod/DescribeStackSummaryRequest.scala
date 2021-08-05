@@ -13,16 +13,13 @@ trait DescribeStackSummaryRequest extends StObject {
 }
 object DescribeStackSummaryRequest {
   
-  @scala.inline
-  def apply(StackId: String): DescribeStackSummaryRequest = {
+  inline def apply(StackId: String): DescribeStackSummaryRequest = {
     val __obj = js.Dynamic.literal(StackId = StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackSummaryRequest]
   }
   
-  @scala.inline
-  implicit class DescribeStackSummaryRequestMutableBuilder[Self <: DescribeStackSummaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackSummaryRequest](x: Self) {
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

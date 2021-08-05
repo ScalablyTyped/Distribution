@@ -35,20 +35,17 @@ object onEventsMod {
   trait _Update extends StObject
   object _Update {
     
-    @scala.inline
-    def ExprRef(expr: Expr): typings.vegaTypings.exprMod.ExprRef = {
+    inline def ExprRef(expr: Expr): typings.vegaTypings.exprMod.ExprRef = {
       val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.exprMod.ExprRef]
     }
     
-    @scala.inline
-    def SignalRef(signal: String): typings.vegaTypings.signalMod.SignalRef = {
+    inline def SignalRef(signal: String): typings.vegaTypings.signalMod.SignalRef = {
       val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.signalMod.SignalRef]
     }
     
-    @scala.inline
-    def ValueSignalValue(value: SignalValue): typings.vegaTypings.anon.ValueSignalValue = {
+    inline def ValueSignalValue(value: SignalValue): typings.vegaTypings.anon.ValueSignalValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.anon.ValueSignalValue]
     }

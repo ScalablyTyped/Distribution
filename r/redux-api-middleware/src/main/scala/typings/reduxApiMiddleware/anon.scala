@@ -18,24 +18,19 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(`type`: String | js.Symbol): Error = {
+    inline def apply(`type`: String | js.Symbol): Error = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: `false`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: `false`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +47,14 @@ object anon {
   }
   object MetaMeta {
     
-    @scala.inline
-    def apply[Meta](meta: Meta): MetaMeta[Meta] = {
+    inline def apply[Meta](meta: Meta): MetaMeta[Meta] = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaMeta[Meta]]
     }
     
-    @scala.inline
-    implicit class MetaMetaMutableBuilder[Self <: MetaMeta[?], Meta] (val x: Self & MetaMeta[Meta]) extends AnyVal {
+    extension [Self <: MetaMeta[?], Meta](x: Self & MetaMeta[Meta]) {
       
-      @scala.inline
-      def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,17 +64,14 @@ object anon {
   }
   object PayloadPayload {
     
-    @scala.inline
-    def apply[Payload](payload: Payload): PayloadPayload[Payload] = {
+    inline def apply[Payload](payload: Payload): PayloadPayload[Payload] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayloadPayload[Payload]]
     }
     
-    @scala.inline
-    implicit class PayloadPayloadMutableBuilder[Self <: PayloadPayload[?], Payload] (val x: Self & PayloadPayload[Payload]) extends AnyVal {
+    extension [Self <: PayloadPayload[?], Payload](x: Self & PayloadPayload[Payload]) {
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
 }

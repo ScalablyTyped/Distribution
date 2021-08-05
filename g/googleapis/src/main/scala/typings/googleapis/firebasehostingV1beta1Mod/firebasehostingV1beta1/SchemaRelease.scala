@@ -47,49 +47,35 @@ trait SchemaRelease extends StObject {
 }
 object SchemaRelease {
   
-  @scala.inline
-  def apply(): SchemaRelease = {
+  inline def apply(): SchemaRelease = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRelease]
   }
   
-  @scala.inline
-  implicit class SchemaReleaseMutableBuilder[Self <: SchemaRelease] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRelease](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReleaseTime(value: String): Self = StObject.set(x, "releaseTime", value.asInstanceOf[js.Any])
+    inline def setReleaseTime(value: String): Self = StObject.set(x, "releaseTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseTimeUndefined: Self = StObject.set(x, "releaseTime", js.undefined)
+    inline def setReleaseTimeUndefined: Self = StObject.set(x, "releaseTime", js.undefined)
     
-    @scala.inline
-    def setReleaseUser(value: SchemaActingUser): Self = StObject.set(x, "releaseUser", value.asInstanceOf[js.Any])
+    inline def setReleaseUser(value: SchemaActingUser): Self = StObject.set(x, "releaseUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseUserUndefined: Self = StObject.set(x, "releaseUser", js.undefined)
+    inline def setReleaseUserUndefined: Self = StObject.set(x, "releaseUser", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVersion(value: SchemaVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: SchemaVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

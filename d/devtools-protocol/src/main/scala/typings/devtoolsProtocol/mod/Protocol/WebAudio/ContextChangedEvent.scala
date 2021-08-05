@@ -10,16 +10,13 @@ trait ContextChangedEvent extends StObject {
 }
 object ContextChangedEvent {
   
-  @scala.inline
-  def apply(context: BaseAudioContext): ContextChangedEvent = {
+  inline def apply(context: BaseAudioContext): ContextChangedEvent = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextChangedEvent]
   }
   
-  @scala.inline
-  implicit class ContextChangedEventMutableBuilder[Self <: ContextChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContextChangedEvent](x: Self) {
     
-    @scala.inline
-    def setContext(value: BaseAudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: BaseAudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

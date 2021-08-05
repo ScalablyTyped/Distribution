@@ -20,20 +20,16 @@ object draggableZoneTypesMod {
   }
   object ICoordinates {
     
-    @scala.inline
-    def apply(x: Double, y: Double): ICoordinates = {
+    inline def apply(x: Double, y: Double): ICoordinates = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICoordinates]
     }
     
-    @scala.inline
-    implicit class ICoordinatesMutableBuilder[Self <: ICoordinates] (val x: Self) extends AnyVal {
+    extension [Self <: ICoordinates](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,26 +43,20 @@ object draggableZoneTypesMod {
   }
   object IDragData {
     
-    @scala.inline
-    def apply(delta: ICoordinates, position: ICoordinates): IDragData = {
+    inline def apply(delta: ICoordinates, position: ICoordinates): IDragData = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDragData]
     }
     
-    @scala.inline
-    implicit class IDragDataMutableBuilder[Self <: IDragData] (val x: Self) extends AnyVal {
+    extension [Self <: IDragData](x: Self) {
       
-      @scala.inline
-      def setDelta(value: ICoordinates): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: ICoordinates): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPosition(value: ICoordinates): Self = StObject.set(x, "lastPosition", value.asInstanceOf[js.Any])
+      inline def setLastPosition(value: ICoordinates): Self = StObject.set(x, "lastPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPositionUndefined: Self = StObject.set(x, "lastPosition", js.undefined)
+      inline def setLastPositionUndefined: Self = StObject.set(x, "lastPosition", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ICoordinates): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ICoordinates): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,56 +117,42 @@ object draggableZoneTypesMod {
   }
   object IDraggableZoneProps {
     
-    @scala.inline
-    def apply(): IDraggableZoneProps = {
+    inline def apply(): IDraggableZoneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDraggableZoneProps]
     }
     
-    @scala.inline
-    implicit class IDraggableZonePropsMutableBuilder[Self <: IDraggableZoneProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDraggableZoneProps](x: Self) {
       
-      @scala.inline
-      def setHandleSelector(value: String): Self = StObject.set(x, "handleSelector", value.asInstanceOf[js.Any])
+      inline def setHandleSelector(value: String): Self = StObject.set(x, "handleSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleSelectorUndefined: Self = StObject.set(x, "handleSelector", js.undefined)
+      inline def setHandleSelectorUndefined: Self = StObject.set(x, "handleSelector", js.undefined)
       
-      @scala.inline
-      def setOnDragChange(
+      inline def setOnDragChange(
         value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
       ): Self = StObject.set(x, "onDragChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDragChangeUndefined: Self = StObject.set(x, "onDragChange", js.undefined)
+      inline def setOnDragChangeUndefined: Self = StObject.set(x, "onDragChange", js.undefined)
       
-      @scala.inline
-      def setOnStart(
+      inline def setOnStart(
         value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
       ): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnStop(
+      inline def setOnStop(
         value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) & TouchEvent[HTMLElement], /* dragData */ IDragData) => Unit
       ): Self = StObject.set(x, "onStop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setPosition(value: ICoordinates): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ICoordinates): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setPreventDragSelector(value: String): Self = StObject.set(x, "preventDragSelector", value.asInstanceOf[js.Any])
+      inline def setPreventDragSelector(value: String): Self = StObject.set(x, "preventDragSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDragSelectorUndefined: Self = StObject.set(x, "preventDragSelector", js.undefined)
+      inline def setPreventDragSelectorUndefined: Self = StObject.set(x, "preventDragSelector", js.undefined)
     }
   }
 }

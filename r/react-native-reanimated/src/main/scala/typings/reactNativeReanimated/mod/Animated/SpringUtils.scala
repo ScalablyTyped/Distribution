@@ -14,8 +14,7 @@ trait SpringUtils extends StObject {
 }
 object SpringUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     makeConfigFromBouncinessAndSpeed: SpringConfigWithBouncinessAndSpeed => SpringConfig,
     makeConfigFromOrigamiTensionAndFriction: SpringConfigWithOrigamiTensionAndFriction => SpringConfig,
     makeDefaultConfig: () => SpringConfig
@@ -24,16 +23,12 @@ object SpringUtils {
     __obj.asInstanceOf[SpringUtils]
   }
   
-  @scala.inline
-  implicit class SpringUtilsMutableBuilder[Self <: SpringUtils] (val x: Self) extends AnyVal {
+  extension [Self <: SpringUtils](x: Self) {
     
-    @scala.inline
-    def setMakeConfigFromBouncinessAndSpeed(value: SpringConfigWithBouncinessAndSpeed => SpringConfig): Self = StObject.set(x, "makeConfigFromBouncinessAndSpeed", js.Any.fromFunction1(value))
+    inline def setMakeConfigFromBouncinessAndSpeed(value: SpringConfigWithBouncinessAndSpeed => SpringConfig): Self = StObject.set(x, "makeConfigFromBouncinessAndSpeed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMakeConfigFromOrigamiTensionAndFriction(value: SpringConfigWithOrigamiTensionAndFriction => SpringConfig): Self = StObject.set(x, "makeConfigFromOrigamiTensionAndFriction", js.Any.fromFunction1(value))
+    inline def setMakeConfigFromOrigamiTensionAndFriction(value: SpringConfigWithOrigamiTensionAndFriction => SpringConfig): Self = StObject.set(x, "makeConfigFromOrigamiTensionAndFriction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMakeDefaultConfig(value: () => SpringConfig): Self = StObject.set(x, "makeDefaultConfig", js.Any.fromFunction0(value))
+    inline def setMakeDefaultConfig(value: () => SpringConfig): Self = StObject.set(x, "makeDefaultConfig", js.Any.fromFunction0(value))
   }
 }

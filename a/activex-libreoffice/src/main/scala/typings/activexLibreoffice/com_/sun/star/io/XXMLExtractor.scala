@@ -19,8 +19,7 @@ trait XXMLExtractor
 }
 object XXMLExtractor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     extract: XInputStream => XInputStream,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XXMLExtractor {
     __obj.asInstanceOf[XXMLExtractor]
   }
   
-  @scala.inline
-  implicit class XXMLExtractorMutableBuilder[Self <: XXMLExtractor] (val x: Self) extends AnyVal {
+  extension [Self <: XXMLExtractor](x: Self) {
     
-    @scala.inline
-    def setExtract(value: XInputStream => XInputStream): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
+    inline def setExtract(value: XInputStream => XInputStream): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
   }
 }

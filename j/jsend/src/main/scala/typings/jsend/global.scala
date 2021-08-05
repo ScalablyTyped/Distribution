@@ -15,7 +15,6 @@ object global {
     @JSGlobal("jsend.jsend")
     @js.native
     def jsend: jsendExport = js.native
-    @scala.inline
-    def jsend_=(x: jsendExport): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jsend")(x.asInstanceOf[js.Any])
+    inline def jsend_=(x: jsendExport): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jsend")(x.asInstanceOf[js.Any])
   }
 }

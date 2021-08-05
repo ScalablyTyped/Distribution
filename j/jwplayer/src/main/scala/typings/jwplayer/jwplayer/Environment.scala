@@ -14,22 +14,17 @@ trait Environment extends StObject {
 }
 object Environment {
   
-  @scala.inline
-  def apply(Browser: Browser, Features: Features, OS: OS): Environment = {
+  inline def apply(Browser: Browser, Features: Features, OS: OS): Environment = {
     val __obj = js.Dynamic.literal(Browser = Browser.asInstanceOf[js.Any], Features = Features.asInstanceOf[js.Any], OS = OS.asInstanceOf[js.Any])
     __obj.asInstanceOf[Environment]
   }
   
-  @scala.inline
-  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+  extension [Self <: Environment](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: Browser): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: Browser): Self = StObject.set(x, "Browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatures(value: Features): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: Features): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOS(value: OS): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
+    inline def setOS(value: OS): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait CellValueBinding
 }
 object CellValueBinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BoundCell: CellAddress,
     PropertySetInfo: XPropertySetInfo,
     ReadOnly: Boolean,
@@ -66,10 +65,8 @@ object CellValueBinding {
     __obj.asInstanceOf[CellValueBinding]
   }
   
-  @scala.inline
-  implicit class CellValueBindingMutableBuilder[Self <: CellValueBinding] (val x: Self) extends AnyVal {
+  extension [Self <: CellValueBinding](x: Self) {
     
-    @scala.inline
-    def setBoundCell(value: CellAddress): Self = StObject.set(x, "BoundCell", value.asInstanceOf[js.Any])
+    inline def setBoundCell(value: CellAddress): Self = StObject.set(x, "BoundCell", value.asInstanceOf[js.Any])
   }
 }

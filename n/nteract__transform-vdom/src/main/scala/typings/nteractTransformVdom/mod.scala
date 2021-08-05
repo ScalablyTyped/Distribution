@@ -30,18 +30,15 @@ object mod {
     @JSImport("@nteract/transform-vdom", "default.MIMETYPE")
     @js.native
     def MIMETYPE: String = js.native
-    @scala.inline
-    def MIMETYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIMETYPE")(x.asInstanceOf[js.Any])
+    inline def MIMETYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIMETYPE")(x.asInstanceOf[js.Any])
     
     @JSImport("@nteract/transform-vdom", "default.defaultProps")
     @js.native
     def defaultProps: MediaType = js.native
-    @scala.inline
-    def defaultProps_=(x: MediaType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: MediaType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def objectToReactElement(
+  inline def objectToReactElement(
     obj: VDOMEl,
     onVDOMEvent: js.Function2[/* targetName */ String, /* event */ SerializedEvent[js.Any], Unit]
   ): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("objectToReactElement")(obj.asInstanceOf[js.Any], onVDOMEvent.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
@@ -56,23 +53,18 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(data: VDOMEl, onVDOMEvent: (String, SerializedEvent[js.Any]) => Unit): Props = {
+    inline def apply(data: VDOMEl, onVDOMEvent: (String, SerializedEvent[js.Any]) => Unit): Props = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mediaType = "application/vdom.v1+json", onVDOMEvent = js.Any.fromFunction2(onVDOMEvent))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setData(value: VDOMEl): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: VDOMEl): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaType(value: applicationSlashvdomDotv1Plussignjson): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: applicationSlashvdomDotv1Plussignjson): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnVDOMEvent(value: (String, SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
+      inline def setOnVDOMEvent(value: (String, SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
     }
   }
   

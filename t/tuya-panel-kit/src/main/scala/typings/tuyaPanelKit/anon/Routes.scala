@@ -24,8 +24,7 @@ trait Routes[State /* <: NavigationState[ParamListBase] */] extends StObject {
 }
 object Routes {
   
-  @scala.inline
-  def apply[State /* <: NavigationState[ParamListBase] */](
+  inline def apply[State /* <: NavigationState[ParamListBase] */](
     routes: js.Array[
       PartialRoute[
         typings.tuyaPanelKit.routersTypesMod.Route[
@@ -39,11 +38,9 @@ object Routes {
     __obj.asInstanceOf[Routes[State]]
   }
   
-  @scala.inline
-  implicit class RoutesMutableBuilder[Self <: Routes[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Routes[State]) extends AnyVal {
+  extension [Self <: Routes[?], State /* <: NavigationState[ParamListBase] */](x: Self & Routes[State]) {
     
-    @scala.inline
-    def setRoutes(
+    inline def setRoutes(
       value: js.Array[
           PartialRoute[
             typings.tuyaPanelKit.routersTypesMod.Route[
@@ -54,8 +51,7 @@ object Routes {
         ]
     ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(
+    inline def setRoutesVarargs(
       value: (PartialRoute[
           typings.tuyaPanelKit.routersTypesMod.Route[
             /* import warning: importer.ImportType#apply Failed type conversion: State['routeNames'][number] */ js.Any, 
@@ -64,10 +60,8 @@ object Routes {
         ])*
     ): Self = StObject.set(x, "routes", js.Array(value :_*))
     
-    @scala.inline
-    def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+    inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+    inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
   }
 }

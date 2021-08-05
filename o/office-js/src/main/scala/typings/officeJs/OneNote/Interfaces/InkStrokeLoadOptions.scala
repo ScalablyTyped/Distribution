@@ -33,31 +33,23 @@ trait InkStrokeLoadOptions extends StObject {
 }
 object InkStrokeLoadOptions {
   
-  @scala.inline
-  def apply(): InkStrokeLoadOptions = {
+  inline def apply(): InkStrokeLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkStrokeLoadOptions]
   }
   
-  @scala.inline
-  implicit class InkStrokeLoadOptionsMutableBuilder[Self <: InkStrokeLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InkStrokeLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFloatingInk(value: FloatingInkLoadOptions): Self = StObject.set(x, "floatingInk", value.asInstanceOf[js.Any])
+    inline def setFloatingInk(value: FloatingInkLoadOptions): Self = StObject.set(x, "floatingInk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingInkUndefined: Self = StObject.set(x, "floatingInk", js.undefined)
+    inline def setFloatingInkUndefined: Self = StObject.set(x, "floatingInk", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

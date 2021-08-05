@@ -30,31 +30,23 @@ trait SchemaImage extends StObject {
 }
 object SchemaImage {
   
-  @scala.inline
-  def apply(): SchemaImage = {
+  inline def apply(): SchemaImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImage]
   }
   
-  @scala.inline
-  implicit class SchemaImageMutableBuilder[Self <: SchemaImage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImage](x: Self) {
     
-    @scala.inline
-    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
-    @scala.inline
-    def setImageProperties(value: SchemaImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+    inline def setImageProperties(value: SchemaImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
+    inline def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
     
-    @scala.inline
-    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
   }
 }

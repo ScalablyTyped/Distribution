@@ -58,269 +58,225 @@ object global {
     /**
       * 批量添加卡券接口
       */
-    @scala.inline
-    def addCard(config: AddCardConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCard")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addCard(config: AddCardConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCard")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 判断当前客户端版本是否支持指定 JS 接口
       */
-    @scala.inline
-    def checkJsApi(setting: CheckApiConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkJsApi")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def checkJsApi(setting: CheckApiConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkJsApi")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 拉取适用卡券列表并获取用户选择信息
       */
-    @scala.inline
-    def chooseCard(config: ChooseCardConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseCard")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseCard(config: ChooseCardConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseCard")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 拍照或从手机相册中选图接口
       */
-    @scala.inline
-    def chooseImage(config: ChooseImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseImage(config: ChooseImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 发起一个微信支付请求
       */
-    @scala.inline
-    def chooseWXPay(config: ChooseWXPayConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseWXPay")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseWXPay(config: ChooseWXPayConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseWXPay")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 关闭当前网页窗口接口
       */
-    @scala.inline
-    def closeWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeWindow")().asInstanceOf[Unit]
+    inline def closeWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeWindow")().asInstanceOf[Unit]
     
     /**
       * 初始化，做任何操作前必须调用该方法
       * @param setting 配置对象
       */
-    @scala.inline
-    def config(setting: WxConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def config(setting: WxConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def downloadImage(config: DownLoadImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def downloadImage(config: DownLoadImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def downloadVoice(config: DownloadVoiceConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadVoice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def downloadVoice(config: DownloadVoiceConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadVoice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 配置微信初始化失败后的回调
       * @param err 失败回调
       */
-    @scala.inline
-    def error(err: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(err: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取本地图片接口,此接口仅在 iOS WKWebview 下提供，用于兼容 iOS WKWebview 不支持 localId 直接显示图片的问题
       */
-    @scala.inline
-    def getLocalImgData(config: GetLocalImgDataConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalImgData")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getLocalImgData(config: GetLocalImgDataConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalImgData")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取地理位置接口
       */
-    @scala.inline
-    def getLocation(config: GetLocationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getLocation(config: GetLocationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取网络状态, var networkType = res.networkType; 返回网络类型 2g，3g，4g，wifi
       */
-    @scala.inline
-    def getNetworkType(success: js.Function1[/* res */ NetworkType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkType")(success.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getNetworkType(success: js.Function1[/* res */ NetworkType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkType")(success.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 隐藏所有非基础按钮接口
       */
-    @scala.inline
-    def hideAllNonBaseMenuItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllNonBaseMenuItem")().asInstanceOf[Unit]
+    inline def hideAllNonBaseMenuItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAllNonBaseMenuItem")().asInstanceOf[Unit]
     
     /**
       * 批量隐藏功能按钮接口
       */
-    @scala.inline
-    def hideMenuItems(config: MenuItemsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenuItems")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def hideMenuItems(config: MenuItemsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenuItems")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取“分享给朋友”按钮点击状态及自定义分享内容接口
       * @deprecated
       */
-    @scala.inline
-    def onMenuShareAppMessage(setting: SharedAppMessage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareAppMessage")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onMenuShareAppMessage(setting: SharedAppMessage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareAppMessage")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * “分享到QQ”按钮点击状态及自定义分享内容接口
       * @deprecated
       */
-    @scala.inline
-    def onMenuShareQQ(config: MenuShareQQ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareQQ")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onMenuShareQQ(config: MenuShareQQ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareQQ")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取“分享到QQ空间”按钮点击状态及自定义分享内容接口
       * @deprecated
       */
-    @scala.inline
-    def onMenuShareQZone(config: MenuShareWeibo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareQZone")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onMenuShareQZone(config: MenuShareWeibo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareQZone")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
       * @deprecated
       */
-    @scala.inline
-    def onMenuShareTimeline(setting: ShareTimelineConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareTimeline")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onMenuShareTimeline(setting: ShareTimelineConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareTimeline")(setting.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取“分享到腾讯微博”按钮点击状态及自定义分享内容接口
       */
-    @scala.inline
-    def onMenuShareWeibo(config: MenuShareWeibo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareWeibo")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onMenuShareWeibo(config: MenuShareWeibo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onMenuShareWeibo")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听周边 ibeacon 设备接口,
       * 摇一摇周边接口使用注意事项及更多返回结果说明，请参考：摇一摇周边获取设备信息
       */
-    @scala.inline
-    def onSearchBeacons(config: OnSearchBeaconsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSearchBeacons")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSearchBeacons(config: OnSearchBeaconsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSearchBeacons")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止播放后的回调
       */
-    @scala.inline
-    def onVoicePlayEnd(success: js.Function1[/* res */ LocalId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVoicePlayEnd")(success.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onVoicePlayEnd(success: js.Function1[/* res */ LocalId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVoicePlayEnd")(success.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 录音时间超过一分钟没有停止的时候会执行回调
       */
-    @scala.inline
-    def onVoiceRecordEnd(complete: js.Function1[/* res */ LocalId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVoiceRecordEnd")(complete.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onVoiceRecordEnd(complete: js.Function1[/* res */ LocalId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onVoiceRecordEnd")(complete.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 快速输入共享收货地址接口
       */
-    @scala.inline
-    def openAddress(config: OpenAddressConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openAddress")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openAddress(config: OpenAddressConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openAddress")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查看微信卡包中的卡券接口
       */
-    @scala.inline
-    def openCard(config: OpenCardConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openCard")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openCard(config: OpenCardConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openCard")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 微信内置地图查看位置
       */
-    @scala.inline
-    def openLocation(config: OpenLocationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openLocation")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openLocation(config: OpenLocationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openLocation")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 跳转微信商品页接口
       */
-    @scala.inline
-    def openProductSpecificView(config: OpenProductSpecificViewConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openProductSpecificView")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openProductSpecificView(config: OpenProductSpecificViewConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openProductSpecificView")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 暂停音频
       */
-    @scala.inline
-    def pauseVoice(localId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseVoice")(localId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def pauseVoice(localId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseVoice")(localId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 播放音频
       */
-    @scala.inline
-    def playVoice(localId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playVoice")(localId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def playVoice(localId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playVoice")(localId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 预览图片接口
       */
-    @scala.inline
-    def previewImage(config: PreviewImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def previewImage(config: PreviewImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 配置微信初始化成功后的回调
       * @param x 回调
       */
-    @scala.inline
-    def ready(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ready(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 调起微信扫一扫接口
       */
-    @scala.inline
-    def scanQRCode(config: ScanQRCodeConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def scanQRCode(config: ScanQRCodeConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scanQRCode")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 显示所有功能按钮接口
       */
-    @scala.inline
-    def showAllNonBaseMenuItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAllNonBaseMenuItem")().asInstanceOf[Unit]
+    inline def showAllNonBaseMenuItem(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAllNonBaseMenuItem")().asInstanceOf[Unit]
     
     /**
       * 批量显示功能按钮接口
       */
-    @scala.inline
-    def showMenuItems(config: MenuItemsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showMenuItems")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showMenuItems(config: MenuItemsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showMenuItems")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始录音
       */
-    @scala.inline
-    def startRecord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startRecord")().asInstanceOf[Unit]
+    inline def startRecord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startRecord")().asInstanceOf[Unit]
     
     /**
       * 开启查找周边 ibeacon 设备接口
       */
-    @scala.inline
-    def startSearchBeacons(config: StartSearchBeaconsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startSearchBeacons")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startSearchBeacons(config: StartSearchBeaconsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startSearchBeacons")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止录音
       */
-    @scala.inline
-    def stopRecord(success: js.Function1[/* res */ LocalId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopRecord")(success.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopRecord(success: js.Function1[/* res */ LocalId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopRecord")(success.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 关闭查找完成后的回调函数
       */
-    @scala.inline
-    def stopSearchBeacons(config: StopSearchBeaconsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopSearchBeacons")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopSearchBeacons(config: StopSearchBeaconsConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopSearchBeacons")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止播放音频
       */
-    @scala.inline
-    def stopVoice(localId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopVoice")(localId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopVoice(localId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopVoice")(localId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 识别音频并返回识别结果接口
       */
-    @scala.inline
-    def translateVoice(config: UploadVoiceConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("translateVoice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def translateVoice(config: UploadVoiceConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("translateVoice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * “分享给朋友”及“分享到QQ”
       * @param config
       */
-    @scala.inline
-    def updateAppMessageShareData(config: ShareToUserConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAppMessageShareData")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def updateAppMessageShareData(config: ShareToUserConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateAppMessageShareData")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * “分享到朋友圈”及“分享到QQ空间”
       * @param config
       */
-    @scala.inline
-    def updateTimelineShareData(config: ShareToTimelineConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTimelineShareData")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def updateTimelineShareData(config: ShareToTimelineConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTimelineShareData")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 上传图片
       */
-    @scala.inline
-    def uploadImage(config: UploadImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def uploadImage(config: UploadImageConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadImage")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 上传语音接口, 上传语音有效期3天，可用微信多媒体接口下载语音到自己的服务器，
       */
-    @scala.inline
-    def uploadVoice(config: UploadVoiceConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadVoice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def uploadVoice(config: UploadVoiceConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadVoice")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -11,6 +11,5 @@ object wordpressBlockEditorBooleans {
   sealed trait `false`
     extends StObject
        with EditorTemplateLock
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

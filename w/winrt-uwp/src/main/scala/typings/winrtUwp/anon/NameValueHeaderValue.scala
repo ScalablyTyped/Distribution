@@ -13,19 +13,15 @@ trait NameValueHeaderValue extends StObject {
 }
 object NameValueHeaderValue {
   
-  @scala.inline
-  def apply(nameValueHeaderValue: HttpNameValueHeaderValue, returnValue: Boolean): NameValueHeaderValue = {
+  inline def apply(nameValueHeaderValue: HttpNameValueHeaderValue, returnValue: Boolean): NameValueHeaderValue = {
     val __obj = js.Dynamic.literal(nameValueHeaderValue = nameValueHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameValueHeaderValue]
   }
   
-  @scala.inline
-  implicit class NameValueHeaderValueMutableBuilder[Self <: NameValueHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: NameValueHeaderValue](x: Self) {
     
-    @scala.inline
-    def setNameValueHeaderValue(value: HttpNameValueHeaderValue): Self = StObject.set(x, "nameValueHeaderValue", value.asInstanceOf[js.Any])
+    inline def setNameValueHeaderValue(value: HttpNameValueHeaderValue): Self = StObject.set(x, "nameValueHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

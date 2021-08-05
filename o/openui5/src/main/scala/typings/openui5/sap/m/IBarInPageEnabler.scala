@@ -23,19 +23,15 @@ trait IBarInPageEnabler extends StObject {
 }
 object IBarInPageEnabler {
   
-  @scala.inline
-  def apply(addChildClassTo: Control => Unit, renderTooltip: (RenderManager, Control) => Unit): IBarInPageEnabler = {
+  inline def apply(addChildClassTo: Control => Unit, renderTooltip: (RenderManager, Control) => Unit): IBarInPageEnabler = {
     val __obj = js.Dynamic.literal(addChildClassTo = js.Any.fromFunction1(addChildClassTo), renderTooltip = js.Any.fromFunction2(renderTooltip))
     __obj.asInstanceOf[IBarInPageEnabler]
   }
   
-  @scala.inline
-  implicit class IBarInPageEnablerMutableBuilder[Self <: IBarInPageEnabler] (val x: Self) extends AnyVal {
+  extension [Self <: IBarInPageEnabler](x: Self) {
     
-    @scala.inline
-    def setAddChildClassTo(value: Control => Unit): Self = StObject.set(x, "addChildClassTo", js.Any.fromFunction1(value))
+    inline def setAddChildClassTo(value: Control => Unit): Self = StObject.set(x, "addChildClassTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderTooltip(value: (RenderManager, Control) => Unit): Self = StObject.set(x, "renderTooltip", js.Any.fromFunction2(value))
+    inline def setRenderTooltip(value: (RenderManager, Control) => Unit): Self = StObject.set(x, "renderTooltip", js.Any.fromFunction2(value))
   }
 }

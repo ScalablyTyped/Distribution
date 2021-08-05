@@ -35,31 +35,23 @@ trait CommitmentInterval extends StObject {
 }
 object CommitmentInterval {
   
-  @scala.inline
-  def apply(): CommitmentInterval = {
+  inline def apply(): CommitmentInterval = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitmentInterval]
   }
   
-  @scala.inline
-  implicit class CommitmentIntervalMutableBuilder[Self <: CommitmentInterval] (val x: Self) extends AnyVal {
+  extension [Self <: CommitmentInterval](x: Self) {
     
-    @scala.inline
-    def setCommitmentInterval(value: EndTime): Self = StObject.set(x, "commitmentInterval", value.asInstanceOf[js.Any])
+    inline def setCommitmentInterval(value: EndTime): Self = StObject.set(x, "commitmentInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitmentIntervalUndefined: Self = StObject.set(x, "commitmentInterval", js.undefined)
+    inline def setCommitmentIntervalUndefined: Self = StObject.set(x, "commitmentInterval", js.undefined)
     
-    @scala.inline
-    def setIsCommitmentPlan(value: Boolean): Self = StObject.set(x, "isCommitmentPlan", value.asInstanceOf[js.Any])
+    inline def setIsCommitmentPlan(value: Boolean): Self = StObject.set(x, "isCommitmentPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCommitmentPlanUndefined: Self = StObject.set(x, "isCommitmentPlan", js.undefined)
+    inline def setIsCommitmentPlanUndefined: Self = StObject.set(x, "isCommitmentPlan", js.undefined)
     
-    @scala.inline
-    def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
+    inline def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
+    inline def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
   }
 }

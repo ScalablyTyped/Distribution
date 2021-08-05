@@ -16,16 +16,13 @@ trait CommonSubMethods extends StObject {
 }
 object CommonSubMethods {
   
-  @scala.inline
-  def apply(cache: String => Api): CommonSubMethods = {
+  inline def apply(cache: String => Api): CommonSubMethods = {
     val __obj = js.Dynamic.literal(cache = js.Any.fromFunction1(cache))
     __obj.asInstanceOf[CommonSubMethods]
   }
   
-  @scala.inline
-  implicit class CommonSubMethodsMutableBuilder[Self <: CommonSubMethods] (val x: Self) extends AnyVal {
+  extension [Self <: CommonSubMethods](x: Self) {
     
-    @scala.inline
-    def setCache(value: String => Api): Self = StObject.set(x, "cache", js.Any.fromFunction1(value))
+    inline def setCache(value: String => Api): Self = StObject.set(x, "cache", js.Any.fromFunction1(value))
   }
 }

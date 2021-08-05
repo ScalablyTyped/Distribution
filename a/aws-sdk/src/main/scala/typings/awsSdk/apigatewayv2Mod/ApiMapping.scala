@@ -28,31 +28,23 @@ trait ApiMapping extends StObject {
 }
 object ApiMapping {
   
-  @scala.inline
-  def apply(ApiId: Id, Stage: StringWithLengthBetween1And128): ApiMapping = {
+  inline def apply(ApiId: Id, Stage: StringWithLengthBetween1And128): ApiMapping = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], Stage = Stage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiMapping]
   }
   
-  @scala.inline
-  implicit class ApiMappingMutableBuilder[Self <: ApiMapping] (val x: Self) extends AnyVal {
+  extension [Self <: ApiMapping](x: Self) {
     
-    @scala.inline
-    def setApiId(value: Id): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: Id): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiMappingId(value: Id): Self = StObject.set(x, "ApiMappingId", value.asInstanceOf[js.Any])
+    inline def setApiMappingId(value: Id): Self = StObject.set(x, "ApiMappingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiMappingIdUndefined: Self = StObject.set(x, "ApiMappingId", js.undefined)
+    inline def setApiMappingIdUndefined: Self = StObject.set(x, "ApiMappingId", js.undefined)
     
-    @scala.inline
-    def setApiMappingKey(value: SelectionKey): Self = StObject.set(x, "ApiMappingKey", value.asInstanceOf[js.Any])
+    inline def setApiMappingKey(value: SelectionKey): Self = StObject.set(x, "ApiMappingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiMappingKeyUndefined: Self = StObject.set(x, "ApiMappingKey", js.undefined)
+    inline def setApiMappingKeyUndefined: Self = StObject.set(x, "ApiMappingKey", js.undefined)
     
-    @scala.inline
-    def setStage(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
   }
 }

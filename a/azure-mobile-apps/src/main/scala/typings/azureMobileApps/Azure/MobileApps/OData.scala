@@ -24,58 +24,41 @@ trait OData extends StObject {
 }
 object OData {
   
-  @scala.inline
-  def apply(table: String): OData = {
+  inline def apply(table: String): OData = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[OData]
   }
   
-  @scala.inline
-  implicit class ODataMutableBuilder[Self <: OData] (val x: Self) extends AnyVal {
+  extension [Self <: OData](x: Self) {
     
-    @scala.inline
-    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setIncludeTotalCount(value: Boolean): Self = StObject.set(x, "includeTotalCount", value.asInstanceOf[js.Any])
+    inline def setIncludeTotalCount(value: Boolean): Self = StObject.set(x, "includeTotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTotalCountUndefined: Self = StObject.set(x, "includeTotalCount", js.undefined)
+    inline def setIncludeTotalCountUndefined: Self = StObject.set(x, "includeTotalCount", js.undefined)
     
-    @scala.inline
-    def setOrderClauses(value: String): Self = StObject.set(x, "orderClauses", value.asInstanceOf[js.Any])
+    inline def setOrderClauses(value: String): Self = StObject.set(x, "orderClauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderClausesUndefined: Self = StObject.set(x, "orderClauses", js.undefined)
+    inline def setOrderClausesUndefined: Self = StObject.set(x, "orderClauses", js.undefined)
     
-    @scala.inline
-    def setOrdering(value: String): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
+    inline def setOrdering(value: String): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
+    inline def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
     
-    @scala.inline
-    def setSelections(value: String): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+    inline def setSelections(value: String): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionsUndefined: Self = StObject.set(x, "selections", js.undefined)
+    inline def setSelectionsUndefined: Self = StObject.set(x, "selections", js.undefined)
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
+    inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
+    inline def setTakeUndefined: Self = StObject.set(x, "take", js.undefined)
   }
 }

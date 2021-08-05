@@ -18,25 +18,19 @@ trait ArtifactDetail extends StObject {
 }
 object ArtifactDetail {
   
-  @scala.inline
-  def apply(): ArtifactDetail = {
+  inline def apply(): ArtifactDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtifactDetail]
   }
   
-  @scala.inline
-  implicit class ArtifactDetailMutableBuilder[Self <: ArtifactDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactDetail](x: Self) {
     
-    @scala.inline
-    def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setS3location(value: S3Location): Self = StObject.set(x, "s3location", value.asInstanceOf[js.Any])
+    inline def setS3location(value: S3Location): Self = StObject.set(x, "s3location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3locationUndefined: Self = StObject.set(x, "s3location", js.undefined)
+    inline def setS3locationUndefined: Self = StObject.set(x, "s3location", js.undefined)
   }
 }

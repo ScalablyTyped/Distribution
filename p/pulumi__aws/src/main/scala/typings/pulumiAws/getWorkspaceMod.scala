@@ -13,14 +13,10 @@ object getWorkspaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getWorkspace(): js.Promise[GetWorkspaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")().asInstanceOf[js.Promise[GetWorkspaceResult]]
-  @scala.inline
-  def getWorkspace(args: Unit, opts: InvokeOptions): js.Promise[GetWorkspaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWorkspaceResult]]
-  @scala.inline
-  def getWorkspace(args: GetWorkspaceArgs): js.Promise[GetWorkspaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetWorkspaceResult]]
-  @scala.inline
-  def getWorkspace(args: GetWorkspaceArgs, opts: InvokeOptions): js.Promise[GetWorkspaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWorkspaceResult]]
+  inline def getWorkspace(): js.Promise[GetWorkspaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")().asInstanceOf[js.Promise[GetWorkspaceResult]]
+  inline def getWorkspace(args: Unit, opts: InvokeOptions): js.Promise[GetWorkspaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWorkspaceResult]]
+  inline def getWorkspace(args: GetWorkspaceArgs): js.Promise[GetWorkspaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetWorkspaceResult]]
+  inline def getWorkspace(args: GetWorkspaceArgs, opts: InvokeOptions): js.Promise[GetWorkspaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWorkspaceResult]]
   
   trait GetWorkspaceArgs extends StObject {
     
@@ -46,38 +42,28 @@ object getWorkspaceMod {
   }
   object GetWorkspaceArgs {
     
-    @scala.inline
-    def apply(): GetWorkspaceArgs = {
+    inline def apply(): GetWorkspaceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetWorkspaceArgs]
     }
     
-    @scala.inline
-    implicit class GetWorkspaceArgsMutableBuilder[Self <: GetWorkspaceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetWorkspaceArgs](x: Self) {
       
-      @scala.inline
-      def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
+      inline def setDirectoryIdUndefined: Self = StObject.set(x, "directoryId", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
       
-      @scala.inline
-      def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+      inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+      inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
     }
   }
   
@@ -123,8 +109,7 @@ object getWorkspaceMod {
   }
   object GetWorkspaceResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bundleId: String,
       computerName: String,
       directoryId: String,
@@ -143,50 +128,35 @@ object getWorkspaceMod {
       __obj.asInstanceOf[GetWorkspaceResult]
     }
     
-    @scala.inline
-    implicit class GetWorkspaceResultMutableBuilder[Self <: GetWorkspaceResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetWorkspaceResult](x: Self) {
       
-      @scala.inline
-      def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputerName(value: String): Self = StObject.set(x, "computerName", value.asInstanceOf[js.Any])
+      inline def setComputerName(value: String): Self = StObject.set(x, "computerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
+      inline def setDirectoryId(value: String): Self = StObject.set(x, "directoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootVolumeEncryptionEnabled(value: Boolean): Self = StObject.set(x, "rootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setRootVolumeEncryptionEnabled(value: Boolean): Self = StObject.set(x, "rootVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserVolumeEncryptionEnabled(value: Boolean): Self = StObject.set(x, "userVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setUserVolumeEncryptionEnabled(value: Boolean): Self = StObject.set(x, "userVolumeEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeEncryptionKey(value: String): Self = StObject.set(x, "volumeEncryptionKey", value.asInstanceOf[js.Any])
+      inline def setVolumeEncryptionKey(value: String): Self = StObject.set(x, "volumeEncryptionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+      inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaceProperties(value: js.Array[GetWorkspaceWorkspaceProperty]): Self = StObject.set(x, "workspaceProperties", value.asInstanceOf[js.Any])
+      inline def setWorkspaceProperties(value: js.Array[GetWorkspaceWorkspaceProperty]): Self = StObject.set(x, "workspaceProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspacePropertiesVarargs(value: GetWorkspaceWorkspaceProperty*): Self = StObject.set(x, "workspaceProperties", js.Array(value :_*))
+      inline def setWorkspacePropertiesVarargs(value: GetWorkspaceWorkspaceProperty*): Self = StObject.set(x, "workspaceProperties", js.Array(value :_*))
     }
   }
 }

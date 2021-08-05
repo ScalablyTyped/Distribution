@@ -18,28 +18,21 @@ trait ListRegistriesResponse extends StObject {
 }
 object ListRegistriesResponse {
   
-  @scala.inline
-  def apply(): ListRegistriesResponse = {
+  inline def apply(): ListRegistriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRegistriesResponse]
   }
   
-  @scala.inline
-  implicit class ListRegistriesResponseMutableBuilder[Self <: ListRegistriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRegistriesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegistries(value: listOfRegistrySummary): Self = StObject.set(x, "Registries", value.asInstanceOf[js.Any])
+    inline def setRegistries(value: listOfRegistrySummary): Self = StObject.set(x, "Registries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistriesUndefined: Self = StObject.set(x, "Registries", js.undefined)
+    inline def setRegistriesUndefined: Self = StObject.set(x, "Registries", js.undefined)
     
-    @scala.inline
-    def setRegistriesVarargs(value: RegistrySummary*): Self = StObject.set(x, "Registries", js.Array(value :_*))
+    inline def setRegistriesVarargs(value: RegistrySummary*): Self = StObject.set(x, "Registries", js.Array(value :_*))
   }
 }

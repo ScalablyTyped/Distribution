@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdIndexFormat extends StObject
 object WdIndexFormat {
   
-  @scala.inline
-  def wdIndexBulleted: `4` = 4.asInstanceOf[`4`]
+  inline def wdIndexBulleted: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdIndexClassic: `1` = 1.asInstanceOf[`1`]
+  inline def wdIndexClassic: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdIndexFancy: `2` = 2.asInstanceOf[`2`]
+  inline def wdIndexFancy: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdIndexFormal: `5` = 5.asInstanceOf[`5`]
+  inline def wdIndexFormal: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdIndexModern: `3` = 3.asInstanceOf[`3`]
+  inline def wdIndexModern: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdIndexSimple: `6` = 6.asInstanceOf[`6`]
+  inline def wdIndexSimple: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdIndexTemplate: `0` = 0.asInstanceOf[`0`]
+  inline def wdIndexTemplate: `0` = 0.asInstanceOf[`0`]
 }

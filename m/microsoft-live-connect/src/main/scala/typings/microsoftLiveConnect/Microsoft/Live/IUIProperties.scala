@@ -37,25 +37,19 @@ trait IUIProperties extends StObject {
 }
 object IUIProperties {
   
-  @scala.inline
-  def apply(element: String, name: String): IUIProperties = {
+  inline def apply(element: String, name: String): IUIProperties = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUIProperties]
   }
   
-  @scala.inline
-  implicit class IUIPropertiesMutableBuilder[Self <: IUIProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IUIProperties](x: Self) {
     
-    @scala.inline
-    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

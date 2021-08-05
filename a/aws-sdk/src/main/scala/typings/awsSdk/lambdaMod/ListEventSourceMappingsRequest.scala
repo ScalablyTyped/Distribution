@@ -28,37 +28,27 @@ trait ListEventSourceMappingsRequest extends StObject {
 }
 object ListEventSourceMappingsRequest {
   
-  @scala.inline
-  def apply(): ListEventSourceMappingsRequest = {
+  inline def apply(): ListEventSourceMappingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEventSourceMappingsRequest]
   }
   
-  @scala.inline
-  implicit class ListEventSourceMappingsRequestMutableBuilder[Self <: ListEventSourceMappingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListEventSourceMappingsRequest](x: Self) {
     
-    @scala.inline
-    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+    inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
+    inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

@@ -11,10 +11,8 @@ object tokeniserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(str: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-  @scala.inline
-  def default(str: String, tokens: js.Array[Token]): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+  inline def default(str: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def default(str: String, tokens: js.Array[Token]): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
   trait Token extends StObject {
     
@@ -30,8 +28,7 @@ object tokeniserMod {
   }
   object Token {
     
-    @scala.inline
-    def apply(`match`: String, otherVal: js.Any, `type`: String, `val`: js.Any): Token = {
+    inline def apply(`match`: String, otherVal: js.Any, `type`: String, `val`: js.Any): Token = {
       val __obj = js.Dynamic.literal(otherVal = otherVal.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -39,26 +36,19 @@ object tokeniserMod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherVal(value: js.Any): Self = StObject.set(x, "otherVal", value.asInstanceOf[js.Any])
+      inline def setOtherVal(value: js.Any): Self = StObject.set(x, "otherVal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
 }

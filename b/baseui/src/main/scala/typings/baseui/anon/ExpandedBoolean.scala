@@ -10,16 +10,13 @@ trait ExpandedBoolean extends StObject {
 }
 object ExpandedBoolean {
   
-  @scala.inline
-  def apply(expanded: Boolean): ExpandedBoolean = {
+  inline def apply(expanded: Boolean): ExpandedBoolean = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandedBoolean]
   }
   
-  @scala.inline
-  implicit class ExpandedBooleanMutableBuilder[Self <: ExpandedBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandedBoolean](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }
 }

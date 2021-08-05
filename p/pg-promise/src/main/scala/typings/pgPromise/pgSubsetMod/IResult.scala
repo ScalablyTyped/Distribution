@@ -24,8 +24,7 @@ trait IResult extends StObject {
 }
 object IResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _parsers: js.Array[js.Function],
     _types: Binary,
     command: String,
@@ -38,37 +37,26 @@ object IResult {
     __obj.asInstanceOf[IResult]
   }
   
-  @scala.inline
-  implicit class IResultMutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
+  extension [Self <: IResult](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[IColumn]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[IColumn]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: IColumn*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: IColumn*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setRowAsArray(value: Boolean): Self = StObject.set(x, "rowAsArray", value.asInstanceOf[js.Any])
+    inline def setRowAsArray(value: Boolean): Self = StObject.set(x, "rowAsArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def set_parsers(value: js.Array[js.Function]): Self = StObject.set(x, "_parsers", value.asInstanceOf[js.Any])
+    inline def set_parsers(value: js.Array[js.Function]): Self = StObject.set(x, "_parsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_parsersVarargs(value: js.Function*): Self = StObject.set(x, "_parsers", js.Array(value :_*))
+    inline def set_parsersVarargs(value: js.Function*): Self = StObject.set(x, "_parsers", js.Array(value :_*))
     
-    @scala.inline
-    def set_types(value: Binary): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
+    inline def set_types(value: Binary): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
   }
 }

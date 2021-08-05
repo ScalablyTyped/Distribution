@@ -43,55 +43,39 @@ trait JobBookmarkEntry extends StObject {
 }
 object JobBookmarkEntry {
   
-  @scala.inline
-  def apply(): JobBookmarkEntry = {
+  inline def apply(): JobBookmarkEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobBookmarkEntry]
   }
   
-  @scala.inline
-  implicit class JobBookmarkEntryMutableBuilder[Self <: JobBookmarkEntry] (val x: Self) extends AnyVal {
+  extension [Self <: JobBookmarkEntry](x: Self) {
     
-    @scala.inline
-    def setAttempt(value: IntegerValue): Self = StObject.set(x, "Attempt", value.asInstanceOf[js.Any])
+    inline def setAttempt(value: IntegerValue): Self = StObject.set(x, "Attempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptUndefined: Self = StObject.set(x, "Attempt", js.undefined)
+    inline def setAttemptUndefined: Self = StObject.set(x, "Attempt", js.undefined)
     
-    @scala.inline
-    def setJobBookmark(value: JsonValue): Self = StObject.set(x, "JobBookmark", value.asInstanceOf[js.Any])
+    inline def setJobBookmark(value: JsonValue): Self = StObject.set(x, "JobBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobBookmarkUndefined: Self = StObject.set(x, "JobBookmark", js.undefined)
+    inline def setJobBookmarkUndefined: Self = StObject.set(x, "JobBookmark", js.undefined)
     
-    @scala.inline
-    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setPreviousRunId(value: RunId): Self = StObject.set(x, "PreviousRunId", value.asInstanceOf[js.Any])
+    inline def setPreviousRunId(value: RunId): Self = StObject.set(x, "PreviousRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousRunIdUndefined: Self = StObject.set(x, "PreviousRunId", js.undefined)
+    inline def setPreviousRunIdUndefined: Self = StObject.set(x, "PreviousRunId", js.undefined)
     
-    @scala.inline
-    def setRun(value: IntegerValue): Self = StObject.set(x, "Run", value.asInstanceOf[js.Any])
+    inline def setRun(value: IntegerValue): Self = StObject.set(x, "Run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunId(value: RunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: RunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
     
-    @scala.inline
-    def setRunUndefined: Self = StObject.set(x, "Run", js.undefined)
+    inline def setRunUndefined: Self = StObject.set(x, "Run", js.undefined)
     
-    @scala.inline
-    def setVersion(value: IntegerValue): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: IntegerValue): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

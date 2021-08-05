@@ -14,16 +14,13 @@ trait ErrorResponse
 }
 object ErrorResponse {
   
-  @scala.inline
-  def apply(body: Error, headers: Dictionary[String], isSuccessful: Boolean, statusCode: Double): ErrorResponse = {
+  inline def apply(body: Error, headers: Dictionary[String], isSuccessful: Boolean, statusCode: Double): ErrorResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], isSuccessful = isSuccessful.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorResponse]
   }
   
-  @scala.inline
-  implicit class ErrorResponseMutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: Error): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Error): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

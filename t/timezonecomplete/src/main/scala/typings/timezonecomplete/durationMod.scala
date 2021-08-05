@@ -38,18 +38,18 @@ object durationMod {
     /**
       * Given amount in constructor
       */
-    var _amount: js.Any = js.native
+    /* private */ var _amount: js.Any = js.native
     
     /**
       * Return this % unit, always positive
       * @throws nothing
       */
-    var _part: js.Any = js.native
+    /* private */ var _part: js.Any = js.native
     
     /**
       * Unit
       */
-    var _unit: js.Any = js.native
+    /* private */ var _unit: js.Any = js.native
     
     /**
       * Return the absolute value of the duration i.e. remove the sign.
@@ -346,8 +346,7 @@ object durationMod {
       * @return A duration of n days
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @scala.inline
-    def days(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def days(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -355,8 +354,7 @@ object durationMod {
       * @return A duration of n hours
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @scala.inline
-    def hours(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def hours(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -364,8 +362,7 @@ object durationMod {
       * @return A duration of n milliseconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @scala.inline
-    def milliseconds(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def milliseconds(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -373,8 +370,7 @@ object durationMod {
       * @return A duration of n minutes
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @scala.inline
-    def minutes(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def minutes(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -382,8 +378,7 @@ object durationMod {
       * @return A duration of n months
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @scala.inline
-    def months(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def months(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -391,8 +386,7 @@ object durationMod {
       * @return A duration of n seconds
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @scala.inline
-    def seconds(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def seconds(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
     
     /**
       * Construct a time duration
@@ -400,31 +394,22 @@ object durationMod {
       * @return A duration of n years
       * @throws timezonecomplete.Argument.Amount if n is not a finite number
       */
-    @scala.inline
-    def years(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
+    inline def years(amount: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(amount.asInstanceOf[js.Any]).asInstanceOf[Duration]
   }
   
-  @scala.inline
-  def days(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def days(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("days")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def hours(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def hours(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
+  inline def isDuration(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/duration.Duration */ Boolean]
   
-  @scala.inline
-  def milliseconds(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def milliseconds(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def minutes(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def minutes(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def months(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def months(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def seconds(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def seconds(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def years(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def years(n: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("years")(n.asInstanceOf[js.Any]).asInstanceOf[Duration]
 }

@@ -18,28 +18,21 @@ trait DescribeRetentionConfigurationsRequest extends StObject {
 }
 object DescribeRetentionConfigurationsRequest {
   
-  @scala.inline
-  def apply(): DescribeRetentionConfigurationsRequest = {
+  inline def apply(): DescribeRetentionConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRetentionConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRetentionConfigurationsRequestMutableBuilder[Self <: DescribeRetentionConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRetentionConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRetentionConfigurationNames(value: RetentionConfigurationNameList): Self = StObject.set(x, "RetentionConfigurationNames", value.asInstanceOf[js.Any])
+    inline def setRetentionConfigurationNames(value: RetentionConfigurationNameList): Self = StObject.set(x, "RetentionConfigurationNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionConfigurationNamesUndefined: Self = StObject.set(x, "RetentionConfigurationNames", js.undefined)
+    inline def setRetentionConfigurationNamesUndefined: Self = StObject.set(x, "RetentionConfigurationNames", js.undefined)
     
-    @scala.inline
-    def setRetentionConfigurationNamesVarargs(value: RetentionConfigurationName*): Self = StObject.set(x, "RetentionConfigurationNames", js.Array(value :_*))
+    inline def setRetentionConfigurationNamesVarargs(value: RetentionConfigurationName*): Self = StObject.set(x, "RetentionConfigurationNames", js.Array(value :_*))
   }
 }

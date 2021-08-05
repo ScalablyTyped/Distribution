@@ -22,55 +22,39 @@ trait Translation extends StObject {
 }
 object Translation {
   
-  @scala.inline
-  def apply(): Translation = {
+  inline def apply(): Translation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Translation]
   }
   
-  @scala.inline
-  implicit class TranslationMutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
+  extension [Self <: Translation](x: Self) {
     
-    @scala.inline
-    def setErrorLoading(value: () => String): Self = StObject.set(x, "errorLoading", js.Any.fromFunction0(value))
+    inline def setErrorLoading(value: () => String): Self = StObject.set(x, "errorLoading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setErrorLoadingUndefined: Self = StObject.set(x, "errorLoading", js.undefined)
+    inline def setErrorLoadingUndefined: Self = StObject.set(x, "errorLoading", js.undefined)
     
-    @scala.inline
-    def setInputTooLong(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "inputTooLong", js.Any.fromFunction1(value))
+    inline def setInputTooLong(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "inputTooLong", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInputTooLongUndefined: Self = StObject.set(x, "inputTooLong", js.undefined)
+    inline def setInputTooLongUndefined: Self = StObject.set(x, "inputTooLong", js.undefined)
     
-    @scala.inline
-    def setInputTooShort(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "inputTooShort", js.Any.fromFunction1(value))
+    inline def setInputTooShort(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "inputTooShort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInputTooShortUndefined: Self = StObject.set(x, "inputTooShort", js.undefined)
+    inline def setInputTooShortUndefined: Self = StObject.set(x, "inputTooShort", js.undefined)
     
-    @scala.inline
-    def setLoadingMore(value: () => String): Self = StObject.set(x, "loadingMore", js.Any.fromFunction0(value))
+    inline def setLoadingMore(value: () => String): Self = StObject.set(x, "loadingMore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadingMoreUndefined: Self = StObject.set(x, "loadingMore", js.undefined)
+    inline def setLoadingMoreUndefined: Self = StObject.set(x, "loadingMore", js.undefined)
     
-    @scala.inline
-    def setMaximumSelected(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "maximumSelected", js.Any.fromFunction1(value))
+    inline def setMaximumSelected(value: /* arg */ TranslationArg => String): Self = StObject.set(x, "maximumSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaximumSelectedUndefined: Self = StObject.set(x, "maximumSelected", js.undefined)
+    inline def setMaximumSelectedUndefined: Self = StObject.set(x, "maximumSelected", js.undefined)
     
-    @scala.inline
-    def setNoResults(value: () => String): Self = StObject.set(x, "noResults", js.Any.fromFunction0(value))
+    inline def setNoResults(value: () => String): Self = StObject.set(x, "noResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
+    inline def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
     
-    @scala.inline
-    def setSearching(value: () => String): Self = StObject.set(x, "searching", js.Any.fromFunction0(value))
+    inline def setSearching(value: () => String): Self = StObject.set(x, "searching", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSearchingUndefined: Self = StObject.set(x, "searching", js.undefined)
+    inline def setSearchingUndefined: Self = StObject.set(x, "searching", js.undefined)
   }
 }

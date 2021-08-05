@@ -15,25 +15,19 @@ trait PartialSelectTypePropsSel extends StObject {
 }
 object PartialSelectTypePropsSel {
   
-  @scala.inline
-  def apply(): PartialSelectTypePropsSel = {
+  inline def apply(): PartialSelectTypePropsSel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSelectTypePropsSel]
   }
   
-  @scala.inline
-  implicit class PartialSelectTypePropsSelMutableBuilder[Self <: PartialSelectTypePropsSel] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSelectTypePropsSel](x: Self) {
     
-    @scala.inline
-    def setKnob(value: SelectTypeKnob[SelectTypeKnobValue]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: SelectTypeKnob[SelectTypeKnobValue]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* value */ SelectTypeKnobValue => SelectTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ SelectTypeKnobValue => SelectTypeKnobValue): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

@@ -40,43 +40,31 @@ trait BaseTestOptions[P /* <: Record[String, js.Any] */, C] extends StObject {
 }
 object BaseTestOptions {
   
-  @scala.inline
-  def apply[P /* <: Record[String, js.Any] */, C](test: TestFunction[js.Any, C]): BaseTestOptions[P, C] = {
+  inline def apply[P /* <: Record[String, js.Any] */, C](test: TestFunction[js.Any, C]): BaseTestOptions[P, C] = {
     val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTestOptions[P, C]]
   }
   
-  @scala.inline
-  implicit class BaseTestOptionsMutableBuilder[Self <: BaseTestOptions[?, ?], P /* <: Record[String, js.Any] */, C] (val x: Self & (BaseTestOptions[P, C])) extends AnyVal {
+  extension [Self <: BaseTestOptions[?, ?], P /* <: Record[String, js.Any] */, C](x: Self & (BaseTestOptions[P, C])) {
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
-    @scala.inline
-    def setMessage(value: TestOptionsMessage[P, js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: TestOptionsMessage[P, js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFunction1(value: /* params */ P & PartialTestMessageParams => js.Any): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+    inline def setMessageFunction1(value: /* params */ P & PartialTestMessageParams => js.Any): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setTest(value: TestFunction[js.Any, C]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: TestFunction[js.Any, C]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
   }
 }

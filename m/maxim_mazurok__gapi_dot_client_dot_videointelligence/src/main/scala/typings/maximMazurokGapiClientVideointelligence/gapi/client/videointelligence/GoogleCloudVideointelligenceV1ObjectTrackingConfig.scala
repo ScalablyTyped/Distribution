@@ -11,19 +11,15 @@ trait GoogleCloudVideointelligenceV1ObjectTrackingConfig extends StObject {
 }
 object GoogleCloudVideointelligenceV1ObjectTrackingConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1ObjectTrackingConfig = {
+  inline def apply(): GoogleCloudVideointelligenceV1ObjectTrackingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1ObjectTrackingConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1ObjectTrackingConfigMutableBuilder[Self <: GoogleCloudVideointelligenceV1ObjectTrackingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1ObjectTrackingConfig](x: Self) {
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

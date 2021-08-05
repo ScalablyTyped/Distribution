@@ -21,31 +21,23 @@ trait OlHTMLAttributes[T]
 }
 object OlHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): OlHTMLAttributes[T] = {
+  inline def apply[T](): OlHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OlHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class OlHTMLAttributesMutableBuilder[Self <: OlHTMLAttributes[?], T] (val x: Self & OlHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: OlHTMLAttributes[?], T](x: Self & OlHTMLAttributes[T]) {
     
-    @scala.inline
-    def setReversed(value: Boolean | String): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean | String): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double | String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double | String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setType(value: `1` | a_ | A | i_ | I): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `1` | a_ | A | i_ | I): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

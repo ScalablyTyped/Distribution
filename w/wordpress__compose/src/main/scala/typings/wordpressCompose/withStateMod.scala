@@ -16,8 +16,7 @@ object withStateMod {
   val ^ : js.Any = js.native
   
   // prettier-ignore
-  @scala.inline
-  def default[SP /* <: js.Object */](
+  inline def default[SP /* <: js.Object */](
     initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof SP ]: SP[k]}
     */ typings.wordpressCompose.wordpressComposeStrings.default & TopLevel[SP]

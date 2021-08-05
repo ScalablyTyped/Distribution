@@ -25,20 +25,16 @@ object paginationItemMod {
   }
   object PaginationItemProps {
     
-    @scala.inline
-    def apply(): PaginationItemProps = {
+    inline def apply(): PaginationItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaginationItemProps]
     }
     
-    @scala.inline
-    implicit class PaginationItemPropsMutableBuilder[Self <: PaginationItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationItemProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     }
   }
 }

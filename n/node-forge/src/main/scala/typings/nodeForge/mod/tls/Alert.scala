@@ -14,8 +14,7 @@ trait Alert extends StObject {
 }
 object Alert {
   
-  @scala.inline
-  def apply(description: Description, level: Level): Alert = {
+  inline def apply(description: Description, level: Level): Alert = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alert]
   }
@@ -190,13 +189,10 @@ object Alert {
     /* 1 */ val warning: typings.nodeForge.mod.tls.Alert.Level.warning & Double = js.native
   }
   
-  @scala.inline
-  implicit class AlertMutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
+  extension [Self <: Alert](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

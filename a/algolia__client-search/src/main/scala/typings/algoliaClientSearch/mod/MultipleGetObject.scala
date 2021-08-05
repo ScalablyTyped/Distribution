@@ -23,28 +23,21 @@ trait MultipleGetObject extends StObject {
 }
 object MultipleGetObject {
   
-  @scala.inline
-  def apply(indexName: String, objectID: String): MultipleGetObject = {
+  inline def apply(indexName: String, objectID: String): MultipleGetObject = {
     val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any], objectID = objectID.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleGetObject]
   }
   
-  @scala.inline
-  implicit class MultipleGetObjectMutableBuilder[Self <: MultipleGetObject] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleGetObject](x: Self) {
     
-    @scala.inline
-    def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
+    inline def setAttributesToRetrieve(value: js.Array[String]): Self = StObject.set(x, "attributesToRetrieve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesToRetrieveUndefined: Self = StObject.set(x, "attributesToRetrieve", js.undefined)
+    inline def setAttributesToRetrieveUndefined: Self = StObject.set(x, "attributesToRetrieve", js.undefined)
     
-    @scala.inline
-    def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value :_*))
+    inline def setAttributesToRetrieveVarargs(value: String*): Self = StObject.set(x, "attributesToRetrieve", js.Array(value :_*))
     
-    @scala.inline
-    def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
   }
 }

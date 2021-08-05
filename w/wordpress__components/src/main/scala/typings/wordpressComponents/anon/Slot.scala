@@ -31,16 +31,13 @@ trait Slot extends StObject {
 }
 object Slot {
   
-  @scala.inline
-  def apply(Slot: () => ReactElement): Slot = {
+  inline def apply(Slot: () => ReactElement): Slot = {
     val __obj = js.Dynamic.literal(Slot = js.Any.fromFunction0(Slot))
     __obj.asInstanceOf[Slot]
   }
   
-  @scala.inline
-  implicit class SlotMutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
+  extension [Self <: Slot](x: Self) {
     
-    @scala.inline
-    def setSlot(value: () => ReactElement): Self = StObject.set(x, "Slot", js.Any.fromFunction0(value))
+    inline def setSlot(value: () => ReactElement): Self = StObject.set(x, "Slot", js.Any.fromFunction0(value))
   }
 }

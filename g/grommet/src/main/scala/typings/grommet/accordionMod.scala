@@ -33,47 +33,34 @@ object accordionMod {
   }
   object AccordionProps {
     
-    @scala.inline
-    def apply(): AccordionProps = {
+    inline def apply(): AccordionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionProps]
     }
     
-    @scala.inline
-    implicit class AccordionPropsMutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+      inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      @scala.inline
-      def setActiveIndexVarargs(value: Double*): Self = StObject.set(x, "activeIndex", js.Array(value :_*))
+      inline def setActiveIndexVarargs(value: Double*): Self = StObject.set(x, "activeIndex", js.Array(value :_*))
       
-      @scala.inline
-      def setAnimate(value: AnimateType): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: AnimateType): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setMessages(value: TabContents): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: TabContents): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setOnActive(value: /* activeIndexes */ js.Array[Double] => Unit): Self = StObject.set(x, "onActive", js.Any.fromFunction1(value))
+      inline def setOnActive(value: /* activeIndexes */ js.Array[Double] => Unit): Self = StObject.set(x, "onActive", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
+      inline def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
     }
   }
 }

@@ -34,85 +34,59 @@ trait Onenote
 }
 object Onenote {
   
-  @scala.inline
-  def apply(): Onenote = {
+  inline def apply(): Onenote = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Onenote]
   }
   
-  @scala.inline
-  implicit class OnenoteMutableBuilder[Self <: Onenote] (val x: Self) extends AnyVal {
+  extension [Self <: Onenote](x: Self) {
     
-    @scala.inline
-    def setNotebooks(value: NullableOption[js.Array[Notebook]]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
+    inline def setNotebooks(value: NullableOption[js.Array[Notebook]]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebooksNull: Self = StObject.set(x, "notebooks", null)
+    inline def setNotebooksNull: Self = StObject.set(x, "notebooks", null)
     
-    @scala.inline
-    def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
+    inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
     
-    @scala.inline
-    def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
+    inline def setNotebooksVarargs(value: Notebook*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
     
-    @scala.inline
-    def setOperations(value: NullableOption[js.Array[OnenoteOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: NullableOption[js.Array[OnenoteOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsNull: Self = StObject.set(x, "operations", null)
+    inline def setOperationsNull: Self = StObject.set(x, "operations", null)
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: OnenoteOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: OnenoteOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
-    @scala.inline
-    def setPages(value: NullableOption[js.Array[OnenotePage]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: NullableOption[js.Array[OnenotePage]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesNull: Self = StObject.set(x, "pages", null)
+    inline def setPagesNull: Self = StObject.set(x, "pages", null)
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: OnenotePage*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: NullableOption[js.Array[OnenoteResource]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: NullableOption[js.Array[OnenoteResource]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesNull: Self = StObject.set(x, "resources", null)
+    inline def setResourcesNull: Self = StObject.set(x, "resources", null)
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: OnenoteResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: OnenoteResource*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
-    @scala.inline
-    def setSectionGroups(value: NullableOption[js.Array[SectionGroup]]): Self = StObject.set(x, "sectionGroups", value.asInstanceOf[js.Any])
+    inline def setSectionGroups(value: NullableOption[js.Array[SectionGroup]]): Self = StObject.set(x, "sectionGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionGroupsNull: Self = StObject.set(x, "sectionGroups", null)
+    inline def setSectionGroupsNull: Self = StObject.set(x, "sectionGroups", null)
     
-    @scala.inline
-    def setSectionGroupsUndefined: Self = StObject.set(x, "sectionGroups", js.undefined)
+    inline def setSectionGroupsUndefined: Self = StObject.set(x, "sectionGroups", js.undefined)
     
-    @scala.inline
-    def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value :_*))
+    inline def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsNull: Self = StObject.set(x, "sections", null)
+    inline def setSectionsNull: Self = StObject.set(x, "sections", null)
     
-    @scala.inline
-    def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
+    inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    @scala.inline
-    def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
   }
 }

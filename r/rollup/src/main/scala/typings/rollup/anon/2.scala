@@ -14,16 +14,13 @@ trait `2`
 }
 object `2` {
   
-  @scala.inline
-  def apply(): `2` = {
+  inline def apply(): `2` = {
     val __obj = js.Dynamic.literal(code = "START")
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setCode(value: START): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: START): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

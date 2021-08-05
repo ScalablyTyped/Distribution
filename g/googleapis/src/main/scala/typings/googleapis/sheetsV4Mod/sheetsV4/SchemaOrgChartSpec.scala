@@ -55,49 +55,35 @@ trait SchemaOrgChartSpec extends StObject {
 }
 object SchemaOrgChartSpec {
   
-  @scala.inline
-  def apply(): SchemaOrgChartSpec = {
+  inline def apply(): SchemaOrgChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrgChartSpec]
   }
   
-  @scala.inline
-  implicit class SchemaOrgChartSpecMutableBuilder[Self <: SchemaOrgChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrgChartSpec](x: Self) {
     
-    @scala.inline
-    def setLabels(value: SchemaChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: SchemaChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setNodeColor(value: SchemaColor): Self = StObject.set(x, "nodeColor", value.asInstanceOf[js.Any])
+    inline def setNodeColor(value: SchemaColor): Self = StObject.set(x, "nodeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeColorUndefined: Self = StObject.set(x, "nodeColor", js.undefined)
+    inline def setNodeColorUndefined: Self = StObject.set(x, "nodeColor", js.undefined)
     
-    @scala.inline
-    def setNodeSize(value: String): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
+    inline def setNodeSize(value: String): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
+    inline def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
     
-    @scala.inline
-    def setParentLabels(value: SchemaChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
+    inline def setParentLabels(value: SchemaChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
+    inline def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
     
-    @scala.inline
-    def setSelectedNodeColor(value: SchemaColor): Self = StObject.set(x, "selectedNodeColor", value.asInstanceOf[js.Any])
+    inline def setSelectedNodeColor(value: SchemaColor): Self = StObject.set(x, "selectedNodeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedNodeColorUndefined: Self = StObject.set(x, "selectedNodeColor", js.undefined)
+    inline def setSelectedNodeColorUndefined: Self = StObject.set(x, "selectedNodeColor", js.undefined)
     
-    @scala.inline
-    def setTooltips(value: SchemaChartData): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+    inline def setTooltips(value: SchemaChartData): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
+    inline def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ object editableTitleUniDriverMod {
   }
   object EditableTitleUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickHeading: Double => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -33,17 +32,13 @@ object editableTitleUniDriverMod {
       __obj.asInstanceOf[EditableTitleUniDriver]
     }
     
-    @scala.inline
-    implicit class EditableTitleUniDriverMutableBuilder[Self <: EditableTitleUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: EditableTitleUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickHeading(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickHeading", js.Any.fromFunction1(value))
+      inline def setClickHeading(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickHeading", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeadingText(value: Double => js.Promise[String]): Self = StObject.set(x, "getHeadingText", js.Any.fromFunction1(value))
+      inline def setGetHeadingText(value: Double => js.Promise[String]): Self = StObject.set(x, "getHeadingText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetInput(value: () => InputUniDriver): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
+      inline def setGetInput(value: () => InputUniDriver): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
     }
   }
 }

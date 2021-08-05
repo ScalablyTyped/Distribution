@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(array: js.Array[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply(array: js.Array[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Readable]
   
   @JSImport("stream-array", JSImport.Namespace)
   @js.native

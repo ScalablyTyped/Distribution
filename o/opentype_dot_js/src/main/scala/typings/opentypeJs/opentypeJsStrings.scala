@@ -8,26 +8,21 @@ object opentypeJsStrings {
   
   @js.native
   sealed trait C extends StObject
-  @scala.inline
-  def C: C = "C".asInstanceOf[C]
+  inline def C: C = "C".asInstanceOf[C]
   
   @js.native
   sealed trait L extends StObject
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
   sealed trait M extends StObject
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
   sealed trait Q extends StObject
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
+  inline def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
   sealed trait Z extends StObject
-  @scala.inline
-  def Z: Z = "Z".asInstanceOf[Z]
+  inline def Z: Z = "Z".asInstanceOf[Z]
 }

@@ -28,8 +28,7 @@ trait PagingControl extends StObject {
 }
 object PagingControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getButtonState: Double => Double,
     get_innerContent: () => HTMLSpanElement,
     get_innerContentClass: () => String,
@@ -44,34 +43,24 @@ object PagingControl {
     __obj.asInstanceOf[PagingControl]
   }
   
-  @scala.inline
-  implicit class PagingControlMutableBuilder[Self <: PagingControl] (val x: Self) extends AnyVal {
+  extension [Self <: PagingControl](x: Self) {
     
-    @scala.inline
-    def setGetButtonState(value: Double => Double): Self = StObject.set(x, "getButtonState", js.Any.fromFunction1(value))
+    inline def setGetButtonState(value: Double => Double): Self = StObject.set(x, "getButtonState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_innerContent(value: () => HTMLSpanElement): Self = StObject.set(x, "get_innerContent", js.Any.fromFunction0(value))
+    inline def setGet_innerContent(value: () => HTMLSpanElement): Self = StObject.set(x, "get_innerContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_innerContentClass(value: () => String): Self = StObject.set(x, "get_innerContentClass", js.Any.fromFunction0(value))
+    inline def setGet_innerContentClass(value: () => String): Self = StObject.set(x, "get_innerContentClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnNext(value: () => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
+    inline def setOnNext(value: () => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPrev(value: () => Unit): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
+    inline def setOnPrev(value: () => Unit): Self = StObject.set(x, "onPrev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnWindowResized(value: () => Unit): Self = StObject.set(x, "onWindowResized", js.Any.fromFunction0(value))
+    inline def setOnWindowResized(value: () => Unit): Self = StObject.set(x, "onWindowResized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostRender(value: () => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction0(value))
+    inline def setPostRender(value: () => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: String => String): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: String => String): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetButtonState(value: (Double, Double) => Unit): Self = StObject.set(x, "setButtonState", js.Any.fromFunction2(value))
+    inline def setSetButtonState(value: (Double, Double) => Unit): Self = StObject.set(x, "setButtonState", js.Any.fromFunction2(value))
   }
 }

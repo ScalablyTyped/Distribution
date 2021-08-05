@@ -18,25 +18,19 @@ trait ScanRange extends StObject {
 }
 object ScanRange {
   
-  @scala.inline
-  def apply(): ScanRange = {
+  inline def apply(): ScanRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScanRange]
   }
   
-  @scala.inline
-  implicit class ScanRangeMutableBuilder[Self <: ScanRange] (val x: Self) extends AnyVal {
+  extension [Self <: ScanRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: End): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: End): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
-    @scala.inline
-    def setStart(value: Start): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Start): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }
 }

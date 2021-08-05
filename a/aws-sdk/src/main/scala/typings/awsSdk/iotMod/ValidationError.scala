@@ -13,19 +13,15 @@ trait ValidationError extends StObject {
 }
 object ValidationError {
   
-  @scala.inline
-  def apply(): ValidationError = {
+  inline def apply(): ValidationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationError]
   }
   
-  @scala.inline
-  implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationError](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

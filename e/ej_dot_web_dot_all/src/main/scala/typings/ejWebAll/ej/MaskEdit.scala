@@ -65,44 +65,32 @@ object MaskEdit {
   }
   object ChangeEventArgs {
     
-    @scala.inline
-    def apply(): ChangeEventArgs = {
+    inline def apply(): ChangeEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    @scala.inline
-    implicit class ChangeEventArgsMutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -122,32 +110,24 @@ object MaskEdit {
   }
   object CreateEventArgs {
     
-    @scala.inline
-    def apply(): CreateEventArgs = {
+    inline def apply(): CreateEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    @scala.inline
-    implicit class CreateEventArgsMutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CreateEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -167,32 +147,24 @@ object MaskEdit {
   }
   object DestroyEventArgs {
     
-    @scala.inline
-    def apply(): DestroyEventArgs = {
+    inline def apply(): DestroyEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    @scala.inline
-    implicit class DestroyEventArgsMutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DestroyEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -220,44 +192,32 @@ object MaskEdit {
   }
   object FocusInEventArgs {
     
-    @scala.inline
-    def apply(): FocusInEventArgs = {
+    inline def apply(): FocusInEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusInEventArgs]
     }
     
-    @scala.inline
-    implicit class FocusInEventArgsMutableBuilder[Self <: FocusInEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FocusInEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -285,44 +245,32 @@ object MaskEdit {
   }
   object FocusOutEventArgs {
     
-    @scala.inline
-    def apply(): FocusOutEventArgs = {
+    inline def apply(): FocusOutEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    @scala.inline
-    implicit class FocusOutEventArgsMutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FocusOutEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -350,44 +298,32 @@ object MaskEdit {
   }
   object KeyPressEventArgs {
     
-    @scala.inline
-    def apply(): KeyPressEventArgs = {
+    inline def apply(): KeyPressEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyPressEventArgs]
     }
     
-    @scala.inline
-    implicit class KeyPressEventArgsMutableBuilder[Self <: KeyPressEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPressEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -415,44 +351,32 @@ object MaskEdit {
   }
   object KeyUpEventArgs {
     
-    @scala.inline
-    def apply(): KeyUpEventArgs = {
+    inline def apply(): KeyUpEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyUpEventArgs]
     }
     
-    @scala.inline
-    implicit class KeyUpEventArgsMutableBuilder[Self <: KeyUpEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: KeyUpEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -604,200 +528,136 @@ object MaskEdit {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.MaskEdit.Model = {
+    inline def apply(): typings.ejWebAll.ej.MaskEdit.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.MaskEdit.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.MaskEdit.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.MaskEdit.Model](x: Self) {
       
-      @scala.inline
-      def setChange(value: /* e */ ChangeEventArgs => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: /* e */ ChangeEventArgs => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+      inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
-      @scala.inline
-      def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      @scala.inline
-      def setCustomCharacter(value: String): Self = StObject.set(x, "customCharacter", value.asInstanceOf[js.Any])
+      inline def setCustomCharacter(value: String): Self = StObject.set(x, "customCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCharacterUndefined: Self = StObject.set(x, "customCharacter", js.undefined)
+      inline def setCustomCharacterUndefined: Self = StObject.set(x, "customCharacter", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setEnablePersistence(value: Boolean): Self = StObject.set(x, "enablePersistence", value.asInstanceOf[js.Any])
+      inline def setEnablePersistence(value: Boolean): Self = StObject.set(x, "enablePersistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePersistenceUndefined: Self = StObject.set(x, "enablePersistence", js.undefined)
+      inline def setEnablePersistenceUndefined: Self = StObject.set(x, "enablePersistence", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFocusIn(value: /* e */ FocusInEventArgs => Unit): Self = StObject.set(x, "focusIn", js.Any.fromFunction1(value))
+      inline def setFocusIn(value: /* e */ FocusInEventArgs => Unit): Self = StObject.set(x, "focusIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusInUndefined: Self = StObject.set(x, "focusIn", js.undefined)
+      inline def setFocusInUndefined: Self = StObject.set(x, "focusIn", js.undefined)
       
-      @scala.inline
-      def setFocusOut(value: /* e */ FocusOutEventArgs => Unit): Self = StObject.set(x, "focusOut", js.Any.fromFunction1(value))
+      inline def setFocusOut(value: /* e */ FocusOutEventArgs => Unit): Self = StObject.set(x, "focusOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusOutUndefined: Self = StObject.set(x, "focusOut", js.undefined)
+      inline def setFocusOutUndefined: Self = StObject.set(x, "focusOut", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHidePromptOnLeave(value: Boolean): Self = StObject.set(x, "hidePromptOnLeave", value.asInstanceOf[js.Any])
+      inline def setHidePromptOnLeave(value: Boolean): Self = StObject.set(x, "hidePromptOnLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePromptOnLeaveUndefined: Self = StObject.set(x, "hidePromptOnLeave", js.undefined)
+      inline def setHidePromptOnLeaveUndefined: Self = StObject.set(x, "hidePromptOnLeave", js.undefined)
       
-      @scala.inline
-      def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
+      inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
-      @scala.inline
-      def setInputMode(value: InputMode | String): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+      inline def setInputMode(value: InputMode | String): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
+      inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
-      @scala.inline
-      def setKeyPress(value: /* e */ KeyPressEventArgs => Unit): Self = StObject.set(x, "keyPress", js.Any.fromFunction1(value))
+      inline def setKeyPress(value: /* e */ KeyPressEventArgs => Unit): Self = StObject.set(x, "keyPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyPressUndefined: Self = StObject.set(x, "keyPress", js.undefined)
+      inline def setKeyPressUndefined: Self = StObject.set(x, "keyPress", js.undefined)
       
-      @scala.inline
-      def setKeyUp(value: /* e */ KeyUpEventArgs => Unit): Self = StObject.set(x, "keyUp", js.Any.fromFunction1(value))
+      inline def setKeyUp(value: /* e */ KeyUpEventArgs => Unit): Self = StObject.set(x, "keyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyUpUndefined: Self = StObject.set(x, "keyUp", js.undefined)
+      inline def setKeyUpUndefined: Self = StObject.set(x, "keyUp", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMaskFormat(value: String): Self = StObject.set(x, "maskFormat", value.asInstanceOf[js.Any])
+      inline def setMaskFormat(value: String): Self = StObject.set(x, "maskFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskFormatUndefined: Self = StObject.set(x, "maskFormat", js.undefined)
+      inline def setMaskFormatUndefined: Self = StObject.set(x, "maskFormat", js.undefined)
       
-      @scala.inline
-      def setMouseOut(value: /* e */ MouseOutEventArgs => Unit): Self = StObject.set(x, "mouseOut", js.Any.fromFunction1(value))
+      inline def setMouseOut(value: /* e */ MouseOutEventArgs => Unit): Self = StObject.set(x, "mouseOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMouseOutUndefined: Self = StObject.set(x, "mouseOut", js.undefined)
+      inline def setMouseOutUndefined: Self = StObject.set(x, "mouseOut", js.undefined)
       
-      @scala.inline
-      def setMouseOver(value: /* e */ MouseOverEventArgs => Unit): Self = StObject.set(x, "mouseOver", js.Any.fromFunction1(value))
+      inline def setMouseOver(value: /* e */ MouseOverEventArgs => Unit): Self = StObject.set(x, "mouseOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMouseOverUndefined: Self = StObject.set(x, "mouseOver", js.undefined)
+      inline def setMouseOverUndefined: Self = StObject.set(x, "mouseOver", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ OnKeyDownEventArgs => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ OnKeyDownEventArgs => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      @scala.inline
-      def setShowError(value: Boolean): Self = StObject.set(x, "showError", value.asInstanceOf[js.Any])
+      inline def setShowError(value: Boolean): Self = StObject.set(x, "showError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowErrorUndefined: Self = StObject.set(x, "showError", js.undefined)
+      inline def setShowErrorUndefined: Self = StObject.set(x, "showError", js.undefined)
       
-      @scala.inline
-      def setShowPromptChar(value: Boolean): Self = StObject.set(x, "showPromptChar", value.asInstanceOf[js.Any])
+      inline def setShowPromptChar(value: Boolean): Self = StObject.set(x, "showPromptChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPromptCharUndefined: Self = StObject.set(x, "showPromptChar", js.undefined)
+      inline def setShowPromptCharUndefined: Self = StObject.set(x, "showPromptChar", js.undefined)
       
-      @scala.inline
-      def setShowRoundedCorner(value: Boolean): Self = StObject.set(x, "showRoundedCorner", value.asInstanceOf[js.Any])
+      inline def setShowRoundedCorner(value: Boolean): Self = StObject.set(x, "showRoundedCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRoundedCornerUndefined: Self = StObject.set(x, "showRoundedCorner", js.undefined)
+      inline def setShowRoundedCornerUndefined: Self = StObject.set(x, "showRoundedCorner", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: TextAlign | String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: TextAlign | String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
+      inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      @scala.inline
-      def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
+      inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setWatermarkText(value: String): Self = StObject.set(x, "watermarkText", value.asInstanceOf[js.Any])
+      inline def setWatermarkText(value: String): Self = StObject.set(x, "watermarkText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatermarkTextUndefined: Self = StObject.set(x, "watermarkText", js.undefined)
+      inline def setWatermarkTextUndefined: Self = StObject.set(x, "watermarkText", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -825,44 +685,32 @@ object MaskEdit {
   }
   object MouseOutEventArgs {
     
-    @scala.inline
-    def apply(): MouseOutEventArgs = {
+    inline def apply(): MouseOutEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MouseOutEventArgs]
     }
     
-    @scala.inline
-    implicit class MouseOutEventArgsMutableBuilder[Self <: MouseOutEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MouseOutEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -890,44 +738,32 @@ object MaskEdit {
   }
   object MouseOverEventArgs {
     
-    @scala.inline
-    def apply(): MouseOverEventArgs = {
+    inline def apply(): MouseOverEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MouseOverEventArgs]
     }
     
-    @scala.inline
-    implicit class MouseOverEventArgsMutableBuilder[Self <: MouseOverEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MouseOverEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -955,44 +791,32 @@ object MaskEdit {
   }
   object OnKeyDownEventArgs {
     
-    @scala.inline
-    def apply(): OnKeyDownEventArgs = {
+    inline def apply(): OnKeyDownEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnKeyDownEventArgs]
     }
     
-    @scala.inline
-    implicit class OnKeyDownEventArgsMutableBuilder[Self <: OnKeyDownEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OnKeyDownEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
+      inline def setUnmaskedValue(value: String): Self = StObject.set(x, "unmaskedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
+      inline def setUnmaskedValueUndefined: Self = StObject.set(x, "unmaskedValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

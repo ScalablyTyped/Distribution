@@ -17,13 +17,10 @@ object VisualEffect {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FLAT: `2` = 2.asInstanceOf[`2`]
+    inline def FLAT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def LOOK3D: `1` = 1.asInstanceOf[`1`]
+    inline def LOOK3D: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

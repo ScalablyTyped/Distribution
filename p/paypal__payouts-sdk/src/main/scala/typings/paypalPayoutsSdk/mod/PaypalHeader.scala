@@ -10,16 +10,13 @@ trait PaypalHeader extends StObject {
 }
 object PaypalHeader {
   
-  @scala.inline
-  def apply(Authorization: String): PaypalHeader = {
+  inline def apply(Authorization: String): PaypalHeader = {
     val __obj = js.Dynamic.literal(Authorization = Authorization.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaypalHeader]
   }
   
-  @scala.inline
-  implicit class PaypalHeaderMutableBuilder[Self <: PaypalHeader] (val x: Self) extends AnyVal {
+  extension [Self <: PaypalHeader](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
   }
 }

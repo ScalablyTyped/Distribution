@@ -28,25 +28,19 @@ trait PlusShareGeoPosition extends StObject {
 }
 object PlusShareGeoPosition {
   
-  @scala.inline
-  def apply(): PlusShareGeoPosition = {
+  inline def apply(): PlusShareGeoPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusShareGeoPosition]
   }
   
-  @scala.inline
-  implicit class PlusShareGeoPositionMutableBuilder[Self <: PlusShareGeoPosition] (val x: Self) extends AnyVal {
+  extension [Self <: PlusShareGeoPosition](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }
 }

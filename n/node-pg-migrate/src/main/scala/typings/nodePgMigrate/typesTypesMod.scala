@@ -45,26 +45,20 @@ object typesTypesMod {
   }
   object AddTypeValueOptions {
     
-    @scala.inline
-    def apply(): AddTypeValueOptions = {
+    inline def apply(): AddTypeValueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddTypeValueOptions]
     }
     
-    @scala.inline
-    implicit class AddTypeValueOptionsMutableBuilder[Self <: AddTypeValueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddTypeValueOptions](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     }
   }
   

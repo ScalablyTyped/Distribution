@@ -16,20 +16,20 @@ object packagePluginMod {
     
     var includeVersion: Boolean = js.native
     
-    var noReadmeFile: js.Any = js.native
+    /* private */ var noReadmeFile: js.Any = js.native
     
-    var onBegin: js.Any = js.native
+    /* private */ var onBegin: js.Any = js.native
     
-    var onBeginDocument: js.Any = js.native
+    /* private */ var onBeginDocument: js.Any = js.native
     
-    var onBeginResolve: js.Any = js.native
+    /* private */ var onBeginResolve: js.Any = js.native
     
-    var packageFile: js.Any = js.native
+    /* private */ var packageFile: js.Any = js.native
     
     var readme: String = js.native
     
-    var readmeFile: js.Any = js.native
+    /* private */ var readmeFile: js.Any = js.native
     
-    var visited: js.Any = js.native
+    /* private */ var visited: js.Any = js.native
   }
 }

@@ -28,26 +28,20 @@ trait AnimationStateMetadata
 }
 object AnimationStateMetadata {
   
-  @scala.inline
-  def apply(name: String, styles: AnimationStyleMetadata, `type`: AnimationMetadataType): AnimationStateMetadata = {
+  inline def apply(name: String, styles: AnimationStyleMetadata, `type`: AnimationMetadataType): AnimationStateMetadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationStateMetadata]
   }
   
-  @scala.inline
-  implicit class AnimationStateMetadataMutableBuilder[Self <: AnimationStateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStateMetadata](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Params): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Params): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setStyles(value: AnimationStyleMetadata): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: AnimationStyleMetadata): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

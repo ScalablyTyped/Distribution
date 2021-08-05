@@ -48,8 +48,7 @@ trait RestoreTableFromClusterSnapshotMessage extends StObject {
 }
 object RestoreTableFromClusterSnapshotMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClusterIdentifier: String,
     NewTableName: String,
     SnapshotIdentifier: String,
@@ -60,40 +59,28 @@ object RestoreTableFromClusterSnapshotMessage {
     __obj.asInstanceOf[RestoreTableFromClusterSnapshotMessage]
   }
   
-  @scala.inline
-  implicit class RestoreTableFromClusterSnapshotMessageMutableBuilder[Self <: RestoreTableFromClusterSnapshotMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreTableFromClusterSnapshotMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTableName(value: String): Self = StObject.set(x, "NewTableName", value.asInstanceOf[js.Any])
+    inline def setNewTableName(value: String): Self = StObject.set(x, "NewTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDatabaseName(value: String): Self = StObject.set(x, "SourceDatabaseName", value.asInstanceOf[js.Any])
+    inline def setSourceDatabaseName(value: String): Self = StObject.set(x, "SourceDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSchemaName(value: String): Self = StObject.set(x, "SourceSchemaName", value.asInstanceOf[js.Any])
+    inline def setSourceSchemaName(value: String): Self = StObject.set(x, "SourceSchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSchemaNameUndefined: Self = StObject.set(x, "SourceSchemaName", js.undefined)
+    inline def setSourceSchemaNameUndefined: Self = StObject.set(x, "SourceSchemaName", js.undefined)
     
-    @scala.inline
-    def setSourceTableName(value: String): Self = StObject.set(x, "SourceTableName", value.asInstanceOf[js.Any])
+    inline def setSourceTableName(value: String): Self = StObject.set(x, "SourceTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDatabaseName(value: String): Self = StObject.set(x, "TargetDatabaseName", value.asInstanceOf[js.Any])
+    inline def setTargetDatabaseName(value: String): Self = StObject.set(x, "TargetDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDatabaseNameUndefined: Self = StObject.set(x, "TargetDatabaseName", js.undefined)
+    inline def setTargetDatabaseNameUndefined: Self = StObject.set(x, "TargetDatabaseName", js.undefined)
     
-    @scala.inline
-    def setTargetSchemaName(value: String): Self = StObject.set(x, "TargetSchemaName", value.asInstanceOf[js.Any])
+    inline def setTargetSchemaName(value: String): Self = StObject.set(x, "TargetSchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSchemaNameUndefined: Self = StObject.set(x, "TargetSchemaName", js.undefined)
+    inline def setTargetSchemaNameUndefined: Self = StObject.set(x, "TargetSchemaName", js.undefined)
   }
 }

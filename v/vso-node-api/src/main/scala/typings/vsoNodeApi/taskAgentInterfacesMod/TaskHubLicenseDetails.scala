@@ -26,8 +26,7 @@ trait TaskHubLicenseDetails extends StObject {
 }
 object TaskHubLicenseDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enterpriseUsersCount: Double,
     freeLicenseCount: Double,
     hasLicenseCountEverUpdated: Boolean,
@@ -42,34 +41,24 @@ object TaskHubLicenseDetails {
     __obj.asInstanceOf[TaskHubLicenseDetails]
   }
   
-  @scala.inline
-  implicit class TaskHubLicenseDetailsMutableBuilder[Self <: TaskHubLicenseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TaskHubLicenseDetails](x: Self) {
     
-    @scala.inline
-    def setEnterpriseUsersCount(value: Double): Self = StObject.set(x, "enterpriseUsersCount", value.asInstanceOf[js.Any])
+    inline def setEnterpriseUsersCount(value: Double): Self = StObject.set(x, "enterpriseUsersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeLicenseCount(value: Double): Self = StObject.set(x, "freeLicenseCount", value.asInstanceOf[js.Any])
+    inline def setFreeLicenseCount(value: Double): Self = StObject.set(x, "freeLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasLicenseCountEverUpdated(value: Boolean): Self = StObject.set(x, "hasLicenseCountEverUpdated", value.asInstanceOf[js.Any])
+    inline def setHasLicenseCountEverUpdated(value: Boolean): Self = StObject.set(x, "hasLicenseCountEverUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedAgentMinutesFreeCount(value: Double): Self = StObject.set(x, "hostedAgentMinutesFreeCount", value.asInstanceOf[js.Any])
+    inline def setHostedAgentMinutesFreeCount(value: Double): Self = StObject.set(x, "hostedAgentMinutesFreeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedAgentMinutesUsedCount(value: Double): Self = StObject.set(x, "hostedAgentMinutesUsedCount", value.asInstanceOf[js.Any])
+    inline def setHostedAgentMinutesUsedCount(value: Double): Self = StObject.set(x, "hostedAgentMinutesUsedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsdnUsersCount(value: Double): Self = StObject.set(x, "msdnUsersCount", value.asInstanceOf[js.Any])
+    inline def setMsdnUsersCount(value: Double): Self = StObject.set(x, "msdnUsersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchasedHostedLicenseCount(value: Double): Self = StObject.set(x, "purchasedHostedLicenseCount", value.asInstanceOf[js.Any])
+    inline def setPurchasedHostedLicenseCount(value: Double): Self = StObject.set(x, "purchasedHostedLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchasedLicenseCount(value: Double): Self = StObject.set(x, "purchasedLicenseCount", value.asInstanceOf[js.Any])
+    inline def setPurchasedLicenseCount(value: Double): Self = StObject.set(x, "purchasedLicenseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
+    inline def setTotalLicenseCount(value: Double): Self = StObject.set(x, "totalLicenseCount", value.asInstanceOf[js.Any])
   }
 }

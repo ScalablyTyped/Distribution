@@ -47,86 +47,60 @@ object pickListSubListMod {
   }
   object PickListSubListProps {
     
-    @scala.inline
-    def apply(): PickListSubListProps = {
+    inline def apply(): PickListSubListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickListSubListProps]
     }
     
-    @scala.inline
-    implicit class PickListSubListPropsMutableBuilder[Self <: PickListSubListProps] (val x: Self) extends AnyVal {
+    extension [Self <: PickListSubListProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setItemTemplate(value: /* item */ js.Any => js.UndefOr[Element]): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
+      inline def setItemTemplate(value: /* item */ js.Any => js.UndefOr[Element]): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
+      inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
-      @scala.inline
-      def setList(value: js.Array[js.Any]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[js.Any]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
+      inline def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
+      inline def setListClassNameUndefined: Self = StObject.set(x, "listClassName", js.undefined)
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setListVarargs(value: js.Any*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: js.Any*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setMetaKeySelection(value: Boolean): Self = StObject.set(x, "metaKeySelection", value.asInstanceOf[js.Any])
+      inline def setMetaKeySelection(value: Boolean): Self = StObject.set(x, "metaKeySelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKeySelectionUndefined: Self = StObject.set(x, "metaKeySelection", js.undefined)
+      inline def setMetaKeySelectionUndefined: Self = StObject.set(x, "metaKeySelection", js.undefined)
       
-      @scala.inline
-      def setOnItemClick(value: () => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction0(value))
+      inline def setOnItemClick(value: () => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+      inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
-      @scala.inline
-      def setOnSelectionChange(value: /* e */ EventValue => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
+      inline def setOnSelectionChange(value: /* e */ EventValue => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
+      inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
-      @scala.inline
-      def setSelection(value: js.Array[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: js.Array[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setSelectionVarargs(value: js.Any*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: js.Any*): Self = StObject.set(x, "selection", js.Array(value :_*))
       
-      @scala.inline
-      def setShowControls(value: Boolean): Self = StObject.set(x, "showControls", value.asInstanceOf[js.Any])
+      inline def setShowControls(value: Boolean): Self = StObject.set(x, "showControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowControlsUndefined: Self = StObject.set(x, "showControls", js.undefined)
+      inline def setShowControlsUndefined: Self = StObject.set(x, "showControls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

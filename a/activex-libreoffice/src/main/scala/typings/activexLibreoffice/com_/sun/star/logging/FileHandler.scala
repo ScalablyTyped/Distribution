@@ -35,8 +35,7 @@ trait FileHandler
 }
 object FileHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Encoding: String,
     Formatter: XLogFormatter,
     Level: Double,
@@ -55,13 +54,10 @@ object FileHandler {
     __obj.asInstanceOf[FileHandler]
   }
   
-  @scala.inline
-  implicit class FileHandlerMutableBuilder[Self <: FileHandler] (val x: Self) extends AnyVal {
+  extension [Self <: FileHandler](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithSettings(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "createWithSettings", js.Any.fromFunction1(value))
+    inline def setCreateWithSettings(value: SeqEquiv[NamedValue] => Unit): Self = StObject.set(x, "createWithSettings", js.Any.fromFunction1(value))
   }
 }

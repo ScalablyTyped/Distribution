@@ -13,16 +13,13 @@ trait StopMultiplexRequest extends StObject {
 }
 object StopMultiplexRequest {
   
-  @scala.inline
-  def apply(MultiplexId: string): StopMultiplexRequest = {
+  inline def apply(MultiplexId: string): StopMultiplexRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopMultiplexRequest]
   }
   
-  @scala.inline
-  implicit class StopMultiplexRequestMutableBuilder[Self <: StopMultiplexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopMultiplexRequest](x: Self) {
     
-    @scala.inline
-    def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
+    inline def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
   }
 }

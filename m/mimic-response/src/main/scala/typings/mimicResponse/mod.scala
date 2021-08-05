@@ -15,8 +15,7 @@ object mod {
   @param toStream - The stream to copy the properties to.
   @return The same object as `toStream`.
   */
-  @scala.inline
-  def apply[T /* <: ReadableStream */](
+  inline def apply[T /* <: ReadableStream */](
     fromStream: IncomingMessage,
     // eslint-disable-line @typescript-eslint/prefer-readonly-parameter-types
   toStream: T

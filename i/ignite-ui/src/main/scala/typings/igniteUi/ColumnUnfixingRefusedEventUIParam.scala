@@ -28,37 +28,27 @@ trait ColumnUnfixingRefusedEventUIParam extends StObject {
 }
 object ColumnUnfixingRefusedEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnUnfixingRefusedEventUIParam = {
+  inline def apply(): ColumnUnfixingRefusedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnUnfixingRefusedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnUnfixingRefusedEventUIParamMutableBuilder[Self <: ColumnUnfixingRefusedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnUnfixingRefusedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnIdentifier(value: js.Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
+    inline def setColumnIdentifier(value: js.Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIdentifierUndefined: Self = StObject.set(x, "columnIdentifier", js.undefined)
+    inline def setColumnIdentifierUndefined: Self = StObject.set(x, "columnIdentifier", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
+    inline def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
+    inline def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -75,8 +75,7 @@ object pathNodeMod {
       * Returns a clone of the PathNode
       * @deprecated use instance method `node.clone()`
       */
-    @scala.inline
-    def clone(node: PathNode): PathNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[PathNode]
+    inline def clone(node: PathNode): PathNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[PathNode]
   }
   
   type GetParamsFn = js.Function1[/* pathNode */ PathNode, js.Array[Param]]

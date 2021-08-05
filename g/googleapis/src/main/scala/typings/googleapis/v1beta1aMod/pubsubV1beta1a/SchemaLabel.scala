@@ -38,31 +38,23 @@ trait SchemaLabel extends StObject {
 }
 object SchemaLabel {
   
-  @scala.inline
-  def apply(): SchemaLabel = {
+  inline def apply(): SchemaLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLabel]
   }
   
-  @scala.inline
-  implicit class SchemaLabelMutableBuilder[Self <: SchemaLabel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLabel](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setNumValue(value: String): Self = StObject.set(x, "numValue", value.asInstanceOf[js.Any])
+    inline def setNumValue(value: String): Self = StObject.set(x, "numValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumValueUndefined: Self = StObject.set(x, "numValue", js.undefined)
+    inline def setNumValueUndefined: Self = StObject.set(x, "numValue", js.undefined)
     
-    @scala.inline
-    def setStrValue(value: String): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
+    inline def setStrValue(value: String): Self = StObject.set(x, "strValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrValueUndefined: Self = StObject.set(x, "strValue", js.undefined)
+    inline def setStrValueUndefined: Self = StObject.set(x, "strValue", js.undefined)
   }
 }

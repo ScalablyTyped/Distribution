@@ -28,13 +28,12 @@ trait StyleSheet extends StObject {
   
   var Type: WdStyleSheetLinkType
   
-  @JSName("Word.StyleSheet_typekey")
+  /* private */ @JSName("Word.StyleSheet_typekey")
   var WordDotStyleSheet_typekey: StyleSheet
 }
 object StyleSheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -53,43 +52,30 @@ object StyleSheet {
     __obj.asInstanceOf[StyleSheet]
   }
   
-  @scala.inline
-  implicit class StyleSheetMutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheet](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMove(value: WdStyleSheetPrecedence => Unit): Self = StObject.set(x, "Move", js.Any.fromFunction1(value))
+    inline def setMove(value: WdStyleSheetPrecedence => Unit): Self = StObject.set(x, "Move", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WdStyleSheetLinkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdStyleSheetLinkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotStyleSheet_typekey(value: StyleSheet): Self = StObject.set(x, "Word.StyleSheet_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotStyleSheet_typekey(value: StyleSheet): Self = StObject.set(x, "Word.StyleSheet_typekey", value.asInstanceOf[js.Any])
   }
 }

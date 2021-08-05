@@ -16,16 +16,13 @@ trait PlayReadyDomainIterable extends StObject {
 }
 object PlayReadyDomainIterable {
   
-  @scala.inline
-  def apply(first: () => IIterator[IPlayReadyDomain]): PlayReadyDomainIterable = {
+  inline def apply(first: () => IIterator[IPlayReadyDomain]): PlayReadyDomainIterable = {
     val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first))
     __obj.asInstanceOf[PlayReadyDomainIterable]
   }
   
-  @scala.inline
-  implicit class PlayReadyDomainIterableMutableBuilder[Self <: PlayReadyDomainIterable] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyDomainIterable](x: Self) {
     
-    @scala.inline
-    def setFirst(value: () => IIterator[IPlayReadyDomain]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IPlayReadyDomain]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
   }
 }

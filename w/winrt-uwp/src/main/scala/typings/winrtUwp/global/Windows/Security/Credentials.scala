@@ -101,16 +101,14 @@ object Credentials {
       * @return This method does not return a value.
       */
     /* static member */
-    @scala.inline
-    def deleteAsync(name: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(name.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def deleteAsync(name: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(name.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Determines if the current device and user is capable of provisioning a key credential.
       * @return When this method completes, it returns true if the current device and user is capable of provisioning a key credential. Otherwise, it returns false.
       */
     /* static member */
-    @scala.inline
-    def isSupportedAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def isSupportedAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     
     /**
       * Retrieves a key credential for the current user and application.
@@ -118,16 +116,14 @@ object Credentials {
       * @return When this method completes, it returns the results of the key credential retrieval.
       */
     /* static member */
-    @scala.inline
-    def openAsync(name: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("openAsync")(name.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult]]
+    inline def openAsync(name: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("openAsync")(name.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult]]
     
     /**
       * Renews an attestation for a key credential.
       * @return This method does not return a value.
       */
     /* static member */
-    @scala.inline
-    def renewAttestationAsync(): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("renewAttestationAsync")().asInstanceOf[IPromiseWithIAsyncAction]
+    inline def renewAttestationAsync(): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("renewAttestationAsync")().asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Creates a new key credential for the current user and application.
@@ -136,8 +132,7 @@ object Credentials {
       * @return When this method completes, it returns the results of the key credential creation.
       */
     /* static member */
-    @scala.inline
-    def requestCreateAsync(name: String, option: KeyCredentialCreationOption): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestCreateAsync")(name.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult]]
+    inline def requestCreateAsync(name: String, option: KeyCredentialCreationOption): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestCreateAsync")(name.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.KeyCredentialRetrievalResult]]
   }
   
   /** Represents the result of a key credential operation. */
@@ -338,8 +333,7 @@ object Credentials {
         * @return The credential and options from the user.
         */
       /* static member */
-      @scala.inline
-      def pickAsync(options: typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerOptions): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(options.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults]]
+      inline def pickAsync(options: typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerOptions): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(options.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults]]
       /**
         * Constructor used to initiate asynchronous prompting operations using two inputs.
         * @param targetName The target name to display.
@@ -347,8 +341,7 @@ object Credentials {
         * @return The credential and options from the user.
         */
       /* static member */
-      @scala.inline
-      def pickAsync(targetName: String, message: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults]]
+      inline def pickAsync(targetName: String, message: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults]]
       /**
         * Constructor used to initiate asynchronous prompting operations using three inputs.
         * @param targetName The target name to display.
@@ -357,8 +350,7 @@ object Credentials {
         * @return The credential and options from the user.
         */
       /* static member */
-      @scala.inline
-      def pickAsync(targetName: String, message: String, caption: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any], caption.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults]]
+      inline def pickAsync(targetName: String, message: String, caption: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any], caption.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerResults]]
     }
     
     /** Controls the appearance and behavior of a credential prompt. */
@@ -503,8 +495,7 @@ object Credentials {
         * @return A UserConsentVerifierAvailability value that describes the result of the availability check operation.
         */
       /* static member */
-      @scala.inline
-      def checkAvailabilityAsync(): IPromiseWithIAsyncOperation[UserConsentVerifierAvailability] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAvailabilityAsync")().asInstanceOf[IPromiseWithIAsyncOperation[UserConsentVerifierAvailability]]
+      inline def checkAvailabilityAsync(): IPromiseWithIAsyncOperation[UserConsentVerifierAvailability] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkAvailabilityAsync")().asInstanceOf[IPromiseWithIAsyncOperation[UserConsentVerifierAvailability]]
       
       /**
         * Performs a fingerprint (biometric) verification.
@@ -512,8 +503,7 @@ object Credentials {
         * @return A UserConsentVerificationResult value that describes the result of the biometric verification.
         */
       /* static member */
-      @scala.inline
-      def requestVerificationAsync(message: String): IPromiseWithIAsyncOperation[UserConsentVerificationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestVerificationAsync")(message.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[UserConsentVerificationResult]]
+      inline def requestVerificationAsync(message: String): IPromiseWithIAsyncOperation[UserConsentVerificationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestVerificationAsync")(message.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[UserConsentVerificationResult]]
     }
     
     /** Describes the result of a check for a biometric (fingerprint) verifier device. */

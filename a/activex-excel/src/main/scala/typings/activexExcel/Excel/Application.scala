@@ -479,7 +479,7 @@ trait Application extends StObject {
   @JSName("Excel4MacroSheets")
   val Excel4MacroSheets_Original: Sheets[Sheet] = js.native
   
-  @JSName("Excel.Application_typekey")
+  /* private */ @JSName("Excel.Application_typekey")
   var ExcelDotApplication_typekey: typings.activexExcel.Excel.Application = js.native
   
   def ExecuteExcel4Macro(String: String): js.Any = js.native

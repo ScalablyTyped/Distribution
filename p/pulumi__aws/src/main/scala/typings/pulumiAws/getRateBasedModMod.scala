@@ -11,10 +11,8 @@ object getRateBasedModMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRateBasedMod(args: GetRateBasedModArgs): js.Promise[GetRateBasedModResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedMod")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRateBasedModResult]]
-  @scala.inline
-  def getRateBasedMod(args: GetRateBasedModArgs, opts: InvokeOptions): js.Promise[GetRateBasedModResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedMod")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRateBasedModResult]]
+  inline def getRateBasedMod(args: GetRateBasedModArgs): js.Promise[GetRateBasedModResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedMod")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRateBasedModResult]]
+  inline def getRateBasedMod(args: GetRateBasedModArgs, opts: InvokeOptions): js.Promise[GetRateBasedModResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRateBasedMod")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRateBasedModResult]]
   
   trait GetRateBasedModArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getRateBasedModMod {
   }
   object GetRateBasedModArgs {
     
-    @scala.inline
-    def apply(name: String): GetRateBasedModArgs = {
+    inline def apply(name: String): GetRateBasedModArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRateBasedModArgs]
     }
     
-    @scala.inline
-    implicit class GetRateBasedModArgsMutableBuilder[Self <: GetRateBasedModArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRateBasedModArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +45,16 @@ object getRateBasedModMod {
   }
   object GetRateBasedModResult {
     
-    @scala.inline
-    def apply(id: String, name: String): GetRateBasedModResult = {
+    inline def apply(id: String, name: String): GetRateBasedModResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRateBasedModResult]
     }
     
-    @scala.inline
-    implicit class GetRateBasedModResultMutableBuilder[Self <: GetRateBasedModResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRateBasedModResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

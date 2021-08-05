@@ -12,6 +12,5 @@ object printDebugValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def printDebugValue(v: Reaction_): IDependencyTree = ^.asInstanceOf[js.Dynamic].applyDynamic("printDebugValue")(v.asInstanceOf[js.Any]).asInstanceOf[IDependencyTree]
+  inline def printDebugValue(v: Reaction_): IDependencyTree = ^.asInstanceOf[js.Dynamic].applyDynamic("printDebugValue")(v.asInstanceOf[js.Any]).asInstanceOf[IDependencyTree]
 }

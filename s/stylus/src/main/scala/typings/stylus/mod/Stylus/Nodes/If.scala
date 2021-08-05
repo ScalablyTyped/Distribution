@@ -19,8 +19,7 @@ trait If
 }
 object If {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     block: Block,
     coerce: Node => Node,
     column: Double,
@@ -43,22 +42,16 @@ object If {
     __obj.asInstanceOf[If]
   }
   
-  @scala.inline
-  implicit class IfMutableBuilder[Self <: If] (val x: Self) extends AnyVal {
+  extension [Self <: If](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCond(value: Expression): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Expression): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElses(value: js.Array[Expression]): Self = StObject.set(x, "elses", value.asInstanceOf[js.Any])
+    inline def setElses(value: js.Array[Expression]): Self = StObject.set(x, "elses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value :_*))
+    inline def setElsesVarargs(value: Expression*): Self = StObject.set(x, "elses", js.Array(value :_*))
     
-    @scala.inline
-    def setNegate(value: scala.Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
+    inline def setNegate(value: scala.Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
   }
 }

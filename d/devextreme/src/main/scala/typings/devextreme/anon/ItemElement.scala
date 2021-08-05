@@ -13,25 +13,19 @@ trait ItemElement extends StObject {
 }
 object ItemElement {
   
-  @scala.inline
-  def apply(): ItemElement = {
+  inline def apply(): ItemElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemElement]
   }
   
-  @scala.inline
-  implicit class ItemElementMutableBuilder[Self <: ItemElement] (val x: Self) extends AnyVal {
+  extension [Self <: ItemElement](x: Self) {
     
-    @scala.inline
-    def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+    inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
-    @scala.inline
-    def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+    inline def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
+    inline def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
   }
 }

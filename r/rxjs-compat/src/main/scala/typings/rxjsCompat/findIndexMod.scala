@@ -10,8 +10,7 @@ object findIndexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findIndex[T](
+  inline def findIndex[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -19,8 +18,7 @@ object findIndexMod {
       Boolean
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def findIndex[T](
+  inline def findIndex[T](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

@@ -18,25 +18,19 @@ trait LaunchTemplateElasticInferenceAcceleratorResponse extends StObject {
 }
 object LaunchTemplateElasticInferenceAcceleratorResponse {
   
-  @scala.inline
-  def apply(): LaunchTemplateElasticInferenceAcceleratorResponse = {
+  inline def apply(): LaunchTemplateElasticInferenceAcceleratorResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateElasticInferenceAcceleratorResponse]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateElasticInferenceAcceleratorResponseMutableBuilder[Self <: LaunchTemplateElasticInferenceAcceleratorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateElasticInferenceAcceleratorResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

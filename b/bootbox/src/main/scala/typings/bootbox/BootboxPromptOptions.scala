@@ -40,48 +40,35 @@ trait BootboxPromptOptions
 }
 object BootboxPromptOptions {
   
-  @scala.inline
-  def apply(callback: String => js.Any, title: String): BootboxPromptOptions = {
+  inline def apply(callback: String => js.Any, title: String): BootboxPromptOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxPromptOptions]
   }
   
-  @scala.inline
-  implicit class BootboxPromptOptionsMutableBuilder[Self <: BootboxPromptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BootboxPromptOptions](x: Self) {
     
-    @scala.inline
-    def setButtons(value: BootboxConfirmPromptButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: BootboxConfirmPromptButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setCallback(value: String => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: String => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInputOptions(value: js.Array[Group]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
+    inline def setInputOptions(value: js.Array[Group]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
+    inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
-    @scala.inline
-    def setInputOptionsVarargs(value: Group*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
+    inline def setInputOptionsVarargs(value: Group*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setInputType(
+    inline def setInputType(
       value: text | textarea | email | select | checkbox | date | time | number | password | radio | range
     ): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

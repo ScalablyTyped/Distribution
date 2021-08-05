@@ -81,76 +81,53 @@ trait PageData extends StObject {
 }
 object PageData {
   
-  @scala.inline
-  def apply(): PageData = {
+  inline def apply(): PageData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageData]
   }
   
-  @scala.inline
-  implicit class PageDataMutableBuilder[Self <: PageData] (val x: Self) extends AnyVal {
+  extension [Self <: PageData](x: Self) {
     
-    @scala.inline
-    def setAllShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "allShapes", value.asInstanceOf[js.Any])
+    inline def setAllShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "allShapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllShapesUndefined: Self = StObject.set(x, "allShapes", js.undefined)
+    inline def setAllShapesUndefined: Self = StObject.set(x, "allShapes", js.undefined)
     
-    @scala.inline
-    def setAllShapesVarargs(value: ShapeData*): Self = StObject.set(x, "allShapes", js.Array(value :_*))
+    inline def setAllShapesVarargs(value: ShapeData*): Self = StObject.set(x, "allShapes", js.Array(value :_*))
     
-    @scala.inline
-    def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIsBackground(value: Boolean): Self = StObject.set(x, "isBackground", value.asInstanceOf[js.Any])
+    inline def setIsBackground(value: Boolean): Self = StObject.set(x, "isBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBackgroundUndefined: Self = StObject.set(x, "isBackground", js.undefined)
+    inline def setIsBackgroundUndefined: Self = StObject.set(x, "isBackground", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[ShapeData]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
+    inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    @scala.inline
-    def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: PageViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: PageViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

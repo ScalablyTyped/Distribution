@@ -16,7 +16,7 @@ object dynamoDBClientMod {
   class DynamoDBClient protected () extends StObject {
     def this(configuration: DynamoDBConfiguration) = this()
     
-    val config: DynamoDBResolvedConfiguration = js.native
+    /* protected */ val config: DynamoDBResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

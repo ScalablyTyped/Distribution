@@ -23,34 +23,25 @@ trait SearchNetworkProfilesResponse extends StObject {
 }
 object SearchNetworkProfilesResponse {
   
-  @scala.inline
-  def apply(): SearchNetworkProfilesResponse = {
+  inline def apply(): SearchNetworkProfilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchNetworkProfilesResponse]
   }
   
-  @scala.inline
-  implicit class SearchNetworkProfilesResponseMutableBuilder[Self <: SearchNetworkProfilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchNetworkProfilesResponse](x: Self) {
     
-    @scala.inline
-    def setNetworkProfiles(value: NetworkProfileDataList): Self = StObject.set(x, "NetworkProfiles", value.asInstanceOf[js.Any])
+    inline def setNetworkProfiles(value: NetworkProfileDataList): Self = StObject.set(x, "NetworkProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfilesUndefined: Self = StObject.set(x, "NetworkProfiles", js.undefined)
+    inline def setNetworkProfilesUndefined: Self = StObject.set(x, "NetworkProfiles", js.undefined)
     
-    @scala.inline
-    def setNetworkProfilesVarargs(value: NetworkProfileData*): Self = StObject.set(x, "NetworkProfiles", js.Array(value :_*))
+    inline def setNetworkProfilesVarargs(value: NetworkProfileData*): Self = StObject.set(x, "NetworkProfiles", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

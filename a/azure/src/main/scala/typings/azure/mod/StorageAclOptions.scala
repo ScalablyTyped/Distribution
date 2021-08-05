@@ -14,25 +14,19 @@ trait StorageAclOptions
 }
 object StorageAclOptions {
   
-  @scala.inline
-  def apply(signedIdentifiers: js.Array[SignedIdentifier]): StorageAclOptions = {
+  inline def apply(signedIdentifiers: js.Array[SignedIdentifier]): StorageAclOptions = {
     val __obj = js.Dynamic.literal(signedIdentifiers = signedIdentifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageAclOptions]
   }
   
-  @scala.inline
-  implicit class StorageAclOptionsMutableBuilder[Self <: StorageAclOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StorageAclOptions](x: Self) {
     
-    @scala.inline
-    def setLeaseId(value: String): Self = StObject.set(x, "leaseId", value.asInstanceOf[js.Any])
+    inline def setLeaseId(value: String): Self = StObject.set(x, "leaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseIdUndefined: Self = StObject.set(x, "leaseId", js.undefined)
+    inline def setLeaseIdUndefined: Self = StObject.set(x, "leaseId", js.undefined)
     
-    @scala.inline
-    def setSignedIdentifiers(value: js.Array[SignedIdentifier]): Self = StObject.set(x, "signedIdentifiers", value.asInstanceOf[js.Any])
+    inline def setSignedIdentifiers(value: js.Array[SignedIdentifier]): Self = StObject.set(x, "signedIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedIdentifiersVarargs(value: SignedIdentifier*): Self = StObject.set(x, "signedIdentifiers", js.Array(value :_*))
+    inline def setSignedIdentifiersVarargs(value: SignedIdentifier*): Self = StObject.set(x, "signedIdentifiers", js.Array(value :_*))
   }
 }

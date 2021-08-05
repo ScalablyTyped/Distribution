@@ -63,91 +63,63 @@ trait ITabPanel
 }
 object ITabPanel {
   
-  @scala.inline
-  def apply(): ITabPanel = {
+  inline def apply(): ITabPanel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITabPanel]
   }
   
-  @scala.inline
-  implicit class ITabPanelMutableBuilder[Self <: ITabPanel] (val x: Self) extends AnyVal {
+  extension [Self <: ITabPanel](x: Self) {
     
-    @scala.inline
-    def setActiveTab(value: js.Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+    inline def setActiveTab(value: js.Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
+    inline def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
     
-    @scala.inline
-    def setDeferredRender(value: Boolean): Self = StObject.set(x, "deferredRender", value.asInstanceOf[js.Any])
+    inline def setDeferredRender(value: Boolean): Self = StObject.set(x, "deferredRender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferredRenderUndefined: Self = StObject.set(x, "deferredRender", js.undefined)
+    inline def setDeferredRenderUndefined: Self = StObject.set(x, "deferredRender", js.undefined)
     
-    @scala.inline
-    def setGetActiveTab(value: () => IComponent): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
+    inline def setGetActiveTab(value: () => IComponent): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
+    inline def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
     
-    @scala.inline
-    def setGetTabBar(value: () => IBar): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
+    inline def setGetTabBar(value: () => IBar): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTabBarUndefined: Self = StObject.set(x, "getTabBar", js.undefined)
+    inline def setGetTabBarUndefined: Self = StObject.set(x, "getTabBar", js.undefined)
     
-    @scala.inline
-    def setItemCls(value: java.lang.String): Self = StObject.set(x, "itemCls", value.asInstanceOf[js.Any])
+    inline def setItemCls(value: java.lang.String): Self = StObject.set(x, "itemCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemClsUndefined: Self = StObject.set(x, "itemCls", js.undefined)
+    inline def setItemClsUndefined: Self = StObject.set(x, "itemCls", js.undefined)
     
-    @scala.inline
-    def setMaxTabWidth(value: Double): Self = StObject.set(x, "maxTabWidth", value.asInstanceOf[js.Any])
+    inline def setMaxTabWidth(value: Double): Self = StObject.set(x, "maxTabWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTabWidthUndefined: Self = StObject.set(x, "maxTabWidth", js.undefined)
+    inline def setMaxTabWidthUndefined: Self = StObject.set(x, "maxTabWidth", js.undefined)
     
-    @scala.inline
-    def setMinTabWidth(value: Double): Self = StObject.set(x, "minTabWidth", value.asInstanceOf[js.Any])
+    inline def setMinTabWidth(value: Double): Self = StObject.set(x, "minTabWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTabWidthUndefined: Self = StObject.set(x, "minTabWidth", js.undefined)
+    inline def setMinTabWidthUndefined: Self = StObject.set(x, "minTabWidth", js.undefined)
     
-    @scala.inline
-    def setOnAdd(value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
+    inline def setOnAdd(value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
-    @scala.inline
-    def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+    inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
     
-    @scala.inline
-    def setRemovePanelHeader(value: Boolean): Self = StObject.set(x, "removePanelHeader", value.asInstanceOf[js.Any])
+    inline def setRemovePanelHeader(value: Boolean): Self = StObject.set(x, "removePanelHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovePanelHeaderUndefined: Self = StObject.set(x, "removePanelHeader", js.undefined)
+    inline def setRemovePanelHeaderUndefined: Self = StObject.set(x, "removePanelHeader", js.undefined)
     
-    @scala.inline
-    def setSetActiveTab(value: /* card */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
+    inline def setSetActiveTab(value: /* card */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
+    inline def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
     
-    @scala.inline
-    def setTabBar(value: js.Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
+    inline def setTabBar(value: js.Any): Self = StObject.set(x, "tabBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabBarUndefined: Self = StObject.set(x, "tabBar", js.undefined)
+    inline def setTabBarUndefined: Self = StObject.set(x, "tabBar", js.undefined)
     
-    @scala.inline
-    def setTabPosition(value: js.Any): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
+    inline def setTabPosition(value: js.Any): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
+    inline def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
   }
 }

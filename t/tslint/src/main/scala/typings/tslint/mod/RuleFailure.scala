@@ -34,6 +34,5 @@ object RuleFailure {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compare(a: typings.tslint.ruleMod.RuleFailure, b: typings.tslint.ruleMod.RuleFailure): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(a: typings.tslint.ruleMod.RuleFailure, b: typings.tslint.ruleMod.RuleFailure): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

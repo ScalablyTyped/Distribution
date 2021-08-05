@@ -13,19 +13,15 @@ trait SchemaConfigFile extends StObject {
 }
 object SchemaConfigFile {
   
-  @scala.inline
-  def apply(): SchemaConfigFile = {
+  inline def apply(): SchemaConfigFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConfigFile]
   }
   
-  @scala.inline
-  implicit class SchemaConfigFileMutableBuilder[Self <: SchemaConfigFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConfigFile](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

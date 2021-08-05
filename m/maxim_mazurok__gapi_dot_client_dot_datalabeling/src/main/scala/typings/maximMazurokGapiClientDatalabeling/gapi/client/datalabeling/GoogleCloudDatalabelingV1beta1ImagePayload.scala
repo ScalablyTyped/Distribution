@@ -20,37 +20,27 @@ trait GoogleCloudDatalabelingV1beta1ImagePayload extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ImagePayload {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ImagePayload = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ImagePayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ImagePayload]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ImagePayloadMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImagePayload] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ImagePayload](x: Self) {
     
-    @scala.inline
-    def setImageThumbnail(value: String): Self = StObject.set(x, "imageThumbnail", value.asInstanceOf[js.Any])
+    inline def setImageThumbnail(value: String): Self = StObject.set(x, "imageThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageThumbnailUndefined: Self = StObject.set(x, "imageThumbnail", js.undefined)
+    inline def setImageThumbnailUndefined: Self = StObject.set(x, "imageThumbnail", js.undefined)
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setSignedUri(value: String): Self = StObject.set(x, "signedUri", value.asInstanceOf[js.Any])
+    inline def setSignedUri(value: String): Self = StObject.set(x, "signedUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUriUndefined: Self = StObject.set(x, "signedUri", js.undefined)
+    inline def setSignedUriUndefined: Self = StObject.set(x, "signedUri", js.undefined)
   }
 }

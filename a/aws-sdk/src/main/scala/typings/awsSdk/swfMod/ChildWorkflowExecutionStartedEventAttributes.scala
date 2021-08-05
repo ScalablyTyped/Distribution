@@ -23,22 +23,17 @@ trait ChildWorkflowExecutionStartedEventAttributes extends StObject {
 }
 object ChildWorkflowExecutionStartedEventAttributes {
   
-  @scala.inline
-  def apply(initiatedEventId: EventId, workflowExecution: WorkflowExecution, workflowType: WorkflowType): ChildWorkflowExecutionStartedEventAttributes = {
+  inline def apply(initiatedEventId: EventId, workflowExecution: WorkflowExecution, workflowType: WorkflowType): ChildWorkflowExecutionStartedEventAttributes = {
     val __obj = js.Dynamic.literal(initiatedEventId = initiatedEventId.asInstanceOf[js.Any], workflowExecution = workflowExecution.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildWorkflowExecutionStartedEventAttributes]
   }
   
-  @scala.inline
-  implicit class ChildWorkflowExecutionStartedEventAttributesMutableBuilder[Self <: ChildWorkflowExecutionStartedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ChildWorkflowExecutionStartedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
+    inline def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
+    inline def setWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "workflowExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
+    inline def setWorkflowType(value: WorkflowType): Self = StObject.set(x, "workflowType", value.asInstanceOf[js.Any])
   }
 }

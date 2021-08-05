@@ -15,25 +15,19 @@ trait ClipDirection extends StObject {
 }
 object ClipDirection {
   
-  @scala.inline
-  def apply(): ClipDirection = {
+  inline def apply(): ClipDirection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClipDirection]
   }
   
-  @scala.inline
-  implicit class ClipDirectionMutableBuilder[Self <: ClipDirection] (val x: Self) extends AnyVal {
+  extension [Self <: ClipDirection](x: Self) {
     
-    @scala.inline
-    def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+    inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
+    inline def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

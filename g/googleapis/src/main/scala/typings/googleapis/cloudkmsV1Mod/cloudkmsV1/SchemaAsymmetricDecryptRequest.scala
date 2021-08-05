@@ -17,19 +17,15 @@ trait SchemaAsymmetricDecryptRequest extends StObject {
 }
 object SchemaAsymmetricDecryptRequest {
   
-  @scala.inline
-  def apply(): SchemaAsymmetricDecryptRequest = {
+  inline def apply(): SchemaAsymmetricDecryptRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsymmetricDecryptRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAsymmetricDecryptRequestMutableBuilder[Self <: SchemaAsymmetricDecryptRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsymmetricDecryptRequest](x: Self) {
     
-    @scala.inline
-    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+    inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
+    inline def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
   }
 }

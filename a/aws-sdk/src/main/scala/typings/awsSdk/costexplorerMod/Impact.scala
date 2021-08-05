@@ -18,22 +18,17 @@ trait Impact extends StObject {
 }
 object Impact {
   
-  @scala.inline
-  def apply(MaxImpact: GenericDouble): Impact = {
+  inline def apply(MaxImpact: GenericDouble): Impact = {
     val __obj = js.Dynamic.literal(MaxImpact = MaxImpact.asInstanceOf[js.Any])
     __obj.asInstanceOf[Impact]
   }
   
-  @scala.inline
-  implicit class ImpactMutableBuilder[Self <: Impact] (val x: Self) extends AnyVal {
+  extension [Self <: Impact](x: Self) {
     
-    @scala.inline
-    def setMaxImpact(value: GenericDouble): Self = StObject.set(x, "MaxImpact", value.asInstanceOf[js.Any])
+    inline def setMaxImpact(value: GenericDouble): Self = StObject.set(x, "MaxImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalImpact(value: GenericDouble): Self = StObject.set(x, "TotalImpact", value.asInstanceOf[js.Any])
+    inline def setTotalImpact(value: GenericDouble): Self = StObject.set(x, "TotalImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalImpactUndefined: Self = StObject.set(x, "TotalImpact", js.undefined)
+    inline def setTotalImpactUndefined: Self = StObject.set(x, "TotalImpact", js.undefined)
   }
 }

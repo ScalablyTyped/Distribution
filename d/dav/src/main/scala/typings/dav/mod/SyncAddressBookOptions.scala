@@ -27,31 +27,23 @@ trait SyncAddressBookOptions extends StObject {
 }
 object SyncAddressBookOptions {
   
-  @scala.inline
-  def apply(): SyncAddressBookOptions = {
+  inline def apply(): SyncAddressBookOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncAddressBookOptions]
   }
   
-  @scala.inline
-  implicit class SyncAddressBookOptionsMutableBuilder[Self <: SyncAddressBookOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SyncAddressBookOptions](x: Self) {
     
-    @scala.inline
-    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
-    @scala.inline
-    def setSyncMethod(value: basic | webdav): Self = StObject.set(x, "syncMethod", value.asInstanceOf[js.Any])
+    inline def setSyncMethod(value: basic | webdav): Self = StObject.set(x, "syncMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncMethodUndefined: Self = StObject.set(x, "syncMethod", js.undefined)
+    inline def setSyncMethodUndefined: Self = StObject.set(x, "syncMethod", js.undefined)
     
-    @scala.inline
-    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

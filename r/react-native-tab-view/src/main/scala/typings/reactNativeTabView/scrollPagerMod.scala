@@ -25,15 +25,14 @@ object scrollPagerMod {
     @JSImport("react-native-tab-view/lib/typescript/src/ScrollPager", "default.defaultProps")
     @js.native
     def defaultProps: Bounces = js.native
-    @scala.inline
-    def defaultProps_=(x: Bounces): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Bounces): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait ScrollPager[T /* <: Route */]
     extends Component[Props[T] & Overscroll, State, js.Any] {
     
-    var addListener: js.Any = js.native
+    /* private */ var addListener: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MScrollPager(): Unit = js.native
@@ -44,29 +43,29 @@ object scrollPagerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MScrollPager(): Unit = js.native
     
-    var enterListeners: js.Any = js.native
+    /* private */ var enterListeners: js.Any = js.native
     
-    var initialOffset: js.Any = js.native
+    /* private */ var initialOffset: js.Any = js.native
     
-    var interactionHandle: js.Any = js.native
+    /* private */ var interactionHandle: js.Any = js.native
     
-    var jumpTo: js.Any = js.native
+    /* private */ var jumpTo: js.Any = js.native
     
-    var layoutWidthNode: js.Any = js.native
+    /* private */ var layoutWidthNode: js.Any = js.native
     
-    var onScroll: js.Any = js.native
+    /* private */ var onScroll: js.Any = js.native
     
-    var position: js.Any = js.native
+    /* private */ var position: js.Any = js.native
     
-    var relativePosition: js.Any = js.native
+    /* private */ var relativePosition: js.Any = js.native
     
-    var removeListener: js.Any = js.native
+    /* private */ var removeListener: js.Any = js.native
     
-    var scrollTo: js.Any = js.native
+    /* private */ var scrollTo: js.Any = js.native
     
-    var scrollViewRef: js.Any = js.native
+    /* private */ var scrollViewRef: js.Any = js.native
     
-    var wasTouched: js.Any = js.native
+    /* private */ var wasTouched: js.Any = js.native
   }
   
   trait State extends StObject {
@@ -75,17 +74,14 @@ object scrollPagerMod {
   }
   object State {
     
-    @scala.inline
-    def apply(initialOffset: X): State = {
+    inline def apply(initialOffset: X): State = {
       val __obj = js.Dynamic.literal(initialOffset = initialOffset.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setInitialOffset(value: X): Self = StObject.set(x, "initialOffset", value.asInstanceOf[js.Any])
+      inline def setInitialOffset(value: X): Self = StObject.set(x, "initialOffset", value.asInstanceOf[js.Any])
     }
   }
 }

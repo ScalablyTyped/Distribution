@@ -11,6 +11,5 @@ object useRefWithInitialValueFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](initialValueFactory: js.Function0[T]): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialValueFactory.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
+  inline def default[T](initialValueFactory: js.Function0[T]): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(initialValueFactory.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
 }

@@ -44,26 +44,20 @@ object interfacesMod {
   }
   object IonicGlobal {
     
-    @scala.inline
-    def apply(): IonicGlobal = {
+    inline def apply(): IonicGlobal = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IonicGlobal]
     }
     
-    @scala.inline
-    implicit class IonicGlobalMutableBuilder[Self <: IonicGlobal] (val x: Self) extends AnyVal {
+    extension [Self <: IonicGlobal](x: Self) {
       
-      @scala.inline
-      def setAsyncQueue(value: Boolean): Self = StObject.set(x, "asyncQueue", value.asInstanceOf[js.Any])
+      inline def setAsyncQueue(value: Boolean): Self = StObject.set(x, "asyncQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncQueueUndefined: Self = StObject.set(x, "asyncQueue", js.undefined)
+      inline def setAsyncQueueUndefined: Self = StObject.set(x, "asyncQueue", js.undefined)
       
-      @scala.inline
-      def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     }
   }
   

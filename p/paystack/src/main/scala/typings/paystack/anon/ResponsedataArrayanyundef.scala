@@ -20,28 +20,21 @@ trait ResponsedataArrayanyundef
 }
 object ResponsedataArrayanyundef {
   
-  @scala.inline
-  def apply(data: js.UndefOr[js.Any] & js.UndefOr[js.Array[js.Any]], message: String, status: Boolean): ResponsedataArrayanyundef = {
+  inline def apply(data: js.UndefOr[js.Any] & js.UndefOr[js.Array[js.Any]], message: String, status: Boolean): ResponsedataArrayanyundef = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsedataArrayanyundef]
   }
   
-  @scala.inline
-  implicit class ResponsedataArrayanyundefMutableBuilder[Self <: ResponsedataArrayanyundef] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsedataArrayanyundef](x: Self) {
     
-    @scala.inline
-    def setData(value: js.UndefOr[js.Any] & js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.UndefOr[js.Any] & js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

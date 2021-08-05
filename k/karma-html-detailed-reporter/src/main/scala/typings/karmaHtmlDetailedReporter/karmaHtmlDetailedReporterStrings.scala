@@ -8,11 +8,9 @@ object karmaHtmlDetailedReporterStrings {
   
   @js.native
   sealed trait factory extends StObject
-  @scala.inline
-  def factory: factory = "factory".asInstanceOf[factory]
+  inline def factory: factory = "factory".asInstanceOf[factory]
   
   @js.native
   sealed trait `type` extends StObject
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
 }

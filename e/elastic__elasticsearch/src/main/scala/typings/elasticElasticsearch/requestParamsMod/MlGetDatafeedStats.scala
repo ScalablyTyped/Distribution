@@ -16,31 +16,23 @@ trait MlGetDatafeedStats
 }
 object MlGetDatafeedStats {
   
-  @scala.inline
-  def apply(): MlGetDatafeedStats = {
+  inline def apply(): MlGetDatafeedStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MlGetDatafeedStats]
   }
   
-  @scala.inline
-  implicit class MlGetDatafeedStatsMutableBuilder[Self <: MlGetDatafeedStats] (val x: Self) extends AnyVal {
+  extension [Self <: MlGetDatafeedStats](x: Self) {
     
-    @scala.inline
-    def setAllow_no_datafeeds(value: Boolean): Self = StObject.set(x, "allow_no_datafeeds", value.asInstanceOf[js.Any])
+    inline def setAllow_no_datafeeds(value: Boolean): Self = StObject.set(x, "allow_no_datafeeds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_no_datafeedsUndefined: Self = StObject.set(x, "allow_no_datafeeds", js.undefined)
+    inline def setAllow_no_datafeedsUndefined: Self = StObject.set(x, "allow_no_datafeeds", js.undefined)
     
-    @scala.inline
-    def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
+    inline def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
+    inline def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
     
-    @scala.inline
-    def setDatafeed_id(value: String): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
+    inline def setDatafeed_id(value: String): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatafeed_idUndefined: Self = StObject.set(x, "datafeed_id", js.undefined)
+    inline def setDatafeed_idUndefined: Self = StObject.set(x, "datafeed_id", js.undefined)
   }
 }

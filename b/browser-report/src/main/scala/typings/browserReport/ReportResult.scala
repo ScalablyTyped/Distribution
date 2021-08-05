@@ -42,8 +42,7 @@ trait ReportResult extends StObject {
 }
 object ReportResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     browser: Name,
     cookies: Boolean,
     country: City,
@@ -64,52 +63,36 @@ object ReportResult {
     __obj.asInstanceOf[ReportResult]
   }
   
-  @scala.inline
-  implicit class ReportResultMutableBuilder[Self <: ReportResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReportResult](x: Self) {
     
-    @scala.inline
-    def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: City): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: City): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlash(value: Version): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+    inline def setFlash(value: Version): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJava_(value: Version): Self = StObject.set(x, "java", value.asInstanceOf[js.Any])
+    inline def setJava_(value: Version): Self = StObject.set(x, "java", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang(value: js.Array[String]): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: js.Array[String]): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
+    inline def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
     
-    @scala.inline
-    def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen(value: Colors): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Colors): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    inline def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: Layout): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: Layout): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsockets(value: Boolean): Self = StObject.set(x, "websockets", value.asInstanceOf[js.Any])
+    inline def setWebsockets(value: Boolean): Self = StObject.set(x, "websockets", value.asInstanceOf[js.Any])
   }
 }

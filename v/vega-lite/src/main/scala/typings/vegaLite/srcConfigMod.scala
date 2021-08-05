@@ -49,20 +49,17 @@ object srcConfigMod {
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.blue")
     @js.native
     def blue: String = js.native
-    @scala.inline
-    def blue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
+    inline def blue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blue")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.brown")
     @js.native
     def brown: String = js.native
-    @scala.inline
-    def brown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("brown")(x.asInstanceOf[js.Any])
+    inline def brown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("brown")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray0")
     @js.native
     def gray0: String = js.native
-    @scala.inline
-    def gray0_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray0")(x.asInstanceOf[js.Any])
+    inline def gray0_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray0")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray1")
     @js.native
@@ -71,131 +68,109 @@ object srcConfigMod {
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray10")
     @js.native
     def gray10: String = js.native
-    @scala.inline
-    def gray10_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray10")(x.asInstanceOf[js.Any])
+    inline def gray10_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray10")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray11")
     @js.native
     def gray11: String = js.native
-    @scala.inline
-    def gray11_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray11")(x.asInstanceOf[js.Any])
+    inline def gray11_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray11")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray12")
     @js.native
     def gray12: String = js.native
-    @scala.inline
-    def gray12_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray12")(x.asInstanceOf[js.Any])
+    inline def gray12_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray12")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray13")
     @js.native
     def gray13: String = js.native
-    @scala.inline
-    def gray13_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray13")(x.asInstanceOf[js.Any])
+    inline def gray13_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray13")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray14")
     @js.native
     def gray14: String = js.native
-    @scala.inline
-    def gray14_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray14")(x.asInstanceOf[js.Any])
+    inline def gray14_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray14")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray15")
     @js.native
     def gray15: String = js.native
-    @scala.inline
-    def gray15_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray15")(x.asInstanceOf[js.Any])
+    inline def gray15_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray15")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def gray1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray1")(x.asInstanceOf[js.Any])
+    inline def gray1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray1")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray2")
     @js.native
     def gray2: String = js.native
-    @scala.inline
-    def gray2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray2")(x.asInstanceOf[js.Any])
+    inline def gray2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray2")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray3")
     @js.native
     def gray3: String = js.native
-    @scala.inline
-    def gray3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray3")(x.asInstanceOf[js.Any])
+    inline def gray3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray3")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray4")
     @js.native
     def gray4: String = js.native
-    @scala.inline
-    def gray4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray4")(x.asInstanceOf[js.Any])
+    inline def gray4_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray4")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray5")
     @js.native
     def gray5: String = js.native
-    @scala.inline
-    def gray5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray5")(x.asInstanceOf[js.Any])
+    inline def gray5_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray5")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray6")
     @js.native
     def gray6: String = js.native
-    @scala.inline
-    def gray6_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray6")(x.asInstanceOf[js.Any])
+    inline def gray6_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray6")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray7")
     @js.native
     def gray7: String = js.native
-    @scala.inline
-    def gray7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray7")(x.asInstanceOf[js.Any])
+    inline def gray7_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray7")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray8")
     @js.native
     def gray8: String = js.native
-    @scala.inline
-    def gray8_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray8")(x.asInstanceOf[js.Any])
+    inline def gray8_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray8")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.gray9")
     @js.native
     def gray9: String = js.native
-    @scala.inline
-    def gray9_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray9")(x.asInstanceOf[js.Any])
+    inline def gray9_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gray9")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.green")
     @js.native
     def green: String = js.native
-    @scala.inline
-    def green_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
+    inline def green_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("green")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.orange")
     @js.native
     def orange: String = js.native
-    @scala.inline
-    def orange_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orange")(x.asInstanceOf[js.Any])
+    inline def orange_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("orange")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.pink")
     @js.native
     def pink: String = js.native
-    @scala.inline
-    def pink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pink")(x.asInstanceOf[js.Any])
+    inline def pink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pink")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.purple")
     @js.native
     def purple: String = js.native
-    @scala.inline
-    def purple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purple")(x.asInstanceOf[js.Any])
+    inline def purple_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("purple")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.red")
     @js.native
     def red: String = js.native
-    @scala.inline
-    def red_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
+    inline def red_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.teal")
     @js.native
     def teal: String = js.native
-    @scala.inline
-    def teal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teal")(x.asInstanceOf[js.Any])
+    inline def teal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teal")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_COLOR.yellow")
     @js.native
     def yellow: String = js.native
-    @scala.inline
-    def yellow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
+    inline def yellow_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("yellow")(x.asInstanceOf[js.Any])
   }
   
   object DEFAULT_FONT_SIZE {
@@ -207,44 +182,36 @@ object srcConfigMod {
     @JSImport("vega-lite/build/src/config", "DEFAULT_FONT_SIZE.groupSubtitle")
     @js.native
     def groupSubtitle: Double = js.native
-    @scala.inline
-    def groupSubtitle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupSubtitle")(x.asInstanceOf[js.Any])
+    inline def groupSubtitle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupSubtitle")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_FONT_SIZE.groupTitle")
     @js.native
     def groupTitle: Double = js.native
-    @scala.inline
-    def groupTitle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupTitle")(x.asInstanceOf[js.Any])
+    inline def groupTitle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupTitle")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_FONT_SIZE.guideLabel")
     @js.native
     def guideLabel: Double = js.native
-    @scala.inline
-    def guideLabel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("guideLabel")(x.asInstanceOf[js.Any])
+    inline def guideLabel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("guideLabel")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_FONT_SIZE.guideTitle")
     @js.native
     def guideTitle: Double = js.native
-    @scala.inline
-    def guideTitle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("guideTitle")(x.asInstanceOf[js.Any])
+    inline def guideTitle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("guideTitle")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/config", "DEFAULT_FONT_SIZE.text")
     @js.native
     def text: Double = js.native
-    @scala.inline
-    def text_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+    inline def text_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("vega-lite/build/src/config", "DEFAULT_STEP")
   @js.native
   val DEFAULT_STEP: /* 20 */ Double = js.native
   
-  @scala.inline
-  def colorSignalConfig(): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")().asInstanceOf[Config[ExprRef | SignalRef]]
-  @scala.inline
-  def colorSignalConfig(color: Boolean): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")(color.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
-  @scala.inline
-  def colorSignalConfig(color: ColorConfig): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")(color.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
+  inline def colorSignalConfig(): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")().asInstanceOf[Config[ExprRef | SignalRef]]
+  inline def colorSignalConfig(color: Boolean): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")(color.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
+  inline def colorSignalConfig(color: ColorConfig): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorSignalConfig")(color.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   
   @JSImport("vega-lite/build/src/config", "defaultConfig")
   @js.native
@@ -254,44 +221,30 @@ object srcConfigMod {
   @js.native
   val defaultViewConfig: ViewConfig[SignalRef] = js.native
   
-  @scala.inline
-  def fontConfig(font: String): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontConfig")(font.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
+  inline def fontConfig(font: String): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontConfig")(font.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   
-  @scala.inline
-  def fontSizeSignalConfig(fontSize: Boolean): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
-  @scala.inline
-  def fontSizeSignalConfig(fontSize: FontSizeConfig): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
+  inline def fontSizeSignalConfig(fontSize: Boolean): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
+  inline def fontSizeSignalConfig(fontSize: FontSizeConfig): Config[ExprRef | SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("fontSizeSignalConfig")(fontSize.asInstanceOf[js.Any]).asInstanceOf[Config[ExprRef | SignalRef]]
   
-  @scala.inline
-  def getViewConfigContinuousSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getViewConfigContinuousSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getViewConfigContinuousSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getViewConfigContinuousSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigContinuousSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getViewConfigDiscreteSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
+  inline def getViewConfigDiscreteSize_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
   
-  @scala.inline
-  def getViewConfigDiscreteSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
+  inline def getViewConfigDiscreteSize_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteSize")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double | Step]
   
-  @scala.inline
-  def getViewConfigDiscreteStep_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getViewConfigDiscreteStep_height[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: height): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getViewConfigDiscreteStep_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getViewConfigDiscreteStep_width[ES /* <: ExprRef | SignalRef */](viewConfig: ViewConfig[ES], channel: width): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewConfigDiscreteStep")(viewConfig.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def initConfig(): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Config[SignalRef]]
-  @scala.inline
-  def initConfig(specifiedConfig: Config[ExprRef | SignalRef]): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(specifiedConfig.asInstanceOf[js.Any]).asInstanceOf[Config[SignalRef]]
+  inline def initConfig(): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[Config[SignalRef]]
+  inline def initConfig(specifiedConfig: Config[ExprRef | SignalRef]): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(specifiedConfig.asInstanceOf[js.Any]).asInstanceOf[Config[SignalRef]]
   
-  @scala.inline
-  def isVgScheme(rangeScheme: js.Array[String]): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgScheme")(rangeScheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean]
-  @scala.inline
-  def isVgScheme(rangeScheme: RangeScheme): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgScheme")(rangeScheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean]
+  inline def isVgScheme(rangeScheme: js.Array[String]): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgScheme")(rangeScheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean]
+  inline def isVgScheme(rangeScheme: RangeScheme): /* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVgScheme")(rangeScheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/scale.RangeScheme */ Boolean]
   
-  @scala.inline
-  def stripAndRedirectConfig(config: Config[SignalRef]): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripAndRedirectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Config[SignalRef]]
+  inline def stripAndRedirectConfig(config: Config[SignalRef]): Config[SignalRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripAndRedirectConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Config[SignalRef]]
   
   type ColorConfig = Record[String, Color]
   
@@ -348,65 +301,46 @@ object srcConfigMod {
   }
   object Config {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): Config[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): Config[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config[ES]]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Config[ES]) extends AnyVal {
+    extension [Self <: Config[?], ES /* <: ExprRef | SignalRef */](x: Self & Config[ES]) {
       
-      @scala.inline
-      def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+      inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+      inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
-      @scala.inline
-      def setLegend(value: LegendConfig[ES]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: LegendConfig[ES]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+      inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
-      @scala.inline
-      def setLineBreak(value: String | ES): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
+      inline def setLineBreak(value: String | ES): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
+      inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
-      @scala.inline
-      def setProjection(value: ProjectionConfig): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: ProjectionConfig): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setRange(value: RangeConfig): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: RangeConfig): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setSignals(value: js.Array[InitSignal | NewSignal]): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
+      inline def setSignals(value: js.Array[InitSignal | NewSignal]): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
+      inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      @scala.inline
-      def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value :_*))
+      inline def setSignalsVarargs(value: (InitSignal | NewSignal)*): Self = StObject.set(x, "signals", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: StyleConfigIndex[ES]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleConfigIndex[ES]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: TitleConfig[ES]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: TitleConfig[ES]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -483,80 +417,56 @@ object srcConfigMod {
   }
   object VLOnlyConfig {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): VLOnlyConfig[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): VLOnlyConfig[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VLOnlyConfig[ES]]
     }
     
-    @scala.inline
-    implicit class VLOnlyConfigMutableBuilder[Self <: VLOnlyConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & VLOnlyConfig[ES]) extends AnyVal {
+    extension [Self <: VLOnlyConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & VLOnlyConfig[ES]) {
       
-      @scala.inline
-      def setColor(value: Boolean | ColorConfig): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Boolean | ColorConfig): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setCountTitle(value: String): Self = StObject.set(x, "countTitle", value.asInstanceOf[js.Any])
+      inline def setCountTitle(value: String): Self = StObject.set(x, "countTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountTitleUndefined: Self = StObject.set(x, "countTitle", js.undefined)
+      inline def setCountTitleUndefined: Self = StObject.set(x, "countTitle", js.undefined)
       
-      @scala.inline
-      def setCustomFormatTypes(value: Boolean): Self = StObject.set(x, "customFormatTypes", value.asInstanceOf[js.Any])
+      inline def setCustomFormatTypes(value: Boolean): Self = StObject.set(x, "customFormatTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFormatTypesUndefined: Self = StObject.set(x, "customFormatTypes", js.undefined)
+      inline def setCustomFormatTypesUndefined: Self = StObject.set(x, "customFormatTypes", js.undefined)
       
-      @scala.inline
-      def setFieldTitle(value: verbal | functional | plain): Self = StObject.set(x, "fieldTitle", value.asInstanceOf[js.Any])
+      inline def setFieldTitle(value: verbal | functional | plain): Self = StObject.set(x, "fieldTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldTitleUndefined: Self = StObject.set(x, "fieldTitle", js.undefined)
+      inline def setFieldTitleUndefined: Self = StObject.set(x, "fieldTitle", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Boolean | FontSizeConfig): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Boolean | FontSizeConfig): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+      inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
       
-      @scala.inline
-      def setScale(value: ScaleConfig[ES]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: ScaleConfig[ES]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setSelection(value: SelectionConfig): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: SelectionConfig): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      @scala.inline
-      def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+      inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
+      inline def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
       
-      @scala.inline
-      def setView(value: ViewConfig[ES]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: ViewConfig[ES]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
   }
   
@@ -620,62 +530,44 @@ object srcConfigMod {
   }
   object ViewConfig {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): ViewConfig[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): ViewConfig[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewConfig[ES]]
     }
     
-    @scala.inline
-    implicit class ViewConfigMutableBuilder[Self <: ViewConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ViewConfig[ES]) extends AnyVal {
+    extension [Self <: ViewConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & ViewConfig[ES]) {
       
-      @scala.inline
-      def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+      inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
-      @scala.inline
-      def setContinuousHeight(value: Double): Self = StObject.set(x, "continuousHeight", value.asInstanceOf[js.Any])
+      inline def setContinuousHeight(value: Double): Self = StObject.set(x, "continuousHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousHeightUndefined: Self = StObject.set(x, "continuousHeight", js.undefined)
+      inline def setContinuousHeightUndefined: Self = StObject.set(x, "continuousHeight", js.undefined)
       
-      @scala.inline
-      def setContinuousWidth(value: Double): Self = StObject.set(x, "continuousWidth", value.asInstanceOf[js.Any])
+      inline def setContinuousWidth(value: Double): Self = StObject.set(x, "continuousWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousWidthUndefined: Self = StObject.set(x, "continuousWidth", js.undefined)
+      inline def setContinuousWidthUndefined: Self = StObject.set(x, "continuousWidth", js.undefined)
       
-      @scala.inline
-      def setDiscreteHeight(value: Double | Step): Self = StObject.set(x, "discreteHeight", value.asInstanceOf[js.Any])
+      inline def setDiscreteHeight(value: Double | Step): Self = StObject.set(x, "discreteHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscreteHeightUndefined: Self = StObject.set(x, "discreteHeight", js.undefined)
+      inline def setDiscreteHeightUndefined: Self = StObject.set(x, "discreteHeight", js.undefined)
       
-      @scala.inline
-      def setDiscreteWidth(value: Double | Step): Self = StObject.set(x, "discreteWidth", value.asInstanceOf[js.Any])
+      inline def setDiscreteWidth(value: Double | Step): Self = StObject.set(x, "discreteWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscreteWidthUndefined: Self = StObject.set(x, "discreteWidth", js.undefined)
+      inline def setDiscreteWidthUndefined: Self = StObject.set(x, "discreteWidth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

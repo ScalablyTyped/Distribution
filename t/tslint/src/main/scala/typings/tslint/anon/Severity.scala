@@ -16,25 +16,19 @@ trait Severity extends StObject {
 }
 object Severity {
   
-  @scala.inline
-  def apply(): Severity = {
+  inline def apply(): Severity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Severity]
   }
   
-  @scala.inline
-  implicit class SeverityMutableBuilder[Self <: Severity] (val x: Self) extends AnyVal {
+  extension [Self <: Severity](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: RuleSeverity | warn | none | default): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: RuleSeverity | warn | none | default): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
   }
 }

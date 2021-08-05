@@ -10,16 +10,13 @@ trait DeleteIssueTypeParams extends StObject {
 }
 object DeleteIssueTypeParams {
   
-  @scala.inline
-  def apply(substituteIssueTypeId: Double): DeleteIssueTypeParams = {
+  inline def apply(substituteIssueTypeId: Double): DeleteIssueTypeParams = {
     val __obj = js.Dynamic.literal(substituteIssueTypeId = substituteIssueTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIssueTypeParams]
   }
   
-  @scala.inline
-  implicit class DeleteIssueTypeParamsMutableBuilder[Self <: DeleteIssueTypeParams] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIssueTypeParams](x: Self) {
     
-    @scala.inline
-    def setSubstituteIssueTypeId(value: Double): Self = StObject.set(x, "substituteIssueTypeId", value.asInstanceOf[js.Any])
+    inline def setSubstituteIssueTypeId(value: Double): Self = StObject.set(x, "substituteIssueTypeId", value.asInstanceOf[js.Any])
   }
 }

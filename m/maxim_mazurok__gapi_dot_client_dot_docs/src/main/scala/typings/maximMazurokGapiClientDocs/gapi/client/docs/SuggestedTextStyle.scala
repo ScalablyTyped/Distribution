@@ -17,25 +17,19 @@ trait SuggestedTextStyle extends StObject {
 }
 object SuggestedTextStyle {
   
-  @scala.inline
-  def apply(): SuggestedTextStyle = {
+  inline def apply(): SuggestedTextStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestedTextStyle]
   }
   
-  @scala.inline
-  implicit class SuggestedTextStyleMutableBuilder[Self <: SuggestedTextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestedTextStyle](x: Self) {
     
-    @scala.inline
-    def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+    inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

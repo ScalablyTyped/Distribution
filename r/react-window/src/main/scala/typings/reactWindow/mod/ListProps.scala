@@ -101,8 +101,7 @@ trait ListProps
 }
 object ListProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: ComponentType[ListChildComponentProps],
     height: Double | String,
     itemCount: Double,
@@ -112,61 +111,42 @@ object ListProps {
     __obj.asInstanceOf[ListProps]
   }
   
-  @scala.inline
-  implicit class ListPropsMutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
+  extension [Self <: ListProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ComponentType[ListChildComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ComponentType[ListChildComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: CSSDirection | Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: CSSDirection | Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialScrollOffset(value: Double): Self = StObject.set(x, "initialScrollOffset", value.asInstanceOf[js.Any])
+    inline def setInitialScrollOffset(value: Double): Self = StObject.set(x, "initialScrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialScrollOffsetUndefined: Self = StObject.set(x, "initialScrollOffset", js.undefined)
+    inline def setInitialScrollOffsetUndefined: Self = StObject.set(x, "initialScrollOffset", js.undefined)
     
-    @scala.inline
-    def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemKey(value: (/* index */ Double, /* data */ js.Any) => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction2(value))
+    inline def setItemKey(value: (/* index */ Double, /* data */ js.Any) => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
+    inline def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => js.Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
+    inline def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => js.Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
+    inline def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
     
-    @scala.inline
-    def setOnScroll(value: /* props */ ListOnScrollProps => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: /* props */ ListOnScrollProps => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+    inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    @scala.inline
-    def setOverscanCount(value: Double): Self = StObject.set(x, "overscanCount", value.asInstanceOf[js.Any])
+    inline def setOverscanCount(value: Double): Self = StObject.set(x, "overscanCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverscanCountUndefined: Self = StObject.set(x, "overscanCount", js.undefined)
+    inline def setOverscanCountUndefined: Self = StObject.set(x, "overscanCount", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

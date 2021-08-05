@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BorderAlignment extends StObject
 object BorderAlignment {
   
-  @scala.inline
-  def center: typings.chartJs.chartJsStrings.center = "center".asInstanceOf[typings.chartJs.chartJsStrings.center]
+  inline def center: typings.chartJs.chartJsStrings.center = "center".asInstanceOf[typings.chartJs.chartJsStrings.center]
   
-  @scala.inline
-  def inner: typings.chartJs.chartJsStrings.inner = "inner".asInstanceOf[typings.chartJs.chartJsStrings.inner]
+  inline def inner: typings.chartJs.chartJsStrings.inner = "inner".asInstanceOf[typings.chartJs.chartJsStrings.inner]
 }

@@ -139,17 +139,14 @@ object ormMod {
   }
   object ORMOpts {
     
-    @scala.inline
-    def apply(createDatabase: DatabaseCreator): ORMOpts = {
+    inline def apply(createDatabase: DatabaseCreator): ORMOpts = {
       val __obj = js.Dynamic.literal(createDatabase = createDatabase.asInstanceOf[js.Any])
       __obj.asInstanceOf[ORMOpts]
     }
     
-    @scala.inline
-    implicit class ORMOptsMutableBuilder[Self <: ORMOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ORMOpts](x: Self) {
       
-      @scala.inline
-      def setCreateDatabase(value: DatabaseCreator): Self = StObject.set(x, "createDatabase", value.asInstanceOf[js.Any])
+      inline def setCreateDatabase(value: DatabaseCreator): Self = StObject.set(x, "createDatabase", value.asInstanceOf[js.Any])
     }
   }
   

@@ -76,8 +76,7 @@ trait XScrollBar
 }
 object XScrollBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BlockIncrement: Double,
     LineIncrement: Double,
     Maximum: Double,
@@ -107,70 +106,48 @@ object XScrollBar {
     __obj.asInstanceOf[XScrollBar]
   }
   
-  @scala.inline
-  implicit class XScrollBarMutableBuilder[Self <: XScrollBar] (val x: Self) extends AnyVal {
+  extension [Self <: XScrollBar](x: Self) {
     
-    @scala.inline
-    def setAddAdjustmentListener(value: XAdjustmentListener => Unit): Self = StObject.set(x, "addAdjustmentListener", js.Any.fromFunction1(value))
+    inline def setAddAdjustmentListener(value: XAdjustmentListener => Unit): Self = StObject.set(x, "addAdjustmentListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBlockIncrement(value: Double): Self = StObject.set(x, "BlockIncrement", value.asInstanceOf[js.Any])
+    inline def setBlockIncrement(value: Double): Self = StObject.set(x, "BlockIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBlockIncrement(value: () => Double): Self = StObject.set(x, "getBlockIncrement", js.Any.fromFunction0(value))
+    inline def setGetBlockIncrement(value: () => Double): Self = StObject.set(x, "getBlockIncrement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLineIncrement(value: () => Double): Self = StObject.set(x, "getLineIncrement", js.Any.fromFunction0(value))
+    inline def setGetLineIncrement(value: () => Double): Self = StObject.set(x, "getLineIncrement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaximum(value: () => Double): Self = StObject.set(x, "getMaximum", js.Any.fromFunction0(value))
+    inline def setGetMaximum(value: () => Double): Self = StObject.set(x, "getMaximum", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
+    inline def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisibleSize(value: () => Double): Self = StObject.set(x, "getVisibleSize", js.Any.fromFunction0(value))
+    inline def setGetVisibleSize(value: () => Double): Self = StObject.set(x, "getVisibleSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLineIncrement(value: Double): Self = StObject.set(x, "LineIncrement", value.asInstanceOf[js.Any])
+    inline def setLineIncrement(value: Double): Self = StObject.set(x, "LineIncrement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximum(value: Double): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Double): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAdjustmentListener(value: XAdjustmentListener => Unit): Self = StObject.set(x, "removeAdjustmentListener", js.Any.fromFunction1(value))
+    inline def setRemoveAdjustmentListener(value: XAdjustmentListener => Unit): Self = StObject.set(x, "removeAdjustmentListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBlockIncrement(value: Double => Unit): Self = StObject.set(x, "setBlockIncrement", js.Any.fromFunction1(value))
+    inline def setSetBlockIncrement(value: Double => Unit): Self = StObject.set(x, "setBlockIncrement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLineIncrement(value: Double => Unit): Self = StObject.set(x, "setLineIncrement", js.Any.fromFunction1(value))
+    inline def setSetLineIncrement(value: Double => Unit): Self = StObject.set(x, "setLineIncrement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMaximum(value: Double => Unit): Self = StObject.set(x, "setMaximum", js.Any.fromFunction1(value))
+    inline def setSetMaximum(value: Double => Unit): Self = StObject.set(x, "setMaximum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
+    inline def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValues(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction3(value))
+    inline def setSetValues(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetVisibleSize(value: Double => Unit): Self = StObject.set(x, "setVisibleSize", js.Any.fromFunction1(value))
+    inline def setSetVisibleSize(value: Double => Unit): Self = StObject.set(x, "setVisibleSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleSize(value: Double): Self = StObject.set(x, "VisibleSize", value.asInstanceOf[js.Any])
+    inline def setVisibleSize(value: Double): Self = StObject.set(x, "VisibleSize", value.asInstanceOf[js.Any])
   }
 }

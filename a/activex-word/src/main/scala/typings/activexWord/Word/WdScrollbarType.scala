@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdScrollbarType extends StObject
 object WdScrollbarType {
   
-  @scala.inline
-  def wdScrollbarTypeAuto: `0` = 0.asInstanceOf[`0`]
+  inline def wdScrollbarTypeAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdScrollbarTypeNo: `2` = 2.asInstanceOf[`2`]
+  inline def wdScrollbarTypeNo: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdScrollbarTypeYes: `1` = 1.asInstanceOf[`1`]
+  inline def wdScrollbarTypeYes: `1` = 1.asInstanceOf[`1`]
 }

@@ -13,20 +13,16 @@ object anon {
   }
   object AckTimeout {
     
-    @scala.inline
-    def apply(): AckTimeout = {
+    inline def apply(): AckTimeout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AckTimeout]
     }
     
-    @scala.inline
-    implicit class AckTimeoutMutableBuilder[Self <: AckTimeout] (val x: Self) extends AnyVal {
+    extension [Self <: AckTimeout](x: Self) {
       
-      @scala.inline
-      def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
+      inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
+      inline def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
     }
   }
   
@@ -38,20 +34,16 @@ object anon {
   }
   object Channel {
     
-    @scala.inline
-    def apply(channel: String, data: js.Any): Channel = {
+    inline def apply(channel: String, data: js.Any): Channel = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Channel]
     }
     
-    @scala.inline
-    implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+    extension [Self <: Channel](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,17 +53,14 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: typings.std.Error): Error = {
+    inline def apply(error: typings.std.Error): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,17 +70,14 @@ object anon {
   }
   object OldAuthToken {
     
-    @scala.inline
-    def apply(oldAuthToken: AuthToken): OldAuthToken = {
+    inline def apply(oldAuthToken: AuthToken): OldAuthToken = {
       val __obj = js.Dynamic.literal(oldAuthToken = oldAuthToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[OldAuthToken]
     }
     
-    @scala.inline
-    implicit class OldAuthTokenMutableBuilder[Self <: OldAuthToken] (val x: Self) extends AnyVal {
+    extension [Self <: OldAuthToken](x: Self) {
       
-      @scala.inline
-      def setOldAuthToken(value: AuthToken): Self = StObject.set(x, "oldAuthToken", value.asInstanceOf[js.Any])
+      inline def setOldAuthToken(value: AuthToken): Self = StObject.set(x, "oldAuthToken", value.asInstanceOf[js.Any])
     }
   }
 }

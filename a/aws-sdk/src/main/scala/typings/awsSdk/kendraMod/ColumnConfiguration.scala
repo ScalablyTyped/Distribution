@@ -33,8 +33,7 @@ trait ColumnConfiguration extends StObject {
 }
 object ColumnConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChangeDetectingColumns: ChangeDetectingColumns,
     DocumentDataColumnName: ColumnName,
     DocumentIdColumnName: ColumnName
@@ -43,34 +42,24 @@ object ColumnConfiguration {
     __obj.asInstanceOf[ColumnConfiguration]
   }
   
-  @scala.inline
-  implicit class ColumnConfigurationMutableBuilder[Self <: ColumnConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnConfiguration](x: Self) {
     
-    @scala.inline
-    def setChangeDetectingColumns(value: ChangeDetectingColumns): Self = StObject.set(x, "ChangeDetectingColumns", value.asInstanceOf[js.Any])
+    inline def setChangeDetectingColumns(value: ChangeDetectingColumns): Self = StObject.set(x, "ChangeDetectingColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeDetectingColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "ChangeDetectingColumns", js.Array(value :_*))
+    inline def setChangeDetectingColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "ChangeDetectingColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentDataColumnName(value: ColumnName): Self = StObject.set(x, "DocumentDataColumnName", value.asInstanceOf[js.Any])
+    inline def setDocumentDataColumnName(value: ColumnName): Self = StObject.set(x, "DocumentDataColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIdColumnName(value: ColumnName): Self = StObject.set(x, "DocumentIdColumnName", value.asInstanceOf[js.Any])
+    inline def setDocumentIdColumnName(value: ColumnName): Self = StObject.set(x, "DocumentIdColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentTitleColumnName(value: ColumnName): Self = StObject.set(x, "DocumentTitleColumnName", value.asInstanceOf[js.Any])
+    inline def setDocumentTitleColumnName(value: ColumnName): Self = StObject.set(x, "DocumentTitleColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentTitleColumnNameUndefined: Self = StObject.set(x, "DocumentTitleColumnName", js.undefined)
+    inline def setDocumentTitleColumnNameUndefined: Self = StObject.set(x, "DocumentTitleColumnName", js.undefined)
     
-    @scala.inline
-    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
+    inline def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "FieldMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
+    inline def setFieldMappingsUndefined: Self = StObject.set(x, "FieldMappings", js.undefined)
     
-    @scala.inline
-    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
+    inline def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = StObject.set(x, "FieldMappings", js.Array(value :_*))
   }
 }

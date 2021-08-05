@@ -54,101 +54,70 @@ object dialogMod {
   }
   object DialogProps {
     
-    @scala.inline
-    def apply(actions: js.Array[ReactNode], title: String): DialogProps = {
+    inline def apply(actions: js.Array[ReactNode], title: String): DialogProps = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogProps]
     }
     
-    @scala.inline
-    implicit class DialogPropsMutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[ReactNode]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[ReactNode]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
+      inline def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
+      inline def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
       
-      @scala.inline
-      def setBodyProps(value: js.Any): Self = StObject.set(x, "bodyProps", value.asInstanceOf[js.Any])
+      inline def setBodyProps(value: js.Any): Self = StObject.set(x, "bodyProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyPropsUndefined: Self = StObject.set(x, "bodyProps", js.undefined)
+      inline def setBodyPropsUndefined: Self = StObject.set(x, "bodyProps", js.undefined)
       
-      @scala.inline
-      def setContentProps(value: js.Any): Self = StObject.set(x, "contentProps", value.asInstanceOf[js.Any])
+      inline def setContentProps(value: js.Any): Self = StObject.set(x, "contentProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentPropsUndefined: Self = StObject.set(x, "contentProps", js.undefined)
+      inline def setContentPropsUndefined: Self = StObject.set(x, "contentProps", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setFooterProps(value: js.Any): Self = StObject.set(x, "footerProps", value.asInstanceOf[js.Any])
+      inline def setFooterProps(value: js.Any): Self = StObject.set(x, "footerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterPropsUndefined: Self = StObject.set(x, "footerProps", js.undefined)
+      inline def setFooterPropsUndefined: Self = StObject.set(x, "footerProps", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderProps(value: js.Any): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
+      inline def setHeaderProps(value: js.Any): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPropsUndefined: Self = StObject.set(x, "headerProps", js.undefined)
+      inline def setHeaderPropsUndefined: Self = StObject.set(x, "headerProps", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setHeadingLevel(value: js.Any): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+      inline def setHeadingLevel(value: js.Any): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+      inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSubheader(value: String): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
+      inline def setSubheader(value: String): Self = StObject.set(x, "subheader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
+      inline def setSubheaderUndefined: Self = StObject.set(x, "subheader", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleProps(value: js.Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
+      inline def setTitleProps(value: js.Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
+      inline def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     }
   }
 }

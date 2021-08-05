@@ -32,35 +32,26 @@ trait MetricTarget extends StObject {
 }
 object MetricTarget {
   
-  @scala.inline
-  def apply(`type`: Input[String]): MetricTarget = {
+  inline def apply(`type`: Input[String]): MetricTarget = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricTarget]
   }
   
-  @scala.inline
-  implicit class MetricTargetMutableBuilder[Self <: MetricTarget] (val x: Self) extends AnyVal {
+  extension [Self <: MetricTarget](x: Self) {
     
-    @scala.inline
-    def setAverageUtilization(value: Input[Double]): Self = StObject.set(x, "averageUtilization", value.asInstanceOf[js.Any])
+    inline def setAverageUtilization(value: Input[Double]): Self = StObject.set(x, "averageUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUtilizationUndefined: Self = StObject.set(x, "averageUtilization", js.undefined)
+    inline def setAverageUtilizationUndefined: Self = StObject.set(x, "averageUtilization", js.undefined)
     
-    @scala.inline
-    def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
+    inline def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
+    inline def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

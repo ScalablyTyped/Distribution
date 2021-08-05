@@ -18,26 +18,20 @@ object typesMod {
   }
   object IPageOptions {
     
-    @scala.inline
-    def apply(): IPageOptions = {
+    inline def apply(): IPageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPageOptions]
     }
     
-    @scala.inline
-    implicit class IPageOptionsMutableBuilder[Self <: IPageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IPageOptions](x: Self) {
       
-      @scala.inline
-      def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
 }

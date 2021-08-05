@@ -11,16 +11,13 @@ trait Info extends StObject {
 }
 object Info {
   
-  @scala.inline
-  def apply(info: PropertyBaseDefinition): Info = {
+  inline def apply(info: PropertyBaseDefinition): Info = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Info]
   }
   
-  @scala.inline
-  implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+  extension [Self <: Info](x: Self) {
     
-    @scala.inline
-    def setInfo(value: PropertyBaseDefinition): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: PropertyBaseDefinition): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }
 }

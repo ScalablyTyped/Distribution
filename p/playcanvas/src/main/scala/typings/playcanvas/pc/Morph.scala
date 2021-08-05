@@ -26,19 +26,15 @@ trait Morph extends StObject {
 }
 object Morph {
   
-  @scala.inline
-  def apply(destroy: () => Unit, getTarget: Double => MorphTarget): Morph = {
+  inline def apply(destroy: () => Unit, getTarget: Double => MorphTarget): Morph = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getTarget = js.Any.fromFunction1(getTarget))
     __obj.asInstanceOf[Morph]
   }
   
-  @scala.inline
-  implicit class MorphMutableBuilder[Self <: Morph] (val x: Self) extends AnyVal {
+  extension [Self <: Morph](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTarget(value: Double => MorphTarget): Self = StObject.set(x, "getTarget", js.Any.fromFunction1(value))
+    inline def setGetTarget(value: Double => MorphTarget): Self = StObject.set(x, "getTarget", js.Any.fromFunction1(value))
   }
 }

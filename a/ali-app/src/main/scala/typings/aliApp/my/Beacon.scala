@@ -30,8 +30,7 @@ trait Beacon extends StObject {
 }
 object Beacon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accuracy: Double,
     major: String,
     minor: String,
@@ -43,25 +42,18 @@ object Beacon {
     __obj.asInstanceOf[Beacon]
   }
   
-  @scala.inline
-  implicit class BeaconMutableBuilder[Self <: Beacon] (val x: Self) extends AnyVal {
+  extension [Self <: Beacon](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximity(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+    inline def setProximity(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
+    inline def setRssi(value: Double): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

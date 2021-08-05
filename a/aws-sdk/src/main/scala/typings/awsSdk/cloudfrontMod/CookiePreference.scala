@@ -18,22 +18,17 @@ trait CookiePreference extends StObject {
 }
 object CookiePreference {
   
-  @scala.inline
-  def apply(Forward: ItemSelection): CookiePreference = {
+  inline def apply(Forward: ItemSelection): CookiePreference = {
     val __obj = js.Dynamic.literal(Forward = Forward.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookiePreference]
   }
   
-  @scala.inline
-  implicit class CookiePreferenceMutableBuilder[Self <: CookiePreference] (val x: Self) extends AnyVal {
+  extension [Self <: CookiePreference](x: Self) {
     
-    @scala.inline
-    def setForward(value: ItemSelection): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: ItemSelection): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistedNames(value: CookieNames): Self = StObject.set(x, "WhitelistedNames", value.asInstanceOf[js.Any])
+    inline def setWhitelistedNames(value: CookieNames): Self = StObject.set(x, "WhitelistedNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistedNamesUndefined: Self = StObject.set(x, "WhitelistedNames", js.undefined)
+    inline def setWhitelistedNamesUndefined: Self = StObject.set(x, "WhitelistedNames", js.undefined)
   }
 }

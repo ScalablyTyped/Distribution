@@ -31,67 +31,47 @@ trait TDocumentInformation extends StObject {
 }
 object TDocumentInformation {
   
-  @scala.inline
-  def apply(): TDocumentInformation = {
+  inline def apply(): TDocumentInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TDocumentInformation]
   }
   
-  @scala.inline
-  implicit class TDocumentInformationMutableBuilder[Self <: TDocumentInformation] (val x: Self) extends AnyVal {
+  extension [Self <: TDocumentInformation](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    @scala.inline
-    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setModDate(value: Date): Self = StObject.set(x, "modDate", value.asInstanceOf[js.Any])
+    inline def setModDate(value: Date): Self = StObject.set(x, "modDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModDateUndefined: Self = StObject.set(x, "modDate", js.undefined)
+    inline def setModDateUndefined: Self = StObject.set(x, "modDate", js.undefined)
     
-    @scala.inline
-    def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
+    inline def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
+    inline def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTrapped(value: String): Self = StObject.set(x, "trapped", value.asInstanceOf[js.Any])
+    inline def setTrapped(value: String): Self = StObject.set(x, "trapped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrappedUndefined: Self = StObject.set(x, "trapped", js.undefined)
+    inline def setTrappedUndefined: Self = StObject.set(x, "trapped", js.undefined)
   }
 }

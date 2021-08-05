@@ -31,13 +31,10 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def styled(`object`: CSSObject): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
-    @scala.inline
-    def styled(`object`: InterpolationFunction[js.Any]): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
+    inline def styled(`object`: CSSObject): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
+    inline def styled(`object`: InterpolationFunction[js.Any]): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
     /* static member */
-    @scala.inline
-    def styled(strings: TemplateStringsArray, interpolations: js.Any*): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
+    inline def styled(strings: TemplateStringsArray, interpolations: js.Any*): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
   }
   
   @JSImport("styled-react-modal", "BaseModalBackground")
@@ -82,77 +79,54 @@ object mod {
   }
   object ModalProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean): ModalProps = {
+    inline def apply(isOpen: Boolean): ModalProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModalProps]
     }
     
-    @scala.inline
-    implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalProps](x: Self) {
       
-      @scala.inline
-      def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
+      inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+      inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
       
-      @scala.inline
-      def setAfterOpen(value: () => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction0(value))
+      inline def setAfterOpen(value: () => Unit): Self = StObject.set(x, "afterOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
+      inline def setAfterOpenUndefined: Self = StObject.set(x, "afterOpen", js.undefined)
       
-      @scala.inline
-      def setAllowScroll(value: Boolean): Self = StObject.set(x, "allowScroll", value.asInstanceOf[js.Any])
+      inline def setAllowScroll(value: Boolean): Self = StObject.set(x, "allowScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowScrollUndefined: Self = StObject.set(x, "allowScroll", js.undefined)
+      inline def setAllowScrollUndefined: Self = StObject.set(x, "allowScroll", js.undefined)
       
-      @scala.inline
-      def setBackgroundProps(value: js.Object): Self = StObject.set(x, "backgroundProps", value.asInstanceOf[js.Any])
+      inline def setBackgroundProps(value: js.Object): Self = StObject.set(x, "backgroundProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundPropsUndefined: Self = StObject.set(x, "backgroundProps", js.undefined)
+      inline def setBackgroundPropsUndefined: Self = StObject.set(x, "backgroundProps", js.undefined)
       
-      @scala.inline
-      def setBeforeClose(value: js.Promise[Unit] | js.Function0[Unit]): Self = StObject.set(x, "beforeClose", value.asInstanceOf[js.Any])
+      inline def setBeforeClose(value: js.Promise[Unit] | js.Function0[Unit]): Self = StObject.set(x, "beforeClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeCloseFunction0(value: () => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction0(value))
+      inline def setBeforeCloseFunction0(value: () => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+      inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
       
-      @scala.inline
-      def setBeforeOpen(value: js.Promise[Unit] | js.Function0[Unit]): Self = StObject.set(x, "beforeOpen", value.asInstanceOf[js.Any])
+      inline def setBeforeOpen(value: js.Promise[Unit] | js.Function0[Unit]): Self = StObject.set(x, "beforeOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeOpenFunction0(value: () => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction0(value))
+      inline def setBeforeOpenFunction0(value: () => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
+      inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBackgroundClick(value: /* event */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBackgroundClick", js.Any.fromFunction1(value))
+      inline def setOnBackgroundClick(value: /* event */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onBackgroundClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackgroundClickUndefined: Self = StObject.set(x, "onBackgroundClick", js.undefined)
+      inline def setOnBackgroundClickUndefined: Self = StObject.set(x, "onBackgroundClick", js.undefined)
       
-      @scala.inline
-      def setOnEscapeKeydown(value: /* event */ Event => Unit): Self = StObject.set(x, "onEscapeKeydown", js.Any.fromFunction1(value))
+      inline def setOnEscapeKeydown(value: /* event */ Event => Unit): Self = StObject.set(x, "onEscapeKeydown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEscapeKeydownUndefined: Self = StObject.set(x, "onEscapeKeydown", js.undefined)
+      inline def setOnEscapeKeydownUndefined: Self = StObject.set(x, "onEscapeKeydown", js.undefined)
     }
   }
   
@@ -164,26 +138,20 @@ object mod {
   }
   object ModalProviderProps {
     
-    @scala.inline
-    def apply(): ModalProviderProps = {
+    inline def apply(): ModalProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalProviderProps]
     }
     
-    @scala.inline
-    implicit class ModalProviderPropsMutableBuilder[Self <: ModalProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalProviderProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundComponent(value: AnyStyledComponent): Self = StObject.set(x, "backgroundComponent", value.asInstanceOf[js.Any])
+      inline def setBackgroundComponent(value: AnyStyledComponent): Self = StObject.set(x, "backgroundComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundComponentUndefined: Self = StObject.set(x, "backgroundComponent", js.undefined)
+      inline def setBackgroundComponentUndefined: Self = StObject.set(x, "backgroundComponent", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

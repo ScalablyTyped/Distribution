@@ -24,8 +24,7 @@ trait BusLine extends StObject {
 }
 object BusLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     company: String,
     endTime: String,
     getBusStation: Double => BusStation,
@@ -39,31 +38,22 @@ object BusLine {
     __obj.asInstanceOf[BusLine]
   }
   
-  @scala.inline
-  implicit class BusLineMutableBuilder[Self <: BusLine] (val x: Self) extends AnyVal {
+  extension [Self <: BusLine](x: Self) {
     
-    @scala.inline
-    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBusStation(value: Double => BusStation): Self = StObject.set(x, "getBusStation", js.Any.fromFunction1(value))
+    inline def setGetBusStation(value: Double => BusStation): Self = StObject.set(x, "getBusStation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumBusStations(value: () => String): Self = StObject.set(x, "getNumBusStations", js.Any.fromFunction0(value))
+    inline def setGetNumBusStations(value: () => String): Self = StObject.set(x, "getNumBusStations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPath(value: () => js.Array[Point]): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
+    inline def setGetPath(value: () => js.Array[Point]): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPolyline(value: () => Polyline): Self = StObject.set(x, "getPolyline", js.Any.fromFunction0(value))
+    inline def setGetPolyline(value: () => Polyline): Self = StObject.set(x, "getPolyline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

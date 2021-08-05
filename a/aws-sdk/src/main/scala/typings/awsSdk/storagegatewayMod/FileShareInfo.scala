@@ -18,43 +18,31 @@ trait FileShareInfo extends StObject {
 }
 object FileShareInfo {
   
-  @scala.inline
-  def apply(): FileShareInfo = {
+  inline def apply(): FileShareInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileShareInfo]
   }
   
-  @scala.inline
-  implicit class FileShareInfoMutableBuilder[Self <: FileShareInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FileShareInfo](x: Self) {
     
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
+    inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
+    inline def setFileShareARNUndefined: Self = StObject.set(x, "FileShareARN", js.undefined)
     
-    @scala.inline
-    def setFileShareId(value: FileShareId): Self = StObject.set(x, "FileShareId", value.asInstanceOf[js.Any])
+    inline def setFileShareId(value: FileShareId): Self = StObject.set(x, "FileShareId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareIdUndefined: Self = StObject.set(x, "FileShareId", js.undefined)
+    inline def setFileShareIdUndefined: Self = StObject.set(x, "FileShareId", js.undefined)
     
-    @scala.inline
-    def setFileShareStatus(value: FileShareStatus): Self = StObject.set(x, "FileShareStatus", value.asInstanceOf[js.Any])
+    inline def setFileShareStatus(value: FileShareStatus): Self = StObject.set(x, "FileShareStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareStatusUndefined: Self = StObject.set(x, "FileShareStatus", js.undefined)
+    inline def setFileShareStatusUndefined: Self = StObject.set(x, "FileShareStatus", js.undefined)
     
-    @scala.inline
-    def setFileShareType(value: FileShareType): Self = StObject.set(x, "FileShareType", value.asInstanceOf[js.Any])
+    inline def setFileShareType(value: FileShareType): Self = StObject.set(x, "FileShareType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShareTypeUndefined: Self = StObject.set(x, "FileShareType", js.undefined)
+    inline def setFileShareTypeUndefined: Self = StObject.set(x, "FileShareType", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

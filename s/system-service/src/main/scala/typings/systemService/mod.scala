@@ -118,17 +118,14 @@ object mod {
   }
   object ServiceConfiguration {
     
-    @scala.inline
-    def apply(log: Config): ServiceConfiguration = {
+    inline def apply(log: Config): ServiceConfiguration = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceConfiguration]
     }
     
-    @scala.inline
-    implicit class ServiceConfigurationMutableBuilder[Self <: ServiceConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceConfiguration](x: Self) {
       
-      @scala.inline
-      def setLog(value: Config): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Config): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
   }
 }

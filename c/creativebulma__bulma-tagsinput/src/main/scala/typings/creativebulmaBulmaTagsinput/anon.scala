@@ -15,20 +15,16 @@ object anon {
   }
   object Item {
     
-    @scala.inline
-    def apply(item: String | BulmaTagsInputItem, tag: String): Item = {
+    inline def apply(item: String | BulmaTagsInputItem, tag: String): Item = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setItem(value: String | BulmaTagsInputItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String | BulmaTagsInputItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
 }

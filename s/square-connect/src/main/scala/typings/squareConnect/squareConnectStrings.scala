@@ -35,4776 +35,4083 @@ object squareConnectStrings {
   sealed trait ACCESS_TOKEN_EXPIRED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def ACCESS_TOKEN_EXPIRED: ACCESS_TOKEN_EXPIRED = "ACCESS_TOKEN_EXPIRED".asInstanceOf[ACCESS_TOKEN_EXPIRED]
+  inline def ACCESS_TOKEN_EXPIRED: ACCESS_TOKEN_EXPIRED = "ACCESS_TOKEN_EXPIRED".asInstanceOf[ACCESS_TOKEN_EXPIRED]
   
   @js.native
   sealed trait ACCESS_TOKEN_REVOKED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def ACCESS_TOKEN_REVOKED: ACCESS_TOKEN_REVOKED = "ACCESS_TOKEN_REVOKED".asInstanceOf[ACCESS_TOKEN_REVOKED]
+  inline def ACCESS_TOKEN_REVOKED: ACCESS_TOKEN_REVOKED = "ACCESS_TOKEN_REVOKED".asInstanceOf[ACCESS_TOKEN_REVOKED]
   
   @js.native
   sealed trait ACTIVE
     extends StObject
        with ActivityStatusType
-  @scala.inline
-  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
+  inline def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
   
   @js.native
   sealed trait AD
     extends StObject
        with CountryType
-  @scala.inline
-  def AD: AD = "AD".asInstanceOf[AD]
+  inline def AD: AD = "AD".asInstanceOf[AD]
   
   @js.native
   sealed trait ADDITIVE
     extends StObject
        with TaxType
-  @scala.inline
-  def ADDITIVE: ADDITIVE = "ADDITIVE".asInstanceOf[ADDITIVE]
+  inline def ADDITIVE: ADDITIVE = "ADDITIVE".asInstanceOf[ADDITIVE]
   
   @js.native
   sealed trait ADJUSTMENT
     extends StObject
        with InventoryType
-  @scala.inline
-  def ADJUSTMENT: ADJUSTMENT = "ADJUSTMENT".asInstanceOf[ADJUSTMENT]
+  inline def ADJUSTMENT: ADJUSTMENT = "ADJUSTMENT".asInstanceOf[ADJUSTMENT]
   
   @js.native
   sealed trait AE
     extends StObject
        with CountryType
-  @scala.inline
-  def AE: AE = "AE".asInstanceOf[AE]
+  inline def AE: AE = "AE".asInstanceOf[AE]
   
   @js.native
   sealed trait AED
     extends StObject
        with CurrencyType
-  @scala.inline
-  def AED: AED = "AED".asInstanceOf[AED]
+  inline def AED: AED = "AED".asInstanceOf[AED]
   
   @js.native
   sealed trait AF
     extends StObject
        with CountryType
-  @scala.inline
-  def AF: AF = "AF".asInstanceOf[AF]
+  inline def AF: AF = "AF".asInstanceOf[AF]
   
   @js.native
   sealed trait AFN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def AFN: AFN = "AFN".asInstanceOf[AFN]
+  inline def AFN: AFN = "AFN".asInstanceOf[AFN]
   
   @js.native
   sealed trait AG
     extends StObject
        with CountryType
-  @scala.inline
-  def AG: AG = "AG".asInstanceOf[AG]
+  inline def AG: AG = "AG".asInstanceOf[AG]
   
   @js.native
   sealed trait AI
     extends StObject
        with CountryType
-  @scala.inline
-  def AI: AI = "AI".asInstanceOf[AI]
+  inline def AI: AI = "AI".asInstanceOf[AI]
   
   @js.native
   sealed trait AL
     extends StObject
        with CountryType
-  @scala.inline
-  def AL: AL = "AL".asInstanceOf[AL]
+  inline def AL: AL = "AL".asInstanceOf[AL]
   
   @js.native
   sealed trait ALL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
+  inline def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
   sealed trait AM
     extends StObject
        with CountryType
-  @scala.inline
-  def AM: AM = "AM".asInstanceOf[AM]
+  inline def AM: AM = "AM".asInstanceOf[AM]
   
   @js.native
   sealed trait AMD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def AMD: AMD = "AMD".asInstanceOf[AMD]
+  inline def AMD: AMD = "AMD".asInstanceOf[AMD]
   
   @js.native
   sealed trait AMERICAN_EXPRESS
     extends StObject
        with CardBrandType
-  @scala.inline
-  def AMERICAN_EXPRESS: AMERICAN_EXPRESS = "AMERICAN_EXPRESS".asInstanceOf[AMERICAN_EXPRESS]
+  inline def AMERICAN_EXPRESS: AMERICAN_EXPRESS = "AMERICAN_EXPRESS".asInstanceOf[AMERICAN_EXPRESS]
   
   @js.native
   sealed trait AMOUNT_TOO_HIGH
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def AMOUNT_TOO_HIGH: AMOUNT_TOO_HIGH = "AMOUNT_TOO_HIGH".asInstanceOf[AMOUNT_TOO_HIGH]
+  inline def AMOUNT_TOO_HIGH: AMOUNT_TOO_HIGH = "AMOUNT_TOO_HIGH".asInstanceOf[AMOUNT_TOO_HIGH]
   
   @js.native
   sealed trait ANG
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ANG: ANG = "ANG".asInstanceOf[ANG]
+  inline def ANG: ANG = "ANG".asInstanceOf[ANG]
   
   @js.native
   sealed trait AO
     extends StObject
        with CountryType
-  @scala.inline
-  def AO: AO = "AO".asInstanceOf[AO]
+  inline def AO: AO = "AO".asInstanceOf[AO]
   
   @js.native
   sealed trait AOA
     extends StObject
        with CurrencyType
-  @scala.inline
-  def AOA: AOA = "AOA".asInstanceOf[AOA]
+  inline def AOA: AOA = "AOA".asInstanceOf[AOA]
   
   @js.native
   sealed trait API_ERROR
     extends StObject
        with ErrorCategoryType
-  @scala.inline
-  def API_ERROR: API_ERROR = "API_ERROR".asInstanceOf[API_ERROR]
+  inline def API_ERROR: API_ERROR = "API_ERROR".asInstanceOf[API_ERROR]
   
   @js.native
   sealed trait API_VERSION_INCOMPATIBLE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def API_VERSION_INCOMPATIBLE: API_VERSION_INCOMPATIBLE = "API_VERSION_INCOMPATIBLE".asInstanceOf[API_VERSION_INCOMPATIBLE]
+  inline def API_VERSION_INCOMPATIBLE: API_VERSION_INCOMPATIBLE = "API_VERSION_INCOMPATIBLE".asInstanceOf[API_VERSION_INCOMPATIBLE]
   
   @js.native
   sealed trait APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND: APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND = "APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND".asInstanceOf[APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND]
+  inline def APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND: APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND = "APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND".asInstanceOf[APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND]
   
   @js.native
   sealed trait APPLICATION_DISABLED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def APPLICATION_DISABLED: APPLICATION_DISABLED = "APPLICATION_DISABLED".asInstanceOf[APPLICATION_DISABLED]
+  inline def APPLICATION_DISABLED: APPLICATION_DISABLED = "APPLICATION_DISABLED".asInstanceOf[APPLICATION_DISABLED]
   
   @js.native
   sealed trait APPOINTMENTS
     extends StObject
        with CustomerSourceType
        with ProductSourceType
-  @scala.inline
-  def APPOINTMENTS: APPOINTMENTS = "APPOINTMENTS".asInstanceOf[APPOINTMENTS]
+  inline def APPOINTMENTS: APPOINTMENTS = "APPOINTMENTS".asInstanceOf[APPOINTMENTS]
   
   @js.native
   sealed trait APPOINTMENTS_SERVICE extends StObject
-  @scala.inline
-  def APPOINTMENTS_SERVICE: APPOINTMENTS_SERVICE = "APPOINTMENTS_SERVICE".asInstanceOf[APPOINTMENTS_SERVICE]
+  inline def APPOINTMENTS_SERVICE: APPOINTMENTS_SERVICE = "APPOINTMENTS_SERVICE".asInstanceOf[APPOINTMENTS_SERVICE]
   
   @js.native
   sealed trait APPROVED extends StObject
-  @scala.inline
-  def APPROVED: APPROVED = "APPROVED".asInstanceOf[APPROVED]
+  inline def APPROVED: APPROVED = "APPROVED".asInstanceOf[APPROVED]
   
   @js.native
   sealed trait AQ
     extends StObject
        with CountryType
-  @scala.inline
-  def AQ: AQ = "AQ".asInstanceOf[AQ]
+  inline def AQ: AQ = "AQ".asInstanceOf[AQ]
   
   @js.native
   sealed trait AR
     extends StObject
        with CountryType
-  @scala.inline
-  def AR: AR = "AR".asInstanceOf[AR]
+  inline def AR: AR = "AR".asInstanceOf[AR]
   
   @js.native
   sealed trait ARRAY_EMPTY
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def ARRAY_EMPTY: ARRAY_EMPTY = "ARRAY_EMPTY".asInstanceOf[ARRAY_EMPTY]
+  inline def ARRAY_EMPTY: ARRAY_EMPTY = "ARRAY_EMPTY".asInstanceOf[ARRAY_EMPTY]
   
   @js.native
   sealed trait ARRAY_LENGTH_TOO_LONG
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def ARRAY_LENGTH_TOO_LONG: ARRAY_LENGTH_TOO_LONG = "ARRAY_LENGTH_TOO_LONG".asInstanceOf[ARRAY_LENGTH_TOO_LONG]
+  inline def ARRAY_LENGTH_TOO_LONG: ARRAY_LENGTH_TOO_LONG = "ARRAY_LENGTH_TOO_LONG".asInstanceOf[ARRAY_LENGTH_TOO_LONG]
   
   @js.native
   sealed trait ARRAY_LENGTH_TOO_SHORT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def ARRAY_LENGTH_TOO_SHORT: ARRAY_LENGTH_TOO_SHORT = "ARRAY_LENGTH_TOO_SHORT".asInstanceOf[ARRAY_LENGTH_TOO_SHORT]
+  inline def ARRAY_LENGTH_TOO_SHORT: ARRAY_LENGTH_TOO_SHORT = "ARRAY_LENGTH_TOO_SHORT".asInstanceOf[ARRAY_LENGTH_TOO_SHORT]
   
   @js.native
   sealed trait ARS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ARS: ARS = "ARS".asInstanceOf[ARS]
+  inline def ARS: ARS = "ARS".asInstanceOf[ARS]
   
   @js.native
   sealed trait AS
     extends StObject
        with CountryType
-  @scala.inline
-  def AS: AS = "AS".asInstanceOf[AS]
+  inline def AS: AS = "AS".asInstanceOf[AS]
   
   @js.native
   sealed trait ASAP extends StObject
-  @scala.inline
-  def ASAP: ASAP = "ASAP".asInstanceOf[ASAP]
+  inline def ASAP: ASAP = "ASAP".asInstanceOf[ASAP]
   
   @js.native
   sealed trait ASC
     extends StObject
        with SortOrderType
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
+  inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
   sealed trait AT
     extends StObject
        with CountryType
-  @scala.inline
-  def AT: AT = "AT".asInstanceOf[AT]
+  inline def AT: AT = "AT".asInstanceOf[AT]
   
   @js.native
   sealed trait AU
     extends StObject
        with CountryType
-  @scala.inline
-  def AU: AU = "AU".asInstanceOf[AU]
+  inline def AU: AU = "AU".asInstanceOf[AU]
   
   @js.native
   sealed trait AUD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def AUD: AUD = "AUD".asInstanceOf[AUD]
+  inline def AUD: AUD = "AUD".asInstanceOf[AUD]
   
   @js.native
   sealed trait AUTHENTICATION_ERROR
     extends StObject
        with ErrorCategoryType
-  @scala.inline
-  def AUTHENTICATION_ERROR: AUTHENTICATION_ERROR = "AUTHENTICATION_ERROR".asInstanceOf[AUTHENTICATION_ERROR]
+  inline def AUTHENTICATION_ERROR: AUTHENTICATION_ERROR = "AUTHENTICATION_ERROR".asInstanceOf[AUTHENTICATION_ERROR]
   
   @js.native
   sealed trait AUTHORIZED extends StObject
-  @scala.inline
-  def AUTHORIZED: AUTHORIZED = "AUTHORIZED".asInstanceOf[AUTHORIZED]
+  inline def AUTHORIZED: AUTHORIZED = "AUTHORIZED".asInstanceOf[AUTHORIZED]
   
   @js.native
   sealed trait AW
     extends StObject
        with CountryType
-  @scala.inline
-  def AW: AW = "AW".asInstanceOf[AW]
+  inline def AW: AW = "AW".asInstanceOf[AW]
   
   @js.native
   sealed trait AWG
     extends StObject
        with CurrencyType
-  @scala.inline
-  def AWG: AWG = "AWG".asInstanceOf[AWG]
+  inline def AWG: AWG = "AWG".asInstanceOf[AWG]
   
   @js.native
   sealed trait AX
     extends StObject
        with CountryType
-  @scala.inline
-  def AX: AX = "AX".asInstanceOf[AX]
+  inline def AX: AX = "AX".asInstanceOf[AX]
   
   @js.native
   sealed trait AZ
     extends StObject
        with CountryType
-  @scala.inline
-  def AZ: AZ = "AZ".asInstanceOf[AZ]
+  inline def AZ: AZ = "AZ".asInstanceOf[AZ]
   
   @js.native
   sealed trait AZN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def AZN: AZN = "AZN".asInstanceOf[AZN]
+  inline def AZN: AZN = "AZN".asInstanceOf[AZN]
   
   @js.native
   sealed trait BA
     extends StObject
        with CountryType
-  @scala.inline
-  def BA: BA = "BA".asInstanceOf[BA]
+  inline def BA: BA = "BA".asInstanceOf[BA]
   
   @js.native
   sealed trait BAD_CERTIFICATE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def BAD_CERTIFICATE: BAD_CERTIFICATE = "BAD_CERTIFICATE".asInstanceOf[BAD_CERTIFICATE]
+  inline def BAD_CERTIFICATE: BAD_CERTIFICATE = "BAD_CERTIFICATE".asInstanceOf[BAD_CERTIFICATE]
   
   @js.native
   sealed trait BAD_REQUEST
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def BAD_REQUEST: BAD_REQUEST = "BAD_REQUEST".asInstanceOf[BAD_REQUEST]
+  inline def BAD_REQUEST: BAD_REQUEST = "BAD_REQUEST".asInstanceOf[BAD_REQUEST]
   
   @js.native
   sealed trait BAM
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BAM: BAM = "BAM".asInstanceOf[BAM]
+  inline def BAM: BAM = "BAM".asInstanceOf[BAM]
   
   @js.native
   sealed trait BB
     extends StObject
        with CountryType
-  @scala.inline
-  def BB: BB = "BB".asInstanceOf[BB]
+  inline def BB: BB = "BB".asInstanceOf[BB]
   
   @js.native
   sealed trait BBD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BBD: BBD = "BBD".asInstanceOf[BBD]
+  inline def BBD: BBD = "BBD".asInstanceOf[BBD]
   
   @js.native
   sealed trait BD
     extends StObject
        with CountryType
-  @scala.inline
-  def BD: BD = "BD".asInstanceOf[BD]
+  inline def BD: BD = "BD".asInstanceOf[BD]
   
   @js.native
   sealed trait BDT
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BDT: BDT = "BDT".asInstanceOf[BDT]
+  inline def BDT: BDT = "BDT".asInstanceOf[BDT]
   
   @js.native
   sealed trait BE
     extends StObject
        with CountryType
-  @scala.inline
-  def BE: BE = "BE".asInstanceOf[BE]
+  inline def BE: BE = "BE".asInstanceOf[BE]
   
   @js.native
   sealed trait BF
     extends StObject
        with CountryType
-  @scala.inline
-  def BF: BF = "BF".asInstanceOf[BF]
+  inline def BF: BF = "BF".asInstanceOf[BF]
   
   @js.native
   sealed trait BG
     extends StObject
        with CountryType
-  @scala.inline
-  def BG: BG = "BG".asInstanceOf[BG]
+  inline def BG: BG = "BG".asInstanceOf[BG]
   
   @js.native
   sealed trait BGN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BGN: BGN = "BGN".asInstanceOf[BGN]
+  inline def BGN: BGN = "BGN".asInstanceOf[BGN]
   
   @js.native
   sealed trait BH
     extends StObject
        with CountryType
-  @scala.inline
-  def BH: BH = "BH".asInstanceOf[BH]
+  inline def BH: BH = "BH".asInstanceOf[BH]
   
   @js.native
   sealed trait BHD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BHD: BHD = "BHD".asInstanceOf[BHD]
+  inline def BHD: BHD = "BHD".asInstanceOf[BHD]
   
   @js.native
   sealed trait BI
     extends StObject
        with CountryType
-  @scala.inline
-  def BI: BI = "BI".asInstanceOf[BI]
+  inline def BI: BI = "BI".asInstanceOf[BI]
   
   @js.native
   sealed trait BIF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BIF: BIF = "BIF".asInstanceOf[BIF]
+  inline def BIF: BIF = "BIF".asInstanceOf[BIF]
   
   @js.native
   sealed trait BILLING
     extends StObject
        with ProductSourceType
-  @scala.inline
-  def BILLING: BILLING = "BILLING".asInstanceOf[BILLING]
+  inline def BILLING: BILLING = "BILLING".asInstanceOf[BILLING]
   
   @js.native
   sealed trait BJ
     extends StObject
        with CountryType
-  @scala.inline
-  def BJ: BJ = "BJ".asInstanceOf[BJ]
+  inline def BJ: BJ = "BJ".asInstanceOf[BJ]
   
   @js.native
   sealed trait BL
     extends StObject
        with CountryType
-  @scala.inline
-  def BL: BL = "BL".asInstanceOf[BL]
+  inline def BL: BL = "BL".asInstanceOf[BL]
   
   @js.native
   sealed trait BM
     extends StObject
        with CountryType
-  @scala.inline
-  def BM: BM = "BM".asInstanceOf[BM]
+  inline def BM: BM = "BM".asInstanceOf[BM]
   
   @js.native
   sealed trait BMD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BMD: BMD = "BMD".asInstanceOf[BMD]
+  inline def BMD: BMD = "BMD".asInstanceOf[BMD]
   
   @js.native
   sealed trait BN
     extends StObject
        with CountryType
-  @scala.inline
-  def BN: BN = "BN".asInstanceOf[BN]
+  inline def BN: BN = "BN".asInstanceOf[BN]
   
   @js.native
   sealed trait BND
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BND: BND = "BND".asInstanceOf[BND]
+  inline def BND: BND = "BND".asInstanceOf[BND]
   
   @js.native
   sealed trait BO
     extends StObject
        with CountryType
-  @scala.inline
-  def BO: BO = "BO".asInstanceOf[BO]
+  inline def BO: BO = "BO".asInstanceOf[BO]
   
   @js.native
   sealed trait BOB
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BOB: BOB = "BOB".asInstanceOf[BOB]
+  inline def BOB: BOB = "BOB".asInstanceOf[BOB]
   
   @js.native
   sealed trait BOV
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BOV: BOV = "BOV".asInstanceOf[BOV]
+  inline def BOV: BOV = "BOV".asInstanceOf[BOV]
   
   @js.native
   sealed trait BQ
     extends StObject
        with CountryType
-  @scala.inline
-  def BQ: BQ = "BQ".asInstanceOf[BQ]
+  inline def BQ: BQ = "BQ".asInstanceOf[BQ]
   
   @js.native
   sealed trait BR
     extends StObject
        with CountryType
-  @scala.inline
-  def BR: BR = "BR".asInstanceOf[BR]
+  inline def BR: BR = "BR".asInstanceOf[BR]
   
   @js.native
   sealed trait BRL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BRL: BRL = "BRL".asInstanceOf[BRL]
+  inline def BRL: BRL = "BRL".asInstanceOf[BRL]
   
   @js.native
   sealed trait BS
     extends StObject
        with CountryType
-  @scala.inline
-  def BS: BS = "BS".asInstanceOf[BS]
+  inline def BS: BS = "BS".asInstanceOf[BS]
   
   @js.native
   sealed trait BSD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BSD: BSD = "BSD".asInstanceOf[BSD]
+  inline def BSD: BSD = "BSD".asInstanceOf[BSD]
   
   @js.native
   sealed trait BT
     extends StObject
        with CountryType
-  @scala.inline
-  def BT: BT = "BT".asInstanceOf[BT]
+  inline def BT: BT = "BT".asInstanceOf[BT]
   
   @js.native
   sealed trait BTC
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BTC: BTC = "BTC".asInstanceOf[BTC]
+  inline def BTC: BTC = "BTC".asInstanceOf[BTC]
   
   @js.native
   sealed trait BTN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BTN: BTN = "BTN".asInstanceOf[BTN]
+  inline def BTN: BTN = "BTN".asInstanceOf[BTN]
   
   @js.native
   sealed trait BV
     extends StObject
        with CountryType
-  @scala.inline
-  def BV: BV = "BV".asInstanceOf[BV]
+  inline def BV: BV = "BV".asInstanceOf[BV]
   
   @js.native
   sealed trait BW
     extends StObject
        with CountryType
-  @scala.inline
-  def BW: BW = "BW".asInstanceOf[BW]
+  inline def BW: BW = "BW".asInstanceOf[BW]
   
   @js.native
   sealed trait BWP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BWP: BWP = "BWP".asInstanceOf[BWP]
+  inline def BWP: BWP = "BWP".asInstanceOf[BWP]
   
   @js.native
   sealed trait BY
     extends StObject
        with CountryType
-  @scala.inline
-  def BY: BY = "BY".asInstanceOf[BY]
+  inline def BY: BY = "BY".asInstanceOf[BY]
   
   @js.native
   sealed trait BYR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BYR: BYR = "BYR".asInstanceOf[BYR]
+  inline def BYR: BYR = "BYR".asInstanceOf[BYR]
   
   @js.native
   sealed trait BZ
     extends StObject
        with CountryType
-  @scala.inline
-  def BZ: BZ = "BZ".asInstanceOf[BZ]
+  inline def BZ: BZ = "BZ".asInstanceOf[BZ]
   
   @js.native
   sealed trait BZD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def BZD: BZD = "BZD".asInstanceOf[BZD]
+  inline def BZD: BZD = "BZD".asInstanceOf[BZD]
   
   @js.native
   sealed trait CA
     extends StObject
        with CountryType
-  @scala.inline
-  def CA: CA = "CA".asInstanceOf[CA]
+  inline def CA: CA = "CA".asInstanceOf[CA]
   
   @js.native
   sealed trait CAD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CAD: CAD = "CAD".asInstanceOf[CAD]
+  inline def CAD: CAD = "CAD".asInstanceOf[CAD]
   
   @js.native
   sealed trait CANCELED
     extends StObject
        with FulfillmentStateType
        with OrderStateType
-  @scala.inline
-  def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
+  inline def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
   
   @js.native
   sealed trait CAPTURED extends StObject
-  @scala.inline
-  def CAPTURED: CAPTURED = "CAPTURED".asInstanceOf[CAPTURED]
+  inline def CAPTURED: CAPTURED = "CAPTURED".asInstanceOf[CAPTURED]
   
   @js.native
   sealed trait CARD extends StObject
-  @scala.inline
-  def CARD: CARD = "CARD".asInstanceOf[CARD]
+  inline def CARD: CARD = "CARD".asInstanceOf[CARD]
   
   @js.native
   sealed trait CARD_DECLINED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CARD_DECLINED: CARD_DECLINED = "CARD_DECLINED".asInstanceOf[CARD_DECLINED]
+  inline def CARD_DECLINED: CARD_DECLINED = "CARD_DECLINED".asInstanceOf[CARD_DECLINED]
   
   @js.native
   sealed trait CARD_DECLINED_CALL_ISSUER
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CARD_DECLINED_CALL_ISSUER: CARD_DECLINED_CALL_ISSUER = "CARD_DECLINED_CALL_ISSUER".asInstanceOf[CARD_DECLINED_CALL_ISSUER]
+  inline def CARD_DECLINED_CALL_ISSUER: CARD_DECLINED_CALL_ISSUER = "CARD_DECLINED_CALL_ISSUER".asInstanceOf[CARD_DECLINED_CALL_ISSUER]
   
   @js.native
   sealed trait CARD_EXPIRED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CARD_EXPIRED: CARD_EXPIRED = "CARD_EXPIRED".asInstanceOf[CARD_EXPIRED]
+  inline def CARD_EXPIRED: CARD_EXPIRED = "CARD_EXPIRED".asInstanceOf[CARD_EXPIRED]
   
   @js.native
   sealed trait CARD_PROCESSING_NOT_ENABLED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CARD_PROCESSING_NOT_ENABLED: CARD_PROCESSING_NOT_ENABLED = "CARD_PROCESSING_NOT_ENABLED".asInstanceOf[CARD_PROCESSING_NOT_ENABLED]
+  inline def CARD_PROCESSING_NOT_ENABLED: CARD_PROCESSING_NOT_ENABLED = "CARD_PROCESSING_NOT_ENABLED".asInstanceOf[CARD_PROCESSING_NOT_ENABLED]
   
   @js.native
   sealed trait CARD_TOKEN_EXPIRED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CARD_TOKEN_EXPIRED: CARD_TOKEN_EXPIRED = "CARD_TOKEN_EXPIRED".asInstanceOf[CARD_TOKEN_EXPIRED]
+  inline def CARD_TOKEN_EXPIRED: CARD_TOKEN_EXPIRED = "CARD_TOKEN_EXPIRED".asInstanceOf[CARD_TOKEN_EXPIRED]
   
   @js.native
   sealed trait CARD_TOKEN_USED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CARD_TOKEN_USED: CARD_TOKEN_USED = "CARD_TOKEN_USED".asInstanceOf[CARD_TOKEN_USED]
+  inline def CARD_TOKEN_USED: CARD_TOKEN_USED = "CARD_TOKEN_USED".asInstanceOf[CARD_TOKEN_USED]
   
   @js.native
   sealed trait CASH extends StObject
-  @scala.inline
-  def CASH: CASH = "CASH".asInstanceOf[CASH]
+  inline def CASH: CASH = "CASH".asInstanceOf[CASH]
   
   @js.native
   sealed trait CATEGORY
     extends StObject
        with ObjectType
-  @scala.inline
-  def CATEGORY: CATEGORY = "CATEGORY".asInstanceOf[CATEGORY]
+  inline def CATEGORY: CATEGORY = "CATEGORY".asInstanceOf[CATEGORY]
   
   @js.native
   sealed trait CC
     extends StObject
        with CountryType
-  @scala.inline
-  def CC: CC = "CC".asInstanceOf[CC]
+  inline def CC: CC = "CC".asInstanceOf[CC]
   
   @js.native
   sealed trait CD
     extends StObject
        with CountryType
-  @scala.inline
-  def CD: CD = "CD".asInstanceOf[CD]
+  inline def CD: CD = "CD".asInstanceOf[CD]
   
   @js.native
   sealed trait CDF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CDF: CDF = "CDF".asInstanceOf[CDF]
+  inline def CDF: CDF = "CDF".asInstanceOf[CDF]
   
   @js.native
   sealed trait CF
     extends StObject
        with CountryType
-  @scala.inline
-  def CF: CF = "CF".asInstanceOf[CF]
+  inline def CF: CF = "CF".asInstanceOf[CF]
   
   @js.native
   sealed trait CG
     extends StObject
        with CountryType
-  @scala.inline
-  def CG: CG = "CG".asInstanceOf[CG]
+  inline def CG: CG = "CG".asInstanceOf[CG]
   
   @js.native
   sealed trait CH
     extends StObject
        with CountryType
-  @scala.inline
-  def CH: CH = "CH".asInstanceOf[CH]
+  inline def CH: CH = "CH".asInstanceOf[CH]
   
   @js.native
   sealed trait CHE
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CHE: CHE = "CHE".asInstanceOf[CHE]
+  inline def CHE: CHE = "CHE".asInstanceOf[CHE]
   
   @js.native
   sealed trait CHECKOUT_EXPIRED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CHECKOUT_EXPIRED: CHECKOUT_EXPIRED = "CHECKOUT_EXPIRED".asInstanceOf[CHECKOUT_EXPIRED]
+  inline def CHECKOUT_EXPIRED: CHECKOUT_EXPIRED = "CHECKOUT_EXPIRED".asInstanceOf[CHECKOUT_EXPIRED]
   
   @js.native
   sealed trait CHF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CHF: CHF = "CHF".asInstanceOf[CHF]
+  inline def CHF: CHF = "CHF".asInstanceOf[CHF]
   
   @js.native
   sealed trait CHINA_UNIONPAY
     extends StObject
        with CardBrandType
-  @scala.inline
-  def CHINA_UNIONPAY: CHINA_UNIONPAY = "CHINA_UNIONPAY".asInstanceOf[CHINA_UNIONPAY]
+  inline def CHINA_UNIONPAY: CHINA_UNIONPAY = "CHINA_UNIONPAY".asInstanceOf[CHINA_UNIONPAY]
   
   @js.native
   sealed trait CHW
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CHW: CHW = "CHW".asInstanceOf[CHW]
+  inline def CHW: CHW = "CHW".asInstanceOf[CHW]
   
   @js.native
   sealed trait CI
     extends StObject
        with CountryType
-  @scala.inline
-  def CI: CI = "CI".asInstanceOf[CI]
+  inline def CI: CI = "CI".asInstanceOf[CI]
   
   @js.native
   sealed trait CK
     extends StObject
        with CountryType
-  @scala.inline
-  def CK: CK = "CK".asInstanceOf[CK]
+  inline def CK: CK = "CK".asInstanceOf[CK]
   
   @js.native
   sealed trait CL
     extends StObject
        with CountryType
-  @scala.inline
-  def CL: CL = "CL".asInstanceOf[CL]
+  inline def CL: CL = "CL".asInstanceOf[CL]
   
   @js.native
   sealed trait CLF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CLF: CLF = "CLF".asInstanceOf[CLF]
+  inline def CLF: CLF = "CLF".asInstanceOf[CLF]
   
   @js.native
   sealed trait CLOSED extends StObject
-  @scala.inline
-  def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
+  inline def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
   
   @js.native
   sealed trait CLOSED_AT extends StObject
-  @scala.inline
-  def CLOSED_AT: CLOSED_AT = "CLOSED_AT".asInstanceOf[CLOSED_AT]
+  inline def CLOSED_AT: CLOSED_AT = "CLOSED_AT".asInstanceOf[CLOSED_AT]
   
   @js.native
   sealed trait CLP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CLP: CLP = "CLP".asInstanceOf[CLP]
+  inline def CLP: CLP = "CLP".asInstanceOf[CLP]
   
   @js.native
   sealed trait CM
     extends StObject
        with CountryType
-  @scala.inline
-  def CM: CM = "CM".asInstanceOf[CM]
+  inline def CM: CM = "CM".asInstanceOf[CM]
   
   @js.native
   sealed trait CN
     extends StObject
        with CountryType
-  @scala.inline
-  def CN: CN = "CN".asInstanceOf[CN]
+  inline def CN: CN = "CN".asInstanceOf[CN]
   
   @js.native
   sealed trait CNY
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CNY: CNY = "CNY".asInstanceOf[CNY]
+  inline def CNY: CNY = "CNY".asInstanceOf[CNY]
   
   @js.native
   sealed trait CO
     extends StObject
        with CountryType
-  @scala.inline
-  def CO: CO = "CO".asInstanceOf[CO]
+  inline def CO: CO = "CO".asInstanceOf[CO]
   
   @js.native
   sealed trait COMPLETED
     extends StObject
        with FulfillmentStateType
        with OrderStateType
-  @scala.inline
-  def COMPLETED: COMPLETED = "COMPLETED".asInstanceOf[COMPLETED]
+  inline def COMPLETED: COMPLETED = "COMPLETED".asInstanceOf[COMPLETED]
   
   @js.native
   sealed trait CONFLICT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CONFLICT: CONFLICT = "CONFLICT".asInstanceOf[CONFLICT]
+  inline def CONFLICT: CONFLICT = "CONFLICT".asInstanceOf[CONFLICT]
   
   @js.native
   sealed trait CONFLICTING_PARAMETERS
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def CONFLICTING_PARAMETERS: CONFLICTING_PARAMETERS = "CONFLICTING_PARAMETERS".asInstanceOf[CONFLICTING_PARAMETERS]
+  inline def CONFLICTING_PARAMETERS: CONFLICTING_PARAMETERS = "CONFLICTING_PARAMETERS".asInstanceOf[CONFLICTING_PARAMETERS]
   
   @js.native
   sealed trait CONTACTLESS extends StObject
-  @scala.inline
-  def CONTACTLESS: CONTACTLESS = "CONTACTLESS".asInstanceOf[CONTACTLESS]
+  inline def CONTACTLESS: CONTACTLESS = "CONTACTLESS".asInstanceOf[CONTACTLESS]
   
   @js.native
   sealed trait COP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def COP: COP = "COP".asInstanceOf[COP]
+  inline def COP: COP = "COP".asInstanceOf[COP]
   
   @js.native
   sealed trait COU
     extends StObject
        with CurrencyType
-  @scala.inline
-  def COU: COU = "COU".asInstanceOf[COU]
+  inline def COU: COU = "COU".asInstanceOf[COU]
   
   @js.native
   sealed trait COUPON
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def COUPON: COUPON = "COUPON".asInstanceOf[COUPON]
+  inline def COUPON: COUPON = "COUPON".asInstanceOf[COUPON]
   
   @js.native
   sealed trait CR
     extends StObject
        with CountryType
-  @scala.inline
-  def CR: CR = "CR".asInstanceOf[CR]
+  inline def CR: CR = "CR".asInstanceOf[CR]
   
   @js.native
   sealed trait CRC
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CRC: CRC = "CRC".asInstanceOf[CRC]
+  inline def CRC: CRC = "CRC".asInstanceOf[CRC]
   
   @js.native
   sealed trait CREATED_AT extends StObject
-  @scala.inline
-  def CREATED_AT: CREATED_AT = "CREATED_AT".asInstanceOf[CREATED_AT]
+  inline def CREATED_AT: CREATED_AT = "CREATED_AT".asInstanceOf[CREATED_AT]
   
   @js.native
   sealed trait CU
     extends StObject
        with CountryType
-  @scala.inline
-  def CU: CU = "CU".asInstanceOf[CU]
+  inline def CU: CU = "CU".asInstanceOf[CU]
   
   @js.native
   sealed trait CUC
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CUC: CUC = "CUC".asInstanceOf[CUC]
+  inline def CUC: CUC = "CUC".asInstanceOf[CUC]
   
   @js.native
   sealed trait CUP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CUP: CUP = "CUP".asInstanceOf[CUP]
+  inline def CUP: CUP = "CUP".asInstanceOf[CUP]
   
   @js.native
   sealed trait CUSTOM
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
+  inline def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   
   @js.native
   sealed trait CV
     extends StObject
        with CountryType
-  @scala.inline
-  def CV: CV = "CV".asInstanceOf[CV]
+  inline def CV: CV = "CV".asInstanceOf[CV]
   
   @js.native
   sealed trait CVE
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CVE: CVE = "CVE".asInstanceOf[CVE]
+  inline def CVE: CVE = "CVE".asInstanceOf[CVE]
   
   @js.native
   sealed trait CW
     extends StObject
        with CountryType
-  @scala.inline
-  def CW: CW = "CW".asInstanceOf[CW]
+  inline def CW: CW = "CW".asInstanceOf[CW]
   
   @js.native
   sealed trait CX
     extends StObject
        with CountryType
-  @scala.inline
-  def CX: CX = "CX".asInstanceOf[CX]
+  inline def CX: CX = "CX".asInstanceOf[CX]
   
   @js.native
   sealed trait CY
     extends StObject
        with CountryType
-  @scala.inline
-  def CY: CY = "CY".asInstanceOf[CY]
+  inline def CY: CY = "CY".asInstanceOf[CY]
   
   @js.native
   sealed trait CZ
     extends StObject
        with CountryType
-  @scala.inline
-  def CZ: CZ = "CZ".asInstanceOf[CZ]
+  inline def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
   sealed trait CZK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def CZK: CZK = "CZK".asInstanceOf[CZK]
+  inline def CZK: CZK = "CZK".asInstanceOf[CZK]
   
   @js.native
   sealed trait DASHBOARD
     extends StObject
        with ProductSourceType
-  @scala.inline
-  def DASHBOARD: DASHBOARD = "DASHBOARD".asInstanceOf[DASHBOARD]
+  inline def DASHBOARD: DASHBOARD = "DASHBOARD".asInstanceOf[DASHBOARD]
   
   @js.native
   sealed trait DE
     extends StObject
        with CountryType
-  @scala.inline
-  def DE: DE = "DE".asInstanceOf[DE]
+  inline def DE: DE = "DE".asInstanceOf[DE]
   
   @js.native
   sealed trait DELAYED_TRANSACTION_CANCELED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def DELAYED_TRANSACTION_CANCELED: DELAYED_TRANSACTION_CANCELED = "DELAYED_TRANSACTION_CANCELED".asInstanceOf[DELAYED_TRANSACTION_CANCELED]
+  inline def DELAYED_TRANSACTION_CANCELED: DELAYED_TRANSACTION_CANCELED = "DELAYED_TRANSACTION_CANCELED".asInstanceOf[DELAYED_TRANSACTION_CANCELED]
   
   @js.native
   sealed trait DELAYED_TRANSACTION_CAPTURED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def DELAYED_TRANSACTION_CAPTURED: DELAYED_TRANSACTION_CAPTURED = "DELAYED_TRANSACTION_CAPTURED".asInstanceOf[DELAYED_TRANSACTION_CAPTURED]
+  inline def DELAYED_TRANSACTION_CAPTURED: DELAYED_TRANSACTION_CAPTURED = "DELAYED_TRANSACTION_CAPTURED".asInstanceOf[DELAYED_TRANSACTION_CAPTURED]
   
   @js.native
   sealed trait DELAYED_TRANSACTION_EXPIRED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def DELAYED_TRANSACTION_EXPIRED: DELAYED_TRANSACTION_EXPIRED = "DELAYED_TRANSACTION_EXPIRED".asInstanceOf[DELAYED_TRANSACTION_EXPIRED]
+  inline def DELAYED_TRANSACTION_EXPIRED: DELAYED_TRANSACTION_EXPIRED = "DELAYED_TRANSACTION_EXPIRED".asInstanceOf[DELAYED_TRANSACTION_EXPIRED]
   
   @js.native
   sealed trait DELAYED_TRANSACTION_FAILED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def DELAYED_TRANSACTION_FAILED: DELAYED_TRANSACTION_FAILED = "DELAYED_TRANSACTION_FAILED".asInstanceOf[DELAYED_TRANSACTION_FAILED]
+  inline def DELAYED_TRANSACTION_FAILED: DELAYED_TRANSACTION_FAILED = "DELAYED_TRANSACTION_FAILED".asInstanceOf[DELAYED_TRANSACTION_FAILED]
   
   @js.native
   sealed trait DELETION_RECOVERY
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def DELETION_RECOVERY: DELETION_RECOVERY = "DELETION_RECOVERY".asInstanceOf[DELETION_RECOVERY]
+  inline def DELETION_RECOVERY: DELETION_RECOVERY = "DELETION_RECOVERY".asInstanceOf[DELETION_RECOVERY]
   
   @js.native
   sealed trait DEPRECATED_FIELD_SET
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def DEPRECATED_FIELD_SET: DEPRECATED_FIELD_SET = "DEPRECATED_FIELD_SET".asInstanceOf[DEPRECATED_FIELD_SET]
+  inline def DEPRECATED_FIELD_SET: DEPRECATED_FIELD_SET = "DEPRECATED_FIELD_SET".asInstanceOf[DEPRECATED_FIELD_SET]
   
   @js.native
   sealed trait DESC
     extends StObject
        with SortOrderType
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
+  inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
   sealed trait DIRECTORY
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def DIRECTORY: DIRECTORY = "DIRECTORY".asInstanceOf[DIRECTORY]
+  inline def DIRECTORY: DIRECTORY = "DIRECTORY".asInstanceOf[DIRECTORY]
   
   @js.native
   sealed trait DISCOUNT
     extends StObject
        with ObjectType
-  @scala.inline
-  def DISCOUNT: DISCOUNT = "DISCOUNT".asInstanceOf[DISCOUNT]
+  inline def DISCOUNT: DISCOUNT = "DISCOUNT".asInstanceOf[DISCOUNT]
   
   @js.native
   sealed trait DISCOVER
     extends StObject
        with CardBrandType
-  @scala.inline
-  def DISCOVER: DISCOVER = "DISCOVER".asInstanceOf[DISCOVER]
+  inline def DISCOVER: DISCOVER = "DISCOVER".asInstanceOf[DISCOVER]
   
   @js.native
   sealed trait DISCOVER_DINERS
     extends StObject
        with CardBrandType
-  @scala.inline
-  def DISCOVER_DINERS: DISCOVER_DINERS = "DISCOVER_DINERS".asInstanceOf[DISCOVER_DINERS]
+  inline def DISCOVER_DINERS: DISCOVER_DINERS = "DISCOVER_DINERS".asInstanceOf[DISCOVER_DINERS]
   
   @js.native
   sealed trait DJ
     extends StObject
        with CountryType
-  @scala.inline
-  def DJ: DJ = "DJ".asInstanceOf[DJ]
+  inline def DJ: DJ = "DJ".asInstanceOf[DJ]
   
   @js.native
   sealed trait DJF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def DJF: DJF = "DJF".asInstanceOf[DJF]
+  inline def DJF: DJF = "DJF".asInstanceOf[DJF]
   
   @js.native
   sealed trait DK
     extends StObject
        with CountryType
-  @scala.inline
-  def DK: DK = "DK".asInstanceOf[DK]
+  inline def DK: DK = "DK".asInstanceOf[DK]
   
   @js.native
   sealed trait DKK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def DKK: DKK = "DKK".asInstanceOf[DKK]
+  inline def DKK: DKK = "DKK".asInstanceOf[DKK]
   
   @js.native
   sealed trait DM
     extends StObject
        with CountryType
-  @scala.inline
-  def DM: DM = "DM".asInstanceOf[DM]
+  inline def DM: DM = "DM".asInstanceOf[DM]
   
   @js.native
   sealed trait DO
     extends StObject
        with CountryType
-  @scala.inline
-  def DO: DO = "DO".asInstanceOf[DO]
+  inline def DO: DO = "DO".asInstanceOf[DO]
   
   @js.native
   sealed trait DOP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def DOP: DOP = "DOP".asInstanceOf[DOP]
+  inline def DOP: DOP = "DOP".asInstanceOf[DOP]
   
   @js.native
   sealed trait DZ
     extends StObject
        with CountryType
-  @scala.inline
-  def DZ: DZ = "DZ".asInstanceOf[DZ]
+  inline def DZ: DZ = "DZ".asInstanceOf[DZ]
   
   @js.native
   sealed trait DZD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def DZD: DZD = "DZD".asInstanceOf[DZD]
+  inline def DZD: DZD = "DZD".asInstanceOf[DZD]
   
   @js.native
   sealed trait EC
     extends StObject
        with CountryType
-  @scala.inline
-  def EC: EC = "EC".asInstanceOf[EC]
+  inline def EC: EC = "EC".asInstanceOf[EC]
   
   @js.native
   sealed trait EE
     extends StObject
        with CountryType
-  @scala.inline
-  def EE: EE = "EE".asInstanceOf[EE]
+  inline def EE: EE = "EE".asInstanceOf[EE]
   
   @js.native
   sealed trait EG
     extends StObject
        with CountryType
-  @scala.inline
-  def EG: EG = "EG".asInstanceOf[EG]
+  inline def EG: EG = "EG".asInstanceOf[EG]
   
   @js.native
   sealed trait EGIFTING
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def EGIFTING: EGIFTING = "EGIFTING".asInstanceOf[EGIFTING]
+  inline def EGIFTING: EGIFTING = "EGIFTING".asInstanceOf[EGIFTING]
   
   @js.native
   sealed trait EGP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def EGP: EGP = "EGP".asInstanceOf[EGP]
+  inline def EGP: EGP = "EGP".asInstanceOf[EGP]
   
   @js.native
   sealed trait EH
     extends StObject
        with CountryType
-  @scala.inline
-  def EH: EH = "EH".asInstanceOf[EH]
+  inline def EH: EH = "EH".asInstanceOf[EH]
   
   @js.native
   sealed trait EMAIL_COLLECTION
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def EMAIL_COLLECTION: EMAIL_COLLECTION = "EMAIL_COLLECTION".asInstanceOf[EMAIL_COLLECTION]
+  inline def EMAIL_COLLECTION: EMAIL_COLLECTION = "EMAIL_COLLECTION".asInstanceOf[EMAIL_COLLECTION]
   
   @js.native
   sealed trait EMV extends StObject
-  @scala.inline
-  def EMV: EMV = "EMV".asInstanceOf[EMV]
+  inline def EMV: EMV = "EMV".asInstanceOf[EMV]
   
   @js.native
   sealed trait END_AT extends StObject
-  @scala.inline
-  def END_AT: END_AT = "END_AT".asInstanceOf[END_AT]
+  inline def END_AT: END_AT = "END_AT".asInstanceOf[END_AT]
   
   @js.native
   sealed trait ER
     extends StObject
        with CountryType
-  @scala.inline
-  def ER: ER = "ER".asInstanceOf[ER]
+  inline def ER: ER = "ER".asInstanceOf[ER]
   
   @js.native
   sealed trait ERN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ERN: ERN = "ERN".asInstanceOf[ERN]
+  inline def ERN: ERN = "ERN".asInstanceOf[ERN]
   
   @js.native
   sealed trait ES
     extends StObject
        with CountryType
-  @scala.inline
-  def ES: ES = "ES".asInstanceOf[ES]
+  inline def ES: ES = "ES".asInstanceOf[ES]
   
   @js.native
   sealed trait ET
     extends StObject
        with CountryType
-  @scala.inline
-  def ET: ET = "ET".asInstanceOf[ET]
+  inline def ET: ET = "ET".asInstanceOf[ET]
   
   @js.native
   sealed trait ETB
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ETB: ETB = "ETB".asInstanceOf[ETB]
+  inline def ETB: ETB = "ETB".asInstanceOf[ETB]
   
   @js.native
   sealed trait EUR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def EUR: EUR = "EUR".asInstanceOf[EUR]
+  inline def EUR: EUR = "EUR".asInstanceOf[EUR]
   
   @js.native
   sealed trait EXCLUDE extends StObject
-  @scala.inline
-  def EXCLUDE: EXCLUDE = "EXCLUDE".asInstanceOf[EXCLUDE]
+  inline def EXCLUDE: EXCLUDE = "EXCLUDE".asInstanceOf[EXCLUDE]
   
   @js.native
   sealed trait EXPECTED_ARRAY
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_ARRAY: EXPECTED_ARRAY = "EXPECTED_ARRAY".asInstanceOf[EXPECTED_ARRAY]
+  inline def EXPECTED_ARRAY: EXPECTED_ARRAY = "EXPECTED_ARRAY".asInstanceOf[EXPECTED_ARRAY]
   
   @js.native
   sealed trait EXPECTED_BASE64_ENCODED_BYTE_ARRAY
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_BASE64_ENCODED_BYTE_ARRAY: EXPECTED_BASE64_ENCODED_BYTE_ARRAY = "EXPECTED_BASE64_ENCODED_BYTE_ARRAY".asInstanceOf[EXPECTED_BASE64_ENCODED_BYTE_ARRAY]
+  inline def EXPECTED_BASE64_ENCODED_BYTE_ARRAY: EXPECTED_BASE64_ENCODED_BYTE_ARRAY = "EXPECTED_BASE64_ENCODED_BYTE_ARRAY".asInstanceOf[EXPECTED_BASE64_ENCODED_BYTE_ARRAY]
   
   @js.native
   sealed trait EXPECTED_BOOLEAN
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_BOOLEAN: EXPECTED_BOOLEAN = "EXPECTED_BOOLEAN".asInstanceOf[EXPECTED_BOOLEAN]
+  inline def EXPECTED_BOOLEAN: EXPECTED_BOOLEAN = "EXPECTED_BOOLEAN".asInstanceOf[EXPECTED_BOOLEAN]
   
   @js.native
   sealed trait EXPECTED_FLOAT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_FLOAT: EXPECTED_FLOAT = "EXPECTED_FLOAT".asInstanceOf[EXPECTED_FLOAT]
+  inline def EXPECTED_FLOAT: EXPECTED_FLOAT = "EXPECTED_FLOAT".asInstanceOf[EXPECTED_FLOAT]
   
   @js.native
   sealed trait EXPECTED_INTEGER
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_INTEGER: EXPECTED_INTEGER = "EXPECTED_INTEGER".asInstanceOf[EXPECTED_INTEGER]
+  inline def EXPECTED_INTEGER: EXPECTED_INTEGER = "EXPECTED_INTEGER".asInstanceOf[EXPECTED_INTEGER]
   
   @js.native
   sealed trait EXPECTED_JSON_BODY
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_JSON_BODY: EXPECTED_JSON_BODY = "EXPECTED_JSON_BODY".asInstanceOf[EXPECTED_JSON_BODY]
+  inline def EXPECTED_JSON_BODY: EXPECTED_JSON_BODY = "EXPECTED_JSON_BODY".asInstanceOf[EXPECTED_JSON_BODY]
   
   @js.native
   sealed trait EXPECTED_MAP
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_MAP: EXPECTED_MAP = "EXPECTED_MAP".asInstanceOf[EXPECTED_MAP]
+  inline def EXPECTED_MAP: EXPECTED_MAP = "EXPECTED_MAP".asInstanceOf[EXPECTED_MAP]
   
   @js.native
   sealed trait EXPECTED_OBJECT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_OBJECT: EXPECTED_OBJECT = "EXPECTED_OBJECT".asInstanceOf[EXPECTED_OBJECT]
+  inline def EXPECTED_OBJECT: EXPECTED_OBJECT = "EXPECTED_OBJECT".asInstanceOf[EXPECTED_OBJECT]
   
   @js.native
   sealed trait EXPECTED_STRING
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def EXPECTED_STRING: EXPECTED_STRING = "EXPECTED_STRING".asInstanceOf[EXPECTED_STRING]
+  inline def EXPECTED_STRING: EXPECTED_STRING = "EXPECTED_STRING".asInstanceOf[EXPECTED_STRING]
   
   @js.native
   sealed trait EXTERNAL_API
     extends StObject
        with ProductSourceType
-  @scala.inline
-  def EXTERNAL_API: EXTERNAL_API = "EXTERNAL_API".asInstanceOf[EXTERNAL_API]
+  inline def EXTERNAL_API: EXTERNAL_API = "EXTERNAL_API".asInstanceOf[EXTERNAL_API]
   
   @js.native
   sealed trait FAILED
     extends StObject
        with FulfillmentStateType
-  @scala.inline
-  def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
+  inline def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
   sealed trait FAILURE extends StObject
-  @scala.inline
-  def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
+  inline def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
   
   @js.native
   sealed trait FEEDBACK
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def FEEDBACK: FEEDBACK = "FEEDBACK".asInstanceOf[FEEDBACK]
+  inline def FEEDBACK: FEEDBACK = "FEEDBACK".asInstanceOf[FEEDBACK]
   
   @js.native
   sealed trait FI
     extends StObject
        with CountryType
-  @scala.inline
-  def FI: FI = "FI".asInstanceOf[FI]
+  inline def FI: FI = "FI".asInstanceOf[FI]
   
   @js.native
   sealed trait FIXED_AMOUNT
     extends StObject
        with DiscountType
-  @scala.inline
-  def FIXED_AMOUNT: FIXED_AMOUNT = "FIXED_AMOUNT".asInstanceOf[FIXED_AMOUNT]
+  inline def FIXED_AMOUNT: FIXED_AMOUNT = "FIXED_AMOUNT".asInstanceOf[FIXED_AMOUNT]
   
   @js.native
   sealed trait FIXED_PERCENTAGE
     extends StObject
        with DiscountType
-  @scala.inline
-  def FIXED_PERCENTAGE: FIXED_PERCENTAGE = "FIXED_PERCENTAGE".asInstanceOf[FIXED_PERCENTAGE]
+  inline def FIXED_PERCENTAGE: FIXED_PERCENTAGE = "FIXED_PERCENTAGE".asInstanceOf[FIXED_PERCENTAGE]
   
   @js.native
   sealed trait FIXED_PRICING
     extends StObject
        with PricingType
-  @scala.inline
-  def FIXED_PRICING: FIXED_PRICING = "FIXED_PRICING".asInstanceOf[FIXED_PRICING]
+  inline def FIXED_PRICING: FIXED_PRICING = "FIXED_PRICING".asInstanceOf[FIXED_PRICING]
   
   @js.native
   sealed trait FJ
     extends StObject
        with CountryType
-  @scala.inline
-  def FJ: FJ = "FJ".asInstanceOf[FJ]
+  inline def FJ: FJ = "FJ".asInstanceOf[FJ]
   
   @js.native
   sealed trait FJD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def FJD: FJD = "FJD".asInstanceOf[FJD]
+  inline def FJD: FJD = "FJD".asInstanceOf[FJD]
   
   @js.native
   sealed trait FK
     extends StObject
        with CountryType
-  @scala.inline
-  def FK: FK = "FK".asInstanceOf[FK]
+  inline def FK: FK = "FK".asInstanceOf[FK]
   
   @js.native
   sealed trait FKP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def FKP: FKP = "FKP".asInstanceOf[FKP]
+  inline def FKP: FKP = "FKP".asInstanceOf[FKP]
   
   @js.native
   sealed trait FM
     extends StObject
        with CountryType
-  @scala.inline
-  def FM: FM = "FM".asInstanceOf[FM]
+  inline def FM: FM = "FM".asInstanceOf[FM]
   
   @js.native
   sealed trait FO
     extends StObject
        with CountryType
-  @scala.inline
-  def FO: FO = "FO".asInstanceOf[FO]
+  inline def FO: FO = "FO".asInstanceOf[FO]
   
   @js.native
   sealed trait FORBIDDEN
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def FORBIDDEN: FORBIDDEN = "FORBIDDEN".asInstanceOf[FORBIDDEN]
+  inline def FORBIDDEN: FORBIDDEN = "FORBIDDEN".asInstanceOf[FORBIDDEN]
   
   @js.native
   sealed trait FR
     extends StObject
        with CountryType
-  @scala.inline
-  def FR: FR = "FR".asInstanceOf[FR]
+  inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
   sealed trait FRI
     extends StObject
        with DayOfWeekType
-  @scala.inline
-  def FRI: FRI = "FRI".asInstanceOf[FRI]
+  inline def FRI: FRI = "FRI".asInstanceOf[FRI]
   
   @js.native
   sealed trait GA
     extends StObject
        with CountryType
-  @scala.inline
-  def GA: GA = "GA".asInstanceOf[GA]
+  inline def GA: GA = "GA".asInstanceOf[GA]
   
   @js.native
   sealed trait GATEWAY_TIMEOUT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def GATEWAY_TIMEOUT: GATEWAY_TIMEOUT = "GATEWAY_TIMEOUT".asInstanceOf[GATEWAY_TIMEOUT]
+  inline def GATEWAY_TIMEOUT: GATEWAY_TIMEOUT = "GATEWAY_TIMEOUT".asInstanceOf[GATEWAY_TIMEOUT]
   
   @js.native
   sealed trait GB
     extends StObject
        with CountryType
-  @scala.inline
-  def GB: GB = "GB".asInstanceOf[GB]
+  inline def GB: GB = "GB".asInstanceOf[GB]
   
   @js.native
   sealed trait GBP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GBP: GBP = "GBP".asInstanceOf[GBP]
+  inline def GBP: GBP = "GBP".asInstanceOf[GBP]
   
   @js.native
   sealed trait GD
     extends StObject
        with CountryType
-  @scala.inline
-  def GD: GD = "GD".asInstanceOf[GD]
+  inline def GD: GD = "GD".asInstanceOf[GD]
   
   @js.native
   sealed trait GE
     extends StObject
        with CountryType
-  @scala.inline
-  def GE: GE = "GE".asInstanceOf[GE]
+  inline def GE: GE = "GE".asInstanceOf[GE]
   
   @js.native
   sealed trait GEL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GEL: GEL = "GEL".asInstanceOf[GEL]
+  inline def GEL: GEL = "GEL".asInstanceOf[GEL]
   
   @js.native
   sealed trait GENERIC_CUP
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def GENERIC_CUP: GENERIC_CUP = "GENERIC_CUP".asInstanceOf[GENERIC_CUP]
+  inline def GENERIC_CUP: GENERIC_CUP = "GENERIC_CUP".asInstanceOf[GENERIC_CUP]
   
   @js.native
   sealed trait GENERIC_FLUID_OUNCE
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def GENERIC_FLUID_OUNCE: GENERIC_FLUID_OUNCE = "GENERIC_FLUID_OUNCE".asInstanceOf[GENERIC_FLUID_OUNCE]
+  inline def GENERIC_FLUID_OUNCE: GENERIC_FLUID_OUNCE = "GENERIC_FLUID_OUNCE".asInstanceOf[GENERIC_FLUID_OUNCE]
   
   @js.native
   sealed trait GENERIC_GALLON
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def GENERIC_GALLON: GENERIC_GALLON = "GENERIC_GALLON".asInstanceOf[GENERIC_GALLON]
+  inline def GENERIC_GALLON: GENERIC_GALLON = "GENERIC_GALLON".asInstanceOf[GENERIC_GALLON]
   
   @js.native
   sealed trait GENERIC_PINT
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def GENERIC_PINT: GENERIC_PINT = "GENERIC_PINT".asInstanceOf[GENERIC_PINT]
+  inline def GENERIC_PINT: GENERIC_PINT = "GENERIC_PINT".asInstanceOf[GENERIC_PINT]
   
   @js.native
   sealed trait GENERIC_QUART
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def GENERIC_QUART: GENERIC_QUART = "GENERIC_QUART".asInstanceOf[GENERIC_QUART]
+  inline def GENERIC_QUART: GENERIC_QUART = "GENERIC_QUART".asInstanceOf[GENERIC_QUART]
   
   @js.native
   sealed trait GENERIC_SHOT
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def GENERIC_SHOT: GENERIC_SHOT = "GENERIC_SHOT".asInstanceOf[GENERIC_SHOT]
+  inline def GENERIC_SHOT: GENERIC_SHOT = "GENERIC_SHOT".asInstanceOf[GENERIC_SHOT]
   
   @js.native
   sealed trait GF
     extends StObject
        with CountryType
-  @scala.inline
-  def GF: GF = "GF".asInstanceOf[GF]
+  inline def GF: GF = "GF".asInstanceOf[GF]
   
   @js.native
   sealed trait GG
     extends StObject
        with CountryType
-  @scala.inline
-  def GG: GG = "GG".asInstanceOf[GG]
+  inline def GG: GG = "GG".asInstanceOf[GG]
   
   @js.native
   sealed trait GH
     extends StObject
        with CountryType
-  @scala.inline
-  def GH: GH = "GH".asInstanceOf[GH]
+  inline def GH: GH = "GH".asInstanceOf[GH]
   
   @js.native
   sealed trait GHS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GHS: GHS = "GHS".asInstanceOf[GHS]
+  inline def GHS: GHS = "GHS".asInstanceOf[GHS]
   
   @js.native
   sealed trait GI
     extends StObject
        with CountryType
-  @scala.inline
-  def GI: GI = "GI".asInstanceOf[GI]
+  inline def GI: GI = "GI".asInstanceOf[GI]
   
   @js.native
   sealed trait GIFT_CARD extends StObject
-  @scala.inline
-  def GIFT_CARD: GIFT_CARD = "GIFT_CARD".asInstanceOf[GIFT_CARD]
+  inline def GIFT_CARD: GIFT_CARD = "GIFT_CARD".asInstanceOf[GIFT_CARD]
   
   @js.native
   sealed trait GIP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GIP: GIP = "GIP".asInstanceOf[GIP]
+  inline def GIP: GIP = "GIP".asInstanceOf[GIP]
   
   @js.native
   sealed trait GL
     extends StObject
        with CountryType
-  @scala.inline
-  def GL: GL = "GL".asInstanceOf[GL]
+  inline def GL: GL = "GL".asInstanceOf[GL]
   
   @js.native
   sealed trait GM
     extends StObject
        with CountryType
-  @scala.inline
-  def GM: GM = "GM".asInstanceOf[GM]
+  inline def GM: GM = "GM".asInstanceOf[GM]
   
   @js.native
   sealed trait GMD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GMD: GMD = "GMD".asInstanceOf[GMD]
+  inline def GMD: GMD = "GMD".asInstanceOf[GMD]
   
   @js.native
   sealed trait GN
     extends StObject
        with CountryType
-  @scala.inline
-  def GN: GN = "GN".asInstanceOf[GN]
+  inline def GN: GN = "GN".asInstanceOf[GN]
   
   @js.native
   sealed trait GNF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GNF: GNF = "GNF".asInstanceOf[GNF]
+  inline def GNF: GNF = "GNF".asInstanceOf[GNF]
   
   @js.native
   sealed trait GP
     extends StObject
        with CountryType
-  @scala.inline
-  def GP: GP = "GP".asInstanceOf[GP]
+  inline def GP: GP = "GP".asInstanceOf[GP]
   
   @js.native
   sealed trait GQ
     extends StObject
        with CountryType
-  @scala.inline
-  def GQ: GQ = "GQ".asInstanceOf[GQ]
+  inline def GQ: GQ = "GQ".asInstanceOf[GQ]
   
   @js.native
   sealed trait GR
     extends StObject
        with CountryType
-  @scala.inline
-  def GR: GR = "GR".asInstanceOf[GR]
+  inline def GR: GR = "GR".asInstanceOf[GR]
   
   @js.native
   sealed trait GS
     extends StObject
        with CountryType
-  @scala.inline
-  def GS: GS = "GS".asInstanceOf[GS]
+  inline def GS: GS = "GS".asInstanceOf[GS]
   
   @js.native
   sealed trait GT
     extends StObject
        with CountryType
-  @scala.inline
-  def GT: GT = "GT".asInstanceOf[GT]
+  inline def GT: GT = "GT".asInstanceOf[GT]
   
   @js.native
   sealed trait GTQ
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GTQ: GTQ = "GTQ".asInstanceOf[GTQ]
+  inline def GTQ: GTQ = "GTQ".asInstanceOf[GTQ]
   
   @js.native
   sealed trait GU
     extends StObject
        with CountryType
-  @scala.inline
-  def GU: GU = "GU".asInstanceOf[GU]
+  inline def GU: GU = "GU".asInstanceOf[GU]
   
   @js.native
   sealed trait GW
     extends StObject
        with CountryType
-  @scala.inline
-  def GW: GW = "GW".asInstanceOf[GW]
+  inline def GW: GW = "GW".asInstanceOf[GW]
   
   @js.native
   sealed trait GY
     extends StObject
        with CountryType
-  @scala.inline
-  def GY: GY = "GY".asInstanceOf[GY]
+  inline def GY: GY = "GY".asInstanceOf[GY]
   
   @js.native
   sealed trait GYD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def GYD: GYD = "GYD".asInstanceOf[GYD]
+  inline def GYD: GYD = "GYD".asInstanceOf[GYD]
   
   @js.native
   sealed trait HK
     extends StObject
        with CountryType
-  @scala.inline
-  def HK: HK = "HK".asInstanceOf[HK]
+  inline def HK: HK = "HK".asInstanceOf[HK]
   
   @js.native
   sealed trait HKD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def HKD: HKD = "HKD".asInstanceOf[HKD]
+  inline def HKD: HKD = "HKD".asInstanceOf[HKD]
   
   @js.native
   sealed trait HM
     extends StObject
        with CountryType
-  @scala.inline
-  def HM: HM = "HM".asInstanceOf[HM]
+  inline def HM: HM = "HM".asInstanceOf[HM]
   
   @js.native
   sealed trait HN
     extends StObject
        with CountryType
-  @scala.inline
-  def HN: HN = "HN".asInstanceOf[HN]
+  inline def HN: HN = "HN".asInstanceOf[HN]
   
   @js.native
   sealed trait HNL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def HNL: HNL = "HNL".asInstanceOf[HNL]
+  inline def HNL: HNL = "HNL".asInstanceOf[HNL]
   
   @js.native
   sealed trait HR
     extends StObject
        with CountryType
-  @scala.inline
-  def HR: HR = "HR".asInstanceOf[HR]
+  inline def HR: HR = "HR".asInstanceOf[HR]
   
   @js.native
   sealed trait HRK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def HRK: HRK = "HRK".asInstanceOf[HRK]
+  inline def HRK: HRK = "HRK".asInstanceOf[HRK]
   
   @js.native
   sealed trait HT
     extends StObject
        with CountryType
-  @scala.inline
-  def HT: HT = "HT".asInstanceOf[HT]
+  inline def HT: HT = "HT".asInstanceOf[HT]
   
   @js.native
   sealed trait HTG
     extends StObject
        with CurrencyType
-  @scala.inline
-  def HTG: HTG = "HTG".asInstanceOf[HTG]
+  inline def HTG: HTG = "HTG".asInstanceOf[HTG]
   
   @js.native
   sealed trait HU
     extends StObject
        with CountryType
-  @scala.inline
-  def HU: HU = "HU".asInstanceOf[HU]
+  inline def HU: HU = "HU".asInstanceOf[HU]
   
   @js.native
   sealed trait HUF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def HUF: HUF = "HUF".asInstanceOf[HUF]
+  inline def HUF: HUF = "HUF".asInstanceOf[HUF]
   
   @js.native
   sealed trait ID
     extends StObject
        with CountryType
-  @scala.inline
-  def ID: ID = "ID".asInstanceOf[ID]
+  inline def ID: ID = "ID".asInstanceOf[ID]
   
   @js.native
   sealed trait IDEMPOTENCY_KEY_REUSED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def IDEMPOTENCY_KEY_REUSED: IDEMPOTENCY_KEY_REUSED = "IDEMPOTENCY_KEY_REUSED".asInstanceOf[IDEMPOTENCY_KEY_REUSED]
+  inline def IDEMPOTENCY_KEY_REUSED: IDEMPOTENCY_KEY_REUSED = "IDEMPOTENCY_KEY_REUSED".asInstanceOf[IDEMPOTENCY_KEY_REUSED]
   
   @js.native
   sealed trait IDR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def IDR: IDR = "IDR".asInstanceOf[IDR]
+  inline def IDR: IDR = "IDR".asInstanceOf[IDR]
   
   @js.native
   sealed trait IE
     extends StObject
        with CountryType
-  @scala.inline
-  def IE: IE = "IE".asInstanceOf[IE]
+  inline def IE: IE = "IE".asInstanceOf[IE]
   
   @js.native
   sealed trait IL
     extends StObject
        with CountryType
-  @scala.inline
-  def IL: IL = "IL".asInstanceOf[IL]
+  inline def IL: IL = "IL".asInstanceOf[IL]
   
   @js.native
   sealed trait ILS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ILS: ILS = "ILS".asInstanceOf[ILS]
+  inline def ILS: ILS = "ILS".asInstanceOf[ILS]
   
   @js.native
   sealed trait IM
     extends StObject
        with CountryType
-  @scala.inline
-  def IM: IM = "IM".asInstanceOf[IM]
+  inline def IM: IM = "IM".asInstanceOf[IM]
   
   @js.native
   sealed trait IMAGE
     extends StObject
        with ObjectType
-  @scala.inline
-  def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
+  inline def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
   
   @js.native
   sealed trait IMPERIAL_ACRE
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def IMPERIAL_ACRE: IMPERIAL_ACRE = "IMPERIAL_ACRE".asInstanceOf[IMPERIAL_ACRE]
+  inline def IMPERIAL_ACRE: IMPERIAL_ACRE = "IMPERIAL_ACRE".asInstanceOf[IMPERIAL_ACRE]
   
   @js.native
   sealed trait IMPERIAL_CUBIC_FOOT
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def IMPERIAL_CUBIC_FOOT: IMPERIAL_CUBIC_FOOT = "IMPERIAL_CUBIC_FOOT".asInstanceOf[IMPERIAL_CUBIC_FOOT]
+  inline def IMPERIAL_CUBIC_FOOT: IMPERIAL_CUBIC_FOOT = "IMPERIAL_CUBIC_FOOT".asInstanceOf[IMPERIAL_CUBIC_FOOT]
   
   @js.native
   sealed trait IMPERIAL_CUBIC_INCH
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def IMPERIAL_CUBIC_INCH: IMPERIAL_CUBIC_INCH = "IMPERIAL_CUBIC_INCH".asInstanceOf[IMPERIAL_CUBIC_INCH]
+  inline def IMPERIAL_CUBIC_INCH: IMPERIAL_CUBIC_INCH = "IMPERIAL_CUBIC_INCH".asInstanceOf[IMPERIAL_CUBIC_INCH]
   
   @js.native
   sealed trait IMPERIAL_CUBIC_YARD
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def IMPERIAL_CUBIC_YARD: IMPERIAL_CUBIC_YARD = "IMPERIAL_CUBIC_YARD".asInstanceOf[IMPERIAL_CUBIC_YARD]
+  inline def IMPERIAL_CUBIC_YARD: IMPERIAL_CUBIC_YARD = "IMPERIAL_CUBIC_YARD".asInstanceOf[IMPERIAL_CUBIC_YARD]
   
   @js.native
   sealed trait IMPERIAL_FOOT
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def IMPERIAL_FOOT: IMPERIAL_FOOT = "IMPERIAL_FOOT".asInstanceOf[IMPERIAL_FOOT]
+  inline def IMPERIAL_FOOT: IMPERIAL_FOOT = "IMPERIAL_FOOT".asInstanceOf[IMPERIAL_FOOT]
   
   @js.native
   sealed trait IMPERIAL_INCH
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def IMPERIAL_INCH: IMPERIAL_INCH = "IMPERIAL_INCH".asInstanceOf[IMPERIAL_INCH]
+  inline def IMPERIAL_INCH: IMPERIAL_INCH = "IMPERIAL_INCH".asInstanceOf[IMPERIAL_INCH]
   
   @js.native
   sealed trait IMPERIAL_MILE
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def IMPERIAL_MILE: IMPERIAL_MILE = "IMPERIAL_MILE".asInstanceOf[IMPERIAL_MILE]
+  inline def IMPERIAL_MILE: IMPERIAL_MILE = "IMPERIAL_MILE".asInstanceOf[IMPERIAL_MILE]
   
   @js.native
   sealed trait IMPERIAL_POUND
     extends StObject
        with WeightUnitType
-  @scala.inline
-  def IMPERIAL_POUND: IMPERIAL_POUND = "IMPERIAL_POUND".asInstanceOf[IMPERIAL_POUND]
+  inline def IMPERIAL_POUND: IMPERIAL_POUND = "IMPERIAL_POUND".asInstanceOf[IMPERIAL_POUND]
   
   @js.native
   sealed trait IMPERIAL_SQUARE_FOOT
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def IMPERIAL_SQUARE_FOOT: IMPERIAL_SQUARE_FOOT = "IMPERIAL_SQUARE_FOOT".asInstanceOf[IMPERIAL_SQUARE_FOOT]
+  inline def IMPERIAL_SQUARE_FOOT: IMPERIAL_SQUARE_FOOT = "IMPERIAL_SQUARE_FOOT".asInstanceOf[IMPERIAL_SQUARE_FOOT]
   
   @js.native
   sealed trait IMPERIAL_SQUARE_INCH
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def IMPERIAL_SQUARE_INCH: IMPERIAL_SQUARE_INCH = "IMPERIAL_SQUARE_INCH".asInstanceOf[IMPERIAL_SQUARE_INCH]
+  inline def IMPERIAL_SQUARE_INCH: IMPERIAL_SQUARE_INCH = "IMPERIAL_SQUARE_INCH".asInstanceOf[IMPERIAL_SQUARE_INCH]
   
   @js.native
   sealed trait IMPERIAL_SQUARE_MILE
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def IMPERIAL_SQUARE_MILE: IMPERIAL_SQUARE_MILE = "IMPERIAL_SQUARE_MILE".asInstanceOf[IMPERIAL_SQUARE_MILE]
+  inline def IMPERIAL_SQUARE_MILE: IMPERIAL_SQUARE_MILE = "IMPERIAL_SQUARE_MILE".asInstanceOf[IMPERIAL_SQUARE_MILE]
   
   @js.native
   sealed trait IMPERIAL_SQUARE_YARD
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def IMPERIAL_SQUARE_YARD: IMPERIAL_SQUARE_YARD = "IMPERIAL_SQUARE_YARD".asInstanceOf[IMPERIAL_SQUARE_YARD]
+  inline def IMPERIAL_SQUARE_YARD: IMPERIAL_SQUARE_YARD = "IMPERIAL_SQUARE_YARD".asInstanceOf[IMPERIAL_SQUARE_YARD]
   
   @js.native
   sealed trait IMPERIAL_STONE
     extends StObject
        with WeightUnitType
-  @scala.inline
-  def IMPERIAL_STONE: IMPERIAL_STONE = "IMPERIAL_STONE".asInstanceOf[IMPERIAL_STONE]
+  inline def IMPERIAL_STONE: IMPERIAL_STONE = "IMPERIAL_STONE".asInstanceOf[IMPERIAL_STONE]
   
   @js.native
   sealed trait IMPERIAL_WEIGHT_OUNCE
     extends StObject
        with WeightUnitType
-  @scala.inline
-  def IMPERIAL_WEIGHT_OUNCE: IMPERIAL_WEIGHT_OUNCE = "IMPERIAL_WEIGHT_OUNCE".asInstanceOf[IMPERIAL_WEIGHT_OUNCE]
+  inline def IMPERIAL_WEIGHT_OUNCE: IMPERIAL_WEIGHT_OUNCE = "IMPERIAL_WEIGHT_OUNCE".asInstanceOf[IMPERIAL_WEIGHT_OUNCE]
   
   @js.native
   sealed trait IMPERIAL_YARD
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def IMPERIAL_YARD: IMPERIAL_YARD = "IMPERIAL_YARD".asInstanceOf[IMPERIAL_YARD]
+  inline def IMPERIAL_YARD: IMPERIAL_YARD = "IMPERIAL_YARD".asInstanceOf[IMPERIAL_YARD]
   
   @js.native
   sealed trait IMPORT
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def IMPORT: IMPORT = "IMPORT".asInstanceOf[IMPORT]
+  inline def IMPORT: IMPORT = "IMPORT".asInstanceOf[IMPORT]
   
   @js.native
   sealed trait IN
     extends StObject
        with CountryType
-  @scala.inline
-  def IN: IN = "IN".asInstanceOf[IN]
+  inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
   sealed trait INACTIVE
     extends StObject
        with ActivityStatusType
-  @scala.inline
-  def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
+  inline def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
   
   @js.native
   sealed trait INCLUDE extends StObject
-  @scala.inline
-  def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
+  inline def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
   
   @js.native
   sealed trait INCLUSIVE
     extends StObject
        with TaxType
-  @scala.inline
-  def INCLUSIVE: INCLUSIVE = "INCLUSIVE".asInstanceOf[INCLUSIVE]
+  inline def INCLUSIVE: INCLUSIVE = "INCLUSIVE".asInstanceOf[INCLUSIVE]
   
   @js.native
   sealed trait INCORRECT_TYPE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INCORRECT_TYPE: INCORRECT_TYPE = "INCORRECT_TYPE".asInstanceOf[INCORRECT_TYPE]
+  inline def INCORRECT_TYPE: INCORRECT_TYPE = "INCORRECT_TYPE".asInstanceOf[INCORRECT_TYPE]
   
   @js.native
   sealed trait INR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def INR: INR = "INR".asInstanceOf[INR]
+  inline def INR: INR = "INR".asInstanceOf[INR]
   
   @js.native
   sealed trait INSTANT_PROFILE
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def INSTANT_PROFILE: INSTANT_PROFILE = "INSTANT_PROFILE".asInstanceOf[INSTANT_PROFILE]
+  inline def INSTANT_PROFILE: INSTANT_PROFILE = "INSTANT_PROFILE".asInstanceOf[INSTANT_PROFILE]
   
   @js.native
   sealed trait INSUFFICIENT_SCOPES
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INSUFFICIENT_SCOPES: INSUFFICIENT_SCOPES = "INSUFFICIENT_SCOPES".asInstanceOf[INSUFFICIENT_SCOPES]
+  inline def INSUFFICIENT_SCOPES: INSUFFICIENT_SCOPES = "INSUFFICIENT_SCOPES".asInstanceOf[INSUFFICIENT_SCOPES]
   
   @js.native
   sealed trait INTERNAL_SERVER_ERROR
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR".asInstanceOf[INTERNAL_SERVER_ERROR]
+  inline def INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR".asInstanceOf[INTERNAL_SERVER_ERROR]
   
   @js.native
   sealed trait INTERSECTION extends StObject
-  @scala.inline
-  def INTERSECTION: INTERSECTION = "INTERSECTION".asInstanceOf[INTERSECTION]
+  inline def INTERSECTION: INTERSECTION = "INTERSECTION".asInstanceOf[INTERSECTION]
   
   @js.native
   sealed trait INVALID_ARRAY_VALUE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_ARRAY_VALUE: INVALID_ARRAY_VALUE = "INVALID_ARRAY_VALUE".asInstanceOf[INVALID_ARRAY_VALUE]
+  inline def INVALID_ARRAY_VALUE: INVALID_ARRAY_VALUE = "INVALID_ARRAY_VALUE".asInstanceOf[INVALID_ARRAY_VALUE]
   
   @js.native
   sealed trait INVALID_CARD
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_CARD: INVALID_CARD = "INVALID_CARD".asInstanceOf[INVALID_CARD]
+  inline def INVALID_CARD: INVALID_CARD = "INVALID_CARD".asInstanceOf[INVALID_CARD]
   
   @js.native
   sealed trait INVALID_CARD_DATA
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_CARD_DATA: INVALID_CARD_DATA = "INVALID_CARD_DATA".asInstanceOf[INVALID_CARD_DATA]
+  inline def INVALID_CARD_DATA: INVALID_CARD_DATA = "INVALID_CARD_DATA".asInstanceOf[INVALID_CARD_DATA]
   
   @js.native
   sealed trait INVALID_CONTENT_TYPE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_CONTENT_TYPE: INVALID_CONTENT_TYPE = "INVALID_CONTENT_TYPE".asInstanceOf[INVALID_CONTENT_TYPE]
+  inline def INVALID_CONTENT_TYPE: INVALID_CONTENT_TYPE = "INVALID_CONTENT_TYPE".asInstanceOf[INVALID_CONTENT_TYPE]
   
   @js.native
   sealed trait INVALID_CURSOR
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_CURSOR: INVALID_CURSOR = "INVALID_CURSOR".asInstanceOf[INVALID_CURSOR]
+  inline def INVALID_CURSOR: INVALID_CURSOR = "INVALID_CURSOR".asInstanceOf[INVALID_CURSOR]
   
   @js.native
   sealed trait INVALID_EMAIL_ADDRESS
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_EMAIL_ADDRESS: INVALID_EMAIL_ADDRESS = "INVALID_EMAIL_ADDRESS".asInstanceOf[INVALID_EMAIL_ADDRESS]
+  inline def INVALID_EMAIL_ADDRESS: INVALID_EMAIL_ADDRESS = "INVALID_EMAIL_ADDRESS".asInstanceOf[INVALID_EMAIL_ADDRESS]
   
   @js.native
   sealed trait INVALID_ENCRYPTED_CARD
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_ENCRYPTED_CARD: INVALID_ENCRYPTED_CARD = "INVALID_ENCRYPTED_CARD".asInstanceOf[INVALID_ENCRYPTED_CARD]
+  inline def INVALID_ENCRYPTED_CARD: INVALID_ENCRYPTED_CARD = "INVALID_ENCRYPTED_CARD".asInstanceOf[INVALID_ENCRYPTED_CARD]
   
   @js.native
   sealed trait INVALID_ENUM_VALUE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_ENUM_VALUE: INVALID_ENUM_VALUE = "INVALID_ENUM_VALUE".asInstanceOf[INVALID_ENUM_VALUE]
+  inline def INVALID_ENUM_VALUE: INVALID_ENUM_VALUE = "INVALID_ENUM_VALUE".asInstanceOf[INVALID_ENUM_VALUE]
   
   @js.native
   sealed trait INVALID_EXPIRATION
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_EXPIRATION: INVALID_EXPIRATION = "INVALID_EXPIRATION".asInstanceOf[INVALID_EXPIRATION]
+  inline def INVALID_EXPIRATION: INVALID_EXPIRATION = "INVALID_EXPIRATION".asInstanceOf[INVALID_EXPIRATION]
   
   @js.native
   sealed trait INVALID_EXPIRATION_DATE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_EXPIRATION_DATE: INVALID_EXPIRATION_DATE = "INVALID_EXPIRATION_DATE".asInstanceOf[INVALID_EXPIRATION_DATE]
+  inline def INVALID_EXPIRATION_DATE: INVALID_EXPIRATION_DATE = "INVALID_EXPIRATION_DATE".asInstanceOf[INVALID_EXPIRATION_DATE]
   
   @js.native
   sealed trait INVALID_EXPIRATION_YEAR
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_EXPIRATION_YEAR: INVALID_EXPIRATION_YEAR = "INVALID_EXPIRATION_YEAR".asInstanceOf[INVALID_EXPIRATION_YEAR]
+  inline def INVALID_EXPIRATION_YEAR: INVALID_EXPIRATION_YEAR = "INVALID_EXPIRATION_YEAR".asInstanceOf[INVALID_EXPIRATION_YEAR]
   
   @js.native
   sealed trait INVALID_FORM_VALUE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_FORM_VALUE: INVALID_FORM_VALUE = "INVALID_FORM_VALUE".asInstanceOf[INVALID_FORM_VALUE]
+  inline def INVALID_FORM_VALUE: INVALID_FORM_VALUE = "INVALID_FORM_VALUE".asInstanceOf[INVALID_FORM_VALUE]
   
   @js.native
   sealed trait INVALID_PHONE_NUMBER
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_PHONE_NUMBER: INVALID_PHONE_NUMBER = "INVALID_PHONE_NUMBER".asInstanceOf[INVALID_PHONE_NUMBER]
+  inline def INVALID_PHONE_NUMBER: INVALID_PHONE_NUMBER = "INVALID_PHONE_NUMBER".asInstanceOf[INVALID_PHONE_NUMBER]
   
   @js.native
   sealed trait INVALID_REQUEST_ERROR
     extends StObject
        with ErrorCategoryType
-  @scala.inline
-  def INVALID_REQUEST_ERROR: INVALID_REQUEST_ERROR = "INVALID_REQUEST_ERROR".asInstanceOf[INVALID_REQUEST_ERROR]
+  inline def INVALID_REQUEST_ERROR: INVALID_REQUEST_ERROR = "INVALID_REQUEST_ERROR".asInstanceOf[INVALID_REQUEST_ERROR]
   
   @js.native
   sealed trait INVALID_SORT_ORDER
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_SORT_ORDER: INVALID_SORT_ORDER = "INVALID_SORT_ORDER".asInstanceOf[INVALID_SORT_ORDER]
+  inline def INVALID_SORT_ORDER: INVALID_SORT_ORDER = "INVALID_SORT_ORDER".asInstanceOf[INVALID_SORT_ORDER]
   
   @js.native
   sealed trait INVALID_SQUARE_VERSION_FORMAT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_SQUARE_VERSION_FORMAT: INVALID_SQUARE_VERSION_FORMAT = "INVALID_SQUARE_VERSION_FORMAT".asInstanceOf[INVALID_SQUARE_VERSION_FORMAT]
+  inline def INVALID_SQUARE_VERSION_FORMAT: INVALID_SQUARE_VERSION_FORMAT = "INVALID_SQUARE_VERSION_FORMAT".asInstanceOf[INVALID_SQUARE_VERSION_FORMAT]
   
   @js.native
   sealed trait INVALID_TIME
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_TIME: INVALID_TIME = "INVALID_TIME".asInstanceOf[INVALID_TIME]
+  inline def INVALID_TIME: INVALID_TIME = "INVALID_TIME".asInstanceOf[INVALID_TIME]
   
   @js.native
   sealed trait INVALID_TIME_RANGE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_TIME_RANGE: INVALID_TIME_RANGE = "INVALID_TIME_RANGE".asInstanceOf[INVALID_TIME_RANGE]
+  inline def INVALID_TIME_RANGE: INVALID_TIME_RANGE = "INVALID_TIME_RANGE".asInstanceOf[INVALID_TIME_RANGE]
   
   @js.native
   sealed trait INVALID_VALUE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def INVALID_VALUE: INVALID_VALUE = "INVALID_VALUE".asInstanceOf[INVALID_VALUE]
+  inline def INVALID_VALUE: INVALID_VALUE = "INVALID_VALUE".asInstanceOf[INVALID_VALUE]
   
   @js.native
   sealed trait INVOICES
     extends StObject
        with CustomerSourceType
        with ProductSourceType
-  @scala.inline
-  def INVOICES: INVOICES = "INVOICES".asInstanceOf[INVOICES]
+  inline def INVOICES: INVOICES = "INVOICES".asInstanceOf[INVOICES]
   
   @js.native
   sealed trait IN_STOCK
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def IN_STOCK: IN_STOCK = "IN_STOCK".asInstanceOf[IN_STOCK]
+  inline def IN_STOCK: IN_STOCK = "IN_STOCK".asInstanceOf[IN_STOCK]
   
   @js.native
   sealed trait IN_TRANSIT_TO
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def IN_TRANSIT_TO: IN_TRANSIT_TO = "IN_TRANSIT_TO".asInstanceOf[IN_TRANSIT_TO]
+  inline def IN_TRANSIT_TO: IN_TRANSIT_TO = "IN_TRANSIT_TO".asInstanceOf[IN_TRANSIT_TO]
   
   @js.native
   sealed trait IO
     extends StObject
        with CountryType
-  @scala.inline
-  def IO: IO = "IO".asInstanceOf[IO]
+  inline def IO: IO = "IO".asInstanceOf[IO]
   
   @js.native
   sealed trait IQ
     extends StObject
        with CountryType
-  @scala.inline
-  def IQ: IQ = "IQ".asInstanceOf[IQ]
+  inline def IQ: IQ = "IQ".asInstanceOf[IQ]
   
   @js.native
   sealed trait IQD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def IQD: IQD = "IQD".asInstanceOf[IQD]
+  inline def IQD: IQD = "IQD".asInstanceOf[IQD]
   
   @js.native
   sealed trait IR
     extends StObject
        with CountryType
-  @scala.inline
-  def IR: IR = "IR".asInstanceOf[IR]
+  inline def IR: IR = "IR".asInstanceOf[IR]
   
   @js.native
   sealed trait IRR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def IRR: IRR = "IRR".asInstanceOf[IRR]
+  inline def IRR: IRR = "IRR".asInstanceOf[IRR]
   
   @js.native
   sealed trait IS
     extends StObject
        with CountryType
-  @scala.inline
-  def IS: IS = "IS".asInstanceOf[IS]
+  inline def IS: IS = "IS".asInstanceOf[IS]
   
   @js.native
   sealed trait ISK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ISK: ISK = "ISK".asInstanceOf[ISK]
+  inline def ISK: ISK = "ISK".asInstanceOf[ISK]
   
   @js.native
   sealed trait IT
     extends StObject
        with CountryType
-  @scala.inline
-  def IT: IT = "IT".asInstanceOf[IT]
+  inline def IT: IT = "IT".asInstanceOf[IT]
   
   @js.native
   sealed trait ITEM
     extends StObject
        with ObjectType
-  @scala.inline
-  def ITEM: ITEM = "ITEM".asInstanceOf[ITEM]
+  inline def ITEM: ITEM = "ITEM".asInstanceOf[ITEM]
   
   @js.native
   sealed trait ITEM_LIBRARY_IMPORT
     extends StObject
        with ProductSourceType
-  @scala.inline
-  def ITEM_LIBRARY_IMPORT: ITEM_LIBRARY_IMPORT = "ITEM_LIBRARY_IMPORT".asInstanceOf[ITEM_LIBRARY_IMPORT]
+  inline def ITEM_LIBRARY_IMPORT: ITEM_LIBRARY_IMPORT = "ITEM_LIBRARY_IMPORT".asInstanceOf[ITEM_LIBRARY_IMPORT]
   
   @js.native
   sealed trait ITEM_VARIATION
     extends StObject
        with ObjectType
-  @scala.inline
-  def ITEM_VARIATION: ITEM_VARIATION = "ITEM_VARIATION".asInstanceOf[ITEM_VARIATION]
+  inline def ITEM_VARIATION: ITEM_VARIATION = "ITEM_VARIATION".asInstanceOf[ITEM_VARIATION]
   
   @js.native
   sealed trait JCB
     extends StObject
        with CardBrandType
-  @scala.inline
-  def JCB: JCB = "JCB".asInstanceOf[JCB]
+  inline def JCB: JCB = "JCB".asInstanceOf[JCB]
   
   @js.native
   sealed trait JE
     extends StObject
        with CountryType
-  @scala.inline
-  def JE: JE = "JE".asInstanceOf[JE]
+  inline def JE: JE = "JE".asInstanceOf[JE]
   
   @js.native
   sealed trait JM
     extends StObject
        with CountryType
-  @scala.inline
-  def JM: JM = "JM".asInstanceOf[JM]
+  inline def JM: JM = "JM".asInstanceOf[JM]
   
   @js.native
   sealed trait JMD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def JMD: JMD = "JMD".asInstanceOf[JMD]
+  inline def JMD: JMD = "JMD".asInstanceOf[JMD]
   
   @js.native
   sealed trait JO
     extends StObject
        with CountryType
-  @scala.inline
-  def JO: JO = "JO".asInstanceOf[JO]
+  inline def JO: JO = "JO".asInstanceOf[JO]
   
   @js.native
   sealed trait JOD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def JOD: JOD = "JOD".asInstanceOf[JOD]
+  inline def JOD: JOD = "JOD".asInstanceOf[JOD]
   
   @js.native
   sealed trait JP
     extends StObject
        with CountryType
-  @scala.inline
-  def JP: JP = "JP".asInstanceOf[JP]
+  inline def JP: JP = "JP".asInstanceOf[JP]
   
   @js.native
   sealed trait JPY
     extends StObject
        with CurrencyType
-  @scala.inline
-  def JPY: JPY = "JPY".asInstanceOf[JPY]
+  inline def JPY: JPY = "JPY".asInstanceOf[JPY]
   
   @js.native
   sealed trait KE
     extends StObject
        with CountryType
-  @scala.inline
-  def KE: KE = "KE".asInstanceOf[KE]
+  inline def KE: KE = "KE".asInstanceOf[KE]
   
   @js.native
   sealed trait KES
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KES: KES = "KES".asInstanceOf[KES]
+  inline def KES: KES = "KES".asInstanceOf[KES]
   
   @js.native
   sealed trait KEYED extends StObject
-  @scala.inline
-  def KEYED: KEYED = "KEYED".asInstanceOf[KEYED]
+  inline def KEYED: KEYED = "KEYED".asInstanceOf[KEYED]
   
   @js.native
   sealed trait KG
     extends StObject
        with CountryType
-  @scala.inline
-  def KG: KG = "KG".asInstanceOf[KG]
+  inline def KG: KG = "KG".asInstanceOf[KG]
   
   @js.native
   sealed trait KGS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KGS: KGS = "KGS".asInstanceOf[KGS]
+  inline def KGS: KGS = "KGS".asInstanceOf[KGS]
   
   @js.native
   sealed trait KH
     extends StObject
        with CountryType
-  @scala.inline
-  def KH: KH = "KH".asInstanceOf[KH]
+  inline def KH: KH = "KH".asInstanceOf[KH]
   
   @js.native
   sealed trait KHR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KHR: KHR = "KHR".asInstanceOf[KHR]
+  inline def KHR: KHR = "KHR".asInstanceOf[KHR]
   
   @js.native
   sealed trait KI
     extends StObject
        with CountryType
-  @scala.inline
-  def KI: KI = "KI".asInstanceOf[KI]
+  inline def KI: KI = "KI".asInstanceOf[KI]
   
   @js.native
   sealed trait KM
     extends StObject
        with CountryType
-  @scala.inline
-  def KM: KM = "KM".asInstanceOf[KM]
+  inline def KM: KM = "KM".asInstanceOf[KM]
   
   @js.native
   sealed trait KMF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KMF: KMF = "KMF".asInstanceOf[KMF]
+  inline def KMF: KMF = "KMF".asInstanceOf[KMF]
   
   @js.native
   sealed trait KN
     extends StObject
        with CountryType
-  @scala.inline
-  def KN: KN = "KN".asInstanceOf[KN]
+  inline def KN: KN = "KN".asInstanceOf[KN]
   
   @js.native
   sealed trait KP
     extends StObject
        with CountryType
-  @scala.inline
-  def KP: KP = "KP".asInstanceOf[KP]
+  inline def KP: KP = "KP".asInstanceOf[KP]
   
   @js.native
   sealed trait KPW
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KPW: KPW = "KPW".asInstanceOf[KPW]
+  inline def KPW: KPW = "KPW".asInstanceOf[KPW]
   
   @js.native
   sealed trait KR
     extends StObject
        with CountryType
-  @scala.inline
-  def KR: KR = "KR".asInstanceOf[KR]
+  inline def KR: KR = "KR".asInstanceOf[KR]
   
   @js.native
   sealed trait KRW
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KRW: KRW = "KRW".asInstanceOf[KRW]
+  inline def KRW: KRW = "KRW".asInstanceOf[KRW]
   
   @js.native
   sealed trait KW
     extends StObject
        with CountryType
-  @scala.inline
-  def KW: KW = "KW".asInstanceOf[KW]
+  inline def KW: KW = "KW".asInstanceOf[KW]
   
   @js.native
   sealed trait KWD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KWD: KWD = "KWD".asInstanceOf[KWD]
+  inline def KWD: KWD = "KWD".asInstanceOf[KWD]
   
   @js.native
   sealed trait KY
     extends StObject
        with CountryType
-  @scala.inline
-  def KY: KY = "KY".asInstanceOf[KY]
+  inline def KY: KY = "KY".asInstanceOf[KY]
   
   @js.native
   sealed trait KYD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KYD: KYD = "KYD".asInstanceOf[KYD]
+  inline def KYD: KYD = "KYD".asInstanceOf[KYD]
   
   @js.native
   sealed trait KZ
     extends StObject
        with CountryType
-  @scala.inline
-  def KZ: KZ = "KZ".asInstanceOf[KZ]
+  inline def KZ: KZ = "KZ".asInstanceOf[KZ]
   
   @js.native
   sealed trait KZT
     extends StObject
        with CurrencyType
-  @scala.inline
-  def KZT: KZT = "KZT".asInstanceOf[KZT]
+  inline def KZT: KZT = "KZT".asInstanceOf[KZT]
   
   @js.native
   sealed trait LA
     extends StObject
        with CountryType
-  @scala.inline
-  def LA: LA = "LA".asInstanceOf[LA]
+  inline def LA: LA = "LA".asInstanceOf[LA]
   
   @js.native
   sealed trait LAK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LAK: LAK = "LAK".asInstanceOf[LAK]
+  inline def LAK: LAK = "LAK".asInstanceOf[LAK]
   
   @js.native
   sealed trait LB
     extends StObject
        with CountryType
-  @scala.inline
-  def LB: LB = "LB".asInstanceOf[LB]
+  inline def LB: LB = "LB".asInstanceOf[LB]
   
   @js.native
   sealed trait LBP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LBP: LBP = "LBP".asInstanceOf[LBP]
+  inline def LBP: LBP = "LBP".asInstanceOf[LBP]
   
   @js.native
   sealed trait LC
     extends StObject
        with CountryType
-  @scala.inline
-  def LC: LC = "LC".asInstanceOf[LC]
+  inline def LC: LC = "LC".asInstanceOf[LC]
   
   @js.native
   sealed trait LI
     extends StObject
        with CountryType
-  @scala.inline
-  def LI: LI = "LI".asInstanceOf[LI]
+  inline def LI: LI = "LI".asInstanceOf[LI]
   
   @js.native
   sealed trait LINE_ITEM
     extends StObject
        with DiscountApplicationScopeType
        with TaxApplicationScopeType
-  @scala.inline
-  def LINE_ITEM: LINE_ITEM = "LINE_ITEM".asInstanceOf[LINE_ITEM]
+  inline def LINE_ITEM: LINE_ITEM = "LINE_ITEM".asInstanceOf[LINE_ITEM]
   
   @js.native
   sealed trait LK
     extends StObject
        with CountryType
-  @scala.inline
-  def LK: LK = "LK".asInstanceOf[LK]
+  inline def LK: LK = "LK".asInstanceOf[LK]
   
   @js.native
   sealed trait LKR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LKR: LKR = "LKR".asInstanceOf[LKR]
+  inline def LKR: LKR = "LKR".asInstanceOf[LKR]
   
   @js.native
   sealed trait LOCATION_MISMATCH
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def LOCATION_MISMATCH: LOCATION_MISMATCH = "LOCATION_MISMATCH".asInstanceOf[LOCATION_MISMATCH]
+  inline def LOCATION_MISMATCH: LOCATION_MISMATCH = "LOCATION_MISMATCH".asInstanceOf[LOCATION_MISMATCH]
   
   @js.native
   sealed trait LOW_QUANTITY extends StObject
-  @scala.inline
-  def LOW_QUANTITY: LOW_QUANTITY = "LOW_QUANTITY".asInstanceOf[LOW_QUANTITY]
+  inline def LOW_QUANTITY: LOW_QUANTITY = "LOW_QUANTITY".asInstanceOf[LOW_QUANTITY]
   
   @js.native
   sealed trait LOYALTY
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def LOYALTY: LOYALTY = "LOYALTY".asInstanceOf[LOYALTY]
+  inline def LOYALTY: LOYALTY = "LOYALTY".asInstanceOf[LOYALTY]
   
   @js.native
   sealed trait LR
     extends StObject
        with CountryType
-  @scala.inline
-  def LR: LR = "LR".asInstanceOf[LR]
+  inline def LR: LR = "LR".asInstanceOf[LR]
   
   @js.native
   sealed trait LRD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LRD: LRD = "LRD".asInstanceOf[LRD]
+  inline def LRD: LRD = "LRD".asInstanceOf[LRD]
   
   @js.native
   sealed trait LS
     extends StObject
        with CountryType
-  @scala.inline
-  def LS: LS = "LS".asInstanceOf[LS]
+  inline def LS: LS = "LS".asInstanceOf[LS]
   
   @js.native
   sealed trait LSL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LSL: LSL = "LSL".asInstanceOf[LSL]
+  inline def LSL: LSL = "LSL".asInstanceOf[LSL]
   
   @js.native
   sealed trait LT
     extends StObject
        with CountryType
-  @scala.inline
-  def LT: LT = "LT".asInstanceOf[LT]
+  inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
   sealed trait LTL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LTL: LTL = "LTL".asInstanceOf[LTL]
+  inline def LTL: LTL = "LTL".asInstanceOf[LTL]
   
   @js.native
   sealed trait LU
     extends StObject
        with CountryType
-  @scala.inline
-  def LU: LU = "LU".asInstanceOf[LU]
+  inline def LU: LU = "LU".asInstanceOf[LU]
   
   @js.native
   sealed trait LV
     extends StObject
        with CountryType
-  @scala.inline
-  def LV: LV = "LV".asInstanceOf[LV]
+  inline def LV: LV = "LV".asInstanceOf[LV]
   
   @js.native
   sealed trait LVL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LVL: LVL = "LVL".asInstanceOf[LVL]
+  inline def LVL: LVL = "LVL".asInstanceOf[LVL]
   
   @js.native
   sealed trait LY
     extends StObject
        with CountryType
-  @scala.inline
-  def LY: LY = "LY".asInstanceOf[LY]
+  inline def LY: LY = "LY".asInstanceOf[LY]
   
   @js.native
   sealed trait LYD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def LYD: LYD = "LYD".asInstanceOf[LYD]
+  inline def LYD: LYD = "LYD".asInstanceOf[LYD]
   
   @js.native
   sealed trait MA
     extends StObject
        with CountryType
-  @scala.inline
-  def MA: MA = "MA".asInstanceOf[MA]
+  inline def MA: MA = "MA".asInstanceOf[MA]
   
   @js.native
   sealed trait MAD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MAD: MAD = "MAD".asInstanceOf[MAD]
+  inline def MAD: MAD = "MAD".asInstanceOf[MAD]
   
   @js.native
   sealed trait MARKETING
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def MARKETING: MARKETING = "MARKETING".asInstanceOf[MARKETING]
+  inline def MARKETING: MARKETING = "MARKETING".asInstanceOf[MARKETING]
   
   @js.native
   sealed trait MASTERCARD
     extends StObject
        with CardBrandType
-  @scala.inline
-  def MASTERCARD: MASTERCARD = "MASTERCARD".asInstanceOf[MASTERCARD]
+  inline def MASTERCARD: MASTERCARD = "MASTERCARD".asInstanceOf[MASTERCARD]
   
   @js.native
   sealed trait MC
     extends StObject
        with CountryType
-  @scala.inline
-  def MC: MC = "MC".asInstanceOf[MC]
+  inline def MC: MC = "MC".asInstanceOf[MC]
   
   @js.native
   sealed trait MD
     extends StObject
        with CountryType
-  @scala.inline
-  def MD: MD = "MD".asInstanceOf[MD]
+  inline def MD: MD = "MD".asInstanceOf[MD]
   
   @js.native
   sealed trait MDL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MDL: MDL = "MDL".asInstanceOf[MDL]
+  inline def MDL: MDL = "MDL".asInstanceOf[MDL]
   
   @js.native
   sealed trait ME
     extends StObject
        with CountryType
-  @scala.inline
-  def ME: ME = "ME".asInstanceOf[ME]
+  inline def ME: ME = "ME".asInstanceOf[ME]
   
   @js.native
   sealed trait MERGE
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def MERGE: MERGE = "MERGE".asInstanceOf[MERGE]
+  inline def MERGE: MERGE = "MERGE".asInstanceOf[MERGE]
   
   @js.native
   sealed trait METHOD_NOT_ALLOWED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def METHOD_NOT_ALLOWED: METHOD_NOT_ALLOWED = "METHOD_NOT_ALLOWED".asInstanceOf[METHOD_NOT_ALLOWED]
+  inline def METHOD_NOT_ALLOWED: METHOD_NOT_ALLOWED = "METHOD_NOT_ALLOWED".asInstanceOf[METHOD_NOT_ALLOWED]
   
   @js.native
   sealed trait METRIC_CENTIMETER
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def METRIC_CENTIMETER: METRIC_CENTIMETER = "METRIC_CENTIMETER".asInstanceOf[METRIC_CENTIMETER]
+  inline def METRIC_CENTIMETER: METRIC_CENTIMETER = "METRIC_CENTIMETER".asInstanceOf[METRIC_CENTIMETER]
   
   @js.native
   sealed trait METRIC_GRAM
     extends StObject
        with WeightUnitType
-  @scala.inline
-  def METRIC_GRAM: METRIC_GRAM = "METRIC_GRAM".asInstanceOf[METRIC_GRAM]
+  inline def METRIC_GRAM: METRIC_GRAM = "METRIC_GRAM".asInstanceOf[METRIC_GRAM]
   
   @js.native
   sealed trait METRIC_KILOGRAM
     extends StObject
        with WeightUnitType
-  @scala.inline
-  def METRIC_KILOGRAM: METRIC_KILOGRAM = "METRIC_KILOGRAM".asInstanceOf[METRIC_KILOGRAM]
+  inline def METRIC_KILOGRAM: METRIC_KILOGRAM = "METRIC_KILOGRAM".asInstanceOf[METRIC_KILOGRAM]
   
   @js.native
   sealed trait METRIC_KILOMETER
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def METRIC_KILOMETER: METRIC_KILOMETER = "METRIC_KILOMETER".asInstanceOf[METRIC_KILOMETER]
+  inline def METRIC_KILOMETER: METRIC_KILOMETER = "METRIC_KILOMETER".asInstanceOf[METRIC_KILOMETER]
   
   @js.native
   sealed trait METRIC_LITER
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def METRIC_LITER: METRIC_LITER = "METRIC_LITER".asInstanceOf[METRIC_LITER]
+  inline def METRIC_LITER: METRIC_LITER = "METRIC_LITER".asInstanceOf[METRIC_LITER]
   
   @js.native
   sealed trait METRIC_METER
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def METRIC_METER: METRIC_METER = "METRIC_METER".asInstanceOf[METRIC_METER]
+  inline def METRIC_METER: METRIC_METER = "METRIC_METER".asInstanceOf[METRIC_METER]
   
   @js.native
   sealed trait METRIC_MILLIGRAM
     extends StObject
        with WeightUnitType
-  @scala.inline
-  def METRIC_MILLIGRAM: METRIC_MILLIGRAM = "METRIC_MILLIGRAM".asInstanceOf[METRIC_MILLIGRAM]
+  inline def METRIC_MILLIGRAM: METRIC_MILLIGRAM = "METRIC_MILLIGRAM".asInstanceOf[METRIC_MILLIGRAM]
   
   @js.native
   sealed trait METRIC_MILLILITER
     extends StObject
        with VolumeUnitType
-  @scala.inline
-  def METRIC_MILLILITER: METRIC_MILLILITER = "METRIC_MILLILITER".asInstanceOf[METRIC_MILLILITER]
+  inline def METRIC_MILLILITER: METRIC_MILLILITER = "METRIC_MILLILITER".asInstanceOf[METRIC_MILLILITER]
   
   @js.native
   sealed trait METRIC_MILLIMETER
     extends StObject
        with LengthUnitType
-  @scala.inline
-  def METRIC_MILLIMETER: METRIC_MILLIMETER = "METRIC_MILLIMETER".asInstanceOf[METRIC_MILLIMETER]
+  inline def METRIC_MILLIMETER: METRIC_MILLIMETER = "METRIC_MILLIMETER".asInstanceOf[METRIC_MILLIMETER]
   
   @js.native
   sealed trait METRIC_SQUARE_CENTIMETER
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def METRIC_SQUARE_CENTIMETER: METRIC_SQUARE_CENTIMETER = "METRIC_SQUARE_CENTIMETER".asInstanceOf[METRIC_SQUARE_CENTIMETER]
+  inline def METRIC_SQUARE_CENTIMETER: METRIC_SQUARE_CENTIMETER = "METRIC_SQUARE_CENTIMETER".asInstanceOf[METRIC_SQUARE_CENTIMETER]
   
   @js.native
   sealed trait METRIC_SQUARE_KILOMETER
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def METRIC_SQUARE_KILOMETER: METRIC_SQUARE_KILOMETER = "METRIC_SQUARE_KILOMETER".asInstanceOf[METRIC_SQUARE_KILOMETER]
+  inline def METRIC_SQUARE_KILOMETER: METRIC_SQUARE_KILOMETER = "METRIC_SQUARE_KILOMETER".asInstanceOf[METRIC_SQUARE_KILOMETER]
   
   @js.native
   sealed trait METRIC_SQUARE_METER
     extends StObject
        with AreaUnitType
-  @scala.inline
-  def METRIC_SQUARE_METER: METRIC_SQUARE_METER = "METRIC_SQUARE_METER".asInstanceOf[METRIC_SQUARE_METER]
+  inline def METRIC_SQUARE_METER: METRIC_SQUARE_METER = "METRIC_SQUARE_METER".asInstanceOf[METRIC_SQUARE_METER]
   
   @js.native
   sealed trait MF
     extends StObject
        with CountryType
-  @scala.inline
-  def MF: MF = "MF".asInstanceOf[MF]
+  inline def MF: MF = "MF".asInstanceOf[MF]
   
   @js.native
   sealed trait MG
     extends StObject
        with CountryType
-  @scala.inline
-  def MG: MG = "MG".asInstanceOf[MG]
+  inline def MG: MG = "MG".asInstanceOf[MG]
   
   @js.native
   sealed trait MGA
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MGA: MGA = "MGA".asInstanceOf[MGA]
+  inline def MGA: MGA = "MGA".asInstanceOf[MGA]
   
   @js.native
   sealed trait MH
     extends StObject
        with CountryType
-  @scala.inline
-  def MH: MH = "MH".asInstanceOf[MH]
+  inline def MH: MH = "MH".asInstanceOf[MH]
   
   @js.native
   sealed trait MISSING_REQUIRED_PARAMETER
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def MISSING_REQUIRED_PARAMETER: MISSING_REQUIRED_PARAMETER = "MISSING_REQUIRED_PARAMETER".asInstanceOf[MISSING_REQUIRED_PARAMETER]
+  inline def MISSING_REQUIRED_PARAMETER: MISSING_REQUIRED_PARAMETER = "MISSING_REQUIRED_PARAMETER".asInstanceOf[MISSING_REQUIRED_PARAMETER]
   
   @js.native
   sealed trait MK
     extends StObject
        with CountryType
-  @scala.inline
-  def MK: MK = "MK".asInstanceOf[MK]
+  inline def MK: MK = "MK".asInstanceOf[MK]
   
   @js.native
   sealed trait MKD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MKD: MKD = "MKD".asInstanceOf[MKD]
+  inline def MKD: MKD = "MKD".asInstanceOf[MKD]
   
   @js.native
   sealed trait ML
     extends StObject
        with CountryType
-  @scala.inline
-  def ML: ML = "ML".asInstanceOf[ML]
+  inline def ML: ML = "ML".asInstanceOf[ML]
   
   @js.native
   sealed trait MM
     extends StObject
        with CountryType
-  @scala.inline
-  def MM: MM = "MM".asInstanceOf[MM]
+  inline def MM: MM = "MM".asInstanceOf[MM]
   
   @js.native
   sealed trait MMK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MMK: MMK = "MMK".asInstanceOf[MMK]
+  inline def MMK: MMK = "MMK".asInstanceOf[MMK]
   
   @js.native
   sealed trait MN
     extends StObject
        with CountryType
-  @scala.inline
-  def MN: MN = "MN".asInstanceOf[MN]
+  inline def MN: MN = "MN".asInstanceOf[MN]
   
   @js.native
   sealed trait MNT
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MNT: MNT = "MNT".asInstanceOf[MNT]
+  inline def MNT: MNT = "MNT".asInstanceOf[MNT]
   
   @js.native
   sealed trait MO
     extends StObject
        with CountryType
-  @scala.inline
-  def MO: MO = "MO".asInstanceOf[MO]
+  inline def MO: MO = "MO".asInstanceOf[MO]
   
   @js.native
   sealed trait MOBILE extends StObject
-  @scala.inline
-  def MOBILE: MOBILE = "MOBILE".asInstanceOf[MOBILE]
+  inline def MOBILE: MOBILE = "MOBILE".asInstanceOf[MOBILE]
   
   @js.native
   sealed trait MODIFIER
     extends StObject
        with ObjectType
-  @scala.inline
-  def MODIFIER: MODIFIER = "MODIFIER".asInstanceOf[MODIFIER]
+  inline def MODIFIER: MODIFIER = "MODIFIER".asInstanceOf[MODIFIER]
   
   @js.native
   sealed trait MODIFIER_LIST
     extends StObject
        with ObjectType
-  @scala.inline
-  def MODIFIER_LIST: MODIFIER_LIST = "MODIFIER_LIST".asInstanceOf[MODIFIER_LIST]
+  inline def MODIFIER_LIST: MODIFIER_LIST = "MODIFIER_LIST".asInstanceOf[MODIFIER_LIST]
   
   @js.native
   sealed trait MON
     extends StObject
        with DayOfWeekType
-  @scala.inline
-  def MON: MON = "MON".asInstanceOf[MON]
+  inline def MON: MON = "MON".asInstanceOf[MON]
   
   @js.native
   sealed trait MOP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MOP: MOP = "MOP".asInstanceOf[MOP]
+  inline def MOP: MOP = "MOP".asInstanceOf[MOP]
   
   @js.native
   sealed trait MP
     extends StObject
        with CountryType
-  @scala.inline
-  def MP: MP = "MP".asInstanceOf[MP]
+  inline def MP: MP = "MP".asInstanceOf[MP]
   
   @js.native
   sealed trait MQ
     extends StObject
        with CountryType
-  @scala.inline
-  def MQ: MQ = "MQ".asInstanceOf[MQ]
+  inline def MQ: MQ = "MQ".asInstanceOf[MQ]
   
   @js.native
   sealed trait MR
     extends StObject
        with CountryType
-  @scala.inline
-  def MR: MR = "MR".asInstanceOf[MR]
+  inline def MR: MR = "MR".asInstanceOf[MR]
   
   @js.native
   sealed trait MRO
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MRO: MRO = "MRO".asInstanceOf[MRO]
+  inline def MRO: MRO = "MRO".asInstanceOf[MRO]
   
   @js.native
   sealed trait MS
     extends StObject
        with CountryType
-  @scala.inline
-  def MS: MS = "MS".asInstanceOf[MS]
+  inline def MS: MS = "MS".asInstanceOf[MS]
   
   @js.native
   sealed trait MT
     extends StObject
        with CountryType
-  @scala.inline
-  def MT: MT = "MT".asInstanceOf[MT]
+  inline def MT: MT = "MT".asInstanceOf[MT]
   
   @js.native
   sealed trait MU
     extends StObject
        with CountryType
-  @scala.inline
-  def MU: MU = "MU".asInstanceOf[MU]
+  inline def MU: MU = "MU".asInstanceOf[MU]
   
   @js.native
   sealed trait MUR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MUR: MUR = "MUR".asInstanceOf[MUR]
+  inline def MUR: MUR = "MUR".asInstanceOf[MUR]
   
   @js.native
   sealed trait MV
     extends StObject
        with CountryType
-  @scala.inline
-  def MV: MV = "MV".asInstanceOf[MV]
+  inline def MV: MV = "MV".asInstanceOf[MV]
   
   @js.native
   sealed trait MVR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MVR: MVR = "MVR".asInstanceOf[MVR]
+  inline def MVR: MVR = "MVR".asInstanceOf[MVR]
   
   @js.native
   sealed trait MW
     extends StObject
        with CountryType
-  @scala.inline
-  def MW: MW = "MW".asInstanceOf[MW]
+  inline def MW: MW = "MW".asInstanceOf[MW]
   
   @js.native
   sealed trait MWK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MWK: MWK = "MWK".asInstanceOf[MWK]
+  inline def MWK: MWK = "MWK".asInstanceOf[MWK]
   
   @js.native
   sealed trait MX
     extends StObject
        with CountryType
-  @scala.inline
-  def MX: MX = "MX".asInstanceOf[MX]
+  inline def MX: MX = "MX".asInstanceOf[MX]
   
   @js.native
   sealed trait MXN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MXN: MXN = "MXN".asInstanceOf[MXN]
+  inline def MXN: MXN = "MXN".asInstanceOf[MXN]
   
   @js.native
   sealed trait MXV
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MXV: MXV = "MXV".asInstanceOf[MXV]
+  inline def MXV: MXV = "MXV".asInstanceOf[MXV]
   
   @js.native
   sealed trait MY
     extends StObject
        with CountryType
-  @scala.inline
-  def MY: MY = "MY".asInstanceOf[MY]
+  inline def MY: MY = "MY".asInstanceOf[MY]
   
   @js.native
   sealed trait MYR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MYR: MYR = "MYR".asInstanceOf[MYR]
+  inline def MYR: MYR = "MYR".asInstanceOf[MYR]
   
   @js.native
   sealed trait MZ
     extends StObject
        with CountryType
-  @scala.inline
-  def MZ: MZ = "MZ".asInstanceOf[MZ]
+  inline def MZ: MZ = "MZ".asInstanceOf[MZ]
   
   @js.native
   sealed trait MZN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def MZN: MZN = "MZN".asInstanceOf[MZN]
+  inline def MZN: MZN = "MZN".asInstanceOf[MZN]
   
   @js.native
   sealed trait NA
     extends StObject
        with CountryType
-  @scala.inline
-  def NA: NA = "NA".asInstanceOf[NA]
+  inline def NA: NA = "NA".asInstanceOf[NA]
   
   @js.native
   sealed trait NAD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def NAD: NAD = "NAD".asInstanceOf[NAD]
+  inline def NAD: NAD = "NAD".asInstanceOf[NAD]
   
   @js.native
   sealed trait NC
     extends StObject
        with CountryType
-  @scala.inline
-  def NC: NC = "NC".asInstanceOf[NC]
+  inline def NC: NC = "NC".asInstanceOf[NC]
   
   @js.native
   sealed trait NE
     extends StObject
        with CountryType
-  @scala.inline
-  def NE: NE = "NE".asInstanceOf[NE]
+  inline def NE: NE = "NE".asInstanceOf[NE]
   
   @js.native
   sealed trait NF
     extends StObject
        with CountryType
-  @scala.inline
-  def NF: NF = "NF".asInstanceOf[NF]
+  inline def NF: NF = "NF".asInstanceOf[NF]
   
   @js.native
   sealed trait NG
     extends StObject
        with CountryType
-  @scala.inline
-  def NG: NG = "NG".asInstanceOf[NG]
+  inline def NG: NG = "NG".asInstanceOf[NG]
   
   @js.native
   sealed trait NGN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def NGN: NGN = "NGN".asInstanceOf[NGN]
+  inline def NGN: NGN = "NGN".asInstanceOf[NGN]
   
   @js.native
   sealed trait NI
     extends StObject
        with CountryType
-  @scala.inline
-  def NI: NI = "NI".asInstanceOf[NI]
+  inline def NI: NI = "NI".asInstanceOf[NI]
   
   @js.native
   sealed trait NIO
     extends StObject
        with CurrencyType
-  @scala.inline
-  def NIO: NIO = "NIO".asInstanceOf[NIO]
+  inline def NIO: NIO = "NIO".asInstanceOf[NIO]
   
   @js.native
   sealed trait NL
     extends StObject
        with CountryType
-  @scala.inline
-  def NL: NL = "NL".asInstanceOf[NL]
+  inline def NL: NL = "NL".asInstanceOf[NL]
   
   @js.native
   sealed trait NO
     extends StObject
        with CountryType
-  @scala.inline
-  def NO: NO = "NO".asInstanceOf[NO]
+  inline def NO: NO = "NO".asInstanceOf[NO]
   
   @js.native
   sealed trait NOK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def NOK: NOK = "NOK".asInstanceOf[NOK]
+  inline def NOK: NOK = "NOK".asInstanceOf[NOK]
   
   @js.native
   sealed trait NONE
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
   sealed trait NOT_ACCEPTABLE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def NOT_ACCEPTABLE: NOT_ACCEPTABLE = "NOT_ACCEPTABLE".asInstanceOf[NOT_ACCEPTABLE]
+  inline def NOT_ACCEPTABLE: NOT_ACCEPTABLE = "NOT_ACCEPTABLE".asInstanceOf[NOT_ACCEPTABLE]
   
   @js.native
   sealed trait NOT_FOUND
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def NOT_FOUND: NOT_FOUND = "NOT_FOUND".asInstanceOf[NOT_FOUND]
+  inline def NOT_FOUND: NOT_FOUND = "NOT_FOUND".asInstanceOf[NOT_FOUND]
   
   @js.native
   sealed trait NOT_IMPLEMENTED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def NOT_IMPLEMENTED: NOT_IMPLEMENTED = "NOT_IMPLEMENTED".asInstanceOf[NOT_IMPLEMENTED]
+  inline def NOT_IMPLEMENTED: NOT_IMPLEMENTED = "NOT_IMPLEMENTED".asInstanceOf[NOT_IMPLEMENTED]
   
   @js.native
   sealed trait NO_FIELDS_SET
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def NO_FIELDS_SET: NO_FIELDS_SET = "NO_FIELDS_SET".asInstanceOf[NO_FIELDS_SET]
+  inline def NO_FIELDS_SET: NO_FIELDS_SET = "NO_FIELDS_SET".asInstanceOf[NO_FIELDS_SET]
   
   @js.native
   sealed trait NO_SALE extends StObject
-  @scala.inline
-  def NO_SALE: NO_SALE = "NO_SALE".asInstanceOf[NO_SALE]
+  inline def NO_SALE: NO_SALE = "NO_SALE".asInstanceOf[NO_SALE]
   
   @js.native
   sealed trait NP
     extends StObject
        with CountryType
-  @scala.inline
-  def NP: NP = "NP".asInstanceOf[NP]
+  inline def NP: NP = "NP".asInstanceOf[NP]
   
   @js.native
   sealed trait NPR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def NPR: NPR = "NPR".asInstanceOf[NPR]
+  inline def NPR: NPR = "NPR".asInstanceOf[NPR]
   
   @js.native
   sealed trait NR
     extends StObject
        with CountryType
-  @scala.inline
-  def NR: NR = "NR".asInstanceOf[NR]
+  inline def NR: NR = "NR".asInstanceOf[NR]
   
   @js.native
   sealed trait NU
     extends StObject
        with CountryType
-  @scala.inline
-  def NU: NU = "NU".asInstanceOf[NU]
+  inline def NU: NU = "NU".asInstanceOf[NU]
   
   @js.native
   sealed trait NZ
     extends StObject
        with CountryType
-  @scala.inline
-  def NZ: NZ = "NZ".asInstanceOf[NZ]
+  inline def NZ: NZ = "NZ".asInstanceOf[NZ]
   
   @js.native
   sealed trait NZD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def NZD: NZD = "NZD".asInstanceOf[NZD]
+  inline def NZD: NZD = "NZD".asInstanceOf[NZD]
   
   @js.native
   sealed trait OM
     extends StObject
        with CountryType
-  @scala.inline
-  def OM: OM = "OM".asInstanceOf[OM]
+  inline def OM: OM = "OM".asInstanceOf[OM]
   
   @js.native
   sealed trait OMR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def OMR: OMR = "OMR".asInstanceOf[OMR]
+  inline def OMR: OMR = "OMR".asInstanceOf[OMR]
   
   @js.native
   sealed trait ONE_INSTRUMENT_EXPECTED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def ONE_INSTRUMENT_EXPECTED: ONE_INSTRUMENT_EXPECTED = "ONE_INSTRUMENT_EXPECTED".asInstanceOf[ONE_INSTRUMENT_EXPECTED]
+  inline def ONE_INSTRUMENT_EXPECTED: ONE_INSTRUMENT_EXPECTED = "ONE_INSTRUMENT_EXPECTED".asInstanceOf[ONE_INSTRUMENT_EXPECTED]
   
   @js.native
   sealed trait ONLINE_STORE
     extends StObject
        with CustomerSourceType
        with ProductSourceType
-  @scala.inline
-  def ONLINE_STORE: ONLINE_STORE = "ONLINE_STORE".asInstanceOf[ONLINE_STORE]
+  inline def ONLINE_STORE: ONLINE_STORE = "ONLINE_STORE".asInstanceOf[ONLINE_STORE]
   
   @js.native
   sealed trait ON_FILE extends StObject
-  @scala.inline
-  def ON_FILE: ON_FILE = "ON_FILE".asInstanceOf[ON_FILE]
+  inline def ON_FILE: ON_FILE = "ON_FILE".asInstanceOf[ON_FILE]
   
   @js.native
   sealed trait OPEN
     extends StObject
        with OrderStateType
-  @scala.inline
-  def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
+  inline def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
   
   @js.native
   sealed trait ORDER
     extends StObject
        with DiscountApplicationScopeType
        with TaxApplicationScopeType
-  @scala.inline
-  def ORDER: ORDER = "ORDER".asInstanceOf[ORDER]
+  inline def ORDER: ORDER = "ORDER".asInstanceOf[ORDER]
   
   @js.native
   sealed trait ORDERED_FROM_VENDOR
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def ORDERED_FROM_VENDOR: ORDERED_FROM_VENDOR = "ORDERED_FROM_VENDOR".asInstanceOf[ORDERED_FROM_VENDOR]
+  inline def ORDERED_FROM_VENDOR: ORDERED_FROM_VENDOR = "ORDERED_FROM_VENDOR".asInstanceOf[ORDERED_FROM_VENDOR]
   
   @js.native
   sealed trait OTHER
     extends StObject
        with CustomerSourceType
        with ProductSourceType
-  @scala.inline
-  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
+  inline def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
   @js.native
   sealed trait OTHER_BRAND
     extends StObject
        with CardBrandType
-  @scala.inline
-  def OTHER_BRAND: OTHER_BRAND = "OTHER_BRAND".asInstanceOf[OTHER_BRAND]
+  inline def OTHER_BRAND: OTHER_BRAND = "OTHER_BRAND".asInstanceOf[OTHER_BRAND]
   
   @js.native
   sealed trait OTHER_DISCOUNT_SCOPE
     extends StObject
        with DiscountApplicationScopeType
-  @scala.inline
-  def OTHER_DISCOUNT_SCOPE: OTHER_DISCOUNT_SCOPE = "OTHER_DISCOUNT_SCOPE".asInstanceOf[OTHER_DISCOUNT_SCOPE]
+  inline def OTHER_DISCOUNT_SCOPE: OTHER_DISCOUNT_SCOPE = "OTHER_DISCOUNT_SCOPE".asInstanceOf[OTHER_DISCOUNT_SCOPE]
   
   @js.native
   sealed trait OTHER_TAX_SCOPE
     extends StObject
        with TaxApplicationScopeType
-  @scala.inline
-  def OTHER_TAX_SCOPE: OTHER_TAX_SCOPE = "OTHER_TAX_SCOPE".asInstanceOf[OTHER_TAX_SCOPE]
+  inline def OTHER_TAX_SCOPE: OTHER_TAX_SCOPE = "OTHER_TAX_SCOPE".asInstanceOf[OTHER_TAX_SCOPE]
   
   @js.native
   sealed trait PA
     extends StObject
        with CountryType
-  @scala.inline
-  def PA: PA = "PA".asInstanceOf[PA]
+  inline def PA: PA = "PA".asInstanceOf[PA]
   
   @js.native
   sealed trait PAB
     extends StObject
        with CurrencyType
-  @scala.inline
-  def PAB: PAB = "PAB".asInstanceOf[PAB]
+  inline def PAB: PAB = "PAB".asInstanceOf[PAB]
   
   @js.native
   sealed trait PAYMENT_METHOD_ERROR
     extends StObject
        with ErrorCategoryType
-  @scala.inline
-  def PAYMENT_METHOD_ERROR: PAYMENT_METHOD_ERROR = "PAYMENT_METHOD_ERROR".asInstanceOf[PAYMENT_METHOD_ERROR]
+  inline def PAYMENT_METHOD_ERROR: PAYMENT_METHOD_ERROR = "PAYMENT_METHOD_ERROR".asInstanceOf[PAYMENT_METHOD_ERROR]
   
   @js.native
   sealed trait PAYMENT_NOT_REFUNDABLE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def PAYMENT_NOT_REFUNDABLE: PAYMENT_NOT_REFUNDABLE = "PAYMENT_NOT_REFUNDABLE".asInstanceOf[PAYMENT_NOT_REFUNDABLE]
+  inline def PAYMENT_NOT_REFUNDABLE: PAYMENT_NOT_REFUNDABLE = "PAYMENT_NOT_REFUNDABLE".asInstanceOf[PAYMENT_NOT_REFUNDABLE]
   
   @js.native
   sealed trait PAYROLL
     extends StObject
        with ProductSourceType
-  @scala.inline
-  def PAYROLL: PAYROLL = "PAYROLL".asInstanceOf[PAYROLL]
+  inline def PAYROLL: PAYROLL = "PAYROLL".asInstanceOf[PAYROLL]
   
   @js.native
   sealed trait PE
     extends StObject
        with CountryType
-  @scala.inline
-  def PE: PE = "PE".asInstanceOf[PE]
+  inline def PE: PE = "PE".asInstanceOf[PE]
   
   @js.native
   sealed trait PEN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def PEN: PEN = "PEN".asInstanceOf[PEN]
+  inline def PEN: PEN = "PEN".asInstanceOf[PEN]
   
   @js.native
   sealed trait PENDING extends StObject
-  @scala.inline
-  def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  inline def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
   
   @js.native
   sealed trait PF
     extends StObject
        with CountryType
-  @scala.inline
-  def PF: PF = "PF".asInstanceOf[PF]
+  inline def PF: PF = "PF".asInstanceOf[PF]
   
   @js.native
   sealed trait PG
     extends StObject
        with CountryType
-  @scala.inline
-  def PG: PG = "PG".asInstanceOf[PG]
+  inline def PG: PG = "PG".asInstanceOf[PG]
   
   @js.native
   sealed trait PGK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def PGK: PGK = "PGK".asInstanceOf[PGK]
+  inline def PGK: PGK = "PGK".asInstanceOf[PGK]
   
   @js.native
   sealed trait PH
     extends StObject
        with CountryType
-  @scala.inline
-  def PH: PH = "PH".asInstanceOf[PH]
+  inline def PH: PH = "PH".asInstanceOf[PH]
   
   @js.native
   sealed trait PHP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def PHP: PHP = "PHP".asInstanceOf[PHP]
+  inline def PHP: PHP = "PHP".asInstanceOf[PHP]
   
   @js.native
   sealed trait PHYSICAL extends StObject
-  @scala.inline
-  def PHYSICAL: PHYSICAL = "PHYSICAL".asInstanceOf[PHYSICAL]
+  inline def PHYSICAL: PHYSICAL = "PHYSICAL".asInstanceOf[PHYSICAL]
   
   @js.native
   sealed trait PHYSICAL_COUNT
     extends StObject
        with InventoryType
-  @scala.inline
-  def PHYSICAL_COUNT: PHYSICAL_COUNT = "PHYSICAL_COUNT".asInstanceOf[PHYSICAL_COUNT]
+  inline def PHYSICAL_COUNT: PHYSICAL_COUNT = "PHYSICAL_COUNT".asInstanceOf[PHYSICAL_COUNT]
   
   @js.native
   sealed trait PICKUP
     extends StObject
        with FulfillmentType
-  @scala.inline
-  def PICKUP: PICKUP = "PICKUP".asInstanceOf[PICKUP]
+  inline def PICKUP: PICKUP = "PICKUP".asInstanceOf[PICKUP]
   
   @js.native
   sealed trait PK
     extends StObject
        with CountryType
-  @scala.inline
-  def PK: PK = "PK".asInstanceOf[PK]
+  inline def PK: PK = "PK".asInstanceOf[PK]
   
   @js.native
   sealed trait PKR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def PKR: PKR = "PKR".asInstanceOf[PKR]
+  inline def PKR: PKR = "PKR".asInstanceOf[PKR]
   
   @js.native
   sealed trait PL
     extends StObject
        with CountryType
-  @scala.inline
-  def PL: PL = "PL".asInstanceOf[PL]
+  inline def PL: PL = "PL".asInstanceOf[PL]
   
   @js.native
   sealed trait PLN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def PLN: PLN = "PLN".asInstanceOf[PLN]
+  inline def PLN: PLN = "PLN".asInstanceOf[PLN]
   
   @js.native
   sealed trait PM
     extends StObject
        with CountryType
-  @scala.inline
-  def PM: PM = "PM".asInstanceOf[PM]
+  inline def PM: PM = "PM".asInstanceOf[PM]
   
   @js.native
   sealed trait PN
     extends StObject
        with CountryType
-  @scala.inline
-  def PN: PN = "PN".asInstanceOf[PN]
+  inline def PN: PN = "PN".asInstanceOf[PN]
   
   @js.native
   sealed trait PR
     extends StObject
        with CountryType
-  @scala.inline
-  def PR: PR = "PR".asInstanceOf[PR]
+  inline def PR: PR = "PR".asInstanceOf[PR]
   
   @js.native
   sealed trait PREPARED
     extends StObject
        with FulfillmentStateType
-  @scala.inline
-  def PREPARED: PREPARED = "PREPARED".asInstanceOf[PREPARED]
+  inline def PREPARED: PREPARED = "PREPARED".asInstanceOf[PREPARED]
   
   @js.native
   sealed trait PROPOSED
     extends StObject
        with FulfillmentStateType
-  @scala.inline
-  def PROPOSED: PROPOSED = "PROPOSED".asInstanceOf[PROPOSED]
+  inline def PROPOSED: PROPOSED = "PROPOSED".asInstanceOf[PROPOSED]
   
   @js.native
   sealed trait PS
     extends StObject
        with CountryType
-  @scala.inline
-  def PS: PS = "PS".asInstanceOf[PS]
+  inline def PS: PS = "PS".asInstanceOf[PS]
   
   @js.native
   sealed trait PT
     extends StObject
        with CountryType
-  @scala.inline
-  def PT: PT = "PT".asInstanceOf[PT]
+  inline def PT: PT = "PT".asInstanceOf[PT]
   
   @js.native
   sealed trait PW
     extends StObject
        with CountryType
-  @scala.inline
-  def PW: PW = "PW".asInstanceOf[PW]
+  inline def PW: PW = "PW".asInstanceOf[PW]
   
   @js.native
   sealed trait PY
     extends StObject
        with CountryType
-  @scala.inline
-  def PY: PY = "PY".asInstanceOf[PY]
+  inline def PY: PY = "PY".asInstanceOf[PY]
   
   @js.native
   sealed trait PYG
     extends StObject
        with CurrencyType
-  @scala.inline
-  def PYG: PYG = "PYG".asInstanceOf[PYG]
+  inline def PYG: PYG = "PYG".asInstanceOf[PYG]
   
   @js.native
   sealed trait QA
     extends StObject
        with CountryType
-  @scala.inline
-  def QA: QA = "QA".asInstanceOf[QA]
+  inline def QA: QA = "QA".asInstanceOf[QA]
   
   @js.native
   sealed trait QAR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def QAR: QAR = "QAR".asInstanceOf[QAR]
+  inline def QAR: QAR = "QAR".asInstanceOf[QAR]
   
   @js.native
   sealed trait RATE_LIMITED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def RATE_LIMITED: RATE_LIMITED = "RATE_LIMITED".asInstanceOf[RATE_LIMITED]
+  inline def RATE_LIMITED: RATE_LIMITED = "RATE_LIMITED".asInstanceOf[RATE_LIMITED]
   
   @js.native
   sealed trait RATE_LIMIT_ERROR
     extends StObject
        with ErrorCategoryType
-  @scala.inline
-  def RATE_LIMIT_ERROR: RATE_LIMIT_ERROR = "RATE_LIMIT_ERROR".asInstanceOf[RATE_LIMIT_ERROR]
+  inline def RATE_LIMIT_ERROR: RATE_LIMIT_ERROR = "RATE_LIMIT_ERROR".asInstanceOf[RATE_LIMIT_ERROR]
   
   @js.native
   sealed trait RE
     extends StObject
        with CountryType
-  @scala.inline
-  def RE: RE = "RE".asInstanceOf[RE]
+  inline def RE: RE = "RE".asInstanceOf[RE]
   
   @js.native
   sealed trait RECEIVED_FROM_VENDOR
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def RECEIVED_FROM_VENDOR: RECEIVED_FROM_VENDOR = "RECEIVED_FROM_VENDOR".asInstanceOf[RECEIVED_FROM_VENDOR]
+  inline def RECEIVED_FROM_VENDOR: RECEIVED_FROM_VENDOR = "RECEIVED_FROM_VENDOR".asInstanceOf[RECEIVED_FROM_VENDOR]
   
   @js.native
   sealed trait REFUND_ALREADY_PENDING
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def REFUND_ALREADY_PENDING: REFUND_ALREADY_PENDING = "REFUND_ALREADY_PENDING".asInstanceOf[REFUND_ALREADY_PENDING]
+  inline def REFUND_ALREADY_PENDING: REFUND_ALREADY_PENDING = "REFUND_ALREADY_PENDING".asInstanceOf[REFUND_ALREADY_PENDING]
   
   @js.native
   sealed trait REFUND_AMOUNT_INVALID
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def REFUND_AMOUNT_INVALID: REFUND_AMOUNT_INVALID = "REFUND_AMOUNT_INVALID".asInstanceOf[REFUND_AMOUNT_INVALID]
+  inline def REFUND_AMOUNT_INVALID: REFUND_AMOUNT_INVALID = "REFUND_AMOUNT_INVALID".asInstanceOf[REFUND_AMOUNT_INVALID]
   
   @js.native
   sealed trait REFUND_ERROR
     extends StObject
        with ErrorCategoryType
-  @scala.inline
-  def REFUND_ERROR: REFUND_ERROR = "REFUND_ERROR".asInstanceOf[REFUND_ERROR]
+  inline def REFUND_ERROR: REFUND_ERROR = "REFUND_ERROR".asInstanceOf[REFUND_ERROR]
   
   @js.native
   sealed trait REGISTER extends StObject
-  @scala.inline
-  def REGISTER: REGISTER = "REGISTER".asInstanceOf[REGISTER]
+  inline def REGISTER: REGISTER = "REGISTER".asInstanceOf[REGISTER]
   
   @js.native
   sealed trait REGULAR extends StObject
-  @scala.inline
-  def REGULAR: REGULAR = "REGULAR".asInstanceOf[REGULAR]
+  inline def REGULAR: REGULAR = "REGULAR".asInstanceOf[REGULAR]
   
   @js.native
   sealed trait REJECTED extends StObject
-  @scala.inline
-  def REJECTED: REJECTED = "REJECTED".asInstanceOf[REJECTED]
+  inline def REJECTED: REJECTED = "REJECTED".asInstanceOf[REJECTED]
   
   @js.native
   sealed trait REQUEST_ENTITY_TOO_LARGE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def REQUEST_ENTITY_TOO_LARGE: REQUEST_ENTITY_TOO_LARGE = "REQUEST_ENTITY_TOO_LARGE".asInstanceOf[REQUEST_ENTITY_TOO_LARGE]
+  inline def REQUEST_ENTITY_TOO_LARGE: REQUEST_ENTITY_TOO_LARGE = "REQUEST_ENTITY_TOO_LARGE".asInstanceOf[REQUEST_ENTITY_TOO_LARGE]
   
   @js.native
   sealed trait REQUEST_TIMEOUT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def REQUEST_TIMEOUT: REQUEST_TIMEOUT = "REQUEST_TIMEOUT".asInstanceOf[REQUEST_TIMEOUT]
+  inline def REQUEST_TIMEOUT: REQUEST_TIMEOUT = "REQUEST_TIMEOUT".asInstanceOf[REQUEST_TIMEOUT]
   
   @js.native
   sealed trait RESERVED
     extends StObject
        with FulfillmentStateType
-  @scala.inline
-  def RESERVED: RESERVED = "RESERVED".asInstanceOf[RESERVED]
+  inline def RESERVED: RESERVED = "RESERVED".asInstanceOf[RESERVED]
   
   @js.native
   sealed trait RESERVED_FOR_SALE
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def RESERVED_FOR_SALE: RESERVED_FOR_SALE = "RESERVED_FOR_SALE".asInstanceOf[RESERVED_FOR_SALE]
+  inline def RESERVED_FOR_SALE: RESERVED_FOR_SALE = "RESERVED_FOR_SALE".asInstanceOf[RESERVED_FOR_SALE]
   
   @js.native
   sealed trait RESTAURANT_ITEM extends StObject
-  @scala.inline
-  def RESTAURANT_ITEM: RESTAURANT_ITEM = "RESTAURANT_ITEM".asInstanceOf[RESTAURANT_ITEM]
+  inline def RESTAURANT_ITEM: RESTAURANT_ITEM = "RESTAURANT_ITEM".asInstanceOf[RESTAURANT_ITEM]
   
   @js.native
   sealed trait RETAIL_ITEM extends StObject
-  @scala.inline
-  def RETAIL_ITEM: RETAIL_ITEM = "RETAIL_ITEM".asInstanceOf[RETAIL_ITEM]
+  inline def RETAIL_ITEM: RETAIL_ITEM = "RETAIL_ITEM".asInstanceOf[RETAIL_ITEM]
   
   @js.native
   sealed trait RETURNED_BY_CUSTOMER
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def RETURNED_BY_CUSTOMER: RETURNED_BY_CUSTOMER = "RETURNED_BY_CUSTOMER".asInstanceOf[RETURNED_BY_CUSTOMER]
+  inline def RETURNED_BY_CUSTOMER: RETURNED_BY_CUSTOMER = "RETURNED_BY_CUSTOMER".asInstanceOf[RETURNED_BY_CUSTOMER]
   
   @js.native
   sealed trait RO
     extends StObject
        with CountryType
-  @scala.inline
-  def RO: RO = "RO".asInstanceOf[RO]
+  inline def RO: RO = "RO".asInstanceOf[RO]
   
   @js.native
   sealed trait RON
     extends StObject
        with CurrencyType
-  @scala.inline
-  def RON: RON = "RON".asInstanceOf[RON]
+  inline def RON: RON = "RON".asInstanceOf[RON]
   
   @js.native
   sealed trait RS
     extends StObject
        with CountryType
-  @scala.inline
-  def RS: RS = "RS".asInstanceOf[RS]
+  inline def RS: RS = "RS".asInstanceOf[RS]
   
   @js.native
   sealed trait RSD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def RSD: RSD = "RSD".asInstanceOf[RSD]
+  inline def RSD: RSD = "RSD".asInstanceOf[RSD]
   
   @js.native
   sealed trait RU
     extends StObject
        with CountryType
-  @scala.inline
-  def RU: RU = "RU".asInstanceOf[RU]
+  inline def RU: RU = "RU".asInstanceOf[RU]
   
   @js.native
   sealed trait RUB
     extends StObject
        with CurrencyType
-  @scala.inline
-  def RUB: RUB = "RUB".asInstanceOf[RUB]
+  inline def RUB: RUB = "RUB".asInstanceOf[RUB]
   
   @js.native
   sealed trait RW
     extends StObject
        with CountryType
-  @scala.inline
-  def RW: RW = "RW".asInstanceOf[RW]
+  inline def RW: RW = "RW".asInstanceOf[RW]
   
   @js.native
   sealed trait RWF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def RWF: RWF = "RWF".asInstanceOf[RWF]
+  inline def RWF: RWF = "RWF".asInstanceOf[RWF]
   
   @js.native
   sealed trait SA
     extends StObject
        with CountryType
-  @scala.inline
-  def SA: SA = "SA".asInstanceOf[SA]
+  inline def SA: SA = "SA".asInstanceOf[SA]
   
   @js.native
   sealed trait SANDBOX_NOT_SUPPORTED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def SANDBOX_NOT_SUPPORTED: SANDBOX_NOT_SUPPORTED = "SANDBOX_NOT_SUPPORTED".asInstanceOf[SANDBOX_NOT_SUPPORTED]
+  inline def SANDBOX_NOT_SUPPORTED: SANDBOX_NOT_SUPPORTED = "SANDBOX_NOT_SUPPORTED".asInstanceOf[SANDBOX_NOT_SUPPORTED]
   
   @js.native
   sealed trait SAR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SAR: SAR = "SAR".asInstanceOf[SAR]
+  inline def SAR: SAR = "SAR".asInstanceOf[SAR]
   
   @js.native
   sealed trait SAT
     extends StObject
        with DayOfWeekType
-  @scala.inline
-  def SAT: SAT = "SAT".asInstanceOf[SAT]
+  inline def SAT: SAT = "SAT".asInstanceOf[SAT]
   
   @js.native
   sealed trait SB
     extends StObject
        with CountryType
-  @scala.inline
-  def SB: SB = "SB".asInstanceOf[SB]
+  inline def SB: SB = "SB".asInstanceOf[SB]
   
   @js.native
   sealed trait SBD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SBD: SBD = "SBD".asInstanceOf[SBD]
+  inline def SBD: SBD = "SBD".asInstanceOf[SBD]
   
   @js.native
   sealed trait SC
     extends StObject
        with CountryType
-  @scala.inline
-  def SC: SC = "SC".asInstanceOf[SC]
+  inline def SC: SC = "SC".asInstanceOf[SC]
   
   @js.native
   sealed trait SCHEDULED extends StObject
-  @scala.inline
-  def SCHEDULED: SCHEDULED = "SCHEDULED".asInstanceOf[SCHEDULED]
+  inline def SCHEDULED: SCHEDULED = "SCHEDULED".asInstanceOf[SCHEDULED]
   
   @js.native
   sealed trait SCR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SCR: SCR = "SCR".asInstanceOf[SCR]
+  inline def SCR: SCR = "SCR".asInstanceOf[SCR]
   
   @js.native
   sealed trait SD
     extends StObject
        with CountryType
-  @scala.inline
-  def SD: SD = "SD".asInstanceOf[SD]
+  inline def SD: SD = "SD".asInstanceOf[SD]
   
   @js.native
   sealed trait SDG
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SDG: SDG = "SDG".asInstanceOf[SDG]
+  inline def SDG: SDG = "SDG".asInstanceOf[SDG]
   
   @js.native
   sealed trait SE
     extends StObject
        with CountryType
-  @scala.inline
-  def SE: SE = "SE".asInstanceOf[SE]
+  inline def SE: SE = "SE".asInstanceOf[SE]
   
   @js.native
   sealed trait SEK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SEK: SEK = "SEK".asInstanceOf[SEK]
+  inline def SEK: SEK = "SEK".asInstanceOf[SEK]
   
   @js.native
   sealed trait SERVICE_UNAVAILABLE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def SERVICE_UNAVAILABLE: SERVICE_UNAVAILABLE = "SERVICE_UNAVAILABLE".asInstanceOf[SERVICE_UNAVAILABLE]
+  inline def SERVICE_UNAVAILABLE: SERVICE_UNAVAILABLE = "SERVICE_UNAVAILABLE".asInstanceOf[SERVICE_UNAVAILABLE]
   
   @js.native
   sealed trait SG
     extends StObject
        with CountryType
-  @scala.inline
-  def SG: SG = "SG".asInstanceOf[SG]
+  inline def SG: SG = "SG".asInstanceOf[SG]
   
   @js.native
   sealed trait SGD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SGD: SGD = "SGD".asInstanceOf[SGD]
+  inline def SGD: SGD = "SGD".asInstanceOf[SGD]
   
   @js.native
   sealed trait SH
     extends StObject
        with CountryType
-  @scala.inline
-  def SH: SH = "SH".asInstanceOf[SH]
+  inline def SH: SH = "SH".asInstanceOf[SH]
   
   @js.native
   sealed trait SHIPMENT
     extends StObject
        with FulfillmentType
-  @scala.inline
-  def SHIPMENT: SHIPMENT = "SHIPMENT".asInstanceOf[SHIPMENT]
+  inline def SHIPMENT: SHIPMENT = "SHIPMENT".asInstanceOf[SHIPMENT]
   
   @js.native
   sealed trait SHP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SHP: SHP = "SHP".asInstanceOf[SHP]
+  inline def SHP: SHP = "SHP".asInstanceOf[SHP]
   
   @js.native
   sealed trait SI
     extends StObject
        with CountryType
-  @scala.inline
-  def SI: SI = "SI".asInstanceOf[SI]
+  inline def SI: SI = "SI".asInstanceOf[SI]
   
   @js.native
   sealed trait SJ
     extends StObject
        with CountryType
-  @scala.inline
-  def SJ: SJ = "SJ".asInstanceOf[SJ]
+  inline def SJ: SJ = "SJ".asInstanceOf[SJ]
   
   @js.native
   sealed trait SK
     extends StObject
        with CountryType
-  @scala.inline
-  def SK: SK = "SK".asInstanceOf[SK]
+  inline def SK: SK = "SK".asInstanceOf[SK]
   
   @js.native
   sealed trait SL
     extends StObject
        with CountryType
-  @scala.inline
-  def SL: SL = "SL".asInstanceOf[SL]
+  inline def SL: SL = "SL".asInstanceOf[SL]
   
   @js.native
   sealed trait SLL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SLL: SLL = "SLL".asInstanceOf[SLL]
+  inline def SLL: SLL = "SLL".asInstanceOf[SLL]
   
   @js.native
   sealed trait SM
     extends StObject
        with CountryType
-  @scala.inline
-  def SM: SM = "SM".asInstanceOf[SM]
+  inline def SM: SM = "SM".asInstanceOf[SM]
   
   @js.native
   sealed trait SN
     extends StObject
        with CountryType
-  @scala.inline
-  def SN: SN = "SN".asInstanceOf[SN]
+  inline def SN: SN = "SN".asInstanceOf[SN]
   
   @js.native
   sealed trait SO
     extends StObject
        with CountryType
-  @scala.inline
-  def SO: SO = "SO".asInstanceOf[SO]
+  inline def SO: SO = "SO".asInstanceOf[SO]
   
   @js.native
   sealed trait SOLD
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def SOLD: SOLD = "SOLD".asInstanceOf[SOLD]
+  inline def SOLD: SOLD = "SOLD".asInstanceOf[SOLD]
   
   @js.native
   sealed trait SOLD_ONLINE
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def SOLD_ONLINE: SOLD_ONLINE = "SOLD_ONLINE".asInstanceOf[SOLD_ONLINE]
+  inline def SOLD_ONLINE: SOLD_ONLINE = "SOLD_ONLINE".asInstanceOf[SOLD_ONLINE]
   
   @js.native
   sealed trait SOS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SOS: SOS = "SOS".asInstanceOf[SOS]
+  inline def SOS: SOS = "SOS".asInstanceOf[SOS]
   
   @js.native
   sealed trait SQUARE_GIFT_CARD
     extends StObject
        with CardBrandType
-  @scala.inline
-  def SQUARE_GIFT_CARD: SQUARE_GIFT_CARD = "SQUARE_GIFT_CARD".asInstanceOf[SQUARE_GIFT_CARD]
+  inline def SQUARE_GIFT_CARD: SQUARE_GIFT_CARD = "SQUARE_GIFT_CARD".asInstanceOf[SQUARE_GIFT_CARD]
   
   @js.native
   sealed trait SQUARE_POS
     extends StObject
        with ProductSourceType
-  @scala.inline
-  def SQUARE_POS: SQUARE_POS = "SQUARE_POS".asInstanceOf[SQUARE_POS]
+  inline def SQUARE_POS: SQUARE_POS = "SQUARE_POS".asInstanceOf[SQUARE_POS]
   
   @js.native
   sealed trait SR
     extends StObject
        with CountryType
-  @scala.inline
-  def SR: SR = "SR".asInstanceOf[SR]
+  inline def SR: SR = "SR".asInstanceOf[SR]
   
   @js.native
   sealed trait SRD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SRD: SRD = "SRD".asInstanceOf[SRD]
+  inline def SRD: SRD = "SRD".asInstanceOf[SRD]
   
   @js.native
   sealed trait SS
     extends StObject
        with CountryType
-  @scala.inline
-  def SS: SS = "SS".asInstanceOf[SS]
+  inline def SS: SS = "SS".asInstanceOf[SS]
   
   @js.native
   sealed trait SSP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SSP: SSP = "SSP".asInstanceOf[SSP]
+  inline def SSP: SSP = "SSP".asInstanceOf[SSP]
   
   @js.native
   sealed trait ST
     extends StObject
        with CountryType
-  @scala.inline
-  def ST: ST = "ST".asInstanceOf[ST]
+  inline def ST: ST = "ST".asInstanceOf[ST]
   
   @js.native
   sealed trait START_AT extends StObject
-  @scala.inline
-  def START_AT: START_AT = "START_AT".asInstanceOf[START_AT]
+  inline def START_AT: START_AT = "START_AT".asInstanceOf[START_AT]
   
   @js.native
   sealed trait STD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def STD: STD = "STD".asInstanceOf[STD]
+  inline def STD: STD = "STD".asInstanceOf[STD]
   
   @js.native
   sealed trait SUCCESS extends StObject
-  @scala.inline
-  def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
   
   @js.native
   sealed trait SUN
     extends StObject
        with DayOfWeekType
-  @scala.inline
-  def SUN: SUN = "SUN".asInstanceOf[SUN]
+  inline def SUN: SUN = "SUN".asInstanceOf[SUN]
   
   @js.native
   sealed trait SV
     extends StObject
        with CountryType
-  @scala.inline
-  def SV: SV = "SV".asInstanceOf[SV]
+  inline def SV: SV = "SV".asInstanceOf[SV]
   
   @js.native
   sealed trait SVC
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SVC: SVC = "SVC".asInstanceOf[SVC]
+  inline def SVC: SVC = "SVC".asInstanceOf[SVC]
   
   @js.native
   sealed trait SWIPED extends StObject
-  @scala.inline
-  def SWIPED: SWIPED = "SWIPED".asInstanceOf[SWIPED]
+  inline def SWIPED: SWIPED = "SWIPED".asInstanceOf[SWIPED]
   
   @js.native
   sealed trait SX
     extends StObject
        with CountryType
-  @scala.inline
-  def SX: SX = "SX".asInstanceOf[SX]
+  inline def SX: SX = "SX".asInstanceOf[SX]
   
   @js.native
   sealed trait SY
     extends StObject
        with CountryType
-  @scala.inline
-  def SY: SY = "SY".asInstanceOf[SY]
+  inline def SY: SY = "SY".asInstanceOf[SY]
   
   @js.native
   sealed trait SYP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SYP: SYP = "SYP".asInstanceOf[SYP]
+  inline def SYP: SYP = "SYP".asInstanceOf[SYP]
   
   @js.native
   sealed trait SZ
     extends StObject
        with CountryType
-  @scala.inline
-  def SZ: SZ = "SZ".asInstanceOf[SZ]
+  inline def SZ: SZ = "SZ".asInstanceOf[SZ]
   
   @js.native
   sealed trait SZL
     extends StObject
        with CurrencyType
-  @scala.inline
-  def SZL: SZL = "SZL".asInstanceOf[SZL]
+  inline def SZL: SZL = "SZL".asInstanceOf[SZL]
   
   @js.native
   sealed trait TAX
     extends StObject
        with ObjectType
-  @scala.inline
-  def TAX: TAX = "TAX".asInstanceOf[TAX]
+  inline def TAX: TAX = "TAX".asInstanceOf[TAX]
   
   @js.native
   sealed trait TAX_SUBTOTAL_PHASE extends StObject
-  @scala.inline
-  def TAX_SUBTOTAL_PHASE: TAX_SUBTOTAL_PHASE = "TAX_SUBTOTAL_PHASE".asInstanceOf[TAX_SUBTOTAL_PHASE]
+  inline def TAX_SUBTOTAL_PHASE: TAX_SUBTOTAL_PHASE = "TAX_SUBTOTAL_PHASE".asInstanceOf[TAX_SUBTOTAL_PHASE]
   
   @js.native
   sealed trait TAX_TOTAL_PHASE extends StObject
-  @scala.inline
-  def TAX_TOTAL_PHASE: TAX_TOTAL_PHASE = "TAX_TOTAL_PHASE".asInstanceOf[TAX_TOTAL_PHASE]
+  inline def TAX_TOTAL_PHASE: TAX_TOTAL_PHASE = "TAX_TOTAL_PHASE".asInstanceOf[TAX_TOTAL_PHASE]
   
   @js.native
   sealed trait TC
     extends StObject
        with CountryType
-  @scala.inline
-  def TC: TC = "TC".asInstanceOf[TC]
+  inline def TC: TC = "TC".asInstanceOf[TC]
   
   @js.native
   sealed trait TD
     extends StObject
        with CountryType
-  @scala.inline
-  def TD: TD = "TD".asInstanceOf[TD]
+  inline def TD: TD = "TD".asInstanceOf[TD]
   
   @js.native
   sealed trait TERMINAL
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def TERMINAL: TERMINAL = "TERMINAL".asInstanceOf[TERMINAL]
+  inline def TERMINAL: TERMINAL = "TERMINAL".asInstanceOf[TERMINAL]
   
   @js.native
   sealed trait TF
     extends StObject
        with CountryType
-  @scala.inline
-  def TF: TF = "TF".asInstanceOf[TF]
+  inline def TF: TF = "TF".asInstanceOf[TF]
   
   @js.native
   sealed trait TG
     extends StObject
        with CountryType
-  @scala.inline
-  def TG: TG = "TG".asInstanceOf[TG]
+  inline def TG: TG = "TG".asInstanceOf[TG]
   
   @js.native
   sealed trait TH
     extends StObject
        with CountryType
-  @scala.inline
-  def TH: TH = "TH".asInstanceOf[TH]
+  inline def TH: TH = "TH".asInstanceOf[TH]
   
   @js.native
   sealed trait THB
     extends StObject
        with CurrencyType
-  @scala.inline
-  def THB: THB = "THB".asInstanceOf[THB]
+  inline def THB: THB = "THB".asInstanceOf[THB]
   
   @js.native
   sealed trait THIRD_PARTY
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def THIRD_PARTY: THIRD_PARTY = "THIRD_PARTY".asInstanceOf[THIRD_PARTY]
+  inline def THIRD_PARTY: THIRD_PARTY = "THIRD_PARTY".asInstanceOf[THIRD_PARTY]
   
   @js.native
   sealed trait THIRD_PARTY_CARD extends StObject
-  @scala.inline
-  def THIRD_PARTY_CARD: THIRD_PARTY_CARD = "THIRD_PARTY_CARD".asInstanceOf[THIRD_PARTY_CARD]
+  inline def THIRD_PARTY_CARD: THIRD_PARTY_CARD = "THIRD_PARTY_CARD".asInstanceOf[THIRD_PARTY_CARD]
   
   @js.native
   sealed trait THIRD_PARTY_IMPORT
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def THIRD_PARTY_IMPORT: THIRD_PARTY_IMPORT = "THIRD_PARTY_IMPORT".asInstanceOf[THIRD_PARTY_IMPORT]
+  inline def THIRD_PARTY_IMPORT: THIRD_PARTY_IMPORT = "THIRD_PARTY_IMPORT".asInstanceOf[THIRD_PARTY_IMPORT]
   
   @js.native
   sealed trait THU
     extends StObject
        with DayOfWeekType
-  @scala.inline
-  def THU: THU = "THU".asInstanceOf[THU]
+  inline def THU: THU = "THU".asInstanceOf[THU]
   
   @js.native
   sealed trait TJ
     extends StObject
        with CountryType
-  @scala.inline
-  def TJ: TJ = "TJ".asInstanceOf[TJ]
+  inline def TJ: TJ = "TJ".asInstanceOf[TJ]
   
   @js.native
   sealed trait TJS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TJS: TJS = "TJS".asInstanceOf[TJS]
+  inline def TJS: TJS = "TJS".asInstanceOf[TJS]
   
   @js.native
   sealed trait TK
     extends StObject
        with CountryType
-  @scala.inline
-  def TK: TK = "TK".asInstanceOf[TK]
+  inline def TK: TK = "TK".asInstanceOf[TK]
   
   @js.native
   sealed trait TL
     extends StObject
        with CountryType
-  @scala.inline
-  def TL: TL = "TL".asInstanceOf[TL]
+  inline def TL: TL = "TL".asInstanceOf[TL]
   
   @js.native
   sealed trait TM
     extends StObject
        with CountryType
-  @scala.inline
-  def TM: TM = "TM".asInstanceOf[TM]
+  inline def TM: TM = "TM".asInstanceOf[TM]
   
   @js.native
   sealed trait TMT
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TMT: TMT = "TMT".asInstanceOf[TMT]
+  inline def TMT: TMT = "TMT".asInstanceOf[TMT]
   
   @js.native
   sealed trait TN
     extends StObject
        with CountryType
-  @scala.inline
-  def TN: TN = "TN".asInstanceOf[TN]
+  inline def TN: TN = "TN".asInstanceOf[TN]
   
   @js.native
   sealed trait TND
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TND: TND = "TND".asInstanceOf[TND]
+  inline def TND: TND = "TND".asInstanceOf[TND]
   
   @js.native
   sealed trait TO
     extends StObject
        with CountryType
-  @scala.inline
-  def TO: TO = "TO".asInstanceOf[TO]
+  inline def TO: TO = "TO".asInstanceOf[TO]
   
   @js.native
   sealed trait TOP
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TOP: TOP = "TOP".asInstanceOf[TOP]
+  inline def TOP: TOP = "TOP".asInstanceOf[TOP]
   
   @js.native
   sealed trait TR
     extends StObject
        with CountryType
-  @scala.inline
-  def TR: TR = "TR".asInstanceOf[TR]
+  inline def TR: TR = "TR".asInstanceOf[TR]
   
   @js.native
   sealed trait TRANSFER
     extends StObject
        with InventoryType
-  @scala.inline
-  def TRANSFER: TRANSFER = "TRANSFER".asInstanceOf[TRANSFER]
+  inline def TRANSFER: TRANSFER = "TRANSFER".asInstanceOf[TRANSFER]
   
   @js.native
   sealed trait TRY
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TRY: TRY = "TRY".asInstanceOf[TRY]
+  inline def TRY: TRY = "TRY".asInstanceOf[TRY]
   
   @js.native
   sealed trait TT
     extends StObject
        with CountryType
-  @scala.inline
-  def TT: TT = "TT".asInstanceOf[TT]
+  inline def TT: TT = "TT".asInstanceOf[TT]
   
   @js.native
   sealed trait TTD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TTD: TTD = "TTD".asInstanceOf[TTD]
+  inline def TTD: TTD = "TTD".asInstanceOf[TTD]
   
   @js.native
   sealed trait TUE
     extends StObject
        with DayOfWeekType
-  @scala.inline
-  def TUE: TUE = "TUE".asInstanceOf[TUE]
+  inline def TUE: TUE = "TUE".asInstanceOf[TUE]
   
   @js.native
   sealed trait TV
     extends StObject
        with CountryType
-  @scala.inline
-  def TV: TV = "TV".asInstanceOf[TV]
+  inline def TV: TV = "TV".asInstanceOf[TV]
   
   @js.native
   sealed trait TW
     extends StObject
        with CountryType
-  @scala.inline
-  def TW: TW = "TW".asInstanceOf[TW]
+  inline def TW: TW = "TW".asInstanceOf[TW]
   
   @js.native
   sealed trait TWD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TWD: TWD = "TWD".asInstanceOf[TWD]
+  inline def TWD: TWD = "TWD".asInstanceOf[TWD]
   
   @js.native
   sealed trait TZ
     extends StObject
        with CountryType
-  @scala.inline
-  def TZ: TZ = "TZ".asInstanceOf[TZ]
+  inline def TZ: TZ = "TZ".asInstanceOf[TZ]
   
   @js.native
   sealed trait TZS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def TZS: TZS = "TZS".asInstanceOf[TZS]
+  inline def TZS: TZS = "TZS".asInstanceOf[TZS]
   
   @js.native
   sealed trait UA
     extends StObject
        with CountryType
-  @scala.inline
-  def UA: UA = "UA".asInstanceOf[UA]
+  inline def UA: UA = "UA".asInstanceOf[UA]
   
   @js.native
   sealed trait UAH
     extends StObject
        with CurrencyType
-  @scala.inline
-  def UAH: UAH = "UAH".asInstanceOf[UAH]
+  inline def UAH: UAH = "UAH".asInstanceOf[UAH]
   
   @js.native
   sealed trait UG
     extends StObject
        with CountryType
-  @scala.inline
-  def UG: UG = "UG".asInstanceOf[UG]
+  inline def UG: UG = "UG".asInstanceOf[UG]
   
   @js.native
   sealed trait UGX
     extends StObject
        with CurrencyType
-  @scala.inline
-  def UGX: UGX = "UGX".asInstanceOf[UGX]
+  inline def UGX: UGX = "UGX".asInstanceOf[UGX]
   
   @js.native
   sealed trait UM
     extends StObject
        with CountryType
-  @scala.inline
-  def UM: UM = "UM".asInstanceOf[UM]
+  inline def UM: UM = "UM".asInstanceOf[UM]
   
   @js.native
   sealed trait UNAUTHORIZED
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def UNAUTHORIZED: UNAUTHORIZED = "UNAUTHORIZED".asInstanceOf[UNAUTHORIZED]
+  inline def UNAUTHORIZED: UNAUTHORIZED = "UNAUTHORIZED".asInstanceOf[UNAUTHORIZED]
   
   @js.native
   sealed trait UNEXPECTED_VALUE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def UNEXPECTED_VALUE: UNEXPECTED_VALUE = "UNEXPECTED_VALUE".asInstanceOf[UNEXPECTED_VALUE]
+  inline def UNEXPECTED_VALUE: UNEXPECTED_VALUE = "UNEXPECTED_VALUE".asInstanceOf[UNEXPECTED_VALUE]
   
   @js.native
   sealed trait UNKNOWN extends StObject
-  @scala.inline
-  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
   sealed trait UNKNOWN_CURRENCY
     extends StObject
        with CurrencyType
-  @scala.inline
-  def UNKNOWN_CURRENCY: UNKNOWN_CURRENCY = "UNKNOWN_CURRENCY".asInstanceOf[UNKNOWN_CURRENCY]
+  inline def UNKNOWN_CURRENCY: UNKNOWN_CURRENCY = "UNKNOWN_CURRENCY".asInstanceOf[UNKNOWN_CURRENCY]
   
   @js.native
   sealed trait UNKNOWN_DISCOUNT
     extends StObject
        with DiscountType
-  @scala.inline
-  def UNKNOWN_DISCOUNT: UNKNOWN_DISCOUNT = "UNKNOWN_DISCOUNT".asInstanceOf[UNKNOWN_DISCOUNT]
+  inline def UNKNOWN_DISCOUNT: UNKNOWN_DISCOUNT = "UNKNOWN_DISCOUNT".asInstanceOf[UNKNOWN_DISCOUNT]
   
   @js.native
   sealed trait UNKNOWN_QUERY_PARAMETER
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def UNKNOWN_QUERY_PARAMETER: UNKNOWN_QUERY_PARAMETER = "UNKNOWN_QUERY_PARAMETER".asInstanceOf[UNKNOWN_QUERY_PARAMETER]
+  inline def UNKNOWN_QUERY_PARAMETER: UNKNOWN_QUERY_PARAMETER = "UNKNOWN_QUERY_PARAMETER".asInstanceOf[UNKNOWN_QUERY_PARAMETER]
   
   @js.native
   sealed trait UNKNOWN_TAX
     extends StObject
        with TaxType
-  @scala.inline
-  def UNKNOWN_TAX: UNKNOWN_TAX = "UNKNOWN_TAX".asInstanceOf[UNKNOWN_TAX]
+  inline def UNKNOWN_TAX: UNKNOWN_TAX = "UNKNOWN_TAX".asInstanceOf[UNKNOWN_TAX]
   
   @js.native
   sealed trait UNLINKED_RETURN
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def UNLINKED_RETURN: UNLINKED_RETURN = "UNLINKED_RETURN".asInstanceOf[UNLINKED_RETURN]
+  inline def UNLINKED_RETURN: UNLINKED_RETURN = "UNLINKED_RETURN".asInstanceOf[UNLINKED_RETURN]
   
   @js.native
   sealed trait UNMERGE_RECOVERY
     extends StObject
        with CustomerSourceType
-  @scala.inline
-  def UNMERGE_RECOVERY: UNMERGE_RECOVERY = "UNMERGE_RECOVERY".asInstanceOf[UNMERGE_RECOVERY]
+  inline def UNMERGE_RECOVERY: UNMERGE_RECOVERY = "UNMERGE_RECOVERY".asInstanceOf[UNMERGE_RECOVERY]
   
   @js.native
   sealed trait UNSUPPORTED_CARD_BRAND
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def UNSUPPORTED_CARD_BRAND: UNSUPPORTED_CARD_BRAND = "UNSUPPORTED_CARD_BRAND".asInstanceOf[UNSUPPORTED_CARD_BRAND]
+  inline def UNSUPPORTED_CARD_BRAND: UNSUPPORTED_CARD_BRAND = "UNSUPPORTED_CARD_BRAND".asInstanceOf[UNSUPPORTED_CARD_BRAND]
   
   @js.native
   sealed trait UNSUPPORTED_ENTRY_METHOD
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def UNSUPPORTED_ENTRY_METHOD: UNSUPPORTED_ENTRY_METHOD = "UNSUPPORTED_ENTRY_METHOD".asInstanceOf[UNSUPPORTED_ENTRY_METHOD]
+  inline def UNSUPPORTED_ENTRY_METHOD: UNSUPPORTED_ENTRY_METHOD = "UNSUPPORTED_ENTRY_METHOD".asInstanceOf[UNSUPPORTED_ENTRY_METHOD]
   
   @js.native
   sealed trait UNSUPPORTED_INSTRUMENT_TYPE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def UNSUPPORTED_INSTRUMENT_TYPE: UNSUPPORTED_INSTRUMENT_TYPE = "UNSUPPORTED_INSTRUMENT_TYPE".asInstanceOf[UNSUPPORTED_INSTRUMENT_TYPE]
+  inline def UNSUPPORTED_INSTRUMENT_TYPE: UNSUPPORTED_INSTRUMENT_TYPE = "UNSUPPORTED_INSTRUMENT_TYPE".asInstanceOf[UNSUPPORTED_INSTRUMENT_TYPE]
   
   @js.native
   sealed trait UNSUPPORTED_MEDIA_TYPE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def UNSUPPORTED_MEDIA_TYPE: UNSUPPORTED_MEDIA_TYPE = "UNSUPPORTED_MEDIA_TYPE".asInstanceOf[UNSUPPORTED_MEDIA_TYPE]
+  inline def UNSUPPORTED_MEDIA_TYPE: UNSUPPORTED_MEDIA_TYPE = "UNSUPPORTED_MEDIA_TYPE".asInstanceOf[UNSUPPORTED_MEDIA_TYPE]
   
   @js.native
   sealed trait UPDATED_AT extends StObject
-  @scala.inline
-  def UPDATED_AT: UPDATED_AT = "UPDATED_AT".asInstanceOf[UPDATED_AT]
+  inline def UPDATED_AT: UPDATED_AT = "UPDATED_AT".asInstanceOf[UPDATED_AT]
   
   @js.native
   sealed trait US
     extends StObject
        with CountryType
-  @scala.inline
-  def US: US = "US".asInstanceOf[US]
+  inline def US: US = "US".asInstanceOf[US]
   
   @js.native
   sealed trait USD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def USD: USD = "USD".asInstanceOf[USD]
+  inline def USD: USD = "USD".asInstanceOf[USD]
   
   @js.native
   sealed trait USN
     extends StObject
        with CurrencyType
-  @scala.inline
-  def USN: USN = "USN".asInstanceOf[USN]
+  inline def USN: USN = "USN".asInstanceOf[USN]
   
   @js.native
   sealed trait USS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def USS: USS = "USS".asInstanceOf[USS]
+  inline def USS: USS = "USS".asInstanceOf[USS]
   
   @js.native
   sealed trait UY
     extends StObject
        with CountryType
-  @scala.inline
-  def UY: UY = "UY".asInstanceOf[UY]
+  inline def UY: UY = "UY".asInstanceOf[UY]
   
   @js.native
   sealed trait UYI
     extends StObject
        with CurrencyType
-  @scala.inline
-  def UYI: UYI = "UYI".asInstanceOf[UYI]
+  inline def UYI: UYI = "UYI".asInstanceOf[UYI]
   
   @js.native
   sealed trait UYU
     extends StObject
        with CurrencyType
-  @scala.inline
-  def UYU: UYU = "UYU".asInstanceOf[UYU]
+  inline def UYU: UYU = "UYU".asInstanceOf[UYU]
   
   @js.native
   sealed trait UZ
     extends StObject
        with CountryType
-  @scala.inline
-  def UZ: UZ = "UZ".asInstanceOf[UZ]
+  inline def UZ: UZ = "UZ".asInstanceOf[UZ]
   
   @js.native
   sealed trait UZS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def UZS: UZS = "UZS".asInstanceOf[UZS]
+  inline def UZS: UZS = "UZS".asInstanceOf[UZS]
   
   @js.native
   sealed trait V1_ACCESS_TOKEN
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def V1_ACCESS_TOKEN: V1_ACCESS_TOKEN = "V1_ACCESS_TOKEN".asInstanceOf[V1_ACCESS_TOKEN]
+  inline def V1_ACCESS_TOKEN: V1_ACCESS_TOKEN = "V1_ACCESS_TOKEN".asInstanceOf[V1_ACCESS_TOKEN]
   
   @js.native
   sealed trait V1_APPLICATION
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def V1_APPLICATION: V1_APPLICATION = "V1_APPLICATION".asInstanceOf[V1_APPLICATION]
+  inline def V1_APPLICATION: V1_APPLICATION = "V1_APPLICATION".asInstanceOf[V1_APPLICATION]
   
   @js.native
   sealed trait VA
     extends StObject
        with CountryType
-  @scala.inline
-  def VA: VA = "VA".asInstanceOf[VA]
+  inline def VA: VA = "VA".asInstanceOf[VA]
   
   @js.native
   sealed trait VALUE_EMPTY
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VALUE_EMPTY: VALUE_EMPTY = "VALUE_EMPTY".asInstanceOf[VALUE_EMPTY]
+  inline def VALUE_EMPTY: VALUE_EMPTY = "VALUE_EMPTY".asInstanceOf[VALUE_EMPTY]
   
   @js.native
   sealed trait VALUE_REGEX_MISMATCH
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VALUE_REGEX_MISMATCH: VALUE_REGEX_MISMATCH = "VALUE_REGEX_MISMATCH".asInstanceOf[VALUE_REGEX_MISMATCH]
+  inline def VALUE_REGEX_MISMATCH: VALUE_REGEX_MISMATCH = "VALUE_REGEX_MISMATCH".asInstanceOf[VALUE_REGEX_MISMATCH]
   
   @js.native
   sealed trait VALUE_TOO_HIGH
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VALUE_TOO_HIGH: VALUE_TOO_HIGH = "VALUE_TOO_HIGH".asInstanceOf[VALUE_TOO_HIGH]
+  inline def VALUE_TOO_HIGH: VALUE_TOO_HIGH = "VALUE_TOO_HIGH".asInstanceOf[VALUE_TOO_HIGH]
   
   @js.native
   sealed trait VALUE_TOO_LONG
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VALUE_TOO_LONG: VALUE_TOO_LONG = "VALUE_TOO_LONG".asInstanceOf[VALUE_TOO_LONG]
+  inline def VALUE_TOO_LONG: VALUE_TOO_LONG = "VALUE_TOO_LONG".asInstanceOf[VALUE_TOO_LONG]
   
   @js.native
   sealed trait VALUE_TOO_LOW
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VALUE_TOO_LOW: VALUE_TOO_LOW = "VALUE_TOO_LOW".asInstanceOf[VALUE_TOO_LOW]
+  inline def VALUE_TOO_LOW: VALUE_TOO_LOW = "VALUE_TOO_LOW".asInstanceOf[VALUE_TOO_LOW]
   
   @js.native
   sealed trait VALUE_TOO_SHORT
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VALUE_TOO_SHORT: VALUE_TOO_SHORT = "VALUE_TOO_SHORT".asInstanceOf[VALUE_TOO_SHORT]
+  inline def VALUE_TOO_SHORT: VALUE_TOO_SHORT = "VALUE_TOO_SHORT".asInstanceOf[VALUE_TOO_SHORT]
   
   @js.native
   sealed trait VARIABLE_AMOUNT
     extends StObject
        with DiscountType
-  @scala.inline
-  def VARIABLE_AMOUNT: VARIABLE_AMOUNT = "VARIABLE_AMOUNT".asInstanceOf[VARIABLE_AMOUNT]
+  inline def VARIABLE_AMOUNT: VARIABLE_AMOUNT = "VARIABLE_AMOUNT".asInstanceOf[VARIABLE_AMOUNT]
   
   @js.native
   sealed trait VARIABLE_PERCENTAGE
     extends StObject
        with DiscountType
-  @scala.inline
-  def VARIABLE_PERCENTAGE: VARIABLE_PERCENTAGE = "VARIABLE_PERCENTAGE".asInstanceOf[VARIABLE_PERCENTAGE]
+  inline def VARIABLE_PERCENTAGE: VARIABLE_PERCENTAGE = "VARIABLE_PERCENTAGE".asInstanceOf[VARIABLE_PERCENTAGE]
   
   @js.native
   sealed trait VARIABLE_PRICING
     extends StObject
        with PricingType
-  @scala.inline
-  def VARIABLE_PRICING: VARIABLE_PRICING = "VARIABLE_PRICING".asInstanceOf[VARIABLE_PRICING]
+  inline def VARIABLE_PRICING: VARIABLE_PRICING = "VARIABLE_PRICING".asInstanceOf[VARIABLE_PRICING]
   
   @js.native
   sealed trait VC
     extends StObject
        with CountryType
-  @scala.inline
-  def VC: VC = "VC".asInstanceOf[VC]
+  inline def VC: VC = "VC".asInstanceOf[VC]
   
   @js.native
   sealed trait VE
     extends StObject
        with CountryType
-  @scala.inline
-  def VE: VE = "VE".asInstanceOf[VE]
+  inline def VE: VE = "VE".asInstanceOf[VE]
   
   @js.native
   sealed trait VEF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def VEF: VEF = "VEF".asInstanceOf[VEF]
+  inline def VEF: VEF = "VEF".asInstanceOf[VEF]
   
   @js.native
   sealed trait VERIFIED extends StObject
-  @scala.inline
-  def VERIFIED: VERIFIED = "VERIFIED".asInstanceOf[VERIFIED]
+  inline def VERIFIED: VERIFIED = "VERIFIED".asInstanceOf[VERIFIED]
   
   @js.native
   sealed trait VERIFY_AVS_FAILURE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VERIFY_AVS_FAILURE: VERIFY_AVS_FAILURE = "VERIFY_AVS_FAILURE".asInstanceOf[VERIFY_AVS_FAILURE]
+  inline def VERIFY_AVS_FAILURE: VERIFY_AVS_FAILURE = "VERIFY_AVS_FAILURE".asInstanceOf[VERIFY_AVS_FAILURE]
   
   @js.native
   sealed trait VERIFY_CVV_FAILURE
     extends StObject
        with ErrorCodeType
-  @scala.inline
-  def VERIFY_CVV_FAILURE: VERIFY_CVV_FAILURE = "VERIFY_CVV_FAILURE".asInstanceOf[VERIFY_CVV_FAILURE]
+  inline def VERIFY_CVV_FAILURE: VERIFY_CVV_FAILURE = "VERIFY_CVV_FAILURE".asInstanceOf[VERIFY_CVV_FAILURE]
   
   @js.native
   sealed trait VG
     extends StObject
        with CountryType
-  @scala.inline
-  def VG: VG = "VG".asInstanceOf[VG]
+  inline def VG: VG = "VG".asInstanceOf[VG]
   
   @js.native
   sealed trait VI
     extends StObject
        with CountryType
-  @scala.inline
-  def VI: VI = "VI".asInstanceOf[VI]
+  inline def VI: VI = "VI".asInstanceOf[VI]
   
   @js.native
   sealed trait VISA
     extends StObject
        with CardBrandType
-  @scala.inline
-  def VISA: VISA = "VISA".asInstanceOf[VISA]
+  inline def VISA: VISA = "VISA".asInstanceOf[VISA]
   
   @js.native
   sealed trait VN
     extends StObject
        with CountryType
-  @scala.inline
-  def VN: VN = "VN".asInstanceOf[VN]
+  inline def VN: VN = "VN".asInstanceOf[VN]
   
   @js.native
   sealed trait VND
     extends StObject
        with CurrencyType
-  @scala.inline
-  def VND: VND = "VND".asInstanceOf[VND]
+  inline def VND: VND = "VND".asInstanceOf[VND]
   
   @js.native
   sealed trait VOIDED extends StObject
-  @scala.inline
-  def VOIDED: VOIDED = "VOIDED".asInstanceOf[VOIDED]
+  inline def VOIDED: VOIDED = "VOIDED".asInstanceOf[VOIDED]
   
   @js.native
   sealed trait VU
     extends StObject
        with CountryType
-  @scala.inline
-  def VU: VU = "VU".asInstanceOf[VU]
+  inline def VU: VU = "VU".asInstanceOf[VU]
   
   @js.native
   sealed trait VUV
     extends StObject
        with CurrencyType
-  @scala.inline
-  def VUV: VUV = "VUV".asInstanceOf[VUV]
+  inline def VUV: VUV = "VUV".asInstanceOf[VUV]
   
   @js.native
   sealed trait WASTE
     extends StObject
        with InventoryStateType
-  @scala.inline
-  def WASTE: WASTE = "WASTE".asInstanceOf[WASTE]
+  inline def WASTE: WASTE = "WASTE".asInstanceOf[WASTE]
   
   @js.native
   sealed trait WED
     extends StObject
        with DayOfWeekType
-  @scala.inline
-  def WED: WED = "WED".asInstanceOf[WED]
+  inline def WED: WED = "WED".asInstanceOf[WED]
   
   @js.native
   sealed trait WF
     extends StObject
        with CountryType
-  @scala.inline
-  def WF: WF = "WF".asInstanceOf[WF]
+  inline def WF: WF = "WF".asInstanceOf[WF]
   
   @js.native
   sealed trait WS
     extends StObject
        with CountryType
-  @scala.inline
-  def WS: WS = "WS".asInstanceOf[WS]
+  inline def WS: WS = "WS".asInstanceOf[WS]
   
   @js.native
   sealed trait WST
     extends StObject
        with CurrencyType
-  @scala.inline
-  def WST: WST = "WST".asInstanceOf[WST]
+  inline def WST: WST = "WST".asInstanceOf[WST]
   
   @js.native
   sealed trait XAF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XAF: XAF = "XAF".asInstanceOf[XAF]
+  inline def XAF: XAF = "XAF".asInstanceOf[XAF]
   
   @js.native
   sealed trait XAG
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XAG: XAG = "XAG".asInstanceOf[XAG]
+  inline def XAG: XAG = "XAG".asInstanceOf[XAG]
   
   @js.native
   sealed trait XAU
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XAU: XAU = "XAU".asInstanceOf[XAU]
+  inline def XAU: XAU = "XAU".asInstanceOf[XAU]
   
   @js.native
   sealed trait XBA
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XBA: XBA = "XBA".asInstanceOf[XBA]
+  inline def XBA: XBA = "XBA".asInstanceOf[XBA]
   
   @js.native
   sealed trait XBB
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XBB: XBB = "XBB".asInstanceOf[XBB]
+  inline def XBB: XBB = "XBB".asInstanceOf[XBB]
   
   @js.native
   sealed trait XBC
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XBC: XBC = "XBC".asInstanceOf[XBC]
+  inline def XBC: XBC = "XBC".asInstanceOf[XBC]
   
   @js.native
   sealed trait XBD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XBD: XBD = "XBD".asInstanceOf[XBD]
+  inline def XBD: XBD = "XBD".asInstanceOf[XBD]
   
   @js.native
   sealed trait XCD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XCD: XCD = "XCD".asInstanceOf[XCD]
+  inline def XCD: XCD = "XCD".asInstanceOf[XCD]
   
   @js.native
   sealed trait XDR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XDR: XDR = "XDR".asInstanceOf[XDR]
+  inline def XDR: XDR = "XDR".asInstanceOf[XDR]
   
   @js.native
   sealed trait XOF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XOF: XOF = "XOF".asInstanceOf[XOF]
+  inline def XOF: XOF = "XOF".asInstanceOf[XOF]
   
   @js.native
   sealed trait XPD
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XPD: XPD = "XPD".asInstanceOf[XPD]
+  inline def XPD: XPD = "XPD".asInstanceOf[XPD]
   
   @js.native
   sealed trait XPF
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XPF: XPF = "XPF".asInstanceOf[XPF]
+  inline def XPF: XPF = "XPF".asInstanceOf[XPF]
   
   @js.native
   sealed trait XPT
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XPT: XPT = "XPT".asInstanceOf[XPT]
+  inline def XPT: XPT = "XPT".asInstanceOf[XPT]
   
   @js.native
   sealed trait XTS
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XTS: XTS = "XTS".asInstanceOf[XTS]
+  inline def XTS: XTS = "XTS".asInstanceOf[XTS]
   
   @js.native
   sealed trait XXX
     extends StObject
        with CurrencyType
-  @scala.inline
-  def XXX: XXX = "XXX".asInstanceOf[XXX]
+  inline def XXX: XXX = "XXX".asInstanceOf[XXX]
   
   @js.native
   sealed trait YE
     extends StObject
        with CountryType
-  @scala.inline
-  def YE: YE = "YE".asInstanceOf[YE]
+  inline def YE: YE = "YE".asInstanceOf[YE]
   
   @js.native
   sealed trait YER
     extends StObject
        with CurrencyType
-  @scala.inline
-  def YER: YER = "YER".asInstanceOf[YER]
+  inline def YER: YER = "YER".asInstanceOf[YER]
   
   @js.native
   sealed trait YT
     extends StObject
        with CountryType
-  @scala.inline
-  def YT: YT = "YT".asInstanceOf[YT]
+  inline def YT: YT = "YT".asInstanceOf[YT]
   
   @js.native
   sealed trait ZA
     extends StObject
        with CountryType
-  @scala.inline
-  def ZA: ZA = "ZA".asInstanceOf[ZA]
+  inline def ZA: ZA = "ZA".asInstanceOf[ZA]
   
   @js.native
   sealed trait ZAR
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ZAR: ZAR = "ZAR".asInstanceOf[ZAR]
+  inline def ZAR: ZAR = "ZAR".asInstanceOf[ZAR]
   
   @js.native
   sealed trait ZM
     extends StObject
        with CountryType
-  @scala.inline
-  def ZM: ZM = "ZM".asInstanceOf[ZM]
+  inline def ZM: ZM = "ZM".asInstanceOf[ZM]
   
   @js.native
   sealed trait ZMK
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ZMK: ZMK = "ZMK".asInstanceOf[ZMK]
+  inline def ZMK: ZMK = "ZMK".asInstanceOf[ZMK]
   
   @js.native
   sealed trait ZMW
     extends StObject
        with CurrencyType
-  @scala.inline
-  def ZMW: ZMW = "ZMW".asInstanceOf[ZMW]
+  inline def ZMW: ZMW = "ZMW".asInstanceOf[ZMW]
   
   @js.native
   sealed trait ZW
     extends StObject
        with CountryType
-  @scala.inline
-  def ZW: ZW = "ZW".asInstanceOf[ZW]
+  inline def ZW: ZW = "ZW".asInstanceOf[ZW]
   
   @js.native
   sealed trait ZZ
     extends StObject
        with CountryType
-  @scala.inline
-  def ZZ: ZZ = "ZZ".asInstanceOf[ZZ]
+  inline def ZZ: ZZ = "ZZ".asInstanceOf[ZZ]
 }

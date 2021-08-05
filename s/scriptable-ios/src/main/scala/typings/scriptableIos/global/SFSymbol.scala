@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SFSymbol")
 @js.native
-class SFSymbol protected ()
+/* private */ class SFSymbol ()
   extends StObject
      with typings.scriptableIos.SFSymbol {
   
@@ -109,6 +109,5 @@ object SFSymbol {
     * @see https://docs.scriptable.app/sfsymbol/#named
     */
   /* static member */
-  @scala.inline
-  def named(symbolName: String): typings.scriptableIos.SFSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("named")(symbolName.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.SFSymbol]
+  inline def named(symbolName: String): typings.scriptableIos.SFSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("named")(symbolName.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.SFSymbol]
 }

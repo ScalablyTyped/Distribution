@@ -21,16 +21,12 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def compress(input: Buffer, format: Format): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def compress(input: Buffer, format: Format): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def compress(input: Buffer, format: Format, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def compress(input: Buffer, format: Format, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def compress(input: Buffer, format: Format, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compress(input: Buffer, format: Format, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def compress(
+  inline def compress(
     input: Buffer,
     format: Format,
     options: Options,
@@ -38,76 +34,52 @@ object mod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def createDeflate(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")().asInstanceOf[Zopfli]
-  @scala.inline
-  def createDeflate(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
+  inline def createDeflate(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")().asInstanceOf[Zopfli]
+  inline def createDeflate(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
   
   /* static member */
-  @scala.inline
-  def createGzip(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")().asInstanceOf[Zopfli]
-  @scala.inline
-  def createGzip(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
+  inline def createGzip(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")().asInstanceOf[Zopfli]
+  inline def createGzip(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
   
   /* static member */
-  @scala.inline
-  def createZlib(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createZlib")().asInstanceOf[Zopfli]
-  @scala.inline
-  def createZlib(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createZlib")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
+  inline def createZlib(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createZlib")().asInstanceOf[Zopfli]
+  inline def createZlib(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createZlib")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
   
   /* static member */
-  @scala.inline
-  def deflate(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def deflate(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def deflate(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def deflate(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def deflate(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deflate(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def deflate(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deflate(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def deflateSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")().asInstanceOf[Buffer]
-  @scala.inline
-  def deflateSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def deflateSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")().asInstanceOf[Buffer]
+  inline def deflateSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* static member */
-  @scala.inline
-  def gzip(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def gzip(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def gzip(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def gzip(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def gzip(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gzip(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def gzip(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gzip(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def gzipSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")().asInstanceOf[Buffer]
-  @scala.inline
-  def gzipSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def gzipSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")().asInstanceOf[Buffer]
+  inline def gzipSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* static member */
-  @scala.inline
-  def zlib(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def zlib(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def zlib(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def zlib(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def zlib(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zlib(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @scala.inline
-  def zlib(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zlib(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def zlibSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")().asInstanceOf[Buffer]
-  @scala.inline
-  def zlibSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def zlibSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")().asInstanceOf[Buffer]
+  inline def zlibSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeZopfliEs.nodeZopfliEsStrings.deflate
@@ -117,14 +89,11 @@ object mod {
   trait Format extends StObject
   object Format {
     
-    @scala.inline
-    def deflate: typings.nodeZopfliEs.nodeZopfliEsStrings.deflate = "deflate".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.deflate]
+    inline def deflate: typings.nodeZopfliEs.nodeZopfliEsStrings.deflate = "deflate".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.deflate]
     
-    @scala.inline
-    def gzip: typings.nodeZopfliEs.nodeZopfliEsStrings.gzip = "gzip".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.gzip]
+    inline def gzip: typings.nodeZopfliEs.nodeZopfliEsStrings.gzip = "gzip".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.gzip]
     
-    @scala.inline
-    def zlib: typings.nodeZopfliEs.nodeZopfliEsStrings.zlib = "zlib".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.zlib]
+    inline def zlib: typings.nodeZopfliEs.nodeZopfliEsStrings.zlib = "zlib".asInstanceOf[typings.nodeZopfliEs.nodeZopfliEsStrings.zlib]
   }
   
   trait Options extends StObject {
@@ -160,50 +129,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBlocksplitting(value: Boolean): Self = StObject.set(x, "blocksplitting", value.asInstanceOf[js.Any])
+      inline def setBlocksplitting(value: Boolean): Self = StObject.set(x, "blocksplitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksplittingUndefined: Self = StObject.set(x, "blocksplitting", js.undefined)
+      inline def setBlocksplittingUndefined: Self = StObject.set(x, "blocksplitting", js.undefined)
       
-      @scala.inline
-      def setBlocksplittinglast(value: Boolean): Self = StObject.set(x, "blocksplittinglast", value.asInstanceOf[js.Any])
+      inline def setBlocksplittinglast(value: Boolean): Self = StObject.set(x, "blocksplittinglast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksplittinglastUndefined: Self = StObject.set(x, "blocksplittinglast", js.undefined)
+      inline def setBlocksplittinglastUndefined: Self = StObject.set(x, "blocksplittinglast", js.undefined)
       
-      @scala.inline
-      def setBlocksplittingmax(value: Double): Self = StObject.set(x, "blocksplittingmax", value.asInstanceOf[js.Any])
+      inline def setBlocksplittingmax(value: Double): Self = StObject.set(x, "blocksplittingmax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocksplittingmaxUndefined: Self = StObject.set(x, "blocksplittingmax", js.undefined)
+      inline def setBlocksplittingmaxUndefined: Self = StObject.set(x, "blocksplittingmax", js.undefined)
       
-      @scala.inline
-      def setNumiterations(value: Double): Self = StObject.set(x, "numiterations", value.asInstanceOf[js.Any])
+      inline def setNumiterations(value: Double): Self = StObject.set(x, "numiterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumiterationsUndefined: Self = StObject.set(x, "numiterations", js.undefined)
+      inline def setNumiterationsUndefined: Self = StObject.set(x, "numiterations", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setVerbose_more(value: Boolean): Self = StObject.set(x, "verbose_more", value.asInstanceOf[js.Any])
+      inline def setVerbose_more(value: Boolean): Self = StObject.set(x, "verbose_more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose_moreUndefined: Self = StObject.set(x, "verbose_more", js.undefined)
+      inline def setVerbose_moreUndefined: Self = StObject.set(x, "verbose_more", js.undefined)
     }
   }
   

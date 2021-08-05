@@ -28,37 +28,27 @@ trait ExecutionResult extends StObject {
 }
 object ExecutionResult {
   
-  @scala.inline
-  def apply(): ExecutionResult = {
+  inline def apply(): ExecutionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionResult]
   }
   
-  @scala.inline
-  implicit class ExecutionResultMutableBuilder[Self <: ExecutionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionResult](x: Self) {
     
-    @scala.inline
-    def setBytesProcessed(value: Long): Self = StObject.set(x, "bytesProcessed", value.asInstanceOf[js.Any])
+    inline def setBytesProcessed(value: Long): Self = StObject.set(x, "bytesProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesProcessedUndefined: Self = StObject.set(x, "bytesProcessed", js.undefined)
+    inline def setBytesProcessedUndefined: Self = StObject.set(x, "bytesProcessed", js.undefined)
     
-    @scala.inline
-    def setBytesWritten(value: Long): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: Long): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesWrittenUndefined: Self = StObject.set(x, "bytesWritten", js.undefined)
+    inline def setBytesWrittenUndefined: Self = StObject.set(x, "bytesWritten", js.undefined)
     
-    @scala.inline
-    def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
+    inline def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
+    inline def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
     
-    @scala.inline
-    def setRecordsProcessed(value: Long): Self = StObject.set(x, "recordsProcessed", value.asInstanceOf[js.Any])
+    inline def setRecordsProcessed(value: Long): Self = StObject.set(x, "recordsProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsProcessedUndefined: Self = StObject.set(x, "recordsProcessed", js.undefined)
+    inline def setRecordsProcessedUndefined: Self = StObject.set(x, "recordsProcessed", js.undefined)
   }
 }

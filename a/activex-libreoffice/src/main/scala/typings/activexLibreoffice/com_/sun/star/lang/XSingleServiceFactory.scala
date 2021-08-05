@@ -33,8 +33,7 @@ trait XSingleServiceFactory
 }
 object XSingleServiceFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstance: () => XInterface,
     createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
@@ -45,13 +44,10 @@ object XSingleServiceFactory {
     __obj.asInstanceOf[XSingleServiceFactory]
   }
   
-  @scala.inline
-  implicit class XSingleServiceFactoryMutableBuilder[Self <: XSingleServiceFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XSingleServiceFactory](x: Self) {
     
-    @scala.inline
-    def setCreateInstance(value: () => XInterface): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
+    inline def setCreateInstance(value: () => XInterface): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateInstanceWithArguments(value: SeqEquiv[js.Any] => XInterface): Self = StObject.set(x, "createInstanceWithArguments", js.Any.fromFunction1(value))
+    inline def setCreateInstanceWithArguments(value: SeqEquiv[js.Any] => XInterface): Self = StObject.set(x, "createInstanceWithArguments", js.Any.fromFunction1(value))
   }
 }

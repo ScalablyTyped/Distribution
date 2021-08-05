@@ -43,49 +43,35 @@ trait SchemaUser extends StObject {
 }
 object SchemaUser {
   
-  @scala.inline
-  def apply(): SchemaUser = {
+  inline def apply(): SchemaUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUser]
   }
   
-  @scala.inline
-  implicit class SchemaUserMutableBuilder[Self <: SchemaUser] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUser](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setIsAuthenticatedUser(value: Boolean): Self = StObject.set(x, "isAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setIsAuthenticatedUser(value: Boolean): Self = StObject.set(x, "isAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAuthenticatedUserUndefined: Self = StObject.set(x, "isAuthenticatedUser", js.undefined)
+    inline def setIsAuthenticatedUserUndefined: Self = StObject.set(x, "isAuthenticatedUser", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+    inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+    inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
-    @scala.inline
-    def setPicture(value: Url): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: Url): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
+    inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
   }
 }

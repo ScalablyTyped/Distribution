@@ -20,49 +20,35 @@ trait ButtonOptions extends StObject {
 }
 object ButtonOptions {
   
-  @scala.inline
-  def apply(): ButtonOptions = {
+  inline def apply(): ButtonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonOptions]
   }
   
-  @scala.inline
-  implicit class ButtonOptionsMutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonOptions](x: Self) {
     
-    @scala.inline
-    def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setClick(value: /* e */ ButtonClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: /* e */ ButtonClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClickOn(value: String): Self = StObject.set(x, "clickOn", value.asInstanceOf[js.Any])
+    inline def setClickOn(value: String): Self = StObject.set(x, "clickOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickOnUndefined: Self = StObject.set(x, "clickOn", js.undefined)
+    inline def setClickOnUndefined: Self = StObject.set(x, "clickOn", js.undefined)
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

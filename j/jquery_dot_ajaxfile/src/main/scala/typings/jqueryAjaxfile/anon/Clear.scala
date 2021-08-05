@@ -16,8 +16,7 @@ trait Clear extends StObject {
 }
 object Clear {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: typings.std.Element => Boolean,
     get: (typings.std.Element, String) => js.Any,
     getAll: (typings.std.Element, Boolean) => js.Any,
@@ -27,19 +26,14 @@ object Clear {
     __obj.asInstanceOf[Clear]
   }
   
-  @scala.inline
-  implicit class ClearMutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
+  extension [Self <: Clear](x: Self) {
     
-    @scala.inline
-    def setClear(value: typings.std.Element => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: typings.std.Element => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: (typings.std.Element, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (typings.std.Element, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAll(value: (typings.std.Element, Boolean) => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction2(value))
+    inline def setGetAll(value: (typings.std.Element, Boolean) => js.Any): Self = StObject.set(x, "getAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet(value: (typings.std.Element, String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (typings.std.Element, String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
   }
 }

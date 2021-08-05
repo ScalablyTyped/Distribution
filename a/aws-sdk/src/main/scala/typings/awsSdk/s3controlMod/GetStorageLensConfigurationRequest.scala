@@ -18,19 +18,15 @@ trait GetStorageLensConfigurationRequest extends StObject {
 }
 object GetStorageLensConfigurationRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, ConfigId: ConfigId): GetStorageLensConfigurationRequest = {
+  inline def apply(AccountId: AccountId, ConfigId: ConfigId): GetStorageLensConfigurationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ConfigId = ConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorageLensConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetStorageLensConfigurationRequestMutableBuilder[Self <: GetStorageLensConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageLensConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigId(value: ConfigId): Self = StObject.set(x, "ConfigId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: ConfigId): Self = StObject.set(x, "ConfigId", value.asInstanceOf[js.Any])
   }
 }

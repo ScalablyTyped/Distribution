@@ -17,8 +17,7 @@ object breadcrumbMod {
   class default ()
     extends Component[PageHeaderProps, js.Any, js.Any]
   
-  @scala.inline
-  def getBreadcrumb(breadcrumbNameMap: js.Object, url: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getBreadcrumb")(breadcrumbNameMap.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def getBreadcrumb(breadcrumbNameMap: js.Object, url: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("getBreadcrumb")(breadcrumbNameMap.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   type BreadcrumbView = Component[PageHeaderProps, js.Any, js.Any]
 }

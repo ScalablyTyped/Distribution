@@ -9,79 +9,67 @@ object nodalStrings {
   
   @js.native
   sealed trait ASC extends StObject
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
+  inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
   sealed trait DESC extends StObject
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
+  inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
   sealed trait DSC extends StObject
-  @scala.inline
-  def DSC: DSC = "DSC".asInstanceOf[DSC]
+  inline def DSC: DSC = "DSC".asInstanceOf[DSC]
   
   @js.native
   sealed trait boolean
     extends StObject
        with DataType
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait currency
     extends StObject
        with DataType
-  @scala.inline
-  def currency: currency = "currency".asInstanceOf[currency]
+  inline def currency: currency = "currency".asInstanceOf[currency]
   
   @js.native
   sealed trait datetime
     extends StObject
        with DataType
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
   sealed trait float
     extends StObject
        with DataType
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait int
     extends StObject
        with DataType
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
+  inline def int: int = "int".asInstanceOf[int]
   
   @js.native
   sealed trait json
     extends StObject
        with DataType
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait serial
     extends StObject
        with DataType
-  @scala.inline
-  def serial: serial = "serial".asInstanceOf[serial]
+  inline def serial: serial = "serial".asInstanceOf[serial]
   
   @js.native
   sealed trait string
     extends StObject
        with DataType
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait text
     extends StObject
        with DataType
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

@@ -28,37 +28,27 @@ trait ConfigRuleComplianceFilters extends StObject {
 }
 object ConfigRuleComplianceFilters {
   
-  @scala.inline
-  def apply(): ConfigRuleComplianceFilters = {
+  inline def apply(): ConfigRuleComplianceFilters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigRuleComplianceFilters]
   }
   
-  @scala.inline
-  implicit class ConfigRuleComplianceFiltersMutableBuilder[Self <: ConfigRuleComplianceFilters] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigRuleComplianceFilters](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
+    inline def setAwsRegionUndefined: Self = StObject.set(x, "AwsRegion", js.undefined)
     
-    @scala.inline
-    def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
+    inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
+    inline def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
   }
 }

@@ -49,64 +49,45 @@ trait RecipientFormData extends StObject {
 }
 object RecipientFormData {
   
-  @scala.inline
-  def apply(): RecipientFormData = {
+  inline def apply(): RecipientFormData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientFormData]
   }
   
-  @scala.inline
-  implicit class RecipientFormDataMutableBuilder[Self <: RecipientFormData] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientFormData](x: Self) {
     
-    @scala.inline
-    def setDeclinedTime(value: String): Self = StObject.set(x, "DeclinedTime", value.asInstanceOf[js.Any])
+    inline def setDeclinedTime(value: String): Self = StObject.set(x, "DeclinedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclinedTimeUndefined: Self = StObject.set(x, "DeclinedTime", js.undefined)
+    inline def setDeclinedTimeUndefined: Self = StObject.set(x, "DeclinedTime", js.undefined)
     
-    @scala.inline
-    def setDeliveredTime(value: String): Self = StObject.set(x, "DeliveredTime", value.asInstanceOf[js.Any])
+    inline def setDeliveredTime(value: String): Self = StObject.set(x, "DeliveredTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveredTimeUndefined: Self = StObject.set(x, "DeliveredTime", js.undefined)
+    inline def setDeliveredTimeUndefined: Self = StObject.set(x, "DeliveredTime", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFormData(value: js.Array[FormDataItem]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: js.Array[FormDataItem]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    @scala.inline
-    def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value :_*))
+    inline def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
+    inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
+    inline def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
-    @scala.inline
-    def setSentTime(value: String): Self = StObject.set(x, "SentTime", value.asInstanceOf[js.Any])
+    inline def setSentTime(value: String): Self = StObject.set(x, "SentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentTimeUndefined: Self = StObject.set(x, "SentTime", js.undefined)
+    inline def setSentTimeUndefined: Self = StObject.set(x, "SentTime", js.undefined)
     
-    @scala.inline
-    def setSignedTime(value: String): Self = StObject.set(x, "SignedTime", value.asInstanceOf[js.Any])
+    inline def setSignedTime(value: String): Self = StObject.set(x, "SignedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedTimeUndefined: Self = StObject.set(x, "SignedTime", js.undefined)
+    inline def setSignedTimeUndefined: Self = StObject.set(x, "SignedTime", js.undefined)
   }
 }

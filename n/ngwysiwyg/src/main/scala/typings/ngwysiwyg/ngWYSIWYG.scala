@@ -14,26 +14,20 @@ object ngWYSIWYG {
   }
   object Config {
     
-    @scala.inline
-    def apply(sanitize: Boolean): Config = {
+    inline def apply(sanitize: Boolean): Config = {
       val __obj = js.Dynamic.literal(sanitize = sanitize.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbar(value: js.Array[Toolbar]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: js.Array[Toolbar]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+      inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
       
-      @scala.inline
-      def setToolbarVarargs(value: Toolbar*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+      inline def setToolbarVarargs(value: Toolbar*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
     }
   }
   
@@ -45,23 +39,18 @@ object ngWYSIWYG {
   }
   object Toolbar {
     
-    @scala.inline
-    def apply(items: js.Array[String], name: String): Toolbar = {
+    inline def apply(items: js.Array[String], name: String): Toolbar = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Toolbar]
     }
     
-    @scala.inline
-    implicit class ToolbarMutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
+    extension [Self <: Toolbar](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

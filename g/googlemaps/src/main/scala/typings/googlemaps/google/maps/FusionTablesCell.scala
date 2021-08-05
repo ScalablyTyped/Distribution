@@ -13,25 +13,19 @@ trait FusionTablesCell extends StObject {
 }
 object FusionTablesCell {
   
-  @scala.inline
-  def apply(): FusionTablesCell = {
+  inline def apply(): FusionTablesCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FusionTablesCell]
   }
   
-  @scala.inline
-  implicit class FusionTablesCellMutableBuilder[Self <: FusionTablesCell] (val x: Self) extends AnyVal {
+  extension [Self <: FusionTablesCell](x: Self) {
     
-    @scala.inline
-    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
+    inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

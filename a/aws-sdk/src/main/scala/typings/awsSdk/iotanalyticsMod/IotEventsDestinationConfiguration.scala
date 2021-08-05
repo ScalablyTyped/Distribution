@@ -18,19 +18,15 @@ trait IotEventsDestinationConfiguration extends StObject {
 }
 object IotEventsDestinationConfiguration {
   
-  @scala.inline
-  def apply(inputName: IotEventsInputName, roleArn: RoleArn): IotEventsDestinationConfiguration = {
+  inline def apply(inputName: IotEventsInputName, roleArn: RoleArn): IotEventsDestinationConfiguration = {
     val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IotEventsDestinationConfiguration]
   }
   
-  @scala.inline
-  implicit class IotEventsDestinationConfigurationMutableBuilder[Self <: IotEventsDestinationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: IotEventsDestinationConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputName(value: IotEventsInputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: IotEventsInputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

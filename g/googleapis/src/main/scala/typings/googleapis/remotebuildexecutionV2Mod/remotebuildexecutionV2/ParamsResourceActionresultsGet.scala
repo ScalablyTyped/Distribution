@@ -39,37 +39,27 @@ trait ParamsResourceActionresultsGet
 }
 object ParamsResourceActionresultsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceActionresultsGet = {
+  inline def apply(): ParamsResourceActionresultsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceActionresultsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceActionresultsGetMutableBuilder[Self <: ParamsResourceActionresultsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceActionresultsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

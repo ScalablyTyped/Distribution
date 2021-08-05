@@ -23,38 +23,28 @@ object typesetMod {
   }
   object TypesetProps {
     
-    @scala.inline
-    def apply(fontSizes: js.Array[String]): TypesetProps = {
+    inline def apply(fontSizes: js.Array[String]): TypesetProps = {
       val __obj = js.Dynamic.literal(fontSizes = fontSizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypesetProps]
     }
     
-    @scala.inline
-    implicit class TypesetPropsMutableBuilder[Self <: TypesetProps] (val x: Self) extends AnyVal {
+    extension [Self <: TypesetProps](x: Self) {
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSizes(value: js.Array[String]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
+      inline def setFontSizes(value: js.Array[String]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizesVarargs(value: String*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+      inline def setFontSizesVarargs(value: String*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
       
-      @scala.inline
-      def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setSampleText(value: String): Self = StObject.set(x, "sampleText", value.asInstanceOf[js.Any])
+      inline def setSampleText(value: String): Self = StObject.set(x, "sampleText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleTextUndefined: Self = StObject.set(x, "sampleText", js.undefined)
+      inline def setSampleTextUndefined: Self = StObject.set(x, "sampleText", js.undefined)
     }
   }
 }

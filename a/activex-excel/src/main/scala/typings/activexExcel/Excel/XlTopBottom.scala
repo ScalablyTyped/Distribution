@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlTopBottom extends StObject
 object XlTopBottom {
   
-  @scala.inline
-  def xlTop10Bottom: `0` = 0.asInstanceOf[`0`]
+  inline def xlTop10Bottom: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlTop10Top: `1` = 1.asInstanceOf[`1`]
+  inline def xlTop10Top: `1` = 1.asInstanceOf[`1`]
 }

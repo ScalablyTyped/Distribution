@@ -13,17 +13,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def empty[TResult](): AsyncIterableIterator[TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[AsyncIterableIterator[TResult]]
+  inline def empty[TResult](): AsyncIterableIterator[TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[AsyncIterableIterator[TResult]]
   
-  @scala.inline
-  def from[TSource](source: AsyncQuerySource[TSource]): AsyncQueryable[TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryable[TSource]]
+  inline def from[TSource](source: AsyncQuerySource[TSource]): AsyncQueryable[TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryable[TSource]]
   
-  @scala.inline
-  def range(start: Double): AsyncQueryable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryable[Double]]
-  @scala.inline
-  def range(start: Double, stop: Double): AsyncQueryable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[Double]]
+  inline def range(start: Double): AsyncQueryable[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryable[Double]]
+  inline def range(start: Double, stop: Double): AsyncQueryable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[Double]]
   
-  @scala.inline
-  def repeat[TSource](t: TSource): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def repeat[TSource](t: TSource): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

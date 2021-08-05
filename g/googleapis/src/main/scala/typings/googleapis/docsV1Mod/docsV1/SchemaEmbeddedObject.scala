@@ -70,79 +70,55 @@ trait SchemaEmbeddedObject extends StObject {
 }
 object SchemaEmbeddedObject {
   
-  @scala.inline
-  def apply(): SchemaEmbeddedObject = {
+  inline def apply(): SchemaEmbeddedObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEmbeddedObject]
   }
   
-  @scala.inline
-  implicit class SchemaEmbeddedObjectMutableBuilder[Self <: SchemaEmbeddedObject] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEmbeddedObject](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEmbeddedDrawingProperties(value: SchemaEmbeddedDrawingProperties): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
+    inline def setEmbeddedDrawingProperties(value: SchemaEmbeddedDrawingProperties): Self = StObject.set(x, "embeddedDrawingProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedDrawingPropertiesUndefined: Self = StObject.set(x, "embeddedDrawingProperties", js.undefined)
+    inline def setEmbeddedDrawingPropertiesUndefined: Self = StObject.set(x, "embeddedDrawingProperties", js.undefined)
     
-    @scala.inline
-    def setEmbeddedObjectBorder(value: SchemaEmbeddedObjectBorder): Self = StObject.set(x, "embeddedObjectBorder", value.asInstanceOf[js.Any])
+    inline def setEmbeddedObjectBorder(value: SchemaEmbeddedObjectBorder): Self = StObject.set(x, "embeddedObjectBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedObjectBorderUndefined: Self = StObject.set(x, "embeddedObjectBorder", js.undefined)
+    inline def setEmbeddedObjectBorderUndefined: Self = StObject.set(x, "embeddedObjectBorder", js.undefined)
     
-    @scala.inline
-    def setImageProperties(value: SchemaImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+    inline def setImageProperties(value: SchemaImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
+    inline def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
     
-    @scala.inline
-    def setLinkedContentReference(value: SchemaLinkedContentReference): Self = StObject.set(x, "linkedContentReference", value.asInstanceOf[js.Any])
+    inline def setLinkedContentReference(value: SchemaLinkedContentReference): Self = StObject.set(x, "linkedContentReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedContentReferenceUndefined: Self = StObject.set(x, "linkedContentReference", js.undefined)
+    inline def setLinkedContentReferenceUndefined: Self = StObject.set(x, "linkedContentReference", js.undefined)
     
-    @scala.inline
-    def setMarginBottom(value: SchemaDimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: SchemaDimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+    inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
-    @scala.inline
-    def setMarginLeft(value: SchemaDimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: SchemaDimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginRight(value: SchemaDimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: SchemaDimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+    inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
-    @scala.inline
-    def setMarginTop(value: SchemaDimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: SchemaDimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    @scala.inline
-    def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: SchemaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

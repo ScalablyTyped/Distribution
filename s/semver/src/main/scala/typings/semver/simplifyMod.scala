@@ -15,14 +15,10 @@ object simplifyMod {
     * to provide the user with something a bit more ergonomic.
     * If the provided range is shorter in string-length than the generated range, then that is returned.
     */
-  @scala.inline
-  def apply(ranges: js.Array[String], range: String): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
-  @scala.inline
-  def apply(ranges: js.Array[String], range: String, options: Options): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
-  @scala.inline
-  def apply(ranges: js.Array[String], range: typings.semver.rangeMod.^): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
-  @scala.inline
-  def apply(ranges: js.Array[String], range: typings.semver.rangeMod.^, options: Options): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
+  inline def apply(ranges: js.Array[String], range: String): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
+  inline def apply(ranges: js.Array[String], range: String, options: Options): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
+  inline def apply(ranges: js.Array[String], range: typings.semver.rangeMod.^): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
+  inline def apply(ranges: js.Array[String], range: typings.semver.rangeMod.^, options: Options): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].apply(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
   
   @JSImport("semver/ranges/simplify", JSImport.Namespace)
   @js.native

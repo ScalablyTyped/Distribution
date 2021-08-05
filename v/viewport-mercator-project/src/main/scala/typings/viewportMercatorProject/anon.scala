@@ -28,38 +28,28 @@ object anon {
   }
   object Altitude {
     
-    @scala.inline
-    def apply(altitude: Double, bearing: Double, height: Double, pitch: Double): Altitude = {
+    inline def apply(altitude: Double, bearing: Double, height: Double, pitch: Double): Altitude = {
       val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], bearing = bearing.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], pitch = pitch.asInstanceOf[js.Any])
       __obj.asInstanceOf[Altitude]
     }
     
-    @scala.inline
-    implicit class AltitudeMutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
+    extension [Self <: Altitude](x: Self) {
       
-      @scala.inline
-      def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+      inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+      inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenter(value: CoordinatesZ): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: CoordinatesZ): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+      inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,23 +66,18 @@ object anon {
   }
   object BaseDistanceScalesInputsc {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double, scale: Double): BaseDistanceScalesInputsc = {
+    inline def apply(latitude: Double, longitude: Double, scale: Double): BaseDistanceScalesInputsc = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseDistanceScalesInputsc]
     }
     
-    @scala.inline
-    implicit class BaseDistanceScalesInputscMutableBuilder[Self <: BaseDistanceScalesInputsc] (val x: Self) extends AnyVal {
+    extension [Self <: BaseDistanceScalesInputsc](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,23 +94,18 @@ object anon {
   }
   object BaseDistanceScalesInputzo {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double, zoom: Double): BaseDistanceScalesInputzo = {
+    inline def apply(latitude: Double, longitude: Double, zoom: Double): BaseDistanceScalesInputzo = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseDistanceScalesInputzo]
     }
     
-    @scala.inline
-    implicit class BaseDistanceScalesInputzoMutableBuilder[Self <: BaseDistanceScalesInputzo] (val x: Self) extends AnyVal {
+    extension [Self <: BaseDistanceScalesInputzo](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,26 +124,20 @@ object anon {
   }
   object BaseHighPrecisionDistance {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double, zoom: Double): BaseHighPrecisionDistance = {
+    inline def apply(latitude: Double, longitude: Double, zoom: Double): BaseHighPrecisionDistance = {
       val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseHighPrecisionDistance]
     }
     
-    @scala.inline
-    implicit class BaseHighPrecisionDistanceMutableBuilder[Self <: BaseHighPrecisionDistance] (val x: Self) extends AnyVal {
+    extension [Self <: BaseHighPrecisionDistance](x: Self) {
       
-      @scala.inline
-      def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
+      inline def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,26 +156,20 @@ object anon {
   }
   object BaseHighPrecisionDistanceHighPrecision {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double, scale: Double): BaseHighPrecisionDistanceHighPrecision = {
+    inline def apply(latitude: Double, longitude: Double, scale: Double): BaseHighPrecisionDistanceHighPrecision = {
       val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseHighPrecisionDistanceHighPrecision]
     }
     
-    @scala.inline
-    implicit class BaseHighPrecisionDistanceHighPrecisionMutableBuilder[Self <: BaseHighPrecisionDistanceHighPrecision] (val x: Self) extends AnyVal {
+    extension [Self <: BaseHighPrecisionDistanceHighPrecision](x: Self) {
       
-      @scala.inline
-      def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
+      inline def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     }
   }
   
@@ -217,26 +185,20 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,35 +216,26 @@ object anon {
   }
   object Bounds {
     
-    @scala.inline
-    def apply(bounds: typings.viewportMercatorProject.mod.Bounds, height: Double, width: Double): Bounds = {
+    inline def apply(bounds: typings.viewportMercatorProject.mod.Bounds, height: Double, width: Double): Bounds = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bounds]
     }
     
-    @scala.inline
-    implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+    extension [Self <: Bounds](x: Self) {
       
-      @scala.inline
-      def setBounds(value: typings.viewportMercatorProject.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: typings.viewportMercatorProject.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Coordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Coordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,17 +245,14 @@ object anon {
   }
   object Latitude {
     
-    @scala.inline
-    def apply(latitude: Double): Latitude = {
+    inline def apply(latitude: Double): Latitude = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[Latitude]
     }
     
-    @scala.inline
-    implicit class LatitudeMutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
+    extension [Self <: Latitude](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -314,20 +264,16 @@ object anon {
   }
   object LngLat {
     
-    @scala.inline
-    def apply(lngLat: Coordinates, pos: Coordinates): LngLat = {
+    inline def apply(lngLat: Coordinates, pos: Coordinates): LngLat = {
       val __obj = js.Dynamic.literal(lngLat = lngLat.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[LngLat]
     }
     
-    @scala.inline
-    implicit class LngLatMutableBuilder[Self <: LngLat] (val x: Self) extends AnyVal {
+    extension [Self <: LngLat](x: Self) {
       
-      @scala.inline
-      def setLngLat(value: Coordinates): Self = StObject.set(x, "lngLat", value.asInstanceOf[js.Any])
+      inline def setLngLat(value: Coordinates): Self = StObject.set(x, "lngLat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Coordinates): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Coordinates): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,26 +285,20 @@ object anon {
   }
   object Offset {
     
-    @scala.inline
-    def apply(): Offset = {
+    inline def apply(): Offset = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Offset]
     }
     
-    @scala.inline
-    implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+    extension [Self <: Offset](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Coordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Coordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
 }

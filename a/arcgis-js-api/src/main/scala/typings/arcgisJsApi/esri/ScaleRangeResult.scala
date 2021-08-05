@@ -26,8 +26,7 @@ trait ScaleRangeResult
 }
 object ScaleRangeResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     maxScale: Double,
@@ -38,13 +37,10 @@ object ScaleRangeResult {
     __obj.asInstanceOf[ScaleRangeResult]
   }
   
-  @scala.inline
-  implicit class ScaleRangeResultMutableBuilder[Self <: ScaleRangeResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleRangeResult](x: Self) {
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
   }
 }

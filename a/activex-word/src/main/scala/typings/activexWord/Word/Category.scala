@@ -20,13 +20,12 @@ trait Category extends StObject {
   
   val Type: BuildingBlockType
   
-  @JSName("Word.Category_typekey")
+  /* private */ @JSName("Word.Category_typekey")
   var WordDotCategory_typekey: Category
 }
 object Category {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BuildingBlocks: BuildingBlocks,
     Creator: Double,
@@ -41,31 +40,22 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildingBlocks(value: BuildingBlocks): Self = StObject.set(x, "BuildingBlocks", value.asInstanceOf[js.Any])
+    inline def setBuildingBlocks(value: BuildingBlocks): Self = StObject.set(x, "BuildingBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BuildingBlockType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: BuildingBlockType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCategory_typekey(value: Category): Self = StObject.set(x, "Word.Category_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCategory_typekey(value: Category): Self = StObject.set(x, "Word.Category_typekey", value.asInstanceOf[js.Any])
   }
 }

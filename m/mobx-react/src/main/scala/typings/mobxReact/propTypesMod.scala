@@ -18,38 +18,31 @@ object propTypesMod {
     @js.native
     def arrayOrObservableArray: Requireable[js.Any] = js.native
     
-    @scala.inline
-    def arrayOrObservableArrayOf(typeChecker: Validator[js.Any]): Requireable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOrObservableArrayOf")(typeChecker.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Any]]
+    inline def arrayOrObservableArrayOf(typeChecker: Validator[js.Any]): Requireable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOrObservableArrayOf")(typeChecker.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Any]]
     
-    @scala.inline
-    def arrayOrObservableArray_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayOrObservableArray")(x.asInstanceOf[js.Any])
+    inline def arrayOrObservableArray_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrayOrObservableArray")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-react/dist/propTypes", "PropTypes.objectOrObservableObject")
     @js.native
     def objectOrObservableObject: Requireable[js.Any] = js.native
-    @scala.inline
-    def objectOrObservableObject_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("objectOrObservableObject")(x.asInstanceOf[js.Any])
+    inline def objectOrObservableObject_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("objectOrObservableObject")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-react/dist/propTypes", "PropTypes.observableArray")
     @js.native
     def observableArray: Requireable[js.Any] = js.native
     
-    @scala.inline
-    def observableArrayOf(typeChecker: Validator[js.Any]): Requireable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("observableArrayOf")(typeChecker.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Any]]
+    inline def observableArrayOf(typeChecker: Validator[js.Any]): Requireable[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("observableArrayOf")(typeChecker.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Any]]
     
-    @scala.inline
-    def observableArray_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observableArray")(x.asInstanceOf[js.Any])
+    inline def observableArray_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observableArray")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-react/dist/propTypes", "PropTypes.observableMap")
     @js.native
     def observableMap: Requireable[js.Any] = js.native
-    @scala.inline
-    def observableMap_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observableMap")(x.asInstanceOf[js.Any])
+    inline def observableMap_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observableMap")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx-react/dist/propTypes", "PropTypes.observableObject")
     @js.native
     def observableObject: Requireable[js.Any] = js.native
-    @scala.inline
-    def observableObject_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observableObject")(x.asInstanceOf[js.Any])
+    inline def observableObject_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("observableObject")(x.asInstanceOf[js.Any])
   }
 }

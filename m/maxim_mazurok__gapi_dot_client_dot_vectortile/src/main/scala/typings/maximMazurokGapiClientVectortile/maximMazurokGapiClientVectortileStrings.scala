@@ -8,11 +8,9 @@ object maximMazurokGapiClientVectortileStrings {
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
   
   @js.native
   sealed trait vectortile extends StObject
-  @scala.inline
-  def vectortile: vectortile = "vectortile".asInstanceOf[vectortile]
+  inline def vectortile: vectortile = "vectortile".asInstanceOf[vectortile]
 }

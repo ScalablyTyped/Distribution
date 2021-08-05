@@ -32,8 +32,7 @@ trait GetAttribute extends StObject {
 }
 object GetAttribute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Promise[Unit],
     element: () => js.Promise[js.Any],
     exists: () => js.Promise[Boolean],
@@ -51,43 +50,30 @@ object GetAttribute {
     __obj.asInstanceOf[GetAttribute]
   }
   
-  @scala.inline
-  implicit class GetAttributeMutableBuilder[Self <: GetAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: GetAttribute](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+    inline def setGetAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLabelTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelTextContent", js.Any.fromFunction0(value))
+    inline def setGetLabelTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelTextContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+    inline def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCompleted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
+    inline def setIsCompleted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsErrorIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
+    inline def setIsErrorIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLabelDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLabelDisplayed", js.Any.fromFunction0(value))
+    inline def setIsLabelDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLabelDisplayed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPercentagesProgressDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
+    inline def setIsPercentagesProgressDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSuccessIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
+    inline def setIsSuccessIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
   }
 }

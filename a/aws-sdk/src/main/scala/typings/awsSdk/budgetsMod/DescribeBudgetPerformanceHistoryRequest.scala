@@ -21,37 +21,27 @@ trait DescribeBudgetPerformanceHistoryRequest extends StObject {
 }
 object DescribeBudgetPerformanceHistoryRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, BudgetName: BudgetName): DescribeBudgetPerformanceHistoryRequest = {
+  inline def apply(AccountId: AccountId, BudgetName: BudgetName): DescribeBudgetPerformanceHistoryRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBudgetPerformanceHistoryRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBudgetPerformanceHistoryRequestMutableBuilder[Self <: DescribeBudgetPerformanceHistoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBudgetPerformanceHistoryRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: TimePeriod): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: TimePeriod): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
   }
 }

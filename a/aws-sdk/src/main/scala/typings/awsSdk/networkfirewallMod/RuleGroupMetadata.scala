@@ -18,25 +18,19 @@ trait RuleGroupMetadata extends StObject {
 }
 object RuleGroupMetadata {
   
-  @scala.inline
-  def apply(): RuleGroupMetadata = {
+  inline def apply(): RuleGroupMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleGroupMetadata]
   }
   
-  @scala.inline
-  implicit class RuleGroupMetadataMutableBuilder[Self <: RuleGroupMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupMetadata](x: Self) {
     
-    @scala.inline
-    def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

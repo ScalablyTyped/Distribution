@@ -13,19 +13,15 @@ trait EnhancedCustomShapeTextFrame extends StObject {
 }
 object EnhancedCustomShapeTextFrame {
   
-  @scala.inline
-  def apply(BottomRight: EnhancedCustomShapeParameterPair, TopLeft: EnhancedCustomShapeParameterPair): EnhancedCustomShapeTextFrame = {
+  inline def apply(BottomRight: EnhancedCustomShapeParameterPair, TopLeft: EnhancedCustomShapeParameterPair): EnhancedCustomShapeTextFrame = {
     val __obj = js.Dynamic.literal(BottomRight = BottomRight.asInstanceOf[js.Any], TopLeft = TopLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedCustomShapeTextFrame]
   }
   
-  @scala.inline
-  implicit class EnhancedCustomShapeTextFrameMutableBuilder[Self <: EnhancedCustomShapeTextFrame] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedCustomShapeTextFrame](x: Self) {
     
-    @scala.inline
-    def setBottomRight(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "BottomRight", value.asInstanceOf[js.Any])
+    inline def setBottomRight(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "BottomRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLeft(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "TopLeft", value.asInstanceOf[js.Any])
+    inline def setTopLeft(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "TopLeft", value.asInstanceOf[js.Any])
   }
 }

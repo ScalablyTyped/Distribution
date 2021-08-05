@@ -78,14 +78,12 @@ object Size {
     * @param {string} str
     */
   /* static member */
-  @scala.inline
-  def parse(str: String): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Size]
+  inline def parse(str: String): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Size]
   
   /**
     * This static function can be used to write out a Size as a string that can be read by Size.parse.
     * @param {Size} val
     */
   /* static member */
-  @scala.inline
-  def stringify(`val`: Size): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(`val`: Size): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

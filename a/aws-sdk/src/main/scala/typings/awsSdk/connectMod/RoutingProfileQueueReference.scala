@@ -18,19 +18,15 @@ trait RoutingProfileQueueReference extends StObject {
 }
 object RoutingProfileQueueReference {
   
-  @scala.inline
-  def apply(Channel: Channel, QueueId: QueueId): RoutingProfileQueueReference = {
+  inline def apply(Channel: Channel, QueueId: QueueId): RoutingProfileQueueReference = {
     val __obj = js.Dynamic.literal(Channel = Channel.asInstanceOf[js.Any], QueueId = QueueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutingProfileQueueReference]
   }
   
-  @scala.inline
-  implicit class RoutingProfileQueueReferenceMutableBuilder[Self <: RoutingProfileQueueReference] (val x: Self) extends AnyVal {
+  extension [Self <: RoutingProfileQueueReference](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueId(value: QueueId): Self = StObject.set(x, "QueueId", value.asInstanceOf[js.Any])
+    inline def setQueueId(value: QueueId): Self = StObject.set(x, "QueueId", value.asInstanceOf[js.Any])
   }
 }

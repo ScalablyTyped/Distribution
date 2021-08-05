@@ -18,25 +18,19 @@ trait FunctionEventInvokeConfigDestinationConfig extends StObject {
 }
 object FunctionEventInvokeConfigDestinationConfig {
   
-  @scala.inline
-  def apply(): FunctionEventInvokeConfigDestinationConfig = {
+  inline def apply(): FunctionEventInvokeConfigDestinationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionEventInvokeConfigDestinationConfig]
   }
   
-  @scala.inline
-  implicit class FunctionEventInvokeConfigDestinationConfigMutableBuilder[Self <: FunctionEventInvokeConfigDestinationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionEventInvokeConfigDestinationConfig](x: Self) {
     
-    @scala.inline
-    def setOnFailure(value: FunctionEventInvokeConfigDestinationConfigOnFailure): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+    inline def setOnFailure(value: FunctionEventInvokeConfigDestinationConfigOnFailure): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: FunctionEventInvokeConfigDestinationConfigOnSuccess): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
+    inline def setOnSuccess(value: FunctionEventInvokeConfigDestinationConfigOnSuccess): Self = StObject.set(x, "onSuccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait CreateOpenIDConnectProviderRequest extends StObject {
 }
 object CreateOpenIDConnectProviderRequest {
   
-  @scala.inline
-  def apply(ThumbprintList: thumbprintListType, Url: OpenIDConnectProviderUrlType): CreateOpenIDConnectProviderRequest = {
+  inline def apply(ThumbprintList: thumbprintListType, Url: OpenIDConnectProviderUrlType): CreateOpenIDConnectProviderRequest = {
     val __obj = js.Dynamic.literal(ThumbprintList = ThumbprintList.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOpenIDConnectProviderRequest]
   }
   
-  @scala.inline
-  implicit class CreateOpenIDConnectProviderRequestMutableBuilder[Self <: CreateOpenIDConnectProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOpenIDConnectProviderRequest](x: Self) {
     
-    @scala.inline
-    def setClientIDList(value: clientIDListType): Self = StObject.set(x, "ClientIDList", value.asInstanceOf[js.Any])
+    inline def setClientIDList(value: clientIDListType): Self = StObject.set(x, "ClientIDList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIDListUndefined: Self = StObject.set(x, "ClientIDList", js.undefined)
+    inline def setClientIDListUndefined: Self = StObject.set(x, "ClientIDList", js.undefined)
     
-    @scala.inline
-    def setClientIDListVarargs(value: clientIDType*): Self = StObject.set(x, "ClientIDList", js.Array(value :_*))
+    inline def setClientIDListVarargs(value: clientIDType*): Self = StObject.set(x, "ClientIDList", js.Array(value :_*))
     
-    @scala.inline
-    def setThumbprintList(value: thumbprintListType): Self = StObject.set(x, "ThumbprintList", value.asInstanceOf[js.Any])
+    inline def setThumbprintList(value: thumbprintListType): Self = StObject.set(x, "ThumbprintList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value :_*))
+    inline def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: OpenIDConnectProviderUrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: OpenIDConnectProviderUrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ object reproducibleMod {
   }
   object IReproducibleInterval {
     
-    @scala.inline
-    def apply[T /* <: ConstInterval */](
+    inline def apply[T /* <: ConstInterval */](
       makeByLengthEnd: (Double, Double) => T,
       makeByStartEnd: (Double, Double) => T,
       makeByStartLength: (Double, Double) => T
@@ -27,17 +26,13 @@ object reproducibleMod {
       __obj.asInstanceOf[IReproducibleInterval[T]]
     }
     
-    @scala.inline
-    implicit class IReproducibleIntervalMutableBuilder[Self <: IReproducibleInterval[?], T /* <: ConstInterval */] (val x: Self & IReproducibleInterval[T]) extends AnyVal {
+    extension [Self <: IReproducibleInterval[?], T /* <: ConstInterval */](x: Self & IReproducibleInterval[T]) {
       
-      @scala.inline
-      def setMakeByLengthEnd(value: (Double, Double) => T): Self = StObject.set(x, "makeByLengthEnd", js.Any.fromFunction2(value))
+      inline def setMakeByLengthEnd(value: (Double, Double) => T): Self = StObject.set(x, "makeByLengthEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMakeByStartEnd(value: (Double, Double) => T): Self = StObject.set(x, "makeByStartEnd", js.Any.fromFunction2(value))
+      inline def setMakeByStartEnd(value: (Double, Double) => T): Self = StObject.set(x, "makeByStartEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMakeByStartLength(value: (Double, Double) => T): Self = StObject.set(x, "makeByStartLength", js.Any.fromFunction2(value))
+      inline def setMakeByStartLength(value: (Double, Double) => T): Self = StObject.set(x, "makeByStartLength", js.Any.fromFunction2(value))
     }
   }
 }

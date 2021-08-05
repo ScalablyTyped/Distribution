@@ -24,25 +24,19 @@ trait DatabaseWithObjectStores extends StObject {
 }
 object DatabaseWithObjectStores {
   
-  @scala.inline
-  def apply(name: String, objectStores: js.Array[ObjectStore], version: Double): DatabaseWithObjectStores = {
+  inline def apply(name: String, objectStores: js.Array[ObjectStore], version: Double): DatabaseWithObjectStores = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], objectStores = objectStores.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseWithObjectStores]
   }
   
-  @scala.inline
-  implicit class DatabaseWithObjectStoresMutableBuilder[Self <: DatabaseWithObjectStores] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseWithObjectStores](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectStores(value: js.Array[ObjectStore]): Self = StObject.set(x, "objectStores", value.asInstanceOf[js.Any])
+    inline def setObjectStores(value: js.Array[ObjectStore]): Self = StObject.set(x, "objectStores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectStoresVarargs(value: ObjectStore*): Self = StObject.set(x, "objectStores", js.Array(value :_*))
+    inline def setObjectStoresVarargs(value: ObjectStore*): Self = StObject.set(x, "objectStores", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

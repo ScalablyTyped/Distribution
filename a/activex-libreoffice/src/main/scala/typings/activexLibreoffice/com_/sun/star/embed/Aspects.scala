@@ -19,16 +19,12 @@ object Aspects {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def MSOLE_CONTENT: `1` = 1.asInstanceOf[`1`]
+    inline def MSOLE_CONTENT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def MSOLE_DOCPRINT: `8` = 8.asInstanceOf[`8`]
+    inline def MSOLE_DOCPRINT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def MSOLE_ICON: `4` = 4.asInstanceOf[`4`]
+    inline def MSOLE_ICON: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def MSOLE_THUMBNAIL: `2` = 2.asInstanceOf[`2`]
+    inline def MSOLE_THUMBNAIL: `2` = 2.asInstanceOf[`2`]
   }
 }

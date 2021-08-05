@@ -9,8 +9,7 @@ trait PutBucketLifecycleConfigurationInput
      with typings.awsSdkClientS3Browser.typesPutBucketLifecycleConfigurationInputMod.PutBucketLifecycleConfigurationInput
 object PutBucketLifecycleConfigurationInput {
   
-  @scala.inline
-  def apply(Bucket: String): PutBucketLifecycleConfigurationInput = {
+  inline def apply(Bucket: String): PutBucketLifecycleConfigurationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLifecycleConfigurationInput]
   }

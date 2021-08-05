@@ -126,6 +126,5 @@ object MatrixDropdownColumn {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getColumnTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnTypes")().asInstanceOf[js.Array[String]]
+  inline def getColumnTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnTypes")().asInstanceOf[js.Array[String]]
 }

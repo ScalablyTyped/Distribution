@@ -19,8 +19,7 @@ trait RowLegacy extends StObject {
 }
 object RowLegacy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _aData: js.Any,
     _aSortData: js.Array[js.Any],
     _anHidden: js.Array[Node],
@@ -31,28 +30,20 @@ object RowLegacy {
     __obj.asInstanceOf[RowLegacy]
   }
   
-  @scala.inline
-  implicit class RowLegacyMutableBuilder[Self <: RowLegacy] (val x: Self) extends AnyVal {
+  extension [Self <: RowLegacy](x: Self) {
     
-    @scala.inline
-    def setNTr(value: Node): Self = StObject.set(x, "nTr", value.asInstanceOf[js.Any])
+    inline def setNTr(value: Node): Self = StObject.set(x, "nTr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_aData(value: js.Any): Self = StObject.set(x, "_aData", value.asInstanceOf[js.Any])
+    inline def set_aData(value: js.Any): Self = StObject.set(x, "_aData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_aSortData(value: js.Array[js.Any]): Self = StObject.set(x, "_aSortData", value.asInstanceOf[js.Any])
+    inline def set_aSortData(value: js.Array[js.Any]): Self = StObject.set(x, "_aSortData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_aSortDataVarargs(value: js.Any*): Self = StObject.set(x, "_aSortData", js.Array(value :_*))
+    inline def set_aSortDataVarargs(value: js.Any*): Self = StObject.set(x, "_aSortData", js.Array(value :_*))
     
-    @scala.inline
-    def set_anHidden(value: js.Array[Node]): Self = StObject.set(x, "_anHidden", value.asInstanceOf[js.Any])
+    inline def set_anHidden(value: js.Array[Node]): Self = StObject.set(x, "_anHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_anHiddenVarargs(value: Node*): Self = StObject.set(x, "_anHidden", js.Array(value :_*))
+    inline def set_anHiddenVarargs(value: Node*): Self = StObject.set(x, "_anHidden", js.Array(value :_*))
     
-    @scala.inline
-    def set_sRowStripe(value: String): Self = StObject.set(x, "_sRowStripe", value.asInstanceOf[js.Any])
+    inline def set_sRowStripe(value: String): Self = StObject.set(x, "_sRowStripe", value.asInstanceOf[js.Any])
   }
 }

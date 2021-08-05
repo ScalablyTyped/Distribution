@@ -10,19 +10,15 @@ trait ArtyomFlags extends StObject {
 }
 object ArtyomFlags {
   
-  @scala.inline
-  def apply(): ArtyomFlags = {
+  inline def apply(): ArtyomFlags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArtyomFlags]
   }
   
-  @scala.inline
-  implicit class ArtyomFlagsMutableBuilder[Self <: ArtyomFlags] (val x: Self) extends AnyVal {
+  extension [Self <: ArtyomFlags](x: Self) {
     
-    @scala.inline
-    def setRestartRecognition(value: Boolean): Self = StObject.set(x, "restartRecognition", value.asInstanceOf[js.Any])
+    inline def setRestartRecognition(value: Boolean): Self = StObject.set(x, "restartRecognition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartRecognitionUndefined: Self = StObject.set(x, "restartRecognition", js.undefined)
+    inline def setRestartRecognitionUndefined: Self = StObject.set(x, "restartRecognition", js.undefined)
   }
 }

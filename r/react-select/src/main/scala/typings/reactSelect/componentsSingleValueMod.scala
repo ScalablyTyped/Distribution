@@ -23,8 +23,7 @@ object componentsSingleValueMod {
   @js.native
   val SingleValue: ComponentType[SingleValueProps[js.Any]] = js.native
   
-  @scala.inline
-  def css(props: SingleValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def css(props: SingleValueProps[js.Any]): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
   @js.native
   trait SingleValueProps[OptionType /* <: OptionTypeBase */]
@@ -40,17 +39,14 @@ object componentsSingleValueMod {
   }
   object State {
     
-    @scala.inline
-    def apply(isDisabled: Boolean): State = {
+    inline def apply(isDisabled: Boolean): State = {
       val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,26 +63,20 @@ object componentsSingleValueMod {
   }
   object ValueProps {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](data: OptionType, innerProps: js.Any): ValueProps[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](data: OptionType, innerProps: js.Any): ValueProps[OptionType] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], innerProps = innerProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueProps[OptionType]]
     }
     
-    @scala.inline
-    implicit class ValuePropsMutableBuilder[Self <: ValueProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & ValueProps[OptionType]) extends AnyVal {
+    extension [Self <: ValueProps[?], OptionType /* <: OptionTypeBase */](x: Self & ValueProps[OptionType]) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setData(value: OptionType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: OptionType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerProps(value: js.Any): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
+      inline def setInnerProps(value: js.Any): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
     }
   }
 }

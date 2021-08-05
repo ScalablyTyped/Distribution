@@ -31,8 +31,7 @@ trait RawSignatureAsync extends StObject {
 }
 object RawSignatureAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SignHash: (// tslint:disable-line ban-types
   js.Promise[
       Unpacked[
@@ -54,11 +53,9 @@ object RawSignatureAsync {
     __obj.asInstanceOf[RawSignatureAsync]
   }
   
-  @scala.inline
-  implicit class RawSignatureAsyncMutableBuilder[Self <: RawSignatureAsync] (val x: Self) extends AnyVal {
+  extension [Self <: RawSignatureAsync](x: Self) {
     
-    @scala.inline
-    def setSignHash(
+    inline def setSignHash(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[
@@ -69,18 +66,15 @@ object RawSignatureAsync {
         ])
     ): Self = StObject.set(x, "SignHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignHashFunction1(
+    inline def setSignHashFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SignHash", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSignHashFunction2(value: (/* hash */ CPHashedData, /* certificate */ js.UndefOr[String]) => String): Self = StObject.set(x, "SignHash", js.Any.fromFunction2(value))
+    inline def setSignHashFunction2(value: (/* hash */ CPHashedData, /* certificate */ js.UndefOr[String]) => String): Self = StObject.set(x, "SignHash", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVerifyHash(
+    inline def setVerifyHash(
       value: (// tslint:disable-line ban-types
     js.Promise[
           Unpacked[
@@ -91,14 +85,12 @@ object RawSignatureAsync {
         ])
     ): Self = StObject.set(x, "VerifyHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyHashFunction1(
+    inline def setVerifyHashFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerifyHashFunction3(value: (/* hash */ CPHashedData, /* certificate */ Certificate, /* signature */ String) => Unit): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction3(value))
+    inline def setVerifyHashFunction3(value: (/* hash */ CPHashedData, /* certificate */ Certificate, /* signature */ String) => Unit): Self = StObject.set(x, "VerifyHash", js.Any.fromFunction3(value))
   }
 }

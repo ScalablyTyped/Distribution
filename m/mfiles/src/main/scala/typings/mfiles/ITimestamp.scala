@@ -32,8 +32,7 @@ trait ITimestamp extends StObject {
 }
 object ITimestamp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => ITimestamp,
     Day: Double,
     Fraction: Double,
@@ -51,43 +50,30 @@ object ITimestamp {
     __obj.asInstanceOf[ITimestamp]
   }
   
-  @scala.inline
-  implicit class ITimestampMutableBuilder[Self <: ITimestamp] (val x: Self) extends AnyVal {
+  extension [Self <: ITimestamp](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ITimestamp): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ITimestamp): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFraction(value: Double): Self = StObject.set(x, "Fraction", value.asInstanceOf[js.Any])
+    inline def setFraction(value: Double): Self = StObject.set(x, "Fraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "Hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "Hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalTimeToUtc(value: () => ITimestamp): Self = StObject.set(x, "LocalTimeToUtc", js.Any.fromFunction0(value))
+    inline def setLocalTimeToUtc(value: () => ITimestamp): Self = StObject.set(x, "LocalTimeToUtc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinute(value: Double): Self = StObject.set(x, "Minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: Double): Self = StObject.set(x, "Minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: Double): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Double): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUtcToLocalTime(value: () => ITimestamp): Self = StObject.set(x, "UtcToLocalTime", js.Any.fromFunction0(value))
+    inline def setUtcToLocalTime(value: () => ITimestamp): Self = StObject.set(x, "UtcToLocalTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "Year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "Year", value.asInstanceOf[js.Any])
   }
 }

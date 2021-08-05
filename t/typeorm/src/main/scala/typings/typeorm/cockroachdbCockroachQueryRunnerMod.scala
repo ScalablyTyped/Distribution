@@ -60,10 +60,10 @@ object cockroachdbCockroachQueryRunnerMod {
       * Builds sequence name from given table and column.
       */
     /* protected */ def buildSequenceName(table: Table, columnOrName: TableColumn): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(table: Table, columnOrName: String, disableEscape: `true`): String = js.native
-    @JSName("buildSequenceName")
-    /* protected */ def buildSequenceName_true(table: Table, columnOrName: TableColumn, disableEscape: `true`): String = js.native
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(table: Table, columnOrName: String, disableEscape: `true`): String = js.native
+    /* protected */ @JSName("buildSequenceName")
+    def buildSequenceName_true(table: Table, columnOrName: TableColumn, disableEscape: `true`): String = js.native
     
     def changeColumn(tableOrName: String, oldTableColumnOrName: String, newColumn: TableColumn): js.Promise[Unit] = js.native
     def changeColumn(tableOrName: String, oldTableColumnOrName: TableColumn, newColumn: TableColumn): js.Promise[Unit] = js.native
@@ -266,7 +266,7 @@ object cockroachdbCockroachQueryRunnerMod {
     /**
       * Promise used to obtain a database connection for a first time.
       */
-    var databaseConnectionPromise: js.Promise[js.Any] = js.native
+    /* protected */ var databaseConnectionPromise: js.Promise[js.Any] = js.native
     
     /* protected */ def deleteViewDefinitionSql(viewOrPath: String): js.Promise[Query] = js.native
     /**
@@ -573,7 +573,7 @@ object cockroachdbCockroachQueryRunnerMod {
     /**
       * Stores all executed queries to be able to run them again if transaction fails.
       */
-    var queries: js.Array[Parameters] = js.native
+    /* protected */ var queries: js.Array[Parameters] = js.native
     
     def query(query: String, parameters: js.Array[js.Any], options: js.Object): js.Promise[js.Any] = js.native
     def query(query: String, parameters: Unit, options: js.Object): js.Promise[js.Any] = js.native
@@ -591,7 +591,7 @@ object cockroachdbCockroachQueryRunnerMod {
     /**
       * Special callback provided by a driver used to release a created connection.
       */
-    var releaseCallback: js.Function = js.native
+    /* protected */ var releaseCallback: js.Function = js.native
     
     def renameColumn(tableOrName: String, oldTableColumnOrName: String, newTableColumnOrName: String): js.Promise[Unit] = js.native
     def renameColumn(tableOrName: String, oldTableColumnOrName: String, newTableColumnOrName: TableColumn): js.Promise[Unit] = js.native
@@ -632,7 +632,7 @@ object cockroachdbCockroachQueryRunnerMod {
     /**
       * Indicates if running queries must be stored
       */
-    var storeQueries: Boolean = js.native
+    /* protected */ var storeQueries: Boolean = js.native
     
     /**
       * Returns raw data stream.

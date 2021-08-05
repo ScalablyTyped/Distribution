@@ -12,25 +12,19 @@ trait TimepickerIconOptions extends StObject {
 }
 object TimepickerIconOptions {
   
-  @scala.inline
-  def apply(): TimepickerIconOptions = {
+  inline def apply(): TimepickerIconOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimepickerIconOptions]
   }
   
-  @scala.inline
-  implicit class TimepickerIconOptionsMutableBuilder[Self <: TimepickerIconOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimepickerIconOptions](x: Self) {
     
-    @scala.inline
-    def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+    inline def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+    inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
-    @scala.inline
-    def setUp(value: String): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: String): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+    inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
   }
 }

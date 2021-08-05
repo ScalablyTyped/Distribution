@@ -11,10 +11,8 @@ object getPatchBaselineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPatchBaseline(args: GetPatchBaselineArgs): js.Promise[GetPatchBaselineResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPatchBaseline")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPatchBaselineResult]]
-  @scala.inline
-  def getPatchBaseline(args: GetPatchBaselineArgs, opts: InvokeOptions): js.Promise[GetPatchBaselineResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPatchBaseline")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPatchBaselineResult]]
+  inline def getPatchBaseline(args: GetPatchBaselineArgs): js.Promise[GetPatchBaselineResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPatchBaseline")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPatchBaselineResult]]
+  inline def getPatchBaseline(args: GetPatchBaselineArgs, opts: InvokeOptions): js.Promise[GetPatchBaselineResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPatchBaseline")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPatchBaselineResult]]
   
   trait GetPatchBaselineArgs extends StObject {
     
@@ -40,35 +38,26 @@ object getPatchBaselineMod {
   }
   object GetPatchBaselineArgs {
     
-    @scala.inline
-    def apply(owner: String): GetPatchBaselineArgs = {
+    inline def apply(owner: String): GetPatchBaselineArgs = {
       val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPatchBaselineArgs]
     }
     
-    @scala.inline
-    implicit class GetPatchBaselineArgsMutableBuilder[Self <: GetPatchBaselineArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetPatchBaselineArgs](x: Self) {
       
-      @scala.inline
-      def setDefaultBaseline(value: Boolean): Self = StObject.set(x, "defaultBaseline", value.asInstanceOf[js.Any])
+      inline def setDefaultBaseline(value: Boolean): Self = StObject.set(x, "defaultBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultBaselineUndefined: Self = StObject.set(x, "defaultBaseline", js.undefined)
+      inline def setDefaultBaselineUndefined: Self = StObject.set(x, "defaultBaseline", js.undefined)
       
-      @scala.inline
-      def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+      inline def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+      inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,44 +88,32 @@ object getPatchBaselineMod {
   }
   object GetPatchBaselineResult {
     
-    @scala.inline
-    def apply(description: String, id: String, name: String, owner: String): GetPatchBaselineResult = {
+    inline def apply(description: String, id: String, name: String, owner: String): GetPatchBaselineResult = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPatchBaselineResult]
     }
     
-    @scala.inline
-    implicit class GetPatchBaselineResultMutableBuilder[Self <: GetPatchBaselineResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPatchBaselineResult](x: Self) {
       
-      @scala.inline
-      def setDefaultBaseline(value: Boolean): Self = StObject.set(x, "defaultBaseline", value.asInstanceOf[js.Any])
+      inline def setDefaultBaseline(value: Boolean): Self = StObject.set(x, "defaultBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultBaselineUndefined: Self = StObject.set(x, "defaultBaseline", js.undefined)
+      inline def setDefaultBaselineUndefined: Self = StObject.set(x, "defaultBaseline", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: String): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+      inline def setOperatingSystem(value: String): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+      inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     }
   }
 }

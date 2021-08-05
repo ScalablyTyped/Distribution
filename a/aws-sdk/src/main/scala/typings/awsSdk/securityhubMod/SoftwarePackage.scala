@@ -33,43 +33,31 @@ trait SoftwarePackage extends StObject {
 }
 object SoftwarePackage {
   
-  @scala.inline
-  def apply(): SoftwarePackage = {
+  inline def apply(): SoftwarePackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SoftwarePackage]
   }
   
-  @scala.inline
-  implicit class SoftwarePackageMutableBuilder[Self <: SoftwarePackage] (val x: Self) extends AnyVal {
+  extension [Self <: SoftwarePackage](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: NonEmptyString): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: NonEmptyString): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
+    inline def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
     
-    @scala.inline
-    def setEpoch(value: NonEmptyString): Self = StObject.set(x, "Epoch", value.asInstanceOf[js.Any])
+    inline def setEpoch(value: NonEmptyString): Self = StObject.set(x, "Epoch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpochUndefined: Self = StObject.set(x, "Epoch", js.undefined)
+    inline def setEpochUndefined: Self = StObject.set(x, "Epoch", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRelease(value: NonEmptyString): Self = StObject.set(x, "Release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: NonEmptyString): Self = StObject.set(x, "Release", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseUndefined: Self = StObject.set(x, "Release", js.undefined)
+    inline def setReleaseUndefined: Self = StObject.set(x, "Release", js.undefined)
     
-    @scala.inline
-    def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

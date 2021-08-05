@@ -18,34 +18,25 @@ trait BaseEncodingOptionsmodeMo extends StObject {
 }
 object BaseEncodingOptionsmodeMo {
   
-  @scala.inline
-  def apply(): BaseEncodingOptionsmodeMo = {
+  inline def apply(): BaseEncodingOptionsmodeMo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseEncodingOptionsmodeMo]
   }
   
-  @scala.inline
-  implicit class BaseEncodingOptionsmodeMoMutableBuilder[Self <: BaseEncodingOptionsmodeMo] (val x: Self) extends AnyVal {
+  extension [Self <: BaseEncodingOptionsmodeMo](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingNull: Self = StObject.set(x, "encoding", null)
+    inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFlag(value: OpenMode): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: OpenMode): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
     
-    @scala.inline
-    def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

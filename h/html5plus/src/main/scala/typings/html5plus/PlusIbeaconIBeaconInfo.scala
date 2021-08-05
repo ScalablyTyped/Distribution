@@ -55,49 +55,35 @@ trait PlusIbeaconIBeaconInfo extends StObject {
 }
 object PlusIbeaconIBeaconInfo {
   
-  @scala.inline
-  def apply(): PlusIbeaconIBeaconInfo = {
+  inline def apply(): PlusIbeaconIBeaconInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusIbeaconIBeaconInfo]
   }
   
-  @scala.inline
-  implicit class PlusIbeaconIBeaconInfoMutableBuilder[Self <: PlusIbeaconIBeaconInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlusIbeaconIBeaconInfo](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
-    @scala.inline
-    def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+    inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
-    @scala.inline
-    def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+    inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
     
-    @scala.inline
-    def setProximity(value: Double): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+    inline def setProximity(value: Double): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
+    inline def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
     
-    @scala.inline
-    def setRssi(value: String): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
+    inline def setRssi(value: String): Self = StObject.set(x, "rssi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRssiUndefined: Self = StObject.set(x, "rssi", js.undefined)
+    inline def setRssiUndefined: Self = StObject.set(x, "rssi", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

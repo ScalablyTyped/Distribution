@@ -89,80 +89,56 @@ object JQueryTipsy {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDelayIn(value: Double): Self = StObject.set(x, "delayIn", value.asInstanceOf[js.Any])
+      inline def setDelayIn(value: Double): Self = StObject.set(x, "delayIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayInUndefined: Self = StObject.set(x, "delayIn", js.undefined)
+      inline def setDelayInUndefined: Self = StObject.set(x, "delayIn", js.undefined)
       
-      @scala.inline
-      def setDelayOut(value: Double): Self = StObject.set(x, "delayOut", value.asInstanceOf[js.Any])
+      inline def setDelayOut(value: Double): Self = StObject.set(x, "delayOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayOutUndefined: Self = StObject.set(x, "delayOut", js.undefined)
+      inline def setDelayOutUndefined: Self = StObject.set(x, "delayOut", js.undefined)
       
-      @scala.inline
-      def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+      inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
+      inline def setFadeUndefined: Self = StObject.set(x, "fade", js.undefined)
       
-      @scala.inline
-      def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setGravity(value: js.Any): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: js.Any): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+      inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
+      inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
+      inline def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     }
   }
   

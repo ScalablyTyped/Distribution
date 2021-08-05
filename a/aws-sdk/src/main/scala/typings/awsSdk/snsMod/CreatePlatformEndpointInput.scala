@@ -28,31 +28,23 @@ trait CreatePlatformEndpointInput extends StObject {
 }
 object CreatePlatformEndpointInput {
   
-  @scala.inline
-  def apply(PlatformApplicationArn: String, Token: String): CreatePlatformEndpointInput = {
+  inline def apply(PlatformApplicationArn: String, Token: String): CreatePlatformEndpointInput = {
     val __obj = js.Dynamic.literal(PlatformApplicationArn = PlatformApplicationArn.asInstanceOf[js.Any], Token = Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlatformEndpointInput]
   }
   
-  @scala.inline
-  implicit class CreatePlatformEndpointInputMutableBuilder[Self <: CreatePlatformEndpointInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlatformEndpointInput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setCustomUserData(value: String): Self = StObject.set(x, "CustomUserData", value.asInstanceOf[js.Any])
+    inline def setCustomUserData(value: String): Self = StObject.set(x, "CustomUserData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUserDataUndefined: Self = StObject.set(x, "CustomUserData", js.undefined)
+    inline def setCustomUserDataUndefined: Self = StObject.set(x, "CustomUserData", js.undefined)
     
-    @scala.inline
-    def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
+    inline def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
   }
 }

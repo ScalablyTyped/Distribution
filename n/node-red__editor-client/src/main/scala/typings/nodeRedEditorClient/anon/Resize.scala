@@ -19,34 +19,25 @@ trait Resize extends StObject {
 }
 object Resize {
   
-  @scala.inline
-  def apply(id: String): Resize = {
+  inline def apply(id: String): Resize = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resize]
   }
   
-  @scala.inline
-  implicit class ResizeMutableBuilder[Self <: Resize] (val x: Self) extends AnyVal {
+  extension [Self <: Resize](x: Self) {
     
-    @scala.inline
-    def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDir(value: vertical): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: vertical): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResize(value: (/* size1 */ Double, /* size2 */ Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+    inline def setResize(value: (/* size1 */ Double, /* size2 */ Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
   }
 }

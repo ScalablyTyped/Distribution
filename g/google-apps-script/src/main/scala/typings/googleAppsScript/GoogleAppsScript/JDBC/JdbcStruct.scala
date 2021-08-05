@@ -16,19 +16,15 @@ trait JdbcStruct extends StObject {
 }
 object JdbcStruct {
   
-  @scala.inline
-  def apply(getAttributes: () => js.Array[js.Any], getSQLTypeName: () => String): JdbcStruct = {
+  inline def apply(getAttributes: () => js.Array[js.Any], getSQLTypeName: () => String): JdbcStruct = {
     val __obj = js.Dynamic.literal(getAttributes = js.Any.fromFunction0(getAttributes), getSQLTypeName = js.Any.fromFunction0(getSQLTypeName))
     __obj.asInstanceOf[JdbcStruct]
   }
   
-  @scala.inline
-  implicit class JdbcStructMutableBuilder[Self <: JdbcStruct] (val x: Self) extends AnyVal {
+  extension [Self <: JdbcStruct](x: Self) {
     
-    @scala.inline
-    def setGetAttributes(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+    inline def setGetAttributes(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
+    inline def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
   }
 }

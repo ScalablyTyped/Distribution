@@ -10,8 +10,7 @@ trait DocumentOnTypeFormattingRegistrationOptions
      with DocumentOnTypeFormattingOptions
 object DocumentOnTypeFormattingRegistrationOptions {
   
-  @scala.inline
-  def apply(firstTriggerCharacter: String): DocumentOnTypeFormattingRegistrationOptions = {
+  inline def apply(firstTriggerCharacter: String): DocumentOnTypeFormattingRegistrationOptions = {
     val __obj = js.Dynamic.literal(firstTriggerCharacter = firstTriggerCharacter.asInstanceOf[js.Any], documentSelector = null)
     __obj.asInstanceOf[DocumentOnTypeFormattingRegistrationOptions]
   }

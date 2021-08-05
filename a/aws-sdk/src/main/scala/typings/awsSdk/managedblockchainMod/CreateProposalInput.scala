@@ -33,8 +33,7 @@ trait CreateProposalInput extends StObject {
 }
 object CreateProposalInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Actions: ProposalActions,
     ClientRequestToken: ClientRequestTokenString,
     MemberId: ResourceIdString,
@@ -44,25 +43,18 @@ object CreateProposalInput {
     __obj.asInstanceOf[CreateProposalInput]
   }
   
-  @scala.inline
-  implicit class CreateProposalInputMutableBuilder[Self <: CreateProposalInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProposalInput](x: Self) {
     
-    @scala.inline
-    def setActions(value: ProposalActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ProposalActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
   }
 }

@@ -26,31 +26,23 @@ trait DobInformationInput extends StObject {
 }
 object DobInformationInput {
   
-  @scala.inline
-  def apply(): DobInformationInput = {
+  inline def apply(): DobInformationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DobInformationInput]
   }
   
-  @scala.inline
-  implicit class DobInformationInputMutableBuilder[Self <: DobInformationInput] (val x: Self) extends AnyVal {
+  extension [Self <: DobInformationInput](x: Self) {
     
-    @scala.inline
-    def setDateOfBirth(value: String): Self = StObject.set(x, "dateOfBirth", value.asInstanceOf[js.Any])
+    inline def setDateOfBirth(value: String): Self = StObject.set(x, "dateOfBirth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateOfBirthUndefined: Self = StObject.set(x, "dateOfBirth", js.undefined)
+    inline def setDateOfBirthUndefined: Self = StObject.set(x, "dateOfBirth", js.undefined)
     
-    @scala.inline
-    def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
+    inline def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
+    inline def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
     
-    @scala.inline
-    def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
+    inline def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
+    inline def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
   }
 }

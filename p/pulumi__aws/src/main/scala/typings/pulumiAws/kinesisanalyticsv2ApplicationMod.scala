@@ -103,21 +103,16 @@ object kinesisanalyticsv2ApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesisanalyticsv2/application.Application */ Boolean]
   }
   
   trait ApplicationArgs extends StObject {
@@ -167,58 +162,44 @@ object kinesisanalyticsv2ApplicationMod {
   }
   object ApplicationArgs {
     
-    @scala.inline
-    def apply(runtimeEnvironment: Input[String], serviceExecutionRole: Input[String]): ApplicationArgs = {
+    inline def apply(runtimeEnvironment: Input[String], serviceExecutionRole: Input[String]): ApplicationArgs = {
       val __obj = js.Dynamic.literal(runtimeEnvironment = runtimeEnvironment.asInstanceOf[js.Any], serviceExecutionRole = serviceExecutionRole.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationArgs]
     }
     
-    @scala.inline
-    implicit class ApplicationArgsMutableBuilder[Self <: ApplicationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationArgs](x: Self) {
       
-      @scala.inline
-      def setApplicationConfiguration(
+      inline def setApplicationConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationApplicationConfiguration
             ]
       ): Self = StObject.set(x, "applicationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationConfigurationUndefined: Self = StObject.set(x, "applicationConfiguration", js.undefined)
+      inline def setApplicationConfigurationUndefined: Self = StObject.set(x, "applicationConfiguration", js.undefined)
       
-      @scala.inline
-      def setCloudwatchLoggingOptions(
+      inline def setCloudwatchLoggingOptions(
         value: Input[
               typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationCloudwatchLoggingOptions
             ]
       ): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
+      inline def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRuntimeEnvironment(value: Input[String]): Self = StObject.set(x, "runtimeEnvironment", value.asInstanceOf[js.Any])
+      inline def setRuntimeEnvironment(value: Input[String]): Self = StObject.set(x, "runtimeEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceExecutionRole(value: Input[String]): Self = StObject.set(x, "serviceExecutionRole", value.asInstanceOf[js.Any])
+      inline def setServiceExecutionRole(value: Input[String]): Self = StObject.set(x, "serviceExecutionRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -294,94 +275,68 @@ object kinesisanalyticsv2ApplicationMod {
   }
   object ApplicationState {
     
-    @scala.inline
-    def apply(): ApplicationState = {
+    inline def apply(): ApplicationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApplicationState]
     }
     
-    @scala.inline
-    implicit class ApplicationStateMutableBuilder[Self <: ApplicationState] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationState](x: Self) {
       
-      @scala.inline
-      def setApplicationConfiguration(
+      inline def setApplicationConfiguration(
         value: Input[
               typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationApplicationConfiguration
             ]
       ): Self = StObject.set(x, "applicationConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationConfigurationUndefined: Self = StObject.set(x, "applicationConfiguration", js.undefined)
+      inline def setApplicationConfigurationUndefined: Self = StObject.set(x, "applicationConfiguration", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCloudwatchLoggingOptions(
+      inline def setCloudwatchLoggingOptions(
         value: Input[
               typings.pulumiAws.inputMod.kinesisanalyticsv2.ApplicationCloudwatchLoggingOptions
             ]
       ): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
+      inline def setCloudwatchLoggingOptionsUndefined: Self = StObject.set(x, "cloudwatchLoggingOptions", js.undefined)
       
-      @scala.inline
-      def setCreateTimestamp(value: Input[String]): Self = StObject.set(x, "createTimestamp", value.asInstanceOf[js.Any])
+      inline def setCreateTimestamp(value: Input[String]): Self = StObject.set(x, "createTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateTimestampUndefined: Self = StObject.set(x, "createTimestamp", js.undefined)
+      inline def setCreateTimestampUndefined: Self = StObject.set(x, "createTimestamp", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLastUpdateTimestamp(value: Input[String]): Self = StObject.set(x, "lastUpdateTimestamp", value.asInstanceOf[js.Any])
+      inline def setLastUpdateTimestamp(value: Input[String]): Self = StObject.set(x, "lastUpdateTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdateTimestampUndefined: Self = StObject.set(x, "lastUpdateTimestamp", js.undefined)
+      inline def setLastUpdateTimestampUndefined: Self = StObject.set(x, "lastUpdateTimestamp", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRuntimeEnvironment(value: Input[String]): Self = StObject.set(x, "runtimeEnvironment", value.asInstanceOf[js.Any])
+      inline def setRuntimeEnvironment(value: Input[String]): Self = StObject.set(x, "runtimeEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeEnvironmentUndefined: Self = StObject.set(x, "runtimeEnvironment", js.undefined)
+      inline def setRuntimeEnvironmentUndefined: Self = StObject.set(x, "runtimeEnvironment", js.undefined)
       
-      @scala.inline
-      def setServiceExecutionRole(value: Input[String]): Self = StObject.set(x, "serviceExecutionRole", value.asInstanceOf[js.Any])
+      inline def setServiceExecutionRole(value: Input[String]): Self = StObject.set(x, "serviceExecutionRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceExecutionRoleUndefined: Self = StObject.set(x, "serviceExecutionRole", js.undefined)
+      inline def setServiceExecutionRoleUndefined: Self = StObject.set(x, "serviceExecutionRole", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersionId(value: Input[Double]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: Input[Double]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
     }
   }
 }

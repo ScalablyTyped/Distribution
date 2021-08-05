@@ -64,8 +64,7 @@ trait CopyPackageVersionsRequest extends StObject {
 }
 object CopyPackageVersionsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _package: PackageName,
     destinationRepository: RepositoryName,
     domain: DomainName,
@@ -77,61 +76,42 @@ object CopyPackageVersionsRequest {
     __obj.asInstanceOf[CopyPackageVersionsRequest]
   }
   
-  @scala.inline
-  implicit class CopyPackageVersionsRequestMutableBuilder[Self <: CopyPackageVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopyPackageVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setAllowOverwrite(value: BooleanOptional): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
+    inline def setAllowOverwrite(value: BooleanOptional): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
+    inline def setAllowOverwriteUndefined: Self = StObject.set(x, "allowOverwrite", js.undefined)
     
-    @scala.inline
-    def setDestinationRepository(value: RepositoryName): Self = StObject.set(x, "destinationRepository", value.asInstanceOf[js.Any])
+    inline def setDestinationRepository(value: RepositoryName): Self = StObject.set(x, "destinationRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+    inline def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+    inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
-    @scala.inline
-    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFromUpstream(value: BooleanOptional): Self = StObject.set(x, "includeFromUpstream", value.asInstanceOf[js.Any])
+    inline def setIncludeFromUpstream(value: BooleanOptional): Self = StObject.set(x, "includeFromUpstream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFromUpstreamUndefined: Self = StObject.set(x, "includeFromUpstream", js.undefined)
+    inline def setIncludeFromUpstreamUndefined: Self = StObject.set(x, "includeFromUpstream", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setSourceRepository(value: RepositoryName): Self = StObject.set(x, "sourceRepository", value.asInstanceOf[js.Any])
+    inline def setSourceRepository(value: RepositoryName): Self = StObject.set(x, "sourceRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionRevisions(value: PackageVersionRevisionMap): Self = StObject.set(x, "versionRevisions", value.asInstanceOf[js.Any])
+    inline def setVersionRevisions(value: PackageVersionRevisionMap): Self = StObject.set(x, "versionRevisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionRevisionsUndefined: Self = StObject.set(x, "versionRevisions", js.undefined)
+    inline def setVersionRevisionsUndefined: Self = StObject.set(x, "versionRevisions", js.undefined)
     
-    @scala.inline
-    def setVersions(value: PackageVersionList): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: PackageVersionList): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: PackageVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: PackageVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
     
-    @scala.inline
-    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

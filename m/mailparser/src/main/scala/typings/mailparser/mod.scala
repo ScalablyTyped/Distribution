@@ -40,14 +40,10 @@ object mod {
     def on_readable(event: readable, callback: js.Function1[/* data */ AttachmentStream | MessageText, Unit]): this.type = js.native
   }
   
-  @scala.inline
-  def simpleParser(source: Source): js.Promise[ParsedMail] = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedMail]]
-  @scala.inline
-  def simpleParser(source: Source, callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def simpleParser(source: Source, options: SimpleParserOptions): js.Promise[ParsedMail] = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParsedMail]]
-  @scala.inline
-  def simpleParser(
+  inline def simpleParser(source: Source): js.Promise[ParsedMail] = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedMail]]
+  inline def simpleParser(source: Source, callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def simpleParser(source: Source, options: SimpleParserOptions): js.Promise[ParsedMail] = (^.asInstanceOf[js.Dynamic].applyDynamic("simpleParser")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParsedMail]]
+  inline def simpleParser(
     source: Source,
     options: SimpleParserOptions,
     callback: js.Function2[/* err */ js.Any, /* mail */ ParsedMail, Unit]
@@ -74,26 +70,20 @@ object mod {
   }
   object AddressObject {
     
-    @scala.inline
-    def apply(html: String, text: String, value: js.Array[EmailAddress]): AddressObject = {
+    inline def apply(html: String, text: String, value: js.Array[EmailAddress]): AddressObject = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddressObject]
     }
     
-    @scala.inline
-    implicit class AddressObjectMutableBuilder[Self <: AddressObject] (val x: Self) extends AnyVal {
+    extension [Self <: AddressObject](x: Self) {
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Array[EmailAddress]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[EmailAddress]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: EmailAddress*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: EmailAddress*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -116,8 +106,7 @@ object mod {
   }
   object Attachment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checksum: String,
       content: Buffer,
       contentDisposition: String,
@@ -132,14 +121,11 @@ object mod {
       __obj.asInstanceOf[Attachment]
     }
     
-    @scala.inline
-    implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+    extension [Self <: Attachment](x: Self) {
       
-      @scala.inline
-      def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelated(value: Boolean): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+      inline def setRelated(value: Boolean): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,8 +196,7 @@ object mod {
   }
   object AttachmentCommon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checksum: String,
       content: js.Any,
       contentDisposition: String,
@@ -225,59 +210,41 @@ object mod {
       __obj.asInstanceOf[AttachmentCommon]
     }
     
-    @scala.inline
-    implicit class AttachmentCommonMutableBuilder[Self <: AttachmentCommon] (val x: Self) extends AnyVal {
+    extension [Self <: AttachmentCommon](x: Self) {
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+      inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      @scala.inline
-      def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+      inline def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+      inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
+      inline def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setHeaderLines(value: HeaderLines): Self = StObject.set(x, "headerLines", value.asInstanceOf[js.Any])
+      inline def setHeaderLines(value: HeaderLines): Self = StObject.set(x, "headerLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value :_*))
+      inline def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelated(value: Boolean): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+      inline def setRelated(value: Boolean): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
+      inline def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: attachment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: attachment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,8 +265,7 @@ object mod {
   }
   object AttachmentStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checksum: String,
       content: Stream,
       contentDisposition: String,
@@ -314,14 +280,11 @@ object mod {
       __obj.asInstanceOf[AttachmentStream]
     }
     
-    @scala.inline
-    implicit class AttachmentStreamMutableBuilder[Self <: AttachmentStream] (val x: Self) extends AnyVal {
+    extension [Self <: AttachmentStream](x: Self) {
       
-      @scala.inline
-      def setContent(value: Stream): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Stream): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     }
   }
   
@@ -344,32 +307,24 @@ object mod {
   }
   object EmailAddress {
     
-    @scala.inline
-    def apply(name: String): EmailAddress = {
+    inline def apply(name: String): EmailAddress = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailAddress]
     }
     
-    @scala.inline
-    implicit class EmailAddressMutableBuilder[Self <: EmailAddress] (val x: Self) extends AnyVal {
+    extension [Self <: EmailAddress](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setGroup(value: js.Array[EmailAddress]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: js.Array[EmailAddress]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setGroupVarargs(value: EmailAddress*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: EmailAddress*): Self = StObject.set(x, "group", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -416,36 +371,27 @@ object mod {
   }
   object MessageText {
     
-    @scala.inline
-    def apply(): MessageText = {
+    inline def apply(): MessageText = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[MessageText]
     }
     
-    @scala.inline
-    implicit class MessageTextMutableBuilder[Self <: MessageText] (val x: Self) extends AnyVal {
+    extension [Self <: MessageText](x: Self) {
       
-      @scala.inline
-      def setHtml(value: String | Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String | Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAsHtml(value: String): Self = StObject.set(x, "textAsHtml", value.asInstanceOf[js.Any])
+      inline def setTextAsHtml(value: String): Self = StObject.set(x, "textAsHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAsHtmlUndefined: Self = StObject.set(x, "textAsHtml", js.undefined)
+      inline def setTextAsHtmlUndefined: Self = StObject.set(x, "textAsHtml", js.undefined)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -550,8 +496,7 @@ object mod {
   }
   object ParsedMail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachments: js.Array[Attachment],
       headerLines: HeaderLines,
       headers: Headers,
@@ -561,107 +506,73 @@ object mod {
       __obj.asInstanceOf[ParsedMail]
     }
     
-    @scala.inline
-    implicit class ParsedMailMutableBuilder[Self <: ParsedMail] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedMail](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setBcc(value: AddressObject): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: AddressObject): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
+      inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      @scala.inline
-      def setCc(value: AddressObject): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+      inline def setCc(value: AddressObject): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
+      inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setFrom(value: AddressObject): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: AddressObject): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setHeaderLines(value: HeaderLines): Self = StObject.set(x, "headerLines", value.asInstanceOf[js.Any])
+      inline def setHeaderLines(value: HeaderLines): Self = StObject.set(x, "headerLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value :_*))
+      inline def setHeaderLinesVarargs(value: Key*): Self = StObject.set(x, "headerLines", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: String | `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String | `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
+      inline def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
+      inline def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+      inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
       
-      @scala.inline
-      def setPriority(value: normal | low | high): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: normal | low | high): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+      inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      @scala.inline
-      def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
       
-      @scala.inline
-      def setReplyTo(value: AddressObject): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
+      inline def setReplyTo(value: AddressObject): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
+      inline def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAsHtml(value: String): Self = StObject.set(x, "textAsHtml", value.asInstanceOf[js.Any])
+      inline def setTextAsHtml(value: String): Self = StObject.set(x, "textAsHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAsHtmlUndefined: Self = StObject.set(x, "textAsHtml", js.undefined)
+      inline def setTextAsHtmlUndefined: Self = StObject.set(x, "textAsHtml", js.undefined)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTo(value: AddressObject): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: AddressObject): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
   
@@ -673,20 +584,16 @@ object mod {
   }
   object SimpleParserOptions {
     
-    @scala.inline
-    def apply(): SimpleParserOptions = {
+    inline def apply(): SimpleParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SimpleParserOptions]
     }
     
-    @scala.inline
-    implicit class SimpleParserOptionsMutableBuilder[Self <: SimpleParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleParserOptions](x: Self) {
       
-      @scala.inline
-      def setKeepCidLinks(value: Boolean): Self = StObject.set(x, "keepCidLinks", value.asInstanceOf[js.Any])
+      inline def setKeepCidLinks(value: Boolean): Self = StObject.set(x, "keepCidLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepCidLinksUndefined: Self = StObject.set(x, "keepCidLinks", js.undefined)
+      inline def setKeepCidLinksUndefined: Self = StObject.set(x, "keepCidLinks", js.undefined)
     }
   }
   
@@ -708,34 +615,28 @@ object mod {
   }
   object StructuredHeader {
     
-    @scala.inline
-    def apply(params: StringDictionary[String], value: String): StructuredHeader = {
+    inline def apply(params: StringDictionary[String], value: String): StructuredHeader = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[StructuredHeader]
     }
     
-    @scala.inline
-    implicit class StructuredHeaderMutableBuilder[Self <: StructuredHeader] (val x: Self) extends AnyVal {
+    extension [Self <: StructuredHeader](x: Self) {
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait _HeaderValue extends StObject
   object _HeaderValue {
     
-    @scala.inline
-    def AddressObject(html: String, text: String, value: js.Array[EmailAddress]): typings.mailparser.mod.AddressObject = {
+    inline def AddressObject(html: String, text: String, value: js.Array[EmailAddress]): typings.mailparser.mod.AddressObject = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mailparser.mod.AddressObject]
     }
     
-    @scala.inline
-    def StructuredHeader(params: StringDictionary[String], value: String): typings.mailparser.mod.StructuredHeader = {
+    inline def StructuredHeader(params: StringDictionary[String], value: String): typings.mailparser.mod.StructuredHeader = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mailparser.mod.StructuredHeader]
     }

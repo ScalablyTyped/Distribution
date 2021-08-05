@@ -14,31 +14,23 @@ trait UrlEncodedBodyParserOptions extends StObject {
 }
 object UrlEncodedBodyParserOptions {
   
-  @scala.inline
-  def apply(): UrlEncodedBodyParserOptions = {
+  inline def apply(): UrlEncodedBodyParserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UrlEncodedBodyParserOptions]
   }
   
-  @scala.inline
-  implicit class UrlEncodedBodyParserOptionsMutableBuilder[Self <: UrlEncodedBodyParserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UrlEncodedBodyParserOptions](x: Self) {
     
-    @scala.inline
-    def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
+    inline def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyReaderUndefined: Self = StObject.set(x, "bodyReader", js.undefined)
+    inline def setBodyReaderUndefined: Self = StObject.set(x, "bodyReader", js.undefined)
     
-    @scala.inline
-    def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
+    inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
+    inline def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
     
-    @scala.inline
-    def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
+    inline def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
+    inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
   }
 }

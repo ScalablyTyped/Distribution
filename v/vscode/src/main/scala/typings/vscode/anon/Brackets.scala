@@ -23,25 +23,19 @@ trait Brackets extends StObject {
 }
 object Brackets {
   
-  @scala.inline
-  def apply(): Brackets = {
+  inline def apply(): Brackets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Brackets]
   }
   
-  @scala.inline
-  implicit class BracketsMutableBuilder[Self <: Brackets] (val x: Self) extends AnyVal {
+  extension [Self <: Brackets](x: Self) {
     
-    @scala.inline
-    def setBrackets(value: js.Any): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
+    inline def setBrackets(value: js.Any): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
+    inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
-    @scala.inline
-    def setDocComment(value: Close): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
+    inline def setDocComment(value: Close): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocCommentUndefined: Self = StObject.set(x, "docComment", js.undefined)
+    inline def setDocCommentUndefined: Self = StObject.set(x, "docComment", js.undefined)
   }
 }

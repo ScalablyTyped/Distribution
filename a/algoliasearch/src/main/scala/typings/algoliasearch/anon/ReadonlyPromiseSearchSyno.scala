@@ -16,8 +16,7 @@ trait ReadonlyPromiseSearchSyno extends StObject {
 }
 object ReadonlyPromiseSearchSyno {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[SearchSynonymsResponse | js.Any],
     `finally`: () => js.Promise[SearchSynonymsResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseSearchSyno {
     __obj.asInstanceOf[ReadonlyPromiseSearchSyno]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseSearchSynoMutableBuilder[Self <: ReadonlyPromiseSearchSyno] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseSearchSyno](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[SearchSynonymsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[SearchSynonymsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[SearchSynonymsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[SearchSynonymsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

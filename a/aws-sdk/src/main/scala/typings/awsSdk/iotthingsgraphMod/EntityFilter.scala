@@ -18,28 +18,21 @@ trait EntityFilter extends StObject {
 }
 object EntityFilter {
   
-  @scala.inline
-  def apply(): EntityFilter = {
+  inline def apply(): EntityFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityFilter]
   }
   
-  @scala.inline
-  implicit class EntityFilterMutableBuilder[Self <: EntityFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EntityFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: EntityFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: EntityFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: EntityFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: EntityFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: EntityFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

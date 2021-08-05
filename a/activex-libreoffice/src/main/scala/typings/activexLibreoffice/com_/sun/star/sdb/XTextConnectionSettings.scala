@@ -17,8 +17,7 @@ trait XTextConnectionSettings
      with XPropertySet
 object XTextConnectionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,

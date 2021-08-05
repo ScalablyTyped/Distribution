@@ -17,28 +17,21 @@ trait GoogleCloudDialogflowV2BatchCreateEntitiesRequest extends StObject {
 }
 object GoogleCloudDialogflowV2BatchCreateEntitiesRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2BatchCreateEntitiesRequest = {
+  inline def apply(): GoogleCloudDialogflowV2BatchCreateEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2BatchCreateEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2BatchCreateEntitiesRequestMutableBuilder[Self <: GoogleCloudDialogflowV2BatchCreateEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2BatchCreateEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[GoogleCloudDialogflowV2EntityTypeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[GoogleCloudDialogflowV2EntityTypeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: GoogleCloudDialogflowV2EntityTypeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: GoogleCloudDialogflowV2EntityTypeEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

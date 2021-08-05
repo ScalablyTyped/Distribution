@@ -24,10 +24,10 @@ object maskedTextFieldMod {
     def UNSAFE_componentWillReceiveProps_MMaskedTextField(newProps: IMaskedTextFieldProps): Unit = js.native
     
     /** The stored selection data prior to input change events. */
-    var _changeSelectionData: js.Any = js.native
+    /* private */ var _changeSelectionData: js.Any = js.native
     
     /** True if the TextField is focused */
-    var _isFocused: js.Any = js.native
+    /* private */ var _isFocused: js.Any = js.native
     
     /**
       *  An array of data containing information regarding the format characters,
@@ -43,26 +43,26 @@ object maskedTextFieldMod {
       *  ]
       * ```
       */
-    var _maskCharData: js.Any = js.native
+    /* private */ var _maskCharData: js.Any = js.native
     
     /** True if the TextField was not focused and it was clicked into */
-    var _moveCursorOnMouseUp: js.Any = js.native
+    /* private */ var _moveCursorOnMouseUp: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: js.Any = js.native
     
-    var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: js.Any = js.native
     
-    var _onMouseUp: js.Any = js.native
+    /* private */ var _onMouseUp: js.Any = js.native
     
-    var _onPaste: js.Any = js.native
+    /* private */ var _onPaste: js.Any = js.native
     
-    var _textField: js.Any = js.native
+    /* private */ var _textField: js.Any = js.native
     
     /** Blurs the input */
     /* CompleteClass */
@@ -116,8 +116,7 @@ object maskedTextFieldMod {
     @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/MaskedTextField", "MaskedTextField.defaultProps")
     @js.native
     def defaultProps: IMaskedTextFieldProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IMaskedTextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IMaskedTextFieldState extends StObject {
@@ -135,23 +134,18 @@ object maskedTextFieldMod {
   }
   object IMaskedTextFieldState {
     
-    @scala.inline
-    def apply(displayValue: String): IMaskedTextFieldState = {
+    inline def apply(displayValue: String): IMaskedTextFieldState = {
       val __obj = js.Dynamic.literal(displayValue = displayValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMaskedTextFieldState]
     }
     
-    @scala.inline
-    implicit class IMaskedTextFieldStateMutableBuilder[Self <: IMaskedTextFieldState] (val x: Self) extends AnyVal {
+    extension [Self <: IMaskedTextFieldState](x: Self) {
       
-      @scala.inline
-      def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
+      inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskCursorPosition(value: Double): Self = StObject.set(x, "maskCursorPosition", value.asInstanceOf[js.Any])
+      inline def setMaskCursorPosition(value: Double): Self = StObject.set(x, "maskCursorPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskCursorPositionUndefined: Self = StObject.set(x, "maskCursorPosition", js.undefined)
+      inline def setMaskCursorPositionUndefined: Self = StObject.set(x, "maskCursorPosition", js.undefined)
     }
   }
 }

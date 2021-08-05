@@ -13,6 +13,5 @@ class GenericTimeStamp ()
   extends typings.xadesjs.xmlMod.GenericTimeStamp
 object GenericTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.GenericTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("GenericTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.GenericTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.GenericTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("GenericTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.GenericTimeStamp]]
 }

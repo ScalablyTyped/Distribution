@@ -17,34 +17,25 @@ trait Stream extends StObject {
 }
 object Stream {
   
-  @scala.inline
-  def apply(arn: String | StringDictionary[js.Any]): Stream = {
+  inline def apply(arn: String | StringDictionary[js.Any]): Stream = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stream]
   }
   
-  @scala.inline
-  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+  extension [Self <: Stream](x: Self) {
     
-    @scala.inline
-    def setArn(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSize(value: Double | String): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double | String): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setStartingPosition(value: Double | String): Self = StObject.set(x, "startingPosition", value.asInstanceOf[js.Any])
+    inline def setStartingPosition(value: Double | String): Self = StObject.set(x, "startingPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingPositionUndefined: Self = StObject.set(x, "startingPosition", js.undefined)
+    inline def setStartingPositionUndefined: Self = StObject.set(x, "startingPosition", js.undefined)
   }
 }

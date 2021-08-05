@@ -11,14 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: String): FocusTrap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[FocusTrap]
-  @scala.inline
-  def default(element: String, userOptions: Options): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
-  @scala.inline
-  def default(element: HTMLElement): FocusTrap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[FocusTrap]
-  @scala.inline
-  def default(element: HTMLElement, userOptions: Options): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+  inline def default(element: String): FocusTrap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[FocusTrap]
+  inline def default(element: String, userOptions: Options): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+  inline def default(element: HTMLElement): FocusTrap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[FocusTrap]
+  inline def default(element: HTMLElement, userOptions: Options): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], userOptions.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
   
   /* Inlined std.Pick<focus-trap.focus-trap.Options, 'onActivate'> */
   trait ActivateOptions extends StObject {
@@ -27,20 +23,16 @@ object mod {
   }
   object ActivateOptions {
     
-    @scala.inline
-    def apply(): ActivateOptions = {
+    inline def apply(): ActivateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActivateOptions]
     }
     
-    @scala.inline
-    implicit class ActivateOptionsMutableBuilder[Self <: ActivateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ActivateOptions](x: Self) {
       
-      @scala.inline
-      def setOnActivate(value: () => Unit): Self = StObject.set(x, "onActivate", js.Any.fromFunction0(value))
+      inline def setOnActivate(value: () => Unit): Self = StObject.set(x, "onActivate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
+      inline def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     }
   }
   
@@ -53,26 +45,20 @@ object mod {
   }
   object DeactivateOptions {
     
-    @scala.inline
-    def apply(): DeactivateOptions = {
+    inline def apply(): DeactivateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeactivateOptions]
     }
     
-    @scala.inline
-    implicit class DeactivateOptionsMutableBuilder[Self <: DeactivateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeactivateOptions](x: Self) {
       
-      @scala.inline
-      def setOnDeactivate(value: () => Unit): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction0(value))
+      inline def setOnDeactivate(value: () => Unit): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
+      inline def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
       
-      @scala.inline
-      def setReturnFocus(value: Boolean): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
+      inline def setReturnFocus(value: Boolean): Self = StObject.set(x, "returnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
+      inline def setReturnFocusUndefined: Self = StObject.set(x, "returnFocus", js.undefined)
     }
   }
   
@@ -144,62 +130,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClickOutsideDeactivates(value: Boolean): Self = StObject.set(x, "clickOutsideDeactivates", value.asInstanceOf[js.Any])
+      inline def setClickOutsideDeactivates(value: Boolean): Self = StObject.set(x, "clickOutsideDeactivates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickOutsideDeactivatesUndefined: Self = StObject.set(x, "clickOutsideDeactivates", js.undefined)
+      inline def setClickOutsideDeactivatesUndefined: Self = StObject.set(x, "clickOutsideDeactivates", js.undefined)
       
-      @scala.inline
-      def setEscapeDeactivates(value: Boolean): Self = StObject.set(x, "escapeDeactivates", value.asInstanceOf[js.Any])
+      inline def setEscapeDeactivates(value: Boolean): Self = StObject.set(x, "escapeDeactivates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeDeactivatesUndefined: Self = StObject.set(x, "escapeDeactivates", js.undefined)
+      inline def setEscapeDeactivatesUndefined: Self = StObject.set(x, "escapeDeactivates", js.undefined)
       
-      @scala.inline
-      def setFallbackFocus(value: FocusTarget): Self = StObject.set(x, "fallbackFocus", value.asInstanceOf[js.Any])
+      inline def setFallbackFocus(value: FocusTarget): Self = StObject.set(x, "fallbackFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackFocusFunction0(value: () => HTMLElement): Self = StObject.set(x, "fallbackFocus", js.Any.fromFunction0(value))
+      inline def setFallbackFocusFunction0(value: () => HTMLElement): Self = StObject.set(x, "fallbackFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFallbackFocusUndefined: Self = StObject.set(x, "fallbackFocus", js.undefined)
+      inline def setFallbackFocusUndefined: Self = StObject.set(x, "fallbackFocus", js.undefined)
       
-      @scala.inline
-      def setInitialFocus(value: FocusTarget): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
+      inline def setInitialFocus(value: FocusTarget): Self = StObject.set(x, "initialFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialFocusFunction0(value: () => HTMLElement): Self = StObject.set(x, "initialFocus", js.Any.fromFunction0(value))
+      inline def setInitialFocusFunction0(value: () => HTMLElement): Self = StObject.set(x, "initialFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitialFocusUndefined: Self = StObject.set(x, "initialFocus", js.undefined)
+      inline def setInitialFocusUndefined: Self = StObject.set(x, "initialFocus", js.undefined)
       
-      @scala.inline
-      def setOnActivate(value: () => Unit): Self = StObject.set(x, "onActivate", js.Any.fromFunction0(value))
+      inline def setOnActivate(value: () => Unit): Self = StObject.set(x, "onActivate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
+      inline def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
       
-      @scala.inline
-      def setOnDeactivate(value: () => Unit): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction0(value))
+      inline def setOnDeactivate(value: () => Unit): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
+      inline def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
       
-      @scala.inline
-      def setReturnFocusOnDeactivate(value: Boolean): Self = StObject.set(x, "returnFocusOnDeactivate", value.asInstanceOf[js.Any])
+      inline def setReturnFocusOnDeactivate(value: Boolean): Self = StObject.set(x, "returnFocusOnDeactivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnFocusOnDeactivateUndefined: Self = StObject.set(x, "returnFocusOnDeactivate", js.undefined)
+      inline def setReturnFocusOnDeactivateUndefined: Self = StObject.set(x, "returnFocusOnDeactivate", js.undefined)
     }
   }
 }

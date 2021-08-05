@@ -28,46 +28,33 @@ trait DescribePlacementGroupsRequest extends StObject {
 }
 object DescribePlacementGroupsRequest {
   
-  @scala.inline
-  def apply(): DescribePlacementGroupsRequest = {
+  inline def apply(): DescribePlacementGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePlacementGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribePlacementGroupsRequestMutableBuilder[Self <: DescribePlacementGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePlacementGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupIds(value: PlacementGroupIdStringList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
+    inline def setGroupIds(value: PlacementGroupIdStringList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
+    inline def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
     
-    @scala.inline
-    def setGroupIdsVarargs(value: PlacementGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
+    inline def setGroupIdsVarargs(value: PlacementGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupNames(value: PlacementGroupStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
+    inline def setGroupNames(value: PlacementGroupStringList): Self = StObject.set(x, "GroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
+    inline def setGroupNamesUndefined: Self = StObject.set(x, "GroupNames", js.undefined)
     
-    @scala.inline
-    def setGroupNamesVarargs(value: PlacementGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
+    inline def setGroupNamesVarargs(value: PlacementGroupName*): Self = StObject.set(x, "GroupNames", js.Array(value :_*))
   }
 }

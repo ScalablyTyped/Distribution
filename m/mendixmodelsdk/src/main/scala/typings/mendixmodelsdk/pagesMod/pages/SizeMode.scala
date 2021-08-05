@@ -21,20 +21,17 @@ object SizeMode {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SizeMode.Auto")
   @js.native
   def Auto: SizeMode = js.native
-  @scala.inline
-  def Auto_=(x: SizeMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
+  inline def Auto_=(x: SizeMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Auto")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SizeMode.Percentage")
   @js.native
   def Percentage: SizeMode = js.native
-  @scala.inline
-  def Percentage_=(x: SizeMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Percentage")(x.asInstanceOf[js.Any])
+  inline def Percentage_=(x: SizeMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Percentage")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SizeMode.Pixels")
   @js.native
   def Pixels: SizeMode = js.native
-  @scala.inline
-  def Pixels_=(x: SizeMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pixels")(x.asInstanceOf[js.Any])
+  inline def Pixels_=(x: SizeMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pixels")(x.asInstanceOf[js.Any])
 }

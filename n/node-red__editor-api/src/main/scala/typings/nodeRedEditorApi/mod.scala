@@ -37,8 +37,7 @@ object mod extends Shortcut {
   }
   object Auth {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       needsPermission: String => js.Function3[
           /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* res */ Response_[js.Any], 
@@ -50,11 +49,9 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Auth]
     }
     
-    @scala.inline
-    implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+    extension [Self <: Auth](x: Self) {
       
-      @scala.inline
-      def setNeedsPermission(
+      inline def setNeedsPermission(
         value: String => js.Function3[
               /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
               /* res */ Response_[js.Any], 
@@ -116,8 +113,7 @@ object mod extends Shortcut {
   }
   object EditorAPIModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth: Auth,
       httpAdmin: Express,
       init: (LocalSettings, Server, StorageModule, RuntimeModule) => Unit,
@@ -128,23 +124,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EditorAPIModule]
     }
     
-    @scala.inline
-    implicit class EditorAPIModuleMutableBuilder[Self <: EditorAPIModule] (val x: Self) extends AnyVal {
+    extension [Self <: EditorAPIModule](x: Self) {
       
-      @scala.inline
-      def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
+      inline def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(value: (LocalSettings, Server, StorageModule, RuntimeModule) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
+      inline def setInit(value: (LocalSettings, Server, StorageModule, RuntimeModule) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   

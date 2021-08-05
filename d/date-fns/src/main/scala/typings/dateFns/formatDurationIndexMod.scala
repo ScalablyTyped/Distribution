@@ -9,10 +9,8 @@ object formatDurationIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(duration: Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def apply(duration: Duration, options: Format): String = (^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(duration: Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(duration: Duration, options: Format): String = (^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("date-fns/esm/formatDuration/index", JSImport.Default)
     @js.native

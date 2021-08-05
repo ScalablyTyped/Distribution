@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "ActionCodeURL")
 @js.native
-class ActionCodeURL protected () extends StObject {
+/* private */ class ActionCodeURL () extends StObject {
   
   var apiKey: String = js.native
   
@@ -27,6 +27,5 @@ object ActionCodeURL {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseLink(link: String): ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[ActionCodeURL | Null]
+  inline def parseLink(link: String): ActionCodeURL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLink")(link.asInstanceOf[js.Any]).asInstanceOf[ActionCodeURL | Null]
 }

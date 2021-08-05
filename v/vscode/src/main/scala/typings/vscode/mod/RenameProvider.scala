@@ -44,26 +44,21 @@ trait RenameProvider extends StObject {
 }
 object RenameProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideRenameEdits: (TextDocument, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit]
   ): RenameProvider = {
     val __obj = js.Dynamic.literal(provideRenameEdits = js.Any.fromFunction4(provideRenameEdits))
     __obj.asInstanceOf[RenameProvider]
   }
   
-  @scala.inline
-  implicit class RenameProviderMutableBuilder[Self <: RenameProvider] (val x: Self) extends AnyVal {
+  extension [Self <: RenameProvider](x: Self) {
     
-    @scala.inline
-    def setPrepareRename(
+    inline def setPrepareRename(
       value: (/* document */ TextDocument, /* position */ Position, /* token */ CancellationToken) => ProviderResult[Range | Placeholder]
     ): Self = StObject.set(x, "prepareRename", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPrepareRenameUndefined: Self = StObject.set(x, "prepareRename", js.undefined)
+    inline def setPrepareRenameUndefined: Self = StObject.set(x, "prepareRename", js.undefined)
     
-    @scala.inline
-    def setProvideRenameEdits(value: (TextDocument, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit]): Self = StObject.set(x, "provideRenameEdits", js.Any.fromFunction4(value))
+    inline def setProvideRenameEdits(value: (TextDocument, Position, String, CancellationToken) => ProviderResult[WorkspaceEdit]): Self = StObject.set(x, "provideRenameEdits", js.Any.fromFunction4(value))
   }
 }

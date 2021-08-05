@@ -25,8 +25,7 @@ object stepperMod {
     @JSImport("@ant-design/react-native/lib/stepper", "default.defaultProps")
     @js.native
     def defaultProps: StepProps = js.native
-    @scala.inline
-    def defaultProps_=(x: StepProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: StepProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait StepProps
@@ -38,23 +37,18 @@ object stepperMod {
   }
   object StepProps {
     
-    @scala.inline
-    def apply(): StepProps = {
+    inline def apply(): StepProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepProps]
     }
     
-    @scala.inline
-    implicit class StepPropsMutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
+    extension [Self <: StepProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

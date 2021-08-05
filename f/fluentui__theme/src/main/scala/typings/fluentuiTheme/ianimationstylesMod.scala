@@ -87,8 +87,7 @@ object ianimationstylesMod {
   }
   object IAnimationStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fadeIn100: IRawStyle,
       fadeIn200: IRawStyle,
       fadeIn400: IRawStyle,
@@ -132,122 +131,83 @@ object ianimationstylesMod {
       __obj.asInstanceOf[IAnimationStyles]
     }
     
-    @scala.inline
-    implicit class IAnimationStylesMutableBuilder[Self <: IAnimationStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IAnimationStyles](x: Self) {
       
-      @scala.inline
-      def setFadeIn100(value: IRawStyle): Self = StObject.set(x, "fadeIn100", value.asInstanceOf[js.Any])
+      inline def setFadeIn100(value: IRawStyle): Self = StObject.set(x, "fadeIn100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeIn200(value: IRawStyle): Self = StObject.set(x, "fadeIn200", value.asInstanceOf[js.Any])
+      inline def setFadeIn200(value: IRawStyle): Self = StObject.set(x, "fadeIn200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeIn400(value: IRawStyle): Self = StObject.set(x, "fadeIn400", value.asInstanceOf[js.Any])
+      inline def setFadeIn400(value: IRawStyle): Self = StObject.set(x, "fadeIn400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeIn500(value: IRawStyle): Self = StObject.set(x, "fadeIn500", value.asInstanceOf[js.Any])
+      inline def setFadeIn500(value: IRawStyle): Self = StObject.set(x, "fadeIn500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeOut100(value: IRawStyle): Self = StObject.set(x, "fadeOut100", value.asInstanceOf[js.Any])
+      inline def setFadeOut100(value: IRawStyle): Self = StObject.set(x, "fadeOut100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeOut200(value: IRawStyle): Self = StObject.set(x, "fadeOut200", value.asInstanceOf[js.Any])
+      inline def setFadeOut200(value: IRawStyle): Self = StObject.set(x, "fadeOut200", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeOut400(value: IRawStyle): Self = StObject.set(x, "fadeOut400", value.asInstanceOf[js.Any])
+      inline def setFadeOut400(value: IRawStyle): Self = StObject.set(x, "fadeOut400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeOut500(value: IRawStyle): Self = StObject.set(x, "fadeOut500", value.asInstanceOf[js.Any])
+      inline def setFadeOut500(value: IRawStyle): Self = StObject.set(x, "fadeOut500", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotate90deg(value: IRawStyle): Self = StObject.set(x, "rotate90deg", value.asInstanceOf[js.Any])
+      inline def setRotate90deg(value: IRawStyle): Self = StObject.set(x, "rotate90deg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateN90deg(value: IRawStyle): Self = StObject.set(x, "rotateN90deg", value.asInstanceOf[js.Any])
+      inline def setRotateN90deg(value: IRawStyle): Self = StObject.set(x, "rotateN90deg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleDownIn100(value: IRawStyle): Self = StObject.set(x, "scaleDownIn100", value.asInstanceOf[js.Any])
+      inline def setScaleDownIn100(value: IRawStyle): Self = StObject.set(x, "scaleDownIn100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleDownOut98(value: IRawStyle): Self = StObject.set(x, "scaleDownOut98", value.asInstanceOf[js.Any])
+      inline def setScaleDownOut98(value: IRawStyle): Self = StObject.set(x, "scaleDownOut98", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUpIn100(value: IRawStyle): Self = StObject.set(x, "scaleUpIn100", value.asInstanceOf[js.Any])
+      inline def setScaleUpIn100(value: IRawStyle): Self = StObject.set(x, "scaleUpIn100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUpOut103(value: IRawStyle): Self = StObject.set(x, "scaleUpOut103", value.asInstanceOf[js.Any])
+      inline def setScaleUpOut103(value: IRawStyle): Self = StObject.set(x, "scaleUpOut103", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideDownIn10(value: IRawStyle): Self = StObject.set(x, "slideDownIn10", value.asInstanceOf[js.Any])
+      inline def setSlideDownIn10(value: IRawStyle): Self = StObject.set(x, "slideDownIn10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideDownIn20(value: IRawStyle): Self = StObject.set(x, "slideDownIn20", value.asInstanceOf[js.Any])
+      inline def setSlideDownIn20(value: IRawStyle): Self = StObject.set(x, "slideDownIn20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideDownOut10(value: IRawStyle): Self = StObject.set(x, "slideDownOut10", value.asInstanceOf[js.Any])
+      inline def setSlideDownOut10(value: IRawStyle): Self = StObject.set(x, "slideDownOut10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideDownOut20(value: IRawStyle): Self = StObject.set(x, "slideDownOut20", value.asInstanceOf[js.Any])
+      inline def setSlideDownOut20(value: IRawStyle): Self = StObject.set(x, "slideDownOut20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftIn10(value: IRawStyle): Self = StObject.set(x, "slideLeftIn10", value.asInstanceOf[js.Any])
+      inline def setSlideLeftIn10(value: IRawStyle): Self = StObject.set(x, "slideLeftIn10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftIn20(value: IRawStyle): Self = StObject.set(x, "slideLeftIn20", value.asInstanceOf[js.Any])
+      inline def setSlideLeftIn20(value: IRawStyle): Self = StObject.set(x, "slideLeftIn20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftIn40(value: IRawStyle): Self = StObject.set(x, "slideLeftIn40", value.asInstanceOf[js.Any])
+      inline def setSlideLeftIn40(value: IRawStyle): Self = StObject.set(x, "slideLeftIn40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftIn400(value: IRawStyle): Self = StObject.set(x, "slideLeftIn400", value.asInstanceOf[js.Any])
+      inline def setSlideLeftIn400(value: IRawStyle): Self = StObject.set(x, "slideLeftIn400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftOut10(value: IRawStyle): Self = StObject.set(x, "slideLeftOut10", value.asInstanceOf[js.Any])
+      inline def setSlideLeftOut10(value: IRawStyle): Self = StObject.set(x, "slideLeftOut10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftOut20(value: IRawStyle): Self = StObject.set(x, "slideLeftOut20", value.asInstanceOf[js.Any])
+      inline def setSlideLeftOut20(value: IRawStyle): Self = StObject.set(x, "slideLeftOut20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftOut40(value: IRawStyle): Self = StObject.set(x, "slideLeftOut40", value.asInstanceOf[js.Any])
+      inline def setSlideLeftOut40(value: IRawStyle): Self = StObject.set(x, "slideLeftOut40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideLeftOut400(value: IRawStyle): Self = StObject.set(x, "slideLeftOut400", value.asInstanceOf[js.Any])
+      inline def setSlideLeftOut400(value: IRawStyle): Self = StObject.set(x, "slideLeftOut400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightIn10(value: IRawStyle): Self = StObject.set(x, "slideRightIn10", value.asInstanceOf[js.Any])
+      inline def setSlideRightIn10(value: IRawStyle): Self = StObject.set(x, "slideRightIn10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightIn20(value: IRawStyle): Self = StObject.set(x, "slideRightIn20", value.asInstanceOf[js.Any])
+      inline def setSlideRightIn20(value: IRawStyle): Self = StObject.set(x, "slideRightIn20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightIn40(value: IRawStyle): Self = StObject.set(x, "slideRightIn40", value.asInstanceOf[js.Any])
+      inline def setSlideRightIn40(value: IRawStyle): Self = StObject.set(x, "slideRightIn40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightIn400(value: IRawStyle): Self = StObject.set(x, "slideRightIn400", value.asInstanceOf[js.Any])
+      inline def setSlideRightIn400(value: IRawStyle): Self = StObject.set(x, "slideRightIn400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightOut10(value: IRawStyle): Self = StObject.set(x, "slideRightOut10", value.asInstanceOf[js.Any])
+      inline def setSlideRightOut10(value: IRawStyle): Self = StObject.set(x, "slideRightOut10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightOut20(value: IRawStyle): Self = StObject.set(x, "slideRightOut20", value.asInstanceOf[js.Any])
+      inline def setSlideRightOut20(value: IRawStyle): Self = StObject.set(x, "slideRightOut20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightOut40(value: IRawStyle): Self = StObject.set(x, "slideRightOut40", value.asInstanceOf[js.Any])
+      inline def setSlideRightOut40(value: IRawStyle): Self = StObject.set(x, "slideRightOut40", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideRightOut400(value: IRawStyle): Self = StObject.set(x, "slideRightOut400", value.asInstanceOf[js.Any])
+      inline def setSlideRightOut400(value: IRawStyle): Self = StObject.set(x, "slideRightOut400", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideUpIn10(value: IRawStyle): Self = StObject.set(x, "slideUpIn10", value.asInstanceOf[js.Any])
+      inline def setSlideUpIn10(value: IRawStyle): Self = StObject.set(x, "slideUpIn10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideUpIn20(value: IRawStyle): Self = StObject.set(x, "slideUpIn20", value.asInstanceOf[js.Any])
+      inline def setSlideUpIn20(value: IRawStyle): Self = StObject.set(x, "slideUpIn20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideUpOut10(value: IRawStyle): Self = StObject.set(x, "slideUpOut10", value.asInstanceOf[js.Any])
+      inline def setSlideUpOut10(value: IRawStyle): Self = StObject.set(x, "slideUpOut10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideUpOut20(value: IRawStyle): Self = StObject.set(x, "slideUpOut20", value.asInstanceOf[js.Any])
+      inline def setSlideUpOut20(value: IRawStyle): Self = StObject.set(x, "slideUpOut20", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,8 +227,7 @@ object ianimationstylesMod {
   }
   object IAnimationVariables {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       durationValue1: String,
       durationValue2: String,
       durationValue3: String,
@@ -280,26 +239,19 @@ object ianimationstylesMod {
       __obj.asInstanceOf[IAnimationVariables]
     }
     
-    @scala.inline
-    implicit class IAnimationVariablesMutableBuilder[Self <: IAnimationVariables] (val x: Self) extends AnyVal {
+    extension [Self <: IAnimationVariables](x: Self) {
       
-      @scala.inline
-      def setDurationValue1(value: String): Self = StObject.set(x, "durationValue1", value.asInstanceOf[js.Any])
+      inline def setDurationValue1(value: String): Self = StObject.set(x, "durationValue1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationValue2(value: String): Self = StObject.set(x, "durationValue2", value.asInstanceOf[js.Any])
+      inline def setDurationValue2(value: String): Self = StObject.set(x, "durationValue2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationValue3(value: String): Self = StObject.set(x, "durationValue3", value.asInstanceOf[js.Any])
+      inline def setDurationValue3(value: String): Self = StObject.set(x, "durationValue3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationValue4(value: String): Self = StObject.set(x, "durationValue4", value.asInstanceOf[js.Any])
+      inline def setDurationValue4(value: String): Self = StObject.set(x, "durationValue4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseFunction1(value: String): Self = StObject.set(x, "easeFunction1", value.asInstanceOf[js.Any])
+      inline def setEaseFunction1(value: String): Self = StObject.set(x, "easeFunction1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEaseFunction2(value: String): Self = StObject.set(x, "easeFunction2", value.asInstanceOf[js.Any])
+      inline def setEaseFunction2(value: String): Self = StObject.set(x, "easeFunction2", value.asInstanceOf[js.Any])
     }
   }
 }

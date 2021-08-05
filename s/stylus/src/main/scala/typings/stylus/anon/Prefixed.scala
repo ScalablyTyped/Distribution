@@ -22,8 +22,7 @@ trait Prefixed extends StObject {
 }
 object Prefixed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     __type: String,
     column: Double,
     filename: String,
@@ -37,28 +36,20 @@ object Prefixed {
     __obj.asInstanceOf[Prefixed]
   }
   
-  @scala.inline
-  implicit class PrefixedMutableBuilder[Self <: Prefixed] (val x: Self) extends AnyVal {
+  extension [Self <: Prefixed](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixed(value: Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
+    inline def setPrefixed(value: Boolean): Self = StObject.set(x, "prefixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

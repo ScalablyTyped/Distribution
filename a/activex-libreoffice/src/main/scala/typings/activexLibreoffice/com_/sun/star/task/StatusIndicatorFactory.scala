@@ -18,8 +18,7 @@ trait StatusIndicatorFactory
 }
 object StatusIndicatorFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createStatusIndicator: () => XStatusIndicator,
     createWithFrame: (XFrame, Boolean, Boolean) => Unit,
@@ -31,13 +30,10 @@ object StatusIndicatorFactory {
     __obj.asInstanceOf[StatusIndicatorFactory]
   }
   
-  @scala.inline
-  implicit class StatusIndicatorFactoryMutableBuilder[Self <: StatusIndicatorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: StatusIndicatorFactory](x: Self) {
     
-    @scala.inline
-    def setCreateWithFrame(value: (XFrame, Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithFrame", js.Any.fromFunction3(value))
+    inline def setCreateWithFrame(value: (XFrame, Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithFrame", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateWithWindow(value: (XWindow, Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithWindow", js.Any.fromFunction3(value))
+    inline def setCreateWithWindow(value: (XWindow, Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithWindow", js.Any.fromFunction3(value))
   }
 }

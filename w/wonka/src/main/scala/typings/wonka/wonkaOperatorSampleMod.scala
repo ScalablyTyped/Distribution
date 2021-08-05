@@ -12,6 +12,5 @@ object wonkaOperatorSampleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sample[A](signal: Source[js.Any]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def sample[A](signal: Source[js.Any]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("sample")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

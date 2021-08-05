@@ -27,8 +27,7 @@ trait OpenCommandArgument3
 }
 object OpenCommandArgument3 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Mode: Double,
     OpeningFlags: SafeArray[NamedValue],
     Priority: Double,
@@ -40,10 +39,8 @@ object OpenCommandArgument3 {
     __obj.asInstanceOf[OpenCommandArgument3]
   }
   
-  @scala.inline
-  implicit class OpenCommandArgument3MutableBuilder[Self <: OpenCommandArgument3] (val x: Self) extends AnyVal {
+  extension [Self <: OpenCommandArgument3](x: Self) {
     
-    @scala.inline
-    def setOpeningFlags(value: SafeArray[NamedValue]): Self = StObject.set(x, "OpeningFlags", value.asInstanceOf[js.Any])
+    inline def setOpeningFlags(value: SafeArray[NamedValue]): Self = StObject.set(x, "OpeningFlags", value.asInstanceOf[js.Any])
   }
 }

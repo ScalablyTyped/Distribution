@@ -17,25 +17,19 @@ trait WhereNested extends StObject {
 }
 object WhereNested {
   
-  @scala.inline
-  def apply($and: js.Array[AnyWhereOptions | WhereLogic], $or: js.Array[AnyWhereOptions | WhereLogic]): WhereNested = {
+  inline def apply($and: js.Array[AnyWhereOptions | WhereLogic], $or: js.Array[AnyWhereOptions | WhereLogic]): WhereNested = {
     val __obj = js.Dynamic.literal($and = $and.asInstanceOf[js.Any], $or = $or.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhereNested]
   }
   
-  @scala.inline
-  implicit class WhereNestedMutableBuilder[Self <: WhereNested] (val x: Self) extends AnyVal {
+  extension [Self <: WhereNested](x: Self) {
     
-    @scala.inline
-    def set$and(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
+    inline def set$and(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$andVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$and", js.Array(value :_*))
+    inline def set$andVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$and", js.Array(value :_*))
     
-    @scala.inline
-    def set$or(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
+    inline def set$or(value: js.Array[AnyWhereOptions | WhereLogic]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$orVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$or", js.Array(value :_*))
+    inline def set$orVarargs(value: (AnyWhereOptions | WhereLogic)*): Self = StObject.set(x, "$or", js.Array(value :_*))
   }
 }

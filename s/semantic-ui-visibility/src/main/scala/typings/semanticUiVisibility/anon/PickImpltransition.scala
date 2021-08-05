@@ -12,16 +12,13 @@ trait PickImpltransition extends StObject {
 }
 object PickImpltransition {
   
-  @scala.inline
-  def apply(transition: `false` | String): PickImpltransition = {
+  inline def apply(transition: `false` | String): PickImpltransition = {
     val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpltransition]
   }
   
-  @scala.inline
-  implicit class PickImpltransitionMutableBuilder[Self <: PickImpltransition] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpltransition](x: Self) {
     
-    @scala.inline
-    def setTransition(value: `false` | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: `false` | String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
   }
 }

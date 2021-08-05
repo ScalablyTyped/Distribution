@@ -18,28 +18,21 @@ trait CreateSecurityGroupResult extends StObject {
 }
 object CreateSecurityGroupResult {
   
-  @scala.inline
-  def apply(): CreateSecurityGroupResult = {
+  inline def apply(): CreateSecurityGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSecurityGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateSecurityGroupResultMutableBuilder[Self <: CreateSecurityGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSecurityGroupResult](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

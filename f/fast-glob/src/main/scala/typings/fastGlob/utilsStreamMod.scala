@@ -12,6 +12,5 @@ object utilsStreamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def merge(streams: js.Array[Readable]): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def merge(streams: js.Array[Readable]): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
 }

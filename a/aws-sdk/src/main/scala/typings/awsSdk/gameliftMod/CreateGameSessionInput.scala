@@ -53,67 +53,47 @@ trait CreateGameSessionInput extends StObject {
 }
 object CreateGameSessionInput {
   
-  @scala.inline
-  def apply(MaximumPlayerSessionCount: WholeNumber): CreateGameSessionInput = {
+  inline def apply(MaximumPlayerSessionCount: WholeNumber): CreateGameSessionInput = {
     val __obj = js.Dynamic.literal(MaximumPlayerSessionCount = MaximumPlayerSessionCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGameSessionInput]
   }
   
-  @scala.inline
-  implicit class CreateGameSessionInputMutableBuilder[Self <: CreateGameSessionInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGameSessionInput](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
+    inline def setAliasIdUndefined: Self = StObject.set(x, "AliasId", js.undefined)
     
-    @scala.inline
-    def setCreatorId(value: NonZeroAndMaxString): Self = StObject.set(x, "CreatorId", value.asInstanceOf[js.Any])
+    inline def setCreatorId(value: NonZeroAndMaxString): Self = StObject.set(x, "CreatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorIdUndefined: Self = StObject.set(x, "CreatorId", js.undefined)
+    inline def setCreatorIdUndefined: Self = StObject.set(x, "CreatorId", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setGameProperties(value: GamePropertyList): Self = StObject.set(x, "GameProperties", value.asInstanceOf[js.Any])
+    inline def setGameProperties(value: GamePropertyList): Self = StObject.set(x, "GameProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
+    inline def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
     
-    @scala.inline
-    def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
+    inline def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
+    inline def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
+    inline def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
     
-    @scala.inline
-    def setGameSessionId(value: IdStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
+    inline def setGameSessionId(value: IdStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
+    inline def setGameSessionIdUndefined: Self = StObject.set(x, "GameSessionId", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: IdStringModel): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdStringModel): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
+    inline def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
     
-    @scala.inline
-    def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    inline def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

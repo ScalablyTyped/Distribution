@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](refs: Ref[T]*): js.Function1[/* instance */ T, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(refs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* instance */ T, Unit]]
+  inline def default[T](refs: Ref[T]*): js.Function1[/* instance */ T, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(refs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* instance */ T, Unit]]
 }

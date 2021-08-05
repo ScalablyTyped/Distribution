@@ -11,16 +11,13 @@ trait OH extends StObject {
 }
 object OH {
   
-  @scala.inline
-  def apply(): OH = {
+  inline def apply(): OH = {
     val __obj = js.Dynamic.literal(OH = "LH2O")
     __obj.asInstanceOf[OH]
   }
   
-  @scala.inline
-  implicit class OHMutableBuilder[Self <: OH] (val x: Self) extends AnyVal {
+  extension [Self <: OH](x: Self) {
     
-    @scala.inline
-    def setOH(value: LH2O): Self = StObject.set(x, "OH", value.asInstanceOf[js.Any])
+    inline def setOH(value: LH2O): Self = StObject.set(x, "OH", value.asInstanceOf[js.Any])
   }
 }

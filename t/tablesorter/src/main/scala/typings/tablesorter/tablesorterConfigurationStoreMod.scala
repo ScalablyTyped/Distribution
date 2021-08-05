@@ -280,8 +280,7 @@ object tablesorterConfigurationStoreMod {
   }
   object TablesorterConfigurationStore {
     
-    @scala.inline
-    def apply[TElement](
+    inline def apply[TElement](
       $filters: JQuery[HTMLElement],
       $headerIndexed: js.Array[JQuery[HTMLElement]],
       $headers: JQuery[HTMLElement],
@@ -370,301 +369,205 @@ object tablesorterConfigurationStoreMod {
       __obj.asInstanceOf[TablesorterConfigurationStore[TElement]]
     }
     
-    @scala.inline
-    implicit class TablesorterConfigurationStoreMutableBuilder[Self <: TablesorterConfigurationStore[?], TElement] (val x: Self & TablesorterConfigurationStore[TElement]) extends AnyVal {
+    extension [Self <: TablesorterConfigurationStore[?], TElement](x: Self & TablesorterConfigurationStore[TElement]) {
       
-      @scala.inline
-      def set$filters(value: JQuery[HTMLElement]): Self = StObject.set(x, "$filters", value.asInstanceOf[js.Any])
+      inline def set$filters(value: JQuery[HTMLElement]): Self = StObject.set(x, "$filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$headerIndexed(value: js.Array[JQuery[HTMLElement]]): Self = StObject.set(x, "$headerIndexed", value.asInstanceOf[js.Any])
+      inline def set$headerIndexed(value: js.Array[JQuery[HTMLElement]]): Self = StObject.set(x, "$headerIndexed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$headerIndexedVarargs(value: JQuery[HTMLElement]*): Self = StObject.set(x, "$headerIndexed", js.Array(value :_*))
+      inline def set$headerIndexedVarargs(value: JQuery[HTMLElement]*): Self = StObject.set(x, "$headerIndexed", js.Array(value :_*))
       
-      @scala.inline
-      def set$headers(value: JQuery[HTMLElement]): Self = StObject.set(x, "$headers", value.asInstanceOf[js.Any])
+      inline def set$headers(value: JQuery[HTMLElement]): Self = StObject.set(x, "$headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$table(value: JQuery[TElement]): Self = StObject.set(x, "$table", value.asInstanceOf[js.Any])
+      inline def set$table(value: JQuery[TElement]): Self = StObject.set(x, "$table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$tbodies(value: JQuery[HTMLElement]): Self = StObject.set(x, "$tbodies", value.asInstanceOf[js.Any])
+      inline def set$tbodies(value: JQuery[HTMLElement]): Self = StObject.set(x, "$tbodies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache(value: TablesorterCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: TablesorterCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelSelection(value: Boolean): Self = StObject.set(x, "cancelSelection", value.asInstanceOf[js.Any])
+      inline def setCancelSelection(value: Boolean): Self = StObject.set(x, "cancelSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCehckboxVisible(value: Boolean): Self = StObject.set(x, "cehckboxVisible", value.asInstanceOf[js.Any])
+      inline def setCehckboxVisible(value: Boolean): Self = StObject.set(x, "cehckboxVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckboxClass(value: String): Self = StObject.set(x, "checkboxClass", value.asInstanceOf[js.Any])
+      inline def setCheckboxClass(value: String): Self = StObject.set(x, "checkboxClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssAsc(value: String): Self = StObject.set(x, "cssAsc", value.asInstanceOf[js.Any])
+      inline def setCssAsc(value: String): Self = StObject.set(x, "cssAsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssChildRow(value: String): Self = StObject.set(x, "cssChildRow", value.asInstanceOf[js.Any])
+      inline def setCssChildRow(value: String): Self = StObject.set(x, "cssChildRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssDesc(value: String): Self = StObject.set(x, "cssDesc", value.asInstanceOf[js.Any])
+      inline def setCssDesc(value: String): Self = StObject.set(x, "cssDesc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssHeader(value: String): Self = StObject.set(x, "cssHeader", value.asInstanceOf[js.Any])
+      inline def setCssHeader(value: String): Self = StObject.set(x, "cssHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssHeaderRow(value: String): Self = StObject.set(x, "cssHeaderRow", value.asInstanceOf[js.Any])
+      inline def setCssHeaderRow(value: String): Self = StObject.set(x, "cssHeaderRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssIcon(value: String): Self = StObject.set(x, "cssIcon", value.asInstanceOf[js.Any])
+      inline def setCssIcon(value: String): Self = StObject.set(x, "cssIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssIconAsc(value: String): Self = StObject.set(x, "cssIconAsc", value.asInstanceOf[js.Any])
+      inline def setCssIconAsc(value: String): Self = StObject.set(x, "cssIconAsc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssIconDesc(value: String): Self = StObject.set(x, "cssIconDesc", value.asInstanceOf[js.Any])
+      inline def setCssIconDesc(value: String): Self = StObject.set(x, "cssIconDesc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssIconDisabled(value: String): Self = StObject.set(x, "cssIconDisabled", value.asInstanceOf[js.Any])
+      inline def setCssIconDisabled(value: String): Self = StObject.set(x, "cssIconDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssIconNone(value: String): Self = StObject.set(x, "cssIconNone", value.asInstanceOf[js.Any])
+      inline def setCssIconNone(value: String): Self = StObject.set(x, "cssIconNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssIgnoreRow(value: String): Self = StObject.set(x, "cssIgnoreRow", value.asInstanceOf[js.Any])
+      inline def setCssIgnoreRow(value: String): Self = StObject.set(x, "cssIgnoreRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssInfoBlock(value: String): Self = StObject.set(x, "cssInfoBlock", value.asInstanceOf[js.Any])
+      inline def setCssInfoBlock(value: String): Self = StObject.set(x, "cssInfoBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssNoSort(value: String): Self = StObject.set(x, "cssNoSort", value.asInstanceOf[js.Any])
+      inline def setCssNoSort(value: String): Self = StObject.set(x, "cssNoSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssNone(value: String): Self = StObject.set(x, "cssNone", value.asInstanceOf[js.Any])
+      inline def setCssNone(value: String): Self = StObject.set(x, "cssNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssProcessing(value: String): Self = StObject.set(x, "cssProcessing", value.asInstanceOf[js.Any])
+      inline def setCssProcessing(value: String): Self = StObject.set(x, "cssProcessing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Object | js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object | js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateRange(value: Double): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+      inline def setDateRange(value: Double): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean | String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean | String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayInit(value: Boolean): Self = StObject.set(x, "delayInit", value.asInstanceOf[js.Any])
+      inline def setDelayInit(value: Boolean): Self = StObject.set(x, "delayInit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicateSpan(value: Boolean): Self = StObject.set(x, "duplicateSpan", value.asInstanceOf[js.Any])
+      inline def setDuplicateSpan(value: Boolean): Self = StObject.set(x, "duplicateSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyTo(value: EmptySorting): Self = StObject.set(x, "emptyTo", value.asInstanceOf[js.Any])
+      inline def setEmptyTo(value: EmptySorting): Self = StObject.set(x, "emptyTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
+      inline def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalize(value: GlobalizeSettings | NumberDictionary[GlobalizeSettings]): Self = StObject.set(x, "globalize", value.asInstanceOf[js.Any])
+      inline def setGlobalize(value: GlobalizeSettings | NumberDictionary[GlobalizeSettings]): Self = StObject.set(x, "globalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderContent(value: js.Array[String]): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
+      inline def setHeaderContent(value: js.Array[String]): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderContentVarargs(value: String*): Self = StObject.set(x, "headerContent", js.Array(value :_*))
+      inline def setHeaderContentVarargs(value: String*): Self = StObject.set(x, "headerContent", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaderList(value: js.Array[HTMLElement]): Self = StObject.set(x, "headerList", value.asInstanceOf[js.Any])
+      inline def setHeaderList(value: js.Array[HTMLElement]): Self = StObject.set(x, "headerList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderListVarargs(value: HTMLElement*): Self = StObject.set(x, "headerList", js.Array(value :_*))
+      inline def setHeaderListVarargs(value: HTMLElement*): Self = StObject.set(x, "headerList", js.Array(value :_*))
       
-      @scala.inline
-      def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: NumberDictionary[TablesorterHeading]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: NumberDictionary[TablesorterHeading]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreChildRow(value: Boolean): Self = StObject.set(x, "ignoreChildRow", value.asInstanceOf[js.Any])
+      inline def setIgnoreChildRow(value: Boolean): Self = StObject.set(x, "ignoreChildRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgAttr(value: String): Self = StObject.set(x, "imgAttr", value.asInstanceOf[js.Any])
+      inline def setImgAttr(value: String): Self = StObject.set(x, "imgAttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitWidgets(value: Boolean): Self = StObject.set(x, "initWidgets", value.asInstanceOf[js.Any])
+      inline def setInitWidgets(value: Boolean): Self = StObject.set(x, "initWidgets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialized(value: TElement => Unit): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
+      inline def setInitialized(value: TElement => Unit): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberSorter(value: (/* x */ Double, /* y */ Double, /* ascending */ Boolean, /* maxValue */ Double) => Double): Self = StObject.set(x, "numberSorter", js.Any.fromFunction4(value))
+      inline def setNumberSorter(value: (/* x */ Double, /* y */ Double, /* ascending */ Boolean, /* maxValue */ Double) => Double): Self = StObject.set(x, "numberSorter", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnRenderHeader(
+      inline def setOnRenderHeader(
         value: (/* index */ Double, /* config */ TablesorterConfigurationStore[TElement], /* table */ JQuery[TElement]) => Unit
       ): Self = StObject.set(x, "onRenderHeader", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRenderTemplate(value: (/* index */ Double, /* template */ String) => String): Self = StObject.set(x, "onRenderTemplate", js.Any.fromFunction2(value))
+      inline def setOnRenderTemplate(value: (/* index */ Double, /* template */ String) => String): Self = StObject.set(x, "onRenderTemplate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPager(value: PagerConfigurationStore[TElement]): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+      inline def setPager(value: PagerConfigurationStore[TElement]): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsers(value: js.Array[Parser[TElement]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+      inline def setParsers(value: js.Array[Parser[TElement]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsersVarargs(value: Parser[TElement]*): Self = StObject.set(x, "parsers", js.Array(value :_*))
+      inline def setParsersVarargs(value: Parser[TElement]*): Self = StObject.set(x, "parsers", js.Array(value :_*))
       
-      @scala.inline
-      def setPointerClick(value: String): Self = StObject.set(x, "pointerClick", value.asInstanceOf[js.Any])
+      inline def setPointerClick(value: String): Self = StObject.set(x, "pointerClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerDown(value: String): Self = StObject.set(x, "pointerDown", value.asInstanceOf[js.Any])
+      inline def setPointerDown(value: String): Self = StObject.set(x, "pointerDown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerUp(value: String): Self = StObject.set(x, "pointerUp", value.asInstanceOf[js.Any])
+      inline def setPointerUp(value: String): Self = StObject.set(x, "pointerUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResort(value: Boolean): Self = StObject.set(x, "resort", value.asInstanceOf[js.Any])
+      inline def setResort(value: Boolean): Self = StObject.set(x, "resort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorHeaders(value: Selector): Self = StObject.set(x, "selectorHeaders", value.asInstanceOf[js.Any])
+      inline def setSelectorHeaders(value: Selector): Self = StObject.set(x, "selectorHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorRemove(value: Selector): Self = StObject.set(x, "selectorRemove", value.asInstanceOf[js.Any])
+      inline def setSelectorRemove(value: Selector): Self = StObject.set(x, "selectorRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorSort(value: Selector): Self = StObject.set(x, "selectorSort", value.asInstanceOf[js.Any])
+      inline def setSelectorSort(value: Selector): Self = StObject.set(x, "selectorSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideSorting(value: Boolean): Self = StObject.set(x, "serverSideSorting", value.asInstanceOf[js.Any])
+      inline def setServerSideSorting(value: Boolean): Self = StObject.set(x, "serverSideSorting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowProcessing(value: Boolean): Self = StObject.set(x, "showProcessing", value.asInstanceOf[js.Any])
+      inline def setShowProcessing(value: Boolean): Self = StObject.set(x, "showProcessing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAppend(value: js.Array[SortDefinition] | NumberDictionary[js.Array[RelativeSortDefinition]]): Self = StObject.set(x, "sortAppend", value.asInstanceOf[js.Any])
+      inline def setSortAppend(value: js.Array[SortDefinition] | NumberDictionary[js.Array[RelativeSortDefinition]]): Self = StObject.set(x, "sortAppend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAppendVarargs(value: SortDefinition*): Self = StObject.set(x, "sortAppend", js.Array(value :_*))
+      inline def setSortAppendVarargs(value: SortDefinition*): Self = StObject.set(x, "sortAppend", js.Array(value :_*))
       
-      @scala.inline
-      def setSortForce(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortForce", value.asInstanceOf[js.Any])
+      inline def setSortForce(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortForce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortForceVarargs(value: SortDefinition*): Self = StObject.set(x, "sortForce", js.Array(value :_*))
+      inline def setSortForceVarargs(value: SortDefinition*): Self = StObject.set(x, "sortForce", js.Array(value :_*))
       
-      @scala.inline
-      def setSortInitialOrder(value: SortOrder): Self = StObject.set(x, "sortInitialOrder", value.asInstanceOf[js.Any])
+      inline def setSortInitialOrder(value: SortOrder): Self = StObject.set(x, "sortInitialOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
+      inline def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
+      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
       
-      @scala.inline
-      def setSortLocaleCompare(value: Boolean): Self = StObject.set(x, "sortLocaleCompare", value.asInstanceOf[js.Any])
+      inline def setSortLocaleCompare(value: Boolean): Self = StObject.set(x, "sortLocaleCompare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortMultiSortKey(
+      inline def setSortMultiSortKey(
         value: altKey | button | buttons | clientX | clientY | ctrlKey | metaKey | movementX | movementY | offsetX | offsetY | pageX | pageY | relatedTarget | screenX | screenY | shiftKey | typings.tablesorter.tablesorterStrings.x | y
       ): Self = StObject.set(x, "sortMultiSortKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortReset(value: Boolean): Self = StObject.set(x, "sortReset", value.asInstanceOf[js.Any])
+      inline def setSortReset(value: Boolean): Self = StObject.set(x, "sortReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortResetKey(
+      inline def setSortResetKey(
         value: altKey | button | buttons | clientX | clientY | ctrlKey | metaKey | movementX | movementY | offsetX | offsetY | pageX | pageY | relatedTarget | screenX | screenY | shiftKey | typings.tablesorter.tablesorterStrings.x | y
       ): Self = StObject.set(x, "sortResetKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortRestart(value: Boolean): Self = StObject.set(x, "sortRestart", value.asInstanceOf[js.Any])
+      inline def setSortRestart(value: Boolean): Self = StObject.set(x, "sortRestart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortStable(value: Boolean): Self = StObject.set(x, "sortStable", value.asInstanceOf[js.Any])
+      inline def setSortStable(value: Boolean): Self = StObject.set(x, "sortStable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortVars(value: js.Array[TableSorting]): Self = StObject.set(x, "sortVars", value.asInstanceOf[js.Any])
+      inline def setSortVars(value: js.Array[TableSorting]): Self = StObject.set(x, "sortVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortVarsVarargs(value: TableSorting*): Self = StObject.set(x, "sortVars", js.Array(value :_*))
+      inline def setSortVarsVarargs(value: TableSorting*): Self = StObject.set(x, "sortVars", js.Array(value :_*))
       
-      @scala.inline
-      def setStringTo(value: StringSorting): Self = StObject.set(x, "stringTo", value.asInstanceOf[js.Any])
+      inline def setStringTo(value: StringSorting): Self = StObject.set(x, "stringTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndex(value: Boolean): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Boolean): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTable(value: TElement): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: TElement): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableClass(value: String): Self = StObject.set(x, "tableClass", value.asInstanceOf[js.Any])
+      inline def setTableClass(value: String): Self = StObject.set(x, "tableClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAttribute(value: String): Self = StObject.set(x, "textAttribute", value.asInstanceOf[js.Any])
+      inline def setTextAttribute(value: String): Self = StObject.set(x, "textAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextExtraction(value: basic | TextExtractor[TElement] | (MappedSettings[basic | TextExtractor[TElement]])): Self = StObject.set(x, "textExtraction", value.asInstanceOf[js.Any])
+      inline def setTextExtraction(value: basic | TextExtractor[TElement] | (MappedSettings[basic | TextExtractor[TElement]])): Self = StObject.set(x, "textExtraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextExtractionFunction3(value: (/* cell */ Element, TElement, /* index */ Double) => String): Self = StObject.set(x, "textExtraction", js.Any.fromFunction3(value))
+      inline def setTextExtractionFunction3(value: (/* cell */ Element, TElement, /* index */ Double) => String): Self = StObject.set(x, "textExtraction", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTextSorter(value: TextSorter[TElement] | MappedSettings[TextSorter[TElement]]): Self = StObject.set(x, "textSorter", value.asInstanceOf[js.Any])
+      inline def setTextSorter(value: TextSorter[TElement] | MappedSettings[TextSorter[TElement]]): Self = StObject.set(x, "textSorter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSorterFunction5(
+      inline def setTextSorterFunction5(
         value: (/* x */ String, /* y */ String, /* ascending */ Boolean, /* index */ Double, TElement) => Double
       ): Self = StObject.set(x, "textSorter", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setTheme(value: CoreTheme | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: CoreTheme | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
+      inline def setTotalRows(value: Double): Self = StObject.set(x, "totalRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsNumberFormat(value: Boolean): Self = StObject.set(x, "usNumberFormat", value.asInstanceOf[js.Any])
+      inline def setUsNumberFormat(value: Boolean): Self = StObject.set(x, "usNumberFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetClass(value: String): Self = StObject.set(x, "widgetClass", value.asInstanceOf[js.Any])
+      inline def setWidgetClass(value: String): Self = StObject.set(x, "widgetClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetOptions(value: WidgetOptionStore[TElement]): Self = StObject.set(x, "widgetOptions", value.asInstanceOf[js.Any])
+      inline def setWidgetOptions(value: WidgetOptionStore[TElement]): Self = StObject.set(x, "widgetOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgets(value: js.Array[String]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+      inline def setWidgets(value: js.Array[String]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+      inline def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value :_*))
       
-      @scala.inline
-      def setWidthFixed(value: Boolean): Self = StObject.set(x, "widthFixed", value.asInstanceOf[js.Any])
+      inline def setWidthFixed(value: Boolean): Self = StObject.set(x, "widthFixed", value.asInstanceOf[js.Any])
     }
   }
 }

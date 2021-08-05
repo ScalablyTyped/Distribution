@@ -13,6 +13,5 @@ class SignedSignatureProperties ()
   extends typings.xadesjs.xmlMod.SignedSignatureProperties
 object SignedSignatureProperties {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SignedSignatureProperties] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignedSignatureProperties").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignedSignatureProperties]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SignedSignatureProperties] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignedSignatureProperties").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignedSignatureProperties]]
 }

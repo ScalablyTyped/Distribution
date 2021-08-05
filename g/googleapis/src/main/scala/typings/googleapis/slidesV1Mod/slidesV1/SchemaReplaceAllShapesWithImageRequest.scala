@@ -54,46 +54,33 @@ trait SchemaReplaceAllShapesWithImageRequest extends StObject {
 }
 object SchemaReplaceAllShapesWithImageRequest {
   
-  @scala.inline
-  def apply(): SchemaReplaceAllShapesWithImageRequest = {
+  inline def apply(): SchemaReplaceAllShapesWithImageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplaceAllShapesWithImageRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReplaceAllShapesWithImageRequestMutableBuilder[Self <: SchemaReplaceAllShapesWithImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplaceAllShapesWithImageRequest](x: Self) {
     
-    @scala.inline
-    def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+    inline def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+    inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
     
-    @scala.inline
-    def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
+    inline def setImageReplaceMethod(value: String): Self = StObject.set(x, "imageReplaceMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
+    inline def setImageReplaceMethodUndefined: Self = StObject.set(x, "imageReplaceMethod", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
+    inline def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
+    inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
     
-    @scala.inline
-    def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+    inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setReplaceMethod(value: String): Self = StObject.set(x, "replaceMethod", value.asInstanceOf[js.Any])
+    inline def setReplaceMethod(value: String): Self = StObject.set(x, "replaceMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceMethodUndefined: Self = StObject.set(x, "replaceMethod", js.undefined)
+    inline def setReplaceMethodUndefined: Self = StObject.set(x, "replaceMethod", js.undefined)
   }
 }

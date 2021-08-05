@@ -15,25 +15,19 @@ trait ScaleType extends StObject {
 }
 object ScaleType {
   
-  @scala.inline
-  def apply(channel: NonPositionScaleChannel, scaleType: typings.vegaLite.scaleMod.ScaleType): ScaleType = {
+  inline def apply(channel: NonPositionScaleChannel, scaleType: typings.vegaLite.scaleMod.ScaleType): ScaleType = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleType]
   }
   
-  @scala.inline
-  implicit class ScaleTypeMutableBuilder[Self <: ScaleType] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleType](x: Self) {
     
-    @scala.inline
-    def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setScaleType(value: typings.vegaLite.scaleMod.ScaleType): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+    inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
   }
 }

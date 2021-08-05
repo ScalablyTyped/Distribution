@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SocketConnectOptions extends StObject
 object SocketConnectOptions {
   
-  @scala.inline
-  def TcpConnectOptions(port: Double): typings.fridaGum.TcpConnectOptions = {
+  inline def TcpConnectOptions(port: Double): typings.fridaGum.TcpConnectOptions = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.TcpConnectOptions]
   }
   
-  @scala.inline
-  def UnixConnectOptions(path: String): typings.fridaGum.UnixConnectOptions = {
+  inline def UnixConnectOptions(path: String): typings.fridaGum.UnixConnectOptions = {
     val __obj = js.Dynamic.literal(family = "unix", path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.UnixConnectOptions]
   }

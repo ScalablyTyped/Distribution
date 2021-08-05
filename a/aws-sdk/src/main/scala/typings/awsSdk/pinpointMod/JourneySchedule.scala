@@ -28,31 +28,23 @@ trait JourneySchedule extends StObject {
 }
 object JourneySchedule {
   
-  @scala.inline
-  def apply(): JourneySchedule = {
+  inline def apply(): JourneySchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JourneySchedule]
   }
   
-  @scala.inline
-  implicit class JourneyScheduleMutableBuilder[Self <: JourneySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: JourneySchedule](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: string): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: string): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

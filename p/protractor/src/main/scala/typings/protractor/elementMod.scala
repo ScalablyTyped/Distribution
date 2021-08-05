@@ -838,10 +838,8 @@ object elementMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement): ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any])).asInstanceOf[ElementFinder]
-    @scala.inline
-    def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement, locator: Locator): ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any], locator.asInstanceOf[js.Any])).asInstanceOf[ElementFinder]
+    inline def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement): ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any])).asInstanceOf[ElementFinder]
+    inline def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement, locator: Locator): ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any], locator.asInstanceOf[js.Any])).asInstanceOf[ElementFinder]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -874,8 +872,7 @@ object elementMod {
     js.Function1[/* selector */ String, ElementArrayFinder]
   ] = js.native
   
-  @scala.inline
-  def build$_=(
+  inline def build$_=(
     x: js.Function2[
       /* element */ ElementHelper, 
       /* by */ TypeofBy, 
@@ -883,8 +880,7 @@ object elementMod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("build$$")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def build_=(
+  inline def build_=(
     x: js.Function2[
       /* element */ ElementHelper, 
       /* by */ TypeofBy, 

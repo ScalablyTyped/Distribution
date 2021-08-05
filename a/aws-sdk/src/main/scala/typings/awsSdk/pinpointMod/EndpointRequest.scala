@@ -63,79 +63,55 @@ trait EndpointRequest extends StObject {
 }
 object EndpointRequest {
   
-  @scala.inline
-  def apply(): EndpointRequest = {
+  inline def apply(): EndpointRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointRequest]
   }
   
-  @scala.inline
-  implicit class EndpointRequestMutableBuilder[Self <: EndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointRequest](x: Self) {
     
-    @scala.inline
-    def setAddress(value: string): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: string): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setAttributes(value: MapOfListOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapOfListOfString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
+    inline def setChannelType(value: ChannelType): Self = StObject.set(x, "ChannelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
+    inline def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
     
-    @scala.inline
-    def setDemographic(value: EndpointDemographic): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
+    inline def setDemographic(value: EndpointDemographic): Self = StObject.set(x, "Demographic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
+    inline def setDemographicUndefined: Self = StObject.set(x, "Demographic", js.undefined)
     
-    @scala.inline
-    def setEffectiveDate(value: string): Self = StObject.set(x, "EffectiveDate", value.asInstanceOf[js.Any])
+    inline def setEffectiveDate(value: string): Self = StObject.set(x, "EffectiveDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveDateUndefined: Self = StObject.set(x, "EffectiveDate", js.undefined)
+    inline def setEffectiveDateUndefined: Self = StObject.set(x, "EffectiveDate", js.undefined)
     
-    @scala.inline
-    def setEndpointStatus(value: string): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
+    inline def setEndpointStatus(value: string): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
+    inline def setEndpointStatusUndefined: Self = StObject.set(x, "EndpointStatus", js.undefined)
     
-    @scala.inline
-    def setLocation(value: EndpointLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: EndpointLocation): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: MapOfDouble): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: MapOfDouble): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setOptOut(value: string): Self = StObject.set(x, "OptOut", value.asInstanceOf[js.Any])
+    inline def setOptOut(value: string): Self = StObject.set(x, "OptOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptOutUndefined: Self = StObject.set(x, "OptOut", js.undefined)
+    inline def setOptOutUndefined: Self = StObject.set(x, "OptOut", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setUser(value: EndpointUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: EndpointUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

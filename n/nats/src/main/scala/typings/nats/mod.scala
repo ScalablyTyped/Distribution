@@ -130,23 +130,15 @@ object mod {
   @js.native
   val SUB_DRAINING: String = js.native
   
-  @scala.inline
-  def connect(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Client]
-  @scala.inline
-  def connect(opts: ClientOpts): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def connect(url: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def connect(url: String, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
-  @scala.inline
-  def connect(url: Double): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
-  @scala.inline
-  def connect(url: Double, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
-  @scala.inline
-  def connect(url: Unit, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def connect(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Client]
+  inline def connect(opts: ClientOpts): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def connect(url: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def connect(url: String, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def connect(url: Double): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def connect(url: Double, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
+  inline def connect(url: Unit, opts: ClientOpts): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Client]
   
-  @scala.inline
-  def createInbox(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createInbox")().asInstanceOf[String]
+  inline def createInbox(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createInbox")().asInstanceOf[String]
   
   @JSImport("nats", "version")
   @js.native
@@ -319,203 +311,138 @@ object mod {
   }
   object ClientOpts {
     
-    @scala.inline
-    def apply(): ClientOpts = {
+    inline def apply(): ClientOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOpts]
     }
     
-    @scala.inline
-    implicit class ClientOptsMutableBuilder[Self <: ClientOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOpts](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setMaxPingOut(value: Double): Self = StObject.set(x, "maxPingOut", value.asInstanceOf[js.Any])
+      inline def setMaxPingOut(value: Double): Self = StObject.set(x, "maxPingOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPingOutUndefined: Self = StObject.set(x, "maxPingOut", js.undefined)
+      inline def setMaxPingOutUndefined: Self = StObject.set(x, "maxPingOut", js.undefined)
       
-      @scala.inline
-      def setMaxReconnectAttempts(value: Double): Self = StObject.set(x, "maxReconnectAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxReconnectAttempts(value: Double): Self = StObject.set(x, "maxReconnectAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReconnectAttemptsUndefined: Self = StObject.set(x, "maxReconnectAttempts", js.undefined)
+      inline def setMaxReconnectAttemptsUndefined: Self = StObject.set(x, "maxReconnectAttempts", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNkey(value: String): Self = StObject.set(x, "nkey", value.asInstanceOf[js.Any])
+      inline def setNkey(value: String): Self = StObject.set(x, "nkey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNkeyUndefined: Self = StObject.set(x, "nkey", js.undefined)
+      inline def setNkeyUndefined: Self = StObject.set(x, "nkey", js.undefined)
       
-      @scala.inline
-      def setNoEcho(value: Boolean): Self = StObject.set(x, "noEcho", value.asInstanceOf[js.Any])
+      inline def setNoEcho(value: Boolean): Self = StObject.set(x, "noEcho", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoEchoUndefined: Self = StObject.set(x, "noEcho", js.undefined)
+      inline def setNoEchoUndefined: Self = StObject.set(x, "noEcho", js.undefined)
       
-      @scala.inline
-      def setNoRandomize(value: Boolean): Self = StObject.set(x, "noRandomize", value.asInstanceOf[js.Any])
+      inline def setNoRandomize(value: Boolean): Self = StObject.set(x, "noRandomize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoRandomizeUndefined: Self = StObject.set(x, "noRandomize", js.undefined)
+      inline def setNoRandomizeUndefined: Self = StObject.set(x, "noRandomize", js.undefined)
       
-      @scala.inline
-      def setNonceSigner(value: js.Function): Self = StObject.set(x, "nonceSigner", value.asInstanceOf[js.Any])
+      inline def setNonceSigner(value: js.Function): Self = StObject.set(x, "nonceSigner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceSignerUndefined: Self = StObject.set(x, "nonceSigner", js.undefined)
+      inline def setNonceSignerUndefined: Self = StObject.set(x, "nonceSigner", js.undefined)
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      @scala.inline
-      def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
+      inline def setPedantic(value: Boolean): Self = StObject.set(x, "pedantic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
+      inline def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
       
-      @scala.inline
-      def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
+      inline def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
+      inline def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
       
-      @scala.inline
-      def setPreserveBuffers(value: Boolean): Self = StObject.set(x, "preserveBuffers", value.asInstanceOf[js.Any])
+      inline def setPreserveBuffers(value: Boolean): Self = StObject.set(x, "preserveBuffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveBuffersUndefined: Self = StObject.set(x, "preserveBuffers", js.undefined)
+      inline def setPreserveBuffersUndefined: Self = StObject.set(x, "preserveBuffers", js.undefined)
       
-      @scala.inline
-      def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+      inline def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectDelayHandler(value: () => Double): Self = StObject.set(x, "reconnectDelayHandler", js.Any.fromFunction0(value))
+      inline def setReconnectDelayHandler(value: () => Double): Self = StObject.set(x, "reconnectDelayHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReconnectDelayHandlerUndefined: Self = StObject.set(x, "reconnectDelayHandler", js.undefined)
+      inline def setReconnectDelayHandlerUndefined: Self = StObject.set(x, "reconnectDelayHandler", js.undefined)
       
-      @scala.inline
-      def setReconnectJitter(value: Double): Self = StObject.set(x, "reconnectJitter", value.asInstanceOf[js.Any])
+      inline def setReconnectJitter(value: Double): Self = StObject.set(x, "reconnectJitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectJitterTLS(value: Double): Self = StObject.set(x, "reconnectJitterTLS", value.asInstanceOf[js.Any])
+      inline def setReconnectJitterTLS(value: Double): Self = StObject.set(x, "reconnectJitterTLS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectJitterTLSUndefined: Self = StObject.set(x, "reconnectJitterTLS", js.undefined)
+      inline def setReconnectJitterTLSUndefined: Self = StObject.set(x, "reconnectJitterTLS", js.undefined)
       
-      @scala.inline
-      def setReconnectJitterUndefined: Self = StObject.set(x, "reconnectJitter", js.undefined)
+      inline def setReconnectJitterUndefined: Self = StObject.set(x, "reconnectJitter", js.undefined)
       
-      @scala.inline
-      def setReconnectTimeWait(value: Double): Self = StObject.set(x, "reconnectTimeWait", value.asInstanceOf[js.Any])
+      inline def setReconnectTimeWait(value: Double): Self = StObject.set(x, "reconnectTimeWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectTimeWaitUndefined: Self = StObject.set(x, "reconnectTimeWait", js.undefined)
+      inline def setReconnectTimeWaitUndefined: Self = StObject.set(x, "reconnectTimeWait", js.undefined)
       
-      @scala.inline
-      def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
+      inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
       
-      @scala.inline
-      def setServers(value: js.Array[String]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+      inline def setServers(value: js.Array[String]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
+      inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
       
-      @scala.inline
-      def setServersVarargs(value: String*): Self = StObject.set(x, "servers", js.Array(value :_*))
+      inline def setServersVarargs(value: String*): Self = StObject.set(x, "servers", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTls(value: Boolean | TlsOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Boolean | TlsOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenHandler(value: () => String): Self = StObject.set(x, "tokenHandler", js.Any.fromFunction0(value))
+      inline def setTokenHandler(value: () => String): Self = StObject.set(x, "tokenHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTokenHandlerUndefined: Self = StObject.set(x, "tokenHandler", js.undefined)
+      inline def setTokenHandlerUndefined: Self = StObject.set(x, "tokenHandler", js.undefined)
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUseOldRequestStyle(value: Boolean): Self = StObject.set(x, "useOldRequestStyle", value.asInstanceOf[js.Any])
+      inline def setUseOldRequestStyle(value: Boolean): Self = StObject.set(x, "useOldRequestStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseOldRequestStyleUndefined: Self = StObject.set(x, "useOldRequestStyle", js.undefined)
+      inline def setUseOldRequestStyleUndefined: Self = StObject.set(x, "useOldRequestStyle", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserCreds(value: String): Self = StObject.set(x, "userCreds", value.asInstanceOf[js.Any])
+      inline def setUserCreds(value: String): Self = StObject.set(x, "userCreds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserCredsUndefined: Self = StObject.set(x, "userCreds", js.undefined)
+      inline def setUserCredsUndefined: Self = StObject.set(x, "userCreds", js.undefined)
       
-      @scala.inline
-      def setUserJWT(value: () => String): Self = StObject.set(x, "userJWT", js.Any.fromFunction0(value))
+      inline def setUserJWT(value: () => String): Self = StObject.set(x, "userJWT", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUserJWTUndefined: Self = StObject.set(x, "userJWT", js.undefined)
+      inline def setUserJWTUndefined: Self = StObject.set(x, "userJWT", js.undefined)
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
       
-      @scala.inline
-      def setWaitOnFirstConnect(value: Boolean): Self = StObject.set(x, "waitOnFirstConnect", value.asInstanceOf[js.Any])
+      inline def setWaitOnFirstConnect(value: Boolean): Self = StObject.set(x, "waitOnFirstConnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitOnFirstConnectUndefined: Self = StObject.set(x, "waitOnFirstConnect", js.undefined)
+      inline def setWaitOnFirstConnectUndefined: Self = StObject.set(x, "waitOnFirstConnect", js.undefined)
       
-      @scala.inline
-      def setYieldTime(value: Double): Self = StObject.set(x, "yieldTime", value.asInstanceOf[js.Any])
+      inline def setYieldTime(value: Double): Self = StObject.set(x, "yieldTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYieldTimeUndefined: Self = StObject.set(x, "yieldTime", js.undefined)
+      inline def setYieldTimeUndefined: Self = StObject.set(x, "yieldTime", js.undefined)
     }
   }
   
@@ -529,20 +456,16 @@ object mod {
   }
   object NatsError {
     
-    @scala.inline
-    def apply(chainedError: Error, code: String, message: String, name: String): NatsError = {
+    inline def apply(chainedError: Error, code: String, message: String, name: String): NatsError = {
       val __obj = js.Dynamic.literal(chainedError = chainedError.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NatsError]
     }
     
-    @scala.inline
-    implicit class NatsErrorMutableBuilder[Self <: NatsError] (val x: Self) extends AnyVal {
+    extension [Self <: NatsError](x: Self) {
       
-      @scala.inline
-      def setChainedError(value: Error): Self = StObject.set(x, "chainedError", value.asInstanceOf[js.Any])
+      inline def setChainedError(value: Error): Self = StObject.set(x, "chainedError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -554,26 +477,20 @@ object mod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(): RequestOptions = {
+    inline def apply(): RequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -585,26 +502,20 @@ object mod {
   }
   object SubscribeOptions {
     
-    @scala.inline
-    def apply(): SubscribeOptions = {
+    inline def apply(): SubscribeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    @scala.inline
-    implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeOptions](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+      inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     }
   }
 }

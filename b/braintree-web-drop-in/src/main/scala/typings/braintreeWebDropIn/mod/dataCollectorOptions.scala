@@ -10,19 +10,15 @@ trait dataCollectorOptions extends StObject {
 }
 object dataCollectorOptions {
   
-  @scala.inline
-  def apply(): dataCollectorOptions = {
+  inline def apply(): dataCollectorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[dataCollectorOptions]
   }
   
-  @scala.inline
-  implicit class dataCollectorOptionsMutableBuilder[Self <: dataCollectorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: dataCollectorOptions](x: Self) {
     
-    @scala.inline
-    def setKount(value: Boolean): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
+    inline def setKount(value: Boolean): Self = StObject.set(x, "kount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKountUndefined: Self = StObject.set(x, "kount", js.undefined)
+    inline def setKountUndefined: Self = StObject.set(x, "kount", js.undefined)
   }
 }

@@ -18,10 +18,10 @@ object mod {
     /* CompleteClass */
     override def handle(request: Request): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var headersDefaults: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var queryDefaults: js.Any = js.native
   }
   
@@ -31,17 +31,14 @@ object mod {
   }
   object IOpenAPIDefaultSetter {
     
-    @scala.inline
-    def apply(handle: Request => Unit): IOpenAPIDefaultSetter = {
+    inline def apply(handle: Request => Unit): IOpenAPIDefaultSetter = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
       __obj.asInstanceOf[IOpenAPIDefaultSetter]
     }
     
-    @scala.inline
-    implicit class IOpenAPIDefaultSetterMutableBuilder[Self <: IOpenAPIDefaultSetter] (val x: Self) extends AnyVal {
+    extension [Self <: IOpenAPIDefaultSetter](x: Self) {
       
-      @scala.inline
-      def setHandle(value: Request => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+      inline def setHandle(value: Request => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }
   }
   
@@ -49,26 +46,22 @@ object mod {
     extends StObject
        with IOpenAPIDefaultSetter {
     
-    var headersDefaults: js.Any
+    /* private */ var headersDefaults: js.Any
     
-    var queryDefaults: js.Any
+    /* private */ var queryDefaults: js.Any
   }
   object OpenAPIDefaultSetter {
     
-    @scala.inline
-    def apply(handle: Request => Unit, headersDefaults: js.Any, queryDefaults: js.Any): OpenAPIDefaultSetter = {
+    inline def apply(handle: Request => Unit, headersDefaults: js.Any, queryDefaults: js.Any): OpenAPIDefaultSetter = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle), headersDefaults = headersDefaults.asInstanceOf[js.Any], queryDefaults = queryDefaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIDefaultSetter]
     }
     
-    @scala.inline
-    implicit class OpenAPIDefaultSetterMutableBuilder[Self <: OpenAPIDefaultSetter] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIDefaultSetter](x: Self) {
       
-      @scala.inline
-      def setHeadersDefaults(value: js.Any): Self = StObject.set(x, "headersDefaults", value.asInstanceOf[js.Any])
+      inline def setHeadersDefaults(value: js.Any): Self = StObject.set(x, "headersDefaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryDefaults(value: js.Any): Self = StObject.set(x, "queryDefaults", value.asInstanceOf[js.Any])
+      inline def setQueryDefaults(value: js.Any): Self = StObject.set(x, "queryDefaults", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,26 +73,20 @@ object mod {
   }
   object OpenAPIDefaultSetterArgs {
     
-    @scala.inline
-    def apply(parameters: js.Array[ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject]): OpenAPIDefaultSetterArgs = {
+    inline def apply(parameters: js.Array[ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject]): OpenAPIDefaultSetterArgs = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPIDefaultSetterArgs]
     }
     
-    @scala.inline
-    implicit class OpenAPIDefaultSetterArgsMutableBuilder[Self <: OpenAPIDefaultSetterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPIDefaultSetterArgs](x: Self) {
       
-      @scala.inline
-      def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
+      inline def setLoggingKey(value: String): Self = StObject.set(x, "loggingKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingKeyUndefined: Self = StObject.set(x, "loggingKey", js.undefined)
+      inline def setLoggingKeyUndefined: Self = StObject.set(x, "loggingKey", js.undefined)
       
-      @scala.inline
-      def setParameters(value: js.Array[ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Array[ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersVarargs(value: (ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: (ParameterObject | typings.openapiTypes.mod.OpenAPIV3.ParameterObject)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     }
   }
 }

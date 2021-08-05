@@ -28,8 +28,7 @@ trait NotebookInstanceLifecycleConfigSummary extends StObject {
 }
 object NotebookInstanceLifecycleConfigSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NotebookInstanceLifecycleConfigArn: NotebookInstanceLifecycleConfigArn,
     NotebookInstanceLifecycleConfigName: NotebookInstanceLifecycleConfigName
   ): NotebookInstanceLifecycleConfigSummary = {
@@ -37,25 +36,18 @@ object NotebookInstanceLifecycleConfigSummary {
     __obj.asInstanceOf[NotebookInstanceLifecycleConfigSummary]
   }
   
-  @scala.inline
-  implicit class NotebookInstanceLifecycleConfigSummaryMutableBuilder[Self <: NotebookInstanceLifecycleConfigSummary] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookInstanceLifecycleConfigSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
   }
 }

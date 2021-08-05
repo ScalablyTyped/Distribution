@@ -13,22 +13,17 @@ trait UpdateAttributesRequest extends StObject {
 }
 object UpdateAttributesRequest {
   
-  @scala.inline
-  def apply(): UpdateAttributesRequest = {
+  inline def apply(): UpdateAttributesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateAttributesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAttributesRequestMutableBuilder[Self <: UpdateAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setBlacklist(value: ListOfString): Self = StObject.set(x, "Blacklist", value.asInstanceOf[js.Any])
+    inline def setBlacklist(value: ListOfString): Self = StObject.set(x, "Blacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlacklistUndefined: Self = StObject.set(x, "Blacklist", js.undefined)
+    inline def setBlacklistUndefined: Self = StObject.set(x, "Blacklist", js.undefined)
     
-    @scala.inline
-    def setBlacklistVarargs(value: string*): Self = StObject.set(x, "Blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: string*): Self = StObject.set(x, "Blacklist", js.Array(value :_*))
   }
 }

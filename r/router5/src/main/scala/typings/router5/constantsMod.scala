@@ -32,8 +32,7 @@ object constantsMod {
   }
   object Constants_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ROUTER_START: String,
       ROUTER_STOP: String,
       TRANSITION_CANCEL: String,
@@ -46,29 +45,21 @@ object constantsMod {
       __obj.asInstanceOf[Constants_]
     }
     
-    @scala.inline
-    implicit class Constants_MutableBuilder[Self <: Constants_] (val x: Self) extends AnyVal {
+    extension [Self <: Constants_](x: Self) {
       
-      @scala.inline
-      def setROUTER_START(value: String): Self = StObject.set(x, "ROUTER_START", value.asInstanceOf[js.Any])
+      inline def setROUTER_START(value: String): Self = StObject.set(x, "ROUTER_START", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROUTER_STOP(value: String): Self = StObject.set(x, "ROUTER_STOP", value.asInstanceOf[js.Any])
+      inline def setROUTER_STOP(value: String): Self = StObject.set(x, "ROUTER_STOP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSITION_CANCEL(value: String): Self = StObject.set(x, "TRANSITION_CANCEL", value.asInstanceOf[js.Any])
+      inline def setTRANSITION_CANCEL(value: String): Self = StObject.set(x, "TRANSITION_CANCEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSITION_ERROR(value: String): Self = StObject.set(x, "TRANSITION_ERROR", value.asInstanceOf[js.Any])
+      inline def setTRANSITION_ERROR(value: String): Self = StObject.set(x, "TRANSITION_ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSITION_START(value: String): Self = StObject.set(x, "TRANSITION_START", value.asInstanceOf[js.Any])
+      inline def setTRANSITION_START(value: String): Self = StObject.set(x, "TRANSITION_START", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSITION_SUCCESS(value: String): Self = StObject.set(x, "TRANSITION_SUCCESS", value.asInstanceOf[js.Any])
+      inline def setTRANSITION_SUCCESS(value: String): Self = StObject.set(x, "TRANSITION_SUCCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNKNOWN_ROUTE(value: String): Self = StObject.set(x, "UNKNOWN_ROUTE", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN_ROUTE(value: String): Self = StObject.set(x, "UNKNOWN_ROUTE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +85,7 @@ object constantsMod {
   }
   object ErrorCodes_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CANNOT_ACTIVATE: String,
       CANNOT_DEACTIVATE: String,
       NO_START_PATH_OR_STATE: String,
@@ -110,35 +100,25 @@ object constantsMod {
       __obj.asInstanceOf[ErrorCodes_]
     }
     
-    @scala.inline
-    implicit class ErrorCodes_MutableBuilder[Self <: ErrorCodes_] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorCodes_](x: Self) {
       
-      @scala.inline
-      def setCANNOT_ACTIVATE(value: String): Self = StObject.set(x, "CANNOT_ACTIVATE", value.asInstanceOf[js.Any])
+      inline def setCANNOT_ACTIVATE(value: String): Self = StObject.set(x, "CANNOT_ACTIVATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCANNOT_DEACTIVATE(value: String): Self = StObject.set(x, "CANNOT_DEACTIVATE", value.asInstanceOf[js.Any])
+      inline def setCANNOT_DEACTIVATE(value: String): Self = StObject.set(x, "CANNOT_DEACTIVATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_START_PATH_OR_STATE(value: String): Self = StObject.set(x, "NO_START_PATH_OR_STATE", value.asInstanceOf[js.Any])
+      inline def setNO_START_PATH_OR_STATE(value: String): Self = StObject.set(x, "NO_START_PATH_OR_STATE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROUTER_ALREADY_STARTED(value: String): Self = StObject.set(x, "ROUTER_ALREADY_STARTED", value.asInstanceOf[js.Any])
+      inline def setROUTER_ALREADY_STARTED(value: String): Self = StObject.set(x, "ROUTER_ALREADY_STARTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROUTER_NOT_STARTED(value: String): Self = StObject.set(x, "ROUTER_NOT_STARTED", value.asInstanceOf[js.Any])
+      inline def setROUTER_NOT_STARTED(value: String): Self = StObject.set(x, "ROUTER_NOT_STARTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROUTE_NOT_FOUND(value: String): Self = StObject.set(x, "ROUTE_NOT_FOUND", value.asInstanceOf[js.Any])
+      inline def setROUTE_NOT_FOUND(value: String): Self = StObject.set(x, "ROUTE_NOT_FOUND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAME_STATES(value: String): Self = StObject.set(x, "SAME_STATES", value.asInstanceOf[js.Any])
+      inline def setSAME_STATES(value: String): Self = StObject.set(x, "SAME_STATES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSITION_CANCELLED(value: String): Self = StObject.set(x, "TRANSITION_CANCELLED", value.asInstanceOf[js.Any])
+      inline def setTRANSITION_CANCELLED(value: String): Self = StObject.set(x, "TRANSITION_CANCELLED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRANSITION_ERR(value: String): Self = StObject.set(x, "TRANSITION_ERR", value.asInstanceOf[js.Any])
+      inline def setTRANSITION_ERR(value: String): Self = StObject.set(x, "TRANSITION_ERR", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -61,121 +61,83 @@ trait FPSMeterOptions extends StObject {
 }
 object FPSMeterOptions {
   
-  @scala.inline
-  def apply(): FPSMeterOptions = {
+  inline def apply(): FPSMeterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FPSMeterOptions]
   }
   
-  @scala.inline
-  implicit class FPSMeterOptionsMutableBuilder[Self <: FPSMeterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FPSMeterOptions](x: Self) {
     
-    @scala.inline
-    def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    @scala.inline
-    def setGraph(value: Double): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: Double): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+    inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
-    @scala.inline
-    def setHeat(value: Double): Self = StObject.set(x, "heat", value.asInstanceOf[js.Any])
+    inline def setHeat(value: Double): Self = StObject.set(x, "heat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeatUndefined: Self = StObject.set(x, "heat", js.undefined)
+    inline def setHeatUndefined: Self = StObject.set(x, "heat", js.undefined)
     
-    @scala.inline
-    def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setMaxFps(value: Double): Self = StObject.set(x, "maxFps", value.asInstanceOf[js.Any])
+    inline def setMaxFps(value: Double): Self = StObject.set(x, "maxFps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFpsUndefined: Self = StObject.set(x, "maxFps", js.undefined)
+    inline def setMaxFpsUndefined: Self = StObject.set(x, "maxFps", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
+    inline def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+    inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
-    @scala.inline
-    def setToggleOn(value: String): Self = StObject.set(x, "toggleOn", value.asInstanceOf[js.Any])
+    inline def setToggleOn(value: String): Self = StObject.set(x, "toggleOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleOnUndefined: Self = StObject.set(x, "toggleOn", js.undefined)
+    inline def setToggleOnUndefined: Self = StObject.set(x, "toggleOn", js.undefined)
     
-    @scala.inline
-    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class WorkspaceChange () extends StObject {
   def this(workspaceEdit: WorkspaceEdit) = this()
   
-  var _textEditChanges: js.Any = js.native
+  /* private */ var _textEditChanges: js.Any = js.native
   
-  var _workspaceEdit: js.Any = js.native
+  /* private */ var _workspaceEdit: js.Any = js.native
   
-  var checkDocumentChanges: js.Any = js.native
+  /* private */ var checkDocumentChanges: js.Any = js.native
   
   def createFile(uri: DocumentUri): Unit = js.native
   def createFile(uri: DocumentUri, options: CreateFileOptions): Unit = js.native

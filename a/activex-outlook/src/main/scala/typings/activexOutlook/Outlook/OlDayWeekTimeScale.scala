@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlDayWeekTimeScale extends StObject
 object OlDayWeekTimeScale {
   
-  @scala.inline
-  def olTimeScale10Minutes: `2` = 2.asInstanceOf[`2`]
+  inline def olTimeScale10Minutes: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olTimeScale15Minutes: `3` = 3.asInstanceOf[`3`]
+  inline def olTimeScale15Minutes: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olTimeScale30Minutes: `4` = 4.asInstanceOf[`4`]
+  inline def olTimeScale30Minutes: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olTimeScale5Minutes: `0` = 0.asInstanceOf[`0`]
+  inline def olTimeScale5Minutes: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olTimeScale60Minutes: `5` = 5.asInstanceOf[`5`]
+  inline def olTimeScale60Minutes: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olTimeScale6Minutes: `1` = 1.asInstanceOf[`1`]
+  inline def olTimeScale6Minutes: `1` = 1.asInstanceOf[`1`]
 }

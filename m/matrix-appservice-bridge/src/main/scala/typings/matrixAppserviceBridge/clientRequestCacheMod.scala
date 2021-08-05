@@ -42,12 +42,12 @@ object clientRequestCacheMod {
       */
     def getCachedResults(): Map[String, Content[T]] = js.native
     
-    val maxSize: js.Any = js.native
+    /* private */ val maxSize: js.Any = js.native
     
-    var requestContent: js.Any = js.native
+    /* private */ var requestContent: js.Any = js.native
     
-    val requestFunc: js.Any = js.native
+    /* private */ val requestFunc: js.Any = js.native
     
-    val ttl: js.Any = js.native
+    /* private */ val ttl: js.Any = js.native
   }
 }

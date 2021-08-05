@@ -68,64 +68,45 @@ trait LocatorSearchSourceProperties
 }
 object LocatorSearchSourceProperties {
   
-  @scala.inline
-  def apply(): LocatorSearchSourceProperties = {
+  inline def apply(): LocatorSearchSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocatorSearchSourceProperties]
   }
   
-  @scala.inline
-  implicit class LocatorSearchSourcePropertiesMutableBuilder[Self <: LocatorSearchSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LocatorSearchSourceProperties](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
-    @scala.inline
-    def setDefaultZoomScale(value: Double): Self = StObject.set(x, "defaultZoomScale", value.asInstanceOf[js.Any])
+    inline def setDefaultZoomScale(value: Double): Self = StObject.set(x, "defaultZoomScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultZoomScaleUndefined: Self = StObject.set(x, "defaultZoomScale", js.undefined)
+    inline def setDefaultZoomScaleUndefined: Self = StObject.set(x, "defaultZoomScale", js.undefined)
     
-    @scala.inline
-    def setLocationType(value: rooftop | street): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: rooftop | street): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
-    @scala.inline
-    def setLocator(value: LocatorProperties): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
+    inline def setLocator(value: LocatorProperties): Self = StObject.set(x, "locator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocatorUndefined: Self = StObject.set(x, "locator", js.undefined)
+    inline def setLocatorUndefined: Self = StObject.set(x, "locator", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSearchTemplate(value: String): Self = StObject.set(x, "searchTemplate", value.asInstanceOf[js.Any])
+    inline def setSearchTemplate(value: String): Self = StObject.set(x, "searchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTemplateUndefined: Self = StObject.set(x, "searchTemplate", js.undefined)
+    inline def setSearchTemplateUndefined: Self = StObject.set(x, "searchTemplate", js.undefined)
     
-    @scala.inline
-    def setSingleLineFieldName(value: String): Self = StObject.set(x, "singleLineFieldName", value.asInstanceOf[js.Any])
+    inline def setSingleLineFieldName(value: String): Self = StObject.set(x, "singleLineFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleLineFieldNameUndefined: Self = StObject.set(x, "singleLineFieldName", js.undefined)
+    inline def setSingleLineFieldNameUndefined: Self = StObject.set(x, "singleLineFieldName", js.undefined)
   }
 }

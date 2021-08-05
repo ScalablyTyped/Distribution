@@ -139,8 +139,7 @@ trait relationshipCreateRendererParams
 }
 object relationshipCreateRendererParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field1: relationshipCreateRendererParamsField1,
     field2: relationshipCreateRendererParamsField2,
@@ -153,97 +152,66 @@ object relationshipCreateRendererParams {
     __obj.asInstanceOf[relationshipCreateRendererParams]
   }
   
-  @scala.inline
-  implicit class relationshipCreateRendererParamsMutableBuilder[Self <: relationshipCreateRendererParams] (val x: Self) extends AnyVal {
+  extension [Self <: relationshipCreateRendererParams](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setClassificationMethod(value: quantile | `equal-interval` | `natural-breaks`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
+    inline def setClassificationMethod(value: quantile | `equal-interval` | `natural-breaks`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationMethodUndefined: Self = StObject.set(x, "classificationMethod", js.undefined)
+    inline def setClassificationMethodUndefined: Self = StObject.set(x, "classificationMethod", js.undefined)
     
-    @scala.inline
-    def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
+    inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
+    inline def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
     
-    @scala.inline
-    def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
+    inline def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
+    inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
-    @scala.inline
-    def setEdgesType(value: String): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
+    inline def setEdgesType(value: String): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
+    inline def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
     
-    @scala.inline
-    def setField1(value: relationshipCreateRendererParamsField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
+    inline def setField1(value: relationshipCreateRendererParamsField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField2(value: relationshipCreateRendererParamsField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
+    inline def setField2(value: relationshipCreateRendererParamsField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptions(value: relationshipCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: relationshipCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    @scala.inline
-    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
+    inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumClassesUndefined: Self = StObject.set(x, "numClasses", js.undefined)
+    inline def setNumClassesUndefined: Self = StObject.set(x, "numClasses", js.undefined)
     
-    @scala.inline
-    def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
+    inline def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
+    inline def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
     
-    @scala.inline
-    def setRelationshipScheme(value: RelationshipScheme): Self = StObject.set(x, "relationshipScheme", value.asInstanceOf[js.Any])
+    inline def setRelationshipScheme(value: RelationshipScheme): Self = StObject.set(x, "relationshipScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipSchemeUndefined: Self = StObject.set(x, "relationshipScheme", js.undefined)
+    inline def setRelationshipSchemeUndefined: Self = StObject.set(x, "relationshipScheme", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
+    inline def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
+    inline def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
-    @scala.inline
-    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+    inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

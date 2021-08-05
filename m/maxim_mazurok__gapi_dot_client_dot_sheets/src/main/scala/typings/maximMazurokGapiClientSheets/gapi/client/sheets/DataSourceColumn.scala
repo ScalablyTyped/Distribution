@@ -14,25 +14,19 @@ trait DataSourceColumn extends StObject {
 }
 object DataSourceColumn {
   
-  @scala.inline
-  def apply(): DataSourceColumn = {
+  inline def apply(): DataSourceColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceColumn]
   }
   
-  @scala.inline
-  implicit class DataSourceColumnMutableBuilder[Self <: DataSourceColumn] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceColumn](x: Self) {
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setReference(value: DataSourceColumnReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: DataSourceColumnReference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
   }
 }

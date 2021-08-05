@@ -23,8 +23,7 @@ trait OpMap extends StObject {
 }
 object OpMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: Double,
     `create-replacement`: Double,
     delete: Double,
@@ -39,28 +38,20 @@ object OpMap {
     __obj.asInstanceOf[OpMap]
   }
   
-  @scala.inline
-  implicit class OpMapMutableBuilder[Self <: OpMap] (val x: Self) extends AnyVal {
+  extension [Self <: OpMap](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Double): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCreate-replacement`(value: Double): Self = StObject.set(x, "create-replacement", value.asInstanceOf[js.Any])
+    inline def `setCreate-replacement`(value: Double): Self = StObject.set(x, "create-replacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDelete-replaced`(value: Double): Self = StObject.set(x, "delete-replaced", value.asInstanceOf[js.Any])
+    inline def `setDelete-replaced`(value: Double): Self = StObject.set(x, "delete-replaced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: Double): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Double): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSame(value: Double): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
+    inline def setSame(value: Double): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Double): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

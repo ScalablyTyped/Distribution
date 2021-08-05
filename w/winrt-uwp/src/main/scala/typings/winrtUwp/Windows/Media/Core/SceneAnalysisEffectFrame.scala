@@ -41,8 +41,7 @@ trait SceneAnalysisEffectFrame extends StObject {
 }
 object SceneAnalysisEffectFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     duration: Double,
     extendedProperties: IPropertySet,
@@ -59,37 +58,26 @@ object SceneAnalysisEffectFrame {
     __obj.asInstanceOf[SceneAnalysisEffectFrame]
   }
   
-  @scala.inline
-  implicit class SceneAnalysisEffectFrameMutableBuilder[Self <: SceneAnalysisEffectFrame] (val x: Self) extends AnyVal {
+  extension [Self <: SceneAnalysisEffectFrame](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedProperties(value: IPropertySet): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
+    inline def setExtendedProperties(value: IPropertySet): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameControlValues(value: CapturedFrameControlValues): Self = StObject.set(x, "frameControlValues", value.asInstanceOf[js.Any])
+    inline def setFrameControlValues(value: CapturedFrameControlValues): Self = StObject.set(x, "frameControlValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighDynamicRange(value: HighDynamicRangeOutput): Self = StObject.set(x, "highDynamicRange", value.asInstanceOf[js.Any])
+    inline def setHighDynamicRange(value: HighDynamicRangeOutput): Self = StObject.set(x, "highDynamicRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDiscontinuous(value: Boolean): Self = StObject.set(x, "isDiscontinuous", value.asInstanceOf[js.Any])
+    inline def setIsDiscontinuous(value: Boolean): Self = StObject.set(x, "isDiscontinuous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
+    inline def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemRelativeTime(value: Double): Self = StObject.set(x, "systemRelativeTime", value.asInstanceOf[js.Any])
+    inline def setSystemRelativeTime(value: Double): Self = StObject.set(x, "systemRelativeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

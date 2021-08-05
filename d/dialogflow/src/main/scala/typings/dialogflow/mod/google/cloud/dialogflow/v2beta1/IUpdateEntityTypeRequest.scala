@@ -19,40 +19,29 @@ trait IUpdateEntityTypeRequest extends StObject {
 }
 object IUpdateEntityTypeRequest {
   
-  @scala.inline
-  def apply(): IUpdateEntityTypeRequest = {
+  inline def apply(): IUpdateEntityTypeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpdateEntityTypeRequest]
   }
   
-  @scala.inline
-  implicit class IUpdateEntityTypeRequestMutableBuilder[Self <: IUpdateEntityTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateEntityTypeRequest](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: IEntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: IEntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeNull: Self = StObject.set(x, "entityType", null)
+    inline def setEntityTypeNull: Self = StObject.set(x, "entityType", null)
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

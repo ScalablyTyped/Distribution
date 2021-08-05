@@ -14,8 +14,7 @@ object menuEventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def MenuEvents(hasMenuRefCancelledDefaultFocus: MenuEventsProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuEvents")(hasMenuRefCancelledDefaultFocus.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def MenuEvents(hasMenuRefCancelledDefaultFocus: MenuEventsProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuEvents")(hasMenuRefCancelledDefaultFocus.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   trait MenuEventsProps extends StObject {
     
@@ -27,8 +26,7 @@ object menuEventsMod {
   }
   object MenuEventsProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelled: Boolean,
       defaultFocus: first | last | String,
       menuRef: MutableRefObject[HTMLDivElement | Null]
@@ -37,17 +35,13 @@ object menuEventsMod {
       __obj.asInstanceOf[MenuEventsProps]
     }
     
-    @scala.inline
-    implicit class MenuEventsPropsMutableBuilder[Self <: MenuEventsProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenuEventsProps](x: Self) {
       
-      @scala.inline
-      def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+      inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuRef(value: MutableRefObject[HTMLDivElement | Null]): Self = StObject.set(x, "menuRef", value.asInstanceOf[js.Any])
+      inline def setMenuRef(value: MutableRefObject[HTMLDivElement | Null]): Self = StObject.set(x, "menuRef", value.asInstanceOf[js.Any])
     }
   }
 }

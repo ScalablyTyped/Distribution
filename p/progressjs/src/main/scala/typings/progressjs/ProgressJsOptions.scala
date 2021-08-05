@@ -23,31 +23,23 @@ trait ProgressJsOptions extends StObject {
 }
 object ProgressJsOptions {
   
-  @scala.inline
-  def apply(): ProgressJsOptions = {
+  inline def apply(): ProgressJsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressJsOptions]
   }
   
-  @scala.inline
-  implicit class ProgressJsOptionsMutableBuilder[Self <: ProgressJsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressJsOptions](x: Self) {
     
-    @scala.inline
-    def setConsiderTransition(value: Boolean): Self = StObject.set(x, "considerTransition", value.asInstanceOf[js.Any])
+    inline def setConsiderTransition(value: Boolean): Self = StObject.set(x, "considerTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsiderTransitionUndefined: Self = StObject.set(x, "considerTransition", js.undefined)
+    inline def setConsiderTransitionUndefined: Self = StObject.set(x, "considerTransition", js.undefined)
     
-    @scala.inline
-    def setOverlayMode(value: Boolean): Self = StObject.set(x, "overlayMode", value.asInstanceOf[js.Any])
+    inline def setOverlayMode(value: Boolean): Self = StObject.set(x, "overlayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayModeUndefined: Self = StObject.set(x, "overlayMode", js.undefined)
+    inline def setOverlayModeUndefined: Self = StObject.set(x, "overlayMode", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

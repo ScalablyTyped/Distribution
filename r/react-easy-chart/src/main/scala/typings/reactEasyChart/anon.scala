@@ -18,38 +18,28 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(): Bottom = {
+    inline def apply(): Bottom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -63,26 +53,20 @@ object anon {
   }
   object Color {
     
-    @scala.inline
-    def apply(key: String, value: Double): Color = {
+    inline def apply(key: String, value: Double): Color = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,17 +76,14 @@ object anon {
   }
   object ColorString {
     
-    @scala.inline
-    def apply(color: String): ColorString = {
+    inline def apply(color: String): ColorString = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorString]
     }
     
-    @scala.inline
-    implicit class ColorStringMutableBuilder[Self <: ColorString] (val x: Self) extends AnyVal {
+    extension [Self <: ColorString](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,24 +97,19 @@ object anon {
   }
   object Stroke {
     
-    @scala.inline
-    def apply(color: String, stroke: String, `type`: String): Stroke = {
+    inline def apply(color: String, stroke: String, `type`: String): Stroke = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stroke]
     }
     
-    @scala.inline
-    implicit class StrokeMutableBuilder[Self <: Stroke] (val x: Self) extends AnyVal {
+    extension [Self <: Stroke](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,32 +123,24 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(): X = {
+    inline def apply(): X = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+      inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -184,26 +152,20 @@ object anon {
   }
   object Y {
     
-    @scala.inline
-    def apply(): Y = {
+    inline def apply(): Y = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Y]
     }
     
-    @scala.inline
-    implicit class YMutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
+    extension [Self <: Y](x: Self) {
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
 }

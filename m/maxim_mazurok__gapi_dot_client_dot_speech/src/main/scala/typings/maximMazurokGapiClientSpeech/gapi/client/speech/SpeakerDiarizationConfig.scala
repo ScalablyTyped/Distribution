@@ -26,37 +26,27 @@ trait SpeakerDiarizationConfig extends StObject {
 }
 object SpeakerDiarizationConfig {
   
-  @scala.inline
-  def apply(): SpeakerDiarizationConfig = {
+  inline def apply(): SpeakerDiarizationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpeakerDiarizationConfig]
   }
   
-  @scala.inline
-  implicit class SpeakerDiarizationConfigMutableBuilder[Self <: SpeakerDiarizationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SpeakerDiarizationConfig](x: Self) {
     
-    @scala.inline
-    def setEnableSpeakerDiarization(value: Boolean): Self = StObject.set(x, "enableSpeakerDiarization", value.asInstanceOf[js.Any])
+    inline def setEnableSpeakerDiarization(value: Boolean): Self = StObject.set(x, "enableSpeakerDiarization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSpeakerDiarizationUndefined: Self = StObject.set(x, "enableSpeakerDiarization", js.undefined)
+    inline def setEnableSpeakerDiarizationUndefined: Self = StObject.set(x, "enableSpeakerDiarization", js.undefined)
     
-    @scala.inline
-    def setMaxSpeakerCount(value: Double): Self = StObject.set(x, "maxSpeakerCount", value.asInstanceOf[js.Any])
+    inline def setMaxSpeakerCount(value: Double): Self = StObject.set(x, "maxSpeakerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeakerCountUndefined: Self = StObject.set(x, "maxSpeakerCount", js.undefined)
+    inline def setMaxSpeakerCountUndefined: Self = StObject.set(x, "maxSpeakerCount", js.undefined)
     
-    @scala.inline
-    def setMinSpeakerCount(value: Double): Self = StObject.set(x, "minSpeakerCount", value.asInstanceOf[js.Any])
+    inline def setMinSpeakerCount(value: Double): Self = StObject.set(x, "minSpeakerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSpeakerCountUndefined: Self = StObject.set(x, "minSpeakerCount", js.undefined)
+    inline def setMinSpeakerCountUndefined: Self = StObject.set(x, "minSpeakerCount", js.undefined)
     
-    @scala.inline
-    def setSpeakerTag(value: Double): Self = StObject.set(x, "speakerTag", value.asInstanceOf[js.Any])
+    inline def setSpeakerTag(value: Double): Self = StObject.set(x, "speakerTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeakerTagUndefined: Self = StObject.set(x, "speakerTag", js.undefined)
+    inline def setSpeakerTagUndefined: Self = StObject.set(x, "speakerTag", js.undefined)
   }
 }

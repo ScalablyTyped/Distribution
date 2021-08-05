@@ -11,16 +11,13 @@ trait PickImplpageDown extends StObject {
 }
 object PickImplpageDown {
   
-  @scala.inline
-  def apply(pageDown: Double): PickImplpageDown = {
+  inline def apply(pageDown: Double): PickImplpageDown = {
     val __obj = js.Dynamic.literal(pageDown = pageDown.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpageDown]
   }
   
-  @scala.inline
-  implicit class PickImplpageDownMutableBuilder[Self <: PickImplpageDown] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpageDown](x: Self) {
     
-    @scala.inline
-    def setPageDown(value: Double): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
+    inline def setPageDown(value: Double): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
   }
 }

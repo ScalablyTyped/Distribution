@@ -15,12 +15,10 @@ object resolvePolicies {
   @JSImport("@uirouter/core", "resolvePolicies.async")
   @js.native
   def async: NOWAIT = js.native
-  @scala.inline
-  def async_=(x: NOWAIT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
+  inline def async_=(x: NOWAIT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
   
   @JSImport("@uirouter/core", "resolvePolicies.when")
   @js.native
   def when: EAGER = js.native
-  @scala.inline
-  def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
+  inline def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
 }

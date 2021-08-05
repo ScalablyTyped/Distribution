@@ -11,8 +11,7 @@ trait AnyAllOptionalObjectSchema
      with _AnySchema
 object AnyAllOptionalObjectSchema {
   
-  @scala.inline
-  def apply(properties: Record[String, AnySchema]): AnyAllOptionalObjectSchema = {
+  inline def apply(properties: Record[String, AnySchema]): AnyAllOptionalObjectSchema = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[AnyAllOptionalObjectSchema]

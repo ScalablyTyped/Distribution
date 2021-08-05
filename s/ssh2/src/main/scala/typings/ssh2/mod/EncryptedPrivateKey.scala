@@ -15,22 +15,17 @@ trait EncryptedPrivateKey extends StObject {
 }
 object EncryptedPrivateKey {
   
-  @scala.inline
-  def apply(key: Buffer | String): EncryptedPrivateKey = {
+  inline def apply(key: Buffer | String): EncryptedPrivateKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptedPrivateKey]
   }
   
-  @scala.inline
-  implicit class EncryptedPrivateKeyMutableBuilder[Self <: EncryptedPrivateKey] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptedPrivateKey](x: Self) {
     
-    @scala.inline
-    def setKey(value: Buffer | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Buffer | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
   }
 }

@@ -26,32 +26,24 @@ object anon {
   }
   object ArrayOptionsanyanyPartial {
     
-    @scala.inline
-    def apply(): ArrayOptionsanyanyPartial = {
+    inline def apply(): ArrayOptionsanyanyPartial = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArrayOptionsanyanyPartial]
     }
     
-    @scala.inline
-    implicit class ArrayOptionsanyanyPartialMutableBuilder[Self <: ArrayOptionsanyanyPartial] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayOptionsanyanyPartial](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setComparator(value: (/* left */ js.Any, /* right */ js.Any) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+      inline def setComparator(value: (/* left */ js.Any, /* right */ js.Any) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+      inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+      inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     }
   }
   
@@ -61,20 +53,16 @@ object anon {
   }
   object Strict {
     
-    @scala.inline
-    def apply(): Strict = {
+    inline def apply(): Strict = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Strict]
     }
     
-    @scala.inline
-    implicit class StrictMutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
+    extension [Self <: Strict](x: Self) {
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

@@ -24,37 +24,27 @@ trait IUuidGenerator
 }
 object IUuidGenerator {
   
-  @scala.inline
-  def apply(): IUuidGenerator = {
+  inline def apply(): IUuidGenerator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUuidGenerator]
   }
   
-  @scala.inline
-  implicit class IUuidGeneratorMutableBuilder[Self <: IUuidGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: IUuidGenerator](x: Self) {
     
-    @scala.inline
-    def setReconfigure(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction1(value))
+    inline def setReconfigure(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
+    inline def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
     
-    @scala.inline
-    def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    inline def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+    inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

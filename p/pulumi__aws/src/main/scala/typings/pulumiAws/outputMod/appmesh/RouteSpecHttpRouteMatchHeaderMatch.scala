@@ -34,43 +34,31 @@ trait RouteSpecHttpRouteMatchHeaderMatch extends StObject {
 }
 object RouteSpecHttpRouteMatchHeaderMatch {
   
-  @scala.inline
-  def apply(): RouteSpecHttpRouteMatchHeaderMatch = {
+  inline def apply(): RouteSpecHttpRouteMatchHeaderMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteSpecHttpRouteMatchHeaderMatch]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttpRouteMatchHeaderMatchMutableBuilder[Self <: RouteSpecHttpRouteMatchHeaderMatch] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttpRouteMatchHeaderMatch](x: Self) {
     
-    @scala.inline
-    def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setRange(value: RouteSpecHttpRouteMatchHeaderMatchRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: RouteSpecHttpRouteMatchHeaderMatchRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

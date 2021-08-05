@@ -72,12 +72,9 @@ object writerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
-    @scala.inline
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
-    @scala.inline
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
+    inline def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
+    inline def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
+    inline def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
   }
   
   @JSImport("parquetjs/lib/writer", "ParquetTransformer")
@@ -141,19 +138,13 @@ object writerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def openFile(schema: ParquetSchema, path: PathLike): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
-    @scala.inline
-    def openFile(schema: ParquetSchema, path: PathLike, opts: String): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
-    @scala.inline
-    def openFile(schema: ParquetSchema, path: PathLike, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    inline def openFile(schema: ParquetSchema, path: PathLike): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    inline def openFile(schema: ParquetSchema, path: PathLike, opts: String): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    inline def openFile(schema: ParquetSchema, path: PathLike, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
     
-    @scala.inline
-    def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
-    @scala.inline
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
-    @scala.inline
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    inline def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    inline def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    inline def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
   }
   
   trait ParquetWriterOpts extends StObject {
@@ -180,74 +171,52 @@ object writerMod {
   }
   object ParquetWriterOpts {
     
-    @scala.inline
-    def apply(): ParquetWriterOpts = {
+    inline def apply(): ParquetWriterOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParquetWriterOpts]
     }
     
-    @scala.inline
-    implicit class ParquetWriterOptsMutableBuilder[Self <: ParquetWriterOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ParquetWriterOpts](x: Self) {
       
-      @scala.inline
-      def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+      inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
       
-      @scala.inline
-      def setBitWidth(value: Double): Self = StObject.set(x, "bitWidth", value.asInstanceOf[js.Any])
+      inline def setBitWidth(value: Double): Self = StObject.set(x, "bitWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitWidthUndefined: Self = StObject.set(x, "bitWidth", js.undefined)
+      inline def setBitWidthUndefined: Self = StObject.set(x, "bitWidth", js.undefined)
       
-      @scala.inline
-      def setDisableEnvelope(value: Boolean): Self = StObject.set(x, "disableEnvelope", value.asInstanceOf[js.Any])
+      inline def setDisableEnvelope(value: Boolean): Self = StObject.set(x, "disableEnvelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableEnvelopeUndefined: Self = StObject.set(x, "disableEnvelope", js.undefined)
+      inline def setDisableEnvelopeUndefined: Self = StObject.set(x, "disableEnvelope", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
+      inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
+      inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setRowGroupSize(value: Double): Self = StObject.set(x, "rowGroupSize", value.asInstanceOf[js.Any])
+      inline def setRowGroupSize(value: Double): Self = StObject.set(x, "rowGroupSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowGroupSizeUndefined: Self = StObject.set(x, "rowGroupSize", js.undefined)
+      inline def setRowGroupSizeUndefined: Self = StObject.set(x, "rowGroupSize", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setUseDataPageV2(value: Boolean): Self = StObject.set(x, "useDataPageV2", value.asInstanceOf[js.Any])
+      inline def setUseDataPageV2(value: Boolean): Self = StObject.set(x, "useDataPageV2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDataPageV2Undefined: Self = StObject.set(x, "useDataPageV2", js.undefined)
+      inline def setUseDataPageV2Undefined: Self = StObject.set(x, "useDataPageV2", js.undefined)
     }
   }
 }

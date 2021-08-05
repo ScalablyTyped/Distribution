@@ -226,8 +226,7 @@ object sessionMod {
   }
   object Session {
     
-    @scala.inline
-    def apply[I /* <: IndexedModelClasses[
+    inline def apply[I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
@@ -249,23 +248,19 @@ object sessionMod {
       __obj.asInstanceOf[Session[I]]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session[?], I /* <: IndexedModelClasses[
+    extension [Self <: Session[?], I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */] (val x: Self & Session[I]) extends AnyVal {
+      ] */](x: Self & Session[I]) {
       
-      @scala.inline
-      def setApplyUpdate(value: UpdateSpec[js.Any] => js.Any): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))
+      inline def setApplyUpdate(value: UpdateSpec[js.Any] => js.Any): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuery(value: QuerySpec => QueryResult[js.Object]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+      inline def setQuery(value: QuerySpec => QueryResult[js.Object]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSessionBoundModels(
+      inline def setSessionBoundModels(
         value: js.Array[
               ModelType[
                 InstanceType[
@@ -275,8 +270,7 @@ object sessionMod {
             ]
       ): Self = StObject.set(x, "sessionBoundModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionBoundModelsVarargs(
+      inline def setSessionBoundModelsVarargs(
         value: (ModelType[
               InstanceType[
                 /* import warning: importer.ImportType#apply Failed type conversion: I[keyof I] */ js.Any
@@ -284,8 +278,7 @@ object sessionMod {
             ])*
       ): Self = StObject.set(x, "sessionBoundModels", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: OrmState[I]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: OrmState[I]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

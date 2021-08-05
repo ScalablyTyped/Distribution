@@ -21,21 +21,21 @@ object mockSpanMod {
     
     var _finishMs: Double = js.native
     
-    var _generateUUID: js.Any = js.native
+    /* private */ var _generateUUID: js.Any = js.native
     
-    var _logs: js.Any = js.native
+    /* private */ var _logs: js.Any = js.native
     
-    var _mockTracer: js.Any = js.native
+    /* private */ var _mockTracer: js.Any = js.native
     
-    var _operationName: js.Any = js.native
+    /* private */ var _operationName: js.Any = js.native
     
-    var _startMs: js.Any = js.native
+    /* private */ var _startMs: js.Any = js.native
     
     var _startStack: js.UndefOr[String] = js.native
     
-    var _tags: js.Any = js.native
+    /* private */ var _tags: js.Any = js.native
     
-    var _uuid: js.Any = js.native
+    /* private */ var _uuid: js.Any = js.native
     
     def addReference(ref: typings.opentracing.referenceMod.default): Unit = js.native
     
@@ -65,29 +65,22 @@ object mockSpanMod {
   }
   object DebugInfo {
     
-    @scala.inline
-    def apply(millis: js.Tuple3[Double, Double, Double], operation: String, uuid: String): DebugInfo = {
+    inline def apply(millis: js.Tuple3[Double, Double, Double], operation: String, uuid: String): DebugInfo = {
       val __obj = js.Dynamic.literal(millis = millis.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[DebugInfo]
     }
     
-    @scala.inline
-    implicit class DebugInfoMutableBuilder[Self <: DebugInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DebugInfo](x: Self) {
       
-      @scala.inline
-      def setMillis(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
+      inline def setMillis(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
 }

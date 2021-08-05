@@ -12,19 +12,15 @@ trait BaseDistanceScalesInput extends StObject {
 }
 object BaseDistanceScalesInput {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double): BaseDistanceScalesInput = {
+  inline def apply(latitude: Double, longitude: Double): BaseDistanceScalesInput = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseDistanceScalesInput]
   }
   
-  @scala.inline
-  implicit class BaseDistanceScalesInputMutableBuilder[Self <: BaseDistanceScalesInput] (val x: Self) extends AnyVal {
+  extension [Self <: BaseDistanceScalesInput](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

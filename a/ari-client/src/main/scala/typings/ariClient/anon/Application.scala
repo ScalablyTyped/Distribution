@@ -17,34 +17,25 @@ trait Application extends StObject {
 }
 object Application {
   
-  @scala.inline
-  def apply(application: String, eventName: String): Application = {
+  inline def apply(application: String, eventName: String): Application = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Application]
   }
   
-  @scala.inline
-  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+  extension [Self <: Application](x: Self) {
     
-    @scala.inline
-    def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: String): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
     
-    @scala.inline
-    def setVariables(value: Containers): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Containers): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
   }
 }

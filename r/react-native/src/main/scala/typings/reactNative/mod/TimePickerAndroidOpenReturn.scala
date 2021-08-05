@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimePickerAndroidOpenReturn extends StObject
 object TimePickerAndroidOpenReturn {
   
-  @scala.inline
-  def TimePickerAndroidDismissedAction(): typings.reactNative.mod.TimePickerAndroidDismissedAction = {
+  inline def TimePickerAndroidDismissedAction(): typings.reactNative.mod.TimePickerAndroidDismissedAction = {
     val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[typings.reactNative.mod.TimePickerAndroidDismissedAction]
   }
   
-  @scala.inline
-  def TimePickerAndroidTimeSetAction(hour: Double, minute: Double): typings.reactNative.mod.TimePickerAndroidTimeSetAction = {
+  inline def TimePickerAndroidTimeSetAction(hour: Double, minute: Double): typings.reactNative.mod.TimePickerAndroidTimeSetAction = {
     val __obj = js.Dynamic.literal(action = "timeSetAction", hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNative.mod.TimePickerAndroidTimeSetAction]
   }

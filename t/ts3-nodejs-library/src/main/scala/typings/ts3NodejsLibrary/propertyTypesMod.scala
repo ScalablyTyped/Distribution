@@ -26,29 +26,22 @@ object propertyTypesMod {
   }
   object ApiKeyAdd {
     
-    @scala.inline
-    def apply(scope: ApiKeyScope): ApiKeyAdd = {
+    inline def apply(scope: ApiKeyScope): ApiKeyAdd = {
       val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiKeyAdd]
     }
     
-    @scala.inline
-    implicit class ApiKeyAddMutableBuilder[Self <: ApiKeyAdd] (val x: Self) extends AnyVal {
+    extension [Self <: ApiKeyAdd](x: Self) {
       
-      @scala.inline
-      def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+      inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCldbidUndefined: Self = StObject.set(x, "cldbid", js.undefined)
+      inline def setCldbidUndefined: Self = StObject.set(x, "cldbid", js.undefined)
       
-      @scala.inline
-      def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+      inline def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
+      inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
       
-      @scala.inline
-      def setScope(value: ApiKeyScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: ApiKeyScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,32 +60,24 @@ object propertyTypesMod {
   }
   object ApiKeyList {
     
-    @scala.inline
-    def apply(): ApiKeyList = {
+    inline def apply(): ApiKeyList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApiKeyList]
     }
     
-    @scala.inline
-    implicit class ApiKeyListMutableBuilder[Self <: ApiKeyList] (val x: Self) extends AnyVal {
+    extension [Self <: ApiKeyList](x: Self) {
       
-      @scala.inline
-      def setCldbid(value: String | Asterisk): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+      inline def setCldbid(value: String | Asterisk): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCldbidUndefined: Self = StObject.set(x, "cldbid", js.undefined)
+      inline def setCldbidUndefined: Self = StObject.set(x, "cldbid", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -120,47 +105,34 @@ object propertyTypesMod {
   }
   object BanAdd {
     
-    @scala.inline
-    def apply(banreason: String): BanAdd = {
+    inline def apply(banreason: String): BanAdd = {
       val __obj = js.Dynamic.literal(banreason = banreason.asInstanceOf[js.Any])
       __obj.asInstanceOf[BanAdd]
     }
     
-    @scala.inline
-    implicit class BanAddMutableBuilder[Self <: BanAdd] (val x: Self) extends AnyVal {
+    extension [Self <: BanAdd](x: Self) {
       
-      @scala.inline
-      def setBanreason(value: String): Self = StObject.set(x, "banreason", value.asInstanceOf[js.Any])
+      inline def setBanreason(value: String): Self = StObject.set(x, "banreason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      @scala.inline
-      def setMytsid(value: String): Self = StObject.set(x, "mytsid", value.asInstanceOf[js.Any])
+      inline def setMytsid(value: String): Self = StObject.set(x, "mytsid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMytsidUndefined: Self = StObject.set(x, "mytsid", js.undefined)
+      inline def setMytsidUndefined: Self = StObject.set(x, "mytsid", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     }
   }
   
@@ -184,41 +156,30 @@ object propertyTypesMod {
   }
   object BanClient {
     
-    @scala.inline
-    def apply(banreason: String, clid: String | js.Array[String]): BanClient = {
+    inline def apply(banreason: String, clid: String | js.Array[String]): BanClient = {
       val __obj = js.Dynamic.literal(banreason = banreason.asInstanceOf[js.Any], clid = clid.asInstanceOf[js.Any])
       __obj.asInstanceOf[BanClient]
     }
     
-    @scala.inline
-    implicit class BanClientMutableBuilder[Self <: BanClient] (val x: Self) extends AnyVal {
+    extension [Self <: BanClient](x: Self) {
       
-      @scala.inline
-      def setBanreason(value: String): Self = StObject.set(x, "banreason", value.asInstanceOf[js.Any])
+      inline def setBanreason(value: String): Self = StObject.set(x, "banreason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClid(value: String | js.Array[String]): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
+      inline def setClid(value: String | js.Array[String]): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClidVarargs(value: String*): Self = StObject.set(x, "clid", js.Array(value :_*))
+      inline def setClidVarargs(value: String*): Self = StObject.set(x, "clid", js.Array(value :_*))
       
-      @scala.inline
-      def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
+      inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
+      inline def setContinueOnErrorUndefined: Self = StObject.set(x, "continueOnError", js.undefined)
       
-      @scala.inline
-      def setMytsid(value: String): Self = StObject.set(x, "mytsid", value.asInstanceOf[js.Any])
+      inline def setMytsid(value: String): Self = StObject.set(x, "mytsid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMytsidUndefined: Self = StObject.set(x, "mytsid", js.undefined)
+      inline def setMytsidUndefined: Self = StObject.set(x, "mytsid", js.undefined)
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
   
@@ -268,134 +229,92 @@ object propertyTypesMod {
   }
   object ChannelEdit {
     
-    @scala.inline
-    def apply(): ChannelEdit = {
+    inline def apply(): ChannelEdit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChannelEdit]
     }
     
-    @scala.inline
-    implicit class ChannelEditMutableBuilder[Self <: ChannelEdit] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelEdit](x: Self) {
       
-      @scala.inline
-      def setChannelCodec(value: Codec): Self = StObject.set(x, "channelCodec", value.asInstanceOf[js.Any])
+      inline def setChannelCodec(value: Codec): Self = StObject.set(x, "channelCodec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCodecIsUnencrypted(value: Boolean): Self = StObject.set(x, "channelCodecIsUnencrypted", value.asInstanceOf[js.Any])
+      inline def setChannelCodecIsUnencrypted(value: Boolean): Self = StObject.set(x, "channelCodecIsUnencrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCodecIsUnencryptedUndefined: Self = StObject.set(x, "channelCodecIsUnencrypted", js.undefined)
+      inline def setChannelCodecIsUnencryptedUndefined: Self = StObject.set(x, "channelCodecIsUnencrypted", js.undefined)
       
-      @scala.inline
-      def setChannelCodecQuality(value: Double): Self = StObject.set(x, "channelCodecQuality", value.asInstanceOf[js.Any])
+      inline def setChannelCodecQuality(value: Double): Self = StObject.set(x, "channelCodecQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCodecQualityUndefined: Self = StObject.set(x, "channelCodecQuality", js.undefined)
+      inline def setChannelCodecQualityUndefined: Self = StObject.set(x, "channelCodecQuality", js.undefined)
       
-      @scala.inline
-      def setChannelCodecUndefined: Self = StObject.set(x, "channelCodec", js.undefined)
+      inline def setChannelCodecUndefined: Self = StObject.set(x, "channelCodec", js.undefined)
       
-      @scala.inline
-      def setChannelDescription(value: String): Self = StObject.set(x, "channelDescription", value.asInstanceOf[js.Any])
+      inline def setChannelDescription(value: String): Self = StObject.set(x, "channelDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelDescriptionUndefined: Self = StObject.set(x, "channelDescription", js.undefined)
+      inline def setChannelDescriptionUndefined: Self = StObject.set(x, "channelDescription", js.undefined)
       
-      @scala.inline
-      def setChannelFlagDefault(value: Boolean): Self = StObject.set(x, "channelFlagDefault", value.asInstanceOf[js.Any])
+      inline def setChannelFlagDefault(value: Boolean): Self = StObject.set(x, "channelFlagDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelFlagDefaultUndefined: Self = StObject.set(x, "channelFlagDefault", js.undefined)
+      inline def setChannelFlagDefaultUndefined: Self = StObject.set(x, "channelFlagDefault", js.undefined)
       
-      @scala.inline
-      def setChannelFlagMaxclientsUnlimited(value: Boolean): Self = StObject.set(x, "channelFlagMaxclientsUnlimited", value.asInstanceOf[js.Any])
+      inline def setChannelFlagMaxclientsUnlimited(value: Boolean): Self = StObject.set(x, "channelFlagMaxclientsUnlimited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelFlagMaxclientsUnlimitedUndefined: Self = StObject.set(x, "channelFlagMaxclientsUnlimited", js.undefined)
+      inline def setChannelFlagMaxclientsUnlimitedUndefined: Self = StObject.set(x, "channelFlagMaxclientsUnlimited", js.undefined)
       
-      @scala.inline
-      def setChannelFlagMaxfamilyclientsInherited(value: Boolean): Self = StObject.set(x, "channelFlagMaxfamilyclientsInherited", value.asInstanceOf[js.Any])
+      inline def setChannelFlagMaxfamilyclientsInherited(value: Boolean): Self = StObject.set(x, "channelFlagMaxfamilyclientsInherited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelFlagMaxfamilyclientsInheritedUndefined: Self = StObject.set(x, "channelFlagMaxfamilyclientsInherited", js.undefined)
+      inline def setChannelFlagMaxfamilyclientsInheritedUndefined: Self = StObject.set(x, "channelFlagMaxfamilyclientsInherited", js.undefined)
       
-      @scala.inline
-      def setChannelFlagPermanent(value: Boolean): Self = StObject.set(x, "channelFlagPermanent", value.asInstanceOf[js.Any])
+      inline def setChannelFlagPermanent(value: Boolean): Self = StObject.set(x, "channelFlagPermanent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelFlagPermanentUndefined: Self = StObject.set(x, "channelFlagPermanent", js.undefined)
+      inline def setChannelFlagPermanentUndefined: Self = StObject.set(x, "channelFlagPermanent", js.undefined)
       
-      @scala.inline
-      def setChannelFlagSemiPermanent(value: Boolean): Self = StObject.set(x, "channelFlagSemiPermanent", value.asInstanceOf[js.Any])
+      inline def setChannelFlagSemiPermanent(value: Boolean): Self = StObject.set(x, "channelFlagSemiPermanent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelFlagSemiPermanentUndefined: Self = StObject.set(x, "channelFlagSemiPermanent", js.undefined)
+      inline def setChannelFlagSemiPermanentUndefined: Self = StObject.set(x, "channelFlagSemiPermanent", js.undefined)
       
-      @scala.inline
-      def setChannelFlagTemporary(value: Boolean): Self = StObject.set(x, "channelFlagTemporary", value.asInstanceOf[js.Any])
+      inline def setChannelFlagTemporary(value: Boolean): Self = StObject.set(x, "channelFlagTemporary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelFlagTemporaryUndefined: Self = StObject.set(x, "channelFlagTemporary", js.undefined)
+      inline def setChannelFlagTemporaryUndefined: Self = StObject.set(x, "channelFlagTemporary", js.undefined)
       
-      @scala.inline
-      def setChannelMaxclients(value: Double): Self = StObject.set(x, "channelMaxclients", value.asInstanceOf[js.Any])
+      inline def setChannelMaxclients(value: Double): Self = StObject.set(x, "channelMaxclients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelMaxclientsUndefined: Self = StObject.set(x, "channelMaxclients", js.undefined)
+      inline def setChannelMaxclientsUndefined: Self = StObject.set(x, "channelMaxclients", js.undefined)
       
-      @scala.inline
-      def setChannelMaxfamilyclients(value: Double): Self = StObject.set(x, "channelMaxfamilyclients", value.asInstanceOf[js.Any])
+      inline def setChannelMaxfamilyclients(value: Double): Self = StObject.set(x, "channelMaxfamilyclients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelMaxfamilyclientsUndefined: Self = StObject.set(x, "channelMaxfamilyclients", js.undefined)
+      inline def setChannelMaxfamilyclientsUndefined: Self = StObject.set(x, "channelMaxfamilyclients", js.undefined)
       
-      @scala.inline
-      def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+      inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNamePhonetic(value: String): Self = StObject.set(x, "channelNamePhonetic", value.asInstanceOf[js.Any])
+      inline def setChannelNamePhonetic(value: String): Self = StObject.set(x, "channelNamePhonetic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNamePhoneticUndefined: Self = StObject.set(x, "channelNamePhonetic", js.undefined)
+      inline def setChannelNamePhoneticUndefined: Self = StObject.set(x, "channelNamePhonetic", js.undefined)
       
-      @scala.inline
-      def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+      inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
       
-      @scala.inline
-      def setChannelNeededTalkPower(value: Double): Self = StObject.set(x, "channelNeededTalkPower", value.asInstanceOf[js.Any])
+      inline def setChannelNeededTalkPower(value: Double): Self = StObject.set(x, "channelNeededTalkPower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelNeededTalkPowerUndefined: Self = StObject.set(x, "channelNeededTalkPower", js.undefined)
+      inline def setChannelNeededTalkPowerUndefined: Self = StObject.set(x, "channelNeededTalkPower", js.undefined)
       
-      @scala.inline
-      def setChannelOrder(value: Double): Self = StObject.set(x, "channelOrder", value.asInstanceOf[js.Any])
+      inline def setChannelOrder(value: Double): Self = StObject.set(x, "channelOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelOrderUndefined: Self = StObject.set(x, "channelOrder", js.undefined)
+      inline def setChannelOrderUndefined: Self = StObject.set(x, "channelOrder", js.undefined)
       
-      @scala.inline
-      def setChannelPassword(value: String): Self = StObject.set(x, "channelPassword", value.asInstanceOf[js.Any])
+      inline def setChannelPassword(value: String): Self = StObject.set(x, "channelPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelPasswordUndefined: Self = StObject.set(x, "channelPassword", js.undefined)
+      inline def setChannelPasswordUndefined: Self = StObject.set(x, "channelPassword", js.undefined)
       
-      @scala.inline
-      def setChannelTopic(value: String): Self = StObject.set(x, "channelTopic", value.asInstanceOf[js.Any])
+      inline def setChannelTopic(value: String): Self = StObject.set(x, "channelTopic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelTopicUndefined: Self = StObject.set(x, "channelTopic", js.undefined)
+      inline def setChannelTopicUndefined: Self = StObject.set(x, "channelTopic", js.undefined)
       
-      @scala.inline
-      def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+      inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      @scala.inline
-      def setCpid(value: String): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
+      inline def setCpid(value: String): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpidUndefined: Self = StObject.set(x, "cpid", js.undefined)
+      inline def setCpidUndefined: Self = StObject.set(x, "cpid", js.undefined)
     }
   }
   
@@ -407,17 +326,14 @@ object propertyTypesMod {
   }
   object ClientDBEdit {
     
-    @scala.inline
-    def apply(clientDescription: String): ClientDBEdit = {
+    inline def apply(clientDescription: String): ClientDBEdit = {
       val __obj = js.Dynamic.literal(clientDescription = clientDescription.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientDBEdit]
     }
     
-    @scala.inline
-    implicit class ClientDBEditMutableBuilder[Self <: ClientDBEdit] (val x: Self) extends AnyVal {
+    extension [Self <: ClientDBEdit](x: Self) {
       
-      @scala.inline
-      def setClientDescription(value: String): Self = StObject.set(x, "clientDescription", value.asInstanceOf[js.Any])
+      inline def setClientDescription(value: String): Self = StObject.set(x, "clientDescription", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,26 +347,20 @@ object propertyTypesMod {
   }
   object ClientEdit {
     
-    @scala.inline
-    def apply(): ClientEdit = {
+    inline def apply(): ClientEdit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientEdit]
     }
     
-    @scala.inline
-    implicit class ClientEditMutableBuilder[Self <: ClientEdit] (val x: Self) extends AnyVal {
+    extension [Self <: ClientEdit](x: Self) {
       
-      @scala.inline
-      def setClientDescription(value: String): Self = StObject.set(x, "clientDescription", value.asInstanceOf[js.Any])
+      inline def setClientDescription(value: String): Self = StObject.set(x, "clientDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientDescriptionUndefined: Self = StObject.set(x, "clientDescription", js.undefined)
+      inline def setClientDescriptionUndefined: Self = StObject.set(x, "clientDescription", js.undefined)
       
-      @scala.inline
-      def setClientIsTalker(value: Boolean): Self = StObject.set(x, "clientIsTalker", value.asInstanceOf[js.Any])
+      inline def setClientIsTalker(value: Boolean): Self = StObject.set(x, "clientIsTalker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIsTalkerUndefined: Self = StObject.set(x, "clientIsTalker", js.undefined)
+      inline def setClientIsTalkerUndefined: Self = StObject.set(x, "clientIsTalker", js.undefined)
     }
   }
   
@@ -462,17 +372,14 @@ object propertyTypesMod {
   }
   object ClientUpdate {
     
-    @scala.inline
-    def apply(clientNickname: String): ClientUpdate = {
+    inline def apply(clientNickname: String): ClientUpdate = {
       val __obj = js.Dynamic.literal(clientNickname = clientNickname.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientUpdate]
     }
     
-    @scala.inline
-    implicit class ClientUpdateMutableBuilder[Self <: ClientUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ClientUpdate](x: Self) {
       
-      @scala.inline
-      def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
+      inline def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
     }
   }
   
@@ -502,74 +409,52 @@ object propertyTypesMod {
   }
   object InstanceEdit {
     
-    @scala.inline
-    def apply(): InstanceEdit = {
+    inline def apply(): InstanceEdit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InstanceEdit]
     }
     
-    @scala.inline
-    implicit class InstanceEditMutableBuilder[Self <: InstanceEdit] (val x: Self) extends AnyVal {
+    extension [Self <: InstanceEdit](x: Self) {
       
-      @scala.inline
-      def setServerinstanceFiletransferPort(value: Double): Self = StObject.set(x, "serverinstanceFiletransferPort", value.asInstanceOf[js.Any])
+      inline def setServerinstanceFiletransferPort(value: Double): Self = StObject.set(x, "serverinstanceFiletransferPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceFiletransferPortUndefined: Self = StObject.set(x, "serverinstanceFiletransferPort", js.undefined)
+      inline def setServerinstanceFiletransferPortUndefined: Self = StObject.set(x, "serverinstanceFiletransferPort", js.undefined)
       
-      @scala.inline
-      def setServerinstanceMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
+      inline def setServerinstanceMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceMaxDownloadTotalBandwidthUndefined: Self = StObject.set(x, "serverinstanceMaxDownloadTotalBandwidth", js.undefined)
+      inline def setServerinstanceMaxDownloadTotalBandwidthUndefined: Self = StObject.set(x, "serverinstanceMaxDownloadTotalBandwidth", js.undefined)
       
-      @scala.inline
-      def setServerinstanceMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
+      inline def setServerinstanceMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "serverinstanceMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceMaxUploadTotalBandwidthUndefined: Self = StObject.set(x, "serverinstanceMaxUploadTotalBandwidth", js.undefined)
+      inline def setServerinstanceMaxUploadTotalBandwidthUndefined: Self = StObject.set(x, "serverinstanceMaxUploadTotalBandwidth", js.undefined)
       
-      @scala.inline
-      def setServerinstanceServerqueryFloodBanTime(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodBanTime", value.asInstanceOf[js.Any])
+      inline def setServerinstanceServerqueryFloodBanTime(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodBanTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceServerqueryFloodBanTimeUndefined: Self = StObject.set(x, "serverinstanceServerqueryFloodBanTime", js.undefined)
+      inline def setServerinstanceServerqueryFloodBanTimeUndefined: Self = StObject.set(x, "serverinstanceServerqueryFloodBanTime", js.undefined)
       
-      @scala.inline
-      def setServerinstanceServerqueryFloodCommands(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodCommands", value.asInstanceOf[js.Any])
+      inline def setServerinstanceServerqueryFloodCommands(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodCommands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceServerqueryFloodCommandsUndefined: Self = StObject.set(x, "serverinstanceServerqueryFloodCommands", js.undefined)
+      inline def setServerinstanceServerqueryFloodCommandsUndefined: Self = StObject.set(x, "serverinstanceServerqueryFloodCommands", js.undefined)
       
-      @scala.inline
-      def setServerinstanceServerqueryFloodTime(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodTime", value.asInstanceOf[js.Any])
+      inline def setServerinstanceServerqueryFloodTime(value: Double): Self = StObject.set(x, "serverinstanceServerqueryFloodTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceServerqueryFloodTimeUndefined: Self = StObject.set(x, "serverinstanceServerqueryFloodTime", js.undefined)
+      inline def setServerinstanceServerqueryFloodTimeUndefined: Self = StObject.set(x, "serverinstanceServerqueryFloodTime", js.undefined)
       
-      @scala.inline
-      def setServerinstanceTemplateChanneladminGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneladminGroup", value.asInstanceOf[js.Any])
+      inline def setServerinstanceTemplateChanneladminGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneladminGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceTemplateChanneladminGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateChanneladminGroup", js.undefined)
+      inline def setServerinstanceTemplateChanneladminGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateChanneladminGroup", js.undefined)
       
-      @scala.inline
-      def setServerinstanceTemplateChanneldefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneldefaultGroup", value.asInstanceOf[js.Any])
+      inline def setServerinstanceTemplateChanneldefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateChanneldefaultGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceTemplateChanneldefaultGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateChanneldefaultGroup", js.undefined)
+      inline def setServerinstanceTemplateChanneldefaultGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateChanneldefaultGroup", js.undefined)
       
-      @scala.inline
-      def setServerinstanceTemplateServeradminGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateServeradminGroup", value.asInstanceOf[js.Any])
+      inline def setServerinstanceTemplateServeradminGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateServeradminGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceTemplateServeradminGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateServeradminGroup", js.undefined)
+      inline def setServerinstanceTemplateServeradminGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateServeradminGroup", js.undefined)
       
-      @scala.inline
-      def setServerinstanceTemplateServerdefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateServerdefaultGroup", value.asInstanceOf[js.Any])
+      inline def setServerinstanceTemplateServerdefaultGroup(value: String): Self = StObject.set(x, "serverinstanceTemplateServerdefaultGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerinstanceTemplateServerdefaultGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateServerdefaultGroup", js.undefined)
+      inline def setServerinstanceTemplateServerdefaultGroupUndefined: Self = StObject.set(x, "serverinstanceTemplateServerdefaultGroup", js.undefined)
     }
   }
   
@@ -675,302 +560,204 @@ object propertyTypesMod {
   }
   object ServerEdit {
     
-    @scala.inline
-    def apply(): ServerEdit = {
+    inline def apply(): ServerEdit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerEdit]
     }
     
-    @scala.inline
-    implicit class ServerEditMutableBuilder[Self <: ServerEdit] (val x: Self) extends AnyVal {
+    extension [Self <: ServerEdit](x: Self) {
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsNeededCommandBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededCommandBlock", value.asInstanceOf[js.Any])
+      inline def setVirtualserverAntifloodPointsNeededCommandBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededCommandBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsNeededCommandBlockUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsNeededCommandBlock", js.undefined)
+      inline def setVirtualserverAntifloodPointsNeededCommandBlockUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsNeededCommandBlock", js.undefined)
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsNeededIpBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededIpBlock", value.asInstanceOf[js.Any])
+      inline def setVirtualserverAntifloodPointsNeededIpBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededIpBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsNeededIpBlockUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsNeededIpBlock", js.undefined)
+      inline def setVirtualserverAntifloodPointsNeededIpBlockUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsNeededIpBlock", js.undefined)
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsNeededPluginBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededPluginBlock", value.asInstanceOf[js.Any])
+      inline def setVirtualserverAntifloodPointsNeededPluginBlock(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsNeededPluginBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsNeededPluginBlockUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsNeededPluginBlock", js.undefined)
+      inline def setVirtualserverAntifloodPointsNeededPluginBlockUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsNeededPluginBlock", js.undefined)
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsTickReduce(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsTickReduce", value.asInstanceOf[js.Any])
+      inline def setVirtualserverAntifloodPointsTickReduce(value: Double): Self = StObject.set(x, "virtualserverAntifloodPointsTickReduce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverAntifloodPointsTickReduceUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsTickReduce", js.undefined)
+      inline def setVirtualserverAntifloodPointsTickReduceUndefined: Self = StObject.set(x, "virtualserverAntifloodPointsTickReduce", js.undefined)
       
-      @scala.inline
-      def setVirtualserverAutostart(value: Double): Self = StObject.set(x, "virtualserverAutostart", value.asInstanceOf[js.Any])
+      inline def setVirtualserverAutostart(value: Double): Self = StObject.set(x, "virtualserverAutostart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverAutostartUndefined: Self = StObject.set(x, "virtualserverAutostart", js.undefined)
+      inline def setVirtualserverAutostartUndefined: Self = StObject.set(x, "virtualserverAutostart", js.undefined)
       
-      @scala.inline
-      def setVirtualserverCodecEncryptionMode(value: CodecEncryptionMode): Self = StObject.set(x, "virtualserverCodecEncryptionMode", value.asInstanceOf[js.Any])
+      inline def setVirtualserverCodecEncryptionMode(value: CodecEncryptionMode): Self = StObject.set(x, "virtualserverCodecEncryptionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverCodecEncryptionModeUndefined: Self = StObject.set(x, "virtualserverCodecEncryptionMode", js.undefined)
+      inline def setVirtualserverCodecEncryptionModeUndefined: Self = StObject.set(x, "virtualserverCodecEncryptionMode", js.undefined)
       
-      @scala.inline
-      def setVirtualserverComplainAutobanCount(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanCount", value.asInstanceOf[js.Any])
+      inline def setVirtualserverComplainAutobanCount(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverComplainAutobanCountUndefined: Self = StObject.set(x, "virtualserverComplainAutobanCount", js.undefined)
+      inline def setVirtualserverComplainAutobanCountUndefined: Self = StObject.set(x, "virtualserverComplainAutobanCount", js.undefined)
       
-      @scala.inline
-      def setVirtualserverComplainAutobanTime(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanTime", value.asInstanceOf[js.Any])
+      inline def setVirtualserverComplainAutobanTime(value: Double): Self = StObject.set(x, "virtualserverComplainAutobanTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverComplainAutobanTimeUndefined: Self = StObject.set(x, "virtualserverComplainAutobanTime", js.undefined)
+      inline def setVirtualserverComplainAutobanTimeUndefined: Self = StObject.set(x, "virtualserverComplainAutobanTime", js.undefined)
       
-      @scala.inline
-      def setVirtualserverComplainRemoveTime(value: Double): Self = StObject.set(x, "virtualserverComplainRemoveTime", value.asInstanceOf[js.Any])
+      inline def setVirtualserverComplainRemoveTime(value: Double): Self = StObject.set(x, "virtualserverComplainRemoveTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverComplainRemoveTimeUndefined: Self = StObject.set(x, "virtualserverComplainRemoveTime", js.undefined)
+      inline def setVirtualserverComplainRemoveTimeUndefined: Self = StObject.set(x, "virtualserverComplainRemoveTime", js.undefined)
       
-      @scala.inline
-      def setVirtualserverDefaultChannelAdminGroup(value: Double): Self = StObject.set(x, "virtualserverDefaultChannelAdminGroup", value.asInstanceOf[js.Any])
+      inline def setVirtualserverDefaultChannelAdminGroup(value: Double): Self = StObject.set(x, "virtualserverDefaultChannelAdminGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverDefaultChannelAdminGroupUndefined: Self = StObject.set(x, "virtualserverDefaultChannelAdminGroup", js.undefined)
+      inline def setVirtualserverDefaultChannelAdminGroupUndefined: Self = StObject.set(x, "virtualserverDefaultChannelAdminGroup", js.undefined)
       
-      @scala.inline
-      def setVirtualserverDefaultChannelGroup(value: Double): Self = StObject.set(x, "virtualserverDefaultChannelGroup", value.asInstanceOf[js.Any])
+      inline def setVirtualserverDefaultChannelGroup(value: Double): Self = StObject.set(x, "virtualserverDefaultChannelGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverDefaultChannelGroupUndefined: Self = StObject.set(x, "virtualserverDefaultChannelGroup", js.undefined)
+      inline def setVirtualserverDefaultChannelGroupUndefined: Self = StObject.set(x, "virtualserverDefaultChannelGroup", js.undefined)
       
-      @scala.inline
-      def setVirtualserverDefaultServerGroup(value: Double): Self = StObject.set(x, "virtualserverDefaultServerGroup", value.asInstanceOf[js.Any])
+      inline def setVirtualserverDefaultServerGroup(value: Double): Self = StObject.set(x, "virtualserverDefaultServerGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverDefaultServerGroupUndefined: Self = StObject.set(x, "virtualserverDefaultServerGroup", js.undefined)
+      inline def setVirtualserverDefaultServerGroupUndefined: Self = StObject.set(x, "virtualserverDefaultServerGroup", js.undefined)
       
-      @scala.inline
-      def setVirtualserverDownloadQuota(value: Double): Self = StObject.set(x, "virtualserverDownloadQuota", value.asInstanceOf[js.Any])
+      inline def setVirtualserverDownloadQuota(value: Double): Self = StObject.set(x, "virtualserverDownloadQuota", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverDownloadQuotaUndefined: Self = StObject.set(x, "virtualserverDownloadQuota", js.undefined)
+      inline def setVirtualserverDownloadQuotaUndefined: Self = StObject.set(x, "virtualserverDownloadQuota", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostbannerGfxInterval(value: Double): Self = StObject.set(x, "virtualserverHostbannerGfxInterval", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostbannerGfxInterval(value: Double): Self = StObject.set(x, "virtualserverHostbannerGfxInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostbannerGfxIntervalUndefined: Self = StObject.set(x, "virtualserverHostbannerGfxInterval", js.undefined)
+      inline def setVirtualserverHostbannerGfxIntervalUndefined: Self = StObject.set(x, "virtualserverHostbannerGfxInterval", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostbannerGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerGfxUrl", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostbannerGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerGfxUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostbannerGfxUrlUndefined: Self = StObject.set(x, "virtualserverHostbannerGfxUrl", js.undefined)
+      inline def setVirtualserverHostbannerGfxUrlUndefined: Self = StObject.set(x, "virtualserverHostbannerGfxUrl", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostbannerMode(value: HostBannerMode): Self = StObject.set(x, "virtualserverHostbannerMode", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostbannerMode(value: HostBannerMode): Self = StObject.set(x, "virtualserverHostbannerMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostbannerModeUndefined: Self = StObject.set(x, "virtualserverHostbannerMode", js.undefined)
+      inline def setVirtualserverHostbannerModeUndefined: Self = StObject.set(x, "virtualserverHostbannerMode", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostbannerUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerUrl", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostbannerUrl(value: String): Self = StObject.set(x, "virtualserverHostbannerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostbannerUrlUndefined: Self = StObject.set(x, "virtualserverHostbannerUrl", js.undefined)
+      inline def setVirtualserverHostbannerUrlUndefined: Self = StObject.set(x, "virtualserverHostbannerUrl", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostbuttonGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonGfxUrl", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostbuttonGfxUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonGfxUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostbuttonGfxUrlUndefined: Self = StObject.set(x, "virtualserverHostbuttonGfxUrl", js.undefined)
+      inline def setVirtualserverHostbuttonGfxUrlUndefined: Self = StObject.set(x, "virtualserverHostbuttonGfxUrl", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostbuttonTooltip(value: String): Self = StObject.set(x, "virtualserverHostbuttonTooltip", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostbuttonTooltip(value: String): Self = StObject.set(x, "virtualserverHostbuttonTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostbuttonTooltipUndefined: Self = StObject.set(x, "virtualserverHostbuttonTooltip", js.undefined)
+      inline def setVirtualserverHostbuttonTooltipUndefined: Self = StObject.set(x, "virtualserverHostbuttonTooltip", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostbuttonUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonUrl", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostbuttonUrl(value: String): Self = StObject.set(x, "virtualserverHostbuttonUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostbuttonUrlUndefined: Self = StObject.set(x, "virtualserverHostbuttonUrl", js.undefined)
+      inline def setVirtualserverHostbuttonUrlUndefined: Self = StObject.set(x, "virtualserverHostbuttonUrl", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostmessage(value: String): Self = StObject.set(x, "virtualserverHostmessage", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostmessage(value: String): Self = StObject.set(x, "virtualserverHostmessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostmessageMode(value: HostMessageMode): Self = StObject.set(x, "virtualserverHostmessageMode", value.asInstanceOf[js.Any])
+      inline def setVirtualserverHostmessageMode(value: HostMessageMode): Self = StObject.set(x, "virtualserverHostmessageMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverHostmessageModeUndefined: Self = StObject.set(x, "virtualserverHostmessageMode", js.undefined)
+      inline def setVirtualserverHostmessageModeUndefined: Self = StObject.set(x, "virtualserverHostmessageMode", js.undefined)
       
-      @scala.inline
-      def setVirtualserverHostmessageUndefined: Self = StObject.set(x, "virtualserverHostmessage", js.undefined)
+      inline def setVirtualserverHostmessageUndefined: Self = StObject.set(x, "virtualserverHostmessage", js.undefined)
       
-      @scala.inline
-      def setVirtualserverIconId(value: Double): Self = StObject.set(x, "virtualserverIconId", value.asInstanceOf[js.Any])
+      inline def setVirtualserverIconId(value: Double): Self = StObject.set(x, "virtualserverIconId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverIconIdUndefined: Self = StObject.set(x, "virtualserverIconId", js.undefined)
+      inline def setVirtualserverIconIdUndefined: Self = StObject.set(x, "virtualserverIconId", js.undefined)
       
-      @scala.inline
-      def setVirtualserverLogChannel(value: Double): Self = StObject.set(x, "virtualserverLogChannel", value.asInstanceOf[js.Any])
+      inline def setVirtualserverLogChannel(value: Double): Self = StObject.set(x, "virtualserverLogChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverLogChannelUndefined: Self = StObject.set(x, "virtualserverLogChannel", js.undefined)
+      inline def setVirtualserverLogChannelUndefined: Self = StObject.set(x, "virtualserverLogChannel", js.undefined)
       
-      @scala.inline
-      def setVirtualserverLogClient(value: Double): Self = StObject.set(x, "virtualserverLogClient", value.asInstanceOf[js.Any])
+      inline def setVirtualserverLogClient(value: Double): Self = StObject.set(x, "virtualserverLogClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverLogClientUndefined: Self = StObject.set(x, "virtualserverLogClient", js.undefined)
+      inline def setVirtualserverLogClientUndefined: Self = StObject.set(x, "virtualserverLogClient", js.undefined)
       
-      @scala.inline
-      def setVirtualserverLogFiletransfer(value: Double): Self = StObject.set(x, "virtualserverLogFiletransfer", value.asInstanceOf[js.Any])
+      inline def setVirtualserverLogFiletransfer(value: Double): Self = StObject.set(x, "virtualserverLogFiletransfer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverLogFiletransferUndefined: Self = StObject.set(x, "virtualserverLogFiletransfer", js.undefined)
+      inline def setVirtualserverLogFiletransferUndefined: Self = StObject.set(x, "virtualserverLogFiletransfer", js.undefined)
       
-      @scala.inline
-      def setVirtualserverLogPermissions(value: Double): Self = StObject.set(x, "virtualserverLogPermissions", value.asInstanceOf[js.Any])
+      inline def setVirtualserverLogPermissions(value: Double): Self = StObject.set(x, "virtualserverLogPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverLogPermissionsUndefined: Self = StObject.set(x, "virtualserverLogPermissions", js.undefined)
+      inline def setVirtualserverLogPermissionsUndefined: Self = StObject.set(x, "virtualserverLogPermissions", js.undefined)
       
-      @scala.inline
-      def setVirtualserverLogQuery(value: Double): Self = StObject.set(x, "virtualserverLogQuery", value.asInstanceOf[js.Any])
+      inline def setVirtualserverLogQuery(value: Double): Self = StObject.set(x, "virtualserverLogQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverLogQueryUndefined: Self = StObject.set(x, "virtualserverLogQuery", js.undefined)
+      inline def setVirtualserverLogQueryUndefined: Self = StObject.set(x, "virtualserverLogQuery", js.undefined)
       
-      @scala.inline
-      def setVirtualserverLogServer(value: Double): Self = StObject.set(x, "virtualserverLogServer", value.asInstanceOf[js.Any])
+      inline def setVirtualserverLogServer(value: Double): Self = StObject.set(x, "virtualserverLogServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverLogServerUndefined: Self = StObject.set(x, "virtualserverLogServer", js.undefined)
+      inline def setVirtualserverLogServerUndefined: Self = StObject.set(x, "virtualserverLogServer", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMachineId(value: String): Self = StObject.set(x, "virtualserverMachineId", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMachineId(value: String): Self = StObject.set(x, "virtualserverMachineId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMachineIdUndefined: Self = StObject.set(x, "virtualserverMachineId", js.undefined)
+      inline def setVirtualserverMachineIdUndefined: Self = StObject.set(x, "virtualserverMachineId", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMaxDownloadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxDownloadTotalBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMaxDownloadTotalBandwidthUndefined: Self = StObject.set(x, "virtualserverMaxDownloadTotalBandwidth", js.undefined)
+      inline def setVirtualserverMaxDownloadTotalBandwidthUndefined: Self = StObject.set(x, "virtualserverMaxDownloadTotalBandwidth", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMaxUploadTotalBandwidth(value: Double): Self = StObject.set(x, "virtualserverMaxUploadTotalBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMaxUploadTotalBandwidthUndefined: Self = StObject.set(x, "virtualserverMaxUploadTotalBandwidth", js.undefined)
+      inline def setVirtualserverMaxUploadTotalBandwidthUndefined: Self = StObject.set(x, "virtualserverMaxUploadTotalBandwidth", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMaxclients(value: Double): Self = StObject.set(x, "virtualserverMaxclients", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMaxclients(value: Double): Self = StObject.set(x, "virtualserverMaxclients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMaxclientsUndefined: Self = StObject.set(x, "virtualserverMaxclients", js.undefined)
+      inline def setVirtualserverMaxclientsUndefined: Self = StObject.set(x, "virtualserverMaxclients", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMinAndroidVersion(value: Double): Self = StObject.set(x, "virtualserverMinAndroidVersion", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMinAndroidVersion(value: Double): Self = StObject.set(x, "virtualserverMinAndroidVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMinAndroidVersionUndefined: Self = StObject.set(x, "virtualserverMinAndroidVersion", js.undefined)
+      inline def setVirtualserverMinAndroidVersionUndefined: Self = StObject.set(x, "virtualserverMinAndroidVersion", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMinClientVersion(value: Double): Self = StObject.set(x, "virtualserverMinClientVersion", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMinClientVersion(value: Double): Self = StObject.set(x, "virtualserverMinClientVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMinClientVersionUndefined: Self = StObject.set(x, "virtualserverMinClientVersion", js.undefined)
+      inline def setVirtualserverMinClientVersionUndefined: Self = StObject.set(x, "virtualserverMinClientVersion", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMinClientsInChannelBeforeForcedSilence(value: Double): Self = StObject.set(x, "virtualserverMinClientsInChannelBeforeForcedSilence", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMinClientsInChannelBeforeForcedSilence(value: Double): Self = StObject.set(x, "virtualserverMinClientsInChannelBeforeForcedSilence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMinClientsInChannelBeforeForcedSilenceUndefined: Self = StObject.set(x, "virtualserverMinClientsInChannelBeforeForcedSilence", js.undefined)
+      inline def setVirtualserverMinClientsInChannelBeforeForcedSilenceUndefined: Self = StObject.set(x, "virtualserverMinClientsInChannelBeforeForcedSilence", js.undefined)
       
-      @scala.inline
-      def setVirtualserverMinIosVersion(value: Double): Self = StObject.set(x, "virtualserverMinIosVersion", value.asInstanceOf[js.Any])
+      inline def setVirtualserverMinIosVersion(value: Double): Self = StObject.set(x, "virtualserverMinIosVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverMinIosVersionUndefined: Self = StObject.set(x, "virtualserverMinIosVersion", js.undefined)
+      inline def setVirtualserverMinIosVersionUndefined: Self = StObject.set(x, "virtualserverMinIosVersion", js.undefined)
       
-      @scala.inline
-      def setVirtualserverName(value: String): Self = StObject.set(x, "virtualserverName", value.asInstanceOf[js.Any])
+      inline def setVirtualserverName(value: String): Self = StObject.set(x, "virtualserverName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverNamePhonetic(value: String): Self = StObject.set(x, "virtualserverNamePhonetic", value.asInstanceOf[js.Any])
+      inline def setVirtualserverNamePhonetic(value: String): Self = StObject.set(x, "virtualserverNamePhonetic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverNamePhoneticUndefined: Self = StObject.set(x, "virtualserverNamePhonetic", js.undefined)
+      inline def setVirtualserverNamePhoneticUndefined: Self = StObject.set(x, "virtualserverNamePhonetic", js.undefined)
       
-      @scala.inline
-      def setVirtualserverNameUndefined: Self = StObject.set(x, "virtualserverName", js.undefined)
+      inline def setVirtualserverNameUndefined: Self = StObject.set(x, "virtualserverName", js.undefined)
       
-      @scala.inline
-      def setVirtualserverNeededIdentitySecurityLevel(value: Double): Self = StObject.set(x, "virtualserverNeededIdentitySecurityLevel", value.asInstanceOf[js.Any])
+      inline def setVirtualserverNeededIdentitySecurityLevel(value: Double): Self = StObject.set(x, "virtualserverNeededIdentitySecurityLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverNeededIdentitySecurityLevelUndefined: Self = StObject.set(x, "virtualserverNeededIdentitySecurityLevel", js.undefined)
+      inline def setVirtualserverNeededIdentitySecurityLevelUndefined: Self = StObject.set(x, "virtualserverNeededIdentitySecurityLevel", js.undefined)
       
-      @scala.inline
-      def setVirtualserverPassword(value: String): Self = StObject.set(x, "virtualserverPassword", value.asInstanceOf[js.Any])
+      inline def setVirtualserverPassword(value: String): Self = StObject.set(x, "virtualserverPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverPasswordUndefined: Self = StObject.set(x, "virtualserverPassword", js.undefined)
+      inline def setVirtualserverPasswordUndefined: Self = StObject.set(x, "virtualserverPassword", js.undefined)
       
-      @scala.inline
-      def setVirtualserverPort(value: Double): Self = StObject.set(x, "virtualserverPort", value.asInstanceOf[js.Any])
+      inline def setVirtualserverPort(value: Double): Self = StObject.set(x, "virtualserverPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverPortUndefined: Self = StObject.set(x, "virtualserverPort", js.undefined)
+      inline def setVirtualserverPortUndefined: Self = StObject.set(x, "virtualserverPort", js.undefined)
       
-      @scala.inline
-      def setVirtualserverPrioritySpeakerDimmModificator(value: Double): Self = StObject.set(x, "virtualserverPrioritySpeakerDimmModificator", value.asInstanceOf[js.Any])
+      inline def setVirtualserverPrioritySpeakerDimmModificator(value: Double): Self = StObject.set(x, "virtualserverPrioritySpeakerDimmModificator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverPrioritySpeakerDimmModificatorUndefined: Self = StObject.set(x, "virtualserverPrioritySpeakerDimmModificator", js.undefined)
+      inline def setVirtualserverPrioritySpeakerDimmModificatorUndefined: Self = StObject.set(x, "virtualserverPrioritySpeakerDimmModificator", js.undefined)
       
-      @scala.inline
-      def setVirtualserverReservedSlots(value: Double): Self = StObject.set(x, "virtualserverReservedSlots", value.asInstanceOf[js.Any])
+      inline def setVirtualserverReservedSlots(value: Double): Self = StObject.set(x, "virtualserverReservedSlots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverReservedSlotsUndefined: Self = StObject.set(x, "virtualserverReservedSlots", js.undefined)
+      inline def setVirtualserverReservedSlotsUndefined: Self = StObject.set(x, "virtualserverReservedSlots", js.undefined)
       
-      @scala.inline
-      def setVirtualserverStatus(value: VirtualServerStatus): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
+      inline def setVirtualserverStatus(value: VirtualServerStatus): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverStatusUndefined: Self = StObject.set(x, "virtualserverStatus", js.undefined)
+      inline def setVirtualserverStatusUndefined: Self = StObject.set(x, "virtualserverStatus", js.undefined)
       
-      @scala.inline
-      def setVirtualserverUploadQuota(value: Double): Self = StObject.set(x, "virtualserverUploadQuota", value.asInstanceOf[js.Any])
+      inline def setVirtualserverUploadQuota(value: Double): Self = StObject.set(x, "virtualserverUploadQuota", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverUploadQuotaUndefined: Self = StObject.set(x, "virtualserverUploadQuota", js.undefined)
+      inline def setVirtualserverUploadQuotaUndefined: Self = StObject.set(x, "virtualserverUploadQuota", js.undefined)
       
-      @scala.inline
-      def setVirtualserverWeblistEnabled(value: Double): Self = StObject.set(x, "virtualserverWeblistEnabled", value.asInstanceOf[js.Any])
+      inline def setVirtualserverWeblistEnabled(value: Double): Self = StObject.set(x, "virtualserverWeblistEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverWeblistEnabledUndefined: Self = StObject.set(x, "virtualserverWeblistEnabled", js.undefined)
+      inline def setVirtualserverWeblistEnabledUndefined: Self = StObject.set(x, "virtualserverWeblistEnabled", js.undefined)
       
-      @scala.inline
-      def setVirtualserverWelcomemessage(value: String): Self = StObject.set(x, "virtualserverWelcomemessage", value.asInstanceOf[js.Any])
+      inline def setVirtualserverWelcomemessage(value: String): Self = StObject.set(x, "virtualserverWelcomemessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualserverWelcomemessageUndefined: Self = StObject.set(x, "virtualserverWelcomemessage", js.undefined)
+      inline def setVirtualserverWelcomemessageUndefined: Self = StObject.set(x, "virtualserverWelcomemessage", js.undefined)
     }
   }
   
@@ -995,38 +782,28 @@ object propertyTypesMod {
   }
   object ServerTempPasswordAdd {
     
-    @scala.inline
-    def apply(duration: Double, pw: String): ServerTempPasswordAdd = {
+    inline def apply(duration: Double, pw: String): ServerTempPasswordAdd = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], pw = pw.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerTempPasswordAdd]
     }
     
-    @scala.inline
-    implicit class ServerTempPasswordAddMutableBuilder[Self <: ServerTempPasswordAdd] (val x: Self) extends AnyVal {
+    extension [Self <: ServerTempPasswordAdd](x: Self) {
       
-      @scala.inline
-      def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPw(value: String): Self = StObject.set(x, "pw", value.asInstanceOf[js.Any])
+      inline def setPw(value: String): Self = StObject.set(x, "pw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTcid(value: String): Self = StObject.set(x, "tcid", value.asInstanceOf[js.Any])
+      inline def setTcid(value: String): Self = StObject.set(x, "tcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTcidUndefined: Self = StObject.set(x, "tcid", js.undefined)
+      inline def setTcidUndefined: Self = StObject.set(x, "tcid", js.undefined)
       
-      @scala.inline
-      def setTcpw(value: String): Self = StObject.set(x, "tcpw", value.asInstanceOf[js.Any])
+      inline def setTcpw(value: String): Self = StObject.set(x, "tcpw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTcpwUndefined: Self = StObject.set(x, "tcpw", js.undefined)
+      inline def setTcpwUndefined: Self = StObject.set(x, "tcpw", js.undefined)
     }
   }
   
@@ -1050,41 +827,30 @@ object propertyTypesMod {
   }
   object TransferDownload {
     
-    @scala.inline
-    def apply(name: String): TransferDownload = {
+    inline def apply(name: String): TransferDownload = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransferDownload]
     }
     
-    @scala.inline
-    implicit class TransferDownloadMutableBuilder[Self <: TransferDownload] (val x: Self) extends AnyVal {
+    extension [Self <: TransferDownload](x: Self) {
       
-      @scala.inline
-      def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+      inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      @scala.inline
-      def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
+      inline def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientftfidUndefined: Self = StObject.set(x, "clientftfid", js.undefined)
+      inline def setClientftfidUndefined: Self = StObject.set(x, "clientftfid", js.undefined)
       
-      @scala.inline
-      def setCpw(value: String): Self = StObject.set(x, "cpw", value.asInstanceOf[js.Any])
+      inline def setCpw(value: String): Self = StObject.set(x, "cpw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpwUndefined: Self = StObject.set(x, "cpw", js.undefined)
+      inline def setCpwUndefined: Self = StObject.set(x, "cpw", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekpos(value: Double): Self = StObject.set(x, "seekpos", value.asInstanceOf[js.Any])
+      inline def setSeekpos(value: Double): Self = StObject.set(x, "seekpos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeekposUndefined: Self = StObject.set(x, "seekpos", js.undefined)
+      inline def setSeekposUndefined: Self = StObject.set(x, "seekpos", js.undefined)
     }
   }
   
@@ -1114,50 +880,36 @@ object propertyTypesMod {
   }
   object TransferUpload {
     
-    @scala.inline
-    def apply(name: String, size: Double): TransferUpload = {
+    inline def apply(name: String, size: Double): TransferUpload = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransferUpload]
     }
     
-    @scala.inline
-    implicit class TransferUploadMutableBuilder[Self <: TransferUpload] (val x: Self) extends AnyVal {
+    extension [Self <: TransferUpload](x: Self) {
       
-      @scala.inline
-      def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+      inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
       
-      @scala.inline
-      def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
+      inline def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientftfidUndefined: Self = StObject.set(x, "clientftfid", js.undefined)
+      inline def setClientftfidUndefined: Self = StObject.set(x, "clientftfid", js.undefined)
       
-      @scala.inline
-      def setCpw(value: String): Self = StObject.set(x, "cpw", value.asInstanceOf[js.Any])
+      inline def setCpw(value: String): Self = StObject.set(x, "cpw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpwUndefined: Self = StObject.set(x, "cpw", js.undefined)
+      inline def setCpwUndefined: Self = StObject.set(x, "cpw", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwrite(value: Double): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Double): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
       
-      @scala.inline
-      def setResume(value: Double): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
+      inline def setResume(value: Double): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
+      inline def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

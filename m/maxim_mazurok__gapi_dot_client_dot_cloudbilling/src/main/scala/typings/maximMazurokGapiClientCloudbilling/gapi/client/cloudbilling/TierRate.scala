@@ -14,25 +14,19 @@ trait TierRate extends StObject {
 }
 object TierRate {
   
-  @scala.inline
-  def apply(): TierRate = {
+  inline def apply(): TierRate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TierRate]
   }
   
-  @scala.inline
-  implicit class TierRateMutableBuilder[Self <: TierRate] (val x: Self) extends AnyVal {
+  extension [Self <: TierRate](x: Self) {
     
-    @scala.inline
-    def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
+    inline def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUsageAmountUndefined: Self = StObject.set(x, "startUsageAmount", js.undefined)
+    inline def setStartUsageAmountUndefined: Self = StObject.set(x, "startUsageAmount", js.undefined)
     
-    @scala.inline
-    def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
+    inline def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
+    inline def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
   }
 }

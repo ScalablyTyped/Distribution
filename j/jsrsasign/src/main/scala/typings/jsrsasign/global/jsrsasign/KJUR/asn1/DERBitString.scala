@@ -154,6 +154,5 @@ object DERBitString {
     * o.newFalseArray(3) → [false, false, false]
     */
   /* static member */
-  @scala.inline
-  def newFalseArray(nLength: Double): js.Array[`false`] = ^.asInstanceOf[js.Dynamic].applyDynamic("newFalseArray")(nLength.asInstanceOf[js.Any]).asInstanceOf[js.Array[`false`]]
+  inline def newFalseArray(nLength: Double): js.Array[`false`] = ^.asInstanceOf[js.Dynamic].applyDynamic("newFalseArray")(nLength.asInstanceOf[js.Any]).asInstanceOf[js.Array[`false`]]
 }

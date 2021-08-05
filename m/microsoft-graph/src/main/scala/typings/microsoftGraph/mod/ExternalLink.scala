@@ -11,22 +11,17 @@ trait ExternalLink extends StObject {
 }
 object ExternalLink {
   
-  @scala.inline
-  def apply(): ExternalLink = {
+  inline def apply(): ExternalLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalLink]
   }
   
-  @scala.inline
-  implicit class ExternalLinkMutableBuilder[Self <: ExternalLink] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalLink](x: Self) {
     
-    @scala.inline
-    def setHref(value: NullableOption[String]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: NullableOption[String]): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefNull: Self = StObject.set(x, "href", null)
+    inline def setHrefNull: Self = StObject.set(x, "href", null)
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
   }
 }

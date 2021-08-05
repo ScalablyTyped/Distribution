@@ -23,25 +23,19 @@ trait UpdateApplicationVersionMessage extends StObject {
 }
 object UpdateApplicationVersionMessage {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, VersionLabel: VersionLabel): UpdateApplicationVersionMessage = {
+  inline def apply(ApplicationName: ApplicationName, VersionLabel: VersionLabel): UpdateApplicationVersionMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], VersionLabel = VersionLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationVersionMessage]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationVersionMessageMutableBuilder[Self <: UpdateApplicationVersionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationVersionMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    inline def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
   }
 }

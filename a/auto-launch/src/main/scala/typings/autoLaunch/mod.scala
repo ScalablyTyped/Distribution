@@ -52,8 +52,7 @@ object mod {
   }
   object AutoLaunch {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disable: () => js.Promise[Unit],
       enable: () => js.Promise[Unit],
       isEnabled: () => js.Promise[Boolean]
@@ -62,17 +61,13 @@ object mod {
       __obj.asInstanceOf[AutoLaunch]
     }
     
-    @scala.inline
-    implicit class AutoLaunchMutableBuilder[Self <: AutoLaunch] (val x: Self) extends AnyVal {
+    extension [Self <: AutoLaunch](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+      inline def setIsEnabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     }
   }
   
@@ -100,35 +95,26 @@ object mod {
   }
   object AutoLaunchOptions {
     
-    @scala.inline
-    def apply(name: String): AutoLaunchOptions = {
+    inline def apply(name: String): AutoLaunchOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoLaunchOptions]
     }
     
-    @scala.inline
-    implicit class AutoLaunchOptionsMutableBuilder[Self <: AutoLaunchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AutoLaunchOptions](x: Self) {
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
+      inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
       
-      @scala.inline
-      def setMac(value: UseLaunchAgent): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: UseLaunchAgent): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+      inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
 }

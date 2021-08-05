@@ -48,28 +48,21 @@ trait BaseMeta[ComponentType] extends StObject {
 }
 object BaseMeta {
   
-  @scala.inline
-  def apply[ComponentType](title: String): BaseMeta[ComponentType] = {
+  inline def apply[ComponentType](title: String): BaseMeta[ComponentType] = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMeta[ComponentType]]
   }
   
-  @scala.inline
-  implicit class BaseMetaMutableBuilder[Self <: BaseMeta[?], ComponentType] (val x: Self & BaseMeta[ComponentType]) extends AnyVal {
+  extension [Self <: BaseMeta[?], ComponentType](x: Self & BaseMeta[ComponentType]) {
     
-    @scala.inline
-    def setComponent(value: ComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setSubcomponents(value: Record[String, ComponentType]): Self = StObject.set(x, "subcomponents", value.asInstanceOf[js.Any])
+    inline def setSubcomponents(value: Record[String, ComponentType]): Self = StObject.set(x, "subcomponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubcomponentsUndefined: Self = StObject.set(x, "subcomponents", js.undefined)
+    inline def setSubcomponentsUndefined: Self = StObject.set(x, "subcomponents", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

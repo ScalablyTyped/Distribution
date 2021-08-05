@@ -12,19 +12,15 @@ trait Endpoint extends StObject {
 }
 object Endpoint {
   
-  @scala.inline
-  def apply(endpoint: js.Any, endpointResource: js.Any): Endpoint = {
+  inline def apply(endpoint: js.Any, endpointResource: js.Any): Endpoint = {
     val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], endpointResource = endpointResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
   
-  @scala.inline
-  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoint](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: js.Any): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: js.Any): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointResource(value: js.Any): Self = StObject.set(x, "endpointResource", value.asInstanceOf[js.Any])
+    inline def setEndpointResource(value: js.Any): Self = StObject.set(x, "endpointResource", value.asInstanceOf[js.Any])
   }
 }

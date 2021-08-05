@@ -13,14 +13,14 @@ object mod {
   class Spinner () extends StObject {
     def this(opts: SpinnerOptions) = this()
     
-    var animateId: js.Any = js.native
+    /* private */ var animateId: js.Any = js.native
     
     /**
       * The Spinner's HTML element - can be used to manually insert the spinner into the DOM
       */
     var el: js.UndefOr[HTMLElement] = js.native
     
-    var opts: js.Any = js.native
+    /* private */ var opts: js.Any = js.native
     
     /**
       * Adds the spinner to the given target element. If this instance is already

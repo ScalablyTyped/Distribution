@@ -41,8 +41,7 @@ trait colorCreatePCTrueColorRendererParams
 }
 object colorCreatePCTrueColorRendererParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: PointCloudLayer,
@@ -52,28 +51,20 @@ object colorCreatePCTrueColorRendererParams {
     __obj.asInstanceOf[colorCreatePCTrueColorRendererParams]
   }
   
-  @scala.inline
-  implicit class colorCreatePCTrueColorRendererParamsMutableBuilder[Self <: colorCreatePCTrueColorRendererParams] (val x: Self) extends AnyVal {
+  extension [Self <: colorCreatePCTrueColorRendererParams](x: Self) {
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
-    @scala.inline
-    def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

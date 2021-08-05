@@ -29,37 +29,27 @@ trait GoogleCloudTalentV4Location extends StObject {
 }
 object GoogleCloudTalentV4Location {
   
-  @scala.inline
-  def apply(): GoogleCloudTalentV4Location = {
+  inline def apply(): GoogleCloudTalentV4Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudTalentV4Location]
   }
   
-  @scala.inline
-  implicit class GoogleCloudTalentV4LocationMutableBuilder[Self <: GoogleCloudTalentV4Location] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudTalentV4Location](x: Self) {
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
-    @scala.inline
-    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
-    @scala.inline
-    def setPostalAddress(value: PostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
+    inline def setPostalAddress(value: PostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
+    inline def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
     
-    @scala.inline
-    def setRadiusMiles(value: Double): Self = StObject.set(x, "radiusMiles", value.asInstanceOf[js.Any])
+    inline def setRadiusMiles(value: Double): Self = StObject.set(x, "radiusMiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusMilesUndefined: Self = StObject.set(x, "radiusMiles", js.undefined)
+    inline def setRadiusMilesUndefined: Self = StObject.set(x, "radiusMiles", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait Showrecipients extends StObject {
 }
 object Showrecipients {
   
-  @scala.inline
-  def apply(): Showrecipients = {
+  inline def apply(): Showrecipients = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Showrecipients]
   }
   
-  @scala.inline
-  implicit class ShowrecipientsMutableBuilder[Self <: Showrecipients] (val x: Self) extends AnyVal {
+  extension [Self <: Showrecipients](x: Self) {
     
-    @scala.inline
-    def setShow_recipients(value: Boolean): Self = StObject.set(x, "show_recipients", value.asInstanceOf[js.Any])
+    inline def setShow_recipients(value: Boolean): Self = StObject.set(x, "show_recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_recipientsUndefined: Self = StObject.set(x, "show_recipients", js.undefined)
+    inline def setShow_recipientsUndefined: Self = StObject.set(x, "show_recipients", js.undefined)
   }
 }

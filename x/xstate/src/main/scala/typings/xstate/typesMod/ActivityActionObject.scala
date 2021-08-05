@@ -17,23 +17,18 @@ trait ActivityActionObject[TContext, TEvent /* <: EventObject */]
 }
 object ActivityActionObject {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](`type`: Start | Stop): ActivityActionObject[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](`type`: Start | Stop): ActivityActionObject[TContext, TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityActionObject[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class ActivityActionObjectMutableBuilder[Self <: ActivityActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActivityActionObject[TContext, TEvent])) extends AnyVal {
+  extension [Self <: ActivityActionObject[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (ActivityActionObject[TContext, TEvent])) {
     
-    @scala.inline
-    def setActivity(value: ActivityDefinition[TContext, TEvent]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: ActivityDefinition[TContext, TEvent]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
+    inline def setActivityUndefined: Self = StObject.set(x, "activity", js.undefined)
     
-    @scala.inline
-    def setType(value: Start | Stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Start | Stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

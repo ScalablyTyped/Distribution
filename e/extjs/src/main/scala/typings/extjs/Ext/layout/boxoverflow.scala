@@ -24,32 +24,24 @@ object boxoverflow {
   }
   object IMenu {
     
-    @scala.inline
-    def apply(): IMenu = {
+    inline def apply(): IMenu = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMenu]
     }
     
-    @scala.inline
-    implicit class IMenuMutableBuilder[Self <: IMenu] (val x: Self) extends AnyVal {
+    extension [Self <: IMenu](x: Self) {
       
-      @scala.inline
-      def setMenuItems(value: Array): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: Array): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
+      inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
       
-      @scala.inline
-      def setNoItemsMenuText(value: String): Self = StObject.set(x, "noItemsMenuText", value.asInstanceOf[js.Any])
+      inline def setNoItemsMenuText(value: String): Self = StObject.set(x, "noItemsMenuText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoItemsMenuTextUndefined: Self = StObject.set(x, "noItemsMenuText", js.undefined)
+      inline def setNoItemsMenuTextUndefined: Self = StObject.set(x, "noItemsMenuText", js.undefined)
       
-      @scala.inline
-      def setTriggerButtonCls(value: String): Self = StObject.set(x, "triggerButtonCls", value.asInstanceOf[js.Any])
+      inline def setTriggerButtonCls(value: String): Self = StObject.set(x, "triggerButtonCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerButtonClsUndefined: Self = StObject.set(x, "triggerButtonCls", js.undefined)
+      inline def setTriggerButtonClsUndefined: Self = StObject.set(x, "triggerButtonCls", js.undefined)
     }
   }
   
@@ -104,86 +96,60 @@ object boxoverflow {
   }
   object IScroller {
     
-    @scala.inline
-    def apply(): IScroller = {
+    inline def apply(): IScroller = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IScroller]
     }
     
-    @scala.inline
-    implicit class IScrollerMutableBuilder[Self <: IScroller] (val x: Self) extends AnyVal {
+    extension [Self <: IScroller](x: Self) {
       
-      @scala.inline
-      def setAfterCtCls(value: String): Self = StObject.set(x, "afterCtCls", value.asInstanceOf[js.Any])
+      inline def setAfterCtCls(value: String): Self = StObject.set(x, "afterCtCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterCtClsUndefined: Self = StObject.set(x, "afterCtCls", js.undefined)
+      inline def setAfterCtClsUndefined: Self = StObject.set(x, "afterCtCls", js.undefined)
       
-      @scala.inline
-      def setAfterScrollerCls(value: String): Self = StObject.set(x, "afterScrollerCls", value.asInstanceOf[js.Any])
+      inline def setAfterScrollerCls(value: String): Self = StObject.set(x, "afterScrollerCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterScrollerClsUndefined: Self = StObject.set(x, "afterScrollerCls", js.undefined)
+      inline def setAfterScrollerClsUndefined: Self = StObject.set(x, "afterScrollerCls", js.undefined)
       
-      @scala.inline
-      def setAnimateScroll(value: Boolean): Self = StObject.set(x, "animateScroll", value.asInstanceOf[js.Any])
+      inline def setAnimateScroll(value: Boolean): Self = StObject.set(x, "animateScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateScrollUndefined: Self = StObject.set(x, "animateScroll", js.undefined)
+      inline def setAnimateScrollUndefined: Self = StObject.set(x, "animateScroll", js.undefined)
       
-      @scala.inline
-      def setBeforeCtCls(value: String): Self = StObject.set(x, "beforeCtCls", value.asInstanceOf[js.Any])
+      inline def setBeforeCtCls(value: String): Self = StObject.set(x, "beforeCtCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeCtClsUndefined: Self = StObject.set(x, "beforeCtCls", js.undefined)
+      inline def setBeforeCtClsUndefined: Self = StObject.set(x, "beforeCtCls", js.undefined)
       
-      @scala.inline
-      def setBeforeScrollerCls(value: String): Self = StObject.set(x, "beforeScrollerCls", value.asInstanceOf[js.Any])
+      inline def setBeforeScrollerCls(value: String): Self = StObject.set(x, "beforeScrollerCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeScrollerClsUndefined: Self = StObject.set(x, "beforeScrollerCls", js.undefined)
+      inline def setBeforeScrollerClsUndefined: Self = StObject.set(x, "beforeScrollerCls", js.undefined)
       
-      @scala.inline
-      def setGetScrollPosition(value: () => Double): Self = StObject.set(x, "getScrollPosition", js.Any.fromFunction0(value))
+      inline def setGetScrollPosition(value: () => Double): Self = StObject.set(x, "getScrollPosition", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollPositionUndefined: Self = StObject.set(x, "getScrollPosition", js.undefined)
+      inline def setGetScrollPositionUndefined: Self = StObject.set(x, "getScrollPosition", js.undefined)
       
-      @scala.inline
-      def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+      inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
+      inline def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
       
-      @scala.inline
-      def setScrollIncrement(value: Double): Self = StObject.set(x, "scrollIncrement", value.asInstanceOf[js.Any])
+      inline def setScrollIncrement(value: Double): Self = StObject.set(x, "scrollIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollIncrementUndefined: Self = StObject.set(x, "scrollIncrement", js.undefined)
+      inline def setScrollIncrementUndefined: Self = StObject.set(x, "scrollIncrement", js.undefined)
       
-      @scala.inline
-      def setScrollRepeatInterval(value: Double): Self = StObject.set(x, "scrollRepeatInterval", value.asInstanceOf[js.Any])
+      inline def setScrollRepeatInterval(value: Double): Self = StObject.set(x, "scrollRepeatInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollRepeatIntervalUndefined: Self = StObject.set(x, "scrollRepeatInterval", js.undefined)
+      inline def setScrollRepeatIntervalUndefined: Self = StObject.set(x, "scrollRepeatInterval", js.undefined)
       
-      @scala.inline
-      def setScrollToItem(value: (/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "scrollToItem", js.Any.fromFunction2(value))
+      inline def setScrollToItem(value: (/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "scrollToItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScrollToItemUndefined: Self = StObject.set(x, "scrollToItem", js.undefined)
+      inline def setScrollToItemUndefined: Self = StObject.set(x, "scrollToItem", js.undefined)
       
-      @scala.inline
-      def setScrollerCls(value: String): Self = StObject.set(x, "scrollerCls", value.asInstanceOf[js.Any])
+      inline def setScrollerCls(value: String): Self = StObject.set(x, "scrollerCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollerClsUndefined: Self = StObject.set(x, "scrollerCls", js.undefined)
+      inline def setScrollerClsUndefined: Self = StObject.set(x, "scrollerCls", js.undefined)
       
-      @scala.inline
-      def setWheelIncrement(value: Double): Self = StObject.set(x, "wheelIncrement", value.asInstanceOf[js.Any])
+      inline def setWheelIncrement(value: Double): Self = StObject.set(x, "wheelIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelIncrementUndefined: Self = StObject.set(x, "wheelIncrement", js.undefined)
+      inline def setWheelIncrementUndefined: Self = StObject.set(x, "wheelIncrement", js.undefined)
     }
   }
 }

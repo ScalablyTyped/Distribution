@@ -75,8 +75,7 @@ object anon {
   }
   object Histogramsentnumber {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       average: Double,
       max: Double,
       mean: Double,
@@ -104,74 +103,51 @@ object anon {
       __obj.asInstanceOf[Histogramsentnumber]
     }
     
-    @scala.inline
-    implicit class HistogramsentnumberMutableBuilder[Self <: Histogramsentnumber] (val x: Self) extends AnyVal {
+    extension [Self <: Histogramsentnumber](x: Self) {
       
-      @scala.inline
-      def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+      inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+      inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP0_001(value: Double): Self = StObject.set(x, "p0_001", value.asInstanceOf[js.Any])
+      inline def setP0_001(value: Double): Self = StObject.set(x, "p0_001", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP0_01(value: Double): Self = StObject.set(x, "p0_01", value.asInstanceOf[js.Any])
+      inline def setP0_01(value: Double): Self = StObject.set(x, "p0_01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP0_1(value: Double): Self = StObject.set(x, "p0_1", value.asInstanceOf[js.Any])
+      inline def setP0_1(value: Double): Self = StObject.set(x, "p0_1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP1(value: Double): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+      inline def setP1(value: Double): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP10(value: Double): Self = StObject.set(x, "p10", value.asInstanceOf[js.Any])
+      inline def setP10(value: Double): Self = StObject.set(x, "p10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP25(value: Double): Self = StObject.set(x, "p25", value.asInstanceOf[js.Any])
+      inline def setP25(value: Double): Self = StObject.set(x, "p25", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP2_5(value: Double): Self = StObject.set(x, "p2_5", value.asInstanceOf[js.Any])
+      inline def setP2_5(value: Double): Self = StObject.set(x, "p2_5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP50(value: Double): Self = StObject.set(x, "p50", value.asInstanceOf[js.Any])
+      inline def setP50(value: Double): Self = StObject.set(x, "p50", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP75(value: Double): Self = StObject.set(x, "p75", value.asInstanceOf[js.Any])
+      inline def setP75(value: Double): Self = StObject.set(x, "p75", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP90(value: Double): Self = StObject.set(x, "p90", value.asInstanceOf[js.Any])
+      inline def setP90(value: Double): Self = StObject.set(x, "p90", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP97_5(value: Double): Self = StObject.set(x, "p97_5", value.asInstanceOf[js.Any])
+      inline def setP97_5(value: Double): Self = StObject.set(x, "p97_5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP99(value: Double): Self = StObject.set(x, "p99", value.asInstanceOf[js.Any])
+      inline def setP99(value: Double): Self = StObject.set(x, "p99", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP99_9(value: Double): Self = StObject.set(x, "p99_9", value.asInstanceOf[js.Any])
+      inline def setP99_9(value: Double): Self = StObject.set(x, "p99_9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP99_99(value: Double): Self = StObject.set(x, "p99_99", value.asInstanceOf[js.Any])
+      inline def setP99_99(value: Double): Self = StObject.set(x, "p99_99", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP99_999(value: Double): Self = StObject.set(x, "p99_999", value.asInstanceOf[js.Any])
+      inline def setP99_999(value: Double): Self = StObject.set(x, "p99_999", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSent(value: Double): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
+      inline def setSent(value: Double): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+      inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

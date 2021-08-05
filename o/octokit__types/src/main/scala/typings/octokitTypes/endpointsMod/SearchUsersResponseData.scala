@@ -15,25 +15,19 @@ trait SearchUsersResponseData extends StObject {
 }
 object SearchUsersResponseData {
   
-  @scala.inline
-  def apply(incomplete_results: Boolean, items: js.Array[Organizationsurl], total_count: Double): SearchUsersResponseData = {
+  inline def apply(incomplete_results: Boolean, items: js.Array[Organizationsurl], total_count: Double): SearchUsersResponseData = {
     val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchUsersResponseData]
   }
   
-  @scala.inline
-  implicit class SearchUsersResponseDataMutableBuilder[Self <: SearchUsersResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: SearchUsersResponseData](x: Self) {
     
-    @scala.inline
-    def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
+    inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[Organizationsurl]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Organizationsurl]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: Organizationsurl*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Organizationsurl*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

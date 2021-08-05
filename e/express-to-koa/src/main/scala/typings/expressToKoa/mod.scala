@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     middleware: js.Function3[
       /* req */ IncomingMessage, 
       /* res */ ServerResponse, 

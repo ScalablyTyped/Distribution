@@ -33,40 +33,29 @@ trait ImportCertificateRequest extends StObject {
 }
 object ImportCertificateRequest {
   
-  @scala.inline
-  def apply(Certificate: CertificateBodyBlob, PrivateKey: PrivateKeyBlob): ImportCertificateRequest = {
+  inline def apply(Certificate: CertificateBodyBlob, PrivateKey: PrivateKeyBlob): ImportCertificateRequest = {
     val __obj = js.Dynamic.literal(Certificate = Certificate.asInstanceOf[js.Any], PrivateKey = PrivateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportCertificateRequest]
   }
   
-  @scala.inline
-  implicit class ImportCertificateRequestMutableBuilder[Self <: ImportCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: CertificateBodyBlob): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: CertificateBodyBlob): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateChain(value: CertificateChainBlob): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: CertificateChainBlob): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
+    inline def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
     
-    @scala.inline
-    def setPrivateKey(value: PrivateKeyBlob): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: PrivateKeyBlob): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

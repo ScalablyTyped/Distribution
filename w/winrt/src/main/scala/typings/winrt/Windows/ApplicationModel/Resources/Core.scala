@@ -50,8 +50,7 @@ object Core {
   }
   object IResourceCandidate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getQualifierValue: String => String,
       getValueAsFileAsync: () => IAsyncOperation[StorageFile],
       isDefault: Boolean,
@@ -64,29 +63,21 @@ object Core {
       __obj.asInstanceOf[IResourceCandidate]
     }
     
-    @scala.inline
-    implicit class IResourceCandidateMutableBuilder[Self <: IResourceCandidate] (val x: Self) extends AnyVal {
+    extension [Self <: IResourceCandidate](x: Self) {
       
-      @scala.inline
-      def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
+      inline def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValueAsFileAsync(value: () => IAsyncOperation[StorageFile]): Self = StObject.set(x, "getValueAsFileAsync", js.Any.fromFunction0(value))
+      inline def setGetValueAsFileAsync(value: () => IAsyncOperation[StorageFile]): Self = StObject.set(x, "getValueAsFileAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+      inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+      inline def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMatchAsDefault(value: Boolean): Self = StObject.set(x, "isMatchAsDefault", value.asInstanceOf[js.Any])
+      inline def setIsMatchAsDefault(value: Boolean): Self = StObject.set(x, "isMatchAsDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiers(value: IVectorView[ResourceQualifier]): Self = StObject.set(x, "qualifiers", value.asInstanceOf[js.Any])
+      inline def setQualifiers(value: IVectorView[ResourceQualifier]): Self = StObject.set(x, "qualifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
+      inline def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,17 +100,14 @@ object Core {
   }
   object IResourceContextStatics {
     
-    @scala.inline
-    def apply(createMatchingContext: IIterable[ResourceQualifier] => ResourceContext): IResourceContextStatics = {
+    inline def apply(createMatchingContext: IIterable[ResourceQualifier] => ResourceContext): IResourceContextStatics = {
       val __obj = js.Dynamic.literal(createMatchingContext = js.Any.fromFunction1(createMatchingContext))
       __obj.asInstanceOf[IResourceContextStatics]
     }
     
-    @scala.inline
-    implicit class IResourceContextStaticsMutableBuilder[Self <: IResourceContextStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IResourceContextStatics](x: Self) {
       
-      @scala.inline
-      def setCreateMatchingContext(value: IIterable[ResourceQualifier] => ResourceContext): Self = StObject.set(x, "createMatchingContext", js.Any.fromFunction1(value))
+      inline def setCreateMatchingContext(value: IIterable[ResourceQualifier] => ResourceContext): Self = StObject.set(x, "createMatchingContext", js.Any.fromFunction1(value))
     }
   }
   
@@ -137,8 +125,7 @@ object Core {
   }
   object IResourceManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allResourceMaps: IMapView[String, ResourceMap],
       defaultContext: ResourceContext,
       loadPriFiles: IIterable[IStorageFile] => Unit,
@@ -149,23 +136,17 @@ object Core {
       __obj.asInstanceOf[IResourceManager]
     }
     
-    @scala.inline
-    implicit class IResourceManagerMutableBuilder[Self <: IResourceManager] (val x: Self) extends AnyVal {
+    extension [Self <: IResourceManager](x: Self) {
       
-      @scala.inline
-      def setAllResourceMaps(value: IMapView[String, ResourceMap]): Self = StObject.set(x, "allResourceMaps", value.asInstanceOf[js.Any])
+      inline def setAllResourceMaps(value: IMapView[String, ResourceMap]): Self = StObject.set(x, "allResourceMaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultContext(value: ResourceContext): Self = StObject.set(x, "defaultContext", value.asInstanceOf[js.Any])
+      inline def setDefaultContext(value: ResourceContext): Self = StObject.set(x, "defaultContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "loadPriFiles", js.Any.fromFunction1(value))
+      inline def setLoadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "loadPriFiles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMainResourceMap(value: ResourceMap): Self = StObject.set(x, "mainResourceMap", value.asInstanceOf[js.Any])
+      inline def setMainResourceMap(value: ResourceMap): Self = StObject.set(x, "mainResourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnloadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "unloadPriFiles", js.Any.fromFunction1(value))
+      inline def setUnloadPriFiles(value: IIterable[IStorageFile] => Unit): Self = StObject.set(x, "unloadPriFiles", js.Any.fromFunction1(value))
     }
   }
   
@@ -177,20 +158,16 @@ object Core {
   }
   object IResourceManagerStatics {
     
-    @scala.inline
-    def apply(current: ResourceManager, isResourceReference: String => Boolean): IResourceManagerStatics = {
+    inline def apply(current: ResourceManager, isResourceReference: String => Boolean): IResourceManagerStatics = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], isResourceReference = js.Any.fromFunction1(isResourceReference))
       __obj.asInstanceOf[IResourceManagerStatics]
     }
     
-    @scala.inline
-    implicit class IResourceManagerStaticsMutableBuilder[Self <: IResourceManagerStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IResourceManagerStatics](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: ResourceManager): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: ResourceManager): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsResourceReference(value: String => Boolean): Self = StObject.set(x, "isResourceReference", js.Any.fromFunction1(value))
+      inline def setIsResourceReference(value: String => Boolean): Self = StObject.set(x, "isResourceReference", js.Any.fromFunction1(value))
     }
   }
   
@@ -221,29 +198,22 @@ object Core {
   }
   object IResourceQualifier {
     
-    @scala.inline
-    def apply(isDefault: Boolean, isMatch: Boolean, qualifierName: String, qualifierValue: String, score: Double): IResourceQualifier = {
+    inline def apply(isDefault: Boolean, isMatch: Boolean, qualifierName: String, qualifierValue: String, score: Double): IResourceQualifier = {
       val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], isMatch = isMatch.asInstanceOf[js.Any], qualifierName = qualifierName.asInstanceOf[js.Any], qualifierValue = qualifierValue.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResourceQualifier]
     }
     
-    @scala.inline
-    implicit class IResourceQualifierMutableBuilder[Self <: IResourceQualifier] (val x: Self) extends AnyVal {
+    extension [Self <: IResourceQualifier](x: Self) {
       
-      @scala.inline
-      def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+      inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+      inline def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierName(value: String): Self = StObject.set(x, "qualifierName", value.asInstanceOf[js.Any])
+      inline def setQualifierName(value: String): Self = StObject.set(x, "qualifierName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierValue(value: String): Self = StObject.set(x, "qualifierValue", value.asInstanceOf[js.Any])
+      inline def setQualifierValue(value: String): Self = StObject.set(x, "qualifierValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,8 +227,7 @@ object Core {
        with IResourceCandidate
   object ResourceCandidate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getQualifierValue: String => String,
       getValueAsFileAsync: () => IAsyncOperation[StorageFile],
       isDefault: Boolean,
@@ -292,8 +261,7 @@ object Core {
        with IResourceManager
   object ResourceManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allResourceMaps: IMapView[String, ResourceMap],
       defaultContext: ResourceContext,
       loadPriFiles: IIterable[IStorageFile] => Unit,
@@ -315,8 +283,7 @@ object Core {
        with IIterator[IKeyValuePair[String, NamedResource]]
   object ResourceMapIterator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: IKeyValuePair[String, NamedResource],
       getMany: () => Items[IKeyValuePair[String, NamedResource]],
       hasCurrent: Boolean,
@@ -332,8 +299,7 @@ object Core {
        with IMapView[String, ResourceMap]
   object ResourceMapMapView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       first: () => IIterator[IKeyValuePair[String, ResourceMap]],
       hasKey: String => Boolean,
       lookup: String => ResourceMap,
@@ -350,8 +316,7 @@ object Core {
        with IIterator[IKeyValuePair[String, ResourceMap]]
   object ResourceMapMapViewIterator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: IKeyValuePair[String, ResourceMap],
       getMany: () => Items[IKeyValuePair[String, ResourceMap]],
       hasCurrent: Boolean,
@@ -367,8 +332,7 @@ object Core {
        with IResourceQualifier
   object ResourceQualifier {
     
-    @scala.inline
-    def apply(isDefault: Boolean, isMatch: Boolean, qualifierName: String, qualifierValue: String, score: Double): ResourceQualifier = {
+    inline def apply(isDefault: Boolean, isMatch: Boolean, qualifierName: String, qualifierValue: String, score: Double): ResourceQualifier = {
       val __obj = js.Dynamic.literal(isDefault = isDefault.asInstanceOf[js.Any], isMatch = isMatch.asInstanceOf[js.Any], qualifierName = qualifierName.asInstanceOf[js.Any], qualifierValue = qualifierValue.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceQualifier]
     }
@@ -379,8 +343,7 @@ object Core {
        with IMapView[String, String]
   object ResourceQualifierMapView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       first: () => IIterator[IKeyValuePair[String, String]],
       hasKey: String => Boolean,
       lookup: String => String,
@@ -397,8 +360,7 @@ object Core {
        with IObservableMap[String, String]
   object ResourceQualifierObservableMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: () => Unit,
       first: () => IIterator[IKeyValuePair[String, String]],
       getView: () => IMapView[String, String],

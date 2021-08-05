@@ -23,34 +23,25 @@ trait DevicePoolCompatibilityResult extends StObject {
 }
 object DevicePoolCompatibilityResult {
   
-  @scala.inline
-  def apply(): DevicePoolCompatibilityResult = {
+  inline def apply(): DevicePoolCompatibilityResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DevicePoolCompatibilityResult]
   }
   
-  @scala.inline
-  implicit class DevicePoolCompatibilityResultMutableBuilder[Self <: DevicePoolCompatibilityResult] (val x: Self) extends AnyVal {
+  extension [Self <: DevicePoolCompatibilityResult](x: Self) {
     
-    @scala.inline
-    def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
+    inline def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibleUndefined: Self = StObject.set(x, "compatible", js.undefined)
+    inline def setCompatibleUndefined: Self = StObject.set(x, "compatible", js.undefined)
     
-    @scala.inline
-    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setIncompatibilityMessages(value: IncompatibilityMessages): Self = StObject.set(x, "incompatibilityMessages", value.asInstanceOf[js.Any])
+    inline def setIncompatibilityMessages(value: IncompatibilityMessages): Self = StObject.set(x, "incompatibilityMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibilityMessagesUndefined: Self = StObject.set(x, "incompatibilityMessages", js.undefined)
+    inline def setIncompatibilityMessagesUndefined: Self = StObject.set(x, "incompatibilityMessages", js.undefined)
     
-    @scala.inline
-    def setIncompatibilityMessagesVarargs(value: IncompatibilityMessage*): Self = StObject.set(x, "incompatibilityMessages", js.Array(value :_*))
+    inline def setIncompatibilityMessagesVarargs(value: IncompatibilityMessage*): Self = StObject.set(x, "incompatibilityMessages", js.Array(value :_*))
   }
 }

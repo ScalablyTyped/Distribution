@@ -15,19 +15,15 @@ trait OAuthSettings extends StObject {
 }
 object OAuthSettings {
   
-  @scala.inline
-  def apply(): OAuthSettings = {
+  inline def apply(): OAuthSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuthSettings]
   }
   
-  @scala.inline
-  implicit class OAuthSettingsMutableBuilder[Self <: OAuthSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthSettings](x: Self) {
     
-    @scala.inline
-    def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
+    inline def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
+    inline def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
   }
 }

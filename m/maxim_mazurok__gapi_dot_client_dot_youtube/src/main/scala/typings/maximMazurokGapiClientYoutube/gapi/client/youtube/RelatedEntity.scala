@@ -10,19 +10,15 @@ trait RelatedEntity extends StObject {
 }
 object RelatedEntity {
   
-  @scala.inline
-  def apply(): RelatedEntity = {
+  inline def apply(): RelatedEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelatedEntity]
   }
   
-  @scala.inline
-  implicit class RelatedEntityMutableBuilder[Self <: RelatedEntity] (val x: Self) extends AnyVal {
+  extension [Self <: RelatedEntity](x: Self) {
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
   }
 }

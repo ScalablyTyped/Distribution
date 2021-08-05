@@ -23,43 +23,31 @@ trait ScoreSubmission extends StObject {
 }
 object ScoreSubmission {
   
-  @scala.inline
-  def apply(): ScoreSubmission = {
+  inline def apply(): ScoreSubmission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScoreSubmission]
   }
   
-  @scala.inline
-  implicit class ScoreSubmissionMutableBuilder[Self <: ScoreSubmission] (val x: Self) extends AnyVal {
+  extension [Self <: ScoreSubmission](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
+    inline def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
+    inline def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
     
-    @scala.inline
-    def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
+    inline def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
+    inline def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

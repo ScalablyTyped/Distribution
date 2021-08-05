@@ -23,28 +23,21 @@ trait SchemaListPhotosResponse extends StObject {
 }
 object SchemaListPhotosResponse {
   
-  @scala.inline
-  def apply(): SchemaListPhotosResponse = {
+  inline def apply(): SchemaListPhotosResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListPhotosResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListPhotosResponseMutableBuilder[Self <: SchemaListPhotosResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListPhotosResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPhotos(value: js.Array[SchemaPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: js.Array[SchemaPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
+    inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
-    @scala.inline
-    def setPhotosVarargs(value: SchemaPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: SchemaPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
   }
 }

@@ -15,18 +15,13 @@ object guardsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isCommand[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](obj: js.Any): /* is C */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommand")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is C */ Boolean]
+  inline def isCommand[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](obj: js.Any): /* is C */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommand")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is C */ Boolean]
   
-  @scala.inline
-  def isHydratedCommandMetadata[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](obj: js.Any): /* is @ionic/cli-framework.@ionic/cli-framework/definitions.HydratedCommandMetadata<C, N, M, I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHydratedCommandMetadata")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @ionic/cli-framework.@ionic/cli-framework/definitions.HydratedCommandMetadata<C, N, M, I, O> */ Boolean]
+  inline def isHydratedCommandMetadata[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](obj: js.Any): /* is @ionic/cli-framework.@ionic/cli-framework/definitions.HydratedCommandMetadata<C, N, M, I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHydratedCommandMetadata")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @ionic/cli-framework.@ionic/cli-framework/definitions.HydratedCommandMetadata<C, N, M, I, O> */ Boolean]
   
-  @scala.inline
-  def isLinkFootnote(obj: js.Any): /* is @ionic/cli-framework.@ionic/cli-framework/definitions.LinkFootnote */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinkFootnote")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @ionic/cli-framework.@ionic/cli-framework/definitions.LinkFootnote */ Boolean]
+  inline def isLinkFootnote(obj: js.Any): /* is @ionic/cli-framework.@ionic/cli-framework/definitions.LinkFootnote */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinkFootnote")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @ionic/cli-framework.@ionic/cli-framework/definitions.LinkFootnote */ Boolean]
   
-  @scala.inline
-  def isNamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](obj: js.Any): /* is N */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamespace")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is N */ Boolean]
+  inline def isNamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](obj: js.Any): /* is N */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamespace")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is N */ Boolean]
   
-  @scala.inline
-  def isPackageJson(obj: js.Any): /* is @ionic/cli-framework.@ionic/cli-framework/definitions.PackageJson */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPackageJson")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @ionic/cli-framework.@ionic/cli-framework/definitions.PackageJson */ Boolean]
+  inline def isPackageJson(obj: js.Any): /* is @ionic/cli-framework.@ionic/cli-framework/definitions.PackageJson */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPackageJson")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @ionic/cli-framework.@ionic/cli-framework/definitions.PackageJson */ Boolean]
 }

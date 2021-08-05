@@ -18,19 +18,15 @@ trait HttpActionHeader extends StObject {
 }
 object HttpActionHeader {
   
-  @scala.inline
-  def apply(key: HeaderKey, value: HeaderValue): HttpActionHeader = {
+  inline def apply(key: HeaderKey, value: HeaderValue): HttpActionHeader = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpActionHeader]
   }
   
-  @scala.inline
-  implicit class HttpActionHeaderMutableBuilder[Self <: HttpActionHeader] (val x: Self) extends AnyVal {
+  extension [Self <: HttpActionHeader](x: Self) {
     
-    @scala.inline
-    def setKey(value: HeaderKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: HeaderKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: HeaderValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: HeaderValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

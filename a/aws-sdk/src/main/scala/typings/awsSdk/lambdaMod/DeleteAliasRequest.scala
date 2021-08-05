@@ -18,19 +18,15 @@ trait DeleteAliasRequest extends StObject {
 }
 object DeleteAliasRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName, Name: Alias): DeleteAliasRequest = {
+  inline def apply(FunctionName: FunctionName, Name: Alias): DeleteAliasRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAliasRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAliasRequestMutableBuilder[Self <: DeleteAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAliasRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Alias): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Alias): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

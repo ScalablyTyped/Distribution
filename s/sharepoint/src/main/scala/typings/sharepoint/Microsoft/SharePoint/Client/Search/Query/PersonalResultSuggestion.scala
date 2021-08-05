@@ -29,8 +29,7 @@ trait PersonalResultSuggestion
 }
 object PersonalResultSuggestion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -49,31 +48,22 @@ object PersonalResultSuggestion {
     __obj.asInstanceOf[PersonalResultSuggestion]
   }
   
-  @scala.inline
-  implicit class PersonalResultSuggestionMutableBuilder[Self <: PersonalResultSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: PersonalResultSuggestion](x: Self) {
     
-    @scala.inline
-    def setGet_highlightedTitle(value: () => String): Self = StObject.set(x, "get_highlightedTitle", js.Any.fromFunction0(value))
+    inline def setGet_highlightedTitle(value: () => String): Self = StObject.set(x, "get_highlightedTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isBestBet(value: () => Boolean): Self = StObject.set(x, "get_isBestBet", js.Any.fromFunction0(value))
+    inline def setGet_isBestBet(value: () => Boolean): Self = StObject.set(x, "get_isBestBet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_highlightedTitle(value: String => Unit): Self = StObject.set(x, "set_highlightedTitle", js.Any.fromFunction1(value))
+    inline def setSet_highlightedTitle(value: String => Unit): Self = StObject.set(x, "set_highlightedTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_isBestBet(value: Boolean => Unit): Self = StObject.set(x, "set_isBestBet", js.Any.fromFunction1(value))
+    inline def setSet_isBestBet(value: Boolean => Unit): Self = StObject.set(x, "set_isBestBet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
   }
 }

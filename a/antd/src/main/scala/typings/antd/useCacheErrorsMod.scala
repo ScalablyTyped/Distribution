@@ -11,8 +11,7 @@ object useCacheErrorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     errors: js.Array[ReactNode],
     changeTrigger: js.Function1[/* visible */ Boolean, Unit],
     directly: Boolean

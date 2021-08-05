@@ -13,9 +13,9 @@ abstract class Reflection protected () extends StObject {
   def this(name: String, kind: ReflectionKind) = this()
   def this(name: String, kind: ReflectionKind, parent: Reflection) = this()
   
-  var _alias: js.Any = js.native
+  /* private */ var _alias: js.Any = js.native
   
-  var _aliases: js.Any = js.native
+  /* private */ var _aliases: js.Any = js.native
   
   var anchor: js.UndefOr[String] = js.native
   

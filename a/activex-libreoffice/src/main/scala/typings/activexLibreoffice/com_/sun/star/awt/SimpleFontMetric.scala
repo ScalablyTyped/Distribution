@@ -47,8 +47,7 @@ trait SimpleFontMetric extends StObject {
 }
 object SimpleFontMetric {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Ascent: Double,
     Descent: Double,
     FirstChar: String,
@@ -60,25 +59,18 @@ object SimpleFontMetric {
     __obj.asInstanceOf[SimpleFontMetric]
   }
   
-  @scala.inline
-  implicit class SimpleFontMetricMutableBuilder[Self <: SimpleFontMetric] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleFontMetric](x: Self) {
     
-    @scala.inline
-    def setAscent(value: Double): Self = StObject.set(x, "Ascent", value.asInstanceOf[js.Any])
+    inline def setAscent(value: Double): Self = StObject.set(x, "Ascent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescent(value: Double): Self = StObject.set(x, "Descent", value.asInstanceOf[js.Any])
+    inline def setDescent(value: Double): Self = StObject.set(x, "Descent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstChar(value: String): Self = StObject.set(x, "FirstChar", value.asInstanceOf[js.Any])
+    inline def setFirstChar(value: String): Self = StObject.set(x, "FirstChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastChar(value: String): Self = StObject.set(x, "LastChar", value.asInstanceOf[js.Any])
+    inline def setLastChar(value: String): Self = StObject.set(x, "LastChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeading(value: Double): Self = StObject.set(x, "Leading", value.asInstanceOf[js.Any])
+    inline def setLeading(value: Double): Self = StObject.set(x, "Leading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlant(value: Double): Self = StObject.set(x, "Slant", value.asInstanceOf[js.Any])
+    inline def setSlant(value: Double): Self = StObject.set(x, "Slant", value.asInstanceOf[js.Any])
   }
 }

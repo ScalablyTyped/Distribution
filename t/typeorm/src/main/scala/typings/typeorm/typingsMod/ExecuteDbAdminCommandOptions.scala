@@ -14,19 +14,15 @@ trait ExecuteDbAdminCommandOptions extends StObject {
 }
 object ExecuteDbAdminCommandOptions {
   
-  @scala.inline
-  def apply(): ExecuteDbAdminCommandOptions = {
+  inline def apply(): ExecuteDbAdminCommandOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteDbAdminCommandOptions]
   }
   
-  @scala.inline
-  implicit class ExecuteDbAdminCommandOptionsMutableBuilder[Self <: ExecuteDbAdminCommandOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteDbAdminCommandOptions](x: Self) {
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait AddApplicationVpcConfigurationRequest extends StObject {
 }
 object AddApplicationVpcConfigurationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationName: ApplicationName,
     CurrentApplicationVersionId: ApplicationVersionId,
     VpcConfiguration: VpcConfiguration
@@ -33,16 +32,12 @@ object AddApplicationVpcConfigurationRequest {
     __obj.asInstanceOf[AddApplicationVpcConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class AddApplicationVpcConfigurationRequestMutableBuilder[Self <: AddApplicationVpcConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddApplicationVpcConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
+    inline def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
   }
 }

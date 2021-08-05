@@ -18,8 +18,7 @@ trait BadRequest extends StObject {
 }
 object BadRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     badRequest: scala.Double,
     invalidResolution: scala.Double,
     notFound: scala.Double,
@@ -30,22 +29,16 @@ object BadRequest {
     __obj.asInstanceOf[BadRequest]
   }
   
-  @scala.inline
-  implicit class BadRequestMutableBuilder[Self <: BadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BadRequest](x: Self) {
     
-    @scala.inline
-    def setBadRequest(value: scala.Double): Self = StObject.set(x, "badRequest", value.asInstanceOf[js.Any])
+    inline def setBadRequest(value: scala.Double): Self = StObject.set(x, "badRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidResolution(value: scala.Double): Self = StObject.set(x, "invalidResolution", value.asInstanceOf[js.Any])
+    inline def setInvalidResolution(value: scala.Double): Self = StObject.set(x, "invalidResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFound(value: scala.Double): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: scala.Double): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsupportedConflictType(value: scala.Double): Self = StObject.set(x, "unsupportedConflictType", value.asInstanceOf[js.Any])
+    inline def setUnsupportedConflictType(value: scala.Double): Self = StObject.set(x, "unsupportedConflictType", value.asInstanceOf[js.Any])
   }
 }

@@ -28,25 +28,19 @@ trait ChartPointFormatLoadOptions extends StObject {
 }
 object ChartPointFormatLoadOptions {
   
-  @scala.inline
-  def apply(): ChartPointFormatLoadOptions = {
+  inline def apply(): ChartPointFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartPointFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartPointFormatLoadOptionsMutableBuilder[Self <: ChartPointFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartPointFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBorder(value: ChartBorderLoadOptions): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ChartBorderLoadOptions): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
   }
 }

@@ -38,37 +38,27 @@ trait ResumeOptions extends StObject {
 }
 object ResumeOptions {
   
-  @scala.inline
-  def apply(): ResumeOptions = {
+  inline def apply(): ResumeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResumeOptions]
   }
   
-  @scala.inline
-  implicit class ResumeOptionsMutableBuilder[Self <: ResumeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeOptions](x: Self) {
     
-    @scala.inline
-    def setCustomKeys(value: js.Function): Self = StObject.set(x, "customKeys", value.asInstanceOf[js.Any])
+    inline def setCustomKeys(value: js.Function): Self = StObject.set(x, "customKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomKeysUndefined: Self = StObject.set(x, "customKeys", js.undefined)
+    inline def setCustomKeysUndefined: Self = StObject.set(x, "customKeys", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setParamNames(value: ParamNamesOptions): Self = StObject.set(x, "paramNames", value.asInstanceOf[js.Any])
+    inline def setParamNames(value: ParamNamesOptions): Self = StObject.set(x, "paramNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamNamesUndefined: Self = StObject.set(x, "paramNames", js.undefined)
+    inline def setParamNamesUndefined: Self = StObject.set(x, "paramNames", js.undefined)
     
-    @scala.inline
-    def setRecordsExpireIn(value: Double): Self = StObject.set(x, "recordsExpireIn", value.asInstanceOf[js.Any])
+    inline def setRecordsExpireIn(value: Double): Self = StObject.set(x, "recordsExpireIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsExpireInUndefined: Self = StObject.set(x, "recordsExpireIn", js.undefined)
+    inline def setRecordsExpireInUndefined: Self = StObject.set(x, "recordsExpireIn", js.undefined)
   }
 }

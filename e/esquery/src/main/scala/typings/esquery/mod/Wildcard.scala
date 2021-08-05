@@ -19,20 +19,16 @@ trait Wildcard
 }
 object Wildcard {
   
-  @scala.inline
-  def apply(): Wildcard = {
+  inline def apply(): Wildcard = {
     val __obj = js.Dynamic.literal(value = "*")
     __obj.updateDynamic("type")("wildcard")
     __obj.asInstanceOf[Wildcard]
   }
   
-  @scala.inline
-  implicit class WildcardMutableBuilder[Self <: Wildcard] (val x: Self) extends AnyVal {
+  extension [Self <: Wildcard](x: Self) {
     
-    @scala.inline
-    def setType(value: wildcard): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: wildcard): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Asterisk): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Asterisk): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

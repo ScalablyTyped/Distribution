@@ -13,19 +13,15 @@ trait verifyOptions
 }
 object verifyOptions {
   
-  @scala.inline
-  def apply(): verifyOptions = {
+  inline def apply(): verifyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[verifyOptions]
   }
   
-  @scala.inline
-  implicit class verifyOptionsMutableBuilder[Self <: verifyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: verifyOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ verifyTask => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ verifyTask => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ object adapterMod {
   }
   object MDCIconButtonToggleAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       getAttr: String => String | Null,
       hasClass: String => Boolean,
@@ -37,26 +36,19 @@ object adapterMod {
       __obj.asInstanceOf[MDCIconButtonToggleAdapter]
     }
     
-    @scala.inline
-    implicit class MDCIconButtonToggleAdapterMutableBuilder[Self <: MDCIconButtonToggleAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCIconButtonToggleAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttr(value: String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
+      inline def setGetAttr(value: String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyChange(value: MDCIconButtonToggleEventDetail => Unit): Self = StObject.set(x, "notifyChange", js.Any.fromFunction1(value))
+      inline def setNotifyChange(value: MDCIconButtonToggleEventDetail => Unit): Self = StObject.set(x, "notifyChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAttr(value: (String, String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
+      inline def setSetAttr(value: (String, String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
     }
   }
 }

@@ -11,16 +11,13 @@ trait AddonOnInstall extends StObject {
 }
 object AddonOnInstall {
   
-  @scala.inline
-  def apply(authMode: AuthMode): AddonOnInstall = {
+  inline def apply(authMode: AuthMode): AddonOnInstall = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddonOnInstall]
   }
   
-  @scala.inline
-  implicit class AddonOnInstallMutableBuilder[Self <: AddonOnInstall] (val x: Self) extends AnyVal {
+  extension [Self <: AddonOnInstall](x: Self) {
     
-    @scala.inline
-    def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+    inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
   }
 }

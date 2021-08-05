@@ -18,25 +18,19 @@ trait LineOptions extends StObject {
 }
 object LineOptions {
   
-  @scala.inline
-  def apply(): LineOptions = {
+  inline def apply(): LineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineOptions]
   }
   
-  @scala.inline
-  implicit class LineOptionsMutableBuilder[Self <: LineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LineOptions](x: Self) {
     
-    @scala.inline
-    def setConnectNull(value: Boolean): Self = StObject.set(x, "connectNull", value.asInstanceOf[js.Any])
+    inline def setConnectNull(value: Boolean): Self = StObject.set(x, "connectNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectNullUndefined: Self = StObject.set(x, "connectNull", js.undefined)
+    inline def setConnectNullUndefined: Self = StObject.set(x, "connectNull", js.undefined)
     
-    @scala.inline
-    def setStep(value: `3`): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: `3`): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Errors {
     
-    @scala.inline
-    def apply(errors: js.Any, message: String): Errors = {
+    inline def apply(errors: js.Any, message: String): Errors = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,17 +34,14 @@ object anon {
   }
   object Schema {
     
-    @scala.inline
-    def apply(schema: typings.openapiTypes.mod.OpenAPIV2.Schema | SchemaObject): Schema = {
+    inline def apply(schema: typings.openapiTypes.mod.OpenAPIV2.Schema | SchemaObject): Schema = {
       val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema]
     }
     
-    @scala.inline
-    implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+    extension [Self <: Schema](x: Self) {
       
-      @scala.inline
-      def setSchema(value: typings.openapiTypes.mod.OpenAPIV2.Schema | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: typings.openapiTypes.mod.OpenAPIV2.Schema | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
 }

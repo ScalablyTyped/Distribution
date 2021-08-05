@@ -35,20 +35,16 @@ object marketplaceentitlementserviceMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -88,44 +84,32 @@ object marketplaceentitlementserviceMod {
   }
   object Entitlement {
     
-    @scala.inline
-    def apply(): Entitlement = {
+    inline def apply(): Entitlement = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Entitlement]
     }
     
-    @scala.inline
-    implicit class EntitlementMutableBuilder[Self <: Entitlement] (val x: Self) extends AnyVal {
+    extension [Self <: Entitlement](x: Self) {
       
-      @scala.inline
-      def setCustomerIdentifier(value: NonEmptyString): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
+      inline def setCustomerIdentifier(value: NonEmptyString): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerIdentifierUndefined: Self = StObject.set(x, "CustomerIdentifier", js.undefined)
+      inline def setCustomerIdentifierUndefined: Self = StObject.set(x, "CustomerIdentifier", js.undefined)
       
-      @scala.inline
-      def setDimension(value: NonEmptyString): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
+      inline def setDimension(value: NonEmptyString): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionUndefined: Self = StObject.set(x, "Dimension", js.undefined)
+      inline def setDimensionUndefined: Self = StObject.set(x, "Dimension", js.undefined)
       
-      @scala.inline
-      def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+      inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
       
-      @scala.inline
-      def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
+      inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductCodeUndefined: Self = StObject.set(x, "ProductCode", js.undefined)
+      inline def setProductCodeUndefined: Self = StObject.set(x, "ProductCode", js.undefined)
       
-      @scala.inline
-      def setValue(value: EntitlementValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: EntitlementValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   
@@ -155,38 +139,28 @@ object marketplaceentitlementserviceMod {
   }
   object EntitlementValue {
     
-    @scala.inline
-    def apply(): EntitlementValue = {
+    inline def apply(): EntitlementValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EntitlementValue]
     }
     
-    @scala.inline
-    implicit class EntitlementValueMutableBuilder[Self <: EntitlementValue] (val x: Self) extends AnyVal {
+    extension [Self <: EntitlementValue](x: Self) {
       
-      @scala.inline
-      def setBooleanValue(value: Boolean): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
+      inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanValueUndefined: Self = StObject.set(x, "BooleanValue", js.undefined)
+      inline def setBooleanValueUndefined: Self = StObject.set(x, "BooleanValue", js.undefined)
       
-      @scala.inline
-      def setDoubleValue(value: Double): Self = StObject.set(x, "DoubleValue", value.asInstanceOf[js.Any])
+      inline def setDoubleValue(value: Double): Self = StObject.set(x, "DoubleValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleValueUndefined: Self = StObject.set(x, "DoubleValue", js.undefined)
+      inline def setDoubleValueUndefined: Self = StObject.set(x, "DoubleValue", js.undefined)
       
-      @scala.inline
-      def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
+      inline def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerValueUndefined: Self = StObject.set(x, "IntegerValue", js.undefined)
+      inline def setIntegerValueUndefined: Self = StObject.set(x, "IntegerValue", js.undefined)
       
-      @scala.inline
-      def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
+      inline def setStringValue(value: String): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
+      inline def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
     }
   }
   
@@ -227,35 +201,26 @@ object marketplaceentitlementserviceMod {
   }
   object GetEntitlementsRequest {
     
-    @scala.inline
-    def apply(ProductCode: ProductCode): GetEntitlementsRequest = {
+    inline def apply(ProductCode: ProductCode): GetEntitlementsRequest = {
       val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEntitlementsRequest]
     }
     
-    @scala.inline
-    implicit class GetEntitlementsRequestMutableBuilder[Self <: GetEntitlementsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetEntitlementsRequest](x: Self) {
       
-      @scala.inline
-      def setFilter(value: GetEntitlementFilters): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: GetEntitlementFilters): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
+      inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,29 +238,22 @@ object marketplaceentitlementserviceMod {
   }
   object GetEntitlementsResult {
     
-    @scala.inline
-    def apply(): GetEntitlementsResult = {
+    inline def apply(): GetEntitlementsResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetEntitlementsResult]
     }
     
-    @scala.inline
-    implicit class GetEntitlementsResultMutableBuilder[Self <: GetEntitlementsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetEntitlementsResult](x: Self) {
       
-      @scala.inline
-      def setEntitlements(value: EntitlementList): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
+      inline def setEntitlements(value: EntitlementList): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
+      inline def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
       
-      @scala.inline
-      def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+      inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   

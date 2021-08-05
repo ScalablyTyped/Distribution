@@ -13,22 +13,17 @@ trait ChecksListSuitesForRefResponseData extends StObject {
 }
 object ChecksListSuitesForRefResponseData {
   
-  @scala.inline
-  def apply(check_suites: js.Array[After], total_count: Double): ChecksListSuitesForRefResponseData = {
+  inline def apply(check_suites: js.Array[After], total_count: Double): ChecksListSuitesForRefResponseData = {
     val __obj = js.Dynamic.literal(check_suites = check_suites.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksListSuitesForRefResponseData]
   }
   
-  @scala.inline
-  implicit class ChecksListSuitesForRefResponseDataMutableBuilder[Self <: ChecksListSuitesForRefResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksListSuitesForRefResponseData](x: Self) {
     
-    @scala.inline
-    def setCheck_suites(value: js.Array[After]): Self = StObject.set(x, "check_suites", value.asInstanceOf[js.Any])
+    inline def setCheck_suites(value: js.Array[After]): Self = StObject.set(x, "check_suites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheck_suitesVarargs(value: After*): Self = StObject.set(x, "check_suites", js.Array(value :_*))
+    inline def setCheck_suitesVarargs(value: After*): Self = StObject.set(x, "check_suites", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

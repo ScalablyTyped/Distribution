@@ -14,25 +14,19 @@ trait TestRulesetRequest extends StObject {
 }
 object TestRulesetRequest {
   
-  @scala.inline
-  def apply(): TestRulesetRequest = {
+  inline def apply(): TestRulesetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestRulesetRequest]
   }
   
-  @scala.inline
-  implicit class TestRulesetRequestMutableBuilder[Self <: TestRulesetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestRulesetRequest](x: Self) {
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTestSuite(value: TestSuite): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
+    inline def setTestSuite(value: TestSuite): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSuiteUndefined: Self = StObject.set(x, "testSuite", js.undefined)
+    inline def setTestSuiteUndefined: Self = StObject.set(x, "testSuite", js.undefined)
   }
 }

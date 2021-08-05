@@ -26,8 +26,7 @@ trait TestSessionExploredWorkItemReference
 }
 object TestSessionExploredWorkItemReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     associatedWorkItems: js.Array[TestSessionWorkItemReference],
     endTime: Date,
     id: Double,
@@ -39,19 +38,14 @@ object TestSessionExploredWorkItemReference {
     __obj.asInstanceOf[TestSessionExploredWorkItemReference]
   }
   
-  @scala.inline
-  implicit class TestSessionExploredWorkItemReferenceMutableBuilder[Self <: TestSessionExploredWorkItemReference] (val x: Self) extends AnyVal {
+  extension [Self <: TestSessionExploredWorkItemReference](x: Self) {
     
-    @scala.inline
-    def setAssociatedWorkItems(value: js.Array[TestSessionWorkItemReference]): Self = StObject.set(x, "associatedWorkItems", value.asInstanceOf[js.Any])
+    inline def setAssociatedWorkItems(value: js.Array[TestSessionWorkItemReference]): Self = StObject.set(x, "associatedWorkItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedWorkItemsVarargs(value: TestSessionWorkItemReference*): Self = StObject.set(x, "associatedWorkItems", js.Array(value :_*))
+    inline def setAssociatedWorkItemsVarargs(value: TestSessionWorkItemReference*): Self = StObject.set(x, "associatedWorkItems", js.Array(value :_*))
     
-    @scala.inline
-    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

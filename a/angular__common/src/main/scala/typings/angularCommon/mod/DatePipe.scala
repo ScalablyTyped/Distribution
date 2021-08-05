@@ -13,7 +13,7 @@ class DatePipe protected ()
      with PipeTransform {
   def this(locale: String) = this()
   
-  var locale: js.Any = js.native
+  /* private */ var locale: js.Any = js.native
   
   def transform(): Null = js.native
   def transform(value: String): String | Null = js.native

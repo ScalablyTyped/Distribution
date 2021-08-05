@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Direction extends StObject
 object Direction {
   
-  @scala.inline
-  def auto: typings.leaflet.leafletStrings.auto = "auto".asInstanceOf[typings.leaflet.leafletStrings.auto]
+  inline def auto: typings.leaflet.leafletStrings.auto = "auto".asInstanceOf[typings.leaflet.leafletStrings.auto]
   
-  @scala.inline
-  def bottom: typings.leaflet.leafletStrings.bottom = "bottom".asInstanceOf[typings.leaflet.leafletStrings.bottom]
+  inline def bottom: typings.leaflet.leafletStrings.bottom = "bottom".asInstanceOf[typings.leaflet.leafletStrings.bottom]
   
-  @scala.inline
-  def center: typings.leaflet.leafletStrings.center = "center".asInstanceOf[typings.leaflet.leafletStrings.center]
+  inline def center: typings.leaflet.leafletStrings.center = "center".asInstanceOf[typings.leaflet.leafletStrings.center]
   
-  @scala.inline
-  def left: typings.leaflet.leafletStrings.left = "left".asInstanceOf[typings.leaflet.leafletStrings.left]
+  inline def left: typings.leaflet.leafletStrings.left = "left".asInstanceOf[typings.leaflet.leafletStrings.left]
   
-  @scala.inline
-  def right: typings.leaflet.leafletStrings.right = "right".asInstanceOf[typings.leaflet.leafletStrings.right]
+  inline def right: typings.leaflet.leafletStrings.right = "right".asInstanceOf[typings.leaflet.leafletStrings.right]
   
-  @scala.inline
-  def top: typings.leaflet.leafletStrings.top = "top".asInstanceOf[typings.leaflet.leafletStrings.top]
+  inline def top: typings.leaflet.leafletStrings.top = "top".asInstanceOf[typings.leaflet.leafletStrings.top]
 }

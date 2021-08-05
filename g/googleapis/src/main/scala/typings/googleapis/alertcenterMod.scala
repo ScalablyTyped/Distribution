@@ -40,8 +40,7 @@ object alertcenterMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Alertcenter
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -50,11 +49,9 @@ object alertcenterMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta1")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def alertcenter(options: Options): Alertcenter = ^.asInstanceOf[js.Dynamic].applyDynamic("alertcenter")(options.asInstanceOf[js.Any]).asInstanceOf[Alertcenter]
+  inline def alertcenter(options: Options): Alertcenter = ^.asInstanceOf[js.Dynamic].applyDynamic("alertcenter")(options.asInstanceOf[js.Any]).asInstanceOf[Alertcenter]
   
-  @scala.inline
-  def alertcenter_v1beta1(version: v1beta1): Alertcenter = ^.asInstanceOf[js.Dynamic].applyDynamic("alertcenter")(version.asInstanceOf[js.Any]).asInstanceOf[Alertcenter]
+  inline def alertcenter_v1beta1(version: v1beta1): Alertcenter = ^.asInstanceOf[js.Dynamic].applyDynamic("alertcenter")(version.asInstanceOf[js.Any]).asInstanceOf[Alertcenter]
   
   object auth extends Shortcut {
     
@@ -89,8 +86,7 @@ object alertcenterMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

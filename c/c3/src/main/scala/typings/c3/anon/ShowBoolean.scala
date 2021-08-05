@@ -10,16 +10,13 @@ trait ShowBoolean extends StObject {
 }
 object ShowBoolean {
   
-  @scala.inline
-  def apply(show: Boolean): ShowBoolean = {
+  inline def apply(show: Boolean): ShowBoolean = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowBoolean]
   }
   
-  @scala.inline
-  implicit class ShowBooleanMutableBuilder[Self <: ShowBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: ShowBoolean](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait StopRelationalDatabaseRequest extends StObject {
 }
 object StopRelationalDatabaseRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): StopRelationalDatabaseRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): StopRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRelationalDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class StopRelationalDatabaseRequestMutableBuilder[Self <: StopRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopRelationalDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "relationalDatabaseSnapshotName", js.undefined)
+    inline def setRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "relationalDatabaseSnapshotName", js.undefined)
   }
 }

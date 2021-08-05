@@ -18,22 +18,17 @@ trait ChangeMessageVisibilityBatchRequest extends StObject {
 }
 object ChangeMessageVisibilityBatchRequest {
   
-  @scala.inline
-  def apply(Entries: ChangeMessageVisibilityBatchRequestEntryList, QueueUrl: String): ChangeMessageVisibilityBatchRequest = {
+  inline def apply(Entries: ChangeMessageVisibilityBatchRequestEntryList, QueueUrl: String): ChangeMessageVisibilityBatchRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeMessageVisibilityBatchRequest]
   }
   
-  @scala.inline
-  implicit class ChangeMessageVisibilityBatchRequestMutableBuilder[Self <: ChangeMessageVisibilityBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeMessageVisibilityBatchRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: ChangeMessageVisibilityBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: ChangeMessageVisibilityBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: ChangeMessageVisibilityBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ChangeMessageVisibilityBatchRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

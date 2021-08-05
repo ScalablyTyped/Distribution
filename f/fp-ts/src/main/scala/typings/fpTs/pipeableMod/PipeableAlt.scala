@@ -18,8 +18,7 @@ trait PipeableAlt[F] extends StObject {
 }
 object PipeableAlt {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     alt: Lazy[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
     ] => js.Function1[
@@ -31,11 +30,9 @@ object PipeableAlt {
     __obj.asInstanceOf[PipeableAlt[F]]
   }
   
-  @scala.inline
-  implicit class PipeableAltMutableBuilder[Self <: PipeableAlt[?], F] (val x: Self & PipeableAlt[F]) extends AnyVal {
+  extension [Self <: PipeableAlt[?], F](x: Self & PipeableAlt[F]) {
     
-    @scala.inline
-    def setAlt(
+    inline def setAlt(
       value: Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
         ] => js.Function1[

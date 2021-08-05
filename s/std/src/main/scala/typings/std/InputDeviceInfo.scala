@@ -12,8 +12,7 @@ trait InputDeviceInfo
 }
 object InputDeviceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceId: java.lang.String,
     getCapabilities: () => MediaTrackCapabilities,
     groupId: java.lang.String,
@@ -25,10 +24,8 @@ object InputDeviceInfo {
     __obj.asInstanceOf[InputDeviceInfo]
   }
   
-  @scala.inline
-  implicit class InputDeviceInfoMutableBuilder[Self <: InputDeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InputDeviceInfo](x: Self) {
     
-    @scala.inline
-    def setGetCapabilities(value: () => MediaTrackCapabilities): Self = StObject.set(x, "getCapabilities", js.Any.fromFunction0(value))
+    inline def setGetCapabilities(value: () => MediaTrackCapabilities): Self = StObject.set(x, "getCapabilities", js.Any.fromFunction0(value))
   }
 }

@@ -15,25 +15,19 @@ trait AutocompleteUIParams extends StObject {
 }
 object AutocompleteUIParams {
   
-  @scala.inline
-  def apply(): AutocompleteUIParams = {
+  inline def apply(): AutocompleteUIParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutocompleteUIParams]
   }
   
-  @scala.inline
-  implicit class AutocompleteUIParamsMutableBuilder[Self <: AutocompleteUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteUIParams](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

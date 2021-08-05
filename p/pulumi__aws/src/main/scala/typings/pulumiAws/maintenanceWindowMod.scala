@@ -96,21 +96,16 @@ object maintenanceWindowMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MaintenanceWindowState): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MaintenanceWindowState, opts: CustomResourceOptions): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
+    inline def get(name: String, id: Input[ID]): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
+    inline def get(name: String, id: Input[ID], state: MaintenanceWindowState): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
+    inline def get(name: String, id: Input[ID], state: MaintenanceWindowState, opts: CustomResourceOptions): MaintenanceWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindow]
     
     /**
       * Returns true if the given object is an instance of MaintenanceWindow.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ Boolean]
   }
   
   trait MaintenanceWindowArgs extends StObject {
@@ -172,71 +167,50 @@ object maintenanceWindowMod {
   }
   object MaintenanceWindowArgs {
     
-    @scala.inline
-    def apply(cutoff: Input[Double], duration: Input[Double], schedule: Input[String]): MaintenanceWindowArgs = {
+    inline def apply(cutoff: Input[Double], duration: Input[Double], schedule: Input[String]): MaintenanceWindowArgs = {
       val __obj = js.Dynamic.literal(cutoff = cutoff.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaintenanceWindowArgs]
     }
     
-    @scala.inline
-    implicit class MaintenanceWindowArgsMutableBuilder[Self <: MaintenanceWindowArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MaintenanceWindowArgs](x: Self) {
       
-      @scala.inline
-      def setAllowUnassociatedTargets(value: Input[Boolean]): Self = StObject.set(x, "allowUnassociatedTargets", value.asInstanceOf[js.Any])
+      inline def setAllowUnassociatedTargets(value: Input[Boolean]): Self = StObject.set(x, "allowUnassociatedTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnassociatedTargetsUndefined: Self = StObject.set(x, "allowUnassociatedTargets", js.undefined)
+      inline def setAllowUnassociatedTargetsUndefined: Self = StObject.set(x, "allowUnassociatedTargets", js.undefined)
       
-      @scala.inline
-      def setCutoff(value: Input[Double]): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
+      inline def setCutoff(value: Input[Double]): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleTimezone(value: Input[String]): Self = StObject.set(x, "scheduleTimezone", value.asInstanceOf[js.Any])
+      inline def setScheduleTimezone(value: Input[String]): Self = StObject.set(x, "scheduleTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleTimezoneUndefined: Self = StObject.set(x, "scheduleTimezone", js.undefined)
+      inline def setScheduleTimezoneUndefined: Self = StObject.set(x, "scheduleTimezone", js.undefined)
       
-      @scala.inline
-      def setStartDate(value: Input[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: Input[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -299,80 +273,56 @@ object maintenanceWindowMod {
   }
   object MaintenanceWindowState {
     
-    @scala.inline
-    def apply(): MaintenanceWindowState = {
+    inline def apply(): MaintenanceWindowState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaintenanceWindowState]
     }
     
-    @scala.inline
-    implicit class MaintenanceWindowStateMutableBuilder[Self <: MaintenanceWindowState] (val x: Self) extends AnyVal {
+    extension [Self <: MaintenanceWindowState](x: Self) {
       
-      @scala.inline
-      def setAllowUnassociatedTargets(value: Input[Boolean]): Self = StObject.set(x, "allowUnassociatedTargets", value.asInstanceOf[js.Any])
+      inline def setAllowUnassociatedTargets(value: Input[Boolean]): Self = StObject.set(x, "allowUnassociatedTargets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUnassociatedTargetsUndefined: Self = StObject.set(x, "allowUnassociatedTargets", js.undefined)
+      inline def setAllowUnassociatedTargetsUndefined: Self = StObject.set(x, "allowUnassociatedTargets", js.undefined)
       
-      @scala.inline
-      def setCutoff(value: Input[Double]): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
+      inline def setCutoff(value: Input[Double]): Self = StObject.set(x, "cutoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCutoffUndefined: Self = StObject.set(x, "cutoff", js.undefined)
+      inline def setCutoffUndefined: Self = StObject.set(x, "cutoff", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Input[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[String]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleTimezone(value: Input[String]): Self = StObject.set(x, "scheduleTimezone", value.asInstanceOf[js.Any])
+      inline def setScheduleTimezone(value: Input[String]): Self = StObject.set(x, "scheduleTimezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleTimezoneUndefined: Self = StObject.set(x, "scheduleTimezone", js.undefined)
+      inline def setScheduleTimezoneUndefined: Self = StObject.set(x, "scheduleTimezone", js.undefined)
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
       
-      @scala.inline
-      def setStartDate(value: Input[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: Input[String]): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

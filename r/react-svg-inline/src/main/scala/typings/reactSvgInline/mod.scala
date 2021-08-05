@@ -69,95 +69,70 @@ object mod extends Shortcut {
   }
   object SVGInlineProps {
     
-    @scala.inline
-    def apply(svg: String): SVGInlineProps = {
+    inline def apply(svg: String): SVGInlineProps = {
       val __obj = js.Dynamic.literal(svg = svg.asInstanceOf[js.Any])
       __obj.asInstanceOf[SVGInlineProps]
     }
     
-    @scala.inline
-    implicit class SVGInlinePropsMutableBuilder[Self <: SVGInlineProps] (val x: Self) extends AnyVal {
+    extension [Self <: SVGInlineProps](x: Self) {
       
-      @scala.inline
-      def setAccessibilityDesc(value: String): Self = StObject.set(x, "accessibilityDesc", value.asInstanceOf[js.Any])
+      inline def setAccessibilityDesc(value: String): Self = StObject.set(x, "accessibilityDesc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityDescUndefined: Self = StObject.set(x, "accessibilityDesc", js.undefined)
+      inline def setAccessibilityDescUndefined: Self = StObject.set(x, "accessibilityDesc", js.undefined)
       
-      @scala.inline
-      def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+      inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+      inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClassSuffix(value: String): Self = StObject.set(x, "classSuffix", value.asInstanceOf[js.Any])
+      inline def setClassSuffix(value: String): Self = StObject.set(x, "classSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassSuffixUndefined: Self = StObject.set(x, "classSuffix", js.undefined)
+      inline def setClassSuffixUndefined: Self = StObject.set(x, "classSuffix", js.undefined)
       
-      @scala.inline
-      def setCleanup(
+      inline def setCleanup(
         value: Boolean | (js.Array[
               title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup
             ])
       ): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanupExceptions(
+      inline def setCleanupExceptions(
         value: js.Array[
               title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup
             ]
       ): Self = StObject.set(x, "cleanupExceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanupExceptionsUndefined: Self = StObject.set(x, "cleanupExceptions", js.undefined)
+      inline def setCleanupExceptionsUndefined: Self = StObject.set(x, "cleanupExceptions", js.undefined)
       
-      @scala.inline
-      def setCleanupExceptionsVarargs(
+      inline def setCleanupExceptionsVarargs(
         value: (title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup)*
       ): Self = StObject.set(x, "cleanupExceptions", js.Array(value :_*))
       
-      @scala.inline
-      def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
+      inline def setCleanupUndefined: Self = StObject.set(x, "cleanup", js.undefined)
       
-      @scala.inline
-      def setCleanupVarargs(
+      inline def setCleanupVarargs(
         value: (title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup)*
       ): Self = StObject.set(x, "cleanup", js.Array(value :_*))
       
-      @scala.inline
-      def setComponent(value: ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

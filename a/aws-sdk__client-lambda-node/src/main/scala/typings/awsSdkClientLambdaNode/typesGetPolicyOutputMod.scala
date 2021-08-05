@@ -30,29 +30,22 @@ object typesGetPolicyOutputMod {
   }
   object GetPolicyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetPolicyOutput = {
+    inline def apply($metadata: ResponseMetadata): GetPolicyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPolicyOutput]
     }
     
-    @scala.inline
-    implicit class GetPolicyOutputMutableBuilder[Self <: GetPolicyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetPolicyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
       
-      @scala.inline
-      def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+      inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+      inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     }
   }
 }

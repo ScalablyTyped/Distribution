@@ -24,9 +24,9 @@ class FormControlDirective protected ()
     _ngModelWarningConfig: String
   ) = this()
   
-  var _isControlChanged: js.Any = js.native
+  /* private */ var _isControlChanged: js.Any = js.native
   
-  var _ngModelWarningConfig: js.Any = js.native
+  /* private */ var _ngModelWarningConfig: js.Any = js.native
   
   /**
     * @description

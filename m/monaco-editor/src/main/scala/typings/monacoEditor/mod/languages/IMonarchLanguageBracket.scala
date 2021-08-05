@@ -23,22 +23,17 @@ trait IMonarchLanguageBracket extends StObject {
 }
 object IMonarchLanguageBracket {
   
-  @scala.inline
-  def apply(close: String, open: String, token: String): IMonarchLanguageBracket = {
+  inline def apply(close: String, open: String, token: String): IMonarchLanguageBracket = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMonarchLanguageBracket]
   }
   
-  @scala.inline
-  implicit class IMonarchLanguageBracketMutableBuilder[Self <: IMonarchLanguageBracket] (val x: Self) extends AnyVal {
+  extension [Self <: IMonarchLanguageBracket](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

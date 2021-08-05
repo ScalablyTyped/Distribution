@@ -18,25 +18,19 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  @scala.inline
-  def apply(): Parent = {
+  inline def apply(): Parent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parent]
   }
   
-  @scala.inline
-  implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+  extension [Self <: Parent](x: Self) {
     
-    @scala.inline
-    def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
+    inline def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentNameUndefined: Self = StObject.set(x, "ExperimentName", js.undefined)
+    inline def setExperimentNameUndefined: Self = StObject.set(x, "ExperimentName", js.undefined)
     
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
+    inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialNameUndefined: Self = StObject.set(x, "TrialName", js.undefined)
+    inline def setTrialNameUndefined: Self = StObject.set(x, "TrialName", js.undefined)
   }
 }

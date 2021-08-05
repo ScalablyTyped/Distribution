@@ -18,31 +18,23 @@ trait WeakValidationMapOptionsT extends StObject {
 }
 object WeakValidationMapOptionsT {
   
-  @scala.inline
-  def apply(): WeakValidationMapOptionsT = {
+  inline def apply(): WeakValidationMapOptionsT = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapOptionsT]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapOptionsTMutableBuilder[Self <: WeakValidationMapOptionsT] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapOptionsT](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: Validator[js.UndefOr[Null | OptionsKnobOptionsDisplay]]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Validator[js.UndefOr[Null | OptionsKnobOptionsDisplay]]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setKnob(value: Validator[js.UndefOr[Null | OptionsTypeKnob[js.Any]]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[js.UndefOr[Null | OptionsTypeKnob[js.Any]]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
+    inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: Validator[js.UndefOr[(js.Function1[/* value */ js.Any, js.Any]) | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Validator[js.UndefOr[(js.Function1[/* value */ js.Any, js.Any]) | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }
 }

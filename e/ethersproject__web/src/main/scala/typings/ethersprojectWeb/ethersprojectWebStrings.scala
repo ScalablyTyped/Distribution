@@ -8,11 +8,9 @@ object ethersprojectWebStrings {
   
   @js.native
   sealed trait block extends StObject
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait poll extends StObject
-  @scala.inline
-  def poll: poll = "poll".asInstanceOf[poll]
+  inline def poll: poll = "poll".asInstanceOf[poll]
 }

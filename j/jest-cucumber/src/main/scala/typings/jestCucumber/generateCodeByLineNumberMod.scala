@@ -39,9 +39,7 @@ object generateCodeByLineNumberMod {
     /* 2 */ val step: typings.jestCucumber.generateCodeByLineNumberMod.ObjectTypeEnum.step & Double = js.native
   }
   
-  @scala.inline
-  def generateCodeFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFromFeature")(feature.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def generateCodeFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFromFeature")(feature.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @scala.inline
-  def generateCodeWithSeparateFunctionsFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeWithSeparateFunctionsFromFeature")(feature.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def generateCodeWithSeparateFunctionsFromFeature(feature: ParsedFeature, lineNumber: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeWithSeparateFunctionsFromFeature")(feature.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

@@ -75,7 +75,7 @@ trait ExchangeUser extends StObject {
   
   var OfficeLocation: String = js.native
   
-  @JSName("Outlook.ExchangeUser_typekey")
+  /* private */ @JSName("Outlook.ExchangeUser_typekey")
   var OutlookDotExchangeUser_typekey: ExchangeUser = js.native
   
   val Parent: js.Any = js.native

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pathSegments: String*): String = ^.asInstanceOf[js.Dynamic].apply(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(pathSegments: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].apply(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(pathSegments: String*): String = ^.asInstanceOf[js.Dynamic].apply(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(pathSegments: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].apply(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("cwd", JSImport.Namespace)
   @js.native

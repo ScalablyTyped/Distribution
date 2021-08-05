@@ -12,20 +12,16 @@ trait DefaultIndex extends StObject {
 }
 object DefaultIndex {
   
-  @scala.inline
-  def apply(defaultIndex: Double, `type`: String): DefaultIndex = {
+  inline def apply(defaultIndex: Double, `type`: String): DefaultIndex = {
     val __obj = js.Dynamic.literal(defaultIndex = defaultIndex.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultIndex]
   }
   
-  @scala.inline
-  implicit class DefaultIndexMutableBuilder[Self <: DefaultIndex] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultIndex](x: Self) {
     
-    @scala.inline
-    def setDefaultIndex(value: Double): Self = StObject.set(x, "defaultIndex", value.asInstanceOf[js.Any])
+    inline def setDefaultIndex(value: Double): Self = StObject.set(x, "defaultIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sealMod {
   
   /* was `typeof core.Object.seal` */
-  @scala.inline
-  def apply[T](o: T): T = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T](o: T): T = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("core-js/fn/object/seal", JSImport.Namespace)
   @js.native

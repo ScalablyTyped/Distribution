@@ -28,8 +28,7 @@ trait ASPxClientHtmlEditorTableRowPropertiesDialog
 }
 object ASPxClientHtmlEditorTableRowPropertiesDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
     GetCancelButton: () => ASPxClientButton,
     GetFormLayout: () => ASPxClientFormLayout,
@@ -44,16 +43,12 @@ object ASPxClientHtmlEditorTableRowPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableRowPropertiesDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTableRowPropertiesDialogMutableBuilder[Self <: ASPxClientHtmlEditorTableRowPropertiesDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTableRowPropertiesDialog](x: Self) {
     
-    @scala.inline
-    def setGetHeightTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightTypeComboBox", js.Any.fromFunction0(value))
+    inline def setGetHeightTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightTypeComboBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeightValueSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightValueSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetHeightValueSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightValueSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeightValueTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightValueTypeComboBox", js.Any.fromFunction0(value))
+    inline def setGetHeightValueTypeComboBox(value: () => ASPxClientComboBox): Self = StObject.set(x, "GetHeightValueTypeComboBox", js.Any.fromFunction0(value))
   }
 }

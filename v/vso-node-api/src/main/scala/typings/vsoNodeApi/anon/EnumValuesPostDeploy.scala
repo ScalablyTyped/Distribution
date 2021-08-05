@@ -10,16 +10,13 @@ trait EnumValuesPostDeploy extends StObject {
 }
 object EnumValuesPostDeploy {
   
-  @scala.inline
-  def apply(enumValues: PostDeploy): EnumValuesPostDeploy = {
+  inline def apply(enumValues: PostDeploy): EnumValuesPostDeploy = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPostDeploy]
   }
   
-  @scala.inline
-  implicit class EnumValuesPostDeployMutableBuilder[Self <: EnumValuesPostDeploy] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPostDeploy](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: PostDeploy): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: PostDeploy): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

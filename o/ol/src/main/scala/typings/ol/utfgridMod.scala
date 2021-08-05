@@ -62,38 +62,28 @@ object utfgridMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+      inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+      inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
       
-      @scala.inline
-      def setPreemptive(value: Boolean): Self = StObject.set(x, "preemptive", value.asInstanceOf[js.Any])
+      inline def setPreemptive(value: Boolean): Self = StObject.set(x, "preemptive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreemptiveUndefined: Self = StObject.set(x, "preemptive", js.undefined)
+      inline def setPreemptiveUndefined: Self = StObject.set(x, "preemptive", js.undefined)
       
-      @scala.inline
-      def setTileJSON(value: Config): Self = StObject.set(x, "tileJSON", value.asInstanceOf[js.Any])
+      inline def setTileJSON(value: Config): Self = StObject.set(x, "tileJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileJSONUndefined: Self = StObject.set(x, "tileJSON", js.undefined)
+      inline def setTileJSONUndefined: Self = StObject.set(x, "tileJSON", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -142,32 +132,24 @@ object utfgridMod {
   }
   object UTFGridJSON {
     
-    @scala.inline
-    def apply(grid: js.Array[String], keys: js.Array[String]): UTFGridJSON = {
+    inline def apply(grid: js.Array[String], keys: js.Array[String]): UTFGridJSON = {
       val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[UTFGridJSON]
     }
     
-    @scala.inline
-    implicit class UTFGridJSONMutableBuilder[Self <: UTFGridJSON] (val x: Self) extends AnyVal {
+    extension [Self <: UTFGridJSON](x: Self) {
       
-      @scala.inline
-      def setData(value: StringDictionary[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setGrid(value: js.Array[String]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Array[String]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridVarargs(value: String*): Self = StObject.set(x, "grid", js.Array(value :_*))
+      inline def setGridVarargs(value: String*): Self = StObject.set(x, "grid", js.Array(value :_*))
       
-      @scala.inline
-      def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     }
   }
 }

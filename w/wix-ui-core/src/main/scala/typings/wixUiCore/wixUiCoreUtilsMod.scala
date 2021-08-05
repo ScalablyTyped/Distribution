@@ -10,6 +10,5 @@ object wixUiCoreUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDisplayName(Component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getDisplayName(Component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(Component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

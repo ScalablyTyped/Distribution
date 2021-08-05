@@ -18,46 +18,27 @@ object pkcs12 {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
-  @scala.inline
-  def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def generateKey(password: String, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def generateKey(password: Null, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  inline def generateKey(password: Unit, salt: ByteBuffer, id: Byte, iter: Double, n: Double, md: MessageDigest): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], id.asInstanceOf[js.Any], iter.asInstanceOf[js.Any], n.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
-  @scala.inline
-  def pkcs12FromAsn1(obj: js.Any): Pkcs12Pfx = ^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[Pkcs12Pfx]
-  @scala.inline
-  def pkcs12FromAsn1(obj: js.Any, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
-  @scala.inline
-  def pkcs12FromAsn1(obj: js.Any, strict: Boolean): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
-  @scala.inline
-  def pkcs12FromAsn1(obj: js.Any, strict: Boolean, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
-  @scala.inline
-  def pkcs12FromAsn1(obj: js.Any, strict: Unit, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: js.Any): Pkcs12Pfx = ^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any]).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: js.Any, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: js.Any, strict: Boolean): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: js.Any, strict: Boolean, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
+  inline def pkcs12FromAsn1(obj: js.Any, strict: Unit, password: String): Pkcs12Pfx = (^.asInstanceOf[js.Dynamic].applyDynamic("pkcs12FromAsn1")(obj.asInstanceOf[js.Any], strict.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Pkcs12Pfx]
   
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate]): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate]): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: js.Array[Certificate], password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: Certificate): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: String, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def toPkcs12Asn1(key: PrivateKey, cert: Certificate, password: Null, options: Algorithm): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("toPkcs12Asn1")(key.asInstanceOf[js.Any], cert.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Asn1]
   
   trait Bag extends StObject {
     
@@ -73,36 +54,27 @@ object pkcs12 {
   }
   object Bag {
     
-    @scala.inline
-    def apply(asn1: Asn1, attributes: js.Any, `type`: String): Bag = {
+    inline def apply(asn1: Asn1, attributes: js.Any, `type`: String): Bag = {
       val __obj = js.Dynamic.literal(asn1 = asn1.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bag]
     }
     
-    @scala.inline
-    implicit class BagMutableBuilder[Self <: Bag] (val x: Self) extends AnyVal {
+    extension [Self <: Bag](x: Self) {
       
-      @scala.inline
-      def setAsn1(value: Asn1): Self = StObject.set(x, "asn1", value.asInstanceOf[js.Any])
+      inline def setAsn1(value: Asn1): Self = StObject.set(x, "asn1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCert(value: Certificate): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Certificate): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setKey(value: PrivateKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: PrivateKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,38 +90,28 @@ object pkcs12 {
   }
   object BagsFilter {
     
-    @scala.inline
-    def apply(): BagsFilter = {
+    inline def apply(): BagsFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BagsFilter]
     }
     
-    @scala.inline
-    implicit class BagsFilterMutableBuilder[Self <: BagsFilter] (val x: Self) extends AnyVal {
+    extension [Self <: BagsFilter](x: Self) {
       
-      @scala.inline
-      def setBagType(value: String): Self = StObject.set(x, "bagType", value.asInstanceOf[js.Any])
+      inline def setBagType(value: String): Self = StObject.set(x, "bagType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBagTypeUndefined: Self = StObject.set(x, "bagType", js.undefined)
+      inline def setBagTypeUndefined: Self = StObject.set(x, "bagType", js.undefined)
       
-      @scala.inline
-      def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
       
-      @scala.inline
-      def setLocalKeyId(value: String): Self = StObject.set(x, "localKeyId", value.asInstanceOf[js.Any])
+      inline def setLocalKeyId(value: String): Self = StObject.set(x, "localKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalKeyIdHex(value: String): Self = StObject.set(x, "localKeyIdHex", value.asInstanceOf[js.Any])
+      inline def setLocalKeyIdHex(value: String): Self = StObject.set(x, "localKeyIdHex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalKeyIdHexUndefined: Self = StObject.set(x, "localKeyIdHex", js.undefined)
+      inline def setLocalKeyIdHexUndefined: Self = StObject.set(x, "localKeyIdHex", js.undefined)
       
-      @scala.inline
-      def setLocalKeyIdUndefined: Self = StObject.set(x, "localKeyId", js.undefined)
+      inline def setLocalKeyIdUndefined: Self = StObject.set(x, "localKeyId", js.undefined)
     }
   }
   
@@ -167,8 +129,7 @@ object pkcs12 {
   }
   object Pkcs12Pfx {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getBags: BagsFilter => Dictkey,
       getBagsByFriendlyName: (String, String) => js.Array[Bag],
       getBagsByLocalKeyId: (String, String) => js.Array[Bag],
@@ -179,26 +140,19 @@ object pkcs12 {
       __obj.asInstanceOf[Pkcs12Pfx]
     }
     
-    @scala.inline
-    implicit class Pkcs12PfxMutableBuilder[Self <: Pkcs12Pfx] (val x: Self) extends AnyVal {
+    extension [Self <: Pkcs12Pfx](x: Self) {
       
-      @scala.inline
-      def setGetBags(value: BagsFilter => Dictkey): Self = StObject.set(x, "getBags", js.Any.fromFunction1(value))
+      inline def setGetBags(value: BagsFilter => Dictkey): Self = StObject.set(x, "getBags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBagsByFriendlyName(value: (String, String) => js.Array[Bag]): Self = StObject.set(x, "getBagsByFriendlyName", js.Any.fromFunction2(value))
+      inline def setGetBagsByFriendlyName(value: (String, String) => js.Array[Bag]): Self = StObject.set(x, "getBagsByFriendlyName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBagsByLocalKeyId(value: (String, String) => js.Array[Bag]): Self = StObject.set(x, "getBagsByLocalKeyId", js.Any.fromFunction2(value))
+      inline def setGetBagsByLocalKeyId(value: (String, String) => js.Array[Bag]): Self = StObject.set(x, "getBagsByLocalKeyId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSafeContents(value: js.Array[Encrypted]): Self = StObject.set(x, "safeContents", value.asInstanceOf[js.Any])
+      inline def setSafeContents(value: js.Array[Encrypted]): Self = StObject.set(x, "safeContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeContentsVarargs(value: Encrypted*): Self = StObject.set(x, "safeContents", js.Array(value :_*))
+      inline def setSafeContentsVarargs(value: Encrypted*): Self = StObject.set(x, "safeContents", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

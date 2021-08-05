@@ -21,22 +21,17 @@ trait ClusterIconInfo extends StObject {
 }
 object ClusterIconInfo {
   
-  @scala.inline
-  def apply(index: Double, text: java.lang.String, title: java.lang.String): ClusterIconInfo = {
+  inline def apply(index: Double, text: java.lang.String, title: java.lang.String): ClusterIconInfo = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterIconInfo]
   }
   
-  @scala.inline
-  implicit class ClusterIconInfoMutableBuilder[Self <: ClusterIconInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterIconInfo](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

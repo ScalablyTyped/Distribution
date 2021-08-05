@@ -130,12 +130,10 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromEncodedCoordinates(encodedCoordinates: String): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[LineString]
+    inline def fromEncodedCoordinates(encodedCoordinates: String): LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[LineString]
     
     /* static member */
-    @scala.inline
-    def toEncodedCoordinates(geometry: LineString): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toEncodedCoordinates(geometry: LineString): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("yandex-maps", "geometry.Point")
@@ -246,12 +244,10 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.Polygon]
+    inline def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.Polygon]
     
     /* static member */
-    @scala.inline
-    def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object base {
@@ -412,12 +408,10 @@ object geometry {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.LineString]
+      inline def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.LineString]
       
       /* static member */
-      @scala.inline
-      def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.LineString): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.LineString): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     @JSImport("yandex-maps", "geometry.base.Point")
@@ -494,12 +488,10 @@ object geometry {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.base.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.base.Polygon]
+      inline def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.base.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEncodedCoordinates")(encodedCoordinates.asInstanceOf[js.Any]).asInstanceOf[typings.yandexMaps.mod.geometry.base.Polygon]
       
       /* static member */
-      @scala.inline
-      def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.base.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.base.Polygon): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toEncodedCoordinates")(geometry.asInstanceOf[js.Any]).asInstanceOf[String]
     }
   }
   

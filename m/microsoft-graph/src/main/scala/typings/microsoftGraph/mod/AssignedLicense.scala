@@ -14,31 +14,23 @@ trait AssignedLicense extends StObject {
 }
 object AssignedLicense {
   
-  @scala.inline
-  def apply(): AssignedLicense = {
+  inline def apply(): AssignedLicense = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssignedLicense]
   }
   
-  @scala.inline
-  implicit class AssignedLicenseMutableBuilder[Self <: AssignedLicense] (val x: Self) extends AnyVal {
+  extension [Self <: AssignedLicense](x: Self) {
     
-    @scala.inline
-    def setDisabledPlans(value: js.Array[String]): Self = StObject.set(x, "disabledPlans", value.asInstanceOf[js.Any])
+    inline def setDisabledPlans(value: js.Array[String]): Self = StObject.set(x, "disabledPlans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledPlansUndefined: Self = StObject.set(x, "disabledPlans", js.undefined)
+    inline def setDisabledPlansUndefined: Self = StObject.set(x, "disabledPlans", js.undefined)
     
-    @scala.inline
-    def setDisabledPlansVarargs(value: String*): Self = StObject.set(x, "disabledPlans", js.Array(value :_*))
+    inline def setDisabledPlansVarargs(value: String*): Self = StObject.set(x, "disabledPlans", js.Array(value :_*))
     
-    @scala.inline
-    def setSkuId(value: NullableOption[String]): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+    inline def setSkuId(value: NullableOption[String]): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkuIdNull: Self = StObject.set(x, "skuId", null)
+    inline def setSkuIdNull: Self = StObject.set(x, "skuId", null)
     
-    @scala.inline
-    def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+    inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
   }
 }

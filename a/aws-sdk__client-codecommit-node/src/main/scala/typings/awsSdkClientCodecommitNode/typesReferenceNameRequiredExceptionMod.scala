@@ -16,17 +16,14 @@ object typesReferenceNameRequiredExceptionMod {
   }
   object ReferenceNameRequiredException {
     
-    @scala.inline
-    def apply(): ReferenceNameRequiredException = {
+    inline def apply(): ReferenceNameRequiredException = {
       val __obj = js.Dynamic.literal(name = "ReferenceNameRequiredException")
       __obj.asInstanceOf[ReferenceNameRequiredException]
     }
     
-    @scala.inline
-    implicit class ReferenceNameRequiredExceptionMutableBuilder[Self <: ReferenceNameRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: ReferenceNameRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceNameRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

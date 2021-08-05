@@ -14,7 +14,7 @@ trait TextRuleCondition extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Outlook.TextRuleCondition_typekey")
+  /* private */ @JSName("Outlook.TextRuleCondition_typekey")
   var OutlookDotTextRuleCondition_typekey: TextRuleCondition
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait TextRuleCondition extends StObject {
 }
 object TextRuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
@@ -41,31 +40,22 @@ object TextRuleCondition {
     __obj.asInstanceOf[TextRuleCondition]
   }
   
-  @scala.inline
-  implicit class TextRuleConditionMutableBuilder[Self <: TextRuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: TextRuleCondition](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotTextRuleCondition_typekey(value: TextRuleCondition): Self = StObject.set(x, "Outlook.TextRuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotTextRuleCondition_typekey(value: TextRuleCondition): Self = StObject.set(x, "Outlook.TextRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: js.Any): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Any): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

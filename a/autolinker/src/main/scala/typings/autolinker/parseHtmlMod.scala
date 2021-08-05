@@ -11,6 +11,5 @@ object parseHtmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseHtml(html: String, hasOnOpenTagOnCloseTagOnTextOnCommentOnDoctype: OnCloseTag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(html.asInstanceOf[js.Any], hasOnOpenTagOnCloseTagOnTextOnCommentOnDoctype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseHtml(html: String, hasOnOpenTagOnCloseTagOnTextOnCommentOnDoctype: OnCloseTag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(html.asInstanceOf[js.Any], hasOnOpenTagOnCloseTagOnTextOnCommentOnDoctype.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

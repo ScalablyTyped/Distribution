@@ -14,20 +14,16 @@ object Mixto {
   }
   object IMixinStatic {
     
-    @scala.inline
-    def apply(extend: js.Any => Unit, includeInto: js.Any => Unit): IMixinStatic = {
+    inline def apply(extend: js.Any => Unit, includeInto: js.Any => Unit): IMixinStatic = {
       val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), includeInto = js.Any.fromFunction1(includeInto))
       __obj.asInstanceOf[IMixinStatic]
     }
     
-    @scala.inline
-    implicit class IMixinStaticMutableBuilder[Self <: IMixinStatic] (val x: Self) extends AnyVal {
+    extension [Self <: IMixinStatic](x: Self) {
       
-      @scala.inline
-      def setExtend(value: js.Any => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+      inline def setExtend(value: js.Any => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncludeInto(value: js.Any => Unit): Self = StObject.set(x, "includeInto", js.Any.fromFunction1(value))
+      inline def setIncludeInto(value: js.Any => Unit): Self = StObject.set(x, "includeInto", js.Any.fromFunction1(value))
     }
   }
 }

@@ -18,19 +18,15 @@ trait FailedItemDetails extends StObject {
 }
 object FailedItemDetails {
   
-  @scala.inline
-  def apply(failureCode: FailedItemErrorCode, retryable: Bool): FailedItemDetails = {
+  inline def apply(failureCode: FailedItemErrorCode, retryable: Bool): FailedItemDetails = {
     val __obj = js.Dynamic.literal(failureCode = failureCode.asInstanceOf[js.Any], retryable = retryable.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedItemDetails]
   }
   
-  @scala.inline
-  implicit class FailedItemDetailsMutableBuilder[Self <: FailedItemDetails] (val x: Self) extends AnyVal {
+  extension [Self <: FailedItemDetails](x: Self) {
     
-    @scala.inline
-    def setFailureCode(value: FailedItemErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: FailedItemErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryable(value: Bool): Self = StObject.set(x, "retryable", value.asInstanceOf[js.Any])
+    inline def setRetryable(value: Bool): Self = StObject.set(x, "retryable", value.asInstanceOf[js.Any])
   }
 }

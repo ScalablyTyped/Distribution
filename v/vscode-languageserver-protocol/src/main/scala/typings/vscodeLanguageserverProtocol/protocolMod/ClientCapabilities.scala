@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with _ClientCapabilities
 object ClientCapabilities {
   
-  @scala.inline
-  def apply(): ClientCapabilities = {
+  inline def apply(): ClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientCapabilities]
   }

@@ -11,6 +11,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatFn(instance: js.Any, value: Date): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatFn")(instance.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def formatFn(instance: js.Any, value: Date): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatFn")(instance.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

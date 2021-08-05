@@ -13,17 +13,14 @@ trait RemovedAction
 }
 object RemovedAction {
   
-  @scala.inline
-  def apply(`type`: REMOVED): RemovedAction = {
+  inline def apply(`type`: REMOVED): RemovedAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovedAction]
   }
   
-  @scala.inline
-  implicit class RemovedActionMutableBuilder[Self <: RemovedAction] (val x: Self) extends AnyVal {
+  extension [Self <: RemovedAction](x: Self) {
     
-    @scala.inline
-    def setType(value: REMOVED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: REMOVED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

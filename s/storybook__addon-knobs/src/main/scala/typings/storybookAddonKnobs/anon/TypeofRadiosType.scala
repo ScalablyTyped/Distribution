@@ -22,8 +22,7 @@ trait TypeofRadiosType extends StObject {
 }
 object TypeofRadiosType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultProps: RadiosTypeProps,
     deserialize: /* value */ RadiosTypeKnobValue => js.UndefOr[String | Double | Null],
     propTypes: IsInlineKnob,
@@ -33,19 +32,14 @@ object TypeofRadiosType {
     __obj.asInstanceOf[TypeofRadiosType]
   }
   
-  @scala.inline
-  implicit class TypeofRadiosTypeMutableBuilder[Self <: TypeofRadiosType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRadiosType](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: RadiosTypeProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: RadiosTypeProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeserialize(value: /* value */ RadiosTypeKnobValue => js.UndefOr[String | Double | Null]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+    inline def setDeserialize(value: /* value */ RadiosTypeKnobValue => js.UndefOr[String | Double | Null]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPropTypes(value: IsInlineKnob): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    inline def setPropTypes(value: IsInlineKnob): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialize(value: /* value */ RadiosTypeKnobValue => js.UndefOr[String | Double | Null]): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: /* value */ RadiosTypeKnobValue => js.UndefOr[String | Double | Null]): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }
 }

@@ -18,25 +18,19 @@ trait EvaluationParameters extends StObject {
 }
 object EvaluationParameters {
   
-  @scala.inline
-  def apply(): EvaluationParameters = {
+  inline def apply(): EvaluationParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EvaluationParameters]
   }
   
-  @scala.inline
-  implicit class EvaluationParametersMutableBuilder[Self <: EvaluationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationParameters](x: Self) {
     
-    @scala.inline
-    def setBackTestWindowOffset(value: Integer): Self = StObject.set(x, "BackTestWindowOffset", value.asInstanceOf[js.Any])
+    inline def setBackTestWindowOffset(value: Integer): Self = StObject.set(x, "BackTestWindowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackTestWindowOffsetUndefined: Self = StObject.set(x, "BackTestWindowOffset", js.undefined)
+    inline def setBackTestWindowOffsetUndefined: Self = StObject.set(x, "BackTestWindowOffset", js.undefined)
     
-    @scala.inline
-    def setNumberOfBacktestWindows(value: Integer): Self = StObject.set(x, "NumberOfBacktestWindows", value.asInstanceOf[js.Any])
+    inline def setNumberOfBacktestWindows(value: Integer): Self = StObject.set(x, "NumberOfBacktestWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfBacktestWindowsUndefined: Self = StObject.set(x, "NumberOfBacktestWindows", js.undefined)
+    inline def setNumberOfBacktestWindowsUndefined: Self = StObject.set(x, "NumberOfBacktestWindows", js.undefined)
   }
 }

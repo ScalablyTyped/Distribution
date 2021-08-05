@@ -22,22 +22,17 @@ trait SchemaBatchEnableServicesRequest extends StObject {
 }
 object SchemaBatchEnableServicesRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchEnableServicesRequest = {
+  inline def apply(): SchemaBatchEnableServicesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchEnableServicesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchEnableServicesRequestMutableBuilder[Self <: SchemaBatchEnableServicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchEnableServicesRequest](x: Self) {
     
-    @scala.inline
-    def setServiceIds(value: js.Array[String]): Self = StObject.set(x, "serviceIds", value.asInstanceOf[js.Any])
+    inline def setServiceIds(value: js.Array[String]): Self = StObject.set(x, "serviceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdsUndefined: Self = StObject.set(x, "serviceIds", js.undefined)
+    inline def setServiceIdsUndefined: Self = StObject.set(x, "serviceIds", js.undefined)
     
-    @scala.inline
-    def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: String*): Self = StObject.set(x, "serviceIds", js.Array(value :_*))
   }
 }

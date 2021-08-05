@@ -23,31 +23,23 @@ trait GoogleActionsOrdersV3VerticalsTicketEventCharacter extends StObject {
 }
 object GoogleActionsOrdersV3VerticalsTicketEventCharacter {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsTicketEventCharacter = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsTicketEventCharacter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketEventCharacter]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsTicketEventCharacterMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsTicketEventCharacter] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsTicketEventCharacter](x: Self) {
     
-    @scala.inline
-    def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsTicketEventCharacterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3VerticalsTicketEventCharacterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

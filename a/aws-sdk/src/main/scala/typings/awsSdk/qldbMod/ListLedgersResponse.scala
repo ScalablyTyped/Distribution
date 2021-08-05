@@ -18,28 +18,21 @@ trait ListLedgersResponse extends StObject {
 }
 object ListLedgersResponse {
   
-  @scala.inline
-  def apply(): ListLedgersResponse = {
+  inline def apply(): ListLedgersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLedgersResponse]
   }
   
-  @scala.inline
-  implicit class ListLedgersResponseMutableBuilder[Self <: ListLedgersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLedgersResponse](x: Self) {
     
-    @scala.inline
-    def setLedgers(value: LedgerList): Self = StObject.set(x, "Ledgers", value.asInstanceOf[js.Any])
+    inline def setLedgers(value: LedgerList): Self = StObject.set(x, "Ledgers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLedgersUndefined: Self = StObject.set(x, "Ledgers", js.undefined)
+    inline def setLedgersUndefined: Self = StObject.set(x, "Ledgers", js.undefined)
     
-    @scala.inline
-    def setLedgersVarargs(value: LedgerSummary*): Self = StObject.set(x, "Ledgers", js.Array(value :_*))
+    inline def setLedgersVarargs(value: LedgerSummary*): Self = StObject.set(x, "Ledgers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

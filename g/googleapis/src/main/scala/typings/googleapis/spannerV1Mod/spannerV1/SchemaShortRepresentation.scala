@@ -27,25 +27,19 @@ trait SchemaShortRepresentation extends StObject {
 }
 object SchemaShortRepresentation {
   
-  @scala.inline
-  def apply(): SchemaShortRepresentation = {
+  inline def apply(): SchemaShortRepresentation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShortRepresentation]
   }
   
-  @scala.inline
-  implicit class SchemaShortRepresentationMutableBuilder[Self <: SchemaShortRepresentation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShortRepresentation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setSubqueries(value: StringDictionary[Double]): Self = StObject.set(x, "subqueries", value.asInstanceOf[js.Any])
+    inline def setSubqueries(value: StringDictionary[Double]): Self = StObject.set(x, "subqueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubqueriesUndefined: Self = StObject.set(x, "subqueries", js.undefined)
+    inline def setSubqueriesUndefined: Self = StObject.set(x, "subqueries", js.undefined)
   }
 }

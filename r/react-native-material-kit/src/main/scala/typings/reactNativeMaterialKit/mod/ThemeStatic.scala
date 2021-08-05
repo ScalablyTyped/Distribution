@@ -54,151 +54,103 @@ trait ThemeStatic extends StObject {
 }
 object ThemeStatic {
   
-  @scala.inline
-  def apply(): ThemeStatic = {
+  inline def apply(): ThemeStatic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeStatic]
   }
   
-  @scala.inline
-  implicit class ThemeStaticMutableBuilder[Self <: ThemeStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeStatic](x: Self) {
     
-    @scala.inline
-    def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+    inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccentColorRGB(value: String): Self = StObject.set(x, "accentColorRGB", value.asInstanceOf[js.Any])
+    inline def setAccentColorRGB(value: String): Self = StObject.set(x, "accentColorRGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccentColorRGBUndefined: Self = StObject.set(x, "accentColorRGB", js.undefined)
+    inline def setAccentColorRGBUndefined: Self = StObject.set(x, "accentColorRGB", js.undefined)
     
-    @scala.inline
-    def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+    inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
     
-    @scala.inline
-    def setBgDisabled(value: String): Self = StObject.set(x, "bgDisabled", value.asInstanceOf[js.Any])
+    inline def setBgDisabled(value: String): Self = StObject.set(x, "bgDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgDisabledUndefined: Self = StObject.set(x, "bgDisabled", js.undefined)
+    inline def setBgDisabledUndefined: Self = StObject.set(x, "bgDisabled", js.undefined)
     
-    @scala.inline
-    def setBgPlain(value: String): Self = StObject.set(x, "bgPlain", value.asInstanceOf[js.Any])
+    inline def setBgPlain(value: String): Self = StObject.set(x, "bgPlain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgPlainUndefined: Self = StObject.set(x, "bgPlain", js.undefined)
+    inline def setBgPlainUndefined: Self = StObject.set(x, "bgPlain", js.undefined)
     
-    @scala.inline
-    def setCardActionStyle(value: CardActionStyle): Self = StObject.set(x, "cardActionStyle", value.asInstanceOf[js.Any])
+    inline def setCardActionStyle(value: CardActionStyle): Self = StObject.set(x, "cardActionStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardActionStyleUndefined: Self = StObject.set(x, "cardActionStyle", js.undefined)
+    inline def setCardActionStyleUndefined: Self = StObject.set(x, "cardActionStyle", js.undefined)
     
-    @scala.inline
-    def setCardContentStyle(value: CardContentStyle): Self = StObject.set(x, "cardContentStyle", value.asInstanceOf[js.Any])
+    inline def setCardContentStyle(value: CardContentStyle): Self = StObject.set(x, "cardContentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardContentStyleUndefined: Self = StObject.set(x, "cardContentStyle", js.undefined)
+    inline def setCardContentStyleUndefined: Self = StObject.set(x, "cardContentStyle", js.undefined)
     
-    @scala.inline
-    def setCardImageStyle(value: CardImageStyle): Self = StObject.set(x, "cardImageStyle", value.asInstanceOf[js.Any])
+    inline def setCardImageStyle(value: CardImageStyle): Self = StObject.set(x, "cardImageStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardImageStyleUndefined: Self = StObject.set(x, "cardImageStyle", js.undefined)
+    inline def setCardImageStyleUndefined: Self = StObject.set(x, "cardImageStyle", js.undefined)
     
-    @scala.inline
-    def setCardMenuStyle(value: CardMenuStyle): Self = StObject.set(x, "cardMenuStyle", value.asInstanceOf[js.Any])
+    inline def setCardMenuStyle(value: CardMenuStyle): Self = StObject.set(x, "cardMenuStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardMenuStyleUndefined: Self = StObject.set(x, "cardMenuStyle", js.undefined)
+    inline def setCardMenuStyleUndefined: Self = StObject.set(x, "cardMenuStyle", js.undefined)
     
-    @scala.inline
-    def setCardStyle(value: CardStyle): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
+    inline def setCardStyle(value: CardStyle): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
+    inline def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
     
-    @scala.inline
-    def setCardTitleStyle(value: CardTitleStyle): Self = StObject.set(x, "cardTitleStyle", value.asInstanceOf[js.Any])
+    inline def setCardTitleStyle(value: CardTitleStyle): Self = StObject.set(x, "cardTitleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardTitleStyleUndefined: Self = StObject.set(x, "cardTitleStyle", js.undefined)
+    inline def setCardTitleStyleUndefined: Self = StObject.set(x, "cardTitleStyle", js.undefined)
     
-    @scala.inline
-    def setCheckboxStyle(value: CheckboxStyle): Self = StObject.set(x, "checkboxStyle", value.asInstanceOf[js.Any])
+    inline def setCheckboxStyle(value: CheckboxStyle): Self = StObject.set(x, "checkboxStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxStyleUndefined: Self = StObject.set(x, "checkboxStyle", js.undefined)
+    inline def setCheckboxStyleUndefined: Self = StObject.set(x, "checkboxStyle", js.undefined)
     
-    @scala.inline
-    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
+    inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setIconToggleStyle(value: IconToggleStyle): Self = StObject.set(x, "iconToggleStyle", value.asInstanceOf[js.Any])
+    inline def setIconToggleStyle(value: IconToggleStyle): Self = StObject.set(x, "iconToggleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconToggleStyleUndefined: Self = StObject.set(x, "iconToggleStyle", js.undefined)
+    inline def setIconToggleStyleUndefined: Self = StObject.set(x, "iconToggleStyle", js.undefined)
     
-    @scala.inline
-    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+    inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryColorRGB(value: String): Self = StObject.set(x, "primaryColorRGB", value.asInstanceOf[js.Any])
+    inline def setPrimaryColorRGB(value: String): Self = StObject.set(x, "primaryColorRGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryColorRGBUndefined: Self = StObject.set(x, "primaryColorRGB", js.undefined)
+    inline def setPrimaryColorRGBUndefined: Self = StObject.set(x, "primaryColorRGB", js.undefined)
     
-    @scala.inline
-    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+    inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
     
-    @scala.inline
-    def setProgressStyle(value: ProgressStyle): Self = StObject.set(x, "progressStyle", value.asInstanceOf[js.Any])
+    inline def setProgressStyle(value: ProgressStyle): Self = StObject.set(x, "progressStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressStyleUndefined: Self = StObject.set(x, "progressStyle", js.undefined)
+    inline def setProgressStyleUndefined: Self = StObject.set(x, "progressStyle", js.undefined)
     
-    @scala.inline
-    def setRadioStyle(value: RadioStyle): Self = StObject.set(x, "radioStyle", value.asInstanceOf[js.Any])
+    inline def setRadioStyle(value: RadioStyle): Self = StObject.set(x, "radioStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioStyleUndefined: Self = StObject.set(x, "radioStyle", js.undefined)
+    inline def setRadioStyleUndefined: Self = StObject.set(x, "radioStyle", js.undefined)
     
-    @scala.inline
-    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
     
-    @scala.inline
-    def setSliderStyle(value: SliderStyle): Self = StObject.set(x, "sliderStyle", value.asInstanceOf[js.Any])
+    inline def setSliderStyle(value: SliderStyle): Self = StObject.set(x, "sliderStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliderStyleUndefined: Self = StObject.set(x, "sliderStyle", js.undefined)
+    inline def setSliderStyleUndefined: Self = StObject.set(x, "sliderStyle", js.undefined)
     
-    @scala.inline
-    def setSpinnerStyle(value: SpinnerStyle): Self = StObject.set(x, "spinnerStyle", value.asInstanceOf[js.Any])
+    inline def setSpinnerStyle(value: SpinnerStyle): Self = StObject.set(x, "spinnerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpinnerStyleUndefined: Self = StObject.set(x, "spinnerStyle", js.undefined)
+    inline def setSpinnerStyleUndefined: Self = StObject.set(x, "spinnerStyle", js.undefined)
     
-    @scala.inline
-    def setSwitchStyle(value: SwitchStyle): Self = StObject.set(x, "switchStyle", value.asInstanceOf[js.Any])
+    inline def setSwitchStyle(value: SwitchStyle): Self = StObject.set(x, "switchStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchStyleUndefined: Self = StObject.set(x, "switchStyle", js.undefined)
+    inline def setSwitchStyleUndefined: Self = StObject.set(x, "switchStyle", js.undefined)
     
-    @scala.inline
-    def setTextfieldStyle(value: TextFieldStyle): Self = StObject.set(x, "textfieldStyle", value.asInstanceOf[js.Any])
+    inline def setTextfieldStyle(value: TextFieldStyle): Self = StObject.set(x, "textfieldStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextfieldStyleUndefined: Self = StObject.set(x, "textfieldStyle", js.undefined)
+    inline def setTextfieldStyleUndefined: Self = StObject.set(x, "textfieldStyle", js.undefined)
   }
 }

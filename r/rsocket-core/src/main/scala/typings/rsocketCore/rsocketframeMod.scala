@@ -26,74 +26,62 @@ object rsocketframeMod {
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.APPLICATION_ERROR")
     @js.native
     def APPLICATION_ERROR: Double = js.native
-    @scala.inline
-    def APPLICATION_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APPLICATION_ERROR")(x.asInstanceOf[js.Any])
+    inline def APPLICATION_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APPLICATION_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.CANCELED")
     @js.native
     def CANCELED: Double = js.native
-    @scala.inline
-    def CANCELED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELED")(x.asInstanceOf[js.Any])
+    inline def CANCELED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELED")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.CONNECTION_CLOSE")
     @js.native
     def CONNECTION_CLOSE: Double = js.native
-    @scala.inline
-    def CONNECTION_CLOSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_CLOSE")(x.asInstanceOf[js.Any])
+    inline def CONNECTION_CLOSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_CLOSE")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.CONNECTION_ERROR")
     @js.native
     def CONNECTION_ERROR: Double = js.native
-    @scala.inline
-    def CONNECTION_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_ERROR")(x.asInstanceOf[js.Any])
+    inline def CONNECTION_ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.INVALID")
     @js.native
     def INVALID: Double = js.native
-    @scala.inline
-    def INVALID_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID")(x.asInstanceOf[js.Any])
+    inline def INVALID_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.INVALID_SETUP")
     @js.native
     def INVALID_SETUP: Double = js.native
-    @scala.inline
-    def INVALID_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_SETUP")(x.asInstanceOf[js.Any])
+    inline def INVALID_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_SETUP")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.REJECTED")
     @js.native
     def REJECTED: Double = js.native
-    @scala.inline
-    def REJECTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECTED")(x.asInstanceOf[js.Any])
+    inline def REJECTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECTED")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.REJECTED_RESUME")
     @js.native
     def REJECTED_RESUME: Double = js.native
-    @scala.inline
-    def REJECTED_RESUME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECTED_RESUME")(x.asInstanceOf[js.Any])
+    inline def REJECTED_RESUME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECTED_RESUME")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.REJECTED_SETUP")
     @js.native
     def REJECTED_SETUP: Double = js.native
-    @scala.inline
-    def REJECTED_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECTED_SETUP")(x.asInstanceOf[js.Any])
+    inline def REJECTED_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REJECTED_SETUP")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.RESERVED")
     @js.native
     def RESERVED: Double = js.native
-    @scala.inline
-    def RESERVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED")(x.asInstanceOf[js.Any])
+    inline def RESERVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.RESERVED_EXTENSION")
     @js.native
     def RESERVED_EXTENSION: Double = js.native
-    @scala.inline
-    def RESERVED_EXTENSION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED_EXTENSION")(x.asInstanceOf[js.Any])
+    inline def RESERVED_EXTENSION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED_EXTENSION")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "ERROR_CODES.UNSUPPORTED_SETUP")
     @js.native
     def UNSUPPORTED_SETUP: Double = js.native
-    @scala.inline
-    def UNSUPPORTED_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSUPPORTED_SETUP")(x.asInstanceOf[js.Any])
+    inline def UNSUPPORTED_SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSUPPORTED_SETUP")(x.asInstanceOf[js.Any])
   }
   
   object FLAGS {
@@ -105,50 +93,42 @@ object rsocketframeMod {
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.COMPLETE")
     @js.native
     def COMPLETE: Double = js.native
-    @scala.inline
-    def COMPLETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE")(x.asInstanceOf[js.Any])
+    inline def COMPLETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMPLETE")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.FOLLOWS")
     @js.native
     def FOLLOWS: Double = js.native
-    @scala.inline
-    def FOLLOWS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOLLOWS")(x.asInstanceOf[js.Any])
+    inline def FOLLOWS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOLLOWS")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.IGNORE")
     @js.native
     def IGNORE: Double = js.native
-    @scala.inline
-    def IGNORE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE")(x.asInstanceOf[js.Any])
+    inline def IGNORE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.LEASE")
     @js.native
     def LEASE: Double = js.native
-    @scala.inline
-    def LEASE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEASE")(x.asInstanceOf[js.Any])
+    inline def LEASE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEASE")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.METADATA")
     @js.native
     def METADATA: Double = js.native
-    @scala.inline
-    def METADATA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METADATA")(x.asInstanceOf[js.Any])
+    inline def METADATA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METADATA")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.NEXT")
     @js.native
     def NEXT: Double = js.native
-    @scala.inline
-    def NEXT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEXT")(x.asInstanceOf[js.Any])
+    inline def NEXT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEXT")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.RESPOND")
     @js.native
     def RESPOND: Double = js.native
-    @scala.inline
-    def RESPOND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESPOND")(x.asInstanceOf[js.Any])
+    inline def RESPOND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESPOND")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FLAGS.RESUME_ENABLE")
     @js.native
     def RESUME_ENABLE: Double = js.native
-    @scala.inline
-    def RESUME_ENABLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESUME_ENABLE")(x.asInstanceOf[js.Any])
+    inline def RESUME_ENABLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESUME_ENABLE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rsocket-core/RSocketFrame", "FLAGS_MASK")
@@ -164,98 +144,82 @@ object rsocketframeMod {
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.CANCEL")
     @js.native
     def CANCEL: Double = js.native
-    @scala.inline
-    def CANCEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCEL")(x.asInstanceOf[js.Any])
+    inline def CANCEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCEL")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.ERROR")
     @js.native
     def ERROR: Double = js.native
-    @scala.inline
-    def ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+    inline def ERROR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.EXT")
     @js.native
     def EXT: Double = js.native
-    @scala.inline
-    def EXT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXT")(x.asInstanceOf[js.Any])
+    inline def EXT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXT")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.KEEPALIVE")
     @js.native
     def KEEPALIVE: Double = js.native
-    @scala.inline
-    def KEEPALIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE")(x.asInstanceOf[js.Any])
+    inline def KEEPALIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.LEASE")
     @js.native
     def LEASE: Double = js.native
-    @scala.inline
-    def LEASE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEASE")(x.asInstanceOf[js.Any])
+    inline def LEASE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEASE")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.METADATA_PUSH")
     @js.native
     def METADATA_PUSH: Double = js.native
-    @scala.inline
-    def METADATA_PUSH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METADATA_PUSH")(x.asInstanceOf[js.Any])
+    inline def METADATA_PUSH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METADATA_PUSH")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.PAYLOAD")
     @js.native
     def PAYLOAD: Double = js.native
-    @scala.inline
-    def PAYLOAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAYLOAD")(x.asInstanceOf[js.Any])
+    inline def PAYLOAD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAYLOAD")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.REQUEST_CHANNEL")
     @js.native
     def REQUEST_CHANNEL: Double = js.native
-    @scala.inline
-    def REQUEST_CHANNEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_CHANNEL")(x.asInstanceOf[js.Any])
+    inline def REQUEST_CHANNEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_CHANNEL")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.REQUEST_FNF")
     @js.native
     def REQUEST_FNF: Double = js.native
-    @scala.inline
-    def REQUEST_FNF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_FNF")(x.asInstanceOf[js.Any])
+    inline def REQUEST_FNF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_FNF")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.REQUEST_N")
     @js.native
     def REQUEST_N: Double = js.native
-    @scala.inline
-    def REQUEST_N_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_N")(x.asInstanceOf[js.Any])
+    inline def REQUEST_N_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_N")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.REQUEST_RESPONSE")
     @js.native
     def REQUEST_RESPONSE: Double = js.native
-    @scala.inline
-    def REQUEST_RESPONSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_RESPONSE")(x.asInstanceOf[js.Any])
+    inline def REQUEST_RESPONSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_RESPONSE")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.REQUEST_STREAM")
     @js.native
     def REQUEST_STREAM: Double = js.native
-    @scala.inline
-    def REQUEST_STREAM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_STREAM")(x.asInstanceOf[js.Any])
+    inline def REQUEST_STREAM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST_STREAM")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.RESERVED")
     @js.native
     def RESERVED: Double = js.native
-    @scala.inline
-    def RESERVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED")(x.asInstanceOf[js.Any])
+    inline def RESERVED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.RESUME")
     @js.native
     def RESUME: Double = js.native
-    @scala.inline
-    def RESUME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESUME")(x.asInstanceOf[js.Any])
+    inline def RESUME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESUME")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.RESUME_OK")
     @js.native
     def RESUME_OK: Double = js.native
-    @scala.inline
-    def RESUME_OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESUME_OK")(x.asInstanceOf[js.Any])
+    inline def RESUME_OK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESUME_OK")(x.asInstanceOf[js.Any])
     
     @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPES.SETUP")
     @js.native
     def SETUP: Double = js.native
-    @scala.inline
-    def SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SETUP")(x.asInstanceOf[js.Any])
+    inline def SETUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SETUP")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rsocket-core/RSocketFrame", "FRAME_TYPE_OFFFSET")
@@ -306,41 +270,29 @@ object rsocketframeMod {
   @js.native
   val MAX_VERSION: /* 65535 */ Double = js.native
   
-  @scala.inline
-  def createErrorFromFrame(frame: ErrorFrame): ErrorsourceErrorSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[ErrorsourceErrorSource]
+  inline def createErrorFromFrame(frame: ErrorFrame): ErrorsourceErrorSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createErrorFromFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[ErrorsourceErrorSource]
   
-  @scala.inline
-  def getErrorCodeExplanation(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorCodeExplanation")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getErrorCodeExplanation(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorCodeExplanation")(code.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getFrameTypeName(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrameTypeName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFrameTypeName(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFrameTypeName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isComplete(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComplete")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isComplete(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComplete")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIgnore(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIgnore")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIgnore(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIgnore")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isLease(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLease")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLease(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLease")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isMetadata(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMetadata")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMetadata(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMetadata")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNext(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNext")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNext(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNext")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isRespond(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRespond")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRespond(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRespond")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isResumeEnable(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResumeEnable")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isResumeEnable(flags: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResumeEnable")(flags.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isResumePositionFrameType(`type`: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResumePositionFrameType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isResumePositionFrameType(`type`: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResumePositionFrameType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def printFrame(frame: Frame): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def printFrame(frame: Frame): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait ErrorSource extends StObject {
     
@@ -355,23 +307,18 @@ object rsocketframeMod {
   }
   object ErrorSource {
     
-    @scala.inline
-    def apply(code: Double, explanation: String, message: String): ErrorSource = {
+    inline def apply(code: Double, explanation: String, message: String): ErrorSource = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], explanation = explanation.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorSource]
     }
     
-    @scala.inline
-    implicit class ErrorSourceMutableBuilder[Self <: ErrorSource] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorSource](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+      inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

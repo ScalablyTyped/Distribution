@@ -19,8 +19,7 @@ trait Handle
 }
 object Handle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object Handle {
     __obj.asInstanceOf[Handle]
   }
   
-  @scala.inline
-  implicit class HandleMutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
+  extension [Self <: Handle](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

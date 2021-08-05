@@ -21,6 +21,5 @@ class URIError ()
 }
 object URIError {
   
-  @scala.inline
-  def apply: URIErrorConstructor = js.Dynamic.global.selectDynamic("URIError").asInstanceOf[URIErrorConstructor]
+  inline def apply: URIErrorConstructor = js.Dynamic.global.selectDynamic("URIError").asInstanceOf[URIErrorConstructor]
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlOfficeDocItemsType extends StObject
 object OlOfficeDocItemsType {
   
-  @scala.inline
-  def olExcelWorkSheetItem: `8` = 8.asInstanceOf[`8`]
+  inline def olExcelWorkSheetItem: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def olPowerPointShowItem: `10` = 10.asInstanceOf[`10`]
+  inline def olPowerPointShowItem: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def olWordDocumentItem: `9` = 9.asInstanceOf[`9`]
+  inline def olWordDocumentItem: `9` = 9.asInstanceOf[`9`]
 }

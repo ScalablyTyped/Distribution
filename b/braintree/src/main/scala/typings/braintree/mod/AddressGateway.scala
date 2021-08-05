@@ -16,8 +16,7 @@ trait AddressGateway extends StObject {
 }
 object AddressGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: AddressCreateRequest => js.Promise[ValidatedResponse[Address]],
     delete: (String, String) => js.Promise[Unit],
     find: (String, String) => js.Promise[Address],
@@ -27,19 +26,14 @@ object AddressGateway {
     __obj.asInstanceOf[AddressGateway]
   }
   
-  @scala.inline
-  implicit class AddressGatewayMutableBuilder[Self <: AddressGateway] (val x: Self) extends AnyVal {
+  extension [Self <: AddressGateway](x: Self) {
     
-    @scala.inline
-    def setCreate(value: AddressCreateRequest => js.Promise[ValidatedResponse[Address]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: AddressCreateRequest => js.Promise[ValidatedResponse[Address]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+    inline def setDelete(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFind(value: (String, String) => js.Promise[Address]): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
+    inline def setFind(value: (String, String) => js.Promise[Address]): Self = StObject.set(x, "find", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(value: (String, String, AddressUpdateRequest) => js.Promise[ValidatedResponse[Address]]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (String, String, AddressUpdateRequest) => js.Promise[ValidatedResponse[Address]]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

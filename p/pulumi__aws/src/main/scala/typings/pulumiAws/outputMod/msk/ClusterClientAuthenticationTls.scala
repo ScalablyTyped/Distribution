@@ -13,22 +13,17 @@ trait ClusterClientAuthenticationTls extends StObject {
 }
 object ClusterClientAuthenticationTls {
   
-  @scala.inline
-  def apply(): ClusterClientAuthenticationTls = {
+  inline def apply(): ClusterClientAuthenticationTls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterClientAuthenticationTls]
   }
   
-  @scala.inline
-  implicit class ClusterClientAuthenticationTlsMutableBuilder[Self <: ClusterClientAuthenticationTls] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterClientAuthenticationTls](x: Self) {
     
-    @scala.inline
-    def setCertificateAuthorityArns(value: js.Array[String]): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArns(value: js.Array[String]): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArnsUndefined: Self = StObject.set(x, "certificateAuthorityArns", js.undefined)
+    inline def setCertificateAuthorityArnsUndefined: Self = StObject.set(x, "certificateAuthorityArns", js.undefined)
     
-    @scala.inline
-    def setCertificateAuthorityArnsVarargs(value: String*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value :_*))
+    inline def setCertificateAuthorityArnsVarargs(value: String*): Self = StObject.set(x, "certificateAuthorityArns", js.Array(value :_*))
   }
 }

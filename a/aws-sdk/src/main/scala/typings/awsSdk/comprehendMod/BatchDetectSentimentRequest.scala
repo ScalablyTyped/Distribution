@@ -18,22 +18,17 @@ trait BatchDetectSentimentRequest extends StObject {
 }
 object BatchDetectSentimentRequest {
   
-  @scala.inline
-  def apply(LanguageCode: LanguageCode, TextList: CustomerInputStringList): BatchDetectSentimentRequest = {
+  inline def apply(LanguageCode: LanguageCode, TextList: CustomerInputStringList): BatchDetectSentimentRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], TextList = TextList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectSentimentRequest]
   }
   
-  @scala.inline
-  implicit class BatchDetectSentimentRequestMutableBuilder[Self <: BatchDetectSentimentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectSentimentRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
+    inline def setTextList(value: CustomerInputStringList): Self = StObject.set(x, "TextList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
+    inline def setTextListVarargs(value: CustomerInputString*): Self = StObject.set(x, "TextList", js.Array(value :_*))
   }
 }

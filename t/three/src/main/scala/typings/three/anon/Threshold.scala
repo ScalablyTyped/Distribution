@@ -10,16 +10,13 @@ trait Threshold extends StObject {
 }
 object Threshold {
   
-  @scala.inline
-  def apply(threshold: Double): Threshold = {
+  inline def apply(threshold: Double): Threshold = {
     val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[Threshold]
   }
   
-  @scala.inline
-  implicit class ThresholdMutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
+  extension [Self <: Threshold](x: Self) {
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

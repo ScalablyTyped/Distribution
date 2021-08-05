@@ -54,8 +54,7 @@ object componentsHorizontalMenuHorizontalMenuGridLayoutHorizontalMenuGridLayoutM
     @JSImport("wix-ui-core/src/components/horizontal-menu/horizontal-menu-grid-layout/HorizontalMenuGridLayout", "HorizontalMenuGridLayout.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait HorizontalMenuGridLayoutProps extends StObject {
@@ -72,38 +71,28 @@ object componentsHorizontalMenuHorizontalMenuGridLayoutHorizontalMenuGridLayoutM
   }
   object HorizontalMenuGridLayoutProps {
     
-    @scala.inline
-    def apply(menuContext: HorizontalMenuContextValue, menuItemContext: HorizontalMenuItemContextValue): HorizontalMenuGridLayoutProps = {
+    inline def apply(menuContext: HorizontalMenuContextValue, menuItemContext: HorizontalMenuItemContextValue): HorizontalMenuGridLayoutProps = {
       val __obj = js.Dynamic.literal(menuContext = menuContext.asInstanceOf[js.Any], menuItemContext = menuItemContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalMenuGridLayoutProps]
     }
     
-    @scala.inline
-    implicit class HorizontalMenuGridLayoutPropsMutableBuilder[Self <: HorizontalMenuGridLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalMenuGridLayoutProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setMaxOverflowWidth(value: Double): Self = StObject.set(x, "maxOverflowWidth", value.asInstanceOf[js.Any])
+      inline def setMaxOverflowWidth(value: Double): Self = StObject.set(x, "maxOverflowWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOverflowWidthUndefined: Self = StObject.set(x, "maxOverflowWidth", js.undefined)
+      inline def setMaxOverflowWidthUndefined: Self = StObject.set(x, "maxOverflowWidth", js.undefined)
       
-      @scala.inline
-      def setMenuContext(value: HorizontalMenuContextValue): Self = StObject.set(x, "menuContext", value.asInstanceOf[js.Any])
+      inline def setMenuContext(value: HorizontalMenuContextValue): Self = StObject.set(x, "menuContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemContext(value: HorizontalMenuItemContextValue): Self = StObject.set(x, "menuItemContext", value.asInstanceOf[js.Any])
+      inline def setMenuItemContext(value: HorizontalMenuItemContextValue): Self = StObject.set(x, "menuItemContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -113,17 +102,14 @@ object componentsHorizontalMenuHorizontalMenuGridLayoutHorizontalMenuGridLayoutM
   }
   object HorizontalMenuGridLayoutState {
     
-    @scala.inline
-    def apply(styles: CSSProperties): HorizontalMenuGridLayoutState = {
+    inline def apply(styles: CSSProperties): HorizontalMenuGridLayoutState = {
       val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalMenuGridLayoutState]
     }
     
-    @scala.inline
-    implicit class HorizontalMenuGridLayoutStateMutableBuilder[Self <: HorizontalMenuGridLayoutState] (val x: Self) extends AnyVal {
+    extension [Self <: HorizontalMenuGridLayoutState](x: Self) {
       
-      @scala.inline
-      def setStyles(value: CSSProperties): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: CSSProperties): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     }
   }
   

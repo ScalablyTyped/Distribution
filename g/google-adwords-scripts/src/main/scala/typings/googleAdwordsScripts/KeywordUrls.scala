@@ -19,8 +19,7 @@ trait KeywordUrls
 }
 object KeywordUrls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearFinalUrl: () => Unit,
     clearMobileFinalUrl: () => Unit,
     clearTrackingTemplate: () => Unit,
@@ -37,16 +36,12 @@ object KeywordUrls {
     __obj.asInstanceOf[KeywordUrls]
   }
   
-  @scala.inline
-  implicit class KeywordUrlsMutableBuilder[Self <: KeywordUrls] (val x: Self) extends AnyVal {
+  extension [Self <: KeywordUrls](x: Self) {
     
-    @scala.inline
-    def setClearFinalUrl(value: () => Unit): Self = StObject.set(x, "clearFinalUrl", js.Any.fromFunction0(value))
+    inline def setClearFinalUrl(value: () => Unit): Self = StObject.set(x, "clearFinalUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearMobileFinalUrl(value: () => Unit): Self = StObject.set(x, "clearMobileFinalUrl", js.Any.fromFunction0(value))
+    inline def setClearMobileFinalUrl(value: () => Unit): Self = StObject.set(x, "clearMobileFinalUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
+    inline def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
   }
 }

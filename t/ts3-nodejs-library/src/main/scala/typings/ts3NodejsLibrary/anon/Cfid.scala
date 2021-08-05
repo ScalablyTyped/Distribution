@@ -18,28 +18,21 @@ trait Cfid extends StObject {
 }
 object Cfid {
   
-  @scala.inline
-  def apply(cfid: Double, clid: Double, ctid: Double, reasonid: Double, reasonmsg: String): Cfid = {
+  inline def apply(cfid: Double, clid: Double, ctid: Double, reasonid: Double, reasonmsg: String): Cfid = {
     val __obj = js.Dynamic.literal(cfid = cfid.asInstanceOf[js.Any], clid = clid.asInstanceOf[js.Any], ctid = ctid.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any], reasonmsg = reasonmsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cfid]
   }
   
-  @scala.inline
-  implicit class CfidMutableBuilder[Self <: Cfid] (val x: Self) extends AnyVal {
+  extension [Self <: Cfid](x: Self) {
     
-    @scala.inline
-    def setCfid(value: Double): Self = StObject.set(x, "cfid", value.asInstanceOf[js.Any])
+    inline def setCfid(value: Double): Self = StObject.set(x, "cfid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClid(value: Double): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
+    inline def setClid(value: Double): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtid(value: Double): Self = StObject.set(x, "ctid", value.asInstanceOf[js.Any])
+    inline def setCtid(value: Double): Self = StObject.set(x, "ctid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonid(value: Double): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
+    inline def setReasonid(value: Double): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonmsg(value: String): Self = StObject.set(x, "reasonmsg", value.asInstanceOf[js.Any])
+    inline def setReasonmsg(value: String): Self = StObject.set(x, "reasonmsg", value.asInstanceOf[js.Any])
   }
 }

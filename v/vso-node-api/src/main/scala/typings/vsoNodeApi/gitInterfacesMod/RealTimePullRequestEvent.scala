@@ -18,19 +18,15 @@ trait RealTimePullRequestEvent extends StObject {
 }
 object RealTimePullRequestEvent {
   
-  @scala.inline
-  def apply(eventId: String, pullRequestId: Double): RealTimePullRequestEvent = {
+  inline def apply(eventId: String, pullRequestId: Double): RealTimePullRequestEvent = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealTimePullRequestEvent]
   }
   
-  @scala.inline
-  implicit class RealTimePullRequestEventMutableBuilder[Self <: RealTimePullRequestEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RealTimePullRequestEvent](x: Self) {
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

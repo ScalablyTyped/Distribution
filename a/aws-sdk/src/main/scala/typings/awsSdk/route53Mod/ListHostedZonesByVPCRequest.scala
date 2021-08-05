@@ -28,31 +28,23 @@ trait ListHostedZonesByVPCRequest extends StObject {
 }
 object ListHostedZonesByVPCRequest {
   
-  @scala.inline
-  def apply(VPCId: VPCId, VPCRegion: VPCRegion): ListHostedZonesByVPCRequest = {
+  inline def apply(VPCId: VPCId, VPCRegion: VPCRegion): ListHostedZonesByVPCRequest = {
     val __obj = js.Dynamic.literal(VPCId = VPCId.asInstanceOf[js.Any], VPCRegion = VPCRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHostedZonesByVPCRequest]
   }
   
-  @scala.inline
-  implicit class ListHostedZonesByVPCRequestMutableBuilder[Self <: ListHostedZonesByVPCRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListHostedZonesByVPCRequest](x: Self) {
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVPCId(value: VPCId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
+    inline def setVPCId(value: VPCId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCRegion(value: VPCRegion): Self = StObject.set(x, "VPCRegion", value.asInstanceOf[js.Any])
+    inline def setVPCRegion(value: VPCRegion): Self = StObject.set(x, "VPCRegion", value.asInstanceOf[js.Any])
   }
 }

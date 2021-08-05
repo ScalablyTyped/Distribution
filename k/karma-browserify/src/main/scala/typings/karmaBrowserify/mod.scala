@@ -22,20 +22,16 @@ object mod {
   }
   object BrowserifyOptions {
     
-    @scala.inline
-    def apply(): BrowserifyOptions = {
+    inline def apply(): BrowserifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserifyOptions]
     }
     
-    @scala.inline
-    implicit class BrowserifyOptionsMutableBuilder[Self <: BrowserifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserifyOptions](x: Self) {
       
-      @scala.inline
-      def setConfigure(value: /* bundle */ BrowserifyObject => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+      inline def setConfigure(value: /* bundle */ BrowserifyObject => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
+      inline def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
     }
   }
   
@@ -55,26 +51,20 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setBrowserify(value: BrowserifyOptions): Self = StObject.set(x, "browserify", value.asInstanceOf[js.Any])
+      inline def setBrowserify(value: BrowserifyOptions): Self = StObject.set(x, "browserify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserifyUndefined: Self = StObject.set(x, "browserify", js.undefined)
+      inline def setBrowserifyUndefined: Self = StObject.set(x, "browserify", js.undefined)
       
-      @scala.inline
-      def setWatchify(value: WatchifyOptions): Self = StObject.set(x, "watchify", value.asInstanceOf[js.Any])
+      inline def setWatchify(value: WatchifyOptions): Self = StObject.set(x, "watchify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchifyUndefined: Self = StObject.set(x, "watchify", js.undefined)
+      inline def setWatchifyUndefined: Self = StObject.set(x, "watchify", js.undefined)
     }
   }
   

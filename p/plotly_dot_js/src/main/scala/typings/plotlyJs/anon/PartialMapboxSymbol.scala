@@ -34,51 +34,37 @@ trait PartialMapboxSymbol extends StObject {
 }
 object PartialMapboxSymbol {
   
-  @scala.inline
-  def apply(): PartialMapboxSymbol = {
+  inline def apply(): PartialMapboxSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMapboxSymbol]
   }
   
-  @scala.inline
-  implicit class PartialMapboxSymbolMutableBuilder[Self <: PartialMapboxSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMapboxSymbol](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setIconsize(value: Double): Self = StObject.set(x, "iconsize", value.asInstanceOf[js.Any])
+    inline def setIconsize(value: Double): Self = StObject.set(x, "iconsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsizeUndefined: Self = StObject.set(x, "iconsize", js.undefined)
+    inline def setIconsizeUndefined: Self = StObject.set(x, "iconsize", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: point | line | `line-center`): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: point | line | `line-center`): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTextfont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "textfont", value.asInstanceOf[js.Any])
+    inline def setTextfont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "textfont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextfontUndefined: Self = StObject.set(x, "textfont", js.undefined)
+    inline def setTextfontUndefined: Self = StObject.set(x, "textfont", js.undefined)
     
-    @scala.inline
-    def setTextposition(
+    inline def setTextposition(
       value: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
     ): Self = StObject.set(x, "textposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextpositionUndefined: Self = StObject.set(x, "textposition", js.undefined)
+    inline def setTextpositionUndefined: Self = StObject.set(x, "textposition", js.undefined)
   }
 }

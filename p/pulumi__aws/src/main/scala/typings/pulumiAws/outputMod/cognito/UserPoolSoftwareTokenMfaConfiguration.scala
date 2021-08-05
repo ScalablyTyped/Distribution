@@ -13,16 +13,13 @@ trait UserPoolSoftwareTokenMfaConfiguration extends StObject {
 }
 object UserPoolSoftwareTokenMfaConfiguration {
   
-  @scala.inline
-  def apply(enabled: Boolean): UserPoolSoftwareTokenMfaConfiguration = {
+  inline def apply(enabled: Boolean): UserPoolSoftwareTokenMfaConfiguration = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolSoftwareTokenMfaConfiguration]
   }
   
-  @scala.inline
-  implicit class UserPoolSoftwareTokenMfaConfigurationMutableBuilder[Self <: UserPoolSoftwareTokenMfaConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolSoftwareTokenMfaConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

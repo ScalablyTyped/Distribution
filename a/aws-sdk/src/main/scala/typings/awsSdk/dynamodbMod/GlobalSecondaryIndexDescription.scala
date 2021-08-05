@@ -53,70 +53,49 @@ trait GlobalSecondaryIndexDescription extends StObject {
 }
 object GlobalSecondaryIndexDescription {
   
-  @scala.inline
-  def apply(): GlobalSecondaryIndexDescription = {
+  inline def apply(): GlobalSecondaryIndexDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalSecondaryIndexDescription]
   }
   
-  @scala.inline
-  implicit class GlobalSecondaryIndexDescriptionMutableBuilder[Self <: GlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalSecondaryIndexDescription](x: Self) {
     
-    @scala.inline
-    def setBackfilling(value: Backfilling): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
+    inline def setBackfilling(value: Backfilling): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackfillingUndefined: Self = StObject.set(x, "Backfilling", js.undefined)
+    inline def setBackfillingUndefined: Self = StObject.set(x, "Backfilling", js.undefined)
     
-    @scala.inline
-    def setIndexArn(value: String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
+    inline def setIndexArn(value: String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
+    inline def setIndexArnUndefined: Self = StObject.set(x, "IndexArn", js.undefined)
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
-    @scala.inline
-    def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
+    inline def setIndexSizeBytes(value: Long): Self = StObject.set(x, "IndexSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
+    inline def setIndexSizeBytesUndefined: Self = StObject.set(x, "IndexSizeBytes", js.undefined)
     
-    @scala.inline
-    def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
+    inline def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
+    inline def setIndexStatusUndefined: Self = StObject.set(x, "IndexStatus", js.undefined)
     
-    @scala.inline
-    def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Long): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
-    @scala.inline
-    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+    inline def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
+    inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
-    @scala.inline
-    def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "Projection", js.undefined)
     
-    @scala.inline
-    def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
+    inline def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
   }
 }

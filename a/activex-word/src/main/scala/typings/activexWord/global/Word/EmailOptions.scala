@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.EmailOptions")
 @js.native
-class EmailOptions protected ()
+/* private */ class EmailOptions ()
   extends StObject
      with typings.activexWord.Word.EmailOptions {
   
@@ -137,7 +137,7 @@ class EmailOptions protected ()
   /* CompleteClass */
   var UseThemeStyleOnReply: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.EmailOptions_typekey")
   var WordDotEmailOptions_typekey: typings.activexWord.Word.EmailOptions = js.native
 }

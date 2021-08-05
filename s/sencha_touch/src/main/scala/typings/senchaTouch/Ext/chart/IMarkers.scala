@@ -64,43 +64,33 @@ trait IMarkers
 }
 object IMarkers {
   
-  @scala.inline
-  def apply(): IMarkers = {
+  inline def apply(): IMarkers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMarkers]
   }
   
-  @scala.inline
-  implicit class IMarkersMutableBuilder[Self <: IMarkers] (val x: Self) extends AnyVal {
+  extension [Self <: IMarkers](x: Self) {
     
-    @scala.inline
-    def setClear(value: /* category */ js.UndefOr[String] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* category */ js.UndefOr[String] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setGetMarkerBBoxFor(
+    inline def setGetMarkerBBoxFor(
       value: (/* category */ js.UndefOr[String], /* index */ js.UndefOr[js.Any], /* isWithoutTransform */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "getMarkerBBoxFor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetMarkerBBoxForUndefined: Self = StObject.set(x, "getMarkerBBoxFor", js.undefined)
+    inline def setGetMarkerBBoxForUndefined: Self = StObject.set(x, "getMarkerBBoxFor", js.undefined)
     
-    @scala.inline
-    def setPutMarkerFor(
+    inline def setPutMarkerFor(
       value: (/* category */ js.UndefOr[String], /* markerAttr */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], /* canonical */ js.UndefOr[Boolean], /* keepRevision */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "putMarkerFor", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setPutMarkerForUndefined: Self = StObject.set(x, "putMarkerFor", js.undefined)
+    inline def setPutMarkerForUndefined: Self = StObject.set(x, "putMarkerFor", js.undefined)
     
-    @scala.inline
-    def setRender(
+    inline def setRender(
       value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait DeleteNetworkInterfaceRequest extends StObject {
 }
 object DeleteNetworkInterfaceRequest {
   
-  @scala.inline
-  def apply(NetworkInterfaceId: NetworkInterfaceId): DeleteNetworkInterfaceRequest = {
+  inline def apply(NetworkInterfaceId: NetworkInterfaceId): DeleteNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNetworkInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteNetworkInterfaceRequestMutableBuilder[Self <: DeleteNetworkInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNetworkInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
   }
 }

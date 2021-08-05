@@ -15,19 +15,15 @@ trait BlobsOptions extends StObject {
 }
 object BlobsOptions {
   
-  @scala.inline
-  def apply(): BlobsOptions = {
+  inline def apply(): BlobsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlobsOptions]
   }
   
-  @scala.inline
-  implicit class BlobsOptionsMutableBuilder[Self <: BlobsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BlobsOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
+    inline def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
+    inline def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
   }
 }

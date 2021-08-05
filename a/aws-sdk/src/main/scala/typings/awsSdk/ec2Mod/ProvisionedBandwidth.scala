@@ -33,43 +33,31 @@ trait ProvisionedBandwidth extends StObject {
 }
 object ProvisionedBandwidth {
   
-  @scala.inline
-  def apply(): ProvisionedBandwidth = {
+  inline def apply(): ProvisionedBandwidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvisionedBandwidth]
   }
   
-  @scala.inline
-  implicit class ProvisionedBandwidthMutableBuilder[Self <: ProvisionedBandwidth] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisionedBandwidth](x: Self) {
     
-    @scala.inline
-    def setProvisionTime(value: DateTime): Self = StObject.set(x, "ProvisionTime", value.asInstanceOf[js.Any])
+    inline def setProvisionTime(value: DateTime): Self = StObject.set(x, "ProvisionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionTimeUndefined: Self = StObject.set(x, "ProvisionTime", js.undefined)
+    inline def setProvisionTimeUndefined: Self = StObject.set(x, "ProvisionTime", js.undefined)
     
-    @scala.inline
-    def setProvisioned(value: String): Self = StObject.set(x, "Provisioned", value.asInstanceOf[js.Any])
+    inline def setProvisioned(value: String): Self = StObject.set(x, "Provisioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedUndefined: Self = StObject.set(x, "Provisioned", js.undefined)
+    inline def setProvisionedUndefined: Self = StObject.set(x, "Provisioned", js.undefined)
     
-    @scala.inline
-    def setRequestTime(value: DateTime): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: DateTime): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
+    inline def setRequestTimeUndefined: Self = StObject.set(x, "RequestTime", js.undefined)
     
-    @scala.inline
-    def setRequested(value: String): Self = StObject.set(x, "Requested", value.asInstanceOf[js.Any])
+    inline def setRequested(value: String): Self = StObject.set(x, "Requested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedUndefined: Self = StObject.set(x, "Requested", js.undefined)
+    inline def setRequestedUndefined: Self = StObject.set(x, "Requested", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

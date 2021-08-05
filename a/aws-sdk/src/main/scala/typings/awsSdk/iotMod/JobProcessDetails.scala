@@ -53,70 +53,49 @@ trait JobProcessDetails extends StObject {
 }
 object JobProcessDetails {
   
-  @scala.inline
-  def apply(): JobProcessDetails = {
+  inline def apply(): JobProcessDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobProcessDetails]
   }
   
-  @scala.inline
-  implicit class JobProcessDetailsMutableBuilder[Self <: JobProcessDetails] (val x: Self) extends AnyVal {
+  extension [Self <: JobProcessDetails](x: Self) {
     
-    @scala.inline
-    def setNumberOfCanceledThings(value: CanceledThings): Self = StObject.set(x, "numberOfCanceledThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfCanceledThings(value: CanceledThings): Self = StObject.set(x, "numberOfCanceledThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfCanceledThingsUndefined: Self = StObject.set(x, "numberOfCanceledThings", js.undefined)
+    inline def setNumberOfCanceledThingsUndefined: Self = StObject.set(x, "numberOfCanceledThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfFailedThings(value: FailedThings): Self = StObject.set(x, "numberOfFailedThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfFailedThings(value: FailedThings): Self = StObject.set(x, "numberOfFailedThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfFailedThingsUndefined: Self = StObject.set(x, "numberOfFailedThings", js.undefined)
+    inline def setNumberOfFailedThingsUndefined: Self = StObject.set(x, "numberOfFailedThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfInProgressThings(value: InProgressThings): Self = StObject.set(x, "numberOfInProgressThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfInProgressThings(value: InProgressThings): Self = StObject.set(x, "numberOfInProgressThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfInProgressThingsUndefined: Self = StObject.set(x, "numberOfInProgressThings", js.undefined)
+    inline def setNumberOfInProgressThingsUndefined: Self = StObject.set(x, "numberOfInProgressThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfQueuedThings(value: QueuedThings): Self = StObject.set(x, "numberOfQueuedThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfQueuedThings(value: QueuedThings): Self = StObject.set(x, "numberOfQueuedThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfQueuedThingsUndefined: Self = StObject.set(x, "numberOfQueuedThings", js.undefined)
+    inline def setNumberOfQueuedThingsUndefined: Self = StObject.set(x, "numberOfQueuedThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfRejectedThings(value: RejectedThings): Self = StObject.set(x, "numberOfRejectedThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfRejectedThings(value: RejectedThings): Self = StObject.set(x, "numberOfRejectedThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRejectedThingsUndefined: Self = StObject.set(x, "numberOfRejectedThings", js.undefined)
+    inline def setNumberOfRejectedThingsUndefined: Self = StObject.set(x, "numberOfRejectedThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfRemovedThings(value: RemovedThings): Self = StObject.set(x, "numberOfRemovedThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfRemovedThings(value: RemovedThings): Self = StObject.set(x, "numberOfRemovedThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRemovedThingsUndefined: Self = StObject.set(x, "numberOfRemovedThings", js.undefined)
+    inline def setNumberOfRemovedThingsUndefined: Self = StObject.set(x, "numberOfRemovedThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfSucceededThings(value: SucceededThings): Self = StObject.set(x, "numberOfSucceededThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfSucceededThings(value: SucceededThings): Self = StObject.set(x, "numberOfSucceededThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfSucceededThingsUndefined: Self = StObject.set(x, "numberOfSucceededThings", js.undefined)
+    inline def setNumberOfSucceededThingsUndefined: Self = StObject.set(x, "numberOfSucceededThings", js.undefined)
     
-    @scala.inline
-    def setNumberOfTimedOutThings(value: TimedOutThings): Self = StObject.set(x, "numberOfTimedOutThings", value.asInstanceOf[js.Any])
+    inline def setNumberOfTimedOutThings(value: TimedOutThings): Self = StObject.set(x, "numberOfTimedOutThings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfTimedOutThingsUndefined: Self = StObject.set(x, "numberOfTimedOutThings", js.undefined)
+    inline def setNumberOfTimedOutThingsUndefined: Self = StObject.set(x, "numberOfTimedOutThings", js.undefined)
     
-    @scala.inline
-    def setProcessingTargets(value: ProcessingTargetNameList): Self = StObject.set(x, "processingTargets", value.asInstanceOf[js.Any])
+    inline def setProcessingTargets(value: ProcessingTargetNameList): Self = StObject.set(x, "processingTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingTargetsUndefined: Self = StObject.set(x, "processingTargets", js.undefined)
+    inline def setProcessingTargetsUndefined: Self = StObject.set(x, "processingTargets", js.undefined)
     
-    @scala.inline
-    def setProcessingTargetsVarargs(value: ProcessingTargetName*): Self = StObject.set(x, "processingTargets", js.Array(value :_*))
+    inline def setProcessingTargetsVarargs(value: ProcessingTargetName*): Self = StObject.set(x, "processingTargets", js.Array(value :_*))
   }
 }

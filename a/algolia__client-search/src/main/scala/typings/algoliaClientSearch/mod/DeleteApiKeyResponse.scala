@@ -13,16 +13,13 @@ trait DeleteApiKeyResponse extends StObject {
 }
 object DeleteApiKeyResponse {
   
-  @scala.inline
-  def apply(deletedAt: String): DeleteApiKeyResponse = {
+  inline def apply(deletedAt: String): DeleteApiKeyResponse = {
     val __obj = js.Dynamic.literal(deletedAt = deletedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApiKeyResponse]
   }
   
-  @scala.inline
-  implicit class DeleteApiKeyResponseMutableBuilder[Self <: DeleteApiKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApiKeyResponse](x: Self) {
     
-    @scala.inline
-    def setDeletedAt(value: String): Self = StObject.set(x, "deletedAt", value.asInstanceOf[js.Any])
+    inline def setDeletedAt(value: String): Self = StObject.set(x, "deletedAt", value.asInstanceOf[js.Any])
   }
 }

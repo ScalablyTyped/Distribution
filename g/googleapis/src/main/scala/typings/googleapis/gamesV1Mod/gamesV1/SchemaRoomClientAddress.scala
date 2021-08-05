@@ -22,25 +22,19 @@ trait SchemaRoomClientAddress extends StObject {
 }
 object SchemaRoomClientAddress {
   
-  @scala.inline
-  def apply(): SchemaRoomClientAddress = {
+  inline def apply(): SchemaRoomClientAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoomClientAddress]
   }
   
-  @scala.inline
-  implicit class SchemaRoomClientAddressMutableBuilder[Self <: SchemaRoomClientAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoomClientAddress](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setXmppAddress(value: String): Self = StObject.set(x, "xmppAddress", value.asInstanceOf[js.Any])
+    inline def setXmppAddress(value: String): Self = StObject.set(x, "xmppAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmppAddressUndefined: Self = StObject.set(x, "xmppAddress", js.undefined)
+    inline def setXmppAddressUndefined: Self = StObject.set(x, "xmppAddress", js.undefined)
   }
 }

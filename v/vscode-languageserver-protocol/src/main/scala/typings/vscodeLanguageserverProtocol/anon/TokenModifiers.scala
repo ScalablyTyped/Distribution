@@ -25,31 +25,23 @@ trait TokenModifiers extends StObject {
 }
 object TokenModifiers {
   
-  @scala.inline
-  def apply(tokenModifiers: js.Array[String], tokenTypes: js.Array[String]): TokenModifiers = {
+  inline def apply(tokenModifiers: js.Array[String], tokenTypes: js.Array[String]): TokenModifiers = {
     val __obj = js.Dynamic.literal(tokenModifiers = tokenModifiers.asInstanceOf[js.Any], tokenTypes = tokenTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenModifiers]
   }
   
-  @scala.inline
-  implicit class TokenModifiersMutableBuilder[Self <: TokenModifiers] (val x: Self) extends AnyVal {
+  extension [Self <: TokenModifiers](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     
-    @scala.inline
-    def setTokenModifiers(value: js.Array[String]): Self = StObject.set(x, "tokenModifiers", value.asInstanceOf[js.Any])
+    inline def setTokenModifiers(value: js.Array[String]): Self = StObject.set(x, "tokenModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenModifiersVarargs(value: String*): Self = StObject.set(x, "tokenModifiers", js.Array(value :_*))
+    inline def setTokenModifiersVarargs(value: String*): Self = StObject.set(x, "tokenModifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenTypes(value: js.Array[String]): Self = StObject.set(x, "tokenTypes", value.asInstanceOf[js.Any])
+    inline def setTokenTypes(value: js.Array[String]): Self = StObject.set(x, "tokenTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenTypesVarargs(value: String*): Self = StObject.set(x, "tokenTypes", js.Array(value :_*))
+    inline def setTokenTypesVarargs(value: String*): Self = StObject.set(x, "tokenTypes", js.Array(value :_*))
   }
 }

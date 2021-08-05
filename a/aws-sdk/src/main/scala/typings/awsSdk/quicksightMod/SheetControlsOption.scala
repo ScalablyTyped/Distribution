@@ -13,19 +13,15 @@ trait SheetControlsOption extends StObject {
 }
 object SheetControlsOption {
   
-  @scala.inline
-  def apply(): SheetControlsOption = {
+  inline def apply(): SheetControlsOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SheetControlsOption]
   }
   
-  @scala.inline
-  implicit class SheetControlsOptionMutableBuilder[Self <: SheetControlsOption] (val x: Self) extends AnyVal {
+  extension [Self <: SheetControlsOption](x: Self) {
     
-    @scala.inline
-    def setVisibilityState(value: DashboardUIState): Self = StObject.set(x, "VisibilityState", value.asInstanceOf[js.Any])
+    inline def setVisibilityState(value: DashboardUIState): Self = StObject.set(x, "VisibilityState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityStateUndefined: Self = StObject.set(x, "VisibilityState", js.undefined)
+    inline def setVisibilityStateUndefined: Self = StObject.set(x, "VisibilityState", js.undefined)
   }
 }

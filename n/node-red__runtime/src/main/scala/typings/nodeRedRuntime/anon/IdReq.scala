@@ -12,22 +12,17 @@ trait IdReq extends StObject {
 }
 object IdReq {
   
-  @scala.inline
-  def apply(id: String): IdReq = {
+  inline def apply(id: String): IdReq = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdReq]
   }
   
-  @scala.inline
-  implicit class IdReqMutableBuilder[Self <: IdReq] (val x: Self) extends AnyVal {
+  extension [Self <: IdReq](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

@@ -48,6 +48,5 @@ trait HtmlMap extends StObject {
 }
 object HtmlMap {
   
-  @scala.inline
-  def apply: HtmlMap = ^.asInstanceOf[js.Dynamic].selectDynamic("HtmlMap").asInstanceOf[HtmlMap]
+  inline def apply: HtmlMap = ^.asInstanceOf[js.Dynamic].selectDynamic("HtmlMap").asInstanceOf[HtmlMap]
 }

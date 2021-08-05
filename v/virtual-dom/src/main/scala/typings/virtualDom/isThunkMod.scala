@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isThunkMod {
   
-  @scala.inline
-  def apply(vTree: VTree): /* is virtual-dom.VirtualDOM.Thunk */ Boolean = ^.asInstanceOf[js.Dynamic].apply(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.Thunk */ Boolean]
+  inline def apply(vTree: VTree): /* is virtual-dom.VirtualDOM.Thunk */ Boolean = ^.asInstanceOf[js.Dynamic].apply(vTree.asInstanceOf[js.Any]).asInstanceOf[/* is virtual-dom.VirtualDOM.Thunk */ Boolean]
   
   @JSImport("virtual-dom/vnode/is-thunk", JSImport.Namespace)
   @js.native

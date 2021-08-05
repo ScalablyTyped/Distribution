@@ -12,25 +12,19 @@ trait ConnectorFill extends StObject {
 }
 object ConnectorFill {
   
-  @scala.inline
-  def apply(): ConnectorFill = {
+  inline def apply(): ConnectorFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectorFill]
   }
   
-  @scala.inline
-  implicit class ConnectorFillMutableBuilder[Self <: ConnectorFill] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectorFill](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

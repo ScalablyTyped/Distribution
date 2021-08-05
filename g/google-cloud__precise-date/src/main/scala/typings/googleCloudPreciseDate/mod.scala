@@ -38,7 +38,7 @@ object mod {
       *
       * @returns {number}
       */
-    var _getNanos: js.Any = js.native
+    /* private */ var _getNanos: js.Any = js.native
     
     /**
       * Returns the total number of seconds in the specified date since Unix epoch.
@@ -48,11 +48,11 @@ object mod {
       *
       * @returns {number}
       */
-    var _getSeconds: js.Any = js.native
+    /* private */ var _getSeconds: js.Any = js.native
     
-    var _micros: js.Any = js.native
+    /* private */ var _micros: js.Any = js.native
     
-    var _nanos: js.Any = js.native
+    /* private */ var _nanos: js.Any = js.native
     
     /**
       * Returns the specified date represented in nanoseconds according to
@@ -228,8 +228,7 @@ object mod {
       * const time = PreciseDate.fullUTC(2019, 1, 8, 10, 34, 29, 481, 145, 231);
       * console.log(time); // expected output: 1549622069481145231n
       */
-    @scala.inline
-    def fullUTC(args: Double*): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTC")(args.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
+    inline def fullUTC(args: Double*): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTC")(args.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
     
     /**
       * Accepts the same number parameters as the PreciseDate constructor, but
@@ -245,8 +244,7 @@ object mod {
       * const time = PreciseDate.fullUTCString(2019, 1, 8, 10, 34, 29, 481, 145,
       * 231); console.log(time); // expected output: '1549622069481145231'
       */
-    @scala.inline
-    def fullUTCString(args: Double*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTCString")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fullUTCString(args: Double*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullUTCString")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Parses a precise time.
@@ -278,14 +276,10 @@ object mod {
       * const time = PreciseDate.parseFull(struct);
       * console.log(time); // expected output: "1549622069481145231"
       */
-    @scala.inline
-    def parseFull(time: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def parseFull(time: js.BigInt): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def parseFull(time: DateTuple): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def parseFull(time: ProtobufDate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def parseFull(time: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def parseFull(time: js.BigInt): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def parseFull(time: DateTuple): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def parseFull(time: ProtobufDate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFull")(time.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   trait DateStruct extends StObject {
@@ -296,20 +290,16 @@ object mod {
   }
   object DateStruct {
     
-    @scala.inline
-    def apply(nanos: Double, seconds: Double): DateStruct = {
+    inline def apply(nanos: Double, seconds: Double): DateStruct = {
       val __obj = js.Dynamic.literal(nanos = nanos.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateStruct]
     }
     
-    @scala.inline
-    implicit class DateStructMutableBuilder[Self <: DateStruct] (val x: Self) extends AnyVal {
+    extension [Self <: DateStruct](x: Self) {
       
-      @scala.inline
-      def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+      inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,17 +311,14 @@ object mod {
   }
   object Long {
     
-    @scala.inline
-    def apply(toNumber: () => Double): Long = {
+    inline def apply(toNumber: () => Double): Long = {
       val __obj = js.Dynamic.literal(toNumber = js.Any.fromFunction0(toNumber))
       __obj.asInstanceOf[Long]
     }
     
-    @scala.inline
-    implicit class LongMutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
+    extension [Self <: Long](x: Self) {
       
-      @scala.inline
-      def setToNumber(value: () => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction0(value))
+      inline def setToNumber(value: () => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction0(value))
     }
   }
   
@@ -343,26 +330,20 @@ object mod {
   }
   object ProtobufDate {
     
-    @scala.inline
-    def apply(): ProtobufDate = {
+    inline def apply(): ProtobufDate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProtobufDate]
     }
     
-    @scala.inline
-    implicit class ProtobufDateMutableBuilder[Self <: ProtobufDate] (val x: Self) extends AnyVal {
+    extension [Self <: ProtobufDate](x: Self) {
       
-      @scala.inline
-      def setNanos(value: Double | String): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+      inline def setNanos(value: Double | String): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+      inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
       
-      @scala.inline
-      def setSeconds(value: Double | String | Long): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double | String | Long): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+      inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     }
   }
 }

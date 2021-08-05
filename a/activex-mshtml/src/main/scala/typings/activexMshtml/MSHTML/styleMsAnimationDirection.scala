@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleMsAnimationDirection extends StObject
 object styleMsAnimationDirection {
   
-  @scala.inline
-  def styleMsAnimationDirectionAlternate: `1` = 1.asInstanceOf[`1`]
+  inline def styleMsAnimationDirectionAlternate: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleMsAnimationDirectionAlternateReverse: `3` = 3.asInstanceOf[`3`]
+  inline def styleMsAnimationDirectionAlternateReverse: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleMsAnimationDirectionNormal: `0` = 0.asInstanceOf[`0`]
+  inline def styleMsAnimationDirectionNormal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleMsAnimationDirectionNotSet: `4` = 4.asInstanceOf[`4`]
+  inline def styleMsAnimationDirectionNotSet: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def styleMsAnimationDirectionReverse: `2` = 2.asInstanceOf[`2`]
+  inline def styleMsAnimationDirectionReverse: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleMsAnimationDirection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleMsAnimationDirection_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

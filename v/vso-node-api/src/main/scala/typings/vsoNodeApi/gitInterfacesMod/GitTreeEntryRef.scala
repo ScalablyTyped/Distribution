@@ -38,8 +38,7 @@ trait GitTreeEntryRef extends StObject {
 }
 object GitTreeEntryRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gitObjectType: GitObjectType,
     mode: String,
     objectId: String,
@@ -51,25 +50,18 @@ object GitTreeEntryRef {
     __obj.asInstanceOf[GitTreeEntryRef]
   }
   
-  @scala.inline
-  implicit class GitTreeEntryRefMutableBuilder[Self <: GitTreeEntryRef] (val x: Self) extends AnyVal {
+  extension [Self <: GitTreeEntryRef](x: Self) {
     
-    @scala.inline
-    def setGitObjectType(value: GitObjectType): Self = StObject.set(x, "gitObjectType", value.asInstanceOf[js.Any])
+    inline def setGitObjectType(value: GitObjectType): Self = StObject.set(x, "gitObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+    inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

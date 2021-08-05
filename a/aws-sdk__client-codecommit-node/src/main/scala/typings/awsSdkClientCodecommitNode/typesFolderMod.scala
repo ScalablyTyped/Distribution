@@ -25,32 +25,24 @@ object typesFolderMod {
   }
   object Folder {
     
-    @scala.inline
-    def apply(): Folder = {
+    inline def apply(): Folder = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Folder]
     }
     
-    @scala.inline
-    implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+    extension [Self <: Folder](x: Self) {
       
-      @scala.inline
-      def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+      inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+      inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+      inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
       
-      @scala.inline
-      def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+      inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
+      inline def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
     }
   }
   

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontLine extends StObject
 object FontLine {
   
-  @scala.inline
-  def `line-through`: typings.googleAppsScript.googleAppsScriptStrings.`line-through` = "line-through".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.`line-through`]
+  inline def `line-through`: typings.googleAppsScript.googleAppsScriptStrings.`line-through` = "line-through".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.`line-through`]
   
-  @scala.inline
-  def none: typings.googleAppsScript.googleAppsScriptStrings.none = "none".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.none]
+  inline def none: typings.googleAppsScript.googleAppsScriptStrings.none = "none".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.none]
   
-  @scala.inline
-  def underline: typings.googleAppsScript.googleAppsScriptStrings.underline = "underline".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.underline]
+  inline def underline: typings.googleAppsScript.googleAppsScriptStrings.underline = "underline".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.underline]
 }

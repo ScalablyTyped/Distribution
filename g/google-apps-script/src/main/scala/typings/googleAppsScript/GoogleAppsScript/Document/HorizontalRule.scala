@@ -14,8 +14,7 @@ trait HorizontalRule
      with Element
 object HorizontalRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,

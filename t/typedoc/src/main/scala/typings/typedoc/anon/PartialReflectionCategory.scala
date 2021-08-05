@@ -19,37 +19,29 @@ trait PartialReflectionCategory extends StObject {
 }
 object PartialReflectionCategory {
   
-  @scala.inline
-  def apply(): PartialReflectionCategory = {
+  inline def apply(): PartialReflectionCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialReflectionCategory]
   }
   
-  @scala.inline
-  implicit class PartialReflectionCategoryMutableBuilder[Self <: PartialReflectionCategory] (val x: Self) extends AnyVal {
+  extension [Self <: PartialReflectionCategory](x: Self) {
     
-    @scala.inline
-    def setChildren(
+    inline def setChildren(
       value: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: std.Array<typedoc.typedoc/dist/lib/models/reflections/abstract.Reflection>[number]['id'] */ js.Any
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(
+    inline def setChildrenVarargs(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: std.Array<typedoc.typedoc/dist/lib/models/reflections/abstract.Reflection>[number]['id'] */ js.Any)*
     ): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: ModelToObject[String] | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ModelToObject[String] | String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTitleVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "title", js.Array(value :_*))
   }
 }

@@ -25,34 +25,25 @@ trait ParticleEmitterFrameConfig extends StObject {
 }
 object ParticleEmitterFrameConfig {
   
-  @scala.inline
-  def apply(): ParticleEmitterFrameConfig = {
+  inline def apply(): ParticleEmitterFrameConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParticleEmitterFrameConfig]
   }
   
-  @scala.inline
-  implicit class ParticleEmitterFrameConfigMutableBuilder[Self <: ParticleEmitterFrameConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParticleEmitterFrameConfig](x: Self) {
     
-    @scala.inline
-    def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
-    @scala.inline
-    def setFrames(value: Double | (js.Array[Double | Frame | String]) | String | Frame): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: Double | (js.Array[Double | Frame | String]) | String | Frame): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: (Double | Frame | String)*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: (Double | Frame | String)*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ trait CurrentPlaybackResponse
      with PlaybackObject
 object CurrentPlaybackResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     device: UserDevice,
     is_playing: Boolean,
     repeat_state: off | track | context,

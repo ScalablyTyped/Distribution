@@ -15,25 +15,19 @@ trait FeedbackDeleted extends StObject {
 }
 object FeedbackDeleted {
   
-  @scala.inline
-  def apply(): FeedbackDeleted = {
+  inline def apply(): FeedbackDeleted = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeedbackDeleted]
   }
   
-  @scala.inline
-  implicit class FeedbackDeletedMutableBuilder[Self <: FeedbackDeleted] (val x: Self) extends AnyVal {
+  extension [Self <: FeedbackDeleted](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

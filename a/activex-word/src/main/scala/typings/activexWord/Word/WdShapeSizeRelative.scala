@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object WdShapeSizeRelative {
   
-  @scala.inline
-  def wdShapeSizeRelativeNone: `-999999` = -999999.asInstanceOf[`-999999`]
+  inline def wdShapeSizeRelativeNone: `-999999` = -999999.asInstanceOf[`-999999`]
 }

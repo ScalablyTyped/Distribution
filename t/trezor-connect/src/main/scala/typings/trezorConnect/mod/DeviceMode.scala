@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceMode extends StObject
 object DeviceMode {
   
-  @scala.inline
-  def bootloader: typings.trezorConnect.trezorConnectStrings.bootloader = "bootloader".asInstanceOf[typings.trezorConnect.trezorConnectStrings.bootloader]
+  inline def bootloader: typings.trezorConnect.trezorConnectStrings.bootloader = "bootloader".asInstanceOf[typings.trezorConnect.trezorConnectStrings.bootloader]
   
-  @scala.inline
-  def initialize: typings.trezorConnect.trezorConnectStrings.initialize = "initialize".asInstanceOf[typings.trezorConnect.trezorConnectStrings.initialize]
+  inline def initialize: typings.trezorConnect.trezorConnectStrings.initialize = "initialize".asInstanceOf[typings.trezorConnect.trezorConnectStrings.initialize]
   
-  @scala.inline
-  def normal: typings.trezorConnect.trezorConnectStrings.normal = "normal".asInstanceOf[typings.trezorConnect.trezorConnectStrings.normal]
+  inline def normal: typings.trezorConnect.trezorConnectStrings.normal = "normal".asInstanceOf[typings.trezorConnect.trezorConnectStrings.normal]
   
-  @scala.inline
-  def seedless: typings.trezorConnect.trezorConnectStrings.seedless = "seedless".asInstanceOf[typings.trezorConnect.trezorConnectStrings.seedless]
+  inline def seedless: typings.trezorConnect.trezorConnectStrings.seedless = "seedless".asInstanceOf[typings.trezorConnect.trezorConnectStrings.seedless]
 }

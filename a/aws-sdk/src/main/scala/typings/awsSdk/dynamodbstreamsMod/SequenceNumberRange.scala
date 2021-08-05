@@ -18,25 +18,19 @@ trait SequenceNumberRange extends StObject {
 }
 object SequenceNumberRange {
   
-  @scala.inline
-  def apply(): SequenceNumberRange = {
+  inline def apply(): SequenceNumberRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SequenceNumberRange]
   }
   
-  @scala.inline
-  implicit class SequenceNumberRangeMutableBuilder[Self <: SequenceNumberRange] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceNumberRange](x: Self) {
     
-    @scala.inline
-    def setEndingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "EndingSequenceNumber", value.asInstanceOf[js.Any])
+    inline def setEndingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "EndingSequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndingSequenceNumberUndefined: Self = StObject.set(x, "EndingSequenceNumber", js.undefined)
+    inline def setEndingSequenceNumberUndefined: Self = StObject.set(x, "EndingSequenceNumber", js.undefined)
     
-    @scala.inline
-    def setStartingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
+    inline def setStartingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
+    inline def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
   }
 }

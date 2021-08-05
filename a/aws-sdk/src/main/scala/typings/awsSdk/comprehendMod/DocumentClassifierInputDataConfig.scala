@@ -28,40 +28,29 @@ trait DocumentClassifierInputDataConfig extends StObject {
 }
 object DocumentClassifierInputDataConfig {
   
-  @scala.inline
-  def apply(): DocumentClassifierInputDataConfig = {
+  inline def apply(): DocumentClassifierInputDataConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentClassifierInputDataConfig]
   }
   
-  @scala.inline
-  implicit class DocumentClassifierInputDataConfigMutableBuilder[Self <: DocumentClassifierInputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentClassifierInputDataConfig](x: Self) {
     
-    @scala.inline
-    def setAugmentedManifests(value: DocumentClassifierAugmentedManifestsList): Self = StObject.set(x, "AugmentedManifests", value.asInstanceOf[js.Any])
+    inline def setAugmentedManifests(value: DocumentClassifierAugmentedManifestsList): Self = StObject.set(x, "AugmentedManifests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAugmentedManifestsUndefined: Self = StObject.set(x, "AugmentedManifests", js.undefined)
+    inline def setAugmentedManifestsUndefined: Self = StObject.set(x, "AugmentedManifests", js.undefined)
     
-    @scala.inline
-    def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value :_*))
+    inline def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value :_*))
     
-    @scala.inline
-    def setDataFormat(value: DocumentClassifierDataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: DocumentClassifierDataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFormatUndefined: Self = StObject.set(x, "DataFormat", js.undefined)
+    inline def setDataFormatUndefined: Self = StObject.set(x, "DataFormat", js.undefined)
     
-    @scala.inline
-    def setLabelDelimiter(value: LabelDelimiter): Self = StObject.set(x, "LabelDelimiter", value.asInstanceOf[js.Any])
+    inline def setLabelDelimiter(value: LabelDelimiter): Self = StObject.set(x, "LabelDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelDelimiterUndefined: Self = StObject.set(x, "LabelDelimiter", js.undefined)
+    inline def setLabelDelimiterUndefined: Self = StObject.set(x, "LabelDelimiter", js.undefined)
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
+    inline def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
   }
 }

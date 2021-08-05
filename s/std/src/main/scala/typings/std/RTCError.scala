@@ -22,8 +22,7 @@ trait RTCError
 }
 object RTCError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ABORT_ERR: Double,
     DATA_CLONE_ERR: Double,
     DOMSTRING_SIZE_ERR: Double,
@@ -58,40 +57,28 @@ object RTCError {
     __obj.asInstanceOf[RTCError]
   }
   
-  @scala.inline
-  implicit class RTCErrorMutableBuilder[Self <: RTCError] (val x: Self) extends AnyVal {
+  extension [Self <: RTCError](x: Self) {
     
-    @scala.inline
-    def setErrorDetail(value: RTCErrorDetailType): Self = StObject.set(x, "errorDetail", value.asInstanceOf[js.Any])
+    inline def setErrorDetail(value: RTCErrorDetailType): Self = StObject.set(x, "errorDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRequestStatusCode(value: Double): Self = StObject.set(x, "httpRequestStatusCode", value.asInstanceOf[js.Any])
+    inline def setHttpRequestStatusCode(value: Double): Self = StObject.set(x, "httpRequestStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRequestStatusCodeNull: Self = StObject.set(x, "httpRequestStatusCode", null)
+    inline def setHttpRequestStatusCodeNull: Self = StObject.set(x, "httpRequestStatusCode", null)
     
-    @scala.inline
-    def setReceivedAlert(value: Double): Self = StObject.set(x, "receivedAlert", value.asInstanceOf[js.Any])
+    inline def setReceivedAlert(value: Double): Self = StObject.set(x, "receivedAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedAlertNull: Self = StObject.set(x, "receivedAlert", null)
+    inline def setReceivedAlertNull: Self = StObject.set(x, "receivedAlert", null)
     
-    @scala.inline
-    def setSctpCauseCode(value: Double): Self = StObject.set(x, "sctpCauseCode", value.asInstanceOf[js.Any])
+    inline def setSctpCauseCode(value: Double): Self = StObject.set(x, "sctpCauseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSctpCauseCodeNull: Self = StObject.set(x, "sctpCauseCode", null)
+    inline def setSctpCauseCodeNull: Self = StObject.set(x, "sctpCauseCode", null)
     
-    @scala.inline
-    def setSdpLineNumber(value: Double): Self = StObject.set(x, "sdpLineNumber", value.asInstanceOf[js.Any])
+    inline def setSdpLineNumber(value: Double): Self = StObject.set(x, "sdpLineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdpLineNumberNull: Self = StObject.set(x, "sdpLineNumber", null)
+    inline def setSdpLineNumberNull: Self = StObject.set(x, "sdpLineNumber", null)
     
-    @scala.inline
-    def setSentAlert(value: Double): Self = StObject.set(x, "sentAlert", value.asInstanceOf[js.Any])
+    inline def setSentAlert(value: Double): Self = StObject.set(x, "sentAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentAlertNull: Self = StObject.set(x, "sentAlert", null)
+    inline def setSentAlertNull: Self = StObject.set(x, "sentAlert", null)
   }
 }

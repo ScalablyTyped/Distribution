@@ -70,8 +70,7 @@ object BitmapText {
   }
   object BitmapFontCharacterData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       centerX: Double,
       centerY: Double,
       data: js.Object,
@@ -87,38 +86,27 @@ object BitmapText {
       __obj.asInstanceOf[BitmapFontCharacterData]
     }
     
-    @scala.inline
-    implicit class BitmapFontCharacterDataMutableBuilder[Self <: BitmapFontCharacterData] (val x: Self) extends AnyVal {
+    extension [Self <: BitmapFontCharacterData](x: Self) {
       
-      @scala.inline
-      def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+      inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+      inline def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKerning(value: StringDictionary[Double]): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+      inline def setKerning(value: StringDictionary[Double]): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+      inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+      inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,8 +142,7 @@ object BitmapText {
   }
   object BitmapFontData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chars: NumberDictionary[BitmapFontCharacterData],
       font: String,
       lineHeight: Double,
@@ -166,23 +153,17 @@ object BitmapText {
       __obj.asInstanceOf[BitmapFontData]
     }
     
-    @scala.inline
-    implicit class BitmapFontDataMutableBuilder[Self <: BitmapFontData] (val x: Self) extends AnyVal {
+    extension [Self <: BitmapFontData](x: Self) {
       
-      @scala.inline
-      def setChars(value: NumberDictionary[BitmapFontCharacterData]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: NumberDictionary[BitmapFontCharacterData]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetroFont(value: Boolean): Self = StObject.set(x, "retroFont", value.asInstanceOf[js.Any])
+      inline def setRetroFont(value: Boolean): Self = StObject.set(x, "retroFont", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,32 +188,24 @@ object BitmapText {
   }
   object BitmapTextConfig {
     
-    @scala.inline
-    def apply(): BitmapTextConfig = {
+    inline def apply(): BitmapTextConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BitmapTextConfig]
     }
     
-    @scala.inline
-    implicit class BitmapTextConfigMutableBuilder[Self <: BitmapTextConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BitmapTextConfig](x: Self) {
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double | `false`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double | `false`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -250,20 +223,16 @@ object BitmapText {
   }
   object BitmapTextSize {
     
-    @scala.inline
-    def apply(global: GlobalBitmapTextSize, local: LocalBitmapTextSize): BitmapTextSize = {
+    inline def apply(global: GlobalBitmapTextSize, local: LocalBitmapTextSize): BitmapTextSize = {
       val __obj = js.Dynamic.literal(global = global.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
       __obj.asInstanceOf[BitmapTextSize]
     }
     
-    @scala.inline
-    implicit class BitmapTextSizeMutableBuilder[Self <: BitmapTextSize] (val x: Self) extends AnyVal {
+    extension [Self <: BitmapTextSize](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: GlobalBitmapTextSize): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: GlobalBitmapTextSize): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocal(value: LocalBitmapTextSize): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: LocalBitmapTextSize): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     }
   }
   
@@ -318,8 +287,7 @@ object BitmapText {
   }
   object DisplayCallbackConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       charCode: Double,
       data: js.Any,
       index: Double,
@@ -334,35 +302,25 @@ object BitmapText {
       __obj.asInstanceOf[DisplayCallbackConfig]
     }
     
-    @scala.inline
-    implicit class DisplayCallbackConfigMutableBuilder[Self <: DisplayCallbackConfig] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayCallbackConfig](x: Self) {
       
-      @scala.inline
-      def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: DynamicBitmapText): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: DynamicBitmapText): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTint(value: TintConfig): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+      inline def setTint(value: TintConfig): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -393,26 +351,20 @@ object BitmapText {
   }
   object GlobalBitmapTextSize {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): GlobalBitmapTextSize = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): GlobalBitmapTextSize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalBitmapTextSize]
     }
     
-    @scala.inline
-    implicit class GlobalBitmapTextSizeMutableBuilder[Self <: GlobalBitmapTextSize] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalBitmapTextSize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -447,8 +399,7 @@ object BitmapText {
   }
   object JSONBitmapText {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       align: integer,
       alpha: Double,
       blendMode: integer | String,
@@ -484,23 +435,17 @@ object BitmapText {
       __obj.asInstanceOf[JSONBitmapText]
     }
     
-    @scala.inline
-    implicit class JSONBitmapTextMutableBuilder[Self <: JSONBitmapText] (val x: Self) extends AnyVal {
+    extension [Self <: JSONBitmapText](x: Self) {
       
-      @scala.inline
-      def setAlign(value: integer): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: integer): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -531,26 +476,20 @@ object BitmapText {
   }
   object LocalBitmapTextSize {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): LocalBitmapTextSize = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): LocalBitmapTextSize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalBitmapTextSize]
     }
     
-    @scala.inline
-    implicit class LocalBitmapTextSizeMutableBuilder[Self <: LocalBitmapTextSize] (val x: Self) extends AnyVal {
+    extension [Self <: LocalBitmapTextSize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -612,8 +551,7 @@ object BitmapText {
   }
   object RetroFontConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chars: String,
       charsPerRow: Double,
       height: Double,
@@ -633,38 +571,27 @@ object BitmapText {
       __obj.asInstanceOf[RetroFontConfig]
     }
     
-    @scala.inline
-    implicit class RetroFontConfigMutableBuilder[Self <: RetroFontConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RetroFontConfig](x: Self) {
       
-      @scala.inline
-      def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsPerRow(value: Double): Self = StObject.set(x, "charsPerRow", value.asInstanceOf[js.Any])
+      inline def setCharsPerRow(value: Double): Self = StObject.set(x, "charsPerRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+      inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetDotx(value: Double): Self = StObject.set(x, "offset.x", value.asInstanceOf[js.Any])
+      inline def setOffsetDotx(value: Double): Self = StObject.set(x, "offset.x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetDoty(value: Double): Self = StObject.set(x, "offset.y", value.asInstanceOf[js.Any])
+      inline def setOffsetDoty(value: Double): Self = StObject.set(x, "offset.y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingDotx(value: Double): Self = StObject.set(x, "spacing.x", value.asInstanceOf[js.Any])
+      inline def setSpacingDotx(value: Double): Self = StObject.set(x, "spacing.x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingDoty(value: Double): Self = StObject.set(x, "spacing.y", value.asInstanceOf[js.Any])
+      inline def setSpacingDoty(value: Double): Self = StObject.set(x, "spacing.y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -692,26 +619,20 @@ object BitmapText {
   }
   object TintConfig {
     
-    @scala.inline
-    def apply(bottomLeft: Double, bottomRight: Double, topLeft: Double, topRight: Double): TintConfig = {
+    inline def apply(bottomLeft: Double, bottomRight: Double, topLeft: Double, topRight: Double): TintConfig = {
       val __obj = js.Dynamic.literal(bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any])
       __obj.asInstanceOf[TintConfig]
     }
     
-    @scala.inline
-    implicit class TintConfigMutableBuilder[Self <: TintConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TintConfig](x: Self) {
       
-      @scala.inline
-      def setBottomLeft(value: Double): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
+      inline def setBottomLeft(value: Double): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomRight(value: Double): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
+      inline def setBottomRight(value: Double): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLeft(value: Double): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
+      inline def setTopLeft(value: Double): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopRight(value: Double): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
+      inline def setTopRight(value: Double): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
     }
   }
 }

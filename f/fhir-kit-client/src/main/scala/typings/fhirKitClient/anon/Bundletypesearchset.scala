@@ -105,119 +105,82 @@ trait Bundletypesearchset extends StObject {
 }
 object Bundletypesearchset {
   
-  @scala.inline
-  def apply(`type`: code & searchset): Bundletypesearchset = {
+  inline def apply(`type`: code & searchset): Bundletypesearchset = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundletypesearchset]
   }
   
-  @scala.inline
-  implicit class BundletypesearchsetMutableBuilder[Self <: Bundletypesearchset] (val x: Self) extends AnyVal {
+  extension [Self <: Bundletypesearchset](x: Self) {
     
-    @scala.inline
-    def setEntry(value: js.Array[BundleEntry]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: js.Array[BundleEntry]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+    inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
     
-    @scala.inline
-    def setEntryVarargs(value: BundleEntry*): Self = StObject.set(x, "entry", js.Array(value :_*))
+    inline def setEntryVarargs(value: BundleEntry*): Self = StObject.set(x, "entry", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setImplicitRules(value: uri): Self = StObject.set(x, "implicitRules", value.asInstanceOf[js.Any])
+    inline def setImplicitRules(value: uri): Self = StObject.set(x, "implicitRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitRulesUndefined: Self = StObject.set(x, "implicitRules", js.undefined)
+    inline def setImplicitRulesUndefined: Self = StObject.set(x, "implicitRules", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLink(value: js.Array[BundleLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Array[BundleLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: BundleLink*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: BundleLink*): Self = StObject.set(x, "link", js.Array(value :_*))
     
-    @scala.inline
-    def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: code): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: code): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setTotal(value: unsignedInt): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: unsignedInt): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def setType(value: code & searchset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code & searchset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+    inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
     
-    @scala.inline
-    def set_implicitRules(value: Element): Self = StObject.set(x, "_implicitRules", value.asInstanceOf[js.Any])
+    inline def set_implicitRules(value: Element): Self = StObject.set(x, "_implicitRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_implicitRulesUndefined: Self = StObject.set(x, "_implicitRules", js.undefined)
+    inline def set_implicitRulesUndefined: Self = StObject.set(x, "_implicitRules", js.undefined)
     
-    @scala.inline
-    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
+    inline def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
+    inline def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
-    @scala.inline
-    def set_resourceType(value: Element): Self = StObject.set(x, "_resourceType", value.asInstanceOf[js.Any])
+    inline def set_resourceType(value: Element): Self = StObject.set(x, "_resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_resourceTypeUndefined: Self = StObject.set(x, "_resourceType", js.undefined)
+    inline def set_resourceTypeUndefined: Self = StObject.set(x, "_resourceType", js.undefined)
     
-    @scala.inline
-    def set_total(value: Element): Self = StObject.set(x, "_total", value.asInstanceOf[js.Any])
+    inline def set_total(value: Element): Self = StObject.set(x, "_total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_totalUndefined: Self = StObject.set(x, "_total", js.undefined)
+    inline def set_totalUndefined: Self = StObject.set(x, "_total", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

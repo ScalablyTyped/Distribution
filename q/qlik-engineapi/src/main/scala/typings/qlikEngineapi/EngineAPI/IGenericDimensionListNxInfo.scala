@@ -17,16 +17,13 @@ trait IGenericDimensionListNxInfo
 }
 object IGenericDimensionListNxInfo {
   
-  @scala.inline
-  def apply(): IGenericDimensionListNxInfo = {
+  inline def apply(): IGenericDimensionListNxInfo = {
     val __obj = js.Dynamic.literal(qType = "DimensionList")
     __obj.asInstanceOf[IGenericDimensionListNxInfo]
   }
   
-  @scala.inline
-  implicit class IGenericDimensionListNxInfoMutableBuilder[Self <: IGenericDimensionListNxInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericDimensionListNxInfo](x: Self) {
     
-    @scala.inline
-    def setQType(value: DimensionList): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: DimensionList): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

@@ -18,41 +18,30 @@ object anon {
   }
   object Absolute {
     
-    @scala.inline
-    def apply(): Absolute = {
+    inline def apply(): Absolute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Absolute]
     }
     
-    @scala.inline
-    implicit class AbsoluteMutableBuilder[Self <: Absolute] (val x: Self) extends AnyVal {
+    extension [Self <: Absolute](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+      inline def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingNull: Self = StObject.set(x, "heading", null)
+      inline def setHeadingNull: Self = StObject.set(x, "heading", null)
       
-      @scala.inline
-      def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+      inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+      inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
       
-      @scala.inline
-      def setPathToSlugField(value: String): Self = StObject.set(x, "pathToSlugField", value.asInstanceOf[js.Any])
+      inline def setPathToSlugField(value: String): Self = StObject.set(x, "pathToSlugField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathToSlugFieldUndefined: Self = StObject.set(x, "pathToSlugField", js.undefined)
+      inline def setPathToSlugFieldUndefined: Self = StObject.set(x, "pathToSlugField", js.undefined)
     }
   }
 }

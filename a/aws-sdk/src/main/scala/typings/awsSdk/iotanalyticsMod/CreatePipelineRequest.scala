@@ -23,31 +23,23 @@ trait CreatePipelineRequest extends StObject {
 }
 object CreatePipelineRequest {
   
-  @scala.inline
-  def apply(pipelineActivities: PipelineActivities, pipelineName: PipelineName): CreatePipelineRequest = {
+  inline def apply(pipelineActivities: PipelineActivities, pipelineName: PipelineName): CreatePipelineRequest = {
     val __obj = js.Dynamic.literal(pipelineActivities = pipelineActivities.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePipelineRequest]
   }
   
-  @scala.inline
-  implicit class CreatePipelineRequestMutableBuilder[Self <: CreatePipelineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePipelineRequest](x: Self) {
     
-    @scala.inline
-    def setPipelineActivities(value: PipelineActivities): Self = StObject.set(x, "pipelineActivities", value.asInstanceOf[js.Any])
+    inline def setPipelineActivities(value: PipelineActivities): Self = StObject.set(x, "pipelineActivities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "pipelineActivities", js.Array(value :_*))
+    inline def setPipelineActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "pipelineActivities", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

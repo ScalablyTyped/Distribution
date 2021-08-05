@@ -22,20 +22,16 @@ object typesSelectObjectContentOutputMod {
   }
   object SelectObjectContentOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): SelectObjectContentOutput = {
+    inline def apply($metadata: ResponseMetadata): SelectObjectContentOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectObjectContentOutput]
     }
     
-    @scala.inline
-    implicit class SelectObjectContentOutputMutableBuilder[Self <: SelectObjectContentOutput] (val x: Self) extends AnyVal {
+    extension [Self <: SelectObjectContentOutput](x: Self) {
       
-      @scala.inline
-      def setPayload(value: UnmarshalledSelectObjectContentEventStream): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: UnmarshalledSelectObjectContentEventStream): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     }
   }
 }

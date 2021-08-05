@@ -10,6 +10,5 @@ object sampleCovarianceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(x: js.Array[Double], y: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(x: js.Array[Double], y: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -18,8 +18,7 @@ trait AppointmentStoreChange extends StObject {
 }
 object AppointmentStoreChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appointment: Appointment,
     appointmentCalendar: AppointmentCalendar,
     changeType: AppointmentStoreChangeType
@@ -28,16 +27,12 @@ object AppointmentStoreChange {
     __obj.asInstanceOf[AppointmentStoreChange]
   }
   
-  @scala.inline
-  implicit class AppointmentStoreChangeMutableBuilder[Self <: AppointmentStoreChange] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentStoreChange](x: Self) {
     
-    @scala.inline
-    def setAppointment(value: Appointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+    inline def setAppointment(value: Appointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppointmentCalendar(value: AppointmentCalendar): Self = StObject.set(x, "appointmentCalendar", value.asInstanceOf[js.Any])
+    inline def setAppointmentCalendar(value: AppointmentCalendar): Self = StObject.set(x, "appointmentCalendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeType(value: AppointmentStoreChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: AppointmentStoreChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
   }
 }

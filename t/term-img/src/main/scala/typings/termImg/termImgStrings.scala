@@ -8,6 +8,5 @@ object termImgStrings {
   
   @js.native
   sealed trait UnsupportedTerminalError extends StObject
-  @scala.inline
-  def UnsupportedTerminalError: UnsupportedTerminalError = "UnsupportedTerminalError".asInstanceOf[UnsupportedTerminalError]
+  inline def UnsupportedTerminalError: UnsupportedTerminalError = "UnsupportedTerminalError".asInstanceOf[UnsupportedTerminalError]
 }

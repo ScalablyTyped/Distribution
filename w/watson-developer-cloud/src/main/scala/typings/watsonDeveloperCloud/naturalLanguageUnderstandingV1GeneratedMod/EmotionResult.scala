@@ -15,28 +15,21 @@ trait EmotionResult extends StObject {
 }
 object EmotionResult {
   
-  @scala.inline
-  def apply(): EmotionResult = {
+  inline def apply(): EmotionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmotionResult]
   }
   
-  @scala.inline
-  implicit class EmotionResultMutableBuilder[Self <: EmotionResult] (val x: Self) extends AnyVal {
+  extension [Self <: EmotionResult](x: Self) {
     
-    @scala.inline
-    def setDocument(value: DocumentEmotionResults): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: DocumentEmotionResults): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setTargets(value: js.Array[TargetedEmotionResults]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: js.Array[TargetedEmotionResults]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+    inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
-    @scala.inline
-    def setTargetsVarargs(value: TargetedEmotionResults*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: TargetedEmotionResults*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

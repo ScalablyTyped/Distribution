@@ -33,8 +33,7 @@ trait XHierarchicalNameAccess
 }
 object XHierarchicalNameAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getByHierarchicalName: String => js.Any,
     hasByHierarchicalName: String => Boolean,
@@ -45,13 +44,10 @@ object XHierarchicalNameAccess {
     __obj.asInstanceOf[XHierarchicalNameAccess]
   }
   
-  @scala.inline
-  implicit class XHierarchicalNameAccessMutableBuilder[Self <: XHierarchicalNameAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchicalNameAccess](x: Self) {
     
-    @scala.inline
-    def setGetByHierarchicalName(value: String => js.Any): Self = StObject.set(x, "getByHierarchicalName", js.Any.fromFunction1(value))
+    inline def setGetByHierarchicalName(value: String => js.Any): Self = StObject.set(x, "getByHierarchicalName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasByHierarchicalName(value: String => Boolean): Self = StObject.set(x, "hasByHierarchicalName", js.Any.fromFunction1(value))
+    inline def setHasByHierarchicalName(value: String => Boolean): Self = StObject.set(x, "hasByHierarchicalName", js.Any.fromFunction1(value))
   }
 }

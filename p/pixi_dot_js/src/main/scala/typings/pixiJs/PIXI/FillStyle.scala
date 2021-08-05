@@ -64,8 +64,7 @@ trait FillStyle extends StObject {
 }
 object FillStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alpha: Double,
     color: Double,
     destroy: () => Unit,
@@ -78,28 +77,20 @@ object FillStyle {
     __obj.asInstanceOf[FillStyle]
   }
   
-  @scala.inline
-  implicit class FillStyleMutableBuilder[Self <: FillStyle] (val x: Self) extends AnyVal {
+  extension [Self <: FillStyle](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMatrix(value: Matrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: Matrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

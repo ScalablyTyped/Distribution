@@ -25,25 +25,19 @@ trait INxGroupTail extends StObject {
 }
 object INxGroupTail {
   
-  @scala.inline
-  def apply(): INxGroupTail = {
+  inline def apply(): INxGroupTail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INxGroupTail]
   }
   
-  @scala.inline
-  implicit class INxGroupTailMutableBuilder[Self <: INxGroupTail] (val x: Self) extends AnyVal {
+  extension [Self <: INxGroupTail](x: Self) {
     
-    @scala.inline
-    def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
+    inline def setQDown(value: Double): Self = StObject.set(x, "qDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDownUndefined: Self = StObject.set(x, "qDown", js.undefined)
+    inline def setQDownUndefined: Self = StObject.set(x, "qDown", js.undefined)
     
-    @scala.inline
-    def setQUp(value: Double): Self = StObject.set(x, "qUp", value.asInstanceOf[js.Any])
+    inline def setQUp(value: Double): Self = StObject.set(x, "qUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUpUndefined: Self = StObject.set(x, "qUp", js.undefined)
+    inline def setQUpUndefined: Self = StObject.set(x, "qUp", js.undefined)
   }
 }

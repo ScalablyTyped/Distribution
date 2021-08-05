@@ -38,49 +38,35 @@ trait BatchGetCustomDataIdentifierSummary extends StObject {
 }
 object BatchGetCustomDataIdentifierSummary {
   
-  @scala.inline
-  def apply(): BatchGetCustomDataIdentifierSummary = {
+  inline def apply(): BatchGetCustomDataIdentifierSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetCustomDataIdentifierSummary]
   }
   
-  @scala.inline
-  implicit class BatchGetCustomDataIdentifierSummaryMutableBuilder[Self <: BatchGetCustomDataIdentifierSummary] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetCustomDataIdentifierSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setDeleted(value: boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

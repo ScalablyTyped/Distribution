@@ -24,22 +24,17 @@ trait DatabaseRegistrationEvent
 }
 object DatabaseRegistrationEvent {
   
-  @scala.inline
-  def apply(Name: String, NewLocation: String, OldLocation: String, Source: XInterface): DatabaseRegistrationEvent = {
+  inline def apply(Name: String, NewLocation: String, OldLocation: String, Source: XInterface): DatabaseRegistrationEvent = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], NewLocation = NewLocation.asInstanceOf[js.Any], OldLocation = OldLocation.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseRegistrationEvent]
   }
   
-  @scala.inline
-  implicit class DatabaseRegistrationEventMutableBuilder[Self <: DatabaseRegistrationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseRegistrationEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewLocation(value: String): Self = StObject.set(x, "NewLocation", value.asInstanceOf[js.Any])
+    inline def setNewLocation(value: String): Self = StObject.set(x, "NewLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldLocation(value: String): Self = StObject.set(x, "OldLocation", value.asInstanceOf[js.Any])
+    inline def setOldLocation(value: String): Self = StObject.set(x, "OldLocation", value.asInstanceOf[js.Any])
   }
 }

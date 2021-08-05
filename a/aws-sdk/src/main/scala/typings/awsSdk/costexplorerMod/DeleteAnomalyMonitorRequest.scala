@@ -13,16 +13,13 @@ trait DeleteAnomalyMonitorRequest extends StObject {
 }
 object DeleteAnomalyMonitorRequest {
   
-  @scala.inline
-  def apply(MonitorArn: GenericString): DeleteAnomalyMonitorRequest = {
+  inline def apply(MonitorArn: GenericString): DeleteAnomalyMonitorRequest = {
     val __obj = js.Dynamic.literal(MonitorArn = MonitorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAnomalyMonitorRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAnomalyMonitorRequestMutableBuilder[Self <: DeleteAnomalyMonitorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAnomalyMonitorRequest](x: Self) {
     
-    @scala.inline
-    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
+    inline def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
   }
 }

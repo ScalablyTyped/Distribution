@@ -22,28 +22,21 @@ trait SchemaListStudentSubmissionsResponse extends StObject {
 }
 object SchemaListStudentSubmissionsResponse {
   
-  @scala.inline
-  def apply(): SchemaListStudentSubmissionsResponse = {
+  inline def apply(): SchemaListStudentSubmissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListStudentSubmissionsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListStudentSubmissionsResponseMutableBuilder[Self <: SchemaListStudentSubmissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListStudentSubmissionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setStudentSubmissions(value: js.Array[SchemaStudentSubmission]): Self = StObject.set(x, "studentSubmissions", value.asInstanceOf[js.Any])
+    inline def setStudentSubmissions(value: js.Array[SchemaStudentSubmission]): Self = StObject.set(x, "studentSubmissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentSubmissionsUndefined: Self = StObject.set(x, "studentSubmissions", js.undefined)
+    inline def setStudentSubmissionsUndefined: Self = StObject.set(x, "studentSubmissions", js.undefined)
     
-    @scala.inline
-    def setStudentSubmissionsVarargs(value: SchemaStudentSubmission*): Self = StObject.set(x, "studentSubmissions", js.Array(value :_*))
+    inline def setStudentSubmissionsVarargs(value: SchemaStudentSubmission*): Self = StObject.set(x, "studentSubmissions", js.Array(value :_*))
   }
 }

@@ -31,52 +31,37 @@ trait CanvasTooltipConfig
 }
 object CanvasTooltipConfig {
   
-  @scala.inline
-  def apply(): CanvasTooltipConfig = {
+  inline def apply(): CanvasTooltipConfig = {
     val __obj = js.Dynamic.literal(useHtml = false)
     __obj.asInstanceOf[CanvasTooltipConfig]
   }
   
-  @scala.inline
-  implicit class CanvasTooltipConfigMutableBuilder[Self <: CanvasTooltipConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasTooltipConfig](x: Self) {
     
-    @scala.inline
-    def setBoardStyle(value: background): Self = StObject.set(x, "boardStyle", value.asInstanceOf[js.Any])
+    inline def setBoardStyle(value: background): Self = StObject.set(x, "boardStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoardStyleUndefined: Self = StObject.set(x, "boardStyle", js.undefined)
+    inline def setBoardStyleUndefined: Self = StObject.set(x, "boardStyle", js.undefined)
     
-    @scala.inline
-    def setItemGap(value: Double): Self = StObject.set(x, "itemGap", value.asInstanceOf[js.Any])
+    inline def setItemGap(value: Double): Self = StObject.set(x, "itemGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemGapUndefined: Self = StObject.set(x, "itemGap", js.undefined)
+    inline def setItemGapUndefined: Self = StObject.set(x, "itemGap", js.undefined)
     
-    @scala.inline
-    def setNameStyle(value: text): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
+    inline def setNameStyle(value: text): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameStyleUndefined: Self = StObject.set(x, "nameStyle", js.undefined)
+    inline def setNameStyleUndefined: Self = StObject.set(x, "nameStyle", js.undefined)
     
-    @scala.inline
-    def setTitleStyle(value: text): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+    inline def setTitleStyle(value: text): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+    inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
-    @scala.inline
-    def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseHtml(value: `false`): Self = StObject.set(x, "useHtml", value.asInstanceOf[js.Any])
+    inline def setUseHtml(value: `false`): Self = StObject.set(x, "useHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStyle(value: text): Self = StObject.set(x, "valueStyle", value.asInstanceOf[js.Any])
+    inline def setValueStyle(value: text): Self = StObject.set(x, "valueStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueStyleUndefined: Self = StObject.set(x, "valueStyle", js.undefined)
+    inline def setValueStyleUndefined: Self = StObject.set(x, "valueStyle", js.undefined)
   }
 }

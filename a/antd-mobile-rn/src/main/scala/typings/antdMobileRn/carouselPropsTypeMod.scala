@@ -24,56 +24,40 @@ object carouselPropsTypeMod {
   }
   object CarouselPropsType {
     
-    @scala.inline
-    def apply(): CarouselPropsType = {
+    inline def apply(): CarouselPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselPropsType]
     }
     
-    @scala.inline
-    implicit class CarouselPropsTypeMutableBuilder[Self <: CarouselPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselPropsType](x: Self) {
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayInterval(value: Double): Self = StObject.set(x, "autoplayInterval", value.asInstanceOf[js.Any])
+      inline def setAutoplayInterval(value: Double): Self = StObject.set(x, "autoplayInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayIntervalUndefined: Self = StObject.set(x, "autoplayInterval", js.undefined)
+      inline def setAutoplayIntervalUndefined: Self = StObject.set(x, "autoplayInterval", js.undefined)
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+      inline def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
+      inline def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
       
-      @scala.inline
-      def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+      inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
+      inline def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
       
-      @scala.inline
-      def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
+      inline def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSlideWidthUndefined: Self = StObject.set(x, "initialSlideWidth", js.undefined)
+      inline def setInitialSlideWidthUndefined: Self = StObject.set(x, "initialSlideWidth", js.undefined)
       
-      @scala.inline
-      def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+      inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
 }

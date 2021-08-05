@@ -156,17 +156,14 @@ object typesInternalServerErrorExceptionMod {
   }
   object InternalServerErrorException {
     
-    @scala.inline
-    def apply(): InternalServerErrorException = {
+    inline def apply(): InternalServerErrorException = {
       val __obj = js.Dynamic.literal(name = "InternalServerErrorException")
       __obj.asInstanceOf[InternalServerErrorException]
     }
     
-    @scala.inline
-    implicit class InternalServerErrorExceptionMutableBuilder[Self <: InternalServerErrorException] (val x: Self) extends AnyVal {
+    extension [Self <: InternalServerErrorException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.InternalServerErrorException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -186,26 +183,20 @@ object typesInternalServerErrorExceptionMod {
   }
   object InternalServerErrorExceptionDetails {
     
-    @scala.inline
-    def apply(): InternalServerErrorExceptionDetails = {
+    inline def apply(): InternalServerErrorExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternalServerErrorExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InternalServerErrorExceptionDetailsMutableBuilder[Self <: InternalServerErrorExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InternalServerErrorExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
+      inline def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
+      inline def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
     }
   }
 }

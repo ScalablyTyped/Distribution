@@ -31,22 +31,17 @@ trait INxPatch extends StObject {
 }
 object INxPatch {
   
-  @scala.inline
-  def apply(qOp: PatchType, qPath: String, qValue: String): INxPatch = {
+  inline def apply(qOp: PatchType, qPath: String, qValue: String): INxPatch = {
     val __obj = js.Dynamic.literal(qOp = qOp.asInstanceOf[js.Any], qPath = qPath.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxPatch]
   }
   
-  @scala.inline
-  implicit class INxPatchMutableBuilder[Self <: INxPatch] (val x: Self) extends AnyVal {
+  extension [Self <: INxPatch](x: Self) {
     
-    @scala.inline
-    def setQOp(value: PatchType): Self = StObject.set(x, "qOp", value.asInstanceOf[js.Any])
+    inline def setQOp(value: PatchType): Self = StObject.set(x, "qOp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPath(value: String): Self = StObject.set(x, "qPath", value.asInstanceOf[js.Any])
+    inline def setQPath(value: String): Self = StObject.set(x, "qPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

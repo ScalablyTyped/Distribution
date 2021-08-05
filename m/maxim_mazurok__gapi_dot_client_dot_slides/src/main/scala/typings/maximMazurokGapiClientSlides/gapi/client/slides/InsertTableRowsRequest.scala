@@ -23,37 +23,27 @@ trait InsertTableRowsRequest extends StObject {
 }
 object InsertTableRowsRequest {
   
-  @scala.inline
-  def apply(): InsertTableRowsRequest = {
+  inline def apply(): InsertTableRowsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertTableRowsRequest]
   }
   
-  @scala.inline
-  implicit class InsertTableRowsRequestMutableBuilder[Self <: InsertTableRowsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTableRowsRequest](x: Self) {
     
-    @scala.inline
-    def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+    inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+    inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
     
-    @scala.inline
-    def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
+    inline def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertBelowUndefined: Self = StObject.set(x, "insertBelow", js.undefined)
+    inline def setInsertBelowUndefined: Self = StObject.set(x, "insertBelow", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
+    inline def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
+    inline def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
   }
 }

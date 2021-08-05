@@ -103,10 +103,8 @@ object CaseSwitchClauseSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(caseKeyword: ISyntaxToken, expression: IExpressionSyntax, colonToken: ISyntaxToken): typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(caseKeyword.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], colonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax]
+  inline def create(caseKeyword: ISyntaxToken, expression: IExpressionSyntax, colonToken: ISyntaxToken): typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(caseKeyword.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], colonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(expression: IExpressionSyntax): typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax]
+  inline def create1(expression: IExpressionSyntax): typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax]
 }

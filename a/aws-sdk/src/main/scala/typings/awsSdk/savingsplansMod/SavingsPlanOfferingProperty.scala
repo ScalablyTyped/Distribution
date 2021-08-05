@@ -18,25 +18,19 @@ trait SavingsPlanOfferingProperty extends StObject {
 }
 object SavingsPlanOfferingProperty {
   
-  @scala.inline
-  def apply(): SavingsPlanOfferingProperty = {
+  inline def apply(): SavingsPlanOfferingProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlanOfferingProperty]
   }
   
-  @scala.inline
-  implicit class SavingsPlanOfferingPropertyMutableBuilder[Self <: SavingsPlanOfferingProperty] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlanOfferingProperty](x: Self) {
     
-    @scala.inline
-    def setName(value: SavingsPlanOfferingPropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SavingsPlanOfferingPropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValue(value: JsonSafeFilterValueString): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: JsonSafeFilterValueString): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

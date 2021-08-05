@@ -18,25 +18,19 @@ trait Contributor extends StObject {
 }
 object Contributor {
   
-  @scala.inline
-  def apply(): Contributor = {
+  inline def apply(): Contributor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Contributor]
   }
   
-  @scala.inline
-  implicit class ContributorMutableBuilder[Self <: Contributor] (val x: Self) extends AnyVal {
+  extension [Self <: Contributor](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: Long): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Long): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

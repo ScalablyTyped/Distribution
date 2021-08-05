@@ -17,31 +17,23 @@ trait Gamepads extends StObject {
 }
 object Gamepads {
   
-  @scala.inline
-  def apply(): Gamepads = {
+  inline def apply(): Gamepads = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Gamepads]
   }
   
-  @scala.inline
-  implicit class GamepadsMutableBuilder[Self <: Gamepads] (val x: Self) extends AnyVal {
+  extension [Self <: Gamepads](x: Self) {
     
-    @scala.inline
-    def setGamepads(value: GamePads): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
+    inline def setGamepads(value: GamePads): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamepadsUndefined: Self = StObject.set(x, "gamepads", js.undefined)
+    inline def setGamepadsUndefined: Self = StObject.set(x, "gamepads", js.undefined)
     
-    @scala.inline
-    def setKeyboard(value: Keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Keyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    @scala.inline
-    def setMouse(value: Mouse): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Mouse): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
+    inline def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
   }
 }

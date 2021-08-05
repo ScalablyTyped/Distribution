@@ -32,29 +32,22 @@ object typesGetAccountSettingsOutputMod {
   }
   object GetAccountSettingsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetAccountSettingsOutput = {
+    inline def apply($metadata: ResponseMetadata): GetAccountSettingsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAccountSettingsOutput]
     }
     
-    @scala.inline
-    implicit class GetAccountSettingsOutputMutableBuilder[Self <: GetAccountSettingsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetAccountSettingsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountLimit(value: UnmarshalledAccountLimit): Self = StObject.set(x, "AccountLimit", value.asInstanceOf[js.Any])
+      inline def setAccountLimit(value: UnmarshalledAccountLimit): Self = StObject.set(x, "AccountLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountLimitUndefined: Self = StObject.set(x, "AccountLimit", js.undefined)
+      inline def setAccountLimitUndefined: Self = StObject.set(x, "AccountLimit", js.undefined)
       
-      @scala.inline
-      def setAccountUsage(value: UnmarshalledAccountUsage): Self = StObject.set(x, "AccountUsage", value.asInstanceOf[js.Any])
+      inline def setAccountUsage(value: UnmarshalledAccountUsage): Self = StObject.set(x, "AccountUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountUsageUndefined: Self = StObject.set(x, "AccountUsage", js.undefined)
+      inline def setAccountUsageUndefined: Self = StObject.set(x, "AccountUsage", js.undefined)
     }
   }
 }

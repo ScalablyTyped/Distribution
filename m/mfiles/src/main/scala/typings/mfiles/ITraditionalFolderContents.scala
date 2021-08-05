@@ -14,22 +14,17 @@ trait ITraditionalFolderContents extends StObject {
 }
 object ITraditionalFolderContents {
   
-  @scala.inline
-  def apply(ID: Double, ObjectVersions: IObjectVersions, TraditionalFolders: ITraditionalFolders): ITraditionalFolderContents = {
+  inline def apply(ID: Double, ObjectVersions: IObjectVersions, TraditionalFolders: ITraditionalFolders): ITraditionalFolderContents = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], ObjectVersions = ObjectVersions.asInstanceOf[js.Any], TraditionalFolders = TraditionalFolders.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITraditionalFolderContents]
   }
   
-  @scala.inline
-  implicit class ITraditionalFolderContentsMutableBuilder[Self <: ITraditionalFolderContents] (val x: Self) extends AnyVal {
+  extension [Self <: ITraditionalFolderContents](x: Self) {
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersions(value: IObjectVersions): Self = StObject.set(x, "ObjectVersions", value.asInstanceOf[js.Any])
+    inline def setObjectVersions(value: IObjectVersions): Self = StObject.set(x, "ObjectVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraditionalFolders(value: ITraditionalFolders): Self = StObject.set(x, "TraditionalFolders", value.asInstanceOf[js.Any])
+    inline def setTraditionalFolders(value: ITraditionalFolders): Self = StObject.set(x, "TraditionalFolders", value.asInstanceOf[js.Any])
   }
 }

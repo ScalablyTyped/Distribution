@@ -23,31 +23,23 @@ trait DeleteRegistryResponse extends StObject {
 }
 object DeleteRegistryResponse {
   
-  @scala.inline
-  def apply(): DeleteRegistryResponse = {
+  inline def apply(): DeleteRegistryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRegistryResponse]
   }
   
-  @scala.inline
-  implicit class DeleteRegistryResponseMutableBuilder[Self <: DeleteRegistryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRegistryResponse](x: Self) {
     
-    @scala.inline
-    def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
+    inline def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
+    inline def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
+    inline def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: RegistryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RegistryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

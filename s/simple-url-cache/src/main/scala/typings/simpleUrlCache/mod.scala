@@ -29,8 +29,8 @@ object mod {
        with CacheStorage {
     def this(_url: String, _storageConfig: FileStorageConfig, _regexRules: CacheRules) = this()
     
-    /* CompleteClass */
-    /* private */ override def getCacheCategory(): String = js.native
+    /* private */ /* CompleteClass */
+    override def getCacheCategory(): String = js.native
     
     /* CompleteClass */
     override def getCategory(): String = js.native
@@ -38,8 +38,8 @@ object mod {
     /* CompleteClass */
     override def getCurrentUrl(): String = js.native
     
-    /* CompleteClass */
-    /* private */ override def getRegexTest(u: RegexRule): Boolean = js.native
+    /* private */ /* CompleteClass */
+    override def getRegexTest(u: RegexRule): Boolean = js.native
   }
   
   @JSImport("simple-url-cache", "RedisStorage")
@@ -50,8 +50,8 @@ object mod {
        with CacheStorage {
     def this(_url: String, _storageConfig: RedisStorageConfig, _regexRules: CacheRules) = this()
     
-    /* CompleteClass */
-    /* private */ override def getCacheCategory(): String = js.native
+    /* private */ /* CompleteClass */
+    override def getCacheCategory(): String = js.native
     
     /* CompleteClass */
     override def getCategory(): String = js.native
@@ -59,8 +59,8 @@ object mod {
     /* CompleteClass */
     override def getCurrentUrl(): String = js.native
     
-    /* CompleteClass */
-    /* private */ override def getRegexTest(u: RegexRule): Boolean = js.native
+    /* private */ /* CompleteClass */
+    override def getRegexTest(u: RegexRule): Boolean = js.native
   }
   
   trait CacheRules extends StObject {
@@ -75,8 +75,7 @@ object mod {
   }
   object CacheRules {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheAlways: js.Array[RegexRule],
       cacheMaxAge: js.Array[MaxAgeRegexRule],
       cacheNever: js.Array[RegexRule],
@@ -86,29 +85,21 @@ object mod {
       __obj.asInstanceOf[CacheRules]
     }
     
-    @scala.inline
-    implicit class CacheRulesMutableBuilder[Self <: CacheRules] (val x: Self) extends AnyVal {
+    extension [Self <: CacheRules](x: Self) {
       
-      @scala.inline
-      def setCacheAlways(value: js.Array[RegexRule]): Self = StObject.set(x, "cacheAlways", value.asInstanceOf[js.Any])
+      inline def setCacheAlways(value: js.Array[RegexRule]): Self = StObject.set(x, "cacheAlways", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheAlwaysVarargs(value: RegexRule*): Self = StObject.set(x, "cacheAlways", js.Array(value :_*))
+      inline def setCacheAlwaysVarargs(value: RegexRule*): Self = StObject.set(x, "cacheAlways", js.Array(value :_*))
       
-      @scala.inline
-      def setCacheMaxAge(value: js.Array[MaxAgeRegexRule]): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
+      inline def setCacheMaxAge(value: js.Array[MaxAgeRegexRule]): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheMaxAgeVarargs(value: MaxAgeRegexRule*): Self = StObject.set(x, "cacheMaxAge", js.Array(value :_*))
+      inline def setCacheMaxAgeVarargs(value: MaxAgeRegexRule*): Self = StObject.set(x, "cacheMaxAge", js.Array(value :_*))
       
-      @scala.inline
-      def setCacheNever(value: js.Array[RegexRule]): Self = StObject.set(x, "cacheNever", value.asInstanceOf[js.Any])
+      inline def setCacheNever(value: js.Array[RegexRule]): Self = StObject.set(x, "cacheNever", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheNeverVarargs(value: RegexRule*): Self = StObject.set(x, "cacheNever", js.Array(value :_*))
+      inline def setCacheNeverVarargs(value: RegexRule*): Self = StObject.set(x, "cacheNever", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,18 +111,15 @@ object mod {
   }
   object FileStorageConfig {
     
-    @scala.inline
-    def apply(dir: String, `type`: String): FileStorageConfig = {
+    inline def apply(dir: String, `type`: String): FileStorageConfig = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileStorageConfig]
     }
     
-    @scala.inline
-    implicit class FileStorageConfigMutableBuilder[Self <: FileStorageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FileStorageConfig](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,17 +131,14 @@ object mod {
   }
   object MaxAgeRegexRule {
     
-    @scala.inline
-    def apply(maxAge: Double, regex: RegExp): MaxAgeRegexRule = {
+    inline def apply(maxAge: Double, regex: RegExp): MaxAgeRegexRule = {
       val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxAgeRegexRule]
     }
     
-    @scala.inline
-    implicit class MaxAgeRegexRuleMutableBuilder[Self <: MaxAgeRegexRule] (val x: Self) extends AnyVal {
+    extension [Self <: MaxAgeRegexRule](x: Self) {
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,51 +162,37 @@ object mod {
   }
   object RedisStorageConfig {
     
-    @scala.inline
-    def apply(host: String, port: Double, `type`: String): RedisStorageConfig = {
+    inline def apply(host: String, port: Double, `type`: String): RedisStorageConfig = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RedisStorageConfig]
     }
     
-    @scala.inline
-    implicit class RedisStorageConfigMutableBuilder[Self <: RedisStorageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RedisStorageConfig](x: Self) {
       
-      @scala.inline
-      def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket_keepalive(value: Boolean): Self = StObject.set(x, "socket_keepalive", value.asInstanceOf[js.Any])
+      inline def setSocket_keepalive(value: Boolean): Self = StObject.set(x, "socket_keepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket_keepaliveUndefined: Self = StObject.set(x, "socket_keepalive", js.undefined)
+      inline def setSocket_keepaliveUndefined: Self = StObject.set(x, "socket_keepalive", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -231,17 +202,14 @@ object mod {
   }
   object RegexRule {
     
-    @scala.inline
-    def apply(regex: RegExp): RegexRule = {
+    inline def apply(regex: RegExp): RegexRule = {
       val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegexRule]
     }
     
-    @scala.inline
-    implicit class RegexRuleMutableBuilder[Self <: RegexRule] (val x: Self) extends AnyVal {
+    extension [Self <: RegexRule](x: Self) {
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,8 +227,7 @@ object mod {
     }
     object CacheCategory {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getCacheCategory: () => String,
         getCategory: () => String,
         getCurrentUrl: () => String,
@@ -270,20 +237,15 @@ object mod {
         __obj.asInstanceOf[CacheCategory]
       }
       
-      @scala.inline
-      implicit class CacheCategoryMutableBuilder[Self <: CacheCategory] (val x: Self) extends AnyVal {
+      extension [Self <: CacheCategory](x: Self) {
         
-        @scala.inline
-        def setGetCacheCategory(value: () => String): Self = StObject.set(x, "getCacheCategory", js.Any.fromFunction0(value))
+        inline def setGetCacheCategory(value: () => String): Self = StObject.set(x, "getCacheCategory", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
+        inline def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetCurrentUrl(value: () => String): Self = StObject.set(x, "getCurrentUrl", js.Any.fromFunction0(value))
+        inline def setGetCurrentUrl(value: () => String): Self = StObject.set(x, "getCurrentUrl", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetRegexTest(value: RegexRule => Boolean): Self = StObject.set(x, "getRegexTest", js.Any.fromFunction1(value))
+        inline def setGetRegexTest(value: RegexRule => Boolean): Self = StObject.set(x, "getRegexTest", js.Any.fromFunction1(value))
       }
     }
     
@@ -308,18 +270,15 @@ object mod {
     }
     object StorageConfig {
       
-      @scala.inline
-      def apply(`type`: String): StorageConfig = {
+      inline def apply(`type`: String): StorageConfig = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[StorageConfig]
       }
       
-      @scala.inline
-      implicit class StorageConfigMutableBuilder[Self <: StorageConfig] (val x: Self) extends AnyVal {
+      extension [Self <: StorageConfig](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }

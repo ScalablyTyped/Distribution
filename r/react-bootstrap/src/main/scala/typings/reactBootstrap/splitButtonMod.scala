@@ -38,53 +38,38 @@ object splitButtonMod {
   }
   object SplitButtonProps {
     
-    @scala.inline
-    def apply(id: String): SplitButtonProps = {
+    inline def apply(id: String): SplitButtonProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[SplitButtonProps]
     }
     
-    @scala.inline
-    implicit class SplitButtonPropsMutableBuilder[Self <: SplitButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SplitButtonProps](x: Self) {
       
-      @scala.inline
-      def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+      inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+      inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
       
-      @scala.inline
-      def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
+      inline def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
+      inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      @scala.inline
-      def setDropdownTitle(value: js.Any): Self = StObject.set(x, "dropdownTitle", value.asInstanceOf[js.Any])
+      inline def setDropdownTitle(value: js.Any): Self = StObject.set(x, "dropdownTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownTitleUndefined: Self = StObject.set(x, "dropdownTitle", js.undefined)
+      inline def setDropdownTitleUndefined: Self = StObject.set(x, "dropdownTitle", js.undefined)
       
-      @scala.inline
-      def setDropup(value: Boolean): Self = StObject.set(x, "dropup", value.asInstanceOf[js.Any])
+      inline def setDropup(value: Boolean): Self = StObject.set(x, "dropup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropupUndefined: Self = StObject.set(x, "dropup", js.undefined)
+      inline def setDropupUndefined: Self = StObject.set(x, "dropup", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRight(value: Boolean): Self = StObject.set(x, "pullRight", value.asInstanceOf[js.Any])
+      inline def setPullRight(value: Boolean): Self = StObject.set(x, "pullRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRightUndefined: Self = StObject.set(x, "pullRight", js.undefined)
+      inline def setPullRightUndefined: Self = StObject.set(x, "pullRight", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

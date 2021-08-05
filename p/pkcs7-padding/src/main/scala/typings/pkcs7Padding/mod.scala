@@ -11,13 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pad(data: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def pad(data: Buffer, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def pad(data: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pad(data: Buffer, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def unpad(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def unpad(data: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def unpad(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unpad(data: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

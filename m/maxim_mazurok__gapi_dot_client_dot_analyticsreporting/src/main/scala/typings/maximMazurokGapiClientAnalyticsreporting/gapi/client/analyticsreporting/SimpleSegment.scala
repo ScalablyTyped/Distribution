@@ -11,22 +11,17 @@ trait SimpleSegment extends StObject {
 }
 object SimpleSegment {
   
-  @scala.inline
-  def apply(): SimpleSegment = {
+  inline def apply(): SimpleSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleSegment]
   }
   
-  @scala.inline
-  implicit class SimpleSegmentMutableBuilder[Self <: SimpleSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleSegment](x: Self) {
     
-    @scala.inline
-    def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
+    inline def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
+    inline def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
     
-    @scala.inline
-    def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
+    inline def setOrFiltersForSegmentVarargs(value: OrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
   }
 }

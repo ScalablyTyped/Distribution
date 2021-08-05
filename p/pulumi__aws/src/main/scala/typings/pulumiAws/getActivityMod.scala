@@ -11,14 +11,10 @@ object getActivityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getActivity(): js.Promise[GetActivityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")().asInstanceOf[js.Promise[GetActivityResult]]
-  @scala.inline
-  def getActivity(args: Unit, opts: InvokeOptions): js.Promise[GetActivityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetActivityResult]]
-  @scala.inline
-  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetActivityResult]]
-  @scala.inline
-  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetActivityResult]]
+  inline def getActivity(): js.Promise[GetActivityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")().asInstanceOf[js.Promise[GetActivityResult]]
+  inline def getActivity(args: Unit, opts: InvokeOptions): js.Promise[GetActivityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetActivityResult]]
+  inline def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetActivityResult]]
+  inline def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetActivityResult]]
   
   trait GetActivityArgs extends StObject {
     
@@ -34,26 +30,20 @@ object getActivityMod {
   }
   object GetActivityArgs {
     
-    @scala.inline
-    def apply(): GetActivityArgs = {
+    inline def apply(): GetActivityArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetActivityArgs]
     }
     
-    @scala.inline
-    implicit class GetActivityArgsMutableBuilder[Self <: GetActivityArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetActivityArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -75,26 +65,20 @@ object getActivityMod {
   }
   object GetActivityResult {
     
-    @scala.inline
-    def apply(arn: String, creationDate: String, id: String, name: String): GetActivityResult = {
+    inline def apply(arn: String, creationDate: String, id: String, name: String): GetActivityResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetActivityResult]
     }
     
-    @scala.inline
-    implicit class GetActivityResultMutableBuilder[Self <: GetActivityResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetActivityResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

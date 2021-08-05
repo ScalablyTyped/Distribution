@@ -65,85 +65,59 @@ trait ServerLaunchConfiguration extends StObject {
 }
 object ServerLaunchConfiguration {
   
-  @scala.inline
-  def apply(): ServerLaunchConfiguration = {
+  inline def apply(): ServerLaunchConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerLaunchConfiguration]
   }
   
-  @scala.inline
-  implicit class ServerLaunchConfigurationMutableBuilder[Self <: ServerLaunchConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServerLaunchConfiguration](x: Self) {
     
-    @scala.inline
-    def setAssociatePublicIpAddress(value: AssociatePublicIpAddress): Self = StObject.set(x, "associatePublicIpAddress", value.asInstanceOf[js.Any])
+    inline def setAssociatePublicIpAddress(value: AssociatePublicIpAddress): Self = StObject.set(x, "associatePublicIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatePublicIpAddressUndefined: Self = StObject.set(x, "associatePublicIpAddress", js.undefined)
+    inline def setAssociatePublicIpAddressUndefined: Self = StObject.set(x, "associatePublicIpAddress", js.undefined)
     
-    @scala.inline
-    def setConfigureScript(value: S3Location): Self = StObject.set(x, "configureScript", value.asInstanceOf[js.Any])
+    inline def setConfigureScript(value: S3Location): Self = StObject.set(x, "configureScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigureScriptType(value: ScriptType): Self = StObject.set(x, "configureScriptType", value.asInstanceOf[js.Any])
+    inline def setConfigureScriptType(value: ScriptType): Self = StObject.set(x, "configureScriptType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigureScriptTypeUndefined: Self = StObject.set(x, "configureScriptType", js.undefined)
+    inline def setConfigureScriptTypeUndefined: Self = StObject.set(x, "configureScriptType", js.undefined)
     
-    @scala.inline
-    def setConfigureScriptUndefined: Self = StObject.set(x, "configureScript", js.undefined)
+    inline def setConfigureScriptUndefined: Self = StObject.set(x, "configureScript", js.undefined)
     
-    @scala.inline
-    def setEc2KeyName(value: EC2KeyName): Self = StObject.set(x, "ec2KeyName", value.asInstanceOf[js.Any])
+    inline def setEc2KeyName(value: EC2KeyName): Self = StObject.set(x, "ec2KeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2KeyNameUndefined: Self = StObject.set(x, "ec2KeyName", js.undefined)
+    inline def setEc2KeyNameUndefined: Self = StObject.set(x, "ec2KeyName", js.undefined)
     
-    @scala.inline
-    def setIamInstanceProfileName(value: RoleName): Self = StObject.set(x, "iamInstanceProfileName", value.asInstanceOf[js.Any])
+    inline def setIamInstanceProfileName(value: RoleName): Self = StObject.set(x, "iamInstanceProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamInstanceProfileNameUndefined: Self = StObject.set(x, "iamInstanceProfileName", js.undefined)
+    inline def setIamInstanceProfileNameUndefined: Self = StObject.set(x, "iamInstanceProfileName", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
-    @scala.inline
-    def setLogicalId(value: LogicalId): Self = StObject.set(x, "logicalId", value.asInstanceOf[js.Any])
+    inline def setLogicalId(value: LogicalId): Self = StObject.set(x, "logicalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalIdUndefined: Self = StObject.set(x, "logicalId", js.undefined)
+    inline def setLogicalIdUndefined: Self = StObject.set(x, "logicalId", js.undefined)
     
-    @scala.inline
-    def setSecurityGroup(value: SecurityGroup): Self = StObject.set(x, "securityGroup", value.asInstanceOf[js.Any])
+    inline def setSecurityGroup(value: SecurityGroup): Self = StObject.set(x, "securityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupUndefined: Self = StObject.set(x, "securityGroup", js.undefined)
+    inline def setSecurityGroupUndefined: Self = StObject.set(x, "securityGroup", js.undefined)
     
-    @scala.inline
-    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    @scala.inline
-    def setSubnet(value: Subnet): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
+    inline def setSubnet(value: Subnet): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
+    inline def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
     
-    @scala.inline
-    def setUserData(value: UserData): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: UserData): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+    inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
     
-    @scala.inline
-    def setVpc(value: VPC): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
+    inline def setVpc(value: VPC): Self = StObject.set(x, "vpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
+    inline def setVpcUndefined: Self = StObject.set(x, "vpc", js.undefined)
   }
 }

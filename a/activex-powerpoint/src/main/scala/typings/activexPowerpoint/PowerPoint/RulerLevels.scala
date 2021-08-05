@@ -14,13 +14,12 @@ trait RulerLevels extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.RulerLevels_typekey")
+  /* private */ @JSName("PowerPoint.RulerLevels_typekey")
   var PowerPointDotRulerLevels_typekey: RulerLevels
 }
 object RulerLevels {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Item: Double => RulerLevel,
@@ -32,22 +31,16 @@ object RulerLevels {
     __obj.asInstanceOf[RulerLevels]
   }
   
-  @scala.inline
-  implicit class RulerLevelsMutableBuilder[Self <: RulerLevels] (val x: Self) extends AnyVal {
+  extension [Self <: RulerLevels](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => RulerLevel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => RulerLevel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotRulerLevels_typekey(value: RulerLevels): Self = StObject.set(x, "PowerPoint.RulerLevels_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotRulerLevels_typekey(value: RulerLevels): Self = StObject.set(x, "PowerPoint.RulerLevels_typekey", value.asInstanceOf[js.Any])
   }
 }

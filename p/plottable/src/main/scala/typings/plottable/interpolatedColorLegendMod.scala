@@ -24,35 +24,35 @@ object interpolatedColorLegendMod {
       */
     def this(interpolatedColorScale: InterpolatedColor) = this()
     
-    var _expands: js.Any = js.native
+    /* private */ var _expands: js.Any = js.native
     
-    var _formatter: js.Any = js.native
+    /* private */ var _formatter: js.Any = js.native
     
     /* private */ def _generateTicks(numSwatches: js.Any): js.Any = js.native
     
     /* private */ def _isVertical(): js.Any = js.native
     
-    var _lowerLabel: js.Any = js.native
+    /* private */ var _lowerLabel: js.Any = js.native
     
-    var _measurer: js.Any = js.native
+    /* private */ var _measurer: js.Any = js.native
     
-    var _orientation: js.Any = js.native
+    /* private */ var _orientation: js.Any = js.native
     
-    var _redrawCallback: js.Any = js.native
+    /* private */ var _redrawCallback: js.Any = js.native
     
-    var _scale: js.Any = js.native
+    /* private */ var _scale: js.Any = js.native
     
-    var _swatchBoundingBox: js.Any = js.native
+    /* private */ var _swatchBoundingBox: js.Any = js.native
     
-    var _swatchContainer: js.Any = js.native
+    /* private */ var _swatchContainer: js.Any = js.native
     
-    var _textPadding: js.Any = js.native
+    /* private */ var _textPadding: js.Any = js.native
     
-    var _upperLabel: js.Any = js.native
+    /* private */ var _upperLabel: js.Any = js.native
     
-    var _wrapper: js.Any = js.native
+    /* private */ var _wrapper: js.Any = js.native
     
-    var _writer: js.Any = js.native
+    /* private */ var _writer: js.Any = js.native
     
     /**
       * Gets whether the InterpolatedColorLegend expands to occupy all offered space in the long direction
@@ -105,16 +105,13 @@ object interpolatedColorLegendMod {
     @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend.LEGEND_LABEL_CLASS")
     @js.native
     def LEGEND_LABEL_CLASS: String = js.native
-    @scala.inline
-    def LEGEND_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def LEGEND_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEGEND_LABEL_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend._DEFAULT_NUM_SWATCHES")
     @js.native
     def _DEFAULT_NUM_SWATCHES: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def _ensureOrientation(orientation: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_ensureOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def _ensureOrientation(orientation: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_ensureOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

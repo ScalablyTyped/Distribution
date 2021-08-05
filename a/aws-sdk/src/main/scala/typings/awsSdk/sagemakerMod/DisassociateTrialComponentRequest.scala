@@ -18,19 +18,15 @@ trait DisassociateTrialComponentRequest extends StObject {
 }
 object DisassociateTrialComponentRequest {
   
-  @scala.inline
-  def apply(TrialComponentName: ExperimentEntityName, TrialName: ExperimentEntityName): DisassociateTrialComponentRequest = {
+  inline def apply(TrialComponentName: ExperimentEntityName, TrialName: ExperimentEntityName): DisassociateTrialComponentRequest = {
     val __obj = js.Dynamic.literal(TrialComponentName = TrialComponentName.asInstanceOf[js.Any], TrialName = TrialName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateTrialComponentRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateTrialComponentRequestMutableBuilder[Self <: DisassociateTrialComponentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateTrialComponentRequest](x: Self) {
     
-    @scala.inline
-    def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
+    inline def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
+    inline def setTrialName(value: ExperimentEntityName): Self = StObject.set(x, "TrialName", value.asInstanceOf[js.Any])
   }
 }

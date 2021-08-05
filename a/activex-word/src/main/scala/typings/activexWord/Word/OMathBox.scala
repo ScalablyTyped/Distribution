@@ -20,13 +20,12 @@ trait OMathBox extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.OMathBox_typekey")
+  /* private */ @JSName("Word.OMathBox_typekey")
   var WordDotOMathBox_typekey: OMathBox
 }
 object OMathBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Diff: Boolean,
@@ -41,31 +40,22 @@ object OMathBox {
     __obj.asInstanceOf[OMathBox]
   }
   
-  @scala.inline
-  implicit class OMathBoxMutableBuilder[Self <: OMathBox] (val x: Self) extends AnyVal {
+  extension [Self <: OMathBox](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiff(value: Boolean): Self = StObject.set(x, "Diff", value.asInstanceOf[js.Any])
+    inline def setDiff(value: Boolean): Self = StObject.set(x, "Diff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoBreak(value: Boolean): Self = StObject.set(x, "NoBreak", value.asInstanceOf[js.Any])
+    inline def setNoBreak(value: Boolean): Self = StObject.set(x, "NoBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpEmu(value: Boolean): Self = StObject.set(x, "OpEmu", value.asInstanceOf[js.Any])
+    inline def setOpEmu(value: Boolean): Self = StObject.set(x, "OpEmu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathBox_typekey(value: OMathBox): Self = StObject.set(x, "Word.OMathBox_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathBox_typekey(value: OMathBox): Self = StObject.set(x, "Word.OMathBox_typekey", value.asInstanceOf[js.Any])
   }
 }

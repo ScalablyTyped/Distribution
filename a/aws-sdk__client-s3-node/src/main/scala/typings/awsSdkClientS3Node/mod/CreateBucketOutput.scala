@@ -10,8 +10,7 @@ trait CreateBucketOutput
      with typings.awsSdkClientS3Node.typesCreateBucketOutputMod.CreateBucketOutput
 object CreateBucketOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CreateBucketOutput = {
+  inline def apply($metadata: ResponseMetadata): CreateBucketOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketOutput]
   }

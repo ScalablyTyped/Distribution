@@ -22,25 +22,19 @@ trait SchemaGoogleCloudServicebrokerV1beta1Operation extends StObject {
 }
 object SchemaGoogleCloudServicebrokerV1beta1Operation {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1beta1Operation = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1beta1Operation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1Operation]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1beta1OperationMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1beta1Operation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1beta1Operation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DetachCertificateFromDistributionRequest extends StObject {
 }
 object DetachCertificateFromDistributionRequest {
   
-  @scala.inline
-  def apply(distributionName: ResourceName): DetachCertificateFromDistributionRequest = {
+  inline def apply(distributionName: ResourceName): DetachCertificateFromDistributionRequest = {
     val __obj = js.Dynamic.literal(distributionName = distributionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachCertificateFromDistributionRequest]
   }
   
-  @scala.inline
-  implicit class DetachCertificateFromDistributionRequestMutableBuilder[Self <: DetachCertificateFromDistributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachCertificateFromDistributionRequest](x: Self) {
     
-    @scala.inline
-    def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
+    inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
   }
 }

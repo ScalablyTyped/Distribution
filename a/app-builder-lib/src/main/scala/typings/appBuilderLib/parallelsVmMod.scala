@@ -16,8 +16,7 @@ object parallelsVmMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def macPathToParallelsWindows(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("macPathToParallelsWindows")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def macPathToParallelsWindows(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("macPathToParallelsWindows")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait ParallelsVm extends StObject {
     
@@ -31,26 +30,20 @@ object parallelsVmMod {
   }
   object ParallelsVm {
     
-    @scala.inline
-    def apply(id: String, name: String, os: `win-10` | ubuntu | elementary, state: running | suspended | stopped): ParallelsVm = {
+    inline def apply(id: String, name: String, os: `win-10` | ubuntu | elementary, state: running | suspended | stopped): ParallelsVm = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParallelsVm]
     }
     
-    @scala.inline
-    implicit class ParallelsVmMutableBuilder[Self <: ParallelsVm] (val x: Self) extends AnyVal {
+    extension [Self <: ParallelsVm](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: `win-10` | ubuntu | elementary): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: `win-10` | ubuntu | elementary): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: running | suspended | stopped): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: running | suspended | stopped): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,17 +11,14 @@ trait _EM extends StObject {
 }
 object _EM {
   
-  @scala.inline
-  def apply(_DollarendMarkerDollar_ : Double): _EM = {
+  inline def apply(_DollarendMarkerDollar_ : Double): _EM = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("_$endMarker$_")(_DollarendMarkerDollar_.asInstanceOf[js.Any])
     __obj.asInstanceOf[_EM]
   }
   
-  @scala.inline
-  implicit class _EMMutableBuilder[Self <: _EM] (val x: Self) extends AnyVal {
+  extension [Self <: _EM](x: Self) {
     
-    @scala.inline
-    def set_DollarendMarkerDollar_(value: Double): Self = StObject.set(x, "_$endMarker$_", value.asInstanceOf[js.Any])
+    inline def set_DollarendMarkerDollar_(value: Double): Self = StObject.set(x, "_$endMarker$_", value.asInstanceOf[js.Any])
   }
 }

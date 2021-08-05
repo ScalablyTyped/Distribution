@@ -13,16 +13,13 @@ trait Dictk
 }
 object Dictk {
   
-  @scala.inline
-  def apply(id: Double): Dictk = {
+  inline def apply(id: Double): Dictk = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictk]
   }
   
-  @scala.inline
-  implicit class DictkMutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
+  extension [Self <: Dictk](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -55,8 +55,7 @@ trait GardenSoil extends StObject {
 }
 object GardenSoil {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     effMult: Double,
     effsStr: String,
     icon: Double,
@@ -72,37 +71,26 @@ object GardenSoil {
     __obj.asInstanceOf[GardenSoil]
   }
   
-  @scala.inline
-  implicit class GardenSoilMutableBuilder[Self <: GardenSoil] (val x: Self) extends AnyVal {
+  extension [Self <: GardenSoil](x: Self) {
     
-    @scala.inline
-    def setEffMult(value: Double): Self = StObject.set(x, "effMult", value.asInstanceOf[js.Any])
+    inline def setEffMult(value: Double): Self = StObject.set(x, "effMult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffsStr(value: String): Self = StObject.set(x, "effsStr", value.asInstanceOf[js.Any])
+    inline def setEffsStr(value: String): Self = StObject.set(x, "effsStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: Double): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: Double): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Double): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeedMult(value: Double): Self = StObject.set(x, "weedMult", value.asInstanceOf[js.Any])
+    inline def setWeedMult(value: Double): Self = StObject.set(x, "weedMult", value.asInstanceOf[js.Any])
   }
 }

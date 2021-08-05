@@ -24,43 +24,31 @@ trait EntitiesOptions extends StObject {
 }
 object EntitiesOptions {
   
-  @scala.inline
-  def apply(): EntitiesOptions = {
+  inline def apply(): EntitiesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntitiesOptions]
   }
   
-  @scala.inline
-  implicit class EntitiesOptionsMutableBuilder[Self <: EntitiesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EntitiesOptions](x: Self) {
     
-    @scala.inline
-    def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
+    inline def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
+    inline def setEmotionUndefined: Self = StObject.set(x, "emotion", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMentions(value: Boolean): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+    inline def setMentions(value: Boolean): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
+    inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
+    inline def setSentiment(value: Boolean): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
+    inline def setSentimentUndefined: Self = StObject.set(x, "sentiment", js.undefined)
   }
 }

@@ -48,68 +48,48 @@ object registererOptionsMod {
   }
   object RegistererOptions {
     
-    @scala.inline
-    def apply(): RegistererOptions = {
+    inline def apply(): RegistererOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegistererOptions]
     }
     
-    @scala.inline
-    implicit class RegistererOptionsMutableBuilder[Self <: RegistererOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegistererOptions](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setExtraContactHeaderParams(value: js.Array[String]): Self = StObject.set(x, "extraContactHeaderParams", value.asInstanceOf[js.Any])
+      inline def setExtraContactHeaderParams(value: js.Array[String]): Self = StObject.set(x, "extraContactHeaderParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraContactHeaderParamsUndefined: Self = StObject.set(x, "extraContactHeaderParams", js.undefined)
+      inline def setExtraContactHeaderParamsUndefined: Self = StObject.set(x, "extraContactHeaderParams", js.undefined)
       
-      @scala.inline
-      def setExtraContactHeaderParamsVarargs(value: String*): Self = StObject.set(x, "extraContactHeaderParams", js.Array(value :_*))
+      inline def setExtraContactHeaderParamsVarargs(value: String*): Self = StObject.set(x, "extraContactHeaderParams", js.Array(value :_*))
       
-      @scala.inline
-      def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      @scala.inline
-      def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setLogConfiguration(value: Boolean): Self = StObject.set(x, "logConfiguration", value.asInstanceOf[js.Any])
+      inline def setLogConfiguration(value: Boolean): Self = StObject.set(x, "logConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogConfigurationUndefined: Self = StObject.set(x, "logConfiguration", js.undefined)
+      inline def setLogConfigurationUndefined: Self = StObject.set(x, "logConfiguration", js.undefined)
       
-      @scala.inline
-      def setParams(value: FromTag): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: FromTag): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setRegId(value: Double): Self = StObject.set(x, "regId", value.asInstanceOf[js.Any])
+      inline def setRegId(value: Double): Self = StObject.set(x, "regId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegIdUndefined: Self = StObject.set(x, "regId", js.undefined)
+      inline def setRegIdUndefined: Self = StObject.set(x, "regId", js.undefined)
       
-      @scala.inline
-      def setRegistrar(value: URI): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
+      inline def setRegistrar(value: URI): Self = StObject.set(x, "registrar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrarUndefined: Self = StObject.set(x, "registrar", js.undefined)
+      inline def setRegistrarUndefined: Self = StObject.set(x, "registrar", js.undefined)
     }
   }
 }

@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object gettimeofdayMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(returnFloat: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(returnFloat.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(returnFloat: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(returnFloat.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/datetime/gettimeofday", JSImport.Namespace)
   @js.native

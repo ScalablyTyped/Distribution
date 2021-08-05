@@ -53,21 +53,17 @@ object mod {
   }
   object FileDef {
     
-    @scala.inline
-    def apply(filePath: String, `type`: css | js_): FileDef = {
+    inline def apply(filePath: String, `type`: css | js_): FileDef = {
       val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileDef]
     }
     
-    @scala.inline
-    implicit class FileDefMutableBuilder[Self <: FileDef] (val x: Self) extends AnyVal {
+    extension [Self <: FileDef](x: Self) {
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: css | js_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: css | js_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,8 +81,7 @@ object mod {
   }
   object HTML5ToPDF {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       build: () => js.Promise[Buffer],
       close: () => js.Promise[Unit],
       includeAssets: () => js.Promise[Unit],
@@ -97,23 +92,17 @@ object mod {
       __obj.asInstanceOf[HTML5ToPDF]
     }
     
-    @scala.inline
-    implicit class HTML5ToPDFMutableBuilder[Self <: HTML5ToPDF] (val x: Self) extends AnyVal {
+    extension [Self <: HTML5ToPDF](x: Self) {
       
-      @scala.inline
-      def setBuild(value: () => js.Promise[Buffer]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+      inline def setBuild(value: () => js.Promise[Buffer]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncludeAssets(value: () => js.Promise[Unit]): Self = StObject.set(x, "includeAssets", js.Any.fromFunction0(value))
+      inline def setIncludeAssets(value: () => js.Promise[Unit]): Self = StObject.set(x, "includeAssets", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParseOptions(value: Options => ParsedOptions): Self = StObject.set(x, "parseOptions", js.Any.fromFunction1(value))
+      inline def setParseOptions(value: Options => ParsedOptions): Self = StObject.set(x, "parseOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => js.Promise[Page]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[Page]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
   
@@ -147,38 +136,28 @@ object mod {
   }
   object LegacyOptions {
     
-    @scala.inline
-    def apply(): LegacyOptions = {
+    inline def apply(): LegacyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LegacyOptions]
     }
     
-    @scala.inline
-    implicit class LegacyOptionsMutableBuilder[Self <: LegacyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LegacyOptions](x: Self) {
       
-      @scala.inline
-      def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+      inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+      inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
       
-      @scala.inline
-      def setMarginsType(value: Double): Self = StObject.set(x, "marginsType", value.asInstanceOf[js.Any])
+      inline def setMarginsType(value: Double): Self = StObject.set(x, "marginsType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginsTypeUndefined: Self = StObject.set(x, "marginsType", js.undefined)
+      inline def setMarginsTypeUndefined: Self = StObject.set(x, "marginsType", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: A3 | A4 | Legal | Tabloid): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: A3 | A4 | Legal | Tabloid): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
+      inline def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
+      inline def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
     }
   }
   
@@ -238,77 +217,54 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInclude(value: js.Array[String | FileDef]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[String | FileDef]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: (String | FileDef)*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: (String | FileDef)*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setInputBody(value: String | Buffer): Self = StObject.set(x, "inputBody", value.asInstanceOf[js.Any])
+      inline def setInputBody(value: String | Buffer): Self = StObject.set(x, "inputBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputBodyUndefined: Self = StObject.set(x, "inputBody", js.undefined)
+      inline def setInputBodyUndefined: Self = StObject.set(x, "inputBody", js.undefined)
       
-      @scala.inline
-      def setInputPath(value: String): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
+      inline def setInputPath(value: String): Self = StObject.set(x, "inputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
+      inline def setInputPathUndefined: Self = StObject.set(x, "inputPath", js.undefined)
       
-      @scala.inline
-      def setLaunchOptions(value: LaunchOptions): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
+      inline def setLaunchOptions(value: LaunchOptions): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchOptionsUndefined: Self = StObject.set(x, "launchOptions", js.undefined)
+      inline def setLaunchOptionsUndefined: Self = StObject.set(x, "launchOptions", js.undefined)
       
-      @scala.inline
-      def setOptions(value: LegacyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: LegacyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
       
-      @scala.inline
-      def setPdf(value: PDFOptions): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+      inline def setPdf(value: PDFOptions): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+      inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
       
-      @scala.inline
-      def setRendererDelay(value: Double): Self = StObject.set(x, "rendererDelay", value.asInstanceOf[js.Any])
+      inline def setRendererDelay(value: Double): Self = StObject.set(x, "rendererDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendererDelayUndefined: Self = StObject.set(x, "rendererDelay", js.undefined)
+      inline def setRendererDelayUndefined: Self = StObject.set(x, "rendererDelay", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     }
   }
   
@@ -330,8 +286,7 @@ object mod {
   }
   object ParsedOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: String | Buffer,
       include: js.Array[FileDef],
       launchOptions: LaunchOptions,
@@ -344,32 +299,23 @@ object mod {
       __obj.asInstanceOf[ParsedOptions]
     }
     
-    @scala.inline
-    implicit class ParsedOptionsMutableBuilder[Self <: ParsedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude(value: js.Array[FileDef]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.Array[FileDef]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeVarargs(value: FileDef*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: FileDef*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setLaunchOptions(value: LaunchOptions): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
+      inline def setLaunchOptions(value: LaunchOptions): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdf(value: PDFOptions): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+      inline def setPdf(value: PDFOptions): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderDelay(value: Double): Self = StObject.set(x, "renderDelay", value.asInstanceOf[js.Any])
+      inline def setRenderDelay(value: Double): Self = StObject.set(x, "renderDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplatePath(value: String): Self = StObject.set(x, "templatePath", value.asInstanceOf[js.Any])
+      inline def setTemplatePath(value: String): Self = StObject.set(x, "templatePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     }
   }
 }

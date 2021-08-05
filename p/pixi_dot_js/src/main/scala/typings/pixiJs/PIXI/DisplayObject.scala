@@ -46,7 +46,7 @@ trait DisplayObject
     * @member {number} PIXI.DisplayObject#_boundsID
     * @protected
     */
-  var _boundsID: Double = js.native
+  /* protected */ var _boundsID: Double = js.native
   
   /**
     * Cache of this display-object's bounds-rectangle.
@@ -54,7 +54,7 @@ trait DisplayObject
     * @member {PIXI.Bounds} PIXI.DisplayObject#_boundsRect
     * @protected
     */
-  var _boundsRect: Bounds = js.native
+  /* protected */ var _boundsRect: Bounds = js.native
   
   /**
     * If the object has been destroyed via destroy(). If true, it should not be used.
@@ -62,14 +62,14 @@ trait DisplayObject
     * @member {boolean} PIXI.DisplayObject#_destroyed
     * @protected
     */
-  var _destroyed: Boolean = js.native
+  /* protected */ var _destroyed: Boolean = js.native
   
   /**
     * Currently enabled filters
     * @member {PIXI.Filter[]} PIXI.DisplayObject#_enabledFilters
     * @protected
     */
-  var _enabledFilters: js.Array[Filter] = js.native
+  /* protected */ var _enabledFilters: js.Array[Filter] = js.native
   
   /**
     * Which index in the children array the display component was before the previous zIndex sort.
@@ -78,7 +78,7 @@ trait DisplayObject
     * @member {number} PIXI.DisplayObject#_lastSortedIndex
     * @protected
     */
-  var _lastSortedIndex: Double = js.native
+  /* protected */ var _lastSortedIndex: Double = js.native
   
   /**
     * Local bounds object, swapped with `_bounds` when using `getLocalBounds()`.
@@ -93,7 +93,7 @@ trait DisplayObject
     * @member {PIXI.Bounds} PIXI.DisplayObject#_localBoundsRect
     * @protected
     */
-  var _localBoundsRect: Bounds = js.native
+  /* protected */ var _localBoundsRect: Bounds = js.native
   
   /**
     * The original, cached mask of the object.
@@ -101,7 +101,7 @@ trait DisplayObject
     * @member {PIXI.Container|PIXI.MaskData|null} PIXI.DisplayObject#_mask
     * @protected
     */
-  var _mask: Container | MaskData | Null = js.native
+  /* protected */ var _mask: Container | MaskData | Null = js.native
   
   /**
     * Recursively updates transform of all objects from the root to this one
@@ -113,7 +113,7 @@ trait DisplayObject
     * @protected
     * @member {PIXI.Container}
     */
-  var _tempDisplayObjectParent: Container = js.native
+  /* protected */ var _tempDisplayObjectParent: Container = js.native
   
   /**
     * The zIndex of the displayObject.
@@ -122,7 +122,7 @@ trait DisplayObject
     * @member {number} PIXI.DisplayObject#_zIndex
     * @protected
     */
-  var _zIndex: Double = js.native
+  /* protected */ var _zIndex: Double = js.native
   
   /**
     *  Flag for if the object is accessible. If true AccessibilityManager will overlay a

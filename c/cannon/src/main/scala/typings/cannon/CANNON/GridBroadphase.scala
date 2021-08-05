@@ -22,8 +22,7 @@ trait GridBroadphase
 }
 object GridBroadphase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aabbMax: Vec3,
     aabbMin: Vec3,
     aabbQuery: (World, AABB, js.Array[Body]) => js.Array[Body],
@@ -47,28 +46,20 @@ object GridBroadphase {
     __obj.asInstanceOf[GridBroadphase]
   }
   
-  @scala.inline
-  implicit class GridBroadphaseMutableBuilder[Self <: GridBroadphase] (val x: Self) extends AnyVal {
+  extension [Self <: GridBroadphase](x: Self) {
     
-    @scala.inline
-    def setAabbMax(value: Vec3): Self = StObject.set(x, "aabbMax", value.asInstanceOf[js.Any])
+    inline def setAabbMax(value: Vec3): Self = StObject.set(x, "aabbMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAabbMin(value: Vec3): Self = StObject.set(x, "aabbMin", value.asInstanceOf[js.Any])
+    inline def setAabbMin(value: Vec3): Self = StObject.set(x, "aabbMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBins(value: js.Array[js.Any]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    inline def setBins(value: js.Array[js.Any]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinsVarargs(value: js.Any*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: js.Any*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
-    @scala.inline
-    def setNx(value: Double): Self = StObject.set(x, "nx", value.asInstanceOf[js.Any])
+    inline def setNx(value: Double): Self = StObject.set(x, "nx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNy(value: Double): Self = StObject.set(x, "ny", value.asInstanceOf[js.Any])
+    inline def setNy(value: Double): Self = StObject.set(x, "ny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNz(value: Double): Self = StObject.set(x, "nz", value.asInstanceOf[js.Any])
+    inline def setNz(value: Double): Self = StObject.set(x, "nz", value.asInstanceOf[js.Any])
   }
 }

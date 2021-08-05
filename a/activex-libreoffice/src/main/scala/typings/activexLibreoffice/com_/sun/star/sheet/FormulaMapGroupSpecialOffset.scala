@@ -37,43 +37,30 @@ object FormulaMapGroupSpecialOffset {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BAD: `7` = 7.asInstanceOf[`7`]
+    inline def BAD: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def CALL: `1` = 1.asInstanceOf[`1`]
+    inline def CALL: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def COL_ROW_NAME: `12` = 12.asInstanceOf[`12`]
+    inline def COL_ROW_NAME: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def DB_AREA: `10` = 10.asInstanceOf[`10`]
+    inline def DB_AREA: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def EXTERNAL: `3` = 3.asInstanceOf[`3`]
+    inline def EXTERNAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def MACRO: `11` = 11.asInstanceOf[`11`]
+    inline def MACRO: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def MAT_REF: `9` = 9.asInstanceOf[`9`]
+    inline def MAT_REF: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def MISSING: `6` = 6.asInstanceOf[`6`]
+    inline def MISSING: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def NAME: `4` = 4.asInstanceOf[`4`]
+    inline def NAME: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NO_NAME: `5` = 5.asInstanceOf[`5`]
+    inline def NO_NAME: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def PUSH: `0` = 0.asInstanceOf[`0`]
+    inline def PUSH: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SPACES: `8` = 8.asInstanceOf[`8`]
+    inline def SPACES: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def STOP: `2` = 2.asInstanceOf[`2`]
+    inline def STOP: `2` = 2.asInstanceOf[`2`]
   }
 }

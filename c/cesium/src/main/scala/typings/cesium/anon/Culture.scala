@@ -25,58 +25,41 @@ trait Culture extends StObject {
 }
 object Culture {
   
-  @scala.inline
-  def apply(url: String): Culture = {
+  inline def apply(url: String): Culture = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Culture]
   }
   
-  @scala.inline
-  implicit class CultureMutableBuilder[Self <: Culture] (val x: Self) extends AnyVal {
+  extension [Self <: Culture](x: Self) {
     
-    @scala.inline
-    def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
-    @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMapStyle(value: String): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
+    inline def setMapStyle(value: String): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
+    inline def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
     
-    @scala.inline
-    def setProxy(value: typings.cesium.mod.Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: typings.cesium.mod.Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
+    inline def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
+    inline def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
     
-    @scala.inline
-    def setTileProtocol(value: String): Self = StObject.set(x, "tileProtocol", value.asInstanceOf[js.Any])
+    inline def setTileProtocol(value: String): Self = StObject.set(x, "tileProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileProtocolUndefined: Self = StObject.set(x, "tileProtocol", js.undefined)
+    inline def setTileProtocolUndefined: Self = StObject.set(x, "tileProtocol", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

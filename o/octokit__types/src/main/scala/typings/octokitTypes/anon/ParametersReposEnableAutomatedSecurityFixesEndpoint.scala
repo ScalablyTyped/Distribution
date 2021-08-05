@@ -17,8 +17,7 @@ trait ParametersReposEnableAutomatedSecurityFixesEndpoint extends StObject {
 }
 object ParametersReposEnableAutomatedSecurityFixesEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposEnableAutomatedSecurityFixesEndpoint,
     request: ReposEnableAutomatedSecurityFixesRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersReposEnableAutomatedSecurityFixesEndpoint {
     __obj.asInstanceOf[ParametersReposEnableAutomatedSecurityFixesEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposEnableAutomatedSecurityFixesEndpointMutableBuilder[Self <: ParametersReposEnableAutomatedSecurityFixesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposEnableAutomatedSecurityFixesEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposEnableAutomatedSecurityFixesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposEnableAutomatedSecurityFixesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposEnableAutomatedSecurityFixesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposEnableAutomatedSecurityFixesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

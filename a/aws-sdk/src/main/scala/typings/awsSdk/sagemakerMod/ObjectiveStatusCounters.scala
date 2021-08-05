@@ -23,31 +23,23 @@ trait ObjectiveStatusCounters extends StObject {
 }
 object ObjectiveStatusCounters {
   
-  @scala.inline
-  def apply(): ObjectiveStatusCounters = {
+  inline def apply(): ObjectiveStatusCounters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectiveStatusCounters]
   }
   
-  @scala.inline
-  implicit class ObjectiveStatusCountersMutableBuilder[Self <: ObjectiveStatusCounters] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectiveStatusCounters](x: Self) {
     
-    @scala.inline
-    def setFailed(value: ObjectiveStatusCounter): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: ObjectiveStatusCounter): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
     
-    @scala.inline
-    def setPending(value: ObjectiveStatusCounter): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: ObjectiveStatusCounter): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
     
-    @scala.inline
-    def setSucceeded(value: ObjectiveStatusCounter): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: ObjectiveStatusCounter): Self = StObject.set(x, "Succeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
+    inline def setSucceededUndefined: Self = StObject.set(x, "Succeeded", js.undefined)
   }
 }

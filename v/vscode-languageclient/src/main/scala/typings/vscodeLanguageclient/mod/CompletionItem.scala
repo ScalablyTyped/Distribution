@@ -14,6 +14,5 @@ object CompletionItem {
     * Create a completion item and seed it with a label.
     * @param label The completion item's label
     */
-  @scala.inline
-  def create(label: String): typings.vscodeLanguageserverTypes.mod.CompletionItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionItem]
+  inline def create(label: String): typings.vscodeLanguageserverTypes.mod.CompletionItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CompletionItem]
 }

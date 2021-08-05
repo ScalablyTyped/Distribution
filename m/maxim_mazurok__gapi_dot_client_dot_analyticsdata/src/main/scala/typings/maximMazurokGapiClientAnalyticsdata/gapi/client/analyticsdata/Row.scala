@@ -14,31 +14,23 @@ trait Row extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply(): Row = {
+  inline def apply(): Row = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setDimensionValues(value: js.Array[DimensionValue]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
+    inline def setDimensionValues(value: js.Array[DimensionValue]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
+    inline def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
-    @scala.inline
-    def setDimensionValuesVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
+    inline def setDimensionValuesVarargs(value: DimensionValue*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricValues(value: js.Array[MetricValue]): Self = StObject.set(x, "metricValues", value.asInstanceOf[js.Any])
+    inline def setMetricValues(value: js.Array[MetricValue]): Self = StObject.set(x, "metricValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricValuesUndefined: Self = StObject.set(x, "metricValues", js.undefined)
+    inline def setMetricValuesUndefined: Self = StObject.set(x, "metricValues", js.undefined)
     
-    @scala.inline
-    def setMetricValuesVarargs(value: MetricValue*): Self = StObject.set(x, "metricValues", js.Array(value :_*))
+    inline def setMetricValuesVarargs(value: MetricValue*): Self = StObject.set(x, "metricValues", js.Array(value :_*))
   }
 }

@@ -14,22 +14,17 @@ trait DeploymentStartedEvent extends StObject {
 }
 object DeploymentStartedEvent {
   
-  @scala.inline
-  def apply(environment: ReleaseEnvironment, project: ProjectReference, release: Release): DeploymentStartedEvent = {
+  inline def apply(environment: ReleaseEnvironment, project: ProjectReference, release: Release): DeploymentStartedEvent = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentStartedEvent]
   }
   
-  @scala.inline
-  implicit class DeploymentStartedEventMutableBuilder[Self <: DeploymentStartedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentStartedEvent](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

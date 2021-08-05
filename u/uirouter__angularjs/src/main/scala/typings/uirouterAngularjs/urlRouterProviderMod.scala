@@ -86,7 +86,7 @@ object urlRouterProviderMod {
     def otherwise(rule: String): UrlRouterProvider = js.native
     def otherwise(rule: RawNg1RuleFunction): UrlRouterProvider = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /**
       * Registers a url handler function.
@@ -173,8 +173,7 @@ object urlRouterProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def injectableHandler(router: UIRouter, handler: IInjectable): UrlRuleHandlerFn = (^.asInstanceOf[js.Dynamic].applyDynamic("injectableHandler")(router.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[UrlRuleHandlerFn]
+    inline def injectableHandler(router: UIRouter, handler: IInjectable): UrlRuleHandlerFn = (^.asInstanceOf[js.Dynamic].applyDynamic("injectableHandler")(router.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[UrlRuleHandlerFn]
   }
   
   type RawNg1RuleFunction = js.Function2[/* $injector */ InjectorLike, /* $location */ LocationServices, String | Unit]

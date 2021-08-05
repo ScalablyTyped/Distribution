@@ -94,8 +94,7 @@ trait XInteractionSupplyAuthentication
 }
 object XInteractionSupplyAuthentication {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     canSetAccount: () => Boolean,
     canSetPassword: () => Boolean,
@@ -117,43 +116,30 @@ object XInteractionSupplyAuthentication {
     __obj.asInstanceOf[XInteractionSupplyAuthentication]
   }
   
-  @scala.inline
-  implicit class XInteractionSupplyAuthenticationMutableBuilder[Self <: XInteractionSupplyAuthentication] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionSupplyAuthentication](x: Self) {
     
-    @scala.inline
-    def setCanSetAccount(value: () => Boolean): Self = StObject.set(x, "canSetAccount", js.Any.fromFunction0(value))
+    inline def setCanSetAccount(value: () => Boolean): Self = StObject.set(x, "canSetAccount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCanSetPassword(value: () => Boolean): Self = StObject.set(x, "canSetPassword", js.Any.fromFunction0(value))
+    inline def setCanSetPassword(value: () => Boolean): Self = StObject.set(x, "canSetPassword", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCanSetRealm(value: () => Boolean): Self = StObject.set(x, "canSetRealm", js.Any.fromFunction0(value))
+    inline def setCanSetRealm(value: () => Boolean): Self = StObject.set(x, "canSetRealm", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCanSetUserName(value: () => Boolean): Self = StObject.set(x, "canSetUserName", js.Any.fromFunction0(value))
+    inline def setCanSetUserName(value: () => Boolean): Self = StObject.set(x, "canSetUserName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRememberAccountModes(value: js.Array[RememberAuthentication] => SafeArray[RememberAuthentication]): Self = StObject.set(x, "getRememberAccountModes", js.Any.fromFunction1(value))
+    inline def setGetRememberAccountModes(value: js.Array[RememberAuthentication] => SafeArray[RememberAuthentication]): Self = StObject.set(x, "getRememberAccountModes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRememberPasswordModes(value: js.Array[RememberAuthentication] => SafeArray[RememberAuthentication]): Self = StObject.set(x, "getRememberPasswordModes", js.Any.fromFunction1(value))
+    inline def setGetRememberPasswordModes(value: js.Array[RememberAuthentication] => SafeArray[RememberAuthentication]): Self = StObject.set(x, "getRememberPasswordModes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAccount(value: String => Unit): Self = StObject.set(x, "setAccount", js.Any.fromFunction1(value))
+    inline def setSetAccount(value: String => Unit): Self = StObject.set(x, "setAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPassword(value: String => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
+    inline def setSetPassword(value: String => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRealm(value: String => Unit): Self = StObject.set(x, "setRealm", js.Any.fromFunction1(value))
+    inline def setSetRealm(value: String => Unit): Self = StObject.set(x, "setRealm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRememberAccount(value: RememberAuthentication => Unit): Self = StObject.set(x, "setRememberAccount", js.Any.fromFunction1(value))
+    inline def setSetRememberAccount(value: RememberAuthentication => Unit): Self = StObject.set(x, "setRememberAccount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRememberPassword(value: RememberAuthentication => Unit): Self = StObject.set(x, "setRememberPassword", js.Any.fromFunction1(value))
+    inline def setSetRememberPassword(value: RememberAuthentication => Unit): Self = StObject.set(x, "setRememberPassword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUserName(value: String => Unit): Self = StObject.set(x, "setUserName", js.Any.fromFunction1(value))
+    inline def setSetUserName(value: String => Unit): Self = StObject.set(x, "setUserName", js.Any.fromFunction1(value))
   }
 }

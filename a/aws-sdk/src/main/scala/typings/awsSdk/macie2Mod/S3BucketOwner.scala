@@ -18,25 +18,19 @@ trait S3BucketOwner extends StObject {
 }
 object S3BucketOwner {
   
-  @scala.inline
-  def apply(): S3BucketOwner = {
+  inline def apply(): S3BucketOwner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3BucketOwner]
   }
   
-  @scala.inline
-  implicit class S3BucketOwnerMutableBuilder[Self <: S3BucketOwner] (val x: Self) extends AnyVal {
+  extension [Self <: S3BucketOwner](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: string): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: string): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

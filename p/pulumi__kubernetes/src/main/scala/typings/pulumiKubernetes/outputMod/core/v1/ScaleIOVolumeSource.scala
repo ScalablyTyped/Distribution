@@ -61,8 +61,7 @@ trait ScaleIOVolumeSource extends StObject {
 }
 object ScaleIOVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fsType: String,
     gateway: String,
     protectionDomain: String,
@@ -78,37 +77,26 @@ object ScaleIOVolumeSource {
     __obj.asInstanceOf[ScaleIOVolumeSource]
   }
   
-  @scala.inline
-  implicit class ScaleIOVolumeSourceMutableBuilder[Self <: ScaleIOVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleIOVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+    inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionDomain(value: String): Self = StObject.set(x, "protectionDomain", value.asInstanceOf[js.Any])
+    inline def setProtectionDomain(value: String): Self = StObject.set(x, "protectionDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
+    inline def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageMode(value: String): Self = StObject.set(x, "storageMode", value.asInstanceOf[js.Any])
+    inline def setStorageMode(value: String): Self = StObject.set(x, "storageMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragePool(value: String): Self = StObject.set(x, "storagePool", value.asInstanceOf[js.Any])
+    inline def setStoragePool(value: String): Self = StObject.set(x, "storagePool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeName(value: String): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
+    inline def setVolumeName(value: String): Self = StObject.set(x, "volumeName", value.asInstanceOf[js.Any])
   }
 }

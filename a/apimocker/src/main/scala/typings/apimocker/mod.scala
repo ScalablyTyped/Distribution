@@ -19,31 +19,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createServer(): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[ApiMocker]
-  @scala.inline
-  def createServer(options: ConfigOptions): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
+  inline def createServer(): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[ApiMocker]
+  inline def createServer(options: ConfigOptions): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
   
   @JSImport("apimocker", "middlewares")
   @js.native
   val middlewares: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
   
-  @scala.inline
-  def setConfigFile(file: String): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigFile")(file.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
+  inline def setConfigFile(file: String): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigFile")(file.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
   
-  @scala.inline
-  def start(serverPort: String): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
-  @scala.inline
-  def start(serverPort: String, callback: js.Function0[Unit]): ApiMocker = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ApiMocker]
-  @scala.inline
-  def start(serverPort: Double): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
-  @scala.inline
-  def start(serverPort: Double, callback: js.Function0[Unit]): ApiMocker = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ApiMocker]
+  inline def start(serverPort: String): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
+  inline def start(serverPort: String, callback: js.Function0[Unit]): ApiMocker = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ApiMocker]
+  inline def start(serverPort: Double): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
+  inline def start(serverPort: Double, callback: js.Function0[Unit]): ApiMocker = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ApiMocker]
   
-  @scala.inline
-  def stop(): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[ApiMocker]
-  @scala.inline
-  def stop(callback: js.Function0[Unit]): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(callback.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
+  inline def stop(): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[ApiMocker]
+  inline def stop(callback: js.Function0[Unit]): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(callback.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
   
   @js.native
   trait ApiMocker extends StObject {
@@ -109,74 +100,52 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setAllowAvoidPreFlight(value: Boolean): Self = StObject.set(x, "allowAvoidPreFlight", value.asInstanceOf[js.Any])
+      inline def setAllowAvoidPreFlight(value: Boolean): Self = StObject.set(x, "allowAvoidPreFlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAvoidPreFlightUndefined: Self = StObject.set(x, "allowAvoidPreFlight", js.undefined)
+      inline def setAllowAvoidPreFlightUndefined: Self = StObject.set(x, "allowAvoidPreFlight", js.undefined)
       
-      @scala.inline
-      def setAllowedDomains(value: js.Array[String]): Self = StObject.set(x, "allowedDomains", value.asInstanceOf[js.Any])
+      inline def setAllowedDomains(value: js.Array[String]): Self = StObject.set(x, "allowedDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedDomainsUndefined: Self = StObject.set(x, "allowedDomains", js.undefined)
+      inline def setAllowedDomainsUndefined: Self = StObject.set(x, "allowedDomains", js.undefined)
       
-      @scala.inline
-      def setAllowedDomainsVarargs(value: String*): Self = StObject.set(x, "allowedDomains", js.Array(value :_*))
+      inline def setAllowedDomainsVarargs(value: String*): Self = StObject.set(x, "allowedDomains", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedHeaders(value: js.Array[String]): Self = StObject.set(x, "allowedHeaders", value.asInstanceOf[js.Any])
+      inline def setAllowedHeaders(value: js.Array[String]): Self = StObject.set(x, "allowedHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedHeadersUndefined: Self = StObject.set(x, "allowedHeaders", js.undefined)
+      inline def setAllowedHeadersUndefined: Self = StObject.set(x, "allowedHeaders", js.undefined)
       
-      @scala.inline
-      def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "allowedHeaders", js.Array(value :_*))
+      inline def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "allowedHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setLogRequestHeaders(value: Boolean): Self = StObject.set(x, "logRequestHeaders", value.asInstanceOf[js.Any])
+      inline def setLogRequestHeaders(value: Boolean): Self = StObject.set(x, "logRequestHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogRequestHeadersUndefined: Self = StObject.set(x, "logRequestHeaders", js.undefined)
+      inline def setLogRequestHeadersUndefined: Self = StObject.set(x, "logRequestHeaders", js.undefined)
       
-      @scala.inline
-      def setMockDirectory(value: String): Self = StObject.set(x, "mockDirectory", value.asInstanceOf[js.Any])
+      inline def setMockDirectory(value: String): Self = StObject.set(x, "mockDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMockDirectoryUndefined: Self = StObject.set(x, "mockDirectory", js.undefined)
+      inline def setMockDirectoryUndefined: Self = StObject.set(x, "mockDirectory", js.undefined)
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
-      @scala.inline
-      def setUseUploadFieldname(value: Boolean): Self = StObject.set(x, "useUploadFieldname", value.asInstanceOf[js.Any])
+      inline def setUseUploadFieldname(value: Boolean): Self = StObject.set(x, "useUploadFieldname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUploadFieldnameUndefined: Self = StObject.set(x, "useUploadFieldname", js.undefined)
+      inline def setUseUploadFieldnameUndefined: Self = StObject.set(x, "useUploadFieldname", js.undefined)
       
-      @scala.inline
-      def setWebServices(value: js.Any): Self = StObject.set(x, "webServices", value.asInstanceOf[js.Any])
+      inline def setWebServices(value: js.Any): Self = StObject.set(x, "webServices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebServicesUndefined: Self = StObject.set(x, "webServices", js.undefined)
+      inline def setWebServicesUndefined: Self = StObject.set(x, "webServices", js.undefined)
     }
   }
 }

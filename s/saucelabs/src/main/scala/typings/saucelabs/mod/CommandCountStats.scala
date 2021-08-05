@@ -15,25 +15,19 @@ trait CommandCountStats
 }
 object CommandCountStats {
   
-  @scala.inline
-  def apply(): CommandCountStats = {
+  inline def apply(): CommandCountStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommandCountStats]
   }
   
-  @scala.inline
-  implicit class CommandCountStatsMutableBuilder[Self <: CommandCountStats] (val x: Self) extends AnyVal {
+  extension [Self <: CommandCountStats](x: Self) {
     
-    @scala.inline
-    def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
   }
 }

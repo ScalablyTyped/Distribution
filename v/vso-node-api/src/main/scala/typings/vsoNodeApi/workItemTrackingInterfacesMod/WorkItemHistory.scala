@@ -19,8 +19,7 @@ trait WorkItemHistory
 }
 object WorkItemHistory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     rev: Double,
     revisedBy: IdentityReference,
@@ -32,19 +31,14 @@ object WorkItemHistory {
     __obj.asInstanceOf[WorkItemHistory]
   }
   
-  @scala.inline
-  implicit class WorkItemHistoryMutableBuilder[Self <: WorkItemHistory] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemHistory](x: Self) {
     
-    @scala.inline
-    def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: Double): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
+    inline def setRevisedBy(value: IdentityReference): Self = StObject.set(x, "revisedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisedDate(value: Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
+    inline def setRevisedDate(value: Date): Self = StObject.set(x, "revisedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

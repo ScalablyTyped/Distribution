@@ -13,16 +13,13 @@ trait S3Config extends StObject {
 }
 object S3Config {
   
-  @scala.inline
-  def apply(BucketAccessRoleArn: IamRoleArn): S3Config = {
+  inline def apply(BucketAccessRoleArn: IamRoleArn): S3Config = {
     val __obj = js.Dynamic.literal(BucketAccessRoleArn = BucketAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Config]
   }
   
-  @scala.inline
-  implicit class S3ConfigMutableBuilder[Self <: S3Config] (val x: Self) extends AnyVal {
+  extension [Self <: S3Config](x: Self) {
     
-    @scala.inline
-    def setBucketAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "BucketAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setBucketAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "BucketAccessRoleArn", value.asInstanceOf[js.Any])
   }
 }

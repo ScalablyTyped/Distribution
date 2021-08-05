@@ -18,10 +18,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(context: EmotionContext): Emotion = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any]).asInstanceOf[Emotion]
-  @scala.inline
-  def default(context: EmotionContext, options: EmotionOptions): Emotion = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Emotion]
+  inline def default(context: EmotionContext): Emotion = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any]).asInstanceOf[Emotion]
+  inline def default(context: EmotionContext, options: EmotionOptions): Emotion = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Emotion]
   
   @js.native
   trait ArrayClassNameArg
@@ -44,8 +42,7 @@ object mod {
        with _Interpolation
   object CSSObject {
     
-    @scala.inline
-    def apply(): CSSObject = {
+    inline def apply(): CSSObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSObject]
     }
@@ -56,8 +53,7 @@ object mod {
        with /* propertiesName */ StringDictionary[Interpolation]
   object CSSOthersObject {
     
-    @scala.inline
-    def apply(): CSSOthersObject = {
+    inline def apply(): CSSOthersObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSOthersObject]
     }
@@ -401,680 +397,456 @@ object mod {
   }
   object CSSPseudoObject {
     
-    @scala.inline
-    def apply(): CSSPseudoObject = {
+    inline def apply(): CSSPseudoObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSPseudoObject]
     }
     
-    @scala.inline
-    implicit class CSSPseudoObjectMutableBuilder[Self <: CSSPseudoObject] (val x: Self) extends AnyVal {
+    extension [Self <: CSSPseudoObject](x: Self) {
       
-      @scala.inline
-      def `setColon-khtml-any-link`(value: CSSObject): Self = StObject.set(x, ":-khtml-any-link", value.asInstanceOf[js.Any])
+      inline def `setColon-khtml-any-link`(value: CSSObject): Self = StObject.set(x, ":-khtml-any-link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-khtml-any-linkUndefined`: Self = StObject.set(x, ":-khtml-any-link", js.undefined)
+      inline def `setColon-khtml-any-linkUndefined`: Self = StObject.set(x, ":-khtml-any-link", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-any-link`(value: CSSObject): Self = StObject.set(x, ":-moz-any-link", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-any-link`(value: CSSObject): Self = StObject.set(x, ":-moz-any-link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-any-linkUndefined`: Self = StObject.set(x, ":-moz-any-link", js.undefined)
+      inline def `setColon-moz-any-linkUndefined`: Self = StObject.set(x, ":-moz-any-link", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-anyLeftparenthesisRightparenthesis`(value: CSSObject): Self = StObject.set(x, ":-moz-any()", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-anyLeftparenthesisRightparenthesis`(value: CSSObject): Self = StObject.set(x, ":-moz-any()", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-anyLeftparenthesisRightparenthesisUndefined`: Self = StObject.set(x, ":-moz-any()", js.undefined)
+      inline def `setColon-moz-anyLeftparenthesisRightparenthesisUndefined`: Self = StObject.set(x, ":-moz-any()", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-dir`(value: CSSObject): Self = StObject.set(x, ":-moz-dir", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-dir`(value: CSSObject): Self = StObject.set(x, ":-moz-dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-dirUndefined`: Self = StObject.set(x, ":-moz-dir", js.undefined)
+      inline def `setColon-moz-dirUndefined`: Self = StObject.set(x, ":-moz-dir", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-focusring`(value: CSSObject): Self = StObject.set(x, ":-moz-focusring", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-focusring`(value: CSSObject): Self = StObject.set(x, ":-moz-focusring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-focusringUndefined`: Self = StObject.set(x, ":-moz-focusring", js.undefined)
+      inline def `setColon-moz-focusringUndefined`: Self = StObject.set(x, ":-moz-focusring", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-full-screen`(value: CSSObject): Self = StObject.set(x, ":-moz-full-screen", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-full-screen`(value: CSSObject): Self = StObject.set(x, ":-moz-full-screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-full-screenUndefined`: Self = StObject.set(x, ":-moz-full-screen", js.undefined)
+      inline def `setColon-moz-full-screenUndefined`: Self = StObject.set(x, ":-moz-full-screen", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-placeholder`(value: CSSObject): Self = StObject.set(x, ":-moz-placeholder", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-placeholder`(value: CSSObject): Self = StObject.set(x, ":-moz-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-placeholderUndefined`: Self = StObject.set(x, ":-moz-placeholder", js.undefined)
+      inline def `setColon-moz-placeholderUndefined`: Self = StObject.set(x, ":-moz-placeholder", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-read-only`(value: CSSObject): Self = StObject.set(x, ":-moz-read-only", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-read-only`(value: CSSObject): Self = StObject.set(x, ":-moz-read-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-read-onlyUndefined`: Self = StObject.set(x, ":-moz-read-only", js.undefined)
+      inline def `setColon-moz-read-onlyUndefined`: Self = StObject.set(x, ":-moz-read-only", js.undefined)
       
-      @scala.inline
-      def `setColon-moz-read-write`(value: CSSObject): Self = StObject.set(x, ":-moz-read-write", value.asInstanceOf[js.Any])
+      inline def `setColon-moz-read-write`(value: CSSObject): Self = StObject.set(x, ":-moz-read-write", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-moz-read-writeUndefined`: Self = StObject.set(x, ":-moz-read-write", js.undefined)
+      inline def `setColon-moz-read-writeUndefined`: Self = StObject.set(x, ":-moz-read-write", js.undefined)
       
-      @scala.inline
-      def `setColon-ms-fullscreen`(value: CSSObject): Self = StObject.set(x, ":-ms-fullscreen", value.asInstanceOf[js.Any])
+      inline def `setColon-ms-fullscreen`(value: CSSObject): Self = StObject.set(x, ":-ms-fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-ms-fullscreenUndefined`: Self = StObject.set(x, ":-ms-fullscreen", js.undefined)
+      inline def `setColon-ms-fullscreenUndefined`: Self = StObject.set(x, ":-ms-fullscreen", js.undefined)
       
-      @scala.inline
-      def `setColon-ms-input-placeholder`(value: CSSObject): Self = StObject.set(x, ":-ms-input-placeholder", value.asInstanceOf[js.Any])
+      inline def `setColon-ms-input-placeholder`(value: CSSObject): Self = StObject.set(x, ":-ms-input-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-ms-input-placeholderUndefined`: Self = StObject.set(x, ":-ms-input-placeholder", js.undefined)
+      inline def `setColon-ms-input-placeholderUndefined`: Self = StObject.set(x, ":-ms-input-placeholder", js.undefined)
       
-      @scala.inline
-      def `setColon-webkit-any-link`(value: CSSObject): Self = StObject.set(x, ":-webkit-any-link", value.asInstanceOf[js.Any])
+      inline def `setColon-webkit-any-link`(value: CSSObject): Self = StObject.set(x, ":-webkit-any-link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-webkit-any-linkUndefined`: Self = StObject.set(x, ":-webkit-any-link", js.undefined)
+      inline def `setColon-webkit-any-linkUndefined`: Self = StObject.set(x, ":-webkit-any-link", js.undefined)
       
-      @scala.inline
-      def `setColon-webkit-anyLeftparenthesisRightparenthesis`(value: CSSObject): Self = StObject.set(x, ":-webkit-any()", value.asInstanceOf[js.Any])
+      inline def `setColon-webkit-anyLeftparenthesisRightparenthesis`(value: CSSObject): Self = StObject.set(x, ":-webkit-any()", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-webkit-anyLeftparenthesisRightparenthesisUndefined`: Self = StObject.set(x, ":-webkit-any()", js.undefined)
+      inline def `setColon-webkit-anyLeftparenthesisRightparenthesisUndefined`: Self = StObject.set(x, ":-webkit-any()", js.undefined)
       
-      @scala.inline
-      def `setColon-webkit-full-screen`(value: CSSObject): Self = StObject.set(x, ":-webkit-full-screen", value.asInstanceOf[js.Any])
+      inline def `setColon-webkit-full-screen`(value: CSSObject): Self = StObject.set(x, ":-webkit-full-screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColon-webkit-full-screenUndefined`: Self = StObject.set(x, ":-webkit-full-screen", js.undefined)
+      inline def `setColon-webkit-full-screenUndefined`: Self = StObject.set(x, ":-webkit-full-screen", js.undefined)
       
-      @scala.inline
-      def `setColonColon-moz-placeholder`(value: CSSObject): Self = StObject.set(x, "::-moz-placeholder", value.asInstanceOf[js.Any])
+      inline def `setColonColon-moz-placeholder`(value: CSSObject): Self = StObject.set(x, "::-moz-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-moz-placeholderUndefined`: Self = StObject.set(x, "::-moz-placeholder", js.undefined)
+      inline def `setColonColon-moz-placeholderUndefined`: Self = StObject.set(x, "::-moz-placeholder", js.undefined)
       
-      @scala.inline
-      def `setColonColon-moz-progress-bar`(value: CSSObject): Self = StObject.set(x, "::-moz-progress-bar", value.asInstanceOf[js.Any])
+      inline def `setColonColon-moz-progress-bar`(value: CSSObject): Self = StObject.set(x, "::-moz-progress-bar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-moz-progress-barUndefined`: Self = StObject.set(x, "::-moz-progress-bar", js.undefined)
+      inline def `setColonColon-moz-progress-barUndefined`: Self = StObject.set(x, "::-moz-progress-bar", js.undefined)
       
-      @scala.inline
-      def `setColonColon-moz-range-progress`(value: CSSObject): Self = StObject.set(x, "::-moz-range-progress", value.asInstanceOf[js.Any])
+      inline def `setColonColon-moz-range-progress`(value: CSSObject): Self = StObject.set(x, "::-moz-range-progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-moz-range-progressUndefined`: Self = StObject.set(x, "::-moz-range-progress", js.undefined)
+      inline def `setColonColon-moz-range-progressUndefined`: Self = StObject.set(x, "::-moz-range-progress", js.undefined)
       
-      @scala.inline
-      def `setColonColon-moz-range-thumb`(value: CSSObject): Self = StObject.set(x, "::-moz-range-thumb", value.asInstanceOf[js.Any])
+      inline def `setColonColon-moz-range-thumb`(value: CSSObject): Self = StObject.set(x, "::-moz-range-thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-moz-range-thumbUndefined`: Self = StObject.set(x, "::-moz-range-thumb", js.undefined)
+      inline def `setColonColon-moz-range-thumbUndefined`: Self = StObject.set(x, "::-moz-range-thumb", js.undefined)
       
-      @scala.inline
-      def `setColonColon-moz-range-track`(value: CSSObject): Self = StObject.set(x, "::-moz-range-track", value.asInstanceOf[js.Any])
+      inline def `setColonColon-moz-range-track`(value: CSSObject): Self = StObject.set(x, "::-moz-range-track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-moz-range-trackUndefined`: Self = StObject.set(x, "::-moz-range-track", js.undefined)
+      inline def `setColonColon-moz-range-trackUndefined`: Self = StObject.set(x, "::-moz-range-track", js.undefined)
       
-      @scala.inline
-      def `setColonColon-moz-selection`(value: CSSObject): Self = StObject.set(x, "::-moz-selection", value.asInstanceOf[js.Any])
+      inline def `setColonColon-moz-selection`(value: CSSObject): Self = StObject.set(x, "::-moz-selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-moz-selectionUndefined`: Self = StObject.set(x, "::-moz-selection", js.undefined)
+      inline def `setColonColon-moz-selectionUndefined`: Self = StObject.set(x, "::-moz-selection", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-backdrop`(value: CSSObject): Self = StObject.set(x, "::-ms-backdrop", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-backdrop`(value: CSSObject): Self = StObject.set(x, "::-ms-backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-backdropUndefined`: Self = StObject.set(x, "::-ms-backdrop", js.undefined)
+      inline def `setColonColon-ms-backdropUndefined`: Self = StObject.set(x, "::-ms-backdrop", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-browse`(value: CSSObject): Self = StObject.set(x, "::-ms-browse", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-browse`(value: CSSObject): Self = StObject.set(x, "::-ms-browse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-browseUndefined`: Self = StObject.set(x, "::-ms-browse", js.undefined)
+      inline def `setColonColon-ms-browseUndefined`: Self = StObject.set(x, "::-ms-browse", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-check`(value: CSSObject): Self = StObject.set(x, "::-ms-check", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-check`(value: CSSObject): Self = StObject.set(x, "::-ms-check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-checkUndefined`: Self = StObject.set(x, "::-ms-check", js.undefined)
+      inline def `setColonColon-ms-checkUndefined`: Self = StObject.set(x, "::-ms-check", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-clear`(value: CSSObject): Self = StObject.set(x, "::-ms-clear", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-clear`(value: CSSObject): Self = StObject.set(x, "::-ms-clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-clearUndefined`: Self = StObject.set(x, "::-ms-clear", js.undefined)
+      inline def `setColonColon-ms-clearUndefined`: Self = StObject.set(x, "::-ms-clear", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-fill`(value: CSSObject): Self = StObject.set(x, "::-ms-fill", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-fill`(value: CSSObject): Self = StObject.set(x, "::-ms-fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-fill-lower`(value: CSSObject): Self = StObject.set(x, "::-ms-fill-lower", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-fill-lower`(value: CSSObject): Self = StObject.set(x, "::-ms-fill-lower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-fill-lowerUndefined`: Self = StObject.set(x, "::-ms-fill-lower", js.undefined)
+      inline def `setColonColon-ms-fill-lowerUndefined`: Self = StObject.set(x, "::-ms-fill-lower", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-fill-upper`(value: CSSObject): Self = StObject.set(x, "::-ms-fill-upper", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-fill-upper`(value: CSSObject): Self = StObject.set(x, "::-ms-fill-upper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-fill-upperUndefined`: Self = StObject.set(x, "::-ms-fill-upper", js.undefined)
+      inline def `setColonColon-ms-fill-upperUndefined`: Self = StObject.set(x, "::-ms-fill-upper", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-fillUndefined`: Self = StObject.set(x, "::-ms-fill", js.undefined)
+      inline def `setColonColon-ms-fillUndefined`: Self = StObject.set(x, "::-ms-fill", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-input-placeholder`(value: CSSObject): Self = StObject.set(x, "::-ms-input-placeholder", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-input-placeholder`(value: CSSObject): Self = StObject.set(x, "::-ms-input-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-input-placeholderUndefined`: Self = StObject.set(x, "::-ms-input-placeholder", js.undefined)
+      inline def `setColonColon-ms-input-placeholderUndefined`: Self = StObject.set(x, "::-ms-input-placeholder", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-reveal`(value: CSSObject): Self = StObject.set(x, "::-ms-reveal", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-reveal`(value: CSSObject): Self = StObject.set(x, "::-ms-reveal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-revealUndefined`: Self = StObject.set(x, "::-ms-reveal", js.undefined)
+      inline def `setColonColon-ms-revealUndefined`: Self = StObject.set(x, "::-ms-reveal", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-thumb`(value: CSSObject): Self = StObject.set(x, "::-ms-thumb", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-thumb`(value: CSSObject): Self = StObject.set(x, "::-ms-thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-thumbUndefined`: Self = StObject.set(x, "::-ms-thumb", js.undefined)
+      inline def `setColonColon-ms-thumbUndefined`: Self = StObject.set(x, "::-ms-thumb", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-ticks-after`(value: CSSObject): Self = StObject.set(x, "::-ms-ticks-after", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-ticks-after`(value: CSSObject): Self = StObject.set(x, "::-ms-ticks-after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-ticks-afterUndefined`: Self = StObject.set(x, "::-ms-ticks-after", js.undefined)
+      inline def `setColonColon-ms-ticks-afterUndefined`: Self = StObject.set(x, "::-ms-ticks-after", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-ticks-before`(value: CSSObject): Self = StObject.set(x, "::-ms-ticks-before", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-ticks-before`(value: CSSObject): Self = StObject.set(x, "::-ms-ticks-before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-ticks-beforeUndefined`: Self = StObject.set(x, "::-ms-ticks-before", js.undefined)
+      inline def `setColonColon-ms-ticks-beforeUndefined`: Self = StObject.set(x, "::-ms-ticks-before", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-tooltip`(value: CSSObject): Self = StObject.set(x, "::-ms-tooltip", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-tooltip`(value: CSSObject): Self = StObject.set(x, "::-ms-tooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-tooltipUndefined`: Self = StObject.set(x, "::-ms-tooltip", js.undefined)
+      inline def `setColonColon-ms-tooltipUndefined`: Self = StObject.set(x, "::-ms-tooltip", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-track`(value: CSSObject): Self = StObject.set(x, "::-ms-track", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-track`(value: CSSObject): Self = StObject.set(x, "::-ms-track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-trackUndefined`: Self = StObject.set(x, "::-ms-track", js.undefined)
+      inline def `setColonColon-ms-trackUndefined`: Self = StObject.set(x, "::-ms-track", js.undefined)
       
-      @scala.inline
-      def `setColonColon-ms-value`(value: CSSObject): Self = StObject.set(x, "::-ms-value", value.asInstanceOf[js.Any])
+      inline def `setColonColon-ms-value`(value: CSSObject): Self = StObject.set(x, "::-ms-value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-ms-valueUndefined`: Self = StObject.set(x, "::-ms-value", js.undefined)
+      inline def `setColonColon-ms-valueUndefined`: Self = StObject.set(x, "::-ms-value", js.undefined)
       
-      @scala.inline
-      def `setColonColon-webkit-backdrop`(value: CSSObject): Self = StObject.set(x, "::-webkit-backdrop", value.asInstanceOf[js.Any])
+      inline def `setColonColon-webkit-backdrop`(value: CSSObject): Self = StObject.set(x, "::-webkit-backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-webkit-backdropUndefined`: Self = StObject.set(x, "::-webkit-backdrop", js.undefined)
+      inline def `setColonColon-webkit-backdropUndefined`: Self = StObject.set(x, "::-webkit-backdrop", js.undefined)
       
-      @scala.inline
-      def `setColonColon-webkit-input-placeholder`(value: CSSObject): Self = StObject.set(x, "::-webkit-input-placeholder", value.asInstanceOf[js.Any])
+      inline def `setColonColon-webkit-input-placeholder`(value: CSSObject): Self = StObject.set(x, "::-webkit-input-placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-webkit-input-placeholderUndefined`: Self = StObject.set(x, "::-webkit-input-placeholder", js.undefined)
+      inline def `setColonColon-webkit-input-placeholderUndefined`: Self = StObject.set(x, "::-webkit-input-placeholder", js.undefined)
       
-      @scala.inline
-      def `setColonColon-webkit-progress-bar`(value: CSSObject): Self = StObject.set(x, "::-webkit-progress-bar", value.asInstanceOf[js.Any])
+      inline def `setColonColon-webkit-progress-bar`(value: CSSObject): Self = StObject.set(x, "::-webkit-progress-bar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-webkit-progress-barUndefined`: Self = StObject.set(x, "::-webkit-progress-bar", js.undefined)
+      inline def `setColonColon-webkit-progress-barUndefined`: Self = StObject.set(x, "::-webkit-progress-bar", js.undefined)
       
-      @scala.inline
-      def `setColonColon-webkit-progress-inner-value`(value: CSSObject): Self = StObject.set(x, "::-webkit-progress-inner-value", value.asInstanceOf[js.Any])
+      inline def `setColonColon-webkit-progress-inner-value`(value: CSSObject): Self = StObject.set(x, "::-webkit-progress-inner-value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-webkit-progress-inner-valueUndefined`: Self = StObject.set(x, "::-webkit-progress-inner-value", js.undefined)
+      inline def `setColonColon-webkit-progress-inner-valueUndefined`: Self = StObject.set(x, "::-webkit-progress-inner-value", js.undefined)
       
-      @scala.inline
-      def `setColonColon-webkit-progress-value`(value: CSSObject): Self = StObject.set(x, "::-webkit-progress-value", value.asInstanceOf[js.Any])
+      inline def `setColonColon-webkit-progress-value`(value: CSSObject): Self = StObject.set(x, "::-webkit-progress-value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-webkit-progress-valueUndefined`: Self = StObject.set(x, "::-webkit-progress-value", js.undefined)
+      inline def `setColonColon-webkit-progress-valueUndefined`: Self = StObject.set(x, "::-webkit-progress-value", js.undefined)
       
-      @scala.inline
-      def `setColonColon-webkit-slider-runnable-track`(value: CSSObject): Self = StObject.set(x, "::-webkit-slider-runnable-track", value.asInstanceOf[js.Any])
+      inline def `setColonColon-webkit-slider-runnable-track`(value: CSSObject): Self = StObject.set(x, "::-webkit-slider-runnable-track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-webkit-slider-runnable-trackUndefined`: Self = StObject.set(x, "::-webkit-slider-runnable-track", js.undefined)
+      inline def `setColonColon-webkit-slider-runnable-trackUndefined`: Self = StObject.set(x, "::-webkit-slider-runnable-track", js.undefined)
       
-      @scala.inline
-      def `setColonColon-webkit-slider-thumb`(value: CSSObject): Self = StObject.set(x, "::-webkit-slider-thumb", value.asInstanceOf[js.Any])
+      inline def `setColonColon-webkit-slider-thumb`(value: CSSObject): Self = StObject.set(x, "::-webkit-slider-thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColon-webkit-slider-thumbUndefined`: Self = StObject.set(x, "::-webkit-slider-thumb", js.undefined)
+      inline def `setColonColon-webkit-slider-thumbUndefined`: Self = StObject.set(x, "::-webkit-slider-thumb", js.undefined)
       
-      @scala.inline
-      def setColonColonafter(value: CSSObject): Self = StObject.set(x, "::after", value.asInstanceOf[js.Any])
+      inline def setColonColonafter(value: CSSObject): Self = StObject.set(x, "::after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonafterUndefined: Self = StObject.set(x, "::after", js.undefined)
+      inline def setColonColonafterUndefined: Self = StObject.set(x, "::after", js.undefined)
       
-      @scala.inline
-      def setColonColonbackdrop(value: CSSObject): Self = StObject.set(x, "::backdrop", value.asInstanceOf[js.Any])
+      inline def setColonColonbackdrop(value: CSSObject): Self = StObject.set(x, "::backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonbackdropUndefined: Self = StObject.set(x, "::backdrop", js.undefined)
+      inline def setColonColonbackdropUndefined: Self = StObject.set(x, "::backdrop", js.undefined)
       
-      @scala.inline
-      def setColonColonbefore(value: CSSObject): Self = StObject.set(x, "::before", value.asInstanceOf[js.Any])
+      inline def setColonColonbefore(value: CSSObject): Self = StObject.set(x, "::before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonbeforeUndefined: Self = StObject.set(x, "::before", js.undefined)
+      inline def setColonColonbeforeUndefined: Self = StObject.set(x, "::before", js.undefined)
       
-      @scala.inline
-      def setColonColoncue(value: CSSObject): Self = StObject.set(x, "::cue", value.asInstanceOf[js.Any])
+      inline def setColonColoncue(value: CSSObject): Self = StObject.set(x, "::cue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColoncue-region`(value: CSSObject): Self = StObject.set(x, "::cue-region", value.asInstanceOf[js.Any])
+      inline def `setColonColoncue-region`(value: CSSObject): Self = StObject.set(x, "::cue-region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColoncue-regionUndefined`: Self = StObject.set(x, "::cue-region", js.undefined)
+      inline def `setColonColoncue-regionUndefined`: Self = StObject.set(x, "::cue-region", js.undefined)
       
-      @scala.inline
-      def setColonColoncueUndefined: Self = StObject.set(x, "::cue", js.undefined)
+      inline def setColonColoncueUndefined: Self = StObject.set(x, "::cue", js.undefined)
       
-      @scala.inline
-      def `setColonColonfirst-letter`(value: CSSObject): Self = StObject.set(x, "::first-letter", value.asInstanceOf[js.Any])
+      inline def `setColonColonfirst-letter`(value: CSSObject): Self = StObject.set(x, "::first-letter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColonfirst-letterUndefined`: Self = StObject.set(x, "::first-letter", js.undefined)
+      inline def `setColonColonfirst-letterUndefined`: Self = StObject.set(x, "::first-letter", js.undefined)
       
-      @scala.inline
-      def `setColonColonfirst-line`(value: CSSObject): Self = StObject.set(x, "::first-line", value.asInstanceOf[js.Any])
+      inline def `setColonColonfirst-line`(value: CSSObject): Self = StObject.set(x, "::first-line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColonfirst-lineUndefined`: Self = StObject.set(x, "::first-line", js.undefined)
+      inline def `setColonColonfirst-lineUndefined`: Self = StObject.set(x, "::first-line", js.undefined)
       
-      @scala.inline
-      def `setColonColongrammar-error`(value: CSSObject): Self = StObject.set(x, "::grammar-error", value.asInstanceOf[js.Any])
+      inline def `setColonColongrammar-error`(value: CSSObject): Self = StObject.set(x, "::grammar-error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColongrammar-errorUndefined`: Self = StObject.set(x, "::grammar-error", js.undefined)
+      inline def `setColonColongrammar-errorUndefined`: Self = StObject.set(x, "::grammar-error", js.undefined)
       
-      @scala.inline
-      def setColonColonmarker(value: CSSObject): Self = StObject.set(x, "::marker", value.asInstanceOf[js.Any])
+      inline def setColonColonmarker(value: CSSObject): Self = StObject.set(x, "::marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonmarkerUndefined: Self = StObject.set(x, "::marker", js.undefined)
+      inline def setColonColonmarkerUndefined: Self = StObject.set(x, "::marker", js.undefined)
       
-      @scala.inline
-      def setColonColonpart(value: CSSObject): Self = StObject.set(x, "::part", value.asInstanceOf[js.Any])
+      inline def setColonColonpart(value: CSSObject): Self = StObject.set(x, "::part", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonpartUndefined: Self = StObject.set(x, "::part", js.undefined)
+      inline def setColonColonpartUndefined: Self = StObject.set(x, "::part", js.undefined)
       
-      @scala.inline
-      def setColonColonplaceholder(value: CSSObject): Self = StObject.set(x, "::placeholder", value.asInstanceOf[js.Any])
+      inline def setColonColonplaceholder(value: CSSObject): Self = StObject.set(x, "::placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonplaceholderUndefined: Self = StObject.set(x, "::placeholder", js.undefined)
+      inline def setColonColonplaceholderUndefined: Self = StObject.set(x, "::placeholder", js.undefined)
       
-      @scala.inline
-      def setColonColonselection(value: CSSObject): Self = StObject.set(x, "::selection", value.asInstanceOf[js.Any])
+      inline def setColonColonselection(value: CSSObject): Self = StObject.set(x, "::selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonselectionUndefined: Self = StObject.set(x, "::selection", js.undefined)
+      inline def setColonColonselectionUndefined: Self = StObject.set(x, "::selection", js.undefined)
       
-      @scala.inline
-      def setColonColonslotted(value: CSSObject): Self = StObject.set(x, "::slotted", value.asInstanceOf[js.Any])
+      inline def setColonColonslotted(value: CSSObject): Self = StObject.set(x, "::slotted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonslottedUndefined: Self = StObject.set(x, "::slotted", js.undefined)
+      inline def setColonColonslottedUndefined: Self = StObject.set(x, "::slotted", js.undefined)
       
-      @scala.inline
-      def `setColonColonspelling-error`(value: CSSObject): Self = StObject.set(x, "::spelling-error", value.asInstanceOf[js.Any])
+      inline def `setColonColonspelling-error`(value: CSSObject): Self = StObject.set(x, "::spelling-error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColonspelling-errorUndefined`: Self = StObject.set(x, "::spelling-error", js.undefined)
+      inline def `setColonColonspelling-errorUndefined`: Self = StObject.set(x, "::spelling-error", js.undefined)
       
-      @scala.inline
-      def setColonactive(value: CSSObject): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
+      inline def setColonactive(value: CSSObject): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonactiveUndefined: Self = StObject.set(x, ":active", js.undefined)
+      inline def setColonactiveUndefined: Self = StObject.set(x, ":active", js.undefined)
       
-      @scala.inline
-      def setColonafter(value: CSSObject): Self = StObject.set(x, ":after", value.asInstanceOf[js.Any])
+      inline def setColonafter(value: CSSObject): Self = StObject.set(x, ":after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonafterUndefined: Self = StObject.set(x, ":after", js.undefined)
+      inline def setColonafterUndefined: Self = StObject.set(x, ":after", js.undefined)
       
-      @scala.inline
-      def `setColonany-link`(value: CSSObject): Self = StObject.set(x, ":any-link", value.asInstanceOf[js.Any])
+      inline def `setColonany-link`(value: CSSObject): Self = StObject.set(x, ":any-link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonany-linkUndefined`: Self = StObject.set(x, ":any-link", js.undefined)
+      inline def `setColonany-linkUndefined`: Self = StObject.set(x, ":any-link", js.undefined)
       
-      @scala.inline
-      def setColonbefore(value: CSSObject): Self = StObject.set(x, ":before", value.asInstanceOf[js.Any])
+      inline def setColonbefore(value: CSSObject): Self = StObject.set(x, ":before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonbeforeUndefined: Self = StObject.set(x, ":before", js.undefined)
+      inline def setColonbeforeUndefined: Self = StObject.set(x, ":before", js.undefined)
       
-      @scala.inline
-      def setColonblank(value: CSSObject): Self = StObject.set(x, ":blank", value.asInstanceOf[js.Any])
+      inline def setColonblank(value: CSSObject): Self = StObject.set(x, ":blank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonblankUndefined: Self = StObject.set(x, ":blank", js.undefined)
+      inline def setColonblankUndefined: Self = StObject.set(x, ":blank", js.undefined)
       
-      @scala.inline
-      def setColonchecked(value: CSSObject): Self = StObject.set(x, ":checked", value.asInstanceOf[js.Any])
+      inline def setColonchecked(value: CSSObject): Self = StObject.set(x, ":checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColoncheckedUndefined: Self = StObject.set(x, ":checked", js.undefined)
+      inline def setColoncheckedUndefined: Self = StObject.set(x, ":checked", js.undefined)
       
-      @scala.inline
-      def setColondefault(value: CSSObject): Self = StObject.set(x, ":default", value.asInstanceOf[js.Any])
+      inline def setColondefault(value: CSSObject): Self = StObject.set(x, ":default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondefaultUndefined: Self = StObject.set(x, ":default", js.undefined)
+      inline def setColondefaultUndefined: Self = StObject.set(x, ":default", js.undefined)
       
-      @scala.inline
-      def setColondefined(value: CSSObject): Self = StObject.set(x, ":defined", value.asInstanceOf[js.Any])
+      inline def setColondefined(value: CSSObject): Self = StObject.set(x, ":defined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondefinedUndefined: Self = StObject.set(x, ":defined", js.undefined)
+      inline def setColondefinedUndefined: Self = StObject.set(x, ":defined", js.undefined)
       
-      @scala.inline
-      def setColondir(value: CSSObject): Self = StObject.set(x, ":dir", value.asInstanceOf[js.Any])
+      inline def setColondir(value: CSSObject): Self = StObject.set(x, ":dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondirUndefined: Self = StObject.set(x, ":dir", js.undefined)
+      inline def setColondirUndefined: Self = StObject.set(x, ":dir", js.undefined)
       
-      @scala.inline
-      def setColondisabled(value: CSSObject): Self = StObject.set(x, ":disabled", value.asInstanceOf[js.Any])
+      inline def setColondisabled(value: CSSObject): Self = StObject.set(x, ":disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondisabledUndefined: Self = StObject.set(x, ":disabled", js.undefined)
+      inline def setColondisabledUndefined: Self = StObject.set(x, ":disabled", js.undefined)
       
-      @scala.inline
-      def setColonempty(value: CSSObject): Self = StObject.set(x, ":empty", value.asInstanceOf[js.Any])
+      inline def setColonempty(value: CSSObject): Self = StObject.set(x, ":empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonemptyUndefined: Self = StObject.set(x, ":empty", js.undefined)
+      inline def setColonemptyUndefined: Self = StObject.set(x, ":empty", js.undefined)
       
-      @scala.inline
-      def setColonenabled(value: CSSObject): Self = StObject.set(x, ":enabled", value.asInstanceOf[js.Any])
+      inline def setColonenabled(value: CSSObject): Self = StObject.set(x, ":enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonenabledUndefined: Self = StObject.set(x, ":enabled", js.undefined)
+      inline def setColonenabledUndefined: Self = StObject.set(x, ":enabled", js.undefined)
       
-      @scala.inline
-      def setColonfirst(value: CSSObject): Self = StObject.set(x, ":first", value.asInstanceOf[js.Any])
+      inline def setColonfirst(value: CSSObject): Self = StObject.set(x, ":first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-child`(value: CSSObject): Self = StObject.set(x, ":first-child", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-child`(value: CSSObject): Self = StObject.set(x, ":first-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-childUndefined`: Self = StObject.set(x, ":first-child", js.undefined)
+      inline def `setColonfirst-childUndefined`: Self = StObject.set(x, ":first-child", js.undefined)
       
-      @scala.inline
-      def `setColonfirst-letter`(value: CSSObject): Self = StObject.set(x, ":first-letter", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-letter`(value: CSSObject): Self = StObject.set(x, ":first-letter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-letterUndefined`: Self = StObject.set(x, ":first-letter", js.undefined)
+      inline def `setColonfirst-letterUndefined`: Self = StObject.set(x, ":first-letter", js.undefined)
       
-      @scala.inline
-      def `setColonfirst-line`(value: CSSObject): Self = StObject.set(x, ":first-line", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-line`(value: CSSObject): Self = StObject.set(x, ":first-line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-lineUndefined`: Self = StObject.set(x, ":first-line", js.undefined)
+      inline def `setColonfirst-lineUndefined`: Self = StObject.set(x, ":first-line", js.undefined)
       
-      @scala.inline
-      def `setColonfirst-of-type`(value: CSSObject): Self = StObject.set(x, ":first-of-type", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-of-type`(value: CSSObject): Self = StObject.set(x, ":first-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-of-typeUndefined`: Self = StObject.set(x, ":first-of-type", js.undefined)
+      inline def `setColonfirst-of-typeUndefined`: Self = StObject.set(x, ":first-of-type", js.undefined)
       
-      @scala.inline
-      def setColonfirstUndefined: Self = StObject.set(x, ":first", js.undefined)
+      inline def setColonfirstUndefined: Self = StObject.set(x, ":first", js.undefined)
       
-      @scala.inline
-      def setColonfocus(value: CSSObject): Self = StObject.set(x, ":focus", value.asInstanceOf[js.Any])
+      inline def setColonfocus(value: CSSObject): Self = StObject.set(x, ":focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfocus-visible`(value: CSSObject): Self = StObject.set(x, ":focus-visible", value.asInstanceOf[js.Any])
+      inline def `setColonfocus-visible`(value: CSSObject): Self = StObject.set(x, ":focus-visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfocus-visibleUndefined`: Self = StObject.set(x, ":focus-visible", js.undefined)
+      inline def `setColonfocus-visibleUndefined`: Self = StObject.set(x, ":focus-visible", js.undefined)
       
-      @scala.inline
-      def `setColonfocus-within`(value: CSSObject): Self = StObject.set(x, ":focus-within", value.asInstanceOf[js.Any])
+      inline def `setColonfocus-within`(value: CSSObject): Self = StObject.set(x, ":focus-within", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfocus-withinUndefined`: Self = StObject.set(x, ":focus-within", js.undefined)
+      inline def `setColonfocus-withinUndefined`: Self = StObject.set(x, ":focus-within", js.undefined)
       
-      @scala.inline
-      def setColonfocusUndefined: Self = StObject.set(x, ":focus", js.undefined)
+      inline def setColonfocusUndefined: Self = StObject.set(x, ":focus", js.undefined)
       
-      @scala.inline
-      def setColonfullscreen(value: CSSObject): Self = StObject.set(x, ":fullscreen", value.asInstanceOf[js.Any])
+      inline def setColonfullscreen(value: CSSObject): Self = StObject.set(x, ":fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonfullscreenUndefined: Self = StObject.set(x, ":fullscreen", js.undefined)
+      inline def setColonfullscreenUndefined: Self = StObject.set(x, ":fullscreen", js.undefined)
       
-      @scala.inline
-      def setColonhas(value: CSSObject): Self = StObject.set(x, ":has", value.asInstanceOf[js.Any])
+      inline def setColonhas(value: CSSObject): Self = StObject.set(x, ":has", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonhasUndefined: Self = StObject.set(x, ":has", js.undefined)
+      inline def setColonhasUndefined: Self = StObject.set(x, ":has", js.undefined)
       
-      @scala.inline
-      def setColonhost(value: CSSObject): Self = StObject.set(x, ":host", value.asInstanceOf[js.Any])
+      inline def setColonhost(value: CSSObject): Self = StObject.set(x, ":host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonhost-context`(value: CSSObject): Self = StObject.set(x, ":host-context", value.asInstanceOf[js.Any])
+      inline def `setColonhost-context`(value: CSSObject): Self = StObject.set(x, ":host-context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonhost-contextUndefined`: Self = StObject.set(x, ":host-context", js.undefined)
+      inline def `setColonhost-contextUndefined`: Self = StObject.set(x, ":host-context", js.undefined)
       
-      @scala.inline
-      def setColonhostUndefined: Self = StObject.set(x, ":host", js.undefined)
+      inline def setColonhostUndefined: Self = StObject.set(x, ":host", js.undefined)
       
-      @scala.inline
-      def setColonhover(value: CSSObject): Self = StObject.set(x, ":hover", value.asInstanceOf[js.Any])
+      inline def setColonhover(value: CSSObject): Self = StObject.set(x, ":hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonhoverUndefined: Self = StObject.set(x, ":hover", js.undefined)
+      inline def setColonhoverUndefined: Self = StObject.set(x, ":hover", js.undefined)
       
-      @scala.inline
-      def `setColonin-range`(value: CSSObject): Self = StObject.set(x, ":in-range", value.asInstanceOf[js.Any])
+      inline def `setColonin-range`(value: CSSObject): Self = StObject.set(x, ":in-range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonin-rangeUndefined`: Self = StObject.set(x, ":in-range", js.undefined)
+      inline def `setColonin-rangeUndefined`: Self = StObject.set(x, ":in-range", js.undefined)
       
-      @scala.inline
-      def setColonindeterminate(value: CSSObject): Self = StObject.set(x, ":indeterminate", value.asInstanceOf[js.Any])
+      inline def setColonindeterminate(value: CSSObject): Self = StObject.set(x, ":indeterminate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonindeterminateUndefined: Self = StObject.set(x, ":indeterminate", js.undefined)
+      inline def setColonindeterminateUndefined: Self = StObject.set(x, ":indeterminate", js.undefined)
       
-      @scala.inline
-      def setColoninvalid(value: CSSObject): Self = StObject.set(x, ":invalid", value.asInstanceOf[js.Any])
+      inline def setColoninvalid(value: CSSObject): Self = StObject.set(x, ":invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColoninvalidUndefined: Self = StObject.set(x, ":invalid", js.undefined)
+      inline def setColoninvalidUndefined: Self = StObject.set(x, ":invalid", js.undefined)
       
-      @scala.inline
-      def setColonis(value: CSSObject): Self = StObject.set(x, ":is", value.asInstanceOf[js.Any])
+      inline def setColonis(value: CSSObject): Self = StObject.set(x, ":is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonisUndefined: Self = StObject.set(x, ":is", js.undefined)
+      inline def setColonisUndefined: Self = StObject.set(x, ":is", js.undefined)
       
-      @scala.inline
-      def setColonlang(value: CSSObject): Self = StObject.set(x, ":lang", value.asInstanceOf[js.Any])
+      inline def setColonlang(value: CSSObject): Self = StObject.set(x, ":lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlangUndefined: Self = StObject.set(x, ":lang", js.undefined)
+      inline def setColonlangUndefined: Self = StObject.set(x, ":lang", js.undefined)
       
-      @scala.inline
-      def `setColonlast-child`(value: CSSObject): Self = StObject.set(x, ":last-child", value.asInstanceOf[js.Any])
+      inline def `setColonlast-child`(value: CSSObject): Self = StObject.set(x, ":last-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonlast-childUndefined`: Self = StObject.set(x, ":last-child", js.undefined)
+      inline def `setColonlast-childUndefined`: Self = StObject.set(x, ":last-child", js.undefined)
       
-      @scala.inline
-      def `setColonlast-of-type`(value: CSSObject): Self = StObject.set(x, ":last-of-type", value.asInstanceOf[js.Any])
+      inline def `setColonlast-of-type`(value: CSSObject): Self = StObject.set(x, ":last-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonlast-of-typeUndefined`: Self = StObject.set(x, ":last-of-type", js.undefined)
+      inline def `setColonlast-of-typeUndefined`: Self = StObject.set(x, ":last-of-type", js.undefined)
       
-      @scala.inline
-      def setColonleft(value: CSSObject): Self = StObject.set(x, ":left", value.asInstanceOf[js.Any])
+      inline def setColonleft(value: CSSObject): Self = StObject.set(x, ":left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonleftUndefined: Self = StObject.set(x, ":left", js.undefined)
+      inline def setColonleftUndefined: Self = StObject.set(x, ":left", js.undefined)
       
-      @scala.inline
-      def setColonlink(value: CSSObject): Self = StObject.set(x, ":link", value.asInstanceOf[js.Any])
+      inline def setColonlink(value: CSSObject): Self = StObject.set(x, ":link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlinkUndefined: Self = StObject.set(x, ":link", js.undefined)
+      inline def setColonlinkUndefined: Self = StObject.set(x, ":link", js.undefined)
       
-      @scala.inline
-      def setColonmatchesLeftparenthesisRightparenthesis(value: CSSObject): Self = StObject.set(x, ":matches()", value.asInstanceOf[js.Any])
+      inline def setColonmatchesLeftparenthesisRightparenthesis(value: CSSObject): Self = StObject.set(x, ":matches()", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonmatchesLeftparenthesisRightparenthesisUndefined: Self = StObject.set(x, ":matches()", js.undefined)
+      inline def setColonmatchesLeftparenthesisRightparenthesisUndefined: Self = StObject.set(x, ":matches()", js.undefined)
       
-      @scala.inline
-      def setColonnot(value: CSSObject): Self = StObject.set(x, ":not", value.asInstanceOf[js.Any])
+      inline def setColonnot(value: CSSObject): Self = StObject.set(x, ":not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonnotUndefined: Self = StObject.set(x, ":not", js.undefined)
+      inline def setColonnotUndefined: Self = StObject.set(x, ":not", js.undefined)
       
-      @scala.inline
-      def `setColonnth-child`(value: CSSObject): Self = StObject.set(x, ":nth-child", value.asInstanceOf[js.Any])
+      inline def `setColonnth-child`(value: CSSObject): Self = StObject.set(x, ":nth-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-childUndefined`: Self = StObject.set(x, ":nth-child", js.undefined)
+      inline def `setColonnth-childUndefined`: Self = StObject.set(x, ":nth-child", js.undefined)
       
-      @scala.inline
-      def `setColonnth-last-child`(value: CSSObject): Self = StObject.set(x, ":nth-last-child", value.asInstanceOf[js.Any])
+      inline def `setColonnth-last-child`(value: CSSObject): Self = StObject.set(x, ":nth-last-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-last-childUndefined`: Self = StObject.set(x, ":nth-last-child", js.undefined)
+      inline def `setColonnth-last-childUndefined`: Self = StObject.set(x, ":nth-last-child", js.undefined)
       
-      @scala.inline
-      def `setColonnth-last-of-type`(value: CSSObject): Self = StObject.set(x, ":nth-last-of-type", value.asInstanceOf[js.Any])
+      inline def `setColonnth-last-of-type`(value: CSSObject): Self = StObject.set(x, ":nth-last-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-last-of-typeUndefined`: Self = StObject.set(x, ":nth-last-of-type", js.undefined)
+      inline def `setColonnth-last-of-typeUndefined`: Self = StObject.set(x, ":nth-last-of-type", js.undefined)
       
-      @scala.inline
-      def `setColonnth-of-type`(value: CSSObject): Self = StObject.set(x, ":nth-of-type", value.asInstanceOf[js.Any])
+      inline def `setColonnth-of-type`(value: CSSObject): Self = StObject.set(x, ":nth-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-of-typeUndefined`: Self = StObject.set(x, ":nth-of-type", js.undefined)
+      inline def `setColonnth-of-typeUndefined`: Self = StObject.set(x, ":nth-of-type", js.undefined)
       
-      @scala.inline
-      def `setColononly-child`(value: CSSObject): Self = StObject.set(x, ":only-child", value.asInstanceOf[js.Any])
+      inline def `setColononly-child`(value: CSSObject): Self = StObject.set(x, ":only-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColononly-childUndefined`: Self = StObject.set(x, ":only-child", js.undefined)
+      inline def `setColononly-childUndefined`: Self = StObject.set(x, ":only-child", js.undefined)
       
-      @scala.inline
-      def `setColononly-of-type`(value: CSSObject): Self = StObject.set(x, ":only-of-type", value.asInstanceOf[js.Any])
+      inline def `setColononly-of-type`(value: CSSObject): Self = StObject.set(x, ":only-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColononly-of-typeUndefined`: Self = StObject.set(x, ":only-of-type", js.undefined)
+      inline def `setColononly-of-typeUndefined`: Self = StObject.set(x, ":only-of-type", js.undefined)
       
-      @scala.inline
-      def setColonoptional(value: CSSObject): Self = StObject.set(x, ":optional", value.asInstanceOf[js.Any])
+      inline def setColonoptional(value: CSSObject): Self = StObject.set(x, ":optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonoptionalUndefined: Self = StObject.set(x, ":optional", js.undefined)
+      inline def setColonoptionalUndefined: Self = StObject.set(x, ":optional", js.undefined)
       
-      @scala.inline
-      def `setColonout-of-range`(value: CSSObject): Self = StObject.set(x, ":out-of-range", value.asInstanceOf[js.Any])
+      inline def `setColonout-of-range`(value: CSSObject): Self = StObject.set(x, ":out-of-range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonout-of-rangeUndefined`: Self = StObject.set(x, ":out-of-range", js.undefined)
+      inline def `setColonout-of-rangeUndefined`: Self = StObject.set(x, ":out-of-range", js.undefined)
       
-      @scala.inline
-      def `setColonplaceholder-shown`(value: CSSObject): Self = StObject.set(x, ":placeholder-shown", value.asInstanceOf[js.Any])
+      inline def `setColonplaceholder-shown`(value: CSSObject): Self = StObject.set(x, ":placeholder-shown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonplaceholder-shownUndefined`: Self = StObject.set(x, ":placeholder-shown", js.undefined)
+      inline def `setColonplaceholder-shownUndefined`: Self = StObject.set(x, ":placeholder-shown", js.undefined)
       
-      @scala.inline
-      def `setColonread-only`(value: CSSObject): Self = StObject.set(x, ":read-only", value.asInstanceOf[js.Any])
+      inline def `setColonread-only`(value: CSSObject): Self = StObject.set(x, ":read-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonread-onlyUndefined`: Self = StObject.set(x, ":read-only", js.undefined)
+      inline def `setColonread-onlyUndefined`: Self = StObject.set(x, ":read-only", js.undefined)
       
-      @scala.inline
-      def `setColonread-write`(value: CSSObject): Self = StObject.set(x, ":read-write", value.asInstanceOf[js.Any])
+      inline def `setColonread-write`(value: CSSObject): Self = StObject.set(x, ":read-write", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonread-writeUndefined`: Self = StObject.set(x, ":read-write", js.undefined)
+      inline def `setColonread-writeUndefined`: Self = StObject.set(x, ":read-write", js.undefined)
       
-      @scala.inline
-      def setColonrequired(value: CSSObject): Self = StObject.set(x, ":required", value.asInstanceOf[js.Any])
+      inline def setColonrequired(value: CSSObject): Self = StObject.set(x, ":required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonrequiredUndefined: Self = StObject.set(x, ":required", js.undefined)
+      inline def setColonrequiredUndefined: Self = StObject.set(x, ":required", js.undefined)
       
-      @scala.inline
-      def setColonright(value: CSSObject): Self = StObject.set(x, ":right", value.asInstanceOf[js.Any])
+      inline def setColonright(value: CSSObject): Self = StObject.set(x, ":right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonrightUndefined: Self = StObject.set(x, ":right", js.undefined)
+      inline def setColonrightUndefined: Self = StObject.set(x, ":right", js.undefined)
       
-      @scala.inline
-      def setColonroot(value: CSSObject): Self = StObject.set(x, ":root", value.asInstanceOf[js.Any])
+      inline def setColonroot(value: CSSObject): Self = StObject.set(x, ":root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonrootUndefined: Self = StObject.set(x, ":root", js.undefined)
+      inline def setColonrootUndefined: Self = StObject.set(x, ":root", js.undefined)
       
-      @scala.inline
-      def setColonscope(value: CSSObject): Self = StObject.set(x, ":scope", value.asInstanceOf[js.Any])
+      inline def setColonscope(value: CSSObject): Self = StObject.set(x, ":scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonscopeUndefined: Self = StObject.set(x, ":scope", js.undefined)
+      inline def setColonscopeUndefined: Self = StObject.set(x, ":scope", js.undefined)
       
-      @scala.inline
-      def setColontarget(value: CSSObject): Self = StObject.set(x, ":target", value.asInstanceOf[js.Any])
+      inline def setColontarget(value: CSSObject): Self = StObject.set(x, ":target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColontargetUndefined: Self = StObject.set(x, ":target", js.undefined)
+      inline def setColontargetUndefined: Self = StObject.set(x, ":target", js.undefined)
       
-      @scala.inline
-      def setColonvalid(value: CSSObject): Self = StObject.set(x, ":valid", value.asInstanceOf[js.Any])
+      inline def setColonvalid(value: CSSObject): Self = StObject.set(x, ":valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonvalidUndefined: Self = StObject.set(x, ":valid", js.undefined)
+      inline def setColonvalidUndefined: Self = StObject.set(x, ":valid", js.undefined)
       
-      @scala.inline
-      def setColonvisited(value: CSSObject): Self = StObject.set(x, ":visited", value.asInstanceOf[js.Any])
+      inline def setColonvisited(value: CSSObject): Self = StObject.set(x, ":visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonvisitedUndefined: Self = StObject.set(x, ":visited", js.undefined)
+      inline def setColonvisitedUndefined: Self = StObject.set(x, ":visited", js.undefined)
       
-      @scala.inline
-      def setColonwhere(value: CSSObject): Self = StObject.set(x, ":where", value.asInstanceOf[js.Any])
+      inline def setColonwhere(value: CSSObject): Self = StObject.set(x, ":where", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonwhereUndefined: Self = StObject.set(x, ":where", js.undefined)
+      inline def setColonwhereUndefined: Self = StObject.set(x, ":where", js.undefined)
     }
   }
   
@@ -1129,20 +901,16 @@ object mod {
   }
   object EmotionBaseContext {
     
-    @scala.inline
-    def apply(): EmotionBaseContext = {
+    inline def apply(): EmotionBaseContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmotionBaseContext]
     }
     
-    @scala.inline
-    implicit class EmotionBaseContextMutableBuilder[Self <: EmotionBaseContext] (val x: Self) extends AnyVal {
+    extension [Self <: EmotionBaseContext](x: Self) {
       
-      @scala.inline
-      def set__SECRET_EMOTION__(value: Emotion): Self = StObject.set(x, "__SECRET_EMOTION__", value.asInstanceOf[js.Any])
+      inline def set__SECRET_EMOTION__(value: Emotion): Self = StObject.set(x, "__SECRET_EMOTION__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__SECRET_EMOTION__Undefined: Self = StObject.set(x, "__SECRET_EMOTION__", js.undefined)
+      inline def set__SECRET_EMOTION__Undefined: Self = StObject.set(x, "__SECRET_EMOTION__", js.undefined)
     }
   }
   
@@ -1158,29 +926,22 @@ object mod {
   }
   object EmotionCache {
     
-    @scala.inline
-    def apply(inserted: StringDictionary[String], key: String, registered: StringDictionary[String]): EmotionCache = {
+    inline def apply(inserted: StringDictionary[String], key: String, registered: StringDictionary[String]): EmotionCache = {
       val __obj = js.Dynamic.literal(inserted = inserted.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], registered = registered.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmotionCache]
     }
     
-    @scala.inline
-    implicit class EmotionCacheMutableBuilder[Self <: EmotionCache] (val x: Self) extends AnyVal {
+    extension [Self <: EmotionCache](x: Self) {
       
-      @scala.inline
-      def setInserted(value: StringDictionary[String]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
+      inline def setInserted(value: StringDictionary[String]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setRegistered(value: StringDictionary[String]): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
+      inline def setRegistered(value: StringDictionary[String]): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1190,8 +951,7 @@ object mod {
        with /* key */ StringDictionary[js.Any]
   object EmotionContext {
     
-    @scala.inline
-    def apply(): EmotionContext = {
+    inline def apply(): EmotionContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmotionContext]
     }
@@ -1213,58 +973,42 @@ object mod {
   }
   object EmotionOptions {
     
-    @scala.inline
-    def apply(): EmotionOptions = {
+    inline def apply(): EmotionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmotionOptions]
     }
     
-    @scala.inline
-    implicit class EmotionOptionsMutableBuilder[Self <: EmotionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EmotionOptions](x: Self) {
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setPrefix(
+      inline def setPrefix(
         value: Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ `1` | `2` | `3`, Boolean])
       ): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixFunction3(value: (/* key */ String, /* value */ String, /* context */ `1` | `2` | `3`) => Boolean): Self = StObject.set(x, "prefix", js.Any.fromFunction3(value))
+      inline def setPrefixFunction3(value: (/* key */ String, /* value */ String, /* context */ `1` | `2` | `3`) => Boolean): Self = StObject.set(x, "prefix", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setStylisPlugins(value: StylisPlugins): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
+      inline def setStylisPlugins(value: StylisPlugins): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylisPluginsFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "stylisPlugins", js.Any.fromFunction1(value))
+      inline def setStylisPluginsFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "stylisPlugins", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylisPluginsNull: Self = StObject.set(x, "stylisPlugins", null)
+      inline def setStylisPluginsNull: Self = StObject.set(x, "stylisPlugins", null)
       
-      @scala.inline
-      def setStylisPluginsUndefined: Self = StObject.set(x, "stylisPlugins", js.undefined)
+      inline def setStylisPluginsUndefined: Self = StObject.set(x, "stylisPlugins", js.undefined)
       
-      @scala.inline
-      def setStylisPluginsVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "stylisPlugins", js.Array(value :_*))
+      inline def setStylisPluginsVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "stylisPlugins", js.Array(value :_*))
     }
   }
   
@@ -1309,23 +1053,18 @@ object mod {
       }
       object HTMLAttributes {
         
-        @scala.inline
-        def apply(): HTMLAttributes = {
+        inline def apply(): HTMLAttributes = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[HTMLAttributes]
         }
         
-        @scala.inline
-        implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes] (val x: Self) extends AnyVal {
+        extension [Self <: HTMLAttributes](x: Self) {
           
-          @scala.inline
-          def setCss(value: Interpolation): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+          inline def setCss(value: Interpolation): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCssNull: Self = StObject.set(x, "css", null)
+          inline def setCssNull: Self = StObject.set(x, "css", null)
           
-          @scala.inline
-          def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+          inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
         }
       }
     }
@@ -1339,23 +1078,18 @@ object mod {
     }
     object HTMLAttributes {
       
-      @scala.inline
-      def apply[T](): HTMLAttributes[T] = {
+      inline def apply[T](): HTMLAttributes[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[HTMLAttributes[T]]
       }
       
-      @scala.inline
-      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
+      extension [Self <: HTMLAttributes[?], T](x: Self & HTMLAttributes[T]) {
         
-        @scala.inline
-        def setCss(value: Interpolation): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+        inline def setCss(value: Interpolation): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCssNull: Self = StObject.set(x, "css", null)
+        inline def setCssNull: Self = StObject.set(x, "css", null)
         
-        @scala.inline
-        def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+        inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       }
     }
   }

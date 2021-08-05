@@ -33,25 +33,19 @@ trait TreeHierarchicalDataSourceSettingsTreeDSPaging
 }
 object TreeHierarchicalDataSourceSettingsTreeDSPaging {
   
-  @scala.inline
-  def apply(): TreeHierarchicalDataSourceSettingsTreeDSPaging = {
+  inline def apply(): TreeHierarchicalDataSourceSettingsTreeDSPaging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSPaging]
   }
   
-  @scala.inline
-  implicit class TreeHierarchicalDataSourceSettingsTreeDSPagingMutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDSPaging] (val x: Self) extends AnyVal {
+  extension [Self <: TreeHierarchicalDataSourceSettingsTreeDSPaging](x: Self) {
     
-    @scala.inline
-    def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
+    inline def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
+    inline def setContextRowModeUndefined: Self = StObject.set(x, "contextRowMode", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

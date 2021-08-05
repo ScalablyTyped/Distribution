@@ -81,49 +81,35 @@ trait SchemaDocumentation extends StObject {
 }
 object SchemaDocumentation {
   
-  @scala.inline
-  def apply(): SchemaDocumentation = {
+  inline def apply(): SchemaDocumentation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDocumentation]
   }
   
-  @scala.inline
-  implicit class SchemaDocumentationMutableBuilder[Self <: SchemaDocumentation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDocumentation](x: Self) {
     
-    @scala.inline
-    def setDocumentationRootUrl(value: String): Self = StObject.set(x, "documentationRootUrl", value.asInstanceOf[js.Any])
+    inline def setDocumentationRootUrl(value: String): Self = StObject.set(x, "documentationRootUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationRootUrlUndefined: Self = StObject.set(x, "documentationRootUrl", js.undefined)
+    inline def setDocumentationRootUrlUndefined: Self = StObject.set(x, "documentationRootUrl", js.undefined)
     
-    @scala.inline
-    def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+    inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
+    inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
-    @scala.inline
-    def setPages(value: js.Array[SchemaPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[SchemaPage]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: SchemaPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: SchemaPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setRules(value: js.Array[SchemaDocumentationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SchemaDocumentationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SchemaDocumentationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaDocumentationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

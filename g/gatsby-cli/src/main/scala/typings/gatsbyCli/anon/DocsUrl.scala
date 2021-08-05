@@ -14,22 +14,17 @@ trait DocsUrl extends StObject {
 }
 object DocsUrl {
   
-  @scala.inline
-  def apply(docsUrl: String, level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: js.Any => String): DocsUrl = {
+  inline def apply(docsUrl: String, level: typings.gatsbyCli.structuredErrorsTypesMod.Level, text: js.Any => String): DocsUrl = {
     val __obj = js.Dynamic.literal(docsUrl = docsUrl.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
     __obj.asInstanceOf[DocsUrl]
   }
   
-  @scala.inline
-  implicit class DocsUrlMutableBuilder[Self <: DocsUrl] (val x: Self) extends AnyVal {
+  extension [Self <: DocsUrl](x: Self) {
     
-    @scala.inline
-    def setDocsUrl(value: String): Self = StObject.set(x, "docsUrl", value.asInstanceOf[js.Any])
+    inline def setDocsUrl(value: String): Self = StObject.set(x, "docsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

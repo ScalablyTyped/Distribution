@@ -18,22 +18,17 @@ trait ConversationLogsRequest extends StObject {
 }
 object ConversationLogsRequest {
   
-  @scala.inline
-  def apply(iamRoleArn: IamRoleArn, logSettings: LogSettingsRequestList): ConversationLogsRequest = {
+  inline def apply(iamRoleArn: IamRoleArn, logSettings: LogSettingsRequestList): ConversationLogsRequest = {
     val __obj = js.Dynamic.literal(iamRoleArn = iamRoleArn.asInstanceOf[js.Any], logSettings = logSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationLogsRequest]
   }
   
-  @scala.inline
-  implicit class ConversationLogsRequestMutableBuilder[Self <: ConversationLogsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationLogsRequest](x: Self) {
     
-    @scala.inline
-    def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogSettings(value: LogSettingsRequestList): Self = StObject.set(x, "logSettings", value.asInstanceOf[js.Any])
+    inline def setLogSettings(value: LogSettingsRequestList): Self = StObject.set(x, "logSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogSettingsVarargs(value: LogSettingsRequest*): Self = StObject.set(x, "logSettings", js.Array(value :_*))
+    inline def setLogSettingsVarargs(value: LogSettingsRequest*): Self = StObject.set(x, "logSettings", js.Array(value :_*))
   }
 }

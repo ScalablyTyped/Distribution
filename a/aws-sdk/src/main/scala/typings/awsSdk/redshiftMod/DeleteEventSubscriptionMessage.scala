@@ -13,16 +13,13 @@ trait DeleteEventSubscriptionMessage extends StObject {
 }
 object DeleteEventSubscriptionMessage {
   
-  @scala.inline
-  def apply(SubscriptionName: String): DeleteEventSubscriptionMessage = {
+  inline def apply(SubscriptionName: String): DeleteEventSubscriptionMessage = {
     val __obj = js.Dynamic.literal(SubscriptionName = SubscriptionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventSubscriptionMessage]
   }
   
-  @scala.inline
-  implicit class DeleteEventSubscriptionMessageMutableBuilder[Self <: DeleteEventSubscriptionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventSubscriptionMessage](x: Self) {
     
-    @scala.inline
-    def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
+    inline def setSubscriptionName(value: String): Self = StObject.set(x, "SubscriptionName", value.asInstanceOf[js.Any])
   }
 }

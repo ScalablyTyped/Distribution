@@ -21,26 +21,20 @@ object Surfaces {
   }
   object SpatialSurfaceInfo {
     
-    @scala.inline
-    def apply(id: js.Any, tryComputeLatestMeshAsync: js.Any, tryGetBounds: js.Any, updateTime: js.Any): SpatialSurfaceInfo = {
+    inline def apply(id: js.Any, tryComputeLatestMeshAsync: js.Any, tryGetBounds: js.Any, updateTime: js.Any): SpatialSurfaceInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tryComputeLatestMeshAsync = tryComputeLatestMeshAsync.asInstanceOf[js.Any], tryGetBounds = tryGetBounds.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpatialSurfaceInfo]
     }
     
-    @scala.inline
-    implicit class SpatialSurfaceInfoMutableBuilder[Self <: SpatialSurfaceInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SpatialSurfaceInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTryComputeLatestMeshAsync(value: js.Any): Self = StObject.set(x, "tryComputeLatestMeshAsync", value.asInstanceOf[js.Any])
+      inline def setTryComputeLatestMeshAsync(value: js.Any): Self = StObject.set(x, "tryComputeLatestMeshAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTryGetBounds(value: js.Any): Self = StObject.set(x, "tryGetBounds", value.asInstanceOf[js.Any])
+      inline def setTryGetBounds(value: js.Any): Self = StObject.set(x, "tryGetBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateTime(value: js.Any): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+      inline def setUpdateTime(value: js.Any): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +59,7 @@ object Surfaces {
   }
   object SpatialSurfaceMesh {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coordinateSystem: js.Any,
       surfaceInfo: js.Any,
       triangleIndices: js.Any,
@@ -78,26 +71,19 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceMesh]
     }
     
-    @scala.inline
-    implicit class SpatialSurfaceMeshMutableBuilder[Self <: SpatialSurfaceMesh] (val x: Self) extends AnyVal {
+    extension [Self <: SpatialSurfaceMesh](x: Self) {
       
-      @scala.inline
-      def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
+      inline def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurfaceInfo(value: js.Any): Self = StObject.set(x, "surfaceInfo", value.asInstanceOf[js.Any])
+      inline def setSurfaceInfo(value: js.Any): Self = StObject.set(x, "surfaceInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriangleIndices(value: js.Any): Self = StObject.set(x, "triangleIndices", value.asInstanceOf[js.Any])
+      inline def setTriangleIndices(value: js.Any): Self = StObject.set(x, "triangleIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexNormals(value: js.Any): Self = StObject.set(x, "vertexNormals", value.asInstanceOf[js.Any])
+      inline def setVertexNormals(value: js.Any): Self = StObject.set(x, "vertexNormals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexPositionScale(value: js.Any): Self = StObject.set(x, "vertexPositionScale", value.asInstanceOf[js.Any])
+      inline def setVertexPositionScale(value: js.Any): Self = StObject.set(x, "vertexPositionScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexPositions(value: js.Any): Self = StObject.set(x, "vertexPositions", value.asInstanceOf[js.Any])
+      inline def setVertexPositions(value: js.Any): Self = StObject.set(x, "vertexPositions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,26 +102,20 @@ object Surfaces {
   }
   object SpatialSurfaceMeshBuffer {
     
-    @scala.inline
-    def apply(data: js.Any, elementCount: js.Any, format: js.Any, stride: js.Any): SpatialSurfaceMeshBuffer = {
+    inline def apply(data: js.Any, elementCount: js.Any, format: js.Any, stride: js.Any): SpatialSurfaceMeshBuffer = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], elementCount = elementCount.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], stride = stride.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpatialSurfaceMeshBuffer]
     }
     
-    @scala.inline
-    implicit class SpatialSurfaceMeshBufferMutableBuilder[Self <: SpatialSurfaceMeshBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: SpatialSurfaceMeshBuffer](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementCount(value: js.Any): Self = StObject.set(x, "elementCount", value.asInstanceOf[js.Any])
+      inline def setElementCount(value: js.Any): Self = StObject.set(x, "elementCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStride(value: js.Any): Self = StObject.set(x, "stride", value.asInstanceOf[js.Any])
+      inline def setStride(value: js.Any): Self = StObject.set(x, "stride", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +135,7 @@ object Surfaces {
   }
   object SpatialSurfaceMeshOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       includeVertexNormals: js.Any,
       triangleIndexFormat: js.Any,
       vertexNormalFormat: js.Any,
@@ -166,20 +145,15 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceMeshOptions]
     }
     
-    @scala.inline
-    implicit class SpatialSurfaceMeshOptionsMutableBuilder[Self <: SpatialSurfaceMeshOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpatialSurfaceMeshOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeVertexNormals(value: js.Any): Self = StObject.set(x, "includeVertexNormals", value.asInstanceOf[js.Any])
+      inline def setIncludeVertexNormals(value: js.Any): Self = StObject.set(x, "includeVertexNormals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriangleIndexFormat(value: js.Any): Self = StObject.set(x, "triangleIndexFormat", value.asInstanceOf[js.Any])
+      inline def setTriangleIndexFormat(value: js.Any): Self = StObject.set(x, "triangleIndexFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexNormalFormat(value: js.Any): Self = StObject.set(x, "vertexNormalFormat", value.asInstanceOf[js.Any])
+      inline def setVertexNormalFormat(value: js.Any): Self = StObject.set(x, "vertexNormalFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexPositionFormat(value: js.Any): Self = StObject.set(x, "vertexPositionFormat", value.asInstanceOf[js.Any])
+      inline def setVertexPositionFormat(value: js.Any): Self = StObject.set(x, "vertexPositionFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,8 +179,7 @@ object Surfaces {
   }
   object SpatialSurfaceObserver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: js.Any,
       getObservedSurfaces: js.Any,
       onobservedsurfaceschanged: js.Any,
@@ -218,26 +191,19 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceObserver]
     }
     
-    @scala.inline
-    implicit class SpatialSurfaceObserverMutableBuilder[Self <: SpatialSurfaceObserver] (val x: Self) extends AnyVal {
+    extension [Self <: SpatialSurfaceObserver](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+      inline def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetObservedSurfaces(value: js.Any): Self = StObject.set(x, "getObservedSurfaces", value.asInstanceOf[js.Any])
+      inline def setGetObservedSurfaces(value: js.Any): Self = StObject.set(x, "getObservedSurfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnobservedsurfaceschanged(value: js.Any): Self = StObject.set(x, "onobservedsurfaceschanged", value.asInstanceOf[js.Any])
+      inline def setOnobservedsurfaceschanged(value: js.Any): Self = StObject.set(x, "onobservedsurfaceschanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+      inline def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetBoundingVolume(value: js.Any): Self = StObject.set(x, "setBoundingVolume", value.asInstanceOf[js.Any])
+      inline def setSetBoundingVolume(value: js.Any): Self = StObject.set(x, "setBoundingVolume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetBoundingVolumes(value: js.Any): Self = StObject.set(x, "setBoundingVolumes", value.asInstanceOf[js.Any])
+      inline def setSetBoundingVolumes(value: js.Any): Self = StObject.set(x, "setBoundingVolumes", value.asInstanceOf[js.Any])
     }
   }
 }

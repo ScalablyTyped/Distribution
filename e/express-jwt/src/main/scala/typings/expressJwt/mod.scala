@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): RequestHandler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def apply(options: Options): RequestHandler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
   @JSImport("express-jwt", JSImport.Namespace)
   @js.native
@@ -53,20 +52,15 @@ object mod {
   trait ErrorCode extends StObject
   object ErrorCode {
     
-    @scala.inline
-    def credentials_bad_format: typings.expressJwt.expressJwtStrings.credentials_bad_format = "credentials_bad_format".asInstanceOf[typings.expressJwt.expressJwtStrings.credentials_bad_format]
+    inline def credentials_bad_format: typings.expressJwt.expressJwtStrings.credentials_bad_format = "credentials_bad_format".asInstanceOf[typings.expressJwt.expressJwtStrings.credentials_bad_format]
     
-    @scala.inline
-    def credentials_bad_scheme: typings.expressJwt.expressJwtStrings.credentials_bad_scheme = "credentials_bad_scheme".asInstanceOf[typings.expressJwt.expressJwtStrings.credentials_bad_scheme]
+    inline def credentials_bad_scheme: typings.expressJwt.expressJwtStrings.credentials_bad_scheme = "credentials_bad_scheme".asInstanceOf[typings.expressJwt.expressJwtStrings.credentials_bad_scheme]
     
-    @scala.inline
-    def credentials_required: typings.expressJwt.expressJwtStrings.credentials_required = "credentials_required".asInstanceOf[typings.expressJwt.expressJwtStrings.credentials_required]
+    inline def credentials_required: typings.expressJwt.expressJwtStrings.credentials_required = "credentials_required".asInstanceOf[typings.expressJwt.expressJwtStrings.credentials_required]
     
-    @scala.inline
-    def invalid_token: typings.expressJwt.expressJwtStrings.invalid_token = "invalid_token".asInstanceOf[typings.expressJwt.expressJwtStrings.invalid_token]
+    inline def invalid_token: typings.expressJwt.expressJwtStrings.invalid_token = "invalid_token".asInstanceOf[typings.expressJwt.expressJwtStrings.invalid_token]
     
-    @scala.inline
-    def revoked_token: typings.expressJwt.expressJwtStrings.revoked_token = "revoked_token".asInstanceOf[typings.expressJwt.expressJwtStrings.revoked_token]
+    inline def revoked_token: typings.expressJwt.expressJwtStrings.revoked_token = "revoked_token".asInstanceOf[typings.expressJwt.expressJwtStrings.revoked_token]
   }
   
   type GetTokenCallback = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], js.Any]
@@ -96,59 +90,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(secret: secretType | SecretCallback | SecretCallbackLong): Options = {
+    inline def apply(secret: secretType | SecretCallback | SecretCallbackLong): Options = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCredentialsRequired(value: Boolean): Self = StObject.set(x, "credentialsRequired", value.asInstanceOf[js.Any])
+      inline def setCredentialsRequired(value: Boolean): Self = StObject.set(x, "credentialsRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsRequiredUndefined: Self = StObject.set(x, "credentialsRequired", js.undefined)
+      inline def setCredentialsRequiredUndefined: Self = StObject.set(x, "credentialsRequired", js.undefined)
       
-      @scala.inline
-      def setGetToken(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Any): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
+      inline def setGetToken(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Any): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
+      inline def setGetTokenUndefined: Self = StObject.set(x, "getToken", js.undefined)
       
-      @scala.inline
-      def setIsRevoked(
+      inline def setIsRevoked(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* payload */ js.Any, /* done */ js.Function2[/* err */ js.Any, /* revoked */ js.UndefOr[Boolean], Unit]) => Unit
       ): Self = StObject.set(x, "isRevoked", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIsRevokedUndefined: Self = StObject.set(x, "isRevoked", js.undefined)
+      inline def setIsRevokedUndefined: Self = StObject.set(x, "isRevoked", js.undefined)
       
-      @scala.inline
-      def setRequestProperty(value: String): Self = StObject.set(x, "requestProperty", value.asInstanceOf[js.Any])
+      inline def setRequestProperty(value: String): Self = StObject.set(x, "requestProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPropertyUndefined: Self = StObject.set(x, "requestProperty", js.undefined)
+      inline def setRequestPropertyUndefined: Self = StObject.set(x, "requestProperty", js.undefined)
       
-      @scala.inline
-      def setSecret(value: secretType | SecretCallback | SecretCallbackLong): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: secretType | SecretCallback | SecretCallbackLong): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretFunction3(
+      inline def setSecretFunction3(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* payload */ js.Any, /* done */ js.Function2[/* err */ js.Any, /* secret */ js.UndefOr[secretType], Unit]) => Unit
       ): Self = StObject.set(x, "secret", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSecretFunction4(
+      inline def setSecretFunction4(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* header */ js.Any, /* payload */ js.Any, /* done */ js.Function2[/* err */ js.Any, /* secret */ js.UndefOr[secretType], Unit]) => Unit
       ): Self = StObject.set(x, "secret", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
+      inline def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPropertyUndefined: Self = StObject.set(x, "userProperty", js.undefined)
+      inline def setUserPropertyUndefined: Self = StObject.set(x, "userProperty", js.undefined)
     }
   }
   

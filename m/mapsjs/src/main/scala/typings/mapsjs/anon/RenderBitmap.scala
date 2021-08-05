@@ -26,33 +26,25 @@ trait RenderBitmap extends StObject {
 }
 object RenderBitmap {
   
-  @scala.inline
-  def apply(): RenderBitmap = {
+  inline def apply(): RenderBitmap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderBitmap]
   }
   
-  @scala.inline
-  implicit class RenderBitmapMutableBuilder[Self <: RenderBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: RenderBitmap](x: Self) {
     
-    @scala.inline
-    def setRenderBitmap(
+    inline def setRenderBitmap(
       value: (/* img */ HTMLElement, /* context */ CanvasRenderingContext2D, /* contextSize */ Double, /* bleed */ Double) => Unit
     ): Self = StObject.set(x, "renderBitmap", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRenderBitmapUndefined: Self = StObject.set(x, "renderBitmap", js.undefined)
+    inline def setRenderBitmapUndefined: Self = StObject.set(x, "renderBitmap", js.undefined)
     
-    @scala.inline
-    def setRenderGeometry(value: (/* shape */ geometry, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "renderGeometry", js.Any.fromFunction2(value))
+    inline def setRenderGeometry(value: (/* shape */ geometry, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "renderGeometry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderGeometryUndefined: Self = StObject.set(x, "renderGeometry", js.undefined)
+    inline def setRenderGeometryUndefined: Self = StObject.set(x, "renderGeometry", js.undefined)
     
-    @scala.inline
-    def setRenderPoint(value: (/* pt */ point, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "renderPoint", js.Any.fromFunction2(value))
+    inline def setRenderPoint(value: (/* pt */ point, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "renderPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderPointUndefined: Self = StObject.set(x, "renderPoint", js.undefined)
+    inline def setRenderPointUndefined: Self = StObject.set(x, "renderPoint", js.undefined)
   }
 }

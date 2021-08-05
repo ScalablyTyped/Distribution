@@ -59,20 +59,16 @@ object mod {
     }
     object Serializer {
       
-      @scala.inline
-      def apply(deserialize: js.Any => js.Any, serialize: js.Any => js.Any): Serializer = {
+      inline def apply(deserialize: js.Any => js.Any, serialize: js.Any => js.Any): Serializer = {
         val __obj = js.Dynamic.literal(deserialize = js.Any.fromFunction1(deserialize), serialize = js.Any.fromFunction1(serialize))
         __obj.asInstanceOf[Serializer]
       }
       
-      @scala.inline
-      implicit class SerializerMutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
+      extension [Self <: Serializer](x: Self) {
         
-        @scala.inline
-        def setDeserialize(value: js.Any => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+        inline def setDeserialize(value: js.Any => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+        inline def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       }
     }
   }

@@ -43,8 +43,7 @@ object math {
       * @returns {H.math.Point} - the created Point instance
       */
     /* static member */
-    @scala.inline
-    def fromIPoint(iPoint: IPoint): typings.heremaps.H.math.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIPoint")(iPoint.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.math.Point]
+    inline def fromIPoint(iPoint: IPoint): typings.heremaps.H.math.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIPoint")(iPoint.asInstanceOf[js.Any]).asInstanceOf[typings.heremaps.H.math.Point]
   }
   
   /**
@@ -110,8 +109,7 @@ object math {
       * @returns {H.math.Rect} - returns the rectangular area defined by the top-left and bottom-right vertices
       */
     /* static member */
-    @scala.inline
-    def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.math.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.math.Rect]
+    inline def fromPoints(topLeft: IPoint, bottomRight: IPoint): typings.heremaps.H.math.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(topLeft.asInstanceOf[js.Any], bottomRight.asInstanceOf[js.Any])).asInstanceOf[typings.heremaps.H.math.Rect]
   }
   
   /**

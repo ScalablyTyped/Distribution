@@ -30,8 +30,7 @@ trait Log extends StObject {
 }
 object Log {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     language: String,
     log_id: String,
     request: MessageRequest,
@@ -44,28 +43,20 @@ object Log {
     __obj.asInstanceOf[Log]
   }
   
-  @scala.inline
-  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+  extension [Self <: Log](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MessageRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MessageRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_timestamp(value: String): Self = StObject.set(x, "request_timestamp", value.asInstanceOf[js.Any])
+    inline def setRequest_timestamp(value: String): Self = StObject.set(x, "request_timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: MessageResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: MessageResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_timestamp(value: String): Self = StObject.set(x, "response_timestamp", value.asInstanceOf[js.Any])
+    inline def setResponse_timestamp(value: String): Self = StObject.set(x, "response_timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
+    inline def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

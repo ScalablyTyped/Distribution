@@ -27,6 +27,5 @@ object Color {
   @JSImport("three", "Color.NAMES")
   @js.native
   def NAMES: Record[String, Double] = js.native
-  @scala.inline
-  def NAMES_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
+  inline def NAMES_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
 }

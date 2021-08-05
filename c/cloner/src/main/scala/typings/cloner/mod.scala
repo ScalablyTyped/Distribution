@@ -18,8 +18,7 @@ object mod {
       * Preserves inheritance and is recursion aware, meaning it shouldn't fail with recursive properties.
       * @param [obj] The object to copy.
       */
-    @scala.inline
-    def copy[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def copy[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Preserves what's already in the target and merges all own keys found in one or more passed sources.
@@ -28,8 +27,7 @@ object mod {
       * @param [target] Destination object for merged properties.
       * @param [sources] Source object(s) for properties to merge.
       */
-    @scala.inline
-    def merge(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def merge(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object shallow {
@@ -44,8 +42,7 @@ object mod {
       * Preserves inheritance and is recursion aware, meaning it shouldn't fail with recursive properties.
       * @param [obj] The object to copy.
       */
-    @scala.inline
-    def copy[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def copy[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Preserves what's already in the target and merges all own keys found in one or more passed sources.
@@ -54,7 +51,6 @@ object mod {
       * @param [target] Destination object for merged properties.
       * @param [sources] Source object(s) for properties to merge.
       */
-    @scala.inline
-    def merge(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def merge(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

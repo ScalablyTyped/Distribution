@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(size: Double, str: String): Result | Ranges = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Result | Ranges]
-  @scala.inline
-  def apply(size: Double, str: String, options: Options): Result | Ranges = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Ranges]
+  inline def apply(size: Double, str: String): Result | Ranges = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Result | Ranges]
+  inline def apply(size: Double, str: String, options: Options): Result | Ranges = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Ranges]
   
   @JSImport("range-parser", JSImport.Namespace)
   @js.native
@@ -28,20 +26,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCombine(value: Boolean): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
+      inline def setCombine(value: Boolean): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombineUndefined: Self = StObject.set(x, "combine", js.undefined)
+      inline def setCombineUndefined: Self = StObject.set(x, "combine", js.undefined)
     }
   }
   
@@ -53,20 +47,16 @@ object mod {
   }
   object Range {
     
-    @scala.inline
-    def apply(end: Double, start: Double): Range = {
+    inline def apply(end: Double, start: Double): Range = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   

@@ -33,8 +33,7 @@ trait GetDeliverabilityTestReportResponse extends StObject {
 }
 object GetDeliverabilityTestReportResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DeliverabilityTestReport: DeliverabilityTestReport,
     IspPlacements: IspPlacements,
     OverallPlacement: PlacementStatistics
@@ -43,34 +42,24 @@ object GetDeliverabilityTestReportResponse {
     __obj.asInstanceOf[GetDeliverabilityTestReportResponse]
   }
   
-  @scala.inline
-  implicit class GetDeliverabilityTestReportResponseMutableBuilder[Self <: GetDeliverabilityTestReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeliverabilityTestReportResponse](x: Self) {
     
-    @scala.inline
-    def setDeliverabilityTestReport(value: DeliverabilityTestReport): Self = StObject.set(x, "DeliverabilityTestReport", value.asInstanceOf[js.Any])
+    inline def setDeliverabilityTestReport(value: DeliverabilityTestReport): Self = StObject.set(x, "DeliverabilityTestReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIspPlacements(value: IspPlacements): Self = StObject.set(x, "IspPlacements", value.asInstanceOf[js.Any])
+    inline def setIspPlacements(value: IspPlacements): Self = StObject.set(x, "IspPlacements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIspPlacementsVarargs(value: IspPlacement*): Self = StObject.set(x, "IspPlacements", js.Array(value :_*))
+    inline def setIspPlacementsVarargs(value: IspPlacement*): Self = StObject.set(x, "IspPlacements", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: MessageContent): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageContent): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setOverallPlacement(value: PlacementStatistics): Self = StObject.set(x, "OverallPlacement", value.asInstanceOf[js.Any])
+    inline def setOverallPlacement(value: PlacementStatistics): Self = StObject.set(x, "OverallPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

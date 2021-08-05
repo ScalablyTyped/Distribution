@@ -20,34 +20,25 @@ trait CreateCollectdTimeSeriesRequest extends StObject {
 }
 object CreateCollectdTimeSeriesRequest {
   
-  @scala.inline
-  def apply(): CreateCollectdTimeSeriesRequest = {
+  inline def apply(): CreateCollectdTimeSeriesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCollectdTimeSeriesRequest]
   }
   
-  @scala.inline
-  implicit class CreateCollectdTimeSeriesRequestMutableBuilder[Self <: CreateCollectdTimeSeriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCollectdTimeSeriesRequest](x: Self) {
     
-    @scala.inline
-    def setCollectdPayloads(value: js.Array[CollectdPayload]): Self = StObject.set(x, "collectdPayloads", value.asInstanceOf[js.Any])
+    inline def setCollectdPayloads(value: js.Array[CollectdPayload]): Self = StObject.set(x, "collectdPayloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectdPayloadsUndefined: Self = StObject.set(x, "collectdPayloads", js.undefined)
+    inline def setCollectdPayloadsUndefined: Self = StObject.set(x, "collectdPayloads", js.undefined)
     
-    @scala.inline
-    def setCollectdPayloadsVarargs(value: CollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value :_*))
+    inline def setCollectdPayloadsVarargs(value: CollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value :_*))
     
-    @scala.inline
-    def setCollectdVersion(value: String): Self = StObject.set(x, "collectdVersion", value.asInstanceOf[js.Any])
+    inline def setCollectdVersion(value: String): Self = StObject.set(x, "collectdVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectdVersionUndefined: Self = StObject.set(x, "collectdVersion", js.undefined)
+    inline def setCollectdVersionUndefined: Self = StObject.set(x, "collectdVersion", js.undefined)
     
-    @scala.inline
-    def setResource(value: MonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: MonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

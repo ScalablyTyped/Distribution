@@ -23,28 +23,21 @@ trait GetCanaryRunsRequest extends StObject {
 }
 object GetCanaryRunsRequest {
   
-  @scala.inline
-  def apply(Name: CanaryName): GetCanaryRunsRequest = {
+  inline def apply(Name: CanaryName): GetCanaryRunsRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCanaryRunsRequest]
   }
   
-  @scala.inline
-  implicit class GetCanaryRunsRequestMutableBuilder[Self <: GetCanaryRunsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCanaryRunsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxSize100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxSize100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

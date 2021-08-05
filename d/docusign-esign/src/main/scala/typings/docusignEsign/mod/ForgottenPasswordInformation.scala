@@ -48,61 +48,43 @@ trait ForgottenPasswordInformation extends StObject {
 }
 object ForgottenPasswordInformation {
   
-  @scala.inline
-  def apply(): ForgottenPasswordInformation = {
+  inline def apply(): ForgottenPasswordInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForgottenPasswordInformation]
   }
   
-  @scala.inline
-  implicit class ForgottenPasswordInformationMutableBuilder[Self <: ForgottenPasswordInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ForgottenPasswordInformation](x: Self) {
     
-    @scala.inline
-    def setForgottenPasswordAnswer1(value: String): Self = StObject.set(x, "forgottenPasswordAnswer1", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordAnswer1(value: String): Self = StObject.set(x, "forgottenPasswordAnswer1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordAnswer1Undefined: Self = StObject.set(x, "forgottenPasswordAnswer1", js.undefined)
+    inline def setForgottenPasswordAnswer1Undefined: Self = StObject.set(x, "forgottenPasswordAnswer1", js.undefined)
     
-    @scala.inline
-    def setForgottenPasswordAnswer2(value: String): Self = StObject.set(x, "forgottenPasswordAnswer2", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordAnswer2(value: String): Self = StObject.set(x, "forgottenPasswordAnswer2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordAnswer2Undefined: Self = StObject.set(x, "forgottenPasswordAnswer2", js.undefined)
+    inline def setForgottenPasswordAnswer2Undefined: Self = StObject.set(x, "forgottenPasswordAnswer2", js.undefined)
     
-    @scala.inline
-    def setForgottenPasswordAnswer3(value: String): Self = StObject.set(x, "forgottenPasswordAnswer3", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordAnswer3(value: String): Self = StObject.set(x, "forgottenPasswordAnswer3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordAnswer3Undefined: Self = StObject.set(x, "forgottenPasswordAnswer3", js.undefined)
+    inline def setForgottenPasswordAnswer3Undefined: Self = StObject.set(x, "forgottenPasswordAnswer3", js.undefined)
     
-    @scala.inline
-    def setForgottenPasswordAnswer4(value: String): Self = StObject.set(x, "forgottenPasswordAnswer4", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordAnswer4(value: String): Self = StObject.set(x, "forgottenPasswordAnswer4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordAnswer4Undefined: Self = StObject.set(x, "forgottenPasswordAnswer4", js.undefined)
+    inline def setForgottenPasswordAnswer4Undefined: Self = StObject.set(x, "forgottenPasswordAnswer4", js.undefined)
     
-    @scala.inline
-    def setForgottenPasswordQuestion1(value: String): Self = StObject.set(x, "forgottenPasswordQuestion1", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordQuestion1(value: String): Self = StObject.set(x, "forgottenPasswordQuestion1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordQuestion1Undefined: Self = StObject.set(x, "forgottenPasswordQuestion1", js.undefined)
+    inline def setForgottenPasswordQuestion1Undefined: Self = StObject.set(x, "forgottenPasswordQuestion1", js.undefined)
     
-    @scala.inline
-    def setForgottenPasswordQuestion2(value: String): Self = StObject.set(x, "forgottenPasswordQuestion2", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordQuestion2(value: String): Self = StObject.set(x, "forgottenPasswordQuestion2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordQuestion2Undefined: Self = StObject.set(x, "forgottenPasswordQuestion2", js.undefined)
+    inline def setForgottenPasswordQuestion2Undefined: Self = StObject.set(x, "forgottenPasswordQuestion2", js.undefined)
     
-    @scala.inline
-    def setForgottenPasswordQuestion3(value: String): Self = StObject.set(x, "forgottenPasswordQuestion3", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordQuestion3(value: String): Self = StObject.set(x, "forgottenPasswordQuestion3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordQuestion3Undefined: Self = StObject.set(x, "forgottenPasswordQuestion3", js.undefined)
+    inline def setForgottenPasswordQuestion3Undefined: Self = StObject.set(x, "forgottenPasswordQuestion3", js.undefined)
     
-    @scala.inline
-    def setForgottenPasswordQuestion4(value: String): Self = StObject.set(x, "forgottenPasswordQuestion4", value.asInstanceOf[js.Any])
+    inline def setForgottenPasswordQuestion4(value: String): Self = StObject.set(x, "forgottenPasswordQuestion4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForgottenPasswordQuestion4Undefined: Self = StObject.set(x, "forgottenPasswordQuestion4", js.undefined)
+    inline def setForgottenPasswordQuestion4Undefined: Self = StObject.set(x, "forgottenPasswordQuestion4", js.undefined)
   }
 }

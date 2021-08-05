@@ -16,13 +16,11 @@ object absMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def abs(args: Backend): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(args.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+  inline def abs(args: Backend): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(args.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Abs", "absConfig")
   @js.native
   val absConfig: KernelConfig = js.native
   
-  @scala.inline
-  def simpleAbsImpl(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
+  inline def simpleAbsImpl(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
 }

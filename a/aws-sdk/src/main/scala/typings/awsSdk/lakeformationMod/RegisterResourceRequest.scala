@@ -23,28 +23,21 @@ trait RegisterResourceRequest extends StObject {
 }
 object RegisterResourceRequest {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArnString): RegisterResourceRequest = {
+  inline def apply(ResourceArn: ResourceArnString): RegisterResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterResourceRequest]
   }
   
-  @scala.inline
-  implicit class RegisterResourceRequestMutableBuilder[Self <: RegisterResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterResourceRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setUseServiceLinkedRole(value: NullableBoolean): Self = StObject.set(x, "UseServiceLinkedRole", value.asInstanceOf[js.Any])
+    inline def setUseServiceLinkedRole(value: NullableBoolean): Self = StObject.set(x, "UseServiceLinkedRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseServiceLinkedRoleUndefined: Self = StObject.set(x, "UseServiceLinkedRole", js.undefined)
+    inline def setUseServiceLinkedRoleUndefined: Self = StObject.set(x, "UseServiceLinkedRole", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ trait GSSolver
 }
 object GSSolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEquation: Equation => Unit,
     equations: js.Array[Equation],
     iterations: Double,
@@ -26,10 +25,8 @@ object GSSolver {
     __obj.asInstanceOf[GSSolver]
   }
   
-  @scala.inline
-  implicit class GSSolverMutableBuilder[Self <: GSSolver] (val x: Self) extends AnyVal {
+  extension [Self <: GSSolver](x: Self) {
     
-    @scala.inline
-    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
   }
 }

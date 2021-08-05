@@ -13,8 +13,7 @@ object toastStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): ToastStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ToastStyle]
+  inline def default(theme: Theme): ToastStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ToastStyle]
   
   trait ToastStyle extends StObject {
     
@@ -36,8 +35,7 @@ object toastStyleMod {
   }
   object ToastStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       centering: ViewStyle,
       container: ViewStyle,
       content: TextStyle,
@@ -51,32 +49,23 @@ object toastStyleMod {
       __obj.asInstanceOf[ToastStyle]
     }
     
-    @scala.inline
-    implicit class ToastStyleMutableBuilder[Self <: ToastStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ToastStyle](x: Self) {
       
-      @scala.inline
-      def setCentering(value: ViewStyle): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
+      inline def setCentering(value: ViewStyle): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: TextStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: TextStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconToast(value: ViewStyle): Self = StObject.set(x, "iconToast", value.asInstanceOf[js.Any])
+      inline def setIconToast(value: ViewStyle): Self = StObject.set(x, "iconToast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: TextStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: TextStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
+      inline def setInnerContainer(value: ViewStyle): Self = StObject.set(x, "innerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerWrap(value: ViewStyle): Self = StObject.set(x, "innerWrap", value.asInstanceOf[js.Any])
+      inline def setInnerWrap(value: ViewStyle): Self = StObject.set(x, "innerWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextToast(value: ViewStyle): Self = StObject.set(x, "textToast", value.asInstanceOf[js.Any])
+      inline def setTextToast(value: ViewStyle): Self = StObject.set(x, "textToast", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -62,61 +62,43 @@ trait IModel extends StObject {
 }
 object IModel {
   
-  @scala.inline
-  def apply(): IModel = {
+  inline def apply(): IModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IModel]
   }
   
-  @scala.inline
-  implicit class IModelMutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
+  extension [Self <: IModel](x: Self) {
     
-    @scala.inline
-    def setExporterOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "exporterOptions", value.asInstanceOf[js.Any])
+    inline def setExporterOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "exporterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExporterOptionsUndefined: Self = StObject.set(x, "exporterOptions", js.undefined)
+    inline def setExporterOptionsUndefined: Self = StObject.set(x, "exporterOptions", js.undefined)
     
-    @scala.inline
-    def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

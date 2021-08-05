@@ -18,25 +18,19 @@ trait KeyPairIds extends StObject {
 }
 object KeyPairIds {
   
-  @scala.inline
-  def apply(Quantity: integer): KeyPairIds = {
+  inline def apply(Quantity: integer): KeyPairIds = {
     val __obj = js.Dynamic.literal(Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairIds]
   }
   
-  @scala.inline
-  implicit class KeyPairIdsMutableBuilder[Self <: KeyPairIds] (val x: Self) extends AnyVal {
+  extension [Self <: KeyPairIds](x: Self) {
     
-    @scala.inline
-    def setItems(value: KeyPairIdList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: KeyPairIdList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

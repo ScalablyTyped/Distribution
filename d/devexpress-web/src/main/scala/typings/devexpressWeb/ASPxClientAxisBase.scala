@@ -23,8 +23,7 @@ trait ASPxClientAxisBase
 }
 object ASPxClientAxisBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: ASPxClientWebChart,
     diagram: ASPxClientXYDiagramBase,
     name: String,
@@ -34,13 +33,10 @@ object ASPxClientAxisBase {
     __obj.asInstanceOf[ASPxClientAxisBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientAxisBaseMutableBuilder[Self <: ASPxClientAxisBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAxisBase](x: Self) {
     
-    @scala.inline
-    def setDiagram(value: ASPxClientXYDiagramBase): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
+    inline def setDiagram(value: ASPxClientXYDiagramBase): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: ASPxClientAxisRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: ASPxClientAxisRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

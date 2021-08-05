@@ -12,6 +12,5 @@ object transitionGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TransitionGroup(props: TransitionGroupOptions): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TransitionGroup")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def TransitionGroup(props: TransitionGroupOptions): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TransitionGroup")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

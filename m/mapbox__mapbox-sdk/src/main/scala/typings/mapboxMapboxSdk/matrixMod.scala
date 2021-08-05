@@ -15,10 +15,8 @@ object matrixMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): MatrixService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MatrixService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): MatrixService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MatrixService]
+  inline def default(config: SdkConfig): MatrixService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MatrixService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): MatrixService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[MatrixService]
   
   trait Destination extends StObject {
     
@@ -28,23 +26,18 @@ object matrixMod {
   }
   object Destination {
     
-    @scala.inline
-    def apply(location: js.Array[Double], name: String): Destination = {
+    inline def apply(location: js.Array[Double], name: String): Destination = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Destination]
     }
     
-    @scala.inline
-    implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
+    extension [Self <: Destination](x: Self) {
       
-      @scala.inline
-      def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+      inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,50 +55,36 @@ object matrixMod {
   }
   object MatrixRequest {
     
-    @scala.inline
-    def apply(points: js.Array[Point]): MatrixRequest = {
+    inline def apply(points: js.Array[Point]): MatrixRequest = {
       val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixRequest]
     }
     
-    @scala.inline
-    implicit class MatrixRequestMutableBuilder[Self <: MatrixRequest] (val x: Self) extends AnyVal {
+    extension [Self <: MatrixRequest](x: Self) {
       
-      @scala.inline
-      def setAnnotations(value: DirectionsAnnotation): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      inline def setAnnotations(value: DirectionsAnnotation): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+      inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
       
-      @scala.inline
-      def setDestinations(value: js.Array[Double]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+      inline def setDestinations(value: js.Array[Double]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
+      inline def setDestinationsUndefined: Self = StObject.set(x, "destinations", js.undefined)
       
-      @scala.inline
-      def setDestinationsVarargs(value: Double*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+      inline def setDestinationsVarargs(value: Double*): Self = StObject.set(x, "destinations", js.Array(value :_*))
       
-      @scala.inline
-      def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setProfile(value: DirectionsProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: DirectionsProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setSources(value: js.Array[Double]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[Double]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+      inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
       
-      @scala.inline
-      def setSourcesVarargs(value: Double*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: Double*): Self = StObject.set(x, "sources", js.Array(value :_*))
     }
   }
   
@@ -123,47 +102,34 @@ object matrixMod {
   }
   object MatrixResponse {
     
-    @scala.inline
-    def apply(code: String, destinations: js.Array[Destination], sources: js.Array[Destination]): MatrixResponse = {
+    inline def apply(code: String, destinations: js.Array[Destination], sources: js.Array[Destination]): MatrixResponse = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], destinations = destinations.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatrixResponse]
     }
     
-    @scala.inline
-    implicit class MatrixResponseMutableBuilder[Self <: MatrixResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MatrixResponse](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinations(value: js.Array[Destination]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+      inline def setDestinations(value: js.Array[Destination]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationsVarargs(value: Destination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+      inline def setDestinationsVarargs(value: Destination*): Self = StObject.set(x, "destinations", js.Array(value :_*))
       
-      @scala.inline
-      def setDistances(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "distances", value.asInstanceOf[js.Any])
+      inline def setDistances(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "distances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
+      inline def setDistancesUndefined: Self = StObject.set(x, "distances", js.undefined)
       
-      @scala.inline
-      def setDistancesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "distances", js.Array(value :_*))
+      inline def setDistancesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "distances", js.Array(value :_*))
       
-      @scala.inline
-      def setDurations(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "durations", value.asInstanceOf[js.Any])
+      inline def setDurations(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "durations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationsUndefined: Self = StObject.set(x, "durations", js.undefined)
+      inline def setDurationsUndefined: Self = StObject.set(x, "durations", js.undefined)
       
-      @scala.inline
-      def setDurationsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "durations", js.Array(value :_*))
+      inline def setDurationsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "durations", js.Array(value :_*))
       
-      @scala.inline
-      def setSources(value: js.Array[Destination]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[Destination]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesVarargs(value: Destination*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: Destination*): Self = StObject.set(x, "sources", js.Array(value :_*))
     }
   }
   
@@ -177,17 +143,14 @@ object matrixMod {
   }
   object MatrixService {
     
-    @scala.inline
-    def apply(getMatrix: MatrixRequest => MapiRequest): MatrixService = {
+    inline def apply(getMatrix: MatrixRequest => MapiRequest): MatrixService = {
       val __obj = js.Dynamic.literal(getMatrix = js.Any.fromFunction1(getMatrix))
       __obj.asInstanceOf[MatrixService]
     }
     
-    @scala.inline
-    implicit class MatrixServiceMutableBuilder[Self <: MatrixService] (val x: Self) extends AnyVal {
+    extension [Self <: MatrixService](x: Self) {
       
-      @scala.inline
-      def setGetMatrix(value: MatrixRequest => MapiRequest): Self = StObject.set(x, "getMatrix", js.Any.fromFunction1(value))
+      inline def setGetMatrix(value: MatrixRequest => MapiRequest): Self = StObject.set(x, "getMatrix", js.Any.fromFunction1(value))
     }
   }
 }

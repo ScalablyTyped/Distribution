@@ -114,10 +114,8 @@ object schemaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkSchema(schema: Schema): js.Array[ValidationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[ValidationChain]]
-  @scala.inline
-  def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): js.Array[ValidationChain] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationChain]]
+  inline def checkSchema(schema: Schema): js.Array[ValidationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[ValidationChain]]
+  inline def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): js.Array[ValidationChain] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationChain]]
   
   /* Inlined express-validator.express-validator/src/middlewares/schema.ValidatorsSchema & express-validator.express-validator/src/middlewares/schema.SanitizersSchema */
   trait InternalParamSchema extends StObject {
@@ -425,596 +423,400 @@ object schemaMod {
   }
   object InternalParamSchema {
     
-    @scala.inline
-    def apply(): InternalParamSchema = {
+    inline def apply(): InternalParamSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternalParamSchema]
     }
     
-    @scala.inline
-    implicit class InternalParamSchemaMutableBuilder[Self <: InternalParamSchema] (val x: Self) extends AnyVal {
+    extension [Self <: InternalParamSchema](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      @scala.inline
-      def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
+      inline def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
+      inline def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
+      inline def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
+      inline def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
       
-      @scala.inline
-      def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
+      inline def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
+      inline def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
       
-      @scala.inline
-      def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
+      inline def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
+      inline def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
       
-      @scala.inline
-      def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+      inline def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
+      inline def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
       
-      @scala.inline
-      def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
+      inline def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
+      inline def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
       
-      @scala.inline
-      def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
+      inline def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
+      inline def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
       
-      @scala.inline
-      def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
+      inline def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
+      inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
       
-      @scala.inline
-      def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
+      inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
+      inline def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
       
-      @scala.inline
-      def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
+      inline def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
+      inline def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
       
-      @scala.inline
-      def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
+      inline def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
+      inline def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
       
-      @scala.inline
-      def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
+      inline def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
+      inline def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
       
-      @scala.inline
-      def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
+      inline def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
+      inline def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
       
-      @scala.inline
-      def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
+      inline def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
+      inline def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
       
-      @scala.inline
-      def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
+      inline def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
+      inline def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
       
-      @scala.inline
-      def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
+      inline def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
+      inline def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
       
-      @scala.inline
-      def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
+      inline def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
+      inline def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
       
-      @scala.inline
-      def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
+      inline def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
+      inline def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
       
-      @scala.inline
-      def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
+      inline def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
+      inline def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
       
-      @scala.inline
-      def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
+      inline def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
+      inline def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
       
-      @scala.inline
-      def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
+      inline def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
+      inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
       
-      @scala.inline
-      def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
+      inline def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
       
-      @scala.inline
-      def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
+      inline def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
+      inline def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
       
-      @scala.inline
-      def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
+      inline def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
+      inline def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
       
-      @scala.inline
-      def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
+      inline def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
+      inline def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
       
-      @scala.inline
-      def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
+      inline def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
+      inline def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
       
-      @scala.inline
-      def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
+      inline def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
+      inline def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
       
-      @scala.inline
-      def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
+      inline def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
+      inline def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
       
-      @scala.inline
-      def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
+      inline def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
+      inline def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
       
-      @scala.inline
-      def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
+      inline def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
+      inline def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
       
-      @scala.inline
-      def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
+      inline def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
+      inline def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
       
-      @scala.inline
-      def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
+      inline def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
+      inline def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
       
-      @scala.inline
-      def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
+      inline def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
+      inline def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
       
-      @scala.inline
-      def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
+      inline def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
+      inline def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
+      inline def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
       
-      @scala.inline
-      def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
+      inline def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
       
-      @scala.inline
-      def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
+      inline def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
+      inline def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
       
-      @scala.inline
-      def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
+      inline def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
+      inline def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
+      inline def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
+      inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
-      @scala.inline
-      def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
+      inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
+      inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
       
-      @scala.inline
-      def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
+      inline def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
+      inline def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
       
-      @scala.inline
-      def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
+      inline def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
+      inline def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
       
-      @scala.inline
-      def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
+      inline def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
+      inline def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
       
-      @scala.inline
-      def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
+      inline def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
+      inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
       
-      @scala.inline
-      def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
+      inline def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
+      inline def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
       
-      @scala.inline
-      def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
+      inline def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
+      inline def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
       
-      @scala.inline
-      def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
+      inline def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
+      inline def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
       
-      @scala.inline
-      def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
+      inline def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
+      inline def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
       
-      @scala.inline
-      def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
+      inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
       
-      @scala.inline
-      def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
+      inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
+      inline def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
       
-      @scala.inline
-      def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
+      inline def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
+      inline def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
       
-      @scala.inline
-      def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
+      inline def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
+      inline def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
       
-      @scala.inline
-      def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
+      inline def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
+      inline def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
       
-      @scala.inline
-      def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
+      inline def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
+      inline def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
       
-      @scala.inline
-      def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
+      inline def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
+      inline def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
       
-      @scala.inline
-      def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
+      inline def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
+      inline def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
       
-      @scala.inline
-      def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
+      inline def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
+      inline def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
       
-      @scala.inline
-      def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
+      inline def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
+      inline def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
       
-      @scala.inline
-      def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
+      inline def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
+      inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
-      @scala.inline
-      def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
+      inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
+      inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
       
-      @scala.inline
-      def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
+      inline def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
+      inline def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
       
-      @scala.inline
-      def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
+      inline def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
+      inline def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
       
-      @scala.inline
-      def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
+      inline def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
+      inline def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
       
-      @scala.inline
-      def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
+      inline def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
+      inline def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
       
-      @scala.inline
-      def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
+      inline def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
+      inline def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
       
-      @scala.inline
-      def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
+      inline def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
+      inline def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
       
-      @scala.inline
-      def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
+      inline def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
+      inline def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
       
-      @scala.inline
-      def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
+      inline def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
+      inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
-      @scala.inline
-      def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
+      inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
+      inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
       
-      @scala.inline
-      def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
+      inline def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
+      inline def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
       
-      @scala.inline
-      def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
+      inline def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
+      inline def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
       
-      @scala.inline
-      def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
+      inline def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
+      inline def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
       
-      @scala.inline
-      def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
+      inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
       
-      @scala.inline
-      def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
+      inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
+      inline def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
       
-      @scala.inline
-      def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
+      inline def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
+      inline def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
       
-      @scala.inline
-      def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
+      inline def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
+      inline def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
       
-      @scala.inline
-      def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+      inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
       
-      @scala.inline
-      def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
+      inline def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
+      inline def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
       
-      @scala.inline
-      def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
+      inline def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
+      inline def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
       
-      @scala.inline
-      def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+      inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       
-      @scala.inline
-      def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
+      inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
+      inline def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
       
-      @scala.inline
-      def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
+      inline def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
+      inline def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
       
-      @scala.inline
-      def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
+      inline def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
+      inline def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
       
-      @scala.inline
-      def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
+      inline def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
+      inline def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
       
-      @scala.inline
-      def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
+      inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
       
-      @scala.inline
-      def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
+      inline def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
+      inline def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
       
-      @scala.inline
-      def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
+      inline def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
+      inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
-      @scala.inline
-      def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
+      inline def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
+      inline def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
+      inline def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
+      inline def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
     }
   }
   
@@ -1330,620 +1132,416 @@ object schemaMod {
   }
   object ParamSchema {
     
-    @scala.inline
-    def apply(): ParamSchema = {
+    inline def apply(): ParamSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParamSchema]
     }
     
-    @scala.inline
-    implicit class ParamSchemaMutableBuilder[Self <: ParamSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ParamSchema](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      @scala.inline
-      def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
+      inline def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
+      inline def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
+      inline def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setIn(value: Location | js.Array[Location]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Location | js.Array[Location]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      @scala.inline
-      def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value :_*))
+      inline def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value :_*))
       
-      @scala.inline
-      def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
+      inline def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
+      inline def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
       
-      @scala.inline
-      def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
+      inline def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
+      inline def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
       
-      @scala.inline
-      def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
+      inline def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
+      inline def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
       
-      @scala.inline
-      def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+      inline def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
+      inline def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
       
-      @scala.inline
-      def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
+      inline def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
+      inline def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
       
-      @scala.inline
-      def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
+      inline def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
+      inline def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
       
-      @scala.inline
-      def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
+      inline def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
+      inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
       
-      @scala.inline
-      def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
+      inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
+      inline def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
       
-      @scala.inline
-      def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
+      inline def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
+      inline def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
       
-      @scala.inline
-      def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
+      inline def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
+      inline def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
       
-      @scala.inline
-      def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
+      inline def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
+      inline def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
       
-      @scala.inline
-      def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
+      inline def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
+      inline def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
       
-      @scala.inline
-      def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
+      inline def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
+      inline def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
       
-      @scala.inline
-      def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
+      inline def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
+      inline def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
       
-      @scala.inline
-      def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
+      inline def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
+      inline def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
       
-      @scala.inline
-      def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
+      inline def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
+      inline def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
       
-      @scala.inline
-      def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
+      inline def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
+      inline def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
       
-      @scala.inline
-      def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
+      inline def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
+      inline def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
       
-      @scala.inline
-      def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
+      inline def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
+      inline def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
       
-      @scala.inline
-      def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
+      inline def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
+      inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
       
-      @scala.inline
-      def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
+      inline def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
       
-      @scala.inline
-      def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
+      inline def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
+      inline def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
       
-      @scala.inline
-      def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
+      inline def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
+      inline def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
       
-      @scala.inline
-      def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
+      inline def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
+      inline def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
       
-      @scala.inline
-      def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
+      inline def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
+      inline def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
       
-      @scala.inline
-      def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
+      inline def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
+      inline def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
       
-      @scala.inline
-      def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
+      inline def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
+      inline def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
       
-      @scala.inline
-      def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
+      inline def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
+      inline def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
       
-      @scala.inline
-      def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
+      inline def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
+      inline def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
       
-      @scala.inline
-      def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
+      inline def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
+      inline def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
       
-      @scala.inline
-      def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
+      inline def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
+      inline def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
       
-      @scala.inline
-      def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
+      inline def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
+      inline def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
       
-      @scala.inline
-      def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
+      inline def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
+      inline def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
+      inline def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
       
-      @scala.inline
-      def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
+      inline def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
       
-      @scala.inline
-      def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
+      inline def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
+      inline def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
       
-      @scala.inline
-      def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
+      inline def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
+      inline def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
+      inline def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
+      inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
-      @scala.inline
-      def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
+      inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
+      inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
       
-      @scala.inline
-      def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
+      inline def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
+      inline def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
       
-      @scala.inline
-      def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
+      inline def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
+      inline def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
       
-      @scala.inline
-      def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
+      inline def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
+      inline def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
       
-      @scala.inline
-      def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
+      inline def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
+      inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
       
-      @scala.inline
-      def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
+      inline def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
+      inline def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
       
-      @scala.inline
-      def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
+      inline def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
+      inline def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
       
-      @scala.inline
-      def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
+      inline def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
+      inline def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
       
-      @scala.inline
-      def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
+      inline def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
+      inline def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
       
-      @scala.inline
-      def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
+      inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
       
-      @scala.inline
-      def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
+      inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
+      inline def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
       
-      @scala.inline
-      def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
+      inline def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
+      inline def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
       
-      @scala.inline
-      def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
+      inline def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
+      inline def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
       
-      @scala.inline
-      def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
+      inline def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
+      inline def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
       
-      @scala.inline
-      def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
+      inline def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
+      inline def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
       
-      @scala.inline
-      def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
+      inline def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
+      inline def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
       
-      @scala.inline
-      def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
+      inline def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
+      inline def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
       
-      @scala.inline
-      def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
+      inline def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
+      inline def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
       
-      @scala.inline
-      def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
+      inline def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
+      inline def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
       
-      @scala.inline
-      def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
+      inline def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
+      inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
-      @scala.inline
-      def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
+      inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
+      inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
       
-      @scala.inline
-      def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
+      inline def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
+      inline def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
       
-      @scala.inline
-      def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
+      inline def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
+      inline def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
       
-      @scala.inline
-      def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
+      inline def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
+      inline def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
       
-      @scala.inline
-      def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
+      inline def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
+      inline def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
       
-      @scala.inline
-      def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
+      inline def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
+      inline def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
       
-      @scala.inline
-      def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
+      inline def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
+      inline def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
       
-      @scala.inline
-      def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
+      inline def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
+      inline def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
       
-      @scala.inline
-      def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
+      inline def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
+      inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
-      @scala.inline
-      def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
+      inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
+      inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
       
-      @scala.inline
-      def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
+      inline def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
+      inline def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
       
-      @scala.inline
-      def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
+      inline def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
+      inline def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
       
-      @scala.inline
-      def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
+      inline def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
+      inline def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
       
-      @scala.inline
-      def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
+      inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
       
-      @scala.inline
-      def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
+      inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
+      inline def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
       
-      @scala.inline
-      def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
+      inline def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
+      inline def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
       
-      @scala.inline
-      def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
+      inline def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
+      inline def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
       
-      @scala.inline
-      def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+      inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
       
-      @scala.inline
-      def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
+      inline def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
+      inline def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
       
-      @scala.inline
-      def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
+      inline def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
+      inline def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
       
-      @scala.inline
-      def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+      inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       
-      @scala.inline
-      def setOptional(value: `true` | `0`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: `true` | `0`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
+      inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
+      inline def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
       
-      @scala.inline
-      def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
+      inline def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
+      inline def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
       
-      @scala.inline
-      def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
+      inline def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
+      inline def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
       
-      @scala.inline
-      def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
+      inline def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
+      inline def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
       
-      @scala.inline
-      def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
+      inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
       
-      @scala.inline
-      def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
+      inline def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
+      inline def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
       
-      @scala.inline
-      def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
+      inline def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
+      inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
-      @scala.inline
-      def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
+      inline def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
+      inline def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
+      inline def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
+      inline def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
     }
   }
   
@@ -2002,104 +1600,72 @@ object schemaMod {
   }
   object SanitizersSchema {
     
-    @scala.inline
-    def apply(): SanitizersSchema = {
+    inline def apply(): SanitizersSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SanitizersSchema]
     }
     
-    @scala.inline
-    implicit class SanitizersSchemaMutableBuilder[Self <: SanitizersSchema] (val x: Self) extends AnyVal {
+    extension [Self <: SanitizersSchema](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
+      inline def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
+      inline def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
       
-      @scala.inline
-      def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
+      inline def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
+      inline def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
       
-      @scala.inline
-      def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
+      inline def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
+      inline def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
       
-      @scala.inline
-      def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
+      inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
+      inline def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
       
-      @scala.inline
-      def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
+      inline def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
+      inline def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
       
-      @scala.inline
-      def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
+      inline def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
+      inline def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
       
-      @scala.inline
-      def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
+      inline def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
+      inline def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
       
-      @scala.inline
-      def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
+      inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
       
-      @scala.inline
-      def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
+      inline def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
+      inline def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
       
-      @scala.inline
-      def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
+      inline def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
+      inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
-      @scala.inline
-      def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
+      inline def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
+      inline def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     }
   }
   
@@ -2417,620 +1983,416 @@ object schemaMod {
   }
   object ValidationParamSchema {
     
-    @scala.inline
-    def apply(): ValidationParamSchema = {
+    inline def apply(): ValidationParamSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationParamSchema]
     }
     
-    @scala.inline
-    implicit class ValidationParamSchemaMutableBuilder[Self <: ValidationParamSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationParamSchema](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: SanitizerSchemaOptions[blacklist]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      @scala.inline
-      def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
+      inline def setCustomSanitizer(value: SanitizerSchemaOptions[customSanitizer]): Self = StObject.set(x, "customSanitizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
+      inline def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
+      inline def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setIn(value: Location | js.Array[Location]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Location | js.Array[Location]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      @scala.inline
-      def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value :_*))
+      inline def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value :_*))
       
-      @scala.inline
-      def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
+      inline def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
+      inline def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
       
-      @scala.inline
-      def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
+      inline def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
+      inline def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
       
-      @scala.inline
-      def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
+      inline def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
+      inline def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
       
-      @scala.inline
-      def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+      inline def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
+      inline def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
       
-      @scala.inline
-      def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
+      inline def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
+      inline def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
       
-      @scala.inline
-      def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
+      inline def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
+      inline def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
       
-      @scala.inline
-      def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
+      inline def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
+      inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
       
-      @scala.inline
-      def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
+      inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
+      inline def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
       
-      @scala.inline
-      def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
+      inline def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
+      inline def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
       
-      @scala.inline
-      def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
+      inline def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
+      inline def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
       
-      @scala.inline
-      def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
+      inline def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
+      inline def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
       
-      @scala.inline
-      def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
+      inline def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
+      inline def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
       
-      @scala.inline
-      def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
+      inline def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
+      inline def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
       
-      @scala.inline
-      def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
+      inline def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
+      inline def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
       
-      @scala.inline
-      def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
+      inline def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
+      inline def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
       
-      @scala.inline
-      def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
+      inline def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
+      inline def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
       
-      @scala.inline
-      def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
+      inline def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
+      inline def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
       
-      @scala.inline
-      def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
+      inline def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
+      inline def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
       
-      @scala.inline
-      def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
+      inline def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
+      inline def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
       
-      @scala.inline
-      def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
+      inline def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
+      inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
       
-      @scala.inline
-      def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
+      inline def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
       
-      @scala.inline
-      def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
+      inline def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
+      inline def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
       
-      @scala.inline
-      def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
+      inline def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
+      inline def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
       
-      @scala.inline
-      def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
+      inline def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
+      inline def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
       
-      @scala.inline
-      def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
+      inline def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
+      inline def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
       
-      @scala.inline
-      def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
+      inline def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
+      inline def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
       
-      @scala.inline
-      def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
+      inline def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
+      inline def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
       
-      @scala.inline
-      def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
+      inline def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
+      inline def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
       
-      @scala.inline
-      def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
+      inline def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
+      inline def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
       
-      @scala.inline
-      def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
+      inline def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
+      inline def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
       
-      @scala.inline
-      def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
+      inline def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
+      inline def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
       
-      @scala.inline
-      def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
+      inline def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
+      inline def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
       
-      @scala.inline
-      def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
+      inline def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
+      inline def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
+      inline def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
       
-      @scala.inline
-      def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
+      inline def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
       
-      @scala.inline
-      def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
+      inline def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
+      inline def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
       
-      @scala.inline
-      def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
+      inline def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
+      inline def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
+      inline def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
+      inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
-      @scala.inline
-      def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
+      inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
+      inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
       
-      @scala.inline
-      def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
+      inline def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
+      inline def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
       
-      @scala.inline
-      def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
+      inline def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
+      inline def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
       
-      @scala.inline
-      def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
+      inline def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
+      inline def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
       
-      @scala.inline
-      def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
+      inline def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
+      inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
       
-      @scala.inline
-      def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
+      inline def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
+      inline def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
       
-      @scala.inline
-      def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
+      inline def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
+      inline def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
       
-      @scala.inline
-      def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
+      inline def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
+      inline def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
       
-      @scala.inline
-      def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
+      inline def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
+      inline def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
       
-      @scala.inline
-      def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
+      inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
       
-      @scala.inline
-      def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
+      inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
+      inline def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
       
-      @scala.inline
-      def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
+      inline def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
+      inline def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
       
-      @scala.inline
-      def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
+      inline def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
+      inline def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
       
-      @scala.inline
-      def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
+      inline def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
+      inline def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
       
-      @scala.inline
-      def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
+      inline def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
+      inline def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
       
-      @scala.inline
-      def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
+      inline def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
+      inline def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
       
-      @scala.inline
-      def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
+      inline def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
+      inline def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
       
-      @scala.inline
-      def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
+      inline def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
+      inline def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
       
-      @scala.inline
-      def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
+      inline def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
+      inline def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
       
-      @scala.inline
-      def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
+      inline def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
+      inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
-      @scala.inline
-      def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
+      inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
+      inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
       
-      @scala.inline
-      def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
+      inline def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
+      inline def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
       
-      @scala.inline
-      def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
+      inline def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
+      inline def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
       
-      @scala.inline
-      def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
+      inline def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
+      inline def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
       
-      @scala.inline
-      def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
+      inline def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
+      inline def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
       
-      @scala.inline
-      def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
+      inline def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
+      inline def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
       
-      @scala.inline
-      def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
+      inline def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
+      inline def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
       
-      @scala.inline
-      def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
+      inline def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
+      inline def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
       
-      @scala.inline
-      def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
+      inline def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
+      inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
-      @scala.inline
-      def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
+      inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
+      inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
       
-      @scala.inline
-      def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
+      inline def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
+      inline def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
       
-      @scala.inline
-      def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
+      inline def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
+      inline def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
       
-      @scala.inline
-      def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
+      inline def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
+      inline def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
       
-      @scala.inline
-      def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
+      inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
       
-      @scala.inline
-      def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
+      inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
+      inline def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
       
-      @scala.inline
-      def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
+      inline def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
+      inline def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
       
-      @scala.inline
-      def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
+      inline def setLtrim(value: SanitizerSchemaOptions[ltrim]): Self = StObject.set(x, "ltrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
+      inline def setLtrimUndefined: Self = StObject.set(x, "ltrim", js.undefined)
       
-      @scala.inline
-      def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+      inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
       
-      @scala.inline
-      def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
+      inline def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
+      inline def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
       
-      @scala.inline
-      def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
+      inline def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
+      inline def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
       
-      @scala.inline
-      def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+      inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       
-      @scala.inline
-      def setOptional(value: `true` | `0`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: `true` | `0`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
+      inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
+      inline def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
       
-      @scala.inline
-      def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
+      inline def setStripLow(value: SanitizerSchemaOptions[stripLow]): Self = StObject.set(x, "stripLow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
+      inline def setStripLowUndefined: Self = StObject.set(x, "stripLow", js.undefined)
       
-      @scala.inline
-      def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
+      inline def setToArray(value: SanitizerSchemaOptions[toArray]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
+      inline def setToArrayUndefined: Self = StObject.set(x, "toArray", js.undefined)
       
-      @scala.inline
-      def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
+      inline def setToBoolean(value: SanitizerSchemaOptions[toBoolean]): Self = StObject.set(x, "toBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
+      inline def setToBooleanUndefined: Self = StObject.set(x, "toBoolean", js.undefined)
       
-      @scala.inline
-      def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+      inline def setToDate(value: SanitizerSchemaOptions[toDate]): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
+      inline def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
       
-      @scala.inline
-      def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
+      inline def setToFloat(value: SanitizerSchemaOptions[toFloat]): Self = StObject.set(x, "toFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
+      inline def setToFloatUndefined: Self = StObject.set(x, "toFloat", js.undefined)
       
-      @scala.inline
-      def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
+      inline def setToInt(value: SanitizerSchemaOptions[toInt]): Self = StObject.set(x, "toInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
+      inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
-      @scala.inline
-      def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
+      inline def setUnescape(value: SanitizerSchemaOptions[unescape]): Self = StObject.set(x, "unescape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
+      inline def setUnescapeUndefined: Self = StObject.set(x, "unescape", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: SanitizerSchemaOptions[whitelist]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
+      inline def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
+      inline def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
     }
   }
   
@@ -3304,506 +2666,340 @@ object schemaMod {
   }
   object ValidatorsSchema {
     
-    @scala.inline
-    def apply(): ValidatorsSchema = {
+    inline def apply(): ValidatorsSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidatorsSchema]
     }
     
-    @scala.inline
-    implicit class ValidatorsSchemaMutableBuilder[Self <: ValidatorsSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatorsSchema](x: Self) {
       
-      @scala.inline
-      def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+      inline def setContains(value: ValidatorSchemaOptions[contains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+      inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
       
-      @scala.inline
-      def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: ValidatorSchemaOptions[custom]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: ValidatorSchemaOptions[exists]): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
       
-      @scala.inline
-      def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
+      inline def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
+      inline def setIsAfterUndefined: Self = StObject.set(x, "isAfter", js.undefined)
       
-      @scala.inline
-      def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
+      inline def setIsAlpha(value: ValidatorSchemaOptions[isAlpha]): Self = StObject.set(x, "isAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
+      inline def setIsAlphaUndefined: Self = StObject.set(x, "isAlpha", js.undefined)
       
-      @scala.inline
-      def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
+      inline def setIsAlphanumeric(value: ValidatorSchemaOptions[isAlphanumeric]): Self = StObject.set(x, "isAlphanumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
+      inline def setIsAlphanumericUndefined: Self = StObject.set(x, "isAlphanumeric", js.undefined)
       
-      @scala.inline
-      def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+      inline def setIsArray(value: ValidatorSchemaOptions[isArray]): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
+      inline def setIsArrayUndefined: Self = StObject.set(x, "isArray", js.undefined)
       
-      @scala.inline
-      def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
+      inline def setIsAscii(value: ValidatorSchemaOptions[isAscii]): Self = StObject.set(x, "isAscii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
+      inline def setIsAsciiUndefined: Self = StObject.set(x, "isAscii", js.undefined)
       
-      @scala.inline
-      def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
+      inline def setIsBIC(value: ValidatorSchemaOptions[isBIC]): Self = StObject.set(x, "isBIC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
+      inline def setIsBICUndefined: Self = StObject.set(x, "isBIC", js.undefined)
       
-      @scala.inline
-      def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
+      inline def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
+      inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
       
-      @scala.inline
-      def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
+      inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
+      inline def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
       
-      @scala.inline
-      def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
+      inline def setIsBefore(value: ValidatorSchemaOptions[isBefore]): Self = StObject.set(x, "isBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
+      inline def setIsBeforeUndefined: Self = StObject.set(x, "isBefore", js.undefined)
       
-      @scala.inline
-      def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
+      inline def setIsBoolean(value: ValidatorSchemaOptions[isBoolean]): Self = StObject.set(x, "isBoolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
+      inline def setIsBooleanUndefined: Self = StObject.set(x, "isBoolean", js.undefined)
       
-      @scala.inline
-      def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
+      inline def setIsBtcAddress(value: ValidatorSchemaOptions[isBtcAddress]): Self = StObject.set(x, "isBtcAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
+      inline def setIsBtcAddressUndefined: Self = StObject.set(x, "isBtcAddress", js.undefined)
       
-      @scala.inline
-      def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
+      inline def setIsByteLength(value: ValidatorSchemaOptions[isByteLength]): Self = StObject.set(x, "isByteLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
+      inline def setIsByteLengthUndefined: Self = StObject.set(x, "isByteLength", js.undefined)
       
-      @scala.inline
-      def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
+      inline def setIsCreditCard(value: ValidatorSchemaOptions[isCreditCard]): Self = StObject.set(x, "isCreditCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
+      inline def setIsCreditCardUndefined: Self = StObject.set(x, "isCreditCard", js.undefined)
       
-      @scala.inline
-      def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
+      inline def setIsCurrency(value: ValidatorSchemaOptions[isCurrency]): Self = StObject.set(x, "isCurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
+      inline def setIsCurrencyUndefined: Self = StObject.set(x, "isCurrency", js.undefined)
       
-      @scala.inline
-      def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
+      inline def setIsDataURI(value: ValidatorSchemaOptions[isDataURI]): Self = StObject.set(x, "isDataURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
+      inline def setIsDataURIUndefined: Self = StObject.set(x, "isDataURI", js.undefined)
       
-      @scala.inline
-      def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
+      inline def setIsDate(value: ValidatorSchemaOptions[isDate]): Self = StObject.set(x, "isDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
+      inline def setIsDateUndefined: Self = StObject.set(x, "isDate", js.undefined)
       
-      @scala.inline
-      def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
+      inline def setIsDecimal(value: ValidatorSchemaOptions[isDecimal]): Self = StObject.set(x, "isDecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
+      inline def setIsDecimalUndefined: Self = StObject.set(x, "isDecimal", js.undefined)
       
-      @scala.inline
-      def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
+      inline def setIsDivisibleBy(value: ValidatorSchemaOptions[isDivisibleBy]): Self = StObject.set(x, "isDivisibleBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
+      inline def setIsDivisibleByUndefined: Self = StObject.set(x, "isDivisibleBy", js.undefined)
       
-      @scala.inline
-      def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
+      inline def setIsEAN(value: ValidatorSchemaOptions[isEAN]): Self = StObject.set(x, "isEAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
+      inline def setIsEANUndefined: Self = StObject.set(x, "isEAN", js.undefined)
       
-      @scala.inline
-      def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
+      inline def setIsEmail(value: ValidatorSchemaOptions[isEmail]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
+      inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
       
-      @scala.inline
-      def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: ValidatorSchemaOptions[isEmpty]): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
+      inline def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
       
-      @scala.inline
-      def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
+      inline def setIsEthereumAddress(value: ValidatorSchemaOptions[isEthereumAddress]): Self = StObject.set(x, "isEthereumAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
+      inline def setIsEthereumAddressUndefined: Self = StObject.set(x, "isEthereumAddress", js.undefined)
       
-      @scala.inline
-      def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
+      inline def setIsFQDN(value: ValidatorSchemaOptions[isFQDN]): Self = StObject.set(x, "isFQDN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
+      inline def setIsFQDNUndefined: Self = StObject.set(x, "isFQDN", js.undefined)
       
-      @scala.inline
-      def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
+      inline def setIsFloat(value: ValidatorSchemaOptions[isFloat]): Self = StObject.set(x, "isFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
+      inline def setIsFloatUndefined: Self = StObject.set(x, "isFloat", js.undefined)
       
-      @scala.inline
-      def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
+      inline def setIsFullWidth(value: ValidatorSchemaOptions[isFullWidth]): Self = StObject.set(x, "isFullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
+      inline def setIsFullWidthUndefined: Self = StObject.set(x, "isFullWidth", js.undefined)
       
-      @scala.inline
-      def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
+      inline def setIsHSL(value: ValidatorSchemaOptions[isHSL]): Self = StObject.set(x, "isHSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
+      inline def setIsHSLUndefined: Self = StObject.set(x, "isHSL", js.undefined)
       
-      @scala.inline
-      def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
+      inline def setIsHalfWidth(value: ValidatorSchemaOptions[isHalfWidth]): Self = StObject.set(x, "isHalfWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
+      inline def setIsHalfWidthUndefined: Self = StObject.set(x, "isHalfWidth", js.undefined)
       
-      @scala.inline
-      def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
+      inline def setIsHash(value: ValidatorSchemaOptions[isHash]): Self = StObject.set(x, "isHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
+      inline def setIsHashUndefined: Self = StObject.set(x, "isHash", js.undefined)
       
-      @scala.inline
-      def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
+      inline def setIsHexColor(value: ValidatorSchemaOptions[isHexColor]): Self = StObject.set(x, "isHexColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
+      inline def setIsHexColorUndefined: Self = StObject.set(x, "isHexColor", js.undefined)
       
-      @scala.inline
-      def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
+      inline def setIsHexadecimal(value: ValidatorSchemaOptions[isHexadecimal]): Self = StObject.set(x, "isHexadecimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
+      inline def setIsHexadecimalUndefined: Self = StObject.set(x, "isHexadecimal", js.undefined)
       
-      @scala.inline
-      def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
+      inline def setIsIBAN(value: ValidatorSchemaOptions[isIBAN]): Self = StObject.set(x, "isIBAN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
+      inline def setIsIBANUndefined: Self = StObject.set(x, "isIBAN", js.undefined)
       
-      @scala.inline
-      def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
+      inline def setIsIMEI(value: ValidatorSchemaOptions[isIMEI]): Self = StObject.set(x, "isIMEI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
+      inline def setIsIMEIUndefined: Self = StObject.set(x, "isIMEI", js.undefined)
       
-      @scala.inline
-      def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
+      inline def setIsIP(value: ValidatorSchemaOptions[isIP]): Self = StObject.set(x, "isIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
+      inline def setIsIPRange(value: ValidatorSchemaOptions[isIPRange]): Self = StObject.set(x, "isIPRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
+      inline def setIsIPRangeUndefined: Self = StObject.set(x, "isIPRange", js.undefined)
       
-      @scala.inline
-      def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
+      inline def setIsIPUndefined: Self = StObject.set(x, "isIP", js.undefined)
       
-      @scala.inline
-      def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
+      inline def setIsISBN(value: ValidatorSchemaOptions[isISBN]): Self = StObject.set(x, "isISBN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
+      inline def setIsISBNUndefined: Self = StObject.set(x, "isISBN", js.undefined)
       
-      @scala.inline
-      def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
+      inline def setIsISIN(value: ValidatorSchemaOptions[isISIN]): Self = StObject.set(x, "isISIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
+      inline def setIsISINUndefined: Self = StObject.set(x, "isISIN", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha2(value: ValidatorSchemaOptions[isISO31661Alpha2]): Self = StObject.set(x, "isISO31661Alpha2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
+      inline def setIsISO31661Alpha2Undefined: Self = StObject.set(x, "isISO31661Alpha2", js.undefined)
       
-      @scala.inline
-      def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
+      inline def setIsISO31661Alpha3(value: ValidatorSchemaOptions[isISO31661Alpha3]): Self = StObject.set(x, "isISO31661Alpha3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
+      inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
-      @scala.inline
-      def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
+      inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
+      inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
       
-      @scala.inline
-      def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
+      inline def setIsISRC(value: ValidatorSchemaOptions[isISRC]): Self = StObject.set(x, "isISRC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
+      inline def setIsISRCUndefined: Self = StObject.set(x, "isISRC", js.undefined)
       
-      @scala.inline
-      def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
+      inline def setIsISSN(value: ValidatorSchemaOptions[isISSN]): Self = StObject.set(x, "isISSN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
+      inline def setIsISSNUndefined: Self = StObject.set(x, "isISSN", js.undefined)
       
-      @scala.inline
-      def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
+      inline def setIsIdentityCard(value: ValidatorSchemaOptions[isIdentityCard]): Self = StObject.set(x, "isIdentityCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
+      inline def setIsIdentityCardUndefined: Self = StObject.set(x, "isIdentityCard", js.undefined)
       
-      @scala.inline
-      def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
+      inline def setIsIn(value: ValidatorSchemaOptions[isIn]): Self = StObject.set(x, "isIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
+      inline def setIsInUndefined: Self = StObject.set(x, "isIn", js.undefined)
       
-      @scala.inline
-      def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
+      inline def setIsInt(value: ValidatorSchemaOptions[isInt]): Self = StObject.set(x, "isInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
+      inline def setIsIntUndefined: Self = StObject.set(x, "isInt", js.undefined)
       
-      @scala.inline
-      def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
+      inline def setIsJSON(value: ValidatorSchemaOptions[isJSON]): Self = StObject.set(x, "isJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
+      inline def setIsJSONUndefined: Self = StObject.set(x, "isJSON", js.undefined)
       
-      @scala.inline
-      def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
+      inline def setIsJWT(value: ValidatorSchemaOptions[isJWT]): Self = StObject.set(x, "isJWT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
+      inline def setIsJWTUndefined: Self = StObject.set(x, "isJWT", js.undefined)
       
-      @scala.inline
-      def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
+      inline def setIsLatLong(value: ValidatorSchemaOptions[isLatLong]): Self = StObject.set(x, "isLatLong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
+      inline def setIsLatLongUndefined: Self = StObject.set(x, "isLatLong", js.undefined)
       
-      @scala.inline
-      def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
+      inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
       
-      @scala.inline
-      def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
+      inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
+      inline def setIsLocaleUndefined: Self = StObject.set(x, "isLocale", js.undefined)
       
-      @scala.inline
-      def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
+      inline def setIsLowercase(value: ValidatorSchemaOptions[isLowercase]): Self = StObject.set(x, "isLowercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
+      inline def setIsLowercaseUndefined: Self = StObject.set(x, "isLowercase", js.undefined)
       
-      @scala.inline
-      def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
+      inline def setIsMACAddress(value: ValidatorSchemaOptions[isMACAddress]): Self = StObject.set(x, "isMACAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
+      inline def setIsMACAddressUndefined: Self = StObject.set(x, "isMACAddress", js.undefined)
       
-      @scala.inline
-      def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
+      inline def setIsMD5(value: ValidatorSchemaOptions[isMD5]): Self = StObject.set(x, "isMD5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
+      inline def setIsMD5Undefined: Self = StObject.set(x, "isMD5", js.undefined)
       
-      @scala.inline
-      def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
+      inline def setIsMagnetURI(value: ValidatorSchemaOptions[isMagnetURI]): Self = StObject.set(x, "isMagnetURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
+      inline def setIsMagnetURIUndefined: Self = StObject.set(x, "isMagnetURI", js.undefined)
       
-      @scala.inline
-      def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
+      inline def setIsMimeType(value: ValidatorSchemaOptions[isMimeType]): Self = StObject.set(x, "isMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
+      inline def setIsMimeTypeUndefined: Self = StObject.set(x, "isMimeType", js.undefined)
       
-      @scala.inline
-      def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
+      inline def setIsMobilePhone(value: ValidatorSchemaOptions[isMobilePhone]): Self = StObject.set(x, "isMobilePhone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
+      inline def setIsMobilePhoneUndefined: Self = StObject.set(x, "isMobilePhone", js.undefined)
       
-      @scala.inline
-      def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
+      inline def setIsMongoId(value: ValidatorSchemaOptions[isMongoId]): Self = StObject.set(x, "isMongoId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
+      inline def setIsMongoIdUndefined: Self = StObject.set(x, "isMongoId", js.undefined)
       
-      @scala.inline
-      def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
+      inline def setIsMultibyte(value: ValidatorSchemaOptions[isMultibyte]): Self = StObject.set(x, "isMultibyte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
+      inline def setIsMultibyteUndefined: Self = StObject.set(x, "isMultibyte", js.undefined)
       
-      @scala.inline
-      def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
+      inline def setIsNumeric(value: ValidatorSchemaOptions[isNumeric]): Self = StObject.set(x, "isNumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
+      inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
-      @scala.inline
-      def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
+      inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
+      inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
       
-      @scala.inline
-      def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
+      inline def setIsPassportNumber(value: ValidatorSchemaOptions[isPassportNumber]): Self = StObject.set(x, "isPassportNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
+      inline def setIsPassportNumberUndefined: Self = StObject.set(x, "isPassportNumber", js.undefined)
       
-      @scala.inline
-      def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
+      inline def setIsPort(value: ValidatorSchemaOptions[isPort]): Self = StObject.set(x, "isPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
+      inline def setIsPortUndefined: Self = StObject.set(x, "isPort", js.undefined)
       
-      @scala.inline
-      def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
+      inline def setIsPostalCode(value: ValidatorSchemaOptions[isPostalCode]): Self = StObject.set(x, "isPostalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
+      inline def setIsPostalCodeUndefined: Self = StObject.set(x, "isPostalCode", js.undefined)
       
-      @scala.inline
-      def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
+      inline def setIsRFC3339(value: ValidatorSchemaOptions[isRFC3339]): Self = StObject.set(x, "isRFC3339", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
+      inline def setIsRFC3339Undefined: Self = StObject.set(x, "isRFC3339", js.undefined)
       
-      @scala.inline
-      def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
+      inline def setIsRgbColor(value: ValidatorSchemaOptions[isRgbColor]): Self = StObject.set(x, "isRgbColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
+      inline def setIsRgbColorUndefined: Self = StObject.set(x, "isRgbColor", js.undefined)
       
-      @scala.inline
-      def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
+      inline def setIsSemVer(value: ValidatorSchemaOptions[isSemVer]): Self = StObject.set(x, "isSemVer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
+      inline def setIsSemVerUndefined: Self = StObject.set(x, "isSemVer", js.undefined)
       
-      @scala.inline
-      def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
+      inline def setIsSlug(value: ValidatorSchemaOptions[isSlug]): Self = StObject.set(x, "isSlug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
+      inline def setIsSlugUndefined: Self = StObject.set(x, "isSlug", js.undefined)
       
-      @scala.inline
-      def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
+      inline def setIsString(value: ValidatorSchemaOptions[isString]): Self = StObject.set(x, "isString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
+      inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
-      @scala.inline
-      def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
+      inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
+      inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
       
-      @scala.inline
-      def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
+      inline def setIsTaxID(value: ValidatorSchemaOptions[isTaxID]): Self = StObject.set(x, "isTaxID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
+      inline def setIsTaxIDUndefined: Self = StObject.set(x, "isTaxID", js.undefined)
       
-      @scala.inline
-      def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
+      inline def setIsURL(value: ValidatorSchemaOptions[isURL]): Self = StObject.set(x, "isURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
+      inline def setIsURLUndefined: Self = StObject.set(x, "isURL", js.undefined)
       
-      @scala.inline
-      def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
+      inline def setIsUUID(value: ValidatorSchemaOptions[isUUID]): Self = StObject.set(x, "isUUID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
+      inline def setIsUUIDUndefined: Self = StObject.set(x, "isUUID", js.undefined)
       
-      @scala.inline
-      def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
+      inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
       
-      @scala.inline
-      def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
+      inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
+      inline def setIsVariableWidthUndefined: Self = StObject.set(x, "isVariableWidth", js.undefined)
       
-      @scala.inline
-      def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
+      inline def setIsWhitelisted(value: ValidatorSchemaOptions[isWhitelisted]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
+      inline def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
       
-      @scala.inline
-      def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: ValidatorSchemaOptions[matches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+      inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
       
-      @scala.inline
-      def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: ValidatorSchemaOptions[not]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
+      inline def setNotEmpty(value: ValidatorSchemaOptions[notEmpty]): Self = StObject.set(x, "notEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
+      inline def setNotEmptyUndefined: Self = StObject.set(x, "notEmpty", js.undefined)
       
-      @scala.inline
-      def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+      inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       
-      @scala.inline
-      def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
+      inline def setWithMessage(value: ValidatorSchemaOptions[withMessage]): Self = StObject.set(x, "withMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
+      inline def setWithMessageUndefined: Self = StObject.set(x, "withMessage", js.undefined)
     }
   }
 }

@@ -17,8 +17,7 @@ trait TypeofpreviewApiKey extends StObject {
 }
 object TypeofpreviewApiKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapPreviewApiKey: (AxiosInstance, PreviewApiKeyProps) => PreviewApiKey,
     wrapPreviewApiKeyCollection: (AxiosInstance, CollectionProp[PreviewApiKeyProps]) => Collection[PreviewApiKey, PreviewApiKeyProps]
   ): TypeofpreviewApiKey = {
@@ -26,14 +25,11 @@ object TypeofpreviewApiKey {
     __obj.asInstanceOf[TypeofpreviewApiKey]
   }
   
-  @scala.inline
-  implicit class TypeofpreviewApiKeyMutableBuilder[Self <: TypeofpreviewApiKey] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpreviewApiKey](x: Self) {
     
-    @scala.inline
-    def setWrapPreviewApiKey(value: (AxiosInstance, PreviewApiKeyProps) => PreviewApiKey): Self = StObject.set(x, "wrapPreviewApiKey", js.Any.fromFunction2(value))
+    inline def setWrapPreviewApiKey(value: (AxiosInstance, PreviewApiKeyProps) => PreviewApiKey): Self = StObject.set(x, "wrapPreviewApiKey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapPreviewApiKeyCollection(
+    inline def setWrapPreviewApiKeyCollection(
       value: (AxiosInstance, CollectionProp[PreviewApiKeyProps]) => Collection[PreviewApiKey, PreviewApiKeyProps]
     ): Self = StObject.set(x, "wrapPreviewApiKeyCollection", js.Any.fromFunction2(value))
   }

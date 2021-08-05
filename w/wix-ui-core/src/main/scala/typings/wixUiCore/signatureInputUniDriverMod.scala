@@ -12,8 +12,7 @@ object signatureInputUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def signatureInputUniDriverFactory(base: UniDriver[js.Any]): SignatureInputDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureInputUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[SignatureInputDriver]
+  inline def signatureInputUniDriverFactory(base: UniDriver[js.Any]): SignatureInputDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureInputUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[SignatureInputDriver]
   
   trait SignatureInputDriver
     extends StObject
@@ -25,8 +24,7 @@ object signatureInputUniDriverMod {
   }
   object SignatureInputDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -37,14 +35,11 @@ object signatureInputUniDriverMod {
       __obj.asInstanceOf[SignatureInputDriver]
     }
     
-    @scala.inline
-    implicit class SignatureInputDriverMutableBuilder[Self <: SignatureInputDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureInputDriver](x: Self) {
       
-      @scala.inline
-      def setGetA11yInput(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getA11yInput", js.Any.fromFunction0(value))
+      inline def setGetA11yInput(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getA11yInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChildDriverByHook(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getChildDriverByHook", js.Any.fromFunction1(value))
+      inline def setGetChildDriverByHook(value: String => UniDriver[js.Any]): Self = StObject.set(x, "getChildDriverByHook", js.Any.fromFunction1(value))
     }
   }
 }

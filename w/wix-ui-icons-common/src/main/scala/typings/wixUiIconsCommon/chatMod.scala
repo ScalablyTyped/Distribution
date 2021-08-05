@@ -22,20 +22,16 @@ object chatMod extends Shortcut {
   }
   object ChatProps {
     
-    @scala.inline
-    def apply(): ChatProps = {
+    inline def apply(): ChatProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChatProps]
     }
     
-    @scala.inline
-    implicit class ChatPropsMutableBuilder[Self <: ChatProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChatProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

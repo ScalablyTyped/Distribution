@@ -71,17 +71,14 @@ object mod {
     }
     object Document {
       
-      @scala.inline
-      def apply(fonts: FontFaceSet): Document = {
+      inline def apply(fonts: FontFaceSet): Document = {
         val __obj = js.Dynamic.literal(fonts = fonts.asInstanceOf[js.Any])
         __obj.asInstanceOf[Document]
       }
       
-      @scala.inline
-      implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+      extension [Self <: Document](x: Self) {
         
-        @scala.inline
-        def setFonts(value: FontFaceSet): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+        inline def setFonts(value: FontFaceSet): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       }
     }
     
@@ -91,17 +88,14 @@ object mod {
     }
     object WorkerGlobalScope {
       
-      @scala.inline
-      def apply(fonts: FontFaceSet): WorkerGlobalScope = {
+      inline def apply(fonts: FontFaceSet): WorkerGlobalScope = {
         val __obj = js.Dynamic.literal(fonts = fonts.asInstanceOf[js.Any])
         __obj.asInstanceOf[WorkerGlobalScope]
       }
       
-      @scala.inline
-      implicit class WorkerGlobalScopeMutableBuilder[Self <: WorkerGlobalScope] (val x: Self) extends AnyVal {
+      extension [Self <: WorkerGlobalScope](x: Self) {
         
-        @scala.inline
-        def setFonts(value: FontFaceSet): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+        inline def setFonts(value: FontFaceSet): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -124,50 +118,36 @@ object mod {
   }
   object FontFaceDescriptors {
     
-    @scala.inline
-    def apply(): FontFaceDescriptors = {
+    inline def apply(): FontFaceDescriptors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FontFaceDescriptors]
     }
     
-    @scala.inline
-    implicit class FontFaceDescriptorsMutableBuilder[Self <: FontFaceDescriptors] (val x: Self) extends AnyVal {
+    extension [Self <: FontFaceDescriptors](x: Self) {
       
-      @scala.inline
-      def setFeatureSettings(value: String): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
+      inline def setFeatureSettings(value: String): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
+      inline def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
       
-      @scala.inline
-      def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      inline def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUnicodeRange(value: String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
+      inline def setUnicodeRange(value: String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
+      inline def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      @scala.inline
-      def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
   
@@ -180,17 +160,13 @@ object mod {
   trait FontFaceLoadStatus extends StObject
   object FontFaceLoadStatus {
     
-    @scala.inline
-    def error: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.error = "error".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.error]
+    inline def error: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.error = "error".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.error]
     
-    @scala.inline
-    def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = "loaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded]
+    inline def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = "loaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded]
     
-    @scala.inline
-    def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = "loading".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading]
+    inline def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = "loading".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading]
     
-    @scala.inline
-    def unloaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.unloaded = "unloaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.unloaded]
+    inline def unloaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.unloaded = "unloaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.unloaded]
   }
   
   @js.native
@@ -264,8 +240,7 @@ object mod {
   }
   object FontFaceSetEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loading: FontFaceSetLoadEvent => js.Any,
       loadingdone: FontFaceSetLoadEvent => js.Any,
       loadingerror: FontFaceSetLoadEvent => js.Any
@@ -274,17 +249,13 @@ object mod {
       __obj.asInstanceOf[FontFaceSetEventMap]
     }
     
-    @scala.inline
-    implicit class FontFaceSetEventMapMutableBuilder[Self <: FontFaceSetEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: FontFaceSetEventMap](x: Self) {
       
-      @scala.inline
-      def setLoading(value: FontFaceSetLoadEvent => js.Any): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
+      inline def setLoading(value: FontFaceSetLoadEvent => js.Any): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadingdone(value: FontFaceSetLoadEvent => js.Any): Self = StObject.set(x, "loadingdone", js.Any.fromFunction1(value))
+      inline def setLoadingdone(value: FontFaceSetLoadEvent => js.Any): Self = StObject.set(x, "loadingdone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadingerror(value: FontFaceSetLoadEvent => js.Any): Self = StObject.set(x, "loadingerror", js.Any.fromFunction1(value))
+      inline def setLoadingerror(value: FontFaceSetLoadEvent => js.Any): Self = StObject.set(x, "loadingerror", js.Any.fromFunction1(value))
     }
   }
   
@@ -296,23 +267,18 @@ object mod {
   }
   object FontFaceSetLoadEventInit {
     
-    @scala.inline
-    def apply(): FontFaceSetLoadEventInit = {
+    inline def apply(): FontFaceSetLoadEventInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FontFaceSetLoadEventInit]
     }
     
-    @scala.inline
-    implicit class FontFaceSetLoadEventInitMutableBuilder[Self <: FontFaceSetLoadEventInit] (val x: Self) extends AnyVal {
+    extension [Self <: FontFaceSetLoadEventInit](x: Self) {
       
-      @scala.inline
-      def setFontfaces(value: js.Array[FontFace]): Self = StObject.set(x, "fontfaces", value.asInstanceOf[js.Any])
+      inline def setFontfaces(value: js.Array[FontFace]): Self = StObject.set(x, "fontfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontfacesUndefined: Self = StObject.set(x, "fontfaces", js.undefined)
+      inline def setFontfacesUndefined: Self = StObject.set(x, "fontfaces", js.undefined)
       
-      @scala.inline
-      def setFontfacesVarargs(value: FontFace*): Self = StObject.set(x, "fontfaces", js.Array(value :_*))
+      inline def setFontfacesVarargs(value: FontFace*): Self = StObject.set(x, "fontfaces", js.Array(value :_*))
     }
   }
   
@@ -323,10 +289,8 @@ object mod {
   trait FontFaceSetLoadStatus extends StObject
   object FontFaceSetLoadStatus {
     
-    @scala.inline
-    def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = "loaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded]
+    inline def loaded: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded = "loaded".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loaded]
     
-    @scala.inline
-    def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = "loading".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading]
+    inline def loading: typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading = "loading".asInstanceOf[typings.cssFontLoadingModule.cssFontLoadingModuleStrings.loading]
   }
 }

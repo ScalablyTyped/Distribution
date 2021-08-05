@@ -13,19 +13,15 @@ trait StartReplicationTaskAssessmentResponse extends StObject {
 }
 object StartReplicationTaskAssessmentResponse {
   
-  @scala.inline
-  def apply(): StartReplicationTaskAssessmentResponse = {
+  inline def apply(): StartReplicationTaskAssessmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartReplicationTaskAssessmentResponse]
   }
   
-  @scala.inline
-  implicit class StartReplicationTaskAssessmentResponseMutableBuilder[Self <: StartReplicationTaskAssessmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartReplicationTaskAssessmentResponse](x: Self) {
     
-    @scala.inline
-    def setReplicationTask(value: ReplicationTask): Self = StObject.set(x, "ReplicationTask", value.asInstanceOf[js.Any])
+    inline def setReplicationTask(value: ReplicationTask): Self = StObject.set(x, "ReplicationTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationTaskUndefined: Self = StObject.set(x, "ReplicationTask", js.undefined)
+    inline def setReplicationTaskUndefined: Self = StObject.set(x, "ReplicationTask", js.undefined)
   }
 }

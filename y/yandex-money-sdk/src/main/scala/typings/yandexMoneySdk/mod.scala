@@ -37,14 +37,11 @@ object mod {
     @js.native
     val ^ : Config = js.native
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setMONEY_URL(value: String): Self = StObject.set(x, "MONEY_URL", value.asInstanceOf[js.Any])
+      inline def setMONEY_URL(value: String): Self = StObject.set(x, "MONEY_URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSP_MONEY_URL(value: String): Self = StObject.set(x, "SP_MONEY_URL", value.asInstanceOf[js.Any])
+      inline def setSP_MONEY_URL(value: String): Self = StObject.set(x, "SP_MONEY_URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,14 +57,11 @@ object mod {
     @js.native
     val ^ : ExternalPaymentStatic = js.native
     
-    @scala.inline
-    implicit class ExternalPaymentMutableBuilder[Self <: ExternalPayment] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalPayment](x: Self) {
       
-      @scala.inline
-      def setProcess(value: (ProcessOptions, ResponseCallback[ProcessResult]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
+      inline def setProcess(value: (ProcessOptions, ResponseCallback[ProcessResult]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequest(value: (RequestOptions, ResponseCallback[RequestResult]) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
+      inline def setRequest(value: (RequestOptions, ResponseCallback[RequestResult]) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
     }
   }
   
@@ -114,32 +108,23 @@ object mod {
     @js.native
     val ^ : WalletStatic = js.native
     
-    @scala.inline
-    implicit class WalletMutableBuilder[Self <: Wallet] (val x: Self) extends AnyVal {
+    extension [Self <: Wallet](x: Self) {
       
-      @scala.inline
-      def setAccountInfo(value: ResponseCallback[AccountInfoResult] => Unit): Self = StObject.set(x, "accountInfo", js.Any.fromFunction1(value))
+      inline def setAccountInfo(value: ResponseCallback[AccountInfoResult] => Unit): Self = StObject.set(x, "accountInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncomingTransferAccept(value: (String, String, ResponseCallback[IncomingTransferAcceptResult]) => Unit): Self = StObject.set(x, "incomingTransferAccept", js.Any.fromFunction3(value))
+      inline def setIncomingTransferAccept(value: (String, String, ResponseCallback[IncomingTransferAcceptResult]) => Unit): Self = StObject.set(x, "incomingTransferAccept", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIncomingTransferReject(value: (String, ResponseCallback[IncomingTransferRejectResult]) => Unit): Self = StObject.set(x, "incomingTransferReject", js.Any.fromFunction2(value))
+      inline def setIncomingTransferReject(value: (String, ResponseCallback[IncomingTransferRejectResult]) => Unit): Self = StObject.set(x, "incomingTransferReject", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOperationDetails(value: (String, ResponseCallback[OperationDetailsResult]) => Unit): Self = StObject.set(x, "operationDetails", js.Any.fromFunction2(value))
+      inline def setOperationDetails(value: (String, ResponseCallback[OperationDetailsResult]) => Unit): Self = StObject.set(x, "operationDetails", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOperationHistory(value: (OperationHistoryOptions, ResponseCallback[OperationHistoryResult]) => Unit): Self = StObject.set(x, "operationHistory", js.Any.fromFunction2(value))
+      inline def setOperationHistory(value: (OperationHistoryOptions, ResponseCallback[OperationHistoryResult]) => Unit): Self = StObject.set(x, "operationHistory", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProcessPayment(value: (ProcessPaymentOptions, ResponseCallback[ProcessPaymentResult]) => Unit): Self = StObject.set(x, "processPayment", js.Any.fromFunction2(value))
+      inline def setProcessPayment(value: (ProcessPaymentOptions, ResponseCallback[ProcessPaymentResult]) => Unit): Self = StObject.set(x, "processPayment", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestPayment(value: (RequestPaymentOptions, ResponseCallback[RequestPaymentResult]) => Unit): Self = StObject.set(x, "requestPayment", js.Any.fromFunction2(value))
+      inline def setRequestPayment(value: (RequestPaymentOptions, ResponseCallback[RequestPaymentResult]) => Unit): Self = StObject.set(x, "requestPayment", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSendAuthenticatedRequest(value: (SendAuthenticatedRequestParams, ResponseCallback[js.Any]) => Unit): Self = StObject.set(x, "sendAuthenticatedRequest", js.Any.fromFunction2(value))
+      inline def setSendAuthenticatedRequest(value: (SendAuthenticatedRequestParams, ResponseCallback[js.Any]) => Unit): Self = StObject.set(x, "sendAuthenticatedRequest", js.Any.fromFunction2(value))
     }
   }
   

@@ -34,43 +34,31 @@ trait SchemaHealthStatus extends StObject {
 }
 object SchemaHealthStatus {
   
-  @scala.inline
-  def apply(): SchemaHealthStatus = {
+  inline def apply(): SchemaHealthStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHealthStatus]
   }
   
-  @scala.inline
-  implicit class SchemaHealthStatusMutableBuilder[Self <: SchemaHealthStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHealthStatus](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: StringDictionary[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
+    inline def setHealthState(value: String): Self = StObject.set(x, "healthState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
+    inline def setHealthStateUndefined: Self = StObject.set(x, "healthState", js.undefined)
     
-    @scala.inline
-    def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait MethodString extends StObject {
 }
 object MethodString {
   
-  @scala.inline
-  def apply(method: String): MethodString = {
+  inline def apply(method: String): MethodString = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodString]
   }
   
-  @scala.inline
-  implicit class MethodStringMutableBuilder[Self <: MethodString] (val x: Self) extends AnyVal {
+  extension [Self <: MethodString](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

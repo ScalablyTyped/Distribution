@@ -13,16 +13,11 @@ object subscribeToResultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
-  @scala.inline
-  def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: T): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
-  @scala.inline
-  def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: T, outerIndex: Double): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any], outerIndex.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
-  @scala.inline
-  def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: Unit, outerIndex: Double): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any], outerIndex.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
-  @scala.inline
-  def subscribeToResult[T, R](
+  inline def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  inline def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: T): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  inline def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: T, outerIndex: Double): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any], outerIndex.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  inline def subscribeToResult[T, R](outerSubscriber: OuterSubscriber[T, R], result: js.Any, outerValue: Unit, outerIndex: Double): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToResult")(outerSubscriber.asInstanceOf[js.Any], result.asInstanceOf[js.Any], outerValue.asInstanceOf[js.Any], outerIndex.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  inline def subscribeToResult[T, R](
     outerSubscriber: OuterSubscriber[T, R],
     result: js.Any,
     outerValue: Unit,

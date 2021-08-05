@@ -34,59 +34,43 @@ trait ChannelSection extends StObject {
 }
 object ChannelSection {
   
-  @scala.inline
-  def apply(): ChannelSection = {
+  inline def apply(): ChannelSection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelSection]
   }
   
-  @scala.inline
-  implicit class ChannelSectionMutableBuilder[Self <: ChannelSection] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSection](x: Self) {
     
-    @scala.inline
-    def setContentDetails(value: ChannelSectionContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: ChannelSectionContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
+    inline def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLocalizations(
+    inline def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.ChannelSectionLocalization}
       */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection & TopLevel[js.Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
+    inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: ChannelSectionSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: ChannelSectionSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setTargeting(value: ChannelSectionTargeting): Self = StObject.set(x, "targeting", value.asInstanceOf[js.Any])
+    inline def setTargeting(value: ChannelSectionTargeting): Self = StObject.set(x, "targeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingUndefined: Self = StObject.set(x, "targeting", js.undefined)
+    inline def setTargetingUndefined: Self = StObject.set(x, "targeting", js.undefined)
   }
 }

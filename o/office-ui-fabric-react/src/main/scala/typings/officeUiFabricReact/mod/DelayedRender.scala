@@ -22,6 +22,5 @@ object DelayedRender {
   @JSImport("office-ui-fabric-react", "DelayedRender.defaultProps")
   @js.native
   def defaultProps: Delay = js.native
-  @scala.inline
-  def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

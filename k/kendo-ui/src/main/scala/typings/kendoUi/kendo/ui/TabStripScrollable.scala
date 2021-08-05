@@ -10,19 +10,15 @@ trait TabStripScrollable extends StObject {
 }
 object TabStripScrollable {
   
-  @scala.inline
-  def apply(): TabStripScrollable = {
+  inline def apply(): TabStripScrollable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabStripScrollable]
   }
   
-  @scala.inline
-  implicit class TabStripScrollableMutableBuilder[Self <: TabStripScrollable] (val x: Self) extends AnyVal {
+  extension [Self <: TabStripScrollable](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
   }
 }

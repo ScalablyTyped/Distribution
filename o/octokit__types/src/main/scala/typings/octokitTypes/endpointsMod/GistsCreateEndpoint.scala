@@ -23,28 +23,21 @@ trait GistsCreateEndpoint extends StObject {
 }
 object GistsCreateEndpoint {
   
-  @scala.inline
-  def apply(files: GistsCreateParamsFiles): GistsCreateEndpoint = {
+  inline def apply(files: GistsCreateParamsFiles): GistsCreateEndpoint = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsCreateEndpoint]
   }
   
-  @scala.inline
-  implicit class GistsCreateEndpointMutableBuilder[Self <: GistsCreateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GistsCreateEndpoint](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFiles(value: GistsCreateParamsFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: GistsCreateParamsFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
   }
 }

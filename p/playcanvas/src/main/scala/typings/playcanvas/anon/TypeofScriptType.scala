@@ -48,25 +48,19 @@ trait TypeofScriptType extends StObject {
 }
 object TypeofScriptType {
   
-  @scala.inline
-  def apply(attributes: ScriptAttributes, extend: js.Any => Unit): TypeofScriptType = {
+  inline def apply(attributes: ScriptAttributes, extend: js.Any => Unit): TypeofScriptType = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), scriptName = null)
     __obj.asInstanceOf[TypeofScriptType]
   }
   
-  @scala.inline
-  implicit class TypeofScriptTypeMutableBuilder[Self <: TypeofScriptType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofScriptType](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: ScriptAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ScriptAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtend(value: js.Any => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Any => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
+    inline def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptNameNull: Self = StObject.set(x, "scriptName", null)
+    inline def setScriptNameNull: Self = StObject.set(x, "scriptName", null)
   }
 }

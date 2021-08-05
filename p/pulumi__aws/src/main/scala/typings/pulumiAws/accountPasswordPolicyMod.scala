@@ -92,21 +92,16 @@ object accountPasswordPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountPasswordPolicyState): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccountPasswordPolicyState, opts: CustomResourceOptions): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
+    inline def get(name: String, id: Input[ID]): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
+    inline def get(name: String, id: Input[ID], state: AccountPasswordPolicyState): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
+    inline def get(name: String, id: Input[ID], state: AccountPasswordPolicyState, opts: CustomResourceOptions): AccountPasswordPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccountPasswordPolicy]
     
     /**
       * Returns true if the given object is an instance of AccountPasswordPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ Boolean]
   }
   
   trait AccountPasswordPolicyArgs extends StObject {
@@ -158,68 +153,48 @@ object accountPasswordPolicyMod {
   }
   object AccountPasswordPolicyArgs {
     
-    @scala.inline
-    def apply(): AccountPasswordPolicyArgs = {
+    inline def apply(): AccountPasswordPolicyArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountPasswordPolicyArgs]
     }
     
-    @scala.inline
-    implicit class AccountPasswordPolicyArgsMutableBuilder[Self <: AccountPasswordPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AccountPasswordPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setAllowUsersToChangePassword(value: Input[Boolean]): Self = StObject.set(x, "allowUsersToChangePassword", value.asInstanceOf[js.Any])
+      inline def setAllowUsersToChangePassword(value: Input[Boolean]): Self = StObject.set(x, "allowUsersToChangePassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUsersToChangePasswordUndefined: Self = StObject.set(x, "allowUsersToChangePassword", js.undefined)
+      inline def setAllowUsersToChangePasswordUndefined: Self = StObject.set(x, "allowUsersToChangePassword", js.undefined)
       
-      @scala.inline
-      def setHardExpiry(value: Input[Boolean]): Self = StObject.set(x, "hardExpiry", value.asInstanceOf[js.Any])
+      inline def setHardExpiry(value: Input[Boolean]): Self = StObject.set(x, "hardExpiry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardExpiryUndefined: Self = StObject.set(x, "hardExpiry", js.undefined)
+      inline def setHardExpiryUndefined: Self = StObject.set(x, "hardExpiry", js.undefined)
       
-      @scala.inline
-      def setMaxPasswordAge(value: Input[Double]): Self = StObject.set(x, "maxPasswordAge", value.asInstanceOf[js.Any])
+      inline def setMaxPasswordAge(value: Input[Double]): Self = StObject.set(x, "maxPasswordAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPasswordAgeUndefined: Self = StObject.set(x, "maxPasswordAge", js.undefined)
+      inline def setMaxPasswordAgeUndefined: Self = StObject.set(x, "maxPasswordAge", js.undefined)
       
-      @scala.inline
-      def setMinimumPasswordLength(value: Input[Double]): Self = StObject.set(x, "minimumPasswordLength", value.asInstanceOf[js.Any])
+      inline def setMinimumPasswordLength(value: Input[Double]): Self = StObject.set(x, "minimumPasswordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumPasswordLengthUndefined: Self = StObject.set(x, "minimumPasswordLength", js.undefined)
+      inline def setMinimumPasswordLengthUndefined: Self = StObject.set(x, "minimumPasswordLength", js.undefined)
       
-      @scala.inline
-      def setPasswordReusePrevention(value: Input[Double]): Self = StObject.set(x, "passwordReusePrevention", value.asInstanceOf[js.Any])
+      inline def setPasswordReusePrevention(value: Input[Double]): Self = StObject.set(x, "passwordReusePrevention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordReusePreventionUndefined: Self = StObject.set(x, "passwordReusePrevention", js.undefined)
+      inline def setPasswordReusePreventionUndefined: Self = StObject.set(x, "passwordReusePrevention", js.undefined)
       
-      @scala.inline
-      def setRequireLowercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireLowercaseCharacters", value.asInstanceOf[js.Any])
+      inline def setRequireLowercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireLowercaseCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireLowercaseCharactersUndefined: Self = StObject.set(x, "requireLowercaseCharacters", js.undefined)
+      inline def setRequireLowercaseCharactersUndefined: Self = StObject.set(x, "requireLowercaseCharacters", js.undefined)
       
-      @scala.inline
-      def setRequireNumbers(value: Input[Boolean]): Self = StObject.set(x, "requireNumbers", value.asInstanceOf[js.Any])
+      inline def setRequireNumbers(value: Input[Boolean]): Self = StObject.set(x, "requireNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireNumbersUndefined: Self = StObject.set(x, "requireNumbers", js.undefined)
+      inline def setRequireNumbersUndefined: Self = StObject.set(x, "requireNumbers", js.undefined)
       
-      @scala.inline
-      def setRequireSymbols(value: Input[Boolean]): Self = StObject.set(x, "requireSymbols", value.asInstanceOf[js.Any])
+      inline def setRequireSymbols(value: Input[Boolean]): Self = StObject.set(x, "requireSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireSymbolsUndefined: Self = StObject.set(x, "requireSymbols", js.undefined)
+      inline def setRequireSymbolsUndefined: Self = StObject.set(x, "requireSymbols", js.undefined)
       
-      @scala.inline
-      def setRequireUppercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireUppercaseCharacters", value.asInstanceOf[js.Any])
+      inline def setRequireUppercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireUppercaseCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireUppercaseCharactersUndefined: Self = StObject.set(x, "requireUppercaseCharacters", js.undefined)
+      inline def setRequireUppercaseCharactersUndefined: Self = StObject.set(x, "requireUppercaseCharacters", js.undefined)
     }
   }
   
@@ -277,74 +252,52 @@ object accountPasswordPolicyMod {
   }
   object AccountPasswordPolicyState {
     
-    @scala.inline
-    def apply(): AccountPasswordPolicyState = {
+    inline def apply(): AccountPasswordPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccountPasswordPolicyState]
     }
     
-    @scala.inline
-    implicit class AccountPasswordPolicyStateMutableBuilder[Self <: AccountPasswordPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: AccountPasswordPolicyState](x: Self) {
       
-      @scala.inline
-      def setAllowUsersToChangePassword(value: Input[Boolean]): Self = StObject.set(x, "allowUsersToChangePassword", value.asInstanceOf[js.Any])
+      inline def setAllowUsersToChangePassword(value: Input[Boolean]): Self = StObject.set(x, "allowUsersToChangePassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUsersToChangePasswordUndefined: Self = StObject.set(x, "allowUsersToChangePassword", js.undefined)
+      inline def setAllowUsersToChangePasswordUndefined: Self = StObject.set(x, "allowUsersToChangePassword", js.undefined)
       
-      @scala.inline
-      def setExpirePasswords(value: Input[Boolean]): Self = StObject.set(x, "expirePasswords", value.asInstanceOf[js.Any])
+      inline def setExpirePasswords(value: Input[Boolean]): Self = StObject.set(x, "expirePasswords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirePasswordsUndefined: Self = StObject.set(x, "expirePasswords", js.undefined)
+      inline def setExpirePasswordsUndefined: Self = StObject.set(x, "expirePasswords", js.undefined)
       
-      @scala.inline
-      def setHardExpiry(value: Input[Boolean]): Self = StObject.set(x, "hardExpiry", value.asInstanceOf[js.Any])
+      inline def setHardExpiry(value: Input[Boolean]): Self = StObject.set(x, "hardExpiry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardExpiryUndefined: Self = StObject.set(x, "hardExpiry", js.undefined)
+      inline def setHardExpiryUndefined: Self = StObject.set(x, "hardExpiry", js.undefined)
       
-      @scala.inline
-      def setMaxPasswordAge(value: Input[Double]): Self = StObject.set(x, "maxPasswordAge", value.asInstanceOf[js.Any])
+      inline def setMaxPasswordAge(value: Input[Double]): Self = StObject.set(x, "maxPasswordAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPasswordAgeUndefined: Self = StObject.set(x, "maxPasswordAge", js.undefined)
+      inline def setMaxPasswordAgeUndefined: Self = StObject.set(x, "maxPasswordAge", js.undefined)
       
-      @scala.inline
-      def setMinimumPasswordLength(value: Input[Double]): Self = StObject.set(x, "minimumPasswordLength", value.asInstanceOf[js.Any])
+      inline def setMinimumPasswordLength(value: Input[Double]): Self = StObject.set(x, "minimumPasswordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumPasswordLengthUndefined: Self = StObject.set(x, "minimumPasswordLength", js.undefined)
+      inline def setMinimumPasswordLengthUndefined: Self = StObject.set(x, "minimumPasswordLength", js.undefined)
       
-      @scala.inline
-      def setPasswordReusePrevention(value: Input[Double]): Self = StObject.set(x, "passwordReusePrevention", value.asInstanceOf[js.Any])
+      inline def setPasswordReusePrevention(value: Input[Double]): Self = StObject.set(x, "passwordReusePrevention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordReusePreventionUndefined: Self = StObject.set(x, "passwordReusePrevention", js.undefined)
+      inline def setPasswordReusePreventionUndefined: Self = StObject.set(x, "passwordReusePrevention", js.undefined)
       
-      @scala.inline
-      def setRequireLowercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireLowercaseCharacters", value.asInstanceOf[js.Any])
+      inline def setRequireLowercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireLowercaseCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireLowercaseCharactersUndefined: Self = StObject.set(x, "requireLowercaseCharacters", js.undefined)
+      inline def setRequireLowercaseCharactersUndefined: Self = StObject.set(x, "requireLowercaseCharacters", js.undefined)
       
-      @scala.inline
-      def setRequireNumbers(value: Input[Boolean]): Self = StObject.set(x, "requireNumbers", value.asInstanceOf[js.Any])
+      inline def setRequireNumbers(value: Input[Boolean]): Self = StObject.set(x, "requireNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireNumbersUndefined: Self = StObject.set(x, "requireNumbers", js.undefined)
+      inline def setRequireNumbersUndefined: Self = StObject.set(x, "requireNumbers", js.undefined)
       
-      @scala.inline
-      def setRequireSymbols(value: Input[Boolean]): Self = StObject.set(x, "requireSymbols", value.asInstanceOf[js.Any])
+      inline def setRequireSymbols(value: Input[Boolean]): Self = StObject.set(x, "requireSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireSymbolsUndefined: Self = StObject.set(x, "requireSymbols", js.undefined)
+      inline def setRequireSymbolsUndefined: Self = StObject.set(x, "requireSymbols", js.undefined)
       
-      @scala.inline
-      def setRequireUppercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireUppercaseCharacters", value.asInstanceOf[js.Any])
+      inline def setRequireUppercaseCharacters(value: Input[Boolean]): Self = StObject.set(x, "requireUppercaseCharacters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireUppercaseCharactersUndefined: Self = StObject.set(x, "requireUppercaseCharacters", js.undefined)
+      inline def setRequireUppercaseCharactersUndefined: Self = StObject.set(x, "requireUppercaseCharacters", js.undefined)
     }
   }
 }

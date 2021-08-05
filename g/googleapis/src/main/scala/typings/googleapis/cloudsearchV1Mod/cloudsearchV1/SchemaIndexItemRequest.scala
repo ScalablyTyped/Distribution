@@ -31,43 +31,31 @@ trait SchemaIndexItemRequest extends StObject {
 }
 object SchemaIndexItemRequest {
   
-  @scala.inline
-  def apply(): SchemaIndexItemRequest = {
+  inline def apply(): SchemaIndexItemRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIndexItemRequest]
   }
   
-  @scala.inline
-  implicit class SchemaIndexItemRequestMutableBuilder[Self <: SchemaIndexItemRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIndexItemRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
+    inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
-    @scala.inline
-    def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
+    inline def setDebugOptions(value: SchemaDebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
+    inline def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
-    @scala.inline
-    def setIndexItemOptions(value: SchemaIndexItemOptions): Self = StObject.set(x, "indexItemOptions", value.asInstanceOf[js.Any])
+    inline def setIndexItemOptions(value: SchemaIndexItemOptions): Self = StObject.set(x, "indexItemOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexItemOptionsUndefined: Self = StObject.set(x, "indexItemOptions", js.undefined)
+    inline def setIndexItemOptionsUndefined: Self = StObject.set(x, "indexItemOptions", js.undefined)
     
-    @scala.inline
-    def setItem(value: SchemaItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: SchemaItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

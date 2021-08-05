@@ -30,8 +30,7 @@ object anon {
   }
   object Assertions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assertions: NewmanRunStat,
       items: NewmanRunStat,
       iterations: NewmanRunStat,
@@ -46,35 +45,25 @@ object anon {
       __obj.asInstanceOf[Assertions]
     }
     
-    @scala.inline
-    implicit class AssertionsMutableBuilder[Self <: Assertions] (val x: Self) extends AnyVal {
+    extension [Self <: Assertions](x: Self) {
       
-      @scala.inline
-      def setAssertions(value: NewmanRunStat): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+      inline def setAssertions(value: NewmanRunStat): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: NewmanRunStat): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: NewmanRunStat): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterations(value: NewmanRunStat): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: NewmanRunStat): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrerequestScripts(value: NewmanRunStat): Self = StObject.set(x, "prerequestScripts", value.asInstanceOf[js.Any])
+      inline def setPrerequestScripts(value: NewmanRunStat): Self = StObject.set(x, "prerequestScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrerequests(value: NewmanRunStat): Self = StObject.set(x, "prerequests", value.asInstanceOf[js.Any])
+      inline def setPrerequests(value: NewmanRunStat): Self = StObject.set(x, "prerequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequests(value: NewmanRunStat): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+      inline def setRequests(value: NewmanRunStat): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScripts(value: NewmanRunStat): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: NewmanRunStat): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestScripts(value: NewmanRunStat): Self = StObject.set(x, "testScripts", value.asInstanceOf[js.Any])
+      inline def setTestScripts(value: NewmanRunStat): Self = StObject.set(x, "testScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTests(value: NewmanRunStat): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+      inline def setTests(value: NewmanRunStat): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,26 +75,20 @@ object anon {
   }
   object Http {
     
-    @scala.inline
-    def apply(): Http = {
+    inline def apply(): Http = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Http]
     }
     
-    @scala.inline
-    implicit class HttpMutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
+    extension [Self <: Http](x: Self) {
       
-      @scala.inline
-      def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
       
-      @scala.inline
-      def setHttps(value: Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     }
   }
   
@@ -115,17 +98,14 @@ object anon {
   }
   object Ref {
     
-    @scala.inline
-    def apply(ref: String): Ref = {
+    inline def apply(ref: String): Ref = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ref]
     }
     
-    @scala.inline
-    implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+    extension [Self <: Ref](x: Self) {
       
-      @scala.inline
-      def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
 }

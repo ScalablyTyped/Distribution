@@ -12,19 +12,15 @@ trait PathEntry extends StObject {
 }
 object PathEntry {
   
-  @scala.inline
-  def apply(path: String, stats: typings.node.fsMod.Stats): PathEntry = {
+  inline def apply(path: String, stats: typings.node.fsMod.Stats): PathEntry = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathEntry]
   }
   
-  @scala.inline
-  implicit class PathEntryMutableBuilder[Self <: PathEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PathEntry](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: typings.node.fsMod.Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: typings.node.fsMod.Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

@@ -16,17 +16,14 @@ object typesMod {
   }
   object Frame {
     
-    @scala.inline
-    def apply(file: String): Frame = {
+    inline def apply(file: String): Frame = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[Frame]
     }
     
-    @scala.inline
-    implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
+    extension [Self <: Frame](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
 }

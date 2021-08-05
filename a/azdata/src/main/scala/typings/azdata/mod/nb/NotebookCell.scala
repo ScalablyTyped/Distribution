@@ -13,22 +13,17 @@ trait NotebookCell extends StObject {
 }
 object NotebookCell {
   
-  @scala.inline
-  def apply(contents: ICellContents): NotebookCell = {
+  inline def apply(contents: ICellContents): NotebookCell = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookCell]
   }
   
-  @scala.inline
-  implicit class NotebookCellMutableBuilder[Self <: NotebookCell] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookCell](x: Self) {
     
-    @scala.inline
-    def setContents(value: ICellContents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: ICellContents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

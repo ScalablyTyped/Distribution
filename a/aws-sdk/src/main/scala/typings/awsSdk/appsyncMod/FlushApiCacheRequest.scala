@@ -13,16 +13,13 @@ trait FlushApiCacheRequest extends StObject {
 }
 object FlushApiCacheRequest {
   
-  @scala.inline
-  def apply(apiId: String): FlushApiCacheRequest = {
+  inline def apply(apiId: String): FlushApiCacheRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlushApiCacheRequest]
   }
   
-  @scala.inline
-  implicit class FlushApiCacheRequestMutableBuilder[Self <: FlushApiCacheRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FlushApiCacheRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
   }
 }

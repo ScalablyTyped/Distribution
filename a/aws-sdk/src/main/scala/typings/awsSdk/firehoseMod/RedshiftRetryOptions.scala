@@ -13,19 +13,15 @@ trait RedshiftRetryOptions extends StObject {
 }
 object RedshiftRetryOptions {
   
-  @scala.inline
-  def apply(): RedshiftRetryOptions = {
+  inline def apply(): RedshiftRetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RedshiftRetryOptions]
   }
   
-  @scala.inline
-  implicit class RedshiftRetryOptionsMutableBuilder[Self <: RedshiftRetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftRetryOptions](x: Self) {
     
-    @scala.inline
-    def setDurationInSeconds(value: RedshiftRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationInSeconds(value: RedshiftRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
+    inline def setDurationInSecondsUndefined: Self = StObject.set(x, "DurationInSeconds", js.undefined)
   }
 }

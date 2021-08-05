@@ -23,25 +23,19 @@ trait SetTopicAttributesInput extends StObject {
 }
 object SetTopicAttributesInput {
   
-  @scala.inline
-  def apply(AttributeName: attributeName, TopicArn: topicARN): SetTopicAttributesInput = {
+  inline def apply(AttributeName: attributeName, TopicArn: topicARN): SetTopicAttributesInput = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTopicAttributesInput]
   }
   
-  @scala.inline
-  implicit class SetTopicAttributesInputMutableBuilder[Self <: SetTopicAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetTopicAttributesInput](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: attributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: attributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValue(value: attributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: attributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
+    inline def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

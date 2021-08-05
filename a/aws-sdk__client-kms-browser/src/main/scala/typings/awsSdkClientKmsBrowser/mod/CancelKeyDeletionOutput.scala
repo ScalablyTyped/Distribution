@@ -10,8 +10,7 @@ trait CancelKeyDeletionOutput
      with typings.awsSdkClientKmsBrowser.typesCancelKeyDeletionOutputMod.CancelKeyDeletionOutput
 object CancelKeyDeletionOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): CancelKeyDeletionOutput = {
+  inline def apply($metadata: ResponseMetadata): CancelKeyDeletionOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelKeyDeletionOutput]
   }

@@ -12,20 +12,16 @@ trait LocationChangeEvent extends StObject {
 }
 object LocationChangeEvent {
   
-  @scala.inline
-  def apply(state: js.Any, `type`: String): LocationChangeEvent = {
+  inline def apply(state: js.Any, `type`: String): LocationChangeEvent = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationChangeEvent]
   }
   
-  @scala.inline
-  implicit class LocationChangeEventMutableBuilder[Self <: LocationChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LocationChangeEvent](x: Self) {
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

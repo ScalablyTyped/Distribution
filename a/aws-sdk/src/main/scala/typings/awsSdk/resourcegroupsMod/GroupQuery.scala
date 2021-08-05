@@ -18,19 +18,15 @@ trait GroupQuery extends StObject {
 }
 object GroupQuery {
   
-  @scala.inline
-  def apply(GroupName: GroupName, ResourceQuery: ResourceQuery): GroupQuery = {
+  inline def apply(GroupName: GroupName, ResourceQuery: ResourceQuery): GroupQuery = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], ResourceQuery = ResourceQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupQuery]
   }
   
-  @scala.inline
-  implicit class GroupQueryMutableBuilder[Self <: GroupQuery] (val x: Self) extends AnyVal {
+  extension [Self <: GroupQuery](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
+    inline def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
   }
 }

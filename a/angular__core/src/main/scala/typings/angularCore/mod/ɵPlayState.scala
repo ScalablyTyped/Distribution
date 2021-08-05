@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ɵPlayState extends StObject
 object ɵPlayState {
   
-  @scala.inline
-  def Destroyed: `200` = 200.asInstanceOf[`200`]
+  inline def Destroyed: `200` = 200.asInstanceOf[`200`]
   
-  @scala.inline
-  def Finished: `100` = 100.asInstanceOf[`100`]
+  inline def Finished: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def Paused: `2` = 2.asInstanceOf[`2`]
+  inline def Paused: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Pending: `0` = 0.asInstanceOf[`0`]
+  inline def Pending: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Running: `1` = 1.asInstanceOf[`1`]
+  inline def Running: `1` = 1.asInstanceOf[`1`]
 }

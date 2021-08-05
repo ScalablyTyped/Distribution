@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLayoutFormType extends StObject
 object XlLayoutFormType {
   
-  @scala.inline
-  def xlOutline: `1` = 1.asInstanceOf[`1`]
+  inline def xlOutline: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlTabular: `0` = 0.asInstanceOf[`0`]
+  inline def xlTabular: `0` = 0.asInstanceOf[`0`]
 }

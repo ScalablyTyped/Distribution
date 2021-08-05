@@ -12,22 +12,17 @@ trait FeedbackList extends StObject {
 }
 object FeedbackList {
   
-  @scala.inline
-  def apply(): FeedbackList = {
+  inline def apply(): FeedbackList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeedbackList]
   }
   
-  @scala.inline
-  implicit class FeedbackListMutableBuilder[Self <: FeedbackList] (val x: Self) extends AnyVal {
+  extension [Self <: FeedbackList](x: Self) {
     
-    @scala.inline
-    def setFeedback(value: js.Array[GetFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: js.Array[GetFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
+    inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
-    @scala.inline
-    def setFeedbackVarargs(value: GetFeedback*): Self = StObject.set(x, "feedback", js.Array(value :_*))
+    inline def setFeedbackVarargs(value: GetFeedback*): Self = StObject.set(x, "feedback", js.Array(value :_*))
   }
 }

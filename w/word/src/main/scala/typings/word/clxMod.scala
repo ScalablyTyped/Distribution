@@ -12,12 +12,10 @@ object clxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTxt(fibRgLw: FibRgLw97, plcPcd: Buffer, doc: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTxt")(fibRgLw.asInstanceOf[js.Any], plcPcd.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getTxt(fibRgLw: FibRgLw97, plcPcd: Buffer, doc: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTxt")(fibRgLw.asInstanceOf[js.Any], plcPcd.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * [MS-DOC] 2.9.38 Clx
     */
-  @scala.inline
-  def parseClx(clx: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parseClx")(clx.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def parseClx(clx: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parseClx")(clx.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

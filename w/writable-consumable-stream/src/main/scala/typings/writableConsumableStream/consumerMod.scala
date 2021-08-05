@@ -59,26 +59,20 @@ object consumerMod {
   }
   object ConsumerStats {
     
-    @scala.inline
-    def apply(backpressure: Double, id: Double): ConsumerStats = {
+    inline def apply(backpressure: Double, id: Double): ConsumerStats = {
       val __obj = js.Dynamic.literal(backpressure = backpressure.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConsumerStats]
     }
     
-    @scala.inline
-    implicit class ConsumerStatsMutableBuilder[Self <: ConsumerStats] (val x: Self) extends AnyVal {
+    extension [Self <: ConsumerStats](x: Self) {
       
-      @scala.inline
-      def setBackpressure(value: Double): Self = StObject.set(x, "backpressure", value.asInstanceOf[js.Any])
+      inline def setBackpressure(value: Double): Self = StObject.set(x, "backpressure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -90,23 +84,18 @@ object consumerMod {
   }
   object Node {
     
-    @scala.inline
-    def apply[T](data: Done[T]): Node[T] = {
+    inline def apply[T](data: Done[T]): Node[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], next = null)
       __obj.asInstanceOf[Node[T]]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
+    extension [Self <: Node[?], T](x: Self & Node[T]) {
       
-      @scala.inline
-      def setData(value: Done[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Done[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: Node[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Node[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextNull: Self = StObject.set(x, "next", null)
+      inline def setNextNull: Self = StObject.set(x, "next", null)
     }
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): AddRemote = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[AddRemote]
-  @scala.inline
-  def apply(cwd: String): AddRemote = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[AddRemote]
+  inline def apply(): AddRemote = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[AddRemote]
+  inline def apply(cwd: String): AddRemote = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[AddRemote]
   
   @JSImport("git-add-remote", JSImport.Namespace)
   @js.native

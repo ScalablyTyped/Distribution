@@ -17,23 +17,18 @@ trait BroadcastLayoutOptions extends StObject {
 }
 object BroadcastLayoutOptions {
   
-  @scala.inline
-  def apply(`type`: bestFit | pip | verticalPresentation | horizontalPresentation | custom): BroadcastLayoutOptions = {
+  inline def apply(`type`: bestFit | pip | verticalPresentation | horizontalPresentation | custom): BroadcastLayoutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastLayoutOptions]
   }
   
-  @scala.inline
-  implicit class BroadcastLayoutOptionsMutableBuilder[Self <: BroadcastLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BroadcastLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    inline def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
+    inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
     
-    @scala.inline
-    def setType(value: bestFit | pip | verticalPresentation | horizontalPresentation | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bestFit | pip | verticalPresentation | horizontalPresentation | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

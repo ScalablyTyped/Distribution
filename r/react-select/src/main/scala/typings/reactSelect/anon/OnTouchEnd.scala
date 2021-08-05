@@ -16,8 +16,7 @@ trait OnTouchEnd extends StObject {
 }
 object OnTouchEnd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     className: String,
     onClick: js.Any => Unit,
     onMouseDown: js.Any => Unit,
@@ -27,19 +26,14 @@ object OnTouchEnd {
     __obj.asInstanceOf[OnTouchEnd]
   }
   
-  @scala.inline
-  implicit class OnTouchEndMutableBuilder[Self <: OnTouchEnd] (val x: Self) extends AnyVal {
+  extension [Self <: OnTouchEnd](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: js.Any => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTouchEnd(value: js.Any => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+    inline def setOnTouchEnd(value: js.Any => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
   }
 }

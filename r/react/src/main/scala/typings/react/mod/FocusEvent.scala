@@ -16,8 +16,7 @@ trait FocusEvent[T]
 }
 object FocusEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: EventTarget & T,
@@ -39,16 +38,12 @@ object FocusEvent {
     __obj.asInstanceOf[FocusEvent[T]]
   }
   
-  @scala.inline
-  implicit class FocusEventMutableBuilder[Self <: FocusEvent[?], T] (val x: Self & FocusEvent[T]) extends AnyVal {
+  extension [Self <: FocusEvent[?], T](x: Self & FocusEvent[T]) {
     
-    @scala.inline
-    def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+    inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+    inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
     
-    @scala.inline
-    def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: EventTarget & T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

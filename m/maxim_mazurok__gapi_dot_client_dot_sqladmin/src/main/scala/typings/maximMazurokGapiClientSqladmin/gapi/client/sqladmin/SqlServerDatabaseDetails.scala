@@ -14,25 +14,19 @@ trait SqlServerDatabaseDetails extends StObject {
 }
 object SqlServerDatabaseDetails {
   
-  @scala.inline
-  def apply(): SqlServerDatabaseDetails = {
+  inline def apply(): SqlServerDatabaseDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlServerDatabaseDetails]
   }
   
-  @scala.inline
-  implicit class SqlServerDatabaseDetailsMutableBuilder[Self <: SqlServerDatabaseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SqlServerDatabaseDetails](x: Self) {
     
-    @scala.inline
-    def setCompatibilityLevel(value: Double): Self = StObject.set(x, "compatibilityLevel", value.asInstanceOf[js.Any])
+    inline def setCompatibilityLevel(value: Double): Self = StObject.set(x, "compatibilityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibilityLevelUndefined: Self = StObject.set(x, "compatibilityLevel", js.undefined)
+    inline def setCompatibilityLevelUndefined: Self = StObject.set(x, "compatibilityLevel", js.undefined)
     
-    @scala.inline
-    def setRecoveryModel(value: String): Self = StObject.set(x, "recoveryModel", value.asInstanceOf[js.Any])
+    inline def setRecoveryModel(value: String): Self = StObject.set(x, "recoveryModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryModelUndefined: Self = StObject.set(x, "recoveryModel", js.undefined)
+    inline def setRecoveryModelUndefined: Self = StObject.set(x, "recoveryModel", js.undefined)
   }
 }

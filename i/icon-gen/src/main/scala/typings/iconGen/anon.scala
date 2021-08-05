@@ -16,29 +16,22 @@ object anon {
   }
   object Ico {
     
-    @scala.inline
-    def apply(ico: js.Array[Double], name: String, sizes: js.Array[Double]): Ico = {
+    inline def apply(ico: js.Array[Double], name: String, sizes: js.Array[Double]): Ico = {
       val __obj = js.Dynamic.literal(ico = ico.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ico]
     }
     
-    @scala.inline
-    implicit class IcoMutableBuilder[Self <: Ico] (val x: Self) extends AnyVal {
+    extension [Self <: Ico](x: Self) {
       
-      @scala.inline
-      def setIco(value: js.Array[Double]): Self = StObject.set(x, "ico", value.asInstanceOf[js.Any])
+      inline def setIco(value: js.Array[Double]): Self = StObject.set(x, "ico", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcoVarargs(value: Double*): Self = StObject.set(x, "ico", js.Array(value :_*))
+      inline def setIcoVarargs(value: Double*): Self = StObject.set(x, "ico", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
     }
   }
   
@@ -50,23 +43,18 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, sizes: js.Array[Double]): Name = {
+    inline def apply(name: String, sizes: js.Array[Double]): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
     }
   }
 }

@@ -16,32 +16,24 @@ object anon {
   }
   object Binding {
     
-    @scala.inline
-    def apply(): Binding = {
+    inline def apply(): Binding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Binding]
     }
     
-    @scala.inline
-    implicit class BindingMutableBuilder[Self <: Binding] (val x: Self) extends AnyVal {
+    extension [Self <: Binding](x: Self) {
       
-      @scala.inline
-      def setBinding(value: String): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+      inline def setBinding(value: String): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+      inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }
   }
   
@@ -57,26 +49,20 @@ object anon {
   }
   object Callback {
     
-    @scala.inline
-    def apply(callback: (js.Any, /* envelope */ IEnvelope[js.Any]) => Unit, topic: String): Callback = {
+    inline def apply(callback: (js.Any, /* envelope */ IEnvelope[js.Any]) => Unit, topic: String): Callback = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), topic = topic.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
-    @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+    extension [Self <: Callback](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (js.Any, /* envelope */ IEnvelope[js.Any]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (js.Any, /* envelope */ IEnvelope[js.Any]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,32 +76,24 @@ object anon {
   }
   object Channel {
     
-    @scala.inline
-    def apply(): Channel = {
+    inline def apply(): Channel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Channel]
     }
     
-    @scala.inline
-    implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+    extension [Self <: Channel](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }
   }
 }

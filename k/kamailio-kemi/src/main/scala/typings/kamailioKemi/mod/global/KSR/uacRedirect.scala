@@ -10,12 +10,9 @@ object uacRedirect {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRedirects(max_c: Double, max_b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get_redirects")(max_c.asInstanceOf[js.Any], max_b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRedirects(max_c: Double, max_b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get_redirects")(max_c.asInstanceOf[js.Any], max_b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getRedirectsAcc(max_c: Double, max_b: Double, reason: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get_redirects_acc")(max_c.asInstanceOf[js.Any], max_b.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRedirectsAcc(max_c: Double, max_b: Double, reason: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("get_redirects_acc")(max_c.asInstanceOf[js.Any], max_b.asInstanceOf[js.Any], reason.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getRedirectsAll(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_redirects_all")().asInstanceOf[Double]
+  inline def getRedirectsAll(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_redirects_all")().asInstanceOf[Double]
 }

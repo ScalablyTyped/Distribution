@@ -11,22 +11,17 @@ trait ComplianceManagementPartnerAssignment extends StObject {
 }
 object ComplianceManagementPartnerAssignment {
   
-  @scala.inline
-  def apply(): ComplianceManagementPartnerAssignment = {
+  inline def apply(): ComplianceManagementPartnerAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceManagementPartnerAssignment]
   }
   
-  @scala.inline
-  implicit class ComplianceManagementPartnerAssignmentMutableBuilder[Self <: ComplianceManagementPartnerAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceManagementPartnerAssignment](x: Self) {
     
-    @scala.inline
-    def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNull: Self = StObject.set(x, "target", null)
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

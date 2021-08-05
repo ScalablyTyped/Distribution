@@ -28,37 +28,27 @@ trait CreateWebhookInput extends StObject {
 }
 object CreateWebhookInput {
   
-  @scala.inline
-  def apply(projectName: ProjectName): CreateWebhookInput = {
+  inline def apply(projectName: ProjectName): CreateWebhookInput = {
     val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWebhookInput]
   }
   
-  @scala.inline
-  implicit class CreateWebhookInputMutableBuilder[Self <: CreateWebhookInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWebhookInput](x: Self) {
     
-    @scala.inline
-    def setBranchFilter(value: String): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
+    inline def setBranchFilter(value: String): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
+    inline def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
     
-    @scala.inline
-    def setBuildType(value: WebhookBuildType): Self = StObject.set(x, "buildType", value.asInstanceOf[js.Any])
+    inline def setBuildType(value: WebhookBuildType): Self = StObject.set(x, "buildType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildTypeUndefined: Self = StObject.set(x, "buildType", js.undefined)
+    inline def setBuildTypeUndefined: Self = StObject.set(x, "buildType", js.undefined)
     
-    @scala.inline
-    def setFilterGroups(value: FilterGroups): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
+    inline def setFilterGroups(value: FilterGroups): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
+    inline def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
     
-    @scala.inline
-    def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
+    inline def setFilterGroupsVarargs(value: FilterGroup*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

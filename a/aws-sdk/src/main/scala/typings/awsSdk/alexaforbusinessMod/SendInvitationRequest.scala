@@ -13,19 +13,15 @@ trait SendInvitationRequest extends StObject {
 }
 object SendInvitationRequest {
   
-  @scala.inline
-  def apply(): SendInvitationRequest = {
+  inline def apply(): SendInvitationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendInvitationRequest]
   }
   
-  @scala.inline
-  implicit class SendInvitationRequestMutableBuilder[Self <: SendInvitationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendInvitationRequest](x: Self) {
     
-    @scala.inline
-    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait StoryIdentifier extends StObject {
 }
 object StoryIdentifier {
   
-  @scala.inline
-  def apply(id: StoryId, kind: StoryKind, name: StoryName): StoryIdentifier = {
+  inline def apply(id: StoryId, kind: StoryKind, name: StoryName): StoryIdentifier = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoryIdentifier]
   }
   
-  @scala.inline
-  implicit class StoryIdentifierMutableBuilder[Self <: StoryIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: StoryIdentifier](x: Self) {
     
-    @scala.inline
-    def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait SchemaGoogleCloudDialogflowV2IntentBatch extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2IntentBatch {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2IntentBatch = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2IntentBatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentBatch]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentBatchMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentBatch] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2IntentBatch](x: Self) {
     
-    @scala.inline
-    def setIntents(value: js.Array[SchemaGoogleCloudDialogflowV2Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+    inline def setIntents(value: js.Array[SchemaGoogleCloudDialogflowV2Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
+    inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    @scala.inline
-    def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
   }
 }

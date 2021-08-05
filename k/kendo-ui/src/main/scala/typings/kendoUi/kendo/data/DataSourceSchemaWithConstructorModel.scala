@@ -15,19 +15,15 @@ trait DataSourceSchemaWithConstructorModel
 }
 object DataSourceSchemaWithConstructorModel {
   
-  @scala.inline
-  def apply(): DataSourceSchemaWithConstructorModel = {
+  inline def apply(): DataSourceSchemaWithConstructorModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSchemaWithConstructorModel]
   }
   
-  @scala.inline
-  implicit class DataSourceSchemaWithConstructorModelMutableBuilder[Self <: DataSourceSchemaWithConstructorModel] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSchemaWithConstructorModel](x: Self) {
     
-    @scala.inline
-    def setModel(value: TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], Model])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], Model])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

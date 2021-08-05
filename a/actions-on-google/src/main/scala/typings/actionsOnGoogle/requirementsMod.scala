@@ -33,14 +33,12 @@ object requirementsMod {
   trait TransactionRequirementsArgument extends StObject
   object TransactionRequirementsArgument {
     
-    @scala.inline
-    def GoogleActionsTransactionsV3TransactionRequirementsCheckResult(): typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionRequirementsCheckResult = {
+    inline def GoogleActionsTransactionsV3TransactionRequirementsCheckResult(): typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionRequirementsCheckResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.actionsOnGoogle.v2Mod.GoogleActionsTransactionsV3TransactionRequirementsCheckResult]
     }
     
-    @scala.inline
-    def GoogleActionsV2TransactionRequirementsCheckResult(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckResult = {
+    inline def GoogleActionsV2TransactionRequirementsCheckResult(): typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.actionsOnGoogle.v2Mod.GoogleActionsV2TransactionRequirementsCheckResult]
     }

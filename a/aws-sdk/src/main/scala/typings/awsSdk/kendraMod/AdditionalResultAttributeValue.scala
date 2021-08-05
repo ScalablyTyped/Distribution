@@ -13,19 +13,15 @@ trait AdditionalResultAttributeValue extends StObject {
 }
 object AdditionalResultAttributeValue {
   
-  @scala.inline
-  def apply(): AdditionalResultAttributeValue = {
+  inline def apply(): AdditionalResultAttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdditionalResultAttributeValue]
   }
   
-  @scala.inline
-  implicit class AdditionalResultAttributeValueMutableBuilder[Self <: AdditionalResultAttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: AdditionalResultAttributeValue](x: Self) {
     
-    @scala.inline
-    def setTextWithHighlightsValue(value: TextWithHighlights): Self = StObject.set(x, "TextWithHighlightsValue", value.asInstanceOf[js.Any])
+    inline def setTextWithHighlightsValue(value: TextWithHighlights): Self = StObject.set(x, "TextWithHighlightsValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextWithHighlightsValueUndefined: Self = StObject.set(x, "TextWithHighlightsValue", js.undefined)
+    inline def setTextWithHighlightsValueUndefined: Self = StObject.set(x, "TextWithHighlightsValue", js.undefined)
   }
 }

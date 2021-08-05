@@ -31,49 +31,35 @@ trait ModalOptions
 }
 object ModalOptions {
   
-  @scala.inline
-  def apply(content: String, title: String): ModalOptions = {
+  inline def apply(content: String, title: String): ModalOptions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalOptions]
   }
   
-  @scala.inline
-  implicit class ModalOptionsMutableBuilder[Self <: ModalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModalOptions](x: Self) {
     
-    @scala.inline
-    def setCancelColor(value: String): Self = StObject.set(x, "cancelColor", value.asInstanceOf[js.Any])
+    inline def setCancelColor(value: String): Self = StObject.set(x, "cancelColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelColorUndefined: Self = StObject.set(x, "cancelColor", js.undefined)
+    inline def setCancelColorUndefined: Self = StObject.set(x, "cancelColor", js.undefined)
     
-    @scala.inline
-    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+    inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
-    @scala.inline
-    def setConfirmColor(value: Boolean): Self = StObject.set(x, "confirmColor", value.asInstanceOf[js.Any])
+    inline def setConfirmColor(value: Boolean): Self = StObject.set(x, "confirmColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmColorUndefined: Self = StObject.set(x, "confirmColor", js.undefined)
+    inline def setConfirmColorUndefined: Self = StObject.set(x, "confirmColor", js.undefined)
     
-    @scala.inline
-    def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
+    inline def setConfirmText(value: String): Self = StObject.set(x, "confirmText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
+    inline def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
+    inline def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
+    inline def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

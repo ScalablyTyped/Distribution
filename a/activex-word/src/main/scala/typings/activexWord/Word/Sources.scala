@@ -18,13 +18,12 @@ trait Sources extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Sources_typekey")
+  /* private */ @JSName("Word.Sources_typekey")
   var WordDotSources_typekey: Sources
 }
 object Sources {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: String => Unit,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object Sources {
     __obj.asInstanceOf[Sources]
   }
   
-  @scala.inline
-  implicit class SourcesMutableBuilder[Self <: Sources] (val x: Self) extends AnyVal {
+  extension [Self <: Sources](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Source): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Source): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSources_typekey(value: Sources): Self = StObject.set(x, "Word.Sources_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSources_typekey(value: Sources): Self = StObject.set(x, "Word.Sources_typekey", value.asInstanceOf[js.Any])
   }
 }

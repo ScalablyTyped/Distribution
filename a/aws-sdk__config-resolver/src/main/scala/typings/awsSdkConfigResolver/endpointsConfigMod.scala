@@ -15,8 +15,7 @@ object endpointsConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveEndpointsConfig[T](input: T & EndpointsInputConfig & PreviouslyResolved): T & EndpointsResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveEndpointsConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & EndpointsResolvedConfig]
+  inline def resolveEndpointsConfig[T](input: T & EndpointsInputConfig & PreviouslyResolved): T & EndpointsResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveEndpointsConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & EndpointsResolvedConfig]
   
   trait EndpointsInputConfig extends StObject {
     
@@ -32,29 +31,22 @@ object endpointsConfigMod {
   }
   object EndpointsInputConfig {
     
-    @scala.inline
-    def apply(): EndpointsInputConfig = {
+    inline def apply(): EndpointsInputConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointsInputConfig]
     }
     
-    @scala.inline
-    implicit class EndpointsInputConfigMutableBuilder[Self <: EndpointsInputConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointsInputConfig](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String | Endpoint | Provider[Endpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String | Endpoint | Provider[Endpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointFunction0(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      inline def setEndpointFunction0(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     }
   }
   
@@ -71,23 +63,18 @@ object endpointsConfigMod {
   }
   object EndpointsResolvedConfig {
     
-    @scala.inline
-    def apply(endpoint: () => js.Promise[Endpoint], isCustomEndpoint: Boolean, tls: Boolean): EndpointsResolvedConfig = {
+    inline def apply(endpoint: () => js.Promise[Endpoint], isCustomEndpoint: Boolean, tls: Boolean): EndpointsResolvedConfig = {
       val __obj = js.Dynamic.literal(endpoint = js.Any.fromFunction0(endpoint), isCustomEndpoint = isCustomEndpoint.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointsResolvedConfig]
     }
     
-    @scala.inline
-    implicit class EndpointsResolvedConfigMutableBuilder[Self <: EndpointsResolvedConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointsResolvedConfig](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
+      inline def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
+      inline def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: Boolean): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,8 +96,7 @@ object endpointsConfigMod {
   }
   object PreviouslyResolved {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       region: () => js.Promise[String],
       regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]],
       urlParser: /* url */ String => Endpoint
@@ -119,19 +105,15 @@ object endpointsConfigMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    @scala.inline
-    implicit class PreviouslyResolvedMutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
+    extension [Self <: PreviouslyResolved](x: Self) {
       
-      @scala.inline
-      def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegionInfoProvider(
+      inline def setRegionInfoProvider(
         value: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]]
       ): Self = StObject.set(x, "regionInfoProvider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
     }
   }
 }

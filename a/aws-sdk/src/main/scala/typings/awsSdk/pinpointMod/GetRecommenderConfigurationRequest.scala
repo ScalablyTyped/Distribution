@@ -13,16 +13,13 @@ trait GetRecommenderConfigurationRequest extends StObject {
 }
 object GetRecommenderConfigurationRequest {
   
-  @scala.inline
-  def apply(RecommenderId: string): GetRecommenderConfigurationRequest = {
+  inline def apply(RecommenderId: string): GetRecommenderConfigurationRequest = {
     val __obj = js.Dynamic.literal(RecommenderId = RecommenderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecommenderConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetRecommenderConfigurationRequestMutableBuilder[Self <: GetRecommenderConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecommenderConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
+    inline def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
   }
 }

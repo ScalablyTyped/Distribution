@@ -21,38 +21,28 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setNoRetry(value: Boolean): Self = StObject.set(x, "noRetry", value.asInstanceOf[js.Any])
+      inline def setNoRetry(value: Boolean): Self = StObject.set(x, "noRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoRetryUndefined: Self = StObject.set(x, "noRetry", js.undefined)
+      inline def setNoRetryUndefined: Self = StObject.set(x, "noRetry", js.undefined)
       
-      @scala.inline
-      def setOnResultReceived(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onResultReceived", js.Any.fromFunction1(value))
+      inline def setOnResultReceived(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onResultReceived", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
+      inline def setOnResultReceivedUndefined: Self = StObject.set(x, "onResultReceived", js.undefined)
       
-      @scala.inline
-      def setReturnStubValue(value: Boolean): Self = StObject.set(x, "returnStubValue", value.asInstanceOf[js.Any])
+      inline def setReturnStubValue(value: Boolean): Self = StObject.set(x, "returnStubValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnStubValueUndefined: Self = StObject.set(x, "returnStubValue", js.undefined)
+      inline def setReturnStubValueUndefined: Self = StObject.set(x, "returnStubValue", js.undefined)
       
-      @scala.inline
-      def setThrowStubExceptions(value: Boolean): Self = StObject.set(x, "throwStubExceptions", value.asInstanceOf[js.Any])
+      inline def setThrowStubExceptions(value: Boolean): Self = StObject.set(x, "throwStubExceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowStubExceptionsUndefined: Self = StObject.set(x, "throwStubExceptions", js.undefined)
+      inline def setThrowStubExceptionsUndefined: Self = StObject.set(x, "throwStubExceptions", js.undefined)
     }
   }
   
@@ -62,17 +52,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply[TName /* <: String */](name: String | TName): Name[TName] = {
+    inline def apply[TName /* <: String */](name: String | TName): Name[TName] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name[TName]]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name[?], TName /* <: String */] (val x: Self & Name[TName]) extends AnyVal {
+    extension [Self <: Name[?], TName /* <: String */](x: Self & Name[TName]) {
       
-      @scala.inline
-      def setName(value: String | TName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | TName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

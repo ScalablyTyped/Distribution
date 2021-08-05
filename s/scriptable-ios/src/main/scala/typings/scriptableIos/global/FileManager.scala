@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FileManager")
 @js.native
-class FileManager protected ()
+/* private */ class FileManager ()
   extends StObject
      with typings.scriptableIos.FileManager
 object FileManager {
@@ -26,8 +26,7 @@ object FileManager {
     * @see https://docs.scriptable.app/filemanager/#icloud
     */
   /* static member */
-  @scala.inline
-  def iCloud(): typings.scriptableIos.FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("iCloud")().asInstanceOf[typings.scriptableIos.FileManager]
+  inline def iCloud(): typings.scriptableIos.FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("iCloud")().asInstanceOf[typings.scriptableIos.FileManager]
   
   /**
     * _Creates a local FileManager._
@@ -36,6 +35,5 @@ object FileManager {
     * @see https://docs.scriptable.app/filemanager/#local
     */
   /* static member */
-  @scala.inline
-  def local(): typings.scriptableIos.FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.scriptableIos.FileManager]
+  inline def local(): typings.scriptableIos.FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[typings.scriptableIos.FileManager]
 }

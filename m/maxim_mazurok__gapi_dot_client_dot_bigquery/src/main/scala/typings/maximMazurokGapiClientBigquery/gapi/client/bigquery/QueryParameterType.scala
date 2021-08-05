@@ -18,34 +18,25 @@ trait QueryParameterType extends StObject {
 }
 object QueryParameterType {
   
-  @scala.inline
-  def apply(): QueryParameterType = {
+  inline def apply(): QueryParameterType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryParameterType]
   }
   
-  @scala.inline
-  implicit class QueryParameterTypeMutableBuilder[Self <: QueryParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: QueryParameterType](x: Self) {
     
-    @scala.inline
-    def setArrayType(value: QueryParameterType): Self = StObject.set(x, "arrayType", value.asInstanceOf[js.Any])
+    inline def setArrayType(value: QueryParameterType): Self = StObject.set(x, "arrayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayTypeUndefined: Self = StObject.set(x, "arrayType", js.undefined)
+    inline def setArrayTypeUndefined: Self = StObject.set(x, "arrayType", js.undefined)
     
-    @scala.inline
-    def setStructTypes(value: js.Array[Description]): Self = StObject.set(x, "structTypes", value.asInstanceOf[js.Any])
+    inline def setStructTypes(value: js.Array[Description]): Self = StObject.set(x, "structTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructTypesUndefined: Self = StObject.set(x, "structTypes", js.undefined)
+    inline def setStructTypesUndefined: Self = StObject.set(x, "structTypes", js.undefined)
     
-    @scala.inline
-    def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value :_*))
+    inline def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

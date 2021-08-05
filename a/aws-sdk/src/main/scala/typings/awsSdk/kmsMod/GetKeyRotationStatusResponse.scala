@@ -13,19 +13,15 @@ trait GetKeyRotationStatusResponse extends StObject {
 }
 object GetKeyRotationStatusResponse {
   
-  @scala.inline
-  def apply(): GetKeyRotationStatusResponse = {
+  inline def apply(): GetKeyRotationStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetKeyRotationStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetKeyRotationStatusResponseMutableBuilder[Self <: GetKeyRotationStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetKeyRotationStatusResponse](x: Self) {
     
-    @scala.inline
-    def setKeyRotationEnabled(value: BooleanType): Self = StObject.set(x, "KeyRotationEnabled", value.asInstanceOf[js.Any])
+    inline def setKeyRotationEnabled(value: BooleanType): Self = StObject.set(x, "KeyRotationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRotationEnabledUndefined: Self = StObject.set(x, "KeyRotationEnabled", js.undefined)
+    inline def setKeyRotationEnabledUndefined: Self = StObject.set(x, "KeyRotationEnabled", js.undefined)
   }
 }

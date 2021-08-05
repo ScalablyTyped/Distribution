@@ -10,9 +10,7 @@ object concatUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assertParamsConsistent(shapes: js.Array[js.Array[Double]], axis: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertParamsConsistent")(shapes.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assertParamsConsistent(shapes: js.Array[js.Array[Double]], axis: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertParamsConsistent")(shapes.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def computeOutShape(shapes: js.Array[js.Array[Double]], axis: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOutShape")(shapes.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def computeOutShape(shapes: js.Array[js.Array[Double]], axis: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOutShape")(shapes.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

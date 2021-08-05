@@ -11,10 +11,8 @@ object getImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
-  @scala.inline
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
+  inline def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
+  inline def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
   
   trait GetImageArgs extends StObject {
     
@@ -40,35 +38,26 @@ object getImageMod {
   }
   object GetImageArgs {
     
-    @scala.inline
-    def apply(repositoryName: String): GetImageArgs = {
+    inline def apply(repositoryName: String): GetImageArgs = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetImageArgs]
     }
     
-    @scala.inline
-    implicit class GetImageArgsMutableBuilder[Self <: GetImageArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetImageArgs](x: Self) {
       
-      @scala.inline
-      def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+      inline def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
+      inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
       
-      @scala.inline
-      def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
+      inline def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
+      inline def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+      inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +93,7 @@ object getImageMod {
   }
   object GetImageResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       imageDigest: String,
       imagePushedAt: Double,
@@ -118,38 +106,27 @@ object getImageMod {
       __obj.asInstanceOf[GetImageResult]
     }
     
-    @scala.inline
-    implicit class GetImageResultMutableBuilder[Self <: GetImageResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetImageResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+      inline def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagePushedAt(value: Double): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
+      inline def setImagePushedAt(value: Double): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSizeInBytes(value: Double): Self = StObject.set(x, "imageSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setImageSizeInBytes(value: Double): Self = StObject.set(x, "imageSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
+      inline def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
+      inline def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
       
-      @scala.inline
-      def setImageTags(value: js.Array[String]): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
+      inline def setImageTags(value: js.Array[String]): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTagsVarargs(value: String*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
+      inline def setImageTagsVarargs(value: String*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     }
   }
 }

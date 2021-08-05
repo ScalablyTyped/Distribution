@@ -84,7 +84,7 @@ object mod {
     * @property {('lastMessage'|'friendlyName'|'uniqueName')} criteria - Sorting criteria for Channels array
     * @property {('ascending'|'descending')} [order] - Sorting order. If not present, then default is <code>ascending</code>
     */
-  class default protected () extends Client
+  /* private */ class default () extends Client
   object default {
     
     @JSImport("twilio-chat", JSImport.Default)
@@ -95,15 +95,13 @@ object mod {
     @JSImport("twilio-chat", "default.compareChannelsByLastMessage")
     @js.native
     def compareChannelsByLastMessage: js.Any = js.native
-    @scala.inline
-    def compareChannelsByLastMessage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByLastMessage")(x.asInstanceOf[js.Any])
+    inline def compareChannelsByLastMessage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByLastMessage")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("twilio-chat", "default.compareChannelsByStringProperty")
     @js.native
     def compareChannelsByStringProperty: js.Any = js.native
-    @scala.inline
-    def compareChannelsByStringProperty_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByStringProperty")(x.asInstanceOf[js.Any])
+    inline def compareChannelsByStringProperty_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByStringProperty")(x.asInstanceOf[js.Any])
     
     /**
       * Factory method to create Chat client instance.
@@ -113,10 +111,8 @@ object mod {
       * @returns {Promise<Client>}
       */
     /* static member */
-    @scala.inline
-    def create(token: String): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def create(token: String, options: Options): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def create(token: String): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    inline def create(token: String, options: Options): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     
     /**
       * Static method for push notification payload parsing. Returns parsed push as {@link PushNotification} object
@@ -124,15 +120,13 @@ object mod {
       * @returns {PushNotification|Error}
       */
     /* static member */
-    @scala.inline
-    def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePushNotification")(notificationPayload.asInstanceOf[js.Any]).asInstanceOf[typings.twilioChat.pushnotificationMod.PushNotification]
+    inline def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePushNotification")(notificationPayload.asInstanceOf[js.Any]).asInstanceOf[typings.twilioChat.pushnotificationMod.PushNotification]
     
     /* static member */
     @JSImport("twilio-chat", "default.parsePushNotificationChatData")
     @js.native
     def parsePushNotificationChatData: js.Any = js.native
-    @scala.inline
-    def parsePushNotificationChatData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsePushNotificationChatData")(x.asInstanceOf[js.Any])
+    inline def parsePushNotificationChatData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsePushNotificationChatData")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("twilio-chat", "default.supportedPushChannels")
@@ -211,13 +205,13 @@ object mod {
     * @property {('lastMessage'|'friendlyName'|'uniqueName')} criteria - Sorting criteria for Channels array
     * @property {('ascending'|'descending')} [order] - Sorting order. If not present, then default is <code>ascending</code>
     */
-  class Client protected () extends EventEmitter {
+  /* private */ class Client () extends EventEmitter {
     
-    var channels: js.Any = js.native
+    /* private */ var channels: js.Any = js.native
     
-    var channelsPromise: js.Any = js.native
+    /* private */ var channelsPromise: js.Any = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     var connectionState: ConnectionState = js.native
     
@@ -230,7 +224,7 @@ object mod {
     def createChannel(): js.Promise[Channel] = js.native
     def createChannel(options: CreateChannelOptions): js.Promise[Channel] = js.native
     
-    var fpaToken: js.Any = js.native
+    /* private */ var fpaToken: js.Any = js.native
     
     /**
       * Get a known Channel by its SID.
@@ -303,9 +297,9 @@ object mod {
       */
     def handlePushNotification(notificationPayload: js.Any): js.Promise[Unit] = js.native
     
-    var initialize: js.Any = js.native
+    /* private */ var initialize: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = js.native
     @JSName("parsePushNotification")
@@ -316,9 +310,9 @@ object mod {
     
     def reachabilityEnabled: Boolean = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
-    var sessionPromise: js.Any = js.native
+    /* private */ var sessionPromise: js.Any = js.native
     
     /**
       * Registers for push notifications.
@@ -335,7 +329,7 @@ object mod {
       */
     def shutdown(): js.Promise[Unit] = js.native
     
-    var subscribeToPushNotifications: js.Any = js.native
+    /* private */ var subscribeToPushNotifications: js.Any = js.native
     
     def token: String = js.native
     
@@ -346,7 +340,7 @@ object mod {
       */
     def unsetPushRegistrationId(channelType: NotificationsChannelType): js.Promise[Unit] = js.native
     
-    var unsubscribeFromPushNotifications: js.Any = js.native
+    /* private */ var unsubscribeFromPushNotifications: js.Any = js.native
     
     /**
       * Update the token used by the Client and re-register with Programmable Chat services.
@@ -370,15 +364,13 @@ object mod {
     @JSImport("twilio-chat", "Client.compareChannelsByLastMessage")
     @js.native
     def compareChannelsByLastMessage: js.Any = js.native
-    @scala.inline
-    def compareChannelsByLastMessage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByLastMessage")(x.asInstanceOf[js.Any])
+    inline def compareChannelsByLastMessage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByLastMessage")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("twilio-chat", "Client.compareChannelsByStringProperty")
     @js.native
     def compareChannelsByStringProperty: js.Any = js.native
-    @scala.inline
-    def compareChannelsByStringProperty_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByStringProperty")(x.asInstanceOf[js.Any])
+    inline def compareChannelsByStringProperty_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareChannelsByStringProperty")(x.asInstanceOf[js.Any])
     
     /**
       * Factory method to create Chat client instance.
@@ -388,10 +380,8 @@ object mod {
       * @returns {Promise<Client>}
       */
     /* static member */
-    @scala.inline
-    def create(token: String): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-    @scala.inline
-    def create(token: String, options: Options): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+    inline def create(token: String): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+    inline def create(token: String, options: Options): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
     
     /**
       * Static method for push notification payload parsing. Returns parsed push as {@link PushNotification} object
@@ -399,15 +389,13 @@ object mod {
       * @returns {PushNotification|Error}
       */
     /* static member */
-    @scala.inline
-    def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePushNotification")(notificationPayload.asInstanceOf[js.Any]).asInstanceOf[typings.twilioChat.pushnotificationMod.PushNotification]
+    inline def parsePushNotification(notificationPayload: js.Any): typings.twilioChat.pushnotificationMod.PushNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePushNotification")(notificationPayload.asInstanceOf[js.Any]).asInstanceOf[typings.twilioChat.pushnotificationMod.PushNotification]
     
     /* static member */
     @JSImport("twilio-chat", "Client.parsePushNotificationChatData")
     @js.native
     def parsePushNotificationChatData: js.Any = js.native
-    @scala.inline
-    def parsePushNotificationChatData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsePushNotificationChatData")(x.asInstanceOf[js.Any])
+    inline def parsePushNotificationChatData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsePushNotificationChatData")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("twilio-chat", "Client.supportedPushChannels")
@@ -432,14 +420,11 @@ object mod {
     trait ChannelSortingCriteria extends StObject
     object ChannelSortingCriteria {
       
-      @scala.inline
-      def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
+      inline def friendlyName: typings.twilioChat.twilioChatStrings.friendlyName = "friendlyName".asInstanceOf[typings.twilioChat.twilioChatStrings.friendlyName]
       
-      @scala.inline
-      def lastMessage: typings.twilioChat.twilioChatStrings.lastMessage = "lastMessage".asInstanceOf[typings.twilioChat.twilioChatStrings.lastMessage]
+      inline def lastMessage: typings.twilioChat.twilioChatStrings.lastMessage = "lastMessage".asInstanceOf[typings.twilioChat.twilioChatStrings.lastMessage]
       
-      @scala.inline
-      def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = "uniqueName".asInstanceOf[typings.twilioChat.twilioChatStrings.uniqueName]
+      inline def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = "uniqueName".asInstanceOf[typings.twilioChat.twilioChatStrings.uniqueName]
     }
     
     trait ChannelSortingOptions extends StObject {
@@ -450,23 +435,18 @@ object mod {
     }
     object ChannelSortingOptions {
       
-      @scala.inline
-      def apply(criteria: ChannelSortingCriteria): ChannelSortingOptions = {
+      inline def apply(criteria: ChannelSortingCriteria): ChannelSortingOptions = {
         val __obj = js.Dynamic.literal(criteria = criteria.asInstanceOf[js.Any])
         __obj.asInstanceOf[ChannelSortingOptions]
       }
       
-      @scala.inline
-      implicit class ChannelSortingOptionsMutableBuilder[Self <: ChannelSortingOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ChannelSortingOptions](x: Self) {
         
-        @scala.inline
-        def setCriteria(value: ChannelSortingCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+        inline def setCriteria(value: ChannelSortingCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrder(value: ChannelSortingOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+        inline def setOrder(value: ChannelSortingOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+        inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       }
     }
     
@@ -477,11 +457,9 @@ object mod {
     trait ChannelSortingOrder extends StObject
     object ChannelSortingOrder {
       
-      @scala.inline
-      def ascending: typings.twilioChat.twilioChatStrings.ascending = "ascending".asInstanceOf[typings.twilioChat.twilioChatStrings.ascending]
+      inline def ascending: typings.twilioChat.twilioChatStrings.ascending = "ascending".asInstanceOf[typings.twilioChat.twilioChatStrings.ascending]
       
-      @scala.inline
-      def descending: typings.twilioChat.twilioChatStrings.descending = "descending".asInstanceOf[typings.twilioChat.twilioChatStrings.descending]
+      inline def descending: typings.twilioChat.twilioChatStrings.descending = "descending".asInstanceOf[typings.twilioChat.twilioChatStrings.descending]
     }
     
     type ConnectionState = typings.twilioNotifications.clientMod.ConnectionState
@@ -498,38 +476,28 @@ object mod {
     }
     object CreateChannelOptions {
       
-      @scala.inline
-      def apply(): CreateChannelOptions = {
+      inline def apply(): CreateChannelOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CreateChannelOptions]
       }
       
-      @scala.inline
-      implicit class CreateChannelOptionsMutableBuilder[Self <: CreateChannelOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CreateChannelOptions](x: Self) {
         
-        @scala.inline
-        def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+        inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+        inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
         
-        @scala.inline
-        def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+        inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+        inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
         
-        @scala.inline
-        def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+        inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
+        inline def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
         
-        @scala.inline
-        def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+        inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+        inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
       }
     }
     
@@ -586,125 +554,86 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setBackoffConfigOverride(value: js.Any): Self = StObject.set(x, "backoffConfigOverride", value.asInstanceOf[js.Any])
+        inline def setBackoffConfigOverride(value: js.Any): Self = StObject.set(x, "backoffConfigOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackoffConfigOverrideUndefined: Self = StObject.set(x, "backoffConfigOverride", js.undefined)
+        inline def setBackoffConfigOverrideUndefined: Self = StObject.set(x, "backoffConfigOverride", js.undefined)
         
-        @scala.inline
-        def setChat(value: js.Any): Self = StObject.set(x, "Chat", value.asInstanceOf[js.Any])
+        inline def setChat(value: js.Any): Self = StObject.set(x, "Chat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChatUndefined: Self = StObject.set(x, "Chat", js.undefined)
+        inline def setChatUndefined: Self = StObject.set(x, "Chat", js.undefined)
         
-        @scala.inline
-        def setClientMetadata(value: js.Any): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
+        inline def setClientMetadata(value: js.Any): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
+        inline def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
         
-        @scala.inline
-        def setConsumptionReportIntervalOverride(value: String): Self = StObject.set(x, "consumptionReportIntervalOverride", value.asInstanceOf[js.Any])
+        inline def setConsumptionReportIntervalOverride(value: String): Self = StObject.set(x, "consumptionReportIntervalOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsumptionReportIntervalOverrideUndefined: Self = StObject.set(x, "consumptionReportIntervalOverride", js.undefined)
+        inline def setConsumptionReportIntervalOverrideUndefined: Self = StObject.set(x, "consumptionReportIntervalOverride", js.undefined)
         
-        @scala.inline
-        def setHttpCacheIntervalOverride(value: String): Self = StObject.set(x, "httpCacheIntervalOverride", value.asInstanceOf[js.Any])
+        inline def setHttpCacheIntervalOverride(value: String): Self = StObject.set(x, "httpCacheIntervalOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHttpCacheIntervalOverrideUndefined: Self = StObject.set(x, "httpCacheIntervalOverride", js.undefined)
+        inline def setHttpCacheIntervalOverrideUndefined: Self = StObject.set(x, "httpCacheIntervalOverride", js.undefined)
         
-        @scala.inline
-        def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+        inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogLevelNull: Self = StObject.set(x, "logLevel", null)
+        inline def setLogLevelNull: Self = StObject.set(x, "logLevel", null)
         
-        @scala.inline
-        def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+        inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
         
-        @scala.inline
-        def setNotification(value: js.Any): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+        inline def setNotification(value: js.Any): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
+        inline def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
         
-        @scala.inline
-        def setNotificationsClient(value: Notifications): Self = StObject.set(x, "notificationsClient", value.asInstanceOf[js.Any])
+        inline def setNotificationsClient(value: Notifications): Self = StObject.set(x, "notificationsClient", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotificationsClientUndefined: Self = StObject.set(x, "notificationsClient", js.undefined)
+        inline def setNotificationsClientUndefined: Self = StObject.set(x, "notificationsClient", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+        inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+        inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
         
-        @scala.inline
-        def setRetryWhenThrottledOverride(value: Boolean): Self = StObject.set(x, "retryWhenThrottledOverride", value.asInstanceOf[js.Any])
+        inline def setRetryWhenThrottledOverride(value: Boolean): Self = StObject.set(x, "retryWhenThrottledOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRetryWhenThrottledOverrideUndefined: Self = StObject.set(x, "retryWhenThrottledOverride", js.undefined)
+        inline def setRetryWhenThrottledOverrideUndefined: Self = StObject.set(x, "retryWhenThrottledOverride", js.undefined)
         
-        @scala.inline
-        def setSync(value: js.Any): Self = StObject.set(x, "Sync", value.asInstanceOf[js.Any])
+        inline def setSync(value: js.Any): Self = StObject.set(x, "Sync", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+        inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyncClientUndefined: Self = StObject.set(x, "syncClient", js.undefined)
+        inline def setSyncClientUndefined: Self = StObject.set(x, "syncClient", js.undefined)
         
-        @scala.inline
-        def setSyncUndefined: Self = StObject.set(x, "Sync", js.undefined)
+        inline def setSyncUndefined: Self = StObject.set(x, "Sync", js.undefined)
         
-        @scala.inline
-        def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+        inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+        inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
         
-        @scala.inline
-        def setTwilsock(value: js.Any): Self = StObject.set(x, "Twilsock", value.asInstanceOf[js.Any])
+        inline def setTwilsock(value: js.Any): Self = StObject.set(x, "Twilsock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTwilsockClient(value: Twilsock): Self = StObject.set(x, "twilsockClient", value.asInstanceOf[js.Any])
+        inline def setTwilsockClient(value: Twilsock): Self = StObject.set(x, "twilsockClient", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTwilsockClientUndefined: Self = StObject.set(x, "twilsockClient", js.undefined)
+        inline def setTwilsockClientUndefined: Self = StObject.set(x, "twilsockClient", js.undefined)
         
-        @scala.inline
-        def setTwilsockUndefined: Self = StObject.set(x, "Twilsock", js.undefined)
+        inline def setTwilsockUndefined: Self = StObject.set(x, "Twilsock", js.undefined)
         
-        @scala.inline
-        def setTypingIndicatorTimeoutOverride(value: Double): Self = StObject.set(x, "typingIndicatorTimeoutOverride", value.asInstanceOf[js.Any])
+        inline def setTypingIndicatorTimeoutOverride(value: Double): Self = StObject.set(x, "typingIndicatorTimeoutOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypingIndicatorTimeoutOverrideUndefined: Self = StObject.set(x, "typingIndicatorTimeoutOverride", js.undefined)
+        inline def setTypingIndicatorTimeoutOverrideUndefined: Self = StObject.set(x, "typingIndicatorTimeoutOverride", js.undefined)
         
-        @scala.inline
-        def setUserInfosToSubscribeOverride(value: Double): Self = StObject.set(x, "userInfosToSubscribeOverride", value.asInstanceOf[js.Any])
+        inline def setUserInfosToSubscribeOverride(value: Double): Self = StObject.set(x, "userInfosToSubscribeOverride", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserInfosToSubscribeOverrideUndefined: Self = StObject.set(x, "userInfosToSubscribeOverride", js.undefined)
+        inline def setUserInfosToSubscribeOverrideUndefined: Self = StObject.set(x, "userInfosToSubscribeOverride", js.undefined)
       }
     }
     

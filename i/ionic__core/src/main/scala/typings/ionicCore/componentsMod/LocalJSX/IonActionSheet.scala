@@ -90,109 +90,75 @@ trait IonActionSheet extends StObject {
 }
 object IonActionSheet {
   
-  @scala.inline
-  def apply(): IonActionSheet = {
+  inline def apply(): IonActionSheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonActionSheet]
   }
   
-  @scala.inline
-  implicit class IonActionSheetMutableBuilder[Self <: IonActionSheet] (val x: Self) extends AnyVal {
+  extension [Self <: IonActionSheet](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setBackdropDismiss(value: Boolean): Self = StObject.set(x, "backdropDismiss", value.asInstanceOf[js.Any])
+    inline def setBackdropDismiss(value: Boolean): Self = StObject.set(x, "backdropDismiss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackdropDismissUndefined: Self = StObject.set(x, "backdropDismiss", js.undefined)
+    inline def setBackdropDismissUndefined: Self = StObject.set(x, "backdropDismiss", js.undefined)
     
-    @scala.inline
-    def setButtons(value: js.Array[ActionSheetButton | String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[ActionSheetButton | String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: (ActionSheetButton | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: (ActionSheetButton | String)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setCssClass(value: String | js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String | js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
+    inline def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "enterAnimation", js.Any.fromFunction2(value))
+    inline def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "enterAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
+    inline def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
+    inline def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
+    inline def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
     
-    @scala.inline
-    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "leaveAnimation", js.Any.fromFunction2(value))
+    inline def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "leaveAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
+    inline def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOnIonActionSheetDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonActionSheetDidDismiss", js.Any.fromFunction1(value))
+    inline def setOnIonActionSheetDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonActionSheetDidDismiss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonActionSheetDidDismissUndefined: Self = StObject.set(x, "onIonActionSheetDidDismiss", js.undefined)
+    inline def setOnIonActionSheetDidDismissUndefined: Self = StObject.set(x, "onIonActionSheetDidDismiss", js.undefined)
     
-    @scala.inline
-    def setOnIonActionSheetDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonActionSheetDidPresent", js.Any.fromFunction1(value))
+    inline def setOnIonActionSheetDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonActionSheetDidPresent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonActionSheetDidPresentUndefined: Self = StObject.set(x, "onIonActionSheetDidPresent", js.undefined)
+    inline def setOnIonActionSheetDidPresentUndefined: Self = StObject.set(x, "onIonActionSheetDidPresent", js.undefined)
     
-    @scala.inline
-    def setOnIonActionSheetWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonActionSheetWillDismiss", js.Any.fromFunction1(value))
+    inline def setOnIonActionSheetWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonActionSheetWillDismiss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonActionSheetWillDismissUndefined: Self = StObject.set(x, "onIonActionSheetWillDismiss", js.undefined)
+    inline def setOnIonActionSheetWillDismissUndefined: Self = StObject.set(x, "onIonActionSheetWillDismiss", js.undefined)
     
-    @scala.inline
-    def setOnIonActionSheetWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonActionSheetWillPresent", js.Any.fromFunction1(value))
+    inline def setOnIonActionSheetWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonActionSheetWillPresent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonActionSheetWillPresentUndefined: Self = StObject.set(x, "onIonActionSheetWillPresent", js.undefined)
+    inline def setOnIonActionSheetWillPresentUndefined: Self = StObject.set(x, "onIonActionSheetWillPresent", js.undefined)
     
-    @scala.inline
-    def setSubHeader(value: String): Self = StObject.set(x, "subHeader", value.asInstanceOf[js.Any])
+    inline def setSubHeader(value: String): Self = StObject.set(x, "subHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubHeaderUndefined: Self = StObject.set(x, "subHeader", js.undefined)
+    inline def setSubHeaderUndefined: Self = StObject.set(x, "subHeader", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

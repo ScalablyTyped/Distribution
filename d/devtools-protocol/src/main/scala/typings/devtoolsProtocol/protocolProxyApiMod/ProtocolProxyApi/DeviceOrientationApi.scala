@@ -19,8 +19,7 @@ trait DeviceOrientationApi extends StObject {
 }
 object DeviceOrientationApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearDeviceOrientationOverride: () => js.Promise[Unit],
     setDeviceOrientationOverride: SetDeviceOrientationOverrideRequest => js.Promise[Unit]
   ): DeviceOrientationApi = {
@@ -28,13 +27,10 @@ object DeviceOrientationApi {
     __obj.asInstanceOf[DeviceOrientationApi]
   }
   
-  @scala.inline
-  implicit class DeviceOrientationApiMutableBuilder[Self <: DeviceOrientationApi] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceOrientationApi](x: Self) {
     
-    @scala.inline
-    def setClearDeviceOrientationOverride(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearDeviceOrientationOverride", js.Any.fromFunction0(value))
+    inline def setClearDeviceOrientationOverride(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearDeviceOrientationOverride", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDeviceOrientationOverride(value: SetDeviceOrientationOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setDeviceOrientationOverride", js.Any.fromFunction1(value))
+    inline def setSetDeviceOrientationOverride(value: SetDeviceOrientationOverrideRequest => js.Promise[Unit]): Self = StObject.set(x, "setDeviceOrientationOverride", js.Any.fromFunction1(value))
   }
 }

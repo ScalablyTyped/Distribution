@@ -14,25 +14,19 @@ trait Margin extends StObject {
 }
 object Margin {
   
-  @scala.inline
-  def apply(): Margin = {
+  inline def apply(): Margin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Margin]
   }
   
-  @scala.inline
-  implicit class MarginMutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
+  extension [Self <: Margin](x: Self) {
     
-    @scala.inline
-    def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

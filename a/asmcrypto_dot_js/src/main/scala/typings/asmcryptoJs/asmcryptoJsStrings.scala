@@ -11,41 +11,35 @@ object asmcryptoJsStrings {
   sealed trait CBC
     extends StObject
        with AESMode
-  @scala.inline
-  def CBC: CBC = "CBC".asInstanceOf[CBC]
+  inline def CBC: CBC = "CBC".asInstanceOf[CBC]
   
   @js.native
   sealed trait CCM
     extends StObject
        with AESMode
-  @scala.inline
-  def CCM: CCM = "CCM".asInstanceOf[CCM]
+  inline def CCM: CCM = "CCM".asInstanceOf[CCM]
   
   @js.native
   sealed trait CFB
     extends StObject
        with AESMode
-  @scala.inline
-  def CFB: CFB = "CFB".asInstanceOf[CFB]
+  inline def CFB: CFB = "CFB".asInstanceOf[CFB]
   
   @js.native
   sealed trait CTR
     extends StObject
        with AESMode
-  @scala.inline
-  def CTR: CTR = "CTR".asInstanceOf[CTR]
+  inline def CTR: CTR = "CTR".asInstanceOf[CTR]
   
   @js.native
   sealed trait ECB
     extends StObject
        with AESMode
-  @scala.inline
-  def ECB: ECB = "ECB".asInstanceOf[ECB]
+  inline def ECB: ECB = "ECB".asInstanceOf[ECB]
   
   @js.native
   sealed trait OFB
     extends StObject
        with AESMode
-  @scala.inline
-  def OFB: OFB = "OFB".asInstanceOf[OFB]
+  inline def OFB: OFB = "OFB".asInstanceOf[OFB]
 }

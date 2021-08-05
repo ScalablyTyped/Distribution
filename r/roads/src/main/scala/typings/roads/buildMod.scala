@@ -12,8 +12,7 @@ object buildMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input_file.asInstanceOf[js.Any], output_file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input_file.asInstanceOf[js.Any], output_file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * @param  {boolean} [options.use_sourcemaps] Whether or not the build process should include source maps.
@@ -33,44 +32,32 @@ object buildMod {
   }
   object RoadsBuildOptions {
     
-    @scala.inline
-    def apply(): RoadsBuildOptions = {
+    inline def apply(): RoadsBuildOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoadsBuildOptions]
     }
     
-    @scala.inline
-    implicit class RoadsBuildOptionsMutableBuilder[Self <: RoadsBuildOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RoadsBuildOptions](x: Self) {
       
-      @scala.inline
-      def setBabelifyOptions(value: BabelifyOptions): Self = StObject.set(x, "babelifyOptions", value.asInstanceOf[js.Any])
+      inline def setBabelifyOptions(value: BabelifyOptions): Self = StObject.set(x, "babelifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBabelifyOptionsUndefined: Self = StObject.set(x, "babelifyOptions", js.undefined)
+      inline def setBabelifyOptionsUndefined: Self = StObject.set(x, "babelifyOptions", js.undefined)
       
-      @scala.inline
-      def setBrowserifyOptions(value: Options): Self = StObject.set(x, "browserifyOptions", value.asInstanceOf[js.Any])
+      inline def setBrowserifyOptions(value: Options): Self = StObject.set(x, "browserifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserifyOptionsUndefined: Self = StObject.set(x, "browserifyOptions", js.undefined)
+      inline def setBrowserifyOptionsUndefined: Self = StObject.set(x, "browserifyOptions", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     }
   }
 }

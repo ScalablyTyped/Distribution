@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: Options): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
+  inline def default(options: Options): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Writable]
   
   trait Options extends StObject {
     
@@ -26,42 +25,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bugsnagClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
     ): Options = {
       val __obj = js.Dynamic.literal(bugsnagClient = bugsnagClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBugsnagClient(
+      inline def setBugsnagClient(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
       ): Self = StObject.set(x, "bugsnagClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorLevel(value: Double | String): Self = StObject.set(x, "errorLevel", value.asInstanceOf[js.Any])
+      inline def setErrorLevel(value: Double | String): Self = StObject.set(x, "errorLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorLevelUndefined: Self = StObject.set(x, "errorLevel", js.undefined)
+      inline def setErrorLevelUndefined: Self = StObject.set(x, "errorLevel", js.undefined)
       
-      @scala.inline
-      def setSystemInfo(value: js.Array[String]): Self = StObject.set(x, "systemInfo", value.asInstanceOf[js.Any])
+      inline def setSystemInfo(value: js.Array[String]): Self = StObject.set(x, "systemInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemInfoUndefined: Self = StObject.set(x, "systemInfo", js.undefined)
+      inline def setSystemInfoUndefined: Self = StObject.set(x, "systemInfo", js.undefined)
       
-      @scala.inline
-      def setSystemInfoVarargs(value: String*): Self = StObject.set(x, "systemInfo", js.Array(value :_*))
+      inline def setSystemInfoVarargs(value: String*): Self = StObject.set(x, "systemInfo", js.Array(value :_*))
       
-      @scala.inline
-      def setWarningLevel(value: Double | String): Self = StObject.set(x, "warningLevel", value.asInstanceOf[js.Any])
+      inline def setWarningLevel(value: Double | String): Self = StObject.set(x, "warningLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningLevelUndefined: Self = StObject.set(x, "warningLevel", js.undefined)
+      inline def setWarningLevelUndefined: Self = StObject.set(x, "warningLevel", js.undefined)
     }
   }
 }

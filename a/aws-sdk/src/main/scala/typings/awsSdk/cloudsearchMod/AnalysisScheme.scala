@@ -14,25 +14,19 @@ trait AnalysisScheme extends StObject {
 }
 object AnalysisScheme {
   
-  @scala.inline
-  def apply(AnalysisSchemeLanguage: AnalysisSchemeLanguage, AnalysisSchemeName: StandardName): AnalysisScheme = {
+  inline def apply(AnalysisSchemeLanguage: AnalysisSchemeLanguage, AnalysisSchemeName: StandardName): AnalysisScheme = {
     val __obj = js.Dynamic.literal(AnalysisSchemeLanguage = AnalysisSchemeLanguage.asInstanceOf[js.Any], AnalysisSchemeName = AnalysisSchemeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalysisScheme]
   }
   
-  @scala.inline
-  implicit class AnalysisSchemeMutableBuilder[Self <: AnalysisScheme] (val x: Self) extends AnyVal {
+  extension [Self <: AnalysisScheme](x: Self) {
     
-    @scala.inline
-    def setAnalysisOptions(value: AnalysisOptions): Self = StObject.set(x, "AnalysisOptions", value.asInstanceOf[js.Any])
+    inline def setAnalysisOptions(value: AnalysisOptions): Self = StObject.set(x, "AnalysisOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisOptionsUndefined: Self = StObject.set(x, "AnalysisOptions", js.undefined)
+    inline def setAnalysisOptionsUndefined: Self = StObject.set(x, "AnalysisOptions", js.undefined)
     
-    @scala.inline
-    def setAnalysisSchemeLanguage(value: AnalysisSchemeLanguage): Self = StObject.set(x, "AnalysisSchemeLanguage", value.asInstanceOf[js.Any])
+    inline def setAnalysisSchemeLanguage(value: AnalysisSchemeLanguage): Self = StObject.set(x, "AnalysisSchemeLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisSchemeName(value: StandardName): Self = StObject.set(x, "AnalysisSchemeName", value.asInstanceOf[js.Any])
+    inline def setAnalysisSchemeName(value: StandardName): Self = StObject.set(x, "AnalysisSchemeName", value.asInstanceOf[js.Any])
   }
 }

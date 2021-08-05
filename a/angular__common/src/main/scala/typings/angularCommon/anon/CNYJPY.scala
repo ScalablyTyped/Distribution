@@ -16,8 +16,7 @@ trait CNYJPY extends StObject {
 }
 object CNYJPY {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CNY: js.Array[String],
     JPY: js.Array[String],
     RON: js.Array[js.UndefOr[String]],
@@ -27,31 +26,22 @@ object CNYJPY {
     __obj.asInstanceOf[CNYJPY]
   }
   
-  @scala.inline
-  implicit class CNYJPYMutableBuilder[Self <: CNYJPY] (val x: Self) extends AnyVal {
+  extension [Self <: CNYJPY](x: Self) {
     
-    @scala.inline
-    def setCNY(value: js.Array[String]): Self = StObject.set(x, "CNY", value.asInstanceOf[js.Any])
+    inline def setCNY(value: js.Array[String]): Self = StObject.set(x, "CNY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCNYVarargs(value: String*): Self = StObject.set(x, "CNY", js.Array(value :_*))
+    inline def setCNYVarargs(value: String*): Self = StObject.set(x, "CNY", js.Array(value :_*))
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setRON(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "RON", value.asInstanceOf[js.Any])
+    inline def setRON(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "RON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRONVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "RON", js.Array(value :_*))
+    inline def setRONVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "RON", js.Array(value :_*))
     
-    @scala.inline
-    def setXXX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "XXX", value.asInstanceOf[js.Any])
+    inline def setXXX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "XXX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXXXVarargs(value: scala.Nothing*): Self = StObject.set(x, "XXX", js.Array(value :_*))
+    inline def setXXXVarargs(value: scala.Nothing*): Self = StObject.set(x, "XXX", js.Array(value :_*))
   }
 }

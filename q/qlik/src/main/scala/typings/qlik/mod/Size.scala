@@ -12,19 +12,15 @@ trait Size extends StObject {
 }
 object Size {
   
-  @scala.inline
-  def apply(qcx: Double, qcy: Double): Size = {
+  inline def apply(qcx: Double, qcy: Double): Size = {
     val __obj = js.Dynamic.literal(qcx = qcx.asInstanceOf[js.Any], qcy = qcy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Size]
   }
   
-  @scala.inline
-  implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+  extension [Self <: Size](x: Self) {
     
-    @scala.inline
-    def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
+    inline def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQcy(value: Double): Self = StObject.set(x, "qcy", value.asInstanceOf[js.Any])
+    inline def setQcy(value: Double): Self = StObject.set(x, "qcy", value.asInstanceOf[js.Any])
   }
 }

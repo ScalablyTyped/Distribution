@@ -25,37 +25,27 @@ trait ListDiscoverersRequest extends StObject {
 }
 object ListDiscoverersRequest {
   
-  @scala.inline
-  def apply(): ListDiscoverersRequest = {
+  inline def apply(): ListDiscoverersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDiscoverersRequest]
   }
   
-  @scala.inline
-  implicit class ListDiscoverersRequestMutableBuilder[Self <: ListDiscoverersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDiscoverersRequest](x: Self) {
     
-    @scala.inline
-    def setDiscovererIdPrefix(value: string): Self = StObject.set(x, "DiscovererIdPrefix", value.asInstanceOf[js.Any])
+    inline def setDiscovererIdPrefix(value: string): Self = StObject.set(x, "DiscovererIdPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscovererIdPrefixUndefined: Self = StObject.set(x, "DiscovererIdPrefix", js.undefined)
+    inline def setDiscovererIdPrefixUndefined: Self = StObject.set(x, "DiscovererIdPrefix", js.undefined)
     
-    @scala.inline
-    def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: integer): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSourceArnPrefix(value: string): Self = StObject.set(x, "SourceArnPrefix", value.asInstanceOf[js.Any])
+    inline def setSourceArnPrefix(value: string): Self = StObject.set(x, "SourceArnPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnPrefixUndefined: Self = StObject.set(x, "SourceArnPrefix", js.undefined)
+    inline def setSourceArnPrefixUndefined: Self = StObject.set(x, "SourceArnPrefix", js.undefined)
   }
 }

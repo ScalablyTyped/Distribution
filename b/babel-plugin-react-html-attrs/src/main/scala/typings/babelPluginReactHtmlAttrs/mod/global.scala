@@ -500,8 +500,7 @@ object global {
     }
     object IntrinsicElements {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         a: typings.react.mod.DetailedHTMLProps[typings.react.mod.AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement],
         abbr: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement],
         address: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement],
@@ -690,771 +689,595 @@ object global {
         __obj.asInstanceOf[IntrinsicElements]
       }
       
-      @scala.inline
-      implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
+      extension [Self <: IntrinsicElements](x: Self) {
         
-        @scala.inline
-        def setA(
+        inline def setA(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]
         ): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAbbr(
+        inline def setAbbr(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddress(
+        inline def setAddress(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimate(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+        inline def setAnimate(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimateMotion(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
+        inline def setAnimateMotion(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimateTransform(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
+        inline def setAnimateTransform(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArea(
+        inline def setArea(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]
         ): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArticle(
+        inline def setArticle(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAside(
+        inline def setAside(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAudio(
+        inline def setAudio(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]
         ): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setB(
+        inline def setB(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBase(
+        inline def setBase(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]
         ): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBdi(
+        inline def setBdi(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBdo(
+        inline def setBdo(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBig(
+        inline def setBig(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockquote(
+        inline def setBlockquote(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.BlockquoteHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBody(
+        inline def setBody(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLBodyElement], HTMLBodyElement]
         ): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBr(
+        inline def setBr(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLBRElement], HTMLBRElement]
         ): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButton(
+        inline def setButton(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]
         ): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCanvas(
+        inline def setCanvas(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]
         ): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaption(
+        inline def setCaption(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCircle(value: typings.react.mod.SVGProps[SVGCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+        inline def setCircle(value: typings.react.mod.SVGProps[SVGCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCite(
+        inline def setCite(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClipPath(value: typings.react.mod.SVGProps[SVGClipPathElement]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+        inline def setClipPath(value: typings.react.mod.SVGProps[SVGClipPathElement]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCode(
+        inline def setCode(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCol(
+        inline def setCol(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
         ): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColgroup(
+        inline def setColgroup(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
         ): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(
+        inline def setData(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.DataHTMLAttributes[HTMLDataElement], HTMLDataElement]
         ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatalist(
+        inline def setDatalist(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDataListElement], HTMLDataListElement]
         ): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDd(
+        inline def setDd(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefs(value: typings.react.mod.SVGProps[SVGDefsElement]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+        inline def setDefs(value: typings.react.mod.SVGProps[SVGDefsElement]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDel(
+        inline def setDel(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.DelHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDesc(value: typings.react.mod.SVGProps[SVGDescElement]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+        inline def setDesc(value: typings.react.mod.SVGProps[SVGDescElement]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDetails(
+        inline def setDetails(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.DetailsHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDfn(
+        inline def setDfn(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDialog(
+        inline def setDialog(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]
         ): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDiv(
+        inline def setDiv(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDivElement], HTMLDivElement]
         ): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDl(
+        inline def setDl(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLDListElement], HTMLDListElement]
         ): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDt(
+        inline def setDt(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEllipse(value: typings.react.mod.SVGProps[SVGEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+        inline def setEllipse(value: typings.react.mod.SVGProps[SVGEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEm(
+        inline def setEm(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbed(
+        inline def setEmbed(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]
         ): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeBlend(value: typings.react.mod.SVGProps[SVGFEBlendElement]): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
+        inline def setFeBlend(value: typings.react.mod.SVGProps[SVGFEBlendElement]): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeColorMatrix(value: typings.react.mod.SVGProps[SVGFEColorMatrixElement]): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
+        inline def setFeColorMatrix(value: typings.react.mod.SVGProps[SVGFEColorMatrixElement]): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeComponentTransfer(value: typings.react.mod.SVGProps[SVGFEComponentTransferElement]): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
+        inline def setFeComponentTransfer(value: typings.react.mod.SVGProps[SVGFEComponentTransferElement]): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeComposite(value: typings.react.mod.SVGProps[SVGFECompositeElement]): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
+        inline def setFeComposite(value: typings.react.mod.SVGProps[SVGFECompositeElement]): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeConvolveMatrix(value: typings.react.mod.SVGProps[SVGFEConvolveMatrixElement]): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
+        inline def setFeConvolveMatrix(value: typings.react.mod.SVGProps[SVGFEConvolveMatrixElement]): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeDiffuseLighting(value: typings.react.mod.SVGProps[SVGFEDiffuseLightingElement]): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
+        inline def setFeDiffuseLighting(value: typings.react.mod.SVGProps[SVGFEDiffuseLightingElement]): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeDisplacementMap(value: typings.react.mod.SVGProps[SVGFEDisplacementMapElement]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
+        inline def setFeDisplacementMap(value: typings.react.mod.SVGProps[SVGFEDisplacementMapElement]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeDistantLight(value: typings.react.mod.SVGProps[SVGFEDistantLightElement]): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+        inline def setFeDistantLight(value: typings.react.mod.SVGProps[SVGFEDistantLightElement]): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeDropShadow(value: typings.react.mod.SVGProps[SVGFEDropShadowElement]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
+        inline def setFeDropShadow(value: typings.react.mod.SVGProps[SVGFEDropShadowElement]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeFlood(value: typings.react.mod.SVGProps[SVGFEFloodElement]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
+        inline def setFeFlood(value: typings.react.mod.SVGProps[SVGFEFloodElement]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeFuncA(value: typings.react.mod.SVGProps[SVGFEFuncAElement]): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
+        inline def setFeFuncA(value: typings.react.mod.SVGProps[SVGFEFuncAElement]): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeFuncB(value: typings.react.mod.SVGProps[SVGFEFuncBElement]): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
+        inline def setFeFuncB(value: typings.react.mod.SVGProps[SVGFEFuncBElement]): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeFuncG(value: typings.react.mod.SVGProps[SVGFEFuncGElement]): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
+        inline def setFeFuncG(value: typings.react.mod.SVGProps[SVGFEFuncGElement]): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeFuncR(value: typings.react.mod.SVGProps[SVGFEFuncRElement]): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
+        inline def setFeFuncR(value: typings.react.mod.SVGProps[SVGFEFuncRElement]): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeGaussianBlur(value: typings.react.mod.SVGProps[SVGFEGaussianBlurElement]): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
+        inline def setFeGaussianBlur(value: typings.react.mod.SVGProps[SVGFEGaussianBlurElement]): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeImage(value: typings.react.mod.SVGProps[SVGFEImageElement]): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
+        inline def setFeImage(value: typings.react.mod.SVGProps[SVGFEImageElement]): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeMerge(value: typings.react.mod.SVGProps[SVGFEMergeElement]): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
+        inline def setFeMerge(value: typings.react.mod.SVGProps[SVGFEMergeElement]): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeMergeNode(value: typings.react.mod.SVGProps[SVGFEMergeNodeElement]): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
+        inline def setFeMergeNode(value: typings.react.mod.SVGProps[SVGFEMergeNodeElement]): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeMorphology(value: typings.react.mod.SVGProps[SVGFEMorphologyElement]): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
+        inline def setFeMorphology(value: typings.react.mod.SVGProps[SVGFEMorphologyElement]): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeOffset(value: typings.react.mod.SVGProps[SVGFEOffsetElement]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
+        inline def setFeOffset(value: typings.react.mod.SVGProps[SVGFEOffsetElement]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFePointLight(value: typings.react.mod.SVGProps[SVGFEPointLightElement]): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
+        inline def setFePointLight(value: typings.react.mod.SVGProps[SVGFEPointLightElement]): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeSpecularLighting(value: typings.react.mod.SVGProps[SVGFESpecularLightingElement]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
+        inline def setFeSpecularLighting(value: typings.react.mod.SVGProps[SVGFESpecularLightingElement]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeSpotLight(value: typings.react.mod.SVGProps[SVGFESpotLightElement]): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
+        inline def setFeSpotLight(value: typings.react.mod.SVGProps[SVGFESpotLightElement]): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeTile(value: typings.react.mod.SVGProps[SVGFETileElement]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
+        inline def setFeTile(value: typings.react.mod.SVGProps[SVGFETileElement]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeTurbulence(value: typings.react.mod.SVGProps[SVGFETurbulenceElement]): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
+        inline def setFeTurbulence(value: typings.react.mod.SVGProps[SVGFETurbulenceElement]): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldset(
+        inline def setFieldset(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]
         ): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFigcaption(
+        inline def setFigcaption(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFigure(
+        inline def setFigure(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilter(value: typings.react.mod.SVGProps[SVGFilterElement]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: typings.react.mod.SVGProps[SVGFilterElement]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFooter(
+        inline def setFooter(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForeignObject(value: typings.react.mod.SVGProps[SVGForeignObjectElement]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
+        inline def setForeignObject(value: typings.react.mod.SVGProps[SVGForeignObjectElement]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForm(
+        inline def setForm(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.FormHTMLAttributes[HTMLFormElement], HTMLFormElement]
         ): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setG(value: typings.react.mod.SVGProps[SVGGElement]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        inline def setG(value: typings.react.mod.SVGProps[SVGGElement]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH1(
+        inline def setH1(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
         ): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH2(
+        inline def setH2(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
         ): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH3(
+        inline def setH3(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
         ): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH4(
+        inline def setH4(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
         ): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH5(
+        inline def setH5(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
         ): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH6(
+        inline def setH6(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
         ): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHead(
+        inline def setHead(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHeadElement], HTMLHeadElement]
         ): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeader(
+        inline def setHeader(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHgroup(
+        inline def setHgroup(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHr(
+        inline def setHr(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLHRElement], HTMLHRElement]
         ): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtml(
+        inline def setHtml(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]
         ): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setI(
+        inline def setI(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIframe(
+        inline def setIframe(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]
         ): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImage(value: typings.react.mod.SVGProps[SVGImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+        inline def setImage(value: typings.react.mod.SVGProps[SVGImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImg(
+        inline def setImg(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]
         ): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInput(
+        inline def setInput(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.InputHTMLAttributes[HTMLInputElement], HTMLInputElement]
         ): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIns(
+        inline def setIns(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.InsHTMLAttributes[HTMLModElement], HTMLModElement]
         ): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKbd(
+        inline def setKbd(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeygen(
+        inline def setKeygen(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.KeygenHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabel(
+        inline def setLabel(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]
         ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLegend(
+        inline def setLegend(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLLegendElement], HTMLLegendElement]
         ): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLi(
+        inline def setLi(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.LiHTMLAttributes[HTMLLIElement], HTMLLIElement]
         ): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLine(value: typings.react.mod.SVGProps[SVGLineElement]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: typings.react.mod.SVGProps[SVGLineElement]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinearGradient(value: typings.react.mod.SVGProps[SVGLinearGradientElement]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+        inline def setLinearGradient(value: typings.react.mod.SVGProps[SVGLinearGradientElement]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLink(
+        inline def setLink(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
         ): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMain(
+        inline def setMain(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMap(
+        inline def setMap(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.MapHTMLAttributes[HTMLMapElement], HTMLMapElement]
         ): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMark(
+        inline def setMark(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarker(value: typings.react.mod.SVGProps[SVGMarkerElement]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+        inline def setMarker(value: typings.react.mod.SVGProps[SVGMarkerElement]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMask(value: typings.react.mod.SVGProps[SVGMaskElement]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+        inline def setMask(value: typings.react.mod.SVGProps[SVGMaskElement]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenu(
+        inline def setMenu(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.MenuHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenuitem(
+        inline def setMenuitem(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMeta(
+        inline def setMeta(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
         ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMetadata(value: typings.react.mod.SVGProps[SVGMetadataElement]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: typings.react.mod.SVGProps[SVGMetadataElement]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMeter(
+        inline def setMeter(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.MeterHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMpath(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
+        inline def setMpath(value: typings.react.mod.SVGProps[SVGElement]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNav(
+        inline def setNav(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoindex(
+        inline def setNoindex(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "noindex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoscript(
+        inline def setNoscript(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObject(
+        inline def setObject(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]
         ): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOl(
+        inline def setOl(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.OlHTMLAttributes[HTMLOListElement], HTMLOListElement]
         ): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptgroup(
+        inline def setOptgroup(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]
         ): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOption(
+        inline def setOption(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]
         ): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutput(
+        inline def setOutput(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.OutputHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setP(
+        inline def setP(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]
         ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParam(
+        inline def setParam(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]
         ): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPath(value: typings.react.mod.SVGProps[SVGPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: typings.react.mod.SVGProps[SVGPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPattern(value: typings.react.mod.SVGProps[SVGPatternElement]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+        inline def setPattern(value: typings.react.mod.SVGProps[SVGPatternElement]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPicture(
+        inline def setPicture(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPolygon(value: typings.react.mod.SVGProps[SVGPolygonElement]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+        inline def setPolygon(value: typings.react.mod.SVGProps[SVGPolygonElement]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPolyline(value: typings.react.mod.SVGProps[SVGPolylineElement]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+        inline def setPolyline(value: typings.react.mod.SVGProps[SVGPolylineElement]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPre(
+        inline def setPre(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLPreElement], HTMLPreElement]
         ): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProgress(
+        inline def setProgress(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]
         ): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQ(
+        inline def setQ(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]
         ): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRadialGradient(value: typings.react.mod.SVGProps[SVGRadialGradientElement]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+        inline def setRadialGradient(value: typings.react.mod.SVGProps[SVGRadialGradientElement]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRect(value: typings.react.mod.SVGProps[SVGRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+        inline def setRect(value: typings.react.mod.SVGProps[SVGRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRp(
+        inline def setRp(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRt(
+        inline def setRt(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuby(
+        inline def setRuby(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setS(
+        inline def setS(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSamp(
+        inline def setSamp(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScript(
+        inline def setScript(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]
         ): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSection(
+        inline def setSection(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelect(
+        inline def setSelect(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]
         ): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlot(
+        inline def setSlot(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]
         ): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSmall(
+        inline def setSmall(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSource(
+        inline def setSource(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]
         ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpan(
+        inline def setSpan(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLSpanElement], HTMLSpanElement]
         ): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStop(value: typings.react.mod.SVGProps[SVGStopElement]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+        inline def setStop(value: typings.react.mod.SVGProps[SVGStopElement]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrong(
+        inline def setStrong(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyle(
+        inline def setStyle(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]
         ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSub(
+        inline def setSub(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSummary(
+        inline def setSummary(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSup(
+        inline def setSup(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSvg(value: typings.react.mod.SVGProps[SVGSVGElement]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+        inline def setSvg(value: typings.react.mod.SVGProps[SVGSVGElement]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSwitch(value: typings.react.mod.SVGProps[SVGSwitchElement]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+        inline def setSwitch(value: typings.react.mod.SVGProps[SVGSwitchElement]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSymbol(value: typings.react.mod.SVGProps[SVGSymbolElement]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+        inline def setSymbol(value: typings.react.mod.SVGProps[SVGSymbolElement]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTable(
+        inline def setTable(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.TableHTMLAttributes[HTMLTableElement], HTMLTableElement]
         ): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTbody(
+        inline def setTbody(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
         ): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTd(
+        inline def setTd(
           value: typings.react.mod.DetailedHTMLProps[
                   typings.react.mod.TdHTMLAttributes[HTMLTableDataCellElement], 
                   HTMLTableDataCellElement
                 ]
         ): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplate(
+        inline def setTemplate(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement]
         ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: typings.react.mod.SVGProps[SVGTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: typings.react.mod.SVGProps[SVGTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextPath(value: typings.react.mod.SVGProps[SVGTextPathElement]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
+        inline def setTextPath(value: typings.react.mod.SVGProps[SVGTextPathElement]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextarea(
+        inline def setTextarea(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]
         ): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTfoot(
+        inline def setTfoot(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
         ): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTh(
+        inline def setTh(
           value: typings.react.mod.DetailedHTMLProps[
                   typings.react.mod.ThHTMLAttributes[HTMLTableHeaderCellElement], 
                   HTMLTableHeaderCellElement
                 ]
         ): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThead(
+        inline def setThead(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
         ): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTime(
+        inline def setTime(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.TimeHTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(
+        inline def setTitle(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTitleElement], HTMLTitleElement]
         ): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTr(
+        inline def setTr(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]
         ): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrack(
+        inline def setTrack(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]
         ): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTspan(value: typings.react.mod.SVGProps[SVGTSpanElement]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
+        inline def setTspan(value: typings.react.mod.SVGProps[SVGTSpanElement]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setU(
+        inline def setU(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUl(
+        inline def setUl(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLUListElement], HTMLUListElement]
         ): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUse(value: typings.react.mod.SVGProps[SVGUseElement]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+        inline def setUse(value: typings.react.mod.SVGProps[SVGUseElement]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVar(
+        inline def setVar(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVideo(
+        inline def setVideo(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]
         ): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setView(value: typings.react.mod.SVGProps[SVGViewElement]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+        inline def setView(value: typings.react.mod.SVGProps[SVGViewElement]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWbr(
+        inline def setWbr(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.HTMLAttributes[HTMLElement], HTMLElement]
         ): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWebview(
+        inline def setWebview(
           value: typings.react.mod.DetailedHTMLProps[typings.react.mod.WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]
         ): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
       }

@@ -38,46 +38,33 @@ trait MedicationDispenseSubstitution
 }
 object MedicationDispenseSubstitution {
   
-  @scala.inline
-  def apply(wasSubstituted: Boolean): MedicationDispenseSubstitution = {
+  inline def apply(wasSubstituted: Boolean): MedicationDispenseSubstitution = {
     val __obj = js.Dynamic.literal(wasSubstituted = wasSubstituted.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationDispenseSubstitution]
   }
   
-  @scala.inline
-  implicit class MedicationDispenseSubstitutionMutableBuilder[Self <: MedicationDispenseSubstitution] (val x: Self) extends AnyVal {
+  extension [Self <: MedicationDispenseSubstitution](x: Self) {
     
-    @scala.inline
-    def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
+    inline def setReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "reason", js.Array(value :_*))
     
-    @scala.inline
-    def setResponsibleParty(value: js.Array[Reference]): Self = StObject.set(x, "responsibleParty", value.asInstanceOf[js.Any])
+    inline def setResponsibleParty(value: js.Array[Reference]): Self = StObject.set(x, "responsibleParty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiblePartyUndefined: Self = StObject.set(x, "responsibleParty", js.undefined)
+    inline def setResponsiblePartyUndefined: Self = StObject.set(x, "responsibleParty", js.undefined)
     
-    @scala.inline
-    def setResponsiblePartyVarargs(value: Reference*): Self = StObject.set(x, "responsibleParty", js.Array(value :_*))
+    inline def setResponsiblePartyVarargs(value: Reference*): Self = StObject.set(x, "responsibleParty", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWasSubstituted(value: Boolean): Self = StObject.set(x, "wasSubstituted", value.asInstanceOf[js.Any])
+    inline def setWasSubstituted(value: Boolean): Self = StObject.set(x, "wasSubstituted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_wasSubstituted(value: Element): Self = StObject.set(x, "_wasSubstituted", value.asInstanceOf[js.Any])
+    inline def set_wasSubstituted(value: Element): Self = StObject.set(x, "_wasSubstituted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_wasSubstitutedUndefined: Self = StObject.set(x, "_wasSubstituted", js.undefined)
+    inline def set_wasSubstitutedUndefined: Self = StObject.set(x, "_wasSubstituted", js.undefined)
   }
 }

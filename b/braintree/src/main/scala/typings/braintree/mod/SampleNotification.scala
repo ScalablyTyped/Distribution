@@ -12,19 +12,15 @@ trait SampleNotification extends StObject {
 }
 object SampleNotification {
   
-  @scala.inline
-  def apply(bt_payload: String, bt_signature: String): SampleNotification = {
+  inline def apply(bt_payload: String, bt_signature: String): SampleNotification = {
     val __obj = js.Dynamic.literal(bt_payload = bt_payload.asInstanceOf[js.Any], bt_signature = bt_signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampleNotification]
   }
   
-  @scala.inline
-  implicit class SampleNotificationMutableBuilder[Self <: SampleNotification] (val x: Self) extends AnyVal {
+  extension [Self <: SampleNotification](x: Self) {
     
-    @scala.inline
-    def setBt_payload(value: String): Self = StObject.set(x, "bt_payload", value.asInstanceOf[js.Any])
+    inline def setBt_payload(value: String): Self = StObject.set(x, "bt_payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBt_signature(value: String): Self = StObject.set(x, "bt_signature", value.asInstanceOf[js.Any])
+    inline def setBt_signature(value: String): Self = StObject.set(x, "bt_signature", value.asInstanceOf[js.Any])
   }
 }

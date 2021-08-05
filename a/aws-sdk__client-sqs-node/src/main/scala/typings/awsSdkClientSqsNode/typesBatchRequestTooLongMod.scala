@@ -16,17 +16,14 @@ object typesBatchRequestTooLongMod {
   }
   object BatchRequestTooLong {
     
-    @scala.inline
-    def apply(): BatchRequestTooLong = {
+    inline def apply(): BatchRequestTooLong = {
       val __obj = js.Dynamic.literal(name = "BatchRequestTooLong")
       __obj.asInstanceOf[BatchRequestTooLong]
     }
     
-    @scala.inline
-    implicit class BatchRequestTooLongMutableBuilder[Self <: BatchRequestTooLong] (val x: Self) extends AnyVal {
+    extension [Self <: BatchRequestTooLong](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchRequestTooLong): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.BatchRequestTooLong): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

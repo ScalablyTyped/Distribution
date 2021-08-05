@@ -10,20 +10,17 @@ object convertXmlNamespaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertXmlNamespace(): js.UndefOr[
+  inline def convertXmlNamespace(): js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertXmlNamespace")().asInstanceOf[js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any
   ]]
-  @scala.inline
-  def convertXmlNamespace(ns: String): js.UndefOr[
+  inline def convertXmlNamespace(ns: String): js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertXmlNamespace")(ns.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any
   ]]
-  @scala.inline
-  def convertXmlNamespace(
+  inline def convertXmlNamespace(
     ns: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any
   ): js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XmlNamespace */ js.Any

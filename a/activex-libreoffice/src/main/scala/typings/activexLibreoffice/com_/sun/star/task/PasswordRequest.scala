@@ -23,8 +23,7 @@ trait PasswordRequest
 }
 object PasswordRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     Message: String,
@@ -34,10 +33,8 @@ object PasswordRequest {
     __obj.asInstanceOf[PasswordRequest]
   }
   
-  @scala.inline
-  implicit class PasswordRequestMutableBuilder[Self <: PasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordRequest](x: Self) {
     
-    @scala.inline
-    def setMode(value: PasswordRequestMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: PasswordRequestMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }
 }

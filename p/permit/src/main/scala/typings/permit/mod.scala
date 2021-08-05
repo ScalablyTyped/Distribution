@@ -42,32 +42,24 @@ object mod {
   }
   object BearerOptions {
     
-    @scala.inline
-    def apply(): BearerOptions = {
+    inline def apply(): BearerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BearerOptions]
     }
     
-    @scala.inline
-    implicit class BearerOptionsMutableBuilder[Self <: BearerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BearerOptions](x: Self) {
       
-      @scala.inline
-      def setBasic(value: String): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+      inline def setBasic(value: String): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+      inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
@@ -81,32 +73,24 @@ object mod {
   }
   object PermitOptions {
     
-    @scala.inline
-    def apply(): PermitOptions = {
+    inline def apply(): PermitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PermitOptions]
     }
     
-    @scala.inline
-    implicit class PermitOptionsMutableBuilder[Self <: PermitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PermitOptions](x: Self) {
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+      inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     }
   }
 }

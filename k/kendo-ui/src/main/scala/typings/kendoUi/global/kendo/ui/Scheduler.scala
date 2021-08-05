@@ -21,13 +21,11 @@ object Scheduler {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Scheduler]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Scheduler]
   
   /* static member */
   @JSGlobal("kendo.ui.Scheduler.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Scheduler = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Scheduler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Scheduler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

@@ -34,8 +34,7 @@ trait StripeStatic extends StObject {
 }
 object StripeStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applePay: StripeApplePay,
     bankAccount: StripeBankAccount,
     card: StripeCard,
@@ -51,41 +50,30 @@ object StripeStatic {
     __obj.asInstanceOf[StripeStatic]
   }
   
-  @scala.inline
-  implicit class StripeStaticMutableBuilder[Self <: StripeStatic] (val x: Self) extends AnyVal {
+  extension [Self <: StripeStatic](x: Self) {
     
-    @scala.inline
-    def setApplePay(value: StripeApplePay): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
+    inline def setApplePay(value: StripeApplePay): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankAccount(value: StripeBankAccount): Self = StObject.set(x, "bankAccount", value.asInstanceOf[js.Any])
+    inline def setBankAccount(value: StripeBankAccount): Self = StObject.set(x, "bankAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCard(value: StripeCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: StripeCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardType(value: String => StripeCardDataBrand): Self = StObject.set(x, "cardType", js.Any.fromFunction1(value))
+    inline def setCardType(value: String => StripeCardDataBrand): Self = StObject.set(x, "cardType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateToken(
+    inline def setCreateToken(
       value: (StripeCardTokenData, js.Function2[/* status */ Double, /* response */ StripeCardTokenResponse, Unit]) => Unit
     ): Self = StObject.set(x, "createToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetToken(
+    inline def setGetToken(
       value: (String, js.Function2[/* status */ Double, /* response */ StripeCardTokenResponse, Unit]) => Unit
     ): Self = StObject.set(x, "getToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPublishableKey(value: String => Unit): Self = StObject.set(x, "setPublishableKey", js.Any.fromFunction1(value))
+    inline def setSetPublishableKey(value: String => Unit): Self = StObject.set(x, "setPublishableKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateCVC(value: String => Boolean): Self = StObject.set(x, "validateCVC", js.Any.fromFunction1(value))
+    inline def setValidateCVC(value: String => Boolean): Self = StObject.set(x, "validateCVC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateCardNumber(value: String => Boolean): Self = StObject.set(x, "validateCardNumber", js.Any.fromFunction1(value))
+    inline def setValidateCardNumber(value: String => Boolean): Self = StObject.set(x, "validateCardNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateExpiry(value: (String, String) => Boolean): Self = StObject.set(x, "validateExpiry", js.Any.fromFunction2(value))
+    inline def setValidateExpiry(value: (String, String) => Boolean): Self = StObject.set(x, "validateExpiry", js.Any.fromFunction2(value))
   }
 }

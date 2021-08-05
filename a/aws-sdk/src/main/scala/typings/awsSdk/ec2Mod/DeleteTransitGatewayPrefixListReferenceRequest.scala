@@ -23,25 +23,19 @@ trait DeleteTransitGatewayPrefixListReferenceRequest extends StObject {
 }
 object DeleteTransitGatewayPrefixListReferenceRequest {
   
-  @scala.inline
-  def apply(PrefixListId: PrefixListResourceId, TransitGatewayRouteTableId: TransitGatewayRouteTableId): DeleteTransitGatewayPrefixListReferenceRequest = {
+  inline def apply(PrefixListId: PrefixListResourceId, TransitGatewayRouteTableId: TransitGatewayRouteTableId): DeleteTransitGatewayPrefixListReferenceRequest = {
     val __obj = js.Dynamic.literal(PrefixListId = PrefixListId.asInstanceOf[js.Any], TransitGatewayRouteTableId = TransitGatewayRouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayPrefixListReferenceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTransitGatewayPrefixListReferenceRequestMutableBuilder[Self <: DeleteTransitGatewayPrefixListReferenceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTransitGatewayPrefixListReferenceRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
   }
 }

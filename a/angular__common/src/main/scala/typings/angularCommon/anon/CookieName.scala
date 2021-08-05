@@ -12,25 +12,19 @@ trait CookieName extends StObject {
 }
 object CookieName {
   
-  @scala.inline
-  def apply(): CookieName = {
+  inline def apply(): CookieName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CookieName]
   }
   
-  @scala.inline
-  implicit class CookieNameMutableBuilder[Self <: CookieName] (val x: Self) extends AnyVal {
+  extension [Self <: CookieName](x: Self) {
     
-    @scala.inline
-    def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+    inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
+    inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
     
-    @scala.inline
-    def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
+    inline def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
   }
 }

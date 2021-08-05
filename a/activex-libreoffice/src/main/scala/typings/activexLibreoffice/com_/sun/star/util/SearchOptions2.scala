@@ -32,8 +32,7 @@ trait SearchOptions2
 }
 object SearchOptions2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlgorithmType2: Double,
     Locale: Locale,
     WildcardEscapeCharacter: Double,
@@ -50,13 +49,10 @@ object SearchOptions2 {
     __obj.asInstanceOf[SearchOptions2]
   }
   
-  @scala.inline
-  implicit class SearchOptions2MutableBuilder[Self <: SearchOptions2] (val x: Self) extends AnyVal {
+  extension [Self <: SearchOptions2](x: Self) {
     
-    @scala.inline
-    def setAlgorithmType2(value: Double): Self = StObject.set(x, "AlgorithmType2", value.asInstanceOf[js.Any])
+    inline def setAlgorithmType2(value: Double): Self = StObject.set(x, "AlgorithmType2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWildcardEscapeCharacter(value: Double): Self = StObject.set(x, "WildcardEscapeCharacter", value.asInstanceOf[js.Any])
+    inline def setWildcardEscapeCharacter(value: Double): Self = StObject.set(x, "WildcardEscapeCharacter", value.asInstanceOf[js.Any])
   }
 }

@@ -15,16 +15,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(modal: /* options */ js.UndefOr[SimpleModalOptions] => JQuery): JQuery = {
+  inline def apply(modal: /* options */ js.UndefOr[SimpleModalOptions] => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(modal = js.Any.fromFunction1(modal))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setModal(value: /* options */ js.UndefOr[SimpleModalOptions] => JQuery): Self = StObject.set(x, "modal", js.Any.fromFunction1(value))
+    inline def setModal(value: /* options */ js.UndefOr[SimpleModalOptions] => JQuery): Self = StObject.set(x, "modal", js.Any.fromFunction1(value))
   }
 }

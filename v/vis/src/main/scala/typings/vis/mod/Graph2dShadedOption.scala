@@ -12,25 +12,19 @@ trait Graph2dShadedOption extends StObject {
 }
 object Graph2dShadedOption {
   
-  @scala.inline
-  def apply(): Graph2dShadedOption = {
+  inline def apply(): Graph2dShadedOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Graph2dShadedOption]
   }
   
-  @scala.inline
-  implicit class Graph2dShadedOptionMutableBuilder[Self <: Graph2dShadedOption] (val x: Self) extends AnyVal {
+  extension [Self <: Graph2dShadedOption](x: Self) {
     
-    @scala.inline
-    def setGroupid(value: IdType): Self = StObject.set(x, "groupid", value.asInstanceOf[js.Any])
+    inline def setGroupid(value: IdType): Self = StObject.set(x, "groupid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupidUndefined: Self = StObject.set(x, "groupid", js.undefined)
+    inline def setGroupidUndefined: Self = StObject.set(x, "groupid", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: TopBottomEnumType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: TopBottomEnumType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait CanClearBrowserCookiesResponse extends StObject {
 }
 object CanClearBrowserCookiesResponse {
   
-  @scala.inline
-  def apply(result: Boolean): CanClearBrowserCookiesResponse = {
+  inline def apply(result: Boolean): CanClearBrowserCookiesResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanClearBrowserCookiesResponse]
   }
   
-  @scala.inline
-  implicit class CanClearBrowserCookiesResponseMutableBuilder[Self <: CanClearBrowserCookiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CanClearBrowserCookiesResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

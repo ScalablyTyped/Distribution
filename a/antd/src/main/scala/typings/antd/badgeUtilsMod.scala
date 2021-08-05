@@ -10,8 +10,6 @@ object badgeUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPresetColor(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresetColor")().asInstanceOf[Boolean]
-  @scala.inline
-  def isPresetColor(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresetColor")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPresetColor(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresetColor")().asInstanceOf[Boolean]
+  inline def isPresetColor(color: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPresetColor")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

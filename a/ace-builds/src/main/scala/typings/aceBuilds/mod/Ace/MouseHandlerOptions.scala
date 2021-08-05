@@ -18,8 +18,7 @@ trait MouseHandlerOptions extends StObject {
 }
 object MouseHandlerOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dragDelay: Double,
     dragEnabled: Boolean,
     focusTimeout: Double,
@@ -30,22 +29,16 @@ object MouseHandlerOptions {
     __obj.asInstanceOf[MouseHandlerOptions]
   }
   
-  @scala.inline
-  implicit class MouseHandlerOptionsMutableBuilder[Self <: MouseHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MouseHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setDragDelay(value: Double): Self = StObject.set(x, "dragDelay", value.asInstanceOf[js.Any])
+    inline def setDragDelay(value: Double): Self = StObject.set(x, "dragDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragEnabled(value: Boolean): Self = StObject.set(x, "dragEnabled", value.asInstanceOf[js.Any])
+    inline def setDragEnabled(value: Boolean): Self = StObject.set(x, "dragEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusTimeout(value: Double): Self = StObject.set(x, "focusTimeout", value.asInstanceOf[js.Any])
+    inline def setFocusTimeout(value: Double): Self = StObject.set(x, "focusTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
+    inline def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipFollowsMouse(value: Boolean): Self = StObject.set(x, "tooltipFollowsMouse", value.asInstanceOf[js.Any])
+    inline def setTooltipFollowsMouse(value: Boolean): Self = StObject.set(x, "tooltipFollowsMouse", value.asInstanceOf[js.Any])
   }
 }

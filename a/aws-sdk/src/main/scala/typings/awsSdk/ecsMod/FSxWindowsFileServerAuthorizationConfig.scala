@@ -18,19 +18,15 @@ trait FSxWindowsFileServerAuthorizationConfig extends StObject {
 }
 object FSxWindowsFileServerAuthorizationConfig {
   
-  @scala.inline
-  def apply(credentialsParameter: String, domain: String): FSxWindowsFileServerAuthorizationConfig = {
+  inline def apply(credentialsParameter: String, domain: String): FSxWindowsFileServerAuthorizationConfig = {
     val __obj = js.Dynamic.literal(credentialsParameter = credentialsParameter.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[FSxWindowsFileServerAuthorizationConfig]
   }
   
-  @scala.inline
-  implicit class FSxWindowsFileServerAuthorizationConfigMutableBuilder[Self <: FSxWindowsFileServerAuthorizationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FSxWindowsFileServerAuthorizationConfig](x: Self) {
     
-    @scala.inline
-    def setCredentialsParameter(value: String): Self = StObject.set(x, "credentialsParameter", value.asInstanceOf[js.Any])
+    inline def setCredentialsParameter(value: String): Self = StObject.set(x, "credentialsParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }
 }

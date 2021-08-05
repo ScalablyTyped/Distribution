@@ -10,16 +10,13 @@ trait IEdgeGestureStatics extends StObject {
 }
 object IEdgeGestureStatics {
   
-  @scala.inline
-  def apply(getForCurrentView: () => EdgeGesture): IEdgeGestureStatics = {
+  inline def apply(getForCurrentView: () => EdgeGesture): IEdgeGestureStatics = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView))
     __obj.asInstanceOf[IEdgeGestureStatics]
   }
   
-  @scala.inline
-  implicit class IEdgeGestureStaticsMutableBuilder[Self <: IEdgeGestureStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IEdgeGestureStatics](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => EdgeGesture): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => EdgeGesture): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }
 }

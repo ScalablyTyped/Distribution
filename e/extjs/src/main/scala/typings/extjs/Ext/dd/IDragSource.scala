@@ -211,171 +211,123 @@ trait IDragSource
 }
 object IDragSource {
   
-  @scala.inline
-  def apply(): IDragSource = {
+  inline def apply(): IDragSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDragSource]
   }
   
-  @scala.inline
-  implicit class IDragSourceMutableBuilder[Self <: IDragSource] (val x: Self) extends AnyVal {
+  extension [Self <: IDragSource](x: Self) {
     
-    @scala.inline
-    def setAfterDragDrop(
+    inline def setAfterDragDrop(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "afterDragDrop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDragDropUndefined: Self = StObject.set(x, "afterDragDrop", js.undefined)
+    inline def setAfterDragDropUndefined: Self = StObject.set(x, "afterDragDrop", js.undefined)
     
-    @scala.inline
-    def setAfterDragEnter(
+    inline def setAfterDragEnter(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "afterDragEnter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDragEnterUndefined: Self = StObject.set(x, "afterDragEnter", js.undefined)
+    inline def setAfterDragEnterUndefined: Self = StObject.set(x, "afterDragEnter", js.undefined)
     
-    @scala.inline
-    def setAfterDragOut(
+    inline def setAfterDragOut(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "afterDragOut", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDragOutUndefined: Self = StObject.set(x, "afterDragOut", js.undefined)
+    inline def setAfterDragOutUndefined: Self = StObject.set(x, "afterDragOut", js.undefined)
     
-    @scala.inline
-    def setAfterDragOver(
+    inline def setAfterDragOver(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "afterDragOver", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDragOverUndefined: Self = StObject.set(x, "afterDragOver", js.undefined)
+    inline def setAfterDragOverUndefined: Self = StObject.set(x, "afterDragOver", js.undefined)
     
-    @scala.inline
-    def setAfterInvalidDrop(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "afterInvalidDrop", js.Any.fromFunction2(value))
+    inline def setAfterInvalidDrop(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "afterInvalidDrop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterInvalidDropUndefined: Self = StObject.set(x, "afterInvalidDrop", js.undefined)
+    inline def setAfterInvalidDropUndefined: Self = StObject.set(x, "afterInvalidDrop", js.undefined)
     
-    @scala.inline
-    def setAfterValidDrop(
+    inline def setAfterValidDrop(
       value: (/* target */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "afterValidDrop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterValidDropUndefined: Self = StObject.set(x, "afterValidDrop", js.undefined)
+    inline def setAfterValidDropUndefined: Self = StObject.set(x, "afterValidDrop", js.undefined)
     
-    @scala.inline
-    def setAlignElWithMouse(value: () => Unit): Self = StObject.set(x, "alignElWithMouse", js.Any.fromFunction0(value))
+    inline def setAlignElWithMouse(value: () => Unit): Self = StObject.set(x, "alignElWithMouse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAlignElWithMouseUndefined: Self = StObject.set(x, "alignElWithMouse", js.undefined)
+    inline def setAlignElWithMouseUndefined: Self = StObject.set(x, "alignElWithMouse", js.undefined)
     
-    @scala.inline
-    def setAnimRepair(value: Boolean): Self = StObject.set(x, "animRepair", value.asInstanceOf[js.Any])
+    inline def setAnimRepair(value: Boolean): Self = StObject.set(x, "animRepair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimRepairUndefined: Self = StObject.set(x, "animRepair", js.undefined)
+    inline def setAnimRepairUndefined: Self = StObject.set(x, "animRepair", js.undefined)
     
-    @scala.inline
-    def setBeforeDragDrop(
+    inline def setBeforeDragDrop(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
     ): Self = StObject.set(x, "beforeDragDrop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDragDropUndefined: Self = StObject.set(x, "beforeDragDrop", js.undefined)
+    inline def setBeforeDragDropUndefined: Self = StObject.set(x, "beforeDragDrop", js.undefined)
     
-    @scala.inline
-    def setBeforeDragEnter(
+    inline def setBeforeDragEnter(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
     ): Self = StObject.set(x, "beforeDragEnter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDragEnterUndefined: Self = StObject.set(x, "beforeDragEnter", js.undefined)
+    inline def setBeforeDragEnterUndefined: Self = StObject.set(x, "beforeDragEnter", js.undefined)
     
-    @scala.inline
-    def setBeforeDragOut(
+    inline def setBeforeDragOut(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
     ): Self = StObject.set(x, "beforeDragOut", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDragOutUndefined: Self = StObject.set(x, "beforeDragOut", js.undefined)
+    inline def setBeforeDragOutUndefined: Self = StObject.set(x, "beforeDragOut", js.undefined)
     
-    @scala.inline
-    def setBeforeDragOver(
+    inline def setBeforeDragOver(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
     ): Self = StObject.set(x, "beforeDragOver", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDragOverUndefined: Self = StObject.set(x, "beforeDragOver", js.undefined)
+    inline def setBeforeDragOverUndefined: Self = StObject.set(x, "beforeDragOver", js.undefined)
     
-    @scala.inline
-    def setBeforeInvalidDrop(
+    inline def setBeforeInvalidDrop(
       value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
     ): Self = StObject.set(x, "beforeInvalidDrop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeInvalidDropUndefined: Self = StObject.set(x, "beforeInvalidDrop", js.undefined)
+    inline def setBeforeInvalidDropUndefined: Self = StObject.set(x, "beforeInvalidDrop", js.undefined)
     
-    @scala.inline
-    def setDdGroup(value: String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
+    inline def setDdGroup(value: String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
+    inline def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
     
-    @scala.inline
-    def setDragData(value: js.Any): Self = StObject.set(x, "dragData", value.asInstanceOf[js.Any])
+    inline def setDragData(value: js.Any): Self = StObject.set(x, "dragData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragDataUndefined: Self = StObject.set(x, "dragData", js.undefined)
+    inline def setDragDataUndefined: Self = StObject.set(x, "dragData", js.undefined)
     
-    @scala.inline
-    def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
+    inline def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropAllowedUndefined: Self = StObject.set(x, "dropAllowed", js.undefined)
+    inline def setDropAllowedUndefined: Self = StObject.set(x, "dropAllowed", js.undefined)
     
-    @scala.inline
-    def setDropNotAllowed(value: String): Self = StObject.set(x, "dropNotAllowed", value.asInstanceOf[js.Any])
+    inline def setDropNotAllowed(value: String): Self = StObject.set(x, "dropNotAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
+    inline def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
     
-    @scala.inline
-    def setGetDragData(value: /* e */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
+    inline def setGetDragData(value: /* e */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)
+    inline def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)
     
-    @scala.inline
-    def setGetProxy(value: () => IStatusProxy): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    inline def setGetProxy(value: () => IStatusProxy): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+    inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
-    @scala.inline
-    def setHideProxy(value: () => Unit): Self = StObject.set(x, "hideProxy", js.Any.fromFunction0(value))
+    inline def setHideProxy(value: () => Unit): Self = StObject.set(x, "hideProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideProxyUndefined: Self = StObject.set(x, "hideProxy", js.undefined)
+    inline def setHideProxyUndefined: Self = StObject.set(x, "hideProxy", js.undefined)
     
-    @scala.inline
-    def setOnBeforeDrag(value: (/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event]) => Boolean): Self = StObject.set(x, "onBeforeDrag", js.Any.fromFunction2(value))
+    inline def setOnBeforeDrag(value: (/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event]) => Boolean): Self = StObject.set(x, "onBeforeDrag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnBeforeDragUndefined: Self = StObject.set(x, "onBeforeDrag", js.undefined)
+    inline def setOnBeforeDragUndefined: Self = StObject.set(x, "onBeforeDrag", js.undefined)
     
-    @scala.inline
-    def setOnStartDrag(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onStartDrag", js.Any.fromFunction2(value))
+    inline def setOnStartDrag(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onStartDrag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnStartDragUndefined: Self = StObject.set(x, "onStartDrag", js.undefined)
+    inline def setOnStartDragUndefined: Self = StObject.set(x, "onStartDrag", js.undefined)
     
-    @scala.inline
-    def setRepairHighlightColor(value: String): Self = StObject.set(x, "repairHighlightColor", value.asInstanceOf[js.Any])
+    inline def setRepairHighlightColor(value: String): Self = StObject.set(x, "repairHighlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepairHighlightColorUndefined: Self = StObject.set(x, "repairHighlightColor", js.undefined)
+    inline def setRepairHighlightColorUndefined: Self = StObject.set(x, "repairHighlightColor", js.undefined)
   }
 }

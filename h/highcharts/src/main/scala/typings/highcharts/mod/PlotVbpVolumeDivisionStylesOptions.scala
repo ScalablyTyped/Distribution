@@ -18,25 +18,19 @@ trait PlotVbpVolumeDivisionStylesOptions extends StObject {
 }
 object PlotVbpVolumeDivisionStylesOptions {
   
-  @scala.inline
-  def apply(): PlotVbpVolumeDivisionStylesOptions = {
+  inline def apply(): PlotVbpVolumeDivisionStylesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotVbpVolumeDivisionStylesOptions]
   }
   
-  @scala.inline
-  implicit class PlotVbpVolumeDivisionStylesOptionsMutableBuilder[Self <: PlotVbpVolumeDivisionStylesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotVbpVolumeDivisionStylesOptions](x: Self) {
     
-    @scala.inline
-    def setNegativeColor(value: ColorString): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
+    inline def setNegativeColor(value: ColorString): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
-    @scala.inline
-    def setPositiveColor(value: ColorString): Self = StObject.set(x, "positiveColor", value.asInstanceOf[js.Any])
+    inline def setPositiveColor(value: ColorString): Self = StObject.set(x, "positiveColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveColorUndefined: Self = StObject.set(x, "positiveColor", js.undefined)
+    inline def setPositiveColorUndefined: Self = StObject.set(x, "positiveColor", js.undefined)
   }
 }

@@ -14,41 +14,27 @@ object actionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addBlockStyles(blockName: String, styles: js.Array[BlockStyle]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addBlockStyles(blockName: String, styles: BlockStyle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBlockStyles(blockName: String, styles: js.Array[BlockStyle]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addBlockStyles(blockName: String, styles: BlockStyle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBlockStyles")(blockName.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addBlockTypes(blockTypes: js.Array[BlockConfiguration[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addBlockTypes(blockTypes: BlockConfiguration[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBlockTypes(blockTypes: js.Array[BlockConfiguration[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBlockTypes(blockTypes: BlockConfiguration[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBlockTypes")(blockTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeBlockStyles(blockName: String, styleNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeBlockStyles(blockName: String, styleNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBlockStyles(blockName: String, styleNames: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeBlockStyles(blockName: String, styleNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockStyles")(blockName.asInstanceOf[js.Any], styleNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeBlockTypes(names: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeBlockTypes(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeBlockTypes(names: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeBlockTypes(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setCategories(categories: js.Array[Category]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setCategories(categories: js.Array[Category]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDefaultBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDefaultBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setFreeformFallbackBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFreeformFallbackBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setFreeformFallbackBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFreeformFallbackBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setGroupingBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGroupingBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setGroupingBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGroupingBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setUnregisteredFallbackBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUnregisteredFallbackBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUnregisteredFallbackBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUnregisteredFallbackBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def updateCategory(slug: String, category: PartialCategory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCategory(slug: String, category: PartialCategory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

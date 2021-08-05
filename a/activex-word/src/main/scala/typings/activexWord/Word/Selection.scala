@@ -902,7 +902,7 @@ trait Selection extends StObject {
   
   def WholeStory(): Unit = js.native
   
-  @JSName("Word.Selection_typekey")
+  /* private */ @JSName("Word.Selection_typekey")
   var WordDotSelection_typekey: Selection = js.native
   
   val WordOpenXML: String = js.native

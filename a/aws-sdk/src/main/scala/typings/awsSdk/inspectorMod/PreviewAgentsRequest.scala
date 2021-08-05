@@ -23,28 +23,21 @@ trait PreviewAgentsRequest extends StObject {
 }
 object PreviewAgentsRequest {
   
-  @scala.inline
-  def apply(previewAgentsArn: Arn): PreviewAgentsRequest = {
+  inline def apply(previewAgentsArn: Arn): PreviewAgentsRequest = {
     val __obj = js.Dynamic.literal(previewAgentsArn = previewAgentsArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewAgentsRequest]
   }
   
-  @scala.inline
-  implicit class PreviewAgentsRequestMutableBuilder[Self <: PreviewAgentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewAgentsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PreviewAgentsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PreviewAgentsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPreviewAgentsArn(value: Arn): Self = StObject.set(x, "previewAgentsArn", value.asInstanceOf[js.Any])
+    inline def setPreviewAgentsArn(value: Arn): Self = StObject.set(x, "previewAgentsArn", value.asInstanceOf[js.Any])
   }
 }

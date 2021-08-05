@@ -45,46 +45,33 @@ trait ScaleImageOptions extends StObject {
 }
 object ScaleImageOptions {
   
-  @scala.inline
-  def apply(maxSize: Double): ScaleImageOptions = {
+  inline def apply(maxSize: Double): ScaleImageOptions = {
     val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleImageOptions]
   }
   
-  @scala.inline
-  implicit class ScaleImageOptionsMutableBuilder[Self <: ScaleImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleImageOptions](x: Self) {
     
-    @scala.inline
-    def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
+    inline def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomResizerUndefined: Self = StObject.set(x, "customResizer", js.undefined)
+    inline def setCustomResizerUndefined: Self = StObject.set(x, "customResizer", js.undefined)
     
-    @scala.inline
-    def setIncludeExif(value: Boolean): Self = StObject.set(x, "includeExif", value.asInstanceOf[js.Any])
+    inline def setIncludeExif(value: Boolean): Self = StObject.set(x, "includeExif", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeExifUndefined: Self = StObject.set(x, "includeExif", js.undefined)
+    inline def setIncludeExifUndefined: Self = StObject.set(x, "includeExif", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrient(value: Boolean): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    inline def setOrient(value: Boolean): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+    inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

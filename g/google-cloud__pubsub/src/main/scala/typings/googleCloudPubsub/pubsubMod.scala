@@ -263,38 +263,28 @@ object pubsubMod {
   }
   object ClientConfig {
     
-    @scala.inline
-    def apply(): ClientConfig = {
+    inline def apply(): ClientConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientConfig]
     }
     
-    @scala.inline
-    implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ClientConfig](x: Self) {
       
-      @scala.inline
-      def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
+      inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
+      inline def setApiEndpointUndefined: Self = StObject.set(x, "apiEndpoint", js.undefined)
       
-      @scala.inline
-      def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+      inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
+      inline def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
       
-      @scala.inline
-      def setSslCreds(value: ChannelCredentials): Self = StObject.set(x, "sslCreds", value.asInstanceOf[js.Any])
+      inline def setSslCreds(value: ChannelCredentials): Self = StObject.set(x, "sslCreds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslCredsUndefined: Self = StObject.set(x, "sslCreds", js.undefined)
+      inline def setSslCredsUndefined: Self = StObject.set(x, "sslCreds", js.undefined)
     }
   }
   
@@ -322,17 +312,14 @@ object pubsubMod {
   }
   object GetClientConfig {
     
-    @scala.inline
-    def apply(client: PublisherClient | SubscriberClient): GetClientConfig = {
+    inline def apply(client: PublisherClient | SubscriberClient): GetClientConfig = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetClientConfig]
     }
     
-    @scala.inline
-    implicit class GetClientConfigMutableBuilder[Self <: GetClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GetClientConfig](x: Self) {
       
-      @scala.inline
-      def setClient(value: PublisherClient | SubscriberClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: PublisherClient | SubscriberClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,20 +337,16 @@ object pubsubMod {
   }
   object GetSubscriptionsOptions {
     
-    @scala.inline
-    def apply(): GetSubscriptionsOptions = {
+    inline def apply(): GetSubscriptionsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetSubscriptionsOptions]
     }
     
-    @scala.inline
-    implicit class GetSubscriptionsOptionsMutableBuilder[Self <: GetSubscriptionsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetSubscriptionsOptions](x: Self) {
       
-      @scala.inline
-      def setTopic(value: String | Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String | Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+      inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     }
   }
   
@@ -411,38 +394,28 @@ object pubsubMod {
   }
   object PageOptions {
     
-    @scala.inline
-    def apply(): PageOptions = {
+    inline def apply(): PageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageOptions]
     }
     
-    @scala.inline
-    implicit class PageOptionsMutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PageOptions](x: Self) {
       
-      @scala.inline
-      def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
+      inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
+      inline def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
       
-      @scala.inline
-      def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
+      inline def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
+      inline def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+      inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+      inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     }
   }
   
@@ -470,29 +443,22 @@ object pubsubMod {
   }
   object RequestConfig {
     
-    @scala.inline
-    def apply(client: PublisherClient | SubscriberClient, method: String): RequestConfig = {
+    inline def apply(client: PublisherClient | SubscriberClient, method: String): RequestConfig = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestConfig]
     }
     
-    @scala.inline
-    implicit class RequestConfigMutableBuilder[Self <: RequestConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RequestConfig](x: Self) {
       
-      @scala.inline
-      def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
+      inline def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
+      inline def setGaxOptsUndefined: Self = StObject.set(x, "gaxOpts", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqOpts(value: js.Object): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
+      inline def setReqOpts(value: js.Object): Self = StObject.set(x, "reqOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqOptsUndefined: Self = StObject.set(x, "reqOpts", js.undefined)
+      inline def setReqOptsUndefined: Self = StObject.set(x, "reqOpts", js.undefined)
     }
   }
   

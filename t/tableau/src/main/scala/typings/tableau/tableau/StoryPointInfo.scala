@@ -23,8 +23,7 @@ trait StoryPointInfo extends StObject {
 }
 object StoryPointInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCaption: () => String,
     getIndex: () => Double,
     getIsActive: () => Boolean,
@@ -35,22 +34,16 @@ object StoryPointInfo {
     __obj.asInstanceOf[StoryPointInfo]
   }
   
-  @scala.inline
-  implicit class StoryPointInfoMutableBuilder[Self <: StoryPointInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StoryPointInfo](x: Self) {
     
-    @scala.inline
-    def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
+    inline def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
+    inline def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsUpdated(value: () => Boolean): Self = StObject.set(x, "getIsUpdated", js.Any.fromFunction0(value))
+    inline def setGetIsUpdated(value: () => Boolean): Self = StObject.set(x, "getIsUpdated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentStory(value: () => Story): Self = StObject.set(x, "getParentStory", js.Any.fromFunction0(value))
+    inline def setGetParentStory(value: () => Story): Self = StObject.set(x, "getParentStory", js.Any.fromFunction0(value))
   }
 }

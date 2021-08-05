@@ -38,16 +38,13 @@ trait TStylingRange extends StObject {
 }
 object TStylingRange {
   
-  @scala.inline
-  def apply(): TStylingRange = {
+  inline def apply(): TStylingRange = {
     val __obj = js.Dynamic.literal(__brand__ = "TStylingRange")
     __obj.asInstanceOf[TStylingRange]
   }
   
-  @scala.inline
-  implicit class TStylingRangeMutableBuilder[Self <: TStylingRange] (val x: Self) extends AnyVal {
+  extension [Self <: TStylingRange](x: Self) {
     
-    @scala.inline
-    def set__brand__(value: typings.angularCore.angularCoreStrings.TStylingRange): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: typings.angularCore.angularCoreStrings.TStylingRange): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

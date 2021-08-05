@@ -26,24 +26,24 @@ object baseFloatingPickerMod {
        with IBaseFloatingPicker {
     def this(basePickerProps: P) = this()
     
-    var SuggestionsControlOfProperType: Instantiable1[/* props */ ISuggestionsControlProps[T], SuggestionsControl[T]] = js.native
+    /* protected */ var SuggestionsControlOfProperType: Instantiable1[/* props */ ISuggestionsControlProps[T], SuggestionsControl[T]] = js.native
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MBaseFloatingPicker(newProps: IBaseFloatingPickerProps[T]): Unit = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _bindToInputElement: js.Any = js.native
+    /* private */ var _bindToInputElement: js.Any = js.native
     
-    var _onResolveSuggestions: js.Any = js.native
+    /* private */ var _onResolveSuggestions: js.Any = js.native
     
-    var _onValidateInput: js.Any = js.native
+    /* private */ var _onValidateInput: js.Any = js.native
     
-    var _unbindFromInputElement: js.Any = js.native
+    /* private */ var _unbindFromInputElement: js.Any = js.native
     
-    var _updateActiveDescendant: js.Any = js.native
+    /* private */ var _updateActiveDescendant: js.Any = js.native
     
-    var _updateSuggestionsVisible: js.Any = js.native
+    /* private */ var _updateSuggestionsVisible: js.Any = js.native
     
     def completeSuggestion(): Unit = js.native
     
@@ -56,13 +56,13 @@ object baseFloatingPickerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MBaseFloatingPicker(): Unit = js.native
     
-    var currentPromise: js.Thenable[js.Array[T]] = js.native
+    /* protected */ var currentPromise: js.Thenable[js.Array[T]] = js.native
     
     val currentSelectedSuggestionIndex: Double = js.native
     
     def forceResolveSuggestion(): Unit = js.native
     
-    var isComponentMounted: Boolean = js.native
+    /* protected */ var isComponentMounted: Boolean = js.native
     
     /* protected */ def onChange(item: T): Unit = js.native
     
@@ -76,13 +76,13 @@ object baseFloatingPickerMod {
     
     /* protected */ def renderSuggestions(): Element | Null = js.native
     
-    var root: RefObject[HTMLDivElement] = js.native
+    /* protected */ var root: RefObject[HTMLDivElement] = js.native
     
-    var selection: Selection = js.native
+    /* protected */ var selection: Selection = js.native
     
-    var suggestionStore: SuggestionsStore[T] = js.native
+    /* protected */ var suggestionStore: SuggestionsStore[T] = js.native
     
-    var suggestionsControl: RefObject[SuggestionsControl[T]] = js.native
+    /* protected */ var suggestionsControl: RefObject[SuggestionsControl[T]] = js.native
     
     /* protected */ def updateSuggestionWithZeroState(): Unit = js.native
     
@@ -105,26 +105,20 @@ object baseFloatingPickerMod {
   }
   object IBaseFloatingPickerState {
     
-    @scala.inline
-    def apply(didBind: Boolean, queryString: String): IBaseFloatingPickerState = {
+    inline def apply(didBind: Boolean, queryString: String): IBaseFloatingPickerState = {
       val __obj = js.Dynamic.literal(didBind = didBind.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBaseFloatingPickerState]
     }
     
-    @scala.inline
-    implicit class IBaseFloatingPickerStateMutableBuilder[Self <: IBaseFloatingPickerState] (val x: Self) extends AnyVal {
+    extension [Self <: IBaseFloatingPickerState](x: Self) {
       
-      @scala.inline
-      def setDidBind(value: Boolean): Self = StObject.set(x, "didBind", value.asInstanceOf[js.Any])
+      inline def setDidBind(value: Boolean): Self = StObject.set(x, "didBind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+      inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsVisible(value: Boolean): Self = StObject.set(x, "suggestionsVisible", value.asInstanceOf[js.Any])
+      inline def setSuggestionsVisible(value: Boolean): Self = StObject.set(x, "suggestionsVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionsVisibleUndefined: Self = StObject.set(x, "suggestionsVisible", js.undefined)
+      inline def setSuggestionsVisibleUndefined: Self = StObject.set(x, "suggestionsVisible", js.undefined)
     }
   }
 }

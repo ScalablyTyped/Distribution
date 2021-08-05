@@ -19,17 +19,14 @@ object avplaystoreMod {
   }
   object AVPlayStoreManager {
     
-    @scala.inline
-    def apply(getPlayer: () => AVPlayManager): AVPlayStoreManager = {
+    inline def apply(getPlayer: () => AVPlayManager): AVPlayStoreManager = {
       val __obj = js.Dynamic.literal(getPlayer = js.Any.fromFunction0(getPlayer))
       __obj.asInstanceOf[AVPlayStoreManager]
     }
     
-    @scala.inline
-    implicit class AVPlayStoreManagerMutableBuilder[Self <: AVPlayStoreManager] (val x: Self) extends AnyVal {
+    extension [Self <: AVPlayStoreManager](x: Self) {
       
-      @scala.inline
-      def setGetPlayer(value: () => AVPlayManager): Self = StObject.set(x, "getPlayer", js.Any.fromFunction0(value))
+      inline def setGetPlayer(value: () => AVPlayManager): Self = StObject.set(x, "getPlayer", js.Any.fromFunction0(value))
     }
   }
 }

@@ -113,121 +113,83 @@ trait SchemaRevision extends StObject {
 }
 object SchemaRevision {
   
-  @scala.inline
-  def apply(): SchemaRevision = {
+  inline def apply(): SchemaRevision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevision]
   }
   
-  @scala.inline
-  implicit class SchemaRevisionMutableBuilder[Self <: SchemaRevision] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevision](x: Self) {
     
-    @scala.inline
-    def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
+    inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
+    inline def setDownloadUrlUndefined: Self = StObject.set(x, "downloadUrl", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setExportLinks(value: StringDictionary[String]): Self = StObject.set(x, "exportLinks", value.asInstanceOf[js.Any])
+    inline def setExportLinks(value: StringDictionary[String]): Self = StObject.set(x, "exportLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportLinksUndefined: Self = StObject.set(x, "exportLinks", js.undefined)
+    inline def setExportLinksUndefined: Self = StObject.set(x, "exportLinks", js.undefined)
     
-    @scala.inline
-    def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+    inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLastModifyingUser(value: SchemaUser): Self = StObject.set(x, "lastModifyingUser", value.asInstanceOf[js.Any])
+    inline def setLastModifyingUser(value: SchemaUser): Self = StObject.set(x, "lastModifyingUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifyingUserName(value: String): Self = StObject.set(x, "lastModifyingUserName", value.asInstanceOf[js.Any])
+    inline def setLastModifyingUserName(value: String): Self = StObject.set(x, "lastModifyingUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifyingUserNameUndefined: Self = StObject.set(x, "lastModifyingUserName", js.undefined)
+    inline def setLastModifyingUserNameUndefined: Self = StObject.set(x, "lastModifyingUserName", js.undefined)
     
-    @scala.inline
-    def setLastModifyingUserUndefined: Self = StObject.set(x, "lastModifyingUser", js.undefined)
+    inline def setLastModifyingUserUndefined: Self = StObject.set(x, "lastModifyingUser", js.undefined)
     
-    @scala.inline
-    def setMd5Checksum(value: String): Self = StObject.set(x, "md5Checksum", value.asInstanceOf[js.Any])
+    inline def setMd5Checksum(value: String): Self = StObject.set(x, "md5Checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5ChecksumUndefined: Self = StObject.set(x, "md5Checksum", js.undefined)
+    inline def setMd5ChecksumUndefined: Self = StObject.set(x, "md5Checksum", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
+    inline def setModifiedDateUndefined: Self = StObject.set(x, "modifiedDate", js.undefined)
     
-    @scala.inline
-    def setOriginalFilename(value: String): Self = StObject.set(x, "originalFilename", value.asInstanceOf[js.Any])
+    inline def setOriginalFilename(value: String): Self = StObject.set(x, "originalFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalFilenameUndefined: Self = StObject.set(x, "originalFilename", js.undefined)
+    inline def setOriginalFilenameUndefined: Self = StObject.set(x, "originalFilename", js.undefined)
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    @scala.inline
-    def setPublishAuto(value: Boolean): Self = StObject.set(x, "publishAuto", value.asInstanceOf[js.Any])
+    inline def setPublishAuto(value: Boolean): Self = StObject.set(x, "publishAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishAutoUndefined: Self = StObject.set(x, "publishAuto", js.undefined)
+    inline def setPublishAutoUndefined: Self = StObject.set(x, "publishAuto", js.undefined)
     
-    @scala.inline
-    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedLink(value: String): Self = StObject.set(x, "publishedLink", value.asInstanceOf[js.Any])
+    inline def setPublishedLink(value: String): Self = StObject.set(x, "publishedLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedLinkUndefined: Self = StObject.set(x, "publishedLink", js.undefined)
+    inline def setPublishedLinkUndefined: Self = StObject.set(x, "publishedLink", js.undefined)
     
-    @scala.inline
-    def setPublishedOutsideDomain(value: Boolean): Self = StObject.set(x, "publishedOutsideDomain", value.asInstanceOf[js.Any])
+    inline def setPublishedOutsideDomain(value: Boolean): Self = StObject.set(x, "publishedOutsideDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedOutsideDomainUndefined: Self = StObject.set(x, "publishedOutsideDomain", js.undefined)
+    inline def setPublishedOutsideDomainUndefined: Self = StObject.set(x, "publishedOutsideDomain", js.undefined)
     
-    @scala.inline
-    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+    inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

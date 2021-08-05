@@ -14,6 +14,5 @@ object useTreeDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(treeData: js.Array[DataNode], children: ReactNode, hasGetLabelPropSimpleMode: GetLabelProp): js.Array[InnerDataNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(treeData.asInstanceOf[js.Any], children.asInstanceOf[js.Any], hasGetLabelPropSimpleMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[InnerDataNode]]
+  inline def default(treeData: js.Array[DataNode], children: ReactNode, hasGetLabelPropSimpleMode: GetLabelProp): js.Array[InnerDataNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(treeData.asInstanceOf[js.Any], children.asInstanceOf[js.Any], hasGetLabelPropSimpleMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[InnerDataNode]]
 }

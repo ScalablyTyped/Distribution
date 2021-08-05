@@ -19,8 +19,7 @@ trait XNameReplace
 }
 object XNameReplace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -37,10 +36,8 @@ object XNameReplace {
     __obj.asInstanceOf[XNameReplace]
   }
   
-  @scala.inline
-  implicit class XNameReplaceMutableBuilder[Self <: XNameReplace] (val x: Self) extends AnyVal {
+  extension [Self <: XNameReplace](x: Self) {
     
-    @scala.inline
-    def setReplaceByName(value: (String, js.Any) => Unit): Self = StObject.set(x, "replaceByName", js.Any.fromFunction2(value))
+    inline def setReplaceByName(value: (String, js.Any) => Unit): Self = StObject.set(x, "replaceByName", js.Any.fromFunction2(value))
   }
 }

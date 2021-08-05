@@ -18,28 +18,21 @@ trait Warning extends StObject {
 }
 object Warning {
   
-  @scala.inline
-  def apply(): Warning = {
+  inline def apply(): Warning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Warning]
   }
   
-  @scala.inline
-  implicit class WarningMutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
+  extension [Self <: Warning](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setPages(value: Pages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Pages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "Pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "Pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: UInteger*): Self = StObject.set(x, "Pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: UInteger*): Self = StObject.set(x, "Pages", js.Array(value :_*))
   }
 }

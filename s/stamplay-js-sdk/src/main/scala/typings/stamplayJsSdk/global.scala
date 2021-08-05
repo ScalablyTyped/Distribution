@@ -13,13 +13,10 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Cobject(`object`: String): StamplayObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Cobject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StamplayObject]
+    inline def Cobject(`object`: String): StamplayObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Cobject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StamplayObject]
     
-    @scala.inline
-    def User(): StamplayObject = ^.asInstanceOf[js.Dynamic].applyDynamic("User")().asInstanceOf[StamplayObject]
+    inline def User(): StamplayObject = ^.asInstanceOf[js.Dynamic].applyDynamic("User")().asInstanceOf[StamplayObject]
     
-    @scala.inline
-    def init(appId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(appId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(appId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(appId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

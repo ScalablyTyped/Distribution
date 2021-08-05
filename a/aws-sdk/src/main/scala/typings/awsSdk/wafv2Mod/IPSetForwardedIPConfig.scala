@@ -23,8 +23,7 @@ trait IPSetForwardedIPConfig extends StObject {
 }
 object IPSetForwardedIPConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FallbackBehavior: FallbackBehavior,
     HeaderName: ForwardedIPHeaderName,
     Position: ForwardedIPPosition
@@ -33,16 +32,12 @@ object IPSetForwardedIPConfig {
     __obj.asInstanceOf[IPSetForwardedIPConfig]
   }
   
-  @scala.inline
-  implicit class IPSetForwardedIPConfigMutableBuilder[Self <: IPSetForwardedIPConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IPSetForwardedIPConfig](x: Self) {
     
-    @scala.inline
-    def setFallbackBehavior(value: FallbackBehavior): Self = StObject.set(x, "FallbackBehavior", value.asInstanceOf[js.Any])
+    inline def setFallbackBehavior(value: FallbackBehavior): Self = StObject.set(x, "FallbackBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderName(value: ForwardedIPHeaderName): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: ForwardedIPHeaderName): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: ForwardedIPPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ForwardedIPPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

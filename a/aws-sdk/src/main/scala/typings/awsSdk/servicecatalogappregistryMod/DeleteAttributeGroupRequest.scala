@@ -13,16 +13,13 @@ trait DeleteAttributeGroupRequest extends StObject {
 }
 object DeleteAttributeGroupRequest {
   
-  @scala.inline
-  def apply(attributeGroup: AttributeGroupSpecifier): DeleteAttributeGroupRequest = {
+  inline def apply(attributeGroup: AttributeGroupSpecifier): DeleteAttributeGroupRequest = {
     val __obj = js.Dynamic.literal(attributeGroup = attributeGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAttributeGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAttributeGroupRequestMutableBuilder[Self <: DeleteAttributeGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAttributeGroupRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
+    inline def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
   }
 }

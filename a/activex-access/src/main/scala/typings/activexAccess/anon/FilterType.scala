@@ -12,19 +12,15 @@ trait FilterType extends StObject {
 }
 object FilterType {
   
-  @scala.inline
-  def apply(Cancel: Double, FilterType: Double): FilterType = {
+  inline def apply(Cancel: Double, FilterType: Double): FilterType = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], FilterType = FilterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterType]
   }
   
-  @scala.inline
-  implicit class FilterTypeMutableBuilder[Self <: FilterType] (val x: Self) extends AnyVal {
+  extension [Self <: FilterType](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterType(value: Double): Self = StObject.set(x, "FilterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: Double): Self = StObject.set(x, "FilterType", value.asInstanceOf[js.Any])
   }
 }

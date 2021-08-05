@@ -39,53 +39,37 @@ object menus {
   trait ContextType extends StObject
   object ContextType {
     
-    @scala.inline
-    def all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all = "all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all]
+    inline def all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all = "all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all]
     
-    @scala.inline
-    def audio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio = "audio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio]
+    inline def audio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio = "audio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio]
     
-    @scala.inline
-    def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
+    inline def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
     
-    @scala.inline
-    def browser_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action = "browser_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action]
+    inline def browser_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action = "browser_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action]
     
-    @scala.inline
-    def editable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable = "editable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable]
+    inline def editable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable = "editable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable]
     
-    @scala.inline
-    def frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame = "frame".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame]
+    inline def frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame = "frame".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame]
     
-    @scala.inline
-    def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
+    inline def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
     
-    @scala.inline
-    def launcher: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher = "launcher".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher]
+    inline def launcher: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher = "launcher".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher]
     
-    @scala.inline
-    def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
+    inline def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
     
-    @scala.inline
-    def page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page = "page".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page]
+    inline def page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page = "page".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page]
     
-    @scala.inline
-    def page_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action = "page_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action]
+    inline def page_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action = "page_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action]
     
-    @scala.inline
-    def password: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password = "password".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password]
+    inline def password: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password = "password".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password]
     
-    @scala.inline
-    def selection: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection = "selection".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection]
+    inline def selection: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection = "selection".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection]
     
-    @scala.inline
-    def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
+    inline def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
     
-    @scala.inline
-    def tools_menu: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu = "tools_menu".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu]
+    inline def tools_menu: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu = "tools_menu".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu]
     
-    @scala.inline
-    def video: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video = "video".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video]
+    inline def video: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video = "video".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video]
   }
   
   trait CreateCreateProperties extends StObject {
@@ -151,110 +135,76 @@ object menus {
   }
   object CreateCreateProperties {
     
-    @scala.inline
-    def apply(): CreateCreateProperties = {
+    inline def apply(): CreateCreateProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateCreateProperties]
     }
     
-    @scala.inline
-    implicit class CreateCreatePropertiesMutableBuilder[Self <: CreateCreateProperties] (val x: Self) extends AnyVal {
+    extension [Self <: CreateCreateProperties](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+      inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      @scala.inline
-      def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
       
-      @scala.inline
-      def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
+      inline def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
+      inline def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
       
-      @scala.inline
-      def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
+      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setIcons(value: CreateCreatePropertiesIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: CreateCreatePropertiesIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
+      inline def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+      inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
-      @scala.inline
-      def setParentId(value: Double | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Double | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      @scala.inline
-      def setTargetUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
+      inline def setTargetUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
+      inline def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
       
-      @scala.inline
-      def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
+      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setViewTypes(value: js.Array[ViewType]): Self = StObject.set(x, "viewTypes", value.asInstanceOf[js.Any])
+      inline def setViewTypes(value: js.Array[ViewType]): Self = StObject.set(x, "viewTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewTypesUndefined: Self = StObject.set(x, "viewTypes", js.undefined)
+      inline def setViewTypesUndefined: Self = StObject.set(x, "viewTypes", js.undefined)
       
-      @scala.inline
-      def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value :_*))
+      inline def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -270,17 +220,13 @@ object menus {
   trait ItemType extends StObject
   object ItemType {
     
-    @scala.inline
-    def checkbox: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox = "checkbox".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox]
+    inline def checkbox: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox = "checkbox".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.checkbox]
     
-    @scala.inline
-    def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
+    inline def normal: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal = "normal".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.normal]
     
-    @scala.inline
-    def radio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio = "radio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio]
+    inline def radio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio = "radio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.radio]
     
-    @scala.inline
-    def separator: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator = "separator".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator]
+    inline def separator: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator = "separator".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.separator]
   }
   
   /** Information sent when a context menu item is clicked. */
@@ -348,8 +294,7 @@ object menus {
   }
   object OnClickData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bookmarkId: String,
       editable: Boolean,
       menuItemId: Double | String,
@@ -359,107 +304,73 @@ object menus {
       __obj.asInstanceOf[OnClickData]
     }
     
-    @scala.inline
-    implicit class OnClickDataMutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
+    extension [Self <: OnClickData](x: Self) {
       
-      @scala.inline
-      def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
+      inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+      inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
       
-      @scala.inline
-      def setFrameUrl(value: String): Self = StObject.set(x, "frameUrl", value.asInstanceOf[js.Any])
+      inline def setFrameUrl(value: String): Self = StObject.set(x, "frameUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUrlUndefined: Self = StObject.set(x, "frameUrl", js.undefined)
+      inline def setFrameUrlUndefined: Self = StObject.set(x, "frameUrl", js.undefined)
       
-      @scala.inline
-      def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
+      inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
+      inline def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
       
-      @scala.inline
-      def setLinkUrl(value: String): Self = StObject.set(x, "linkUrl", value.asInstanceOf[js.Any])
+      inline def setLinkUrl(value: String): Self = StObject.set(x, "linkUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUrlUndefined: Self = StObject.set(x, "linkUrl", js.undefined)
+      inline def setLinkUrlUndefined: Self = StObject.set(x, "linkUrl", js.undefined)
       
-      @scala.inline
-      def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      @scala.inline
-      def setMenuItemId(value: Double | String): Self = StObject.set(x, "menuItemId", value.asInstanceOf[js.Any])
+      inline def setMenuItemId(value: Double | String): Self = StObject.set(x, "menuItemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiers(value: js.Array[OnClickDataModifiers]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[OnClickDataModifiers]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersVarargs(value: OnClickDataModifiers*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: OnClickDataModifiers*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
+      inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
+      inline def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
       
-      @scala.inline
-      def setParentMenuItemId(value: Double | String): Self = StObject.set(x, "parentMenuItemId", value.asInstanceOf[js.Any])
+      inline def setParentMenuItemId(value: Double | String): Self = StObject.set(x, "parentMenuItemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentMenuItemIdUndefined: Self = StObject.set(x, "parentMenuItemId", js.undefined)
+      inline def setParentMenuItemIdUndefined: Self = StObject.set(x, "parentMenuItemId", js.undefined)
       
-      @scala.inline
-      def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
+      inline def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionTextUndefined: Self = StObject.set(x, "selectionText", js.undefined)
+      inline def setSelectionTextUndefined: Self = StObject.set(x, "selectionText", js.undefined)
       
-      @scala.inline
-      def setSrcUrl(value: String): Self = StObject.set(x, "srcUrl", value.asInstanceOf[js.Any])
+      inline def setSrcUrl(value: String): Self = StObject.set(x, "srcUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUrlUndefined: Self = StObject.set(x, "srcUrl", js.undefined)
+      inline def setSrcUrlUndefined: Self = StObject.set(x, "srcUrl", js.undefined)
       
-      @scala.inline
-      def setTargetElementId(value: Double): Self = StObject.set(x, "targetElementId", value.asInstanceOf[js.Any])
+      inline def setTargetElementId(value: Double): Self = StObject.set(x, "targetElementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetElementIdUndefined: Self = StObject.set(x, "targetElementId", js.undefined)
+      inline def setTargetElementIdUndefined: Self = StObject.set(x, "targetElementId", js.undefined)
       
-      @scala.inline
-      def setViewType(value: ViewType): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+      inline def setViewType(value: ViewType): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
+      inline def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
       
-      @scala.inline
-      def setWasChecked(value: Boolean): Self = StObject.set(x, "wasChecked", value.asInstanceOf[js.Any])
+      inline def setWasChecked(value: Boolean): Self = StObject.set(x, "wasChecked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWasCheckedUndefined: Self = StObject.set(x, "wasChecked", js.undefined)
+      inline def setWasCheckedUndefined: Self = StObject.set(x, "wasChecked", js.undefined)
     }
   }
   
@@ -473,20 +384,15 @@ object menus {
   trait OnClickDataModifiers extends StObject
   object OnClickDataModifiers {
     
-    @scala.inline
-    def Alt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Alt = "Alt".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Alt]
+    inline def Alt: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Alt = "Alt".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Alt]
     
-    @scala.inline
-    def Command: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Command = "Command".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Command]
+    inline def Command: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Command = "Command".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Command]
     
-    @scala.inline
-    def Ctrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Ctrl = "Ctrl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Ctrl]
+    inline def Ctrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Ctrl = "Ctrl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Ctrl]
     
-    @scala.inline
-    def MacCtrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.MacCtrl = "MacCtrl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.MacCtrl]
+    inline def MacCtrl: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.MacCtrl = "MacCtrl".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.MacCtrl]
     
-    @scala.inline
-    def Shift: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift = "Shift".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift]
+    inline def Shift: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift = "Shift".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift]
   }
   
   /**
@@ -522,83 +428,58 @@ object menus {
   }
   object OnShownInfo {
     
-    @scala.inline
-    def apply(contexts: js.Array[ContextType], editable: Boolean, menuIds: Double | js.Array[String]): OnShownInfo = {
+    inline def apply(contexts: js.Array[ContextType], editable: Boolean, menuIds: Double | js.Array[String]): OnShownInfo = {
       val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], menuIds = menuIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnShownInfo]
     }
     
-    @scala.inline
-    implicit class OnShownInfoMutableBuilder[Self <: OnShownInfo] (val x: Self) extends AnyVal {
+    extension [Self <: OnShownInfo](x: Self) {
       
-      @scala.inline
-      def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUrl(value: String): Self = StObject.set(x, "frameUrl", value.asInstanceOf[js.Any])
+      inline def setFrameUrl(value: String): Self = StObject.set(x, "frameUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameUrlUndefined: Self = StObject.set(x, "frameUrl", js.undefined)
+      inline def setFrameUrlUndefined: Self = StObject.set(x, "frameUrl", js.undefined)
       
-      @scala.inline
-      def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
+      inline def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
+      inline def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
       
-      @scala.inline
-      def setLinkUrl(value: String): Self = StObject.set(x, "linkUrl", value.asInstanceOf[js.Any])
+      inline def setLinkUrl(value: String): Self = StObject.set(x, "linkUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUrlUndefined: Self = StObject.set(x, "linkUrl", js.undefined)
+      inline def setLinkUrlUndefined: Self = StObject.set(x, "linkUrl", js.undefined)
       
-      @scala.inline
-      def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      @scala.inline
-      def setMenuIds(value: Double | js.Array[String]): Self = StObject.set(x, "menuIds", value.asInstanceOf[js.Any])
+      inline def setMenuIds(value: Double | js.Array[String]): Self = StObject.set(x, "menuIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuIdsVarargs(value: String*): Self = StObject.set(x, "menuIds", js.Array(value :_*))
+      inline def setMenuIdsVarargs(value: String*): Self = StObject.set(x, "menuIds", js.Array(value :_*))
       
-      @scala.inline
-      def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
+      inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
+      inline def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
       
-      @scala.inline
-      def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
+      inline def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionTextUndefined: Self = StObject.set(x, "selectionText", js.undefined)
+      inline def setSelectionTextUndefined: Self = StObject.set(x, "selectionText", js.undefined)
       
-      @scala.inline
-      def setSrcUrl(value: String): Self = StObject.set(x, "srcUrl", value.asInstanceOf[js.Any])
+      inline def setSrcUrl(value: String): Self = StObject.set(x, "srcUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUrlUndefined: Self = StObject.set(x, "srcUrl", js.undefined)
+      inline def setSrcUrlUndefined: Self = StObject.set(x, "srcUrl", js.undefined)
       
-      @scala.inline
-      def setTargetElementId(value: Double): Self = StObject.set(x, "targetElementId", value.asInstanceOf[js.Any])
+      inline def setTargetElementId(value: Double): Self = StObject.set(x, "targetElementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetElementIdUndefined: Self = StObject.set(x, "targetElementId", js.undefined)
+      inline def setTargetElementIdUndefined: Self = StObject.set(x, "targetElementId", js.undefined)
       
-      @scala.inline
-      def setViewType(value: ViewType): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+      inline def setViewType(value: ViewType): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
+      inline def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
     }
   }
   
@@ -620,38 +501,28 @@ object menus {
   }
   object OverrideContextContextOptions {
     
-    @scala.inline
-    def apply(): OverrideContextContextOptions = {
+    inline def apply(): OverrideContextContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OverrideContextContextOptions]
     }
     
-    @scala.inline
-    implicit class OverrideContextContextOptionsMutableBuilder[Self <: OverrideContextContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OverrideContextContextOptions](x: Self) {
       
-      @scala.inline
-      def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
+      inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
+      inline def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
       
-      @scala.inline
-      def setContext(value: OverrideContextContextOptionsContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: OverrideContextContextOptionsContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setShowDefaults(value: Boolean): Self = StObject.set(x, "showDefaults", value.asInstanceOf[js.Any])
+      inline def setShowDefaults(value: Boolean): Self = StObject.set(x, "showDefaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDefaultsUndefined: Self = StObject.set(x, "showDefaults", js.undefined)
+      inline def setShowDefaultsUndefined: Self = StObject.set(x, "showDefaults", js.undefined)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     }
   }
   
@@ -665,11 +536,9 @@ object menus {
   trait OverrideContextContextOptionsContext extends StObject
   object OverrideContextContextOptionsContext {
     
-    @scala.inline
-    def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
+    inline def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
     
-    @scala.inline
-    def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
+    inline def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
   }
   
   /** The properties to update. Accepts the same values as the create function. */
@@ -706,98 +575,68 @@ object menus {
   }
   object UpdateUpdateProperties {
     
-    @scala.inline
-    def apply(): UpdateUpdateProperties = {
+    inline def apply(): UpdateUpdateProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateUpdateProperties]
     }
     
-    @scala.inline
-    implicit class UpdateUpdatePropertiesMutableBuilder[Self <: UpdateUpdateProperties] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateUpdateProperties](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+      inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      @scala.inline
-      def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
       
-      @scala.inline
-      def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
+      inline def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
+      inline def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
       
-      @scala.inline
-      def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
+      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setIcons(value: UpdateUpdatePropertiesIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: UpdateUpdatePropertiesIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+      inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      @scala.inline
-      def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
+      inline def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+      inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
-      @scala.inline
-      def setParentId(value: Double | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Double | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      @scala.inline
-      def setTargetUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
+      inline def setTargetUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
+      inline def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
       
-      @scala.inline
-      def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
+      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setViewTypes(value: js.Array[ViewType]): Self = StObject.set(x, "viewTypes", value.asInstanceOf[js.Any])
+      inline def setViewTypes(value: js.Array[ViewType]): Self = StObject.set(x, "viewTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewTypesUndefined: Self = StObject.set(x, "viewTypes", js.undefined)
+      inline def setViewTypesUndefined: Self = StObject.set(x, "viewTypes", js.undefined)
       
-      @scala.inline
-      def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value :_*))
+      inline def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   

@@ -151,16 +151,14 @@ object SpeechSynthesis {
     @JSGlobal("Windows.Media.SpeechSynthesis.SpeechSynthesizer.allVoices")
     @js.native
     def allVoices: IVectorView[typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation] = js.native
-    @scala.inline
-    def allVoices_=(x: IVectorView[typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allVoices")(x.asInstanceOf[js.Any])
+    inline def allVoices_=(x: IVectorView[typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allVoices")(x.asInstanceOf[js.Any])
     
     /** Gets the default speech synthesis engine (voice). */
     /* static member */
     @JSGlobal("Windows.Media.SpeechSynthesis.SpeechSynthesizer.defaultVoice")
     @js.native
     def defaultVoice: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation = js.native
-    @scala.inline
-    def defaultVoice_=(x: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVoice")(x.asInstanceOf[js.Any])
+    inline def defaultVoice_=(x: typings.winrtUwp.Windows.Media.SpeechSynthesis.VoiceInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVoice")(x.asInstanceOf[js.Any])
   }
   
   /** Specifies the gender settings for an installed speech synthesis engine (voice). */

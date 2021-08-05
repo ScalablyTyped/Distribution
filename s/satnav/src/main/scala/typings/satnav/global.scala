@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def Satnav(): ISatnav = js.Dynamic.global.applyDynamic("Satnav")().asInstanceOf[ISatnav]
-  @scala.inline
-  def Satnav(options: ISatnavOptions): ISatnav = js.Dynamic.global.applyDynamic("Satnav")(options.asInstanceOf[js.Any]).asInstanceOf[ISatnav]
+  inline def Satnav(): ISatnav = js.Dynamic.global.applyDynamic("Satnav")().asInstanceOf[ISatnav]
+  inline def Satnav(options: ISatnavOptions): ISatnav = js.Dynamic.global.applyDynamic("Satnav")(options.asInstanceOf[js.Any]).asInstanceOf[ISatnav]
 }

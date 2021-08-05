@@ -17,8 +17,7 @@ trait ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint extends St
 }
 object ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityCheckRepoIsStarredByAuthenticatedUserEndpoint,
     request: ActivityCheckRepoIsStarredByAuthenticatedUserRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpointMutableBuilder[Self <: ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityCheckRepoIsStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityCheckRepoIsStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityCheckRepoIsStarredByAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityCheckRepoIsStarredByAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

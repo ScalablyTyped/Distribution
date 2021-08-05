@@ -30,40 +30,31 @@ trait AbstractProvider
 }
 object AbstractProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     sendAsync: (JsonRpcPayload, js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]) => Unit
   ): AbstractProvider = {
     val __obj = js.Dynamic.literal(sendAsync = js.Any.fromFunction2(sendAsync))
     __obj.asInstanceOf[AbstractProvider]
   }
   
-  @scala.inline
-  implicit class AbstractProviderMutableBuilder[Self <: AbstractProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractProvider](x: Self) {
     
-    @scala.inline
-    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+    inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+    inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
     
-    @scala.inline
-    def setRequest(value: /* args */ RequestArguments => js.Promise[js.Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: /* args */ RequestArguments => js.Promise[js.Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setSend(
+    inline def setSend(
       value: (/* payload */ JsonRpcPayload, /* callback */ js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]) => Unit
     ): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendAsync(
+    inline def setSendAsync(
       value: (JsonRpcPayload, js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]) => Unit
     ): Self = StObject.set(x, "sendAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+    inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
   }
 }

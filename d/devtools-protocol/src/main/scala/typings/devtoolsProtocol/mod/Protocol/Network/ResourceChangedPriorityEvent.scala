@@ -23,22 +23,17 @@ trait ResourceChangedPriorityEvent extends StObject {
 }
 object ResourceChangedPriorityEvent {
   
-  @scala.inline
-  def apply(newPriority: ResourcePriority, requestId: RequestId, timestamp: MonotonicTime): ResourceChangedPriorityEvent = {
+  inline def apply(newPriority: ResourcePriority, requestId: RequestId, timestamp: MonotonicTime): ResourceChangedPriorityEvent = {
     val __obj = js.Dynamic.literal(newPriority = newPriority.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceChangedPriorityEvent]
   }
   
-  @scala.inline
-  implicit class ResourceChangedPriorityEventMutableBuilder[Self <: ResourceChangedPriorityEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceChangedPriorityEvent](x: Self) {
     
-    @scala.inline
-    def setNewPriority(value: ResourcePriority): Self = StObject.set(x, "newPriority", value.asInstanceOf[js.Any])
+    inline def setNewPriority(value: ResourcePriority): Self = StObject.set(x, "newPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

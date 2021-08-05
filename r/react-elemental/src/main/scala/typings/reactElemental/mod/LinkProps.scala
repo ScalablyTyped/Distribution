@@ -19,31 +19,23 @@ trait LinkProps
 }
 object LinkProps {
   
-  @scala.inline
-  def apply(): LinkProps = {
+  inline def apply(): LinkProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkProps]
   }
   
-  @scala.inline
-  implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+  extension [Self <: LinkProps](x: Self) {
     
-    @scala.inline
-    def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
+    inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
+    inline def setActiveColorUndefined: Self = StObject.set(x, "activeColor", js.undefined)
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setType(value: LinkType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LinkType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

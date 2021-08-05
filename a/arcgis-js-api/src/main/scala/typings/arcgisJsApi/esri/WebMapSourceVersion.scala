@@ -26,8 +26,7 @@ trait WebMapSourceVersion
 }
 object WebMapSourceVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     major: Double,
@@ -38,13 +37,10 @@ object WebMapSourceVersion {
     __obj.asInstanceOf[WebMapSourceVersion]
   }
   
-  @scala.inline
-  implicit class WebMapSourceVersionMutableBuilder[Self <: WebMapSourceVersion] (val x: Self) extends AnyVal {
+  extension [Self <: WebMapSourceVersion](x: Self) {
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
   }
 }

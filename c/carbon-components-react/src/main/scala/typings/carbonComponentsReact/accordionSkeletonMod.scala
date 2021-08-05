@@ -33,38 +33,28 @@ object accordionSkeletonMod extends Shortcut {
   }
   object AccordionSkeletonProps {
     
-    @scala.inline
-    def apply(): AccordionSkeletonProps = {
+    inline def apply(): AccordionSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionSkeletonProps]
     }
     
-    @scala.inline
-    implicit class AccordionSkeletonPropsMutableBuilder[Self <: AccordionSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: end | start): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: end | start): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setUid(value: js.Any): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: js.Any): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     }
   }
   

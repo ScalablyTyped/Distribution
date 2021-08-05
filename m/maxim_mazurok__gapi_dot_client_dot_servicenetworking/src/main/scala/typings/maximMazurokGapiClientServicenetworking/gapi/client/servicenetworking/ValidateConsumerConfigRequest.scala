@@ -27,37 +27,27 @@ trait ValidateConsumerConfigRequest extends StObject {
 }
 object ValidateConsumerConfigRequest {
   
-  @scala.inline
-  def apply(): ValidateConsumerConfigRequest = {
+  inline def apply(): ValidateConsumerConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateConsumerConfigRequest]
   }
   
-  @scala.inline
-  implicit class ValidateConsumerConfigRequestMutableBuilder[Self <: ValidateConsumerConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateConsumerConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
+    inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
+    inline def setConsumerNetworkUndefined: Self = StObject.set(x, "consumerNetwork", js.undefined)
     
-    @scala.inline
-    def setConsumerProject(value: ConsumerProject): Self = StObject.set(x, "consumerProject", value.asInstanceOf[js.Any])
+    inline def setConsumerProject(value: ConsumerProject): Self = StObject.set(x, "consumerProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerProjectUndefined: Self = StObject.set(x, "consumerProject", js.undefined)
+    inline def setConsumerProjectUndefined: Self = StObject.set(x, "consumerProject", js.undefined)
     
-    @scala.inline
-    def setRangeReservation(value: RangeReservation): Self = StObject.set(x, "rangeReservation", value.asInstanceOf[js.Any])
+    inline def setRangeReservation(value: RangeReservation): Self = StObject.set(x, "rangeReservation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeReservationUndefined: Self = StObject.set(x, "rangeReservation", js.undefined)
+    inline def setRangeReservationUndefined: Self = StObject.set(x, "rangeReservation", js.undefined)
     
-    @scala.inline
-    def setValidateNetwork(value: Boolean): Self = StObject.set(x, "validateNetwork", value.asInstanceOf[js.Any])
+    inline def setValidateNetwork(value: Boolean): Self = StObject.set(x, "validateNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateNetworkUndefined: Self = StObject.set(x, "validateNetwork", js.undefined)
+    inline def setValidateNetworkUndefined: Self = StObject.set(x, "validateNetwork", js.undefined)
   }
 }

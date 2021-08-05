@@ -18,19 +18,15 @@ trait RouteSpecHttp2RouteMatchHeaderMatchRange extends StObject {
 }
 object RouteSpecHttp2RouteMatchHeaderMatchRange {
   
-  @scala.inline
-  def apply(end: Double, start: Double): RouteSpecHttp2RouteMatchHeaderMatchRange = {
+  inline def apply(end: Double, start: Double): RouteSpecHttp2RouteMatchHeaderMatchRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttp2RouteMatchHeaderMatchRange]
   }
   
-  @scala.inline
-  implicit class RouteSpecHttp2RouteMatchHeaderMatchRangeMutableBuilder[Self <: RouteSpecHttp2RouteMatchHeaderMatchRange] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecHttp2RouteMatchHeaderMatchRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

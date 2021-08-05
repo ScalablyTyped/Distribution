@@ -9,10 +9,8 @@ object mod {
   /**
     * Truncate HTML text and also keep tag safe.
     */
-  @scala.inline
-  def apply(input: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(input: String, maxLength: Double, options: TruncateOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String, maxLength: Double, options: TruncateOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("html-truncate", JSImport.Namespace)
   @js.native
@@ -32,20 +30,16 @@ object mod {
   }
   object TruncateOptions {
     
-    @scala.inline
-    def apply(ellipsis: Boolean | String, keepImageTag: Boolean): TruncateOptions = {
+    inline def apply(ellipsis: Boolean | String, keepImageTag: Boolean): TruncateOptions = {
       val __obj = js.Dynamic.literal(ellipsis = ellipsis.asInstanceOf[js.Any], keepImageTag = keepImageTag.asInstanceOf[js.Any])
       __obj.asInstanceOf[TruncateOptions]
     }
     
-    @scala.inline
-    implicit class TruncateOptionsMutableBuilder[Self <: TruncateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TruncateOptions](x: Self) {
       
-      @scala.inline
-      def setEllipsis(value: Boolean | String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: Boolean | String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepImageTag(value: Boolean): Self = StObject.set(x, "keepImageTag", value.asInstanceOf[js.Any])
+      inline def setKeepImageTag(value: Boolean): Self = StObject.set(x, "keepImageTag", value.asInstanceOf[js.Any])
     }
   }
 }

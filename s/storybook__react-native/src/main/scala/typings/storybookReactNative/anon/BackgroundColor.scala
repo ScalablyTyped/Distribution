@@ -22,8 +22,7 @@ trait BackgroundColor extends StObject {
 }
 object BackgroundColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     borderColor: String,
     buttonActiveTextColor: String,
@@ -36,28 +35,20 @@ object BackgroundColor {
     __obj.asInstanceOf[BackgroundColor]
   }
   
-  @scala.inline
-  implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonActiveTextColor(value: String): Self = StObject.set(x, "buttonActiveTextColor", value.asInstanceOf[js.Any])
+    inline def setButtonActiveTextColor(value: String): Self = StObject.set(x, "buttonActiveTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonTextColor(value: String): Self = StObject.set(x, "buttonTextColor", value.asInstanceOf[js.Any])
+    inline def setButtonTextColor(value: String): Self = StObject.set(x, "buttonTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTextColor(value: String): Self = StObject.set(x, "headerTextColor", value.asInstanceOf[js.Any])
+    inline def setHeaderTextColor(value: String): Self = StObject.set(x, "headerTextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
+    inline def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewBorderColor(value: String): Self = StObject.set(x, "previewBorderColor", value.asInstanceOf[js.Any])
+    inline def setPreviewBorderColor(value: String): Self = StObject.set(x, "previewBorderColor", value.asInstanceOf[js.Any])
   }
 }

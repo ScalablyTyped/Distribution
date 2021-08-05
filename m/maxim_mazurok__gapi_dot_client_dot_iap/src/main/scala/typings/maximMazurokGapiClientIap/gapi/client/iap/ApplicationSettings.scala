@@ -17,31 +17,23 @@ trait ApplicationSettings extends StObject {
 }
 object ApplicationSettings {
   
-  @scala.inline
-  def apply(): ApplicationSettings = {
+  inline def apply(): ApplicationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationSettings]
   }
   
-  @scala.inline
-  implicit class ApplicationSettingsMutableBuilder[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationSettings](x: Self) {
     
-    @scala.inline
-    def setAccessDeniedPageSettings(value: AccessDeniedPageSettings): Self = StObject.set(x, "accessDeniedPageSettings", value.asInstanceOf[js.Any])
+    inline def setAccessDeniedPageSettings(value: AccessDeniedPageSettings): Self = StObject.set(x, "accessDeniedPageSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessDeniedPageSettingsUndefined: Self = StObject.set(x, "accessDeniedPageSettings", js.undefined)
+    inline def setAccessDeniedPageSettingsUndefined: Self = StObject.set(x, "accessDeniedPageSettings", js.undefined)
     
-    @scala.inline
-    def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+    inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
+    inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
     
-    @scala.inline
-    def setCsmSettings(value: CsmSettings): Self = StObject.set(x, "csmSettings", value.asInstanceOf[js.Any])
+    inline def setCsmSettings(value: CsmSettings): Self = StObject.set(x, "csmSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsmSettingsUndefined: Self = StObject.set(x, "csmSettings", js.undefined)
+    inline def setCsmSettingsUndefined: Self = StObject.set(x, "csmSettings", js.undefined)
   }
 }

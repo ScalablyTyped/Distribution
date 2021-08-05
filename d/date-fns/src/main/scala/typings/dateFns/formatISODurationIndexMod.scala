@@ -8,8 +8,7 @@ object formatISODurationIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(duration: Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(duration: Duration): String = ^.asInstanceOf[js.Dynamic].apply(duration.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("date-fns/esm/formatISODuration/index", JSImport.Default)
     @js.native

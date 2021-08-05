@@ -62,8 +62,7 @@ object CallWorkflowClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def create(model: IModel): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -74,8 +73,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionButtonUnderAction(container: ActionButton): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInActionButtonUnderAction(container: ActionButton): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -86,8 +84,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionItemUnderAction(container: ActionItem): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInActionItemUnderAction(container: ActionItem): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -98,8 +95,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -110,8 +106,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -122,8 +117,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -134,8 +128,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -146,8 +139,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderOnClickAction(container: DivContainer): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInDivContainerUnderOnClickAction(container: DivContainer): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -158,8 +150,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -170,8 +161,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGridActionButtonUnderAction(container: GridActionButton): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInGridActionButtonUnderAction(container: GridActionButton): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -182,8 +172,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderClickAction(container: ListView): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInListViewUnderClickAction(container: ListView): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -194,8 +183,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderPullDownAction(container: ListView): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInListViewUnderPullDownAction(container: ListView): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -206,8 +194,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMenuItemUnderAction(container: MenuItem): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInMenuItemUnderAction(container: MenuItem): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -218,8 +205,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -230,8 +216,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -242,8 +227,7 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /**
     * Creates and returns a new CallWorkflowClientAction instance in the SDK and on the server.
@@ -254,20 +238,17 @@ object CallWorkflowClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderAction(container: WidgetValue): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
+  inline def createInWidgetValueUnderAction(container: WidgetValue): CallWorkflowClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[CallWorkflowClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallWorkflowClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.CallWorkflowClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

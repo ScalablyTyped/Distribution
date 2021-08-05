@@ -24,8 +24,7 @@ trait ClusterStep extends StObject {
 }
 object ClusterStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionOnFailure: Input[String],
     hadoopJarStep: Input[ClusterStepHadoopJarStep],
     name: Input[String]
@@ -34,16 +33,12 @@ object ClusterStep {
     __obj.asInstanceOf[ClusterStep]
   }
   
-  @scala.inline
-  implicit class ClusterStepMutableBuilder[Self <: ClusterStep] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterStep](x: Self) {
     
-    @scala.inline
-    def setActionOnFailure(value: Input[String]): Self = StObject.set(x, "actionOnFailure", value.asInstanceOf[js.Any])
+    inline def setActionOnFailure(value: Input[String]): Self = StObject.set(x, "actionOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHadoopJarStep(value: Input[ClusterStepHadoopJarStep]): Self = StObject.set(x, "hadoopJarStep", value.asInstanceOf[js.Any])
+    inline def setHadoopJarStep(value: Input[ClusterStepHadoopJarStep]): Self = StObject.set(x, "hadoopJarStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

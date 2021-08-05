@@ -21,32 +21,24 @@ trait TSTypeParameter_
 }
 object TSTypeParameter_ {
   
-  @scala.inline
-  def apply(name: String): TSTypeParameter_ = {
+  inline def apply(name: String): TSTypeParameter_ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[TSTypeParameter_]
   }
   
-  @scala.inline
-  implicit class TSTypeParameter_MutableBuilder[Self <: TSTypeParameter_] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeParameter_](x: Self) {
     
-    @scala.inline
-    def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintNull: Self = StObject.set(x, "constraint", null)
+    inline def setConstraintNull: Self = StObject.set(x, "constraint", null)
     
-    @scala.inline
-    def setDefault(value: TSType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: TSType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSTypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSTypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

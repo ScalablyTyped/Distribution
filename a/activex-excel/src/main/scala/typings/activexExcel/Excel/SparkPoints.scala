@@ -10,7 +10,7 @@ trait SparkPoints extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.SparkPoints_typekey")
+  /* private */ @JSName("Excel.SparkPoints_typekey")
   var ExcelDotSparkPoints_typekey: SparkPoints
   
   val Firstpoint: SparkColor
@@ -29,8 +29,7 @@ trait SparkPoints extends StObject {
 }
 object SparkPoints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotSparkPoints_typekey: SparkPoints,
@@ -47,37 +46,26 @@ object SparkPoints {
     __obj.asInstanceOf[SparkPoints]
   }
   
-  @scala.inline
-  implicit class SparkPointsMutableBuilder[Self <: SparkPoints] (val x: Self) extends AnyVal {
+  extension [Self <: SparkPoints](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSparkPoints_typekey(value: SparkPoints): Self = StObject.set(x, "Excel.SparkPoints_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSparkPoints_typekey(value: SparkPoints): Self = StObject.set(x, "Excel.SparkPoints_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstpoint(value: SparkColor): Self = StObject.set(x, "Firstpoint", value.asInstanceOf[js.Any])
+    inline def setFirstpoint(value: SparkColor): Self = StObject.set(x, "Firstpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighpoint(value: SparkColor): Self = StObject.set(x, "Highpoint", value.asInstanceOf[js.Any])
+    inline def setHighpoint(value: SparkColor): Self = StObject.set(x, "Highpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastpoint(value: SparkColor): Self = StObject.set(x, "Lastpoint", value.asInstanceOf[js.Any])
+    inline def setLastpoint(value: SparkColor): Self = StObject.set(x, "Lastpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowpoint(value: SparkColor): Self = StObject.set(x, "Lowpoint", value.asInstanceOf[js.Any])
+    inline def setLowpoint(value: SparkColor): Self = StObject.set(x, "Lowpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkers(value: SparkColor): Self = StObject.set(x, "Markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: SparkColor): Self = StObject.set(x, "Markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegative(value: SparkColor): Self = StObject.set(x, "Negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: SparkColor): Self = StObject.set(x, "Negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

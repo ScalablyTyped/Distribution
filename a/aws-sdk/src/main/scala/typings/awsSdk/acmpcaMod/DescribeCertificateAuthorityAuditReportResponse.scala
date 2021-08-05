@@ -28,37 +28,27 @@ trait DescribeCertificateAuthorityAuditReportResponse extends StObject {
 }
 object DescribeCertificateAuthorityAuditReportResponse {
   
-  @scala.inline
-  def apply(): DescribeCertificateAuthorityAuditReportResponse = {
+  inline def apply(): DescribeCertificateAuthorityAuditReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCertificateAuthorityAuditReportResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCertificateAuthorityAuditReportResponseMutableBuilder[Self <: DescribeCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCertificateAuthorityAuditReportResponse](x: Self) {
     
-    @scala.inline
-    def setAuditReportStatus(value: AuditReportStatus): Self = StObject.set(x, "AuditReportStatus", value.asInstanceOf[js.Any])
+    inline def setAuditReportStatus(value: AuditReportStatus): Self = StObject.set(x, "AuditReportStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditReportStatusUndefined: Self = StObject.set(x, "AuditReportStatus", js.undefined)
+    inline def setAuditReportStatusUndefined: Self = StObject.set(x, "AuditReportStatus", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

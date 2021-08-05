@@ -14,16 +14,13 @@ trait FinalizeRequestHandlerOptions
 }
 object FinalizeRequestHandlerOptions {
   
-  @scala.inline
-  def apply(): FinalizeRequestHandlerOptions = {
+  inline def apply(): FinalizeRequestHandlerOptions = {
     val __obj = js.Dynamic.literal(step = "finalizeRequest")
     __obj.asInstanceOf[FinalizeRequestHandlerOptions]
   }
   
-  @scala.inline
-  implicit class FinalizeRequestHandlerOptionsMutableBuilder[Self <: FinalizeRequestHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FinalizeRequestHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setStep(value: finalizeRequest): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: finalizeRequest): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

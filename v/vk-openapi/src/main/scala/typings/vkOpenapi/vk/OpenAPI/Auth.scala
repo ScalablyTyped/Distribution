@@ -24,8 +24,7 @@ object Auth {
   }
   object API {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getLoginStatus: js.Function1[/* status */ LoginStatus, Unit] => Unit,
       getSession: js.Function1[/* session */ Session, Unit] => Unit,
       login: (js.Function1[/* status */ LoginStatus, Unit], Double) => Unit,
@@ -36,23 +35,17 @@ object Auth {
       __obj.asInstanceOf[API]
     }
     
-    @scala.inline
-    implicit class APIMutableBuilder[Self <: API] (val x: Self) extends AnyVal {
+    extension [Self <: API](x: Self) {
       
-      @scala.inline
-      def setGetLoginStatus(value: js.Function1[/* status */ LoginStatus, Unit] => Unit): Self = StObject.set(x, "getLoginStatus", js.Any.fromFunction1(value))
+      inline def setGetLoginStatus(value: js.Function1[/* status */ LoginStatus, Unit] => Unit): Self = StObject.set(x, "getLoginStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSession(value: js.Function1[/* session */ Session, Unit] => Unit): Self = StObject.set(x, "getSession", js.Any.fromFunction1(value))
+      inline def setGetSession(value: js.Function1[/* session */ Session, Unit] => Unit): Self = StObject.set(x, "getSession", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogin(value: (js.Function1[/* status */ LoginStatus, Unit], Double) => Unit): Self = StObject.set(x, "login", js.Any.fromFunction2(value))
+      inline def setLogin(value: (js.Function1[/* status */ LoginStatus, Unit], Double) => Unit): Self = StObject.set(x, "login", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLogout(value: js.Function1[/* status */ EmptyLoginStatus, Unit] => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
+      inline def setLogout(value: js.Function1[/* status */ EmptyLoginStatus, Unit] => Unit): Self = StObject.set(x, "logout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRevokeGrants(value: js.Function1[/* status */ EmptyLoginStatus, Unit] => Unit): Self = StObject.set(x, "revokeGrants", js.Any.fromFunction1(value))
+      inline def setRevokeGrants(value: js.Function1[/* status */ EmptyLoginStatus, Unit] => Unit): Self = StObject.set(x, "revokeGrants", js.Any.fromFunction1(value))
     }
   }
   
@@ -66,23 +59,18 @@ object Auth {
   }
   object EmptyLoginStatus {
     
-    @scala.inline
-    def apply(session: Null, settings: Unit): EmptyLoginStatus = {
+    inline def apply(session: Null, settings: Unit): EmptyLoginStatus = {
       val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], status = "unknown")
       __obj.asInstanceOf[EmptyLoginStatus]
     }
     
-    @scala.inline
-    implicit class EmptyLoginStatusMutableBuilder[Self <: EmptyLoginStatus] (val x: Self) extends AnyVal {
+    extension [Self <: EmptyLoginStatus](x: Self) {
       
-      @scala.inline
-      def setSession(value: Null): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Null): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: Unit): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Unit): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +82,16 @@ object Auth {
   }
   object LoginStatus {
     
-    @scala.inline
-    def apply(session: Session, status: connected | not_authorized | unknown): LoginStatus = {
+    inline def apply(session: Session, status: connected | not_authorized | unknown): LoginStatus = {
       val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoginStatus]
     }
     
-    @scala.inline
-    implicit class LoginStatusMutableBuilder[Self <: LoginStatus] (val x: Self) extends AnyVal {
+    extension [Self <: LoginStatus](x: Self) {
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: connected | not_authorized | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: connected | not_authorized | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,32 +111,24 @@ object Auth {
   }
   object Session {
     
-    @scala.inline
-    def apply(expire: Double, mid: Double, secret: String, sid: String, sig: String, user: Domain): Session = {
+    inline def apply(expire: Double, mid: Double, secret: String, sid: String, sig: String, user: Domain): Session = {
       val __obj = js.Dynamic.literal(expire = expire.asInstanceOf[js.Any], mid = mid.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], sig = sig.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMid(value: Double): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
+      inline def setMid(value: Double): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSig(value: String): Self = StObject.set(x, "sig", value.asInstanceOf[js.Any])
+      inline def setSig(value: String): Self = StObject.set(x, "sig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: Domain): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Domain): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

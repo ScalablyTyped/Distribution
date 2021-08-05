@@ -25,8 +25,7 @@ object anon {
   }
   object Check {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       check: js.Function1[/* items */ js.Array[MigrationTask], js.Any] => ^[js.Any],
       drop: () => ^[js.Any],
       execMigrations: MigrationOptions => ^[Unit],
@@ -38,26 +37,19 @@ object anon {
       __obj.asInstanceOf[Check]
     }
     
-    @scala.inline
-    implicit class CheckMutableBuilder[Self <: Check] (val x: Self) extends AnyVal {
+    extension [Self <: Check](x: Self) {
       
-      @scala.inline
-      def setCheck(value: js.Function1[/* items */ js.Array[MigrationTask], js.Any] => ^[js.Any]): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+      inline def setCheck(value: js.Function1[/* items */ js.Array[MigrationTask], js.Any] => ^[js.Any]): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDrop(value: () => ^[js.Any]): Self = StObject.set(x, "drop", js.Any.fromFunction0(value))
+      inline def setDrop(value: () => ^[js.Any]): Self = StObject.set(x, "drop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecMigrations(value: MigrationOptions => ^[Unit]): Self = StObject.set(x, "execMigrations", js.Any.fromFunction1(value))
+      inline def setExecMigrations(value: MigrationOptions => ^[Unit]): Self = StObject.set(x, "execMigrations", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMigrate(value: () => ^[js.Any]): Self = StObject.set(x, "migrate", js.Any.fromFunction0(value))
+      inline def setMigrate(value: () => ^[js.Any]): Self = StObject.set(x, "migrate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRun(value: () => ^[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => ^[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUndoLast(value: () => ^[js.Any]): Self = StObject.set(x, "undoLast", js.Any.fromFunction0(value))
+      inline def setUndoLast(value: () => ^[js.Any]): Self = StObject.set(x, "undoLast", js.Any.fromFunction0(value))
     }
   }
 }

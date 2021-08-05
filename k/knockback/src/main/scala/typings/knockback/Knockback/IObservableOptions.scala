@@ -45,79 +45,57 @@ trait IObservableOptions extends StObject {
 }
 object IObservableOptions {
   
-  @scala.inline
-  def apply(key: String): IObservableOptions = {
+  inline def apply(key: String): IObservableOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObservableOptions]
   }
   
-  @scala.inline
-  implicit class IObservableOptionsMutableBuilder[Self <: IObservableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IObservableOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(
+    inline def setArgs(
       value: js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any
         ]
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(
+    inline def setArgsVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any)*
     ): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setFactory(value: js.Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: js.Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+    inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizer(value: LocalizedObservable): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
+    inline def setLocalizer(value: LocalizedObservable): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizerUndefined: Self = StObject.set(x, "localizer", js.undefined)
+    inline def setLocalizerUndefined: Self = StObject.set(x, "localizer", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRead(value: () => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    @scala.inline
-    def setWrite(value: /* value */ js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: /* value */ js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

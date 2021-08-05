@@ -23,8 +23,7 @@ trait WorkItemRelationUpdates extends StObject {
 }
 object WorkItemRelationUpdates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     added: js.Array[WorkItemRelation],
     removed: js.Array[WorkItemRelation],
     updated: js.Array[WorkItemRelation]
@@ -33,25 +32,18 @@ object WorkItemRelationUpdates {
     __obj.asInstanceOf[WorkItemRelationUpdates]
   }
   
-  @scala.inline
-  implicit class WorkItemRelationUpdatesMutableBuilder[Self <: WorkItemRelationUpdates] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemRelationUpdates](x: Self) {
     
-    @scala.inline
-    def setAdded(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    inline def setAdded(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "added", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoved(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdated(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "updated", js.Array(value :_*))
+    inline def setUpdatedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "updated", js.Array(value :_*))
   }
 }

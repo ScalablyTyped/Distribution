@@ -16,8 +16,7 @@ trait ApiModel extends StObject {
 }
 object ApiModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any,
     operations: OperationMap,
     shapes: ShapeMap
@@ -26,24 +25,18 @@ object ApiModel {
     __obj.asInstanceOf[ApiModel]
   }
   
-  @scala.inline
-  implicit class ApiModelMutableBuilder[Self <: ApiModel] (val x: Self) extends AnyVal {
+  extension [Self <: ApiModel](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: java.lang.String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: java.lang.String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: OperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationMap): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapes(value: ShapeMap): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: ShapeMap): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
   }
 }

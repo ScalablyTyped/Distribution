@@ -12,19 +12,15 @@ trait PeekQueueMessagesOptions
 }
 object PeekQueueMessagesOptions {
   
-  @scala.inline
-  def apply(): PeekQueueMessagesOptions = {
+  inline def apply(): PeekQueueMessagesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PeekQueueMessagesOptions]
   }
   
-  @scala.inline
-  implicit class PeekQueueMessagesOptionsMutableBuilder[Self <: PeekQueueMessagesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PeekQueueMessagesOptions](x: Self) {
     
-    @scala.inline
-    def setNumofmessages(value: Double): Self = StObject.set(x, "numofmessages", value.asInstanceOf[js.Any])
+    inline def setNumofmessages(value: Double): Self = StObject.set(x, "numofmessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumofmessagesUndefined: Self = StObject.set(x, "numofmessages", js.undefined)
+    inline def setNumofmessagesUndefined: Self = StObject.set(x, "numofmessages", js.undefined)
   }
 }

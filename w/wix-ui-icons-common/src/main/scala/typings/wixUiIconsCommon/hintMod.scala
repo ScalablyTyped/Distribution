@@ -22,20 +22,16 @@ object hintMod extends Shortcut {
   }
   object HintProps {
     
-    @scala.inline
-    def apply(): HintProps = {
+    inline def apply(): HintProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HintProps]
     }
     
-    @scala.inline
-    implicit class HintPropsMutableBuilder[Self <: HintProps] (val x: Self) extends AnyVal {
+    extension [Self <: HintProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -14,22 +14,17 @@ trait Encoding extends StObject {
 }
 object Encoding {
   
-  @scala.inline
-  def apply(charToGlyphIndex: String => Double, charset: String, font: Font): Encoding = {
+  inline def apply(charToGlyphIndex: String => Double, charset: String, font: Font): Encoding = {
     val __obj = js.Dynamic.literal(charToGlyphIndex = js.Any.fromFunction1(charToGlyphIndex), charset = charset.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encoding]
   }
   
-  @scala.inline
-  implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+  extension [Self <: Encoding](x: Self) {
     
-    @scala.inline
-    def setCharToGlyphIndex(value: String => Double): Self = StObject.set(x, "charToGlyphIndex", js.Any.fromFunction1(value))
+    inline def setCharToGlyphIndex(value: String => Double): Self = StObject.set(x, "charToGlyphIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
   }
 }

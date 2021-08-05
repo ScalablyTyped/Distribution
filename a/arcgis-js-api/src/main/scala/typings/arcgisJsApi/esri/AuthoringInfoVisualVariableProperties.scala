@@ -86,69 +86,49 @@ trait AuthoringInfoVisualVariableProperties extends StObject {
 }
 object AuthoringInfoVisualVariableProperties {
   
-  @scala.inline
-  def apply(): AuthoringInfoVisualVariableProperties = {
+  inline def apply(): AuthoringInfoVisualVariableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthoringInfoVisualVariableProperties]
   }
   
-  @scala.inline
-  implicit class AuthoringInfoVisualVariablePropertiesMutableBuilder[Self <: AuthoringInfoVisualVariableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AuthoringInfoVisualVariableProperties](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setMaxSliderValue(value: Double): Self = StObject.set(x, "maxSliderValue", value.asInstanceOf[js.Any])
+    inline def setMaxSliderValue(value: Double): Self = StObject.set(x, "maxSliderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSliderValueUndefined: Self = StObject.set(x, "maxSliderValue", js.undefined)
+    inline def setMaxSliderValueUndefined: Self = StObject.set(x, "maxSliderValue", js.undefined)
     
-    @scala.inline
-    def setMinSliderValue(value: Double): Self = StObject.set(x, "minSliderValue", value.asInstanceOf[js.Any])
+    inline def setMinSliderValue(value: Double): Self = StObject.set(x, "minSliderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSliderValueUndefined: Self = StObject.set(x, "minSliderValue", js.undefined)
+    inline def setMinSliderValueUndefined: Self = StObject.set(x, "minSliderValue", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStyle(value: percent | `percent-of-total` | ratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: percent | `percent-of-total` | ratio): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTheme(value: `above-and-below` | `centered-on` | extremes | `high-to-low`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `above-and-below` | `centered-on` | extremes | `high-to-low`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: typings.arcgisJsApi.arcgisJsApiStrings.color | typings.arcgisJsApi.arcgisJsApiStrings.size | typings.arcgisJsApi.arcgisJsApiStrings.opacity
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnits(value: seconds | minutes | hours | days | months | years): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: seconds | minutes | hours | days | months | years): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

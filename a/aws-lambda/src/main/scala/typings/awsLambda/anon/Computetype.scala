@@ -23,8 +23,7 @@ trait Computetype extends StObject {
 }
 object Computetype {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `compute-type`: CodeBuildEnvironmentComputeType,
     `environment-variables`: js.Array[Name],
     image: String,
@@ -39,31 +38,22 @@ object Computetype {
     __obj.asInstanceOf[Computetype]
   }
   
-  @scala.inline
-  implicit class ComputetypeMutableBuilder[Self <: Computetype] (val x: Self) extends AnyVal {
+  extension [Self <: Computetype](x: Self) {
     
-    @scala.inline
-    def `setCompute-type`(value: CodeBuildEnvironmentComputeType): Self = StObject.set(x, "compute-type", value.asInstanceOf[js.Any])
+    inline def `setCompute-type`(value: CodeBuildEnvironmentComputeType): Self = StObject.set(x, "compute-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEnvironment-variables`(value: js.Array[Name]): Self = StObject.set(x, "environment-variables", value.asInstanceOf[js.Any])
+    inline def `setEnvironment-variables`(value: js.Array[Name]): Self = StObject.set(x, "environment-variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEnvironment-variablesVarargs`(value: Name*): Self = StObject.set(x, "environment-variables", js.Array(value :_*))
+    inline def `setEnvironment-variablesVarargs`(value: Name*): Self = StObject.set(x, "environment-variables", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setImage-pull-credentials-type`(value: CodeBuildEnvironmentPullCredentialsType): Self = StObject.set(x, "image-pull-credentials-type", value.asInstanceOf[js.Any])
+    inline def `setImage-pull-credentials-type`(value: CodeBuildEnvironmentPullCredentialsType): Self = StObject.set(x, "image-pull-credentials-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setImage-pull-credentials-typeUndefined`: Self = StObject.set(x, "image-pull-credentials-type", js.undefined)
+    inline def `setImage-pull-credentials-typeUndefined`: Self = StObject.set(x, "image-pull-credentials-type", js.undefined)
     
-    @scala.inline
-    def `setPrivileged-mode`(value: Boolean): Self = StObject.set(x, "privileged-mode", value.asInstanceOf[js.Any])
+    inline def `setPrivileged-mode`(value: Boolean): Self = StObject.set(x, "privileged-mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CodeBuildEnvironmentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeBuildEnvironmentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

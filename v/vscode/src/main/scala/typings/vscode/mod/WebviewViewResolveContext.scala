@@ -44,19 +44,15 @@ trait WebviewViewResolveContext[T] extends StObject {
 }
 object WebviewViewResolveContext {
   
-  @scala.inline
-  def apply[T](): WebviewViewResolveContext[T] = {
+  inline def apply[T](): WebviewViewResolveContext[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebviewViewResolveContext[T]]
   }
   
-  @scala.inline
-  implicit class WebviewViewResolveContextMutableBuilder[Self <: WebviewViewResolveContext[?], T] (val x: Self & WebviewViewResolveContext[T]) extends AnyVal {
+  extension [Self <: WebviewViewResolveContext[?], T](x: Self & WebviewViewResolveContext[T]) {
     
-    @scala.inline
-    def setState(value: T): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: T): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

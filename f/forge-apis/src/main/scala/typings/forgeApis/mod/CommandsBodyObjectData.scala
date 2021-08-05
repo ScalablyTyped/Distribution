@@ -14,23 +14,18 @@ trait CommandsBodyObjectData extends StObject {
 }
 object CommandsBodyObjectData {
   
-  @scala.inline
-  def apply(attributes: CommandsAttributesObject, relationships: CommandsRelationshipsObject, `type`: String): CommandsBodyObjectData = {
+  inline def apply(attributes: CommandsAttributesObject, relationships: CommandsRelationshipsObject, `type`: String): CommandsBodyObjectData = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], relationships = relationships.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandsBodyObjectData]
   }
   
-  @scala.inline
-  implicit class CommandsBodyObjectDataMutableBuilder[Self <: CommandsBodyObjectData] (val x: Self) extends AnyVal {
+  extension [Self <: CommandsBodyObjectData](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: CommandsAttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: CommandsAttributesObject): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationships(value: CommandsRelationshipsObject): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: CommandsRelationshipsObject): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

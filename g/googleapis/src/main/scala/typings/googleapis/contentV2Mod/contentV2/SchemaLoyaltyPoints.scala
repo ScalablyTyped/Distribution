@@ -26,31 +26,23 @@ trait SchemaLoyaltyPoints extends StObject {
 }
 object SchemaLoyaltyPoints {
   
-  @scala.inline
-  def apply(): SchemaLoyaltyPoints = {
+  inline def apply(): SchemaLoyaltyPoints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLoyaltyPoints]
   }
   
-  @scala.inline
-  implicit class SchemaLoyaltyPointsMutableBuilder[Self <: SchemaLoyaltyPoints] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLoyaltyPoints](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPointsValue(value: String): Self = StObject.set(x, "pointsValue", value.asInstanceOf[js.Any])
+    inline def setPointsValue(value: String): Self = StObject.set(x, "pointsValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsValueUndefined: Self = StObject.set(x, "pointsValue", js.undefined)
+    inline def setPointsValueUndefined: Self = StObject.set(x, "pointsValue", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
   }
 }

@@ -23,22 +23,17 @@ trait DisassociateLexBotRequest extends StObject {
 }
 object DisassociateLexBotRequest {
   
-  @scala.inline
-  def apply(BotName: BotName, InstanceId: InstanceId, LexRegion: LexRegion): DisassociateLexBotRequest = {
+  inline def apply(BotName: BotName, InstanceId: InstanceId, LexRegion: LexRegion): DisassociateLexBotRequest = {
     val __obj = js.Dynamic.literal(BotName = BotName.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], LexRegion = LexRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateLexBotRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateLexBotRequestMutableBuilder[Self <: DisassociateLexBotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateLexBotRequest](x: Self) {
     
-    @scala.inline
-    def setBotName(value: BotName): Self = StObject.set(x, "BotName", value.asInstanceOf[js.Any])
+    inline def setBotName(value: BotName): Self = StObject.set(x, "BotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexRegion(value: LexRegion): Self = StObject.set(x, "LexRegion", value.asInstanceOf[js.Any])
+    inline def setLexRegion(value: LexRegion): Self = StObject.set(x, "LexRegion", value.asInstanceOf[js.Any])
   }
 }

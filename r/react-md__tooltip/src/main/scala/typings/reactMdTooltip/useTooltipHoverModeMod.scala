@@ -23,17 +23,13 @@ object useTooltipHoverModeMod {
   @js.native
   val HoverModeEnabled: Context[Boolean] = js.native
   
-  @scala.inline
-  def useTooltipHoverModeActions(): HoverModeActionsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeActions")().asInstanceOf[HoverModeActionsContext]
+  inline def useTooltipHoverModeActions(): HoverModeActionsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeActions")().asInstanceOf[HoverModeActionsContext]
   
-  @scala.inline
-  def useTooltipHoverModeDelay(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeDelay")().asInstanceOf[Double]
+  inline def useTooltipHoverModeDelay(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeDelay")().asInstanceOf[Double]
   
-  @scala.inline
-  def useTooltipHoverModeEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeEnabled")().asInstanceOf[Boolean]
+  inline def useTooltipHoverModeEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeEnabled")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def useTooltipHoverModeState(defaultDelay: Double, delayTimeout: Double): TooltipHoverModeState = (^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeState")(defaultDelay.asInstanceOf[js.Any], delayTimeout.asInstanceOf[js.Any])).asInstanceOf[TooltipHoverModeState]
+  inline def useTooltipHoverModeState(defaultDelay: Double, delayTimeout: Double): TooltipHoverModeState = (^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeState")(defaultDelay.asInstanceOf[js.Any], delayTimeout.asInstanceOf[js.Any])).asInstanceOf[TooltipHoverModeState]
   
   trait HoverModeActionsContext extends StObject {
     
@@ -43,20 +39,16 @@ object useTooltipHoverModeMod {
   }
   object HoverModeActionsContext {
     
-    @scala.inline
-    def apply(enable: () => Unit, startDisableTimer: () => Unit): HoverModeActionsContext = {
+    inline def apply(enable: () => Unit, startDisableTimer: () => Unit): HoverModeActionsContext = {
       val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), startDisableTimer = js.Any.fromFunction0(startDisableTimer))
       __obj.asInstanceOf[HoverModeActionsContext]
     }
     
-    @scala.inline
-    implicit class HoverModeActionsContextMutableBuilder[Self <: HoverModeActionsContext] (val x: Self) extends AnyVal {
+    extension [Self <: HoverModeActionsContext](x: Self) {
       
-      @scala.inline
-      def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartDisableTimer(value: () => Unit): Self = StObject.set(x, "startDisableTimer", js.Any.fromFunction0(value))
+      inline def setStartDisableTimer(value: () => Unit): Self = StObject.set(x, "startDisableTimer", js.Any.fromFunction0(value))
     }
   }
   
@@ -84,23 +76,18 @@ object useTooltipHoverModeMod {
   }
   object TooltipHoverModeState {
     
-    @scala.inline
-    def apply(delay: Double, enable: () => Unit, startDisableTimer: () => Unit): TooltipHoverModeState = {
+    inline def apply(delay: Double, enable: () => Unit, startDisableTimer: () => Unit): TooltipHoverModeState = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], enable = js.Any.fromFunction0(enable), startDisableTimer = js.Any.fromFunction0(startDisableTimer))
       __obj.asInstanceOf[TooltipHoverModeState]
     }
     
-    @scala.inline
-    implicit class TooltipHoverModeStateMutableBuilder[Self <: TooltipHoverModeState] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipHoverModeState](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartDisableTimer(value: () => Unit): Self = StObject.set(x, "startDisableTimer", js.Any.fromFunction0(value))
+      inline def setStartDisableTimer(value: () => Unit): Self = StObject.set(x, "startDisableTimer", js.Any.fromFunction0(value))
     }
   }
 }

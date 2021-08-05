@@ -25,61 +25,43 @@ trait WebExtensionManifestCommandsSuggestedKey extends StObject {
 }
 object WebExtensionManifestCommandsSuggestedKey {
   
-  @scala.inline
-  def apply(): WebExtensionManifestCommandsSuggestedKey = {
+  inline def apply(): WebExtensionManifestCommandsSuggestedKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionManifestCommandsSuggestedKey]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestCommandsSuggestedKeyMutableBuilder[Self <: WebExtensionManifestCommandsSuggestedKey] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestCommandsSuggestedKey](x: Self) {
     
-    @scala.inline
-    def setAdditionalProperties(value: String): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperties(value: String): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+    inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
-    @scala.inline
-    def setAndroid(value: String): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: String): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+    inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
-    @scala.inline
-    def setChromeos(value: String): Self = StObject.set(x, "chromeos", value.asInstanceOf[js.Any])
+    inline def setChromeos(value: String): Self = StObject.set(x, "chromeos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromeosUndefined: Self = StObject.set(x, "chromeos", js.undefined)
+    inline def setChromeosUndefined: Self = StObject.set(x, "chromeos", js.undefined)
     
-    @scala.inline
-    def setDefault(value: KeyName): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: KeyName): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: String): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     
-    @scala.inline
-    def setLinux(value: KeyName): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
+    inline def setLinux(value: KeyName): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
+    inline def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
     
-    @scala.inline
-    def setMac(value: KeyName): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: KeyName): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+    inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
-    @scala.inline
-    def setWindows(value: KeyName): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: KeyName): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
+    inline def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
   }
 }

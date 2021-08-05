@@ -30,43 +30,31 @@ trait ReadonlySharedStylePropsA extends StObject {
 }
 object ReadonlySharedStylePropsA {
   
-  @scala.inline
-  def apply(): ReadonlySharedStylePropsA = {
+  inline def apply(): ReadonlySharedStylePropsA = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlySharedStylePropsA]
   }
   
-  @scala.inline
-  implicit class ReadonlySharedStylePropsAMutableBuilder[Self <: ReadonlySharedStylePropsA] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlySharedStylePropsA](x: Self) {
     
-    @scala.inline
-    def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
+    inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
+    inline def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
     
-    @scala.inline
-    def set$isRendered(value: Boolean): Self = StObject.set(x, "$isRendered", value.asInstanceOf[js.Any])
+    inline def set$isRendered(value: Boolean): Self = StObject.set(x, "$isRendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isRenderedUndefined: Self = StObject.set(x, "$isRendered", js.undefined)
+    inline def set$isRenderedUndefined: Self = StObject.set(x, "$isRendered", js.undefined)
     
-    @scala.inline
-    def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
+    inline def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
+    inline def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
     
-    @scala.inline
-    def set$kind(value: info | positive | warning | negative): Self = StObject.set(x, "$kind", value.asInstanceOf[js.Any])
+    inline def set$kind(value: info | positive | warning | negative): Self = StObject.set(x, "$kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$kindUndefined: Self = StObject.set(x, "$kind", js.undefined)
+    inline def set$kindUndefined: Self = StObject.set(x, "$kind", js.undefined)
     
-    @scala.inline
-    def set$type(value: `inline` | toast): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+    inline def set$type(value: `inline` | toast): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
+    inline def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
   }
 }

@@ -9,13 +9,11 @@ object mergerinoStrings {
   
   @js.native
   sealed trait ObjectPatch extends StObject
-  @scala.inline
-  def ObjectPatch: ObjectPatch = "ObjectPatch".asInstanceOf[ObjectPatch]
+  inline def ObjectPatch: ObjectPatch = "ObjectPatch".asInstanceOf[ObjectPatch]
   
   @js.native
   sealed trait _empty
     extends StObject
        with _Falsy
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
 }

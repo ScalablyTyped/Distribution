@@ -22,20 +22,16 @@ object webTwainUtilMod {
   }
   object Authorization {
     
-    @scala.inline
-    def apply(Detail: js.Any, Domain: String): Authorization = {
+    inline def apply(Detail: js.Any, Domain: String): Authorization = {
       val __obj = js.Dynamic.literal(Detail = Detail.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any])
       __obj.asInstanceOf[Authorization]
     }
     
-    @scala.inline
-    implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
+    extension [Self <: Authorization](x: Self) {
       
-      @scala.inline
-      def setDetail(value: js.Any): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: js.Any): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     }
   }
   

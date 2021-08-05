@@ -19,8 +19,7 @@ trait AbstractContainer
 }
 object AbstractContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[AbstractBase],
     name: String,
@@ -31,19 +30,14 @@ object AbstractContainer {
     __obj.asInstanceOf[AbstractContainer]
   }
   
-  @scala.inline
-  implicit class AbstractContainerMutableBuilder[Self <: AbstractContainer] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractContainer](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[AbstractBase]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[AbstractBase]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: AbstractBase*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: AbstractBase*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+    inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
   }
 }

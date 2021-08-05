@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Preload extends StObject
 object Preload {
   
-  @scala.inline
-  def auto: typings.dplayer.dplayerStrings.auto = "auto".asInstanceOf[typings.dplayer.dplayerStrings.auto]
+  inline def auto: typings.dplayer.dplayerStrings.auto = "auto".asInstanceOf[typings.dplayer.dplayerStrings.auto]
   
-  @scala.inline
-  def metadata: typings.dplayer.dplayerStrings.metadata = "metadata".asInstanceOf[typings.dplayer.dplayerStrings.metadata]
+  inline def metadata: typings.dplayer.dplayerStrings.metadata = "metadata".asInstanceOf[typings.dplayer.dplayerStrings.metadata]
   
-  @scala.inline
-  def none: typings.dplayer.dplayerStrings.none = "none".asInstanceOf[typings.dplayer.dplayerStrings.none]
+  inline def none: typings.dplayer.dplayerStrings.none = "none".asInstanceOf[typings.dplayer.dplayerStrings.none]
 }

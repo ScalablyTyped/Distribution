@@ -47,8 +47,7 @@ trait Modifier extends StObject {
 }
 object Modifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignSubNotesWithNote: (js.Array[Note], Note) => Unit,
     draw: () => Unit,
     getCategory: () => String,
@@ -99,61 +98,42 @@ object Modifier {
          with Position
   }
   
-  @scala.inline
-  implicit class ModifierMutableBuilder[Self <: Modifier] (val x: Self) extends AnyVal {
+  extension [Self <: Modifier](x: Self) {
     
-    @scala.inline
-    def setAlignSubNotesWithNote(value: (js.Array[Note], Note) => Unit): Self = StObject.set(x, "alignSubNotesWithNote", js.Any.fromFunction2(value))
+    inline def setAlignSubNotesWithNote(value: (js.Array[Note], Note) => Unit): Self = StObject.set(x, "alignSubNotesWithNote", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
+    inline def setGetCategory(value: () => String): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+    inline def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModifierContext(value: () => ModifierContext): Self = StObject.set(x, "getModifierContext", js.Any.fromFunction0(value))
+    inline def setGetModifierContext(value: () => ModifierContext): Self = StObject.set(x, "getModifierContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNote(value: () => Note): Self = StObject.set(x, "getNote", js.Any.fromFunction0(value))
+    inline def setGetNote(value: () => Note): Self = StObject.set(x, "getNote", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Position): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Position): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => Modifier): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => Modifier): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIndex(value: Double => Modifier): Self = StObject.set(x, "setIndex", js.Any.fromFunction1(value))
+    inline def setSetIndex(value: Double => Modifier): Self = StObject.set(x, "setIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetModifierContext(value: ModifierContext => Modifier): Self = StObject.set(x, "setModifierContext", js.Any.fromFunction1(value))
+    inline def setSetModifierContext(value: ModifierContext => Modifier): Self = StObject.set(x, "setModifierContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNote(value: Note => Modifier): Self = StObject.set(x, "setNote", js.Any.fromFunction1(value))
+    inline def setSetNote(value: Note => Modifier): Self = StObject.set(x, "setNote", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosition(value: Position => Modifier): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
+    inline def setSetPosition(value: Position => Modifier): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTextLine(value: Double => Modifier): Self = StObject.set(x, "setTextLine", js.Any.fromFunction1(value))
+    inline def setSetTextLine(value: Double => Modifier): Self = StObject.set(x, "setTextLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWidth(value: Double => Modifier): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: Double => Modifier): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetXShift(value: Double => Unit): Self = StObject.set(x, "setXShift", js.Any.fromFunction1(value))
+    inline def setSetXShift(value: Double => Unit): Self = StObject.set(x, "setXShift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetYShift(value: Double => Modifier): Self = StObject.set(x, "setYShift", js.Any.fromFunction1(value))
+    inline def setSetYShift(value: Double => Modifier): Self = StObject.set(x, "setYShift", js.Any.fromFunction1(value))
   }
 }

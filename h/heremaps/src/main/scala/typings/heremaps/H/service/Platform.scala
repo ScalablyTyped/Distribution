@@ -160,56 +160,40 @@ object Platform {
   }
   object DefaultLayersOptions {
     
-    @scala.inline
-    def apply(): DefaultLayersOptions = {
+    inline def apply(): DefaultLayersOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultLayersOptions]
     }
     
-    @scala.inline
-    implicit class DefaultLayersOptionsMutableBuilder[Self <: DefaultLayersOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultLayersOptions](x: Self) {
       
-      @scala.inline
-      def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLg2(value: String): Self = StObject.set(x, "lg2", value.asInstanceOf[js.Any])
+      inline def setLg2(value: String): Self = StObject.set(x, "lg2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLg2Undefined: Self = StObject.set(x, "lg2", js.undefined)
+      inline def setLg2Undefined: Self = StObject.set(x, "lg2", js.undefined)
       
-      @scala.inline
-      def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
       
-      @scala.inline
-      def setPois(value: Boolean): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
+      inline def setPois(value: Boolean): Self = StObject.set(x, "pois", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoisUndefined: Self = StObject.set(x, "pois", js.undefined)
+      inline def setPoisUndefined: Self = StObject.set(x, "pois", js.undefined)
       
-      @scala.inline
-      def setPpi(value: Double): Self = StObject.set(x, "ppi", value.asInstanceOf[js.Any])
+      inline def setPpi(value: Double): Self = StObject.set(x, "ppi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPpiUndefined: Self = StObject.set(x, "ppi", js.undefined)
+      inline def setPpiUndefined: Self = StObject.set(x, "ppi", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+      inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+      inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     }
   }
   
@@ -228,32 +212,24 @@ object Platform {
   }
   object MapTypes {
     
-    @scala.inline
-    def apply(): MapTypes = {
+    inline def apply(): MapTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapTypes]
     }
     
-    @scala.inline
-    implicit class MapTypesMutableBuilder[Self <: MapTypes] (val x: Self) extends AnyVal {
+    extension [Self <: MapTypes](x: Self) {
       
-      @scala.inline
-      def setNormal(value: MapType): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+      inline def setNormal(value: MapType): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+      inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
       
-      @scala.inline
-      def setSatellite(value: MapType): Self = StObject.set(x, "satellite", value.asInstanceOf[js.Any])
+      inline def setSatellite(value: MapType): Self = StObject.set(x, "satellite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSatelliteUndefined: Self = StObject.set(x, "satellite", js.undefined)
+      inline def setSatelliteUndefined: Self = StObject.set(x, "satellite", js.undefined)
       
-      @scala.inline
-      def setTerrain(value: MapType): Self = StObject.set(x, "terrain", value.asInstanceOf[js.Any])
+      inline def setTerrain(value: MapType): Self = StObject.set(x, "terrain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerrainUndefined: Self = StObject.set(x, "terrain", js.undefined)
+      inline def setTerrainUndefined: Self = StObject.set(x, "terrain", js.undefined)
     }
   }
   
@@ -276,35 +252,26 @@ object Platform {
   }
   object Options {
     
-    @scala.inline
-    def apply(apikey: String): typings.heremaps.H.service.Platform.Options = {
+    inline def apply(apikey: String): typings.heremaps.H.service.Platform.Options = {
       val __obj = js.Dynamic.literal(apikey = apikey.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.heremaps.H.service.Platform.Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: typings.heremaps.H.service.Platform.Options] (val x: Self) extends AnyVal {
+    extension [Self <: typings.heremaps.H.service.Platform.Options](x: Self) {
       
-      @scala.inline
-      def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
+      inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrl(value: Url): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: Url): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setUseCIT(value: Boolean): Self = StObject.set(x, "useCIT", value.asInstanceOf[js.Any])
+      inline def setUseCIT(value: Boolean): Self = StObject.set(x, "useCIT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCITUndefined: Self = StObject.set(x, "useCIT", js.undefined)
+      inline def setUseCITUndefined: Self = StObject.set(x, "useCIT", js.undefined)
       
-      @scala.inline
-      def setUseHTTPS(value: Boolean): Self = StObject.set(x, "useHTTPS", value.asInstanceOf[js.Any])
+      inline def setUseHTTPS(value: Boolean): Self = StObject.set(x, "useHTTPS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHTTPSUndefined: Self = StObject.set(x, "useHTTPS", js.undefined)
+      inline def setUseHTTPSUndefined: Self = StObject.set(x, "useHTTPS", js.undefined)
     }
   }
 }

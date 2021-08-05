@@ -11,19 +11,15 @@ trait Discovery extends StObject {
 }
 object Discovery {
   
-  @scala.inline
-  def apply(): Discovery = {
+  inline def apply(): Discovery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Discovery]
   }
   
-  @scala.inline
-  implicit class DiscoveryMutableBuilder[Self <: Discovery] (val x: Self) extends AnyVal {
+  extension [Self <: Discovery](x: Self) {
     
-    @scala.inline
-    def setAnalysisKind(value: String): Self = StObject.set(x, "analysisKind", value.asInstanceOf[js.Any])
+    inline def setAnalysisKind(value: String): Self = StObject.set(x, "analysisKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisKindUndefined: Self = StObject.set(x, "analysisKind", js.undefined)
+    inline def setAnalysisKindUndefined: Self = StObject.set(x, "analysisKind", js.undefined)
   }
 }

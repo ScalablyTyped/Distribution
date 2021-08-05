@@ -105,73 +105,51 @@ trait LinkedDataTypeCollectionLoadOptions extends StObject {
 }
 object LinkedDataTypeCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): LinkedDataTypeCollectionLoadOptions = {
+  inline def apply(): LinkedDataTypeCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkedDataTypeCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class LinkedDataTypeCollectionLoadOptionsMutableBuilder[Self <: LinkedDataTypeCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedDataTypeCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setDataProvider(value: Boolean): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
+    inline def setDataProvider(value: Boolean): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataProviderUndefined: Self = StObject.set(x, "dataProvider", js.undefined)
+    inline def setDataProviderUndefined: Self = StObject.set(x, "dataProvider", js.undefined)
     
-    @scala.inline
-    def setFontIconCodePoint(value: Boolean): Self = StObject.set(x, "fontIconCodePoint", value.asInstanceOf[js.Any])
+    inline def setFontIconCodePoint(value: Boolean): Self = StObject.set(x, "fontIconCodePoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontIconCodePointUndefined: Self = StObject.set(x, "fontIconCodePoint", js.undefined)
+    inline def setFontIconCodePointUndefined: Self = StObject.set(x, "fontIconCodePoint", js.undefined)
     
-    @scala.inline
-    def setLastRefreshed(value: Boolean): Self = StObject.set(x, "lastRefreshed", value.asInstanceOf[js.Any])
+    inline def setLastRefreshed(value: Boolean): Self = StObject.set(x, "lastRefreshed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshedUndefined: Self = StObject.set(x, "lastRefreshed", js.undefined)
+    inline def setLastRefreshedUndefined: Self = StObject.set(x, "lastRefreshed", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPeriodicRefreshInterval(value: Boolean): Self = StObject.set(x, "periodicRefreshInterval", value.asInstanceOf[js.Any])
+    inline def setPeriodicRefreshInterval(value: Boolean): Self = StObject.set(x, "periodicRefreshInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodicRefreshIntervalUndefined: Self = StObject.set(x, "periodicRefreshInterval", js.undefined)
+    inline def setPeriodicRefreshIntervalUndefined: Self = StObject.set(x, "periodicRefreshInterval", js.undefined)
     
-    @scala.inline
-    def setRefreshDataLoadWarnings(value: Boolean): Self = StObject.set(x, "refreshDataLoadWarnings", value.asInstanceOf[js.Any])
+    inline def setRefreshDataLoadWarnings(value: Boolean): Self = StObject.set(x, "refreshDataLoadWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshDataLoadWarningsUndefined: Self = StObject.set(x, "refreshDataLoadWarnings", js.undefined)
+    inline def setRefreshDataLoadWarningsUndefined: Self = StObject.set(x, "refreshDataLoadWarnings", js.undefined)
     
-    @scala.inline
-    def setRefreshMode(value: Boolean): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
+    inline def setRefreshMode(value: Boolean): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshModeUndefined: Self = StObject.set(x, "refreshMode", js.undefined)
+    inline def setRefreshModeUndefined: Self = StObject.set(x, "refreshMode", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: Boolean): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: Boolean): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
-    @scala.inline
-    def setSupportedRefreshModes(value: Boolean): Self = StObject.set(x, "supportedRefreshModes", value.asInstanceOf[js.Any])
+    inline def setSupportedRefreshModes(value: Boolean): Self = StObject.set(x, "supportedRefreshModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedRefreshModesUndefined: Self = StObject.set(x, "supportedRefreshModes", js.undefined)
+    inline def setSupportedRefreshModesUndefined: Self = StObject.set(x, "supportedRefreshModes", js.undefined)
   }
 }

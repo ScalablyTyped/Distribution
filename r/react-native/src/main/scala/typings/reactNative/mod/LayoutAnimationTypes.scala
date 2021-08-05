@@ -20,8 +20,7 @@ trait LayoutAnimationTypes extends StObject {
 }
 object LayoutAnimationTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     easeIn: String,
     easeInEaseOut: String,
     easeOut: String,
@@ -33,25 +32,18 @@ object LayoutAnimationTypes {
     __obj.asInstanceOf[LayoutAnimationTypes]
   }
   
-  @scala.inline
-  implicit class LayoutAnimationTypesMutableBuilder[Self <: LayoutAnimationTypes] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutAnimationTypes](x: Self) {
     
-    @scala.inline
-    def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
+    inline def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEaseInEaseOut(value: String): Self = StObject.set(x, "easeInEaseOut", value.asInstanceOf[js.Any])
+    inline def setEaseInEaseOut(value: String): Self = StObject.set(x, "easeInEaseOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
+    inline def setEaseOut(value: String): Self = StObject.set(x, "easeOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboard(value: String): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: String): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinear(value: String): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
+    inline def setLinear(value: String): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpring(value: String): Self = StObject.set(x, "spring", value.asInstanceOf[js.Any])
+    inline def setSpring(value: String): Self = StObject.set(x, "spring", value.asInstanceOf[js.Any])
   }
 }

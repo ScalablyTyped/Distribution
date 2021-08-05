@@ -68,85 +68,59 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(): Region = {
+  inline def apply(): Region = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
+    inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteLengthUndefined: Self = StObject.set(x, "byteLength", js.undefined)
+    inline def setByteLengthUndefined: Self = StObject.set(x, "byteLength", js.undefined)
     
-    @scala.inline
-    def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
+    inline def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteOffsetUndefined: Self = StObject.set(x, "byteOffset", js.undefined)
+    inline def setByteOffsetUndefined: Self = StObject.set(x, "byteOffset", js.undefined)
     
-    @scala.inline
-    def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
+    inline def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharLengthUndefined: Self = StObject.set(x, "charLength", js.undefined)
+    inline def setCharLengthUndefined: Self = StObject.set(x, "charLength", js.undefined)
     
-    @scala.inline
-    def setCharOffset(value: Double): Self = StObject.set(x, "charOffset", value.asInstanceOf[js.Any])
+    inline def setCharOffset(value: Double): Self = StObject.set(x, "charOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharOffsetUndefined: Self = StObject.set(x, "charOffset", js.undefined)
+    inline def setCharOffsetUndefined: Self = StObject.set(x, "charOffset", js.undefined)
     
-    @scala.inline
-    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
+    inline def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
     
-    @scala.inline
-    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
+    inline def setEndLineUndefined: Self = StObject.set(x, "endLine", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: ArtifactContent): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: ArtifactContent): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setSourceLanguage(value: String): Self = StObject.set(x, "sourceLanguage", value.asInstanceOf[js.Any])
+    inline def setSourceLanguage(value: String): Self = StObject.set(x, "sourceLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLanguageUndefined: Self = StObject.set(x, "sourceLanguage", js.undefined)
+    inline def setSourceLanguageUndefined: Self = StObject.set(x, "sourceLanguage", js.undefined)
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
+    inline def setStartColumnUndefined: Self = StObject.set(x, "startColumn", js.undefined)
     
-    @scala.inline
-    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
+    inline def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
   }
 }

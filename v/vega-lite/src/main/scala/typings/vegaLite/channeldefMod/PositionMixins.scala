@@ -31,31 +31,23 @@ trait PositionMixins extends StObject {
 }
 object PositionMixins {
   
-  @scala.inline
-  def apply(): PositionMixins = {
+  inline def apply(): PositionMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositionMixins]
   }
   
-  @scala.inline
-  implicit class PositionMixinsMutableBuilder[Self <: PositionMixins] (val x: Self) extends AnyVal {
+  extension [Self <: PositionMixins](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Axis[ExprRef | SignalRef]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Axis[ExprRef | SignalRef]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisNull: Self = StObject.set(x, "axis", null)
+    inline def setAxisNull: Self = StObject.set(x, "axis", null)
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setImpute(value: ImputeParams): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
+    inline def setImpute(value: ImputeParams): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImputeNull: Self = StObject.set(x, "impute", null)
+    inline def setImputeNull: Self = StObject.set(x, "impute", null)
     
-    @scala.inline
-    def setImputeUndefined: Self = StObject.set(x, "impute", js.undefined)
+    inline def setImputeUndefined: Self = StObject.set(x, "impute", js.undefined)
   }
 }

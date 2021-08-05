@@ -26,8 +26,7 @@ trait StaveTie extends StObject {
 }
 object StaveTie {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     draw: () => Boolean,
     isPartial: () => Boolean,
     renderText: (Double, Double) => Unit,
@@ -40,28 +39,20 @@ object StaveTie {
     __obj.asInstanceOf[StaveTie]
   }
   
-  @scala.inline
-  implicit class StaveTieMutableBuilder[Self <: StaveTie] (val x: Self) extends AnyVal {
+  extension [Self <: StaveTie](x: Self) {
     
-    @scala.inline
-    def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPartial(value: () => Boolean): Self = StObject.set(x, "isPartial", js.Any.fromFunction0(value))
+    inline def setIsPartial(value: () => Boolean): Self = StObject.set(x, "isPartial", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderText(value: (Double, Double) => Unit): Self = StObject.set(x, "renderText", js.Any.fromFunction2(value))
+    inline def setRenderText(value: (Double, Double) => Unit): Self = StObject.set(x, "renderText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderTie(value: Firstxpx => Unit): Self = StObject.set(x, "renderTie", js.Any.fromFunction1(value))
+    inline def setRenderTie(value: Firstxpx => Unit): Self = StObject.set(x, "renderTie", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => StaveTie): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => StaveTie): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFont(value: Family => StaveTie): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
+    inline def setSetFont(value: Family => StaveTie): Self = StObject.set(x, "setFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNotes(value: Lastindices => StaveTie): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
+    inline def setSetNotes(value: Lastindices => StaveTie): Self = StObject.set(x, "setNotes", js.Any.fromFunction1(value))
   }
 }

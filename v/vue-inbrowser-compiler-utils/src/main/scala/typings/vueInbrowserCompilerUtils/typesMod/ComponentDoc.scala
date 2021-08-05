@@ -29,76 +29,53 @@ trait ComponentDoc
 }
 object ComponentDoc {
   
-  @scala.inline
-  def apply(displayName: String, exportName: String): ComponentDoc = {
+  inline def apply(displayName: String, exportName: String): ComponentDoc = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], exportName = exportName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentDoc]
   }
   
-  @scala.inline
-  implicit class ComponentDocMutableBuilder[Self <: ComponentDoc] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentDoc](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsBlocks(value: js.Array[String]): Self = StObject.set(x, "docsBlocks", value.asInstanceOf[js.Any])
+    inline def setDocsBlocks(value: js.Array[String]): Self = StObject.set(x, "docsBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsBlocksUndefined: Self = StObject.set(x, "docsBlocks", js.undefined)
+    inline def setDocsBlocksUndefined: Self = StObject.set(x, "docsBlocks", js.undefined)
     
-    @scala.inline
-    def setDocsBlocksVarargs(value: String*): Self = StObject.set(x, "docsBlocks", js.Array(value :_*))
+    inline def setDocsBlocksVarargs(value: String*): Self = StObject.set(x, "docsBlocks", js.Array(value :_*))
     
-    @scala.inline
-    def setEvents(value: js.Array[EventDescriptor]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[EventDescriptor]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: EventDescriptor*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: EventDescriptor*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
+    inline def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethods(value: js.Array[MethodDescriptor]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: js.Array[MethodDescriptor]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    @scala.inline
-    def setMethodsVarargs(value: MethodDescriptor*): Self = StObject.set(x, "methods", js.Array(value :_*))
+    inline def setMethodsVarargs(value: MethodDescriptor*): Self = StObject.set(x, "methods", js.Array(value :_*))
     
-    @scala.inline
-    def setProps(value: js.Array[PropDescriptor]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: js.Array[PropDescriptor]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     
-    @scala.inline
-    def setPropsVarargs(value: PropDescriptor*): Self = StObject.set(x, "props", js.Array(value :_*))
+    inline def setPropsVarargs(value: PropDescriptor*): Self = StObject.set(x, "props", js.Array(value :_*))
     
-    @scala.inline
-    def setSlots(value: js.Array[SlotDescriptor]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: js.Array[SlotDescriptor]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
-    @scala.inline
-    def setSlotsVarargs(value: SlotDescriptor*): Self = StObject.set(x, "slots", js.Array(value :_*))
+    inline def setSlotsVarargs(value: SlotDescriptor*): Self = StObject.set(x, "slots", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: StringDictionary[js.Array[BlockTag]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: StringDictionary[js.Array[BlockTag]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

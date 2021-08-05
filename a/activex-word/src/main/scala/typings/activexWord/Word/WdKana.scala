@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdKana extends StObject
 object WdKana {
   
-  @scala.inline
-  def wdKanaHiragana: `9` = 9.asInstanceOf[`9`]
+  inline def wdKanaHiragana: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdKanaKatakana: `8` = 8.asInstanceOf[`8`]
+  inline def wdKanaKatakana: `8` = 8.asInstanceOf[`8`]
 }

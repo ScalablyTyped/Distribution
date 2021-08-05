@@ -10,19 +10,15 @@ trait OrchestrationConfig extends StObject {
 }
 object OrchestrationConfig {
   
-  @scala.inline
-  def apply(): OrchestrationConfig = {
+  inline def apply(): OrchestrationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrchestrationConfig]
   }
   
-  @scala.inline
-  implicit class OrchestrationConfigMutableBuilder[Self <: OrchestrationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OrchestrationConfig](x: Self) {
     
-    @scala.inline
-    def setTaskHistoryRetentionLimit(value: Double): Self = StObject.set(x, "TaskHistoryRetentionLimit", value.asInstanceOf[js.Any])
+    inline def setTaskHistoryRetentionLimit(value: Double): Self = StObject.set(x, "TaskHistoryRetentionLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskHistoryRetentionLimitUndefined: Self = StObject.set(x, "TaskHistoryRetentionLimit", js.undefined)
+    inline def setTaskHistoryRetentionLimitUndefined: Self = StObject.set(x, "TaskHistoryRetentionLimit", js.undefined)
   }
 }

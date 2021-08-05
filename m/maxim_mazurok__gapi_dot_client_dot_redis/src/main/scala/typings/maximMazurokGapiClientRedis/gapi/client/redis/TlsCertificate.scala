@@ -23,43 +23,31 @@ trait TlsCertificate extends StObject {
 }
 object TlsCertificate {
   
-  @scala.inline
-  def apply(): TlsCertificate = {
+  inline def apply(): TlsCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TlsCertificate]
   }
   
-  @scala.inline
-  implicit class TlsCertificateMutableBuilder[Self <: TlsCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: TlsCertificate](x: Self) {
     
-    @scala.inline
-    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
+    inline def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
-    @scala.inline
-    def setSha1Fingerprint(value: String): Self = StObject.set(x, "sha1Fingerprint", value.asInstanceOf[js.Any])
+    inline def setSha1Fingerprint(value: String): Self = StObject.set(x, "sha1Fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1FingerprintUndefined: Self = StObject.set(x, "sha1Fingerprint", js.undefined)
+    inline def setSha1FingerprintUndefined: Self = StObject.set(x, "sha1Fingerprint", js.undefined)
   }
 }

@@ -26,49 +26,35 @@ trait Target extends StObject {
 }
 object Target {
   
-  @scala.inline
-  def apply(): Target = {
+  inline def apply(): Target = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Target]
   }
   
-  @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+  extension [Self <: Target](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: DocumentsTarget): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: DocumentsTarget): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
+    inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
     
-    @scala.inline
-    def setQuery(value: QueryTarget): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: QueryTarget): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

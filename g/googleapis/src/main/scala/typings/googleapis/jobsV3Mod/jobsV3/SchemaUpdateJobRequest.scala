@@ -25,25 +25,19 @@ trait SchemaUpdateJobRequest extends StObject {
 }
 object SchemaUpdateJobRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateJobRequest = {
+  inline def apply(): SchemaUpdateJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateJobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateJobRequestMutableBuilder[Self <: SchemaUpdateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateJobRequest](x: Self) {
     
-    @scala.inline
-    def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

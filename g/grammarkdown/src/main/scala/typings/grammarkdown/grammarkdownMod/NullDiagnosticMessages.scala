@@ -17,6 +17,5 @@ object NullDiagnosticMessages {
   @JSImport("grammarkdown/dist/grammarkdown", "NullDiagnosticMessages._instance")
   @js.native
   def _instance: js.Any = js.native
-  @scala.inline
-  def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+  inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
 }

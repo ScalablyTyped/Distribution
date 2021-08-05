@@ -16,8 +16,7 @@ trait KnockstrapCarouselDefaults extends StObject {
 }
 object KnockstrapCarouselDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controlsTemplate: KnockstrapCarouselDefaultsControlsTemplate,
     css: String,
     indicatorsTemplate: KnockstrapCarouselDefaultsIndicatorsTemplate,
@@ -27,19 +26,14 @@ object KnockstrapCarouselDefaults {
     __obj.asInstanceOf[KnockstrapCarouselDefaults]
   }
   
-  @scala.inline
-  implicit class KnockstrapCarouselDefaultsMutableBuilder[Self <: KnockstrapCarouselDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapCarouselDefaults](x: Self) {
     
-    @scala.inline
-    def setControlsTemplate(value: KnockstrapCarouselDefaultsControlsTemplate): Self = StObject.set(x, "controlsTemplate", value.asInstanceOf[js.Any])
+    inline def setControlsTemplate(value: KnockstrapCarouselDefaultsControlsTemplate): Self = StObject.set(x, "controlsTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicatorsTemplate(value: KnockstrapCarouselDefaultsIndicatorsTemplate): Self = StObject.set(x, "indicatorsTemplate", value.asInstanceOf[js.Any])
+    inline def setIndicatorsTemplate(value: KnockstrapCarouselDefaultsIndicatorsTemplate): Self = StObject.set(x, "indicatorsTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTemplate(value: KnockstrapCarouselDefaultsItemTemplate): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+    inline def setItemTemplate(value: KnockstrapCarouselDefaultsItemTemplate): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
   }
 }

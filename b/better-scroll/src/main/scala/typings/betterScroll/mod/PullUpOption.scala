@@ -10,16 +10,13 @@ trait PullUpOption extends StObject {
 }
 object PullUpOption {
   
-  @scala.inline
-  def apply(threshold: Double): PullUpOption = {
+  inline def apply(threshold: Double): PullUpOption = {
     val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullUpOption]
   }
   
-  @scala.inline
-  implicit class PullUpOptionMutableBuilder[Self <: PullUpOption] (val x: Self) extends AnyVal {
+  extension [Self <: PullUpOption](x: Self) {
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

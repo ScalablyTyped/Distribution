@@ -13,19 +13,15 @@ trait StartElasticsearchServiceSoftwareUpdateResponse extends StObject {
 }
 object StartElasticsearchServiceSoftwareUpdateResponse {
   
-  @scala.inline
-  def apply(): StartElasticsearchServiceSoftwareUpdateResponse = {
+  inline def apply(): StartElasticsearchServiceSoftwareUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartElasticsearchServiceSoftwareUpdateResponse]
   }
   
-  @scala.inline
-  implicit class StartElasticsearchServiceSoftwareUpdateResponseMutableBuilder[Self <: StartElasticsearchServiceSoftwareUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartElasticsearchServiceSoftwareUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setServiceSoftwareOptions(value: ServiceSoftwareOptions): Self = StObject.set(x, "ServiceSoftwareOptions", value.asInstanceOf[js.Any])
+    inline def setServiceSoftwareOptions(value: ServiceSoftwareOptions): Self = StObject.set(x, "ServiceSoftwareOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSoftwareOptionsUndefined: Self = StObject.set(x, "ServiceSoftwareOptions", js.undefined)
+    inline def setServiceSoftwareOptionsUndefined: Self = StObject.set(x, "ServiceSoftwareOptions", js.undefined)
   }
 }

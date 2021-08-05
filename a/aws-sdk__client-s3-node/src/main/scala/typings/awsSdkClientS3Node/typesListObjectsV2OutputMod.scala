@@ -79,92 +79,64 @@ object typesListObjectsV2OutputMod {
   }
   object ListObjectsV2Output {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListObjectsV2Output = {
+    inline def apply($metadata: ResponseMetadata): ListObjectsV2Output = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListObjectsV2Output]
     }
     
-    @scala.inline
-    implicit class ListObjectsV2OutputMutableBuilder[Self <: ListObjectsV2Output] (val x: Self) extends AnyVal {
+    extension [Self <: ListObjectsV2Output](x: Self) {
       
-      @scala.inline
-      def setCommonPrefixes(value: js.Array[UnmarshalledCommonPrefix]): Self = StObject.set(x, "CommonPrefixes", value.asInstanceOf[js.Any])
+      inline def setCommonPrefixes(value: js.Array[UnmarshalledCommonPrefix]): Self = StObject.set(x, "CommonPrefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
+      inline def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
       
-      @scala.inline
-      def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
+      inline def setCommonPrefixesVarargs(value: UnmarshalledCommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
       
-      @scala.inline
-      def setContents(value: js.Array[UnmarshalledObject]): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: js.Array[UnmarshalledObject]): Self = StObject.set(x, "Contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsUndefined: Self = StObject.set(x, "Contents", js.undefined)
+      inline def setContentsUndefined: Self = StObject.set(x, "Contents", js.undefined)
       
-      @scala.inline
-      def setContentsVarargs(value: UnmarshalledObject*): Self = StObject.set(x, "Contents", js.Array(value :_*))
+      inline def setContentsVarargs(value: UnmarshalledObject*): Self = StObject.set(x, "Contents", js.Array(value :_*))
       
-      @scala.inline
-      def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
+      inline def setContinuationToken(value: String): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
+      inline def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
       
-      @scala.inline
-      def setEncodingType(value: url | String): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
+      inline def setEncodingType(value: url | String): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
+      inline def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
       
-      @scala.inline
-      def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+      inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+      inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
       
-      @scala.inline
-      def setKeyCount(value: Double): Self = StObject.set(x, "KeyCount", value.asInstanceOf[js.Any])
+      inline def setKeyCount(value: Double): Self = StObject.set(x, "KeyCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCountUndefined: Self = StObject.set(x, "KeyCount", js.undefined)
+      inline def setKeyCountUndefined: Self = StObject.set(x, "KeyCount", js.undefined)
       
-      @scala.inline
-      def setMaxKeys(value: Double): Self = StObject.set(x, "MaxKeys", value.asInstanceOf[js.Any])
+      inline def setMaxKeys(value: Double): Self = StObject.set(x, "MaxKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxKeysUndefined: Self = StObject.set(x, "MaxKeys", js.undefined)
+      inline def setMaxKeysUndefined: Self = StObject.set(x, "MaxKeys", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setNextContinuationToken(value: String): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
+      inline def setNextContinuationToken(value: String): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
+      inline def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
       
-      @scala.inline
-      def setStartAfter(value: String): Self = StObject.set(x, "StartAfter", value.asInstanceOf[js.Any])
+      inline def setStartAfter(value: String): Self = StObject.set(x, "StartAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAfterUndefined: Self = StObject.set(x, "StartAfter", js.undefined)
+      inline def setStartAfterUndefined: Self = StObject.set(x, "StartAfter", js.undefined)
     }
   }
 }

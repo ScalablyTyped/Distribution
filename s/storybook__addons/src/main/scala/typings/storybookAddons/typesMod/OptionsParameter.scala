@@ -19,8 +19,7 @@ trait OptionsParameter
 }
 object OptionsParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,24 +28,18 @@ object OptionsParameter {
     __obj.asInstanceOf[OptionsParameter]
   }
   
-  @scala.inline
-  implicit class OptionsParameterMutableBuilder[Self <: OptionsParameter] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsParameter](x: Self) {
     
-    @scala.inline
-    def setStorySort(value: StorySortParameter): Self = StObject.set(x, "storySort", value.asInstanceOf[js.Any])
+    inline def setStorySort(value: StorySortParameter): Self = StObject.set(x, "storySort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorySortFunction2(
+    inline def setStorySortFunction2(
       value: (js.Tuple4[StoryId, js.Any, Parameters, Parameters], js.Tuple4[StoryId, js.Any, Parameters, Parameters]) => Boolean | Double
     ): Self = StObject.set(x, "storySort", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStorySortUndefined: Self = StObject.set(x, "storySort", js.undefined)
+    inline def setStorySortUndefined: Self = StObject.set(x, "storySort", js.undefined)
     
-    @scala.inline
-    def setTheme(value: Base): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Base): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

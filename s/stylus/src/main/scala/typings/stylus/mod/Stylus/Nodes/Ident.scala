@@ -21,8 +21,7 @@ trait Ident
 }
 object Ident {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -47,22 +46,16 @@ object Ident {
     __obj.asInstanceOf[Ident]
   }
   
-  @scala.inline
-  implicit class IdentMutableBuilder[Self <: Ident] (val x: Self) extends AnyVal {
+  extension [Self <: Ident](x: Self) {
     
-    @scala.inline
-    def setIsEmpty(value: scala.Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+    inline def setIsEmpty(value: scala.Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMixin(value: scala.Boolean): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
+    inline def setMixin(value: scala.Boolean): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: Node): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: Node): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

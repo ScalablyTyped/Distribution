@@ -9,8 +9,7 @@ trait EndpointPair
      with IEndpointPair
 object EndpointPair {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     localHostName: HostName,
     localServiceName: String,
     remoteHostName: HostName,

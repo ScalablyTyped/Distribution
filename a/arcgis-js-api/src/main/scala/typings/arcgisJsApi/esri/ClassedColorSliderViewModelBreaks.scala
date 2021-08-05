@@ -33,8 +33,7 @@ trait ClassedColorSliderViewModelBreaks
 }
 object ClassedColorSliderViewModelBreaks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object ClassedColorSliderViewModelBreaks {
     __obj.asInstanceOf[ClassedColorSliderViewModelBreaks]
   }
   
-  @scala.inline
-  implicit class ClassedColorSliderViewModelBreaksMutableBuilder[Self <: ClassedColorSliderViewModelBreaks] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedColorSliderViewModelBreaks](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

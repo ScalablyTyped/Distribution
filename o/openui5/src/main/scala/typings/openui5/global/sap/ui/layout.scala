@@ -35,8 +35,7 @@ object layout {
     @JSGlobal("sap.ui.layout.BlockBackgroundType.Default")
     @js.native
     def Default: js.Any = js.native
-    @scala.inline
-    def Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+    inline def Default_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     /**
       * Background is with predefined light colors
@@ -44,8 +43,7 @@ object layout {
     @JSGlobal("sap.ui.layout.BlockBackgroundType.Light")
     @js.native
     def Light: js.Any = js.native
-    @scala.inline
-    def Light_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Light")(x.asInstanceOf[js.Any])
+    inline def Light_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Light")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("sap.ui.layout.BlockLayout")

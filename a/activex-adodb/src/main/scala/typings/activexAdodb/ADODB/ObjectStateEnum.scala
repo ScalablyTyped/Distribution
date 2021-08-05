@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectStateEnum extends StObject
 object ObjectStateEnum {
   
-  @scala.inline
-  def adStateClosed: `0` = 0.asInstanceOf[`0`]
+  inline def adStateClosed: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adStateConnecting: `2` = 2.asInstanceOf[`2`]
+  inline def adStateConnecting: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adStateExecuting: `4` = 4.asInstanceOf[`4`]
+  inline def adStateExecuting: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adStateFetching: `8` = 8.asInstanceOf[`8`]
+  inline def adStateFetching: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def adStateOpen: `1` = 1.asInstanceOf[`1`]
+  inline def adStateOpen: `1` = 1.asInstanceOf[`1`]
 }

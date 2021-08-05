@@ -12,25 +12,19 @@ trait IgnoreErrors extends StObject {
 }
 object IgnoreErrors {
   
-  @scala.inline
-  def apply(): IgnoreErrors = {
+  inline def apply(): IgnoreErrors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreErrors]
   }
   
-  @scala.inline
-  implicit class IgnoreErrorsMutableBuilder[Self <: IgnoreErrors] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreErrors](x: Self) {
     
-    @scala.inline
-    def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+    inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

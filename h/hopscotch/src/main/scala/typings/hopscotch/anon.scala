@@ -22,53 +22,38 @@ object anon {
   }
   object CloseTooltip {
     
-    @scala.inline
-    def apply(): CloseTooltip = {
+    inline def apply(): CloseTooltip = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CloseTooltip]
     }
     
-    @scala.inline
-    implicit class CloseTooltipMutableBuilder[Self <: CloseTooltip] (val x: Self) extends AnyVal {
+    extension [Self <: CloseTooltip](x: Self) {
       
-      @scala.inline
-      def setCloseTooltip(value: String): Self = StObject.set(x, "closeTooltip", value.asInstanceOf[js.Any])
+      inline def setCloseTooltip(value: String): Self = StObject.set(x, "closeTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTooltipUndefined: Self = StObject.set(x, "closeTooltip", js.undefined)
+      inline def setCloseTooltipUndefined: Self = StObject.set(x, "closeTooltip", js.undefined)
       
-      @scala.inline
-      def setDoneBtn(value: String): Self = StObject.set(x, "doneBtn", value.asInstanceOf[js.Any])
+      inline def setDoneBtn(value: String): Self = StObject.set(x, "doneBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoneBtnUndefined: Self = StObject.set(x, "doneBtn", js.undefined)
+      inline def setDoneBtnUndefined: Self = StObject.set(x, "doneBtn", js.undefined)
       
-      @scala.inline
-      def setNextBtn(value: String): Self = StObject.set(x, "nextBtn", value.asInstanceOf[js.Any])
+      inline def setNextBtn(value: String): Self = StObject.set(x, "nextBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextBtnUndefined: Self = StObject.set(x, "nextBtn", js.undefined)
+      inline def setNextBtnUndefined: Self = StObject.set(x, "nextBtn", js.undefined)
       
-      @scala.inline
-      def setPrevBtn(value: String): Self = StObject.set(x, "prevBtn", value.asInstanceOf[js.Any])
+      inline def setPrevBtn(value: String): Self = StObject.set(x, "prevBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevBtnUndefined: Self = StObject.set(x, "prevBtn", js.undefined)
+      inline def setPrevBtnUndefined: Self = StObject.set(x, "prevBtn", js.undefined)
       
-      @scala.inline
-      def setSkipBtn(value: String): Self = StObject.set(x, "skipBtn", value.asInstanceOf[js.Any])
+      inline def setSkipBtn(value: String): Self = StObject.set(x, "skipBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipBtnUndefined: Self = StObject.set(x, "skipBtn", js.undefined)
+      inline def setSkipBtnUndefined: Self = StObject.set(x, "skipBtn", js.undefined)
       
-      @scala.inline
-      def setStepNums(value: js.Array[String]): Self = StObject.set(x, "stepNums", value.asInstanceOf[js.Any])
+      inline def setStepNums(value: js.Array[String]): Self = StObject.set(x, "stepNums", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepNumsUndefined: Self = StObject.set(x, "stepNums", js.undefined)
+      inline def setStepNumsUndefined: Self = StObject.set(x, "stepNums", js.undefined)
       
-      @scala.inline
-      def setStepNumsVarargs(value: String*): Self = StObject.set(x, "stepNums", js.Array(value :_*))
+      inline def setStepNumsVarargs(value: String*): Self = StObject.set(x, "stepNums", js.Array(value :_*))
     }
   }
 }

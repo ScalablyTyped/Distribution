@@ -26,61 +26,43 @@ trait HeatmapPaint
 }
 object HeatmapPaint {
   
-  @scala.inline
-  def apply(): HeatmapPaint = {
+  inline def apply(): HeatmapPaint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeatmapPaint]
   }
   
-  @scala.inline
-  implicit class HeatmapPaintMutableBuilder[Self <: HeatmapPaint] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapPaint](x: Self) {
     
-    @scala.inline
-    def `setHeatmap-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "heatmap-color", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "heatmap-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-colorUndefined`: Self = StObject.set(x, "heatmap-color", js.undefined)
+    inline def `setHeatmap-colorUndefined`: Self = StObject.set(x, "heatmap-color", js.undefined)
     
-    @scala.inline
-    def `setHeatmap-intensity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-intensity", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-intensity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-intensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-intensity-transition`(value: Transition): Self = StObject.set(x, "heatmap-intensity-transition", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-intensity-transition`(value: Transition): Self = StObject.set(x, "heatmap-intensity-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-intensity-transitionUndefined`: Self = StObject.set(x, "heatmap-intensity-transition", js.undefined)
+    inline def `setHeatmap-intensity-transitionUndefined`: Self = StObject.set(x, "heatmap-intensity-transition", js.undefined)
     
-    @scala.inline
-    def `setHeatmap-intensityUndefined`: Self = StObject.set(x, "heatmap-intensity", js.undefined)
+    inline def `setHeatmap-intensityUndefined`: Self = StObject.set(x, "heatmap-intensity", js.undefined)
     
-    @scala.inline
-    def `setHeatmap-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-opacity", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-opacity-transition`(value: Transition): Self = StObject.set(x, "heatmap-opacity-transition", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-opacity-transition`(value: Transition): Self = StObject.set(x, "heatmap-opacity-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-opacity-transitionUndefined`: Self = StObject.set(x, "heatmap-opacity-transition", js.undefined)
+    inline def `setHeatmap-opacity-transitionUndefined`: Self = StObject.set(x, "heatmap-opacity-transition", js.undefined)
     
-    @scala.inline
-    def `setHeatmap-opacityUndefined`: Self = StObject.set(x, "heatmap-opacity", js.undefined)
+    inline def `setHeatmap-opacityUndefined`: Self = StObject.set(x, "heatmap-opacity", js.undefined)
     
-    @scala.inline
-    def `setHeatmap-radius`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-radius", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-radius`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-radius-transition`(value: Transition): Self = StObject.set(x, "heatmap-radius-transition", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-radius-transition`(value: Transition): Self = StObject.set(x, "heatmap-radius-transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-radius-transitionUndefined`: Self = StObject.set(x, "heatmap-radius-transition", js.undefined)
+    inline def `setHeatmap-radius-transitionUndefined`: Self = StObject.set(x, "heatmap-radius-transition", js.undefined)
     
-    @scala.inline
-    def `setHeatmap-radiusUndefined`: Self = StObject.set(x, "heatmap-radius", js.undefined)
+    inline def `setHeatmap-radiusUndefined`: Self = StObject.set(x, "heatmap-radius", js.undefined)
     
-    @scala.inline
-    def `setHeatmap-weight`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-weight", value.asInstanceOf[js.Any])
+    inline def `setHeatmap-weight`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "heatmap-weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHeatmap-weightUndefined`: Self = StObject.set(x, "heatmap-weight", js.undefined)
+    inline def `setHeatmap-weightUndefined`: Self = StObject.set(x, "heatmap-weight", js.undefined)
   }
 }

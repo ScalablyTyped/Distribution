@@ -20,7 +20,7 @@ object ionicAngularGenerateMod {
   class IonicAngularGenerateRunner protected () extends GenerateRunner[IonicAngularGenerateOptions] {
     def this(e: IonicAngularGenerateRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_IonicAngularGenerateRunner: IonicAngularGenerateRunnerDeps = js.native
     
     def getModules(context: js.Any, kind: String): js.Promise[js.Any] = js.native
@@ -37,8 +37,7 @@ object ionicAngularGenerateMod {
   }
   object IonicAngularGenerateRunnerDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: IConfig,
       ctx: IonicContext,
       log: ILogger,
@@ -50,11 +49,9 @@ object ionicAngularGenerateMod {
       __obj.asInstanceOf[IonicAngularGenerateRunnerDeps]
     }
     
-    @scala.inline
-    implicit class IonicAngularGenerateRunnerDepsMutableBuilder[Self <: IonicAngularGenerateRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: IonicAngularGenerateRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

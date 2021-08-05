@@ -13,16 +13,13 @@ trait DeleteVirtualInterfaceRequest extends StObject {
 }
 object DeleteVirtualInterfaceRequest {
   
-  @scala.inline
-  def apply(virtualInterfaceId: VirtualInterfaceId): DeleteVirtualInterfaceRequest = {
+  inline def apply(virtualInterfaceId: VirtualInterfaceId): DeleteVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualInterfaceRequestMutableBuilder[Self <: DeleteVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }
 }

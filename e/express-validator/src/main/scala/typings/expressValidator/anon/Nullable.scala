@@ -15,19 +15,15 @@ trait Nullable
 }
 object Nullable {
   
-  @scala.inline
-  def apply(checkFalsy: Boolean, nullable: Boolean): Nullable = {
+  inline def apply(checkFalsy: Boolean, nullable: Boolean): Nullable = {
     val __obj = js.Dynamic.literal(checkFalsy = checkFalsy.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nullable]
   }
   
-  @scala.inline
-  implicit class NullableMutableBuilder[Self <: Nullable] (val x: Self) extends AnyVal {
+  extension [Self <: Nullable](x: Self) {
     
-    @scala.inline
-    def setCheckFalsy(value: Boolean): Self = StObject.set(x, "checkFalsy", value.asInstanceOf[js.Any])
+    inline def setCheckFalsy(value: Boolean): Self = StObject.set(x, "checkFalsy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
   }
 }

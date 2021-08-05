@@ -12,19 +12,15 @@ trait IOptions extends StObject {
 }
 object IOptions {
   
-  @scala.inline
-  def apply(): IOptions = {
+  inline def apply(): IOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOptions]
   }
   
-  @scala.inline
-  implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding | TEncodingExtended): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding | TEncodingExtended): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
   }
 }

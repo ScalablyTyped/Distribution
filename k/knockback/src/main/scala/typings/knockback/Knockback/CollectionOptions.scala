@@ -30,55 +30,39 @@ trait CollectionOptions
 }
 object CollectionOptions {
   
-  @scala.inline
-  def apply(): CollectionOptions = {
+  inline def apply(): CollectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionOptions]
   }
   
-  @scala.inline
-  implicit class CollectionOptionsMutableBuilder[Self <: CollectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionOptions](x: Self) {
     
-    @scala.inline
-    def setComparator(value: js.Any): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: js.Any): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
-    @scala.inline
-    def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setFactories(value: js.Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+    inline def setFactories(value: js.Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoriesUndefined: Self = StObject.set(x, "factories", js.undefined)
+    inline def setFactoriesUndefined: Self = StObject.set(x, "factories", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Any): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setModels_only(value: Boolean): Self = StObject.set(x, "models_only", value.asInstanceOf[js.Any])
+    inline def setModels_only(value: Boolean): Self = StObject.set(x, "models_only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModels_onlyUndefined: Self = StObject.set(x, "models_only", js.undefined)
+    inline def setModels_onlyUndefined: Self = StObject.set(x, "models_only", js.undefined)
     
-    @scala.inline
-    def setSort_attribute(value: String): Self = StObject.set(x, "sort_attribute", value.asInstanceOf[js.Any])
+    inline def setSort_attribute(value: String): Self = StObject.set(x, "sort_attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort_attributeUndefined: Self = StObject.set(x, "sort_attribute", js.undefined)
+    inline def setSort_attributeUndefined: Self = StObject.set(x, "sort_attribute", js.undefined)
     
-    @scala.inline
-    def setView_model(value: js.Any): Self = StObject.set(x, "view_model", value.asInstanceOf[js.Any])
+    inline def setView_model(value: js.Any): Self = StObject.set(x, "view_model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_modelUndefined: Self = StObject.set(x, "view_model", js.undefined)
+    inline def setView_modelUndefined: Self = StObject.set(x, "view_model", js.undefined)
   }
 }

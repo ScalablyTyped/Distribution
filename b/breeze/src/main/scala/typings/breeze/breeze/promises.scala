@@ -17,23 +17,18 @@ object promises {
   }
   object IDeferred {
     
-    @scala.inline
-    def apply[T](promise: js.Promise[T], reject: js.Any => Unit, resolve: T => Unit): IDeferred[T] = {
+    inline def apply[T](promise: js.Promise[T], reject: js.Any => Unit, resolve: T => Unit): IDeferred[T] = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[IDeferred[T]]
     }
     
-    @scala.inline
-    implicit class IDeferredMutableBuilder[Self <: IDeferred[?], T] (val x: Self & IDeferred[T]) extends AnyVal {
+    extension [Self <: IDeferred[?], T](x: Self & IDeferred[T]) {
       
-      @scala.inline
-      def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReject(value: js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: js.Any => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: T => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: T => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   

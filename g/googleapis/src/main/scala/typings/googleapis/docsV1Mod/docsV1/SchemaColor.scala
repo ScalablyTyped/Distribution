@@ -16,19 +16,15 @@ trait SchemaColor extends StObject {
 }
 object SchemaColor {
   
-  @scala.inline
-  def apply(): SchemaColor = {
+  inline def apply(): SchemaColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaColor]
   }
   
-  @scala.inline
-  implicit class SchemaColorMutableBuilder[Self <: SchemaColor] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaColor](x: Self) {
     
-    @scala.inline
-    def setRgbColor(value: SchemaRgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
+    inline def setRgbColor(value: SchemaRgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgbColorUndefined: Self = StObject.set(x, "rgbColor", js.undefined)
+    inline def setRgbColorUndefined: Self = StObject.set(x, "rgbColor", js.undefined)
   }
 }

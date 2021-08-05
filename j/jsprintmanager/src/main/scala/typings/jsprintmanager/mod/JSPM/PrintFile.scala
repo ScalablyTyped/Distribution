@@ -11,7 +11,7 @@ class PrintFile protected () extends StObject {
   def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String) = this()
   def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String, copies: Double) = this()
   
-  var _copies: js.Any = js.native
+  /* private */ var _copies: js.Any = js.native
   
   /* protected */ def bool2str(value: js.Any): String = js.native
   /* protected */ def bool2str(value: js.Any, true_val: String): String = js.native

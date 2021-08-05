@@ -13,19 +13,15 @@ trait SchemaInterconnectsGetDiagnosticsResponse extends StObject {
 }
 object SchemaInterconnectsGetDiagnosticsResponse {
   
-  @scala.inline
-  def apply(): SchemaInterconnectsGetDiagnosticsResponse = {
+  inline def apply(): SchemaInterconnectsGetDiagnosticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterconnectsGetDiagnosticsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaInterconnectsGetDiagnosticsResponseMutableBuilder[Self <: SchemaInterconnectsGetDiagnosticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterconnectsGetDiagnosticsResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: SchemaInterconnectDiagnostics): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaInterconnectDiagnostics): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

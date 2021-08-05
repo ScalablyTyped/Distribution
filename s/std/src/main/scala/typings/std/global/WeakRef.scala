@@ -19,6 +19,5 @@ class WeakRef[T /* <: js.Object */] ()
 }
 object WeakRef {
   
-  @scala.inline
-  def apply: WeakRefConstructor = js.Dynamic.global.selectDynamic("WeakRef").asInstanceOf[WeakRefConstructor]
+  inline def apply: WeakRefConstructor = js.Dynamic.global.selectDynamic("WeakRef").asInstanceOf[WeakRefConstructor]
 }

@@ -13,22 +13,17 @@ trait DescribeVpcClassicLinkResult extends StObject {
 }
 object DescribeVpcClassicLinkResult {
   
-  @scala.inline
-  def apply(): DescribeVpcClassicLinkResult = {
+  inline def apply(): DescribeVpcClassicLinkResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcClassicLinkResult]
   }
   
-  @scala.inline
-  implicit class DescribeVpcClassicLinkResultMutableBuilder[Self <: DescribeVpcClassicLinkResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcClassicLinkResult](x: Self) {
     
-    @scala.inline
-    def setVpcs(value: VpcClassicLinkList): Self = StObject.set(x, "Vpcs", value.asInstanceOf[js.Any])
+    inline def setVpcs(value: VpcClassicLinkList): Self = StObject.set(x, "Vpcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcsUndefined: Self = StObject.set(x, "Vpcs", js.undefined)
+    inline def setVpcsUndefined: Self = StObject.set(x, "Vpcs", js.undefined)
     
-    @scala.inline
-    def setVpcsVarargs(value: VpcClassicLink*): Self = StObject.set(x, "Vpcs", js.Array(value :_*))
+    inline def setVpcsVarargs(value: VpcClassicLink*): Self = StObject.set(x, "Vpcs", js.Array(value :_*))
   }
 }

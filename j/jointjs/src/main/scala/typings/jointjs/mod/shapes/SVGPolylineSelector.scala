@@ -14,19 +14,15 @@ trait SVGPolylineSelector
 }
 object SVGPolylineSelector {
   
-  @scala.inline
-  def apply(): SVGPolylineSelector = {
+  inline def apply(): SVGPolylineSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGPolylineSelector]
   }
   
-  @scala.inline
-  implicit class SVGPolylineSelectorMutableBuilder[Self <: SVGPolylineSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPolylineSelector](x: Self) {
     
-    @scala.inline
-    def setPolyline(value: SVGPolylineAttributes): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+    inline def setPolyline(value: SVGPolylineAttributes): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
+    inline def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
   }
 }

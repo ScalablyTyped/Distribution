@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.WebServiceAdapterObject")
 @js.native
-class WebServiceAdapterObject protected ()
+/* private */ class WebServiceAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.WebServiceAdapterObject {
   
@@ -17,7 +17,7 @@ class WebServiceAdapterObject protected ()
   /* CompleteClass */
   override def GenerateDataSetDiffGram(pNode: IXMLDOMNode): IXMLDOMNode = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.WebServiceAdapterObject_typekey")
   var InfoPathDotWebServiceAdapterObject_typekey: typings.activexInfopath.InfoPath.WebServiceAdapterObject = js.native
   

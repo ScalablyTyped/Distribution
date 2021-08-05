@@ -18,19 +18,15 @@ trait ExportCertificateRequest extends StObject {
 }
 object ExportCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateArn: Arn, Passphrase: PassphraseBlob): ExportCertificateRequest = {
+  inline def apply(CertificateArn: Arn, Passphrase: PassphraseBlob): ExportCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], Passphrase = Passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportCertificateRequest]
   }
   
-  @scala.inline
-  implicit class ExportCertificateRequestMutableBuilder[Self <: ExportCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassphrase(value: PassphraseBlob): Self = StObject.set(x, "Passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: PassphraseBlob): Self = StObject.set(x, "Passphrase", value.asInstanceOf[js.Any])
   }
 }

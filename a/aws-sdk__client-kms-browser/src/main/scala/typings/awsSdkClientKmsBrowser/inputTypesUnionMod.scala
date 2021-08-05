@@ -63,20 +63,17 @@ object inputTypesUnionMod {
   trait InputTypesUnion extends StObject
   object InputTypesUnion {
     
-    @scala.inline
-    def CancelKeyDeletionInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesCancelKeyDeletionInputMod.CancelKeyDeletionInput = {
+    inline def CancelKeyDeletionInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesCancelKeyDeletionInputMod.CancelKeyDeletionInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesCancelKeyDeletionInputMod.CancelKeyDeletionInput]
     }
     
-    @scala.inline
-    def CreateAliasInput(AliasName: String, TargetKeyId: String): typings.awsSdkClientKmsBrowser.typesCreateAliasInputMod.CreateAliasInput = {
+    inline def CreateAliasInput(AliasName: String, TargetKeyId: String): typings.awsSdkClientKmsBrowser.typesCreateAliasInputMod.CreateAliasInput = {
       val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], TargetKeyId = TargetKeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesCreateAliasInputMod.CreateAliasInput]
     }
     
-    @scala.inline
-    def CreateGrantInput(
+    inline def CreateGrantInput(
       GranteePrincipal: String,
       KeyId: String,
       Operations: (js.Array[
@@ -89,98 +86,82 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesCreateGrantInputMod.CreateGrantInput]
     }
     
-    @scala.inline
-    def CreateKeyInput(): typings.awsSdkClientKmsBrowser.typesCreateKeyInputMod.CreateKeyInput = {
+    inline def CreateKeyInput(): typings.awsSdkClientKmsBrowser.typesCreateKeyInputMod.CreateKeyInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesCreateKeyInputMod.CreateKeyInput]
     }
     
-    @scala.inline
-    def DecryptInput(CiphertextBlob: ArrayBuffer | ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesDecryptInputMod.DecryptInput = {
+    inline def DecryptInput(CiphertextBlob: ArrayBuffer | ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesDecryptInputMod.DecryptInput = {
       val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDecryptInputMod.DecryptInput]
     }
     
-    @scala.inline
-    def DeleteAliasInput(AliasName: String): typings.awsSdkClientKmsBrowser.typesDeleteAliasInputMod.DeleteAliasInput = {
+    inline def DeleteAliasInput(AliasName: String): typings.awsSdkClientKmsBrowser.typesDeleteAliasInputMod.DeleteAliasInput = {
       val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDeleteAliasInputMod.DeleteAliasInput]
     }
     
-    @scala.inline
-    def DeleteImportedKeyMaterialInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDeleteImportedKeyMaterialInputMod.DeleteImportedKeyMaterialInput = {
+    inline def DeleteImportedKeyMaterialInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDeleteImportedKeyMaterialInputMod.DeleteImportedKeyMaterialInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDeleteImportedKeyMaterialInputMod.DeleteImportedKeyMaterialInput]
     }
     
-    @scala.inline
-    def DescribeKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDescribeKeyInputMod.DescribeKeyInput = {
+    inline def DescribeKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDescribeKeyInputMod.DescribeKeyInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDescribeKeyInputMod.DescribeKeyInput]
     }
     
-    @scala.inline
-    def DisableKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDisableKeyInputMod.DisableKeyInput = {
+    inline def DisableKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDisableKeyInputMod.DisableKeyInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDisableKeyInputMod.DisableKeyInput]
     }
     
-    @scala.inline
-    def DisableKeyRotationInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDisableKeyRotationInputMod.DisableKeyRotationInput = {
+    inline def DisableKeyRotationInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesDisableKeyRotationInputMod.DisableKeyRotationInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesDisableKeyRotationInputMod.DisableKeyRotationInput]
     }
     
-    @scala.inline
-    def EnableKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesEnableKeyInputMod.EnableKeyInput = {
+    inline def EnableKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesEnableKeyInputMod.EnableKeyInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesEnableKeyInputMod.EnableKeyInput]
     }
     
-    @scala.inline
-    def EnableKeyRotationInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesEnableKeyRotationInputMod.EnableKeyRotationInput = {
+    inline def EnableKeyRotationInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesEnableKeyRotationInputMod.EnableKeyRotationInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesEnableKeyRotationInputMod.EnableKeyRotationInput]
     }
     
-    @scala.inline
-    def EncryptInput(KeyId: String, Plaintext: ArrayBuffer | ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesEncryptInputMod.EncryptInput = {
+    inline def EncryptInput(KeyId: String, Plaintext: ArrayBuffer | ArrayBufferView | String): typings.awsSdkClientKmsBrowser.typesEncryptInputMod.EncryptInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Plaintext = Plaintext.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesEncryptInputMod.EncryptInput]
     }
     
-    @scala.inline
-    def GenerateDataKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesGenerateDataKeyInputMod.GenerateDataKeyInput = {
+    inline def GenerateDataKeyInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesGenerateDataKeyInputMod.GenerateDataKeyInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesGenerateDataKeyInputMod.GenerateDataKeyInput]
     }
     
-    @scala.inline
-    def GenerateDataKeyWithoutPlaintextInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesGenerateDataKeyWithoutPlaintextInputMod.GenerateDataKeyWithoutPlaintextInput = {
+    inline def GenerateDataKeyWithoutPlaintextInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesGenerateDataKeyWithoutPlaintextInputMod.GenerateDataKeyWithoutPlaintextInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesGenerateDataKeyWithoutPlaintextInputMod.GenerateDataKeyWithoutPlaintextInput]
     }
     
-    @scala.inline
-    def GenerateRandomInput(): typings.awsSdkClientKmsBrowser.typesGenerateRandomInputMod.GenerateRandomInput = {
+    inline def GenerateRandomInput(): typings.awsSdkClientKmsBrowser.typesGenerateRandomInputMod.GenerateRandomInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesGenerateRandomInputMod.GenerateRandomInput]
     }
     
-    @scala.inline
-    def GetKeyPolicyInput(KeyId: String, PolicyName: String): typings.awsSdkClientKmsBrowser.typesGetKeyPolicyInputMod.GetKeyPolicyInput = {
+    inline def GetKeyPolicyInput(KeyId: String, PolicyName: String): typings.awsSdkClientKmsBrowser.typesGetKeyPolicyInputMod.GetKeyPolicyInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesGetKeyPolicyInputMod.GetKeyPolicyInput]
     }
     
-    @scala.inline
-    def GetKeyRotationStatusInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesGetKeyRotationStatusInputMod.GetKeyRotationStatusInput = {
+    inline def GetKeyRotationStatusInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesGetKeyRotationStatusInputMod.GetKeyRotationStatusInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesGetKeyRotationStatusInputMod.GetKeyRotationStatusInput]
     }
     
-    @scala.inline
-    def GetParametersForImportInput(
+    inline def GetParametersForImportInput(
       KeyId: String,
       WrappingAlgorithm: RSAES_PKCS1_V1_5 | RSAES_OAEP_SHA_1 | RSAES_OAEP_SHA_256 | String,
       WrappingKeySpec: RSA_2048 | String
@@ -189,8 +170,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesGetParametersForImportInputMod.GetParametersForImportInput]
     }
     
-    @scala.inline
-    def ImportKeyMaterialInput(
+    inline def ImportKeyMaterialInput(
       EncryptedKeyMaterial: ArrayBuffer | ArrayBufferView | String,
       ImportToken: ArrayBuffer | ArrayBufferView | String,
       KeyId: String
@@ -199,92 +179,77 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesImportKeyMaterialInputMod.ImportKeyMaterialInput]
     }
     
-    @scala.inline
-    def ListAliasesInput(): typings.awsSdkClientKmsBrowser.typesListAliasesInputMod.ListAliasesInput = {
+    inline def ListAliasesInput(): typings.awsSdkClientKmsBrowser.typesListAliasesInputMod.ListAliasesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesListAliasesInputMod.ListAliasesInput]
     }
     
-    @scala.inline
-    def ListGrantsInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesListGrantsInputMod.ListGrantsInput = {
+    inline def ListGrantsInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesListGrantsInputMod.ListGrantsInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesListGrantsInputMod.ListGrantsInput]
     }
     
-    @scala.inline
-    def ListKeyPoliciesInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesListKeyPoliciesInputMod.ListKeyPoliciesInput = {
+    inline def ListKeyPoliciesInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesListKeyPoliciesInputMod.ListKeyPoliciesInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesListKeyPoliciesInputMod.ListKeyPoliciesInput]
     }
     
-    @scala.inline
-    def ListKeysInput(): typings.awsSdkClientKmsBrowser.typesListKeysInputMod.ListKeysInput = {
+    inline def ListKeysInput(): typings.awsSdkClientKmsBrowser.typesListKeysInputMod.ListKeysInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesListKeysInputMod.ListKeysInput]
     }
     
-    @scala.inline
-    def ListResourceTagsInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesListResourceTagsInputMod.ListResourceTagsInput = {
+    inline def ListResourceTagsInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesListResourceTagsInputMod.ListResourceTagsInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesListResourceTagsInputMod.ListResourceTagsInput]
     }
     
-    @scala.inline
-    def ListRetirableGrantsInput(RetiringPrincipal: String): typings.awsSdkClientKmsBrowser.typesListRetirableGrantsInputMod.ListRetirableGrantsInput = {
+    inline def ListRetirableGrantsInput(RetiringPrincipal: String): typings.awsSdkClientKmsBrowser.typesListRetirableGrantsInputMod.ListRetirableGrantsInput = {
       val __obj = js.Dynamic.literal(RetiringPrincipal = RetiringPrincipal.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesListRetirableGrantsInputMod.ListRetirableGrantsInput]
     }
     
-    @scala.inline
-    def PutKeyPolicyInput(KeyId: String, Policy: String, PolicyName: String): typings.awsSdkClientKmsBrowser.typesPutKeyPolicyInputMod.PutKeyPolicyInput = {
+    inline def PutKeyPolicyInput(KeyId: String, Policy: String, PolicyName: String): typings.awsSdkClientKmsBrowser.typesPutKeyPolicyInputMod.PutKeyPolicyInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesPutKeyPolicyInputMod.PutKeyPolicyInput]
     }
     
-    @scala.inline
-    def ReEncryptInput(CiphertextBlob: ArrayBuffer | ArrayBufferView | String, DestinationKeyId: String): typings.awsSdkClientKmsBrowser.typesReEncryptInputMod.ReEncryptInput = {
+    inline def ReEncryptInput(CiphertextBlob: ArrayBuffer | ArrayBufferView | String, DestinationKeyId: String): typings.awsSdkClientKmsBrowser.typesReEncryptInputMod.ReEncryptInput = {
       val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any], DestinationKeyId = DestinationKeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesReEncryptInputMod.ReEncryptInput]
     }
     
-    @scala.inline
-    def RetireGrantInput(): typings.awsSdkClientKmsBrowser.typesRetireGrantInputMod.RetireGrantInput = {
+    inline def RetireGrantInput(): typings.awsSdkClientKmsBrowser.typesRetireGrantInputMod.RetireGrantInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesRetireGrantInputMod.RetireGrantInput]
     }
     
-    @scala.inline
-    def RevokeGrantInput(GrantId: String, KeyId: String): typings.awsSdkClientKmsBrowser.typesRevokeGrantInputMod.RevokeGrantInput = {
+    inline def RevokeGrantInput(GrantId: String, KeyId: String): typings.awsSdkClientKmsBrowser.typesRevokeGrantInputMod.RevokeGrantInput = {
       val __obj = js.Dynamic.literal(GrantId = GrantId.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesRevokeGrantInputMod.RevokeGrantInput]
     }
     
-    @scala.inline
-    def ScheduleKeyDeletionInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesScheduleKeyDeletionInputMod.ScheduleKeyDeletionInput = {
+    inline def ScheduleKeyDeletionInput(KeyId: String): typings.awsSdkClientKmsBrowser.typesScheduleKeyDeletionInputMod.ScheduleKeyDeletionInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesScheduleKeyDeletionInputMod.ScheduleKeyDeletionInput]
     }
     
-    @scala.inline
-    def TagResourceInput(KeyId: String, Tags: js.Array[Tag] | Iterable[Tag]): typings.awsSdkClientKmsBrowser.typesTagResourceInputMod.TagResourceInput = {
+    inline def TagResourceInput(KeyId: String, Tags: js.Array[Tag] | Iterable[Tag]): typings.awsSdkClientKmsBrowser.typesTagResourceInputMod.TagResourceInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesTagResourceInputMod.TagResourceInput]
     }
     
-    @scala.inline
-    def UntagResourceInput(KeyId: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientKmsBrowser.typesUntagResourceInputMod.UntagResourceInput = {
+    inline def UntagResourceInput(KeyId: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientKmsBrowser.typesUntagResourceInputMod.UntagResourceInput = {
       val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesUntagResourceInputMod.UntagResourceInput]
     }
     
-    @scala.inline
-    def UpdateAliasInput(AliasName: String, TargetKeyId: String): typings.awsSdkClientKmsBrowser.typesUpdateAliasInputMod.UpdateAliasInput = {
+    inline def UpdateAliasInput(AliasName: String, TargetKeyId: String): typings.awsSdkClientKmsBrowser.typesUpdateAliasInputMod.UpdateAliasInput = {
       val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], TargetKeyId = TargetKeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesUpdateAliasInputMod.UpdateAliasInput]
     }
     
-    @scala.inline
-    def UpdateKeyDescriptionInput(Description: String, KeyId: String): typings.awsSdkClientKmsBrowser.typesUpdateKeyDescriptionInputMod.UpdateKeyDescriptionInput = {
+    inline def UpdateKeyDescriptionInput(Description: String, KeyId: String): typings.awsSdkClientKmsBrowser.typesUpdateKeyDescriptionInputMod.UpdateKeyDescriptionInput = {
       val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientKmsBrowser.typesUpdateKeyDescriptionInputMod.UpdateKeyDescriptionInput]
     }

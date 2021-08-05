@@ -15,17 +15,14 @@ object anon {
   }
   object Abort {
     
-    @scala.inline
-    def apply(abort: () => Unit): Abort = {
+    inline def apply(abort: () => Unit): Abort = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
       __obj.asInstanceOf[Abort]
     }
     
-    @scala.inline
-    implicit class AbortMutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
+    extension [Self <: Abort](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     }
   }
 }

@@ -23,31 +23,23 @@ trait UserPausedDetails extends StObject {
 }
 object UserPausedDetails {
   
-  @scala.inline
-  def apply(): UserPausedDetails = {
+  inline def apply(): UserPausedDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPausedDetails]
   }
   
-  @scala.inline
-  implicit class UserPausedDetailsMutableBuilder[Self <: UserPausedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: UserPausedDetails](x: Self) {
     
-    @scala.inline
-    def setJobExpiresAt(value: timestampIso8601): Self = StObject.set(x, "jobExpiresAt", value.asInstanceOf[js.Any])
+    inline def setJobExpiresAt(value: timestampIso8601): Self = StObject.set(x, "jobExpiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobExpiresAtUndefined: Self = StObject.set(x, "jobExpiresAt", js.undefined)
+    inline def setJobExpiresAtUndefined: Self = StObject.set(x, "jobExpiresAt", js.undefined)
     
-    @scala.inline
-    def setJobImminentExpirationHealthEventArn(value: string): Self = StObject.set(x, "jobImminentExpirationHealthEventArn", value.asInstanceOf[js.Any])
+    inline def setJobImminentExpirationHealthEventArn(value: string): Self = StObject.set(x, "jobImminentExpirationHealthEventArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobImminentExpirationHealthEventArnUndefined: Self = StObject.set(x, "jobImminentExpirationHealthEventArn", js.undefined)
+    inline def setJobImminentExpirationHealthEventArnUndefined: Self = StObject.set(x, "jobImminentExpirationHealthEventArn", js.undefined)
     
-    @scala.inline
-    def setJobPausedAt(value: timestampIso8601): Self = StObject.set(x, "jobPausedAt", value.asInstanceOf[js.Any])
+    inline def setJobPausedAt(value: timestampIso8601): Self = StObject.set(x, "jobPausedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobPausedAtUndefined: Self = StObject.set(x, "jobPausedAt", js.undefined)
+    inline def setJobPausedAtUndefined: Self = StObject.set(x, "jobPausedAt", js.undefined)
   }
 }

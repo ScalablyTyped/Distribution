@@ -34,37 +34,27 @@ trait ParamsResourceUsersGetloginprofile
 }
 object ParamsResourceUsersGetloginprofile {
   
-  @scala.inline
-  def apply(): ParamsResourceUsersGetloginprofile = {
+  inline def apply(): ParamsResourceUsersGetloginprofile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUsersGetloginprofile]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUsersGetloginprofileMutableBuilder[Self <: ParamsResourceUsersGetloginprofile] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUsersGetloginprofile](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
+    inline def setSystemIdUndefined: Self = StObject.set(x, "systemId", js.undefined)
   }
 }

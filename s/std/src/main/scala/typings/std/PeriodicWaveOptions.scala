@@ -14,31 +14,23 @@ trait PeriodicWaveOptions
 }
 object PeriodicWaveOptions {
   
-  @scala.inline
-  def apply(): PeriodicWaveOptions = {
+  inline def apply(): PeriodicWaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PeriodicWaveOptions]
   }
   
-  @scala.inline
-  implicit class PeriodicWaveOptionsMutableBuilder[Self <: PeriodicWaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PeriodicWaveOptions](x: Self) {
     
-    @scala.inline
-    def setImag(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
+    inline def setImag(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagUndefined: Self = StObject.set(x, "imag", js.undefined)
+    inline def setImagUndefined: Self = StObject.set(x, "imag", js.undefined)
     
-    @scala.inline
-    def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value :_*))
+    inline def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value :_*))
     
-    @scala.inline
-    def setReal(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+    inline def setReal(value: js.Array[Double] | Float32Array): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
+    inline def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
     
-    @scala.inline
-    def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value :_*))
+    inline def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value :_*))
   }
 }

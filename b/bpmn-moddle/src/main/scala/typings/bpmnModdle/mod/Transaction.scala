@@ -14,8 +14,7 @@ trait Transaction
 }
 object Transaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
@@ -49,13 +48,10 @@ object Transaction {
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocal(value: String): Self = StObject.set(x, "protocal", value.asInstanceOf[js.Any])
+    inline def setProtocal(value: String): Self = StObject.set(x, "protocal", value.asInstanceOf[js.Any])
   }
 }

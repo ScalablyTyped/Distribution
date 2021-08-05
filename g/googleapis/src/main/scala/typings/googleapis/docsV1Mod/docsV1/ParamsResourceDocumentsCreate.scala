@@ -24,25 +24,19 @@ trait ParamsResourceDocumentsCreate
 }
 object ParamsResourceDocumentsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceDocumentsCreate = {
+  inline def apply(): ParamsResourceDocumentsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDocumentsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDocumentsCreateMutableBuilder[Self <: ParamsResourceDocumentsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDocumentsCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaDocument): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaDocument): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

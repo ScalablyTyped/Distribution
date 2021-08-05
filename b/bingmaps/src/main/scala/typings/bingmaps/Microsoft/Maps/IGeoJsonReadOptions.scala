@@ -20,31 +20,23 @@ trait IGeoJsonReadOptions extends StObject {
 }
 object IGeoJsonReadOptions {
   
-  @scala.inline
-  def apply(): IGeoJsonReadOptions = {
+  inline def apply(): IGeoJsonReadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGeoJsonReadOptions]
   }
   
-  @scala.inline
-  implicit class IGeoJsonReadOptionsMutableBuilder[Self <: IGeoJsonReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoJsonReadOptions](x: Self) {
     
-    @scala.inline
-    def setJsonpQueryParam(value: String): Self = StObject.set(x, "jsonpQueryParam", value.asInstanceOf[js.Any])
+    inline def setJsonpQueryParam(value: String): Self = StObject.set(x, "jsonpQueryParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonpQueryParamUndefined: Self = StObject.set(x, "jsonpQueryParam", js.undefined)
+    inline def setJsonpQueryParamUndefined: Self = StObject.set(x, "jsonpQueryParam", js.undefined)
     
-    @scala.inline
-    def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
+    inline def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
     
-    @scala.inline
-    def setStyle(value: IStylesOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: IStylesOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

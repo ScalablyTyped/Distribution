@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.HiLoLines")
 @js.native
-class HiLoLines protected ()
+/* private */ class HiLoLines ()
   extends StObject
      with typings.activexExcel.Excel.HiLoLines {
   
@@ -23,7 +23,7 @@ class HiLoLines protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.HiLoLines_typekey")
   var ExcelDotHiLoLines_typekey: typings.activexExcel.Excel.HiLoLines = js.native
   

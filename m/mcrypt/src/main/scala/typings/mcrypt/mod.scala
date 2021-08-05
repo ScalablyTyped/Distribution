@@ -57,9 +57,7 @@ object mod {
     def validateKeySize(validate: Boolean): Unit = js.native
   }
   
-  @scala.inline
-  def getAlgorithmNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlgorithmNames")().asInstanceOf[js.Array[String]]
+  inline def getAlgorithmNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlgorithmNames")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getModeNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModeNames")().asInstanceOf[js.Array[String]]
+  inline def getModeNames(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModeNames")().asInstanceOf[js.Array[String]]
 }

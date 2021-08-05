@@ -15,26 +15,20 @@ object CollectionDef {
   }
   object IAnyList {
     
-    @scala.inline
-    def apply(): IAnyList = {
+    inline def apply(): IAnyList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAnyList]
     }
     
-    @scala.inline
-    implicit class IAnyListMutableBuilder[Self <: IAnyList] (val x: Self) extends AnyVal {
+    extension [Self <: IAnyList](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[IAny]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[IAny]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: IAny*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: IAny*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -46,26 +40,20 @@ object CollectionDef {
   }
   object IBytesList {
     
-    @scala.inline
-    def apply(): IBytesList = {
+    inline def apply(): IBytesList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBytesList]
     }
     
-    @scala.inline
-    implicit class IBytesListMutableBuilder[Self <: IBytesList] (val x: Self) extends AnyVal {
+    extension [Self <: IBytesList](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[Uint8Array]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Uint8Array]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: Uint8Array*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Uint8Array*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -77,26 +65,20 @@ object CollectionDef {
   }
   object IFloatList {
     
-    @scala.inline
-    def apply(): IFloatList = {
+    inline def apply(): IFloatList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFloatList]
     }
     
-    @scala.inline
-    implicit class IFloatListMutableBuilder[Self <: IFloatList] (val x: Self) extends AnyVal {
+    extension [Self <: IFloatList](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -108,26 +90,20 @@ object CollectionDef {
   }
   object IInt64List {
     
-    @scala.inline
-    def apply(): IInt64List = {
+    inline def apply(): IInt64List = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInt64List]
     }
     
-    @scala.inline
-    implicit class IInt64ListMutableBuilder[Self <: IInt64List] (val x: Self) extends AnyVal {
+    extension [Self <: IInt64List](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -139,26 +115,20 @@ object CollectionDef {
   }
   object INodeList {
     
-    @scala.inline
-    def apply(): INodeList = {
+    inline def apply(): INodeList = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[INodeList]
     }
     
-    @scala.inline
-    implicit class INodeListMutableBuilder[Self <: INodeList] (val x: Self) extends AnyVal {
+    extension [Self <: INodeList](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
 }

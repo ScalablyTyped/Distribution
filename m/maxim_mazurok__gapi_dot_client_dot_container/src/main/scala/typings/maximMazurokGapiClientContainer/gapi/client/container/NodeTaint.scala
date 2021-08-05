@@ -17,31 +17,23 @@ trait NodeTaint extends StObject {
 }
 object NodeTaint {
   
-  @scala.inline
-  def apply(): NodeTaint = {
+  inline def apply(): NodeTaint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeTaint]
   }
   
-  @scala.inline
-  implicit class NodeTaintMutableBuilder[Self <: NodeTaint] (val x: Self) extends AnyVal {
+  extension [Self <: NodeTaint](x: Self) {
     
-    @scala.inline
-    def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

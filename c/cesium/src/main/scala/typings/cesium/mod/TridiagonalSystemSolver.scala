@@ -10,8 +10,7 @@ object TridiagonalSystemSolver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def solve(
+  inline def solve(
     diagonal: js.Array[Double],
     lower: js.Array[Double],
     upper: js.Array[Double],

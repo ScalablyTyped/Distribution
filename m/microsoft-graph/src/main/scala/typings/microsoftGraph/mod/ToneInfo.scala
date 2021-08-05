@@ -14,25 +14,19 @@ trait ToneInfo extends StObject {
 }
 object ToneInfo {
   
-  @scala.inline
-  def apply(): ToneInfo = {
+  inline def apply(): ToneInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToneInfo]
   }
   
-  @scala.inline
-  implicit class ToneInfoMutableBuilder[Self <: ToneInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ToneInfo](x: Self) {
     
-    @scala.inline
-    def setSequenceId(value: Double): Self = StObject.set(x, "sequenceId", value.asInstanceOf[js.Any])
+    inline def setSequenceId(value: Double): Self = StObject.set(x, "sequenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceIdUndefined: Self = StObject.set(x, "sequenceId", js.undefined)
+    inline def setSequenceIdUndefined: Self = StObject.set(x, "sequenceId", js.undefined)
     
-    @scala.inline
-    def setTone(value: Tone): Self = StObject.set(x, "tone", value.asInstanceOf[js.Any])
+    inline def setTone(value: Tone): Self = StObject.set(x, "tone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToneUndefined: Self = StObject.set(x, "tone", js.undefined)
+    inline def setToneUndefined: Self = StObject.set(x, "tone", js.undefined)
   }
 }

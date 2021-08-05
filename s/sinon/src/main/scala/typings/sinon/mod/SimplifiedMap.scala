@@ -12,16 +12,13 @@ trait SimplifiedMap
 }
 object SimplifiedMap {
   
-  @scala.inline
-  def apply(get: js.Any => js.Any, has: js.Any => Boolean): SimplifiedMap = {
+  inline def apply(get: js.Any => js.Any, has: js.Any => Boolean): SimplifiedMap = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
     __obj.asInstanceOf[SimplifiedMap]
   }
   
-  @scala.inline
-  implicit class SimplifiedMapMutableBuilder[Self <: SimplifiedMap] (val x: Self) extends AnyVal {
+  extension [Self <: SimplifiedMap](x: Self) {
     
-    @scala.inline
-    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

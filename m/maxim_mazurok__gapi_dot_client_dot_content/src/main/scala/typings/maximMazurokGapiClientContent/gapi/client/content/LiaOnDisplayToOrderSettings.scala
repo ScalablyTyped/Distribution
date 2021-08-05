@@ -14,25 +14,19 @@ trait LiaOnDisplayToOrderSettings extends StObject {
 }
 object LiaOnDisplayToOrderSettings {
   
-  @scala.inline
-  def apply(): LiaOnDisplayToOrderSettings = {
+  inline def apply(): LiaOnDisplayToOrderSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiaOnDisplayToOrderSettings]
   }
   
-  @scala.inline
-  implicit class LiaOnDisplayToOrderSettingsMutableBuilder[Self <: LiaOnDisplayToOrderSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LiaOnDisplayToOrderSettings](x: Self) {
     
-    @scala.inline
-    def setShippingCostPolicyUrl(value: String): Self = StObject.set(x, "shippingCostPolicyUrl", value.asInstanceOf[js.Any])
+    inline def setShippingCostPolicyUrl(value: String): Self = StObject.set(x, "shippingCostPolicyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingCostPolicyUrlUndefined: Self = StObject.set(x, "shippingCostPolicyUrl", js.undefined)
+    inline def setShippingCostPolicyUrlUndefined: Self = StObject.set(x, "shippingCostPolicyUrl", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

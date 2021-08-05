@@ -57,8 +57,7 @@ trait XIntegerBitmap
 }
 object XIntegerBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemoryLayout: IntegerBitmapLayout,
     Size: IntegerSize2D,
     acquire: () => Unit,
@@ -77,13 +76,10 @@ object XIntegerBitmap {
     __obj.asInstanceOf[XIntegerBitmap]
   }
   
-  @scala.inline
-  implicit class XIntegerBitmapMutableBuilder[Self <: XIntegerBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: XIntegerBitmap](x: Self) {
     
-    @scala.inline
-    def setSetData(value: (SeqEquiv[Double], IntegerBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
+    inline def setSetData(value: (SeqEquiv[Double], IntegerBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPixel(value: (SeqEquiv[Double], IntegerBitmapLayout, IntegerPoint2D) => Unit): Self = StObject.set(x, "setPixel", js.Any.fromFunction3(value))
+    inline def setSetPixel(value: (SeqEquiv[Double], IntegerBitmapLayout, IntegerPoint2D) => Unit): Self = StObject.set(x, "setPixel", js.Any.fromFunction3(value))
   }
 }

@@ -138,8 +138,7 @@ trait XAnimationNode
 }
 object XAnimationNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
     Begin: js.Any,
@@ -166,52 +165,36 @@ object XAnimationNode {
     __obj.asInstanceOf[XAnimationNode]
   }
   
-  @scala.inline
-  implicit class XAnimationNodeMutableBuilder[Self <: XAnimationNode] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimationNode](x: Self) {
     
-    @scala.inline
-    def setAcceleration(value: Double): Self = StObject.set(x, "Acceleration", value.asInstanceOf[js.Any])
+    inline def setAcceleration(value: Double): Self = StObject.set(x, "Acceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoReverse(value: Boolean): Self = StObject.set(x, "AutoReverse", value.asInstanceOf[js.Any])
+    inline def setAutoReverse(value: Boolean): Self = StObject.set(x, "AutoReverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBegin(value: js.Any): Self = StObject.set(x, "Begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: js.Any): Self = StObject.set(x, "Begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecelerate(value: Double): Self = StObject.set(x, "Decelerate", value.asInstanceOf[js.Any])
+    inline def setDecelerate(value: Double): Self = StObject.set(x, "Decelerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: js.Any): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Any): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: js.Any): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Any): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSync(value: js.Any): Self = StObject.set(x, "EndSync", value.asInstanceOf[js.Any])
+    inline def setEndSync(value: js.Any): Self = StObject.set(x, "EndSync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: Double): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Double): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillDefault(value: Double): Self = StObject.set(x, "FillDefault", value.asInstanceOf[js.Any])
+    inline def setFillDefault(value: Double): Self = StObject.set(x, "FillDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatCount(value: js.Any): Self = StObject.set(x, "RepeatCount", value.asInstanceOf[js.Any])
+    inline def setRepeatCount(value: js.Any): Self = StObject.set(x, "RepeatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatDuration(value: js.Any): Self = StObject.set(x, "RepeatDuration", value.asInstanceOf[js.Any])
+    inline def setRepeatDuration(value: js.Any): Self = StObject.set(x, "RepeatDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestart(value: Double): Self = StObject.set(x, "Restart", value.asInstanceOf[js.Any])
+    inline def setRestart(value: Double): Self = StObject.set(x, "Restart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartDefault(value: Double): Self = StObject.set(x, "RestartDefault", value.asInstanceOf[js.Any])
+    inline def setRestartDefault(value: Double): Self = StObject.set(x, "RestartDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserData(value: SafeArray[NamedValue]): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: SafeArray[NamedValue]): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
   }
 }

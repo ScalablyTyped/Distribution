@@ -18,19 +18,15 @@ trait DeleteTypedLinkFacetRequest extends StObject {
 }
 object DeleteTypedLinkFacetRequest {
   
-  @scala.inline
-  def apply(Name: TypedLinkName, SchemaArn: Arn): DeleteTypedLinkFacetRequest = {
+  inline def apply(Name: TypedLinkName, SchemaArn: Arn): DeleteTypedLinkFacetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTypedLinkFacetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTypedLinkFacetRequestMutableBuilder[Self <: DeleteTypedLinkFacetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTypedLinkFacetRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TypedLinkName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

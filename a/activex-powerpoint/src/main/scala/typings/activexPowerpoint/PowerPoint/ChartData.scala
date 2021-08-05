@@ -12,15 +12,14 @@ trait ChartData extends StObject {
   
   val IsLinked: Boolean
   
-  @JSName("PowerPoint.ChartData_typekey")
+  /* private */ @JSName("PowerPoint.ChartData_typekey")
   var PowerPointDotChartData_typekey: ChartData
   
   val Workbook: js.Any
 }
 object ChartData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Activate: () => Unit,
     BreakLink: () => Unit,
     IsLinked: Boolean,
@@ -32,22 +31,16 @@ object ChartData {
     __obj.asInstanceOf[ChartData]
   }
   
-  @scala.inline
-  implicit class ChartDataMutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartData](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
+    inline def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLinked(value: Boolean): Self = StObject.set(x, "IsLinked", value.asInstanceOf[js.Any])
+    inline def setIsLinked(value: Boolean): Self = StObject.set(x, "IsLinked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotChartData_typekey(value: ChartData): Self = StObject.set(x, "PowerPoint.ChartData_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotChartData_typekey(value: ChartData): Self = StObject.set(x, "PowerPoint.ChartData_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkbook(value: js.Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: js.Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
   }
 }

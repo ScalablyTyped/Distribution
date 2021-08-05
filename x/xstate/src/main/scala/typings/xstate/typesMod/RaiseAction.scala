@@ -13,8 +13,7 @@ trait RaiseAction[TEvent /* <: EventObject */] extends StObject {
 }
 object RaiseAction {
   
-  @scala.inline
-  def apply[TEvent /* <: EventObject */](
+  inline def apply[TEvent /* <: EventObject */](
     event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
     `type`: Raise
   ): RaiseAction[TEvent] = {
@@ -23,15 +22,12 @@ object RaiseAction {
     __obj.asInstanceOf[RaiseAction[TEvent]]
   }
   
-  @scala.inline
-  implicit class RaiseActionMutableBuilder[Self <: RaiseAction[?], TEvent /* <: EventObject */] (val x: Self & RaiseAction[TEvent]) extends AnyVal {
+  extension [Self <: RaiseAction[?], TEvent /* <: EventObject */](x: Self & RaiseAction[TEvent]) {
     
-    @scala.inline
-    def setEvent(
+    inline def setEvent(
       value: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
     ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Raise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Raise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

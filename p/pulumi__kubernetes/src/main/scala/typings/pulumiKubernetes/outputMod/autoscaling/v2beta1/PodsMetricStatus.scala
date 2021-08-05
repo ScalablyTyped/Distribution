@@ -27,22 +27,17 @@ trait PodsMetricStatus extends StObject {
 }
 object PodsMetricStatus {
   
-  @scala.inline
-  def apply(currentAverageValue: String, metricName: String, selector: LabelSelector): PodsMetricStatus = {
+  inline def apply(currentAverageValue: String, metricName: String, selector: LabelSelector): PodsMetricStatus = {
     val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodsMetricStatus]
   }
   
-  @scala.inline
-  implicit class PodsMetricStatusMutableBuilder[Self <: PodsMetricStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PodsMetricStatus](x: Self) {
     
-    @scala.inline
-    def setCurrentAverageValue(value: String): Self = StObject.set(x, "currentAverageValue", value.asInstanceOf[js.Any])
+    inline def setCurrentAverageValue(value: String): Self = StObject.set(x, "currentAverageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

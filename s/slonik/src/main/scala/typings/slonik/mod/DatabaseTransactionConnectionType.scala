@@ -12,8 +12,7 @@ trait DatabaseTransactionConnectionType
 }
 object DatabaseTransactionConnectionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     any: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]],
     anyFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
       js.Array[
@@ -42,10 +41,8 @@ object DatabaseTransactionConnectionType {
     __obj.asInstanceOf[DatabaseTransactionConnectionType]
   }
   
-  @scala.inline
-  implicit class DatabaseTransactionConnectionTypeMutableBuilder[Self <: DatabaseTransactionConnectionType] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseTransactionConnectionType](x: Self) {
     
-    @scala.inline
-    def setTransaction(value: TransactionFunctionType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+    inline def setTransaction(value: TransactionFunctionType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
   }
 }

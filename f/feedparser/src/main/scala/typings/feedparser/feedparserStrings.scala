@@ -11,20 +11,17 @@ object feedparserStrings {
   sealed trait atom
     extends StObject
        with Type
-  @scala.inline
-  def atom: atom = "atom".asInstanceOf[atom]
+  inline def atom: atom = "atom".asInstanceOf[atom]
   
   @js.native
   sealed trait rdf
     extends StObject
        with Type
-  @scala.inline
-  def rdf: rdf = "rdf".asInstanceOf[rdf]
+  inline def rdf: rdf = "rdf".asInstanceOf[rdf]
   
   @js.native
   sealed trait rss
     extends StObject
        with Type
-  @scala.inline
-  def rss: rss = "rss".asInstanceOf[rss]
+  inline def rss: rss = "rss".asInstanceOf[rss]
 }

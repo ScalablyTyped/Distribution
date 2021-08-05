@@ -45,58 +45,41 @@ trait RtmpGroupSettings extends StObject {
 }
 object RtmpGroupSettings {
   
-  @scala.inline
-  def apply(): RtmpGroupSettings = {
+  inline def apply(): RtmpGroupSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RtmpGroupSettings]
   }
   
-  @scala.inline
-  implicit class RtmpGroupSettingsMutableBuilder[Self <: RtmpGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RtmpGroupSettings](x: Self) {
     
-    @scala.inline
-    def setAdMarkers(value: listOfRtmpAdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
+    inline def setAdMarkers(value: listOfRtmpAdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
+    inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
-    @scala.inline
-    def setAdMarkersVarargs(value: RtmpAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
+    inline def setAdMarkersVarargs(value: RtmpAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
     
-    @scala.inline
-    def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "AuthenticationScheme", value.asInstanceOf[js.Any])
+    inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "AuthenticationScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationSchemeUndefined: Self = StObject.set(x, "AuthenticationScheme", js.undefined)
+    inline def setAuthenticationSchemeUndefined: Self = StObject.set(x, "AuthenticationScheme", js.undefined)
     
-    @scala.inline
-    def setCacheFullBehavior(value: RtmpCacheFullBehavior): Self = StObject.set(x, "CacheFullBehavior", value.asInstanceOf[js.Any])
+    inline def setCacheFullBehavior(value: RtmpCacheFullBehavior): Self = StObject.set(x, "CacheFullBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheFullBehaviorUndefined: Self = StObject.set(x, "CacheFullBehavior", js.undefined)
+    inline def setCacheFullBehaviorUndefined: Self = StObject.set(x, "CacheFullBehavior", js.undefined)
     
-    @scala.inline
-    def setCacheLength(value: integerMin30): Self = StObject.set(x, "CacheLength", value.asInstanceOf[js.Any])
+    inline def setCacheLength(value: integerMin30): Self = StObject.set(x, "CacheLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheLengthUndefined: Self = StObject.set(x, "CacheLength", js.undefined)
+    inline def setCacheLengthUndefined: Self = StObject.set(x, "CacheLength", js.undefined)
     
-    @scala.inline
-    def setCaptionData(value: RtmpCaptionData): Self = StObject.set(x, "CaptionData", value.asInstanceOf[js.Any])
+    inline def setCaptionData(value: RtmpCaptionData): Self = StObject.set(x, "CaptionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionDataUndefined: Self = StObject.set(x, "CaptionData", js.undefined)
+    inline def setCaptionDataUndefined: Self = StObject.set(x, "CaptionData", js.undefined)
     
-    @scala.inline
-    def setInputLossAction(value: InputLossActionForRtmpOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
+    inline def setInputLossAction(value: InputLossActionForRtmpOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
+    inline def setInputLossActionUndefined: Self = StObject.set(x, "InputLossAction", js.undefined)
     
-    @scala.inline
-    def setRestartDelay(value: integerMin0): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
+    inline def setRestartDelay(value: integerMin0): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
+    inline def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
   }
 }

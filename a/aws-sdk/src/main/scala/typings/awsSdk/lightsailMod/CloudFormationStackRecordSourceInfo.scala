@@ -23,31 +23,23 @@ trait CloudFormationStackRecordSourceInfo extends StObject {
 }
 object CloudFormationStackRecordSourceInfo {
   
-  @scala.inline
-  def apply(): CloudFormationStackRecordSourceInfo = {
+  inline def apply(): CloudFormationStackRecordSourceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudFormationStackRecordSourceInfo]
   }
   
-  @scala.inline
-  implicit class CloudFormationStackRecordSourceInfoMutableBuilder[Self <: CloudFormationStackRecordSourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CloudFormationStackRecordSourceInfo](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: CloudFormationStackRecordSourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: CloudFormationStackRecordSourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

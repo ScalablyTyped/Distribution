@@ -14,25 +14,19 @@ trait IAilmentRegistry extends StObject {
 }
 object IAilmentRegistry {
   
-  @scala.inline
-  def apply(ailments: js.Array[IAilment], get: String => js.UndefOr[IAilment], register: IAilment => Unit): IAilmentRegistry = {
+  inline def apply(ailments: js.Array[IAilment], get: String => js.UndefOr[IAilment], register: IAilment => Unit): IAilmentRegistry = {
     val __obj = js.Dynamic.literal(ailments = ailments.asInstanceOf[js.Any], get = js.Any.fromFunction1(get), register = js.Any.fromFunction1(register))
     __obj.asInstanceOf[IAilmentRegistry]
   }
   
-  @scala.inline
-  implicit class IAilmentRegistryMutableBuilder[Self <: IAilmentRegistry] (val x: Self) extends AnyVal {
+  extension [Self <: IAilmentRegistry](x: Self) {
     
-    @scala.inline
-    def setAilments(value: js.Array[IAilment]): Self = StObject.set(x, "ailments", value.asInstanceOf[js.Any])
+    inline def setAilments(value: js.Array[IAilment]): Self = StObject.set(x, "ailments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAilmentsVarargs(value: IAilment*): Self = StObject.set(x, "ailments", js.Array(value :_*))
+    inline def setAilmentsVarargs(value: IAilment*): Self = StObject.set(x, "ailments", js.Array(value :_*))
     
-    @scala.inline
-    def setGet(value: String => js.UndefOr[IAilment]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => js.UndefOr[IAilment]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegister(value: IAilment => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: IAilment => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }
 }

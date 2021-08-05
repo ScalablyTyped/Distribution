@@ -35,13 +35,10 @@ object pbes2paramsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait PBES2Params extends StObject {
@@ -58,8 +55,7 @@ object pbes2paramsMod {
   }
   object PBES2Params {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       encryptionScheme: typings.pkijs.algorithmIdentifierMod.default,
       fromSchema: js.Any => Unit,
       keyDerivationFunc: typings.pkijs.algorithmIdentifierMod.default,
@@ -70,23 +66,17 @@ object pbes2paramsMod {
       __obj.asInstanceOf[PBES2Params]
     }
     
-    @scala.inline
-    implicit class PBES2ParamsMutableBuilder[Self <: PBES2Params] (val x: Self) extends AnyVal {
+    extension [Self <: PBES2Params](x: Self) {
       
-      @scala.inline
-      def setEncryptionScheme(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "encryptionScheme", value.asInstanceOf[js.Any])
+      inline def setEncryptionScheme(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "encryptionScheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyDerivationFunc(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "keyDerivationFunc", value.asInstanceOf[js.Any])
+      inline def setKeyDerivationFunc(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "keyDerivationFunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

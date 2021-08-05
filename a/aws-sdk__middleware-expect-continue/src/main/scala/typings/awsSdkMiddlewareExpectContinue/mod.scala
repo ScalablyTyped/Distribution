@@ -13,15 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addExpectContinueMiddleware(options: PreviouslyResolved): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addExpectContinueMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def addExpectContinueMiddleware(options: PreviouslyResolved): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("addExpectContinueMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
   @JSImport("@aws-sdk/middleware-expect-continue", "addExpectContinueMiddlewareOptions")
   @js.native
   val addExpectContinueMiddlewareOptions: BuildHandlerOptions = js.native
   
-  @scala.inline
-  def getAddExpectContinuePlugin(options: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddExpectContinuePlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getAddExpectContinuePlugin(options: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAddExpectContinuePlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
   trait PreviouslyResolved extends StObject {
     
@@ -29,17 +27,14 @@ object mod {
   }
   object PreviouslyResolved {
     
-    @scala.inline
-    def apply(runtime: String): PreviouslyResolved = {
+    inline def apply(runtime: String): PreviouslyResolved = {
       val __obj = js.Dynamic.literal(runtime = runtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    @scala.inline
-    implicit class PreviouslyResolvedMutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
+    extension [Self <: PreviouslyResolved](x: Self) {
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }
   }
 }

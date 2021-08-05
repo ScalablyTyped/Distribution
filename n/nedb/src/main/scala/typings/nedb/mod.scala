@@ -31,8 +31,7 @@ object mod {
   }
   object Cursor {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       exec: js.Function2[/* err */ Error | Null, /* documents */ js.Array[T], Unit] => Unit,
       limit: Double => Cursor[T],
       projection: js.Any => Cursor[T],
@@ -43,23 +42,17 @@ object mod {
       __obj.asInstanceOf[Cursor[T]]
     }
     
-    @scala.inline
-    implicit class CursorMutableBuilder[Self <: Cursor[?], T] (val x: Self & Cursor[T]) extends AnyVal {
+    extension [Self <: Cursor[?], T](x: Self & Cursor[T]) {
       
-      @scala.inline
-      def setExec(value: js.Function2[/* err */ Error | Null, /* documents */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+      inline def setExec(value: js.Function2[/* err */ Error | Null, /* documents */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLimit(value: Double => Cursor[T]): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
+      inline def setLimit(value: Double => Cursor[T]): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProjection(value: js.Any => Cursor[T]): Self = StObject.set(x, "projection", js.Any.fromFunction1(value))
+      inline def setProjection(value: js.Any => Cursor[T]): Self = StObject.set(x, "projection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkip(value: Double => Cursor[T]): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: Double => Cursor[T]): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSort(value: js.Any => Cursor[T]): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+      inline def setSort(value: js.Any => Cursor[T]): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     }
   }
   
@@ -69,17 +62,14 @@ object mod {
   }
   object CursorCount {
     
-    @scala.inline
-    def apply(exec: js.Function2[/* err */ Error | Null, /* count */ Double, Unit] => Unit): CursorCount = {
+    inline def apply(exec: js.Function2[/* err */ Error | Null, /* count */ Double, Unit] => Unit): CursorCount = {
       val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec))
       __obj.asInstanceOf[CursorCount]
     }
     
-    @scala.inline
-    implicit class CursorCountMutableBuilder[Self <: CursorCount] (val x: Self) extends AnyVal {
+    extension [Self <: CursorCount](x: Self) {
       
-      @scala.inline
-      def setExec(value: js.Function2[/* err */ Error | Null, /* count */ Double, Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+      inline def setExec(value: js.Function2[/* err */ Error | Null, /* count */ Double, Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     }
   }
   
@@ -124,68 +114,48 @@ object mod {
   }
   object DataStoreOptions {
     
-    @scala.inline
-    def apply(): DataStoreOptions = {
+    inline def apply(): DataStoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataStoreOptions]
     }
     
-    @scala.inline
-    implicit class DataStoreOptionsMutableBuilder[Self <: DataStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DataStoreOptions](x: Self) {
       
-      @scala.inline
-      def setAfterSerialization(value: /* line */ String => String): Self = StObject.set(x, "afterSerialization", js.Any.fromFunction1(value))
+      inline def setAfterSerialization(value: /* line */ String => String): Self = StObject.set(x, "afterSerialization", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterSerializationUndefined: Self = StObject.set(x, "afterSerialization", js.undefined)
+      inline def setAfterSerializationUndefined: Self = StObject.set(x, "afterSerialization", js.undefined)
       
-      @scala.inline
-      def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
+      inline def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
+      inline def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
       
-      @scala.inline
-      def setBeforeDeserialization(value: /* line */ String => String): Self = StObject.set(x, "beforeDeserialization", js.Any.fromFunction1(value))
+      inline def setBeforeDeserialization(value: /* line */ String => String): Self = StObject.set(x, "beforeDeserialization", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeDeserializationUndefined: Self = StObject.set(x, "beforeDeserialization", js.undefined)
+      inline def setBeforeDeserializationUndefined: Self = StObject.set(x, "beforeDeserialization", js.undefined)
       
-      @scala.inline
-      def setCorruptAlertThreshold(value: Double): Self = StObject.set(x, "corruptAlertThreshold", value.asInstanceOf[js.Any])
+      inline def setCorruptAlertThreshold(value: Double): Self = StObject.set(x, "corruptAlertThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorruptAlertThresholdUndefined: Self = StObject.set(x, "corruptAlertThreshold", js.undefined)
+      inline def setCorruptAlertThresholdUndefined: Self = StObject.set(x, "corruptAlertThreshold", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setInMemoryOnly(value: Boolean): Self = StObject.set(x, "inMemoryOnly", value.asInstanceOf[js.Any])
+      inline def setInMemoryOnly(value: Boolean): Self = StObject.set(x, "inMemoryOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInMemoryOnlyUndefined: Self = StObject.set(x, "inMemoryOnly", js.undefined)
+      inline def setInMemoryOnlyUndefined: Self = StObject.set(x, "inMemoryOnly", js.undefined)
       
-      @scala.inline
-      def setNodeWebkitAppName(value: Boolean): Self = StObject.set(x, "nodeWebkitAppName", value.asInstanceOf[js.Any])
+      inline def setNodeWebkitAppName(value: Boolean): Self = StObject.set(x, "nodeWebkitAppName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeWebkitAppNameUndefined: Self = StObject.set(x, "nodeWebkitAppName", js.undefined)
+      inline def setNodeWebkitAppNameUndefined: Self = StObject.set(x, "nodeWebkitAppName", js.undefined)
       
-      @scala.inline
-      def setOnload(value: /* error */ Error | Null => js.Any): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+      inline def setOnload(value: /* error */ Error | Null => js.Any): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
+      inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
       
-      @scala.inline
-      def setTimestampData(value: Boolean): Self = StObject.set(x, "timestampData", value.asInstanceOf[js.Any])
+      inline def setTimestampData(value: Boolean): Self = StObject.set(x, "timestampData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampDataUndefined: Self = StObject.set(x, "timestampData", js.undefined)
+      inline def setTimestampDataUndefined: Self = StObject.set(x, "timestampData", js.undefined)
     }
   }
   
@@ -201,35 +171,26 @@ object mod {
   }
   object EnsureIndexOptions {
     
-    @scala.inline
-    def apply(fieldName: String): EnsureIndexOptions = {
+    inline def apply(fieldName: String): EnsureIndexOptions = {
       val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnsureIndexOptions]
     }
     
-    @scala.inline
-    implicit class EnsureIndexOptionsMutableBuilder[Self <: EnsureIndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EnsureIndexOptions](x: Self) {
       
-      @scala.inline
-      def setExpireAfterSeconds(value: Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
+      inline def setExpireAfterSeconds(value: Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireAfterSecondsUndefined: Self = StObject.set(x, "expireAfterSeconds", js.undefined)
+      inline def setExpireAfterSecondsUndefined: Self = StObject.set(x, "expireAfterSeconds", js.undefined)
       
-      @scala.inline
-      def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+      inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
+      inline def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
+      inline def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     }
   }
   
@@ -481,8 +442,7 @@ object mod {
   }
   object Persistence {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compactDatafile: () => Unit,
       setAutocompactionInterval: Double => Unit,
       stopAutocompaction: () => Unit
@@ -491,17 +451,13 @@ object mod {
       __obj.asInstanceOf[Persistence]
     }
     
-    @scala.inline
-    implicit class PersistenceMutableBuilder[Self <: Persistence] (val x: Self) extends AnyVal {
+    extension [Self <: Persistence](x: Self) {
       
-      @scala.inline
-      def setCompactDatafile(value: () => Unit): Self = StObject.set(x, "compactDatafile", js.Any.fromFunction0(value))
+      inline def setCompactDatafile(value: () => Unit): Self = StObject.set(x, "compactDatafile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetAutocompactionInterval(value: Double => Unit): Self = StObject.set(x, "setAutocompactionInterval", js.Any.fromFunction1(value))
+      inline def setSetAutocompactionInterval(value: Double => Unit): Self = StObject.set(x, "setAutocompactionInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopAutocompaction(value: () => Unit): Self = StObject.set(x, "stopAutocompaction", js.Any.fromFunction0(value))
+      inline def setStopAutocompaction(value: () => Unit): Self = StObject.set(x, "stopAutocompaction", js.Any.fromFunction0(value))
     }
   }
   
@@ -514,20 +470,16 @@ object mod {
   }
   object RemoveOptions {
     
-    @scala.inline
-    def apply(): RemoveOptions = {
+    inline def apply(): RemoveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoveOptions]
     }
     
-    @scala.inline
-    implicit class RemoveOptionsMutableBuilder[Self <: RemoveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveOptions](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     }
   }
   
@@ -545,32 +497,24 @@ object mod {
   }
   object UpdateOptions {
     
-    @scala.inline
-    def apply(): UpdateOptions = {
+    inline def apply(): UpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    @scala.inline
-    implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateOptions](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setReturnUpdatedDocs(value: Boolean): Self = StObject.set(x, "returnUpdatedDocs", value.asInstanceOf[js.Any])
+      inline def setReturnUpdatedDocs(value: Boolean): Self = StObject.set(x, "returnUpdatedDocs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnUpdatedDocsUndefined: Self = StObject.set(x, "returnUpdatedDocs", js.undefined)
+      inline def setReturnUpdatedDocsUndefined: Self = StObject.set(x, "returnUpdatedDocs", js.undefined)
       
-      @scala.inline
-      def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
 }

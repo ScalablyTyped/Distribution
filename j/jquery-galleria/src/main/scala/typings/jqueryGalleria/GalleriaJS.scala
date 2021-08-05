@@ -18,38 +18,28 @@ object GalleriaJS {
   }
   object GalleriaEntry {
     
-    @scala.inline
-    def apply(): GalleriaEntry = {
+    inline def apply(): GalleriaEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GalleriaEntry]
     }
     
-    @scala.inline
-    implicit class GalleriaEntryMutableBuilder[Self <: GalleriaEntry] (val x: Self) extends AnyVal {
+    extension [Self <: GalleriaEntry](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -85,32 +75,24 @@ object GalleriaJS {
   }
   object GalleriaOptions {
     
-    @scala.inline
-    def apply(dataSource: js.Array[GalleriaEntry]): GalleriaOptions = {
+    inline def apply(dataSource: js.Array[GalleriaEntry]): GalleriaOptions = {
       val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
       __obj.asInstanceOf[GalleriaOptions]
     }
     
-    @scala.inline
-    implicit class GalleriaOptionsMutableBuilder[Self <: GalleriaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GalleriaOptions](x: Self) {
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setDataSource(value: js.Array[GalleriaEntry]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[GalleriaEntry]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceVarargs(value: GalleriaEntry*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: GalleriaEntry*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
-      @scala.inline
-      def setLightbox(value: Boolean): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
+      inline def setLightbox(value: Boolean): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightboxUndefined: Self = StObject.set(x, "lightbox", js.undefined)
+      inline def setLightboxUndefined: Self = StObject.set(x, "lightbox", js.undefined)
     }
   }
 }

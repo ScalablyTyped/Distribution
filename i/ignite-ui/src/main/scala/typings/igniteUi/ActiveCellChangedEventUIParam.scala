@@ -18,25 +18,19 @@ trait ActiveCellChangedEventUIParam extends StObject {
 }
 object ActiveCellChangedEventUIParam {
   
-  @scala.inline
-  def apply(): ActiveCellChangedEventUIParam = {
+  inline def apply(): ActiveCellChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveCellChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ActiveCellChangedEventUIParamMutableBuilder[Self <: ActiveCellChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveCellChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

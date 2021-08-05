@@ -16,31 +16,23 @@ trait HTMLAttributesidclassName extends StObject {
 }
 object HTMLAttributesidclassName {
   
-  @scala.inline
-  def apply(): HTMLAttributesidclassName = {
+  inline def apply(): HTMLAttributesidclassName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTMLAttributesidclassName]
   }
   
-  @scala.inline
-  implicit class HTMLAttributesidclassNameMutableBuilder[Self <: HTMLAttributesidclassName] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLAttributesidclassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

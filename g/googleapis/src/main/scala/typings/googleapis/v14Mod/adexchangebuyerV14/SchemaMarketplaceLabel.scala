@@ -28,37 +28,27 @@ trait SchemaMarketplaceLabel extends StObject {
 }
 object SchemaMarketplaceLabel {
   
-  @scala.inline
-  def apply(): SchemaMarketplaceLabel = {
+  inline def apply(): SchemaMarketplaceLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMarketplaceLabel]
   }
   
-  @scala.inline
-  implicit class SchemaMarketplaceLabelMutableBuilder[Self <: SchemaMarketplaceLabel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMarketplaceLabel](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setCreateTimeMs(value: String): Self = StObject.set(x, "createTimeMs", value.asInstanceOf[js.Any])
+    inline def setCreateTimeMs(value: String): Self = StObject.set(x, "createTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeMsUndefined: Self = StObject.set(x, "createTimeMs", js.undefined)
+    inline def setCreateTimeMsUndefined: Self = StObject.set(x, "createTimeMs", js.undefined)
     
-    @scala.inline
-    def setDeprecatedMarketplaceDealParty(value: SchemaMarketplaceDealParty): Self = StObject.set(x, "deprecatedMarketplaceDealParty", value.asInstanceOf[js.Any])
+    inline def setDeprecatedMarketplaceDealParty(value: SchemaMarketplaceDealParty): Self = StObject.set(x, "deprecatedMarketplaceDealParty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedMarketplaceDealPartyUndefined: Self = StObject.set(x, "deprecatedMarketplaceDealParty", js.undefined)
+    inline def setDeprecatedMarketplaceDealPartyUndefined: Self = StObject.set(x, "deprecatedMarketplaceDealParty", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

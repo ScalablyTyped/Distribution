@@ -13,16 +13,13 @@ trait DeleteInstallationMediaMessage extends StObject {
 }
 object DeleteInstallationMediaMessage {
   
-  @scala.inline
-  def apply(InstallationMediaId: String): DeleteInstallationMediaMessage = {
+  inline def apply(InstallationMediaId: String): DeleteInstallationMediaMessage = {
     val __obj = js.Dynamic.literal(InstallationMediaId = InstallationMediaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInstallationMediaMessage]
   }
   
-  @scala.inline
-  implicit class DeleteInstallationMediaMessageMutableBuilder[Self <: DeleteInstallationMediaMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInstallationMediaMessage](x: Self) {
     
-    @scala.inline
-    def setInstallationMediaId(value: String): Self = StObject.set(x, "InstallationMediaId", value.asInstanceOf[js.Any])
+    inline def setInstallationMediaId(value: String): Self = StObject.set(x, "InstallationMediaId", value.asInstanceOf[js.Any])
   }
 }

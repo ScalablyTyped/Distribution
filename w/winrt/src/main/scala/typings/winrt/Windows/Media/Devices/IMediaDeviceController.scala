@@ -18,8 +18,7 @@ trait IMediaDeviceController extends StObject {
 }
 object IMediaDeviceController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
     getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
     setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction
@@ -28,16 +27,12 @@ object IMediaDeviceController {
     __obj.asInstanceOf[IMediaDeviceController]
   }
   
-  @scala.inline
-  implicit class IMediaDeviceControllerMutableBuilder[Self <: IMediaDeviceController] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaDeviceController](x: Self) {
     
-    @scala.inline
-    def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
+    inline def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
+    inline def setGetMediaStreamProperties(value: MediaStreamType => IMediaEncodingProperties): Self = StObject.set(x, "getMediaStreamProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
+    inline def setSetMediaStreamPropertiesAsync(value: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction): Self = StObject.set(x, "setMediaStreamPropertiesAsync", js.Any.fromFunction2(value))
   }
 }

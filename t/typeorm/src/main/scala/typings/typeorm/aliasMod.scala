@@ -16,7 +16,7 @@ object aliasMod {
   class Alias () extends StObject {
     def this(alias: Alias) = this()
     
-    var _metadata: js.Any = js.native
+    /* private */ var _metadata: js.Any = js.native
     
     val hasMetadata: Boolean = js.native
     

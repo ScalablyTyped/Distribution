@@ -19,28 +19,21 @@ trait SchemaDataType extends StObject {
 }
 object SchemaDataType {
   
-  @scala.inline
-  def apply(): SchemaDataType = {
+  inline def apply(): SchemaDataType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDataType]
   }
   
-  @scala.inline
-  implicit class SchemaDataTypeMutableBuilder[Self <: SchemaDataType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDataType](x: Self) {
     
-    @scala.inline
-    def setField(value: js.Array[SchemaDataTypeField]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: js.Array[SchemaDataTypeField]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setFieldVarargs(value: SchemaDataTypeField*): Self = StObject.set(x, "field", js.Array(value :_*))
+    inline def setFieldVarargs(value: SchemaDataTypeField*): Self = StObject.set(x, "field", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -331,44 +331,32 @@ object crypto {
   }
   object ECParameter {
     
-    @scala.inline
-    def apply(G: ECPointFp, curve: ECCurveFp, h: BigInteger, keylen: Double, n: BigInteger, name: String): ECParameter = {
+    inline def apply(G: ECPointFp, curve: ECCurveFp, h: BigInteger, keylen: Double, n: BigInteger, name: String): ECParameter = {
       val __obj = js.Dynamic.literal(G = G.asInstanceOf[js.Any], curve = curve.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], keylen = keylen.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ECParameter]
     }
     
-    @scala.inline
-    implicit class ECParameterMutableBuilder[Self <: ECParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ECParameter](x: Self) {
       
-      @scala.inline
-      def setCurve(value: ECCurveFp): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+      inline def setCurve(value: ECCurveFp): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: ECPointFp): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
+      inline def setG(value: ECPointFp): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH(value: BigInteger): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: BigInteger): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setKeylen(value: Double): Self = StObject.set(x, "keylen", value.asInstanceOf[js.Any])
+      inline def setKeylen(value: Double): Self = StObject.set(x, "keylen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: BigInteger): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: BigInteger): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+      inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOidUndefined: Self = StObject.set(x, "oid", js.undefined)
+      inline def setOidUndefined: Self = StObject.set(x, "oid", js.undefined)
     }
   }
   
@@ -614,8 +602,7 @@ object crypto {
   }
   object MessageDigest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       digest: () => Unit,
       digestHex: String => Unit,
       digestString: String => Unit,
@@ -627,26 +614,19 @@ object crypto {
       __obj.asInstanceOf[MessageDigest]
     }
     
-    @scala.inline
-    implicit class MessageDigestMutableBuilder[Self <: MessageDigest] (val x: Self) extends AnyVal {
+    extension [Self <: MessageDigest](x: Self) {
       
-      @scala.inline
-      def setDigest(value: () => Unit): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
+      inline def setDigest(value: () => Unit): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDigestHex(value: String => Unit): Self = StObject.set(x, "digestHex", js.Any.fromFunction1(value))
+      inline def setDigestHex(value: String => Unit): Self = StObject.set(x, "digestHex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDigestString(value: String => Unit): Self = StObject.set(x, "digestString", js.Any.fromFunction1(value))
+      inline def setDigestString(value: String => Unit): Self = StObject.set(x, "digestString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAlgAndProvider(value: (String, String) => Unit): Self = StObject.set(x, "setAlgAndProvider", js.Any.fromFunction2(value))
+      inline def setSetAlgAndProvider(value: (String, String) => Unit): Self = StObject.set(x, "setAlgAndProvider", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateHex(value: String => Unit): Self = StObject.set(x, "updateHex", js.Any.fromFunction1(value))
+      inline def setUpdateHex(value: String => Unit): Self = StObject.set(x, "updateHex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateString(value: String => Unit): Self = StObject.set(x, "updateString", js.Any.fromFunction1(value))
+      inline def setUpdateString(value: String => Unit): Self = StObject.set(x, "updateString", js.Any.fromFunction1(value))
     }
   }
   

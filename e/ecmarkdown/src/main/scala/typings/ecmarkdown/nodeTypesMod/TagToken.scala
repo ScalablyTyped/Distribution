@@ -17,22 +17,17 @@ trait TagToken
 }
 object TagToken {
   
-  @scala.inline
-  def apply(contents: String, location: LocationRange): TagToken = {
+  inline def apply(contents: String, location: LocationRange): TagToken = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tag")
     __obj.asInstanceOf[TagToken]
   }
   
-  @scala.inline
-  implicit class TagTokenMutableBuilder[Self <: TagToken] (val x: Self) extends AnyVal {
+  extension [Self <: TagToken](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: tag): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: tag): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

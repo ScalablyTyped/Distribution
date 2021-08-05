@@ -18,22 +18,17 @@ trait ScheduleKeyDeletionRequest extends StObject {
 }
 object ScheduleKeyDeletionRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType): ScheduleKeyDeletionRequest = {
+  inline def apply(KeyId: KeyIdType): ScheduleKeyDeletionRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleKeyDeletionRequest]
   }
   
-  @scala.inline
-  implicit class ScheduleKeyDeletionRequestMutableBuilder[Self <: ScheduleKeyDeletionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleKeyDeletionRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingWindowInDays(value: PendingWindowInDaysType): Self = StObject.set(x, "PendingWindowInDays", value.asInstanceOf[js.Any])
+    inline def setPendingWindowInDays(value: PendingWindowInDaysType): Self = StObject.set(x, "PendingWindowInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingWindowInDaysUndefined: Self = StObject.set(x, "PendingWindowInDays", js.undefined)
+    inline def setPendingWindowInDaysUndefined: Self = StObject.set(x, "PendingWindowInDays", js.undefined)
   }
 }

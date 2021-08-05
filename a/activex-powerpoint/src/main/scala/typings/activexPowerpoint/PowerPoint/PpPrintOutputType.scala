@@ -29,33 +29,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpPrintOutputType extends StObject
 object PpPrintOutputType {
   
-  @scala.inline
-  def ppPrintOutputBuildSlides: `7` = 7.asInstanceOf[`7`]
+  inline def ppPrintOutputBuildSlides: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def ppPrintOutputFourSlideHandouts: `8` = 8.asInstanceOf[`8`]
+  inline def ppPrintOutputFourSlideHandouts: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def ppPrintOutputNineSlideHandouts: `9` = 9.asInstanceOf[`9`]
+  inline def ppPrintOutputNineSlideHandouts: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def ppPrintOutputNotesPages: `5` = 5.asInstanceOf[`5`]
+  inline def ppPrintOutputNotesPages: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppPrintOutputOneSlideHandouts: `10` = 10.asInstanceOf[`10`]
+  inline def ppPrintOutputOneSlideHandouts: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def ppPrintOutputOutline: `6` = 6.asInstanceOf[`6`]
+  inline def ppPrintOutputOutline: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ppPrintOutputSixSlideHandouts: `4` = 4.asInstanceOf[`4`]
+  inline def ppPrintOutputSixSlideHandouts: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppPrintOutputSlides: `1` = 1.asInstanceOf[`1`]
+  inline def ppPrintOutputSlides: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppPrintOutputThreeSlideHandouts: `3` = 3.asInstanceOf[`3`]
+  inline def ppPrintOutputThreeSlideHandouts: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppPrintOutputTwoSlideHandouts: `2` = 2.asInstanceOf[`2`]
+  inline def ppPrintOutputTwoSlideHandouts: `2` = 2.asInstanceOf[`2`]
 }

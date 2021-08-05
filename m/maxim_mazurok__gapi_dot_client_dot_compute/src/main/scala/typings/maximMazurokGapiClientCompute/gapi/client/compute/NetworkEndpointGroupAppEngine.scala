@@ -35,31 +35,23 @@ trait NetworkEndpointGroupAppEngine extends StObject {
 }
 object NetworkEndpointGroupAppEngine {
   
-  @scala.inline
-  def apply(): NetworkEndpointGroupAppEngine = {
+  inline def apply(): NetworkEndpointGroupAppEngine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkEndpointGroupAppEngine]
   }
   
-  @scala.inline
-  implicit class NetworkEndpointGroupAppEngineMutableBuilder[Self <: NetworkEndpointGroupAppEngine] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkEndpointGroupAppEngine](x: Self) {
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setUrlMask(value: String): Self = StObject.set(x, "urlMask", value.asInstanceOf[js.Any])
+    inline def setUrlMask(value: String): Self = StObject.set(x, "urlMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlMaskUndefined: Self = StObject.set(x, "urlMask", js.undefined)
+    inline def setUrlMaskUndefined: Self = StObject.set(x, "urlMask", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

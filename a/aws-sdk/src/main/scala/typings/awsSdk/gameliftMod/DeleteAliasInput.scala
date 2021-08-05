@@ -13,16 +13,13 @@ trait DeleteAliasInput extends StObject {
 }
 object DeleteAliasInput {
   
-  @scala.inline
-  def apply(AliasId: AliasIdOrArn): DeleteAliasInput = {
+  inline def apply(AliasId: AliasIdOrArn): DeleteAliasInput = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAliasInput]
   }
   
-  @scala.inline
-  implicit class DeleteAliasInputMutableBuilder[Self <: DeleteAliasInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAliasInput](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
   }
 }

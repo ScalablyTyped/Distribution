@@ -48,8 +48,7 @@ trait TableAutoFormat
 }
 object TableAutoFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     IncludeBackground: Boolean,
@@ -82,25 +81,18 @@ object TableAutoFormat {
     __obj.asInstanceOf[TableAutoFormat]
   }
   
-  @scala.inline
-  implicit class TableAutoFormatMutableBuilder[Self <: TableAutoFormat] (val x: Self) extends AnyVal {
+  extension [Self <: TableAutoFormat](x: Self) {
     
-    @scala.inline
-    def setIncludeBackground(value: Boolean): Self = StObject.set(x, "IncludeBackground", value.asInstanceOf[js.Any])
+    inline def setIncludeBackground(value: Boolean): Self = StObject.set(x, "IncludeBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBorder(value: Boolean): Self = StObject.set(x, "IncludeBorder", value.asInstanceOf[js.Any])
+    inline def setIncludeBorder(value: Boolean): Self = StObject.set(x, "IncludeBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFont(value: Boolean): Self = StObject.set(x, "IncludeFont", value.asInstanceOf[js.Any])
+    inline def setIncludeFont(value: Boolean): Self = StObject.set(x, "IncludeFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeJustify(value: Boolean): Self = StObject.set(x, "IncludeJustify", value.asInstanceOf[js.Any])
+    inline def setIncludeJustify(value: Boolean): Self = StObject.set(x, "IncludeJustify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNumberFormat(value: Boolean): Self = StObject.set(x, "IncludeNumberFormat", value.asInstanceOf[js.Any])
+    inline def setIncludeNumberFormat(value: Boolean): Self = StObject.set(x, "IncludeNumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeWidthAndHeight(value: Boolean): Self = StObject.set(x, "IncludeWidthAndHeight", value.asInstanceOf[js.Any])
+    inline def setIncludeWidthAndHeight(value: Boolean): Self = StObject.set(x, "IncludeWidthAndHeight", value.asInstanceOf[js.Any])
   }
 }

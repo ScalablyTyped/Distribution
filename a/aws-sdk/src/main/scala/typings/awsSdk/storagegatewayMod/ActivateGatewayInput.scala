@@ -48,8 +48,7 @@ trait ActivateGatewayInput extends StObject {
 }
 object ActivateGatewayInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivationKey: ActivationKey,
     GatewayName: GatewayName,
     GatewayRegion: RegionId,
@@ -59,46 +58,32 @@ object ActivateGatewayInput {
     __obj.asInstanceOf[ActivateGatewayInput]
   }
   
-  @scala.inline
-  implicit class ActivateGatewayInputMutableBuilder[Self <: ActivateGatewayInput] (val x: Self) extends AnyVal {
+  extension [Self <: ActivateGatewayInput](x: Self) {
     
-    @scala.inline
-    def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
+    inline def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayName(value: GatewayName): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
+    inline def setGatewayName(value: GatewayName): Self = StObject.set(x, "GatewayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayRegion(value: RegionId): Self = StObject.set(x, "GatewayRegion", value.asInstanceOf[js.Any])
+    inline def setGatewayRegion(value: RegionId): Self = StObject.set(x, "GatewayRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayTimezone(value: GatewayTimezone): Self = StObject.set(x, "GatewayTimezone", value.asInstanceOf[js.Any])
+    inline def setGatewayTimezone(value: GatewayTimezone): Self = StObject.set(x, "GatewayTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
+    inline def setGatewayType(value: GatewayType): Self = StObject.set(x, "GatewayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
+    inline def setGatewayTypeUndefined: Self = StObject.set(x, "GatewayType", js.undefined)
     
-    @scala.inline
-    def setMediumChangerType(value: MediumChangerType): Self = StObject.set(x, "MediumChangerType", value.asInstanceOf[js.Any])
+    inline def setMediumChangerType(value: MediumChangerType): Self = StObject.set(x, "MediumChangerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumChangerTypeUndefined: Self = StObject.set(x, "MediumChangerType", js.undefined)
+    inline def setMediumChangerTypeUndefined: Self = StObject.set(x, "MediumChangerType", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTapeDriveType(value: TapeDriveType): Self = StObject.set(x, "TapeDriveType", value.asInstanceOf[js.Any])
+    inline def setTapeDriveType(value: TapeDriveType): Self = StObject.set(x, "TapeDriveType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeDriveTypeUndefined: Self = StObject.set(x, "TapeDriveType", js.undefined)
+    inline def setTapeDriveTypeUndefined: Self = StObject.set(x, "TapeDriveType", js.undefined)
   }
 }

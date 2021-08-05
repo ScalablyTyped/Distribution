@@ -11,19 +11,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @scala.inline
-  def set(date: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def set(date: String, timezoneOffset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], timezoneOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def set(date: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def set(date: Double, timezoneOffset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], timezoneOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def set(date: ValueOf): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def set(date: ValueOf, timezoneOffset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], timezoneOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(date: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def set(date: String, timezoneOffset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], timezoneOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(date: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def set(date: Double, timezoneOffset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], timezoneOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(date: ValueOf): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def set(date: ValueOf, timezoneOffset: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(date.asInstanceOf[js.Any], timezoneOffset.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

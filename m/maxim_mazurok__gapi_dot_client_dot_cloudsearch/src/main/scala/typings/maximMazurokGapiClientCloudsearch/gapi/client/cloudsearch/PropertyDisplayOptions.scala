@@ -16,19 +16,15 @@ trait PropertyDisplayOptions extends StObject {
 }
 object PropertyDisplayOptions {
   
-  @scala.inline
-  def apply(): PropertyDisplayOptions = {
+  inline def apply(): PropertyDisplayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyDisplayOptions]
   }
   
-  @scala.inline
-  implicit class PropertyDisplayOptionsMutableBuilder[Self <: PropertyDisplayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyDisplayOptions](x: Self) {
     
-    @scala.inline
-    def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
+    inline def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLabelUndefined: Self = StObject.set(x, "displayLabel", js.undefined)
+    inline def setDisplayLabelUndefined: Self = StObject.set(x, "displayLabel", js.undefined)
   }
 }

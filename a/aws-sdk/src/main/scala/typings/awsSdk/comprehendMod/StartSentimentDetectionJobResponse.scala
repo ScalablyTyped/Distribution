@@ -18,25 +18,19 @@ trait StartSentimentDetectionJobResponse extends StObject {
 }
 object StartSentimentDetectionJobResponse {
   
-  @scala.inline
-  def apply(): StartSentimentDetectionJobResponse = {
+  inline def apply(): StartSentimentDetectionJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSentimentDetectionJobResponse]
   }
   
-  @scala.inline
-  implicit class StartSentimentDetectionJobResponseMutableBuilder[Self <: StartSentimentDetectionJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartSentimentDetectionJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
   }
 }

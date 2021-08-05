@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Line")
 @js.native
-class Line protected ()
+/* private */ class Line ()
   extends StObject
      with typings.activexWord.Word.Line {
   
@@ -41,7 +41,7 @@ class Line protected ()
   /* CompleteClass */
   override val Width: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Line_typekey")
   var WordDotLine_typekey: typings.activexWord.Word.Line = js.native
 }

@@ -15,8 +15,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fetchAsyncQuestionPropertyQuestionProperty(question: DistinctQuestion[Answers], prop: QuestionProperty, answers: Answers): Observable_[DistinctQuestion[Answers]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchAsyncQuestionPropertyQuestionProperty")(question.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], answers.asInstanceOf[js.Any])).asInstanceOf[Observable_[DistinctQuestion[Answers]]]
+  inline def fetchAsyncQuestionPropertyQuestionProperty(question: DistinctQuestion[Answers], prop: QuestionProperty, answers: Answers): Observable_[DistinctQuestion[Answers]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchAsyncQuestionPropertyQuestionProperty")(question.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], answers.asInstanceOf[js.Any])).asInstanceOf[Observable_[DistinctQuestion[Answers]]]
   
   /**
     * Represents a property-name of any question-type.

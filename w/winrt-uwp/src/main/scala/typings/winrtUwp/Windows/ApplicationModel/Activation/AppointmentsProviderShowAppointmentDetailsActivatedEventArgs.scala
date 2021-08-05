@@ -31,8 +31,7 @@ trait AppointmentsProviderShowAppointmentDetailsActivatedEventArgs extends StObj
 }
 object AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     instanceStartDate: Date,
     kind: ActivationKind,
     localId: String,
@@ -45,28 +44,20 @@ object AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
     __obj.asInstanceOf[AppointmentsProviderShowAppointmentDetailsActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentsProviderShowAppointmentDetailsActivatedEventArgsMutableBuilder[Self <: AppointmentsProviderShowAppointmentDetailsActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentsProviderShowAppointmentDetailsActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
+    inline def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoamingId(value: String): Self = StObject.set(x, "roamingId", value.asInstanceOf[js.Any])
+    inline def setRoamingId(value: String): Self = StObject.set(x, "roamingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

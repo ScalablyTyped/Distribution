@@ -23,19 +23,15 @@ trait ImageFormatOptions extends StObject {
 }
 object ImageFormatOptions {
   
-  @scala.inline
-  def apply(Format: String, Resolution: Double): ImageFormatOptions = {
+  inline def apply(Format: String, Resolution: Double): ImageFormatOptions = {
     val __obj = js.Dynamic.literal(Format = Format.asInstanceOf[js.Any], Resolution = Resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageFormatOptions]
   }
   
-  @scala.inline
-  implicit class ImageFormatOptionsMutableBuilder[Self <: ImageFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageFormatOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: Double): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Double): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
   }
 }

@@ -16,31 +16,23 @@ trait Codec extends StObject {
 }
 object Codec {
   
-  @scala.inline
-  def apply(codec: String, payload: Double): Codec = {
+  inline def apply(codec: String, payload: Double): Codec = {
     val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Codec]
   }
   
-  @scala.inline
-  implicit class CodecMutableBuilder[Self <: Codec] (val x: Self) extends AnyVal {
+  extension [Self <: Codec](x: Self) {
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+    inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
   }
 }

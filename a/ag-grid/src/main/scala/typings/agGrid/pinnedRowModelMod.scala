@@ -11,13 +11,13 @@ object pinnedRowModelMod {
   @js.native
   class PinnedRowModel () extends StObject {
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createNodesFromData(allData: js.Any, isTop: js.Any): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     def forEachPinnedBottomRow(callback: js.Function2[/* rowNode */ RowNode, /* index */ Double, Unit]): Unit = js.native
     
@@ -43,9 +43,9 @@ object pinnedRowModelMod {
     
     /* private */ def getTotalHeight(rowNodes: js.Any): js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def init(): Unit = js.native
     
@@ -53,9 +53,9 @@ object pinnedRowModelMod {
     
     def isRowsToRender(floating: String): Boolean = js.native
     
-    var pinnedBottomRows: js.Any = js.native
+    /* private */ var pinnedBottomRows: js.Any = js.native
     
-    var pinnedTopRows: js.Any = js.native
+    /* private */ var pinnedTopRows: js.Any = js.native
     
     def setPinnedBottomRowData(rowData: js.Array[js.Any]): Unit = js.native
     

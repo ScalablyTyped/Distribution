@@ -17,16 +17,13 @@ trait DeletableResource
 }
 object DeletableResource {
   
-  @scala.inline
-  def apply(delete: RestMethod, get: RestMethod): DeletableResource = {
+  inline def apply(delete: RestMethod, get: RestMethod): DeletableResource = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletableResource]
   }
   
-  @scala.inline
-  implicit class DeletableResourceMutableBuilder[Self <: DeletableResource] (val x: Self) extends AnyVal {
+  extension [Self <: DeletableResource](x: Self) {
     
-    @scala.inline
-    def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
   }
 }

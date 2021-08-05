@@ -10,19 +10,15 @@ trait FailoverGlobalReplicationGroupResult extends StObject {
 }
 object FailoverGlobalReplicationGroupResult {
   
-  @scala.inline
-  def apply(): FailoverGlobalReplicationGroupResult = {
+  inline def apply(): FailoverGlobalReplicationGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FailoverGlobalReplicationGroupResult]
   }
   
-  @scala.inline
-  implicit class FailoverGlobalReplicationGroupResultMutableBuilder[Self <: FailoverGlobalReplicationGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: FailoverGlobalReplicationGroupResult](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
+    inline def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
   }
 }

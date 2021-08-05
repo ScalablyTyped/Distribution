@@ -18,34 +18,25 @@ trait BarChartProps
 }
 object BarChartProps {
   
-  @scala.inline
-  def apply(data: BarData): BarChartProps = {
+  inline def apply(data: BarData): BarChartProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarChartProps]
   }
   
-  @scala.inline
-  implicit class BarChartPropsMutableBuilder[Self <: BarChartProps] (val x: Self) extends AnyVal {
+  extension [Self <: BarChartProps](x: Self) {
     
-    @scala.inline
-    def setData(value: BarData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: BarData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBarShadow(value: Boolean): Self = StObject.set(x, "drawBarShadow", value.asInstanceOf[js.Any])
+    inline def setDrawBarShadow(value: Boolean): Self = StObject.set(x, "drawBarShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBarShadowUndefined: Self = StObject.set(x, "drawBarShadow", js.undefined)
+    inline def setDrawBarShadowUndefined: Self = StObject.set(x, "drawBarShadow", js.undefined)
     
-    @scala.inline
-    def setDrawValueAboveBar(value: Boolean): Self = StObject.set(x, "drawValueAboveBar", value.asInstanceOf[js.Any])
+    inline def setDrawValueAboveBar(value: Boolean): Self = StObject.set(x, "drawValueAboveBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawValueAboveBarUndefined: Self = StObject.set(x, "drawValueAboveBar", js.undefined)
+    inline def setDrawValueAboveBarUndefined: Self = StObject.set(x, "drawValueAboveBar", js.undefined)
     
-    @scala.inline
-    def setHighlightFullBarEnabled(value: Boolean): Self = StObject.set(x, "highlightFullBarEnabled", value.asInstanceOf[js.Any])
+    inline def setHighlightFullBarEnabled(value: Boolean): Self = StObject.set(x, "highlightFullBarEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightFullBarEnabledUndefined: Self = StObject.set(x, "highlightFullBarEnabled", js.undefined)
+    inline def setHighlightFullBarEnabledUndefined: Self = StObject.set(x, "highlightFullBarEnabled", js.undefined)
   }
 }

@@ -16,34 +16,25 @@ trait StreetViewTileData extends StObject {
 }
 object StreetViewTileData {
   
-  @scala.inline
-  def apply(getTileUrl: (String, Double, Double, Double) => String): StreetViewTileData = {
+  inline def apply(getTileUrl: (String, Double, Double, Double) => String): StreetViewTileData = {
     val __obj = js.Dynamic.literal(getTileUrl = js.Any.fromFunction4(getTileUrl))
     __obj.asInstanceOf[StreetViewTileData]
   }
   
-  @scala.inline
-  implicit class StreetViewTileDataMutableBuilder[Self <: StreetViewTileData] (val x: Self) extends AnyVal {
+  extension [Self <: StreetViewTileData](x: Self) {
     
-    @scala.inline
-    def setCenterHeading(value: Double): Self = StObject.set(x, "centerHeading", value.asInstanceOf[js.Any])
+    inline def setCenterHeading(value: Double): Self = StObject.set(x, "centerHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterHeadingUndefined: Self = StObject.set(x, "centerHeading", js.undefined)
+    inline def setCenterHeadingUndefined: Self = StObject.set(x, "centerHeading", js.undefined)
     
-    @scala.inline
-    def setGetTileUrl(value: (String, Double, Double, Double) => String): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction4(value))
+    inline def setGetTileUrl(value: (String, Double, Double, Double) => String): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTileSize(value: Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Size): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
-    @scala.inline
-    def setWorldSize(value: Size): Self = StObject.set(x, "worldSize", value.asInstanceOf[js.Any])
+    inline def setWorldSize(value: Size): Self = StObject.set(x, "worldSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldSizeUndefined: Self = StObject.set(x, "worldSize", js.undefined)
+    inline def setWorldSizeUndefined: Self = StObject.set(x, "worldSize", js.undefined)
   }
 }

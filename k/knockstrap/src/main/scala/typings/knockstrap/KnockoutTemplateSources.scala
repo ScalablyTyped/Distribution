@@ -11,16 +11,13 @@ trait KnockoutTemplateSources extends StObject {
 }
 object KnockoutTemplateSources {
   
-  @scala.inline
-  def apply(stringTemplate: Instantiable): KnockoutTemplateSources = {
+  inline def apply(stringTemplate: Instantiable): KnockoutTemplateSources = {
     val __obj = js.Dynamic.literal(stringTemplate = stringTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutTemplateSources]
   }
   
-  @scala.inline
-  implicit class KnockoutTemplateSourcesMutableBuilder[Self <: KnockoutTemplateSources] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutTemplateSources](x: Self) {
     
-    @scala.inline
-    def setStringTemplate(value: Instantiable): Self = StObject.set(x, "stringTemplate", value.asInstanceOf[js.Any])
+    inline def setStringTemplate(value: Instantiable): Self = StObject.set(x, "stringTemplate", value.asInstanceOf[js.Any])
   }
 }

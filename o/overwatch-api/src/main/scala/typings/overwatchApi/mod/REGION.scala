@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait REGION extends StObject
 object REGION {
   
-  @scala.inline
-  def cn: typings.overwatchApi.overwatchApiStrings.cn = "cn".asInstanceOf[typings.overwatchApi.overwatchApiStrings.cn]
+  inline def cn: typings.overwatchApi.overwatchApiStrings.cn = "cn".asInstanceOf[typings.overwatchApi.overwatchApiStrings.cn]
   
-  @scala.inline
-  def eu: typings.overwatchApi.overwatchApiStrings.eu = "eu".asInstanceOf[typings.overwatchApi.overwatchApiStrings.eu]
+  inline def eu: typings.overwatchApi.overwatchApiStrings.eu = "eu".asInstanceOf[typings.overwatchApi.overwatchApiStrings.eu]
   
-  @scala.inline
-  def global: typings.overwatchApi.overwatchApiStrings.global = "global".asInstanceOf[typings.overwatchApi.overwatchApiStrings.global]
+  inline def global: typings.overwatchApi.overwatchApiStrings.global = "global".asInstanceOf[typings.overwatchApi.overwatchApiStrings.global]
   
-  @scala.inline
-  def kr: typings.overwatchApi.overwatchApiStrings.kr = "kr".asInstanceOf[typings.overwatchApi.overwatchApiStrings.kr]
+  inline def kr: typings.overwatchApi.overwatchApiStrings.kr = "kr".asInstanceOf[typings.overwatchApi.overwatchApiStrings.kr]
   
-  @scala.inline
-  def us: typings.overwatchApi.overwatchApiStrings.us = "us".asInstanceOf[typings.overwatchApi.overwatchApiStrings.us]
+  inline def us: typings.overwatchApi.overwatchApiStrings.us = "us".asInstanceOf[typings.overwatchApi.overwatchApiStrings.us]
 }

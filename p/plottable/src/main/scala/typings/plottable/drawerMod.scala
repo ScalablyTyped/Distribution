@@ -31,11 +31,11 @@ object drawerMod {
       _canvasDrawerFactory: js.Function1[/* ctx */ CanvasRenderingContext2D, CanvasDrawer]
     ) = this()
     
-    var _canvasDrawerFactory: js.Any = js.native
+    /* private */ var _canvasDrawerFactory: js.Any = js.native
     
-    var _currentDrawer: js.Any = js.native
+    /* private */ var _currentDrawer: js.Any = js.native
     
-    var _svgDrawerFactory: js.Any = js.native
+    /* private */ var _svgDrawerFactory: js.Any = js.native
     
     /**
       * Mutate the surface to reflect the data being passed in. This method is responsible
@@ -106,8 +106,7 @@ object drawerMod {
   }
   object IDrawer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       draw: (js.Array[js.Any], js.Array[AppliedDrawStep]) => Unit,
       getVisualPrimitiveAtIndex: Double => Element,
       getVisualPrimitives: () => js.Array[Element],
@@ -117,20 +116,15 @@ object drawerMod {
       __obj.asInstanceOf[IDrawer]
     }
     
-    @scala.inline
-    implicit class IDrawerMutableBuilder[Self <: IDrawer] (val x: Self) extends AnyVal {
+    extension [Self <: IDrawer](x: Self) {
       
-      @scala.inline
-      def setDraw(value: (js.Array[js.Any], js.Array[AppliedDrawStep]) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+      inline def setDraw(value: (js.Array[js.Any], js.Array[AppliedDrawStep]) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetVisualPrimitiveAtIndex(value: Double => Element): Self = StObject.set(x, "getVisualPrimitiveAtIndex", js.Any.fromFunction1(value))
+      inline def setGetVisualPrimitiveAtIndex(value: Double => Element): Self = StObject.set(x, "getVisualPrimitiveAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVisualPrimitives(value: () => js.Array[Element]): Self = StObject.set(x, "getVisualPrimitives", js.Any.fromFunction0(value))
+      inline def setGetVisualPrimitives(value: () => js.Array[Element]): Self = StObject.set(x, "getVisualPrimitives", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
 }

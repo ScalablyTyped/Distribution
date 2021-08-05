@@ -13,16 +13,13 @@ trait DeleteHsmRequest extends StObject {
 }
 object DeleteHsmRequest {
   
-  @scala.inline
-  def apply(HsmArn: HsmArn): DeleteHsmRequest = {
+  inline def apply(HsmArn: HsmArn): DeleteHsmRequest = {
     val __obj = js.Dynamic.literal(HsmArn = HsmArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHsmRequest]
   }
   
-  @scala.inline
-  implicit class DeleteHsmRequestMutableBuilder[Self <: DeleteHsmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHsmRequest](x: Self) {
     
-    @scala.inline
-    def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
+    inline def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
   }
 }

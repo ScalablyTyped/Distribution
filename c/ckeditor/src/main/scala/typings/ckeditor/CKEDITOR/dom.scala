@@ -32,26 +32,20 @@ object dom {
   }
   object bookmark {
     
-    @scala.inline
-    def apply(collapsed: Boolean, endNode: node | String, serializable: Boolean, startNode: node | String): bookmark = {
+    inline def apply(collapsed: Boolean, endNode: node | String, serializable: Boolean, startNode: node | String): bookmark = {
       val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], endNode = endNode.asInstanceOf[js.Any], serializable = serializable.asInstanceOf[js.Any], startNode = startNode.asInstanceOf[js.Any])
       __obj.asInstanceOf[bookmark]
     }
     
-    @scala.inline
-    implicit class bookmarkMutableBuilder[Self <: bookmark] (val x: Self) extends AnyVal {
+    extension [Self <: bookmark](x: Self) {
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndNode(value: node | String): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
+      inline def setEndNode(value: node | String): Self = StObject.set(x, "endNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializable(value: Boolean): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
+      inline def setSerializable(value: Boolean): Self = StObject.set(x, "serializable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartNode(value: node | String): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
+      inline def setStartNode(value: node | String): Self = StObject.set(x, "startNode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,8 +67,7 @@ object dom {
   }
   object bookmark2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collapsed: Boolean,
       end: js.Array[Double],
       endOffset: Double,
@@ -87,35 +80,25 @@ object dom {
       __obj.asInstanceOf[bookmark2]
     }
     
-    @scala.inline
-    implicit class bookmark2MutableBuilder[Self <: bookmark2] (val x: Self) extends AnyVal {
+    extension [Self <: bookmark2](x: Self) {
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+      inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
+      inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
       
-      @scala.inline
-      def setIs2(value: Boolean): Self = StObject.set(x, "is2", value.asInstanceOf[js.Any])
+      inline def setIs2(value: Boolean): Self = StObject.set(x, "is2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalized(value: Boolean): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
+      inline def setNormalized(value: Boolean): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+      inline def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+      inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
     }
   }
   
@@ -618,23 +601,18 @@ object dom {
   }
   object nodeList {
     
-    @scala.inline
-    def apply(count: () => Double, getItem: Double => node, toArray: () => js.Array[node]): nodeList = {
+    inline def apply(count: () => Double, getItem: Double => node, toArray: () => js.Array[node]): nodeList = {
       val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), getItem = js.Any.fromFunction1(getItem), toArray = js.Any.fromFunction0(toArray))
       __obj.asInstanceOf[nodeList]
     }
     
-    @scala.inline
-    implicit class nodeListMutableBuilder[Self <: nodeList] (val x: Self) extends AnyVal {
+    extension [Self <: nodeList](x: Self) {
       
-      @scala.inline
-      def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+      inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItem(value: Double => node): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: Double => node): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[node]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[node]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     }
   }
   
@@ -646,20 +624,16 @@ object dom {
   }
   object position {
     
-    @scala.inline
-    def apply(x: Double, y: Double): position = {
+    inline def apply(x: Double, y: Double): position = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[position]
     }
     
-    @scala.inline
-    implicit class positionMutableBuilder[Self <: position] (val x: Self) extends AnyVal {
+    extension [Self <: position](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -927,26 +901,20 @@ object dom {
   }
   object shrinkOptions {
     
-    @scala.inline
-    def apply(): shrinkOptions = {
+    inline def apply(): shrinkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[shrinkOptions]
     }
     
-    @scala.inline
-    implicit class shrinkOptionsMutableBuilder[Self <: shrinkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: shrinkOptions](x: Self) {
       
-      @scala.inline
-      def setShrinkOnBlockBoundary(value: Boolean): Self = StObject.set(x, "shrinkOnBlockBoundary", value.asInstanceOf[js.Any])
+      inline def setShrinkOnBlockBoundary(value: Boolean): Self = StObject.set(x, "shrinkOnBlockBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShrinkOnBlockBoundaryUndefined: Self = StObject.set(x, "shrinkOnBlockBoundary", js.undefined)
+      inline def setShrinkOnBlockBoundaryUndefined: Self = StObject.set(x, "shrinkOnBlockBoundary", js.undefined)
       
-      @scala.inline
-      def setSkipBogus(value: Boolean): Self = StObject.set(x, "skipBogus", value.asInstanceOf[js.Any])
+      inline def setSkipBogus(value: Boolean): Self = StObject.set(x, "skipBogus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipBogusUndefined: Self = StObject.set(x, "skipBogus", js.undefined)
+      inline def setSkipBogusUndefined: Self = StObject.set(x, "skipBogus", js.undefined)
     }
   }
   
@@ -1003,20 +971,16 @@ object dom {
   }
   object widthAndHeight {
     
-    @scala.inline
-    def apply(height: Double, width: Double): widthAndHeight = {
+    inline def apply(height: Double, width: Double): widthAndHeight = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[widthAndHeight]
     }
     
-    @scala.inline
-    implicit class widthAndHeightMutableBuilder[Self <: widthAndHeight] (val x: Self) extends AnyVal {
+    extension [Self <: widthAndHeight](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   

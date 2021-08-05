@@ -59,8 +59,7 @@ object Input {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.Devices.Input.MouseDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.Devices.Input.MouseDevice]
+    inline def getForCurrentView(): typings.winrt.Windows.Devices.Input.MouseDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.Devices.Input.MouseDevice]
   }
   
   @JSGlobal("Windows.Devices.Input.MouseEventArgs")
@@ -104,11 +103,9 @@ object Input {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getPointerDevice(pointerId: Double): typings.winrt.Windows.Devices.Input.PointerDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevice")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Input.PointerDevice]
+    inline def getPointerDevice(pointerId: Double): typings.winrt.Windows.Devices.Input.PointerDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevice")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Devices.Input.PointerDevice]
     
-    @scala.inline
-    def getPointerDevices(): IVectorView[typings.winrt.Windows.Devices.Input.PointerDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevices")().asInstanceOf[IVectorView[typings.winrt.Windows.Devices.Input.PointerDevice]]
+    inline def getPointerDevices(): IVectorView[typings.winrt.Windows.Devices.Input.PointerDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevices")().asInstanceOf[IVectorView[typings.winrt.Windows.Devices.Input.PointerDevice]]
   }
   
   @JSGlobal("Windows.Devices.Input.PointerDeviceType")

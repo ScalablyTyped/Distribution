@@ -16,21 +16,21 @@ object wssecurityMod {
     def this(username: String, password: String, options: String) = this()
     def this(username: String, password: String, options: IWSSecurityOptions) = this()
     
-    var _actor: js.Any = js.native
+    /* private */ var _actor: js.Any = js.native
     
-    var _hasNonce: js.Any = js.native
+    /* private */ var _hasNonce: js.Any = js.native
     
-    var _hasTimeStamp: js.Any = js.native
+    /* private */ var _hasTimeStamp: js.Any = js.native
     
-    var _hasTokenCreated: js.Any = js.native
+    /* private */ var _hasTokenCreated: js.Any = js.native
     
-    var _mustUnderstand: js.Any = js.native
+    /* private */ var _mustUnderstand: js.Any = js.native
     
-    var _password: js.Any = js.native
+    /* private */ var _password: js.Any = js.native
     
-    var _passwordType: js.Any = js.native
+    /* private */ var _passwordType: js.Any = js.native
     
-    var _username: js.Any = js.native
+    /* private */ var _username: js.Any = js.native
     
     @JSName("toXML")
     def toXML_MWSSecurity(): String = js.native
@@ -52,50 +52,36 @@ object wssecurityMod {
   }
   object IWSSecurityOptions {
     
-    @scala.inline
-    def apply(): IWSSecurityOptions = {
+    inline def apply(): IWSSecurityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWSSecurityOptions]
     }
     
-    @scala.inline
-    implicit class IWSSecurityOptionsMutableBuilder[Self <: IWSSecurityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWSSecurityOptions](x: Self) {
       
-      @scala.inline
-      def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+      inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+      inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
       
-      @scala.inline
-      def setHasNonce(value: Boolean): Self = StObject.set(x, "hasNonce", value.asInstanceOf[js.Any])
+      inline def setHasNonce(value: Boolean): Self = StObject.set(x, "hasNonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasNonceUndefined: Self = StObject.set(x, "hasNonce", js.undefined)
+      inline def setHasNonceUndefined: Self = StObject.set(x, "hasNonce", js.undefined)
       
-      @scala.inline
-      def setHasTimeStamp(value: Boolean): Self = StObject.set(x, "hasTimeStamp", value.asInstanceOf[js.Any])
+      inline def setHasTimeStamp(value: Boolean): Self = StObject.set(x, "hasTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTimeStampUndefined: Self = StObject.set(x, "hasTimeStamp", js.undefined)
+      inline def setHasTimeStampUndefined: Self = StObject.set(x, "hasTimeStamp", js.undefined)
       
-      @scala.inline
-      def setHasTokenCreated(value: Boolean): Self = StObject.set(x, "hasTokenCreated", value.asInstanceOf[js.Any])
+      inline def setHasTokenCreated(value: Boolean): Self = StObject.set(x, "hasTokenCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTokenCreatedUndefined: Self = StObject.set(x, "hasTokenCreated", js.undefined)
+      inline def setHasTokenCreatedUndefined: Self = StObject.set(x, "hasTokenCreated", js.undefined)
       
-      @scala.inline
-      def setMustUnderstand(value: js.Any): Self = StObject.set(x, "mustUnderstand", value.asInstanceOf[js.Any])
+      inline def setMustUnderstand(value: js.Any): Self = StObject.set(x, "mustUnderstand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMustUnderstandUndefined: Self = StObject.set(x, "mustUnderstand", js.undefined)
+      inline def setMustUnderstandUndefined: Self = StObject.set(x, "mustUnderstand", js.undefined)
       
-      @scala.inline
-      def setPasswordType(value: String): Self = StObject.set(x, "passwordType", value.asInstanceOf[js.Any])
+      inline def setPasswordType(value: String): Self = StObject.set(x, "passwordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordTypeUndefined: Self = StObject.set(x, "passwordType", js.undefined)
+      inline def setPasswordTypeUndefined: Self = StObject.set(x, "passwordType", js.undefined)
     }
   }
 }

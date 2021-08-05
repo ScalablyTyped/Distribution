@@ -13,19 +13,15 @@ trait BackupPolicyDescription extends StObject {
 }
 object BackupPolicyDescription {
   
-  @scala.inline
-  def apply(): BackupPolicyDescription = {
+  inline def apply(): BackupPolicyDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupPolicyDescription]
   }
   
-  @scala.inline
-  implicit class BackupPolicyDescriptionMutableBuilder[Self <: BackupPolicyDescription] (val x: Self) extends AnyVal {
+  extension [Self <: BackupPolicyDescription](x: Self) {
     
-    @scala.inline
-    def setBackupPolicy(value: BackupPolicy): Self = StObject.set(x, "BackupPolicy", value.asInstanceOf[js.Any])
+    inline def setBackupPolicy(value: BackupPolicy): Self = StObject.set(x, "BackupPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPolicyUndefined: Self = StObject.set(x, "BackupPolicy", js.undefined)
+    inline def setBackupPolicyUndefined: Self = StObject.set(x, "BackupPolicy", js.undefined)
   }
 }

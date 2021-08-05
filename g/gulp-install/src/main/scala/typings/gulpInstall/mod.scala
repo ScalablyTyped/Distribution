@@ -28,47 +28,34 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowRoot(value: Boolean): Self = StObject.set(x, "allowRoot", value.asInstanceOf[js.Any])
+      inline def setAllowRoot(value: Boolean): Self = StObject.set(x, "allowRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRootUndefined: Self = StObject.set(x, "allowRoot", js.undefined)
+      inline def setAllowRootUndefined: Self = StObject.set(x, "allowRoot", js.undefined)
       
-      @scala.inline
-      def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreScripts(value: Boolean): Self = StObject.set(x, "ignoreScripts", value.asInstanceOf[js.Any])
+      inline def setIgnoreScripts(value: Boolean): Self = StObject.set(x, "ignoreScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreScriptsUndefined: Self = StObject.set(x, "ignoreScripts", js.undefined)
+      inline def setIgnoreScriptsUndefined: Self = StObject.set(x, "ignoreScripts", js.undefined)
       
-      @scala.inline
-      def setNoOptional(value: Boolean): Self = StObject.set(x, "noOptional", value.asInstanceOf[js.Any])
+      inline def setNoOptional(value: Boolean): Self = StObject.set(x, "noOptional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoOptionalUndefined: Self = StObject.set(x, "noOptional", js.undefined)
+      inline def setNoOptionalUndefined: Self = StObject.set(x, "noOptional", js.undefined)
       
-      @scala.inline
-      def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+      inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
+      inline def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
     }
   }
   

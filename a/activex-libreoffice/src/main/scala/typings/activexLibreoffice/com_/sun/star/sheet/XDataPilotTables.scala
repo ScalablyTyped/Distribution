@@ -41,8 +41,7 @@ trait XDataPilotTables
 }
 object XDataPilotTables {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -61,16 +60,12 @@ object XDataPilotTables {
     __obj.asInstanceOf[XDataPilotTables]
   }
   
-  @scala.inline
-  implicit class XDataPilotTablesMutableBuilder[Self <: XDataPilotTables] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotTables](x: Self) {
     
-    @scala.inline
-    def setCreateDataPilotDescriptor(value: () => XDataPilotDescriptor): Self = StObject.set(x, "createDataPilotDescriptor", js.Any.fromFunction0(value))
+    inline def setCreateDataPilotDescriptor(value: () => XDataPilotDescriptor): Self = StObject.set(x, "createDataPilotDescriptor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertNewByName(value: (String, CellAddress, XDataPilotDescriptor) => Unit): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction3(value))
+    inline def setInsertNewByName(value: (String, CellAddress, XDataPilotDescriptor) => Unit): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
   }
 }

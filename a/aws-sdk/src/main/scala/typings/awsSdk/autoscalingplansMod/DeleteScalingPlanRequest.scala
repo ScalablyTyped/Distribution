@@ -18,19 +18,15 @@ trait DeleteScalingPlanRequest extends StObject {
 }
 object DeleteScalingPlanRequest {
   
-  @scala.inline
-  def apply(ScalingPlanName: ScalingPlanName, ScalingPlanVersion: ScalingPlanVersion): DeleteScalingPlanRequest = {
+  inline def apply(ScalingPlanName: ScalingPlanName, ScalingPlanVersion: ScalingPlanVersion): DeleteScalingPlanRequest = {
     val __obj = js.Dynamic.literal(ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any], ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScalingPlanRequest]
   }
   
-  @scala.inline
-  implicit class DeleteScalingPlanRequestMutableBuilder[Self <: DeleteScalingPlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScalingPlanRequest](x: Self) {
     
-    @scala.inline
-    def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
+    inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
+    inline def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
   }
 }

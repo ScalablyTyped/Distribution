@@ -14,31 +14,23 @@ trait Rotation extends StObject {
 }
 object Rotation {
   
-  @scala.inline
-  def apply(): Rotation = {
+  inline def apply(): Rotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rotation]
   }
   
-  @scala.inline
-  implicit class RotationMutableBuilder[Self <: Rotation] (val x: Self) extends AnyVal {
+  extension [Self <: Rotation](x: Self) {
     
-    @scala.inline
-    def setRotation(value: QuaternionLike): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: QuaternionLike): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationNull: Self = StObject.set(x, "rotation", null)
+    inline def setRotationNull: Self = StObject.set(x, "rotation", null)
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setTranslation(value: Vector3Like): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+    inline def setTranslation(value: Vector3Like): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationNull: Self = StObject.set(x, "translation", null)
+    inline def setTranslationNull: Self = StObject.set(x, "translation", null)
     
-    @scala.inline
-    def setTranslationUndefined: Self = StObject.set(x, "translation", js.undefined)
+    inline def setTranslationUndefined: Self = StObject.set(x, "translation", js.undefined)
   }
 }

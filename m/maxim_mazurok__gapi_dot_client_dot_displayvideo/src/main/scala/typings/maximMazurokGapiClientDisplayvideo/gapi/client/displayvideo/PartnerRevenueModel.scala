@@ -20,25 +20,19 @@ trait PartnerRevenueModel extends StObject {
 }
 object PartnerRevenueModel {
   
-  @scala.inline
-  def apply(): PartnerRevenueModel = {
+  inline def apply(): PartnerRevenueModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartnerRevenueModel]
   }
   
-  @scala.inline
-  implicit class PartnerRevenueModelMutableBuilder[Self <: PartnerRevenueModel] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerRevenueModel](x: Self) {
     
-    @scala.inline
-    def setMarkupAmount(value: String): Self = StObject.set(x, "markupAmount", value.asInstanceOf[js.Any])
+    inline def setMarkupAmount(value: String): Self = StObject.set(x, "markupAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkupAmountUndefined: Self = StObject.set(x, "markupAmount", js.undefined)
+    inline def setMarkupAmountUndefined: Self = StObject.set(x, "markupAmount", js.undefined)
     
-    @scala.inline
-    def setMarkupType(value: String): Self = StObject.set(x, "markupType", value.asInstanceOf[js.Any])
+    inline def setMarkupType(value: String): Self = StObject.set(x, "markupType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkupTypeUndefined: Self = StObject.set(x, "markupType", js.undefined)
+    inline def setMarkupTypeUndefined: Self = StObject.set(x, "markupType", js.undefined)
   }
 }

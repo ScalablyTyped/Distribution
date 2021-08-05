@@ -17,8 +17,7 @@ trait IsVisible extends StObject {
 }
 object IsVisible {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isVisible: Boolean,
     month: Moment,
     onMonthSelect: (Moment, String) => Unit,
@@ -28,19 +27,14 @@ object IsVisible {
     __obj.asInstanceOf[IsVisible]
   }
   
-  @scala.inline
-  implicit class IsVisibleMutableBuilder[Self <: IsVisible] (val x: Self) extends AnyVal {
+  extension [Self <: IsVisible](x: Self) {
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Moment): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Moment): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMonthSelect(value: (Moment, String) => Unit): Self = StObject.set(x, "onMonthSelect", js.Any.fromFunction2(value))
+    inline def setOnMonthSelect(value: (Moment, String) => Unit): Self = StObject.set(x, "onMonthSelect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnYearSelect(value: (Moment, String) => Unit): Self = StObject.set(x, "onYearSelect", js.Any.fromFunction2(value))
+    inline def setOnYearSelect(value: (Moment, String) => Unit): Self = StObject.set(x, "onYearSelect", js.Any.fromFunction2(value))
   }
 }

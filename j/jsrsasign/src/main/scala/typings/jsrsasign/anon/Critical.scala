@@ -18,28 +18,21 @@ trait Critical extends StObject {
 }
 object Critical {
   
-  @scala.inline
-  def apply(issuer: StringParam, kid: HexParam, sn: HexParam): Critical = {
+  inline def apply(issuer: StringParam, kid: HexParam, sn: HexParam): Critical = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any], kid = kid.asInstanceOf[js.Any], sn = sn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Critical]
   }
   
-  @scala.inline
-  implicit class CriticalMutableBuilder[Self <: Critical] (val x: Self) extends AnyVal {
+  extension [Self <: Critical](x: Self) {
     
-    @scala.inline
-    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
+    inline def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: StringParam): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: StringParam): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKid(value: HexParam): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
+    inline def setKid(value: HexParam): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSn(value: HexParam): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
+    inline def setSn(value: HexParam): Self = StObject.set(x, "sn", value.asInstanceOf[js.Any])
   }
 }

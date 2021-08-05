@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLOptionButtonElement extends StObject {
   
-  @JSName("MSHTML.HTMLOptionButtonElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLOptionButtonElement_typekey")
   var MSHTMLDotHTMLOptionButtonElement_typekey: HTMLOptionButtonElement = js.native
   
   var accessKey: String = js.native

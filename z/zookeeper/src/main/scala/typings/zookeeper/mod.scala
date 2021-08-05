@@ -145,44 +145,32 @@ object mod {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(): ConnectionOptions = {
+    inline def apply(): ConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+      inline def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+      inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      @scala.inline
-      def setData_as_buffer(value: Boolean): Self = StObject.set(x, "data_as_buffer", value.asInstanceOf[js.Any])
+      inline def setData_as_buffer(value: Boolean): Self = StObject.set(x, "data_as_buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData_as_bufferUndefined: Self = StObject.set(x, "data_as_buffer", js.undefined)
+      inline def setData_as_bufferUndefined: Self = StObject.set(x, "data_as_buffer", js.undefined)
       
-      @scala.inline
-      def setDebug_level(value: Double): Self = StObject.set(x, "debug_level", value.asInstanceOf[js.Any])
+      inline def setDebug_level(value: Double): Self = StObject.set(x, "debug_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug_levelUndefined: Self = StObject.set(x, "debug_level", js.undefined)
+      inline def setDebug_levelUndefined: Self = StObject.set(x, "debug_level", js.undefined)
       
-      @scala.inline
-      def setHost_order_deterministic(value: Boolean): Self = StObject.set(x, "host_order_deterministic", value.asInstanceOf[js.Any])
+      inline def setHost_order_deterministic(value: Boolean): Self = StObject.set(x, "host_order_deterministic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost_order_deterministicUndefined: Self = StObject.set(x, "host_order_deterministic", js.undefined)
+      inline def setHost_order_deterministicUndefined: Self = StObject.set(x, "host_order_deterministic", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -212,8 +200,7 @@ object mod {
   }
   object Stat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aversion: Double,
       ctime: Double,
       cversion: Double,
@@ -230,41 +217,29 @@ object mod {
       __obj.asInstanceOf[Stat]
     }
     
-    @scala.inline
-    implicit class StatMutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
+    extension [Self <: Stat](x: Self) {
       
-      @scala.inline
-      def setAversion(value: Double): Self = StObject.set(x, "aversion", value.asInstanceOf[js.Any])
+      inline def setAversion(value: Double): Self = StObject.set(x, "aversion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCversion(value: Double): Self = StObject.set(x, "cversion", value.asInstanceOf[js.Any])
+      inline def setCversion(value: Double): Self = StObject.set(x, "cversion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCzxid(value: Double): Self = StObject.set(x, "czxid", value.asInstanceOf[js.Any])
+      inline def setCzxid(value: Double): Self = StObject.set(x, "czxid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
+      inline def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralOwner(value: String): Self = StObject.set(x, "ephemeralOwner", value.asInstanceOf[js.Any])
+      inline def setEphemeralOwner(value: String): Self = StObject.set(x, "ephemeralOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMzxid(value: Double): Self = StObject.set(x, "mzxid", value.asInstanceOf[js.Any])
+      inline def setMzxid(value: Double): Self = StObject.set(x, "mzxid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumChildren(value: Double): Self = StObject.set(x, "numChildren", value.asInstanceOf[js.Any])
+      inline def setNumChildren(value: Double): Self = StObject.set(x, "numChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPzxid(value: Double): Self = StObject.set(x, "pzxid", value.asInstanceOf[js.Any])
+      inline def setPzxid(value: Double): Self = StObject.set(x, "pzxid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

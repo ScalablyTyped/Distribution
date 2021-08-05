@@ -23,31 +23,23 @@ trait ListAccessKeysResponse extends StObject {
 }
 object ListAccessKeysResponse {
   
-  @scala.inline
-  def apply(AccessKeyMetadata: accessKeyMetadataListType): ListAccessKeysResponse = {
+  inline def apply(AccessKeyMetadata: accessKeyMetadataListType): ListAccessKeysResponse = {
     val __obj = js.Dynamic.literal(AccessKeyMetadata = AccessKeyMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccessKeysResponse]
   }
   
-  @scala.inline
-  implicit class ListAccessKeysResponseMutableBuilder[Self <: ListAccessKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccessKeysResponse](x: Self) {
     
-    @scala.inline
-    def setAccessKeyMetadata(value: accessKeyMetadataListType): Self = StObject.set(x, "AccessKeyMetadata", value.asInstanceOf[js.Any])
+    inline def setAccessKeyMetadata(value: accessKeyMetadataListType): Self = StObject.set(x, "AccessKeyMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeyMetadataVarargs(value: AccessKeyMetadata*): Self = StObject.set(x, "AccessKeyMetadata", js.Array(value :_*))
+    inline def setAccessKeyMetadataVarargs(value: AccessKeyMetadata*): Self = StObject.set(x, "AccessKeyMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

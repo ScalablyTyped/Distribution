@@ -28,8 +28,7 @@ trait AttachObjectRequest extends StObject {
 }
 object AttachObjectRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChildReference: ObjectReference,
     DirectoryArn: Arn,
     LinkName: LinkName,
@@ -39,19 +38,14 @@ object AttachObjectRequest {
     __obj.asInstanceOf[AttachObjectRequest]
   }
   
-  @scala.inline
-  implicit class AttachObjectRequestMutableBuilder[Self <: AttachObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachObjectRequest](x: Self) {
     
-    @scala.inline
-    def setChildReference(value: ObjectReference): Self = StObject.set(x, "ChildReference", value.asInstanceOf[js.Any])
+    inline def setChildReference(value: ObjectReference): Self = StObject.set(x, "ChildReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
+    inline def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
+    inline def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
   }
 }

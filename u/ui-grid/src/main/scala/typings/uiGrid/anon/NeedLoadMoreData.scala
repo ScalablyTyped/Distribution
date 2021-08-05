@@ -18,19 +18,15 @@ trait NeedLoadMoreData extends StObject {
 }
 object NeedLoadMoreData {
   
-  @scala.inline
-  def apply(needLoadMoreData: js.Function, needLoadMoreDataTop: js.Function): NeedLoadMoreData = {
+  inline def apply(needLoadMoreData: js.Function, needLoadMoreDataTop: js.Function): NeedLoadMoreData = {
     val __obj = js.Dynamic.literal(needLoadMoreData = needLoadMoreData.asInstanceOf[js.Any], needLoadMoreDataTop = needLoadMoreDataTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[NeedLoadMoreData]
   }
   
-  @scala.inline
-  implicit class NeedLoadMoreDataMutableBuilder[Self <: NeedLoadMoreData] (val x: Self) extends AnyVal {
+  extension [Self <: NeedLoadMoreData](x: Self) {
     
-    @scala.inline
-    def setNeedLoadMoreData(value: js.Function): Self = StObject.set(x, "needLoadMoreData", value.asInstanceOf[js.Any])
+    inline def setNeedLoadMoreData(value: js.Function): Self = StObject.set(x, "needLoadMoreData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedLoadMoreDataTop(value: js.Function): Self = StObject.set(x, "needLoadMoreDataTop", value.asInstanceOf[js.Any])
+    inline def setNeedLoadMoreDataTop(value: js.Function): Self = StObject.set(x, "needLoadMoreDataTop", value.asInstanceOf[js.Any])
   }
 }

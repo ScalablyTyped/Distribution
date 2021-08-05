@@ -14,25 +14,19 @@ trait AnalyzeIamPolicyLongrunningRequest extends StObject {
 }
 object AnalyzeIamPolicyLongrunningRequest {
   
-  @scala.inline
-  def apply(): AnalyzeIamPolicyLongrunningRequest = {
+  inline def apply(): AnalyzeIamPolicyLongrunningRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyzeIamPolicyLongrunningRequest]
   }
   
-  @scala.inline
-  implicit class AnalyzeIamPolicyLongrunningRequestMutableBuilder[Self <: AnalyzeIamPolicyLongrunningRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzeIamPolicyLongrunningRequest](x: Self) {
     
-    @scala.inline
-    def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "analysisQuery", value.asInstanceOf[js.Any])
+    inline def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "analysisQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisQueryUndefined: Self = StObject.set(x, "analysisQuery", js.undefined)
+    inline def setAnalysisQueryUndefined: Self = StObject.set(x, "analysisQuery", js.undefined)
     
-    @scala.inline
-    def setOutputConfig(value: IamPolicyAnalysisOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: IamPolicyAnalysisOutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
   }
 }

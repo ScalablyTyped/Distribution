@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringDictionary[String]]
-  @scala.inline
-  def apply(str: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def apply(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringDictionary[String]]
+  inline def apply(str: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
   @JSImport("parse-env-string", JSImport.Namespace)
   @js.native

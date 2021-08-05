@@ -99,59 +99,42 @@ object wasiMod {
   }
   object WASIOptions {
     
-    @scala.inline
-    def apply(): WASIOptions = {
+    inline def apply(): WASIOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WASIOptions]
     }
     
-    @scala.inline
-    implicit class WASIOptionsMutableBuilder[Self <: WASIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WASIOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[java.lang.String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[java.lang.String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: java.lang.String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: java.lang.String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setPreopens(value: Dict[java.lang.String]): Self = StObject.set(x, "preopens", value.asInstanceOf[js.Any])
+      inline def setPreopens(value: Dict[java.lang.String]): Self = StObject.set(x, "preopens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreopensUndefined: Self = StObject.set(x, "preopens", js.undefined)
+      inline def setPreopensUndefined: Self = StObject.set(x, "preopens", js.undefined)
       
-      @scala.inline
-      def setReturnOnExit(value: Boolean): Self = StObject.set(x, "returnOnExit", value.asInstanceOf[js.Any])
+      inline def setReturnOnExit(value: Boolean): Self = StObject.set(x, "returnOnExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnOnExitUndefined: Self = StObject.set(x, "returnOnExit", js.undefined)
+      inline def setReturnOnExitUndefined: Self = StObject.set(x, "returnOnExit", js.undefined)
       
-      @scala.inline
-      def setStderr(value: Double): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Double): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdin(value: Double): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: Double): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStdout(value: Double): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: Double): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
 }

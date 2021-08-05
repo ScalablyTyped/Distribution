@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlacementBeacon extends StObject
 object PlacementBeacon {
   
-  @scala.inline
-  def bottom: typings.reactJoyride.reactJoyrideStrings.bottom = "bottom".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.bottom]
+  inline def bottom: typings.reactJoyride.reactJoyrideStrings.bottom = "bottom".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.bottom]
   
-  @scala.inline
-  def left: typings.reactJoyride.reactJoyrideStrings.left = "left".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.left]
+  inline def left: typings.reactJoyride.reactJoyrideStrings.left = "left".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.left]
   
-  @scala.inline
-  def right: typings.reactJoyride.reactJoyrideStrings.right = "right".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.right]
+  inline def right: typings.reactJoyride.reactJoyrideStrings.right = "right".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.right]
   
-  @scala.inline
-  def top: typings.reactJoyride.reactJoyrideStrings.top = "top".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.top]
+  inline def top: typings.reactJoyride.reactJoyrideStrings.top = "top".asInstanceOf[typings.reactJoyride.reactJoyrideStrings.top]
 }

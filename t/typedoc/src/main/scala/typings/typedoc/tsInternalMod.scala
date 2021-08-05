@@ -26,29 +26,25 @@ object tsInternalMod {
   trait CommandLineOption extends StObject
   object CommandLineOption {
     
-    @scala.inline
-    def CommandLineOptionOfCustomType(name: String, `type`: Map[Double | String, js.Any]): typings.typedoc.tsInternalMod.CommandLineOptionOfCustomType = {
+    inline def CommandLineOptionOfCustomType(name: String, `type`: Map[Double | String, js.Any]): typings.typedoc.tsInternalMod.CommandLineOptionOfCustomType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.typedoc.tsInternalMod.CommandLineOptionOfCustomType]
     }
     
-    @scala.inline
-    def CommandLineOptionOfListType(element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType, name: String): typings.typedoc.tsInternalMod.CommandLineOptionOfListType = {
+    inline def CommandLineOptionOfListType(element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType, name: String): typings.typedoc.tsInternalMod.CommandLineOptionOfListType = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("list")
       __obj.asInstanceOf[typings.typedoc.tsInternalMod.CommandLineOptionOfListType]
     }
     
-    @scala.inline
-    def CommandLineOptionOfPrimitiveType(name: String, `type`: string | number | boolean): typings.typedoc.tsInternalMod.CommandLineOptionOfPrimitiveType = {
+    inline def CommandLineOptionOfPrimitiveType(name: String, `type`: string | number | boolean): typings.typedoc.tsInternalMod.CommandLineOptionOfPrimitiveType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.typedoc.tsInternalMod.CommandLineOptionOfPrimitiveType]
     }
     
-    @scala.inline
-    def TsConfigOnlyOption(name: String): typings.typedoc.tsInternalMod.TsConfigOnlyOption = {
+    inline def TsConfigOnlyOption(name: String): typings.typedoc.tsInternalMod.TsConfigOnlyOption = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("object")
       __obj.asInstanceOf[typings.typedoc.tsInternalMod.TsConfigOnlyOption]
@@ -75,57 +71,41 @@ object tsInternalMod {
   }
   object CommandLineOptionBase {
     
-    @scala.inline
-    def apply(name: String, `type`: string | number | boolean | `object` | list | (Map[Double | String, js.Any])): CommandLineOptionBase = {
+    inline def apply(name: String, `type`: string | number | boolean | `object` | list | (Map[Double | String, js.Any])): CommandLineOptionBase = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandLineOptionBase]
     }
     
-    @scala.inline
-    implicit class CommandLineOptionBaseMutableBuilder[Self <: CommandLineOptionBase] (val x: Self) extends AnyVal {
+    extension [Self <: CommandLineOptionBase](x: Self) {
       
-      @scala.inline
-      def setDescription(value: DiagnosticMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: DiagnosticMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+      inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
       
-      @scala.inline
-      def setIsFilePath(value: Boolean): Self = StObject.set(x, "isFilePath", value.asInstanceOf[js.Any])
+      inline def setIsFilePath(value: Boolean): Self = StObject.set(x, "isFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFilePathUndefined: Self = StObject.set(x, "isFilePath", js.undefined)
+      inline def setIsFilePathUndefined: Self = StObject.set(x, "isFilePath", js.undefined)
       
-      @scala.inline
-      def setIsTSConfigOnly(value: Boolean): Self = StObject.set(x, "isTSConfigOnly", value.asInstanceOf[js.Any])
+      inline def setIsTSConfigOnly(value: Boolean): Self = StObject.set(x, "isTSConfigOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTSConfigOnlyUndefined: Self = StObject.set(x, "isTSConfigOnly", js.undefined)
+      inline def setIsTSConfigOnlyUndefined: Self = StObject.set(x, "isTSConfigOnly", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamType(value: DiagnosticMessage): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
+      inline def setParamType(value: DiagnosticMessage): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamTypeUndefined: Self = StObject.set(x, "paramType", js.undefined)
+      inline def setParamTypeUndefined: Self = StObject.set(x, "paramType", js.undefined)
       
-      @scala.inline
-      def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+      inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
-      @scala.inline
-      def setType(value: string | number | boolean | `object` | list | (Map[Double | String, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: string | number | boolean | `object` | list | (Map[Double | String, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,18 +119,15 @@ object tsInternalMod {
   }
   object CommandLineOptionOfCustomType {
     
-    @scala.inline
-    def apply(name: String, `type`: Map[Double | String, js.Any]): CommandLineOptionOfCustomType = {
+    inline def apply(name: String, `type`: Map[Double | String, js.Any]): CommandLineOptionOfCustomType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandLineOptionOfCustomType]
     }
     
-    @scala.inline
-    implicit class CommandLineOptionOfCustomTypeMutableBuilder[Self <: CommandLineOptionOfCustomType] (val x: Self) extends AnyVal {
+    extension [Self <: CommandLineOptionOfCustomType](x: Self) {
       
-      @scala.inline
-      def setType(value: Map[Double | String, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Map[Double | String, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,21 +143,17 @@ object tsInternalMod {
   }
   object CommandLineOptionOfListType {
     
-    @scala.inline
-    def apply(element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType, name: String): CommandLineOptionOfListType = {
+    inline def apply(element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType, name: String): CommandLineOptionOfListType = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("list")
       __obj.asInstanceOf[CommandLineOptionOfListType]
     }
     
-    @scala.inline
-    implicit class CommandLineOptionOfListTypeMutableBuilder[Self <: CommandLineOptionOfListType] (val x: Self) extends AnyVal {
+    extension [Self <: CommandLineOptionOfListType](x: Self) {
       
-      @scala.inline
-      def setElement(value: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: list): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,18 +167,15 @@ object tsInternalMod {
   }
   object CommandLineOptionOfPrimitiveType {
     
-    @scala.inline
-    def apply(name: String, `type`: string | number | boolean): CommandLineOptionOfPrimitiveType = {
+    inline def apply(name: String, `type`: string | number | boolean): CommandLineOptionOfPrimitiveType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandLineOptionOfPrimitiveType]
     }
     
-    @scala.inline
-    implicit class CommandLineOptionOfPrimitiveTypeMutableBuilder[Self <: CommandLineOptionOfPrimitiveType] (val x: Self) extends AnyVal {
+    extension [Self <: CommandLineOptionOfPrimitiveType](x: Self) {
       
-      @scala.inline
-      def setType(value: string | number | boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: string | number | boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -219,18 +189,15 @@ object tsInternalMod {
   }
   object TsConfigOnlyOption {
     
-    @scala.inline
-    def apply(name: String): TsConfigOnlyOption = {
+    inline def apply(name: String): TsConfigOnlyOption = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("object")
       __obj.asInstanceOf[TsConfigOnlyOption]
     }
     
-    @scala.inline
-    implicit class TsConfigOnlyOptionMutableBuilder[Self <: TsConfigOnlyOption] (val x: Self) extends AnyVal {
+    extension [Self <: TsConfigOnlyOption](x: Self) {
       
-      @scala.inline
-      def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -245,26 +212,20 @@ object tsInternalMod {
     }
     object Node {
       
-      @scala.inline
-      def apply(): Node = {
+      inline def apply(): Node = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Node]
       }
       
-      @scala.inline
-      implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+      extension [Self <: Node](x: Self) {
         
-        @scala.inline
-        def setLocalSymbol(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "localSymbol", value.asInstanceOf[js.Any])
+        inline def setLocalSymbol(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "localSymbol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalSymbolUndefined: Self = StObject.set(x, "localSymbol", js.undefined)
+        inline def setLocalSymbolUndefined: Self = StObject.set(x, "localSymbol", js.undefined)
         
-        @scala.inline
-        def setSymbol(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+        inline def setSymbol(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+        inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       }
     }
     
@@ -274,20 +235,16 @@ object tsInternalMod {
     }
     object Symbol {
       
-      @scala.inline
-      def apply(): Symbol = {
+      inline def apply(): Symbol = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Symbol]
       }
       
-      @scala.inline
-      implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+      extension [Self <: Symbol](x: Self) {
         
-        @scala.inline
-        def setParent(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: typings.typescript.mod.Symbol): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+        inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       }
     }
   }

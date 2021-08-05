@@ -11,22 +11,17 @@ trait ImportAdminOverridesResponse extends StObject {
 }
 object ImportAdminOverridesResponse {
   
-  @scala.inline
-  def apply(): ImportAdminOverridesResponse = {
+  inline def apply(): ImportAdminOverridesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportAdminOverridesResponse]
   }
   
-  @scala.inline
-  implicit class ImportAdminOverridesResponseMutableBuilder[Self <: ImportAdminOverridesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAdminOverridesResponse](x: Self) {
     
-    @scala.inline
-    def setOverrides(value: js.Array[QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: js.Array[QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setOverridesVarargs(value: QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
   }
 }

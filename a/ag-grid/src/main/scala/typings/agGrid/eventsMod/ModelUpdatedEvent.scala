@@ -27,8 +27,7 @@ trait ModelUpdatedEvent
 }
 object ModelUpdatedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animate: Boolean,
     api: GridApi,
     columnApi: ColumnApi,
@@ -42,19 +41,14 @@ object ModelUpdatedEvent {
     __obj.asInstanceOf[ModelUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class ModelUpdatedEventMutableBuilder[Self <: ModelUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ModelUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepRenderedRows(value: Boolean): Self = StObject.set(x, "keepRenderedRows", value.asInstanceOf[js.Any])
+    inline def setKeepRenderedRows(value: Boolean): Self = StObject.set(x, "keepRenderedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewData(value: Boolean): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
+    inline def setNewData(value: Boolean): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPage(value: Boolean): Self = StObject.set(x, "newPage", value.asInstanceOf[js.Any])
+    inline def setNewPage(value: Boolean): Self = StObject.set(x, "newPage", value.asInstanceOf[js.Any])
   }
 }

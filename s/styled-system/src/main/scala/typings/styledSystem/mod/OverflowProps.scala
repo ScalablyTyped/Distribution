@@ -47,69 +47,55 @@ trait OverflowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
 }
 object OverflowProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): OverflowProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): OverflowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OverflowProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class OverflowPropsMutableBuilder[Self <: OverflowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & OverflowProps[ThemeType]) extends AnyVal {
+  extension [Self <: OverflowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & OverflowProps[ThemeType]) {
     
-    @scala.inline
-    def setOverflow(
+    inline def setOverflow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowNull: Self = StObject.set(x, "overflow", null)
+    inline def setOverflowNull: Self = StObject.set(x, "overflow", null)
     
-    @scala.inline
-    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    @scala.inline
-    def setOverflowVarargs(
+    inline def setOverflowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any) | Null)*
     ): Self = StObject.set(x, "overflow", js.Array(value :_*))
     
-    @scala.inline
-    def setOverflowX(
+    inline def setOverflowX(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
+    inline def setOverflowXNull: Self = StObject.set(x, "overflowX", null)
     
-    @scala.inline
-    def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
+    inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
     
-    @scala.inline
-    def setOverflowXVarargs(
+    inline def setOverflowXVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowX */ js.Any) | Null)*
     ): Self = StObject.set(x, "overflowX", js.Array(value :_*))
     
-    @scala.inline
-    def setOverflowY(
+    inline def setOverflowY(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
+    inline def setOverflowYNull: Self = StObject.set(x, "overflowY", null)
     
-    @scala.inline
-    def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+    inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
     
-    @scala.inline
-    def setOverflowYVarargs(
+    inline def setOverflowYVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.OverflowY */ js.Any) | Null)*
     ): Self = StObject.set(x, "overflowY", js.Array(value :_*))
   }

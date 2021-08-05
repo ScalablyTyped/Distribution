@@ -16,16 +16,13 @@ trait ActivitySensorTriggerDetails extends StObject {
 }
 object ActivitySensorTriggerDetails {
   
-  @scala.inline
-  def apply(readReports: () => IVectorView[ActivitySensorReadingChangeReport]): ActivitySensorTriggerDetails = {
+  inline def apply(readReports: () => IVectorView[ActivitySensorReadingChangeReport]): ActivitySensorTriggerDetails = {
     val __obj = js.Dynamic.literal(readReports = js.Any.fromFunction0(readReports))
     __obj.asInstanceOf[ActivitySensorTriggerDetails]
   }
   
-  @scala.inline
-  implicit class ActivitySensorTriggerDetailsMutableBuilder[Self <: ActivitySensorTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySensorTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setReadReports(value: () => IVectorView[ActivitySensorReadingChangeReport]): Self = StObject.set(x, "readReports", js.Any.fromFunction0(value))
+    inline def setReadReports(value: () => IVectorView[ActivitySensorReadingChangeReport]): Self = StObject.set(x, "readReports", js.Any.fromFunction0(value))
   }
 }

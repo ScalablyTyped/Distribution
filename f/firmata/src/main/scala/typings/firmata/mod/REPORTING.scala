@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait REPORTING extends StObject
 object REPORTING {
   
-  @scala.inline
-  def OFF: `0` = 0.asInstanceOf[`0`]
+  inline def OFF: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ON: `1` = 1.asInstanceOf[`1`]
+  inline def ON: `1` = 1.asInstanceOf[`1`]
 }

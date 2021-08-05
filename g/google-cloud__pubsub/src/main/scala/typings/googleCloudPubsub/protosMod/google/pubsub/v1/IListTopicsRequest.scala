@@ -18,40 +18,29 @@ trait IListTopicsRequest extends StObject {
 }
 object IListTopicsRequest {
   
-  @scala.inline
-  def apply(): IListTopicsRequest = {
+  inline def apply(): IListTopicsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListTopicsRequest]
   }
   
-  @scala.inline
-  implicit class IListTopicsRequestMutableBuilder[Self <: IListTopicsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IListTopicsRequest](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeNull: Self = StObject.set(x, "pageSize", null)
+    inline def setPageSizeNull: Self = StObject.set(x, "pageSize", null)
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
+    inline def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNull: Self = StObject.set(x, "project", null)
+    inline def setProjectNull: Self = StObject.set(x, "project", null)
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

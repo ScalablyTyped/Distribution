@@ -30,8 +30,7 @@ trait XRef
 }
 object XRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseTypeName: String,
     acquire: () => Unit,
     getBaseTypeName: () => String,
@@ -42,13 +41,10 @@ object XRef {
     __obj.asInstanceOf[XRef]
   }
   
-  @scala.inline
-  implicit class XRefMutableBuilder[Self <: XRef] (val x: Self) extends AnyVal {
+  extension [Self <: XRef](x: Self) {
     
-    @scala.inline
-    def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
+    inline def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBaseTypeName(value: () => String): Self = StObject.set(x, "getBaseTypeName", js.Any.fromFunction0(value))
+    inline def setGetBaseTypeName(value: () => String): Self = StObject.set(x, "getBaseTypeName", js.Any.fromFunction0(value))
   }
 }

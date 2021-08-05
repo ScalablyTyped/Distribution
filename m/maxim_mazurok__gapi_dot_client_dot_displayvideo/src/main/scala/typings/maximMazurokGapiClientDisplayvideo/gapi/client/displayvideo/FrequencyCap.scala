@@ -24,37 +24,27 @@ trait FrequencyCap extends StObject {
 }
 object FrequencyCap {
   
-  @scala.inline
-  def apply(): FrequencyCap = {
+  inline def apply(): FrequencyCap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FrequencyCap]
   }
   
-  @scala.inline
-  implicit class FrequencyCapMutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
+  extension [Self <: FrequencyCap](x: Self) {
     
-    @scala.inline
-    def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
+    inline def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxImpressionsUndefined: Self = StObject.set(x, "maxImpressions", js.undefined)
+    inline def setMaxImpressionsUndefined: Self = StObject.set(x, "maxImpressions", js.undefined)
     
-    @scala.inline
-    def setTimeUnit(value: String): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: String): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitCount(value: Double): Self = StObject.set(x, "timeUnitCount", value.asInstanceOf[js.Any])
+    inline def setTimeUnitCount(value: Double): Self = StObject.set(x, "timeUnitCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitCountUndefined: Self = StObject.set(x, "timeUnitCount", js.undefined)
+    inline def setTimeUnitCountUndefined: Self = StObject.set(x, "timeUnitCount", js.undefined)
     
-    @scala.inline
-    def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+    inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     
-    @scala.inline
-    def setUnlimited(value: Boolean): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
+    inline def setUnlimited(value: Boolean): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
+    inline def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
   }
 }

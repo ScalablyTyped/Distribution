@@ -11,8 +11,7 @@ trait DateTimeFormatter
      with IDateTimeFormatter
 object DateTimeFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     calendar: String,
     clock: String,
     format: Date => String,

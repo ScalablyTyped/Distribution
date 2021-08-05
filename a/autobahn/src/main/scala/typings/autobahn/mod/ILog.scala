@@ -10,16 +10,13 @@ trait ILog extends StObject {
 }
 object ILog {
   
-  @scala.inline
-  def apply(debug: /* repeated */ js.Any => Unit): ILog = {
+  inline def apply(debug: /* repeated */ js.Any => Unit): ILog = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug))
     __obj.asInstanceOf[ILog]
   }
   
-  @scala.inline
-  implicit class ILogMutableBuilder[Self <: ILog] (val x: Self) extends AnyVal {
+  extension [Self <: ILog](x: Self) {
     
-    @scala.inline
-    def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
   }
 }

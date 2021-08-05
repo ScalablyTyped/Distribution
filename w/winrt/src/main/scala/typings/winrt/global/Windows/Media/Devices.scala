@@ -96,11 +96,9 @@ object Devices {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromId(deviceInterfaceId: String): typings.winrt.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceInterfaceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.Devices.CallControl]
+    inline def fromId(deviceInterfaceId: String): typings.winrt.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceInterfaceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.Devices.CallControl]
     
-    @scala.inline
-    def getDefault(): typings.winrt.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Media.Devices.CallControl]
+    inline def getDefault(): typings.winrt.Windows.Media.Devices.CallControl = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrt.Windows.Media.Devices.CallControl]
   }
   
   @JSGlobal("Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs")
@@ -164,32 +162,25 @@ object Devices {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getAudioCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioCaptureSelector")().asInstanceOf[String]
+    inline def getAudioCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioCaptureSelector")().asInstanceOf[String]
     
-    @scala.inline
-    def getAudioRenderSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioRenderSelector")().asInstanceOf[String]
+    inline def getAudioRenderSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioRenderSelector")().asInstanceOf[String]
     
-    @scala.inline
-    def getDefaultAudioCaptureId(role: AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioCaptureId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDefaultAudioCaptureId(role: AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioCaptureId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getDefaultAudioRenderId(role: AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioRenderId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDefaultAudioRenderId(role: AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioRenderId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getVideoCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVideoCaptureSelector")().asInstanceOf[String]
+    inline def getVideoCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVideoCaptureSelector")().asInstanceOf[String]
     
     @JSGlobal("Windows.Media.Devices.MediaDevice.ondefaultaudiocapturedevicechanged")
     @js.native
     def ondefaultaudiocapturedevicechanged: js.Any = js.native
-    @scala.inline
-    def ondefaultaudiocapturedevicechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiocapturedevicechanged")(x.asInstanceOf[js.Any])
+    inline def ondefaultaudiocapturedevicechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiocapturedevicechanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Media.Devices.MediaDevice.ondefaultaudiorenderdevicechanged")
     @js.native
     def ondefaultaudiorenderdevicechanged: js.Any = js.native
-    @scala.inline
-    def ondefaultaudiorenderdevicechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiorenderdevicechanged")(x.asInstanceOf[js.Any])
+    inline def ondefaultaudiorenderdevicechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiorenderdevicechanged")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Media.Devices.MediaDeviceControl")

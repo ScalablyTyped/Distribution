@@ -37,8 +37,7 @@ trait HostCommon
 }
 object HostCommon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: js.Array[String],
     cmd: String,
     custom: Unit,
@@ -52,37 +51,26 @@ object HostCommon {
     __obj.asInstanceOf[HostCommon]
   }
   
-  @scala.inline
-  implicit class HostCommonMutableBuilder[Self <: HostCommon] (val x: Self) extends AnyVal {
+  extension [Self <: HostCommon](x: Self) {
     
-    @scala.inline
-    def setAddress(value: js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
+    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
     
-    @scala.inline
-    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledVersion(value: String): Self = StObject.set(x, "installedVersion", value.asInstanceOf[js.Any])
+    inline def setInstalledVersion(value: String): Self = StObject.set(x, "installedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: JavascriptSlashNodeDotjs): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: JavascriptSlashNodeDotjs): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `js-controller`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `js-controller`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

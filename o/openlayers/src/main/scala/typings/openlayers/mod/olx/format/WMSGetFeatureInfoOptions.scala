@@ -10,22 +10,17 @@ trait WMSGetFeatureInfoOptions extends StObject {
 }
 object WMSGetFeatureInfoOptions {
   
-  @scala.inline
-  def apply(): WMSGetFeatureInfoOptions = {
+  inline def apply(): WMSGetFeatureInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WMSGetFeatureInfoOptions]
   }
   
-  @scala.inline
-  implicit class WMSGetFeatureInfoOptionsMutableBuilder[Self <: WMSGetFeatureInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WMSGetFeatureInfoOptions](x: Self) {
     
-    @scala.inline
-    def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

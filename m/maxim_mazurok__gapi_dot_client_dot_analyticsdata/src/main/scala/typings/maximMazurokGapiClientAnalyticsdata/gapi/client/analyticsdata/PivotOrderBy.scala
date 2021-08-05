@@ -17,28 +17,21 @@ trait PivotOrderBy extends StObject {
 }
 object PivotOrderBy {
   
-  @scala.inline
-  def apply(): PivotOrderBy = {
+  inline def apply(): PivotOrderBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotOrderBy]
   }
   
-  @scala.inline
-  implicit class PivotOrderByMutableBuilder[Self <: PivotOrderBy] (val x: Self) extends AnyVal {
+  extension [Self <: PivotOrderBy](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
-    @scala.inline
-    def setPivotSelections(value: js.Array[PivotSelection]): Self = StObject.set(x, "pivotSelections", value.asInstanceOf[js.Any])
+    inline def setPivotSelections(value: js.Array[PivotSelection]): Self = StObject.set(x, "pivotSelections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotSelectionsUndefined: Self = StObject.set(x, "pivotSelections", js.undefined)
+    inline def setPivotSelectionsUndefined: Self = StObject.set(x, "pivotSelections", js.undefined)
     
-    @scala.inline
-    def setPivotSelectionsVarargs(value: PivotSelection*): Self = StObject.set(x, "pivotSelections", js.Array(value :_*))
+    inline def setPivotSelectionsVarargs(value: PivotSelection*): Self = StObject.set(x, "pivotSelections", js.Array(value :_*))
   }
 }

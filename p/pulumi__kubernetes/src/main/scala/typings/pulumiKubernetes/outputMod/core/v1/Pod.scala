@@ -52,28 +52,21 @@ trait Pod extends StObject {
 }
 object Pod {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, spec: PodSpec, status: PodStatus): Pod = {
+  inline def apply(metadata: ObjectMeta, spec: PodSpec, status: PodStatus): Pod = {
     val __obj = js.Dynamic.literal(apiVersion = "v1", kind = "Pod", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pod]
   }
   
-  @scala.inline
-  implicit class PodMutableBuilder[Self <: Pod] (val x: Self) extends AnyVal {
+  extension [Self <: Pod](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Pod): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Pod): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: PodSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: PodSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PodStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PodStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

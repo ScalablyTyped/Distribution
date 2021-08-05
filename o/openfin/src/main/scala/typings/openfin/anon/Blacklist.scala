@@ -12,31 +12,23 @@ trait Blacklist extends StObject {
 }
 object Blacklist {
   
-  @scala.inline
-  def apply(): Blacklist = {
+  inline def apply(): Blacklist = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Blacklist]
   }
   
-  @scala.inline
-  implicit class BlacklistMutableBuilder[Self <: Blacklist] (val x: Self) extends AnyVal {
+  extension [Self <: Blacklist](x: Self) {
     
-    @scala.inline
-    def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+    inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+    inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
-    @scala.inline
-    def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     
-    @scala.inline
-    def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+    inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     
-    @scala.inline
-    def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

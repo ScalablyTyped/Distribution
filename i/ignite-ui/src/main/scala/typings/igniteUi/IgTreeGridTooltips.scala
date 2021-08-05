@@ -99,91 +99,63 @@ trait IgTreeGridTooltips
 }
 object IgTreeGridTooltips {
   
-  @scala.inline
-  def apply(): IgTreeGridTooltips = {
+  inline def apply(): IgTreeGridTooltips = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridTooltips]
   }
   
-  @scala.inline
-  implicit class IgTreeGridTooltipsMutableBuilder[Self <: IgTreeGridTooltips] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridTooltips](x: Self) {
     
-    @scala.inline
-    def setColumnSettings(value: IgGridTooltipsColumnSettings): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    inline def setColumnSettings(value: IgGridTooltipsColumnSettings): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    @scala.inline
-    def setCursorLeftOffset(value: Double): Self = StObject.set(x, "cursorLeftOffset", value.asInstanceOf[js.Any])
+    inline def setCursorLeftOffset(value: Double): Self = StObject.set(x, "cursorLeftOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorLeftOffsetUndefined: Self = StObject.set(x, "cursorLeftOffset", js.undefined)
+    inline def setCursorLeftOffsetUndefined: Self = StObject.set(x, "cursorLeftOffset", js.undefined)
     
-    @scala.inline
-    def setCursorTopOffset(value: Double): Self = StObject.set(x, "cursorTopOffset", value.asInstanceOf[js.Any])
+    inline def setCursorTopOffset(value: Double): Self = StObject.set(x, "cursorTopOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorTopOffsetUndefined: Self = StObject.set(x, "cursorTopOffset", js.undefined)
+    inline def setCursorTopOffsetUndefined: Self = StObject.set(x, "cursorTopOffset", js.undefined)
     
-    @scala.inline
-    def setFadeTimespan(value: Double): Self = StObject.set(x, "fadeTimespan", value.asInstanceOf[js.Any])
+    inline def setFadeTimespan(value: Double): Self = StObject.set(x, "fadeTimespan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeTimespanUndefined: Self = StObject.set(x, "fadeTimespan", js.undefined)
+    inline def setFadeTimespanUndefined: Self = StObject.set(x, "fadeTimespan", js.undefined)
     
-    @scala.inline
-    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+    inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
+    inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
+    inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
+    inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = StObject.set(x, "tooltipHidden", js.Any.fromFunction2(value))
+    inline def setTooltipHidden(value: (/* event */ Event, /* ui */ TooltipHiddenEventUIParam) => Unit): Self = StObject.set(x, "tooltipHidden", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTooltipHiddenUndefined: Self = StObject.set(x, "tooltipHidden", js.undefined)
+    inline def setTooltipHiddenUndefined: Self = StObject.set(x, "tooltipHidden", js.undefined)
     
-    @scala.inline
-    def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = StObject.set(x, "tooltipHiding", js.Any.fromFunction2(value))
+    inline def setTooltipHiding(value: (/* event */ Event, /* ui */ TooltipHidingEventUIParam) => Unit): Self = StObject.set(x, "tooltipHiding", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTooltipHidingUndefined: Self = StObject.set(x, "tooltipHiding", js.undefined)
+    inline def setTooltipHidingUndefined: Self = StObject.set(x, "tooltipHiding", js.undefined)
     
-    @scala.inline
-    def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = StObject.set(x, "tooltipShowing", js.Any.fromFunction2(value))
+    inline def setTooltipShowing(value: (/* event */ Event, /* ui */ TooltipShowingEventUIParam) => Unit): Self = StObject.set(x, "tooltipShowing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTooltipShowingUndefined: Self = StObject.set(x, "tooltipShowing", js.undefined)
+    inline def setTooltipShowingUndefined: Self = StObject.set(x, "tooltipShowing", js.undefined)
     
-    @scala.inline
-    def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = StObject.set(x, "tooltipShown", js.Any.fromFunction2(value))
+    inline def setTooltipShown(value: (/* event */ Event, /* ui */ TooltipShownEventUIParam) => Unit): Self = StObject.set(x, "tooltipShown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
+    inline def setTooltipShownUndefined: Self = StObject.set(x, "tooltipShown", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

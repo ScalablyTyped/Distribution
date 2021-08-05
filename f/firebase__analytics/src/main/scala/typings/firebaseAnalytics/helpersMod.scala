@@ -16,17 +16,13 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findGtagScriptOnPage(): HTMLScriptElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findGtagScriptOnPage")().asInstanceOf[HTMLScriptElement | Null]
+  inline def findGtagScriptOnPage(): HTMLScriptElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findGtagScriptOnPage")().asInstanceOf[HTMLScriptElement | Null]
   
-  @scala.inline
-  def getOrCreateDataLayer(dataLayerName: String): DataLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateDataLayer")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[DataLayer]
+  inline def getOrCreateDataLayer(dataLayerName: String): DataLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateDataLayer")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[DataLayer]
   
-  @scala.inline
-  def insertScriptTag(dataLayerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertScriptTag")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def insertScriptTag(dataLayerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertScriptTag")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def wrapOrCreateGtag(
+  inline def wrapOrCreateGtag(
     initializationPromisesMap: StringDictionary[js.Promise[String]],
     dynamicConfigPromisesList: js.Array[js.Promise[DynamicConfig | MinimalDynamicConfig]],
     measurementIdToAppId: StringDictionary[String],

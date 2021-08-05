@@ -18,19 +18,15 @@ trait SetDefaultPolicyVersionRequest extends StObject {
 }
 object SetDefaultPolicyVersionRequest {
   
-  @scala.inline
-  def apply(PolicyArn: arnType, VersionId: policyVersionIdType): SetDefaultPolicyVersionRequest = {
+  inline def apply(PolicyArn: arnType, VersionId: policyVersionIdType): SetDefaultPolicyVersionRequest = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDefaultPolicyVersionRequest]
   }
   
-  @scala.inline
-  implicit class SetDefaultPolicyVersionRequestMutableBuilder[Self <: SetDefaultPolicyVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDefaultPolicyVersionRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: policyVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: policyVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
   }
 }

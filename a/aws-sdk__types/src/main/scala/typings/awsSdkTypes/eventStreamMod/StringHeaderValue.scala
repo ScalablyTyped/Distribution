@@ -15,20 +15,16 @@ trait StringHeaderValue
 }
 object StringHeaderValue {
   
-  @scala.inline
-  def apply(value: String): StringHeaderValue = {
+  inline def apply(value: String): StringHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringHeaderValue]
   }
   
-  @scala.inline
-  implicit class StringHeaderValueMutableBuilder[Self <: StringHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: StringHeaderValue](x: Self) {
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

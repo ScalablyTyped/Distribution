@@ -16,19 +16,15 @@ trait IShowDialogArgs extends StObject {
 }
 object IShowDialogArgs {
   
-  @scala.inline
-  def apply(action: IShowDialogAction, scope: IScope): IShowDialogArgs = {
+  inline def apply(action: IShowDialogAction, scope: IScope): IShowDialogArgs = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShowDialogArgs]
   }
   
-  @scala.inline
-  implicit class IShowDialogArgsMutableBuilder[Self <: IShowDialogArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IShowDialogArgs](x: Self) {
     
-    @scala.inline
-    def setAction(value: IShowDialogAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: IShowDialogAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: IScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: IScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

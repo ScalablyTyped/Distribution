@@ -22,8 +22,7 @@ trait UpdateWriteOpResult extends StObject {
 }
 object UpdateWriteOpResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connection: js.Any,
     matchedCount: scala.Double,
     modifiedCount: scala.Double,
@@ -35,25 +34,18 @@ object UpdateWriteOpResult {
     __obj.asInstanceOf[UpdateWriteOpResult]
   }
   
-  @scala.inline
-  implicit class UpdateWriteOpResultMutableBuilder[Self <: UpdateWriteOpResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWriteOpResult](x: Self) {
     
-    @scala.inline
-    def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedCount(value: scala.Double): Self = StObject.set(x, "matchedCount", value.asInstanceOf[js.Any])
+    inline def setMatchedCount(value: scala.Double): Self = StObject.set(x, "matchedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedCount(value: scala.Double): Self = StObject.set(x, "modifiedCount", value.asInstanceOf[js.Any])
+    inline def setModifiedCount(value: scala.Double): Self = StObject.set(x, "modifiedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: NModified): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: NModified): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertedCount(value: scala.Double): Self = StObject.set(x, "upsertedCount", value.asInstanceOf[js.Any])
+    inline def setUpsertedCount(value: scala.Double): Self = StObject.set(x, "upsertedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertedId(value: IdObjectId): Self = StObject.set(x, "upsertedId", value.asInstanceOf[js.Any])
+    inline def setUpsertedId(value: IdObjectId): Self = StObject.set(x, "upsertedId", value.asInstanceOf[js.Any])
   }
 }

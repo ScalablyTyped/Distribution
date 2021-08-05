@@ -11,16 +11,13 @@ trait PickImplhtmlHtml extends StObject {
 }
 object PickImplhtmlHtml {
   
-  @scala.inline
-  def apply(html: String): PickImplhtmlHtml = {
+  inline def apply(html: String): PickImplhtmlHtml = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhtmlHtml]
   }
   
-  @scala.inline
-  implicit class PickImplhtmlHtmlMutableBuilder[Self <: PickImplhtmlHtml] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplhtmlHtml](x: Self) {
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }
 }

@@ -25,17 +25,14 @@ object colorPickerTypesMod {
   }
   object IColorPicker {
     
-    @scala.inline
-    def apply(color: IColor): IColorPicker = {
+    inline def apply(color: IColor): IColorPicker = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColorPicker]
     }
     
-    @scala.inline
-    implicit class IColorPickerMutableBuilder[Self <: IColorPicker] (val x: Self) extends AnyVal {
+    extension [Self <: IColorPicker](x: Self) {
       
-      @scala.inline
-      def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,107 +137,74 @@ object colorPickerTypesMod {
   }
   object IColorPickerProps {
     
-    @scala.inline
-    def apply(color: IColor | String): IColorPickerProps = {
+    inline def apply(color: IColor | String): IColorPickerProps = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColorPickerProps]
     }
     
-    @scala.inline
-    implicit class IColorPickerPropsMutableBuilder[Self <: IColorPickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IColorPickerProps](x: Self) {
       
-      @scala.inline
-      def setAlphaLabel(value: String): Self = StObject.set(x, "alphaLabel", value.asInstanceOf[js.Any])
+      inline def setAlphaLabel(value: String): Self = StObject.set(x, "alphaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaLabelUndefined: Self = StObject.set(x, "alphaLabel", js.undefined)
+      inline def setAlphaLabelUndefined: Self = StObject.set(x, "alphaLabel", js.undefined)
       
-      @scala.inline
-      def setAlphaSliderHidden(value: Boolean): Self = StObject.set(x, "alphaSliderHidden", value.asInstanceOf[js.Any])
+      inline def setAlphaSliderHidden(value: Boolean): Self = StObject.set(x, "alphaSliderHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaSliderHiddenUndefined: Self = StObject.set(x, "alphaSliderHidden", js.undefined)
+      inline def setAlphaSliderHiddenUndefined: Self = StObject.set(x, "alphaSliderHidden", js.undefined)
       
-      @scala.inline
-      def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
+      inline def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaTypeUndefined: Self = StObject.set(x, "alphaType", js.undefined)
+      inline def setAlphaTypeUndefined: Self = StObject.set(x, "alphaType", js.undefined)
       
-      @scala.inline
-      def setBlueLabel(value: String): Self = StObject.set(x, "blueLabel", value.asInstanceOf[js.Any])
+      inline def setBlueLabel(value: String): Self = StObject.set(x, "blueLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueLabelUndefined: Self = StObject.set(x, "blueLabel", js.undefined)
+      inline def setBlueLabelUndefined: Self = StObject.set(x, "blueLabel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: IColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: IColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IColorPicker]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IColorPicker]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IColorPicker | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IColorPicker | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setGreenLabel(value: String): Self = StObject.set(x, "greenLabel", value.asInstanceOf[js.Any])
+      inline def setGreenLabel(value: String): Self = StObject.set(x, "greenLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenLabelUndefined: Self = StObject.set(x, "greenLabel", js.undefined)
+      inline def setGreenLabelUndefined: Self = StObject.set(x, "greenLabel", js.undefined)
       
-      @scala.inline
-      def setHexLabel(value: String): Self = StObject.set(x, "hexLabel", value.asInstanceOf[js.Any])
+      inline def setHexLabel(value: String): Self = StObject.set(x, "hexLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexLabelUndefined: Self = StObject.set(x, "hexLabel", js.undefined)
+      inline def setHexLabelUndefined: Self = StObject.set(x, "hexLabel", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setRedLabel(value: String): Self = StObject.set(x, "redLabel", value.asInstanceOf[js.Any])
+      inline def setRedLabel(value: String): Self = StObject.set(x, "redLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedLabelUndefined: Self = StObject.set(x, "redLabel", js.undefined)
+      inline def setRedLabelUndefined: Self = StObject.set(x, "redLabel", js.undefined)
       
-      @scala.inline
-      def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
+      inline def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
+      inline def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
       
-      @scala.inline
-      def setStrings(value: IColorPickerStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: IColorPickerStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+      inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IColorPickerStyleProps => DeepPartial[IColorPickerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IColorPickerStyleProps => DeepPartial[IColorPickerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -335,98 +299,68 @@ object colorPickerTypesMod {
   }
   object IColorPickerStrings {
     
-    @scala.inline
-    def apply(): IColorPickerStrings = {
+    inline def apply(): IColorPickerStrings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColorPickerStrings]
     }
     
-    @scala.inline
-    implicit class IColorPickerStringsMutableBuilder[Self <: IColorPickerStrings] (val x: Self) extends AnyVal {
+    extension [Self <: IColorPickerStrings](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: String): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: String): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaAriaLabel(value: String): Self = StObject.set(x, "alphaAriaLabel", value.asInstanceOf[js.Any])
+      inline def setAlphaAriaLabel(value: String): Self = StObject.set(x, "alphaAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaAriaLabelUndefined: Self = StObject.set(x, "alphaAriaLabel", js.undefined)
+      inline def setAlphaAriaLabelUndefined: Self = StObject.set(x, "alphaAriaLabel", js.undefined)
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
+      inline def setBlueUndefined: Self = StObject.set(x, "blue", js.undefined)
       
-      @scala.inline
-      def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: String): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
+      inline def setGreenUndefined: Self = StObject.set(x, "green", js.undefined)
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
+      inline def setHexUndefined: Self = StObject.set(x, "hex", js.undefined)
       
-      @scala.inline
-      def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+      inline def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHueAriaLabel(value: String): Self = StObject.set(x, "hueAriaLabel", value.asInstanceOf[js.Any])
+      inline def setHueAriaLabel(value: String): Self = StObject.set(x, "hueAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHueAriaLabelUndefined: Self = StObject.set(x, "hueAriaLabel", js.undefined)
+      inline def setHueAriaLabelUndefined: Self = StObject.set(x, "hueAriaLabel", js.undefined)
       
-      @scala.inline
-      def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
+      inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
       
-      @scala.inline
-      def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: String): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
+      inline def setRedUndefined: Self = StObject.set(x, "red", js.undefined)
       
-      @scala.inline
-      def setRootAriaLabelFormat(value: String): Self = StObject.set(x, "rootAriaLabelFormat", value.asInstanceOf[js.Any])
+      inline def setRootAriaLabelFormat(value: String): Self = StObject.set(x, "rootAriaLabelFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootAriaLabelFormatUndefined: Self = StObject.set(x, "rootAriaLabelFormat", js.undefined)
+      inline def setRootAriaLabelFormatUndefined: Self = StObject.set(x, "rootAriaLabelFormat", js.undefined)
       
-      @scala.inline
-      def setSvAriaDescription(value: String): Self = StObject.set(x, "svAriaDescription", value.asInstanceOf[js.Any])
+      inline def setSvAriaDescription(value: String): Self = StObject.set(x, "svAriaDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvAriaDescriptionUndefined: Self = StObject.set(x, "svAriaDescription", js.undefined)
+      inline def setSvAriaDescriptionUndefined: Self = StObject.set(x, "svAriaDescription", js.undefined)
       
-      @scala.inline
-      def setSvAriaLabel(value: String): Self = StObject.set(x, "svAriaLabel", value.asInstanceOf[js.Any])
+      inline def setSvAriaLabel(value: String): Self = StObject.set(x, "svAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvAriaLabelUndefined: Self = StObject.set(x, "svAriaLabel", js.undefined)
+      inline def setSvAriaLabelUndefined: Self = StObject.set(x, "svAriaLabel", js.undefined)
       
-      @scala.inline
-      def setSvAriaValueFormat(value: String): Self = StObject.set(x, "svAriaValueFormat", value.asInstanceOf[js.Any])
+      inline def setSvAriaValueFormat(value: String): Self = StObject.set(x, "svAriaValueFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvAriaValueFormatUndefined: Self = StObject.set(x, "svAriaValueFormat", js.undefined)
+      inline def setSvAriaValueFormatUndefined: Self = StObject.set(x, "svAriaValueFormat", js.undefined)
       
-      @scala.inline
-      def setTransparency(value: String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+      inline def setTransparency(value: String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparencyAriaLabel(value: String): Self = StObject.set(x, "transparencyAriaLabel", value.asInstanceOf[js.Any])
+      inline def setTransparencyAriaLabel(value: String): Self = StObject.set(x, "transparencyAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransparencyAriaLabelUndefined: Self = StObject.set(x, "transparencyAriaLabel", js.undefined)
+      inline def setTransparencyAriaLabelUndefined: Self = StObject.set(x, "transparencyAriaLabel", js.undefined)
       
-      @scala.inline
-      def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+      inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     }
   }
   
@@ -441,29 +375,22 @@ object colorPickerTypesMod {
   }
   object IColorPickerStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IColorPickerStyleProps = {
+    inline def apply(theme: ITheme): IColorPickerStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColorPickerStyleProps]
     }
     
-    @scala.inline
-    implicit class IColorPickerStylePropsMutableBuilder[Self <: IColorPickerStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IColorPickerStyleProps](x: Self) {
       
-      @scala.inline
-      def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
+      inline def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaTypeUndefined: Self = StObject.set(x, "alphaType", js.undefined)
+      inline def setAlphaTypeUndefined: Self = StObject.set(x, "alphaType", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -531,122 +458,84 @@ object colorPickerTypesMod {
   }
   object IColorPickerStyles {
     
-    @scala.inline
-    def apply(): IColorPickerStyles = {
+    inline def apply(): IColorPickerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColorPickerStyles]
     }
     
-    @scala.inline
-    implicit class IColorPickerStylesMutableBuilder[Self <: IColorPickerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IColorPickerStyles](x: Self) {
       
-      @scala.inline
-      def setColorRectangle(value: IStyle): Self = StObject.set(x, "colorRectangle", value.asInstanceOf[js.Any])
+      inline def setColorRectangle(value: IStyle): Self = StObject.set(x, "colorRectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorRectangleNull: Self = StObject.set(x, "colorRectangle", null)
+      inline def setColorRectangleNull: Self = StObject.set(x, "colorRectangle", null)
       
-      @scala.inline
-      def setColorRectangleUndefined: Self = StObject.set(x, "colorRectangle", js.undefined)
+      inline def setColorRectangleUndefined: Self = StObject.set(x, "colorRectangle", js.undefined)
       
-      @scala.inline
-      def setColorSquare(value: IStyle): Self = StObject.set(x, "colorSquare", value.asInstanceOf[js.Any])
+      inline def setColorSquare(value: IStyle): Self = StObject.set(x, "colorSquare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorSquareNull: Self = StObject.set(x, "colorSquare", null)
+      inline def setColorSquareNull: Self = StObject.set(x, "colorSquare", null)
       
-      @scala.inline
-      def setColorSquareUndefined: Self = StObject.set(x, "colorSquare", js.undefined)
+      inline def setColorSquareUndefined: Self = StObject.set(x, "colorSquare", js.undefined)
       
-      @scala.inline
-      def setFlexContainer(value: IStyle): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+      inline def setFlexContainer(value: IStyle): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexContainerNull: Self = StObject.set(x, "flexContainer", null)
+      inline def setFlexContainerNull: Self = StObject.set(x, "flexContainer", null)
       
-      @scala.inline
-      def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
+      inline def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
       
-      @scala.inline
-      def setFlexPreviewBox(value: IStyle): Self = StObject.set(x, "flexPreviewBox", value.asInstanceOf[js.Any])
+      inline def setFlexPreviewBox(value: IStyle): Self = StObject.set(x, "flexPreviewBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexPreviewBoxNull: Self = StObject.set(x, "flexPreviewBox", null)
+      inline def setFlexPreviewBoxNull: Self = StObject.set(x, "flexPreviewBox", null)
       
-      @scala.inline
-      def setFlexPreviewBoxUndefined: Self = StObject.set(x, "flexPreviewBox", js.undefined)
+      inline def setFlexPreviewBoxUndefined: Self = StObject.set(x, "flexPreviewBox", js.undefined)
       
-      @scala.inline
-      def setFlexSlider(value: IStyle): Self = StObject.set(x, "flexSlider", value.asInstanceOf[js.Any])
+      inline def setFlexSlider(value: IStyle): Self = StObject.set(x, "flexSlider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexSliderNull: Self = StObject.set(x, "flexSlider", null)
+      inline def setFlexSliderNull: Self = StObject.set(x, "flexSlider", null)
       
-      @scala.inline
-      def setFlexSliderUndefined: Self = StObject.set(x, "flexSlider", js.undefined)
+      inline def setFlexSliderUndefined: Self = StObject.set(x, "flexSlider", js.undefined)
       
-      @scala.inline
-      def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputNull: Self = StObject.set(x, "input", null)
+      inline def setInputNull: Self = StObject.set(x, "input", null)
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setPanel(value: IStyle): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: IStyle): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelNull: Self = StObject.set(x, "panel", null)
+      inline def setPanelNull: Self = StObject.set(x, "panel", null)
       
-      @scala.inline
-      def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+      inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTable(value: IStyle): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: IStyle): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableAlphaCell(value: IStyle): Self = StObject.set(x, "tableAlphaCell", value.asInstanceOf[js.Any])
+      inline def setTableAlphaCell(value: IStyle): Self = StObject.set(x, "tableAlphaCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableAlphaCellNull: Self = StObject.set(x, "tableAlphaCell", null)
+      inline def setTableAlphaCellNull: Self = StObject.set(x, "tableAlphaCell", null)
       
-      @scala.inline
-      def setTableAlphaCellUndefined: Self = StObject.set(x, "tableAlphaCell", js.undefined)
+      inline def setTableAlphaCellUndefined: Self = StObject.set(x, "tableAlphaCell", js.undefined)
       
-      @scala.inline
-      def setTableHeader(value: IStyle): Self = StObject.set(x, "tableHeader", value.asInstanceOf[js.Any])
+      inline def setTableHeader(value: IStyle): Self = StObject.set(x, "tableHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeaderNull: Self = StObject.set(x, "tableHeader", null)
+      inline def setTableHeaderNull: Self = StObject.set(x, "tableHeader", null)
       
-      @scala.inline
-      def setTableHeaderUndefined: Self = StObject.set(x, "tableHeader", js.undefined)
+      inline def setTableHeaderUndefined: Self = StObject.set(x, "tableHeader", js.undefined)
       
-      @scala.inline
-      def setTableHexCell(value: IStyle): Self = StObject.set(x, "tableHexCell", value.asInstanceOf[js.Any])
+      inline def setTableHexCell(value: IStyle): Self = StObject.set(x, "tableHexCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHexCellNull: Self = StObject.set(x, "tableHexCell", null)
+      inline def setTableHexCellNull: Self = StObject.set(x, "tableHexCell", null)
       
-      @scala.inline
-      def setTableHexCellUndefined: Self = StObject.set(x, "tableHexCell", js.undefined)
+      inline def setTableHexCellUndefined: Self = StObject.set(x, "tableHexCell", js.undefined)
       
-      @scala.inline
-      def setTableNull: Self = StObject.set(x, "table", null)
+      inline def setTableNull: Self = StObject.set(x, "table", null)
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     }
   }
 }

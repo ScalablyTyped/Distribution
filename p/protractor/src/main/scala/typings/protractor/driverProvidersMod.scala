@@ -52,8 +52,7 @@ object driverProvidersMod {
       *
       * @param drivers {webdriver.WebDriver[]} The webdriver instances
       */
-    @scala.inline
-    def quitDrivers(provider: typings.protractor.driverProviderMod.DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("quitDrivers")(provider.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    inline def quitDrivers(provider: typings.protractor.driverProviderMod.DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("quitDrivers")(provider.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   }
   
   @JSImport("protractor/built/driverProviders", "Hosted")
@@ -113,12 +112,10 @@ object driverProvidersMod {
   @JSImport("protractor/built/driverProviders", "buildDriverProvider")
   @js.native
   def buildDriverProvider: js.Function1[/* config */ Config, typings.protractor.driverProviderMod.DriverProvider] = js.native
-  @scala.inline
-  def buildDriverProvider_=(x: js.Function1[/* config */ Config, typings.protractor.driverProviderMod.DriverProvider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDriverProvider")(x.asInstanceOf[js.Any])
+  inline def buildDriverProvider_=(x: js.Function1[/* config */ Config, typings.protractor.driverProviderMod.DriverProvider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDriverProvider")(x.asInstanceOf[js.Any])
   
   @JSImport("protractor/built/driverProviders", "logWarnings")
   @js.native
   def logWarnings: js.Function2[/* providerType */ String, /* config */ Config, Unit] = js.native
-  @scala.inline
-  def logWarnings_=(x: js.Function2[/* providerType */ String, /* config */ Config, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logWarnings")(x.asInstanceOf[js.Any])
+  inline def logWarnings_=(x: js.Function2[/* providerType */ String, /* config */ Config, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logWarnings")(x.asInstanceOf[js.Any])
 }

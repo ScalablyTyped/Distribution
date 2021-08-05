@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deep-assign"
-version := "0.1-dt-20200515Z-664950"
+version := "0.1-dt-20200515Z-bd5c71"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

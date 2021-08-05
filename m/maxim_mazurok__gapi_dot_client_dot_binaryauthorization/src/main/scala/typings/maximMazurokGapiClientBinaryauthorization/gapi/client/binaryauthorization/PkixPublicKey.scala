@@ -17,25 +17,19 @@ trait PkixPublicKey extends StObject {
 }
 object PkixPublicKey {
   
-  @scala.inline
-  def apply(): PkixPublicKey = {
+  inline def apply(): PkixPublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PkixPublicKey]
   }
   
-  @scala.inline
-  implicit class PkixPublicKeyMutableBuilder[Self <: PkixPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: PkixPublicKey](x: Self) {
     
-    @scala.inline
-    def setPublicKeyPem(value: String): Self = StObject.set(x, "publicKeyPem", value.asInstanceOf[js.Any])
+    inline def setPublicKeyPem(value: String): Self = StObject.set(x, "publicKeyPem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyPemUndefined: Self = StObject.set(x, "publicKeyPem", js.undefined)
+    inline def setPublicKeyPemUndefined: Self = StObject.set(x, "publicKeyPem", js.undefined)
     
-    @scala.inline
-    def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
+    inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
   }
 }

@@ -77,8 +77,7 @@ trait ASPxClientDiagramCoordinates extends StObject {
 }
 object ASPxClientDiagramCoordinates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAxisValue: ASPxClientAxisBase => ASPxClientAxisValue,
     IsEmpty: () => Boolean,
     argumentScaleType: String,
@@ -98,49 +97,34 @@ object ASPxClientDiagramCoordinates {
     __obj.asInstanceOf[ASPxClientDiagramCoordinates]
   }
   
-  @scala.inline
-  implicit class ASPxClientDiagramCoordinatesMutableBuilder[Self <: ASPxClientDiagramCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDiagramCoordinates](x: Self) {
     
-    @scala.inline
-    def setArgumentScaleType(value: String): Self = StObject.set(x, "argumentScaleType", value.asInstanceOf[js.Any])
+    inline def setArgumentScaleType(value: String): Self = StObject.set(x, "argumentScaleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisX(value: ASPxClientAxisBase): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
+    inline def setAxisX(value: ASPxClientAxisBase): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisY(value: ASPxClientAxisBase): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
+    inline def setAxisY(value: ASPxClientAxisBase): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeArgument(value: Date): Self = StObject.set(x, "dateTimeArgument", value.asInstanceOf[js.Any])
+    inline def setDateTimeArgument(value: Date): Self = StObject.set(x, "dateTimeArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
+    inline def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAxisValue(value: ASPxClientAxisBase => ASPxClientAxisValue): Self = StObject.set(x, "GetAxisValue", js.Any.fromFunction1(value))
+    inline def setGetAxisValue(value: ASPxClientAxisBase => ASPxClientAxisValue): Self = StObject.set(x, "GetAxisValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumericalArgument(value: Double): Self = StObject.set(x, "numericalArgument", value.asInstanceOf[js.Any])
+    inline def setNumericalArgument(value: Double): Self = StObject.set(x, "numericalArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
+    inline def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualitativeArgument(value: String): Self = StObject.set(x, "qualitativeArgument", value.asInstanceOf[js.Any])
+    inline def setQualitativeArgument(value: String): Self = StObject.set(x, "qualitativeArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanArgument(value: js.Any): Self = StObject.set(x, "timeSpanArgument", value.asInstanceOf[js.Any])
+    inline def setTimeSpanArgument(value: js.Any): Self = StObject.set(x, "timeSpanArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
+    inline def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueScaleType(value: String): Self = StObject.set(x, "valueScaleType", value.asInstanceOf[js.Any])
+    inline def setValueScaleType(value: String): Self = StObject.set(x, "valueScaleType", value.asInstanceOf[js.Any])
   }
 }

@@ -17,40 +17,29 @@ trait LocalBaseBlockParams extends StObject {
 }
 object LocalBaseBlockParams {
   
-  @scala.inline
-  def apply(): LocalBaseBlockParams = {
+  inline def apply(): LocalBaseBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalBaseBlockParams]
   }
   
-  @scala.inline
-  implicit class LocalBaseBlockParamsMutableBuilder[Self <: LocalBaseBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: LocalBaseBlockParams](x: Self) {
     
-    @scala.inline
-    def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
+    inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockLengthUndefined: Self = StObject.set(x, "blockLength", js.undefined)
+    inline def setBlockLengthUndefined: Self = StObject.set(x, "blockLength", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setValueBeforeDecode(value: ArrayBuffer): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
+    inline def setValueBeforeDecode(value: ArrayBuffer): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBeforeDecodeUndefined: Self = StObject.set(x, "valueBeforeDecode", js.undefined)
+    inline def setValueBeforeDecodeUndefined: Self = StObject.set(x, "valueBeforeDecode", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

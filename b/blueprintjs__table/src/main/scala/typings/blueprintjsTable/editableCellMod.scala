@@ -18,9 +18,9 @@ object editableCellMod {
     def this(props: IEditableCellProps) = this()
     def this(props: IEditableCellProps, context: js.Any) = this()
     
-    var cellRef: js.Any = js.native
+    /* private */ var cellRef: js.Any = js.native
     
-    var checkShouldFocus: js.Any = js.native
+    /* private */ var checkShouldFocus: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MEditableCell(): Unit = js.native
@@ -28,23 +28,23 @@ object editableCellMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MEditableCell(prevProps: IEditableCellProps): Unit = js.native
     
-    var handleCancel: js.Any = js.native
+    /* private */ var handleCancel: js.Any = js.native
     
-    var handleCellActivate: js.Any = js.native
+    /* private */ var handleCellActivate: js.Any = js.native
     
-    var handleCellDoubleClick: js.Any = js.native
+    /* private */ var handleCellDoubleClick: js.Any = js.native
     
-    var handleChange: js.Any = js.native
+    /* private */ var handleChange: js.Any = js.native
     
-    var handleConfirm: js.Any = js.native
+    /* private */ var handleConfirm: js.Any = js.native
     
-    var handleEdit: js.Any = js.native
+    /* private */ var handleEdit: js.Any = js.native
     
-    var handleKeyPress: js.Any = js.native
+    /* private */ var handleKeyPress: js.Any = js.native
     
-    var invokeCallback: js.Any = js.native
+    /* private */ var invokeCallback: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
     def renderHotkeys(): Element = js.native
     
@@ -61,14 +61,12 @@ object editableCellMod {
     @JSImport("@blueprintjs/table/lib/esm/cell/editableCell", "EditableCell.defaultProps")
     @js.native
     def defaultProps: Truncated = js.native
-    @scala.inline
-    def defaultProps_=(x: Truncated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Truncated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/cell/editableCell", "EditableCell.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IEditableCellProps
@@ -139,56 +137,42 @@ object editableCellMod {
   }
   object IEditableCellProps {
     
-    @scala.inline
-    def apply(): IEditableCellProps = {
+    inline def apply(): IEditableCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditableCellProps]
     }
     
-    @scala.inline
-    implicit class IEditableCellPropsMutableBuilder[Self <: IEditableCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: IEditableCellProps](x: Self) {
       
-      @scala.inline
-      def setEditableTextProps(value: IEditableTextProps): Self = StObject.set(x, "editableTextProps", value.asInstanceOf[js.Any])
+      inline def setEditableTextProps(value: IEditableTextProps): Self = StObject.set(x, "editableTextProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditableTextPropsUndefined: Self = StObject.set(x, "editableTextProps", js.undefined)
+      inline def setEditableTextPropsUndefined: Self = StObject.set(x, "editableTextProps", js.undefined)
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
+      inline def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
       
-      @scala.inline
-      def setOnCancel(
+      inline def setOnCancel(
         value: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "onCancel", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnConfirm(
+      inline def setOnConfirm(
         value: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "onConfirm", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+      inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -202,32 +186,24 @@ object editableCellMod {
   }
   object IEditableCellState {
     
-    @scala.inline
-    def apply(): IEditableCellState = {
+    inline def apply(): IEditableCellState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditableCellState]
     }
     
-    @scala.inline
-    implicit class IEditableCellStateMutableBuilder[Self <: IEditableCellState] (val x: Self) extends AnyVal {
+    extension [Self <: IEditableCellState](x: Self) {
       
-      @scala.inline
-      def setDirtyValue(value: String): Self = StObject.set(x, "dirtyValue", value.asInstanceOf[js.Any])
+      inline def setDirtyValue(value: String): Self = StObject.set(x, "dirtyValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyValueUndefined: Self = StObject.set(x, "dirtyValue", js.undefined)
+      inline def setDirtyValueUndefined: Self = StObject.set(x, "dirtyValue", js.undefined)
       
-      @scala.inline
-      def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
+      inline def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
+      inline def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
       
-      @scala.inline
-      def setSavedValue(value: String): Self = StObject.set(x, "savedValue", value.asInstanceOf[js.Any])
+      inline def setSavedValue(value: String): Self = StObject.set(x, "savedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedValueUndefined: Self = StObject.set(x, "savedValue", js.undefined)
+      inline def setSavedValueUndefined: Self = StObject.set(x, "savedValue", js.undefined)
     }
   }
 }

@@ -23,28 +23,21 @@ trait ByteMatchSet extends StObject {
 }
 object ByteMatchSet {
   
-  @scala.inline
-  def apply(ByteMatchSetId: ResourceId, ByteMatchTuples: ByteMatchTuples): ByteMatchSet = {
+  inline def apply(ByteMatchSetId: ResourceId, ByteMatchTuples: ByteMatchTuples): ByteMatchSet = {
     val __obj = js.Dynamic.literal(ByteMatchSetId = ByteMatchSetId.asInstanceOf[js.Any], ByteMatchTuples = ByteMatchTuples.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByteMatchSet]
   }
   
-  @scala.inline
-  implicit class ByteMatchSetMutableBuilder[Self <: ByteMatchSet] (val x: Self) extends AnyVal {
+  extension [Self <: ByteMatchSet](x: Self) {
     
-    @scala.inline
-    def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
+    inline def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchTuples(value: ByteMatchTuples): Self = StObject.set(x, "ByteMatchTuples", value.asInstanceOf[js.Any])
+    inline def setByteMatchTuples(value: ByteMatchTuples): Self = StObject.set(x, "ByteMatchTuples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchTuplesVarargs(value: ByteMatchTuple*): Self = StObject.set(x, "ByteMatchTuples", js.Array(value :_*))
+    inline def setByteMatchTuplesVarargs(value: ByteMatchTuple*): Self = StObject.set(x, "ByteMatchTuples", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

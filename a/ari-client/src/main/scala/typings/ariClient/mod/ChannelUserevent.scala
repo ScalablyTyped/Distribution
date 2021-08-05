@@ -36,8 +36,7 @@ trait ChannelUserevent
 }
 object ChannelUserevent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     eventname: String,
     timestamp: Date,
@@ -49,31 +48,22 @@ object ChannelUserevent {
     __obj.asInstanceOf[ChannelUserevent]
   }
   
-  @scala.inline
-  implicit class ChannelUsereventMutableBuilder[Self <: ChannelUserevent] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelUserevent](x: Self) {
     
-    @scala.inline
-    def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
+    inline def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBridgeUndefined: Self = StObject.set(x, "bridge", js.undefined)
+    inline def setBridgeUndefined: Self = StObject.set(x, "bridge", js.undefined)
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setEventname(value: String): Self = StObject.set(x, "eventname", value.asInstanceOf[js.Any])
+    inline def setEventname(value: String): Self = StObject.set(x, "eventname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserevent(value: IndexableObject): Self = StObject.set(x, "userevent", value.asInstanceOf[js.Any])
+    inline def setUserevent(value: IndexableObject): Self = StObject.set(x, "userevent", value.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait GitAnnotatedTag extends StObject {
 }
 object GitAnnotatedTag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: String,
     name: String,
     objectId: String,
@@ -48,25 +47,18 @@ object GitAnnotatedTag {
     __obj.asInstanceOf[GitAnnotatedTag]
   }
   
-  @scala.inline
-  implicit class GitAnnotatedTagMutableBuilder[Self <: GitAnnotatedTag] (val x: Self) extends AnyVal {
+  extension [Self <: GitAnnotatedTag](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaggedBy(value: GitUserDate): Self = StObject.set(x, "taggedBy", value.asInstanceOf[js.Any])
+    inline def setTaggedBy(value: GitUserDate): Self = StObject.set(x, "taggedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaggedObject(value: GitObject): Self = StObject.set(x, "taggedObject", value.asInstanceOf[js.Any])
+    inline def setTaggedObject(value: GitObject): Self = StObject.set(x, "taggedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ trait WorkItemTemplateReference
 }
 object WorkItemTemplateReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     description: String,
     id: String,
@@ -43,19 +42,14 @@ object WorkItemTemplateReference {
     __obj.asInstanceOf[WorkItemTemplateReference]
   }
   
-  @scala.inline
-  implicit class WorkItemTemplateReferenceMutableBuilder[Self <: WorkItemTemplateReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTemplateReference](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeName(value: String): Self = StObject.set(x, "workItemTypeName", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypeName(value: String): Self = StObject.set(x, "workItemTypeName", value.asInstanceOf[js.Any])
   }
 }

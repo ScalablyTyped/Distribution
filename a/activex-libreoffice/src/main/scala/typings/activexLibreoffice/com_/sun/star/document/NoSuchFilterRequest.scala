@@ -28,16 +28,13 @@ trait NoSuchFilterRequest
 }
 object NoSuchFilterRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, URL: String): NoSuchFilterRequest = {
+  inline def apply(Context: XInterface, Message: String, URL: String): NoSuchFilterRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoSuchFilterRequest]
   }
   
-  @scala.inline
-  implicit class NoSuchFilterRequestMutableBuilder[Self <: NoSuchFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NoSuchFilterRequest](x: Self) {
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

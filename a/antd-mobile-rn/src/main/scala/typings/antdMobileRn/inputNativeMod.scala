@@ -42,20 +42,16 @@ object inputNativeMod {
   }
   object TextInputProps {
     
-    @scala.inline
-    def apply(): TextInputProps = {
+    inline def apply(): TextInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextInputProps]
     }
     
-    @scala.inline
-    implicit class TextInputPropsMutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextInputProps](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+      inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     }
   }
 }

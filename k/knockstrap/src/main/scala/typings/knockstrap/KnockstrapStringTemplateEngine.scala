@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object KnockstrapStringTemplateEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTemplate: (String, js.Any) => Unit,
     allowTemplateRewriting: Boolean,
     getTemplate: String => js.Any,
@@ -34,25 +33,18 @@ object KnockstrapStringTemplateEngine {
     __obj.asInstanceOf[KnockstrapStringTemplateEngine]
   }
   
-  @scala.inline
-  implicit class KnockstrapStringTemplateEngineMutableBuilder[Self <: KnockstrapStringTemplateEngine] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapStringTemplateEngine](x: Self) {
     
-    @scala.inline
-    def setAddTemplate(value: (String, js.Any) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
+    inline def setAddTemplate(value: (String, js.Any) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAllowTemplateRewriting(value: Boolean): Self = StObject.set(x, "allowTemplateRewriting", value.asInstanceOf[js.Any])
+    inline def setAllowTemplateRewriting(value: Boolean): Self = StObject.set(x, "allowTemplateRewriting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTemplate(value: String => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction1(value))
+    inline def setGetTemplate(value: String => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsTemplateExist(value: String => Boolean): Self = StObject.set(x, "isTemplateExist", js.Any.fromFunction1(value))
+    inline def setIsTemplateExist(value: String => Boolean): Self = StObject.set(x, "isTemplateExist", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMakeTemplateSource(value: String => KnockstrapStringTemplate): Self = StObject.set(x, "makeTemplateSource", js.Any.fromFunction1(value))
+    inline def setMakeTemplateSource(value: String => KnockstrapStringTemplate): Self = StObject.set(x, "makeTemplateSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTemplate(value: String => Unit): Self = StObject.set(x, "removeTemplate", js.Any.fromFunction1(value))
+    inline def setRemoveTemplate(value: String => Unit): Self = StObject.set(x, "removeTemplate", js.Any.fromFunction1(value))
   }
 }

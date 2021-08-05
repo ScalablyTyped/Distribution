@@ -10,16 +10,13 @@ trait OfflineCheck extends StObject {
 }
 object OfflineCheck {
   
-  @scala.inline
-  def apply(url: String): OfflineCheck = {
+  inline def apply(url: String): OfflineCheck = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineCheck]
   }
   
-  @scala.inline
-  implicit class OfflineCheckMutableBuilder[Self <: OfflineCheck] (val x: Self) extends AnyVal {
+  extension [Self <: OfflineCheck](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

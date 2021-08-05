@@ -19,8 +19,7 @@ trait Master extends StObject {
 }
 object Master {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     master: CockroachConnectionCredentialsOptions,
     slaves: js.Array[CockroachConnectionCredentialsOptions]
   ): Master = {
@@ -28,16 +27,12 @@ object Master {
     __obj.asInstanceOf[Master]
   }
   
-  @scala.inline
-  implicit class MasterMutableBuilder[Self <: Master] (val x: Self) extends AnyVal {
+  extension [Self <: Master](x: Self) {
     
-    @scala.inline
-    def setMaster(value: CockroachConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: CockroachConnectionCredentialsOptions): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlaves(value: js.Array[CockroachConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
+    inline def setSlaves(value: js.Array[CockroachConnectionCredentialsOptions]): Self = StObject.set(x, "slaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlavesVarargs(value: CockroachConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
+    inline def setSlavesVarargs(value: CockroachConnectionCredentialsOptions*): Self = StObject.set(x, "slaves", js.Array(value :_*))
   }
 }

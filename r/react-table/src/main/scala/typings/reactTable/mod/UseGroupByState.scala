@@ -10,19 +10,15 @@ trait UseGroupByState[D /* <: js.Object */] extends StObject {
 }
 object UseGroupByState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](groupBy: js.Array[IdType[D]]): UseGroupByState[D] = {
+  inline def apply[D /* <: js.Object */](groupBy: js.Array[IdType[D]]): UseGroupByState[D] = {
     val __obj = js.Dynamic.literal(groupBy = groupBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGroupByState[D]]
   }
   
-  @scala.inline
-  implicit class UseGroupByStateMutableBuilder[Self <: UseGroupByState[?], D /* <: js.Object */] (val x: Self & UseGroupByState[D]) extends AnyVal {
+  extension [Self <: UseGroupByState[?], D /* <: js.Object */](x: Self & UseGroupByState[D]) {
     
-    @scala.inline
-    def setGroupBy(value: js.Array[IdType[D]]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: js.Array[IdType[D]]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByVarargs(value: IdType[D]*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+    inline def setGroupByVarargs(value: IdType[D]*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
   }
 }

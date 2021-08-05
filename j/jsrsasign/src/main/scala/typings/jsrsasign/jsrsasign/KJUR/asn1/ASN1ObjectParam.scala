@@ -10,16 +10,13 @@ trait ASN1ObjectParam extends StObject {
 }
 object ASN1ObjectParam {
   
-  @scala.inline
-  def apply(obj: ASN1Object): ASN1ObjectParam = {
+  inline def apply(obj: ASN1Object): ASN1ObjectParam = {
     val __obj = js.Dynamic.literal(obj = obj.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASN1ObjectParam]
   }
   
-  @scala.inline
-  implicit class ASN1ObjectParamMutableBuilder[Self <: ASN1ObjectParam] (val x: Self) extends AnyVal {
+  extension [Self <: ASN1ObjectParam](x: Self) {
     
-    @scala.inline
-    def setObj(value: ASN1Object): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
+    inline def setObj(value: ASN1Object): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
   }
 }

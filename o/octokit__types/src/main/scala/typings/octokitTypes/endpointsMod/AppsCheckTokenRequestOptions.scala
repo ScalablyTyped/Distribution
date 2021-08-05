@@ -20,25 +20,19 @@ trait AppsCheckTokenRequestOptions extends StObject {
 }
 object AppsCheckTokenRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsCheckTokenRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsCheckTokenRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/applications/:client_id/token")
     __obj.asInstanceOf[AppsCheckTokenRequestOptions]
   }
   
-  @scala.inline
-  implicit class AppsCheckTokenRequestOptionsMutableBuilder[Self <: AppsCheckTokenRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppsCheckTokenRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashapplicationsSlashColonclient_idSlashtoken): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashapplicationsSlashColonclient_idSlashtoken): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

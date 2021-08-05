@@ -13,19 +13,15 @@ trait DescribeDocumentResult extends StObject {
 }
 object DescribeDocumentResult {
   
-  @scala.inline
-  def apply(): DescribeDocumentResult = {
+  inline def apply(): DescribeDocumentResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDocumentResult]
   }
   
-  @scala.inline
-  implicit class DescribeDocumentResultMutableBuilder[Self <: DescribeDocumentResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDocumentResult](x: Self) {
     
-    @scala.inline
-    def setDocument(value: DocumentDescription): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: DocumentDescription): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
   }
 }

@@ -24,19 +24,15 @@ trait SplitTableCellsCommand extends StObject {
 }
 object SplitTableCellsCommand {
   
-  @scala.inline
-  def apply(execute: (Double, Double, Boolean) => Boolean, getState: () => SimpleCommandState): SplitTableCellsCommand = {
+  inline def apply(execute: (Double, Double, Boolean) => Boolean, getState: () => SimpleCommandState): SplitTableCellsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction3(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[SplitTableCellsCommand]
   }
   
-  @scala.inline
-  implicit class SplitTableCellsCommandMutableBuilder[Self <: SplitTableCellsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SplitTableCellsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (Double, Double, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (Double, Double, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

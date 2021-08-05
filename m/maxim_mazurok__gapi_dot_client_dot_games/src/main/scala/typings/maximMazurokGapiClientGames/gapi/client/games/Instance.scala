@@ -35,67 +35,47 @@ trait Instance extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply(): Instance = {
+  inline def apply(): Instance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instance]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+  extension [Self <: Instance](x: Self) {
     
-    @scala.inline
-    def setAcquisitionUri(value: String): Self = StObject.set(x, "acquisitionUri", value.asInstanceOf[js.Any])
+    inline def setAcquisitionUri(value: String): Self = StObject.set(x, "acquisitionUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquisitionUriUndefined: Self = StObject.set(x, "acquisitionUri", js.undefined)
+    inline def setAcquisitionUriUndefined: Self = StObject.set(x, "acquisitionUri", js.undefined)
     
-    @scala.inline
-    def setAndroidInstance(value: InstanceAndroidDetails): Self = StObject.set(x, "androidInstance", value.asInstanceOf[js.Any])
+    inline def setAndroidInstance(value: InstanceAndroidDetails): Self = StObject.set(x, "androidInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidInstanceUndefined: Self = StObject.set(x, "androidInstance", js.undefined)
+    inline def setAndroidInstanceUndefined: Self = StObject.set(x, "androidInstance", js.undefined)
     
-    @scala.inline
-    def setIosInstance(value: InstanceIosDetails): Self = StObject.set(x, "iosInstance", value.asInstanceOf[js.Any])
+    inline def setIosInstance(value: InstanceIosDetails): Self = StObject.set(x, "iosInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosInstanceUndefined: Self = StObject.set(x, "iosInstance", js.undefined)
+    inline def setIosInstanceUndefined: Self = StObject.set(x, "iosInstance", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
+    inline def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
+    inline def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
-    @scala.inline
-    def setRealtimePlay(value: Boolean): Self = StObject.set(x, "realtimePlay", value.asInstanceOf[js.Any])
+    inline def setRealtimePlay(value: Boolean): Self = StObject.set(x, "realtimePlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealtimePlayUndefined: Self = StObject.set(x, "realtimePlay", js.undefined)
+    inline def setRealtimePlayUndefined: Self = StObject.set(x, "realtimePlay", js.undefined)
     
-    @scala.inline
-    def setTurnBasedPlay(value: Boolean): Self = StObject.set(x, "turnBasedPlay", value.asInstanceOf[js.Any])
+    inline def setTurnBasedPlay(value: Boolean): Self = StObject.set(x, "turnBasedPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTurnBasedPlayUndefined: Self = StObject.set(x, "turnBasedPlay", js.undefined)
+    inline def setTurnBasedPlayUndefined: Self = StObject.set(x, "turnBasedPlay", js.undefined)
     
-    @scala.inline
-    def setWebInstance(value: InstanceWebDetails): Self = StObject.set(x, "webInstance", value.asInstanceOf[js.Any])
+    inline def setWebInstance(value: InstanceWebDetails): Self = StObject.set(x, "webInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebInstanceUndefined: Self = StObject.set(x, "webInstance", js.undefined)
+    inline def setWebInstanceUndefined: Self = StObject.set(x, "webInstance", js.undefined)
   }
 }

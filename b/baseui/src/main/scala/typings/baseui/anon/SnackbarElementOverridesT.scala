@@ -41,77 +41,59 @@ trait SnackbarElementOverridesT extends StObject {
 }
 object SnackbarElementOverridesT {
   
-  @scala.inline
-  def apply(): SnackbarElementOverridesT = {
+  inline def apply(): SnackbarElementOverridesT = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnackbarElementOverridesT]
   }
   
-  @scala.inline
-  implicit class SnackbarElementOverridesTMutableBuilder[Self <: SnackbarElementOverridesT] (val x: Self) extends AnyVal {
+  extension [Self <: SnackbarElementOverridesT](x: Self) {
     
-    @scala.inline
-    def setActionButtonContainer(
+    inline def setActionButtonContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "ActionButtonContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionButtonContainerUndefined: Self = StObject.set(x, "ActionButtonContainer", js.undefined)
+    inline def setActionButtonContainerUndefined: Self = StObject.set(x, "ActionButtonContainer", js.undefined)
     
-    @scala.inline
-    def setContent(
+    inline def setContent(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setMessage(
+    inline def setMessage(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setPlacementContainer(
+    inline def setPlacementContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "PlacementContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementContainerUndefined: Self = StObject.set(x, "PlacementContainer", js.undefined)
+    inline def setPlacementContainerUndefined: Self = StObject.set(x, "PlacementContainer", js.undefined)
     
-    @scala.inline
-    def setRoot(
+    inline def setRoot(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     
-    @scala.inline
-    def setSpinner(
+    inline def setSpinner(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "Spinner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpinnerUndefined: Self = StObject.set(x, "Spinner", js.undefined)
+    inline def setSpinnerUndefined: Self = StObject.set(x, "Spinner", js.undefined)
     
-    @scala.inline
-    def setStartEnhancerContainer(
+    inline def setStartEnhancerContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "StartEnhancerContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartEnhancerContainerUndefined: Self = StObject.set(x, "StartEnhancerContainer", js.undefined)
+    inline def setStartEnhancerContainerUndefined: Self = StObject.set(x, "StartEnhancerContainer", js.undefined)
     
-    @scala.inline
-    def setWrapActionButtonContainer(
+    inline def setWrapActionButtonContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "WrapActionButtonContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapActionButtonContainerUndefined: Self = StObject.set(x, "WrapActionButtonContainer", js.undefined)
+    inline def setWrapActionButtonContainerUndefined: Self = StObject.set(x, "WrapActionButtonContainer", js.undefined)
   }
 }

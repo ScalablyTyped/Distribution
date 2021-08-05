@@ -25,8 +25,7 @@ trait QuerySuggestionResults
 }
 object QuerySuggestionResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -43,25 +42,18 @@ object QuerySuggestionResults {
     __obj.asInstanceOf[QuerySuggestionResults]
   }
   
-  @scala.inline
-  implicit class QuerySuggestionResultsMutableBuilder[Self <: QuerySuggestionResults] (val x: Self) extends AnyVal {
+  extension [Self <: QuerySuggestionResults](x: Self) {
     
-    @scala.inline
-    def setGet_peopleNames(value: () => js.Array[String]): Self = StObject.set(x, "get_peopleNames", js.Any.fromFunction0(value))
+    inline def setGet_peopleNames(value: () => js.Array[String]): Self = StObject.set(x, "get_peopleNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_personalResults(value: () => js.Array[PersonalResultSuggestion]): Self = StObject.set(x, "get_personalResults", js.Any.fromFunction0(value))
+    inline def setGet_personalResults(value: () => js.Array[PersonalResultSuggestion]): Self = StObject.set(x, "get_personalResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queries(value: () => js.Array[QuerySuggestionQuery]): Self = StObject.set(x, "get_queries", js.Any.fromFunction0(value))
+    inline def setGet_queries(value: () => js.Array[QuerySuggestionQuery]): Self = StObject.set(x, "get_queries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_peopleNames(value: js.Array[String] => Unit): Self = StObject.set(x, "set_peopleNames", js.Any.fromFunction1(value))
+    inline def setSet_peopleNames(value: js.Array[String] => Unit): Self = StObject.set(x, "set_peopleNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_personalResults(value: js.Array[PersonalResultSuggestion] => Unit): Self = StObject.set(x, "set_personalResults", js.Any.fromFunction1(value))
+    inline def setSet_personalResults(value: js.Array[PersonalResultSuggestion] => Unit): Self = StObject.set(x, "set_personalResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queries(value: js.Array[QuerySuggestionQuery] => Unit): Self = StObject.set(x, "set_queries", js.Any.fromFunction1(value))
+    inline def setSet_queries(value: js.Array[QuerySuggestionQuery] => Unit): Self = StObject.set(x, "set_queries", js.Any.fromFunction1(value))
   }
 }

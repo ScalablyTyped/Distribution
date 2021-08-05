@@ -87,8 +87,7 @@ trait TypeDocOptionMap extends StObject {
 }
 object TypeDocOptionMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categorizeByGroup: Boolean,
     categoryOrder: js.Array[String],
     defaultCategory: String,
@@ -133,145 +132,98 @@ object TypeDocOptionMap {
     __obj.asInstanceOf[TypeDocOptionMap]
   }
   
-  @scala.inline
-  implicit class TypeDocOptionMapMutableBuilder[Self <: TypeDocOptionMap] (val x: Self) extends AnyVal {
+  extension [Self <: TypeDocOptionMap](x: Self) {
     
-    @scala.inline
-    def setCategorizeByGroup(value: Boolean): Self = StObject.set(x, "categorizeByGroup", value.asInstanceOf[js.Any])
+    inline def setCategorizeByGroup(value: Boolean): Self = StObject.set(x, "categorizeByGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryOrder(value: js.Array[String]): Self = StObject.set(x, "categoryOrder", value.asInstanceOf[js.Any])
+    inline def setCategoryOrder(value: js.Array[String]): Self = StObject.set(x, "categoryOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryOrderVarargs(value: String*): Self = StObject.set(x, "categoryOrder", js.Array(value :_*))
+    inline def setCategoryOrderVarargs(value: String*): Self = StObject.set(x, "categoryOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultCategory(value: String): Self = StObject.set(x, "defaultCategory", value.asInstanceOf[js.Any])
+    inline def setDefaultCategory(value: String): Self = StObject.set(x, "defaultCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableOutputCheck(value: Boolean): Self = StObject.set(x, "disableOutputCheck", value.asInstanceOf[js.Any])
+    inline def setDisableOutputCheck(value: Boolean): Self = StObject.set(x, "disableOutputCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableSources(value: Boolean): Self = StObject.set(x, "disableSources", value.asInstanceOf[js.Any])
+    inline def setDisableSources(value: Boolean): Self = StObject.set(x, "disableSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPoint(value: String): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
+    inline def setEntryPoint(value: String): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeExternals(value: Boolean): Self = StObject.set(x, "excludeExternals", value.asInstanceOf[js.Any])
+    inline def setExcludeExternals(value: Boolean): Self = StObject.set(x, "excludeExternals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeNotDocumented(value: Boolean): Self = StObject.set(x, "excludeNotDocumented", value.asInstanceOf[js.Any])
+    inline def setExcludeNotDocumented(value: Boolean): Self = StObject.set(x, "excludeNotDocumented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeNotExported(value: Boolean): Self = StObject.set(x, "excludeNotExported", value.asInstanceOf[js.Any])
+    inline def setExcludeNotExported(value: Boolean): Self = StObject.set(x, "excludeNotExported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludePrivate(value: Boolean): Self = StObject.set(x, "excludePrivate", value.asInstanceOf[js.Any])
+    inline def setExcludePrivate(value: Boolean): Self = StObject.set(x, "excludePrivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeProtected(value: Boolean): Self = StObject.set(x, "excludeProtected", value.asInstanceOf[js.Any])
+    inline def setExcludeProtected(value: Boolean): Self = StObject.set(x, "excludeProtected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeTags(value: js.Array[String]): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
+    inline def setExcludeTags(value: js.Array[String]): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeTagsVarargs(value: String*): Self = StObject.set(x, "excludeTags", js.Array(value :_*))
+    inline def setExcludeTagsVarargs(value: String*): Self = StObject.set(x, "excludeTags", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setExternalPattern(value: js.Array[String]): Self = StObject.set(x, "externalPattern", value.asInstanceOf[js.Any])
+    inline def setExternalPattern(value: js.Array[String]): Self = StObject.set(x, "externalPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalPatternVarargs(value: String*): Self = StObject.set(x, "externalPattern", js.Array(value :_*))
+    inline def setExternalPatternVarargs(value: String*): Self = StObject.set(x, "externalPattern", js.Array(value :_*))
     
-    @scala.inline
-    def setGaID(value: String): Self = StObject.set(x, "gaID", value.asInstanceOf[js.Any])
+    inline def setGaID(value: String): Self = StObject.set(x, "gaID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGaSite(value: String): Self = StObject.set(x, "gaSite", value.asInstanceOf[js.Any])
+    inline def setGaSite(value: String): Self = StObject.set(x, "gaSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitRemote(value: String): Self = StObject.set(x, "gitRemote", value.asInstanceOf[js.Any])
+    inline def setGitRemote(value: String): Self = StObject.set(x, "gitRemote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitRevision(value: String): Self = StObject.set(x, "gitRevision", value.asInstanceOf[js.Any])
+    inline def setGitRevision(value: String): Self = StObject.set(x, "gitRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideGenerator(value: Boolean): Self = StObject.set(x, "hideGenerator", value.asInstanceOf[js.Any])
+    inline def setHideGenerator(value: Boolean): Self = StObject.set(x, "hideGenerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCompilerErrors(value: Boolean): Self = StObject.set(x, "ignoreCompilerErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreCompilerErrors(value: Boolean): Self = StObject.set(x, "ignoreCompilerErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeclarations(value: Boolean): Self = StObject.set(x, "includeDeclarations", value.asInstanceOf[js.Any])
+    inline def setIncludeDeclarations(value: Boolean): Self = StObject.set(x, "includeDeclarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeVersion(value: Boolean): Self = StObject.set(x, "includeVersion", value.asInstanceOf[js.Any])
+    inline def setIncludeVersion(value: Boolean): Self = StObject.set(x, "includeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludes(value: String): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: String): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFiles(value: js.Array[String]): Self = StObject.set(x, "inputFiles", value.asInstanceOf[js.Any])
+    inline def setInputFiles(value: js.Array[String]): Self = StObject.set(x, "inputFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFilesVarargs(value: String*): Self = StObject.set(x, "inputFiles", js.Array(value :_*))
+    inline def setInputFilesVarargs(value: String*): Self = StObject.set(x, "inputFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListInvalidSymbolLinks(value: Boolean): Self = StObject.set(x, "listInvalidSymbolLinks", value.asInstanceOf[js.Any])
+    inline def setListInvalidSymbolLinks(value: Boolean): Self = StObject.set(x, "listInvalidSymbolLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: File): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: File): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
+    inline def setOut(value: String): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugin(value: js.Array[String]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: js.Array[String]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
+    inline def setPluginVarargs(value: String*): Self = StObject.set(x, "plugin", js.Array(value :_*))
     
-    @scala.inline
-    def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
+    inline def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToc(value: js.Array[String]): Self = StObject.set(x, "toc", value.asInstanceOf[js.Any])
+    inline def setToc(value: js.Array[String]): Self = StObject.set(x, "toc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocVarargs(value: String*): Self = StObject.set(x, "toc", js.Array(value :_*))
+    inline def setTocVarargs(value: String*): Self = StObject.set(x, "toc", js.Array(value :_*))
     
-    @scala.inline
-    def setTsconfig(value: String): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
+    inline def setTsconfig(value: String): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Boolean): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Boolean): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

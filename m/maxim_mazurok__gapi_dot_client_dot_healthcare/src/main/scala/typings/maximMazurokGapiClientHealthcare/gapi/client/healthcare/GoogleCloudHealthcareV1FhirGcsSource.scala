@@ -17,19 +17,15 @@ trait GoogleCloudHealthcareV1FhirGcsSource extends StObject {
 }
 object GoogleCloudHealthcareV1FhirGcsSource {
   
-  @scala.inline
-  def apply(): GoogleCloudHealthcareV1FhirGcsSource = {
+  inline def apply(): GoogleCloudHealthcareV1FhirGcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudHealthcareV1FhirGcsSource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudHealthcareV1FhirGcsSourceMutableBuilder[Self <: GoogleCloudHealthcareV1FhirGcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudHealthcareV1FhirGcsSource](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

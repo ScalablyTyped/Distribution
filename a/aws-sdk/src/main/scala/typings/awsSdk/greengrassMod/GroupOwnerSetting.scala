@@ -18,25 +18,19 @@ trait GroupOwnerSetting extends StObject {
 }
 object GroupOwnerSetting {
   
-  @scala.inline
-  def apply(): GroupOwnerSetting = {
+  inline def apply(): GroupOwnerSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupOwnerSetting]
   }
   
-  @scala.inline
-  implicit class GroupOwnerSettingMutableBuilder[Self <: GroupOwnerSetting] (val x: Self) extends AnyVal {
+  extension [Self <: GroupOwnerSetting](x: Self) {
     
-    @scala.inline
-    def setAutoAddGroupOwner(value: boolean): Self = StObject.set(x, "AutoAddGroupOwner", value.asInstanceOf[js.Any])
+    inline def setAutoAddGroupOwner(value: boolean): Self = StObject.set(x, "AutoAddGroupOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAddGroupOwnerUndefined: Self = StObject.set(x, "AutoAddGroupOwner", js.undefined)
+    inline def setAutoAddGroupOwnerUndefined: Self = StObject.set(x, "AutoAddGroupOwner", js.undefined)
     
-    @scala.inline
-    def setGroupOwner(value: string): Self = StObject.set(x, "GroupOwner", value.asInstanceOf[js.Any])
+    inline def setGroupOwner(value: string): Self = StObject.set(x, "GroupOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupOwnerUndefined: Self = StObject.set(x, "GroupOwner", js.undefined)
+    inline def setGroupOwnerUndefined: Self = StObject.set(x, "GroupOwner", js.undefined)
   }
 }

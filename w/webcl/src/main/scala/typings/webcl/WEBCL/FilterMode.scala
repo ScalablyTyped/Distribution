@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterMode extends StObject
 object FilterMode {
   
-  @scala.inline
-  def FILTER_LINEAR: `0x1141` = 0x1141.asInstanceOf[`0x1141`]
+  inline def FILTER_LINEAR: `0x1141` = 0x1141.asInstanceOf[`0x1141`]
   
-  @scala.inline
-  def FILTER_NEAREST: `0x1140` = 0x1140.asInstanceOf[`0x1140`]
+  inline def FILTER_NEAREST: `0x1140` = 0x1140.asInstanceOf[`0x1140`]
 }

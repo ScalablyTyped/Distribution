@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewType extends StObject
 object ViewType {
   
-  @scala.inline
-  def SystemView: `1039` = 1039.asInstanceOf[`1039`]
+  inline def SystemView: `1039` = 1039.asInstanceOf[`1039`]
   
-  @scala.inline
-  def UserView: `4230` = 4230.asInstanceOf[`4230`]
+  inline def UserView: `4230` = 4230.asInstanceOf[`4230`]
 }

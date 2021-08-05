@@ -20,31 +20,23 @@ trait ResourceCommitment extends StObject {
 }
 object ResourceCommitment {
   
-  @scala.inline
-  def apply(): ResourceCommitment = {
+  inline def apply(): ResourceCommitment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceCommitment]
   }
   
-  @scala.inline
-  implicit class ResourceCommitmentMutableBuilder[Self <: ResourceCommitment] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceCommitment](x: Self) {
     
-    @scala.inline
-    def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
+    inline def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
+    inline def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -60,17 +60,14 @@ object Flight {
   }
   object AdviceStatic {
     
-    @scala.inline
-    def apply(withAdvice: () => js.Function): AdviceStatic = {
+    inline def apply(withAdvice: () => js.Function): AdviceStatic = {
       val __obj = js.Dynamic.literal(withAdvice = js.Any.fromFunction0(withAdvice))
       __obj.asInstanceOf[AdviceStatic]
     }
     
-    @scala.inline
-    implicit class AdviceStaticMutableBuilder[Self <: AdviceStatic] (val x: Self) extends AnyVal {
+    extension [Self <: AdviceStatic](x: Self) {
       
-      @scala.inline
-      def setWithAdvice(value: () => js.Function): Self = StObject.set(x, "withAdvice", js.Any.fromFunction0(value))
+      inline def setWithAdvice(value: () => js.Function): Self = StObject.set(x, "withAdvice", js.Any.fromFunction0(value))
     }
   }
   
@@ -269,17 +266,14 @@ object Flight {
   }
   object ComposeStatic {
     
-    @scala.inline
-    def apply(mixin: (js.Object, js.Array[js.Function]) => Unit): ComposeStatic = {
+    inline def apply(mixin: (js.Object, js.Array[js.Function]) => Unit): ComposeStatic = {
       val __obj = js.Dynamic.literal(mixin = js.Any.fromFunction2(mixin))
       __obj.asInstanceOf[ComposeStatic]
     }
     
-    @scala.inline
-    implicit class ComposeStaticMutableBuilder[Self <: ComposeStatic] (val x: Self) extends AnyVal {
+    extension [Self <: ComposeStatic](x: Self) {
       
-      @scala.inline
-      def setMixin(value: (js.Object, js.Array[js.Function]) => Unit): Self = StObject.set(x, "mixin", js.Any.fromFunction2(value))
+      inline def setMixin(value: (js.Object, js.Array[js.Function]) => Unit): Self = StObject.set(x, "mixin", js.Any.fromFunction2(value))
     }
   }
   
@@ -289,17 +283,14 @@ object Flight {
   }
   object DebugStatic {
     
-    @scala.inline
-    def apply(events: LogAll): DebugStatic = {
+    inline def apply(events: LogAll): DebugStatic = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[DebugStatic]
     }
     
-    @scala.inline
-    implicit class DebugStaticMutableBuilder[Self <: DebugStatic] (val x: Self) extends AnyVal {
+    extension [Self <: DebugStatic](x: Self) {
       
-      @scala.inline
-      def setEvents(value: LogAll): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: LogAll): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     }
   }
   
@@ -309,17 +300,14 @@ object Flight {
   }
   object EventData {
     
-    @scala.inline
-    def apply(el: HTMLElement): EventData = {
+    inline def apply(el: HTMLElement): EventData = {
       val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventData]
     }
     
-    @scala.inline
-    implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+    extension [Self <: EventData](x: Self) {
       
-      @scala.inline
-      def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,26 +325,20 @@ object Flight {
   }
   object FlightStatic {
     
-    @scala.inline
-    def apply(advice: AdviceStatic, component: ComponentStatic, compose: ComposeStatic, utils: UtilsStatic): FlightStatic = {
+    inline def apply(advice: AdviceStatic, component: ComponentStatic, compose: ComposeStatic, utils: UtilsStatic): FlightStatic = {
       val __obj = js.Dynamic.literal(advice = advice.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], compose = compose.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlightStatic]
     }
     
-    @scala.inline
-    implicit class FlightStaticMutableBuilder[Self <: FlightStatic] (val x: Self) extends AnyVal {
+    extension [Self <: FlightStatic](x: Self) {
       
-      @scala.inline
-      def setAdvice(value: AdviceStatic): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
+      inline def setAdvice(value: AdviceStatic): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponent(value: ComponentStatic): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentStatic): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompose(value: ComposeStatic): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
+      inline def setCompose(value: ComposeStatic): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: UtilsStatic): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: UtilsStatic): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
     }
   }
   

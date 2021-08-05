@@ -28,31 +28,23 @@ trait ParamsResourceImagesGetfromfamily
 }
 object ParamsResourceImagesGetfromfamily {
   
-  @scala.inline
-  def apply(): ParamsResourceImagesGetfromfamily = {
+  inline def apply(): ParamsResourceImagesGetfromfamily = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceImagesGetfromfamily]
   }
   
-  @scala.inline
-  implicit class ParamsResourceImagesGetfromfamilyMutableBuilder[Self <: ParamsResourceImagesGetfromfamily] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceImagesGetfromfamily](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

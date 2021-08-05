@@ -12,7 +12,7 @@ trait DataBarBorder extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.DataBarBorder_typekey")
+  /* private */ @JSName("Excel.DataBarBorder_typekey")
   var ExcelDotDataBarBorder_typekey: DataBarBorder
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait DataBarBorder extends StObject {
 }
 object DataBarBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Color: FormatColor,
     Creator: XlCreator,
@@ -35,25 +34,18 @@ object DataBarBorder {
     __obj.asInstanceOf[DataBarBorder]
   }
   
-  @scala.inline
-  implicit class DataBarBorderMutableBuilder[Self <: DataBarBorder] (val x: Self) extends AnyVal {
+  extension [Self <: DataBarBorder](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotDataBarBorder_typekey(value: DataBarBorder): Self = StObject.set(x, "Excel.DataBarBorder_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotDataBarBorder_typekey(value: DataBarBorder): Self = StObject.set(x, "Excel.DataBarBorder_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XlDataBarBorderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlDataBarBorderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

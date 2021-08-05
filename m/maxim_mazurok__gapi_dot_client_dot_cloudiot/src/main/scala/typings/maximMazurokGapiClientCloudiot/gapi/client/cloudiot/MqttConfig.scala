@@ -11,19 +11,15 @@ trait MqttConfig extends StObject {
 }
 object MqttConfig {
   
-  @scala.inline
-  def apply(): MqttConfig = {
+  inline def apply(): MqttConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MqttConfig]
   }
   
-  @scala.inline
-  implicit class MqttConfigMutableBuilder[Self <: MqttConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MqttConfig](x: Self) {
     
-    @scala.inline
-    def setMqttEnabledState(value: String): Self = StObject.set(x, "mqttEnabledState", value.asInstanceOf[js.Any])
+    inline def setMqttEnabledState(value: String): Self = StObject.set(x, "mqttEnabledState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMqttEnabledStateUndefined: Self = StObject.set(x, "mqttEnabledState", js.undefined)
+    inline def setMqttEnabledStateUndefined: Self = StObject.set(x, "mqttEnabledState", js.undefined)
   }
 }

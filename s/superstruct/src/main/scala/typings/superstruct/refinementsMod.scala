@@ -14,17 +14,13 @@ object refinementsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def empty[T /* <: String | js.Array[js.Any] */](S: Struct[T, js.Any]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(S.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
+  inline def empty[T /* <: String | js.Array[js.Any] */](S: Struct[T, js.Any]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(S.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def length[T /* <: String | js.Array[js.Any] */](S: Struct[T, js.Any], min: Double, max: Double): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(S.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
+  inline def length[T /* <: String | js.Array[js.Any] */](S: Struct[T, js.Any], min: Double, max: Double): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(S.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def pattern[T /* <: String */](S: Struct[T, js.Any], regexp: RegExp): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(S.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
+  inline def pattern[T /* <: String */](S: Struct[T, js.Any], regexp: RegExp): Struct[T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(S.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def refinement[T](
+  inline def refinement[T](
     struct: Struct[T, js.Any],
     `type`: String,
     refiner: js.Function2[/* value */ T, /* context */ StructContext, StructResult]

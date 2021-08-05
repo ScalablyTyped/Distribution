@@ -18,19 +18,15 @@ trait SetFileModeEntry extends StObject {
 }
 object SetFileModeEntry {
   
-  @scala.inline
-  def apply(fileMode: FileModeTypeEnum, filePath: Path): SetFileModeEntry = {
+  inline def apply(fileMode: FileModeTypeEnum, filePath: Path): SetFileModeEntry = {
     val __obj = js.Dynamic.literal(fileMode = fileMode.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetFileModeEntry]
   }
   
-  @scala.inline
-  implicit class SetFileModeEntryMutableBuilder[Self <: SetFileModeEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SetFileModeEntry](x: Self) {
     
-    @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }
 }

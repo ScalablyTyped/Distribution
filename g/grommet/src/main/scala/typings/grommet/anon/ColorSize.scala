@@ -13,25 +13,19 @@ trait ColorSize extends StObject {
 }
 object ColorSize {
   
-  @scala.inline
-  def apply(): ColorSize = {
+  inline def apply(): ColorSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorSize]
   }
   
-  @scala.inline
-  implicit class ColorSizeMutableBuilder[Self <: ColorSize] (val x: Self) extends AnyVal {
+  extension [Self <: ColorSize](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

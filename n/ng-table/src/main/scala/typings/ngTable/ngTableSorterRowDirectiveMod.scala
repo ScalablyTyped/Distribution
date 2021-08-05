@@ -11,6 +11,5 @@ object ngTableSorterRowDirectiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ngTableSorterRow(): Controller = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableSorterRow")().asInstanceOf[Controller]
+  inline def ngTableSorterRow(): Controller = ^.asInstanceOf[js.Dynamic].applyDynamic("ngTableSorterRow")().asInstanceOf[Controller]
 }

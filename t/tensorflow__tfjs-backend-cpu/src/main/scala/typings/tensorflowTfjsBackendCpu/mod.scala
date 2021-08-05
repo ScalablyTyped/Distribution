@@ -48,8 +48,7 @@ object mod {
     @js.native
     val logImpl: SimpleUnaryImpl = js.native
     
-    @scala.inline
-    def maxImpl(aVals: TypedArray, reduceSize: Double, outShape: js.Array[Double], dtype: DataType): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("maxImpl")(aVals.asInstanceOf[js.Any], reduceSize.asInstanceOf[js.Any], outShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
+    inline def maxImpl(aVals: TypedArray, reduceSize: Double, outShape: js.Array[Double], dtype: DataType): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("maxImpl")(aVals.asInstanceOf[js.Any], reduceSize.asInstanceOf[js.Any], outShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
     
     @JSImport("@tensorflow/tfjs-backend-cpu", "shared.multiplyImpl")
     @js.native
@@ -63,11 +62,9 @@ object mod {
     @js.native
     val rsqrtImpl: SimpleUnaryImpl = js.native
     
-    @scala.inline
-    def simpleAbsImpl(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
+    inline def simpleAbsImpl(vals: TypedArray): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
     
-    @scala.inline
-    def sliceImpl(
+    inline def sliceImpl(
       vals: TypedArray,
       begin: js.Array[Double],
       size: js.Array[Double],
@@ -83,8 +80,7 @@ object mod {
     @js.native
     val subImpl: SimpleBinaryKernelImpl = js.native
     
-    @scala.inline
-    def transposeImpl(
+    inline def transposeImpl(
       xVals: TypedArray,
       xShape: js.Array[Double],
       dtype: DataType,
@@ -92,8 +88,7 @@ object mod {
       newShape: js.Array[Double]
     ): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("transposeImpl")(xVals.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], perm.asInstanceOf[js.Any], newShape.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
     
-    @scala.inline
-    def uniqueImpl(values: BackendValues, axis: Double, shape: js.Array[Double], dtype: DataType): Indices = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueImpl")(values.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Indices]
+    inline def uniqueImpl(values: BackendValues, axis: Double, shape: js.Array[Double], dtype: DataType): Indices = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueImpl")(values.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Indices]
   }
   
   @JSImport("@tensorflow/tfjs-backend-cpu", "version_cpu")

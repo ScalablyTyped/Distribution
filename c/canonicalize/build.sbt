@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "canonicalize"
-version := "1.0.5-76acc9"
+version := "1.0.5-7adb0c"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

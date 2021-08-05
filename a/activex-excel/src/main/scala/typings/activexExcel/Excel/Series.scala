@@ -73,7 +73,7 @@ trait Series extends StObject {
   
   val ErrorBars: typings.activexExcel.Excel.ErrorBars = js.native
   
-  @JSName("Excel.Series_typekey")
+  /* private */ @JSName("Excel.Series_typekey")
   var ExcelDotSeries_typekey: Series = js.native
   
   var Explosion: Double = js.native

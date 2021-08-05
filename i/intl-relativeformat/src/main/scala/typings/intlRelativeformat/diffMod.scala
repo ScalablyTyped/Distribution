@@ -12,12 +12,8 @@ object diffMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(from: Double, to: Double): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
-  @scala.inline
-  def default(from: Double, to: Date): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
-  @scala.inline
-  def default(from: Date, to: Double): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
-  @scala.inline
-  def default(from: Date, to: Date): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
+  inline def default(from: Double, to: Double): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
+  inline def default(from: Double, to: Date): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
+  inline def default(from: Date, to: Double): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
+  inline def default(from: Date, to: Date): RecordSUPPORTEDFIELDnumbe = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[RecordSUPPORTEDFIELDnumbe]
 }

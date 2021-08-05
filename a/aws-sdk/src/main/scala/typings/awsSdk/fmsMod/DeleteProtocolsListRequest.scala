@@ -13,16 +13,13 @@ trait DeleteProtocolsListRequest extends StObject {
 }
 object DeleteProtocolsListRequest {
   
-  @scala.inline
-  def apply(ListId: ListId): DeleteProtocolsListRequest = {
+  inline def apply(ListId: ListId): DeleteProtocolsListRequest = {
     val __obj = js.Dynamic.literal(ListId = ListId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProtocolsListRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProtocolsListRequestMutableBuilder[Self <: DeleteProtocolsListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProtocolsListRequest](x: Self) {
     
-    @scala.inline
-    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
+    inline def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
   }
 }

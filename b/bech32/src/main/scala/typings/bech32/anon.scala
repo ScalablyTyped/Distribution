@@ -14,23 +14,18 @@ object anon {
   }
   object Prefix {
     
-    @scala.inline
-    def apply(prefix: String, words: js.Array[Double]): Prefix = {
+    inline def apply(prefix: String, words: js.Array[Double]): Prefix = {
       val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any], words = words.asInstanceOf[js.Any])
       __obj.asInstanceOf[Prefix]
     }
     
-    @scala.inline
-    implicit class PrefixMutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
+    extension [Self <: Prefix](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
     }
   }
 }

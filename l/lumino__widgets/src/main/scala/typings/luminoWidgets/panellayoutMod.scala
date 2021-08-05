@@ -19,7 +19,7 @@ object panellayoutMod {
   class PanelLayout () extends Layout {
     def this(options: IOptions) = this()
     
-    var _widgets: js.Any = js.native
+    /* private */ var _widgets: js.Any = js.native
     
     /**
       * Add a widget to the end of the layout.

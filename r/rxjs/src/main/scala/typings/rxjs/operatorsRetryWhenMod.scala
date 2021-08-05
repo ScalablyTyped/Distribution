@@ -10,8 +10,7 @@ object operatorsRetryWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def retryWhen[T](
+  inline def retryWhen[T](
     notifier: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ /* errors */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any

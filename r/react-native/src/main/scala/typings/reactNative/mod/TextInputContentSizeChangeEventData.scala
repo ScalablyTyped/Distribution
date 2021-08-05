@@ -11,16 +11,13 @@ trait TextInputContentSizeChangeEventData extends StObject {
 }
 object TextInputContentSizeChangeEventData {
   
-  @scala.inline
-  def apply(contentSize: Height): TextInputContentSizeChangeEventData = {
+  inline def apply(contentSize: Height): TextInputContentSizeChangeEventData = {
     val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputContentSizeChangeEventData]
   }
   
-  @scala.inline
-  implicit class TextInputContentSizeChangeEventDataMutableBuilder[Self <: TextInputContentSizeChangeEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputContentSizeChangeEventData](x: Self) {
     
-    @scala.inline
-    def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
+    inline def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait UpdateRepositoryDescriptionInput extends StObject {
 }
 object UpdateRepositoryDescriptionInput {
   
-  @scala.inline
-  def apply(repositoryName: RepositoryName): UpdateRepositoryDescriptionInput = {
+  inline def apply(repositoryName: RepositoryName): UpdateRepositoryDescriptionInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRepositoryDescriptionInput]
   }
   
-  @scala.inline
-  implicit class UpdateRepositoryDescriptionInputMutableBuilder[Self <: UpdateRepositoryDescriptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRepositoryDescriptionInput](x: Self) {
     
-    @scala.inline
-    def setRepositoryDescription(value: RepositoryDescription): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
+    inline def setRepositoryDescription(value: RepositoryDescription): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
+    inline def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

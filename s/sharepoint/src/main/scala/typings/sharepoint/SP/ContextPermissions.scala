@@ -15,22 +15,17 @@ trait ContextPermissions extends StObject {
 }
 object ContextPermissions {
   
-  @scala.inline
-  def apply(fromJson: High => Unit, has: Double => Boolean, hasPermissions: (Double, Double) => Boolean): ContextPermissions = {
+  inline def apply(fromJson: High => Unit, has: Double => Boolean, hasPermissions: (Double, Double) => Boolean): ContextPermissions = {
     val __obj = js.Dynamic.literal(fromJson = js.Any.fromFunction1(fromJson), has = js.Any.fromFunction1(has), hasPermissions = js.Any.fromFunction2(hasPermissions))
     __obj.asInstanceOf[ContextPermissions]
   }
   
-  @scala.inline
-  implicit class ContextPermissionsMutableBuilder[Self <: ContextPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: ContextPermissions](x: Self) {
     
-    @scala.inline
-    def setFromJson(value: High => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
+    inline def setFromJson(value: High => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: Double => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: Double => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPermissions(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasPermissions", js.Any.fromFunction2(value))
+    inline def setHasPermissions(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasPermissions", js.Any.fromFunction2(value))
   }
 }

@@ -28,13 +28,11 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     tester: js.Function1[/* element */ ValueType, js.Thenable[Boolean] | Boolean]
   ): js.Promise[js.UndefOr[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], tester.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ValueType]]]
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     tester: js.Function1[/* element */ ValueType, js.Thenable[Boolean] | Boolean],
     options: Options
@@ -61,26 +59,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setPreserveOrder(value: Boolean): Self = StObject.set(x, "preserveOrder", value.asInstanceOf[js.Any])
+      inline def setPreserveOrder(value: Boolean): Self = StObject.set(x, "preserveOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveOrderUndefined: Self = StObject.set(x, "preserveOrder", js.undefined)
+      inline def setPreserveOrderUndefined: Self = StObject.set(x, "preserveOrder", js.undefined)
     }
   }
 }

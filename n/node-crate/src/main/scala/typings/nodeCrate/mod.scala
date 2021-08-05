@@ -92,8 +92,7 @@ object mod extends Shortcut {
   }
   object DBResultObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cols: js.Array[String],
       duration: Double,
       json: js.Array[js.Object],
@@ -104,32 +103,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DBResultObject]
     }
     
-    @scala.inline
-    implicit class DBResultObjectMutableBuilder[Self <: DBResultObject] (val x: Self) extends AnyVal {
+    extension [Self <: DBResultObject](x: Self) {
       
-      @scala.inline
-      def setCols(value: js.Array[String]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: js.Array[String]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsVarargs(value: String*): Self = StObject.set(x, "cols", js.Array(value :_*))
+      inline def setColsVarargs(value: String*): Self = StObject.set(x, "cols", js.Array(value :_*))
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: js.Array[js.Object]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Array[js.Object]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonVarargs(value: js.Object*): Self = StObject.set(x, "json", js.Array(value :_*))
+      inline def setJsonVarargs(value: js.Object*): Self = StObject.set(x, "json", js.Array(value :_*))
       
-      @scala.inline
-      def setRowcount(value: Double): Self = StObject.set(x, "rowcount", value.asInstanceOf[js.Any])
+      inline def setRowcount(value: Double): Self = StObject.set(x, "rowcount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: js.Array[js.Array[js.Object]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[js.Object]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[js.Object]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
   

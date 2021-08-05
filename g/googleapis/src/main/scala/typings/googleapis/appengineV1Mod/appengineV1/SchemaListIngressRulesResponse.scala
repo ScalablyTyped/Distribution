@@ -21,28 +21,21 @@ trait SchemaListIngressRulesResponse extends StObject {
 }
 object SchemaListIngressRulesResponse {
   
-  @scala.inline
-  def apply(): SchemaListIngressRulesResponse = {
+  inline def apply(): SchemaListIngressRulesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListIngressRulesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListIngressRulesResponseMutableBuilder[Self <: SchemaListIngressRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListIngressRulesResponse](x: Self) {
     
-    @scala.inline
-    def setIngressRules(value: js.Array[SchemaFirewallRule]): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
+    inline def setIngressRules(value: js.Array[SchemaFirewallRule]): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressRulesUndefined: Self = StObject.set(x, "ingressRules", js.undefined)
+    inline def setIngressRulesUndefined: Self = StObject.set(x, "ingressRules", js.undefined)
     
-    @scala.inline
-    def setIngressRulesVarargs(value: SchemaFirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value :_*))
+    inline def setIngressRulesVarargs(value: SchemaFirewallRule*): Self = StObject.set(x, "ingressRules", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

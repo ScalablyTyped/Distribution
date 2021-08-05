@@ -15,39 +15,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def model[T /* <: Document */](name: String): PassportLocalModel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[PassportLocalModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: Unit, collection: String): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: Unit, collection: String, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: PassportLocalSchema): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: String): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: String, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
-  @scala.inline
-  def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: Unit, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String): PassportLocalModel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: Unit, collection: String): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: Unit, collection: String, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: PassportLocalSchema): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: String): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: String, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
+  inline def model[T /* <: Document */](name: String, schema: PassportLocalSchema, collection: Unit, skipInit: Boolean): PassportLocalModel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[PassportLocalModel[T]]
   
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
-  @scala.inline
-  def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any]).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: Unit, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: String, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
+  inline def model_T_DocumentU_PassportLocalModelT_U[T /* <: Document */, U /* <: PassportLocalModel[T] */](name: String, schema: PassportLocalSchema, collection: Unit, skipInit: Boolean): U = (^.asInstanceOf[js.Dynamic].applyDynamic("model")(name.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], collection.asInstanceOf[js.Any], skipInit.asInstanceOf[js.Any])).asInstanceOf[U]
   
   @js.native
   trait AuthenticateMethod[T] extends StObject {
@@ -68,20 +52,16 @@ object mod {
   }
   object AuthenticationResult {
     
-    @scala.inline
-    def apply(error: js.Any, user: js.Any): AuthenticationResult = {
+    inline def apply(error: js.Any, user: js.Any): AuthenticationResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthenticationResult]
     }
     
-    @scala.inline
-    implicit class AuthenticationResultMutableBuilder[Self <: AuthenticationResult] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticationResult](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,62 +127,44 @@ object mod {
   }
   object PassportLocalErrorMessages {
     
-    @scala.inline
-    def apply(): PassportLocalErrorMessages = {
+    inline def apply(): PassportLocalErrorMessages = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PassportLocalErrorMessages]
     }
     
-    @scala.inline
-    implicit class PassportLocalErrorMessagesMutableBuilder[Self <: PassportLocalErrorMessages] (val x: Self) extends AnyVal {
+    extension [Self <: PassportLocalErrorMessages](x: Self) {
       
-      @scala.inline
-      def setAttemptTooSoonError(value: String): Self = StObject.set(x, "AttemptTooSoonError", value.asInstanceOf[js.Any])
+      inline def setAttemptTooSoonError(value: String): Self = StObject.set(x, "AttemptTooSoonError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptTooSoonErrorUndefined: Self = StObject.set(x, "AttemptTooSoonError", js.undefined)
+      inline def setAttemptTooSoonErrorUndefined: Self = StObject.set(x, "AttemptTooSoonError", js.undefined)
       
-      @scala.inline
-      def setIncorrectPasswordError(value: String): Self = StObject.set(x, "IncorrectPasswordError", value.asInstanceOf[js.Any])
+      inline def setIncorrectPasswordError(value: String): Self = StObject.set(x, "IncorrectPasswordError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncorrectPasswordErrorUndefined: Self = StObject.set(x, "IncorrectPasswordError", js.undefined)
+      inline def setIncorrectPasswordErrorUndefined: Self = StObject.set(x, "IncorrectPasswordError", js.undefined)
       
-      @scala.inline
-      def setIncorrectUsernameError(value: String): Self = StObject.set(x, "IncorrectUsernameError", value.asInstanceOf[js.Any])
+      inline def setIncorrectUsernameError(value: String): Self = StObject.set(x, "IncorrectUsernameError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncorrectUsernameErrorUndefined: Self = StObject.set(x, "IncorrectUsernameError", js.undefined)
+      inline def setIncorrectUsernameErrorUndefined: Self = StObject.set(x, "IncorrectUsernameError", js.undefined)
       
-      @scala.inline
-      def setMissingPasswordError(value: String): Self = StObject.set(x, "MissingPasswordError", value.asInstanceOf[js.Any])
+      inline def setMissingPasswordError(value: String): Self = StObject.set(x, "MissingPasswordError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingPasswordErrorUndefined: Self = StObject.set(x, "MissingPasswordError", js.undefined)
+      inline def setMissingPasswordErrorUndefined: Self = StObject.set(x, "MissingPasswordError", js.undefined)
       
-      @scala.inline
-      def setMissingUsernameError(value: String): Self = StObject.set(x, "MissingUsernameError", value.asInstanceOf[js.Any])
+      inline def setMissingUsernameError(value: String): Self = StObject.set(x, "MissingUsernameError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingUsernameErrorUndefined: Self = StObject.set(x, "MissingUsernameError", js.undefined)
+      inline def setMissingUsernameErrorUndefined: Self = StObject.set(x, "MissingUsernameError", js.undefined)
       
-      @scala.inline
-      def setNoSaltValueStoredError(value: String): Self = StObject.set(x, "NoSaltValueStoredError", value.asInstanceOf[js.Any])
+      inline def setNoSaltValueStoredError(value: String): Self = StObject.set(x, "NoSaltValueStoredError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSaltValueStoredErrorUndefined: Self = StObject.set(x, "NoSaltValueStoredError", js.undefined)
+      inline def setNoSaltValueStoredErrorUndefined: Self = StObject.set(x, "NoSaltValueStoredError", js.undefined)
       
-      @scala.inline
-      def setTooManyAttemptsError(value: String): Self = StObject.set(x, "TooManyAttemptsError", value.asInstanceOf[js.Any])
+      inline def setTooManyAttemptsError(value: String): Self = StObject.set(x, "TooManyAttemptsError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooManyAttemptsErrorUndefined: Self = StObject.set(x, "TooManyAttemptsError", js.undefined)
+      inline def setTooManyAttemptsErrorUndefined: Self = StObject.set(x, "TooManyAttemptsError", js.undefined)
       
-      @scala.inline
-      def setUserExistsError(value: String): Self = StObject.set(x, "UserExistsError", value.asInstanceOf[js.Any])
+      inline def setUserExistsError(value: String): Self = StObject.set(x, "UserExistsError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserExistsErrorUndefined: Self = StObject.set(x, "UserExistsError", js.undefined)
+      inline def setUserExistsErrorUndefined: Self = StObject.set(x, "UserExistsError", js.undefined)
     }
   }
   
@@ -286,140 +248,96 @@ object mod {
   }
   object PassportLocalOptions {
     
-    @scala.inline
-    def apply(usernameQueryFields: js.Array[String]): PassportLocalOptions = {
+    inline def apply(usernameQueryFields: js.Array[String]): PassportLocalOptions = {
       val __obj = js.Dynamic.literal(usernameQueryFields = usernameQueryFields.asInstanceOf[js.Any])
       __obj.asInstanceOf[PassportLocalOptions]
     }
     
-    @scala.inline
-    implicit class PassportLocalOptionsMutableBuilder[Self <: PassportLocalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PassportLocalOptions](x: Self) {
       
-      @scala.inline
-      def setAttemptsField(value: String): Self = StObject.set(x, "attemptsField", value.asInstanceOf[js.Any])
+      inline def setAttemptsField(value: String): Self = StObject.set(x, "attemptsField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsFieldUndefined: Self = StObject.set(x, "attemptsField", js.undefined)
+      inline def setAttemptsFieldUndefined: Self = StObject.set(x, "attemptsField", js.undefined)
       
-      @scala.inline
-      def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+      inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+      inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setErrorMessages(value: PassportLocalErrorMessages): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
+      inline def setErrorMessages(value: PassportLocalErrorMessages): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
+      inline def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
       
-      @scala.inline
-      def setHashField(value: String): Self = StObject.set(x, "hashField", value.asInstanceOf[js.Any])
+      inline def setHashField(value: String): Self = StObject.set(x, "hashField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashFieldUndefined: Self = StObject.set(x, "hashField", js.undefined)
+      inline def setHashFieldUndefined: Self = StObject.set(x, "hashField", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setKeylen(value: Double): Self = StObject.set(x, "keylen", value.asInstanceOf[js.Any])
+      inline def setKeylen(value: Double): Self = StObject.set(x, "keylen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeylenUndefined: Self = StObject.set(x, "keylen", js.undefined)
+      inline def setKeylenUndefined: Self = StObject.set(x, "keylen", js.undefined)
       
-      @scala.inline
-      def setLastLoginField(value: String): Self = StObject.set(x, "lastLoginField", value.asInstanceOf[js.Any])
+      inline def setLastLoginField(value: String): Self = StObject.set(x, "lastLoginField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastLoginFieldUndefined: Self = StObject.set(x, "lastLoginField", js.undefined)
+      inline def setLastLoginFieldUndefined: Self = StObject.set(x, "lastLoginField", js.undefined)
       
-      @scala.inline
-      def setLimitAttempts(value: Boolean): Self = StObject.set(x, "limitAttempts", value.asInstanceOf[js.Any])
+      inline def setLimitAttempts(value: Boolean): Self = StObject.set(x, "limitAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitAttemptsUndefined: Self = StObject.set(x, "limitAttempts", js.undefined)
+      inline def setLimitAttemptsUndefined: Self = StObject.set(x, "limitAttempts", js.undefined)
       
-      @scala.inline
-      def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+      inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      @scala.inline
-      def setMaxInterval(value: Double): Self = StObject.set(x, "maxInterval", value.asInstanceOf[js.Any])
+      inline def setMaxInterval(value: Double): Self = StObject.set(x, "maxInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxIntervalUndefined: Self = StObject.set(x, "maxInterval", js.undefined)
+      inline def setMaxIntervalUndefined: Self = StObject.set(x, "maxInterval", js.undefined)
       
-      @scala.inline
-      def setPasswordValidator(value: (/* password */ String, /* cb */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "passwordValidator", js.Any.fromFunction2(value))
+      inline def setPasswordValidator(value: (/* password */ String, /* cb */ js.Function1[/* err */ js.Any, Unit]) => Unit): Self = StObject.set(x, "passwordValidator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPasswordValidatorUndefined: Self = StObject.set(x, "passwordValidator", js.undefined)
+      inline def setPasswordValidatorUndefined: Self = StObject.set(x, "passwordValidator", js.undefined)
       
-      @scala.inline
-      def setPopulateFields(value: String): Self = StObject.set(x, "populateFields", value.asInstanceOf[js.Any])
+      inline def setPopulateFields(value: String): Self = StObject.set(x, "populateFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopulateFieldsUndefined: Self = StObject.set(x, "populateFields", js.undefined)
+      inline def setPopulateFieldsUndefined: Self = StObject.set(x, "populateFields", js.undefined)
       
-      @scala.inline
-      def setSaltField(value: String): Self = StObject.set(x, "saltField", value.asInstanceOf[js.Any])
+      inline def setSaltField(value: String): Self = StObject.set(x, "saltField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltFieldUndefined: Self = StObject.set(x, "saltField", js.undefined)
+      inline def setSaltFieldUndefined: Self = StObject.set(x, "saltField", js.undefined)
       
-      @scala.inline
-      def setSaltlen(value: Double): Self = StObject.set(x, "saltlen", value.asInstanceOf[js.Any])
+      inline def setSaltlen(value: Double): Self = StObject.set(x, "saltlen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltlenUndefined: Self = StObject.set(x, "saltlen", js.undefined)
+      inline def setSaltlenUndefined: Self = StObject.set(x, "saltlen", js.undefined)
       
-      @scala.inline
-      def setSelectFields(value: String): Self = StObject.set(x, "selectFields", value.asInstanceOf[js.Any])
+      inline def setSelectFields(value: String): Self = StObject.set(x, "selectFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectFieldsUndefined: Self = StObject.set(x, "selectFields", js.undefined)
+      inline def setSelectFieldsUndefined: Self = StObject.set(x, "selectFields", js.undefined)
       
-      @scala.inline
-      def setUsernameField(value: String): Self = StObject.set(x, "usernameField", value.asInstanceOf[js.Any])
+      inline def setUsernameField(value: String): Self = StObject.set(x, "usernameField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameFieldUndefined: Self = StObject.set(x, "usernameField", js.undefined)
+      inline def setUsernameFieldUndefined: Self = StObject.set(x, "usernameField", js.undefined)
       
-      @scala.inline
-      def setUsernameLowerCase(value: Boolean): Self = StObject.set(x, "usernameLowerCase", value.asInstanceOf[js.Any])
+      inline def setUsernameLowerCase(value: Boolean): Self = StObject.set(x, "usernameLowerCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameLowerCaseUndefined: Self = StObject.set(x, "usernameLowerCase", js.undefined)
+      inline def setUsernameLowerCaseUndefined: Self = StObject.set(x, "usernameLowerCase", js.undefined)
       
-      @scala.inline
-      def setUsernameQueryFields(value: js.Array[String]): Self = StObject.set(x, "usernameQueryFields", value.asInstanceOf[js.Any])
+      inline def setUsernameQueryFields(value: js.Array[String]): Self = StObject.set(x, "usernameQueryFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameQueryFieldsVarargs(value: String*): Self = StObject.set(x, "usernameQueryFields", js.Array(value :_*))
+      inline def setUsernameQueryFieldsVarargs(value: String*): Self = StObject.set(x, "usernameQueryFields", js.Array(value :_*))
       
-      @scala.inline
-      def setUsernameUnique(value: Boolean): Self = StObject.set(x, "usernameUnique", value.asInstanceOf[js.Any])
+      inline def setUsernameUnique(value: Boolean): Self = StObject.set(x, "usernameUnique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUniqueUndefined: Self = StObject.set(x, "usernameUnique", js.undefined)
+      inline def setUsernameUniqueUndefined: Self = StObject.set(x, "usernameUnique", js.undefined)
     }
   }
   

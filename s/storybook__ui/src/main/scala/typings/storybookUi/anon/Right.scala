@@ -13,25 +13,19 @@ trait Right extends StObject {
 }
 object Right {
   
-  @scala.inline
-  def apply(left: js.Array[Addon], right: js.Array[Addon]): Right = {
+  inline def apply(left: js.Array[Addon], right: js.Array[Addon]): Right = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[Right]
   }
   
-  @scala.inline
-  implicit class RightMutableBuilder[Self <: Right] (val x: Self) extends AnyVal {
+  extension [Self <: Right](x: Self) {
     
-    @scala.inline
-    def setLeft(value: js.Array[Addon]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: js.Array[Addon]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftVarargs(value: Addon*): Self = StObject.set(x, "left", js.Array(value :_*))
+    inline def setLeftVarargs(value: Addon*): Self = StObject.set(x, "left", js.Array(value :_*))
     
-    @scala.inline
-    def setRight(value: js.Array[Addon]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: js.Array[Addon]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightVarargs(value: Addon*): Self = StObject.set(x, "right", js.Array(value :_*))
+    inline def setRightVarargs(value: Addon*): Self = StObject.set(x, "right", js.Array(value :_*))
   }
 }

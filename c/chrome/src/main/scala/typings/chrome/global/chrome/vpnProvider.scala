@@ -26,54 +26,41 @@ object vpnProvider {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConfig(name: String, callback: js.Function1[/* id */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createConfig(name: String, callback: js.Function1[/* id */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfig")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def destroyConfig(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def destroyConfig(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def destroyConfig(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def destroyConfig(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroyConfig")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def notifyConnectionStateChanged(state: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def notifyConnectionStateChanged(state: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notifyConnectionStateChanged(state: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def notifyConnectionStateChanged(state: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notifyConnectionStateChanged")(state.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.vpnProvider.onConfigCreated")
   @js.native
   def onConfigCreated: VpnConfigCreationEvent = js.native
-  @scala.inline
-  def onConfigCreated_=(x: VpnConfigCreationEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onConfigCreated")(x.asInstanceOf[js.Any])
+  inline def onConfigCreated_=(x: VpnConfigCreationEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onConfigCreated")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.vpnProvider.onConfigRemoved")
   @js.native
   def onConfigRemoved: VpnConfigRemovalEvent = js.native
-  @scala.inline
-  def onConfigRemoved_=(x: VpnConfigRemovalEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onConfigRemoved")(x.asInstanceOf[js.Any])
+  inline def onConfigRemoved_=(x: VpnConfigRemovalEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onConfigRemoved")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.vpnProvider.onPacketReceived")
   @js.native
   def onPacketReceived: VpnPacketReceptionEvent = js.native
-  @scala.inline
-  def onPacketReceived_=(x: VpnPacketReceptionEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPacketReceived")(x.asInstanceOf[js.Any])
+  inline def onPacketReceived_=(x: VpnPacketReceptionEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPacketReceived")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.vpnProvider.onPlatformMessage")
   @js.native
   def onPlatformMessage: VpnPlatformMessageEvent = js.native
-  @scala.inline
-  def onPlatformMessage_=(x: VpnPlatformMessageEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPlatformMessage")(x.asInstanceOf[js.Any])
+  inline def onPlatformMessage_=(x: VpnPlatformMessageEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPlatformMessage")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.vpnProvider.onUIEvent")
   @js.native
   def onUIEvent: VpnUiEvent = js.native
-  @scala.inline
-  def onUIEvent_=(x: VpnUiEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onUIEvent")(x.asInstanceOf[js.Any])
+  inline def onUIEvent_=(x: VpnUiEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onUIEvent")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def sendPacket(data: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def sendPacket(data: ArrayBuffer, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendPacket(data: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sendPacket(data: ArrayBuffer, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setParameters(parameters: VpnSessionParameters, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParameters")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setParameters(parameters: VpnSessionParameters, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setParameters")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

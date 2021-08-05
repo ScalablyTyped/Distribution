@@ -11,8 +11,7 @@ object describeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(context: js.Any, method: String, args: js.Any*): Desc = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Desc]
+  inline def default(context: js.Any, method: String, args: js.Any*): Desc = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Desc]
   
   @JSImport("baconjs/types/describe", "Desc")
   @js.native
@@ -35,9 +34,7 @@ object describeMod {
     var method: js.UndefOr[String] = js.native
   }
   
-  @scala.inline
-  def describe(context: js.Any, method: String, args: js.Any*): Desc = (^.asInstanceOf[js.Dynamic].applyDynamic("describe")(context.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Desc]
+  inline def describe(context: js.Any, method: String, args: js.Any*): Desc = (^.asInstanceOf[js.Dynamic].applyDynamic("describe")(context.asInstanceOf[js.Any], method.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Desc]
   
-  @scala.inline
-  def findDeps(x: js.Any): js.Array[default[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDeps")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[default[js.Any]]]
+  inline def findDeps(x: js.Any): js.Array[default[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDeps")(x.asInstanceOf[js.Any]).asInstanceOf[js.Array[default[js.Any]]]
 }

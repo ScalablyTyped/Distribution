@@ -14,19 +14,15 @@ trait CreateBucketOpts
 }
 object CreateBucketOpts {
   
-  @scala.inline
-  def apply(bucketName: String, bucketType: BucketType): CreateBucketOpts = {
+  inline def apply(bucketName: String, bucketType: BucketType): CreateBucketOpts = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], bucketType = bucketType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketOpts]
   }
   
-  @scala.inline
-  implicit class CreateBucketOptsMutableBuilder[Self <: CreateBucketOpts] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBucketOpts](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketType(value: BucketType): Self = StObject.set(x, "bucketType", value.asInstanceOf[js.Any])
+    inline def setBucketType(value: BucketType): Self = StObject.set(x, "bucketType", value.asInstanceOf[js.Any])
   }
 }

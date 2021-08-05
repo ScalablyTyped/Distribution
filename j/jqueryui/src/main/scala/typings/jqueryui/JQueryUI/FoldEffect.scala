@@ -12,25 +12,19 @@ trait FoldEffect extends StObject {
 }
 object FoldEffect {
   
-  @scala.inline
-  def apply(): FoldEffect = {
+  inline def apply(): FoldEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FoldEffect]
   }
   
-  @scala.inline
-  implicit class FoldEffectMutableBuilder[Self <: FoldEffect] (val x: Self) extends AnyVal {
+  extension [Self <: FoldEffect](x: Self) {
     
-    @scala.inline
-    def setHorizFirst(value: Boolean): Self = StObject.set(x, "horizFirst", value.asInstanceOf[js.Any])
+    inline def setHorizFirst(value: Boolean): Self = StObject.set(x, "horizFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizFirstUndefined: Self = StObject.set(x, "horizFirst", js.undefined)
+    inline def setHorizFirstUndefined: Self = StObject.set(x, "horizFirst", js.undefined)
     
-    @scala.inline
-    def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

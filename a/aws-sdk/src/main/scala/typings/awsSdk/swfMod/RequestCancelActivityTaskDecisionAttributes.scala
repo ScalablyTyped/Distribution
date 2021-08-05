@@ -13,16 +13,13 @@ trait RequestCancelActivityTaskDecisionAttributes extends StObject {
 }
 object RequestCancelActivityTaskDecisionAttributes {
   
-  @scala.inline
-  def apply(activityId: ActivityId): RequestCancelActivityTaskDecisionAttributes = {
+  inline def apply(activityId: ActivityId): RequestCancelActivityTaskDecisionAttributes = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestCancelActivityTaskDecisionAttributes]
   }
   
-  @scala.inline
-  implicit class RequestCancelActivityTaskDecisionAttributesMutableBuilder[Self <: RequestCancelActivityTaskDecisionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: RequestCancelActivityTaskDecisionAttributes](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
   }
 }

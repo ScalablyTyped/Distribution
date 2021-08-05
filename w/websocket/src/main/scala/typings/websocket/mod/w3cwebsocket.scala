@@ -330,24 +330,20 @@ object w3cwebsocket {
   @JSImport("websocket", "w3cwebsocket.CLOSED")
   @js.native
   def CLOSED: Double = js.native
-  @scala.inline
-  def CLOSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
+  inline def CLOSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "w3cwebsocket.CLOSING")
   @js.native
   def CLOSING: Double = js.native
-  @scala.inline
-  def CLOSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+  inline def CLOSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "w3cwebsocket.CONNECTING")
   @js.native
   def CONNECTING: Double = js.native
-  @scala.inline
-  def CONNECTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+  inline def CONNECTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
   
   @JSImport("websocket", "w3cwebsocket.OPEN")
   @js.native
   def OPEN: Double = js.native
-  @scala.inline
-  def OPEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+  inline def OPEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
 }

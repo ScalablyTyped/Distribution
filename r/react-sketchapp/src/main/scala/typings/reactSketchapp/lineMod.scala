@@ -30,26 +30,20 @@ object lineMod {
   }
   object LineProps {
     
-    @scala.inline
-    def apply(x1: NumberProp, x2: NumberProp, y1: NumberProp, y2: NumberProp): LineProps = {
+    inline def apply(x1: NumberProp, x2: NumberProp, y1: NumberProp, y2: NumberProp): LineProps = {
       val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineProps]
     }
     
-    @scala.inline
-    implicit class LinePropsMutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
+    extension [Self <: LineProps](x: Self) {
       
-      @scala.inline
-      def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     }
   }
 }

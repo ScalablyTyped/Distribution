@@ -26,8 +26,7 @@ trait extentChangeStatsObj extends StObject {
 }
 object extentChangeStatsObj {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     centerLat: Double,
     centerLon: Double,
     centerX: Double,
@@ -42,34 +41,24 @@ object extentChangeStatsObj {
     __obj.asInstanceOf[extentChangeStatsObj]
   }
   
-  @scala.inline
-  implicit class extentChangeStatsObjMutableBuilder[Self <: extentChangeStatsObj] (val x: Self) extends AnyVal {
+  extension [Self <: extentChangeStatsObj](x: Self) {
     
-    @scala.inline
-    def setCenterLat(value: Double): Self = StObject.set(x, "centerLat", value.asInstanceOf[js.Any])
+    inline def setCenterLat(value: Double): Self = StObject.set(x, "centerLat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterLon(value: Double): Self = StObject.set(x, "centerLon", value.asInstanceOf[js.Any])
+    inline def setCenterLon(value: Double): Self = StObject.set(x, "centerLon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+    inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+    inline def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtents(value: envelope): Self = StObject.set(x, "extents", value.asInstanceOf[js.Any])
+    inline def setExtents(value: envelope): Self = StObject.set(x, "extents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapScale(value: Double): Self = StObject.set(x, "mapScale", value.asInstanceOf[js.Any])
+    inline def setMapScale(value: Double): Self = StObject.set(x, "mapScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapScaleProjected(value: Double): Self = StObject.set(x, "mapScaleProjected", value.asInstanceOf[js.Any])
+    inline def setMapScaleProjected(value: Double): Self = StObject.set(x, "mapScaleProjected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUnitsPerPixel(value: Double): Self = StObject.set(x, "mapUnitsPerPixel", value.asInstanceOf[js.Any])
+    inline def setMapUnitsPerPixel(value: Double): Self = StObject.set(x, "mapUnitsPerPixel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+    inline def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
   }
 }

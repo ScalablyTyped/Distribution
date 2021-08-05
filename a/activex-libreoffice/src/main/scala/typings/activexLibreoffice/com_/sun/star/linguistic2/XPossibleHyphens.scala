@@ -52,8 +52,7 @@ trait XPossibleHyphens
 }
 object XPossibleHyphens {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HyphenationPositions: SafeArray[Double],
     Locale: Locale,
     PossibleHyphens: String,
@@ -70,31 +69,22 @@ object XPossibleHyphens {
     __obj.asInstanceOf[XPossibleHyphens]
   }
   
-  @scala.inline
-  implicit class XPossibleHyphensMutableBuilder[Self <: XPossibleHyphens] (val x: Self) extends AnyVal {
+  extension [Self <: XPossibleHyphens](x: Self) {
     
-    @scala.inline
-    def setGetHyphenationPositions(value: () => SafeArray[Double]): Self = StObject.set(x, "getHyphenationPositions", js.Any.fromFunction0(value))
+    inline def setGetHyphenationPositions(value: () => SafeArray[Double]): Self = StObject.set(x, "getHyphenationPositions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+    inline def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPossibleHyphens(value: () => String): Self = StObject.set(x, "getPossibleHyphens", js.Any.fromFunction0(value))
+    inline def setGetPossibleHyphens(value: () => String): Self = StObject.set(x, "getPossibleHyphens", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWord(value: () => String): Self = StObject.set(x, "getWord", js.Any.fromFunction0(value))
+    inline def setGetWord(value: () => String): Self = StObject.set(x, "getWord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHyphenationPositions(value: SafeArray[Double]): Self = StObject.set(x, "HyphenationPositions", value.asInstanceOf[js.Any])
+    inline def setHyphenationPositions(value: SafeArray[Double]): Self = StObject.set(x, "HyphenationPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleHyphens(value: String): Self = StObject.set(x, "PossibleHyphens", value.asInstanceOf[js.Any])
+    inline def setPossibleHyphens(value: String): Self = StObject.set(x, "PossibleHyphens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
   }
 }

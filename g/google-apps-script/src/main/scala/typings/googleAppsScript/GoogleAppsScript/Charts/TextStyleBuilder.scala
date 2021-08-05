@@ -28,8 +28,7 @@ trait TextStyleBuilder extends StObject {
 }
 object TextStyleBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => TextStyle,
     setColor: String => TextStyleBuilder,
     setFontName: String => TextStyleBuilder,
@@ -39,19 +38,14 @@ object TextStyleBuilder {
     __obj.asInstanceOf[TextStyleBuilder]
   }
   
-  @scala.inline
-  implicit class TextStyleBuilderMutableBuilder[Self <: TextStyleBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyleBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => TextStyle): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => TextStyle): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetColor(value: String => TextStyleBuilder): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    inline def setSetColor(value: String => TextStyleBuilder): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFontName(value: String => TextStyleBuilder): Self = StObject.set(x, "setFontName", js.Any.fromFunction1(value))
+    inline def setSetFontName(value: String => TextStyleBuilder): Self = StObject.set(x, "setFontName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFontSize(value: Double => TextStyleBuilder): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
+    inline def setSetFontSize(value: Double => TextStyleBuilder): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
   }
 }

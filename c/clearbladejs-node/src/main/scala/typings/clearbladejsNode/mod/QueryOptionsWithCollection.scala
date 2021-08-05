@@ -12,16 +12,13 @@ trait QueryOptionsWithCollection
 }
 object QueryOptionsWithCollection {
   
-  @scala.inline
-  def apply(collection: String): QueryOptionsWithCollection = {
+  inline def apply(collection: String): QueryOptionsWithCollection = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptionsWithCollection]
   }
   
-  @scala.inline
-  implicit class QueryOptionsWithCollectionMutableBuilder[Self <: QueryOptionsWithCollection] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOptionsWithCollection](x: Self) {
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
   }
 }

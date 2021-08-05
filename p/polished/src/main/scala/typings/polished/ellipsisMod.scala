@@ -11,10 +11,7 @@ object ellipsisMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
-  @scala.inline
-  def default(width: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
-  @scala.inline
-  def default(width: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
+  inline def default(width: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(width: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

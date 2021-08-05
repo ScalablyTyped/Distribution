@@ -25,28 +25,21 @@ trait SchemaBuildBazelRemoteExecutionV2Tree extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2Tree {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2Tree = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2Tree = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2Tree]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2TreeMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2Tree] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2Tree](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[SchemaBuildBazelRemoteExecutionV2Directory]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[SchemaBuildBazelRemoteExecutionV2Directory]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: SchemaBuildBazelRemoteExecutionV2Directory*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setRoot(value: SchemaBuildBazelRemoteExecutionV2Directory): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SchemaBuildBazelRemoteExecutionV2Directory): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

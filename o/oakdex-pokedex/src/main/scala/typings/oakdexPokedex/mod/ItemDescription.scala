@@ -12,22 +12,17 @@ trait ItemDescription extends StObject {
 }
 object ItemDescription {
   
-  @scala.inline
-  def apply(games: js.Array[String], translations: Translations): ItemDescription = {
+  inline def apply(games: js.Array[String], translations: Translations): ItemDescription = {
     val __obj = js.Dynamic.literal(games = games.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDescription]
   }
   
-  @scala.inline
-  implicit class ItemDescriptionMutableBuilder[Self <: ItemDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ItemDescription](x: Self) {
     
-    @scala.inline
-    def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
+    inline def setGames(value: js.Array[String]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
+    inline def setGamesVarargs(value: String*): Self = StObject.set(x, "games", js.Array(value :_*))
     
-    @scala.inline
-    def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
   }
 }

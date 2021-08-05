@@ -21,43 +21,31 @@ trait Privilege extends StObject {
 }
 object Privilege {
   
-  @scala.inline
-  def apply(): Privilege = {
+  inline def apply(): Privilege = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Privilege]
   }
   
-  @scala.inline
-  implicit class PrivilegeMutableBuilder[Self <: Privilege] (val x: Self) extends AnyVal {
+  extension [Self <: Privilege](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setPrivilege(value: SharedNotePrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
+    inline def setPrivilege(value: SharedNotePrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
+    inline def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
-    @scala.inline
-    def setRecipientUserId(value: UserID): Self = StObject.set(x, "recipientUserId", value.asInstanceOf[js.Any])
+    inline def setRecipientUserId(value: UserID): Self = StObject.set(x, "recipientUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientUserIdUndefined: Self = StObject.set(x, "recipientUserId", js.undefined)
+    inline def setRecipientUserIdUndefined: Self = StObject.set(x, "recipientUserId", js.undefined)
     
-    @scala.inline
-    def setRestrictions(value: NoteShareRelationshipRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: NoteShareRelationshipRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+    inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
-    @scala.inline
-    def setSharerUserId(value: UserID): Self = StObject.set(x, "sharerUserId", value.asInstanceOf[js.Any])
+    inline def setSharerUserId(value: UserID): Self = StObject.set(x, "sharerUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharerUserIdUndefined: Self = StObject.set(x, "sharerUserId", js.undefined)
+    inline def setSharerUserIdUndefined: Self = StObject.set(x, "sharerUserId", js.undefined)
   }
 }

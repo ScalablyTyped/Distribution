@@ -23,28 +23,21 @@ trait CancelStepsInput extends StObject {
 }
 object CancelStepsInput {
   
-  @scala.inline
-  def apply(ClusterId: XmlStringMaxLen256, StepIds: StepIdsList): CancelStepsInput = {
+  inline def apply(ClusterId: XmlStringMaxLen256, StepIds: StepIdsList): CancelStepsInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], StepIds = StepIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelStepsInput]
   }
   
-  @scala.inline
-  implicit class CancelStepsInputMutableBuilder[Self <: CancelStepsInput] (val x: Self) extends AnyVal {
+  extension [Self <: CancelStepsInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: XmlStringMaxLen256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: XmlStringMaxLen256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepCancellationOption(value: StepCancellationOption): Self = StObject.set(x, "StepCancellationOption", value.asInstanceOf[js.Any])
+    inline def setStepCancellationOption(value: StepCancellationOption): Self = StObject.set(x, "StepCancellationOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepCancellationOptionUndefined: Self = StObject.set(x, "StepCancellationOption", js.undefined)
+    inline def setStepCancellationOptionUndefined: Self = StObject.set(x, "StepCancellationOption", js.undefined)
     
-    @scala.inline
-    def setStepIds(value: StepIdsList): Self = StObject.set(x, "StepIds", value.asInstanceOf[js.Any])
+    inline def setStepIds(value: StepIdsList): Self = StObject.set(x, "StepIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
+    inline def setStepIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "StepIds", js.Array(value :_*))
   }
 }

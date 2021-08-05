@@ -85,17 +85,14 @@ object anon {
   }
   object Typeofv1 {
     
-    @scala.inline
-    def apply(TextToSpeechClient: TypeofTextToSpeechClient): Typeofv1 = {
+    inline def apply(TextToSpeechClient: TypeofTextToSpeechClient): Typeofv1 = {
       val __obj = js.Dynamic.literal(TextToSpeechClient = TextToSpeechClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofv1]
     }
     
-    @scala.inline
-    implicit class Typeofv1MutableBuilder[Self <: Typeofv1] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofv1](x: Self) {
       
-      @scala.inline
-      def setTextToSpeechClient(value: TypeofTextToSpeechClient): Self = StObject.set(x, "TextToSpeechClient", value.asInstanceOf[js.Any])
+      inline def setTextToSpeechClient(value: TypeofTextToSpeechClient): Self = StObject.set(x, "TextToSpeechClient", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,17 +102,14 @@ object anon {
   }
   object Typeofv1beta1 {
     
-    @scala.inline
-    def apply(TextToSpeechClient: TypeofTextToSpeechClientInstantiable): Typeofv1beta1 = {
+    inline def apply(TextToSpeechClient: TypeofTextToSpeechClientInstantiable): Typeofv1beta1 = {
       val __obj = js.Dynamic.literal(TextToSpeechClient = TextToSpeechClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofv1beta1]
     }
     
-    @scala.inline
-    implicit class Typeofv1beta1MutableBuilder[Self <: Typeofv1beta1] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofv1beta1](x: Self) {
       
-      @scala.inline
-      def setTextToSpeechClient(value: TypeofTextToSpeechClientInstantiable): Self = StObject.set(x, "TextToSpeechClient", value.asInstanceOf[js.Any])
+      inline def setTextToSpeechClient(value: TypeofTextToSpeechClientInstantiable): Self = StObject.set(x, "TextToSpeechClient", value.asInstanceOf[js.Any])
     }
   }
 }

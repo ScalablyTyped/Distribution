@@ -11,19 +11,15 @@ trait OneTimeSchedule extends StObject {
 }
 object OneTimeSchedule {
   
-  @scala.inline
-  def apply(): OneTimeSchedule = {
+  inline def apply(): OneTimeSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OneTimeSchedule]
   }
   
-  @scala.inline
-  implicit class OneTimeScheduleMutableBuilder[Self <: OneTimeSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: OneTimeSchedule](x: Self) {
     
-    @scala.inline
-    def setExecuteTime(value: String): Self = StObject.set(x, "executeTime", value.asInstanceOf[js.Any])
+    inline def setExecuteTime(value: String): Self = StObject.set(x, "executeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecuteTimeUndefined: Self = StObject.set(x, "executeTime", js.undefined)
+    inline def setExecuteTimeUndefined: Self = StObject.set(x, "executeTime", js.undefined)
   }
 }

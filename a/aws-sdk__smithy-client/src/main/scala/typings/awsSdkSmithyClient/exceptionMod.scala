@@ -36,32 +36,24 @@ object exceptionMod {
   }
   object SmithyException {
     
-    @scala.inline
-    def apply($fault: client | server, name: String): SmithyException = {
+    inline def apply($fault: client | server, name: String): SmithyException = {
       val __obj = js.Dynamic.literal($fault = $fault.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SmithyException]
     }
     
-    @scala.inline
-    implicit class SmithyExceptionMutableBuilder[Self <: SmithyException] (val x: Self) extends AnyVal {
+    extension [Self <: SmithyException](x: Self) {
       
-      @scala.inline
-      def set$fault(value: client | server): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
+      inline def set$fault(value: client | server): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$retryable(value: RetryableTrait): Self = StObject.set(x, "$retryable", value.asInstanceOf[js.Any])
+      inline def set$retryable(value: RetryableTrait): Self = StObject.set(x, "$retryable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$retryableUndefined: Self = StObject.set(x, "$retryable", js.undefined)
+      inline def set$retryableUndefined: Self = StObject.set(x, "$retryable", js.undefined)
       
-      @scala.inline
-      def set$service(value: String): Self = StObject.set(x, "$service", value.asInstanceOf[js.Any])
+      inline def set$service(value: String): Self = StObject.set(x, "$service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$serviceUndefined: Self = StObject.set(x, "$service", js.undefined)
+      inline def set$serviceUndefined: Self = StObject.set(x, "$service", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

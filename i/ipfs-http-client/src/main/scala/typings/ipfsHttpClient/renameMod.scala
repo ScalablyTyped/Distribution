@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object renameMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function3[
+  inline def apply(clientOptions: ClientOptions): js.Function3[
     /* oldName */ js.Any, 
     /* newName */ js.Any, 
     /* options */ js.UndefOr[js.Object], 

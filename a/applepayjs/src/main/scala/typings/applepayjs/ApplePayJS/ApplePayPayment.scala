@@ -26,28 +26,21 @@ trait ApplePayPayment extends StObject {
 }
 object ApplePayPayment {
   
-  @scala.inline
-  def apply(token: ApplePayPaymentToken): ApplePayPayment = {
+  inline def apply(token: ApplePayPaymentToken): ApplePayPayment = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPayment]
   }
   
-  @scala.inline
-  implicit class ApplePayPaymentMutableBuilder[Self <: ApplePayPayment] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePayPayment](x: Self) {
     
-    @scala.inline
-    def setBillingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
+    inline def setBillingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingContactUndefined: Self = StObject.set(x, "billingContact", js.undefined)
+    inline def setBillingContactUndefined: Self = StObject.set(x, "billingContact", js.undefined)
     
-    @scala.inline
-    def setShippingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
+    inline def setShippingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
+    inline def setShippingContactUndefined: Self = StObject.set(x, "shippingContact", js.undefined)
     
-    @scala.inline
-    def setToken(value: ApplePayPaymentToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: ApplePayPaymentToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

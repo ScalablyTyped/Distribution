@@ -17,34 +17,25 @@ trait GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation extends StObje
 }
 object GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotationMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
+    inline def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
     
-    @scala.inline
-    def setObjectTrackingFrames(value: js.Array[GoogleCloudDatalabelingV1beta1ObjectTrackingFrame]): Self = StObject.set(x, "objectTrackingFrames", value.asInstanceOf[js.Any])
+    inline def setObjectTrackingFrames(value: js.Array[GoogleCloudDatalabelingV1beta1ObjectTrackingFrame]): Self = StObject.set(x, "objectTrackingFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTrackingFramesUndefined: Self = StObject.set(x, "objectTrackingFrames", js.undefined)
+    inline def setObjectTrackingFramesUndefined: Self = StObject.set(x, "objectTrackingFrames", js.undefined)
     
-    @scala.inline
-    def setObjectTrackingFramesVarargs(value: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame*): Self = StObject.set(x, "objectTrackingFrames", js.Array(value :_*))
+    inline def setObjectTrackingFramesVarargs(value: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame*): Self = StObject.set(x, "objectTrackingFrames", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeSegment(value: GoogleCloudDatalabelingV1beta1TimeSegment): Self = StObject.set(x, "timeSegment", value.asInstanceOf[js.Any])
+    inline def setTimeSegment(value: GoogleCloudDatalabelingV1beta1TimeSegment): Self = StObject.set(x, "timeSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSegmentUndefined: Self = StObject.set(x, "timeSegment", js.undefined)
+    inline def setTimeSegmentUndefined: Self = StObject.set(x, "timeSegment", js.undefined)
   }
 }

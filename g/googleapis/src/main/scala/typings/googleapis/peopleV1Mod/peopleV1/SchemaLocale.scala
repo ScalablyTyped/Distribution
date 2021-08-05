@@ -22,25 +22,19 @@ trait SchemaLocale extends StObject {
 }
 object SchemaLocale {
   
-  @scala.inline
-  def apply(): SchemaLocale = {
+  inline def apply(): SchemaLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocale]
   }
   
-  @scala.inline
-  implicit class SchemaLocaleMutableBuilder[Self <: SchemaLocale] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocale](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

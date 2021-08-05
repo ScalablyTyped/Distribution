@@ -18,27 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReferrerPolicy extends StObject
 object ReferrerPolicy {
   
-  @scala.inline
-  def noReferrer: typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrer = "noReferrer".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrer]
+  inline def noReferrer: typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrer = "noReferrer".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrer]
   
-  @scala.inline
-  def noReferrerWhenDowngrade: typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrerWhenDowngrade = "noReferrerWhenDowngrade".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrerWhenDowngrade]
+  inline def noReferrerWhenDowngrade: typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrerWhenDowngrade = "noReferrerWhenDowngrade".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.noReferrerWhenDowngrade]
   
-  @scala.inline
-  def origin: typings.devtoolsProtocol.devtoolsProtocolStrings.origin = "origin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.origin]
+  inline def origin: typings.devtoolsProtocol.devtoolsProtocolStrings.origin = "origin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.origin]
   
-  @scala.inline
-  def originWhenCrossOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.originWhenCrossOrigin = "originWhenCrossOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.originWhenCrossOrigin]
+  inline def originWhenCrossOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.originWhenCrossOrigin = "originWhenCrossOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.originWhenCrossOrigin]
   
-  @scala.inline
-  def sameOrigin: sameOrigin_ = "sameOrigin".asInstanceOf[sameOrigin_]
+  inline def sameOrigin: sameOrigin_ = "sameOrigin".asInstanceOf[sameOrigin_]
   
-  @scala.inline
-  def strictOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.strictOrigin = "strictOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.strictOrigin]
+  inline def strictOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.strictOrigin = "strictOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.strictOrigin]
   
-  @scala.inline
-  def strictOriginWhenCrossOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.strictOriginWhenCrossOrigin = "strictOriginWhenCrossOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.strictOriginWhenCrossOrigin]
+  inline def strictOriginWhenCrossOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.strictOriginWhenCrossOrigin = "strictOriginWhenCrossOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.strictOriginWhenCrossOrigin]
   
-  @scala.inline
-  def unsafeUrl: typings.devtoolsProtocol.devtoolsProtocolStrings.unsafeUrl = "unsafeUrl".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unsafeUrl]
+  inline def unsafeUrl: typings.devtoolsProtocol.devtoolsProtocolStrings.unsafeUrl = "unsafeUrl".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unsafeUrl]
 }

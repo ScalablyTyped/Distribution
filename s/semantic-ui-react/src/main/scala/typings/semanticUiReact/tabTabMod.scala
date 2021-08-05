@@ -82,71 +82,50 @@ object tabTabMod extends Shortcut {
   }
   object StrictTabProps {
     
-    @scala.inline
-    def apply(): StrictTabProps = {
+    inline def apply(): StrictTabProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTabProps]
     }
     
-    @scala.inline
-    implicit class StrictTabPropsMutableBuilder[Self <: StrictTabProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTabProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double | String): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double | String): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+      inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveIndex(value: Double | String): Self = StObject.set(x, "defaultActiveIndex", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveIndex(value: Double | String): Self = StObject.set(x, "defaultActiveIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActiveIndexUndefined: Self = StObject.set(x, "defaultActiveIndex", js.undefined)
+      inline def setDefaultActiveIndexUndefined: Self = StObject.set(x, "defaultActiveIndex", js.undefined)
       
-      @scala.inline
-      def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setMenu(value: js.Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: js.Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPosition(value: left | right): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
+      inline def setMenuPosition(value: left | right): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
+      inline def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
       
-      @scala.inline
-      def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      @scala.inline
-      def setOnTabChange(value: (/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* data */ TabProps) => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction2(value))
+      inline def setOnTabChange(value: (/* event */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* data */ TabProps) => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
+      inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      @scala.inline
-      def setPanes(value: js.Array[MenuItem]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
+      inline def setPanes(value: js.Array[MenuItem]): Self = StObject.set(x, "panes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanesUndefined: Self = StObject.set(x, "panes", js.undefined)
+      inline def setPanesUndefined: Self = StObject.set(x, "panes", js.undefined)
       
-      @scala.inline
-      def setPanesVarargs(value: MenuItem*): Self = StObject.set(x, "panes", js.Array(value :_*))
+      inline def setPanesVarargs(value: MenuItem*): Self = StObject.set(x, "panes", js.Array(value :_*))
       
-      @scala.inline
-      def setRenderActiveOnly(value: Boolean): Self = StObject.set(x, "renderActiveOnly", value.asInstanceOf[js.Any])
+      inline def setRenderActiveOnly(value: Boolean): Self = StObject.set(x, "renderActiveOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderActiveOnlyUndefined: Self = StObject.set(x, "renderActiveOnly", js.undefined)
+      inline def setRenderActiveOnlyUndefined: Self = StObject.set(x, "renderActiveOnly", js.undefined)
     }
   }
   
@@ -164,8 +143,7 @@ object tabTabMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TabProps {
     
-    @scala.inline
-    def apply(): TabProps = {
+    inline def apply(): TabProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabProps]
     }

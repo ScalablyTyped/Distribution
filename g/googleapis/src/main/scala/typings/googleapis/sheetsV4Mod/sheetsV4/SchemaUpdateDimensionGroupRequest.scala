@@ -24,25 +24,19 @@ trait SchemaUpdateDimensionGroupRequest extends StObject {
 }
 object SchemaUpdateDimensionGroupRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateDimensionGroupRequest = {
+  inline def apply(): SchemaUpdateDimensionGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateDimensionGroupRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateDimensionGroupRequestMutableBuilder[Self <: SchemaUpdateDimensionGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateDimensionGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDimensionGroup(value: SchemaDimensionGroup): Self = StObject.set(x, "dimensionGroup", value.asInstanceOf[js.Any])
+    inline def setDimensionGroup(value: SchemaDimensionGroup): Self = StObject.set(x, "dimensionGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionGroupUndefined: Self = StObject.set(x, "dimensionGroup", js.undefined)
+    inline def setDimensionGroupUndefined: Self = StObject.set(x, "dimensionGroup", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

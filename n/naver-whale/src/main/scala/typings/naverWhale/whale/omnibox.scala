@@ -45,14 +45,11 @@ object omnibox {
   trait OnInputEnteredDisposition extends StObject
   object OnInputEnteredDisposition {
     
-    @scala.inline
-    def currentTab: typings.naverWhale.naverWhaleStrings.currentTab = "currentTab".asInstanceOf[typings.naverWhale.naverWhaleStrings.currentTab]
+    inline def currentTab: typings.naverWhale.naverWhaleStrings.currentTab = "currentTab".asInstanceOf[typings.naverWhale.naverWhaleStrings.currentTab]
     
-    @scala.inline
-    def newBackgroundTab: typings.naverWhale.naverWhaleStrings.newBackgroundTab = "newBackgroundTab".asInstanceOf[typings.naverWhale.naverWhaleStrings.newBackgroundTab]
+    inline def newBackgroundTab: typings.naverWhale.naverWhaleStrings.newBackgroundTab = "newBackgroundTab".asInstanceOf[typings.naverWhale.naverWhaleStrings.newBackgroundTab]
     
-    @scala.inline
-    def newForegroundTab: typings.naverWhale.naverWhaleStrings.newForegroundTab = "newForegroundTab".asInstanceOf[typings.naverWhale.naverWhaleStrings.newForegroundTab]
+    inline def newForegroundTab: typings.naverWhale.naverWhaleStrings.newForegroundTab = "newForegroundTab".asInstanceOf[typings.naverWhale.naverWhaleStrings.newForegroundTab]
   }
   
   trait SuggestResult extends StObject {
@@ -71,26 +68,20 @@ object omnibox {
   }
   object SuggestResult {
     
-    @scala.inline
-    def apply(content: String, description: String): SuggestResult = {
+    inline def apply(content: String, description: String): SuggestResult = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuggestResult]
     }
     
-    @scala.inline
-    implicit class SuggestResultMutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
+    extension [Self <: SuggestResult](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
+      inline def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
+      inline def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,17 +92,14 @@ object omnibox {
   }
   object Suggestion {
     
-    @scala.inline
-    def apply(description: String): Suggestion = {
+    inline def apply(description: String): Suggestion = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[Suggestion]
     }
     
-    @scala.inline
-    implicit class SuggestionMutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
+    extension [Self <: Suggestion](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
 }

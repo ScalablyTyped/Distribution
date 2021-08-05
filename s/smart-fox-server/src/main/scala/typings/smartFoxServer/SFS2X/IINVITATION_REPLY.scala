@@ -15,22 +15,17 @@ trait IINVITATION_REPLY extends StObject {
 }
 object IINVITATION_REPLY {
   
-  @scala.inline
-  def apply(data: js.Object, invitee: SFSUser, reply: Double): IINVITATION_REPLY = {
+  inline def apply(data: js.Object, invitee: SFSUser, reply: Double): IINVITATION_REPLY = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], invitee = invitee.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any])
     __obj.asInstanceOf[IINVITATION_REPLY]
   }
   
-  @scala.inline
-  implicit class IINVITATION_REPLYMutableBuilder[Self <: IINVITATION_REPLY] (val x: Self) extends AnyVal {
+  extension [Self <: IINVITATION_REPLY](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitee(value: SFSUser): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
+    inline def setInvitee(value: SFSUser): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply(value: Double): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+    inline def setReply(value: Double): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
   }
 }

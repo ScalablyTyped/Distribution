@@ -18,23 +18,18 @@ trait MemberAccess
 }
 object MemberAccess {
   
-  @scala.inline
-  def apply(expression: Expression, memberName: String): MemberAccess = {
+  inline def apply(expression: Expression, memberName: String): MemberAccess = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], memberName = memberName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberAccess")
     __obj.asInstanceOf[MemberAccess]
   }
   
-  @scala.inline
-  implicit class MemberAccessMutableBuilder[Self <: MemberAccess] (val x: Self) extends AnyVal {
+  extension [Self <: MemberAccess](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberName(value: String): Self = StObject.set(x, "memberName", value.asInstanceOf[js.Any])
+    inline def setMemberName(value: String): Self = StObject.set(x, "memberName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.MemberAccess): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

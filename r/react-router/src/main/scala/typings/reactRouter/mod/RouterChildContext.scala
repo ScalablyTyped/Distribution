@@ -14,20 +14,17 @@ trait RouterChildContext[Params /* <: /* import warning: importer.ImportType#app
 }
 object RouterChildContext {
   
-  @scala.inline
-  def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouter.reactRouterStrings.RouterChildContext & TopLevel[js.Any] */](router: History[Params]): RouterChildContext[Params] = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterChildContext[Params]]
   }
   
-  @scala.inline
-  implicit class RouterChildContextMutableBuilder[Self <: RouterChildContext[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  extension [Self <: RouterChildContext[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouter.reactRouterStrings.RouterChildContext & TopLevel[js.Any] */] (val x: Self & RouterChildContext[Params]) extends AnyVal {
+    */ typings.reactRouter.reactRouterStrings.RouterChildContext & TopLevel[js.Any] */](x: Self & RouterChildContext[Params]) {
     
-    @scala.inline
-    def setRouter(value: History[Params]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: History[Params]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }
 }

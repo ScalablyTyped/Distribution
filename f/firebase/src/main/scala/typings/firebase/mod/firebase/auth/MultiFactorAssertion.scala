@@ -19,16 +19,13 @@ trait MultiFactorAssertion extends StObject {
 }
 object MultiFactorAssertion {
   
-  @scala.inline
-  def apply(factorId: String): MultiFactorAssertion = {
+  inline def apply(factorId: String): MultiFactorAssertion = {
     val __obj = js.Dynamic.literal(factorId = factorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFactorAssertion]
   }
   
-  @scala.inline
-  implicit class MultiFactorAssertionMutableBuilder[Self <: MultiFactorAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFactorAssertion](x: Self) {
     
-    @scala.inline
-    def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
+    inline def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
   }
 }

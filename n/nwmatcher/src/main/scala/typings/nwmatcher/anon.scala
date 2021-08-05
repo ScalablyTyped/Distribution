@@ -12,17 +12,14 @@ object anon {
   }
   object Document {
     
-    @scala.inline
-    def apply(document: typings.std.Document): Document = {
+    inline def apply(document: typings.std.Document): Document = {
       val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
       __obj.asInstanceOf[Document]
     }
     
-    @scala.inline
-    implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+    extension [Self <: Document](x: Self) {
       
-      @scala.inline
-      def setDocument(value: typings.std.Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: typings.std.Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,28 +23,21 @@ trait DescribeSchemasMessage extends StObject {
 }
 object DescribeSchemasMessage {
   
-  @scala.inline
-  def apply(EndpointArn: String): DescribeSchemasMessage = {
+  inline def apply(EndpointArn: String): DescribeSchemasMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSchemasMessage]
   }
   
-  @scala.inline
-  implicit class DescribeSchemasMessageMutableBuilder[Self <: DescribeSchemasMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSchemasMessage](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
   }
 }

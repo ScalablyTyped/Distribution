@@ -13,16 +13,13 @@ trait Attribute extends StObject {
 }
 object Attribute {
   
-  @scala.inline
-  def apply(jsonPath: AttributeJsonPath): Attribute = {
+  inline def apply(jsonPath: AttributeJsonPath): Attribute = {
     val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }
   
-  @scala.inline
-  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+  extension [Self <: Attribute](x: Self) {
     
-    @scala.inline
-    def setJsonPath(value: AttributeJsonPath): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: AttributeJsonPath): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
   }
 }

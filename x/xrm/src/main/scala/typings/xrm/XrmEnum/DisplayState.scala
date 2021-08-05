@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisplayState extends StObject
 object DisplayState {
   
-  @scala.inline
-  def Collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  inline def Collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
   
-  @scala.inline
-  def Expanded: expanded = "expanded".asInstanceOf[expanded]
+  inline def Expanded: expanded = "expanded".asInstanceOf[expanded]
 }

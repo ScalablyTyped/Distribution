@@ -14,28 +14,21 @@ trait Cursor extends StObject {
 }
 object Cursor {
   
-  @scala.inline
-  def apply(): Cursor = {
+  inline def apply(): Cursor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cursor]
   }
   
-  @scala.inline
-  implicit class CursorMutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
+  extension [Self <: Cursor](x: Self) {
     
-    @scala.inline
-    def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: Boolean): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

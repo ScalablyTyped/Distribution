@@ -23,28 +23,21 @@ trait SelectResourceConfigRequest extends StObject {
 }
 object SelectResourceConfigRequest {
   
-  @scala.inline
-  def apply(Expression: Expression): SelectResourceConfigRequest = {
+  inline def apply(Expression: Expression): SelectResourceConfigRequest = {
     val __obj = js.Dynamic.literal(Expression = Expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectResourceConfigRequest]
   }
   
-  @scala.inline
-  implicit class SelectResourceConfigRequestMutableBuilder[Self <: SelectResourceConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SelectResourceConfigRequest](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

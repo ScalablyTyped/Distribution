@@ -28,58 +28,41 @@ trait ICollectionDef extends StObject {
 }
 object ICollectionDef {
   
-  @scala.inline
-  def apply(): ICollectionDef = {
+  inline def apply(): ICollectionDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICollectionDef]
   }
   
-  @scala.inline
-  implicit class ICollectionDefMutableBuilder[Self <: ICollectionDef] (val x: Self) extends AnyVal {
+  extension [Self <: ICollectionDef](x: Self) {
     
-    @scala.inline
-    def setAnyList(value: IAnyList): Self = StObject.set(x, "anyList", value.asInstanceOf[js.Any])
+    inline def setAnyList(value: IAnyList): Self = StObject.set(x, "anyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyListNull: Self = StObject.set(x, "anyList", null)
+    inline def setAnyListNull: Self = StObject.set(x, "anyList", null)
     
-    @scala.inline
-    def setAnyListUndefined: Self = StObject.set(x, "anyList", js.undefined)
+    inline def setAnyListUndefined: Self = StObject.set(x, "anyList", js.undefined)
     
-    @scala.inline
-    def setBytesList(value: IBytesList): Self = StObject.set(x, "bytesList", value.asInstanceOf[js.Any])
+    inline def setBytesList(value: IBytesList): Self = StObject.set(x, "bytesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesListNull: Self = StObject.set(x, "bytesList", null)
+    inline def setBytesListNull: Self = StObject.set(x, "bytesList", null)
     
-    @scala.inline
-    def setBytesListUndefined: Self = StObject.set(x, "bytesList", js.undefined)
+    inline def setBytesListUndefined: Self = StObject.set(x, "bytesList", js.undefined)
     
-    @scala.inline
-    def setFloatList(value: IFloatList): Self = StObject.set(x, "floatList", value.asInstanceOf[js.Any])
+    inline def setFloatList(value: IFloatList): Self = StObject.set(x, "floatList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatListNull: Self = StObject.set(x, "floatList", null)
+    inline def setFloatListNull: Self = StObject.set(x, "floatList", null)
     
-    @scala.inline
-    def setFloatListUndefined: Self = StObject.set(x, "floatList", js.undefined)
+    inline def setFloatListUndefined: Self = StObject.set(x, "floatList", js.undefined)
     
-    @scala.inline
-    def setInt64List(value: IInt64List): Self = StObject.set(x, "int64List", value.asInstanceOf[js.Any])
+    inline def setInt64List(value: IInt64List): Self = StObject.set(x, "int64List", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt64ListNull: Self = StObject.set(x, "int64List", null)
+    inline def setInt64ListNull: Self = StObject.set(x, "int64List", null)
     
-    @scala.inline
-    def setInt64ListUndefined: Self = StObject.set(x, "int64List", js.undefined)
+    inline def setInt64ListUndefined: Self = StObject.set(x, "int64List", js.undefined)
     
-    @scala.inline
-    def setNodeList(value: INodeList): Self = StObject.set(x, "nodeList", value.asInstanceOf[js.Any])
+    inline def setNodeList(value: INodeList): Self = StObject.set(x, "nodeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeListNull: Self = StObject.set(x, "nodeList", null)
+    inline def setNodeListNull: Self = StObject.set(x, "nodeList", null)
     
-    @scala.inline
-    def setNodeListUndefined: Self = StObject.set(x, "nodeList", js.undefined)
+    inline def setNodeListUndefined: Self = StObject.set(x, "nodeList", js.undefined)
   }
 }

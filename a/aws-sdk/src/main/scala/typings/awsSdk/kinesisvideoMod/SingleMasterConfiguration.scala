@@ -13,19 +13,15 @@ trait SingleMasterConfiguration extends StObject {
 }
 object SingleMasterConfiguration {
   
-  @scala.inline
-  def apply(): SingleMasterConfiguration = {
+  inline def apply(): SingleMasterConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SingleMasterConfiguration]
   }
   
-  @scala.inline
-  implicit class SingleMasterConfigurationMutableBuilder[Self <: SingleMasterConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SingleMasterConfiguration](x: Self) {
     
-    @scala.inline
-    def setMessageTtlSeconds(value: MessageTtlSeconds): Self = StObject.set(x, "MessageTtlSeconds", value.asInstanceOf[js.Any])
+    inline def setMessageTtlSeconds(value: MessageTtlSeconds): Self = StObject.set(x, "MessageTtlSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTtlSecondsUndefined: Self = StObject.set(x, "MessageTtlSeconds", js.undefined)
+    inline def setMessageTtlSecondsUndefined: Self = StObject.set(x, "MessageTtlSeconds", js.undefined)
   }
 }

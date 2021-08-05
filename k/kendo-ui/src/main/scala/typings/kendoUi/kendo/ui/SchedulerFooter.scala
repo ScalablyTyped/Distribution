@@ -10,19 +10,15 @@ trait SchedulerFooter extends StObject {
 }
 object SchedulerFooter {
   
-  @scala.inline
-  def apply(): SchedulerFooter = {
+  inline def apply(): SchedulerFooter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerFooter]
   }
   
-  @scala.inline
-  implicit class SchedulerFooterMutableBuilder[Self <: SchedulerFooter] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerFooter](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String | Boolean): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String | Boolean): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
   }
 }

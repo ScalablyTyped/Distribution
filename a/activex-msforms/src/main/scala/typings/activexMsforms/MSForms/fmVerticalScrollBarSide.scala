@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmVerticalScrollBarSide extends StObject
 object fmVerticalScrollBarSide {
   
-  @scala.inline
-  def fmVerticalScrollBarSideLeft: `1` = 1.asInstanceOf[`1`]
+  inline def fmVerticalScrollBarSideLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmVerticalScrollBarSideRight: `0` = 0.asInstanceOf[`0`]
+  inline def fmVerticalScrollBarSideRight: `0` = 0.asInstanceOf[`0`]
 }

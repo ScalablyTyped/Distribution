@@ -19,28 +19,21 @@ trait RefsQueryResult extends StObject {
 }
 object RefsQueryResult {
   
-  @scala.inline
-  def apply(name: String, refs: js.Array[End]): RefsQueryResult = {
+  inline def apply(name: String, refs: js.Array[End]): RefsQueryResult = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefsQueryResult]
   }
   
-  @scala.inline
-  implicit class RefsQueryResultMutableBuilder[Self <: RefsQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: RefsQueryResult](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefs(value: js.Array[End]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+    inline def setRefs(value: js.Array[End]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefsVarargs(value: End*): Self = StObject.set(x, "refs", js.Array(value :_*))
+    inline def setRefsVarargs(value: End*): Self = StObject.set(x, "refs", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: global | local): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: global | local): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

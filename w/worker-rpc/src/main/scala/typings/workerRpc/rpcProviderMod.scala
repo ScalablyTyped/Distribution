@@ -39,29 +39,29 @@ object rpcProviderMod {
     extends StObject
        with RpcProviderInterface {
     
-    var _clearTransaction: js.Any = js.native
+    /* private */ var _clearTransaction: js.Any = js.native
     
-    var _dispatch: js.Any = js.native
+    /* private */ var _dispatch: js.Any = js.native
     
-    var _handeRpc: js.Any = js.native
+    /* private */ var _handeRpc: js.Any = js.native
     
-    var _handleInternal: js.Any = js.native
+    /* private */ var _handleInternal: js.Any = js.native
     
-    var _handleSignal: js.Any = js.native
+    /* private */ var _handleSignal: js.Any = js.native
     
-    var _nextTransactionId: js.Any = js.native
+    /* private */ var _nextTransactionId: js.Any = js.native
     
-    var _pendingTransactions: js.Any = js.native
+    /* private */ var _pendingTransactions: js.Any = js.native
     
-    var _raiseError: js.Any = js.native
+    /* private */ var _raiseError: js.Any = js.native
     
-    var _rpcHandlers: js.Any = js.native
+    /* private */ var _rpcHandlers: js.Any = js.native
     
-    var _rpcTimeout: js.Any = js.native
+    /* private */ var _rpcTimeout: js.Any = js.native
     
-    var _signalHandlers: js.Any = js.native
+    /* private */ var _signalHandlers: js.Any = js.native
     
-    var _transactionTimeout: js.Any = js.native
+    /* private */ var _transactionTimeout: js.Any = js.native
     
     @JSName("error")
     var error_RpcProvider: Event = js.native
@@ -110,33 +110,25 @@ object rpcProviderMod {
     }
     object Message {
       
-      @scala.inline
-      def apply(id: String, `type`: MessageType): Message = {
+      inline def apply(id: String, `type`: MessageType): Message = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Message]
       }
       
-      @scala.inline
-      implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+      extension [Self <: Message](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+        inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+        inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
         
-        @scala.inline
-        def setTransactionId(value: Double): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+        inline def setTransactionId(value: Double): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+        inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
         
-        @scala.inline
-        def setType(value: MessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: MessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }

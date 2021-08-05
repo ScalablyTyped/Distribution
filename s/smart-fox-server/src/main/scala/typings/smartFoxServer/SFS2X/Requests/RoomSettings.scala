@@ -42,8 +42,7 @@ trait RoomSettings extends StObject {
 }
 object RoomSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: RoomEvents,
     `extension`: RoomExtension,
     groupId: String,
@@ -61,43 +60,30 @@ object RoomSettings {
     __obj.asInstanceOf[RoomSettings]
   }
   
-  @scala.inline
-  implicit class RoomSettingsMutableBuilder[Self <: RoomSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RoomSettings](x: Self) {
     
-    @scala.inline
-    def setEvents(value: RoomEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: RoomEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: RoomExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: RoomExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGame(value: Boolean): Self = StObject.set(x, "isGame", value.asInstanceOf[js.Any])
+    inline def setIsGame(value: Boolean): Self = StObject.set(x, "isGame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpectators(value: Double): Self = StObject.set(x, "maxSpectators", value.asInstanceOf[js.Any])
+    inline def setMaxSpectators(value: Double): Self = StObject.set(x, "maxSpectators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUsers(value: Double): Self = StObject.set(x, "maxUsers", value.asInstanceOf[js.Any])
+    inline def setMaxUsers(value: Double): Self = StObject.set(x, "maxUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVariables(value: Double): Self = StObject.set(x, "maxVariables", value.asInstanceOf[js.Any])
+    inline def setMaxVariables(value: Double): Self = StObject.set(x, "maxVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: RoomPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: RoomPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: js.Array[ReservedRoomVariables]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: js.Array[ReservedRoomVariables]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: ReservedRoomVariables*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: ReservedRoomVariables*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

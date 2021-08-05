@@ -26,31 +26,23 @@ trait SchemaImage extends StObject {
 }
 object SchemaImage {
   
-  @scala.inline
-  def apply(): SchemaImage = {
+  inline def apply(): SchemaImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImage]
   }
   
-  @scala.inline
-  implicit class SchemaImageMutableBuilder[Self <: SchemaImage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImage](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: SchemaOnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: SchemaOnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

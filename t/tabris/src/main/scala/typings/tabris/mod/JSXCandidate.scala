@@ -12,19 +12,15 @@ trait JSXCandidate extends StObject {
 }
 object JSXCandidate {
   
-  @scala.inline
-  def apply(jsxAttributes: js.Any, set: js.Any): JSXCandidate = {
+  inline def apply(jsxAttributes: js.Any, set: js.Any): JSXCandidate = {
     val __obj = js.Dynamic.literal(jsxAttributes = jsxAttributes.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSXCandidate]
   }
   
-  @scala.inline
-  implicit class JSXCandidateMutableBuilder[Self <: JSXCandidate] (val x: Self) extends AnyVal {
+  extension [Self <: JSXCandidate](x: Self) {
     
-    @scala.inline
-    def setJsxAttributes(value: js.Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+    inline def setJsxAttributes(value: js.Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
   }
 }

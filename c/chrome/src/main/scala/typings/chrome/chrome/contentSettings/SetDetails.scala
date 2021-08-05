@@ -23,37 +23,27 @@ trait SetDetails extends StObject {
 }
 object SetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: js.Any): SetDetails = {
+  inline def apply(primaryPattern: String, setting: js.Any): SetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDetails]
   }
   
-  @scala.inline
-  implicit class SetDetailsMutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SetDetails](x: Self) {
     
-    @scala.inline
-    def setPrimaryPattern(value: String): Self = StObject.set(x, "primaryPattern", value.asInstanceOf[js.Any])
+    inline def setPrimaryPattern(value: String): Self = StObject.set(x, "primaryPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
+    inline def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setScope(value: ScopeEnum): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: ScopeEnum): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSecondaryPattern(value: String): Self = StObject.set(x, "secondaryPattern", value.asInstanceOf[js.Any])
+    inline def setSecondaryPattern(value: String): Self = StObject.set(x, "secondaryPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryPatternUndefined: Self = StObject.set(x, "secondaryPattern", js.undefined)
+    inline def setSecondaryPatternUndefined: Self = StObject.set(x, "secondaryPattern", js.undefined)
     
-    @scala.inline
-    def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: js.Any): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

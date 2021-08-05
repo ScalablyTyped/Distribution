@@ -10,19 +10,15 @@ trait RenameOptions extends StObject {
 }
 object RenameOptions {
   
-  @scala.inline
-  def apply(): RenameOptions = {
+  inline def apply(): RenameOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenameOptions]
   }
   
-  @scala.inline
-  implicit class RenameOptionsMutableBuilder[Self <: RenameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenameOptions](x: Self) {
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
   }
 }

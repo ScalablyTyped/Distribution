@@ -111,68 +111,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(filesToConcat: js.Array[String | js.Array[String]]): Options = {
+    inline def apply(filesToConcat: js.Array[String | js.Array[String]]): Options = {
       val __obj = js.Dynamic.literal(filesToConcat = filesToConcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFilesToConcat(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "filesToConcat", value.asInstanceOf[js.Any])
+      inline def setFilesToConcat(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "filesToConcat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesToConcatVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "filesToConcat", js.Array(value :_*))
+      inline def setFilesToConcatVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "filesToConcat", js.Array(value :_*))
       
-      @scala.inline
-      def setInjectType(value: prepend | append | none): Self = StObject.set(x, "injectType", value.asInstanceOf[js.Any])
+      inline def setInjectType(value: prepend | append | none): Self = StObject.set(x, "injectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectTypeUndefined: Self = StObject.set(x, "injectType", js.undefined)
+      inline def setInjectTypeUndefined: Self = StObject.set(x, "injectType", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
       
-      @scala.inline
-      def setPublicPath(value: String | Boolean): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+      inline def setPublicPath(value: String | Boolean): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
+      inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setUglify(value: Boolean | MinifyOptions): Self = StObject.set(x, "uglify", value.asInstanceOf[js.Any])
+      inline def setUglify(value: Boolean | MinifyOptions): Self = StObject.set(x, "uglify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUglifyUndefined: Self = StObject.set(x, "uglify", js.undefined)
+      inline def setUglifyUndefined: Self = StObject.set(x, "uglify", js.undefined)
     }
   }
 }

@@ -36,43 +36,31 @@ trait SchemaAllocationSpecificSKUAllocationReservedInstanceProperties extends St
 }
 object SchemaAllocationSpecificSKUAllocationReservedInstanceProperties {
   
-  @scala.inline
-  def apply(): SchemaAllocationSpecificSKUAllocationReservedInstanceProperties = {
+  inline def apply(): SchemaAllocationSpecificSKUAllocationReservedInstanceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAllocationSpecificSKUAllocationReservedInstanceProperties]
   }
   
-  @scala.inline
-  implicit class SchemaAllocationSpecificSKUAllocationReservedInstancePropertiesMutableBuilder[Self <: SchemaAllocationSpecificSKUAllocationReservedInstanceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAllocationSpecificSKUAllocationReservedInstanceProperties](x: Self) {
     
-    @scala.inline
-    def setGuestAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = StObject.set(x, "guestAccelerators", value.asInstanceOf[js.Any])
+    inline def setGuestAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = StObject.set(x, "guestAccelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestAcceleratorsUndefined: Self = StObject.set(x, "guestAccelerators", js.undefined)
+    inline def setGuestAcceleratorsUndefined: Self = StObject.set(x, "guestAccelerators", js.undefined)
     
-    @scala.inline
-    def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value :_*))
+    inline def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalSsds(value: js.Array[SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]): Self = StObject.set(x, "localSsds", value.asInstanceOf[js.Any])
+    inline def setLocalSsds(value: js.Array[SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]): Self = StObject.set(x, "localSsds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalSsdsUndefined: Self = StObject.set(x, "localSsds", js.undefined)
+    inline def setLocalSsdsUndefined: Self = StObject.set(x, "localSsds", js.undefined)
     
-    @scala.inline
-    def setLocalSsdsVarargs(value: SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk*): Self = StObject.set(x, "localSsds", js.Array(value :_*))
+    inline def setLocalSsdsVarargs(value: SchemaAllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk*): Self = StObject.set(x, "localSsds", js.Array(value :_*))
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
+    inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
+    inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
   }
 }

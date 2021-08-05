@@ -52,80 +52,57 @@ trait WorkItemServiceState extends StObject {
 }
 object WorkItemServiceState {
   
-  @scala.inline
-  def apply(): WorkItemServiceState = {
+  inline def apply(): WorkItemServiceState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkItemServiceState]
   }
   
-  @scala.inline
-  implicit class WorkItemServiceStateMutableBuilder[Self <: WorkItemServiceState] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemServiceState](x: Self) {
     
-    @scala.inline
-    def setCompleteWorkStatus(value: Status): Self = StObject.set(x, "completeWorkStatus", value.asInstanceOf[js.Any])
+    inline def setCompleteWorkStatus(value: Status): Self = StObject.set(x, "completeWorkStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteWorkStatusUndefined: Self = StObject.set(x, "completeWorkStatus", js.undefined)
+    inline def setCompleteWorkStatusUndefined: Self = StObject.set(x, "completeWorkStatus", js.undefined)
     
-    @scala.inline
-    def setHarnessData(
+    inline def setHarnessData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkItemServiceState & TopLevel[js.Any]
     ): Self = StObject.set(x, "harnessData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHarnessDataUndefined: Self = StObject.set(x, "harnessData", js.undefined)
+    inline def setHarnessDataUndefined: Self = StObject.set(x, "harnessData", js.undefined)
     
-    @scala.inline
-    def setHotKeyDetection(value: HotKeyDetection): Self = StObject.set(x, "hotKeyDetection", value.asInstanceOf[js.Any])
+    inline def setHotKeyDetection(value: HotKeyDetection): Self = StObject.set(x, "hotKeyDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotKeyDetectionUndefined: Self = StObject.set(x, "hotKeyDetection", js.undefined)
+    inline def setHotKeyDetectionUndefined: Self = StObject.set(x, "hotKeyDetection", js.undefined)
     
-    @scala.inline
-    def setLeaseExpireTime(value: String): Self = StObject.set(x, "leaseExpireTime", value.asInstanceOf[js.Any])
+    inline def setLeaseExpireTime(value: String): Self = StObject.set(x, "leaseExpireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseExpireTimeUndefined: Self = StObject.set(x, "leaseExpireTime", js.undefined)
+    inline def setLeaseExpireTimeUndefined: Self = StObject.set(x, "leaseExpireTime", js.undefined)
     
-    @scala.inline
-    def setMetricShortId(value: js.Array[MetricShortId]): Self = StObject.set(x, "metricShortId", value.asInstanceOf[js.Any])
+    inline def setMetricShortId(value: js.Array[MetricShortId]): Self = StObject.set(x, "metricShortId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricShortIdUndefined: Self = StObject.set(x, "metricShortId", js.undefined)
+    inline def setMetricShortIdUndefined: Self = StObject.set(x, "metricShortId", js.undefined)
     
-    @scala.inline
-    def setMetricShortIdVarargs(value: MetricShortId*): Self = StObject.set(x, "metricShortId", js.Array(value :_*))
+    inline def setMetricShortIdVarargs(value: MetricShortId*): Self = StObject.set(x, "metricShortId", js.Array(value :_*))
     
-    @scala.inline
-    def setNextReportIndex(value: String): Self = StObject.set(x, "nextReportIndex", value.asInstanceOf[js.Any])
+    inline def setNextReportIndex(value: String): Self = StObject.set(x, "nextReportIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextReportIndexUndefined: Self = StObject.set(x, "nextReportIndex", js.undefined)
+    inline def setNextReportIndexUndefined: Self = StObject.set(x, "nextReportIndex", js.undefined)
     
-    @scala.inline
-    def setReportStatusInterval(value: String): Self = StObject.set(x, "reportStatusInterval", value.asInstanceOf[js.Any])
+    inline def setReportStatusInterval(value: String): Self = StObject.set(x, "reportStatusInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportStatusIntervalUndefined: Self = StObject.set(x, "reportStatusInterval", js.undefined)
+    inline def setReportStatusIntervalUndefined: Self = StObject.set(x, "reportStatusInterval", js.undefined)
     
-    @scala.inline
-    def setSplitRequest(value: ApproximateSplitRequest): Self = StObject.set(x, "splitRequest", value.asInstanceOf[js.Any])
+    inline def setSplitRequest(value: ApproximateSplitRequest): Self = StObject.set(x, "splitRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitRequestUndefined: Self = StObject.set(x, "splitRequest", js.undefined)
+    inline def setSplitRequestUndefined: Self = StObject.set(x, "splitRequest", js.undefined)
     
-    @scala.inline
-    def setSuggestedStopPoint(value: ApproximateProgress): Self = StObject.set(x, "suggestedStopPoint", value.asInstanceOf[js.Any])
+    inline def setSuggestedStopPoint(value: ApproximateProgress): Self = StObject.set(x, "suggestedStopPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedStopPointUndefined: Self = StObject.set(x, "suggestedStopPoint", js.undefined)
+    inline def setSuggestedStopPointUndefined: Self = StObject.set(x, "suggestedStopPoint", js.undefined)
     
-    @scala.inline
-    def setSuggestedStopPosition(value: Position): Self = StObject.set(x, "suggestedStopPosition", value.asInstanceOf[js.Any])
+    inline def setSuggestedStopPosition(value: Position): Self = StObject.set(x, "suggestedStopPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedStopPositionUndefined: Self = StObject.set(x, "suggestedStopPosition", js.undefined)
+    inline def setSuggestedStopPositionUndefined: Self = StObject.set(x, "suggestedStopPosition", js.undefined)
   }
 }

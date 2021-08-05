@@ -18,22 +18,17 @@ trait DeleteFunctionEventInvokeConfigRequest extends StObject {
 }
 object DeleteFunctionEventInvokeConfigRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName): DeleteFunctionEventInvokeConfigRequest = {
+  inline def apply(FunctionName: FunctionName): DeleteFunctionEventInvokeConfigRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFunctionEventInvokeConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFunctionEventInvokeConfigRequestMutableBuilder[Self <: DeleteFunctionEventInvokeConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFunctionEventInvokeConfigRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait TeamSettingsDaysOffPatch extends StObject {
 }
 object TeamSettingsDaysOffPatch {
   
-  @scala.inline
-  def apply(daysOff: js.Array[DateRange]): TeamSettingsDaysOffPatch = {
+  inline def apply(daysOff: js.Array[DateRange]): TeamSettingsDaysOffPatch = {
     val __obj = js.Dynamic.literal(daysOff = daysOff.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamSettingsDaysOffPatch]
   }
   
-  @scala.inline
-  implicit class TeamSettingsDaysOffPatchMutableBuilder[Self <: TeamSettingsDaysOffPatch] (val x: Self) extends AnyVal {
+  extension [Self <: TeamSettingsDaysOffPatch](x: Self) {
     
-    @scala.inline
-    def setDaysOff(value: js.Array[DateRange]): Self = StObject.set(x, "daysOff", value.asInstanceOf[js.Any])
+    inline def setDaysOff(value: js.Array[DateRange]): Self = StObject.set(x, "daysOff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOffVarargs(value: DateRange*): Self = StObject.set(x, "daysOff", js.Array(value :_*))
+    inline def setDaysOffVarargs(value: DateRange*): Self = StObject.set(x, "daysOff", js.Array(value :_*))
   }
 }

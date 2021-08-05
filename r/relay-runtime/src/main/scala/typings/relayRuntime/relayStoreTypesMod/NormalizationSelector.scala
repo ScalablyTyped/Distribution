@@ -17,22 +17,17 @@ trait NormalizationSelector extends StObject {
 }
 object NormalizationSelector {
   
-  @scala.inline
-  def apply(dataID: DataID, node: NormalizationSelectableNode, variables: Variables): NormalizationSelector = {
+  inline def apply(dataID: DataID, node: NormalizationSelectableNode, variables: Variables): NormalizationSelector = {
     val __obj = js.Dynamic.literal(dataID = dataID.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationSelector]
   }
   
-  @scala.inline
-  implicit class NormalizationSelectorMutableBuilder[Self <: NormalizationSelector] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizationSelector](x: Self) {
     
-    @scala.inline
-    def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
+    inline def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: NormalizationSelectableNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: NormalizationSelectableNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

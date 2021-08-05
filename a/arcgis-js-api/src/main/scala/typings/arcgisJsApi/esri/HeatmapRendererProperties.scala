@@ -45,46 +45,33 @@ trait HeatmapRendererProperties
 }
 object HeatmapRendererProperties {
   
-  @scala.inline
-  def apply(): HeatmapRendererProperties = {
+  inline def apply(): HeatmapRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeatmapRendererProperties]
   }
   
-  @scala.inline
-  implicit class HeatmapRendererPropertiesMutableBuilder[Self <: HeatmapRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapRendererProperties](x: Self) {
     
-    @scala.inline
-    def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
+    inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
+    inline def setBlurRadiusUndefined: Self = StObject.set(x, "blurRadius", js.undefined)
     
-    @scala.inline
-    def setColorStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
+    inline def setColorStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
+    inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    @scala.inline
-    def setColorStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+    inline def setColorStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setMaxPixelIntensity(value: Double): Self = StObject.set(x, "maxPixelIntensity", value.asInstanceOf[js.Any])
+    inline def setMaxPixelIntensity(value: Double): Self = StObject.set(x, "maxPixelIntensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPixelIntensityUndefined: Self = StObject.set(x, "maxPixelIntensity", js.undefined)
+    inline def setMaxPixelIntensityUndefined: Self = StObject.set(x, "maxPixelIntensity", js.undefined)
     
-    @scala.inline
-    def setMinPixelIntensity(value: Double): Self = StObject.set(x, "minPixelIntensity", value.asInstanceOf[js.Any])
+    inline def setMinPixelIntensity(value: Double): Self = StObject.set(x, "minPixelIntensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinPixelIntensityUndefined: Self = StObject.set(x, "minPixelIntensity", js.undefined)
+    inline def setMinPixelIntensityUndefined: Self = StObject.set(x, "minPixelIntensity", js.undefined)
   }
 }

@@ -105,8 +105,7 @@ object rasterMod {
     var resolution: Double = js.native
   }
   
-  @scala.inline
-  def newImageData(data: Uint8ClampedArray, width: Double, height: Double): ImageData = (^.asInstanceOf[js.Dynamic].applyDynamic("newImageData")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImageData]
+  inline def newImageData(data: Uint8ClampedArray, width: Double, height: Double): ImageData = (^.asInstanceOf[js.Dynamic].applyDynamic("newImageData")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImageData]
   
   trait FauxMessageEvent extends StObject {
     
@@ -114,17 +113,14 @@ object rasterMod {
   }
   object FauxMessageEvent {
     
-    @scala.inline
-    def apply(data: js.Any): FauxMessageEvent = {
+    inline def apply(data: js.Any): FauxMessageEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[FauxMessageEvent]
     }
     
-    @scala.inline
-    implicit class FauxMessageEventMutableBuilder[Self <: FauxMessageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: FauxMessageEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,8 +146,7 @@ object rasterMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       sources: js.Array[
           typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]
         ]
@@ -160,46 +155,35 @@ object rasterMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLib(value: js.Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
+      inline def setLib(value: js.Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
+      inline def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
       
-      @scala.inline
-      def setOperation(
+      inline def setOperation(
         value: (/* p0 */ js.Array[js.Array[Double] | ImageData], /* p1 */ js.Object) => js.Array[Double] | ImageData
       ): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOperationType(value: RasterOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+      inline def setOperationType(value: RasterOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+      inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
       
-      @scala.inline
-      def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+      inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
       
-      @scala.inline
-      def setSources(
+      inline def setSources(
         value: js.Array[
               typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]
             ]
       ): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesVarargs(
+      inline def setSourcesVarargs(
         value: (typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default])*
       ): Self = StObject.set(x, "sources", js.Array(value :_*))
       
-      @scala.inline
-      def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+      inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+      inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     }
   }
   
@@ -217,35 +201,26 @@ object rasterMod {
   }
   object ProcessorOptions {
     
-    @scala.inline
-    def apply(operation: (js.Array[js.Any], js.Object) => js.Any, queue: Double, threads: Double): ProcessorOptions = {
+    inline def apply(operation: (js.Array[js.Any], js.Object) => js.Any, queue: Double, threads: Double): ProcessorOptions = {
       val __obj = js.Dynamic.literal(operation = js.Any.fromFunction2(operation), queue = queue.asInstanceOf[js.Any], threads = threads.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessorOptions]
     }
     
-    @scala.inline
-    implicit class ProcessorOptionsMutableBuilder[Self <: ProcessorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessorOptions](x: Self) {
       
-      @scala.inline
-      def setImageOps(value: Boolean): Self = StObject.set(x, "imageOps", value.asInstanceOf[js.Any])
+      inline def setImageOps(value: Boolean): Self = StObject.set(x, "imageOps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageOpsUndefined: Self = StObject.set(x, "imageOps", js.undefined)
+      inline def setImageOpsUndefined: Self = StObject.set(x, "imageOps", js.undefined)
       
-      @scala.inline
-      def setLib(value: js.Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
+      inline def setLib(value: js.Any): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
+      inline def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
       
-      @scala.inline
-      def setOperation(value: (js.Array[js.Any], js.Object) => js.Any): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
+      inline def setOperation(value: (js.Array[js.Any], js.Object) => js.Any): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+      inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     }
   }
   

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ColorScaleCriterion")
 @js.native
-class ColorScaleCriterion protected ()
+/* private */ class ColorScaleCriterion ()
   extends StObject
      with typings.activexExcel.Excel.ColorScaleCriterion {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ColorScaleCriterion_typekey")
   var ExcelDotColorScaleCriterion_typekey: typings.activexExcel.Excel.ColorScaleCriterion = js.native
   

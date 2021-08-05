@@ -11,6 +11,5 @@ object getKeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getKey(appConfig: AppConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(appConfig.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getKey(appConfig: AppConfig): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(appConfig.asInstanceOf[js.Any]).asInstanceOf[String]
 }

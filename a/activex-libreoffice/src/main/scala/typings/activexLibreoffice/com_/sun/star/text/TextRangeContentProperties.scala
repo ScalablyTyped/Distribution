@@ -47,8 +47,7 @@ trait TextRangeContentProperties extends StObject {
 }
 object TextRangeContentProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Cell: XCell,
     DocumentIndex: XDocumentIndex,
     DocumentIndexMark: XDocumentIndexMark,
@@ -64,37 +63,26 @@ object TextRangeContentProperties {
     __obj.asInstanceOf[TextRangeContentProperties]
   }
   
-  @scala.inline
-  implicit class TextRangeContentPropertiesMutableBuilder[Self <: TextRangeContentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TextRangeContentProperties](x: Self) {
     
-    @scala.inline
-    def setCell(value: XCell): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: XCell): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIndex(value: XDocumentIndex): Self = StObject.set(x, "DocumentIndex", value.asInstanceOf[js.Any])
+    inline def setDocumentIndex(value: XDocumentIndex): Self = StObject.set(x, "DocumentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentIndexMark(value: XDocumentIndexMark): Self = StObject.set(x, "DocumentIndexMark", value.asInstanceOf[js.Any])
+    inline def setDocumentIndexMark(value: XDocumentIndexMark): Self = StObject.set(x, "DocumentIndexMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnote(value: XFootnote): Self = StObject.set(x, "Endnote", value.asInstanceOf[js.Any])
+    inline def setEndnote(value: XFootnote): Self = StObject.set(x, "Endnote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnote(value: XFootnote): Self = StObject.set(x, "Footnote", value.asInstanceOf[js.Any])
+    inline def setFootnote(value: XFootnote): Self = StObject.set(x, "Footnote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedTextContent(value: XTextContent): Self = StObject.set(x, "NestedTextContent", value.asInstanceOf[js.Any])
+    inline def setNestedTextContent(value: XTextContent): Self = StObject.set(x, "NestedTextContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceMark(value: XTextContent): Self = StObject.set(x, "ReferenceMark", value.asInstanceOf[js.Any])
+    inline def setReferenceMark(value: XTextContent): Self = StObject.set(x, "ReferenceMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFrame(value: XTextFrame): Self = StObject.set(x, "TextFrame", value.asInstanceOf[js.Any])
+    inline def setTextFrame(value: XTextFrame): Self = StObject.set(x, "TextFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSection(value: XTextSection): Self = StObject.set(x, "TextSection", value.asInstanceOf[js.Any])
+    inline def setTextSection(value: XTextSection): Self = StObject.set(x, "TextSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTable(value: XTextTable): Self = StObject.set(x, "TextTable", value.asInstanceOf[js.Any])
+    inline def setTextTable(value: XTextTable): Self = StObject.set(x, "TextTable", value.asInstanceOf[js.Any])
   }
 }

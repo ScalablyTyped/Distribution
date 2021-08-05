@@ -20,17 +20,14 @@ trait PlatformException
 }
 object PlatformException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, _package: XPackage): PlatformException = {
+  inline def apply(Context: XInterface, Message: String, _package: XPackage): PlatformException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformException]
   }
   
-  @scala.inline
-  implicit class PlatformExceptionMutableBuilder[Self <: PlatformException] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformException](x: Self) {
     
-    @scala.inline
-    def set_package(value: XPackage): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: XPackage): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

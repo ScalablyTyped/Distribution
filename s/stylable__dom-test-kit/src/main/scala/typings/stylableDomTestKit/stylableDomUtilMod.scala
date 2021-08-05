@@ -325,7 +325,7 @@ object stylableDomUtilMod {
     def hasStyleState(element: PartialElement, stateName: String): Boolean = js.native
     def hasStyleState(element: PartialElement, stateName: String, param: StateValue): Boolean = js.native
     
-    var root: js.Any = js.native
+    /* private */ var root: js.Any = js.native
     
     def scopeSelector(): String = js.native
     def scopeSelector(selector: String): String = js.native
@@ -340,7 +340,7 @@ object stylableDomUtilMod {
     def selectAll(selector: String, element: PartialElement): js.Array[Element] | Null = js.native
     def selectAll(selector: Unit, element: PartialElement): js.Array[Element] | Null = js.native
     
-    var stylesheet: js.Any = js.native
+    /* private */ var stylesheet: js.Any = js.native
   }
   
   trait PartialElement extends StObject {
@@ -1048,8 +1048,7 @@ object stylableDomUtilMod {
   }
   object PartialElement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       classList: DOMTokenList,
       className: String,
       querySelector: FnCall,
@@ -1059,20 +1058,15 @@ object stylableDomUtilMod {
       __obj.asInstanceOf[PartialElement]
     }
     
-    @scala.inline
-    implicit class PartialElementMutableBuilder[Self <: PartialElement] (val x: Self) extends AnyVal {
+    extension [Self <: PartialElement](x: Self) {
       
-      @scala.inline
-      def setClassList(value: DOMTokenList): Self = StObject.set(x, "classList", value.asInstanceOf[js.Any])
+      inline def setClassList(value: DOMTokenList): Self = StObject.set(x, "classList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerySelector(value: FnCall): Self = StObject.set(x, "querySelector", value.asInstanceOf[js.Any])
+      inline def setQuerySelector(value: FnCall): Self = StObject.set(x, "querySelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuerySelectorAll(value: FnCallSelectors): Self = StObject.set(x, "querySelectorAll", value.asInstanceOf[js.Any])
+      inline def setQuerySelectorAll(value: FnCallSelectors): Self = StObject.set(x, "querySelectorAll", value.asInstanceOf[js.Any])
     }
   }
 }

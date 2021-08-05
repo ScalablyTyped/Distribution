@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(uri: String): MimeBuffer = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[MimeBuffer]
+  inline def apply(uri: String): MimeBuffer = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[MimeBuffer]
   
   @JSImport("data-uri-to-buffer", JSImport.Namespace)
   @js.native

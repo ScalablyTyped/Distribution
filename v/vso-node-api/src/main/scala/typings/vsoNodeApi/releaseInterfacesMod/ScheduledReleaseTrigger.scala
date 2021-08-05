@@ -15,16 +15,13 @@ trait ScheduledReleaseTrigger
 }
 object ScheduledReleaseTrigger {
   
-  @scala.inline
-  def apply(schedule: ReleaseSchedule, triggerType: ReleaseTriggerType): ScheduledReleaseTrigger = {
+  inline def apply(schedule: ReleaseSchedule, triggerType: ReleaseTriggerType): ScheduledReleaseTrigger = {
     val __obj = js.Dynamic.literal(schedule = schedule.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledReleaseTrigger]
   }
   
-  @scala.inline
-  implicit class ScheduledReleaseTriggerMutableBuilder[Self <: ScheduledReleaseTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledReleaseTrigger](x: Self) {
     
-    @scala.inline
-    def setSchedule(value: ReleaseSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: ReleaseSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
   }
 }

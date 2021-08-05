@@ -141,8 +141,7 @@ object Location {
     *
     * @returns The joined URL string.
     */
-  @scala.inline
-  def joinWithSlash(start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinWithSlash")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def joinWithSlash(start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinWithSlash")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Normalizes URL parameters by prepending with `?` if needed.
@@ -151,8 +150,7 @@ object Location {
     *
     * @returns The normalized URL parameters string.
     */
-  @scala.inline
-  def normalizeQueryParams(params: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeQueryParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalizeQueryParams(params: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeQueryParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Removes a trailing slash from a URL string if needed.
@@ -163,6 +161,5 @@ object Location {
     *
     * @returns The URL string, modified if needed.
     */
-  @scala.inline
-  def stripTrailingSlash(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripTrailingSlash(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

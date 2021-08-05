@@ -18,22 +18,17 @@ trait PhoneNewVoicemailMessageTriggerDetails extends StObject {
 }
 object PhoneNewVoicemailMessageTriggerDetails {
   
-  @scala.inline
-  def apply(lineId: String, operatorMessage: String, voicemailCount: Double): PhoneNewVoicemailMessageTriggerDetails = {
+  inline def apply(lineId: String, operatorMessage: String, voicemailCount: Double): PhoneNewVoicemailMessageTriggerDetails = {
     val __obj = js.Dynamic.literal(lineId = lineId.asInstanceOf[js.Any], operatorMessage = operatorMessage.asInstanceOf[js.Any], voicemailCount = voicemailCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNewVoicemailMessageTriggerDetails]
   }
   
-  @scala.inline
-  implicit class PhoneNewVoicemailMessageTriggerDetailsMutableBuilder[Self <: PhoneNewVoicemailMessageTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneNewVoicemailMessageTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
+    inline def setLineId(value: String): Self = StObject.set(x, "lineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorMessage(value: String): Self = StObject.set(x, "operatorMessage", value.asInstanceOf[js.Any])
+    inline def setOperatorMessage(value: String): Self = StObject.set(x, "operatorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoicemailCount(value: Double): Self = StObject.set(x, "voicemailCount", value.asInstanceOf[js.Any])
+    inline def setVoicemailCount(value: Double): Self = StObject.set(x, "voicemailCount", value.asInstanceOf[js.Any])
   }
 }

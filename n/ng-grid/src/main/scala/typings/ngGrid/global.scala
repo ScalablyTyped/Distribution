@@ -95,8 +95,7 @@ object global {
   @JSGlobal("ngAggregate")
   @js.native
   def ngAggregate: IAggregateStatic = js.native
-  @scala.inline
-  def ngAggregate_=(x: IAggregateStatic): Unit = js.Dynamic.global.updateDynamic("ngAggregate")(x.asInstanceOf[js.Any])
+  inline def ngAggregate_=(x: IAggregateStatic): Unit = js.Dynamic.global.updateDynamic("ngAggregate")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngColumn")
@@ -242,8 +241,7 @@ object global {
   @JSGlobal("ngColumn")
   @js.native
   def ngColumn: IColumnStatic = js.native
-  @scala.inline
-  def ngColumn_=(x: IColumnStatic): Unit = js.Dynamic.global.updateDynamic("ngColumn")(x.asInstanceOf[js.Any])
+  inline def ngColumn_=(x: IColumnStatic): Unit = js.Dynamic.global.updateDynamic("ngColumn")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngDimension")
@@ -256,8 +254,7 @@ object global {
   @JSGlobal("ngDimension")
   @js.native
   def ngDimension: IDimensionStatic = js.native
-  @scala.inline
-  def ngDimension_=(x: IDimensionStatic): Unit = js.Dynamic.global.updateDynamic("ngDimension")(x.asInstanceOf[js.Any])
+  inline def ngDimension_=(x: IDimensionStatic): Unit = js.Dynamic.global.updateDynamic("ngDimension")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngEventProvider")
@@ -308,8 +305,7 @@ object global {
   @JSGlobal("ngEventProvider")
   @js.native
   def ngEventProvider: IEventProviderStatic = js.native
-  @scala.inline
-  def ngEventProvider_=(x: IEventProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngEventProvider")(x.asInstanceOf[js.Any])
+  inline def ngEventProvider_=(x: IEventProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngEventProvider")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngFooter")
@@ -322,8 +318,7 @@ object global {
   @JSGlobal("ngFooter")
   @js.native
   def ngFooter: IFooterStatic = js.native
-  @scala.inline
-  def ngFooter_=(x: IFooterStatic): Unit = js.Dynamic.global.updateDynamic("ngFooter")(x.asInstanceOf[js.Any])
+  inline def ngFooter_=(x: IFooterStatic): Unit = js.Dynamic.global.updateDynamic("ngFooter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ngGridReorderable")
   @js.native
@@ -348,8 +343,7 @@ object global {
   @JSGlobal("ngRenderedRange")
   @js.native
   def ngRenderedRange: IRenderedRangeStatic = js.native
-  @scala.inline
-  def ngRenderedRange_=(x: IRenderedRangeStatic): Unit = js.Dynamic.global.updateDynamic("ngRenderedRange")(x.asInstanceOf[js.Any])
+  inline def ngRenderedRange_=(x: IRenderedRangeStatic): Unit = js.Dynamic.global.updateDynamic("ngRenderedRange")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngRow")
@@ -425,8 +419,7 @@ object global {
   @JSGlobal("ngRow")
   @js.native
   def ngRow: IRowStatic = js.native
-  @scala.inline
-  def ngRow_=(x: IRowStatic): Unit = js.Dynamic.global.updateDynamic("ngRow")(x.asInstanceOf[js.Any])
+  inline def ngRow_=(x: IRowStatic): Unit = js.Dynamic.global.updateDynamic("ngRow")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngSearchProvider")
@@ -452,8 +445,7 @@ object global {
   @JSGlobal("ngSearchProvider")
   @js.native
   def ngSearchProvider: ISearchProviderStatic = js.native
-  @scala.inline
-  def ngSearchProvider_=(x: ISearchProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngSearchProvider")(x.asInstanceOf[js.Any])
+  inline def ngSearchProvider_=(x: ISearchProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngSearchProvider")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngSelectionProvider")
@@ -503,8 +495,7 @@ object global {
   @JSGlobal("ngSelectionProvider")
   @js.native
   def ngSelectionProvider: ISelectionProviderStatic = js.native
-  @scala.inline
-  def ngSelectionProvider_=(x: ISelectionProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngSelectionProvider")(x.asInstanceOf[js.Any])
+  inline def ngSelectionProvider_=(x: ISelectionProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngSelectionProvider")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ngStyleProvider")
@@ -517,6 +508,5 @@ object global {
   @JSGlobal("ngStyleProvider")
   @js.native
   def ngStyleProvider: IStyleProviderStatic = js.native
-  @scala.inline
-  def ngStyleProvider_=(x: IStyleProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngStyleProvider")(x.asInstanceOf[js.Any])
+  inline def ngStyleProvider_=(x: IStyleProviderStatic): Unit = js.Dynamic.global.updateDynamic("ngStyleProvider")(x.asInstanceOf[js.Any])
 }

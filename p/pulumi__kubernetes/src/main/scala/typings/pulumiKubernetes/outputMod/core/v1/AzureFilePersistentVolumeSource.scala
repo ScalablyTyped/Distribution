@@ -31,25 +31,19 @@ trait AzureFilePersistentVolumeSource extends StObject {
 }
 object AzureFilePersistentVolumeSource {
   
-  @scala.inline
-  def apply(readOnly: Boolean, secretName: String, secretNamespace: String, shareName: String): AzureFilePersistentVolumeSource = {
+  inline def apply(readOnly: Boolean, secretName: String, secretNamespace: String, shareName: String): AzureFilePersistentVolumeSource = {
     val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any], secretName = secretName.asInstanceOf[js.Any], secretNamespace = secretNamespace.asInstanceOf[js.Any], shareName = shareName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureFilePersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class AzureFilePersistentVolumeSourceMutableBuilder[Self <: AzureFilePersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: AzureFilePersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretName(value: String): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
+    inline def setSecretName(value: String): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretNamespace(value: String): Self = StObject.set(x, "secretNamespace", value.asInstanceOf[js.Any])
+    inline def setSecretNamespace(value: String): Self = StObject.set(x, "secretNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareName(value: String): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
+    inline def setShareName(value: String): Self = StObject.set(x, "shareName", value.asInstanceOf[js.Any])
   }
 }

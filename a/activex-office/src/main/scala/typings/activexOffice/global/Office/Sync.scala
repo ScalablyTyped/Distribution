@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Sync")
 @js.native
-class Sync protected ()
+/* private */ class Sync ()
   extends StObject
      with typings.activexOffice.Office.Sync {
   
@@ -30,7 +30,7 @@ class Sync protected ()
   /* CompleteClass */
   override val LastSyncTime: VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.Sync_typekey")
   var OfficeDotSync_typekey: typings.activexOffice.Office.Sync = js.native
   

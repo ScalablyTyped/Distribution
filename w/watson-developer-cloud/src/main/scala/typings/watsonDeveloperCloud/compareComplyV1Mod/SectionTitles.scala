@@ -21,40 +21,29 @@ trait SectionTitles extends StObject {
 }
 object SectionTitles {
   
-  @scala.inline
-  def apply(): SectionTitles = {
+  inline def apply(): SectionTitles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SectionTitles]
   }
   
-  @scala.inline
-  implicit class SectionTitlesMutableBuilder[Self <: SectionTitles] (val x: Self) extends AnyVal {
+  extension [Self <: SectionTitles](x: Self) {
     
-    @scala.inline
-    def setElement_locations(value: js.Array[ElementLocations]): Self = StObject.set(x, "element_locations", value.asInstanceOf[js.Any])
+    inline def setElement_locations(value: js.Array[ElementLocations]): Self = StObject.set(x, "element_locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement_locationsUndefined: Self = StObject.set(x, "element_locations", js.undefined)
+    inline def setElement_locationsUndefined: Self = StObject.set(x, "element_locations", js.undefined)
     
-    @scala.inline
-    def setElement_locationsVarargs(value: ElementLocations*): Self = StObject.set(x, "element_locations", js.Array(value :_*))
+    inline def setElement_locationsVarargs(value: ElementLocations*): Self = StObject.set(x, "element_locations", js.Array(value :_*))
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

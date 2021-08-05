@@ -47,49 +47,35 @@ trait SchemaGoogleCloudServicebrokerV1alpha1Binding extends StObject {
 }
 object SchemaGoogleCloudServicebrokerV1alpha1Binding {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudServicebrokerV1alpha1Binding = {
+  inline def apply(): SchemaGoogleCloudServicebrokerV1alpha1Binding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1alpha1Binding]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1alpha1BindingMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1alpha1Binding] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudServicebrokerV1alpha1Binding](x: Self) {
     
-    @scala.inline
-    def setBind_resource(value: StringDictionary[js.Any]): Self = StObject.set(x, "bind_resource", value.asInstanceOf[js.Any])
+    inline def setBind_resource(value: StringDictionary[js.Any]): Self = StObject.set(x, "bind_resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBind_resourceUndefined: Self = StObject.set(x, "bind_resource", js.undefined)
+    inline def setBind_resourceUndefined: Self = StObject.set(x, "bind_resource", js.undefined)
     
-    @scala.inline
-    def setBinding_id(value: String): Self = StObject.set(x, "binding_id", value.asInstanceOf[js.Any])
+    inline def setBinding_id(value: String): Self = StObject.set(x, "binding_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinding_idUndefined: Self = StObject.set(x, "binding_id", js.undefined)
+    inline def setBinding_idUndefined: Self = StObject.set(x, "binding_id", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setPlan_id(value: String): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
+    inline def setPlan_id(value: String): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlan_idUndefined: Self = StObject.set(x, "plan_id", js.undefined)
+    inline def setPlan_idUndefined: Self = StObject.set(x, "plan_id", js.undefined)
     
-    @scala.inline
-    def setService_id(value: String): Self = StObject.set(x, "service_id", value.asInstanceOf[js.Any])
+    inline def setService_id(value: String): Self = StObject.set(x, "service_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService_idUndefined: Self = StObject.set(x, "service_id", js.undefined)
+    inline def setService_idUndefined: Self = StObject.set(x, "service_id", js.undefined)
   }
 }

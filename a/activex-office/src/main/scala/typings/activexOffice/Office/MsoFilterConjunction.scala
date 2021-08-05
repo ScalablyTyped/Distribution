@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFilterConjunction extends StObject
 object MsoFilterConjunction {
   
-  @scala.inline
-  def msoFilterConjunctionAnd: `0` = 0.asInstanceOf[`0`]
+  inline def msoFilterConjunctionAnd: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoFilterConjunctionOr: `1` = 1.asInstanceOf[`1`]
+  inline def msoFilterConjunctionOr: `1` = 1.asInstanceOf[`1`]
 }

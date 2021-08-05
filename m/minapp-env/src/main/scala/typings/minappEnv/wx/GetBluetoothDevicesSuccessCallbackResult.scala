@@ -11,16 +11,13 @@ trait GetBluetoothDevicesSuccessCallbackResult extends StObject {
 }
 object GetBluetoothDevicesSuccessCallbackResult {
   
-  @scala.inline
-  def apply(devices: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): GetBluetoothDevicesSuccessCallbackResult = {
+  inline def apply(devices: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): GetBluetoothDevicesSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBluetoothDevicesSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetBluetoothDevicesSuccessCallbackResultMutableBuilder[Self <: GetBluetoothDevicesSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBluetoothDevicesSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setDevices(value: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }
 }

@@ -23,35 +23,26 @@ trait ForwardRefExoticBase[P] extends StObject {
 }
 object ForwardRefExoticBase {
   
-  @scala.inline
-  def apply[P](DollarDollartypeof: js.Symbol): ForwardRefExoticBase[P] = {
+  inline def apply[P](DollarDollartypeof: js.Symbol): ForwardRefExoticBase[P] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardRefExoticBase[P]]
   }
   
-  @scala.inline
-  implicit class ForwardRefExoticBaseMutableBuilder[Self <: ForwardRefExoticBase[?], P] (val x: Self & ForwardRefExoticBase[P]) extends AnyVal {
+  extension [Self <: ForwardRefExoticBase[?], P](x: Self & ForwardRefExoticBase[P]) {
     
-    @scala.inline
-    def setDefaultProps(value: Partial[defaultProps]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: Partial[defaultProps]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
+    inline def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropTypes(value: WeakValidationMap[propTypes]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    inline def setPropTypes(value: WeakValidationMap[propTypes]): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
+    inline def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
   }
 }

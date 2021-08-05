@@ -10,19 +10,15 @@ trait MaxKeys extends StObject {
 }
 object MaxKeys {
   
-  @scala.inline
-  def apply(): MaxKeys = {
+  inline def apply(): MaxKeys = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxKeys]
   }
   
-  @scala.inline
-  implicit class MaxKeysMutableBuilder[Self <: MaxKeys] (val x: Self) extends AnyVal {
+  extension [Self <: MaxKeys](x: Self) {
     
-    @scala.inline
-    def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
+    inline def setMaxKeys(value: Double): Self = StObject.set(x, "maxKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
+    inline def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
   }
 }

@@ -84,26 +84,20 @@ object optionListMod extends Shortcut {
   }
   object RefOptionListProps {
     
-    @scala.inline
-    def apply(onKeyDown: KeyboardEvent[Element] => Unit, onKeyUp: KeyboardEvent[Element] => Unit): RefOptionListProps = {
+    inline def apply(onKeyDown: KeyboardEvent[Element] => Unit, onKeyUp: KeyboardEvent[Element] => Unit): RefOptionListProps = {
       val __obj = js.Dynamic.literal(onKeyDown = js.Any.fromFunction1(onKeyDown), onKeyUp = js.Any.fromFunction1(onKeyUp))
       __obj.asInstanceOf[RefOptionListProps]
     }
     
-    @scala.inline
-    implicit class RefOptionListPropsMutableBuilder[Self <: RefOptionListProps] (val x: Self) extends AnyVal {
+    extension [Self <: RefOptionListProps](x: Self) {
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUp(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollTo(value: /* index */ Double => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
+      inline def setScrollTo(value: /* index */ Double => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
+      inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
     }
   }
   

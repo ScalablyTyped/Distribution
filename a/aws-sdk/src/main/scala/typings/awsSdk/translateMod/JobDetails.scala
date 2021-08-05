@@ -23,31 +23,23 @@ trait JobDetails extends StObject {
 }
 object JobDetails {
   
-  @scala.inline
-  def apply(): JobDetails = {
+  inline def apply(): JobDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobDetails]
   }
   
-  @scala.inline
-  implicit class JobDetailsMutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
+  extension [Self <: JobDetails](x: Self) {
     
-    @scala.inline
-    def setDocumentsWithErrorsCount(value: Integer): Self = StObject.set(x, "DocumentsWithErrorsCount", value.asInstanceOf[js.Any])
+    inline def setDocumentsWithErrorsCount(value: Integer): Self = StObject.set(x, "DocumentsWithErrorsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsWithErrorsCountUndefined: Self = StObject.set(x, "DocumentsWithErrorsCount", js.undefined)
+    inline def setDocumentsWithErrorsCountUndefined: Self = StObject.set(x, "DocumentsWithErrorsCount", js.undefined)
     
-    @scala.inline
-    def setInputDocumentsCount(value: Integer): Self = StObject.set(x, "InputDocumentsCount", value.asInstanceOf[js.Any])
+    inline def setInputDocumentsCount(value: Integer): Self = StObject.set(x, "InputDocumentsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDocumentsCountUndefined: Self = StObject.set(x, "InputDocumentsCount", js.undefined)
+    inline def setInputDocumentsCountUndefined: Self = StObject.set(x, "InputDocumentsCount", js.undefined)
     
-    @scala.inline
-    def setTranslatedDocumentsCount(value: Integer): Self = StObject.set(x, "TranslatedDocumentsCount", value.asInstanceOf[js.Any])
+    inline def setTranslatedDocumentsCount(value: Integer): Self = StObject.set(x, "TranslatedDocumentsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslatedDocumentsCountUndefined: Self = StObject.set(x, "TranslatedDocumentsCount", js.undefined)
+    inline def setTranslatedDocumentsCountUndefined: Self = StObject.set(x, "TranslatedDocumentsCount", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait PaginationOptions extends StObject {
 }
 object PaginationOptions {
   
-  @scala.inline
-  def apply(skip: Double, top: Double): PaginationOptions = {
+  inline def apply(skip: Double, top: Double): PaginationOptions = {
     val __obj = js.Dynamic.literal(skip = skip.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationOptions]
   }
   
-  @scala.inline
-  implicit class PaginationOptionsMutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationOptions](x: Self) {
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

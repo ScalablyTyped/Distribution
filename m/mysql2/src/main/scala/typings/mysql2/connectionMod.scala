@@ -26,10 +26,8 @@ object connectionMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any]).asInstanceOf[typings.mysql2.queryMod.^]
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any]).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
     callback: js.Function3[
       /* err */ QueryError | Null, 
@@ -39,10 +37,8 @@ object connectionMod {
     ]
   ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
   /* static member */
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
     values: js.Any,
     callback: js.Function3[
@@ -52,10 +48,8 @@ object connectionMod {
       js.Any
     ]
   ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
     values: js.Array[js.Any],
     callback: js.Function3[
@@ -65,10 +59,8 @@ object connectionMod {
       js.Any
     ]
   ): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
-  @scala.inline
-  def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("createQuery")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[typings.mysql2.queryMod.^]
+  inline def createQuery[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
     sql: String,
     values: StringDictionary[js.Any],
     callback: js.Function3[
@@ -358,155 +350,106 @@ object connectionMod {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(): ConnectionOptions = {
+    inline def apply(): ConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
+      inline def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
+      inline def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setDateStrings(value: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
+      inline def setDateStrings(value: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
+      inline def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
       
-      @scala.inline
-      def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
+      inline def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: js.Any): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: js.Any): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
+      inline def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
+      inline def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      @scala.inline
-      def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
+      inline def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
+      inline def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => Unit): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
+      inline def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => Unit): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
+      inline def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
       
-      @scala.inline
-      def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+      inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+      inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
       
-      @scala.inline
-      def setSsl(value: String | SslOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: String | SslOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
-      @scala.inline
-      def setStringifyObjects(value: Boolean): Self = StObject.set(x, "stringifyObjects", value.asInstanceOf[js.Any])
+      inline def setStringifyObjects(value: Boolean): Self = StObject.set(x, "stringifyObjects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringifyObjectsUndefined: Self = StObject.set(x, "stringifyObjects", js.undefined)
+      inline def setStringifyObjectsUndefined: Self = StObject.set(x, "stringifyObjects", js.undefined)
       
-      @scala.inline
-      def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
+      inline def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
+      inline def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: String | local): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String | local): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
       
-      @scala.inline
-      def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
-      @scala.inline
-      def setTypeCast(value: Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+      inline def setTypeCast(value: Boolean | (js.Function2[/* field */ js.Any, /* next */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeCastFunction2(value: (/* field */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+      inline def setTypeCastFunction2(value: (/* field */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
+      inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -554,68 +497,48 @@ object connectionMod {
   }
   object SslOptions {
     
-    @scala.inline
-    def apply(): SslOptions = {
+    inline def apply(): SslOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SslOptions]
     }
     
-    @scala.inline
-    implicit class SslOptionsMutableBuilder[Self <: SslOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SslOptions](x: Self) {
       
-      @scala.inline
-      def setCa(value: String | js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: String | js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+      inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      @scala.inline
-      def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
       
-      @scala.inline
-      def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
+      inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
+      inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      @scala.inline
-      def setCrl(value: String | js.Array[String]): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
+      inline def setCrl(value: String | js.Array[String]): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
+      inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
       
-      @scala.inline
-      def setCrlVarargs(value: String*): Self = StObject.set(x, "crl", js.Array(value :_*))
+      inline def setCrlVarargs(value: String*): Self = StObject.set(x, "crl", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+      inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      @scala.inline
-      def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+      inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     }
   }
 }

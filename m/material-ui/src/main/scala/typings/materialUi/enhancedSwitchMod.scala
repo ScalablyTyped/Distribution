@@ -22,8 +22,7 @@ object enhancedSwitchMod {
        with CommonEnhancedSwitchProps[EnhancedSwitch]
   object EnhancedSwitchProps {
     
-    @scala.inline
-    def apply(): EnhancedSwitchProps = {
+    inline def apply(): EnhancedSwitchProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EnhancedSwitchProps]
     }

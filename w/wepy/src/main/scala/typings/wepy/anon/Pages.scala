@@ -13,22 +13,17 @@ trait Pages extends StObject {
 }
 object Pages {
   
-  @scala.inline
-  def apply(pages: js.Array[String], window: PageConfig): Pages = {
+  inline def apply(pages: js.Array[String], window: PageConfig): Pages = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pages]
   }
   
-  @scala.inline
-  implicit class PagesMutableBuilder[Self <: Pages] (val x: Self) extends AnyVal {
+  extension [Self <: Pages](x: Self) {
     
-    @scala.inline
-    def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[String]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: String*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setWindow(value: PageConfig): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: PageConfig): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

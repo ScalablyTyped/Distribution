@@ -15,7 +15,7 @@ object observerSubjectObserverMod {
     extends StObject
        with IObserver {
     
-    var _disposable: js.Any = js.native
+    /* private */ var _disposable: js.Any = js.native
     
     def addChild(observer: Observer): Unit = js.native
     

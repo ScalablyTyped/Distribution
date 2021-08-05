@@ -50,91 +50,63 @@ trait IField
 }
 object IField {
   
-  @scala.inline
-  def apply(): IField = {
+  inline def apply(): IField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IField]
   }
   
-  @scala.inline
-  implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
+  extension [Self <: IField](x: Self) {
     
-    @scala.inline
-    def setConvert(value: js.Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: js.Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+    inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
-    @scala.inline
-    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setDateReadFormat(value: String): Self = StObject.set(x, "dateReadFormat", value.asInstanceOf[js.Any])
+    inline def setDateReadFormat(value: String): Self = StObject.set(x, "dateReadFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateReadFormatUndefined: Self = StObject.set(x, "dateReadFormat", js.undefined)
+    inline def setDateReadFormatUndefined: Self = StObject.set(x, "dateReadFormat", js.undefined)
     
-    @scala.inline
-    def setDateWriteFormat(value: String): Self = StObject.set(x, "dateWriteFormat", value.asInstanceOf[js.Any])
+    inline def setDateWriteFormat(value: String): Self = StObject.set(x, "dateWriteFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateWriteFormatUndefined: Self = StObject.set(x, "dateWriteFormat", js.undefined)
+    inline def setDateWriteFormatUndefined: Self = StObject.set(x, "dateWriteFormat", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setMapping(value: js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+    inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
-    @scala.inline
-    def setSerialize(value: js.Any): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+    inline def setSerialize(value: js.Any): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+    inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     
-    @scala.inline
-    def setSortDir(value: String): Self = StObject.set(x, "sortDir", value.asInstanceOf[js.Any])
+    inline def setSortDir(value: String): Self = StObject.set(x, "sortDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirUndefined: Self = StObject.set(x, "sortDir", js.undefined)
+    inline def setSortDirUndefined: Self = StObject.set(x, "sortDir", js.undefined)
     
-    @scala.inline
-    def setSortType(value: js.Any): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
+    inline def setSortType(value: js.Any): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
+    inline def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseNull(value: Boolean): Self = StObject.set(x, "useNull", value.asInstanceOf[js.Any])
+    inline def setUseNull(value: Boolean): Self = StObject.set(x, "useNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseNullUndefined: Self = StObject.set(x, "useNull", js.undefined)
+    inline def setUseNullUndefined: Self = StObject.set(x, "useNull", js.undefined)
   }
 }

@@ -29,19 +29,15 @@ trait PauseOnFadeToZero extends StObject {
 }
 object PauseOnFadeToZero {
   
-  @scala.inline
-  def apply(pauseOnFadeToZero: Boolean, preloadMetadata: Boolean): PauseOnFadeToZero = {
+  inline def apply(pauseOnFadeToZero: Boolean, preloadMetadata: Boolean): PauseOnFadeToZero = {
     val __obj = js.Dynamic.literal(pauseOnFadeToZero = pauseOnFadeToZero.asInstanceOf[js.Any], preloadMetadata = preloadMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PauseOnFadeToZero]
   }
   
-  @scala.inline
-  implicit class PauseOnFadeToZeroMutableBuilder[Self <: PauseOnFadeToZero] (val x: Self) extends AnyVal {
+  extension [Self <: PauseOnFadeToZero](x: Self) {
     
-    @scala.inline
-    def setPauseOnFadeToZero(value: Boolean): Self = StObject.set(x, "pauseOnFadeToZero", value.asInstanceOf[js.Any])
+    inline def setPauseOnFadeToZero(value: Boolean): Self = StObject.set(x, "pauseOnFadeToZero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadMetadata(value: Boolean): Self = StObject.set(x, "preloadMetadata", value.asInstanceOf[js.Any])
+    inline def setPreloadMetadata(value: Boolean): Self = StObject.set(x, "preloadMetadata", value.asInstanceOf[js.Any])
   }
 }

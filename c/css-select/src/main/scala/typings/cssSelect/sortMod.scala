@@ -11,6 +11,5 @@ object sortMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(arr: js.Array[InternalSelector]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(arr: js.Array[InternalSelector]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

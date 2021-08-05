@@ -14,28 +14,21 @@ trait ListProductSetsResponse extends StObject {
 }
 object ListProductSetsResponse {
   
-  @scala.inline
-  def apply(): ListProductSetsResponse = {
+  inline def apply(): ListProductSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProductSetsResponse]
   }
   
-  @scala.inline
-  implicit class ListProductSetsResponseMutableBuilder[Self <: ListProductSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProductSetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setProductSets(value: js.Array[ProductSet]): Self = StObject.set(x, "productSets", value.asInstanceOf[js.Any])
+    inline def setProductSets(value: js.Array[ProductSet]): Self = StObject.set(x, "productSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSetsUndefined: Self = StObject.set(x, "productSets", js.undefined)
+    inline def setProductSetsUndefined: Self = StObject.set(x, "productSets", js.undefined)
     
-    @scala.inline
-    def setProductSetsVarargs(value: ProductSet*): Self = StObject.set(x, "productSets", js.Array(value :_*))
+    inline def setProductSetsVarargs(value: ProductSet*): Self = StObject.set(x, "productSets", js.Array(value :_*))
   }
 }

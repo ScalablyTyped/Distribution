@@ -14,25 +14,19 @@ trait GoogleApiServiceusageV1beta1ServiceIdentity extends StObject {
 }
 object GoogleApiServiceusageV1beta1ServiceIdentity {
   
-  @scala.inline
-  def apply(): GoogleApiServiceusageV1beta1ServiceIdentity = {
+  inline def apply(): GoogleApiServiceusageV1beta1ServiceIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleApiServiceusageV1beta1ServiceIdentity]
   }
   
-  @scala.inline
-  implicit class GoogleApiServiceusageV1beta1ServiceIdentityMutableBuilder[Self <: GoogleApiServiceusageV1beta1ServiceIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiServiceusageV1beta1ServiceIdentity](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+    inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+    inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
   }
 }

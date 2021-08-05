@@ -30,13 +30,13 @@ object tracerMod {
       _tracerProvider: BasicTracerProvider
     ) = this()
     
-    val _idGenerator: js.Any = js.native
+    /* private */ val _idGenerator: js.Any = js.native
     
-    val _sampler: js.Any = js.native
+    /* private */ val _sampler: js.Any = js.native
     
-    val _traceParams: js.Any = js.native
+    /* private */ val _traceParams: js.Any = js.native
     
-    var _tracerProvider: js.Any = js.native
+    /* private */ var _tracerProvider: js.Any = js.native
     
     def getActiveSpanProcessor(): SpanProcessor = js.native
     

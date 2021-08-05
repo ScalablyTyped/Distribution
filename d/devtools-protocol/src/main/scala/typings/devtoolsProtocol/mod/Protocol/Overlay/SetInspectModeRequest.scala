@@ -19,22 +19,17 @@ trait SetInspectModeRequest extends StObject {
 }
 object SetInspectModeRequest {
   
-  @scala.inline
-  def apply(mode: InspectMode): SetInspectModeRequest = {
+  inline def apply(mode: InspectMode): SetInspectModeRequest = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetInspectModeRequest]
   }
   
-  @scala.inline
-  implicit class SetInspectModeRequestMutableBuilder[Self <: SetInspectModeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetInspectModeRequest](x: Self) {
     
-    @scala.inline
-    def setHighlightConfig(value: HighlightConfig): Self = StObject.set(x, "highlightConfig", value.asInstanceOf[js.Any])
+    inline def setHighlightConfig(value: HighlightConfig): Self = StObject.set(x, "highlightConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightConfigUndefined: Self = StObject.set(x, "highlightConfig", js.undefined)
+    inline def setHighlightConfigUndefined: Self = StObject.set(x, "highlightConfig", js.undefined)
     
-    @scala.inline
-    def setMode(value: InspectMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: InspectMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

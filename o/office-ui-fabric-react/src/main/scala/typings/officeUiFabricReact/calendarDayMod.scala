@@ -28,7 +28,7 @@ object calendarDayMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MCalendarDay(nextProps: ICalendarDayProps): Unit = js.native
     
-    var _applyFunctionToDayRefs: js.Any = js.native
+    /* private */ var _applyFunctionToDayRefs: js.Any = js.native
     
     /**
       * Returns the index of the last element in the array where the predicate is true, and -1
@@ -37,63 +37,63 @@ object calendarDayMod {
       * @param predicate find calls predicate once for each element of the array, in descending
       * order, until it finds one where predicate returns true if such an element is found.
       */
-    var _findLastIndex: js.Any = js.native
+    /* private */ var _findLastIndex: js.Any = js.native
     
-    var _getBoundedDateRange: js.Any = js.native
+    /* private */ var _getBoundedDateRange: js.Any = js.native
     
-    var _getHighlightedCornerStyle: js.Any = js.native
+    /* private */ var _getHighlightedCornerStyle: js.Any = js.native
     
-    var _getIsRestrictedDate: js.Any = js.native
+    /* private */ var _getIsRestrictedDate: js.Any = js.native
     
-    var _getWeekCornerStyles: js.Any = js.native
+    /* private */ var _getWeekCornerStyles: js.Any = js.native
     
-    var _getWeeks: js.Any = js.native
+    /* private */ var _getWeeks: js.Any = js.native
     
-    var _navigateMonthEdge: js.Any = js.native
+    /* private */ var _navigateMonthEdge: js.Any = js.native
     
-    var _onClose: js.Any = js.native
+    /* private */ var _onClose: js.Any = js.native
     
-    var _onCloseButtonKeyDown: js.Any = js.native
+    /* private */ var _onCloseButtonKeyDown: js.Any = js.native
     
-    var _onDayKeyDown: js.Any = js.native
+    /* private */ var _onDayKeyDown: js.Any = js.native
     
-    var _onDayMouseDown: js.Any = js.native
+    /* private */ var _onDayMouseDown: js.Any = js.native
     
-    var _onDayMouseLeave: js.Any = js.native
+    /* private */ var _onDayMouseLeave: js.Any = js.native
     
-    var _onDayMouseOver: js.Any = js.native
+    /* private */ var _onDayMouseOver: js.Any = js.native
     
-    var _onDayMouseUp: js.Any = js.native
+    /* private */ var _onDayMouseUp: js.Any = js.native
     
-    var _onHeaderKeyDown: js.Any = js.native
+    /* private */ var _onHeaderKeyDown: js.Any = js.native
     
-    var _onHeaderSelect: js.Any = js.native
+    /* private */ var _onHeaderSelect: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onNextMonthKeyDown: js.Any = js.native
+    /* private */ var _onNextMonthKeyDown: js.Any = js.native
     
-    var _onPrevMonthKeyDown: js.Any = js.native
+    /* private */ var _onPrevMonthKeyDown: js.Any = js.native
     
-    var _onSelectDate: js.Any = js.native
+    /* private */ var _onSelectDate: js.Any = js.native
     
-    var _onSelectNextMonth: js.Any = js.native
+    /* private */ var _onSelectNextMonth: js.Any = js.native
     
-    var _onSelectPrevMonth: js.Any = js.native
+    /* private */ var _onSelectPrevMonth: js.Any = js.native
     
-    var _onTableMouseLeave: js.Any = js.native
+    /* private */ var _onTableMouseLeave: js.Any = js.native
     
-    var _onTableMouseUp: js.Any = js.native
+    /* private */ var _onTableMouseUp: js.Any = js.native
     
-    var _setDayCellRef: js.Any = js.native
+    /* private */ var _setDayCellRef: js.Any = js.native
     
-    var _setDayRef: js.Any = js.native
+    /* private */ var _setDayRef: js.Any = js.native
     
-    var days: js.Any = js.native
+    /* private */ var days: js.Any = js.native
     
     def focus(): Unit = js.native
     
-    var navigatedDay: js.Any = js.native
+    /* private */ var navigatedDay: js.Any = js.native
   }
   
   trait ICalendarDay extends StObject {
@@ -102,17 +102,14 @@ object calendarDayMod {
   }
   object ICalendarDay {
     
-    @scala.inline
-    def apply(focus: () => Unit): ICalendarDay = {
+    inline def apply(focus: () => Unit): ICalendarDay = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[ICalendarDay]
     }
     
-    @scala.inline
-    implicit class ICalendarDayMutableBuilder[Self <: ICalendarDay] (val x: Self) extends AnyVal {
+    extension [Self <: ICalendarDay](x: Self) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -177,29 +174,22 @@ object calendarDayMod {
   }
   object ICalendarDayState {
     
-    @scala.inline
-    def apply(): ICalendarDayState = {
+    inline def apply(): ICalendarDayState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICalendarDayState]
     }
     
-    @scala.inline
-    implicit class ICalendarDayStateMutableBuilder[Self <: ICalendarDayState] (val x: Self) extends AnyVal {
+    extension [Self <: ICalendarDayState](x: Self) {
       
-      @scala.inline
-      def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
+      inline def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDescendantIdUndefined: Self = StObject.set(x, "activeDescendantId", js.undefined)
+      inline def setActiveDescendantIdUndefined: Self = StObject.set(x, "activeDescendantId", js.undefined)
       
-      @scala.inline
-      def setWeeks(value: js.Array[js.Array[IDayInfo]]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+      inline def setWeeks(value: js.Array[js.Array[IDayInfo]]): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
+      inline def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
       
-      @scala.inline
-      def setWeeksVarargs(value: js.Array[IDayInfo]*): Self = StObject.set(x, "weeks", js.Array(value :_*))
+      inline def setWeeksVarargs(value: js.Array[IDayInfo]*): Self = StObject.set(x, "weeks", js.Array(value :_*))
     }
   }
   
@@ -223,8 +213,7 @@ object calendarDayMod {
   }
   object IDayInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: String,
       isInBounds: Boolean,
       isInMonth: Boolean,
@@ -238,32 +227,23 @@ object calendarDayMod {
       __obj.asInstanceOf[IDayInfo]
     }
     
-    @scala.inline
-    implicit class IDayInfoMutableBuilder[Self <: IDayInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IDayInfo](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInBounds(value: Boolean): Self = StObject.set(x, "isInBounds", value.asInstanceOf[js.Any])
+      inline def setIsInBounds(value: Boolean): Self = StObject.set(x, "isInBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInMonth(value: Boolean): Self = StObject.set(x, "isInMonth", value.asInstanceOf[js.Any])
+      inline def setIsInMonth(value: Boolean): Self = StObject.set(x, "isInMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsToday(value: Boolean): Self = StObject.set(x, "isToday", value.asInstanceOf[js.Any])
+      inline def setIsToday(value: Boolean): Self = StObject.set(x, "isToday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnSelected(value: SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onSelected", js.Any.fromFunction1(value))
+      inline def setOnSelected(value: SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOriginalDate(value: Date): Self = StObject.set(x, "originalDate", value.asInstanceOf[js.Any])
+      inline def setOriginalDate(value: Date): Self = StObject.set(x, "originalDate", value.asInstanceOf[js.Any])
     }
   }
 }

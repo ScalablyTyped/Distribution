@@ -30,34 +30,25 @@ trait TaskDefinitionVolume extends StObject {
 }
 object TaskDefinitionVolume {
   
-  @scala.inline
-  def apply(name: Input[String]): TaskDefinitionVolume = {
+  inline def apply(name: Input[String]): TaskDefinitionVolume = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionVolume]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionVolumeMutableBuilder[Self <: TaskDefinitionVolume] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinitionVolume](x: Self) {
     
-    @scala.inline
-    def setDockerVolumeConfiguration(value: Input[TaskDefinitionVolumeDockerVolumeConfiguration]): Self = StObject.set(x, "dockerVolumeConfiguration", value.asInstanceOf[js.Any])
+    inline def setDockerVolumeConfiguration(value: Input[TaskDefinitionVolumeDockerVolumeConfiguration]): Self = StObject.set(x, "dockerVolumeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerVolumeConfigurationUndefined: Self = StObject.set(x, "dockerVolumeConfiguration", js.undefined)
+    inline def setDockerVolumeConfigurationUndefined: Self = StObject.set(x, "dockerVolumeConfiguration", js.undefined)
     
-    @scala.inline
-    def setEfsVolumeConfiguration(value: Input[TaskDefinitionVolumeEfsVolumeConfiguration]): Self = StObject.set(x, "efsVolumeConfiguration", value.asInstanceOf[js.Any])
+    inline def setEfsVolumeConfiguration(value: Input[TaskDefinitionVolumeEfsVolumeConfiguration]): Self = StObject.set(x, "efsVolumeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEfsVolumeConfigurationUndefined: Self = StObject.set(x, "efsVolumeConfiguration", js.undefined)
+    inline def setEfsVolumeConfigurationUndefined: Self = StObject.set(x, "efsVolumeConfiguration", js.undefined)
     
-    @scala.inline
-    def setHostPath(value: Input[String]): Self = StObject.set(x, "hostPath", value.asInstanceOf[js.Any])
+    inline def setHostPath(value: Input[String]): Self = StObject.set(x, "hostPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPathUndefined: Self = StObject.set(x, "hostPath", js.undefined)
+    inline def setHostPathUndefined: Self = StObject.set(x, "hostPath", js.undefined)
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

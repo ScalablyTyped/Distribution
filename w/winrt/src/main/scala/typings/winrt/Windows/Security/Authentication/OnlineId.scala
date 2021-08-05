@@ -62,23 +62,18 @@ object OnlineId {
   }
   object IOnlineIdServiceTicket {
     
-    @scala.inline
-    def apply(errorCode: Double, request: OnlineIdServiceTicketRequest, value: String): IOnlineIdServiceTicket = {
+    inline def apply(errorCode: Double, request: OnlineIdServiceTicketRequest, value: String): IOnlineIdServiceTicket = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOnlineIdServiceTicket]
     }
     
-    @scala.inline
-    implicit class IOnlineIdServiceTicketMutableBuilder[Self <: IOnlineIdServiceTicket] (val x: Self) extends AnyVal {
+    extension [Self <: IOnlineIdServiceTicket](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: OnlineIdServiceTicketRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: OnlineIdServiceTicketRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,20 +85,16 @@ object OnlineId {
   }
   object IOnlineIdServiceTicketRequest {
     
-    @scala.inline
-    def apply(policy: String, service: String): IOnlineIdServiceTicketRequest = {
+    inline def apply(policy: String, service: String): IOnlineIdServiceTicketRequest = {
       val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOnlineIdServiceTicketRequest]
     }
     
-    @scala.inline
-    implicit class IOnlineIdServiceTicketRequestMutableBuilder[Self <: IOnlineIdServiceTicketRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IOnlineIdServiceTicketRequest](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,8 +125,7 @@ object OnlineId {
   }
   object IUserIdentity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firstName: String,
       id: String,
       isBetaAccount: Boolean,
@@ -149,32 +139,23 @@ object OnlineId {
       __obj.asInstanceOf[IUserIdentity]
     }
     
-    @scala.inline
-    implicit class IUserIdentityMutableBuilder[Self <: IUserIdentity] (val x: Self) extends AnyVal {
+    extension [Self <: IUserIdentity](x: Self) {
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBetaAccount(value: Boolean): Self = StObject.set(x, "isBetaAccount", value.asInstanceOf[js.Any])
+      inline def setIsBetaAccount(value: Boolean): Self = StObject.set(x, "isBetaAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsConfirmedPC(value: Boolean): Self = StObject.set(x, "isConfirmedPC", value.asInstanceOf[js.Any])
+      inline def setIsConfirmedPC(value: Boolean): Self = StObject.set(x, "isConfirmedPC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeCustomerId(value: String): Self = StObject.set(x, "safeCustomerId", value.asInstanceOf[js.Any])
+      inline def setSafeCustomerId(value: String): Self = StObject.set(x, "safeCustomerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignInName(value: String): Self = StObject.set(x, "signInName", value.asInstanceOf[js.Any])
+      inline def setSignInName(value: String): Self = StObject.set(x, "signInName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickets(value: IVectorView[OnlineIdServiceTicket]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
+      inline def setTickets(value: IVectorView[OnlineIdServiceTicket]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,8 +169,7 @@ object OnlineId {
        with IOnlineIdServiceTicket
   object OnlineIdServiceTicket {
     
-    @scala.inline
-    def apply(errorCode: Double, request: OnlineIdServiceTicketRequest, value: String): OnlineIdServiceTicket = {
+    inline def apply(errorCode: Double, request: OnlineIdServiceTicketRequest, value: String): OnlineIdServiceTicket = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnlineIdServiceTicket]
     }
@@ -200,8 +180,7 @@ object OnlineId {
        with IOnlineIdServiceTicketRequest
   object OnlineIdServiceTicketRequest {
     
-    @scala.inline
-    def apply(policy: String, service: String): OnlineIdServiceTicketRequest = {
+    inline def apply(policy: String, service: String): OnlineIdServiceTicketRequest = {
       val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnlineIdServiceTicketRequest]
     }
@@ -264,8 +243,7 @@ object OnlineId {
        with IUserIdentity
   object UserIdentity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firstName: String,
       id: String,
       isBetaAccount: Boolean,

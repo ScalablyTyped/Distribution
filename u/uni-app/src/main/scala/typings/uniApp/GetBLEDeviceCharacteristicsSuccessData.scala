@@ -18,25 +18,19 @@ trait GetBLEDeviceCharacteristicsSuccessData extends StObject {
 }
 object GetBLEDeviceCharacteristicsSuccessData {
   
-  @scala.inline
-  def apply(): GetBLEDeviceCharacteristicsSuccessData = {
+  inline def apply(): GetBLEDeviceCharacteristicsSuccessData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccessData]
   }
   
-  @scala.inline
-  implicit class GetBLEDeviceCharacteristicsSuccessDataMutableBuilder[Self <: GetBLEDeviceCharacteristicsSuccessData] (val x: Self) extends AnyVal {
+  extension [Self <: GetBLEDeviceCharacteristicsSuccessData](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

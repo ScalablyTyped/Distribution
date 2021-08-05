@@ -18,25 +18,19 @@ trait AccountSharingInfo extends StObject {
 }
 object AccountSharingInfo {
   
-  @scala.inline
-  def apply(): AccountSharingInfo = {
+  inline def apply(): AccountSharingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSharingInfo]
   }
   
-  @scala.inline
-  implicit class AccountSharingInfoMutableBuilder[Self <: AccountSharingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSharingInfo](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setSharedDocumentVersion(value: SharedDocumentVersion): Self = StObject.set(x, "SharedDocumentVersion", value.asInstanceOf[js.Any])
+    inline def setSharedDocumentVersion(value: SharedDocumentVersion): Self = StObject.set(x, "SharedDocumentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDocumentVersionUndefined: Self = StObject.set(x, "SharedDocumentVersion", js.undefined)
+    inline def setSharedDocumentVersionUndefined: Self = StObject.set(x, "SharedDocumentVersion", js.undefined)
   }
 }

@@ -105,8 +105,7 @@ trait HttpResponseHeaderCollection extends StObject {
 }
 object HttpResponseHeaderCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     age: Double,
     allow: HttpMethodHeaderValueCollection,
     append: (String, String) => Unit,
@@ -132,67 +131,46 @@ object HttpResponseHeaderCollection {
     __obj.asInstanceOf[HttpResponseHeaderCollection]
   }
   
-  @scala.inline
-  implicit class HttpResponseHeaderCollectionMutableBuilder[Self <: HttpResponseHeaderCollection] (val x: Self) extends AnyVal {
+  extension [Self <: HttpResponseHeaderCollection](x: Self) {
     
-    @scala.inline
-    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow(value: HttpMethodHeaderValueCollection): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: HttpMethodHeaderValueCollection): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+    inline def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCacheControl(value: HttpCacheDirectiveHeaderValueCollection): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
+    inline def setCacheControl(value: HttpCacheDirectiveHeaderValueCollection): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConnection(value: HttpConnectionOptionHeaderValueCollection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: HttpConnectionOptionHeaderValueCollection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IKeyValuePair[js.Any, js.Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetView(value: () => IMapView[String, String]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+    inline def setGetView(value: () => IMapView[String, String]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+    inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsert(value: (String, String) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (String, String) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLocation(value: Uri): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Uri): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookup(value: String => String): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+    inline def setLookup(value: String => String): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProxyAuthenticate(value: HttpChallengeHeaderValueCollection): Self = StObject.set(x, "proxyAuthenticate", value.asInstanceOf[js.Any])
+    inline def setProxyAuthenticate(value: HttpChallengeHeaderValueCollection): Self = StObject.set(x, "proxyAuthenticate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRetryAfter(value: HttpDateOrDeltaHeaderValue): Self = StObject.set(x, "retryAfter", value.asInstanceOf[js.Any])
+    inline def setRetryAfter(value: HttpDateOrDeltaHeaderValue): Self = StObject.set(x, "retryAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferEncoding(value: HttpTransferCodingHeaderValueCollection): Self = StObject.set(x, "transferEncoding", value.asInstanceOf[js.Any])
+    inline def setTransferEncoding(value: HttpTransferCodingHeaderValueCollection): Self = StObject.set(x, "transferEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryAppendWithoutValidation(value: (String, String) => Boolean): Self = StObject.set(x, "tryAppendWithoutValidation", js.Any.fromFunction2(value))
+    inline def setTryAppendWithoutValidation(value: (String, String) => Boolean): Self = StObject.set(x, "tryAppendWithoutValidation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWwwAuthenticate(value: HttpChallengeHeaderValueCollection): Self = StObject.set(x, "wwwAuthenticate", value.asInstanceOf[js.Any])
+    inline def setWwwAuthenticate(value: HttpChallengeHeaderValueCollection): Self = StObject.set(x, "wwwAuthenticate", value.asInstanceOf[js.Any])
   }
 }

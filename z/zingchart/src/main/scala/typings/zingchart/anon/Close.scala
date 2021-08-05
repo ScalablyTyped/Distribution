@@ -18,25 +18,19 @@ trait Close extends StObject {
 }
 object Close {
   
-  @scala.inline
-  def apply(): Close = {
+  inline def apply(): Close = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Close]
   }
   
-  @scala.inline
-  implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+  extension [Self <: Close](x: Self) {
     
-    @scala.inline
-    def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: js.Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: js.Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object permutationsHeapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: js.Array[js.Any] */](elements: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def default[T /* <: js.Array[js.Any] */](elements: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

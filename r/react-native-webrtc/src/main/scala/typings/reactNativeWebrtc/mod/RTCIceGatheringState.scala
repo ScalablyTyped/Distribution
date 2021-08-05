@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceGatheringState extends StObject
 object RTCIceGatheringState {
   
-  @scala.inline
-  def complete: typings.reactNativeWebrtc.reactNativeWebrtcStrings.complete = "complete".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.complete]
+  inline def complete: typings.reactNativeWebrtc.reactNativeWebrtcStrings.complete = "complete".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.complete]
   
-  @scala.inline
-  def gathering: typings.reactNativeWebrtc.reactNativeWebrtcStrings.gathering = "gathering".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.gathering]
+  inline def gathering: typings.reactNativeWebrtc.reactNativeWebrtcStrings.gathering = "gathering".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.gathering]
   
-  @scala.inline
-  def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
+  inline def `new`: typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typings.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
 }

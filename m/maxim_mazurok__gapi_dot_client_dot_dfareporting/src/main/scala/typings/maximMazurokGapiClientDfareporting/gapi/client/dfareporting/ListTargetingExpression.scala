@@ -11,19 +11,15 @@ trait ListTargetingExpression extends StObject {
 }
 object ListTargetingExpression {
   
-  @scala.inline
-  def apply(): ListTargetingExpression = {
+  inline def apply(): ListTargetingExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTargetingExpression]
   }
   
-  @scala.inline
-  implicit class ListTargetingExpressionMutableBuilder[Self <: ListTargetingExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ListTargetingExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
   }
 }

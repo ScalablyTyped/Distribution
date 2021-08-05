@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2InspectContentResponse extends StObject {
 }
 object GooglePrivacyDlpV2InspectContentResponse {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2InspectContentResponse = {
+  inline def apply(): GooglePrivacyDlpV2InspectContentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2InspectContentResponse]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2InspectContentResponseMutableBuilder[Self <: GooglePrivacyDlpV2InspectContentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2InspectContentResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: GooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: GooglePrivacyDlpV2InspectResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

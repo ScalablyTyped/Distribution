@@ -8,6 +8,5 @@ object gcStatsStrings {
   
   @js.native
   sealed trait stats extends StObject
-  @scala.inline
-  def stats: stats = "stats".asInstanceOf[stats]
+  inline def stats: stats = "stats".asInstanceOf[stats]
 }

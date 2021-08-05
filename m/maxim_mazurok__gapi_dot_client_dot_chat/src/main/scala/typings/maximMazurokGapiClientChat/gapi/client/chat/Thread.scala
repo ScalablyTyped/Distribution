@@ -11,19 +11,15 @@ trait Thread extends StObject {
 }
 object Thread {
   
-  @scala.inline
-  def apply(): Thread = {
+  inline def apply(): Thread = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Thread]
   }
   
-  @scala.inline
-  implicit class ThreadMutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
+  extension [Self <: Thread](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

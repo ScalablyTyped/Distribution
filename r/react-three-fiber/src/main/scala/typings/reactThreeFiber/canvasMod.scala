@@ -45,15 +45,13 @@ object canvasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isOrthographicCamera(`def`: typings.three.mod.Camera): /* is three.three.OrthographicCamera */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOrthographicCamera")(`def`.asInstanceOf[js.Any]).asInstanceOf[/* is three.three.OrthographicCamera */ Boolean]
+  inline def isOrthographicCamera(`def`: typings.three.mod.Camera): /* is three.three.OrthographicCamera */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOrthographicCamera")(`def`.asInstanceOf[js.Any]).asInstanceOf[/* is three.three.OrthographicCamera */ Boolean]
   
   @JSImport("react-three-fiber/canvas", "stateContext")
   @js.native
   val stateContext: Context[SharedCanvasContext] = js.native
   
-  @scala.inline
-  def useCanvas(props: UseCanvasProps): DomEventHandlers = ^.asInstanceOf[js.Dynamic].applyDynamic("useCanvas")(props.asInstanceOf[js.Any]).asInstanceOf[DomEventHandlers]
+  inline def useCanvas(props: UseCanvasProps): DomEventHandlers = ^.asInstanceOf[js.Dynamic].applyDynamic("useCanvas")(props.asInstanceOf[js.Any]).asInstanceOf[DomEventHandlers]
   
   type Camera = OrthographicCamera | PerspectiveCamera
   
@@ -142,17 +140,14 @@ object canvasMod {
   }
   object CanvasProps {
     
-    @scala.inline
-    def apply(): CanvasProps = {
+    inline def apply(): CanvasProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CanvasProps]
     }
     
-    @scala.inline
-    implicit class CanvasPropsMutableBuilder[Self <: CanvasProps] (val x: Self) extends AnyVal {
+    extension [Self <: CanvasProps](x: Self) {
       
-      @scala.inline
-      def setCamera(
+      inline def setCamera(
         value: Partial[
               (Object3DNode[typings.three.mod.Camera, Instantiable0[typings.three.mod.Camera]]) & (Object3DNode[PerspectiveCamera, Instantiable0[PerspectiveCamera]]) & (Object3DNode[
                 OrthographicCamera, 
@@ -167,104 +162,71 @@ object canvasMod {
             ]
       ): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+      inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setColorManagement(value: Boolean): Self = StObject.set(x, "colorManagement", value.asInstanceOf[js.Any])
+      inline def setColorManagement(value: Boolean): Self = StObject.set(x, "colorManagement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorManagementUndefined: Self = StObject.set(x, "colorManagement", js.undefined)
+      inline def setColorManagementUndefined: Self = StObject.set(x, "colorManagement", js.undefined)
       
-      @scala.inline
-      def setConcurrent(value: Boolean): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
+      inline def setConcurrent(value: Boolean): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
+      inline def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
       
-      @scala.inline
-      def setGl(value: PartialWebGLRendererParam): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+      inline def setGl(value: PartialWebGLRendererParam): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
+      inline def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
       
-      @scala.inline
-      def setInvalidateFrameloop(value: Boolean): Self = StObject.set(x, "invalidateFrameloop", value.asInstanceOf[js.Any])
+      inline def setInvalidateFrameloop(value: Boolean): Self = StObject.set(x, "invalidateFrameloop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidateFrameloopUndefined: Self = StObject.set(x, "invalidateFrameloop", js.undefined)
+      inline def setInvalidateFrameloopUndefined: Self = StObject.set(x, "invalidateFrameloop", js.undefined)
       
-      @scala.inline
-      def setNoEvents(value: Boolean): Self = StObject.set(x, "noEvents", value.asInstanceOf[js.Any])
+      inline def setNoEvents(value: Boolean): Self = StObject.set(x, "noEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoEventsUndefined: Self = StObject.set(x, "noEvents", js.undefined)
+      inline def setNoEventsUndefined: Self = StObject.set(x, "noEvents", js.undefined)
       
-      @scala.inline
-      def setOnCreated(value: /* props */ CanvasContext => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onCreated", js.Any.fromFunction1(value))
+      inline def setOnCreated(value: /* props */ CanvasContext => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onCreated", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCreatedUndefined: Self = StObject.set(x, "onCreated", js.undefined)
+      inline def setOnCreatedUndefined: Self = StObject.set(x, "onCreated", js.undefined)
       
-      @scala.inline
-      def setOnPointerMissed(value: () => Unit): Self = StObject.set(x, "onPointerMissed", js.Any.fromFunction0(value))
+      inline def setOnPointerMissed(value: () => Unit): Self = StObject.set(x, "onPointerMissed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPointerMissedUndefined: Self = StObject.set(x, "onPointerMissed", js.undefined)
+      inline def setOnPointerMissedUndefined: Self = StObject.set(x, "onPointerMissed", js.undefined)
       
-      @scala.inline
-      def setOrthographic(value: Boolean): Self = StObject.set(x, "orthographic", value.asInstanceOf[js.Any])
+      inline def setOrthographic(value: Boolean): Self = StObject.set(x, "orthographic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrthographicUndefined: Self = StObject.set(x, "orthographic", js.undefined)
+      inline def setOrthographicUndefined: Self = StObject.set(x, "orthographic", js.undefined)
       
-      @scala.inline
-      def setPixelRatio(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setRaycaster(value: PartialRaycasterfilterFil): Self = StObject.set(x, "raycaster", value.asInstanceOf[js.Any])
+      inline def setRaycaster(value: PartialRaycasterfilterFil): Self = StObject.set(x, "raycaster", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaycasterUndefined: Self = StObject.set(x, "raycaster", js.undefined)
+      inline def setRaycasterUndefined: Self = StObject.set(x, "raycaster", js.undefined)
       
-      @scala.inline
-      def setResize(value: ResizeOptions): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: ResizeOptions): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setShadowMap(value: Boolean | PartialWebGLShadowMap): Self = StObject.set(x, "shadowMap", value.asInstanceOf[js.Any])
+      inline def setShadowMap(value: Boolean | PartialWebGLShadowMap): Self = StObject.set(x, "shadowMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowMapUndefined: Self = StObject.set(x, "shadowMap", js.undefined)
+      inline def setShadowMapUndefined: Self = StObject.set(x, "shadowMap", js.undefined)
       
-      @scala.inline
-      def setUpdateDefaultCamera(value: Boolean): Self = StObject.set(x, "updateDefaultCamera", value.asInstanceOf[js.Any])
+      inline def setUpdateDefaultCamera(value: Boolean): Self = StObject.set(x, "updateDefaultCamera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDefaultCameraUndefined: Self = StObject.set(x, "updateDefaultCamera", js.undefined)
+      inline def setUpdateDefaultCameraUndefined: Self = StObject.set(x, "updateDefaultCamera", js.undefined)
       
-      @scala.inline
-      def setVr(value: Boolean): Self = StObject.set(x, "vr", value.asInstanceOf[js.Any])
+      inline def setVr(value: Boolean): Self = StObject.set(x, "vr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVrUndefined: Self = StObject.set(x, "vr", js.undefined)
+      inline def setVrUndefined: Self = StObject.set(x, "vr", js.undefined)
       
-      @scala.inline
-      def setWebgl1(value: Boolean): Self = StObject.set(x, "webgl1", value.asInstanceOf[js.Any])
+      inline def setWebgl1(value: Boolean): Self = StObject.set(x, "webgl1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebgl1Undefined: Self = StObject.set(x, "webgl1", js.undefined)
+      inline def setWebgl1Undefined: Self = StObject.set(x, "webgl1", js.undefined)
     }
   }
   
@@ -278,8 +240,7 @@ object canvasMod {
   trait DomEvent extends StObject
   object DomEvent {
     
-    @scala.inline
-    def MouseEvent(
+    inline def MouseEvent(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -330,8 +291,7 @@ object canvasMod {
       __obj.asInstanceOf[typings.reactThreeFiber.canvasMod.MouseEvent]
     }
     
-    @scala.inline
-    def PointerEvent(
+    inline def PointerEvent(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -392,8 +352,7 @@ object canvasMod {
       __obj.asInstanceOf[typings.reactThreeFiber.canvasMod.PointerEvent]
     }
     
-    @scala.inline
-    def WheelEvent(
+    inline def WheelEvent(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -473,8 +432,7 @@ object canvasMod {
   }
   object DomEventHandlers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onClick: js.Any => Unit,
       onContextMenu: js.Any => Unit,
       onDoubleClick: js.Any => Unit,
@@ -490,38 +448,27 @@ object canvasMod {
       __obj.asInstanceOf[DomEventHandlers]
     }
     
-    @scala.inline
-    implicit class DomEventHandlersMutableBuilder[Self <: DomEventHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: DomEventHandlers](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextMenu(value: js.Any => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      inline def setOnContextMenu(value: js.Any => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDoubleClick(value: js.Any => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+      inline def setOnDoubleClick(value: js.Any => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnGotPointerCaptureLegacy(value: js.Any => Unit): Self = StObject.set(x, "onGotPointerCaptureLegacy", js.Any.fromFunction1(value))
+      inline def setOnGotPointerCaptureLegacy(value: js.Any => Unit): Self = StObject.set(x, "onGotPointerCaptureLegacy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLostPointerCapture(value: js.Any => Unit): Self = StObject.set(x, "onLostPointerCapture", js.Any.fromFunction1(value))
+      inline def setOnLostPointerCapture(value: js.Any => Unit): Self = StObject.set(x, "onLostPointerCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerDown(value: js.Any => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      inline def setOnPointerDown(value: js.Any => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerLeave(value: js.Any => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      inline def setOnPointerLeave(value: js.Any => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerMove(value: js.Any => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      inline def setOnPointerMove(value: js.Any => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPointerUp(value: js.Any => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      inline def setOnPointerUp(value: js.Any => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnWheel(value: js.Any => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+      inline def setOnWheel(value: js.Any => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     }
   }
   
@@ -539,8 +486,7 @@ object canvasMod {
   }
   object Intersection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       distance: Double,
       eventObject: Object3D,
       `object`: typings.three.object3DMod.Object3D,
@@ -551,11 +497,9 @@ object canvasMod {
       __obj.asInstanceOf[Intersection]
     }
     
-    @scala.inline
-    implicit class IntersectionMutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
+    extension [Self <: Intersection](x: Self) {
       
-      @scala.inline
-      def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
+      inline def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -669,8 +613,7 @@ object canvasMod {
   }
   object MouseEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -721,185 +664,125 @@ object canvasMod {
       __obj.asInstanceOf[MouseEvent]
     }
     
-    @scala.inline
-    implicit class MouseEventMutableBuilder[Self <: MouseEvent] (val x: Self) extends AnyVal {
+    extension [Self <: MouseEvent](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
+      inline def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
+      inline def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
       
-      @scala.inline
-      def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
+      inline def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+      inline def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
+      inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
+      inline def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
       
-      @scala.inline
-      def setFaceNull: Self = StObject.set(x, "face", null)
+      inline def setFaceNull: Self = StObject.set(x, "face", null)
       
-      @scala.inline
-      def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
+      inline def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
       
-      @scala.inline
-      def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+      inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
+      inline def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
+      inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+      inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
+      inline def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
+      inline def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeEvent(value: NativeMouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: NativeMouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: typings.three.object3DMod.Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: typings.three.object3DMod.Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
+      inline def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRay(value: Ray): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
+      inline def setRay(value: Ray): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+      inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceEvent(value: typings.react.mod.MouseEvent[Element, NativeMouseEvent]): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      inline def setSourceEvent(value: typings.react.mod.MouseEvent[Element, NativeMouseEvent]): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+      inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
+      inline def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+      inline def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
+      inline def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
       
-      @scala.inline
-      def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1033,8 +916,7 @@ object canvasMod {
   }
   object PointerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -1095,215 +977,145 @@ object canvasMod {
       __obj.asInstanceOf[PointerEvent]
     }
     
-    @scala.inline
-    implicit class PointerEventMutableBuilder[Self <: PointerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PointerEvent](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
+      inline def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
+      inline def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
       
-      @scala.inline
-      def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
+      inline def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+      inline def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
+      inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
+      inline def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
       
-      @scala.inline
-      def setFaceNull: Self = StObject.set(x, "face", null)
+      inline def setFaceNull: Self = StObject.set(x, "face", null)
       
-      @scala.inline
-      def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
+      inline def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
       
-      @scala.inline
-      def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+      inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
+      inline def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
+      inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+      inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+      inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
+      inline def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
+      inline def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeEvent(value: NativePointerEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: NativePointerEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: typings.three.object3DMod.Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: typings.three.object3DMod.Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
+      inline def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerType(value: mouse | pen | touch): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      inline def setPointerType(value: mouse | pen | touch): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
+      inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRay(value: Ray): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
+      inline def setRay(value: Ray): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+      inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceEvent(value: typings.react.mod.PointerEvent[Element]): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      inline def setSourceEvent(value: typings.react.mod.PointerEvent[Element]): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+      inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
+      inline def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
+      inline def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
+      inline def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
+      inline def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
+      inline def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+      inline def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
+      inline def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
       
-      @scala.inline
-      def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1317,26 +1129,20 @@ object canvasMod {
   }
   object ResizeOptions {
     
-    @scala.inline
-    def apply(): ResizeOptions = {
+    inline def apply(): ResizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResizeOptions]
     }
     
-    @scala.inline
-    implicit class ResizeOptionsMutableBuilder[Self <: ResizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeOptions](x: Self) {
       
-      @scala.inline
-      def setDebounce(value: Double | Resize): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+      inline def setDebounce(value: Double | Resize): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
+      inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     }
   }
   
@@ -1384,20 +1190,16 @@ object canvasMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(priority: Double, ref: MutableRefObject[RenderCallback]): Subscription = {
+    inline def apply(priority: Double, ref: MutableRefObject[RenderCallback]): Subscription = {
       val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: MutableRefObject[RenderCallback]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: MutableRefObject[RenderCallback]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1416,23 +1218,18 @@ object canvasMod {
   }
   object UseCanvasProps {
     
-    @scala.inline
-    def apply(forceResize: () => Unit, gl: WebGLRenderer, size: RectReadOnly): UseCanvasProps = {
+    inline def apply(forceResize: () => Unit, gl: WebGLRenderer, size: RectReadOnly): UseCanvasProps = {
       val __obj = js.Dynamic.literal(forceResize = js.Any.fromFunction0(forceResize), gl = gl.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseCanvasProps]
     }
     
-    @scala.inline
-    implicit class UseCanvasPropsMutableBuilder[Self <: UseCanvasProps] (val x: Self) extends AnyVal {
+    extension [Self <: UseCanvasProps](x: Self) {
       
-      @scala.inline
-      def setForceResize(value: () => Unit): Self = StObject.set(x, "forceResize", js.Any.fromFunction0(value))
+      inline def setForceResize(value: () => Unit): Self = StObject.set(x, "forceResize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGl(value: WebGLRenderer): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+      inline def setGl(value: WebGLRenderer): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: RectReadOnly): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: RectReadOnly): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1448,26 +1245,20 @@ object canvasMod {
   }
   object Viewport {
     
-    @scala.inline
-    def apply(distance: Double, factor: Double, height: Double, width: Double): Viewport = {
+    inline def apply(distance: Double, factor: Double, height: Double, width: Double): Viewport = {
       val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], factor = factor.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Viewport]
     }
     
-    @scala.inline
-    implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
+    extension [Self <: Viewport](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1591,8 +1382,7 @@ object canvasMod {
   }
   object WheelEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -1647,197 +1437,133 @@ object canvasMod {
       __obj.asInstanceOf[WheelEvent]
     }
     
-    @scala.inline
-    implicit class WheelEventMutableBuilder[Self <: WheelEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WheelEvent](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+      inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: EventTarget & Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+      inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
+      inline def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+      inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+      inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaZ(value: Double): Self = StObject.set(x, "deltaZ", value.asInstanceOf[js.Any])
+      inline def setDeltaZ(value: Double): Self = StObject.set(x, "deltaZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
+      inline def setDistanceToRay(value: Double): Self = StObject.set(x, "distanceToRay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
+      inline def setDistanceToRayUndefined: Self = StObject.set(x, "distanceToRay", js.undefined)
       
-      @scala.inline
-      def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
+      inline def setEventObject(value: Object3D): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+      inline def setFace(value: Face3): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
+      inline def setFaceIndex(value: Double): Self = StObject.set(x, "faceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
+      inline def setFaceIndexUndefined: Self = StObject.set(x, "faceIndex", js.undefined)
       
-      @scala.inline
-      def setFaceNull: Self = StObject.set(x, "face", null)
+      inline def setFaceNull: Self = StObject.set(x, "face", null)
       
-      @scala.inline
-      def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
+      inline def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
       
-      @scala.inline
-      def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
+      inline def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
+      inline def setIntersections(value: js.Array[Intersection]): Self = StObject.set(x, "intersections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
+      inline def setIntersectionsVarargs(value: Intersection*): Self = StObject.set(x, "intersections", js.Array(value :_*))
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+      inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
+      inline def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
+      inline def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeEvent(value: NativeWheelEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: NativeWheelEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: typings.three.object3DMod.Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: typings.three.object3DMod.Object3D): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
+      inline def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Vector3): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRay(value: Ray): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
+      inline def setRay(value: Ray): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+      inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceEvent(value: typings.react.mod.WheelEvent[Element]): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      inline def setSourceEvent(value: typings.react.mod.WheelEvent[Element]): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+      inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
+      inline def setUnprojectedPoint(value: typings.three.mod.Vector3): Self = StObject.set(x, "unprojectedPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+      inline def setUv(value: Vector2): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
+      inline def setUvUndefined: Self = StObject.set(x, "uv", js.undefined)
       
-      @scala.inline
-      def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
 }

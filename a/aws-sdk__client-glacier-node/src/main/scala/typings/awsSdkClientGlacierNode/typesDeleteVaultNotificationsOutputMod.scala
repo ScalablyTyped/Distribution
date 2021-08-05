@@ -20,17 +20,14 @@ object typesDeleteVaultNotificationsOutputMod {
   }
   object DeleteVaultNotificationsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteVaultNotificationsOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteVaultNotificationsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteVaultNotificationsOutput]
     }
     
-    @scala.inline
-    implicit class DeleteVaultNotificationsOutputMutableBuilder[Self <: DeleteVaultNotificationsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteVaultNotificationsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,25 +22,19 @@ trait WebhookConversion extends StObject {
 }
 object WebhookConversion {
   
-  @scala.inline
-  def apply(conversionReviewVersions: Input[js.Array[Input[String]]]): WebhookConversion = {
+  inline def apply(conversionReviewVersions: Input[js.Array[Input[String]]]): WebhookConversion = {
     val __obj = js.Dynamic.literal(conversionReviewVersions = conversionReviewVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookConversion]
   }
   
-  @scala.inline
-  implicit class WebhookConversionMutableBuilder[Self <: WebhookConversion] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookConversion](x: Self) {
     
-    @scala.inline
-    def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
+    inline def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
+    inline def setClientConfigUndefined: Self = StObject.set(x, "clientConfig", js.undefined)
     
-    @scala.inline
-    def setConversionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
+    inline def setConversionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
+    inline def setConversionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
   }
 }

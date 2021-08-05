@@ -19,26 +19,20 @@ trait TSEnumMember_
 }
 object TSEnumMember_ {
   
-  @scala.inline
-  def apply(id: Identifier_ | StringLiteral_): TSEnumMember_ = {
+  inline def apply(id: Identifier_ | StringLiteral_): TSEnumMember_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSEnumMember")
     __obj.asInstanceOf[TSEnumMember_]
   }
   
-  @scala.inline
-  implicit class TSEnumMember_MutableBuilder[Self <: TSEnumMember_] (val x: Self) extends AnyVal {
+  extension [Self <: TSEnumMember_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
+    inline def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializerNull: Self = StObject.set(x, "initializer", null)
+    inline def setInitializerNull: Self = StObject.set(x, "initializer", null)
     
-    @scala.inline
-    def setType(value: TSEnumMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSEnumMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputBoxInputType extends StObject
 object InputBoxInputType {
   
-  @scala.inline
-  def color: typings.azdata.azdataStrings.color = "color".asInstanceOf[typings.azdata.azdataStrings.color]
+  inline def color: typings.azdata.azdataStrings.color = "color".asInstanceOf[typings.azdata.azdataStrings.color]
   
-  @scala.inline
-  def date: typings.azdata.azdataStrings.date = "date".asInstanceOf[typings.azdata.azdataStrings.date]
+  inline def date: typings.azdata.azdataStrings.date = "date".asInstanceOf[typings.azdata.azdataStrings.date]
   
-  @scala.inline
-  def `datetime-local`: typings.azdata.azdataStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.azdata.azdataStrings.`datetime-local`]
+  inline def `datetime-local`: typings.azdata.azdataStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.azdata.azdataStrings.`datetime-local`]
   
-  @scala.inline
-  def email: typings.azdata.azdataStrings.email = "email".asInstanceOf[typings.azdata.azdataStrings.email]
+  inline def email: typings.azdata.azdataStrings.email = "email".asInstanceOf[typings.azdata.azdataStrings.email]
   
-  @scala.inline
-  def month: typings.azdata.azdataStrings.month = "month".asInstanceOf[typings.azdata.azdataStrings.month]
+  inline def month: typings.azdata.azdataStrings.month = "month".asInstanceOf[typings.azdata.azdataStrings.month]
   
-  @scala.inline
-  def number: typings.azdata.azdataStrings.number = "number".asInstanceOf[typings.azdata.azdataStrings.number]
+  inline def number: typings.azdata.azdataStrings.number = "number".asInstanceOf[typings.azdata.azdataStrings.number]
   
-  @scala.inline
-  def password: typings.azdata.azdataStrings.password = "password".asInstanceOf[typings.azdata.azdataStrings.password]
+  inline def password: typings.azdata.azdataStrings.password = "password".asInstanceOf[typings.azdata.azdataStrings.password]
   
-  @scala.inline
-  def range: typings.azdata.azdataStrings.range = "range".asInstanceOf[typings.azdata.azdataStrings.range]
+  inline def range: typings.azdata.azdataStrings.range = "range".asInstanceOf[typings.azdata.azdataStrings.range]
   
-  @scala.inline
-  def search: typings.azdata.azdataStrings.search = "search".asInstanceOf[typings.azdata.azdataStrings.search]
+  inline def search: typings.azdata.azdataStrings.search = "search".asInstanceOf[typings.azdata.azdataStrings.search]
   
-  @scala.inline
-  def text: typings.azdata.azdataStrings.text = "text".asInstanceOf[typings.azdata.azdataStrings.text]
+  inline def text: typings.azdata.azdataStrings.text = "text".asInstanceOf[typings.azdata.azdataStrings.text]
   
-  @scala.inline
-  def time: typings.azdata.azdataStrings.time = "time".asInstanceOf[typings.azdata.azdataStrings.time]
+  inline def time: typings.azdata.azdataStrings.time = "time".asInstanceOf[typings.azdata.azdataStrings.time]
   
-  @scala.inline
-  def url: typings.azdata.azdataStrings.url = "url".asInstanceOf[typings.azdata.azdataStrings.url]
+  inline def url: typings.azdata.azdataStrings.url = "url".asInstanceOf[typings.azdata.azdataStrings.url]
   
-  @scala.inline
-  def week: typings.azdata.azdataStrings.week = "week".asInstanceOf[typings.azdata.azdataStrings.week]
+  inline def week: typings.azdata.azdataStrings.week = "week".asInstanceOf[typings.azdata.azdataStrings.week]
 }

@@ -27,7 +27,7 @@ object psbtMod {
     def this(opts: Unit, data: typings.bip174.mod.Psbt) = this()
     def this(opts: PsbtOptsOptional, data: typings.bip174.mod.Psbt) = this()
     
-    var __CACHE: js.Any = js.native
+    /* private */ var __CACHE: js.Any = js.native
     
     def addInput(inputData: PsbtInputExtended): this.type = js.native
     
@@ -71,7 +71,7 @@ object psbtMod {
     
     var locktime: Double = js.native
     
-    var opts: js.Any = js.native
+    /* private */ var opts: js.Any = js.native
     
     def outputHasHDKey(outputIndex: Double, root: HDSigner): Boolean = js.native
     
@@ -147,20 +147,14 @@ object psbtMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromBase64(data: String): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any]).asInstanceOf[Psbt]
-    @scala.inline
-    def fromBase64(data: String, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
+    inline def fromBase64(data: String): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any]).asInstanceOf[Psbt]
+    inline def fromBase64(data: String, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
     
-    @scala.inline
-    def fromBuffer(buffer: Buffer): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Psbt]
-    @scala.inline
-    def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
+    inline def fromBuffer(buffer: Buffer): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Psbt]
+    inline def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
     
-    @scala.inline
-    def fromHex(data: String): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any]).asInstanceOf[Psbt]
-    @scala.inline
-    def fromHex(data: String, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
+    inline def fromHex(data: String): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any]).asInstanceOf[Psbt]
+    inline def fromHex(data: String, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -186,59 +180,41 @@ object psbtMod {
   trait AllScriptType extends StObject
   object AllScriptType {
     
-    @scala.inline
-    def multisig: typings.bitcoinjsLib.bitcoinjsLibStrings.multisig = "multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.multisig]
+    inline def multisig: typings.bitcoinjsLib.bitcoinjsLibStrings.multisig = "multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.multisig]
     
-    @scala.inline
-    def nonstandard: typings.bitcoinjsLib.bitcoinjsLibStrings.nonstandard = "nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.nonstandard]
+    inline def nonstandard: typings.bitcoinjsLib.bitcoinjsLibStrings.nonstandard = "nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.nonstandard]
     
-    @scala.inline
-    def `p2sh-multisig`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-multisig` = "p2sh-multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-multisig`]
+    inline def `p2sh-multisig`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-multisig` = "p2sh-multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-multisig`]
     
-    @scala.inline
-    def `p2sh-nonstandard`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-nonstandard` = "p2sh-nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-nonstandard`]
+    inline def `p2sh-nonstandard`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-nonstandard` = "p2sh-nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-nonstandard`]
     
-    @scala.inline
-    def `p2sh-p2wsh-multisig`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-multisig` = "p2sh-p2wsh-multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-multisig`]
+    inline def `p2sh-p2wsh-multisig`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-multisig` = "p2sh-p2wsh-multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-multisig`]
     
-    @scala.inline
-    def `p2sh-p2wsh-nonstandard`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-nonstandard` = "p2sh-p2wsh-nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-nonstandard`]
+    inline def `p2sh-p2wsh-nonstandard`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-nonstandard` = "p2sh-p2wsh-nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-nonstandard`]
     
-    @scala.inline
-    def `p2sh-p2wsh-pubkey`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkey` = "p2sh-p2wsh-pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkey`]
+    inline def `p2sh-p2wsh-pubkey`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkey` = "p2sh-p2wsh-pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkey`]
     
-    @scala.inline
-    def `p2sh-p2wsh-pubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkeyhash` = "p2sh-p2wsh-pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkeyhash`]
+    inline def `p2sh-p2wsh-pubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkeyhash` = "p2sh-p2wsh-pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-p2wsh-pubkeyhash`]
     
-    @scala.inline
-    def `p2sh-pubkey`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkey` = "p2sh-pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkey`]
+    inline def `p2sh-pubkey`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkey` = "p2sh-pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkey`]
     
-    @scala.inline
-    def `p2sh-pubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkeyhash` = "p2sh-pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkeyhash`]
+    inline def `p2sh-pubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkeyhash` = "p2sh-pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-pubkeyhash`]
     
-    @scala.inline
-    def `p2sh-witnesspubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-witnesspubkeyhash` = "p2sh-witnesspubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-witnesspubkeyhash`]
+    inline def `p2sh-witnesspubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-witnesspubkeyhash` = "p2sh-witnesspubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2sh-witnesspubkeyhash`]
     
-    @scala.inline
-    def `p2wsh-multisig`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-multisig` = "p2wsh-multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-multisig`]
+    inline def `p2wsh-multisig`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-multisig` = "p2wsh-multisig".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-multisig`]
     
-    @scala.inline
-    def `p2wsh-nonstandard`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-nonstandard` = "p2wsh-nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-nonstandard`]
+    inline def `p2wsh-nonstandard`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-nonstandard` = "p2wsh-nonstandard".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-nonstandard`]
     
-    @scala.inline
-    def `p2wsh-pubkey`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkey` = "p2wsh-pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkey`]
+    inline def `p2wsh-pubkey`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkey` = "p2wsh-pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkey`]
     
-    @scala.inline
-    def `p2wsh-pubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkeyhash` = "p2wsh-pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkeyhash`]
+    inline def `p2wsh-pubkeyhash`: typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkeyhash` = "p2wsh-pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.`p2wsh-pubkeyhash`]
     
-    @scala.inline
-    def pubkey: typings.bitcoinjsLib.bitcoinjsLibStrings.pubkey = "pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.pubkey]
+    inline def pubkey: typings.bitcoinjsLib.bitcoinjsLibStrings.pubkey = "pubkey".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.pubkey]
     
-    @scala.inline
-    def pubkeyhash: typings.bitcoinjsLib.bitcoinjsLibStrings.pubkeyhash = "pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.pubkeyhash]
+    inline def pubkeyhash: typings.bitcoinjsLib.bitcoinjsLibStrings.pubkeyhash = "pubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.pubkeyhash]
     
-    @scala.inline
-    def witnesspubkeyhash: typings.bitcoinjsLib.bitcoinjsLibStrings.witnesspubkeyhash = "witnesspubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.witnesspubkeyhash]
+    inline def witnesspubkeyhash: typings.bitcoinjsLib.bitcoinjsLibStrings.witnesspubkeyhash = "witnesspubkeyhash".asInstanceOf[typings.bitcoinjsLib.bitcoinjsLibStrings.witnesspubkeyhash]
   }
   
   /**
@@ -275,20 +251,16 @@ object psbtMod {
   }
   object HDSigner {
     
-    @scala.inline
-    def apply(derivePath: String => HDSigner, fingerprint: Buffer, publicKey: Buffer, sign: Buffer => Buffer): HDSigner = {
+    inline def apply(derivePath: String => HDSigner, fingerprint: Buffer, publicKey: Buffer, sign: Buffer => Buffer): HDSigner = {
       val __obj = js.Dynamic.literal(derivePath = js.Any.fromFunction1(derivePath), fingerprint = fingerprint.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], sign = js.Any.fromFunction1(sign))
       __obj.asInstanceOf[HDSigner]
     }
     
-    @scala.inline
-    implicit class HDSignerMutableBuilder[Self <: HDSigner] (val x: Self) extends AnyVal {
+    extension [Self <: HDSigner](x: Self) {
       
-      @scala.inline
-      def setDerivePath(value: String => HDSigner): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
+      inline def setDerivePath(value: String => HDSigner): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSign(value: Buffer => Buffer): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: Buffer => Buffer): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
     }
   }
   
@@ -305,8 +277,7 @@ object psbtMod {
   }
   object HDSignerAsync {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       derivePath: String => HDSignerAsync,
       fingerprint: Buffer,
       publicKey: Buffer,
@@ -316,14 +287,11 @@ object psbtMod {
       __obj.asInstanceOf[HDSignerAsync]
     }
     
-    @scala.inline
-    implicit class HDSignerAsyncMutableBuilder[Self <: HDSignerAsync] (val x: Self) extends AnyVal {
+    extension [Self <: HDSignerAsync](x: Self) {
       
-      @scala.inline
-      def setDerivePath(value: String => HDSignerAsync): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
+      inline def setDerivePath(value: String => HDSignerAsync): Self = StObject.set(x, "derivePath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSign(value: Buffer => js.Promise[Buffer]): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
+      inline def setSign(value: Buffer => js.Promise[Buffer]): Self = StObject.set(x, "sign", js.Any.fromFunction1(value))
     }
   }
   
@@ -341,20 +309,16 @@ object psbtMod {
   }
   object HDSignerBase {
     
-    @scala.inline
-    def apply(fingerprint: Buffer, publicKey: Buffer): HDSignerBase = {
+    inline def apply(fingerprint: Buffer, publicKey: Buffer): HDSignerBase = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[HDSignerBase]
     }
     
-    @scala.inline
-    implicit class HDSignerBaseMutableBuilder[Self <: HDSignerBase] (val x: Self) extends AnyVal {
+    extension [Self <: HDSignerBase](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: Buffer): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: Buffer): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKey(value: Buffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: Buffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,8 +328,7 @@ object psbtMod {
        with TransactionInput
   object PsbtInputExtended {
     
-    @scala.inline
-    def apply(hash: String | Buffer, index: Double): PsbtInputExtended = {
+    inline def apply(hash: String | Buffer, index: Double): PsbtInputExtended = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[PsbtInputExtended]
     }
@@ -379,26 +342,20 @@ object psbtMod {
   }
   object PsbtOptsOptional {
     
-    @scala.inline
-    def apply(): PsbtOptsOptional = {
+    inline def apply(): PsbtOptsOptional = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PsbtOptsOptional]
     }
     
-    @scala.inline
-    implicit class PsbtOptsOptionalMutableBuilder[Self <: PsbtOptsOptional] (val x: Self) extends AnyVal {
+    extension [Self <: PsbtOptsOptional](x: Self) {
       
-      @scala.inline
-      def setMaximumFeeRate(value: Double): Self = StObject.set(x, "maximumFeeRate", value.asInstanceOf[js.Any])
+      inline def setMaximumFeeRate(value: Double): Self = StObject.set(x, "maximumFeeRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumFeeRateUndefined: Self = StObject.set(x, "maximumFeeRate", js.undefined)
+      inline def setMaximumFeeRateUndefined: Self = StObject.set(x, "maximumFeeRate", js.undefined)
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+      inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     }
   }
   
@@ -409,14 +366,12 @@ object psbtMod {
   trait PsbtOutputExtended extends StObject
   object PsbtOutputExtended {
     
-    @scala.inline
-    def PsbtOutputExtendedAddress(address: String, value: Double): typings.bitcoinjsLib.psbtMod.PsbtOutputExtendedAddress = {
+    inline def PsbtOutputExtendedAddress(address: String, value: Double): typings.bitcoinjsLib.psbtMod.PsbtOutputExtendedAddress = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.bitcoinjsLib.psbtMod.PsbtOutputExtendedAddress]
     }
     
-    @scala.inline
-    def PsbtOutputExtendedScript(script: Buffer, value: Double): typings.bitcoinjsLib.psbtMod.PsbtOutputExtendedScript = {
+    inline def PsbtOutputExtendedScript(script: Buffer, value: Double): typings.bitcoinjsLib.psbtMod.PsbtOutputExtendedScript = {
       val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.bitcoinjsLib.psbtMod.PsbtOutputExtendedScript]
     }
@@ -433,20 +388,16 @@ object psbtMod {
   }
   object PsbtOutputExtendedAddress {
     
-    @scala.inline
-    def apply(address: String, value: Double): PsbtOutputExtendedAddress = {
+    inline def apply(address: String, value: Double): PsbtOutputExtendedAddress = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PsbtOutputExtendedAddress]
     }
     
-    @scala.inline
-    implicit class PsbtOutputExtendedAddressMutableBuilder[Self <: PsbtOutputExtendedAddress] (val x: Self) extends AnyVal {
+    extension [Self <: PsbtOutputExtendedAddress](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -461,20 +412,16 @@ object psbtMod {
   }
   object PsbtOutputExtendedScript {
     
-    @scala.inline
-    def apply(script: Buffer, value: Double): PsbtOutputExtendedScript = {
+    inline def apply(script: Buffer, value: Double): PsbtOutputExtendedScript = {
       val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PsbtOutputExtendedScript]
     }
     
-    @scala.inline
-    implicit class PsbtOutputExtendedScriptMutableBuilder[Self <: PsbtOutputExtendedScript] (val x: Self) extends AnyVal {
+    extension [Self <: PsbtOutputExtendedScript](x: Self) {
       
-      @scala.inline
-      def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -487,17 +434,14 @@ object psbtMod {
   }
   object PsbtTxInput {
     
-    @scala.inline
-    def apply(hash: Buffer, index: Double): PsbtTxInput = {
+    inline def apply(hash: Buffer, index: Double): PsbtTxInput = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[PsbtTxInput]
     }
     
-    @scala.inline
-    implicit class PsbtTxInputMutableBuilder[Self <: PsbtTxInput] (val x: Self) extends AnyVal {
+    extension [Self <: PsbtTxInput](x: Self) {
       
-      @scala.inline
-      def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
   }
   
@@ -509,20 +453,16 @@ object psbtMod {
   }
   object PsbtTxOutput {
     
-    @scala.inline
-    def apply(script: Buffer, value: Double): PsbtTxOutput = {
+    inline def apply(script: Buffer, value: Double): PsbtTxOutput = {
       val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PsbtTxOutput]
     }
     
-    @scala.inline
-    implicit class PsbtTxOutputMutableBuilder[Self <: PsbtTxOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PsbtTxOutput](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     }
   }
 }

@@ -18,19 +18,15 @@ trait TestRenderTemplateRequest extends StObject {
 }
 object TestRenderTemplateRequest {
   
-  @scala.inline
-  def apply(TemplateData: TemplateData, TemplateName: TemplateName): TestRenderTemplateRequest = {
+  inline def apply(TemplateData: TemplateData, TemplateName: TemplateName): TestRenderTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateData = TemplateData.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRenderTemplateRequest]
   }
   
-  @scala.inline
-  implicit class TestRenderTemplateRequestMutableBuilder[Self <: TestRenderTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestRenderTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateData(value: TemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
+    inline def setTemplateData(value: TemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

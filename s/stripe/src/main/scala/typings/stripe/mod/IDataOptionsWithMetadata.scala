@@ -18,19 +18,15 @@ trait IDataOptionsWithMetadata
 }
 object IDataOptionsWithMetadata {
   
-  @scala.inline
-  def apply(): IDataOptionsWithMetadata = {
+  inline def apply(): IDataOptionsWithMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDataOptionsWithMetadata]
   }
   
-  @scala.inline
-  implicit class IDataOptionsWithMetadataMutableBuilder[Self <: IDataOptionsWithMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IDataOptionsWithMetadata](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

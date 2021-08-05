@@ -26,20 +26,16 @@ object core {
   }
   object EnumSymbol {
     
-    @scala.inline
-    def apply(getName: () => String, parentEnum: IEnum): EnumSymbol = {
+    inline def apply(getName: () => String, parentEnum: IEnum): EnumSymbol = {
       val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName), parentEnum = parentEnum.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnumSymbol]
     }
     
-    @scala.inline
-    implicit class EnumSymbolMutableBuilder[Self <: EnumSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: EnumSymbol](x: Self) {
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParentEnum(value: IEnum): Self = StObject.set(x, "parentEnum", value.asInstanceOf[js.Any])
+      inline def setParentEnum(value: IEnum): Self = StObject.set(x, "parentEnum", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,8 +72,7 @@ object core {
   }
   object IEnum {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contains: js.Any => Boolean,
       fromName: String => EnumSymbol,
       getNames: () => js.Array[String],
@@ -87,20 +82,15 @@ object core {
       __obj.asInstanceOf[IEnum]
     }
     
-    @scala.inline
-    implicit class IEnumMutableBuilder[Self <: IEnum] (val x: Self) extends AnyVal {
+    extension [Self <: IEnum](x: Self) {
       
-      @scala.inline
-      def setContains(value: js.Any => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: js.Any => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromName(value: String => EnumSymbol): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
+      inline def setFromName(value: String => EnumSymbol): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNames(value: () => js.Array[String]): Self = StObject.set(x, "getNames", js.Any.fromFunction0(value))
+      inline def setGetNames(value: () => js.Array[String]): Self = StObject.set(x, "getNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSymbols(value: () => js.Array[EnumSymbol]): Self = StObject.set(x, "getSymbols", js.Any.fromFunction0(value))
+      inline def setGetSymbols(value: () => js.Array[EnumSymbol]): Self = StObject.set(x, "getSymbols", js.Any.fromFunction0(value))
     }
   }
 }

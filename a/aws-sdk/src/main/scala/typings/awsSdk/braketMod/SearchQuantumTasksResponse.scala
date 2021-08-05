@@ -18,25 +18,19 @@ trait SearchQuantumTasksResponse extends StObject {
 }
 object SearchQuantumTasksResponse {
   
-  @scala.inline
-  def apply(quantumTasks: QuantumTaskSummaryList): SearchQuantumTasksResponse = {
+  inline def apply(quantumTasks: QuantumTaskSummaryList): SearchQuantumTasksResponse = {
     val __obj = js.Dynamic.literal(quantumTasks = quantumTasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchQuantumTasksResponse]
   }
   
-  @scala.inline
-  implicit class SearchQuantumTasksResponseMutableBuilder[Self <: SearchQuantumTasksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchQuantumTasksResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setQuantumTasks(value: QuantumTaskSummaryList): Self = StObject.set(x, "quantumTasks", value.asInstanceOf[js.Any])
+    inline def setQuantumTasks(value: QuantumTaskSummaryList): Self = StObject.set(x, "quantumTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantumTasksVarargs(value: QuantumTaskSummary*): Self = StObject.set(x, "quantumTasks", js.Array(value :_*))
+    inline def setQuantumTasksVarargs(value: QuantumTaskSummary*): Self = StObject.set(x, "quantumTasks", js.Array(value :_*))
   }
 }

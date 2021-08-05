@@ -14,25 +14,19 @@ trait UnaryFilter extends StObject {
 }
 object UnaryFilter {
   
-  @scala.inline
-  def apply(): UnaryFilter = {
+  inline def apply(): UnaryFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnaryFilter]
   }
   
-  @scala.inline
-  implicit class UnaryFilterMutableBuilder[Self <: UnaryFilter] (val x: Self) extends AnyVal {
+  extension [Self <: UnaryFilter](x: Self) {
     
-    @scala.inline
-    def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }
 }

@@ -66,21 +66,16 @@ object routeResponseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RouteResponseState): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RouteResponseState, opts: CustomResourceOptions): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
+    inline def get(name: String, id: Input[ID]): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
+    inline def get(name: String, id: Input[ID], state: RouteResponseState): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
+    inline def get(name: String, id: Input[ID], state: RouteResponseState, opts: CustomResourceOptions): RouteResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteResponse]
     
     /**
       * Returns true if the given object is an instance of RouteResponse.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/routeResponse.RouteResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/routeResponse.RouteResponse */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/routeResponse.RouteResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/routeResponse.RouteResponse */ Boolean]
   }
   
   trait RouteResponseArgs extends StObject {
@@ -112,35 +107,26 @@ object routeResponseMod {
   }
   object RouteResponseArgs {
     
-    @scala.inline
-    def apply(apiId: Input[String], routeId: Input[String], routeResponseKey: Input[String]): RouteResponseArgs = {
+    inline def apply(apiId: Input[String], routeId: Input[String], routeResponseKey: Input[String]): RouteResponseArgs = {
       val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], routeId = routeId.asInstanceOf[js.Any], routeResponseKey = routeResponseKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteResponseArgs]
     }
     
-    @scala.inline
-    implicit class RouteResponseArgsMutableBuilder[Self <: RouteResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RouteResponseArgs](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelSelectionExpression(value: Input[String]): Self = StObject.set(x, "modelSelectionExpression", value.asInstanceOf[js.Any])
+      inline def setModelSelectionExpression(value: Input[String]): Self = StObject.set(x, "modelSelectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelSelectionExpressionUndefined: Self = StObject.set(x, "modelSelectionExpression", js.undefined)
+      inline def setModelSelectionExpressionUndefined: Self = StObject.set(x, "modelSelectionExpression", js.undefined)
       
-      @scala.inline
-      def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
+      inline def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
+      inline def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
       
-      @scala.inline
-      def setRouteId(value: Input[String]): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
+      inline def setRouteId(value: Input[String]): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteResponseKey(value: Input[String]): Self = StObject.set(x, "routeResponseKey", value.asInstanceOf[js.Any])
+      inline def setRouteResponseKey(value: Input[String]): Self = StObject.set(x, "routeResponseKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,44 +159,32 @@ object routeResponseMod {
   }
   object RouteResponseState {
     
-    @scala.inline
-    def apply(): RouteResponseState = {
+    inline def apply(): RouteResponseState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteResponseState]
     }
     
-    @scala.inline
-    implicit class RouteResponseStateMutableBuilder[Self <: RouteResponseState] (val x: Self) extends AnyVal {
+    extension [Self <: RouteResponseState](x: Self) {
       
-      @scala.inline
-      def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: Input[String]): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
+      inline def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
       
-      @scala.inline
-      def setModelSelectionExpression(value: Input[String]): Self = StObject.set(x, "modelSelectionExpression", value.asInstanceOf[js.Any])
+      inline def setModelSelectionExpression(value: Input[String]): Self = StObject.set(x, "modelSelectionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelSelectionExpressionUndefined: Self = StObject.set(x, "modelSelectionExpression", js.undefined)
+      inline def setModelSelectionExpressionUndefined: Self = StObject.set(x, "modelSelectionExpression", js.undefined)
       
-      @scala.inline
-      def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
+      inline def setResponseModels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
+      inline def setResponseModelsUndefined: Self = StObject.set(x, "responseModels", js.undefined)
       
-      @scala.inline
-      def setRouteId(value: Input[String]): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
+      inline def setRouteId(value: Input[String]): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteIdUndefined: Self = StObject.set(x, "routeId", js.undefined)
+      inline def setRouteIdUndefined: Self = StObject.set(x, "routeId", js.undefined)
       
-      @scala.inline
-      def setRouteResponseKey(value: Input[String]): Self = StObject.set(x, "routeResponseKey", value.asInstanceOf[js.Any])
+      inline def setRouteResponseKey(value: Input[String]): Self = StObject.set(x, "routeResponseKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteResponseKeyUndefined: Self = StObject.set(x, "routeResponseKey", js.undefined)
+      inline def setRouteResponseKeyUndefined: Self = StObject.set(x, "routeResponseKey", js.undefined)
     }
   }
 }

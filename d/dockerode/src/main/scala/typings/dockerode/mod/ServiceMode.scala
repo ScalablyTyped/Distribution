@@ -18,37 +18,27 @@ trait ServiceMode extends StObject {
 }
 object ServiceMode {
   
-  @scala.inline
-  def apply(): ServiceMode = {
+  inline def apply(): ServiceMode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceMode]
   }
   
-  @scala.inline
-  implicit class ServiceModeMutableBuilder[Self <: ServiceMode] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceMode](x: Self) {
     
-    @scala.inline
-    def setGlobal(value: js.Object): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: js.Object): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalJob(value: js.Object): Self = StObject.set(x, "GlobalJob", value.asInstanceOf[js.Any])
+    inline def setGlobalJob(value: js.Object): Self = StObject.set(x, "GlobalJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalJobUndefined: Self = StObject.set(x, "GlobalJob", js.undefined)
+    inline def setGlobalJobUndefined: Self = StObject.set(x, "GlobalJob", js.undefined)
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "Global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "Global", js.undefined)
     
-    @scala.inline
-    def setReplicated(value: Replicas): Self = StObject.set(x, "Replicated", value.asInstanceOf[js.Any])
+    inline def setReplicated(value: Replicas): Self = StObject.set(x, "Replicated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicatedJob(value: MaxConcurrent): Self = StObject.set(x, "ReplicatedJob", value.asInstanceOf[js.Any])
+    inline def setReplicatedJob(value: MaxConcurrent): Self = StObject.set(x, "ReplicatedJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicatedJobUndefined: Self = StObject.set(x, "ReplicatedJob", js.undefined)
+    inline def setReplicatedJobUndefined: Self = StObject.set(x, "ReplicatedJob", js.undefined)
     
-    @scala.inline
-    def setReplicatedUndefined: Self = StObject.set(x, "Replicated", js.undefined)
+    inline def setReplicatedUndefined: Self = StObject.set(x, "Replicated", js.undefined)
   }
 }

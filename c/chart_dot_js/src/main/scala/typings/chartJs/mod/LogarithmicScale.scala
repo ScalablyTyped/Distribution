@@ -13,19 +13,15 @@ trait LogarithmicScale
 }
 object LogarithmicScale {
   
-  @scala.inline
-  def apply(): LogarithmicScale = {
+  inline def apply(): LogarithmicScale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogarithmicScale]
   }
   
-  @scala.inline
-  implicit class LogarithmicScaleMutableBuilder[Self <: LogarithmicScale] (val x: Self) extends AnyVal {
+  extension [Self <: LogarithmicScale](x: Self) {
     
-    @scala.inline
-    def setTicks(value: LogarithmicTickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: LogarithmicTickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
   }
 }

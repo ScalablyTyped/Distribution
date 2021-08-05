@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.FileConverter")
 @js.native
-class FileConverter protected ()
+/* private */ class FileConverter ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.FileConverter {
   
@@ -43,7 +43,7 @@ class FileConverter protected ()
   /* CompleteClass */
   override val Path: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.FileConverter_typekey")
   var PowerPointDotFileConverter_typekey: typings.activexPowerpoint.PowerPoint.FileConverter = js.native
   

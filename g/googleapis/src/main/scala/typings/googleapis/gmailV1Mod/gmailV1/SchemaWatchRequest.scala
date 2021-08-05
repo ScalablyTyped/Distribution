@@ -35,34 +35,25 @@ trait SchemaWatchRequest extends StObject {
 }
 object SchemaWatchRequest {
   
-  @scala.inline
-  def apply(): SchemaWatchRequest = {
+  inline def apply(): SchemaWatchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWatchRequest]
   }
   
-  @scala.inline
-  implicit class SchemaWatchRequestMutableBuilder[Self <: SchemaWatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWatchRequest](x: Self) {
     
-    @scala.inline
-    def setLabelFilterAction(value: String): Self = StObject.set(x, "labelFilterAction", value.asInstanceOf[js.Any])
+    inline def setLabelFilterAction(value: String): Self = StObject.set(x, "labelFilterAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFilterActionUndefined: Self = StObject.set(x, "labelFilterAction", js.undefined)
+    inline def setLabelFilterActionUndefined: Self = StObject.set(x, "labelFilterAction", js.undefined)
     
-    @scala.inline
-    def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+    inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+    inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    @scala.inline
-    def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

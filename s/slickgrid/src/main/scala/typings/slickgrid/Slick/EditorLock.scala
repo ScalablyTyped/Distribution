@@ -53,8 +53,7 @@ trait EditorLock[T /* <: SlickData */] extends StObject {
 }
 object EditorLock {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](
+  inline def apply[T /* <: SlickData */](
     activate: Editor[T] => Unit,
     cancelCurrentEdit: () => Boolean,
     commitCurrentEdit: () => Boolean,
@@ -65,22 +64,16 @@ object EditorLock {
     __obj.asInstanceOf[EditorLock[T]]
   }
   
-  @scala.inline
-  implicit class EditorLockMutableBuilder[Self <: EditorLock[?], T /* <: SlickData */] (val x: Self & EditorLock[T]) extends AnyVal {
+  extension [Self <: EditorLock[?], T /* <: SlickData */](x: Self & EditorLock[T]) {
     
-    @scala.inline
-    def setActivate(value: Editor[T] => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+    inline def setActivate(value: Editor[T] => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelCurrentEdit(value: () => Boolean): Self = StObject.set(x, "cancelCurrentEdit", js.Any.fromFunction0(value))
+    inline def setCancelCurrentEdit(value: () => Boolean): Self = StObject.set(x, "cancelCurrentEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCommitCurrentEdit(value: () => Boolean): Self = StObject.set(x, "commitCurrentEdit", js.Any.fromFunction0(value))
+    inline def setCommitCurrentEdit(value: () => Boolean): Self = StObject.set(x, "commitCurrentEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeactivate(value: Editor[T] => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
+    inline def setDeactivate(value: Editor[T] => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsActive(value: Editor[T] => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
+    inline def setIsActive(value: Editor[T] => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
   }
 }

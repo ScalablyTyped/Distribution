@@ -18,25 +18,19 @@ trait HLSTimestampRange extends StObject {
 }
 object HLSTimestampRange {
   
-  @scala.inline
-  def apply(): HLSTimestampRange = {
+  inline def apply(): HLSTimestampRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HLSTimestampRange]
   }
   
-  @scala.inline
-  implicit class HLSTimestampRangeMutableBuilder[Self <: HLSTimestampRange] (val x: Self) extends AnyVal {
+  extension [Self <: HLSTimestampRange](x: Self) {
     
-    @scala.inline
-    def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
+    inline def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimestampUndefined: Self = StObject.set(x, "EndTimestamp", js.undefined)
+    inline def setEndTimestampUndefined: Self = StObject.set(x, "EndTimestamp", js.undefined)
     
-    @scala.inline
-    def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
+    inline def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
   }
 }

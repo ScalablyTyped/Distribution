@@ -8,36 +8,29 @@ object wallpaperStrings {
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait center extends StObject
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait fill extends StObject
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait fit extends StObject
-  @scala.inline
-  def fit: fit = "fit".asInstanceOf[fit]
+  inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
   sealed trait main extends StObject
-  @scala.inline
-  def main: main = "main".asInstanceOf[main]
+  inline def main: main = "main".asInstanceOf[main]
   
   @js.native
   sealed trait stretch extends StObject
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
+  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
 }

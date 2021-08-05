@@ -10,16 +10,13 @@ trait IsEnded extends StObject {
 }
 object IsEnded {
   
-  @scala.inline
-  def apply(isEnded: Boolean): IsEnded = {
+  inline def apply(isEnded: Boolean): IsEnded = {
     val __obj = js.Dynamic.literal(isEnded = isEnded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsEnded]
   }
   
-  @scala.inline
-  implicit class IsEndedMutableBuilder[Self <: IsEnded] (val x: Self) extends AnyVal {
+  extension [Self <: IsEnded](x: Self) {
     
-    @scala.inline
-    def setIsEnded(value: Boolean): Self = StObject.set(x, "isEnded", value.asInstanceOf[js.Any])
+    inline def setIsEnded(value: Boolean): Self = StObject.set(x, "isEnded", value.asInstanceOf[js.Any])
   }
 }

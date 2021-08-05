@@ -33,8 +33,7 @@ trait XInteractionPassword
 }
 object XInteractionPassword {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Password: String,
     acquire: () => Unit,
     getPassword: () => String,
@@ -47,16 +46,12 @@ object XInteractionPassword {
     __obj.asInstanceOf[XInteractionPassword]
   }
   
-  @scala.inline
-  implicit class XInteractionPasswordMutableBuilder[Self <: XInteractionPassword] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionPassword](x: Self) {
     
-    @scala.inline
-    def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
+    inline def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPassword(value: String => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
+    inline def setSetPassword(value: String => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
   }
 }

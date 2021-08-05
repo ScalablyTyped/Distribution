@@ -15,23 +15,19 @@ trait ByProducts extends StObject {
 }
 object ByProducts {
   
-  @scala.inline
-  def apply(): ByProducts = {
+  inline def apply(): ByProducts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ByProducts]
   }
   
-  @scala.inline
-  implicit class ByProductsMutableBuilder[Self <: ByProducts] (val x: Self) extends AnyVal {
+  extension [Self <: ByProducts](x: Self) {
     
-    @scala.inline
-    def setCustomValues(
+    inline def setCustomValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.ByProducts & TopLevel[js.Any]
     ): Self = StObject.set(x, "customValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomValuesUndefined: Self = StObject.set(x, "customValues", js.undefined)
+    inline def setCustomValuesUndefined: Self = StObject.set(x, "customValues", js.undefined)
   }
 }

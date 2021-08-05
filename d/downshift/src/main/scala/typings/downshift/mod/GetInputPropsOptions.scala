@@ -11,8 +11,7 @@ trait GetInputPropsOptions
      with HTMLProps[HTMLInputElement]
 object GetInputPropsOptions {
   
-  @scala.inline
-  def apply(): GetInputPropsOptions = {
+  inline def apply(): GetInputPropsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInputPropsOptions]
   }

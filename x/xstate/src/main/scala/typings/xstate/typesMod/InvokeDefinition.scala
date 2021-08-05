@@ -37,38 +37,28 @@ trait InvokeDefinition[TContext, TEvent /* <: EventObject */]
 }
 object InvokeDefinition {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](id: String, src: String | InvokeSourceDefinition, `type`: String): InvokeDefinition[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](id: String, src: String | InvokeSourceDefinition, `type`: String): InvokeDefinition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeDefinition[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class InvokeDefinitionMutableBuilder[Self <: InvokeDefinition[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (InvokeDefinition[TContext, TEvent])) extends AnyVal {
+  extension [Self <: InvokeDefinition[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (InvokeDefinition[TContext, TEvent])) {
     
-    @scala.inline
-    def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
+    inline def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
+    inline def setAutoForwardUndefined: Self = StObject.set(x, "autoForward", js.undefined)
     
-    @scala.inline
-    def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    inline def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String | InvokeSourceDefinition): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String | InvokeSourceDefinition): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

@@ -38,43 +38,31 @@ trait AssumeRoleWithSAMLRequest extends StObject {
 }
 object AssumeRoleWithSAMLRequest {
   
-  @scala.inline
-  def apply(PrincipalArn: arnType, RoleArn: arnType, SAMLAssertion: SAMLAssertionType): AssumeRoleWithSAMLRequest = {
+  inline def apply(PrincipalArn: arnType, RoleArn: arnType, SAMLAssertion: SAMLAssertionType): AssumeRoleWithSAMLRequest = {
     val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], SAMLAssertion = SAMLAssertion.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleWithSAMLRequest]
   }
   
-  @scala.inline
-  implicit class AssumeRoleWithSAMLRequestMutableBuilder[Self <: AssumeRoleWithSAMLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssumeRoleWithSAMLRequest](x: Self) {
     
-    @scala.inline
-    def setDurationSeconds(value: roleDurationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: roleDurationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: sessionPolicyDocumentType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: sessionPolicyDocumentType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArns(value: policyDescriptorListType): Self = StObject.set(x, "PolicyArns", value.asInstanceOf[js.Any])
+    inline def setPolicyArns(value: policyDescriptorListType): Self = StObject.set(x, "PolicyArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnsUndefined: Self = StObject.set(x, "PolicyArns", js.undefined)
+    inline def setPolicyArnsUndefined: Self = StObject.set(x, "PolicyArns", js.undefined)
     
-    @scala.inline
-    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = StObject.set(x, "PolicyArns", js.Array(value :_*))
+    inline def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = StObject.set(x, "PolicyArns", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
-    @scala.inline
-    def setPrincipalArn(value: arnType): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
+    inline def setPrincipalArn(value: arnType): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: arnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: arnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAMLAssertion(value: SAMLAssertionType): Self = StObject.set(x, "SAMLAssertion", value.asInstanceOf[js.Any])
+    inline def setSAMLAssertion(value: SAMLAssertionType): Self = StObject.set(x, "SAMLAssertion", value.asInstanceOf[js.Any])
   }
 }

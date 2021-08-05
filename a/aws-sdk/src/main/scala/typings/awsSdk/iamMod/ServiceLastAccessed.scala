@@ -43,52 +43,37 @@ trait ServiceLastAccessed extends StObject {
 }
 object ServiceLastAccessed {
   
-  @scala.inline
-  def apply(ServiceName: serviceNameType, ServiceNamespace: serviceNamespaceType): ServiceLastAccessed = {
+  inline def apply(ServiceName: serviceNameType, ServiceNamespace: serviceNamespaceType): ServiceLastAccessed = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceLastAccessed]
   }
   
-  @scala.inline
-  implicit class ServiceLastAccessedMutableBuilder[Self <: ServiceLastAccessed] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceLastAccessed](x: Self) {
     
-    @scala.inline
-    def setLastAuthenticated(value: dateType): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
+    inline def setLastAuthenticated(value: dateType): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAuthenticatedEntity(value: arnType): Self = StObject.set(x, "LastAuthenticatedEntity", value.asInstanceOf[js.Any])
+    inline def setLastAuthenticatedEntity(value: arnType): Self = StObject.set(x, "LastAuthenticatedEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAuthenticatedEntityUndefined: Self = StObject.set(x, "LastAuthenticatedEntity", js.undefined)
+    inline def setLastAuthenticatedEntityUndefined: Self = StObject.set(x, "LastAuthenticatedEntity", js.undefined)
     
-    @scala.inline
-    def setLastAuthenticatedRegion(value: stringType): Self = StObject.set(x, "LastAuthenticatedRegion", value.asInstanceOf[js.Any])
+    inline def setLastAuthenticatedRegion(value: stringType): Self = StObject.set(x, "LastAuthenticatedRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAuthenticatedRegionUndefined: Self = StObject.set(x, "LastAuthenticatedRegion", js.undefined)
+    inline def setLastAuthenticatedRegionUndefined: Self = StObject.set(x, "LastAuthenticatedRegion", js.undefined)
     
-    @scala.inline
-    def setLastAuthenticatedUndefined: Self = StObject.set(x, "LastAuthenticated", js.undefined)
+    inline def setLastAuthenticatedUndefined: Self = StObject.set(x, "LastAuthenticated", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: serviceNameType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: serviceNameType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: serviceNamespaceType): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAuthenticatedEntities(value: integerType): Self = StObject.set(x, "TotalAuthenticatedEntities", value.asInstanceOf[js.Any])
+    inline def setTotalAuthenticatedEntities(value: integerType): Self = StObject.set(x, "TotalAuthenticatedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAuthenticatedEntitiesUndefined: Self = StObject.set(x, "TotalAuthenticatedEntities", js.undefined)
+    inline def setTotalAuthenticatedEntitiesUndefined: Self = StObject.set(x, "TotalAuthenticatedEntities", js.undefined)
     
-    @scala.inline
-    def setTrackedActionsLastAccessed(value: TrackedActionsLastAccessed): Self = StObject.set(x, "TrackedActionsLastAccessed", value.asInstanceOf[js.Any])
+    inline def setTrackedActionsLastAccessed(value: TrackedActionsLastAccessed): Self = StObject.set(x, "TrackedActionsLastAccessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackedActionsLastAccessedUndefined: Self = StObject.set(x, "TrackedActionsLastAccessed", js.undefined)
+    inline def setTrackedActionsLastAccessedUndefined: Self = StObject.set(x, "TrackedActionsLastAccessed", js.undefined)
     
-    @scala.inline
-    def setTrackedActionsLastAccessedVarargs(value: TrackedActionLastAccessed*): Self = StObject.set(x, "TrackedActionsLastAccessed", js.Array(value :_*))
+    inline def setTrackedActionsLastAccessedVarargs(value: TrackedActionLastAccessed*): Self = StObject.set(x, "TrackedActionsLastAccessed", js.Array(value :_*))
   }
 }

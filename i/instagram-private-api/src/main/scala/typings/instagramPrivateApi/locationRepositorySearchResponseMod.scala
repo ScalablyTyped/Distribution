@@ -19,8 +19,7 @@ object locationRepositorySearchResponseMod {
   }
   object LocationRepositorySearchResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       rank_token: String,
       request_id: String,
       status: String,
@@ -30,20 +29,15 @@ object locationRepositorySearchResponseMod {
       __obj.asInstanceOf[LocationRepositorySearchResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LocationRepositorySearchResponseRootObjectMutableBuilder[Self <: LocationRepositorySearchResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LocationRepositorySearchResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+      inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+      inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVenues(value: js.Array[LocationRepositorySearchResponseVenuesItem]): Self = StObject.set(x, "venues", value.asInstanceOf[js.Any])
+      inline def setVenues(value: js.Array[LocationRepositorySearchResponseVenuesItem]): Self = StObject.set(x, "venues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVenuesVarargs(value: LocationRepositorySearchResponseVenuesItem*): Self = StObject.set(x, "venues", js.Array(value :_*))
+      inline def setVenuesVarargs(value: LocationRepositorySearchResponseVenuesItem*): Self = StObject.set(x, "venues", js.Array(value :_*))
     }
   }
   
@@ -65,8 +59,7 @@ object locationRepositorySearchResponseMod {
   }
   object LocationRepositorySearchResponseVenuesItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       external_id: String,
       external_id_source: String,
@@ -79,29 +72,21 @@ object locationRepositorySearchResponseMod {
       __obj.asInstanceOf[LocationRepositorySearchResponseVenuesItem]
     }
     
-    @scala.inline
-    implicit class LocationRepositorySearchResponseVenuesItemMutableBuilder[Self <: LocationRepositorySearchResponseVenuesItem] (val x: Self) extends AnyVal {
+    extension [Self <: LocationRepositorySearchResponseVenuesItem](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+      inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_id_source(value: String): Self = StObject.set(x, "external_id_source", value.asInstanceOf[js.Any])
+      inline def setExternal_id_source(value: String): Self = StObject.set(x, "external_id_source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimum_age(value: Double): Self = StObject.set(x, "minimum_age", value.asInstanceOf[js.Any])
+      inline def setMinimum_age(value: Double): Self = StObject.set(x, "minimum_age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

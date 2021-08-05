@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint extends 
 }
 object ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint,
     request: EnterpriseAdminGetSelfHostedRunnerForEnterpriseRequestOptions,
     response: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminGetSelfHostedRunnerForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminGetSelfHostedRunnerForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

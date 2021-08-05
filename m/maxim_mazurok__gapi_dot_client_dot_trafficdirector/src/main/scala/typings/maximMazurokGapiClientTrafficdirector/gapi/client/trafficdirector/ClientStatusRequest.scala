@@ -11,22 +11,17 @@ trait ClientStatusRequest extends StObject {
 }
 object ClientStatusRequest {
   
-  @scala.inline
-  def apply(): ClientStatusRequest = {
+  inline def apply(): ClientStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientStatusRequest]
   }
   
-  @scala.inline
-  implicit class ClientStatusRequestMutableBuilder[Self <: ClientStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClientStatusRequest](x: Self) {
     
-    @scala.inline
-    def setNodeMatchers(value: js.Array[NodeMatcher]): Self = StObject.set(x, "nodeMatchers", value.asInstanceOf[js.Any])
+    inline def setNodeMatchers(value: js.Array[NodeMatcher]): Self = StObject.set(x, "nodeMatchers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeMatchersUndefined: Self = StObject.set(x, "nodeMatchers", js.undefined)
+    inline def setNodeMatchersUndefined: Self = StObject.set(x, "nodeMatchers", js.undefined)
     
-    @scala.inline
-    def setNodeMatchersVarargs(value: NodeMatcher*): Self = StObject.set(x, "nodeMatchers", js.Array(value :_*))
+    inline def setNodeMatchersVarargs(value: NodeMatcher*): Self = StObject.set(x, "nodeMatchers", js.Array(value :_*))
   }
 }

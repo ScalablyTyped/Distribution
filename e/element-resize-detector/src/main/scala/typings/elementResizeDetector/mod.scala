@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Erd = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Erd]
-  @scala.inline
-  def apply(options: ErdmOptions): Erd = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Erd]
+  inline def apply(): Erd = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Erd]
+  inline def apply(options: ErdmOptions): Erd = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Erd]
   
   @JSImport("element-resize-detector", JSImport.Namespace)
   @js.native
@@ -30,8 +28,7 @@ object mod {
   }
   object Erd {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       listenTo: (HTMLElement, js.Function1[/* elem */ HTMLElement, Unit]) => Unit,
       removeAllListeners: HTMLElement => Unit,
       removeListener: (HTMLElement, js.Function1[/* elem */ HTMLElement, Unit]) => Unit,
@@ -41,20 +38,15 @@ object mod {
       __obj.asInstanceOf[Erd]
     }
     
-    @scala.inline
-    implicit class ErdMutableBuilder[Self <: Erd] (val x: Self) extends AnyVal {
+    extension [Self <: Erd](x: Self) {
       
-      @scala.inline
-      def setListenTo(value: (HTMLElement, js.Function1[/* elem */ HTMLElement, Unit]) => Unit): Self = StObject.set(x, "listenTo", js.Any.fromFunction2(value))
+      inline def setListenTo(value: (HTMLElement, js.Function1[/* elem */ HTMLElement, Unit]) => Unit): Self = StObject.set(x, "listenTo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAllListeners(value: HTMLElement => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
+      inline def setRemoveAllListeners(value: HTMLElement => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: (HTMLElement, js.Function1[/* elem */ HTMLElement, Unit]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (HTMLElement, js.Function1[/* elem */ HTMLElement, Unit]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUninstall(value: HTMLElement => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction1(value))
+      inline def setUninstall(value: HTMLElement => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction1(value))
     }
   }
   
@@ -94,44 +86,32 @@ object mod {
   }
   object ErdmOptions {
     
-    @scala.inline
-    def apply(): ErdmOptions = {
+    inline def apply(): ErdmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErdmOptions]
     }
     
-    @scala.inline
-    implicit class ErdmOptionsMutableBuilder[Self <: ErdmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ErdmOptions](x: Self) {
       
-      @scala.inline
-      def setCallOnAdd(value: Boolean): Self = StObject.set(x, "callOnAdd", value.asInstanceOf[js.Any])
+      inline def setCallOnAdd(value: Boolean): Self = StObject.set(x, "callOnAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallOnAddUndefined: Self = StObject.set(x, "callOnAdd", js.undefined)
+      inline def setCallOnAddUndefined: Self = StObject.set(x, "callOnAdd", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setIdHandler(value: IdHandlerProps): Self = StObject.set(x, "idHandler", value.asInstanceOf[js.Any])
+      inline def setIdHandler(value: IdHandlerProps): Self = StObject.set(x, "idHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdHandlerUndefined: Self = StObject.set(x, "idHandler", js.undefined)
+      inline def setIdHandlerUndefined: Self = StObject.set(x, "idHandler", js.undefined)
       
-      @scala.inline
-      def setReporter(value: ReporterProps): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: ReporterProps): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: scroll | `object`): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: scroll | `object`): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
   
@@ -143,20 +123,16 @@ object mod {
   }
   object IdHandlerProps {
     
-    @scala.inline
-    def apply(get: (HTMLElement, Boolean) => String, set: HTMLElement => String): IdHandlerProps = {
+    inline def apply(get: (HTMLElement, Boolean) => String, set: HTMLElement => String): IdHandlerProps = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[IdHandlerProps]
     }
     
-    @scala.inline
-    implicit class IdHandlerPropsMutableBuilder[Self <: IdHandlerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IdHandlerProps](x: Self) {
       
-      @scala.inline
-      def setGet(value: (HTMLElement, Boolean) => String): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (HTMLElement, Boolean) => String): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(value: HTMLElement => String): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: HTMLElement => String): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     }
   }
   

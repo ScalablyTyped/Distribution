@@ -22,7 +22,7 @@ trait IMsoChartFormat extends StObject {
   
   val Line: LineFormat
   
-  @JSName("Office.IMsoChartFormat_typekey")
+  /* private */ @JSName("Office.IMsoChartFormat_typekey")
   var OfficeDotIMsoChartFormat_typekey: IMsoChartFormat
   
   val Parent: js.Any
@@ -39,8 +39,7 @@ trait IMsoChartFormat extends StObject {
 }
 object IMsoChartFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Adjustments: Adjustments,
     Application: js.Any,
     AutoShapeType: MsoAutoShapeType,
@@ -61,49 +60,34 @@ object IMsoChartFormat {
     __obj.asInstanceOf[IMsoChartFormat]
   }
   
-  @scala.inline
-  implicit class IMsoChartFormatMutableBuilder[Self <: IMsoChartFormat] (val x: Self) extends AnyVal {
+  extension [Self <: IMsoChartFormat](x: Self) {
     
-    @scala.inline
-    def setAdjustments(value: Adjustments): Self = StObject.set(x, "Adjustments", value.asInstanceOf[js.Any])
+    inline def setAdjustments(value: Adjustments): Self = StObject.set(x, "Adjustments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoShapeType(value: MsoAutoShapeType): Self = StObject.set(x, "AutoShapeType", value.asInstanceOf[js.Any])
+    inline def setAutoShapeType(value: MsoAutoShapeType): Self = StObject.set(x, "AutoShapeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
+    inline def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+    inline def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotIMsoChartFormat_typekey(value: IMsoChartFormat): Self = StObject.set(x, "Office.IMsoChartFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotIMsoChartFormat_typekey(value: IMsoChartFormat): Self = StObject.set(x, "Office.IMsoChartFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
+    inline def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftEdge(value: SoftEdgeFormat): Self = StObject.set(x, "SoftEdge", value.asInstanceOf[js.Any])
+    inline def setSoftEdge(value: SoftEdgeFormat): Self = StObject.set(x, "SoftEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFrame2(value: TextFrame2): Self = StObject.set(x, "TextFrame2", value.asInstanceOf[js.Any])
+    inline def setTextFrame2(value: TextFrame2): Self = StObject.set(x, "TextFrame2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
+    inline def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
   }
 }

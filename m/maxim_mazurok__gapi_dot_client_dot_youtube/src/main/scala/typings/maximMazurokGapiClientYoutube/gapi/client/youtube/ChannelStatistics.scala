@@ -23,43 +23,31 @@ trait ChannelStatistics extends StObject {
 }
 object ChannelStatistics {
   
-  @scala.inline
-  def apply(): ChannelStatistics = {
+  inline def apply(): ChannelStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelStatistics]
   }
   
-  @scala.inline
-  implicit class ChannelStatisticsMutableBuilder[Self <: ChannelStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelStatistics](x: Self) {
     
-    @scala.inline
-    def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
+    inline def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentCountUndefined: Self = StObject.set(x, "commentCount", js.undefined)
+    inline def setCommentCountUndefined: Self = StObject.set(x, "commentCount", js.undefined)
     
-    @scala.inline
-    def setHiddenSubscriberCount(value: Boolean): Self = StObject.set(x, "hiddenSubscriberCount", value.asInstanceOf[js.Any])
+    inline def setHiddenSubscriberCount(value: Boolean): Self = StObject.set(x, "hiddenSubscriberCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenSubscriberCountUndefined: Self = StObject.set(x, "hiddenSubscriberCount", js.undefined)
+    inline def setHiddenSubscriberCountUndefined: Self = StObject.set(x, "hiddenSubscriberCount", js.undefined)
     
-    @scala.inline
-    def setSubscriberCount(value: String): Self = StObject.set(x, "subscriberCount", value.asInstanceOf[js.Any])
+    inline def setSubscriberCount(value: String): Self = StObject.set(x, "subscriberCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriberCountUndefined: Self = StObject.set(x, "subscriberCount", js.undefined)
+    inline def setSubscriberCountUndefined: Self = StObject.set(x, "subscriberCount", js.undefined)
     
-    @scala.inline
-    def setVideoCount(value: String): Self = StObject.set(x, "videoCount", value.asInstanceOf[js.Any])
+    inline def setVideoCount(value: String): Self = StObject.set(x, "videoCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCountUndefined: Self = StObject.set(x, "videoCount", js.undefined)
+    inline def setVideoCountUndefined: Self = StObject.set(x, "videoCount", js.undefined)
     
-    @scala.inline
-    def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
+    inline def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewCountUndefined: Self = StObject.set(x, "viewCount", js.undefined)
+    inline def setViewCountUndefined: Self = StObject.set(x, "viewCount", js.undefined)
   }
 }

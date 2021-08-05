@@ -38,49 +38,35 @@ trait IMapElementStyle extends StObject {
 }
 object IMapElementStyle {
   
-  @scala.inline
-  def apply(): IMapElementStyle = {
+  inline def apply(): IMapElementStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMapElementStyle]
   }
   
-  @scala.inline
-  implicit class IMapElementStyleMutableBuilder[Self <: IMapElementStyle] (val x: Self) extends AnyVal {
+  extension [Self <: IMapElementStyle](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
+    inline def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
+    inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
-    @scala.inline
-    def setLabelOutlineColor(value: String): Self = StObject.set(x, "labelOutlineColor", value.asInstanceOf[js.Any])
+    inline def setLabelOutlineColor(value: String): Self = StObject.set(x, "labelOutlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelOutlineColorUndefined: Self = StObject.set(x, "labelOutlineColor", js.undefined)
+    inline def setLabelOutlineColorUndefined: Self = StObject.set(x, "labelOutlineColor", js.undefined)
     
-    @scala.inline
-    def setLabelVisible(value: Boolean): Self = StObject.set(x, "labelVisible", value.asInstanceOf[js.Any])
+    inline def setLabelVisible(value: Boolean): Self = StObject.set(x, "labelVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelVisibleUndefined: Self = StObject.set(x, "labelVisible", js.undefined)
+    inline def setLabelVisibleUndefined: Self = StObject.set(x, "labelVisible", js.undefined)
     
-    @scala.inline
-    def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

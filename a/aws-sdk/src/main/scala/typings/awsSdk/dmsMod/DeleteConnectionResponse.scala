@@ -13,19 +13,15 @@ trait DeleteConnectionResponse extends StObject {
 }
 object DeleteConnectionResponse {
   
-  @scala.inline
-  def apply(): DeleteConnectionResponse = {
+  inline def apply(): DeleteConnectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteConnectionResponse]
   }
   
-  @scala.inline
-  implicit class DeleteConnectionResponseMutableBuilder[Self <: DeleteConnectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConnectionResponse](x: Self) {
     
-    @scala.inline
-    def setConnection(value: Connection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Connection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "Connection", js.undefined)
   }
 }

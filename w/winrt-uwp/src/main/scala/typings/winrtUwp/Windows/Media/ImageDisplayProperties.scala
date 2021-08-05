@@ -15,19 +15,15 @@ trait ImageDisplayProperties extends StObject {
 }
 object ImageDisplayProperties {
   
-  @scala.inline
-  def apply(subtitle: String, title: String): ImageDisplayProperties = {
+  inline def apply(subtitle: String, title: String): ImageDisplayProperties = {
     val __obj = js.Dynamic.literal(subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageDisplayProperties]
   }
   
-  @scala.inline
-  implicit class ImageDisplayPropertiesMutableBuilder[Self <: ImageDisplayProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageDisplayProperties](x: Self) {
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

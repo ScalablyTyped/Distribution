@@ -13,19 +13,15 @@ trait Viewport extends StObject {
 }
 object Viewport {
   
-  @scala.inline
-  def apply(frame: Rect, scroll: ScrollDetails): Viewport = {
+  inline def apply(frame: Rect, scroll: ScrollDetails): Viewport = {
     val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[Viewport]
   }
   
-  @scala.inline
-  implicit class ViewportMutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
+  extension [Self <: Viewport](x: Self) {
     
-    @scala.inline
-    def setFrame(value: Rect): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: Rect): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll(value: ScrollDetails): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    inline def setScroll(value: ScrollDetails): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
   }
 }

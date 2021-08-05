@@ -15,8 +15,7 @@ trait KmlMultiGeometry
 }
 object KmlMultiGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -38,10 +37,8 @@ object KmlMultiGeometry {
     __obj.asInstanceOf[KmlMultiGeometry]
   }
   
-  @scala.inline
-  implicit class KmlMultiGeometryMutableBuilder[Self <: KmlMultiGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: KmlMultiGeometry](x: Self) {
     
-    @scala.inline
-    def setGetGeometries(value: () => GEGeometryContainer): Self = StObject.set(x, "getGeometries", js.Any.fromFunction0(value))
+    inline def setGetGeometries(value: () => GEGeometryContainer): Self = StObject.set(x, "getGeometries", js.Any.fromFunction0(value))
   }
 }

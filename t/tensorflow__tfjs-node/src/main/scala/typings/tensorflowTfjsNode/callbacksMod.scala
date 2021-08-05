@@ -20,25 +20,25 @@ object callbacksMod {
     */
   class ProgbarLogger () extends CustomCallback {
     
-    val RENDER_THROTTLE_MS: js.Any = js.native
+    /* private */ val RENDER_THROTTLE_MS: js.Any = js.native
     
-    var batchesInLatestEpoch: js.Any = js.native
+    /* private */ var batchesInLatestEpoch: js.Any = js.native
     
-    var currentEpochBegin: js.Any = js.native
+    /* private */ var currentEpochBegin: js.Any = js.native
     
-    var epochDurationMillis: js.Any = js.native
+    /* private */ var epochDurationMillis: js.Any = js.native
     
-    var formatLogsAsMetricsContent: js.Any = js.native
+    /* private */ var formatLogsAsMetricsContent: js.Any = js.native
     
-    var isFieldRelevant: js.Any = js.native
+    /* private */ var isFieldRelevant: js.Any = js.native
     
-    var numTrainBatchesPerEpoch: js.Any = js.native
+    /* private */ var numTrainBatchesPerEpoch: js.Any = js.native
     
-    var progressBar: js.Any = js.native
+    /* private */ var progressBar: js.Any = js.native
     
-    var terminalWidth: js.Any = js.native
+    /* private */ var terminalWidth: js.Any = js.native
     
-    var usPerStep: js.Any = js.native
+    /* private */ var usPerStep: js.Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-node/dist/callbacks", "TensorBoardCallback")
@@ -48,28 +48,26 @@ object callbacksMod {
     def this(logdir: String, args: TensorBoardCallbackArgs) = this()
     def this(logdir: Unit, args: TensorBoardCallbackArgs) = this()
     
-    val args: js.Any = js.native
+    /* private */ val args: js.Any = js.native
     
-    var batchesSeen: js.Any = js.native
+    /* private */ var batchesSeen: js.Any = js.native
     
-    var ensureTrainWriterCreated: js.Any = js.native
+    /* private */ var ensureTrainWriterCreated: js.Any = js.native
     
-    var ensureValWriterCreated: js.Any = js.native
+    /* private */ var ensureValWriterCreated: js.Any = js.native
     
-    var logMetrics: js.Any = js.native
+    /* private */ var logMetrics: js.Any = js.native
     
     val logdir: String = js.native
     
-    var trainWriter: js.Any = js.native
+    /* private */ var trainWriter: js.Any = js.native
     
-    var valWriter: js.Any = js.native
+    /* private */ var valWriter: js.Any = js.native
   }
   
-  @scala.inline
-  def getDisplayDecimalPlaces(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayDecimalPlaces")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getDisplayDecimalPlaces(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayDecimalPlaces")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getSuccinctNumberDisplay(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuccinctNumberDisplay")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getSuccinctNumberDisplay(x: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuccinctNumberDisplay")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object progressBarHelper {
     
@@ -80,24 +78,18 @@ object callbacksMod {
     @JSImport("@tensorflow/tfjs-node/dist/callbacks", "progressBarHelper.ProgressBar")
     @js.native
     def ProgressBar: js.Any = js.native
-    @scala.inline
-    def ProgressBar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressBar")(x.asInstanceOf[js.Any])
+    inline def ProgressBar_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProgressBar")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-node/dist/callbacks", "progressBarHelper.log")
     @js.native
     def log: js.Function = js.native
-    @scala.inline
-    def log_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+    inline def log_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def tensorBoard(): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")().asInstanceOf[TensorBoardCallback]
-  @scala.inline
-  def tensorBoard(logdir: String): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any]).asInstanceOf[TensorBoardCallback]
-  @scala.inline
-  def tensorBoard(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
-  @scala.inline
-  def tensorBoard(logdir: Unit, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
+  inline def tensorBoard(): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")().asInstanceOf[TensorBoardCallback]
+  inline def tensorBoard(logdir: String): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any]).asInstanceOf[TensorBoardCallback]
+  inline def tensorBoard(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
+  inline def tensorBoard(logdir: Unit, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
   
   trait TensorBoardCallbackArgs extends StObject {
     
@@ -118,20 +110,16 @@ object callbacksMod {
   }
   object TensorBoardCallbackArgs {
     
-    @scala.inline
-    def apply(): TensorBoardCallbackArgs = {
+    inline def apply(): TensorBoardCallbackArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TensorBoardCallbackArgs]
     }
     
-    @scala.inline
-    implicit class TensorBoardCallbackArgsMutableBuilder[Self <: TensorBoardCallbackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TensorBoardCallbackArgs](x: Self) {
       
-      @scala.inline
-      def setUpdateFreq(value: batch | epoch): Self = StObject.set(x, "updateFreq", value.asInstanceOf[js.Any])
+      inline def setUpdateFreq(value: batch | epoch): Self = StObject.set(x, "updateFreq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateFreqUndefined: Self = StObject.set(x, "updateFreq", js.undefined)
+      inline def setUpdateFreqUndefined: Self = StObject.set(x, "updateFreq", js.undefined)
     }
   }
 }

@@ -26,8 +26,7 @@ trait IObjectSearchResults extends StObject {
 }
 object IObjectSearchResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IObjectSearchResults,
     Count: Double,
     GetAsObjectVersions: () => IObjectVersions,
@@ -42,34 +41,24 @@ object IObjectSearchResults {
     __obj.asInstanceOf[IObjectSearchResults]
   }
   
-  @scala.inline
-  implicit class IObjectSearchResultsMutableBuilder[Self <: IObjectSearchResults] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectSearchResults](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IObjectSearchResults): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IObjectSearchResults): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAsObjectVersions(value: () => IObjectVersions): Self = StObject.set(x, "GetAsObjectVersions", js.Any.fromFunction0(value))
+    inline def setGetAsObjectVersions(value: () => IObjectVersions): Self = StObject.set(x, "GetAsObjectVersions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScoreOfObject(value: IObjVer => Double): Self = StObject.set(x, "GetScoreOfObject", js.Any.fromFunction1(value))
+    inline def setGetScoreOfObject(value: IObjVer => Double): Self = StObject.set(x, "GetScoreOfObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => IObjectVersion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IObjectVersion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
+    inline def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreAt(value: Double => Double): Self = StObject.set(x, "ScoreAt", js.Any.fromFunction1(value))
+    inline def setScoreAt(value: Double => Double): Self = StObject.set(x, "ScoreAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSort(value: IObjectComparer => Unit): Self = StObject.set(x, "Sort", js.Any.fromFunction1(value))
+    inline def setSort(value: IObjectComparer => Unit): Self = StObject.set(x, "Sort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortByScore(value: Boolean => Unit): Self = StObject.set(x, "SortByScore", js.Any.fromFunction1(value))
+    inline def setSortByScore(value: Boolean => Unit): Self = StObject.set(x, "SortByScore", js.Any.fromFunction1(value))
   }
 }

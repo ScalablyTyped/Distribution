@@ -30,25 +30,19 @@ trait SodaCollectionOptions extends StObject {
 }
 object SodaCollectionOptions {
   
-  @scala.inline
-  def apply(): SodaCollectionOptions = {
+  inline def apply(): SodaCollectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SodaCollectionOptions]
   }
   
-  @scala.inline
-  implicit class SodaCollectionOptionsMutableBuilder[Self <: SodaCollectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SodaCollectionOptions](x: Self) {
     
-    @scala.inline
-    def setMetaData(value: SodaMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: SodaMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
+    inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

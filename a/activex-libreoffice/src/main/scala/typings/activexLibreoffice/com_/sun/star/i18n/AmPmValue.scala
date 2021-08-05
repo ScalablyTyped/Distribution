@@ -15,10 +15,8 @@ object AmPmValue {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AM: `0` = 0.asInstanceOf[`0`]
+    inline def AM: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PM: `1` = 1.asInstanceOf[`1`]
+    inline def PM: `1` = 1.asInstanceOf[`1`]
   }
 }

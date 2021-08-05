@@ -20,8 +20,7 @@ trait XRowSetChangeBroadcaster extends StObject {
 }
 object XRowSetChangeBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRowSetChangeListener: XRowSetChangeListener => Unit,
     removeRowSetChangeListener: XRowSetChangeListener => Unit
   ): XRowSetChangeBroadcaster = {
@@ -29,13 +28,10 @@ object XRowSetChangeBroadcaster {
     __obj.asInstanceOf[XRowSetChangeBroadcaster]
   }
   
-  @scala.inline
-  implicit class XRowSetChangeBroadcasterMutableBuilder[Self <: XRowSetChangeBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XRowSetChangeBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddRowSetChangeListener(value: XRowSetChangeListener => Unit): Self = StObject.set(x, "addRowSetChangeListener", js.Any.fromFunction1(value))
+    inline def setAddRowSetChangeListener(value: XRowSetChangeListener => Unit): Self = StObject.set(x, "addRowSetChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveRowSetChangeListener(value: XRowSetChangeListener => Unit): Self = StObject.set(x, "removeRowSetChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveRowSetChangeListener(value: XRowSetChangeListener => Unit): Self = StObject.set(x, "removeRowSetChangeListener", js.Any.fromFunction1(value))
   }
 }

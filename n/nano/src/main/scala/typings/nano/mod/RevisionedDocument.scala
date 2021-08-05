@@ -10,16 +10,13 @@ trait RevisionedDocument extends StObject {
 }
 object RevisionedDocument {
   
-  @scala.inline
-  def apply(_rev: String): RevisionedDocument = {
+  inline def apply(_rev: String): RevisionedDocument = {
     val __obj = js.Dynamic.literal(_rev = _rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevisionedDocument]
   }
   
-  @scala.inline
-  implicit class RevisionedDocumentMutableBuilder[Self <: RevisionedDocument] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionedDocument](x: Self) {
     
-    @scala.inline
-    def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
+    inline def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
   }
 }

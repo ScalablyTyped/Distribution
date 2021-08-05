@@ -16,15 +16,13 @@ trait Block
      with _Node
 object Block {
   
-  @scala.inline
-  def BlockStatement_(body: js.Array[Statement], directives: js.Array[Directive_]): typings.babelTypes.mod.BlockStatement_ = {
+  inline def BlockStatement_(body: js.Array[Statement], directives: js.Array[Directive_]): typings.babelTypes.mod.BlockStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.BlockStatement_]
   }
   
-  @scala.inline
-  def Program_(
+  inline def Program_(
     body: js.Array[Statement],
     directives: js.Array[Directive_],
     sourceFile: String,
@@ -35,8 +33,7 @@ object Block {
     __obj.asInstanceOf[typings.babelTypes.mod.Program_]
   }
   
-  @scala.inline
-  def TSModuleBlock_(body: js.Array[Statement]): typings.babelTypes.mod.TSModuleBlock_ = {
+  inline def TSModuleBlock_(body: js.Array[Statement]): typings.babelTypes.mod.TSModuleBlock_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSModuleBlock")
     __obj.asInstanceOf[typings.babelTypes.mod.TSModuleBlock_]

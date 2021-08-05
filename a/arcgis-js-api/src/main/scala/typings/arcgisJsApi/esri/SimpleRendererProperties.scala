@@ -25,25 +25,19 @@ trait SimpleRendererProperties
 }
 object SimpleRendererProperties {
   
-  @scala.inline
-  def apply(): SimpleRendererProperties = {
+  inline def apply(): SimpleRendererProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SimpleRendererProperties]
   }
   
-  @scala.inline
-  implicit class SimpleRendererPropertiesMutableBuilder[Self <: SimpleRendererProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleRendererProperties](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: SymbolProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: SymbolProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

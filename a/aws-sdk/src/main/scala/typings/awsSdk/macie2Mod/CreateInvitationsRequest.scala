@@ -23,31 +23,23 @@ trait CreateInvitationsRequest extends StObject {
 }
 object CreateInvitationsRequest {
   
-  @scala.inline
-  def apply(accountIds: listOfString): CreateInvitationsRequest = {
+  inline def apply(accountIds: listOfString): CreateInvitationsRequest = {
     val __obj = js.Dynamic.literal(accountIds = accountIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInvitationsRequest]
   }
   
-  @scala.inline
-  implicit class CreateInvitationsRequestMutableBuilder[Self <: CreateInvitationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInvitationsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: listOfString): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: listOfString): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsVarargs(value: string*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: string*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDisableEmailNotification(value: boolean): Self = StObject.set(x, "disableEmailNotification", value.asInstanceOf[js.Any])
+    inline def setDisableEmailNotification(value: boolean): Self = StObject.set(x, "disableEmailNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableEmailNotificationUndefined: Self = StObject.set(x, "disableEmailNotification", js.undefined)
+    inline def setDisableEmailNotificationUndefined: Self = StObject.set(x, "disableEmailNotification", js.undefined)
     
-    @scala.inline
-    def setMessage(value: string): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: string): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

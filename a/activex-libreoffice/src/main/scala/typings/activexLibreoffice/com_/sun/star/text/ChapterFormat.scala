@@ -21,19 +21,14 @@ object ChapterFormat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DIGIT: `4` = 4.asInstanceOf[`4`]
+    inline def DIGIT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NAME: `0` = 0.asInstanceOf[`0`]
+    inline def NAME: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NAME_NUMBER: `2` = 2.asInstanceOf[`2`]
+    inline def NAME_NUMBER: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NO_PREFIX_SUFFIX: `3` = 3.asInstanceOf[`3`]
+    inline def NO_PREFIX_SUFFIX: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NUMBER: `1` = 1.asInstanceOf[`1`]
+    inline def NUMBER: `1` = 1.asInstanceOf[`1`]
   }
 }

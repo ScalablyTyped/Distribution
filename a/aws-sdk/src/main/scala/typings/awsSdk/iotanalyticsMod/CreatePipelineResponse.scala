@@ -18,25 +18,19 @@ trait CreatePipelineResponse extends StObject {
 }
 object CreatePipelineResponse {
   
-  @scala.inline
-  def apply(): CreatePipelineResponse = {
+  inline def apply(): CreatePipelineResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePipelineResponse]
   }
   
-  @scala.inline
-  implicit class CreatePipelineResponseMutableBuilder[Self <: CreatePipelineResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePipelineResponse](x: Self) {
     
-    @scala.inline
-    def setPipelineArn(value: PipelineArn): Self = StObject.set(x, "pipelineArn", value.asInstanceOf[js.Any])
+    inline def setPipelineArn(value: PipelineArn): Self = StObject.set(x, "pipelineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineArnUndefined: Self = StObject.set(x, "pipelineArn", js.undefined)
+    inline def setPipelineArnUndefined: Self = StObject.set(x, "pipelineArn", js.undefined)
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
+    inline def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
   }
 }

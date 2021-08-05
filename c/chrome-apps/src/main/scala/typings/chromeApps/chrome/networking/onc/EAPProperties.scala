@@ -41,109 +41,75 @@ trait EAPProperties extends StObject {
 }
 object EAPProperties {
   
-  @scala.inline
-  def apply(): EAPProperties = {
+  inline def apply(): EAPProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EAPProperties]
   }
   
-  @scala.inline
-  implicit class EAPPropertiesMutableBuilder[Self <: EAPProperties] (val x: Self) extends AnyVal {
+  extension [Self <: EAPProperties](x: Self) {
     
-    @scala.inline
-    def setAnonymousIdentity(value: String): Self = StObject.set(x, "AnonymousIdentity", value.asInstanceOf[js.Any])
+    inline def setAnonymousIdentity(value: String): Self = StObject.set(x, "AnonymousIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnonymousIdentityUndefined: Self = StObject.set(x, "AnonymousIdentity", js.undefined)
+    inline def setAnonymousIdentityUndefined: Self = StObject.set(x, "AnonymousIdentity", js.undefined)
     
-    @scala.inline
-    def setClientCertPKCS11Id(value: String): Self = StObject.set(x, "ClientCertPKCS11Id", value.asInstanceOf[js.Any])
+    inline def setClientCertPKCS11Id(value: String): Self = StObject.set(x, "ClientCertPKCS11Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertPKCS11IdUndefined: Self = StObject.set(x, "ClientCertPKCS11Id", js.undefined)
+    inline def setClientCertPKCS11IdUndefined: Self = StObject.set(x, "ClientCertPKCS11Id", js.undefined)
     
-    @scala.inline
-    def setClientCertPattern(value: CertPattern): Self = StObject.set(x, "ClientCertPattern", value.asInstanceOf[js.Any])
+    inline def setClientCertPattern(value: CertPattern): Self = StObject.set(x, "ClientCertPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertPatternUndefined: Self = StObject.set(x, "ClientCertPattern", js.undefined)
+    inline def setClientCertPatternUndefined: Self = StObject.set(x, "ClientCertPattern", js.undefined)
     
-    @scala.inline
-    def setClientCertRef(value: String): Self = StObject.set(x, "ClientCertRef", value.asInstanceOf[js.Any])
+    inline def setClientCertRef(value: String): Self = StObject.set(x, "ClientCertRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertRefUndefined: Self = StObject.set(x, "ClientCertRef", js.undefined)
+    inline def setClientCertRefUndefined: Self = StObject.set(x, "ClientCertRef", js.undefined)
     
-    @scala.inline
-    def setClientCertType(value: ClientCertType): Self = StObject.set(x, "ClientCertType", value.asInstanceOf[js.Any])
+    inline def setClientCertType(value: ClientCertType): Self = StObject.set(x, "ClientCertType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertTypeUndefined: Self = StObject.set(x, "ClientCertType", js.undefined)
+    inline def setClientCertTypeUndefined: Self = StObject.set(x, "ClientCertType", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "Identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "Identity", js.undefined)
     
-    @scala.inline
-    def setInner(value: String): Self = StObject.set(x, "Inner", value.asInstanceOf[js.Any])
+    inline def setInner(value: String): Self = StObject.set(x, "Inner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerUndefined: Self = StObject.set(x, "Inner", js.undefined)
+    inline def setInnerUndefined: Self = StObject.set(x, "Inner", js.undefined)
     
-    @scala.inline
-    def setOuter(value: String): Self = StObject.set(x, "Outer", value.asInstanceOf[js.Any])
+    inline def setOuter(value: String): Self = StObject.set(x, "Outer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterUndefined: Self = StObject.set(x, "Outer", js.undefined)
+    inline def setOuterUndefined: Self = StObject.set(x, "Outer", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setSaveCredentials(value: Boolean): Self = StObject.set(x, "SaveCredentials", value.asInstanceOf[js.Any])
+    inline def setSaveCredentials(value: Boolean): Self = StObject.set(x, "SaveCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveCredentialsUndefined: Self = StObject.set(x, "SaveCredentials", js.undefined)
+    inline def setSaveCredentialsUndefined: Self = StObject.set(x, "SaveCredentials", js.undefined)
     
-    @scala.inline
-    def setServerCAPEMs(value: js.Array[String]): Self = StObject.set(x, "ServerCAPEMs", value.asInstanceOf[js.Any])
+    inline def setServerCAPEMs(value: js.Array[String]): Self = StObject.set(x, "ServerCAPEMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCAPEMsUndefined: Self = StObject.set(x, "ServerCAPEMs", js.undefined)
+    inline def setServerCAPEMsUndefined: Self = StObject.set(x, "ServerCAPEMs", js.undefined)
     
-    @scala.inline
-    def setServerCAPEMsVarargs(value: String*): Self = StObject.set(x, "ServerCAPEMs", js.Array(value :_*))
+    inline def setServerCAPEMsVarargs(value: String*): Self = StObject.set(x, "ServerCAPEMs", js.Array(value :_*))
     
-    @scala.inline
-    def setServerCARefs(value: js.Array[String]): Self = StObject.set(x, "ServerCARefs", value.asInstanceOf[js.Any])
+    inline def setServerCARefs(value: js.Array[String]): Self = StObject.set(x, "ServerCARefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCARefsUndefined: Self = StObject.set(x, "ServerCARefs", js.undefined)
+    inline def setServerCARefsUndefined: Self = StObject.set(x, "ServerCARefs", js.undefined)
     
-    @scala.inline
-    def setServerCARefsVarargs(value: String*): Self = StObject.set(x, "ServerCARefs", js.Array(value :_*))
+    inline def setServerCARefsVarargs(value: String*): Self = StObject.set(x, "ServerCARefs", js.Array(value :_*))
     
-    @scala.inline
-    def setSubjectMatch(value: ManagedDOMString): Self = StObject.set(x, "SubjectMatch", value.asInstanceOf[js.Any])
+    inline def setSubjectMatch(value: ManagedDOMString): Self = StObject.set(x, "SubjectMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectMatchUndefined: Self = StObject.set(x, "SubjectMatch", js.undefined)
+    inline def setSubjectMatchUndefined: Self = StObject.set(x, "SubjectMatch", js.undefined)
     
-    @scala.inline
-    def setUseProactiveKeyCaching(value: Boolean): Self = StObject.set(x, "UseProactiveKeyCaching", value.asInstanceOf[js.Any])
+    inline def setUseProactiveKeyCaching(value: Boolean): Self = StObject.set(x, "UseProactiveKeyCaching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseProactiveKeyCachingUndefined: Self = StObject.set(x, "UseProactiveKeyCaching", js.undefined)
+    inline def setUseProactiveKeyCachingUndefined: Self = StObject.set(x, "UseProactiveKeyCaching", js.undefined)
     
-    @scala.inline
-    def setUseSytemCAs(value: Boolean): Self = StObject.set(x, "UseSytemCAs", value.asInstanceOf[js.Any])
+    inline def setUseSytemCAs(value: Boolean): Self = StObject.set(x, "UseSytemCAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSytemCAsUndefined: Self = StObject.set(x, "UseSytemCAs", js.undefined)
+    inline def setUseSytemCAsUndefined: Self = StObject.set(x, "UseSytemCAs", js.undefined)
   }
 }

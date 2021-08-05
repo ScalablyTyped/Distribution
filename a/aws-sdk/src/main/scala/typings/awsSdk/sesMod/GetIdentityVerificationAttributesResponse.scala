@@ -13,16 +13,13 @@ trait GetIdentityVerificationAttributesResponse extends StObject {
 }
 object GetIdentityVerificationAttributesResponse {
   
-  @scala.inline
-  def apply(VerificationAttributes: VerificationAttributes): GetIdentityVerificationAttributesResponse = {
+  inline def apply(VerificationAttributes: VerificationAttributes): GetIdentityVerificationAttributesResponse = {
     val __obj = js.Dynamic.literal(VerificationAttributes = VerificationAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityVerificationAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetIdentityVerificationAttributesResponseMutableBuilder[Self <: GetIdentityVerificationAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityVerificationAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setVerificationAttributes(value: VerificationAttributes): Self = StObject.set(x, "VerificationAttributes", value.asInstanceOf[js.Any])
+    inline def setVerificationAttributes(value: VerificationAttributes): Self = StObject.set(x, "VerificationAttributes", value.asInstanceOf[js.Any])
   }
 }

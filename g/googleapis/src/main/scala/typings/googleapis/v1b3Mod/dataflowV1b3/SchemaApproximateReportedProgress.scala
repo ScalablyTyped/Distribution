@@ -55,37 +55,27 @@ trait SchemaApproximateReportedProgress extends StObject {
 }
 object SchemaApproximateReportedProgress {
   
-  @scala.inline
-  def apply(): SchemaApproximateReportedProgress = {
+  inline def apply(): SchemaApproximateReportedProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApproximateReportedProgress]
   }
   
-  @scala.inline
-  implicit class SchemaApproximateReportedProgressMutableBuilder[Self <: SchemaApproximateReportedProgress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApproximateReportedProgress](x: Self) {
     
-    @scala.inline
-    def setConsumedParallelism(value: SchemaReportedParallelism): Self = StObject.set(x, "consumedParallelism", value.asInstanceOf[js.Any])
+    inline def setConsumedParallelism(value: SchemaReportedParallelism): Self = StObject.set(x, "consumedParallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedParallelismUndefined: Self = StObject.set(x, "consumedParallelism", js.undefined)
+    inline def setConsumedParallelismUndefined: Self = StObject.set(x, "consumedParallelism", js.undefined)
     
-    @scala.inline
-    def setFractionConsumed(value: Double): Self = StObject.set(x, "fractionConsumed", value.asInstanceOf[js.Any])
+    inline def setFractionConsumed(value: Double): Self = StObject.set(x, "fractionConsumed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFractionConsumedUndefined: Self = StObject.set(x, "fractionConsumed", js.undefined)
+    inline def setFractionConsumedUndefined: Self = StObject.set(x, "fractionConsumed", js.undefined)
     
-    @scala.inline
-    def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: SchemaPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRemainingParallelism(value: SchemaReportedParallelism): Self = StObject.set(x, "remainingParallelism", value.asInstanceOf[js.Any])
+    inline def setRemainingParallelism(value: SchemaReportedParallelism): Self = StObject.set(x, "remainingParallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingParallelismUndefined: Self = StObject.set(x, "remainingParallelism", js.undefined)
+    inline def setRemainingParallelismUndefined: Self = StObject.set(x, "remainingParallelism", js.undefined)
   }
 }

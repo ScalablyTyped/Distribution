@@ -44,49 +44,35 @@ trait SchemaAccountTicket extends StObject {
 }
 object SchemaAccountTicket {
   
-  @scala.inline
-  def apply(): SchemaAccountTicket = {
+  inline def apply(): SchemaAccountTicket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountTicket]
   }
   
-  @scala.inline
-  implicit class SchemaAccountTicketMutableBuilder[Self <: SchemaAccountTicket] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountTicket](x: Self) {
     
-    @scala.inline
-    def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProfile(value: SchemaProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: SchemaProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+    inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     
-    @scala.inline
-    def setWebproperty(value: SchemaWebproperty): Self = StObject.set(x, "webproperty", value.asInstanceOf[js.Any])
+    inline def setWebproperty(value: SchemaWebproperty): Self = StObject.set(x, "webproperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebpropertyUndefined: Self = StObject.set(x, "webproperty", js.undefined)
+    inline def setWebpropertyUndefined: Self = StObject.set(x, "webproperty", js.undefined)
   }
 }

@@ -30,37 +30,27 @@ trait IonSplitPane extends StObject {
 }
 object IonSplitPane {
   
-  @scala.inline
-  def apply(): IonSplitPane = {
+  inline def apply(): IonSplitPane = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonSplitPane]
   }
   
-  @scala.inline
-  implicit class IonSplitPaneMutableBuilder[Self <: IonSplitPane] (val x: Self) extends AnyVal {
+  extension [Self <: IonSplitPane](x: Self) {
     
-    @scala.inline
-    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+    inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
+    inline def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setOnIonSplitPaneVisible(value: /* event */ CustomEvent[Visible] => Unit): Self = StObject.set(x, "onIonSplitPaneVisible", js.Any.fromFunction1(value))
+    inline def setOnIonSplitPaneVisible(value: /* event */ CustomEvent[Visible] => Unit): Self = StObject.set(x, "onIonSplitPaneVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonSplitPaneVisibleUndefined: Self = StObject.set(x, "onIonSplitPaneVisible", js.undefined)
+    inline def setOnIonSplitPaneVisibleUndefined: Self = StObject.set(x, "onIonSplitPaneVisible", js.undefined)
     
-    @scala.inline
-    def setWhen(value: String | Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: String | Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

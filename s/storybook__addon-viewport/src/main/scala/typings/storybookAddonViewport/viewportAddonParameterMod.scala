@@ -17,32 +17,24 @@ object viewportAddonParameterMod {
   }
   object ViewportAddonParameter {
     
-    @scala.inline
-    def apply(): ViewportAddonParameter = {
+    inline def apply(): ViewportAddonParameter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewportAddonParameter]
     }
     
-    @scala.inline
-    implicit class ViewportAddonParameterMutableBuilder[Self <: ViewportAddonParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ViewportAddonParameter](x: Self) {
       
-      @scala.inline
-      def setDefaultViewport(value: String): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
+      inline def setDefaultViewport(value: String): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultViewportUndefined: Self = StObject.set(x, "defaultViewport", js.undefined)
+      inline def setDefaultViewportUndefined: Self = StObject.set(x, "defaultViewport", js.undefined)
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setViewports(value: ViewportMap): Self = StObject.set(x, "viewports", value.asInstanceOf[js.Any])
+      inline def setViewports(value: ViewportMap): Self = StObject.set(x, "viewports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportsUndefined: Self = StObject.set(x, "viewports", js.undefined)
+      inline def setViewportsUndefined: Self = StObject.set(x, "viewports", js.undefined)
     }
   }
 }

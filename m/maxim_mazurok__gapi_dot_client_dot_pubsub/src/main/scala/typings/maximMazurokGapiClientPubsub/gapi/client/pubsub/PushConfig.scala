@@ -29,35 +29,27 @@ trait PushConfig extends StObject {
 }
 object PushConfig {
   
-  @scala.inline
-  def apply(): PushConfig = {
+  inline def apply(): PushConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushConfig]
   }
   
-  @scala.inline
-  implicit class PushConfigMutableBuilder[Self <: PushConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PushConfig](x: Self) {
     
-    @scala.inline
-    def setAttributes(
+    inline def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PushConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setOidcToken(value: OidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
+    inline def setOidcToken(value: OidcToken): Self = StObject.set(x, "oidcToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
+    inline def setOidcTokenUndefined: Self = StObject.set(x, "oidcToken", js.undefined)
     
-    @scala.inline
-    def setPushEndpoint(value: String): Self = StObject.set(x, "pushEndpoint", value.asInstanceOf[js.Any])
+    inline def setPushEndpoint(value: String): Self = StObject.set(x, "pushEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushEndpointUndefined: Self = StObject.set(x, "pushEndpoint", js.undefined)
+    inline def setPushEndpointUndefined: Self = StObject.set(x, "pushEndpoint", js.undefined)
   }
 }

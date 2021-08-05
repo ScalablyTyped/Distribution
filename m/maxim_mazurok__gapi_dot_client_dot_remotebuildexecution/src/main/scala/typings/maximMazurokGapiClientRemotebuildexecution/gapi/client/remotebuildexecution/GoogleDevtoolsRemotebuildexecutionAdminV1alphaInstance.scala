@@ -26,43 +26,31 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance extends StObject {
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstanceMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance](x: Self) {
     
-    @scala.inline
-    def setFeaturePolicy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy): Self = StObject.set(x, "featurePolicy", value.asInstanceOf[js.Any])
+    inline def setFeaturePolicy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy): Self = StObject.set(x, "featurePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturePolicyUndefined: Self = StObject.set(x, "featurePolicy", js.undefined)
+    inline def setFeaturePolicyUndefined: Self = StObject.set(x, "featurePolicy", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setLoggingEnabled(value: Boolean): Self = StObject.set(x, "loggingEnabled", value.asInstanceOf[js.Any])
+    inline def setLoggingEnabled(value: Boolean): Self = StObject.set(x, "loggingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingEnabledUndefined: Self = StObject.set(x, "loggingEnabled", js.undefined)
+    inline def setLoggingEnabledUndefined: Self = StObject.set(x, "loggingEnabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

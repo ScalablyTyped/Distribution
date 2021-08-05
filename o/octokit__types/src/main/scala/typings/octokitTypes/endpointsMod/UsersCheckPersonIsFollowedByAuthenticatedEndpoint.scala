@@ -10,16 +10,13 @@ trait UsersCheckPersonIsFollowedByAuthenticatedEndpoint extends StObject {
 }
 object UsersCheckPersonIsFollowedByAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(username: String): UsersCheckPersonIsFollowedByAuthenticatedEndpoint = {
+  inline def apply(username: String): UsersCheckPersonIsFollowedByAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersCheckPersonIsFollowedByAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersCheckPersonIsFollowedByAuthenticatedEndpointMutableBuilder[Self <: UsersCheckPersonIsFollowedByAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersCheckPersonIsFollowedByAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

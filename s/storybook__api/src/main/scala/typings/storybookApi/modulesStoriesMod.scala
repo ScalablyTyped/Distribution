@@ -27,11 +27,9 @@ object modulesStoriesMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def `-1`: typings.storybookApi.storybookApiNumbers.`-1` = -1.asInstanceOf[typings.storybookApi.storybookApiNumbers.`-1`]
+    inline def `-1`: typings.storybookApi.storybookApiNumbers.`-1` = -1.asInstanceOf[typings.storybookApi.storybookApiNumbers.`-1`]
     
-    @scala.inline
-    def `1`: typings.storybookApi.storybookApiNumbers.`1` = 1.asInstanceOf[typings.storybookApi.storybookApiNumbers.`1`]
+    inline def `1`: typings.storybookApi.storybookApiNumbers.`1` = 1.asInstanceOf[typings.storybookApi.storybookApiNumbers.`1`]
   }
   
   type ParameterName = String
@@ -111,8 +109,7 @@ object modulesStoriesMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       storiesConfigured: Boolean,
       storiesHash: StoriesHash,
       storyId: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
@@ -121,31 +118,23 @@ object modulesStoriesMod {
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
+      inline def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoriesFailed(value: Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
+      inline def setStoriesFailed(value: Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoriesFailedUndefined: Self = StObject.set(x, "storiesFailed", js.undefined)
+      inline def setStoriesFailedUndefined: Self = StObject.set(x, "storiesFailed", js.undefined)
       
-      @scala.inline
-      def setStoriesHash(value: StoriesHash): Self = StObject.set(x, "storiesHash", value.asInstanceOf[js.Any])
+      inline def setStoriesHash(value: StoriesHash): Self = StObject.set(x, "storiesHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(
+      inline def setStoryId(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
       ): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
   

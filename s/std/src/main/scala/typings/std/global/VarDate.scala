@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("VarDate")
 @js.native
-class VarDate protected ()
+/* private */ class VarDate ()
   extends StObject
      with typings.std.VarDate {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var VarDate_typekey: typings.std.VarDate = js.native
 }

@@ -11,6 +11,5 @@ object updateTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def updateT(color: IColor, t: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateT")(color.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IColor]
+  inline def updateT(color: IColor, t: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateT")(color.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IColor]
 }

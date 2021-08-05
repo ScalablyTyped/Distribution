@@ -22,23 +22,23 @@ object httpresponseMod {
       */
     def this(client: CDPSession, request: HTTPRequest, responsePayload: Response) = this()
     
-    var _bodyLoadedPromise: js.Any = js.native
+    /* private */ var _bodyLoadedPromise: js.Any = js.native
     
-    var _bodyLoadedPromiseFulfill: js.Any = js.native
+    /* private */ var _bodyLoadedPromiseFulfill: js.Any = js.native
     
-    var _client: js.Any = js.native
+    /* private */ var _client: js.Any = js.native
     
-    var _contentPromise: js.Any = js.native
+    /* private */ var _contentPromise: js.Any = js.native
     
-    var _fromDiskCache: js.Any = js.native
+    /* private */ var _fromDiskCache: js.Any = js.native
     
-    var _fromServiceWorker: js.Any = js.native
+    /* private */ var _fromServiceWorker: js.Any = js.native
     
-    var _headers: js.Any = js.native
+    /* private */ var _headers: js.Any = js.native
     
-    var _remoteAddress: js.Any = js.native
+    /* private */ var _remoteAddress: js.Any = js.native
     
-    var _request: js.Any = js.native
+    /* private */ var _request: js.Any = js.native
     
     /**
       * @internal
@@ -46,13 +46,13 @@ object httpresponseMod {
     def _resolveBody(): Unit = js.native
     def _resolveBody(err: Error): Unit = js.native
     
-    var _securityDetails: js.Any = js.native
+    /* private */ var _securityDetails: js.Any = js.native
     
-    var _status: js.Any = js.native
+    /* private */ var _status: js.Any = js.native
     
-    var _statusText: js.Any = js.native
+    /* private */ var _statusText: js.Any = js.native
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
     /**
       * @returns Promise which resolves to a buffer with response body.
@@ -145,20 +145,16 @@ object httpresponseMod {
   }
   object RemoteAddress {
     
-    @scala.inline
-    def apply(ip: String, port: Double): RemoteAddress = {
+    inline def apply(ip: String, port: Double): RemoteAddress = {
       val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoteAddress]
     }
     
-    @scala.inline
-    implicit class RemoteAddressMutableBuilder[Self <: RemoteAddress] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteAddress](x: Self) {
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

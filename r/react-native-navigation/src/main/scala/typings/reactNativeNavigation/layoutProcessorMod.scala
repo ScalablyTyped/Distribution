@@ -14,7 +14,7 @@ object layoutProcessorMod {
   class LayoutProcessor protected () extends StObject {
     def this(layoutProcessorsStore: LayoutProcessorsStore) = this()
     
-    var layoutProcessorsStore: js.Any = js.native
+    /* private */ var layoutProcessorsStore: js.Any = js.native
     
     def process(layout: Layout[js.Object], commandName: CommandName): Layout[js.Object] = js.native
   }

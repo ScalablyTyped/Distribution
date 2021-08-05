@@ -14,18 +14,15 @@ object idle {
   @JSImport("sinon-chrome", "idle.onStateChanged")
   @js.native
   def onStateChanged: Event = js.native
-  @scala.inline
-  def onStateChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStateChanged")(x.asInstanceOf[js.Any])
+  inline def onStateChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStateChanged")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "idle.queryState")
   @js.native
   def queryState: SinonChromeStub = js.native
-  @scala.inline
-  def queryState_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryState")(x.asInstanceOf[js.Any])
+  inline def queryState_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryState")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "idle.setDetectionInterval")
   @js.native
   def setDetectionInterval: SinonChromeStub = js.native
-  @scala.inline
-  def setDetectionInterval_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setDetectionInterval")(x.asInstanceOf[js.Any])
+  inline def setDetectionInterval_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setDetectionInterval")(x.asInstanceOf[js.Any])
 }

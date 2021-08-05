@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SecurityResourceType extends StObject
 object SecurityResourceType {
   
-  @scala.inline
-  def attacked: typings.microsoftGraph.microsoftGraphStrings.attacked = "attacked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.attacked]
+  inline def attacked: typings.microsoftGraph.microsoftGraphStrings.attacked = "attacked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.attacked]
   
-  @scala.inline
-  def related: typings.microsoftGraph.microsoftGraphStrings.related = "related".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.related]
+  inline def related: typings.microsoftGraph.microsoftGraphStrings.related = "related".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.related]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

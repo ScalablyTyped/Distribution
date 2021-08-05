@@ -35,8 +35,7 @@ trait ResultTableCollection
 }
 object ResultTableCollection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -58,34 +57,24 @@ object ResultTableCollection {
     __obj.asInstanceOf[ResultTableCollection]
   }
   
-  @scala.inline
-  implicit class ResultTableCollectionMutableBuilder[Self <: ResultTableCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ResultTableCollection](x: Self) {
     
-    @scala.inline
-    def setGet_elapsedTime(value: () => Double): Self = StObject.set(x, "get_elapsedTime", js.Any.fromFunction0(value))
+    inline def setGet_elapsedTime(value: () => Double): Self = StObject.set(x, "get_elapsedTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_item(value: Double => ResultTable): Self = StObject.set(x, "get_item", js.Any.fromFunction1(value))
+    inline def setGet_item(value: Double => ResultTable): Self = StObject.set(x, "get_item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet_properties(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
+    inline def setGet_properties(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_properties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryErrors(value: () => StringDictionary[ControlMessage]): Self = StObject.set(x, "get_queryErrors", js.Any.fromFunction0(value))
+    inline def setGet_queryErrors(value: () => StringDictionary[ControlMessage]): Self = StObject.set(x, "get_queryErrors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryId(value: () => String): Self = StObject.set(x, "get_queryId", js.Any.fromFunction0(value))
+    inline def setGet_queryId(value: () => String): Self = StObject.set(x, "get_queryId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_spellingSuggestion(value: () => String): Self = StObject.set(x, "get_spellingSuggestion", js.Any.fromFunction0(value))
+    inline def setGet_spellingSuggestion(value: () => String): Self = StObject.set(x, "get_spellingSuggestion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_triggeredRules(value: () => js.Array[Guid]): Self = StObject.set(x, "get_triggeredRules", js.Any.fromFunction0(value))
+    inline def setGet_triggeredRules(value: () => js.Array[Guid]): Self = StObject.set(x, "get_triggeredRules", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitPropertiesFromJson(value: js.Any => Unit): Self = StObject.set(x, "initPropertiesFromJson", js.Any.fromFunction1(value))
+    inline def setInitPropertiesFromJson(value: js.Any => Unit): Self = StObject.set(x, "initPropertiesFromJson", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_elapsedTime(value: Double => Unit): Self = StObject.set(x, "set_elapsedTime", js.Any.fromFunction1(value))
+    inline def setSet_elapsedTime(value: Double => Unit): Self = StObject.set(x, "set_elapsedTime", js.Any.fromFunction1(value))
   }
 }

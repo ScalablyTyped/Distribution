@@ -28,7 +28,7 @@ trait AddressEntries extends StObject {
   
   def Item(Index: js.Any): AddressEntry = js.native
   
-  @JSName("Outlook.AddressEntries_typekey")
+  /* private */ @JSName("Outlook.AddressEntries_typekey")
   var OutlookDotAddressEntries_typekey: AddressEntries = js.native
   
   val Parent: js.Any = js.native

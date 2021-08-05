@@ -21,28 +21,21 @@ trait ObjectDisplayOptions extends StObject {
 }
 object ObjectDisplayOptions {
   
-  @scala.inline
-  def apply(): ObjectDisplayOptions = {
+  inline def apply(): ObjectDisplayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectDisplayOptions]
   }
   
-  @scala.inline
-  implicit class ObjectDisplayOptionsMutableBuilder[Self <: ObjectDisplayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectDisplayOptions](x: Self) {
     
-    @scala.inline
-    def setMetalines(value: js.Array[Metaline]): Self = StObject.set(x, "metalines", value.asInstanceOf[js.Any])
+    inline def setMetalines(value: js.Array[Metaline]): Self = StObject.set(x, "metalines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
+    inline def setMetalinesUndefined: Self = StObject.set(x, "metalines", js.undefined)
     
-    @scala.inline
-    def setMetalinesVarargs(value: Metaline*): Self = StObject.set(x, "metalines", js.Array(value :_*))
+    inline def setMetalinesVarargs(value: Metaline*): Self = StObject.set(x, "metalines", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectDisplayLabel(value: String): Self = StObject.set(x, "objectDisplayLabel", value.asInstanceOf[js.Any])
+    inline def setObjectDisplayLabel(value: String): Self = StObject.set(x, "objectDisplayLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectDisplayLabelUndefined: Self = StObject.set(x, "objectDisplayLabel", js.undefined)
+    inline def setObjectDisplayLabelUndefined: Self = StObject.set(x, "objectDisplayLabel", js.undefined)
   }
 }

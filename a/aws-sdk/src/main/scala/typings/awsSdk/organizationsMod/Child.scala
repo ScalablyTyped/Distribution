@@ -18,25 +18,19 @@ trait Child extends StObject {
 }
 object Child {
   
-  @scala.inline
-  def apply(): Child = {
+  inline def apply(): Child = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Child]
   }
   
-  @scala.inline
-  implicit class ChildMutableBuilder[Self <: Child] (val x: Self) extends AnyVal {
+  extension [Self <: Child](x: Self) {
     
-    @scala.inline
-    def setId(value: ChildId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ChildId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setType(value: ChildType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChildType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

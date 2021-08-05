@@ -59,8 +59,7 @@ trait TQueries extends StObject {
 }
 object TQueries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elementEnd: TNode => Unit,
     elementStart: (TView, TNode) => Unit,
     embeddedTView: TNode => TQueries | Null,
@@ -73,28 +72,20 @@ object TQueries {
     __obj.asInstanceOf[TQueries]
   }
   
-  @scala.inline
-  implicit class TQueriesMutableBuilder[Self <: TQueries] (val x: Self) extends AnyVal {
+  extension [Self <: TQueries](x: Self) {
     
-    @scala.inline
-    def setElementEnd(value: TNode => Unit): Self = StObject.set(x, "elementEnd", js.Any.fromFunction1(value))
+    inline def setElementEnd(value: TNode => Unit): Self = StObject.set(x, "elementEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementStart(value: (TView, TNode) => Unit): Self = StObject.set(x, "elementStart", js.Any.fromFunction2(value))
+    inline def setElementStart(value: (TView, TNode) => Unit): Self = StObject.set(x, "elementStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmbeddedTView(value: TNode => TQueries | Null): Self = StObject.set(x, "embeddedTView", js.Any.fromFunction1(value))
+    inline def setEmbeddedTView(value: TNode => TQueries | Null): Self = StObject.set(x, "embeddedTView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetByIndex(value: Double => TQuery): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
+    inline def setGetByIndex(value: Double => TQuery): Self = StObject.set(x, "getByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: (TView, TNode) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplate(value: (TView, TNode) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTrack(value: TQuery => Unit): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
+    inline def setTrack(value: TQuery => Unit): Self = StObject.set(x, "track", js.Any.fromFunction1(value))
   }
 }

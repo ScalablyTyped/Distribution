@@ -23,28 +23,21 @@ trait InviteUsersRequest extends StObject {
 }
 object InviteUsersRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, UserEmailList: UserEmailList): InviteUsersRequest = {
+  inline def apply(AccountId: NonEmptyString, UserEmailList: UserEmailList): InviteUsersRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserEmailList = UserEmailList.asInstanceOf[js.Any])
     __obj.asInstanceOf[InviteUsersRequest]
   }
   
-  @scala.inline
-  implicit class InviteUsersRequestMutableBuilder[Self <: InviteUsersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InviteUsersRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEmailList(value: UserEmailList): Self = StObject.set(x, "UserEmailList", value.asInstanceOf[js.Any])
+    inline def setUserEmailList(value: UserEmailList): Self = StObject.set(x, "UserEmailList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEmailListVarargs(value: EmailAddress*): Self = StObject.set(x, "UserEmailList", js.Array(value :_*))
+    inline def setUserEmailListVarargs(value: EmailAddress*): Self = StObject.set(x, "UserEmailList", js.Array(value :_*))
     
-    @scala.inline
-    def setUserType(value: UserType): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
+    inline def setUserType(value: UserType): Self = StObject.set(x, "UserType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
+    inline def setUserTypeUndefined: Self = StObject.set(x, "UserType", js.undefined)
   }
 }

@@ -46,8 +46,7 @@ trait TableListViewModel extends StObject {
 }
 object TableListViewModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     listItemCreatedFunction: /* event */ js.Any => Unit,
     map: WebMap,
     state: loading | ready | disabled,
@@ -57,19 +56,14 @@ object TableListViewModel {
     __obj.asInstanceOf[TableListViewModel]
   }
   
-  @scala.inline
-  implicit class TableListViewModelMutableBuilder[Self <: TableListViewModel] (val x: Self) extends AnyVal {
+  extension [Self <: TableListViewModel](x: Self) {
     
-    @scala.inline
-    def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMap(value: WebMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: WebMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: loading | ready | disabled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: loading | ready | disabled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableItems(value: Collection[TableListListItem]): Self = StObject.set(x, "tableItems", value.asInstanceOf[js.Any])
+    inline def setTableItems(value: Collection[TableListListItem]): Self = StObject.set(x, "tableItems", value.asInstanceOf[js.Any])
   }
 }

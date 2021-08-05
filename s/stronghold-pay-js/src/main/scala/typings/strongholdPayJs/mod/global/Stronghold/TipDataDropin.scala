@@ -18,25 +18,19 @@ trait TipDataDropin extends StObject {
 }
 object TipDataDropin {
   
-  @scala.inline
-  def apply(amount: Double, beneficiaryName: String): TipDataDropin = {
+  inline def apply(amount: Double, beneficiaryName: String): TipDataDropin = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], beneficiaryName = beneficiaryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TipDataDropin]
   }
   
-  @scala.inline
-  implicit class TipDataDropinMutableBuilder[Self <: TipDataDropin] (val x: Self) extends AnyVal {
+  extension [Self <: TipDataDropin](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeneficiaryName(value: String): Self = StObject.set(x, "beneficiaryName", value.asInstanceOf[js.Any])
+    inline def setBeneficiaryName(value: String): Self = StObject.set(x, "beneficiaryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: DisplayMessage_): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: DisplayMessage_): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
   }
 }

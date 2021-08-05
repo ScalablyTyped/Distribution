@@ -11,22 +11,17 @@ trait ThetaProperty extends StObject {
 }
 object ThetaProperty {
   
-  @scala.inline
-  def apply(): ThetaProperty = {
+  inline def apply(): ThetaProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThetaProperty]
   }
   
-  @scala.inline
-  implicit class ThetaPropertyMutableBuilder[Self <: ThetaProperty] (val x: Self) extends AnyVal {
+  extension [Self <: ThetaProperty](x: Self) {
     
-    @scala.inline
-    def setTheta(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+    inline def setTheta(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
+    inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
-    @scala.inline
-    def setThetaVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "theta", js.Array(value :_*))
+    inline def setThetaVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "theta", js.Array(value :_*))
   }
 }

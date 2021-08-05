@@ -25,8 +25,7 @@ trait BufferScanResult extends StObject {
 }
 object BufferScanResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buffer: TextBuffer,
     lineText: String,
     `match`: RegExpExecArray,
@@ -41,31 +40,22 @@ object BufferScanResult {
     __obj.asInstanceOf[BufferScanResult]
   }
   
-  @scala.inline
-  implicit class BufferScanResultMutableBuilder[Self <: BufferScanResult] (val x: Self) extends AnyVal {
+  extension [Self <: BufferScanResult](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: TextBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: TextBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineText(value: String): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
+    inline def setLineText(value: String): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: RegExpExecArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: RegExpExecArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchText(value: String): Self = StObject.set(x, "matchText", value.asInstanceOf[js.Any])
+    inline def setMatchText(value: String): Self = StObject.set(x, "matchText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+    inline def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
   }
 }

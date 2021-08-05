@@ -18,19 +18,15 @@ trait RdsParameters extends StObject {
 }
 object RdsParameters {
   
-  @scala.inline
-  def apply(Database: Database, InstanceId: InstanceId): RdsParameters = {
+  inline def apply(Database: Database, InstanceId: InstanceId): RdsParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RdsParameters]
   }
   
-  @scala.inline
-  implicit class RdsParametersMutableBuilder[Self <: RdsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RdsParameters](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

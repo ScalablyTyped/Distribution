@@ -20,7 +20,7 @@ object presignerMod {
        with RequestPresigner {
     def this(options: S3RequestPresignerOptions) = this()
     
-    val signer: js.Any = js.native
+    /* private */ val signer: js.Any = js.native
   }
   
   /**
@@ -50,56 +50,40 @@ object presignerMod {
   }
   object S3RequestPresignerOptions {
     
-    @scala.inline
-    def apply(credentials: Credentials | Provider[Credentials], region: String | Provider[String]): S3RequestPresignerOptions = {
+    inline def apply(credentials: Credentials | Provider[Credentials], region: String | Provider[String]): S3RequestPresignerOptions = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3RequestPresignerOptions]
     }
     
-    @scala.inline
-    implicit class S3RequestPresignerOptionsMutableBuilder[Self <: S3RequestPresignerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3RequestPresignerOptions](x: Self) {
       
-      @scala.inline
-      def setApplyChecksum(value: Boolean): Self = StObject.set(x, "applyChecksum", value.asInstanceOf[js.Any])
+      inline def setApplyChecksum(value: Boolean): Self = StObject.set(x, "applyChecksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyChecksumUndefined: Self = StObject.set(x, "applyChecksum", js.undefined)
+      inline def setApplyChecksumUndefined: Self = StObject.set(x, "applyChecksum", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
+      inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
-      @scala.inline
-      def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
+      inline def setSigningName(value: String): Self = StObject.set(x, "signingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
+      inline def setSigningNameUndefined: Self = StObject.set(x, "signingName", js.undefined)
       
-      @scala.inline
-      def setUriEscapePath(value: Boolean): Self = StObject.set(x, "uriEscapePath", value.asInstanceOf[js.Any])
+      inline def setUriEscapePath(value: Boolean): Self = StObject.set(x, "uriEscapePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriEscapePathUndefined: Self = StObject.set(x, "uriEscapePath", js.undefined)
+      inline def setUriEscapePathUndefined: Self = StObject.set(x, "uriEscapePath", js.undefined)
     }
   }
 }

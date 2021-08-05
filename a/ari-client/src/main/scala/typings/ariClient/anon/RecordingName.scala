@@ -10,16 +10,13 @@ trait RecordingName extends StObject {
 }
 object RecordingName {
   
-  @scala.inline
-  def apply(recordingName: String): RecordingName = {
+  inline def apply(recordingName: String): RecordingName = {
     val __obj = js.Dynamic.literal(recordingName = recordingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordingName]
   }
   
-  @scala.inline
-  implicit class RecordingNameMutableBuilder[Self <: RecordingName] (val x: Self) extends AnyVal {
+  extension [Self <: RecordingName](x: Self) {
     
-    @scala.inline
-    def setRecordingName(value: String): Self = StObject.set(x, "recordingName", value.asInstanceOf[js.Any])
+    inline def setRecordingName(value: String): Self = StObject.set(x, "recordingName", value.asInstanceOf[js.Any])
   }
 }

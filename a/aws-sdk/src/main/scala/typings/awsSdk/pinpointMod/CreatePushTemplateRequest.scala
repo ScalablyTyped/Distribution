@@ -15,19 +15,15 @@ trait CreatePushTemplateRequest extends StObject {
 }
 object CreatePushTemplateRequest {
   
-  @scala.inline
-  def apply(PushNotificationTemplateRequest: PushNotificationTemplateRequest, TemplateName: string): CreatePushTemplateRequest = {
+  inline def apply(PushNotificationTemplateRequest: PushNotificationTemplateRequest, TemplateName: string): CreatePushTemplateRequest = {
     val __obj = js.Dynamic.literal(PushNotificationTemplateRequest = PushNotificationTemplateRequest.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePushTemplateRequest]
   }
   
-  @scala.inline
-  implicit class CreatePushTemplateRequestMutableBuilder[Self <: CreatePushTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePushTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setPushNotificationTemplateRequest(value: PushNotificationTemplateRequest): Self = StObject.set(x, "PushNotificationTemplateRequest", value.asInstanceOf[js.Any])
+    inline def setPushNotificationTemplateRequest(value: PushNotificationTemplateRequest): Self = StObject.set(x, "PushNotificationTemplateRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

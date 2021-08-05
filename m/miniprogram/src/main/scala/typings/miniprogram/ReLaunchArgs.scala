@@ -19,16 +19,13 @@ trait ReLaunchArgs
 }
 object ReLaunchArgs {
   
-  @scala.inline
-  def apply(url: String): ReLaunchArgs = {
+  inline def apply(url: String): ReLaunchArgs = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReLaunchArgs]
   }
   
-  @scala.inline
-  implicit class ReLaunchArgsMutableBuilder[Self <: ReLaunchArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ReLaunchArgs](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

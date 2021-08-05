@@ -14,25 +14,19 @@ trait LicenseCodeLicenseAlias extends StObject {
 }
 object LicenseCodeLicenseAlias {
   
-  @scala.inline
-  def apply(): LicenseCodeLicenseAlias = {
+  inline def apply(): LicenseCodeLicenseAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LicenseCodeLicenseAlias]
   }
   
-  @scala.inline
-  implicit class LicenseCodeLicenseAliasMutableBuilder[Self <: LicenseCodeLicenseAlias] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseCodeLicenseAlias](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

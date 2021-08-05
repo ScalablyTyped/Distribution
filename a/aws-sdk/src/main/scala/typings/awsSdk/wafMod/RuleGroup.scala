@@ -23,28 +23,21 @@ trait RuleGroup extends StObject {
 }
 object RuleGroup {
   
-  @scala.inline
-  def apply(RuleGroupId: ResourceId): RuleGroup = {
+  inline def apply(RuleGroupId: ResourceId): RuleGroup = {
     val __obj = js.Dynamic.literal(RuleGroupId = RuleGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroup]
   }
   
-  @scala.inline
-  implicit class RuleGroupMutableBuilder[Self <: RuleGroup] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroup](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRuleGroupId(value: ResourceId): Self = StObject.set(x, "RuleGroupId", value.asInstanceOf[js.Any])
+    inline def setRuleGroupId(value: ResourceId): Self = StObject.set(x, "RuleGroupId", value.asInstanceOf[js.Any])
   }
 }

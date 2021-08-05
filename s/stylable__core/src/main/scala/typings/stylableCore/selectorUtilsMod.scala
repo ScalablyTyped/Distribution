@@ -18,14 +18,11 @@ object selectorUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createChecker(types: js.Array[String | js.Array[String]]): js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChecker")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]]]
+  inline def createChecker(types: js.Array[String | js.Array[String]]): js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChecker")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]]]
   
-  @scala.inline
-  def createSimpleSelectorChecker(): js.Function1[/* node */ SelectorAstNode, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleSelectorChecker")().asInstanceOf[js.Function1[/* node */ SelectorAstNode, Boolean]]
+  inline def createSimpleSelectorChecker(): js.Function1[/* node */ SelectorAstNode, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleSelectorChecker")().asInstanceOf[js.Function1[/* node */ SelectorAstNode, Boolean]]
   
-  @scala.inline
-  def createWarningRule(
+  inline def createWarningRule(
     extendedNode: String,
     scopedExtendedNode: String,
     extendedFile: String,
@@ -33,8 +30,7 @@ object selectorUtilsMod {
     scopedExtendingNode: String,
     extendingFile: String
   ): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarningRule")(extendedNode.asInstanceOf[js.Any], scopedExtendedNode.asInstanceOf[js.Any], extendedFile.asInstanceOf[js.Any], extendingNode.asInstanceOf[js.Any], scopedExtendingNode.asInstanceOf[js.Any], extendingFile.asInstanceOf[js.Any])).asInstanceOf[Rule_]
-  @scala.inline
-  def createWarningRule(
+  inline def createWarningRule(
     extendedNode: String,
     scopedExtendedNode: String,
     extendedFile: String,
@@ -44,68 +40,46 @@ object selectorUtilsMod {
     useScoped: Boolean
   ): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarningRule")(extendedNode.asInstanceOf[js.Any], scopedExtendedNode.asInstanceOf[js.Any], extendedFile.asInstanceOf[js.Any], extendingNode.asInstanceOf[js.Any], scopedExtendingNode.asInstanceOf[js.Any], extendingFile.asInstanceOf[js.Any], useScoped.asInstanceOf[js.Any])).asInstanceOf[Rule_]
   
-  @scala.inline
-  def filterChunkNodesByType(chunk: SelectorChunk, typeOptions: js.Array[String]): js.Array[PartialSelectorAstNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterChunkNodesByType")(chunk.asInstanceOf[js.Any], typeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[PartialSelectorAstNode]]
+  inline def filterChunkNodesByType(chunk: SelectorChunk, typeOptions: js.Array[String]): js.Array[PartialSelectorAstNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterChunkNodesByType")(chunk.asInstanceOf[js.Any], typeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[PartialSelectorAstNode]]
   
-  @scala.inline
-  def fixChunkOrdering(selectorNode: SelectorAstNode, prefixType: SelectorAstNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixChunkOrdering")(selectorNode.asInstanceOf[js.Any], prefixType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fixChunkOrdering(selectorNode: SelectorAstNode, prefixType: SelectorAstNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixChunkOrdering")(selectorNode.asInstanceOf[js.Any], prefixType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getOriginDefinition(resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): CSSResolve[ClassSymbol | ElementSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginDefinition")(resolved.asInstanceOf[js.Any]).asInstanceOf[CSSResolve[ClassSymbol | ElementSymbol]]
+  inline def getOriginDefinition(resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): CSSResolve[ClassSymbol | ElementSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginDefinition")(resolved.asInstanceOf[js.Any]).asInstanceOf[CSSResolve[ClassSymbol | ElementSymbol]]
   
-  @scala.inline
-  def isChildOfAtRule(rule: Container, atRuleName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isChildOfAtRule")(rule.asInstanceOf[js.Any], atRuleName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isChildOfAtRule(rule: Container, atRuleName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isChildOfAtRule")(rule.asInstanceOf[js.Any], atRuleName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isCompRoot(name: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompRoot")(name.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
+  inline def isCompRoot(name: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompRoot")(name.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @scala.inline
-  def isGlobal(node: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGlobal")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isGlobal(node: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGlobal")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isImport(ast: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImport")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isImport(ast: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImport")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNodeMatch(nodeA: PartialSelectorAstNode, nodeB: PartialSelectorAstNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeMatch")(nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isNodeMatch(nodeA: PartialSelectorAstNode, nodeB: PartialSelectorAstNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeMatch")(nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isRootValid(ast: SelectorAstNode, rootName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRootValid")(ast.asInstanceOf[js.Any], rootName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isRootValid(ast: SelectorAstNode, rootName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRootValid")(ast.asInstanceOf[js.Any], rootName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSimpleSelector(selectorAst: SelectorAstNode): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSimpleSelector")(selectorAst.asInstanceOf[js.Any]).asInstanceOf[Boolean | Unit]
+  inline def isSimpleSelector(selectorAst: SelectorAstNode): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSimpleSelector")(selectorAst.asInstanceOf[js.Any]).asInstanceOf[Boolean | Unit]
   
-  @scala.inline
-  def matchAtKeyframes(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtKeyframes")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
+  inline def matchAtKeyframes(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtKeyframes")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @scala.inline
-  def matchAtMedia(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtMedia")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
+  inline def matchAtMedia(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtMedia")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @scala.inline
-  def matchSelectorTarget(sourceSelector: String, targetSelector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSelectorTarget")(sourceSelector.asInstanceOf[js.Any], targetSelector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchSelectorTarget(sourceSelector: String, targetSelector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSelectorTarget")(sourceSelector.asInstanceOf[js.Any], targetSelector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def mergeChunks(chunks: js.Array[js.Array[SelectorChunk2]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def mergeChunks(chunks: js.Array[js.Array[SelectorChunk2]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseSelector(selector: String): SelectorAstNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[SelectorAstNode]
+  inline def parseSelector(selector: String): SelectorAstNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[SelectorAstNode]
   
-  @scala.inline
-  def separateChunks(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk]]]
+  inline def separateChunks(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk]]]
   
-  @scala.inline
-  def separateChunks2(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks2")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk2]]]
+  inline def separateChunks2(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks2")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk2]]]
   
-  @scala.inline
-  def stringifySelector(ast: SelectorAstNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelector")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifySelector(ast: SelectorAstNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelector")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def traverseNode(node: SelectorAstNode, visitor: Visitor): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
-  @scala.inline
-  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
-  @scala.inline
-  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
-  @scala.inline
-  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Unit, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  inline def traverseNode(node: SelectorAstNode, visitor: Visitor): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  inline def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  inline def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  inline def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Unit, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
   
   trait PseudoSelectorAstNode
     extends StObject
@@ -119,21 +93,17 @@ object selectorUtilsMod {
   }
   object PseudoSelectorAstNode {
     
-    @scala.inline
-    def apply(content: String, name: String, nodes: js.Array[SelectorAstNode]): PseudoSelectorAstNode = {
+    inline def apply(content: String, name: String, nodes: js.Array[SelectorAstNode]): PseudoSelectorAstNode = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("pseudo-class")
       __obj.asInstanceOf[PseudoSelectorAstNode]
     }
     
-    @scala.inline
-    implicit class PseudoSelectorAstNodeMutableBuilder[Self <: PseudoSelectorAstNode] (val x: Self) extends AnyVal {
+    extension [Self <: PseudoSelectorAstNode](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: `pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `pseudo-class`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,51 +125,37 @@ object selectorUtilsMod {
   }
   object SelectorAstNode {
     
-    @scala.inline
-    def apply(name: String, nodes: js.Array[SelectorAstNode], `type`: String): SelectorAstNode = {
+    inline def apply(name: String, nodes: js.Array[SelectorAstNode], `type`: String): SelectorAstNode = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectorAstNode]
     }
     
-    @scala.inline
-    implicit class SelectorAstNodeMutableBuilder[Self <: SelectorAstNode] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorAstNode](x: Self) {
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[SelectorAstNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[SelectorAstNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: SelectorAstNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: SelectorAstNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -215,36 +171,27 @@ object selectorUtilsMod {
   }
   object SelectorChunk {
     
-    @scala.inline
-    def apply(nodes: js.Array[PartialSelectorAstNode], `type`: String): SelectorChunk = {
+    inline def apply(nodes: js.Array[PartialSelectorAstNode], `type`: String): SelectorChunk = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectorChunk]
     }
     
-    @scala.inline
-    implicit class SelectorChunkMutableBuilder[Self <: SelectorChunk] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorChunk](x: Self) {
       
-      @scala.inline
-      def setNodes(value: js.Array[PartialSelectorAstNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[PartialSelectorAstNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: PartialSelectorAstNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: PartialSelectorAstNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -262,42 +209,31 @@ object selectorUtilsMod {
   }
   object SelectorChunk2 {
     
-    @scala.inline
-    def apply(nodes: js.Array[SelectorAstNode], `type`: String): SelectorChunk2 = {
+    inline def apply(nodes: js.Array[SelectorAstNode], `type`: String): SelectorChunk2 = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectorChunk2]
     }
     
-    @scala.inline
-    implicit class SelectorChunk2MutableBuilder[Self <: SelectorChunk2] (val x: Self) extends AnyVal {
+    extension [Self <: SelectorChunk2](x: Self) {
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setNodes(value: js.Array[SelectorAstNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[SelectorAstNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: SelectorAstNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: SelectorAstNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

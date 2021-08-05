@@ -13,17 +13,14 @@ trait NullableLiteral
 }
 object NullableLiteral {
   
-  @scala.inline
-  def apply(): NullableLiteral = {
+  inline def apply(): NullableLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NullableLiteral")
     __obj.asInstanceOf[NullableLiteral]
   }
   
-  @scala.inline
-  implicit class NullableLiteralMutableBuilder[Self <: NullableLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: NullableLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.NullableLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.NullableLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

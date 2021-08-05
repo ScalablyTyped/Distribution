@@ -26,19 +26,15 @@ trait BulkWriterOptions extends StObject {
 }
 object BulkWriterOptions {
   
-  @scala.inline
-  def apply(): BulkWriterOptions = {
+  inline def apply(): BulkWriterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkWriterOptions]
   }
   
-  @scala.inline
-  implicit class BulkWriterOptionsMutableBuilder[Self <: BulkWriterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BulkWriterOptions](x: Self) {
     
-    @scala.inline
-    def setThrottling(value: Boolean | InitialOpsPerSecond): Self = StObject.set(x, "throttling", value.asInstanceOf[js.Any])
+    inline def setThrottling(value: Boolean | InitialOpsPerSecond): Self = StObject.set(x, "throttling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottlingUndefined: Self = StObject.set(x, "throttling", js.undefined)
+    inline def setThrottlingUndefined: Self = StObject.set(x, "throttling", js.undefined)
   }
 }

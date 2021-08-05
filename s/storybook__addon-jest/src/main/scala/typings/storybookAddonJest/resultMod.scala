@@ -11,11 +11,9 @@ object resultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: ResultProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: ResultProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def Result(props: ResultProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Result")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Result(props: ResultProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Result")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ResultProps extends StObject {
     
@@ -29,32 +27,24 @@ object resultMod {
   }
   object ResultProps {
     
-    @scala.inline
-    def apply(failureMessages: js.Any, status: String): ResultProps = {
+    inline def apply(failureMessages: js.Any, status: String): ResultProps = {
       val __obj = js.Dynamic.literal(failureMessages = failureMessages.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultProps]
     }
     
-    @scala.inline
-    implicit class ResultPropsMutableBuilder[Self <: ResultProps] (val x: Self) extends AnyVal {
+    extension [Self <: ResultProps](x: Self) {
       
-      @scala.inline
-      def setFailureMessages(value: js.Any): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
+      inline def setFailureMessages(value: js.Any): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+      inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
+      inline def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

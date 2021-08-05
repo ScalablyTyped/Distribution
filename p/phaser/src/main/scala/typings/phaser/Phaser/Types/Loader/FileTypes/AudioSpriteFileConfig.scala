@@ -39,43 +39,31 @@ trait AudioSpriteFileConfig extends StObject {
 }
 object AudioSpriteFileConfig {
   
-  @scala.inline
-  def apply(jsonURL: String, key: String): AudioSpriteFileConfig = {
+  inline def apply(jsonURL: String, key: String): AudioSpriteFileConfig = {
     val __obj = js.Dynamic.literal(jsonURL = jsonURL.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioSpriteFileConfig]
   }
   
-  @scala.inline
-  implicit class AudioSpriteFileConfigMutableBuilder[Self <: AudioSpriteFileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AudioSpriteFileConfig](x: Self) {
     
-    @scala.inline
-    def setAudioConfig(value: js.Any): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
+    inline def setAudioConfig(value: js.Any): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
+    inline def setAudioConfigUndefined: Self = StObject.set(x, "audioConfig", js.undefined)
     
-    @scala.inline
-    def setAudioURL(value: js.Object): Self = StObject.set(x, "audioURL", value.asInstanceOf[js.Any])
+    inline def setAudioURL(value: js.Object): Self = StObject.set(x, "audioURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioURLUndefined: Self = StObject.set(x, "audioURL", js.undefined)
+    inline def setAudioURLUndefined: Self = StObject.set(x, "audioURL", js.undefined)
     
-    @scala.inline
-    def setAudioXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "audioXhrSettings", value.asInstanceOf[js.Any])
+    inline def setAudioXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "audioXhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioXhrSettingsUndefined: Self = StObject.set(x, "audioXhrSettings", js.undefined)
+    inline def setAudioXhrSettingsUndefined: Self = StObject.set(x, "audioXhrSettings", js.undefined)
     
-    @scala.inline
-    def setJsonURL(value: String): Self = StObject.set(x, "jsonURL", value.asInstanceOf[js.Any])
+    inline def setJsonURL(value: String): Self = StObject.set(x, "jsonURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "jsonXhrSettings", value.asInstanceOf[js.Any])
+    inline def setJsonXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "jsonXhrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonXhrSettingsUndefined: Self = StObject.set(x, "jsonXhrSettings", js.undefined)
+    inline def setJsonXhrSettingsUndefined: Self = StObject.set(x, "jsonXhrSettings", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

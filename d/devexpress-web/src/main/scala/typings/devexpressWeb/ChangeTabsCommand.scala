@@ -22,19 +22,15 @@ trait ChangeTabsCommand extends StObject {
 }
 object ChangeTabsCommand {
   
-  @scala.inline
-  def apply(execute: TabsSettings => Boolean, getState: () => CommandState[TabsSettings]): ChangeTabsCommand = {
+  inline def apply(execute: TabsSettings => Boolean, getState: () => CommandState[TabsSettings]): ChangeTabsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTabsCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTabsCommandMutableBuilder[Self <: ChangeTabsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTabsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: TabsSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: TabsSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TabsSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TabsSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

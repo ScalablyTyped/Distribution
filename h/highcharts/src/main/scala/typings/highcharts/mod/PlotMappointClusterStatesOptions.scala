@@ -10,19 +10,15 @@ trait PlotMappointClusterStatesOptions extends StObject {
 }
 object PlotMappointClusterStatesOptions {
   
-  @scala.inline
-  def apply(): PlotMappointClusterStatesOptions = {
+  inline def apply(): PlotMappointClusterStatesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotMappointClusterStatesOptions]
   }
   
-  @scala.inline
-  implicit class PlotMappointClusterStatesOptionsMutableBuilder[Self <: PlotMappointClusterStatesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotMappointClusterStatesOptions](x: Self) {
     
-    @scala.inline
-    def setHover(value: PlotMappointClusterStatesHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: PlotMappointClusterStatesHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
   }
 }

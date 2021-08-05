@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(input: js.Any, options: Unit, pad: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(input: js.Any, options: Filter): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(input: js.Any, options: Filter, pad: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(input: js.Any, options: Unit, pad: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: js.Any, options: Filter): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: js.Any, options: Filter, pad: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("stringify-object", JSImport.Namespace)
   @js.native

@@ -23,10 +23,8 @@ object mod {
   	//=> 'https://custom-registry.com/'
   	```
   	*/
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(scope: String): String = ^.asInstanceOf[js.Dynamic].apply(scope.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(scope: String): String = ^.asInstanceOf[js.Dynamic].apply(scope.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("registry-url", JSImport.Namespace)
   @js.native
@@ -51,10 +49,8 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function registryUrl(scope?: string): string;
   // export = registryUrl;
-  @scala.inline
-  def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
-  @scala.inline
-  def default(scope: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(scope: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function registryUrl(scope?: string): string;
   // export = registryUrl;
@@ -62,6 +58,5 @@ object mod {
   @js.native
   def default_Fmod: Call = js.native
   
-  @scala.inline
-  def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

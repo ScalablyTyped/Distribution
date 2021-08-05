@@ -18,22 +18,17 @@ trait SchemaCommentThreadReplies extends StObject {
 }
 object SchemaCommentThreadReplies {
   
-  @scala.inline
-  def apply(): SchemaCommentThreadReplies = {
+  inline def apply(): SchemaCommentThreadReplies = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommentThreadReplies]
   }
   
-  @scala.inline
-  implicit class SchemaCommentThreadRepliesMutableBuilder[Self <: SchemaCommentThreadReplies] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommentThreadReplies](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[SchemaComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[SchemaComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: SchemaComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: SchemaComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
   }
 }

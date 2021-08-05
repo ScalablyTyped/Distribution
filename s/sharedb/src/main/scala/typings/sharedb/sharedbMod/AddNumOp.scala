@@ -14,22 +14,17 @@ trait AddNumOp
 }
 object AddNumOp {
   
-  @scala.inline
-  def apply(na: Double, p: Path): AddNumOp = {
+  inline def apply(na: Double, p: Path): AddNumOp = {
     val __obj = js.Dynamic.literal(na = na.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddNumOp]
   }
   
-  @scala.inline
-  implicit class AddNumOpMutableBuilder[Self <: AddNumOp] (val x: Self) extends AnyVal {
+  extension [Self <: AddNumOp](x: Self) {
     
-    @scala.inline
-    def setNa(value: Double): Self = StObject.set(x, "na", value.asInstanceOf[js.Any])
+    inline def setNa(value: Double): Self = StObject.set(x, "na", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
   }
 }

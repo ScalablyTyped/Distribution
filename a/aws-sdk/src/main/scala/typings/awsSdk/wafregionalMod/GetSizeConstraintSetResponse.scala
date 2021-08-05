@@ -13,19 +13,15 @@ trait GetSizeConstraintSetResponse extends StObject {
 }
 object GetSizeConstraintSetResponse {
   
-  @scala.inline
-  def apply(): GetSizeConstraintSetResponse = {
+  inline def apply(): GetSizeConstraintSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSizeConstraintSetResponse]
   }
   
-  @scala.inline
-  implicit class GetSizeConstraintSetResponseMutableBuilder[Self <: GetSizeConstraintSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSizeConstraintSetResponse](x: Self) {
     
-    @scala.inline
-    def setSizeConstraintSet(value: SizeConstraintSet): Self = StObject.set(x, "SizeConstraintSet", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSet(value: SizeConstraintSet): Self = StObject.set(x, "SizeConstraintSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintSetUndefined: Self = StObject.set(x, "SizeConstraintSet", js.undefined)
+    inline def setSizeConstraintSetUndefined: Self = StObject.set(x, "SizeConstraintSet", js.undefined)
   }
 }

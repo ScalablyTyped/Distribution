@@ -13,22 +13,17 @@ trait DescribeEmergencyContactSettingsResponse extends StObject {
 }
 object DescribeEmergencyContactSettingsResponse {
   
-  @scala.inline
-  def apply(): DescribeEmergencyContactSettingsResponse = {
+  inline def apply(): DescribeEmergencyContactSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEmergencyContactSettingsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeEmergencyContactSettingsResponseMutableBuilder[Self <: DescribeEmergencyContactSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEmergencyContactSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setEmergencyContactList(value: EmergencyContactList): Self = StObject.set(x, "EmergencyContactList", value.asInstanceOf[js.Any])
+    inline def setEmergencyContactList(value: EmergencyContactList): Self = StObject.set(x, "EmergencyContactList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmergencyContactListUndefined: Self = StObject.set(x, "EmergencyContactList", js.undefined)
+    inline def setEmergencyContactListUndefined: Self = StObject.set(x, "EmergencyContactList", js.undefined)
     
-    @scala.inline
-    def setEmergencyContactListVarargs(value: EmergencyContact*): Self = StObject.set(x, "EmergencyContactList", js.Array(value :_*))
+    inline def setEmergencyContactListVarargs(value: EmergencyContact*): Self = StObject.set(x, "EmergencyContactList", js.Array(value :_*))
   }
 }

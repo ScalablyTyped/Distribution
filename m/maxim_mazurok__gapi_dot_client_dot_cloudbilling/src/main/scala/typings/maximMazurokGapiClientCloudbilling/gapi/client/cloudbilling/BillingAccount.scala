@@ -29,37 +29,27 @@ trait BillingAccount extends StObject {
 }
 object BillingAccount {
   
-  @scala.inline
-  def apply(): BillingAccount = {
+  inline def apply(): BillingAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingAccount]
   }
   
-  @scala.inline
-  implicit class BillingAccountMutableBuilder[Self <: BillingAccount] (val x: Self) extends AnyVal {
+  extension [Self <: BillingAccount](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMasterBillingAccount(value: String): Self = StObject.set(x, "masterBillingAccount", value.asInstanceOf[js.Any])
+    inline def setMasterBillingAccount(value: String): Self = StObject.set(x, "masterBillingAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterBillingAccountUndefined: Self = StObject.set(x, "masterBillingAccount", js.undefined)
+    inline def setMasterBillingAccountUndefined: Self = StObject.set(x, "masterBillingAccount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

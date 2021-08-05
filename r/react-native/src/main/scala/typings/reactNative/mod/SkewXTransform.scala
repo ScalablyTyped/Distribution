@@ -10,16 +10,13 @@ trait SkewXTransform extends StObject {
 }
 object SkewXTransform {
   
-  @scala.inline
-  def apply(skewX: String): SkewXTransform = {
+  inline def apply(skewX: String): SkewXTransform = {
     val __obj = js.Dynamic.literal(skewX = skewX.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkewXTransform]
   }
   
-  @scala.inline
-  implicit class SkewXTransformMutableBuilder[Self <: SkewXTransform] (val x: Self) extends AnyVal {
+  extension [Self <: SkewXTransform](x: Self) {
     
-    @scala.inline
-    def setSkewX(value: String): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+    inline def setSkewX(value: String): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
   }
 }

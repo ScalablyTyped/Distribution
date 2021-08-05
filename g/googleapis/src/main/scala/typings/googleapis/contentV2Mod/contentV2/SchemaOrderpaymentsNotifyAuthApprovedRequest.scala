@@ -18,25 +18,19 @@ trait SchemaOrderpaymentsNotifyAuthApprovedRequest extends StObject {
 }
 object SchemaOrderpaymentsNotifyAuthApprovedRequest {
   
-  @scala.inline
-  def apply(): SchemaOrderpaymentsNotifyAuthApprovedRequest = {
+  inline def apply(): SchemaOrderpaymentsNotifyAuthApprovedRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderpaymentsNotifyAuthApprovedRequest]
   }
   
-  @scala.inline
-  implicit class SchemaOrderpaymentsNotifyAuthApprovedRequestMutableBuilder[Self <: SchemaOrderpaymentsNotifyAuthApprovedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderpaymentsNotifyAuthApprovedRequest](x: Self) {
     
-    @scala.inline
-    def setAuthAmountPretax(value: SchemaPrice): Self = StObject.set(x, "authAmountPretax", value.asInstanceOf[js.Any])
+    inline def setAuthAmountPretax(value: SchemaPrice): Self = StObject.set(x, "authAmountPretax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthAmountPretaxUndefined: Self = StObject.set(x, "authAmountPretax", js.undefined)
+    inline def setAuthAmountPretaxUndefined: Self = StObject.set(x, "authAmountPretax", js.undefined)
     
-    @scala.inline
-    def setAuthAmountTax(value: SchemaPrice): Self = StObject.set(x, "authAmountTax", value.asInstanceOf[js.Any])
+    inline def setAuthAmountTax(value: SchemaPrice): Self = StObject.set(x, "authAmountTax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthAmountTaxUndefined: Self = StObject.set(x, "authAmountTax", js.undefined)
+    inline def setAuthAmountTaxUndefined: Self = StObject.set(x, "authAmountTax", js.undefined)
   }
 }

@@ -13,14 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineHeight extends StObject
 object LineHeight {
   
-  @scala.inline
-  def `0`(): typings.figma.anon.`0` = {
+  inline def `0`(): typings.figma.anon.`0` = {
     val __obj = js.Dynamic.literal(unit = "AUTO")
     __obj.asInstanceOf[typings.figma.anon.`0`]
   }
   
-  @scala.inline
-  def Unit(unit: PIXELS | PERCENT, value: Double): typings.figma.anon.Unit = {
+  inline def Unit(unit: PIXELS | PERCENT, value: Double): typings.figma.anon.Unit = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.figma.anon.Unit]
   }

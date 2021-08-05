@@ -306,71 +306,50 @@ object paramsInterfaceMod {
   }
   object ParamDeclaration {
     
-    @scala.inline
-    def apply(): ParamDeclaration = {
+    inline def apply(): ParamDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParamDeclaration]
     }
     
-    @scala.inline
-    implicit class ParamDeclarationMutableBuilder[Self <: ParamDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: ParamDeclaration](x: Self) {
       
-      @scala.inline
-      def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+      inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
-      @scala.inline
-      def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+      inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
+      inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
       
-      @scala.inline
-      def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+      inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+      inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
       
-      @scala.inline
-      def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
+      inline def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
+      inline def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setReplace(value: js.Array[Replace]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: js.Array[Replace]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setReplaceVarargs(value: Replace*): Self = StObject.set(x, "replace", js.Array(value :_*))
+      inline def setReplaceVarargs(value: Replace*): Self = StObject.set(x, "replace", js.Array(value :_*))
       
-      @scala.inline
-      def setSquash(value: Boolean | String): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
+      inline def setSquash(value: Boolean | String): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
+      inline def setSquashUndefined: Self = StObject.set(x, "squash", js.undefined)
       
-      @scala.inline
-      def setType(value: String | ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -550,20 +529,16 @@ object paramsInterfaceMod {
   }
   object Replace {
     
-    @scala.inline
-    def apply(from: String, to: String): Replace = {
+    inline def apply(from: String, to: String): Replace = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Replace]
     }
     
-    @scala.inline
-    implicit class ReplaceMutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
+    extension [Self <: Replace](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

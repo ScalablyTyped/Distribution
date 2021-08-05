@@ -13,28 +13,21 @@ trait MatchingShares extends StObject {
 }
 object MatchingShares {
   
-  @scala.inline
-  def apply(): MatchingShares = {
+  inline def apply(): MatchingShares = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchingShares]
   }
   
-  @scala.inline
-  implicit class MatchingSharesMutableBuilder[Self <: MatchingShares] (val x: Self) extends AnyVal {
+  extension [Self <: MatchingShares](x: Self) {
     
-    @scala.inline
-    def setMatchingShares(value: js.Array[SharedNotebook]): Self = StObject.set(x, "matchingShares", value.asInstanceOf[js.Any])
+    inline def setMatchingShares(value: js.Array[SharedNotebook]): Self = StObject.set(x, "matchingShares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingSharesUndefined: Self = StObject.set(x, "matchingShares", js.undefined)
+    inline def setMatchingSharesUndefined: Self = StObject.set(x, "matchingShares", js.undefined)
     
-    @scala.inline
-    def setMatchingSharesVarargs(value: SharedNotebook*): Self = StObject.set(x, "matchingShares", js.Array(value :_*))
+    inline def setMatchingSharesVarargs(value: SharedNotebook*): Self = StObject.set(x, "matchingShares", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
+    inline def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
+    inline def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
   }
 }

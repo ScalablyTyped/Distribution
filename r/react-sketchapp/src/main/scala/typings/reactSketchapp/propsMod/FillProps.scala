@@ -16,31 +16,23 @@ trait FillProps extends StObject {
 }
 object FillProps {
   
-  @scala.inline
-  def apply(): FillProps = {
+  inline def apply(): FillProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillProps]
   }
   
-  @scala.inline
-  implicit class FillPropsMutableBuilder[Self <: FillProps] (val x: Self) extends AnyVal {
+  extension [Self <: FillProps](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacity(value: NumberProp): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: NumberProp): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    @scala.inline
-    def setFillRule(value: evenodd | nonzero): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    inline def setFillRule(value: evenodd | nonzero): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
+    inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

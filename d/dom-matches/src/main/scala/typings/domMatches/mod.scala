@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(element: Null, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(element: Unit, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(element: Null, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(element: Unit, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("dom-matches", JSImport.Namespace)
   @js.native

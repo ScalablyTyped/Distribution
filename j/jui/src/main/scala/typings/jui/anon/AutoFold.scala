@@ -29,43 +29,31 @@ trait AutoFold extends StObject {
 }
 object AutoFold {
   
-  @scala.inline
-  def apply(): AutoFold = {
+  inline def apply(): AutoFold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoFold]
   }
   
-  @scala.inline
-  implicit class AutoFoldMutableBuilder[Self <: AutoFold] (val x: Self) extends AnyVal {
+  extension [Self <: AutoFold](x: Self) {
     
-    @scala.inline
-    def setAutoFold(value: Boolean): Self = StObject.set(x, "autoFold", value.asInstanceOf[js.Any])
+    inline def setAutoFold(value: Boolean): Self = StObject.set(x, "autoFold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFoldUndefined: Self = StObject.set(x, "autoFold", js.undefined)
+    inline def setAutoFoldUndefined: Self = StObject.set(x, "autoFold", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setMultipanel(value: Boolean): Self = StObject.set(x, "multipanel", value.asInstanceOf[js.Any])
+    inline def setMultipanel(value: Boolean): Self = StObject.set(x, "multipanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipanelUndefined: Self = StObject.set(x, "multipanel", js.undefined)
+    inline def setMultipanelUndefined: Self = StObject.set(x, "multipanel", js.undefined)
     
-    @scala.inline
-    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

@@ -22,9 +22,9 @@ object usageStrategyMod {
       * Checks whether a given query is used statically within the given class, its super
       * class or derived classes.
       */
-    var analyzeQueryUsage: js.Any = js.native
+    /* private */ var analyzeQueryUsage: js.Any = js.native
     
-    var classMetadata: js.Any = js.native
+    /* private */ var classMetadata: js.Any = js.native
     
     /** Detects the timing result for a given query. */
     /* CompleteClass */
@@ -34,6 +34,6 @@ object usageStrategyMod {
     /* CompleteClass */
     override def setup(): Unit = js.native
     
-    var typeChecker: js.Any = js.native
+    /* private */ var typeChecker: js.Any = js.native
   }
 }

@@ -30,26 +30,20 @@ trait FederatedCredential
 }
 object FederatedCredential {
   
-  @scala.inline
-  def apply(id: String, provider: String): FederatedCredential = {
+  inline def apply(id: String, provider: String): FederatedCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], iconURL = null, name = null, protocol = null)
     __obj.updateDynamic("type")("federated")
     __obj.asInstanceOf[FederatedCredential]
   }
   
-  @scala.inline
-  implicit class FederatedCredentialMutableBuilder[Self <: FederatedCredential] (val x: Self) extends AnyVal {
+  extension [Self <: FederatedCredential](x: Self) {
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolNull: Self = StObject.set(x, "protocol", null)
+    inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: federated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: federated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

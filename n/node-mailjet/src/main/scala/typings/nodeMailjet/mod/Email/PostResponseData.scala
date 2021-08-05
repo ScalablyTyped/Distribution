@@ -10,19 +10,15 @@ trait PostResponseData extends StObject {
 }
 object PostResponseData {
   
-  @scala.inline
-  def apply(Messages: js.Array[PostResponseDataMessage]): PostResponseData = {
+  inline def apply(Messages: js.Array[PostResponseDataMessage]): PostResponseData = {
     val __obj = js.Dynamic.literal(Messages = Messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostResponseData]
   }
   
-  @scala.inline
-  implicit class PostResponseDataMutableBuilder[Self <: PostResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: PostResponseData](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[PostResponseDataMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[PostResponseDataMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: PostResponseDataMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: PostResponseDataMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
   }
 }

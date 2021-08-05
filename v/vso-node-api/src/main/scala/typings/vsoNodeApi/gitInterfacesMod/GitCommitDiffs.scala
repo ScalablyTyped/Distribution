@@ -25,8 +25,7 @@ trait GitCommitDiffs extends StObject {
 }
 object GitCommitDiffs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aheadCount: Double,
     allChangesIncluded: Boolean,
     baseCommit: String,
@@ -40,34 +39,24 @@ object GitCommitDiffs {
     __obj.asInstanceOf[GitCommitDiffs]
   }
   
-  @scala.inline
-  implicit class GitCommitDiffsMutableBuilder[Self <: GitCommitDiffs] (val x: Self) extends AnyVal {
+  extension [Self <: GitCommitDiffs](x: Self) {
     
-    @scala.inline
-    def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
+    inline def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])
+    inline def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseCommit(value: String): Self = StObject.set(x, "baseCommit", value.asInstanceOf[js.Any])
+    inline def setBaseCommit(value: String): Self = StObject.set(x, "baseCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehindCount(value: Double): Self = StObject.set(x, "behindCount", value.asInstanceOf[js.Any])
+    inline def setBehindCount(value: Double): Self = StObject.set(x, "behindCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeCounts(value: NumberDictionary[Double]): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
+    inline def setChangeCounts(value: NumberDictionary[Double]): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
-    @scala.inline
-    def setCommonCommit(value: String): Self = StObject.set(x, "commonCommit", value.asInstanceOf[js.Any])
+    inline def setCommonCommit(value: String): Self = StObject.set(x, "commonCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCommit(value: String): Self = StObject.set(x, "targetCommit", value.asInstanceOf[js.Any])
+    inline def setTargetCommit(value: String): Self = StObject.set(x, "targetCommit", value.asInstanceOf[js.Any])
   }
 }

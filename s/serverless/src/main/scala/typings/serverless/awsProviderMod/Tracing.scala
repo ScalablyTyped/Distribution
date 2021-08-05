@@ -12,22 +12,17 @@ trait Tracing extends StObject {
 }
 object Tracing {
   
-  @scala.inline
-  def apply(apiGateway: Boolean): Tracing = {
+  inline def apply(apiGateway: Boolean): Tracing = {
     val __obj = js.Dynamic.literal(apiGateway = apiGateway.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tracing]
   }
   
-  @scala.inline
-  implicit class TracingMutableBuilder[Self <: Tracing] (val x: Self) extends AnyVal {
+  extension [Self <: Tracing](x: Self) {
     
-    @scala.inline
-    def setApiGateway(value: Boolean): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
+    inline def setApiGateway(value: Boolean): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambda(value: Boolean): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    inline def setLambda(value: Boolean): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+    inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
   }
 }

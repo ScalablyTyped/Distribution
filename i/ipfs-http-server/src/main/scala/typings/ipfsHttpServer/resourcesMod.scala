@@ -199,14 +199,12 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "dns.options")
     @js.native
     def options: Validate = js.native
-    @scala.inline
-    def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    inline def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
   object files {
@@ -218,68 +216,57 @@ object resourcesMod {
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.chmod")
     @js.native
     def chmod: Handler = js.native
-    @scala.inline
-    def chmod_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chmod")(x.asInstanceOf[js.Any])
+    inline def chmod_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chmod")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.cp")
     @js.native
     def cp: Handler = js.native
-    @scala.inline
-    def cp_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cp")(x.asInstanceOf[js.Any])
+    inline def cp_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cp")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.flush")
     @js.native
     def flush: Handler = js.native
-    @scala.inline
-    def flush_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flush")(x.asInstanceOf[js.Any])
+    inline def flush_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flush")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.ls")
     @js.native
     def ls: Handler = js.native
-    @scala.inline
-    def ls_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ls")(x.asInstanceOf[js.Any])
+    inline def ls_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ls")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.mkdir")
     @js.native
     def mkdir: Handler = js.native
-    @scala.inline
-    def mkdir_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mkdir")(x.asInstanceOf[js.Any])
+    inline def mkdir_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mkdir")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.mv")
     @js.native
     def mv: Handler = js.native
-    @scala.inline
-    def mv_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mv")(x.asInstanceOf[js.Any])
+    inline def mv_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mv")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.read")
     @js.native
     def read: Handler = js.native
-    @scala.inline
-    def read_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("read")(x.asInstanceOf[js.Any])
+    inline def read_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("read")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.rm")
     @js.native
     def rm: Handler = js.native
-    @scala.inline
-    def rm_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rm")(x.asInstanceOf[js.Any])
+    inline def rm_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rm")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.stat")
     @js.native
     def stat: Handler = js.native
-    @scala.inline
-    def stat_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stat")(x.asInstanceOf[js.Any])
+    inline def stat_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stat")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.touch")
     @js.native
     def touch: Handler = js.native
-    @scala.inline
-    def touch_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touch")(x.asInstanceOf[js.Any])
+    inline def touch_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touch")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "files.write")
     @js.native
     def write: HandlerOptions = js.native
-    @scala.inline
-    def write_=(x: HandlerOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("write")(x.asInstanceOf[js.Any])
+    inline def write_=(x: HandlerOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("write")(x.asInstanceOf[js.Any])
   }
   
   object filesRegular {
@@ -315,14 +302,12 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "id.options")
     @js.native
     def options: Validate = js.native
-    @scala.inline
-    def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    inline def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
   object key {
@@ -435,14 +420,12 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "ping.options")
     @js.native
     def options: Validate = js.native
-    @scala.inline
-    def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    inline def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
   object pubsub {
@@ -485,14 +468,12 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "resolve.options")
     @js.native
     def options: Validate = js.native
-    @scala.inline
-    def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    inline def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
   object shutdown {
@@ -501,8 +482,7 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def handler(_request: js.Any, h: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def handler(_request: js.Any, h: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object stats {
@@ -514,8 +494,7 @@ object resourcesMod {
     @JSImport("ipfs-http-server/dist/src/api/resources", "stats.bitswap")
     @js.native
     def bitswap: Handler = js.native
-    @scala.inline
-    def bitswap_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitswap")(x.asInstanceOf[js.Any])
+    inline def bitswap_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitswap")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "stats.bw")
     @js.native
@@ -524,8 +503,7 @@ object resourcesMod {
     @JSImport("ipfs-http-server/dist/src/api/resources", "stats.repo")
     @js.native
     def repo: Handler = js.native
-    @scala.inline
-    def repo_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("repo")(x.asInstanceOf[js.Any])
+    inline def repo_=(x: Handler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("repo")(x.asInstanceOf[js.Any])
   }
   
   object swarm {
@@ -557,13 +535,11 @@ object resourcesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def handler(request: js.Any, h: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     @JSImport("ipfs-http-server/dist/src/api/resources", "version.options")
     @js.native
     def options: Validate = js.native
-    @scala.inline
-    def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    inline def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
 }

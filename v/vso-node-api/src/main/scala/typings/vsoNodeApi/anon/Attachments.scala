@@ -16,25 +16,19 @@ trait Attachments extends StObject {
 }
 object Attachments {
   
-  @scala.inline
-  def apply(attachments: scala.Double, custom: scala.Double, history: scala.Double, links: scala.Double): Attachments = {
+  inline def apply(attachments: scala.Double, custom: scala.Double, history: scala.Double, links: scala.Double): Attachments = {
     val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachments]
   }
   
-  @scala.inline
-  implicit class AttachmentsMutableBuilder[Self <: Attachments] (val x: Self) extends AnyVal {
+  extension [Self <: Attachments](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: scala.Double): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: scala.Double): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistory(value: scala.Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: scala.Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: scala.Double): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: scala.Double): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
   }
 }

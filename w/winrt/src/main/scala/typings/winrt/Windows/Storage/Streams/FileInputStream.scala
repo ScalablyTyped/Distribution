@@ -13,8 +13,7 @@ trait FileInputStream
 }
 object FileInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     dispose: () => Unit,
     readAsync: (IBuffer, Double, InputStreamOptions) => IAsyncOperationWithProgress[IBuffer, Double]
@@ -23,10 +22,8 @@ object FileInputStream {
     __obj.asInstanceOf[FileInputStream]
   }
   
-  @scala.inline
-  implicit class FileInputStreamMutableBuilder[Self <: FileInputStream] (val x: Self) extends AnyVal {
+  extension [Self <: FileInputStream](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

@@ -22,8 +22,7 @@ object rectMod {
       * @param {number} height 高度
       * @return {object} 包围盒
       */
-    @scala.inline
-    def box(x: Double, y: Double, width: Double, height: Double): BBox = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[BBox]
+    inline def box(x: Double, y: Double, width: Double, height: Double): BBox = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[BBox]
     
     /**
       * 长度，矩形不需要传入 x, y 即可计算周长，但是避免出错
@@ -32,8 +31,7 @@ object rectMod {
       * @param {number} width  宽
       * @param {number} height 高
       */
-    @scala.inline
-    def length(x: Double, y: Double, width: Double, height: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def length(x: Double, y: Double, width: Double, height: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("length")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * 按照比例计算对应的点
@@ -44,8 +42,7 @@ object rectMod {
       * @param {number} t 比例 0-1 之间的值
       * @return {object} 计算出来的点信息，包含 x,y
       */
-    @scala.inline
-    def pointAt(x: Double, y: Double, width: Double, height: Double, t: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def pointAt(x: Double, y: Double, width: Double, height: Double, t: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point]
     
     /**
       * 点到矩形的最小距离
@@ -57,8 +54,7 @@ object rectMod {
       * @param {number} y0     指定点的 y
       * @return {number} 最短距离
       */
-    @scala.inline
-    def pointDistance(x: Double, y: Double, width: Double, height: Double, x0: Double, y0: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointDistance")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def pointDistance(x: Double, y: Double, width: Double, height: Double, x0: Double, y0: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pointDistance")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * 获取对应点的切线角度
@@ -69,7 +65,6 @@ object rectMod {
       * @param {number} t 比例 0-1 之间的值
       * @return {number} 切线的角度
       */
-    @scala.inline
-    def tangentAngle(x: Double, y: Double, width: Double, height: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentAngle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def tangentAngle(x: Double, y: Double, width: Double, height: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentAngle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

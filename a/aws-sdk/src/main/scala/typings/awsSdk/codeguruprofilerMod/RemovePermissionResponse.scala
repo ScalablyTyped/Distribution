@@ -18,19 +18,15 @@ trait RemovePermissionResponse extends StObject {
 }
 object RemovePermissionResponse {
   
-  @scala.inline
-  def apply(policy: String, revisionId: RevisionId): RemovePermissionResponse = {
+  inline def apply(policy: String, revisionId: RevisionId): RemovePermissionResponse = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovePermissionResponse]
   }
   
-  @scala.inline
-  implicit class RemovePermissionResponseMutableBuilder[Self <: RemovePermissionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePermissionResponse](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
   }
 }

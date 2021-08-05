@@ -80,98 +80,69 @@ trait IonVirtualScroll extends StObject {
 }
 object IonVirtualScroll {
   
-  @scala.inline
-  def apply(): IonVirtualScroll = {
+  inline def apply(): IonVirtualScroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonVirtualScroll]
   }
   
-  @scala.inline
-  implicit class IonVirtualScrollMutableBuilder[Self <: IonVirtualScroll] (val x: Self) extends AnyVal {
+  extension [Self <: IonVirtualScroll](x: Self) {
     
-    @scala.inline
-    def setApproxFooterHeight(value: Double): Self = StObject.set(x, "approxFooterHeight", value.asInstanceOf[js.Any])
+    inline def setApproxFooterHeight(value: Double): Self = StObject.set(x, "approxFooterHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproxFooterHeightUndefined: Self = StObject.set(x, "approxFooterHeight", js.undefined)
+    inline def setApproxFooterHeightUndefined: Self = StObject.set(x, "approxFooterHeight", js.undefined)
     
-    @scala.inline
-    def setApproxHeaderHeight(value: Double): Self = StObject.set(x, "approxHeaderHeight", value.asInstanceOf[js.Any])
+    inline def setApproxHeaderHeight(value: Double): Self = StObject.set(x, "approxHeaderHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproxHeaderHeightUndefined: Self = StObject.set(x, "approxHeaderHeight", js.undefined)
+    inline def setApproxHeaderHeightUndefined: Self = StObject.set(x, "approxHeaderHeight", js.undefined)
     
-    @scala.inline
-    def setApproxItemHeight(value: Double): Self = StObject.set(x, "approxItemHeight", value.asInstanceOf[js.Any])
+    inline def setApproxItemHeight(value: Double): Self = StObject.set(x, "approxItemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproxItemHeightUndefined: Self = StObject.set(x, "approxItemHeight", js.undefined)
+    inline def setApproxItemHeightUndefined: Self = StObject.set(x, "approxItemHeight", js.undefined)
     
-    @scala.inline
-    def setFooterFn(
+    inline def setFooterFn(
       value: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => js.UndefOr[String | Null]
     ): Self = StObject.set(x, "footerFn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFooterFnUndefined: Self = StObject.set(x, "footerFn", js.undefined)
+    inline def setFooterFnUndefined: Self = StObject.set(x, "footerFn", js.undefined)
     
-    @scala.inline
-    def setFooterHeight(value: (/* item */ js.Any, /* index */ Double) => Double): Self = StObject.set(x, "footerHeight", js.Any.fromFunction2(value))
+    inline def setFooterHeight(value: (/* item */ js.Any, /* index */ Double) => Double): Self = StObject.set(x, "footerHeight", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFooterHeightUndefined: Self = StObject.set(x, "footerHeight", js.undefined)
+    inline def setFooterHeightUndefined: Self = StObject.set(x, "footerHeight", js.undefined)
     
-    @scala.inline
-    def setHeaderFn(
+    inline def setHeaderFn(
       value: (/* item */ js.Any, /* index */ Double, /* items */ js.Array[js.Any]) => js.UndefOr[String | Null]
     ): Self = StObject.set(x, "headerFn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHeaderFnUndefined: Self = StObject.set(x, "headerFn", js.undefined)
+    inline def setHeaderFnUndefined: Self = StObject.set(x, "headerFn", js.undefined)
     
-    @scala.inline
-    def setHeaderHeight(value: (/* item */ js.Any, /* index */ Double) => Double): Self = StObject.set(x, "headerHeight", js.Any.fromFunction2(value))
+    inline def setHeaderHeight(value: (/* item */ js.Any, /* index */ Double) => Double): Self = StObject.set(x, "headerHeight", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
+    inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
     
-    @scala.inline
-    def setItemHeight(value: (/* item */ js.Any, /* index */ Double) => Double): Self = StObject.set(x, "itemHeight", js.Any.fromFunction2(value))
+    inline def setItemHeight(value: (/* item */ js.Any, /* index */ Double) => Double): Self = StObject.set(x, "itemHeight", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+    inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeRender(value: (/* el */ HTMLElement | Null, /* cell */ Cell, /* domIndex */ Double) => HTMLElement): Self = StObject.set(x, "nodeRender", js.Any.fromFunction3(value))
+    inline def setNodeRender(value: (/* el */ HTMLElement | Null, /* cell */ Cell, /* domIndex */ Double) => HTMLElement): Self = StObject.set(x, "nodeRender", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNodeRenderUndefined: Self = StObject.set(x, "nodeRender", js.undefined)
+    inline def setNodeRenderUndefined: Self = StObject.set(x, "nodeRender", js.undefined)
     
-    @scala.inline
-    def setRenderFooter(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderFooter", js.Any.fromFunction2(value))
+    inline def setRenderFooter(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderFooter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
+    inline def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
     
-    @scala.inline
-    def setRenderHeader(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderHeader", js.Any.fromFunction2(value))
+    inline def setRenderHeader(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
+    inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     
-    @scala.inline
-    def setRenderItem(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
+    inline def setRenderItem(value: (/* item */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
+    inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
   }
 }

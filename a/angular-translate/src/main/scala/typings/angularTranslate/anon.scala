@@ -14,20 +14,16 @@ object anon {
   }
   object Files {
     
-    @scala.inline
-    def apply(files: js.Array[IStaticFilesLoaderOptions]): Files = {
+    inline def apply(files: js.Array[IStaticFilesLoaderOptions]): Files = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[Files]
     }
     
-    @scala.inline
-    implicit class FilesMutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
+    extension [Self <: Files](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[IStaticFilesLoaderOptions]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[IStaticFilesLoaderOptions]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: IStaticFilesLoaderOptions*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: IStaticFilesLoaderOptions*): Self = StObject.set(x, "files", js.Array(value :_*))
     }
   }
   

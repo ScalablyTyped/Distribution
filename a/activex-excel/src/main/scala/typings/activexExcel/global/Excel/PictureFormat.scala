@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PictureFormat")
 @js.native
-class PictureFormat protected ()
+/* private */ class PictureFormat ()
   extends StObject
      with typings.activexExcel.Excel.PictureFormat {
   
@@ -43,7 +43,7 @@ class PictureFormat protected ()
   /* CompleteClass */
   var CropTop: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PictureFormat_typekey")
   var ExcelDotPictureFormat_typekey: typings.activexExcel.Excel.PictureFormat = js.native
   

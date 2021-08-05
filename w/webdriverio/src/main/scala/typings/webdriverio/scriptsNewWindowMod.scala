@@ -10,6 +10,5 @@ object scriptsNewWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(url: String, windowName: String, windowFeatures: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], windowName.asInstanceOf[js.Any], windowFeatures.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(url: String, windowName: String, windowFeatures: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], windowName.asInstanceOf[js.Any], windowFeatures.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

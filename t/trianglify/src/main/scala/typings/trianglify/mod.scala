@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Pattern = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Pattern]
-  @scala.inline
-  def apply(opts: Options): Pattern = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Pattern]
+  inline def apply(): Pattern = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Pattern]
+  inline def apply(opts: Options): Pattern = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Pattern]
   
   @JSImport("trianglify", JSImport.Namespace)
   @js.native
@@ -59,95 +57,66 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCell_size(value: Double): Self = StObject.set(x, "cell_size", value.asInstanceOf[js.Any])
+        inline def setCell_size(value: Double): Self = StObject.set(x, "cell_size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCell_sizeUndefined: Self = StObject.set(x, "cell_size", js.undefined)
+        inline def setCell_sizeUndefined: Self = StObject.set(x, "cell_size", js.undefined)
         
-        @scala.inline
-        def setColor_function(value: (/* x */ Double, /* y */ Double) => String): Self = StObject.set(x, "color_function", js.Any.fromFunction2(value))
+        inline def setColor_function(value: (/* x */ Double, /* y */ Double) => String): Self = StObject.set(x, "color_function", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setColor_functionNull: Self = StObject.set(x, "color_function", null)
+        inline def setColor_functionNull: Self = StObject.set(x, "color_function", null)
         
-        @scala.inline
-        def setColor_functionUndefined: Self = StObject.set(x, "color_function", js.undefined)
+        inline def setColor_functionUndefined: Self = StObject.set(x, "color_function", js.undefined)
         
-        @scala.inline
-        def setColor_space(value: String): Self = StObject.set(x, "color_space", value.asInstanceOf[js.Any])
+        inline def setColor_space(value: String): Self = StObject.set(x, "color_space", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColor_spaceUndefined: Self = StObject.set(x, "color_space", js.undefined)
+        inline def setColor_spaceUndefined: Self = StObject.set(x, "color_space", js.undefined)
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+        inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+        inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
         
-        @scala.inline
-        def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+        inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
         
-        @scala.inline
-        def setSeed(value: Double | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+        inline def setSeed(value: Double | String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeedNull: Self = StObject.set(x, "seed", null)
+        inline def setSeedNull: Self = StObject.set(x, "seed", null)
         
-        @scala.inline
-        def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+        inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
         
-        @scala.inline
-        def setStroke_width(value: Double): Self = StObject.set(x, "stroke_width", value.asInstanceOf[js.Any])
+        inline def setStroke_width(value: Double): Self = StObject.set(x, "stroke_width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStroke_widthUndefined: Self = StObject.set(x, "stroke_width", js.undefined)
+        inline def setStroke_widthUndefined: Self = StObject.set(x, "stroke_width", js.undefined)
         
-        @scala.inline
-        def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+        inline def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+        inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         
-        @scala.inline
-        def setX_colors(value: `false` | String | js.Array[String]): Self = StObject.set(x, "x_colors", value.asInstanceOf[js.Any])
+        inline def setX_colors(value: `false` | String | js.Array[String]): Self = StObject.set(x, "x_colors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX_colorsUndefined: Self = StObject.set(x, "x_colors", js.undefined)
+        inline def setX_colorsUndefined: Self = StObject.set(x, "x_colors", js.undefined)
         
-        @scala.inline
-        def setX_colorsVarargs(value: String*): Self = StObject.set(x, "x_colors", js.Array(value :_*))
+        inline def setX_colorsVarargs(value: String*): Self = StObject.set(x, "x_colors", js.Array(value :_*))
         
-        @scala.inline
-        def setY_colors(value: `false` | String | js.Array[String]): Self = StObject.set(x, "y_colors", value.asInstanceOf[js.Any])
+        inline def setY_colors(value: `false` | String | js.Array[String]): Self = StObject.set(x, "y_colors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY_colorsUndefined: Self = StObject.set(x, "y_colors", js.undefined)
+        inline def setY_colorsUndefined: Self = StObject.set(x, "y_colors", js.undefined)
         
-        @scala.inline
-        def setY_colorsVarargs(value: String*): Self = StObject.set(x, "y_colors", js.Array(value :_*))
+        inline def setY_colorsVarargs(value: String*): Self = StObject.set(x, "y_colors", js.Array(value :_*))
       }
     }
     
@@ -173,17 +142,14 @@ object mod {
     }
     object SVGOptions {
       
-      @scala.inline
-      def apply(includeNamespace: Boolean): SVGOptions = {
+      inline def apply(includeNamespace: Boolean): SVGOptions = {
         val __obj = js.Dynamic.literal(includeNamespace = includeNamespace.asInstanceOf[js.Any])
         __obj.asInstanceOf[SVGOptions]
       }
       
-      @scala.inline
-      implicit class SVGOptionsMutableBuilder[Self <: SVGOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SVGOptions](x: Self) {
         
-        @scala.inline
-        def setIncludeNamespace(value: Boolean): Self = StObject.set(x, "includeNamespace", value.asInstanceOf[js.Any])
+        inline def setIncludeNamespace(value: Boolean): Self = StObject.set(x, "includeNamespace", value.asInstanceOf[js.Any])
       }
     }
   }

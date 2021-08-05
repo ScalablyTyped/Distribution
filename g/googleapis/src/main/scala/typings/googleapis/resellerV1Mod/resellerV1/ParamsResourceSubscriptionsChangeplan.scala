@@ -41,37 +41,27 @@ trait ParamsResourceSubscriptionsChangeplan
 }
 object ParamsResourceSubscriptionsChangeplan {
   
-  @scala.inline
-  def apply(): ParamsResourceSubscriptionsChangeplan = {
+  inline def apply(): ParamsResourceSubscriptionsChangeplan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSubscriptionsChangeplan]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSubscriptionsChangeplanMutableBuilder[Self <: ParamsResourceSubscriptionsChangeplan] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSubscriptionsChangeplan](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaChangePlanRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaChangePlanRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
+    inline def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionIdUndefined: Self = StObject.set(x, "subscriptionId", js.undefined)
+    inline def setSubscriptionIdUndefined: Self = StObject.set(x, "subscriptionId", js.undefined)
   }
 }

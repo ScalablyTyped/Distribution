@@ -12,19 +12,15 @@ trait Typeofpeers extends StObject {
 }
 object Typeofpeers {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: Typeofoptions): Typeofpeers = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: Typeofoptions): Typeofpeers = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofpeers]
   }
   
-  @scala.inline
-  implicit class TypeofpeersMutableBuilder[Self <: Typeofpeers] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofpeers](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: Typeofoptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Typeofoptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

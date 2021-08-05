@@ -49,8 +49,7 @@ trait XPageCursor
 }
 object XPageCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Page: Double,
     acquire: () => Unit,
     getPage: () => Double,
@@ -68,34 +67,24 @@ object XPageCursor {
     __obj.asInstanceOf[XPageCursor]
   }
   
-  @scala.inline
-  implicit class XPageCursorMutableBuilder[Self <: XPageCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XPageCursor](x: Self) {
     
-    @scala.inline
-    def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
+    inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpToEndOfPage(value: () => Boolean): Self = StObject.set(x, "jumpToEndOfPage", js.Any.fromFunction0(value))
+    inline def setJumpToEndOfPage(value: () => Boolean): Self = StObject.set(x, "jumpToEndOfPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpToFirstPage(value: () => Boolean): Self = StObject.set(x, "jumpToFirstPage", js.Any.fromFunction0(value))
+    inline def setJumpToFirstPage(value: () => Boolean): Self = StObject.set(x, "jumpToFirstPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpToLastPage(value: () => Boolean): Self = StObject.set(x, "jumpToLastPage", js.Any.fromFunction0(value))
+    inline def setJumpToLastPage(value: () => Boolean): Self = StObject.set(x, "jumpToLastPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpToNextPage(value: () => Boolean): Self = StObject.set(x, "jumpToNextPage", js.Any.fromFunction0(value))
+    inline def setJumpToNextPage(value: () => Boolean): Self = StObject.set(x, "jumpToNextPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpToPage(value: Double => Boolean): Self = StObject.set(x, "jumpToPage", js.Any.fromFunction1(value))
+    inline def setJumpToPage(value: Double => Boolean): Self = StObject.set(x, "jumpToPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJumpToPreviousPage(value: () => Boolean): Self = StObject.set(x, "jumpToPreviousPage", js.Any.fromFunction0(value))
+    inline def setJumpToPreviousPage(value: () => Boolean): Self = StObject.set(x, "jumpToPreviousPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpToStartOfPage(value: () => Boolean): Self = StObject.set(x, "jumpToStartOfPage", js.Any.fromFunction0(value))
+    inline def setJumpToStartOfPage(value: () => Boolean): Self = StObject.set(x, "jumpToStartOfPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait Scoped extends StObject {
 }
 object Scoped {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     scoped: () => IOptions,
     setLifetime: Lifetime => IOptions,
     singleton: () => IOptions,
@@ -29,19 +28,14 @@ object Scoped {
     __obj.asInstanceOf[Scoped]
   }
   
-  @scala.inline
-  implicit class ScopedMutableBuilder[Self <: Scoped] (val x: Self) extends AnyVal {
+  extension [Self <: Scoped](x: Self) {
     
-    @scala.inline
-    def setScoped(value: () => IOptions): Self = StObject.set(x, "scoped", js.Any.fromFunction0(value))
+    inline def setScoped(value: () => IOptions): Self = StObject.set(x, "scoped", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLifetime(value: Lifetime => IOptions): Self = StObject.set(x, "setLifetime", js.Any.fromFunction1(value))
+    inline def setSetLifetime(value: Lifetime => IOptions): Self = StObject.set(x, "setLifetime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSingleton(value: () => IOptions): Self = StObject.set(x, "singleton", js.Any.fromFunction0(value))
+    inline def setSingleton(value: () => IOptions): Self = StObject.set(x, "singleton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransient(value: () => IOptions): Self = StObject.set(x, "transient", js.Any.fromFunction0(value))
+    inline def setTransient(value: () => IOptions): Self = StObject.set(x, "transient", js.Any.fromFunction0(value))
   }
 }

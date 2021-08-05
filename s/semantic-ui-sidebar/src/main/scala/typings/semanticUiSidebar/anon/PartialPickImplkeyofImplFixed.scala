@@ -17,37 +17,27 @@ trait PartialPickImplkeyofImplFixed extends StObject {
 }
 object PartialPickImplkeyofImplFixed {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplFixed = {
+  inline def apply(): PartialPickImplkeyofImplFixed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplFixed]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplFixedMutableBuilder[Self <: PartialPickImplkeyofImplFixed] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplFixed](x: Self) {
     
-    @scala.inline
-    def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setOmitted(value: String): Self = StObject.set(x, "omitted", value.asInstanceOf[js.Any])
+    inline def setOmitted(value: String): Self = StObject.set(x, "omitted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmittedUndefined: Self = StObject.set(x, "omitted", js.undefined)
+    inline def setOmittedUndefined: Self = StObject.set(x, "omitted", js.undefined)
     
-    @scala.inline
-    def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+    inline def setPusher(value: String): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
+    inline def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)
     
-    @scala.inline
-    def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+    inline def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidebarUndefined: Self = StObject.set(x, "sidebar", js.undefined)
+    inline def setSidebarUndefined: Self = StObject.set(x, "sidebar", js.undefined)
   }
 }

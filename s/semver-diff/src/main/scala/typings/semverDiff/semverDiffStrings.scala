@@ -11,55 +11,47 @@ object semverDiffStrings {
   sealed trait build
     extends StObject
        with Result
-  @scala.inline
-  def build: build = "build".asInstanceOf[build]
+  inline def build: build = "build".asInstanceOf[build]
   
   @js.native
   sealed trait major
     extends StObject
        with Result
-  @scala.inline
-  def major: major = "major".asInstanceOf[major]
+  inline def major: major = "major".asInstanceOf[major]
   
   @js.native
   sealed trait minor
     extends StObject
        with Result
-  @scala.inline
-  def minor: minor = "minor".asInstanceOf[minor]
+  inline def minor: minor = "minor".asInstanceOf[minor]
   
   @js.native
   sealed trait patch
     extends StObject
        with Result
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
+  inline def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
   sealed trait premajor
     extends StObject
        with Result
-  @scala.inline
-  def premajor: premajor = "premajor".asInstanceOf[premajor]
+  inline def premajor: premajor = "premajor".asInstanceOf[premajor]
   
   @js.native
   sealed trait preminor
     extends StObject
        with Result
-  @scala.inline
-  def preminor: preminor = "preminor".asInstanceOf[preminor]
+  inline def preminor: preminor = "preminor".asInstanceOf[preminor]
   
   @js.native
   sealed trait prepatch
     extends StObject
        with Result
-  @scala.inline
-  def prepatch: prepatch = "prepatch".asInstanceOf[prepatch]
+  inline def prepatch: prepatch = "prepatch".asInstanceOf[prepatch]
   
   @js.native
   sealed trait prerelease
     extends StObject
        with Result
-  @scala.inline
-  def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
+  inline def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
 }

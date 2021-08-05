@@ -11,6 +11,5 @@ object useCardAnimationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): StackCardInterpolationProps = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StackCardInterpolationProps]
+  inline def default(): StackCardInterpolationProps = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StackCardInterpolationProps]
 }

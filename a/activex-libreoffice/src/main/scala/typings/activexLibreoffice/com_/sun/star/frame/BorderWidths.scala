@@ -21,25 +21,19 @@ trait BorderWidths extends StObject {
 }
 object BorderWidths {
   
-  @scala.inline
-  def apply(Bottom: Double, Left: Double, Right: Double, Top: Double): BorderWidths = {
+  inline def apply(Bottom: Double, Left: Double, Right: Double, Top: Double): BorderWidths = {
     val __obj = js.Dynamic.literal(Bottom = Bottom.asInstanceOf[js.Any], Left = Left.asInstanceOf[js.Any], Right = Right.asInstanceOf[js.Any], Top = Top.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderWidths]
   }
   
-  @scala.inline
-  implicit class BorderWidthsMutableBuilder[Self <: BorderWidths] (val x: Self) extends AnyVal {
+  extension [Self <: BorderWidths](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "Bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "Bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
   }
 }

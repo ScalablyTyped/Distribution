@@ -189,8 +189,6 @@ object core {
   @js.native
   val createViewChildren: MetadataFactory[Query] = js.native
   
-  @scala.inline
-  def parseSelectorToR3Selector(): R3CssSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectorToR3Selector")().asInstanceOf[R3CssSelectorList]
-  @scala.inline
-  def parseSelectorToR3Selector(selector: String): R3CssSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectorToR3Selector")(selector.asInstanceOf[js.Any]).asInstanceOf[R3CssSelectorList]
+  inline def parseSelectorToR3Selector(): R3CssSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectorToR3Selector")().asInstanceOf[R3CssSelectorList]
+  inline def parseSelectorToR3Selector(selector: String): R3CssSelectorList = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectorToR3Selector")(selector.asInstanceOf[js.Any]).asInstanceOf[R3CssSelectorList]
 }

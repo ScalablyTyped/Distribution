@@ -16,37 +16,27 @@ trait CapSegments extends StObject {
 }
 object CapSegments {
   
-  @scala.inline
-  def apply(): CapSegments = {
+  inline def apply(): CapSegments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapSegments]
   }
   
-  @scala.inline
-  implicit class CapSegmentsMutableBuilder[Self <: CapSegments] (val x: Self) extends AnyVal {
+  extension [Self <: CapSegments](x: Self) {
     
-    @scala.inline
-    def setCapSegments(value: Double): Self = StObject.set(x, "capSegments", value.asInstanceOf[js.Any])
+    inline def setCapSegments(value: Double): Self = StObject.set(x, "capSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapSegmentsUndefined: Self = StObject.set(x, "capSegments", js.undefined)
+    inline def setCapSegmentsUndefined: Self = StObject.set(x, "capSegments", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
+    inline def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightSegmentsUndefined: Self = StObject.set(x, "heightSegments", js.undefined)
+    inline def setHeightSegmentsUndefined: Self = StObject.set(x, "heightSegments", js.undefined)
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

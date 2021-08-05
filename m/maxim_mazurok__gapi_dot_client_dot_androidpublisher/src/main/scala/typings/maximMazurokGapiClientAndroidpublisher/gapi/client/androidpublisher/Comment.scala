@@ -14,25 +14,19 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(): Comment = {
+  inline def apply(): Comment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setDeveloperComment(value: DeveloperComment): Self = StObject.set(x, "developerComment", value.asInstanceOf[js.Any])
+    inline def setDeveloperComment(value: DeveloperComment): Self = StObject.set(x, "developerComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperCommentUndefined: Self = StObject.set(x, "developerComment", js.undefined)
+    inline def setDeveloperCommentUndefined: Self = StObject.set(x, "developerComment", js.undefined)
     
-    @scala.inline
-    def setUserComment(value: UserComment): Self = StObject.set(x, "userComment", value.asInstanceOf[js.Any])
+    inline def setUserComment(value: UserComment): Self = StObject.set(x, "userComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCommentUndefined: Self = StObject.set(x, "userComment", js.undefined)
+    inline def setUserCommentUndefined: Self = StObject.set(x, "userComment", js.undefined)
   }
 }

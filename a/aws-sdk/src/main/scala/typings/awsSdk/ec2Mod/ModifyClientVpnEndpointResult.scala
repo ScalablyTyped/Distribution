@@ -13,19 +13,15 @@ trait ModifyClientVpnEndpointResult extends StObject {
 }
 object ModifyClientVpnEndpointResult {
   
-  @scala.inline
-  def apply(): ModifyClientVpnEndpointResult = {
+  inline def apply(): ModifyClientVpnEndpointResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyClientVpnEndpointResult]
   }
   
-  @scala.inline
-  implicit class ModifyClientVpnEndpointResultMutableBuilder[Self <: ModifyClientVpnEndpointResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClientVpnEndpointResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

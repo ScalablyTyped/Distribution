@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: config): js.Function3[
+  inline def apply(opts: config): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
@@ -50,46 +49,34 @@ object mod {
   }
   object config {
     
-    @scala.inline
-    def apply(): config = {
+    inline def apply(): config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[config]
     }
     
-    @scala.inline
-    implicit class configMutableBuilder[Self <: config] (val x: Self) extends AnyVal {
+    extension [Self <: config](x: Self) {
       
-      @scala.inline
-      def setFail(
+      inline def setFail(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => Unit
       ): Self = StObject.set(x, "fail", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+      inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       
-      @scala.inline
-      def setHosts(value: js.Array[String | RegExp]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: js.Array[String | RegExp]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+      inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      @scala.inline
-      def setHostsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "hosts", js.Array(value :_*))
       
-      @scala.inline
-      def setMode(value: both | either): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: both | either): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setReferers(value: js.Array[String | RegExp]): Self = StObject.set(x, "referers", value.asInstanceOf[js.Any])
+      inline def setReferers(value: js.Array[String | RegExp]): Self = StObject.set(x, "referers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
+      inline def setReferersUndefined: Self = StObject.set(x, "referers", js.undefined)
       
-      @scala.inline
-      def setReferersVarargs(value: (String | RegExp)*): Self = StObject.set(x, "referers", js.Array(value :_*))
+      inline def setReferersVarargs(value: (String | RegExp)*): Self = StObject.set(x, "referers", js.Array(value :_*))
     }
   }
 }

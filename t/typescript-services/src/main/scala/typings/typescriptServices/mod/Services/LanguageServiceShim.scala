@@ -14,8 +14,8 @@ class LanguageServiceShim protected ()
      with typings.typescriptServices.TypeScript.Services.LanguageServiceShim {
   def this(factory: IShimFactory, host: ILanguageServiceShimHost, languageService: ILanguageService) = this()
   
-  /* CompleteClass */
-  /* private */ override def _navigateToItemsToString(items: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def _navigateToItemsToString(items: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def cleanupSemanticCache(): Unit = js.native
@@ -23,7 +23,7 @@ class LanguageServiceShim protected ()
   /* CompleteClass */
   override def dispose(dummy: js.Any): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var factory: js.Any = js.native
   
   /* CompleteClass */
@@ -98,17 +98,17 @@ class LanguageServiceShim protected ()
   /* CompleteClass */
   override def getTypeAtPosition(fileName: String, position: Double): String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var host: js.Any = js.native
   
   /* CompleteClass */
   var languageService: ILanguageService = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var logger: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def refresh(throwOnError: Boolean): Unit = js.native
@@ -120,10 +120,8 @@ object LanguageServiceShim {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def realizeDiagnostic(diagnostic: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnostic")(diagnostic.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def realizeDiagnostic(diagnostic: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnostic")(diagnostic.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def realizeDiagnosticCategory(category: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnosticCategory")(category.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def realizeDiagnosticCategory(category: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("realizeDiagnosticCategory")(category.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

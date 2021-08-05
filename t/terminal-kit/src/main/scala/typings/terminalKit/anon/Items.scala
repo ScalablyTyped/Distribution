@@ -14,31 +14,23 @@ trait Items extends StObject {
 }
 object Items {
   
-  @scala.inline
-  def apply(): Items = {
+  inline def apply(): Items = {
     val __obj = js.Dynamic.literal(progress = null)
     __obj.asInstanceOf[Items]
   }
   
-  @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
+  extension [Self <: Items](x: Self) {
     
-    @scala.inline
-    def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressNull: Self = StObject.set(x, "progress", null)
+    inline def setProgressNull: Self = StObject.set(x, "progress", null)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

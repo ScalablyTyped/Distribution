@@ -16,37 +16,27 @@ trait BooksCloudloadingResource extends StObject {
 }
 object BooksCloudloadingResource {
   
-  @scala.inline
-  def apply(): BooksCloudloadingResource = {
+  inline def apply(): BooksCloudloadingResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BooksCloudloadingResource]
   }
   
-  @scala.inline
-  implicit class BooksCloudloadingResourceMutableBuilder[Self <: BooksCloudloadingResource] (val x: Self) extends AnyVal {
+  extension [Self <: BooksCloudloadingResource](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setProcessingState(value: String): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
+    inline def setProcessingState(value: String): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
+    inline def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

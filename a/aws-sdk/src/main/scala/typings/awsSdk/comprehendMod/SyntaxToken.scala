@@ -33,43 +33,31 @@ trait SyntaxToken extends StObject {
 }
 object SyntaxToken {
   
-  @scala.inline
-  def apply(): SyntaxToken = {
+  inline def apply(): SyntaxToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyntaxToken]
   }
   
-  @scala.inline
-  implicit class SyntaxTokenMutableBuilder[Self <: SyntaxToken] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxToken](x: Self) {
     
-    @scala.inline
-    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
+    inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
+    inline def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
     
-    @scala.inline
-    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
     
-    @scala.inline
-    def setPartOfSpeech(value: PartOfSpeechTag): Self = StObject.set(x, "PartOfSpeech", value.asInstanceOf[js.Any])
+    inline def setPartOfSpeech(value: PartOfSpeechTag): Self = StObject.set(x, "PartOfSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartOfSpeechUndefined: Self = StObject.set(x, "PartOfSpeech", js.undefined)
+    inline def setPartOfSpeechUndefined: Self = StObject.set(x, "PartOfSpeech", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
-    @scala.inline
-    def setTokenId(value: Integer): Self = StObject.set(x, "TokenId", value.asInstanceOf[js.Any])
+    inline def setTokenId(value: Integer): Self = StObject.set(x, "TokenId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenIdUndefined: Self = StObject.set(x, "TokenId", js.undefined)
+    inline def setTokenIdUndefined: Self = StObject.set(x, "TokenId", js.undefined)
   }
 }

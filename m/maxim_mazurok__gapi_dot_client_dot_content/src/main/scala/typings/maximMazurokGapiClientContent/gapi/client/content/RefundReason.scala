@@ -22,25 +22,19 @@ trait RefundReason extends StObject {
 }
 object RefundReason {
   
-  @scala.inline
-  def apply(): RefundReason = {
+  inline def apply(): RefundReason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefundReason]
   }
   
-  @scala.inline
-  implicit class RefundReasonMutableBuilder[Self <: RefundReason] (val x: Self) extends AnyVal {
+  extension [Self <: RefundReason](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setReasonCode(value: String): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    inline def setReasonCode(value: String): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
   }
 }

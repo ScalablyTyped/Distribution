@@ -35,44 +35,32 @@ object mod extends Shortcut {
   }
   object ReactShowMoreProps {
     
-    @scala.inline
-    def apply(): ReactShowMoreProps = {
+    inline def apply(): ReactShowMoreProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactShowMoreProps]
     }
     
-    @scala.inline
-    implicit class ReactShowMorePropsMutableBuilder[Self <: ReactShowMoreProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactShowMoreProps](x: Self) {
       
-      @scala.inline
-      def setAnchorClass(value: String): Self = StObject.set(x, "anchorClass", value.asInstanceOf[js.Any])
+      inline def setAnchorClass(value: String): Self = StObject.set(x, "anchorClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorClassUndefined: Self = StObject.set(x, "anchorClass", js.undefined)
+      inline def setAnchorClassUndefined: Self = StObject.set(x, "anchorClass", js.undefined)
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLess(value: String): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
+      inline def setLess(value: String): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLessUndefined: Self = StObject.set(x, "less", js.undefined)
+      inline def setLessUndefined: Self = StObject.set(x, "less", js.undefined)
       
-      @scala.inline
-      def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Double): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      @scala.inline
-      def setMore(value: String): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
+      inline def setMore(value: String): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoreUndefined: Self = StObject.set(x, "more", js.undefined)
+      inline def setMoreUndefined: Self = StObject.set(x, "more", js.undefined)
     }
   }
   

@@ -18,31 +18,23 @@ trait googlePayCreateOptions extends StObject {
 }
 object googlePayCreateOptions {
   
-  @scala.inline
-  def apply(merchantId: String, transactionInfo: TransactionInfo): googlePayCreateOptions = {
+  inline def apply(merchantId: String, transactionInfo: TransactionInfo): googlePayCreateOptions = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], transactionInfo = transactionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[googlePayCreateOptions]
   }
   
-  @scala.inline
-  implicit class googlePayCreateOptionsMutableBuilder[Self <: googlePayCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: googlePayCreateOptions](x: Self) {
     
-    @scala.inline
-    def setButton(value: ButtonOptions): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: ButtonOptions): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setGooglePayVersion(value: String): Self = StObject.set(x, "googlePayVersion", value.asInstanceOf[js.Any])
+    inline def setGooglePayVersion(value: String): Self = StObject.set(x, "googlePayVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGooglePayVersionUndefined: Self = StObject.set(x, "googlePayVersion", js.undefined)
+    inline def setGooglePayVersionUndefined: Self = StObject.set(x, "googlePayVersion", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
+    inline def setTransactionInfo(value: TransactionInfo): Self = StObject.set(x, "transactionInfo", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait RequestInit extends StObject {
 }
 object RequestInit {
   
-  @scala.inline
-  def apply(): RequestInit = {
+  inline def apply(): RequestInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestInit]
   }
   
-  @scala.inline
-  implicit class RequestInitMutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
+  extension [Self <: RequestInit](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

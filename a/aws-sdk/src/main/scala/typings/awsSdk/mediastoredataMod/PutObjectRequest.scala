@@ -38,43 +38,31 @@ trait PutObjectRequest extends StObject {
 }
 object PutObjectRequest {
   
-  @scala.inline
-  def apply(Body: PayloadBlob, Path: PathNaming): PutObjectRequest = {
+  inline def apply(Body: PayloadBlob, Path: PathNaming): PutObjectRequest = {
     val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutObjectRequest]
   }
   
-  @scala.inline
-  implicit class PutObjectRequestMutableBuilder[Self <: PutObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectRequest](x: Self) {
     
-    @scala.inline
-    def setBody(value: PayloadBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: PayloadBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheControl(value: StringPrimitive): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
+    inline def setCacheControl(value: StringPrimitive): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
+    inline def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setPath(value: PathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: PathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
-    @scala.inline
-    def setUploadAvailability(value: UploadAvailability): Self = StObject.set(x, "UploadAvailability", value.asInstanceOf[js.Any])
+    inline def setUploadAvailability(value: UploadAvailability): Self = StObject.set(x, "UploadAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadAvailabilityUndefined: Self = StObject.set(x, "UploadAvailability", js.undefined)
+    inline def setUploadAvailabilityUndefined: Self = StObject.set(x, "UploadAvailability", js.undefined)
   }
 }

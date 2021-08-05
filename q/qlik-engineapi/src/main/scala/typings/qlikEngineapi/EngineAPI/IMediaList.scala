@@ -25,19 +25,15 @@ trait IMediaList extends StObject {
 }
 object IMediaList {
   
-  @scala.inline
-  def apply(qItems: js.Array[IMediaListItem]): IMediaList = {
+  inline def apply(qItems: js.Array[IMediaListItem]): IMediaList = {
     val __obj = js.Dynamic.literal(qItems = qItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaList]
   }
   
-  @scala.inline
-  implicit class IMediaListMutableBuilder[Self <: IMediaList] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaList](x: Self) {
     
-    @scala.inline
-    def setQItems(value: js.Array[IMediaListItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
+    inline def setQItems(value: js.Array[IMediaListItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQItemsVarargs(value: IMediaListItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: IMediaListItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
   }
 }

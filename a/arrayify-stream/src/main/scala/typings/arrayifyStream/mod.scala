@@ -10,8 +10,7 @@ object mod {
   /**
     * Converts a Node readable stream into an array that is returned as a promise.
     */
-  @scala.inline
-  def apply(input: Readable): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+  inline def apply(input: Readable): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
   
   @JSImport("arrayify-stream", JSImport.Namespace)
   @js.native

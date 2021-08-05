@@ -15,6 +15,5 @@ object FocusManager {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isEditorUIElement(elm: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditorUIElement")(elm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEditorUIElement(elm: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditorUIElement")(elm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

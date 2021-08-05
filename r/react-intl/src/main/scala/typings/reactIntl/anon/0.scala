@@ -13,25 +13,20 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.Fn0>[0] */ js.Any
   ): `0` = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* val */ String => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* val */ String => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.anon.Fn0>[0] */ js.Any
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

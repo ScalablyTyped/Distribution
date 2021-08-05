@@ -18,28 +18,21 @@ trait DescribeJobResult extends StObject {
 }
 object DescribeJobResult {
   
-  @scala.inline
-  def apply(): DescribeJobResult = {
+  inline def apply(): DescribeJobResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeJobResult]
   }
   
-  @scala.inline
-  implicit class DescribeJobResultMutableBuilder[Self <: DescribeJobResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJobResult](x: Self) {
     
-    @scala.inline
-    def setJobMetadata(value: JobMetadata): Self = StObject.set(x, "JobMetadata", value.asInstanceOf[js.Any])
+    inline def setJobMetadata(value: JobMetadata): Self = StObject.set(x, "JobMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobMetadataUndefined: Self = StObject.set(x, "JobMetadata", js.undefined)
+    inline def setJobMetadataUndefined: Self = StObject.set(x, "JobMetadata", js.undefined)
     
-    @scala.inline
-    def setSubJobMetadata(value: JobMetadataList): Self = StObject.set(x, "SubJobMetadata", value.asInstanceOf[js.Any])
+    inline def setSubJobMetadata(value: JobMetadataList): Self = StObject.set(x, "SubJobMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubJobMetadataUndefined: Self = StObject.set(x, "SubJobMetadata", js.undefined)
+    inline def setSubJobMetadataUndefined: Self = StObject.set(x, "SubJobMetadata", js.undefined)
     
-    @scala.inline
-    def setSubJobMetadataVarargs(value: JobMetadata*): Self = StObject.set(x, "SubJobMetadata", js.Array(value :_*))
+    inline def setSubJobMetadataVarargs(value: JobMetadata*): Self = StObject.set(x, "SubJobMetadata", js.Array(value :_*))
   }
 }

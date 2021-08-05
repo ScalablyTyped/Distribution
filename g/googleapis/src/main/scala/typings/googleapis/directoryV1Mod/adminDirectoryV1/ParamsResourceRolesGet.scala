@@ -29,31 +29,23 @@ trait ParamsResourceRolesGet
 }
 object ParamsResourceRolesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceRolesGet = {
+  inline def apply(): ParamsResourceRolesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRolesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRolesGetMutableBuilder[Self <: ParamsResourceRolesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRolesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
-    @scala.inline
-    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+    inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
+    inline def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
   }
 }

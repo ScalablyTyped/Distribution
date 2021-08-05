@@ -17,22 +17,17 @@ trait IMonthlyDOWTrigger extends StObject {
 }
 object IMonthlyDOWTrigger {
   
-  @scala.inline
-  def apply(DaysOfTheWeek: MFTriggerWeekDay, Months: MFTriggerMonth, WhichWeek: MFTriggerWeekOfMonth): IMonthlyDOWTrigger = {
+  inline def apply(DaysOfTheWeek: MFTriggerWeekDay, Months: MFTriggerMonth, WhichWeek: MFTriggerWeekOfMonth): IMonthlyDOWTrigger = {
     val __obj = js.Dynamic.literal(DaysOfTheWeek = DaysOfTheWeek.asInstanceOf[js.Any], Months = Months.asInstanceOf[js.Any], WhichWeek = WhichWeek.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMonthlyDOWTrigger]
   }
   
-  @scala.inline
-  implicit class IMonthlyDOWTriggerMutableBuilder[Self <: IMonthlyDOWTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: IMonthlyDOWTrigger](x: Self) {
     
-    @scala.inline
-    def setDaysOfTheWeek(value: MFTriggerWeekDay): Self = StObject.set(x, "DaysOfTheWeek", value.asInstanceOf[js.Any])
+    inline def setDaysOfTheWeek(value: MFTriggerWeekDay): Self = StObject.set(x, "DaysOfTheWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: MFTriggerMonth): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: MFTriggerMonth): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhichWeek(value: MFTriggerWeekOfMonth): Self = StObject.set(x, "WhichWeek", value.asInstanceOf[js.Any])
+    inline def setWhichWeek(value: MFTriggerWeekOfMonth): Self = StObject.set(x, "WhichWeek", value.asInstanceOf[js.Any])
   }
 }

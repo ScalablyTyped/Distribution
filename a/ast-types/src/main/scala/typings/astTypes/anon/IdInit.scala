@@ -14,19 +14,15 @@ trait IdInit extends StObject {
 }
 object IdInit {
   
-  @scala.inline
-  def apply(id: IdentifierKind, init: LiteralKind | Boolean): IdInit = {
+  inline def apply(id: IdentifierKind, init: LiteralKind | Boolean): IdInit = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdInit]
   }
   
-  @scala.inline
-  implicit class IdInitMutableBuilder[Self <: IdInit] (val x: Self) extends AnyVal {
+  extension [Self <: IdInit](x: Self) {
     
-    @scala.inline
-    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: LiteralKind | Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: LiteralKind | Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
   }
 }

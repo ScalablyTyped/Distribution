@@ -41,43 +41,31 @@ trait SchemaSiteVideoSettings extends StObject {
 }
 object SchemaSiteVideoSettings {
   
-  @scala.inline
-  def apply(): SchemaSiteVideoSettings = {
+  inline def apply(): SchemaSiteVideoSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSiteVideoSettings]
   }
   
-  @scala.inline
-  implicit class SchemaSiteVideoSettingsMutableBuilder[Self <: SchemaSiteVideoSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSiteVideoSettings](x: Self) {
     
-    @scala.inline
-    def setCompanionSettings(value: SchemaSiteCompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
+    inline def setCompanionSettings(value: SchemaSiteCompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionSettingsUndefined: Self = StObject.set(x, "companionSettings", js.undefined)
+    inline def setCompanionSettingsUndefined: Self = StObject.set(x, "companionSettings", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setSkippableSettings(value: SchemaSiteSkippableSetting): Self = StObject.set(x, "skippableSettings", value.asInstanceOf[js.Any])
+    inline def setSkippableSettings(value: SchemaSiteSkippableSetting): Self = StObject.set(x, "skippableSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippableSettingsUndefined: Self = StObject.set(x, "skippableSettings", js.undefined)
+    inline def setSkippableSettingsUndefined: Self = StObject.set(x, "skippableSettings", js.undefined)
     
-    @scala.inline
-    def setTranscodeSettings(value: SchemaSiteTranscodeSetting): Self = StObject.set(x, "transcodeSettings", value.asInstanceOf[js.Any])
+    inline def setTranscodeSettings(value: SchemaSiteTranscodeSetting): Self = StObject.set(x, "transcodeSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscodeSettingsUndefined: Self = StObject.set(x, "transcodeSettings", js.undefined)
+    inline def setTranscodeSettingsUndefined: Self = StObject.set(x, "transcodeSettings", js.undefined)
   }
 }

@@ -21,52 +21,37 @@ trait SurfaceProps extends StObject {
 }
 object SurfaceProps {
   
-  @scala.inline
-  def apply(): SurfaceProps = {
+  inline def apply(): SurfaceProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SurfaceProps]
   }
   
-  @scala.inline
-  implicit class SurfacePropsMutableBuilder[Self <: SurfaceProps] (val x: Self) extends AnyVal {
+  extension [Self <: SurfaceProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+    inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLoadError(value: /* e */ Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+    inline def setOnLoadError(value: /* e */ Error => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
+    inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
     
-    @scala.inline
-    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    @scala.inline
-    def setPreload(value: js.Array[js.Any]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: js.Array[js.Any]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+    inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
-    @scala.inline
-    def setPreloadVarargs(value: js.Any*): Self = StObject.set(x, "preload", js.Array(value :_*))
+    inline def setPreloadVarargs(value: js.Any*): Self = StObject.set(x, "preload", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setVisitor(value: Visitor): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
+    inline def setVisitor(value: Visitor): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitorUndefined: Self = StObject.set(x, "visitor", js.undefined)
+    inline def setVisitorUndefined: Self = StObject.set(x, "visitor", js.undefined)
   }
 }

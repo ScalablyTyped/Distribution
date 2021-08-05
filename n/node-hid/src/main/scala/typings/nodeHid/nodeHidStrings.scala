@@ -8,11 +8,9 @@ object nodeHidStrings {
   
   @js.native
   sealed trait hidraw extends StObject
-  @scala.inline
-  def hidraw: hidraw = "hidraw".asInstanceOf[hidraw]
+  inline def hidraw: hidraw = "hidraw".asInstanceOf[hidraw]
   
   @js.native
   sealed trait libusb extends StObject
-  @scala.inline
-  def libusb: libusb = "libusb".asInstanceOf[libusb]
+  inline def libusb: libusb = "libusb".asInstanceOf[libusb]
 }

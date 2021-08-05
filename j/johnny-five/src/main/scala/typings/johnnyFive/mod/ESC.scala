@@ -33,6 +33,5 @@ object ESC {
   @JSImport("johnny-five", "ESC.Collection")
   @js.native
   def Collection: ESCs = js.native
-  @scala.inline
-  def Collection_=(x: ESCs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
+  inline def Collection_=(x: ESCs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
 }

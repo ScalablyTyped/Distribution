@@ -69,6 +69,5 @@ object LngLatBounds {
   val ^ : js.Any = js.native
   
   /** Convert an array to a LngLatBounds object, or return an existing LngLatBounds object unchanged. */
-  @scala.inline
-  def convert(input: LngLatBoundsLike): LngLatBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(input.asInstanceOf[js.Any]).asInstanceOf[LngLatBounds]
+  inline def convert(input: LngLatBoundsLike): LngLatBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(input.asInstanceOf[js.Any]).asInstanceOf[LngLatBounds]
 }

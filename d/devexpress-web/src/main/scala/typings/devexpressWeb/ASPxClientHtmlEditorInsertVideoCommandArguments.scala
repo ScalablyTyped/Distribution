@@ -18,8 +18,7 @@ trait ASPxClientHtmlEditorInsertVideoCommandArguments
 }
 object ASPxClientHtmlEditorInsertVideoCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCommandName: () => String,
     align: String,
     autoPlay: Boolean,
@@ -36,10 +35,8 @@ object ASPxClientHtmlEditorInsertVideoCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertVideoCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorInsertVideoCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertVideoCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorInsertVideoCommandArguments](x: Self) {
     
-    @scala.inline
-    def setPosterUrl(value: String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
+    inline def setPosterUrl(value: String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
   }
 }

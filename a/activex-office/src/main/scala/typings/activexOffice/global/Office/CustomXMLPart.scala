@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.CustomXMLPart")
 @js.native
-class CustomXMLPart protected ()
+/* private */ class CustomXMLPart ()
   extends StObject
      with typings.activexOffice.Office.CustomXMLPart

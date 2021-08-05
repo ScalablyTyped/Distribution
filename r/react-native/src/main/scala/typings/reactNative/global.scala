@@ -93,11 +93,9 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def spy(spyOrToggle: js.Function1[/* data */ SpyData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def spy(spyOrToggle: js.Function1[/* data */ SpyData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /* static member */
-    @scala.inline
-    def spy(spyOrToggle: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def spy(spyOrToggle: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -239,13 +237,10 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def error(): typings.reactNative.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.reactNative.Response]
+    inline def error(): typings.reactNative.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.reactNative.Response]
     
-    @scala.inline
-    def redirect(url: String): typings.reactNative.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.Response]
-    @scala.inline
-    def redirect(url: String, status: Double): typings.reactNative.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.Response]
+    inline def redirect(url: String): typings.reactNative.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.Response]
+    inline def redirect(url: String, status: Double): typings.reactNative.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.Response]
   }
   
   /**
@@ -307,12 +302,10 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def createObjectURL(blob: Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createObjectURL(blob: Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def revokeObjectURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def revokeObjectURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -398,43 +391,28 @@ object global {
     extends StObject
        with typings.reactNative.XMLHttpRequestUpload
   
-  @scala.inline
-  def cancelAnimationFrame(handle: Double): Unit = js.Dynamic.global.applyDynamic("cancelAnimationFrame")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancelAnimationFrame(handle: Double): Unit = js.Dynamic.global.applyDynamic("cancelAnimationFrame")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearImmediate(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearImmediate(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearInterval(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearTimeout(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearTimeout(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def fetch(input: RequestInfo): js.Promise[typings.reactNative.Response] = js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.reactNative.Response]]
-  @scala.inline
-  def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.reactNative.Response] = (js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.reactNative.Response]]
+  inline def fetch(input: RequestInfo): js.Promise[typings.reactNative.Response] = js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.reactNative.Response]]
+  inline def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.reactNative.Response] = (js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.reactNative.Response]]
   
-  @scala.inline
-  def fetchBundle(bundleId: Double, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = (js.Dynamic.global.applyDynamic("fetchBundle")(bundleId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fetchBundle(bundleId: Double, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = (js.Dynamic.global.applyDynamic("fetchBundle")(bundleId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): Double = js.Dynamic.global.applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): Double = js.Dynamic.global.applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.Dynamic.global.applyDynamic("setImmediate")(handler.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.Dynamic.global.applyDynamic("setImmediate")(handler.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setInterval(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setInterval(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setTimeout(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

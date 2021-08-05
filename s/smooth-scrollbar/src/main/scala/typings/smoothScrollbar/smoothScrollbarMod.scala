@@ -59,25 +59,21 @@ object smoothScrollbarMod {
     @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin.defaultOptions")
     @js.native
     def defaultOptions: js.Any = js.native
-    @scala.inline
-    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin.pluginName")
     @js.native
     def pluginName: String = js.native
-    @scala.inline
-    def pluginName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pluginName")(x.asInstanceOf[js.Any])
+    inline def pluginName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pluginName")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def addPlugins(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(Plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addPlugins(Plugins: TypeofScrollbarPlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(Plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("smooth-scrollbar/plugin", "globalPlugins")
   @js.native
   val globalPlugins: PluginMap = js.native
   
-  @scala.inline
-  def initPlugins(scrollbar: Scrollbar, options: js.Any): js.Array[ScrollbarPlugin] = (^.asInstanceOf[js.Dynamic].applyDynamic("initPlugins")(scrollbar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ScrollbarPlugin]]
+  inline def initPlugins(scrollbar: Scrollbar, options: js.Any): js.Array[ScrollbarPlugin] = (^.asInstanceOf[js.Dynamic].applyDynamic("initPlugins")(scrollbar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ScrollbarPlugin]]
   
   trait PluginMap extends StObject {
     
@@ -87,20 +83,16 @@ object smoothScrollbarMod {
   }
   object PluginMap {
     
-    @scala.inline
-    def apply(constructors: StringDictionary[TypeofScrollbarPlugin], order: Set[String]): PluginMap = {
+    inline def apply(constructors: StringDictionary[TypeofScrollbarPlugin], order: Set[String]): PluginMap = {
       val __obj = js.Dynamic.literal(constructors = constructors.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginMap]
     }
     
-    @scala.inline
-    implicit class PluginMapMutableBuilder[Self <: PluginMap] (val x: Self) extends AnyVal {
+    extension [Self <: PluginMap](x: Self) {
       
-      @scala.inline
-      def setConstructors(value: StringDictionary[TypeofScrollbarPlugin]): Self = StObject.set(x, "constructors", value.asInstanceOf[js.Any])
+      inline def setConstructors(value: StringDictionary[TypeofScrollbarPlugin]): Self = StObject.set(x, "constructors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: Set[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Set[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     }
   }
 }

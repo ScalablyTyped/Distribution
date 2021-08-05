@@ -54,26 +54,20 @@ object configMod {
   }
   object APIVersions {
     
-    @scala.inline
-    def apply(): APIVersions = {
+    inline def apply(): APIVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[APIVersions]
     }
     
-    @scala.inline
-    implicit class APIVersionsMutableBuilder[Self <: APIVersions] (val x: Self) extends AnyVal {
+    extension [Self <: APIVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: latest_ | String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: latest_ | String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setApiVersions(value: ConfigurationServiceApiVersions): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
+      inline def setApiVersions(value: ConfigurationServiceApiVersions): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
+      inline def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
     }
   }
   

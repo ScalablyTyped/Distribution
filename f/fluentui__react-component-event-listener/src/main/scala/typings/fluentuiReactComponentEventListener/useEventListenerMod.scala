@@ -11,6 +11,5 @@ object useEventListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useEventListener[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any */](options: EventListenerOptions[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useEventListener[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any */](options: EventListenerOptions[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

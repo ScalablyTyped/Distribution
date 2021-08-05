@@ -20,25 +20,19 @@ trait SchemaDatasetReference extends StObject {
 }
 object SchemaDatasetReference {
   
-  @scala.inline
-  def apply(): SchemaDatasetReference = {
+  inline def apply(): SchemaDatasetReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatasetReference]
   }
   
-  @scala.inline
-  implicit class SchemaDatasetReferenceMutableBuilder[Self <: SchemaDatasetReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatasetReference](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

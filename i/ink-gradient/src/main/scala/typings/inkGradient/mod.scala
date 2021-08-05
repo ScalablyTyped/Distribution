@@ -36,20 +36,16 @@ object mod extends Shortcut {
   }
   object PropsColor {
     
-    @scala.inline
-    def apply(colors: js.Array[js.Object | String]): PropsColor = {
+    inline def apply(colors: js.Array[js.Object | String]): PropsColor = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropsColor]
     }
     
-    @scala.inline
-    implicit class PropsColorMutableBuilder[Self <: PropsColor] (val x: Self) extends AnyVal {
+    extension [Self <: PropsColor](x: Self) {
       
-      @scala.inline
-      def setColors(value: js.Array[js.Object | String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[js.Object | String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: (js.Object | String)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: (js.Object | String)*): Self = StObject.set(x, "colors", js.Array(value :_*))
     }
   }
   
@@ -59,19 +55,16 @@ object mod extends Shortcut {
   }
   object PropsName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: cristal | teen | mind | morning | vice | passion | fruit | instagram | atlas | retro | summer | pastel | rainbow
     ): PropsName = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropsName]
     }
     
-    @scala.inline
-    implicit class PropsNameMutableBuilder[Self <: PropsName] (val x: Self) extends AnyVal {
+    extension [Self <: PropsName](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: cristal | teen | mind | morning | vice | passion | fruit | instagram | atlas | retro | summer | pastel | rainbow
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StatusBarAnimation extends StObject
 object StatusBarAnimation {
   
-  @scala.inline
-  def fade: typings.reactNative.reactNativeStrings.fade = "fade".asInstanceOf[typings.reactNative.reactNativeStrings.fade]
+  inline def fade: typings.reactNative.reactNativeStrings.fade = "fade".asInstanceOf[typings.reactNative.reactNativeStrings.fade]
   
-  @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
+  inline def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   
-  @scala.inline
-  def slide: typings.reactNative.reactNativeStrings.slide = "slide".asInstanceOf[typings.reactNative.reactNativeStrings.slide]
+  inline def slide: typings.reactNative.reactNativeStrings.slide = "slide".asInstanceOf[typings.reactNative.reactNativeStrings.slide]
 }

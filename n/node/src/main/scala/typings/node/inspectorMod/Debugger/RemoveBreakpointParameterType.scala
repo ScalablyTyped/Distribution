@@ -10,16 +10,13 @@ trait RemoveBreakpointParameterType extends StObject {
 }
 object RemoveBreakpointParameterType {
   
-  @scala.inline
-  def apply(breakpointId: BreakpointId): RemoveBreakpointParameterType = {
+  inline def apply(breakpointId: BreakpointId): RemoveBreakpointParameterType = {
     val __obj = js.Dynamic.literal(breakpointId = breakpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveBreakpointParameterType]
   }
   
-  @scala.inline
-  implicit class RemoveBreakpointParameterTypeMutableBuilder[Self <: RemoveBreakpointParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveBreakpointParameterType](x: Self) {
     
-    @scala.inline
-    def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
+    inline def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
   }
 }

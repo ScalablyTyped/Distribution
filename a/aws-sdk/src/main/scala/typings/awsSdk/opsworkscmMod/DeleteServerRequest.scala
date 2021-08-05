@@ -13,16 +13,13 @@ trait DeleteServerRequest extends StObject {
 }
 object DeleteServerRequest {
   
-  @scala.inline
-  def apply(ServerName: ServerName): DeleteServerRequest = {
+  inline def apply(ServerName: ServerName): DeleteServerRequest = {
     val __obj = js.Dynamic.literal(ServerName = ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteServerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteServerRequestMutableBuilder[Self <: DeleteServerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteServerRequest](x: Self) {
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

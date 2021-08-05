@@ -15,25 +15,19 @@ trait HistoryData extends StObject {
 }
 object HistoryData {
   
-  @scala.inline
-  def apply(entries: HistoryEntries, index: Double, length: Double): HistoryData = {
+  inline def apply(entries: HistoryEntries, index: Double, length: Double): HistoryData = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryData]
   }
   
-  @scala.inline
-  implicit class HistoryDataMutableBuilder[Self <: HistoryData] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryData](x: Self) {
     
-    @scala.inline
-    def setEntries(value: HistoryEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: HistoryEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: Pathname*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: Pathname*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

@@ -33,52 +33,37 @@ trait GetEC2InstanceRecommendationsRequest extends StObject {
 }
 object GetEC2InstanceRecommendationsRequest {
   
-  @scala.inline
-  def apply(): GetEC2InstanceRecommendationsRequest = {
+  inline def apply(): GetEC2InstanceRecommendationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEC2InstanceRecommendationsRequest]
   }
   
-  @scala.inline
-  implicit class GetEC2InstanceRecommendationsRequestMutableBuilder[Self <: GetEC2InstanceRecommendationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEC2InstanceRecommendationsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceArns(value: InstanceArns): Self = StObject.set(x, "instanceArns", value.asInstanceOf[js.Any])
+    inline def setInstanceArns(value: InstanceArns): Self = StObject.set(x, "instanceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceArnsUndefined: Self = StObject.set(x, "instanceArns", js.undefined)
+    inline def setInstanceArnsUndefined: Self = StObject.set(x, "instanceArns", js.undefined)
     
-    @scala.inline
-    def setInstanceArnsVarargs(value: InstanceArn*): Self = StObject.set(x, "instanceArns", js.Array(value :_*))
+    inline def setInstanceArnsVarargs(value: InstanceArn*): Self = StObject.set(x, "instanceArns", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

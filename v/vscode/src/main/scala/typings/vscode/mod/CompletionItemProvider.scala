@@ -42,26 +42,21 @@ trait CompletionItemProvider[T /* <: CompletionItem */] extends StObject {
 }
 object CompletionItemProvider {
   
-  @scala.inline
-  def apply[T /* <: CompletionItem */](
+  inline def apply[T /* <: CompletionItem */](
     provideCompletionItems: (TextDocument, Position, CancellationToken, CompletionContext) => ProviderResult[js.Array[T] | CompletionList[T]]
   ): CompletionItemProvider[T] = {
     val __obj = js.Dynamic.literal(provideCompletionItems = js.Any.fromFunction4(provideCompletionItems))
     __obj.asInstanceOf[CompletionItemProvider[T]]
   }
   
-  @scala.inline
-  implicit class CompletionItemProviderMutableBuilder[Self <: CompletionItemProvider[?], T /* <: CompletionItem */] (val x: Self & CompletionItemProvider[T]) extends AnyVal {
+  extension [Self <: CompletionItemProvider[?], T /* <: CompletionItem */](x: Self & CompletionItemProvider[T]) {
     
-    @scala.inline
-    def setProvideCompletionItems(
+    inline def setProvideCompletionItems(
       value: (TextDocument, Position, CancellationToken, CompletionContext) => ProviderResult[js.Array[T] | CompletionList[T]]
     ): Self = StObject.set(x, "provideCompletionItems", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setResolveCompletionItem(value: (/* item */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveCompletionItem", js.Any.fromFunction2(value))
+    inline def setResolveCompletionItem(value: (/* item */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveCompletionItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
+    inline def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
   }
 }

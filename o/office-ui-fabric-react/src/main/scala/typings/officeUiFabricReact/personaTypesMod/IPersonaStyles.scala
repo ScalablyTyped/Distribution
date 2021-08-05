@@ -23,76 +23,53 @@ trait IPersonaStyles extends StObject {
 }
 object IPersonaStyles {
   
-  @scala.inline
-  def apply(): IPersonaStyles = {
+  inline def apply(): IPersonaStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPersonaStyles]
   }
   
-  @scala.inline
-  implicit class IPersonaStylesMutableBuilder[Self <: IPersonaStyles] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonaStyles](x: Self) {
     
-    @scala.inline
-    def setDetails(value: IStyle): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: IStyle): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsNull: Self = StObject.set(x, "details", null)
+    inline def setDetailsNull: Self = StObject.set(x, "details", null)
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setOptionalText(value: IStyle): Self = StObject.set(x, "optionalText", value.asInstanceOf[js.Any])
+    inline def setOptionalText(value: IStyle): Self = StObject.set(x, "optionalText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalTextNull: Self = StObject.set(x, "optionalText", null)
+    inline def setOptionalTextNull: Self = StObject.set(x, "optionalText", null)
     
-    @scala.inline
-    def setOptionalTextUndefined: Self = StObject.set(x, "optionalText", js.undefined)
+    inline def setOptionalTextUndefined: Self = StObject.set(x, "optionalText", js.undefined)
     
-    @scala.inline
-    def setPrimaryText(value: IStyle): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
+    inline def setPrimaryText(value: IStyle): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryTextNull: Self = StObject.set(x, "primaryText", null)
+    inline def setPrimaryTextNull: Self = StObject.set(x, "primaryText", null)
     
-    @scala.inline
-    def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
+    inline def setPrimaryTextUndefined: Self = StObject.set(x, "primaryText", js.undefined)
     
-    @scala.inline
-    def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNull: Self = StObject.set(x, "root", null)
+    inline def setRootNull: Self = StObject.set(x, "root", null)
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSecondaryText(value: IStyle): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
+    inline def setSecondaryText(value: IStyle): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryTextNull: Self = StObject.set(x, "secondaryText", null)
+    inline def setSecondaryTextNull: Self = StObject.set(x, "secondaryText", null)
     
-    @scala.inline
-    def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
+    inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
     
-    @scala.inline
-    def setTertiaryText(value: IStyle): Self = StObject.set(x, "tertiaryText", value.asInstanceOf[js.Any])
+    inline def setTertiaryText(value: IStyle): Self = StObject.set(x, "tertiaryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTertiaryTextNull: Self = StObject.set(x, "tertiaryText", null)
+    inline def setTertiaryTextNull: Self = StObject.set(x, "tertiaryText", null)
     
-    @scala.inline
-    def setTertiaryTextUndefined: Self = StObject.set(x, "tertiaryText", js.undefined)
+    inline def setTertiaryTextUndefined: Self = StObject.set(x, "tertiaryText", js.undefined)
     
-    @scala.inline
-    def setTextContent(value: IStyle): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
+    inline def setTextContent(value: IStyle): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextContentNull: Self = StObject.set(x, "textContent", null)
+    inline def setTextContentNull: Self = StObject.set(x, "textContent", null)
     
-    @scala.inline
-    def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
+    inline def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
   }
 }

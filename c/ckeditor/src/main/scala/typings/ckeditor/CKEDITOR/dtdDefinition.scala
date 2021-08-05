@@ -60,8 +60,7 @@ trait dtdDefinition
 }
 object dtdDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $block: StringDictionary[`1`],
     $blockLimit: StringDictionary[`1`],
     $cdata: StringDictionary[`1`],
@@ -83,55 +82,38 @@ object dtdDefinition {
     __obj.asInstanceOf[dtdDefinition]
   }
   
-  @scala.inline
-  implicit class dtdDefinitionMutableBuilder[Self <: dtdDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: dtdDefinition](x: Self) {
     
-    @scala.inline
-    def set$block(value: StringDictionary[`1`]): Self = StObject.set(x, "$block", value.asInstanceOf[js.Any])
+    inline def set$block(value: StringDictionary[`1`]): Self = StObject.set(x, "$block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$blockLimit(value: StringDictionary[`1`]): Self = StObject.set(x, "$blockLimit", value.asInstanceOf[js.Any])
+    inline def set$blockLimit(value: StringDictionary[`1`]): Self = StObject.set(x, "$blockLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$cdata(value: StringDictionary[`1`]): Self = StObject.set(x, "$cdata", value.asInstanceOf[js.Any])
+    inline def set$cdata(value: StringDictionary[`1`]): Self = StObject.set(x, "$cdata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$editable(value: StringDictionary[`1`]): Self = StObject.set(x, "$editable", value.asInstanceOf[js.Any])
+    inline def set$editable(value: StringDictionary[`1`]): Self = StObject.set(x, "$editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$empty(value: StringDictionary[`1`]): Self = StObject.set(x, "$empty", value.asInstanceOf[js.Any])
+    inline def set$empty(value: StringDictionary[`1`]): Self = StObject.set(x, "$empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$inline(value: StringDictionary[`1`]): Self = StObject.set(x, "$inline", value.asInstanceOf[js.Any])
+    inline def set$inline(value: StringDictionary[`1`]): Self = StObject.set(x, "$inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$intermediate(value: StringDictionary[`1`]): Self = StObject.set(x, "$intermediate", value.asInstanceOf[js.Any])
+    inline def set$intermediate(value: StringDictionary[`1`]): Self = StObject.set(x, "$intermediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$list(value: StringDictionary[`1`]): Self = StObject.set(x, "$list", value.asInstanceOf[js.Any])
+    inline def set$list(value: StringDictionary[`1`]): Self = StObject.set(x, "$list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$listItem(value: StringDictionary[`1`]): Self = StObject.set(x, "$listItem", value.asInstanceOf[js.Any])
+    inline def set$listItem(value: StringDictionary[`1`]): Self = StObject.set(x, "$listItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$nonBodyContent(value: StringDictionary[`1`]): Self = StObject.set(x, "$nonBodyContent", value.asInstanceOf[js.Any])
+    inline def set$nonBodyContent(value: StringDictionary[`1`]): Self = StObject.set(x, "$nonBodyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$nonEditable(value: StringDictionary[`1`]): Self = StObject.set(x, "$nonEditable", value.asInstanceOf[js.Any])
+    inline def set$nonEditable(value: StringDictionary[`1`]): Self = StObject.set(x, "$nonEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$object(value: StringDictionary[`1`]): Self = StObject.set(x, "$object", value.asInstanceOf[js.Any])
+    inline def set$object(value: StringDictionary[`1`]): Self = StObject.set(x, "$object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$removeEmpty(value: StringDictionary[`1`]): Self = StObject.set(x, "$removeEmpty", value.asInstanceOf[js.Any])
+    inline def set$removeEmpty(value: StringDictionary[`1`]): Self = StObject.set(x, "$removeEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$tabIndex(value: StringDictionary[`1`]): Self = StObject.set(x, "$tabIndex", value.asInstanceOf[js.Any])
+    inline def set$tabIndex(value: StringDictionary[`1`]): Self = StObject.set(x, "$tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$tableContent(value: StringDictionary[`1`]): Self = StObject.set(x, "$tableContent", value.asInstanceOf[js.Any])
+    inline def set$tableContent(value: StringDictionary[`1`]): Self = StObject.set(x, "$tableContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$transparent(value: StringDictionary[`1`]): Self = StObject.set(x, "$transparent", value.asInstanceOf[js.Any])
+    inline def set$transparent(value: StringDictionary[`1`]): Self = StObject.set(x, "$transparent", value.asInstanceOf[js.Any])
   }
 }

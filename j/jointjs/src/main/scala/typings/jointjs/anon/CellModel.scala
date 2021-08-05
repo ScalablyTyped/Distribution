@@ -18,27 +18,21 @@ trait CellModel extends StObject {
 }
 object CellModel {
   
-  @scala.inline
-  def apply(): CellModel = {
+  inline def apply(): CellModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellModel]
   }
   
-  @scala.inline
-  implicit class CellModelMutableBuilder[Self <: CellModel] (val x: Self) extends AnyVal {
+  extension [Self <: CellModel](x: Self) {
     
-    @scala.inline
-    def setCellModel(
+    inline def setCellModel(
       value: TypeofCell & (Instantiable2[/* attributes */ js.UndefOr[Attributes], /* opt */ js.UndefOr[Options], Cell])
     ): Self = StObject.set(x, "cellModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellModelUndefined: Self = StObject.set(x, "cellModel", js.undefined)
+    inline def setCellModelUndefined: Self = StObject.set(x, "cellModel", js.undefined)
     
-    @scala.inline
-    def setCellNamespace(value: js.Any): Self = StObject.set(x, "cellNamespace", value.asInstanceOf[js.Any])
+    inline def setCellNamespace(value: js.Any): Self = StObject.set(x, "cellNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellNamespaceUndefined: Self = StObject.set(x, "cellNamespace", js.undefined)
+    inline def setCellNamespaceUndefined: Self = StObject.set(x, "cellNamespace", js.undefined)
   }
 }

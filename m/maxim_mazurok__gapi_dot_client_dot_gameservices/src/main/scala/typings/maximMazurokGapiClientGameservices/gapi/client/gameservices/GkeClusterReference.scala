@@ -15,19 +15,15 @@ trait GkeClusterReference extends StObject {
 }
 object GkeClusterReference {
   
-  @scala.inline
-  def apply(): GkeClusterReference = {
+  inline def apply(): GkeClusterReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GkeClusterReference]
   }
   
-  @scala.inline
-  implicit class GkeClusterReferenceMutableBuilder[Self <: GkeClusterReference] (val x: Self) extends AnyVal {
+  extension [Self <: GkeClusterReference](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
   }
 }

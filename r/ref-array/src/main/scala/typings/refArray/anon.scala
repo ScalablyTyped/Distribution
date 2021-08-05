@@ -26,8 +26,7 @@ object anon {
   }
   object Dicti {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       buffer: Buffer,
       inspect: () => String,
       length: Double,
@@ -39,26 +38,19 @@ object anon {
       __obj.asInstanceOf[Dicti[T]]
     }
     
-    @scala.inline
-    implicit class DictiMutableBuilder[Self <: Dicti[?], T] (val x: Self & Dicti[T]) extends AnyVal {
+    extension [Self <: Dicti[?], T](x: Self & Dicti[T]) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: () => Buffer): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRef(value: () => Buffer): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Array[T]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Array[T]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
 }

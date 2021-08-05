@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Form extends StObject {
   
-  @JSName("Access.Form_typekey")
+  /* private */ @JSName("Access.Form_typekey")
   var AccessDotForm_typekey: typings.activexAccess.Access.Form = js.native
   
   val ActiveControl: Control = js.native

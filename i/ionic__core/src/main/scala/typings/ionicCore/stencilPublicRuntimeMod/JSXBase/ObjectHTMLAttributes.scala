@@ -32,67 +32,47 @@ trait ObjectHTMLAttributes[T]
 }
 object ObjectHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): ObjectHTMLAttributes[T] = {
+  inline def apply[T](): ObjectHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class ObjectHTMLAttributesMutableBuilder[Self <: ObjectHTMLAttributes[?], T] (val x: Self & ObjectHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: ObjectHTMLAttributes[?], T](x: Self & ObjectHTMLAttributes[T]) {
     
-    @scala.inline
-    def setClassID(value: String): Self = StObject.set(x, "classID", value.asInstanceOf[js.Any])
+    inline def setClassID(value: String): Self = StObject.set(x, "classID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassIDUndefined: Self = StObject.set(x, "classID", js.undefined)
+    inline def setClassIDUndefined: Self = StObject.set(x, "classID", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
+    inline def setUseMap(value: String): Self = StObject.set(x, "useMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMapUndefined: Self = StObject.set(x, "useMap", js.undefined)
+    inline def setUseMapUndefined: Self = StObject.set(x, "useMap", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
+    inline def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
+    inline def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
   }
 }

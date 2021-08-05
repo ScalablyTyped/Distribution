@@ -30,67 +30,47 @@ trait BytesLoaded extends StObject {
 }
 object BytesLoaded {
   
-  @scala.inline
-  def apply(): BytesLoaded = {
+  inline def apply(): BytesLoaded = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BytesLoaded]
   }
   
-  @scala.inline
-  implicit class BytesLoadedMutableBuilder[Self <: BytesLoaded] (val x: Self) extends AnyVal {
+  extension [Self <: BytesLoaded](x: Self) {
     
-    @scala.inline
-    def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
+    inline def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesLoadedUndefined: Self = StObject.set(x, "bytesLoaded", js.undefined)
+    inline def setBytesLoadedUndefined: Self = StObject.set(x, "bytesLoaded", js.undefined)
     
-    @scala.inline
-    def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
+    inline def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesTotalUndefined: Self = StObject.set(x, "bytesTotal", js.undefined)
+    inline def setBytesTotalUndefined: Self = StObject.set(x, "bytesTotal", js.undefined)
     
-    @scala.inline
-    def setComponent(value: dxFileUploader): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxFileUploader): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setRequest(value: XMLHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: XMLHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setSegmentSize(value: Double): Self = StObject.set(x, "segmentSize", value.asInstanceOf[js.Any])
+    inline def setSegmentSize(value: Double): Self = StObject.set(x, "segmentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentSizeUndefined: Self = StObject.set(x, "segmentSize", js.undefined)
+    inline def setSegmentSizeUndefined: Self = StObject.set(x, "segmentSize", js.undefined)
   }
 }

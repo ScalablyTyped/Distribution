@@ -14,7 +14,7 @@ object providersEvaluatorMod {
   @js.native
   class ProvidersEvaluator () extends StObject {
     
-    var _providerLiterals: js.Any = js.native
+    /* private */ var _providerLiterals: js.Any = js.native
     
     /**
       * Evaluates the given expression and returns its statically resolved value
@@ -33,8 +33,7 @@ object providersEvaluatorMod {
   }
   object ProviderLiteral {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       node: ObjectLiteralExpression,
       resolvedValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
     ): ProviderLiteral = {
@@ -42,14 +41,11 @@ object providersEvaluatorMod {
       __obj.asInstanceOf[ProviderLiteral]
     }
     
-    @scala.inline
-    implicit class ProviderLiteralMutableBuilder[Self <: ProviderLiteral] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderLiteral](x: Self) {
       
-      @scala.inline
-      def setNode(value: ObjectLiteralExpression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: ObjectLiteralExpression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedValue(
+      inline def setResolvedValue(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResolvedValue */ js.Any
       ): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
     }

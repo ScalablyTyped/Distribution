@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaReadMode extends StObject
 object MediaReadMode {
   
-  @scala.inline
-  def Buffered: typings.documentdb.documentdbStrings.Buffered = "Buffered".asInstanceOf[typings.documentdb.documentdbStrings.Buffered]
+  inline def Buffered: typings.documentdb.documentdbStrings.Buffered = "Buffered".asInstanceOf[typings.documentdb.documentdbStrings.Buffered]
   
-  @scala.inline
-  def Streamed: typings.documentdb.documentdbStrings.Streamed = "Streamed".asInstanceOf[typings.documentdb.documentdbStrings.Streamed]
+  inline def Streamed: typings.documentdb.documentdbStrings.Streamed = "Streamed".asInstanceOf[typings.documentdb.documentdbStrings.Streamed]
 }

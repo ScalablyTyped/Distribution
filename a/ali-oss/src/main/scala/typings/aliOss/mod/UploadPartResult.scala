@@ -14,22 +14,17 @@ trait UploadPartResult extends StObject {
 }
 object UploadPartResult {
   
-  @scala.inline
-  def apply(etag: String, name: String, res: NormalSuccessResponse): UploadPartResult = {
+  inline def apply(etag: String, name: String, res: NormalSuccessResponse): UploadPartResult = {
     val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPartResult]
   }
   
-  @scala.inline
-  implicit class UploadPartResultMutableBuilder[Self <: UploadPartResult] (val x: Self) extends AnyVal {
+  extension [Self <: UploadPartResult](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

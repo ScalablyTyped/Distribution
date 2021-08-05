@@ -15,22 +15,17 @@ trait OperatorConstraint extends StObject {
 }
 object OperatorConstraint {
   
-  @scala.inline
-  def apply(operator: String, supportedScopes: js.Array[String]): OperatorConstraint = {
+  inline def apply(operator: String, supportedScopes: js.Array[String]): OperatorConstraint = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], supportedScopes = supportedScopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperatorConstraint]
   }
   
-  @scala.inline
-  implicit class OperatorConstraintMutableBuilder[Self <: OperatorConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: OperatorConstraint](x: Self) {
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedScopes(value: js.Array[String]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
+    inline def setSupportedScopes(value: js.Array[String]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
+    inline def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
   }
 }

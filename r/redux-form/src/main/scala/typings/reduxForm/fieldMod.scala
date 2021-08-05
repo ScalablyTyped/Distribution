@@ -89,129 +89,92 @@ object fieldMod {
   }
   object BaseFieldProps {
     
-    @scala.inline
-    def apply[P](name: String): BaseFieldProps[P] = {
+    inline def apply[P](name: String): BaseFieldProps[P] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseFieldProps[P]]
     }
     
-    @scala.inline
-    implicit class BaseFieldPropsMutableBuilder[Self <: BaseFieldProps[?], P] (val x: Self & BaseFieldProps[P]) extends AnyVal {
+    extension [Self <: BaseFieldProps[?], P](x: Self & BaseFieldProps[P]) {
       
-      @scala.inline
-      def setComponent(value: (ComponentType[WrappedFieldProps & P]) | input | select | textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: (ComponentType[WrappedFieldProps & P]) | input | select | textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setFormat(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatNull: Self = StObject.set(x, "format", null)
+      inline def setFormatNull: Self = StObject.set(x, "format", null)
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
+      inline def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
       
-      @scala.inline
-      def setImmutableProps(value: js.Array[String]): Self = StObject.set(x, "immutableProps", value.asInstanceOf[js.Any])
+      inline def setImmutableProps(value: js.Array[String]): Self = StObject.set(x, "immutableProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutablePropsUndefined: Self = StObject.set(x, "immutableProps", js.undefined)
+      inline def setImmutablePropsUndefined: Self = StObject.set(x, "immutableProps", js.undefined)
       
-      @scala.inline
-      def setImmutablePropsVarargs(value: String*): Self = StObject.set(x, "immutableProps", js.Array(value :_*))
+      inline def setImmutablePropsVarargs(value: String*): Self = StObject.set(x, "immutableProps", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalize(
+      inline def setNormalize(
         value: (/* value */ js.Any, /* previousValue */ js.UndefOr[js.Any], /* allValues */ js.UndefOr[js.Any], /* previousAllValues */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "normalize", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      @scala.inline
-      def setOnBlur(
+      inline def setOnBlur(
         value: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onBlur", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
+      inline def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      inline def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+      inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setParse(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Validator | js.Array[Validator]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Validator | js.Array[Validator]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFunction4(
+      inline def setValidateFunction4(
         value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      @scala.inline
-      def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
       
-      @scala.inline
-      def setWarn(value: Validator | js.Array[Validator]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Validator | js.Array[Validator]): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnFunction4(
+      inline def setWarnFunction4(
         value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "warn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      @scala.inline
-      def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
     }
   }
   
@@ -227,8 +190,7 @@ object fieldMod {
   }
   object CommonFieldInputProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       onDragStart: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
       onDrop: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit,
@@ -238,20 +200,15 @@ object fieldMod {
       __obj.asInstanceOf[CommonFieldInputProps]
     }
     
-    @scala.inline
-    implicit class CommonFieldInputPropsMutableBuilder[Self <: CommonFieldInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonFieldInputProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
+      inline def setOnDragStart(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      inline def setOnDrop(value: (DragEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (FocusEvent[js.Any], /* name */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
     }
   }
   
@@ -265,8 +222,7 @@ object fieldMod {
   }
   object CommonFieldProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       onBlur: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
       onChange: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit,
@@ -278,16 +234,13 @@ object fieldMod {
       __obj.asInstanceOf[CommonFieldProps]
     }
     
-    @scala.inline
-    implicit class CommonFieldPropsMutableBuilder[Self <: CommonFieldProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonFieldProps](x: Self) {
       
-      @scala.inline
-      def setOnBlur(
+      inline def setOnBlur(
         value: (/* event */ js.UndefOr[FocusEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onBlur", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* event */ js.UndefOr[ChangeEvent[js.Any]], /* newValue */ js.UndefOr[js.Any], /* previousValue */ js.UndefOr[js.Any], /* name */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
     }
@@ -360,8 +313,7 @@ object fieldMod {
   }
   object WrappedFieldInputProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       onBlur: EventOrValueHandler[FocusEvent[js.Any]],
       onChange: EventOrValueHandler[ChangeEvent[js.Any]],
@@ -374,23 +326,17 @@ object fieldMod {
       __obj.asInstanceOf[WrappedFieldInputProps]
     }
     
-    @scala.inline
-    implicit class WrappedFieldInputPropsMutableBuilder[Self <: WrappedFieldInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrappedFieldInputProps](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: EventOrValueHandler[FocusEvent[js.Any]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      inline def setOnBlur(value: EventOrValueHandler[FocusEvent[js.Any]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: EventOrValueHandler[ChangeEvent[js.Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: EventOrValueHandler[ChangeEvent[js.Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -430,8 +376,7 @@ object fieldMod {
   }
   object WrappedFieldMetaProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asyncValidating: Boolean,
       autofilled: Boolean,
       dirty: Boolean,
@@ -450,65 +395,45 @@ object fieldMod {
       __obj.asInstanceOf[WrappedFieldMetaProps]
     }
     
-    @scala.inline
-    implicit class WrappedFieldMetaPropsMutableBuilder[Self <: WrappedFieldMetaProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrappedFieldMetaProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAsyncValidating(value: Boolean): Self = StObject.set(x, "asyncValidating", value.asInstanceOf[js.Any])
+      inline def setAsyncValidating(value: Boolean): Self = StObject.set(x, "asyncValidating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofilled(value: Boolean): Self = StObject.set(x, "autofilled", value.asInstanceOf[js.Any])
+      inline def setAutofilled(value: Boolean): Self = StObject.set(x, "autofilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: js.Any => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
+      inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
+      inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
+      inline def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: js.Any): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -520,20 +445,16 @@ object fieldMod {
   }
   object WrappedFieldProps {
     
-    @scala.inline
-    def apply(input: WrappedFieldInputProps, meta: WrappedFieldMetaProps): WrappedFieldProps = {
+    inline def apply(input: WrappedFieldInputProps, meta: WrappedFieldMetaProps): WrappedFieldProps = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrappedFieldProps]
     }
     
-    @scala.inline
-    implicit class WrappedFieldPropsMutableBuilder[Self <: WrappedFieldProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrappedFieldProps](x: Self) {
       
-      @scala.inline
-      def setInput(value: WrappedFieldInputProps): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: WrappedFieldInputProps): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: WrappedFieldMetaProps): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: WrappedFieldMetaProps): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
 }

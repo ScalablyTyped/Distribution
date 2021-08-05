@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PromiseSettledResult[T] extends StObject
 object PromiseSettledResult {
   
-  @scala.inline
-  def PromiseFulfilledResult[T](value: T): typings.std.PromiseFulfilledResult[T] = {
+  inline def PromiseFulfilledResult[T](value: T): typings.std.PromiseFulfilledResult[T] = {
     val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.std.PromiseFulfilledResult[T]]
   }
   
-  @scala.inline
-  def PromiseRejectedResult(reason: js.Any): typings.std.PromiseRejectedResult = {
+  inline def PromiseRejectedResult(reason: js.Any): typings.std.PromiseRejectedResult = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
     __obj.asInstanceOf[typings.std.PromiseRejectedResult]
   }

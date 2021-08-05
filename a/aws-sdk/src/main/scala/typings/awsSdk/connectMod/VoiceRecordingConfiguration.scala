@@ -13,19 +13,15 @@ trait VoiceRecordingConfiguration extends StObject {
 }
 object VoiceRecordingConfiguration {
   
-  @scala.inline
-  def apply(): VoiceRecordingConfiguration = {
+  inline def apply(): VoiceRecordingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoiceRecordingConfiguration]
   }
   
-  @scala.inline
-  implicit class VoiceRecordingConfigurationMutableBuilder[Self <: VoiceRecordingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceRecordingConfiguration](x: Self) {
     
-    @scala.inline
-    def setVoiceRecordingTrack(value: VoiceRecordingTrack): Self = StObject.set(x, "VoiceRecordingTrack", value.asInstanceOf[js.Any])
+    inline def setVoiceRecordingTrack(value: VoiceRecordingTrack): Self = StObject.set(x, "VoiceRecordingTrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceRecordingTrackUndefined: Self = StObject.set(x, "VoiceRecordingTrack", js.undefined)
+    inline def setVoiceRecordingTrackUndefined: Self = StObject.set(x, "VoiceRecordingTrack", js.undefined)
   }
 }

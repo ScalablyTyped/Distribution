@@ -16,19 +16,15 @@ trait `2` extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply(valueSet: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]): `2` = {
+  inline def apply(valueSet: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]): `2` = {
     val __obj = js.Dynamic.literal(valueSet = valueSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setValueSet(value: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
+    inline def setValueSet(value: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSetVarargs(value: typings.vscodeLanguageserverTypes.mod.CodeActionKind*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
+    inline def setValueSetVarargs(value: typings.vscodeLanguageserverTypes.mod.CodeActionKind*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
   }
 }

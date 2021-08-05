@@ -13,16 +13,13 @@ trait ModelArtifacts extends StObject {
 }
 object ModelArtifacts {
   
-  @scala.inline
-  def apply(S3ModelArtifacts: S3Uri): ModelArtifacts = {
+  inline def apply(S3ModelArtifacts: S3Uri): ModelArtifacts = {
     val __obj = js.Dynamic.literal(S3ModelArtifacts = S3ModelArtifacts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelArtifacts]
   }
   
-  @scala.inline
-  implicit class ModelArtifactsMutableBuilder[Self <: ModelArtifacts] (val x: Self) extends AnyVal {
+  extension [Self <: ModelArtifacts](x: Self) {
     
-    @scala.inline
-    def setS3ModelArtifacts(value: S3Uri): Self = StObject.set(x, "S3ModelArtifacts", value.asInstanceOf[js.Any])
+    inline def setS3ModelArtifacts(value: S3Uri): Self = StObject.set(x, "S3ModelArtifacts", value.asInstanceOf[js.Any])
   }
 }

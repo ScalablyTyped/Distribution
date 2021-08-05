@@ -18,19 +18,15 @@ trait ListenerTls extends StObject {
 }
 object ListenerTls {
   
-  @scala.inline
-  def apply(certificate: ListenerTlsCertificate, mode: ListenerTlsMode): ListenerTls = {
+  inline def apply(certificate: ListenerTlsCertificate, mode: ListenerTlsMode): ListenerTls = {
     val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerTls]
   }
   
-  @scala.inline
-  implicit class ListenerTlsMutableBuilder[Self <: ListenerTls] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerTls](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: ListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: ListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: ListenerTlsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ListenerTlsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

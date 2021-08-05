@@ -12,22 +12,17 @@ trait OwnerId extends StObject {
 }
 object OwnerId {
   
-  @scala.inline
-  def apply(styleId: String): OwnerId = {
+  inline def apply(styleId: String): OwnerId = {
     val __obj = js.Dynamic.literal(styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerId]
   }
   
-  @scala.inline
-  implicit class OwnerIdMutableBuilder[Self <: OwnerId] (val x: Self) extends AnyVal {
+  extension [Self <: OwnerId](x: Self) {
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
-    @scala.inline
-    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

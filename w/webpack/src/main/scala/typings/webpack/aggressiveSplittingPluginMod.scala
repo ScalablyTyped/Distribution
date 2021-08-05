@@ -30,38 +30,28 @@ object aggressiveSplittingPluginMod {
   }
   object AggressiveSplittingPluginOptions {
     
-    @scala.inline
-    def apply(): AggressiveSplittingPluginOptions = {
+    inline def apply(): AggressiveSplittingPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AggressiveSplittingPluginOptions]
     }
     
-    @scala.inline
-    implicit class AggressiveSplittingPluginOptionsMutableBuilder[Self <: AggressiveSplittingPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AggressiveSplittingPluginOptions](x: Self) {
       
-      @scala.inline
-      def setChunkOverhead(value: Double): Self = StObject.set(x, "chunkOverhead", value.asInstanceOf[js.Any])
+      inline def setChunkOverhead(value: Double): Self = StObject.set(x, "chunkOverhead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkOverheadUndefined: Self = StObject.set(x, "chunkOverhead", js.undefined)
+      inline def setChunkOverheadUndefined: Self = StObject.set(x, "chunkOverhead", js.undefined)
       
-      @scala.inline
-      def setEntryChunkMultiplicator(value: Double): Self = StObject.set(x, "entryChunkMultiplicator", value.asInstanceOf[js.Any])
+      inline def setEntryChunkMultiplicator(value: Double): Self = StObject.set(x, "entryChunkMultiplicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryChunkMultiplicatorUndefined: Self = StObject.set(x, "entryChunkMultiplicator", js.undefined)
+      inline def setEntryChunkMultiplicatorUndefined: Self = StObject.set(x, "entryChunkMultiplicator", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     }
   }
 }

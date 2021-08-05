@@ -10,6 +10,5 @@ object global {
   @JSGlobal("typecheck")
   @js.native
   def typecheck: TC = js.native
-  @scala.inline
-  def typecheck_=(x: TC): Unit = js.Dynamic.global.updateDynamic("typecheck")(x.asInstanceOf[js.Any])
+  inline def typecheck_=(x: TC): Unit = js.Dynamic.global.updateDynamic("typecheck")(x.asInstanceOf[js.Any])
 }

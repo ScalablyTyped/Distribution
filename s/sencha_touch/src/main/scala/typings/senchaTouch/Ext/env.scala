@@ -39,62 +39,44 @@ object env {
   }
   object IBrowser {
     
-    @scala.inline
-    def apply(): typings.senchaTouch.Ext.env.IBrowser = {
+    inline def apply(): typings.senchaTouch.Ext.env.IBrowser = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.senchaTouch.Ext.env.IBrowser]
     }
     
-    @scala.inline
-    implicit class IBrowserMutableBuilder[Self <: typings.senchaTouch.Ext.env.IBrowser] (val x: Self) extends AnyVal {
+    extension [Self <: typings.senchaTouch.Ext.env.IBrowser](x: Self) {
       
-      @scala.inline
-      def setEngineName(value: java.lang.String): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
+      inline def setEngineName(value: java.lang.String): Self = StObject.set(x, "engineName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineNameUndefined: Self = StObject.set(x, "engineName", js.undefined)
+      inline def setEngineNameUndefined: Self = StObject.set(x, "engineName", js.undefined)
       
-      @scala.inline
-      def setEngineVersion(value: IVersion): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: IVersion): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
+      inline def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
       
-      @scala.inline
-      def setIs(value: /* value */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
+      inline def setIs(value: /* value */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
+      inline def setIsSecure(value: Boolean): Self = StObject.set(x, "isSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
+      inline def setIsSecureUndefined: Self = StObject.set(x, "isSecure", js.undefined)
       
-      @scala.inline
-      def setIsStrict(value: Boolean): Self = StObject.set(x, "isStrict", value.asInstanceOf[js.Any])
+      inline def setIsStrict(value: Boolean): Self = StObject.set(x, "isStrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStrictUndefined: Self = StObject.set(x, "isStrict", js.undefined)
+      inline def setIsStrictUndefined: Self = StObject.set(x, "isStrict", js.undefined)
       
-      @scala.inline
-      def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+      inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: java.lang.String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: java.lang.String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       
-      @scala.inline
-      def setVersion(value: IVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: IVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -118,32 +100,24 @@ object env {
   }
   object IOS {
     
-    @scala.inline
-    def apply(): IOS = {
+    inline def apply(): IOS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOS]
     }
     
-    @scala.inline
-    implicit class IOSMutableBuilder[Self <: IOS] (val x: Self) extends AnyVal {
+    extension [Self <: IOS](x: Self) {
       
-      @scala.inline
-      def setIs(value: /* value */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
+      inline def setIs(value: /* value */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
+      inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setVersion(value: IVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: IVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

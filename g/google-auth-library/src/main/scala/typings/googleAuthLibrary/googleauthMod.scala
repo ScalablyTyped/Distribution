@@ -41,9 +41,9 @@ object googleauthMod {
       * @param options The JWT or UserRefresh options for the client
       * @returns JWT or UserRefresh Client with data
       */
-    var _cacheClientFromJSON: js.Any = js.native
+    /* private */ var _cacheClientFromJSON: js.Any = js.native
     
-    var _cachedProjectId: js.Any = js.native
+    /* private */ var _cachedProjectId: js.Any = js.native
     
     /**
       * Determines whether the auth layer is running on Google Compute Engine.
@@ -61,13 +61,13 @@ object googleauthMod {
     def _getApplicationCredentialsFromFilePath(filePath: String): js.Promise[JWT | UserRefreshClient] = js.native
     def _getApplicationCredentialsFromFilePath(filePath: String, options: RefreshOptions): js.Promise[JWT | UserRefreshClient] = js.native
     
-    var _getDefaultProjectIdPromise: js.Any = js.native
+    /* private */ var _getDefaultProjectIdPromise: js.Any = js.native
     
     /**
       * Determines whether the current operating system is Windows.
       * @api private
       */
-    var _isWindows: js.Any = js.native
+    /* private */ var _isWindows: js.Any = js.native
     
     /**
       * Attempts to load default credentials from the environment variable path..
@@ -99,9 +99,9 @@ object googleauthMod {
       * Compute Engine.
       * @private
       */
-    var checkIsGCE: js.Any = js.native
+    /* private */ var checkIsGCE: js.Any = js.native
     
-    var clientOptions: js.Any = js.native
+    /* private */ var clientOptions: js.Any = js.native
     
     /**
       * Scopes populated by the client library by default. We differentiate between
@@ -137,7 +137,7 @@ object googleauthMod {
     def fromStream(inputStream: Readable, options: RefreshOptions): js.Promise[JWT | UserRefreshClient] = js.native
     def fromStream(inputStream: Readable, options: RefreshOptions, callback: CredentialCallback): Unit = js.native
     
-    var fromStreamAsync: js.Any = js.native
+    /* private */ var fromStreamAsync: js.Any = js.native
     
     /**
       * Automatically obtain application default credentials, and return
@@ -156,7 +156,7 @@ object googleauthMod {
     def getApplicationDefault(options: RefreshOptions): js.Promise[ADCResponse] = js.native
     def getApplicationDefault(options: RefreshOptions, callback: ADCCallback): Unit = js.native
     
-    var getApplicationDefaultAsync: js.Any = js.native
+    /* private */ var getApplicationDefaultAsync: js.Any = js.native
     
     /**
       * Automatically obtain a client based on the provided configuration.  If no
@@ -178,12 +178,12 @@ object googleauthMod {
     def getCredentials(): js.Promise[CredentialBody] = js.native
     def getCredentials(callback: js.Function2[/* err */ Error | Null, /* credentials */ js.UndefOr[CredentialBody], Unit]): Unit = js.native
     
-    var getCredentialsAsync: js.Any = js.native
+    /* private */ var getCredentialsAsync: js.Any = js.native
     
     /**
       * Run the Google Cloud SDK command that prints the default project ID
       */
-    var getDefaultServiceProjectId: js.Any = js.native
+    /* private */ var getDefaultServiceProjectId: js.Any = js.native
     
     /**
       * Determine the compute environment in which the code is running.
@@ -194,12 +194,12 @@ object googleauthMod {
       * Loads the project id from the GOOGLE_APPLICATION_CREDENTIALS json file.
       * @api private
       */
-    var getFileProjectId: js.Any = js.native
+    /* private */ var getFileProjectId: js.Any = js.native
     
     /**
       * Gets the Compute Engine project ID if it can be inferred.
       */
-    var getGCEProjectId: js.Any = js.native
+    /* private */ var getGCEProjectId: js.Any = js.native
     
     /**
       * Creates a client which will fetch an ID token for authorization.
@@ -212,7 +212,7 @@ object googleauthMod {
       * Loads the project id from environment variables.
       * @api private
       */
-    var getProductionProjectId: js.Any = js.native
+    /* private */ var getProductionProjectId: js.Any = js.native
     
     /**
       * Obtains the default project ID for the application.
@@ -222,7 +222,7 @@ object googleauthMod {
     def getProjectId(): js.Promise[String] = js.native
     def getProjectId(callback: ProjectIdCallback): Unit = js.native
     
-    var getProjectIdAsync: js.Any = js.native
+    /* private */ var getProjectIdAsync: js.Any = js.native
     
     /**
       * Obtain the HTTP headers that will provide authorization for a given
@@ -235,7 +235,7 @@ object googleauthMod {
     
     var jsonContent: JWTInput | Null = js.native
     
-    var keyFilename: js.Any = js.native
+    /* private */ var keyFilename: js.Any = js.native
     
     /**
       * Automatically obtain application default credentials, and make an
@@ -244,7 +244,7 @@ object googleauthMod {
       */
     def request[T](opts: GaxiosOptions): js.Promise[GaxiosResponse[T]] = js.native
     
-    var scopes: js.Any = js.native
+    /* private */ var scopes: js.Any = js.native
     
     /**
       * Sign the given data with the current private key, or go out
@@ -268,8 +268,7 @@ object googleauthMod {
     @JSImport("google-auth-library/build/src/auth/googleauth", "GoogleAuth.DefaultTransporter")
     @js.native
     def DefaultTransporter: TypeofDefaultTransporter = js.native
-    @scala.inline
-    def DefaultTransporter_=(x: TypeofDefaultTransporter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTransporter")(x.asInstanceOf[js.Any])
+    inline def DefaultTransporter_=(x: TypeofDefaultTransporter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTransporter")(x.asInstanceOf[js.Any])
   }
   
   type ADCCallback = js.Function3[
@@ -287,23 +286,18 @@ object googleauthMod {
   }
   object ADCResponse {
     
-    @scala.inline
-    def apply(credential: OAuth2Client): ADCResponse = {
+    inline def apply(credential: OAuth2Client): ADCResponse = {
       val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], projectId = null)
       __obj.asInstanceOf[ADCResponse]
     }
     
-    @scala.inline
-    implicit class ADCResponseMutableBuilder[Self <: ADCResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ADCResponse](x: Self) {
       
-      @scala.inline
-      def setCredential(value: OAuth2Client): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+      inline def setCredential(value: OAuth2Client): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdNull: Self = StObject.set(x, "projectId", null)
+      inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
     }
   }
   
@@ -345,53 +339,38 @@ object googleauthMod {
   }
   object GoogleAuthOptions {
     
-    @scala.inline
-    def apply(): GoogleAuthOptions = {
+    inline def apply(): GoogleAuthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GoogleAuthOptions]
     }
     
-    @scala.inline
-    implicit class GoogleAuthOptionsMutableBuilder[Self <: GoogleAuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleAuthOptions](x: Self) {
       
-      @scala.inline
-      def setClientOptions(value: JWTOptions | OAuth2ClientOptions | UserRefreshClientOptions): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
+      inline def setClientOptions(value: JWTOptions | OAuth2ClientOptions | UserRefreshClientOptions): Self = StObject.set(x, "clientOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientOptionsUndefined: Self = StObject.set(x, "clientOptions", js.undefined)
+      inline def setClientOptionsUndefined: Self = StObject.set(x, "clientOptions", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: CredentialBody): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: CredentialBody): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
+      inline def setKeyFile(value: String): Self = StObject.set(x, "keyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
+      inline def setKeyFileUndefined: Self = StObject.set(x, "keyFile", js.undefined)
       
-      @scala.inline
-      def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
+      inline def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
+      inline def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      @scala.inline
-      def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   
@@ -405,20 +384,16 @@ object googleauthMod {
   }
   object SignBlobResponse {
     
-    @scala.inline
-    def apply(keyId: String, signedBlob: String): SignBlobResponse = {
+    inline def apply(keyId: String, signedBlob: String): SignBlobResponse = {
       val __obj = js.Dynamic.literal(keyId = keyId.asInstanceOf[js.Any], signedBlob = signedBlob.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignBlobResponse]
     }
     
-    @scala.inline
-    implicit class SignBlobResponseMutableBuilder[Self <: SignBlobResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SignBlobResponse](x: Self) {
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedBlob(value: String): Self = StObject.set(x, "signedBlob", value.asInstanceOf[js.Any])
+      inline def setSignedBlob(value: String): Self = StObject.set(x, "signedBlob", value.asInstanceOf[js.Any])
     }
   }
 }

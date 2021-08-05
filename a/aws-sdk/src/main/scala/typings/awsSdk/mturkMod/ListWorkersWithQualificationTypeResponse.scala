@@ -20,34 +20,25 @@ trait ListWorkersWithQualificationTypeResponse extends StObject {
 }
 object ListWorkersWithQualificationTypeResponse {
   
-  @scala.inline
-  def apply(): ListWorkersWithQualificationTypeResponse = {
+  inline def apply(): ListWorkersWithQualificationTypeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWorkersWithQualificationTypeResponse]
   }
   
-  @scala.inline
-  implicit class ListWorkersWithQualificationTypeResponseMutableBuilder[Self <: ListWorkersWithQualificationTypeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorkersWithQualificationTypeResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
+    inline def setNumResults(value: Integer): Self = StObject.set(x, "NumResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
+    inline def setNumResultsUndefined: Self = StObject.set(x, "NumResults", js.undefined)
     
-    @scala.inline
-    def setQualifications(value: QualificationList): Self = StObject.set(x, "Qualifications", value.asInstanceOf[js.Any])
+    inline def setQualifications(value: QualificationList): Self = StObject.set(x, "Qualifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationsUndefined: Self = StObject.set(x, "Qualifications", js.undefined)
+    inline def setQualificationsUndefined: Self = StObject.set(x, "Qualifications", js.undefined)
     
-    @scala.inline
-    def setQualificationsVarargs(value: Qualification*): Self = StObject.set(x, "Qualifications", js.Array(value :_*))
+    inline def setQualificationsVarargs(value: Qualification*): Self = StObject.set(x, "Qualifications", js.Array(value :_*))
   }
 }

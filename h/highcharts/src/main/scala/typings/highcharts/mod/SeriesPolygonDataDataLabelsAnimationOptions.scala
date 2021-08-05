@@ -15,19 +15,15 @@ trait SeriesPolygonDataDataLabelsAnimationOptions extends StObject {
 }
 object SeriesPolygonDataDataLabelsAnimationOptions {
   
-  @scala.inline
-  def apply(): SeriesPolygonDataDataLabelsAnimationOptions = {
+  inline def apply(): SeriesPolygonDataDataLabelsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesPolygonDataDataLabelsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class SeriesPolygonDataDataLabelsAnimationOptionsMutableBuilder[Self <: SeriesPolygonDataDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesPolygonDataDataLabelsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

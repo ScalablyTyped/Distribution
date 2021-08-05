@@ -15,20 +15,16 @@ trait WindowEndLoadEvent[Topic, Type]
 }
 object WindowEndLoadEvent {
   
-  @scala.inline
-  def apply[Topic, Type](documentName: String, isMain: Boolean, name: String, topic: Topic, `type`: Type, uuid: String): WindowEndLoadEvent[Topic, Type] = {
+  inline def apply[Topic, Type](documentName: String, isMain: Boolean, name: String, topic: Topic, `type`: Type, uuid: String): WindowEndLoadEvent[Topic, Type] = {
     val __obj = js.Dynamic.literal(documentName = documentName.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowEndLoadEvent[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class WindowEndLoadEventMutableBuilder[Self <: WindowEndLoadEvent[?, ?], Topic, Type] (val x: Self & (WindowEndLoadEvent[Topic, Type])) extends AnyVal {
+  extension [Self <: WindowEndLoadEvent[?, ?], Topic, Type](x: Self & (WindowEndLoadEvent[Topic, Type])) {
     
-    @scala.inline
-    def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
+    inline def setDocumentName(value: String): Self = StObject.set(x, "documentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
+    inline def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
   }
 }

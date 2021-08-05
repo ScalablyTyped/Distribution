@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Win32LobAppRuleType extends StObject
 object Win32LobAppRuleType {
   
-  @scala.inline
-  def detection: typings.microsoftGraph.microsoftGraphStrings.detection = "detection".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.detection]
+  inline def detection: typings.microsoftGraph.microsoftGraphStrings.detection = "detection".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.detection]
   
-  @scala.inline
-  def requirement: typings.microsoftGraph.microsoftGraphStrings.requirement = "requirement".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.requirement]
+  inline def requirement: typings.microsoftGraph.microsoftGraphStrings.requirement = "requirement".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.requirement]
 }

@@ -10,6 +10,5 @@ object useConstCallbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useConstCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useConstCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def useConstCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useConstCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
 }

@@ -22,28 +22,21 @@ trait IConnackPacket
 }
 object IConnackPacket {
   
-  @scala.inline
-  def apply(returnCode: Double, sessionPresent: Boolean): IConnackPacket = {
+  inline def apply(returnCode: Double, sessionPresent: Boolean): IConnackPacket = {
     val __obj = js.Dynamic.literal(cmd = "connack", returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnackPacket]
   }
   
-  @scala.inline
-  implicit class IConnackPacketMutableBuilder[Self <: IConnackPacket] (val x: Self) extends AnyVal {
+  extension [Self <: IConnackPacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: connack): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: connack): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: AssignedClientIdentifier): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: AssignedClientIdentifier): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setReturnCode(value: Double): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
+    inline def setReturnCode(value: Double): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionPresent(value: Boolean): Self = StObject.set(x, "sessionPresent", value.asInstanceOf[js.Any])
+    inline def setSessionPresent(value: Boolean): Self = StObject.set(x, "sessionPresent", value.asInstanceOf[js.Any])
   }
 }

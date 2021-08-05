@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlThreadMode extends StObject
 object XlThreadMode {
   
-  @scala.inline
-  def xlThreadModeAutomatic: `0` = 0.asInstanceOf[`0`]
+  inline def xlThreadModeAutomatic: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlThreadModeManual: `1` = 1.asInstanceOf[`1`]
+  inline def xlThreadModeManual: `1` = 1.asInstanceOf[`1`]
 }

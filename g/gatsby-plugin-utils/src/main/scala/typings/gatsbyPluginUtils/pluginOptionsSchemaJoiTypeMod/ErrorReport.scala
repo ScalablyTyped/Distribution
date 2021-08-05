@@ -26,8 +26,7 @@ trait ErrorReport
 }
 object ErrorReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     flags: Record[String, ExtensionFlag],
     message: String,
@@ -42,31 +41,22 @@ object ErrorReport {
     __obj.asInstanceOf[ErrorReport]
   }
   
-  @scala.inline
-  implicit class ErrorReportMutableBuilder[Self <: ErrorReport] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorReport](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Record[String, ExtensionFlag]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Record[String, ExtensionFlag]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: LanguageMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: LanguageMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setPrefs(value: ErrorValidationOptions): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    inline def setPrefs(value: ErrorValidationOptions): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -44,52 +44,37 @@ trait OAuth2PermissionGrant
 }
 object OAuth2PermissionGrant {
   
-  @scala.inline
-  def apply(): OAuth2PermissionGrant = {
+  inline def apply(): OAuth2PermissionGrant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuth2PermissionGrant]
   }
   
-  @scala.inline
-  implicit class OAuth2PermissionGrantMutableBuilder[Self <: OAuth2PermissionGrant] (val x: Self) extends AnyVal {
+  extension [Self <: OAuth2PermissionGrant](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setConsentType(value: NullableOption[String]): Self = StObject.set(x, "consentType", value.asInstanceOf[js.Any])
+    inline def setConsentType(value: NullableOption[String]): Self = StObject.set(x, "consentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsentTypeNull: Self = StObject.set(x, "consentType", null)
+    inline def setConsentTypeNull: Self = StObject.set(x, "consentType", null)
     
-    @scala.inline
-    def setConsentTypeUndefined: Self = StObject.set(x, "consentType", js.undefined)
+    inline def setConsentTypeUndefined: Self = StObject.set(x, "consentType", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: NullableOption[String]): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: NullableOption[String]): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdNull: Self = StObject.set(x, "principalId", null)
+    inline def setPrincipalIdNull: Self = StObject.set(x, "principalId", null)
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
-    @scala.inline
-    def setScope(value: NullableOption[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: NullableOption[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeNull: Self = StObject.set(x, "scope", null)
+    inline def setScopeNull: Self = StObject.set(x, "scope", null)
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

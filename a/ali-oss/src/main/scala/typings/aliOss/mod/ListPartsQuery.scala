@@ -16,8 +16,7 @@ trait ListPartsQuery extends StObject {
 }
 object ListPartsQuery {
   
-  @scala.inline
-  def apply(`encoding-type`: String, `max-parts`: Double, `part-number-marker`: Double): ListPartsQuery = {
+  inline def apply(`encoding-type`: String, `max-parts`: Double, `part-number-marker`: Double): ListPartsQuery = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("encoding-type")(`encoding-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("max-parts")(`max-parts`.asInstanceOf[js.Any])
@@ -25,16 +24,12 @@ object ListPartsQuery {
     __obj.asInstanceOf[ListPartsQuery]
   }
   
-  @scala.inline
-  implicit class ListPartsQueryMutableBuilder[Self <: ListPartsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ListPartsQuery](x: Self) {
     
-    @scala.inline
-    def `setEncoding-type`(value: String): Self = StObject.set(x, "encoding-type", value.asInstanceOf[js.Any])
+    inline def `setEncoding-type`(value: String): Self = StObject.set(x, "encoding-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-parts`(value: Double): Self = StObject.set(x, "max-parts", value.asInstanceOf[js.Any])
+    inline def `setMax-parts`(value: Double): Self = StObject.set(x, "max-parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPart-number-marker`(value: Double): Self = StObject.set(x, "part-number-marker", value.asInstanceOf[js.Any])
+    inline def `setPart-number-marker`(value: Double): Self = StObject.set(x, "part-number-marker", value.asInstanceOf[js.Any])
   }
 }

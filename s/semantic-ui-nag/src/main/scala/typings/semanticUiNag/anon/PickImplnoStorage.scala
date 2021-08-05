@@ -11,16 +11,13 @@ trait PickImplnoStorage extends StObject {
 }
 object PickImplnoStorage {
   
-  @scala.inline
-  def apply(noStorage: String): PickImplnoStorage = {
+  inline def apply(noStorage: String): PickImplnoStorage = {
     val __obj = js.Dynamic.literal(noStorage = noStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnoStorage]
   }
   
-  @scala.inline
-  implicit class PickImplnoStorageMutableBuilder[Self <: PickImplnoStorage] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnoStorage](x: Self) {
     
-    @scala.inline
-    def setNoStorage(value: String): Self = StObject.set(x, "noStorage", value.asInstanceOf[js.Any])
+    inline def setNoStorage(value: String): Self = StObject.set(x, "noStorage", value.asInstanceOf[js.Any])
   }
 }

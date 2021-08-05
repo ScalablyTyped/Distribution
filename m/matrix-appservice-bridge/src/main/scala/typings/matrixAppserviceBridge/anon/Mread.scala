@@ -12,17 +12,14 @@ trait Mread extends StObject {
 }
 object Mread {
   
-  @scala.inline
-  def apply(mDotread: StringDictionary[Ts]): Mread = {
+  inline def apply(mDotread: StringDictionary[Ts]): Mread = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("m.read")(mDotread.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mread]
   }
   
-  @scala.inline
-  implicit class MreadMutableBuilder[Self <: Mread] (val x: Self) extends AnyVal {
+  extension [Self <: Mread](x: Self) {
     
-    @scala.inline
-    def setMDotread(value: StringDictionary[Ts]): Self = StObject.set(x, "m.read", value.asInstanceOf[js.Any])
+    inline def setMDotread(value: StringDictionary[Ts]): Self = StObject.set(x, "m.read", value.asInstanceOf[js.Any])
   }
 }

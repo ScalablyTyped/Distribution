@@ -28,28 +28,21 @@ trait GetShardIteratorInput extends StObject {
 }
 object GetShardIteratorInput {
   
-  @scala.inline
-  def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType, StreamArn: StreamArn): GetShardIteratorInput = {
+  inline def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType, StreamArn: StreamArn): GetShardIteratorInput = {
     val __obj = js.Dynamic.literal(ShardId = ShardId.asInstanceOf[js.Any], ShardIteratorType = ShardIteratorType.asInstanceOf[js.Any], StreamArn = StreamArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShardIteratorInput]
   }
   
-  @scala.inline
-  implicit class GetShardIteratorInputMutableBuilder[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetShardIteratorInput](x: Self) {
     
-    @scala.inline
-    def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+    inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
     
-    @scala.inline
-    def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+    inline def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardIteratorType(value: ShardIteratorType): Self = StObject.set(x, "ShardIteratorType", value.asInstanceOf[js.Any])
+    inline def setShardIteratorType(value: ShardIteratorType): Self = StObject.set(x, "ShardIteratorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
+    inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
   }
 }

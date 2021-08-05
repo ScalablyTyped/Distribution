@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-html-embedded-in-docx", JSImport.Namespace)
   @js.native
@@ -24,17 +23,14 @@ object mod {
     }
     object Template {
       
-      @scala.inline
-      def apply(recipe: `html-embedded-in-docx` | String): Template = {
+      inline def apply(recipe: `html-embedded-in-docx` | String): Template = {
         val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
         __obj.asInstanceOf[Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+      extension [Self <: Template](x: Self) {
         
-        @scala.inline
-        def setRecipe(value: `html-embedded-in-docx` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setRecipe(value: `html-embedded-in-docx` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
       }
     }
   }

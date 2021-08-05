@@ -20,19 +20,15 @@ trait SchemaGoogleCloudDialogflowV2ExportAgentRequest extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2ExportAgentRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2ExportAgentRequest = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2ExportAgentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2ExportAgentRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2ExportAgentRequestMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2ExportAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2ExportAgentRequest](x: Self) {
     
-    @scala.inline
-    def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
+    inline def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
+    inline def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
   }
 }

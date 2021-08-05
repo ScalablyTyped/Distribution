@@ -11,8 +11,7 @@ trait PutEventsOutput
      with typings.awsSdkClientPinpointBrowser.typesPutEventsOutputMod.PutEventsOutput
 object PutEventsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, EventsResponse: UnmarshalledEventsResponse): PutEventsOutput = {
+  inline def apply($metadata: ResponseMetadata, EventsResponse: UnmarshalledEventsResponse): PutEventsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventsResponse = EventsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsOutput]
   }

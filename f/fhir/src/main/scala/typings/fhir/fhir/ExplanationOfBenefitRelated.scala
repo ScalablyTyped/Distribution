@@ -28,31 +28,23 @@ trait ExplanationOfBenefitRelated
 }
 object ExplanationOfBenefitRelated {
   
-  @scala.inline
-  def apply(): ExplanationOfBenefitRelated = {
+  inline def apply(): ExplanationOfBenefitRelated = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExplanationOfBenefitRelated]
   }
   
-  @scala.inline
-  implicit class ExplanationOfBenefitRelatedMutableBuilder[Self <: ExplanationOfBenefitRelated] (val x: Self) extends AnyVal {
+  extension [Self <: ExplanationOfBenefitRelated](x: Self) {
     
-    @scala.inline
-    def setClaim(value: Reference): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
+    inline def setClaim(value: Reference): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
+    inline def setClaimUndefined: Self = StObject.set(x, "claim", js.undefined)
     
-    @scala.inline
-    def setReference(value: Identifier): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Identifier): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+    inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
     
-    @scala.inline
-    def setRelationship(value: CodeableConcept): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    inline def setRelationship(value: CodeableConcept): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
+    inline def setRelationshipUndefined: Self = StObject.set(x, "relationship", js.undefined)
   }
 }

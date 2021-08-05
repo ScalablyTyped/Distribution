@@ -16,23 +16,18 @@ object nativeTypesConfigMod {
   }
   object NativeItemConfig {
     
-    @scala.inline
-    def apply(exposeProperties: NativeItemConfigExposePropreties, matchesTypes: js.Array[String]): NativeItemConfig = {
+    inline def apply(exposeProperties: NativeItemConfigExposePropreties, matchesTypes: js.Array[String]): NativeItemConfig = {
       val __obj = js.Dynamic.literal(exposeProperties = exposeProperties.asInstanceOf[js.Any], matchesTypes = matchesTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[NativeItemConfig]
     }
     
-    @scala.inline
-    implicit class NativeItemConfigMutableBuilder[Self <: NativeItemConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NativeItemConfig](x: Self) {
       
-      @scala.inline
-      def setExposeProperties(value: NativeItemConfigExposePropreties): Self = StObject.set(x, "exposeProperties", value.asInstanceOf[js.Any])
+      inline def setExposeProperties(value: NativeItemConfigExposePropreties): Self = StObject.set(x, "exposeProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesTypes(value: js.Array[String]): Self = StObject.set(x, "matchesTypes", value.asInstanceOf[js.Any])
+      inline def setMatchesTypes(value: js.Array[String]): Self = StObject.set(x, "matchesTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesTypesVarargs(value: String*): Self = StObject.set(x, "matchesTypes", js.Array(value :_*))
+      inline def setMatchesTypesVarargs(value: String*): Self = StObject.set(x, "matchesTypes", js.Array(value :_*))
     }
   }
   

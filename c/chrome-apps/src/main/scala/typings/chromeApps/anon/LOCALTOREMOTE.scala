@@ -14,19 +14,15 @@ trait LOCALTOREMOTE extends StObject {
 }
 object LOCALTOREMOTE {
   
-  @scala.inline
-  def apply(): LOCALTOREMOTE = {
+  inline def apply(): LOCALTOREMOTE = {
     val __obj = js.Dynamic.literal(LOCAL_TO_REMOTE = "local_to_remote", REMOTE_TO_LOCAL = "remote_to_local")
     __obj.asInstanceOf[LOCALTOREMOTE]
   }
   
-  @scala.inline
-  implicit class LOCALTOREMOTEMutableBuilder[Self <: LOCALTOREMOTE] (val x: Self) extends AnyVal {
+  extension [Self <: LOCALTOREMOTE](x: Self) {
     
-    @scala.inline
-    def setLOCAL_TO_REMOTE(value: local_to_remote_): Self = StObject.set(x, "LOCAL_TO_REMOTE", value.asInstanceOf[js.Any])
+    inline def setLOCAL_TO_REMOTE(value: local_to_remote_): Self = StObject.set(x, "LOCAL_TO_REMOTE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREMOTE_TO_LOCAL(value: remote_to_local_): Self = StObject.set(x, "REMOTE_TO_LOCAL", value.asInstanceOf[js.Any])
+    inline def setREMOTE_TO_LOCAL(value: remote_to_local_): Self = StObject.set(x, "REMOTE_TO_LOCAL", value.asInstanceOf[js.Any])
   }
 }

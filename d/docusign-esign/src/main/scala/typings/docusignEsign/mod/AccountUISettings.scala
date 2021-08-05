@@ -81,179 +81,129 @@ trait AccountUISettings extends StObject {
 }
 object AccountUISettings {
   
-  @scala.inline
-  def apply(): AccountUISettings = {
+  inline def apply(): AccountUISettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountUISettings]
   }
   
-  @scala.inline
-  implicit class AccountUISettingsMutableBuilder[Self <: AccountUISettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccountUISettings](x: Self) {
     
-    @scala.inline
-    def setAdminMessage(value: AdminMessage): Self = StObject.set(x, "adminMessage", value.asInstanceOf[js.Any])
+    inline def setAdminMessage(value: AdminMessage): Self = StObject.set(x, "adminMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminMessageUndefined: Self = StObject.set(x, "adminMessage", js.undefined)
+    inline def setAdminMessageUndefined: Self = StObject.set(x, "adminMessage", js.undefined)
     
-    @scala.inline
-    def setAskAnAdmin(value: AskAnAdmin): Self = StObject.set(x, "askAnAdmin", value.asInstanceOf[js.Any])
+    inline def setAskAnAdmin(value: AskAnAdmin): Self = StObject.set(x, "askAnAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAskAnAdminUndefined: Self = StObject.set(x, "askAnAdmin", js.undefined)
+    inline def setAskAnAdminUndefined: Self = StObject.set(x, "askAnAdmin", js.undefined)
     
-    @scala.inline
-    def setEnableAdminMessage(value: String): Self = StObject.set(x, "enableAdminMessage", value.asInstanceOf[js.Any])
+    inline def setEnableAdminMessage(value: String): Self = StObject.set(x, "enableAdminMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAdminMessageMetadata(
+    inline def setEnableAdminMessageMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "enableAdminMessageMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAdminMessageMetadataUndefined: Self = StObject.set(x, "enableAdminMessageMetadata", js.undefined)
+    inline def setEnableAdminMessageMetadataUndefined: Self = StObject.set(x, "enableAdminMessageMetadata", js.undefined)
     
-    @scala.inline
-    def setEnableAdminMessageUndefined: Self = StObject.set(x, "enableAdminMessage", js.undefined)
+    inline def setEnableAdminMessageUndefined: Self = StObject.set(x, "enableAdminMessage", js.undefined)
     
-    @scala.inline
-    def setEnableEasySignCanUseMultiTemplateApply(value: String): Self = StObject.set(x, "enableEasySignCanUseMultiTemplateApply", value.asInstanceOf[js.Any])
+    inline def setEnableEasySignCanUseMultiTemplateApply(value: String): Self = StObject.set(x, "enableEasySignCanUseMultiTemplateApply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEasySignCanUseMultiTemplateApplyMetadata(
+    inline def setEnableEasySignCanUseMultiTemplateApplyMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "enableEasySignCanUseMultiTemplateApplyMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEasySignCanUseMultiTemplateApplyMetadataUndefined: Self = StObject.set(x, "enableEasySignCanUseMultiTemplateApplyMetadata", js.undefined)
+    inline def setEnableEasySignCanUseMultiTemplateApplyMetadataUndefined: Self = StObject.set(x, "enableEasySignCanUseMultiTemplateApplyMetadata", js.undefined)
     
-    @scala.inline
-    def setEnableEasySignCanUseMultiTemplateApplyUndefined: Self = StObject.set(x, "enableEasySignCanUseMultiTemplateApply", js.undefined)
+    inline def setEnableEasySignCanUseMultiTemplateApplyUndefined: Self = StObject.set(x, "enableEasySignCanUseMultiTemplateApply", js.undefined)
     
-    @scala.inline
-    def setEnableEasySignTemplateUpload(value: String): Self = StObject.set(x, "enableEasySignTemplateUpload", value.asInstanceOf[js.Any])
+    inline def setEnableEasySignTemplateUpload(value: String): Self = StObject.set(x, "enableEasySignTemplateUpload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEasySignTemplateUploadMetadata(
+    inline def setEnableEasySignTemplateUploadMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "enableEasySignTemplateUploadMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEasySignTemplateUploadMetadataUndefined: Self = StObject.set(x, "enableEasySignTemplateUploadMetadata", js.undefined)
+    inline def setEnableEasySignTemplateUploadMetadataUndefined: Self = StObject.set(x, "enableEasySignTemplateUploadMetadata", js.undefined)
     
-    @scala.inline
-    def setEnableEasySignTemplateUploadUndefined: Self = StObject.set(x, "enableEasySignTemplateUpload", js.undefined)
+    inline def setEnableEasySignTemplateUploadUndefined: Self = StObject.set(x, "enableEasySignTemplateUpload", js.undefined)
     
-    @scala.inline
-    def setEnableEnvelopeCopyWithData(value: String): Self = StObject.set(x, "enableEnvelopeCopyWithData", value.asInstanceOf[js.Any])
+    inline def setEnableEnvelopeCopyWithData(value: String): Self = StObject.set(x, "enableEnvelopeCopyWithData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEnvelopeCopyWithDataMetadata(
+    inline def setEnableEnvelopeCopyWithDataMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "enableEnvelopeCopyWithDataMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEnvelopeCopyWithDataMetadataUndefined: Self = StObject.set(x, "enableEnvelopeCopyWithDataMetadata", js.undefined)
+    inline def setEnableEnvelopeCopyWithDataMetadataUndefined: Self = StObject.set(x, "enableEnvelopeCopyWithDataMetadata", js.undefined)
     
-    @scala.inline
-    def setEnableEnvelopeCopyWithDataUndefined: Self = StObject.set(x, "enableEnvelopeCopyWithData", js.undefined)
+    inline def setEnableEnvelopeCopyWithDataUndefined: Self = StObject.set(x, "enableEnvelopeCopyWithData", js.undefined)
     
-    @scala.inline
-    def setHideSendAnEnvelope(value: String): Self = StObject.set(x, "hideSendAnEnvelope", value.asInstanceOf[js.Any])
+    inline def setHideSendAnEnvelope(value: String): Self = StObject.set(x, "hideSendAnEnvelope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSendAnEnvelopeMetadata(
+    inline def setHideSendAnEnvelopeMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "hideSendAnEnvelopeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSendAnEnvelopeMetadataUndefined: Self = StObject.set(x, "hideSendAnEnvelopeMetadata", js.undefined)
+    inline def setHideSendAnEnvelopeMetadataUndefined: Self = StObject.set(x, "hideSendAnEnvelopeMetadata", js.undefined)
     
-    @scala.inline
-    def setHideSendAnEnvelopeUndefined: Self = StObject.set(x, "hideSendAnEnvelope", js.undefined)
+    inline def setHideSendAnEnvelopeUndefined: Self = StObject.set(x, "hideSendAnEnvelope", js.undefined)
     
-    @scala.inline
-    def setHideUseATemplate(value: String): Self = StObject.set(x, "hideUseATemplate", value.asInstanceOf[js.Any])
+    inline def setHideUseATemplate(value: String): Self = StObject.set(x, "hideUseATemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUseATemplateInPrepare(value: String): Self = StObject.set(x, "hideUseATemplateInPrepare", value.asInstanceOf[js.Any])
+    inline def setHideUseATemplateInPrepare(value: String): Self = StObject.set(x, "hideUseATemplateInPrepare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUseATemplateInPrepareMetadata(
+    inline def setHideUseATemplateInPrepareMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "hideUseATemplateInPrepareMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUseATemplateInPrepareMetadataUndefined: Self = StObject.set(x, "hideUseATemplateInPrepareMetadata", js.undefined)
+    inline def setHideUseATemplateInPrepareMetadataUndefined: Self = StObject.set(x, "hideUseATemplateInPrepareMetadata", js.undefined)
     
-    @scala.inline
-    def setHideUseATemplateInPrepareUndefined: Self = StObject.set(x, "hideUseATemplateInPrepare", js.undefined)
+    inline def setHideUseATemplateInPrepareUndefined: Self = StObject.set(x, "hideUseATemplateInPrepare", js.undefined)
     
-    @scala.inline
-    def setHideUseATemplateMetadata(
+    inline def setHideUseATemplateMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "hideUseATemplateMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUseATemplateMetadataUndefined: Self = StObject.set(x, "hideUseATemplateMetadata", js.undefined)
+    inline def setHideUseATemplateMetadataUndefined: Self = StObject.set(x, "hideUseATemplateMetadata", js.undefined)
     
-    @scala.inline
-    def setHideUseATemplateUndefined: Self = StObject.set(x, "hideUseATemplate", js.undefined)
+    inline def setHideUseATemplateUndefined: Self = StObject.set(x, "hideUseATemplate", js.undefined)
     
-    @scala.inline
-    def setOrderBasedRecipientIdGeneration(value: String): Self = StObject.set(x, "orderBasedRecipientIdGeneration", value.asInstanceOf[js.Any])
+    inline def setOrderBasedRecipientIdGeneration(value: String): Self = StObject.set(x, "orderBasedRecipientIdGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBasedRecipientIdGenerationMetadata(
+    inline def setOrderBasedRecipientIdGenerationMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "orderBasedRecipientIdGenerationMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderBasedRecipientIdGenerationMetadataUndefined: Self = StObject.set(x, "orderBasedRecipientIdGenerationMetadata", js.undefined)
+    inline def setOrderBasedRecipientIdGenerationMetadataUndefined: Self = StObject.set(x, "orderBasedRecipientIdGenerationMetadata", js.undefined)
     
-    @scala.inline
-    def setOrderBasedRecipientIdGenerationUndefined: Self = StObject.set(x, "orderBasedRecipientIdGeneration", js.undefined)
+    inline def setOrderBasedRecipientIdGenerationUndefined: Self = StObject.set(x, "orderBasedRecipientIdGeneration", js.undefined)
     
-    @scala.inline
-    def setRemoveEnvelopeForwarding(value: String): Self = StObject.set(x, "removeEnvelopeForwarding", value.asInstanceOf[js.Any])
+    inline def setRemoveEnvelopeForwarding(value: String): Self = StObject.set(x, "removeEnvelopeForwarding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEnvelopeForwardingMetadata(
+    inline def setRemoveEnvelopeForwardingMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "removeEnvelopeForwardingMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEnvelopeForwardingMetadataUndefined: Self = StObject.set(x, "removeEnvelopeForwardingMetadata", js.undefined)
+    inline def setRemoveEnvelopeForwardingMetadataUndefined: Self = StObject.set(x, "removeEnvelopeForwardingMetadata", js.undefined)
     
-    @scala.inline
-    def setRemoveEnvelopeForwardingUndefined: Self = StObject.set(x, "removeEnvelopeForwarding", js.undefined)
+    inline def setRemoveEnvelopeForwardingUndefined: Self = StObject.set(x, "removeEnvelopeForwarding", js.undefined)
     
-    @scala.inline
-    def setShouldRedactAccessCode(value: String): Self = StObject.set(x, "shouldRedactAccessCode", value.asInstanceOf[js.Any])
+    inline def setShouldRedactAccessCode(value: String): Self = StObject.set(x, "shouldRedactAccessCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRedactAccessCodeMetadata(
+    inline def setShouldRedactAccessCodeMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "shouldRedactAccessCodeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldRedactAccessCodeMetadataUndefined: Self = StObject.set(x, "shouldRedactAccessCodeMetadata", js.undefined)
+    inline def setShouldRedactAccessCodeMetadataUndefined: Self = StObject.set(x, "shouldRedactAccessCodeMetadata", js.undefined)
     
-    @scala.inline
-    def setShouldRedactAccessCodeUndefined: Self = StObject.set(x, "shouldRedactAccessCode", js.undefined)
+    inline def setShouldRedactAccessCodeUndefined: Self = StObject.set(x, "shouldRedactAccessCode", js.undefined)
     
-    @scala.inline
-    def setUploadNewImageToSignOrInitial(value: String): Self = StObject.set(x, "uploadNewImageToSignOrInitial", value.asInstanceOf[js.Any])
+    inline def setUploadNewImageToSignOrInitial(value: String): Self = StObject.set(x, "uploadNewImageToSignOrInitial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadNewImageToSignOrInitialMetadata(
+    inline def setUploadNewImageToSignOrInitialMetadata(
       value: /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
     ): Self = StObject.set(x, "uploadNewImageToSignOrInitialMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadNewImageToSignOrInitialMetadataUndefined: Self = StObject.set(x, "uploadNewImageToSignOrInitialMetadata", js.undefined)
+    inline def setUploadNewImageToSignOrInitialMetadataUndefined: Self = StObject.set(x, "uploadNewImageToSignOrInitialMetadata", js.undefined)
     
-    @scala.inline
-    def setUploadNewImageToSignOrInitialUndefined: Self = StObject.set(x, "uploadNewImageToSignOrInitial", js.undefined)
+    inline def setUploadNewImageToSignOrInitialUndefined: Self = StObject.set(x, "uploadNewImageToSignOrInitial", js.undefined)
   }
 }

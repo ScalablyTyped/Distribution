@@ -12,25 +12,19 @@ trait LeaveUnmerged extends StObject {
 }
 object LeaveUnmerged {
   
-  @scala.inline
-  def apply(): LeaveUnmerged = {
+  inline def apply(): LeaveUnmerged = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeaveUnmerged]
   }
   
-  @scala.inline
-  implicit class LeaveUnmergedMutableBuilder[Self <: LeaveUnmerged] (val x: Self) extends AnyVal {
+  extension [Self <: LeaveUnmerged](x: Self) {
     
-    @scala.inline
-    def setDoNotResetEntireContent(value: Boolean): Self = StObject.set(x, "doNotResetEntireContent", value.asInstanceOf[js.Any])
+    inline def setDoNotResetEntireContent(value: Boolean): Self = StObject.set(x, "doNotResetEntireContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoNotResetEntireContentUndefined: Self = StObject.set(x, "doNotResetEntireContent", js.undefined)
+    inline def setDoNotResetEntireContentUndefined: Self = StObject.set(x, "doNotResetEntireContent", js.undefined)
     
-    @scala.inline
-    def setLeaveUnmerged(value: Boolean): Self = StObject.set(x, "leaveUnmerged", value.asInstanceOf[js.Any])
+    inline def setLeaveUnmerged(value: Boolean): Self = StObject.set(x, "leaveUnmerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveUnmergedUndefined: Self = StObject.set(x, "leaveUnmerged", js.undefined)
+    inline def setLeaveUnmergedUndefined: Self = StObject.set(x, "leaveUnmerged", js.undefined)
   }
 }

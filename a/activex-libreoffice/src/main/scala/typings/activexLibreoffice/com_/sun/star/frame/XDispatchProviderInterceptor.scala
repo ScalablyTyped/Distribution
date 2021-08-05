@@ -63,8 +63,7 @@ trait XDispatchProviderInterceptor
 }
 object XDispatchProviderInterceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MasterDispatchProvider: XDispatchProvider,
     SlaveDispatchProvider: XDispatchProvider,
     acquire: () => Unit,
@@ -81,25 +80,18 @@ object XDispatchProviderInterceptor {
     __obj.asInstanceOf[XDispatchProviderInterceptor]
   }
   
-  @scala.inline
-  implicit class XDispatchProviderInterceptorMutableBuilder[Self <: XDispatchProviderInterceptor] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchProviderInterceptor](x: Self) {
     
-    @scala.inline
-    def setGetMasterDispatchProvider(value: () => XDispatchProvider): Self = StObject.set(x, "getMasterDispatchProvider", js.Any.fromFunction0(value))
+    inline def setGetMasterDispatchProvider(value: () => XDispatchProvider): Self = StObject.set(x, "getMasterDispatchProvider", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSlaveDispatchProvider(value: () => XDispatchProvider): Self = StObject.set(x, "getSlaveDispatchProvider", js.Any.fromFunction0(value))
+    inline def setGetSlaveDispatchProvider(value: () => XDispatchProvider): Self = StObject.set(x, "getSlaveDispatchProvider", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMasterDispatchProvider(value: XDispatchProvider): Self = StObject.set(x, "MasterDispatchProvider", value.asInstanceOf[js.Any])
+    inline def setMasterDispatchProvider(value: XDispatchProvider): Self = StObject.set(x, "MasterDispatchProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetMasterDispatchProvider(value: XDispatchProvider => Unit): Self = StObject.set(x, "setMasterDispatchProvider", js.Any.fromFunction1(value))
+    inline def setSetMasterDispatchProvider(value: XDispatchProvider => Unit): Self = StObject.set(x, "setMasterDispatchProvider", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSlaveDispatchProvider(value: XDispatchProvider => Unit): Self = StObject.set(x, "setSlaveDispatchProvider", js.Any.fromFunction1(value))
+    inline def setSetSlaveDispatchProvider(value: XDispatchProvider => Unit): Self = StObject.set(x, "setSlaveDispatchProvider", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSlaveDispatchProvider(value: XDispatchProvider): Self = StObject.set(x, "SlaveDispatchProvider", value.asInstanceOf[js.Any])
+    inline def setSlaveDispatchProvider(value: XDispatchProvider): Self = StObject.set(x, "SlaveDispatchProvider", value.asInstanceOf[js.Any])
   }
 }

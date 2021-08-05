@@ -20,29 +20,22 @@ trait FillPattern
 }
 object FillPattern {
   
-  @scala.inline
-  def apply(fgColor: PartialColor, pattern: FillPatterns): FillPattern = {
+  inline def apply(fgColor: PartialColor, pattern: FillPatterns): FillPattern = {
     val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[FillPattern]
   }
   
-  @scala.inline
-  implicit class FillPatternMutableBuilder[Self <: FillPattern] (val x: Self) extends AnyVal {
+  extension [Self <: FillPattern](x: Self) {
     
-    @scala.inline
-    def setBgColor(value: PartialColor): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    inline def setBgColor(value: PartialColor): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
-    @scala.inline
-    def setFgColor(value: PartialColor): Self = StObject.set(x, "fgColor", value.asInstanceOf[js.Any])
+    inline def setFgColor(value: PartialColor): Self = StObject.set(x, "fgColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: FillPatterns): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: FillPatterns): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -19,19 +19,15 @@ trait SuspendingOperation extends StObject {
 }
 object SuspendingOperation {
   
-  @scala.inline
-  def apply(deadline: Date, getDeferral: () => typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral): SuspendingOperation = {
+  inline def apply(deadline: Date, getDeferral: () => typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral): SuspendingOperation = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[SuspendingOperation]
   }
   
-  @scala.inline
-  implicit class SuspendingOperationMutableBuilder[Self <: SuspendingOperation] (val x: Self) extends AnyVal {
+  extension [Self <: SuspendingOperation](x: Self) {
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => typings.winrtUwp.Windows.ApplicationModel.SuspendingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

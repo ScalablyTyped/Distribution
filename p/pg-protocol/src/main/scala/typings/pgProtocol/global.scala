@@ -21,26 +21,22 @@ object global {
   @JSGlobal("EventEmitter")
   @js.native
   def EventEmitter: js.Any = js.native
-  @scala.inline
-  def EventEmitter_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("EventEmitter")(x.asInstanceOf[js.Any])
+  inline def EventEmitter_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("EventEmitter")(x.asInstanceOf[js.Any])
   
   @JSGlobal("TEXT_MODE")
   @js.native
   def TEXT_MODE: Double = js.native
-  @scala.inline
-  def TEXT_MODE_=(x: Double): Unit = js.Dynamic.global.updateDynamic("TEXT_MODE")(x.asInstanceOf[js.Any])
+  inline def TEXT_MODE_=(x: Double): Unit = js.Dynamic.global.updateDynamic("TEXT_MODE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Writer")
   @js.native
   def Writer: js.Any = js.native
-  @scala.inline
-  def Writer_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("Writer")(x.asInstanceOf[js.Any])
+  inline def Writer_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("Writer")(x.asInstanceOf[js.Any])
   
   @JSGlobal("emptyBuffer")
   @js.native
   def emptyBuffer: Buffer = js.native
-  @scala.inline
-  def emptyBuffer_=(x: Buffer): Unit = js.Dynamic.global.updateDynamic("emptyBuffer")(x.asInstanceOf[js.Any])
+  inline def emptyBuffer_=(x: Buffer): Unit = js.Dynamic.global.updateDynamic("emptyBuffer")(x.asInstanceOf[js.Any])
   
   @JSGlobal("flushBuffer")
   @js.native
@@ -49,8 +45,7 @@ object global {
   @JSGlobal("net")
   @js.native
   def net: js.Any = js.native
-  @scala.inline
-  def net_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("net")(x.asInstanceOf[js.Any])
+  inline def net_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("net")(x.asInstanceOf[js.Any])
   
   @JSGlobal("parse")
   @js.native
@@ -63,12 +58,10 @@ object global {
   @JSGlobal("util")
   @js.native
   def util: js.Any = js.native
-  @scala.inline
-  def util_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("util")(x.asInstanceOf[js.Any])
+  inline def util_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("util")(x.asInstanceOf[js.Any])
   
   @JSGlobal("warnDeprecation")
   @js.native
   def warnDeprecation: js.Any = js.native
-  @scala.inline
-  def warnDeprecation_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("warnDeprecation")(x.asInstanceOf[js.Any])
+  inline def warnDeprecation_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("warnDeprecation")(x.asInstanceOf[js.Any])
 }

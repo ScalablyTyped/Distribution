@@ -56,49 +56,35 @@ trait ErrorFormattingOptions extends StObject {
 }
 object ErrorFormattingOptions {
   
-  @scala.inline
-  def apply(): ErrorFormattingOptions = {
+  inline def apply(): ErrorFormattingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorFormattingOptions]
   }
   
-  @scala.inline
-  implicit class ErrorFormattingOptionsMutableBuilder[Self <: ErrorFormattingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorFormattingOptions](x: Self) {
     
-    @scala.inline
-    def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
+    inline def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeHtmlUndefined: Self = StObject.set(x, "escapeHtml", js.undefined)
+    inline def setEscapeHtmlUndefined: Self = StObject.set(x, "escapeHtml", js.undefined)
     
-    @scala.inline
-    def setLabel(value: path | key | `false`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: path | key | `false`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: /* keyof @hapi/joi.@hapi/joi.LanguageMessages */ String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: /* keyof @hapi/joi.@hapi/joi.LanguageMessages */ String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    @scala.inline
-    def setWrap(value: Array): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: Array): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

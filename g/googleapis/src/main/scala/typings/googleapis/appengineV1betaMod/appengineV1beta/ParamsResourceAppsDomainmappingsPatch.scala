@@ -40,43 +40,31 @@ trait ParamsResourceAppsDomainmappingsPatch
 }
 object ParamsResourceAppsDomainmappingsPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceAppsDomainmappingsPatch = {
+  inline def apply(): ParamsResourceAppsDomainmappingsPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAppsDomainmappingsPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAppsDomainmappingsPatchMutableBuilder[Self <: ParamsResourceAppsDomainmappingsPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAppsDomainmappingsPatch](x: Self) {
     
-    @scala.inline
-    def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
+    inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
+    inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDomainMappingsId(value: String): Self = StObject.set(x, "domainMappingsId", value.asInstanceOf[js.Any])
+    inline def setDomainMappingsId(value: String): Self = StObject.set(x, "domainMappingsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainMappingsIdUndefined: Self = StObject.set(x, "domainMappingsId", js.undefined)
+    inline def setDomainMappingsIdUndefined: Self = StObject.set(x, "domainMappingsId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaDomainMapping): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaDomainMapping): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

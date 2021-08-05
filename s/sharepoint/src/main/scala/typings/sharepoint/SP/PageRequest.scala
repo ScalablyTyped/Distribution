@@ -31,8 +31,7 @@ trait PageRequest extends StObject {
 }
 object PageRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add_failed: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit,
     add_succeeded: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit,
     get: () => Unit,
@@ -49,40 +48,28 @@ object PageRequest {
     __obj.asInstanceOf[PageRequest]
   }
   
-  @scala.inline
-  implicit class PageRequestMutableBuilder[Self <: PageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PageRequest](x: Self) {
     
-    @scala.inline
-    def setAdd_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_failed", js.Any.fromFunction1(value))
+    inline def setAdd_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_failed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdd_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "add_succeeded", js.Any.fromFunction1(value))
+    inline def setAdd_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "add_succeeded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_expectedContentType(value: () => String): Self = StObject.set(x, "get_expectedContentType", js.Any.fromFunction0(value))
+    inline def setGet_expectedContentType(value: () => String): Self = StObject.set(x, "get_expectedContentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_request(value: () => WebRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
+    inline def setGet_request(value: () => WebRequest): Self = StObject.set(x, "get_request", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPost(value: String => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
+    inline def setPost(value: String => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_failed", js.Any.fromFunction1(value))
+    inline def setRemove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_failed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_succeeded", js.Any.fromFunction1(value))
+    inline def setRemove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_succeeded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_expectedContentType(value: String => Unit): Self = StObject.set(x, "set_expectedContentType", js.Any.fromFunction1(value))
+    inline def setSet_expectedContentType(value: String => Unit): Self = StObject.set(x, "set_expectedContentType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => Unit): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
   }
 }

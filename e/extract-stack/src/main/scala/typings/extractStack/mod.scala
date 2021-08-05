@@ -29,12 +29,9 @@ object mod {
   	// 	at startup (node.js:139:18)
   	```
   	 */
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(error: String): String = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(error: Error): String = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(error: String): String = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(error: Error): String = ^.asInstanceOf[js.Dynamic].apply(error.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("extract-stack", JSImport.Namespace)
   @js.native
@@ -63,10 +60,7 @@ object mod {
   	// ]
   	```
   	 */
-  @scala.inline
-  def lines(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")().asInstanceOf[js.Array[String]]
-  @scala.inline
-  def lines(error: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def lines(error: Error): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def lines(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")().asInstanceOf[js.Array[String]]
+  inline def lines(error: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def lines(error: Error): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lines")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

@@ -13,16 +13,13 @@ trait Ldapdn
 }
 object Ldapdn {
   
-  @scala.inline
-  def apply(ldapdn: String): Ldapdn = {
+  inline def apply(ldapdn: String): Ldapdn = {
     val __obj = js.Dynamic.literal(ldapdn = ldapdn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ldapdn]
   }
   
-  @scala.inline
-  implicit class LdapdnMutableBuilder[Self <: Ldapdn] (val x: Self) extends AnyVal {
+  extension [Self <: Ldapdn](x: Self) {
     
-    @scala.inline
-    def setLdapdn(value: String): Self = StObject.set(x, "ldapdn", value.asInstanceOf[js.Any])
+    inline def setLdapdn(value: String): Self = StObject.set(x, "ldapdn", value.asInstanceOf[js.Any])
   }
 }

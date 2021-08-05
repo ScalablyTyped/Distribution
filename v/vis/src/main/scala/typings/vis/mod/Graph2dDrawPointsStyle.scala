@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Graph2dDrawPointsStyle extends StObject
 object Graph2dDrawPointsStyle {
   
-  @scala.inline
-  def circle: typings.vis.visStrings.circle = "circle".asInstanceOf[typings.vis.visStrings.circle]
+  inline def circle: typings.vis.visStrings.circle = "circle".asInstanceOf[typings.vis.visStrings.circle]
   
-  @scala.inline
-  def square: typings.vis.visStrings.square = "square".asInstanceOf[typings.vis.visStrings.square]
+  inline def square: typings.vis.visStrings.square = "square".asInstanceOf[typings.vis.visStrings.square]
 }

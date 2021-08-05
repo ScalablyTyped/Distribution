@@ -14,8 +14,7 @@ trait ExportAssignment
 }
 object ExportAssignment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object ExportAssignment {
     __obj.asInstanceOf[ExportAssignment]
   }
   
-  @scala.inline
-  implicit class ExportAssignmentMutableBuilder[Self <: ExportAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAssignment](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (ExportAssignment, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ExportAssignment, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

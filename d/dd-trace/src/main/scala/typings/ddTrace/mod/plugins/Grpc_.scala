@@ -21,27 +21,21 @@ trait Grpc_
 }
 object Grpc_ {
   
-  @scala.inline
-  def apply(): Grpc_ = {
+  inline def apply(): Grpc_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Grpc_]
   }
   
-  @scala.inline
-  implicit class Grpc_MutableBuilder[Self <: Grpc_] (val x: Self) extends AnyVal {
+  extension [Self <: Grpc_](x: Self) {
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[js.Any]])
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
+    inline def setMetadataFunction1(value: /* variables */ StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: String*): Self = StObject.set(x, "metadata", js.Array(value :_*))
   }
 }

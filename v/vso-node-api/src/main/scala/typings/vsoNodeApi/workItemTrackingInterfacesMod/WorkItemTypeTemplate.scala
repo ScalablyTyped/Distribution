@@ -13,16 +13,13 @@ trait WorkItemTypeTemplate extends StObject {
 }
 object WorkItemTypeTemplate {
   
-  @scala.inline
-  def apply(template: String): WorkItemTypeTemplate = {
+  inline def apply(template: String): WorkItemTypeTemplate = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemTypeTemplate]
   }
   
-  @scala.inline
-  implicit class WorkItemTypeTemplateMutableBuilder[Self <: WorkItemTypeTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTypeTemplate](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

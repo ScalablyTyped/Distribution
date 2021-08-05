@@ -26,8 +26,7 @@ object mod extends Shortcut {
   }
   object Hash {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       array: () => js.Array[Double],
       arrayBuffer: () => ArrayBuffer,
       digest: () => js.Array[Double],
@@ -38,23 +37,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Hash]
     }
     
-    @scala.inline
-    implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+    extension [Self <: Hash](x: Self) {
       
-      @scala.inline
-      def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
+      inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
+      inline def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
+      inline def setHex(value: () => String): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: String => Hash): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: String => Hash): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   

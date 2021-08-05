@@ -22,17 +22,14 @@ object messageMod extends Shortcut {
   }
   object MessageProps {
     
-    @scala.inline
-    def apply(msg: String): MessageProps = {
+    inline def apply(msg: String): MessageProps = {
       val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageProps]
     }
     
-    @scala.inline
-    implicit class MessagePropsMutableBuilder[Self <: MessageProps] (val x: Self) extends AnyVal {
+    extension [Self <: MessageProps](x: Self) {
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
   }
   

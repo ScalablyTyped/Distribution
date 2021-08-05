@@ -14,19 +14,15 @@ trait DetectIdentifyResponse extends StObject {
 }
 object DetectIdentifyResponse {
   
-  @scala.inline
-  def apply(log_id: Double, result: Height): DetectIdentifyResponse = {
+  inline def apply(log_id: Double, result: Height): DetectIdentifyResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectIdentifyResponse]
   }
   
-  @scala.inline
-  implicit class DetectIdentifyResponseMutableBuilder[Self <: DetectIdentifyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectIdentifyResponse](x: Self) {
     
-    @scala.inline
-    def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Height): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Height): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

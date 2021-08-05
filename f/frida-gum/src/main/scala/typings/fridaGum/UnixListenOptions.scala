@@ -27,25 +27,19 @@ trait UnixListenOptions
 }
 object UnixListenOptions {
   
-  @scala.inline
-  def apply(path: String): UnixListenOptions = {
+  inline def apply(path: String): UnixListenOptions = {
     val __obj = js.Dynamic.literal(family = "unix", path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnixListenOptions]
   }
   
-  @scala.inline
-  implicit class UnixListenOptionsMutableBuilder[Self <: UnixListenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnixListenOptions](x: Self) {
     
-    @scala.inline
-    def setFamily(value: unix): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: unix): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UnixSocketType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UnixSocketType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

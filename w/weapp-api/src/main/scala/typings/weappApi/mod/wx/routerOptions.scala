@@ -15,16 +15,13 @@ trait routerOptions
 }
 object routerOptions {
   
-  @scala.inline
-  def apply(url: String): routerOptions = {
+  inline def apply(url: String): routerOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[routerOptions]
   }
   
-  @scala.inline
-  implicit class routerOptionsMutableBuilder[Self <: routerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: routerOptions](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

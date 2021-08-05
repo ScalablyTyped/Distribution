@@ -36,29 +36,22 @@ object mod {
       }
       object ProviderConfig {
         
-        @scala.inline
-        def apply(url: String): ProviderConfig = {
+        inline def apply(url: String): ProviderConfig = {
           val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
           __obj.asInstanceOf[ProviderConfig]
         }
         
-        @scala.inline
-        implicit class ProviderConfigMutableBuilder[Self <: ProviderConfig] (val x: Self) extends AnyVal {
+        extension [Self <: ProviderConfig](x: Self) {
           
-          @scala.inline
-          def setOptions(value: TileLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+          inline def setOptions(value: TileLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+          inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVariants(value: StringDictionary[String | ProviderConfig]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+          inline def setVariants(value: StringDictionary[String | ProviderConfig]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+          inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
         }
       }
       
@@ -72,11 +65,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def provider(provider: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any]).asInstanceOf[Provider]
-    @scala.inline
-    def provider(provider: String, options: StringDictionary[String]): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
-    @scala.inline
-    def provider(provider: String, options: TileLayerOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
+    inline def provider(provider: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any]).asInstanceOf[Provider]
+    inline def provider(provider: String, options: StringDictionary[String]): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
+    inline def provider(provider: String, options: TileLayerOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
   }
 }

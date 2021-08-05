@@ -14,25 +14,19 @@ trait VppLicensingType extends StObject {
 }
 object VppLicensingType {
   
-  @scala.inline
-  def apply(): VppLicensingType = {
+  inline def apply(): VppLicensingType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VppLicensingType]
   }
   
-  @scala.inline
-  implicit class VppLicensingTypeMutableBuilder[Self <: VppLicensingType] (val x: Self) extends AnyVal {
+  extension [Self <: VppLicensingType](x: Self) {
     
-    @scala.inline
-    def setSupportsDeviceLicensing(value: Boolean): Self = StObject.set(x, "supportsDeviceLicensing", value.asInstanceOf[js.Any])
+    inline def setSupportsDeviceLicensing(value: Boolean): Self = StObject.set(x, "supportsDeviceLicensing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDeviceLicensingUndefined: Self = StObject.set(x, "supportsDeviceLicensing", js.undefined)
+    inline def setSupportsDeviceLicensingUndefined: Self = StObject.set(x, "supportsDeviceLicensing", js.undefined)
     
-    @scala.inline
-    def setSupportsUserLicensing(value: Boolean): Self = StObject.set(x, "supportsUserLicensing", value.asInstanceOf[js.Any])
+    inline def setSupportsUserLicensing(value: Boolean): Self = StObject.set(x, "supportsUserLicensing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsUserLicensingUndefined: Self = StObject.set(x, "supportsUserLicensing", js.undefined)
+    inline def setSupportsUserLicensingUndefined: Self = StObject.set(x, "supportsUserLicensing", js.undefined)
   }
 }

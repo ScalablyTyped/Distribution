@@ -12,25 +12,19 @@ trait OauthAuthenticatorOptions extends StObject {
 }
 object OauthAuthenticatorOptions {
   
-  @scala.inline
-  def apply(): OauthAuthenticatorOptions = {
+  inline def apply(): OauthAuthenticatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OauthAuthenticatorOptions]
   }
   
-  @scala.inline
-  implicit class OauthAuthenticatorOptionsMutableBuilder[Self <: OauthAuthenticatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthenticatorOptions](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: Credentials | String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials | String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setFlowType(value: FlowType): Self = StObject.set(x, "flowType", value.asInstanceOf[js.Any])
+    inline def setFlowType(value: FlowType): Self = StObject.set(x, "flowType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowTypeUndefined: Self = StObject.set(x, "flowType", js.undefined)
+    inline def setFlowTypeUndefined: Self = StObject.set(x, "flowType", js.undefined)
   }
 }

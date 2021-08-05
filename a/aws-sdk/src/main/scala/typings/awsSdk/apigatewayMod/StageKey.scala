@@ -18,25 +18,19 @@ trait StageKey extends StObject {
 }
 object StageKey {
   
-  @scala.inline
-  def apply(): StageKey = {
+  inline def apply(): StageKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StageKey]
   }
   
-  @scala.inline
-  implicit class StageKeyMutableBuilder[Self <: StageKey] (val x: Self) extends AnyVal {
+  extension [Self <: StageKey](x: Self) {
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
+    inline def setRestApiIdUndefined: Self = StObject.set(x, "restApiId", js.undefined)
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+    inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
   }
 }

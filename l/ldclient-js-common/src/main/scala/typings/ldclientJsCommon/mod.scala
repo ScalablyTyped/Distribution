@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConsoleLogger(minimumLevel: String): LDLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(minimumLevel.asInstanceOf[js.Any]).asInstanceOf[LDLogger]
+  inline def createConsoleLogger(minimumLevel: String): LDLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createConsoleLogger")(minimumLevel.asInstanceOf[js.Any]).asInstanceOf[LDLogger]
   
   @JSImport("ldclient-js-common", "version")
   @js.native
@@ -288,26 +287,20 @@ object mod {
   }
   object LDEvaluationDetail {
     
-    @scala.inline
-    def apply(reason: LDEvaluationReason, value: LDFlagValue): LDEvaluationDetail = {
+    inline def apply(reason: LDEvaluationReason, value: LDFlagValue): LDEvaluationDetail = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LDEvaluationDetail]
     }
     
-    @scala.inline
-    implicit class LDEvaluationDetailMutableBuilder[Self <: LDEvaluationDetail] (val x: Self) extends AnyVal {
+    extension [Self <: LDEvaluationDetail](x: Self) {
       
-      @scala.inline
-      def setReason(value: LDEvaluationReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: LDEvaluationReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: LDFlagValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: LDFlagValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariationIndex(value: Double): Self = StObject.set(x, "variationIndex", value.asInstanceOf[js.Any])
+      inline def setVariationIndex(value: Double): Self = StObject.set(x, "variationIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariationIndexUndefined: Self = StObject.set(x, "variationIndex", js.undefined)
+      inline def setVariationIndexUndefined: Self = StObject.set(x, "variationIndex", js.undefined)
     }
   }
   
@@ -349,41 +342,30 @@ object mod {
   }
   object LDEvaluationReason {
     
-    @scala.inline
-    def apply(kind: String): LDEvaluationReason = {
+    inline def apply(kind: String): LDEvaluationReason = {
       val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
       __obj.asInstanceOf[LDEvaluationReason]
     }
     
-    @scala.inline
-    implicit class LDEvaluationReasonMutableBuilder[Self <: LDEvaluationReason] (val x: Self) extends AnyVal {
+    extension [Self <: LDEvaluationReason](x: Self) {
       
-      @scala.inline
-      def setErrorKind(value: String): Self = StObject.set(x, "errorKind", value.asInstanceOf[js.Any])
+      inline def setErrorKind(value: String): Self = StObject.set(x, "errorKind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorKindUndefined: Self = StObject.set(x, "errorKind", js.undefined)
+      inline def setErrorKindUndefined: Self = StObject.set(x, "errorKind", js.undefined)
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrerequisiteKey(value: String): Self = StObject.set(x, "prerequisiteKey", value.asInstanceOf[js.Any])
+      inline def setPrerequisiteKey(value: String): Self = StObject.set(x, "prerequisiteKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrerequisiteKeyUndefined: Self = StObject.set(x, "prerequisiteKey", js.undefined)
+      inline def setPrerequisiteKeyUndefined: Self = StObject.set(x, "prerequisiteKey", js.undefined)
       
-      @scala.inline
-      def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+      inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
+      inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
       
-      @scala.inline
-      def setRuleIndex(value: Double): Self = StObject.set(x, "ruleIndex", value.asInstanceOf[js.Any])
+      inline def setRuleIndex(value: Double): Self = StObject.set(x, "ruleIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleIndexUndefined: Self = StObject.set(x, "ruleIndex", js.undefined)
+      inline def setRuleIndexUndefined: Self = StObject.set(x, "ruleIndex", js.undefined)
     }
   }
   
@@ -405,26 +387,20 @@ object mod {
   }
   object LDLogger {
     
-    @scala.inline
-    def apply(debug: String => Unit, error: String => Unit, info: String => Unit, warn: String => Unit): LDLogger = {
+    inline def apply(debug: String => Unit, error: String => Unit, info: String => Unit, warn: String => Unit): LDLogger = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[LDLogger]
     }
     
-    @scala.inline
-    implicit class LDLoggerMutableBuilder[Self <: LDLogger] (val x: Self) extends AnyVal {
+    extension [Self <: LDLogger](x: Self) {
       
-      @scala.inline
-      def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   
@@ -577,119 +553,82 @@ object mod {
   }
   object LDOptionsBase {
     
-    @scala.inline
-    def apply(): LDOptionsBase = {
+    inline def apply(): LDOptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LDOptionsBase]
     }
     
-    @scala.inline
-    implicit class LDOptionsBaseMutableBuilder[Self <: LDOptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: LDOptionsBase](x: Self) {
       
-      @scala.inline
-      def setAllAttributesPrivate(value: Boolean): Self = StObject.set(x, "allAttributesPrivate", value.asInstanceOf[js.Any])
+      inline def setAllAttributesPrivate(value: Boolean): Self = StObject.set(x, "allAttributesPrivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllAttributesPrivateUndefined: Self = StObject.set(x, "allAttributesPrivate", js.undefined)
+      inline def setAllAttributesPrivateUndefined: Self = StObject.set(x, "allAttributesPrivate", js.undefined)
       
-      @scala.inline
-      def setAllowFrequentDuplicateEvents(value: Boolean): Self = StObject.set(x, "allowFrequentDuplicateEvents", value.asInstanceOf[js.Any])
+      inline def setAllowFrequentDuplicateEvents(value: Boolean): Self = StObject.set(x, "allowFrequentDuplicateEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowFrequentDuplicateEventsUndefined: Self = StObject.set(x, "allowFrequentDuplicateEvents", js.undefined)
+      inline def setAllowFrequentDuplicateEventsUndefined: Self = StObject.set(x, "allowFrequentDuplicateEvents", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setBootstrap(value: localStorage | LDFlagSet): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
+      inline def setBootstrap(value: localStorage | LDFlagSet): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrapUndefined: Self = StObject.set(x, "bootstrap", js.undefined)
+      inline def setBootstrapUndefined: Self = StObject.set(x, "bootstrap", js.undefined)
       
-      @scala.inline
-      def setEvaluationReasons(value: Boolean): Self = StObject.set(x, "evaluationReasons", value.asInstanceOf[js.Any])
+      inline def setEvaluationReasons(value: Boolean): Self = StObject.set(x, "evaluationReasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvaluationReasonsUndefined: Self = StObject.set(x, "evaluationReasons", js.undefined)
+      inline def setEvaluationReasonsUndefined: Self = StObject.set(x, "evaluationReasons", js.undefined)
       
-      @scala.inline
-      def setEventsUrl(value: String): Self = StObject.set(x, "eventsUrl", value.asInstanceOf[js.Any])
+      inline def setEventsUrl(value: String): Self = StObject.set(x, "eventsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUrlUndefined: Self = StObject.set(x, "eventsUrl", js.undefined)
+      inline def setEventsUrlUndefined: Self = StObject.set(x, "eventsUrl", js.undefined)
       
-      @scala.inline
-      def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
+      inline def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
+      inline def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
       
-      @scala.inline
-      def setLogger(value: LDLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: LDLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setPrivateAttributeNames(value: js.Array[String]): Self = StObject.set(x, "privateAttributeNames", value.asInstanceOf[js.Any])
+      inline def setPrivateAttributeNames(value: js.Array[String]): Self = StObject.set(x, "privateAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateAttributeNamesUndefined: Self = StObject.set(x, "privateAttributeNames", js.undefined)
+      inline def setPrivateAttributeNamesUndefined: Self = StObject.set(x, "privateAttributeNames", js.undefined)
       
-      @scala.inline
-      def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value :_*))
+      inline def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
+      inline def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
+      inline def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
       
-      @scala.inline
-      def setSendEvents(value: Boolean): Self = StObject.set(x, "sendEvents", value.asInstanceOf[js.Any])
+      inline def setSendEvents(value: Boolean): Self = StObject.set(x, "sendEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendEventsOnlyForVariation(value: Boolean): Self = StObject.set(x, "sendEventsOnlyForVariation", value.asInstanceOf[js.Any])
+      inline def setSendEventsOnlyForVariation(value: Boolean): Self = StObject.set(x, "sendEventsOnlyForVariation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendEventsOnlyForVariationUndefined: Self = StObject.set(x, "sendEventsOnlyForVariation", js.undefined)
+      inline def setSendEventsOnlyForVariationUndefined: Self = StObject.set(x, "sendEventsOnlyForVariation", js.undefined)
       
-      @scala.inline
-      def setSendEventsUndefined: Self = StObject.set(x, "sendEvents", js.undefined)
+      inline def setSendEventsUndefined: Self = StObject.set(x, "sendEvents", js.undefined)
       
-      @scala.inline
-      def setSendLDHeaders(value: Boolean): Self = StObject.set(x, "sendLDHeaders", value.asInstanceOf[js.Any])
+      inline def setSendLDHeaders(value: Boolean): Self = StObject.set(x, "sendLDHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendLDHeadersUndefined: Self = StObject.set(x, "sendLDHeaders", js.undefined)
+      inline def setSendLDHeadersUndefined: Self = StObject.set(x, "sendLDHeaders", js.undefined)
       
-      @scala.inline
-      def setStreamReconnectDelay(value: Double): Self = StObject.set(x, "streamReconnectDelay", value.asInstanceOf[js.Any])
+      inline def setStreamReconnectDelay(value: Double): Self = StObject.set(x, "streamReconnectDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamReconnectDelayUndefined: Self = StObject.set(x, "streamReconnectDelay", js.undefined)
+      inline def setStreamReconnectDelayUndefined: Self = StObject.set(x, "streamReconnectDelay", js.undefined)
       
-      @scala.inline
-      def setStreamUrl(value: String): Self = StObject.set(x, "streamUrl", value.asInstanceOf[js.Any])
+      inline def setStreamUrl(value: String): Self = StObject.set(x, "streamUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUrlUndefined: Self = StObject.set(x, "streamUrl", js.undefined)
+      inline def setStreamUrlUndefined: Self = StObject.set(x, "streamUrl", js.undefined)
       
-      @scala.inline
-      def setStreaming(value: Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
+      inline def setStreaming(value: Boolean): Self = StObject.set(x, "streaming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
+      inline def setStreamingUndefined: Self = StObject.set(x, "streaming", js.undefined)
       
-      @scala.inline
-      def setUseReport(value: Boolean): Self = StObject.set(x, "useReport", value.asInstanceOf[js.Any])
+      inline def setUseReport(value: Boolean): Self = StObject.set(x, "useReport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseReportUndefined: Self = StObject.set(x, "useReport", js.undefined)
+      inline def setUseReportUndefined: Self = StObject.set(x, "useReport", js.undefined)
     }
   }
   
@@ -777,89 +716,62 @@ object mod {
   }
   object LDUser {
     
-    @scala.inline
-    def apply(): LDUser = {
+    inline def apply(): LDUser = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LDUser]
     }
     
-    @scala.inline
-    implicit class LDUserMutableBuilder[Self <: LDUser] (val x: Self) extends AnyVal {
+    extension [Self <: LDUser](x: Self) {
       
-      @scala.inline
-      def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+      inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+      inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
       
-      @scala.inline
-      def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setCustom(value: StringDictionary[String | Boolean | Double | (js.Array[String | Boolean | Double])]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: StringDictionary[String | Boolean | Double | (js.Array[String | Boolean | Double])]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+      inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+      inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrivateAttributeNames(value: js.Array[String]): Self = StObject.set(x, "privateAttributeNames", value.asInstanceOf[js.Any])
+      inline def setPrivateAttributeNames(value: js.Array[String]): Self = StObject.set(x, "privateAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateAttributeNamesUndefined: Self = StObject.set(x, "privateAttributeNames", js.undefined)
+      inline def setPrivateAttributeNamesUndefined: Self = StObject.set(x, "privateAttributeNames", js.undefined)
       
-      @scala.inline
-      def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value :_*))
+      inline def setPrivateAttributeNamesVarargs(value: String*): Self = StObject.set(x, "privateAttributeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+      inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     }
   }
 }

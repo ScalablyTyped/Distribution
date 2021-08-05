@@ -16,10 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def insertCss(css: String): InsertCssStyleElement = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCss")(css.asInstanceOf[js.Any]).asInstanceOf[InsertCssStyleElement]
-  @scala.inline
-  def insertCss(css: String, options: InsertCssOptions): InsertCssStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCss")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[InsertCssStyleElement]
+  inline def insertCss(css: String): InsertCssStyleElement = ^.asInstanceOf[js.Dynamic].applyDynamic("insertCss")(css.asInstanceOf[js.Any]).asInstanceOf[InsertCssStyleElement]
+  inline def insertCss(css: String, options: InsertCssOptions): InsertCssStyleElement = (^.asInstanceOf[js.Dynamic].applyDynamic("insertCss")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[InsertCssStyleElement]
   
   trait InsertCssOptions extends StObject {
     
@@ -29,26 +27,20 @@ object mod {
   }
   object InsertCssOptions {
     
-    @scala.inline
-    def apply(): InsertCssOptions = {
+    inline def apply(): InsertCssOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InsertCssOptions]
     }
     
-    @scala.inline
-    implicit class InsertCssOptionsMutableBuilder[Self <: InsertCssOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InsertCssOptions](x: Self) {
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
+      inline def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
+      inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
     }
   }
   

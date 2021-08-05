@@ -18,25 +18,19 @@ trait Input extends StObject {
 }
 object Input {
   
-  @scala.inline
-  def apply(): Input = {
+  inline def apply(): Input = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Input]
   }
   
-  @scala.inline
-  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+  extension [Self <: Input](x: Self) {
     
-    @scala.inline
-    def setDataCatalogInputDefinition(value: DataCatalogInputDefinition): Self = StObject.set(x, "DataCatalogInputDefinition", value.asInstanceOf[js.Any])
+    inline def setDataCatalogInputDefinition(value: DataCatalogInputDefinition): Self = StObject.set(x, "DataCatalogInputDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCatalogInputDefinitionUndefined: Self = StObject.set(x, "DataCatalogInputDefinition", js.undefined)
+    inline def setDataCatalogInputDefinitionUndefined: Self = StObject.set(x, "DataCatalogInputDefinition", js.undefined)
     
-    @scala.inline
-    def setS3InputDefinition(value: S3Location): Self = StObject.set(x, "S3InputDefinition", value.asInstanceOf[js.Any])
+    inline def setS3InputDefinition(value: S3Location): Self = StObject.set(x, "S3InputDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3InputDefinitionUndefined: Self = StObject.set(x, "S3InputDefinition", js.undefined)
+    inline def setS3InputDefinitionUndefined: Self = StObject.set(x, "S3InputDefinition", js.undefined)
   }
 }

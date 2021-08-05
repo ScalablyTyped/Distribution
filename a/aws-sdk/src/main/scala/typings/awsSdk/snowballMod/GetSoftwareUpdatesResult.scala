@@ -13,19 +13,15 @@ trait GetSoftwareUpdatesResult extends StObject {
 }
 object GetSoftwareUpdatesResult {
   
-  @scala.inline
-  def apply(): GetSoftwareUpdatesResult = {
+  inline def apply(): GetSoftwareUpdatesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSoftwareUpdatesResult]
   }
   
-  @scala.inline
-  implicit class GetSoftwareUpdatesResultMutableBuilder[Self <: GetSoftwareUpdatesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSoftwareUpdatesResult](x: Self) {
     
-    @scala.inline
-    def setUpdatesURI(value: String): Self = StObject.set(x, "UpdatesURI", value.asInstanceOf[js.Any])
+    inline def setUpdatesURI(value: String): Self = StObject.set(x, "UpdatesURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesURIUndefined: Self = StObject.set(x, "UpdatesURI", js.undefined)
+    inline def setUpdatesURIUndefined: Self = StObject.set(x, "UpdatesURI", js.undefined)
   }
 }

@@ -86,21 +86,16 @@ object servicediscoveryServiceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Service]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServiceState): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Service]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID]): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID], state: ServiceState): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Service]
+    inline def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Service]
     
     /**
       * Returns true if the given object is an instance of Service.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ Boolean]
   }
   
   trait ServiceArgs extends StObject {
@@ -144,56 +139,40 @@ object servicediscoveryServiceMod {
   }
   object ServiceArgs {
     
-    @scala.inline
-    def apply(): ServiceArgs = {
+    inline def apply(): ServiceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceArgs]
     }
     
-    @scala.inline
-    implicit class ServiceArgsMutableBuilder[Self <: ServiceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDnsConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]): Self = StObject.set(x, "dnsConfig", value.asInstanceOf[js.Any])
+      inline def setDnsConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]): Self = StObject.set(x, "dnsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsConfigUndefined: Self = StObject.set(x, "dnsConfig", js.undefined)
+      inline def setDnsConfigUndefined: Self = StObject.set(x, "dnsConfig", js.undefined)
       
-      @scala.inline
-      def setHealthCheckConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]): Self = StObject.set(x, "healthCheckConfig", value.asInstanceOf[js.Any])
+      inline def setHealthCheckConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]): Self = StObject.set(x, "healthCheckConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckConfigUndefined: Self = StObject.set(x, "healthCheckConfig", js.undefined)
+      inline def setHealthCheckConfigUndefined: Self = StObject.set(x, "healthCheckConfig", js.undefined)
       
-      @scala.inline
-      def setHealthCheckCustomConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckCustomConfig]): Self = StObject.set(x, "healthCheckCustomConfig", value.asInstanceOf[js.Any])
+      inline def setHealthCheckCustomConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckCustomConfig]): Self = StObject.set(x, "healthCheckCustomConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckCustomConfigUndefined: Self = StObject.set(x, "healthCheckCustomConfig", js.undefined)
+      inline def setHealthCheckCustomConfigUndefined: Self = StObject.set(x, "healthCheckCustomConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamespaceId(value: Input[String]): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
+      inline def setNamespaceId(value: Input[String]): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
+      inline def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -243,62 +222,44 @@ object servicediscoveryServiceMod {
   }
   object ServiceState {
     
-    @scala.inline
-    def apply(): ServiceState = {
+    inline def apply(): ServiceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceState]
     }
     
-    @scala.inline
-    implicit class ServiceStateMutableBuilder[Self <: ServiceState] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDnsConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]): Self = StObject.set(x, "dnsConfig", value.asInstanceOf[js.Any])
+      inline def setDnsConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceDnsConfig]): Self = StObject.set(x, "dnsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsConfigUndefined: Self = StObject.set(x, "dnsConfig", js.undefined)
+      inline def setDnsConfigUndefined: Self = StObject.set(x, "dnsConfig", js.undefined)
       
-      @scala.inline
-      def setHealthCheckConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]): Self = StObject.set(x, "healthCheckConfig", value.asInstanceOf[js.Any])
+      inline def setHealthCheckConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckConfig]): Self = StObject.set(x, "healthCheckConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckConfigUndefined: Self = StObject.set(x, "healthCheckConfig", js.undefined)
+      inline def setHealthCheckConfigUndefined: Self = StObject.set(x, "healthCheckConfig", js.undefined)
       
-      @scala.inline
-      def setHealthCheckCustomConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckCustomConfig]): Self = StObject.set(x, "healthCheckCustomConfig", value.asInstanceOf[js.Any])
+      inline def setHealthCheckCustomConfig(value: Input[typings.pulumiAws.inputMod.servicediscovery.ServiceHealthCheckCustomConfig]): Self = StObject.set(x, "healthCheckCustomConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheckCustomConfigUndefined: Self = StObject.set(x, "healthCheckCustomConfig", js.undefined)
+      inline def setHealthCheckCustomConfigUndefined: Self = StObject.set(x, "healthCheckCustomConfig", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamespaceId(value: Input[String]): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
+      inline def setNamespaceId(value: Input[String]): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
+      inline def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

@@ -15,22 +15,17 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(config: StringDictionary[js.Any], define: (String, js.Any) => Unit, name: String): Settings = {
+  inline def apply(config: StringDictionary[js.Any], define: (String, js.Any) => Unit, name: String): Settings = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], define = js.Any.fromFunction2(define), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefine(value: (String, js.Any) => Unit): Self = StObject.set(x, "define", js.Any.fromFunction2(value))
+    inline def setDefine(value: (String, js.Any) => Unit): Self = StObject.set(x, "define", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

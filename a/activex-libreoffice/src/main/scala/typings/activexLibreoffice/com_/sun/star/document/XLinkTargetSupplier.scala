@@ -24,8 +24,7 @@ trait XLinkTargetSupplier
 }
 object XLinkTargetSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Links: XNameAccess,
     acquire: () => Unit,
     getLinks: () => XNameAccess,
@@ -36,13 +35,10 @@ object XLinkTargetSupplier {
     __obj.asInstanceOf[XLinkTargetSupplier]
   }
   
-  @scala.inline
-  implicit class XLinkTargetSupplierMutableBuilder[Self <: XLinkTargetSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XLinkTargetSupplier](x: Self) {
     
-    @scala.inline
-    def setGetLinks(value: () => XNameAccess): Self = StObject.set(x, "getLinks", js.Any.fromFunction0(value))
+    inline def setGetLinks(value: () => XNameAccess): Self = StObject.set(x, "getLinks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLinks(value: XNameAccess): Self = StObject.set(x, "Links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: XNameAccess): Self = StObject.set(x, "Links", value.asInstanceOf[js.Any])
   }
 }

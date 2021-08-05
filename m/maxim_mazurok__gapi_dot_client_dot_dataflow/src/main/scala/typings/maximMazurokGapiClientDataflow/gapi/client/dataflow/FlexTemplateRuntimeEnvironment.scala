@@ -76,110 +76,77 @@ trait FlexTemplateRuntimeEnvironment extends StObject {
 }
 object FlexTemplateRuntimeEnvironment {
   
-  @scala.inline
-  def apply(): FlexTemplateRuntimeEnvironment = {
+  inline def apply(): FlexTemplateRuntimeEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexTemplateRuntimeEnvironment]
   }
   
-  @scala.inline
-  implicit class FlexTemplateRuntimeEnvironmentMutableBuilder[Self <: FlexTemplateRuntimeEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: FlexTemplateRuntimeEnvironment](x: Self) {
     
-    @scala.inline
-    def setAdditionalExperiments(value: js.Array[String]): Self = StObject.set(x, "additionalExperiments", value.asInstanceOf[js.Any])
+    inline def setAdditionalExperiments(value: js.Array[String]): Self = StObject.set(x, "additionalExperiments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalExperimentsUndefined: Self = StObject.set(x, "additionalExperiments", js.undefined)
+    inline def setAdditionalExperimentsUndefined: Self = StObject.set(x, "additionalExperiments", js.undefined)
     
-    @scala.inline
-    def setAdditionalExperimentsVarargs(value: String*): Self = StObject.set(x, "additionalExperiments", js.Array(value :_*))
+    inline def setAdditionalExperimentsVarargs(value: String*): Self = StObject.set(x, "additionalExperiments", js.Array(value :_*))
     
-    @scala.inline
-    def setAdditionalUserLabels(
+    inline def setAdditionalUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment & TopLevel[js.Any]
     ): Self = StObject.set(x, "additionalUserLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalUserLabelsUndefined: Self = StObject.set(x, "additionalUserLabels", js.undefined)
+    inline def setAdditionalUserLabelsUndefined: Self = StObject.set(x, "additionalUserLabels", js.undefined)
     
-    @scala.inline
-    def setEnableStreamingEngine(value: Boolean): Self = StObject.set(x, "enableStreamingEngine", value.asInstanceOf[js.Any])
+    inline def setEnableStreamingEngine(value: Boolean): Self = StObject.set(x, "enableStreamingEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableStreamingEngineUndefined: Self = StObject.set(x, "enableStreamingEngine", js.undefined)
+    inline def setEnableStreamingEngineUndefined: Self = StObject.set(x, "enableStreamingEngine", js.undefined)
     
-    @scala.inline
-    def setIpConfiguration(value: String): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
+    inline def setIpConfiguration(value: String): Self = StObject.set(x, "ipConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpConfigurationUndefined: Self = StObject.set(x, "ipConfiguration", js.undefined)
+    inline def setIpConfigurationUndefined: Self = StObject.set(x, "ipConfiguration", js.undefined)
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
+    inline def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
+    inline def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
+    inline def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
+    inline def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
     
-    @scala.inline
-    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+    inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+    inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
-    @scala.inline
-    def setTempLocation(value: String): Self = StObject.set(x, "tempLocation", value.asInstanceOf[js.Any])
+    inline def setTempLocation(value: String): Self = StObject.set(x, "tempLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempLocationUndefined: Self = StObject.set(x, "tempLocation", js.undefined)
+    inline def setTempLocationUndefined: Self = StObject.set(x, "tempLocation", js.undefined)
     
-    @scala.inline
-    def setWorkerRegion(value: String): Self = StObject.set(x, "workerRegion", value.asInstanceOf[js.Any])
+    inline def setWorkerRegion(value: String): Self = StObject.set(x, "workerRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerRegionUndefined: Self = StObject.set(x, "workerRegion", js.undefined)
+    inline def setWorkerRegionUndefined: Self = StObject.set(x, "workerRegion", js.undefined)
     
-    @scala.inline
-    def setWorkerZone(value: String): Self = StObject.set(x, "workerZone", value.asInstanceOf[js.Any])
+    inline def setWorkerZone(value: String): Self = StObject.set(x, "workerZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerZoneUndefined: Self = StObject.set(x, "workerZone", js.undefined)
+    inline def setWorkerZoneUndefined: Self = StObject.set(x, "workerZone", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

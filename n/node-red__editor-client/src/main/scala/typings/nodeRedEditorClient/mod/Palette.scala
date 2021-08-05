@@ -25,8 +25,7 @@ trait Palette extends StObject {
 }
 object Palette {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, js.Object) => Unit,
     editor: PaletteEditor,
     getCategories: () => js.Array[Label],
@@ -40,31 +39,22 @@ object Palette {
     __obj.asInstanceOf[Palette]
   }
   
-  @scala.inline
-  implicit class PaletteMutableBuilder[Self <: Palette] (val x: Self) extends AnyVal {
+  extension [Self <: Palette](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, js.Object) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, js.Object) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEditor(value: PaletteEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: PaletteEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCategories(value: () => js.Array[Label]): Self = StObject.set(x, "getCategories", js.Any.fromFunction0(value))
+    inline def setGetCategories(value: () => js.Array[Label]): Self = StObject.set(x, "getCategories", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: String => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: String => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }
 }

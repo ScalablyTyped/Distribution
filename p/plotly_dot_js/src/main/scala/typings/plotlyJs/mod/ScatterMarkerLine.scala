@@ -24,8 +24,7 @@ trait ScatterMarkerLine extends StObject {
 }
 object ScatterMarkerLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autocolorscale: Boolean,
     cauto: Boolean,
     cmax: Double,
@@ -39,40 +38,28 @@ object ScatterMarkerLine {
     __obj.asInstanceOf[ScatterMarkerLine]
   }
   
-  @scala.inline
-  implicit class ScatterMarkerLineMutableBuilder[Self <: ScatterMarkerLine] (val x: Self) extends AnyVal {
+  extension [Self <: ScatterMarkerLine](x: Self) {
     
-    @scala.inline
-    def setAutocolorscale(value: Boolean): Self = StObject.set(x, "autocolorscale", value.asInstanceOf[js.Any])
+    inline def setAutocolorscale(value: Boolean): Self = StObject.set(x, "autocolorscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauto(value: Boolean): Self = StObject.set(x, "cauto", value.asInstanceOf[js.Any])
+    inline def setCauto(value: Boolean): Self = StObject.set(x, "cauto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmax(value: Double): Self = StObject.set(x, "cmax", value.asInstanceOf[js.Any])
+    inline def setCmax(value: Double): Self = StObject.set(x, "cmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmin(value: Double): Self = StObject.set(x, "cmin", value.asInstanceOf[js.Any])
+    inline def setCmin(value: Double): Self = StObject.set(x, "cmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
+    inline def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value :_*))
+    inline def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value :_*))
     
-    @scala.inline
-    def setReversescale(value: Boolean): Self = StObject.set(x, "reversescale", value.asInstanceOf[js.Any])
+    inline def setReversescale(value: Boolean): Self = StObject.set(x, "reversescale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthVarargs(value: Double*): Self = StObject.set(x, "width", js.Array(value :_*))
+    inline def setWidthVarargs(value: Double*): Self = StObject.set(x, "width", js.Array(value :_*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLCSSMediaRule extends StObject {
   
-  @JSName("MSHTML.HTMLCSSMediaRule_typekey")
+  /* private */ @JSName("MSHTML.HTMLCSSMediaRule_typekey")
   var MSHTMLDotHTMLCSSMediaRule_typekey: HTMLCSSMediaRule = js.native
   
   def cssRules(index: Double): IHTMLStyleSheetRule = js.native

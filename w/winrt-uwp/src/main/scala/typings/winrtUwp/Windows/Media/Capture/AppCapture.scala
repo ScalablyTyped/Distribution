@@ -23,8 +23,7 @@ trait AppCapture extends StObject {
 }
 object AppCapture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: js.Any,
     isCapturingAudio: js.Any,
     isCapturingVideo: js.Any,
@@ -35,22 +34,16 @@ object AppCapture {
     __obj.asInstanceOf[AppCapture]
   }
   
-  @scala.inline
-  implicit class AppCaptureMutableBuilder[Self <: AppCapture] (val x: Self) extends AnyVal {
+  extension [Self <: AppCapture](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+    inline def setAddEventListener(value: js.Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCapturingAudio(value: js.Any): Self = StObject.set(x, "isCapturingAudio", value.asInstanceOf[js.Any])
+    inline def setIsCapturingAudio(value: js.Any): Self = StObject.set(x, "isCapturingAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCapturingVideo(value: js.Any): Self = StObject.set(x, "isCapturingVideo", value.asInstanceOf[js.Any])
+    inline def setIsCapturingVideo(value: js.Any): Self = StObject.set(x, "isCapturingVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOncapturingchanged(value: js.Any): Self = StObject.set(x, "oncapturingchanged", value.asInstanceOf[js.Any])
+    inline def setOncapturingchanged(value: js.Any): Self = StObject.set(x, "oncapturingchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+    inline def setRemoveEventListener(value: js.Any): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
   }
 }

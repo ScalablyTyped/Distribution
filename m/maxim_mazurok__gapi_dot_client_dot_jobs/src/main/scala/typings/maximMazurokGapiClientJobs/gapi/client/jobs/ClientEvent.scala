@@ -37,53 +37,39 @@ trait ClientEvent extends StObject {
 }
 object ClientEvent {
   
-  @scala.inline
-  def apply(): ClientEvent = {
+  inline def apply(): ClientEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientEvent]
   }
   
-  @scala.inline
-  implicit class ClientEventMutableBuilder[Self <: ClientEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ClientEvent](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setExtraInfo(
+    inline def setExtraInfo(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.ClientEvent & TopLevel[js.Any]
     ): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
+    inline def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
     
-    @scala.inline
-    def setJobEvent(value: JobEvent): Self = StObject.set(x, "jobEvent", value.asInstanceOf[js.Any])
+    inline def setJobEvent(value: JobEvent): Self = StObject.set(x, "jobEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobEventUndefined: Self = StObject.set(x, "jobEvent", js.undefined)
+    inline def setJobEventUndefined: Self = StObject.set(x, "jobEvent", js.undefined)
     
-    @scala.inline
-    def setParentEventId(value: String): Self = StObject.set(x, "parentEventId", value.asInstanceOf[js.Any])
+    inline def setParentEventId(value: String): Self = StObject.set(x, "parentEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentEventIdUndefined: Self = StObject.set(x, "parentEventId", js.undefined)
+    inline def setParentEventIdUndefined: Self = StObject.set(x, "parentEventId", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

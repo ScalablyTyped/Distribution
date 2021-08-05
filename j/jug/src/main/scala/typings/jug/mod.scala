@@ -157,29 +157,22 @@ object mod extends Shortcut {
   }
   object VertexStructure {
     
-    @scala.inline
-    def apply(data: VertexData, edge: js.Array[Vertex], level: Double, parent: Vertex): VertexStructure = {
+    inline def apply(data: VertexData, edge: js.Array[Vertex], level: Double, parent: Vertex): VertexStructure = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[VertexStructure]
     }
     
-    @scala.inline
-    implicit class VertexStructureMutableBuilder[Self <: VertexStructure] (val x: Self) extends AnyVal {
+    extension [Self <: VertexStructure](x: Self) {
       
-      @scala.inline
-      def setData(value: VertexData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: VertexData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdge(value: js.Array[Vertex]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: js.Array[Vertex]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeVarargs(value: Vertex*): Self = StObject.set(x, "edge", js.Array(value :_*))
+      inline def setEdgeVarargs(value: Vertex*): Self = StObject.set(x, "edge", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: Vertex): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Vertex): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
   }
   

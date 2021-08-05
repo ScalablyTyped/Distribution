@@ -31,34 +31,24 @@ object FailReason {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def INVALID: `8` = 8.asInstanceOf[`8`]
+    inline def INVALID: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def IS_NOT_BOOL: `4` = 4.asInstanceOf[`4`]
+    inline def IS_NOT_BOOL: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def IS_NOT_ENUM: `3` = 3.asInstanceOf[`3`]
+    inline def IS_NOT_ENUM: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def IS_NOT_NUMBER: `2` = 2.asInstanceOf[`2`]
+    inline def IS_NOT_NUMBER: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NO_DEFAULT_AVAILABLE: `9` = 9.asInstanceOf[`9`]
+    inline def NO_DEFAULT_AVAILABLE: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def NO_SUCH_INTERFACE: `5` = 5.asInstanceOf[`5`]
+    inline def NO_SUCH_INTERFACE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def OUT_OF_RANGE: `1` = 1.asInstanceOf[`1`]
+    inline def OUT_OF_RANGE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SOURCE_IS_NO_DERIVED_TYPE: `6` = 6.asInstanceOf[`6`]
+    inline def SOURCE_IS_NO_DERIVED_TYPE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def TYPE_NOT_SUPPORTED: `7` = 7.asInstanceOf[`7`]
+    inline def TYPE_NOT_SUPPORTED: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def UNKNOWN: `10` = 10.asInstanceOf[`10`]
+    inline def UNKNOWN: `10` = 10.asInstanceOf[`10`]
   }
 }

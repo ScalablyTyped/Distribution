@@ -16,22 +16,17 @@ trait SchemaImageAnnotation extends StObject {
 }
 object SchemaImageAnnotation {
   
-  @scala.inline
-  def apply(): SchemaImageAnnotation = {
+  inline def apply(): SchemaImageAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImageAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaImageAnnotationMutableBuilder[Self <: SchemaImageAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImageAnnotation](x: Self) {
     
-    @scala.inline
-    def setBoundingPolys(value: js.Array[SchemaBoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
+    inline def setBoundingPolys(value: js.Array[SchemaBoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolysUndefined: Self = StObject.set(x, "boundingPolys", js.undefined)
+    inline def setBoundingPolysUndefined: Self = StObject.set(x, "boundingPolys", js.undefined)
     
-    @scala.inline
-    def setBoundingPolysVarargs(value: SchemaBoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value :_*))
+    inline def setBoundingPolysVarargs(value: SchemaBoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value :_*))
   }
 }

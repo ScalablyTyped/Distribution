@@ -20,8 +20,7 @@ trait AggregatedResultsByOutcome extends StObject {
 }
 object AggregatedResultsByOutcome {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Double,
     duration: js.Any,
     groupByField: String,
@@ -33,25 +32,18 @@ object AggregatedResultsByOutcome {
     __obj.asInstanceOf[AggregatedResultsByOutcome]
   }
   
-  @scala.inline
-  implicit class AggregatedResultsByOutcomeMutableBuilder[Self <: AggregatedResultsByOutcome] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedResultsByOutcome](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByField(value: String): Self = StObject.set(x, "groupByField", value.asInstanceOf[js.Any])
+    inline def setGroupByField(value: String): Self = StObject.set(x, "groupByField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByValue(value: js.Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
+    inline def setGroupByValue(value: js.Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcome(value: TestOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: TestOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRerunResultCount(value: Double): Self = StObject.set(x, "rerunResultCount", value.asInstanceOf[js.Any])
+    inline def setRerunResultCount(value: Double): Self = StObject.set(x, "rerunResultCount", value.asInstanceOf[js.Any])
   }
 }

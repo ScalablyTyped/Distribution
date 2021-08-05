@@ -13,8 +13,7 @@ object cachedProcessFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cachedProcessFile[T](
+  inline def cachedProcessFile[T](
     processor: processFn[T],
     fs: MinimalFS,
     resolvePath: js.Function2[/* path */ String, /* context */ js.UndefOr[String], String]
@@ -28,20 +27,16 @@ object cachedProcessFileMod {
   }
   object CacheItem {
     
-    @scala.inline
-    def apply[T](stat: Mtime, value: T): CacheItem[T] = {
+    inline def apply[T](stat: Mtime, value: T): CacheItem[T] = {
       val __obj = js.Dynamic.literal(stat = stat.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheItem[T]]
     }
     
-    @scala.inline
-    implicit class CacheItemMutableBuilder[Self <: CacheItem[?], T] (val x: Self & CacheItem[T]) extends AnyVal {
+    extension [Self <: CacheItem[?], T](x: Self & CacheItem[T]) {
       
-      @scala.inline
-      def setStat(value: Mtime): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Mtime): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,23 +71,18 @@ object cachedProcessFileMod {
   }
   object MinimalFS {
     
-    @scala.inline
-    def apply(readFileSync: (String, utf8) => String, readlinkSync: String => String, statSync: String => Mtime): MinimalFS = {
+    inline def apply(readFileSync: (String, utf8) => String, readlinkSync: String => String, statSync: String => Mtime): MinimalFS = {
       val __obj = js.Dynamic.literal(readFileSync = js.Any.fromFunction2(readFileSync), readlinkSync = js.Any.fromFunction1(readlinkSync), statSync = js.Any.fromFunction1(statSync))
       __obj.asInstanceOf[MinimalFS]
     }
     
-    @scala.inline
-    implicit class MinimalFSMutableBuilder[Self <: MinimalFS] (val x: Self) extends AnyVal {
+    extension [Self <: MinimalFS](x: Self) {
       
-      @scala.inline
-      def setReadFileSync(value: (String, utf8) => String): Self = StObject.set(x, "readFileSync", js.Any.fromFunction2(value))
+      inline def setReadFileSync(value: (String, utf8) => String): Self = StObject.set(x, "readFileSync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadlinkSync(value: String => String): Self = StObject.set(x, "readlinkSync", js.Any.fromFunction1(value))
+      inline def setReadlinkSync(value: String => String): Self = StObject.set(x, "readlinkSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatSync(value: String => Mtime): Self = StObject.set(x, "statSync", js.Any.fromFunction1(value))
+      inline def setStatSync(value: String => Mtime): Self = StObject.set(x, "statSync", js.Any.fromFunction1(value))
     }
   }
   

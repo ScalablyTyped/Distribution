@@ -24,17 +24,14 @@ trait RouteResolver[Attrs, State] extends StObject {
 }
 object RouteResolver {
   
-  @scala.inline
-  def apply[Attrs, State](): RouteResolver[Attrs, State] = {
+  inline def apply[Attrs, State](): RouteResolver[Attrs, State] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteResolver[Attrs, State]]
   }
   
-  @scala.inline
-  implicit class RouteResolverMutableBuilder[Self <: RouteResolver[?, ?], Attrs, State] (val x: Self & (RouteResolver[Attrs, State])) extends AnyVal {
+  extension [Self <: RouteResolver[?, ?], Attrs, State](x: Self & (RouteResolver[Attrs, State])) {
     
-    @scala.inline
-    def setOnmatch(
+    inline def setOnmatch(
       value: js.ThisFunction3[
           RouteResolver[Attrs, State], 
           /* args */ Attrs, 
@@ -44,13 +41,10 @@ object RouteResolver {
         ]
     ): Self = StObject.set(x, "onmatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnmatchUndefined: Self = StObject.set(x, "onmatch", js.undefined)
+    inline def setOnmatchUndefined: Self = StObject.set(x, "onmatch", js.undefined)
     
-    @scala.inline
-    def setRender(value: js.ThisFunction1[RouteResolver[Attrs, State], /* vnode */ Vnode[Attrs, State], Children]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: js.ThisFunction1[RouteResolver[Attrs, State], /* vnode */ Vnode[Attrs, State], Children]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait ProtectionGroupArbitraryPatternLimits extends StObject {
 }
 object ProtectionGroupArbitraryPatternLimits {
   
-  @scala.inline
-  def apply(MaxMembers: Long): ProtectionGroupArbitraryPatternLimits = {
+  inline def apply(MaxMembers: Long): ProtectionGroupArbitraryPatternLimits = {
     val __obj = js.Dynamic.literal(MaxMembers = MaxMembers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectionGroupArbitraryPatternLimits]
   }
   
-  @scala.inline
-  implicit class ProtectionGroupArbitraryPatternLimitsMutableBuilder[Self <: ProtectionGroupArbitraryPatternLimits] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionGroupArbitraryPatternLimits](x: Self) {
     
-    @scala.inline
-    def setMaxMembers(value: Long): Self = StObject.set(x, "MaxMembers", value.asInstanceOf[js.Any])
+    inline def setMaxMembers(value: Long): Self = StObject.set(x, "MaxMembers", value.asInstanceOf[js.Any])
   }
 }

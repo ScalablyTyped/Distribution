@@ -12,19 +12,15 @@ trait FlexDirectionJustifyContent extends StObject {
 }
 object FlexDirectionJustifyContent {
   
-  @scala.inline
-  def apply(flexDirection: String, justifyContent: String): FlexDirectionJustifyContent = {
+  inline def apply(flexDirection: String, justifyContent: String): FlexDirectionJustifyContent = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexDirectionJustifyContent]
   }
   
-  @scala.inline
-  implicit class FlexDirectionJustifyContentMutableBuilder[Self <: FlexDirectionJustifyContent] (val x: Self) extends AnyVal {
+  extension [Self <: FlexDirectionJustifyContent](x: Self) {
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
   }
 }

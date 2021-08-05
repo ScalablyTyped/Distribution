@@ -14,37 +14,27 @@ trait GroupsToOverride extends StObject {
 }
 object GroupsToOverride {
   
-  @scala.inline
-  def apply(): GroupsToOverride = {
+  inline def apply(): GroupsToOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupsToOverride]
   }
   
-  @scala.inline
-  implicit class GroupsToOverrideMutableBuilder[Self <: GroupsToOverride] (val x: Self) extends AnyVal {
+  extension [Self <: GroupsToOverride](x: Self) {
     
-    @scala.inline
-    def setGroupsToOverride(value: js.Array[String]): Self = StObject.set(x, "groupsToOverride", value.asInstanceOf[js.Any])
+    inline def setGroupsToOverride(value: js.Array[String]): Self = StObject.set(x, "groupsToOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsToOverrideUndefined: Self = StObject.set(x, "groupsToOverride", js.undefined)
+    inline def setGroupsToOverrideUndefined: Self = StObject.set(x, "groupsToOverride", js.undefined)
     
-    @scala.inline
-    def setGroupsToOverrideVarargs(value: String*): Self = StObject.set(x, "groupsToOverride", js.Array(value :_*))
+    inline def setGroupsToOverrideVarargs(value: String*): Self = StObject.set(x, "groupsToOverride", js.Array(value :_*))
     
-    @scala.inline
-    def setIamRolesToOverride(value: js.Array[String]): Self = StObject.set(x, "iamRolesToOverride", value.asInstanceOf[js.Any])
+    inline def setIamRolesToOverride(value: js.Array[String]): Self = StObject.set(x, "iamRolesToOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRolesToOverrideUndefined: Self = StObject.set(x, "iamRolesToOverride", js.undefined)
+    inline def setIamRolesToOverrideUndefined: Self = StObject.set(x, "iamRolesToOverride", js.undefined)
     
-    @scala.inline
-    def setIamRolesToOverrideVarargs(value: String*): Self = StObject.set(x, "iamRolesToOverride", js.Array(value :_*))
+    inline def setIamRolesToOverrideVarargs(value: String*): Self = StObject.set(x, "iamRolesToOverride", js.Array(value :_*))
     
-    @scala.inline
-    def setPreferredRole(value: String): Self = StObject.set(x, "preferredRole", value.asInstanceOf[js.Any])
+    inline def setPreferredRole(value: String): Self = StObject.set(x, "preferredRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredRoleUndefined: Self = StObject.set(x, "preferredRole", js.undefined)
+    inline def setPreferredRoleUndefined: Self = StObject.set(x, "preferredRole", js.undefined)
   }
 }

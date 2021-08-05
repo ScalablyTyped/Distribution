@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object seedMod {
   
-  @scala.inline
-  def apply(seed: Double): Double = ^.asInstanceOf[js.Dynamic].apply(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(seed: Double): Double = ^.asInstanceOf[js.Dynamic].apply(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("date-now/seed", JSImport.Namespace)
   @js.native

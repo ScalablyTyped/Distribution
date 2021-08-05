@@ -17,22 +17,17 @@ trait SchemaFileHashes extends StObject {
 }
 object SchemaFileHashes {
   
-  @scala.inline
-  def apply(): SchemaFileHashes = {
+  inline def apply(): SchemaFileHashes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFileHashes]
   }
   
-  @scala.inline
-  implicit class SchemaFileHashesMutableBuilder[Self <: SchemaFileHashes] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFileHashes](x: Self) {
     
-    @scala.inline
-    def setFileHash(value: js.Array[SchemaHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
+    inline def setFileHash(value: js.Array[SchemaHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
+    inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
-    @scala.inline
-    def setFileHashVarargs(value: SchemaHash*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
+    inline def setFileHashVarargs(value: SchemaHash*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
   }
 }

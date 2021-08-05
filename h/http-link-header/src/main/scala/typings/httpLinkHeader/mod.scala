@@ -27,39 +27,31 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def escapeQuotes(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeQuotes")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeQuotes(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeQuotes")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Format a given attribute and it's value
     */
   /* static member */
-  @scala.inline
-  def formatAttribute(attr: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatAttribute(attr: String, value: js.Array[String | Buffer]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatAttribute(attr: String, value: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatAttribute(attr: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatAttribute(attr: String, value: js.Array[String | Buffer]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatAttribute(attr: String, value: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatAttribute")(attr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def formatExtendedAttribute(attr: String, data: LinkData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExtendedAttribute")(attr.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExtendedAttribute(attr: String, data: LinkData): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExtendedAttribute")(attr.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Determines whether an encoding can be
     * natively handled with a `Buffer`
     */
   /* static member */
-  @scala.inline
-  def isCompatibleEncoding(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompatibleEncoding")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCompatibleEncoding(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompatibleEncoding")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isSingleOccurenceAttr(attr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSingleOccurenceAttr")(attr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSingleOccurenceAttr(attr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSingleOccurenceAttr")(attr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isTokenAttr(attr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenAttr")(attr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTokenAttr(attr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenAttr")(attr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Creates a new Link by parsing a link header beginning at the provided
@@ -69,10 +61,8 @@ object mod {
     * @return A new Link
     */
   /* static member */
-  @scala.inline
-  def parse(value: String): Link = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Link]
-  @scala.inline
-  def parse(value: String, offset: Double): Link = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Link]
+  inline def parse(value: String): Link = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Link]
+  inline def parse(value: String, offset: Double): Link = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Link]
   
   /**
     * Parse & format HTTP link headers according to RFC 8288
@@ -123,29 +113,22 @@ object mod {
   }
   object LinkData {
     
-    @scala.inline
-    def apply(value: String | Buffer): LinkData = {
+    inline def apply(value: String | Buffer): LinkData = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkData]
     }
     
-    @scala.inline
-    implicit class LinkDataMutableBuilder[Self <: LinkData] (val x: Self) extends AnyVal {
+    extension [Self <: LinkData](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,20 +142,16 @@ object mod {
   }
   object Reference {
     
-    @scala.inline
-    def apply(rel: String, uri: String): Reference = {
+    inline def apply(rel: String, uri: String): Reference = {
       val __obj = js.Dynamic.literal(rel = rel.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reference]
     }
     
-    @scala.inline
-    implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+    extension [Self <: Reference](x: Self) {
       
-      @scala.inline
-      def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

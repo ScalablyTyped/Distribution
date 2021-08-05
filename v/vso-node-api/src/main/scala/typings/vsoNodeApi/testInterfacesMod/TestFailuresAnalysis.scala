@@ -16,8 +16,7 @@ trait TestFailuresAnalysis extends StObject {
 }
 object TestFailuresAnalysis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     existingFailures: TestFailureDetails,
     fixedTests: TestFailureDetails,
     newFailures: TestFailureDetails,
@@ -27,19 +26,14 @@ object TestFailuresAnalysis {
     __obj.asInstanceOf[TestFailuresAnalysis]
   }
   
-  @scala.inline
-  implicit class TestFailuresAnalysisMutableBuilder[Self <: TestFailuresAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: TestFailuresAnalysis](x: Self) {
     
-    @scala.inline
-    def setExistingFailures(value: TestFailureDetails): Self = StObject.set(x, "existingFailures", value.asInstanceOf[js.Any])
+    inline def setExistingFailures(value: TestFailureDetails): Self = StObject.set(x, "existingFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedTests(value: TestFailureDetails): Self = StObject.set(x, "fixedTests", value.asInstanceOf[js.Any])
+    inline def setFixedTests(value: TestFailureDetails): Self = StObject.set(x, "fixedTests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewFailures(value: TestFailureDetails): Self = StObject.set(x, "newFailures", value.asInstanceOf[js.Any])
+    inline def setNewFailures(value: TestFailureDetails): Self = StObject.set(x, "newFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousContext(value: TestResultsContext): Self = StObject.set(x, "previousContext", value.asInstanceOf[js.Any])
+    inline def setPreviousContext(value: TestResultsContext): Self = StObject.set(x, "previousContext", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait ImmutableRoomAttributes extends StObject {
 }
 object ImmutableRoomAttributes {
   
-  @scala.inline
-  def apply(): ImmutableRoomAttributes = {
+  inline def apply(): ImmutableRoomAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImmutableRoomAttributes]
   }
   
-  @scala.inline
-  implicit class ImmutableRoomAttributesMutableBuilder[Self <: ImmutableRoomAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ImmutableRoomAttributes](x: Self) {
     
-    @scala.inline
-    def setCopyProtected(value: Boolean): Self = StObject.set(x, "copyProtected", value.asInstanceOf[js.Any])
+    inline def setCopyProtected(value: Boolean): Self = StObject.set(x, "copyProtected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyProtectedUndefined: Self = StObject.set(x, "copyProtected", js.undefined)
+    inline def setCopyProtectedUndefined: Self = StObject.set(x, "copyProtected", js.undefined)
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

@@ -17,7 +17,7 @@ class Slot protected ()
   /* CompleteClass */
   var attachmentState: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var attachmentTime: js.Any = js.native
   
   /* CompleteClass */

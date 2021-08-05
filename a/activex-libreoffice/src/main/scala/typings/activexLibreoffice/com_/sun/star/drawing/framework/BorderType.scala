@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BorderType extends StObject
 object BorderType {
   
-  @scala.inline
-  def INNER_BORDER: `0` = 0.asInstanceOf[`0`]
+  inline def INNER_BORDER: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def OUTER_BORDER: `1` = 1.asInstanceOf[`1`]
+  inline def OUTER_BORDER: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def TOTAL_BORDER: `2` = 2.asInstanceOf[`2`]
+  inline def TOTAL_BORDER: `2` = 2.asInstanceOf[`2`]
 }

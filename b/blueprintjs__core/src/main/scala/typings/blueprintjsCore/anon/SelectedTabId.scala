@@ -10,16 +10,13 @@ trait SelectedTabId extends StObject {
 }
 object SelectedTabId {
   
-  @scala.inline
-  def apply(selectedTabId: String | Double): SelectedTabId = {
+  inline def apply(selectedTabId: String | Double): SelectedTabId = {
     val __obj = js.Dynamic.literal(selectedTabId = selectedTabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedTabId]
   }
   
-  @scala.inline
-  implicit class SelectedTabIdMutableBuilder[Self <: SelectedTabId] (val x: Self) extends AnyVal {
+  extension [Self <: SelectedTabId](x: Self) {
     
-    @scala.inline
-    def setSelectedTabId(value: String | Double): Self = StObject.set(x, "selectedTabId", value.asInstanceOf[js.Any])
+    inline def setSelectedTabId(value: String | Double): Self = StObject.set(x, "selectedTabId", value.asInstanceOf[js.Any])
   }
 }

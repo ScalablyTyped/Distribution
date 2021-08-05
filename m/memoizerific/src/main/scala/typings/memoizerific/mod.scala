@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(cacheSize: Double): memoize = ^.asInstanceOf[js.Dynamic].apply(cacheSize.asInstanceOf[js.Any]).asInstanceOf[memoize]
+  inline def apply(cacheSize: Double): memoize = ^.asInstanceOf[js.Dynamic].apply(cacheSize.asInstanceOf[js.Any]).asInstanceOf[memoize]
   
   @JSImport("memoizerific", JSImport.Namespace)
   @js.native

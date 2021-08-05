@@ -27,8 +27,7 @@ trait PlayReadyLicenseIterator extends StObject {
 }
 object PlayReadyLicenseIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     current: IPlayReadyLicense,
     getMany: () => ItemsIPlayReadyLicense,
     hasCurrent: Boolean,
@@ -38,19 +37,14 @@ object PlayReadyLicenseIterator {
     __obj.asInstanceOf[PlayReadyLicenseIterator]
   }
   
-  @scala.inline
-  implicit class PlayReadyLicenseIteratorMutableBuilder[Self <: PlayReadyLicenseIterator] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyLicenseIterator](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: IPlayReadyLicense): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: IPlayReadyLicense): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMany(value: () => ItemsIPlayReadyLicense): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
+    inline def setGetMany(value: () => ItemsIPlayReadyLicense): Self = StObject.set(x, "getMany", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
+    inline def setHasCurrent(value: Boolean): Self = StObject.set(x, "hasCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+    inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
   }
 }

@@ -49,8 +49,7 @@ trait MidPointParamschannelx2y2 extends StObject {
 }
 object MidPointParamschannelx2y2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: typings.vegaLite.channelMod.Channel & (x2 | y2 | radius2 | theta2),
     config: typings.vegaLite.srcConfigMod.Config[SignalRef],
     defaultRef: VgValueRef | js.Function0[VgValueRef],
@@ -62,66 +61,46 @@ object MidPointParamschannelx2y2 {
     __obj.asInstanceOf[MidPointParamschannelx2y2]
   }
   
-  @scala.inline
-  implicit class MidPointParamschannelx2y2MutableBuilder[Self <: MidPointParamschannelx2y2] (val x: Self) extends AnyVal {
+  extension [Self <: MidPointParamschannelx2y2](x: Self) {
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     
-    @scala.inline
-    def setChannel(value: typings.vegaLite.channelMod.Channel & (x2 | y2 | radius2 | theta2)): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: typings.vegaLite.channelMod.Channel & (x2 | y2 | radius2 | theta2)): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel2Def(value: SecondaryChannelDef[String]): Self = StObject.set(x, "channel2Def", value.asInstanceOf[js.Any])
+    inline def setChannel2Def(value: SecondaryChannelDef[String]): Self = StObject.set(x, "channel2Def", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel2DefUndefined: Self = StObject.set(x, "channel2Def", js.undefined)
+    inline def setChannel2DefUndefined: Self = StObject.set(x, "channel2Def", js.undefined)
     
-    @scala.inline
-    def setChannelDef(value: ChannelDef[String]): Self = StObject.set(x, "channelDef", value.asInstanceOf[js.Any])
+    inline def setChannelDef(value: ChannelDef[String]): Self = StObject.set(x, "channelDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelDefNull: Self = StObject.set(x, "channelDef", null)
+    inline def setChannelDefNull: Self = StObject.set(x, "channelDef", null)
     
-    @scala.inline
-    def setChannelDefUndefined: Self = StObject.set(x, "channelDef", js.undefined)
+    inline def setChannelDefUndefined: Self = StObject.set(x, "channelDef", js.undefined)
     
-    @scala.inline
-    def setChannelDefVarargs(
+    inline def setChannelDefVarargs(
       value: ((FieldDefWithoutScale[String, StandardType]) | OrderFieldDef[String] | StringFieldDef[String])*
     ): Self = StObject.set(x, "channelDef", js.Array(value :_*))
     
-    @scala.inline
-    def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRef(value: VgValueRef | js.Function0[VgValueRef]): Self = StObject.set(x, "defaultRef", value.asInstanceOf[js.Any])
+    inline def setDefaultRef(value: VgValueRef | js.Function0[VgValueRef]): Self = StObject.set(x, "defaultRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRefFunction0(value: () => VgValueRef): Self = StObject.set(x, "defaultRef", js.Any.fromFunction0(value))
+    inline def setDefaultRefFunction0(value: () => VgValueRef): Self = StObject.set(x, "defaultRef", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setScale(value: ScaleComponent): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ScaleComponent): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
+    inline def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: StackProperties): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: StackProperties): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

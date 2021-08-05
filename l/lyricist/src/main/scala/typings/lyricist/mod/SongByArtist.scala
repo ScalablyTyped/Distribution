@@ -42,8 +42,7 @@ trait SongByArtist extends StObject {
 }
 object SongByArtist {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotation_count: Double,
     api_path: String,
     full_title: String,
@@ -65,55 +64,38 @@ object SongByArtist {
     __obj.asInstanceOf[SongByArtist]
   }
   
-  @scala.inline
-  implicit class SongByArtistMutableBuilder[Self <: SongByArtist] (val x: Self) extends AnyVal {
+  extension [Self <: SongByArtist](x: Self) {
     
-    @scala.inline
-    def setAnnotation_count(value: Double): Self = StObject.set(x, "annotation_count", value.asInstanceOf[js.Any])
+    inline def setAnnotation_count(value: Double): Self = StObject.set(x, "annotation_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
+    inline def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_title(value: String): Self = StObject.set(x, "full_title", value.asInstanceOf[js.Any])
+    inline def setFull_title(value: String): Self = StObject.set(x, "full_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader_image_thumbnail_url(value: String): Self = StObject.set(x, "header_image_thumbnail_url", value.asInstanceOf[js.Any])
+    inline def setHeader_image_thumbnail_url(value: String): Self = StObject.set(x, "header_image_thumbnail_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
+    inline def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_owner_id(value: Double): Self = StObject.set(x, "lyrics_owner_id", value.asInstanceOf[js.Any])
+    inline def setLyrics_owner_id(value: Double): Self = StObject.set(x, "lyrics_owner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLyrics_state(value: String): Self = StObject.set(x, "lyrics_state", value.asInstanceOf[js.Any])
+    inline def setLyrics_state(value: String): Self = StObject.set(x, "lyrics_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_artist(value: ArtistBrief): Self = StObject.set(x, "primary_artist", value.asInstanceOf[js.Any])
+    inline def setPrimary_artist(value: ArtistBrief): Self = StObject.set(x, "primary_artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPyongs_count(value: Double): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
+    inline def setPyongs_count(value: Double): Self = StObject.set(x, "pyongs_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSong_art_image_thumbnail_url(value: String): Self = StObject.set(x, "song_art_image_thumbnail_url", value.asInstanceOf[js.Any])
+    inline def setSong_art_image_thumbnail_url(value: String): Self = StObject.set(x, "song_art_image_thumbnail_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Hot): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Hot): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle_with_featured(value: String): Self = StObject.set(x, "title_with_featured", value.asInstanceOf[js.Any])
+    inline def setTitle_with_featured(value: String): Self = StObject.set(x, "title_with_featured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

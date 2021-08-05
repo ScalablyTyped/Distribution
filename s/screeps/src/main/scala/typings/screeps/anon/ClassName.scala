@@ -23,58 +23,41 @@ trait ClassName extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply(className: PowerClassConstant, cooldown: Double, level: js.Array[Double]): ClassName = {
+  inline def apply(className: PowerClassConstant, cooldown: Double, level: js.Array[Double]): ClassName = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: PowerClassConstant): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: PowerClassConstant): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double | js.Array[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double | js.Array[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
+    inline def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
     
-    @scala.inline
-    def setEffect(value: js.Array[Double]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: js.Array[Double]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    @scala.inline
-    def setEffectVarargs(value: Double*): Self = StObject.set(x, "effect", js.Array(value :_*))
+    inline def setEffectVarargs(value: Double*): Self = StObject.set(x, "effect", js.Array(value :_*))
     
-    @scala.inline
-    def setLevel(value: js.Array[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: js.Array[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelVarargs(value: Double*): Self = StObject.set(x, "level", js.Array(value :_*))
+    inline def setLevelVarargs(value: Double*): Self = StObject.set(x, "level", js.Array(value :_*))
     
-    @scala.inline
-    def setOps(value: Double | js.Array[Double]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: Double | js.Array[Double]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
+    inline def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
     
-    @scala.inline
-    def setOpsVarargs(value: Double*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: Double*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

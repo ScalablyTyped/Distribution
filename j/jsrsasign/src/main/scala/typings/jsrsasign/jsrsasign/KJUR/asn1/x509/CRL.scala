@@ -53,8 +53,7 @@ trait CRL
 }
 object CRL {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -71,13 +70,10 @@ object CRL {
     __obj.asInstanceOf[CRL]
   }
   
-  @scala.inline
-  implicit class CRLMutableBuilder[Self <: CRL] (val x: Self) extends AnyVal {
+  extension [Self <: CRL](x: Self) {
     
-    @scala.inline
-    def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
+    inline def setGetPEMString(value: () => String): Self = StObject.set(x, "getPEMString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSign(value: () => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction0(value))
+    inline def setSign(value: () => Unit): Self = StObject.set(x, "sign", js.Any.fromFunction0(value))
   }
 }

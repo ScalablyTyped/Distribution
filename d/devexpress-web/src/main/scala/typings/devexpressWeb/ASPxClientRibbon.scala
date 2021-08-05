@@ -130,8 +130,7 @@ trait ASPxClientRibbon
 }
 object ASPxClientRibbon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveTabChanged: ASPxClientEvent[ASPxClientRibbonTabEventHandler[ASPxClientRibbon]],
     AdjustControl: () => Unit,
     CommandExecuted: ASPxClientEvent[ASPxClientRibbonCommandExecutedEventHandler[ASPxClientRibbon]],
@@ -173,70 +172,48 @@ object ASPxClientRibbon {
     __obj.asInstanceOf[ASPxClientRibbon]
   }
   
-  @scala.inline
-  implicit class ASPxClientRibbonMutableBuilder[Self <: ASPxClientRibbon] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRibbon](x: Self) {
     
-    @scala.inline
-    def setActiveTabChanged(value: ASPxClientEvent[ASPxClientRibbonTabEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "ActiveTabChanged", value.asInstanceOf[js.Any])
+    inline def setActiveTabChanged(value: ASPxClientEvent[ASPxClientRibbonTabEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "ActiveTabChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandExecuted(value: ASPxClientEvent[ASPxClientRibbonCommandExecutedEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "CommandExecuted", value.asInstanceOf[js.Any])
+    inline def setCommandExecuted(value: ASPxClientEvent[ASPxClientRibbonCommandExecutedEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "CommandExecuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogBoxLauncherClicked(value: ASPxClientEvent[ASPxClientRibbonDialogBoxLauncherClickedEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "DialogBoxLauncherClicked", value.asInstanceOf[js.Any])
+    inline def setDialogBoxLauncherClicked(value: ASPxClientEvent[ASPxClientRibbonDialogBoxLauncherClickedEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "DialogBoxLauncherClicked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTabClicked(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "FileTabClicked", value.asInstanceOf[js.Any])
+    inline def setFileTabClicked(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "FileTabClicked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetActiveTab(value: () => ASPxClientRibbonTab): Self = StObject.set(x, "GetActiveTab", js.Any.fromFunction0(value))
+    inline def setGetActiveTab(value: () => ASPxClientRibbonTab): Self = StObject.set(x, "GetActiveTab", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
+    inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemByName(value: String => ASPxClientRibbonItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
+    inline def setGetItemByName(value: String => ASPxClientRibbonItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemValueByName(value: String => js.Any): Self = StObject.set(x, "GetItemValueByName", js.Any.fromFunction1(value))
+    inline def setGetItemValueByName(value: String => js.Any): Self = StObject.set(x, "GetItemValueByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMinimized(value: () => Boolean): Self = StObject.set(x, "GetMinimized", js.Any.fromFunction0(value))
+    inline def setGetMinimized(value: () => Boolean): Self = StObject.set(x, "GetMinimized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTab(value: Double => ASPxClientRibbonTab): Self = StObject.set(x, "GetTab", js.Any.fromFunction1(value))
+    inline def setGetTab(value: Double => ASPxClientRibbonTab): Self = StObject.set(x, "GetTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTabByName(value: String => ASPxClientRibbonTab): Self = StObject.set(x, "GetTabByName", js.Any.fromFunction1(value))
+    inline def setGetTabByName(value: String => ASPxClientRibbonTab): Self = StObject.set(x, "GetTabByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTabCount(value: () => Double): Self = StObject.set(x, "GetTabCount", js.Any.fromFunction0(value))
+    inline def setGetTabCount(value: () => Double): Self = StObject.set(x, "GetTabCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyTipsClosedOnEscape(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "KeyTipsClosedOnEscape", value.asInstanceOf[js.Any])
+    inline def setKeyTipsClosedOnEscape(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "KeyTipsClosedOnEscape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimizationStateChanged(value: ASPxClientEvent[ASPxClientRibbonMinimizationStateEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "MinimizationStateChanged", value.asInstanceOf[js.Any])
+    inline def setMinimizationStateChanged(value: ASPxClientEvent[ASPxClientRibbonMinimizationStateEventHandler[ASPxClientRibbon]]): Self = StObject.set(x, "MinimizationStateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetActiveTab(value: ASPxClientRibbonTab => Unit): Self = StObject.set(x, "SetActiveTab", js.Any.fromFunction1(value))
+    inline def setSetActiveTab(value: ASPxClientRibbonTab => Unit): Self = StObject.set(x, "SetActiveTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetActiveTabIndex(value: Double => Unit): Self = StObject.set(x, "SetActiveTabIndex", js.Any.fromFunction1(value))
+    inline def setSetActiveTabIndex(value: Double => Unit): Self = StObject.set(x, "SetActiveTabIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContextTabCategoryVisible(value: (String, Boolean) => Unit): Self = StObject.set(x, "SetContextTabCategoryVisible", js.Any.fromFunction2(value))
+    inline def setSetContextTabCategoryVisible(value: (String, Boolean) => Unit): Self = StObject.set(x, "SetContextTabCategoryVisible", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItemValueByName(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetItemValueByName", js.Any.fromFunction2(value))
+    inline def setSetItemValueByName(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetItemValueByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMinimized(value: Boolean => Unit): Self = StObject.set(x, "SetMinimized", js.Any.fromFunction1(value))
+    inline def setSetMinimized(value: Boolean => Unit): Self = StObject.set(x, "SetMinimized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowKeyTips(value: () => Unit): Self = StObject.set(x, "ShowKeyTips", js.Any.fromFunction0(value))
+    inline def setShowKeyTips(value: () => Unit): Self = StObject.set(x, "ShowKeyTips", js.Any.fromFunction0(value))
   }
 }

@@ -10,16 +10,13 @@ trait ConversationsGrantOptions extends StObject {
 }
 object ConversationsGrantOptions {
   
-  @scala.inline
-  def apply(configurationProfileSid: String): ConversationsGrantOptions = {
+  inline def apply(configurationProfileSid: String): ConversationsGrantOptions = {
     val __obj = js.Dynamic.literal(configurationProfileSid = configurationProfileSid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationsGrantOptions]
   }
   
-  @scala.inline
-  implicit class ConversationsGrantOptionsMutableBuilder[Self <: ConversationsGrantOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationsGrantOptions](x: Self) {
     
-    @scala.inline
-    def setConfigurationProfileSid(value: String): Self = StObject.set(x, "configurationProfileSid", value.asInstanceOf[js.Any])
+    inline def setConfigurationProfileSid(value: String): Self = StObject.set(x, "configurationProfileSid", value.asInstanceOf[js.Any])
   }
 }

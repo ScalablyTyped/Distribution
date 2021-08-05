@@ -37,8 +37,7 @@ object fileMod {
     @JSImport("googleapis/build/src/apis/file", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], File] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], File]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], File]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/file", "VERSIONS.v1beta1")
@@ -55,8 +54,7 @@ object fileMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.fileV1beta1Mod.fileV1beta1.File
       ] = js.native
-    @scala.inline
-    def v1beta1_=(
+    inline def v1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -98,8 +96,7 @@ object fileMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -143,14 +140,10 @@ object fileMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def file(options: Options): File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[File]
-  @scala.inline
-  def file(options: typings.googleapis.fileV1beta1Mod.fileV1beta1.Options): typings.googleapis.fileV1beta1Mod.fileV1beta1.File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fileV1beta1Mod.fileV1beta1.File]
+  inline def file(options: Options): File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[File]
+  inline def file(options: typings.googleapis.fileV1beta1Mod.fileV1beta1.Options): typings.googleapis.fileV1beta1Mod.fileV1beta1.File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fileV1beta1Mod.fileV1beta1.File]
   
-  @scala.inline
-  def file_v1(version: v1): File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(version.asInstanceOf[js.Any]).asInstanceOf[File]
+  inline def file_v1(version: v1): File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(version.asInstanceOf[js.Any]).asInstanceOf[File]
   
-  @scala.inline
-  def file_v1beta1(version: v1beta1): typings.googleapis.fileV1beta1Mod.fileV1beta1.File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fileV1beta1Mod.fileV1beta1.File]
+  inline def file_v1beta1(version: v1beta1): typings.googleapis.fileV1beta1Mod.fileV1beta1.File = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.fileV1beta1Mod.fileV1beta1.File]
 }

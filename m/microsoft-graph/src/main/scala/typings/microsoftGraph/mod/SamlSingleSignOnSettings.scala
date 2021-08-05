@@ -11,22 +11,17 @@ trait SamlSingleSignOnSettings extends StObject {
 }
 object SamlSingleSignOnSettings {
   
-  @scala.inline
-  def apply(): SamlSingleSignOnSettings = {
+  inline def apply(): SamlSingleSignOnSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SamlSingleSignOnSettings]
   }
   
-  @scala.inline
-  implicit class SamlSingleSignOnSettingsMutableBuilder[Self <: SamlSingleSignOnSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SamlSingleSignOnSettings](x: Self) {
     
-    @scala.inline
-    def setRelayState(value: NullableOption[String]): Self = StObject.set(x, "relayState", value.asInstanceOf[js.Any])
+    inline def setRelayState(value: NullableOption[String]): Self = StObject.set(x, "relayState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelayStateNull: Self = StObject.set(x, "relayState", null)
+    inline def setRelayStateNull: Self = StObject.set(x, "relayState", null)
     
-    @scala.inline
-    def setRelayStateUndefined: Self = StObject.set(x, "relayState", js.undefined)
+    inline def setRelayStateUndefined: Self = StObject.set(x, "relayState", js.undefined)
   }
 }

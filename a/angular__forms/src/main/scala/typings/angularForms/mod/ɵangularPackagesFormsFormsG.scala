@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ɵangularPackagesFormsFormsG protected () extends StObject {
   def this(cd: AbstractControlDirective) = this()
   
-  var _cd: js.Any = js.native
+  /* private */ var _cd: js.Any = js.native
   
   def ngClassDirty: Boolean = js.native
   

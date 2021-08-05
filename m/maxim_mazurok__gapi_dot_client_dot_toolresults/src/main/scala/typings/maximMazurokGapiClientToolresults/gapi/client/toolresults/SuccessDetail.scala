@@ -11,19 +11,15 @@ trait SuccessDetail extends StObject {
 }
 object SuccessDetail {
   
-  @scala.inline
-  def apply(): SuccessDetail = {
+  inline def apply(): SuccessDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessDetail]
   }
   
-  @scala.inline
-  implicit class SuccessDetailMutableBuilder[Self <: SuccessDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessDetail](x: Self) {
     
-    @scala.inline
-    def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
+    inline def setOtherNativeCrash(value: Boolean): Self = StObject.set(x, "otherNativeCrash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
+    inline def setOtherNativeCrashUndefined: Self = StObject.set(x, "otherNativeCrash", js.undefined)
   }
 }

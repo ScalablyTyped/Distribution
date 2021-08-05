@@ -28,37 +28,27 @@ trait CertificateInfo extends StObject {
 }
 object CertificateInfo {
   
-  @scala.inline
-  def apply(): CertificateInfo = {
+  inline def apply(): CertificateInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateInfo]
   }
   
-  @scala.inline
-  implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateInfo](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "CertificateId", js.undefined)
     
-    @scala.inline
-    def setCommonName(value: CertificateCN): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
+    inline def setCommonName(value: CertificateCN): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
+    inline def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
     
-    @scala.inline
-    def setExpiryDateTime(value: CertificateExpiryDateTime): Self = StObject.set(x, "ExpiryDateTime", value.asInstanceOf[js.Any])
+    inline def setExpiryDateTime(value: CertificateExpiryDateTime): Self = StObject.set(x, "ExpiryDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryDateTimeUndefined: Self = StObject.set(x, "ExpiryDateTime", js.undefined)
+    inline def setExpiryDateTimeUndefined: Self = StObject.set(x, "ExpiryDateTime", js.undefined)
     
-    @scala.inline
-    def setState(value: CertificateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CertificateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

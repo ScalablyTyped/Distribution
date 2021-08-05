@@ -21,31 +21,25 @@ trait JustifyContentProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends
 }
 object JustifyContentProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): JustifyContentProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): JustifyContentProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JustifyContentProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class JustifyContentPropsMutableBuilder[Self <: JustifyContentProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & JustifyContentProps[ThemeType]) extends AnyVal {
+  extension [Self <: JustifyContentProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & JustifyContentProps[ThemeType]) {
     
-    @scala.inline
-    def setJustifyContent(
+    inline def setJustifyContent(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContentNull: Self = StObject.set(x, "justifyContent", null)
+    inline def setJustifyContentNull: Self = StObject.set(x, "justifyContent", null)
     
-    @scala.inline
-    def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+    inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
-    @scala.inline
-    def setJustifyContentVarargs(
+    inline def setJustifyContentVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyContent */ js.Any) | Null)*
     ): Self = StObject.set(x, "justifyContent", js.Array(value :_*))
   }

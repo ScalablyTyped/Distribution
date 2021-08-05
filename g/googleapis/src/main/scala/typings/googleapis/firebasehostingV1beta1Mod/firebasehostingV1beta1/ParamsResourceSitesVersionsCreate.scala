@@ -42,43 +42,31 @@ trait ParamsResourceSitesVersionsCreate
 }
 object ParamsResourceSitesVersionsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceSitesVersionsCreate = {
+  inline def apply(): ParamsResourceSitesVersionsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSitesVersionsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSitesVersionsCreateMutableBuilder[Self <: ParamsResourceSitesVersionsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSitesVersionsCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaVersion): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaVersion): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

@@ -42,8 +42,7 @@ trait LowLagMediaRecording extends StObject {
 }
 object LowLagMediaRecording {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     finishAsync: () => IPromiseWithIAsyncAction,
     pauseAsync: MediaCapturePauseBehavior => IPromiseWithIAsyncAction,
     resumeAsync: () => IPromiseWithIAsyncAction,
@@ -54,22 +53,16 @@ object LowLagMediaRecording {
     __obj.asInstanceOf[LowLagMediaRecording]
   }
   
-  @scala.inline
-  implicit class LowLagMediaRecordingMutableBuilder[Self <: LowLagMediaRecording] (val x: Self) extends AnyVal {
+  extension [Self <: LowLagMediaRecording](x: Self) {
     
-    @scala.inline
-    def setFinishAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
+    inline def setFinishAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPauseAsync(value: MediaCapturePauseBehavior => IPromiseWithIAsyncAction): Self = StObject.set(x, "pauseAsync", js.Any.fromFunction1(value))
+    inline def setPauseAsync(value: MediaCapturePauseBehavior => IPromiseWithIAsyncAction): Self = StObject.set(x, "pauseAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResumeAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "resumeAsync", js.Any.fromFunction0(value))
+    inline def setResumeAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "resumeAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
+    inline def setStartAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "stopAsync", js.Any.fromFunction0(value))
+    inline def setStopAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "stopAsync", js.Any.fromFunction0(value))
   }
 }

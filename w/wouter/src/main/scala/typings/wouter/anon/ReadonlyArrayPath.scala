@@ -143,8 +143,7 @@ trait ReadonlyArrayPath extends StObject {
 }
 object ReadonlyArrayPath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     concat: /* repeated */ js.Array[Path] => js.Array[Path],
     copyWithin: (/* target */ Double, /* start */ Double) => ReadonlyArrayPath,
     entries: () => IterableIterator[js.Tuple2[Double, Path]],
@@ -217,20 +216,15 @@ object ReadonlyArrayPath {
     __obj.asInstanceOf[ReadonlyArrayPath]
   }
   
-  @scala.inline
-  implicit class ReadonlyArrayPathMutableBuilder[Self <: ReadonlyArrayPath] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyArrayPath](x: Self) {
     
-    @scala.inline
-    def setConcat(value: /* repeated */ js.Array[Path] => js.Array[Path]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+    inline def setConcat(value: /* repeated */ js.Array[Path] => js.Array[Path]): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopyWithin(value: (/* target */ Double, /* start */ Double) => ReadonlyArrayPath): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
+    inline def setCopyWithin(value: (/* target */ Double, /* start */ Double) => ReadonlyArrayPath): Self = StObject.set(x, "copyWithin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEntries(value: () => IterableIterator[js.Tuple2[Double, Path]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+    inline def setEntries(value: () => IterableIterator[js.Tuple2[Double, Path]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEvery(
+    inline def setEvery(
       value: /* predicate */ js.Function3[
           /* value */ Path, 
           /* index */ Double, 
@@ -239,11 +233,9 @@ object ReadonlyArrayPath {
         ] => /* is std.Array<wouter.wouter/preact/use-location.Path> */ Boolean
     ): Self = StObject.set(x, "every", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFill(value: /* value */ Path => ReadonlyArrayPath): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* value */ Path => ReadonlyArrayPath): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilter(
+    inline def setFilter(
       value: /* predicate */ js.Function3[
           /* value */ Path, 
           /* index */ Double, 
@@ -252,8 +244,7 @@ object ReadonlyArrayPath {
         ] => js.Array[Path]
     ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFind(
+    inline def setFind(
       value: /* predicate */ js.ThisFunction3[
           /* this */ Unit, 
           /* value */ Path, 
@@ -263,16 +254,13 @@ object ReadonlyArrayPath {
         ] => js.UndefOr[Path]
     ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindIndex(
+    inline def setFindIndex(
       value: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* obj */ js.Array[Path], js.Any] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlat(value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, `1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatMap(
+    inline def setFlatMap(
       value: /* callback */ js.ThisFunction3[
           /* this */ Unit, 
           /* value */ Path, 
@@ -282,42 +270,31 @@ object ReadonlyArrayPath {
         ] => js.Array[js.Any]
     ): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEach(
+    inline def setForEach(
       value: /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], Unit] => Unit
     ): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludes(value: /* searchElement */ Path => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
+    inline def setIncludes(value: /* searchElement */ Path => Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexOf(value: /* searchElement */ Path => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* searchElement */ Path => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJoin(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
+    inline def setJoin(value: () => String): Self = StObject.set(x, "join", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeys(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+    inline def setKeys(value: () => IterableIterator[Double]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLastIndexOf(value: /* searchElement */ Path => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
+    inline def setLastIndexOf(value: /* searchElement */ Path => Double): Self = StObject.set(x, "lastIndexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: /* callbackfn */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any] => js.Array[js.Any]
     ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPop(value: () => js.UndefOr[Path]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    inline def setPop(value: () => js.UndefOr[Path]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: /* repeated */ Path => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: /* repeated */ Path => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: /* callbackfn */ js.Function4[
           /* previousValue */ Path, 
           /* currentValue */ Path, 
@@ -327,8 +304,7 @@ object ReadonlyArrayPath {
         ] => Path
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: /* callbackfn */ js.Function4[
           /* previousValue */ Path, 
           /* currentValue */ Path, 
@@ -338,36 +314,26 @@ object ReadonlyArrayPath {
         ] => Path
     ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReverse(value: () => js.Array[Path]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
+    inline def setReverse(value: () => js.Array[Path]): Self = StObject.set(x, "reverse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShift(value: () => js.UndefOr[Path]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+    inline def setShift(value: () => js.UndefOr[Path]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlice(value: () => js.Array[Path]): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
+    inline def setSlice(value: () => js.Array[Path]): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSome(
+    inline def setSome(
       value: /* predicate */ js.Function3[/* value */ Path, /* index */ Double, /* array */ js.Array[Path], js.Any] => Boolean
     ): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSort(value: () => ReadonlyArrayPath): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
+    inline def setSort(value: () => ReadonlyArrayPath): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSplice(value: /* start */ Double => js.Array[Path]): Self = StObject.set(x, "splice", js.Any.fromFunction1(value))
+    inline def setSplice(value: /* start */ Double => js.Array[Path]): Self = StObject.set(x, "splice", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToLocaleString(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
+    inline def setToLocaleString(value: () => String): Self = StObject.set(x, "toLocaleString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+    inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnshift(value: /* repeated */ Path => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+    inline def setUnshift(value: /* repeated */ Path => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValues(value: () => IterableIterator[Path]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+    inline def setValues(value: () => IterableIterator[Path]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientDockPanelProcessingModeEventArgs
 }
 object ASPxClientDockPanelProcessingModeEventArgs {
   
-  @scala.inline
-  def apply(processOnServer: Boolean, zone: ASPxClientDockZone): ASPxClientDockPanelProcessingModeEventArgs = {
+  inline def apply(processOnServer: Boolean, zone: ASPxClientDockZone): ASPxClientDockPanelProcessingModeEventArgs = {
     val __obj = js.Dynamic.literal(processOnServer = processOnServer.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDockPanelProcessingModeEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDockPanelProcessingModeEventArgsMutableBuilder[Self <: ASPxClientDockPanelProcessingModeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDockPanelProcessingModeEventArgs](x: Self) {
     
-    @scala.inline
-    def setZone(value: ASPxClientDockZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: ASPxClientDockZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

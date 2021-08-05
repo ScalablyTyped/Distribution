@@ -18,28 +18,21 @@ trait DescribeAccountLimitsOutput extends StObject {
 }
 object DescribeAccountLimitsOutput {
   
-  @scala.inline
-  def apply(): DescribeAccountLimitsOutput = {
+  inline def apply(): DescribeAccountLimitsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountLimitsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeAccountLimitsOutputMutableBuilder[Self <: DescribeAccountLimitsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountLimitsOutput](x: Self) {
     
-    @scala.inline
-    def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
-    @scala.inline
-    def setLimitsVarargs(value: Limit*): Self = StObject.set(x, "Limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: Limit*): Self = StObject.set(x, "Limits", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

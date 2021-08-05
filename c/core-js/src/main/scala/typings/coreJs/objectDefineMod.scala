@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object objectDefineMod {
   
   /* was `typeof core.Object.define` */
-  @scala.inline
-  def apply[T](target: T, mixin: js.Any): T = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], mixin.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T](target: T, mixin: js.Any): T = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], mixin.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("core-js/library/fn/object/define", JSImport.Namespace)
   @js.native

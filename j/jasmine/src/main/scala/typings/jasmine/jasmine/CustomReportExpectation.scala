@@ -16,25 +16,19 @@ trait CustomReportExpectation extends StObject {
 }
 object CustomReportExpectation {
   
-  @scala.inline
-  def apply(matcherName: String, message: String, passed: Boolean, stack: String): CustomReportExpectation = {
+  inline def apply(matcherName: String, message: String, passed: Boolean, stack: String): CustomReportExpectation = {
     val __obj = js.Dynamic.literal(matcherName = matcherName.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], passed = passed.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomReportExpectation]
   }
   
-  @scala.inline
-  implicit class CustomReportExpectationMutableBuilder[Self <: CustomReportExpectation] (val x: Self) extends AnyVal {
+  extension [Self <: CustomReportExpectation](x: Self) {
     
-    @scala.inline
-    def setMatcherName(value: String): Self = StObject.set(x, "matcherName", value.asInstanceOf[js.Any])
+    inline def setMatcherName(value: String): Self = StObject.set(x, "matcherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

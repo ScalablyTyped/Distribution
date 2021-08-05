@@ -32,7 +32,7 @@ object entityObjectMod {
     
     var componentDirty: Boolean = js.native
     
-    var componentManager: ComponentManager = js.native
+    /* protected */ var componentManager: ComponentManager = js.native
     
     /* protected */ def createTransform(): Transform = js.native
     
@@ -87,32 +87,24 @@ object entityObjectMod {
   }
   object CloneEntityObjectConfigData {
     
-    @scala.inline
-    def apply(): CloneEntityObjectConfigData = {
+    inline def apply(): CloneEntityObjectConfigData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CloneEntityObjectConfigData]
     }
     
-    @scala.inline
-    implicit class CloneEntityObjectConfigDataMutableBuilder[Self <: CloneEntityObjectConfigData] (val x: Self) extends AnyVal {
+    extension [Self <: CloneEntityObjectConfigData](x: Self) {
       
-      @scala.inline
-      def setCloneChildren(value: Boolean): Self = StObject.set(x, "cloneChildren", value.asInstanceOf[js.Any])
+      inline def setCloneChildren(value: Boolean): Self = StObject.set(x, "cloneChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneChildrenUndefined: Self = StObject.set(x, "cloneChildren", js.undefined)
+      inline def setCloneChildrenUndefined: Self = StObject.set(x, "cloneChildren", js.undefined)
       
-      @scala.inline
-      def setCloneGeometry(value: Boolean): Self = StObject.set(x, "cloneGeometry", value.asInstanceOf[js.Any])
+      inline def setCloneGeometry(value: Boolean): Self = StObject.set(x, "cloneGeometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneGeometryUndefined: Self = StObject.set(x, "cloneGeometry", js.undefined)
+      inline def setCloneGeometryUndefined: Self = StObject.set(x, "cloneGeometry", js.undefined)
       
-      @scala.inline
-      def setShareGeometry(value: Boolean): Self = StObject.set(x, "shareGeometry", value.asInstanceOf[js.Any])
+      inline def setShareGeometry(value: Boolean): Self = StObject.set(x, "shareGeometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareGeometryUndefined: Self = StObject.set(x, "shareGeometry", js.undefined)
+      inline def setShareGeometryUndefined: Self = StObject.set(x, "shareGeometry", js.undefined)
     }
   }
 }

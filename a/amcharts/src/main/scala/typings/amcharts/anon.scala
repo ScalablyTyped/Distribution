@@ -15,21 +15,17 @@ object anon {
   }
   object Chart {
     
-    @scala.inline
-    def apply(chart: default, `type`: String): Chart = {
+    inline def apply(chart: default, `type`: String): Chart = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chart]
     }
     
-    @scala.inline
-    implicit class ChartMutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
+    extension [Self <: Chart](x: Self) {
       
-      @scala.inline
-      def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,24 +40,19 @@ object anon {
   }
   object ChartDataItem {
     
-    @scala.inline
-    def apply(chart: default, dataItem: typings.amcharts.sliceMod.default, `type`: String): ChartDataItem = {
+    inline def apply(chart: default, dataItem: typings.amcharts.sliceMod.default, `type`: String): ChartDataItem = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataItem = dataItem.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChartDataItem]
     }
     
-    @scala.inline
-    implicit class ChartDataItemMutableBuilder[Self <: ChartDataItem] (val x: Self) extends AnyVal {
+    extension [Self <: ChartDataItem](x: Self) {
       
-      @scala.inline
-      def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataItem(value: typings.amcharts.sliceMod.default): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+      inline def setDataItem(value: typings.amcharts.sliceMod.default): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,8 +70,7 @@ object anon {
   }
   object Count {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       endDate: typings.std.Date,
       predefinedPeriod: String,
@@ -92,23 +82,17 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    @scala.inline
-    implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+    extension [Self <: Count](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredefinedPeriod(value: String): Self = StObject.set(x, "predefinedPeriod", value.asInstanceOf[js.Any])
+      inline def setPredefinedPeriod(value: String): Self = StObject.set(x, "predefinedPeriod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,26 +108,20 @@ object anon {
   }
   object DD {
     
-    @scala.inline
-    def apply(DD: String, hh: String, mm: String, ss: String): DD = {
+    inline def apply(DD: String, hh: String, mm: String, ss: String): DD = {
       val __obj = js.Dynamic.literal(DD = DD.asInstanceOf[js.Any], hh = hh.asInstanceOf[js.Any], mm = mm.asInstanceOf[js.Any], ss = ss.asInstanceOf[js.Any])
       __obj.asInstanceOf[DD]
     }
     
-    @scala.inline
-    implicit class DDMutableBuilder[Self <: DD] (val x: Self) extends AnyVal {
+    extension [Self <: DD](x: Self) {
       
-      @scala.inline
-      def setDD(value: String): Self = StObject.set(x, "DD", value.asInstanceOf[js.Any])
+      inline def setDD(value: String): Self = StObject.set(x, "DD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHh(value: String): Self = StObject.set(x, "hh", value.asInstanceOf[js.Any])
+      inline def setHh(value: String): Self = StObject.set(x, "hh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMm(value: String): Self = StObject.set(x, "mm", value.asInstanceOf[js.Any])
+      inline def setMm(value: String): Self = StObject.set(x, "mm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSs(value: String): Self = StObject.set(x, "ss", value.asInstanceOf[js.Any])
+      inline def setSs(value: String): Self = StObject.set(x, "ss", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,24 +135,19 @@ object anon {
   }
   object DataItem {
     
-    @scala.inline
-    def apply(chart: default, dataItem: js.Object, `type`: String): DataItem = {
+    inline def apply(chart: default, dataItem: js.Object, `type`: String): DataItem = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dataItem = dataItem.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataItem]
     }
     
-    @scala.inline
-    implicit class DataItemMutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
+    extension [Self <: DataItem](x: Self) {
       
-      @scala.inline
-      def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataItem(value: js.Object): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+      inline def setDataItem(value: js.Object): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,63 +173,45 @@ object anon {
   }
   object Date {
     
-    @scala.inline
-    def apply(chart: Date, `type`: String): Date = {
+    inline def apply(chart: Date, `type`: String): Date = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setChart(value: Date): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: Date): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setEventObject(value: typings.amcharts.stockEventMod.default): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
+      inline def setEventObject(value: typings.amcharts.stockEventMod.default): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventObjectUndefined: Self = StObject.set(x, "eventObject", js.undefined)
+      inline def setEventObjectUndefined: Self = StObject.set(x, "eventObject", js.undefined)
       
-      @scala.inline
-      def setGraph(value: typings.amcharts.stockGraphMod.default): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: typings.amcharts.stockGraphMod.default): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+      inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
       
-      @scala.inline
-      def setPanel(value: typings.amcharts.stockPanelMod.default): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+      inline def setPanel(value: typings.amcharts.stockPanelMod.default): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+      inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
       
-      @scala.inline
-      def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      @scala.inline
-      def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+      inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,117 +255,81 @@ object anon {
   }
   object Delta2X {
     
-    @scala.inline
-    def apply(chart: default, `type`: String): Delta2X = {
+    inline def apply(chart: default, `type`: String): Delta2X = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delta2X]
     }
     
-    @scala.inline
-    implicit class Delta2XMutableBuilder[Self <: Delta2X] (val x: Self) extends AnyVal {
+    extension [Self <: Delta2X](x: Self) {
       
-      @scala.inline
-      def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta2X(value: Double): Self = StObject.set(x, "delta2X", value.asInstanceOf[js.Any])
+      inline def setDelta2X(value: Double): Self = StObject.set(x, "delta2X", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta2XUndefined: Self = StObject.set(x, "delta2X", js.undefined)
+      inline def setDelta2XUndefined: Self = StObject.set(x, "delta2X", js.undefined)
       
-      @scala.inline
-      def setDelta2Y(value: Double): Self = StObject.set(x, "delta2Y", value.asInstanceOf[js.Any])
+      inline def setDelta2Y(value: Double): Self = StObject.set(x, "delta2Y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelta2YUndefined: Self = StObject.set(x, "delta2Y", js.undefined)
+      inline def setDelta2YUndefined: Self = StObject.set(x, "delta2Y", js.undefined)
       
-      @scala.inline
-      def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+      inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
+      inline def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
       
-      @scala.inline
-      def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+      inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
+      inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFinalX(value: Double): Self = StObject.set(x, "finalX", value.asInstanceOf[js.Any])
+      inline def setFinalX(value: Double): Self = StObject.set(x, "finalX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalXUndefined: Self = StObject.set(x, "finalX", js.undefined)
+      inline def setFinalXUndefined: Self = StObject.set(x, "finalX", js.undefined)
       
-      @scala.inline
-      def setFinalY(value: Double): Self = StObject.set(x, "finalY", value.asInstanceOf[js.Any])
+      inline def setFinalY(value: Double): Self = StObject.set(x, "finalY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalYUndefined: Self = StObject.set(x, "finalY", js.undefined)
+      inline def setFinalYUndefined: Self = StObject.set(x, "finalY", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
+      inline def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
       
-      @scala.inline
-      def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
+      inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
+      inline def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
       
-      @scala.inline
-      def setMostCloseGraph(value: typings.amcharts.amGraphMod.default): Self = StObject.set(x, "mostCloseGraph", value.asInstanceOf[js.Any])
+      inline def setMostCloseGraph(value: typings.amcharts.amGraphMod.default): Self = StObject.set(x, "mostCloseGraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostCloseGraphUndefined: Self = StObject.set(x, "mostCloseGraph", js.undefined)
+      inline def setMostCloseGraphUndefined: Self = StObject.set(x, "mostCloseGraph", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Delta2X): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Delta2X): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      @scala.inline
-      def setZooming(value: Boolean): Self = StObject.set(x, "zooming", value.asInstanceOf[js.Any])
+      inline def setZooming(value: Boolean): Self = StObject.set(x, "zooming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomingUndefined: Self = StObject.set(x, "zooming", js.undefined)
+      inline def setZoomingUndefined: Self = StObject.set(x, "zooming", js.undefined)
     }
   }
   
@@ -426,33 +345,25 @@ object anon {
   }
   object EndValue {
     
-    @scala.inline
-    def apply(chart: default, `type`: String): EndValue = {
+    inline def apply(chart: default, `type`: String): EndValue = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndValue]
     }
     
-    @scala.inline
-    implicit class EndValueMutableBuilder[Self <: EndValue] (val x: Self) extends AnyVal {
+    extension [Self <: EndValue](x: Self) {
       
-      @scala.inline
-      def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndValue(value: typings.std.Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+      inline def setEndValue(value: typings.std.Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+      inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
       
-      @scala.inline
-      def setStartValue(value: typings.std.Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+      inline def setStartValue(value: typings.std.Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+      inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -470,8 +381,7 @@ object anon {
   }
   object Graph {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chart: default,
       graph: typings.amcharts.amGraphMod.default,
       index: Double,
@@ -483,23 +393,17 @@ object anon {
       __obj.asInstanceOf[Graph]
     }
     
-    @scala.inline
-    implicit class GraphMutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
+    extension [Self <: Graph](x: Self) {
       
-      @scala.inline
-      def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraph(value: typings.amcharts.amGraphMod.default): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: typings.amcharts.amGraphMod.default): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: typings.amcharts.graphDataItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: typings.amcharts.graphDataItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -511,20 +415,16 @@ object anon {
   }
   object Number {
     
-    @scala.inline
-    def apply(number: Double, prefix: String): Number = {
+    inline def apply(number: Double, prefix: String): Number = {
       val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[Number]
     }
     
-    @scala.inline
-    implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
+    extension [Self <: Number](x: Self) {
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -537,21 +437,17 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(chart: Type, `type`: String): Type = {
+    inline def apply(chart: Type, `type`: String): Type = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setChart(value: Type): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: Type): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

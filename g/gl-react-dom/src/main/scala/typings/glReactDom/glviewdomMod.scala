@@ -81,68 +81,48 @@ object glviewdomMod {
   }
   object GLViewDOMProps {
     
-    @scala.inline
-    def apply(height: Double, width: Double): GLViewDOMProps = {
+    inline def apply(height: Double, width: Double): GLViewDOMProps = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[GLViewDOMProps]
     }
     
-    @scala.inline
-    implicit class GLViewDOMPropsMutableBuilder[Self <: GLViewDOMProps] (val x: Self) extends AnyVal {
+    extension [Self <: GLViewDOMProps](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnContextCreate(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextCreate", js.Any.fromFunction1(value))
+      inline def setOnContextCreate(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextCreate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
+      inline def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
       
-      @scala.inline
-      def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
+      inline def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
+      inline def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
       
-      @scala.inline
-      def setOnContextLost(value: () => Unit): Self = StObject.set(x, "onContextLost", js.Any.fromFunction0(value))
+      inline def setOnContextLost(value: () => Unit): Self = StObject.set(x, "onContextLost", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnContextLostUndefined: Self = StObject.set(x, "onContextLost", js.undefined)
+      inline def setOnContextLostUndefined: Self = StObject.set(x, "onContextLost", js.undefined)
       
-      @scala.inline
-      def setOnContextRestored(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextRestored", js.Any.fromFunction1(value))
+      inline def setOnContextRestored(value: /* gl */ WebGLRenderingContext => Unit): Self = StObject.set(x, "onContextRestored", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContextRestoredUndefined: Self = StObject.set(x, "onContextRestored", js.undefined)
+      inline def setOnContextRestoredUndefined: Self = StObject.set(x, "onContextRestored", js.undefined)
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setWebglContextAttributes(value: WebGLContextAttributes): Self = StObject.set(x, "webglContextAttributes", value.asInstanceOf[js.Any])
+      inline def setWebglContextAttributes(value: WebGLContextAttributes): Self = StObject.set(x, "webglContextAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebglContextAttributesUndefined: Self = StObject.set(x, "webglContextAttributes", js.undefined)
+      inline def setWebglContextAttributesUndefined: Self = StObject.set(x, "webglContextAttributes", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,17 +132,14 @@ object glviewdomMod {
   }
   object GLViewDOMState {
     
-    @scala.inline
-    def apply(error: Error): GLViewDOMState = {
+    inline def apply(error: Error): GLViewDOMState = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[GLViewDOMState]
     }
     
-    @scala.inline
-    implicit class GLViewDOMStateMutableBuilder[Self <: GLViewDOMState] (val x: Self) extends AnyVal {
+    extension [Self <: GLViewDOMState](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,20 +153,15 @@ object glviewdomMod {
   trait SupportedImage extends StObject
   object SupportedImage {
     
-    @scala.inline
-    def imageSlashbmp: typings.glReactDom.glReactDomStrings.imageSlashbmp = "image/bmp".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashbmp]
+    inline def imageSlashbmp: typings.glReactDom.glReactDomStrings.imageSlashbmp = "image/bmp".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashbmp]
     
-    @scala.inline
-    def imageSlashico: typings.glReactDom.glReactDomStrings.imageSlashico = "image/ico".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashico]
+    inline def imageSlashico: typings.glReactDom.glReactDomStrings.imageSlashico = "image/ico".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashico]
     
-    @scala.inline
-    def imageSlashjpeg: typings.glReactDom.glReactDomStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashjpeg]
+    inline def imageSlashjpeg: typings.glReactDom.glReactDomStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashjpeg]
     
-    @scala.inline
-    def imageSlashpng: typings.glReactDom.glReactDomStrings.imageSlashpng = "image/png".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashpng]
+    inline def imageSlashpng: typings.glReactDom.glReactDomStrings.imageSlashpng = "image/png".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashpng]
     
-    @scala.inline
-    def imageSlashwebp: typings.glReactDom.glReactDomStrings.imageSlashwebp = "image/webp".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashwebp]
+    inline def imageSlashwebp: typings.glReactDom.glReactDomStrings.imageSlashwebp = "image/webp".asInstanceOf[typings.glReactDom.glReactDomStrings.imageSlashwebp]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -208,37 +180,26 @@ object glviewdomMod {
   trait ValidQuality extends StObject
   object ValidQuality {
     
-    @scala.inline
-    def `0Dot0`: `0.0` = 0.0.asInstanceOf[`0.0`]
+    inline def `0Dot0`: `0.0` = 0.0.asInstanceOf[`0.0`]
     
-    @scala.inline
-    def `0Dot1`: `0.1` = 0.1.asInstanceOf[`0.1`]
+    inline def `0Dot1`: `0.1` = 0.1.asInstanceOf[`0.1`]
     
-    @scala.inline
-    def `0Dot2`: `0.2` = 0.2.asInstanceOf[`0.2`]
+    inline def `0Dot2`: `0.2` = 0.2.asInstanceOf[`0.2`]
     
-    @scala.inline
-    def `0Dot3`: `0.3` = 0.3.asInstanceOf[`0.3`]
+    inline def `0Dot3`: `0.3` = 0.3.asInstanceOf[`0.3`]
     
-    @scala.inline
-    def `0Dot4`: `0.4` = 0.4.asInstanceOf[`0.4`]
+    inline def `0Dot4`: `0.4` = 0.4.asInstanceOf[`0.4`]
     
-    @scala.inline
-    def `0Dot5`: `0.5` = 0.5.asInstanceOf[`0.5`]
+    inline def `0Dot5`: `0.5` = 0.5.asInstanceOf[`0.5`]
     
-    @scala.inline
-    def `0Dot6`: `0.6` = 0.6.asInstanceOf[`0.6`]
+    inline def `0Dot6`: `0.6` = 0.6.asInstanceOf[`0.6`]
     
-    @scala.inline
-    def `0Dot7`: `0.7` = 0.7.asInstanceOf[`0.7`]
+    inline def `0Dot7`: `0.7` = 0.7.asInstanceOf[`0.7`]
     
-    @scala.inline
-    def `0Dot8`: `0.8` = 0.8.asInstanceOf[`0.8`]
+    inline def `0Dot8`: `0.8` = 0.8.asInstanceOf[`0.8`]
     
-    @scala.inline
-    def `0Dot9`: `0.9` = 0.9.asInstanceOf[`0.9`]
+    inline def `0Dot9`: `0.9` = 0.9.asInstanceOf[`0.9`]
     
-    @scala.inline
-    def `1Dot0`: `1.0` = 1.0.asInstanceOf[`1.0`]
+    inline def `1Dot0`: `1.0` = 1.0.asInstanceOf[`1.0`]
   }
 }

@@ -32,8 +32,7 @@ trait ToastAndroidStatic extends StObject {
 }
 object ToastAndroidStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BOTTOM: Double,
     CENTER: Double,
     LONG: Double,
@@ -47,31 +46,22 @@ object ToastAndroidStatic {
     __obj.asInstanceOf[ToastAndroidStatic]
   }
   
-  @scala.inline
-  implicit class ToastAndroidStaticMutableBuilder[Self <: ToastAndroidStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ToastAndroidStatic](x: Self) {
     
-    @scala.inline
-    def setBOTTOM(value: Double): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
+    inline def setBOTTOM(value: Double): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCENTER(value: Double): Self = StObject.set(x, "CENTER", value.asInstanceOf[js.Any])
+    inline def setCENTER(value: Double): Self = StObject.set(x, "CENTER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLONG(value: Double): Self = StObject.set(x, "LONG", value.asInstanceOf[js.Any])
+    inline def setLONG(value: Double): Self = StObject.set(x, "LONG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHORT(value: Double): Self = StObject.set(x, "SHORT", value.asInstanceOf[js.Any])
+    inline def setSHORT(value: Double): Self = StObject.set(x, "SHORT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: (String, Double) => Unit): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
+    inline def setShow(value: (String, Double) => Unit): Self = StObject.set(x, "show", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowWithGravity(value: (String, Double, Double) => Unit): Self = StObject.set(x, "showWithGravity", js.Any.fromFunction3(value))
+    inline def setShowWithGravity(value: (String, Double, Double) => Unit): Self = StObject.set(x, "showWithGravity", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setShowWithGravityAndOffset(value: (String, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "showWithGravityAndOffset", js.Any.fromFunction5(value))
+    inline def setShowWithGravityAndOffset(value: (String, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "showWithGravityAndOffset", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTOP(value: Double): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
+    inline def setTOP(value: Double): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
   }
 }

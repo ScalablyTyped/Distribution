@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExistsResult extends StObject
 object ExistsResult {
   
-  @scala.inline
-  def dir: typings.fsJetpack.fsJetpackStrings.dir = "dir".asInstanceOf[typings.fsJetpack.fsJetpackStrings.dir]
+  inline def dir: typings.fsJetpack.fsJetpackStrings.dir = "dir".asInstanceOf[typings.fsJetpack.fsJetpackStrings.dir]
   
-  @scala.inline
-  def `false`: typings.fsJetpack.fsJetpackBooleans.`false` = false.asInstanceOf[typings.fsJetpack.fsJetpackBooleans.`false`]
+  inline def `false`: typings.fsJetpack.fsJetpackBooleans.`false` = false.asInstanceOf[typings.fsJetpack.fsJetpackBooleans.`false`]
   
-  @scala.inline
-  def file: typings.fsJetpack.fsJetpackStrings.file = "file".asInstanceOf[typings.fsJetpack.fsJetpackStrings.file]
+  inline def file: typings.fsJetpack.fsJetpackStrings.file = "file".asInstanceOf[typings.fsJetpack.fsJetpackStrings.file]
   
-  @scala.inline
-  def other: typings.fsJetpack.fsJetpackStrings.other = "other".asInstanceOf[typings.fsJetpack.fsJetpackStrings.other]
+  inline def other: typings.fsJetpack.fsJetpackStrings.other = "other".asInstanceOf[typings.fsJetpack.fsJetpackStrings.other]
 }

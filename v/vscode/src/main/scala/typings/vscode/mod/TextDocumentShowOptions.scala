@@ -33,37 +33,27 @@ trait TextDocumentShowOptions extends StObject {
 }
 object TextDocumentShowOptions {
   
-  @scala.inline
-  def apply(): TextDocumentShowOptions = {
+  inline def apply(): TextDocumentShowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDocumentShowOptions]
   }
   
-  @scala.inline
-  implicit class TextDocumentShowOptionsMutableBuilder[Self <: TextDocumentShowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentShowOptions](x: Self) {
     
-    @scala.inline
-    def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
+    inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
+    inline def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
     
-    @scala.inline
-    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setSelection(value: Range): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Range): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
-    @scala.inline
-    def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
+    inline def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewColumnUndefined: Self = StObject.set(x, "viewColumn", js.undefined)
+    inline def setViewColumnUndefined: Self = StObject.set(x, "viewColumn", js.undefined)
   }
 }

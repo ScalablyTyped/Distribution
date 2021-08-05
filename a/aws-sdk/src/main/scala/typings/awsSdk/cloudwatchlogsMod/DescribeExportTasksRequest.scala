@@ -28,37 +28,27 @@ trait DescribeExportTasksRequest extends StObject {
 }
 object DescribeExportTasksRequest {
   
-  @scala.inline
-  def apply(): DescribeExportTasksRequest = {
+  inline def apply(): DescribeExportTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeExportTasksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeExportTasksRequestMutableBuilder[Self <: DescribeExportTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeExportTasksRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: DescribeLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: DescribeLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: ExportTaskStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: ExportTaskStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: ExportTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: ExportTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

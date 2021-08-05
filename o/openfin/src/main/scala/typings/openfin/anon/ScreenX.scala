@@ -12,19 +12,15 @@ trait ScreenX extends StObject {
 }
 object ScreenX {
   
-  @scala.inline
-  def apply(screenX: Double, screenY: Double): ScreenX = {
+  inline def apply(screenX: Double, screenY: Double): ScreenX = {
     val __obj = js.Dynamic.literal(screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenX]
   }
   
-  @scala.inline
-  implicit class ScreenXMutableBuilder[Self <: ScreenX] (val x: Self) extends AnyVal {
+  extension [Self <: ScreenX](x: Self) {
     
-    @scala.inline
-    def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+    inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+    inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
   }
 }

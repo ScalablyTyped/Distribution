@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
-  @scala.inline
-  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-reports", JSImport.Namespace)
   @js.native
@@ -24,26 +22,20 @@ object mod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(): Configuration = {
+    inline def apply(): Configuration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setCleanInterval(value: String): Self = StObject.set(x, "cleanInterval", value.asInstanceOf[js.Any])
+      inline def setCleanInterval(value: String): Self = StObject.set(x, "cleanInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanIntervalUndefined: Self = StObject.set(x, "cleanInterval", js.undefined)
+      inline def setCleanIntervalUndefined: Self = StObject.set(x, "cleanInterval", js.undefined)
       
-      @scala.inline
-      def setCleanTreshold(value: String): Self = StObject.set(x, "cleanTreshold", value.asInstanceOf[js.Any])
+      inline def setCleanTreshold(value: String): Self = StObject.set(x, "cleanTreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanTresholdUndefined: Self = StObject.set(x, "cleanTreshold", js.undefined)
+      inline def setCleanTresholdUndefined: Self = StObject.set(x, "cleanTreshold", js.undefined)
     }
   }
   
@@ -57,32 +49,24 @@ object mod {
   }
   object ReportsOptions {
     
-    @scala.inline
-    def apply(): ReportsOptions = {
+    inline def apply(): ReportsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReportsOptions]
     }
     
-    @scala.inline
-    implicit class ReportsOptionsMutableBuilder[Self <: ReportsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReportsOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+      inline def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     }
   }
   
@@ -95,20 +79,16 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setReports(value: ReportsOptions): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+        inline def setReports(value: ReportsOptions): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
+        inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
       }
     }
   }

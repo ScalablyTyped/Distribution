@@ -18,25 +18,19 @@ trait AddLayerVersionPermissionResponse extends StObject {
 }
 object AddLayerVersionPermissionResponse {
   
-  @scala.inline
-  def apply(): AddLayerVersionPermissionResponse = {
+  inline def apply(): AddLayerVersionPermissionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddLayerVersionPermissionResponse]
   }
   
-  @scala.inline
-  implicit class AddLayerVersionPermissionResponseMutableBuilder[Self <: AddLayerVersionPermissionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddLayerVersionPermissionResponse](x: Self) {
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
-    @scala.inline
-    def setStatement(value: String): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: String): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementUndefined: Self = StObject.set(x, "Statement", js.undefined)
+    inline def setStatementUndefined: Self = StObject.set(x, "Statement", js.undefined)
   }
 }

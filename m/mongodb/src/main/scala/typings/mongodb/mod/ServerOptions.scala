@@ -58,61 +58,43 @@ trait ServerOptions
 }
 object ServerOptions {
   
-  @scala.inline
-  def apply(): ServerOptions = {
+  inline def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerOptions]
   }
   
-  @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptions](x: Self) {
     
-    @scala.inline
-    def setDomainsEnabled(value: Boolean): Self = StObject.set(x, "domainsEnabled", value.asInstanceOf[js.Any])
+    inline def setDomainsEnabled(value: Boolean): Self = StObject.set(x, "domainsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsEnabledUndefined: Self = StObject.set(x, "domainsEnabled", js.undefined)
+    inline def setDomainsEnabledUndefined: Self = StObject.set(x, "domainsEnabled", js.undefined)
     
-    @scala.inline
-    def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
+    inline def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
+    inline def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
     
-    @scala.inline
-    def setHaInterval(value: scala.Double): Self = StObject.set(x, "haInterval", value.asInstanceOf[js.Any])
+    inline def setHaInterval(value: scala.Double): Self = StObject.set(x, "haInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaIntervalUndefined: Self = StObject.set(x, "haInterval", js.undefined)
+    inline def setHaIntervalUndefined: Self = StObject.set(x, "haInterval", js.undefined)
     
-    @scala.inline
-    def setMonitorCommands(value: Boolean): Self = StObject.set(x, "monitorCommands", value.asInstanceOf[js.Any])
+    inline def setMonitorCommands(value: Boolean): Self = StObject.set(x, "monitorCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorCommandsUndefined: Self = StObject.set(x, "monitorCommands", js.undefined)
+    inline def setMonitorCommandsUndefined: Self = StObject.set(x, "monitorCommands", js.undefined)
     
-    @scala.inline
-    def setMonitoring(value: Boolean): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
+    inline def setMonitoring(value: Boolean): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
+    inline def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
     
-    @scala.inline
-    def setReconnectInterval(value: scala.Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
+    inline def setReconnectInterval(value: scala.Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
+    inline def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
     
-    @scala.inline
-    def setReconnectTries(value: scala.Double): Self = StObject.set(x, "reconnectTries", value.asInstanceOf[js.Any])
+    inline def setReconnectTries(value: scala.Double): Self = StObject.set(x, "reconnectTries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReconnectTriesUndefined: Self = StObject.set(x, "reconnectTries", js.undefined)
+    inline def setReconnectTriesUndefined: Self = StObject.set(x, "reconnectTries", js.undefined)
     
-    @scala.inline
-    def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
+    inline def setSocketOptions(value: SocketOptions): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
+    inline def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait IlmMoveToStep[T]
 }
 object IlmMoveToStep {
   
-  @scala.inline
-  def apply[T](index: String): IlmMoveToStep[T] = {
+  inline def apply[T](index: String): IlmMoveToStep[T] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IlmMoveToStep[T]]
   }
   
-  @scala.inline
-  implicit class IlmMoveToStepMutableBuilder[Self <: IlmMoveToStep[?], T] (val x: Self & IlmMoveToStep[T]) extends AnyVal {
+  extension [Self <: IlmMoveToStep[?], T](x: Self & IlmMoveToStep[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

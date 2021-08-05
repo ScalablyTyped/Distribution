@@ -27,6 +27,5 @@ object Transitioning {
   @JSImport("react-native-reanimated", "Transitioning.View")
   @js.native
   def View: Instantiable0[TransitioningView] = js.native
-  @scala.inline
-  def View_=(x: Instantiable0[TransitioningView]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+  inline def View_=(x: Instantiable0[TransitioningView]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
 }

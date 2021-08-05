@@ -11,6 +11,5 @@ object useComponentsContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useComponentsContext(): ComponentContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useComponentsContext")().asInstanceOf[ComponentContextType]
+  inline def useComponentsContext(): ComponentContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useComponentsContext")().asInstanceOf[ComponentContextType]
 }

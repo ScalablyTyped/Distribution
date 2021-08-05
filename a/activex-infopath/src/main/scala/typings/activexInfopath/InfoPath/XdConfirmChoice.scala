@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdConfirmChoice extends StObject
 object XdConfirmChoice {
   
-  @scala.inline
-  def xdCancel: `2` = 2.asInstanceOf[`2`]
+  inline def xdCancel: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xdNo: `7` = 7.asInstanceOf[`7`]
+  inline def xdNo: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xdOK: `1` = 1.asInstanceOf[`1`]
+  inline def xdOK: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xdYes: `6` = 6.asInstanceOf[`6`]
+  inline def xdYes: `6` = 6.asInstanceOf[`6`]
 }

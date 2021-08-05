@@ -23,22 +23,17 @@ trait SshPublicKey extends StObject {
 }
 object SshPublicKey {
   
-  @scala.inline
-  def apply(DateImported: DateImported, SshPublicKeyBody: SshPublicKeyBody, SshPublicKeyId: SshPublicKeyId): SshPublicKey = {
+  inline def apply(DateImported: DateImported, SshPublicKeyBody: SshPublicKeyBody, SshPublicKeyId: SshPublicKeyId): SshPublicKey = {
     val __obj = js.Dynamic.literal(DateImported = DateImported.asInstanceOf[js.Any], SshPublicKeyBody = SshPublicKeyBody.asInstanceOf[js.Any], SshPublicKeyId = SshPublicKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SshPublicKey]
   }
   
-  @scala.inline
-  implicit class SshPublicKeyMutableBuilder[Self <: SshPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: SshPublicKey](x: Self) {
     
-    @scala.inline
-    def setDateImported(value: DateImported): Self = StObject.set(x, "DateImported", value.asInstanceOf[js.Any])
+    inline def setDateImported(value: DateImported): Self = StObject.set(x, "DateImported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyBody(value: SshPublicKeyBody): Self = StObject.set(x, "SshPublicKeyBody", value.asInstanceOf[js.Any])
+    inline def setSshPublicKeyBody(value: SshPublicKeyBody): Self = StObject.set(x, "SshPublicKeyBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyId(value: SshPublicKeyId): Self = StObject.set(x, "SshPublicKeyId", value.asInstanceOf[js.Any])
+    inline def setSshPublicKeyId(value: SshPublicKeyId): Self = StObject.set(x, "SshPublicKeyId", value.asInstanceOf[js.Any])
   }
 }

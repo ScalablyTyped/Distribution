@@ -14,19 +14,15 @@ trait GetSecurityIsolationStatusRequest extends StObject {
 }
 object GetSecurityIsolationStatusRequest {
   
-  @scala.inline
-  def apply(): GetSecurityIsolationStatusRequest = {
+  inline def apply(): GetSecurityIsolationStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSecurityIsolationStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetSecurityIsolationStatusRequestMutableBuilder[Self <: GetSecurityIsolationStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecurityIsolationStatusRequest](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
   }
 }

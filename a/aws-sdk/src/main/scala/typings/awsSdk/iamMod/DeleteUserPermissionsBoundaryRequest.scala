@@ -13,16 +13,13 @@ trait DeleteUserPermissionsBoundaryRequest extends StObject {
 }
 object DeleteUserPermissionsBoundaryRequest {
   
-  @scala.inline
-  def apply(UserName: userNameType): DeleteUserPermissionsBoundaryRequest = {
+  inline def apply(UserName: userNameType): DeleteUserPermissionsBoundaryRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserPermissionsBoundaryRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserPermissionsBoundaryRequestMutableBuilder[Self <: DeleteUserPermissionsBoundaryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserPermissionsBoundaryRequest](x: Self) {
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait JQueryRowGridJSOptions extends StObject {
 }
 object JQueryRowGridJSOptions {
   
-  @scala.inline
-  def apply(itemSelector: String): JQueryRowGridJSOptions = {
+  inline def apply(itemSelector: String): JQueryRowGridJSOptions = {
     val __obj = js.Dynamic.literal(itemSelector = itemSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryRowGridJSOptions]
   }
   
-  @scala.inline
-  implicit class JQueryRowGridJSOptionsMutableBuilder[Self <: JQueryRowGridJSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryRowGridJSOptions](x: Self) {
     
-    @scala.inline
-    def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
+    inline def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMargin(value: Double): Self = StObject.set(x, "maxMargin", value.asInstanceOf[js.Any])
+    inline def setMaxMargin(value: Double): Self = StObject.set(x, "maxMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMarginUndefined: Self = StObject.set(x, "maxMargin", js.undefined)
+    inline def setMaxMarginUndefined: Self = StObject.set(x, "maxMargin", js.undefined)
     
-    @scala.inline
-    def setMinMargin(value: Double): Self = StObject.set(x, "minMargin", value.asInstanceOf[js.Any])
+    inline def setMinMargin(value: Double): Self = StObject.set(x, "minMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinMarginUndefined: Self = StObject.set(x, "minMargin", js.undefined)
+    inline def setMinMarginUndefined: Self = StObject.set(x, "minMargin", js.undefined)
   }
 }

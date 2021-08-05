@@ -15,16 +15,13 @@ trait PickImplonDeny extends StObject {
 }
 object PickImplonDeny {
   
-  @scala.inline
-  def apply(onDeny: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): PickImplonDeny = {
+  inline def apply(onDeny: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): PickImplonDeny = {
     val __obj = js.Dynamic.literal(onDeny = onDeny.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonDeny]
   }
   
-  @scala.inline
-  implicit class PickImplonDenyMutableBuilder[Self <: PickImplonDeny] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonDeny](x: Self) {
     
-    @scala.inline
-    def setOnDeny(value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): Self = StObject.set(x, "onDeny", value.asInstanceOf[js.Any])
+    inline def setOnDeny(value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]): Self = StObject.set(x, "onDeny", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait Diagnostics extends StObject {
 }
 object Diagnostics {
   
-  @scala.inline
-  def apply(): Diagnostics = {
+  inline def apply(): Diagnostics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Diagnostics]
   }
   
-  @scala.inline
-  implicit class DiagnosticsMutableBuilder[Self <: Diagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: Diagnostics](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: LifecycleErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: LifecycleErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setLogTail(value: LogTail): Self = StObject.set(x, "logTail", value.asInstanceOf[js.Any])
+    inline def setLogTail(value: LogTail): Self = StObject.set(x, "logTail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTailUndefined: Self = StObject.set(x, "logTail", js.undefined)
+    inline def setLogTailUndefined: Self = StObject.set(x, "logTail", js.undefined)
     
-    @scala.inline
-    def setMessage(value: LifecycleMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: LifecycleMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setScriptName(value: ScriptName): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
+    inline def setScriptName(value: ScriptName): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptNameUndefined: Self = StObject.set(x, "scriptName", js.undefined)
+    inline def setScriptNameUndefined: Self = StObject.set(x, "scriptName", js.undefined)
   }
 }

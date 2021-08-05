@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceFirmwareStatus extends StObject
 object DeviceFirmwareStatus {
   
-  @scala.inline
-  def outdated: typings.trezorConnect.trezorConnectStrings.outdated = "outdated".asInstanceOf[typings.trezorConnect.trezorConnectStrings.outdated]
+  inline def outdated: typings.trezorConnect.trezorConnectStrings.outdated = "outdated".asInstanceOf[typings.trezorConnect.trezorConnectStrings.outdated]
   
-  @scala.inline
-  def required: typings.trezorConnect.trezorConnectStrings.required = "required".asInstanceOf[typings.trezorConnect.trezorConnectStrings.required]
+  inline def required: typings.trezorConnect.trezorConnectStrings.required = "required".asInstanceOf[typings.trezorConnect.trezorConnectStrings.required]
   
-  @scala.inline
-  def valid: typings.trezorConnect.trezorConnectStrings.valid = "valid".asInstanceOf[typings.trezorConnect.trezorConnectStrings.valid]
+  inline def valid: typings.trezorConnect.trezorConnectStrings.valid = "valid".asInstanceOf[typings.trezorConnect.trezorConnectStrings.valid]
 }

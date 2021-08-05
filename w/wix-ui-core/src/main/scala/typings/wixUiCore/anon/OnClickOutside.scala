@@ -16,8 +16,7 @@ trait OnClickOutside extends StObject {
 }
 object OnClickOutside {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendTo: js.Array[LabelStringValue | Label],
     children: js.Array[ValueArray],
     onClickOutside: () => Unit,
@@ -27,28 +26,20 @@ object OnClickOutside {
     __obj.asInstanceOf[OnClickOutside]
   }
   
-  @scala.inline
-  implicit class OnClickOutsideMutableBuilder[Self <: OnClickOutside] (val x: Self) extends AnyVal {
+  extension [Self <: OnClickOutside](x: Self) {
     
-    @scala.inline
-    def setAppendTo(value: js.Array[LabelStringValue | Label]): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: js.Array[LabelStringValue | Label]): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToVarargs(value: (LabelStringValue | Label)*): Self = StObject.set(x, "appendTo", js.Array(value :_*))
+    inline def setAppendToVarargs(value: (LabelStringValue | Label)*): Self = StObject.set(x, "appendTo", js.Array(value :_*))
     
-    @scala.inline
-    def setChildren(value: js.Array[ValueArray]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ValueArray]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: ValueArray*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ValueArray*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setOnClickOutside(value: () => Unit): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction0(value))
+    inline def setOnClickOutside(value: () => Unit): Self = StObject.set(x, "onClickOutside", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlacement(value: js.Array[String]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: js.Array[String]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementVarargs(value: String*): Self = StObject.set(x, "placement", js.Array(value :_*))
+    inline def setPlacementVarargs(value: String*): Self = StObject.set(x, "placement", js.Array(value :_*))
   }
 }

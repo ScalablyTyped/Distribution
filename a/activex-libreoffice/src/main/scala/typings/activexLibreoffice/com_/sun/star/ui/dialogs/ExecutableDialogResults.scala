@@ -15,10 +15,8 @@ object ExecutableDialogResults {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CANCEL: `0` = 0.asInstanceOf[`0`]
+    inline def CANCEL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def OK: `1` = 1.asInstanceOf[`1`]
+    inline def OK: `1` = 1.asInstanceOf[`1`]
   }
 }

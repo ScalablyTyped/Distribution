@@ -14,16 +14,10 @@ object computeWeightedLossMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike): O = ^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any]).asInstanceOf[O]
-  @scala.inline
-  def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: Unit, reduction: Reduction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: Tensor[Rank], reduction: Reduction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: TensorLike, reduction: Reduction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike): O = ^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any]).asInstanceOf[O]
+  inline def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: Unit, reduction: Reduction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: Tensor[Rank], reduction: Reduction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](losses: T | TensorLike, weights: TensorLike, reduction: Reduction): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
 }

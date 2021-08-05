@@ -11,16 +11,13 @@ trait PickImplminCharacters extends StObject {
 }
 object PickImplminCharacters {
   
-  @scala.inline
-  def apply(minCharacters: Double): PickImplminCharacters = {
+  inline def apply(minCharacters: Double): PickImplminCharacters = {
     val __obj = js.Dynamic.literal(minCharacters = minCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplminCharacters]
   }
   
-  @scala.inline
-  implicit class PickImplminCharactersMutableBuilder[Self <: PickImplminCharacters] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplminCharacters](x: Self) {
     
-    @scala.inline
-    def setMinCharacters(value: Double): Self = StObject.set(x, "minCharacters", value.asInstanceOf[js.Any])
+    inline def setMinCharacters(value: Double): Self = StObject.set(x, "minCharacters", value.asInstanceOf[js.Any])
   }
 }

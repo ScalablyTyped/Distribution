@@ -12,16 +12,13 @@ trait PluginCollapseGroups
 }
 object PluginCollapseGroups {
   
-  @scala.inline
-  def apply(collapseGroups: Boolean | js.Object): PluginCollapseGroups = {
+  inline def apply(collapseGroups: Boolean | js.Object): PluginCollapseGroups = {
     val __obj = js.Dynamic.literal(collapseGroups = collapseGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginCollapseGroups]
   }
   
-  @scala.inline
-  implicit class PluginCollapseGroupsMutableBuilder[Self <: PluginCollapseGroups] (val x: Self) extends AnyVal {
+  extension [Self <: PluginCollapseGroups](x: Self) {
     
-    @scala.inline
-    def setCollapseGroups(value: Boolean | js.Object): Self = StObject.set(x, "collapseGroups", value.asInstanceOf[js.Any])
+    inline def setCollapseGroups(value: Boolean | js.Object): Self = StObject.set(x, "collapseGroups", value.asInstanceOf[js.Any])
   }
 }

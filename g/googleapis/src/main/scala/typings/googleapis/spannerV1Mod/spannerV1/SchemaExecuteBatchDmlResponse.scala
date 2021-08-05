@@ -39,28 +39,21 @@ trait SchemaExecuteBatchDmlResponse extends StObject {
 }
 object SchemaExecuteBatchDmlResponse {
   
-  @scala.inline
-  def apply(): SchemaExecuteBatchDmlResponse = {
+  inline def apply(): SchemaExecuteBatchDmlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExecuteBatchDmlResponse]
   }
   
-  @scala.inline
-  implicit class SchemaExecuteBatchDmlResponseMutableBuilder[Self <: SchemaExecuteBatchDmlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExecuteBatchDmlResponse](x: Self) {
     
-    @scala.inline
-    def setResultSets(value: js.Array[SchemaResultSet]): Self = StObject.set(x, "resultSets", value.asInstanceOf[js.Any])
+    inline def setResultSets(value: js.Array[SchemaResultSet]): Self = StObject.set(x, "resultSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetsUndefined: Self = StObject.set(x, "resultSets", js.undefined)
+    inline def setResultSetsUndefined: Self = StObject.set(x, "resultSets", js.undefined)
     
-    @scala.inline
-    def setResultSetsVarargs(value: SchemaResultSet*): Self = StObject.set(x, "resultSets", js.Array(value :_*))
+    inline def setResultSetsVarargs(value: SchemaResultSet*): Self = StObject.set(x, "resultSets", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

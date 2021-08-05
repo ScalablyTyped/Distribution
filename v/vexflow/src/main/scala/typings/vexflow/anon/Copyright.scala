@@ -38,8 +38,7 @@ trait Copyright extends StObject {
 }
 object Copyright {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     copyright: String,
     description: String,
     designer: String,
@@ -60,52 +59,36 @@ object Copyright {
     __obj.asInstanceOf[Copyright]
   }
   
-  @scala.inline
-  implicit class CopyrightMutableBuilder[Self <: Copyright] (val x: Self) extends AnyVal {
+  extension [Self <: Copyright](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesigner(value: String): Self = StObject.set(x, "designer", value.asInstanceOf[js.Any])
+    inline def setDesigner(value: String): Self = StObject.set(x, "designer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesigner_url(value: String): Self = StObject.set(x, "designer_url", value.asInstanceOf[js.Any])
+    inline def setDesigner_url(value: String): Self = StObject.set(x, "designer_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont_family_name(value: String): Self = StObject.set(x, "font_family_name", value.asInstanceOf[js.Any])
+    inline def setFont_family_name(value: String): Self = StObject.set(x, "font_family_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont_sub_family_name(value: String): Self = StObject.set(x, "font_sub_family_name", value.asInstanceOf[js.Any])
+    inline def setFont_sub_family_name(value: String): Self = StObject.set(x, "font_sub_family_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_font_name(value: String): Self = StObject.set(x, "full_font_name", value.asInstanceOf[js.Any])
+    inline def setFull_font_name(value: String): Self = StObject.set(x, "full_font_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicense_description(value: String): Self = StObject.set(x, "license_description", value.asInstanceOf[js.Any])
+    inline def setLicense_description(value: String): Self = StObject.set(x, "license_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicense_url(value: String): Self = StObject.set(x, "license_url", value.asInstanceOf[js.Any])
+    inline def setLicense_url(value: String): Self = StObject.set(x, "license_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer_name(value: String): Self = StObject.set(x, "manufacturer_name", value.asInstanceOf[js.Any])
+    inline def setManufacturer_name(value: String): Self = StObject.set(x, "manufacturer_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostscript_name(value: String): Self = StObject.set(x, "postscript_name", value.asInstanceOf[js.Any])
+    inline def setPostscript_name(value: String): Self = StObject.set(x, "postscript_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrademark(value: String): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
+    inline def setTrademark(value: String): Self = StObject.set(x, "trademark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnique_font_identifier(value: String): Self = StObject.set(x, "unique_font_identifier", value.asInstanceOf[js.Any])
+    inline def setUnique_font_identifier(value: String): Self = StObject.set(x, "unique_font_identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor_url(value: String): Self = StObject.set(x, "vendor_url", value.asInstanceOf[js.Any])
+    inline def setVendor_url(value: String): Self = StObject.set(x, "vendor_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion_string(value: String): Self = StObject.set(x, "version_string", value.asInstanceOf[js.Any])
+    inline def setVersion_string(value: String): Self = StObject.set(x, "version_string", value.asInstanceOf[js.Any])
   }
 }

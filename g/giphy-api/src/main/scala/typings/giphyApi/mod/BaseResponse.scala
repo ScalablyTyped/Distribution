@@ -14,19 +14,15 @@ trait BaseResponse extends StObject {
 }
 object BaseResponse {
   
-  @scala.inline
-  def apply(meta: Msg, pagination: Count): BaseResponse = {
+  inline def apply(meta: Msg, pagination: Count): BaseResponse = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseResponse]
   }
   
-  @scala.inline
-  implicit class BaseResponseMutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BaseResponse](x: Self) {
     
-    @scala.inline
-    def setMeta(value: Msg): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Msg): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagination(value: Count): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Count): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

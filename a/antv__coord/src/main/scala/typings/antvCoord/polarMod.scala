@@ -20,8 +20,8 @@ object polarMod {
     
     var circleCenter: Point = js.native
     
-    var getOneBox: js.Any = js.native
+    /* private */ var getOneBox: js.Any = js.native
     
-    var polarRadius: js.Any = js.native
+    /* private */ var polarRadius: js.Any = js.native
   }
 }

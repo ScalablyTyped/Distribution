@@ -20,19 +20,15 @@ trait WorkItemTrackingReference
 }
 object WorkItemTrackingReference {
   
-  @scala.inline
-  def apply(_links: js.Any, name: String, referenceName: String, url: String): WorkItemTrackingReference = {
+  inline def apply(_links: js.Any, name: String, referenceName: String, url: String): WorkItemTrackingReference = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemTrackingReference]
   }
   
-  @scala.inline
-  implicit class WorkItemTrackingReferenceMutableBuilder[Self <: WorkItemTrackingReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTrackingReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+    inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
   }
 }

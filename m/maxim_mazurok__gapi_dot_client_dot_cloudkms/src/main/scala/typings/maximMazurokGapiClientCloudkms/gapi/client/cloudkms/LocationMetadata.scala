@@ -14,25 +14,19 @@ trait LocationMetadata extends StObject {
 }
 object LocationMetadata {
   
-  @scala.inline
-  def apply(): LocationMetadata = {
+  inline def apply(): LocationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationMetadata]
   }
   
-  @scala.inline
-  implicit class LocationMetadataMutableBuilder[Self <: LocationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: LocationMetadata](x: Self) {
     
-    @scala.inline
-    def setEkmAvailable(value: Boolean): Self = StObject.set(x, "ekmAvailable", value.asInstanceOf[js.Any])
+    inline def setEkmAvailable(value: Boolean): Self = StObject.set(x, "ekmAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEkmAvailableUndefined: Self = StObject.set(x, "ekmAvailable", js.undefined)
+    inline def setEkmAvailableUndefined: Self = StObject.set(x, "ekmAvailable", js.undefined)
     
-    @scala.inline
-    def setHsmAvailable(value: Boolean): Self = StObject.set(x, "hsmAvailable", value.asInstanceOf[js.Any])
+    inline def setHsmAvailable(value: Boolean): Self = StObject.set(x, "hsmAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmAvailableUndefined: Self = StObject.set(x, "hsmAvailable", js.undefined)
+    inline def setHsmAvailableUndefined: Self = StObject.set(x, "hsmAvailable", js.undefined)
   }
 }

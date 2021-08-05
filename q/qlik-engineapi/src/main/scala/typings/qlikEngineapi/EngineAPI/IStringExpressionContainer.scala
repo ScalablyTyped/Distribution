@@ -23,16 +23,13 @@ trait IStringExpressionContainer extends StObject {
 }
 object IStringExpressionContainer {
   
-  @scala.inline
-  def apply(qStringExpression: String): IStringExpressionContainer = {
+  inline def apply(qStringExpression: String): IStringExpressionContainer = {
     val __obj = js.Dynamic.literal(qStringExpression = qStringExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStringExpressionContainer]
   }
   
-  @scala.inline
-  implicit class IStringExpressionContainerMutableBuilder[Self <: IStringExpressionContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IStringExpressionContainer](x: Self) {
     
-    @scala.inline
-    def setQStringExpression(value: String): Self = StObject.set(x, "qStringExpression", value.asInstanceOf[js.Any])
+    inline def setQStringExpression(value: String): Self = StObject.set(x, "qStringExpression", value.asInstanceOf[js.Any])
   }
 }

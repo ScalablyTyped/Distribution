@@ -15,20 +15,16 @@ trait TableKey
 }
 object TableKey {
   
-  @scala.inline
-  def apply(key: Expression, value: Expression): TableKey = {
+  inline def apply(key: Expression, value: Expression): TableKey = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableKey")
     __obj.asInstanceOf[TableKey]
   }
   
-  @scala.inline
-  implicit class TableKeyMutableBuilder[Self <: TableKey] (val x: Self) extends AnyVal {
+  extension [Self <: TableKey](x: Self) {
     
-    @scala.inline
-    def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

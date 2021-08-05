@@ -21,28 +21,21 @@ trait PickBaseStatusStatus
 }
 object PickBaseStatusStatus {
   
-  @scala.inline
-  def apply(_links: Record[String, js.Array[Dictk]], name: String, slug: String): PickBaseStatusStatus = {
+  inline def apply(_links: Record[String, js.Array[Dictk]], name: String, slug: String): PickBaseStatusStatus = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickBaseStatusStatus]
   }
   
-  @scala.inline
-  implicit class PickBaseStatusStatusMutableBuilder[Self <: PickBaseStatusStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PickBaseStatusStatus](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
+    inline def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)
+    inline def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)
     
-    @scala.inline
-    def set_links(value: Record[String, js.Array[Dictk]]): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Record[String, js.Array[Dictk]]): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

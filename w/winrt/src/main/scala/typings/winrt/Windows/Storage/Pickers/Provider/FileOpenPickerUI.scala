@@ -11,8 +11,7 @@ trait FileOpenPickerUI
      with IFileOpenPickerUI
 object FileOpenPickerUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addFile: (String, IStorageFile) => AddFileResult,
     allowedFileTypes: IVectorView[String],
     canAddFile: IStorageFile => Boolean,

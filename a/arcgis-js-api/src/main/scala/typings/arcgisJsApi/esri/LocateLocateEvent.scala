@@ -10,16 +10,13 @@ trait LocateLocateEvent extends StObject {
 }
 object LocateLocateEvent {
   
-  @scala.inline
-  def apply(position: js.Any): LocateLocateEvent = {
+  inline def apply(position: js.Any): LocateLocateEvent = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocateLocateEvent]
   }
   
-  @scala.inline
-  implicit class LocateLocateEventMutableBuilder[Self <: LocateLocateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LocateLocateEvent](x: Self) {
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

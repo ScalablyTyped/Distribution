@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPrintLocation extends StObject
 object XlPrintLocation {
   
-  @scala.inline
-  def xlPrintInPlace: `16` = 16.asInstanceOf[`16`]
+  inline def xlPrintInPlace: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def xlPrintNoComments: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlPrintNoComments: `-4142` = -4142.asInstanceOf[`-4142`]
   
-  @scala.inline
-  def xlPrintSheetEnd: `1` = 1.asInstanceOf[`1`]
+  inline def xlPrintSheetEnd: `1` = 1.asInstanceOf[`1`]
 }

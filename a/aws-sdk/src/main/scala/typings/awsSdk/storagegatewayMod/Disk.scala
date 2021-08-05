@@ -42,64 +42,45 @@ trait Disk extends StObject {
 }
 object Disk {
   
-  @scala.inline
-  def apply(): Disk = {
+  inline def apply(): Disk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Disk]
   }
   
-  @scala.inline
-  implicit class DiskMutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
+  extension [Self <: Disk](x: Self) {
     
-    @scala.inline
-    def setDiskAllocationResource(value: String): Self = StObject.set(x, "DiskAllocationResource", value.asInstanceOf[js.Any])
+    inline def setDiskAllocationResource(value: String): Self = StObject.set(x, "DiskAllocationResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskAllocationResourceUndefined: Self = StObject.set(x, "DiskAllocationResource", js.undefined)
+    inline def setDiskAllocationResourceUndefined: Self = StObject.set(x, "DiskAllocationResource", js.undefined)
     
-    @scala.inline
-    def setDiskAllocationType(value: DiskAllocationType): Self = StObject.set(x, "DiskAllocationType", value.asInstanceOf[js.Any])
+    inline def setDiskAllocationType(value: DiskAllocationType): Self = StObject.set(x, "DiskAllocationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskAllocationTypeUndefined: Self = StObject.set(x, "DiskAllocationType", js.undefined)
+    inline def setDiskAllocationTypeUndefined: Self = StObject.set(x, "DiskAllocationType", js.undefined)
     
-    @scala.inline
-    def setDiskAttributeList(value: DiskAttributeList): Self = StObject.set(x, "DiskAttributeList", value.asInstanceOf[js.Any])
+    inline def setDiskAttributeList(value: DiskAttributeList): Self = StObject.set(x, "DiskAttributeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskAttributeListUndefined: Self = StObject.set(x, "DiskAttributeList", js.undefined)
+    inline def setDiskAttributeListUndefined: Self = StObject.set(x, "DiskAttributeList", js.undefined)
     
-    @scala.inline
-    def setDiskAttributeListVarargs(value: DiskAttribute*): Self = StObject.set(x, "DiskAttributeList", js.Array(value :_*))
+    inline def setDiskAttributeListVarargs(value: DiskAttribute*): Self = StObject.set(x, "DiskAttributeList", js.Array(value :_*))
     
-    @scala.inline
-    def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
+    inline def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskIdUndefined: Self = StObject.set(x, "DiskId", js.undefined)
+    inline def setDiskIdUndefined: Self = StObject.set(x, "DiskId", js.undefined)
     
-    @scala.inline
-    def setDiskNode(value: String): Self = StObject.set(x, "DiskNode", value.asInstanceOf[js.Any])
+    inline def setDiskNode(value: String): Self = StObject.set(x, "DiskNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskNodeUndefined: Self = StObject.set(x, "DiskNode", js.undefined)
+    inline def setDiskNodeUndefined: Self = StObject.set(x, "DiskNode", js.undefined)
     
-    @scala.inline
-    def setDiskPath(value: String): Self = StObject.set(x, "DiskPath", value.asInstanceOf[js.Any])
+    inline def setDiskPath(value: String): Self = StObject.set(x, "DiskPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskPathUndefined: Self = StObject.set(x, "DiskPath", js.undefined)
+    inline def setDiskPathUndefined: Self = StObject.set(x, "DiskPath", js.undefined)
     
-    @scala.inline
-    def setDiskSizeInBytes(value: long): Self = StObject.set(x, "DiskSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setDiskSizeInBytes(value: long): Self = StObject.set(x, "DiskSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeInBytesUndefined: Self = StObject.set(x, "DiskSizeInBytes", js.undefined)
+    inline def setDiskSizeInBytesUndefined: Self = StObject.set(x, "DiskSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setDiskStatus(value: String): Self = StObject.set(x, "DiskStatus", value.asInstanceOf[js.Any])
+    inline def setDiskStatus(value: String): Self = StObject.set(x, "DiskStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskStatusUndefined: Self = StObject.set(x, "DiskStatus", js.undefined)
+    inline def setDiskStatusUndefined: Self = StObject.set(x, "DiskStatus", js.undefined)
   }
 }

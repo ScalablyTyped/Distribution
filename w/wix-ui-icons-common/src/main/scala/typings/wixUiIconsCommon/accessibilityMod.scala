@@ -22,20 +22,16 @@ object accessibilityMod extends Shortcut {
   }
   object AccessibilityProps {
     
-    @scala.inline
-    def apply(): AccessibilityProps = {
+    inline def apply(): AccessibilityProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessibilityProps]
     }
     
-    @scala.inline
-    implicit class AccessibilityPropsMutableBuilder[Self <: AccessibilityProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccessibilityProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

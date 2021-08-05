@@ -17,31 +17,23 @@ trait Animation extends StObject {
 }
 object Animation {
   
-  @scala.inline
-  def apply(): Animation = {
+  inline def apply(): Animation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Animation]
   }
   
-  @scala.inline
-  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+  extension [Self <: Animation](x: Self) {
     
-    @scala.inline
-    def setAnimationEnd(value: AnimationEnd): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
+    inline def setAnimationEnd(value: AnimationEnd): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
+    inline def setAnimationEndUndefined: Self = StObject.set(x, "animationEnd", js.undefined)
     
-    @scala.inline
-    def setAnimationFade(value: AnimationFade): Self = StObject.set(x, "animationFade", value.asInstanceOf[js.Any])
+    inline def setAnimationFade(value: AnimationFade): Self = StObject.set(x, "animationFade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationFadeUndefined: Self = StObject.set(x, "animationFade", js.undefined)
+    inline def setAnimationFadeUndefined: Self = StObject.set(x, "animationFade", js.undefined)
     
-    @scala.inline
-    def setAnimationStatic(value: AnimationStatic): Self = StObject.set(x, "animationStatic", value.asInstanceOf[js.Any])
+    inline def setAnimationStatic(value: AnimationStatic): Self = StObject.set(x, "animationStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationStaticUndefined: Self = StObject.set(x, "animationStatic", js.undefined)
+    inline def setAnimationStaticUndefined: Self = StObject.set(x, "animationStatic", js.undefined)
   }
 }

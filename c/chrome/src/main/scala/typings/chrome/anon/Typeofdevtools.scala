@@ -35,22 +35,17 @@ trait Typeofdevtools extends StObject {
 }
 object Typeofdevtools {
   
-  @scala.inline
-  def apply(inspectedWindow: TypeofinspectedWindow, network: Typeofnetwork, panels: Typeofpanels): Typeofdevtools = {
+  inline def apply(inspectedWindow: TypeofinspectedWindow, network: Typeofnetwork, panels: Typeofpanels): Typeofdevtools = {
     val __obj = js.Dynamic.literal(inspectedWindow = inspectedWindow.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any], panels = panels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofdevtools]
   }
   
-  @scala.inline
-  implicit class TypeofdevtoolsMutableBuilder[Self <: Typeofdevtools] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofdevtools](x: Self) {
     
-    @scala.inline
-    def setInspectedWindow(value: TypeofinspectedWindow): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
+    inline def setInspectedWindow(value: TypeofinspectedWindow): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetwork(value: Typeofnetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: Typeofnetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanels(value: Typeofpanels): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+    inline def setPanels(value: Typeofpanels): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
   }
 }

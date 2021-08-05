@@ -23,37 +23,27 @@ trait ProductSearchResults extends StObject {
 }
 object ProductSearchResults {
   
-  @scala.inline
-  def apply(): ProductSearchResults = {
+  inline def apply(): ProductSearchResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductSearchResults]
   }
   
-  @scala.inline
-  implicit class ProductSearchResultsMutableBuilder[Self <: ProductSearchResults] (val x: Self) extends AnyVal {
+  extension [Self <: ProductSearchResults](x: Self) {
     
-    @scala.inline
-    def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
+    inline def setIndexTime(value: String): Self = StObject.set(x, "indexTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexTimeUndefined: Self = StObject.set(x, "indexTime", js.undefined)
+    inline def setIndexTimeUndefined: Self = StObject.set(x, "indexTime", js.undefined)
     
-    @scala.inline
-    def setProductGroupedResults(value: js.Array[GroupedResult]): Self = StObject.set(x, "productGroupedResults", value.asInstanceOf[js.Any])
+    inline def setProductGroupedResults(value: js.Array[GroupedResult]): Self = StObject.set(x, "productGroupedResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductGroupedResultsUndefined: Self = StObject.set(x, "productGroupedResults", js.undefined)
+    inline def setProductGroupedResultsUndefined: Self = StObject.set(x, "productGroupedResults", js.undefined)
     
-    @scala.inline
-    def setProductGroupedResultsVarargs(value: GroupedResult*): Self = StObject.set(x, "productGroupedResults", js.Array(value :_*))
+    inline def setProductGroupedResultsVarargs(value: GroupedResult*): Self = StObject.set(x, "productGroupedResults", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

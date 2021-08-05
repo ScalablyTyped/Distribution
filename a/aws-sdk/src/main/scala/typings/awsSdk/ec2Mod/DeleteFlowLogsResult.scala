@@ -13,22 +13,17 @@ trait DeleteFlowLogsResult extends StObject {
 }
 object DeleteFlowLogsResult {
   
-  @scala.inline
-  def apply(): DeleteFlowLogsResult = {
+  inline def apply(): DeleteFlowLogsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFlowLogsResult]
   }
   
-  @scala.inline
-  implicit class DeleteFlowLogsResultMutableBuilder[Self <: DeleteFlowLogsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFlowLogsResult](x: Self) {
     
-    @scala.inline
-    def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
+    inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
+    inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
   }
 }

@@ -30,82 +30,57 @@ trait SchemaAccountStatusDataQualityIssue extends StObject {
 }
 object SchemaAccountStatusDataQualityIssue {
   
-  @scala.inline
-  def apply(): SchemaAccountStatusDataQualityIssue = {
+  inline def apply(): SchemaAccountStatusDataQualityIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountStatusDataQualityIssue]
   }
   
-  @scala.inline
-  implicit class SchemaAccountStatusDataQualityIssueMutableBuilder[Self <: SchemaAccountStatusDataQualityIssue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountStatusDataQualityIssue](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setDisplayedValue(value: String): Self = StObject.set(x, "displayedValue", value.asInstanceOf[js.Any])
+    inline def setDisplayedValue(value: String): Self = StObject.set(x, "displayedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayedValueUndefined: Self = StObject.set(x, "displayedValue", js.undefined)
+    inline def setDisplayedValueUndefined: Self = StObject.set(x, "displayedValue", js.undefined)
     
-    @scala.inline
-    def setExampleItems(value: js.Array[SchemaAccountStatusExampleItem]): Self = StObject.set(x, "exampleItems", value.asInstanceOf[js.Any])
+    inline def setExampleItems(value: js.Array[SchemaAccountStatusExampleItem]): Self = StObject.set(x, "exampleItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleItemsUndefined: Self = StObject.set(x, "exampleItems", js.undefined)
+    inline def setExampleItemsUndefined: Self = StObject.set(x, "exampleItems", js.undefined)
     
-    @scala.inline
-    def setExampleItemsVarargs(value: SchemaAccountStatusExampleItem*): Self = StObject.set(x, "exampleItems", js.Array(value :_*))
+    inline def setExampleItemsVarargs(value: SchemaAccountStatusExampleItem*): Self = StObject.set(x, "exampleItems", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLastChecked(value: String): Self = StObject.set(x, "lastChecked", value.asInstanceOf[js.Any])
+    inline def setLastChecked(value: String): Self = StObject.set(x, "lastChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastCheckedUndefined: Self = StObject.set(x, "lastChecked", js.undefined)
+    inline def setLastCheckedUndefined: Self = StObject.set(x, "lastChecked", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setNumItems(value: Double): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
+    inline def setNumItems(value: Double): Self = StObject.set(x, "numItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
+    inline def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setSubmittedValue(value: String): Self = StObject.set(x, "submittedValue", value.asInstanceOf[js.Any])
+    inline def setSubmittedValue(value: String): Self = StObject.set(x, "submittedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedValueUndefined: Self = StObject.set(x, "submittedValue", js.undefined)
+    inline def setSubmittedValueUndefined: Self = StObject.set(x, "submittedValue", js.undefined)
   }
 }

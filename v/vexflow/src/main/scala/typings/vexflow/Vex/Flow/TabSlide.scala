@@ -14,8 +14,7 @@ trait TabSlide
      with TabTie
 object TabSlide {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createHammeron: Firstindices => TabTie,
     createPulloff: Firstindices => TabTie,
     draw: () => Boolean,

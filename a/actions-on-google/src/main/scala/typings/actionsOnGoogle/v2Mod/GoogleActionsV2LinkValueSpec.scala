@@ -19,25 +19,19 @@ trait GoogleActionsV2LinkValueSpec extends StObject {
 }
 object GoogleActionsV2LinkValueSpec {
   
-  @scala.inline
-  def apply(): GoogleActionsV2LinkValueSpec = {
+  inline def apply(): GoogleActionsV2LinkValueSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2LinkValueSpec]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2LinkValueSpecMutableBuilder[Self <: GoogleActionsV2LinkValueSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2LinkValueSpec](x: Self) {
     
-    @scala.inline
-    def setDialogSpec(value: GoogleActionsV2DialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
+    inline def setDialogSpec(value: GoogleActionsV2DialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogSpecUndefined: Self = StObject.set(x, "dialogSpec", js.undefined)
+    inline def setDialogSpecUndefined: Self = StObject.set(x, "dialogSpec", js.undefined)
     
-    @scala.inline
-    def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
+    inline def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
+    inline def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcResourceType extends StObject
 object AcResourceType {
   
-  @scala.inline
-  def acResourceImage: `1` = 1.asInstanceOf[`1`]
+  inline def acResourceImage: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acResourceTheme: `0` = 0.asInstanceOf[`0`]
+  inline def acResourceTheme: `0` = 0.asInstanceOf[`0`]
 }

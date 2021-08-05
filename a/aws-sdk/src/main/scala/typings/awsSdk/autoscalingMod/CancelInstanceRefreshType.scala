@@ -13,16 +13,13 @@ trait CancelInstanceRefreshType extends StObject {
 }
 object CancelInstanceRefreshType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: XmlStringMaxLen255): CancelInstanceRefreshType = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255): CancelInstanceRefreshType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelInstanceRefreshType]
   }
   
-  @scala.inline
-  implicit class CancelInstanceRefreshTypeMutableBuilder[Self <: CancelInstanceRefreshType] (val x: Self) extends AnyVal {
+  extension [Self <: CancelInstanceRefreshType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
   }
 }

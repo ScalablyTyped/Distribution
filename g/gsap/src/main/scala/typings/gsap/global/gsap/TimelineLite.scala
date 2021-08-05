@@ -22,12 +22,8 @@ object TimelineLite {
     * basis without affecting tweens/timelines that you create after the export.
     */
   /* static member */
-  @scala.inline
-  def exportRoot(): typings.gsap.gsap.TimelineLite = ^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")().asInstanceOf[typings.gsap.gsap.TimelineLite]
-  @scala.inline
-  def exportRoot(vars: js.Object): typings.gsap.gsap.TimelineLite = ^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")(vars.asInstanceOf[js.Any]).asInstanceOf[typings.gsap.gsap.TimelineLite]
-  @scala.inline
-  def exportRoot(vars: js.Object, omitDelayedCalls: Boolean): typings.gsap.gsap.TimelineLite = (^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")(vars.asInstanceOf[js.Any], omitDelayedCalls.asInstanceOf[js.Any])).asInstanceOf[typings.gsap.gsap.TimelineLite]
-  @scala.inline
-  def exportRoot(vars: Unit, omitDelayedCalls: Boolean): typings.gsap.gsap.TimelineLite = (^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")(vars.asInstanceOf[js.Any], omitDelayedCalls.asInstanceOf[js.Any])).asInstanceOf[typings.gsap.gsap.TimelineLite]
+  inline def exportRoot(): typings.gsap.gsap.TimelineLite = ^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")().asInstanceOf[typings.gsap.gsap.TimelineLite]
+  inline def exportRoot(vars: js.Object): typings.gsap.gsap.TimelineLite = ^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")(vars.asInstanceOf[js.Any]).asInstanceOf[typings.gsap.gsap.TimelineLite]
+  inline def exportRoot(vars: js.Object, omitDelayedCalls: Boolean): typings.gsap.gsap.TimelineLite = (^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")(vars.asInstanceOf[js.Any], omitDelayedCalls.asInstanceOf[js.Any])).asInstanceOf[typings.gsap.gsap.TimelineLite]
+  inline def exportRoot(vars: Unit, omitDelayedCalls: Boolean): typings.gsap.gsap.TimelineLite = (^.asInstanceOf[js.Dynamic].applyDynamic("exportRoot")(vars.asInstanceOf[js.Any], omitDelayedCalls.asInstanceOf[js.Any])).asInstanceOf[typings.gsap.gsap.TimelineLite]
 }

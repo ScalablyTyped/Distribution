@@ -10,16 +10,13 @@ trait HasRoomPosition extends StObject {
 }
 object HasRoomPosition {
   
-  @scala.inline
-  def apply(pos: RoomPosition): HasRoomPosition = {
+  inline def apply(pos: RoomPosition): HasRoomPosition = {
     val __obj = js.Dynamic.literal(pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasRoomPosition]
   }
   
-  @scala.inline
-  implicit class HasRoomPositionMutableBuilder[Self <: HasRoomPosition] (val x: Self) extends AnyVal {
+  extension [Self <: HasRoomPosition](x: Self) {
     
-    @scala.inline
-    def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }
 }

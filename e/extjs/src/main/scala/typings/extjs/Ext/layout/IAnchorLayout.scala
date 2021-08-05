@@ -24,31 +24,23 @@ trait IAnchorLayout
 }
 object IAnchorLayout {
   
-  @scala.inline
-  def apply(): IAnchorLayout = {
+  inline def apply(): IAnchorLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAnchorLayout]
   }
   
-  @scala.inline
-  implicit class IAnchorLayoutMutableBuilder[Self <: IAnchorLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IAnchorLayout](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setDefaultAnchor(value: String): Self = StObject.set(x, "defaultAnchor", value.asInstanceOf[js.Any])
+    inline def setDefaultAnchor(value: String): Self = StObject.set(x, "defaultAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAnchorUndefined: Self = StObject.set(x, "defaultAnchor", js.undefined)
+    inline def setDefaultAnchorUndefined: Self = StObject.set(x, "defaultAnchor", js.undefined)
     
-    @scala.inline
-    def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
+    inline def setGetItemSizePolicy(value: /* item */ js.UndefOr[js.Any] => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
+    inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
   }
 }

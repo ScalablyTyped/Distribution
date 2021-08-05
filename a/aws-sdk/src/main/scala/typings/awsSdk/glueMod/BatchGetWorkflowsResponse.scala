@@ -18,31 +18,23 @@ trait BatchGetWorkflowsResponse extends StObject {
 }
 object BatchGetWorkflowsResponse {
   
-  @scala.inline
-  def apply(): BatchGetWorkflowsResponse = {
+  inline def apply(): BatchGetWorkflowsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetWorkflowsResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetWorkflowsResponseMutableBuilder[Self <: BatchGetWorkflowsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetWorkflowsResponse](x: Self) {
     
-    @scala.inline
-    def setMissingWorkflows(value: WorkflowNames): Self = StObject.set(x, "MissingWorkflows", value.asInstanceOf[js.Any])
+    inline def setMissingWorkflows(value: WorkflowNames): Self = StObject.set(x, "MissingWorkflows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingWorkflowsUndefined: Self = StObject.set(x, "MissingWorkflows", js.undefined)
+    inline def setMissingWorkflowsUndefined: Self = StObject.set(x, "MissingWorkflows", js.undefined)
     
-    @scala.inline
-    def setMissingWorkflowsVarargs(value: NameString*): Self = StObject.set(x, "MissingWorkflows", js.Array(value :_*))
+    inline def setMissingWorkflowsVarargs(value: NameString*): Self = StObject.set(x, "MissingWorkflows", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkflows(value: Workflows): Self = StObject.set(x, "Workflows", value.asInstanceOf[js.Any])
+    inline def setWorkflows(value: Workflows): Self = StObject.set(x, "Workflows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowsUndefined: Self = StObject.set(x, "Workflows", js.undefined)
+    inline def setWorkflowsUndefined: Self = StObject.set(x, "Workflows", js.undefined)
     
-    @scala.inline
-    def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "Workflows", js.Array(value :_*))
+    inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "Workflows", js.Array(value :_*))
   }
 }

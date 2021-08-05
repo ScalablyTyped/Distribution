@@ -21,22 +21,17 @@ trait RasterOperation extends StObject
 object RasterOperation {
   
   /** All bits which are affected by this operation are set to 1. */
-  @scala.inline
-  def ALLBITS: `3` = 3.asInstanceOf[`3`]
+  inline def ALLBITS: `3` = 3.asInstanceOf[`3`]
   
   /** All bits which are affected by this operation are inverted. */
-  @scala.inline
-  def INVERT: `4` = 4.asInstanceOf[`4`]
+  inline def INVERT: `4` = 4.asInstanceOf[`4`]
   
   /** sets all pixel as written in the output operation. */
-  @scala.inline
-  def OVERPAINT: `0` = 0.asInstanceOf[`0`]
+  inline def OVERPAINT: `0` = 0.asInstanceOf[`0`]
   
   /** uses the pixel written as one and the current pixel as the other operator of an exclusive or-operation. */
-  @scala.inline
-  def XOR: `1` = 1.asInstanceOf[`1`]
+  inline def XOR: `1` = 1.asInstanceOf[`1`]
   
   /** All bits which are affected by this operation are set to 0. */
-  @scala.inline
-  def ZEROBITS: `2` = 2.asInstanceOf[`2`]
+  inline def ZEROBITS: `2` = 2.asInstanceOf[`2`]
 }

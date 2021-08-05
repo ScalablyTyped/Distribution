@@ -17,22 +17,17 @@ trait DefaultPos2 extends StObject {
 }
 object DefaultPos2 {
   
-  @scala.inline
-  def apply(defaultPos: zeroOrMin | zeroOrMax | mid, defaultPos2: zeroOrMin | zeroOrMax, range: Boolean): DefaultPos2 = {
+  inline def apply(defaultPos: zeroOrMin | zeroOrMax | mid, defaultPos2: zeroOrMin | zeroOrMax, range: Boolean): DefaultPos2 = {
     val __obj = js.Dynamic.literal(defaultPos = defaultPos.asInstanceOf[js.Any], defaultPos2 = defaultPos2.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultPos2]
   }
   
-  @scala.inline
-  implicit class DefaultPos2MutableBuilder[Self <: DefaultPos2] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultPos2](x: Self) {
     
-    @scala.inline
-    def setDefaultPos(value: zeroOrMin | zeroOrMax | mid): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
+    inline def setDefaultPos(value: zeroOrMin | zeroOrMax | mid): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPos2(value: zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos2", value.asInstanceOf[js.Any])
+    inline def setDefaultPos2(value: zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

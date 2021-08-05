@@ -16,37 +16,27 @@ trait DropTargetOptions extends StObject {
 }
 object DropTargetOptions {
   
-  @scala.inline
-  def apply(): DropTargetOptions = {
+  inline def apply(): DropTargetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropTargetOptions]
   }
   
-  @scala.inline
-  implicit class DropTargetOptionsMutableBuilder[Self <: DropTargetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DropTargetOptions](x: Self) {
     
-    @scala.inline
-    def setDragenter(value: /* e */ DropTargetDragenterEvent => Unit): Self = StObject.set(x, "dragenter", js.Any.fromFunction1(value))
+    inline def setDragenter(value: /* e */ DropTargetDragenterEvent => Unit): Self = StObject.set(x, "dragenter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
+    inline def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
     
-    @scala.inline
-    def setDragleave(value: /* e */ DropTargetDragleaveEvent => Unit): Self = StObject.set(x, "dragleave", js.Any.fromFunction1(value))
+    inline def setDragleave(value: /* e */ DropTargetDragleaveEvent => Unit): Self = StObject.set(x, "dragleave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
+    inline def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
     
-    @scala.inline
-    def setDrop(value: /* e */ DropTargetDropEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+    inline def setDrop(value: /* e */ DropTargetDropEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
   }
 }

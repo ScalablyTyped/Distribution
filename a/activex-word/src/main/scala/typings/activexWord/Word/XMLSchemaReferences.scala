@@ -33,6 +33,6 @@ trait XMLSchemaReferences extends StObject {
   
   def Validate(): Unit = js.native
   
-  @JSName("Word.XMLSchemaReferences_typekey")
+  /* private */ @JSName("Word.XMLSchemaReferences_typekey")
   var WordDotXMLSchemaReferences_typekey: XMLSchemaReferences = js.native
 }

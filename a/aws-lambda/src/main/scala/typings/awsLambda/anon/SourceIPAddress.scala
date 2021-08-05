@@ -10,16 +10,13 @@ trait SourceIPAddress extends StObject {
 }
 object SourceIPAddress {
   
-  @scala.inline
-  def apply(sourceIPAddress: String): SourceIPAddress = {
+  inline def apply(sourceIPAddress: String): SourceIPAddress = {
     val __obj = js.Dynamic.literal(sourceIPAddress = sourceIPAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceIPAddress]
   }
   
-  @scala.inline
-  implicit class SourceIPAddressMutableBuilder[Self <: SourceIPAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SourceIPAddress](x: Self) {
     
-    @scala.inline
-    def setSourceIPAddress(value: String): Self = StObject.set(x, "sourceIPAddress", value.asInstanceOf[js.Any])
+    inline def setSourceIPAddress(value: String): Self = StObject.set(x, "sourceIPAddress", value.asInstanceOf[js.Any])
   }
 }

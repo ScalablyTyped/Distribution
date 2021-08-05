@@ -26,8 +26,7 @@ trait ASPxClientHtmlEditorDialogBase extends StObject {
 }
 object ASPxClientHtmlEditorDialogBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCancelButton: () => ASPxClientButton,
     GetFormLayout: () => ASPxClientFormLayout,
     GetOkButton: () => ASPxClientButton
@@ -36,16 +35,12 @@ object ASPxClientHtmlEditorDialogBase {
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorDialogBaseMutableBuilder[Self <: ASPxClientHtmlEditorDialogBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorDialogBase](x: Self) {
     
-    @scala.inline
-    def setGetCancelButton(value: () => ASPxClientButton): Self = StObject.set(x, "GetCancelButton", js.Any.fromFunction0(value))
+    inline def setGetCancelButton(value: () => ASPxClientButton): Self = StObject.set(x, "GetCancelButton", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormLayout(value: () => ASPxClientFormLayout): Self = StObject.set(x, "GetFormLayout", js.Any.fromFunction0(value))
+    inline def setGetFormLayout(value: () => ASPxClientFormLayout): Self = StObject.set(x, "GetFormLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOkButton(value: () => ASPxClientButton): Self = StObject.set(x, "GetOkButton", js.Any.fromFunction0(value))
+    inline def setGetOkButton(value: () => ASPxClientButton): Self = StObject.set(x, "GetOkButton", js.Any.fromFunction0(value))
   }
 }

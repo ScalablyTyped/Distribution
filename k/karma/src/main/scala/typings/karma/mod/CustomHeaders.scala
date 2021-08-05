@@ -17,23 +17,18 @@ trait CustomHeaders extends StObject {
 }
 object CustomHeaders {
   
-  @scala.inline
-  def apply(`match`: String, name: String, value: String): CustomHeaders = {
+  inline def apply(`match`: String, name: String, value: String): CustomHeaders = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomHeaders]
   }
   
-  @scala.inline
-  implicit class CustomHeadersMutableBuilder[Self <: CustomHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: CustomHeaders](x: Self) {
     
-    @scala.inline
-    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

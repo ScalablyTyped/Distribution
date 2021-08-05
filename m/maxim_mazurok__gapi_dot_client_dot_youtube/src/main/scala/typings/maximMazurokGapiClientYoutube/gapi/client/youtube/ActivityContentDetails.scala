@@ -41,79 +41,55 @@ trait ActivityContentDetails extends StObject {
 }
 object ActivityContentDetails {
   
-  @scala.inline
-  def apply(): ActivityContentDetails = {
+  inline def apply(): ActivityContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetails]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsMutableBuilder[Self <: ActivityContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetails](x: Self) {
     
-    @scala.inline
-    def setBulletin(value: ActivityContentDetailsBulletin): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
+    inline def setBulletin(value: ActivityContentDetailsBulletin): Self = StObject.set(x, "bulletin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletinUndefined: Self = StObject.set(x, "bulletin", js.undefined)
+    inline def setBulletinUndefined: Self = StObject.set(x, "bulletin", js.undefined)
     
-    @scala.inline
-    def setChannelItem(value: ActivityContentDetailsChannelItem): Self = StObject.set(x, "channelItem", value.asInstanceOf[js.Any])
+    inline def setChannelItem(value: ActivityContentDetailsChannelItem): Self = StObject.set(x, "channelItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelItemUndefined: Self = StObject.set(x, "channelItem", js.undefined)
+    inline def setChannelItemUndefined: Self = StObject.set(x, "channelItem", js.undefined)
     
-    @scala.inline
-    def setComment(value: ActivityContentDetailsComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: ActivityContentDetailsComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setFavorite(value: ActivityContentDetailsFavorite): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
+    inline def setFavorite(value: ActivityContentDetailsFavorite): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavoriteUndefined: Self = StObject.set(x, "favorite", js.undefined)
+    inline def setFavoriteUndefined: Self = StObject.set(x, "favorite", js.undefined)
     
-    @scala.inline
-    def setLike(value: ActivityContentDetailsLike): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
+    inline def setLike(value: ActivityContentDetailsLike): Self = StObject.set(x, "like", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikeUndefined: Self = StObject.set(x, "like", js.undefined)
+    inline def setLikeUndefined: Self = StObject.set(x, "like", js.undefined)
     
-    @scala.inline
-    def setPlaylistItem(value: ActivityContentDetailsPlaylistItem): Self = StObject.set(x, "playlistItem", value.asInstanceOf[js.Any])
+    inline def setPlaylistItem(value: ActivityContentDetailsPlaylistItem): Self = StObject.set(x, "playlistItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistItemUndefined: Self = StObject.set(x, "playlistItem", js.undefined)
+    inline def setPlaylistItemUndefined: Self = StObject.set(x, "playlistItem", js.undefined)
     
-    @scala.inline
-    def setPromotedItem(value: ActivityContentDetailsPromotedItem): Self = StObject.set(x, "promotedItem", value.asInstanceOf[js.Any])
+    inline def setPromotedItem(value: ActivityContentDetailsPromotedItem): Self = StObject.set(x, "promotedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotedItemUndefined: Self = StObject.set(x, "promotedItem", js.undefined)
+    inline def setPromotedItemUndefined: Self = StObject.set(x, "promotedItem", js.undefined)
     
-    @scala.inline
-    def setRecommendation(value: ActivityContentDetailsRecommendation): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
+    inline def setRecommendation(value: ActivityContentDetailsRecommendation): Self = StObject.set(x, "recommendation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
+    inline def setRecommendationUndefined: Self = StObject.set(x, "recommendation", js.undefined)
     
-    @scala.inline
-    def setSocial(value: ActivityContentDetailsSocial): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
+    inline def setSocial(value: ActivityContentDetailsSocial): Self = StObject.set(x, "social", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocialUndefined: Self = StObject.set(x, "social", js.undefined)
+    inline def setSocialUndefined: Self = StObject.set(x, "social", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: ActivityContentDetailsSubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: ActivityContentDetailsSubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setUpload(value: ActivityContentDetailsUpload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: ActivityContentDetailsUpload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

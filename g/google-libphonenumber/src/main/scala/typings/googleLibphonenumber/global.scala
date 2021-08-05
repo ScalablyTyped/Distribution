@@ -290,8 +290,7 @@ object global {
         /* 2 */ val TOO_SHORT: typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.TOO_SHORT & Double = js.native
       }
       
-      @scala.inline
-      def getInstance(): typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil]
+      inline def getInstance(): typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil]
     }
     
     @JSGlobal("libphonenumber.StringBuffer")

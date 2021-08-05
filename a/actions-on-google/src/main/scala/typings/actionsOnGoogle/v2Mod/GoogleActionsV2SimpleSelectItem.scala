@@ -19,25 +19,19 @@ trait GoogleActionsV2SimpleSelectItem extends StObject {
 }
 object GoogleActionsV2SimpleSelectItem {
   
-  @scala.inline
-  def apply(): GoogleActionsV2SimpleSelectItem = {
+  inline def apply(): GoogleActionsV2SimpleSelectItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2SimpleSelectItem]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2SimpleSelectItemMutableBuilder[Self <: GoogleActionsV2SimpleSelectItem] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2SimpleSelectItem](x: Self) {
     
-    @scala.inline
-    def setOptionInfo(value: GoogleActionsV2OptionInfo): Self = StObject.set(x, "optionInfo", value.asInstanceOf[js.Any])
+    inline def setOptionInfo(value: GoogleActionsV2OptionInfo): Self = StObject.set(x, "optionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionInfoUndefined: Self = StObject.set(x, "optionInfo", js.undefined)
+    inline def setOptionInfoUndefined: Self = StObject.set(x, "optionInfo", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

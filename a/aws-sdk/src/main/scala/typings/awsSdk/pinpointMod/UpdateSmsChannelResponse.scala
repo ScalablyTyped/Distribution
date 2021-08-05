@@ -10,16 +10,13 @@ trait UpdateSmsChannelResponse extends StObject {
 }
 object UpdateSmsChannelResponse {
   
-  @scala.inline
-  def apply(SMSChannelResponse: SMSChannelResponse): UpdateSmsChannelResponse = {
+  inline def apply(SMSChannelResponse: SMSChannelResponse): UpdateSmsChannelResponse = {
     val __obj = js.Dynamic.literal(SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSmsChannelResponse]
   }
   
-  @scala.inline
-  implicit class UpdateSmsChannelResponseMutableBuilder[Self <: UpdateSmsChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSmsChannelResponse](x: Self) {
     
-    @scala.inline
-    def setSMSChannelResponse(value: SMSChannelResponse): Self = StObject.set(x, "SMSChannelResponse", value.asInstanceOf[js.Any])
+    inline def setSMSChannelResponse(value: SMSChannelResponse): Self = StObject.set(x, "SMSChannelResponse", value.asInstanceOf[js.Any])
   }
 }

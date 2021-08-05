@@ -18,31 +18,23 @@ trait StaticRouterContext
 }
 object StaticRouterContext {
   
-  @scala.inline
-  def apply(): StaticRouterContext = {
+  inline def apply(): StaticRouterContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StaticRouterContext]
   }
   
-  @scala.inline
-  implicit class StaticRouterContextMutableBuilder[Self <: StaticRouterContext] (val x: Self) extends AnyVal {
+  extension [Self <: StaticRouterContext](x: Self) {
     
-    @scala.inline
-    def setAction(value: PUSH | REPLACE): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: PUSH | REPLACE): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setLocation(value: js.Object): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Object): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

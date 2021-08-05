@@ -28,28 +28,21 @@ trait DedicatedIp extends StObject {
 }
 object DedicatedIp {
   
-  @scala.inline
-  def apply(Ip: Ip, WarmupPercentage: Percentage100Wrapper, WarmupStatus: WarmupStatus): DedicatedIp = {
+  inline def apply(Ip: Ip, WarmupPercentage: Percentage100Wrapper, WarmupStatus: WarmupStatus): DedicatedIp = {
     val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any], WarmupPercentage = WarmupPercentage.asInstanceOf[js.Any], WarmupStatus = WarmupStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DedicatedIp]
   }
   
-  @scala.inline
-  implicit class DedicatedIpMutableBuilder[Self <: DedicatedIp] (val x: Self) extends AnyVal {
+  extension [Self <: DedicatedIp](x: Self) {
     
-    @scala.inline
-    def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Ip): Self = StObject.set(x, "Ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
+    inline def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
+    inline def setPoolNameUndefined: Self = StObject.set(x, "PoolName", js.undefined)
     
-    @scala.inline
-    def setWarmupPercentage(value: Percentage100Wrapper): Self = StObject.set(x, "WarmupPercentage", value.asInstanceOf[js.Any])
+    inline def setWarmupPercentage(value: Percentage100Wrapper): Self = StObject.set(x, "WarmupPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarmupStatus(value: WarmupStatus): Self = StObject.set(x, "WarmupStatus", value.asInstanceOf[js.Any])
+    inline def setWarmupStatus(value: WarmupStatus): Self = StObject.set(x, "WarmupStatus", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait Cid extends StObject {
 }
 object Cid {
   
-  @scala.inline
-  def apply(cid: String): Cid = {
+  inline def apply(cid: String): Cid = {
     val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cid]
   }
   
-  @scala.inline
-  implicit class CidMutableBuilder[Self <: Cid] (val x: Self) extends AnyVal {
+  extension [Self <: Cid](x: Self) {
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
   }
 }

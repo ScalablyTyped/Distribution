@@ -39,9 +39,7 @@ object QueueMessageResult {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(messageXml: js.Any): QueueMessageResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(messageXml.asInstanceOf[js.Any]).asInstanceOf[QueueMessageResult]
+  inline def parse(messageXml: js.Any): QueueMessageResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(messageXml.asInstanceOf[js.Any]).asInstanceOf[QueueMessageResult]
   
-  @scala.inline
-  def serialize(messageJs: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(messageJs.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serialize(messageJs: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(messageJs.asInstanceOf[js.Any]).asInstanceOf[String]
 }

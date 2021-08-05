@@ -15,8 +15,7 @@ object useCurrentRenderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasStateNavigationDescriptors: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateNavigationDescriptors.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(hasStateNavigationDescriptors: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateNavigationDescriptors.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -30,8 +29,7 @@ object useCurrentRenderMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       descriptors: StringDictionary[
           Descriptor[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
         ],
@@ -42,21 +40,17 @@ object useCurrentRenderMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDescriptors(
+      inline def setDescriptors(
         value: StringDictionary[
               Descriptor[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
             ]
       ): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation(value: NavigationHelpers[ParamListBase, js.Object]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationHelpers[ParamListBase, js.Object]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: NavigationState[ParamListBase]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: NavigationState[ParamListBase]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

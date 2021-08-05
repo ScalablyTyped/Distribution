@@ -22,22 +22,17 @@ trait GetImageInfoOptions
 }
 object GetImageInfoOptions {
   
-  @scala.inline
-  def apply(src: String): GetImageInfoOptions = {
+  inline def apply(src: String): GetImageInfoOptions = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetImageInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetImageInfoOptionsMutableBuilder[Self <: GetImageInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetImageInfoOptions](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ Height => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Height => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

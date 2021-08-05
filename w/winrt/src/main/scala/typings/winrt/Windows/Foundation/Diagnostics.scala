@@ -46,20 +46,16 @@ object Diagnostics {
   }
   object IErrorReportingSettings {
     
-    @scala.inline
-    def apply(getErrorOptions: () => ErrorOptions, setErrorOptions: ErrorOptions => Unit): IErrorReportingSettings = {
+    inline def apply(getErrorOptions: () => ErrorOptions, setErrorOptions: ErrorOptions => Unit): IErrorReportingSettings = {
       val __obj = js.Dynamic.literal(getErrorOptions = js.Any.fromFunction0(getErrorOptions), setErrorOptions = js.Any.fromFunction1(setErrorOptions))
       __obj.asInstanceOf[IErrorReportingSettings]
     }
     
-    @scala.inline
-    implicit class IErrorReportingSettingsMutableBuilder[Self <: IErrorReportingSettings] (val x: Self) extends AnyVal {
+    extension [Self <: IErrorReportingSettings](x: Self) {
       
-      @scala.inline
-      def setGetErrorOptions(value: () => ErrorOptions): Self = StObject.set(x, "getErrorOptions", js.Any.fromFunction0(value))
+      inline def setGetErrorOptions(value: () => ErrorOptions): Self = StObject.set(x, "getErrorOptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetErrorOptions(value: ErrorOptions => Unit): Self = StObject.set(x, "setErrorOptions", js.Any.fromFunction1(value))
+      inline def setSetErrorOptions(value: ErrorOptions => Unit): Self = StObject.set(x, "setErrorOptions", js.Any.fromFunction1(value))
     }
   }
   
@@ -68,8 +64,7 @@ object Diagnostics {
        with IErrorReportingSettings
   object RuntimeBrokerErrorSettings {
     
-    @scala.inline
-    def apply(getErrorOptions: () => ErrorOptions, setErrorOptions: ErrorOptions => Unit): RuntimeBrokerErrorSettings = {
+    inline def apply(getErrorOptions: () => ErrorOptions, setErrorOptions: ErrorOptions => Unit): RuntimeBrokerErrorSettings = {
       val __obj = js.Dynamic.literal(getErrorOptions = js.Any.fromFunction0(getErrorOptions), setErrorOptions = js.Any.fromFunction1(setErrorOptions))
       __obj.asInstanceOf[RuntimeBrokerErrorSettings]
     }

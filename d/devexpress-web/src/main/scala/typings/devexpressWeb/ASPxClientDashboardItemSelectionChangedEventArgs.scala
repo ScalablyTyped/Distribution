@@ -23,19 +23,15 @@ trait ASPxClientDashboardItemSelectionChangedEventArgs
 }
 object ASPxClientDashboardItemSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(GetCurrentSelection: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple], ItemName: String): ASPxClientDashboardItemSelectionChangedEventArgs = {
+  inline def apply(GetCurrentSelection: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple], ItemName: String): ASPxClientDashboardItemSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(GetCurrentSelection = js.Any.fromFunction0(GetCurrentSelection), ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemSelectionChangedEventArgsMutableBuilder[Self <: ASPxClientDashboardItemSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetCurrentSelection(value: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple]): Self = StObject.set(x, "GetCurrentSelection", js.Any.fromFunction0(value))
+    inline def setGetCurrentSelection(value: () => js.Array[ASPxClientDashboardItemDataAxisPointTuple]): Self = StObject.set(x, "GetCurrentSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

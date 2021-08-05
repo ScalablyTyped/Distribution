@@ -49,46 +49,33 @@ trait IFindNearRouteOptions
 }
 object IFindNearRouteOptions {
   
-  @scala.inline
-  def apply(spatialFilterType: String): IFindNearRouteOptions = {
+  inline def apply(spatialFilterType: String): IFindNearRouteOptions = {
     val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFindNearRouteOptions]
   }
   
-  @scala.inline
-  implicit class IFindNearRouteOptionsMutableBuilder[Self <: IFindNearRouteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFindNearRouteOptions](x: Self) {
     
-    @scala.inline
-    def setAvoid(value: js.Array[String]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+    inline def setAvoid(value: js.Array[String]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
+    inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
     
-    @scala.inline
-    def setAvoidVarargs(value: String*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+    inline def setAvoidVarargs(value: String*): Self = StObject.set(x, "avoid", js.Array(value :_*))
     
-    @scala.inline
-    def setDistanceBeforeFirstTurn(value: Double): Self = StObject.set(x, "distanceBeforeFirstTurn", value.asInstanceOf[js.Any])
+    inline def setDistanceBeforeFirstTurn(value: Double): Self = StObject.set(x, "distanceBeforeFirstTurn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceBeforeFirstTurnUndefined: Self = StObject.set(x, "distanceBeforeFirstTurn", js.undefined)
+    inline def setDistanceBeforeFirstTurnUndefined: Self = StObject.set(x, "distanceBeforeFirstTurn", js.undefined)
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    @scala.inline
-    def setOptimize(value: String): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
+    inline def setOptimize(value: String): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
+    inline def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
     
-    @scala.inline
-    def setTravelMode(value: String): Self = StObject.set(x, "travelMode", value.asInstanceOf[js.Any])
+    inline def setTravelMode(value: String): Self = StObject.set(x, "travelMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelModeUndefined: Self = StObject.set(x, "travelMode", js.undefined)
+    inline def setTravelModeUndefined: Self = StObject.set(x, "travelMode", js.undefined)
   }
 }

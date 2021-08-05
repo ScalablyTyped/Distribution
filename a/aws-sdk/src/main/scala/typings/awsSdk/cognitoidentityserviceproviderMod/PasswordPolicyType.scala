@@ -38,49 +38,35 @@ trait PasswordPolicyType extends StObject {
 }
 object PasswordPolicyType {
   
-  @scala.inline
-  def apply(): PasswordPolicyType = {
+  inline def apply(): PasswordPolicyType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PasswordPolicyType]
   }
   
-  @scala.inline
-  implicit class PasswordPolicyTypeMutableBuilder[Self <: PasswordPolicyType] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordPolicyType](x: Self) {
     
-    @scala.inline
-    def setMinimumLength(value: PasswordPolicyMinLengthType): Self = StObject.set(x, "MinimumLength", value.asInstanceOf[js.Any])
+    inline def setMinimumLength(value: PasswordPolicyMinLengthType): Self = StObject.set(x, "MinimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumLengthUndefined: Self = StObject.set(x, "MinimumLength", js.undefined)
+    inline def setMinimumLengthUndefined: Self = StObject.set(x, "MinimumLength", js.undefined)
     
-    @scala.inline
-    def setRequireLowercase(value: BooleanType): Self = StObject.set(x, "RequireLowercase", value.asInstanceOf[js.Any])
+    inline def setRequireLowercase(value: BooleanType): Self = StObject.set(x, "RequireLowercase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireLowercaseUndefined: Self = StObject.set(x, "RequireLowercase", js.undefined)
+    inline def setRequireLowercaseUndefined: Self = StObject.set(x, "RequireLowercase", js.undefined)
     
-    @scala.inline
-    def setRequireNumbers(value: BooleanType): Self = StObject.set(x, "RequireNumbers", value.asInstanceOf[js.Any])
+    inline def setRequireNumbers(value: BooleanType): Self = StObject.set(x, "RequireNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireNumbersUndefined: Self = StObject.set(x, "RequireNumbers", js.undefined)
+    inline def setRequireNumbersUndefined: Self = StObject.set(x, "RequireNumbers", js.undefined)
     
-    @scala.inline
-    def setRequireSymbols(value: BooleanType): Self = StObject.set(x, "RequireSymbols", value.asInstanceOf[js.Any])
+    inline def setRequireSymbols(value: BooleanType): Self = StObject.set(x, "RequireSymbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireSymbolsUndefined: Self = StObject.set(x, "RequireSymbols", js.undefined)
+    inline def setRequireSymbolsUndefined: Self = StObject.set(x, "RequireSymbols", js.undefined)
     
-    @scala.inline
-    def setRequireUppercase(value: BooleanType): Self = StObject.set(x, "RequireUppercase", value.asInstanceOf[js.Any])
+    inline def setRequireUppercase(value: BooleanType): Self = StObject.set(x, "RequireUppercase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireUppercaseUndefined: Self = StObject.set(x, "RequireUppercase", js.undefined)
+    inline def setRequireUppercaseUndefined: Self = StObject.set(x, "RequireUppercase", js.undefined)
     
-    @scala.inline
-    def setTemporaryPasswordValidityDays(value: TemporaryPasswordValidityDaysType): Self = StObject.set(x, "TemporaryPasswordValidityDays", value.asInstanceOf[js.Any])
+    inline def setTemporaryPasswordValidityDays(value: TemporaryPasswordValidityDaysType): Self = StObject.set(x, "TemporaryPasswordValidityDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporaryPasswordValidityDaysUndefined: Self = StObject.set(x, "TemporaryPasswordValidityDays", js.undefined)
+    inline def setTemporaryPasswordValidityDaysUndefined: Self = StObject.set(x, "TemporaryPasswordValidityDays", js.undefined)
   }
 }

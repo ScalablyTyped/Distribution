@@ -100,11 +100,11 @@ object memberMod {
     
     def roleSid: String = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
     def sid: String = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
     def `type`: Type = js.native
     
@@ -125,14 +125,11 @@ object memberMod {
     trait Type extends StObject
     object Type {
       
-      @scala.inline
-      def chat: typings.twilioChat.twilioChatStrings.chat = "chat".asInstanceOf[typings.twilioChat.twilioChatStrings.chat]
+      inline def chat: typings.twilioChat.twilioChatStrings.chat = "chat".asInstanceOf[typings.twilioChat.twilioChatStrings.chat]
       
-      @scala.inline
-      def sms: typings.twilioChat.twilioChatStrings.sms = "sms".asInstanceOf[typings.twilioChat.twilioChatStrings.sms]
+      inline def sms: typings.twilioChat.twilioChatStrings.sms = "sms".asInstanceOf[typings.twilioChat.twilioChatStrings.sms]
       
-      @scala.inline
-      def whatsapp: typings.twilioChat.twilioChatStrings.whatsapp = "whatsapp".asInstanceOf[typings.twilioChat.twilioChatStrings.whatsapp]
+      inline def whatsapp: typings.twilioChat.twilioChatStrings.whatsapp = "whatsapp".asInstanceOf[typings.twilioChat.twilioChatStrings.whatsapp]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -146,23 +143,17 @@ object memberMod {
     trait UpdateReason extends StObject
     object UpdateReason {
       
-      @scala.inline
-      def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
+      inline def attributes: typings.twilioChat.twilioChatStrings.attributes = "attributes".asInstanceOf[typings.twilioChat.twilioChatStrings.attributes]
       
-      @scala.inline
-      def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = "dateCreated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateCreated]
+      inline def dateCreated: typings.twilioChat.twilioChatStrings.dateCreated = "dateCreated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateCreated]
       
-      @scala.inline
-      def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = "dateUpdated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateUpdated]
+      inline def dateUpdated: typings.twilioChat.twilioChatStrings.dateUpdated = "dateUpdated".asInstanceOf[typings.twilioChat.twilioChatStrings.dateUpdated]
       
-      @scala.inline
-      def lastConsumedMessageIndex: typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex]
+      inline def lastConsumedMessageIndex: typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumedMessageIndex]
       
-      @scala.inline
-      def lastConsumptionTimestamp: typings.twilioChat.twilioChatStrings.lastConsumptionTimestamp = "lastConsumptionTimestamp".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumptionTimestamp]
+      inline def lastConsumptionTimestamp: typings.twilioChat.twilioChatStrings.lastConsumptionTimestamp = "lastConsumptionTimestamp".asInstanceOf[typings.twilioChat.twilioChatStrings.lastConsumptionTimestamp]
       
-      @scala.inline
-      def roleSid: typings.twilioChat.twilioChatStrings.roleSid = "roleSid".asInstanceOf[typings.twilioChat.twilioChatStrings.roleSid]
+      inline def roleSid: typings.twilioChat.twilioChatStrings.roleSid = "roleSid".asInstanceOf[typings.twilioChat.twilioChatStrings.roleSid]
     }
     
     trait UpdatedEventArgs extends StObject {
@@ -173,23 +164,18 @@ object memberMod {
     }
     object UpdatedEventArgs {
       
-      @scala.inline
-      def apply(member: Member, updateReasons: js.Array[UpdateReason]): UpdatedEventArgs = {
+      inline def apply(member: Member, updateReasons: js.Array[UpdateReason]): UpdatedEventArgs = {
         val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any], updateReasons = updateReasons.asInstanceOf[js.Any])
         __obj.asInstanceOf[UpdatedEventArgs]
       }
       
-      @scala.inline
-      implicit class UpdatedEventArgsMutableBuilder[Self <: UpdatedEventArgs] (val x: Self) extends AnyVal {
+      extension [Self <: UpdatedEventArgs](x: Self) {
         
-        @scala.inline
-        def setMember(value: Member): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
+        inline def setMember(value: Member): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
+        inline def setUpdateReasons(value: js.Array[UpdateReason]): Self = StObject.set(x, "updateReasons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
+        inline def setUpdateReasonsVarargs(value: UpdateReason*): Self = StObject.set(x, "updateReasons", js.Array(value :_*))
       }
     }
   }
@@ -216,8 +202,7 @@ object memberMod {
   }
   object MemberDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateCreated: js.Any,
       dateUpdated: js.Any,
       identity: String,
@@ -229,44 +214,31 @@ object memberMod {
       __obj.asInstanceOf[MemberDescriptor]
     }
     
-    @scala.inline
-    implicit class MemberDescriptorMutableBuilder[Self <: MemberDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: MemberDescriptor](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setDateCreated(value: js.Any): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+      inline def setDateCreated(value: js.Any): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUpdated(value: js.Any): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
+      inline def setDateUpdated(value: js.Any): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastConsumedMessageIndex(value: Double): Self = StObject.set(x, "lastConsumedMessageIndex", value.asInstanceOf[js.Any])
+      inline def setLastConsumedMessageIndex(value: Double): Self = StObject.set(x, "lastConsumedMessageIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastConsumptionTimestamp(value: Double): Self = StObject.set(x, "lastConsumptionTimestamp", value.asInstanceOf[js.Any])
+      inline def setLastConsumptionTimestamp(value: Double): Self = StObject.set(x, "lastConsumptionTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleSid(value: String): Self = StObject.set(x, "roleSid", value.asInstanceOf[js.Any])
+      inline def setRoleSid(value: String): Self = StObject.set(x, "roleSid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleSidUndefined: Self = StObject.set(x, "roleSid", js.undefined)
+      inline def setRoleSidUndefined: Self = StObject.set(x, "roleSid", js.undefined)
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUserInfo(value: String): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+      inline def setUserInfo(value: String): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -278,20 +250,16 @@ object memberMod {
   }
   object MemberServices {
     
-    @scala.inline
-    def apply(session: Session, users: Users): MemberServices = {
+    inline def apply(session: Session, users: Users): MemberServices = {
       val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemberServices]
     }
     
-    @scala.inline
-    implicit class MemberServicesMutableBuilder[Self <: MemberServices] (val x: Self) extends AnyVal {
+    extension [Self <: MemberServices](x: Self) {
       
-      @scala.inline
-      def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -85,8 +85,7 @@ trait IConnection extends StObject {
 }
 object IConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qConnectionString: String,
     qId: String,
     qLogOn: LogonType,
@@ -99,40 +98,28 @@ object IConnection {
     __obj.asInstanceOf[IConnection]
   }
   
-  @scala.inline
-  implicit class IConnectionMutableBuilder[Self <: IConnection] (val x: Self) extends AnyVal {
+  extension [Self <: IConnection](x: Self) {
     
-    @scala.inline
-    def setQConnectionString(value: String): Self = StObject.set(x, "qConnectionString", value.asInstanceOf[js.Any])
+    inline def setQConnectionString(value: String): Self = StObject.set(x, "qConnectionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLogOn(value: LogonType): Self = StObject.set(x, "qLogOn", value.asInstanceOf[js.Any])
+    inline def setQLogOn(value: LogonType): Self = StObject.set(x, "qLogOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQModifiedDate(value: String): Self = StObject.set(x, "qModifiedDate", value.asInstanceOf[js.Any])
+    inline def setQModifiedDate(value: String): Self = StObject.set(x, "qModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPassword(value: String): Self = StObject.set(x, "qPassword", value.asInstanceOf[js.Any])
+    inline def setQPassword(value: String): Self = StObject.set(x, "qPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPasswordUndefined: Self = StObject.set(x, "qPassword", js.undefined)
+    inline def setQPasswordUndefined: Self = StObject.set(x, "qPassword", js.undefined)
     
-    @scala.inline
-    def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUserName(value: String): Self = StObject.set(x, "qUserName", value.asInstanceOf[js.Any])
+    inline def setQUserName(value: String): Self = StObject.set(x, "qUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUserNameUndefined: Self = StObject.set(x, "qUserName", js.undefined)
+    inline def setQUserNameUndefined: Self = StObject.set(x, "qUserName", js.undefined)
   }
 }

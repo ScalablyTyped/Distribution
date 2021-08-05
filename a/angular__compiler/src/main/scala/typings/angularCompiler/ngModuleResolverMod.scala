@@ -14,7 +14,7 @@ object ngModuleResolverMod {
   class NgModuleResolver protected () extends StObject {
     def this(_reflector: CompileReflector) = this()
     
-    var _reflector: js.Any = js.native
+    /* private */ var _reflector: js.Any = js.native
     
     def isNgModule(`type`: js.Any): Boolean = js.native
     

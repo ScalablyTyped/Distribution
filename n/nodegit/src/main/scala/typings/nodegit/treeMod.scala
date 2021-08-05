@@ -99,30 +99,21 @@ object treeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def entryCmp(tree1: TreeEntry, tree2: TreeEntry): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("entryCmp")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def entryCmp(tree1: TreeEntry, tree2: TreeEntry): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("entryCmp")(tree1.asInstanceOf[js.Any], tree2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def entryDup(dest: TreeEntry, source: TreeEntry): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("entryDup")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def entryDup(dest: TreeEntry, source: TreeEntry): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("entryDup")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Retrieves the tree pointed to by the oid
       */
-    @scala.inline
-    def lookup(repo: Repository, id: String): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
-    @scala.inline
-    def lookup(repo: Repository, id: String, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
-    @scala.inline
-    def lookup(repo: Repository, id: Oid): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
-    @scala.inline
-    def lookup(repo: Repository, id: Oid, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
-    @scala.inline
-    def lookup(repo: Repository, id: Tree): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
-    @scala.inline
-    def lookup(repo: Repository, id: Tree, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    inline def lookup(repo: Repository, id: String): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    inline def lookup(repo: Repository, id: String, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    inline def lookup(repo: Repository, id: Oid): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    inline def lookup(repo: Repository, id: Oid, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    inline def lookup(repo: Repository, id: Tree): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    inline def lookup(repo: Repository, id: Tree, callback: js.Function): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
     
-    @scala.inline
-    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
+    inline def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Tree] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tree]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -131,11 +122,9 @@ object treeMod {
     trait WALK_MODE extends StObject
     object WALK_MODE {
       
-      @scala.inline
-      def WALK_POST: `1` = 1.asInstanceOf[`1`]
+      inline def WALK_POST: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def WALK_PRE: `0` = 0.asInstanceOf[`0`]
+      inline def WALK_PRE: `0` = 0.asInstanceOf[`0`]
     }
   }
 }

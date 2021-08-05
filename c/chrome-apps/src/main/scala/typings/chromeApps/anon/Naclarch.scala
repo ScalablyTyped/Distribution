@@ -30,8 +30,7 @@ trait Naclarch extends StObject {
 }
 object Naclarch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     nacl_arch: ToStringLiteral[
       ARM, 
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
@@ -46,11 +45,9 @@ object Naclarch {
     __obj.asInstanceOf[Naclarch]
   }
   
-  @scala.inline
-  implicit class NaclarchMutableBuilder[Self <: Naclarch] (val x: Self) extends AnyVal {
+  extension [Self <: Naclarch](x: Self) {
     
-    @scala.inline
-    def setNacl_arch(
+    inline def setNacl_arch(
       value: ToStringLiteral[
           ARM, 
           /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
@@ -61,7 +58,6 @@ object Naclarch {
         ]
     ): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSub_package_path(value: String): Self = StObject.set(x, "sub_package_path", value.asInstanceOf[js.Any])
+    inline def setSub_package_path(value: String): Self = StObject.set(x, "sub_package_path", value.asInstanceOf[js.Any])
   }
 }

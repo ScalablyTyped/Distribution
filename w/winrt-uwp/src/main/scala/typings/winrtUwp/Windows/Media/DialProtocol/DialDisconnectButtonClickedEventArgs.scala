@@ -12,16 +12,13 @@ trait DialDisconnectButtonClickedEventArgs extends StObject {
 }
 object DialDisconnectButtonClickedEventArgs {
   
-  @scala.inline
-  def apply(device: DialDevice): DialDisconnectButtonClickedEventArgs = {
+  inline def apply(device: DialDevice): DialDisconnectButtonClickedEventArgs = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialDisconnectButtonClickedEventArgs]
   }
   
-  @scala.inline
-  implicit class DialDisconnectButtonClickedEventArgsMutableBuilder[Self <: DialDisconnectButtonClickedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DialDisconnectButtonClickedEventArgs](x: Self) {
     
-    @scala.inline
-    def setDevice(value: DialDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: DialDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
   }
 }

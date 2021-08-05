@@ -14,25 +14,19 @@ trait ObservableObjectSetEvent
 }
 object ObservableObjectSetEvent {
   
-  @scala.inline
-  def apply(): ObservableObjectSetEvent = {
+  inline def apply(): ObservableObjectSetEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObservableObjectSetEvent]
   }
   
-  @scala.inline
-  implicit class ObservableObjectSetEventMutableBuilder[Self <: ObservableObjectSetEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ObservableObjectSetEvent](x: Self) {
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+    inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

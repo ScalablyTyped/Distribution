@@ -14,23 +14,18 @@ object mockOptionsMod {
   }
   object MockOptions {
     
-    @scala.inline
-    def apply(url: String): MockOptions = {
+    inline def apply(url: String): MockOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockOptions]
     }
     
-    @scala.inline
-    implicit class MockOptionsMutableBuilder[Self <: MockOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MockOptions](x: Self) {
       
-      @scala.inline
-      def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+      inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
+      inline def setTimesUndefined: Self = StObject.set(x, "times", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

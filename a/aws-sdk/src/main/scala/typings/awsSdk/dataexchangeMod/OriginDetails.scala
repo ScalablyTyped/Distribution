@@ -10,16 +10,13 @@ trait OriginDetails extends StObject {
 }
 object OriginDetails {
   
-  @scala.inline
-  def apply(ProductId: string): OriginDetails = {
+  inline def apply(ProductId: string): OriginDetails = {
     val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginDetails]
   }
   
-  @scala.inline
-  implicit class OriginDetailsMutableBuilder[Self <: OriginDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OriginDetails](x: Self) {
     
-    @scala.inline
-    def setProductId(value: string): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: string): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
   }
 }

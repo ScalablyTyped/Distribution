@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdGranularity extends StObject
 object WdGranularity {
   
-  @scala.inline
-  def wdGranularityCharLevel: `0` = 0.asInstanceOf[`0`]
+  inline def wdGranularityCharLevel: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdGranularityWordLevel: `1` = 1.asInstanceOf[`1`]
+  inline def wdGranularityWordLevel: `1` = 1.asInstanceOf[`1`]
 }

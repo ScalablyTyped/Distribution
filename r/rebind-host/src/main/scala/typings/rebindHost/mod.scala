@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Handler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Handler]
-  @scala.inline
-  def apply(forceHost: String): Handler = ^.asInstanceOf[js.Dynamic].apply(forceHost.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def apply(): Handler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Handler]
+  inline def apply(forceHost: String): Handler = ^.asInstanceOf[js.Dynamic].apply(forceHost.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   @JSImport("rebind-host", JSImport.Namespace)
   @js.native

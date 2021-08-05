@@ -13,16 +13,13 @@ trait GetSipMediaApplicationRequest extends StObject {
 }
 object GetSipMediaApplicationRequest {
   
-  @scala.inline
-  def apply(SipMediaApplicationId: NonEmptyString): GetSipMediaApplicationRequest = {
+  inline def apply(SipMediaApplicationId: NonEmptyString): GetSipMediaApplicationRequest = {
     val __obj = js.Dynamic.literal(SipMediaApplicationId = SipMediaApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSipMediaApplicationRequest]
   }
   
-  @scala.inline
-  implicit class GetSipMediaApplicationRequestMutableBuilder[Self <: GetSipMediaApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSipMediaApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
+    inline def setSipMediaApplicationId(value: NonEmptyString): Self = StObject.set(x, "SipMediaApplicationId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait ReturnTypeCreateIsolatedWorldResponse extends StObject {
 }
 object ReturnTypeCreateIsolatedWorldResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[CreateIsolatedWorldRequest], returnType: CreateIsolatedWorldResponse): ReturnTypeCreateIsolatedWorldResponse = {
+  inline def apply(paramsType: js.Array[CreateIsolatedWorldRequest], returnType: CreateIsolatedWorldResponse): ReturnTypeCreateIsolatedWorldResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeCreateIsolatedWorldResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeCreateIsolatedWorldResponseMutableBuilder[Self <: ReturnTypeCreateIsolatedWorldResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeCreateIsolatedWorldResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[CreateIsolatedWorldRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[CreateIsolatedWorldRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: CreateIsolatedWorldRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: CreateIsolatedWorldRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: CreateIsolatedWorldResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: CreateIsolatedWorldResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

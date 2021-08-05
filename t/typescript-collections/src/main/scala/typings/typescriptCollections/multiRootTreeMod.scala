@@ -30,26 +30,20 @@ object multiRootTreeMod {
   }
   object FlatTreeNode {
     
-    @scala.inline
-    def apply(childrenCount: Double, hasParent: Boolean, id: String, level: Double): FlatTreeNode = {
+    inline def apply(childrenCount: Double, hasParent: Boolean, id: String, level: Double): FlatTreeNode = {
       val __obj = js.Dynamic.literal(childrenCount = childrenCount.asInstanceOf[js.Any], hasParent = hasParent.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlatTreeNode]
     }
     
-    @scala.inline
-    implicit class FlatTreeNodeMutableBuilder[Self <: FlatTreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: FlatTreeNode](x: Self) {
       
-      @scala.inline
-      def setChildrenCount(value: Double): Self = StObject.set(x, "childrenCount", value.asInstanceOf[js.Any])
+      inline def setChildrenCount(value: Double): Self = StObject.set(x, "childrenCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasParent(value: Boolean): Self = StObject.set(x, "hasParent", value.asInstanceOf[js.Any])
+      inline def setHasParent(value: Boolean): Self = StObject.set(x, "hasParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
   

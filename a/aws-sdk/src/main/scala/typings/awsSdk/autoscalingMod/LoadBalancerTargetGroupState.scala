@@ -18,25 +18,19 @@ trait LoadBalancerTargetGroupState extends StObject {
 }
 object LoadBalancerTargetGroupState {
   
-  @scala.inline
-  def apply(): LoadBalancerTargetGroupState = {
+  inline def apply(): LoadBalancerTargetGroupState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancerTargetGroupState]
   }
   
-  @scala.inline
-  implicit class LoadBalancerTargetGroupStateMutableBuilder[Self <: LoadBalancerTargetGroupState] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancerTargetGroupState](x: Self) {
     
-    @scala.inline
-    def setLoadBalancerTargetGroupARN(value: XmlStringMaxLen511): Self = StObject.set(x, "LoadBalancerTargetGroupARN", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerTargetGroupARN(value: XmlStringMaxLen511): Self = StObject.set(x, "LoadBalancerTargetGroupARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerTargetGroupARNUndefined: Self = StObject.set(x, "LoadBalancerTargetGroupARN", js.undefined)
+    inline def setLoadBalancerTargetGroupARNUndefined: Self = StObject.set(x, "LoadBalancerTargetGroupARN", js.undefined)
     
-    @scala.inline
-    def setState(value: XmlStringMaxLen255): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: XmlStringMaxLen255): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -274,101 +274,70 @@ object mod {
   }
   object CommonShareButtonProps {
     
-    @scala.inline
-    def apply(url: String): CommonShareButtonProps = {
+    inline def apply(url: String): CommonShareButtonProps = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonShareButtonProps]
     }
     
-    @scala.inline
-    implicit class CommonShareButtonPropsMutableBuilder[Self <: CommonShareButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonShareButtonProps](x: Self) {
       
-      @scala.inline
-      def setAdditionalProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "additionalProps", value.asInstanceOf[js.Any])
+      inline def setAdditionalProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "additionalProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalPropsUndefined: Self = StObject.set(x, "additionalProps", js.undefined)
+      inline def setAdditionalPropsUndefined: Self = StObject.set(x, "additionalProps", js.undefined)
       
-      @scala.inline
-      def setBeforeOnClick(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "beforeOnClick", js.Any.fromFunction0(value))
+      inline def setBeforeOnClick(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "beforeOnClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeOnClickUndefined: Self = StObject.set(x, "beforeOnClick", js.undefined)
+      inline def setBeforeOnClickUndefined: Self = StObject.set(x, "beforeOnClick", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledStyle(value: StyleHTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
+      inline def setDisabledStyle(value: StyleHTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
+      inline def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* link */ String => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* link */ String => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnShareWindowClose(value: () => Unit): Self = StObject.set(x, "onShareWindowClose", js.Any.fromFunction0(value))
+      inline def setOnShareWindowClose(value: () => Unit): Self = StObject.set(x, "onShareWindowClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnShareWindowCloseUndefined: Self = StObject.set(x, "onShareWindowClose", js.undefined)
+      inline def setOnShareWindowCloseUndefined: Self = StObject.set(x, "onShareWindowClose", js.undefined)
       
-      @scala.inline
-      def setOpenWindow(value: Boolean): Self = StObject.set(x, "openWindow", value.asInstanceOf[js.Any])
+      inline def setOpenWindow(value: Boolean): Self = StObject.set(x, "openWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenWindowUndefined: Self = StObject.set(x, "openWindow", js.undefined)
+      inline def setOpenWindowUndefined: Self = StObject.set(x, "openWindow", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+      inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
+      inline def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
       
-      @scala.inline
-      def setWindowPosition(value: windowCenter | screenCenter): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
+      inline def setWindowPosition(value: windowCenter | screenCenter): Self = StObject.set(x, "windowPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
+      inline def setWindowPositionUndefined: Self = StObject.set(x, "windowPosition", js.undefined)
       
-      @scala.inline
-      def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+      inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
+      inline def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
     }
   }
   
@@ -394,44 +363,32 @@ object mod {
   }
   object IconComponentProps {
     
-    @scala.inline
-    def apply(): IconComponentProps = {
+    inline def apply(): IconComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IconComponentProps]
     }
     
-    @scala.inline
-    implicit class IconComponentPropsMutableBuilder[Self <: IconComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconComponentProps](x: Self) {
       
-      @scala.inline
-      def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+      inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
-      @scala.inline
-      def setIconBgStyle(value: CSSProperties): Self = StObject.set(x, "iconBgStyle", value.asInstanceOf[js.Any])
+      inline def setIconBgStyle(value: CSSProperties): Self = StObject.set(x, "iconBgStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconBgStyleUndefined: Self = StObject.set(x, "iconBgStyle", js.undefined)
+      inline def setIconBgStyleUndefined: Self = StObject.set(x, "iconBgStyle", js.undefined)
       
-      @scala.inline
-      def setLogoFillColor(value: String): Self = StObject.set(x, "logoFillColor", value.asInstanceOf[js.Any])
+      inline def setLogoFillColor(value: String): Self = StObject.set(x, "logoFillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoFillColorUndefined: Self = StObject.set(x, "logoFillColor", js.undefined)
+      inline def setLogoFillColorUndefined: Self = StObject.set(x, "logoFillColor", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -448,29 +405,22 @@ object mod {
   }
   object ShareCountComponentProps {
     
-    @scala.inline
-    def apply(url: String): ShareCountComponentProps = {
+    inline def apply(url: String): ShareCountComponentProps = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareCountComponentProps]
     }
     
-    @scala.inline
-    implicit class ShareCountComponentPropsMutableBuilder[Self <: ShareCountComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ShareCountComponentProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* shareCount */ Double => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* shareCount */ Double => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

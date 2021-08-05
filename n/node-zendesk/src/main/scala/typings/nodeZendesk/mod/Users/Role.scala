@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Role extends StObject
 object Role {
   
-  @scala.inline
-  def admin: typings.nodeZendesk.nodeZendeskStrings.admin = "admin".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.admin]
+  inline def admin: typings.nodeZendesk.nodeZendeskStrings.admin = "admin".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.admin]
   
-  @scala.inline
-  def agent: typings.nodeZendesk.nodeZendeskStrings.agent = "agent".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.agent]
+  inline def agent: typings.nodeZendesk.nodeZendeskStrings.agent = "agent".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.agent]
   
-  @scala.inline
-  def `end-user`: typings.nodeZendesk.nodeZendeskStrings.`end-user` = "end-user".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.`end-user`]
+  inline def `end-user`: typings.nodeZendesk.nodeZendeskStrings.`end-user` = "end-user".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.`end-user`]
 }

@@ -150,44 +150,32 @@ object suggestionsDottypesMod {
   }
   object ISuggestionsHeaderFooterItemProps {
     
-    @scala.inline
-    def apply(id: String, isSelected: Boolean, renderItem: () => Element): ISuggestionsHeaderFooterItemProps = {
+    inline def apply(id: String, isSelected: Boolean, renderItem: () => Element): ISuggestionsHeaderFooterItemProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], renderItem = js.Any.fromFunction0(renderItem))
       __obj.asInstanceOf[ISuggestionsHeaderFooterItemProps]
     }
     
-    @scala.inline
-    implicit class ISuggestionsHeaderFooterItemPropsMutableBuilder[Self <: ISuggestionsHeaderFooterItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsHeaderFooterItemProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnExecute(value: () => Unit): Self = StObject.set(x, "onExecute", js.Any.fromFunction0(value))
+      inline def setOnExecute(value: () => Unit): Self = StObject.set(x, "onExecute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnExecuteUndefined: Self = StObject.set(x, "onExecute", js.undefined)
+      inline def setOnExecuteUndefined: Self = StObject.set(x, "onExecute", js.undefined)
       
-      @scala.inline
-      def setRenderItem(value: () => Element): Self = StObject.set(x, "renderItem", js.Any.fromFunction0(value))
+      inline def setRenderItem(value: () => Element): Self = StObject.set(x, "renderItem", js.Any.fromFunction0(value))
     }
   }
   
@@ -205,38 +193,28 @@ object suggestionsDottypesMod {
   }
   object ISuggestionsHeaderFooterProps {
     
-    @scala.inline
-    def apply(renderItem: () => Element, shouldShow: () => Boolean): ISuggestionsHeaderFooterProps = {
+    inline def apply(renderItem: () => Element, shouldShow: () => Boolean): ISuggestionsHeaderFooterProps = {
       val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction0(renderItem), shouldShow = js.Any.fromFunction0(shouldShow))
       __obj.asInstanceOf[ISuggestionsHeaderFooterProps]
     }
     
-    @scala.inline
-    implicit class ISuggestionsHeaderFooterPropsMutableBuilder[Self <: ISuggestionsHeaderFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsHeaderFooterProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnExecute(value: () => Unit): Self = StObject.set(x, "onExecute", js.Any.fromFunction0(value))
+      inline def setOnExecute(value: () => Unit): Self = StObject.set(x, "onExecute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnExecuteUndefined: Self = StObject.set(x, "onExecute", js.undefined)
+      inline def setOnExecuteUndefined: Self = StObject.set(x, "onExecute", js.undefined)
       
-      @scala.inline
-      def setRenderItem(value: () => Element): Self = StObject.set(x, "renderItem", js.Any.fromFunction0(value))
+      inline def setRenderItem(value: () => Element): Self = StObject.set(x, "renderItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldShow(value: () => Boolean): Self = StObject.set(x, "shouldShow", js.Any.fromFunction0(value))
+      inline def setShouldShow(value: () => Boolean): Self = StObject.set(x, "shouldShow", js.Any.fromFunction0(value))
     }
   }
 }

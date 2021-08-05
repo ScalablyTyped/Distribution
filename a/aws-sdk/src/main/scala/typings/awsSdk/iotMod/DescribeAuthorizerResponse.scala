@@ -13,19 +13,15 @@ trait DescribeAuthorizerResponse extends StObject {
 }
 object DescribeAuthorizerResponse {
   
-  @scala.inline
-  def apply(): DescribeAuthorizerResponse = {
+  inline def apply(): DescribeAuthorizerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAuthorizerResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAuthorizerResponseMutableBuilder[Self <: DescribeAuthorizerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuthorizerResponse](x: Self) {
     
-    @scala.inline
-    def setAuthorizerDescription(value: AuthorizerDescription): Self = StObject.set(x, "authorizerDescription", value.asInstanceOf[js.Any])
+    inline def setAuthorizerDescription(value: AuthorizerDescription): Self = StObject.set(x, "authorizerDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerDescriptionUndefined: Self = StObject.set(x, "authorizerDescription", js.undefined)
+    inline def setAuthorizerDescriptionUndefined: Self = StObject.set(x, "authorizerDescription", js.undefined)
   }
 }

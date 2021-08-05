@@ -12,19 +12,15 @@ trait Typeoflinks extends StObject {
 }
 object Typeoflinks {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_10: Typeofoptions10): Typeoflinks = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_10: Typeofoptions10): Typeoflinks = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options_10 = options_10.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeoflinks]
   }
   
-  @scala.inline
-  implicit class TypeoflinksMutableBuilder[Self <: Typeoflinks] (val x: Self) extends AnyVal {
+  extension [Self <: Typeoflinks](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_10(value: Typeofoptions10): Self = StObject.set(x, "options_10", value.asInstanceOf[js.Any])
+    inline def setOptions_10(value: Typeofoptions10): Self = StObject.set(x, "options_10", value.asInstanceOf[js.Any])
   }
 }

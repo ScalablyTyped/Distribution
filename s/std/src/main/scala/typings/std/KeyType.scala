@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyType extends StObject
 object KeyType {
   
-  @scala.inline
-  def `private`: typings.std.stdStrings.`private` = "private".asInstanceOf[typings.std.stdStrings.`private`]
+  inline def `private`: typings.std.stdStrings.`private` = "private".asInstanceOf[typings.std.stdStrings.`private`]
   
-  @scala.inline
-  def public: typings.std.stdStrings.public = "public".asInstanceOf[typings.std.stdStrings.public]
+  inline def public: typings.std.stdStrings.public = "public".asInstanceOf[typings.std.stdStrings.public]
   
-  @scala.inline
-  def secret: typings.std.stdStrings.secret = "secret".asInstanceOf[typings.std.stdStrings.secret]
+  inline def secret: typings.std.stdStrings.secret = "secret".asInstanceOf[typings.std.stdStrings.secret]
 }

@@ -11,19 +11,15 @@ trait Expandable[RecordType] extends StObject {
 }
 object Expandable {
   
-  @scala.inline
-  def apply[RecordType](): Expandable[RecordType] = {
+  inline def apply[RecordType](): Expandable[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Expandable[RecordType]]
   }
   
-  @scala.inline
-  implicit class ExpandableMutableBuilder[Self <: Expandable[?], RecordType] (val x: Self & Expandable[RecordType]) extends AnyVal {
+  extension [Self <: Expandable[?], RecordType](x: Self & Expandable[RecordType]) {
     
-    @scala.inline
-    def setExpandable(value: ExpandableConfig[RecordType]): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+    inline def setExpandable(value: ExpandableConfig[RecordType]): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+    inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
   }
 }

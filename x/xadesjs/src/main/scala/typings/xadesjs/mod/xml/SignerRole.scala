@@ -13,6 +13,5 @@ class SignerRole ()
   extends typings.xadesjs.xmlMod.SignerRole
 object SignerRole {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SignerRole] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignerRole").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignerRole]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SignerRole] = ^.asInstanceOf[js.Dynamic].selectDynamic("SignerRole").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SignerRole]]
 }

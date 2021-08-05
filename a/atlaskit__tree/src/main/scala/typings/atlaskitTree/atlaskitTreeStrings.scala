@@ -8,16 +8,13 @@ object atlaskitTreeStrings {
   
   @js.native
   sealed trait `border-box` extends StObject
-  @scala.inline
-  def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
+  inline def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
   
   @js.native
   sealed trait fixed extends StObject
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

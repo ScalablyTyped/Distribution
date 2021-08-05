@@ -12,15 +12,13 @@ object decorateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decorate[T](
+  inline def decorate[T](
     clazz: Instantiable1[/* args (repeated) */ js.Any, T],
     decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? std.MethodDecorator | std.PropertyDecorator | std.Array<std.MethodDecorator> | std.Array<std.PropertyDecorator>}
     */ typings.mobx.mobxStrings.decorate & TopLevel[js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(clazz.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def decorate[T](
+  inline def decorate[T](
     `object`: T,
     decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? std.MethodDecorator | std.PropertyDecorator | std.Array<std.MethodDecorator> | std.Array<std.PropertyDecorator>}

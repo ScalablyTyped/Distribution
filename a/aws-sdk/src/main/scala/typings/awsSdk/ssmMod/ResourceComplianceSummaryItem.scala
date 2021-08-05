@@ -48,61 +48,43 @@ trait ResourceComplianceSummaryItem extends StObject {
 }
 object ResourceComplianceSummaryItem {
   
-  @scala.inline
-  def apply(): ResourceComplianceSummaryItem = {
+  inline def apply(): ResourceComplianceSummaryItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceComplianceSummaryItem]
   }
   
-  @scala.inline
-  implicit class ResourceComplianceSummaryItemMutableBuilder[Self <: ResourceComplianceSummaryItem] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceComplianceSummaryItem](x: Self) {
     
-    @scala.inline
-    def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
+    inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
-    @scala.inline
-    def setCompliantSummary(value: CompliantSummary): Self = StObject.set(x, "CompliantSummary", value.asInstanceOf[js.Any])
+    inline def setCompliantSummary(value: CompliantSummary): Self = StObject.set(x, "CompliantSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliantSummaryUndefined: Self = StObject.set(x, "CompliantSummary", js.undefined)
+    inline def setCompliantSummaryUndefined: Self = StObject.set(x, "CompliantSummary", js.undefined)
     
-    @scala.inline
-    def setExecutionSummary(value: ComplianceExecutionSummary): Self = StObject.set(x, "ExecutionSummary", value.asInstanceOf[js.Any])
+    inline def setExecutionSummary(value: ComplianceExecutionSummary): Self = StObject.set(x, "ExecutionSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionSummaryUndefined: Self = StObject.set(x, "ExecutionSummary", js.undefined)
+    inline def setExecutionSummaryUndefined: Self = StObject.set(x, "ExecutionSummary", js.undefined)
     
-    @scala.inline
-    def setNonCompliantSummary(value: NonCompliantSummary): Self = StObject.set(x, "NonCompliantSummary", value.asInstanceOf[js.Any])
+    inline def setNonCompliantSummary(value: NonCompliantSummary): Self = StObject.set(x, "NonCompliantSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCompliantSummaryUndefined: Self = StObject.set(x, "NonCompliantSummary", js.undefined)
+    inline def setNonCompliantSummaryUndefined: Self = StObject.set(x, "NonCompliantSummary", js.undefined)
     
-    @scala.inline
-    def setOverallSeverity(value: ComplianceSeverity): Self = StObject.set(x, "OverallSeverity", value.asInstanceOf[js.Any])
+    inline def setOverallSeverity(value: ComplianceSeverity): Self = StObject.set(x, "OverallSeverity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverallSeverityUndefined: Self = StObject.set(x, "OverallSeverity", js.undefined)
+    inline def setOverallSeverityUndefined: Self = StObject.set(x, "OverallSeverity", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ComplianceResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ComplianceResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ComplianceResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ComplianceResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ComplianceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ComplianceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

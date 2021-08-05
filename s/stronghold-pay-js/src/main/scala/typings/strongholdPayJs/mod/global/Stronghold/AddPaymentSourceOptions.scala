@@ -14,16 +14,13 @@ trait AddPaymentSourceOptions
 }
 object AddPaymentSourceOptions {
   
-  @scala.inline
-  def apply(onSuccess: /* paymentSource */ PaymentSource => Unit): AddPaymentSourceOptions = {
+  inline def apply(onSuccess: /* paymentSource */ PaymentSource => Unit): AddPaymentSourceOptions = {
     val __obj = js.Dynamic.literal(onSuccess = js.Any.fromFunction1(onSuccess))
     __obj.asInstanceOf[AddPaymentSourceOptions]
   }
   
-  @scala.inline
-  implicit class AddPaymentSourceOptionsMutableBuilder[Self <: AddPaymentSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddPaymentSourceOptions](x: Self) {
     
-    @scala.inline
-    def setOnSuccess(value: /* paymentSource */ PaymentSource => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+    inline def setOnSuccess(value: /* paymentSource */ PaymentSource => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
   }
 }

@@ -13,8 +13,7 @@ trait BigIntLiteralType
 }
 object BigIntLiteralType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     freshType: LiteralType,
     getApparentProperties: () => js.Array[Symbol],
@@ -47,10 +46,8 @@ object BigIntLiteralType {
     __obj.asInstanceOf[BigIntLiteralType]
   }
   
-  @scala.inline
-  implicit class BigIntLiteralTypeMutableBuilder[Self <: BigIntLiteralType] (val x: Self) extends AnyVal {
+  extension [Self <: BigIntLiteralType](x: Self) {
     
-    @scala.inline
-    def setValue(value: PseudoBigInt): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: PseudoBigInt): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

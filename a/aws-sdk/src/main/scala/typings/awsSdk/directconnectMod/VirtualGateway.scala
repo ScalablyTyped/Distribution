@@ -18,25 +18,19 @@ trait VirtualGateway extends StObject {
 }
 object VirtualGateway {
   
-  @scala.inline
-  def apply(): VirtualGateway = {
+  inline def apply(): VirtualGateway = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualGateway]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayMutableBuilder[Self <: VirtualGateway] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGateway](x: Self) {
     
-    @scala.inline
-    def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
+    inline def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
     
-    @scala.inline
-    def setVirtualGatewayState(value: VirtualGatewayState): Self = StObject.set(x, "virtualGatewayState", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayState(value: VirtualGatewayState): Self = StObject.set(x, "virtualGatewayState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualGatewayStateUndefined: Self = StObject.set(x, "virtualGatewayState", js.undefined)
+    inline def setVirtualGatewayStateUndefined: Self = StObject.set(x, "virtualGatewayState", js.undefined)
   }
 }

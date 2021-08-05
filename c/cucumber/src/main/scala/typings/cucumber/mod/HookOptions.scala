@@ -12,25 +12,19 @@ trait HookOptions extends StObject {
 }
 object HookOptions {
   
-  @scala.inline
-  def apply(): HookOptions = {
+  inline def apply(): HookOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HookOptions]
   }
   
-  @scala.inline
-  implicit class HookOptionsMutableBuilder[Self <: HookOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HookOptions](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

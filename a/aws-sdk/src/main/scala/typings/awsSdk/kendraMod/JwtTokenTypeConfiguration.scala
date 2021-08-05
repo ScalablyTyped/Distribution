@@ -43,52 +43,37 @@ trait JwtTokenTypeConfiguration extends StObject {
 }
 object JwtTokenTypeConfiguration {
   
-  @scala.inline
-  def apply(KeyLocation: KeyLocation): JwtTokenTypeConfiguration = {
+  inline def apply(KeyLocation: KeyLocation): JwtTokenTypeConfiguration = {
     val __obj = js.Dynamic.literal(KeyLocation = KeyLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[JwtTokenTypeConfiguration]
   }
   
-  @scala.inline
-  implicit class JwtTokenTypeConfigurationMutableBuilder[Self <: JwtTokenTypeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: JwtTokenTypeConfiguration](x: Self) {
     
-    @scala.inline
-    def setClaimRegex(value: ClaimRegex): Self = StObject.set(x, "ClaimRegex", value.asInstanceOf[js.Any])
+    inline def setClaimRegex(value: ClaimRegex): Self = StObject.set(x, "ClaimRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimRegexUndefined: Self = StObject.set(x, "ClaimRegex", js.undefined)
+    inline def setClaimRegexUndefined: Self = StObject.set(x, "ClaimRegex", js.undefined)
     
-    @scala.inline
-    def setGroupAttributeField(value: GroupAttributeField): Self = StObject.set(x, "GroupAttributeField", value.asInstanceOf[js.Any])
+    inline def setGroupAttributeField(value: GroupAttributeField): Self = StObject.set(x, "GroupAttributeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupAttributeFieldUndefined: Self = StObject.set(x, "GroupAttributeField", js.undefined)
+    inline def setGroupAttributeFieldUndefined: Self = StObject.set(x, "GroupAttributeField", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: Issuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: Issuer): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
     
-    @scala.inline
-    def setKeyLocation(value: KeyLocation): Self = StObject.set(x, "KeyLocation", value.asInstanceOf[js.Any])
+    inline def setKeyLocation(value: KeyLocation): Self = StObject.set(x, "KeyLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretManagerArn(value: RoleArn): Self = StObject.set(x, "SecretManagerArn", value.asInstanceOf[js.Any])
+    inline def setSecretManagerArn(value: RoleArn): Self = StObject.set(x, "SecretManagerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretManagerArnUndefined: Self = StObject.set(x, "SecretManagerArn", js.undefined)
+    inline def setSecretManagerArnUndefined: Self = StObject.set(x, "SecretManagerArn", js.undefined)
     
-    @scala.inline
-    def setURL(value: Url): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: Url): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
+    inline def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
     
-    @scala.inline
-    def setUserNameAttributeField(value: UserNameAttributeField): Self = StObject.set(x, "UserNameAttributeField", value.asInstanceOf[js.Any])
+    inline def setUserNameAttributeField(value: UserNameAttributeField): Self = StObject.set(x, "UserNameAttributeField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameAttributeFieldUndefined: Self = StObject.set(x, "UserNameAttributeField", js.undefined)
+    inline def setUserNameAttributeFieldUndefined: Self = StObject.set(x, "UserNameAttributeField", js.undefined)
   }
 }

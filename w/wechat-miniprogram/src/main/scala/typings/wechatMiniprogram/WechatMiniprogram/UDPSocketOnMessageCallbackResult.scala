@@ -15,19 +15,15 @@ trait UDPSocketOnMessageCallbackResult extends StObject {
 }
 object UDPSocketOnMessageCallbackResult {
   
-  @scala.inline
-  def apply(message: ArrayBuffer, remoteInfo: RemoteInfo): UDPSocketOnMessageCallbackResult = {
+  inline def apply(message: ArrayBuffer, remoteInfo: RemoteInfo): UDPSocketOnMessageCallbackResult = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], remoteInfo = remoteInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[UDPSocketOnMessageCallbackResult]
   }
   
-  @scala.inline
-  implicit class UDPSocketOnMessageCallbackResultMutableBuilder[Self <: UDPSocketOnMessageCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UDPSocketOnMessageCallbackResult](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteInfo(value: RemoteInfo): Self = StObject.set(x, "remoteInfo", value.asInstanceOf[js.Any])
+    inline def setRemoteInfo(value: RemoteInfo): Self = StObject.set(x, "remoteInfo", value.asInstanceOf[js.Any])
   }
 }

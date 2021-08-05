@@ -12,8 +12,7 @@ object beakStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IBeakStylesProps): IBeakStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IBeakStyles]
+  inline def getStyles(props: IBeakStylesProps): IBeakStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IBeakStyles]
   
   trait IBeakStyles extends StObject {
     
@@ -26,32 +25,24 @@ object beakStylesMod {
   }
   object IBeakStyles {
     
-    @scala.inline
-    def apply(): IBeakStyles = {
+    inline def apply(): IBeakStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBeakStyles]
     }
     
-    @scala.inline
-    implicit class IBeakStylesMutableBuilder[Self <: IBeakStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IBeakStyles](x: Self) {
       
-      @scala.inline
-      def setBeak(value: IStyle): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
+      inline def setBeak(value: IStyle): Self = StObject.set(x, "beak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeakNull: Self = StObject.set(x, "beak", null)
+      inline def setBeakNull: Self = StObject.set(x, "beak", null)
       
-      @scala.inline
-      def setBeakUndefined: Self = StObject.set(x, "beak", js.undefined)
+      inline def setBeakUndefined: Self = StObject.set(x, "beak", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

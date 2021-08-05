@@ -22,25 +22,19 @@ trait SchemaPointStyle extends StObject {
 }
 object SchemaPointStyle {
   
-  @scala.inline
-  def apply(): SchemaPointStyle = {
+  inline def apply(): SchemaPointStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPointStyle]
   }
   
-  @scala.inline
-  implicit class SchemaPointStyleMutableBuilder[Self <: SchemaPointStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPointStyle](x: Self) {
     
-    @scala.inline
-    def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+    inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
+    inline def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
     
-    @scala.inline
-    def setIconStyler(value: SchemaStyleFunction): Self = StObject.set(x, "iconStyler", value.asInstanceOf[js.Any])
+    inline def setIconStyler(value: SchemaStyleFunction): Self = StObject.set(x, "iconStyler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconStylerUndefined: Self = StObject.set(x, "iconStyler", js.undefined)
+    inline def setIconStylerUndefined: Self = StObject.set(x, "iconStyler", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait CodeHook extends StObject {
 }
 object CodeHook {
   
-  @scala.inline
-  def apply(messageVersion: MessageVersion, uri: LambdaARN): CodeHook = {
+  inline def apply(messageVersion: MessageVersion, uri: LambdaARN): CodeHook = {
     val __obj = js.Dynamic.literal(messageVersion = messageVersion.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeHook]
   }
   
-  @scala.inline
-  implicit class CodeHookMutableBuilder[Self <: CodeHook] (val x: Self) extends AnyVal {
+  extension [Self <: CodeHook](x: Self) {
     
-    @scala.inline
-    def setMessageVersion(value: MessageVersion): Self = StObject.set(x, "messageVersion", value.asInstanceOf[js.Any])
+    inline def setMessageVersion(value: MessageVersion): Self = StObject.set(x, "messageVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: LambdaARN): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: LambdaARN): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

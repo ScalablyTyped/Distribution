@@ -18,25 +18,19 @@ trait DeploymentGroupDeploymentStyle extends StObject {
 }
 object DeploymentGroupDeploymentStyle {
   
-  @scala.inline
-  def apply(): DeploymentGroupDeploymentStyle = {
+  inline def apply(): DeploymentGroupDeploymentStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupDeploymentStyle]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupDeploymentStyleMutableBuilder[Self <: DeploymentGroupDeploymentStyle] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupDeploymentStyle](x: Self) {
     
-    @scala.inline
-    def setDeploymentOption(value: String): Self = StObject.set(x, "deploymentOption", value.asInstanceOf[js.Any])
+    inline def setDeploymentOption(value: String): Self = StObject.set(x, "deploymentOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentOptionUndefined: Self = StObject.set(x, "deploymentOption", js.undefined)
+    inline def setDeploymentOptionUndefined: Self = StObject.set(x, "deploymentOption", js.undefined)
     
-    @scala.inline
-    def setDeploymentType(value: String): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
+    inline def setDeploymentType(value: String): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
+    inline def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
   }
 }

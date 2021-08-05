@@ -14,25 +14,19 @@ trait ScrollViewRefreshEvent
 }
 object ScrollViewRefreshEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ScrollView): ScrollViewRefreshEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ScrollView): ScrollViewRefreshEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewRefreshEvent]
   }
   
-  @scala.inline
-  implicit class ScrollViewRefreshEventMutableBuilder[Self <: ScrollViewRefreshEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollViewRefreshEvent](x: Self) {
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
+    inline def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
+    inline def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

@@ -17,28 +17,21 @@ trait ExecuteBatchDmlResponse extends StObject {
 }
 object ExecuteBatchDmlResponse {
   
-  @scala.inline
-  def apply(): ExecuteBatchDmlResponse = {
+  inline def apply(): ExecuteBatchDmlResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteBatchDmlResponse]
   }
   
-  @scala.inline
-  implicit class ExecuteBatchDmlResponseMutableBuilder[Self <: ExecuteBatchDmlResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteBatchDmlResponse](x: Self) {
     
-    @scala.inline
-    def setResultSets(value: js.Array[ResultSet]): Self = StObject.set(x, "resultSets", value.asInstanceOf[js.Any])
+    inline def setResultSets(value: js.Array[ResultSet]): Self = StObject.set(x, "resultSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetsUndefined: Self = StObject.set(x, "resultSets", js.undefined)
+    inline def setResultSetsUndefined: Self = StObject.set(x, "resultSets", js.undefined)
     
-    @scala.inline
-    def setResultSetsVarargs(value: ResultSet*): Self = StObject.set(x, "resultSets", js.Array(value :_*))
+    inline def setResultSetsVarargs(value: ResultSet*): Self = StObject.set(x, "resultSets", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

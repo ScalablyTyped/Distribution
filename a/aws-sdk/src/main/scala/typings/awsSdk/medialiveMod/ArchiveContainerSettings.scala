@@ -12,25 +12,19 @@ trait ArchiveContainerSettings extends StObject {
 }
 object ArchiveContainerSettings {
   
-  @scala.inline
-  def apply(): ArchiveContainerSettings = {
+  inline def apply(): ArchiveContainerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArchiveContainerSettings]
   }
   
-  @scala.inline
-  implicit class ArchiveContainerSettingsMutableBuilder[Self <: ArchiveContainerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ArchiveContainerSettings](x: Self) {
     
-    @scala.inline
-    def setM2tsSettings(value: M2tsSettings): Self = StObject.set(x, "M2tsSettings", value.asInstanceOf[js.Any])
+    inline def setM2tsSettings(value: M2tsSettings): Self = StObject.set(x, "M2tsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM2tsSettingsUndefined: Self = StObject.set(x, "M2tsSettings", js.undefined)
+    inline def setM2tsSettingsUndefined: Self = StObject.set(x, "M2tsSettings", js.undefined)
     
-    @scala.inline
-    def setRawSettings(value: RawSettings): Self = StObject.set(x, "RawSettings", value.asInstanceOf[js.Any])
+    inline def setRawSettings(value: RawSettings): Self = StObject.set(x, "RawSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawSettingsUndefined: Self = StObject.set(x, "RawSettings", js.undefined)
+    inline def setRawSettingsUndefined: Self = StObject.set(x, "RawSettings", js.undefined)
   }
 }

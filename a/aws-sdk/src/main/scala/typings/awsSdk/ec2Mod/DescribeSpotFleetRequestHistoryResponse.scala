@@ -33,46 +33,33 @@ trait DescribeSpotFleetRequestHistoryResponse extends StObject {
 }
 object DescribeSpotFleetRequestHistoryResponse {
   
-  @scala.inline
-  def apply(): DescribeSpotFleetRequestHistoryResponse = {
+  inline def apply(): DescribeSpotFleetRequestHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSpotFleetRequestHistoryResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSpotFleetRequestHistoryResponseMutableBuilder[Self <: DescribeSpotFleetRequestHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSpotFleetRequestHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setHistoryRecords(value: HistoryRecords): Self = StObject.set(x, "HistoryRecords", value.asInstanceOf[js.Any])
+    inline def setHistoryRecords(value: HistoryRecords): Self = StObject.set(x, "HistoryRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryRecordsUndefined: Self = StObject.set(x, "HistoryRecords", js.undefined)
+    inline def setHistoryRecordsUndefined: Self = StObject.set(x, "HistoryRecords", js.undefined)
     
-    @scala.inline
-    def setHistoryRecordsVarargs(value: HistoryRecord*): Self = StObject.set(x, "HistoryRecords", js.Array(value :_*))
+    inline def setHistoryRecordsVarargs(value: HistoryRecord*): Self = StObject.set(x, "HistoryRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setLastEvaluatedTime(value: DateTime): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedTime(value: DateTime): Self = StObject.set(x, "LastEvaluatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedTimeUndefined: Self = StObject.set(x, "LastEvaluatedTime", js.undefined)
+    inline def setLastEvaluatedTimeUndefined: Self = StObject.set(x, "LastEvaluatedTime", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
+    inline def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

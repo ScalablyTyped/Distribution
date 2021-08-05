@@ -17,34 +17,25 @@ trait ListReferenceImagesResponse extends StObject {
 }
 object ListReferenceImagesResponse {
   
-  @scala.inline
-  def apply(): ListReferenceImagesResponse = {
+  inline def apply(): ListReferenceImagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReferenceImagesResponse]
   }
   
-  @scala.inline
-  implicit class ListReferenceImagesResponseMutableBuilder[Self <: ListReferenceImagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReferenceImagesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setReferenceImages(value: js.Array[ReferenceImage]): Self = StObject.set(x, "referenceImages", value.asInstanceOf[js.Any])
+    inline def setReferenceImages(value: js.Array[ReferenceImage]): Self = StObject.set(x, "referenceImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceImagesUndefined: Self = StObject.set(x, "referenceImages", js.undefined)
+    inline def setReferenceImagesUndefined: Self = StObject.set(x, "referenceImages", js.undefined)
     
-    @scala.inline
-    def setReferenceImagesVarargs(value: ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value :_*))
+    inline def setReferenceImagesVarargs(value: ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value :_*))
   }
 }

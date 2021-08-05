@@ -13,16 +13,13 @@ trait CardSettings extends StObject {
 }
 object CardSettings {
   
-  @scala.inline
-  def apply(fields: CardFieldSettings): CardSettings = {
+  inline def apply(fields: CardFieldSettings): CardSettings = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardSettings]
   }
   
-  @scala.inline
-  implicit class CardSettingsMutableBuilder[Self <: CardSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CardSettings](x: Self) {
     
-    @scala.inline
-    def setFields(value: CardFieldSettings): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: CardFieldSettings): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }
 }

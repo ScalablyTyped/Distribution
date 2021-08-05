@@ -13,16 +13,13 @@ trait DeleteContactMethodRequest extends StObject {
 }
 object DeleteContactMethodRequest {
   
-  @scala.inline
-  def apply(protocol: ContactProtocol): DeleteContactMethodRequest = {
+  inline def apply(protocol: ContactProtocol): DeleteContactMethodRequest = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteContactMethodRequest]
   }
   
-  @scala.inline
-  implicit class DeleteContactMethodRequestMutableBuilder[Self <: DeleteContactMethodRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteContactMethodRequest](x: Self) {
     
-    @scala.inline
-    def setProtocol(value: ContactProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: ContactProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,6 @@ object applySourceMapsToEventsMod {
     * @throws If `args` for events are not populated
     * @returns {DurationEvent[]}
     */
-  @scala.inline
-  def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent]): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceMap.asInstanceOf[js.Any], chromeEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
-  @scala.inline
-  def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent], indexBundleFileName: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceMap.asInstanceOf[js.Any], chromeEvents.asInstanceOf[js.Any], indexBundleFileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
+  inline def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent]): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceMap.asInstanceOf[js.Any], chromeEvents.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
+  inline def default(sourceMap: SourceMap, chromeEvents: js.Array[DurationEvent], indexBundleFileName: String): js.Promise[js.Array[DurationEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sourceMap.asInstanceOf[js.Any], chromeEvents.asInstanceOf[js.Any], indexBundleFileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[DurationEvent]]]
 }

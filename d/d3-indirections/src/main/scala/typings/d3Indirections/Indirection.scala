@@ -16,14 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Indirection extends StObject
 object Indirection {
   
-  @scala.inline
-  def ListIndirection(listIndirection: ResourceIndex, name: String, resourceType: ResourceType, uid: String): typings.d3Indirections.ListIndirection = {
+  inline def ListIndirection(listIndirection: ResourceIndex, name: String, resourceType: ResourceType, uid: String): typings.d3Indirections.ListIndirection = {
     val __obj = js.Dynamic.literal(listIndirection = listIndirection.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.d3Indirections.ListIndirection]
   }
   
-  @scala.inline
-  def ManualIndirection(manualIndirection: ResourceUid, name: String, resourceType: ResourceType, uid: String): typings.d3Indirections.ManualIndirection = {
+  inline def ManualIndirection(manualIndirection: ResourceUid, name: String, resourceType: ResourceType, uid: String): typings.d3Indirections.ManualIndirection = {
     val __obj = js.Dynamic.literal(manualIndirection = manualIndirection.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.d3Indirections.ManualIndirection]
   }

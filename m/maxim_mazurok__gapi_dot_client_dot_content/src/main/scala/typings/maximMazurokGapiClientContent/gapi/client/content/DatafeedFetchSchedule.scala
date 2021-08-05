@@ -38,67 +38,47 @@ trait DatafeedFetchSchedule extends StObject {
 }
 object DatafeedFetchSchedule {
   
-  @scala.inline
-  def apply(): DatafeedFetchSchedule = {
+  inline def apply(): DatafeedFetchSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatafeedFetchSchedule]
   }
   
-  @scala.inline
-  implicit class DatafeedFetchScheduleMutableBuilder[Self <: DatafeedFetchSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: DatafeedFetchSchedule](x: Self) {
     
-    @scala.inline
-    def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
+    inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
+    inline def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
     
-    @scala.inline
-    def setFetchUrl(value: String): Self = StObject.set(x, "fetchUrl", value.asInstanceOf[js.Any])
+    inline def setFetchUrl(value: String): Self = StObject.set(x, "fetchUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchUrlUndefined: Self = StObject.set(x, "fetchUrl", js.undefined)
+    inline def setFetchUrlUndefined: Self = StObject.set(x, "fetchUrl", js.undefined)
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+    inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
-    @scala.inline
-    def setMinuteOfHour(value: Double): Self = StObject.set(x, "minuteOfHour", value.asInstanceOf[js.Any])
+    inline def setMinuteOfHour(value: Double): Self = StObject.set(x, "minuteOfHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteOfHourUndefined: Self = StObject.set(x, "minuteOfHour", js.undefined)
+    inline def setMinuteOfHourUndefined: Self = StObject.set(x, "minuteOfHour", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+    inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    @scala.inline
-    def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+    inline def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
+    inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
   }
 }

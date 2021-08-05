@@ -10,8 +10,6 @@ object convertDistanceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(meters: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(meters.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def default(meters: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(meters.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(meters: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(meters.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(meters: Double, targetUnit: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(meters.asInstanceOf[js.Any], targetUnit.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

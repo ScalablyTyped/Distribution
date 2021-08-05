@@ -15,22 +15,17 @@ trait IDVRInfo extends StObject {
 }
 object IDVRInfo {
   
-  @scala.inline
-  def apply(manifestInfo: IManifestInfo, range: End, time: Double): IDVRInfo = {
+  inline def apply(manifestInfo: IManifestInfo, range: End, time: Double): IDVRInfo = {
     val __obj = js.Dynamic.literal(manifestInfo = manifestInfo.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDVRInfo]
   }
   
-  @scala.inline
-  implicit class IDVRInfoMutableBuilder[Self <: IDVRInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IDVRInfo](x: Self) {
     
-    @scala.inline
-    def setManifestInfo(value: IManifestInfo): Self = StObject.set(x, "manifestInfo", value.asInstanceOf[js.Any])
+    inline def setManifestInfo(value: IManifestInfo): Self = StObject.set(x, "manifestInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: End): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: End): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

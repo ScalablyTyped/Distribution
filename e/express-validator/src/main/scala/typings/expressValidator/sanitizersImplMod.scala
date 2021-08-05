@@ -15,10 +15,10 @@ object sanitizersImplMod {
        with Sanitizers[Chain] {
     def this(builder: ContextBuilder, chain: Chain) = this()
     
-    var addStandardSanitization: js.Any = js.native
+    /* private */ var addStandardSanitization: js.Any = js.native
     
-    val builder: js.Any = js.native
+    /* private */ val builder: js.Any = js.native
     
-    val chain: js.Any = js.native
+    /* private */ val chain: js.Any = js.native
   }
 }

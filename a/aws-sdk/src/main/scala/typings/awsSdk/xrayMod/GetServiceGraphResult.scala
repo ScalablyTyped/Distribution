@@ -33,46 +33,33 @@ trait GetServiceGraphResult extends StObject {
 }
 object GetServiceGraphResult {
   
-  @scala.inline
-  def apply(): GetServiceGraphResult = {
+  inline def apply(): GetServiceGraphResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetServiceGraphResult]
   }
   
-  @scala.inline
-  implicit class GetServiceGraphResultMutableBuilder[Self <: GetServiceGraphResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceGraphResult](x: Self) {
     
-    @scala.inline
-    def setContainsOldGroupVersions(value: Boolean): Self = StObject.set(x, "ContainsOldGroupVersions", value.asInstanceOf[js.Any])
+    inline def setContainsOldGroupVersions(value: Boolean): Self = StObject.set(x, "ContainsOldGroupVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsOldGroupVersionsUndefined: Self = StObject.set(x, "ContainsOldGroupVersions", js.undefined)
+    inline def setContainsOldGroupVersionsUndefined: Self = StObject.set(x, "ContainsOldGroupVersions", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServices(value: ServiceList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
+    inline def setServices(value: ServiceList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

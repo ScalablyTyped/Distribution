@@ -13,19 +13,15 @@ trait GetClusterIdentity extends StObject {
 }
 object GetClusterIdentity {
   
-  @scala.inline
-  def apply(oidcs: js.Array[GetClusterIdentityOidc]): GetClusterIdentity = {
+  inline def apply(oidcs: js.Array[GetClusterIdentityOidc]): GetClusterIdentity = {
     val __obj = js.Dynamic.literal(oidcs = oidcs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterIdentity]
   }
   
-  @scala.inline
-  implicit class GetClusterIdentityMutableBuilder[Self <: GetClusterIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: GetClusterIdentity](x: Self) {
     
-    @scala.inline
-    def setOidcs(value: js.Array[GetClusterIdentityOidc]): Self = StObject.set(x, "oidcs", value.asInstanceOf[js.Any])
+    inline def setOidcs(value: js.Array[GetClusterIdentityOidc]): Self = StObject.set(x, "oidcs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcsVarargs(value: GetClusterIdentityOidc*): Self = StObject.set(x, "oidcs", js.Array(value :_*))
+    inline def setOidcsVarargs(value: GetClusterIdentityOidc*): Self = StObject.set(x, "oidcs", js.Array(value :_*))
   }
 }

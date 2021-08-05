@@ -14,31 +14,23 @@ trait SubscribeCallbacksHash extends StObject {
 }
 object SubscribeCallbacksHash {
   
-  @scala.inline
-  def apply(): SubscribeCallbacksHash = {
+  inline def apply(): SubscribeCallbacksHash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscribeCallbacksHash]
   }
   
-  @scala.inline
-  implicit class SubscribeCallbacksHashMutableBuilder[Self <: SubscribeCallbacksHash] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeCallbacksHash](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* args */ ErrorArgs => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* args */ ErrorArgs => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnEvent(value: /* args */ DataArgs => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
+    inline def setOnEvent(value: /* args */ DataArgs => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
+    inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+    inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

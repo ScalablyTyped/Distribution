@@ -33,37 +33,27 @@ trait ClusterKerberosAttributes extends StObject {
 }
 object ClusterKerberosAttributes {
   
-  @scala.inline
-  def apply(kdcAdminPassword: String, realm: String): ClusterKerberosAttributes = {
+  inline def apply(kdcAdminPassword: String, realm: String): ClusterKerberosAttributes = {
     val __obj = js.Dynamic.literal(kdcAdminPassword = kdcAdminPassword.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterKerberosAttributes]
   }
   
-  @scala.inline
-  implicit class ClusterKerberosAttributesMutableBuilder[Self <: ClusterKerberosAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterKerberosAttributes](x: Self) {
     
-    @scala.inline
-    def setAdDomainJoinPassword(value: String): Self = StObject.set(x, "adDomainJoinPassword", value.asInstanceOf[js.Any])
+    inline def setAdDomainJoinPassword(value: String): Self = StObject.set(x, "adDomainJoinPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdDomainJoinPasswordUndefined: Self = StObject.set(x, "adDomainJoinPassword", js.undefined)
+    inline def setAdDomainJoinPasswordUndefined: Self = StObject.set(x, "adDomainJoinPassword", js.undefined)
     
-    @scala.inline
-    def setAdDomainJoinUser(value: String): Self = StObject.set(x, "adDomainJoinUser", value.asInstanceOf[js.Any])
+    inline def setAdDomainJoinUser(value: String): Self = StObject.set(x, "adDomainJoinUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdDomainJoinUserUndefined: Self = StObject.set(x, "adDomainJoinUser", js.undefined)
+    inline def setAdDomainJoinUserUndefined: Self = StObject.set(x, "adDomainJoinUser", js.undefined)
     
-    @scala.inline
-    def setCrossRealmTrustPrincipalPassword(value: String): Self = StObject.set(x, "crossRealmTrustPrincipalPassword", value.asInstanceOf[js.Any])
+    inline def setCrossRealmTrustPrincipalPassword(value: String): Self = StObject.set(x, "crossRealmTrustPrincipalPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossRealmTrustPrincipalPasswordUndefined: Self = StObject.set(x, "crossRealmTrustPrincipalPassword", js.undefined)
+    inline def setCrossRealmTrustPrincipalPasswordUndefined: Self = StObject.set(x, "crossRealmTrustPrincipalPassword", js.undefined)
     
-    @scala.inline
-    def setKdcAdminPassword(value: String): Self = StObject.set(x, "kdcAdminPassword", value.asInstanceOf[js.Any])
+    inline def setKdcAdminPassword(value: String): Self = StObject.set(x, "kdcAdminPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+    inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object puppeteerInitializeWebMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializePuppeteerWeb(packageName: String): Puppeteer = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePuppeteerWeb")(packageName.asInstanceOf[js.Any]).asInstanceOf[Puppeteer]
+  inline def initializePuppeteerWeb(packageName: String): Puppeteer = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePuppeteerWeb")(packageName.asInstanceOf[js.Any]).asInstanceOf[Puppeteer]
 }

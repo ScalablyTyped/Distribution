@@ -28,37 +28,27 @@ trait VolumeRecoveryPointInfo extends StObject {
 }
 object VolumeRecoveryPointInfo {
   
-  @scala.inline
-  def apply(): VolumeRecoveryPointInfo = {
+  inline def apply(): VolumeRecoveryPointInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeRecoveryPointInfo]
   }
   
-  @scala.inline
-  implicit class VolumeRecoveryPointInfoMutableBuilder[Self <: VolumeRecoveryPointInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeRecoveryPointInfo](x: Self) {
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
     
-    @scala.inline
-    def setVolumeRecoveryPointTime(value: String): Self = StObject.set(x, "VolumeRecoveryPointTime", value.asInstanceOf[js.Any])
+    inline def setVolumeRecoveryPointTime(value: String): Self = StObject.set(x, "VolumeRecoveryPointTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeRecoveryPointTimeUndefined: Self = StObject.set(x, "VolumeRecoveryPointTime", js.undefined)
+    inline def setVolumeRecoveryPointTimeUndefined: Self = StObject.set(x, "VolumeRecoveryPointTime", js.undefined)
     
-    @scala.inline
-    def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeInBytes(value: long): Self = StObject.set(x, "VolumeSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
+    inline def setVolumeSizeInBytesUndefined: Self = StObject.set(x, "VolumeSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setVolumeUsageInBytes(value: long): Self = StObject.set(x, "VolumeUsageInBytes", value.asInstanceOf[js.Any])
+    inline def setVolumeUsageInBytes(value: long): Self = StObject.set(x, "VolumeUsageInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeUsageInBytesUndefined: Self = StObject.set(x, "VolumeUsageInBytes", js.undefined)
+    inline def setVolumeUsageInBytesUndefined: Self = StObject.set(x, "VolumeUsageInBytes", js.undefined)
   }
 }

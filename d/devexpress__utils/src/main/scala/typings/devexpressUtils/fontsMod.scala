@@ -28,29 +28,22 @@ object fontsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addFontToDocument(loadedFace: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFontToDocument")(loadedFace.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addFontToDocument(loadedFace: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFontToDocument")(loadedFace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def afterFontsLoaded(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFontsLoaded")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterFontsLoaded(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFontsLoaded")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def checkFont(fontFamily: IFontFace): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkFont")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def checkFont(fontFamily: IFontFace, text: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkFont")(fontFamily.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkFont(fontFamily: IFontFace): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkFont")(fontFamily.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkFont(fontFamily: IFontFace, text: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkFont")(fontFamily.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def fontWebApiAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWebApiAvailable")().asInstanceOf[Boolean]
+  inline def fontWebApiAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fontWebApiAvailable")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def loadFont(
+  inline def loadFont(
     fontFamily: String,
     source: String,
     fontFaceDescriptors: IFontFaceDescriptors,
     callback: js.Function1[/* error */ String | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontFamily.asInstanceOf[js.Any], source.asInstanceOf[js.Any], fontFaceDescriptors.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def loadFont(
+  inline def loadFont(
     fontFamily: String,
     source: ArrayBuffer,
     fontFaceDescriptors: IFontFaceDescriptors,
@@ -67,20 +60,16 @@ object fontsMod {
   }
   object IFontFace {
     
-    @scala.inline
-    def apply(family: String, status: unloaded | loading | loaded | error): IFontFace = {
+    inline def apply(family: String, status: unloaded | loading | loaded | error): IFontFace = {
       val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFontFace]
     }
     
-    @scala.inline
-    implicit class IFontFaceMutableBuilder[Self <: IFontFace] (val x: Self) extends AnyVal {
+    extension [Self <: IFontFace](x: Self) {
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: unloaded | loading | loaded | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: unloaded | loading | loaded | error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,64 +95,46 @@ object fontsMod {
   }
   object IFontFaceDescriptors {
     
-    @scala.inline
-    def apply(): IFontFaceDescriptors = {
+    inline def apply(): IFontFaceDescriptors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFontFaceDescriptors]
     }
     
-    @scala.inline
-    implicit class IFontFaceDescriptorsMutableBuilder[Self <: IFontFaceDescriptors] (val x: Self) extends AnyVal {
+    extension [Self <: IFontFaceDescriptors](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setFeatureSettings(value: String): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
+      inline def setFeatureSettings(value: String): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
+      inline def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
       
-      @scala.inline
-      def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      inline def setStretch(value: String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
       
-      @scala.inline
-      def setStyle(value: normal | italic | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: normal | italic | String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUnicodeRange(value: String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
+      inline def setUnicodeRange(value: String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
+      inline def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+      inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
       
-      @scala.inline
-      def setVariationSettings(value: String): Self = StObject.set(x, "variationSettings", value.asInstanceOf[js.Any])
+      inline def setVariationSettings(value: String): Self = StObject.set(x, "variationSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariationSettingsUndefined: Self = StObject.set(x, "variationSettings", js.undefined)
+      inline def setVariationSettingsUndefined: Self = StObject.set(x, "variationSettings", js.undefined)
       
-      @scala.inline
-      def setWeight(
+      inline def setWeight(
         value: normal | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | String | Double
       ): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
 }

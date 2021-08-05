@@ -10,8 +10,7 @@ trait IWrapper
      with IBase
 object IWrapper {
   
-  @scala.inline
-  def apply(): IWrapper = {
+  inline def apply(): IWrapper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWrapper]
   }

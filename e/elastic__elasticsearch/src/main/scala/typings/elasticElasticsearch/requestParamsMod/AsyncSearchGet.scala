@@ -18,34 +18,25 @@ trait AsyncSearchGet
 }
 object AsyncSearchGet {
   
-  @scala.inline
-  def apply(id: String): AsyncSearchGet = {
+  inline def apply(id: String): AsyncSearchGet = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncSearchGet]
   }
   
-  @scala.inline
-  implicit class AsyncSearchGetMutableBuilder[Self <: AsyncSearchGet] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncSearchGet](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
+    inline def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
+    inline def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
     
-    @scala.inline
-    def setTyped_keys(value: Boolean): Self = StObject.set(x, "typed_keys", value.asInstanceOf[js.Any])
+    inline def setTyped_keys(value: Boolean): Self = StObject.set(x, "typed_keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTyped_keysUndefined: Self = StObject.set(x, "typed_keys", js.undefined)
+    inline def setTyped_keysUndefined: Self = StObject.set(x, "typed_keys", js.undefined)
     
-    @scala.inline
-    def setWait_for_completion_timeout(value: String): Self = StObject.set(x, "wait_for_completion_timeout", value.asInstanceOf[js.Any])
+    inline def setWait_for_completion_timeout(value: String): Self = StObject.set(x, "wait_for_completion_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completion_timeoutUndefined: Self = StObject.set(x, "wait_for_completion_timeout", js.undefined)
+    inline def setWait_for_completion_timeoutUndefined: Self = StObject.set(x, "wait_for_completion_timeout", js.undefined)
   }
 }

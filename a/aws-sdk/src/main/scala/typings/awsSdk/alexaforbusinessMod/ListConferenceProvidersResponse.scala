@@ -18,28 +18,21 @@ trait ListConferenceProvidersResponse extends StObject {
 }
 object ListConferenceProvidersResponse {
   
-  @scala.inline
-  def apply(): ListConferenceProvidersResponse = {
+  inline def apply(): ListConferenceProvidersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListConferenceProvidersResponse]
   }
   
-  @scala.inline
-  implicit class ListConferenceProvidersResponseMutableBuilder[Self <: ListConferenceProvidersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListConferenceProvidersResponse](x: Self) {
     
-    @scala.inline
-    def setConferenceProviders(value: ConferenceProvidersList): Self = StObject.set(x, "ConferenceProviders", value.asInstanceOf[js.Any])
+    inline def setConferenceProviders(value: ConferenceProvidersList): Self = StObject.set(x, "ConferenceProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceProvidersUndefined: Self = StObject.set(x, "ConferenceProviders", js.undefined)
+    inline def setConferenceProvidersUndefined: Self = StObject.set(x, "ConferenceProviders", js.undefined)
     
-    @scala.inline
-    def setConferenceProvidersVarargs(value: ConferenceProvider*): Self = StObject.set(x, "ConferenceProviders", js.Array(value :_*))
+    inline def setConferenceProvidersVarargs(value: ConferenceProvider*): Self = StObject.set(x, "ConferenceProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

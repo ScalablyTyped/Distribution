@@ -35,8 +35,7 @@ trait KeyValueChanges[K, V] extends StObject {
 }
 object KeyValueChanges {
   
-  @scala.inline
-  def apply[K, V](
+  inline def apply[K, V](
     forEachAddedItem: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit,
     forEachChangedItem: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit,
     forEachItem: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit,
@@ -47,22 +46,16 @@ object KeyValueChanges {
     __obj.asInstanceOf[KeyValueChanges[K, V]]
   }
   
-  @scala.inline
-  implicit class KeyValueChangesMutableBuilder[Self <: KeyValueChanges[?, ?], K, V] (val x: Self & (KeyValueChanges[K, V])) extends AnyVal {
+  extension [Self <: KeyValueChanges[?, ?], K, V](x: Self & (KeyValueChanges[K, V])) {
     
-    @scala.inline
-    def setForEachAddedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))
+    inline def setForEachAddedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachChangedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachChangedItem", js.Any.fromFunction1(value))
+    inline def setForEachChangedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachChangedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachItem", js.Any.fromFunction1(value))
+    inline def setForEachItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachPreviousItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachPreviousItem", js.Any.fromFunction1(value))
+    inline def setForEachPreviousItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachPreviousItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForEachRemovedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachRemovedItem", js.Any.fromFunction1(value))
+    inline def setForEachRemovedItem(value: js.Function1[/* r */ KeyValueChangeRecord[K, V], Unit] => Unit): Self = StObject.set(x, "forEachRemovedItem", js.Any.fromFunction1(value))
   }
 }

@@ -8,6 +8,5 @@ object awsSdkSsecMiddlewareStrings {
   
   @js.native
   sealed trait SsecPropertiesConfiguration extends StObject
-  @scala.inline
-  def SsecPropertiesConfiguration: SsecPropertiesConfiguration = "SsecPropertiesConfiguration".asInstanceOf[SsecPropertiesConfiguration]
+  inline def SsecPropertiesConfiguration: SsecPropertiesConfiguration = "SsecPropertiesConfiguration".asInstanceOf[SsecPropertiesConfiguration]
 }

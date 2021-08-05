@@ -58,73 +58,51 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(): DataSource = {
+  inline def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setDataSourceArn(value: String): Self = StObject.set(x, "dataSourceArn", value.asInstanceOf[js.Any])
+    inline def setDataSourceArn(value: String): Self = StObject.set(x, "dataSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceArnUndefined: Self = StObject.set(x, "dataSourceArn", js.undefined)
+    inline def setDataSourceArnUndefined: Self = StObject.set(x, "dataSourceArn", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDynamodbConfig(value: DynamodbDataSourceConfig): Self = StObject.set(x, "dynamodbConfig", value.asInstanceOf[js.Any])
+    inline def setDynamodbConfig(value: DynamodbDataSourceConfig): Self = StObject.set(x, "dynamodbConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamodbConfigUndefined: Self = StObject.set(x, "dynamodbConfig", js.undefined)
+    inline def setDynamodbConfigUndefined: Self = StObject.set(x, "dynamodbConfig", js.undefined)
     
-    @scala.inline
-    def setElasticsearchConfig(value: ElasticsearchDataSourceConfig): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
+    inline def setElasticsearchConfig(value: ElasticsearchDataSourceConfig): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
+    inline def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
     
-    @scala.inline
-    def setHttpConfig(value: HttpDataSourceConfig): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
+    inline def setHttpConfig(value: HttpDataSourceConfig): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
+    inline def setHttpConfigUndefined: Self = StObject.set(x, "httpConfig", js.undefined)
     
-    @scala.inline
-    def setLambdaConfig(value: LambdaDataSourceConfig): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
+    inline def setLambdaConfig(value: LambdaDataSourceConfig): Self = StObject.set(x, "lambdaConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
+    inline def setLambdaConfigUndefined: Self = StObject.set(x, "lambdaConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseConfig(value: RelationalDatabaseDataSourceConfig): Self = StObject.set(x, "relationalDatabaseConfig", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseConfig(value: RelationalDatabaseDataSourceConfig): Self = StObject.set(x, "relationalDatabaseConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseConfigUndefined: Self = StObject.set(x, "relationalDatabaseConfig", js.undefined)
+    inline def setRelationalDatabaseConfigUndefined: Self = StObject.set(x, "relationalDatabaseConfig", js.undefined)
     
-    @scala.inline
-    def setServiceRoleArn(value: String): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+    inline def setServiceRoleArn(value: String): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
+    inline def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
     
-    @scala.inline
-    def setType(value: DataSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

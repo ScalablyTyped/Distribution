@@ -19,22 +19,17 @@ trait PhotoConfirmationControl extends StObject {
 }
 object PhotoConfirmationControl {
   
-  @scala.inline
-  def apply(enabled: Boolean, pixelFormat: MediaPixelFormat, supported: Boolean): PhotoConfirmationControl = {
+  inline def apply(enabled: Boolean, pixelFormat: MediaPixelFormat, supported: Boolean): PhotoConfirmationControl = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], pixelFormat = pixelFormat.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoConfirmationControl]
   }
   
-  @scala.inline
-  implicit class PhotoConfirmationControlMutableBuilder[Self <: PhotoConfirmationControl] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoConfirmationControl](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelFormat(value: MediaPixelFormat): Self = StObject.set(x, "pixelFormat", value.asInstanceOf[js.Any])
+    inline def setPixelFormat(value: MediaPixelFormat): Self = StObject.set(x, "pixelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

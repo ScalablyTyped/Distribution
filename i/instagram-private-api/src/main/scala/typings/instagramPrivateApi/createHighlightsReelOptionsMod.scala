@@ -19,35 +19,26 @@ object createHighlightsReelOptionsMod {
   }
   object CreateHighlightsReelOptions {
     
-    @scala.inline
-    def apply(mediaIds: js.Array[String], title: String): CreateHighlightsReelOptions = {
+    inline def apply(mediaIds: js.Array[String], title: String): CreateHighlightsReelOptions = {
       val __obj = js.Dynamic.literal(mediaIds = mediaIds.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateHighlightsReelOptions]
     }
     
-    @scala.inline
-    implicit class CreateHighlightsReelOptionsMutableBuilder[Self <: CreateHighlightsReelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateHighlightsReelOptions](x: Self) {
       
-      @scala.inline
-      def setCoverId(value: String): Self = StObject.set(x, "coverId", value.asInstanceOf[js.Any])
+      inline def setCoverId(value: String): Self = StObject.set(x, "coverId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverIdUndefined: Self = StObject.set(x, "coverId", js.undefined)
+      inline def setCoverIdUndefined: Self = StObject.set(x, "coverId", js.undefined)
       
-      @scala.inline
-      def setMediaIds(value: js.Array[String]): Self = StObject.set(x, "mediaIds", value.asInstanceOf[js.Any])
+      inline def setMediaIds(value: js.Array[String]): Self = StObject.set(x, "mediaIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaIdsVarargs(value: String*): Self = StObject.set(x, "mediaIds", js.Array(value :_*))
+      inline def setMediaIdsVarargs(value: String*): Self = StObject.set(x, "mediaIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: IgAppModule): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: IgAppModule): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

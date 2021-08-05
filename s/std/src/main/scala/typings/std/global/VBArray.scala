@@ -15,6 +15,5 @@ class VBArray[T] protected ()
 }
 object VBArray {
   
-  @scala.inline
-  def apply: VBArrayConstructor = js.Dynamic.global.selectDynamic("VBArray").asInstanceOf[VBArrayConstructor]
+  inline def apply: VBArrayConstructor = js.Dynamic.global.selectDynamic("VBArray").asInstanceOf[VBArrayConstructor]
 }

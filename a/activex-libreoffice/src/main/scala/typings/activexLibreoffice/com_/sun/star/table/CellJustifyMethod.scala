@@ -15,10 +15,8 @@ object CellJustifyMethod {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTO: `0` = 0.asInstanceOf[`0`]
+    inline def AUTO: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def DISTRIBUTE: `1` = 1.asInstanceOf[`1`]
+    inline def DISTRIBUTE: `1` = 1.asInstanceOf[`1`]
   }
 }

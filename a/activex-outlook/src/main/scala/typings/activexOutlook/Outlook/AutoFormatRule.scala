@@ -18,7 +18,7 @@ trait AutoFormatRule extends StObject {
   
   var Name: String
   
-  @JSName("Outlook.AutoFormatRule_typekey")
+  /* private */ @JSName("Outlook.AutoFormatRule_typekey")
   var OutlookDotAutoFormatRule_typekey: AutoFormatRule
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait AutoFormatRule extends StObject {
 }
 object AutoFormatRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Enabled: Boolean,
@@ -47,37 +46,26 @@ object AutoFormatRule {
     __obj.asInstanceOf[AutoFormatRule]
   }
   
-  @scala.inline
-  implicit class AutoFormatRuleMutableBuilder[Self <: AutoFormatRule] (val x: Self) extends AnyVal {
+  extension [Self <: AutoFormatRule](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: ViewFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: ViewFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotAutoFormatRule_typekey(value: AutoFormatRule): Self = StObject.set(x, "Outlook.AutoFormatRule_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotAutoFormatRule_typekey(value: AutoFormatRule): Self = StObject.set(x, "Outlook.AutoFormatRule_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: Boolean): Self = StObject.set(x, "Standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: Boolean): Self = StObject.set(x, "Standard", value.asInstanceOf[js.Any])
   }
 }

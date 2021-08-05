@@ -47,8 +47,7 @@ trait GeoJSONLayerCapabilities
 }
 object GeoJSONLayerCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     data: GeoJSONLayerCapabilitiesData,
     editing: GeoJSONLayerCapabilitiesEditing,
@@ -62,22 +61,16 @@ object GeoJSONLayerCapabilities {
     __obj.asInstanceOf[GeoJSONLayerCapabilities]
   }
   
-  @scala.inline
-  implicit class GeoJSONLayerCapabilitiesMutableBuilder[Self <: GeoJSONLayerCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONLayerCapabilities](x: Self) {
     
-    @scala.inline
-    def setData(value: GeoJSONLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: GeoJSONLayerCapabilitiesData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditing(value: GeoJSONLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+    inline def setEditing(value: GeoJSONLayerCapabilitiesEditing): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: GeoJSONLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: GeoJSONLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: GeoJSONLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: GeoJSONLayerCapabilitiesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryRelated(value: GeoJSONLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
+    inline def setQueryRelated(value: GeoJSONLayerCapabilitiesQueryRelated): Self = StObject.set(x, "queryRelated", value.asInstanceOf[js.Any])
   }
 }

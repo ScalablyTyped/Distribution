@@ -13,19 +13,15 @@ trait CopyFpgaImageResult extends StObject {
 }
 object CopyFpgaImageResult {
   
-  @scala.inline
-  def apply(): CopyFpgaImageResult = {
+  inline def apply(): CopyFpgaImageResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyFpgaImageResult]
   }
   
-  @scala.inline
-  implicit class CopyFpgaImageResultMutableBuilder[Self <: CopyFpgaImageResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyFpgaImageResult](x: Self) {
     
-    @scala.inline
-    def setFpgaImageId(value: String): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
+    inline def setFpgaImageId(value: String): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpgaImageIdUndefined: Self = StObject.set(x, "FpgaImageId", js.undefined)
+    inline def setFpgaImageIdUndefined: Self = StObject.set(x, "FpgaImageId", js.undefined)
   }
 }

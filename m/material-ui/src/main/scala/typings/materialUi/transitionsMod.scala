@@ -18,9 +18,7 @@ object transitionsMod {
   @JSImport("material-ui/styles/transitions", "Transitions")
   @js.native
   def Transitions: typings.materialUi.MaterialUI.Styles.Transitions = js.native
-  @scala.inline
-  def Transitions_=(x: Transitions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transitions")(x.asInstanceOf[js.Any])
+  inline def Transitions_=(x: Transitions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transitions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: Transitions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Transitions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

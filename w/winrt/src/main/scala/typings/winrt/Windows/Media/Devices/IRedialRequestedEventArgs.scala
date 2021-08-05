@@ -10,16 +10,13 @@ trait IRedialRequestedEventArgs extends StObject {
 }
 object IRedialRequestedEventArgs {
   
-  @scala.inline
-  def apply(handled: () => Unit): IRedialRequestedEventArgs = {
+  inline def apply(handled: () => Unit): IRedialRequestedEventArgs = {
     val __obj = js.Dynamic.literal(handled = js.Any.fromFunction0(handled))
     __obj.asInstanceOf[IRedialRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class IRedialRequestedEventArgsMutableBuilder[Self <: IRedialRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IRedialRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
+    inline def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
   }
 }

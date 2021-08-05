@@ -12,19 +12,15 @@ trait Assign extends StObject {
 }
 object Assign {
   
-  @scala.inline
-  def apply(assign: String, method: (js.Any, js.Any) => js.Promise[Data]): Assign = {
+  inline def apply(assign: String, method: (js.Any, js.Any) => js.Promise[Data]): Assign = {
     val __obj = js.Dynamic.literal(assign = assign.asInstanceOf[js.Any], method = js.Any.fromFunction2(method))
     __obj.asInstanceOf[Assign]
   }
   
-  @scala.inline
-  implicit class AssignMutableBuilder[Self <: Assign] (val x: Self) extends AnyVal {
+  extension [Self <: Assign](x: Self) {
     
-    @scala.inline
-    def setAssign(value: String): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
+    inline def setAssign(value: String): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: (js.Any, js.Any) => js.Promise[Data]): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
+    inline def setMethod(value: (js.Any, js.Any) => js.Promise[Data]): Self = StObject.set(x, "method", js.Any.fromFunction2(value))
   }
 }

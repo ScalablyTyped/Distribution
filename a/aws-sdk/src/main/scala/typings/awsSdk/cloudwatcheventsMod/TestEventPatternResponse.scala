@@ -13,19 +13,15 @@ trait TestEventPatternResponse extends StObject {
 }
 object TestEventPatternResponse {
   
-  @scala.inline
-  def apply(): TestEventPatternResponse = {
+  inline def apply(): TestEventPatternResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestEventPatternResponse]
   }
   
-  @scala.inline
-  implicit class TestEventPatternResponseMutableBuilder[Self <: TestEventPatternResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestEventPatternResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
   }
 }

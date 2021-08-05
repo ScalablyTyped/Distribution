@@ -18,43 +18,31 @@ trait HistoryLocation extends StObject {
 }
 object HistoryLocation {
   
-  @scala.inline
-  def apply(): HistoryLocation = {
+  inline def apply(): HistoryLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryLocation]
   }
   
-  @scala.inline
-  implicit class HistoryLocationMutableBuilder[Self <: HistoryLocation] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryLocation](x: Self) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+    inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+    inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setState(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

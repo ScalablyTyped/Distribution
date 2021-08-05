@@ -35,8 +35,7 @@ object AggregatorRegistry {
   	 *   `registry.getMetricsAsJSON()`.
   	 * @return {Registry} aggregated registry.
   	 */
-  @scala.inline
-  def aggregate(metricsArr: js.Array[js.Object]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregate")(metricsArr.asInstanceOf[js.Any]).asInstanceOf[Registry]
+  inline def aggregate(metricsArr: js.Array[js.Object]): Registry = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregate")(metricsArr.asInstanceOf[js.Any]).asInstanceOf[Registry]
   
   /**
   	 * Sets the registry or registries to be aggregated. Call from workers to
@@ -45,8 +44,6 @@ object AggregatorRegistry {
   	 *   aggregated.
   	 * @return {void}
   	 */
-  @scala.inline
-  def setRegistries(regs: js.Array[Registry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setRegistries(regs: Registry): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRegistries(regs: js.Array[Registry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRegistries(regs: Registry): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRegistries")(regs.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

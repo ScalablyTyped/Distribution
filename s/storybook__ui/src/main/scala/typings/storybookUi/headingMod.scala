@@ -35,23 +35,18 @@ object headingMod {
   }
   object HeadingProps {
     
-    @scala.inline
-    def apply(menu: MenuList): HeadingProps = {
+    inline def apply(menu: MenuList): HeadingProps = {
       val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeadingProps]
     }
     
-    @scala.inline
-    implicit class HeadingPropsMutableBuilder[Self <: HeadingProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeadingProps](x: Self) {
       
-      @scala.inline
-      def setMenu(value: MenuList): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: MenuList): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuHighlighted(value: Boolean): Self = StObject.set(x, "menuHighlighted", value.asInstanceOf[js.Any])
+      inline def setMenuHighlighted(value: Boolean): Self = StObject.set(x, "menuHighlighted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuHighlightedUndefined: Self = StObject.set(x, "menuHighlighted", js.undefined)
+      inline def setMenuHighlightedUndefined: Self = StObject.set(x, "menuHighlighted", js.undefined)
     }
   }
 }

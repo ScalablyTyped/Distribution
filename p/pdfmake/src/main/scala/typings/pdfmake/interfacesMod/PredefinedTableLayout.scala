@@ -14,12 +14,9 @@ trait PredefinedTableLayout
      with _TableLayout
 object PredefinedTableLayout {
   
-  @scala.inline
-  def headerLineOnly: typings.pdfmake.pdfmakeStrings.headerLineOnly = "headerLineOnly".asInstanceOf[typings.pdfmake.pdfmakeStrings.headerLineOnly]
+  inline def headerLineOnly: typings.pdfmake.pdfmakeStrings.headerLineOnly = "headerLineOnly".asInstanceOf[typings.pdfmake.pdfmakeStrings.headerLineOnly]
   
-  @scala.inline
-  def lightHorizontalLines: typings.pdfmake.pdfmakeStrings.lightHorizontalLines = "lightHorizontalLines".asInstanceOf[typings.pdfmake.pdfmakeStrings.lightHorizontalLines]
+  inline def lightHorizontalLines: typings.pdfmake.pdfmakeStrings.lightHorizontalLines = "lightHorizontalLines".asInstanceOf[typings.pdfmake.pdfmakeStrings.lightHorizontalLines]
   
-  @scala.inline
-  def noBorders: typings.pdfmake.pdfmakeStrings.noBorders = "noBorders".asInstanceOf[typings.pdfmake.pdfmakeStrings.noBorders]
+  inline def noBorders: typings.pdfmake.pdfmakeStrings.noBorders = "noBorders".asInstanceOf[typings.pdfmake.pdfmakeStrings.noBorders]
 }

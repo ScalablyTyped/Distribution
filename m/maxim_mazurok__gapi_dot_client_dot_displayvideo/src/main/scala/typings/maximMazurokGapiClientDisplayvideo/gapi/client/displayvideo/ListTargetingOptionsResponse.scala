@@ -14,28 +14,21 @@ trait ListTargetingOptionsResponse extends StObject {
 }
 object ListTargetingOptionsResponse {
   
-  @scala.inline
-  def apply(): ListTargetingOptionsResponse = {
+  inline def apply(): ListTargetingOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTargetingOptionsResponse]
   }
   
-  @scala.inline
-  implicit class ListTargetingOptionsResponseMutableBuilder[Self <: ListTargetingOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTargetingOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTargetingOptions(value: js.Array[TargetingOption]): Self = StObject.set(x, "targetingOptions", value.asInstanceOf[js.Any])
+    inline def setTargetingOptions(value: js.Array[TargetingOption]): Self = StObject.set(x, "targetingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionsUndefined: Self = StObject.set(x, "targetingOptions", js.undefined)
+    inline def setTargetingOptionsUndefined: Self = StObject.set(x, "targetingOptions", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionsVarargs(value: TargetingOption*): Self = StObject.set(x, "targetingOptions", js.Array(value :_*))
+    inline def setTargetingOptionsVarargs(value: TargetingOption*): Self = StObject.set(x, "targetingOptions", js.Array(value :_*))
   }
 }

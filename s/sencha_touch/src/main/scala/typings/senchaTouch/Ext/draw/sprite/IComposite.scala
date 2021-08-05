@@ -30,27 +30,21 @@ trait IComposite
 }
 object IComposite {
   
-  @scala.inline
-  def apply(): IComposite = {
+  inline def apply(): IComposite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IComposite]
   }
   
-  @scala.inline
-  implicit class ICompositeMutableBuilder[Self <: IComposite] (val x: Self) extends AnyVal {
+  extension [Self <: IComposite](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* sprite */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* sprite */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setRender(
+    inline def setRender(
       value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

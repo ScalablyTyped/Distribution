@@ -38,49 +38,35 @@ trait DescribeAuditTaskResponse extends StObject {
 }
 object DescribeAuditTaskResponse {
   
-  @scala.inline
-  def apply(): DescribeAuditTaskResponse = {
+  inline def apply(): DescribeAuditTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAuditTaskResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAuditTaskResponseMutableBuilder[Self <: DescribeAuditTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAuditTaskResponse](x: Self) {
     
-    @scala.inline
-    def setAuditDetails(value: AuditDetails): Self = StObject.set(x, "auditDetails", value.asInstanceOf[js.Any])
+    inline def setAuditDetails(value: AuditDetails): Self = StObject.set(x, "auditDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditDetailsUndefined: Self = StObject.set(x, "auditDetails", js.undefined)
+    inline def setAuditDetailsUndefined: Self = StObject.set(x, "auditDetails", js.undefined)
     
-    @scala.inline
-    def setScheduledAuditName(value: ScheduledAuditName): Self = StObject.set(x, "scheduledAuditName", value.asInstanceOf[js.Any])
+    inline def setScheduledAuditName(value: ScheduledAuditName): Self = StObject.set(x, "scheduledAuditName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledAuditNameUndefined: Self = StObject.set(x, "scheduledAuditName", js.undefined)
+    inline def setScheduledAuditNameUndefined: Self = StObject.set(x, "scheduledAuditName", js.undefined)
     
-    @scala.inline
-    def setTaskStartTime(value: Timestamp): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
+    inline def setTaskStartTime(value: Timestamp): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStartTimeUndefined: Self = StObject.set(x, "taskStartTime", js.undefined)
+    inline def setTaskStartTimeUndefined: Self = StObject.set(x, "taskStartTime", js.undefined)
     
-    @scala.inline
-    def setTaskStatistics(value: TaskStatistics): Self = StObject.set(x, "taskStatistics", value.asInstanceOf[js.Any])
+    inline def setTaskStatistics(value: TaskStatistics): Self = StObject.set(x, "taskStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatisticsUndefined: Self = StObject.set(x, "taskStatistics", js.undefined)
+    inline def setTaskStatisticsUndefined: Self = StObject.set(x, "taskStatistics", js.undefined)
     
-    @scala.inline
-    def setTaskStatus(value: AuditTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
+    inline def setTaskStatus(value: AuditTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
+    inline def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
     
-    @scala.inline
-    def setTaskType(value: AuditTaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+    inline def setTaskType(value: AuditTaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
+    inline def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
   }
 }

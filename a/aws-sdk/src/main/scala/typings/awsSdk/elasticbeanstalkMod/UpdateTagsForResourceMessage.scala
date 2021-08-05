@@ -23,34 +23,25 @@ trait UpdateTagsForResourceMessage extends StObject {
 }
 object UpdateTagsForResourceMessage {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArn): UpdateTagsForResourceMessage = {
+  inline def apply(ResourceArn: ResourceArn): UpdateTagsForResourceMessage = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTagsForResourceMessage]
   }
   
-  @scala.inline
-  implicit class UpdateTagsForResourceMessageMutableBuilder[Self <: UpdateTagsForResourceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTagsForResourceMessage](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToAdd(value: TagList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
+    inline def setTagsToAdd(value: TagList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
+    inline def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
-    @scala.inline
-    def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
+    inline def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
     
-    @scala.inline
-    def setTagsToRemove(value: TagKeyList): Self = StObject.set(x, "TagsToRemove", value.asInstanceOf[js.Any])
+    inline def setTagsToRemove(value: TagKeyList): Self = StObject.set(x, "TagsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsToRemoveUndefined: Self = StObject.set(x, "TagsToRemove", js.undefined)
+    inline def setTagsToRemoveUndefined: Self = StObject.set(x, "TagsToRemove", js.undefined)
     
-    @scala.inline
-    def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value :_*))
+    inline def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value :_*))
   }
 }

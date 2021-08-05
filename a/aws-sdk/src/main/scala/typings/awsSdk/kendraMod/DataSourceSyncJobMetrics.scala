@@ -33,43 +33,31 @@ trait DataSourceSyncJobMetrics extends StObject {
 }
 object DataSourceSyncJobMetrics {
   
-  @scala.inline
-  def apply(): DataSourceSyncJobMetrics = {
+  inline def apply(): DataSourceSyncJobMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSyncJobMetrics]
   }
   
-  @scala.inline
-  implicit class DataSourceSyncJobMetricsMutableBuilder[Self <: DataSourceSyncJobMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSyncJobMetrics](x: Self) {
     
-    @scala.inline
-    def setDocumentsAdded(value: MetricValue): Self = StObject.set(x, "DocumentsAdded", value.asInstanceOf[js.Any])
+    inline def setDocumentsAdded(value: MetricValue): Self = StObject.set(x, "DocumentsAdded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsAddedUndefined: Self = StObject.set(x, "DocumentsAdded", js.undefined)
+    inline def setDocumentsAddedUndefined: Self = StObject.set(x, "DocumentsAdded", js.undefined)
     
-    @scala.inline
-    def setDocumentsDeleted(value: MetricValue): Self = StObject.set(x, "DocumentsDeleted", value.asInstanceOf[js.Any])
+    inline def setDocumentsDeleted(value: MetricValue): Self = StObject.set(x, "DocumentsDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsDeletedUndefined: Self = StObject.set(x, "DocumentsDeleted", js.undefined)
+    inline def setDocumentsDeletedUndefined: Self = StObject.set(x, "DocumentsDeleted", js.undefined)
     
-    @scala.inline
-    def setDocumentsFailed(value: MetricValue): Self = StObject.set(x, "DocumentsFailed", value.asInstanceOf[js.Any])
+    inline def setDocumentsFailed(value: MetricValue): Self = StObject.set(x, "DocumentsFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsFailedUndefined: Self = StObject.set(x, "DocumentsFailed", js.undefined)
+    inline def setDocumentsFailedUndefined: Self = StObject.set(x, "DocumentsFailed", js.undefined)
     
-    @scala.inline
-    def setDocumentsModified(value: MetricValue): Self = StObject.set(x, "DocumentsModified", value.asInstanceOf[js.Any])
+    inline def setDocumentsModified(value: MetricValue): Self = StObject.set(x, "DocumentsModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsModifiedUndefined: Self = StObject.set(x, "DocumentsModified", js.undefined)
+    inline def setDocumentsModifiedUndefined: Self = StObject.set(x, "DocumentsModified", js.undefined)
     
-    @scala.inline
-    def setDocumentsScanned(value: MetricValue): Self = StObject.set(x, "DocumentsScanned", value.asInstanceOf[js.Any])
+    inline def setDocumentsScanned(value: MetricValue): Self = StObject.set(x, "DocumentsScanned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsScannedUndefined: Self = StObject.set(x, "DocumentsScanned", js.undefined)
+    inline def setDocumentsScannedUndefined: Self = StObject.set(x, "DocumentsScanned", js.undefined)
   }
 }

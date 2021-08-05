@@ -12,25 +12,19 @@ trait GraphData extends StObject {
 }
 object GraphData {
   
-  @scala.inline
-  def apply(edges: js.Array[Edge], nodes: js.Array[Node]): GraphData = {
+  inline def apply(edges: js.Array[Edge], nodes: js.Array[Node]): GraphData = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphData]
   }
   
-  @scala.inline
-  implicit class GraphDataMutableBuilder[Self <: GraphData] (val x: Self) extends AnyVal {
+  extension [Self <: GraphData](x: Self) {
     
-    @scala.inline
-    def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

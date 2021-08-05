@@ -25,8 +25,7 @@ trait StructureInvaderCore
 }
 object StructureInvaderCore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     hits: Double,
@@ -45,13 +44,10 @@ object StructureInvaderCore {
     __obj.asInstanceOf[StructureInvaderCore]
   }
   
-  @scala.inline
-  implicit class StructureInvaderCoreMutableBuilder[Self <: StructureInvaderCore] (val x: Self) extends AnyVal {
+  extension [Self <: StructureInvaderCore](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToDeploy(value: Double): Self = StObject.set(x, "ticksToDeploy", value.asInstanceOf[js.Any])
+    inline def setTicksToDeploy(value: Double): Self = StObject.set(x, "ticksToDeploy", value.asInstanceOf[js.Any])
   }
 }

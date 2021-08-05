@@ -39,28 +39,21 @@ trait ChatRoomInvitation
 }
 object ChatRoomInvitation {
   
-  @scala.inline
-  def apply(body: String, from: String, password: String, reason: String, room: String): ChatRoomInvitation = {
+  inline def apply(body: String, from: String, password: String, reason: String, room: String): ChatRoomInvitation = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomInvitation]
   }
   
-  @scala.inline
-  implicit class ChatRoomInvitationMutableBuilder[Self <: ChatRoomInvitation] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomInvitation](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

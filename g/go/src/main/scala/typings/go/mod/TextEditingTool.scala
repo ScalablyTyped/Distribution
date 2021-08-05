@@ -58,24 +58,21 @@ object TextEditingTool {
   @JSImport("go", "TextEditingTool.Enter")
   @js.native
   def Enter: EnumValue = js.native
-  @scala.inline
-  def Enter_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enter")(x.asInstanceOf[js.Any])
+  inline def Enter_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Enter")(x.asInstanceOf[js.Any])
   
   /**The text editing control has lost focus.*/
   /* static member */
   @JSImport("go", "TextEditingTool.LostFocus")
   @js.native
   def LostFocus: EnumValue = js.native
-  @scala.inline
-  def LostFocus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LostFocus")(x.asInstanceOf[js.Any])
+  inline def LostFocus_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LostFocus")(x.asInstanceOf[js.Any])
   
   /**The user has clicked somewhere else in the diagram.*/
   /* static member */
   @JSImport("go", "TextEditingTool.MouseDown")
   @js.native
   def MouseDown: EnumValue = js.native
-  @scala.inline
-  def MouseDown_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MouseDown")(x.asInstanceOf[js.Any])
+  inline def MouseDown_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MouseDown")(x.asInstanceOf[js.Any])
   
   /**A single click on a TextBlock with TextBlock.editable property set to true will start in-place editing.*/
   /* static member */
@@ -88,17 +85,14 @@ object TextEditingTool {
   @JSImport("go", "TextEditingTool.SingleClickSelected")
   @js.native
   def SingleClickSelected: EnumValue = js.native
-  @scala.inline
-  def SingleClickSelected_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleClickSelected")(x.asInstanceOf[js.Any])
+  inline def SingleClickSelected_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleClickSelected")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def SingleClick_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleClick")(x.asInstanceOf[js.Any])
+  inline def SingleClick_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleClick")(x.asInstanceOf[js.Any])
   
   /**The user has typed TAB.*/
   /* static member */
   @JSImport("go", "TextEditingTool.Tab")
   @js.native
   def Tab: EnumValue = js.native
-  @scala.inline
-  def Tab_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
+  inline def Tab_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
 }

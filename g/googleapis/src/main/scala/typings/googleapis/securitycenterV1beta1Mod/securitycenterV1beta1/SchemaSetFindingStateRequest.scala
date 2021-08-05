@@ -21,25 +21,19 @@ trait SchemaSetFindingStateRequest extends StObject {
 }
 object SchemaSetFindingStateRequest {
   
-  @scala.inline
-  def apply(): SchemaSetFindingStateRequest = {
+  inline def apply(): SchemaSetFindingStateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSetFindingStateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSetFindingStateRequestMutableBuilder[Self <: SchemaSetFindingStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSetFindingStateRequest](x: Self) {
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

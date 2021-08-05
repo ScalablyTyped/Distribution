@@ -23,31 +23,23 @@ trait CustomerManagedDatastoreS3StorageSummary extends StObject {
 }
 object CustomerManagedDatastoreS3StorageSummary {
   
-  @scala.inline
-  def apply(): CustomerManagedDatastoreS3StorageSummary = {
+  inline def apply(): CustomerManagedDatastoreS3StorageSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerManagedDatastoreS3StorageSummary]
   }
   
-  @scala.inline
-  implicit class CustomerManagedDatastoreS3StorageSummaryMutableBuilder[Self <: CustomerManagedDatastoreS3StorageSummary] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerManagedDatastoreS3StorageSummary](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setKeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
+    inline def setKeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
+    inline def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

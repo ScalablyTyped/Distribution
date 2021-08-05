@@ -18,28 +18,21 @@ trait AwsEc2NetworkInterfaceViolation extends StObject {
 }
 object AwsEc2NetworkInterfaceViolation {
   
-  @scala.inline
-  def apply(): AwsEc2NetworkInterfaceViolation = {
+  inline def apply(): AwsEc2NetworkInterfaceViolation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2NetworkInterfaceViolation]
   }
   
-  @scala.inline
-  implicit class AwsEc2NetworkInterfaceViolationMutableBuilder[Self <: AwsEc2NetworkInterfaceViolation] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2NetworkInterfaceViolation](x: Self) {
     
-    @scala.inline
-    def setViolatingSecurityGroups(value: ResourceIdList): Self = StObject.set(x, "ViolatingSecurityGroups", value.asInstanceOf[js.Any])
+    inline def setViolatingSecurityGroups(value: ResourceIdList): Self = StObject.set(x, "ViolatingSecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolatingSecurityGroupsUndefined: Self = StObject.set(x, "ViolatingSecurityGroups", js.undefined)
+    inline def setViolatingSecurityGroupsUndefined: Self = StObject.set(x, "ViolatingSecurityGroups", js.undefined)
     
-    @scala.inline
-    def setViolatingSecurityGroupsVarargs(value: ResourceId*): Self = StObject.set(x, "ViolatingSecurityGroups", js.Array(value :_*))
+    inline def setViolatingSecurityGroupsVarargs(value: ResourceId*): Self = StObject.set(x, "ViolatingSecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
+    inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
+    inline def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

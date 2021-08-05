@@ -16,8 +16,7 @@ trait `20` extends StObject {
 }
 object `20` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     scopeDescriptor: typings.atom.mod.ScopeDescriptor,
     value: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
   ): `20` = {
@@ -25,14 +24,11 @@ object `20` {
     __obj.asInstanceOf[`20`]
   }
   
-  @scala.inline
-  implicit class `20MutableBuilder`[Self <: `20`] (val x: Self) extends AnyVal {
+  extension [Self <: `20`](x: Self) {
     
-    @scala.inline
-    def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
+    inline def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

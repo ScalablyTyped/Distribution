@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPivotFieldDataType extends StObject
 object XlPivotFieldDataType {
   
-  @scala.inline
-  def xlDate: `2` = 2.asInstanceOf[`2`]
+  inline def xlDate: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlNumber: `-4145` = -4145.asInstanceOf[`-4145`]
+  inline def xlNumber: `-4145` = -4145.asInstanceOf[`-4145`]
   
-  @scala.inline
-  def xlText: `-4158` = -4158.asInstanceOf[`-4158`]
+  inline def xlText: `-4158` = -4158.asInstanceOf[`-4158`]
 }

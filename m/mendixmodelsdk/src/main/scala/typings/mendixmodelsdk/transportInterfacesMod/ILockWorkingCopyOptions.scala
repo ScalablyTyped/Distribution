@@ -28,34 +28,25 @@ trait ILockWorkingCopyOptions extends StObject {
 }
 object ILockWorkingCopyOptions {
   
-  @scala.inline
-  def apply(lockType: LockType): ILockWorkingCopyOptions = {
+  inline def apply(lockType: LockType): ILockWorkingCopyOptions = {
     val __obj = js.Dynamic.literal(lockType = lockType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockWorkingCopyOptions]
   }
   
-  @scala.inline
-  implicit class ILockWorkingCopyOptionsMutableBuilder[Self <: ILockWorkingCopyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILockWorkingCopyOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
+    inline def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
+    inline def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
     
-    @scala.inline
-    def setLockType(value: LockType): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
+    inline def setLockType(value: LockType): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
   }
 }

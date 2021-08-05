@@ -11,6 +11,5 @@ object asyncUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def allPromiseFinish(promiseList: js.Array[js.Promise[FieldError]]): js.Promise[js.Array[FieldError]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allPromiseFinish")(promiseList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FieldError]]]
+  inline def allPromiseFinish(promiseList: js.Array[js.Promise[FieldError]]): js.Promise[js.Array[FieldError]] = ^.asInstanceOf[js.Dynamic].applyDynamic("allPromiseFinish")(promiseList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FieldError]]]
 }

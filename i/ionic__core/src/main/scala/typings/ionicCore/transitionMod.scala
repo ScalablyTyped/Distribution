@@ -14,24 +14,17 @@ object transitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deepReady(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReady")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def deepReady(el: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReady")(el.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def deepReady(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReady")().asInstanceOf[js.Promise[Unit]]
+  inline def deepReady(el: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReady")(el.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def getIonPageElement(element: HTMLElement): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonPageElement")(element.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def getIonPageElement(element: HTMLElement): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonPageElement")(element.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def lifecycle(el: Unit, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def lifecycle(el: HTMLElement, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lifecycle(el: Unit, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lifecycle(el: HTMLElement, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setPageHidden(el: HTMLElement, hidden: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPageHidden")(el.asInstanceOf[js.Any], hidden.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setPageHidden(el: HTMLElement, hidden: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPageHidden")(el.asInstanceOf[js.Any], hidden.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def transition(opts: TransitionOptions): js.Promise[TransitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransitionResult]]
+  inline def transition(opts: TransitionOptions): js.Promise[TransitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransitionResult]]
   
   trait TransitionOptions
     extends StObject
@@ -47,32 +40,24 @@ object transitionMod {
   }
   object TransitionOptions {
     
-    @scala.inline
-    def apply(baseEl: js.Any, enteringEl: HTMLElement): TransitionOptions = {
+    inline def apply(baseEl: js.Any, enteringEl: HTMLElement): TransitionOptions = {
       val __obj = js.Dynamic.literal(baseEl = baseEl.asInstanceOf[js.Any], enteringEl = enteringEl.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionOptions]
     }
     
-    @scala.inline
-    implicit class TransitionOptionsMutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionOptions](x: Self) {
       
-      @scala.inline
-      def setBaseEl(value: js.Any): Self = StObject.set(x, "baseEl", value.asInstanceOf[js.Any])
+      inline def setBaseEl(value: js.Any): Self = StObject.set(x, "baseEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringEl(value: HTMLElement): Self = StObject.set(x, "enteringEl", value.asInstanceOf[js.Any])
+      inline def setEnteringEl(value: HTMLElement): Self = StObject.set(x, "enteringEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavingEl(value: HTMLElement): Self = StObject.set(x, "leavingEl", value.asInstanceOf[js.Any])
+      inline def setLeavingEl(value: HTMLElement): Self = StObject.set(x, "leavingEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavingElUndefined: Self = StObject.set(x, "leavingEl", js.undefined)
+      inline def setLeavingElUndefined: Self = StObject.set(x, "leavingEl", js.undefined)
       
-      @scala.inline
-      def setProgressCallback(value: /* ani */ js.UndefOr[Animation] => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction1(value))
+      inline def setProgressCallback(value: /* ani */ js.UndefOr[Animation] => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
+      inline def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
     }
   }
   
@@ -84,23 +69,18 @@ object transitionMod {
   }
   object TransitionResult {
     
-    @scala.inline
-    def apply(hasCompleted: Boolean): TransitionResult = {
+    inline def apply(hasCompleted: Boolean): TransitionResult = {
       val __obj = js.Dynamic.literal(hasCompleted = hasCompleted.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionResult]
     }
     
-    @scala.inline
-    implicit class TransitionResultMutableBuilder[Self <: TransitionResult] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionResult](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setHasCompleted(value: Boolean): Self = StObject.set(x, "hasCompleted", value.asInstanceOf[js.Any])
+      inline def setHasCompleted(value: Boolean): Self = StObject.set(x, "hasCompleted", value.asInstanceOf[js.Any])
     }
   }
 }

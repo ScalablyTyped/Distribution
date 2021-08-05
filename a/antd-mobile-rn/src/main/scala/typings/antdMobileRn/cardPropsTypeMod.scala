@@ -15,26 +15,20 @@ object cardPropsTypeMod {
   }
   object CardFooterPropsType {
     
-    @scala.inline
-    def apply(): CardFooterPropsType = {
+    inline def apply(): CardFooterPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardFooterPropsType]
     }
     
-    @scala.inline
-    implicit class CardFooterPropsTypeMutableBuilder[Self <: CardFooterPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CardFooterPropsType](x: Self) {
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     }
   }
   
@@ -49,32 +43,24 @@ object cardPropsTypeMod {
   }
   object CardHeaderPropsType {
     
-    @scala.inline
-    def apply(): CardHeaderPropsType = {
+    inline def apply(): CardHeaderPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardHeaderPropsType]
     }
     
-    @scala.inline
-    implicit class CardHeaderPropsTypeMutableBuilder[Self <: CardHeaderPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CardHeaderPropsType](x: Self) {
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setThumb(value: ReactNode): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+      inline def setThumb(value: ReactNode): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+      inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -84,20 +70,16 @@ object cardPropsTypeMod {
   }
   object CardPropsType {
     
-    @scala.inline
-    def apply(): CardPropsType = {
+    inline def apply(): CardPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardPropsType]
     }
     
-    @scala.inline
-    implicit class CardPropsTypeMutableBuilder[Self <: CardPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: CardPropsType](x: Self) {
       
-      @scala.inline
-      def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+      inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     }
   }
 }

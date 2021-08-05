@@ -31,8 +31,7 @@ trait JumpListItem extends StObject {
 }
 object JumpListItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: String,
     description: String,
     displayName: String,
@@ -45,28 +44,20 @@ object JumpListItem {
     __obj.asInstanceOf[JumpListItem]
   }
   
-  @scala.inline
-  implicit class JumpListItemMutableBuilder[Self <: JumpListItem] (val x: Self) extends AnyVal {
+  extension [Self <: JumpListItem](x: Self) {
     
-    @scala.inline
-    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: JumpListItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: JumpListItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo(value: Uri): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: Uri): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedByUser(value: Boolean): Self = StObject.set(x, "removedByUser", value.asInstanceOf[js.Any])
+    inline def setRemovedByUser(value: Boolean): Self = StObject.set(x, "removedByUser", value.asInstanceOf[js.Any])
   }
 }

@@ -16,15 +16,11 @@ trait SingleAnimationFillMode
      with _SingleAnimation
 object SingleAnimationFillMode {
   
-  @scala.inline
-  def backwards: typings.preact.preactStrings.backwards = "backwards".asInstanceOf[typings.preact.preactStrings.backwards]
+  inline def backwards: typings.preact.preactStrings.backwards = "backwards".asInstanceOf[typings.preact.preactStrings.backwards]
   
-  @scala.inline
-  def both: typings.preact.preactStrings.both = "both".asInstanceOf[typings.preact.preactStrings.both]
+  inline def both: typings.preact.preactStrings.both = "both".asInstanceOf[typings.preact.preactStrings.both]
   
-  @scala.inline
-  def forwards: typings.preact.preactStrings.forwards = "forwards".asInstanceOf[typings.preact.preactStrings.forwards]
+  inline def forwards: typings.preact.preactStrings.forwards = "forwards".asInstanceOf[typings.preact.preactStrings.forwards]
   
-  @scala.inline
-  def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
+  inline def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
 }

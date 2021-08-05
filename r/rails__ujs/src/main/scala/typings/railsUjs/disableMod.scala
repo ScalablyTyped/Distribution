@@ -12,16 +12,11 @@ object disableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def disableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def disableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def enableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def enableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def handleDisabledElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleDisabledElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleDisabledElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleDisabledElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

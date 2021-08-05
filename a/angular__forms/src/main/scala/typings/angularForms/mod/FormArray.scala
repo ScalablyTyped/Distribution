@@ -68,7 +68,7 @@ class FormArray protected () extends AbstractControl {
     asyncValidator: AsyncValidatorFn
   ) = this()
   
-  var _registerControl: js.Any = js.native
+  /* private */ var _registerControl: js.Any = js.native
   
   /**
     * Get the `AbstractControl` at the given `index` in the array.

@@ -26,23 +26,18 @@ object CacheStorage {
   }
   object Cache {
     
-    @scala.inline
-    def apply(cacheId: CacheId, cacheName: String, securityOrigin: String): Cache = {
+    inline def apply(cacheId: CacheId, cacheName: String, securityOrigin: String): Cache = {
       val __obj = js.Dynamic.literal(cacheId = cacheId.asInstanceOf[js.Any], cacheName = cacheName.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cache]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+    extension [Self <: Cache](x: Self) {
       
-      @scala.inline
-      def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+      inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+      inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +52,14 @@ object CacheStorage {
   }
   object CachedResponse {
     
-    @scala.inline
-    def apply(body: String): CachedResponse = {
+    inline def apply(body: String): CachedResponse = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[CachedResponse]
     }
     
-    @scala.inline
-    implicit class CachedResponseMutableBuilder[Self <: CachedResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CachedResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,23 +74,17 @@ object CacheStorage {
   trait CachedResponseType extends StObject
   object CachedResponseType {
     
-    @scala.inline
-    def default: default_ = "default".asInstanceOf[default_]
+    inline def default: default_ = "default".asInstanceOf[default_]
     
-    @scala.inline
-    def basic: typings.devtoolsProtocol.devtoolsProtocolStrings.basic = "basic".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.basic]
+    inline def basic: typings.devtoolsProtocol.devtoolsProtocolStrings.basic = "basic".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.basic]
     
-    @scala.inline
-    def cors: typings.devtoolsProtocol.devtoolsProtocolStrings.cors = "cors".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cors]
+    inline def cors: typings.devtoolsProtocol.devtoolsProtocolStrings.cors = "cors".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.cors]
     
-    @scala.inline
-    def error: typings.devtoolsProtocol.devtoolsProtocolStrings.error = "error".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.error]
+    inline def error: typings.devtoolsProtocol.devtoolsProtocolStrings.error = "error".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.error]
     
-    @scala.inline
-    def opaqueRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueRedirect = "opaqueRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueRedirect]
+    inline def opaqueRedirect: typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueRedirect = "opaqueRedirect".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueRedirect]
     
-    @scala.inline
-    def opaqueResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueResponse = "opaqueResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueResponse]
+    inline def opaqueResponse: typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueResponse = "opaqueResponse".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.opaqueResponse]
   }
   
   trait DataEntry extends StObject {
@@ -145,8 +131,7 @@ object CacheStorage {
   }
   object DataEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       requestHeaders: js.Array[Header],
       requestMethod: String,
       requestURL: String,
@@ -160,38 +145,27 @@ object CacheStorage {
       __obj.asInstanceOf[DataEntry]
     }
     
-    @scala.inline
-    implicit class DataEntryMutableBuilder[Self <: DataEntry] (val x: Self) extends AnyVal {
+    extension [Self <: DataEntry](x: Self) {
       
-      @scala.inline
-      def setRequestHeaders(value: js.Array[Header]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      inline def setRequestHeaders(value: js.Array[Header]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+      inline def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
+      inline def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
+      inline def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeaders(value: js.Array[Header]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+      inline def setResponseHeaders(value: js.Array[Header]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseHeadersVarargs(value: Header*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+      inline def setResponseHeadersVarargs(value: Header*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseStatus(value: integer): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
+      inline def setResponseStatus(value: integer): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseStatusText(value: String): Self = StObject.set(x, "responseStatusText", value.asInstanceOf[js.Any])
+      inline def setResponseStatusText(value: String): Self = StObject.set(x, "responseStatusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
+      inline def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseType(value: CachedResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: CachedResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,17 +178,14 @@ object CacheStorage {
   }
   object DeleteCacheRequest {
     
-    @scala.inline
-    def apply(cacheId: CacheId): DeleteCacheRequest = {
+    inline def apply(cacheId: CacheId): DeleteCacheRequest = {
       val __obj = js.Dynamic.literal(cacheId = cacheId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteCacheRequest]
     }
     
-    @scala.inline
-    implicit class DeleteCacheRequestMutableBuilder[Self <: DeleteCacheRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteCacheRequest](x: Self) {
       
-      @scala.inline
-      def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+      inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,20 +203,16 @@ object CacheStorage {
   }
   object DeleteEntryRequest {
     
-    @scala.inline
-    def apply(cacheId: CacheId, request: String): DeleteEntryRequest = {
+    inline def apply(cacheId: CacheId, request: String): DeleteEntryRequest = {
       val __obj = js.Dynamic.literal(cacheId = cacheId.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteEntryRequest]
     }
     
-    @scala.inline
-    implicit class DeleteEntryRequestMutableBuilder[Self <: DeleteEntryRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteEntryRequest](x: Self) {
       
-      @scala.inline
-      def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+      inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,20 +224,16 @@ object CacheStorage {
   }
   object Header {
     
-    @scala.inline
-    def apply(name: String, value: String): Header = {
+    inline def apply(name: String, value: String): Header = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,17 +246,14 @@ object CacheStorage {
   }
   object RequestCacheNamesRequest {
     
-    @scala.inline
-    def apply(securityOrigin: String): RequestCacheNamesRequest = {
+    inline def apply(securityOrigin: String): RequestCacheNamesRequest = {
       val __obj = js.Dynamic.literal(securityOrigin = securityOrigin.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestCacheNamesRequest]
     }
     
-    @scala.inline
-    implicit class RequestCacheNamesRequestMutableBuilder[Self <: RequestCacheNamesRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RequestCacheNamesRequest](x: Self) {
       
-      @scala.inline
-      def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+      inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -306,20 +266,16 @@ object CacheStorage {
   }
   object RequestCacheNamesResponse {
     
-    @scala.inline
-    def apply(caches: js.Array[Cache]): RequestCacheNamesResponse = {
+    inline def apply(caches: js.Array[Cache]): RequestCacheNamesResponse = {
       val __obj = js.Dynamic.literal(caches = caches.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestCacheNamesResponse]
     }
     
-    @scala.inline
-    implicit class RequestCacheNamesResponseMutableBuilder[Self <: RequestCacheNamesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RequestCacheNamesResponse](x: Self) {
       
-      @scala.inline
-      def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
+      inline def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value :_*))
+      inline def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value :_*))
     }
   }
   
@@ -342,26 +298,20 @@ object CacheStorage {
   }
   object RequestCachedResponseRequest {
     
-    @scala.inline
-    def apply(cacheId: CacheId, requestHeaders: js.Array[Header], requestURL: String): RequestCachedResponseRequest = {
+    inline def apply(cacheId: CacheId, requestHeaders: js.Array[Header], requestURL: String): RequestCachedResponseRequest = {
       val __obj = js.Dynamic.literal(cacheId = cacheId.asInstanceOf[js.Any], requestHeaders = requestHeaders.asInstanceOf[js.Any], requestURL = requestURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestCachedResponseRequest]
     }
     
-    @scala.inline
-    implicit class RequestCachedResponseRequestMutableBuilder[Self <: RequestCachedResponseRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RequestCachedResponseRequest](x: Self) {
       
-      @scala.inline
-      def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+      inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHeaders(value: js.Array[Header]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+      inline def setRequestHeaders(value: js.Array[Header]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+      inline def setRequestHeadersVarargs(value: Header*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
+      inline def setRequestURL(value: String): Self = StObject.set(x, "requestURL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,17 +324,14 @@ object CacheStorage {
   }
   object RequestCachedResponseResponse {
     
-    @scala.inline
-    def apply(response: CachedResponse): RequestCachedResponseResponse = {
+    inline def apply(response: CachedResponse): RequestCachedResponseResponse = {
       val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestCachedResponseResponse]
     }
     
-    @scala.inline
-    implicit class RequestCachedResponseResponseMutableBuilder[Self <: RequestCachedResponseResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RequestCachedResponseResponse](x: Self) {
       
-      @scala.inline
-      def setResponse(value: CachedResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: CachedResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -412,35 +359,26 @@ object CacheStorage {
   }
   object RequestEntriesRequest {
     
-    @scala.inline
-    def apply(cacheId: CacheId): RequestEntriesRequest = {
+    inline def apply(cacheId: CacheId): RequestEntriesRequest = {
       val __obj = js.Dynamic.literal(cacheId = cacheId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestEntriesRequest]
     }
     
-    @scala.inline
-    implicit class RequestEntriesRequestMutableBuilder[Self <: RequestEntriesRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RequestEntriesRequest](x: Self) {
       
-      @scala.inline
-      def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+      inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSize(value: integer): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: integer): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPathFilter(value: String): Self = StObject.set(x, "pathFilter", value.asInstanceOf[js.Any])
+      inline def setPathFilter(value: String): Self = StObject.set(x, "pathFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathFilterUndefined: Self = StObject.set(x, "pathFilter", js.undefined)
+      inline def setPathFilterUndefined: Self = StObject.set(x, "pathFilter", js.undefined)
       
-      @scala.inline
-      def setSkipCount(value: integer): Self = StObject.set(x, "skipCount", value.asInstanceOf[js.Any])
+      inline def setSkipCount(value: integer): Self = StObject.set(x, "skipCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipCountUndefined: Self = StObject.set(x, "skipCount", js.undefined)
+      inline def setSkipCountUndefined: Self = StObject.set(x, "skipCount", js.undefined)
     }
   }
   
@@ -459,23 +397,18 @@ object CacheStorage {
   }
   object RequestEntriesResponse {
     
-    @scala.inline
-    def apply(cacheDataEntries: js.Array[DataEntry], returnCount: Double): RequestEntriesResponse = {
+    inline def apply(cacheDataEntries: js.Array[DataEntry], returnCount: Double): RequestEntriesResponse = {
       val __obj = js.Dynamic.literal(cacheDataEntries = cacheDataEntries.asInstanceOf[js.Any], returnCount = returnCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestEntriesResponse]
     }
     
-    @scala.inline
-    implicit class RequestEntriesResponseMutableBuilder[Self <: RequestEntriesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RequestEntriesResponse](x: Self) {
       
-      @scala.inline
-      def setCacheDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "cacheDataEntries", value.asInstanceOf[js.Any])
+      inline def setCacheDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "cacheDataEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "cacheDataEntries", js.Array(value :_*))
+      inline def setCacheDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "cacheDataEntries", js.Array(value :_*))
       
-      @scala.inline
-      def setReturnCount(value: Double): Self = StObject.set(x, "returnCount", value.asInstanceOf[js.Any])
+      inline def setReturnCount(value: Double): Self = StObject.set(x, "returnCount", value.asInstanceOf[js.Any])
     }
   }
 }

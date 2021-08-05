@@ -22,49 +22,35 @@ trait PartialRangeSlider extends StObject {
 }
 object PartialRangeSlider {
   
-  @scala.inline
-  def apply(): PartialRangeSlider = {
+  inline def apply(): PartialRangeSlider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRangeSlider]
   }
   
-  @scala.inline
-  implicit class PartialRangeSliderMutableBuilder[Self <: PartialRangeSlider] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRangeSlider](x: Self) {
     
-    @scala.inline
-    def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+    inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+    inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    @scala.inline
-    def setBordercolor(value: String): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
+    inline def setBordercolor(value: String): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
+    inline def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
     
-    @scala.inline
-    def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
+    inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
+    inline def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
     
-    @scala.inline
-    def setRange(value: js.Tuple2[Datum, Datum]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Tuple2[Datum, Datum]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

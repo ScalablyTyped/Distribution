@@ -32,23 +32,23 @@ object integrationsEnterpriseMod {
     @JSName("archiveUrl")
     val archiveUrl_Integration: Unit = js.native
     
-    var chooseApp: js.Any = js.native
+    /* private */ var chooseApp: js.Any = js.native
     
-    var chooseAppToLink: js.Any = js.native
+    /* private */ var chooseAppToLink: js.Any = js.native
     
     @JSName("config")
     def config_MIntegration: EnterpriseIntegrationConfig = js.native
     
-    var createNewApp: js.Any = js.native
+    /* private */ var createNewApp: js.Any = js.native
     
-    var getAppClient: js.Any = js.native
+    /* private */ var getAppClient: js.Any = js.native
     
-    var getPK: js.Any = js.native
+    /* private */ var getPK: js.Any = js.native
     
-    var registerKey: js.Any = js.native
+    /* private */ var registerKey: js.Any = js.native
     
-    var updateNPMRC: js.Any = js.native
+    /* private */ var updateNPMRC: js.Any = js.native
     
-    var validatePK: js.Any = js.native
+    /* private */ var validatePK: js.Any = js.native
   }
 }

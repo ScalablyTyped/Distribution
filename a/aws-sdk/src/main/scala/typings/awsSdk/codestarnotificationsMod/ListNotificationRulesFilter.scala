@@ -18,19 +18,15 @@ trait ListNotificationRulesFilter extends StObject {
 }
 object ListNotificationRulesFilter {
   
-  @scala.inline
-  def apply(Name: ListNotificationRulesFilterName, Value: ListNotificationRulesFilterValue): ListNotificationRulesFilter = {
+  inline def apply(Name: ListNotificationRulesFilterName, Value: ListNotificationRulesFilterValue): ListNotificationRulesFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNotificationRulesFilter]
   }
   
-  @scala.inline
-  implicit class ListNotificationRulesFilterMutableBuilder[Self <: ListNotificationRulesFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ListNotificationRulesFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: ListNotificationRulesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ListNotificationRulesFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ListNotificationRulesFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ListNotificationRulesFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

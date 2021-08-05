@@ -18,28 +18,21 @@ trait ListProposalVotesOutput extends StObject {
 }
 object ListProposalVotesOutput {
   
-  @scala.inline
-  def apply(): ListProposalVotesOutput = {
+  inline def apply(): ListProposalVotesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProposalVotesOutput]
   }
   
-  @scala.inline
-  implicit class ListProposalVotesOutputMutableBuilder[Self <: ListProposalVotesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListProposalVotesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProposalVotes(value: ProposalVoteList): Self = StObject.set(x, "ProposalVotes", value.asInstanceOf[js.Any])
+    inline def setProposalVotes(value: ProposalVoteList): Self = StObject.set(x, "ProposalVotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalVotesUndefined: Self = StObject.set(x, "ProposalVotes", js.undefined)
+    inline def setProposalVotesUndefined: Self = StObject.set(x, "ProposalVotes", js.undefined)
     
-    @scala.inline
-    def setProposalVotesVarargs(value: VoteSummary*): Self = StObject.set(x, "ProposalVotes", js.Array(value :_*))
+    inline def setProposalVotesVarargs(value: VoteSummary*): Self = StObject.set(x, "ProposalVotes", js.Array(value :_*))
   }
 }

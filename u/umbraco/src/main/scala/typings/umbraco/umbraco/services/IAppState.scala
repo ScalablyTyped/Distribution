@@ -114,8 +114,7 @@ trait IAppState extends StObject {
 }
 object IAppState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getGlobalState: String => IGlobalState,
     getMenuState: String => IStateObject,
     getSectionState: String => ISectionState,
@@ -131,37 +130,26 @@ object IAppState {
     __obj.asInstanceOf[IAppState]
   }
   
-  @scala.inline
-  implicit class IAppStateMutableBuilder[Self <: IAppState] (val x: Self) extends AnyVal {
+  extension [Self <: IAppState](x: Self) {
     
-    @scala.inline
-    def setGetGlobalState(value: String => IGlobalState): Self = StObject.set(x, "getGlobalState", js.Any.fromFunction1(value))
+    inline def setGetGlobalState(value: String => IGlobalState): Self = StObject.set(x, "getGlobalState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMenuState(value: String => IStateObject): Self = StObject.set(x, "getMenuState", js.Any.fromFunction1(value))
+    inline def setGetMenuState(value: String => IStateObject): Self = StObject.set(x, "getMenuState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSectionState(value: String => ISectionState): Self = StObject.set(x, "getSectionState", js.Any.fromFunction1(value))
+    inline def setGetSectionState(value: String => ISectionState): Self = StObject.set(x, "getSectionState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: (IStateObject, String, String) => IStateObject): Self = StObject.set(x, "getState", js.Any.fromFunction3(value))
+    inline def setGetState(value: (IStateObject, String, String) => IStateObject): Self = StObject.set(x, "getState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetTreeState(value: String => ITreeState): Self = StObject.set(x, "getTreeState", js.Any.fromFunction1(value))
+    inline def setGetTreeState(value: String => ITreeState): Self = StObject.set(x, "getTreeState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGlobalState(value: (String, Boolean) => Unit): Self = StObject.set(x, "setGlobalState", js.Any.fromFunction2(value))
+    inline def setSetGlobalState(value: (String, Boolean) => Unit): Self = StObject.set(x, "setGlobalState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMenuState(value: (String, IMenuState) => Unit): Self = StObject.set(x, "setMenuState", js.Any.fromFunction2(value))
+    inline def setSetMenuState(value: (String, IMenuState) => Unit): Self = StObject.set(x, "setMenuState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSectionState(value: (String, ISectionState) => Unit): Self = StObject.set(x, "setSectionState", js.Any.fromFunction2(value))
+    inline def setSetSectionState(value: (String, ISectionState) => Unit): Self = StObject.set(x, "setSectionState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetState(value: (IStateObject, String, js.Any, String) => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction4(value))
+    inline def setSetState(value: (IStateObject, String, js.Any, String) => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSetTreeState(value: (String, ITreeState) => Unit): Self = StObject.set(x, "setTreeState", js.Any.fromFunction2(value))
+    inline def setSetTreeState(value: (String, ITreeState) => Unit): Self = StObject.set(x, "setTreeState", js.Any.fromFunction2(value))
   }
 }

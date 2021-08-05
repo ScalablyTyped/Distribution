@@ -17,16 +17,13 @@ trait GobyOptions
 }
 object GobyOptions {
   
-  @scala.inline
-  def apply(checkFrequency: CheckFrequency): GobyOptions = {
+  inline def apply(checkFrequency: CheckFrequency): GobyOptions = {
     val __obj = js.Dynamic.literal(checkFrequency = checkFrequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[GobyOptions]
   }
   
-  @scala.inline
-  implicit class GobyOptionsMutableBuilder[Self <: GobyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GobyOptions](x: Self) {
     
-    @scala.inline
-    def setCheckFrequency(value: CheckFrequency): Self = StObject.set(x, "checkFrequency", value.asInstanceOf[js.Any])
+    inline def setCheckFrequency(value: CheckFrequency): Self = StObject.set(x, "checkFrequency", value.asInstanceOf[js.Any])
   }
 }

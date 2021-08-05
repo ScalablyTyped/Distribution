@@ -12,6 +12,5 @@ object retryWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def retryWhen[T](notifier: js.Function1[/* errors */ Observable[js.Any], Observable[js.Any]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryWhen")(notifier.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def retryWhen[T](notifier: js.Function1[/* errors */ Observable[js.Any], Observable[js.Any]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryWhen")(notifier.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
 }

@@ -98,7 +98,7 @@ trait WebBrowserV1 extends StObject {
   def Refresh2(): Unit = js.native
   def Refresh2(Level: RefreshConstants): Unit = js.native
   
-  @JSName("SHDocVw.WebBrowser_V1_typekey")
+  /* private */ @JSName("SHDocVw.WebBrowser_V1_typekey")
   var SHDocVwDotWebBrowser_V1_typekey: WebBrowserV1 = js.native
   
   /** Stops opening a file. */

@@ -57,75 +57,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcControlType extends StObject
 object AcControlType {
   
-  @scala.inline
-  def acAttachment: `126` = 126.asInstanceOf[`126`]
+  inline def acAttachment: `126` = 126.asInstanceOf[`126`]
   
-  @scala.inline
-  def acBoundObjectFrame: `108` = 108.asInstanceOf[`108`]
+  inline def acBoundObjectFrame: `108` = 108.asInstanceOf[`108`]
   
-  @scala.inline
-  def acCheckBox: `106` = 106.asInstanceOf[`106`]
+  inline def acCheckBox: `106` = 106.asInstanceOf[`106`]
   
-  @scala.inline
-  def acComboBox: `111` = 111.asInstanceOf[`111`]
+  inline def acComboBox: `111` = 111.asInstanceOf[`111`]
   
-  @scala.inline
-  def acCommandButton: `104` = 104.asInstanceOf[`104`]
+  inline def acCommandButton: `104` = 104.asInstanceOf[`104`]
   
-  @scala.inline
-  def acCustomControl: `119` = 119.asInstanceOf[`119`]
+  inline def acCustomControl: `119` = 119.asInstanceOf[`119`]
   
-  @scala.inline
-  def acEmptyCell: `127` = 127.asInstanceOf[`127`]
+  inline def acEmptyCell: `127` = 127.asInstanceOf[`127`]
   
-  @scala.inline
-  def acImage: `103` = 103.asInstanceOf[`103`]
+  inline def acImage: `103` = 103.asInstanceOf[`103`]
   
-  @scala.inline
-  def acLabel: `100` = 100.asInstanceOf[`100`]
+  inline def acLabel: `100` = 100.asInstanceOf[`100`]
   
-  @scala.inline
-  def acLine: `102` = 102.asInstanceOf[`102`]
+  inline def acLine: `102` = 102.asInstanceOf[`102`]
   
-  @scala.inline
-  def acListBox: `110` = 110.asInstanceOf[`110`]
+  inline def acListBox: `110` = 110.asInstanceOf[`110`]
   
-  @scala.inline
-  def acNavigationButton: `130` = 130.asInstanceOf[`130`]
+  inline def acNavigationButton: `130` = 130.asInstanceOf[`130`]
   
-  @scala.inline
-  def acNavigationControl: `129` = 129.asInstanceOf[`129`]
+  inline def acNavigationControl: `129` = 129.asInstanceOf[`129`]
   
-  @scala.inline
-  def acObjectFrame: `114` = 114.asInstanceOf[`114`]
+  inline def acObjectFrame: `114` = 114.asInstanceOf[`114`]
   
-  @scala.inline
-  def acOptionButton: `105` = 105.asInstanceOf[`105`]
+  inline def acOptionButton: `105` = 105.asInstanceOf[`105`]
   
-  @scala.inline
-  def acOptionGroup: `107` = 107.asInstanceOf[`107`]
+  inline def acOptionGroup: `107` = 107.asInstanceOf[`107`]
   
-  @scala.inline
-  def acPage: `124` = 124.asInstanceOf[`124`]
+  inline def acPage: `124` = 124.asInstanceOf[`124`]
   
-  @scala.inline
-  def acPageBreak: `118` = 118.asInstanceOf[`118`]
+  inline def acPageBreak: `118` = 118.asInstanceOf[`118`]
   
-  @scala.inline
-  def acRectangle: `101` = 101.asInstanceOf[`101`]
+  inline def acRectangle: `101` = 101.asInstanceOf[`101`]
   
-  @scala.inline
-  def acSubform: `112` = 112.asInstanceOf[`112`]
+  inline def acSubform: `112` = 112.asInstanceOf[`112`]
   
-  @scala.inline
-  def acTabCtl: `123` = 123.asInstanceOf[`123`]
+  inline def acTabCtl: `123` = 123.asInstanceOf[`123`]
   
-  @scala.inline
-  def acTextBox: `109` = 109.asInstanceOf[`109`]
+  inline def acTextBox: `109` = 109.asInstanceOf[`109`]
   
-  @scala.inline
-  def acToggleButton: `122` = 122.asInstanceOf[`122`]
+  inline def acToggleButton: `122` = 122.asInstanceOf[`122`]
   
-  @scala.inline
-  def acWebBrowser: `128` = 128.asInstanceOf[`128`]
+  inline def acWebBrowser: `128` = 128.asInstanceOf[`128`]
 }

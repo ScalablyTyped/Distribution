@@ -11,22 +11,17 @@ trait RegexValidation extends StObject {
 }
 object RegexValidation {
   
-  @scala.inline
-  def apply(): RegexValidation = {
+  inline def apply(): RegexValidation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegexValidation]
   }
   
-  @scala.inline
-  implicit class RegexValidationMutableBuilder[Self <: RegexValidation] (val x: Self) extends AnyVal {
+  extension [Self <: RegexValidation](x: Self) {
     
-    @scala.inline
-    def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
+    inline def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
+    inline def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
     
-    @scala.inline
-    def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
+    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
   }
 }

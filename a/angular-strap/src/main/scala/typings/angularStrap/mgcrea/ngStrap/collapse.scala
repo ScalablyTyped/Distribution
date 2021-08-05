@@ -24,44 +24,32 @@ object collapse {
   }
   object ICollapseOptions {
     
-    @scala.inline
-    def apply(): ICollapseOptions = {
+    inline def apply(): ICollapseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICollapseOptions]
     }
     
-    @scala.inline
-    implicit class ICollapseOptionsMutableBuilder[Self <: ICollapseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICollapseOptions](x: Self) {
       
-      @scala.inline
-      def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+      inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
+      inline def setActiveClassUndefined: Self = StObject.set(x, "activeClass", js.undefined)
       
-      @scala.inline
-      def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
+      inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
+      inline def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setDisallowToggle(value: Boolean): Self = StObject.set(x, "disallowToggle", value.asInstanceOf[js.Any])
+      inline def setDisallowToggle(value: Boolean): Self = StObject.set(x, "disallowToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallowToggleUndefined: Self = StObject.set(x, "disallowToggle", js.undefined)
+      inline def setDisallowToggleUndefined: Self = StObject.set(x, "disallowToggle", js.undefined)
       
-      @scala.inline
-      def setStartCollapsed(value: Boolean): Self = StObject.set(x, "startCollapsed", value.asInstanceOf[js.Any])
+      inline def setStartCollapsed(value: Boolean): Self = StObject.set(x, "startCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCollapsedUndefined: Self = StObject.set(x, "startCollapsed", js.undefined)
+      inline def setStartCollapsedUndefined: Self = StObject.set(x, "startCollapsed", js.undefined)
     }
   }
   
@@ -71,17 +59,14 @@ object collapse {
   }
   object ICollapseProvider {
     
-    @scala.inline
-    def apply(defaults: ICollapseOptions): ICollapseProvider = {
+    inline def apply(defaults: ICollapseOptions): ICollapseProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICollapseProvider]
     }
     
-    @scala.inline
-    implicit class ICollapseProviderMutableBuilder[Self <: ICollapseProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ICollapseProvider](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: ICollapseOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: ICollapseOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
 }

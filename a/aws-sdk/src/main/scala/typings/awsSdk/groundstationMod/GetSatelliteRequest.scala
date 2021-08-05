@@ -13,16 +13,13 @@ trait GetSatelliteRequest extends StObject {
 }
 object GetSatelliteRequest {
   
-  @scala.inline
-  def apply(satelliteId: String): GetSatelliteRequest = {
+  inline def apply(satelliteId: String): GetSatelliteRequest = {
     val __obj = js.Dynamic.literal(satelliteId = satelliteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSatelliteRequest]
   }
   
-  @scala.inline
-  implicit class GetSatelliteRequestMutableBuilder[Self <: GetSatelliteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSatelliteRequest](x: Self) {
     
-    @scala.inline
-    def setSatelliteId(value: String): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
+    inline def setSatelliteId(value: String): Self = StObject.set(x, "satelliteId", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ object indexNativeMod {
     @JSImport("antd-mobile-rn/lib/accordion/index.native", "default.Panel")
     @js.native
     def Panel: js.Any = js.native
-    @scala.inline
-    def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
+    inline def Panel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Panel")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -39,8 +38,7 @@ object indexNativeMod {
       @JSImport("antd-mobile-rn/lib/accordion/index.native", "default.defaultProps.styles")
       @js.native
       def styles: js.Any = js.native
-      @scala.inline
-      def styles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
+      inline def styles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -65,29 +63,22 @@ object indexNativeMod {
   }
   object AccordionHeader {
     
-    @scala.inline
-    def apply(content: ReactElement, title: String): AccordionHeader = {
+    inline def apply(content: ReactElement, title: String): AccordionHeader = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccordionHeader]
     }
     
-    @scala.inline
-    implicit class AccordionHeaderMutableBuilder[Self <: AccordionHeader] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionHeader](x: Self) {
       
-      @scala.inline
-      def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,29 +92,22 @@ object indexNativeMod {
   }
   object AccordionNativeProps {
     
-    @scala.inline
-    def apply(): AccordionNativeProps = {
+    inline def apply(): AccordionNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionNativeProps]
     }
     
-    @scala.inline
-    implicit class AccordionNativePropsMutableBuilder[Self <: AccordionNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: AccordionStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: AccordionStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -135,23 +119,18 @@ object indexNativeMod {
   }
   object AccordionPanelProps {
     
-    @scala.inline
-    def apply(header: js.Any): AccordionPanelProps = {
+    inline def apply(header: js.Any): AccordionPanelProps = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccordionPanelProps]
     }
     
-    @scala.inline
-    implicit class AccordionPanelPropsMutableBuilder[Self <: AccordionPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionPanelProps](x: Self) {
       
-      @scala.inline
-      def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
 }

@@ -11,19 +11,15 @@ trait LookupMembershipNameResponse extends StObject {
 }
 object LookupMembershipNameResponse {
   
-  @scala.inline
-  def apply(): LookupMembershipNameResponse = {
+  inline def apply(): LookupMembershipNameResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookupMembershipNameResponse]
   }
   
-  @scala.inline
-  implicit class LookupMembershipNameResponseMutableBuilder[Self <: LookupMembershipNameResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LookupMembershipNameResponse](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

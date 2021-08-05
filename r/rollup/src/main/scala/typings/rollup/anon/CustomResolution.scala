@@ -17,31 +17,23 @@ trait CustomResolution extends StObject {
 }
 object CustomResolution {
   
-  @scala.inline
-  def apply(format: InternalModuleFormat, moduleId: String): CustomResolution = {
+  inline def apply(format: InternalModuleFormat, moduleId: String): CustomResolution = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], customResolution = null, targetModuleId = null)
     __obj.asInstanceOf[CustomResolution]
   }
   
-  @scala.inline
-  implicit class CustomResolutionMutableBuilder[Self <: CustomResolution] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResolution](x: Self) {
     
-    @scala.inline
-    def setCustomResolution(value: String): Self = StObject.set(x, "customResolution", value.asInstanceOf[js.Any])
+    inline def setCustomResolution(value: String): Self = StObject.set(x, "customResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomResolutionNull: Self = StObject.set(x, "customResolution", null)
+    inline def setCustomResolutionNull: Self = StObject.set(x, "customResolution", null)
     
-    @scala.inline
-    def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetModuleId(value: String): Self = StObject.set(x, "targetModuleId", value.asInstanceOf[js.Any])
+    inline def setTargetModuleId(value: String): Self = StObject.set(x, "targetModuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetModuleIdNull: Self = StObject.set(x, "targetModuleId", null)
+    inline def setTargetModuleIdNull: Self = StObject.set(x, "targetModuleId", null)
   }
 }

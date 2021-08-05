@@ -21,8 +21,7 @@ trait IInkStrokeBuilder extends StObject {
 }
 object IInkStrokeBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToStroke: PointerPoint => PointerPoint,
     beginStroke: PointerPoint => Unit,
     createStroke: IIterable[Point] => InkStroke,
@@ -33,22 +32,16 @@ object IInkStrokeBuilder {
     __obj.asInstanceOf[IInkStrokeBuilder]
   }
   
-  @scala.inline
-  implicit class IInkStrokeBuilderMutableBuilder[Self <: IInkStrokeBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: IInkStrokeBuilder](x: Self) {
     
-    @scala.inline
-    def setAppendToStroke(value: PointerPoint => PointerPoint): Self = StObject.set(x, "appendToStroke", js.Any.fromFunction1(value))
+    inline def setAppendToStroke(value: PointerPoint => PointerPoint): Self = StObject.set(x, "appendToStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginStroke(value: PointerPoint => Unit): Self = StObject.set(x, "beginStroke", js.Any.fromFunction1(value))
+    inline def setBeginStroke(value: PointerPoint => Unit): Self = StObject.set(x, "beginStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateStroke(value: IIterable[Point] => InkStroke): Self = StObject.set(x, "createStroke", js.Any.fromFunction1(value))
+    inline def setCreateStroke(value: IIterable[Point] => InkStroke): Self = StObject.set(x, "createStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndStroke(value: PointerPoint => InkStroke): Self = StObject.set(x, "endStroke", js.Any.fromFunction1(value))
+    inline def setEndStroke(value: PointerPoint => InkStroke): Self = StObject.set(x, "endStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultDrawingAttributes(value: InkDrawingAttributes => Unit): Self = StObject.set(x, "setDefaultDrawingAttributes", js.Any.fromFunction1(value))
+    inline def setSetDefaultDrawingAttributes(value: InkDrawingAttributes => Unit): Self = StObject.set(x, "setDefaultDrawingAttributes", js.Any.fromFunction1(value))
   }
 }

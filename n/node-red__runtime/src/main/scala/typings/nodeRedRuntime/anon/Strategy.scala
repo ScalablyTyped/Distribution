@@ -16,26 +16,20 @@ trait Strategy extends StObject {
 }
 object Strategy {
   
-  @scala.inline
-  def apply(strategy: Icon, users: js.Array[UsernamePermissions]): Strategy = {
+  inline def apply(strategy: Icon, users: js.Array[UsernamePermissions]): Strategy = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("strategy")
     __obj.asInstanceOf[Strategy]
   }
   
-  @scala.inline
-  implicit class StrategyMutableBuilder[Self <: Strategy] (val x: Self) extends AnyVal {
+  extension [Self <: Strategy](x: Self) {
     
-    @scala.inline
-    def setStrategy(value: Icon): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: Icon): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: strategy): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: strategy): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: js.Array[UsernamePermissions]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UsernamePermissions]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: UsernamePermissions*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UsernamePermissions*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

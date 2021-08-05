@@ -34,6 +34,6 @@ trait RoutingSlip extends StObject {
   
   var TrackStatus: Boolean = js.native
   
-  @JSName("Word.RoutingSlip_typekey")
+  /* private */ @JSName("Word.RoutingSlip_typekey")
   var WordDotRoutingSlip_typekey: RoutingSlip = js.native
 }

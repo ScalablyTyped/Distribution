@@ -23,28 +23,21 @@ trait UpdateBuildInput extends StObject {
 }
 object UpdateBuildInput {
   
-  @scala.inline
-  def apply(BuildId: BuildIdOrArn): UpdateBuildInput = {
+  inline def apply(BuildId: BuildIdOrArn): UpdateBuildInput = {
     val __obj = js.Dynamic.literal(BuildId = BuildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBuildInput]
   }
   
-  @scala.inline
-  implicit class UpdateBuildInputMutableBuilder[Self <: UpdateBuildInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBuildInput](x: Self) {
     
-    @scala.inline
-    def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
+    inline def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: NonZeroAndMaxString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NonZeroAndMaxString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

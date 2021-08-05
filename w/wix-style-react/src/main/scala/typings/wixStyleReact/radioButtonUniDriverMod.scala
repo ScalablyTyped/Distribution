@@ -31,8 +31,7 @@ object radioButtonUniDriverMod {
   }
   object RadioButtonUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       check: () => js.Promise[Unit],
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -49,32 +48,23 @@ object radioButtonUniDriverMod {
       __obj.asInstanceOf[RadioButtonUniDriver]
     }
     
-    @scala.inline
-    implicit class RadioButtonUniDriverMutableBuilder[Self <: RadioButtonUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonUniDriver](x: Self) {
       
-      @scala.inline
-      def setCheck(value: () => js.Promise[Unit]): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
+      inline def setCheck(value: () => js.Promise[Unit]): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContent(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelElement(value: () => js.Promise[Element]): Self = StObject.set(x, "getLabelElement", js.Any.fromFunction0(value))
+      inline def setGetLabelElement(value: () => js.Promise[Element]): Self = StObject.set(x, "getLabelElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTabIndex(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
+      inline def setGetTabIndex(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     }
   }
 }

@@ -20,25 +20,19 @@ trait WritableSpecification extends StObject {
 }
 object WritableSpecification {
   
-  @scala.inline
-  def apply(db: Database, name: String, pk: String, schema: String): WritableSpecification = {
+  inline def apply(db: Database, name: String, pk: String, schema: String): WritableSpecification = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritableSpecification]
   }
   
-  @scala.inline
-  implicit class WritableSpecificationMutableBuilder[Self <: WritableSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: WritableSpecification](x: Self) {
     
-    @scala.inline
-    def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

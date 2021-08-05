@@ -13,16 +13,13 @@ trait CommentingRangeProvider extends StObject {
 }
 object CommentingRangeProvider {
   
-  @scala.inline
-  def apply(provideCommentingRanges: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): CommentingRangeProvider = {
+  inline def apply(provideCommentingRanges: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): CommentingRangeProvider = {
     val __obj = js.Dynamic.literal(provideCommentingRanges = js.Any.fromFunction2(provideCommentingRanges))
     __obj.asInstanceOf[CommentingRangeProvider]
   }
   
-  @scala.inline
-  implicit class CommentingRangeProviderMutableBuilder[Self <: CommentingRangeProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CommentingRangeProvider](x: Self) {
     
-    @scala.inline
-    def setProvideCommentingRanges(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): Self = StObject.set(x, "provideCommentingRanges", js.Any.fromFunction2(value))
+    inline def setProvideCommentingRanges(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[Range]]): Self = StObject.set(x, "provideCommentingRanges", js.Any.fromFunction2(value))
   }
 }

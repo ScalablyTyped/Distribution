@@ -19,31 +19,23 @@ trait IBooleanColumn
 }
 object IBooleanColumn {
   
-  @scala.inline
-  def apply(): IBooleanColumn = {
+  inline def apply(): IBooleanColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBooleanColumn]
   }
   
-  @scala.inline
-  implicit class IBooleanColumnMutableBuilder[Self <: IBooleanColumn] (val x: Self) extends AnyVal {
+  extension [Self <: IBooleanColumn](x: Self) {
     
-    @scala.inline
-    def setFalseText(value: String): Self = StObject.set(x, "falseText", value.asInstanceOf[js.Any])
+    inline def setFalseText(value: String): Self = StObject.set(x, "falseText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalseTextUndefined: Self = StObject.set(x, "falseText", js.undefined)
+    inline def setFalseTextUndefined: Self = StObject.set(x, "falseText", js.undefined)
     
-    @scala.inline
-    def setTrueText(value: String): Self = StObject.set(x, "trueText", value.asInstanceOf[js.Any])
+    inline def setTrueText(value: String): Self = StObject.set(x, "trueText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueTextUndefined: Self = StObject.set(x, "trueText", js.undefined)
+    inline def setTrueTextUndefined: Self = StObject.set(x, "trueText", js.undefined)
     
-    @scala.inline
-    def setUndefinedText(value: String): Self = StObject.set(x, "undefinedText", value.asInstanceOf[js.Any])
+    inline def setUndefinedText(value: String): Self = StObject.set(x, "undefinedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedTextUndefined: Self = StObject.set(x, "undefinedText", js.undefined)
+    inline def setUndefinedTextUndefined: Self = StObject.set(x, "undefinedText", js.undefined)
   }
 }

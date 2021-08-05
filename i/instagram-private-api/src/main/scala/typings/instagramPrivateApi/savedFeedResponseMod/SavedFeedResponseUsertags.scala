@@ -10,19 +10,15 @@ trait SavedFeedResponseUsertags extends StObject {
 }
 object SavedFeedResponseUsertags {
   
-  @scala.inline
-  def apply(in: js.Array[SavedFeedResponseInItem]): SavedFeedResponseUsertags = {
+  inline def apply(in: js.Array[SavedFeedResponseInItem]): SavedFeedResponseUsertags = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavedFeedResponseUsertags]
   }
   
-  @scala.inline
-  implicit class SavedFeedResponseUsertagsMutableBuilder[Self <: SavedFeedResponseUsertags] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFeedResponseUsertags](x: Self) {
     
-    @scala.inline
-    def setIn(value: js.Array[SavedFeedResponseInItem]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: js.Array[SavedFeedResponseInItem]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInVarargs(value: SavedFeedResponseInItem*): Self = StObject.set(x, "in", js.Array(value :_*))
+    inline def setInVarargs(value: SavedFeedResponseInItem*): Self = StObject.set(x, "in", js.Array(value :_*))
   }
 }

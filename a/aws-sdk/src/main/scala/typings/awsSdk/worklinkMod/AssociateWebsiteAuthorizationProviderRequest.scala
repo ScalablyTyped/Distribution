@@ -23,25 +23,19 @@ trait AssociateWebsiteAuthorizationProviderRequest extends StObject {
 }
 object AssociateWebsiteAuthorizationProviderRequest {
   
-  @scala.inline
-  def apply(AuthorizationProviderType: AuthorizationProviderType, FleetArn: FleetArn): AssociateWebsiteAuthorizationProviderRequest = {
+  inline def apply(AuthorizationProviderType: AuthorizationProviderType, FleetArn: FleetArn): AssociateWebsiteAuthorizationProviderRequest = {
     val __obj = js.Dynamic.literal(AuthorizationProviderType = AuthorizationProviderType.asInstanceOf[js.Any], FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateWebsiteAuthorizationProviderRequest]
   }
   
-  @scala.inline
-  implicit class AssociateWebsiteAuthorizationProviderRequestMutableBuilder[Self <: AssociateWebsiteAuthorizationProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateWebsiteAuthorizationProviderRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorizationProviderType(value: AuthorizationProviderType): Self = StObject.set(x, "AuthorizationProviderType", value.asInstanceOf[js.Any])
+    inline def setAuthorizationProviderType(value: AuthorizationProviderType): Self = StObject.set(x, "AuthorizationProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

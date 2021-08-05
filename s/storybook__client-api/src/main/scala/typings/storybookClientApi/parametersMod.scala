@@ -11,6 +11,5 @@ object parametersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def combineParameters(parameterSets: Parameters*): Parameters = ^.asInstanceOf[js.Dynamic].applyDynamic("combineParameters")(parameterSets.asInstanceOf[js.Any]).asInstanceOf[Parameters]
+  inline def combineParameters(parameterSets: Parameters*): Parameters = ^.asInstanceOf[js.Dynamic].applyDynamic("combineParameters")(parameterSets.asInstanceOf[js.Any]).asInstanceOf[Parameters]
 }

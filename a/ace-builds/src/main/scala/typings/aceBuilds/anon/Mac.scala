@@ -12,25 +12,19 @@ trait Mac extends StObject {
 }
 object Mac {
   
-  @scala.inline
-  def apply(): Mac = {
+  inline def apply(): Mac = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mac]
   }
   
-  @scala.inline
-  implicit class MacMutableBuilder[Self <: Mac] (val x: Self) extends AnyVal {
+  extension [Self <: Mac](x: Self) {
     
-    @scala.inline
-    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+    inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
-    @scala.inline
-    def setWin(value: String): Self = StObject.set(x, "win", value.asInstanceOf[js.Any])
+    inline def setWin(value: String): Self = StObject.set(x, "win", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWinUndefined: Self = StObject.set(x, "win", js.undefined)
+    inline def setWinUndefined: Self = StObject.set(x, "win", js.undefined)
   }
 }

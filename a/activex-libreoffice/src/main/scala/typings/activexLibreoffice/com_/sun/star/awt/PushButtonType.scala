@@ -19,18 +19,14 @@ trait PushButtonType extends StObject
 object PushButtonType {
   
   /** acts like a cancel button. */
-  @scala.inline
-  def CANCEL: `2` = 2.asInstanceOf[`2`]
+  inline def CANCEL: `2` = 2.asInstanceOf[`2`]
   
   /** acts like a help button. */
-  @scala.inline
-  def HELP: `3` = 3.asInstanceOf[`3`]
+  inline def HELP: `3` = 3.asInstanceOf[`3`]
   
   /** acts like a OK button. */
-  @scala.inline
-  def OK: `1` = 1.asInstanceOf[`1`]
+  inline def OK: `1` = 1.asInstanceOf[`1`]
   
   /** acts like a standard push button. */
-  @scala.inline
-  def STANDARD: `0` = 0.asInstanceOf[`0`]
+  inline def STANDARD: `0` = 0.asInstanceOf[`0`]
 }

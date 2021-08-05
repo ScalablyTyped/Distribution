@@ -79,112 +79,77 @@ trait TOptionsBase extends StObject {
 }
 object TOptionsBase {
   
-  @scala.inline
-  def apply(): TOptionsBase = {
+  inline def apply(): TOptionsBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TOptionsBase]
   }
   
-  @scala.inline
-  implicit class TOptionsBaseMutableBuilder[Self <: TOptionsBase] (val x: Self) extends AnyVal {
+  extension [Self <: TOptionsBase](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setFallbackLng(value: FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
+    inline def setFallbackLng(value: FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackLngFunction1(value: /* code */ String => String | js.Array[String] | FallbackLngObjList): Self = StObject.set(x, "fallbackLng", js.Any.fromFunction1(value))
+    inline def setFallbackLngFunction1(value: /* code */ String => String | js.Array[String] | FallbackLngObjList): Self = StObject.set(x, "fallbackLng", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFallbackLngUndefined: Self = StObject.set(x, "fallbackLng", js.undefined)
+    inline def setFallbackLngUndefined: Self = StObject.set(x, "fallbackLng", js.undefined)
     
-    @scala.inline
-    def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
+    inline def setFallbackLngVarargs(value: String*): Self = StObject.set(x, "fallbackLng", js.Array(value :_*))
     
-    @scala.inline
-    def setInterpolation(value: InterpolationOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: InterpolationOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setJoinArrays(value: String): Self = StObject.set(x, "joinArrays", value.asInstanceOf[js.Any])
+    inline def setJoinArrays(value: String): Self = StObject.set(x, "joinArrays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinArraysUndefined: Self = StObject.set(x, "joinArrays", js.undefined)
+    inline def setJoinArraysUndefined: Self = StObject.set(x, "joinArrays", js.undefined)
     
-    @scala.inline
-    def setKeySeparator(value: `false` | String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
+    inline def setKeySeparator(value: `false` | String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySeparatorUndefined: Self = StObject.set(x, "keySeparator", js.undefined)
+    inline def setKeySeparatorUndefined: Self = StObject.set(x, "keySeparator", js.undefined)
     
-    @scala.inline
-    def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: String): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
+    inline def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
     
-    @scala.inline
-    def setLngs(value: js.Array[String]): Self = StObject.set(x, "lngs", value.asInstanceOf[js.Any])
+    inline def setLngs(value: js.Array[String]): Self = StObject.set(x, "lngs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLngsUndefined: Self = StObject.set(x, "lngs", js.undefined)
+    inline def setLngsUndefined: Self = StObject.set(x, "lngs", js.undefined)
     
-    @scala.inline
-    def setLngsVarargs(value: String*): Self = StObject.set(x, "lngs", js.Array(value :_*))
+    inline def setLngsVarargs(value: String*): Self = StObject.set(x, "lngs", js.Array(value :_*))
     
-    @scala.inline
-    def setNs(value: String | js.Array[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+    inline def setNs(value: String | js.Array[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNsSeparator(value: `false` | String): Self = StObject.set(x, "nsSeparator", value.asInstanceOf[js.Any])
+    inline def setNsSeparator(value: `false` | String): Self = StObject.set(x, "nsSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNsSeparatorUndefined: Self = StObject.set(x, "nsSeparator", js.undefined)
+    inline def setNsSeparatorUndefined: Self = StObject.set(x, "nsSeparator", js.undefined)
     
-    @scala.inline
-    def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
+    inline def setNsUndefined: Self = StObject.set(x, "ns", js.undefined)
     
-    @scala.inline
-    def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
+    inline def setNsVarargs(value: String*): Self = StObject.set(x, "ns", js.Array(value :_*))
     
-    @scala.inline
-    def setPostProcess(value: String | js.Array[String]): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
+    inline def setPostProcess(value: String | js.Array[String]): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
+    inline def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
-    @scala.inline
-    def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value :_*))
+    inline def setPostProcessVarargs(value: String*): Self = StObject.set(x, "postProcess", js.Array(value :_*))
     
-    @scala.inline
-    def setReplace(value: js.Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: js.Any): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setReturnObjects(value: Boolean): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
+    inline def setReturnObjects(value: Boolean): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnObjectsUndefined: Self = StObject.set(x, "returnObjects", js.undefined)
+    inline def setReturnObjectsUndefined: Self = StObject.set(x, "returnObjects", js.undefined)
   }
 }

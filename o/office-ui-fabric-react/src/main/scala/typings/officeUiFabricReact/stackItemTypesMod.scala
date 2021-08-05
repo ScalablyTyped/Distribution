@@ -67,50 +67,36 @@ object stackItemTypesMod {
   }
   object IStackItemProps {
     
-    @scala.inline
-    def apply(): IStackItemProps = {
+    inline def apply(): IStackItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStackItemProps]
     }
     
-    @scala.inline
-    implicit class IStackItemPropsMutableBuilder[Self <: IStackItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: IStackItemProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: auto | stretch | baseline | start | center | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: auto | stretch | baseline | start | center | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setDisableShrink(value: Boolean): Self = StObject.set(x, "disableShrink", value.asInstanceOf[js.Any])
+      inline def setDisableShrink(value: Boolean): Self = StObject.set(x, "disableShrink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableShrinkUndefined: Self = StObject.set(x, "disableShrink", js.undefined)
+      inline def setDisableShrinkUndefined: Self = StObject.set(x, "disableShrink", js.undefined)
       
-      @scala.inline
-      def setGrow(value: Boolean | Double | inherit | initial | unset): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
+      inline def setGrow(value: Boolean | Double | inherit | initial | unset): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
+      inline def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Double | String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double | String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setShrink(value: Boolean | Double | inherit | initial | unset): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
+      inline def setShrink(value: Boolean | Double | inherit | initial | unset): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
+      inline def setShrinkUndefined: Self = StObject.set(x, "shrink", js.undefined)
       
-      @scala.inline
-      def setVerticalFill(value: Boolean): Self = StObject.set(x, "verticalFill", value.asInstanceOf[js.Any])
+      inline def setVerticalFill(value: Boolean): Self = StObject.set(x, "verticalFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalFillUndefined: Self = StObject.set(x, "verticalFill", js.undefined)
+      inline def setVerticalFillUndefined: Self = StObject.set(x, "verticalFill", js.undefined)
     }
   }
   
@@ -122,20 +108,16 @@ object stackItemTypesMod {
   }
   object IStackItemSlots {
     
-    @scala.inline
-    def apply(): IStackItemSlots = {
+    inline def apply(): IStackItemSlots = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStackItemSlots]
     }
     
-    @scala.inline
-    implicit class IStackItemSlotsMutableBuilder[Self <: IStackItemSlots] (val x: Self) extends AnyVal {
+    extension [Self <: IStackItemSlots](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IHTMLSlot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IHTMLSlot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -146,23 +128,18 @@ object stackItemTypesMod {
   }
   object IStackItemStyles {
     
-    @scala.inline
-    def apply(): IStackItemStyles = {
+    inline def apply(): IStackItemStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStackItemStyles]
     }
     
-    @scala.inline
-    implicit class IStackItemStylesMutableBuilder[Self <: IStackItemStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IStackItemStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -189,26 +166,20 @@ object stackItemTypesMod {
   }
   object IStackItemTokens {
     
-    @scala.inline
-    def apply(): IStackItemTokens = {
+    inline def apply(): IStackItemTokens = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStackItemTokens]
     }
     
-    @scala.inline
-    implicit class IStackItemTokensMutableBuilder[Self <: IStackItemTokens] (val x: Self) extends AnyVal {
+    extension [Self <: IStackItemTokens](x: Self) {
       
-      @scala.inline
-      def setMargin(value: Double | String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double | String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
 }

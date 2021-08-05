@@ -16,22 +16,17 @@ trait SchemaScheduleTransferRunsResponse extends StObject {
 }
 object SchemaScheduleTransferRunsResponse {
   
-  @scala.inline
-  def apply(): SchemaScheduleTransferRunsResponse = {
+  inline def apply(): SchemaScheduleTransferRunsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScheduleTransferRunsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaScheduleTransferRunsResponseMutableBuilder[Self <: SchemaScheduleTransferRunsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaScheduleTransferRunsResponse](x: Self) {
     
-    @scala.inline
-    def setRuns(value: js.Array[SchemaTransferRun]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: js.Array[SchemaTransferRun]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
+    inline def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
     
-    @scala.inline
-    def setRunsVarargs(value: SchemaTransferRun*): Self = StObject.set(x, "runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: SchemaTransferRun*): Self = StObject.set(x, "runs", js.Array(value :_*))
   }
 }

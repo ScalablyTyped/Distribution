@@ -21,22 +21,17 @@ trait INxGetBookmarkOptions extends StObject {
 }
 object INxGetBookmarkOptions {
   
-  @scala.inline
-  def apply(qData: js.Any, qTypes: js.Array[String]): INxGetBookmarkOptions = {
+  inline def apply(qData: js.Any, qTypes: js.Array[String]): INxGetBookmarkOptions = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qTypes = qTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxGetBookmarkOptions]
   }
   
-  @scala.inline
-  implicit class INxGetBookmarkOptionsMutableBuilder[Self <: INxGetBookmarkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: INxGetBookmarkOptions](x: Self) {
     
-    @scala.inline
-    def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTypes(value: js.Array[String]): Self = StObject.set(x, "qTypes", value.asInstanceOf[js.Any])
+    inline def setQTypes(value: js.Array[String]): Self = StObject.set(x, "qTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTypesVarargs(value: String*): Self = StObject.set(x, "qTypes", js.Array(value :_*))
+    inline def setQTypesVarargs(value: String*): Self = StObject.set(x, "qTypes", js.Array(value :_*))
   }
 }

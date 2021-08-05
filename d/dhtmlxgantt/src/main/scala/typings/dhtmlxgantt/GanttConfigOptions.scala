@@ -644,8 +644,7 @@ trait GanttConfigOptions extends StObject {
 }
 object GanttConfigOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auto_scheduling: Boolean,
     auto_scheduling_descendant_links: Boolean,
     auto_scheduling_initial: Boolean,
@@ -778,403 +777,270 @@ object GanttConfigOptions {
     __obj.asInstanceOf[GanttConfigOptions]
   }
   
-  @scala.inline
-  implicit class GanttConfigOptionsMutableBuilder[Self <: GanttConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GanttConfigOptions](x: Self) {
     
-    @scala.inline
-    def setAuto_scheduling(value: Boolean): Self = StObject.set(x, "auto_scheduling", value.asInstanceOf[js.Any])
+    inline def setAuto_scheduling(value: Boolean): Self = StObject.set(x, "auto_scheduling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_scheduling_descendant_links(value: Boolean): Self = StObject.set(x, "auto_scheduling_descendant_links", value.asInstanceOf[js.Any])
+    inline def setAuto_scheduling_descendant_links(value: Boolean): Self = StObject.set(x, "auto_scheduling_descendant_links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_scheduling_initial(value: Boolean): Self = StObject.set(x, "auto_scheduling_initial", value.asInstanceOf[js.Any])
+    inline def setAuto_scheduling_initial(value: Boolean): Self = StObject.set(x, "auto_scheduling_initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_scheduling_move_projects(value: Boolean): Self = StObject.set(x, "auto_scheduling_move_projects", value.asInstanceOf[js.Any])
+    inline def setAuto_scheduling_move_projects(value: Boolean): Self = StObject.set(x, "auto_scheduling_move_projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_scheduling_strict(value: Boolean): Self = StObject.set(x, "auto_scheduling_strict", value.asInstanceOf[js.Any])
+    inline def setAuto_scheduling_strict(value: Boolean): Self = StObject.set(x, "auto_scheduling_strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto_types(value: Boolean): Self = StObject.set(x, "auto_types", value.asInstanceOf[js.Any])
+    inline def setAuto_types(value: Boolean): Self = StObject.set(x, "auto_types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutofit(value: Boolean): Self = StObject.set(x, "autofit", value.asInstanceOf[js.Any])
+    inline def setAutofit(value: Boolean): Self = StObject.set(x, "autofit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
+    inline def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoscroll_speed(value: Double): Self = StObject.set(x, "autoscroll_speed", value.asInstanceOf[js.Any])
+    inline def setAutoscroll_speed(value: Double): Self = StObject.set(x, "autoscroll_speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutosize(value: Boolean | String): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
+    inline def setAutosize(value: Boolean | String): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutosize_min_width(value: Double): Self = StObject.set(x, "autosize_min_width", value.asInstanceOf[js.Any])
+    inline def setAutosize_min_width(value: Double): Self = StObject.set(x, "autosize_min_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranch_loading(value: Boolean): Self = StObject.set(x, "branch_loading", value.asInstanceOf[js.Any])
+    inline def setBranch_loading(value: Boolean): Self = StObject.set(x, "branch_loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranch_loading_property(value: String): Self = StObject.set(x, "branch_loading_property", value.asInstanceOf[js.Any])
+    inline def setBranch_loading_property(value: String): Self = StObject.set(x, "branch_loading_property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtons_left(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_left", value.asInstanceOf[js.Any])
+    inline def setButtons_left(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtons_leftVarargs(value: js.Any*): Self = StObject.set(x, "buttons_left", js.Array(value :_*))
+    inline def setButtons_leftVarargs(value: js.Any*): Self = StObject.set(x, "buttons_left", js.Array(value :_*))
     
-    @scala.inline
-    def setButtons_right(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_right", value.asInstanceOf[js.Any])
+    inline def setButtons_right(value: js.Array[js.Any]): Self = StObject.set(x, "buttons_right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtons_rightVarargs(value: js.Any*): Self = StObject.set(x, "buttons_right", js.Array(value :_*))
+    inline def setButtons_rightVarargs(value: js.Any*): Self = StObject.set(x, "buttons_right", js.Array(value :_*))
     
-    @scala.inline
-    def setCalendar_property(value: String): Self = StObject.set(x, "calendar_property", value.asInstanceOf[js.Any])
+    inline def setCalendar_property(value: String): Self = StObject.set(x, "calendar_property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCascade_delete(value: Boolean): Self = StObject.set(x, "cascade_delete", value.asInstanceOf[js.Any])
+    inline def setCascade_delete(value: Boolean): Self = StObject.set(x, "cascade_delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setCorrect_work_time(value: Boolean): Self = StObject.set(x, "correct_work_time", value.asInstanceOf[js.Any])
+    inline def setCorrect_work_time(value: Boolean): Self = StObject.set(x, "correct_work_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate_grid(value: String): Self = StObject.set(x, "date_grid", value.asInstanceOf[js.Any])
+    inline def setDate_grid(value: String): Self = StObject.set(x, "date_grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate_scale(value: String): Self = StObject.set(x, "date_scale", value.asInstanceOf[js.Any])
+    inline def setDate_scale(value: String): Self = StObject.set(x, "date_scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails_on_create(value: Boolean): Self = StObject.set(x, "details_on_create", value.asInstanceOf[js.Any])
+    inline def setDetails_on_create(value: Boolean): Self = StObject.set(x, "details_on_create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails_on_dblclick(value: Boolean): Self = StObject.set(x, "details_on_dblclick", value.asInstanceOf[js.Any])
+    inline def setDetails_on_dblclick(value: Boolean): Self = StObject.set(x, "details_on_dblclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_lightbox(value: Boolean): Self = StObject.set(x, "drag_lightbox", value.asInstanceOf[js.Any])
+    inline def setDrag_lightbox(value: Boolean): Self = StObject.set(x, "drag_lightbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_links(value: Boolean): Self = StObject.set(x, "drag_links", value.asInstanceOf[js.Any])
+    inline def setDrag_links(value: Boolean): Self = StObject.set(x, "drag_links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_mode(value: js.Any): Self = StObject.set(x, "drag_mode", value.asInstanceOf[js.Any])
+    inline def setDrag_mode(value: js.Any): Self = StObject.set(x, "drag_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_move(value: Boolean): Self = StObject.set(x, "drag_move", value.asInstanceOf[js.Any])
+    inline def setDrag_move(value: Boolean): Self = StObject.set(x, "drag_move", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_progress(value: Boolean): Self = StObject.set(x, "drag_progress", value.asInstanceOf[js.Any])
+    inline def setDrag_progress(value: Boolean): Self = StObject.set(x, "drag_progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_project(value: Boolean): Self = StObject.set(x, "drag_project", value.asInstanceOf[js.Any])
+    inline def setDrag_project(value: Boolean): Self = StObject.set(x, "drag_project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrag_resize(value: Boolean): Self = StObject.set(x, "drag_resize", value.asInstanceOf[js.Any])
+    inline def setDrag_resize(value: Boolean): Self = StObject.set(x, "drag_resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration_step(value: Double): Self = StObject.set(x, "duration_step", value.asInstanceOf[js.Any])
+    inline def setDuration_step(value: Double): Self = StObject.set(x, "duration_step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration_unit(value: String): Self = StObject.set(x, "duration_unit", value.asInstanceOf[js.Any])
+    inline def setDuration_unit(value: String): Self = StObject.set(x, "duration_unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditable_property(value: String): Self = StObject.set(x, "editable_property", value.asInstanceOf[js.Any])
+    inline def setEditable_property(value: String): Self = StObject.set(x, "editable_property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor_types(value: js.Any): Self = StObject.set(x, "editor_types", value.asInstanceOf[js.Any])
+    inline def setEditor_types(value: js.Any): Self = StObject.set(x, "editor_types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_date(value: Date): Self = StObject.set(x, "end_date", value.asInstanceOf[js.Any])
+    inline def setEnd_date(value: Date): Self = StObject.set(x, "end_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFit_tasks(value: Boolean): Self = StObject.set(x, "fit_tasks", value.asInstanceOf[js.Any])
+    inline def setFit_tasks(value: Boolean): Self = StObject.set(x, "fit_tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrid_resize(value: Boolean): Self = StObject.set(x, "grid_resize", value.asInstanceOf[js.Any])
+    inline def setGrid_resize(value: Boolean): Self = StObject.set(x, "grid_resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrid_resizer_attribute(value: String): Self = StObject.set(x, "grid_resizer_attribute", value.asInstanceOf[js.Any])
+    inline def setGrid_resizer_attribute(value: String): Self = StObject.set(x, "grid_resizer_attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrid_resizer_column_attribute(value: String): Self = StObject.set(x, "grid_resizer_column_attribute", value.asInstanceOf[js.Any])
+    inline def setGrid_resizer_column_attribute(value: String): Self = StObject.set(x, "grid_resizer_column_attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrid_width(value: Double): Self = StObject.set(x, "grid_width", value.asInstanceOf[js.Any])
+    inline def setGrid_width(value: Double): Self = StObject.set(x, "grid_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlight_critical_path(value: Boolean): Self = StObject.set(x, "highlight_critical_path", value.asInstanceOf[js.Any])
+    inline def setHighlight_critical_path(value: Boolean): Self = StObject.set(x, "highlight_critical_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherit_scale_class(value: Boolean): Self = StObject.set(x, "inherit_scale_class", value.asInstanceOf[js.Any])
+    inline def setInherit_scale_class(value: Boolean): Self = StObject.set(x, "inherit_scale_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitial_scroll(value: Boolean): Self = StObject.set(x, "initial_scroll", value.asInstanceOf[js.Any])
+    inline def setInitial_scroll(value: Boolean): Self = StObject.set(x, "initial_scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_grid_width(value: Boolean): Self = StObject.set(x, "keep_grid_width", value.asInstanceOf[js.Any])
+    inline def setKeep_grid_width(value: Boolean): Self = StObject.set(x, "keep_grid_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboard_navigation(value: Boolean): Self = StObject.set(x, "keyboard_navigation", value.asInstanceOf[js.Any])
+    inline def setKeyboard_navigation(value: Boolean): Self = StObject.set(x, "keyboard_navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboard_navigation_cells(value: Boolean): Self = StObject.set(x, "keyboard_navigation_cells", value.asInstanceOf[js.Any])
+    inline def setKeyboard_navigation_cells(value: Boolean): Self = StObject.set(x, "keyboard_navigation_cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer_attribute(value: String): Self = StObject.set(x, "layer_attribute", value.asInstanceOf[js.Any])
+    inline def setLayer_attribute(value: String): Self = StObject.set(x, "layer_attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightbox(value: js.Any): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
+    inline def setLightbox(value: js.Any): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightbox_additional_height(value: Double): Self = StObject.set(x, "lightbox_additional_height", value.asInstanceOf[js.Any])
+    inline def setLightbox_additional_height(value: Double): Self = StObject.set(x, "lightbox_additional_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_arrow_size(value: Double): Self = StObject.set(x, "link_arrow_size", value.asInstanceOf[js.Any])
+    inline def setLink_arrow_size(value: Double): Self = StObject.set(x, "link_arrow_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_attribute(value: String): Self = StObject.set(x, "link_attribute", value.asInstanceOf[js.Any])
+    inline def setLink_attribute(value: String): Self = StObject.set(x, "link_attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_line_width(value: Double): Self = StObject.set(x, "link_line_width", value.asInstanceOf[js.Any])
+    inline def setLink_line_width(value: Double): Self = StObject.set(x, "link_line_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_wrapper_width(value: Double): Self = StObject.set(x, "link_wrapper_width", value.asInstanceOf[js.Any])
+    inline def setLink_wrapper_width(value: Double): Self = StObject.set(x, "link_wrapper_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: js.Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Any): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_column_width(value: Double): Self = StObject.set(x, "min_column_width", value.asInstanceOf[js.Any])
+    inline def setMin_column_width(value: Double): Self = StObject.set(x, "min_column_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_duration(value: Double): Self = StObject.set(x, "min_duration", value.asInstanceOf[js.Any])
+    inline def setMin_duration(value: Double): Self = StObject.set(x, "min_duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_grid_column_width(value: Double): Self = StObject.set(x, "min_grid_column_width", value.asInstanceOf[js.Any])
+    inline def setMin_grid_column_width(value: Double): Self = StObject.set(x, "min_grid_column_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    inline def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiselect_one_level(value: Boolean): Self = StObject.set(x, "multiselect_one_level", value.asInstanceOf[js.Any])
+    inline def setMultiselect_one_level(value: Boolean): Self = StObject.set(x, "multiselect_one_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen_tree_initially(value: Boolean): Self = StObject.set(x, "open_tree_initially", value.asInstanceOf[js.Any])
+    inline def setOpen_tree_initially(value: Boolean): Self = StObject.set(x, "open_tree_initially", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder_branch(value: String | Boolean): Self = StObject.set(x, "order_branch", value.asInstanceOf[js.Any])
+    inline def setOrder_branch(value: String | Boolean): Self = StObject.set(x, "order_branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder_branch_free(value: Boolean): Self = StObject.set(x, "order_branch_free", value.asInstanceOf[js.Any])
+    inline def setOrder_branch_free(value: Boolean): Self = StObject.set(x, "order_branch_free", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder_task(value: Boolean): Self = StObject.set(x, "placeholder_task", value.asInstanceOf[js.Any])
+    inline def setPlaceholder_task(value: Boolean): Self = StObject.set(x, "placeholder_task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserve_scroll(value: Boolean): Self = StObject.set(x, "preserve_scroll", value.asInstanceOf[js.Any])
+    inline def setPreserve_scroll(value: Boolean): Self = StObject.set(x, "preserve_scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevent_default_scroll(value: Boolean): Self = StObject.set(x, "prevent_default_scroll", value.asInstanceOf[js.Any])
+    inline def setPrevent_default_scroll(value: Boolean): Self = StObject.set(x, "prevent_default_scroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuick_info_detached(value: Boolean): Self = StObject.set(x, "quick_info_detached", value.asInstanceOf[js.Any])
+    inline def setQuick_info_detached(value: Boolean): Self = StObject.set(x, "quick_info_detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickinfo_buttons(value: js.Array[js.Any]): Self = StObject.set(x, "quickinfo_buttons", value.asInstanceOf[js.Any])
+    inline def setQuickinfo_buttons(value: js.Array[js.Any]): Self = StObject.set(x, "quickinfo_buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickinfo_buttonsVarargs(value: js.Any*): Self = StObject.set(x, "quickinfo_buttons", js.Array(value :_*))
+    inline def setQuickinfo_buttonsVarargs(value: js.Any*): Self = StObject.set(x, "quickinfo_buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonly_property(value: String): Self = StObject.set(x, "readonly_property", value.asInstanceOf[js.Any])
+    inline def setReadonly_property(value: String): Self = StObject.set(x, "readonly_property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedo(value: Boolean): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
+    inline def setRedo(value: Boolean): Self = StObject.set(x, "redo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_calendars(value: js.Any): Self = StObject.set(x, "resource_calendars", value.asInstanceOf[js.Any])
+    inline def setResource_calendars(value: js.Any): Self = StObject.set(x, "resource_calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_property(value: String): Self = StObject.set(x, "resource_property", value.asInstanceOf[js.Any])
+    inline def setResource_property(value: String): Self = StObject.set(x, "resource_property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_render_empty_cells(value: Boolean): Self = StObject.set(x, "resource_render_empty_cells", value.asInstanceOf[js.Any])
+    inline def setResource_render_empty_cells(value: Boolean): Self = StObject.set(x, "resource_render_empty_cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource_store(value: String): Self = StObject.set(x, "resource_store", value.asInstanceOf[js.Any])
+    inline def setResource_store(value: String): Self = StObject.set(x, "resource_store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot_id(value: String | Double): Self = StObject.set(x, "root_id", value.asInstanceOf[js.Any])
+    inline def setRoot_id(value: String | Double): Self = StObject.set(x, "root_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRound_dnd_dates(value: Boolean): Self = StObject.set(x, "round_dnd_dates", value.asInstanceOf[js.Any])
+    inline def setRound_dnd_dates(value: Boolean): Self = StObject.set(x, "round_dnd_dates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow_height(value: Double): Self = StObject.set(x, "row_height", value.asInstanceOf[js.Any])
+    inline def setRow_height(value: Double): Self = StObject.set(x, "row_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+    inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale_height(value: Double): Self = StObject.set(x, "scale_height", value.asInstanceOf[js.Any])
+    inline def setScale_height(value: Double): Self = StObject.set(x, "scale_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale_offset_minimal(value: Boolean): Self = StObject.set(x, "scale_offset_minimal", value.asInstanceOf[js.Any])
+    inline def setScale_offset_minimal(value: Boolean): Self = StObject.set(x, "scale_offset_minimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale_unit(value: String): Self = StObject.set(x, "scale_unit", value.asInstanceOf[js.Any])
+    inline def setScale_unit(value: String): Self = StObject.set(x, "scale_unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll_on_click(value: Boolean): Self = StObject.set(x, "scroll_on_click", value.asInstanceOf[js.Any])
+    inline def setScroll_on_click(value: Boolean): Self = StObject.set(x, "scroll_on_click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScroll_size(value: Double): Self = StObject.set(x, "scroll_size", value.asInstanceOf[js.Any])
+    inline def setScroll_size(value: Double): Self = StObject.set(x, "scroll_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect_task(value: Boolean): Self = StObject.set(x, "select_task", value.asInstanceOf[js.Any])
+    inline def setSelect_task(value: Boolean): Self = StObject.set(x, "select_task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer_utc(value: Boolean): Self = StObject.set(x, "server_utc", value.asInstanceOf[js.Any])
+    inline def setServer_utc(value: Boolean): Self = StObject.set(x, "server_utc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_chart(value: Boolean): Self = StObject.set(x, "show_chart", value.asInstanceOf[js.Any])
+    inline def setShow_chart(value: Boolean): Self = StObject.set(x, "show_chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_errors(value: Boolean): Self = StObject.set(x, "show_errors", value.asInstanceOf[js.Any])
+    inline def setShow_errors(value: Boolean): Self = StObject.set(x, "show_errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_grid(value: Boolean): Self = StObject.set(x, "show_grid", value.asInstanceOf[js.Any])
+    inline def setShow_grid(value: Boolean): Self = StObject.set(x, "show_grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_links(value: Boolean): Self = StObject.set(x, "show_links", value.asInstanceOf[js.Any])
+    inline def setShow_links(value: Boolean): Self = StObject.set(x, "show_links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_markers(value: Boolean): Self = StObject.set(x, "show_markers", value.asInstanceOf[js.Any])
+    inline def setShow_markers(value: Boolean): Self = StObject.set(x, "show_markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_progress(value: Boolean): Self = StObject.set(x, "show_progress", value.asInstanceOf[js.Any])
+    inline def setShow_progress(value: Boolean): Self = StObject.set(x, "show_progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_quick_info(value: Boolean): Self = StObject.set(x, "show_quick_info", value.asInstanceOf[js.Any])
+    inline def setShow_quick_info(value: Boolean): Self = StObject.set(x, "show_quick_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_task_cells(value: Boolean): Self = StObject.set(x, "show_task_cells", value.asInstanceOf[js.Any])
+    inline def setShow_task_cells(value: Boolean): Self = StObject.set(x, "show_task_cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_unscheduled(value: Boolean): Self = StObject.set(x, "show_unscheduled", value.asInstanceOf[js.Any])
+    inline def setShow_unscheduled(value: Boolean): Self = StObject.set(x, "show_unscheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip_off_time(value: Boolean): Self = StObject.set(x, "skip_off_time", value.asInstanceOf[js.Any])
+    inline def setSkip_off_time(value: Boolean): Self = StObject.set(x, "skip_off_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmart_rendering(value: Boolean): Self = StObject.set(x, "smart_rendering", value.asInstanceOf[js.Any])
+    inline def setSmart_rendering(value: Boolean): Self = StObject.set(x, "smart_rendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmart_scales(value: Boolean): Self = StObject.set(x, "smart_scales", value.asInstanceOf[js.Any])
+    inline def setSmart_scales(value: Boolean): Self = StObject.set(x, "smart_scales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_date(value: Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
+    inline def setStart_date(value: Date): Self = StObject.set(x, "start_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_on_monday(value: Boolean): Self = StObject.set(x, "start_on_monday", value.asInstanceOf[js.Any])
+    inline def setStart_on_monday(value: Boolean): Self = StObject.set(x, "start_on_monday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatic_background(value: Boolean): Self = StObject.set(x, "static_background", value.asInstanceOf[js.Any])
+    inline def setStatic_background(value: Boolean): Self = StObject.set(x, "static_background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscales(value: js.Array[js.Any]): Self = StObject.set(x, "subscales", value.asInstanceOf[js.Any])
+    inline def setSubscales(value: js.Array[js.Any]): Self = StObject.set(x, "subscales", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscalesVarargs(value: js.Any*): Self = StObject.set(x, "subscales", js.Array(value :_*))
+    inline def setSubscalesVarargs(value: js.Any*): Self = StObject.set(x, "subscales", js.Array(value :_*))
     
-    @scala.inline
-    def setTask_attribute(value: String): Self = StObject.set(x, "task_attribute", value.asInstanceOf[js.Any])
+    inline def setTask_attribute(value: String): Self = StObject.set(x, "task_attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask_date(value: String): Self = StObject.set(x, "task_date", value.asInstanceOf[js.Any])
+    inline def setTask_date(value: String): Self = StObject.set(x, "task_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask_height(value: Double): Self = StObject.set(x, "task_height", value.asInstanceOf[js.Any])
+    inline def setTask_height(value: Double): Self = StObject.set(x, "task_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask_scroll_offset(value: Double): Self = StObject.set(x, "task_scroll_offset", value.asInstanceOf[js.Any])
+    inline def setTask_scroll_offset(value: Double): Self = StObject.set(x, "task_scroll_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_picker(value: String): Self = StObject.set(x, "time_picker", value.asInstanceOf[js.Any])
+    inline def setTime_picker(value: String): Self = StObject.set(x, "time_picker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_step(value: Double): Self = StObject.set(x, "time_step", value.asInstanceOf[js.Any])
+    inline def setTime_step(value: Double): Self = StObject.set(x, "time_step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip_hide_timeout(value: Double): Self = StObject.set(x, "tooltip_hide_timeout", value.asInstanceOf[js.Any])
+    inline def setTooltip_hide_timeout(value: Double): Self = StObject.set(x, "tooltip_hide_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip_offset_x(value: Double): Self = StObject.set(x, "tooltip_offset_x", value.asInstanceOf[js.Any])
+    inline def setTooltip_offset_x(value: Double): Self = StObject.set(x, "tooltip_offset_x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip_offset_y(value: Double): Self = StObject.set(x, "tooltip_offset_y", value.asInstanceOf[js.Any])
+    inline def setTooltip_offset_y(value: Double): Self = StObject.set(x, "tooltip_offset_y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip_timeout(value: Double): Self = StObject.set(x, "tooltip_timeout", value.asInstanceOf[js.Any])
+    inline def setTooltip_timeout(value: Double): Self = StObject.set(x, "tooltip_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch(value: Boolean | String): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Boolean | String): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch_drag(value: Double | Boolean): Self = StObject.set(x, "touch_drag", value.asInstanceOf[js.Any])
+    inline def setTouch_drag(value: Double | Boolean): Self = StObject.set(x, "touch_drag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch_feedback(value: Boolean): Self = StObject.set(x, "touch_feedback", value.asInstanceOf[js.Any])
+    inline def setTouch_feedback(value: Boolean): Self = StObject.set(x, "touch_feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch_feedback_duration(value: Double): Self = StObject.set(x, "touch_feedback_duration", value.asInstanceOf[js.Any])
+    inline def setTouch_feedback_duration(value: Double): Self = StObject.set(x, "touch_feedback_duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType_renderers(value: js.Any): Self = StObject.set(x, "type_renderers", value.asInstanceOf[js.Any])
+    inline def setType_renderers(value: js.Any): Self = StObject.set(x, "type_renderers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo(value: Boolean): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    inline def setUndo(value: Boolean): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo_actions(value: js.Any): Self = StObject.set(x, "undo_actions", value.asInstanceOf[js.Any])
+    inline def setUndo_actions(value: js.Any): Self = StObject.set(x, "undo_actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo_steps(value: Double): Self = StObject.set(x, "undo_steps", value.asInstanceOf[js.Any])
+    inline def setUndo_steps(value: Double): Self = StObject.set(x, "undo_steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo_types(value: js.Any): Self = StObject.set(x, "undo_types", value.asInstanceOf[js.Any])
+    inline def setUndo_types(value: js.Any): Self = StObject.set(x, "undo_types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWai_aria_attributes(value: Boolean): Self = StObject.set(x, "wai_aria_attributes", value.asInstanceOf[js.Any])
+    inline def setWai_aria_attributes(value: Boolean): Self = StObject.set(x, "wai_aria_attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWork_time(value: Boolean): Self = StObject.set(x, "work_time", value.asInstanceOf[js.Any])
+    inline def setWork_time(value: Boolean): Self = StObject.set(x, "work_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXml_date(value: String): Self = StObject.set(x, "xml_date", value.asInstanceOf[js.Any])
+    inline def setXml_date(value: String): Self = StObject.set(x, "xml_date", value.asInstanceOf[js.Any])
   }
 }

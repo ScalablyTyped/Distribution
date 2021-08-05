@@ -18,28 +18,21 @@ trait GetProvisionedProductOutputsOutput extends StObject {
 }
 object GetProvisionedProductOutputsOutput {
   
-  @scala.inline
-  def apply(): GetProvisionedProductOutputsOutput = {
+  inline def apply(): GetProvisionedProductOutputsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProvisionedProductOutputsOutput]
   }
   
-  @scala.inline
-  implicit class GetProvisionedProductOutputsOutputMutableBuilder[Self <: GetProvisionedProductOutputsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetProvisionedProductOutputsOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: RecordOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: RecordOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: RecordOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: RecordOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
   }
 }

@@ -22,8 +22,7 @@ object circularProgressbarMod {
     @JSImport("react-circular-progressbar/dist/CircularProgressbar", "default.defaultProps")
     @js.native
     def defaultProps: CircularProgressbarDefaultProps = js.native
-    @scala.inline
-    def defaultProps_=(x: CircularProgressbarDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CircularProgressbarDefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

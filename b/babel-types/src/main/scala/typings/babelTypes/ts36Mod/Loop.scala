@@ -14,15 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Loop extends StObject
 object Loop {
   
-  @scala.inline
-  def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
+  inline def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.DoWhileStatement_]
   }
   
-  @scala.inline
-  def ForInStatement_(
+  inline def ForInStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -35,8 +33,7 @@ object Loop {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForInStatement_]
   }
   
-  @scala.inline
-  def ForOfStatement_(
+  inline def ForOfStatement_(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -49,8 +46,7 @@ object Loop {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForOfStatement_]
   }
   
-  @scala.inline
-  def ForStatement_(
+  inline def ForStatement_(
     body: Statement,
     end: Double,
     init: VariableDeclaration_ | Expression,
@@ -64,8 +60,7 @@ object Loop {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ForStatement_]
   }
   
-  @scala.inline
-  def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.WhileStatement_ = {
+  inline def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typings.babelTypes.ts36Mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.WhileStatement_]

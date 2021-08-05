@@ -16,31 +16,23 @@ trait CylinderSelectors extends StObject {
 }
 object CylinderSelectors {
   
-  @scala.inline
-  def apply(): CylinderSelectors = {
+  inline def apply(): CylinderSelectors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CylinderSelectors]
   }
   
-  @scala.inline
-  implicit class CylinderSelectorsMutableBuilder[Self <: CylinderSelectors] (val x: Self) extends AnyVal {
+  extension [Self <: CylinderSelectors](x: Self) {
     
-    @scala.inline
-    def setBody(value: CylinderBodyAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: CylinderBodyAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTop(value: SVGEllipseAttributes): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: SVGEllipseAttributes): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

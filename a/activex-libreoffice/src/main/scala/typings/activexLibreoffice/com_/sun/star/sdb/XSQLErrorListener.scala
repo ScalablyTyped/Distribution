@@ -20,8 +20,7 @@ trait XSQLErrorListener
 }
 object XSQLErrorListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     errorOccured: SQLErrorEvent => Unit,
@@ -32,10 +31,8 @@ object XSQLErrorListener {
     __obj.asInstanceOf[XSQLErrorListener]
   }
   
-  @scala.inline
-  implicit class XSQLErrorListenerMutableBuilder[Self <: XSQLErrorListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSQLErrorListener](x: Self) {
     
-    @scala.inline
-    def setErrorOccured(value: SQLErrorEvent => Unit): Self = StObject.set(x, "errorOccured", js.Any.fromFunction1(value))
+    inline def setErrorOccured(value: SQLErrorEvent => Unit): Self = StObject.set(x, "errorOccured", js.Any.fromFunction1(value))
   }
 }

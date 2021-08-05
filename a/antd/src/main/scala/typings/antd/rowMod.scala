@@ -29,38 +29,28 @@ object rowMod extends Shortcut {
   }
   object RowProps {
     
-    @scala.inline
-    def apply(colon: Boolean, index: Double, prefixCls: String, row: js.Array[ReactElement], vertical: Boolean): RowProps = {
+    inline def apply(colon: Boolean, index: Double, prefixCls: String, row: js.Array[ReactElement], vertical: Boolean): RowProps = {
       val __obj = js.Dynamic.literal(colon = colon.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowProps]
     }
     
-    @scala.inline
-    implicit class RowPropsMutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
+    extension [Self <: RowProps](x: Self) {
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
+      inline def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: js.Array[ReactElement]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: js.Array[ReactElement]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowVarargs(value: ReactElement*): Self = StObject.set(x, "row", js.Array(value :_*))
+      inline def setRowVarargs(value: ReactElement*): Self = StObject.set(x, "row", js.Array(value :_*))
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
   

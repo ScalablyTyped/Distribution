@@ -12,8 +12,7 @@ trait IStatementSyntax
 }
 object IStatementSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -42,10 +41,8 @@ object IStatementSyntax {
     __obj.asInstanceOf[IStatementSyntax]
   }
   
-  @scala.inline
-  implicit class IStatementSyntaxMutableBuilder[Self <: IStatementSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IStatementSyntax](x: Self) {
     
-    @scala.inline
-    def setIsStatement(value: () => Boolean): Self = StObject.set(x, "isStatement", js.Any.fromFunction0(value))
+    inline def setIsStatement(value: () => Boolean): Self = StObject.set(x, "isStatement", js.Any.fromFunction0(value))
   }
 }

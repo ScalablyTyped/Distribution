@@ -26,22 +26,17 @@ trait INewFileResponse extends StObject {
 }
 object INewFileResponse {
   
-  @scala.inline
-  def apply(id: String, name: String, source: String): INewFileResponse = {
+  inline def apply(id: String, name: String, source: String): INewFileResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewFileResponse]
   }
   
-  @scala.inline
-  implicit class INewFileResponseMutableBuilder[Self <: INewFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: INewFileResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

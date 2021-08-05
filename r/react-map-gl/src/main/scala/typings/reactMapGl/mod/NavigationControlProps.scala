@@ -26,61 +26,43 @@ trait NavigationControlProps
 }
 object NavigationControlProps {
   
-  @scala.inline
-  def apply(): NavigationControlProps = {
+  inline def apply(): NavigationControlProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationControlProps]
   }
   
-  @scala.inline
-  implicit class NavigationControlPropsMutableBuilder[Self <: NavigationControlProps] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationControlProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCompassLabel(value: String): Self = StObject.set(x, "compassLabel", value.asInstanceOf[js.Any])
+    inline def setCompassLabel(value: String): Self = StObject.set(x, "compassLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompassLabelUndefined: Self = StObject.set(x, "compassLabel", js.undefined)
+    inline def setCompassLabelUndefined: Self = StObject.set(x, "compassLabel", js.undefined)
     
-    @scala.inline
-    def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
+    inline def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
+    inline def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
     
-    @scala.inline
-    def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction1(value))
+    inline def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
+    inline def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
-    @scala.inline
-    def setShowCompass(value: Boolean): Self = StObject.set(x, "showCompass", value.asInstanceOf[js.Any])
+    inline def setShowCompass(value: Boolean): Self = StObject.set(x, "showCompass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCompassUndefined: Self = StObject.set(x, "showCompass", js.undefined)
+    inline def setShowCompassUndefined: Self = StObject.set(x, "showCompass", js.undefined)
     
-    @scala.inline
-    def setShowZoom(value: Boolean): Self = StObject.set(x, "showZoom", value.asInstanceOf[js.Any])
+    inline def setShowZoom(value: Boolean): Self = StObject.set(x, "showZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowZoomUndefined: Self = StObject.set(x, "showZoom", js.undefined)
+    inline def setShowZoomUndefined: Self = StObject.set(x, "showZoom", js.undefined)
     
-    @scala.inline
-    def setZoomInLabel(value: String): Self = StObject.set(x, "zoomInLabel", value.asInstanceOf[js.Any])
+    inline def setZoomInLabel(value: String): Self = StObject.set(x, "zoomInLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomInLabelUndefined: Self = StObject.set(x, "zoomInLabel", js.undefined)
+    inline def setZoomInLabelUndefined: Self = StObject.set(x, "zoomInLabel", js.undefined)
     
-    @scala.inline
-    def setZoomOutLabel(value: String): Self = StObject.set(x, "zoomOutLabel", value.asInstanceOf[js.Any])
+    inline def setZoomOutLabel(value: String): Self = StObject.set(x, "zoomOutLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomOutLabelUndefined: Self = StObject.set(x, "zoomOutLabel", js.undefined)
+    inline def setZoomOutLabelUndefined: Self = StObject.set(x, "zoomOutLabel", js.undefined)
   }
 }

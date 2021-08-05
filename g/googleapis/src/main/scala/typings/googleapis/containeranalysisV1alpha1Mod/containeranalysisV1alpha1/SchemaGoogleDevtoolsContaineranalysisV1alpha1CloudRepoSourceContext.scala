@@ -27,31 +27,23 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext extend
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext = {
+  inline def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContextMutableBuilder[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext](x: Self) {
     
-    @scala.inline
-    def setAliasContext(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext): Self = StObject.set(x, "aliasContext", value.asInstanceOf[js.Any])
+    inline def setAliasContext(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext): Self = StObject.set(x, "aliasContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasContextUndefined: Self = StObject.set(x, "aliasContext", js.undefined)
+    inline def setAliasContextUndefined: Self = StObject.set(x, "aliasContext", js.undefined)
     
-    @scala.inline
-    def setRepoId(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId): Self = StObject.set(x, "repoId", value.asInstanceOf[js.Any])
+    inline def setRepoId(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId): Self = StObject.set(x, "repoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoIdUndefined: Self = StObject.set(x, "repoId", js.undefined)
+    inline def setRepoIdUndefined: Self = StObject.set(x, "repoId", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

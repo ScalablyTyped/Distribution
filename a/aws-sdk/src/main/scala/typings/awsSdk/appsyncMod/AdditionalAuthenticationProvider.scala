@@ -23,31 +23,23 @@ trait AdditionalAuthenticationProvider extends StObject {
 }
 object AdditionalAuthenticationProvider {
   
-  @scala.inline
-  def apply(): AdditionalAuthenticationProvider = {
+  inline def apply(): AdditionalAuthenticationProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdditionalAuthenticationProvider]
   }
   
-  @scala.inline
-  implicit class AdditionalAuthenticationProviderMutableBuilder[Self <: AdditionalAuthenticationProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AdditionalAuthenticationProvider](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
-    @scala.inline
-    def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = StObject.set(x, "openIDConnectConfig", value.asInstanceOf[js.Any])
+    inline def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = StObject.set(x, "openIDConnectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenIDConnectConfigUndefined: Self = StObject.set(x, "openIDConnectConfig", js.undefined)
+    inline def setOpenIDConnectConfigUndefined: Self = StObject.set(x, "openIDConnectConfig", js.undefined)
     
-    @scala.inline
-    def setUserPoolConfig(value: CognitoUserPoolConfig): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
+    inline def setUserPoolConfig(value: CognitoUserPoolConfig): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
+    inline def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
   }
 }

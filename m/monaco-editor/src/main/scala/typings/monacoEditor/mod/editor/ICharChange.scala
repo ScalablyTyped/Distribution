@@ -18,8 +18,7 @@ trait ICharChange
 }
 object ICharChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     modifiedEndColumn: Double,
     modifiedEndLineNumber: Double,
     modifiedStartColumn: Double,
@@ -33,19 +32,14 @@ object ICharChange {
     __obj.asInstanceOf[ICharChange]
   }
   
-  @scala.inline
-  implicit class ICharChangeMutableBuilder[Self <: ICharChange] (val x: Self) extends AnyVal {
+  extension [Self <: ICharChange](x: Self) {
     
-    @scala.inline
-    def setModifiedEndColumn(value: Double): Self = StObject.set(x, "modifiedEndColumn", value.asInstanceOf[js.Any])
+    inline def setModifiedEndColumn(value: Double): Self = StObject.set(x, "modifiedEndColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedStartColumn(value: Double): Self = StObject.set(x, "modifiedStartColumn", value.asInstanceOf[js.Any])
+    inline def setModifiedStartColumn(value: Double): Self = StObject.set(x, "modifiedStartColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEndColumn(value: Double): Self = StObject.set(x, "originalEndColumn", value.asInstanceOf[js.Any])
+    inline def setOriginalEndColumn(value: Double): Self = StObject.set(x, "originalEndColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalStartColumn(value: Double): Self = StObject.set(x, "originalStartColumn", value.asInstanceOf[js.Any])
+    inline def setOriginalStartColumn(value: Double): Self = StObject.set(x, "originalStartColumn", value.asInstanceOf[js.Any])
   }
 }

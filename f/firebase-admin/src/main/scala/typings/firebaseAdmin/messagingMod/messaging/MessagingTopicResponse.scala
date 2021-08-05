@@ -14,16 +14,13 @@ trait MessagingTopicResponse extends StObject {
 }
 object MessagingTopicResponse {
   
-  @scala.inline
-  def apply(messageId: Double): MessagingTopicResponse = {
+  inline def apply(messageId: Double): MessagingTopicResponse = {
     val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingTopicResponse]
   }
   
-  @scala.inline
-  implicit class MessagingTopicResponseMutableBuilder[Self <: MessagingTopicResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingTopicResponse](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
   }
 }

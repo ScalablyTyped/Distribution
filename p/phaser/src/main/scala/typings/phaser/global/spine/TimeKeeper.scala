@@ -13,16 +13,16 @@ class TimeKeeper ()
   /* CompleteClass */
   var delta: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var frameCount: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var frameTime: js.Any = js.native
   
   /* CompleteClass */
   var framesPerSecond: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var lastTime: js.Any = js.native
   
   /* CompleteClass */

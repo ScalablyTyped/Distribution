@@ -70,73 +70,51 @@ trait SchemaItem extends StObject {
 }
 object SchemaItem {
   
-  @scala.inline
-  def apply(): SchemaItem = {
+  inline def apply(): SchemaItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaItem]
   }
   
-  @scala.inline
-  implicit class SchemaItemMutableBuilder[Self <: SchemaItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItem](x: Self) {
     
-    @scala.inline
-    def setAcl(value: SchemaItemAcl): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: SchemaItemAcl): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+    inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
-    @scala.inline
-    def setContent(value: SchemaItemContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: SchemaItemContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+    inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+    inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaItemMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaItemMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaItemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStructuredData(value: SchemaItemStructuredData): Self = StObject.set(x, "structuredData", value.asInstanceOf[js.Any])
+    inline def setStructuredData(value: SchemaItemStructuredData): Self = StObject.set(x, "structuredData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredDataUndefined: Self = StObject.set(x, "structuredData", js.undefined)
+    inline def setStructuredDataUndefined: Self = StObject.set(x, "structuredData", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

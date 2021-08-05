@@ -13,19 +13,15 @@ trait InviteAccountToOrganizationResponse extends StObject {
 }
 object InviteAccountToOrganizationResponse {
   
-  @scala.inline
-  def apply(): InviteAccountToOrganizationResponse = {
+  inline def apply(): InviteAccountToOrganizationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InviteAccountToOrganizationResponse]
   }
   
-  @scala.inline
-  implicit class InviteAccountToOrganizationResponseMutableBuilder[Self <: InviteAccountToOrganizationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InviteAccountToOrganizationResponse](x: Self) {
     
-    @scala.inline
-    def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
+    inline def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
+    inline def setHandshakeUndefined: Self = StObject.set(x, "Handshake", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait ScheduleAction extends StObject {
 }
 object ScheduleAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionName: string,
     ScheduleActionSettings: ScheduleActionSettings,
     ScheduleActionStartSettings: ScheduleActionStartSettings
@@ -33,16 +32,12 @@ object ScheduleAction {
     __obj.asInstanceOf[ScheduleAction]
   }
   
-  @scala.inline
-  implicit class ScheduleActionMutableBuilder[Self <: ScheduleAction] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleAction](x: Self) {
     
-    @scala.inline
-    def setActionName(value: string): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: string): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleActionSettings(value: ScheduleActionSettings): Self = StObject.set(x, "ScheduleActionSettings", value.asInstanceOf[js.Any])
+    inline def setScheduleActionSettings(value: ScheduleActionSettings): Self = StObject.set(x, "ScheduleActionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleActionStartSettings(value: ScheduleActionStartSettings): Self = StObject.set(x, "ScheduleActionStartSettings", value.asInstanceOf[js.Any])
+    inline def setScheduleActionStartSettings(value: ScheduleActionStartSettings): Self = StObject.set(x, "ScheduleActionStartSettings", value.asInstanceOf[js.Any])
   }
 }

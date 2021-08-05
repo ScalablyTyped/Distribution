@@ -12,19 +12,15 @@ trait TextRotation extends StObject {
 }
 object TextRotation {
   
-  @scala.inline
-  def apply(angle: Double, vertical: Boolean): TextRotation = {
+  inline def apply(angle: Double, vertical: Boolean): TextRotation = {
     val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRotation]
   }
   
-  @scala.inline
-  implicit class TextRotationMutableBuilder[Self <: TextRotation] (val x: Self) extends AnyVal {
+  extension [Self <: TextRotation](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
   }
 }

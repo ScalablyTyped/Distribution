@@ -97,8 +97,7 @@ object Control_ {
     var options_Zoom: typings.leaflet.mod.Control_.ZoomOptions = js.native
   }
   
-  @scala.inline
-  def extend[T /* <: js.Object */](props: T): InstantiableT[T] & typings.leaflet.anon.Attribution = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[InstantiableT[T] & typings.leaflet.anon.Attribution]
+  inline def extend[T /* <: js.Object */](props: T): InstantiableT[T] & typings.leaflet.anon.Attribution = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[InstantiableT[T] & typings.leaflet.anon.Attribution]
   
   trait AttributionOptions
     extends StObject
@@ -108,20 +107,16 @@ object Control_ {
   }
   object AttributionOptions {
     
-    @scala.inline
-    def apply(): AttributionOptions = {
+    inline def apply(): AttributionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributionOptions]
     }
     
-    @scala.inline
-    implicit class AttributionOptionsMutableBuilder[Self <: AttributionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AttributionOptions](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String | Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String | Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -139,32 +134,24 @@ object Control_ {
   }
   object LayersOptions {
     
-    @scala.inline
-    def apply(): LayersOptions = {
+    inline def apply(): LayersOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayersOptions]
     }
     
-    @scala.inline
-    implicit class LayersOptionsMutableBuilder[Self <: LayersOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LayersOptions](x: Self) {
       
-      @scala.inline
-      def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
+      inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
+      inline def setAutoZIndexUndefined: Self = StObject.set(x, "autoZIndex", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setHideSingleBase(value: Boolean): Self = StObject.set(x, "hideSingleBase", value.asInstanceOf[js.Any])
+      inline def setHideSingleBase(value: Boolean): Self = StObject.set(x, "hideSingleBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideSingleBaseUndefined: Self = StObject.set(x, "hideSingleBase", js.undefined)
+      inline def setHideSingleBaseUndefined: Self = StObject.set(x, "hideSingleBase", js.undefined)
     }
   }
   
@@ -182,38 +169,28 @@ object Control_ {
   }
   object ScaleOptions {
     
-    @scala.inline
-    def apply(): ScaleOptions = {
+    inline def apply(): ScaleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScaleOptions]
     }
     
-    @scala.inline
-    implicit class ScaleOptionsMutableBuilder[Self <: ScaleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScaleOptions](x: Self) {
       
-      @scala.inline
-      def setImperial(value: Boolean): Self = StObject.set(x, "imperial", value.asInstanceOf[js.Any])
+      inline def setImperial(value: Boolean): Self = StObject.set(x, "imperial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImperialUndefined: Self = StObject.set(x, "imperial", js.undefined)
+      inline def setImperialUndefined: Self = StObject.set(x, "imperial", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMetric(value: Boolean): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+      inline def setMetric(value: Boolean): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+      inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
       
-      @scala.inline
-      def setUpdateWhenIdle(value: Boolean): Self = StObject.set(x, "updateWhenIdle", value.asInstanceOf[js.Any])
+      inline def setUpdateWhenIdle(value: Boolean): Self = StObject.set(x, "updateWhenIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateWhenIdleUndefined: Self = StObject.set(x, "updateWhenIdle", js.undefined)
+      inline def setUpdateWhenIdleUndefined: Self = StObject.set(x, "updateWhenIdle", js.undefined)
     }
   }
   
@@ -231,38 +208,28 @@ object Control_ {
   }
   object ZoomOptions {
     
-    @scala.inline
-    def apply(): typings.leaflet.mod.Control_.ZoomOptions = {
+    inline def apply(): typings.leaflet.mod.Control_.ZoomOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.leaflet.mod.Control_.ZoomOptions]
     }
     
-    @scala.inline
-    implicit class ZoomOptionsMutableBuilder[Self <: typings.leaflet.mod.Control_.ZoomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.leaflet.mod.Control_.ZoomOptions](x: Self) {
       
-      @scala.inline
-      def setZoomInText(value: String): Self = StObject.set(x, "zoomInText", value.asInstanceOf[js.Any])
+      inline def setZoomInText(value: String): Self = StObject.set(x, "zoomInText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomInTextUndefined: Self = StObject.set(x, "zoomInText", js.undefined)
+      inline def setZoomInTextUndefined: Self = StObject.set(x, "zoomInText", js.undefined)
       
-      @scala.inline
-      def setZoomInTitle(value: String): Self = StObject.set(x, "zoomInTitle", value.asInstanceOf[js.Any])
+      inline def setZoomInTitle(value: String): Self = StObject.set(x, "zoomInTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomInTitleUndefined: Self = StObject.set(x, "zoomInTitle", js.undefined)
+      inline def setZoomInTitleUndefined: Self = StObject.set(x, "zoomInTitle", js.undefined)
       
-      @scala.inline
-      def setZoomOutText(value: String): Self = StObject.set(x, "zoomOutText", value.asInstanceOf[js.Any])
+      inline def setZoomOutText(value: String): Self = StObject.set(x, "zoomOutText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomOutTextUndefined: Self = StObject.set(x, "zoomOutText", js.undefined)
+      inline def setZoomOutTextUndefined: Self = StObject.set(x, "zoomOutText", js.undefined)
       
-      @scala.inline
-      def setZoomOutTitle(value: String): Self = StObject.set(x, "zoomOutTitle", value.asInstanceOf[js.Any])
+      inline def setZoomOutTitle(value: String): Self = StObject.set(x, "zoomOutTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomOutTitleUndefined: Self = StObject.set(x, "zoomOutTitle", js.undefined)
+      inline def setZoomOutTitleUndefined: Self = StObject.set(x, "zoomOutTitle", js.undefined)
     }
   }
 }

@@ -17,13 +17,11 @@ object WorkspaceContext {
   @JSImport("akumina-core", "Digispace.WorkspaceContext.IsCurrentGraphUserWorkspaceOwner")
   @js.native
   def IsCurrentGraphUserWorkspaceOwner: Boolean = js.native
-  @scala.inline
-  def IsCurrentGraphUserWorkspaceOwner_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsCurrentGraphUserWorkspaceOwner")(x.asInstanceOf[js.Any])
+  inline def IsCurrentGraphUserWorkspaceOwner_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsCurrentGraphUserWorkspaceOwner")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("akumina-core", "Digispace.WorkspaceContext.groupId")
   @js.native
   def groupId: Boolean = js.native
-  @scala.inline
-  def groupId_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupId")(x.asInstanceOf[js.Any])
+  inline def groupId_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupId")(x.asInstanceOf[js.Any])
 }

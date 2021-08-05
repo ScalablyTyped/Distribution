@@ -14,17 +14,14 @@ trait HttpUploadProgressEvent
 }
 object HttpUploadProgressEvent {
   
-  @scala.inline
-  def apply(loaded: Double, `type`: UploadProgress): HttpUploadProgressEvent = {
+  inline def apply(loaded: Double, `type`: UploadProgress): HttpUploadProgressEvent = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpUploadProgressEvent]
   }
   
-  @scala.inline
-  implicit class HttpUploadProgressEventMutableBuilder[Self <: HttpUploadProgressEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HttpUploadProgressEvent](x: Self) {
     
-    @scala.inline
-    def setType(value: UploadProgress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UploadProgress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

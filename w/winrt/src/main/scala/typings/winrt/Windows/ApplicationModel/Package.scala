@@ -12,8 +12,7 @@ trait Package
      with IPackage
 object Package {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dependencies: IVectorView[Package],
     description: String,
     displayName: String,

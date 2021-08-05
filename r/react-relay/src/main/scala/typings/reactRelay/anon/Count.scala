@@ -12,25 +12,19 @@ trait Count extends StObject {
 }
 object Count {
   
-  @scala.inline
-  def apply(count: Double): Count = {
+  inline def apply(count: Double): Count = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Count]
   }
   
-  @scala.inline
-  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+  extension [Self <: Count](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorNull: Self = StObject.set(x, "cursor", null)
+    inline def setCursorNull: Self = StObject.set(x, "cursor", null)
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
   }
 }

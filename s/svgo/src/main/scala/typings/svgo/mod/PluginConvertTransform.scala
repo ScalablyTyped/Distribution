@@ -12,16 +12,13 @@ trait PluginConvertTransform
 }
 object PluginConvertTransform {
   
-  @scala.inline
-  def apply(convertTransform: Boolean | js.Object): PluginConvertTransform = {
+  inline def apply(convertTransform: Boolean | js.Object): PluginConvertTransform = {
     val __obj = js.Dynamic.literal(convertTransform = convertTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginConvertTransform]
   }
   
-  @scala.inline
-  implicit class PluginConvertTransformMutableBuilder[Self <: PluginConvertTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PluginConvertTransform](x: Self) {
     
-    @scala.inline
-    def setConvertTransform(value: Boolean | js.Object): Self = StObject.set(x, "convertTransform", value.asInstanceOf[js.Any])
+    inline def setConvertTransform(value: Boolean | js.Object): Self = StObject.set(x, "convertTransform", value.asInstanceOf[js.Any])
   }
 }

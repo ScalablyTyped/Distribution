@@ -18,25 +18,19 @@ trait ClientVpnConnectionStatus extends StObject {
 }
 object ClientVpnConnectionStatus {
   
-  @scala.inline
-  def apply(): ClientVpnConnectionStatus = {
+  inline def apply(): ClientVpnConnectionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientVpnConnectionStatus]
   }
   
-  @scala.inline
-  implicit class ClientVpnConnectionStatusMutableBuilder[Self <: ClientVpnConnectionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ClientVpnConnectionStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: ClientVpnConnectionStatusCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ClientVpnConnectionStatusCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

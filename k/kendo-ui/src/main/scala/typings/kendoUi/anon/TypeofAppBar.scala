@@ -15,19 +15,15 @@ trait TypeofAppBar extends StObject {
 }
 object TypeofAppBar {
   
-  @scala.inline
-  def apply(extend: js.Object => AppBar, fn: AppBar): TypeofAppBar = {
+  inline def apply(extend: js.Object => AppBar, fn: AppBar): TypeofAppBar = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAppBar]
   }
   
-  @scala.inline
-  implicit class TypeofAppBarMutableBuilder[Self <: TypeofAppBar] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAppBar](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => AppBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => AppBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: AppBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: AppBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

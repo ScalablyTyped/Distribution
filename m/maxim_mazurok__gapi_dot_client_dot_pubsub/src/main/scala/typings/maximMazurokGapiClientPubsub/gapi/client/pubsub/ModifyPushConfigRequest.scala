@@ -14,19 +14,15 @@ trait ModifyPushConfigRequest extends StObject {
 }
 object ModifyPushConfigRequest {
   
-  @scala.inline
-  def apply(): ModifyPushConfigRequest = {
+  inline def apply(): ModifyPushConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyPushConfigRequest]
   }
   
-  @scala.inline
-  implicit class ModifyPushConfigRequestMutableBuilder[Self <: ModifyPushConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyPushConfigRequest](x: Self) {
     
-    @scala.inline
-    def setPushConfig(value: PushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
+    inline def setPushConfig(value: PushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushConfigUndefined: Self = StObject.set(x, "pushConfig", js.undefined)
+    inline def setPushConfigUndefined: Self = StObject.set(x, "pushConfig", js.undefined)
   }
 }

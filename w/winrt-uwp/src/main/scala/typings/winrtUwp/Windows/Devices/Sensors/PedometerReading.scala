@@ -22,8 +22,7 @@ trait PedometerReading extends StObject {
 }
 object PedometerReading {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cumulativeSteps: Double,
     cumulativeStepsDuration: Double,
     stepKind: PedometerStepKind,
@@ -33,19 +32,14 @@ object PedometerReading {
     __obj.asInstanceOf[PedometerReading]
   }
   
-  @scala.inline
-  implicit class PedometerReadingMutableBuilder[Self <: PedometerReading] (val x: Self) extends AnyVal {
+  extension [Self <: PedometerReading](x: Self) {
     
-    @scala.inline
-    def setCumulativeSteps(value: Double): Self = StObject.set(x, "cumulativeSteps", value.asInstanceOf[js.Any])
+    inline def setCumulativeSteps(value: Double): Self = StObject.set(x, "cumulativeSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulativeStepsDuration(value: Double): Self = StObject.set(x, "cumulativeStepsDuration", value.asInstanceOf[js.Any])
+    inline def setCumulativeStepsDuration(value: Double): Self = StObject.set(x, "cumulativeStepsDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepKind(value: PedometerStepKind): Self = StObject.set(x, "stepKind", value.asInstanceOf[js.Any])
+    inline def setStepKind(value: PedometerStepKind): Self = StObject.set(x, "stepKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

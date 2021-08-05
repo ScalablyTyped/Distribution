@@ -75,31 +75,23 @@ trait PlusVideoLivePusherEvents extends StObject {
 }
 object PlusVideoLivePusherEvents {
   
-  @scala.inline
-  def apply(): PlusVideoLivePusherEvents = {
+  inline def apply(): PlusVideoLivePusherEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusVideoLivePusherEvents]
   }
   
-  @scala.inline
-  implicit class PlusVideoLivePusherEventsMutableBuilder[Self <: PlusVideoLivePusherEvents] (val x: Self) extends AnyVal {
+  extension [Self <: PlusVideoLivePusherEvents](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setNetstatus(value: String): Self = StObject.set(x, "netstatus", value.asInstanceOf[js.Any])
+    inline def setNetstatus(value: String): Self = StObject.set(x, "netstatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetstatusUndefined: Self = StObject.set(x, "netstatus", js.undefined)
+    inline def setNetstatusUndefined: Self = StObject.set(x, "netstatus", js.undefined)
     
-    @scala.inline
-    def setStatechange(value: String): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
+    inline def setStatechange(value: String): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatechangeUndefined: Self = StObject.set(x, "statechange", js.undefined)
+    inline def setStatechangeUndefined: Self = StObject.set(x, "statechange", js.undefined)
   }
 }

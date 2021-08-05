@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLNamespace extends StObject {
   
-  @JSName("MSHTML.HTMLNamespace_typekey")
+  /* private */ @JSName("MSHTML.HTMLNamespace_typekey")
   var MSHTMLDotHTMLNamespace_typekey: HTMLNamespace
   
   def attachEvent(event: String, pdisp: js.Any): Boolean
@@ -29,8 +29,7 @@ trait HTMLNamespace extends StObject {
 }
 object HTMLNamespace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLNamespace_typekey: HTMLNamespace,
     attachEvent: (String, js.Any) => Boolean,
     constructor: js.Any,
@@ -47,37 +46,26 @@ object HTMLNamespace {
     __obj.asInstanceOf[HTMLNamespace]
   }
   
-  @scala.inline
-  implicit class HTMLNamespaceMutableBuilder[Self <: HTMLNamespace] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLNamespace](x: Self) {
     
-    @scala.inline
-    def setAttachEvent(value: (String, js.Any) => Boolean): Self = StObject.set(x, "attachEvent", js.Any.fromFunction2(value))
+    inline def setAttachEvent(value: (String, js.Any) => Boolean): Self = StObject.set(x, "attachEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachEvent(value: (String, js.Any) => Unit): Self = StObject.set(x, "detachEvent", js.Any.fromFunction2(value))
+    inline def setDetachEvent(value: (String, js.Any) => Unit): Self = StObject.set(x, "detachEvent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDoImport(value: String => Unit): Self = StObject.set(x, "doImport", js.Any.fromFunction1(value))
+    inline def setDoImport(value: String => Unit): Self = StObject.set(x, "doImport", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMSHTMLDotHTMLNamespace_typekey(value: HTMLNamespace): Self = StObject.set(x, "MSHTML.HTMLNamespace_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLNamespace_typekey(value: HTMLNamespace): Self = StObject.set(x, "MSHTML.HTMLNamespace_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnreadystatechange(value: js.Any): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
+    inline def setOnreadystatechange(value: js.Any): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyState(value: js.Any): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    inline def setReadyState(value: js.Any): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNames(value: js.Any): Self = StObject.set(x, "tagNames", value.asInstanceOf[js.Any])
+    inline def setTagNames(value: js.Any): Self = StObject.set(x, "tagNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
+    inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
   }
 }

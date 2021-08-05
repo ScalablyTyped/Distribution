@@ -24,37 +24,27 @@ trait Parameters
 }
 object Parameters {
   
-  @scala.inline
-  def apply(): Parameters = {
+  inline def apply(): Parameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parameters]
   }
   
-  @scala.inline
-  implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+  extension [Self <: Parameters](x: Self) {
     
-    @scala.inline
-    def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+    inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
+    inline def setDocsOnlyUndefined: Self = StObject.set(x, "docsOnly", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setLayout(value: centered | fullscreen | padded | none_): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: centered | fullscreen | padded | none_): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

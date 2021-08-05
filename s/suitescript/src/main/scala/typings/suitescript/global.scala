@@ -20,8 +20,7 @@ object global {
     * @since 2011.2
     * @param fldnam
     */
-  @scala.inline
-  def createSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("createSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("createSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * edit a subrecord on body field on the current record on a page.
@@ -32,8 +31,7 @@ object global {
     * @since 2011.2
     * @param fldnam
     */
-  @scala.inline
-  def editSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("editSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def editSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("editSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Add days to a Date object and returns a new Date
@@ -47,8 +45,7 @@ object global {
     * @param days
     * @return
     */
-  @scala.inline
-  def nlapiAddDays(d: js.Any, days: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiAddDays")(d.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiAddDays(d: js.Any, days: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiAddDays")(d.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Add months to a Date object and returns a new Date.
@@ -62,8 +59,7 @@ object global {
     * @param months
     * @return
     */
-  @scala.inline
-  def nlapiAddMonths(d: js.Any, months: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiAddMonths")(d.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiAddMonths(d: js.Any, months: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiAddMonths")(d.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Attach a single record to another with optional properties.
@@ -84,10 +80,8 @@ object global {
     * @param properties?
     * @return
     */
-  @scala.inline
-  def nlapiAttachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiAttachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiAttachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any, properties: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiAttachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiAttachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiAttachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiAttachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any, properties: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiAttachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Cancel any changes made on the currently selected line.
@@ -100,8 +94,7 @@ object global {
     * @param type
     * @return
     */
-  @scala.inline
-  def nlapiCancelLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCancelLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiCancelLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCancelLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Save changes made on the currently selected line to the sublist.
@@ -113,8 +106,7 @@ object global {
     * @param type
     * @return
     */
-  @scala.inline
-  def nlapiCommitLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCommitLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiCommitLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCommitLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Return a new record using values from an existing record.
@@ -131,10 +123,8 @@ object global {
     * @param initializeValues
     * @return
     */
-  @scala.inline
-  def nlapiCopyRecord(`type`: String, id: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiCopyRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
-  @scala.inline
-  def nlapiCopyRecord(`type`: String, id: js.Any, initializeValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiCopyRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], initializeValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
+  inline def nlapiCopyRecord(`type`: String, id: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiCopyRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
+  inline def nlapiCopyRecord(`type`: String, id: js.Any, initializeValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiCopyRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], initializeValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
   
   /**
     * Return a new assistant page.
@@ -149,10 +139,8 @@ object global {
     * @param hideHeader?
     * @return
     */
-  @scala.inline
-  def nlapiCreateAssistant(title: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateAssistant")(title.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiCreateAssistant(title: String, hideHeader: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateAssistant")(title.asInstanceOf[js.Any], hideHeader.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiCreateAssistant(title: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateAssistant")(title.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiCreateAssistant(title: String, hideHeader: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateAssistant")(title.asInstanceOf[js.Any], hideHeader.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Create a subrecord on a sublist field on the current record on a page.
@@ -165,8 +153,7 @@ object global {
     * @param type
     * @param fldnam
     */
-  @scala.inline
-  def nlapiCreateCurrentLineSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiCreateCurrentLineSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiCreateCurrentLineSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiCreateCurrentLineSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create an email merger used to assemble subject and body text of an email from a given
@@ -180,8 +167,7 @@ object global {
     * @param id
     * @return
     */
-  @scala.inline
-  def nlapiCreateEmailMerger(id: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateEmailMerger")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiCreateEmailMerger(id: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateEmailMerger")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Create an nlobjError object that can be used to abort script execution and configure error notification
@@ -197,10 +183,8 @@ object global {
     * @param suppressEmail?
     * @return
     */
-  @scala.inline
-  def nlapiCreateError(code: String, details: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateError")(code.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiCreateError(code: String, details: String, suppressEmail: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateError")(code.asInstanceOf[js.Any], details.asInstanceOf[js.Any], suppressEmail.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiCreateError(code: String, details: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateError")(code.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiCreateError(code: String, details: String, suppressEmail: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateError")(code.asInstanceOf[js.Any], details.asInstanceOf[js.Any], suppressEmail.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Instantiate a file object (specifying the name, type, and contents which are base-64 encoded for binary types.)
@@ -217,8 +201,7 @@ object global {
     * @param contents
     * @return
     */
-  @scala.inline
-  def nlapiCreateFile(name: String, `type`: String, contents: String): nlobjFile = (js.Dynamic.global.applyDynamic("nlapiCreateFile")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[nlobjFile]
+  inline def nlapiCreateFile(name: String, `type`: String, contents: String): nlobjFile = (js.Dynamic.global.applyDynamic("nlapiCreateFile")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[nlobjFile]
   
   /**
     * Return a new entry form page.
@@ -233,10 +216,8 @@ object global {
     * @param hideHeader?
     * @return
     */
-  @scala.inline
-  def nlapiCreateForm(title: String): nlobjForm = js.Dynamic.global.applyDynamic("nlapiCreateForm")(title.asInstanceOf[js.Any]).asInstanceOf[nlobjForm]
-  @scala.inline
-  def nlapiCreateForm(title: String, hideHeader: Boolean): nlobjForm = (js.Dynamic.global.applyDynamic("nlapiCreateForm")(title.asInstanceOf[js.Any], hideHeader.asInstanceOf[js.Any])).asInstanceOf[nlobjForm]
+  inline def nlapiCreateForm(title: String): nlobjForm = js.Dynamic.global.applyDynamic("nlapiCreateForm")(title.asInstanceOf[js.Any]).asInstanceOf[nlobjForm]
+  inline def nlapiCreateForm(title: String, hideHeader: Boolean): nlobjForm = (js.Dynamic.global.applyDynamic("nlapiCreateForm")(title.asInstanceOf[js.Any], hideHeader.asInstanceOf[js.Any])).asInstanceOf[nlobjForm]
   
   /**
     * Return a new list page.
@@ -251,10 +232,8 @@ object global {
     * @param hideHeader?
     * @return
     */
-  @scala.inline
-  def nlapiCreateList(title: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateList")(title.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiCreateList(title: String, hideHeader: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateList")(title.asInstanceOf[js.Any], hideHeader.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiCreateList(title: String): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateList")(title.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiCreateList(title: String, hideHeader: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiCreateList")(title.asInstanceOf[js.Any], hideHeader.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Instantiate a new nlobjRecord object containing all the default field data for that record type.
@@ -272,31 +251,25 @@ object global {
     * @param initializeValues
     * @return
     */
-  @scala.inline
-  def nlapiCreateRecord(`type`: String): nlobjRecord = js.Dynamic.global.applyDynamic("nlapiCreateRecord")(`type`.asInstanceOf[js.Any]).asInstanceOf[nlobjRecord]
-  @scala.inline
-  def nlapiCreateRecord(`type`: String, initializeValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiCreateRecord")(`type`.asInstanceOf[js.Any], initializeValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
+  inline def nlapiCreateRecord(`type`: String): nlobjRecord = js.Dynamic.global.applyDynamic("nlapiCreateRecord")(`type`.asInstanceOf[js.Any]).asInstanceOf[nlobjRecord]
+  inline def nlapiCreateRecord(`type`: String, initializeValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiCreateRecord")(`type`.asInstanceOf[js.Any], initializeValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
   
-  @scala.inline
-  def nlapiCreateSearch(
+  inline def nlapiCreateSearch(
     `type`: String,
     filters: js.Array[nlobjSearchFilter],
     columns: js.Array[typings.suitescript.nlobjSearchColumn]
   ): nlobjSearch = (js.Dynamic.global.applyDynamic("nlapiCreateSearch")(`type`.asInstanceOf[js.Any], filters.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[nlobjSearch]
-  @scala.inline
-  def nlapiCreateSearch(
+  inline def nlapiCreateSearch(
     `type`: String,
     filters: js.Array[nlobjSearchFilter],
     columns: typings.suitescript.nlobjSearchColumn
   ): nlobjSearch = (js.Dynamic.global.applyDynamic("nlapiCreateSearch")(`type`.asInstanceOf[js.Any], filters.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[nlobjSearch]
-  @scala.inline
-  def nlapiCreateSearch(
+  inline def nlapiCreateSearch(
     `type`: String,
     filters: nlobjSearchFilter,
     columns: js.Array[typings.suitescript.nlobjSearchColumn]
   ): nlobjSearch = (js.Dynamic.global.applyDynamic("nlapiCreateSearch")(`type`.asInstanceOf[js.Any], filters.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[nlobjSearch]
-  @scala.inline
-  def nlapiCreateSearch(`type`: String, filters: nlobjSearchFilter, columns: typings.suitescript.nlobjSearchColumn): nlobjSearch = (js.Dynamic.global.applyDynamic("nlapiCreateSearch")(`type`.asInstanceOf[js.Any], filters.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[nlobjSearch]
+  inline def nlapiCreateSearch(`type`: String, filters: nlobjSearchFilter, columns: typings.suitescript.nlobjSearchColumn): nlobjSearch = (js.Dynamic.global.applyDynamic("nlapiCreateSearch")(`type`.asInstanceOf[js.Any], filters.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[nlobjSearch]
   
   /**
     * Create a template renderer used to generate various outputs based on a template.
@@ -308,8 +281,7 @@ object global {
     * @return {nlobjTemplateRenderer}
     * @return
     */
-  @scala.inline
-  def nlapiCreateTemplateRenderer(): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateTemplateRenderer")().asInstanceOf[js.Any]
+  inline def nlapiCreateTemplateRenderer(): js.Any = js.Dynamic.global.applyDynamic("nlapiCreateTemplateRenderer")().asInstanceOf[js.Any]
   
   /**
     * Convert a Date object into a String
@@ -323,10 +295,8 @@ object global {
     * @param formattype?
     * @return
     */
-  @scala.inline
-  def nlapiDateToString(d: Date): String = js.Dynamic.global.applyDynamic("nlapiDateToString")(d.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def nlapiDateToString(d: Date, formattype: String): String = (js.Dynamic.global.applyDynamic("nlapiDateToString")(d.asInstanceOf[js.Any], formattype.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiDateToString(d: Date): String = js.Dynamic.global.applyDynamic("nlapiDateToString")(d.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nlapiDateToString(d: Date, formattype: String): String = (js.Dynamic.global.applyDynamic("nlapiDateToString")(d.asInstanceOf[js.Any], formattype.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Delete a file from the file cabinet.
@@ -340,8 +310,7 @@ object global {
     * @param id
     * @return
     */
-  @scala.inline
-  def nlapiDeleteFile(id: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiDeleteFile")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiDeleteFile(id: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiDeleteFile")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Delete a record from the system.
@@ -361,8 +330,7 @@ object global {
     * @param id
     * @return
     */
-  @scala.inline
-  def nlapiDeleteRecord(`type`: String, id: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDeleteRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiDeleteRecord(`type`: String, id: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDeleteRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Detach a single record from another with optional properties.
@@ -383,16 +351,12 @@ object global {
     * @param properties?
     * @return
     */
-  @scala.inline
-  def nlapiDetachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDetachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiDetachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any, properties: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDetachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiDetachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDetachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiDetachRecord(type1: String, id1: js.Any, type2: String, id2: js.Any, properties: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDetachRecord")(type1.asInstanceOf[js.Any], id1.asInstanceOf[js.Any], type2.asInstanceOf[js.Any], id2.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def nlapiDisableField(fldnam: String, `val`: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDisableField")(fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiDisableField(fldnam: String, `val`: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiDisableField")(fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def nlapiDisableLineItemField(`type`: String, fldnam: String, `val`: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiDisableLineItemField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiDisableLineItemField(`type`: String, fldnam: String, `val`: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiDisableLineItemField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * edit a subrecord on a sublist field on the current record on a page.
@@ -405,8 +369,7 @@ object global {
     * @param type
     * @param fldnam
     */
-  @scala.inline
-  def nlapiEditCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiEditCurrentLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiEditCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiEditCurrentLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Encrypt a String using a SHA-1 hash function
@@ -418,10 +381,8 @@ object global {
     * @param s
     * @return
     */
-  @scala.inline
-  def nlapiEncrypt(s: String, algotithm: String): String = (js.Dynamic.global.applyDynamic("nlapiEncrypt")(s.asInstanceOf[js.Any], algotithm.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nlapiEncrypt(s: String, algotithm: String, key: String): String = (js.Dynamic.global.applyDynamic("nlapiEncrypt")(s.asInstanceOf[js.Any], algotithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiEncrypt(s: String, algotithm: String): String = (js.Dynamic.global.applyDynamic("nlapiEncrypt")(s.asInstanceOf[js.Any], algotithm.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiEncrypt(s: String, algotithm: String, key: String): String = (js.Dynamic.global.applyDynamic("nlapiEncrypt")(s.asInstanceOf[js.Any], algotithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Escape a String for use in an XML document.
@@ -433,8 +394,7 @@ object global {
     * @param text
     * @return
     */
-  @scala.inline
-  def nlapiEscapeXML(text: String): String = js.Dynamic.global.applyDynamic("nlapiEscapeXML")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nlapiEscapeXML(text: String): String = js.Dynamic.global.applyDynamic("nlapiEscapeXML")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Calculate exchange rate between two currencies as of today or an optional effective date.
@@ -451,10 +411,8 @@ object global {
     * @param date?
     * @return
     */
-  @scala.inline
-  def nlapiExchangeRate(fromCurrency: js.Any, toCurrency: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiExchangeRate")(fromCurrency.asInstanceOf[js.Any], toCurrency.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiExchangeRate(fromCurrency: js.Any, toCurrency: js.Any, date: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiExchangeRate")(fromCurrency.asInstanceOf[js.Any], toCurrency.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiExchangeRate(fromCurrency: js.Any, toCurrency: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiExchangeRate")(fromCurrency.asInstanceOf[js.Any], toCurrency.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiExchangeRate(fromCurrency: js.Any, toCurrency: js.Any, date: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiExchangeRate")(fromCurrency.asInstanceOf[js.Any], toCurrency.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return the 1st line number that a matrix field value appears in
@@ -472,8 +430,7 @@ object global {
     * @param val
     * @return
     */
-  @scala.inline
-  def nlapiFindLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, `val`: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiFindLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiFindLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, `val`: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiFindLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return the 1st line number that a sublist field value appears in
@@ -489,8 +446,7 @@ object global {
     * @param val
     * @return
     */
-  @scala.inline
-  def nlapiFindLineItemValue(`type`: String, fldnam: String, `val`: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiFindLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiFindLineItemValue(`type`: String, fldnam: String, `val`: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiFindLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Format a number for data entry into a currency field.
@@ -502,8 +458,7 @@ object global {
     * @param str
     * @return
     */
-  @scala.inline
-  def nlapiFormatCurrency(str: String): String = js.Dynamic.global.applyDynamic("nlapiFormatCurrency")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nlapiFormatCurrency(str: String): String = js.Dynamic.global.applyDynamic("nlapiFormatCurrency")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * get a cache object.
@@ -514,8 +469,7 @@ object global {
     * @param name
     * @return
     */
-  @scala.inline
-  def nlapiGetCache(name: String): js.Any = js.Dynamic.global.applyDynamic("nlapiGetCache")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiGetCache(name: String): js.Any = js.Dynamic.global.applyDynamic("nlapiGetCache")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Return context information about the current user/script.
@@ -525,8 +479,7 @@ object global {
     * @since    2007.0
     * @return
     */
-  @scala.inline
-  def nlapiGetContext(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetContext")().asInstanceOf[js.Any]
+  inline def nlapiGetContext(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetContext")().asInstanceOf[js.Any]
   
   /**
     * Return the value of a field on the currently selected line.
@@ -542,8 +495,7 @@ object global {
     * @param timezone
     * @return
     */
-  @scala.inline
-  def nlapiGetCurrentLineItemDateTimeValue(`type`: String, fldnam: String, timezone: String): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetCurrentLineItemDateTimeValue(`type`: String, fldnam: String, timezone: String): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return the line number for the currently selected line.
@@ -555,8 +507,7 @@ object global {
     * @param type
     * @return
     */
-  @scala.inline
-  def nlapiGetCurrentLineItemIndex(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemIndex")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiGetCurrentLineItemIndex(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemIndex")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Get the current value of a sublist field on the current record on a page.
@@ -572,8 +523,7 @@ object global {
     * @param column
     * @return
     */
-  @scala.inline
-  def nlapiGetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return the label of a select field's current selection on the currently selected line.
@@ -587,8 +537,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetCurrentLineItemText(`type`: String, fldnam: String): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetCurrentLineItemText(`type`: String, fldnam: String): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return the value of a field on the currently selected line.
@@ -602,8 +551,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetCurrentLineItemValue(`type`: String, fldnam: String): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetCurrentLineItemValue(`type`: String, fldnam: String): String = (js.Dynamic.global.applyDynamic("nlapiGetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return the internal ID for the current user's department.
@@ -613,8 +561,7 @@ object global {
     * @since    2005.0
     * @return
     */
-  @scala.inline
-  def nlapiGetDepartment(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetDepartment")().asInstanceOf[js.Any]
+  inline def nlapiGetDepartment(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetDepartment")().asInstanceOf[js.Any]
   
   /**
     * Return field definition for a field.
@@ -626,8 +573,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetField(fldnam: String): js.Any = js.Dynamic.global.applyDynamic("nlapiGetField")(fldnam.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiGetField(fldnam: String): js.Any = js.Dynamic.global.applyDynamic("nlapiGetField")(fldnam.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Return field mandatoriness.
@@ -639,8 +585,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetFieldMandatory(fldnam: String): Boolean = js.Dynamic.global.applyDynamic("nlapiGetFieldMandatory")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nlapiGetFieldMandatory(fldnam: String): Boolean = js.Dynamic.global.applyDynamic("nlapiGetFieldMandatory")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Return the display value of a select field's current selection on the current record on a page.
@@ -652,8 +597,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetFieldText(fldnam: String): String = js.Dynamic.global.applyDynamic("nlapiGetFieldText")(fldnam.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nlapiGetFieldText(fldnam: String): String = js.Dynamic.global.applyDynamic("nlapiGetFieldText")(fldnam.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Return the values (via display text) of a multiselect field on the current record.
@@ -664,8 +608,7 @@ object global {
     * @since    2009.1
     * @param fldnam
     */
-  @scala.inline
-  def nlapiGetFieldTexts(fldnam: String): Unit = js.Dynamic.global.applyDynamic("nlapiGetFieldTexts")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def nlapiGetFieldTexts(fldnam: String): Unit = js.Dynamic.global.applyDynamic("nlapiGetFieldTexts")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Return the value of a field on the current record on a page.
@@ -677,8 +620,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetFieldValue(fldnam: String): String = js.Dynamic.global.applyDynamic("nlapiGetFieldValue")(fldnam.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nlapiGetFieldValue(fldnam: String): String = js.Dynamic.global.applyDynamic("nlapiGetFieldValue")(fldnam.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Return the values of a multiselect field on the current record on a page.
@@ -689,8 +631,7 @@ object global {
     * @since    2005.0
     * @param fldnam
     */
-  @scala.inline
-  def nlapiGetFieldValues(fldnam: String): Unit = js.Dynamic.global.applyDynamic("nlapiGetFieldValues")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def nlapiGetFieldValues(fldnam: String): Unit = js.Dynamic.global.applyDynamic("nlapiGetFieldValues")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @param {string} Job Type
@@ -700,8 +641,7 @@ object global {
     * @param jobType
     * @return
     */
-  @scala.inline
-  def nlapiGetJobManager(jobType: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiGetJobManager")(jobType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiGetJobManager(jobType: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiGetJobManager")(jobType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Return the number of sublists in a sublist on the current record on a page.
@@ -713,8 +653,7 @@ object global {
     * @param type
     * @return
     */
-  @scala.inline
-  def nlapiGetLineItemCount(`type`: String): String | Double = js.Dynamic.global.applyDynamic("nlapiGetLineItemCount")(`type`.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def nlapiGetLineItemCount(`type`: String): String | Double = js.Dynamic.global.applyDynamic("nlapiGetLineItemCount")(`type`.asInstanceOf[js.Any]).asInstanceOf[String | Double]
   
   /**
     * Return the value of a sublist field on the current record on a page.
@@ -732,8 +671,7 @@ object global {
     * @param timezone
     * @return
     */
-  @scala.inline
-  def nlapiGetLineItemDateTimeValue(`type`: String, fldnam: String, linenum: js.Any, timezone: String): String = (js.Dynamic.global.applyDynamic("nlapiGetLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetLineItemDateTimeValue(`type`: String, fldnam: String, linenum: js.Any, timezone: String): String = (js.Dynamic.global.applyDynamic("nlapiGetLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return field definition for a sublist field.
@@ -749,10 +687,8 @@ object global {
     * @param linenum?
     * @return
     */
-  @scala.inline
-  def nlapiGetLineItemField(`type`: String, fldnam: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetLineItemField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiGetLineItemField(`type`: String, fldnam: String, linenum: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetLineItemField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiGetLineItemField(`type`: String, fldnam: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetLineItemField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiGetLineItemField(`type`: String, fldnam: String, linenum: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetLineItemField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return sublist field mandatoriness.
@@ -767,8 +703,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetLineItemMandatory(`type`: String, fldnam: String): Boolean = (js.Dynamic.global.applyDynamic("nlapiGetLineItemMandatory")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def nlapiGetLineItemMandatory(`type`: String, fldnam: String): Boolean = (js.Dynamic.global.applyDynamic("nlapiGetLineItemMandatory")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return an nlobjField containing sublist field metadata.
@@ -786,8 +721,7 @@ object global {
     * @param column
     * @return
     */
-  @scala.inline
-  def nlapiGetLineItemMatrixField(`type`: String, fldnam: String, linenum: js.Any, column: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetLineItemMatrixField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiGetLineItemMatrixField(`type`: String, fldnam: String, linenum: js.Any, column: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetLineItemMatrixField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return the value of a sublist matrix field on the current record on a page.
@@ -804,8 +738,7 @@ object global {
     * @param linenum
     * @param column
     */
-  @scala.inline
-  def nlapiGetLineItemMatrixValue(`type`: String, fldnam: String, linenum: js.Any, column: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiGetLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiGetLineItemMatrixValue(`type`: String, fldnam: String, linenum: js.Any, column: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiGetLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Return the label of a select field's current selection for a particular line.
@@ -821,8 +754,7 @@ object global {
     * @param linenum
     * @return
     */
-  @scala.inline
-  def nlapiGetLineItemText(`type`: String, fldnam: String, linenum: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetLineItemText(`type`: String, fldnam: String, linenum: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return the value of a sublist field on the current record on a page.
@@ -838,8 +770,7 @@ object global {
     * @param linenum
     * @return
     */
-  @scala.inline
-  def nlapiGetLineItemValue(`type`: String, fldnam: String, linenum: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetLineItemValue(`type`: String, fldnam: String, linenum: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return the internal ID for the current user's location.
@@ -849,16 +780,14 @@ object global {
     * @since    2005.0
     * @return
     */
-  @scala.inline
-  def nlapiGetLocation(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetLocation")().asInstanceOf[js.Any]
+  inline def nlapiGetLocation(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetLocation")().asInstanceOf[js.Any]
   
   /**
     * @return nlobjLogin
     *
     * @since 2012.2
     */
-  @scala.inline
-  def nlapiGetLogin(): Unit = js.Dynamic.global.applyDynamic("nlapiGetLogin")().asInstanceOf[Unit]
+  inline def nlapiGetLogin(): Unit = js.Dynamic.global.applyDynamic("nlapiGetLogin")().asInstanceOf[Unit]
   
   /**
     * Return the number of columns for a matrix field
@@ -872,8 +801,7 @@ object global {
     * @param fldnam
     * @return
     */
-  @scala.inline
-  def nlapiGetMatrixCount(`type`: String, fldnam: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetMatrixCount")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiGetMatrixCount(`type`: String, fldnam: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetMatrixCount")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return field definition for a matrix field.
@@ -889,8 +817,7 @@ object global {
     * @param column
     * @return
     */
-  @scala.inline
-  def nlapiGetMatrixField(`type`: String, fldnam: String, column: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetMatrixField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiGetMatrixField(`type`: String, fldnam: String, column: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiGetMatrixField")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Get the value of a matrix header field
@@ -906,8 +833,7 @@ object global {
     * @param column
     * @return
     */
-  @scala.inline
-  def nlapiGetMatrixValue(`type`: String, fldnam: String, column: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiGetMatrixValue(`type`: String, fldnam: String, column: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiGetMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return an record object containing the data being submitted to the system for the currenr record.
@@ -918,8 +844,7 @@ object global {
     * @since 2008.1
     * @return
     */
-  @scala.inline
-  def nlapiGetNewRecord(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetNewRecord")().asInstanceOf[js.Any]
+  inline def nlapiGetNewRecord(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetNewRecord")().asInstanceOf[js.Any]
   
   /**
     * Return an record object containing the current record's data prior to the write operation.
@@ -930,8 +855,7 @@ object global {
     * @since 2008.1
     * @return
     */
-  @scala.inline
-  def nlapiGetOldRecord(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetOldRecord")().asInstanceOf[js.Any]
+  inline def nlapiGetOldRecord(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetOldRecord")().asInstanceOf[js.Any]
   
   /**
     * Return the internal ID corresponding to the current page or userevent script.
@@ -941,8 +865,7 @@ object global {
     * @since    2007.0
     * @return
     */
-  @scala.inline
-  def nlapiGetRecordId(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetRecordId")().asInstanceOf[js.Any]
+  inline def nlapiGetRecordId(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetRecordId")().asInstanceOf[js.Any]
   
   /**
     * Return the recordtype corresponding to the current page or userevent script.
@@ -952,8 +875,7 @@ object global {
     * @since    2007.0
     * @return
     */
-  @scala.inline
-  def nlapiGetRecordType(): String = js.Dynamic.global.applyDynamic("nlapiGetRecordType")().asInstanceOf[String]
+  inline def nlapiGetRecordType(): String = js.Dynamic.global.applyDynamic("nlapiGetRecordType")().asInstanceOf[String]
   
   /**
     * Return the internal ID for the current user's role. Returns 31 (Online Form User) when called from online forms or "Available without Login" Suitelets.
@@ -963,8 +885,7 @@ object global {
     * @since    2005.0
     * @return
     */
-  @scala.inline
-  def nlapiGetRole(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetRole")().asInstanceOf[js.Any]
+  inline def nlapiGetRole(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetRole")().asInstanceOf[js.Any]
   
   /**
     * Return the internal ID for the current user's subsidiary.
@@ -974,8 +895,7 @@ object global {
     * @since    2008.1
     * @return
     */
-  @scala.inline
-  def nlapiGetSubsidiary(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetSubsidiary")().asInstanceOf[js.Any]
+  inline def nlapiGetSubsidiary(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetSubsidiary")().asInstanceOf[js.Any]
   
   /**
     * Return the internal ID for the currently logged in user. Returns -4 when called from online forms or "Available without Login" Suitelets.
@@ -985,8 +905,7 @@ object global {
     * @since    2005.0
     * @return
     */
-  @scala.inline
-  def nlapiGetUser(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetUser")().asInstanceOf[js.Any]
+  inline def nlapiGetUser(): js.Any = js.Dynamic.global.applyDynamic("nlapiGetUser")().asInstanceOf[js.Any]
   
   /**
     * Initiates a workflow on-demand and returns the workflow instance ID for the workflow-record combination.
@@ -1003,8 +922,7 @@ object global {
     * @param workflowid
     * @return
     */
-  @scala.inline
-  def nlapiInitiateWorkflow(recordtype: String, id: js.Any, workflowid: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiInitiateWorkflow")(recordtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], workflowid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiInitiateWorkflow(recordtype: String, id: js.Any, workflowid: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiInitiateWorkflow")(recordtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], workflowid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Initiates a workflow on-demand and returns the workflow instance ID for the workflow-record combination.
@@ -1022,8 +940,7 @@ object global {
     * @param parameters
     * @return
     */
-  @scala.inline
-  def nlapiInitiateWorkflowAsync(recordType: js.Any, id: js.Any, workflowId: js.Any, parameters: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiInitiateWorkflowAsync")(recordType.asInstanceOf[js.Any], id.asInstanceOf[js.Any], workflowId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiInitiateWorkflowAsync(recordType: js.Any, id: js.Any, workflowId: js.Any, parameters: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiInitiateWorkflowAsync")(recordType.asInstanceOf[js.Any], id.asInstanceOf[js.Any], workflowId.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Insert and select a new line into the sublist on a page or userevent.
@@ -1036,10 +953,8 @@ object global {
     * @param type
     * @param line?
     */
-  @scala.inline
-  def nlapiInsertLineItem(`type`: String): Unit = js.Dynamic.global.applyDynamic("nlapiInsertLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiInsertLineItem(`type`: String, line: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiInsertLineItem")(`type`.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiInsertLineItem(`type`: String): Unit = js.Dynamic.global.applyDynamic("nlapiInsertLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def nlapiInsertLineItem(`type`: String, line: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiInsertLineItem")(`type`.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Adds a select option to a scripted select or multiselect sublist field.
@@ -1060,10 +975,8 @@ object global {
     * @param selected?
     * @return
     */
-  @scala.inline
-  def nlapiInsertLineItemOption(`type`: String, fldnam: String, value: String, text: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertLineItemOption")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiInsertLineItemOption(`type`: String, fldnam: String, value: String, text: String, selected: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertLineItemOption")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any], selected.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiInsertLineItemOption(`type`: String, fldnam: String, value: String, text: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertLineItemOption")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiInsertLineItemOption(`type`: String, fldnam: String, value: String, text: String, selected: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertLineItemOption")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any], selected.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Adds a select option to a scripted select or multiselect field.
@@ -1082,10 +995,8 @@ object global {
     * @param selected?
     * @return
     */
-  @scala.inline
-  def nlapiInsertSelectOption(fldnam: String, value: String, text: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertSelectOption")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiInsertSelectOption(fldnam: String, value: String, text: String, selected: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertSelectOption")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any], selected.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiInsertSelectOption(fldnam: String, value: String, text: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertSelectOption")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiInsertSelectOption(fldnam: String, value: String, text: String, selected: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiInsertSelectOption")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], text.asInstanceOf[js.Any], selected.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Returns true if any changes have been made to a sublist.
@@ -1098,8 +1009,7 @@ object global {
     * @param type
     * @return
     */
-  @scala.inline
-  def nlapiIsLineItemChanged(`type`: String): Boolean = js.Dynamic.global.applyDynamic("nlapiIsLineItemChanged")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nlapiIsLineItemChanged(`type`: String): Boolean = js.Dynamic.global.applyDynamic("nlapiIsLineItemChanged")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Loads a configuration record
@@ -1113,8 +1023,7 @@ object global {
     * @param type
     * @return
     */
-  @scala.inline
-  def nlapiLoadConfiguration(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiLoadConfiguration")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiLoadConfiguration(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiLoadConfiguration")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Load a file from the file cabinet (via its internal ID or path).
@@ -1128,8 +1037,7 @@ object global {
     * @param id
     * @return
     */
-  @scala.inline
-  def nlapiLoadFile(id: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiLoadFile")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiLoadFile(id: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiLoadFile")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Load an existing record from the system.
@@ -1151,13 +1059,10 @@ object global {
     * @param initializeValues
     * @return
     */
-  @scala.inline
-  def nlapiLoadRecord(`type`: String, id: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiLoadRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
-  @scala.inline
-  def nlapiLoadRecord(`type`: String, id: js.Any, initializeValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiLoadRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], initializeValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
+  inline def nlapiLoadRecord(`type`: String, id: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiLoadRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
+  inline def nlapiLoadRecord(`type`: String, id: js.Any, initializeValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiLoadRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], initializeValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
   
-  @scala.inline
-  def nlapiLoadSearch(fldnam: String, `val`: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiLoadSearch")(fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiLoadSearch(fldnam: String, `val`: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiLoadSearch")(fldnam.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create an entry in the script execution log (note that execution log entries are automatically purged after 30 days).
@@ -1173,10 +1078,8 @@ object global {
     * @param details?
     * @return
     */
-  @scala.inline
-  def nlapiLogExecution(`type`: String, title: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiLogExecution")(`type`.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiLogExecution(`type`: String, title: String, details: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiLogExecution")(`type`.asInstanceOf[js.Any], title.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiLogExecution(`type`: String, title: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiLogExecution")(`type`.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiLogExecution(`type`: String, title: String, details: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiLogExecution")(`type`.asInstanceOf[js.Any], title.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Fetch the value of one or more fields on a record. This API uses search to look up the fields and is much
@@ -1195,14 +1098,10 @@ object global {
     * @param fields
     * @param text?
     */
-  @scala.inline
-  def nlapiLookupField(`type`: String, id: Double, fields: String): String = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nlapiLookupField(`type`: String, id: Double, fields: String, text: Boolean): String = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nlapiLookupField(`type`: String, id: Double, fields: js.Array[String]): js.Any = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiLookupField(`type`: String, id: Double, fields: js.Array[String], text: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiLookupField(`type`: String, id: Double, fields: String): String = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiLookupField(`type`: String, id: Double, fields: String, text: Boolean): String = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiLookupField(`type`: String, id: Double, fields: js.Array[String]): js.Any = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiLookupField(`type`: String, id: Double, fields: js.Array[String], text: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiLookupField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Perform a mail merge operation using any template and up to 2 records and returns an nlobjFile with the results.
@@ -1227,22 +1126,14 @@ object global {
     * @param fields?
     * @return
     */
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: js.Any, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: Unit, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: Unit, altId: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: Unit, altId: js.Any, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: Unit, altId: Unit, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: js.Any, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: String, altId: Unit, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: Unit, altId: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: Unit, altId: js.Any, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiMergeRecord(id: js.Any, baseType: String, baseId: js.Any, altType: Unit, altId: Unit, fields: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiMergeRecord")(id.asInstanceOf[js.Any], baseType.asInstanceOf[js.Any], baseId.asInstanceOf[js.Any], altType.asInstanceOf[js.Any], altId.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Return a URL with a generated OAuth token.
@@ -1256,8 +1147,7 @@ object global {
     * @param ssoAppKey
     * @return
     */
-  @scala.inline
-  def nlapiOutboundSSO(ssoAppKey: String): String = js.Dynamic.global.applyDynamic("nlapiOutboundSSO")(ssoAppKey.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nlapiOutboundSSO(ssoAppKey: String): String = js.Dynamic.global.applyDynamic("nlapiOutboundSSO")(ssoAppKey.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Print a record (transaction) gievn its type, id, and output format.
@@ -1277,14 +1167,10 @@ object global {
     * @param properties?
     * @return
     */
-  @scala.inline
-  def nlapiPrintRecord(`type`: String, id: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiPrintRecord(`type`: String, id: js.Any, format: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiPrintRecord(`type`: String, id: js.Any, format: String, properties: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiPrintRecord(`type`: String, id: js.Any, format: Unit, properties: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiPrintRecord(`type`: String, id: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiPrintRecord(`type`: String, id: js.Any, format: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiPrintRecord(`type`: String, id: js.Any, format: String, properties: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiPrintRecord(`type`: String, id: js.Any, format: Unit, properties: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiPrintRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Refresh the sublist table.
@@ -1297,8 +1183,7 @@ object global {
     * @since 2005.0
     * @param type
     */
-  @scala.inline
-  def nlapiRefreshLineItems(`type`: String): Unit = js.Dynamic.global.applyDynamic("nlapiRefreshLineItems")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def nlapiRefreshLineItems(`type`: String): Unit = js.Dynamic.global.applyDynamic("nlapiRefreshLineItems")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * remove a subrecord on a sublist field on the current record on a page.
@@ -1311,8 +1196,7 @@ object global {
     * @param type
     * @param fldnam
     */
-  @scala.inline
-  def nlapiRemoveCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiRemoveCurrentLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiRemoveCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiRemoveCurrentLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Remove the currently selected line from the sublist on a page or userevent.
@@ -1326,10 +1210,8 @@ object global {
     * @param line?
     * @return
     */
-  @scala.inline
-  def nlapiRemoveLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiRemoveLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRemoveLineItem(`type`: String, line: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRemoveLineItem")(`type`.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRemoveLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiRemoveLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiRemoveLineItem(`type`: String, line: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRemoveLineItem")(`type`.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Removes a select option (or all if value is null) from a scripted select or multiselect sublist field.
@@ -1346,8 +1228,7 @@ object global {
     * @param value
     * @return
     */
-  @scala.inline
-  def nlapiRemoveLineItemOption(`type`: String, fldnam: String, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiRemoveLineItemOption")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRemoveLineItemOption(`type`: String, fldnam: String, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiRemoveLineItemOption")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Removes a select option (or all if value is null) from a scripted select or multiselect field.
@@ -1362,8 +1243,7 @@ object global {
     * @param value
     * @return
     */
-  @scala.inline
-  def nlapiRemoveSelectOption(fldnam: String, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiRemoveSelectOption")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRemoveSelectOption(fldnam: String, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiRemoveSelectOption")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Request a URL to an external or internal resource.
@@ -1388,38 +1268,22 @@ object global {
     * @param method
     * @return
     */
-  @scala.inline
-  def nlapiRequestURL(url: String): js.Any = js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any, headers: Unit, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any, headers: Unit, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: js.Any, headers: Unit, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: Unit, headers: Unit, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: Unit, headers: Unit, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiRequestURL(url: String, postdata: Unit, headers: Unit, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String): js.Any = js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any, headers: js.Any, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any, headers: Unit, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any, headers: Unit, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: js.Any, headers: Unit, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: Unit, headers: js.Any, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: Unit, headers: Unit, callback: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: Unit, headers: Unit, callback: js.Any, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiRequestURL(url: String, postdata: Unit, headers: Unit, callback: Unit, method: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiRequestURL")(url.asInstanceOf[js.Any], postdata.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Resolve a URL to a resource or object in the system.
@@ -1437,14 +1301,10 @@ object global {
     * @param pagemode?
     * @return
     */
-  @scala.inline
-  def nlapiResolveURL(`type`: String, subtype: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nlapiResolveURL(`type`: String, subtype: String, id: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nlapiResolveURL(`type`: String, subtype: String, id: String, pagemode: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], pagemode.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nlapiResolveURL(`type`: String, subtype: String, id: Unit, pagemode: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], pagemode.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiResolveURL(`type`: String, subtype: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiResolveURL(`type`: String, subtype: String, id: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiResolveURL(`type`: String, subtype: String, id: String, pagemode: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], pagemode.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiResolveURL(`type`: String, subtype: String, id: Unit, pagemode: String): String = (js.Dynamic.global.applyDynamic("nlapiResolveURL")(`type`.asInstanceOf[js.Any], subtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], pagemode.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Queue a scheduled script for immediate execution and return the status QUEUED if successfull.
@@ -1462,10 +1322,8 @@ object global {
     * @param parameters
     * @return
     */
-  @scala.inline
-  def nlapiScheduleScript(script: String, deployment: String): String = (js.Dynamic.global.applyDynamic("nlapiScheduleScript")(script.asInstanceOf[js.Any], deployment.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def nlapiScheduleScript(script: String, deployment: String, parameters: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiScheduleScript")(script.asInstanceOf[js.Any], deployment.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiScheduleScript(script: String, deployment: String): String = (js.Dynamic.global.applyDynamic("nlapiScheduleScript")(script.asInstanceOf[js.Any], deployment.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiScheduleScript(script: String, deployment: String, parameters: js.Any): String = (js.Dynamic.global.applyDynamic("nlapiScheduleScript")(script.asInstanceOf[js.Any], deployment.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Perform a duplicate record search using Duplicate Detection criteria.
@@ -1482,10 +1340,8 @@ object global {
     * @param fields
     * @param id?
     */
-  @scala.inline
-  def nlapiSearchDuplicate(`type`: String, fields: js.Any): js.Array[nlobjSearchResult] = (js.Dynamic.global.applyDynamic("nlapiSearchDuplicate")(`type`.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Array[nlobjSearchResult]]
-  @scala.inline
-  def nlapiSearchDuplicate(`type`: String, fields: js.Any, id: js.Any): js.Array[nlobjSearchResult] = (js.Dynamic.global.applyDynamic("nlapiSearchDuplicate")(`type`.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Array[nlobjSearchResult]]
+  inline def nlapiSearchDuplicate(`type`: String, fields: js.Any): js.Array[nlobjSearchResult] = (js.Dynamic.global.applyDynamic("nlapiSearchDuplicate")(`type`.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[js.Array[nlobjSearchResult]]
+  inline def nlapiSearchDuplicate(`type`: String, fields: js.Any, id: js.Any): js.Array[nlobjSearchResult] = (js.Dynamic.global.applyDynamic("nlapiSearchDuplicate")(`type`.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Array[nlobjSearchResult]]
   
   /**
     * Perform a global record search across the system.
@@ -1498,8 +1354,7 @@ object global {
     * @since    2008.1
     * @param keywords
     */
-  @scala.inline
-  def nlapiSearchGlobal(keywords: String): js.Array[nlobjSearchResult] = js.Dynamic.global.applyDynamic("nlapiSearchGlobal")(keywords.asInstanceOf[js.Any]).asInstanceOf[js.Array[nlobjSearchResult]]
+  inline def nlapiSearchGlobal(keywords: String): js.Array[nlobjSearchResult] = js.Dynamic.global.applyDynamic("nlapiSearchGlobal")(keywords.asInstanceOf[js.Any]).asInstanceOf[js.Array[nlobjSearchResult]]
   
   /**
     * Perform a record search using an existing search or filters and columns.
@@ -1527,8 +1382,7 @@ object global {
     * @param filters
     * @param columns
     */
-  @scala.inline
-  def nlapiSearchRecord(`type`: String, id: js.Any, filters: js.Any, columns: js.Any): js.Array[nlobjSearchResult] = (js.Dynamic.global.applyDynamic("nlapiSearchRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], filters.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Array[nlobjSearchResult]]
+  inline def nlapiSearchRecord(`type`: String, id: js.Any, filters: js.Any, columns: js.Any): js.Array[nlobjSearchResult] = (js.Dynamic.global.applyDynamic("nlapiSearchRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], filters.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Array[nlobjSearchResult]]
   
   /**
     * Select an existing line in a sublist.
@@ -1542,8 +1396,7 @@ object global {
     * @param linenum
     * @return
     */
-  @scala.inline
-  def nlapiSelectLineItem(`type`: String, linenum: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSelectLineItem")(`type`.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSelectLineItem(`type`: String, linenum: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSelectLineItem")(`type`.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Select a new line in a sublist.
@@ -1556,8 +1409,7 @@ object global {
     * @param type
     * @return
     */
-  @scala.inline
-  def nlapiSelectNewLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiSelectNewLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiSelectNewLineItem(`type`: String): js.Any = js.Dynamic.global.applyDynamic("nlapiSelectNewLineItem")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Select a node from an XML node using XPath. Supports custom namespaces (nodes in default namespace can be referenced using "nlapi" as the prefix)
@@ -1571,8 +1423,7 @@ object global {
     * @param xpath
     * @return
     */
-  @scala.inline
-  def nlapiSelectNode(node: js.Any, xpath: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSelectNode")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSelectNode(node: js.Any, xpath: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSelectNode")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Select an array of nodes from an XML node using XPath. Supports custom namespaces (nodes in default namespace can be referenced using "nlapi" as the prefix)
@@ -1585,8 +1436,7 @@ object global {
     * @param node
     * @param xpath
     */
-  @scala.inline
-  def nlapiSelectNodes(node: js.Any, xpath: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSelectNodes")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSelectNodes(node: js.Any, xpath: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSelectNodes")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * select a value from an XML node using XPath. Supports custom namespaces (nodes in default namespace can be referenced using "nlapi" as the prefix)
@@ -1600,8 +1450,7 @@ object global {
     * @param xpath
     * @return
     */
-  @scala.inline
-  def nlapiSelectValue(node: js.Any, xpath: String): String = (js.Dynamic.global.applyDynamic("nlapiSelectValue")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiSelectValue(node: js.Any, xpath: String): String = (js.Dynamic.global.applyDynamic("nlapiSelectValue")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Select an array of values from an XML node using XPath. Supports custom namespaces (nodes in default namespace can be referenced using "nlapi" as the prefix)
@@ -1614,8 +1463,7 @@ object global {
     * @param node
     * @param xpath
     */
-  @scala.inline
-  def nlapiSelectValues(node: js.Any, xpath: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSelectValues")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSelectValues(node: js.Any, xpath: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSelectValues")(node.asInstanceOf[js.Any], xpath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sends a single on-demand campaign email to a specified recipient and returns a campaign response ID to track the email.
@@ -1631,8 +1479,7 @@ object global {
     * @param recipientid
     * @return
     */
-  @scala.inline
-  def nlapiSendCampaignEmail(campaigneventid: js.Any, recipientid: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSendCampaignEmail")(campaigneventid.asInstanceOf[js.Any], recipientid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSendCampaignEmail(campaigneventid: js.Any, recipientid: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSendCampaignEmail")(campaigneventid.asInstanceOf[js.Any], recipientid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Send out an email and associate it with records in the system.
@@ -1667,8 +1514,7 @@ object global {
     * @param replyTo
     * @return
     */
-  @scala.inline
-  def nlapiSendEmail(
+  inline def nlapiSendEmail(
     author: Double,
     recipient: String | Double,
     subject: String,
@@ -1704,8 +1550,7 @@ object global {
     * @param files
     * @return
     */
-  @scala.inline
-  def nlapiSendFax(from: js.Any, to: js.Any, subject: String, body: String, records: js.Any, files: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSendFax")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any], records.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSendFax(from: js.Any, to: js.Any, subject: String, body: String, records: js.Any, files: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSendFax")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], body.asInstanceOf[js.Any], records.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the value of a field on the currently selected line.
@@ -1724,8 +1569,7 @@ object global {
     * @param timezone
     * @return
     */
-  @scala.inline
-  def nlapiSetCurrentLineItemDateTimeValue(`type`: String, fldnam: String, value: String, timezone: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetCurrentLineItemDateTimeValue(`type`: String, fldnam: String, value: String, timezone: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the current value of a sublist field on the current record on a page.
@@ -1749,12 +1593,9 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetCurrentLineItemMatrixValue(
+  inline def nlapiSetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetCurrentLineItemMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetCurrentLineItemMatrixValue(
     `type`: String,
     fldnam: String,
     column: js.Any,
@@ -1762,8 +1603,7 @@ object global {
     firefieldchanged: Boolean,
     synchronous: Boolean
   ): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetCurrentLineItemMatrixValue(
+  inline def nlapiSetCurrentLineItemMatrixValue(
     `type`: String,
     fldnam: String,
     column: js.Any,
@@ -1791,14 +1631,10 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetCurrentLineItemText(`type`: String, fldnam: String, txt: String, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemText")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the value of a field on the currently selected line.
@@ -1819,22 +1655,14 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Unit, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Unit, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: String, firefieldchanged: Unit, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Boolean, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetCurrentLineItemValue(`type`: String, fldnam: String, value: Double, firefieldchanged: Unit, synchronous: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetCurrentLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Make a field mandatory.
@@ -1848,8 +1676,7 @@ object global {
     * @param mandatory
     * @return
     */
-  @scala.inline
-  def nlapiSetFieldMandatory(fldnam: String, mandatory: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldMandatory")(fldnam.asInstanceOf[js.Any], mandatory.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldMandatory(fldnam: String, mandatory: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldMandatory")(fldnam.asInstanceOf[js.Any], mandatory.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the value of a field on the current record on a page using it's label.
@@ -1868,14 +1695,10 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetFieldText(fldnam: String, txt: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldText(fldnam: String, txt: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldText(fldnam: String, txt: String, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldText")(fldnam.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the values (via display text) of a multiselect field on the current record on a page.
@@ -1895,14 +1718,10 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetFieldTexts(fldnam: String, texts: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldTexts(fldnam: String, texts: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldTexts(fldnam: String, texts: js.Any, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldTexts")(fldnam.asInstanceOf[js.Any], texts.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the value of a field on the current record on a page.
@@ -1922,14 +1741,10 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetFieldValue(fldnam: String, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValue(fldnam: String, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValue(fldnam: String, value: String, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValue")(fldnam.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the values of a multiselect field on the current record on a page.
@@ -1949,14 +1764,10 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetFieldValues(fldnam: String, values: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValues(fldnam: String, values: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Boolean, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetFieldValues(fldnam: String, values: js.Any, firefieldchanged: Unit, synchronous: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetFieldValues")(fldnam.asInstanceOf[js.Any], values.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the value of a sublist field on the current record on a page.
@@ -1975,8 +1786,7 @@ object global {
     * @param value
     * @param timezone
     */
-  @scala.inline
-  def nlapiSetLineItemDateTimeValue(`type`: String, fldnam: String, linenum: js.Any, value: js.Any, timezone: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], value.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetLineItemDateTimeValue(`type`: String, fldnam: String, linenum: js.Any, value: js.Any, timezone: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetLineItemDateTimeValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], value.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Disable a sublist field.
@@ -1995,8 +1805,7 @@ object global {
     * @param linenum
     * @return
     */
-  @scala.inline
-  def nlapiSetLineItemDisabled(`type`: String, fldnam: String, disable: Boolean, linenum: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetLineItemDisabled")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], disable.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetLineItemDisabled(`type`: String, fldnam: String, disable: Boolean, linenum: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetLineItemDisabled")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], disable.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Make a sublist field mandatory.
@@ -2013,8 +1822,7 @@ object global {
     * @param mandatory
     * @return
     */
-  @scala.inline
-  def nlapiSetLineItemMandatory(`type`: String, fldnam: String, mandatory: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetLineItemMandatory")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], mandatory.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetLineItemMandatory(`type`: String, fldnam: String, mandatory: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetLineItemMandatory")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], mandatory.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set the value of a sublist field on the current record on a page.
@@ -2031,10 +1839,8 @@ object global {
     * @param linenum
     * @param value
     */
-  @scala.inline
-  def nlapiSetLineItemValue(`type`: String, fldnam: String, linenum: js.Any, value: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetLineItemValue(`type`: String, fldnam: String, linenum: js.Any, value: Double): Unit = (js.Dynamic.global.applyDynamic("nlapiSetLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetLineItemValue(`type`: String, fldnam: String, linenum: js.Any, value: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetLineItemValue(`type`: String, fldnam: String, linenum: js.Any, value: Double): Unit = (js.Dynamic.global.applyDynamic("nlapiSetLineItemValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set the value of a matrix header field
@@ -2057,12 +1863,9 @@ object global {
     * @param synchronous?
     * @return
     */
-  @scala.inline
-  def nlapiSetMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetMatrixValue(
+  inline def nlapiSetMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetMatrixValue(`type`: String, fldnam: String, column: js.Any, value: String, firefieldchanged: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSetMatrixValue(
     `type`: String,
     fldnam: String,
     column: js.Any,
@@ -2070,8 +1873,7 @@ object global {
     firefieldchanged: Boolean,
     synchronous: Boolean
   ): js.Any = (js.Dynamic.global.applyDynamic("nlapiSetMatrixValue")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], column.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firefieldchanged.asInstanceOf[js.Any], synchronous.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSetMatrixValue(
+  inline def nlapiSetMatrixValue(
     `type`: String,
     fldnam: String,
     column: js.Any,
@@ -2098,30 +1900,18 @@ object global {
     * @param parameters?
     * @return
     */
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Boolean, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Unit, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Boolean, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Unit, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: Unit, editmode: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: Unit, editmode: Boolean, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSetRedirectURL(`type`: String, identifier: String, id: Unit, editmode: Unit, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: String): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Boolean, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: String, editmode: Unit, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Boolean, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: Double, editmode: Unit, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: Unit, editmode: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: Unit, editmode: Boolean, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSetRedirectURL(`type`: String, identifier: String, id: Unit, editmode: Unit, parameters: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSetRedirectURL")(`type`.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], id.asInstanceOf[js.Any], editmode.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Convert a String into a Date object.
@@ -2135,10 +1925,8 @@ object global {
     * @param format
     * @return
     */
-  @scala.inline
-  def nlapiStringToDate(str: String): Date = js.Dynamic.global.applyDynamic("nlapiStringToDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
-  @scala.inline
-  def nlapiStringToDate(str: String, format: String): Date = (js.Dynamic.global.applyDynamic("nlapiStringToDate")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def nlapiStringToDate(str: String): Date = js.Dynamic.global.applyDynamic("nlapiStringToDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def nlapiStringToDate(str: String, format: String): Date = (js.Dynamic.global.applyDynamic("nlapiStringToDate")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Date]
   
   /**
     * Convert a String into an XML document. Note that in Server SuiteScript XML is supported natively by the JS runtime using the e4x standard (http://en.wikipedia.org/wiki/E4X)
@@ -2151,8 +1939,7 @@ object global {
     * @param str
     * @return
     */
-  @scala.inline
-  def nlapiStringToXML(str: String): js.Any = js.Dynamic.global.applyDynamic("nlapiStringToXML")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiStringToXML(str: String): js.Any = js.Dynamic.global.applyDynamic("nlapiStringToXML")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Commits all changes to a configuration record.
@@ -2165,8 +1952,7 @@ object global {
     * @since 2009.2
     * @param setup
     */
-  @scala.inline
-  def nlapiSubmitConfiguration(setup: js.Any): Unit = js.Dynamic.global.applyDynamic("nlapiSubmitConfiguration")(setup.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def nlapiSubmitConfiguration(setup: js.Any): Unit = js.Dynamic.global.applyDynamic("nlapiSubmitConfiguration")(setup.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Submit the values of a field or set of fields for an existing record.
@@ -2188,10 +1974,8 @@ object global {
     * @param doSourcing?
     * @return
     */
-  @scala.inline
-  def nlapiSubmitField(`type`: String, id: js.Any, fields: js.Any, values: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSubmitField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def nlapiSubmitField(`type`: String, id: js.Any, fields: js.Any, values: js.Any, doSourcing: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSubmitField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], values.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSubmitField(`type`: String, id: js.Any, fields: js.Any, values: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiSubmitField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiSubmitField(`type`: String, id: js.Any, fields: js.Any, values: js.Any, doSourcing: Boolean): Unit = (js.Dynamic.global.applyDynamic("nlapiSubmitField")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], values.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Add/update a file in the file cabinet.
@@ -2205,8 +1989,7 @@ object global {
     * @param file
     * @return
     */
-  @scala.inline
-  def nlapiSubmitFile(file: nlobjFile): js.Any = js.Dynamic.global.applyDynamic("nlapiSubmitFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiSubmitFile(file: nlobjFile): js.Any = js.Dynamic.global.applyDynamic("nlapiSubmitFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Submit a record to the system for creation or update.
@@ -2227,14 +2010,10 @@ object global {
     * @param ignoreMandatoryFields?
     * @return
     */
-  @scala.inline
-  def nlapiSubmitRecord(record: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSubmitRecord(record: js.Any, doSourcing: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSubmitRecord(record: js.Any, doSourcing: Boolean, ignoreMandatoryFields: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any], ignoreMandatoryFields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def nlapiSubmitRecord(record: js.Any, doSourcing: Unit, ignoreMandatoryFields: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any], ignoreMandatoryFields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSubmitRecord(record: js.Any): js.Any = js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiSubmitRecord(record: js.Any, doSourcing: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSubmitRecord(record: js.Any, doSourcing: Boolean, ignoreMandatoryFields: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any], ignoreMandatoryFields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiSubmitRecord(record: js.Any, doSourcing: Unit, ignoreMandatoryFields: Boolean): js.Any = (js.Dynamic.global.applyDynamic("nlapiSubmitRecord")(record.asInstanceOf[js.Any], doSourcing.asInstanceOf[js.Any], ignoreMandatoryFields.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Create a new record using values from an existing record of a different type.
@@ -2260,10 +2039,8 @@ object global {
     * @param transformValues?
     * @return
     */
-  @scala.inline
-  def nlapiTransformRecord(`type`: String, id: js.Any, transformType: String): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiTransformRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], transformType.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
-  @scala.inline
-  def nlapiTransformRecord(`type`: String, id: js.Any, transformType: String, transformValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiTransformRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], transformType.asInstanceOf[js.Any], transformValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
+  inline def nlapiTransformRecord(`type`: String, id: js.Any, transformType: String): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiTransformRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], transformType.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
+  inline def nlapiTransformRecord(`type`: String, id: js.Any, transformType: String, transformValues: js.Any): nlobjRecord = (js.Dynamic.global.applyDynamic("nlapiTransformRecord")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], transformType.asInstanceOf[js.Any], transformValues.asInstanceOf[js.Any])).asInstanceOf[nlobjRecord]
   
   /**
     * Triggers a workflow on a record.
@@ -2284,8 +2061,7 @@ object global {
     * @param stateid
     * @return
     */
-  @scala.inline
-  def nlapiTriggerWorkflow(recordtype: String, id: js.Any, workflowid: js.Any, actionid: js.Any, stateid: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiTriggerWorkflow")(recordtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], workflowid.asInstanceOf[js.Any], actionid.asInstanceOf[js.Any], stateid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def nlapiTriggerWorkflow(recordtype: String, id: js.Any, workflowid: js.Any, actionid: js.Any, stateid: js.Any): js.Any = (js.Dynamic.global.applyDynamic("nlapiTriggerWorkflow")(recordtype.asInstanceOf[js.Any], id.asInstanceOf[js.Any], workflowid.asInstanceOf[js.Any], actionid.asInstanceOf[js.Any], stateid.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Validate that a given XML document conforms to a given XML schema. XML Schema Definition (XSD) is the expected schema format.
@@ -2301,8 +2077,7 @@ object global {
     * @param schemaDocument
     * @param schemaFolderId
     */
-  @scala.inline
-  def nlapiValidateXML(xmlDocument: js.Any, schemaDocument: js.Any, schemaFolderId: String): Unit = (js.Dynamic.global.applyDynamic("nlapiValidateXML")(xmlDocument.asInstanceOf[js.Any], schemaDocument.asInstanceOf[js.Any], schemaFolderId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiValidateXML(xmlDocument: js.Any, schemaDocument: js.Any, schemaFolderId: String): Unit = (js.Dynamic.global.applyDynamic("nlapiValidateXML")(xmlDocument.asInstanceOf[js.Any], schemaDocument.asInstanceOf[js.Any], schemaFolderId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * view a subrecord on a sublist field on the current record on a page.
@@ -2315,8 +2090,7 @@ object global {
     * @param type
     * @param fldnam
     */
-  @scala.inline
-  def nlapiViewCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiViewCurrentLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiViewCurrentLineItemSubrecord(`type`: String, fldnam: String): Unit = (js.Dynamic.global.applyDynamic("nlapiViewCurrentLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * view a subrecord on a sublist field on the current record on a page.
@@ -2330,8 +2104,7 @@ object global {
     * @param fldnam
     * @param linenum
     */
-  @scala.inline
-  def nlapiViewLineItemSubrecord(`type`: String, fldnam: String, linenum: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiViewLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def nlapiViewLineItemSubrecord(`type`: String, fldnam: String, linenum: js.Any): Unit = (js.Dynamic.global.applyDynamic("nlapiViewLineItemSubrecord")(`type`.asInstanceOf[js.Any], fldnam.asInstanceOf[js.Any], linenum.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * void a transaction based on type and id .
@@ -2347,8 +2120,7 @@ object global {
     * @param id
     * @return
     */
-  @scala.inline
-  def nlapiVoidTransaction(`type`: String, id: String): String = (js.Dynamic.global.applyDynamic("nlapiVoidTransaction")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def nlapiVoidTransaction(`type`: String, id: String): String = (js.Dynamic.global.applyDynamic("nlapiVoidTransaction")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Generate a PDF from XML using the BFO report writer (see http://big.faceless.org/products/report/).
@@ -2362,8 +2134,7 @@ object global {
     * @param input
     * @return
     */
-  @scala.inline
-  def nlapiXMLToPDF(input: String): js.Any = js.Dynamic.global.applyDynamic("nlapiXMLToPDF")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def nlapiXMLToPDF(input: String): js.Any = js.Dynamic.global.applyDynamic("nlapiXMLToPDF")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Convert an XML document into a String.  Note that in Server SuiteScript XML is supported natively by the JS runtime using the e4x standard (http://en.wikipedia.org/wiki/E4X)
@@ -2376,11 +2147,9 @@ object global {
     * @param xml
     * @return
     */
-  @scala.inline
-  def nlapiXMLToString(xml: js.Any): String = js.Dynamic.global.applyDynamic("nlapiXMLToString")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def nlapiXMLToString(xml: js.Any): String = js.Dynamic.global.applyDynamic("nlapiXMLToString")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def nlapiYieldScript(): Unit = js.Dynamic.global.applyDynamic("nlapiYieldScript")().asInstanceOf[Unit]
+  inline def nlapiYieldScript(): Unit = js.Dynamic.global.applyDynamic("nlapiYieldScript")().asInstanceOf[Unit]
   
   /**
     * Return a new instance of nlobjError used system or user-defined error object.
@@ -2609,8 +2378,7 @@ object global {
     * @since 2011.2
     * @param fldnam
     */
-  @scala.inline
-  def removeSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("removeSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("removeSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * view a subrecord on body field on the current record on a page.
@@ -2621,6 +2389,5 @@ object global {
     * @since 2011.2
     * @param fldnam
     */
-  @scala.inline
-  def viewSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("viewSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def viewSubrecord(fldnam: String): Unit = js.Dynamic.global.applyDynamic("viewSubrecord")(fldnam.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -10,8 +10,7 @@ object operatorsExhaustMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exhaustMap[T, R](
+  inline def exhaustMap[T, R](
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 

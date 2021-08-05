@@ -13,16 +13,13 @@ trait S3LogsConfiguration extends StObject {
 }
 object S3LogsConfiguration {
   
-  @scala.inline
-  def apply(Enable: Boolean): S3LogsConfiguration = {
+  inline def apply(Enable: Boolean): S3LogsConfiguration = {
     val __obj = js.Dynamic.literal(Enable = Enable.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3LogsConfiguration]
   }
   
-  @scala.inline
-  implicit class S3LogsConfigurationMutableBuilder[Self <: S3LogsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: S3LogsConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
   }
 }

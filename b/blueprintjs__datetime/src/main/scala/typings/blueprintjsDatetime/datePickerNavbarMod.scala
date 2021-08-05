@@ -20,9 +20,9 @@ object datePickerNavbarMod {
       */
     def this(props: IDatePickerNavbarProps, context: js.Any) = this()
     
-    var handleNextClick: js.Any = js.native
+    /* private */ var handleNextClick: js.Any = js.native
     
-    var handlePreviousClick: js.Any = js.native
+    /* private */ var handlePreviousClick: js.Any = js.native
   }
   
   @js.native

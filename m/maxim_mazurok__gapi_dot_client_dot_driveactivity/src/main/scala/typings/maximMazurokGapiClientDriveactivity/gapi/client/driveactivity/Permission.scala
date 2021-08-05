@@ -26,49 +26,35 @@ trait Permission extends StObject {
 }
 object Permission {
   
-  @scala.inline
-  def apply(): Permission = {
+  inline def apply(): Permission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Permission]
   }
   
-  @scala.inline
-  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+  extension [Self <: Permission](x: Self) {
     
-    @scala.inline
-    def setAllowDiscovery(value: Boolean): Self = StObject.set(x, "allowDiscovery", value.asInstanceOf[js.Any])
+    inline def setAllowDiscovery(value: Boolean): Self = StObject.set(x, "allowDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
+    inline def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
     
-    @scala.inline
-    def setAnyone(value: js.Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
+    inline def setAnyone(value: js.Any): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyoneUndefined: Self = StObject.set(x, "anyone", js.undefined)
+    inline def setAnyoneUndefined: Self = StObject.set(x, "anyone", js.undefined)
     
-    @scala.inline
-    def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Domain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

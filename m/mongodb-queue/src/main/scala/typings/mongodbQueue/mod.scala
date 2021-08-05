@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(db: Db, name: String): Queue = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Queue]
-  @scala.inline
-  def apply(db: Db, name: String, opts: QueueOptions): Queue = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
+  inline def apply(db: Db, name: String): Queue = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Queue]
+  inline def apply(db: Db, name: String, opts: QueueOptions): Queue = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
   
   @JSImport("mongodb-queue", JSImport.Namespace)
   @js.native
@@ -69,29 +67,22 @@ object mod {
   }
   object QueueMessage {
     
-    @scala.inline
-    def apply(ack: String, id: String, payload: Payload | ArrayPayload, tries: Double): QueueMessage = {
+    inline def apply(ack: String, id: String, payload: Payload | ArrayPayload, tries: Double): QueueMessage = {
       val __obj = js.Dynamic.literal(ack = ack.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], tries = tries.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueMessage]
     }
     
-    @scala.inline
-    implicit class QueueMessageMutableBuilder[Self <: QueueMessage] (val x: Self) extends AnyVal {
+    extension [Self <: QueueMessage](x: Self) {
       
-      @scala.inline
-      def setAck(value: String): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+      inline def setAck(value: String): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Payload | ArrayPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload | ArrayPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadVarargs(value: (String | (Record[String, js.Any]))*): Self = StObject.set(x, "payload", js.Array(value :_*))
+      inline def setPayloadVarargs(value: (String | (Record[String, js.Any]))*): Self = StObject.set(x, "payload", js.Array(value :_*))
       
-      @scala.inline
-      def setTries(value: Double): Self = StObject.set(x, "tries", value.asInstanceOf[js.Any])
+      inline def setTries(value: Double): Self = StObject.set(x, "tries", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,38 +98,28 @@ object mod {
   }
   object QueueOptions {
     
-    @scala.inline
-    def apply(): QueueOptions = {
+    inline def apply(): QueueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueOptions]
     }
     
-    @scala.inline
-    implicit class QueueOptionsMutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueueOptions](x: Self) {
       
-      @scala.inline
-      def setDeadQueue(value: Queue): Self = StObject.set(x, "deadQueue", value.asInstanceOf[js.Any])
+      inline def setDeadQueue(value: Queue): Self = StObject.set(x, "deadQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeadQueueUndefined: Self = StObject.set(x, "deadQueue", js.undefined)
+      inline def setDeadQueueUndefined: Self = StObject.set(x, "deadQueue", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: Double): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+      inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     }
   }
 }

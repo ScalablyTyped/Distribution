@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object RecordingInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     get: RestMethod,
     list: RestMethod,
@@ -32,13 +31,10 @@ object RecordingInstance {
     __obj.asInstanceOf[RecordingInstance]
   }
   
-  @scala.inline
-  implicit class RecordingInstanceMutableBuilder[Self <: RecordingInstance] (val x: Self) extends AnyVal {
+  extension [Self <: RecordingInstance](x: Self) {
     
-    @scala.inline
-    def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptions(value: RecordingTranscriptionResource): Self = StObject.set(x, "transcriptions", value.asInstanceOf[js.Any])
+    inline def setTranscriptions(value: RecordingTranscriptionResource): Self = StObject.set(x, "transcriptions", value.asInstanceOf[js.Any])
   }
 }

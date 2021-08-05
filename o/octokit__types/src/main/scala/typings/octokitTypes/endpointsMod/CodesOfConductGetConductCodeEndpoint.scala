@@ -14,16 +14,13 @@ trait CodesOfConductGetConductCodeEndpoint
 }
 object CodesOfConductGetConductCodeEndpoint {
   
-  @scala.inline
-  def apply(key: String, mediaType: `0`[`scarlet-witch`]): CodesOfConductGetConductCodeEndpoint = {
+  inline def apply(key: String, mediaType: `0`[`scarlet-witch`]): CodesOfConductGetConductCodeEndpoint = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodesOfConductGetConductCodeEndpoint]
   }
   
-  @scala.inline
-  implicit class CodesOfConductGetConductCodeEndpointMutableBuilder[Self <: CodesOfConductGetConductCodeEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CodesOfConductGetConductCodeEndpoint](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

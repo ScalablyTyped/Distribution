@@ -13,19 +13,15 @@ trait SchemaSubscriptionPurchasesDeferRequest extends StObject {
 }
 object SchemaSubscriptionPurchasesDeferRequest {
   
-  @scala.inline
-  def apply(): SchemaSubscriptionPurchasesDeferRequest = {
+  inline def apply(): SchemaSubscriptionPurchasesDeferRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubscriptionPurchasesDeferRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSubscriptionPurchasesDeferRequestMutableBuilder[Self <: SchemaSubscriptionPurchasesDeferRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubscriptionPurchasesDeferRequest](x: Self) {
     
-    @scala.inline
-    def setDeferralInfo(value: SchemaSubscriptionDeferralInfo): Self = StObject.set(x, "deferralInfo", value.asInstanceOf[js.Any])
+    inline def setDeferralInfo(value: SchemaSubscriptionDeferralInfo): Self = StObject.set(x, "deferralInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferralInfoUndefined: Self = StObject.set(x, "deferralInfo", js.undefined)
+    inline def setDeferralInfoUndefined: Self = StObject.set(x, "deferralInfo", js.undefined)
   }
 }

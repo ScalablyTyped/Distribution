@@ -20,16 +20,13 @@ trait DOMParser extends StObject {
 }
 object DOMParser {
   
-  @scala.inline
-  def apply(parseFromString: (java.lang.String, DOMParserSupportedType) => Document): DOMParser = {
+  inline def apply(parseFromString: (java.lang.String, DOMParserSupportedType) => Document): DOMParser = {
     val __obj = js.Dynamic.literal(parseFromString = js.Any.fromFunction2(parseFromString))
     __obj.asInstanceOf[DOMParser]
   }
   
-  @scala.inline
-  implicit class DOMParserMutableBuilder[Self <: DOMParser] (val x: Self) extends AnyVal {
+  extension [Self <: DOMParser](x: Self) {
     
-    @scala.inline
-    def setParseFromString(value: (java.lang.String, DOMParserSupportedType) => Document): Self = StObject.set(x, "parseFromString", js.Any.fromFunction2(value))
+    inline def setParseFromString(value: (java.lang.String, DOMParserSupportedType) => Document): Self = StObject.set(x, "parseFromString", js.Any.fromFunction2(value))
   }
 }

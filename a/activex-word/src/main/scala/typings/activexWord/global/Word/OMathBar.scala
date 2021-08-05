@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathBar")
 @js.native
-class OMathBar protected ()
+/* private */ class OMathBar ()
   extends StObject
      with typings.activexWord.Word.OMathBar {
   
@@ -25,7 +25,7 @@ class OMathBar protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathBar_typekey")
   var WordDotOMathBar_typekey: typings.activexWord.Word.OMathBar = js.native
 }

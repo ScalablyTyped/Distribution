@@ -12,25 +12,19 @@ trait SchemaInternalSourceSummaryProto extends StObject {
 }
 object SchemaInternalSourceSummaryProto {
   
-  @scala.inline
-  def apply(): SchemaInternalSourceSummaryProto = {
+  inline def apply(): SchemaInternalSourceSummaryProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInternalSourceSummaryProto]
   }
   
-  @scala.inline
-  implicit class SchemaInternalSourceSummaryProtoMutableBuilder[Self <: SchemaInternalSourceSummaryProto] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInternalSourceSummaryProto](x: Self) {
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

@@ -11,10 +11,8 @@ object getPrebuiltEcrImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs): js.Promise[GetPrebuiltEcrImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrebuiltEcrImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPrebuiltEcrImageResult]]
-  @scala.inline
-  def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs, opts: InvokeOptions): js.Promise[GetPrebuiltEcrImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrebuiltEcrImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrebuiltEcrImageResult]]
+  inline def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs): js.Promise[GetPrebuiltEcrImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrebuiltEcrImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPrebuiltEcrImageResult]]
+  inline def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs, opts: InvokeOptions): js.Promise[GetPrebuiltEcrImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrebuiltEcrImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrebuiltEcrImageResult]]
   
   trait GetPrebuiltEcrImageArgs extends StObject {
     
@@ -40,35 +38,26 @@ object getPrebuiltEcrImageMod {
   }
   object GetPrebuiltEcrImageArgs {
     
-    @scala.inline
-    def apply(repositoryName: String): GetPrebuiltEcrImageArgs = {
+    inline def apply(repositoryName: String): GetPrebuiltEcrImageArgs = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPrebuiltEcrImageArgs]
     }
     
-    @scala.inline
-    implicit class GetPrebuiltEcrImageArgsMutableBuilder[Self <: GetPrebuiltEcrImageArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetPrebuiltEcrImageArgs](x: Self) {
       
-      @scala.inline
-      def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
+      inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
+      inline def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
       
-      @scala.inline
-      def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
+      inline def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
+      inline def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,44 +88,32 @@ object getPrebuiltEcrImageMod {
   }
   object GetPrebuiltEcrImageResult {
     
-    @scala.inline
-    def apply(id: String, registryId: String, registryPath: String, repositoryName: String): GetPrebuiltEcrImageResult = {
+    inline def apply(id: String, registryId: String, registryPath: String, repositoryName: String): GetPrebuiltEcrImageResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], registryId = registryId.asInstanceOf[js.Any], registryPath = registryPath.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPrebuiltEcrImageResult]
     }
     
-    @scala.inline
-    implicit class GetPrebuiltEcrImageResultMutableBuilder[Self <: GetPrebuiltEcrImageResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPrebuiltEcrImageResult](x: Self) {
       
-      @scala.inline
-      def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
+      inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
+      inline def setDnsSuffixUndefined: Self = StObject.set(x, "dnsSuffix", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
+      inline def setImageTag(value: String): Self = StObject.set(x, "imageTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
+      inline def setImageTagUndefined: Self = StObject.set(x, "imageTag", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryPath(value: String): Self = StObject.set(x, "registryPath", value.asInstanceOf[js.Any])
+      inline def setRegistryPath(value: String): Self = StObject.set(x, "registryPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     }
   }
 }

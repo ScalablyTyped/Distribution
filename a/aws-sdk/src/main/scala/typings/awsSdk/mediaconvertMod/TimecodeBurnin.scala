@@ -23,31 +23,23 @@ trait TimecodeBurnin extends StObject {
 }
 object TimecodeBurnin {
   
-  @scala.inline
-  def apply(): TimecodeBurnin = {
+  inline def apply(): TimecodeBurnin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimecodeBurnin]
   }
   
-  @scala.inline
-  implicit class TimecodeBurninMutableBuilder[Self <: TimecodeBurnin] (val x: Self) extends AnyVal {
+  extension [Self <: TimecodeBurnin](x: Self) {
     
-    @scala.inline
-    def setFontSize(value: integerMin10Max48): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: integerMin10Max48): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "FontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "FontSize", js.undefined)
     
-    @scala.inline
-    def setPosition(value: TimecodeBurninPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: TimecodeBurninPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: stringPattern): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: stringPattern): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

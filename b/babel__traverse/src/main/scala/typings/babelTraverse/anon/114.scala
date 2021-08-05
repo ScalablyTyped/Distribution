@@ -11,17 +11,14 @@ trait `114` extends StObject {
 }
 object `114` {
   
-  @scala.inline
-  def apply(): `114` = {
+  inline def apply(): `114` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("EnumBooleanMember")
     __obj.asInstanceOf[`114`]
   }
   
-  @scala.inline
-  implicit class `114MutableBuilder`[Self <: `114`] (val x: Self) extends AnyVal {
+  extension [Self <: `114`](x: Self) {
     
-    @scala.inline
-    def setType(value: EnumBooleanMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EnumBooleanMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

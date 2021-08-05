@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](`object`: T): typings.asyncStreamEmitter.mod.^[js.Any] & T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.asyncStreamEmitter.mod.^[js.Any] & T]
+  inline def apply[T](`object`: T): typings.asyncStreamEmitter.mod.^[js.Any] & T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.asyncStreamEmitter.mod.^[js.Any] & T]
   
   @JSImport("eetase", JSImport.Namespace)
   @js.native

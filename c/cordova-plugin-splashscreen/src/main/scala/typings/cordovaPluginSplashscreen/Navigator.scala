@@ -12,16 +12,13 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(splashscreen: Hide): Navigator = {
+  inline def apply(splashscreen: Hide): Navigator = {
     val __obj = js.Dynamic.literal(splashscreen = splashscreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setSplashscreen(value: Hide): Self = StObject.set(x, "splashscreen", value.asInstanceOf[js.Any])
+    inline def setSplashscreen(value: Hide): Self = StObject.set(x, "splashscreen", value.asInstanceOf[js.Any])
   }
 }

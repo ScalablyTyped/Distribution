@@ -47,20 +47,16 @@ object regularPolygonMod {
   }
   object RegularPolygonConfig {
     
-    @scala.inline
-    def apply(radius: Double, sides: Double): RegularPolygonConfig = {
+    inline def apply(radius: Double, sides: Double): RegularPolygonConfig = {
       val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], sides = sides.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegularPolygonConfig]
     }
     
-    @scala.inline
-    implicit class RegularPolygonConfigMutableBuilder[Self <: RegularPolygonConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RegularPolygonConfig](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
+      inline def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
     }
   }
 }

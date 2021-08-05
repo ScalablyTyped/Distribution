@@ -34,8 +34,7 @@ trait UserReportedConcern extends StObject {
 }
 object UserReportedConcern {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: ConcernCategory,
     concernText: String,
     reviewId: Double,
@@ -46,22 +45,16 @@ object UserReportedConcern {
     __obj.asInstanceOf[UserReportedConcern]
   }
   
-  @scala.inline
-  implicit class UserReportedConcernMutableBuilder[Self <: UserReportedConcern] (val x: Self) extends AnyVal {
+  extension [Self <: UserReportedConcern](x: Self) {
     
-    @scala.inline
-    def setCategory(value: ConcernCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: ConcernCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcernText(value: String): Self = StObject.set(x, "concernText", value.asInstanceOf[js.Any])
+    inline def setConcernText(value: String): Self = StObject.set(x, "concernText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
+    inline def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedDate(value: Date): Self = StObject.set(x, "submittedDate", value.asInstanceOf[js.Any])
+    inline def setSubmittedDate(value: Date): Self = StObject.set(x, "submittedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

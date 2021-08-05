@@ -17,13 +17,10 @@ object FetchDirection {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FORWARD: `1000` = 1000.asInstanceOf[`1000`]
+    inline def FORWARD: `1000` = 1000.asInstanceOf[`1000`]
     
-    @scala.inline
-    def REVERSE: `1001` = 1001.asInstanceOf[`1001`]
+    inline def REVERSE: `1001` = 1001.asInstanceOf[`1001`]
     
-    @scala.inline
-    def UNKNOWN: `1002` = 1002.asInstanceOf[`1002`]
+    inline def UNKNOWN: `1002` = 1002.asInstanceOf[`1002`]
   }
 }

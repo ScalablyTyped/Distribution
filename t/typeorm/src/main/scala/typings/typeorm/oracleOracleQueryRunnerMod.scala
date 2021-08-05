@@ -251,7 +251,7 @@ object oracleOracleQueryRunnerMod {
     /**
       * Promise used to obtain a database connection for a first time.
       */
-    var databaseConnectionPromise: js.Promise[js.Any] = js.native
+    /* protected */ var databaseConnectionPromise: js.Promise[js.Any] = js.native
     
     /* protected */ def deleteViewDefinitionSql(viewOrPath: String): Query = js.native
     /**

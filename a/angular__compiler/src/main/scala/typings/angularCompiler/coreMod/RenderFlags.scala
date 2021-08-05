@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RenderFlags extends StObject
 object RenderFlags {
   
-  @scala.inline
-  def Create: `1` = 1.asInstanceOf[`1`]
+  inline def Create: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Update: `2` = 2.asInstanceOf[`2`]
+  inline def Update: `2` = 2.asInstanceOf[`2`]
 }

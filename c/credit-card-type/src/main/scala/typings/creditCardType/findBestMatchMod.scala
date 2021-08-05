@@ -11,6 +11,5 @@ object findBestMatchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findBestMatch(results: js.Array[CreditCardType]): CreditCardType | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findBestMatch")(results.asInstanceOf[js.Any]).asInstanceOf[CreditCardType | Null]
+  inline def findBestMatch(results: js.Array[CreditCardType]): CreditCardType | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findBestMatch")(results.asInstanceOf[js.Any]).asInstanceOf[CreditCardType | Null]
 }

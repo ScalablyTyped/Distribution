@@ -62,8 +62,7 @@ object ParameterizedEntityType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
+  inline def create(model: IModel): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -74,8 +73,7 @@ object ParameterizedEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
+  inline def createInBasicParameterTypeUnderType(container: BasicParameterType): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -86,8 +84,7 @@ object ParameterizedEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCodeActionUnderActionReturnType(container: CodeAction): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
+  inline def createInCodeActionUnderActionReturnType(container: CodeAction): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
   
   /**
     * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
@@ -98,20 +95,17 @@ object ParameterizedEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListTypeUnderParameter(container: ListType): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
+  inline def createInListTypeUnderParameter(container: ListType): ParameterizedEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[ParameterizedEntityType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ParameterizedEntityType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ParameterizedEntityType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

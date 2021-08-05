@@ -13,22 +13,17 @@ trait DetectCustomLabelsResponse extends StObject {
 }
 object DetectCustomLabelsResponse {
   
-  @scala.inline
-  def apply(): DetectCustomLabelsResponse = {
+  inline def apply(): DetectCustomLabelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectCustomLabelsResponse]
   }
   
-  @scala.inline
-  implicit class DetectCustomLabelsResponseMutableBuilder[Self <: DetectCustomLabelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectCustomLabelsResponse](x: Self) {
     
-    @scala.inline
-    def setCustomLabels(value: CustomLabels): Self = StObject.set(x, "CustomLabels", value.asInstanceOf[js.Any])
+    inline def setCustomLabels(value: CustomLabels): Self = StObject.set(x, "CustomLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLabelsUndefined: Self = StObject.set(x, "CustomLabels", js.undefined)
+    inline def setCustomLabelsUndefined: Self = StObject.set(x, "CustomLabels", js.undefined)
     
-    @scala.inline
-    def setCustomLabelsVarargs(value: CustomLabel*): Self = StObject.set(x, "CustomLabels", js.Array(value :_*))
+    inline def setCustomLabelsVarargs(value: CustomLabel*): Self = StObject.set(x, "CustomLabels", js.Array(value :_*))
   }
 }

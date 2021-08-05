@@ -37,8 +37,7 @@ trait XAreaLinks
 }
 object XAreaLinks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -55,13 +54,10 @@ object XAreaLinks {
     __obj.asInstanceOf[XAreaLinks]
   }
   
-  @scala.inline
-  implicit class XAreaLinksMutableBuilder[Self <: XAreaLinks] (val x: Self) extends AnyVal {
+  extension [Self <: XAreaLinks](x: Self) {
     
-    @scala.inline
-    def setInsertAtPosition(value: (CellAddress, String, String, String, String) => Unit): Self = StObject.set(x, "insertAtPosition", js.Any.fromFunction5(value))
+    inline def setInsertAtPosition(value: (CellAddress, String, String, String, String) => Unit): Self = StObject.set(x, "insertAtPosition", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
+    inline def setRemoveByIndex(value: Double => Unit): Self = StObject.set(x, "removeByIndex", js.Any.fromFunction1(value))
   }
 }

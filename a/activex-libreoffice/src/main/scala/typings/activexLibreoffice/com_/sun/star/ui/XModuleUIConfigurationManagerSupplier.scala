@@ -23,8 +23,7 @@ trait XModuleUIConfigurationManagerSupplier
 }
 object XModuleUIConfigurationManagerSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getUIConfigurationManager: String => XUIConfigurationManager,
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XModuleUIConfigurationManagerSupplier {
     __obj.asInstanceOf[XModuleUIConfigurationManagerSupplier]
   }
   
-  @scala.inline
-  implicit class XModuleUIConfigurationManagerSupplierMutableBuilder[Self <: XModuleUIConfigurationManagerSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XModuleUIConfigurationManagerSupplier](x: Self) {
     
-    @scala.inline
-    def setGetUIConfigurationManager(value: String => XUIConfigurationManager): Self = StObject.set(x, "getUIConfigurationManager", js.Any.fromFunction1(value))
+    inline def setGetUIConfigurationManager(value: String => XUIConfigurationManager): Self = StObject.set(x, "getUIConfigurationManager", js.Any.fromFunction1(value))
   }
 }

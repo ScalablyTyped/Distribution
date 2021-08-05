@@ -12,19 +12,15 @@ trait Constraints extends StObject {
 }
 object Constraints {
   
-  @scala.inline
-  def apply(horizontal: ConstraintType, vertical: ConstraintType): Constraints = {
+  inline def apply(horizontal: ConstraintType, vertical: ConstraintType): Constraints = {
     val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constraints]
   }
   
-  @scala.inline
-  implicit class ConstraintsMutableBuilder[Self <: Constraints] (val x: Self) extends AnyVal {
+  extension [Self <: Constraints](x: Self) {
     
-    @scala.inline
-    def setHorizontal(value: ConstraintType): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: ConstraintType): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical(value: ConstraintType): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: ConstraintType): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
   }
 }

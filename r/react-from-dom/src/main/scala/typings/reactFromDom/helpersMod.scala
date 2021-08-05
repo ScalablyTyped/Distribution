@@ -19,6 +19,5 @@ object helpersMod {
   @js.native
   val possibleStandardNames: Record[String, js.Any] = js.native
   
-  @scala.inline
-  def styleToObject(input: String): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToObject")(input.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  inline def styleToObject(input: String): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleToObject")(input.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
 }

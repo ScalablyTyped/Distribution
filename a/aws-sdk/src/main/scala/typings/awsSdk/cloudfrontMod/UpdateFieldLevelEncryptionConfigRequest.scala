@@ -23,25 +23,19 @@ trait UpdateFieldLevelEncryptionConfigRequest extends StObject {
 }
 object UpdateFieldLevelEncryptionConfigRequest {
   
-  @scala.inline
-  def apply(FieldLevelEncryptionConfig: FieldLevelEncryptionConfig, Id: String): UpdateFieldLevelEncryptionConfigRequest = {
+  inline def apply(FieldLevelEncryptionConfig: FieldLevelEncryptionConfig, Id: String): UpdateFieldLevelEncryptionConfigRequest = {
     val __obj = js.Dynamic.literal(FieldLevelEncryptionConfig = FieldLevelEncryptionConfig.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFieldLevelEncryptionConfigRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFieldLevelEncryptionConfigRequestMutableBuilder[Self <: UpdateFieldLevelEncryptionConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFieldLevelEncryptionConfigRequest](x: Self) {
     
-    @scala.inline
-    def setFieldLevelEncryptionConfig(value: FieldLevelEncryptionConfig): Self = StObject.set(x, "FieldLevelEncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setFieldLevelEncryptionConfig(value: FieldLevelEncryptionConfig): Self = StObject.set(x, "FieldLevelEncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
   }
 }

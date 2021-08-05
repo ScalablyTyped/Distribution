@@ -23,25 +23,19 @@ trait CrosshairTextCfg
 }
 object CrosshairTextCfg {
   
-  @scala.inline
-  def apply(): CrosshairTextCfg = {
+  inline def apply(): CrosshairTextCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrosshairTextCfg]
   }
   
-  @scala.inline
-  implicit class CrosshairTextCfgMutableBuilder[Self <: CrosshairTextCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CrosshairTextCfg](x: Self) {
     
-    @scala.inline
-    def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
+    inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
+    inline def setAutoRotateUndefined: Self = StObject.set(x, "autoRotate", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

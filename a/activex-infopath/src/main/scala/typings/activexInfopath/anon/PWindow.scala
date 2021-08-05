@@ -14,19 +14,15 @@ trait PWindow extends StObject {
 }
 object PWindow {
   
-  @scala.inline
-  def apply(pDocument: _XDocument, pWindow: Window): PWindow = {
+  inline def apply(pDocument: _XDocument, pWindow: Window): PWindow = {
     val __obj = js.Dynamic.literal(pDocument = pDocument.asInstanceOf[js.Any], pWindow = pWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[PWindow]
   }
   
-  @scala.inline
-  implicit class PWindowMutableBuilder[Self <: PWindow] (val x: Self) extends AnyVal {
+  extension [Self <: PWindow](x: Self) {
     
-    @scala.inline
-    def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
+    inline def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPWindow(value: Window): Self = StObject.set(x, "pWindow", value.asInstanceOf[js.Any])
+    inline def setPWindow(value: Window): Self = StObject.set(x, "pWindow", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: S3StreamDownloaderOptions): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply(options: S3StreamDownloaderOptions): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
   
   @JSImport("s3-download-stream", JSImport.Namespace)
   @js.native
@@ -28,32 +27,24 @@ object mod {
   }
   object S3StreamDownloaderOptions {
     
-    @scala.inline
-    def apply(client: S3, params: GetObjectRequest): S3StreamDownloaderOptions = {
+    inline def apply(client: S3, params: GetObjectRequest): S3StreamDownloaderOptions = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3StreamDownloaderOptions]
     }
     
-    @scala.inline
-    implicit class S3StreamDownloaderOptionsMutableBuilder[Self <: S3StreamDownloaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3StreamDownloaderOptions](x: Self) {
       
-      @scala.inline
-      def setChunkSize(value: String): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: String): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setClient(value: S3): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: S3): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setParams(value: GetObjectRequest): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: GetObjectRequest): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -38,49 +38,35 @@ trait PutPermissionRequest extends StObject {
 }
 object PutPermissionRequest {
   
-  @scala.inline
-  def apply(): PutPermissionRequest = {
+  inline def apply(): PutPermissionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutPermissionRequest]
   }
   
-  @scala.inline
-  implicit class PutPermissionRequestMutableBuilder[Self <: PutPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setEventBusName(value: NonPartnerEventBusName): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
+    inline def setEventBusName(value: NonPartnerEventBusName): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
+    inline def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "Principal", js.undefined)
     
-    @scala.inline
-    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
+    inline def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
+    inline def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
   }
 }

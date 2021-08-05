@@ -19,12 +19,10 @@ trait ColorMode extends StObject
 object ColorMode {
   
   /** the graphic is rendered in grayscale on the output device, */
-  @scala.inline
-  def GREYS: `1` = 1.asInstanceOf[`1`]
+  inline def GREYS: `1` = 1.asInstanceOf[`1`]
   
   /** the graphic is rendered in black and white only, */
-  @scala.inline
-  def MONO: `2` = 2.asInstanceOf[`2`]
+  inline def MONO: `2` = 2.asInstanceOf[`2`]
   
   /**
     * the graphic is rendered in the default color style of the output device,
@@ -33,10 +31,8 @@ object ColorMode {
     *
     * use the length measurement.
     */
-  @scala.inline
-  def STANDARD: `0` = 0.asInstanceOf[`0`]
+  inline def STANDARD: `0` = 0.asInstanceOf[`0`]
   
   /** the graphic is rendered in a watermark like style, */
-  @scala.inline
-  def WATERMARK: `3` = 3.asInstanceOf[`3`]
+  inline def WATERMARK: `3` = 3.asInstanceOf[`3`]
 }

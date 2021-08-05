@@ -52,8 +52,7 @@ trait Traceback extends StObject {
 }
 object Traceback {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     col: Double,
     file: String,
     fun: js.Any,
@@ -76,52 +75,36 @@ object Traceback {
     __obj.asInstanceOf[Traceback]
   }
   
-  @scala.inline
-  implicit class TracebackMutableBuilder[Self <: Traceback] (val x: Self) extends AnyVal {
+  extension [Self <: Traceback](x: Self) {
     
-    @scala.inline
-    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFun(value: js.Any): Self = StObject.set(x, "fun", value.asInstanceOf[js.Any])
+    inline def setFun(value: js.Any): Self = StObject.set(x, "fun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_ctor(value: Boolean): Self = StObject.set(x, "is_ctor", value.asInstanceOf[js.Any])
+    inline def setIs_ctor(value: Boolean): Self = StObject.set(x, "is_ctor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_eval(value: Boolean): Self = StObject.set(x, "is_eval", value.asInstanceOf[js.Any])
+    inline def setIs_eval(value: Boolean): Self = StObject.set(x, "is_eval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_native(value: Boolean): Self = StObject.set(x, "is_native", value.asInstanceOf[js.Any])
+    inline def setIs_native(value: Boolean): Self = StObject.set(x, "is_native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_top(value: Boolean): Self = StObject.set(x, "is_top", value.asInstanceOf[js.Any])
+    inline def setIs_top(value: Boolean): Self = StObject.set(x, "is_top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: js.Any): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: js.Any): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThis(value: js.Any): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
+    inline def setThis(value: js.Any): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -75,26 +75,20 @@ object mod extends Shortcut {
   }
   object StatFilterCondition {
     
-    @scala.inline
-    def apply(): StatFilterCondition = {
+    inline def apply(): StatFilterCondition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatFilterCondition]
     }
     
-    @scala.inline
-    implicit class StatFilterConditionMutableBuilder[Self <: StatFilterCondition] (val x: Self) extends AnyVal {
+    extension [Self <: StatFilterCondition](x: Self) {
       
-      @scala.inline
-      def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+      inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+      inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
       
-      @scala.inline
-      def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
+      inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
+      inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
     }
   }
   

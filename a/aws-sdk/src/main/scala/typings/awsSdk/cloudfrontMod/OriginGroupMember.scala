@@ -13,16 +13,13 @@ trait OriginGroupMember extends StObject {
 }
 object OriginGroupMember {
   
-  @scala.inline
-  def apply(OriginId: String): OriginGroupMember = {
+  inline def apply(OriginId: String): OriginGroupMember = {
     val __obj = js.Dynamic.literal(OriginId = OriginId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginGroupMember]
   }
   
-  @scala.inline
-  implicit class OriginGroupMemberMutableBuilder[Self <: OriginGroupMember] (val x: Self) extends AnyVal {
+  extension [Self <: OriginGroupMember](x: Self) {
     
-    @scala.inline
-    def setOriginId(value: String): Self = StObject.set(x, "OriginId", value.asInstanceOf[js.Any])
+    inline def setOriginId(value: String): Self = StObject.set(x, "OriginId", value.asInstanceOf[js.Any])
   }
 }

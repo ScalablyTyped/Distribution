@@ -19,25 +19,19 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(Worker: Worker, requestFileSystem: js.Any, webkitRequestFileSystem: js.Any, webkitURL: URL): Window = {
+  inline def apply(Worker: Worker, requestFileSystem: js.Any, webkitRequestFileSystem: js.Any, webkitURL: URL): Window = {
     val __obj = js.Dynamic.literal(Worker = Worker.asInstanceOf[js.Any], requestFileSystem = requestFileSystem.asInstanceOf[js.Any], webkitRequestFileSystem = webkitRequestFileSystem.asInstanceOf[js.Any], webkitURL = webkitURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setRequestFileSystem(value: js.Any): Self = StObject.set(x, "requestFileSystem", value.asInstanceOf[js.Any])
+    inline def setRequestFileSystem(value: js.Any): Self = StObject.set(x, "requestFileSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitRequestFileSystem(value: js.Any): Self = StObject.set(x, "webkitRequestFileSystem", value.asInstanceOf[js.Any])
+    inline def setWebkitRequestFileSystem(value: js.Any): Self = StObject.set(x, "webkitRequestFileSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkitURL(value: URL): Self = StObject.set(x, "webkitURL", value.asInstanceOf[js.Any])
+    inline def setWebkitURL(value: URL): Self = StObject.set(x, "webkitURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorker(value: Worker): Self = StObject.set(x, "Worker", value.asInstanceOf[js.Any])
+    inline def setWorker(value: Worker): Self = StObject.set(x, "Worker", value.asInstanceOf[js.Any])
   }
 }

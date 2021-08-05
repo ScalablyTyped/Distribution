@@ -22,22 +22,17 @@ trait UsbDescriptor extends StObject {
 }
 object UsbDescriptor {
   
-  @scala.inline
-  def apply(descriptorType: Double, length: Double, readDescriptorBuffer: IBuffer => Unit): UsbDescriptor = {
+  inline def apply(descriptorType: Double, length: Double, readDescriptorBuffer: IBuffer => Unit): UsbDescriptor = {
     val __obj = js.Dynamic.literal(descriptorType = descriptorType.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], readDescriptorBuffer = js.Any.fromFunction1(readDescriptorBuffer))
     __obj.asInstanceOf[UsbDescriptor]
   }
   
-  @scala.inline
-  implicit class UsbDescriptorMutableBuilder[Self <: UsbDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UsbDescriptor](x: Self) {
     
-    @scala.inline
-    def setDescriptorType(value: Double): Self = StObject.set(x, "descriptorType", value.asInstanceOf[js.Any])
+    inline def setDescriptorType(value: Double): Self = StObject.set(x, "descriptorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadDescriptorBuffer(value: IBuffer => Unit): Self = StObject.set(x, "readDescriptorBuffer", js.Any.fromFunction1(value))
+    inline def setReadDescriptorBuffer(value: IBuffer => Unit): Self = StObject.set(x, "readDescriptorBuffer", js.Any.fromFunction1(value))
   }
 }

@@ -70,62 +70,44 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAction(value: js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: js.Function0[js.Promise[js.Any]] | (js.Function1[/* done */ js.Function0[Unit], js.Any])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
+      inline def setActionFunction0(value: () => js.Promise[js.Any]): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setActionFunction1(value: /* done */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setActionFunction1(value: /* done */ js.Function0[Unit] => js.Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setFail(value: /* err */ Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+      inline def setFail(value: /* err */ Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+      inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setPass(value: () => Unit): Self = StObject.set(x, "pass", js.Any.fromFunction0(value))
+      inline def setPass(value: () => Unit): Self = StObject.set(x, "pass", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      @scala.inline
-      def setUntil(value: () => Boolean): Self = StObject.set(x, "until", js.Any.fromFunction0(value))
+      inline def setUntil(value: () => Boolean): Self = StObject.set(x, "until", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
+      inline def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
       
-      @scala.inline
-      def setWhen(value: () => Boolean): Self = StObject.set(x, "when", js.Any.fromFunction0(value))
+      inline def setWhen(value: () => Boolean): Self = StObject.set(x, "when", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+      inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
     }
   }
   

@@ -196,151 +196,103 @@ trait ContentControlCollectionLoadOptions extends StObject {
 }
 object ContentControlCollectionLoadOptions {
   
-  @scala.inline
-  def apply(): ContentControlCollectionLoadOptions = {
+  inline def apply(): ContentControlCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentControlCollectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class ContentControlCollectionLoadOptionsMutableBuilder[Self <: ContentControlCollectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContentControlCollectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAppearance(value: Boolean): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: Boolean): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+    inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
-    @scala.inline
-    def setCannotDelete(value: Boolean): Self = StObject.set(x, "cannotDelete", value.asInstanceOf[js.Any])
+    inline def setCannotDelete(value: Boolean): Self = StObject.set(x, "cannotDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCannotDeleteUndefined: Self = StObject.set(x, "cannotDelete", js.undefined)
+    inline def setCannotDeleteUndefined: Self = StObject.set(x, "cannotDelete", js.undefined)
     
-    @scala.inline
-    def setCannotEdit(value: Boolean): Self = StObject.set(x, "cannotEdit", value.asInstanceOf[js.Any])
+    inline def setCannotEdit(value: Boolean): Self = StObject.set(x, "cannotEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCannotEditUndefined: Self = StObject.set(x, "cannotEdit", js.undefined)
+    inline def setCannotEditUndefined: Self = StObject.set(x, "cannotEdit", js.undefined)
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFont(value: FontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setParentBody(value: BodyLoadOptions): Self = StObject.set(x, "parentBody", value.asInstanceOf[js.Any])
+    inline def setParentBody(value: BodyLoadOptions): Self = StObject.set(x, "parentBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentBodyUndefined: Self = StObject.set(x, "parentBody", js.undefined)
+    inline def setParentBodyUndefined: Self = StObject.set(x, "parentBody", js.undefined)
     
-    @scala.inline
-    def setParentContentControl(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControl", value.asInstanceOf[js.Any])
+    inline def setParentContentControl(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControlOrNullObject", value.asInstanceOf[js.Any])
+    inline def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControlOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentContentControlOrNullObjectUndefined: Self = StObject.set(x, "parentContentControlOrNullObject", js.undefined)
+    inline def setParentContentControlOrNullObjectUndefined: Self = StObject.set(x, "parentContentControlOrNullObject", js.undefined)
     
-    @scala.inline
-    def setParentContentControlUndefined: Self = StObject.set(x, "parentContentControl", js.undefined)
+    inline def setParentContentControlUndefined: Self = StObject.set(x, "parentContentControl", js.undefined)
     
-    @scala.inline
-    def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
+    inline def setParentTable(value: TableLoadOptions): Self = StObject.set(x, "parentTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTableCell(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCell", value.asInstanceOf[js.Any])
+    inline def setParentTableCell(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTableCellOrNullObject(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCellOrNullObject", value.asInstanceOf[js.Any])
+    inline def setParentTableCellOrNullObject(value: TableCellLoadOptions): Self = StObject.set(x, "parentTableCellOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTableCellOrNullObjectUndefined: Self = StObject.set(x, "parentTableCellOrNullObject", js.undefined)
+    inline def setParentTableCellOrNullObjectUndefined: Self = StObject.set(x, "parentTableCellOrNullObject", js.undefined)
     
-    @scala.inline
-    def setParentTableCellUndefined: Self = StObject.set(x, "parentTableCell", js.undefined)
+    inline def setParentTableCellUndefined: Self = StObject.set(x, "parentTableCell", js.undefined)
     
-    @scala.inline
-    def setParentTableOrNullObject(value: TableLoadOptions): Self = StObject.set(x, "parentTableOrNullObject", value.asInstanceOf[js.Any])
+    inline def setParentTableOrNullObject(value: TableLoadOptions): Self = StObject.set(x, "parentTableOrNullObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTableOrNullObjectUndefined: Self = StObject.set(x, "parentTableOrNullObject", js.undefined)
+    inline def setParentTableOrNullObjectUndefined: Self = StObject.set(x, "parentTableOrNullObject", js.undefined)
     
-    @scala.inline
-    def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
+    inline def setParentTableUndefined: Self = StObject.set(x, "parentTable", js.undefined)
     
-    @scala.inline
-    def setPlaceholderText(value: Boolean): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
+    inline def setPlaceholderText(value: Boolean): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
+    inline def setPlaceholderTextUndefined: Self = StObject.set(x, "placeholderText", js.undefined)
     
-    @scala.inline
-    def setRemoveWhenEdited(value: Boolean): Self = StObject.set(x, "removeWhenEdited", value.asInstanceOf[js.Any])
+    inline def setRemoveWhenEdited(value: Boolean): Self = StObject.set(x, "removeWhenEdited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveWhenEditedUndefined: Self = StObject.set(x, "removeWhenEdited", js.undefined)
+    inline def setRemoveWhenEditedUndefined: Self = StObject.set(x, "removeWhenEdited", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltIn(value: Boolean): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
+    inline def setStyleBuiltIn(value: Boolean): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
+    inline def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSubtype(value: Boolean): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: Boolean): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
-    @scala.inline
-    def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

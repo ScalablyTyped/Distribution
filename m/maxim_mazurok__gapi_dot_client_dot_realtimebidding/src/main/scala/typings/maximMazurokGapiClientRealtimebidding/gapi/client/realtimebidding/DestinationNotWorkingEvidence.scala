@@ -32,61 +32,43 @@ trait DestinationNotWorkingEvidence extends StObject {
 }
 object DestinationNotWorkingEvidence {
   
-  @scala.inline
-  def apply(): DestinationNotWorkingEvidence = {
+  inline def apply(): DestinationNotWorkingEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationNotWorkingEvidence]
   }
   
-  @scala.inline
-  implicit class DestinationNotWorkingEvidenceMutableBuilder[Self <: DestinationNotWorkingEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationNotWorkingEvidence](x: Self) {
     
-    @scala.inline
-    def setDnsError(value: String): Self = StObject.set(x, "dnsError", value.asInstanceOf[js.Any])
+    inline def setDnsError(value: String): Self = StObject.set(x, "dnsError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsErrorUndefined: Self = StObject.set(x, "dnsError", js.undefined)
+    inline def setDnsErrorUndefined: Self = StObject.set(x, "dnsError", js.undefined)
     
-    @scala.inline
-    def setExpandedUrl(value: String): Self = StObject.set(x, "expandedUrl", value.asInstanceOf[js.Any])
+    inline def setExpandedUrl(value: String): Self = StObject.set(x, "expandedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUrlUndefined: Self = StObject.set(x, "expandedUrl", js.undefined)
+    inline def setExpandedUrlUndefined: Self = StObject.set(x, "expandedUrl", js.undefined)
     
-    @scala.inline
-    def setHttpError(value: Double): Self = StObject.set(x, "httpError", value.asInstanceOf[js.Any])
+    inline def setHttpError(value: Double): Self = StObject.set(x, "httpError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpErrorUndefined: Self = StObject.set(x, "httpError", js.undefined)
+    inline def setHttpErrorUndefined: Self = StObject.set(x, "httpError", js.undefined)
     
-    @scala.inline
-    def setInvalidPage(value: String): Self = StObject.set(x, "invalidPage", value.asInstanceOf[js.Any])
+    inline def setInvalidPage(value: String): Self = StObject.set(x, "invalidPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidPageUndefined: Self = StObject.set(x, "invalidPage", js.undefined)
+    inline def setInvalidPageUndefined: Self = StObject.set(x, "invalidPage", js.undefined)
     
-    @scala.inline
-    def setLastCheckTime(value: String): Self = StObject.set(x, "lastCheckTime", value.asInstanceOf[js.Any])
+    inline def setLastCheckTime(value: String): Self = StObject.set(x, "lastCheckTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastCheckTimeUndefined: Self = StObject.set(x, "lastCheckTime", js.undefined)
+    inline def setLastCheckTimeUndefined: Self = StObject.set(x, "lastCheckTime", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setRedirectionError(value: String): Self = StObject.set(x, "redirectionError", value.asInstanceOf[js.Any])
+    inline def setRedirectionError(value: String): Self = StObject.set(x, "redirectionError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectionErrorUndefined: Self = StObject.set(x, "redirectionError", js.undefined)
+    inline def setRedirectionErrorUndefined: Self = StObject.set(x, "redirectionError", js.undefined)
     
-    @scala.inline
-    def setUrlRejected(value: String): Self = StObject.set(x, "urlRejected", value.asInstanceOf[js.Any])
+    inline def setUrlRejected(value: String): Self = StObject.set(x, "urlRejected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlRejectedUndefined: Self = StObject.set(x, "urlRejected", js.undefined)
+    inline def setUrlRejectedUndefined: Self = StObject.set(x, "urlRejected", js.undefined)
   }
 }

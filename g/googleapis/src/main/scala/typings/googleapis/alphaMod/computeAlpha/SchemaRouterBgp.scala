@@ -51,49 +51,35 @@ trait SchemaRouterBgp extends StObject {
 }
 object SchemaRouterBgp {
   
-  @scala.inline
-  def apply(): SchemaRouterBgp = {
+  inline def apply(): SchemaRouterBgp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouterBgp]
   }
   
-  @scala.inline
-  implicit class SchemaRouterBgpMutableBuilder[Self <: SchemaRouterBgp] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouterBgp](x: Self) {
     
-    @scala.inline
-    def setAdvertiseMode(value: String): Self = StObject.set(x, "advertiseMode", value.asInstanceOf[js.Any])
+    inline def setAdvertiseMode(value: String): Self = StObject.set(x, "advertiseMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiseModeUndefined: Self = StObject.set(x, "advertiseMode", js.undefined)
+    inline def setAdvertiseModeUndefined: Self = StObject.set(x, "advertiseMode", js.undefined)
     
-    @scala.inline
-    def setAdvertisedGroups(value: js.Array[String]): Self = StObject.set(x, "advertisedGroups", value.asInstanceOf[js.Any])
+    inline def setAdvertisedGroups(value: js.Array[String]): Self = StObject.set(x, "advertisedGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedGroupsUndefined: Self = StObject.set(x, "advertisedGroups", js.undefined)
+    inline def setAdvertisedGroupsUndefined: Self = StObject.set(x, "advertisedGroups", js.undefined)
     
-    @scala.inline
-    def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value :_*))
+    inline def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = StObject.set(x, "advertisedIpRanges", value.asInstanceOf[js.Any])
+    inline def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = StObject.set(x, "advertisedIpRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertisedIpRangesUndefined: Self = StObject.set(x, "advertisedIpRanges", js.undefined)
+    inline def setAdvertisedIpRangesUndefined: Self = StObject.set(x, "advertisedIpRanges", js.undefined)
     
-    @scala.inline
-    def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value :_*))
+    inline def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setAsn(value: Double): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
+    inline def setAsn(value: Double): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
+    inline def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
     
-    @scala.inline
-    def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
+    inline def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
+    inline def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
   }
 }

@@ -16,32 +16,24 @@ trait IntrospectionInputValue extends StObject {
 }
 object IntrospectionInputValue {
   
-  @scala.inline
-  def apply(name: String, `type`: IntrospectionTypeRef): IntrospectionInputValue = {
+  inline def apply(name: String, `type`: IntrospectionTypeRef): IntrospectionInputValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInputValue]
   }
   
-  @scala.inline
-  implicit class IntrospectionInputValueMutableBuilder[Self <: IntrospectionInputValue] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionInputValue](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: IntrospectionTypeRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IntrospectionTypeRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

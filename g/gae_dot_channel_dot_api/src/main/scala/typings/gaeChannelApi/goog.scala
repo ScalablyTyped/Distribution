@@ -64,8 +64,7 @@ object goog {
     }
     object Socket {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         close: () => Unit,
         onclose: () => Unit,
         onerror: js.Function,
@@ -76,23 +75,17 @@ object goog {
         __obj.asInstanceOf[Socket]
       }
       
-      @scala.inline
-      implicit class SocketMutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
+      extension [Self <: Socket](x: Self) {
         
-        @scala.inline
-        def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+        inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
+        inline def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+        inline def setOnerror(value: js.Function): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnmessage(value: js.Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+        inline def setOnmessage(value: js.Any => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnopen(value: () => Unit): Self = StObject.set(x, "onopen", js.Any.fromFunction0(value))
+        inline def setOnopen(value: () => Unit): Self = StObject.set(x, "onopen", js.Any.fromFunction0(value))
       }
     }
   }

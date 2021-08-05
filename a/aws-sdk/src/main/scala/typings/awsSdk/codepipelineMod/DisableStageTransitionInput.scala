@@ -28,8 +28,7 @@ trait DisableStageTransitionInput extends StObject {
 }
 object DisableStageTransitionInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pipelineName: PipelineName,
     reason: DisabledReason,
     stageName: StageName,
@@ -39,19 +38,14 @@ object DisableStageTransitionInput {
     __obj.asInstanceOf[DisableStageTransitionInput]
   }
   
-  @scala.inline
-  implicit class DisableStageTransitionInputMutableBuilder[Self <: DisableStageTransitionInput] (val x: Self) extends AnyVal {
+  extension [Self <: DisableStageTransitionInput](x: Self) {
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: DisabledReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: DisabledReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionType(value: StageTransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
+    inline def setTransitionType(value: StageTransitionType): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
   }
 }

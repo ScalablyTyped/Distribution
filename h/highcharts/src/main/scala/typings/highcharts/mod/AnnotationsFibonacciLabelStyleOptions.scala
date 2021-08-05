@@ -10,19 +10,15 @@ trait AnnotationsFibonacciLabelStyleOptions extends StObject {
 }
 object AnnotationsFibonacciLabelStyleOptions {
   
-  @scala.inline
-  def apply(): AnnotationsFibonacciLabelStyleOptions = {
+  inline def apply(): AnnotationsFibonacciLabelStyleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsFibonacciLabelStyleOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsFibonacciLabelStyleOptionsMutableBuilder[Self <: AnnotationsFibonacciLabelStyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsFibonacciLabelStyleOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

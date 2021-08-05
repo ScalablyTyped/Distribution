@@ -32,8 +32,7 @@ trait InputContext extends StObject {
 }
 object InputContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoComplete: Boolean,
     autoCorrect: Boolean,
     contextID: Double,
@@ -45,22 +44,16 @@ object InputContext {
     __obj.asInstanceOf[InputContext]
   }
   
-  @scala.inline
-  implicit class InputContextMutableBuilder[Self <: InputContext] (val x: Self) extends AnyVal {
+  extension [Self <: InputContext](x: Self) {
     
-    @scala.inline
-    def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
+    inline def setAutoCorrect(value: Boolean): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellCheck(value: Boolean): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
+    inline def setSpellCheck(value: Boolean): Self = StObject.set(x, "spellCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

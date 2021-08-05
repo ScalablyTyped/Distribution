@@ -12,25 +12,19 @@ trait Campaignid extends StObject {
 }
 object Campaignid {
   
-  @scala.inline
-  def apply(): Campaignid = {
+  inline def apply(): Campaignid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Campaignid]
   }
   
-  @scala.inline
-  implicit class CampaignidMutableBuilder[Self <: Campaignid] (val x: Self) extends AnyVal {
+  extension [Self <: Campaignid](x: Self) {
     
-    @scala.inline
-    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
+    inline def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaign_idUndefined: Self = StObject.set(x, "campaign_id", js.undefined)
+    inline def setCampaign_idUndefined: Self = StObject.set(x, "campaign_id", js.undefined)
     
-    @scala.inline
-    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
+    inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate_idUndefined: Self = StObject.set(x, "template_id", js.undefined)
+    inline def setTemplate_idUndefined: Self = StObject.set(x, "template_id", js.undefined)
   }
 }

@@ -24,48 +24,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotifyEvents extends StObject
 object NotifyEvents {
   
-  @scala.inline
-  def `job-completed`: typings.ipp.ippStrings.`job-completed` = "job-completed".asInstanceOf[typings.ipp.ippStrings.`job-completed`]
+  inline def `job-completed`: typings.ipp.ippStrings.`job-completed` = "job-completed".asInstanceOf[typings.ipp.ippStrings.`job-completed`]
   
-  @scala.inline
-  def `job-config-changed`: typings.ipp.ippStrings.`job-config-changed` = "job-config-changed".asInstanceOf[typings.ipp.ippStrings.`job-config-changed`]
+  inline def `job-config-changed`: typings.ipp.ippStrings.`job-config-changed` = "job-config-changed".asInstanceOf[typings.ipp.ippStrings.`job-config-changed`]
   
-  @scala.inline
-  def `job-created`: typings.ipp.ippStrings.`job-created` = "job-created".asInstanceOf[typings.ipp.ippStrings.`job-created`]
+  inline def `job-created`: typings.ipp.ippStrings.`job-created` = "job-created".asInstanceOf[typings.ipp.ippStrings.`job-created`]
   
-  @scala.inline
-  def `job-progress`: typings.ipp.ippStrings.`job-progress` = "job-progress".asInstanceOf[typings.ipp.ippStrings.`job-progress`]
+  inline def `job-progress`: typings.ipp.ippStrings.`job-progress` = "job-progress".asInstanceOf[typings.ipp.ippStrings.`job-progress`]
   
-  @scala.inline
-  def `job-state-changed`: typings.ipp.ippStrings.`job-state-changed` = "job-state-changed".asInstanceOf[typings.ipp.ippStrings.`job-state-changed`]
+  inline def `job-state-changed`: typings.ipp.ippStrings.`job-state-changed` = "job-state-changed".asInstanceOf[typings.ipp.ippStrings.`job-state-changed`]
   
-  @scala.inline
-  def `job-stopped`: typings.ipp.ippStrings.`job-stopped` = "job-stopped".asInstanceOf[typings.ipp.ippStrings.`job-stopped`]
+  inline def `job-stopped`: typings.ipp.ippStrings.`job-stopped` = "job-stopped".asInstanceOf[typings.ipp.ippStrings.`job-stopped`]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def `printer-config-changed`: typings.ipp.ippStrings.`printer-config-changed` = "printer-config-changed".asInstanceOf[typings.ipp.ippStrings.`printer-config-changed`]
+  inline def `printer-config-changed`: typings.ipp.ippStrings.`printer-config-changed` = "printer-config-changed".asInstanceOf[typings.ipp.ippStrings.`printer-config-changed`]
   
-  @scala.inline
-  def `printer-finishings-changed`: typings.ipp.ippStrings.`printer-finishings-changed` = "printer-finishings-changed".asInstanceOf[typings.ipp.ippStrings.`printer-finishings-changed`]
+  inline def `printer-finishings-changed`: typings.ipp.ippStrings.`printer-finishings-changed` = "printer-finishings-changed".asInstanceOf[typings.ipp.ippStrings.`printer-finishings-changed`]
   
-  @scala.inline
-  def `printer-media-changed`: typings.ipp.ippStrings.`printer-media-changed` = "printer-media-changed".asInstanceOf[typings.ipp.ippStrings.`printer-media-changed`]
+  inline def `printer-media-changed`: typings.ipp.ippStrings.`printer-media-changed` = "printer-media-changed".asInstanceOf[typings.ipp.ippStrings.`printer-media-changed`]
   
-  @scala.inline
-  def `printer-queue-order-changed`: typings.ipp.ippStrings.`printer-queue-order-changed` = "printer-queue-order-changed".asInstanceOf[typings.ipp.ippStrings.`printer-queue-order-changed`]
+  inline def `printer-queue-order-changed`: typings.ipp.ippStrings.`printer-queue-order-changed` = "printer-queue-order-changed".asInstanceOf[typings.ipp.ippStrings.`printer-queue-order-changed`]
   
-  @scala.inline
-  def `printer-restarted`: typings.ipp.ippStrings.`printer-restarted` = "printer-restarted".asInstanceOf[typings.ipp.ippStrings.`printer-restarted`]
+  inline def `printer-restarted`: typings.ipp.ippStrings.`printer-restarted` = "printer-restarted".asInstanceOf[typings.ipp.ippStrings.`printer-restarted`]
   
-  @scala.inline
-  def `printer-shutdown`: typings.ipp.ippStrings.`printer-shutdown` = "printer-shutdown".asInstanceOf[typings.ipp.ippStrings.`printer-shutdown`]
+  inline def `printer-shutdown`: typings.ipp.ippStrings.`printer-shutdown` = "printer-shutdown".asInstanceOf[typings.ipp.ippStrings.`printer-shutdown`]
   
-  @scala.inline
-  def `printer-state-changed`: typings.ipp.ippStrings.`printer-state-changed` = "printer-state-changed".asInstanceOf[typings.ipp.ippStrings.`printer-state-changed`]
+  inline def `printer-state-changed`: typings.ipp.ippStrings.`printer-state-changed` = "printer-state-changed".asInstanceOf[typings.ipp.ippStrings.`printer-state-changed`]
   
-  @scala.inline
-  def `printer-stopped`: typings.ipp.ippStrings.`printer-stopped` = "printer-stopped".asInstanceOf[typings.ipp.ippStrings.`printer-stopped`]
+  inline def `printer-stopped`: typings.ipp.ippStrings.`printer-stopped` = "printer-stopped".asInstanceOf[typings.ipp.ippStrings.`printer-stopped`]
 }

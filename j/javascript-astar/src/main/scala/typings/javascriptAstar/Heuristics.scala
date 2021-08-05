@@ -17,8 +17,7 @@ trait Heuristics extends StObject {
 }
 object Heuristics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     diagonal: (/* pos0 */ X, /* pos1 */ X) => Double,
     manhattan: (/* pos0 */ X, /* pos1 */ X) => Double
   ): Heuristics = {
@@ -26,13 +25,10 @@ object Heuristics {
     __obj.asInstanceOf[Heuristics]
   }
   
-  @scala.inline
-  implicit class HeuristicsMutableBuilder[Self <: Heuristics] (val x: Self) extends AnyVal {
+  extension [Self <: Heuristics](x: Self) {
     
-    @scala.inline
-    def setDiagonal(value: (/* pos0 */ X, /* pos1 */ X) => Double): Self = StObject.set(x, "diagonal", js.Any.fromFunction2(value))
+    inline def setDiagonal(value: (/* pos0 */ X, /* pos1 */ X) => Double): Self = StObject.set(x, "diagonal", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setManhattan(value: (/* pos0 */ X, /* pos1 */ X) => Double): Self = StObject.set(x, "manhattan", js.Any.fromFunction2(value))
+    inline def setManhattan(value: (/* pos0 */ X, /* pos1 */ X) => Double): Self = StObject.set(x, "manhattan", js.Any.fromFunction2(value))
   }
 }

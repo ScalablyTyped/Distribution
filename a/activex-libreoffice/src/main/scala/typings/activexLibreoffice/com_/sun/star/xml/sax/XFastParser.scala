@@ -96,8 +96,7 @@ trait XFastParser
 }
 object XFastParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getNamespaceURL: String => String,
     parseStream: InputSource => Unit,
@@ -115,34 +114,24 @@ object XFastParser {
     __obj.asInstanceOf[XFastParser]
   }
   
-  @scala.inline
-  implicit class XFastParserMutableBuilder[Self <: XFastParser] (val x: Self) extends AnyVal {
+  extension [Self <: XFastParser](x: Self) {
     
-    @scala.inline
-    def setGetNamespaceURL(value: String => String): Self = StObject.set(x, "getNamespaceURL", js.Any.fromFunction1(value))
+    inline def setGetNamespaceURL(value: String => String): Self = StObject.set(x, "getNamespaceURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseStream(value: InputSource => Unit): Self = StObject.set(x, "parseStream", js.Any.fromFunction1(value))
+    inline def setParseStream(value: InputSource => Unit): Self = StObject.set(x, "parseStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterNamespace(value: (String, Double) => Unit): Self = StObject.set(x, "registerNamespace", js.Any.fromFunction2(value))
+    inline def setRegisterNamespace(value: (String, Double) => Unit): Self = StObject.set(x, "registerNamespace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
+    inline def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
+    inline def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFastDocumentHandler(value: XFastDocumentHandler => Unit): Self = StObject.set(x, "setFastDocumentHandler", js.Any.fromFunction1(value))
+    inline def setSetFastDocumentHandler(value: XFastDocumentHandler => Unit): Self = StObject.set(x, "setFastDocumentHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
+    inline def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNamespaceHandler(value: XFastNamespaceHandler => Unit): Self = StObject.set(x, "setNamespaceHandler", js.Any.fromFunction1(value))
+    inline def setSetNamespaceHandler(value: XFastNamespaceHandler => Unit): Self = StObject.set(x, "setNamespaceHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTokenHandler(value: XFastTokenHandler => Unit): Self = StObject.set(x, "setTokenHandler", js.Any.fromFunction1(value))
+    inline def setSetTokenHandler(value: XFastTokenHandler => Unit): Self = StObject.set(x, "setTokenHandler", js.Any.fromFunction1(value))
   }
 }

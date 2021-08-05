@@ -18,8 +18,7 @@ trait RecordTypeDescription
 }
 object RecordTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
     nullable: Boolean,
@@ -30,13 +29,10 @@ object RecordTypeDescription {
     __obj.asInstanceOf[RecordTypeDescription]
   }
   
-  @scala.inline
-  implicit class RecordTypeDescriptionMutableBuilder[Self <: RecordTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: RecordTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: record): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: record): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlType(value: js.Tuple2[IDLTypeDescription, IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: js.Tuple2[IDLTypeDescription, IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
   }
 }

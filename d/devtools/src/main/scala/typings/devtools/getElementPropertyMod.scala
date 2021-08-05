@@ -12,6 +12,5 @@ object getElementPropertyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasElementIdName: ElementIdName): js.Promise[(Record[String, js.Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementIdName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[(Record[String, js.Any]) | Null]]
+  inline def default(hasElementIdName: ElementIdName): js.Promise[(Record[String, js.Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementIdName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[(Record[String, js.Any]) | Null]]
 }

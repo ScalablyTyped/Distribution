@@ -55,55 +55,39 @@ trait StatefulSetSpec extends StObject {
 }
 object StatefulSetSpec {
   
-  @scala.inline
-  def apply(selector: Input[LabelSelector], serviceName: Input[String], template: Input[PodTemplateSpec]): StatefulSetSpec = {
+  inline def apply(selector: Input[LabelSelector], serviceName: Input[String], template: Input[PodTemplateSpec]): StatefulSetSpec = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulSetSpec]
   }
   
-  @scala.inline
-  implicit class StatefulSetSpecMutableBuilder[Self <: StatefulSetSpec] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulSetSpec](x: Self) {
     
-    @scala.inline
-    def setPodManagementPolicy(value: Input[String]): Self = StObject.set(x, "podManagementPolicy", value.asInstanceOf[js.Any])
+    inline def setPodManagementPolicy(value: Input[String]): Self = StObject.set(x, "podManagementPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPodManagementPolicyUndefined: Self = StObject.set(x, "podManagementPolicy", js.undefined)
+    inline def setPodManagementPolicyUndefined: Self = StObject.set(x, "podManagementPolicy", js.undefined)
     
-    @scala.inline
-    def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    @scala.inline
-    def setRevisionHistoryLimit(value: Input[Double]): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
+    inline def setRevisionHistoryLimit(value: Input[Double]): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionHistoryLimitUndefined: Self = StObject.set(x, "revisionHistoryLimit", js.undefined)
+    inline def setRevisionHistoryLimitUndefined: Self = StObject.set(x, "revisionHistoryLimit", js.undefined)
     
-    @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStrategy(value: Input[StatefulSetUpdateStrategy]): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
+    inline def setUpdateStrategy(value: Input[StatefulSetUpdateStrategy]): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStrategyUndefined: Self = StObject.set(x, "updateStrategy", js.undefined)
+    inline def setUpdateStrategyUndefined: Self = StObject.set(x, "updateStrategy", js.undefined)
     
-    @scala.inline
-    def setVolumeClaimTemplates(value: Input[js.Array[Input[PersistentVolumeClaim]]]): Self = StObject.set(x, "volumeClaimTemplates", value.asInstanceOf[js.Any])
+    inline def setVolumeClaimTemplates(value: Input[js.Array[Input[PersistentVolumeClaim]]]): Self = StObject.set(x, "volumeClaimTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeClaimTemplatesUndefined: Self = StObject.set(x, "volumeClaimTemplates", js.undefined)
+    inline def setVolumeClaimTemplatesUndefined: Self = StObject.set(x, "volumeClaimTemplates", js.undefined)
     
-    @scala.inline
-    def setVolumeClaimTemplatesVarargs(value: Input[PersistentVolumeClaim]*): Self = StObject.set(x, "volumeClaimTemplates", js.Array(value :_*))
+    inline def setVolumeClaimTemplatesVarargs(value: Input[PersistentVolumeClaim]*): Self = StObject.set(x, "volumeClaimTemplates", js.Array(value :_*))
   }
 }

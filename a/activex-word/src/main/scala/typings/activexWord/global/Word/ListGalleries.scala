@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ListGalleries")
 @js.native
-class ListGalleries protected ()
+/* private */ class ListGalleries ()
   extends StObject
      with typings.activexWord.Word.ListGalleries {
   
@@ -26,7 +26,7 @@ class ListGalleries protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ListGalleries_typekey")
   var WordDotListGalleries_typekey: typings.activexWord.Word.ListGalleries = js.native
 }

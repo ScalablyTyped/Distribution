@@ -13,19 +13,15 @@ trait GetStorageLensConfigurationResult extends StObject {
 }
 object GetStorageLensConfigurationResult {
   
-  @scala.inline
-  def apply(): GetStorageLensConfigurationResult = {
+  inline def apply(): GetStorageLensConfigurationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStorageLensConfigurationResult]
   }
   
-  @scala.inline
-  implicit class GetStorageLensConfigurationResultMutableBuilder[Self <: GetStorageLensConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageLensConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setStorageLensConfiguration(value: StorageLensConfiguration): Self = StObject.set(x, "StorageLensConfiguration", value.asInstanceOf[js.Any])
+    inline def setStorageLensConfiguration(value: StorageLensConfiguration): Self = StObject.set(x, "StorageLensConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageLensConfigurationUndefined: Self = StObject.set(x, "StorageLensConfiguration", js.undefined)
+    inline def setStorageLensConfigurationUndefined: Self = StObject.set(x, "StorageLensConfiguration", js.undefined)
   }
 }

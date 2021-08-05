@@ -43,55 +43,39 @@ trait GoogleIdentityAccesscontextmanagerV1ServicePerimeter extends StObject {
 }
 object GoogleIdentityAccesscontextmanagerV1ServicePerimeter {
   
-  @scala.inline
-  def apply(): GoogleIdentityAccesscontextmanagerV1ServicePerimeter = {
+  inline def apply(): GoogleIdentityAccesscontextmanagerV1ServicePerimeter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1ServicePerimeter]
   }
   
-  @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1ServicePerimeterMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeter] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeter](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPerimeterType(value: String): Self = StObject.set(x, "perimeterType", value.asInstanceOf[js.Any])
+    inline def setPerimeterType(value: String): Self = StObject.set(x, "perimeterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerimeterTypeUndefined: Self = StObject.set(x, "perimeterType", js.undefined)
+    inline def setPerimeterTypeUndefined: Self = StObject.set(x, "perimeterType", js.undefined)
     
-    @scala.inline
-    def setSpec(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeterConfig): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUseExplicitDryRunSpec(value: Boolean): Self = StObject.set(x, "useExplicitDryRunSpec", value.asInstanceOf[js.Any])
+    inline def setUseExplicitDryRunSpec(value: Boolean): Self = StObject.set(x, "useExplicitDryRunSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseExplicitDryRunSpecUndefined: Self = StObject.set(x, "useExplicitDryRunSpec", js.undefined)
+    inline def setUseExplicitDryRunSpecUndefined: Self = StObject.set(x, "useExplicitDryRunSpec", js.undefined)
   }
 }

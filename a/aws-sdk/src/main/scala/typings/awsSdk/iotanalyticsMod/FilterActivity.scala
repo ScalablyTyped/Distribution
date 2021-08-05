@@ -23,25 +23,19 @@ trait FilterActivity extends StObject {
 }
 object FilterActivity {
   
-  @scala.inline
-  def apply(filter: FilterExpression, name: ActivityName): FilterActivity = {
+  inline def apply(filter: FilterExpression, name: ActivityName): FilterActivity = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterActivity]
   }
   
-  @scala.inline
-  implicit class FilterActivityMutableBuilder[Self <: FilterActivity] (val x: Self) extends AnyVal {
+  extension [Self <: FilterActivity](x: Self) {
     
-    @scala.inline
-    def setFilter(value: FilterExpression): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterExpression): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActivityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ActivityName): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }
 }

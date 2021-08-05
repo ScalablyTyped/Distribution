@@ -22,8 +22,7 @@ object testingMod {
     @JSImport("@angular/animations/browser/testing", "MockAnimationDriver.log")
     @js.native
     def log: js.Array[AnimationPlayer] = js.native
-    @scala.inline
-    def log_=(x: js.Array[AnimationPlayer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+    inline def log_=(x: js.Array[AnimationPlayer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@angular/animations/browser/testing", "MockAnimationPlayer")

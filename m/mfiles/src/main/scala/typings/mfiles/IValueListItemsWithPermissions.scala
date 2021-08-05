@@ -12,19 +12,15 @@ trait IValueListItemsWithPermissions extends StObject {
 }
 object IValueListItemsWithPermissions {
   
-  @scala.inline
-  def apply(Permissions: IAccessControlLists, ValueListItems: IValueListItems): IValueListItemsWithPermissions = {
+  inline def apply(Permissions: IAccessControlLists, ValueListItems: IValueListItems): IValueListItemsWithPermissions = {
     val __obj = js.Dynamic.literal(Permissions = Permissions.asInstanceOf[js.Any], ValueListItems = ValueListItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValueListItemsWithPermissions]
   }
   
-  @scala.inline
-  implicit class IValueListItemsWithPermissionsMutableBuilder[Self <: IValueListItemsWithPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: IValueListItemsWithPermissions](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: IAccessControlLists): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: IAccessControlLists): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueListItems(value: IValueListItems): Self = StObject.set(x, "ValueListItems", value.asInstanceOf[js.Any])
+    inline def setValueListItems(value: IValueListItems): Self = StObject.set(x, "ValueListItems", value.asInstanceOf[js.Any])
   }
 }

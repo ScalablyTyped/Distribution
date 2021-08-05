@@ -13,19 +13,15 @@ trait VerifyDomainDkimResponse extends StObject {
 }
 object VerifyDomainDkimResponse {
   
-  @scala.inline
-  def apply(DkimTokens: VerificationTokenList): VerifyDomainDkimResponse = {
+  inline def apply(DkimTokens: VerificationTokenList): VerifyDomainDkimResponse = {
     val __obj = js.Dynamic.literal(DkimTokens = DkimTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyDomainDkimResponse]
   }
   
-  @scala.inline
-  implicit class VerifyDomainDkimResponseMutableBuilder[Self <: VerifyDomainDkimResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyDomainDkimResponse](x: Self) {
     
-    @scala.inline
-    def setDkimTokens(value: VerificationTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
+    inline def setDkimTokens(value: VerificationTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimTokensVarargs(value: VerificationToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
+    inline def setDkimTokensVarargs(value: VerificationToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
   }
 }

@@ -29,11 +29,9 @@ object badgeStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/badge/style/index.native", "default.dotSizelarge")
     @js.native
     def dotSizelarge: Width = js.native
-    @scala.inline
-    def dotSizelarge_=(x: Width): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotSizelarge")(x.asInstanceOf[js.Any])
+    inline def dotSizelarge_=(x: Width): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotSizelarge")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def dot_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dot")(x.asInstanceOf[js.Any])
+    inline def dot_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dot")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/badge/style/index.native", "default.text")
     @js.native
@@ -46,32 +44,26 @@ object badgeStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/badge/style/index.native", "default.textCornerWrap")
     @js.native
     def textCornerWrap: Overflow = js.native
-    @scala.inline
-    def textCornerWrap_=(x: Overflow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textCornerWrap")(x.asInstanceOf[js.Any])
+    inline def textCornerWrap_=(x: Overflow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textCornerWrap")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def textCorner_=(x: Position): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textCorner")(x.asInstanceOf[js.Any])
+    inline def textCorner_=(x: Position): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textCorner")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/badge/style/index.native", "default.textCornerlarge")
     @js.native
     def textCornerlarge: Top = js.native
-    @scala.inline
-    def textCornerlarge_=(x: Top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textCornerlarge")(x.asInstanceOf[js.Any])
+    inline def textCornerlarge_=(x: Top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textCornerlarge")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/badge/style/index.native", "default.textDom")
     @js.native
     def textDom: BorderStyle = js.native
-    @scala.inline
-    def textDom_=(x: BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textDom")(x.asInstanceOf[js.Any])
+    inline def textDom_=(x: BorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textDom")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def text_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+    inline def text_=(x: TextAlign): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/badge/style/index.native", "default.wrap")
     @js.native
     def wrap: FlexDirectionString = js.native
-    @scala.inline
-    def wrap_=(x: FlexDirectionString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
+    inline def wrap_=(x: FlexDirectionString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
   }
   
   trait IBadgeStyle extends StObject {
@@ -94,8 +86,7 @@ object badgeStyleIndexNativeMod {
   }
   object IBadgeStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dot: ViewStyle,
       dotSizelarge: ViewStyle,
       text: TextStyle,
@@ -109,32 +100,23 @@ object badgeStyleIndexNativeMod {
       __obj.asInstanceOf[IBadgeStyle]
     }
     
-    @scala.inline
-    implicit class IBadgeStyleMutableBuilder[Self <: IBadgeStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IBadgeStyle](x: Self) {
       
-      @scala.inline
-      def setDot(value: ViewStyle): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: ViewStyle): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotSizelarge(value: ViewStyle): Self = StObject.set(x, "dotSizelarge", value.asInstanceOf[js.Any])
+      inline def setDotSizelarge(value: ViewStyle): Self = StObject.set(x, "dotSizelarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextCorner(value: ViewStyle): Self = StObject.set(x, "textCorner", value.asInstanceOf[js.Any])
+      inline def setTextCorner(value: ViewStyle): Self = StObject.set(x, "textCorner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextCornerWrap(value: ViewStyle): Self = StObject.set(x, "textCornerWrap", value.asInstanceOf[js.Any])
+      inline def setTextCornerWrap(value: ViewStyle): Self = StObject.set(x, "textCornerWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextCornerlarge(value: ViewStyle): Self = StObject.set(x, "textCornerlarge", value.asInstanceOf[js.Any])
+      inline def setTextCornerlarge(value: ViewStyle): Self = StObject.set(x, "textCornerlarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDom(value: ViewStyle): Self = StObject.set(x, "textDom", value.asInstanceOf[js.Any])
+      inline def setTextDom(value: ViewStyle): Self = StObject.set(x, "textDom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     }
   }
 }

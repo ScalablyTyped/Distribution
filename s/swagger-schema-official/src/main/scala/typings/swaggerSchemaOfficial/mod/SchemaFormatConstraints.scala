@@ -13,28 +13,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaFormatConstraints extends StObject
 object SchemaFormatConstraints {
   
-  @scala.inline
-  def GenericFormat(): typings.swaggerSchemaOfficial.mod.GenericFormat = {
+  inline def GenericFormat(): typings.swaggerSchemaOfficial.mod.GenericFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.GenericFormat]
   }
   
-  @scala.inline
-  def IntegerFormat(): typings.swaggerSchemaOfficial.mod.IntegerFormat = {
+  inline def IntegerFormat(): typings.swaggerSchemaOfficial.mod.IntegerFormat = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.IntegerFormat]
   }
   
-  @scala.inline
-  def NumberFormat(): typings.swaggerSchemaOfficial.mod.NumberFormat = {
+  inline def NumberFormat(): typings.swaggerSchemaOfficial.mod.NumberFormat = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.NumberFormat]
   }
   
-  @scala.inline
-  def StringFormat(): typings.swaggerSchemaOfficial.mod.StringFormat = {
+  inline def StringFormat(): typings.swaggerSchemaOfficial.mod.StringFormat = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.StringFormat]

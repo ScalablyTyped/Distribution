@@ -33,25 +33,19 @@ trait SchemaSecurityMarks extends StObject {
 }
 object SchemaSecurityMarks {
   
-  @scala.inline
-  def apply(): SchemaSecurityMarks = {
+  inline def apply(): SchemaSecurityMarks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityMarks]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityMarksMutableBuilder[Self <: SchemaSecurityMarks] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityMarks](x: Self) {
     
-    @scala.inline
-    def setMarks(value: StringDictionary[String]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+    inline def setMarks(value: StringDictionary[String]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+    inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

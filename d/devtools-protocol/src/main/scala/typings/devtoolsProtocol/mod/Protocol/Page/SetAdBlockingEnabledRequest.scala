@@ -13,16 +13,13 @@ trait SetAdBlockingEnabledRequest extends StObject {
 }
 object SetAdBlockingEnabledRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetAdBlockingEnabledRequest = {
+  inline def apply(enabled: Boolean): SetAdBlockingEnabledRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAdBlockingEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetAdBlockingEnabledRequestMutableBuilder[Self <: SetAdBlockingEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetAdBlockingEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

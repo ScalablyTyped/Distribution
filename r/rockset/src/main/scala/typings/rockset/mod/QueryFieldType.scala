@@ -14,20 +14,16 @@ trait QueryFieldType extends StObject {
 }
 object QueryFieldType {
   
-  @scala.inline
-  def apply(name: String, `type`: String): QueryFieldType = {
+  inline def apply(name: String, `type`: String): QueryFieldType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryFieldType]
   }
   
-  @scala.inline
-  implicit class QueryFieldTypeMutableBuilder[Self <: QueryFieldType] (val x: Self) extends AnyVal {
+  extension [Self <: QueryFieldType](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

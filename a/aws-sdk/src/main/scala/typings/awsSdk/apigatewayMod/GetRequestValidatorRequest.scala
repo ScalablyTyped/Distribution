@@ -18,19 +18,15 @@ trait GetRequestValidatorRequest extends StObject {
 }
 object GetRequestValidatorRequest {
   
-  @scala.inline
-  def apply(requestValidatorId: String, restApiId: String): GetRequestValidatorRequest = {
+  inline def apply(requestValidatorId: String, restApiId: String): GetRequestValidatorRequest = {
     val __obj = js.Dynamic.literal(requestValidatorId = requestValidatorId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRequestValidatorRequest]
   }
   
-  @scala.inline
-  implicit class GetRequestValidatorRequestMutableBuilder[Self <: GetRequestValidatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRequestValidatorRequest](x: Self) {
     
-    @scala.inline
-    def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
+    inline def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

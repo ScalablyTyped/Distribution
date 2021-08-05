@@ -17,31 +17,23 @@ trait TruncatedNormalArgs extends StObject {
 }
 object TruncatedNormalArgs {
   
-  @scala.inline
-  def apply(): TruncatedNormalArgs = {
+  inline def apply(): TruncatedNormalArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TruncatedNormalArgs]
   }
   
-  @scala.inline
-  implicit class TruncatedNormalArgsMutableBuilder[Self <: TruncatedNormalArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TruncatedNormalArgs](x: Self) {
     
-    @scala.inline
-    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+    inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    @scala.inline
-    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+    inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
+    inline def setStddevUndefined: Self = StObject.set(x, "stddev", js.undefined)
   }
 }

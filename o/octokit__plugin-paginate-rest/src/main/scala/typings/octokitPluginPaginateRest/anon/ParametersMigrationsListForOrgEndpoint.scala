@@ -15,8 +15,7 @@ trait ParametersMigrationsListForOrgEndpoint extends StObject {
 }
 object ParametersMigrationsListForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsListForOrgEndpoint,
     response: OctokitResponse[MigrationsListForOrgResponseData]
   ): ParametersMigrationsListForOrgEndpoint = {
@@ -24,13 +23,10 @@ object ParametersMigrationsListForOrgEndpoint {
     __obj.asInstanceOf[ParametersMigrationsListForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsListForOrgEndpointMutableBuilder[Self <: ParametersMigrationsListForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsListForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsListForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsListForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsListForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsListForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

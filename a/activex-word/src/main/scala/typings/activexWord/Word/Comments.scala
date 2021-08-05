@@ -22,6 +22,6 @@ trait Comments extends StObject {
   
   var ShowBy: String = js.native
   
-  @JSName("Word.Comments_typekey")
+  /* private */ @JSName("Word.Comments_typekey")
   var WordDotComments_typekey: Comments = js.native
 }

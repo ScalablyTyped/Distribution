@@ -21,8 +21,7 @@ trait ValidationResult[T] extends StObject {
 }
 object ValidationResult {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     `catch`: () => js.Promise[T | scala.Nothing],
     error: ValidationError,
     `then`: () => js.Promise[T | scala.Nothing],
@@ -34,19 +33,14 @@ object ValidationResult {
     __obj.asInstanceOf[ValidationResult[T]]
   }
   
-  @scala.inline
-  implicit class ValidationResultMutableBuilder[Self <: ValidationResult[?], T] (val x: Self & ValidationResult[T]) extends AnyVal {
+  extension [Self <: ValidationResult[?], T](x: Self & ValidationResult[T]) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[T | scala.Nothing]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[T | scala.Nothing]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: ValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThen(value: () => js.Promise[T | scala.Nothing]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[T | scala.Nothing]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

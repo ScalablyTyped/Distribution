@@ -22,17 +22,14 @@ object toThrowErrorOfTypeMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toThrowErrorOfType: (/* type */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
+        inline def apply[T](toThrowErrorOfType: (/* type */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toThrowErrorOfType = js.Any.fromFunction2(toThrowErrorOfType))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToThrowErrorOfType(value: (/* type */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toThrowErrorOfType", js.Any.fromFunction2(value))
+          inline def setToThrowErrorOfType(value: (/* type */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toThrowErrorOfType", js.Any.fromFunction2(value))
         }
       }
     }

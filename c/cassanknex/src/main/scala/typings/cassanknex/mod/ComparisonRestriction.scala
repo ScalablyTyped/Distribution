@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComparisonRestriction extends StObject
 object ComparisonRestriction {
   
-  @scala.inline
-  def Equalssign: typings.cassanknex.cassanknexStrings.Equalssign = "=".asInstanceOf[typings.cassanknex.cassanknexStrings.Equalssign]
+  inline def Equalssign: typings.cassanknex.cassanknexStrings.Equalssign = "=".asInstanceOf[typings.cassanknex.cassanknexStrings.Equalssign]
   
-  @scala.inline
-  def Greaterthansign: typings.cassanknex.cassanknexStrings.Greaterthansign = ">".asInstanceOf[typings.cassanknex.cassanknexStrings.Greaterthansign]
+  inline def Greaterthansign: typings.cassanknex.cassanknexStrings.Greaterthansign = ">".asInstanceOf[typings.cassanknex.cassanknexStrings.Greaterthansign]
   
-  @scala.inline
-  def GreaterthansignEqualssign: typings.cassanknex.cassanknexStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.cassanknex.cassanknexStrings.GreaterthansignEqualssign]
+  inline def GreaterthansignEqualssign: typings.cassanknex.cassanknexStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.cassanknex.cassanknexStrings.GreaterthansignEqualssign]
   
-  @scala.inline
-  def Lessthansign: typings.cassanknex.cassanknexStrings.Lessthansign = "<".asInstanceOf[typings.cassanknex.cassanknexStrings.Lessthansign]
+  inline def Lessthansign: typings.cassanknex.cassanknexStrings.Lessthansign = "<".asInstanceOf[typings.cassanknex.cassanknexStrings.Lessthansign]
   
-  @scala.inline
-  def LessthansignEqualssign: typings.cassanknex.cassanknexStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.cassanknex.cassanknexStrings.LessthansignEqualssign]
+  inline def LessthansignEqualssign: typings.cassanknex.cassanknexStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.cassanknex.cassanknexStrings.LessthansignEqualssign]
 }

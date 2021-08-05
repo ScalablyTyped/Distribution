@@ -10,16 +10,13 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(postbox: KnockoutPostBox): KnockoutStatic = {
+  inline def apply(postbox: KnockoutPostBox): KnockoutStatic = {
     val __obj = js.Dynamic.literal(postbox = postbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setPostbox(value: KnockoutPostBox): Self = StObject.set(x, "postbox", value.asInstanceOf[js.Any])
+    inline def setPostbox(value: KnockoutPostBox): Self = StObject.set(x, "postbox", value.asInstanceOf[js.Any])
   }
 }

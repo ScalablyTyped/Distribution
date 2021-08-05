@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object addAllMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function2[
+  inline def apply(clientOptions: ClientOptions): js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_normalise-input.Source */ /* source */ js.Any, 
     /* options */ js.UndefOr[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_add-all.AddAllOptions */ js.Any) & HttpOptions
@@ -48,37 +47,28 @@ object addAllMod {
   }
   object UnixFSEntry {
     
-    @scala.inline
-    def apply(cid: typings.cids.mod.^, path: String, size: Double): UnixFSEntry = {
+    inline def apply(cid: typings.cids.mod.^, path: String, size: Double): UnixFSEntry = {
       val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnixFSEntry]
     }
     
-    @scala.inline
-    implicit class UnixFSEntryMutableBuilder[Self <: UnixFSEntry] (val x: Self) extends AnyVal {
+    extension [Self <: UnixFSEntry](x: Self) {
       
-      @scala.inline
-      def setCid(value: typings.cids.mod.^): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: typings.cids.mod.^): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMtime(
+      inline def setMtime(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.MTime */ js.Any
       ): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

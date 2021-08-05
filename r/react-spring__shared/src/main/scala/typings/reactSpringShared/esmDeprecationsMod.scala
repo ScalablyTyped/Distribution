@@ -10,6 +10,5 @@ object esmDeprecationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deprecateInterpolate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecateInterpolate")().asInstanceOf[Unit]
+  inline def deprecateInterpolate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecateInterpolate")().asInstanceOf[Unit]
 }

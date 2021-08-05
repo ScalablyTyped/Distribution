@@ -26,49 +26,35 @@ trait ConfigOptions extends StObject {
 }
 object ConfigOptions {
   
-  @scala.inline
-  def apply(homepage: () => Obj, tenant: String): ConfigOptions = {
+  inline def apply(homepage: () => Obj, tenant: String): ConfigOptions = {
     val __obj = js.Dynamic.literal(homepage = js.Any.fromFunction0(homepage), tenant = tenant.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
   
-  @scala.inline
-  implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigOptions](x: Self) {
     
-    @scala.inline
-    def setConstraintsValidation(value: /* constraints */ js.Any => js.Any): Self = StObject.set(x, "constraintsValidation", js.Any.fromFunction1(value))
+    inline def setConstraintsValidation(value: /* constraints */ js.Any => js.Any): Self = StObject.set(x, "constraintsValidation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConstraintsValidationUndefined: Self = StObject.set(x, "constraintsValidation", js.undefined)
+    inline def setConstraintsValidationUndefined: Self = StObject.set(x, "constraintsValidation", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setHomepage(value: () => Obj): Self = StObject.set(x, "homepage", js.Any.fromFunction0(value))
+    inline def setHomepage(value: () => Obj): Self = StObject.set(x, "homepage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setRoutingBasePath(value: String): Self = StObject.set(x, "routingBasePath", value.asInstanceOf[js.Any])
+    inline def setRoutingBasePath(value: String): Self = StObject.set(x, "routingBasePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingBasePathUndefined: Self = StObject.set(x, "routingBasePath", js.undefined)
+    inline def setRoutingBasePathUndefined: Self = StObject.set(x, "routingBasePath", js.undefined)
     
-    @scala.inline
-    def setTenant(value: String): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
+    inline def setTenant(value: String): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitorAuthentication(value: Boolean): Self = StObject.set(x, "visitorAuthentication", value.asInstanceOf[js.Any])
+    inline def setVisitorAuthentication(value: Boolean): Self = StObject.set(x, "visitorAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitorAuthenticationUndefined: Self = StObject.set(x, "visitorAuthentication", js.undefined)
+    inline def setVisitorAuthenticationUndefined: Self = StObject.set(x, "visitorAuthentication", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait DatastoreSummary extends StObject {
 }
 object DatastoreSummary {
   
-  @scala.inline
-  def apply(): DatastoreSummary = {
+  inline def apply(): DatastoreSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatastoreSummary]
   }
   
-  @scala.inline
-  implicit class DatastoreSummaryMutableBuilder[Self <: DatastoreSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DatastoreSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
+    inline def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreNameUndefined: Self = StObject.set(x, "datastoreName", js.undefined)
+    inline def setDatastoreNameUndefined: Self = StObject.set(x, "datastoreName", js.undefined)
     
-    @scala.inline
-    def setDatastoreStorage(value: DatastoreStorageSummary): Self = StObject.set(x, "datastoreStorage", value.asInstanceOf[js.Any])
+    inline def setDatastoreStorage(value: DatastoreStorageSummary): Self = StObject.set(x, "datastoreStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreStorageUndefined: Self = StObject.set(x, "datastoreStorage", js.undefined)
+    inline def setDatastoreStorageUndefined: Self = StObject.set(x, "datastoreStorage", js.undefined)
     
-    @scala.inline
-    def setLastMessageArrivalTime(value: Timestamp): Self = StObject.set(x, "lastMessageArrivalTime", value.asInstanceOf[js.Any])
+    inline def setLastMessageArrivalTime(value: Timestamp): Self = StObject.set(x, "lastMessageArrivalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastMessageArrivalTimeUndefined: Self = StObject.set(x, "lastMessageArrivalTime", js.undefined)
+    inline def setLastMessageArrivalTimeUndefined: Self = StObject.set(x, "lastMessageArrivalTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DatastoreStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DatastoreStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -17,34 +17,25 @@ trait CreateManagedShortLinkResponse extends StObject {
 }
 object CreateManagedShortLinkResponse {
   
-  @scala.inline
-  def apply(): CreateManagedShortLinkResponse = {
+  inline def apply(): CreateManagedShortLinkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateManagedShortLinkResponse]
   }
   
-  @scala.inline
-  implicit class CreateManagedShortLinkResponseMutableBuilder[Self <: CreateManagedShortLinkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateManagedShortLinkResponse](x: Self) {
     
-    @scala.inline
-    def setManagedShortLink(value: ManagedShortLink): Self = StObject.set(x, "managedShortLink", value.asInstanceOf[js.Any])
+    inline def setManagedShortLink(value: ManagedShortLink): Self = StObject.set(x, "managedShortLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedShortLinkUndefined: Self = StObject.set(x, "managedShortLink", js.undefined)
+    inline def setManagedShortLinkUndefined: Self = StObject.set(x, "managedShortLink", js.undefined)
     
-    @scala.inline
-    def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
+    inline def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
+    inline def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
     
-    @scala.inline
-    def setWarning(value: js.Array[DynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: js.Array[DynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
-    @scala.inline
-    def setWarningVarargs(value: DynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: DynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
   }
 }

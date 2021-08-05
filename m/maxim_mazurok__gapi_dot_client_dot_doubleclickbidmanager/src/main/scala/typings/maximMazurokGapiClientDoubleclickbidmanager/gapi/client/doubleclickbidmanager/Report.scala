@@ -17,31 +17,23 @@ trait Report extends StObject {
 }
 object Report {
   
-  @scala.inline
-  def apply(): Report = {
+  inline def apply(): Report = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Report]
   }
   
-  @scala.inline
-  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
+  extension [Self <: Report](x: Self) {
     
-    @scala.inline
-    def setKey(value: ReportKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ReportKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: ReportMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ReportMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setParams(value: Parameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Parameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

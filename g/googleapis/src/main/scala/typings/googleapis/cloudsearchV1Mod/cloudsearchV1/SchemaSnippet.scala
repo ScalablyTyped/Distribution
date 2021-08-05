@@ -23,28 +23,21 @@ trait SchemaSnippet extends StObject {
 }
 object SchemaSnippet {
   
-  @scala.inline
-  def apply(): SchemaSnippet = {
+  inline def apply(): SchemaSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaSnippetMutableBuilder[Self <: SchemaSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSnippet](x: Self) {
     
-    @scala.inline
-    def setMatchRanges(value: js.Array[SchemaMatchRange]): Self = StObject.set(x, "matchRanges", value.asInstanceOf[js.Any])
+    inline def setMatchRanges(value: js.Array[SchemaMatchRange]): Self = StObject.set(x, "matchRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchRangesUndefined: Self = StObject.set(x, "matchRanges", js.undefined)
+    inline def setMatchRangesUndefined: Self = StObject.set(x, "matchRanges", js.undefined)
     
-    @scala.inline
-    def setMatchRangesVarargs(value: SchemaMatchRange*): Self = StObject.set(x, "matchRanges", js.Array(value :_*))
+    inline def setMatchRangesVarargs(value: SchemaMatchRange*): Self = StObject.set(x, "matchRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

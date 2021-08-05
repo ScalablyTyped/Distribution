@@ -161,50 +161,36 @@ object mod extends Shortcut {
   }
   object SocketIORedisOptions {
     
-    @scala.inline
-    def apply(): SocketIORedisOptions = {
+    inline def apply(): SocketIORedisOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketIORedisOptions]
     }
     
-    @scala.inline
-    implicit class SocketIORedisOptionsMutableBuilder[Self <: SocketIORedisOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SocketIORedisOptions](x: Self) {
       
-      @scala.inline
-      def setAuth_pass(value: Double | String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
+      inline def setAuth_pass(value: Double | String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
+      inline def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPubClient(value: js.Any): Self = StObject.set(x, "pubClient", value.asInstanceOf[js.Any])
+      inline def setPubClient(value: js.Any): Self = StObject.set(x, "pubClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubClientUndefined: Self = StObject.set(x, "pubClient", js.undefined)
+      inline def setPubClientUndefined: Self = StObject.set(x, "pubClient", js.undefined)
       
-      @scala.inline
-      def setSubClient(value: js.Any): Self = StObject.set(x, "subClient", value.asInstanceOf[js.Any])
+      inline def setSubClient(value: js.Any): Self = StObject.set(x, "subClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubClientUndefined: Self = StObject.set(x, "subClient", js.undefined)
+      inline def setSubClientUndefined: Self = StObject.set(x, "subClient", js.undefined)
     }
   }
   

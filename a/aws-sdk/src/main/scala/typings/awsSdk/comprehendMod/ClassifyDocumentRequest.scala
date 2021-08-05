@@ -18,19 +18,15 @@ trait ClassifyDocumentRequest extends StObject {
 }
 object ClassifyDocumentRequest {
   
-  @scala.inline
-  def apply(EndpointArn: DocumentClassifierEndpointArn, Text: CustomerInputString): ClassifyDocumentRequest = {
+  inline def apply(EndpointArn: DocumentClassifierEndpointArn, Text: CustomerInputString): ClassifyDocumentRequest = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifyDocumentRequest]
   }
   
-  @scala.inline
-  implicit class ClassifyDocumentRequestMutableBuilder[Self <: ClassifyDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifyDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: DocumentClassifierEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: DocumentClassifierEndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

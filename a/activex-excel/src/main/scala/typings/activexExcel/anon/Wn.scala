@@ -14,19 +14,15 @@ trait Wn extends StObject {
 }
 object Wn {
   
-  @scala.inline
-  def apply(Wb: Workbook, Wn: Window): Wn = {
+  inline def apply(Wb: Workbook, Wn: Window): Wn = {
     val __obj = js.Dynamic.literal(Wb = Wb.asInstanceOf[js.Any], Wn = Wn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Wn]
   }
   
-  @scala.inline
-  implicit class WnMutableBuilder[Self <: Wn] (val x: Self) extends AnyVal {
+  extension [Self <: Wn](x: Self) {
     
-    @scala.inline
-    def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
+    inline def setWb(value: Workbook): Self = StObject.set(x, "Wb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWn(value: Window): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
+    inline def setWn(value: Window): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
   }
 }

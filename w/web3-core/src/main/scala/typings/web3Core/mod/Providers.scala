@@ -25,8 +25,7 @@ trait Providers extends StObject {
 }
 object Providers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HttpProvider: Instantiable2[/* host */ String, /* options */ js.UndefOr[HttpProviderOptions], HttpProvider],
     IpcProvider: Instantiable2[/* path */ String, /* net */ js.Any, IpcProvider],
     WebsocketProvider: Instantiable2[
@@ -39,19 +38,15 @@ object Providers {
     __obj.asInstanceOf[Providers]
   }
   
-  @scala.inline
-  implicit class ProvidersMutableBuilder[Self <: Providers] (val x: Self) extends AnyVal {
+  extension [Self <: Providers](x: Self) {
     
-    @scala.inline
-    def setHttpProvider(
+    inline def setHttpProvider(
       value: Instantiable2[/* host */ String, /* options */ js.UndefOr[HttpProviderOptions], HttpProvider]
     ): Self = StObject.set(x, "HttpProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpcProvider(value: Instantiable2[/* path */ String, /* net */ js.Any, IpcProvider]): Self = StObject.set(x, "IpcProvider", value.asInstanceOf[js.Any])
+    inline def setIpcProvider(value: Instantiable2[/* path */ String, /* net */ js.Any, IpcProvider]): Self = StObject.set(x, "IpcProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsocketProvider(
+    inline def setWebsocketProvider(
       value: Instantiable2[
           /* host */ String, 
           /* options */ js.UndefOr[WebsocketProviderOptions], 

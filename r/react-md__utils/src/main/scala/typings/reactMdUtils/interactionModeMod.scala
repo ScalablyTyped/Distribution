@@ -15,8 +15,7 @@ object interactionModeMod {
   
   object InteractionModeListener {
     
-    @scala.inline
-    def apply(hasChildren: InteractionModeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(hasChildren: InteractionModeListenerProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/utils/types/interaction/InteractionMode", "InteractionModeListener")
     @js.native
@@ -31,16 +30,13 @@ object interactionModeMod {
       @JSImport("@react-md/utils/types/interaction/InteractionMode", "InteractionModeListener.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def useIsUserInteractionMode(mode: UserInteractionMode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsUserInteractionMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useIsUserInteractionMode(mode: UserInteractionMode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsUserInteractionMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def useUserInteractionMode(): UserInteractionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("useUserInteractionMode")().asInstanceOf[UserInteractionMode]
+  inline def useUserInteractionMode(): UserInteractionMode = ^.asInstanceOf[js.Dynamic].applyDynamic("useUserInteractionMode")().asInstanceOf[UserInteractionMode]
   
   trait InteractionModeListenerProps extends StObject {
     
@@ -48,20 +44,16 @@ object interactionModeMod {
   }
   object InteractionModeListenerProps {
     
-    @scala.inline
-    def apply(): InteractionModeListenerProps = {
+    inline def apply(): InteractionModeListenerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InteractionModeListenerProps]
     }
     
-    @scala.inline
-    implicit class InteractionModeListenerPropsMutableBuilder[Self <: InteractionModeListenerProps] (val x: Self) extends AnyVal {
+    extension [Self <: InteractionModeListenerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

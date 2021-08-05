@@ -32,8 +32,7 @@ trait IPanorama extends StObject {
 }
 object IPanorama {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAngularBBox: () => js.Array[Double],
     getConnectionArrows: () => js.Array[IPanoramaConnectionArrow],
     getConnectionMarkers: () => js.Array[IPanoramaConnectionMarker],
@@ -51,43 +50,30 @@ object IPanorama {
     __obj.asInstanceOf[IPanorama]
   }
   
-  @scala.inline
-  implicit class IPanoramaMutableBuilder[Self <: IPanorama] (val x: Self) extends AnyVal {
+  extension [Self <: IPanorama](x: Self) {
     
-    @scala.inline
-    def setGetAngularBBox(value: () => js.Array[Double]): Self = StObject.set(x, "getAngularBBox", js.Any.fromFunction0(value))
+    inline def setGetAngularBBox(value: () => js.Array[Double]): Self = StObject.set(x, "getAngularBBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetConnectionArrows(value: () => js.Array[IPanoramaConnectionArrow]): Self = StObject.set(x, "getConnectionArrows", js.Any.fromFunction0(value))
+    inline def setGetConnectionArrows(value: () => js.Array[IPanoramaConnectionArrow]): Self = StObject.set(x, "getConnectionArrows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetConnectionMarkers(value: () => js.Array[IPanoramaConnectionMarker]): Self = StObject.set(x, "getConnectionMarkers", js.Any.fromFunction0(value))
+    inline def setGetConnectionMarkers(value: () => js.Array[IPanoramaConnectionMarker]): Self = StObject.set(x, "getConnectionMarkers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCoordSystem(value: () => ICoordSystem): Self = StObject.set(x, "getCoordSystem", js.Any.fromFunction0(value))
+    inline def setGetCoordSystem(value: () => ICoordSystem): Self = StObject.set(x, "getCoordSystem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultDirection(value: () => js.Array[Double]): Self = StObject.set(x, "getDefaultDirection", js.Any.fromFunction0(value))
+    inline def setGetDefaultDirection(value: () => js.Array[Double]): Self = StObject.set(x, "getDefaultDirection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultSpan(value: () => js.Array[Double]): Self = StObject.set(x, "getDefaultSpan", js.Any.fromFunction0(value))
+    inline def setGetDefaultSpan(value: () => js.Array[Double]): Self = StObject.set(x, "getDefaultSpan", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGraph(value: () => IPanoramaGraph | Null): Self = StObject.set(x, "getGraph", js.Any.fromFunction0(value))
+    inline def setGetGraph(value: () => IPanoramaGraph | Null): Self = StObject.set(x, "getGraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMarkers(value: () => js.Array[IPanoramaMarker]): Self = StObject.set(x, "getMarkers", js.Any.fromFunction0(value))
+    inline def setGetMarkers(value: () => js.Array[IPanoramaMarker]): Self = StObject.set(x, "getMarkers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => js.Array[Double]): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => js.Array[Double]): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTileLevels(value: () => js.Array[IPanoramaTileLevel]): Self = StObject.set(x, "getTileLevels", js.Any.fromFunction0(value))
+    inline def setGetTileLevels(value: () => js.Array[IPanoramaTileLevel]): Self = StObject.set(x, "getTileLevels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTileSize(value: () => js.Array[Double]): Self = StObject.set(x, "getTileSize", js.Any.fromFunction0(value))
+    inline def setGetTileSize(value: () => js.Array[Double]): Self = StObject.set(x, "getTileSize", js.Any.fromFunction0(value))
   }
 }

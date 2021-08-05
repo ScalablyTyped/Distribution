@@ -20,22 +20,17 @@ trait OpenProductSpecificViewConfig
 }
 object OpenProductSpecificViewConfig {
   
-  @scala.inline
-  def apply(productId: String): OpenProductSpecificViewConfig = {
+  inline def apply(productId: String): OpenProductSpecificViewConfig = {
     val __obj = js.Dynamic.literal(productId = productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenProductSpecificViewConfig]
   }
   
-  @scala.inline
-  implicit class OpenProductSpecificViewConfigMutableBuilder[Self <: OpenProductSpecificViewConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OpenProductSpecificViewConfig](x: Self) {
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: Double): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: Double): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
+    inline def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxOutboundRoutingGroup Class */
 @JSGlobal("FAXCOMEXLib.FaxOutboundRoutingGroup")
 @js.native
-class FaxOutboundRoutingGroup protected ()
+/* private */ class FaxOutboundRoutingGroup ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxOutboundRoutingGroup {
   
@@ -21,7 +21,7 @@ class FaxOutboundRoutingGroup protected ()
   @JSName("DeviceIds")
   override val DeviceIds_Original: FaxDeviceIds = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxOutboundRoutingGroup_typekey")
   var FAXCOMEXLibDotFaxOutboundRoutingGroup_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxOutboundRoutingGroup = js.native
   

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoShadowStyle extends StObject
 object MsoShadowStyle {
   
-  @scala.inline
-  def msoShadowStyleInnerShadow: `1` = 1.asInstanceOf[`1`]
+  inline def msoShadowStyleInnerShadow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoShadowStyleMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoShadowStyleMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoShadowStyleOuterShadow: `2` = 2.asInstanceOf[`2`]
+  inline def msoShadowStyleOuterShadow: `2` = 2.asInstanceOf[`2`]
 }

@@ -53,73 +53,51 @@ trait ListRecordsResponse extends StObject {
 }
 object ListRecordsResponse {
   
-  @scala.inline
-  def apply(): ListRecordsResponse = {
+  inline def apply(): ListRecordsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRecordsResponse]
   }
   
-  @scala.inline
-  implicit class ListRecordsResponseMutableBuilder[Self <: ListRecordsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRecordsResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setDatasetDeletedAfterRequestedSyncCount(value: Boolean): Self = StObject.set(x, "DatasetDeletedAfterRequestedSyncCount", value.asInstanceOf[js.Any])
+    inline def setDatasetDeletedAfterRequestedSyncCount(value: Boolean): Self = StObject.set(x, "DatasetDeletedAfterRequestedSyncCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetDeletedAfterRequestedSyncCountUndefined: Self = StObject.set(x, "DatasetDeletedAfterRequestedSyncCount", js.undefined)
+    inline def setDatasetDeletedAfterRequestedSyncCountUndefined: Self = StObject.set(x, "DatasetDeletedAfterRequestedSyncCount", js.undefined)
     
-    @scala.inline
-    def setDatasetExists(value: Boolean): Self = StObject.set(x, "DatasetExists", value.asInstanceOf[js.Any])
+    inline def setDatasetExists(value: Boolean): Self = StObject.set(x, "DatasetExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetExistsUndefined: Self = StObject.set(x, "DatasetExists", js.undefined)
+    inline def setDatasetExistsUndefined: Self = StObject.set(x, "DatasetExists", js.undefined)
     
-    @scala.inline
-    def setDatasetSyncCount(value: Long): Self = StObject.set(x, "DatasetSyncCount", value.asInstanceOf[js.Any])
+    inline def setDatasetSyncCount(value: Long): Self = StObject.set(x, "DatasetSyncCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetSyncCountUndefined: Self = StObject.set(x, "DatasetSyncCount", js.undefined)
+    inline def setDatasetSyncCountUndefined: Self = StObject.set(x, "DatasetSyncCount", js.undefined)
     
-    @scala.inline
-    def setLastModifiedBy(value: String): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBy(value: String): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    @scala.inline
-    def setMergedDatasetNames(value: MergedDatasetNameList): Self = StObject.set(x, "MergedDatasetNames", value.asInstanceOf[js.Any])
+    inline def setMergedDatasetNames(value: MergedDatasetNameList): Self = StObject.set(x, "MergedDatasetNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergedDatasetNamesUndefined: Self = StObject.set(x, "MergedDatasetNames", js.undefined)
+    inline def setMergedDatasetNamesUndefined: Self = StObject.set(x, "MergedDatasetNames", js.undefined)
     
-    @scala.inline
-    def setMergedDatasetNamesVarargs(value: String*): Self = StObject.set(x, "MergedDatasetNames", js.Array(value :_*))
+    inline def setMergedDatasetNamesVarargs(value: String*): Self = StObject.set(x, "MergedDatasetNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRecords(value: RecordList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: RecordList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
     
-    @scala.inline
-    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
     
-    @scala.inline
-    def setSyncSessionToken(value: String): Self = StObject.set(x, "SyncSessionToken", value.asInstanceOf[js.Any])
+    inline def setSyncSessionToken(value: String): Self = StObject.set(x, "SyncSessionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncSessionTokenUndefined: Self = StObject.set(x, "SyncSessionToken", js.undefined)
+    inline def setSyncSessionTokenUndefined: Self = StObject.set(x, "SyncSessionToken", js.undefined)
   }
 }

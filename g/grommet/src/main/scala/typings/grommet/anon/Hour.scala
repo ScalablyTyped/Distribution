@@ -22,46 +22,33 @@ trait Hour extends StObject {
 }
 object Hour {
   
-  @scala.inline
-  def apply(): Hour = {
+  inline def apply(): Hour = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hour]
   }
   
-  @scala.inline
-  implicit class HourMutableBuilder[Self <: Hour] (val x: Self) extends AnyVal {
+  extension [Self <: Hour](x: Self) {
     
-    @scala.inline
-    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setHour(value: Shape): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Shape): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+    inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
-    @scala.inline
-    def setMinute(value: Shape): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: Shape): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+    inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
-    @scala.inline
-    def setSecond(value: Shape): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Shape): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
     
-    @scala.inline
-    def setSize(value: Huge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Huge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

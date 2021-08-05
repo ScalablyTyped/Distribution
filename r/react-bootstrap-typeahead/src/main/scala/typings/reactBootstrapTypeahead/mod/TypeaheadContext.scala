@@ -27,67 +27,47 @@ trait TypeaheadContext[T /* <: TypeaheadModel */] extends StObject {
 }
 object TypeaheadContext {
   
-  @scala.inline
-  def apply[T /* <: TypeaheadModel */](): TypeaheadContext[T] = {
+  inline def apply[T /* <: TypeaheadModel */](): TypeaheadContext[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TypeaheadContext[T]]
   }
   
-  @scala.inline
-  implicit class TypeaheadContextMutableBuilder[Self <: TypeaheadContext[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadContext[T]) extends AnyVal {
+  extension [Self <: TypeaheadContext[?], T /* <: TypeaheadModel */](x: Self & TypeaheadContext[T]) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+    inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
     
-    @scala.inline
-    def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
+    inline def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
+    inline def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
     
-    @scala.inline
-    def setInitialItem(value: T): Self = StObject.set(x, "initialItem", value.asInstanceOf[js.Any])
+    inline def setInitialItem(value: T): Self = StObject.set(x, "initialItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialItemUndefined: Self = StObject.set(x, "initialItem", js.undefined)
+    inline def setInitialItemUndefined: Self = StObject.set(x, "initialItem", js.undefined)
     
-    @scala.inline
-    def setIsOnlyResult(value: Boolean): Self = StObject.set(x, "isOnlyResult", value.asInstanceOf[js.Any])
+    inline def setIsOnlyResult(value: Boolean): Self = StObject.set(x, "isOnlyResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOnlyResultUndefined: Self = StObject.set(x, "isOnlyResult", js.undefined)
+    inline def setIsOnlyResultUndefined: Self = StObject.set(x, "isOnlyResult", js.undefined)
     
-    @scala.inline
-    def setOnActiveItemChange(value: /* options */ T => Unit): Self = StObject.set(x, "onActiveItemChange", js.Any.fromFunction1(value))
+    inline def setOnActiveItemChange(value: /* options */ T => Unit): Self = StObject.set(x, "onActiveItemChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnActiveItemChangeUndefined: Self = StObject.set(x, "onActiveItemChange", js.undefined)
+    inline def setOnActiveItemChangeUndefined: Self = StObject.set(x, "onActiveItemChange", js.undefined)
     
-    @scala.inline
-    def setOnAdd(value: /* option */ T => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: /* option */ T => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
-    @scala.inline
-    def setOnInitialItemChange(value: /* option */ T => Unit): Self = StObject.set(x, "onInitialItemChange", js.Any.fromFunction1(value))
+    inline def setOnInitialItemChange(value: /* option */ T => Unit): Self = StObject.set(x, "onInitialItemChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnInitialItemChangeUndefined: Self = StObject.set(x, "onInitialItemChange", js.undefined)
+    inline def setOnInitialItemChangeUndefined: Self = StObject.set(x, "onInitialItemChange", js.undefined)
     
-    @scala.inline
-    def setOnMenuItemClick(value: (/* option */ T, /* e */ Event) => Unit): Self = StObject.set(x, "onMenuItemClick", js.Any.fromFunction2(value))
+    inline def setOnMenuItemClick(value: (/* option */ T, /* e */ Event) => Unit): Self = StObject.set(x, "onMenuItemClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnMenuItemClickUndefined: Self = StObject.set(x, "onMenuItemClick", js.undefined)
+    inline def setOnMenuItemClickUndefined: Self = StObject.set(x, "onMenuItemClick", js.undefined)
     
-    @scala.inline
-    def setSelectHintOnEnter(value: Boolean): Self = StObject.set(x, "selectHintOnEnter", value.asInstanceOf[js.Any])
+    inline def setSelectHintOnEnter(value: Boolean): Self = StObject.set(x, "selectHintOnEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectHintOnEnterUndefined: Self = StObject.set(x, "selectHintOnEnter", js.undefined)
+    inline def setSelectHintOnEnterUndefined: Self = StObject.set(x, "selectHintOnEnter", js.undefined)
   }
 }

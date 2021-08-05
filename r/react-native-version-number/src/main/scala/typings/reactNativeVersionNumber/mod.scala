@@ -21,32 +21,24 @@ object mod extends Shortcut {
   }
   object VersionNumber {
     
-    @scala.inline
-    def apply(): VersionNumber = {
+    inline def apply(): VersionNumber = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VersionNumber]
     }
     
-    @scala.inline
-    implicit class VersionNumberMutableBuilder[Self <: VersionNumber] (val x: Self) extends AnyVal {
+    extension [Self <: VersionNumber](x: Self) {
       
-      @scala.inline
-      def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+      inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppVersionUndefined: Self = StObject.set(x, "appVersion", js.undefined)
+      inline def setAppVersionUndefined: Self = StObject.set(x, "appVersion", js.undefined)
       
-      @scala.inline
-      def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
+      inline def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildVersionUndefined: Self = StObject.set(x, "buildVersion", js.undefined)
+      inline def setBuildVersionUndefined: Self = StObject.set(x, "buildVersion", js.undefined)
       
-      @scala.inline
-      def setBundleIdentifier(value: String): Self = StObject.set(x, "bundleIdentifier", value.asInstanceOf[js.Any])
+      inline def setBundleIdentifier(value: String): Self = StObject.set(x, "bundleIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleIdentifierUndefined: Self = StObject.set(x, "bundleIdentifier", js.undefined)
+      inline def setBundleIdentifierUndefined: Self = StObject.set(x, "bundleIdentifier", js.undefined)
     }
   }
   

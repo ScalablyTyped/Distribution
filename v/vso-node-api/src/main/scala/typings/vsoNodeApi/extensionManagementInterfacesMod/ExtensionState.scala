@@ -22,8 +22,7 @@ trait ExtensionState
 }
 object ExtensionState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extensionName: String,
     flags: ExtensionStateFlags,
     installationIssues: js.Array[InstalledExtensionStateIssue],
@@ -36,19 +35,14 @@ object ExtensionState {
     __obj.asInstanceOf[ExtensionState]
   }
   
-  @scala.inline
-  implicit class ExtensionStateMutableBuilder[Self <: ExtensionState] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionState](x: Self) {
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastVersionCheck(value: Date): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
+    inline def setLastVersionCheck(value: Date): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

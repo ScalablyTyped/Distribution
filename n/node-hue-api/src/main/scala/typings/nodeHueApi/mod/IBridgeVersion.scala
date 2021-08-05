@@ -13,19 +13,15 @@ trait IBridgeVersion extends StObject {
 }
 object IBridgeVersion {
   
-  @scala.inline
-  def apply(name: String, version: Api): IBridgeVersion = {
+  inline def apply(name: String, version: Api): IBridgeVersion = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBridgeVersion]
   }
   
-  @scala.inline
-  implicit class IBridgeVersionMutableBuilder[Self <: IBridgeVersion] (val x: Self) extends AnyVal {
+  extension [Self <: IBridgeVersion](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Api): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Api): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

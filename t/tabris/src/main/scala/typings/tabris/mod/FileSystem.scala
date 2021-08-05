@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "FileSystem")
 @js.native
-class FileSystem protected () extends NativeObject {
+/* private */ class FileSystem () extends NativeObject {
   
   /**
     * Writes the given binary content to the given file. If the file exists, it is appended, otherwise it

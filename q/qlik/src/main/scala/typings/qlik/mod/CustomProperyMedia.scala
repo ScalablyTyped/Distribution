@@ -20,26 +20,20 @@ trait CustomProperyMedia
 }
 object CustomProperyMedia {
   
-  @scala.inline
-  def apply(): CustomProperyMedia = {
+  inline def apply(): CustomProperyMedia = {
     val __obj = js.Dynamic.literal(component = "media")
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomProperyMedia]
   }
   
-  @scala.inline
-  implicit class CustomProperyMediaMutableBuilder[Self <: CustomProperyMedia] (val x: Self) extends AnyVal {
+  extension [Self <: CustomProperyMedia](x: Self) {
     
-    @scala.inline
-    def setComponent(value: media): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: media): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutRef(value: String): Self = StObject.set(x, "layoutRef", value.asInstanceOf[js.Any])
+    inline def setLayoutRef(value: String): Self = StObject.set(x, "layoutRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutRefUndefined: Self = StObject.set(x, "layoutRef", js.undefined)
+    inline def setLayoutRefUndefined: Self = StObject.set(x, "layoutRef", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

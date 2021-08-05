@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Blur = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Blur]
+  inline def default(): Blur = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Blur]
   
   @js.native
   trait Blur extends StObject {

@@ -10,16 +10,13 @@ trait IsNeedRender extends StObject {
 }
 object IsNeedRender {
   
-  @scala.inline
-  def apply(isNeedRender: Boolean): IsNeedRender = {
+  inline def apply(isNeedRender: Boolean): IsNeedRender = {
     val __obj = js.Dynamic.literal(isNeedRender = isNeedRender.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsNeedRender]
   }
   
-  @scala.inline
-  implicit class IsNeedRenderMutableBuilder[Self <: IsNeedRender] (val x: Self) extends AnyVal {
+  extension [Self <: IsNeedRender](x: Self) {
     
-    @scala.inline
-    def setIsNeedRender(value: Boolean): Self = StObject.set(x, "isNeedRender", value.asInstanceOf[js.Any])
+    inline def setIsNeedRender(value: Boolean): Self = StObject.set(x, "isNeedRender", value.asInstanceOf[js.Any])
   }
 }

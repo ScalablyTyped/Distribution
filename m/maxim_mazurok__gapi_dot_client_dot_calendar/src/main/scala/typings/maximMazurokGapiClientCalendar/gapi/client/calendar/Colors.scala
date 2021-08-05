@@ -29,45 +29,35 @@ trait Colors extends StObject {
 }
 object Colors {
   
-  @scala.inline
-  def apply(): Colors = {
+  inline def apply(): Colors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Colors]
   }
   
-  @scala.inline
-  implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
+  extension [Self <: Colors](x: Self) {
     
-    @scala.inline
-    def setCalendar(
+    inline def setCalendar(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors & TopLevel[js.Any]
     ): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+    inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
-    @scala.inline
-    def setEvent(
+    inline def setEvent(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.ColorDefinition}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.Colors & TopLevel[js.Any]
     ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

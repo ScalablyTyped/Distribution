@@ -13,16 +13,13 @@ trait GetGameSessionLogUrlInput extends StObject {
 }
 object GetGameSessionLogUrlInput {
   
-  @scala.inline
-  def apply(GameSessionId: ArnStringModel): GetGameSessionLogUrlInput = {
+  inline def apply(GameSessionId: ArnStringModel): GetGameSessionLogUrlInput = {
     val __obj = js.Dynamic.literal(GameSessionId = GameSessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGameSessionLogUrlInput]
   }
   
-  @scala.inline
-  implicit class GetGameSessionLogUrlInputMutableBuilder[Self <: GetGameSessionLogUrlInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetGameSessionLogUrlInput](x: Self) {
     
-    @scala.inline
-    def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
+    inline def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
   }
 }

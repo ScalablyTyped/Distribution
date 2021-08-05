@@ -19,8 +19,7 @@ trait PageStyleLayout extends StObject
 object PageStyleLayout {
   
   /** The page style is identically used for left and right pages. */
-  @scala.inline
-  def ALL: `0` = 0.asInstanceOf[`0`]
+  inline def ALL: `0` = 0.asInstanceOf[`0`]
   
   /**
     * set the horizontal alignment to the left margin from the container object
@@ -31,12 +30,10 @@ object PageStyleLayout {
     *
     * The text range is left-aligned between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def LEFT: `1` = 1.asInstanceOf[`1`]
+  inline def LEFT: `1` = 1.asInstanceOf[`1`]
   
   /** The page style is used unchanged for left pages and mirrored for right pages. */
-  @scala.inline
-  def MIRRORED: `3` = 3.asInstanceOf[`3`]
+  inline def MIRRORED: `3` = 3.asInstanceOf[`3`]
   
   /**
     * set the horizontal alignment to the right margin from the container object
@@ -47,6 +44,5 @@ object PageStyleLayout {
     *
     * The text range is right-aligned between the previous tabulator (or the left border, if none) and this tabulator.
     */
-  @scala.inline
-  def RIGHT: `2` = 2.asInstanceOf[`2`]
+  inline def RIGHT: `2` = 2.asInstanceOf[`2`]
 }

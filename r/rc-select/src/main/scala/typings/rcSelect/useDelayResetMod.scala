@@ -10,8 +10,7 @@ object useDelayResetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Tuple3[
+  inline def default(): js.Tuple3[
     Boolean, 
     js.Function2[/* val */ Boolean, /* callback */ js.UndefOr[js.Function0[Unit]], Unit], 
     js.Function0[Unit]
@@ -20,8 +19,7 @@ object useDelayResetMod {
     js.Function2[/* val */ Boolean, /* callback */ js.UndefOr[js.Function0[Unit]], Unit], 
     js.Function0[Unit]
   ]]
-  @scala.inline
-  def default(timeout: Double): js.Tuple3[
+  inline def default(timeout: Double): js.Tuple3[
     Boolean, 
     js.Function2[/* val */ Boolean, /* callback */ js.UndefOr[js.Function0[Unit]], Unit], 
     js.Function0[Unit]

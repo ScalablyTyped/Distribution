@@ -34,25 +34,19 @@ trait ChatRoomSubjectChange
 }
 object ChatRoomSubjectChange {
   
-  @scala.inline
-  def apply(id: String, resource: String, room: String, subject: String): ChatRoomSubjectChange = {
+  inline def apply(id: String, resource: String, room: String, subject: String): ChatRoomSubjectChange = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomSubjectChange]
   }
   
-  @scala.inline
-  implicit class ChatRoomSubjectChangeMutableBuilder[Self <: ChatRoomSubjectChange] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomSubjectChange](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

@@ -15,21 +15,15 @@ object compatibleLayoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[String]]
+  inline def default(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def default_mix(layout: mix): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def default_mix(layout: mix): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def default_side(layout: side): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def default_side(layout: side): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def default_sidemenu(layout: sidemenu): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def default_sidemenu(layout: sidemenu): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def default_top(layout: top): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def default_top(layout: top): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def default_topmenu(layout: topmenu): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def default_topmenu(layout: topmenu): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(layout.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

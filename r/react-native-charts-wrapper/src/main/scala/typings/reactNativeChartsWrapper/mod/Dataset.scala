@@ -10,19 +10,15 @@ trait Dataset extends StObject {
 }
 object Dataset {
   
-  @scala.inline
-  def apply(): Dataset = {
+  inline def apply(): Dataset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dataset]
   }
   
-  @scala.inline
-  implicit class DatasetMutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
+  extension [Self <: Dataset](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

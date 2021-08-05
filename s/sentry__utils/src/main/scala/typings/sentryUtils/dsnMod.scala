@@ -18,13 +18,13 @@ object dsnMod {
     def this(from: DsnLike) = this()
     
     /** Maps Dsn components into this instance. */
-    var _fromComponents: js.Any = js.native
+    /* private */ var _fromComponents: js.Any = js.native
     
     /** Parses a string into this Dsn. */
-    var _fromString: js.Any = js.native
+    /* private */ var _fromString: js.Any = js.native
     
     /** Validates this Dsn and throws on error. */
-    var _validate: js.Any = js.native
+    /* private */ var _validate: js.Any = js.native
     
     /** Hostname of the Sentry instance. */
     /* CompleteClass */

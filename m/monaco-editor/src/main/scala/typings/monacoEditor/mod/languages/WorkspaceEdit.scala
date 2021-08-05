@@ -10,19 +10,15 @@ trait WorkspaceEdit extends StObject {
 }
 object WorkspaceEdit {
   
-  @scala.inline
-  def apply(edits: js.Array[WorkspaceTextEdit | WorkspaceFileEdit]): WorkspaceEdit = {
+  inline def apply(edits: js.Array[WorkspaceTextEdit | WorkspaceFileEdit]): WorkspaceEdit = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceEdit]
   }
   
-  @scala.inline
-  implicit class WorkspaceEditMutableBuilder[Self <: WorkspaceEdit] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceEdit](x: Self) {
     
-    @scala.inline
-    def setEdits(value: js.Array[WorkspaceTextEdit | WorkspaceFileEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
+    inline def setEdits(value: js.Array[WorkspaceTextEdit | WorkspaceFileEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditsVarargs(value: (WorkspaceTextEdit | WorkspaceFileEdit)*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: (WorkspaceTextEdit | WorkspaceFileEdit)*): Self = StObject.set(x, "edits", js.Array(value :_*))
   }
 }

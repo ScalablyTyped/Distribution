@@ -16,28 +16,21 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(config: String, id: Double, suite: String): Id = {
+  inline def apply(config: String, id: Double, suite: String): Id = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionConfig(value: String): Self = StObject.set(x, "sessionConfig", value.asInstanceOf[js.Any])
+    inline def setSessionConfig(value: String): Self = StObject.set(x, "sessionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionConfigUndefined: Self = StObject.set(x, "sessionConfig", js.undefined)
+    inline def setSessionConfigUndefined: Self = StObject.set(x, "sessionConfig", js.undefined)
     
-    @scala.inline
-    def setSuite(value: String): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+    inline def setSuite(value: String): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
   }
 }

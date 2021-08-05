@@ -11,19 +11,15 @@ trait TetTempFileURLSuccess extends StObject {
 }
 object TetTempFileURLSuccess {
   
-  @scala.inline
-  def apply(fileList: js.Array[ErrMsg]): TetTempFileURLSuccess = {
+  inline def apply(fileList: js.Array[ErrMsg]): TetTempFileURLSuccess = {
     val __obj = js.Dynamic.literal(fileList = fileList.asInstanceOf[js.Any])
     __obj.asInstanceOf[TetTempFileURLSuccess]
   }
   
-  @scala.inline
-  implicit class TetTempFileURLSuccessMutableBuilder[Self <: TetTempFileURLSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: TetTempFileURLSuccess](x: Self) {
     
-    @scala.inline
-    def setFileList(value: js.Array[ErrMsg]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: js.Array[ErrMsg]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListVarargs(value: ErrMsg*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: ErrMsg*): Self = StObject.set(x, "fileList", js.Array(value :_*))
   }
 }

@@ -22,55 +22,39 @@ trait DPlayerVideo extends StObject {
 }
 object DPlayerVideo {
   
-  @scala.inline
-  def apply(url: String): DPlayerVideo = {
+  inline def apply(url: String): DPlayerVideo = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DPlayerVideo]
   }
   
-  @scala.inline
-  implicit class DPlayerVideoMutableBuilder[Self <: DPlayerVideo] (val x: Self) extends AnyVal {
+  extension [Self <: DPlayerVideo](x: Self) {
     
-    @scala.inline
-    def setCustomType(value: js.Any): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
+    inline def setCustomType(value: js.Any): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
+    inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
-    @scala.inline
-    def setDefaultQuality(value: Double): Self = StObject.set(x, "defaultQuality", value.asInstanceOf[js.Any])
+    inline def setDefaultQuality(value: Double): Self = StObject.set(x, "defaultQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultQualityUndefined: Self = StObject.set(x, "defaultQuality", js.undefined)
+    inline def setDefaultQualityUndefined: Self = StObject.set(x, "defaultQuality", js.undefined)
     
-    @scala.inline
-    def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+    inline def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicUndefined: Self = StObject.set(x, "pic", js.undefined)
+    inline def setPicUndefined: Self = StObject.set(x, "pic", js.undefined)
     
-    @scala.inline
-    def setQuality(value: js.Array[DPlayerVideoQuality]): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: js.Array[DPlayerVideoQuality]): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setQualityVarargs(value: DPlayerVideoQuality*): Self = StObject.set(x, "quality", js.Array(value :_*))
+    inline def setQualityVarargs(value: DPlayerVideoQuality*): Self = StObject.set(x, "quality", js.Array(value :_*))
     
-    @scala.inline
-    def setThumbnails(value: String): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: String): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+    inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    @scala.inline
-    def setType(value: VideoType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: VideoType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

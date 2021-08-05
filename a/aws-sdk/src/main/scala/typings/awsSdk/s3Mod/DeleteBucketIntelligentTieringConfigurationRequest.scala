@@ -18,19 +18,15 @@ trait DeleteBucketIntelligentTieringConfigurationRequest extends StObject {
 }
 object DeleteBucketIntelligentTieringConfigurationRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, Id: IntelligentTieringId): DeleteBucketIntelligentTieringConfigurationRequest = {
+  inline def apply(Bucket: BucketName, Id: IntelligentTieringId): DeleteBucketIntelligentTieringConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketIntelligentTieringConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBucketIntelligentTieringConfigurationRequestMutableBuilder[Self <: DeleteBucketIntelligentTieringConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBucketIntelligentTieringConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: IntelligentTieringId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IntelligentTieringId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

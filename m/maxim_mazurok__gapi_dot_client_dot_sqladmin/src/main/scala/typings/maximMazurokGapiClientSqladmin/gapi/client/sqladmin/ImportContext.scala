@@ -37,55 +37,39 @@ trait ImportContext extends StObject {
 }
 object ImportContext {
   
-  @scala.inline
-  def apply(): ImportContext = {
+  inline def apply(): ImportContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportContext]
   }
   
-  @scala.inline
-  implicit class ImportContextMutableBuilder[Self <: ImportContext] (val x: Self) extends AnyVal {
+  extension [Self <: ImportContext](x: Self) {
     
-    @scala.inline
-    def setBakImportOptions(value: EncryptionOptions): Self = StObject.set(x, "bakImportOptions", value.asInstanceOf[js.Any])
+    inline def setBakImportOptions(value: EncryptionOptions): Self = StObject.set(x, "bakImportOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBakImportOptionsUndefined: Self = StObject.set(x, "bakImportOptions", js.undefined)
+    inline def setBakImportOptionsUndefined: Self = StObject.set(x, "bakImportOptions", js.undefined)
     
-    @scala.inline
-    def setCsvImportOptions(value: Columns): Self = StObject.set(x, "csvImportOptions", value.asInstanceOf[js.Any])
+    inline def setCsvImportOptions(value: Columns): Self = StObject.set(x, "csvImportOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvImportOptionsUndefined: Self = StObject.set(x, "csvImportOptions", js.undefined)
+    inline def setCsvImportOptionsUndefined: Self = StObject.set(x, "csvImportOptions", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    @scala.inline
-    def setImportUser(value: String): Self = StObject.set(x, "importUser", value.asInstanceOf[js.Any])
+    inline def setImportUser(value: String): Self = StObject.set(x, "importUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportUserUndefined: Self = StObject.set(x, "importUser", js.undefined)
+    inline def setImportUserUndefined: Self = StObject.set(x, "importUser", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

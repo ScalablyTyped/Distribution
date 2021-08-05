@@ -68,8 +68,7 @@ object EventHelperTypes {
   }
   object ApplicationEPostageInsertExParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Doc: Document,
       bstrPaperFeed: String,
       bstrPrinterName: String,
@@ -86,41 +85,29 @@ object EventHelperTypes {
       __obj.asInstanceOf[ApplicationEPostageInsertExParameter]
     }
     
-    @scala.inline
-    implicit class ApplicationEPostageInsertExParameterMutableBuilder[Self <: ApplicationEPostageInsertExParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationEPostageInsertExParameter](x: Self) {
       
-      @scala.inline
-      def setBstrPaperFeed(value: String): Self = StObject.set(x, "bstrPaperFeed", value.asInstanceOf[js.Any])
+      inline def setBstrPaperFeed(value: String): Self = StObject.set(x, "bstrPaperFeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBstrPrinterName(value: String): Self = StObject.set(x, "bstrPrinterName", value.asInstanceOf[js.Any])
+      inline def setBstrPrinterName(value: String): Self = StObject.set(x, "bstrPrinterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpDeliveryAddrEnd(value: Double): Self = StObject.set(x, "cpDeliveryAddrEnd", value.asInstanceOf[js.Any])
+      inline def setCpDeliveryAddrEnd(value: Double): Self = StObject.set(x, "cpDeliveryAddrEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpDeliveryAddrStart(value: Double): Self = StObject.set(x, "cpDeliveryAddrStart", value.asInstanceOf[js.Any])
+      inline def setCpDeliveryAddrStart(value: Double): Self = StObject.set(x, "cpDeliveryAddrStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpReturnAddrEnd(value: Double): Self = StObject.set(x, "cpReturnAddrEnd", value.asInstanceOf[js.Any])
+      inline def setCpReturnAddrEnd(value: Double): Self = StObject.set(x, "cpReturnAddrEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpReturnAddrStart(value: Double): Self = StObject.set(x, "cpReturnAddrStart", value.asInstanceOf[js.Any])
+      inline def setCpReturnAddrStart(value: Double): Self = StObject.set(x, "cpReturnAddrStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFCancel(value: Boolean): Self = StObject.set(x, "fCancel", value.asInstanceOf[js.Any])
+      inline def setFCancel(value: Boolean): Self = StObject.set(x, "fCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFPrint(value: Boolean): Self = StObject.set(x, "fPrint", value.asInstanceOf[js.Any])
+      inline def setFPrint(value: Boolean): Self = StObject.set(x, "fPrint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXaWidth(value: Double): Self = StObject.set(x, "xaWidth", value.asInstanceOf[js.Any])
+      inline def setXaWidth(value: Double): Self = StObject.set(x, "xaWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYaHeight(value: Double): Self = StObject.set(x, "yaHeight", value.asInstanceOf[js.Any])
+      inline def setYaHeight(value: Double): Self = StObject.set(x, "yaHeight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,8 +133,7 @@ object EventHelperTypes {
   }
   object ApplicationInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -161,32 +147,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[ApplicationInvokeParameter]
     }
     
-    @scala.inline
-    implicit class ApplicationInvokeParameterMutableBuilder[Self <: ApplicationInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -81,52 +81,37 @@ trait SchemaMenuItem extends StObject {
 }
 object SchemaMenuItem {
   
-  @scala.inline
-  def apply(): SchemaMenuItem = {
+  inline def apply(): SchemaMenuItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMenuItem]
   }
   
-  @scala.inline
-  implicit class SchemaMenuItemMutableBuilder[Self <: SchemaMenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMenuItem](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setContextual_command(value: String): Self = StObject.set(x, "contextual_command", value.asInstanceOf[js.Any])
+    inline def setContextual_command(value: String): Self = StObject.set(x, "contextual_command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextual_commandUndefined: Self = StObject.set(x, "contextual_command", js.undefined)
+    inline def setContextual_commandUndefined: Self = StObject.set(x, "contextual_command", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setRemoveWhenSelected(value: Boolean): Self = StObject.set(x, "removeWhenSelected", value.asInstanceOf[js.Any])
+    inline def setRemoveWhenSelected(value: Boolean): Self = StObject.set(x, "removeWhenSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveWhenSelectedUndefined: Self = StObject.set(x, "removeWhenSelected", js.undefined)
+    inline def setRemoveWhenSelectedUndefined: Self = StObject.set(x, "removeWhenSelected", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[SchemaMenuValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[SchemaMenuValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: SchemaMenuValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaMenuValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

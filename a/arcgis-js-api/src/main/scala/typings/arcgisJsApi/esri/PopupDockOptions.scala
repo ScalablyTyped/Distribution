@@ -33,8 +33,7 @@ trait PopupDockOptions
 }
 object PopupDockOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object PopupDockOptions {
     __obj.asInstanceOf[PopupDockOptions]
   }
   
-  @scala.inline
-  implicit class PopupDockOptionsMutableBuilder[Self <: PopupDockOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopupDockOptions](x: Self) {
     
-    @scala.inline
-    def setBreakpoint(value: Boolean | PopupDockOptionsBreakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+    inline def setBreakpoint(value: Boolean | PopupDockOptionsBreakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+    inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
     
-    @scala.inline
-    def setButtonEnabled(value: Boolean): Self = StObject.set(x, "buttonEnabled", value.asInstanceOf[js.Any])
+    inline def setButtonEnabled(value: Boolean): Self = StObject.set(x, "buttonEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonEnabledUndefined: Self = StObject.set(x, "buttonEnabled", js.undefined)
+    inline def setButtonEnabledUndefined: Self = StObject.set(x, "buttonEnabled", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String | js.Function): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String | js.Function): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

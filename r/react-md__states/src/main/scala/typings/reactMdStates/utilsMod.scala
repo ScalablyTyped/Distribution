@@ -19,20 +19,15 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRippleState(event: RippleEvent[HTMLElement]): RippleState = ^.asInstanceOf[js.Dynamic].applyDynamic("createRippleState")(event.asInstanceOf[js.Any]).asInstanceOf[RippleState]
+  inline def createRippleState(event: RippleEvent[HTMLElement]): RippleState = ^.asInstanceOf[js.Dynamic].applyDynamic("createRippleState")(event.asInstanceOf[js.Any]).asInstanceOf[RippleState]
   
-  @scala.inline
-  def getOrigin(event: PickRippleEventHTMLElemenPageX, element: HTMLElement): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(event.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Origin]
+  inline def getOrigin(event: PickRippleEventHTMLElemenPageX, element: HTMLElement): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(event.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Origin]
   
-  @scala.inline
-  def getType(event: PickRippleEventHTMLElemen): RippleType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(event.asInstanceOf[js.Any]).asInstanceOf[RippleType]
+  inline def getType(event: PickRippleEventHTMLElemen): RippleType = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(event.asInstanceOf[js.Any]).asInstanceOf[RippleType]
   
-  @scala.inline
-  def isBubbled[E /* <: HTMLElement */](event: Pick[RippleEvent[E], currentTarget | target]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBubbled")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBubbled[E /* <: HTMLElement */](event: Pick[RippleEvent[E], currentTarget | target]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBubbled")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isRippleable(event: RippleEvent[HTMLElement], disableSpacebarClick: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRippleable")(event.asInstanceOf[js.Any], disableSpacebarClick.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isRippleable(event: RippleEvent[HTMLElement], disableSpacebarClick: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRippleable")(event.asInstanceOf[js.Any], disableSpacebarClick.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait Origin extends StObject {
     
@@ -42,20 +37,16 @@ object utilsMod {
   }
   object Origin {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Origin = {
+    inline def apply(x: Double, y: Double): Origin = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Origin]
     }
     
-    @scala.inline
-    implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+    extension [Self <: Origin](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

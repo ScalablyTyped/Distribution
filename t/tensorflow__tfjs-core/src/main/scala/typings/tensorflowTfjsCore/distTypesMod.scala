@@ -66,11 +66,9 @@ object distTypesMod {
     /* "R6" */ val R6: typings.tensorflowTfjsCore.distTypesMod.Rank.R6 & String = js.native
   }
   
-  @scala.inline
-  def sumOutType(`type`: DataType): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("sumOutType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DataType]
+  inline def sumOutType(`type`: DataType): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("sumOutType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
-  @scala.inline
-  def upcastType(typeA: DataType, typeB: DataType): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("upcastType")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[DataType]
+  inline def upcastType(typeA: DataType, typeB: DataType): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("upcastType")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[DataType]
   
   trait ArrayMap extends StObject {
     
@@ -90,8 +88,7 @@ object distTypesMod {
   }
   object ArrayMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       R0: Double,
       R1: js.Array[Double],
       R2: js.Array[js.Array[Double]],
@@ -104,47 +101,33 @@ object distTypesMod {
       __obj.asInstanceOf[ArrayMap]
     }
     
-    @scala.inline
-    implicit class ArrayMapMutableBuilder[Self <: ArrayMap] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayMap](x: Self) {
       
-      @scala.inline
-      def setR0(value: Double): Self = StObject.set(x, "R0", value.asInstanceOf[js.Any])
+      inline def setR0(value: Double): Self = StObject.set(x, "R0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR1(value: js.Array[Double]): Self = StObject.set(x, "R1", value.asInstanceOf[js.Any])
+      inline def setR1(value: js.Array[Double]): Self = StObject.set(x, "R1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value :_*))
+      inline def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value :_*))
       
-      @scala.inline
-      def setR2(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
+      inline def setR2(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR2Varargs(value: js.Array[Double]*): Self = StObject.set(x, "R2", js.Array(value :_*))
+      inline def setR2Varargs(value: js.Array[Double]*): Self = StObject.set(x, "R2", js.Array(value :_*))
       
-      @scala.inline
-      def setR3(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "R3", value.asInstanceOf[js.Any])
+      inline def setR3(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "R3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR3Varargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "R3", js.Array(value :_*))
+      inline def setR3Varargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "R3", js.Array(value :_*))
       
-      @scala.inline
-      def setR4(value: js.Array[js.Array[js.Array[js.Array[Double]]]]): Self = StObject.set(x, "R4", value.asInstanceOf[js.Any])
+      inline def setR4(value: js.Array[js.Array[js.Array[js.Array[Double]]]]): Self = StObject.set(x, "R4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR4Varargs(value: js.Array[js.Array[js.Array[Double]]]*): Self = StObject.set(x, "R4", js.Array(value :_*))
+      inline def setR4Varargs(value: js.Array[js.Array[js.Array[Double]]]*): Self = StObject.set(x, "R4", js.Array(value :_*))
       
-      @scala.inline
-      def setR5(value: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]): Self = StObject.set(x, "R5", value.asInstanceOf[js.Any])
+      inline def setR5(value: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]): Self = StObject.set(x, "R5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR5Varargs(value: js.Array[js.Array[js.Array[js.Array[Double]]]]*): Self = StObject.set(x, "R5", js.Array(value :_*))
+      inline def setR5Varargs(value: js.Array[js.Array[js.Array[js.Array[Double]]]]*): Self = StObject.set(x, "R5", js.Array(value :_*))
       
-      @scala.inline
-      def setR6(value: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]]): Self = StObject.set(x, "R6", value.asInstanceOf[js.Any])
+      inline def setR6(value: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]]): Self = StObject.set(x, "R6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR6Varargs(value: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]*): Self = StObject.set(x, "R6", js.Array(value :_*))
+      inline def setR6Varargs(value: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]*): Self = StObject.set(x, "R6", js.Array(value :_*))
     }
   }
   
@@ -173,8 +156,7 @@ object distTypesMod {
   }
   object DataTypeMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bool: Uint8Array,
       complex64: Float32Array,
       float32: Float32Array,
@@ -185,26 +167,19 @@ object distTypesMod {
       __obj.asInstanceOf[DataTypeMap]
     }
     
-    @scala.inline
-    implicit class DataTypeMapMutableBuilder[Self <: DataTypeMap] (val x: Self) extends AnyVal {
+    extension [Self <: DataTypeMap](x: Self) {
       
-      @scala.inline
-      def setBool(value: Uint8Array): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: Uint8Array): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplex64(value: Float32Array): Self = StObject.set(x, "complex64", value.asInstanceOf[js.Any])
+      inline def setComplex64(value: Float32Array): Self = StObject.set(x, "complex64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
     }
   }
   
@@ -253,113 +228,77 @@ object distTypesMod {
   trait DataValues extends StObject
   object DataValues {
     
-    @scala.inline
-    def BYTES_PER_ELEMENT: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT = "BYTES_PER_ELEMENT".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT]
+    inline def BYTES_PER_ELEMENT: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT = "BYTES_PER_ELEMENT".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT]
     
-    @scala.inline
-    def buffer: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer = "buffer".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer]
+    inline def buffer: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer = "buffer".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer]
     
-    @scala.inline
-    def byteLength: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteLength = "byteLength".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteLength]
+    inline def byteLength: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteLength = "byteLength".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteLength]
     
-    @scala.inline
-    def byteOffset: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteOffset = "byteOffset".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteOffset]
+    inline def byteOffset: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteOffset = "byteOffset".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.byteOffset]
     
-    @scala.inline
-    def concat: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.concat = "concat".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.concat]
+    inline def concat: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.concat = "concat".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.concat]
     
-    @scala.inline
-    def copyWithin: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.copyWithin = "copyWithin".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.copyWithin]
+    inline def copyWithin: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.copyWithin = "copyWithin".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.copyWithin]
     
-    @scala.inline
-    def entries: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.entries = "entries".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.entries]
+    inline def entries: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.entries = "entries".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.entries]
     
-    @scala.inline
-    def every: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.every = "every".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.every]
+    inline def every: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.every = "every".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.every]
     
-    @scala.inline
-    def fill: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fill = "fill".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fill]
+    inline def fill: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fill = "fill".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.fill]
     
-    @scala.inline
-    def filter: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter = "filter".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter]
+    inline def filter: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter = "filter".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter]
     
-    @scala.inline
-    def find: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find = "find".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find]
+    inline def find: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find = "find".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.find]
     
-    @scala.inline
-    def findIndex: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex = "findIndex".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex]
+    inline def findIndex: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex = "findIndex".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.findIndex]
     
-    @scala.inline
-    def flat: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat = "flat".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat]
+    inline def flat: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat = "flat".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat]
     
-    @scala.inline
-    def flatMap: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flatMap = "flatMap".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flatMap]
+    inline def flatMap: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flatMap = "flatMap".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flatMap]
     
-    @scala.inline
-    def forEach: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.forEach = "forEach".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.forEach]
+    inline def forEach: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.forEach = "forEach".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.forEach]
     
-    @scala.inline
-    def includes: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.includes = "includes".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.includes]
+    inline def includes: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.includes = "includes".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.includes]
     
-    @scala.inline
-    def indexOf: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.indexOf = "indexOf".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.indexOf]
+    inline def indexOf: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.indexOf = "indexOf".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.indexOf]
     
-    @scala.inline
-    def join: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.join = "join".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.join]
+    inline def join: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.join = "join".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.join]
     
-    @scala.inline
-    def keys: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.keys = "keys".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.keys]
+    inline def keys: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.keys = "keys".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.keys]
     
-    @scala.inline
-    def lastIndexOf: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.lastIndexOf = "lastIndexOf".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.lastIndexOf]
+    inline def lastIndexOf: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.lastIndexOf = "lastIndexOf".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.lastIndexOf]
     
-    @scala.inline
-    def length: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.length = "length".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.length]
+    inline def length: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.length = "length".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.length]
     
-    @scala.inline
-    def map: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.map = "map".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.map]
+    inline def map: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.map = "map".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.map]
     
-    @scala.inline
-    def pop: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.pop = "pop".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.pop]
+    inline def pop: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.pop = "pop".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.pop]
     
-    @scala.inline
-    def push: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.push = "push".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.push]
+    inline def push: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.push = "push".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.push]
     
-    @scala.inline
-    def reduce: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduce = "reduce".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduce]
+    inline def reduce: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduce = "reduce".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduce]
     
-    @scala.inline
-    def reduceRight: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduceRight = "reduceRight".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduceRight]
+    inline def reduceRight: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduceRight = "reduceRight".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reduceRight]
     
-    @scala.inline
-    def reverse: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reverse = "reverse".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reverse]
+    inline def reverse: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reverse = "reverse".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.reverse]
     
-    @scala.inline
-    def set: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.set = "set".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.set]
+    inline def set: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.set = "set".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.set]
     
-    @scala.inline
-    def shift: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.shift = "shift".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.shift]
+    inline def shift: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.shift = "shift".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.shift]
     
-    @scala.inline
-    def slice: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.slice = "slice".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.slice]
+    inline def slice: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.slice = "slice".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.slice]
     
-    @scala.inline
-    def some: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.some = "some".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.some]
+    inline def some: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.some = "some".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.some]
     
-    @scala.inline
-    def sort: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sort = "sort".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sort]
+    inline def sort: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sort = "sort".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.sort]
     
-    @scala.inline
-    def splice: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice = "splice".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice]
+    inline def splice: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice = "splice".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice]
     
-    @scala.inline
-    def subarray: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray = "subarray".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray]
+    inline def subarray: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray = "subarray".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray]
     
-    @scala.inline
-    def unshift: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift = "unshift".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift]
+    inline def unshift: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift = "unshift".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift]
     
-    @scala.inline
-    def values: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.values = "values".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.values]
+    inline def values: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.values = "values".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.values]
   }
   
   type FlatVector = (js.Array[Boolean | Double]) | TypedArray
@@ -373,17 +312,13 @@ object distTypesMod {
   trait NumericDataType extends StObject
   object NumericDataType {
     
-    @scala.inline
-    def bool: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool = "bool".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool]
+    inline def bool: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool = "bool".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool]
     
-    @scala.inline
-    def complex64: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64 = "complex64".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64]
+    inline def complex64: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64 = "complex64".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64]
     
-    @scala.inline
-    def float32: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32 = "float32".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32]
+    inline def float32: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32 = "float32".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32]
     
-    @scala.inline
-    def int32: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32 = "int32".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32]
+    inline def int32: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32 = "int32".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32]
   }
   
   trait PixelData extends StObject {
@@ -396,23 +331,18 @@ object distTypesMod {
   }
   object PixelData {
     
-    @scala.inline
-    def apply(data: Uint8Array, height: Double, width: Double): PixelData = {
+    inline def apply(data: Uint8Array, height: Double, width: Double): PixelData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PixelData]
     }
     
-    @scala.inline
-    implicit class PixelDataMutableBuilder[Self <: PixelData] (val x: Self) extends AnyVal {
+    extension [Self <: PixelData](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -421,8 +351,7 @@ object distTypesMod {
        with /* index */ NumberDictionary[T | RecursiveArray[T]]
   object RecursiveArray {
     
-    @scala.inline
-    def apply[T /* <: js.Any */](): RecursiveArray[T] = {
+    inline def apply[T /* <: js.Any */](): RecursiveArray[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecursiveArray[T]]
     }
@@ -450,8 +379,7 @@ object distTypesMod {
   }
   object ShapeMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       R0: js.Array[Double],
       R1: js.Array[Double],
       R2: js.Tuple2[Double, Double],
@@ -464,35 +392,25 @@ object distTypesMod {
       __obj.asInstanceOf[ShapeMap]
     }
     
-    @scala.inline
-    implicit class ShapeMapMutableBuilder[Self <: ShapeMap] (val x: Self) extends AnyVal {
+    extension [Self <: ShapeMap](x: Self) {
       
-      @scala.inline
-      def setR0(value: js.Array[Double]): Self = StObject.set(x, "R0", value.asInstanceOf[js.Any])
+      inline def setR0(value: js.Array[Double]): Self = StObject.set(x, "R0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR0Varargs(value: Double*): Self = StObject.set(x, "R0", js.Array(value :_*))
+      inline def setR0Varargs(value: Double*): Self = StObject.set(x, "R0", js.Array(value :_*))
       
-      @scala.inline
-      def setR1(value: js.Array[Double]): Self = StObject.set(x, "R1", value.asInstanceOf[js.Any])
+      inline def setR1(value: js.Array[Double]): Self = StObject.set(x, "R1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value :_*))
+      inline def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value :_*))
       
-      @scala.inline
-      def setR2(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
+      inline def setR2(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR3(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "R3", value.asInstanceOf[js.Any])
+      inline def setR3(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "R3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR4(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "R4", value.asInstanceOf[js.Any])
+      inline def setR4(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "R4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR5(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "R5", value.asInstanceOf[js.Any])
+      inline def setR5(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "R5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR6(value: js.Tuple6[Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "R6", value.asInstanceOf[js.Any])
+      inline def setR6(value: js.Tuple6[Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "R6", value.asInstanceOf[js.Any])
     }
   }
   
@@ -510,29 +428,22 @@ object distTypesMod {
   }
   object SingleValueMap {
     
-    @scala.inline
-    def apply(bool: Boolean, complex64: Double, float32: Double, int32: Double, string: String): SingleValueMap = {
+    inline def apply(bool: Boolean, complex64: Double, float32: Double, int32: Double, string: String): SingleValueMap = {
       val __obj = js.Dynamic.literal(bool = bool.asInstanceOf[js.Any], complex64 = complex64.asInstanceOf[js.Any], float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
       __obj.asInstanceOf[SingleValueMap]
     }
     
-    @scala.inline
-    implicit class SingleValueMapMutableBuilder[Self <: SingleValueMap] (val x: Self) extends AnyVal {
+    extension [Self <: SingleValueMap](x: Self) {
       
-      @scala.inline
-      def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: Boolean): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplex64(value: Double): Self = StObject.set(x, "complex64", value.asInstanceOf[js.Any])
+      inline def setComplex64(value: Double): Self = StObject.set(x, "complex64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloat32(value: Double): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: Double): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt32(value: Double): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: Double): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
   

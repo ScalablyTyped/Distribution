@@ -28,8 +28,7 @@ trait WorkspaceEdit extends StObject {
 }
 object WorkspaceEdit {
   
-  @scala.inline
-  def apply(): WorkspaceEdit = {
+  inline def apply(): WorkspaceEdit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceEdit]
   }
@@ -38,25 +37,18 @@ object WorkspaceEdit {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean]
   
-  @scala.inline
-  implicit class WorkspaceEditMutableBuilder[Self <: WorkspaceEdit] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceEdit](x: Self) {
     
-    @scala.inline
-    def setChanges(value: StringDictionary[js.Array[TextEdit]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: StringDictionary[js.Array[TextEdit]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+    inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
-    @scala.inline
-    def setDocumentChanges(value: js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]): Self = StObject.set(x, "documentChanges", value.asInstanceOf[js.Any])
+    inline def setDocumentChanges(value: js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]): Self = StObject.set(x, "documentChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentChangesUndefined: Self = StObject.set(x, "documentChanges", js.undefined)
+    inline def setDocumentChangesUndefined: Self = StObject.set(x, "documentChanges", js.undefined)
     
-    @scala.inline
-    def setDocumentChangesVarargs(value: (TextDocumentEdit | CreateFile | RenameFile | DeleteFile)*): Self = StObject.set(x, "documentChanges", js.Array(value :_*))
+    inline def setDocumentChangesVarargs(value: (TextDocumentEdit | CreateFile | RenameFile | DeleteFile)*): Self = StObject.set(x, "documentChanges", js.Array(value :_*))
   }
 }

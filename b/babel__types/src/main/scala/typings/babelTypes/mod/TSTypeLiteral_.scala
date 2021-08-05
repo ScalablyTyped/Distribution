@@ -18,23 +18,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSTypeLiteral_ {
   
-  @scala.inline
-  def apply(members: js.Array[TSTypeElement]): TSTypeLiteral_ = {
+  inline def apply(members: js.Array[TSTypeElement]): TSTypeLiteral_ = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeLiteral")
     __obj.asInstanceOf[TSTypeLiteral_]
   }
   
-  @scala.inline
-  implicit class TSTypeLiteral_MutableBuilder[Self <: TSTypeLiteral_] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeLiteral_](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[TSTypeElement]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: TSTypeElement*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: TSTypeElement*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TSTypeLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSTypeLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

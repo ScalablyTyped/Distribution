@@ -38,49 +38,35 @@ trait TransformOperation extends StObject {
 }
 object TransformOperation {
   
-  @scala.inline
-  def apply(): TransformOperation = {
+  inline def apply(): TransformOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransformOperation]
   }
   
-  @scala.inline
-  implicit class TransformOperationMutableBuilder[Self <: TransformOperation] (val x: Self) extends AnyVal {
+  extension [Self <: TransformOperation](x: Self) {
     
-    @scala.inline
-    def setCastColumnTypeOperation(value: CastColumnTypeOperation): Self = StObject.set(x, "CastColumnTypeOperation", value.asInstanceOf[js.Any])
+    inline def setCastColumnTypeOperation(value: CastColumnTypeOperation): Self = StObject.set(x, "CastColumnTypeOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCastColumnTypeOperationUndefined: Self = StObject.set(x, "CastColumnTypeOperation", js.undefined)
+    inline def setCastColumnTypeOperationUndefined: Self = StObject.set(x, "CastColumnTypeOperation", js.undefined)
     
-    @scala.inline
-    def setCreateColumnsOperation(value: CreateColumnsOperation): Self = StObject.set(x, "CreateColumnsOperation", value.asInstanceOf[js.Any])
+    inline def setCreateColumnsOperation(value: CreateColumnsOperation): Self = StObject.set(x, "CreateColumnsOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateColumnsOperationUndefined: Self = StObject.set(x, "CreateColumnsOperation", js.undefined)
+    inline def setCreateColumnsOperationUndefined: Self = StObject.set(x, "CreateColumnsOperation", js.undefined)
     
-    @scala.inline
-    def setFilterOperation(value: FilterOperation): Self = StObject.set(x, "FilterOperation", value.asInstanceOf[js.Any])
+    inline def setFilterOperation(value: FilterOperation): Self = StObject.set(x, "FilterOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOperationUndefined: Self = StObject.set(x, "FilterOperation", js.undefined)
+    inline def setFilterOperationUndefined: Self = StObject.set(x, "FilterOperation", js.undefined)
     
-    @scala.inline
-    def setProjectOperation(value: ProjectOperation): Self = StObject.set(x, "ProjectOperation", value.asInstanceOf[js.Any])
+    inline def setProjectOperation(value: ProjectOperation): Self = StObject.set(x, "ProjectOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectOperationUndefined: Self = StObject.set(x, "ProjectOperation", js.undefined)
+    inline def setProjectOperationUndefined: Self = StObject.set(x, "ProjectOperation", js.undefined)
     
-    @scala.inline
-    def setRenameColumnOperation(value: RenameColumnOperation): Self = StObject.set(x, "RenameColumnOperation", value.asInstanceOf[js.Any])
+    inline def setRenameColumnOperation(value: RenameColumnOperation): Self = StObject.set(x, "RenameColumnOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameColumnOperationUndefined: Self = StObject.set(x, "RenameColumnOperation", js.undefined)
+    inline def setRenameColumnOperationUndefined: Self = StObject.set(x, "RenameColumnOperation", js.undefined)
     
-    @scala.inline
-    def setTagColumnOperation(value: TagColumnOperation): Self = StObject.set(x, "TagColumnOperation", value.asInstanceOf[js.Any])
+    inline def setTagColumnOperation(value: TagColumnOperation): Self = StObject.set(x, "TagColumnOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagColumnOperationUndefined: Self = StObject.set(x, "TagColumnOperation", js.undefined)
+    inline def setTagColumnOperationUndefined: Self = StObject.set(x, "TagColumnOperation", js.undefined)
   }
 }

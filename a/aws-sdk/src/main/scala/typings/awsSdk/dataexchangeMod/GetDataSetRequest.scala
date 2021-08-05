@@ -13,16 +13,13 @@ trait GetDataSetRequest extends StObject {
 }
 object GetDataSetRequest {
   
-  @scala.inline
-  def apply(DataSetId: string): GetDataSetRequest = {
+  inline def apply(DataSetId: string): GetDataSetRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataSetRequest]
   }
   
-  @scala.inline
-  implicit class GetDataSetRequestMutableBuilder[Self <: GetDataSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataSetRequest](x: Self) {
     
-    @scala.inline
-    def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
   }
 }

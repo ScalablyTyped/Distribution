@@ -26,8 +26,7 @@ trait ContributionType
 }
 object ContributionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     id: String,
     indexed: Boolean,
@@ -39,16 +38,12 @@ object ContributionType {
     __obj.asInstanceOf[ContributionType]
   }
   
-  @scala.inline
-  implicit class ContributionTypeMutableBuilder[Self <: ContributionType] (val x: Self) extends AnyVal {
+  extension [Self <: ContributionType](x: Self) {
     
-    @scala.inline
-    def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+    inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: StringDictionary[ContributionPropertyDescription]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[ContributionPropertyDescription]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ object mod {
     * Converts an array into a Node readable stream.
     * Elements get removed from the array when they are read from the stream.
     */
-  @scala.inline
-  def apply(input: js.Array[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply(input: js.Array[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Readable]
   
   @JSImport("streamify-array", JSImport.Namespace)
   @js.native

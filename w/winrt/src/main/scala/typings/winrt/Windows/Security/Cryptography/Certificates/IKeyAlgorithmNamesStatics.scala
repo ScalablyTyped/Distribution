@@ -24,8 +24,7 @@ trait IKeyAlgorithmNamesStatics extends StObject {
 }
 object IKeyAlgorithmNamesStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dsa: String,
     ecdh256: String,
     ecdh384: String,
@@ -39,31 +38,22 @@ object IKeyAlgorithmNamesStatics {
     __obj.asInstanceOf[IKeyAlgorithmNamesStatics]
   }
   
-  @scala.inline
-  implicit class IKeyAlgorithmNamesStaticsMutableBuilder[Self <: IKeyAlgorithmNamesStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyAlgorithmNamesStatics](x: Self) {
     
-    @scala.inline
-    def setDsa(value: String): Self = StObject.set(x, "dsa", value.asInstanceOf[js.Any])
+    inline def setDsa(value: String): Self = StObject.set(x, "dsa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdh256(value: String): Self = StObject.set(x, "ecdh256", value.asInstanceOf[js.Any])
+    inline def setEcdh256(value: String): Self = StObject.set(x, "ecdh256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdh384(value: String): Self = StObject.set(x, "ecdh384", value.asInstanceOf[js.Any])
+    inline def setEcdh384(value: String): Self = StObject.set(x, "ecdh384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdh521(value: String): Self = StObject.set(x, "ecdh521", value.asInstanceOf[js.Any])
+    inline def setEcdh521(value: String): Self = StObject.set(x, "ecdh521", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdsa256(value: String): Self = StObject.set(x, "ecdsa256", value.asInstanceOf[js.Any])
+    inline def setEcdsa256(value: String): Self = StObject.set(x, "ecdsa256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdsa384(value: String): Self = StObject.set(x, "ecdsa384", value.asInstanceOf[js.Any])
+    inline def setEcdsa384(value: String): Self = StObject.set(x, "ecdsa384", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcdsa521(value: String): Self = StObject.set(x, "ecdsa521", value.asInstanceOf[js.Any])
+    inline def setEcdsa521(value: String): Self = StObject.set(x, "ecdsa521", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsa(value: String): Self = StObject.set(x, "rsa", value.asInstanceOf[js.Any])
+    inline def setRsa(value: String): Self = StObject.set(x, "rsa", value.asInstanceOf[js.Any])
   }
 }

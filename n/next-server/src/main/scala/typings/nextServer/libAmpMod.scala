@@ -11,11 +11,8 @@ object libAmpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isInAmpMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAmpMode")().asInstanceOf[Boolean]
-  @scala.inline
-  def isInAmpMode(hasAmpFirstHybridHasQuery: AmpFirst): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAmpMode")(hasAmpFirstHybridHasQuery.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInAmpMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAmpMode")().asInstanceOf[Boolean]
+  inline def isInAmpMode(hasAmpFirstHybridHasQuery: AmpFirst): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAmpMode")(hasAmpFirstHybridHasQuery.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def useAmp(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useAmp")().asInstanceOf[Boolean]
+  inline def useAmp(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useAmp")().asInstanceOf[Boolean]
 }

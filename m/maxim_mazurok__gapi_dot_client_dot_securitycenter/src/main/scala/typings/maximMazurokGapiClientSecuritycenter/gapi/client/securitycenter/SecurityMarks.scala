@@ -26,29 +26,23 @@ trait SecurityMarks extends StObject {
 }
 object SecurityMarks {
   
-  @scala.inline
-  def apply(): SecurityMarks = {
+  inline def apply(): SecurityMarks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityMarks]
   }
   
-  @scala.inline
-  implicit class SecurityMarksMutableBuilder[Self <: SecurityMarks] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityMarks](x: Self) {
     
-    @scala.inline
-    def setMarks(
+    inline def setMarks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.SecurityMarks & TopLevel[js.Any]
     ): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+    inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait MaxIterations extends StObject {
 }
 object MaxIterations {
   
-  @scala.inline
-  def apply(): MaxIterations = {
+  inline def apply(): MaxIterations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxIterations]
   }
   
-  @scala.inline
-  implicit class MaxIterationsMutableBuilder[Self <: MaxIterations] (val x: Self) extends AnyVal {
+  extension [Self <: MaxIterations](x: Self) {
     
-    @scala.inline
-    def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
+    inline def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
+    inline def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
     
-    @scala.inline
-    def setSoftmaxFactor(value: Double): Self = StObject.set(x, "softmaxFactor", value.asInstanceOf[js.Any])
+    inline def setSoftmaxFactor(value: Double): Self = StObject.set(x, "softmaxFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftmaxFactorUndefined: Self = StObject.set(x, "softmaxFactor", js.undefined)
+    inline def setSoftmaxFactorUndefined: Self = StObject.set(x, "softmaxFactor", js.undefined)
   }
 }

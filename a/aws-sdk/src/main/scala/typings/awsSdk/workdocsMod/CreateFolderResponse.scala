@@ -13,19 +13,15 @@ trait CreateFolderResponse extends StObject {
 }
 object CreateFolderResponse {
   
-  @scala.inline
-  def apply(): CreateFolderResponse = {
+  inline def apply(): CreateFolderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFolderResponse]
   }
   
-  @scala.inline
-  implicit class CreateFolderResponseMutableBuilder[Self <: CreateFolderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFolderResponse](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: FolderMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FolderMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
   }
 }

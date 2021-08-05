@@ -18,28 +18,21 @@ trait ListUserImportJobsResponse extends StObject {
 }
 object ListUserImportJobsResponse {
   
-  @scala.inline
-  def apply(): ListUserImportJobsResponse = {
+  inline def apply(): ListUserImportJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUserImportJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListUserImportJobsResponseMutableBuilder[Self <: ListUserImportJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserImportJobsResponse](x: Self) {
     
-    @scala.inline
-    def setPaginationToken(value: PaginationKeyType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: PaginationKeyType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
-    @scala.inline
-    def setUserImportJobs(value: UserImportJobsListType): Self = StObject.set(x, "UserImportJobs", value.asInstanceOf[js.Any])
+    inline def setUserImportJobs(value: UserImportJobsListType): Self = StObject.set(x, "UserImportJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserImportJobsUndefined: Self = StObject.set(x, "UserImportJobs", js.undefined)
+    inline def setUserImportJobsUndefined: Self = StObject.set(x, "UserImportJobs", js.undefined)
     
-    @scala.inline
-    def setUserImportJobsVarargs(value: UserImportJobType*): Self = StObject.set(x, "UserImportJobs", js.Array(value :_*))
+    inline def setUserImportJobsVarargs(value: UserImportJobType*): Self = StObject.set(x, "UserImportJobs", js.Array(value :_*))
   }
 }

@@ -11,13 +11,12 @@ trait OlkBusinessCardControl extends StObject {
   
   var MousePointer: OlMousePointer
   
-  @JSName("Outlook.OlkBusinessCardControl_typekey")
+  /* private */ @JSName("Outlook.OlkBusinessCardControl_typekey")
   var OutlookDotOlkBusinessCardControl_typekey: OlkBusinessCardControl
 }
 object OlkBusinessCardControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MouseIcon: StdPicture,
     MousePointer: OlMousePointer,
     OutlookDotOlkBusinessCardControl_typekey: OlkBusinessCardControl
@@ -27,16 +26,12 @@ object OlkBusinessCardControl {
     __obj.asInstanceOf[OlkBusinessCardControl]
   }
   
-  @scala.inline
-  implicit class OlkBusinessCardControlMutableBuilder[Self <: OlkBusinessCardControl] (val x: Self) extends AnyVal {
+  extension [Self <: OlkBusinessCardControl](x: Self) {
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOlkBusinessCardControl_typekey(value: OlkBusinessCardControl): Self = StObject.set(x, "Outlook.OlkBusinessCardControl_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOlkBusinessCardControl_typekey(value: OlkBusinessCardControl): Self = StObject.set(x, "Outlook.OlkBusinessCardControl_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait TestScriptRuleset
 }
 object TestScriptRuleset {
   
-  @scala.inline
-  def apply(resource: Reference, rule: js.Array[TestScriptRulesetRule]): TestScriptRuleset = {
+  inline def apply(resource: Reference, rule: js.Array[TestScriptRulesetRule]): TestScriptRuleset = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptRuleset]
   }
   
-  @scala.inline
-  implicit class TestScriptRulesetMutableBuilder[Self <: TestScriptRuleset] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptRuleset](x: Self) {
     
-    @scala.inline
-    def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRule(value: js.Array[TestScriptRulesetRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: js.Array[TestScriptRulesetRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleVarargs(value: TestScriptRulesetRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
+    inline def setRuleVarargs(value: TestScriptRulesetRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait Schedule extends StObject {
 }
 object Schedule {
   
-  @scala.inline
-  def apply(): Schedule = {
+  inline def apply(): Schedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Schedule]
   }
   
-  @scala.inline
-  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
+  extension [Self <: Schedule](x: Self) {
     
-    @scala.inline
-    def setScheduleExpression(value: CronExpression): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
+    inline def setScheduleExpression(value: CronExpression): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleExpressionUndefined: Self = StObject.set(x, "ScheduleExpression", js.undefined)
+    inline def setScheduleExpressionUndefined: Self = StObject.set(x, "ScheduleExpression", js.undefined)
     
-    @scala.inline
-    def setState(value: ScheduleState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ScheduleState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

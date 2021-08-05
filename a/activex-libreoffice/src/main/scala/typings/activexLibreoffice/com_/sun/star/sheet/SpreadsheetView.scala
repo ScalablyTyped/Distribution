@@ -48,8 +48,7 @@ trait SpreadsheetView
      with XActivationBroadcaster
 object SpreadsheetView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveSheet: XSpreadsheet,
     Count: Double,
     ElementType: `type`,

@@ -15,31 +15,23 @@ trait PartialSearchBoxProvided extends StObject {
 }
 object PartialSearchBoxProvided {
   
-  @scala.inline
-  def apply(): PartialSearchBoxProvided = {
+  inline def apply(): PartialSearchBoxProvided = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSearchBoxProvided]
   }
   
-  @scala.inline
-  implicit class PartialSearchBoxProvidedMutableBuilder[Self <: PartialSearchBoxProvided] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSearchBoxProvided](x: Self) {
     
-    @scala.inline
-    def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
+    inline def setCurrentRefinement(value: String): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRefinementUndefined: Self = StObject.set(x, "currentRefinement", js.undefined)
+    inline def setCurrentRefinementUndefined: Self = StObject.set(x, "currentRefinement", js.undefined)
     
-    @scala.inline
-    def setIsSearchStalled(value: Boolean): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
+    inline def setIsSearchStalled(value: Boolean): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSearchStalledUndefined: Self = StObject.set(x, "isSearchStalled", js.undefined)
+    inline def setIsSearchStalledUndefined: Self = StObject.set(x, "isSearchStalled", js.undefined)
     
-    @scala.inline
-    def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
+    inline def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
   }
 }

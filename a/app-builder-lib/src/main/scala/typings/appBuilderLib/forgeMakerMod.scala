@@ -11,8 +11,7 @@ object forgeMakerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForge")(forgeOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForge")(forgeOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   trait ForgeOptions extends StObject {
     
@@ -20,17 +19,14 @@ object forgeMakerMod {
   }
   object ForgeOptions {
     
-    @scala.inline
-    def apply(dir: String): ForgeOptions = {
+    inline def apply(dir: String): ForgeOptions = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForgeOptions]
     }
     
-    @scala.inline
-    implicit class ForgeOptionsMutableBuilder[Self <: ForgeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ForgeOptions](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,8 +28,7 @@ trait PropertyDifference extends StObject {
 }
 object PropertyDifference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActualValue: PropertyValue,
     DifferenceType: DifferenceType,
     ExpectedValue: PropertyValue,
@@ -39,19 +38,14 @@ object PropertyDifference {
     __obj.asInstanceOf[PropertyDifference]
   }
   
-  @scala.inline
-  implicit class PropertyDifferenceMutableBuilder[Self <: PropertyDifference] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyDifference](x: Self) {
     
-    @scala.inline
-    def setActualValue(value: PropertyValue): Self = StObject.set(x, "ActualValue", value.asInstanceOf[js.Any])
+    inline def setActualValue(value: PropertyValue): Self = StObject.set(x, "ActualValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferenceType(value: DifferenceType): Self = StObject.set(x, "DifferenceType", value.asInstanceOf[js.Any])
+    inline def setDifferenceType(value: DifferenceType): Self = StObject.set(x, "DifferenceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedValue(value: PropertyValue): Self = StObject.set(x, "ExpectedValue", value.asInstanceOf[js.Any])
+    inline def setExpectedValue(value: PropertyValue): Self = StObject.set(x, "ExpectedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyPath(value: PropertyPath): Self = StObject.set(x, "PropertyPath", value.asInstanceOf[js.Any])
+    inline def setPropertyPath(value: PropertyPath): Self = StObject.set(x, "PropertyPath", value.asInstanceOf[js.Any])
   }
 }

@@ -61,94 +61,65 @@ trait NavigationContainerPropst extends StObject {
 }
 object NavigationContainerPropst {
   
-  @scala.inline
-  def apply(): NavigationContainerPropst = {
+  inline def apply(): NavigationContainerPropst = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationContainerPropst]
   }
   
-  @scala.inline
-  implicit class NavigationContainerPropstMutableBuilder[Self <: NavigationContainerPropst] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationContainerPropst](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDocumentTitle(value: DocumentTitleOptions): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
+    inline def setDocumentTitle(value: DocumentTitleOptions): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentTitleUndefined: Self = StObject.set(x, "documentTitle", js.undefined)
+    inline def setDocumentTitleUndefined: Self = StObject.set(x, "documentTitle", js.undefined)
     
-    @scala.inline
-    def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
-    @scala.inline
-    def setIndependent(value: Boolean): Self = StObject.set(x, "independent", value.asInstanceOf[js.Any])
+    inline def setIndependent(value: Boolean): Self = StObject.set(x, "independent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndependentUndefined: Self = StObject.set(x, "independent", js.undefined)
+    inline def setIndependentUndefined: Self = StObject.set(x, "independent", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: InitialState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: InitialState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNull: Self = StObject.set(x, "key", null)
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLinking(value: LinkingOptions): Self = StObject.set(x, "linking", value.asInstanceOf[js.Any])
+    inline def setLinking(value: LinkingOptions): Self = StObject.set(x, "linking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkingUndefined: Self = StObject.set(x, "linking", js.undefined)
+    inline def setLinkingUndefined: Self = StObject.set(x, "linking", js.undefined)
     
-    @scala.inline
-    def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
-    @scala.inline
-    def setOnStateChange(value: /* state */ js.UndefOr[NavigationState[ParamListBase]] => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+    inline def setOnStateChange(value: /* state */ js.UndefOr[NavigationState[ParamListBase]] => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+    inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
     
-    @scala.inline
-    def setOnUnhandledAction(value: /* action */ NavigationAction => Unit): Self = StObject.set(x, "onUnhandledAction", js.Any.fromFunction1(value))
+    inline def setOnUnhandledAction(value: /* action */ NavigationAction => Unit): Self = StObject.set(x, "onUnhandledAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUnhandledActionUndefined: Self = StObject.set(x, "onUnhandledAction", js.undefined)
+    inline def setOnUnhandledActionUndefined: Self = StObject.set(x, "onUnhandledAction", js.undefined)
     
-    @scala.inline
-    def setRef(value: Ref[NavigationContainerRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Ref[NavigationContainerRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefFunction1(value: /* instance */ NavigationContainerRef | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ NavigationContainerRef | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

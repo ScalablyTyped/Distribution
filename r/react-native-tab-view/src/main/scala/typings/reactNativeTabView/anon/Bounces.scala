@@ -10,16 +10,13 @@ trait Bounces extends StObject {
 }
 object Bounces {
   
-  @scala.inline
-  def apply(bounces: Boolean): Bounces = {
+  inline def apply(bounces: Boolean): Bounces = {
     val __obj = js.Dynamic.literal(bounces = bounces.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bounces]
   }
   
-  @scala.inline
-  implicit class BouncesMutableBuilder[Self <: Bounces] (val x: Self) extends AnyVal {
+  extension [Self <: Bounces](x: Self) {
     
-    @scala.inline
-    def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
+    inline def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
   }
 }

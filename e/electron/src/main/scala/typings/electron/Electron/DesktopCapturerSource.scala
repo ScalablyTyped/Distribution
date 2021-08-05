@@ -46,28 +46,21 @@ trait DesktopCapturerSource extends StObject {
 }
 object DesktopCapturerSource {
   
-  @scala.inline
-  def apply(appIcon: NativeImage_, display_id: String, id: String, name: String, thumbnail: NativeImage_): DesktopCapturerSource = {
+  inline def apply(appIcon: NativeImage_, display_id: String, id: String, name: String, thumbnail: NativeImage_): DesktopCapturerSource = {
     val __obj = js.Dynamic.literal(appIcon = appIcon.asInstanceOf[js.Any], display_id = display_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesktopCapturerSource]
   }
   
-  @scala.inline
-  implicit class DesktopCapturerSourceMutableBuilder[Self <: DesktopCapturerSource] (val x: Self) extends AnyVal {
+  extension [Self <: DesktopCapturerSource](x: Self) {
     
-    @scala.inline
-    def setAppIcon(value: NativeImage_): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
+    inline def setAppIcon(value: NativeImage_): Self = StObject.set(x, "appIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_id(value: String): Self = StObject.set(x, "display_id", value.asInstanceOf[js.Any])
+    inline def setDisplay_id(value: String): Self = StObject.set(x, "display_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: NativeImage_): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: NativeImage_): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

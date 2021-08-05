@@ -16,31 +16,23 @@ trait PasswordGrantOptions extends StObject {
 }
 object PasswordGrantOptions {
   
-  @scala.inline
-  def apply(password: String, username: String): PasswordGrantOptions = {
+  inline def apply(password: String, username: String): PasswordGrantOptions = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordGrantOptions]
   }
   
-  @scala.inline
-  implicit class PasswordGrantOptionsMutableBuilder[Self <: PasswordGrantOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordGrantOptions](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+    inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+    inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

@@ -73,91 +73,63 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAtime(value: Atime): Self = StObject.set(x, "Atime", value.asInstanceOf[js.Any])
+    inline def setAtime(value: Atime): Self = StObject.set(x, "Atime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtimeUndefined: Self = StObject.set(x, "Atime", js.undefined)
+    inline def setAtimeUndefined: Self = StObject.set(x, "Atime", js.undefined)
     
-    @scala.inline
-    def setBytesPerSecond(value: BytesPerSecond): Self = StObject.set(x, "BytesPerSecond", value.asInstanceOf[js.Any])
+    inline def setBytesPerSecond(value: BytesPerSecond): Self = StObject.set(x, "BytesPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesPerSecondUndefined: Self = StObject.set(x, "BytesPerSecond", js.undefined)
+    inline def setBytesPerSecondUndefined: Self = StObject.set(x, "BytesPerSecond", js.undefined)
     
-    @scala.inline
-    def setGid(value: Gid): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
+    inline def setGid(value: Gid): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGidUndefined: Self = StObject.set(x, "Gid", js.undefined)
+    inline def setGidUndefined: Self = StObject.set(x, "Gid", js.undefined)
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
     
-    @scala.inline
-    def setMtime(value: Mtime): Self = StObject.set(x, "Mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Mtime): Self = StObject.set(x, "Mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtimeUndefined: Self = StObject.set(x, "Mtime", js.undefined)
+    inline def setMtimeUndefined: Self = StObject.set(x, "Mtime", js.undefined)
     
-    @scala.inline
-    def setOverwriteMode(value: OverwriteMode): Self = StObject.set(x, "OverwriteMode", value.asInstanceOf[js.Any])
+    inline def setOverwriteMode(value: OverwriteMode): Self = StObject.set(x, "OverwriteMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteModeUndefined: Self = StObject.set(x, "OverwriteMode", js.undefined)
+    inline def setOverwriteModeUndefined: Self = StObject.set(x, "OverwriteMode", js.undefined)
     
-    @scala.inline
-    def setPosixPermissions(value: PosixPermissions): Self = StObject.set(x, "PosixPermissions", value.asInstanceOf[js.Any])
+    inline def setPosixPermissions(value: PosixPermissions): Self = StObject.set(x, "PosixPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosixPermissionsUndefined: Self = StObject.set(x, "PosixPermissions", js.undefined)
+    inline def setPosixPermissionsUndefined: Self = StObject.set(x, "PosixPermissions", js.undefined)
     
-    @scala.inline
-    def setPreserveDeletedFiles(value: PreserveDeletedFiles): Self = StObject.set(x, "PreserveDeletedFiles", value.asInstanceOf[js.Any])
+    inline def setPreserveDeletedFiles(value: PreserveDeletedFiles): Self = StObject.set(x, "PreserveDeletedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveDeletedFilesUndefined: Self = StObject.set(x, "PreserveDeletedFiles", js.undefined)
+    inline def setPreserveDeletedFilesUndefined: Self = StObject.set(x, "PreserveDeletedFiles", js.undefined)
     
-    @scala.inline
-    def setPreserveDevices(value: PreserveDevices): Self = StObject.set(x, "PreserveDevices", value.asInstanceOf[js.Any])
+    inline def setPreserveDevices(value: PreserveDevices): Self = StObject.set(x, "PreserveDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveDevicesUndefined: Self = StObject.set(x, "PreserveDevices", js.undefined)
+    inline def setPreserveDevicesUndefined: Self = StObject.set(x, "PreserveDevices", js.undefined)
     
-    @scala.inline
-    def setTaskQueueing(value: TaskQueueing): Self = StObject.set(x, "TaskQueueing", value.asInstanceOf[js.Any])
+    inline def setTaskQueueing(value: TaskQueueing): Self = StObject.set(x, "TaskQueueing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskQueueingUndefined: Self = StObject.set(x, "TaskQueueing", js.undefined)
+    inline def setTaskQueueingUndefined: Self = StObject.set(x, "TaskQueueing", js.undefined)
     
-    @scala.inline
-    def setTransferMode(value: TransferMode): Self = StObject.set(x, "TransferMode", value.asInstanceOf[js.Any])
+    inline def setTransferMode(value: TransferMode): Self = StObject.set(x, "TransferMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferModeUndefined: Self = StObject.set(x, "TransferMode", js.undefined)
+    inline def setTransferModeUndefined: Self = StObject.set(x, "TransferMode", js.undefined)
     
-    @scala.inline
-    def setUid(value: Uid): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: Uid): Self = StObject.set(x, "Uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "Uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "Uid", js.undefined)
     
-    @scala.inline
-    def setVerifyMode(value: VerifyMode): Self = StObject.set(x, "VerifyMode", value.asInstanceOf[js.Any])
+    inline def setVerifyMode(value: VerifyMode): Self = StObject.set(x, "VerifyMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyModeUndefined: Self = StObject.set(x, "VerifyMode", js.undefined)
+    inline def setVerifyModeUndefined: Self = StObject.set(x, "VerifyMode", js.undefined)
   }
 }

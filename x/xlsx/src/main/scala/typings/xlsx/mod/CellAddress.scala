@@ -16,19 +16,15 @@ trait CellAddress
 }
 object CellAddress {
   
-  @scala.inline
-  def apply(c: Double, r: Double): CellAddress = {
+  inline def apply(c: Double, r: Double): CellAddress = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellAddress]
   }
   
-  @scala.inline
-  implicit class CellAddressMutableBuilder[Self <: CellAddress] (val x: Self) extends AnyVal {
+  extension [Self <: CellAddress](x: Self) {
     
-    @scala.inline
-    def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

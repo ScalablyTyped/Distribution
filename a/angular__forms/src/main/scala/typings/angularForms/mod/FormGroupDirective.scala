@@ -19,17 +19,17 @@ class FormGroupDirective protected ()
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
   ) = this()
   
-  var _checkFormPresent: js.Any = js.native
+  /* private */ var _checkFormPresent: js.Any = js.native
   
   /**
     * Reference to an old form group input value, which is needed to cleanup old instance in case it
     * was replaced with a new one.
     */
-  var _oldForm: js.Any = js.native
+  /* private */ var _oldForm: js.Any = js.native
   
-  var _updateRegistrations: js.Any = js.native
+  /* private */ var _updateRegistrations: js.Any = js.native
   
-  var _updateValidators: js.Any = js.native
+  /* private */ var _updateValidators: js.Any = js.native
   
   /**
     * @description
@@ -70,7 +70,7 @@ class FormGroupDirective protected ()
     */
   def addFormGroup(dir: FormGroupName): Unit = js.native
   
-  var asyncValidators: js.Any = js.native
+  /* private */ var asyncValidators: js.Any = js.native
   
   /**
     * @description
@@ -225,5 +225,5 @@ class FormGroupDirective protected ()
   /* CompleteClass */
   override def updateModel(dir: NgControl, value: js.Any): Unit = js.native
   
-  var validators: js.Any = js.native
+  /* private */ var validators: js.Any = js.native
 }

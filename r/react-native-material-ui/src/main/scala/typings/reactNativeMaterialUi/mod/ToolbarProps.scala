@@ -31,82 +31,57 @@ trait ToolbarProps extends StObject {
 }
 object ToolbarProps {
   
-  @scala.inline
-  def apply(): ToolbarProps = {
+  inline def apply(): ToolbarProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolbarProps]
   }
   
-  @scala.inline
-  implicit class ToolbarPropsMutableBuilder[Self <: ToolbarProps] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarProps](x: Self) {
     
-    @scala.inline
-    def setCenterElement(value: Element | String): Self = StObject.set(x, "centerElement", value.asInstanceOf[js.Any])
+    inline def setCenterElement(value: Element | String): Self = StObject.set(x, "centerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterElementUndefined: Self = StObject.set(x, "centerElement", js.undefined)
+    inline def setCenterElementUndefined: Self = StObject.set(x, "centerElement", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setIsSearchActive(value: Boolean): Self = StObject.set(x, "isSearchActive", value.asInstanceOf[js.Any])
+    inline def setIsSearchActive(value: Boolean): Self = StObject.set(x, "isSearchActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSearchActiveUndefined: Self = StObject.set(x, "isSearchActive", js.undefined)
+    inline def setIsSearchActiveUndefined: Self = StObject.set(x, "isSearchActive", js.undefined)
     
-    @scala.inline
-    def setLeftElement(value: Element | String): Self = StObject.set(x, "leftElement", value.asInstanceOf[js.Any])
+    inline def setLeftElement(value: Element | String): Self = StObject.set(x, "leftElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftElementUndefined: Self = StObject.set(x, "leftElement", js.undefined)
+    inline def setLeftElementUndefined: Self = StObject.set(x, "leftElement", js.undefined)
     
-    @scala.inline
-    def setOnLeftElementPress(value: () => Unit): Self = StObject.set(x, "onLeftElementPress", js.Any.fromFunction0(value))
+    inline def setOnLeftElementPress(value: () => Unit): Self = StObject.set(x, "onLeftElementPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLeftElementPressUndefined: Self = StObject.set(x, "onLeftElementPress", js.undefined)
+    inline def setOnLeftElementPressUndefined: Self = StObject.set(x, "onLeftElementPress", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setOnRightElementPress(value: /* e */ RightElementPressEvent => Unit): Self = StObject.set(x, "onRightElementPress", js.Any.fromFunction1(value))
+    inline def setOnRightElementPress(value: /* e */ RightElementPressEvent => Unit): Self = StObject.set(x, "onRightElementPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRightElementPressUndefined: Self = StObject.set(x, "onRightElementPress", js.undefined)
+    inline def setOnRightElementPressUndefined: Self = StObject.set(x, "onRightElementPress", js.undefined)
     
-    @scala.inline
-    def setRightElement(value: Element | String | js.Array[String] | ToolBarRightElement): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
+    inline def setRightElement(value: Element | String | js.Array[String] | ToolBarRightElement): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
+    inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
     
-    @scala.inline
-    def setRightElementVarargs(value: String*): Self = StObject.set(x, "rightElement", js.Array(value :_*))
+    inline def setRightElementVarargs(value: String*): Self = StObject.set(x, "rightElement", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchable(value: Searchable): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+    inline def setSearchable(value: Searchable): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+    inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ToolbarStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ToolbarStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

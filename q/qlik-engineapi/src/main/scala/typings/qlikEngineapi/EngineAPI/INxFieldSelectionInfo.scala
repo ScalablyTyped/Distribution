@@ -21,19 +21,15 @@ trait INxFieldSelectionInfo extends StObject {
 }
 object INxFieldSelectionInfo {
   
-  @scala.inline
-  def apply(qFieldSelectionMode: FieldSelectionModeType, qName: String): INxFieldSelectionInfo = {
+  inline def apply(qFieldSelectionMode: FieldSelectionModeType, qName: String): INxFieldSelectionInfo = {
     val __obj = js.Dynamic.literal(qFieldSelectionMode = qFieldSelectionMode.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxFieldSelectionInfo]
   }
   
-  @scala.inline
-  implicit class INxFieldSelectionInfoMutableBuilder[Self <: INxFieldSelectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: INxFieldSelectionInfo](x: Self) {
     
-    @scala.inline
-    def setQFieldSelectionMode(value: FieldSelectionModeType): Self = StObject.set(x, "qFieldSelectionMode", value.asInstanceOf[js.Any])
+    inline def setQFieldSelectionMode(value: FieldSelectionModeType): Self = StObject.set(x, "qFieldSelectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

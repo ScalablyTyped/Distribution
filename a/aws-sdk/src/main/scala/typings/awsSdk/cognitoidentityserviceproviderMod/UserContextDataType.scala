@@ -13,19 +13,15 @@ trait UserContextDataType extends StObject {
 }
 object UserContextDataType {
   
-  @scala.inline
-  def apply(): UserContextDataType = {
+  inline def apply(): UserContextDataType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserContextDataType]
   }
   
-  @scala.inline
-  implicit class UserContextDataTypeMutableBuilder[Self <: UserContextDataType] (val x: Self) extends AnyVal {
+  extension [Self <: UserContextDataType](x: Self) {
     
-    @scala.inline
-    def setEncodedData(value: StringType): Self = StObject.set(x, "EncodedData", value.asInstanceOf[js.Any])
+    inline def setEncodedData(value: StringType): Self = StObject.set(x, "EncodedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedDataUndefined: Self = StObject.set(x, "EncodedData", js.undefined)
+    inline def setEncodedDataUndefined: Self = StObject.set(x, "EncodedData", js.undefined)
   }
 }

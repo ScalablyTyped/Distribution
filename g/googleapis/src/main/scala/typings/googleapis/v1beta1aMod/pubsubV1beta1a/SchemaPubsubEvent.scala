@@ -33,37 +33,27 @@ trait SchemaPubsubEvent extends StObject {
 }
 object SchemaPubsubEvent {
   
-  @scala.inline
-  def apply(): SchemaPubsubEvent = {
+  inline def apply(): SchemaPubsubEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPubsubEvent]
   }
   
-  @scala.inline
-  implicit class SchemaPubsubEventMutableBuilder[Self <: SchemaPubsubEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPubsubEvent](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setMessage(value: SchemaPubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: SchemaPubsubMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
   }
 }

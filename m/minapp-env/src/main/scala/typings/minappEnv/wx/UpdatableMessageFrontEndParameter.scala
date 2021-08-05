@@ -15,19 +15,15 @@ trait UpdatableMessageFrontEndParameter extends StObject {
 }
 object UpdatableMessageFrontEndParameter {
   
-  @scala.inline
-  def apply(name: String, value: String): UpdatableMessageFrontEndParameter = {
+  inline def apply(name: String, value: String): UpdatableMessageFrontEndParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatableMessageFrontEndParameter]
   }
   
-  @scala.inline
-  implicit class UpdatableMessageFrontEndParameterMutableBuilder[Self <: UpdatableMessageFrontEndParameter] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatableMessageFrontEndParameter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DockingPanelOptions
 }
 object DockingPanelOptions {
   
-  @scala.inline
-  def apply(): DockingPanelOptions = {
+  inline def apply(): DockingPanelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DockingPanelOptions]
   }
   
-  @scala.inline
-  implicit class DockingPanelOptionsMutableBuilder[Self <: DockingPanelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DockingPanelOptions](x: Self) {
     
-    @scala.inline
-    def setLocalizeTitle(value: Boolean): Self = StObject.set(x, "localizeTitle", value.asInstanceOf[js.Any])
+    inline def setLocalizeTitle(value: Boolean): Self = StObject.set(x, "localizeTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizeTitleUndefined: Self = StObject.set(x, "localizeTitle", js.undefined)
+    inline def setLocalizeTitleUndefined: Self = StObject.set(x, "localizeTitle", js.undefined)
   }
 }

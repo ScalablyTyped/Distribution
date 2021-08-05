@@ -13,16 +13,13 @@ trait DescribePredictorRequest extends StObject {
 }
 object DescribePredictorRequest {
   
-  @scala.inline
-  def apply(PredictorArn: Arn): DescribePredictorRequest = {
+  inline def apply(PredictorArn: Arn): DescribePredictorRequest = {
     val __obj = js.Dynamic.literal(PredictorArn = PredictorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePredictorRequest]
   }
   
-  @scala.inline
-  implicit class DescribePredictorRequestMutableBuilder[Self <: DescribePredictorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePredictorRequest](x: Self) {
     
-    @scala.inline
-    def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
+    inline def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
   }
 }

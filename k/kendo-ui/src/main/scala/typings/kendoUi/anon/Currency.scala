@@ -24,8 +24,7 @@ trait Currency extends StObject {
 }
 object Currency {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Comma: String,
     Dot: String,
     currency: Decimals,
@@ -40,34 +39,24 @@ object Currency {
     __obj.asInstanceOf[Currency]
   }
   
-  @scala.inline
-  implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+  extension [Self <: Currency](x: Self) {
     
-    @scala.inline
-    def setComma(value: String): Self = StObject.set(x, ",", value.asInstanceOf[js.Any])
+    inline def setComma(value: String): Self = StObject.set(x, ",", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: Decimals): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: Decimals): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDot(value: String): Self = StObject.set(x, ".", value.asInstanceOf[js.Any])
+    inline def setDot(value: String): Self = StObject.set(x, ".", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSize(value: js.Array[Double]): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
+    inline def setGroupSize(value: js.Array[Double]): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupSizeVarargs(value: Double*): Self = StObject.set(x, "groupSize", js.Array(value :_*))
+    inline def setGroupSizeVarargs(value: Double*): Self = StObject.set(x, "groupSize", js.Array(value :_*))
     
-    @scala.inline
-    def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+    inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
     
-    @scala.inline
-    def setPercent(value: Decimals): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Decimals): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
   }
 }

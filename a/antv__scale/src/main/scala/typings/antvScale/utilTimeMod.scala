@@ -34,14 +34,11 @@ object utilTimeMod {
   @js.native
   val YEAR: Double = js.native
   
-  @scala.inline
-  def getTickInterval(min: Double, max: Double, tickCount: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickInterval")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[Interval]
+  inline def getTickInterval(min: Double, max: Double, tickCount: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickInterval")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], tickCount.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @scala.inline
-  def timeFormat(time: js.Any, mask: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(time.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def timeFormat(time: js.Any, mask: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(time.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toTimeStamp(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toTimeStamp")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toTimeStamp(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toTimeStamp")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   type Interval = js.Tuple2[String, Double]
 }

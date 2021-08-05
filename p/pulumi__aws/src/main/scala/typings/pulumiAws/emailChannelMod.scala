@@ -70,21 +70,16 @@ object emailChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EmailChannelState): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EmailChannelState, opts: CustomResourceOptions): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
+    inline def get(name: String, id: Input[ID]): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
+    inline def get(name: String, id: Input[ID], state: EmailChannelState): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
+    inline def get(name: String, id: Input[ID], state: EmailChannelState, opts: CustomResourceOptions): EmailChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EmailChannel]
     
     /**
       * Returns true if the given object is an instance of EmailChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ Boolean]
   }
   
   trait EmailChannelArgs extends StObject {
@@ -116,8 +111,7 @@ object emailChannelMod {
   }
   object EmailChannelArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applicationId: Input[String],
       fromAddress: Input[String],
       identity: Input[String],
@@ -127,26 +121,19 @@ object emailChannelMod {
       __obj.asInstanceOf[EmailChannelArgs]
     }
     
-    @scala.inline
-    implicit class EmailChannelArgsMutableBuilder[Self <: EmailChannelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EmailChannelArgs](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFromAddress(value: Input[String]): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
+      inline def setFromAddress(value: Input[String]): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,50 +171,36 @@ object emailChannelMod {
   }
   object EmailChannelState {
     
-    @scala.inline
-    def apply(): EmailChannelState = {
+    inline def apply(): EmailChannelState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmailChannelState]
     }
     
-    @scala.inline
-    implicit class EmailChannelStateMutableBuilder[Self <: EmailChannelState] (val x: Self) extends AnyVal {
+    extension [Self <: EmailChannelState](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFromAddress(value: Input[String]): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
+      inline def setFromAddress(value: Input[String]): Self = StObject.set(x, "fromAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromAddressUndefined: Self = StObject.set(x, "fromAddress", js.undefined)
+      inline def setFromAddressUndefined: Self = StObject.set(x, "fromAddress", js.undefined)
       
-      @scala.inline
-      def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Input[String]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+      inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
       
-      @scala.inline
-      def setMessagesPerSecond(value: Input[Double]): Self = StObject.set(x, "messagesPerSecond", value.asInstanceOf[js.Any])
+      inline def setMessagesPerSecond(value: Input[Double]): Self = StObject.set(x, "messagesPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesPerSecondUndefined: Self = StObject.set(x, "messagesPerSecond", js.undefined)
+      inline def setMessagesPerSecondUndefined: Self = StObject.set(x, "messagesPerSecond", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
 }

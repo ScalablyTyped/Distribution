@@ -17,25 +17,19 @@ trait LineStyle extends StObject {
 }
 object LineStyle {
   
-  @scala.inline
-  def apply(): LineStyle = {
+  inline def apply(): LineStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineStyle]
   }
   
-  @scala.inline
-  implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
+  extension [Self <: LineStyle](x: Self) {
     
-    @scala.inline
-    def setLineStyle(value: typings.echarts.echarts.EChartOption.LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: typings.echarts.echarts.EChartOption.LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

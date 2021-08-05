@@ -305,19 +305,14 @@ object mod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def DEBUG: `3` = 3.asInstanceOf[`3`]
+    inline def DEBUG: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def ERROR: typings.ftpd.ftpdNumbers.`0` = 0.asInstanceOf[typings.ftpd.ftpdNumbers.`0`]
+    inline def ERROR: typings.ftpd.ftpdNumbers.`0` = 0.asInstanceOf[typings.ftpd.ftpdNumbers.`0`]
     
-    @scala.inline
-    def INFO: `2` = 2.asInstanceOf[`2`]
+    inline def INFO: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def TRACE: `4` = 4.asInstanceOf[`4`]
+    inline def TRACE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def WARN: `1` = 1.asInstanceOf[`1`]
+    inline def WARN: `1` = 1.asInstanceOf[`1`]
   }
 }

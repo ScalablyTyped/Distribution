@@ -13,8 +13,7 @@ object castMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cast(args: AttrsBackend): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def cast(args: AttrsBackend): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("cast")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Cast", "castConfig")
   @js.native

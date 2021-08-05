@@ -16,8 +16,7 @@ trait ForRenderListExpression
 }
 object ForRenderListExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Tuple2[ExpressionNode, ForIteratorExpression],
     callee: js.Symbol,
     loc: SourceLocation
@@ -27,13 +26,10 @@ object ForRenderListExpression {
     __obj.asInstanceOf[ForRenderListExpression]
   }
   
-  @scala.inline
-  implicit class ForRenderListExpressionMutableBuilder[Self <: ForRenderListExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ForRenderListExpression](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Tuple2[ExpressionNode, ForIteratorExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Tuple2[ExpressionNode, ForIteratorExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallee(value: js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
   }
 }

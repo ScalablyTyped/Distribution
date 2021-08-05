@@ -18,25 +18,19 @@ trait SchemaInvoiceSummaryAdditionalChargeSummary extends StObject {
 }
 object SchemaInvoiceSummaryAdditionalChargeSummary {
   
-  @scala.inline
-  def apply(): SchemaInvoiceSummaryAdditionalChargeSummary = {
+  inline def apply(): SchemaInvoiceSummaryAdditionalChargeSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInvoiceSummaryAdditionalChargeSummary]
   }
   
-  @scala.inline
-  implicit class SchemaInvoiceSummaryAdditionalChargeSummaryMutableBuilder[Self <: SchemaInvoiceSummaryAdditionalChargeSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInvoiceSummaryAdditionalChargeSummary](x: Self) {
     
-    @scala.inline
-    def setTotalAmount(value: SchemaAmount): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
+    inline def setTotalAmount(value: SchemaAmount): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
+    inline def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

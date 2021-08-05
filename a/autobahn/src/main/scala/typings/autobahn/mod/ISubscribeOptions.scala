@@ -12,25 +12,19 @@ trait ISubscribeOptions extends StObject {
 }
 object ISubscribeOptions {
   
-  @scala.inline
-  def apply(): ISubscribeOptions = {
+  inline def apply(): ISubscribeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISubscribeOptions]
   }
   
-  @scala.inline
-  implicit class ISubscribeOptionsMutableBuilder[Self <: ISubscribeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISubscribeOptions](x: Self) {
     
-    @scala.inline
-    def setGet_retained(value: Boolean): Self = StObject.set(x, "get_retained", value.asInstanceOf[js.Any])
+    inline def setGet_retained(value: Boolean): Self = StObject.set(x, "get_retained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet_retainedUndefined: Self = StObject.set(x, "get_retained", js.undefined)
+    inline def setGet_retainedUndefined: Self = StObject.set(x, "get_retained", js.undefined)
     
-    @scala.inline
-    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
   }
 }

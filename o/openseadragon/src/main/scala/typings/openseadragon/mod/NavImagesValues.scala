@@ -16,25 +16,19 @@ trait NavImagesValues extends StObject {
 }
 object NavImagesValues {
   
-  @scala.inline
-  def apply(DOWN: String, GROUP: String, HOVER: String, REST: String): NavImagesValues = {
+  inline def apply(DOWN: String, GROUP: String, HOVER: String, REST: String): NavImagesValues = {
     val __obj = js.Dynamic.literal(DOWN = DOWN.asInstanceOf[js.Any], GROUP = GROUP.asInstanceOf[js.Any], HOVER = HOVER.asInstanceOf[js.Any], REST = REST.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavImagesValues]
   }
   
-  @scala.inline
-  implicit class NavImagesValuesMutableBuilder[Self <: NavImagesValues] (val x: Self) extends AnyVal {
+  extension [Self <: NavImagesValues](x: Self) {
     
-    @scala.inline
-    def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
+    inline def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGROUP(value: String): Self = StObject.set(x, "GROUP", value.asInstanceOf[js.Any])
+    inline def setGROUP(value: String): Self = StObject.set(x, "GROUP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHOVER(value: String): Self = StObject.set(x, "HOVER", value.asInstanceOf[js.Any])
+    inline def setHOVER(value: String): Self = StObject.set(x, "HOVER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREST(value: String): Self = StObject.set(x, "REST", value.asInstanceOf[js.Any])
+    inline def setREST(value: String): Self = StObject.set(x, "REST", value.asInstanceOf[js.Any])
   }
 }

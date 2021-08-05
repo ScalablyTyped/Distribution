@@ -16,15 +16,11 @@ trait SaxesAttributeNSIncomplete
      with AttributeEventForOptions[js.Any]
 object SaxesAttributeNSIncomplete {
   
-  @scala.inline
-  def local: typings.saxes.saxesStrings.local = "local".asInstanceOf[typings.saxes.saxesStrings.local]
+  inline def local: typings.saxes.saxesStrings.local = "local".asInstanceOf[typings.saxes.saxesStrings.local]
   
-  @scala.inline
-  def name: typings.saxes.saxesStrings.name = "name".asInstanceOf[typings.saxes.saxesStrings.name]
+  inline def name: typings.saxes.saxesStrings.name = "name".asInstanceOf[typings.saxes.saxesStrings.name]
   
-  @scala.inline
-  def prefix: typings.saxes.saxesStrings.prefix = "prefix".asInstanceOf[typings.saxes.saxesStrings.prefix]
+  inline def prefix: typings.saxes.saxesStrings.prefix = "prefix".asInstanceOf[typings.saxes.saxesStrings.prefix]
   
-  @scala.inline
-  def value: typings.saxes.saxesStrings.value = "value".asInstanceOf[typings.saxes.saxesStrings.value]
+  inline def value: typings.saxes.saxesStrings.value = "value".asInstanceOf[typings.saxes.saxesStrings.value]
 }

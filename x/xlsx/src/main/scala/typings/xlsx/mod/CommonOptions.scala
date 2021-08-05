@@ -47,49 +47,35 @@ trait CommonOptions extends StObject {
 }
 object CommonOptions {
   
-  @scala.inline
-  def apply(): CommonOptions = {
+  inline def apply(): CommonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonOptions]
   }
   
-  @scala.inline
-  implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommonOptions](x: Self) {
     
-    @scala.inline
-    def setBookVBA(value: Boolean): Self = StObject.set(x, "bookVBA", value.asInstanceOf[js.Any])
+    inline def setBookVBA(value: Boolean): Self = StObject.set(x, "bookVBA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookVBAUndefined: Self = StObject.set(x, "bookVBA", js.undefined)
+    inline def setBookVBAUndefined: Self = StObject.set(x, "bookVBA", js.undefined)
     
-    @scala.inline
-    def setCellDates(value: Boolean): Self = StObject.set(x, "cellDates", value.asInstanceOf[js.Any])
+    inline def setCellDates(value: Boolean): Self = StObject.set(x, "cellDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellDatesUndefined: Self = StObject.set(x, "cellDates", js.undefined)
+    inline def setCellDatesUndefined: Self = StObject.set(x, "cellDates", js.undefined)
     
-    @scala.inline
-    def setCellStyles(value: Boolean): Self = StObject.set(x, "cellStyles", value.asInstanceOf[js.Any])
+    inline def setCellStyles(value: Boolean): Self = StObject.set(x, "cellStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellStylesUndefined: Self = StObject.set(x, "cellStyles", js.undefined)
+    inline def setCellStylesUndefined: Self = StObject.set(x, "cellStyles", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setSheetStubs(value: Boolean): Self = StObject.set(x, "sheetStubs", value.asInstanceOf[js.Any])
+    inline def setSheetStubs(value: Boolean): Self = StObject.set(x, "sheetStubs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetStubsUndefined: Self = StObject.set(x, "sheetStubs", js.undefined)
+    inline def setSheetStubsUndefined: Self = StObject.set(x, "sheetStubs", js.undefined)
     
-    @scala.inline
-    def setWTF(value: Boolean): Self = StObject.set(x, "WTF", value.asInstanceOf[js.Any])
+    inline def setWTF(value: Boolean): Self = StObject.set(x, "WTF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWTFUndefined: Self = StObject.set(x, "WTF", js.undefined)
+    inline def setWTFUndefined: Self = StObject.set(x, "WTF", js.undefined)
   }
 }

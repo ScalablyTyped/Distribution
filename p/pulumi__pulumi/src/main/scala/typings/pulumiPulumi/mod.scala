@@ -80,8 +80,7 @@ object mod {
       * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi", "Config")
@@ -129,8 +128,7 @@ object mod {
       * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi", "DependencyProviderResource")
@@ -180,10 +178,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def register(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[js.Promise[js.UndefOr[String]]]
-    @scala.inline
-    def register(provider: typings.pulumiPulumi.resourceMod.ProviderResource): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(provider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+    inline def register(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+    inline def register(provider: typings.pulumiPulumi.resourceMod.ProviderResource): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(provider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   }
   
   @JSImport("@pulumi/pulumi", "Resource")
@@ -292,8 +288,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi", "ResourceError")
@@ -316,8 +311,7 @@ object mod {
       * Returns true if the given object is an instance of a ResourceError.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi", "RunError")
@@ -337,8 +331,7 @@ object mod {
       * Returns true if the given object is an instance of a RunError.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/errors.RunError */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi", "StackReference")
@@ -360,16 +353,11 @@ object mod {
     def this(name: String, args: StackReferenceArgs, opts: CustomResourceOptions) = this()
   }
   
-  @scala.inline
-  def all[T](ds: js.Array[js.UndefOr[Input[T]]]): typings.pulumiPulumi.outputMod.Output_[js.Array[Unwrap[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(ds.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Array[Unwrap[T]]]]
-  @scala.inline
-  def all[T](`val`: Record[String, Input[T]]): typings.pulumiPulumi.outputMod.Output_[Record[String, Unwrap[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Record[String, Unwrap[T]]]]
-  @scala.inline
-  def all[T1, T2](values: js.Tuple2[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple2[Unwrap[T1], Unwrap[T2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple2[Unwrap[T1], Unwrap[T2]]]]
-  @scala.inline
-  def all[T1, T2, T3](values: js.Tuple3[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]], js.UndefOr[Input[T3]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple3[Unwrap[T1], Unwrap[T2], Unwrap[T3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple3[Unwrap[T1], Unwrap[T2], Unwrap[T3]]]]
-  @scala.inline
-  def all[T1, T2, T3, T4](
+  inline def all[T](ds: js.Array[js.UndefOr[Input[T]]]): typings.pulumiPulumi.outputMod.Output_[js.Array[Unwrap[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(ds.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Array[Unwrap[T]]]]
+  inline def all[T](`val`: Record[String, Input[T]]): typings.pulumiPulumi.outputMod.Output_[Record[String, Unwrap[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Record[String, Unwrap[T]]]]
+  inline def all[T1, T2](values: js.Tuple2[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple2[Unwrap[T1], Unwrap[T2]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple2[Unwrap[T1], Unwrap[T2]]]]
+  inline def all[T1, T2, T3](values: js.Tuple3[js.UndefOr[Input[T1]], js.UndefOr[Input[T2]], js.UndefOr[Input[T3]]]): typings.pulumiPulumi.outputMod.Output_[js.Tuple3[Unwrap[T1], Unwrap[T2], Unwrap[T3]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple3[Unwrap[T1], Unwrap[T2], Unwrap[T3]]]]
+  inline def all[T1, T2, T3, T4](
     values: js.Tuple4[
       js.UndefOr[Input[T1]], 
       js.UndefOr[Input[T2]], 
@@ -377,8 +365,7 @@ object mod {
       js.UndefOr[Input[T4]]
     ]
   ): typings.pulumiPulumi.outputMod.Output_[js.Tuple4[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple4[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4]]]]
-  @scala.inline
-  def all[T1, T2, T3, T4, T5](
+  inline def all[T1, T2, T3, T4, T5](
     values: js.Tuple5[
       js.UndefOr[Input[T1]], 
       js.UndefOr[Input[T2]], 
@@ -387,8 +374,7 @@ object mod {
       js.UndefOr[Input[T5]]
     ]
   ): typings.pulumiPulumi.outputMod.Output_[js.Tuple5[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[js.Tuple5[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5]]]]
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6](
+  inline def all[T1, T2, T3, T4, T5, T6](
     values: js.Tuple6[
       js.UndefOr[Input[T1]], 
       js.UndefOr[Input[T2]], 
@@ -402,8 +388,7 @@ object mod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[
     js.Tuple6[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6]]
   ]]
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6, T7](
+  inline def all[T1, T2, T3, T4, T5, T6, T7](
     values: js.Tuple7[
       js.UndefOr[Input[T1]], 
       js.UndefOr[Input[T2]], 
@@ -418,8 +403,7 @@ object mod {
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[
     js.Tuple7[Unwrap[T1], Unwrap[T2], Unwrap[T3], Unwrap[T4], Unwrap[T5], Unwrap[T6], Unwrap[T7]]
   ]]
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6, T7, T8](
+  inline def all[T1, T2, T3, T4, T5, T6, T7, T8](
     values: js.Tuple8[
       js.UndefOr[Input[T1]], 
       js.UndefOr[Input[T2]], 
@@ -453,8 +437,7 @@ object mod {
         * Returns true if the given object is an instance of an Archive.  This is designed to work even when
         * multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean]
     }
     
     @JSImport("@pulumi/pulumi", "asset.Asset")
@@ -472,8 +455,7 @@ object mod {
         * Returns true if the given object is an instance of an Asset.  This is designed to work even when
         * multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @scala.inline
-      def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean]
+      inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/asset.Asset */ Boolean]
     }
     
     @JSImport("@pulumi/pulumi", "asset.AssetArchive")
@@ -525,47 +507,33 @@ object mod {
     }
   }
   
-  @scala.inline
-  def concat(params: Input[js.Any]*): typings.pulumiPulumi.outputMod.Output_[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(params.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def concat(params: Input[js.Any]*): typings.pulumiPulumi.outputMod.Output_[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(params.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
   
-  @scala.inline
-  def containsUnknowns(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("containsUnknowns")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def containsUnknowns(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("containsUnknowns")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String]): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: Unit, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN]): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: Unit, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: typings.pulumiPulumi.resourceMod.Resource): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(
+  inline def createUrn(name: Input[String], `type`: Input[String]): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: Unit, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN]): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: Unit, stack: String): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: typings.pulumiPulumi.resourceMod.Resource): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def createUrn(
     name: Input[String],
     `type`: Input[String],
     parent: typings.pulumiPulumi.resourceMod.Resource,
     project: String
   ): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(
+  inline def createUrn(
     name: Input[String],
     `type`: Input[String],
     parent: typings.pulumiPulumi.resourceMod.Resource,
     project: String,
     stack: String
   ): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
-  @scala.inline
-  def createUrn(
+  inline def createUrn(
     name: Input[String],
     `type`: Input[String],
     parent: typings.pulumiPulumi.resourceMod.Resource,
@@ -593,20 +561,15 @@ object mod {
     }
   }
   
-  @scala.inline
-  def getProject(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProject")().asInstanceOf[String]
+  inline def getProject(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProject")().asInstanceOf[String]
   
-  @scala.inline
-  def getStack(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")().asInstanceOf[String]
+  inline def getStack(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")().asInstanceOf[String]
   
-  @scala.inline
-  def interpolate(literals: TemplateStringsArray, placeholders: Input[js.Any]*): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(literals.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
+  inline def interpolate(literals: TemplateStringsArray, placeholders: Input[js.Any]*): typings.pulumiPulumi.outputMod.Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(literals.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[String]]
   
-  @scala.inline
-  def isGrpcError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGrpcError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isGrpcError(err: Error): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGrpcError")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUnknown(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnknown")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUnknown(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnknown")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object iterable {
     
@@ -614,14 +577,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def groupBy[T, V](
+    inline def groupBy[T, V](
       iter: Input[js.Array[Input[T]]],
       selector: js.Function1[/* t */ T, Input[js.Tuple2[Input[String], Input[V]]]]
     ): typings.pulumiPulumi.outputMod.Output_[StringDictionary[js.Array[V]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(iter.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[StringDictionary[js.Array[V]]]]
     
-    @scala.inline
-    def toObject[T, V](
+    inline def toObject[T, V](
       iter: Input[js.Array[Input[T]]],
       selector: js.Function1[/* t */ T, Input[js.Tuple2[Input[String], Input[V]]]]
     ): typings.pulumiPulumi.outputMod.Output_[StringDictionary[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(iter.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[StringDictionary[V]]]
@@ -633,111 +594,78 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def debug(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def debug(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def debug(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def debug(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def debug(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def debug(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def debug(
+    inline def debug(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def debug(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def debug(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def debug(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def debug(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def debug(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def debug(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Double,
       ephemeral: Boolean
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def debug(
+    inline def debug(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Unit,
       ephemeral: Boolean
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def error(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def error(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def error(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def error(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def error(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def error(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def error(
+    inline def error(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def error(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def error(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def error(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def error(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def error(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def error(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Double,
       ephemeral: Boolean
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def error(
+    inline def error(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Unit,
       ephemeral: Boolean
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def hasErrors(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasErrors")().asInstanceOf[Boolean]
+    inline def hasErrors(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasErrors")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def info(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def info(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def info(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def info(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def info(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def info(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def info(
+    inline def info(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def info(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def info(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def info(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def info(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def info(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def info(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Double,
       ephemeral: Boolean
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def info(
+    inline def info(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Unit,
       ephemeral: Boolean
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def warn(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def warn(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def warn(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def warn(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def warn(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def warn(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def warn(
+    inline def warn(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def warn(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def warn(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def warn(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def warn(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def warn(msg: String, resource: typings.pulumiPulumi.resourceMod.Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def warn(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Double,
       ephemeral: Boolean
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def warn(
+    inline def warn(
       msg: String,
       resource: typings.pulumiPulumi.resourceMod.Resource,
       streamId: Unit,
@@ -745,37 +673,23 @@ object mod {
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
-  @scala.inline
-  def mergeOptions(): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: Unit, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: Unit, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: Unit, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ComponentResourceOptions): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ComponentResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ComponentResourceOptions, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: CustomResourceOptions): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: CustomResourceOptions, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ResourceOptions): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ResourceOptions, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
+  inline def mergeOptions(): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: Unit, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions(opts1: Unit, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: Unit, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
+  inline def mergeOptions(opts1: ComponentResourceOptions): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions(opts1: ComponentResourceOptions, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions(opts1: CustomResourceOptions): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: CustomResourceOptions, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: ResourceOptions): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ResourceOptions]
+  inline def mergeOptions(opts1: ResourceOptions, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
   
-  @scala.inline
-  def mergeOptions_ComponentResourceOptions(): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions_ComponentResourceOptions(): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ComponentResourceOptions]
   
-  @scala.inline
-  def mergeOptions_ResourceOptions(): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ResourceOptions]
+  inline def mergeOptions_ResourceOptions(): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ResourceOptions]
   
-  @scala.inline
-  def output[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("output")().asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]]]
-  @scala.inline
-  def output[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[T]]]
+  inline def output[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("output")().asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]]]
+  inline def output[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[T]]]
   
   object provider {
     
@@ -783,8 +697,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def main(provider: Provider, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("main")(provider.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def main(provider: Provider, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("main")(provider.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   @JSImport("@pulumi/pulumi", "rootStackResource")
@@ -804,132 +717,92 @@ object mod {
       def this(source: AsyncIterable[T], cancelSource: js.Function0[Unit]) = this()
     }
     
-    @scala.inline
-    def allConfig(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConfig")().asInstanceOf[StringDictionary[String]]
+    inline def allConfig(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConfig")().asInstanceOf[StringDictionary[String]]
     
-    @scala.inline
-    def computeCodePaths(): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")().asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(
+    inline def computeCodePaths(): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")().asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+    inline def computeCodePaths(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+    inline def computeCodePaths(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+    inline def computeCodePaths(
       extraIncludePaths: js.Array[String],
       extraIncludePackages: js.Array[String],
       extraExcludePackages: js.Array[String]
     ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(
+    inline def computeCodePaths(
       extraIncludePaths: js.Array[String],
       extraIncludePackages: Unit,
       extraExcludePackages: js.Array[String]
     ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(
+    inline def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+    inline def computeCodePaths(
       extraIncludePaths: Unit,
       extraIncludePackages: js.Array[String],
       extraExcludePackages: js.Array[String]
     ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: Unit, extraExcludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-    @scala.inline
-    def computeCodePaths(options: CodePathOptions): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+    inline def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: Unit, extraExcludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+    inline def computeCodePaths(options: CodePathOptions): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
     
-    @scala.inline
-    def deserializeProperties(outputsStruct: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeProperties")(outputsStruct.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def deserializeProperties(outputsStruct: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeProperties")(outputsStruct.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def deserializeProperty(prop: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def deserializeProperty(prop: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def disconnect(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")().asInstanceOf[js.Promise[Unit]]
+    inline def disconnect(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")().asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def disconnectSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSync")().asInstanceOf[Unit]
+    inline def disconnectSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSync")().asInstanceOf[Unit]
     
     @JSImport("@pulumi/pulumi", "runtime.excessiveDebugOutput")
     @js.native
     def excessiveDebugOutput: Boolean = js.native
-    @scala.inline
-    def excessiveDebugOutput_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excessiveDebugOutput")(x.asInstanceOf[js.Any])
+    inline def excessiveDebugOutput_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("excessiveDebugOutput")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getConfig(k: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(k.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getConfig(k: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(k.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
-    @scala.inline
-    def getEngine(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngine")().asInstanceOf[js.UndefOr[js.Object]]
+    inline def getEngine(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEngine")().asInstanceOf[js.UndefOr[js.Object]]
     
-    @scala.inline
-    def getMonitor(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonitor")().asInstanceOf[js.UndefOr[js.Object]]
+    inline def getMonitor(): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonitor")().asInstanceOf[js.UndefOr[js.Object]]
     
-    @scala.inline
-    def getProject(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProject")().asInstanceOf[String]
+    inline def getProject(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProject")().asInstanceOf[String]
     
-    @scala.inline
-    def getRootResource(): js.Promise[js.UndefOr[URN]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootResource")().asInstanceOf[js.Promise[js.UndefOr[URN]]]
+    inline def getRootResource(): js.Promise[js.UndefOr[URN]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootResource")().asInstanceOf[js.Promise[js.UndefOr[URN]]]
     
-    @scala.inline
-    def getStack(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")().asInstanceOf[String]
+    inline def getStack(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")().asInstanceOf[String]
     
-    @scala.inline
-    def getStackResource(): js.UndefOr[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStackResource")().asInstanceOf[js.UndefOr[Stack]]
+    inline def getStackResource(): js.UndefOr[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStackResource")().asInstanceOf[js.UndefOr[Stack]]
     
-    @scala.inline
-    def hasEngine(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEngine")().asInstanceOf[Boolean]
+    inline def hasEngine(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasEngine")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def hasMonitor(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMonitor")().asInstanceOf[Boolean]
+    inline def hasMonitor(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasMonitor")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def invoke(tok: String, props: Inputs): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def invoke(tok: String, props: Inputs): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def invoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @scala.inline
-    def isDryRun(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDryRun")().asInstanceOf[Boolean]
+    inline def isDryRun(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDryRun")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isLegacyApplyEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyApplyEnabled")().asInstanceOf[Boolean]
+    inline def isLegacyApplyEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyApplyEnabled")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isQueryMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQueryMode")().asInstanceOf[Boolean]
+    inline def isQueryMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQueryMode")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def isRpcSecret(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcSecret")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRpcSecret(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRpcSecret")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTestModeEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTestModeEnabled")().asInstanceOf[Boolean]
+    inline def isTestModeEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTestModeEnabled")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def leakedPromises(): js.Tuple2[Set[js.Promise[js.Any]], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("leakedPromises")().asInstanceOf[js.Tuple2[Set[js.Promise[js.Any]], String]]
+    inline def leakedPromises(): js.Tuple2[Set[js.Promise[js.Any]], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("leakedPromises")().asInstanceOf[js.Tuple2[Set[js.Promise[js.Any]], String]]
     
-    @scala.inline
-    def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](): AsyncQueryable[ResolvedResource[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")().asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
-    @scala.inline
-    def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean]): AsyncQueryable[ResolvedResource[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
-    @scala.inline
-    def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean], stackName: String): AsyncQueryable[ResolvedResource[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any], stackName.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
-    @scala.inline
-    def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: Unit, stackName: String): AsyncQueryable[ResolvedResource[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any], stackName.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
+    inline def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](): AsyncQueryable[ResolvedResource[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")().asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
+    inline def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean]): AsyncQueryable[ResolvedResource[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
+    inline def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ Boolean], stackName: String): AsyncQueryable[ResolvedResource[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any], stackName.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
+    inline def listResourceOutputs[U /* <: typings.pulumiPulumi.resourceMod.Resource */](typeFilter: Unit, stackName: String): AsyncQueryable[ResolvedResource[U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listResourceOutputs")(typeFilter.asInstanceOf[js.Any], stackName.asInstanceOf[js.Any])).asInstanceOf[AsyncQueryable[ResolvedResource[U]]]
     
     @JSImport("@pulumi/pulumi", "runtime.maxRPCMessageSize")
     @js.native
     val maxRPCMessageSize: Double = js.native
     
-    @scala.inline
-    def monitorSupportsFeature(feature: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsFeature")(feature.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def monitorSupportsFeature(feature: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsFeature")(feature.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def monitorSupportsResourceReferences(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsResourceReferences")().asInstanceOf[js.Promise[Boolean]]
+    inline def monitorSupportsResourceReferences(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsResourceReferences")().asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def monitorSupportsSecrets(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsSecrets")().asInstanceOf[js.Promise[Boolean]]
+    inline def monitorSupportsSecrets(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorSupportsSecrets")().asInstanceOf[js.Promise[Boolean]]
     
-    @scala.inline
-    def readResource(
+    inline def readResource(
       res: typings.pulumiPulumi.resourceMod.Resource,
       t: String,
       name: String,
@@ -937,8 +810,7 @@ object mod {
       opts: ResourceOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readResource")(res.asInstanceOf[js.Any], t.asInstanceOf[js.Any], name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerResource(
+    inline def registerResource(
       res: typings.pulumiPulumi.resourceMod.Resource,
       t: String,
       name: String,
@@ -949,27 +821,20 @@ object mod {
       opts: ResourceOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResource")(res.asInstanceOf[js.Any], t.asInstanceOf[js.Any], name.asInstanceOf[js.Any], custom.asInstanceOf[js.Any], remote.asInstanceOf[js.Any], newDependency.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerResourceModule(name: String, version: String, module: ResourceModule): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceModule")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerResourceModule(name: String, version: String, module: ResourceModule): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceModule")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerResourceOutputs(res: typings.pulumiPulumi.resourceMod.Resource, outputs: js.Promise[Inputs]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def registerResourceOutputs(res: typings.pulumiPulumi.resourceMod.Resource, outputs: Inputs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def registerResourceOutputs(
+    inline def registerResourceOutputs(res: typings.pulumiPulumi.resourceMod.Resource, outputs: js.Promise[Inputs]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerResourceOutputs(res: typings.pulumiPulumi.resourceMod.Resource, outputs: Inputs): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerResourceOutputs(
       res: typings.pulumiPulumi.resourceMod.Resource,
       outputs: typings.pulumiPulumi.outputMod.Output_[Inputs]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceOutputs")(res.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerResourcePackage(name: String, version: String, pkg: ResourcePackage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourcePackage")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], pkg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerResourcePackage(name: String, version: String, pkg: ResourcePackage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourcePackage")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], pkg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerStackTransformation(t: ResourceTransformation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerStackTransformation")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerStackTransformation(t: ResourceTransformation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerStackTransformation")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def resetOptions(
+    inline def resetOptions(
       project: String,
       stack: String,
       parallel: Double,
@@ -978,8 +843,7 @@ object mod {
       preview: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetOptions")(project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], parallel.asInstanceOf[js.Any], engineAddr.asInstanceOf[js.Any], monitorAddr.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def resolveProperties(
+    inline def resolveProperties(
       res: typings.pulumiPulumi.resourceMod.Resource,
       resolvers: Record[
           String, 
@@ -997,8 +861,7 @@ object mod {
       allProps: js.Any,
       deps: Record[String, js.Array[typings.pulumiPulumi.resourceMod.Resource]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveProperties")(res.asInstanceOf[js.Any], resolvers.asInstanceOf[js.Any], t.asInstanceOf[js.Any], name.asInstanceOf[js.Any], allProps.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def resolveProperties(
+    inline def resolveProperties(
       res: typings.pulumiPulumi.resourceMod.Resource,
       resolvers: Record[
           String, 
@@ -1022,37 +885,27 @@ object mod {
     @js.native
     val rootPulumiStackTypeName: /* "pulumi:pulumi:Stack" */ String = js.native
     
-    @scala.inline
-    def rpcKeepAlive(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rpcKeepAlive")().asInstanceOf[js.Function0[Unit]]
+    inline def rpcKeepAlive(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rpcKeepAlive")().asInstanceOf[js.Function0[Unit]]
     
-    @scala.inline
-    def runInPulumiStack(init: js.Function0[js.Promise[js.Any]]): js.Promise[js.UndefOr[Inputs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("runInPulumiStack")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Inputs]]]
+    inline def runInPulumiStack(init: js.Function0[js.Promise[js.Any]]): js.Promise[js.UndefOr[Inputs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("runInPulumiStack")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Inputs]]]
     
-    @scala.inline
-    def serialize(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")().asInstanceOf[Boolean]
+    inline def serialize(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SerializedFunction]]
-    @scala.inline
-    def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SerializedFunction]]
+    inline def serializeFunction(func: js.Function): js.Promise[SerializedFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SerializedFunction]]
+    inline def serializeFunction(func: js.Function, args: SerializeFunctionArgs): js.Promise[SerializedFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunction")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SerializedFunction]]
     
-    @scala.inline
-    def serializeFunctionAsync(func: js.Function): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-    @scala.inline
-    def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any], serialize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def serializeFunctionAsync(func: js.Function): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, Boolean]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFunctionAsync")(func.asInstanceOf[js.Any], serialize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
-    @scala.inline
-    def serializeProperties(label: String, props: Inputs): js.Promise[Record[String, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeProperties")(label.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Record[String, js.Any]]]
+    inline def serializeProperties(label: String, props: Inputs): js.Promise[Record[String, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeProperties")(label.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Record[String, js.Any]]]
     
-    @scala.inline
-    def serializeProperty(
+    inline def serializeProperty(
       ctx: String,
       prop: Input[js.Any],
       dependentResources: Set[typings.pulumiPulumi.resourceMod.Resource]
     ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeProperty")(ctx.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], dependentResources.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @scala.inline
-    def serializeResourceProperties(label: String, props: Inputs): js.Promise[
+    inline def serializeResourceProperties(label: String, props: Inputs): js.Promise[
         js.Tuple2[
           Record[String, js.Any], 
           Map[String, Set[typings.pulumiPulumi.resourceMod.Resource]]
@@ -1064,48 +917,29 @@ object mod {
         ]
       ]]
     
-    @scala.inline
-    def setAllConfig(c: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAllConfig")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setAllConfig(c: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAllConfig")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setConfig(k: String, v: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(k.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setConfig(k: String, v: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(k.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any, project: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any, project: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any, project: String, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any, project: String, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any, project: Unit, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any, project: Unit, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMockOptions(mockMonitor: js.Any, project: Unit, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any, project: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any, project: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any, project: String, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any, project: String, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any, project: Unit, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any, project: Unit, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMockOptions(mockMonitor: js.Any, project: Unit, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMockOptions")(mockMonitor.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setMocks(mocks: Mocks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def setMocks(mocks: Mocks, project: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMocks(mocks: Mocks, project: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMocks(mocks: Mocks, project: String, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMocks(mocks: Mocks, project: Unit, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMocks(mocks: Mocks, project: Unit, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setMocks(mocks: Mocks, project: Unit, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks, project: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks, project: String, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks, project: String, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks, project: Unit, stack: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks, project: Unit, stack: String, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMocks(mocks: Mocks, project: Unit, stack: Unit, preview: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMocks")(mocks.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def setRootResource(res: typings.pulumiPulumi.resourceMod.ComponentResource[js.Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setRootResource")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def setRootResource(res: typings.pulumiPulumi.resourceMod.ComponentResource[js.Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setRootResource")(res.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     @JSImport("@pulumi/pulumi", "runtime.specialArchiveSig")
     @js.native
@@ -1127,30 +961,22 @@ object mod {
     @js.native
     val specialSigKey: /* "4dabf18193072939515e22adb298388d" */ String = js.native
     
-    @scala.inline
-    def streamInvoke(tok: String, props: Inputs): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamInvoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]]]
-    @scala.inline
-    def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamInvoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]]]
+    inline def streamInvoke(tok: String, props: Inputs): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamInvoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]]]
+    inline def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamInvoke")(tok.asInstanceOf[js.Any], props.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[js.Any]]]
     
-    @scala.inline
-    def suppressUnhandledGrpcRejections[T](p: js.Promise[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressUnhandledGrpcRejections")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    inline def suppressUnhandledGrpcRejections[T](p: js.Promise[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressUnhandledGrpcRejections")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
     
-    @scala.inline
-    def terminateRpcs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("terminateRpcs")().asInstanceOf[Unit]
+    inline def terminateRpcs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("terminateRpcs")().asInstanceOf[Unit]
     
-    @scala.inline
-    def transferProperties(onto: typings.pulumiPulumi.resourceMod.Resource, label: String, props: Inputs): OutputResolvers = (^.asInstanceOf[js.Dynamic].applyDynamic("transferProperties")(onto.asInstanceOf[js.Any], label.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[OutputResolvers]
+    inline def transferProperties(onto: typings.pulumiPulumi.resourceMod.Resource, label: String, props: Inputs): OutputResolvers = (^.asInstanceOf[js.Dynamic].applyDynamic("transferProperties")(onto.asInstanceOf[js.Any], label.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[OutputResolvers]
     
     @JSImport("@pulumi/pulumi", "runtime.unknownValue")
     @js.native
     val unknownValue: /* "04da6b54-80e4-46f7-96ec-b56ff0331ba9" */ String = js.native
     
-    @scala.inline
-    def unwrapRpcSecret(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapRpcSecret")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def unwrapRpcSecret(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapRpcSecret")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @scala.inline
-  def secret[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")().asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]]]
-  @scala.inline
-  def secret[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[T]]]
+  inline def secret[T](): typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")().asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[js.UndefOr[T]]]]
+  inline def secret[T](`val`: Input[T]): typings.pulumiPulumi.outputMod.Output_[Unwrap[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("secret")(`val`.asInstanceOf[js.Any]).asInstanceOf[typings.pulumiPulumi.outputMod.Output_[Unwrap[T]]]
 }

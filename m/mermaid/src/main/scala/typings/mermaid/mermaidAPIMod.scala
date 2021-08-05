@@ -32,14 +32,11 @@ object mermaidAPIMod {
       /* 1 */ val Warn: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Warn & Double = js.native
     }
     
-    @scala.inline
-    def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
+    inline def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
     
-    @scala.inline
-    def initialize(options: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def initialize(options: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * ##render
@@ -64,8 +61,7 @@ object mermaidAPIMod {
       * provided a hidden div will be inserted in the body of the page instead. The element will be removed when rendering is
       * completed.
       */
-    @scala.inline
-    def render(
+    inline def render(
       id: String,
       txt: String,
       cb: js.Function2[
@@ -74,8 +70,7 @@ object mermaidAPIMod {
           Unit
         ]
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(id.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def render(
+    inline def render(
       id: String,
       txt: String,
       cb: js.Function2[
@@ -178,74 +173,52 @@ object mermaidAPIMod {
     }
     object Config {
       
-      @scala.inline
-      def apply(): Config = {
+      inline def apply(): Config = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setArrowMarkerAbsolute(value: Boolean): Self = StObject.set(x, "arrowMarkerAbsolute", value.asInstanceOf[js.Any])
+        inline def setArrowMarkerAbsolute(value: Boolean): Self = StObject.set(x, "arrowMarkerAbsolute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArrowMarkerAbsoluteUndefined: Self = StObject.set(x, "arrowMarkerAbsolute", js.undefined)
+        inline def setArrowMarkerAbsoluteUndefined: Self = StObject.set(x, "arrowMarkerAbsolute", js.undefined)
         
-        @scala.inline
-        def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+        inline def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+        inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
         
-        @scala.inline
-        def setFlowchart(value: FlowChartConfig): Self = StObject.set(x, "flowchart", value.asInstanceOf[js.Any])
+        inline def setFlowchart(value: FlowChartConfig): Self = StObject.set(x, "flowchart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlowchartUndefined: Self = StObject.set(x, "flowchart", js.undefined)
+        inline def setFlowchartUndefined: Self = StObject.set(x, "flowchart", js.undefined)
         
-        @scala.inline
-        def setGantt(value: GanttConfig): Self = StObject.set(x, "gantt", value.asInstanceOf[js.Any])
+        inline def setGantt(value: GanttConfig): Self = StObject.set(x, "gantt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGanttUndefined: Self = StObject.set(x, "gantt", js.undefined)
+        inline def setGanttUndefined: Self = StObject.set(x, "gantt", js.undefined)
         
-        @scala.inline
-        def setGit(value: js.Any): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+        inline def setGit(value: js.Any): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
+        inline def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
         
-        @scala.inline
-        def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+        inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+        inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
         
-        @scala.inline
-        def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
+        inline def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
+        inline def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
         
-        @scala.inline
-        def setSequence(value: SequenceDiagramConfig): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+        inline def setSequence(value: SequenceDiagramConfig): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
+        inline def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
         
-        @scala.inline
-        def setStartOnLoad(value: Boolean): Self = StObject.set(x, "startOnLoad", value.asInstanceOf[js.Any])
+        inline def setStartOnLoad(value: Boolean): Self = StObject.set(x, "startOnLoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartOnLoadUndefined: Self = StObject.set(x, "startOnLoad", js.undefined)
+        inline def setStartOnLoadUndefined: Self = StObject.set(x, "startOnLoad", js.undefined)
         
-        @scala.inline
-        def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+        inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       }
     }
     
@@ -265,26 +238,20 @@ object mermaidAPIMod {
     }
     object FlowChartConfig {
       
-      @scala.inline
-      def apply(): FlowChartConfig = {
+      inline def apply(): FlowChartConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FlowChartConfig]
       }
       
-      @scala.inline
-      implicit class FlowChartConfigMutableBuilder[Self <: FlowChartConfig] (val x: Self) extends AnyVal {
+      extension [Self <: FlowChartConfig](x: Self) {
         
-        @scala.inline
-        def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+        inline def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
+        inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
         
-        @scala.inline
-        def setHtmlLabels(value: Boolean): Self = StObject.set(x, "htmlLabels", value.asInstanceOf[js.Any])
+        inline def setHtmlLabels(value: Boolean): Self = StObject.set(x, "htmlLabels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtmlLabelsUndefined: Self = StObject.set(x, "htmlLabels", js.undefined)
+        inline def setHtmlLabelsUndefined: Self = StObject.set(x, "htmlLabels", js.undefined)
       }
     }
     
@@ -352,74 +319,52 @@ object mermaidAPIMod {
     }
     object GanttConfig {
       
-      @scala.inline
-      def apply(): GanttConfig = {
+      inline def apply(): GanttConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GanttConfig]
       }
       
-      @scala.inline
-      implicit class GanttConfigMutableBuilder[Self <: GanttConfig] (val x: Self) extends AnyVal {
+      extension [Self <: GanttConfig](x: Self) {
         
-        @scala.inline
-        def setAxisFormat(value: String): Self = StObject.set(x, "axisFormat", value.asInstanceOf[js.Any])
+        inline def setAxisFormat(value: String): Self = StObject.set(x, "axisFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAxisFormatUndefined: Self = StObject.set(x, "axisFormat", js.undefined)
+        inline def setAxisFormatUndefined: Self = StObject.set(x, "axisFormat", js.undefined)
         
-        @scala.inline
-        def setBarGap(value: Double): Self = StObject.set(x, "barGap", value.asInstanceOf[js.Any])
+        inline def setBarGap(value: Double): Self = StObject.set(x, "barGap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBarGapUndefined: Self = StObject.set(x, "barGap", js.undefined)
+        inline def setBarGapUndefined: Self = StObject.set(x, "barGap", js.undefined)
         
-        @scala.inline
-        def setBarHeight(value: Double): Self = StObject.set(x, "barHeight", value.asInstanceOf[js.Any])
+        inline def setBarHeight(value: Double): Self = StObject.set(x, "barHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBarHeightUndefined: Self = StObject.set(x, "barHeight", js.undefined)
+        inline def setBarHeightUndefined: Self = StObject.set(x, "barHeight", js.undefined)
         
-        @scala.inline
-        def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+        inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+        inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
         
-        @scala.inline
-        def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+        inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+        inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
         
-        @scala.inline
-        def setGridLineStartPadding(value: Double): Self = StObject.set(x, "gridLineStartPadding", value.asInstanceOf[js.Any])
+        inline def setGridLineStartPadding(value: Double): Self = StObject.set(x, "gridLineStartPadding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGridLineStartPaddingUndefined: Self = StObject.set(x, "gridLineStartPadding", js.undefined)
+        inline def setGridLineStartPaddingUndefined: Self = StObject.set(x, "gridLineStartPadding", js.undefined)
         
-        @scala.inline
-        def setLeftPadding(value: Double): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
+        inline def setLeftPadding(value: Double): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
+        inline def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
         
-        @scala.inline
-        def setNumberSectionStyles(value: Double): Self = StObject.set(x, "numberSectionStyles", value.asInstanceOf[js.Any])
+        inline def setNumberSectionStyles(value: Double): Self = StObject.set(x, "numberSectionStyles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumberSectionStylesUndefined: Self = StObject.set(x, "numberSectionStyles", js.undefined)
+        inline def setNumberSectionStylesUndefined: Self = StObject.set(x, "numberSectionStyles", js.undefined)
         
-        @scala.inline
-        def setTitleTopMargin(value: Double): Self = StObject.set(x, "titleTopMargin", value.asInstanceOf[js.Any])
+        inline def setTitleTopMargin(value: Double): Self = StObject.set(x, "titleTopMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleTopMarginUndefined: Self = StObject.set(x, "titleTopMargin", js.undefined)
+        inline def setTitleTopMarginUndefined: Self = StObject.set(x, "titleTopMargin", js.undefined)
         
-        @scala.inline
-        def setTopPadding(value: Double): Self = StObject.set(x, "topPadding", value.asInstanceOf[js.Any])
+        inline def setTopPadding(value: Double): Self = StObject.set(x, "topPadding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopPaddingUndefined: Self = StObject.set(x, "topPadding", js.undefined)
+        inline def setTopPaddingUndefined: Self = StObject.set(x, "topPadding", js.undefined)
       }
     }
     
@@ -501,86 +446,60 @@ object mermaidAPIMod {
     }
     object SequenceDiagramConfig {
       
-      @scala.inline
-      def apply(): SequenceDiagramConfig = {
+      inline def apply(): SequenceDiagramConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SequenceDiagramConfig]
       }
       
-      @scala.inline
-      implicit class SequenceDiagramConfigMutableBuilder[Self <: SequenceDiagramConfig] (val x: Self) extends AnyVal {
+      extension [Self <: SequenceDiagramConfig](x: Self) {
         
-        @scala.inline
-        def setActorMargin(value: Double): Self = StObject.set(x, "actorMargin", value.asInstanceOf[js.Any])
+        inline def setActorMargin(value: Double): Self = StObject.set(x, "actorMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActorMarginUndefined: Self = StObject.set(x, "actorMargin", js.undefined)
+        inline def setActorMarginUndefined: Self = StObject.set(x, "actorMargin", js.undefined)
         
-        @scala.inline
-        def setBottomMarginAdj(value: Double): Self = StObject.set(x, "bottomMarginAdj", value.asInstanceOf[js.Any])
+        inline def setBottomMarginAdj(value: Double): Self = StObject.set(x, "bottomMarginAdj", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBottomMarginAdjUndefined: Self = StObject.set(x, "bottomMarginAdj", js.undefined)
+        inline def setBottomMarginAdjUndefined: Self = StObject.set(x, "bottomMarginAdj", js.undefined)
         
-        @scala.inline
-        def setBoxMargin(value: Double): Self = StObject.set(x, "boxMargin", value.asInstanceOf[js.Any])
+        inline def setBoxMargin(value: Double): Self = StObject.set(x, "boxMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoxMarginUndefined: Self = StObject.set(x, "boxMargin", js.undefined)
+        inline def setBoxMarginUndefined: Self = StObject.set(x, "boxMargin", js.undefined)
         
-        @scala.inline
-        def setBoxTextMargin(value: Double): Self = StObject.set(x, "boxTextMargin", value.asInstanceOf[js.Any])
+        inline def setBoxTextMargin(value: Double): Self = StObject.set(x, "boxTextMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoxTextMarginUndefined: Self = StObject.set(x, "boxTextMargin", js.undefined)
+        inline def setBoxTextMarginUndefined: Self = StObject.set(x, "boxTextMargin", js.undefined)
         
-        @scala.inline
-        def setDiagramMarginX(value: Double): Self = StObject.set(x, "diagramMarginX", value.asInstanceOf[js.Any])
+        inline def setDiagramMarginX(value: Double): Self = StObject.set(x, "diagramMarginX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDiagramMarginXUndefined: Self = StObject.set(x, "diagramMarginX", js.undefined)
+        inline def setDiagramMarginXUndefined: Self = StObject.set(x, "diagramMarginX", js.undefined)
         
-        @scala.inline
-        def setDiagramMarginY(value: Double): Self = StObject.set(x, "diagramMarginY", value.asInstanceOf[js.Any])
+        inline def setDiagramMarginY(value: Double): Self = StObject.set(x, "diagramMarginY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDiagramMarginYUndefined: Self = StObject.set(x, "diagramMarginY", js.undefined)
+        inline def setDiagramMarginYUndefined: Self = StObject.set(x, "diagramMarginY", js.undefined)
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setMessageMargin(value: Double): Self = StObject.set(x, "messageMargin", value.asInstanceOf[js.Any])
+        inline def setMessageMargin(value: Double): Self = StObject.set(x, "messageMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageMarginUndefined: Self = StObject.set(x, "messageMargin", js.undefined)
+        inline def setMessageMarginUndefined: Self = StObject.set(x, "messageMargin", js.undefined)
         
-        @scala.inline
-        def setMirrorActors(value: Boolean): Self = StObject.set(x, "mirrorActors", value.asInstanceOf[js.Any])
+        inline def setMirrorActors(value: Boolean): Self = StObject.set(x, "mirrorActors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMirrorActorsUndefined: Self = StObject.set(x, "mirrorActors", js.undefined)
+        inline def setMirrorActorsUndefined: Self = StObject.set(x, "mirrorActors", js.undefined)
         
-        @scala.inline
-        def setNoteMargin(value: Double): Self = StObject.set(x, "noteMargin", value.asInstanceOf[js.Any])
+        inline def setNoteMargin(value: Double): Self = StObject.set(x, "noteMargin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoteMarginUndefined: Self = StObject.set(x, "noteMargin", js.undefined)
+        inline def setNoteMarginUndefined: Self = StObject.set(x, "noteMargin", js.undefined)
         
-        @scala.inline
-        def setUseMaxWidth(value: Boolean): Self = StObject.set(x, "useMaxWidth", value.asInstanceOf[js.Any])
+        inline def setUseMaxWidth(value: Boolean): Self = StObject.set(x, "useMaxWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseMaxWidthUndefined: Self = StObject.set(x, "useMaxWidth", js.undefined)
+        inline def setUseMaxWidthUndefined: Self = StObject.set(x, "useMaxWidth", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -593,17 +512,13 @@ object mermaidAPIMod {
     trait Theme extends StObject
     object Theme {
       
-      @scala.inline
-      def default: typings.mermaid.mermaidStrings.default = "default".asInstanceOf[typings.mermaid.mermaidStrings.default]
+      inline def default: typings.mermaid.mermaidStrings.default = "default".asInstanceOf[typings.mermaid.mermaidStrings.default]
       
-      @scala.inline
-      def dark: typings.mermaid.mermaidStrings.dark = "dark".asInstanceOf[typings.mermaid.mermaidStrings.dark]
+      inline def dark: typings.mermaid.mermaidStrings.dark = "dark".asInstanceOf[typings.mermaid.mermaidStrings.dark]
       
-      @scala.inline
-      def forest: typings.mermaid.mermaidStrings.forest = "forest".asInstanceOf[typings.mermaid.mermaidStrings.forest]
+      inline def forest: typings.mermaid.mermaidStrings.forest = "forest".asInstanceOf[typings.mermaid.mermaidStrings.forest]
       
-      @scala.inline
-      def neutral: typings.mermaid.mermaidStrings.neutral = "neutral".asInstanceOf[typings.mermaid.mermaidStrings.neutral]
+      inline def neutral: typings.mermaid.mermaidStrings.neutral = "neutral".asInstanceOf[typings.mermaid.mermaidStrings.neutral]
     }
   }
 }

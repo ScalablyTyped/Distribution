@@ -13,7 +13,7 @@ trait XPath extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.XPath_typekey")
+  /* private */ @JSName("Excel.XPath_typekey")
   var ExcelDotXPath_typekey: XPath = js.native
   
   val Map: XmlMap = js.native

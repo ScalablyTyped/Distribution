@@ -14,31 +14,23 @@ trait VerifyIdTokenOptions extends StObject {
 }
 object VerifyIdTokenOptions {
   
-  @scala.inline
-  def apply(idToken: String): VerifyIdTokenOptions = {
+  inline def apply(idToken: String): VerifyIdTokenOptions = {
     val __obj = js.Dynamic.literal(idToken = idToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyIdTokenOptions]
   }
   
-  @scala.inline
-  implicit class VerifyIdTokenOptionsMutableBuilder[Self <: VerifyIdTokenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyIdTokenOptions](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+    inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxExpiry(value: Double): Self = StObject.set(x, "maxExpiry", value.asInstanceOf[js.Any])
+    inline def setMaxExpiry(value: Double): Self = StObject.set(x, "maxExpiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxExpiryUndefined: Self = StObject.set(x, "maxExpiry", js.undefined)
+    inline def setMaxExpiryUndefined: Self = StObject.set(x, "maxExpiry", js.undefined)
   }
 }

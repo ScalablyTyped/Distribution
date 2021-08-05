@@ -18,22 +18,17 @@ trait DeleteAccessKeyRequest extends StObject {
 }
 object DeleteAccessKeyRequest {
   
-  @scala.inline
-  def apply(AccessKeyId: accessKeyIdType): DeleteAccessKeyRequest = {
+  inline def apply(AccessKeyId: accessKeyIdType): DeleteAccessKeyRequest = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessKeyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccessKeyRequestMutableBuilder[Self <: DeleteAccessKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccessKeyRequest](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

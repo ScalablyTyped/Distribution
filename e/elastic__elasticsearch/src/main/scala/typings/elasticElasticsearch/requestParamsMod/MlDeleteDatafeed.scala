@@ -14,22 +14,17 @@ trait MlDeleteDatafeed
 }
 object MlDeleteDatafeed {
   
-  @scala.inline
-  def apply(datafeed_id: String): MlDeleteDatafeed = {
+  inline def apply(datafeed_id: String): MlDeleteDatafeed = {
     val __obj = js.Dynamic.literal(datafeed_id = datafeed_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlDeleteDatafeed]
   }
   
-  @scala.inline
-  implicit class MlDeleteDatafeedMutableBuilder[Self <: MlDeleteDatafeed] (val x: Self) extends AnyVal {
+  extension [Self <: MlDeleteDatafeed](x: Self) {
     
-    @scala.inline
-    def setDatafeed_id(value: String): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
+    inline def setDatafeed_id(value: String): Self = StObject.set(x, "datafeed_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
   }
 }

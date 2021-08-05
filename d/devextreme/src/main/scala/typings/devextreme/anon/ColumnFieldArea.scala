@@ -16,37 +16,27 @@ trait ColumnFieldArea extends StObject {
 }
 object ColumnFieldArea {
   
-  @scala.inline
-  def apply(): ColumnFieldArea = {
+  inline def apply(): ColumnFieldArea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnFieldArea]
   }
   
-  @scala.inline
-  implicit class ColumnFieldAreaMutableBuilder[Self <: ColumnFieldArea] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnFieldArea](x: Self) {
     
-    @scala.inline
-    def setColumnFieldArea(value: String): Self = StObject.set(x, "columnFieldArea", value.asInstanceOf[js.Any])
+    inline def setColumnFieldArea(value: String): Self = StObject.set(x, "columnFieldArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnFieldAreaUndefined: Self = StObject.set(x, "columnFieldArea", js.undefined)
+    inline def setColumnFieldAreaUndefined: Self = StObject.set(x, "columnFieldArea", js.undefined)
     
-    @scala.inline
-    def setDataFieldArea(value: String): Self = StObject.set(x, "dataFieldArea", value.asInstanceOf[js.Any])
+    inline def setDataFieldArea(value: String): Self = StObject.set(x, "dataFieldArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFieldAreaUndefined: Self = StObject.set(x, "dataFieldArea", js.undefined)
+    inline def setDataFieldAreaUndefined: Self = StObject.set(x, "dataFieldArea", js.undefined)
     
-    @scala.inline
-    def setFilterFieldArea(value: String): Self = StObject.set(x, "filterFieldArea", value.asInstanceOf[js.Any])
+    inline def setFilterFieldArea(value: String): Self = StObject.set(x, "filterFieldArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterFieldAreaUndefined: Self = StObject.set(x, "filterFieldArea", js.undefined)
+    inline def setFilterFieldAreaUndefined: Self = StObject.set(x, "filterFieldArea", js.undefined)
     
-    @scala.inline
-    def setRowFieldArea(value: String): Self = StObject.set(x, "rowFieldArea", value.asInstanceOf[js.Any])
+    inline def setRowFieldArea(value: String): Self = StObject.set(x, "rowFieldArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowFieldAreaUndefined: Self = StObject.set(x, "rowFieldArea", js.undefined)
+    inline def setRowFieldAreaUndefined: Self = StObject.set(x, "rowFieldArea", js.undefined)
   }
 }

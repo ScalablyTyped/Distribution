@@ -90,8 +90,7 @@ trait XIdlMethod
 }
 object XIdlMethod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DeclaringClass: XIdlClass[js.Any],
     ExceptionTypes: SafeArray[XIdlClass[js.Any]],
     Mode: MethodMode,
@@ -115,40 +114,28 @@ object XIdlMethod {
     __obj.asInstanceOf[XIdlMethod]
   }
   
-  @scala.inline
-  implicit class XIdlMethodMutableBuilder[Self <: XIdlMethod] (val x: Self) extends AnyVal {
+  extension [Self <: XIdlMethod](x: Self) {
     
-    @scala.inline
-    def setExceptionTypes(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "ExceptionTypes", value.asInstanceOf[js.Any])
+    inline def setExceptionTypes(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "ExceptionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExceptionTypes(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getExceptionTypes", js.Any.fromFunction0(value))
+    inline def setGetExceptionTypes(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getExceptionTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMode(value: () => MethodMode): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
+    inline def setGetMode(value: () => MethodMode): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameterInfos(value: () => SafeArray[ParamInfo]): Self = StObject.set(x, "getParameterInfos", js.Any.fromFunction0(value))
+    inline def setGetParameterInfos(value: () => SafeArray[ParamInfo]): Self = StObject.set(x, "getParameterInfos", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameterTypes(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getParameterTypes", js.Any.fromFunction0(value))
+    inline def setGetParameterTypes(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getParameterTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReturnType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getReturnType", js.Any.fromFunction0(value))
+    inline def setGetReturnType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getReturnType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInvoke(value: (js.Any, js.Array[SeqEquiv[js.Any]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+    inline def setInvoke(value: (js.Any, js.Array[SeqEquiv[js.Any]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMode(value: MethodMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: MethodMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterInfos(value: SafeArray[ParamInfo]): Self = StObject.set(x, "ParameterInfos", value.asInstanceOf[js.Any])
+    inline def setParameterInfos(value: SafeArray[ParamInfo]): Self = StObject.set(x, "ParameterInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterTypes(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "ParameterTypes", value.asInstanceOf[js.Any])
+    inline def setParameterTypes(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "ParameterTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnType(value: XIdlClass[js.Any]): Self = StObject.set(x, "ReturnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: XIdlClass[js.Any]): Self = StObject.set(x, "ReturnType", value.asInstanceOf[js.Any])
   }
 }

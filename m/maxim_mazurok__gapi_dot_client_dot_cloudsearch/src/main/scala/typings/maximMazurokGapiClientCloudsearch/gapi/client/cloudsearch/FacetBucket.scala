@@ -20,31 +20,23 @@ trait FacetBucket extends StObject {
 }
 object FacetBucket {
   
-  @scala.inline
-  def apply(): FacetBucket = {
+  inline def apply(): FacetBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FacetBucket]
   }
   
-  @scala.inline
-  implicit class FacetBucketMutableBuilder[Self <: FacetBucket] (val x: Self) extends AnyVal {
+  extension [Self <: FacetBucket](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

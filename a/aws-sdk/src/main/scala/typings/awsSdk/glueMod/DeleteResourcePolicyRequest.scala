@@ -18,25 +18,19 @@ trait DeleteResourcePolicyRequest extends StObject {
 }
 object DeleteResourcePolicyRequest {
   
-  @scala.inline
-  def apply(): DeleteResourcePolicyRequest = {
+  inline def apply(): DeleteResourcePolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteResourcePolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResourcePolicyRequestMutableBuilder[Self <: DeleteResourcePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourcePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyHashCondition(value: HashString): Self = StObject.set(x, "PolicyHashCondition", value.asInstanceOf[js.Any])
+    inline def setPolicyHashCondition(value: HashString): Self = StObject.set(x, "PolicyHashCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyHashConditionUndefined: Self = StObject.set(x, "PolicyHashCondition", js.undefined)
+    inline def setPolicyHashConditionUndefined: Self = StObject.set(x, "PolicyHashCondition", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: GlueResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait ListAssociatedApprovalRuleTemplatesForRepositoryOutput extends StObject {
 }
 object ListAssociatedApprovalRuleTemplatesForRepositoryOutput {
   
-  @scala.inline
-  def apply(): ListAssociatedApprovalRuleTemplatesForRepositoryOutput = {
+  inline def apply(): ListAssociatedApprovalRuleTemplatesForRepositoryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAssociatedApprovalRuleTemplatesForRepositoryOutput]
   }
   
-  @scala.inline
-  implicit class ListAssociatedApprovalRuleTemplatesForRepositoryOutputMutableBuilder[Self <: ListAssociatedApprovalRuleTemplatesForRepositoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssociatedApprovalRuleTemplatesForRepositoryOutput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleTemplateNames(value: ApprovalRuleTemplateNameList): Self = StObject.set(x, "approvalRuleTemplateNames", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateNames(value: ApprovalRuleTemplateNameList): Self = StObject.set(x, "approvalRuleTemplateNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleTemplateNamesUndefined: Self = StObject.set(x, "approvalRuleTemplateNames", js.undefined)
+    inline def setApprovalRuleTemplateNamesUndefined: Self = StObject.set(x, "approvalRuleTemplateNames", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleTemplateNamesVarargs(value: ApprovalRuleTemplateName*): Self = StObject.set(x, "approvalRuleTemplateNames", js.Array(value :_*))
+    inline def setApprovalRuleTemplateNamesVarargs(value: ApprovalRuleTemplateName*): Self = StObject.set(x, "approvalRuleTemplateNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

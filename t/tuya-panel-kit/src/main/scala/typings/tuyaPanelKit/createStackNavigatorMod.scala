@@ -20,8 +20,7 @@ object createStackNavigatorMod {
   val ^ : js.Any = js.native
   
   // tslint:disable-next-line max-line-length prefer-declare-function no-unnecessary-generics
-  @scala.inline
-  def default[ParamList /* <: Record[String, js.UndefOr[js.Object]] */](): TypedNavigator[
+  inline def default[ParamList /* <: Record[String, js.UndefOr[js.Object]] */](): TypedNavigator[
     ParamList, 
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     StackNavigationOptions, 
@@ -42,8 +41,7 @@ object createStackNavigatorMod {
        with StackNavigationConfig
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }

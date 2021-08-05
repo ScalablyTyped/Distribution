@@ -14,19 +14,15 @@ trait OnBluetoothAdapterStateChangeCallbackResult extends StObject {
 }
 object OnBluetoothAdapterStateChangeCallbackResult {
   
-  @scala.inline
-  def apply(available: Boolean, discovering: Boolean): OnBluetoothAdapterStateChangeCallbackResult = {
+  inline def apply(available: Boolean, discovering: Boolean): OnBluetoothAdapterStateChangeCallbackResult = {
     val __obj = js.Dynamic.literal(available = available.asInstanceOf[js.Any], discovering = discovering.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBluetoothAdapterStateChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnBluetoothAdapterStateChangeCallbackResultMutableBuilder[Self <: OnBluetoothAdapterStateChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnBluetoothAdapterStateChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
+    inline def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
   }
 }

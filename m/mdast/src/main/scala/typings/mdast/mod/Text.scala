@@ -15,17 +15,14 @@ trait Text
 }
 object Text {
   
-  @scala.inline
-  def apply(value: js.Any): Text = {
+  inline def apply(value: js.Any): Text = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

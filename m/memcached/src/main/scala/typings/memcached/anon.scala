@@ -15,17 +15,14 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(cas: String): Dictkey = {
+    inline def apply(cas: String): Dictkey = {
       val __obj = js.Dynamic.literal(cas = cas.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
+      inline def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
     }
   }
 }

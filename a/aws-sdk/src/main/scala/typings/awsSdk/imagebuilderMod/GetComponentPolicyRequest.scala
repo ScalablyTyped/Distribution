@@ -13,16 +13,13 @@ trait GetComponentPolicyRequest extends StObject {
 }
 object GetComponentPolicyRequest {
   
-  @scala.inline
-  def apply(componentArn: ComponentBuildVersionArn): GetComponentPolicyRequest = {
+  inline def apply(componentArn: ComponentBuildVersionArn): GetComponentPolicyRequest = {
     val __obj = js.Dynamic.literal(componentArn = componentArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComponentPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetComponentPolicyRequestMutableBuilder[Self <: GetComponentPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetComponentPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setComponentArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
+    inline def setComponentArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
   }
 }

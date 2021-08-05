@@ -13,25 +13,19 @@ trait `9` extends StObject {
 }
 object `9` {
   
-  @scala.inline
-  def apply(): `9` = {
+  inline def apply(): `9` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`9`]
   }
   
-  @scala.inline
-  implicit class `9MutableBuilder`[Self <: `9`] (val x: Self) extends AnyVal {
+  extension [Self <: `9`](x: Self) {
     
-    @scala.inline
-    def setNewVal(value: ContextMenuSettings): Self = StObject.set(x, "newVal", value.asInstanceOf[js.Any])
+    inline def setNewVal(value: ContextMenuSettings): Self = StObject.set(x, "newVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValUndefined: Self = StObject.set(x, "newVal", js.undefined)
+    inline def setNewValUndefined: Self = StObject.set(x, "newVal", js.undefined)
     
-    @scala.inline
-    def setOldVal(value: ContextMenuSettings): Self = StObject.set(x, "oldVal", value.asInstanceOf[js.Any])
+    inline def setOldVal(value: ContextMenuSettings): Self = StObject.set(x, "oldVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValUndefined: Self = StObject.set(x, "oldVal", js.undefined)
+    inline def setOldValUndefined: Self = StObject.set(x, "oldVal", js.undefined)
   }
 }

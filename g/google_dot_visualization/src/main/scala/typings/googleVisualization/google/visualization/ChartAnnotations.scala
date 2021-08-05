@@ -22,55 +22,39 @@ trait ChartAnnotations extends StObject {
 }
 object ChartAnnotations {
   
-  @scala.inline
-  def apply(): ChartAnnotations = {
+  inline def apply(): ChartAnnotations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAnnotations]
   }
   
-  @scala.inline
-  implicit class ChartAnnotationsMutableBuilder[Self <: ChartAnnotations] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAnnotations](x: Self) {
     
-    @scala.inline
-    def setBoxStyle(value: ChartBoxStyle): Self = StObject.set(x, "boxStyle", value.asInstanceOf[js.Any])
+    inline def setBoxStyle(value: ChartBoxStyle): Self = StObject.set(x, "boxStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxStyleUndefined: Self = StObject.set(x, "boxStyle", js.undefined)
+    inline def setBoxStyleUndefined: Self = StObject.set(x, "boxStyle", js.undefined)
     
-    @scala.inline
-    def setDatum(value: ChartStemAndStyle): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: ChartStemAndStyle): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setDomain(value: ChartStemAndStyle): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: ChartStemAndStyle): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setHighContrast(value: Boolean): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
+    inline def setHighContrast(value: Boolean): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighContrastUndefined: Self = StObject.set(x, "highContrast", js.undefined)
+    inline def setHighContrastUndefined: Self = StObject.set(x, "highContrast", js.undefined)
     
-    @scala.inline
-    def setStem(value: ChartStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
+    inline def setStem(value: ChartStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
+    inline def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

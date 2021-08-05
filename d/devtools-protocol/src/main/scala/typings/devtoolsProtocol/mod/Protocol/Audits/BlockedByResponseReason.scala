@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlockedByResponseReason extends StObject
 object BlockedByResponseReason {
   
-  @scala.inline
-  def CoepFrameResourceNeedsCoepHeader: typings.devtoolsProtocol.devtoolsProtocolStrings.CoepFrameResourceNeedsCoepHeader = "CoepFrameResourceNeedsCoepHeader".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CoepFrameResourceNeedsCoepHeader]
+  inline def CoepFrameResourceNeedsCoepHeader: typings.devtoolsProtocol.devtoolsProtocolStrings.CoepFrameResourceNeedsCoepHeader = "CoepFrameResourceNeedsCoepHeader".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CoepFrameResourceNeedsCoepHeader]
   
-  @scala.inline
-  def CoopSandboxedIFrameCannotNavigateToCoopPage: typings.devtoolsProtocol.devtoolsProtocolStrings.CoopSandboxedIFrameCannotNavigateToCoopPage = "CoopSandboxedIFrameCannotNavigateToCoopPage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CoopSandboxedIFrameCannotNavigateToCoopPage]
+  inline def CoopSandboxedIFrameCannotNavigateToCoopPage: typings.devtoolsProtocol.devtoolsProtocolStrings.CoopSandboxedIFrameCannotNavigateToCoopPage = "CoopSandboxedIFrameCannotNavigateToCoopPage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CoopSandboxedIFrameCannotNavigateToCoopPage]
   
-  @scala.inline
-  def CorpNotSameOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOrigin = "CorpNotSameOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOrigin]
+  inline def CorpNotSameOrigin: typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOrigin = "CorpNotSameOrigin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOrigin]
   
-  @scala.inline
-  def CorpNotSameOriginAfterDefaultedToSameOriginByCoep: typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOriginAfterDefaultedToSameOriginByCoep = "CorpNotSameOriginAfterDefaultedToSameOriginByCoep".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOriginAfterDefaultedToSameOriginByCoep]
+  inline def CorpNotSameOriginAfterDefaultedToSameOriginByCoep: typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOriginAfterDefaultedToSameOriginByCoep = "CorpNotSameOriginAfterDefaultedToSameOriginByCoep".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOriginAfterDefaultedToSameOriginByCoep]
   
-  @scala.inline
-  def CorpNotSameSite: typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameSite = "CorpNotSameSite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameSite]
+  inline def CorpNotSameSite: typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameSite = "CorpNotSameSite".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameSite]
 }

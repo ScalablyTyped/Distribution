@@ -13,19 +13,15 @@ trait MovingDialogDragColumnMovedEventUIParam extends StObject {
 }
 object MovingDialogDragColumnMovedEventUIParam {
   
-  @scala.inline
-  def apply(): MovingDialogDragColumnMovedEventUIParam = {
+  inline def apply(): MovingDialogDragColumnMovedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MovingDialogDragColumnMovedEventUIParam]
   }
   
-  @scala.inline
-  implicit class MovingDialogDragColumnMovedEventUIParamMutableBuilder[Self <: MovingDialogDragColumnMovedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MovingDialogDragColumnMovedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

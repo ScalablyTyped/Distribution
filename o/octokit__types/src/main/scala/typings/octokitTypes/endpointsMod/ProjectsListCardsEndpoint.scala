@@ -32,34 +32,25 @@ trait ProjectsListCardsEndpoint
 }
 object ProjectsListCardsEndpoint {
   
-  @scala.inline
-  def apply(column_id: Double, mediaType: `0`[inertia]): ProjectsListCardsEndpoint = {
+  inline def apply(column_id: Double, mediaType: `0`[inertia]): ProjectsListCardsEndpoint = {
     val __obj = js.Dynamic.literal(column_id = column_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsListCardsEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsListCardsEndpointMutableBuilder[Self <: ProjectsListCardsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsListCardsEndpoint](x: Self) {
     
-    @scala.inline
-    def setArchived_state(value: all | archived | not_archived): Self = StObject.set(x, "archived_state", value.asInstanceOf[js.Any])
+    inline def setArchived_state(value: all | archived | not_archived): Self = StObject.set(x, "archived_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchived_stateUndefined: Self = StObject.set(x, "archived_state", js.undefined)
+    inline def setArchived_stateUndefined: Self = StObject.set(x, "archived_state", js.undefined)
     
-    @scala.inline
-    def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
+    inline def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
   }
 }

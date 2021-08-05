@@ -28,12 +28,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ButtonColor extends StObject
 object ButtonColor {
   
-  @scala.inline
-  def default: default_ = "default".asInstanceOf[default_]
+  inline def default: default_ = "default".asInstanceOf[default_]
   
-  @scala.inline
-  def black: typings.googlepay.googlepayStrings.black = "black".asInstanceOf[typings.googlepay.googlepayStrings.black]
+  inline def black: typings.googlepay.googlepayStrings.black = "black".asInstanceOf[typings.googlepay.googlepayStrings.black]
   
-  @scala.inline
-  def white: typings.googlepay.googlepayStrings.white = "white".asInstanceOf[typings.googlepay.googlepayStrings.white]
+  inline def white: typings.googlepay.googlepayStrings.white = "white".asInstanceOf[typings.googlepay.googlepayStrings.white]
 }

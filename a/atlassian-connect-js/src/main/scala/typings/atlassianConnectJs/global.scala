@@ -35,8 +35,7 @@ object global {
     /**
       * allows for dynamic rejection of ajax requests before they can be invoked. eg: by checking against a whitelist
       */
-    @scala.inline
-    def addRequestMarshal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMarshal")().asInstanceOf[Unit]
+    inline def addRequestMarshal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRequestMarshal")().asInstanceOf[Unit]
     
     /**
       * A JavaScript module which provides functions for the current product context.
@@ -51,15 +50,13 @@ object global {
         * Retrieves the current user context containing details such as space key, issue id, etc.
         * @param callback the callback that handles the response
         */
-      @scala.inline
-      def getContext(callback: js.Function1[/* context */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getContext(callback: js.Function1[/* context */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Retrieves the current user context as a JWT token containing details such as space key, issue id, etc. Throws an error if add-on does not support JWT authentication
         * @param callback the callback that handles the response
         */
-      @scala.inline
-      def getToken(callback: js.Function1[/* token */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getToken(callback: js.Function1[/* token */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     /**
@@ -75,16 +72,14 @@ object global {
         * Remove the given cookie.
         * @param name the name of the cookie to remove
         */
-      @scala.inline
-      def erase(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("erase")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def erase(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("erase")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Get the value of a cookie.
         * @param name name of cookie to read
         * @param callback callback to pass cookie data
         */
-      @scala.inline
-      def read(name: String, callback: js.Function1[/* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def read(name: String, callback: js.Function1[/* value */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Save a cookie.
@@ -92,15 +87,12 @@ object global {
         * @param value value of cookie
         * @param expires number of days before cookie expires
         */
-      @scala.inline
-      def save(name: String, value: String, expires: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def save(name: String, value: String, expires: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
-    @scala.inline
-    def defineGlobal(module: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineGlobal")(module.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def defineGlobal(module: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defineGlobal")(module.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def defineModule(name: String, module: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineModule")(name.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def defineModule(name: String, module: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineModule")(name.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * The Dialog module provides a mechanism for launching an add-on's modules as modal dialogs from within an add-on's iframe.
@@ -119,45 +111,37 @@ object global {
         * You can register for close events using the `dialog.close` event and the events module.
         * @param data
         */
-      @scala.inline
-      def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
-      @scala.inline
-      def close(data: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
+      inline def close(data: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Creates a dialog for a common dialog, page or web-item module key.
         * @param options configuration object of dialog options.
         */
-      @scala.inline
-      def create(options: DialogOptions): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Dialog]
+      inline def create(options: DialogOptions): Dialog = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Dialog]
       
       /**
         * Creates a dialog button that can be controlled with javascript
         */
-      @scala.inline
-      def createButton(): DialogButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createButton")().asInstanceOf[DialogButton]
+      inline def createButton(): DialogButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createButton")().asInstanceOf[DialogButton]
       
       /**
         * Stop the dialog from closing when the submit button is clicked
         */
-      @scala.inline
-      def disableCloseOnSubmit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableCloseOnSubmit")().asInstanceOf[Unit]
+      inline def disableCloseOnSubmit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableCloseOnSubmit")().asInstanceOf[Unit]
       
       /**
         * Returns the button that was requested (either cancel or submit). If the requested button does not exist, an empty Object will be returned instead.
         */
-      @scala.inline
-      def getButton_cancel(button: cancel): DialogButton | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getButton")(button.asInstanceOf[js.Any]).asInstanceOf[DialogButton | js.Object]
+      inline def getButton_cancel(button: cancel): DialogButton | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getButton")(button.asInstanceOf[js.Any]).asInstanceOf[DialogButton | js.Object]
       
-      @scala.inline
-      def getButton_submit(button: submit): DialogButton | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getButton")(button.asInstanceOf[js.Any]).asInstanceOf[DialogButton | js.Object]
+      inline def getButton_submit(button: submit): DialogButton | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getButton")(button.asInstanceOf[js.Any]).asInstanceOf[DialogButton | js.Object]
       
       /**
         * Passes the custom data Object to the specified callback function.
         * @param customData Callback method to be executed with the custom data.
         */
-      @scala.inline
-      def getCustomData(callback: js.Function1[/* customData */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomData")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getCustomData(callback: js.Function1[/* customData */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomData")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Queries the value of the 'closeOnEscape' property.
@@ -165,8 +149,7 @@ object global {
         * If this property is true then the dialog should close if ESC is pressed.
         * @param callback function to receive the 'closeOnEscape' value.
         */
-      @scala.inline
-      def isCloseOnEscape(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseOnEscape")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def isCloseOnEscape(callback: js.Function1[/* enabled */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isCloseOnEscape")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     /**
@@ -188,8 +171,7 @@ object global {
         * @param name The name of event to emit
         * @param args 0 or more additional data arguments to deliver with the event
         */
-      @scala.inline
-      def emit(name: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def emit(name: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Emits a public event on this bus, firing listeners by name as well as all 'anyPublic' listeners.
@@ -200,52 +182,45 @@ object global {
         * @param name The name of event to emit
         * @param args 0 or more additional data arguments to deliver with the event
         */
-      @scala.inline
-      def emitPublic(name: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitPublic")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def emitPublic(name: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitPublic")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Removes a particular listener for an event.
         * @param name The event name to unsubscribe the listener from
         * @param listener The listener callback to unsubscribe from the event name
         */
-      @scala.inline
-      def off(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def off(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Removes all listeners from an event name, or unsubscribes all event-name-specific listeners if no name if given.
         * @param name  The event name to unsubscribe all listeners from
         */
-      @scala.inline
-      def offAll(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAll")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offAll(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAll")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Removes all listeners from a public event name, or unsubscribes all event-name-specific listeners for public events if no name if given.
         * @param name The event name to unsubscribe all listeners from
         */
-      @scala.inline
-      def offAllPublic(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAllPublic")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offAllPublic(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAllPublic")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Removes an `any` event listener.
         * @param listener A listener callback to unsubscribe from any event name
         */
-      @scala.inline
-      def offAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Removes an `anyPublic` event listener.
         * @param listener A listener callback to unsubscribe from any event name
         */
-      @scala.inline
-      def offAnyPublic(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAnyPublic")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def offAnyPublic(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offAnyPublic")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Removes a particular listener for a public event.
         * @param name The event name to unsubscribe the listener from
         * @param listener The listener callback to unsubscribe from the event name
         */
-      @scala.inline
-      def offPublic(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offPublic")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def offPublic(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offPublic")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Adds a listener for all occurrences of an event of a particular name.
@@ -254,8 +229,7 @@ object global {
         * @param name The event name to subscribe the listener to
         * @param listener A listener callback to subscribe to the event name
         */
-      @scala.inline
-      def on(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def on(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Adds a listener for all occurrences of any event, regardless of name.
@@ -263,8 +237,7 @@ object global {
         * Listener arguments begin with the event name, followed by any arguments passed to `events.emit`, followed by an object describing the complete event information.
         * @param listener A listener callback to subscribe for any event name
         */
-      @scala.inline
-      def onAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def onAny(listener: js.Function1[/* data */ js.Object, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAny")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Adds a listener for all occurrences of any event, regardless of name.
@@ -275,8 +248,7 @@ object global {
         * @param listener A listener callback to subscribe for any event name
         * @param filter A filter function to filter the events. Callback will always be called when a matching event occurs if the filter is unspecified
         */
-      @scala.inline
-      def onAnyPublic(
+      inline def onAnyPublic(
         listener: js.Function1[/* data */ js.Object, Unit],
         filter: js.Function1[/* toCompare */ js.Any, Boolean]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onAnyPublic")(listener.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -291,8 +263,7 @@ object global {
         * @param listener A listener callback to subscribe to the event name
         * @param filter A filter function to filter the events. Callback will always be called when a matching event occurs if the filter is unspecified
         */
-      @scala.inline
-      def onPublic(
+      inline def onPublic(
         name: String,
         listener: js.Function1[/* data */ js.Object, Unit],
         filter: js.Function1[/* toCompare */ js.Any, Boolean]
@@ -305,8 +276,7 @@ object global {
         * @param name The event name to subscribe the listener to
         * @param listener A listener callback to subscribe to the event name
         */
-      @scala.inline
-      def once(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def once(name: String, listener: js.Function1[/* data */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Adds a listener for one occurrence of a public event of a particular name.
@@ -318,8 +288,7 @@ object global {
         * @param listener A listener callback to subscribe to the event name
         * @param filter A filter function to filter the events. Callback will always be called when a matching event occurs if the filter is unspecified
         */
-      @scala.inline
-      def oncePublic(
+      inline def oncePublic(
         name: String,
         listener: js.Function1[/* data */ js.Object, Unit],
         filter: js.Function1[/* toCompare */ js.Any, Boolean]
@@ -336,23 +305,20 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def create(options: Partialtitlestringbodystr): Flag = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Flag]
+      inline def create(options: Partialtitlestringbodystr): Flag = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Flag]
     }
     
     /**
       * Get the location of the current page of the host product.
       * @param callback
       */
-    @scala.inline
-    def getLocation(callback: js.Function1[/* location */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getLocation(callback: js.Function1[/* location */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Hide footer..
       * @param hideFooter true if the footer is supposed to be hidden
       */
-    @scala.inline
-    def hideFooter(hideFooter: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideFooter")(hideFooter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def hideFooter(hideFooter: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideFooter")(hideFooter.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * The History API allows your add-on to manipulate the current page URL for use in navigation. When using the history module only the page anchor is modified and not the entire window location.
@@ -368,29 +334,25 @@ object global {
       /**
         * Goes back one step in the joint session history. Will invoke the popState callback.
         */
-      @scala.inline
-      def back(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[Unit]
+      inline def back(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("back")().asInstanceOf[Unit]
       
       /**
         * Goes back one step in the joint session history. Will invoke the popState callback.
         */
-      @scala.inline
-      def forward(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[Unit]
+      inline def forward(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[Unit]
       
       /**
         * Retrieves the current state of the history stack and returns the value. The returned value is the same as what was set with the pushState method.
         * @returns The current url anchor
         */
-      @scala.inline
-      def getState(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[String]
+      inline def getState(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[String]
       
       /**
         * Moves the page history back or forward the specified number of steps.
         * A zero delta will reload the current page. If the delta is out of range, does nothing. This call invoke the popState callback.
         * @param delta Number of places to move in the history
         */
-      @scala.inline
-      def go(delta: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(delta.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def go(delta: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("go")(delta.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Updates the location's anchor with the specified value and pushes the given data onto the session history. Does not invoke popState callback.
@@ -398,15 +360,13 @@ object global {
         * @param title
         * @param url URL to add to history
         */
-      @scala.inline
-      def pushState(newState: js.Object, title: String, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushState")(newState.asInstanceOf[js.Any], title.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def pushState(newState: js.Object, title: String, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pushState")(newState.asInstanceOf[js.Any], title.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Updates the current entry in the session history. Updates the location's anchor with the specified value but does not change the session history. Does not invoke popState callback.
         * @param url URL to update current history value with
         */
-      @scala.inline
-      def replaceState(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceState")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def replaceState(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceState")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     /**
@@ -422,8 +382,7 @@ object global {
         * Gets the selected text on the page.
         * @param callback method to be executed with the selected text.
         */
-      @scala.inline
-      def getSelectedText(callback: js.Function1[/* selection */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedText")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getSelectedText(callback: js.Function1[/* selection */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedText")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     /**
@@ -442,8 +401,7 @@ object global {
       /**
         * Hide the inline dialog that contains the iframe where this method is called from.
         */
-      @scala.inline
-      def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+      inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
     }
     
     /**
@@ -455,66 +413,57 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def getWorkflowConfiguration(callback: js.Function1[/* workflowConfiguration */ WorkflowConfiguration, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkflowConfiguration")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getWorkflowConfiguration(callback: js.Function1[/* workflowConfiguration */ WorkflowConfiguration, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkflowConfiguration")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Prepares the JQL Editor dialog in preparation for fast rendering. This method should be called on iframe load if it contains a JQL editor trigger.
         */
-      @scala.inline
-      def initJQLEditor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initJQLEditor")().asInstanceOf[Unit]
+      inline def initJQLEditor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initJQLEditor")().asInstanceOf[Unit]
       
       /**
         * Returns whether the current user is permitted to edit the dashboard item
         * @param callback the callback that handles the response
         */
-      @scala.inline
-      def isDashboardItemEditable(callback: js.Function1[/* editable */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isDashboardItemEditable")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def isDashboardItemEditable(callback: js.Function1[/* editable */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isDashboardItemEditable")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Returns whether the addon is being shown within a native app on iOS, Android or Mac.
         * @param callback the callback that handles the response
         */
-      @scala.inline
-      def isNativeApp(callback: js.Function1[/* isNative */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNativeApp")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def isNativeApp(callback: js.Function1[/* isNative */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNativeApp")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Open the quick create issue dialog. The dialog fields may be pre-filled with supplied data. A callback will be invoked when the dialog is closed and will include an array of issues created.
         * @param callback invoked when dialog is closed, takes a single parameter - array of issues created
         * @param params contains data to pre-fill the dialog with
         */
-      @scala.inline
-      def openCreateIssueDialog(callback: js.Function1[/* issues */ js.Array[js.Object], Unit], params: Fields): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openCreateIssueDialog")(callback.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def openCreateIssueDialog(callback: js.Function1[/* issues */ js.Array[js.Object], Unit], params: Fields): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openCreateIssueDialog")(callback.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Shows a date picker component. A callback will be invoked when the date (and time) is selected by the user.
         * @param options Configuration of the date picker.
         */
-      @scala.inline
-      def openDatePicker(options: PartialDatePickerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatePicker")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def openDatePicker(options: PartialDatePickerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatePicker")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Refresh an issue page without reloading the browser.
         *
         * This is helpful when your add-on updates information about an issue in the background.
         */
-      @scala.inline
-      def refreshIssuePage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshIssuePage")().asInstanceOf[Unit]
+      inline def refreshIssuePage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshIssuePage")().asInstanceOf[Unit]
       
       /**
         * Set the title of a dashboard item to the given text.
         * @param title the title of the dashboard item. Any HTML is escaped.
         */
-      @scala.inline
-      def setDashboardItemTitle(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDashboardItemTitle")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setDashboardItemTitle(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDashboardItemTitle")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Launches a JQL Editor dialog. A callback will be invoked when the JQL is submitted by the user.
         * @param callback invoked when dialog is submitted, includes an object containing the jql
         * @param options contains data to pre-fill the dialog with
         */
-      @scala.inline
-      def showJQLEditor(callback: js.Function1[/* obj */ Jql, Unit], options: Partialjqlstringheaderstr): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showJQLEditor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def showJQLEditor(callback: js.Function1[/* obj */ Jql, Unit], options: Partialjqlstringheaderstr): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showJQLEditor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /**
@@ -588,11 +537,9 @@ object global {
         * **contentedit** - the host application is currently editing a page, blog post or other content.
         * @param callback
         */
-      @scala.inline
-      def getLocation(callback: js.Function1[/* location */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getLocation(callback: js.Function1[/* location */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def go(target: NavigatorTargetConfluence, context: PartialNavigatorContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("go")(target.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def go(target: NavigatorTargetConfluence, context: PartialNavigatorContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("go")(target.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
       /**
         * Navigates the user from the current page to the specified page. This call navigates the host product, not the iframe content.
         *
@@ -600,27 +547,22 @@ object global {
         * @param target
         * @param context
         */
-      @scala.inline
-      def go(target: NavigatorTargetJira, context: PartialNavigatorContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("go")(target.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def go(target: NavigatorTargetJira, context: PartialNavigatorContext): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("go")(target.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Triggers a reload of the parent page.
         */
-      @scala.inline
-      def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
+      inline def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
     }
     
-    @scala.inline
-    def request(options: urlstringPartialRequestOp): js.Promise[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Body]]
+    inline def request(options: urlstringPartialRequestOp): js.Promise[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Body]]
     /**
       * Execute an XMLHttpRequest as a Promise, or via callbacks, in the context of the host application. The format of the response (dataType) will always be set to "text" - even if specified.
       * @param url Either the URI to request or an options object (as below) containing at least a 'url' property; This value should be relative to the context path of the host application.
       * @param options The options of the request.
       */
-    @scala.inline
-    def request(url: String): js.Promise[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Body]]
-    @scala.inline
-    def request(url: String, options: PartialRequestOptions): js.Promise[Body] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Body]]
+    inline def request(url: String): js.Promise[Body] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Body]]
+    inline def request(url: String, options: PartialRequestOptions): js.Promise[Body] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Body]]
     
     /**
       * Resize the iframe to a specified width and height.
@@ -632,8 +574,7 @@ object global {
       * @param width the desired width
       * @param height the desired height
       */
-    @scala.inline
-    def resize(width: String, height: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def resize(width: String, height: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Resize the iframe, so that it takes the entire page. Add-on may define to hide the footer using data-options.
@@ -641,8 +582,7 @@ object global {
       * Note that this method is only available for general page modules.
       * @param hideFooter true if the footer is supposed to be hidden
       */
-    @scala.inline
-    def sizeToParent(hideFooter: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeToParent")(hideFooter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def sizeToParent(hideFooter: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeToParent")(hideFooter.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * A JavaScript module which provides functions to interact with the user currently in session.
@@ -657,8 +597,7 @@ object global {
         * This method retrieves the current user object containing the user's Atlassian Account ID.
         * @param callback the callback that handles the response. A single parameter is passed to the callback. This parameter is an object comprising an attribute "atlassianAccountId".
         */
-      @scala.inline
-      def getCurrentUser(callback: js.Function1[/* user */ AtlassianAccountId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getCurrentUser(callback: js.Function1[/* user */ AtlassianAccountId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Retrieve the user's locale used by the product.
@@ -668,8 +607,7 @@ object global {
         * You should not present the user's locale in a way that can be seen by other users viewing the application.
         * @param callback the callback that handles the response
         */
-      @scala.inline
-      def getLocale(callback: js.Function1[/* locale */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getLocale(callback: js.Function1[/* locale */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Retrieve the current user's timezone. If there is no logged in user, the server timezone is returned.
@@ -679,16 +617,14 @@ object global {
         * You should not present the user's timezone in a way that can be seen by other users viewing the application.
         * @param callback the callback that handles the response
         */
-      @scala.inline
-      def getTimeZone(callback: js.Function1[/* timezone */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeZone")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getTimeZone(callback: js.Function1[/* timezone */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeZone")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Retrieves the current user object containing the user's id and full name
         * @deprecated Please use a new method AP.user.getCurrentUser() which will simply return the Atlassian Account ID.
         * @param callback the callback that handles the response
         */
-      @scala.inline
-      def getUser(callback: js.Function1[/* user */ FullName, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def getUser(callback: js.Function1[/* user */ FullName, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
   }
 }

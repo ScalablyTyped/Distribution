@@ -26,8 +26,7 @@ trait ApplicationMoveFailed
 }
 object ApplicationMoveFailed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     args: String | js.Array[String],
     channel: Channel,
@@ -40,19 +39,14 @@ object ApplicationMoveFailed {
     __obj.asInstanceOf[ApplicationMoveFailed]
   }
   
-  @scala.inline
-  implicit class ApplicationMoveFailedMutableBuilder[Self <: ApplicationMoveFailed] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationMoveFailed](x: Self) {
     
-    @scala.inline
-    def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: String | js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

@@ -22,31 +22,23 @@ trait CodeScanningListRecentAnalysesEndpoint extends StObject {
 }
 object CodeScanningListRecentAnalysesEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): CodeScanningListRecentAnalysesEndpoint = {
+  inline def apply(owner: String, repo: String): CodeScanningListRecentAnalysesEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeScanningListRecentAnalysesEndpoint]
   }
   
-  @scala.inline
-  implicit class CodeScanningListRecentAnalysesEndpointMutableBuilder[Self <: CodeScanningListRecentAnalysesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CodeScanningListRecentAnalysesEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
+    inline def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTool_nameUndefined: Self = StObject.set(x, "tool_name", js.undefined)
+    inline def setTool_nameUndefined: Self = StObject.set(x, "tool_name", js.undefined)
   }
 }

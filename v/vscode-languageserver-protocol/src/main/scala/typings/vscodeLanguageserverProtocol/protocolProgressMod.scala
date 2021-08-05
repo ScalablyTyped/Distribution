@@ -81,38 +81,28 @@ object protocolProgressMod {
   }
   object WorkDoneProgressBegin {
     
-    @scala.inline
-    def apply(title: String): WorkDoneProgressBegin = {
+    inline def apply(title: String): WorkDoneProgressBegin = {
       val __obj = js.Dynamic.literal(kind = "begin", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkDoneProgressBegin]
     }
     
-    @scala.inline
-    implicit class WorkDoneProgressBeginMutableBuilder[Self <: WorkDoneProgressBegin] (val x: Self) extends AnyVal {
+    extension [Self <: WorkDoneProgressBegin](x: Self) {
       
-      @scala.inline
-      def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
+      inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellableUndefined: Self = StObject.set(x, "cancellable", js.undefined)
+      inline def setCancellableUndefined: Self = StObject.set(x, "cancellable", js.undefined)
       
-      @scala.inline
-      def setKind(value: begin): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: begin): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,17 +115,14 @@ object protocolProgressMod {
   }
   object WorkDoneProgressCancelParams {
     
-    @scala.inline
-    def apply(token: ProgressToken): WorkDoneProgressCancelParams = {
+    inline def apply(token: ProgressToken): WorkDoneProgressCancelParams = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkDoneProgressCancelParams]
     }
     
-    @scala.inline
-    implicit class WorkDoneProgressCancelParamsMutableBuilder[Self <: WorkDoneProgressCancelParams] (val x: Self) extends AnyVal {
+    extension [Self <: WorkDoneProgressCancelParams](x: Self) {
       
-      @scala.inline
-      def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,20 +135,16 @@ object protocolProgressMod {
   }
   object WorkDoneProgressClientCapabilities {
     
-    @scala.inline
-    def apply(): WorkDoneProgressClientCapabilities = {
+    inline def apply(): WorkDoneProgressClientCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkDoneProgressClientCapabilities]
     }
     
-    @scala.inline
-    implicit class WorkDoneProgressClientCapabilitiesMutableBuilder[Self <: WorkDoneProgressClientCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: WorkDoneProgressClientCapabilities](x: Self) {
       
-      @scala.inline
-      def setWindow(value: `3`): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: `3`): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -174,17 +157,14 @@ object protocolProgressMod {
   }
   object WorkDoneProgressCreateParams {
     
-    @scala.inline
-    def apply(token: ProgressToken): WorkDoneProgressCreateParams = {
+    inline def apply(token: ProgressToken): WorkDoneProgressCreateParams = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkDoneProgressCreateParams]
     }
     
-    @scala.inline
-    implicit class WorkDoneProgressCreateParamsMutableBuilder[Self <: WorkDoneProgressCreateParams] (val x: Self) extends AnyVal {
+    extension [Self <: WorkDoneProgressCreateParams](x: Self) {
       
-      @scala.inline
-      def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: ProgressToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,23 +180,18 @@ object protocolProgressMod {
   }
   object WorkDoneProgressEnd {
     
-    @scala.inline
-    def apply(): WorkDoneProgressEnd = {
+    inline def apply(): WorkDoneProgressEnd = {
       val __obj = js.Dynamic.literal(kind = "end")
       __obj.asInstanceOf[WorkDoneProgressEnd]
     }
     
-    @scala.inline
-    implicit class WorkDoneProgressEndMutableBuilder[Self <: WorkDoneProgressEnd] (val x: Self) extends AnyVal {
+    extension [Self <: WorkDoneProgressEnd](x: Self) {
       
-      @scala.inline
-      def setKind(value: end): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: end): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -254,35 +229,26 @@ object protocolProgressMod {
   }
   object WorkDoneProgressReport {
     
-    @scala.inline
-    def apply(): WorkDoneProgressReport = {
+    inline def apply(): WorkDoneProgressReport = {
       val __obj = js.Dynamic.literal(kind = "report")
       __obj.asInstanceOf[WorkDoneProgressReport]
     }
     
-    @scala.inline
-    implicit class WorkDoneProgressReportMutableBuilder[Self <: WorkDoneProgressReport] (val x: Self) extends AnyVal {
+    extension [Self <: WorkDoneProgressReport](x: Self) {
       
-      @scala.inline
-      def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
+      inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellableUndefined: Self = StObject.set(x, "cancellable", js.undefined)
+      inline def setCancellableUndefined: Self = StObject.set(x, "cancellable", js.undefined)
       
-      @scala.inline
-      def setKind(value: report): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: report): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
     }
   }
 }

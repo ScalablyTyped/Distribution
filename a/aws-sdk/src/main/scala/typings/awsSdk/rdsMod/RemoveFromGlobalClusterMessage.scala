@@ -18,25 +18,19 @@ trait RemoveFromGlobalClusterMessage extends StObject {
 }
 object RemoveFromGlobalClusterMessage {
   
-  @scala.inline
-  def apply(): RemoveFromGlobalClusterMessage = {
+  inline def apply(): RemoveFromGlobalClusterMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveFromGlobalClusterMessage]
   }
   
-  @scala.inline
-  implicit class RemoveFromGlobalClusterMessageMutableBuilder[Self <: RemoveFromGlobalClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveFromGlobalClusterMessage](x: Self) {
     
-    @scala.inline
-    def setDbClusterIdentifier(value: String): Self = StObject.set(x, "DbClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDbClusterIdentifier(value: String): Self = StObject.set(x, "DbClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbClusterIdentifierUndefined: Self = StObject.set(x, "DbClusterIdentifier", js.undefined)
+    inline def setDbClusterIdentifierUndefined: Self = StObject.set(x, "DbClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setGlobalClusterIdentifier(value: String): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setGlobalClusterIdentifier(value: String): Self = StObject.set(x, "GlobalClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalClusterIdentifierUndefined: Self = StObject.set(x, "GlobalClusterIdentifier", js.undefined)
+    inline def setGlobalClusterIdentifierUndefined: Self = StObject.set(x, "GlobalClusterIdentifier", js.undefined)
   }
 }

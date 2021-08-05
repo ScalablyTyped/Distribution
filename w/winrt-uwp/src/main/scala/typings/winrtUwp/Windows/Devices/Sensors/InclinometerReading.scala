@@ -25,8 +25,7 @@ trait InclinometerReading extends StObject {
 }
 object InclinometerReading {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     pitchDegrees: Double,
     rollDegrees: Double,
     timestamp: Date,
@@ -37,22 +36,16 @@ object InclinometerReading {
     __obj.asInstanceOf[InclinometerReading]
   }
   
-  @scala.inline
-  implicit class InclinometerReadingMutableBuilder[Self <: InclinometerReading] (val x: Self) extends AnyVal {
+  extension [Self <: InclinometerReading](x: Self) {
     
-    @scala.inline
-    def setPitchDegrees(value: Double): Self = StObject.set(x, "pitchDegrees", value.asInstanceOf[js.Any])
+    inline def setPitchDegrees(value: Double): Self = StObject.set(x, "pitchDegrees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollDegrees(value: Double): Self = StObject.set(x, "rollDegrees", value.asInstanceOf[js.Any])
+    inline def setRollDegrees(value: Double): Self = StObject.set(x, "rollDegrees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYawAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "yawAccuracy", value.asInstanceOf[js.Any])
+    inline def setYawAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "yawAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYawDegrees(value: Double): Self = StObject.set(x, "yawDegrees", value.asInstanceOf[js.Any])
+    inline def setYawDegrees(value: Double): Self = StObject.set(x, "yawDegrees", value.asInstanceOf[js.Any])
   }
 }

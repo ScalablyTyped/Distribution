@@ -112,122 +112,84 @@ object mod {
   }
   object ReactNativeSideMenuProps {
     
-    @scala.inline
-    def apply(): ReactNativeSideMenuProps = {
+    inline def apply(): ReactNativeSideMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactNativeSideMenuProps]
     }
     
-    @scala.inline
-    implicit class ReactNativeSideMenuPropsMutableBuilder[Self <: ReactNativeSideMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactNativeSideMenuProps](x: Self) {
       
-      @scala.inline
-      def setAnimationFunction(value: (/* prop */ Value, /* value */ Double) => CompositeAnimation): Self = StObject.set(x, "animationFunction", js.Any.fromFunction2(value))
+      inline def setAnimationFunction(value: (/* prop */ Value, /* value */ Double) => CompositeAnimation): Self = StObject.set(x, "animationFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationFunctionUndefined: Self = StObject.set(x, "animationFunction", js.undefined)
+      inline def setAnimationFunctionUndefined: Self = StObject.set(x, "animationFunction", js.undefined)
       
-      @scala.inline
-      def setAnimationStyle(value: /* value */ Double => ViewStyle): Self = StObject.set(x, "animationStyle", js.Any.fromFunction1(value))
+      inline def setAnimationStyle(value: /* value */ Double => ViewStyle): Self = StObject.set(x, "animationStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnimationStyleUndefined: Self = StObject.set(x, "animationStyle", js.undefined)
+      inline def setAnimationStyleUndefined: Self = StObject.set(x, "animationStyle", js.undefined)
       
-      @scala.inline
-      def setAutoClosing(value: Boolean): Self = StObject.set(x, "autoClosing", value.asInstanceOf[js.Any])
+      inline def setAutoClosing(value: Boolean): Self = StObject.set(x, "autoClosing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoClosingUndefined: Self = StObject.set(x, "autoClosing", js.undefined)
+      inline def setAutoClosingUndefined: Self = StObject.set(x, "autoClosing", js.undefined)
       
-      @scala.inline
-      def setBounceBackOnOverdraw(value: Boolean): Self = StObject.set(x, "bounceBackOnOverdraw", value.asInstanceOf[js.Any])
+      inline def setBounceBackOnOverdraw(value: Boolean): Self = StObject.set(x, "bounceBackOnOverdraw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceBackOnOverdrawUndefined: Self = StObject.set(x, "bounceBackOnOverdraw", js.undefined)
+      inline def setBounceBackOnOverdrawUndefined: Self = StObject.set(x, "bounceBackOnOverdraw", js.undefined)
       
-      @scala.inline
-      def setDisableGestures(value: Boolean): Self = StObject.set(x, "disableGestures", value.asInstanceOf[js.Any])
+      inline def setDisableGestures(value: Boolean): Self = StObject.set(x, "disableGestures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableGesturesUndefined: Self = StObject.set(x, "disableGestures", js.undefined)
+      inline def setDisableGesturesUndefined: Self = StObject.set(x, "disableGestures", js.undefined)
       
-      @scala.inline
-      def setEdgeHitWidth(value: Double): Self = StObject.set(x, "edgeHitWidth", value.asInstanceOf[js.Any])
+      inline def setEdgeHitWidth(value: Double): Self = StObject.set(x, "edgeHitWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeHitWidthUndefined: Self = StObject.set(x, "edgeHitWidth", js.undefined)
+      inline def setEdgeHitWidthUndefined: Self = StObject.set(x, "edgeHitWidth", js.undefined)
       
-      @scala.inline
-      def setHiddenMenuOffset(value: Double): Self = StObject.set(x, "hiddenMenuOffset", value.asInstanceOf[js.Any])
+      inline def setHiddenMenuOffset(value: Double): Self = StObject.set(x, "hiddenMenuOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenMenuOffsetUndefined: Self = StObject.set(x, "hiddenMenuOffset", js.undefined)
+      inline def setHiddenMenuOffsetUndefined: Self = StObject.set(x, "hiddenMenuOffset", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: ReactNode): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPosition(value: left | right): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
+      inline def setMenuPosition(value: left | right): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
+      inline def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
       
-      @scala.inline
-      def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      @scala.inline
-      def setOnAnimationComplete(value: /* event */ EndCallback => Unit): Self = StObject.set(x, "onAnimationComplete", js.Any.fromFunction1(value))
+      inline def setOnAnimationComplete(value: /* event */ EndCallback => Unit): Self = StObject.set(x, "onAnimationComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationCompleteUndefined: Self = StObject.set(x, "onAnimationComplete", js.undefined)
+      inline def setOnAnimationCompleteUndefined: Self = StObject.set(x, "onAnimationComplete", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* isOpen */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* isOpen */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnMove(value: /* left */ Double => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
+      inline def setOnMove(value: /* left */ Double => Unit): Self = StObject.set(x, "onMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
+      inline def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
       
-      @scala.inline
-      def setOnSliding(value: /* fraction */ Double => Unit): Self = StObject.set(x, "onSliding", js.Any.fromFunction1(value))
+      inline def setOnSliding(value: /* fraction */ Double => Unit): Self = StObject.set(x, "onSliding", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSlidingUndefined: Self = StObject.set(x, "onSliding", js.undefined)
+      inline def setOnSlidingUndefined: Self = StObject.set(x, "onSliding", js.undefined)
       
-      @scala.inline
-      def setOnStartShouldSetResponderCapture(value: /* e */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+      inline def setOnStartShouldSetResponderCapture(value: /* e */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
+      inline def setOnStartShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetResponderCapture", js.undefined)
       
-      @scala.inline
-      def setOpenMenuOffset(value: Double): Self = StObject.set(x, "openMenuOffset", value.asInstanceOf[js.Any])
+      inline def setOpenMenuOffset(value: Double): Self = StObject.set(x, "openMenuOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenMenuOffsetUndefined: Self = StObject.set(x, "openMenuOffset", js.undefined)
+      inline def setOpenMenuOffsetUndefined: Self = StObject.set(x, "openMenuOffset", js.undefined)
       
-      @scala.inline
-      def setToleranceX(value: Double): Self = StObject.set(x, "toleranceX", value.asInstanceOf[js.Any])
+      inline def setToleranceX(value: Double): Self = StObject.set(x, "toleranceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceXUndefined: Self = StObject.set(x, "toleranceX", js.undefined)
+      inline def setToleranceXUndefined: Self = StObject.set(x, "toleranceX", js.undefined)
       
-      @scala.inline
-      def setToleranceY(value: Double): Self = StObject.set(x, "toleranceY", value.asInstanceOf[js.Any])
+      inline def setToleranceY(value: Double): Self = StObject.set(x, "toleranceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceYUndefined: Self = StObject.set(x, "toleranceY", js.undefined)
+      inline def setToleranceYUndefined: Self = StObject.set(x, "toleranceY", js.undefined)
     }
   }
   

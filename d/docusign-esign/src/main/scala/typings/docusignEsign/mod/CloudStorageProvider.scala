@@ -38,45 +38,33 @@ trait CloudStorageProvider extends StObject {
 }
 object CloudStorageProvider {
   
-  @scala.inline
-  def apply(): CloudStorageProvider = {
+  inline def apply(): CloudStorageProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudStorageProvider]
   }
   
-  @scala.inline
-  implicit class CloudStorageProviderMutableBuilder[Self <: CloudStorageProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CloudStorageProvider](x: Self) {
     
-    @scala.inline
-    def setAuthenticationUrl(value: String): Self = StObject.set(x, "authenticationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthenticationUrl(value: String): Self = StObject.set(x, "authenticationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationUrlUndefined: Self = StObject.set(x, "authenticationUrl", js.undefined)
+    inline def setAuthenticationUrlUndefined: Self = StObject.set(x, "authenticationUrl", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+    inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+    inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

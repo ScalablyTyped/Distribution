@@ -13,19 +13,15 @@ trait InspectorBaseProps extends StObject {
 }
 object InspectorBaseProps {
   
-  @scala.inline
-  def apply(): InspectorBaseProps = {
+  inline def apply(): InspectorBaseProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InspectorBaseProps]
   }
   
-  @scala.inline
-  implicit class InspectorBasePropsMutableBuilder[Self <: InspectorBaseProps] (val x: Self) extends AnyVal {
+  extension [Self <: InspectorBaseProps](x: Self) {
     
-    @scala.inline
-    def setTable(value: Boolean): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Boolean): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

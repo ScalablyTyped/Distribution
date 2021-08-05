@@ -18,22 +18,17 @@ trait DeleteInternetGatewayRequest extends StObject {
 }
 object DeleteInternetGatewayRequest {
   
-  @scala.inline
-  def apply(InternetGatewayId: InternetGatewayId): DeleteInternetGatewayRequest = {
+  inline def apply(InternetGatewayId: InternetGatewayId): DeleteInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(InternetGatewayId = InternetGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInternetGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInternetGatewayRequestMutableBuilder[Self <: DeleteInternetGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInternetGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInternetGatewayId(value: InternetGatewayId): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
+    inline def setInternetGatewayId(value: InternetGatewayId): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
   }
 }

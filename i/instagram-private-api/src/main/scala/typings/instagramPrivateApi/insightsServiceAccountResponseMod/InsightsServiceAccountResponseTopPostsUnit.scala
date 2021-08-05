@@ -14,8 +14,7 @@ trait InsightsServiceAccountResponseTopPostsUnit extends StObject {
 }
 object InsightsServiceAccountResponseTopPostsUnit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     last_week_posts_count: Double,
     top_posts: InsightsServiceAccountResponseTopPosts,
     week_over_week_posts_delta: Double
@@ -24,16 +23,12 @@ object InsightsServiceAccountResponseTopPostsUnit {
     __obj.asInstanceOf[InsightsServiceAccountResponseTopPostsUnit]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseTopPostsUnitMutableBuilder[Self <: InsightsServiceAccountResponseTopPostsUnit] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseTopPostsUnit](x: Self) {
     
-    @scala.inline
-    def setLast_week_posts_count(value: Double): Self = StObject.set(x, "last_week_posts_count", value.asInstanceOf[js.Any])
+    inline def setLast_week_posts_count(value: Double): Self = StObject.set(x, "last_week_posts_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop_posts(value: InsightsServiceAccountResponseTopPosts): Self = StObject.set(x, "top_posts", value.asInstanceOf[js.Any])
+    inline def setTop_posts(value: InsightsServiceAccountResponseTopPosts): Self = StObject.set(x, "top_posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeek_over_week_posts_delta(value: Double): Self = StObject.set(x, "week_over_week_posts_delta", value.asInstanceOf[js.Any])
+    inline def setWeek_over_week_posts_delta(value: Double): Self = StObject.set(x, "week_over_week_posts_delta", value.asInstanceOf[js.Any])
   }
 }

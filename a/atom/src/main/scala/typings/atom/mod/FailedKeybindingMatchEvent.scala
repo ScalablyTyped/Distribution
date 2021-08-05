@@ -15,19 +15,15 @@ trait FailedKeybindingMatchEvent extends StObject {
 }
 object FailedKeybindingMatchEvent {
   
-  @scala.inline
-  def apply(keyboardEventTarget: Element, keystrokes: String): FailedKeybindingMatchEvent = {
+  inline def apply(keyboardEventTarget: Element, keystrokes: String): FailedKeybindingMatchEvent = {
     val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget.asInstanceOf[js.Any], keystrokes = keystrokes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedKeybindingMatchEvent]
   }
   
-  @scala.inline
-  implicit class FailedKeybindingMatchEventMutableBuilder[Self <: FailedKeybindingMatchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FailedKeybindingMatchEvent](x: Self) {
     
-    @scala.inline
-    def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
+    inline def setKeyboardEventTarget(value: Element): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+    inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
   }
 }

@@ -23,21 +23,21 @@ object reorderableMod {
       */
     def this(props: IDragReorderable, context: js.Any) = this()
     
-    var getDraggableProps: js.Any = js.native
+    /* private */ var getDraggableProps: js.Any = js.native
     
-    var handleActivate: js.Any = js.native
+    /* private */ var handleActivate: js.Any = js.native
     
-    var handleDragEnd: js.Any = js.native
+    /* private */ var handleDragEnd: js.Any = js.native
     
-    var handleDragMove: js.Any = js.native
+    /* private */ var handleDragMove: js.Any = js.native
     
-    var maybeSelectRegion: js.Any = js.native
+    /* private */ var maybeSelectRegion: js.Any = js.native
     
-    var selectedRegionLength: js.Any = js.native
+    /* private */ var selectedRegionLength: js.Any = js.native
     
-    var selectedRegionStartIndex: js.Any = js.native
+    /* private */ var selectedRegionStartIndex: js.Any = js.native
     
-    var shouldIgnoreMouseDown: js.Any = js.native
+    /* private */ var shouldIgnoreMouseDown: js.Any = js.native
   }
   /* static members */
   object DragReorderable {
@@ -49,8 +49,7 @@ object reorderableMod {
     @JSImport("@blueprintjs/table/lib/esm/interactions/reorderable", "DragReorderable.defaultProps")
     @js.native
     def defaultProps: PartialIDragReorderable = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIDragReorderable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIDragReorderable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -126,8 +125,7 @@ object reorderableMod {
   }
   object IReorderableProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onFocusedCell: IFocusedCellCoordinates => Unit,
       onReordered: (Double, Double, Double) => Unit,
       onReordering: (Double, Double, Double) => Unit,
@@ -137,29 +135,21 @@ object reorderableMod {
       __obj.asInstanceOf[IReorderableProps]
     }
     
-    @scala.inline
-    implicit class IReorderablePropsMutableBuilder[Self <: IReorderableProps] (val x: Self) extends AnyVal {
+    extension [Self <: IReorderableProps](x: Self) {
       
-      @scala.inline
-      def setOnFocusedCell(value: IFocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
+      inline def setOnFocusedCell(value: IFocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReordered(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "onReordered", js.Any.fromFunction3(value))
+      inline def setOnReordered(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "onReordered", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnReordering(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "onReordering", js.Any.fromFunction3(value))
+      inline def setOnReordering(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "onReordering", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnSelection(value: js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
+      inline def setOnSelection(value: js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
+      inline def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
+      inline def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
       
-      @scala.inline
-      def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
+      inline def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
     }
   }
 }

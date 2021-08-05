@@ -36,8 +36,7 @@ trait ICreateUnitTreeDelta
 }
 object ICreateUnitTreeDelta {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerId: String,
     containmentName: String,
     contentType: String,
@@ -48,22 +47,16 @@ object ICreateUnitTreeDelta {
     __obj.asInstanceOf[ICreateUnitTreeDelta]
   }
   
-  @scala.inline
-  implicit class ICreateUnitTreeDeltaMutableBuilder[Self <: ICreateUnitTreeDelta] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateUnitTreeDelta](x: Self) {
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainmentName(value: String): Self = StObject.set(x, "containmentName", value.asInstanceOf[js.Any])
+    inline def setContainmentName(value: String): Self = StObject.set(x, "containmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaType(value: CREATE_UNIT_TREE): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
+    inline def setDeltaType(value: CREATE_UNIT_TREE): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitTree(value: IStructureJSON): Self = StObject.set(x, "unitTree", value.asInstanceOf[js.Any])
+    inline def setUnitTree(value: IStructureJSON): Self = StObject.set(x, "unitTree", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait TerminologyDataLocation extends StObject {
 }
 object TerminologyDataLocation {
   
-  @scala.inline
-  def apply(Location: String, RepositoryType: String): TerminologyDataLocation = {
+  inline def apply(Location: String, RepositoryType: String): TerminologyDataLocation = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any], RepositoryType = RepositoryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminologyDataLocation]
   }
   
-  @scala.inline
-  implicit class TerminologyDataLocationMutableBuilder[Self <: TerminologyDataLocation] (val x: Self) extends AnyVal {
+  extension [Self <: TerminologyDataLocation](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryType(value: String): Self = StObject.set(x, "RepositoryType", value.asInstanceOf[js.Any])
+    inline def setRepositoryType(value: String): Self = StObject.set(x, "RepositoryType", value.asInstanceOf[js.Any])
   }
 }

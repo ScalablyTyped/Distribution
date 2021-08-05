@@ -13,16 +13,13 @@ trait StopServerRequest extends StObject {
 }
 object StopServerRequest {
   
-  @scala.inline
-  def apply(ServerId: ServerId): StopServerRequest = {
+  inline def apply(ServerId: ServerId): StopServerRequest = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopServerRequest]
   }
   
-  @scala.inline
-  implicit class StopServerRequestMutableBuilder[Self <: StopServerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopServerRequest](x: Self) {
     
-    @scala.inline
-    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
   }
 }

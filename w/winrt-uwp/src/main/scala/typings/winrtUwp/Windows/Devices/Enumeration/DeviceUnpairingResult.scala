@@ -12,16 +12,13 @@ trait DeviceUnpairingResult extends StObject {
 }
 object DeviceUnpairingResult {
   
-  @scala.inline
-  def apply(status: DeviceUnpairingResultStatus): DeviceUnpairingResult = {
+  inline def apply(status: DeviceUnpairingResultStatus): DeviceUnpairingResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceUnpairingResult]
   }
   
-  @scala.inline
-  implicit class DeviceUnpairingResultMutableBuilder[Self <: DeviceUnpairingResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceUnpairingResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: DeviceUnpairingResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeviceUnpairingResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

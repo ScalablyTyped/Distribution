@@ -18,10 +18,8 @@ object mod {
     def this(opts: ClientOptions) = this()
   }
   
-  @scala.inline
-  def create(): AGClientSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AGClientSocket]
-  @scala.inline
-  def create(options: ClientOptions): AGClientSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[AGClientSocket]
+  inline def create(): AGClientSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AGClientSocket]
+  inline def create(options: ClientOptions): AGClientSocket = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[AGClientSocket]
   
   object factory {
     
@@ -29,10 +27,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): typings.socketclusterClient.clientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.socketclusterClient.clientsocketMod.^]
-    @scala.inline
-    def create(options: ClientOptions): typings.socketclusterClient.clientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.socketclusterClient.clientsocketMod.^]
+    inline def create(): typings.socketclusterClient.clientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.socketclusterClient.clientsocketMod.^]
+    inline def create(options: ClientOptions): typings.socketclusterClient.clientsocketMod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.socketclusterClient.clientsocketMod.^]
   }
   
   @JSImport("socketcluster-client", "version")

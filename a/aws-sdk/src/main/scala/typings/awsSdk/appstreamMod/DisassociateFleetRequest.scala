@@ -18,19 +18,15 @@ trait DisassociateFleetRequest extends StObject {
 }
 object DisassociateFleetRequest {
   
-  @scala.inline
-  def apply(FleetName: String, StackName: String): DisassociateFleetRequest = {
+  inline def apply(FleetName: String, StackName: String): DisassociateFleetRequest = {
     val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateFleetRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateFleetRequestMutableBuilder[Self <: DisassociateFleetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateFleetRequest](x: Self) {
     
-    @scala.inline
-    def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
+    inline def setFleetName(value: String): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: String): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

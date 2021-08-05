@@ -14,8 +14,7 @@ trait InfiniteNonEmpty[NotFound, Tuple /* <: js.Array[js.Any] */, Type, Count /*
 }
 object InfiniteNonEmpty {
   
-  @scala.inline
-  def apply[NotFound, Tuple /* <: js.Array[js.Any] */, Type, Count /* <: js.Array[js.Any] */](
+  inline def apply[NotFound, Tuple /* <: js.Array[js.Any] */, Type, Count /* <: js.Array[js.Any] */](
     empty: NotFound,
     infinite: js.Any,
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: Count['length'] */ js.Any
@@ -24,17 +23,13 @@ object InfiniteNonEmpty {
     __obj.asInstanceOf[InfiniteNonEmpty[NotFound, Tuple, Type, Count]]
   }
   
-  @scala.inline
-  implicit class InfiniteNonEmptyMutableBuilder[Self <: InfiniteNonEmpty[?, ?, ?, ?], NotFound, Tuple /* <: js.Array[js.Any] */, Type, Count /* <: js.Array[js.Any] */] (val x: Self & (InfiniteNonEmpty[NotFound, Tuple, Type, Count])) extends AnyVal {
+  extension [Self <: InfiniteNonEmpty[?, ?, ?, ?], NotFound, Tuple /* <: js.Array[js.Any] */, Type, Count /* <: js.Array[js.Any] */](x: Self & (InfiniteNonEmpty[NotFound, Tuple, Type, Count])) {
     
-    @scala.inline
-    def setEmpty(value: NotFound): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: NotFound): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfinite(value: js.Any): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+    inline def setInfinite(value: js.Any): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmpty(
+    inline def setNonEmpty(
       value: /* import warning: importer.ImportType#apply Failed type conversion: Count['length'] */ js.Any
     ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
   }

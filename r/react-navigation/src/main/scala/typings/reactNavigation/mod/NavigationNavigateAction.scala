@@ -15,17 +15,14 @@ trait NavigationNavigateAction
 }
 object NavigationNavigateAction {
   
-  @scala.inline
-  def apply(routeName: String): NavigationNavigateAction = {
+  inline def apply(routeName: String): NavigationNavigateAction = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/NAVIGATE")
     __obj.asInstanceOf[NavigationNavigateAction]
   }
   
-  @scala.inline
-  implicit class NavigationNavigateActionMutableBuilder[Self <: NavigationNavigateAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationNavigateAction](x: Self) {
     
-    @scala.inline
-    def setType(value: NavigationSlashNAVIGATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashNAVIGATE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

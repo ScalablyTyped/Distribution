@@ -26,7 +26,7 @@ object histogramLogWriterMod {
       */
     var baseTime: Double = js.native
     
-    var log: js.Any = js.native
+    /* private */ var log: js.Any = js.native
     
     /**
       * Log a comment to the log.

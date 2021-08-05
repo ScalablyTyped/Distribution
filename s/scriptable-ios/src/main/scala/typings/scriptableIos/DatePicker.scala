@@ -100,8 +100,7 @@ trait DatePicker extends StObject {
 }
 object DatePicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     countdownDuration: Double,
     initialDate: Date,
     maximumDate: Date,
@@ -116,34 +115,24 @@ object DatePicker {
     __obj.asInstanceOf[DatePicker]
   }
   
-  @scala.inline
-  implicit class DatePickerMutableBuilder[Self <: DatePicker] (val x: Self) extends AnyVal {
+  extension [Self <: DatePicker](x: Self) {
     
-    @scala.inline
-    def setCountdownDuration(value: Double): Self = StObject.set(x, "countdownDuration", value.asInstanceOf[js.Any])
+    inline def setCountdownDuration(value: Double): Self = StObject.set(x, "countdownDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+    inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+    inline def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+    inline def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteInterval(value: Double): Self = StObject.set(x, "minuteInterval", value.asInstanceOf[js.Any])
+    inline def setMinuteInterval(value: Double): Self = StObject.set(x, "minuteInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickCountdownDuration(value: () => js.Promise[Double]): Self = StObject.set(x, "pickCountdownDuration", js.Any.fromFunction0(value))
+    inline def setPickCountdownDuration(value: () => js.Promise[Double]): Self = StObject.set(x, "pickCountdownDuration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickDate(value: () => js.Promise[Date]): Self = StObject.set(x, "pickDate", js.Any.fromFunction0(value))
+    inline def setPickDate(value: () => js.Promise[Date]): Self = StObject.set(x, "pickDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickDateAndTime(value: () => js.Promise[Date]): Self = StObject.set(x, "pickDateAndTime", js.Any.fromFunction0(value))
+    inline def setPickDateAndTime(value: () => js.Promise[Date]): Self = StObject.set(x, "pickDateAndTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickTime(value: () => js.Promise[Date]): Self = StObject.set(x, "pickTime", js.Any.fromFunction0(value))
+    inline def setPickTime(value: () => js.Promise[Date]): Self = StObject.set(x, "pickTime", js.Any.fromFunction0(value))
   }
 }

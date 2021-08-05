@@ -26,8 +26,7 @@ object PivotPager {
   @JSGlobal("ej.PivotPager.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.PivotPager.Mode")
   @js.native
@@ -47,6 +46,5 @@ object PivotPager {
   @JSGlobal("ej.PivotPager.fn")
   @js.native
   def fn: typings.ejWebAll.ej.PivotPager = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.PivotPager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.PivotPager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

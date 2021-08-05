@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LegendElement extends StObject
 object LegendElement {
   
-  @scala.inline
-  def ColorRampElement(
+  inline def ColorRampElement(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[ColorRampStop],
@@ -30,8 +29,7 @@ object LegendElement {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ColorRampElement]
   }
   
-  @scala.inline
-  def HeatmapRampElement(
+  inline def HeatmapRampElement(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[HeatmapRampStop],
@@ -43,8 +41,7 @@ object LegendElement {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.HeatmapRampElement]
   }
   
-  @scala.inline
-  def OpacityRampElement(
+  inline def OpacityRampElement(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[OpacityRampStop],
@@ -56,8 +53,7 @@ object LegendElement {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.OpacityRampElement]
   }
   
-  @scala.inline
-  def RelationshipRampElement(
+  inline def RelationshipRampElement(
     colors: js.Array[js.Array[Color_]],
     constructor: js.Function,
     focus: String,
@@ -73,8 +69,7 @@ object LegendElement {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.RelationshipRampElement]
   }
   
-  @scala.inline
-  def SizeRampElement(
+  inline def SizeRampElement(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[SizeRampStop],
@@ -86,8 +81,7 @@ object LegendElement {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.SizeRampElement]
   }
   
-  @scala.inline
-  def SymbolTableElement(
+  inline def SymbolTableElement(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     infos: js.Array[SymbolTableElementType],

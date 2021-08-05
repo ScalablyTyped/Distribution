@@ -25,8 +25,7 @@ trait XTextSearch
 }
 object XTextSearch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -38,16 +37,12 @@ object XTextSearch {
     __obj.asInstanceOf[XTextSearch]
   }
   
-  @scala.inline
-  implicit class XTextSearchMutableBuilder[Self <: XTextSearch] (val x: Self) extends AnyVal {
+  extension [Self <: XTextSearch](x: Self) {
     
-    @scala.inline
-    def setSearchBackward(value: (String, Double, Double) => SearchResult): Self = StObject.set(x, "searchBackward", js.Any.fromFunction3(value))
+    inline def setSearchBackward(value: (String, Double, Double) => SearchResult): Self = StObject.set(x, "searchBackward", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSearchForward(value: (String, Double, Double) => SearchResult): Self = StObject.set(x, "searchForward", js.Any.fromFunction3(value))
+    inline def setSearchForward(value: (String, Double, Double) => SearchResult): Self = StObject.set(x, "searchForward", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetOptions(value: SearchOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: SearchOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

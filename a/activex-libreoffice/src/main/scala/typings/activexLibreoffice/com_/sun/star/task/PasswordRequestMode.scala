@@ -28,8 +28,7 @@ object PasswordRequestMode {
     *
     * </P>
     */
-  @scala.inline
-  def PASSWORD_CREATE: `0` = 0.asInstanceOf[`0`]
+  inline def PASSWORD_CREATE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * Ask for a password. <P>
@@ -38,8 +37,7 @@ object PasswordRequestMode {
     *
     * </P>
     */
-  @scala.inline
-  def PASSWORD_ENTER: `1` = 1.asInstanceOf[`1`]
+  inline def PASSWORD_ENTER: `1` = 1.asInstanceOf[`1`]
   
   /**
     * Wrong password was entered, ask again. <P>
@@ -50,6 +48,5 @@ object PasswordRequestMode {
     *
     * </P>
     */
-  @scala.inline
-  def PASSWORD_REENTER: `2` = 2.asInstanceOf[`2`]
+  inline def PASSWORD_REENTER: `2` = 2.asInstanceOf[`2`]
 }

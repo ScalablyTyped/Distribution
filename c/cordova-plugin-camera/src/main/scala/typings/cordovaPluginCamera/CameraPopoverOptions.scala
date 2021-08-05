@@ -35,8 +35,7 @@ trait CameraPopoverOptions extends StObject {
 }
 object CameraPopoverOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arrowDir: Double,
     height: Double,
     popoverHeight: Double,
@@ -49,28 +48,20 @@ object CameraPopoverOptions {
     __obj.asInstanceOf[CameraPopoverOptions]
   }
   
-  @scala.inline
-  implicit class CameraPopoverOptionsMutableBuilder[Self <: CameraPopoverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CameraPopoverOptions](x: Self) {
     
-    @scala.inline
-    def setArrowDir(value: Double): Self = StObject.set(x, "arrowDir", value.asInstanceOf[js.Any])
+    inline def setArrowDir(value: Double): Self = StObject.set(x, "arrowDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverHeight(value: Double): Self = StObject.set(x, "popoverHeight", value.asInstanceOf[js.Any])
+    inline def setPopoverHeight(value: Double): Self = StObject.set(x, "popoverHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverWidth(value: Double): Self = StObject.set(x, "popoverWidth", value.asInstanceOf[js.Any])
+    inline def setPopoverWidth(value: Double): Self = StObject.set(x, "popoverWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

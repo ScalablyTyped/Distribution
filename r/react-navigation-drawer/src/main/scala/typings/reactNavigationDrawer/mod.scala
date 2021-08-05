@@ -71,20 +71,14 @@ object mod {
     @js.native
     val TOGGLE_DRAWER: /* "Navigation/TOGGLE_DRAWER" */ String = js.native
     
-    @scala.inline
-    def closeDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[js.Any]
-    @scala.inline
-    def closeDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def closeDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[js.Any]
+    inline def closeDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def openDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[js.Any]
-    @scala.inline
-    def openDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def openDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[js.Any]
+    inline def openDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def toggleDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[js.Any]
-    @scala.inline
-    def toggleDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def toggleDrawer(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[js.Any]
+    inline def toggleDrawer(payload: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")(payload.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("react-navigation-drawer", "DrawerGestureContext")
@@ -104,14 +98,12 @@ object mod {
     @JSImport("react-navigation-drawer", "DrawerItems.contextType")
     @js.native
     def contextType: Context[SupportedThemes] = js.native
-    @scala.inline
-    def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("react-navigation-drawer", "DrawerItems.defaultProps")
     @js.native
     def defaultProps: ActiveBackgroundColor = js.native
-    @scala.inline
-    def defaultProps_=(x: ActiveBackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ActiveBackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-navigation-drawer", "DrawerNavigatorItems")
@@ -127,24 +119,20 @@ object mod {
     @JSImport("react-navigation-drawer", "DrawerNavigatorItems.contextType")
     @js.native
     def contextType: Context[SupportedThemes] = js.native
-    @scala.inline
-    def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("react-navigation-drawer", "DrawerNavigatorItems.defaultProps")
     @js.native
     def defaultProps: ActiveBackgroundColor = js.native
-    @scala.inline
-    def defaultProps_=(x: ActiveBackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ActiveBackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-navigation-drawer", "DrawerProgressContext")
   @js.native
   val DrawerProgressContext: Context[Node | Null] = js.native
   
-  @scala.inline
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any]): GetActionCreators = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[GetActionCreators]
-  @scala.inline
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any], config: InitialRouteName): GetActionCreators = (^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetActionCreators]
+  inline def DrawerRouter(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any]): GetActionCreators = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[GetActionCreators]
+  inline def DrawerRouter(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any], config: InitialRouteName): GetActionCreators = (^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetActionCreators]
   
   /**
     * Component that renders the sidebar screen of the drawer.
@@ -168,29 +156,24 @@ object mod {
     @JSImport("react-navigation-drawer", "DrawerView.contextType")
     @js.native
     def contextType: Context[SupportedThemes] = js.native
-    @scala.inline
-    def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("react-navigation-drawer", "DrawerView.defaultProps")
     @js.native
     def defaultProps: Lazy = js.native
-    @scala.inline
-    def defaultProps_=(x: Lazy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Lazy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: Props, prevState: State): Loaded = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Loaded]
+    inline def getDerivedStateFromProps(nextProps: Props, prevState: State): Loaded = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[Loaded]
   }
   
-  @scala.inline
-  def createDrawerNavigator(
+  inline def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
       NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 
       js.Any
     ]
   ): NavigationNavigator[js.Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDrawerNavigator")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[js.Any, NavigationProp[NavigationState]]]
-  @scala.inline
-  def createDrawerNavigator(
+  inline def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
       NavigationDrawerProp[NavigationRoute[NavigationParams], js.Any], 

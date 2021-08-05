@@ -16,31 +16,23 @@ trait End extends StObject {
 }
 object End {
   
-  @scala.inline
-  def apply(end: Double, fonts: js.Array[String], start: Double): End = {
+  inline def apply(end: Double, fonts: js.Array[String], start: Double): End = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], fonts = fonts.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[End]
   }
   
-  @scala.inline
-  implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+  extension [Self <: End](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFonts(value: js.Array[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: js.Array[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

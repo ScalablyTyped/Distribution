@@ -12,25 +12,19 @@ trait LabelProps extends StObject {
 }
 object LabelProps {
   
-  @scala.inline
-  def apply(): LabelProps = {
+  inline def apply(): LabelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelProps]
   }
   
-  @scala.inline
-  implicit class LabelPropsMutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
+  extension [Self <: LabelProps](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
+    inline def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSublabelUndefined: Self = StObject.set(x, "sublabel", js.undefined)
+    inline def setSublabelUndefined: Self = StObject.set(x, "sublabel", js.undefined)
   }
 }

@@ -23,7 +23,7 @@ trait PullTypeEnclosingTypeWalker extends StObject {
   
   /* private */ def canSymbolOrDeclBeUsedAsEnclosingTypeHelper(name: js.Any, kind: js.Any): js.Any = js.native
   
-  var enclosingTypeWalkerState: js.Any = js.native
+  /* private */ var enclosingTypeWalkerState: js.Any = js.native
   
   def endWalkingType(stateWhenStartedWalkingTypes: EnclosingTypeWalkerState): Unit = js.native
   

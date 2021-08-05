@@ -20,17 +20,14 @@ object typesUpdateKeyDescriptionOutputMod {
   }
   object UpdateKeyDescriptionOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateKeyDescriptionOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateKeyDescriptionOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateKeyDescriptionOutput]
     }
     
-    @scala.inline
-    implicit class UpdateKeyDescriptionOutputMutableBuilder[Self <: UpdateKeyDescriptionOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateKeyDescriptionOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

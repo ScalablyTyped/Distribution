@@ -22,29 +22,23 @@ trait UserFacingMessage extends StObject {
 }
 object UserFacingMessage {
   
-  @scala.inline
-  def apply(): UserFacingMessage = {
+  inline def apply(): UserFacingMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserFacingMessage]
   }
   
-  @scala.inline
-  implicit class UserFacingMessageMutableBuilder[Self <: UserFacingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UserFacingMessage](x: Self) {
     
-    @scala.inline
-    def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
+    inline def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
+    inline def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
     
-    @scala.inline
-    def setLocalizedMessages(
+    inline def setLocalizedMessages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.UserFacingMessage & TopLevel[js.Any]
     ): Self = StObject.set(x, "localizedMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedMessagesUndefined: Self = StObject.set(x, "localizedMessages", js.undefined)
+    inline def setLocalizedMessagesUndefined: Self = StObject.set(x, "localizedMessages", js.undefined)
   }
 }

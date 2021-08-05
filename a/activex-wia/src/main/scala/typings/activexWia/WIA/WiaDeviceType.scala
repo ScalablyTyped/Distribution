@@ -21,15 +21,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WiaDeviceType extends StObject
 object WiaDeviceType {
   
-  @scala.inline
-  def CameraDeviceType: `2` = 2.asInstanceOf[`2`]
+  inline def CameraDeviceType: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ScannerDeviceType: `1` = 1.asInstanceOf[`1`]
+  inline def ScannerDeviceType: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def UnspecifiedDeviceType: `0` = 0.asInstanceOf[`0`]
+  inline def UnspecifiedDeviceType: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def VideoDeviceType: `3` = 3.asInstanceOf[`3`]
+  inline def VideoDeviceType: `3` = 3.asInstanceOf[`3`]
 }

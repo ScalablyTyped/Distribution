@@ -48,49 +48,35 @@ trait SchemaCircuitBreakers extends StObject {
 }
 object SchemaCircuitBreakers {
   
-  @scala.inline
-  def apply(): SchemaCircuitBreakers = {
+  inline def apply(): SchemaCircuitBreakers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCircuitBreakers]
   }
   
-  @scala.inline
-  implicit class SchemaCircuitBreakersMutableBuilder[Self <: SchemaCircuitBreakers] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCircuitBreakers](x: Self) {
     
-    @scala.inline
-    def setConnectTimeout(value: SchemaDuration): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+    inline def setConnectTimeout(value: SchemaDuration): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+    inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
-    @scala.inline
-    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+    inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
+    inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
     
-    @scala.inline
-    def setMaxPendingRequests(value: Double): Self = StObject.set(x, "maxPendingRequests", value.asInstanceOf[js.Any])
+    inline def setMaxPendingRequests(value: Double): Self = StObject.set(x, "maxPendingRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPendingRequestsUndefined: Self = StObject.set(x, "maxPendingRequests", js.undefined)
+    inline def setMaxPendingRequestsUndefined: Self = StObject.set(x, "maxPendingRequests", js.undefined)
     
-    @scala.inline
-    def setMaxRequests(value: Double): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
+    inline def setMaxRequests(value: Double): Self = StObject.set(x, "maxRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRequestsPerConnection(value: Double): Self = StObject.set(x, "maxRequestsPerConnection", value.asInstanceOf[js.Any])
+    inline def setMaxRequestsPerConnection(value: Double): Self = StObject.set(x, "maxRequestsPerConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRequestsPerConnectionUndefined: Self = StObject.set(x, "maxRequestsPerConnection", js.undefined)
+    inline def setMaxRequestsPerConnectionUndefined: Self = StObject.set(x, "maxRequestsPerConnection", js.undefined)
     
-    @scala.inline
-    def setMaxRequestsUndefined: Self = StObject.set(x, "maxRequests", js.undefined)
+    inline def setMaxRequestsUndefined: Self = StObject.set(x, "maxRequests", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
   }
 }

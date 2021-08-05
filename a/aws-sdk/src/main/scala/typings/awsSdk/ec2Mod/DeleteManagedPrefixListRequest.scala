@@ -18,22 +18,17 @@ trait DeleteManagedPrefixListRequest extends StObject {
 }
 object DeleteManagedPrefixListRequest {
   
-  @scala.inline
-  def apply(PrefixListId: PrefixListResourceId): DeleteManagedPrefixListRequest = {
+  inline def apply(PrefixListId: PrefixListResourceId): DeleteManagedPrefixListRequest = {
     val __obj = js.Dynamic.literal(PrefixListId = PrefixListId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteManagedPrefixListRequest]
   }
   
-  @scala.inline
-  implicit class DeleteManagedPrefixListRequestMutableBuilder[Self <: DeleteManagedPrefixListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteManagedPrefixListRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
   }
 }

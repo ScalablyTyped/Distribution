@@ -18,26 +18,21 @@ trait RouteExtObject extends StObject {
 }
 object RouteExtObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     method: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
   ): RouteExtObject = {
     val __obj = js.Dynamic.literal(method = js.Any.fromFunction3(method))
     __obj.asInstanceOf[RouteExtObject]
   }
   
-  @scala.inline
-  implicit class RouteExtObjectMutableBuilder[Self <: RouteExtObject] (val x: Self) extends AnyVal {
+  extension [Self <: RouteExtObject](x: Self) {
     
-    @scala.inline
-    def setMethod(
+    inline def setMethod(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

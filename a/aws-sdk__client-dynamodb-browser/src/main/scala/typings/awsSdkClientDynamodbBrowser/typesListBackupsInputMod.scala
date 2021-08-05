@@ -70,70 +70,50 @@ object typesListBackupsInputMod {
   }
   object ListBackupsInput {
     
-    @scala.inline
-    def apply(): ListBackupsInput = {
+    inline def apply(): ListBackupsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListBackupsInput]
     }
     
-    @scala.inline
-    implicit class ListBackupsInputMutableBuilder[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBackupsInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setBackupType(value: USER | SYSTEM | ALL | String): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
+      inline def setBackupType(value: USER | SYSTEM | ALL | String): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
+      inline def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
       
-      @scala.inline
-      def setExclusiveStartBackupArn(value: String): Self = StObject.set(x, "ExclusiveStartBackupArn", value.asInstanceOf[js.Any])
+      inline def setExclusiveStartBackupArn(value: String): Self = StObject.set(x, "ExclusiveStartBackupArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveStartBackupArnUndefined: Self = StObject.set(x, "ExclusiveStartBackupArn", js.undefined)
+      inline def setExclusiveStartBackupArnUndefined: Self = StObject.set(x, "ExclusiveStartBackupArn", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
       
-      @scala.inline
-      def setTimeRangeLowerBound(value: Date | String | Double): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeLowerBound(value: Date | String | Double): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
+      inline def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
       
-      @scala.inline
-      def setTimeRangeUpperBound(value: Date | String | Double): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
+      inline def setTimeRangeUpperBound(value: Date | String | Double): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
+      inline def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
     }
   }
 }

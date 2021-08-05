@@ -18,28 +18,19 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calcHeadingFontSize(thisArg: default, factor: Factor): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingFontSize")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def calcHeadingFontSize(thisArg: default, factor: Factor): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingFontSize")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def calcHeadingLineHeight(thisArg: default, factor: Factor): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingLineHeight")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def calcHeadingLineHeight(thisArg: default, factor: Factor): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingLineHeight")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def calcHeadingMarginBottom(thisArg: default, factor: Factor): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingMarginBottom")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def calcHeadingMarginBottom(thisArg: default, factor: Factor, addMarginBottom: Boolean): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingMarginBottom")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any], addMarginBottom.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def calcHeadingMarginBottom(thisArg: default, factor: Factor): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingMarginBottom")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def calcHeadingMarginBottom(thisArg: default, factor: Factor, addMarginBottom: Boolean): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingMarginBottom")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any], addMarginBottom.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def getFontScale(fontScale: majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontScale")(fontScale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def getFontScale(fontScale: Scale): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontScale")(fontScale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getFontScale(fontScale: majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontScale")(fontScale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getFontScale(fontScale: Scale): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontScale")(fontScale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def getFontUnit(size: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontUnit")(size.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFontUnit(size: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontUnit")(size.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getFontValue(size: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontValue")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getFontValue(size: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontValue")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def trimArrayToMaxOf6[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimArrayToMaxOf6")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def trimArrayToMaxOf6[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimArrayToMaxOf6")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

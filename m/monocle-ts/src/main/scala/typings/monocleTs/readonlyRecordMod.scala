@@ -13,6 +13,5 @@ object readonlyRecordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atReadonlyRecord[A](): At_[Record[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlyRecord")().asInstanceOf[At_[Record[String, A], String, Option_[A]]]
+  inline def atReadonlyRecord[A](): At_[Record[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atReadonlyRecord")().asInstanceOf[At_[Record[String, A], String, Option_[A]]]
 }

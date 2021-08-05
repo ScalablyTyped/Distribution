@@ -39,49 +39,35 @@ trait SchemaProductPolicy extends StObject {
 }
 object SchemaProductPolicy {
   
-  @scala.inline
-  def apply(): SchemaProductPolicy = {
+  inline def apply(): SchemaProductPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaProductPolicyMutableBuilder[Self <: SchemaProductPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductPolicy](x: Self) {
     
-    @scala.inline
-    def setAutoInstallPolicy(value: SchemaAutoInstallPolicy): Self = StObject.set(x, "autoInstallPolicy", value.asInstanceOf[js.Any])
+    inline def setAutoInstallPolicy(value: SchemaAutoInstallPolicy): Self = StObject.set(x, "autoInstallPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoInstallPolicyUndefined: Self = StObject.set(x, "autoInstallPolicy", js.undefined)
+    inline def setAutoInstallPolicyUndefined: Self = StObject.set(x, "autoInstallPolicy", js.undefined)
     
-    @scala.inline
-    def setManagedConfiguration(value: SchemaManagedConfiguration): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
+    inline def setManagedConfiguration(value: SchemaManagedConfiguration): Self = StObject.set(x, "managedConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationUndefined: Self = StObject.set(x, "managedConfiguration", js.undefined)
+    inline def setManagedConfigurationUndefined: Self = StObject.set(x, "managedConfiguration", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setTrackIds(value: js.Array[String]): Self = StObject.set(x, "trackIds", value.asInstanceOf[js.Any])
+    inline def setTrackIds(value: js.Array[String]): Self = StObject.set(x, "trackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
+    inline def setTrackIdsUndefined: Self = StObject.set(x, "trackIds", js.undefined)
     
-    @scala.inline
-    def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
+    inline def setTrackIdsVarargs(value: String*): Self = StObject.set(x, "trackIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: js.Array[String]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
+    inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    @scala.inline
-    def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: String*): Self = StObject.set(x, "tracks", js.Array(value :_*))
   }
 }

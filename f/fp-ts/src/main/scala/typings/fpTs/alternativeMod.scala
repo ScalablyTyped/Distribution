@@ -26,8 +26,7 @@ object alternativeMod {
   }
   object Alternative {
     
-    @scala.inline
-    def apply[F](
+    inline def apply[F](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
@@ -41,11 +40,9 @@ object alternativeMod {
       __obj.asInstanceOf[Alternative[F]]
     }
     
-    @scala.inline
-    implicit class AlternativeMutableBuilder[Self <: Alternative[?], F] (val x: Self & Alternative[F]) extends AnyVal {
+    extension [Self <: Alternative[?], F](x: Self & Alternative[F]) {
       
-      @scala.inline
-      def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
+      inline def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
     }
   }
   
@@ -58,8 +55,7 @@ object alternativeMod {
   }
   object Alternative1 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any
@@ -73,11 +69,9 @@ object alternativeMod {
       __obj.asInstanceOf[Alternative1[F]]
     }
     
-    @scala.inline
-    implicit class Alternative1MutableBuilder[Self <: Alternative1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & Alternative1[F]) extends AnyVal {
+    extension [Self <: Alternative1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & Alternative1[F]) {
       
-      @scala.inline
-      def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
+      inline def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
     }
   }
   
@@ -90,8 +84,7 @@ object alternativeMod {
   }
   object Alternative2 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
@@ -105,11 +98,9 @@ object alternativeMod {
       __obj.asInstanceOf[Alternative2[F]]
     }
     
-    @scala.inline
-    implicit class Alternative2MutableBuilder[Self <: Alternative2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Alternative2[F]) extends AnyVal {
+    extension [Self <: Alternative2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Alternative2[F]) {
       
-      @scala.inline
-      def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
+      inline def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
     }
   }
   
@@ -122,8 +113,7 @@ object alternativeMod {
   }
   object Alternative2C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: F,
       _E: E,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, Lazy[
@@ -138,11 +128,9 @@ object alternativeMod {
       __obj.asInstanceOf[Alternative2C[F, E]]
     }
     
-    @scala.inline
-    implicit class Alternative2CMutableBuilder[Self <: Alternative2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (Alternative2C[F, E])) extends AnyVal {
+    extension [Self <: Alternative2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (Alternative2C[F, E])) {
       
-      @scala.inline
-      def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
+      inline def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
     }
   }
   
@@ -155,8 +143,7 @@ object alternativeMod {
   }
   object Alternative3 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
@@ -170,11 +157,9 @@ object alternativeMod {
       __obj.asInstanceOf[Alternative3[F]]
     }
     
-    @scala.inline
-    implicit class Alternative3MutableBuilder[Self <: Alternative3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Alternative3[F]) extends AnyVal {
+    extension [Self <: Alternative3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Alternative3[F]) {
       
-      @scala.inline
-      def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
+      inline def setZero(value: () => js.Any): Self = StObject.set(x, "zero", js.Any.fromFunction0(value))
     }
   }
 }

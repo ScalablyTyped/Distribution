@@ -29,31 +29,23 @@ trait ParamsResourceSnapshotsGet
 }
 object ParamsResourceSnapshotsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceSnapshotsGet = {
+  inline def apply(): ParamsResourceSnapshotsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSnapshotsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSnapshotsGetMutableBuilder[Self <: ParamsResourceSnapshotsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSnapshotsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

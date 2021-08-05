@@ -25,6 +25,5 @@ object RTCCertificate {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSupportedAlgorithms(): js.Array[AlgorithmIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedAlgorithms")().asInstanceOf[js.Array[AlgorithmIdentifier]]
+  inline def getSupportedAlgorithms(): js.Array[AlgorithmIdentifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedAlgorithms")().asInstanceOf[js.Array[AlgorithmIdentifier]]
 }

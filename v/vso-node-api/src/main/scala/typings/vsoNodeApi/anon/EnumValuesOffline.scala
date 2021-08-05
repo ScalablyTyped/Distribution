@@ -10,16 +10,13 @@ trait EnumValuesOffline extends StObject {
 }
 object EnumValuesOffline {
   
-  @scala.inline
-  def apply(enumValues: Offline): EnumValuesOffline = {
+  inline def apply(enumValues: Offline): EnumValuesOffline = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesOffline]
   }
   
-  @scala.inline
-  implicit class EnumValuesOfflineMutableBuilder[Self <: EnumValuesOffline] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesOffline](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Offline): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Offline): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

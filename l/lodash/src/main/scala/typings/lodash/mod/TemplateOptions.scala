@@ -15,19 +15,15 @@ trait TemplateOptions
 }
 object TemplateOptions {
   
-  @scala.inline
-  def apply(): TemplateOptions = {
+  inline def apply(): TemplateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateOptions]
   }
   
-  @scala.inline
-  implicit class TemplateOptionsMutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateOptions](x: Self) {
     
-    @scala.inline
-    def setSourceURL(value: java.lang.String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: java.lang.String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
+    inline def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
   }
 }

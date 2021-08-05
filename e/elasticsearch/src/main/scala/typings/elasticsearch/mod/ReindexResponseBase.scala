@@ -29,8 +29,7 @@ trait ReindexResponseBase extends StObject {
 }
 object ReindexResponseBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batches: Double,
     deleted: Double,
     noops: Double,
@@ -46,37 +45,26 @@ object ReindexResponseBase {
     __obj.asInstanceOf[ReindexResponseBase]
   }
   
-  @scala.inline
-  implicit class ReindexResponseBaseMutableBuilder[Self <: ReindexResponseBase] (val x: Self) extends AnyVal {
+  extension [Self <: ReindexResponseBase](x: Self) {
     
-    @scala.inline
-    def setBatches(value: Double): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
+    inline def setBatches(value: Double): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoops(value: Double): Self = StObject.set(x, "noops", value.asInstanceOf[js.Any])
+    inline def setNoops(value: Double): Self = StObject.set(x, "noops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
+    inline def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetries(value: Bulk): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Bulk): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottled_millis(value: Double): Self = StObject.set(x, "throttled_millis", value.asInstanceOf[js.Any])
+    inline def setThrottled_millis(value: Double): Self = StObject.set(x, "throttled_millis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottled_until_millis(value: Double): Self = StObject.set(x, "throttled_until_millis", value.asInstanceOf[js.Any])
+    inline def setThrottled_until_millis(value: Double): Self = StObject.set(x, "throttled_until_millis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: Double): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion_conflicts(value: Double): Self = StObject.set(x, "version_conflicts", value.asInstanceOf[js.Any])
+    inline def setVersion_conflicts(value: Double): Self = StObject.set(x, "version_conflicts", value.asInstanceOf[js.Any])
   }
 }

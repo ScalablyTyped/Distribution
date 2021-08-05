@@ -16,8 +16,7 @@ trait ISyntaxNodeOrToken
 }
 object ISyntaxNodeOrToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -45,16 +44,12 @@ object ISyntaxNodeOrToken {
     __obj.asInstanceOf[ISyntaxNodeOrToken]
   }
   
-  @scala.inline
-  implicit class ISyntaxNodeOrTokenMutableBuilder[Self <: ISyntaxNodeOrToken] (val x: Self) extends AnyVal {
+  extension [Self <: ISyntaxNodeOrToken](x: Self) {
     
-    @scala.inline
-    def setAccept(value: ISyntaxVisitor => js.Any): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+    inline def setAccept(value: ISyntaxVisitor => js.Any): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithLeadingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = StObject.set(x, "withLeadingTrivia", js.Any.fromFunction1(value))
+    inline def setWithLeadingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = StObject.set(x, "withLeadingTrivia", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithTrailingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = StObject.set(x, "withTrailingTrivia", js.Any.fromFunction1(value))
+    inline def setWithTrailingTrivia(value: ISyntaxTriviaList => ISyntaxNodeOrToken): Self = StObject.set(x, "withTrailingTrivia", js.Any.fromFunction1(value))
   }
 }

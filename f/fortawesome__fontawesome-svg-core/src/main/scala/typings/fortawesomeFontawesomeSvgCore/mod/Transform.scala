@@ -20,49 +20,35 @@ trait Transform extends StObject {
 }
 object Transform {
   
-  @scala.inline
-  def apply(): Transform = {
+  inline def apply(): Transform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transform]
   }
   
-  @scala.inline
-  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+  extension [Self <: Transform](x: Self) {
     
-    @scala.inline
-    def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+    inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+    inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
     
-    @scala.inline
-    def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+    inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+    inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

@@ -29,17 +29,14 @@ object filterFilterMod {
   }
   object Filter {
     
-    @scala.inline
-    def apply(getTagName: () => String): Filter = {
+    inline def apply(getTagName: () => String): Filter = {
       val __obj = js.Dynamic.literal(getTagName = js.Any.fromFunction0(getTagName))
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setGetTagName(value: () => String): Self = StObject.set(x, "getTagName", js.Any.fromFunction0(value))
+      inline def setGetTagName(value: () => String): Self = StObject.set(x, "getTagName", js.Any.fromFunction0(value))
     }
   }
 }

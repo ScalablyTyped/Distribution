@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TabStop")
 @js.native
-class TabStop protected ()
+/* private */ class TabStop ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TabStop {
   
@@ -23,7 +23,7 @@ class TabStop protected ()
   /* CompleteClass */
   var Position: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.TabStop_typekey")
   var PowerPointDotTabStop_typekey: typings.activexPowerpoint.PowerPoint.TabStop = js.native
   

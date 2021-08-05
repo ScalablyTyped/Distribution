@@ -23,34 +23,25 @@ trait SchemaDeleteOrderDealsRequest extends StObject {
 }
 object SchemaDeleteOrderDealsRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteOrderDealsRequest = {
+  inline def apply(): SchemaDeleteOrderDealsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteOrderDealsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteOrderDealsRequestMutableBuilder[Self <: SchemaDeleteOrderDealsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteOrderDealsRequest](x: Self) {
     
-    @scala.inline
-    def setDealIds(value: js.Array[String]): Self = StObject.set(x, "dealIds", value.asInstanceOf[js.Any])
+    inline def setDealIds(value: js.Array[String]): Self = StObject.set(x, "dealIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealIdsUndefined: Self = StObject.set(x, "dealIds", js.undefined)
+    inline def setDealIdsUndefined: Self = StObject.set(x, "dealIds", js.undefined)
     
-    @scala.inline
-    def setDealIdsVarargs(value: String*): Self = StObject.set(x, "dealIds", js.Array(value :_*))
+    inline def setDealIdsVarargs(value: String*): Self = StObject.set(x, "dealIds", js.Array(value :_*))
     
-    @scala.inline
-    def setProposalRevisionNumber(value: String): Self = StObject.set(x, "proposalRevisionNumber", value.asInstanceOf[js.Any])
+    inline def setProposalRevisionNumber(value: String): Self = StObject.set(x, "proposalRevisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalRevisionNumberUndefined: Self = StObject.set(x, "proposalRevisionNumber", js.undefined)
+    inline def setProposalRevisionNumberUndefined: Self = StObject.set(x, "proposalRevisionNumber", js.undefined)
     
-    @scala.inline
-    def setUpdateAction(value: String): Self = StObject.set(x, "updateAction", value.asInstanceOf[js.Any])
+    inline def setUpdateAction(value: String): Self = StObject.set(x, "updateAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateActionUndefined: Self = StObject.set(x, "updateAction", js.undefined)
+    inline def setUpdateActionUndefined: Self = StObject.set(x, "updateAction", js.undefined)
   }
 }

@@ -14,25 +14,19 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setIncludeOnlyTargetedUserLists(value: Boolean): Self = StObject.set(x, "includeOnlyTargetedUserLists", value.asInstanceOf[js.Any])
+    inline def setIncludeOnlyTargetedUserLists(value: Boolean): Self = StObject.set(x, "includeOnlyTargetedUserLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOnlyTargetedUserListsUndefined: Self = StObject.set(x, "includeOnlyTargetedUserLists", js.undefined)
+    inline def setIncludeOnlyTargetedUserListsUndefined: Self = StObject.set(x, "includeOnlyTargetedUserLists", js.undefined)
     
-    @scala.inline
-    def setPathQueryOptions(value: PathQueryOptions): Self = StObject.set(x, "pathQueryOptions", value.asInstanceOf[js.Any])
+    inline def setPathQueryOptions(value: PathQueryOptions): Self = StObject.set(x, "pathQueryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathQueryOptionsUndefined: Self = StObject.set(x, "pathQueryOptions", js.undefined)
+    inline def setPathQueryOptionsUndefined: Self = StObject.set(x, "pathQueryOptions", js.undefined)
   }
 }

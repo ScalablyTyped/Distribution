@@ -20,40 +20,29 @@ trait WorkspaceScanOptions extends StObject {
 }
 object WorkspaceScanOptions {
   
-  @scala.inline
-  def apply(): WorkspaceScanOptions = {
+  inline def apply(): WorkspaceScanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceScanOptions]
   }
   
-  @scala.inline
-  implicit class WorkspaceScanOptionsMutableBuilder[Self <: WorkspaceScanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceScanOptions](x: Self) {
     
-    @scala.inline
-    def setLeadingContextLineCount(value: Double): Self = StObject.set(x, "leadingContextLineCount", value.asInstanceOf[js.Any])
+    inline def setLeadingContextLineCount(value: Double): Self = StObject.set(x, "leadingContextLineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingContextLineCountUndefined: Self = StObject.set(x, "leadingContextLineCount", js.undefined)
+    inline def setLeadingContextLineCountUndefined: Self = StObject.set(x, "leadingContextLineCount", js.undefined)
     
-    @scala.inline
-    def setOnPathsSearched(value: /* pathsSearched */ Double => Unit): Self = StObject.set(x, "onPathsSearched", js.Any.fromFunction1(value))
+    inline def setOnPathsSearched(value: /* pathsSearched */ Double => Unit): Self = StObject.set(x, "onPathsSearched", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPathsSearchedUndefined: Self = StObject.set(x, "onPathsSearched", js.undefined)
+    inline def setOnPathsSearchedUndefined: Self = StObject.set(x, "onPathsSearched", js.undefined)
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
-    @scala.inline
-    def setTrailingContextLineCount(value: Double): Self = StObject.set(x, "trailingContextLineCount", value.asInstanceOf[js.Any])
+    inline def setTrailingContextLineCount(value: Double): Self = StObject.set(x, "trailingContextLineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingContextLineCountUndefined: Self = StObject.set(x, "trailingContextLineCount", js.undefined)
+    inline def setTrailingContextLineCountUndefined: Self = StObject.set(x, "trailingContextLineCount", js.undefined)
   }
 }

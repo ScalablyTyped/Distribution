@@ -24,8 +24,7 @@ trait Autocomplete extends StObject {
 }
 object Autocomplete {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autocomplete: String,
     lang: Cancel,
     onCancel: js.Any,
@@ -39,31 +38,22 @@ object Autocomplete {
     __obj.asInstanceOf[Autocomplete]
   }
   
-  @scala.inline
-  implicit class AutocompleteMutableBuilder[Self <: Autocomplete] (val x: Self) extends AnyVal {
+  extension [Self <: Autocomplete](x: Self) {
     
-    @scala.inline
-    def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+    inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang(value: Cancel): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: Cancel): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCancel(value: js.Any): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
+    inline def setOnCancel(value: js.Any): Self = StObject.set(x, "onCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: js.Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: js.Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClear(value: js.Any): Self = StObject.set(x, "onClear", value.asInstanceOf[js.Any])
+    inline def setOnClear(value: js.Any): Self = StObject.set(x, "onClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSubmit(value: js.Any): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
+    inline def setOnSubmit(value: js.Any): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchName(value: String): Self = StObject.set(x, "searchName", value.asInstanceOf[js.Any])
+    inline def setSearchName(value: String): Self = StObject.set(x, "searchName", value.asInstanceOf[js.Any])
   }
 }

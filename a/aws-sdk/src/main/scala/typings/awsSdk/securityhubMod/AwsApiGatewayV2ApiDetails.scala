@@ -58,73 +58,51 @@ trait AwsApiGatewayV2ApiDetails extends StObject {
 }
 object AwsApiGatewayV2ApiDetails {
   
-  @scala.inline
-  def apply(): AwsApiGatewayV2ApiDetails = {
+  inline def apply(): AwsApiGatewayV2ApiDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsApiGatewayV2ApiDetails]
   }
   
-  @scala.inline
-  implicit class AwsApiGatewayV2ApiDetailsMutableBuilder[Self <: AwsApiGatewayV2ApiDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsApiGatewayV2ApiDetails](x: Self) {
     
-    @scala.inline
-    def setApiEndpoint(value: NonEmptyString): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
+    inline def setApiEndpoint(value: NonEmptyString): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiEndpointUndefined: Self = StObject.set(x, "ApiEndpoint", js.undefined)
+    inline def setApiEndpointUndefined: Self = StObject.set(x, "ApiEndpoint", js.undefined)
     
-    @scala.inline
-    def setApiId(value: NonEmptyString): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: NonEmptyString): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiIdUndefined: Self = StObject.set(x, "ApiId", js.undefined)
+    inline def setApiIdUndefined: Self = StObject.set(x, "ApiId", js.undefined)
     
-    @scala.inline
-    def setApiKeySelectionExpression(value: NonEmptyString): Self = StObject.set(x, "ApiKeySelectionExpression", value.asInstanceOf[js.Any])
+    inline def setApiKeySelectionExpression(value: NonEmptyString): Self = StObject.set(x, "ApiKeySelectionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiKeySelectionExpressionUndefined: Self = StObject.set(x, "ApiKeySelectionExpression", js.undefined)
+    inline def setApiKeySelectionExpressionUndefined: Self = StObject.set(x, "ApiKeySelectionExpression", js.undefined)
     
-    @scala.inline
-    def setCorsConfiguration(value: AwsCorsConfiguration): Self = StObject.set(x, "CorsConfiguration", value.asInstanceOf[js.Any])
+    inline def setCorsConfiguration(value: AwsCorsConfiguration): Self = StObject.set(x, "CorsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsConfigurationUndefined: Self = StObject.set(x, "CorsConfiguration", js.undefined)
+    inline def setCorsConfigurationUndefined: Self = StObject.set(x, "CorsConfiguration", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setProtocolType(value: NonEmptyString): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
+    inline def setProtocolType(value: NonEmptyString): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolTypeUndefined: Self = StObject.set(x, "ProtocolType", js.undefined)
+    inline def setProtocolTypeUndefined: Self = StObject.set(x, "ProtocolType", js.undefined)
     
-    @scala.inline
-    def setRouteSelectionExpression(value: NonEmptyString): Self = StObject.set(x, "RouteSelectionExpression", value.asInstanceOf[js.Any])
+    inline def setRouteSelectionExpression(value: NonEmptyString): Self = StObject.set(x, "RouteSelectionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteSelectionExpressionUndefined: Self = StObject.set(x, "RouteSelectionExpression", js.undefined)
+    inline def setRouteSelectionExpressionUndefined: Self = StObject.set(x, "RouteSelectionExpression", js.undefined)
     
-    @scala.inline
-    def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NonEmptyString): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

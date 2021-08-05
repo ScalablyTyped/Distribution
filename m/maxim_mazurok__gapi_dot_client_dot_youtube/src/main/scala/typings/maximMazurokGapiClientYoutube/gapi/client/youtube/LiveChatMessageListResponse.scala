@@ -35,76 +35,53 @@ trait LiveChatMessageListResponse extends StObject {
 }
 object LiveChatMessageListResponse {
   
-  @scala.inline
-  def apply(): LiveChatMessageListResponse = {
+  inline def apply(): LiveChatMessageListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveChatMessageListResponse]
   }
   
-  @scala.inline
-  implicit class LiveChatMessageListResponseMutableBuilder[Self <: LiveChatMessageListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LiveChatMessageListResponse](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[LiveChatMessage]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[LiveChatMessage]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: LiveChatMessage*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: LiveChatMessage*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setOfflineAt(value: String): Self = StObject.set(x, "offlineAt", value.asInstanceOf[js.Any])
+    inline def setOfflineAt(value: String): Self = StObject.set(x, "offlineAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfflineAtUndefined: Self = StObject.set(x, "offlineAt", js.undefined)
+    inline def setOfflineAtUndefined: Self = StObject.set(x, "offlineAt", js.undefined)
     
-    @scala.inline
-    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setPollingIntervalMillis(value: Double): Self = StObject.set(x, "pollingIntervalMillis", value.asInstanceOf[js.Any])
+    inline def setPollingIntervalMillis(value: Double): Self = StObject.set(x, "pollingIntervalMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingIntervalMillisUndefined: Self = StObject.set(x, "pollingIntervalMillis", js.undefined)
+    inline def setPollingIntervalMillisUndefined: Self = StObject.set(x, "pollingIntervalMillis", js.undefined)
     
-    @scala.inline
-    def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
+    inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     
-    @scala.inline
-    def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
+    inline def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
+    inline def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
   }
 }

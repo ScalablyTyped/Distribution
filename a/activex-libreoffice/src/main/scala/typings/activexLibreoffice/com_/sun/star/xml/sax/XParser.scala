@@ -49,8 +49,7 @@ trait XParser
 }
 object XParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     parseStream: InputSource => Unit,
     queryInterface: `type` => js.Any,
@@ -65,25 +64,18 @@ object XParser {
     __obj.asInstanceOf[XParser]
   }
   
-  @scala.inline
-  implicit class XParserMutableBuilder[Self <: XParser] (val x: Self) extends AnyVal {
+  extension [Self <: XParser](x: Self) {
     
-    @scala.inline
-    def setParseStream(value: InputSource => Unit): Self = StObject.set(x, "parseStream", js.Any.fromFunction1(value))
+    inline def setParseStream(value: InputSource => Unit): Self = StObject.set(x, "parseStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDTDHandler(value: XDTDHandler => Unit): Self = StObject.set(x, "setDTDHandler", js.Any.fromFunction1(value))
+    inline def setSetDTDHandler(value: XDTDHandler => Unit): Self = StObject.set(x, "setDTDHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDocumentHandler(value: XDocumentHandler => Unit): Self = StObject.set(x, "setDocumentHandler", js.Any.fromFunction1(value))
+    inline def setSetDocumentHandler(value: XDocumentHandler => Unit): Self = StObject.set(x, "setDocumentHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
+    inline def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
+    inline def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
+    inline def setSetLocale(value: Locale => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
   }
 }

@@ -11,19 +11,15 @@ trait PickTabsdestroy extends StObject {
 }
 object PickTabsdestroy {
   
-  @scala.inline
-  def apply(): PickTabsdestroy = {
+  inline def apply(): PickTabsdestroy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickTabsdestroy]
   }
   
-  @scala.inline
-  implicit class PickTabsdestroyMutableBuilder[Self <: PickTabsdestroy] (val x: Self) extends AnyVal {
+  extension [Self <: PickTabsdestroy](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
   }
 }

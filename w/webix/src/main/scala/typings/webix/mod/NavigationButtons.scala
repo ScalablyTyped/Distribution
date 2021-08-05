@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavigationButtons extends StObject
 object NavigationButtons {
   
-  @scala.inline
-  def apply: NavigationButtons = ^.asInstanceOf[js.Dynamic].selectDynamic("NavigationButtons").asInstanceOf[NavigationButtons]
+  inline def apply: NavigationButtons = ^.asInstanceOf[js.Dynamic].selectDynamic("NavigationButtons").asInstanceOf[NavigationButtons]
 }

@@ -249,8 +249,8 @@ object stateProviderMod {
       */
     def state(name: String, definition: Ng1StateDeclaration): StateProvider = js.native
     
-    var stateRegistry: js.Any = js.native
+    /* private */ var stateRegistry: js.Any = js.native
     
-    var stateService: js.Any = js.native
+    /* private */ var stateService: js.Any = js.native
   }
 }

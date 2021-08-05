@@ -20,8 +20,7 @@ trait Scopes extends StObject {
 }
 object Scopes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     app: Clientid,
     created_at: String,
     id: Double,
@@ -33,28 +32,20 @@ object Scopes {
     __obj.asInstanceOf[Scopes]
   }
   
-  @scala.inline
-  implicit class ScopesMutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
+  extension [Self <: Scopes](x: Self) {
     
-    @scala.inline
-    def setApp(value: Clientid): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: Clientid): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ContextID extends StObject {
 }
 object ContextID {
   
-  @scala.inline
-  def apply(contextID: Double, properties: AssistiveWindowProperties): ContextID = {
+  inline def apply(contextID: Double, properties: AssistiveWindowProperties): ContextID = {
     val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextID]
   }
   
-  @scala.inline
-  implicit class ContextIDMutableBuilder[Self <: ContextID] (val x: Self) extends AnyVal {
+  extension [Self <: ContextID](x: Self) {
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: AssistiveWindowProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: AssistiveWindowProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

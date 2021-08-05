@@ -13,7 +13,7 @@ trait FinderPatternFinder extends StObject {
   
   def crossCheckHorizontal(startJ: Double, centerI: Double, maxCount: Double, originalStateCountTotal: Double): Double
   
-  var crossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double]
+  /* private */ var crossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double]
   
   def crossCheckVertical(startI: Double, centerJ: Double, maxCount: Double, originalStateCountTotal: Double): Double
   
@@ -39,8 +39,7 @@ trait FinderPatternFinder extends StObject {
 }
 object FinderPatternFinder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CrossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double],
     centerFromEnd: (js.Tuple5[Double, Double, Double, Double, Double], Double) => Double,
     crossCheckHorizontal: (Double, Double, Double, Double) => Double,
@@ -61,52 +60,36 @@ object FinderPatternFinder {
     __obj.asInstanceOf[FinderPatternFinder]
   }
   
-  @scala.inline
-  implicit class FinderPatternFinderMutableBuilder[Self <: FinderPatternFinder] (val x: Self) extends AnyVal {
+  extension [Self <: FinderPatternFinder](x: Self) {
     
-    @scala.inline
-    def setCenterFromEnd(value: (js.Tuple5[Double, Double, Double, Double, Double], Double) => Double): Self = StObject.set(x, "centerFromEnd", js.Any.fromFunction2(value))
+    inline def setCenterFromEnd(value: (js.Tuple5[Double, Double, Double, Double, Double], Double) => Double): Self = StObject.set(x, "centerFromEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCrossCheckHorizontal(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "crossCheckHorizontal", js.Any.fromFunction4(value))
+    inline def setCrossCheckHorizontal(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "crossCheckHorizontal", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCrossCheckStateCount(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "CrossCheckStateCount", value.asInstanceOf[js.Any])
+    inline def setCrossCheckStateCount(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "CrossCheckStateCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossCheckVertical(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "crossCheckVertical", js.Any.fromFunction4(value))
+    inline def setCrossCheckVertical(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "crossCheckVertical", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFindFinderPattern(value: Uint8Array => FinderPatternInfo): Self = StObject.set(x, "findFinderPattern", js.Any.fromFunction1(value))
+    inline def setFindFinderPattern(value: Uint8Array => FinderPatternInfo): Self = StObject.set(x, "findFinderPattern", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindRowSkip(value: () => Double): Self = StObject.set(x, "findRowSkip", js.Any.fromFunction0(value))
+    inline def setFindRowSkip(value: () => Double): Self = StObject.set(x, "findRowSkip", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFoundPatternCross(value: js.Tuple5[Double, Double, Double, Double, Double] => Boolean): Self = StObject.set(x, "foundPatternCross", js.Any.fromFunction1(value))
+    inline def setFoundPatternCross(value: js.Tuple5[Double, Double, Double, Double, Double] => Boolean): Self = StObject.set(x, "foundPatternCross", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandlePossibleCenter(value: (js.Tuple5[Double, Double, Double, Double, Double], Double, Double) => Boolean): Self = StObject.set(x, "handlePossibleCenter", js.Any.fromFunction3(value))
+    inline def setHandlePossibleCenter(value: (js.Tuple5[Double, Double, Double, Double, Double], Double, Double) => Boolean): Self = StObject.set(x, "handlePossibleCenter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHasSkipped(value: Boolean): Self = StObject.set(x, "hasSkipped", value.asInstanceOf[js.Any])
+    inline def setHasSkipped(value: Boolean): Self = StObject.set(x, "hasSkipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaveMultiplyConfirmedCenters(value: () => Boolean): Self = StObject.set(x, "haveMultiplyConfirmedCenters", js.Any.fromFunction0(value))
+    inline def setHaveMultiplyConfirmedCenters(value: () => Boolean): Self = StObject.set(x, "haveMultiplyConfirmedCenters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleCenters(value: js.Array[FinderPattern]): Self = StObject.set(x, "possibleCenters", value.asInstanceOf[js.Any])
+    inline def setPossibleCenters(value: js.Array[FinderPattern]): Self = StObject.set(x, "possibleCenters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPossibleCentersVarargs(value: FinderPattern*): Self = StObject.set(x, "possibleCenters", js.Array(value :_*))
+    inline def setPossibleCentersVarargs(value: FinderPattern*): Self = StObject.set(x, "possibleCenters", js.Array(value :_*))
     
-    @scala.inline
-    def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
+    inline def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectBestPatterns(value: () => Double): Self = StObject.set(x, "selectBestPatterns", js.Any.fromFunction0(value))
+    inline def setSelectBestPatterns(value: () => Double): Self = StObject.set(x, "selectBestPatterns", js.Any.fromFunction0(value))
   }
 }

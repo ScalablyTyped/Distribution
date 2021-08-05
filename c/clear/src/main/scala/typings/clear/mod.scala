@@ -9,10 +9,8 @@ object mod {
   /**
     * Clear the terminal screen if possible.
     */
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(opts: ClearOptions): Unit = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(opts: ClearOptions): Unit = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("clear", JSImport.Namespace)
   @js.native
@@ -31,20 +29,16 @@ object mod {
   }
   object ClearOptions {
     
-    @scala.inline
-    def apply(): ClearOptions = {
+    inline def apply(): ClearOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearOptions]
     }
     
-    @scala.inline
-    implicit class ClearOptionsMutableBuilder[Self <: ClearOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClearOptions](x: Self) {
       
-      @scala.inline
-      def setFullClear(value: Boolean): Self = StObject.set(x, "fullClear", value.asInstanceOf[js.Any])
+      inline def setFullClear(value: Boolean): Self = StObject.set(x, "fullClear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullClearUndefined: Self = StObject.set(x, "fullClear", js.undefined)
+      inline def setFullClearUndefined: Self = StObject.set(x, "fullClear", js.undefined)
     }
   }
 }

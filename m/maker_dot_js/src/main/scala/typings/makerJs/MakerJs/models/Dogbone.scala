@@ -15,16 +15,13 @@ trait Dogbone
 }
 object Dogbone {
   
-  @scala.inline
-  def apply(paths: IPathMap): Dogbone = {
+  inline def apply(paths: IPathMap): Dogbone = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dogbone]
   }
   
-  @scala.inline
-  implicit class DogboneMutableBuilder[Self <: Dogbone] (val x: Self) extends AnyVal {
+  extension [Self <: Dogbone](x: Self) {
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

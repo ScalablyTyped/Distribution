@@ -31,7 +31,7 @@ trait Graphics
     * @member {PIXI.FillStyle} PIXI.Graphics#_fillStyle
     * @protected
     */
-  var _fillStyle: FillStyle = js.native
+  /* protected */ var _fillStyle: FillStyle = js.native
   
   /**
     * Current hole mode is enabled.
@@ -40,7 +40,7 @@ trait Graphics
     * @default false
     * @protected
     */
-  var _holeMode: Boolean = js.native
+  /* protected */ var _holeMode: Boolean = js.native
   
   /**
     * Initialize the curve
@@ -60,7 +60,7 @@ trait Graphics
     * @member {PIXI.LineStyle} PIXI.Graphics#_lineStyle
     * @protected
     */
-  var _lineStyle: LineStyle = js.native
+  /* protected */ var _lineStyle: LineStyle = js.native
   
   /**
     * Current shape transform matrix.
@@ -68,7 +68,7 @@ trait Graphics
     * @member {PIXI.Matrix} PIXI.Graphics#_matrix
     * @protected
     */
-  var _matrix: Matrix = js.native
+  /* protected */ var _matrix: Matrix = js.native
   
   /**
     * Populating batches for rendering
@@ -154,7 +154,7 @@ trait Graphics
     * @member {number} PIXI.Graphics#batchDirty
     * @default -1
     */
-  var batchDirty: Double = js.native
+  /* protected */ var batchDirty: Double = js.native
   
   /**
     * Update dirty for limiting calculating tints for batches.
@@ -163,7 +163,7 @@ trait Graphics
     * @member {number} PIXI.Graphics#batchTint
     * @default -1
     */
-  var batchTint: Double = js.native
+  /* protected */ var batchTint: Double = js.native
   
   /**
     * A collections of batches! These can be drawn by the renderer batch system.
@@ -171,7 +171,7 @@ trait Graphics
     * @protected
     * @member {object[]} PIXI.Graphics#batches
     */
-  var batches: js.Array[js.Any] = js.native
+  /* protected */ var batches: js.Array[js.Any] = js.native
   
   /**
     * Specifies a simple one-color fill that subsequent calls to other Graphics methods
@@ -273,7 +273,7 @@ trait Graphics
     * @member {PIXI.Polygon} PIXI.Graphics#currentPath
     * @protected
     */
-  var currentPath: Polygon = js.native
+  /* protected */ var currentPath: Polygon = js.native
   
   /**
     * Draw Rectangle with chamfer corners.
@@ -617,5 +617,5 @@ trait Graphics
     * @protected
     * @member {Float32Array} PIXI.Graphics#vertexData
     */
-  var vertexData: Float32Array = js.native
+  /* protected */ var vertexData: Float32Array = js.native
 }

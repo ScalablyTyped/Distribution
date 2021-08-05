@@ -35,43 +35,31 @@ trait ExpandColumnOptions extends StObject {
 }
 object ExpandColumnOptions {
   
-  @scala.inline
-  def apply(): ExpandColumnOptions = {
+  inline def apply(): ExpandColumnOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpandColumnOptions]
   }
   
-  @scala.inline
-  implicit class ExpandColumnOptionsMutableBuilder[Self <: ExpandColumnOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandColumnOptions](x: Self) {
     
-    @scala.inline
-    def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    @scala.inline
-    def setExpandColumnBeforeSelectColumn(value: Boolean): Self = StObject.set(x, "expandColumnBeforeSelectColumn", value.asInstanceOf[js.Any])
+    inline def setExpandColumnBeforeSelectColumn(value: Boolean): Self = StObject.set(x, "expandColumnBeforeSelectColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandColumnBeforeSelectColumnUndefined: Self = StObject.set(x, "expandColumnBeforeSelectColumn", js.undefined)
+    inline def setExpandColumnBeforeSelectColumnUndefined: Self = StObject.set(x, "expandColumnBeforeSelectColumn", js.undefined)
     
-    @scala.inline
-    def setExpandColumnComponent(value: /* props */ ExpandColumnComponentProps => String | ReactElement): Self = StObject.set(x, "expandColumnComponent", js.Any.fromFunction1(value))
+    inline def setExpandColumnComponent(value: /* props */ ExpandColumnComponentProps => String | ReactElement): Self = StObject.set(x, "expandColumnComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandColumnComponentUndefined: Self = StObject.set(x, "expandColumnComponent", js.undefined)
+    inline def setExpandColumnComponentUndefined: Self = StObject.set(x, "expandColumnComponent", js.undefined)
     
-    @scala.inline
-    def setExpandColumnVisible(value: Boolean): Self = StObject.set(x, "expandColumnVisible", value.asInstanceOf[js.Any])
+    inline def setExpandColumnVisible(value: Boolean): Self = StObject.set(x, "expandColumnVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandColumnVisibleUndefined: Self = StObject.set(x, "expandColumnVisible", js.undefined)
+    inline def setExpandColumnVisibleUndefined: Self = StObject.set(x, "expandColumnVisible", js.undefined)
     
-    @scala.inline
-    def setExpandedColumnHeaderComponent(value: /* props */ ExpandedColumnHeaderProps => String | ReactElement): Self = StObject.set(x, "expandedColumnHeaderComponent", js.Any.fromFunction1(value))
+    inline def setExpandedColumnHeaderComponent(value: /* props */ ExpandedColumnHeaderProps => String | ReactElement): Self = StObject.set(x, "expandedColumnHeaderComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandedColumnHeaderComponentUndefined: Self = StObject.set(x, "expandedColumnHeaderComponent", js.undefined)
+    inline def setExpandedColumnHeaderComponentUndefined: Self = StObject.set(x, "expandedColumnHeaderComponent", js.undefined)
   }
 }

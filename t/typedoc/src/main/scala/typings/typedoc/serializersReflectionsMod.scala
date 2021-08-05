@@ -30,8 +30,7 @@ object serializersReflectionsMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "DeclarationReflectionSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "ParameterReflectionSerializer")
@@ -57,8 +56,7 @@ object serializersReflectionsMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "ProjectReflectionSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "ReferenceReflectionSerializer")
@@ -77,8 +75,7 @@ object serializersReflectionsMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "ReferenceReflectionSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "ReflectionSerializer")
@@ -97,8 +94,7 @@ object serializersReflectionsMod {
     @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "ReflectionSerializer.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "SignatureReflectionSerializer")

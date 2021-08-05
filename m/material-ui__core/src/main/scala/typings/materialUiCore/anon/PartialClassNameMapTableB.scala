@@ -11,19 +11,15 @@ trait PartialClassNameMapTableB extends StObject {
 }
 object PartialClassNameMapTableB {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTableB = {
+  inline def apply(): PartialClassNameMapTableB = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTableB]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTableBMutableBuilder[Self <: PartialClassNameMapTableB] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTableB](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

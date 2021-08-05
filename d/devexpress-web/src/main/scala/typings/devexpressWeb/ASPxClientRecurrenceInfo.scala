@@ -133,8 +133,7 @@ trait ASPxClientRecurrenceInfo extends StObject {
 }
 object ASPxClientRecurrenceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetDayNumber: () => Double,
     GetDuration: () => Double,
     GetEnd: () => Date,
@@ -162,73 +161,50 @@ object ASPxClientRecurrenceInfo {
     __obj.asInstanceOf[ASPxClientRecurrenceInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientRecurrenceInfoMutableBuilder[Self <: ASPxClientRecurrenceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRecurrenceInfo](x: Self) {
     
-    @scala.inline
-    def setGetDayNumber(value: () => Double): Self = StObject.set(x, "GetDayNumber", js.Any.fromFunction0(value))
+    inline def setGetDayNumber(value: () => Double): Self = StObject.set(x, "GetDayNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDuration(value: () => Double): Self = StObject.set(x, "GetDuration", js.Any.fromFunction0(value))
+    inline def setGetDuration(value: () => Double): Self = StObject.set(x, "GetDuration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnd(value: () => Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
+    inline def setGetEnd(value: () => Date): Self = StObject.set(x, "GetEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonth(value: () => Double): Self = StObject.set(x, "GetMonth", js.Any.fromFunction0(value))
+    inline def setGetMonth(value: () => Double): Self = StObject.set(x, "GetMonth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOccurrenceCount(value: () => Double): Self = StObject.set(x, "GetOccurrenceCount", js.Any.fromFunction0(value))
+    inline def setGetOccurrenceCount(value: () => Double): Self = StObject.set(x, "GetOccurrenceCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPeriodicity(value: () => Double): Self = StObject.set(x, "GetPeriodicity", js.Any.fromFunction0(value))
+    inline def setGetPeriodicity(value: () => Double): Self = StObject.set(x, "GetPeriodicity", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRange(value: () => ASPxClientRecurrenceRange): Self = StObject.set(x, "GetRange", js.Any.fromFunction0(value))
+    inline def setGetRange(value: () => ASPxClientRecurrenceRange): Self = StObject.set(x, "GetRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecurrenceType(value: () => ASPxClientRecurrenceType): Self = StObject.set(x, "GetRecurrenceType", js.Any.fromFunction0(value))
+    inline def setGetRecurrenceType(value: () => ASPxClientRecurrenceType): Self = StObject.set(x, "GetRecurrenceType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStart(value: () => Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
+    inline def setGetStart(value: () => Date): Self = StObject.set(x, "GetStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWeekDays(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetWeekDays", js.Any.fromFunction0(value))
+    inline def setGetWeekDays(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetWeekDays", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWeekOfMonth(value: () => ASPxClientWeekOfMonth): Self = StObject.set(x, "GetWeekOfMonth", js.Any.fromFunction0(value))
+    inline def setGetWeekOfMonth(value: () => ASPxClientWeekOfMonth): Self = StObject.set(x, "GetWeekOfMonth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDayNumber(value: Double => Unit): Self = StObject.set(x, "SetDayNumber", js.Any.fromFunction1(value))
+    inline def setSetDayNumber(value: Double => Unit): Self = StObject.set(x, "SetDayNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDuration(value: js.Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
+    inline def setSetDuration(value: js.Any => Unit): Self = StObject.set(x, "SetDuration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnd(value: Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
+    inline def setSetEnd(value: Date => Unit): Self = StObject.set(x, "SetEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMonth(value: Double => Unit): Self = StObject.set(x, "SetMonth", js.Any.fromFunction1(value))
+    inline def setSetMonth(value: Double => Unit): Self = StObject.set(x, "SetMonth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOccurrenceCount(value: Double => Unit): Self = StObject.set(x, "SetOccurrenceCount", js.Any.fromFunction1(value))
+    inline def setSetOccurrenceCount(value: Double => Unit): Self = StObject.set(x, "SetOccurrenceCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPeriodicity(value: Double => Unit): Self = StObject.set(x, "SetPeriodicity", js.Any.fromFunction1(value))
+    inline def setSetPeriodicity(value: Double => Unit): Self = StObject.set(x, "SetPeriodicity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRange(value: ASPxClientRecurrenceRange => Unit): Self = StObject.set(x, "SetRange", js.Any.fromFunction1(value))
+    inline def setSetRange(value: ASPxClientRecurrenceRange => Unit): Self = StObject.set(x, "SetRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRecurrenceType(value: ASPxClientRecurrenceType => Unit): Self = StObject.set(x, "SetRecurrenceType", js.Any.fromFunction1(value))
+    inline def setSetRecurrenceType(value: ASPxClientRecurrenceType => Unit): Self = StObject.set(x, "SetRecurrenceType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStart(value: Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
+    inline def setSetStart(value: Date => Unit): Self = StObject.set(x, "SetStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWeekDays(value: ASPxClientWeekDays => Unit): Self = StObject.set(x, "SetWeekDays", js.Any.fromFunction1(value))
+    inline def setSetWeekDays(value: ASPxClientWeekDays => Unit): Self = StObject.set(x, "SetWeekDays", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWeekOfMonth(value: ASPxClientWeekOfMonth => Unit): Self = StObject.set(x, "SetWeekOfMonth", js.Any.fromFunction1(value))
+    inline def setSetWeekOfMonth(value: ASPxClientWeekOfMonth => Unit): Self = StObject.set(x, "SetWeekOfMonth", js.Any.fromFunction1(value))
   }
 }

@@ -55,53 +55,44 @@ object Private {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dismiss(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[Boolean]
+    inline def dismiss(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def displayMessage(container: Element, messageSpec: ButtonText): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def displayMessage(container: Element, messageSpec: ButtonText, closeCallback: js.Function1[/* event */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def displayMessage(
+    inline def displayMessage(container: Element, messageSpec: ButtonText): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def displayMessage(container: Element, messageSpec: ButtonText, closeCallback: js.Function1[/* event */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def displayMessage(
       container: Element,
       messageSpec: ButtonText,
       closeCallback: js.Function1[/* event */ js.Any, Unit],
       buttonCallback: js.Function1[/* event */ js.Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any], buttonCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def displayMessage(
+    inline def displayMessage(
       container: Element,
       messageSpec: ButtonText,
       closeCallback: js.Function1[/* event */ js.Any, Unit],
       buttonCallback: js.Function1[/* event */ js.Any, Unit],
       checkboxCallback: js.Function1[/* event */ js.Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any], buttonCallback.asInstanceOf[js.Any], checkboxCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def displayMessage(
+    inline def displayMessage(
       container: Element,
       messageSpec: ButtonText,
       closeCallback: js.Function1[/* event */ js.Any, Unit],
       buttonCallback: Unit,
       checkboxCallback: js.Function1[/* event */ js.Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any], buttonCallback.asInstanceOf[js.Any], checkboxCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def displayMessage(
+    inline def displayMessage(
       container: Element,
       messageSpec: ButtonText,
       closeCallback: Unit,
       buttonCallback: js.Function1[/* event */ js.Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any], buttonCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def displayMessage(
+    inline def displayMessage(
       container: Element,
       messageSpec: ButtonText,
       closeCallback: Unit,
       buttonCallback: js.Function1[/* event */ js.Any, Unit],
       checkboxCallback: js.Function1[/* event */ js.Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("displayMessage")(container.asInstanceOf[js.Any], messageSpec.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any], buttonCallback.asInstanceOf[js.Any], checkboxCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def displayMessage(
+    inline def displayMessage(
       container: Element,
       messageSpec: ButtonText,
       closeCallback: Unit,
@@ -160,27 +151,22 @@ object Private {
     def this(viewerImpl: js.Any, model: js.Any) = this()
   }
   
-  @scala.inline
-  def calculatePrecision(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def calculatePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculatePrecision(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def calculatePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculatePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def convertUnits(fromUnits: String, toUnits: String, calibrationFactor: Double, d: Double, `type`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnits")(fromUnits.asInstanceOf[js.Any], toUnits.asInstanceOf[js.Any], calibrationFactor.asInstanceOf[js.Any], d.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def convertUnits(fromUnits: String, toUnits: String, calibrationFactor: Double, d: Double, `type`: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUnits")(fromUnits.asInstanceOf[js.Any], toUnits.asInstanceOf[js.Any], calibrationFactor.asInstanceOf[js.Any], d.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSGlobal("Autodesk.Viewing.Private.env")
   @js.native
   val env: String = js.native
   
-  @scala.inline
-  def fadeValue(
+  inline def fadeValue(
     startValue: Double,
     endValue: Double,
     duration: Double,
     setParam: js.Function1[/* value */ Double, Unit]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fadeValue")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], setParam.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def fadeValue(
+  inline def fadeValue(
     startValue: Double,
     endValue: Double,
     duration: Double,
@@ -188,12 +174,9 @@ object Private {
     onFinished: js.Function0[Unit]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fadeValue")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], setParam.asInstanceOf[js.Any], onFinished.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def formatValueWithUnits(value: Double, units: String, `type`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValueWithUnits")(value.asInstanceOf[js.Any], units.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatValueWithUnits(value: Double, units: String, `type`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatValueWithUnits")(value.asInstanceOf[js.Any], units.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getHtmlTemplate(url: String, callback: js.Function2[/* error */ String, /* content */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHtmlTemplate")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getHtmlTemplate(url: String, callback: js.Function2[/* error */ String, /* content */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getHtmlTemplate")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def lerp(x: Double, y: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def lerp(x: Double, y: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

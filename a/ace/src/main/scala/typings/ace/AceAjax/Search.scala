@@ -46,8 +46,7 @@ trait Search extends StObject {
 }
 object Search {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     find: IEditSession => Range,
     findAll: IEditSession => js.Array[Range],
     getOptions: () => js.Any,
@@ -59,25 +58,18 @@ object Search {
     __obj.asInstanceOf[Search]
   }
   
-  @scala.inline
-  implicit class SearchMutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
+  extension [Self <: Search](x: Self) {
     
-    @scala.inline
-    def setFind(value: IEditSession => Range): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: IEditSession => Range): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindAll(value: IEditSession => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
+    inline def setFindAll(value: IEditSession => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOptions(value: () => js.Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+    inline def setGetOptions(value: () => js.Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplace(value: (String, String) => String): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (String, String) => String): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet(value: js.Any => Search): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Any => Search): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

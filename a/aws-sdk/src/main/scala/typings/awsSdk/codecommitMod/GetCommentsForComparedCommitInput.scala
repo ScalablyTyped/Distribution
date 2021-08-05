@@ -33,37 +33,27 @@ trait GetCommentsForComparedCommitInput extends StObject {
 }
 object GetCommentsForComparedCommitInput {
   
-  @scala.inline
-  def apply(afterCommitId: CommitId, repositoryName: RepositoryName): GetCommentsForComparedCommitInput = {
+  inline def apply(afterCommitId: CommitId, repositoryName: RepositoryName): GetCommentsForComparedCommitInput = {
     val __obj = js.Dynamic.literal(afterCommitId = afterCommitId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommentsForComparedCommitInput]
   }
   
-  @scala.inline
-  implicit class GetCommentsForComparedCommitInputMutableBuilder[Self <: GetCommentsForComparedCommitInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommentsForComparedCommitInput](x: Self) {
     
-    @scala.inline
-    def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
+    inline def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeCommitId(value: CommitId): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
+    inline def setBeforeCommitId(value: CommitId): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
+    inline def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

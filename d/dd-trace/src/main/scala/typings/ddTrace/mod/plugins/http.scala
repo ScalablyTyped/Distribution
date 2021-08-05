@@ -47,37 +47,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object http {
   
-  @scala.inline
-  def apply(): http = {
+  inline def apply(): http = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[http]
   }
   
-  @scala.inline
-  implicit class httpMutableBuilder[Self <: http] (val x: Self) extends AnyVal {
+  extension [Self <: http](x: Self) {
     
-    @scala.inline
-    def setClient(value: HttpClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: HttpClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setHooks(value: `2`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: `2`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setMiddleware(value: Boolean): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+    inline def setMiddleware(value: Boolean): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
+    inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
-    @scala.inline
-    def setServer(value: HttpServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: HttpServer): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

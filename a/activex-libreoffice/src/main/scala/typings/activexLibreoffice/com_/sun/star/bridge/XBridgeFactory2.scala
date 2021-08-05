@@ -19,8 +19,7 @@ trait XBridgeFactory2
      with XComponent
 object XBridgeFactory2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExistingBridges: SafeArray[XBridge],
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,

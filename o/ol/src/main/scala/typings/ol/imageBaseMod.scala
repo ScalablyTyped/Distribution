@@ -24,7 +24,7 @@ object imageBaseMod {
     
     /* protected */ def changed(): Unit = js.native
     
-    var extent: Extent = js.native
+    /* protected */ var extent: Extent = js.native
     
     def getExtent(): Extent = js.native
     
@@ -41,8 +41,8 @@ object imageBaseMod {
       */
     def load(): Unit = js.native
     
-    var resolution: Double = js.native
+    /* protected */ var resolution: Double = js.native
     
-    var state: ImageState = js.native
+    /* protected */ var state: ImageState = js.native
   }
 }

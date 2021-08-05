@@ -30,7 +30,7 @@ object draggableMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDraggable(): Unit = js.native
     
-    var events: js.Any = js.native
+    /* private */ var events: js.Any = js.native
   }
   /* static members */
   object Draggable {
@@ -42,8 +42,7 @@ object draggableMod {
     @JSImport("@blueprintjs/table/lib/esm/interactions/draggable", "Draggable.defaultProps")
     @js.native
     def defaultProps: PreventDefault = js.native
-    @scala.inline
-    def defaultProps_=(x: PreventDefault): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PreventDefault): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IDraggableProps
@@ -52,8 +51,7 @@ object draggableMod {
        with IDragHandler
   object IDraggableProps {
     
-    @scala.inline
-    def apply(): IDraggableProps = {
+    inline def apply(): IDraggableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDraggableProps]
     }

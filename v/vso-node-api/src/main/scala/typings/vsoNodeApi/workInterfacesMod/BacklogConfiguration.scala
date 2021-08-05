@@ -45,8 +45,7 @@ trait BacklogConfiguration extends StObject {
 }
 object BacklogConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backlogFields: BacklogFields,
     bugsBehavior: BugsBehavior,
     hiddenBacklogs: js.Array[String],
@@ -60,40 +59,28 @@ object BacklogConfiguration {
     __obj.asInstanceOf[BacklogConfiguration]
   }
   
-  @scala.inline
-  implicit class BacklogConfigurationMutableBuilder[Self <: BacklogConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BacklogConfiguration](x: Self) {
     
-    @scala.inline
-    def setBacklogFields(value: BacklogFields): Self = StObject.set(x, "backlogFields", value.asInstanceOf[js.Any])
+    inline def setBacklogFields(value: BacklogFields): Self = StObject.set(x, "backlogFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBugsBehavior(value: BugsBehavior): Self = StObject.set(x, "bugsBehavior", value.asInstanceOf[js.Any])
+    inline def setBugsBehavior(value: BugsBehavior): Self = StObject.set(x, "bugsBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenBacklogs(value: js.Array[String]): Self = StObject.set(x, "hiddenBacklogs", value.asInstanceOf[js.Any])
+    inline def setHiddenBacklogs(value: js.Array[String]): Self = StObject.set(x, "hiddenBacklogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenBacklogsVarargs(value: String*): Self = StObject.set(x, "hiddenBacklogs", js.Array(value :_*))
+    inline def setHiddenBacklogsVarargs(value: String*): Self = StObject.set(x, "hiddenBacklogs", js.Array(value :_*))
     
-    @scala.inline
-    def setPortfolioBacklogs(value: js.Array[BacklogLevelConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
+    inline def setPortfolioBacklogs(value: js.Array[BacklogLevelConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioBacklogsVarargs(value: BacklogLevelConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
+    inline def setPortfolioBacklogsVarargs(value: BacklogLevelConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
     
-    @scala.inline
-    def setRequirementBacklog(value: BacklogLevelConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
+    inline def setRequirementBacklog(value: BacklogLevelConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskBacklog(value: BacklogLevelConfiguration): Self = StObject.set(x, "taskBacklog", value.asInstanceOf[js.Any])
+    inline def setTaskBacklog(value: BacklogLevelConfiguration): Self = StObject.set(x, "taskBacklog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeMappedStates(value: js.Array[WorkItemTypeStateInfo]): Self = StObject.set(x, "workItemTypeMappedStates", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypeMappedStates(value: js.Array[WorkItemTypeStateInfo]): Self = StObject.set(x, "workItemTypeMappedStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeMappedStatesVarargs(value: WorkItemTypeStateInfo*): Self = StObject.set(x, "workItemTypeMappedStates", js.Array(value :_*))
+    inline def setWorkItemTypeMappedStatesVarargs(value: WorkItemTypeStateInfo*): Self = StObject.set(x, "workItemTypeMappedStates", js.Array(value :_*))
   }
 }

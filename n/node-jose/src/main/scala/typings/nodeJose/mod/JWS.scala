@@ -16,38 +16,24 @@ object JWS {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSign(keys: js.Array[Key]): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
-  @scala.inline
-  def createSign(keys: Key): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
-  @scala.inline
-  def createSign(options: Alg, key: js.Array[Key]): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
-  @scala.inline
-  def createSign(options: Alg, key: Key): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
+  inline def createSign(keys: js.Array[Key]): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
+  inline def createSign(keys: Key): Signer = ^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(keys.asInstanceOf[js.Any]).asInstanceOf[Signer]
+  inline def createSign(options: Alg, key: js.Array[Key]): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
+  inline def createSign(options: Alg, key: Key): Signer = (^.asInstanceOf[js.Dynamic].applyDynamic("createSign")(options.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Signer]
   
   /**
     * Using a keystore.
     */
-  @scala.inline
-  def createVerify(): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")().asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: String): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: String, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: js.Object): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: js.Object, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: Unit, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: Key): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: KeyStore): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: KeyStore, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
-  @scala.inline
-  def createVerify(input: Key, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  inline def createVerify(): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")().asInstanceOf[Verifier]
+  inline def createVerify(input: String): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  inline def createVerify(input: String, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  inline def createVerify(input: js.Object): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  inline def createVerify(input: js.Object, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  inline def createVerify(input: Unit, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  inline def createVerify(input: Key): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  inline def createVerify(input: KeyStore): Verifier = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any]).asInstanceOf[Verifier]
+  inline def createVerify(input: KeyStore, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
+  inline def createVerify(input: Key, opts: Algorithms): Verifier = (^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Verifier]
   
   trait BaseResult extends StObject {
     
@@ -70,30 +56,23 @@ object JWS {
   }
   object BaseResult {
     
-    @scala.inline
-    def apply(header: js.Object, key: Key, payload: Buffer, `protected`: js.Array[String]): BaseResult = {
+    inline def apply(header: js.Object, key: Key, payload: Buffer, `protected`: js.Array[String]): BaseResult = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("protected")(`protected`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseResult]
     }
     
-    @scala.inline
-    implicit class BaseResultMutableBuilder[Self <: BaseResult] (val x: Self) extends AnyVal {
+    extension [Self <: BaseResult](x: Self) {
       
-      @scala.inline
-      def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtected(value: js.Array[String]): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+      inline def setProtected(value: js.Array[String]): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtectedVarargs(value: String*): Self = StObject.set(x, "protected", js.Array(value :_*))
+      inline def setProtectedVarargs(value: String*): Self = StObject.set(x, "protected", js.Array(value :_*))
     }
   }
   
@@ -103,17 +82,14 @@ object JWS {
   }
   object CreateSignResult {
     
-    @scala.inline
-    def apply(signResult: js.Object): CreateSignResult = {
+    inline def apply(signResult: js.Object): CreateSignResult = {
       val __obj = js.Dynamic.literal(signResult = signResult.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateSignResult]
     }
     
-    @scala.inline
-    implicit class CreateSignResultMutableBuilder[Self <: CreateSignResult] (val x: Self) extends AnyVal {
+    extension [Self <: CreateSignResult](x: Self) {
       
-      @scala.inline
-      def setSignResult(value: js.Object): Self = StObject.set(x, "signResult", value.asInstanceOf[js.Any])
+      inline def setSignResult(value: js.Object): Self = StObject.set(x, "signResult", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,17 +99,14 @@ object JWS {
   }
   object Exp {
     
-    @scala.inline
-    def apply(complete: js.Any => js.Any): Exp = {
+    inline def apply(complete: js.Any => js.Any): Exp = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction1(complete))
       __obj.asInstanceOf[Exp]
     }
     
-    @scala.inline
-    implicit class ExpMutableBuilder[Self <: Exp] (val x: Self) extends AnyVal {
+    extension [Self <: Exp](x: Self) {
       
-      @scala.inline
-      def setComplete(value: js.Any => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: js.Any => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     }
   }
   
@@ -159,8 +132,7 @@ object JWS {
   }
   object VerificationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       header: js.Object,
       key: Key,
       payload: Buffer,
@@ -172,11 +144,9 @@ object JWS {
       __obj.asInstanceOf[VerificationResult]
     }
     
-    @scala.inline
-    implicit class VerificationResultMutableBuilder[Self <: VerificationResult] (val x: Self) extends AnyVal {
+    extension [Self <: VerificationResult](x: Self) {
       
-      @scala.inline
-      def setSignature(value: Buffer | String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Buffer | String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,32 +167,24 @@ object JWS {
   }
   object VerifyOptions {
     
-    @scala.inline
-    def apply(handlers: typings.nodeJose.anon.Exp): VerifyOptions = {
+    inline def apply(handlers: typings.nodeJose.anon.Exp): VerifyOptions = {
       val __obj = js.Dynamic.literal(handlers = handlers.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    @scala.inline
-    implicit class VerifyOptionsMutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowEmbeddedKey(value: Boolean): Self = StObject.set(x, "allowEmbeddedKey", value.asInstanceOf[js.Any])
+      inline def setAllowEmbeddedKey(value: Boolean): Self = StObject.set(x, "allowEmbeddedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmbeddedKeyUndefined: Self = StObject.set(x, "allowEmbeddedKey", js.undefined)
+      inline def setAllowEmbeddedKeyUndefined: Self = StObject.set(x, "allowEmbeddedKey", js.undefined)
       
-      @scala.inline
-      def setHandlers(value: typings.nodeJose.anon.Exp): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: typings.nodeJose.anon.Exp): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     }
   }
 }

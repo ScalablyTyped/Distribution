@@ -50,98 +50,68 @@ object mod {
   }
   object ReactHeadroomProps {
     
-    @scala.inline
-    def apply(): ReactHeadroomProps = {
+    inline def apply(): ReactHeadroomProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactHeadroomProps]
     }
     
-    @scala.inline
-    implicit class ReactHeadroomPropsMutableBuilder[Self <: ReactHeadroomProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactHeadroomProps](x: Self) {
       
-      @scala.inline
-      def setCalcHeightOnResize(value: Boolean): Self = StObject.set(x, "calcHeightOnResize", value.asInstanceOf[js.Any])
+      inline def setCalcHeightOnResize(value: Boolean): Self = StObject.set(x, "calcHeightOnResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalcHeightOnResizeUndefined: Self = StObject.set(x, "calcHeightOnResize", js.undefined)
+      inline def setCalcHeightOnResizeUndefined: Self = StObject.set(x, "calcHeightOnResize", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableInlineStyles(value: Boolean): Self = StObject.set(x, "disableInlineStyles", value.asInstanceOf[js.Any])
+      inline def setDisableInlineStyles(value: Boolean): Self = StObject.set(x, "disableInlineStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableInlineStylesUndefined: Self = StObject.set(x, "disableInlineStyles", js.undefined)
+      inline def setDisableInlineStylesUndefined: Self = StObject.set(x, "disableInlineStyles", js.undefined)
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setDownTolerance(value: Double): Self = StObject.set(x, "downTolerance", value.asInstanceOf[js.Any])
+      inline def setDownTolerance(value: Double): Self = StObject.set(x, "downTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownToleranceUndefined: Self = StObject.set(x, "downTolerance", js.undefined)
+      inline def setDownToleranceUndefined: Self = StObject.set(x, "downTolerance", js.undefined)
       
-      @scala.inline
-      def setOnPin(value: () => Unit): Self = StObject.set(x, "onPin", js.Any.fromFunction0(value))
+      inline def setOnPin(value: () => Unit): Self = StObject.set(x, "onPin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPinUndefined: Self = StObject.set(x, "onPin", js.undefined)
+      inline def setOnPinUndefined: Self = StObject.set(x, "onPin", js.undefined)
       
-      @scala.inline
-      def setOnUnfix(value: () => Unit): Self = StObject.set(x, "onUnfix", js.Any.fromFunction0(value))
+      inline def setOnUnfix(value: () => Unit): Self = StObject.set(x, "onUnfix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnfixUndefined: Self = StObject.set(x, "onUnfix", js.undefined)
+      inline def setOnUnfixUndefined: Self = StObject.set(x, "onUnfix", js.undefined)
       
-      @scala.inline
-      def setOnUnpin(value: () => Unit): Self = StObject.set(x, "onUnpin", js.Any.fromFunction0(value))
+      inline def setOnUnpin(value: () => Unit): Self = StObject.set(x, "onUnpin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnpinUndefined: Self = StObject.set(x, "onUnpin", js.undefined)
+      inline def setOnUnpinUndefined: Self = StObject.set(x, "onUnpin", js.undefined)
       
-      @scala.inline
-      def setParent(value: () => js.Any): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
+      inline def setParent(value: () => js.Any): Self = StObject.set(x, "parent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setPinStart(value: Double): Self = StObject.set(x, "pinStart", value.asInstanceOf[js.Any])
+      inline def setPinStart(value: Double): Self = StObject.set(x, "pinStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinStartUndefined: Self = StObject.set(x, "pinStart", js.undefined)
+      inline def setPinStartUndefined: Self = StObject.set(x, "pinStart", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUpTolerance(value: Double): Self = StObject.set(x, "upTolerance", value.asInstanceOf[js.Any])
+      inline def setUpTolerance(value: Double): Self = StObject.set(x, "upTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpToleranceUndefined: Self = StObject.set(x, "upTolerance", js.undefined)
+      inline def setUpToleranceUndefined: Self = StObject.set(x, "upTolerance", js.undefined)
       
-      @scala.inline
-      def setWrapperStyle(value: CSSProperties): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+      inline def setWrapperStyle(value: CSSProperties): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
+      inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
     }
   }
 }

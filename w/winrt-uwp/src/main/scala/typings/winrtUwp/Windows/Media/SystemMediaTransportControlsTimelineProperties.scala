@@ -24,28 +24,21 @@ trait SystemMediaTransportControlsTimelineProperties extends StObject {
 }
 object SystemMediaTransportControlsTimelineProperties {
   
-  @scala.inline
-  def apply(endTime: Double, maxSeekTime: Double, minSeekTime: Double, position: Double, startTime: Double): SystemMediaTransportControlsTimelineProperties = {
+  inline def apply(endTime: Double, maxSeekTime: Double, minSeekTime: Double, position: Double, startTime: Double): SystemMediaTransportControlsTimelineProperties = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], maxSeekTime = maxSeekTime.asInstanceOf[js.Any], minSeekTime = minSeekTime.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemMediaTransportControlsTimelineProperties]
   }
   
-  @scala.inline
-  implicit class SystemMediaTransportControlsTimelinePropertiesMutableBuilder[Self <: SystemMediaTransportControlsTimelineProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemMediaTransportControlsTimelineProperties](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSeekTime(value: Double): Self = StObject.set(x, "maxSeekTime", value.asInstanceOf[js.Any])
+    inline def setMaxSeekTime(value: Double): Self = StObject.set(x, "maxSeekTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSeekTime(value: Double): Self = StObject.set(x, "minSeekTime", value.asInstanceOf[js.Any])
+    inline def setMinSeekTime(value: Double): Self = StObject.set(x, "minSeekTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

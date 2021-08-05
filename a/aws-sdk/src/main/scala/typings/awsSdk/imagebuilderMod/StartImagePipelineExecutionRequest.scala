@@ -18,19 +18,15 @@ trait StartImagePipelineExecutionRequest extends StObject {
 }
 object StartImagePipelineExecutionRequest {
   
-  @scala.inline
-  def apply(clientToken: ClientToken, imagePipelineArn: ImagePipelineArn): StartImagePipelineExecutionRequest = {
+  inline def apply(clientToken: ClientToken, imagePipelineArn: ImagePipelineArn): StartImagePipelineExecutionRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], imagePipelineArn = imagePipelineArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImagePipelineExecutionRequest]
   }
   
-  @scala.inline
-  implicit class StartImagePipelineExecutionRequestMutableBuilder[Self <: StartImagePipelineExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartImagePipelineExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
+    inline def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
   }
 }

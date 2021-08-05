@@ -953,18 +953,14 @@ object observableMod {
     @JSImport("baconjs/types/observable", "allowSync.forceAsync")
     @js.native
     def forceAsync: Boolean = js.native
-    @scala.inline
-    def forceAsync_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAsync")(x.asInstanceOf[js.Any])
+    inline def forceAsync_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceAsync")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def isProperty[V](x: js.Any): /* is baconjs.baconjs/types/observable.Property<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProperty")(x.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/observable.Property<V> */ Boolean]
+  inline def isProperty[V](x: js.Any): /* is baconjs.baconjs/types/observable.Property<V> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProperty")(x.asInstanceOf[js.Any]).asInstanceOf[/* is baconjs.baconjs/types/observable.Property<V> */ Boolean]
   
-  @scala.inline
-  def newEventStream[V](description: Desc, subscribe: Subscribe[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("newEventStream")(description.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def newEventStream[V](description: Desc, subscribe: Subscribe[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("newEventStream")(description.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
   
-  @scala.inline
-  def newEventStreamAllowSync[V](description: Desc, subscribe: Subscribe[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("newEventStreamAllowSync")(description.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def newEventStreamAllowSync[V](description: Desc, subscribe: Subscribe[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("newEventStreamAllowSync")(description.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
   
   trait EventStreamOptions extends StObject {
     
@@ -972,17 +968,14 @@ object observableMod {
   }
   object EventStreamOptions {
     
-    @scala.inline
-    def apply(forceAsync: Boolean): EventStreamOptions = {
+    inline def apply(forceAsync: Boolean): EventStreamOptions = {
       val __obj = js.Dynamic.literal(forceAsync = forceAsync.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventStreamOptions]
     }
     
-    @scala.inline
-    implicit class EventStreamOptionsMutableBuilder[Self <: EventStreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EventStreamOptions](x: Self) {
       
-      @scala.inline
-      def setForceAsync(value: Boolean): Self = StObject.set(x, "forceAsync", value.asInstanceOf[js.Any])
+      inline def setForceAsync(value: Boolean): Self = StObject.set(x, "forceAsync", value.asInstanceOf[js.Any])
     }
   }
   

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DOMDocument60 extends StObject {
   
-  @JSName("MSXML2.DOMDocument60_typekey")
+  /* private */ @JSName("MSXML2.DOMDocument60_typekey")
   var MSXML2DotDOMDocument60_typekey: DOMDocument60 = js.native
   
   /** abort an asynchronous download */

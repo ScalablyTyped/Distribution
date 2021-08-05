@@ -18,19 +18,15 @@ trait DeleteLogStreamRequest extends StObject {
 }
 object DeleteLogStreamRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName, logStreamName: LogStreamName): DeleteLogStreamRequest = {
+  inline def apply(logGroupName: LogGroupName, logStreamName: LogStreamName): DeleteLogStreamRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], logStreamName = logStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLogStreamRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLogStreamRequestMutableBuilder[Self <: DeleteLogStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLogStreamRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
+    inline def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Authorized(currentAuthority: String): TypeofAuthorized = ^.asInstanceOf[js.Dynamic].applyDynamic("Authorized")(currentAuthority.asInstanceOf[js.Any]).asInstanceOf[TypeofAuthorized]
+  inline def Authorized(currentAuthority: String): TypeofAuthorized = ^.asInstanceOf[js.Dynamic].applyDynamic("Authorized")(currentAuthority.asInstanceOf[js.Any]).asInstanceOf[TypeofAuthorized]
   
   @JSImport("ant-design-pro", "AvatarList")
   @js.native
@@ -34,8 +33,7 @@ object mod {
     @JSImport("ant-design-pro", "AvatarList.Item")
     @js.native
     def Item: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default] = js.native
-    @scala.inline
-    def Item_=(x: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: Instantiable1[/* props */ AvatarItemProps, typings.antDesignPro.avatarItemMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "CountDown")
@@ -57,8 +55,7 @@ object mod {
     @JSImport("ant-design-pro", "DescriptionList.Description")
     @js.native
     def Description: Instantiable0[typings.antDesignPro.descriptionMod.default] = js.native
-    @scala.inline
-    def Description_=(x: Instantiable0[typings.antDesignPro.descriptionMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Description")(x.asInstanceOf[js.Any])
+    inline def Description_=(x: Instantiable0[typings.antDesignPro.descriptionMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Description")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "Ellipsis")
@@ -105,29 +102,25 @@ object mod {
     @JSImport("ant-design-pro", "Login.Captcha")
     @js.native
     def Captcha: FC[LoginItemProps] = js.native
-    @scala.inline
-    def Captcha_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Captcha")(x.asInstanceOf[js.Any])
+    inline def Captcha_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Captcha")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("ant-design-pro", "Login.Mobile")
     @js.native
     def Mobile: FC[LoginItemProps] = js.native
-    @scala.inline
-    def Mobile_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mobile")(x.asInstanceOf[js.Any])
+    inline def Mobile_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mobile")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("ant-design-pro", "Login.Password")
     @js.native
     def Password: FC[LoginItemProps] = js.native
-    @scala.inline
-    def Password_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Password")(x.asInstanceOf[js.Any])
+    inline def Password_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Password")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("ant-design-pro", "Login.Submit")
     @js.native
     def Submit: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any = js.native
-    @scala.inline
-    def Submit_=(
+    inline def Submit_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof LoginSubmit */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Submit")(x.asInstanceOf[js.Any])
     
@@ -141,8 +134,7 @@ object mod {
     @JSImport("ant-design-pro", "Login.UserName")
     @js.native
     def UserName: FC[LoginItemProps] = js.native
-    @scala.inline
-    def UserName_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserName")(x.asInstanceOf[js.Any])
+    inline def UserName_=(x: FC[LoginItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "NoticeIcon")
@@ -159,8 +151,7 @@ object mod {
     @JSImport("ant-design-pro", "NoticeIcon.Tab")
     @js.native
     def Tab: Instantiable0[typings.antDesignPro.noticeIconTabMod.default] = js.native
-    @scala.inline
-    def Tab_=(x: Instantiable0[typings.antDesignPro.noticeIconTabMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
+    inline def Tab_=(x: Instantiable0[typings.antDesignPro.noticeIconTabMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tab")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "NumberInfo")
@@ -192,8 +183,7 @@ object mod {
     @JSImport("ant-design-pro", "TagSelect.Option")
     @js.native
     def Option: TypeofTagSelectOption = js.native
-    @scala.inline
-    def Option_=(x: TypeofTagSelectOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
+    inline def Option_=(x: TypeofTagSelectOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ant-design-pro", "Trend")

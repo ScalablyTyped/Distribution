@@ -18,8 +18,7 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(`1`: SpriteSheet, `2`: SpriteSheet, `4`: SpriteSheet): `1` = {
+    inline def apply(`1`: SpriteSheet, `2`: SpriteSheet, `4`: SpriteSheet): `1` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
       __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
@@ -27,17 +26,13 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def set1(value: SpriteSheet): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: SpriteSheet): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2(value: SpriteSheet): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: SpriteSheet): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(value: SpriteSheet): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: SpriteSheet): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +42,16 @@ object anon {
   }
   object All {
     
-    @scala.inline
-    def apply(all: js.Array[IconName]): All = {
+    inline def apply(all: js.Array[IconName]): All = {
       val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any])
       __obj.asInstanceOf[All]
     }
     
-    @scala.inline
-    implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+    extension [Self <: All](x: Self) {
       
-      @scala.inline
-      def setAll(value: js.Array[IconName]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: js.Array[IconName]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllVarargs(value: IconName*): Self = StObject.set(x, "all", js.Array(value :_*))
+      inline def setAllVarargs(value: IconName*): Self = StObject.set(x, "all", js.Array(value :_*))
     }
   }
 }

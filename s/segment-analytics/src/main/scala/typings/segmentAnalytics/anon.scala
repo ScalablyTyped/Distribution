@@ -32,20 +32,16 @@ object anon {
   }
   object Dictintegration {
     
-    @scala.inline
-    def apply(): Dictintegration = {
+    inline def apply(): Dictintegration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictintegration]
     }
     
-    @scala.inline
-    implicit class DictintegrationMutableBuilder[Self <: Dictintegration] (val x: Self) extends AnyVal {
+    extension [Self <: Dictintegration](x: Self) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "All", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "All", js.undefined)
     }
   }
   
@@ -66,20 +62,16 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String, oldKey: String): Key = {
+    inline def apply(key: String, oldKey: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], oldKey = oldKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldKey(value: String): Self = StObject.set(x, "oldKey", value.asInstanceOf[js.Any])
+      inline def setOldKey(value: String): Self = StObject.set(x, "oldKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +81,14 @@ object anon {
   }
   object KeyString {
     
-    @scala.inline
-    def apply(key: String): KeyString = {
+    inline def apply(key: String): KeyString = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyString]
     }
     
-    @scala.inline
-    implicit class KeyStringMutableBuilder[Self <: KeyString] (val x: Self) extends AnyVal {
+    extension [Self <: KeyString](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
 }

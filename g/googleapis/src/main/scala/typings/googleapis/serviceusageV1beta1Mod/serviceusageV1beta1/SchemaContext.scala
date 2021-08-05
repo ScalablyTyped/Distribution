@@ -33,22 +33,17 @@ trait SchemaContext extends StObject {
 }
 object SchemaContext {
   
-  @scala.inline
-  def apply(): SchemaContext = {
+  inline def apply(): SchemaContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContext]
   }
   
-  @scala.inline
-  implicit class SchemaContextMutableBuilder[Self <: SchemaContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContext](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[SchemaContextRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SchemaContextRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SchemaContextRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaContextRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

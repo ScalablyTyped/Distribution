@@ -48,67 +48,47 @@ trait ApplicationDescription extends StObject {
 }
 object ApplicationDescription {
   
-  @scala.inline
-  def apply(): ApplicationDescription = {
+  inline def apply(): ApplicationDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationDescription]
   }
   
-  @scala.inline
-  implicit class ApplicationDescriptionMutableBuilder[Self <: ApplicationDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationDescription](x: Self) {
     
-    @scala.inline
-    def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
+    inline def setApplicationArn(value: ApplicationArn): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
+    inline def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setConfigurationTemplates(value: ConfigurationTemplateNamesList): Self = StObject.set(x, "ConfigurationTemplates", value.asInstanceOf[js.Any])
+    inline def setConfigurationTemplates(value: ConfigurationTemplateNamesList): Self = StObject.set(x, "ConfigurationTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationTemplatesUndefined: Self = StObject.set(x, "ConfigurationTemplates", js.undefined)
+    inline def setConfigurationTemplatesUndefined: Self = StObject.set(x, "ConfigurationTemplates", js.undefined)
     
-    @scala.inline
-    def setConfigurationTemplatesVarargs(value: ConfigurationTemplateName*): Self = StObject.set(x, "ConfigurationTemplates", js.Array(value :_*))
+    inline def setConfigurationTemplatesVarargs(value: ConfigurationTemplateName*): Self = StObject.set(x, "ConfigurationTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
+    inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    @scala.inline
-    def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
+    inline def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
+    inline def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
+    inline def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLifecycleConfigUndefined: Self = StObject.set(x, "ResourceLifecycleConfig", js.undefined)
+    inline def setResourceLifecycleConfigUndefined: Self = StObject.set(x, "ResourceLifecycleConfig", js.undefined)
     
-    @scala.inline
-    def setVersions(value: VersionLabelsList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: VersionLabelsList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: VersionLabel*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: VersionLabel*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

@@ -23,20 +23,16 @@ object mod {
   }
   object ElevatedViewProperties {
     
-    @scala.inline
-    def apply(): ElevatedViewProperties = {
+    inline def apply(): ElevatedViewProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ElevatedViewProperties]
     }
     
-    @scala.inline
-    implicit class ElevatedViewPropertiesMutableBuilder[Self <: ElevatedViewProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ElevatedViewProperties](x: Self) {
       
-      @scala.inline
-      def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+      inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+      inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     }
   }
 }

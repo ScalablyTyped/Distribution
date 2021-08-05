@@ -12,22 +12,17 @@ trait IConsensusInitializeBlockRequest extends StObject {
 }
 object IConsensusInitializeBlockRequest {
   
-  @scala.inline
-  def apply(): IConsensusInitializeBlockRequest = {
+  inline def apply(): IConsensusInitializeBlockRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusInitializeBlockRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusInitializeBlockRequestMutableBuilder[Self <: IConsensusInitializeBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusInitializeBlockRequest](x: Self) {
     
-    @scala.inline
-    def setPreviousId(value: Uint8Array): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
+    inline def setPreviousId(value: Uint8Array): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousIdNull: Self = StObject.set(x, "previousId", null)
+    inline def setPreviousIdNull: Self = StObject.set(x, "previousId", null)
     
-    @scala.inline
-    def setPreviousIdUndefined: Self = StObject.set(x, "previousId", js.undefined)
+    inline def setPreviousIdUndefined: Self = StObject.set(x, "previousId", js.undefined)
   }
 }

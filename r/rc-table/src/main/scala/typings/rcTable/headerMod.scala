@@ -18,8 +18,7 @@ object headerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[RecordType](hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow: HeaderProps[RecordType]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[RecordType](hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow: HeaderProps[RecordType]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStickyOffsetsColumnsFlattenColumnsOnHeaderRow.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait HeaderProps[RecordType] extends StObject {
     
@@ -33,8 +32,7 @@ object headerMod {
   }
   object HeaderProps {
     
-    @scala.inline
-    def apply[RecordType](
+    inline def apply[RecordType](
       columns: ColumnsType[RecordType],
       flattenColumns: js.Array[ColumnType[RecordType]],
       onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement],
@@ -44,28 +42,21 @@ object headerMod {
       __obj.asInstanceOf[HeaderProps[RecordType]]
     }
     
-    @scala.inline
-    implicit class HeaderPropsMutableBuilder[Self <: HeaderProps[?], RecordType] (val x: Self & HeaderProps[RecordType]) extends AnyVal {
+    extension [Self <: HeaderProps[?], RecordType](x: Self & HeaderProps[RecordType]) {
       
-      @scala.inline
-      def setColumns(value: ColumnsType[RecordType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: ColumnsType[RecordType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setFlattenColumns(value: js.Array[ColumnType[RecordType]]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
+      inline def setFlattenColumns(value: js.Array[ColumnType[RecordType]]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "flattenColumns", js.Array(value :_*))
+      inline def setFlattenColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "flattenColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setOnHeaderRow(
+      inline def setOnHeaderRow(
         value: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
       ): Self = StObject.set(x, "onHeaderRow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStickyOffsets(value: StickyOffsets): Self = StObject.set(x, "stickyOffsets", value.asInstanceOf[js.Any])
+      inline def setStickyOffsets(value: StickyOffsets): Self = StObject.set(x, "stickyOffsets", value.asInstanceOf[js.Any])
     }
   }
 }

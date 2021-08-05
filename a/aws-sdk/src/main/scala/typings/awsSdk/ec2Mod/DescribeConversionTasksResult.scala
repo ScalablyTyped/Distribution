@@ -13,22 +13,17 @@ trait DescribeConversionTasksResult extends StObject {
 }
 object DescribeConversionTasksResult {
   
-  @scala.inline
-  def apply(): DescribeConversionTasksResult = {
+  inline def apply(): DescribeConversionTasksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConversionTasksResult]
   }
   
-  @scala.inline
-  implicit class DescribeConversionTasksResultMutableBuilder[Self <: DescribeConversionTasksResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConversionTasksResult](x: Self) {
     
-    @scala.inline
-    def setConversionTasks(value: DescribeConversionTaskList): Self = StObject.set(x, "ConversionTasks", value.asInstanceOf[js.Any])
+    inline def setConversionTasks(value: DescribeConversionTaskList): Self = StObject.set(x, "ConversionTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionTasksUndefined: Self = StObject.set(x, "ConversionTasks", js.undefined)
+    inline def setConversionTasksUndefined: Self = StObject.set(x, "ConversionTasks", js.undefined)
     
-    @scala.inline
-    def setConversionTasksVarargs(value: ConversionTask*): Self = StObject.set(x, "ConversionTasks", js.Array(value :_*))
+    inline def setConversionTasksVarargs(value: ConversionTask*): Self = StObject.set(x, "ConversionTasks", js.Array(value :_*))
   }
 }

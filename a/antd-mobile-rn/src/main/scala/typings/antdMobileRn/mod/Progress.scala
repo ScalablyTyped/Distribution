@@ -22,6 +22,5 @@ object Progress {
   @JSImport("antd-mobile-rn", "Progress.defaultProps")
   @js.native
   def defaultProps: AppearTransition = js.native
-  @scala.inline
-  def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

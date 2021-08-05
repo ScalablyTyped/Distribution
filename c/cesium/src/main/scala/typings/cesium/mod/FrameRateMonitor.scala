@@ -46,10 +46,8 @@ object FrameRateMonitor {
   @JSImport("cesium", "FrameRateMonitor.defaultSettings")
   @js.native
   def defaultSettings: js.Any = js.native
-  @scala.inline
-  def defaultSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSettings")(x.asInstanceOf[js.Any])
+  inline def defaultSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSettings")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def fromScene(scene: Scene): FrameRateMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[FrameRateMonitor]
+  inline def fromScene(scene: Scene): FrameRateMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScene")(scene.asInstanceOf[js.Any]).asInstanceOf[FrameRateMonitor]
 }

@@ -28,31 +28,23 @@ trait DomainInfo extends StObject {
 }
 object DomainInfo {
   
-  @scala.inline
-  def apply(name: DomainName, status: RegistrationStatus): DomainInfo = {
+  inline def apply(name: DomainName, status: RegistrationStatus): DomainInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainInfo]
   }
   
-  @scala.inline
-  implicit class DomainInfoMutableBuilder[Self <: DomainInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DomainInfo](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: RegistrationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RegistrationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait OnDragStateChangedData extends StObject {
 }
 object OnDragStateChangedData {
   
-  @scala.inline
-  def apply(draggedNode: TreeItem, isDragging: Boolean): OnDragStateChangedData = {
+  inline def apply(draggedNode: TreeItem, isDragging: Boolean): OnDragStateChangedData = {
     val __obj = js.Dynamic.literal(draggedNode = draggedNode.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDragStateChangedData]
   }
   
-  @scala.inline
-  implicit class OnDragStateChangedDataMutableBuilder[Self <: OnDragStateChangedData] (val x: Self) extends AnyVal {
+  extension [Self <: OnDragStateChangedData](x: Self) {
     
-    @scala.inline
-    def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
+    inline def setDraggedNode(value: TreeItem): Self = StObject.set(x, "draggedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+    inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply[TInner](children: TInner => ReactElement): Children[TInner] = {
+    inline def apply[TInner](children: TInner => ReactElement): Children[TInner] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[Children[TInner]]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children[?], TInner] (val x: Self & Children[TInner]) extends AnyVal {
+    extension [Self <: Children[?], TInner](x: Self & Children[TInner]) {
       
-      @scala.inline
-      def setChildren(value: TInner => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: TInner => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
 }

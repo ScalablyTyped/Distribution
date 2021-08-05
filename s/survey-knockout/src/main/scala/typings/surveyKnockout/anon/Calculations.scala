@@ -12,28 +12,21 @@ trait Calculations extends StObject {
 }
 object Calculations {
   
-  @scala.inline
-  def apply(): Calculations = {
+  inline def apply(): Calculations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Calculations]
   }
   
-  @scala.inline
-  implicit class CalculationsMutableBuilder[Self <: Calculations] (val x: Self) extends AnyVal {
+  extension [Self <: Calculations](x: Self) {
     
-    @scala.inline
-    def setCalculations(value: js.Array[PropertyName]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
+    inline def setCalculations(value: js.Array[PropertyName]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationsUndefined: Self = StObject.set(x, "calculations", js.undefined)
+    inline def setCalculationsUndefined: Self = StObject.set(x, "calculations", js.undefined)
     
-    @scala.inline
-    def setCalculationsVarargs(value: PropertyName*): Self = StObject.set(x, "calculations", js.Array(value :_*))
+    inline def setCalculationsVarargs(value: PropertyName*): Self = StObject.set(x, "calculations", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
+    inline def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeEmptyUndefined: Self = StObject.set(x, "includeEmpty", js.undefined)
+    inline def setIncludeEmptyUndefined: Self = StObject.set(x, "includeEmpty", js.undefined)
   }
 }

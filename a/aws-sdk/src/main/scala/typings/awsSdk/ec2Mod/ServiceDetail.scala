@@ -68,97 +68,67 @@ trait ServiceDetail extends StObject {
 }
 object ServiceDetail {
   
-  @scala.inline
-  def apply(): ServiceDetail = {
+  inline def apply(): ServiceDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceDetail]
   }
   
-  @scala.inline
-  implicit class ServiceDetailMutableBuilder[Self <: ServiceDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceDetail](x: Self) {
     
-    @scala.inline
-    def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
+    inline def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptanceRequiredUndefined: Self = StObject.set(x, "AcceptanceRequired", js.undefined)
+    inline def setAcceptanceRequiredUndefined: Self = StObject.set(x, "AcceptanceRequired", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZones(value: ValueStringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: ValueStringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setBaseEndpointDnsNames(value: ValueStringList): Self = StObject.set(x, "BaseEndpointDnsNames", value.asInstanceOf[js.Any])
+    inline def setBaseEndpointDnsNames(value: ValueStringList): Self = StObject.set(x, "BaseEndpointDnsNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseEndpointDnsNamesUndefined: Self = StObject.set(x, "BaseEndpointDnsNames", js.undefined)
+    inline def setBaseEndpointDnsNamesUndefined: Self = StObject.set(x, "BaseEndpointDnsNames", js.undefined)
     
-    @scala.inline
-    def setBaseEndpointDnsNamesVarargs(value: String*): Self = StObject.set(x, "BaseEndpointDnsNames", js.Array(value :_*))
+    inline def setBaseEndpointDnsNamesVarargs(value: String*): Self = StObject.set(x, "BaseEndpointDnsNames", js.Array(value :_*))
     
-    @scala.inline
-    def setManagesVpcEndpoints(value: Boolean): Self = StObject.set(x, "ManagesVpcEndpoints", value.asInstanceOf[js.Any])
+    inline def setManagesVpcEndpoints(value: Boolean): Self = StObject.set(x, "ManagesVpcEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagesVpcEndpointsUndefined: Self = StObject.set(x, "ManagesVpcEndpoints", js.undefined)
+    inline def setManagesVpcEndpointsUndefined: Self = StObject.set(x, "ManagesVpcEndpoints", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
-    @scala.inline
-    def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
+    inline def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
+    inline def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
-    @scala.inline
-    def setPrivateDnsNameVerificationState(value: DnsNameState): Self = StObject.set(x, "PrivateDnsNameVerificationState", value.asInstanceOf[js.Any])
+    inline def setPrivateDnsNameVerificationState(value: DnsNameState): Self = StObject.set(x, "PrivateDnsNameVerificationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateDnsNameVerificationStateUndefined: Self = StObject.set(x, "PrivateDnsNameVerificationState", js.undefined)
+    inline def setPrivateDnsNameVerificationStateUndefined: Self = StObject.set(x, "PrivateDnsNameVerificationState", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "ServiceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "ServiceId", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: ServiceTypeDetailSet): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceTypeDetailSet): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
     
-    @scala.inline
-    def setServiceTypeVarargs(value: ServiceTypeDetail*): Self = StObject.set(x, "ServiceType", js.Array(value :_*))
+    inline def setServiceTypeVarargs(value: ServiceTypeDetail*): Self = StObject.set(x, "ServiceType", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcEndpointPolicySupported(value: Boolean): Self = StObject.set(x, "VpcEndpointPolicySupported", value.asInstanceOf[js.Any])
+    inline def setVpcEndpointPolicySupported(value: Boolean): Self = StObject.set(x, "VpcEndpointPolicySupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointPolicySupportedUndefined: Self = StObject.set(x, "VpcEndpointPolicySupported", js.undefined)
+    inline def setVpcEndpointPolicySupportedUndefined: Self = StObject.set(x, "VpcEndpointPolicySupported", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ trait ResizeEvent
 }
 object ResizeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     layer: js.Any,
     newSize: Point_,
     oldSize: Point_,
@@ -29,13 +28,10 @@ object ResizeEvent {
     __obj.asInstanceOf[ResizeEvent]
   }
   
-  @scala.inline
-  implicit class ResizeEventMutableBuilder[Self <: ResizeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeEvent](x: Self) {
     
-    @scala.inline
-    def setNewSize(value: Point_): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
+    inline def setNewSize(value: Point_): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldSize(value: Point_): Self = StObject.set(x, "oldSize", value.asInstanceOf[js.Any])
+    inline def setOldSize(value: Point_): Self = StObject.set(x, "oldSize", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait ParamsQuery extends StObject {
 }
 object ParamsQuery {
   
-  @scala.inline
-  def apply(query: String): ParamsQuery = {
+  inline def apply(query: String): ParamsQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsQuery]
   }
   
-  @scala.inline
-  implicit class ParamsQueryMutableBuilder[Self <: ParamsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsQuery](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

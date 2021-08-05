@@ -8,11 +8,9 @@ object ethersprojectPropertiesStrings {
   
   @js.native
   sealed trait Deferrable extends StObject
-  @scala.inline
-  def Deferrable: Deferrable = "Deferrable".asInstanceOf[Deferrable]
+  inline def Deferrable: Deferrable = "Deferrable".asInstanceOf[Deferrable]
   
   @js.native
   sealed trait Description extends StObject
-  @scala.inline
-  def Description: Description = "Description".asInstanceOf[Description]
+  inline def Description: Description = "Description".asInstanceOf[Description]
 }

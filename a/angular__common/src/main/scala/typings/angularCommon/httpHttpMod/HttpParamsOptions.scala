@@ -26,31 +26,23 @@ trait HttpParamsOptions extends StObject {
 }
 object HttpParamsOptions {
   
-  @scala.inline
-  def apply(): HttpParamsOptions = {
+  inline def apply(): HttpParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpParamsOptions]
   }
   
-  @scala.inline
-  implicit class HttpParamsOptionsMutableBuilder[Self <: HttpParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HttpParamsOptions](x: Self) {
     
-    @scala.inline
-    def setEncoder(value: HttpParameterCodec): Self = StObject.set(x, "encoder", value.asInstanceOf[js.Any])
+    inline def setEncoder(value: HttpParameterCodec): Self = StObject.set(x, "encoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
+    inline def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
     
-    @scala.inline
-    def setFromObject(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "fromObject", value.asInstanceOf[js.Any])
+    inline def setFromObject(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "fromObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromObjectUndefined: Self = StObject.set(x, "fromObject", js.undefined)
+    inline def setFromObjectUndefined: Self = StObject.set(x, "fromObject", js.undefined)
     
-    @scala.inline
-    def setFromString(value: String): Self = StObject.set(x, "fromString", value.asInstanceOf[js.Any])
+    inline def setFromString(value: String): Self = StObject.set(x, "fromString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromStringUndefined: Self = StObject.set(x, "fromString", js.undefined)
+    inline def setFromStringUndefined: Self = StObject.set(x, "fromString", js.undefined)
   }
 }

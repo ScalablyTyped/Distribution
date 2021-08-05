@@ -18,10 +18,8 @@ object mod {
     *  - 'nomap' - When true, a source map is not generated for this module.
     *  - 'sourceFile' - The file name to use for this module in the source map.
     */
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("browser-pack", JSImport.Namespace)
   @js.native
@@ -85,74 +83,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      @scala.inline
-      def setExternalRequireName(value: String): Self = StObject.set(x, "externalRequireName", value.asInstanceOf[js.Any])
+      inline def setExternalRequireName(value: String): Self = StObject.set(x, "externalRequireName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalRequireNameUndefined: Self = StObject.set(x, "externalRequireName", js.undefined)
+      inline def setExternalRequireNameUndefined: Self = StObject.set(x, "externalRequireName", js.undefined)
       
-      @scala.inline
-      def setHasExports(value: Boolean): Self = StObject.set(x, "hasExports", value.asInstanceOf[js.Any])
+      inline def setHasExports(value: Boolean): Self = StObject.set(x, "hasExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasExportsUndefined: Self = StObject.set(x, "hasExports", js.undefined)
+      inline def setHasExportsUndefined: Self = StObject.set(x, "hasExports", js.undefined)
       
-      @scala.inline
-      def setPrelude(value: String): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
+      inline def setPrelude(value: String): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreludePath(value: String): Self = StObject.set(x, "preludePath", value.asInstanceOf[js.Any])
+      inline def setPreludePath(value: String): Self = StObject.set(x, "preludePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreludePathUndefined: Self = StObject.set(x, "preludePath", js.undefined)
+      inline def setPreludePathUndefined: Self = StObject.set(x, "preludePath", js.undefined)
       
-      @scala.inline
-      def setPreludeUndefined: Self = StObject.set(x, "prelude", js.undefined)
+      inline def setPreludeUndefined: Self = StObject.set(x, "prelude", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setSourceMapPrefix(value: String): Self = StObject.set(x, "sourceMapPrefix", value.asInstanceOf[js.Any])
+      inline def setSourceMapPrefix(value: String): Self = StObject.set(x, "sourceMapPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapPrefixUndefined: Self = StObject.set(x, "sourceMapPrefix", js.undefined)
+      inline def setSourceMapPrefixUndefined: Self = StObject.set(x, "sourceMapPrefix", js.undefined)
       
-      @scala.inline
-      def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
+      inline def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
+      inline def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
       
-      @scala.inline
-      def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      inline def setStandalone(value: String): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneModule(value: String): Self = StObject.set(x, "standaloneModule", value.asInstanceOf[js.Any])
+      inline def setStandaloneModule(value: String): Self = StObject.set(x, "standaloneModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandaloneModuleUndefined: Self = StObject.set(x, "standaloneModule", js.undefined)
+      inline def setStandaloneModuleUndefined: Self = StObject.set(x, "standaloneModule", js.undefined)
       
-      @scala.inline
-      def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     }
   }
 }

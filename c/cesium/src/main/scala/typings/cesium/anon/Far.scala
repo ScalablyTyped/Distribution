@@ -20,43 +20,31 @@ trait Far extends StObject {
 }
 object Far {
   
-  @scala.inline
-  def apply(aspectRatio: Double, fov: Double): Far = {
+  inline def apply(aspectRatio: Double, fov: Double): Far = {
     val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], fov = fov.asInstanceOf[js.Any])
     __obj.asInstanceOf[Far]
   }
   
-  @scala.inline
-  implicit class FarMutableBuilder[Self <: Far] (val x: Self) extends AnyVal {
+  extension [Self <: Far](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
+    inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
+    inline def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
     
-    @scala.inline
-    def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
+    inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
+    inline def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
+    inline def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
     
-    @scala.inline
-    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+    inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+    inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
     
-    @scala.inline
-    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
+    inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

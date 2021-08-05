@@ -23,31 +23,23 @@ trait FormValidatedEventUIParam extends StObject {
 }
 object FormValidatedEventUIParam {
   
-  @scala.inline
-  def apply(): FormValidatedEventUIParam = {
+  inline def apply(): FormValidatedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormValidatedEventUIParam]
   }
   
-  @scala.inline
-  implicit class FormValidatedEventUIParamMutableBuilder[Self <: FormValidatedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FormValidatedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+    inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
   }
 }

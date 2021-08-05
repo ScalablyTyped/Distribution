@@ -18,19 +18,15 @@ trait GetLogsOptions extends StObject {
 }
 object GetLogsOptions {
   
-  @scala.inline
-  def apply(length: Double, offset: Double): GetLogsOptions = {
+  inline def apply(length: Double, offset: Double): GetLogsOptions = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogsOptions]
   }
   
-  @scala.inline
-  implicit class GetLogsOptionsMutableBuilder[Self <: GetLogsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogsOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

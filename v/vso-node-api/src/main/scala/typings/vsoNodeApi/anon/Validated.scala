@@ -12,19 +12,15 @@ trait Validated extends StObject {
 }
 object Validated {
   
-  @scala.inline
-  def apply(none: scala.Double, validated: scala.Double): Validated = {
+  inline def apply(none: scala.Double, validated: scala.Double): Validated = {
     val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], validated = validated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Validated]
   }
   
-  @scala.inline
-  implicit class ValidatedMutableBuilder[Self <: Validated] (val x: Self) extends AnyVal {
+  extension [Self <: Validated](x: Self) {
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidated(value: scala.Double): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
+    inline def setValidated(value: scala.Double): Self = StObject.set(x, "validated", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ trait PutEventStreamOutput
      with typings.awsSdkClientPinpointBrowser.typesPutEventStreamOutputMod.PutEventStreamOutput
 object PutEventStreamOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): PutEventStreamOutput = {
+  inline def apply($metadata: ResponseMetadata, EventStream: UnmarshalledEventStream): PutEventStreamOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventStream = EventStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventStreamOutput]
   }

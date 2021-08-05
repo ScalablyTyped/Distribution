@@ -15,19 +15,15 @@ trait ShadowRootOptions extends StObject {
 }
 object ShadowRootOptions {
   
-  @scala.inline
-  def apply(): ShadowRootOptions = {
+  inline def apply(): ShadowRootOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadowRootOptions]
   }
   
-  @scala.inline
-  implicit class ShadowRootOptionsMutableBuilder[Self <: ShadowRootOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShadowRootOptions](x: Self) {
     
-    @scala.inline
-    def setDelegatesFocus(value: Boolean): Self = StObject.set(x, "delegatesFocus", value.asInstanceOf[js.Any])
+    inline def setDelegatesFocus(value: Boolean): Self = StObject.set(x, "delegatesFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatesFocusUndefined: Self = StObject.set(x, "delegatesFocus", js.undefined)
+    inline def setDelegatesFocusUndefined: Self = StObject.set(x, "delegatesFocus", js.undefined)
   }
 }

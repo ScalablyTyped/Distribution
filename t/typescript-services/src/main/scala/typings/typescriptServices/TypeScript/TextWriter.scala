@@ -12,22 +12,21 @@ trait TextWriter extends StObject {
   
   def WriteLine(s: String): Unit
   
-  var contents: js.Any
+  /* private */ var contents: js.Any
   
   def getOutputFile(): OutputFile
   
-  var name: js.Any
+  /* private */ var name: js.Any
   
   var onNewLine: Boolean
   
-  var outputFileType: js.Any
+  /* private */ var outputFileType: js.Any
   
-  var writeByteOrderMark: js.Any
+  /* private */ var writeByteOrderMark: js.Any
 }
 object TextWriter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Close: () => Unit,
     Write: String => Unit,
     WriteLine: String => Unit,
@@ -42,34 +41,24 @@ object TextWriter {
     __obj.asInstanceOf[TextWriter]
   }
   
-  @scala.inline
-  implicit class TextWriterMutableBuilder[Self <: TextWriter] (val x: Self) extends AnyVal {
+  extension [Self <: TextWriter](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContents(value: js.Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOutputFile(value: () => OutputFile): Self = StObject.set(x, "getOutputFile", js.Any.fromFunction0(value))
+    inline def setGetOutputFile(value: () => OutputFile): Self = StObject.set(x, "getOutputFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnNewLine(value: Boolean): Self = StObject.set(x, "onNewLine", value.asInstanceOf[js.Any])
+    inline def setOnNewLine(value: Boolean): Self = StObject.set(x, "onNewLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFileType(value: js.Any): Self = StObject.set(x, "outputFileType", value.asInstanceOf[js.Any])
+    inline def setOutputFileType(value: js.Any): Self = StObject.set(x, "outputFileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: String => Unit): Self = StObject.set(x, "Write", js.Any.fromFunction1(value))
+    inline def setWrite(value: String => Unit): Self = StObject.set(x, "Write", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteByteOrderMark(value: js.Any): Self = StObject.set(x, "writeByteOrderMark", value.asInstanceOf[js.Any])
+    inline def setWriteByteOrderMark(value: js.Any): Self = StObject.set(x, "writeByteOrderMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteLine(value: String => Unit): Self = StObject.set(x, "WriteLine", js.Any.fromFunction1(value))
+    inline def setWriteLine(value: String => Unit): Self = StObject.set(x, "WriteLine", js.Any.fromFunction1(value))
   }
 }

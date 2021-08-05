@@ -15,25 +15,19 @@ trait MUIDataTableTextLabelsBody extends StObject {
 }
 object MUIDataTableTextLabelsBody {
   
-  @scala.inline
-  def apply(columnHeaderTooltip: MUIDataTableColumn => String, toolTip: String): MUIDataTableTextLabelsBody = {
+  inline def apply(columnHeaderTooltip: MUIDataTableColumn => String, toolTip: String): MUIDataTableTextLabelsBody = {
     val __obj = js.Dynamic.literal(columnHeaderTooltip = js.Any.fromFunction1(columnHeaderTooltip), toolTip = toolTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableTextLabelsBody]
   }
   
-  @scala.inline
-  implicit class MUIDataTableTextLabelsBodyMutableBuilder[Self <: MUIDataTableTextLabelsBody] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableTextLabelsBody](x: Self) {
     
-    @scala.inline
-    def setColumnHeaderTooltip(value: MUIDataTableColumn => String): Self = StObject.set(x, "columnHeaderTooltip", js.Any.fromFunction1(value))
+    inline def setColumnHeaderTooltip(value: MUIDataTableColumn => String): Self = StObject.set(x, "columnHeaderTooltip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNoMatch(value: String | ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
+    inline def setNoMatch(value: String | ReactNode): Self = StObject.set(x, "noMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoMatchUndefined: Self = StObject.set(x, "noMatch", js.undefined)
+    inline def setNoMatchUndefined: Self = StObject.set(x, "noMatch", js.undefined)
     
-    @scala.inline
-    def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+    inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
   }
 }

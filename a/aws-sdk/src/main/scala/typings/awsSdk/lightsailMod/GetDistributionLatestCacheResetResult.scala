@@ -18,25 +18,19 @@ trait GetDistributionLatestCacheResetResult extends StObject {
 }
 object GetDistributionLatestCacheResetResult {
   
-  @scala.inline
-  def apply(): GetDistributionLatestCacheResetResult = {
+  inline def apply(): GetDistributionLatestCacheResetResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDistributionLatestCacheResetResult]
   }
   
-  @scala.inline
-  implicit class GetDistributionLatestCacheResetResultMutableBuilder[Self <: GetDistributionLatestCacheResetResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionLatestCacheResetResult](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: IsoDate): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: IsoDate): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

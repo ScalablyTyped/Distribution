@@ -10,19 +10,15 @@ trait Numrcpterrors extends StObject {
 }
 object Numrcpterrors {
   
-  @scala.inline
-  def apply(): Numrcpterrors = {
+  inline def apply(): Numrcpterrors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Numrcpterrors]
   }
   
-  @scala.inline
-  implicit class NumrcpterrorsMutableBuilder[Self <: Numrcpterrors] (val x: Self) extends AnyVal {
+  extension [Self <: Numrcpterrors](x: Self) {
     
-    @scala.inline
-    def setNum_rcpt_errors(value: Double): Self = StObject.set(x, "num_rcpt_errors", value.asInstanceOf[js.Any])
+    inline def setNum_rcpt_errors(value: Double): Self = StObject.set(x, "num_rcpt_errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_rcpt_errorsUndefined: Self = StObject.set(x, "num_rcpt_errors", js.undefined)
+    inline def setNum_rcpt_errorsUndefined: Self = StObject.set(x, "num_rcpt_errors", js.undefined)
   }
 }

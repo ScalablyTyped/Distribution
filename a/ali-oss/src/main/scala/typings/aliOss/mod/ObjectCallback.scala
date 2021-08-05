@@ -24,43 +24,31 @@ trait ObjectCallback extends StObject {
 }
 object ObjectCallback {
   
-  @scala.inline
-  def apply(body: String, url: String): ObjectCallback = {
+  inline def apply(body: String, url: String): ObjectCallback = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectCallback]
   }
   
-  @scala.inline
-  implicit class ObjectCallbackMutableBuilder[Self <: ObjectCallback] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectCallback](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setCustomValue(value: js.Object): Self = StObject.set(x, "customValue", value.asInstanceOf[js.Any])
+    inline def setCustomValue(value: js.Object): Self = StObject.set(x, "customValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomValueUndefined: Self = StObject.set(x, "customValue", js.undefined)
+    inline def setCustomValueUndefined: Self = StObject.set(x, "customValue", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

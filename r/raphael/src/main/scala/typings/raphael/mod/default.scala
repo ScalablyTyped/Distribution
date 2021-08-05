@@ -67,6 +67,5 @@ class default ()
 }
 object default {
   
-  @scala.inline
-  def apply: RaphaelStatic[SVG | VML] = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[RaphaelStatic[SVG | VML]]
+  inline def apply: RaphaelStatic[SVG | VML] = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[RaphaelStatic[SVG | VML]]
 }

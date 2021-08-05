@@ -8,26 +8,21 @@ object mitsoboxStrings {
   
   @js.native
   sealed trait ABORT extends StObject
-  @scala.inline
-  def ABORT: ABORT = "ABORT".asInstanceOf[ABORT]
+  inline def ABORT: ABORT = "ABORT".asInstanceOf[ABORT]
   
   @js.native
   sealed trait CANCEL extends StObject
-  @scala.inline
-  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
+  inline def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
   
   @js.native
   sealed trait IGNORE extends StObject
-  @scala.inline
-  def IGNORE: IGNORE = "IGNORE".asInstanceOf[IGNORE]
+  inline def IGNORE: IGNORE = "IGNORE".asInstanceOf[IGNORE]
   
   @js.native
   sealed trait OK extends StObject
-  @scala.inline
-  def OK: OK = "OK".asInstanceOf[OK]
+  inline def OK: OK = "OK".asInstanceOf[OK]
   
   @js.native
   sealed trait RETRY extends StObject
-  @scala.inline
-  def RETRY: RETRY = "RETRY".asInstanceOf[RETRY]
+  inline def RETRY: RETRY = "RETRY".asInstanceOf[RETRY]
 }

@@ -9,8 +9,7 @@ trait GetKeyRotationStatusInput
      with typings.awsSdkClientKmsNode.typesGetKeyRotationStatusInputMod.GetKeyRotationStatusInput
 object GetKeyRotationStatusInput {
   
-  @scala.inline
-  def apply(KeyId: String): GetKeyRotationStatusInput = {
+  inline def apply(KeyId: String): GetKeyRotationStatusInput = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyRotationStatusInput]
   }

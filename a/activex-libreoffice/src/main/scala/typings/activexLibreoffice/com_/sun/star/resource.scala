@@ -77,8 +77,7 @@ object resource {
   }
   object StringResourceWithLocation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentLocale: Locale,
       DefaultLocale: Locale,
       Locales: SafeArray[Locale],
@@ -123,11 +122,9 @@ object resource {
       __obj.asInstanceOf[StringResourceWithLocation]
     }
     
-    @scala.inline
-    implicit class StringResourceWithLocationMutableBuilder[Self <: StringResourceWithLocation] (val x: Self) extends AnyVal {
+    extension [Self <: StringResourceWithLocation](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (String, Boolean, Locale, String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction6(value))
+      inline def setCreate(value: (String, Boolean, Locale, String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction6(value))
     }
   }
   
@@ -149,8 +146,7 @@ object resource {
   }
   object StringResourceWithStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentLocale: Locale,
       DefaultLocale: Locale,
       Locales: SafeArray[Locale],
@@ -195,11 +191,9 @@ object resource {
       __obj.asInstanceOf[StringResourceWithStorage]
     }
     
-    @scala.inline
-    implicit class StringResourceWithStorageMutableBuilder[Self <: StringResourceWithStorage] (val x: Self) extends AnyVal {
+    extension [Self <: StringResourceWithStorage](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (XStorage, Boolean, Locale, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction5(value))
+      inline def setCreate(value: (XStorage, Boolean, Locale, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction5(value))
     }
   }
   
@@ -328,8 +322,7 @@ object resource {
   }
   object XLocale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AvailableLocales: SafeArray[Locale],
       Default: Locale,
       ISOCountries: SafeArray[String],
@@ -361,74 +354,51 @@ object resource {
       __obj.asInstanceOf[XLocale]
     }
     
-    @scala.inline
-    implicit class XLocaleMutableBuilder[Self <: XLocale] (val x: Self) extends AnyVal {
+    extension [Self <: XLocale](x: Self) {
       
-      @scala.inline
-      def setAvailableLocales(value: SafeArray[Locale]): Self = StObject.set(x, "AvailableLocales", value.asInstanceOf[js.Any])
+      inline def setAvailableLocales(value: SafeArray[Locale]): Self = StObject.set(x, "AvailableLocales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreate(value: (String, String, String) => Locale): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+      inline def setCreate(value: (String, String, String) => Locale): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDefault(value: Locale): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Locale): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_(value: (Locale, Locale) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (Locale, Locale) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAvailableLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLocales", js.Any.fromFunction0(value))
+      inline def setGetAvailableLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getAvailableLocales", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefault(value: () => Locale): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+      inline def setGetDefault(value: () => Locale): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDisplayCountry(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayCountry", js.Any.fromFunction2(value))
+      inline def setGetDisplayCountry(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayCountry", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDisplayCountry_Default(value: Locale => String): Self = StObject.set(x, "getDisplayCountry_Default", js.Any.fromFunction1(value))
+      inline def setGetDisplayCountry_Default(value: Locale => String): Self = StObject.set(x, "getDisplayCountry_Default", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDisplayLanguage(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayLanguage", js.Any.fromFunction2(value))
+      inline def setGetDisplayLanguage(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayLanguage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDisplayLanguage_Default(value: Locale => String): Self = StObject.set(x, "getDisplayLanguage_Default", js.Any.fromFunction1(value))
+      inline def setGetDisplayLanguage_Default(value: Locale => String): Self = StObject.set(x, "getDisplayLanguage_Default", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDisplayName(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction2(value))
+      inline def setGetDisplayName(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDisplayName_Default(value: Locale => String): Self = StObject.set(x, "getDisplayName_Default", js.Any.fromFunction1(value))
+      inline def setGetDisplayName_Default(value: Locale => String): Self = StObject.set(x, "getDisplayName_Default", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDisplayVariant(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayVariant", js.Any.fromFunction2(value))
+      inline def setGetDisplayVariant(value: (Locale, Locale) => String): Self = StObject.set(x, "getDisplayVariant", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetDisplayVariant_Default(value: Locale => String): Self = StObject.set(x, "getDisplayVariant_Default", js.Any.fromFunction1(value))
+      inline def setGetDisplayVariant_Default(value: Locale => String): Self = StObject.set(x, "getDisplayVariant_Default", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetISO3Country(value: Locale => String): Self = StObject.set(x, "getISO3Country", js.Any.fromFunction1(value))
+      inline def setGetISO3Country(value: Locale => String): Self = StObject.set(x, "getISO3Country", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetISO3Language(value: Locale => String): Self = StObject.set(x, "getISO3Language", js.Any.fromFunction1(value))
+      inline def setGetISO3Language(value: Locale => String): Self = StObject.set(x, "getISO3Language", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetISOCountries(value: () => SafeArray[String]): Self = StObject.set(x, "getISOCountries", js.Any.fromFunction0(value))
+      inline def setGetISOCountries(value: () => SafeArray[String]): Self = StObject.set(x, "getISOCountries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetISOLanguages(value: () => SafeArray[String]): Self = StObject.set(x, "getISOLanguages", js.Any.fromFunction0(value))
+      inline def setGetISOLanguages(value: () => SafeArray[String]): Self = StObject.set(x, "getISOLanguages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLanguagesForCountry(value: String => SafeArray[String]): Self = StObject.set(x, "getLanguagesForCountry", js.Any.fromFunction1(value))
+      inline def setGetLanguagesForCountry(value: String => SafeArray[String]): Self = StObject.set(x, "getLanguagesForCountry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setISOCountries(value: SafeArray[String]): Self = StObject.set(x, "ISOCountries", value.asInstanceOf[js.Any])
+      inline def setISOCountries(value: SafeArray[String]): Self = StObject.set(x, "ISOCountries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setISOLanguages(value: SafeArray[String]): Self = StObject.set(x, "ISOLanguages", value.asInstanceOf[js.Any])
+      inline def setISOLanguages(value: SafeArray[String]): Self = StObject.set(x, "ISOLanguages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDefault(value: Locale => Unit): Self = StObject.set(x, "setDefault", js.Any.fromFunction1(value))
+      inline def setSetDefault(value: Locale => Unit): Self = StObject.set(x, "setDefault", js.Any.fromFunction1(value))
     }
   }
   
@@ -552,8 +522,7 @@ object resource {
   }
   object XResourceBundle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ElementNames: SafeArray[String],
       ElementType: `type`,
       Locale: Locale,
@@ -573,20 +542,15 @@ object resource {
       __obj.asInstanceOf[XResourceBundle]
     }
     
-    @scala.inline
-    implicit class XResourceBundleMutableBuilder[Self <: XResourceBundle] (val x: Self) extends AnyVal {
+    extension [Self <: XResourceBundle](x: Self) {
       
-      @scala.inline
-      def setGetDirectElement(value: String => js.Any): Self = StObject.set(x, "getDirectElement", js.Any.fromFunction1(value))
+      inline def setGetDirectElement(value: String => js.Any): Self = StObject.set(x, "getDirectElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+      inline def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: XResourceBundle): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: XResourceBundle): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -611,8 +575,7 @@ object resource {
   }
   object XResourceBundleLoader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       loadBundle: (String, Locale) => XResourceBundle,
       loadBundle_Default: String => XResourceBundle,
@@ -623,14 +586,11 @@ object resource {
       __obj.asInstanceOf[XResourceBundleLoader]
     }
     
-    @scala.inline
-    implicit class XResourceBundleLoaderMutableBuilder[Self <: XResourceBundleLoader] (val x: Self) extends AnyVal {
+    extension [Self <: XResourceBundleLoader](x: Self) {
       
-      @scala.inline
-      def setLoadBundle(value: (String, Locale) => XResourceBundle): Self = StObject.set(x, "loadBundle", js.Any.fromFunction2(value))
+      inline def setLoadBundle(value: (String, Locale) => XResourceBundle): Self = StObject.set(x, "loadBundle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadBundle_Default(value: String => XResourceBundle): Self = StObject.set(x, "loadBundle_Default", js.Any.fromFunction1(value))
+      inline def setLoadBundle_Default(value: String => XResourceBundle): Self = StObject.set(x, "loadBundle_Default", js.Any.fromFunction1(value))
     }
   }
   
@@ -763,8 +723,7 @@ object resource {
   }
   object XStringResourceManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentLocale: Locale,
       DefaultLocale: Locale,
       Locales: SafeArray[Locale],
@@ -799,41 +758,29 @@ object resource {
       __obj.asInstanceOf[XStringResourceManager]
     }
     
-    @scala.inline
-    implicit class XStringResourceManagerMutableBuilder[Self <: XStringResourceManager] (val x: Self) extends AnyVal {
+    extension [Self <: XStringResourceManager](x: Self) {
       
-      @scala.inline
-      def setGetUniqueNumericId(value: () => Double): Self = StObject.set(x, "getUniqueNumericId", js.Any.fromFunction0(value))
+      inline def setGetUniqueNumericId(value: () => Double): Self = StObject.set(x, "getUniqueNumericId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+      inline def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewLocale(value: Locale => Unit): Self = StObject.set(x, "newLocale", js.Any.fromFunction1(value))
+      inline def setNewLocale(value: Locale => Unit): Self = StObject.set(x, "newLocale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveId(value: String => Unit): Self = StObject.set(x, "removeId", js.Any.fromFunction1(value))
+      inline def setRemoveId(value: String => Unit): Self = StObject.set(x, "removeId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveIdForLocale(value: (String, Locale) => Unit): Self = StObject.set(x, "removeIdForLocale", js.Any.fromFunction2(value))
+      inline def setRemoveIdForLocale(value: (String, Locale) => Unit): Self = StObject.set(x, "removeIdForLocale", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveLocale(value: Locale => Unit): Self = StObject.set(x, "removeLocale", js.Any.fromFunction1(value))
+      inline def setRemoveLocale(value: Locale => Unit): Self = StObject.set(x, "removeLocale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCurrentLocale(value: (Locale, Boolean) => Unit): Self = StObject.set(x, "setCurrentLocale", js.Any.fromFunction2(value))
+      inline def setSetCurrentLocale(value: (Locale, Boolean) => Unit): Self = StObject.set(x, "setCurrentLocale", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetDefaultLocale(value: Locale => Unit): Self = StObject.set(x, "setDefaultLocale", js.Any.fromFunction1(value))
+      inline def setSetDefaultLocale(value: Locale => Unit): Self = StObject.set(x, "setDefaultLocale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetString(value: (String, String) => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction2(value))
+      inline def setSetString(value: (String, String) => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStringForLocale(value: (String, String, Locale) => Unit): Self = StObject.set(x, "setStringForLocale", js.Any.fromFunction3(value))
+      inline def setSetStringForLocale(value: (String, String, Locale) => Unit): Self = StObject.set(x, "setStringForLocale", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUniqueNumericId(value: Double): Self = StObject.set(x, "UniqueNumericId", value.asInstanceOf[js.Any])
+      inline def setUniqueNumericId(value: Double): Self = StObject.set(x, "UniqueNumericId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -939,8 +886,7 @@ object resource {
   }
   object XStringResourcePersistence {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentLocale: Locale,
       DefaultLocale: Locale,
       Locales: SafeArray[Locale],
@@ -982,29 +928,21 @@ object resource {
       __obj.asInstanceOf[XStringResourcePersistence]
     }
     
-    @scala.inline
-    implicit class XStringResourcePersistenceMutableBuilder[Self <: XStringResourcePersistence] (val x: Self) extends AnyVal {
+    extension [Self <: XStringResourcePersistence](x: Self) {
       
-      @scala.inline
-      def setExportBinary(value: () => SafeArray[Double]): Self = StObject.set(x, "exportBinary", js.Any.fromFunction0(value))
+      inline def setExportBinary(value: () => SafeArray[Double]): Self = StObject.set(x, "exportBinary", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setImportBinary(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "importBinary", js.Any.fromFunction1(value))
+      inline def setImportBinary(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "importBinary", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
+      inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetComment(value: String => Unit): Self = StObject.set(x, "setComment", js.Any.fromFunction1(value))
+      inline def setSetComment(value: String => Unit): Self = StObject.set(x, "setComment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
+      inline def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStoreToStorage(value: (XStorage, String, String) => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction3(value))
+      inline def setStoreToStorage(value: (XStorage, String, String) => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStoreToURL(value: (String, String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "storeToURL", js.Any.fromFunction4(value))
+      inline def setStoreToURL(value: (String, String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "storeToURL", js.Any.fromFunction4(value))
     }
   }
   
@@ -1122,8 +1060,7 @@ object resource {
   }
   object XStringResourceResolver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentLocale: Locale,
       DefaultLocale: Locale,
       Locales: SafeArray[Locale],
@@ -1147,47 +1084,33 @@ object resource {
       __obj.asInstanceOf[XStringResourceResolver]
     }
     
-    @scala.inline
-    implicit class XStringResourceResolverMutableBuilder[Self <: XStringResourceResolver] (val x: Self) extends AnyVal {
+    extension [Self <: XStringResourceResolver](x: Self) {
       
-      @scala.inline
-      def setCurrentLocale(value: Locale): Self = StObject.set(x, "CurrentLocale", value.asInstanceOf[js.Any])
+      inline def setCurrentLocale(value: Locale): Self = StObject.set(x, "CurrentLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocale(value: Locale): Self = StObject.set(x, "DefaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: Locale): Self = StObject.set(x, "DefaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCurrentLocale(value: () => Locale): Self = StObject.set(x, "getCurrentLocale", js.Any.fromFunction0(value))
+      inline def setGetCurrentLocale(value: () => Locale): Self = StObject.set(x, "getCurrentLocale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultLocale(value: () => Locale): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
+      inline def setGetDefaultLocale(value: () => Locale): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocales", js.Any.fromFunction0(value))
+      inline def setGetLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocales", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResourceIDs(value: () => SafeArray[String]): Self = StObject.set(x, "getResourceIDs", js.Any.fromFunction0(value))
+      inline def setGetResourceIDs(value: () => SafeArray[String]): Self = StObject.set(x, "getResourceIDs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResourceIDsForLocale(value: Locale => SafeArray[String]): Self = StObject.set(x, "getResourceIDsForLocale", js.Any.fromFunction1(value))
+      inline def setGetResourceIDsForLocale(value: Locale => SafeArray[String]): Self = StObject.set(x, "getResourceIDsForLocale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasEntryForId(value: String => Boolean): Self = StObject.set(x, "hasEntryForId", js.Any.fromFunction1(value))
+      inline def setHasEntryForId(value: String => Boolean): Self = StObject.set(x, "hasEntryForId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasEntryForIdAndLocale(value: (String, Locale) => Boolean): Self = StObject.set(x, "hasEntryForIdAndLocale", js.Any.fromFunction2(value))
+      inline def setHasEntryForIdAndLocale(value: (String, Locale) => Boolean): Self = StObject.set(x, "hasEntryForIdAndLocale", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLocales(value: SafeArray[Locale]): Self = StObject.set(x, "Locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: SafeArray[Locale]): Self = StObject.set(x, "Locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveString(value: String => String): Self = StObject.set(x, "resolveString", js.Any.fromFunction1(value))
+      inline def setResolveString(value: String => String): Self = StObject.set(x, "resolveString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveStringForLocale(value: (String, Locale) => String): Self = StObject.set(x, "resolveStringForLocale", js.Any.fromFunction2(value))
+      inline def setResolveStringForLocale(value: (String, Locale) => String): Self = StObject.set(x, "resolveStringForLocale", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResourceIDs(value: SafeArray[String]): Self = StObject.set(x, "ResourceIDs", value.asInstanceOf[js.Any])
+      inline def setResourceIDs(value: SafeArray[String]): Self = StObject.set(x, "ResourceIDs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1214,8 +1137,7 @@ object resource {
   }
   object XStringResourceSupplier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       StringResource: XStringResourceResolver,
       acquire: () => Unit,
       getStringResource: () => XStringResourceResolver,
@@ -1226,14 +1148,11 @@ object resource {
       __obj.asInstanceOf[XStringResourceSupplier]
     }
     
-    @scala.inline
-    implicit class XStringResourceSupplierMutableBuilder[Self <: XStringResourceSupplier] (val x: Self) extends AnyVal {
+    extension [Self <: XStringResourceSupplier](x: Self) {
       
-      @scala.inline
-      def setGetStringResource(value: () => XStringResourceResolver): Self = StObject.set(x, "getStringResource", js.Any.fromFunction0(value))
+      inline def setGetStringResource(value: () => XStringResourceResolver): Self = StObject.set(x, "getStringResource", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStringResource(value: XStringResourceResolver): Self = StObject.set(x, "StringResource", value.asInstanceOf[js.Any])
+      inline def setStringResource(value: XStringResourceResolver): Self = StObject.set(x, "StringResource", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1262,8 +1181,7 @@ object resource {
   }
   object XStringResourceWithLocation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentLocale: Locale,
       DefaultLocale: Locale,
       Locales: SafeArray[Locale],
@@ -1307,14 +1225,11 @@ object resource {
       __obj.asInstanceOf[XStringResourceWithLocation]
     }
     
-    @scala.inline
-    implicit class XStringResourceWithLocationMutableBuilder[Self <: XStringResourceWithLocation] (val x: Self) extends AnyVal {
+    extension [Self <: XStringResourceWithLocation](x: Self) {
       
-      @scala.inline
-      def setSetURL(value: String => Unit): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
+      inline def setSetURL(value: String => Unit): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStoreAsURL(value: String => Unit): Self = StObject.set(x, "storeAsURL", js.Any.fromFunction1(value))
+      inline def setStoreAsURL(value: String => Unit): Self = StObject.set(x, "storeAsURL", js.Any.fromFunction1(value))
     }
   }
   
@@ -1343,8 +1258,7 @@ object resource {
   }
   object XStringResourceWithStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentLocale: Locale,
       DefaultLocale: Locale,
       Locales: SafeArray[Locale],
@@ -1388,14 +1302,11 @@ object resource {
       __obj.asInstanceOf[XStringResourceWithStorage]
     }
     
-    @scala.inline
-    implicit class XStringResourceWithStorageMutableBuilder[Self <: XStringResourceWithStorage] (val x: Self) extends AnyVal {
+    extension [Self <: XStringResourceWithStorage](x: Self) {
       
-      @scala.inline
-      def setSetStorage(value: XStorage => Unit): Self = StObject.set(x, "setStorage", js.Any.fromFunction1(value))
+      inline def setSetStorage(value: XStorage => Unit): Self = StObject.set(x, "setStorage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStoreAsStorage(value: XStorage => Unit): Self = StObject.set(x, "storeAsStorage", js.Any.fromFunction1(value))
+      inline def setStoreAsStorage(value: XStorage => Unit): Self = StObject.set(x, "storeAsStorage", js.Any.fromFunction1(value))
     }
   }
 }

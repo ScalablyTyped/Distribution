@@ -23,8 +23,7 @@ trait Library extends StObject {
 }
 object Library {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     create: typings.nodeRedEditorClient.anon.Editor => Unit,
     createBrowser: Container => Data,
     init: () => Unit,
@@ -34,19 +33,14 @@ object Library {
     __obj.asInstanceOf[Library]
   }
   
-  @scala.inline
-  implicit class LibraryMutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
+  extension [Self <: Library](x: Self) {
     
-    @scala.inline
-    def setCreate(value: typings.nodeRedEditorClient.anon.Editor => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: typings.nodeRedEditorClient.anon.Editor => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateBrowser(value: Container => Data): Self = StObject.set(x, "createBrowser", js.Any.fromFunction1(value))
+    inline def setCreateBrowser(value: Container => Data): Self = StObject.set(x, "createBrowser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadLibraryFolder(value: (String, String, String, js.Function1[/* items */ js.Array[js.Object], Unit]) => Unit): Self = StObject.set(x, "loadLibraryFolder", js.Any.fromFunction4(value))
+    inline def setLoadLibraryFolder(value: (String, String, String, js.Function1[/* items */ js.Array[js.Object], Unit]) => Unit): Self = StObject.set(x, "loadLibraryFolder", js.Any.fromFunction4(value))
   }
 }

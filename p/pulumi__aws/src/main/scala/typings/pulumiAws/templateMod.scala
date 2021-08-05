@@ -62,21 +62,16 @@ object templateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Template]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Template]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TemplateState): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Template]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TemplateState, opts: CustomResourceOptions): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Template]
+    inline def get(name: String, id: Input[ID]): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Template]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Template]
+    inline def get(name: String, id: Input[ID], state: TemplateState): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Template]
+    inline def get(name: String, id: Input[ID], state: TemplateState, opts: CustomResourceOptions): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Template]
     
     /**
       * Returns true if the given object is an instance of Template.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/template.Template */ Boolean]
   }
   
   trait TemplateArgs extends StObject {
@@ -103,38 +98,28 @@ object templateMod {
   }
   object TemplateArgs {
     
-    @scala.inline
-    def apply(): TemplateArgs = {
+    inline def apply(): TemplateArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TemplateArgs]
     }
     
-    @scala.inline
-    implicit class TemplateArgsMutableBuilder[Self <: TemplateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateArgs](x: Self) {
       
-      @scala.inline
-      def setHtml(value: Input[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Input[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSubject(value: Input[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: Input[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setText(value: Input[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Input[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -162,38 +147,28 @@ object templateMod {
   }
   object TemplateState {
     
-    @scala.inline
-    def apply(): TemplateState = {
+    inline def apply(): TemplateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TemplateState]
     }
     
-    @scala.inline
-    implicit class TemplateStateMutableBuilder[Self <: TemplateState] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateState](x: Self) {
       
-      @scala.inline
-      def setHtml(value: Input[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Input[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSubject(value: Input[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: Input[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setText(value: Input[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Input[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

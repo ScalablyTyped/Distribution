@@ -22,55 +22,39 @@ trait ResponsivePanelOptions extends StObject {
 }
 object ResponsivePanelOptions {
   
-  @scala.inline
-  def apply(): ResponsivePanelOptions = {
+  inline def apply(): ResponsivePanelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponsivePanelOptions]
   }
   
-  @scala.inline
-  implicit class ResponsivePanelOptionsMutableBuilder[Self <: ResponsivePanelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsivePanelOptions](x: Self) {
     
-    @scala.inline
-    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+    inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
     
-    @scala.inline
-    def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+    inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+    inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
     
-    @scala.inline
-    def setClose(value: /* e */ ResponsivePanelEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* e */ ResponsivePanelEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpen(value: /* e */ ResponsivePanelEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* e */ ResponsivePanelEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setToggleButton(value: String): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
+    inline def setToggleButton(value: String): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleButtonUndefined: Self = StObject.set(x, "toggleButton", js.undefined)
+    inline def setToggleButtonUndefined: Self = StObject.set(x, "toggleButton", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait OrgsUpdateMembershipForAuthenticatedUserResponseData extends StObject {
 }
 object OrgsUpdateMembershipForAuthenticatedUserResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     organization: Description,
     organization_url: String,
     role: String,
@@ -35,25 +34,18 @@ object OrgsUpdateMembershipForAuthenticatedUserResponseData {
     __obj.asInstanceOf[OrgsUpdateMembershipForAuthenticatedUserResponseData]
   }
   
-  @scala.inline
-  implicit class OrgsUpdateMembershipForAuthenticatedUserResponseDataMutableBuilder[Self <: OrgsUpdateMembershipForAuthenticatedUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsUpdateMembershipForAuthenticatedUserResponseData](x: Self) {
     
-    @scala.inline
-    def setOrganization(value: Description): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Description): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganization_url(value: String): Self = StObject.set(x, "organization_url", value.asInstanceOf[js.Any])
+    inline def setOrganization_url(value: String): Self = StObject.set(x, "organization_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

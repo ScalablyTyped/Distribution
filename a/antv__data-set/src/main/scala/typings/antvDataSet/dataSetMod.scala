@@ -21,9 +21,9 @@ object dataSetMod {
   class DataSet () extends ^ {
     def this(initialProps: DataSetOptions) = this()
     
-    var _getUniqueViewName: js.Any = js.native
+    /* private */ var _getUniqueViewName: js.Any = js.native
     
-    var _onChangeTimer: js.Any = js.native
+    /* private */ var _onChangeTimer: js.Any = js.native
     
     def createView(): View = js.native
     def createView(name: String): View = js.native
@@ -84,26 +84,22 @@ object dataSetMod {
     @JSImport("@antv/data-set/lib/data-set", "DataSet.CONSTANTS")
     @js.native
     def CONSTANTS: GEO = js.native
-    @scala.inline
-    def CONSTANTS_=(x: GEO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONSTANTS")(x.asInstanceOf[js.Any])
+    inline def CONSTANTS_=(x: GEO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONSTANTS")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/data-set", "DataSet.DataSet")
     @js.native
     def DataSet: TypeofDataSet = js.native
-    @scala.inline
-    def DataSet_=(x: TypeofDataSet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSet")(x.asInstanceOf[js.Any])
+    inline def DataSet_=(x: TypeofDataSet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSet")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/data-set", "DataSet.DataView")
     @js.native
     def DataView: TypeofView = js.native
-    @scala.inline
-    def DataView_=(x: TypeofView): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataView")(x.asInstanceOf[js.Any])
+    inline def DataView_=(x: TypeofView): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataView")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/data-set", "DataSet.View")
     @js.native
     def View: TypeofView = js.native
-    @scala.inline
-    def View_=(x: TypeofView): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: TypeofView): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     /**
       * 注册的 Connector（key-value 对）
@@ -111,24 +107,19 @@ object dataSetMod {
     @JSImport("@antv/data-set/lib/data-set", "DataSet.connectors")
     @js.native
     def connectors: Record[String, js.Any] = js.native
-    @scala.inline
-    def connectors_=(x: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectors")(x.asInstanceOf[js.Any])
+    inline def connectors_=(x: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectors")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getConnector(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnector")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def getConnector(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnector")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
-    @scala.inline
-    def getTransform(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")().asInstanceOf[js.Function]
-    @scala.inline
-    def getTransform(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def getTransform(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")().asInstanceOf[js.Function]
+    inline def getTransform(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
     /**
       * 注册一个数据连接函数，注册后所有数据视图都可以使用 name 来引用这个数据连接函数，从而接入某种数据源。
       * @param name - 类型
       * @param connector - 解析逻辑
       */
-    @scala.inline
-    def registerConnector(
+    inline def registerConnector(
       name: String,
       connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ View, js.Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerConnector")(name.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -138,8 +129,7 @@ object dataSetMod {
       * @param name - transform 类型
       * @param transform - transform逻辑
       */
-    @scala.inline
-    def registerTransform(name: String, transform: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTransform")(name.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerTransform(name: String, transform: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTransform")(name.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * 已注册的 Transform（key-value 对）
@@ -147,14 +137,12 @@ object dataSetMod {
     @JSImport("@antv/data-set/lib/data-set", "DataSet.transforms")
     @js.native
     def transforms: Record[String, js.Any] = js.native
-    @scala.inline
-    def transforms_=(x: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transforms")(x.asInstanceOf[js.Any])
+    inline def transforms_=(x: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transforms")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/data-set/lib/data-set", "DataSet.version")
     @js.native
     def version: String = js.native
-    @scala.inline
-    def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
   trait DataSetOptions extends StObject {
@@ -163,17 +151,14 @@ object dataSetMod {
   }
   object DataSetOptions {
     
-    @scala.inline
-    def apply(state: Record[String, js.Any]): DataSetOptions = {
+    inline def apply(state: Record[String, js.Any]): DataSetOptions = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSetOptions]
     }
     
-    @scala.inline
-    implicit class DataSetOptionsMutableBuilder[Self <: DataSetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DataSetOptions](x: Self) {
       
-      @scala.inline
-      def setState(value: Record[String, js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Record[String, js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

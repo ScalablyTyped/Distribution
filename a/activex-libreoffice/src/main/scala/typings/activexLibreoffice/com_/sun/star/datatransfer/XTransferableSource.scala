@@ -22,8 +22,7 @@ trait XTransferableSource
 }
 object XTransferableSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataSourceDescription: String,
     acquire: () => Unit,
     getDataSourceDescription: () => String,
@@ -34,13 +33,10 @@ object XTransferableSource {
     __obj.asInstanceOf[XTransferableSource]
   }
   
-  @scala.inline
-  implicit class XTransferableSourceMutableBuilder[Self <: XTransferableSource] (val x: Self) extends AnyVal {
+  extension [Self <: XTransferableSource](x: Self) {
     
-    @scala.inline
-    def setDataSourceDescription(value: String): Self = StObject.set(x, "DataSourceDescription", value.asInstanceOf[js.Any])
+    inline def setDataSourceDescription(value: String): Self = StObject.set(x, "DataSourceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataSourceDescription(value: () => String): Self = StObject.set(x, "getDataSourceDescription", js.Any.fromFunction0(value))
+    inline def setGetDataSourceDescription(value: () => String): Self = StObject.set(x, "getDataSourceDescription", js.Any.fromFunction0(value))
   }
 }

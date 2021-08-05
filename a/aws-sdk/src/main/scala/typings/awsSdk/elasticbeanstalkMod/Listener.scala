@@ -18,25 +18,19 @@ trait Listener extends StObject {
 }
 object Listener {
   
-  @scala.inline
-  def apply(): Listener = {
+  inline def apply(): Listener = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Listener]
   }
   
-  @scala.inline
-  implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+  extension [Self <: Listener](x: Self) {
     
-    @scala.inline
-    def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait Ipv6CidrAssociation extends StObject {
 }
 object Ipv6CidrAssociation {
   
-  @scala.inline
-  def apply(): Ipv6CidrAssociation = {
+  inline def apply(): Ipv6CidrAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ipv6CidrAssociation]
   }
   
-  @scala.inline
-  implicit class Ipv6CidrAssociationMutableBuilder[Self <: Ipv6CidrAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: Ipv6CidrAssociation](x: Self) {
     
-    @scala.inline
-    def setAssociatedResource(value: String): Self = StObject.set(x, "AssociatedResource", value.asInstanceOf[js.Any])
+    inline def setAssociatedResource(value: String): Self = StObject.set(x, "AssociatedResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedResourceUndefined: Self = StObject.set(x, "AssociatedResource", js.undefined)
+    inline def setAssociatedResourceUndefined: Self = StObject.set(x, "AssociatedResource", js.undefined)
     
-    @scala.inline
-    def setIpv6Cidr(value: String): Self = StObject.set(x, "Ipv6Cidr", value.asInstanceOf[js.Any])
+    inline def setIpv6Cidr(value: String): Self = StObject.set(x, "Ipv6Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrUndefined: Self = StObject.set(x, "Ipv6Cidr", js.undefined)
+    inline def setIpv6CidrUndefined: Self = StObject.set(x, "Ipv6Cidr", js.undefined)
   }
 }

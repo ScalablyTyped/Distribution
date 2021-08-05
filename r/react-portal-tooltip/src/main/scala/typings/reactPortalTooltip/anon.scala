@@ -15,26 +15,20 @@ object anon {
   }
   object ArrowStyle {
     
-    @scala.inline
-    def apply(): ArrowStyle = {
+    inline def apply(): ArrowStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArrowStyle]
     }
     
-    @scala.inline
-    implicit class ArrowStyleMutableBuilder[Self <: ArrowStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ArrowStyle](x: Self) {
       
-      @scala.inline
-      def setArrowStyle(value: CSSProperties): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
+      inline def setArrowStyle(value: CSSProperties): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowStyleUndefined: Self = StObject.set(x, "arrowStyle", js.undefined)
+      inline def setArrowStyleUndefined: Self = StObject.set(x, "arrowStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

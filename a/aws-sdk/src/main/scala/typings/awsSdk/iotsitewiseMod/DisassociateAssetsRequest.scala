@@ -28,28 +28,21 @@ trait DisassociateAssetsRequest extends StObject {
 }
 object DisassociateAssetsRequest {
   
-  @scala.inline
-  def apply(assetId: ID, childAssetId: ID, hierarchyId: ID): DisassociateAssetsRequest = {
+  inline def apply(assetId: ID, childAssetId: ID, hierarchyId: ID): DisassociateAssetsRequest = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], childAssetId = childAssetId.asInstanceOf[js.Any], hierarchyId = hierarchyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateAssetsRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateAssetsRequestMutableBuilder[Self <: DisassociateAssetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateAssetsRequest](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildAssetId(value: ID): Self = StObject.set(x, "childAssetId", value.asInstanceOf[js.Any])
+    inline def setChildAssetId(value: ID): Self = StObject.set(x, "childAssetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setHierarchyId(value: ID): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
+    inline def setHierarchyId(value: ID): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
   }
 }

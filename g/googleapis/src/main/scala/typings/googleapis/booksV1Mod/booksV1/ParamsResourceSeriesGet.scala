@@ -24,28 +24,21 @@ trait ParamsResourceSeriesGet
 }
 object ParamsResourceSeriesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceSeriesGet = {
+  inline def apply(): ParamsResourceSeriesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSeriesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSeriesGetMutableBuilder[Self <: ParamsResourceSeriesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSeriesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setSeries_id(value: js.Array[String]): Self = StObject.set(x, "series_id", value.asInstanceOf[js.Any])
+    inline def setSeries_id(value: js.Array[String]): Self = StObject.set(x, "series_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries_idUndefined: Self = StObject.set(x, "series_id", js.undefined)
+    inline def setSeries_idUndefined: Self = StObject.set(x, "series_id", js.undefined)
     
-    @scala.inline
-    def setSeries_idVarargs(value: String*): Self = StObject.set(x, "series_id", js.Array(value :_*))
+    inline def setSeries_idVarargs(value: String*): Self = StObject.set(x, "series_id", js.Array(value :_*))
   }
 }

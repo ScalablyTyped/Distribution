@@ -114,8 +114,7 @@ object mod extends Shortcut {
   }
   object Theme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active01: String,
       activeDanger: String,
       activePrimary: String,
@@ -170,155 +169,105 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Theme]
     }
     
-    @scala.inline
-    implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+    extension [Self <: Theme](x: Self) {
       
-      @scala.inline
-      def setActive01(value: String): Self = StObject.set(x, "active01", value.asInstanceOf[js.Any])
+      inline def setActive01(value: String): Self = StObject.set(x, "active01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveDanger(value: String): Self = StObject.set(x, "activeDanger", value.asInstanceOf[js.Any])
+      inline def setActiveDanger(value: String): Self = StObject.set(x, "activeDanger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivePrimary(value: String): Self = StObject.set(x, "activePrimary", value.asInstanceOf[js.Any])
+      inline def setActivePrimary(value: String): Self = StObject.set(x, "activePrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveSecondary(value: String): Self = StObject.set(x, "activeSecondary", value.asInstanceOf[js.Any])
+      inline def setActiveSecondary(value: String): Self = StObject.set(x, "activeSecondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTertiary(value: String): Self = StObject.set(x, "activeTertiary", value.asInstanceOf[js.Any])
+      inline def setActiveTertiary(value: String): Self = StObject.set(x, "activeTertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUI(value: String): Self = StObject.set(x, "activeUI", value.asInstanceOf[js.Any])
+      inline def setActiveUI(value: String): Self = StObject.set(x, "activeUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrand01(value: String): Self = StObject.set(x, "brand01", value.asInstanceOf[js.Any])
+      inline def setBrand01(value: String): Self = StObject.set(x, "brand01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrand02(value: String): Self = StObject.set(x, "brand02", value.asInstanceOf[js.Any])
+      inline def setBrand02(value: String): Self = StObject.set(x, "brand02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrand03(value: String): Self = StObject.set(x, "brand03", value.asInstanceOf[js.Any])
+      inline def setBrand03(value: String): Self = StObject.set(x, "brand03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled01(value: String): Self = StObject.set(x, "disabled01", value.asInstanceOf[js.Any])
+      inline def setDisabled01(value: String): Self = StObject.set(x, "disabled01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled02(value: String): Self = StObject.set(x, "disabled02", value.asInstanceOf[js.Any])
+      inline def setDisabled02(value: String): Self = StObject.set(x, "disabled02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled03(value: String): Self = StObject.set(x, "disabled03", value.asInstanceOf[js.Any])
+      inline def setDisabled03(value: String): Self = StObject.set(x, "disabled03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField01(value: String): Self = StObject.set(x, "field01", value.asInstanceOf[js.Any])
+      inline def setField01(value: String): Self = StObject.set(x, "field01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField02(value: String): Self = StObject.set(x, "field02", value.asInstanceOf[js.Any])
+      inline def setField02(value: String): Self = StObject.set(x, "field02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlight(value: String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverDanger(value: String): Self = StObject.set(x, "hoverDanger", value.asInstanceOf[js.Any])
+      inline def setHoverDanger(value: String): Self = StObject.set(x, "hoverDanger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverField(value: String): Self = StObject.set(x, "hoverField", value.asInstanceOf[js.Any])
+      inline def setHoverField(value: String): Self = StObject.set(x, "hoverField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverPrimary(value: String): Self = StObject.set(x, "hoverPrimary", value.asInstanceOf[js.Any])
+      inline def setHoverPrimary(value: String): Self = StObject.set(x, "hoverPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverPrimaryText(value: String): Self = StObject.set(x, "hoverPrimaryText", value.asInstanceOf[js.Any])
+      inline def setHoverPrimaryText(value: String): Self = StObject.set(x, "hoverPrimaryText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverRow(value: String): Self = StObject.set(x, "hoverRow", value.asInstanceOf[js.Any])
+      inline def setHoverRow(value: String): Self = StObject.set(x, "hoverRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverSecondary(value: String): Self = StObject.set(x, "hoverSecondary", value.asInstanceOf[js.Any])
+      inline def setHoverSecondary(value: String): Self = StObject.set(x, "hoverSecondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverSelectedUI(value: String): Self = StObject.set(x, "hoverSelectedUI", value.asInstanceOf[js.Any])
+      inline def setHoverSelectedUI(value: String): Self = StObject.set(x, "hoverSelectedUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverTertiary(value: String): Self = StObject.set(x, "hoverTertiary", value.asInstanceOf[js.Any])
+      inline def setHoverTertiary(value: String): Self = StObject.set(x, "hoverTertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverUI(value: String): Self = StObject.set(x, "hoverUI", value.asInstanceOf[js.Any])
+      inline def setHoverUI(value: String): Self = StObject.set(x, "hoverUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon01(value: String): Self = StObject.set(x, "icon01", value.asInstanceOf[js.Any])
+      inline def setIcon01(value: String): Self = StObject.set(x, "icon01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon02(value: String): Self = StObject.set(x, "icon02", value.asInstanceOf[js.Any])
+      inline def setIcon02(value: String): Self = StObject.set(x, "icon02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractive01(value: String): Self = StObject.set(x, "interactive01", value.asInstanceOf[js.Any])
+      inline def setInteractive01(value: String): Self = StObject.set(x, "interactive01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractive02(value: String): Self = StObject.set(x, "interactive02", value.asInstanceOf[js.Any])
+      inline def setInteractive02(value: String): Self = StObject.set(x, "interactive02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractive03(value: String): Self = StObject.set(x, "interactive03", value.asInstanceOf[js.Any])
+      inline def setInteractive03(value: String): Self = StObject.set(x, "interactive03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverse01(value: String): Self = StObject.set(x, "inverse01", value.asInstanceOf[js.Any])
+      inline def setInverse01(value: String): Self = StObject.set(x, "inverse01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverse02(value: String): Self = StObject.set(x, "inverse02", value.asInstanceOf[js.Any])
+      inline def setInverse02(value: String): Self = StObject.set(x, "inverse02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlay01(value: String): Self = StObject.set(x, "overlay01", value.asInstanceOf[js.Any])
+      inline def setOverlay01(value: String): Self = StObject.set(x, "overlay01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUI(value: String): Self = StObject.set(x, "selectedUI", value.asInstanceOf[js.Any])
+      inline def setSelectedUI(value: String): Self = StObject.set(x, "selectedUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupport01(value: String): Self = StObject.set(x, "support01", value.asInstanceOf[js.Any])
+      inline def setSupport01(value: String): Self = StObject.set(x, "support01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupport02(value: String): Self = StObject.set(x, "support02", value.asInstanceOf[js.Any])
+      inline def setSupport02(value: String): Self = StObject.set(x, "support02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupport03(value: String): Self = StObject.set(x, "support03", value.asInstanceOf[js.Any])
+      inline def setSupport03(value: String): Self = StObject.set(x, "support03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupport04(value: String): Self = StObject.set(x, "support04", value.asInstanceOf[js.Any])
+      inline def setSupport04(value: String): Self = StObject.set(x, "support04", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText01(value: String): Self = StObject.set(x, "text01", value.asInstanceOf[js.Any])
+      inline def setText01(value: String): Self = StObject.set(x, "text01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText02(value: String): Self = StObject.set(x, "text02", value.asInstanceOf[js.Any])
+      inline def setText02(value: String): Self = StObject.set(x, "text02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText03(value: String): Self = StObject.set(x, "text03", value.asInstanceOf[js.Any])
+      inline def setText03(value: String): Self = StObject.set(x, "text03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText04(value: String): Self = StObject.set(x, "text04", value.asInstanceOf[js.Any])
+      inline def setText04(value: String): Self = StObject.set(x, "text04", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi01(value: String): Self = StObject.set(x, "ui01", value.asInstanceOf[js.Any])
+      inline def setUi01(value: String): Self = StObject.set(x, "ui01", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi02(value: String): Self = StObject.set(x, "ui02", value.asInstanceOf[js.Any])
+      inline def setUi02(value: String): Self = StObject.set(x, "ui02", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi03(value: String): Self = StObject.set(x, "ui03", value.asInstanceOf[js.Any])
+      inline def setUi03(value: String): Self = StObject.set(x, "ui03", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi04(value: String): Self = StObject.set(x, "ui04", value.asInstanceOf[js.Any])
+      inline def setUi04(value: String): Self = StObject.set(x, "ui04", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUi05(value: String): Self = StObject.set(x, "ui05", value.asInstanceOf[js.Any])
+      inline def setUi05(value: String): Self = StObject.set(x, "ui05", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiBackground(value: String): Self = StObject.set(x, "uiBackground", value.asInstanceOf[js.Any])
+      inline def setUiBackground(value: String): Self = StObject.set(x, "uiBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedLink(value: String): Self = StObject.set(x, "visitedLink", value.asInstanceOf[js.Any])
+      inline def setVisitedLink(value: String): Self = StObject.set(x, "visitedLink", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,8 +288,7 @@ object mod extends Shortcut {
   }
   object ThemePackage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active01: String,
       activeDanger: String,
       activePrimary: String,
@@ -400,23 +348,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ThemePackage]
     }
     
-    @scala.inline
-    implicit class ThemePackageMutableBuilder[Self <: ThemePackage] (val x: Self) extends AnyVal {
+    extension [Self <: ThemePackage](x: Self) {
       
-      @scala.inline
-      def setG10(value: Theme): Self = StObject.set(x, "g10", value.asInstanceOf[js.Any])
+      inline def setG10(value: Theme): Self = StObject.set(x, "g10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG100(value: Theme): Self = StObject.set(x, "g100", value.asInstanceOf[js.Any])
+      inline def setG100(value: Theme): Self = StObject.set(x, "g100", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG90(value: Theme): Self = StObject.set(x, "g90", value.asInstanceOf[js.Any])
+      inline def setG90(value: Theme): Self = StObject.set(x, "g90", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemes(value: G10): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
+      inline def setThemes(value: G10): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhite(value: Theme): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+      inline def setWhite(value: Theme): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
     }
   }
   

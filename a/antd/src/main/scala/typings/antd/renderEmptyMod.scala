@@ -11,10 +11,8 @@ object renderEmptyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ReactNode]
-  @scala.inline
-  def default(componentName: String): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentName.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def default(): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ReactNode]
+  inline def default(componentName: String): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentName.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
   type RenderEmptyHandler = js.Function1[/* componentName */ js.UndefOr[String], ReactNode]
 }

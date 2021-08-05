@@ -13,20 +13,16 @@ trait PickNamedTupleMemberTypet extends StObject {
 }
 object PickNamedTupleMemberTypet {
   
-  @scala.inline
-  def apply(`type`: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): PickNamedTupleMemberTypet = {
+  inline def apply(`type`: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): PickNamedTupleMemberTypet = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickNamedTupleMemberTypet]
   }
   
-  @scala.inline
-  implicit class PickNamedTupleMemberTypetMutableBuilder[Self <: PickNamedTupleMemberTypet] (val x: Self) extends AnyVal {
+  extension [Self <: PickNamedTupleMemberTypet](x: Self) {
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "named-tuple-member" */ String]) | (/* "named-tuple-member" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

@@ -26,31 +26,23 @@ trait SchemaLink extends StObject {
 }
 object SchemaLink {
   
-  @scala.inline
-  def apply(): SchemaLink = {
+  inline def apply(): SchemaLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLink]
   }
   
-  @scala.inline
-  implicit class SchemaLinkMutableBuilder[Self <: SchemaLink] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLink](x: Self) {
     
-    @scala.inline
-    def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
+    inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
+    inline def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
     
-    @scala.inline
-    def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
+    inline def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
+    inline def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

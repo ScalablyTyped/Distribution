@@ -19,8 +19,7 @@ trait LineCallout3DBorder
 }
 object LineCallout3DBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,13 +29,10 @@ object LineCallout3DBorder {
     __obj.asInstanceOf[LineCallout3DBorder]
   }
   
-  @scala.inline
-  implicit class LineCallout3DBorderMutableBuilder[Self <: LineCallout3DBorder] (val x: Self) extends AnyVal {
+  extension [Self <: LineCallout3DBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

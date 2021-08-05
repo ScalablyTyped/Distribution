@@ -18,13 +18,12 @@ trait OMathBreak extends StObject {
   
   val Range: typings.activexWord.Word.Range
   
-  @JSName("Word.OMathBreak_typekey")
+  /* private */ @JSName("Word.OMathBreak_typekey")
   var WordDotOMathBreak_typekey: OMathBreak
 }
 object OMathBreak {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlignAt: Double,
     Application: Application,
     Creator: Double,
@@ -38,28 +37,20 @@ object OMathBreak {
     __obj.asInstanceOf[OMathBreak]
   }
   
-  @scala.inline
-  implicit class OMathBreakMutableBuilder[Self <: OMathBreak] (val x: Self) extends AnyVal {
+  extension [Self <: OMathBreak](x: Self) {
     
-    @scala.inline
-    def setAlignAt(value: Double): Self = StObject.set(x, "AlignAt", value.asInstanceOf[js.Any])
+    inline def setAlignAt(value: Double): Self = StObject.set(x, "AlignAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathBreak_typekey(value: OMathBreak): Self = StObject.set(x, "Word.OMathBreak_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathBreak_typekey(value: OMathBreak): Self = StObject.set(x, "Word.OMathBreak_typekey", value.asInstanceOf[js.Any])
   }
 }

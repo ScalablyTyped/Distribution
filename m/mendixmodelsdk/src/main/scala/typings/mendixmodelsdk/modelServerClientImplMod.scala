@@ -17,19 +17,19 @@ object modelServerClientImplMod {
        with IModelServerClient {
     def this(config: ISdkConfig) = this()
     
-    var MAX_PARALLEL_REQUESTS: js.Any = js.native
+    /* private */ var MAX_PARALLEL_REQUESTS: js.Any = js.native
     
-    var completeGetUnitRequest: js.Any = js.native
+    /* private */ var completeGetUnitRequest: js.Any = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
-    var createDownloadHandler: js.Any = js.native
+    /* private */ var createDownloadHandler: js.Any = js.native
     
-    var editLockId: js.Any = js.native
+    /* private */ var editLockId: js.Any = js.native
     
-    var getCreateWorkingCopyData: js.Any = js.native
+    /* private */ var getCreateWorkingCopyData: js.Any = js.native
     
-    var getCreateWorkingCopyFromTeamServerData: js.Any = js.native
+    /* private */ var getCreateWorkingCopyFromTeamServerData: js.Any = js.native
     
     def getFile(
       workingCopyId: String,
@@ -39,24 +39,24 @@ object modelServerClientImplMod {
       errorCallback: IErrorCallback
     ): Unit = js.native
     
-    var getHeadersForModificationRequest: js.Any = js.native
+    /* private */ var getHeadersForModificationRequest: js.Any = js.native
     
-    var handleRawDeploymentResult: js.Any = js.native
+    /* private */ var handleRawDeploymentResult: js.Any = js.native
     
-    var loadUnitByIdBatched: js.Any = js.native
+    /* private */ var loadUnitByIdBatched: js.Any = js.native
     
-    var parseAppUpdateStatus: js.Any = js.native
+    /* private */ var parseAppUpdateStatus: js.Any = js.native
     
-    var parseBuildStatus: js.Any = js.native
+    /* private */ var parseBuildStatus: js.Any = js.native
     
-    var pendingRequests: js.Any = js.native
+    /* private */ var pendingRequests: js.Any = js.native
     
-    var runningRequests: js.Any = js.native
+    /* private */ var runningRequests: js.Any = js.native
     
-    var sendGetUnitRequest: js.Any = js.native
+    /* private */ var sendGetUnitRequest: js.Any = js.native
     
-    var storeResponseAsFile: js.Any = js.native
+    /* private */ var storeResponseAsFile: js.Any = js.native
     
-    var transportation: js.Any = js.native
+    /* private */ var transportation: js.Any = js.native
   }
 }

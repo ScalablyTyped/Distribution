@@ -20,19 +20,15 @@ trait SchemaBatchDeleteJobsRequest extends StObject {
 }
 object SchemaBatchDeleteJobsRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchDeleteJobsRequest = {
+  inline def apply(): SchemaBatchDeleteJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchDeleteJobsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchDeleteJobsRequestMutableBuilder[Self <: SchemaBatchDeleteJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchDeleteJobsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

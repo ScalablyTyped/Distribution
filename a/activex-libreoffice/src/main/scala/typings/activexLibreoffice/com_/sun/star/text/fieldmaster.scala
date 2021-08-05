@@ -64,8 +64,7 @@ object fieldmaster {
   }
   object Bibliography {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BracketAfter: String,
       BracketBefore: String,
       DependentTextFields: SafeArray[XDependentTextField],
@@ -92,29 +91,21 @@ object fieldmaster {
       __obj.asInstanceOf[typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography]
     }
     
-    @scala.inline
-    implicit class BibliographyMutableBuilder[Self <: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography] (val x: Self) extends AnyVal {
+    extension [Self <: typings.activexLibreoffice.com_.sun.star.text.fieldmaster.Bibliography](x: Self) {
       
-      @scala.inline
-      def setBracketAfter(value: String): Self = StObject.set(x, "BracketAfter", value.asInstanceOf[js.Any])
+      inline def setBracketAfter(value: String): Self = StObject.set(x, "BracketAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBracketBefore(value: String): Self = StObject.set(x, "BracketBefore", value.asInstanceOf[js.Any])
+      inline def setBracketBefore(value: String): Self = StObject.set(x, "BracketBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNumberEntries(value: Boolean): Self = StObject.set(x, "IsNumberEntries", value.asInstanceOf[js.Any])
+      inline def setIsNumberEntries(value: Boolean): Self = StObject.set(x, "IsNumberEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSortByPosition(value: Boolean): Self = StObject.set(x, "IsSortByPosition", value.asInstanceOf[js.Any])
+      inline def setIsSortByPosition(value: Boolean): Self = StObject.set(x, "IsSortByPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAlgorithm(value: String): Self = StObject.set(x, "SortAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSortAlgorithm(value: String): Self = StObject.set(x, "SortAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortKeys(value: SafeArray[PropertyValues]): Self = StObject.set(x, "SortKeys", value.asInstanceOf[js.Any])
+      inline def setSortKeys(value: SafeArray[PropertyValues]): Self = StObject.set(x, "SortKeys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,8 +134,7 @@ object fieldmaster {
   }
   object DDE {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Content: String,
       DDECommandElement: String,
       DDECommandFile: String,
@@ -169,23 +159,17 @@ object fieldmaster {
       __obj.asInstanceOf[DDE]
     }
     
-    @scala.inline
-    implicit class DDEMutableBuilder[Self <: DDE] (val x: Self) extends AnyVal {
+    extension [Self <: DDE](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDDECommandElement(value: String): Self = StObject.set(x, "DDECommandElement", value.asInstanceOf[js.Any])
+      inline def setDDECommandElement(value: String): Self = StObject.set(x, "DDECommandElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDDECommandFile(value: String): Self = StObject.set(x, "DDECommandFile", value.asInstanceOf[js.Any])
+      inline def setDDECommandFile(value: String): Self = StObject.set(x, "DDECommandFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDDECommandType(value: String): Self = StObject.set(x, "DDECommandType", value.asInstanceOf[js.Any])
+      inline def setDDECommandType(value: String): Self = StObject.set(x, "DDECommandType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAutomaticUpdate(value: Boolean): Self = StObject.set(x, "IsAutomaticUpdate", value.asInstanceOf[js.Any])
+      inline def setIsAutomaticUpdate(value: Boolean): Self = StObject.set(x, "IsAutomaticUpdate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,8 +207,7 @@ object fieldmaster {
   }
   object Database {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CommandType: Double,
       DataBaseName: String,
       DataBaseResource: String,
@@ -250,26 +233,19 @@ object fieldmaster {
       __obj.asInstanceOf[Database]
     }
     
-    @scala.inline
-    implicit class DatabaseMutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
+    extension [Self <: Database](x: Self) {
       
-      @scala.inline
-      def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
+      inline def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
+      inline def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBaseResource(value: String): Self = StObject.set(x, "DataBaseResource", value.asInstanceOf[js.Any])
+      inline def setDataBaseResource(value: String): Self = StObject.set(x, "DataBaseResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBaseURL(value: String): Self = StObject.set(x, "DataBaseURL", value.asInstanceOf[js.Any])
+      inline def setDataBaseURL(value: String): Self = StObject.set(x, "DataBaseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataColumnName(value: String): Self = StObject.set(x, "DataColumnName", value.asInstanceOf[js.Any])
+      inline def setDataColumnName(value: String): Self = StObject.set(x, "DataColumnName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataTableName(value: String): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
+      inline def setDataTableName(value: String): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,8 +268,7 @@ object fieldmaster {
   }
   object SetExpression {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ChapterNumberingLevel: Double,
       DependentTextFields: SafeArray[XDependentTextField],
       InstanceName: String,
@@ -316,17 +291,13 @@ object fieldmaster {
       __obj.asInstanceOf[SetExpression]
     }
     
-    @scala.inline
-    implicit class SetExpressionMutableBuilder[Self <: SetExpression] (val x: Self) extends AnyVal {
+    extension [Self <: SetExpression](x: Self) {
       
-      @scala.inline
-      def setChapterNumberingLevel(value: Double): Self = StObject.set(x, "ChapterNumberingLevel", value.asInstanceOf[js.Any])
+      inline def setChapterNumberingLevel(value: Double): Self = StObject.set(x, "ChapterNumberingLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberingSeparator(value: String): Self = StObject.set(x, "NumberingSeparator", value.asInstanceOf[js.Any])
+      inline def setNumberingSeparator(value: String): Self = StObject.set(x, "NumberingSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubType(value: Double): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
+      inline def setSubType(value: Double): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -349,8 +320,7 @@ object fieldmaster {
   }
   object User {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Content: String,
       DependentTextFields: SafeArray[XDependentTextField],
       InstanceName: String,
@@ -373,17 +343,13 @@ object fieldmaster {
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpression(value: Boolean): Self = StObject.set(x, "IsExpression", value.asInstanceOf[js.Any])
+      inline def setIsExpression(value: Boolean): Self = StObject.set(x, "IsExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
 }

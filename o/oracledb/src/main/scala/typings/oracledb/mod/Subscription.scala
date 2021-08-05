@@ -21,19 +21,15 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(): Subscription = {
+  inline def apply(): Subscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setRegId(value: String): Self = StObject.set(x, "regId", value.asInstanceOf[js.Any])
+    inline def setRegId(value: String): Self = StObject.set(x, "regId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegIdUndefined: Self = StObject.set(x, "regId", js.undefined)
+    inline def setRegIdUndefined: Self = StObject.set(x, "regId", js.undefined)
   }
 }

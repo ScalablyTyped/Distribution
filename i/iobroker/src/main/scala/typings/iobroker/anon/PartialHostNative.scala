@@ -15,31 +15,23 @@ trait PartialHostNative extends StObject {
 }
 object PartialHostNative {
   
-  @scala.inline
-  def apply(): PartialHostNative = {
+  inline def apply(): PartialHostNative = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialHostNative]
   }
   
-  @scala.inline
-  implicit class PartialHostNativeMutableBuilder[Self <: PartialHostNative] (val x: Self) extends AnyVal {
+  extension [Self <: PartialHostNative](x: Self) {
     
-    @scala.inline
-    def setHardware(value: Cpus): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
+    inline def setHardware(value: Cpus): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
+    inline def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
     
-    @scala.inline
-    def setOs(value: Arch): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: Arch): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+    inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
-    @scala.inline
-    def setProcess(value: Env): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: Env): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
   }
 }

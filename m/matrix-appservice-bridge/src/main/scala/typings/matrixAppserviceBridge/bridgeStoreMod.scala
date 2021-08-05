@@ -24,15 +24,15 @@ object bridgeStoreMod {
     
     val db: ^[js.Any] = js.native
     
-    var dbFind: js.Any = js.native
+    /* private */ var dbFind: js.Any = js.native
     
-    var dbFindOne: js.Any = js.native
+    /* private */ var dbFindOne: js.Any = js.native
     
-    var dbInsert: js.Any = js.native
+    /* private */ var dbInsert: js.Any = js.native
     
-    var dbRemove: js.Any = js.native
+    /* private */ var dbRemove: js.Any = js.native
     
-    var dbUpdate: js.Any = js.native
+    /* private */ var dbUpdate: js.Any = js.native
     
     /**
       * DELETE multiple documents.

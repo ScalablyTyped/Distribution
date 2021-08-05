@@ -22,43 +22,31 @@ trait IosUpdateConfiguration
 }
 object IosUpdateConfiguration {
   
-  @scala.inline
-  def apply(): IosUpdateConfiguration = {
+  inline def apply(): IosUpdateConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosUpdateConfiguration]
   }
   
-  @scala.inline
-  implicit class IosUpdateConfigurationMutableBuilder[Self <: IosUpdateConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: IosUpdateConfiguration](x: Self) {
     
-    @scala.inline
-    def setActiveHoursEnd(value: String): Self = StObject.set(x, "activeHoursEnd", value.asInstanceOf[js.Any])
+    inline def setActiveHoursEnd(value: String): Self = StObject.set(x, "activeHoursEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveHoursEndUndefined: Self = StObject.set(x, "activeHoursEnd", js.undefined)
+    inline def setActiveHoursEndUndefined: Self = StObject.set(x, "activeHoursEnd", js.undefined)
     
-    @scala.inline
-    def setActiveHoursStart(value: String): Self = StObject.set(x, "activeHoursStart", value.asInstanceOf[js.Any])
+    inline def setActiveHoursStart(value: String): Self = StObject.set(x, "activeHoursStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveHoursStartUndefined: Self = StObject.set(x, "activeHoursStart", js.undefined)
+    inline def setActiveHoursStartUndefined: Self = StObject.set(x, "activeHoursStart", js.undefined)
     
-    @scala.inline
-    def setScheduledInstallDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "scheduledInstallDays", value.asInstanceOf[js.Any])
+    inline def setScheduledInstallDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "scheduledInstallDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledInstallDaysUndefined: Self = StObject.set(x, "scheduledInstallDays", js.undefined)
+    inline def setScheduledInstallDaysUndefined: Self = StObject.set(x, "scheduledInstallDays", js.undefined)
     
-    @scala.inline
-    def setScheduledInstallDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "scheduledInstallDays", js.Array(value :_*))
+    inline def setScheduledInstallDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "scheduledInstallDays", js.Array(value :_*))
     
-    @scala.inline
-    def setUtcTimeOffsetInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "utcTimeOffsetInMinutes", value.asInstanceOf[js.Any])
+    inline def setUtcTimeOffsetInMinutes(value: NullableOption[Double]): Self = StObject.set(x, "utcTimeOffsetInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcTimeOffsetInMinutesNull: Self = StObject.set(x, "utcTimeOffsetInMinutes", null)
+    inline def setUtcTimeOffsetInMinutesNull: Self = StObject.set(x, "utcTimeOffsetInMinutes", null)
     
-    @scala.inline
-    def setUtcTimeOffsetInMinutesUndefined: Self = StObject.set(x, "utcTimeOffsetInMinutes", js.undefined)
+    inline def setUtcTimeOffsetInMinutesUndefined: Self = StObject.set(x, "utcTimeOffsetInMinutes", js.undefined)
   }
 }

@@ -205,20 +205,16 @@ object i18nAstMod {
   }
   object MessagePlaceholder {
     
-    @scala.inline
-    def apply(sourceSpan: ParseSourceSpan, text: String): MessagePlaceholder = {
+    inline def apply(sourceSpan: ParseSourceSpan, text: String): MessagePlaceholder = {
       val __obj = js.Dynamic.literal(sourceSpan = sourceSpan.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessagePlaceholder]
     }
     
-    @scala.inline
-    implicit class MessagePlaceholderMutableBuilder[Self <: MessagePlaceholder] (val x: Self) extends AnyVal {
+    extension [Self <: MessagePlaceholder](x: Self) {
       
-      @scala.inline
-      def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+      inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,29 +232,22 @@ object i18nAstMod {
   }
   object MessageSpan {
     
-    @scala.inline
-    def apply(endCol: Double, endLine: Double, filePath: String, startCol: Double, startLine: Double): MessageSpan = {
+    inline def apply(endCol: Double, endLine: Double, filePath: String, startCol: Double, startLine: Double): MessageSpan = {
       val __obj = js.Dynamic.literal(endCol = endCol.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], startCol = startCol.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageSpan]
     }
     
-    @scala.inline
-    implicit class MessageSpanMutableBuilder[Self <: MessageSpan] (val x: Self) extends AnyVal {
+    extension [Self <: MessageSpan](x: Self) {
       
-      @scala.inline
-      def setEndCol(value: Double): Self = StObject.set(x, "endCol", value.asInstanceOf[js.Any])
+      inline def setEndCol(value: Double): Self = StObject.set(x, "endCol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+      inline def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCol(value: Double): Self = StObject.set(x, "startCol", value.asInstanceOf[js.Any])
+      inline def setStartCol(value: Double): Self = StObject.set(x, "startCol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+      inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     }
   }
   

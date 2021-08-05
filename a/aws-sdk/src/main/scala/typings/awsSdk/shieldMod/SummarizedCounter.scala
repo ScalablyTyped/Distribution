@@ -38,49 +38,35 @@ trait SummarizedCounter extends StObject {
 }
 object SummarizedCounter {
   
-  @scala.inline
-  def apply(): SummarizedCounter = {
+  inline def apply(): SummarizedCounter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SummarizedCounter]
   }
   
-  @scala.inline
-  implicit class SummarizedCounterMutableBuilder[Self <: SummarizedCounter] (val x: Self) extends AnyVal {
+  extension [Self <: SummarizedCounter](x: Self) {
     
-    @scala.inline
-    def setAverage(value: Double): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: Double): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
     
-    @scala.inline
-    def setN(value: Integer): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+    inline def setN(value: Integer): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
+    inline def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

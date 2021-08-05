@@ -54,8 +54,7 @@ trait BookmarkCreationOptions
 }
 object BookmarkCreationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -64,43 +63,30 @@ object BookmarkCreationOptions {
     __obj.asInstanceOf[BookmarkCreationOptions]
   }
   
-  @scala.inline
-  implicit class BookmarkCreationOptionsMutableBuilder[Self <: BookmarkCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BookmarkCreationOptions](x: Self) {
     
-    @scala.inline
-    def setCaptureExtent(value: Boolean): Self = StObject.set(x, "captureExtent", value.asInstanceOf[js.Any])
+    inline def setCaptureExtent(value: Boolean): Self = StObject.set(x, "captureExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureExtentUndefined: Self = StObject.set(x, "captureExtent", js.undefined)
+    inline def setCaptureExtentUndefined: Self = StObject.set(x, "captureExtent", js.undefined)
     
-    @scala.inline
-    def setCaptureRotation(value: Boolean): Self = StObject.set(x, "captureRotation", value.asInstanceOf[js.Any])
+    inline def setCaptureRotation(value: Boolean): Self = StObject.set(x, "captureRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureRotationUndefined: Self = StObject.set(x, "captureRotation", js.undefined)
+    inline def setCaptureRotationUndefined: Self = StObject.set(x, "captureRotation", js.undefined)
     
-    @scala.inline
-    def setCaptureScale(value: Boolean): Self = StObject.set(x, "captureScale", value.asInstanceOf[js.Any])
+    inline def setCaptureScale(value: Boolean): Self = StObject.set(x, "captureScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureScaleUndefined: Self = StObject.set(x, "captureScale", js.undefined)
+    inline def setCaptureScaleUndefined: Self = StObject.set(x, "captureScale", js.undefined)
     
-    @scala.inline
-    def setCaptureViewpoint(value: Boolean): Self = StObject.set(x, "captureViewpoint", value.asInstanceOf[js.Any])
+    inline def setCaptureViewpoint(value: Boolean): Self = StObject.set(x, "captureViewpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureViewpointUndefined: Self = StObject.set(x, "captureViewpoint", js.undefined)
+    inline def setCaptureViewpointUndefined: Self = StObject.set(x, "captureViewpoint", js.undefined)
     
-    @scala.inline
-    def setScreenshotSettings(value: BookmarkCreationOptionsScreenshotSettings): Self = StObject.set(x, "screenshotSettings", value.asInstanceOf[js.Any])
+    inline def setScreenshotSettings(value: BookmarkCreationOptionsScreenshotSettings): Self = StObject.set(x, "screenshotSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotSettingsUndefined: Self = StObject.set(x, "screenshotSettings", js.undefined)
+    inline def setScreenshotSettingsUndefined: Self = StObject.set(x, "screenshotSettings", js.undefined)
     
-    @scala.inline
-    def setTakeScreenshot(value: Boolean): Self = StObject.set(x, "takeScreenshot", value.asInstanceOf[js.Any])
+    inline def setTakeScreenshot(value: Boolean): Self = StObject.set(x, "takeScreenshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeScreenshotUndefined: Self = StObject.set(x, "takeScreenshot", js.undefined)
+    inline def setTakeScreenshotUndefined: Self = StObject.set(x, "takeScreenshot", js.undefined)
   }
 }

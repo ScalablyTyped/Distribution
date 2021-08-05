@@ -28,37 +28,27 @@ trait AwsSqsQueueDetails extends StObject {
 }
 object AwsSqsQueueDetails {
   
-  @scala.inline
-  def apply(): AwsSqsQueueDetails = {
+  inline def apply(): AwsSqsQueueDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsSqsQueueDetails]
   }
   
-  @scala.inline
-  implicit class AwsSqsQueueDetailsMutableBuilder[Self <: AwsSqsQueueDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSqsQueueDetails](x: Self) {
     
-    @scala.inline
-    def setDeadLetterTargetArn(value: NonEmptyString): Self = StObject.set(x, "DeadLetterTargetArn", value.asInstanceOf[js.Any])
+    inline def setDeadLetterTargetArn(value: NonEmptyString): Self = StObject.set(x, "DeadLetterTargetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadLetterTargetArnUndefined: Self = StObject.set(x, "DeadLetterTargetArn", js.undefined)
+    inline def setDeadLetterTargetArnUndefined: Self = StObject.set(x, "DeadLetterTargetArn", js.undefined)
     
-    @scala.inline
-    def setKmsDataKeyReusePeriodSeconds(value: Integer): Self = StObject.set(x, "KmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
+    inline def setKmsDataKeyReusePeriodSeconds(value: Integer): Self = StObject.set(x, "KmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsDataKeyReusePeriodSecondsUndefined: Self = StObject.set(x, "KmsDataKeyReusePeriodSeconds", js.undefined)
+    inline def setKmsDataKeyReusePeriodSecondsUndefined: Self = StObject.set(x, "KmsDataKeyReusePeriodSeconds", js.undefined)
     
-    @scala.inline
-    def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsMasterKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsMasterKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
+    inline def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "KmsMasterKeyId", js.undefined)
     
-    @scala.inline
-    def setQueueName(value: NonEmptyString): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
+    inline def setQueueName(value: NonEmptyString): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueNameUndefined: Self = StObject.set(x, "QueueName", js.undefined)
+    inline def setQueueNameUndefined: Self = StObject.set(x, "QueueName", js.undefined)
   }
 }

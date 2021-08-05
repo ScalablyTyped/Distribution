@@ -22,20 +22,16 @@ object editMod extends Shortcut {
   }
   object EditProps {
     
-    @scala.inline
-    def apply(): EditProps = {
+    inline def apply(): EditProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditProps]
     }
     
-    @scala.inline
-    implicit class EditPropsMutableBuilder[Self <: EditProps] (val x: Self) extends AnyVal {
+    extension [Self <: EditProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

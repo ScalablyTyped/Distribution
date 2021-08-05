@@ -13,25 +13,19 @@ trait PlannerGroup
 }
 object PlannerGroup {
   
-  @scala.inline
-  def apply(): PlannerGroup = {
+  inline def apply(): PlannerGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerGroup]
   }
   
-  @scala.inline
-  implicit class PlannerGroupMutableBuilder[Self <: PlannerGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerGroup](x: Self) {
     
-    @scala.inline
-    def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
+    inline def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlansNull: Self = StObject.set(x, "plans", null)
+    inline def setPlansNull: Self = StObject.set(x, "plans", null)
     
-    @scala.inline
-    def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
+    inline def setPlansUndefined: Self = StObject.set(x, "plans", js.undefined)
     
-    @scala.inline
-    def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
+    inline def setPlansVarargs(value: PlannerPlan*): Self = StObject.set(x, "plans", js.Array(value :_*))
   }
 }

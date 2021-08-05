@@ -128,115 +128,81 @@ trait ICompositeElementLite
 }
 object ICompositeElementLite {
   
-  @scala.inline
-  def apply(): ICompositeElementLite = {
+  inline def apply(): ICompositeElementLite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICompositeElementLite]
   }
   
-  @scala.inline
-  implicit class ICompositeElementLiteMutableBuilder[Self <: ICompositeElementLite] (val x: Self) extends AnyVal {
+  extension [Self <: ICompositeElementLite](x: Self) {
     
-    @scala.inline
-    def setAdd(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setClear(value: /* removeDom */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: /* removeDom */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setContains(value: /* el */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: /* el */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+    inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    @scala.inline
-    def setEach(
+    inline def setEach(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ICompositeElement
     ): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setElements(value: Array): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: Array): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setFill(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setFirst(value: () => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+    inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
+    inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    @scala.inline
-    def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
+    inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
-    @scala.inline
-    def setIsComposite(value: Boolean): Self = StObject.set(x, "isComposite", value.asInstanceOf[js.Any])
+    inline def setIsComposite(value: Boolean): Self = StObject.set(x, "isComposite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCompositeUndefined: Self = StObject.set(x, "isComposite", js.undefined)
+    inline def setIsCompositeUndefined: Self = StObject.set(x, "isComposite", js.undefined)
     
-    @scala.inline
-    def setItem(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setLast(value: () => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    inline def setLast(value: () => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setRemoveElement(
+    inline def setRemoveElement(
       value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
     ): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
+    inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
     
-    @scala.inline
-    def setReplaceElement(
+    inline def setReplaceElement(
       value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
     ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
+    inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
     
-    @scala.inline
-    def setSlice(value: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "slice", js.Any.fromFunction2(value))
+    inline def setSlice(value: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "slice", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
   }
 }

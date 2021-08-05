@@ -64,38 +64,28 @@ object mod extends Shortcut {
       }
       object IHrefOptions {
         
-        @scala.inline
-        def apply(): typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions = {
+        inline def apply(): typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions]
         }
         
-        @scala.inline
-        implicit class IHrefOptionsMutableBuilder[Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions](x: Self) {
           
-          @scala.inline
-          def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+          inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+          inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
           
-          @scala.inline
-          def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+          inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+          inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
           
-          @scala.inline
-          def setLossy(value: Boolean): Self = StObject.set(x, "lossy", value.asInstanceOf[js.Any])
+          inline def setLossy(value: Boolean): Self = StObject.set(x, "lossy", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLossyUndefined: Self = StObject.set(x, "lossy", js.undefined)
+          inline def setLossyUndefined: Self = StObject.set(x, "lossy", js.undefined)
           
-          @scala.inline
-          def setRelative(value: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+          inline def setRelative(value: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+          inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
         }
       }
       
@@ -105,17 +95,14 @@ object mod extends Shortcut {
       }
       object IResolvedState {
         
-        @scala.inline
-        def apply(locals: Globals): typings.angularUiRouter.mod.angularAugmentingMod.ui.IResolvedState = {
+        inline def apply(locals: Globals): typings.angularUiRouter.mod.angularAugmentingMod.ui.IResolvedState = {
           val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.angularUiRouter.mod.angularAugmentingMod.ui.IResolvedState]
         }
         
-        @scala.inline
-        implicit class IResolvedStateMutableBuilder[Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IResolvedState] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IResolvedState](x: Self) {
           
-          @scala.inline
-          def setLocals(value: Globals): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+          inline def setLocals(value: Globals): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
         }
       }
       
@@ -224,169 +211,120 @@ object mod extends Shortcut {
       }
       object IState {
         
-        @scala.inline
-        def apply(): typings.angularUiRouter.mod.angularAugmentingMod.ui.IState = {
+        inline def apply(): typings.angularUiRouter.mod.angularAugmentingMod.ui.IState = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState]
         }
         
-        @scala.inline
-        implicit class IStateMutableBuilder[Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState](x: Self) {
           
-          @scala.inline
-          def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
+          inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
+          inline def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
           
-          @scala.inline
-          def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+          inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+          inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
           
-          @scala.inline
-          def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+          inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+          inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
           
-          @scala.inline
-          def setController(value: Function | String | (js.Array[String | Function])): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+          inline def setController(value: Function | String | (js.Array[String | Function])): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+          inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+          inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
           
-          @scala.inline
-          def setControllerProvider(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "controllerProvider", value.asInstanceOf[js.Any])
+          inline def setControllerProvider(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "controllerProvider", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setControllerProviderUndefined: Self = StObject.set(x, "controllerProvider", js.undefined)
+          inline def setControllerProviderUndefined: Self = StObject.set(x, "controllerProvider", js.undefined)
           
-          @scala.inline
-          def setControllerProviderVarargs(value: (String | Function)*): Self = StObject.set(x, "controllerProvider", js.Array(value :_*))
+          inline def setControllerProviderVarargs(value: (String | Function)*): Self = StObject.set(x, "controllerProvider", js.Array(value :_*))
           
-          @scala.inline
-          def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+          inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
           
-          @scala.inline
-          def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+          inline def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value :_*))
           
-          @scala.inline
-          def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+          inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setOnEnter(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+          inline def setOnEnter(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+          inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
           
-          @scala.inline
-          def setOnEnterVarargs(value: (String | Function)*): Self = StObject.set(x, "onEnter", js.Array(value :_*))
+          inline def setOnEnterVarargs(value: (String | Function)*): Self = StObject.set(x, "onEnter", js.Array(value :_*))
           
-          @scala.inline
-          def setOnExit(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+          inline def setOnExit(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+          inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
           
-          @scala.inline
-          def setOnExitVarargs(value: (String | Function)*): Self = StObject.set(x, "onExit", js.Array(value :_*))
+          inline def setOnExitVarargs(value: (String | Function)*): Self = StObject.set(x, "onExit", js.Array(value :_*))
           
-          @scala.inline
-          def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+          inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+          inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
           
-          @scala.inline
-          def setParent(value: String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+          inline def setParent(value: String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+          inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
           
-          @scala.inline
-          def setRedirectTo(value: String | Function | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+          inline def setRedirectTo(value: String | Function | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+          inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
           
-          @scala.inline
-          def setReloadOnSearch(value: Boolean): Self = StObject.set(x, "reloadOnSearch", value.asInstanceOf[js.Any])
+          inline def setReloadOnSearch(value: Boolean): Self = StObject.set(x, "reloadOnSearch", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReloadOnSearchUndefined: Self = StObject.set(x, "reloadOnSearch", js.undefined)
+          inline def setReloadOnSearchUndefined: Self = StObject.set(x, "reloadOnSearch", js.undefined)
           
-          @scala.inline
-          def setResolve(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+          inline def setResolve(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+          inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
           
-          @scala.inline
-          def setTemplate(
+          inline def setTemplate(
             value: String | (js.Function1[
                       /* params */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateParamsService, 
                       String
                     ])
           ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplateFunction1(
+          inline def setTemplateFunction1(
             value: /* params */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateParamsService => String
           ): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setTemplateProvider(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "templateProvider", value.asInstanceOf[js.Any])
+          inline def setTemplateProvider(value: Function | (js.Array[String | Function])): Self = StObject.set(x, "templateProvider", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplateProviderUndefined: Self = StObject.set(x, "templateProvider", js.undefined)
+          inline def setTemplateProviderUndefined: Self = StObject.set(x, "templateProvider", js.undefined)
           
-          @scala.inline
-          def setTemplateProviderVarargs(value: (String | Function)*): Self = StObject.set(x, "templateProvider", js.Array(value :_*))
+          inline def setTemplateProviderVarargs(value: (String | Function)*): Self = StObject.set(x, "templateProvider", js.Array(value :_*))
           
-          @scala.inline
-          def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+          inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
           
-          @scala.inline
-          def setTemplateUrl(
+          inline def setTemplateUrl(
             value: String | (js.Function1[
                       /* params */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateParamsService, 
                       String
                     ])
           ): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplateUrlFunction1(
+          inline def setTemplateUrlFunction1(
             value: /* params */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateParamsService => String
           ): Self = StObject.set(x, "templateUrl", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+          inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
           
-          @scala.inline
-          def setViews(value: StringDictionary[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+          inline def setViews(value: StringDictionary[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+          inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
         }
       }
       
@@ -420,44 +358,32 @@ object mod extends Shortcut {
       }
       object IStateOptions {
         
-        @scala.inline
-        def apply(): typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions = {
+        inline def apply(): typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions]
         }
         
-        @scala.inline
-        implicit class IStateOptionsMutableBuilder[Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions](x: Self) {
           
-          @scala.inline
-          def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+          inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+          inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
           
-          @scala.inline
-          def setLocation(value: Boolean | String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+          inline def setLocation(value: Boolean | String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+          inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
           
-          @scala.inline
-          def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+          inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
+          inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
           
-          @scala.inline
-          def setRelative(value: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+          inline def setRelative(value: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+          inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
           
-          @scala.inline
-          def setReload(value: Boolean | String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+          inline def setReload(value: Boolean | String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
+          inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
         }
       }
       
@@ -683,8 +609,7 @@ object mod extends Shortcut {
       }
       object IType {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           decode: (String, String) => js.Any,
           encode: (js.Any, String) => String,
           is: (js.Any, String) => Boolean
@@ -693,29 +618,21 @@ object mod extends Shortcut {
           __obj.asInstanceOf[typings.angularUiRouter.mod.angularAugmentingMod.ui.IType]
         }
         
-        @scala.inline
-        implicit class ITypeMutableBuilder[Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IType] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IType](x: Self) {
           
-          @scala.inline
-          def setDecode(value: (String, String) => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+          inline def setDecode(value: (String, String) => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setEncode(value: (js.Any, String) => String): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
+          inline def setEncode(value: (js.Any, String) => String): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+          inline def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+          inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
           
-          @scala.inline
-          def setIs(value: (js.Any, String) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
+          inline def setIs(value: (js.Any, String) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
           
-          @scala.inline
-          def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+          inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+          inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
         }
       }
       
@@ -729,17 +646,14 @@ object mod extends Shortcut {
       }
       object IUiViewScrollProvider {
         
-        @scala.inline
-        def apply(useAnchorScroll: () => Unit): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUiViewScrollProvider = {
+        inline def apply(useAnchorScroll: () => Unit): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUiViewScrollProvider = {
           val __obj = js.Dynamic.literal(useAnchorScroll = js.Any.fromFunction0(useAnchorScroll))
           __obj.asInstanceOf[typings.angularUiRouter.mod.angularAugmentingMod.ui.IUiViewScrollProvider]
         }
         
-        @scala.inline
-        implicit class IUiViewScrollProviderMutableBuilder[Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUiViewScrollProvider] (val x: Self) extends AnyVal {
+        extension [Self <: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUiViewScrollProvider](x: Self) {
           
-          @scala.inline
-          def setUseAnchorScroll(value: () => Unit): Self = StObject.set(x, "useAnchorScroll", js.Any.fromFunction0(value))
+          inline def setUseAnchorScroll(value: () => Unit): Self = StObject.set(x, "useAnchorScroll", js.Any.fromFunction0(value))
         }
       }
       
@@ -751,20 +665,16 @@ object mod extends Shortcut {
       }
       object IUnfoundState {
         
-        @scala.inline
-        def apply(options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions, to: String): IUnfoundState = {
+        inline def apply(options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions, to: String): IUnfoundState = {
           val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
           __obj.asInstanceOf[IUnfoundState]
         }
         
-        @scala.inline
-        implicit class IUnfoundStateMutableBuilder[Self <: IUnfoundState] (val x: Self) extends AnyVal {
+        extension [Self <: IUnfoundState](x: Self) {
           
-          @scala.inline
-          def setOptions(value: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+          inline def setOptions(value: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+          inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
         }
       }
       

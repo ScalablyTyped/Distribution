@@ -26,8 +26,7 @@ trait Dim3DDiagram
 }
 object Dim3DDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dim3D: Boolean,
     Floor: XPropertySet,
     Perspective: Double,
@@ -47,19 +46,14 @@ object Dim3DDiagram {
     __obj.asInstanceOf[Dim3DDiagram]
   }
   
-  @scala.inline
-  implicit class Dim3DDiagramMutableBuilder[Self <: Dim3DDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: Dim3DDiagram](x: Self) {
     
-    @scala.inline
-    def setDim3D(value: Boolean): Self = StObject.set(x, "Dim3D", value.asInstanceOf[js.Any])
+    inline def setDim3D(value: Boolean): Self = StObject.set(x, "Dim3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerspective(value: Double): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
+    inline def setPerspective(value: Double): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationHorizontal(value: Double): Self = StObject.set(x, "RotationHorizontal", value.asInstanceOf[js.Any])
+    inline def setRotationHorizontal(value: Double): Self = StObject.set(x, "RotationHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationVertical(value: Double): Self = StObject.set(x, "RotationVertical", value.asInstanceOf[js.Any])
+    inline def setRotationVertical(value: Double): Self = StObject.set(x, "RotationVertical", value.asInstanceOf[js.Any])
   }
 }

@@ -18,6 +18,6 @@ trait ShellWindows extends StObject {
   def Item(): InternetExplorer = js.native
   def Item(index: Double): InternetExplorer = js.native
   
-  @JSName("Shell32.ShellWindows_typekey")
+  /* private */ @JSName("Shell32.ShellWindows_typekey")
   var Shell32DotShellWindows_typekey: ShellWindows = js.native
 }

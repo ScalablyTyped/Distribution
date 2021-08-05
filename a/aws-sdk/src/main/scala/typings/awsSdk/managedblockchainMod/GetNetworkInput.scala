@@ -13,16 +13,13 @@ trait GetNetworkInput extends StObject {
 }
 object GetNetworkInput {
   
-  @scala.inline
-  def apply(NetworkId: ResourceIdString): GetNetworkInput = {
+  inline def apply(NetworkId: ResourceIdString): GetNetworkInput = {
     val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkInput]
   }
   
-  @scala.inline
-  implicit class GetNetworkInputMutableBuilder[Self <: GetNetworkInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkInput](x: Self) {
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
   }
 }

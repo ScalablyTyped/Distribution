@@ -22,8 +22,7 @@ trait XFlushable
 }
 object XFlushable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addFlushListener: XFlushListener => Unit,
     flush: () => Unit,
@@ -35,16 +34,12 @@ object XFlushable {
     __obj.asInstanceOf[XFlushable]
   }
   
-  @scala.inline
-  implicit class XFlushableMutableBuilder[Self <: XFlushable] (val x: Self) extends AnyVal {
+  extension [Self <: XFlushable](x: Self) {
     
-    @scala.inline
-    def setAddFlushListener(value: XFlushListener => Unit): Self = StObject.set(x, "addFlushListener", js.Any.fromFunction1(value))
+    inline def setAddFlushListener(value: XFlushListener => Unit): Self = StObject.set(x, "addFlushListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveFlushListener(value: XFlushListener => Unit): Self = StObject.set(x, "removeFlushListener", js.Any.fromFunction1(value))
+    inline def setRemoveFlushListener(value: XFlushListener => Unit): Self = StObject.set(x, "removeFlushListener", js.Any.fromFunction1(value))
   }
 }

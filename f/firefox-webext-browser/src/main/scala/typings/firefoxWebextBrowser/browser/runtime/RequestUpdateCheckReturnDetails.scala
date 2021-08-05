@@ -12,16 +12,13 @@ trait RequestUpdateCheckReturnDetails extends StObject {
 }
 object RequestUpdateCheckReturnDetails {
   
-  @scala.inline
-  def apply(version: String): RequestUpdateCheckReturnDetails = {
+  inline def apply(version: String): RequestUpdateCheckReturnDetails = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestUpdateCheckReturnDetails]
   }
   
-  @scala.inline
-  implicit class RequestUpdateCheckReturnDetailsMutableBuilder[Self <: RequestUpdateCheckReturnDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RequestUpdateCheckReturnDetails](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

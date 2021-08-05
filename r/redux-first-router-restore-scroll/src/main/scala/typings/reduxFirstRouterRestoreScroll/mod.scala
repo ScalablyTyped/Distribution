@@ -13,8 +13,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function1[/* history */ History[LocationState], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* history */ History[LocationState], js.Object]]
-  @scala.inline
-  def default(options: Manual): js.Function1[/* history */ History[LocationState], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* history */ History[LocationState], js.Object]]
+  inline def default(): js.Function1[/* history */ History[LocationState], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* history */ History[LocationState], js.Object]]
+  inline def default(options: Manual): js.Function1[/* history */ History[LocationState], js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* history */ History[LocationState], js.Object]]
 }

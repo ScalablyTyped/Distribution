@@ -28,79 +28,55 @@ trait ExecCreateOptions extends StObject {
 }
 object ExecCreateOptions {
   
-  @scala.inline
-  def apply(): ExecCreateOptions = {
+  inline def apply(): ExecCreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecCreateOptions]
   }
   
-  @scala.inline
-  implicit class ExecCreateOptionsMutableBuilder[Self <: ExecCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecCreateOptions](x: Self) {
     
-    @scala.inline
-    def setAttachStderr(value: Boolean): Self = StObject.set(x, "AttachStderr", value.asInstanceOf[js.Any])
+    inline def setAttachStderr(value: Boolean): Self = StObject.set(x, "AttachStderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachStderrUndefined: Self = StObject.set(x, "AttachStderr", js.undefined)
+    inline def setAttachStderrUndefined: Self = StObject.set(x, "AttachStderr", js.undefined)
     
-    @scala.inline
-    def setAttachStdin(value: Boolean): Self = StObject.set(x, "AttachStdin", value.asInstanceOf[js.Any])
+    inline def setAttachStdin(value: Boolean): Self = StObject.set(x, "AttachStdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachStdinUndefined: Self = StObject.set(x, "AttachStdin", js.undefined)
+    inline def setAttachStdinUndefined: Self = StObject.set(x, "AttachStdin", js.undefined)
     
-    @scala.inline
-    def setAttachStdout(value: Boolean): Self = StObject.set(x, "AttachStdout", value.asInstanceOf[js.Any])
+    inline def setAttachStdout(value: Boolean): Self = StObject.set(x, "AttachStdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachStdoutUndefined: Self = StObject.set(x, "AttachStdout", js.undefined)
+    inline def setAttachStdoutUndefined: Self = StObject.set(x, "AttachStdout", js.undefined)
     
-    @scala.inline
-    def setCmd(value: js.Array[String]): Self = StObject.set(x, "Cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: js.Array[String]): Self = StObject.set(x, "Cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmdUndefined: Self = StObject.set(x, "Cmd", js.undefined)
+    inline def setCmdUndefined: Self = StObject.set(x, "Cmd", js.undefined)
     
-    @scala.inline
-    def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value :_*))
+    inline def setCmdVarargs(value: String*): Self = StObject.set(x, "Cmd", js.Array(value :_*))
     
-    @scala.inline
-    def setDetachKeys(value: String): Self = StObject.set(x, "DetachKeys", value.asInstanceOf[js.Any])
+    inline def setDetachKeys(value: String): Self = StObject.set(x, "DetachKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachKeysUndefined: Self = StObject.set(x, "DetachKeys", js.undefined)
+    inline def setDetachKeysUndefined: Self = StObject.set(x, "DetachKeys", js.undefined)
     
-    @scala.inline
-    def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
-    @scala.inline
-    def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
     
-    @scala.inline
-    def setPrivileged(value: Boolean): Self = StObject.set(x, "Privileged", value.asInstanceOf[js.Any])
+    inline def setPrivileged(value: Boolean): Self = StObject.set(x, "Privileged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegedUndefined: Self = StObject.set(x, "Privileged", js.undefined)
+    inline def setPrivilegedUndefined: Self = StObject.set(x, "Privileged", js.undefined)
     
-    @scala.inline
-    def setTty(value: Boolean): Self = StObject.set(x, "Tty", value.asInstanceOf[js.Any])
+    inline def setTty(value: Boolean): Self = StObject.set(x, "Tty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtyUndefined: Self = StObject.set(x, "Tty", js.undefined)
+    inline def setTtyUndefined: Self = StObject.set(x, "Tty", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
     
-    @scala.inline
-    def setWorkingDir(value: String): Self = StObject.set(x, "WorkingDir", value.asInstanceOf[js.Any])
+    inline def setWorkingDir(value: String): Self = StObject.set(x, "WorkingDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingDirUndefined: Self = StObject.set(x, "WorkingDir", js.undefined)
+    inline def setWorkingDirUndefined: Self = StObject.set(x, "WorkingDir", js.undefined)
   }
 }

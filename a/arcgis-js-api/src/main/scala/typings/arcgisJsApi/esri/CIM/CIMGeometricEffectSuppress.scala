@@ -24,29 +24,22 @@ trait CIMGeometricEffectSuppress
 }
 object CIMGeometricEffectSuppress {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectSuppress = {
+  inline def apply(): CIMGeometricEffectSuppress = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectSuppress")
     __obj.asInstanceOf[CIMGeometricEffectSuppress]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectSuppressMutableBuilder[Self <: CIMGeometricEffectSuppress] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectSuppress](x: Self) {
     
-    @scala.inline
-    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+    inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
-    @scala.inline
-    def setSuppress(value: Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
+    inline def setSuppress(value: Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressUndefined: Self = StObject.set(x, "suppress", js.undefined)
+    inline def setSuppressUndefined: Self = StObject.set(x, "suppress", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectSuppress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectSuppress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

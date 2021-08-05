@@ -36,8 +36,7 @@ object mod {
     * @param n
     */
   /* static member */
-  @scala.inline
-  def isXmlNode(n: Node): /* is xmljs.xmljs.XmlNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXmlNode")(n.asInstanceOf[js.Any]).asInstanceOf[/* is xmljs.xmljs.XmlNode */ Boolean]
+  inline def isXmlNode(n: Node): /* is xmljs.xmljs.XmlNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXmlNode")(n.asInstanceOf[js.Any]).asInstanceOf[/* is xmljs.xmljs.XmlNode */ Boolean]
   
   /**
     * Attribute
@@ -50,20 +49,16 @@ object mod {
   }
   object Attribute {
     
-    @scala.inline
-    def apply(name: String, text: String): Attribute = {
+    inline def apply(name: String, text: String): Attribute = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attribute]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,8 +86,7 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAttribute: (String, Boolean) => XmlAttribute,
       path: (js.Array[String], Boolean) => js.Array[XmlNode],
       visit: js.Function1[Node, Unit] => Unit
@@ -101,17 +95,13 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setGetAttribute(value: (String, Boolean) => XmlAttribute): Self = StObject.set(x, "getAttribute", js.Any.fromFunction2(value))
+      inline def setGetAttribute(value: (String, Boolean) => XmlAttribute): Self = StObject.set(x, "getAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPath(value: (js.Array[String], Boolean) => js.Array[XmlNode]): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
+      inline def setPath(value: (js.Array[String], Boolean) => js.Array[XmlNode]): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisit(value: js.Function1[Node, Unit] => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
+      inline def setVisit(value: js.Function1[Node, Unit] => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
     }
   }
   
@@ -154,56 +144,40 @@ object mod {
   }
   object ParserParameters {
     
-    @scala.inline
-    def apply(): ParserParameters = {
+    inline def apply(): ParserParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserParameters]
     }
     
-    @scala.inline
-    implicit class ParserParametersMutableBuilder[Self <: ParserParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ParserParameters](x: Self) {
       
-      @scala.inline
-      def setLowercaseTagnames(value: Boolean): Self = StObject.set(x, "lowercaseTagnames", value.asInstanceOf[js.Any])
+      inline def setLowercaseTagnames(value: Boolean): Self = StObject.set(x, "lowercaseTagnames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowercaseTagnamesUndefined: Self = StObject.set(x, "lowercaseTagnames", js.undefined)
+      inline def setLowercaseTagnamesUndefined: Self = StObject.set(x, "lowercaseTagnames", js.undefined)
       
-      @scala.inline
-      def setNoNamespaces(value: Boolean): Self = StObject.set(x, "noNamespaces", value.asInstanceOf[js.Any])
+      inline def setNoNamespaces(value: Boolean): Self = StObject.set(x, "noNamespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoNamespacesUndefined: Self = StObject.set(x, "noNamespaces", js.undefined)
+      inline def setNoNamespacesUndefined: Self = StObject.set(x, "noNamespaces", js.undefined)
       
-      @scala.inline
-      def setNoNormalizeWhitespaces(value: Boolean): Self = StObject.set(x, "noNormalizeWhitespaces", value.asInstanceOf[js.Any])
+      inline def setNoNormalizeWhitespaces(value: Boolean): Self = StObject.set(x, "noNormalizeWhitespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoNormalizeWhitespacesUndefined: Self = StObject.set(x, "noNormalizeWhitespaces", js.undefined)
+      inline def setNoNormalizeWhitespacesUndefined: Self = StObject.set(x, "noNormalizeWhitespaces", js.undefined)
       
-      @scala.inline
-      def setNoTracing(value: Boolean): Self = StObject.set(x, "noTracing", value.asInstanceOf[js.Any])
+      inline def setNoTracing(value: Boolean): Self = StObject.set(x, "noTracing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTracingUndefined: Self = StObject.set(x, "noTracing", js.undefined)
+      inline def setNoTracingUndefined: Self = StObject.set(x, "noTracing", js.undefined)
       
-      @scala.inline
-      def setNoTrim(value: Boolean): Self = StObject.set(x, "noTrim", value.asInstanceOf[js.Any])
+      inline def setNoTrim(value: Boolean): Self = StObject.set(x, "noTrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoTrimUndefined: Self = StObject.set(x, "noTrim", js.undefined)
+      inline def setNoTrimUndefined: Self = StObject.set(x, "noTrim", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictEntities(value: Boolean): Self = StObject.set(x, "strictEntities", value.asInstanceOf[js.Any])
+      inline def setStrictEntities(value: Boolean): Self = StObject.set(x, "strictEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictEntitiesUndefined: Self = StObject.set(x, "strictEntities", js.undefined)
+      inline def setStrictEntitiesUndefined: Self = StObject.set(x, "strictEntities", js.undefined)
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   
@@ -218,17 +192,14 @@ object mod {
   }
   object XmlAttribute {
     
-    @scala.inline
-    def apply(name: String, ns: String, text: String): XmlAttribute = {
+    inline def apply(name: String, ns: String, text: String): XmlAttribute = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[XmlAttribute]
     }
     
-    @scala.inline
-    implicit class XmlAttributeMutableBuilder[Self <: XmlAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: XmlAttribute](x: Self) {
       
-      @scala.inline
-      def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+      inline def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,8 +234,7 @@ object mod {
   }
   object XmlParser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errors: js.Array[Error],
       parseString: (String, js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]) => Boolean
     ): XmlParser = {
@@ -272,17 +242,13 @@ object mod {
       __obj.asInstanceOf[XmlParser]
     }
     
-    @scala.inline
-    implicit class XmlParserMutableBuilder[Self <: XmlParser] (val x: Self) extends AnyVal {
+    extension [Self <: XmlParser](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setParseString(
+      inline def setParseString(
         value: (String, js.Function2[/* err */ Null | js.Array[Error], /* xmlNode */ Node, Unit]) => Boolean
       ): Self = StObject.set(x, "parseString", js.Any.fromFunction2(value))
     }

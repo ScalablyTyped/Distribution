@@ -28,8 +28,7 @@ trait Appid extends StObject {
 }
 object Appid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     app_id: String,
     auth_code: String,
     out_string: String,
@@ -42,28 +41,20 @@ object Appid {
     __obj.asInstanceOf[Appid]
   }
   
-  @scala.inline
-  implicit class AppidMutableBuilder[Self <: Appid] (val x: Self) extends AnyVal {
+  extension [Self <: Appid](x: Self) {
     
-    @scala.inline
-    def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
+    inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_code(value: String): Self = StObject.set(x, "auth_code", value.asInstanceOf[js.Any])
+    inline def setAuth_code(value: String): Self = StObject.set(x, "auth_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOut_string(value: String): Self = StObject.set(x, "out_string", value.asInstanceOf[js.Any])
+    inline def setOut_string(value: String): Self = StObject.set(x, "out_string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
+    inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
+    inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
   }
 }

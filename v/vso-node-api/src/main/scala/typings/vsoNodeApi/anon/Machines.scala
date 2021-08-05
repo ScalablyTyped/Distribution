@@ -12,19 +12,15 @@ trait Machines extends StObject {
 }
 object Machines {
   
-  @scala.inline
-  def apply(machines: scala.Double, none: scala.Double): Machines = {
+  inline def apply(machines: scala.Double, none: scala.Double): Machines = {
     val __obj = js.Dynamic.literal(machines = machines.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[Machines]
   }
   
-  @scala.inline
-  implicit class MachinesMutableBuilder[Self <: Machines] (val x: Self) extends AnyVal {
+  extension [Self <: Machines](x: Self) {
     
-    @scala.inline
-    def setMachines(value: scala.Double): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
+    inline def setMachines(value: scala.Double): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

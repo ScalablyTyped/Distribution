@@ -17,31 +17,23 @@ trait DevAppDetails extends StObject {
 }
 object DevAppDetails {
   
-  @scala.inline
-  def apply(commPort: Double, interfaces: js.Array[Address], port: Double): DevAppDetails = {
+  inline def apply(commPort: Double, interfaces: js.Array[Address], port: Double): DevAppDetails = {
     val __obj = js.Dynamic.literal(commPort = commPort.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevAppDetails]
   }
   
-  @scala.inline
-  implicit class DevAppDetailsMutableBuilder[Self <: DevAppDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DevAppDetails](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setCommPort(value: Double): Self = StObject.set(x, "commPort", value.asInstanceOf[js.Any])
+    inline def setCommPort(value: Double): Self = StObject.set(x, "commPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaces(value: js.Array[Address]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+    inline def setInterfaces(value: js.Array[Address]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfacesVarargs(value: Address*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: Address*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

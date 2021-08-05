@@ -26,8 +26,7 @@ trait ExifInfo
 }
 object ExifInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,22 +35,16 @@ object ExifInfo {
     __obj.asInstanceOf[ExifInfo]
   }
   
-  @scala.inline
-  implicit class ExifInfoMutableBuilder[Self <: ExifInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExifInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[ExifInfoTags]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[ExifInfoTags]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: ExifInfoTags*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: ExifInfoTags*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -23,43 +23,31 @@ trait SasPortalDeviceModel extends StObject {
 }
 object SasPortalDeviceModel {
   
-  @scala.inline
-  def apply(): SasPortalDeviceModel = {
+  inline def apply(): SasPortalDeviceModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalDeviceModel]
   }
   
-  @scala.inline
-  implicit class SasPortalDeviceModelMutableBuilder[Self <: SasPortalDeviceModel] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalDeviceModel](x: Self) {
     
-    @scala.inline
-    def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
+    inline def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirmwareVersionUndefined: Self = StObject.set(x, "firmwareVersion", js.undefined)
+    inline def setFirmwareVersionUndefined: Self = StObject.set(x, "firmwareVersion", js.undefined)
     
-    @scala.inline
-    def setHardwareVersion(value: String): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
+    inline def setHardwareVersion(value: String): Self = StObject.set(x, "hardwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareVersionUndefined: Self = StObject.set(x, "hardwareVersion", js.undefined)
+    inline def setHardwareVersionUndefined: Self = StObject.set(x, "hardwareVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
+    inline def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareVersionUndefined: Self = StObject.set(x, "softwareVersion", js.undefined)
+    inline def setSoftwareVersionUndefined: Self = StObject.set(x, "softwareVersion", js.undefined)
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+    inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

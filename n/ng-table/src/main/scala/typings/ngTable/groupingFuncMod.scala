@@ -15,14 +15,11 @@ object groupingFuncMod {
   trait GroupSort extends StObject
   object GroupSort {
     
-    @scala.inline
-    def _empty: typings.ngTable.ngTableStrings._empty = "".asInstanceOf[typings.ngTable.ngTableStrings._empty]
+    inline def _empty: typings.ngTable.ngTableStrings._empty = "".asInstanceOf[typings.ngTable.ngTableStrings._empty]
     
-    @scala.inline
-    def asc: typings.ngTable.ngTableStrings.asc = "asc".asInstanceOf[typings.ngTable.ngTableStrings.asc]
+    inline def asc: typings.ngTable.ngTableStrings.asc = "asc".asInstanceOf[typings.ngTable.ngTableStrings.asc]
     
-    @scala.inline
-    def desc: typings.ngTable.ngTableStrings.desc = "desc".asInstanceOf[typings.ngTable.ngTableStrings.desc]
+    inline def desc: typings.ngTable.ngTableStrings.desc = "desc".asInstanceOf[typings.ngTable.ngTableStrings.desc]
   }
   
   type Grouping[T] = IGroupValues | IGroupingFunc[T]

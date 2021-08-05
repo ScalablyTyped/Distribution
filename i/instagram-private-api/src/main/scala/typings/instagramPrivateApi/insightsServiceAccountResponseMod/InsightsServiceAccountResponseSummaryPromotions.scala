@@ -10,19 +10,15 @@ trait InsightsServiceAccountResponseSummaryPromotions extends StObject {
 }
 object InsightsServiceAccountResponseSummaryPromotions {
   
-  @scala.inline
-  def apply(edges: js.Array[js.Any]): InsightsServiceAccountResponseSummaryPromotions = {
+  inline def apply(edges: js.Array[js.Any]): InsightsServiceAccountResponseSummaryPromotions = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServiceAccountResponseSummaryPromotions]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseSummaryPromotionsMutableBuilder[Self <: InsightsServiceAccountResponseSummaryPromotions] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseSummaryPromotions](x: Self) {
     
-    @scala.inline
-    def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
   }
 }

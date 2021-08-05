@@ -22,8 +22,7 @@ object gradientMod {
   @JSImport("pdfkit/js/gradient", "PDFGradient")
   @js.native
   def PDFGradient: typings.pdfkit.PDFKit.PDFGradient = js.native
-  @scala.inline
-  def PDFGradient_=(x: typings.pdfkit.PDFKit.PDFGradient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDFGradient")(x.asInstanceOf[js.Any])
+  inline def PDFGradient_=(x: typings.pdfkit.PDFKit.PDFGradient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDFGradient")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/gradient", "PDFLinearGradient")
@@ -36,8 +35,7 @@ object gradientMod {
   @JSImport("pdfkit/js/gradient", "PDFLinearGradient")
   @js.native
   def PDFLinearGradient: typings.pdfkit.PDFKit.PDFLinearGradient = js.native
-  @scala.inline
-  def PDFLinearGradient_=(x: typings.pdfkit.PDFKit.PDFLinearGradient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDFLinearGradient")(x.asInstanceOf[js.Any])
+  inline def PDFLinearGradient_=(x: typings.pdfkit.PDFKit.PDFLinearGradient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDFLinearGradient")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/gradient", "PDFRadialGradiant")
@@ -50,6 +48,5 @@ object gradientMod {
   @JSImport("pdfkit/js/gradient", "PDFRadialGradiant")
   @js.native
   def PDFRadialGradiant: PDFRadialGradient = js.native
-  @scala.inline
-  def PDFRadialGradiant_=(x: PDFRadialGradient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDFRadialGradiant")(x.asInstanceOf[js.Any])
+  inline def PDFRadialGradiant_=(x: PDFRadialGradient): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDFRadialGradiant")(x.asInstanceOf[js.Any])
 }

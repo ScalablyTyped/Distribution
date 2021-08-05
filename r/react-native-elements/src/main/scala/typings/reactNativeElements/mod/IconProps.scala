@@ -76,79 +76,55 @@ trait IconProps
 }
 object IconProps {
   
-  @scala.inline
-  def apply(name: String): IconProps = {
+  inline def apply(name: String): IconProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
   
-  @scala.inline
-  implicit class IconPropsMutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
+  extension [Self <: IconProps](x: Self) {
     
-    @scala.inline
-    def setBrand(value: Boolean): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: Boolean): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
+    inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
-    @scala.inline
-    def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+    inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
+    inline def setDisabledStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
+    inline def setDisabledStyleNull: Self = StObject.set(x, "disabledStyle", null)
     
-    @scala.inline
-    def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
+    inline def setDisabledStyleUndefined: Self = StObject.set(x, "disabledStyle", js.undefined)
     
-    @scala.inline
-    def setIconProps(value: typings.reactNativeVectorIcons.iconMod.IconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
+    inline def setIconProps(value: typings.reactNativeVectorIcons.iconMod.IconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
+    inline def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
     
-    @scala.inline
-    def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+    inline def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+    inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseColor(value: String): Self = StObject.set(x, "reverseColor", value.asInstanceOf[js.Any])
+    inline def setReverseColor(value: String): Self = StObject.set(x, "reverseColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseColorUndefined: Self = StObject.set(x, "reverseColor", js.undefined)
+    inline def setReverseColorUndefined: Self = StObject.set(x, "reverseColor", js.undefined)
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setSolid(value: Boolean): Self = StObject.set(x, "solid", value.asInstanceOf[js.Any])
+    inline def setSolid(value: Boolean): Self = StObject.set(x, "solid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolidUndefined: Self = StObject.set(x, "solid", js.undefined)
+    inline def setSolidUndefined: Self = StObject.set(x, "solid", js.undefined)
     
-    @scala.inline
-    def setType(value: IconType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IconType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

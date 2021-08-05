@@ -57,26 +57,20 @@ object sourceMod {
   }
   object Acceptance {
     
-    @scala.inline
-    def apply(date: Double, ip: String, status: accepted | refused, user_agent: String): Acceptance = {
+    inline def apply(date: Double, ip: String, status: accepted | refused, user_agent: String): Acceptance = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], user_agent = user_agent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Acceptance]
     }
     
-    @scala.inline
-    implicit class AcceptanceMutableBuilder[Self <: Acceptance] (val x: Self) extends AnyVal {
+    extension [Self <: Acceptance](x: Self) {
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: accepted | refused): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: accepted | refused): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
+      inline def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,20 +89,16 @@ object sourceMod {
   }
   object CodeVerification {
     
-    @scala.inline
-    def apply(attempts_remaining: Double, status: pending | attempts_remaining | succeeded | failed): CodeVerification = {
+    inline def apply(attempts_remaining: Double, status: pending | attempts_remaining | succeeded | failed): CodeVerification = {
       val __obj = js.Dynamic.literal(attempts_remaining = attempts_remaining.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeVerification]
     }
     
-    @scala.inline
-    implicit class CodeVerificationMutableBuilder[Self <: CodeVerification] (val x: Self) extends AnyVal {
+    extension [Self <: CodeVerification](x: Self) {
       
-      @scala.inline
-      def setAttempts_remaining(value: Double): Self = StObject.set(x, "attempts_remaining", value.asInstanceOf[js.Any])
+      inline def setAttempts_remaining(value: Double): Self = StObject.set(x, "attempts_remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: pending | attempts_remaining | succeeded | failed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: pending | attempts_remaining | succeeded | failed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,26 +116,20 @@ object sourceMod {
   }
   object Mandate {
     
-    @scala.inline
-    def apply(): Mandate = {
+    inline def apply(): Mandate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mandate]
     }
     
-    @scala.inline
-    implicit class MandateMutableBuilder[Self <: Mandate] (val x: Self) extends AnyVal {
+    extension [Self <: Mandate](x: Self) {
       
-      @scala.inline
-      def setAcceptance(value: Acceptance): Self = StObject.set(x, "acceptance", value.asInstanceOf[js.Any])
+      inline def setAcceptance(value: Acceptance): Self = StObject.set(x, "acceptance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptanceUndefined: Self = StObject.set(x, "acceptance", js.undefined)
+      inline def setAcceptanceUndefined: Self = StObject.set(x, "acceptance", js.undefined)
       
-      @scala.inline
-      def setNotification_method(value: email | manual | none): Self = StObject.set(x, "notification_method", value.asInstanceOf[js.Any])
+      inline def setNotification_method(value: email | manual | none): Self = StObject.set(x, "notification_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification_methodUndefined: Self = StObject.set(x, "notification_method", js.undefined)
+      inline def setNotification_methodUndefined: Self = StObject.set(x, "notification_method", js.undefined)
     }
   }
   
@@ -176,26 +160,20 @@ object sourceMod {
   }
   object Receiver {
     
-    @scala.inline
-    def apply(address: String, amount_charged: Double, amount_received: Double, amount_returned: Double): Receiver = {
+    inline def apply(address: String, amount_charged: Double, amount_received: Double, amount_returned: Double): Receiver = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], amount_charged = amount_charged.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], amount_returned = amount_returned.asInstanceOf[js.Any])
       __obj.asInstanceOf[Receiver]
     }
     
-    @scala.inline
-    implicit class ReceiverMutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
+    extension [Self <: Receiver](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_charged(value: Double): Self = StObject.set(x, "amount_charged", value.asInstanceOf[js.Any])
+      inline def setAmount_charged(value: Double): Self = StObject.set(x, "amount_charged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_received(value: Double): Self = StObject.set(x, "amount_received", value.asInstanceOf[js.Any])
+      inline def setAmount_received(value: Double): Self = StObject.set(x, "amount_received", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_returned(value: Double): Self = StObject.set(x, "amount_returned", value.asInstanceOf[js.Any])
+      inline def setAmount_returned(value: Double): Self = StObject.set(x, "amount_returned", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,29 +207,22 @@ object sourceMod {
   }
   object Redirect {
     
-    @scala.inline
-    def apply(return_url: String, status: pending | succeeded | not_required | failed, url: String): Redirect = {
+    inline def apply(return_url: String, status: pending | succeeded | not_required | failed, url: String): Redirect = {
       val __obj = js.Dynamic.literal(return_url = return_url.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Redirect]
     }
     
-    @scala.inline
-    implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
+    extension [Self <: Redirect](x: Self) {
       
-      @scala.inline
-      def setFailure_reason(value: user_abort | declined | processing_error): Self = StObject.set(x, "failure_reason", value.asInstanceOf[js.Any])
+      inline def setFailure_reason(value: user_abort | declined | processing_error): Self = StObject.set(x, "failure_reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure_reasonUndefined: Self = StObject.set(x, "failure_reason", js.undefined)
+      inline def setFailure_reasonUndefined: Self = StObject.set(x, "failure_reason", js.undefined)
       
-      @scala.inline
-      def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
+      inline def setReturn_url(value: String): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: pending | succeeded | not_required | failed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: pending | succeeded | not_required | failed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,8 +331,7 @@ object sourceMod {
   }
   object Source {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       client_secret: String,
       created: Double,
@@ -381,68 +351,47 @@ object sourceMod {
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+      inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode_verification(value: CodeVerification): Self = StObject.set(x, "code_verification", value.asInstanceOf[js.Any])
+      inline def setCode_verification(value: CodeVerification): Self = StObject.set(x, "code_verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode_verificationUndefined: Self = StObject.set(x, "code_verification", js.undefined)
+      inline def setCode_verificationUndefined: Self = StObject.set(x, "code_verification", js.undefined)
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlow(value: redirect | receiver | code_verification | none): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+      inline def setFlow(value: redirect | receiver | code_verification | none): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: source): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: source): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: Customer): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Customer): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiver(value: Receiver): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+      inline def setReceiver(value: Receiver): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
+      inline def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: pending | canceled | failed | consumed | chargeable): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: pending | canceled | failed | consumed | chargeable): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: paymentOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: paymentOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(value: reusable): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: reusable): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -516,8 +465,7 @@ object sourceMod {
   }
   object SourceData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amount: Double,
       currency: String,
       flow: redirect | receiver | code_verification | none,
@@ -529,71 +477,49 @@ object sourceMod {
       __obj.asInstanceOf[SourceData]
     }
     
-    @scala.inline
-    implicit class SourceDataMutableBuilder[Self <: SourceData] (val x: Self) extends AnyVal {
+    extension [Self <: SourceData](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlow(value: redirect | receiver | code_verification | none): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+      inline def setFlow(value: redirect | receiver | code_verification | none): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandate(value: Mandate): Self = StObject.set(x, "mandate", value.asInstanceOf[js.Any])
+      inline def setMandate(value: Mandate): Self = StObject.set(x, "mandate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandateUndefined: Self = StObject.set(x, "mandate", js.undefined)
+      inline def setMandateUndefined: Self = StObject.set(x, "mandate", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setOwner(value: Customer): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: Customer): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
       
-      @scala.inline
-      def setReceiver(value: Receiver): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+      inline def setReceiver(value: Receiver): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
+      inline def setReceiverUndefined: Self = StObject.set(x, "receiver", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+      inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+      inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
       
-      @scala.inline
-      def setThree_d_secure_2_eap(value: js.Any): Self = StObject.set(x, "three_d_secure_2_eap", value.asInstanceOf[js.Any])
+      inline def setThree_d_secure_2_eap(value: js.Any): Self = StObject.set(x, "three_d_secure_2_eap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThree_d_secure_2_eapUndefined: Self = StObject.set(x, "three_d_secure_2_eap", js.undefined)
+      inline def setThree_d_secure_2_eapUndefined: Self = StObject.set(x, "three_d_secure_2_eap", js.undefined)
       
-      @scala.inline
-      def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setType(value: paymentOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: paymentOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(value: reusable | single_use): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: reusable | single_use): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -611,23 +537,18 @@ object sourceMod {
   }
   object SourceResult {
     
-    @scala.inline
-    def apply(source: Source): SourceResult = {
+    inline def apply(source: Source): SourceResult = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceResult]
     }
     
-    @scala.inline
-    implicit class SourceResultMutableBuilder[Self <: SourceResult] (val x: Self) extends AnyVal {
+    extension [Self <: SourceResult](x: Self) {
       
-      @scala.inline
-      def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -652,52 +573,36 @@ object sourceMod {
   trait paymentOptions extends StObject
   object paymentOptions {
     
-    @scala.inline
-    def ach_credit_transfer: typings.stripejs.stripejsStrings.ach_credit_transfer = "ach_credit_transfer".asInstanceOf[typings.stripejs.stripejsStrings.ach_credit_transfer]
+    inline def ach_credit_transfer: typings.stripejs.stripejsStrings.ach_credit_transfer = "ach_credit_transfer".asInstanceOf[typings.stripejs.stripejsStrings.ach_credit_transfer]
     
-    @scala.inline
-    def ach_debit: typings.stripejs.stripejsStrings.ach_debit = "ach_debit".asInstanceOf[typings.stripejs.stripejsStrings.ach_debit]
+    inline def ach_debit: typings.stripejs.stripejsStrings.ach_debit = "ach_debit".asInstanceOf[typings.stripejs.stripejsStrings.ach_debit]
     
-    @scala.inline
-    def alipay: typings.stripejs.stripejsStrings.alipay = "alipay".asInstanceOf[typings.stripejs.stripejsStrings.alipay]
+    inline def alipay: typings.stripejs.stripejsStrings.alipay = "alipay".asInstanceOf[typings.stripejs.stripejsStrings.alipay]
     
-    @scala.inline
-    def bancontact: typings.stripejs.stripejsStrings.bancontact = "bancontact".asInstanceOf[typings.stripejs.stripejsStrings.bancontact]
+    inline def bancontact: typings.stripejs.stripejsStrings.bancontact = "bancontact".asInstanceOf[typings.stripejs.stripejsStrings.bancontact]
     
-    @scala.inline
-    def card: typings.stripejs.stripejsStrings.card = "card".asInstanceOf[typings.stripejs.stripejsStrings.card]
+    inline def card: typings.stripejs.stripejsStrings.card = "card".asInstanceOf[typings.stripejs.stripejsStrings.card]
     
-    @scala.inline
-    def card_present: typings.stripejs.stripejsStrings.card_present = "card_present".asInstanceOf[typings.stripejs.stripejsStrings.card_present]
+    inline def card_present: typings.stripejs.stripejsStrings.card_present = "card_present".asInstanceOf[typings.stripejs.stripejsStrings.card_present]
     
-    @scala.inline
-    def eps: typings.stripejs.stripejsStrings.eps = "eps".asInstanceOf[typings.stripejs.stripejsStrings.eps]
+    inline def eps: typings.stripejs.stripejsStrings.eps = "eps".asInstanceOf[typings.stripejs.stripejsStrings.eps]
     
-    @scala.inline
-    def giropay: typings.stripejs.stripejsStrings.giropay = "giropay".asInstanceOf[typings.stripejs.stripejsStrings.giropay]
+    inline def giropay: typings.stripejs.stripejsStrings.giropay = "giropay".asInstanceOf[typings.stripejs.stripejsStrings.giropay]
     
-    @scala.inline
-    def ideal: typings.stripejs.stripejsStrings.ideal = "ideal".asInstanceOf[typings.stripejs.stripejsStrings.ideal]
+    inline def ideal: typings.stripejs.stripejsStrings.ideal = "ideal".asInstanceOf[typings.stripejs.stripejsStrings.ideal]
     
-    @scala.inline
-    def multibanco: typings.stripejs.stripejsStrings.multibanco = "multibanco".asInstanceOf[typings.stripejs.stripejsStrings.multibanco]
+    inline def multibanco: typings.stripejs.stripejsStrings.multibanco = "multibanco".asInstanceOf[typings.stripejs.stripejsStrings.multibanco]
     
-    @scala.inline
-    def p24: typings.stripejs.stripejsStrings.p24 = "p24".asInstanceOf[typings.stripejs.stripejsStrings.p24]
+    inline def p24: typings.stripejs.stripejsStrings.p24 = "p24".asInstanceOf[typings.stripejs.stripejsStrings.p24]
     
-    @scala.inline
-    def paper_check: typings.stripejs.stripejsStrings.paper_check = "paper_check".asInstanceOf[typings.stripejs.stripejsStrings.paper_check]
+    inline def paper_check: typings.stripejs.stripejsStrings.paper_check = "paper_check".asInstanceOf[typings.stripejs.stripejsStrings.paper_check]
     
-    @scala.inline
-    def sepa_credit_transfer: typings.stripejs.stripejsStrings.sepa_credit_transfer = "sepa_credit_transfer".asInstanceOf[typings.stripejs.stripejsStrings.sepa_credit_transfer]
+    inline def sepa_credit_transfer: typings.stripejs.stripejsStrings.sepa_credit_transfer = "sepa_credit_transfer".asInstanceOf[typings.stripejs.stripejsStrings.sepa_credit_transfer]
     
-    @scala.inline
-    def sepa_debit: typings.stripejs.stripejsStrings.sepa_debit = "sepa_debit".asInstanceOf[typings.stripejs.stripejsStrings.sepa_debit]
+    inline def sepa_debit: typings.stripejs.stripejsStrings.sepa_debit = "sepa_debit".asInstanceOf[typings.stripejs.stripejsStrings.sepa_debit]
     
-    @scala.inline
-    def sofort: typings.stripejs.stripejsStrings.sofort = "sofort".asInstanceOf[typings.stripejs.stripejsStrings.sofort]
+    inline def sofort: typings.stripejs.stripejsStrings.sofort = "sofort".asInstanceOf[typings.stripejs.stripejsStrings.sofort]
     
-    @scala.inline
-    def three_d_secure: typings.stripejs.stripejsStrings.three_d_secure = "three_d_secure".asInstanceOf[typings.stripejs.stripejsStrings.three_d_secure]
+    inline def three_d_secure: typings.stripejs.stripejsStrings.three_d_secure = "three_d_secure".asInstanceOf[typings.stripejs.stripejsStrings.three_d_secure]
   }
 }

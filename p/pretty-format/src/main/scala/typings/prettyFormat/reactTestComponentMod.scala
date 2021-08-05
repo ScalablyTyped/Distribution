@@ -48,40 +48,30 @@ object reactTestComponentMod extends Shortcut {
   }
   object ReactTestObject {
     
-    @scala.inline
-    def apply(DollarDollartypeof: js.Symbol, `type`: String): ReactTestObject = {
+    inline def apply(DollarDollartypeof: js.Symbol, `type`: String): ReactTestObject = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestObject]
     }
     
-    @scala.inline
-    implicit class ReactTestObjectMutableBuilder[Self <: ReactTestObject] (val x: Self) extends AnyVal {
+    extension [Self <: ReactTestObject](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactTestChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactTestChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenNull: Self = StObject.set(x, "children", null)
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactTestChild*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactTestChild*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
+      inline def setDollarDollartypeof(value: js.Symbol): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -20,8 +20,7 @@ trait IELangSearchDelegates extends StObject {
 }
 object IELangSearchDelegates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     langDirectionClickHandler: js.Function,
     langDirectionHandler: js.Function,
     searchClickHandler: js.Function,
@@ -33,25 +32,18 @@ object IELangSearchDelegates {
     __obj.asInstanceOf[IELangSearchDelegates]
   }
   
-  @scala.inline
-  implicit class IELangSearchDelegatesMutableBuilder[Self <: IELangSearchDelegates] (val x: Self) extends AnyVal {
+  extension [Self <: IELangSearchDelegates](x: Self) {
     
-    @scala.inline
-    def setLangDirectionClickHandler(value: js.Function): Self = StObject.set(x, "langDirectionClickHandler", value.asInstanceOf[js.Any])
+    inline def setLangDirectionClickHandler(value: js.Function): Self = StObject.set(x, "langDirectionClickHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangDirectionHandler(value: js.Function): Self = StObject.set(x, "langDirectionHandler", value.asInstanceOf[js.Any])
+    inline def setLangDirectionHandler(value: js.Function): Self = StObject.set(x, "langDirectionHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchClickHandler(value: js.Function): Self = StObject.set(x, "searchClickHandler", value.asInstanceOf[js.Any])
+    inline def setSearchClickHandler(value: js.Function): Self = StObject.set(x, "searchClickHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchHandler(value: js.Function): Self = StObject.set(x, "searchHandler", value.asInstanceOf[js.Any])
+    inline def setSearchHandler(value: js.Function): Self = StObject.set(x, "searchHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectCallback(value: js.Function): Self = StObject.set(x, "selectCallback", value.asInstanceOf[js.Any])
+    inline def setSelectCallback(value: js.Function): Self = StObject.set(x, "selectCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
+    inline def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
   }
 }

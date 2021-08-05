@@ -15,22 +15,17 @@ trait IPRIVATE_MESSAGE extends StObject {
 }
 object IPRIVATE_MESSAGE {
   
-  @scala.inline
-  def apply(data: js.Object, message: String, sender: SFSUser): IPRIVATE_MESSAGE = {
+  inline def apply(data: js.Object, message: String, sender: SFSUser): IPRIVATE_MESSAGE = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPRIVATE_MESSAGE]
   }
   
-  @scala.inline
-  implicit class IPRIVATE_MESSAGEMutableBuilder[Self <: IPRIVATE_MESSAGE] (val x: Self) extends AnyVal {
+  extension [Self <: IPRIVATE_MESSAGE](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

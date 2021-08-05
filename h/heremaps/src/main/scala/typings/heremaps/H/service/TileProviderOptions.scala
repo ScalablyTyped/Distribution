@@ -14,19 +14,15 @@ trait TileProviderOptions extends StObject {
 }
 object TileProviderOptions {
   
-  @scala.inline
-  def apply(): TileProviderOptions = {
+  inline def apply(): TileProviderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileProviderOptions]
   }
   
-  @scala.inline
-  implicit class TileProviderOptionsMutableBuilder[Self <: TileProviderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileProviderOptions](x: Self) {
     
-    @scala.inline
-    def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
   }
 }

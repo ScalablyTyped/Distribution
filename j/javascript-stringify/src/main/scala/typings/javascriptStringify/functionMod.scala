@@ -117,8 +117,7 @@ object functionMod {
   @js.native
   val USED_METHOD_KEY: WeakSet[js.Function] = js.native
   
-  @scala.inline
-  def dedentFunction(fnString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedentFunction")(fnString.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dedentFunction(fnString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedentFunction")(fnString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("javascript-stringify/dist/function", "functionToString")
   @js.native

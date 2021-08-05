@@ -23,37 +23,27 @@ trait xAxis
 }
 object xAxis {
   
-  @scala.inline
-  def apply(): xAxis = {
+  inline def apply(): xAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[xAxis]
   }
   
-  @scala.inline
-  implicit class xAxisMutableBuilder[Self <: xAxis] (val x: Self) extends AnyVal {
+  extension [Self <: xAxis](x: Self) {
     
-    @scala.inline
-    def setAvoidFirstLastClipping(value: Boolean): Self = StObject.set(x, "avoidFirstLastClipping", value.asInstanceOf[js.Any])
+    inline def setAvoidFirstLastClipping(value: Boolean): Self = StObject.set(x, "avoidFirstLastClipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidFirstLastClippingUndefined: Self = StObject.set(x, "avoidFirstLastClipping", js.undefined)
+    inline def setAvoidFirstLastClippingUndefined: Self = StObject.set(x, "avoidFirstLastClipping", js.undefined)
     
-    @scala.inline
-    def setLabelRotationAngle(value: Double): Self = StObject.set(x, "labelRotationAngle", value.asInstanceOf[js.Any])
+    inline def setLabelRotationAngle(value: Double): Self = StObject.set(x, "labelRotationAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelRotationAngleUndefined: Self = StObject.set(x, "labelRotationAngle", js.undefined)
+    inline def setLabelRotationAngleUndefined: Self = StObject.set(x, "labelRotationAngle", js.undefined)
     
-    @scala.inline
-    def setPosition(value: TOP | BOTTOM | BOTH_SIDED | TOP_INSIDE | BOTTOM_INSIDE): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: TOP | BOTTOM | BOTH_SIDED | TOP_INSIDE | BOTTOM_INSIDE): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
+    inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait RNFetchBlobStream extends StObject {
 }
 object RNFetchBlobStream {
   
-  @scala.inline
-  def apply(onData: () => Unit, onEnd: () => Unit, onError: () => Unit): RNFetchBlobStream = {
+  inline def apply(onData: () => Unit, onEnd: () => Unit, onError: () => Unit): RNFetchBlobStream = {
     val __obj = js.Dynamic.literal(onData = js.Any.fromFunction0(onData), onEnd = js.Any.fromFunction0(onEnd), onError = js.Any.fromFunction0(onError))
     __obj.asInstanceOf[RNFetchBlobStream]
   }
   
-  @scala.inline
-  implicit class RNFetchBlobStreamMutableBuilder[Self <: RNFetchBlobStream] (val x: Self) extends AnyVal {
+  extension [Self <: RNFetchBlobStream](x: Self) {
     
-    @scala.inline
-    def setOnData(value: () => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction0(value))
+    inline def setOnData(value: () => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
+    inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+    inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
   }
 }

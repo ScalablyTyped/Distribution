@@ -17,34 +17,25 @@ trait Output extends StObject {
 }
 object Output {
   
-  @scala.inline
-  def apply(Value: js.Any): Output = {
+  inline def apply(Value: js.Any): Output = {
     val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   
-  @scala.inline
-  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+  extension [Self <: Output](x: Self) {
     
-    @scala.inline
-    def setCondition(value: js.Any): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: js.Any): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExport(value: Name): Self = StObject.set(x, "Export", value.asInstanceOf[js.Any])
+    inline def setExport(value: Name): Self = StObject.set(x, "Export", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportUndefined: Self = StObject.set(x, "Export", js.undefined)
+    inline def setExportUndefined: Self = StObject.set(x, "Export", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

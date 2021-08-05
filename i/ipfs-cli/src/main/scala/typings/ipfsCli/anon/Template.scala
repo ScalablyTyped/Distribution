@@ -16,25 +16,19 @@ trait Template extends StObject {
 }
 object Template {
   
-  @scala.inline
-  def apply(cidBase: js.Any, ctx: Print, template: js.Any, timeout: js.Any): Template = {
+  inline def apply(cidBase: js.Any, ctx: Print, template: js.Any, timeout: js.Any): Template = {
     val __obj = js.Dynamic.literal(cidBase = cidBase.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
   
-  @scala.inline
-  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+  extension [Self <: Template](x: Self) {
     
-    @scala.inline
-    def setCidBase(value: js.Any): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
+    inline def setCidBase(value: js.Any): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait Token extends StObject {
 }
 object Token {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client_ip: String,
     created: Double,
     id: String,
@@ -42,40 +41,28 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   
-  @scala.inline
-  implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+  extension [Self <: Token](x: Self) {
     
-    @scala.inline
-    def setBank_account(value: BankAccount): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
+    inline def setBank_account(value: BankAccount): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
+    inline def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
     
-    @scala.inline
-    def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
-    @scala.inline
-    def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
+    inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+    inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+    inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
   }
 }

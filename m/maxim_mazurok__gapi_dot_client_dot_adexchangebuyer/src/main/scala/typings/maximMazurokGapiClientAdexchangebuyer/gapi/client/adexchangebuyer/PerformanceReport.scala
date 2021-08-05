@@ -74,157 +74,107 @@ trait PerformanceReport extends StObject {
 }
 object PerformanceReport {
   
-  @scala.inline
-  def apply(): PerformanceReport = {
+  inline def apply(): PerformanceReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceReport]
   }
   
-  @scala.inline
-  implicit class PerformanceReportMutableBuilder[Self <: PerformanceReport] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceReport](x: Self) {
     
-    @scala.inline
-    def setBidRate(value: Double): Self = StObject.set(x, "bidRate", value.asInstanceOf[js.Any])
+    inline def setBidRate(value: Double): Self = StObject.set(x, "bidRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidRateUndefined: Self = StObject.set(x, "bidRate", js.undefined)
+    inline def setBidRateUndefined: Self = StObject.set(x, "bidRate", js.undefined)
     
-    @scala.inline
-    def setBidRequestRate(value: Double): Self = StObject.set(x, "bidRequestRate", value.asInstanceOf[js.Any])
+    inline def setBidRequestRate(value: Double): Self = StObject.set(x, "bidRequestRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidRequestRateUndefined: Self = StObject.set(x, "bidRequestRate", js.undefined)
+    inline def setBidRequestRateUndefined: Self = StObject.set(x, "bidRequestRate", js.undefined)
     
-    @scala.inline
-    def setCalloutStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "calloutStatusRate", value.asInstanceOf[js.Any])
+    inline def setCalloutStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "calloutStatusRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutStatusRateUndefined: Self = StObject.set(x, "calloutStatusRate", js.undefined)
+    inline def setCalloutStatusRateUndefined: Self = StObject.set(x, "calloutStatusRate", js.undefined)
     
-    @scala.inline
-    def setCalloutStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "calloutStatusRate", js.Array(value :_*))
+    inline def setCalloutStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "calloutStatusRate", js.Array(value :_*))
     
-    @scala.inline
-    def setCookieMatcherStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "cookieMatcherStatusRate", value.asInstanceOf[js.Any])
+    inline def setCookieMatcherStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "cookieMatcherStatusRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieMatcherStatusRateUndefined: Self = StObject.set(x, "cookieMatcherStatusRate", js.undefined)
+    inline def setCookieMatcherStatusRateUndefined: Self = StObject.set(x, "cookieMatcherStatusRate", js.undefined)
     
-    @scala.inline
-    def setCookieMatcherStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "cookieMatcherStatusRate", js.Array(value :_*))
+    inline def setCookieMatcherStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "cookieMatcherStatusRate", js.Array(value :_*))
     
-    @scala.inline
-    def setCreativeStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "creativeStatusRate", value.asInstanceOf[js.Any])
+    inline def setCreativeStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "creativeStatusRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeStatusRateUndefined: Self = StObject.set(x, "creativeStatusRate", js.undefined)
+    inline def setCreativeStatusRateUndefined: Self = StObject.set(x, "creativeStatusRate", js.undefined)
     
-    @scala.inline
-    def setCreativeStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "creativeStatusRate", js.Array(value :_*))
+    inline def setCreativeStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "creativeStatusRate", js.Array(value :_*))
     
-    @scala.inline
-    def setFilteredBidRate(value: Double): Self = StObject.set(x, "filteredBidRate", value.asInstanceOf[js.Any])
+    inline def setFilteredBidRate(value: Double): Self = StObject.set(x, "filteredBidRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilteredBidRateUndefined: Self = StObject.set(x, "filteredBidRate", js.undefined)
+    inline def setFilteredBidRateUndefined: Self = StObject.set(x, "filteredBidRate", js.undefined)
     
-    @scala.inline
-    def setHostedMatchStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "hostedMatchStatusRate", value.asInstanceOf[js.Any])
+    inline def setHostedMatchStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "hostedMatchStatusRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedMatchStatusRateUndefined: Self = StObject.set(x, "hostedMatchStatusRate", js.undefined)
+    inline def setHostedMatchStatusRateUndefined: Self = StObject.set(x, "hostedMatchStatusRate", js.undefined)
     
-    @scala.inline
-    def setHostedMatchStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "hostedMatchStatusRate", js.Array(value :_*))
+    inline def setHostedMatchStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "hostedMatchStatusRate", js.Array(value :_*))
     
-    @scala.inline
-    def setInventoryMatchRate(value: Double): Self = StObject.set(x, "inventoryMatchRate", value.asInstanceOf[js.Any])
+    inline def setInventoryMatchRate(value: Double): Self = StObject.set(x, "inventoryMatchRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryMatchRateUndefined: Self = StObject.set(x, "inventoryMatchRate", js.undefined)
+    inline def setInventoryMatchRateUndefined: Self = StObject.set(x, "inventoryMatchRate", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLatency50thPercentile(value: Double): Self = StObject.set(x, "latency50thPercentile", value.asInstanceOf[js.Any])
+    inline def setLatency50thPercentile(value: Double): Self = StObject.set(x, "latency50thPercentile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatency50thPercentileUndefined: Self = StObject.set(x, "latency50thPercentile", js.undefined)
+    inline def setLatency50thPercentileUndefined: Self = StObject.set(x, "latency50thPercentile", js.undefined)
     
-    @scala.inline
-    def setLatency85thPercentile(value: Double): Self = StObject.set(x, "latency85thPercentile", value.asInstanceOf[js.Any])
+    inline def setLatency85thPercentile(value: Double): Self = StObject.set(x, "latency85thPercentile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatency85thPercentileUndefined: Self = StObject.set(x, "latency85thPercentile", js.undefined)
+    inline def setLatency85thPercentileUndefined: Self = StObject.set(x, "latency85thPercentile", js.undefined)
     
-    @scala.inline
-    def setLatency95thPercentile(value: Double): Self = StObject.set(x, "latency95thPercentile", value.asInstanceOf[js.Any])
+    inline def setLatency95thPercentile(value: Double): Self = StObject.set(x, "latency95thPercentile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatency95thPercentileUndefined: Self = StObject.set(x, "latency95thPercentile", js.undefined)
+    inline def setLatency95thPercentileUndefined: Self = StObject.set(x, "latency95thPercentile", js.undefined)
     
-    @scala.inline
-    def setNoQuotaInRegion(value: Double): Self = StObject.set(x, "noQuotaInRegion", value.asInstanceOf[js.Any])
+    inline def setNoQuotaInRegion(value: Double): Self = StObject.set(x, "noQuotaInRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoQuotaInRegionUndefined: Self = StObject.set(x, "noQuotaInRegion", js.undefined)
+    inline def setNoQuotaInRegionUndefined: Self = StObject.set(x, "noQuotaInRegion", js.undefined)
     
-    @scala.inline
-    def setOutOfQuota(value: Double): Self = StObject.set(x, "outOfQuota", value.asInstanceOf[js.Any])
+    inline def setOutOfQuota(value: Double): Self = StObject.set(x, "outOfQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutOfQuotaUndefined: Self = StObject.set(x, "outOfQuota", js.undefined)
+    inline def setOutOfQuotaUndefined: Self = StObject.set(x, "outOfQuota", js.undefined)
     
-    @scala.inline
-    def setPixelMatchRequests(value: Double): Self = StObject.set(x, "pixelMatchRequests", value.asInstanceOf[js.Any])
+    inline def setPixelMatchRequests(value: Double): Self = StObject.set(x, "pixelMatchRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelMatchRequestsUndefined: Self = StObject.set(x, "pixelMatchRequests", js.undefined)
+    inline def setPixelMatchRequestsUndefined: Self = StObject.set(x, "pixelMatchRequests", js.undefined)
     
-    @scala.inline
-    def setPixelMatchResponses(value: Double): Self = StObject.set(x, "pixelMatchResponses", value.asInstanceOf[js.Any])
+    inline def setPixelMatchResponses(value: Double): Self = StObject.set(x, "pixelMatchResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelMatchResponsesUndefined: Self = StObject.set(x, "pixelMatchResponses", js.undefined)
+    inline def setPixelMatchResponsesUndefined: Self = StObject.set(x, "pixelMatchResponses", js.undefined)
     
-    @scala.inline
-    def setQuotaConfiguredLimit(value: Double): Self = StObject.set(x, "quotaConfiguredLimit", value.asInstanceOf[js.Any])
+    inline def setQuotaConfiguredLimit(value: Double): Self = StObject.set(x, "quotaConfiguredLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaConfiguredLimitUndefined: Self = StObject.set(x, "quotaConfiguredLimit", js.undefined)
+    inline def setQuotaConfiguredLimitUndefined: Self = StObject.set(x, "quotaConfiguredLimit", js.undefined)
     
-    @scala.inline
-    def setQuotaThrottledLimit(value: Double): Self = StObject.set(x, "quotaThrottledLimit", value.asInstanceOf[js.Any])
+    inline def setQuotaThrottledLimit(value: Double): Self = StObject.set(x, "quotaThrottledLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaThrottledLimitUndefined: Self = StObject.set(x, "quotaThrottledLimit", js.undefined)
+    inline def setQuotaThrottledLimitUndefined: Self = StObject.set(x, "quotaThrottledLimit", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSuccessfulRequestRate(value: Double): Self = StObject.set(x, "successfulRequestRate", value.asInstanceOf[js.Any])
+    inline def setSuccessfulRequestRate(value: Double): Self = StObject.set(x, "successfulRequestRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulRequestRateUndefined: Self = StObject.set(x, "successfulRequestRate", js.undefined)
+    inline def setSuccessfulRequestRateUndefined: Self = StObject.set(x, "successfulRequestRate", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulRequestRate(value: Double): Self = StObject.set(x, "unsuccessfulRequestRate", value.asInstanceOf[js.Any])
+    inline def setUnsuccessfulRequestRate(value: Double): Self = StObject.set(x, "unsuccessfulRequestRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulRequestRateUndefined: Self = StObject.set(x, "unsuccessfulRequestRate", js.undefined)
+    inline def setUnsuccessfulRequestRateUndefined: Self = StObject.set(x, "unsuccessfulRequestRate", js.undefined)
   }
 }

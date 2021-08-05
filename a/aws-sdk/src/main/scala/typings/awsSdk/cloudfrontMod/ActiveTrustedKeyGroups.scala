@@ -23,28 +23,21 @@ trait ActiveTrustedKeyGroups extends StObject {
 }
 object ActiveTrustedKeyGroups {
   
-  @scala.inline
-  def apply(Enabled: Boolean, Quantity: integer): ActiveTrustedKeyGroups = {
+  inline def apply(Enabled: Boolean, Quantity: integer): ActiveTrustedKeyGroups = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveTrustedKeyGroups]
   }
   
-  @scala.inline
-  implicit class ActiveTrustedKeyGroupsMutableBuilder[Self <: ActiveTrustedKeyGroups] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveTrustedKeyGroups](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: KGKeyPairIdsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: KGKeyPairIdsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: KGKeyPairIds*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: KGKeyPairIds*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

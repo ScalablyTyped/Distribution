@@ -27,28 +27,21 @@ trait PortworxVolumeSource extends StObject {
 }
 object PortworxVolumeSource {
   
-  @scala.inline
-  def apply(volumeID: Input[String]): PortworxVolumeSource = {
+  inline def apply(volumeID: Input[String]): PortworxVolumeSource = {
     val __obj = js.Dynamic.literal(volumeID = volumeID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortworxVolumeSource]
   }
   
-  @scala.inline
-  implicit class PortworxVolumeSourceMutableBuilder[Self <: PortworxVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: PortworxVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: Input[String]): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
+    inline def setFsTypeUndefined: Self = StObject.set(x, "fsType", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setVolumeID(value: Input[String]): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
+    inline def setVolumeID(value: Input[String]): Self = StObject.set(x, "volumeID", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait SchemaServiceSpecRunLatest extends StObject {
 }
 object SchemaServiceSpecRunLatest {
   
-  @scala.inline
-  def apply(): SchemaServiceSpecRunLatest = {
+  inline def apply(): SchemaServiceSpecRunLatest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServiceSpecRunLatest]
   }
   
-  @scala.inline
-  implicit class SchemaServiceSpecRunLatestMutableBuilder[Self <: SchemaServiceSpecRunLatest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServiceSpecRunLatest](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
   }
 }

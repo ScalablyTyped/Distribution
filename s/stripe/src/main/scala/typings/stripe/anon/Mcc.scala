@@ -50,61 +50,43 @@ trait Mcc extends StObject {
 }
 object Mcc {
   
-  @scala.inline
-  def apply(): Mcc = {
+  inline def apply(): Mcc = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mcc]
   }
   
-  @scala.inline
-  implicit class MccMutableBuilder[Self <: Mcc] (val x: Self) extends AnyVal {
+  extension [Self <: Mcc](x: Self) {
     
-    @scala.inline
-    def setMcc(value: String): Self = StObject.set(x, "mcc", value.asInstanceOf[js.Any])
+    inline def setMcc(value: String): Self = StObject.set(x, "mcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMccUndefined: Self = StObject.set(x, "mcc", js.undefined)
+    inline def setMccUndefined: Self = StObject.set(x, "mcc", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
+    inline def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
+    inline def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
     
-    @scala.inline
-    def setSupport_address(value: City): Self = StObject.set(x, "support_address", value.asInstanceOf[js.Any])
+    inline def setSupport_address(value: City): Self = StObject.set(x, "support_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport_addressUndefined: Self = StObject.set(x, "support_address", js.undefined)
+    inline def setSupport_addressUndefined: Self = StObject.set(x, "support_address", js.undefined)
     
-    @scala.inline
-    def setSupport_email(value: String): Self = StObject.set(x, "support_email", value.asInstanceOf[js.Any])
+    inline def setSupport_email(value: String): Self = StObject.set(x, "support_email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport_emailUndefined: Self = StObject.set(x, "support_email", js.undefined)
+    inline def setSupport_emailUndefined: Self = StObject.set(x, "support_email", js.undefined)
     
-    @scala.inline
-    def setSupport_phone(value: String): Self = StObject.set(x, "support_phone", value.asInstanceOf[js.Any])
+    inline def setSupport_phone(value: String): Self = StObject.set(x, "support_phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport_phoneUndefined: Self = StObject.set(x, "support_phone", js.undefined)
+    inline def setSupport_phoneUndefined: Self = StObject.set(x, "support_phone", js.undefined)
     
-    @scala.inline
-    def setSupport_url(value: String): Self = StObject.set(x, "support_url", value.asInstanceOf[js.Any])
+    inline def setSupport_url(value: String): Self = StObject.set(x, "support_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport_urlUndefined: Self = StObject.set(x, "support_url", js.undefined)
+    inline def setSupport_urlUndefined: Self = StObject.set(x, "support_url", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

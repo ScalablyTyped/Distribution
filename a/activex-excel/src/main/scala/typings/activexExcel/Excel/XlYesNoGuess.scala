@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlYesNoGuess extends StObject
 object XlYesNoGuess {
   
-  @scala.inline
-  def xlGuess: `0` = 0.asInstanceOf[`0`]
+  inline def xlGuess: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlNo: `2` = 2.asInstanceOf[`2`]
+  inline def xlNo: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlYes: `1` = 1.asInstanceOf[`1`]
+  inline def xlYes: `1` = 1.asInstanceOf[`1`]
 }

@@ -27,7 +27,7 @@ trait Text
     * Determines per instance whether line height should be cached or not.Default value is true.
     * @since 1.22
     */
-  var cacheLineHeight: Boolean = js.native
+  /* protected */ var cacheLineHeight: Boolean = js.native
   
   /**
     * Decides whether the control can use native line clamp feature or not.In RTL mode native line clamp
@@ -63,7 +63,7 @@ trait Text
     * 3dots(...) if fonts do not support this UTF-8 character.
     * @since 1.13.2
     */
-  var ellipsis: String = js.native
+  /* protected */ var ellipsis: String = js.native
   
   /**
     * Returns the max height according to max lines and line height calculation.This is not calculated
@@ -144,7 +144,7 @@ trait Text
     * Defines whether browser supports native line clamp or not
     * @since 1.13.2
     */
-  var hasNativeLineClamp: js.Any = js.native
+  /* protected */ var hasNativeLineClamp: js.Any = js.native
   
   /**
     * Default line height value as a number when line-height is normal.This value is required during
@@ -154,7 +154,7 @@ trait Text
     * and can also vary within a given face.Default value is 1.2
     * @since 1.22
     */
-  var normalLineHeight: Double = js.native
+  /* protected */ var normalLineHeight: Double = js.native
   
   /**
     * Sets a new value for property <code>maxLines</code>.Limits the number of lines for wrapping

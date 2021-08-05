@@ -28,34 +28,25 @@ trait RtmpOutputSettings extends StObject {
 }
 object RtmpOutputSettings {
   
-  @scala.inline
-  def apply(Destination: OutputLocationRef): RtmpOutputSettings = {
+  inline def apply(Destination: OutputLocationRef): RtmpOutputSettings = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[RtmpOutputSettings]
   }
   
-  @scala.inline
-  implicit class RtmpOutputSettingsMutableBuilder[Self <: RtmpOutputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RtmpOutputSettings](x: Self) {
     
-    @scala.inline
-    def setCertificateMode(value: RtmpOutputCertificateMode): Self = StObject.set(x, "CertificateMode", value.asInstanceOf[js.Any])
+    inline def setCertificateMode(value: RtmpOutputCertificateMode): Self = StObject.set(x, "CertificateMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateModeUndefined: Self = StObject.set(x, "CertificateMode", js.undefined)
+    inline def setCertificateModeUndefined: Self = StObject.set(x, "CertificateMode", js.undefined)
     
-    @scala.inline
-    def setConnectionRetryInterval(value: integerMin1): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    inline def setConnectionRetryInterval(value: integerMin1): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
+    inline def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
     
-    @scala.inline
-    def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
+    inline def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
+    inline def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
   }
 }

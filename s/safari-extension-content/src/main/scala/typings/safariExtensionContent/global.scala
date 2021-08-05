@@ -19,7 +19,6 @@ object global {
     @JSGlobal("safari.self")
     @js.native
     def self: SafariContentWebPage = js.native
-    @scala.inline
-    def self_=(x: SafariContentWebPage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
+    inline def self_=(x: SafariContentWebPage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("self")(x.asInstanceOf[js.Any])
   }
 }

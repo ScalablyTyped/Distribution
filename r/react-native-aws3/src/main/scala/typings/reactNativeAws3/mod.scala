@@ -17,8 +17,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def put(file: File, options: Options): Request = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Request]
+    inline def put(file: File, options: Options): Request = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Request]
   }
   
   trait File extends StObject {
@@ -40,24 +39,19 @@ object mod {
   }
   object File {
     
-    @scala.inline
-    def apply(name: String, `type`: String, uri: String): File = {
+    inline def apply(name: String, `type`: String, uri: String): File = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,56 +108,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(accessKey: String, bucket: String, region: String, secretKey: String): Options = {
+    inline def apply(accessKey: String, bucket: String, region: String, secretKey: String): Options = {
       val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+      inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+      inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
       
-      @scala.inline
-      def setAwsUrl(value: String): Self = StObject.set(x, "awsUrl", value.asInstanceOf[js.Any])
+      inline def setAwsUrl(value: String): Self = StObject.set(x, "awsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsUrlUndefined: Self = StObject.set(x, "awsUrl", js.undefined)
+      inline def setAwsUrlUndefined: Self = StObject.set(x, "awsUrl", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
+      inline def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
+      inline def setKeyPrefixUndefined: Self = StObject.set(x, "keyPrefix", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessActionStatus(value: Double): Self = StObject.set(x, "successActionStatus", value.asInstanceOf[js.Any])
+      inline def setSuccessActionStatus(value: Double): Self = StObject.set(x, "successActionStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessActionStatusUndefined: Self = StObject.set(x, "successActionStatus", js.undefined)
+      inline def setSuccessActionStatusUndefined: Self = StObject.set(x, "successActionStatus", js.undefined)
       
-      @scala.inline
-      def setTimeDelta(value: Double): Self = StObject.set(x, "timeDelta", value.asInstanceOf[js.Any])
+      inline def setTimeDelta(value: Double): Self = StObject.set(x, "timeDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeDeltaUndefined: Self = StObject.set(x, "timeDelta", js.undefined)
+      inline def setTimeDeltaUndefined: Self = StObject.set(x, "timeDelta", js.undefined)
     }
   }
   
@@ -186,23 +164,18 @@ object mod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(loaded: Double, percent: Double, total: Double): Progress = {
+    inline def apply(loaded: Double, percent: Double, total: Double): Progress = {
       val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,23 +222,18 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(headers: StringDictionary[String], status: Double, text: String): Response = {
+    inline def apply(headers: StringDictionary[String], status: Double, text: String): Response = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

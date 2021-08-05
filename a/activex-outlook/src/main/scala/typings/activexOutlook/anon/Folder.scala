@@ -10,16 +10,13 @@ trait Folder extends StObject {
 }
 object Folder {
   
-  @scala.inline
-  def apply(Folder: typings.activexOutlook.Outlook.Folder): Folder = {
+  inline def apply(Folder: typings.activexOutlook.Outlook.Folder): Folder = {
     val __obj = js.Dynamic.literal(Folder = Folder.asInstanceOf[js.Any])
     __obj.asInstanceOf[Folder]
   }
   
-  @scala.inline
-  implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
+  extension [Self <: Folder](x: Self) {
     
-    @scala.inline
-    def setFolder(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
   }
 }

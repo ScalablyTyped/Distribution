@@ -12,19 +12,15 @@ trait SMSIntermediary extends StObject {
 }
 object SMSIntermediary {
   
-  @scala.inline
-  def apply(messages: SMSMessageResource, shortCodes: SMSShortCodeResource): SMSIntermediary = {
+  inline def apply(messages: SMSMessageResource, shortCodes: SMSShortCodeResource): SMSIntermediary = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], shortCodes = shortCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SMSIntermediary]
   }
   
-  @scala.inline
-  implicit class SMSIntermediaryMutableBuilder[Self <: SMSIntermediary] (val x: Self) extends AnyVal {
+  extension [Self <: SMSIntermediary](x: Self) {
     
-    @scala.inline
-    def setMessages(value: SMSMessageResource): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: SMSMessageResource): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortCodes(value: SMSShortCodeResource): Self = StObject.set(x, "shortCodes", value.asInstanceOf[js.Any])
+    inline def setShortCodes(value: SMSShortCodeResource): Self = StObject.set(x, "shortCodes", value.asInstanceOf[js.Any])
   }
 }

@@ -33,38 +33,28 @@ object typesSymbolicLinkMod {
   }
   object SymbolicLink {
     
-    @scala.inline
-    def apply(): SymbolicLink = {
+    inline def apply(): SymbolicLink = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SymbolicLink]
     }
     
-    @scala.inline
-    implicit class SymbolicLinkMutableBuilder[Self <: SymbolicLink] (val x: Self) extends AnyVal {
+    extension [Self <: SymbolicLink](x: Self) {
       
-      @scala.inline
-      def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+      inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+      inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
       
-      @scala.inline
-      def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+      inline def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
+      inline def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
       
-      @scala.inline
-      def setFileMode(value: EXECUTABLE | NORMAL | SYMLINK | String): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+      inline def setFileMode(value: EXECUTABLE | NORMAL | SYMLINK | String): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
+      inline def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+      inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
     }
   }
   

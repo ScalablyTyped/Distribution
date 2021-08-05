@@ -13,16 +13,13 @@ trait GetServiceLinkedRoleDeletionStatusRequest extends StObject {
 }
 object GetServiceLinkedRoleDeletionStatusRequest {
   
-  @scala.inline
-  def apply(DeletionTaskId: DeletionTaskIdType): GetServiceLinkedRoleDeletionStatusRequest = {
+  inline def apply(DeletionTaskId: DeletionTaskIdType): GetServiceLinkedRoleDeletionStatusRequest = {
     val __obj = js.Dynamic.literal(DeletionTaskId = DeletionTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServiceLinkedRoleDeletionStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetServiceLinkedRoleDeletionStatusRequestMutableBuilder[Self <: GetServiceLinkedRoleDeletionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceLinkedRoleDeletionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setDeletionTaskId(value: DeletionTaskIdType): Self = StObject.set(x, "DeletionTaskId", value.asInstanceOf[js.Any])
+    inline def setDeletionTaskId(value: DeletionTaskIdType): Self = StObject.set(x, "DeletionTaskId", value.asInstanceOf[js.Any])
   }
 }

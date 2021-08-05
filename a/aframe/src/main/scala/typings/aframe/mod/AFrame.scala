@@ -51,8 +51,7 @@ trait AFrame extends StObject {
 }
 object AFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AComponent: Component[js.Any, System[js.Any]],
     AEntity: Entity[ObjectMap[Component[js.Any, System[js.Any]]]],
     ANode: ANode,
@@ -79,73 +78,50 @@ object AFrame {
     __obj.asInstanceOf[AFrame]
   }
   
-  @scala.inline
-  implicit class AFrameMutableBuilder[Self <: AFrame] (val x: Self) extends AnyVal {
+  extension [Self <: AFrame](x: Self) {
     
-    @scala.inline
-    def setAComponent(value: Component[js.Any, System[js.Any]]): Self = StObject.set(x, "AComponent", value.asInstanceOf[js.Any])
+    inline def setAComponent(value: Component[js.Any, System[js.Any]]): Self = StObject.set(x, "AComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAEntity(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "AEntity", value.asInstanceOf[js.Any])
+    inline def setAEntity(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "AEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANode(value: ANode): Self = StObject.set(x, "ANode", value.asInstanceOf[js.Any])
+    inline def setANode(value: ANode): Self = StObject.set(x, "ANode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAScene(value: Scene): Self = StObject.set(x, "AScene", value.asInstanceOf[js.Any])
+    inline def setAScene(value: Scene): Self = StObject.set(x, "AScene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponents(value: ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometries(value: ObjectMap[GeometryDescriptor[Geometry[js.Any]]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: ObjectMap[GeometryDescriptor[Geometry[js.Any]]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitives(value: GetMeshMixin): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
+    inline def setPrimitives(value: GetMeshMixin): Self = StObject.set(x, "primitives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterComponent(value: (String, ComponentDefinition[js.Any]) => ComponentConstructor[js.Any]): Self = StObject.set(x, "registerComponent", js.Any.fromFunction2(value))
+    inline def setRegisterComponent(value: (String, ComponentDefinition[js.Any]) => ComponentConstructor[js.Any]): Self = StObject.set(x, "registerComponent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterElement(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerElement", js.Any.fromFunction2(value))
+    inline def setRegisterElement(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterGeometry(value: (String, GeometryDefinition[js.Any, js.Any]) => GeometryConstructor[js.Any]): Self = StObject.set(x, "registerGeometry", js.Any.fromFunction2(value))
+    inline def setRegisterGeometry(value: (String, GeometryDefinition[js.Any, js.Any]) => GeometryConstructor[js.Any]): Self = StObject.set(x, "registerGeometry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterPrimitive(value: (String, PrimitiveDefinition) => Unit): Self = StObject.set(x, "registerPrimitive", js.Any.fromFunction2(value))
+    inline def setRegisterPrimitive(value: (String, PrimitiveDefinition) => Unit): Self = StObject.set(x, "registerPrimitive", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterShader(value: (String, ShaderDefinition[js.Any]) => ShaderConstructor[js.Any]): Self = StObject.set(x, "registerShader", js.Any.fromFunction2(value))
+    inline def setRegisterShader(value: (String, ShaderDefinition[js.Any]) => ShaderConstructor[js.Any]): Self = StObject.set(x, "registerShader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterSystem(value: (String, SystemDefinition[js.Any]) => SystemConstructor[js.Any]): Self = StObject.set(x, "registerSystem", js.Any.fromFunction2(value))
+    inline def setRegisterSystem(value: (String, SystemDefinition[js.Any]) => SystemConstructor[js.Any]): Self = StObject.set(x, "registerSystem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScenes(value: js.Array[Scene]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
+    inline def setScenes(value: js.Array[Scene]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenesVarargs(value: Scene*): Self = StObject.set(x, "scenes", js.Array(value :_*))
+    inline def setScenesVarargs(value: Scene*): Self = StObject.set(x, "scenes", js.Array(value :_*))
     
-    @scala.inline
-    def setSchema(value: SchemaUtils): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: SchemaUtils): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaders(value: ObjectMap[ShaderDescriptor[Shader]]): Self = StObject.set(x, "shaders", value.asInstanceOf[js.Any])
+    inline def setShaders(value: ObjectMap[ShaderDescriptor[Shader]]): Self = StObject.set(x, "shaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystems(value: ObjectMap[SystemConstructor[js.Object]]): Self = StObject.set(x, "systems", value.asInstanceOf[js.Any])
+    inline def setSystems(value: ObjectMap[SystemConstructor[js.Object]]): Self = StObject.set(x, "systems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTHREE(value: ThreeLib): Self = StObject.set(x, "THREE", value.asInstanceOf[js.Any])
+    inline def setTHREE(value: ThreeLib): Self = StObject.set(x, "THREE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTWEEN(value: TweenLib): Self = StObject.set(x, "TWEEN", value.asInstanceOf[js.Any])
+    inline def setTWEEN(value: TweenLib): Self = StObject.set(x, "TWEEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtils(value: Utils_): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+    inline def setUtils(value: Utils_): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -18,26 +18,20 @@ object keyOperationMod {
   }
   object KeyOperation {
     
-    @scala.inline
-    def apply(oncomplete: Event => Unit, onerror: Event => Unit): KeyOperation = {
+    inline def apply(oncomplete: Event => Unit, onerror: Event => Unit): KeyOperation = {
       val __obj = js.Dynamic.literal(oncomplete = js.Any.fromFunction1(oncomplete), onerror = js.Any.fromFunction1(onerror))
       __obj.asInstanceOf[KeyOperation]
     }
     
-    @scala.inline
-    implicit class KeyOperationMutableBuilder[Self <: KeyOperation] (val x: Self) extends AnyVal {
+    extension [Self <: KeyOperation](x: Self) {
       
-      @scala.inline
-      def setOncomplete(value: Event => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
+      inline def setOncomplete(value: Event => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnerror(value: Event => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+      inline def setOnerror(value: Event => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResult(value: Key): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Key): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyFormat extends StObject
 object KeyFormat {
   
-  @scala.inline
-  def der: typings.node.nodeStrings.der = "der".asInstanceOf[typings.node.nodeStrings.der]
+  inline def der: typings.node.nodeStrings.der = "der".asInstanceOf[typings.node.nodeStrings.der]
   
-  @scala.inline
-  def pem: typings.node.nodeStrings.pem = "pem".asInstanceOf[typings.node.nodeStrings.pem]
+  inline def pem: typings.node.nodeStrings.pem = "pem".asInstanceOf[typings.node.nodeStrings.pem]
 }

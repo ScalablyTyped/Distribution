@@ -15,19 +15,15 @@ trait GetCompatibleKafkaVersionsRequest extends StObject {
 }
 object GetCompatibleKafkaVersionsRequest {
   
-  @scala.inline
-  def apply(): GetCompatibleKafkaVersionsRequest = {
+  inline def apply(): GetCompatibleKafkaVersionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCompatibleKafkaVersionsRequest]
   }
   
-  @scala.inline
-  implicit class GetCompatibleKafkaVersionsRequestMutableBuilder[Self <: GetCompatibleKafkaVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCompatibleKafkaVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
+    inline def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
   }
 }

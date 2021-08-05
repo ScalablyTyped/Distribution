@@ -16,25 +16,19 @@ trait VerificationRequest extends StObject {
 }
 object VerificationRequest {
   
-  @scala.inline
-  def apply(Account: String, Session: String, User: String, VerificationRequest: String): VerificationRequest = {
+  inline def apply(Account: String, Session: String, User: String, VerificationRequest: String): VerificationRequest = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], User = User.asInstanceOf[js.Any], VerificationRequest = VerificationRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerificationRequest]
   }
   
-  @scala.inline
-  implicit class VerificationRequestMutableBuilder[Self <: VerificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VerificationRequest](x: Self) {
     
-    @scala.inline
-    def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: String): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: String): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: String): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationRequest(value: String): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
+    inline def setVerificationRequest(value: String): Self = StObject.set(x, "VerificationRequest", value.asInstanceOf[js.Any])
   }
 }

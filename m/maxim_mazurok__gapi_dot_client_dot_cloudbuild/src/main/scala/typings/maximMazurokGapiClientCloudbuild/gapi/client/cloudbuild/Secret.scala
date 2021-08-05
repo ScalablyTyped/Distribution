@@ -22,29 +22,23 @@ trait Secret extends StObject {
 }
 object Secret {
   
-  @scala.inline
-  def apply(): Secret = {
+  inline def apply(): Secret = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Secret]
   }
   
-  @scala.inline
-  implicit class SecretMutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
+  extension [Self <: Secret](x: Self) {
     
-    @scala.inline
-    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
-    @scala.inline
-    def setSecretEnv(
+    inline def setSecretEnv(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Secret & TopLevel[js.Any]
     ): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
+    inline def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
   }
 }

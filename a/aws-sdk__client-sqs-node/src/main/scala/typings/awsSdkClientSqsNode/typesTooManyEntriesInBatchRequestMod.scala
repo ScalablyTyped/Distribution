@@ -20,17 +20,14 @@ object typesTooManyEntriesInBatchRequestMod {
   }
   object TooManyEntriesInBatchRequest {
     
-    @scala.inline
-    def apply(): TooManyEntriesInBatchRequest = {
+    inline def apply(): TooManyEntriesInBatchRequest = {
       val __obj = js.Dynamic.literal(name = "TooManyEntriesInBatchRequest")
       __obj.asInstanceOf[TooManyEntriesInBatchRequest]
     }
     
-    @scala.inline
-    implicit class TooManyEntriesInBatchRequestMutableBuilder[Self <: TooManyEntriesInBatchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: TooManyEntriesInBatchRequest](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.TooManyEntriesInBatchRequest): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.TooManyEntriesInBatchRequest): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

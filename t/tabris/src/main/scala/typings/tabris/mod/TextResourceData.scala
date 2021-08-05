@@ -16,29 +16,23 @@ trait TextResourceData[Resources /* <: /* import warning: importer.ImportType#ap
 }
 object TextResourceData {
   
-  @scala.inline
-  def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: string}
     */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[js.Any] */](): TextResourceData[Resources] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextResourceData[Resources]]
   }
   
-  @scala.inline
-  implicit class TextResourceDataMutableBuilder[Self <: TextResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  extension [Self <: TextResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: string}
-    */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[js.Any] */] (val x: Self & TextResourceData[Resources]) extends AnyVal {
+    */ typings.tabris.tabrisStrings.TextResourceData & TopLevel[js.Any] */](x: Self & TextResourceData[Resources]) {
     
-    @scala.inline
-    def setBuild(value: Selectable[String]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Selectable[String]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    @scala.inline
-    def setConstructor(value: Selectable[String]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Selectable[String]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
   }
 }

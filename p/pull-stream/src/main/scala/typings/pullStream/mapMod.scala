@@ -10,8 +10,7 @@ object mapMod {
   /**
     * Returns a through stream that calls the given `fn` for each chunk of incoming data and outputs the return value, in the same order as before.
     */
-  @scala.inline
-  def apply[In, Out](fn: js.Function1[/* data */ In, Out]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]
+  inline def apply[In, Out](fn: js.Function1[/* data */ In, Out]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]
   
   @JSImport("pull-stream/throughs/map", JSImport.Namespace)
   @js.native

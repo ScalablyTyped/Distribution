@@ -38,8 +38,7 @@ trait AccessibleParagraphView
      with XAccessibleTextAttributes
 object AccessibleParagraphView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

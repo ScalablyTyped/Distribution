@@ -56,8 +56,7 @@ object mod {
   @js.native
   val classic: BoxStyle = js.native
   
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliBoxes */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof cliBoxes */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   		@example
@@ -138,8 +137,7 @@ object mod {
   }
   object BoxStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottomLeft: String,
       bottomRight: String,
       horizontal: String,
@@ -151,26 +149,19 @@ object mod {
       __obj.asInstanceOf[BoxStyle]
     }
     
-    @scala.inline
-    implicit class BoxStyleMutableBuilder[Self <: BoxStyle] (val x: Self) extends AnyVal {
+    extension [Self <: BoxStyle](x: Self) {
       
-      @scala.inline
-      def setBottomLeft(value: String): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
+      inline def setBottomLeft(value: String): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomRight(value: String): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
+      inline def setBottomRight(value: String): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopLeft(value: String): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
+      inline def setTopLeft(value: String): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopRight(value: String): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
+      inline def setTopRight(value: String): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,8 +242,7 @@ object mod {
   }
   object Boxes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bold: BoxStyle,
       classic: BoxStyle,
       double: BoxStyle,
@@ -265,29 +255,21 @@ object mod {
       __obj.asInstanceOf[Boxes]
     }
     
-    @scala.inline
-    implicit class BoxesMutableBuilder[Self <: Boxes] (val x: Self) extends AnyVal {
+    extension [Self <: Boxes](x: Self) {
       
-      @scala.inline
-      def setBold(value: BoxStyle): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+      inline def setBold(value: BoxStyle): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassic(value: BoxStyle): Self = StObject.set(x, "classic", value.asInstanceOf[js.Any])
+      inline def setClassic(value: BoxStyle): Self = StObject.set(x, "classic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDouble(value: BoxStyle): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
+      inline def setDouble(value: BoxStyle): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleSingle(value: BoxStyle): Self = StObject.set(x, "doubleSingle", value.asInstanceOf[js.Any])
+      inline def setDoubleSingle(value: BoxStyle): Self = StObject.set(x, "doubleSingle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRound(value: BoxStyle): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: BoxStyle): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingle(value: BoxStyle): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      inline def setSingle(value: BoxStyle): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleDouble(value: BoxStyle): Self = StObject.set(x, "singleDouble", value.asInstanceOf[js.Any])
+      inline def setSingleDouble(value: BoxStyle): Self = StObject.set(x, "singleDouble", value.asInstanceOf[js.Any])
     }
   }
 }

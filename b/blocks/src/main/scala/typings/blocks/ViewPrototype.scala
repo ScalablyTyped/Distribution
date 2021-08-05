@@ -49,61 +49,43 @@ trait ViewPrototype
 }
 object ViewPrototype {
   
-  @scala.inline
-  def apply(): ViewPrototype = {
+  inline def apply(): ViewPrototype = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewPrototype]
   }
   
-  @scala.inline
-  implicit class ViewPrototypeMutableBuilder[Self <: ViewPrototype] (val x: Self) extends AnyVal {
+  extension [Self <: ViewPrototype](x: Self) {
     
-    @scala.inline
-    def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
-    @scala.inline
-    def setNavigateTo(value: js.Function): Self = StObject.set(x, "navigateTo", value.asInstanceOf[js.Any])
+    inline def setNavigateTo(value: js.Function): Self = StObject.set(x, "navigateTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigateToUndefined: Self = StObject.set(x, "navigateTo", js.undefined)
+    inline def setNavigateToUndefined: Self = StObject.set(x, "navigateTo", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Route): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Route): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setParentView(value: js.Any): Self = StObject.set(x, "parentView", value.asInstanceOf[js.Any])
+    inline def setParentView(value: js.Any): Self = StObject.set(x, "parentView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentViewUndefined: Self = StObject.set(x, "parentView", js.undefined)
+    inline def setParentViewUndefined: Self = StObject.set(x, "parentView", js.undefined)
     
-    @scala.inline
-    def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
-    @scala.inline
-    def setRoute(value: /* name */ String => ViewPrototype): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
+    inline def setRoute(value: /* name */ String => ViewPrototype): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
-    @scala.inline
-    def setRouted(value: js.Function): Self = StObject.set(x, "routed", value.asInstanceOf[js.Any])
+    inline def setRouted(value: js.Function): Self = StObject.set(x, "routed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutedUndefined: Self = StObject.set(x, "routed", js.undefined)
+    inline def setRoutedUndefined: Self = StObject.set(x, "routed", js.undefined)
   }
 }

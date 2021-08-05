@@ -12,19 +12,15 @@ trait IExtraLib extends StObject {
 }
 object IExtraLib {
   
-  @scala.inline
-  def apply(content: String, version: Double): IExtraLib = {
+  inline def apply(content: String, version: Double): IExtraLib = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtraLib]
   }
   
-  @scala.inline
-  implicit class IExtraLibMutableBuilder[Self <: IExtraLib] (val x: Self) extends AnyVal {
+  extension [Self <: IExtraLib](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

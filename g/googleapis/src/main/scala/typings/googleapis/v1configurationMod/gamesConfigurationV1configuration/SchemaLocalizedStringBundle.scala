@@ -22,28 +22,21 @@ trait SchemaLocalizedStringBundle extends StObject {
 }
 object SchemaLocalizedStringBundle {
   
-  @scala.inline
-  def apply(): SchemaLocalizedStringBundle = {
+  inline def apply(): SchemaLocalizedStringBundle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocalizedStringBundle]
   }
   
-  @scala.inline
-  implicit class SchemaLocalizedStringBundleMutableBuilder[Self <: SchemaLocalizedStringBundle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocalizedStringBundle](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTranslations(value: js.Array[SchemaLocalizedString]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: js.Array[SchemaLocalizedString]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    @scala.inline
-    def setTranslationsVarargs(value: SchemaLocalizedString*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: SchemaLocalizedString*): Self = StObject.set(x, "translations", js.Array(value :_*))
   }
 }

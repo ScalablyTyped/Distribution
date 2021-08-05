@@ -26,37 +26,27 @@ trait GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest extends StObject {
 }
 object GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest = {
+  inline def apply(): GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2BatchUpdateEntityTypesRequestMutableBuilder[Self <: GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest](x: Self) {
     
-    @scala.inline
-    def setEntityTypeBatchInline(value: GoogleCloudDialogflowV2EntityTypeBatch): Self = StObject.set(x, "entityTypeBatchInline", value.asInstanceOf[js.Any])
+    inline def setEntityTypeBatchInline(value: GoogleCloudDialogflowV2EntityTypeBatch): Self = StObject.set(x, "entityTypeBatchInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeBatchInlineUndefined: Self = StObject.set(x, "entityTypeBatchInline", js.undefined)
+    inline def setEntityTypeBatchInlineUndefined: Self = StObject.set(x, "entityTypeBatchInline", js.undefined)
     
-    @scala.inline
-    def setEntityTypeBatchUri(value: String): Self = StObject.set(x, "entityTypeBatchUri", value.asInstanceOf[js.Any])
+    inline def setEntityTypeBatchUri(value: String): Self = StObject.set(x, "entityTypeBatchUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeBatchUriUndefined: Self = StObject.set(x, "entityTypeBatchUri", js.undefined)
+    inline def setEntityTypeBatchUriUndefined: Self = StObject.set(x, "entityTypeBatchUri", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

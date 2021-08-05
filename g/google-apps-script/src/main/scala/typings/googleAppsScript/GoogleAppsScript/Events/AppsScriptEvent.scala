@@ -17,22 +17,17 @@ trait AppsScriptEvent extends StObject {
 }
 object AppsScriptEvent {
   
-  @scala.inline
-  def apply(authMode: AuthMode, triggerUid: String, user: User): AppsScriptEvent = {
+  inline def apply(authMode: AuthMode, triggerUid: String, user: User): AppsScriptEvent = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsScriptEvent]
   }
   
-  @scala.inline
-  implicit class AppsScriptEventMutableBuilder[Self <: AppsScriptEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AppsScriptEvent](x: Self) {
     
-    @scala.inline
-    def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+    inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUid(value: String): Self = StObject.set(x, "triggerUid", value.asInstanceOf[js.Any])
+    inline def setTriggerUid(value: String): Self = StObject.set(x, "triggerUid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

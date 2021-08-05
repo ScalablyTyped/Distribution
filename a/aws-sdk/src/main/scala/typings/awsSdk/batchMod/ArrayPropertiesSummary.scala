@@ -18,25 +18,19 @@ trait ArrayPropertiesSummary extends StObject {
 }
 object ArrayPropertiesSummary {
   
-  @scala.inline
-  def apply(): ArrayPropertiesSummary = {
+  inline def apply(): ArrayPropertiesSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrayPropertiesSummary]
   }
   
-  @scala.inline
-  implicit class ArrayPropertiesSummaryMutableBuilder[Self <: ArrayPropertiesSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayPropertiesSummary](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

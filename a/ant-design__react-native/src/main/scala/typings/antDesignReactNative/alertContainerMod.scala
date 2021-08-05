@@ -40,44 +40,32 @@ object alertContainerMod {
   }
   object AlertContainerProps {
     
-    @scala.inline
-    def apply(actions: js.Array[Action[TextStyle]]): AlertContainerProps = {
+    inline def apply(actions: js.Array[Action[TextStyle]]): AlertContainerProps = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlertContainerProps]
     }
     
-    @scala.inline
-    implicit class AlertContainerPropsMutableBuilder[Self <: AlertContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlertContainerProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action[TextStyle]*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setOnAnimationEnd(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+      inline def setOnAnimationEnd(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
+      inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
       
-      @scala.inline
-      def setOnBackHandler(value: () => Boolean): Self = StObject.set(x, "onBackHandler", js.Any.fromFunction0(value))
+      inline def setOnBackHandler(value: () => Boolean): Self = StObject.set(x, "onBackHandler", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnBackHandlerUndefined: Self = StObject.set(x, "onBackHandler", js.undefined)
+      inline def setOnBackHandlerUndefined: Self = StObject.set(x, "onBackHandler", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

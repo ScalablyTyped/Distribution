@@ -10,6 +10,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def raf(h: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("raf")(h.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def raf(h: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("raf")(h.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

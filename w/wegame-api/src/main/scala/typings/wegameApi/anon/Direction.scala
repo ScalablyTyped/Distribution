@@ -10,16 +10,13 @@ trait Direction extends StObject {
 }
 object Direction {
   
-  @scala.inline
-  def apply(direction: Double): Direction = {
+  inline def apply(direction: Double): Direction = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Direction]
   }
   
-  @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+  extension [Self <: Direction](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBorderCollapse extends StObject
 object styleBorderCollapse {
   
-  @scala.inline
-  def styleBorderCollapseCollapse: `2` = 2.asInstanceOf[`2`]
+  inline def styleBorderCollapseCollapse: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBorderCollapseNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleBorderCollapseNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBorderCollapseSeparate: `1` = 1.asInstanceOf[`1`]
+  inline def styleBorderCollapseSeparate: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBorderCollapse_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBorderCollapse_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

@@ -20,19 +20,15 @@ trait IntercomStatic extends StObject {
 }
 object IntercomStatic {
   
-  @scala.inline
-  def apply(destroy: () => Unit, getInstance: () => Intercom): IntercomStatic = {
+  inline def apply(destroy: () => Unit, getInstance: () => Intercom): IntercomStatic = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getInstance = js.Any.fromFunction0(getInstance))
     __obj.asInstanceOf[IntercomStatic]
   }
   
-  @scala.inline
-  implicit class IntercomStaticMutableBuilder[Self <: IntercomStatic] (val x: Self) extends AnyVal {
+  extension [Self <: IntercomStatic](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInstance(value: () => Intercom): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
+    inline def setGetInstance(value: () => Intercom): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
   }
 }

@@ -13,38 +13,32 @@ object contentSettings {
   @JSImport("sinon-chrome", "contentSettings.cookies")
   @js.native
   def cookies: StubbedContentSetting = js.native
-  @scala.inline
-  def cookies_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookies")(x.asInstanceOf[js.Any])
+  inline def cookies_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookies")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "contentSettings.images")
   @js.native
   def images: StubbedContentSetting = js.native
-  @scala.inline
-  def images_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
+  inline def images_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "contentSettings.javascript")
   @js.native
   def javascript: StubbedContentSetting = js.native
-  @scala.inline
-  def javascript_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("javascript")(x.asInstanceOf[js.Any])
+  inline def javascript_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("javascript")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "contentSettings.notifications")
   @js.native
   def notifications: StubbedContentSetting = js.native
-  @scala.inline
-  def notifications_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notifications")(x.asInstanceOf[js.Any])
+  inline def notifications_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notifications")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "contentSettings.plugins")
   @js.native
   def plugins: StubbedContentSetting = js.native
-  @scala.inline
-  def plugins_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
+  inline def plugins_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "contentSettings.popups")
   @js.native
   def popups: StubbedContentSetting = js.native
-  @scala.inline
-  def popups_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popups")(x.asInstanceOf[js.Any])
+  inline def popups_=(x: StubbedContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popups")(x.asInstanceOf[js.Any])
   
   trait StubbedContentSetting extends StObject {
     
@@ -79,8 +73,7 @@ object contentSettings {
   }
   object StubbedContentSetting {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: SinonChromeStub,
       get: SinonChromeStub,
       getResourceIdentifiers: SinonChromeStub,
@@ -90,20 +83,15 @@ object contentSettings {
       __obj.asInstanceOf[StubbedContentSetting]
     }
     
-    @scala.inline
-    implicit class StubbedContentSettingMutableBuilder[Self <: StubbedContentSetting] (val x: Self) extends AnyVal {
+    extension [Self <: StubbedContentSetting](x: Self) {
       
-      @scala.inline
-      def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: SinonChromeStub): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: SinonChromeStub): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetResourceIdentifiers(value: SinonChromeStub): Self = StObject.set(x, "getResourceIdentifiers", value.asInstanceOf[js.Any])
+      inline def setGetResourceIdentifiers(value: SinonChromeStub): Self = StObject.set(x, "getResourceIdentifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: SinonChromeStub): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: SinonChromeStub): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     }
   }
 }

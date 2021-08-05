@@ -23,25 +23,19 @@ trait TargetPlatform extends StObject {
 }
 object TargetPlatform {
   
-  @scala.inline
-  def apply(Arch: TargetPlatformArch, Os: TargetPlatformOs): TargetPlatform = {
+  inline def apply(Arch: TargetPlatformArch, Os: TargetPlatformOs): TargetPlatform = {
     val __obj = js.Dynamic.literal(Arch = Arch.asInstanceOf[js.Any], Os = Os.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetPlatform]
   }
   
-  @scala.inline
-  implicit class TargetPlatformMutableBuilder[Self <: TargetPlatform] (val x: Self) extends AnyVal {
+  extension [Self <: TargetPlatform](x: Self) {
     
-    @scala.inline
-    def setAccelerator(value: TargetPlatformAccelerator): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
+    inline def setAccelerator(value: TargetPlatformAccelerator): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorUndefined: Self = StObject.set(x, "Accelerator", js.undefined)
+    inline def setAcceleratorUndefined: Self = StObject.set(x, "Accelerator", js.undefined)
     
-    @scala.inline
-    def setArch(value: TargetPlatformArch): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
+    inline def setArch(value: TargetPlatformArch): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: TargetPlatformOs): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
+    inline def setOs(value: TargetPlatformOs): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
   }
 }

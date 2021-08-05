@@ -23,37 +23,27 @@ trait MetricValue extends StObject {
 }
 object MetricValue {
   
-  @scala.inline
-  def apply(): MetricValue = {
+  inline def apply(): MetricValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricValue]
   }
   
-  @scala.inline
-  implicit class MetricValueMutableBuilder[Self <: MetricValue] (val x: Self) extends AnyVal {
+  extension [Self <: MetricValue](x: Self) {
     
-    @scala.inline
-    def setCidrs(value: Cidrs): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
+    inline def setCidrs(value: Cidrs): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrsUndefined: Self = StObject.set(x, "cidrs", js.undefined)
+    inline def setCidrsUndefined: Self = StObject.set(x, "cidrs", js.undefined)
     
-    @scala.inline
-    def setCidrsVarargs(value: Cidr*): Self = StObject.set(x, "cidrs", js.Array(value :_*))
+    inline def setCidrsVarargs(value: Cidr*): Self = StObject.set(x, "cidrs", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: UnsignedLong): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: UnsignedLong): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setPorts(value: Ports): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: Ports): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: Port*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Port*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

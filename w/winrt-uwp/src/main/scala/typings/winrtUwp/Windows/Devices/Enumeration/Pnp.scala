@@ -96,8 +96,7 @@ object Pnp {
   }
   object PnpObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       properties: IMapView[String, js.Any],
       `type`: PnpObjectType,
@@ -108,20 +107,15 @@ object Pnp {
       __obj.asInstanceOf[PnpObject]
     }
     
-    @scala.inline
-    implicit class PnpObjectMutableBuilder[Self <: PnpObject] (val x: Self) extends AnyVal {
+    extension [Self <: PnpObject](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: PnpObjectUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: PnpObjectUpdate => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -173,24 +167,19 @@ object Pnp {
   }
   object PnpObjectUpdate {
     
-    @scala.inline
-    def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): PnpObjectUpdate = {
+    inline def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): PnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PnpObjectUpdate]
     }
     
-    @scala.inline
-    implicit class PnpObjectUpdateMutableBuilder[Self <: PnpObjectUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: PnpObjectUpdate](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

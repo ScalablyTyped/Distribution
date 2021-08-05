@@ -60,8 +60,7 @@ object Power {
   }
   object BatteryReport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       chargeRateInMilliwatts: Double,
       designCapacityInMilliwattHours: Double,
       fullChargeCapacityInMilliwattHours: Double,
@@ -72,23 +71,17 @@ object Power {
       __obj.asInstanceOf[BatteryReport]
     }
     
-    @scala.inline
-    implicit class BatteryReportMutableBuilder[Self <: BatteryReport] (val x: Self) extends AnyVal {
+    extension [Self <: BatteryReport](x: Self) {
       
-      @scala.inline
-      def setChargeRateInMilliwatts(value: Double): Self = StObject.set(x, "chargeRateInMilliwatts", value.asInstanceOf[js.Any])
+      inline def setChargeRateInMilliwatts(value: Double): Self = StObject.set(x, "chargeRateInMilliwatts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesignCapacityInMilliwattHours(value: Double): Self = StObject.set(x, "designCapacityInMilliwattHours", value.asInstanceOf[js.Any])
+      inline def setDesignCapacityInMilliwattHours(value: Double): Self = StObject.set(x, "designCapacityInMilliwattHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullChargeCapacityInMilliwattHours(value: Double): Self = StObject.set(x, "fullChargeCapacityInMilliwattHours", value.asInstanceOf[js.Any])
+      inline def setFullChargeCapacityInMilliwattHours(value: Double): Self = StObject.set(x, "fullChargeCapacityInMilliwattHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemainingCapacityInMilliwattHours(value: Double): Self = StObject.set(x, "remainingCapacityInMilliwattHours", value.asInstanceOf[js.Any])
+      inline def setRemainingCapacityInMilliwattHours(value: Double): Self = StObject.set(x, "remainingCapacityInMilliwattHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: BatteryStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: BatteryStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,31 +23,23 @@ trait GetStorageInfoOptions extends StObject {
 }
 object GetStorageInfoOptions {
   
-  @scala.inline
-  def apply(): GetStorageInfoOptions = {
+  inline def apply(): GetStorageInfoOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStorageInfoOptions]
   }
   
-  @scala.inline
-  implicit class GetStorageInfoOptionsMutableBuilder[Self <: GetStorageInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageInfoOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* result */ GetStorageInfoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ GetStorageInfoSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -32,34 +32,25 @@ trait CustomContentProperties
 }
 object CustomContentProperties {
   
-  @scala.inline
-  def apply(): CustomContentProperties = {
+  inline def apply(): CustomContentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomContentProperties]
   }
   
-  @scala.inline
-  implicit class CustomContentPropertiesMutableBuilder[Self <: CustomContentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CustomContentProperties](x: Self) {
     
-    @scala.inline
-    def setCreator(value: /* graphic */ Graphic => String | HTMLElement | Widget_ | js.Promise[js.Any]): Self = StObject.set(x, "creator", js.Any.fromFunction1(value))
+    inline def setCreator(value: /* graphic */ Graphic => String | HTMLElement | Widget_ | js.Promise[js.Any]): Self = StObject.set(x, "creator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    @scala.inline
-    def setDestroyer(value: /* graphic */ Graphic => Unit): Self = StObject.set(x, "destroyer", js.Any.fromFunction1(value))
+    inline def setDestroyer(value: /* graphic */ Graphic => Unit): Self = StObject.set(x, "destroyer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyerUndefined: Self = StObject.set(x, "destroyer", js.undefined)
+    inline def setDestroyerUndefined: Self = StObject.set(x, "destroyer", js.undefined)
     
-    @scala.inline
-    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
   }
 }

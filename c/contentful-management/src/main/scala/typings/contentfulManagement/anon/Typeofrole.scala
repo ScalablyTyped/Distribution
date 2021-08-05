@@ -17,8 +17,7 @@ trait Typeofrole extends StObject {
 }
 object Typeofrole {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapRole: (AxiosInstance, RoleProps) => Role,
     wrapRoleCollection: (AxiosInstance, CollectionProp[RoleProps]) => Collection[Role, RoleProps]
   ): Typeofrole = {
@@ -26,13 +25,10 @@ object Typeofrole {
     __obj.asInstanceOf[Typeofrole]
   }
   
-  @scala.inline
-  implicit class TypeofroleMutableBuilder[Self <: Typeofrole] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofrole](x: Self) {
     
-    @scala.inline
-    def setWrapRole(value: (AxiosInstance, RoleProps) => Role): Self = StObject.set(x, "wrapRole", js.Any.fromFunction2(value))
+    inline def setWrapRole(value: (AxiosInstance, RoleProps) => Role): Self = StObject.set(x, "wrapRole", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapRoleCollection(value: (AxiosInstance, CollectionProp[RoleProps]) => Collection[Role, RoleProps]): Self = StObject.set(x, "wrapRoleCollection", js.Any.fromFunction2(value))
+    inline def setWrapRoleCollection(value: (AxiosInstance, CollectionProp[RoleProps]) => Collection[Role, RoleProps]): Self = StObject.set(x, "wrapRoleCollection", js.Any.fromFunction2(value))
   }
 }

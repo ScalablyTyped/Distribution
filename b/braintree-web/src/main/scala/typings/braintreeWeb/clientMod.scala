@@ -96,23 +96,18 @@ object clientMod {
   }
   object ClientAnalyticsMetadata {
     
-    @scala.inline
-    def apply(merchantAppId: String, sdkVersion: String, sessionId: String): ClientAnalyticsMetadata = {
+    inline def apply(merchantAppId: String, sdkVersion: String, sessionId: String): ClientAnalyticsMetadata = {
       val __obj = js.Dynamic.literal(merchantAppId = merchantAppId.asInstanceOf[js.Any], sdkVersion = sdkVersion.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientAnalyticsMetadata]
     }
     
-    @scala.inline
-    implicit class ClientAnalyticsMetadataMutableBuilder[Self <: ClientAnalyticsMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ClientAnalyticsMetadata](x: Self) {
       
-      @scala.inline
-      def setMerchantAppId(value: String): Self = StObject.set(x, "merchantAppId", value.asInstanceOf[js.Any])
+      inline def setMerchantAppId(value: String): Self = StObject.set(x, "merchantAppId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+      inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+      inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,23 +121,18 @@ object clientMod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(analyticsMetadata: ClientAnalyticsMetadata, client: Client, gatewayConfiguration: js.Any): Configuration = {
+    inline def apply(analyticsMetadata: ClientAnalyticsMetadata, client: Client, gatewayConfiguration: js.Any): Configuration = {
       val __obj = js.Dynamic.literal(analyticsMetadata = analyticsMetadata.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], gatewayConfiguration = gatewayConfiguration.asInstanceOf[js.Any])
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setAnalyticsMetadata(value: ClientAnalyticsMetadata): Self = StObject.set(x, "analyticsMetadata", value.asInstanceOf[js.Any])
+      inline def setAnalyticsMetadata(value: ClientAnalyticsMetadata): Self = StObject.set(x, "analyticsMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayConfiguration(value: js.Any): Self = StObject.set(x, "gatewayConfiguration", value.asInstanceOf[js.Any])
+      inline def setGatewayConfiguration(value: js.Any): Self = StObject.set(x, "gatewayConfiguration", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,26 +148,20 @@ object clientMod {
   }
   object CreditCardInfo {
     
-    @scala.inline
-    def apply(billingAddress: PostalCode, cvv: String, expirationDate: String, number: String): CreditCardInfo = {
+    inline def apply(billingAddress: PostalCode, cvv: String, expirationDate: String, number: String): CreditCardInfo = {
       val __obj = js.Dynamic.literal(billingAddress = billingAddress.asInstanceOf[js.Any], cvv = cvv.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreditCardInfo]
     }
     
-    @scala.inline
-    implicit class CreditCardInfoMutableBuilder[Self <: CreditCardInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CreditCardInfo](x: Self) {
       
-      @scala.inline
-      def setBillingAddress(value: PostalCode): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+      inline def setBillingAddress(value: PostalCode): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+      inline def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
   }
 }

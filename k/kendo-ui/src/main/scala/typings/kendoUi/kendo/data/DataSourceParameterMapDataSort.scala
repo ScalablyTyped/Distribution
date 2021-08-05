@@ -12,25 +12,19 @@ trait DataSourceParameterMapDataSort extends StObject {
 }
 object DataSourceParameterMapDataSort {
   
-  @scala.inline
-  def apply(): DataSourceParameterMapDataSort = {
+  inline def apply(): DataSourceParameterMapDataSort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceParameterMapDataSort]
   }
   
-  @scala.inline
-  implicit class DataSourceParameterMapDataSortMutableBuilder[Self <: DataSourceParameterMapDataSort] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceParameterMapDataSort](x: Self) {
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

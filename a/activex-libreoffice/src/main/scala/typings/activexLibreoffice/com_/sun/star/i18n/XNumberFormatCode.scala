@@ -43,8 +43,7 @@ trait XNumberFormatCode
 }
 object XNumberFormatCode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getAllFormatCode: (Double, Locale) => SafeArray[NumberFormatCode],
     getAllFormatCodes: Locale => SafeArray[NumberFormatCode],
@@ -57,19 +56,14 @@ object XNumberFormatCode {
     __obj.asInstanceOf[XNumberFormatCode]
   }
   
-  @scala.inline
-  implicit class XNumberFormatCodeMutableBuilder[Self <: XNumberFormatCode] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberFormatCode](x: Self) {
     
-    @scala.inline
-    def setGetAllFormatCode(value: (Double, Locale) => SafeArray[NumberFormatCode]): Self = StObject.set(x, "getAllFormatCode", js.Any.fromFunction2(value))
+    inline def setGetAllFormatCode(value: (Double, Locale) => SafeArray[NumberFormatCode]): Self = StObject.set(x, "getAllFormatCode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAllFormatCodes(value: Locale => SafeArray[NumberFormatCode]): Self = StObject.set(x, "getAllFormatCodes", js.Any.fromFunction1(value))
+    inline def setGetAllFormatCodes(value: Locale => SafeArray[NumberFormatCode]): Self = StObject.set(x, "getAllFormatCodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefault(value: (Double, Double, Locale) => NumberFormatCode): Self = StObject.set(x, "getDefault", js.Any.fromFunction3(value))
+    inline def setGetDefault(value: (Double, Double, Locale) => NumberFormatCode): Self = StObject.set(x, "getDefault", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetFormatCode(value: (Double, Locale) => NumberFormatCode): Self = StObject.set(x, "getFormatCode", js.Any.fromFunction2(value))
+    inline def setGetFormatCode(value: (Double, Locale) => NumberFormatCode): Self = StObject.set(x, "getFormatCode", js.Any.fromFunction2(value))
   }
 }

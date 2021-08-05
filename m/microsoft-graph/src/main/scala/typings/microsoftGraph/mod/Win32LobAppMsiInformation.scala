@@ -29,70 +29,49 @@ trait Win32LobAppMsiInformation extends StObject {
 }
 object Win32LobAppMsiInformation {
   
-  @scala.inline
-  def apply(): Win32LobAppMsiInformation = {
+  inline def apply(): Win32LobAppMsiInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Win32LobAppMsiInformation]
   }
   
-  @scala.inline
-  implicit class Win32LobAppMsiInformationMutableBuilder[Self <: Win32LobAppMsiInformation] (val x: Self) extends AnyVal {
+  extension [Self <: Win32LobAppMsiInformation](x: Self) {
     
-    @scala.inline
-    def setPackageType(value: Win32LobAppMsiPackageType): Self = StObject.set(x, "packageType", value.asInstanceOf[js.Any])
+    inline def setPackageType(value: Win32LobAppMsiPackageType): Self = StObject.set(x, "packageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageTypeUndefined: Self = StObject.set(x, "packageType", js.undefined)
+    inline def setPackageTypeUndefined: Self = StObject.set(x, "packageType", js.undefined)
     
-    @scala.inline
-    def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodeNull: Self = StObject.set(x, "productCode", null)
+    inline def setProductCodeNull: Self = StObject.set(x, "productCode", null)
     
-    @scala.inline
-    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
+    inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
-    @scala.inline
-    def setProductName(value: NullableOption[String]): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+    inline def setProductName(value: NullableOption[String]): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNameNull: Self = StObject.set(x, "productName", null)
+    inline def setProductNameNull: Self = StObject.set(x, "productName", null)
     
-    @scala.inline
-    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+    inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
-    @scala.inline
-    def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
+    inline def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
+    inline def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
     
-    @scala.inline
-    def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
+    inline def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
     
-    @scala.inline
-    def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherNull: Self = StObject.set(x, "publisher", null)
+    inline def setPublisherNull: Self = StObject.set(x, "publisher", null)
     
-    @scala.inline
-    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
-    @scala.inline
-    def setRequiresReboot(value: Boolean): Self = StObject.set(x, "requiresReboot", value.asInstanceOf[js.Any])
+    inline def setRequiresReboot(value: Boolean): Self = StObject.set(x, "requiresReboot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresRebootUndefined: Self = StObject.set(x, "requiresReboot", js.undefined)
+    inline def setRequiresRebootUndefined: Self = StObject.set(x, "requiresReboot", js.undefined)
     
-    @scala.inline
-    def setUpgradeCode(value: NullableOption[String]): Self = StObject.set(x, "upgradeCode", value.asInstanceOf[js.Any])
+    inline def setUpgradeCode(value: NullableOption[String]): Self = StObject.set(x, "upgradeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeCodeNull: Self = StObject.set(x, "upgradeCode", null)
+    inline def setUpgradeCodeNull: Self = StObject.set(x, "upgradeCode", null)
     
-    @scala.inline
-    def setUpgradeCodeUndefined: Self = StObject.set(x, "upgradeCode", js.undefined)
+    inline def setUpgradeCodeUndefined: Self = StObject.set(x, "upgradeCode", js.undefined)
   }
 }

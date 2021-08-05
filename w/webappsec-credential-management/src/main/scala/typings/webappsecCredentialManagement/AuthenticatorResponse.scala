@@ -14,16 +14,13 @@ trait AuthenticatorResponse extends StObject {
 }
 object AuthenticatorResponse {
   
-  @scala.inline
-  def apply(clientDataJSON: ArrayBuffer): AuthenticatorResponse = {
+  inline def apply(clientDataJSON: ArrayBuffer): AuthenticatorResponse = {
     val __obj = js.Dynamic.literal(clientDataJSON = clientDataJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticatorResponse]
   }
   
-  @scala.inline
-  implicit class AuthenticatorResponseMutableBuilder[Self <: AuthenticatorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticatorResponse](x: Self) {
     
-    @scala.inline
-    def setClientDataJSON(value: ArrayBuffer): Self = StObject.set(x, "clientDataJSON", value.asInstanceOf[js.Any])
+    inline def setClientDataJSON(value: ArrayBuffer): Self = StObject.set(x, "clientDataJSON", value.asInstanceOf[js.Any])
   }
 }

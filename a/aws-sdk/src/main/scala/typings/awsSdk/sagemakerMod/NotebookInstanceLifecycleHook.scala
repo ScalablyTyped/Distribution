@@ -13,19 +13,15 @@ trait NotebookInstanceLifecycleHook extends StObject {
 }
 object NotebookInstanceLifecycleHook {
   
-  @scala.inline
-  def apply(): NotebookInstanceLifecycleHook = {
+  inline def apply(): NotebookInstanceLifecycleHook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotebookInstanceLifecycleHook]
   }
   
-  @scala.inline
-  implicit class NotebookInstanceLifecycleHookMutableBuilder[Self <: NotebookInstanceLifecycleHook] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookInstanceLifecycleHook](x: Self) {
     
-    @scala.inline
-    def setContent(value: NotebookInstanceLifecycleConfigContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NotebookInstanceLifecycleConfigContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
   }
 }

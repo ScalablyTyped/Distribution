@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern]): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(inputStylesheet: String, ignorePattern: Pattern): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(inputStylesheet: String, ignorePattern: Pattern, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern]): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(inputStylesheet: String, ignorePattern: js.Array[Pattern], options: Options): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(inputStylesheet: String, ignorePattern: Pattern): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(inputStylesheet: String, ignorePattern: Pattern, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(inputStylesheet.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("filter-css", JSImport.Namespace)
   @js.native
@@ -33,20 +29,15 @@ object mod {
   trait Context extends StObject
   object Context {
     
-    @scala.inline
-    def declarationProperty: typings.filterCss.filterCssStrings.declarationProperty = "declarationProperty".asInstanceOf[typings.filterCss.filterCssStrings.declarationProperty]
+    inline def declarationProperty: typings.filterCss.filterCssStrings.declarationProperty = "declarationProperty".asInstanceOf[typings.filterCss.filterCssStrings.declarationProperty]
     
-    @scala.inline
-    def declarationValue: typings.filterCss.filterCssStrings.declarationValue = "declarationValue".asInstanceOf[typings.filterCss.filterCssStrings.declarationValue]
+    inline def declarationValue: typings.filterCss.filterCssStrings.declarationValue = "declarationValue".asInstanceOf[typings.filterCss.filterCssStrings.declarationValue]
     
-    @scala.inline
-    def media: typings.filterCss.filterCssStrings.media = "media".asInstanceOf[typings.filterCss.filterCssStrings.media]
+    inline def media: typings.filterCss.filterCssStrings.media = "media".asInstanceOf[typings.filterCss.filterCssStrings.media]
     
-    @scala.inline
-    def selector: typings.filterCss.filterCssStrings.selector = "selector".asInstanceOf[typings.filterCss.filterCssStrings.selector]
+    inline def selector: typings.filterCss.filterCssStrings.selector = "selector".asInstanceOf[typings.filterCss.filterCssStrings.selector]
     
-    @scala.inline
-    def `type`: typings.filterCss.filterCssStrings.`type` = "type".asInstanceOf[typings.filterCss.filterCssStrings.`type`]
+    inline def `type`: typings.filterCss.filterCssStrings.`type` = "type".asInstanceOf[typings.filterCss.filterCssStrings.`type`]
   }
   
   trait Options extends StObject {
@@ -83,44 +74,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMatchDeclarationProperties(value: Boolean): Self = StObject.set(x, "matchDeclarationProperties", value.asInstanceOf[js.Any])
+      inline def setMatchDeclarationProperties(value: Boolean): Self = StObject.set(x, "matchDeclarationProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchDeclarationPropertiesUndefined: Self = StObject.set(x, "matchDeclarationProperties", js.undefined)
+      inline def setMatchDeclarationPropertiesUndefined: Self = StObject.set(x, "matchDeclarationProperties", js.undefined)
       
-      @scala.inline
-      def setMatchDeclarationValues(value: Boolean): Self = StObject.set(x, "matchDeclarationValues", value.asInstanceOf[js.Any])
+      inline def setMatchDeclarationValues(value: Boolean): Self = StObject.set(x, "matchDeclarationValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchDeclarationValuesUndefined: Self = StObject.set(x, "matchDeclarationValues", js.undefined)
+      inline def setMatchDeclarationValuesUndefined: Self = StObject.set(x, "matchDeclarationValues", js.undefined)
       
-      @scala.inline
-      def setMatchMedia(value: Boolean): Self = StObject.set(x, "matchMedia", value.asInstanceOf[js.Any])
+      inline def setMatchMedia(value: Boolean): Self = StObject.set(x, "matchMedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchMediaUndefined: Self = StObject.set(x, "matchMedia", js.undefined)
+      inline def setMatchMediaUndefined: Self = StObject.set(x, "matchMedia", js.undefined)
       
-      @scala.inline
-      def setMatchSelectors(value: Boolean): Self = StObject.set(x, "matchSelectors", value.asInstanceOf[js.Any])
+      inline def setMatchSelectors(value: Boolean): Self = StObject.set(x, "matchSelectors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchSelectorsUndefined: Self = StObject.set(x, "matchSelectors", js.undefined)
+      inline def setMatchSelectorsUndefined: Self = StObject.set(x, "matchSelectors", js.undefined)
       
-      @scala.inline
-      def setMatchTypes(value: Boolean): Self = StObject.set(x, "matchTypes", value.asInstanceOf[js.Any])
+      inline def setMatchTypes(value: Boolean): Self = StObject.set(x, "matchTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchTypesUndefined: Self = StObject.set(x, "matchTypes", js.undefined)
+      inline def setMatchTypesUndefined: Self = StObject.set(x, "matchTypes", js.undefined)
     }
   }
   

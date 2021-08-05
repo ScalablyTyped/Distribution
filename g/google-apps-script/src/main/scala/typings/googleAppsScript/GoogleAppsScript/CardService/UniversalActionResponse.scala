@@ -30,16 +30,13 @@ trait UniversalActionResponse extends StObject {
 }
 object UniversalActionResponse {
   
-  @scala.inline
-  def apply(printJson: () => String): UniversalActionResponse = {
+  inline def apply(printJson: () => String): UniversalActionResponse = {
     val __obj = js.Dynamic.literal(printJson = js.Any.fromFunction0(printJson))
     __obj.asInstanceOf[UniversalActionResponse]
   }
   
-  @scala.inline
-  implicit class UniversalActionResponseMutableBuilder[Self <: UniversalActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UniversalActionResponse](x: Self) {
     
-    @scala.inline
-    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
+    inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

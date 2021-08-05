@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DayLayoutAlgorithm extends StObject
 object DayLayoutAlgorithm {
   
-  @scala.inline
-  def `no-overlap`: typings.reactBigCalendar.reactBigCalendarStrings.`no-overlap` = "no-overlap".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.`no-overlap`]
+  inline def `no-overlap`: typings.reactBigCalendar.reactBigCalendarStrings.`no-overlap` = "no-overlap".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.`no-overlap`]
   
-  @scala.inline
-  def overlap: typings.reactBigCalendar.reactBigCalendarStrings.overlap = "overlap".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.overlap]
+  inline def overlap: typings.reactBigCalendar.reactBigCalendarStrings.overlap = "overlap".asInstanceOf[typings.reactBigCalendar.reactBigCalendarStrings.overlap]
 }

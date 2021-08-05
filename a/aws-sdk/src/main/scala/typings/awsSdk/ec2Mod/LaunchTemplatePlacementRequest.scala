@@ -48,61 +48,43 @@ trait LaunchTemplatePlacementRequest extends StObject {
 }
 object LaunchTemplatePlacementRequest {
   
-  @scala.inline
-  def apply(): LaunchTemplatePlacementRequest = {
+  inline def apply(): LaunchTemplatePlacementRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplatePlacementRequest]
   }
   
-  @scala.inline
-  implicit class LaunchTemplatePlacementRequestMutableBuilder[Self <: LaunchTemplatePlacementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplatePlacementRequest](x: Self) {
     
-    @scala.inline
-    def setAffinity(value: String): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
+    inline def setAffinity(value: String): Self = StObject.set(x, "Affinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffinityUndefined: Self = StObject.set(x, "Affinity", js.undefined)
+    inline def setAffinityUndefined: Self = StObject.set(x, "Affinity", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setHostId(value: DedicatedHostId): Self = StObject.set(x, "HostId", value.asInstanceOf[js.Any])
+    inline def setHostId(value: DedicatedHostId): Self = StObject.set(x, "HostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIdUndefined: Self = StObject.set(x, "HostId", js.undefined)
+    inline def setHostIdUndefined: Self = StObject.set(x, "HostId", js.undefined)
     
-    @scala.inline
-    def setHostResourceGroupArn(value: String): Self = StObject.set(x, "HostResourceGroupArn", value.asInstanceOf[js.Any])
+    inline def setHostResourceGroupArn(value: String): Self = StObject.set(x, "HostResourceGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostResourceGroupArnUndefined: Self = StObject.set(x, "HostResourceGroupArn", js.undefined)
+    inline def setHostResourceGroupArnUndefined: Self = StObject.set(x, "HostResourceGroupArn", js.undefined)
     
-    @scala.inline
-    def setPartitionNumber(value: Integer): Self = StObject.set(x, "PartitionNumber", value.asInstanceOf[js.Any])
+    inline def setPartitionNumber(value: Integer): Self = StObject.set(x, "PartitionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionNumberUndefined: Self = StObject.set(x, "PartitionNumber", js.undefined)
+    inline def setPartitionNumberUndefined: Self = StObject.set(x, "PartitionNumber", js.undefined)
     
-    @scala.inline
-    def setSpreadDomain(value: String): Self = StObject.set(x, "SpreadDomain", value.asInstanceOf[js.Any])
+    inline def setSpreadDomain(value: String): Self = StObject.set(x, "SpreadDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadDomainUndefined: Self = StObject.set(x, "SpreadDomain", js.undefined)
+    inline def setSpreadDomainUndefined: Self = StObject.set(x, "SpreadDomain", js.undefined)
     
-    @scala.inline
-    def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
+    inline def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
+    inline def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait HierarchyFolderContent
      with XContentCreator
 object HierarchyFolderContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     Parent: XInterface,

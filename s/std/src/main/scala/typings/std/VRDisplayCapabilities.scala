@@ -19,8 +19,7 @@ trait VRDisplayCapabilities extends StObject {
 }
 object VRDisplayCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canPresent: scala.Boolean,
     hasExternalDisplay: scala.Boolean,
     hasOrientation: scala.Boolean,
@@ -31,22 +30,16 @@ object VRDisplayCapabilities {
     __obj.asInstanceOf[VRDisplayCapabilities]
   }
   
-  @scala.inline
-  implicit class VRDisplayCapabilitiesMutableBuilder[Self <: VRDisplayCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: VRDisplayCapabilities](x: Self) {
     
-    @scala.inline
-    def setCanPresent(value: scala.Boolean): Self = StObject.set(x, "canPresent", value.asInstanceOf[js.Any])
+    inline def setCanPresent(value: scala.Boolean): Self = StObject.set(x, "canPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasExternalDisplay(value: scala.Boolean): Self = StObject.set(x, "hasExternalDisplay", value.asInstanceOf[js.Any])
+    inline def setHasExternalDisplay(value: scala.Boolean): Self = StObject.set(x, "hasExternalDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasOrientation(value: scala.Boolean): Self = StObject.set(x, "hasOrientation", value.asInstanceOf[js.Any])
+    inline def setHasOrientation(value: scala.Boolean): Self = StObject.set(x, "hasOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPosition(value: scala.Boolean): Self = StObject.set(x, "hasPosition", value.asInstanceOf[js.Any])
+    inline def setHasPosition(value: scala.Boolean): Self = StObject.set(x, "hasPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLayers(value: Double): Self = StObject.set(x, "maxLayers", value.asInstanceOf[js.Any])
+    inline def setMaxLayers(value: Double): Self = StObject.set(x, "maxLayers", value.asInstanceOf[js.Any])
   }
 }

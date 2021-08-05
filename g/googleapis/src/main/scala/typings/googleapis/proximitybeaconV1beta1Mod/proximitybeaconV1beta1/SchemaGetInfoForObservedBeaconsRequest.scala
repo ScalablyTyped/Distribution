@@ -26,31 +26,23 @@ trait SchemaGetInfoForObservedBeaconsRequest extends StObject {
 }
 object SchemaGetInfoForObservedBeaconsRequest {
   
-  @scala.inline
-  def apply(): SchemaGetInfoForObservedBeaconsRequest = {
+  inline def apply(): SchemaGetInfoForObservedBeaconsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetInfoForObservedBeaconsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGetInfoForObservedBeaconsRequestMutableBuilder[Self <: SchemaGetInfoForObservedBeaconsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetInfoForObservedBeaconsRequest](x: Self) {
     
-    @scala.inline
-    def setNamespacedTypes(value: js.Array[String]): Self = StObject.set(x, "namespacedTypes", value.asInstanceOf[js.Any])
+    inline def setNamespacedTypes(value: js.Array[String]): Self = StObject.set(x, "namespacedTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespacedTypesUndefined: Self = StObject.set(x, "namespacedTypes", js.undefined)
+    inline def setNamespacedTypesUndefined: Self = StObject.set(x, "namespacedTypes", js.undefined)
     
-    @scala.inline
-    def setNamespacedTypesVarargs(value: String*): Self = StObject.set(x, "namespacedTypes", js.Array(value :_*))
+    inline def setNamespacedTypesVarargs(value: String*): Self = StObject.set(x, "namespacedTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setObservations(value: js.Array[SchemaObservation]): Self = StObject.set(x, "observations", value.asInstanceOf[js.Any])
+    inline def setObservations(value: js.Array[SchemaObservation]): Self = StObject.set(x, "observations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservationsUndefined: Self = StObject.set(x, "observations", js.undefined)
+    inline def setObservationsUndefined: Self = StObject.set(x, "observations", js.undefined)
     
-    @scala.inline
-    def setObservationsVarargs(value: SchemaObservation*): Self = StObject.set(x, "observations", js.Array(value :_*))
+    inline def setObservationsVarargs(value: SchemaObservation*): Self = StObject.set(x, "observations", js.Array(value :_*))
   }
 }

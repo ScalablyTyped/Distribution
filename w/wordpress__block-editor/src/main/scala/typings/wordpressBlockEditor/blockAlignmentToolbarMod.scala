@@ -33,20 +33,15 @@ object blockAlignmentToolbarMod {
     trait Control extends StObject
     object Control {
       
-      @scala.inline
-      def center: typings.wordpressBlockEditor.wordpressBlockEditorStrings.center = "center".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.center]
+      inline def center: typings.wordpressBlockEditor.wordpressBlockEditorStrings.center = "center".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.center]
       
-      @scala.inline
-      def full: typings.wordpressBlockEditor.wordpressBlockEditorStrings.full = "full".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.full]
+      inline def full: typings.wordpressBlockEditor.wordpressBlockEditorStrings.full = "full".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.full]
       
-      @scala.inline
-      def left: typings.wordpressBlockEditor.wordpressBlockEditorStrings.left = "left".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.left]
+      inline def left: typings.wordpressBlockEditor.wordpressBlockEditorStrings.left = "left".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.left]
       
-      @scala.inline
-      def right: typings.wordpressBlockEditor.wordpressBlockEditorStrings.right = "right".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.right]
+      inline def right: typings.wordpressBlockEditor.wordpressBlockEditorStrings.right = "right".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.right]
       
-      @scala.inline
-      def wide: typings.wordpressBlockEditor.wordpressBlockEditorStrings.wide = "wide".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.wide]
+      inline def wide: typings.wordpressBlockEditor.wordpressBlockEditorStrings.wide = "wide".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.wide]
     }
     
     @js.native

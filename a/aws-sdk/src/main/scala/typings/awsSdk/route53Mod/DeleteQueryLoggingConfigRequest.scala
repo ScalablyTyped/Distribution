@@ -13,16 +13,13 @@ trait DeleteQueryLoggingConfigRequest extends StObject {
 }
 object DeleteQueryLoggingConfigRequest {
   
-  @scala.inline
-  def apply(Id: QueryLoggingConfigId): DeleteQueryLoggingConfigRequest = {
+  inline def apply(Id: QueryLoggingConfigId): DeleteQueryLoggingConfigRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteQueryLoggingConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteQueryLoggingConfigRequestMutableBuilder[Self <: DeleteQueryLoggingConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteQueryLoggingConfigRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: QueryLoggingConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: QueryLoggingConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

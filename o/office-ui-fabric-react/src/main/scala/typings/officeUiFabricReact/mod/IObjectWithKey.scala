@@ -9,8 +9,7 @@ trait IObjectWithKey
      with typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 object IObjectWithKey {
   
-  @scala.inline
-  def apply(): IObjectWithKey = {
+  inline def apply(): IObjectWithKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IObjectWithKey]
   }

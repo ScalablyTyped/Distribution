@@ -18,28 +18,21 @@ trait EncryptionConfig extends StObject {
 }
 object EncryptionConfig {
   
-  @scala.inline
-  def apply(): EncryptionConfig = {
+  inline def apply(): EncryptionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionConfig]
   }
   
-  @scala.inline
-  implicit class EncryptionConfigMutableBuilder[Self <: EncryptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionConfig](x: Self) {
     
-    @scala.inline
-    def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setResources(value: StringList): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: StringList): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

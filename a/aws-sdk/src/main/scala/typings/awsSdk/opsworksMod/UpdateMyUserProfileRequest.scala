@@ -13,19 +13,15 @@ trait UpdateMyUserProfileRequest extends StObject {
 }
 object UpdateMyUserProfileRequest {
   
-  @scala.inline
-  def apply(): UpdateMyUserProfileRequest = {
+  inline def apply(): UpdateMyUserProfileRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMyUserProfileRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMyUserProfileRequestMutableBuilder[Self <: UpdateMyUserProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMyUserProfileRequest](x: Self) {
     
-    @scala.inline
-    def setSshPublicKey(value: String): Self = StObject.set(x, "SshPublicKey", value.asInstanceOf[js.Any])
+    inline def setSshPublicKey(value: String): Self = StObject.set(x, "SshPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyUndefined: Self = StObject.set(x, "SshPublicKey", js.undefined)
+    inline def setSshPublicKeyUndefined: Self = StObject.set(x, "SshPublicKey", js.undefined)
   }
 }

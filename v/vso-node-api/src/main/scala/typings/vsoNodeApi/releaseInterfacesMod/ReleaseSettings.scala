@@ -10,16 +10,13 @@ trait ReleaseSettings extends StObject {
 }
 object ReleaseSettings {
   
-  @scala.inline
-  def apply(retentionSettings: RetentionSettings): ReleaseSettings = {
+  inline def apply(retentionSettings: RetentionSettings): ReleaseSettings = {
     val __obj = js.Dynamic.literal(retentionSettings = retentionSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseSettings]
   }
   
-  @scala.inline
-  implicit class ReleaseSettingsMutableBuilder[Self <: ReleaseSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseSettings](x: Self) {
     
-    @scala.inline
-    def setRetentionSettings(value: RetentionSettings): Self = StObject.set(x, "retentionSettings", value.asInstanceOf[js.Any])
+    inline def setRetentionSettings(value: RetentionSettings): Self = StObject.set(x, "retentionSettings", value.asInstanceOf[js.Any])
   }
 }

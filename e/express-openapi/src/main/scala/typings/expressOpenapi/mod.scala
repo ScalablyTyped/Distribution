@@ -26,8 +26,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initialize(args: ExpressOpenAPIArgs): default = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(args.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def initialize(args: ExpressOpenAPIArgs): default = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(args.asInstanceOf[js.Any]).asInstanceOf[default]
   
   trait ExpressOpenAPIArgs
     extends StObject
@@ -58,57 +57,42 @@ object mod {
   }
   object ExpressOpenAPIArgs {
     
-    @scala.inline
-    def apply(apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String, app: Application_): ExpressOpenAPIArgs = {
+    inline def apply(apiDoc: Document | typings.openapiTypes.mod.OpenAPIV3.Document | String, app: Application_): ExpressOpenAPIArgs = {
       val __obj = js.Dynamic.literal(apiDoc = apiDoc.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpressOpenAPIArgs]
     }
     
-    @scala.inline
-    implicit class ExpressOpenAPIArgsMutableBuilder[Self <: ExpressOpenAPIArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressOpenAPIArgs](x: Self) {
       
-      @scala.inline
-      def setApp(value: Application_): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: Application_): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumesMiddleware(value: StringDictionary[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]): Self = StObject.set(x, "consumesMiddleware", value.asInstanceOf[js.Any])
+      inline def setConsumesMiddleware(value: StringDictionary[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]): Self = StObject.set(x, "consumesMiddleware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumesMiddlewareUndefined: Self = StObject.set(x, "consumesMiddleware", js.undefined)
+      inline def setConsumesMiddlewareUndefined: Self = StObject.set(x, "consumesMiddleware", js.undefined)
       
-      @scala.inline
-      def setDocsPath(value: String): Self = StObject.set(x, "docsPath", value.asInstanceOf[js.Any])
+      inline def setDocsPath(value: String): Self = StObject.set(x, "docsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocsPathUndefined: Self = StObject.set(x, "docsPath", js.undefined)
+      inline def setDocsPathUndefined: Self = StObject.set(x, "docsPath", js.undefined)
       
-      @scala.inline
-      def setErrorMiddleware(
+      inline def setErrorMiddleware(
         value: (/* err */ js.Any, /* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setErrorMiddlewareUndefined: Self = StObject.set(x, "errorMiddleware", js.undefined)
+      inline def setErrorMiddlewareUndefined: Self = StObject.set(x, "errorMiddleware", js.undefined)
       
-      @scala.inline
-      def setExposeApiDocs(value: Boolean): Self = StObject.set(x, "exposeApiDocs", value.asInstanceOf[js.Any])
+      inline def setExposeApiDocs(value: Boolean): Self = StObject.set(x, "exposeApiDocs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeApiDocsUndefined: Self = StObject.set(x, "exposeApiDocs", js.undefined)
+      inline def setExposeApiDocsUndefined: Self = StObject.set(x, "exposeApiDocs", js.undefined)
       
-      @scala.inline
-      def setPromiseMode(value: Boolean): Self = StObject.set(x, "promiseMode", value.asInstanceOf[js.Any])
+      inline def setPromiseMode(value: Boolean): Self = StObject.set(x, "promiseMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseModeUndefined: Self = StObject.set(x, "promiseMode", js.undefined)
+      inline def setPromiseModeUndefined: Self = StObject.set(x, "promiseMode", js.undefined)
       
-      @scala.inline
-      def setSecurityFilter(
+      inline def setSecurityFilter(
         value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "securityFilter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSecurityFilterUndefined: Self = StObject.set(x, "securityFilter", js.undefined)
+      inline def setSecurityFilterUndefined: Self = StObject.set(x, "securityFilter", js.undefined)
     }
   }
   
@@ -142,20 +126,16 @@ object mod {
   }
   object OperationHandlerArray {
     
-    @scala.inline
-    def apply(): OperationHandlerArray = {
+    inline def apply(): OperationHandlerArray = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OperationHandlerArray]
     }
     
-    @scala.inline
-    implicit class OperationHandlerArrayMutableBuilder[Self <: OperationHandlerArray] (val x: Self) extends AnyVal {
+    extension [Self <: OperationHandlerArray](x: Self) {
       
-      @scala.inline
-      def setApiDoc(value: typings.openapiTypes.mod.OpenAPI.Operation): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
+      inline def setApiDoc(value: typings.openapiTypes.mod.OpenAPI.Operation): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiDocUndefined: Self = StObject.set(x, "apiDoc", js.undefined)
+      inline def setApiDocUndefined: Self = StObject.set(x, "apiDoc", js.undefined)
     }
   }
 }

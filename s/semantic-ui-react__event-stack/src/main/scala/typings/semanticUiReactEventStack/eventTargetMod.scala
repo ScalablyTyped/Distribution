@@ -18,28 +18,28 @@ object eventTargetMod {
     /* CompleteClass */
     override def addHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var addTargetHandler: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var createEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val handlers: js.Any = js.native
     
     /* CompleteClass */
     override def hasHandlers(): Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val pools: js.Any = js.native
     
     /* CompleteClass */
     override def removeHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var removeTargetHandler: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val target: js.Any = js.native
   }
   
@@ -47,26 +47,25 @@ object eventTargetMod {
     
     def addHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit
     
-    var addTargetHandler: js.Any
+    /* private */ var addTargetHandler: js.Any
     
-    var createEmitter: js.Any
+    /* private */ var createEmitter: js.Any
     
-    val handlers: js.Any
+    /* private */ val handlers: js.Any
     
     def hasHandlers(): Boolean
     
-    val pools: js.Any
+    /* private */ val pools: js.Any
     
     def removeHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit
     
-    var removeTargetHandler: js.Any
+    /* private */ var removeTargetHandler: js.Any
     
-    val target: js.Any
+    /* private */ val target: js.Any
   }
   object EventTarget {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addHandlers: (String, String, EventListeners) => Unit,
       addTargetHandler: js.Any,
       createEmitter: js.Any,
@@ -81,35 +80,25 @@ object eventTargetMod {
       __obj.asInstanceOf[EventTarget]
     }
     
-    @scala.inline
-    implicit class EventTargetMutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
+    extension [Self <: EventTarget](x: Self) {
       
-      @scala.inline
-      def setAddHandlers(value: (String, String, EventListeners) => Unit): Self = StObject.set(x, "addHandlers", js.Any.fromFunction3(value))
+      inline def setAddHandlers(value: (String, String, EventListeners) => Unit): Self = StObject.set(x, "addHandlers", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddTargetHandler(value: js.Any): Self = StObject.set(x, "addTargetHandler", value.asInstanceOf[js.Any])
+      inline def setAddTargetHandler(value: js.Any): Self = StObject.set(x, "addTargetHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateEmitter(value: js.Any): Self = StObject.set(x, "createEmitter", value.asInstanceOf[js.Any])
+      inline def setCreateEmitter(value: js.Any): Self = StObject.set(x, "createEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasHandlers(value: () => Boolean): Self = StObject.set(x, "hasHandlers", js.Any.fromFunction0(value))
+      inline def setHasHandlers(value: () => Boolean): Self = StObject.set(x, "hasHandlers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPools(value: js.Any): Self = StObject.set(x, "pools", value.asInstanceOf[js.Any])
+      inline def setPools(value: js.Any): Self = StObject.set(x, "pools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveHandlers(value: (String, String, EventListeners) => Unit): Self = StObject.set(x, "removeHandlers", js.Any.fromFunction3(value))
+      inline def setRemoveHandlers(value: (String, String, EventListeners) => Unit): Self = StObject.set(x, "removeHandlers", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRemoveTargetHandler(value: js.Any): Self = StObject.set(x, "removeTargetHandler", value.asInstanceOf[js.Any])
+      inline def setRemoveTargetHandler(value: js.Any): Self = StObject.set(x, "removeTargetHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -24,21 +24,21 @@ object decoratorRewriterMod {
     ) = this()
     
     /** Creates a new decorator with the given expression. */
-    var _createDecorator: js.Any = js.native
+    /* private */ var _createDecorator: js.Any = js.native
     
     /**
       * Sanitizes a metadata property by ensuring that all contained identifiers
       * are imported in the target source file.
       */
-    var _sanitizeMetadataProperty: js.Any = js.native
+    /* private */ var _sanitizeMetadataProperty: js.Any = js.native
     
-    var compiler: js.Any = js.native
+    /* private */ var compiler: js.Any = js.native
     
-    var evaluator: js.Any = js.native
+    /* private */ var evaluator: js.Any = js.native
     
-    var importManager: js.Any = js.native
+    /* private */ var importManager: js.Any = js.native
     
-    var importRewriterFactory: js.Any = js.native
+    /* private */ var importRewriterFactory: js.Any = js.native
     
     var newProperties: js.Array[ObjectLiteralElementLike] = js.native
     
@@ -50,6 +50,6 @@ object decoratorRewriterMod {
     
     def rewrite(ngDecorator: NgDecorator, newSourceFile: SourceFile): Decorator = js.native
     
-    var typeChecker: js.Any = js.native
+    /* private */ var typeChecker: js.Any = js.native
   }
 }

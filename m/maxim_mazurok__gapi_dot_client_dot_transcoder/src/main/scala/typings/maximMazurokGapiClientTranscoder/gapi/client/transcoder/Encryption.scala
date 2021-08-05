@@ -23,43 +23,31 @@ trait Encryption extends StObject {
 }
 object Encryption {
   
-  @scala.inline
-  def apply(): Encryption = {
+  inline def apply(): Encryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Encryption]
   }
   
-  @scala.inline
-  implicit class EncryptionMutableBuilder[Self <: Encryption] (val x: Self) extends AnyVal {
+  extension [Self <: Encryption](x: Self) {
     
-    @scala.inline
-    def setAes128(value: Aes128Encryption): Self = StObject.set(x, "aes128", value.asInstanceOf[js.Any])
+    inline def setAes128(value: Aes128Encryption): Self = StObject.set(x, "aes128", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAes128Undefined: Self = StObject.set(x, "aes128", js.undefined)
+    inline def setAes128Undefined: Self = StObject.set(x, "aes128", js.undefined)
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMpegCenc(value: MpegCommonEncryption): Self = StObject.set(x, "mpegCenc", value.asInstanceOf[js.Any])
+    inline def setMpegCenc(value: MpegCommonEncryption): Self = StObject.set(x, "mpegCenc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpegCencUndefined: Self = StObject.set(x, "mpegCenc", js.undefined)
+    inline def setMpegCencUndefined: Self = StObject.set(x, "mpegCenc", js.undefined)
     
-    @scala.inline
-    def setSampleAes(value: SampleAesEncryption): Self = StObject.set(x, "sampleAes", value.asInstanceOf[js.Any])
+    inline def setSampleAes(value: SampleAesEncryption): Self = StObject.set(x, "sampleAes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleAesUndefined: Self = StObject.set(x, "sampleAes", js.undefined)
+    inline def setSampleAesUndefined: Self = StObject.set(x, "sampleAes", js.undefined)
   }
 }

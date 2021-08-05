@@ -19,19 +19,15 @@ trait RedirectByRegExParams extends StObject {
 }
 object RedirectByRegExParams {
   
-  @scala.inline
-  def apply(from: String, to: String): RedirectByRegExParams = {
+  inline def apply(from: String, to: String): RedirectByRegExParams = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectByRegExParams]
   }
   
-  @scala.inline
-  implicit class RedirectByRegExParamsMutableBuilder[Self <: RedirectByRegExParams] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectByRegExParams](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

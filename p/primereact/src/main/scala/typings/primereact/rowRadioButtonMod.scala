@@ -30,32 +30,24 @@ object rowRadioButtonMod {
   }
   object RowRadioButtonProps {
     
-    @scala.inline
-    def apply(): RowRadioButtonProps = {
+    inline def apply(): RowRadioButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowRadioButtonProps]
     }
     
-    @scala.inline
-    implicit class RowRadioButtonPropsMutableBuilder[Self <: RowRadioButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: RowRadioButtonProps](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: /* e */ DataObject => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ DataObject => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRowData(value: js.Object): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: js.Object): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
+      inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     }
   }
 }

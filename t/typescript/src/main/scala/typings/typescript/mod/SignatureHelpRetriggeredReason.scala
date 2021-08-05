@@ -24,22 +24,17 @@ trait SignatureHelpRetriggeredReason
 }
 object SignatureHelpRetriggeredReason {
   
-  @scala.inline
-  def apply(): SignatureHelpRetriggeredReason = {
+  inline def apply(): SignatureHelpRetriggeredReason = {
     val __obj = js.Dynamic.literal(kind = "retrigger")
     __obj.asInstanceOf[SignatureHelpRetriggeredReason]
   }
   
-  @scala.inline
-  implicit class SignatureHelpRetriggeredReasonMutableBuilder[Self <: SignatureHelpRetriggeredReason] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpRetriggeredReason](x: Self) {
     
-    @scala.inline
-    def setKind(value: retrigger): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: retrigger): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCharacter(value: SignatureHelpRetriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
+    inline def setTriggerCharacter(value: SignatureHelpRetriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
+    inline def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
   }
 }

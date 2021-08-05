@@ -15,17 +15,14 @@ trait SqrtScale
 }
 object SqrtScale {
   
-  @scala.inline
-  def apply(name: String): SqrtScale = {
+  inline def apply(name: String): SqrtScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("sqrt")
     __obj.asInstanceOf[SqrtScale]
   }
   
-  @scala.inline
-  implicit class SqrtScaleMutableBuilder[Self <: SqrtScale] (val x: Self) extends AnyVal {
+  extension [Self <: SqrtScale](x: Self) {
     
-    @scala.inline
-    def setType(value: sqrt): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: sqrt): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

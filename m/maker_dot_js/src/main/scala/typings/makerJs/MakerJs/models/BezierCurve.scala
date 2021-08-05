@@ -31,8 +31,7 @@ trait BezierCurve
 }
 object BezierCurve {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accuracy: Double,
     models: IModelMap,
     origin: IPoint,
@@ -45,25 +44,18 @@ object BezierCurve {
     __obj.asInstanceOf[BezierCurve]
   }
   
-  @scala.inline
-  implicit class BezierCurveMutableBuilder[Self <: BezierCurve] (val x: Self) extends AnyVal {
+  extension [Self <: BezierCurve](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeed(value: IPathBezierSeed): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: IPathBezierSeed): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

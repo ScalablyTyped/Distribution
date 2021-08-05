@@ -58,82 +58,57 @@ trait NetworkInterface extends StObject {
 }
 object NetworkInterface {
   
-  @scala.inline
-  def apply(): NetworkInterface = {
+  inline def apply(): NetworkInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInterface]
   }
   
-  @scala.inline
-  implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterface](x: Self) {
     
-    @scala.inline
-    def setIpv6Addresses(value: Ipv6Addresses): Self = StObject.set(x, "ipv6Addresses", value.asInstanceOf[js.Any])
+    inline def setIpv6Addresses(value: Ipv6Addresses): Self = StObject.set(x, "ipv6Addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6AddressesUndefined: Self = StObject.set(x, "ipv6Addresses", js.undefined)
+    inline def setIpv6AddressesUndefined: Self = StObject.set(x, "ipv6Addresses", js.undefined)
     
-    @scala.inline
-    def setIpv6AddressesVarargs(value: Text*): Self = StObject.set(x, "ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesVarargs(value: Text*): Self = StObject.set(x, "ipv6Addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkInterfaceId(value: Text): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: Text): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
     
-    @scala.inline
-    def setPrivateDnsName(value: Text): Self = StObject.set(x, "privateDnsName", value.asInstanceOf[js.Any])
+    inline def setPrivateDnsName(value: Text): Self = StObject.set(x, "privateDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateDnsNameUndefined: Self = StObject.set(x, "privateDnsName", js.undefined)
+    inline def setPrivateDnsNameUndefined: Self = StObject.set(x, "privateDnsName", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddress(value: Text): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddress(value: Text): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddresses(value: PrivateIpAddresses): Self = StObject.set(x, "privateIpAddresses", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddresses(value: PrivateIpAddresses): Self = StObject.set(x, "privateIpAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressesUndefined: Self = StObject.set(x, "privateIpAddresses", js.undefined)
+    inline def setPrivateIpAddressesUndefined: Self = StObject.set(x, "privateIpAddresses", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddressesVarargs(value: PrivateIp*): Self = StObject.set(x, "privateIpAddresses", js.Array(value :_*))
+    inline def setPrivateIpAddressesVarargs(value: PrivateIp*): Self = StObject.set(x, "privateIpAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setPublicDnsName(value: Text): Self = StObject.set(x, "publicDnsName", value.asInstanceOf[js.Any])
+    inline def setPublicDnsName(value: Text): Self = StObject.set(x, "publicDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicDnsNameUndefined: Self = StObject.set(x, "publicDnsName", js.undefined)
+    inline def setPublicDnsNameUndefined: Self = StObject.set(x, "publicDnsName", js.undefined)
     
-    @scala.inline
-    def setPublicIp(value: Text): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: Text): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
+    inline def setPublicIpUndefined: Self = StObject.set(x, "publicIp", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetId(value: Text): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: Text): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: Text): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: Text): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
   }
 }

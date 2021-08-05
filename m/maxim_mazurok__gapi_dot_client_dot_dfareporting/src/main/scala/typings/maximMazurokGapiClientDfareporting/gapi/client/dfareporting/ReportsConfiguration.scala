@@ -24,31 +24,23 @@ trait ReportsConfiguration extends StObject {
 }
 object ReportsConfiguration {
   
-  @scala.inline
-  def apply(): ReportsConfiguration = {
+  inline def apply(): ReportsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportsConfiguration]
   }
   
-  @scala.inline
-  implicit class ReportsConfigurationMutableBuilder[Self <: ReportsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ReportsConfiguration](x: Self) {
     
-    @scala.inline
-    def setExposureToConversionEnabled(value: Boolean): Self = StObject.set(x, "exposureToConversionEnabled", value.asInstanceOf[js.Any])
+    inline def setExposureToConversionEnabled(value: Boolean): Self = StObject.set(x, "exposureToConversionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureToConversionEnabledUndefined: Self = StObject.set(x, "exposureToConversionEnabled", js.undefined)
+    inline def setExposureToConversionEnabledUndefined: Self = StObject.set(x, "exposureToConversionEnabled", js.undefined)
     
-    @scala.inline
-    def setLookbackConfiguration(value: LookbackConfiguration): Self = StObject.set(x, "lookbackConfiguration", value.asInstanceOf[js.Any])
+    inline def setLookbackConfiguration(value: LookbackConfiguration): Self = StObject.set(x, "lookbackConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookbackConfigurationUndefined: Self = StObject.set(x, "lookbackConfiguration", js.undefined)
+    inline def setLookbackConfigurationUndefined: Self = StObject.set(x, "lookbackConfiguration", js.undefined)
     
-    @scala.inline
-    def setReportGenerationTimeZoneId(value: String): Self = StObject.set(x, "reportGenerationTimeZoneId", value.asInstanceOf[js.Any])
+    inline def setReportGenerationTimeZoneId(value: String): Self = StObject.set(x, "reportGenerationTimeZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportGenerationTimeZoneIdUndefined: Self = StObject.set(x, "reportGenerationTimeZoneId", js.undefined)
+    inline def setReportGenerationTimeZoneIdUndefined: Self = StObject.set(x, "reportGenerationTimeZoneId", js.undefined)
   }
 }

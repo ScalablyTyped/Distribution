@@ -15,10 +15,8 @@ object AnimationColorSpace {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HSL: `1` = 1.asInstanceOf[`1`]
+    inline def HSL: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def RGB: `0` = 0.asInstanceOf[`0`]
+    inline def RGB: `0` = 0.asInstanceOf[`0`]
   }
 }

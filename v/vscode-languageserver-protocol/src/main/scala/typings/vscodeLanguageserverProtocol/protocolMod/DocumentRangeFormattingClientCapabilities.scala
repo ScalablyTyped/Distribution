@@ -13,19 +13,15 @@ trait DocumentRangeFormattingClientCapabilities extends StObject {
 }
 object DocumentRangeFormattingClientCapabilities {
   
-  @scala.inline
-  def apply(): DocumentRangeFormattingClientCapabilities = {
+  inline def apply(): DocumentRangeFormattingClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentRangeFormattingClientCapabilities]
   }
   
-  @scala.inline
-  implicit class DocumentRangeFormattingClientCapabilitiesMutableBuilder[Self <: DocumentRangeFormattingClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentRangeFormattingClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

@@ -52,43 +52,31 @@ trait ExternalApplicationResource extends StObject {
 }
 object ExternalApplicationResource {
   
-  @scala.inline
-  def apply(platform: String): ExternalApplicationResource = {
+  inline def apply(platform: String): ExternalApplicationResource = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalApplicationResource]
   }
   
-  @scala.inline
-  implicit class ExternalApplicationResourceMutableBuilder[Self <: ExternalApplicationResource] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalApplicationResource](x: Self) {
     
-    @scala.inline
-    def setFingerprints(value: js.Array[Fingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
+    inline def setFingerprints(value: js.Array[Fingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintsUndefined: Self = StObject.set(x, "fingerprints", js.undefined)
+    inline def setFingerprintsUndefined: Self = StObject.set(x, "fingerprints", js.undefined)
     
-    @scala.inline
-    def setFingerprintsVarargs(value: Fingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value :_*))
+    inline def setFingerprintsVarargs(value: Fingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMin_version(value: String): Self = StObject.set(x, "min_version", value.asInstanceOf[js.Any])
+    inline def setMin_version(value: String): Self = StObject.set(x, "min_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin_versionUndefined: Self = StObject.set(x, "min_version", js.undefined)
+    inline def setMin_versionUndefined: Self = StObject.set(x, "min_version", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteDBSubnetGroupMessage extends StObject {
 }
 object DeleteDBSubnetGroupMessage {
   
-  @scala.inline
-  def apply(DBSubnetGroupName: String): DeleteDBSubnetGroupMessage = {
+  inline def apply(DBSubnetGroupName: String): DeleteDBSubnetGroupMessage = {
     val __obj = js.Dynamic.literal(DBSubnetGroupName = DBSubnetGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBSubnetGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBSubnetGroupMessageMutableBuilder[Self <: DeleteDBSubnetGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBSubnetGroupMessage](x: Self) {
     
-    @scala.inline
-    def setDBSubnetGroupName(value: String): Self = StObject.set(x, "DBSubnetGroupName", value.asInstanceOf[js.Any])
+    inline def setDBSubnetGroupName(value: String): Self = StObject.set(x, "DBSubnetGroupName", value.asInstanceOf[js.Any])
   }
 }

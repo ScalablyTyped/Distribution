@@ -28,25 +28,19 @@ trait CapabilityStatementMessagingSupportedMessage
 }
 object CapabilityStatementMessagingSupportedMessage {
   
-  @scala.inline
-  def apply(definition: Reference, mode: code): CapabilityStatementMessagingSupportedMessage = {
+  inline def apply(definition: Reference, mode: code): CapabilityStatementMessagingSupportedMessage = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementMessagingSupportedMessage]
   }
   
-  @scala.inline
-  implicit class CapabilityStatementMessagingSupportedMessageMutableBuilder[Self <: CapabilityStatementMessagingSupportedMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CapabilityStatementMessagingSupportedMessage](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
+    inline def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
+    inline def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
   }
 }

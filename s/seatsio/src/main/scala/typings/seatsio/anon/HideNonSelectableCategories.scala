@@ -12,25 +12,19 @@ trait HideNonSelectableCategories extends StObject {
 }
 object HideNonSelectableCategories {
   
-  @scala.inline
-  def apply(): HideNonSelectableCategories = {
+  inline def apply(): HideNonSelectableCategories = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HideNonSelectableCategories]
   }
   
-  @scala.inline
-  implicit class HideNonSelectableCategoriesMutableBuilder[Self <: HideNonSelectableCategories] (val x: Self) extends AnyVal {
+  extension [Self <: HideNonSelectableCategories](x: Self) {
     
-    @scala.inline
-    def setHideNonSelectableCategories(value: Boolean): Self = StObject.set(x, "hideNonSelectableCategories", value.asInstanceOf[js.Any])
+    inline def setHideNonSelectableCategories(value: Boolean): Self = StObject.set(x, "hideNonSelectableCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideNonSelectableCategoriesUndefined: Self = StObject.set(x, "hideNonSelectableCategories", js.undefined)
+    inline def setHideNonSelectableCategoriesUndefined: Self = StObject.set(x, "hideNonSelectableCategories", js.undefined)
     
-    @scala.inline
-    def setHidePricing(value: Boolean): Self = StObject.set(x, "hidePricing", value.asInstanceOf[js.Any])
+    inline def setHidePricing(value: Boolean): Self = StObject.set(x, "hidePricing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidePricingUndefined: Self = StObject.set(x, "hidePricing", js.undefined)
+    inline def setHidePricingUndefined: Self = StObject.set(x, "hidePricing", js.undefined)
   }
 }

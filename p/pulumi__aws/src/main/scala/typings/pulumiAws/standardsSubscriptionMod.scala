@@ -45,21 +45,16 @@ object standardsSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StandardsSubscriptionState): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StandardsSubscriptionState, opts: CustomResourceOptions): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
+    inline def get(name: String, id: Input[ID]): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
+    inline def get(name: String, id: Input[ID], state: StandardsSubscriptionState): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
+    inline def get(name: String, id: Input[ID], state: StandardsSubscriptionState, opts: CustomResourceOptions): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
     
     /**
       * Returns true if the given object is an instance of StandardsSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean]
   }
   
   trait StandardsSubscriptionArgs extends StObject {
@@ -71,17 +66,14 @@ object standardsSubscriptionMod {
   }
   object StandardsSubscriptionArgs {
     
-    @scala.inline
-    def apply(standardsArn: Input[String]): StandardsSubscriptionArgs = {
+    inline def apply(standardsArn: Input[String]): StandardsSubscriptionArgs = {
       val __obj = js.Dynamic.literal(standardsArn = standardsArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[StandardsSubscriptionArgs]
     }
     
-    @scala.inline
-    implicit class StandardsSubscriptionArgsMutableBuilder[Self <: StandardsSubscriptionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StandardsSubscriptionArgs](x: Self) {
       
-      @scala.inline
-      def setStandardsArn(value: Input[String]): Self = StObject.set(x, "standardsArn", value.asInstanceOf[js.Any])
+      inline def setStandardsArn(value: Input[String]): Self = StObject.set(x, "standardsArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,20 +86,16 @@ object standardsSubscriptionMod {
   }
   object StandardsSubscriptionState {
     
-    @scala.inline
-    def apply(): StandardsSubscriptionState = {
+    inline def apply(): StandardsSubscriptionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StandardsSubscriptionState]
     }
     
-    @scala.inline
-    implicit class StandardsSubscriptionStateMutableBuilder[Self <: StandardsSubscriptionState] (val x: Self) extends AnyVal {
+    extension [Self <: StandardsSubscriptionState](x: Self) {
       
-      @scala.inline
-      def setStandardsArn(value: Input[String]): Self = StObject.set(x, "standardsArn", value.asInstanceOf[js.Any])
+      inline def setStandardsArn(value: Input[String]): Self = StObject.set(x, "standardsArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStandardsArnUndefined: Self = StObject.set(x, "standardsArn", js.undefined)
+      inline def setStandardsArnUndefined: Self = StObject.set(x, "standardsArn", js.undefined)
     }
   }
 }

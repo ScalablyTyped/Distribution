@@ -49,8 +49,7 @@ trait XInterfaceAttributeTypeDescription2
 }
 object XInterfaceAttributeTypeDescription2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetExceptions: SafeArray[XCompoundTypeDescription],
     MemberName: String,
     Name: String,
@@ -75,22 +74,16 @@ object XInterfaceAttributeTypeDescription2 {
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription2]
   }
   
-  @scala.inline
-  implicit class XInterfaceAttributeTypeDescription2MutableBuilder[Self <: XInterfaceAttributeTypeDescription2] (val x: Self) extends AnyVal {
+  extension [Self <: XInterfaceAttributeTypeDescription2](x: Self) {
     
-    @scala.inline
-    def setGetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "GetExceptions", value.asInstanceOf[js.Any])
+    inline def setGetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "GetExceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getGetExceptions", js.Any.fromFunction0(value))
+    inline def setGetGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getGetExceptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getSetExceptions", js.Any.fromFunction0(value))
+    inline def setGetSetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getSetExceptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsBound(value: () => Boolean): Self = StObject.set(x, "isBound", js.Any.fromFunction0(value))
+    inline def setIsBound(value: () => Boolean): Self = StObject.set(x, "isBound", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "SetExceptions", value.asInstanceOf[js.Any])
+    inline def setSetExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "SetExceptions", value.asInstanceOf[js.Any])
   }
 }

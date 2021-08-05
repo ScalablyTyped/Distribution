@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TooltipPosition extends StObject
 object TooltipPosition {
   
-  @scala.inline
-  def auto: typings.antvComponent.antvComponentStrings.auto = "auto".asInstanceOf[typings.antvComponent.antvComponentStrings.auto]
+  inline def auto: typings.antvComponent.antvComponentStrings.auto = "auto".asInstanceOf[typings.antvComponent.antvComponentStrings.auto]
   
-  @scala.inline
-  def bottom: typings.antvComponent.antvComponentStrings.bottom = "bottom".asInstanceOf[typings.antvComponent.antvComponentStrings.bottom]
+  inline def bottom: typings.antvComponent.antvComponentStrings.bottom = "bottom".asInstanceOf[typings.antvComponent.antvComponentStrings.bottom]
   
-  @scala.inline
-  def left: typings.antvComponent.antvComponentStrings.left = "left".asInstanceOf[typings.antvComponent.antvComponentStrings.left]
+  inline def left: typings.antvComponent.antvComponentStrings.left = "left".asInstanceOf[typings.antvComponent.antvComponentStrings.left]
   
-  @scala.inline
-  def right: typings.antvComponent.antvComponentStrings.right = "right".asInstanceOf[typings.antvComponent.antvComponentStrings.right]
+  inline def right: typings.antvComponent.antvComponentStrings.right = "right".asInstanceOf[typings.antvComponent.antvComponentStrings.right]
   
-  @scala.inline
-  def top: typings.antvComponent.antvComponentStrings.top = "top".asInstanceOf[typings.antvComponent.antvComponentStrings.top]
+  inline def top: typings.antvComponent.antvComponentStrings.top = "top".asInstanceOf[typings.antvComponent.antvComponentStrings.top]
 }

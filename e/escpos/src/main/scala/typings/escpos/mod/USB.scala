@@ -33,15 +33,10 @@ object USB {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findPrinter(): js.Array[USB] | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("findPrinter")().asInstanceOf[js.Array[USB] | `false`]
+  inline def findPrinter(): js.Array[USB] | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("findPrinter")().asInstanceOf[js.Array[USB] | `false`]
   
-  @scala.inline
-  def getDevice(): js.Promise[USB] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")().asInstanceOf[js.Promise[USB]]
-  @scala.inline
-  def getDevice(vid: String): js.Promise[USB] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")(vid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[USB]]
-  @scala.inline
-  def getDevice(vid: String, pid: String): js.Promise[USB] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[USB]]
-  @scala.inline
-  def getDevice(vid: Unit, pid: String): js.Promise[USB] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[USB]]
+  inline def getDevice(): js.Promise[USB] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")().asInstanceOf[js.Promise[USB]]
+  inline def getDevice(vid: String): js.Promise[USB] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")(vid.asInstanceOf[js.Any]).asInstanceOf[js.Promise[USB]]
+  inline def getDevice(vid: String, pid: String): js.Promise[USB] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[USB]]
+  inline def getDevice(vid: Unit, pid: String): js.Promise[USB] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[USB]]
 }

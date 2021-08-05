@@ -22,20 +22,16 @@ object magicWandMod extends Shortcut {
   }
   object MagicWandProps {
     
-    @scala.inline
-    def apply(): MagicWandProps = {
+    inline def apply(): MagicWandProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MagicWandProps]
     }
     
-    @scala.inline
-    implicit class MagicWandPropsMutableBuilder[Self <: MagicWandProps] (val x: Self) extends AnyVal {
+    extension [Self <: MagicWandProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

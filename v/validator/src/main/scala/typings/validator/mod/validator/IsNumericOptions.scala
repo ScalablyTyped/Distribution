@@ -15,19 +15,15 @@ trait IsNumericOptions extends StObject {
 }
 object IsNumericOptions {
   
-  @scala.inline
-  def apply(): IsNumericOptions = {
+  inline def apply(): IsNumericOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsNumericOptions]
   }
   
-  @scala.inline
-  implicit class IsNumericOptionsMutableBuilder[Self <: IsNumericOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsNumericOptions](x: Self) {
     
-    @scala.inline
-    def setNo_symbols(value: Boolean): Self = StObject.set(x, "no_symbols", value.asInstanceOf[js.Any])
+    inline def setNo_symbols(value: Boolean): Self = StObject.set(x, "no_symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNo_symbolsUndefined: Self = StObject.set(x, "no_symbols", js.undefined)
+    inline def setNo_symbolsUndefined: Self = StObject.set(x, "no_symbols", js.undefined)
   }
 }

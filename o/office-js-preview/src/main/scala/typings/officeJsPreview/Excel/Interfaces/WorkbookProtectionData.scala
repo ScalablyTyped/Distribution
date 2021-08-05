@@ -17,19 +17,15 @@ trait WorkbookProtectionData extends StObject {
 }
 object WorkbookProtectionData {
   
-  @scala.inline
-  def apply(): WorkbookProtectionData = {
+  inline def apply(): WorkbookProtectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookProtectionData]
   }
   
-  @scala.inline
-  implicit class WorkbookProtectionDataMutableBuilder[Self <: WorkbookProtectionData] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookProtectionData](x: Self) {
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
+    inline def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
   }
 }

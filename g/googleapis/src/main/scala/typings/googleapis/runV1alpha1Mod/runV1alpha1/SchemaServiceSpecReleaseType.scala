@@ -34,34 +34,25 @@ trait SchemaServiceSpecReleaseType extends StObject {
 }
 object SchemaServiceSpecReleaseType {
   
-  @scala.inline
-  def apply(): SchemaServiceSpecReleaseType = {
+  inline def apply(): SchemaServiceSpecReleaseType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaServiceSpecReleaseType]
   }
   
-  @scala.inline
-  implicit class SchemaServiceSpecReleaseTypeMutableBuilder[Self <: SchemaServiceSpecReleaseType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaServiceSpecReleaseType](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: SchemaConfigurationSpec): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setRevisions(value: js.Array[String]): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
+    inline def setRevisions(value: js.Array[String]): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
+    inline def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
-    @scala.inline
-    def setRevisionsVarargs(value: String*): Self = StObject.set(x, "revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: String*): Self = StObject.set(x, "revisions", js.Array(value :_*))
     
-    @scala.inline
-    def setRolloutPercent(value: Double): Self = StObject.set(x, "rolloutPercent", value.asInstanceOf[js.Any])
+    inline def setRolloutPercent(value: Double): Self = StObject.set(x, "rolloutPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloutPercentUndefined: Self = StObject.set(x, "rolloutPercent", js.undefined)
+    inline def setRolloutPercentUndefined: Self = StObject.set(x, "rolloutPercent", js.undefined)
   }
 }

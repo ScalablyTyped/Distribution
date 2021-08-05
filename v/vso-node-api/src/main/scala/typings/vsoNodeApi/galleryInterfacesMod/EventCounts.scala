@@ -53,8 +53,7 @@ trait EventCounts extends StObject {
 }
 object EventCounts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     averageRating: Double,
     buyCount: Double,
     connectedBuyCount: Double,
@@ -69,34 +68,24 @@ object EventCounts {
     __obj.asInstanceOf[EventCounts]
   }
   
-  @scala.inline
-  implicit class EventCountsMutableBuilder[Self <: EventCounts] (val x: Self) extends AnyVal {
+  extension [Self <: EventCounts](x: Self) {
     
-    @scala.inline
-    def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
+    inline def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyCount(value: Double): Self = StObject.set(x, "buyCount", value.asInstanceOf[js.Any])
+    inline def setBuyCount(value: Double): Self = StObject.set(x, "buyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedBuyCount(value: Double): Self = StObject.set(x, "connectedBuyCount", value.asInstanceOf[js.Any])
+    inline def setConnectedBuyCount(value: Double): Self = StObject.set(x, "connectedBuyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectedInstallCount(value: Double): Self = StObject.set(x, "connectedInstallCount", value.asInstanceOf[js.Any])
+    inline def setConnectedInstallCount(value: Double): Self = StObject.set(x, "connectedInstallCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallCount(value: Double): Self = StObject.set(x, "installCount", value.asInstanceOf[js.Any])
+    inline def setInstallCount(value: Double): Self = StObject.set(x, "installCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryCount(value: Double): Self = StObject.set(x, "tryCount", value.asInstanceOf[js.Any])
+    inline def setTryCount(value: Double): Self = StObject.set(x, "tryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninstallCount(value: Double): Self = StObject.set(x, "uninstallCount", value.asInstanceOf[js.Any])
+    inline def setUninstallCount(value: Double): Self = StObject.set(x, "uninstallCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebDownloadCount(value: Double): Self = StObject.set(x, "webDownloadCount", value.asInstanceOf[js.Any])
+    inline def setWebDownloadCount(value: Double): Self = StObject.set(x, "webDownloadCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPageViews(value: Double): Self = StObject.set(x, "webPageViews", value.asInstanceOf[js.Any])
+    inline def setWebPageViews(value: Double): Self = StObject.set(x, "webPageViews", value.asInstanceOf[js.Any])
   }
 }

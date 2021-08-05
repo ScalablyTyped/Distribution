@@ -23,7 +23,7 @@ object tabTitleMod {
     def this(props: ITabTitleProps) = this()
     def this(props: ITabTitleProps, context: js.Any) = this()
     
-    var handleClick: js.Any = js.native
+    /* private */ var handleClick: js.Any = js.native
   }
   /* static members */
   object TabTitle {
@@ -35,15 +35,12 @@ object tabTitleMod {
     @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabTitle", "TabTitle.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def generateTabPanelId(parentId: TabId, tabId: TabId): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateTabPanelId")(parentId.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateTabPanelId(parentId: TabId, tabId: TabId): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateTabPanelId")(parentId.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def generateTabTitleId(parentId: TabId, tabId: TabId): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateTabTitleId")(parentId.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateTabTitleId(parentId: TabId, tabId: TabId): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateTabTitleId")(parentId.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ITabTitleProps
     extends StObject
@@ -60,8 +57,7 @@ object tabTitleMod {
   }
   object ITabTitleProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: TabId,
       onClick: (TabId, MouseEvent[HTMLElement, NativeMouseEvent]) => Unit,
       parentId: TabId,
@@ -71,17 +67,13 @@ object tabTitleMod {
       __obj.asInstanceOf[ITabTitleProps]
     }
     
-    @scala.inline
-    implicit class ITabTitlePropsMutableBuilder[Self <: ITabTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITabTitleProps](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: (TabId, MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (TabId, MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParentId(value: TabId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: TabId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

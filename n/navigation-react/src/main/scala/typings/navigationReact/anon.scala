@@ -12,17 +12,14 @@ object anon {
   }
   object StateNavigator {
     
-    @scala.inline
-    def apply(stateNavigator: typings.navigation.mod.StateNavigator): StateNavigator = {
+    inline def apply(stateNavigator: typings.navigation.mod.StateNavigator): StateNavigator = {
       val __obj = js.Dynamic.literal(stateNavigator = stateNavigator.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateNavigator]
     }
     
-    @scala.inline
-    implicit class StateNavigatorMutableBuilder[Self <: StateNavigator] (val x: Self) extends AnyVal {
+    extension [Self <: StateNavigator](x: Self) {
       
-      @scala.inline
-      def setStateNavigator(value: typings.navigation.mod.StateNavigator): Self = StObject.set(x, "stateNavigator", value.asInstanceOf[js.Any])
+      inline def setStateNavigator(value: typings.navigation.mod.StateNavigator): Self = StObject.set(x, "stateNavigator", value.asInstanceOf[js.Any])
     }
   }
 }

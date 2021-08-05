@@ -18,22 +18,17 @@ trait DescribeAvailabilityOptionsRequest extends StObject {
 }
 object DescribeAvailabilityOptionsRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DescribeAvailabilityOptionsRequest = {
+  inline def apply(DomainName: DomainName): DescribeAvailabilityOptionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAvailabilityOptionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAvailabilityOptionsRequestMutableBuilder[Self <: DescribeAvailabilityOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAvailabilityOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
+    inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
+    inline def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

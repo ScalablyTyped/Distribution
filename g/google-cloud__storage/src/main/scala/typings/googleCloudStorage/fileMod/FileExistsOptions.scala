@@ -10,19 +10,15 @@ trait FileExistsOptions extends StObject {
 }
 object FileExistsOptions {
   
-  @scala.inline
-  def apply(): FileExistsOptions = {
+  inline def apply(): FileExistsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileExistsOptions]
   }
   
-  @scala.inline
-  implicit class FileExistsOptionsMutableBuilder[Self <: FileExistsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileExistsOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

@@ -27,8 +27,7 @@ trait Word extends StObject {
 }
 object Word {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: Double,
     display_as: String,
     sounds_like: js.Array[String],
@@ -39,37 +38,26 @@ object Word {
     __obj.asInstanceOf[Word]
   }
   
-  @scala.inline
-  implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
+  extension [Self <: Word](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_as(value: String): Self = StObject.set(x, "display_as", value.asInstanceOf[js.Any])
+    inline def setDisplay_as(value: String): Self = StObject.set(x, "display_as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: js.Array[WordError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Array[WordError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setErrorVarargs(value: WordError*): Self = StObject.set(x, "error", js.Array(value :_*))
+    inline def setErrorVarargs(value: WordError*): Self = StObject.set(x, "error", js.Array(value :_*))
     
-    @scala.inline
-    def setSounds_like(value: js.Array[String]): Self = StObject.set(x, "sounds_like", value.asInstanceOf[js.Any])
+    inline def setSounds_like(value: js.Array[String]): Self = StObject.set(x, "sounds_like", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
+    inline def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

@@ -28,28 +28,21 @@ trait DeleteCommentRequest extends StObject {
 }
 object DeleteCommentRequest {
   
-  @scala.inline
-  def apply(CommentId: CommentIdType, DocumentId: ResourceIdType, VersionId: DocumentVersionIdType): DeleteCommentRequest = {
+  inline def apply(CommentId: CommentIdType, DocumentId: ResourceIdType, VersionId: DocumentVersionIdType): DeleteCommentRequest = {
     val __obj = js.Dynamic.literal(CommentId = CommentId.asInstanceOf[js.Any], DocumentId = DocumentId.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCommentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCommentRequestMutableBuilder[Self <: DeleteCommentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCommentRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setCommentId(value: CommentIdType): Self = StObject.set(x, "CommentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: CommentIdType): Self = StObject.set(x, "CommentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
   }
 }

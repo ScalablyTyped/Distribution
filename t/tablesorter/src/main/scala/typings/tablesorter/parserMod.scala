@@ -51,8 +51,7 @@ object parserMod {
   }
   object Parser {
     
-    @scala.inline
-    def apply[TElement](
+    inline def apply[TElement](
       format: (String, TElement) => String,
       id: String,
       is: String => Boolean,
@@ -64,23 +63,17 @@ object parserMod {
       __obj.asInstanceOf[Parser[TElement]]
     }
     
-    @scala.inline
-    implicit class ParserMutableBuilder[Self <: Parser[?], TElement] (val x: Self & Parser[TElement]) extends AnyVal {
+    extension [Self <: Parser[?], TElement](x: Self & Parser[TElement]) {
       
-      @scala.inline
-      def setFormat(value: (String, TElement) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (String, TElement) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs(value: String => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
+      inline def setIs(value: String => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParsed(value: Boolean): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: Boolean): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ParserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ParserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

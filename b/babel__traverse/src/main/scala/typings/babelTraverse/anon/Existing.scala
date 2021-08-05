@@ -26,8 +26,7 @@ trait Existing extends StObject {
 }
 object Existing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     existing: Binding,
     identifier: Identifier_,
     kind: `var` | let | const,
@@ -38,22 +37,16 @@ object Existing {
     __obj.asInstanceOf[Existing]
   }
   
-  @scala.inline
-  implicit class ExistingMutableBuilder[Self <: Existing] (val x: Self) extends AnyVal {
+  extension [Self <: Existing](x: Self) {
     
-    @scala.inline
-    def setExisting(value: Binding): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
+    inline def setExisting(value: Binding): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: Identifier_): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier_): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: NodePath[Node]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NodePath[Node]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

@@ -11,11 +11,8 @@ object CSS {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escape(ident: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(ident.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def escape(ident: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(ident.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
-  @scala.inline
-  def supports(conditionText: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(conditionText.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-  @scala.inline
-  def supports(property: java.lang.String, value: java.lang.String): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("supports")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+  inline def supports(conditionText: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(conditionText.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  inline def supports(property: java.lang.String, value: java.lang.String): scala.Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("supports")(property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
 }

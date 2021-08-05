@@ -11,19 +11,15 @@ trait DefaultKmsKeyName extends StObject {
 }
 object DefaultKmsKeyName {
   
-  @scala.inline
-  def apply(): DefaultKmsKeyName = {
+  inline def apply(): DefaultKmsKeyName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultKmsKeyName]
   }
   
-  @scala.inline
-  implicit class DefaultKmsKeyNameMutableBuilder[Self <: DefaultKmsKeyName] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultKmsKeyName](x: Self) {
     
-    @scala.inline
-    def setDefaultKmsKeyName(value: String): Self = StObject.set(x, "defaultKmsKeyName", value.asInstanceOf[js.Any])
+    inline def setDefaultKmsKeyName(value: String): Self = StObject.set(x, "defaultKmsKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultKmsKeyNameUndefined: Self = StObject.set(x, "defaultKmsKeyName", js.undefined)
+    inline def setDefaultKmsKeyNameUndefined: Self = StObject.set(x, "defaultKmsKeyName", js.undefined)
   }
 }

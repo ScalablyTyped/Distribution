@@ -30,8 +30,7 @@ trait SPMgr extends StObject {
 }
 object SPMgr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     NewGroup: (StringDictionary[js.Any], String) => Boolean,
     RenderField: (RenderContext, FieldSchema, StringDictionary[js.Any], ListSchema) => String,
     RenderFieldByName: (RenderContext, String, StringDictionary[js.Any], ListSchema) => String,
@@ -41,19 +40,14 @@ object SPMgr {
     __obj.asInstanceOf[SPMgr]
   }
   
-  @scala.inline
-  implicit class SPMgrMutableBuilder[Self <: SPMgr] (val x: Self) extends AnyVal {
+  extension [Self <: SPMgr](x: Self) {
     
-    @scala.inline
-    def setNewGroup(value: (StringDictionary[js.Any], String) => Boolean): Self = StObject.set(x, "NewGroup", js.Any.fromFunction2(value))
+    inline def setNewGroup(value: (StringDictionary[js.Any], String) => Boolean): Self = StObject.set(x, "NewGroup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderField(value: (RenderContext, FieldSchema, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderField", js.Any.fromFunction4(value))
+    inline def setRenderField(value: (RenderContext, FieldSchema, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderField", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRenderFieldByName(value: (RenderContext, String, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderFieldByName", js.Any.fromFunction4(value))
+    inline def setRenderFieldByName(value: (RenderContext, String, StringDictionary[js.Any], ListSchema) => String): Self = StObject.set(x, "RenderFieldByName", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRenderHeader(value: (RenderContext, FieldSchema) => String): Self = StObject.set(x, "RenderHeader", js.Any.fromFunction2(value))
+    inline def setRenderHeader(value: (RenderContext, FieldSchema) => String): Self = StObject.set(x, "RenderHeader", js.Any.fromFunction2(value))
   }
 }

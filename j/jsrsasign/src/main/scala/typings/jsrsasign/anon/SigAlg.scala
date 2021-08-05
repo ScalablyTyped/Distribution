@@ -18,31 +18,23 @@ trait SigAlg extends StObject {
 }
 object SigAlg {
   
-  @scala.inline
-  def apply(certs: js.Array[String], hashAlg: String, sigAlg: String, signerCert: String, signerPrvKey: String): SigAlg = {
+  inline def apply(certs: js.Array[String], hashAlg: String, sigAlg: String, signerCert: String, signerPrvKey: String): SigAlg = {
     val __obj = js.Dynamic.literal(certs = certs.asInstanceOf[js.Any], hashAlg = hashAlg.asInstanceOf[js.Any], sigAlg = sigAlg.asInstanceOf[js.Any], signerCert = signerCert.asInstanceOf[js.Any], signerPrvKey = signerPrvKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigAlg]
   }
   
-  @scala.inline
-  implicit class SigAlgMutableBuilder[Self <: SigAlg] (val x: Self) extends AnyVal {
+  extension [Self <: SigAlg](x: Self) {
     
-    @scala.inline
-    def setCerts(value: js.Array[String]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
+    inline def setCerts(value: js.Array[String]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value :_*))
+    inline def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value :_*))
     
-    @scala.inline
-    def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigAlg(value: String): Self = StObject.set(x, "sigAlg", value.asInstanceOf[js.Any])
+    inline def setSigAlg(value: String): Self = StObject.set(x, "sigAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerCert(value: String): Self = StObject.set(x, "signerCert", value.asInstanceOf[js.Any])
+    inline def setSignerCert(value: String): Self = StObject.set(x, "signerCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerPrvKey(value: String): Self = StObject.set(x, "signerPrvKey", value.asInstanceOf[js.Any])
+    inline def setSignerPrvKey(value: String): Self = StObject.set(x, "signerPrvKey", value.asInstanceOf[js.Any])
   }
 }

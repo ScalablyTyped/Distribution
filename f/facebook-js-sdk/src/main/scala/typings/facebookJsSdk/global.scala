@@ -9,8 +9,7 @@ object global {
   @JSGlobal("FB")
   @js.native
   def FB: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify fb.FacebookStatic */ js.Any = js.native
-  @scala.inline
-  def FB_=(
+  inline def FB_=(
     x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify fb.FacebookStatic */ js.Any
   ): Unit = js.Dynamic.global.updateDynamic("FB")(x.asInstanceOf[js.Any])
 }

@@ -23,31 +23,23 @@ trait TemplateAlias extends StObject {
 }
 object TemplateAlias {
   
-  @scala.inline
-  def apply(): TemplateAlias = {
+  inline def apply(): TemplateAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateAlias]
   }
   
-  @scala.inline
-  implicit class TemplateAliasMutableBuilder[Self <: TemplateAlias] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateAlias](x: Self) {
     
-    @scala.inline
-    def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
+    inline def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
+    inline def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setTemplateVersionNumber(value: VersionNumber): Self = StObject.set(x, "TemplateVersionNumber", value.asInstanceOf[js.Any])
+    inline def setTemplateVersionNumber(value: VersionNumber): Self = StObject.set(x, "TemplateVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateVersionNumberUndefined: Self = StObject.set(x, "TemplateVersionNumber", js.undefined)
+    inline def setTemplateVersionNumberUndefined: Self = StObject.set(x, "TemplateVersionNumber", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait ConfirmTransitVirtualInterfaceRequest extends StObject {
 }
 object ConfirmTransitVirtualInterfaceRequest {
   
-  @scala.inline
-  def apply(directConnectGatewayId: DirectConnectGatewayId, virtualInterfaceId: VirtualInterfaceId): ConfirmTransitVirtualInterfaceRequest = {
+  inline def apply(directConnectGatewayId: DirectConnectGatewayId, virtualInterfaceId: VirtualInterfaceId): ConfirmTransitVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(directConnectGatewayId = directConnectGatewayId.asInstanceOf[js.Any], virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmTransitVirtualInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class ConfirmTransitVirtualInterfaceRequestMutableBuilder[Self <: ConfirmTransitVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmTransitVirtualInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }
 }

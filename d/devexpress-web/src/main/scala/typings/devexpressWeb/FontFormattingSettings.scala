@@ -76,8 +76,7 @@ trait FontFormattingSettings extends StObject {
 }
 object FontFormattingSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allCaps: Boolean,
     backColor: String,
     bold: Boolean,
@@ -96,46 +95,32 @@ object FontFormattingSettings {
     __obj.asInstanceOf[FontFormattingSettings]
   }
   
-  @scala.inline
-  implicit class FontFormattingSettingsMutableBuilder[Self <: FontFormattingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FontFormattingSettings](x: Self) {
     
-    @scala.inline
-    def setAllCaps(value: Boolean): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
+    inline def setAllCaps(value: Boolean): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: String): Self = StObject.set(x, "foreColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: String): Self = StObject.set(x, "foreColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: CharacterFormattingScript): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: CharacterFormattingScript): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeout(value: Boolean): Self = StObject.set(x, "strikeout", value.asInstanceOf[js.Any])
+    inline def setStrikeout(value: Boolean): Self = StObject.set(x, "strikeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineColor(value: String): Self = StObject.set(x, "underlineColor", value.asInstanceOf[js.Any])
+    inline def setUnderlineColor(value: String): Self = StObject.set(x, "underlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineWordsOnly(value: Boolean): Self = StObject.set(x, "underlineWordsOnly", value.asInstanceOf[js.Any])
+    inline def setUnderlineWordsOnly(value: Boolean): Self = StObject.set(x, "underlineWordsOnly", value.asInstanceOf[js.Any])
   }
 }

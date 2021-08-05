@@ -13,16 +13,13 @@ trait DeleteSnapshotCopyGrantMessage extends StObject {
 }
 object DeleteSnapshotCopyGrantMessage {
   
-  @scala.inline
-  def apply(SnapshotCopyGrantName: String): DeleteSnapshotCopyGrantMessage = {
+  inline def apply(SnapshotCopyGrantName: String): DeleteSnapshotCopyGrantMessage = {
     val __obj = js.Dynamic.literal(SnapshotCopyGrantName = SnapshotCopyGrantName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSnapshotCopyGrantMessage]
   }
   
-  @scala.inline
-  implicit class DeleteSnapshotCopyGrantMessageMutableBuilder[Self <: DeleteSnapshotCopyGrantMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSnapshotCopyGrantMessage](x: Self) {
     
-    @scala.inline
-    def setSnapshotCopyGrantName(value: String): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
+    inline def setSnapshotCopyGrantName(value: String): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
   }
 }

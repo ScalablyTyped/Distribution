@@ -12,19 +12,15 @@ trait Colorizer extends StObject {
 }
 object Colorizer {
   
-  @scala.inline
-  def apply(colorize: (String, String) => Unit, format: (String, js.Any) => Unit): Colorizer = {
+  inline def apply(colorize: (String, String) => Unit, format: (String, js.Any) => Unit): Colorizer = {
     val __obj = js.Dynamic.literal(colorize = js.Any.fromFunction2(colorize), format = js.Any.fromFunction2(format))
     __obj.asInstanceOf[Colorizer]
   }
   
-  @scala.inline
-  implicit class ColorizerMutableBuilder[Self <: Colorizer] (val x: Self) extends AnyVal {
+  extension [Self <: Colorizer](x: Self) {
     
-    @scala.inline
-    def setColorize(value: (String, String) => Unit): Self = StObject.set(x, "colorize", js.Any.fromFunction2(value))
+    inline def setColorize(value: (String, String) => Unit): Self = StObject.set(x, "colorize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormat(value: (String, js.Any) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (String, js.Any) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
   }
 }

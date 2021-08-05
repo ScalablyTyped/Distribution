@@ -18,25 +18,19 @@ trait Record extends StObject {
 }
 object Record {
   
-  @scala.inline
-  def apply(): Record = {
+  inline def apply(): Record = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Record]
   }
   
-  @scala.inline
-  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+  extension [Self <: Record](x: Self) {
     
-    @scala.inline
-    def setJsonPath(value: string): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: string): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonPathUndefined: Self = StObject.set(x, "jsonPath", js.undefined)
+    inline def setJsonPathUndefined: Self = StObject.set(x, "jsonPath", js.undefined)
     
-    @scala.inline
-    def setRecordIndex(value: long): Self = StObject.set(x, "recordIndex", value.asInstanceOf[js.Any])
+    inline def setRecordIndex(value: long): Self = StObject.set(x, "recordIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
+    inline def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
   }
 }

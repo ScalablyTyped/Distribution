@@ -17,28 +17,21 @@ trait DescribeScheduleRequest extends StObject {
 }
 object DescribeScheduleRequest {
   
-  @scala.inline
-  def apply(ChannelId: string): DescribeScheduleRequest = {
+  inline def apply(ChannelId: string): DescribeScheduleRequest = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScheduleRequest]
   }
   
-  @scala.inline
-  implicit class DescribeScheduleRequestMutableBuilder[Self <: DescribeScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

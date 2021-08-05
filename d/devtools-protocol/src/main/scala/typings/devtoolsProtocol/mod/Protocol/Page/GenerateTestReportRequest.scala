@@ -18,22 +18,17 @@ trait GenerateTestReportRequest extends StObject {
 }
 object GenerateTestReportRequest {
   
-  @scala.inline
-  def apply(message: String): GenerateTestReportRequest = {
+  inline def apply(message: String): GenerateTestReportRequest = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateTestReportRequest]
   }
   
-  @scala.inline
-  implicit class GenerateTestReportRequestMutableBuilder[Self <: GenerateTestReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateTestReportRequest](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

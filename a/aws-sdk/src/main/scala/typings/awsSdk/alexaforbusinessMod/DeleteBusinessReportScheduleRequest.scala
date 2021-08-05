@@ -13,16 +13,13 @@ trait DeleteBusinessReportScheduleRequest extends StObject {
 }
 object DeleteBusinessReportScheduleRequest {
   
-  @scala.inline
-  def apply(ScheduleArn: Arn): DeleteBusinessReportScheduleRequest = {
+  inline def apply(ScheduleArn: Arn): DeleteBusinessReportScheduleRequest = {
     val __obj = js.Dynamic.literal(ScheduleArn = ScheduleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBusinessReportScheduleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBusinessReportScheduleRequestMutableBuilder[Self <: DeleteBusinessReportScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBusinessReportScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
+    inline def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
   }
 }

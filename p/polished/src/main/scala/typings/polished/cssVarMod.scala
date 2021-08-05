@@ -10,8 +10,6 @@ object cssVarMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(cssVariable: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any]).asInstanceOf[String | Double]
-  @scala.inline
-  def default(cssVariable: String, passThrough: Boolean): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any], passThrough.asInstanceOf[js.Any])).asInstanceOf[String | Double]
+  inline def default(cssVariable: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def default(cssVariable: String, passThrough: Boolean): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssVariable.asInstanceOf[js.Any], passThrough.asInstanceOf[js.Any])).asInstanceOf[String | Double]
 }

@@ -16,40 +16,29 @@ trait DefaultMetricsCollectorConfiguration extends StObject {
 }
 object DefaultMetricsCollectorConfiguration {
   
-  @scala.inline
-  def apply(): DefaultMetricsCollectorConfiguration = {
+  inline def apply(): DefaultMetricsCollectorConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultMetricsCollectorConfiguration]
   }
   
-  @scala.inline
-  implicit class DefaultMetricsCollectorConfigurationMutableBuilder[Self <: DefaultMetricsCollectorConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultMetricsCollectorConfiguration](x: Self) {
     
-    @scala.inline
-    def setEventLoopMonitoringPrecision(value: Double): Self = StObject.set(x, "eventLoopMonitoringPrecision", value.asInstanceOf[js.Any])
+    inline def setEventLoopMonitoringPrecision(value: Double): Self = StObject.set(x, "eventLoopMonitoringPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventLoopMonitoringPrecisionUndefined: Self = StObject.set(x, "eventLoopMonitoringPrecision", js.undefined)
+    inline def setEventLoopMonitoringPrecisionUndefined: Self = StObject.set(x, "eventLoopMonitoringPrecision", js.undefined)
     
-    @scala.inline
-    def setGcDurationBuckets(value: js.Array[Double]): Self = StObject.set(x, "gcDurationBuckets", value.asInstanceOf[js.Any])
+    inline def setGcDurationBuckets(value: js.Array[Double]): Self = StObject.set(x, "gcDurationBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcDurationBucketsUndefined: Self = StObject.set(x, "gcDurationBuckets", js.undefined)
+    inline def setGcDurationBucketsUndefined: Self = StObject.set(x, "gcDurationBuckets", js.undefined)
     
-    @scala.inline
-    def setGcDurationBucketsVarargs(value: Double*): Self = StObject.set(x, "gcDurationBuckets", js.Array(value :_*))
+    inline def setGcDurationBucketsVarargs(value: Double*): Self = StObject.set(x, "gcDurationBuckets", js.Array(value :_*))
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setRegister(value: Registry): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+    inline def setRegister(value: Registry): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+    inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
   }
 }

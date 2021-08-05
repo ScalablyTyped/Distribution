@@ -23,22 +23,17 @@ trait PutThirdPartyJobFailureResultInput extends StObject {
 }
 object PutThirdPartyJobFailureResultInput {
   
-  @scala.inline
-  def apply(clientToken: ClientToken, failureDetails: FailureDetails, jobId: ThirdPartyJobId): PutThirdPartyJobFailureResultInput = {
+  inline def apply(clientToken: ClientToken, failureDetails: FailureDetails, jobId: ThirdPartyJobId): PutThirdPartyJobFailureResultInput = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], failureDetails = failureDetails.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutThirdPartyJobFailureResultInput]
   }
   
-  @scala.inline
-  implicit class PutThirdPartyJobFailureResultInputMutableBuilder[Self <: PutThirdPartyJobFailureResultInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutThirdPartyJobFailureResultInput](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDetails(value: FailureDetails): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
+    inline def setFailureDetails(value: FailureDetails): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: ThirdPartyJobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: ThirdPartyJobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
   }
 }

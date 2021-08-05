@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLCSSMediaList extends StObject {
   
-  @JSName("MSHTML.HTMLCSSMediaList_typekey")
+  /* private */ @JSName("MSHTML.HTMLCSSMediaList_typekey")
   var MSHTMLDotHTMLCSSMediaList_typekey: HTMLCSSMediaList
   
   def appendMedium(bstrMedium: String): Unit
@@ -21,8 +21,7 @@ trait HTMLCSSMediaList extends StObject {
 }
 object HTMLCSSMediaList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLCSSMediaList_typekey: HTMLCSSMediaList,
     appendMedium: String => Unit,
     deleteMedium: String => Unit,
@@ -35,25 +34,18 @@ object HTMLCSSMediaList {
     __obj.asInstanceOf[HTMLCSSMediaList]
   }
   
-  @scala.inline
-  implicit class HTMLCSSMediaListMutableBuilder[Self <: HTMLCSSMediaList] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLCSSMediaList](x: Self) {
     
-    @scala.inline
-    def setAppendMedium(value: String => Unit): Self = StObject.set(x, "appendMedium", js.Any.fromFunction1(value))
+    inline def setAppendMedium(value: String => Unit): Self = StObject.set(x, "appendMedium", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteMedium(value: String => Unit): Self = StObject.set(x, "deleteMedium", js.Any.fromFunction1(value))
+    inline def setDeleteMedium(value: String => Unit): Self = StObject.set(x, "deleteMedium", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => String): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => String): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTMLCSSMediaList_typekey(value: HTMLCSSMediaList): Self = StObject.set(x, "MSHTML.HTMLCSSMediaList_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLCSSMediaList_typekey(value: HTMLCSSMediaList): Self = StObject.set(x, "MSHTML.HTMLCSSMediaList_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaText(value: String): Self = StObject.set(x, "mediaText", value.asInstanceOf[js.Any])
+    inline def setMediaText(value: String): Self = StObject.set(x, "mediaText", value.asInstanceOf[js.Any])
   }
 }

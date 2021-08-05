@@ -26,8 +26,7 @@ trait VisualVariablesResultSize
 }
 object VisualVariablesResultSize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,16 +37,12 @@ object VisualVariablesResultSize {
     __obj.asInstanceOf[VisualVariablesResultSize]
   }
   
-  @scala.inline
-  implicit class VisualVariablesResultSizeMutableBuilder[Self <: VisualVariablesResultSize] (val x: Self) extends AnyVal {
+  extension [Self <: VisualVariablesResultSize](x: Self) {
     
-    @scala.inline
-    def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
+    inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariables(value: js.Array[SizeVariable]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
+    inline def setVisualVariables(value: js.Array[SizeVariable]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualVariablesVarargs(value: SizeVariable*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: SizeVariable*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
   }
 }

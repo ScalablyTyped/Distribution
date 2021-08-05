@@ -38,49 +38,35 @@ trait ChannelSummary extends StObject {
 }
 object ChannelSummary {
   
-  @scala.inline
-  def apply(): ChannelSummary = {
+  inline def apply(): ChannelSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelSummary]
   }
   
-  @scala.inline
-  implicit class ChannelSummaryMutableBuilder[Self <: ChannelSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSummary](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+    inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
     
-    @scala.inline
-    def setChannelStorage(value: ChannelStorageSummary): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
+    inline def setChannelStorage(value: ChannelStorageSummary): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
+    inline def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setLastMessageArrivalTime(value: Timestamp): Self = StObject.set(x, "lastMessageArrivalTime", value.asInstanceOf[js.Any])
+    inline def setLastMessageArrivalTime(value: Timestamp): Self = StObject.set(x, "lastMessageArrivalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastMessageArrivalTimeUndefined: Self = StObject.set(x, "lastMessageArrivalTime", js.undefined)
+    inline def setLastMessageArrivalTimeUndefined: Self = StObject.set(x, "lastMessageArrivalTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ChannelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ChannelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

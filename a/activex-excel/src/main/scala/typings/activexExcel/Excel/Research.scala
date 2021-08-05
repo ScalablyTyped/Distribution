@@ -11,7 +11,7 @@ trait Research extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.Research_typekey")
+  /* private */ @JSName("Excel.Research_typekey")
   var ExcelDotResearch_typekey: Research = js.native
   
   def IsResearchService(ServiceID: String): Boolean = js.native

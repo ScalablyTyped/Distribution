@@ -10,13 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(value: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-  @scala.inline
-  def default(value: scala.Nothing, noThrow: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], noThrow.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  inline def default(value: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def default(value: scala.Nothing, noThrow: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], noThrow.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
   
-  @scala.inline
-  def assertNever(value: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-  @scala.inline
-  def assertNever(value: scala.Nothing, noThrow: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(value.asInstanceOf[js.Any], noThrow.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
+  inline def assertNever(value: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def assertNever(value: scala.Nothing, noThrow: Boolean): scala.Nothing = (^.asInstanceOf[js.Dynamic].applyDynamic("assertNever")(value.asInstanceOf[js.Any], noThrow.asInstanceOf[js.Any])).asInstanceOf[scala.Nothing]
 }

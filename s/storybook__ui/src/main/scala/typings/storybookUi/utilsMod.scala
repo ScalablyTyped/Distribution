@@ -26,57 +26,37 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createId(itemId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createId")(itemId.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def createId(itemId: String, refId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createId")(itemId.asInstanceOf[js.Any], refId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createId(itemId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createId")(itemId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createId(itemId: String, refId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createId")(itemId.asInstanceOf[js.Any], refId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def cycle[T](array: js.Array[T], index: Double, delta: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cycle")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def cycle[T](array: js.Array[T], index: Double, delta: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cycle")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def get(id: String, dataset: Dataset): Root | Group | Story = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[Root | Group | Story]
+  inline def get(id: String, dataset: Dataset): Root | Group | Story = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[Root | Group | Story]
   
-  @scala.inline
-  def getAncestorIds(data: StoriesHash, id: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAncestorIds")(data.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getAncestorIds(data: StoriesHash, id: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAncestorIds")(data.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getDescendantIds(data: StoriesHash, id: String, skipLeafs: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDescendantIds")(data.asInstanceOf[js.Any], id.asInstanceOf[js.Any], skipLeafs.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getDescendantIds(data: StoriesHash, id: String, skipLeafs: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDescendantIds")(data.asInstanceOf[js.Any], id.asInstanceOf[js.Any], skipLeafs.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getLink(itemId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLink")(itemId.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getLink(itemId: String, refId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLink")(itemId.asInstanceOf[js.Any], refId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getLink(itemId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLink")(itemId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getLink(itemId: String, refId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLink")(itemId.asInstanceOf[js.Any], refId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getParent(id: String, dataset: Dataset): Root | Group | Story = (^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(id.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[Root | Group | Story]
+  inline def getParent(id: String, dataset: Dataset): Root | Group | Story = (^.asInstanceOf[js.Dynamic].applyDynamic("getParent")(id.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[Root | Group | Story]
   
-  @scala.inline
-  def getParents(id: String, dataset: Dataset): js.Array[Item] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParents")(id.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Item]]
+  inline def getParents(id: String, dataset: Dataset): js.Array[Item] = (^.asInstanceOf[js.Dynamic].applyDynamic("getParents")(id.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Item]]
   
-  @scala.inline
-  def getPath(item: Item, ref: RefType): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(item.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getPath(item: Item, ref: RefType): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(item.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getStateType(isLoading: Boolean, isAuthRequired: Boolean, isError: Boolean, isEmpty: Boolean): auth | error | loading | empty | ready = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateType")(isLoading.asInstanceOf[js.Any], isAuthRequired.asInstanceOf[js.Any], isError.asInstanceOf[js.Any], isEmpty.asInstanceOf[js.Any])).asInstanceOf[auth | error | loading | empty | ready]
+  inline def getStateType(isLoading: Boolean, isAuthRequired: Boolean, isError: Boolean, isEmpty: Boolean): auth | error | loading | empty | ready = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateType")(isLoading.asInstanceOf[js.Any], isAuthRequired.asInstanceOf[js.Any], isError.asInstanceOf[js.Any], isEmpty.asInstanceOf[js.Any])).asInstanceOf[auth | error | loading | empty | ready]
   
-  @scala.inline
-  def isAncestor(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")().asInstanceOf[Boolean]
-  @scala.inline
-  def isAncestor(element: Unit, maybeAncestor: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")(element.asInstanceOf[js.Any], maybeAncestor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isAncestor(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isAncestor(element: Element, maybeAncestor: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")(element.asInstanceOf[js.Any], maybeAncestor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isAncestor(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")().asInstanceOf[Boolean]
+  inline def isAncestor(element: Unit, maybeAncestor: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")(element.asInstanceOf[js.Any], maybeAncestor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isAncestor(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAncestor(element: Element, maybeAncestor: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAncestor")(element.asInstanceOf[js.Any], maybeAncestor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def prevent(e: SyntheticEvent[Element, Event]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("prevent")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def prevent(e: SyntheticEvent[Element, Event]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("prevent")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def scrollIntoView(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def scrollIntoView(element: Element, center: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(element.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scrollIntoView(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def scrollIntoView(element: Element, center: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoView")(element.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def searchItem(item: Item, ref: RefType): SearchItem = (^.asInstanceOf[js.Dynamic].applyDynamic("searchItem")(item.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[SearchItem]
+  inline def searchItem(item: Item, ref: RefType): SearchItem = (^.asInstanceOf[js.Dynamic].applyDynamic("searchItem")(item.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[SearchItem]
 }

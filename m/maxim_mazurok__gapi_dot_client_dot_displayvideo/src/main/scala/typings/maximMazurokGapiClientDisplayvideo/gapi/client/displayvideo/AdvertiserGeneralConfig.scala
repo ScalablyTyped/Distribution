@@ -31,31 +31,23 @@ trait AdvertiserGeneralConfig extends StObject {
 }
 object AdvertiserGeneralConfig {
   
-  @scala.inline
-  def apply(): AdvertiserGeneralConfig = {
+  inline def apply(): AdvertiserGeneralConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserGeneralConfig]
   }
   
-  @scala.inline
-  implicit class AdvertiserGeneralConfigMutableBuilder[Self <: AdvertiserGeneralConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserGeneralConfig](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setDomainUrl(value: String): Self = StObject.set(x, "domainUrl", value.asInstanceOf[js.Any])
+    inline def setDomainUrl(value: String): Self = StObject.set(x, "domainUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUrlUndefined: Self = StObject.set(x, "domainUrl", js.undefined)
+    inline def setDomainUrlUndefined: Self = StObject.set(x, "domainUrl", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

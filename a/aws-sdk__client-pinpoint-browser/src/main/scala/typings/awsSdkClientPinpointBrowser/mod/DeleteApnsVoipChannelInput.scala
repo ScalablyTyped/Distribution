@@ -9,8 +9,7 @@ trait DeleteApnsVoipChannelInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipChannelInputMod.DeleteApnsVoipChannelInput
 object DeleteApnsVoipChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): DeleteApnsVoipChannelInput = {
+  inline def apply(ApplicationId: String): DeleteApnsVoipChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApnsVoipChannelInput]
   }

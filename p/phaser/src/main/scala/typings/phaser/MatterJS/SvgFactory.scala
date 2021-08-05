@@ -21,16 +21,13 @@ trait SvgFactory extends StObject {
 }
 object SvgFactory {
   
-  @scala.inline
-  def apply(pathToVertices: (SVGPathElement, Double) => js.Array[Vector]): SvgFactory = {
+  inline def apply(pathToVertices: (SVGPathElement, Double) => js.Array[Vector]): SvgFactory = {
     val __obj = js.Dynamic.literal(pathToVertices = js.Any.fromFunction2(pathToVertices))
     __obj.asInstanceOf[SvgFactory]
   }
   
-  @scala.inline
-  implicit class SvgFactoryMutableBuilder[Self <: SvgFactory] (val x: Self) extends AnyVal {
+  extension [Self <: SvgFactory](x: Self) {
     
-    @scala.inline
-    def setPathToVertices(value: (SVGPathElement, Double) => js.Array[Vector]): Self = StObject.set(x, "pathToVertices", js.Any.fromFunction2(value))
+    inline def setPathToVertices(value: (SVGPathElement, Double) => js.Array[Vector]): Self = StObject.set(x, "pathToVertices", js.Any.fromFunction2(value))
   }
 }

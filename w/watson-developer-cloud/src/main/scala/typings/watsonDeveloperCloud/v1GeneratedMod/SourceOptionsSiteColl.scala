@@ -15,22 +15,17 @@ trait SourceOptionsSiteColl extends StObject {
 }
 object SourceOptionsSiteColl {
   
-  @scala.inline
-  def apply(site_collection_path: String): SourceOptionsSiteColl = {
+  inline def apply(site_collection_path: String): SourceOptionsSiteColl = {
     val __obj = js.Dynamic.literal(site_collection_path = site_collection_path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceOptionsSiteColl]
   }
   
-  @scala.inline
-  implicit class SourceOptionsSiteCollMutableBuilder[Self <: SourceOptionsSiteColl] (val x: Self) extends AnyVal {
+  extension [Self <: SourceOptionsSiteColl](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setSite_collection_path(value: String): Self = StObject.set(x, "site_collection_path", value.asInstanceOf[js.Any])
+    inline def setSite_collection_path(value: String): Self = StObject.set(x, "site_collection_path", value.asInstanceOf[js.Any])
   }
 }

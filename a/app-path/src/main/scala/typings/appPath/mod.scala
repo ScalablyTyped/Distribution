@@ -22,8 +22,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(appName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(appName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(appName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(appName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   @JSImport("app-path", JSImport.Namespace)
   @js.native
@@ -49,10 +48,8 @@ object mod {
   	```
   	*/
   // TODO: remove this in the next major version
-  @scala.inline
-  def default(appName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(appName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(appName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(appName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Synchronously get the path to an app on macOS.
@@ -67,6 +64,5 @@ object mod {
   	//=> '/Applications/Safari.app'
   	```
   	*/
-  @scala.inline
-  def sync(appName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(appName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sync(appName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(appName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

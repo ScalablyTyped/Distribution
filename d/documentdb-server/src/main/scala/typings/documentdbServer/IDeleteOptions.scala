@@ -15,19 +15,15 @@ trait IDeleteOptions extends StObject {
 }
 object IDeleteOptions {
   
-  @scala.inline
-  def apply(): IDeleteOptions = {
+  inline def apply(): IDeleteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDeleteOptions]
   }
   
-  @scala.inline
-  implicit class IDeleteOptionsMutableBuilder[Self <: IDeleteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDeleteOptions](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

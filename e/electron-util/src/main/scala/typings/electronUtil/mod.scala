@@ -118,13 +118,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def aboutMenuItem(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("aboutMenuItem")().asInstanceOf[MenuItemConstructorOptions]
-  @scala.inline
-  def aboutMenuItem(options: AboutMenuItemOptions): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("aboutMenuItem")(options.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
+  inline def aboutMenuItem(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("aboutMenuItem")().asInstanceOf[MenuItemConstructorOptions]
+  inline def aboutMenuItem(options: AboutMenuItemOptions): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("aboutMenuItem")(options.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
   
-  @scala.inline
-  def activeWindow(): BrowserWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("activeWindow")().asInstanceOf[BrowserWindow]
+  inline def activeWindow(): BrowserWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("activeWindow")().asInstanceOf[BrowserWindow]
   
   @JSImport("electron-util", "api")
   @js.native
@@ -134,15 +131,11 @@ object mod {
   @js.native
   val appLaunchTimestamp: Double = js.native
   
-  @scala.inline
-  def appMenu(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("appMenu")().asInstanceOf[MenuItemConstructorOptions]
-  @scala.inline
-  def appMenu(menuItems: js.Array[MenuItemConstructorOptions]): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("appMenu")(menuItems.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
+  inline def appMenu(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("appMenu")().asInstanceOf[MenuItemConstructorOptions]
+  inline def appMenu(menuItems: js.Array[MenuItemConstructorOptions]): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("appMenu")(menuItems.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
   
-  @scala.inline
-  def centerWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerWindow")().asInstanceOf[Unit]
-  @scala.inline
-  def centerWindow(options: CenterWindowOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerWindow")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def centerWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerWindow")().asInstanceOf[Unit]
+  inline def centerWindow(options: CenterWindowOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerWindow")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("electron-util", "chromeVersion")
   @js.native
@@ -152,28 +145,21 @@ object mod {
   @js.native
   val darkMode: DarkMode_ = js.native
   
-  @scala.inline
-  def debugInfo(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugInfo")().asInstanceOf[String]
+  inline def debugInfo(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugInfo")().asInstanceOf[String]
   
-  @scala.inline
-  def disableZoom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableZoom")().asInstanceOf[Unit]
-  @scala.inline
-  def disableZoom(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableZoom")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableZoom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableZoom")().asInstanceOf[Unit]
+  inline def disableZoom(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableZoom")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("electron-util", "electronVersion")
   @js.native
   val electronVersion: String = js.native
   
-  @scala.inline
-  def enforceMacOSAppLocation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceMacOSAppLocation")().asInstanceOf[Unit]
+  inline def enforceMacOSAppLocation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceMacOSAppLocation")().asInstanceOf[Unit]
   
-  @scala.inline
-  def fixPathForAsarUnpack(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixPathForAsarUnpack")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fixPathForAsarUnpack(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixPathForAsarUnpack")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getWindowBoundsCentered(): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowBoundsCentered")().asInstanceOf[Rectangle]
-  @scala.inline
-  def getWindowBoundsCentered(options: GetWindowBoundsCenteredOptions): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowBoundsCentered")(options.asInstanceOf[js.Any]).asInstanceOf[Rectangle]
+  inline def getWindowBoundsCentered(): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowBoundsCentered")().asInstanceOf[Rectangle]
+  inline def getWindowBoundsCentered(options: GetWindowBoundsCenteredOptions): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowBoundsCentered")(options.asInstanceOf[js.Any]).asInstanceOf[Rectangle]
   
   object is {
     
@@ -241,72 +227,51 @@ object mod {
     val windowsStore: Boolean = js.native
   }
   
-  @scala.inline
-  def isFirstAppLaunch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstAppLaunch")().asInstanceOf[Boolean]
+  inline def isFirstAppLaunch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstAppLaunch")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def menuBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBarHeight")().asInstanceOf[Double]
+  inline def menuBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBarHeight")().asInstanceOf[Double]
   
-  @scala.inline
-  def openNewGitHubIssue(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openNewGitHubIssue")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def openNewGitHubIssue(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openNewGitHubIssue")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def openSystemPreferences(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")().asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def openSystemPreferences(
+  inline def openSystemPreferences(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")().asInstanceOf[js.Promise[Unit]]
+  inline def openSystemPreferences(
     pane: Unit,
     section: Advanced | Captioning | Dictation | FDE | Firewall | General | Hearing | Internet | Keyboard | Media_Descriptions | Mouse | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing | SpeakableItems | Switch | TTS
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def openSystemPreferences(
+  inline def openSystemPreferences(
     pane: security,
     section: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def openSystemPreferences(
+  inline def openSystemPreferences(
     pane: sharing,
     section: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def openSystemPreferences(pane: speech, section: Dictation | TTS): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def openSystemPreferences(
+  inline def openSystemPreferences(pane: speech, section: Dictation | TTS): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def openSystemPreferences(
     pane: universalaccess,
     section: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def openSystemPreferences_security(pane: security): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def openSystemPreferences_security(pane: security): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def openSystemPreferences_sharing(pane: sharing): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def openSystemPreferences_sharing(pane: sharing): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def openSystemPreferences_speech(pane: speech): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def openSystemPreferences_speech(pane: speech): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def openSystemPreferences_universalaccess(pane: universalaccess): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def openSystemPreferences_universalaccess(pane: universalaccess): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def openUrlMenuItem(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrlMenuItem")().asInstanceOf[MenuItemConstructorOptions]
-  @scala.inline
-  def openUrlMenuItem(options: OpenUrlMenuItemOptions): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrlMenuItem")(options.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
+  inline def openUrlMenuItem(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrlMenuItem")().asInstanceOf[MenuItemConstructorOptions]
+  inline def openUrlMenuItem(options: OpenUrlMenuItemOptions): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrlMenuItem")(options.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
   
-  @scala.inline
-  def platform[Macos, Windows, Linux, Default](choices: Choices[Macos, Windows, Linux, Default]): Macos | Windows | Linux | Default = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")(choices.asInstanceOf[js.Any]).asInstanceOf[Macos | Windows | Linux | Default]
+  inline def platform[Macos, Windows, Linux, Default](choices: Choices[Macos, Windows, Linux, Default]): Macos | Windows | Linux | Default = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")(choices.asInstanceOf[js.Any]).asInstanceOf[Macos | Windows | Linux | Default]
   
-  @scala.inline
-  def runJS(code: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  @scala.inline
-  def runJS(code: String, window: BrowserWindow): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def runJS(code: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def runJS(code: String, window: BrowserWindow): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def setContentSecurityPolicy(policy: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setContentSecurityPolicy(policy: String, options: SetContentSecurityPolicyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setContentSecurityPolicy(policy: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setContentSecurityPolicy(policy: String, options: SetContentSecurityPolicyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def showAboutWindow(options: ShowAboutWindowOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAboutWindow")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def showAboutWindow(options: ShowAboutWindowOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAboutWindow")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AboutMenuItemOptions = ShowAboutWindowOptions
   
@@ -336,32 +301,24 @@ object mod {
   }
   object CenterWindowOptions {
     
-    @scala.inline
-    def apply(): CenterWindowOptions = {
+    inline def apply(): CenterWindowOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CenterWindowOptions]
     }
     
-    @scala.inline
-    implicit class CenterWindowOptionsMutableBuilder[Self <: CenterWindowOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CenterWindowOptions](x: Self) {
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setWindow(value: BrowserWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: BrowserWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -383,20 +340,16 @@ object mod {
   }
   object DarkMode_ {
     
-    @scala.inline
-    def apply(isEnabled: Boolean, onChange: js.Function0[Unit] => js.Function0[Unit]): DarkMode_ = {
+    inline def apply(isEnabled: Boolean, onChange: js.Function0[Unit] => js.Function0[Unit]): DarkMode_ = {
       val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[DarkMode_]
     }
     
-    @scala.inline
-    implicit class DarkMode_MutableBuilder[Self <: DarkMode_] (val x: Self) extends AnyVal {
+    extension [Self <: DarkMode_](x: Self) {
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: js.Function0[Unit] => js.Function0[Unit]): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: js.Function0[Unit] => js.Function0[Unit]): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     }
   }
   
@@ -420,26 +373,20 @@ object mod {
   }
   object GetWindowBoundsCenteredOptions {
     
-    @scala.inline
-    def apply(): GetWindowBoundsCenteredOptions = {
+    inline def apply(): GetWindowBoundsCenteredOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetWindowBoundsCenteredOptions]
     }
     
-    @scala.inline
-    implicit class GetWindowBoundsCenteredOptionsMutableBuilder[Self <: GetWindowBoundsCenteredOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetWindowBoundsCenteredOptions](x: Self) {
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setWindow(value: BrowserWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: BrowserWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
   
@@ -502,150 +449,104 @@ object mod {
   }
   object OpenUrlMenuItemOptions {
     
-    @scala.inline
-    def apply(url: String): OpenUrlMenuItemOptions = {
+    inline def apply(url: String): OpenUrlMenuItemOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenUrlMenuItemOptions]
     }
     
-    @scala.inline
-    implicit class OpenUrlMenuItemOptionsMutableBuilder[Self <: OpenUrlMenuItemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OpenUrlMenuItemOptions](x: Self) {
       
-      @scala.inline
-      def setAccelerator(value: Accelerator): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
+      inline def setAccelerator(value: Accelerator): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceleratorUndefined: Self = StObject.set(x, "accelerator", js.undefined)
+      inline def setAcceleratorUndefined: Self = StObject.set(x, "accelerator", js.undefined)
       
-      @scala.inline
-      def setAcceleratorWorksWhenHidden(value: Boolean): Self = StObject.set(x, "acceleratorWorksWhenHidden", value.asInstanceOf[js.Any])
+      inline def setAcceleratorWorksWhenHidden(value: Boolean): Self = StObject.set(x, "acceleratorWorksWhenHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceleratorWorksWhenHiddenUndefined: Self = StObject.set(x, "acceleratorWorksWhenHidden", js.undefined)
+      inline def setAcceleratorWorksWhenHiddenUndefined: Self = StObject.set(x, "acceleratorWorksWhenHidden", js.undefined)
       
-      @scala.inline
-      def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterGroupContaining(value: js.Array[String]): Self = StObject.set(x, "afterGroupContaining", value.asInstanceOf[js.Any])
+      inline def setAfterGroupContaining(value: js.Array[String]): Self = StObject.set(x, "afterGroupContaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterGroupContainingUndefined: Self = StObject.set(x, "afterGroupContaining", js.undefined)
+      inline def setAfterGroupContainingUndefined: Self = StObject.set(x, "afterGroupContaining", js.undefined)
       
-      @scala.inline
-      def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value :_*))
+      inline def setAfterGroupContainingVarargs(value: String*): Self = StObject.set(x, "afterGroupContaining", js.Array(value :_*))
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
       
-      @scala.inline
-      def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeGroupContaining(value: js.Array[String]): Self = StObject.set(x, "beforeGroupContaining", value.asInstanceOf[js.Any])
+      inline def setBeforeGroupContaining(value: js.Array[String]): Self = StObject.set(x, "beforeGroupContaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeGroupContainingUndefined: Self = StObject.set(x, "beforeGroupContaining", js.undefined)
+      inline def setBeforeGroupContainingUndefined: Self = StObject.set(x, "beforeGroupContaining", js.undefined)
       
-      @scala.inline
-      def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value :_*))
+      inline def setBeforeGroupContainingVarargs(value: String*): Self = StObject.set(x, "beforeGroupContaining", js.Array(value :_*))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
+      inline def setBeforeVarargs(value: String*): Self = StObject.set(x, "before", js.Array(value :_*))
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setClick(
+      inline def setClick(
         value: (/* menuItem */ MenuItem, /* browserWindow */ js.UndefOr[typings.electron.Electron.BrowserWindow], /* event */ KeyboardEvent) => Unit
       ): Self = StObject.set(x, "click", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setRegisterAccelerator(value: Boolean): Self = StObject.set(x, "registerAccelerator", value.asInstanceOf[js.Any])
+      inline def setRegisterAccelerator(value: Boolean): Self = StObject.set(x, "registerAccelerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisterAcceleratorUndefined: Self = StObject.set(x, "registerAccelerator", js.undefined)
+      inline def setRegisterAcceleratorUndefined: Self = StObject.set(x, "registerAccelerator", js.undefined)
       
-      @scala.inline
-      def setRole(
+      inline def setRole(
         value: undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
       ): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
+      inline def setSublabel(value: String): Self = StObject.set(x, "sublabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSublabelUndefined: Self = StObject.set(x, "sublabel", js.undefined)
+      inline def setSublabelUndefined: Self = StObject.set(x, "sublabel", js.undefined)
       
-      @scala.inline
-      def setSubmenu(value: js.Array[MenuItemConstructorOptions] | Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
+      inline def setSubmenu(value: js.Array[MenuItemConstructorOptions] | Menu): Self = StObject.set(x, "submenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
+      inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
       
-      @scala.inline
-      def setSubmenuVarargs(value: MenuItemConstructorOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
+      inline def setSubmenuVarargs(value: MenuItemConstructorOptions*): Self = StObject.set(x, "submenu", js.Array(value :_*))
       
-      @scala.inline
-      def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+      inline def setToolTip(value: String): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
+      inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
       
-      @scala.inline
-      def setType(value: normal | separator | submenu | checkbox | radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: normal | separator | submenu | checkbox | radio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -673,38 +574,28 @@ object mod {
   }
   object OptionalRectangle {
     
-    @scala.inline
-    def apply(): OptionalRectangle = {
+    inline def apply(): OptionalRectangle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalRectangle]
     }
     
-    @scala.inline
-    implicit class OptionalRectangleMutableBuilder[Self <: OptionalRectangle] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalRectangle](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -718,20 +609,16 @@ object mod {
   }
   object SetContentSecurityPolicyOptions {
     
-    @scala.inline
-    def apply(): SetContentSecurityPolicyOptions = {
+    inline def apply(): SetContentSecurityPolicyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetContentSecurityPolicyOptions]
     }
     
-    @scala.inline
-    implicit class SetContentSecurityPolicyOptionsMutableBuilder[Self <: SetContentSecurityPolicyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetContentSecurityPolicyOptions](x: Self) {
       
-      @scala.inline
-      def setSession(value: Session_): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Session_): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     }
   }
   
@@ -770,44 +657,32 @@ object mod {
   }
   object ShowAboutWindowOptions {
     
-    @scala.inline
-    def apply(): ShowAboutWindowOptions = {
+    inline def apply(): ShowAboutWindowOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShowAboutWindowOptions]
     }
     
-    @scala.inline
-    implicit class ShowAboutWindowOptionsMutableBuilder[Self <: ShowAboutWindowOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShowAboutWindowOptions](x: Self) {
       
-      @scala.inline
-      def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+      inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+      inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+      inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+      inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
     }
   }
   
@@ -823,8 +698,7 @@ object mod {
   }
   object SystemPreferencesPanes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture,
       sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing,
       speech: Dictation | TTS,
@@ -834,24 +708,19 @@ object mod {
       __obj.asInstanceOf[SystemPreferencesPanes]
     }
     
-    @scala.inline
-    implicit class SystemPreferencesPanesMutableBuilder[Self <: SystemPreferencesPanes] (val x: Self) extends AnyVal {
+    extension [Self <: SystemPreferencesPanes](x: Self) {
       
-      @scala.inline
-      def setSecurity(
+      inline def setSecurity(
         value: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
       ): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharing(
+      inline def setSharing(
         value: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing
       ): Self = StObject.set(x, "sharing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeech(value: Dictation | TTS): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
+      inline def setSpeech(value: Dictation | TTS): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniversalaccess(
+      inline def setUniversalaccess(
         value: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
       ): Self = StObject.set(x, "universalaccess", value.asInstanceOf[js.Any])
     }
@@ -869,50 +738,36 @@ object mod {
   }
   object _Choices {
     
-    @scala.inline
-    def apply[Macos, Windows, Linux, Default](): _Choices[Macos, Windows, Linux, Default] = {
+    inline def apply[Macos, Windows, Linux, Default](): _Choices[Macos, Windows, Linux, Default] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[_Choices[Macos, Windows, Linux, Default]]
     }
     
-    @scala.inline
-    implicit class _ChoicesMutableBuilder[Self <: _Choices[?, ?, ?, ?], Macos, Windows, Linux, Default] (val x: Self & (_Choices[Macos, Windows, Linux, Default])) extends AnyVal {
+    extension [Self <: _Choices[?, ?, ?, ?], Macos, Windows, Linux, Default](x: Self & (_Choices[Macos, Windows, Linux, Default])) {
       
-      @scala.inline
-      def setDefault(value: Default | js.Function0[Default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Default | js.Function0[Default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFunction0(value: () => Default): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
+      inline def setDefaultFunction0(value: () => Default): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setLinux(value: Linux | js.Function0[Linux]): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
+      inline def setLinux(value: Linux | js.Function0[Linux]): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinuxFunction0(value: () => Linux): Self = StObject.set(x, "linux", js.Any.fromFunction0(value))
+      inline def setLinuxFunction0(value: () => Linux): Self = StObject.set(x, "linux", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
+      inline def setLinuxUndefined: Self = StObject.set(x, "linux", js.undefined)
       
-      @scala.inline
-      def setMacos(value: Macos | js.Function0[Macos]): Self = StObject.set(x, "macos", value.asInstanceOf[js.Any])
+      inline def setMacos(value: Macos | js.Function0[Macos]): Self = StObject.set(x, "macos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacosFunction0(value: () => Macos): Self = StObject.set(x, "macos", js.Any.fromFunction0(value))
+      inline def setMacosFunction0(value: () => Macos): Self = StObject.set(x, "macos", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMacosUndefined: Self = StObject.set(x, "macos", js.undefined)
+      inline def setMacosUndefined: Self = StObject.set(x, "macos", js.undefined)
       
-      @scala.inline
-      def setWindows(value: Windows | js.Function0[Windows]): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: Windows | js.Function0[Windows]): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowsFunction0(value: () => Windows): Self = StObject.set(x, "windows", js.Any.fromFunction0(value))
+      inline def setWindowsFunction0(value: () => Windows): Self = StObject.set(x, "windows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
+      inline def setWindowsUndefined: Self = StObject.set(x, "windows", js.undefined)
     }
   }
 }

@@ -14,8 +14,7 @@ object fibMod {
   /**
     * [MS-DOC] 2.5.1 Fib
     */
-  @scala.inline
-  def readFib(buffer: Buffer): Fib = ^.asInstanceOf[js.Dynamic].applyDynamic("readFib")(buffer.asInstanceOf[js.Any]).asInstanceOf[Fib]
+  inline def readFib(buffer: Buffer): Fib = ^.asInstanceOf[js.Dynamic].applyDynamic("readFib")(buffer.asInstanceOf[js.Any]).asInstanceOf[Fib]
   
   trait Fib extends StObject {
     
@@ -29,29 +28,22 @@ object fibMod {
   }
   object Fib {
     
-    @scala.inline
-    def apply(base: FibBase, fibRgFcLcbBlob: FibRgFcLcb, fibRgLw: FibRgLw97): Fib = {
+    inline def apply(base: FibBase, fibRgFcLcbBlob: FibRgFcLcb, fibRgLw: FibRgLw97): Fib = {
       val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], fibRgFcLcbBlob = fibRgFcLcbBlob.asInstanceOf[js.Any], fibRgLw = fibRgLw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fib]
     }
     
-    @scala.inline
-    implicit class FibMutableBuilder[Self <: Fib] (val x: Self) extends AnyVal {
+    extension [Self <: Fib](x: Self) {
       
-      @scala.inline
-      def setBase(value: FibBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: FibBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFibRgCswNew(value: FibRgCswNew): Self = StObject.set(x, "fibRgCswNew", value.asInstanceOf[js.Any])
+      inline def setFibRgCswNew(value: FibRgCswNew): Self = StObject.set(x, "fibRgCswNew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFibRgCswNewUndefined: Self = StObject.set(x, "fibRgCswNew", js.undefined)
+      inline def setFibRgCswNewUndefined: Self = StObject.set(x, "fibRgCswNew", js.undefined)
       
-      @scala.inline
-      def setFibRgFcLcbBlob(value: FibRgFcLcb): Self = StObject.set(x, "fibRgFcLcbBlob", value.asInstanceOf[js.Any])
+      inline def setFibRgFcLcbBlob(value: FibRgFcLcb): Self = StObject.set(x, "fibRgFcLcbBlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFibRgLw(value: FibRgLw97): Self = StObject.set(x, "fibRgLw", value.asInstanceOf[js.Any])
+      inline def setFibRgLw(value: FibRgLw97): Self = StObject.set(x, "fibRgLw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,20 +69,16 @@ object fibMod {
   }
   object FibBase {
     
-    @scala.inline
-    def apply(fWhichTblStm: Double, nFib: Double): FibBase = {
+    inline def apply(fWhichTblStm: Double, nFib: Double): FibBase = {
       val __obj = js.Dynamic.literal(fWhichTblStm = fWhichTblStm.asInstanceOf[js.Any], nFib = nFib.asInstanceOf[js.Any])
       __obj.asInstanceOf[FibBase]
     }
     
-    @scala.inline
-    implicit class FibBaseMutableBuilder[Self <: FibBase] (val x: Self) extends AnyVal {
+    extension [Self <: FibBase](x: Self) {
       
-      @scala.inline
-      def setFWhichTblStm(value: Double): Self = StObject.set(x, "fWhichTblStm", value.asInstanceOf[js.Any])
+      inline def setFWhichTblStm(value: Double): Self = StObject.set(x, "fWhichTblStm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNFib(value: Double): Self = StObject.set(x, "nFib", value.asInstanceOf[js.Any])
+      inline def setNFib(value: Double): Self = StObject.set(x, "nFib", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,17 +96,14 @@ object fibMod {
   }
   object FibRgCswNew {
     
-    @scala.inline
-    def apply(nFibNew: Double): FibRgCswNew = {
+    inline def apply(nFibNew: Double): FibRgCswNew = {
       val __obj = js.Dynamic.literal(nFibNew = nFibNew.asInstanceOf[js.Any])
       __obj.asInstanceOf[FibRgCswNew]
     }
     
-    @scala.inline
-    implicit class FibRgCswNewMutableBuilder[Self <: FibRgCswNew] (val x: Self) extends AnyVal {
+    extension [Self <: FibRgCswNew](x: Self) {
       
-      @scala.inline
-      def setNFibNew(value: Double): Self = StObject.set(x, "nFibNew", value.asInstanceOf[js.Any])
+      inline def setNFibNew(value: Double): Self = StObject.set(x, "nFibNew", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,26 +141,20 @@ object fibMod {
   }
   object FibRgFcLcb {
     
-    @scala.inline
-    def apply(fcClx: Double, fcPlcfBtePapx: Double, lcbClx: Double, lcbPlcfBtePapx: Double): FibRgFcLcb = {
+    inline def apply(fcClx: Double, fcPlcfBtePapx: Double, lcbClx: Double, lcbPlcfBtePapx: Double): FibRgFcLcb = {
       val __obj = js.Dynamic.literal(fcClx = fcClx.asInstanceOf[js.Any], fcPlcfBtePapx = fcPlcfBtePapx.asInstanceOf[js.Any], lcbClx = lcbClx.asInstanceOf[js.Any], lcbPlcfBtePapx = lcbPlcfBtePapx.asInstanceOf[js.Any])
       __obj.asInstanceOf[FibRgFcLcb]
     }
     
-    @scala.inline
-    implicit class FibRgFcLcbMutableBuilder[Self <: FibRgFcLcb] (val x: Self) extends AnyVal {
+    extension [Self <: FibRgFcLcb](x: Self) {
       
-      @scala.inline
-      def setFcClx(value: Double): Self = StObject.set(x, "fcClx", value.asInstanceOf[js.Any])
+      inline def setFcClx(value: Double): Self = StObject.set(x, "fcClx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFcPlcfBtePapx(value: Double): Self = StObject.set(x, "fcPlcfBtePapx", value.asInstanceOf[js.Any])
+      inline def setFcPlcfBtePapx(value: Double): Self = StObject.set(x, "fcPlcfBtePapx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcbClx(value: Double): Self = StObject.set(x, "lcbClx", value.asInstanceOf[js.Any])
+      inline def setLcbClx(value: Double): Self = StObject.set(x, "lcbClx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcbPlcfBtePapx(value: Double): Self = StObject.set(x, "lcbPlcfBtePapx", value.asInstanceOf[js.Any])
+      inline def setLcbPlcfBtePapx(value: Double): Self = StObject.set(x, "lcbPlcfBtePapx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +209,7 @@ object fibMod {
   }
   object FibRgLw97 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ccpAtn: Double,
       ccpEdn: Double,
       ccpFtn: Double,
@@ -244,29 +222,21 @@ object fibMod {
       __obj.asInstanceOf[FibRgLw97]
     }
     
-    @scala.inline
-    implicit class FibRgLw97MutableBuilder[Self <: FibRgLw97] (val x: Self) extends AnyVal {
+    extension [Self <: FibRgLw97](x: Self) {
       
-      @scala.inline
-      def setCcpAtn(value: Double): Self = StObject.set(x, "ccpAtn", value.asInstanceOf[js.Any])
+      inline def setCcpAtn(value: Double): Self = StObject.set(x, "ccpAtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcpEdn(value: Double): Self = StObject.set(x, "ccpEdn", value.asInstanceOf[js.Any])
+      inline def setCcpEdn(value: Double): Self = StObject.set(x, "ccpEdn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcpFtn(value: Double): Self = StObject.set(x, "ccpFtn", value.asInstanceOf[js.Any])
+      inline def setCcpFtn(value: Double): Self = StObject.set(x, "ccpFtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcpHdd(value: Double): Self = StObject.set(x, "ccpHdd", value.asInstanceOf[js.Any])
+      inline def setCcpHdd(value: Double): Self = StObject.set(x, "ccpHdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcpHdrTxbx(value: Double): Self = StObject.set(x, "ccpHdrTxbx", value.asInstanceOf[js.Any])
+      inline def setCcpHdrTxbx(value: Double): Self = StObject.set(x, "ccpHdrTxbx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcpText(value: Double): Self = StObject.set(x, "ccpText", value.asInstanceOf[js.Any])
+      inline def setCcpText(value: Double): Self = StObject.set(x, "ccpText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcpTxbx(value: Double): Self = StObject.set(x, "ccpTxbx", value.asInstanceOf[js.Any])
+      inline def setCcpTxbx(value: Double): Self = StObject.set(x, "ccpTxbx", value.asInstanceOf[js.Any])
     }
   }
 }

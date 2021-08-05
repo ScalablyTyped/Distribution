@@ -23,28 +23,21 @@ trait AssociatePhoneNumbersWithVoiceConnectorGroupRequest extends StObject {
 }
 object AssociatePhoneNumbersWithVoiceConnectorGroupRequest {
   
-  @scala.inline
-  def apply(E164PhoneNumbers: E164PhoneNumberList, VoiceConnectorGroupId: NonEmptyString): AssociatePhoneNumbersWithVoiceConnectorGroupRequest = {
+  inline def apply(E164PhoneNumbers: E164PhoneNumberList, VoiceConnectorGroupId: NonEmptyString): AssociatePhoneNumbersWithVoiceConnectorGroupRequest = {
     val __obj = js.Dynamic.literal(E164PhoneNumbers = E164PhoneNumbers.asInstanceOf[js.Any], VoiceConnectorGroupId = VoiceConnectorGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociatePhoneNumbersWithVoiceConnectorGroupRequest]
   }
   
-  @scala.inline
-  implicit class AssociatePhoneNumbersWithVoiceConnectorGroupRequestMutableBuilder[Self <: AssociatePhoneNumbersWithVoiceConnectorGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociatePhoneNumbersWithVoiceConnectorGroupRequest](x: Self) {
     
-    @scala.inline
-    def setE164PhoneNumbers(value: E164PhoneNumberList): Self = StObject.set(x, "E164PhoneNumbers", value.asInstanceOf[js.Any])
+    inline def setE164PhoneNumbers(value: E164PhoneNumberList): Self = StObject.set(x, "E164PhoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value :_*))
+    inline def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value :_*))
     
-    @scala.inline
-    def setForceAssociate(value: NullableBoolean): Self = StObject.set(x, "ForceAssociate", value.asInstanceOf[js.Any])
+    inline def setForceAssociate(value: NullableBoolean): Self = StObject.set(x, "ForceAssociate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceAssociateUndefined: Self = StObject.set(x, "ForceAssociate", js.undefined)
+    inline def setForceAssociateUndefined: Self = StObject.set(x, "ForceAssociate", js.undefined)
     
-    @scala.inline
-    def setVoiceConnectorGroupId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorGroupId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorGroupId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorGroupId", value.asInstanceOf[js.Any])
   }
 }

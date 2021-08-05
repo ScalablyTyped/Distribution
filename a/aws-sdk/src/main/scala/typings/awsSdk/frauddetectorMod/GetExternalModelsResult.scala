@@ -18,28 +18,21 @@ trait GetExternalModelsResult extends StObject {
 }
 object GetExternalModelsResult {
   
-  @scala.inline
-  def apply(): GetExternalModelsResult = {
+  inline def apply(): GetExternalModelsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetExternalModelsResult]
   }
   
-  @scala.inline
-  implicit class GetExternalModelsResultMutableBuilder[Self <: GetExternalModelsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetExternalModelsResult](x: Self) {
     
-    @scala.inline
-    def setExternalModels(value: ExternalModelList): Self = StObject.set(x, "externalModels", value.asInstanceOf[js.Any])
+    inline def setExternalModels(value: ExternalModelList): Self = StObject.set(x, "externalModels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalModelsUndefined: Self = StObject.set(x, "externalModels", js.undefined)
+    inline def setExternalModelsUndefined: Self = StObject.set(x, "externalModels", js.undefined)
     
-    @scala.inline
-    def setExternalModelsVarargs(value: ExternalModel*): Self = StObject.set(x, "externalModels", js.Array(value :_*))
+    inline def setExternalModelsVarargs(value: ExternalModel*): Self = StObject.set(x, "externalModels", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

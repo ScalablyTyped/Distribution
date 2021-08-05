@@ -14,21 +14,15 @@ object mod {
   @JSImport("portfinder", "basePort")
   @js.native
   def basePort: Double = js.native
-  @scala.inline
-  def basePort_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basePort")(x.asInstanceOf[js.Any])
+  inline def basePort_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("basePort")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def getPort(callback: PortfinderCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def getPort(options: PortFinderOptions, callback: PortfinderCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getPort(callback: PortfinderCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getPort(options: PortFinderOptions, callback: PortfinderCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getPortPromise(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPortPromise")().asInstanceOf[js.Promise[Double]]
-  @scala.inline
-  def getPortPromise(options: PortFinderOptions): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPortPromise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def getPortPromise(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPortPromise")().asInstanceOf[js.Promise[Double]]
+  inline def getPortPromise(options: PortFinderOptions): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPortPromise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
-  @scala.inline
-  def getPorts(
+  inline def getPorts(
     count: Double,
     options: PortFinderOptions,
     callback: js.Function2[/* err */ Error, /* ports */ js.Array[Double], Unit]
@@ -61,38 +55,28 @@ object mod {
   }
   object PortFinderOptions {
     
-    @scala.inline
-    def apply(): PortFinderOptions = {
+    inline def apply(): PortFinderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortFinderOptions]
     }
     
-    @scala.inline
-    implicit class PortFinderOptionsMutableBuilder[Self <: PortFinderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PortFinderOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setStartPort(value: Double): Self = StObject.set(x, "startPort", value.asInstanceOf[js.Any])
+      inline def setStartPort(value: Double): Self = StObject.set(x, "startPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPortUndefined: Self = StObject.set(x, "startPort", js.undefined)
+      inline def setStartPortUndefined: Self = StObject.set(x, "startPort", js.undefined)
       
-      @scala.inline
-      def setStopPort(value: Double): Self = StObject.set(x, "stopPort", value.asInstanceOf[js.Any])
+      inline def setStopPort(value: Double): Self = StObject.set(x, "stopPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopPortUndefined: Self = StObject.set(x, "stopPort", js.undefined)
+      inline def setStopPortUndefined: Self = StObject.set(x, "stopPort", js.undefined)
     }
   }
   

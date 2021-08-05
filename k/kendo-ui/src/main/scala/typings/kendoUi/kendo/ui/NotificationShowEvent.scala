@@ -13,19 +13,15 @@ trait NotificationShowEvent
 }
 object NotificationShowEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Notification): NotificationShowEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Notification): NotificationShowEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationShowEvent]
   }
   
-  @scala.inline
-  implicit class NotificationShowEventMutableBuilder[Self <: NotificationShowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationShowEvent](x: Self) {
     
-    @scala.inline
-    def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
   }
 }

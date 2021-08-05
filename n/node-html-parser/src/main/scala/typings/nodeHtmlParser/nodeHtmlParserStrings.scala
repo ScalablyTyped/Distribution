@@ -11,27 +11,23 @@ object nodeHtmlParserStrings {
   sealed trait afterbegin
     extends StObject
        with InsertPosition
-  @scala.inline
-  def afterbegin: afterbegin = "afterbegin".asInstanceOf[afterbegin]
+  inline def afterbegin: afterbegin = "afterbegin".asInstanceOf[afterbegin]
   
   @js.native
   sealed trait afterend
     extends StObject
        with InsertPosition
-  @scala.inline
-  def afterend: afterend = "afterend".asInstanceOf[afterend]
+  inline def afterend: afterend = "afterend".asInstanceOf[afterend]
   
   @js.native
   sealed trait beforebegin
     extends StObject
        with InsertPosition
-  @scala.inline
-  def beforebegin: beforebegin = "beforebegin".asInstanceOf[beforebegin]
+  inline def beforebegin: beforebegin = "beforebegin".asInstanceOf[beforebegin]
   
   @js.native
   sealed trait beforeend
     extends StObject
        with InsertPosition
-  @scala.inline
-  def beforeend: beforeend = "beforeend".asInstanceOf[beforeend]
+  inline def beforeend: beforeend = "beforeend".asInstanceOf[beforeend]
 }

@@ -31,9 +31,9 @@ object linkMod {
     
     def formatRepoName(fullName: String): String = js.native
     
-    var getAppClient: js.Any = js.native
+    /* private */ var getAppClient: js.Any = js.native
     
-    var getUserClient: js.Any = js.native
+    /* private */ var getUserClient: js.Any = js.native
     
     def linkApp(app: App, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     

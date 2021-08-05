@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorFormat extends StObject
 object ColorFormat {
   
-  @scala.inline
-  def hex: typings.novaEditorNode.novaEditorNodeStrings.hex = "hex".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hex]
+  inline def hex: typings.novaEditorNode.novaEditorNodeStrings.hex = "hex".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hex]
   
-  @scala.inline
-  def hsb: typings.novaEditorNode.novaEditorNodeStrings.hsb = "hsb".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hsb]
+  inline def hsb: typings.novaEditorNode.novaEditorNodeStrings.hsb = "hsb".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hsb]
   
-  @scala.inline
-  def hsl: typings.novaEditorNode.novaEditorNodeStrings.hsl = "hsl".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hsl]
+  inline def hsl: typings.novaEditorNode.novaEditorNodeStrings.hsl = "hsl".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hsl]
   
-  @scala.inline
-  def p3: typings.novaEditorNode.novaEditorNodeStrings.p3 = "p3".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.p3]
+  inline def p3: typings.novaEditorNode.novaEditorNodeStrings.p3 = "p3".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.p3]
   
-  @scala.inline
-  def rgb: typings.novaEditorNode.novaEditorNodeStrings.rgb = "rgb".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.rgb]
+  inline def rgb: typings.novaEditorNode.novaEditorNodeStrings.rgb = "rgb".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.rgb]
 }

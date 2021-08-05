@@ -11,6 +11,5 @@ object stringifyQueryParamsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stringifyQueryParams(queryParams: Record[String, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyQueryParams")(queryParams.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringifyQueryParams(queryParams: Record[String, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyQueryParams")(queryParams.asInstanceOf[js.Any]).asInstanceOf[String]
 }

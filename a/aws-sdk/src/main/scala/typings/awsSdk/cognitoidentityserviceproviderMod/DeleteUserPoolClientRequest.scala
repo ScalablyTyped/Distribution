@@ -18,19 +18,15 @@ trait DeleteUserPoolClientRequest extends StObject {
 }
 object DeleteUserPoolClientRequest {
   
-  @scala.inline
-  def apply(ClientId: ClientIdType, UserPoolId: UserPoolIdType): DeleteUserPoolClientRequest = {
+  inline def apply(ClientId: ClientIdType, UserPoolId: UserPoolIdType): DeleteUserPoolClientRequest = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserPoolClientRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserPoolClientRequestMutableBuilder[Self <: DeleteUserPoolClientRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserPoolClientRequest](x: Self) {
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

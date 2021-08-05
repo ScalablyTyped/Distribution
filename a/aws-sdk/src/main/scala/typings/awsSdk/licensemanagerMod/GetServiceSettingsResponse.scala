@@ -33,43 +33,31 @@ trait GetServiceSettingsResponse extends StObject {
 }
 object GetServiceSettingsResponse {
   
-  @scala.inline
-  def apply(): GetServiceSettingsResponse = {
+  inline def apply(): GetServiceSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetServiceSettingsResponse]
   }
   
-  @scala.inline
-  implicit class GetServiceSettingsResponseMutableBuilder[Self <: GetServiceSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setEnableCrossAccountsDiscovery(value: BoxBoolean): Self = StObject.set(x, "EnableCrossAccountsDiscovery", value.asInstanceOf[js.Any])
+    inline def setEnableCrossAccountsDiscovery(value: BoxBoolean): Self = StObject.set(x, "EnableCrossAccountsDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCrossAccountsDiscoveryUndefined: Self = StObject.set(x, "EnableCrossAccountsDiscovery", js.undefined)
+    inline def setEnableCrossAccountsDiscoveryUndefined: Self = StObject.set(x, "EnableCrossAccountsDiscovery", js.undefined)
     
-    @scala.inline
-    def setLicenseManagerResourceShareArn(value: String): Self = StObject.set(x, "LicenseManagerResourceShareArn", value.asInstanceOf[js.Any])
+    inline def setLicenseManagerResourceShareArn(value: String): Self = StObject.set(x, "LicenseManagerResourceShareArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseManagerResourceShareArnUndefined: Self = StObject.set(x, "LicenseManagerResourceShareArn", js.undefined)
+    inline def setLicenseManagerResourceShareArnUndefined: Self = StObject.set(x, "LicenseManagerResourceShareArn", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfiguration(value: OrganizationConfiguration): Self = StObject.set(x, "OrganizationConfiguration", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfiguration(value: OrganizationConfiguration): Self = StObject.set(x, "OrganizationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConfigurationUndefined: Self = StObject.set(x, "OrganizationConfiguration", js.undefined)
+    inline def setOrganizationConfigurationUndefined: Self = StObject.set(x, "OrganizationConfiguration", js.undefined)
     
-    @scala.inline
-    def setS3BucketArn(value: String): Self = StObject.set(x, "S3BucketArn", value.asInstanceOf[js.Any])
+    inline def setS3BucketArn(value: String): Self = StObject.set(x, "S3BucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketArnUndefined: Self = StObject.set(x, "S3BucketArn", js.undefined)
+    inline def setS3BucketArnUndefined: Self = StObject.set(x, "S3BucketArn", js.undefined)
     
-    @scala.inline
-    def setSnsTopicArn(value: String): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: String): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
+    inline def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
   }
 }

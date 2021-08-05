@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object serializeMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(mixedValue: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mixedValue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(mixedValue: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(mixedValue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/var/serialize", JSImport.Namespace)
   @js.native

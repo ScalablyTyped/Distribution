@@ -58,64 +58,45 @@ trait BundleEntryResponse
 }
 object BundleEntryResponse {
   
-  @scala.inline
-  def apply(status: String): BundleEntryResponse = {
+  inline def apply(status: String): BundleEntryResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleEntryResponse]
   }
   
-  @scala.inline
-  implicit class BundleEntryResponseMutableBuilder[Self <: BundleEntryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BundleEntryResponse](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: instant): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: instant): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    @scala.inline
-    def setLocation(value: uri): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: uri): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setOutcome(value: Resource): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: Resource): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
+    inline def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_etag(value: Element): Self = StObject.set(x, "_etag", value.asInstanceOf[js.Any])
+    inline def set_etag(value: Element): Self = StObject.set(x, "_etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_etagUndefined: Self = StObject.set(x, "_etag", js.undefined)
+    inline def set_etagUndefined: Self = StObject.set(x, "_etag", js.undefined)
     
-    @scala.inline
-    def set_lastModified(value: Element): Self = StObject.set(x, "_lastModified", value.asInstanceOf[js.Any])
+    inline def set_lastModified(value: Element): Self = StObject.set(x, "_lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lastModifiedUndefined: Self = StObject.set(x, "_lastModified", js.undefined)
+    inline def set_lastModifiedUndefined: Self = StObject.set(x, "_lastModified", js.undefined)
     
-    @scala.inline
-    def set_location(value: Element): Self = StObject.set(x, "_location", value.asInstanceOf[js.Any])
+    inline def set_location(value: Element): Self = StObject.set(x, "_location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_locationUndefined: Self = StObject.set(x, "_location", js.undefined)
+    inline def set_locationUndefined: Self = StObject.set(x, "_location", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

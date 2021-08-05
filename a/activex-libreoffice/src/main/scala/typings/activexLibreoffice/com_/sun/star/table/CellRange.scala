@@ -20,8 +20,7 @@ trait CellRange
      with XCellRange
 object CellRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsianVerticalMode: Boolean,
     BottomBorder: BorderLine,
     BottomBorder2: BorderLine2,

@@ -34,14 +34,12 @@ object columnMod {
     @JSImport("@blueprintjs/table/lib/esm/column", "Column.defaultProps")
     @js.native
     def defaultProps: IColumnProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IColumnProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IColumnProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/column", "Column.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IColumnProps
@@ -82,41 +80,30 @@ object columnMod {
   }
   object IColumnProps {
     
-    @scala.inline
-    def apply(): IColumnProps = {
+    inline def apply(): IColumnProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColumnProps]
     }
     
-    @scala.inline
-    implicit class IColumnPropsMutableBuilder[Self <: IColumnProps] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnProps](x: Self) {
       
-      @scala.inline
-      def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
+      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCellRendererUndefined: Self = StObject.set(x, "cellRenderer", js.undefined)
+      inline def setCellRendererUndefined: Self = StObject.set(x, "cellRenderer", js.undefined)
       
-      @scala.inline
-      def setColumnHeaderCellRenderer(value: /* columnIndex */ Double => ReactElement): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction1(value))
+      inline def setColumnHeaderCellRenderer(value: /* columnIndex */ Double => ReactElement): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
+      inline def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLoadingOptions(value: js.Array[ColumnLoadingOption]): Self = StObject.set(x, "loadingOptions", value.asInstanceOf[js.Any])
+      inline def setLoadingOptions(value: js.Array[ColumnLoadingOption]): Self = StObject.set(x, "loadingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingOptionsUndefined: Self = StObject.set(x, "loadingOptions", js.undefined)
+      inline def setLoadingOptionsUndefined: Self = StObject.set(x, "loadingOptions", js.undefined)
       
-      @scala.inline
-      def setLoadingOptionsVarargs(value: ColumnLoadingOption*): Self = StObject.set(x, "loadingOptions", js.Array(value :_*))
+      inline def setLoadingOptionsVarargs(value: ColumnLoadingOption*): Self = StObject.set(x, "loadingOptions", js.Array(value :_*))
     }
   }
 }

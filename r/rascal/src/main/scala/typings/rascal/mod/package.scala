@@ -5,21 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def createBroker(config: typings.rascal.mod.BrokerConfig, components: js.Any, next: typings.rascal.mod.CreateCb): scala.Unit = (typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBroker")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def createBroker(config: typings.rascal.mod.BrokerConfig, next: typings.rascal.mod.CreateCb): scala.Unit = (typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBroker")(config.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def createBroker(config: typings.rascal.mod.BrokerConfig, components: js.Any, next: typings.rascal.mod.CreateCb): scala.Unit = (typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBroker")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def createBroker(config: typings.rascal.mod.BrokerConfig, next: typings.rascal.mod.CreateCb): scala.Unit = (typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBroker")(config.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def createBrokerAsPromised(config: typings.rascal.mod.BrokerConfig): js.Promise[typings.rascal.mod.BrokerAsPromised] = typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrokerAsPromised")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rascal.mod.BrokerAsPromised]]
-@scala.inline
-def createBrokerAsPromised(config: typings.rascal.mod.BrokerConfig, components: js.Any): js.Promise[typings.rascal.mod.BrokerAsPromised] = (typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrokerAsPromised")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.rascal.mod.BrokerAsPromised]]
+inline def createBrokerAsPromised(config: typings.rascal.mod.BrokerConfig): js.Promise[typings.rascal.mod.BrokerAsPromised] = typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrokerAsPromised")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rascal.mod.BrokerAsPromised]]
+inline def createBrokerAsPromised(config: typings.rascal.mod.BrokerConfig, components: js.Any): js.Promise[typings.rascal.mod.BrokerAsPromised] = (typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createBrokerAsPromised")(config.asInstanceOf[js.Any], components.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.rascal.mod.BrokerAsPromised]]
 
-@scala.inline
-def withDefaultConfig(config: typings.rascal.mod.BrokerConfig): typings.rascal.mod.BrokerConfig = typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rascal.mod.BrokerConfig]
+inline def withDefaultConfig(config: typings.rascal.mod.BrokerConfig): typings.rascal.mod.BrokerConfig = typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rascal.mod.BrokerConfig]
 
-@scala.inline
-def withTestConfig(config: typings.rascal.mod.BrokerConfig): typings.rascal.mod.BrokerConfig = typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withTestConfig")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rascal.mod.BrokerConfig]
+inline def withTestConfig(config: typings.rascal.mod.BrokerConfig): typings.rascal.mod.BrokerConfig = typings.rascal.mod.^.asInstanceOf[js.Dynamic].applyDynamic("withTestConfig")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rascal.mod.BrokerConfig]
 
 type AckOrNack = js.Function2[
 /* err */ js.UndefOr[typings.std.Error], 

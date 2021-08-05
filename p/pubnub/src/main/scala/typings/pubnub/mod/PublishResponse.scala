@@ -10,16 +10,13 @@ trait PublishResponse extends StObject {
 }
 object PublishResponse {
   
-  @scala.inline
-  def apply(timetoken: Double): PublishResponse = {
+  inline def apply(timetoken: Double): PublishResponse = {
     val __obj = js.Dynamic.literal(timetoken = timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishResponse]
   }
   
-  @scala.inline
-  implicit class PublishResponseMutableBuilder[Self <: PublishResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PublishResponse](x: Self) {
     
-    @scala.inline
-    def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    inline def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }
 }

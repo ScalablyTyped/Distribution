@@ -11,6 +11,5 @@ object testPathPatternToRegExpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(testPathPattern: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(testPathPattern.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def default(testPathPattern: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(testPathPattern.asInstanceOf[js.Any]).asInstanceOf[RegExp]
 }

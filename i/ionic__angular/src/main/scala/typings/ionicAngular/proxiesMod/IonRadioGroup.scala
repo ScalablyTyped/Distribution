@@ -23,7 +23,7 @@ class IonRadioGroup protected ()
   /* CompleteClass */
   var allowEmptySelection: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionChange: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -33,5 +33,5 @@ class IonRadioGroup protected ()
   /* CompleteClass */
   var name: String = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

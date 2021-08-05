@@ -23,28 +23,21 @@ trait UpdateWorkforceRequest extends StObject {
 }
 object UpdateWorkforceRequest {
   
-  @scala.inline
-  def apply(WorkforceName: WorkforceName): UpdateWorkforceRequest = {
+  inline def apply(WorkforceName: WorkforceName): UpdateWorkforceRequest = {
     val __obj = js.Dynamic.literal(WorkforceName = WorkforceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkforceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateWorkforceRequestMutableBuilder[Self <: UpdateWorkforceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWorkforceRequest](x: Self) {
     
-    @scala.inline
-    def setOidcConfig(value: OidcConfig): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
+    inline def setOidcConfig(value: OidcConfig): Self = StObject.set(x, "OidcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOidcConfigUndefined: Self = StObject.set(x, "OidcConfig", js.undefined)
+    inline def setOidcConfigUndefined: Self = StObject.set(x, "OidcConfig", js.undefined)
     
-    @scala.inline
-    def setSourceIpConfig(value: SourceIpConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
+    inline def setSourceIpConfig(value: SourceIpConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
+    inline def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
-    @scala.inline
-    def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
+    inline def setWorkforceName(value: WorkforceName): Self = StObject.set(x, "WorkforceName", value.asInstanceOf[js.Any])
   }
 }

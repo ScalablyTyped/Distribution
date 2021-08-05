@@ -14,8 +14,7 @@ trait ILaunchActivatedEventArgs
 }
 object ILaunchActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: String,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -26,13 +25,10 @@ object ILaunchActivatedEventArgs {
     __obj.asInstanceOf[ILaunchActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ILaunchActivatedEventArgsMutableBuilder[Self <: ILaunchActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ILaunchActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileId(value: String): Self = StObject.set(x, "tileId", value.asInstanceOf[js.Any])
+    inline def setTileId(value: String): Self = StObject.set(x, "tileId", value.asInstanceOf[js.Any])
   }
 }

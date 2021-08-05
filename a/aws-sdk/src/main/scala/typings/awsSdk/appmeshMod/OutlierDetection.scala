@@ -28,8 +28,7 @@ trait OutlierDetection extends StObject {
 }
 object OutlierDetection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseEjectionDuration: Duration,
     interval: Duration,
     maxEjectionPercent: OutlierDetectionMaxEjectionPercent,
@@ -39,19 +38,14 @@ object OutlierDetection {
     __obj.asInstanceOf[OutlierDetection]
   }
   
-  @scala.inline
-  implicit class OutlierDetectionMutableBuilder[Self <: OutlierDetection] (val x: Self) extends AnyVal {
+  extension [Self <: OutlierDetection](x: Self) {
     
-    @scala.inline
-    def setBaseEjectionDuration(value: Duration): Self = StObject.set(x, "baseEjectionDuration", value.asInstanceOf[js.Any])
+    inline def setBaseEjectionDuration(value: Duration): Self = StObject.set(x, "baseEjectionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: Duration): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Duration): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEjectionPercent(value: OutlierDetectionMaxEjectionPercent): Self = StObject.set(x, "maxEjectionPercent", value.asInstanceOf[js.Any])
+    inline def setMaxEjectionPercent(value: OutlierDetectionMaxEjectionPercent): Self = StObject.set(x, "maxEjectionPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxServerErrors(value: OutlierDetectionMaxServerErrors): Self = StObject.set(x, "maxServerErrors", value.asInstanceOf[js.Any])
+    inline def setMaxServerErrors(value: OutlierDetectionMaxServerErrors): Self = StObject.set(x, "maxServerErrors", value.asInstanceOf[js.Any])
   }
 }

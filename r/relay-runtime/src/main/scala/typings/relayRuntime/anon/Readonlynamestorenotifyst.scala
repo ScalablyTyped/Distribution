@@ -15,16 +15,13 @@ trait Readonlynamestorenotifyst
 }
 object Readonlynamestorenotifyst {
   
-  @scala.inline
-  def apply(): Readonlynamestorenotifyst = {
+  inline def apply(): Readonlynamestorenotifyst = {
     val __obj = js.Dynamic.literal(name = "store.notify.start")
     __obj.asInstanceOf[Readonlynamestorenotifyst]
   }
   
-  @scala.inline
-  implicit class ReadonlynamestorenotifystMutableBuilder[Self <: Readonlynamestorenotifyst] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynamestorenotifyst](x: Self) {
     
-    @scala.inline
-    def setName(value: storeDotnotifyDotstart): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: storeDotnotifyDotstart): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

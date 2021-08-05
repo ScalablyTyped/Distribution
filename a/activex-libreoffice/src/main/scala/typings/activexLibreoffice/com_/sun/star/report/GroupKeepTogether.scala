@@ -15,10 +15,8 @@ object GroupKeepTogether {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def PER_COLUMN: `1` = 1.asInstanceOf[`1`]
+    inline def PER_COLUMN: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PER_PAGE: `0` = 0.asInstanceOf[`0`]
+    inline def PER_PAGE: `0` = 0.asInstanceOf[`0`]
   }
 }

@@ -14,22 +14,17 @@ trait ErrorWithRange extends StObject {
 }
 object ErrorWithRange {
   
-  @scala.inline
-  def apply(end: Double, msg: String, start: Double): ErrorWithRange = {
+  inline def apply(end: Double, msg: String, start: Double): ErrorWithRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorWithRange]
   }
   
-  @scala.inline
-  implicit class ErrorWithRangeMutableBuilder[Self <: ErrorWithRange] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorWithRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

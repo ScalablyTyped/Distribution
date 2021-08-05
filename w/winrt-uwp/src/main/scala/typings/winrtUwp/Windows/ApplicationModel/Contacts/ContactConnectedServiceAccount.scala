@@ -15,19 +15,15 @@ trait ContactConnectedServiceAccount extends StObject {
 }
 object ContactConnectedServiceAccount {
   
-  @scala.inline
-  def apply(id: String, serviceName: String): ContactConnectedServiceAccount = {
+  inline def apply(id: String, serviceName: String): ContactConnectedServiceAccount = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactConnectedServiceAccount]
   }
   
-  @scala.inline
-  implicit class ContactConnectedServiceAccountMutableBuilder[Self <: ContactConnectedServiceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: ContactConnectedServiceAccount](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

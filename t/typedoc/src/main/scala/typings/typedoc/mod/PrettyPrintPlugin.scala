@@ -23,12 +23,10 @@ object PrettyPrintPlugin {
   @JSImport("typedoc", "PrettyPrintPlugin.IGNORED_TAGS")
   @js.native
   def IGNORED_TAGS: Area = js.native
-  @scala.inline
-  def IGNORED_TAGS_=(x: Area): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORED_TAGS")(x.asInstanceOf[js.Any])
+  inline def IGNORED_TAGS_=(x: Area): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORED_TAGS")(x.asInstanceOf[js.Any])
   
   @JSImport("typedoc", "PrettyPrintPlugin.PRE_TAGS")
   @js.native
   def PRE_TAGS: Code = js.native
-  @scala.inline
-  def PRE_TAGS_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRE_TAGS")(x.asInstanceOf[js.Any])
+  inline def PRE_TAGS_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRE_TAGS")(x.asInstanceOf[js.Any])
 }

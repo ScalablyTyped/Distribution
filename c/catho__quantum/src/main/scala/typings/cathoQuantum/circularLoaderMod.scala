@@ -32,32 +32,24 @@ object circularLoaderMod {
   }
   object CircularLoaderProps {
     
-    @scala.inline
-    def apply(): CircularLoaderProps = {
+    inline def apply(): CircularLoaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircularLoaderProps]
     }
     
-    @scala.inline
-    implicit class CircularLoaderPropsMutableBuilder[Self <: CircularLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: CircularLoaderProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: medium | large | xlarge | xxlarge | xxxlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: medium | large | xlarge | xxlarge | xxxlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSkin(value: primary | secondary): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: primary | secondary): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setTheme(value: Gutter): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Gutter): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

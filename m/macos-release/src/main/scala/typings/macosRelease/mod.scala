@@ -29,10 +29,8 @@ object mod {
   	//=> {name: 'Big Sur', version: '11'}
   	```
   	*/
-  @scala.inline
-  def apply(): Name = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Name]
-  @scala.inline
-  def apply(release: String): Name = ^.asInstanceOf[js.Dynamic].apply(release.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def apply(): Name = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Name]
+  inline def apply(release: String): Name = ^.asInstanceOf[js.Dynamic].apply(release.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   @JSImport("macos-release", JSImport.Namespace)
   @js.native
@@ -62,10 +60,8 @@ object mod {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;
-  @scala.inline
-  def default(): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Name]
-  @scala.inline
-  def default(release: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(release.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def default(): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Name]
+  inline def default(release: String): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(release.asInstanceOf[js.Any]).asInstanceOf[Name]
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function macosRelease(release?: string): {name: string, version: string};
   // export = macosRelease;
@@ -73,6 +69,5 @@ object mod {
   @js.native
   def default_Fmod: Call = js.native
   
-  @scala.inline
-  def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

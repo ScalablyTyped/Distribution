@@ -79,9 +79,9 @@ object parserMod {
     /**
       * Consume the optional statement terminator: semicolon or comma.
       */
-    var consumeStatementTerminator: js.Any = js.native
+    /* private */ var consumeStatementTerminator: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /**
       * Returns the absolute offset of the start of the current token.
@@ -101,7 +101,7 @@ object parserMod {
     def error(message: String): Unit = js.native
     def error(message: String, index: Double): Unit = js.native
     
-    var errors: js.Any = js.native
+    /* private */ var errors: js.Any = js.native
     
     /**
       * Consumes an expected character, otherwise emits an error about the missing expected character
@@ -133,7 +133,7 @@ object parserMod {
       *                       ^^^^^ bound target for "ngForOf"
       * ```
       */
-    var getDirectiveBoundTarget: js.Any = js.native
+    /* private */ var getDirectiveBoundTarget: js.Any = js.native
     
     var index: Double = js.native
     
@@ -149,11 +149,11 @@ object parserMod {
     
     var location: js.Any = js.native
     
-    var locationText: js.Any = js.native
+    /* private */ var locationText: js.Any = js.native
     
     def next: Token = js.native
     
-    var offset: js.Any = js.native
+    /* private */ var offset: js.Any = js.native
     
     def parseAccessMemberOrMethodCall(receiver: AST): AST = js.native
     def parseAccessMemberOrMethodCall(receiver: AST, isSafe: Boolean): AST = js.native
@@ -174,7 +174,7 @@ object parserMod {
       * @param value name of the value in the declaration, "ngIf" in the example
       * above, along with its absolute span.
       */
-    var parseAsBinding: js.Any = js.native
+    /* private */ var parseAsBinding: js.Any = js.native
     
     def parseCallArguments(): js.Array[BindingPipe] = js.native
     
@@ -199,7 +199,7 @@ object parserMod {
       * @param key binding key, for example, ngFor, ngIf, ngForOf, along with its
       * absolute span.
       */
-    var parseDirectiveKeywordBindings: js.Any = js.native
+    /* private */ var parseDirectiveKeywordBindings: js.Any = js.native
     
     def parseEquality(): AST = js.native
     
@@ -216,7 +216,7 @@ object parserMod {
       * In the first binding, `item` is bound to `NgForOfContext.$implicit`.
       * In the second binding, `i` is bound to `NgForOfContext.index`.
       */
-    var parseLetBinding: js.Any = js.native
+    /* private */ var parseLetBinding: js.Any = js.native
     
     def parseLiteralMap(): LiteralMap = js.native
     
@@ -265,11 +265,11 @@ object parserMod {
     
     def prettyPrintToken(tok: Token): String = js.native
     
-    var rbracesExpected: js.Any = js.native
+    /* private */ var rbracesExpected: js.Any = js.native
     
-    var rbracketsExpected: js.Any = js.native
+    /* private */ var rbracketsExpected: js.Any = js.native
     
-    var rparensExpected: js.Any = js.native
+    /* private */ var rparensExpected: js.Any = js.native
     
     /**
       * Error recovery should skip tokens until it encounters a recovery point. skip() treats
@@ -290,11 +290,11 @@ object parserMod {
       * If a production expects one of these token it increments the corresponding nesting count,
       * and then decrements it just prior to checking if the token is in the input.
       */
-    var skip: js.Any = js.native
+    /* private */ var skip: js.Any = js.native
     
     def sourceSpan(start: Double): AbsoluteSourceSpan = js.native
     
-    var sourceSpanCache: js.Any = js.native
+    /* private */ var sourceSpanCache: js.Any = js.native
     
     def span(start: Double): ParseSpan = js.native
     
@@ -303,7 +303,7 @@ object parserMod {
     /**
       * Executes a callback in the provided context.
       */
-    var withContext: js.Any = js.native
+    /* private */ var withContext: js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/expression_parser/parser", "Parser")
@@ -311,27 +311,27 @@ object parserMod {
   class Parser protected () extends StObject {
     def this(_lexer: Lexer) = this()
     
-    var _checkNoInterpolation: js.Any = js.native
+    /* private */ var _checkNoInterpolation: js.Any = js.native
     
-    var _commentStart: js.Any = js.native
+    /* private */ var _commentStart: js.Any = js.native
     
-    var _findInterpolationErrorColumn: js.Any = js.native
+    /* private */ var _findInterpolationErrorColumn: js.Any = js.native
     
-    var _lexer: js.Any = js.native
+    /* private */ var _lexer: js.Any = js.native
     
-    var _parseBindingAst: js.Any = js.native
+    /* private */ var _parseBindingAst: js.Any = js.native
     
-    var _parseQuote: js.Any = js.native
+    /* private */ var _parseQuote: js.Any = js.native
     
-    var _reportError: js.Any = js.native
+    /* private */ var _reportError: js.Any = js.native
     
-    var _stripComments: js.Any = js.native
+    /* private */ var _stripComments: js.Any = js.native
     
-    var checkSimpleExpression: js.Any = js.native
+    /* private */ var checkSimpleExpression: js.Any = js.native
     
-    var createInterpolationAst: js.Any = js.native
+    /* private */ var createInterpolationAst: js.Any = js.native
     
-    var errors: js.Any = js.native
+    /* private */ var errors: js.Any = js.native
     
     def parseAction(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native
     def parseAction(input: String, location: js.Any, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
@@ -473,8 +473,7 @@ object parserMod {
   }
   object SimpleExpressionChecker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errors: js.Array[String],
       visitAll: (js.Array[js.Any], js.Any) => js.Array[js.Any],
       visitBinary: (Binary, js.Any) => js.Any,
@@ -504,23 +503,17 @@ object parserMod {
       __obj.asInstanceOf[SimpleExpressionChecker]
     }
     
-    @scala.inline
-    implicit class SimpleExpressionCheckerMutableBuilder[Self <: SimpleExpressionChecker] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleExpressionChecker](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setVisitAll(value: (js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "visitAll", js.Any.fromFunction2(value))
+      inline def setVisitAll(value: (js.Array[js.Any], js.Any) => js.Array[js.Any]): Self = StObject.set(x, "visitAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitThisReceiver(value: (ThisReceiver, js.Any) => Unit): Self = StObject.set(x, "visitThisReceiver", js.Any.fromFunction2(value))
+      inline def setVisitThisReceiver(value: (ThisReceiver, js.Any) => Unit): Self = StObject.set(x, "visitThisReceiver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVisitUnary(value: (Unary, js.Any) => Unit): Self = StObject.set(x, "visitUnary", js.Any.fromFunction2(value))
+      inline def setVisitUnary(value: (Unary, js.Any) => Unit): Self = StObject.set(x, "visitUnary", js.Any.fromFunction2(value))
     }
   }
 }

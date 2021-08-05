@@ -43,58 +43,41 @@ trait MsSmoothGroupSettings extends StObject {
 }
 object MsSmoothGroupSettings {
   
-  @scala.inline
-  def apply(): MsSmoothGroupSettings = {
+  inline def apply(): MsSmoothGroupSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MsSmoothGroupSettings]
   }
   
-  @scala.inline
-  implicit class MsSmoothGroupSettingsMutableBuilder[Self <: MsSmoothGroupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MsSmoothGroupSettings](x: Self) {
     
-    @scala.inline
-    def setAdditionalManifests(value: listOfMsSmoothAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
+    inline def setAdditionalManifests(value: listOfMsSmoothAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
+    inline def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
     
-    @scala.inline
-    def setAdditionalManifestsVarargs(value: MsSmoothAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
+    inline def setAdditionalManifestsVarargs(value: MsSmoothAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
     
-    @scala.inline
-    def setAudioDeduplication(value: MsSmoothAudioDeduplication): Self = StObject.set(x, "AudioDeduplication", value.asInstanceOf[js.Any])
+    inline def setAudioDeduplication(value: MsSmoothAudioDeduplication): Self = StObject.set(x, "AudioDeduplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioDeduplicationUndefined: Self = StObject.set(x, "AudioDeduplication", js.undefined)
+    inline def setAudioDeduplicationUndefined: Self = StObject.set(x, "AudioDeduplication", js.undefined)
     
-    @scala.inline
-    def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
+    inline def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
+    inline def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: MsSmoothEncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: MsSmoothEncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setFragmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "FragmentLength", value.asInstanceOf[js.Any])
+    inline def setFragmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "FragmentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
+    inline def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
     
-    @scala.inline
-    def setManifestEncoding(value: MsSmoothManifestEncoding): Self = StObject.set(x, "ManifestEncoding", value.asInstanceOf[js.Any])
+    inline def setManifestEncoding(value: MsSmoothManifestEncoding): Self = StObject.set(x, "ManifestEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestEncodingUndefined: Self = StObject.set(x, "ManifestEncoding", js.undefined)
+    inline def setManifestEncodingUndefined: Self = StObject.set(x, "ManifestEncoding", js.undefined)
   }
 }

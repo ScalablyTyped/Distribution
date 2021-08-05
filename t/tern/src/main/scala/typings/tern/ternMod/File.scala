@@ -25,37 +25,27 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(ast: Program, name: String, scope: Scope, text: String): File = {
+  inline def apply(ast: Program, name: String, scope: Scope, text: String): File = {
     val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setAsLineChar(value: /* nodePosition */ Double => Position): Self = StObject.set(x, "asLineChar", js.Any.fromFunction1(value))
+    inline def setAsLineChar(value: /* nodePosition */ Double => Position): Self = StObject.set(x, "asLineChar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAsLineCharUndefined: Self = StObject.set(x, "asLineChar", js.undefined)
+    inline def setAsLineCharUndefined: Self = StObject.set(x, "asLineChar", js.undefined)
     
-    @scala.inline
-    def setAst(value: Program): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: Program): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: full | part | delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: full | part | delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

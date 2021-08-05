@@ -17,20 +17,16 @@ object transportationMod {
   }
   object IRequestFileDownloadOptions {
     
-    @scala.inline
-    def apply(method: RequestMethod, url: String): IRequestFileDownloadOptions = {
+    inline def apply(method: RequestMethod, url: String): IRequestFileDownloadOptions = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequestFileDownloadOptions]
     }
     
-    @scala.inline
-    implicit class IRequestFileDownloadOptionsMutableBuilder[Self <: IRequestFileDownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestFileDownloadOptions](x: Self) {
       
-      @scala.inline
-      def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,38 +46,28 @@ object transportationMod {
   }
   object IRequestMultipartBinaryFileUploadOptions {
     
-    @scala.inline
-    def apply(fileName: String | Blob, fileParameterName: String, method: RequestMethod, url: String): IRequestMultipartBinaryFileUploadOptions = {
+    inline def apply(fileName: String | Blob, fileParameterName: String, method: RequestMethod, url: String): IRequestMultipartBinaryFileUploadOptions = {
       val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], fileParameterName = fileParameterName.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequestMultipartBinaryFileUploadOptions]
     }
     
-    @scala.inline
-    implicit class IRequestMultipartBinaryFileUploadOptionsMutableBuilder[Self <: IRequestMultipartBinaryFileUploadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestMultipartBinaryFileUploadOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String | Blob): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String | Blob): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileParameterName(value: String): Self = StObject.set(x, "fileParameterName", value.asInstanceOf[js.Any])
+      inline def setFileParameterName(value: String): Self = StObject.set(x, "fileParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,38 +85,28 @@ object transportationMod {
   }
   object IRequestOptions {
     
-    @scala.inline
-    def apply(method: RequestMethod, url: String): IRequestOptions = {
+    inline def apply(method: RequestMethod, url: String): IRequestOptions = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    @scala.inline
-    implicit class IRequestOptionsMutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IRequestOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setLongTimeout(value: Boolean): Self = StObject.set(x, "longTimeout", value.asInstanceOf[js.Any])
+      inline def setLongTimeout(value: Boolean): Self = StObject.set(x, "longTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongTimeoutUndefined: Self = StObject.set(x, "longTimeout", js.undefined)
+      inline def setLongTimeoutUndefined: Self = StObject.set(x, "longTimeout", js.undefined)
       
-      @scala.inline
-      def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,17 +116,14 @@ object transportationMod {
   }
   object IResponse {
     
-    @scala.inline
-    def apply(headers: StringDictionary[js.Any]): IResponse = {
+    inline def apply(headers: StringDictionary[js.Any]): IResponse = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResponse]
     }
     
-    @scala.inline
-    implicit class IResponseMutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IResponse](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,8 +151,7 @@ object transportationMod {
   }
   object ITransportation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       request: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit,
       requestFileDownload: (IRequestFileDownloadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit,
       requestMultipartBinaryFileUpload: (IRequestMultipartBinaryFileUploadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit,
@@ -189,22 +161,17 @@ object transportationMod {
       __obj.asInstanceOf[ITransportation]
     }
     
-    @scala.inline
-    implicit class ITransportationMutableBuilder[Self <: ITransportation] (val x: Self) extends AnyVal {
+    extension [Self <: ITransportation](x: Self) {
       
-      @scala.inline
-      def setRequest(value: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
+      inline def setRequest(value: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestFileDownload(value: (IRequestFileDownloadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "requestFileDownload", js.Any.fromFunction3(value))
+      inline def setRequestFileDownload(value: (IRequestFileDownloadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "requestFileDownload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestMultipartBinaryFileUpload(
+      inline def setRequestMultipartBinaryFileUpload(
         value: (IRequestMultipartBinaryFileUploadOptions, IResponseCallback[js.Any], IErrorCallback) => Unit
       ): Self = StObject.set(x, "requestMultipartBinaryFileUpload", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRetryableRequest(value: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "retryableRequest", js.Any.fromFunction3(value))
+      inline def setRetryableRequest(value: (IRequestOptions, IResponseCallback[js.Any], IErrorCallback) => Unit): Self = StObject.set(x, "retryableRequest", js.Any.fromFunction3(value))
     }
   }
   
@@ -217,16 +184,12 @@ object transportationMod {
   trait RequestMethod extends StObject
   object RequestMethod {
     
-    @scala.inline
-    def delete: typings.mendixmodelsdk.mendixmodelsdkStrings.delete = "delete".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.delete]
+    inline def delete: typings.mendixmodelsdk.mendixmodelsdkStrings.delete = "delete".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.delete]
     
-    @scala.inline
-    def get: typings.mendixmodelsdk.mendixmodelsdkStrings.get = "get".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.get]
+    inline def get: typings.mendixmodelsdk.mendixmodelsdkStrings.get = "get".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.get]
     
-    @scala.inline
-    def post: typings.mendixmodelsdk.mendixmodelsdkStrings.post = "post".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.post]
+    inline def post: typings.mendixmodelsdk.mendixmodelsdkStrings.post = "post".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.post]
     
-    @scala.inline
-    def put: typings.mendixmodelsdk.mendixmodelsdkStrings.put = "put".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.put]
+    inline def put: typings.mendixmodelsdk.mendixmodelsdkStrings.put = "put".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.put]
   }
 }

@@ -15,7 +15,7 @@ object queryBuilderRelationIdLoaderMod {
   class RelationIdLoader protected () extends StObject {
     def this(connection: Connection) = this()
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
     
     def load(relation: RelationMetadata, entities: js.Array[ObjectLiteral]): js.Promise[js.Array[js.Any]] = js.native
     def load(

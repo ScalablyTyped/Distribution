@@ -18,28 +18,21 @@ trait ListEnabledProductsForImportResponse extends StObject {
 }
 object ListEnabledProductsForImportResponse {
   
-  @scala.inline
-  def apply(): ListEnabledProductsForImportResponse = {
+  inline def apply(): ListEnabledProductsForImportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEnabledProductsForImportResponse]
   }
   
-  @scala.inline
-  implicit class ListEnabledProductsForImportResponseMutableBuilder[Self <: ListEnabledProductsForImportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEnabledProductsForImportResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProductSubscriptions(value: ProductSubscriptionArnList): Self = StObject.set(x, "ProductSubscriptions", value.asInstanceOf[js.Any])
+    inline def setProductSubscriptions(value: ProductSubscriptionArnList): Self = StObject.set(x, "ProductSubscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSubscriptionsUndefined: Self = StObject.set(x, "ProductSubscriptions", js.undefined)
+    inline def setProductSubscriptionsUndefined: Self = StObject.set(x, "ProductSubscriptions", js.undefined)
     
-    @scala.inline
-    def setProductSubscriptionsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ProductSubscriptions", js.Array(value :_*))
+    inline def setProductSubscriptionsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ProductSubscriptions", js.Array(value :_*))
   }
 }

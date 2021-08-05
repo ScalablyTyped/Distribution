@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PropertyTest")
 @js.native
-class PropertyTest protected ()
+/* private */ class PropertyTest ()
   extends StObject
      with typings.activexOffice.Office.PropertyTest {
   
@@ -27,7 +27,7 @@ class PropertyTest protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.PropertyTest_typekey")
   var OfficeDotPropertyTest_typekey: typings.activexOffice.Office.PropertyTest = js.native
   

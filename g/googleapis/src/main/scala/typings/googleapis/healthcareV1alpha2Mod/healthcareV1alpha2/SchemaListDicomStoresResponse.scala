@@ -23,28 +23,21 @@ trait SchemaListDicomStoresResponse extends StObject {
 }
 object SchemaListDicomStoresResponse {
   
-  @scala.inline
-  def apply(): SchemaListDicomStoresResponse = {
+  inline def apply(): SchemaListDicomStoresResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListDicomStoresResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListDicomStoresResponseMutableBuilder[Self <: SchemaListDicomStoresResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListDicomStoresResponse](x: Self) {
     
-    @scala.inline
-    def setDicomStores(value: js.Array[SchemaDicomStore]): Self = StObject.set(x, "dicomStores", value.asInstanceOf[js.Any])
+    inline def setDicomStores(value: js.Array[SchemaDicomStore]): Self = StObject.set(x, "dicomStores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDicomStoresUndefined: Self = StObject.set(x, "dicomStores", js.undefined)
+    inline def setDicomStoresUndefined: Self = StObject.set(x, "dicomStores", js.undefined)
     
-    @scala.inline
-    def setDicomStoresVarargs(value: SchemaDicomStore*): Self = StObject.set(x, "dicomStores", js.Array(value :_*))
+    inline def setDicomStoresVarargs(value: SchemaDicomStore*): Self = StObject.set(x, "dicomStores", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ object typesSubscribeToShardEventMod {
   }
   object SubscribeToShardEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ContinuationSequenceNumber: String,
       MillisBehindLatest: Double,
       Records: js.Array[Record] | Iterable[Record]
@@ -38,20 +37,15 @@ object typesSubscribeToShardEventMod {
       __obj.asInstanceOf[SubscribeToShardEvent]
     }
     
-    @scala.inline
-    implicit class SubscribeToShardEventMutableBuilder[Self <: SubscribeToShardEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeToShardEvent](x: Self) {
       
-      @scala.inline
-      def setContinuationSequenceNumber(value: String): Self = StObject.set(x, "ContinuationSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setContinuationSequenceNumber(value: String): Self = StObject.set(x, "ContinuationSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillisBehindLatest(value: Double): Self = StObject.set(x, "MillisBehindLatest", value.asInstanceOf[js.Any])
+      inline def setMillisBehindLatest(value: Double): Self = StObject.set(x, "MillisBehindLatest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecords(value: js.Array[Record] | Iterable[Record]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[Record] | Iterable[Record]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -67,8 +61,7 @@ object typesSubscribeToShardEventMod {
   }
   object UnmarshalledSubscribeToShardEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ContinuationSequenceNumber: String,
       MillisBehindLatest: Double,
       Records: js.Array[UnmarshalledRecord]
@@ -77,14 +70,11 @@ object typesSubscribeToShardEventMod {
       __obj.asInstanceOf[UnmarshalledSubscribeToShardEvent]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSubscribeToShardEventMutableBuilder[Self <: UnmarshalledSubscribeToShardEvent] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSubscribeToShardEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[UnmarshalledRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[UnmarshalledRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: UnmarshalledRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: UnmarshalledRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
 }

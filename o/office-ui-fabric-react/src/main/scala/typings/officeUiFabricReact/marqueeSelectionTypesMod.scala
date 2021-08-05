@@ -72,62 +72,44 @@ object marqueeSelectionTypesMod {
   }
   object IMarqueeSelectionProps {
     
-    @scala.inline
-    def apply(selection: ISelection[IObjectWithKey]): IMarqueeSelectionProps = {
+    inline def apply(selection: ISelection[IObjectWithKey]): IMarqueeSelectionProps = {
       val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMarqueeSelectionProps]
     }
     
-    @scala.inline
-    implicit class IMarqueeSelectionPropsMutableBuilder[Self <: IMarqueeSelectionProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMarqueeSelectionProps](x: Self) {
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IMarqueeSelection]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IMarqueeSelection]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IMarqueeSelection | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IMarqueeSelection | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setIsDraggingConstrainedToRoot(value: Boolean): Self = StObject.set(x, "isDraggingConstrainedToRoot", value.asInstanceOf[js.Any])
+      inline def setIsDraggingConstrainedToRoot(value: Boolean): Self = StObject.set(x, "isDraggingConstrainedToRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDraggingConstrainedToRootUndefined: Self = StObject.set(x, "isDraggingConstrainedToRoot", js.undefined)
+      inline def setIsDraggingConstrainedToRootUndefined: Self = StObject.set(x, "isDraggingConstrainedToRoot", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setOnShouldStartSelection(value: /* ev */ MouseEvent => Boolean): Self = StObject.set(x, "onShouldStartSelection", js.Any.fromFunction1(value))
+      inline def setOnShouldStartSelection(value: /* ev */ MouseEvent => Boolean): Self = StObject.set(x, "onShouldStartSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShouldStartSelectionUndefined: Self = StObject.set(x, "onShouldStartSelection", js.undefined)
+      inline def setOnShouldStartSelectionUndefined: Self = StObject.set(x, "onShouldStartSelection", js.undefined)
       
-      @scala.inline
-      def setRootProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "rootProps", value.asInstanceOf[js.Any])
+      inline def setRootProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "rootProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPropsUndefined: Self = StObject.set(x, "rootProps", js.undefined)
+      inline def setRootPropsUndefined: Self = StObject.set(x, "rootProps", js.undefined)
       
-      @scala.inline
-      def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: IMarqueeSelectionStyleProps => DeepPartial[IMarqueeSelectionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStyles(value: IMarqueeSelectionStyleProps => DeepPartial[IMarqueeSelectionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -139,23 +121,18 @@ object marqueeSelectionTypesMod {
   }
   object IMarqueeSelectionStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IMarqueeSelectionStyleProps = {
+    inline def apply(theme: ITheme): IMarqueeSelectionStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMarqueeSelectionStyleProps]
     }
     
-    @scala.inline
-    implicit class IMarqueeSelectionStylePropsMutableBuilder[Self <: IMarqueeSelectionStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMarqueeSelectionStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,50 +148,36 @@ object marqueeSelectionTypesMod {
   }
   object IMarqueeSelectionStyles {
     
-    @scala.inline
-    def apply(): IMarqueeSelectionStyles = {
+    inline def apply(): IMarqueeSelectionStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMarqueeSelectionStyles]
     }
     
-    @scala.inline
-    implicit class IMarqueeSelectionStylesMutableBuilder[Self <: IMarqueeSelectionStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IMarqueeSelectionStyles](x: Self) {
       
-      @scala.inline
-      def setBox(value: IStyle): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+      inline def setBox(value: IStyle): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxFill(value: IStyle): Self = StObject.set(x, "boxFill", value.asInstanceOf[js.Any])
+      inline def setBoxFill(value: IStyle): Self = StObject.set(x, "boxFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxFillNull: Self = StObject.set(x, "boxFill", null)
+      inline def setBoxFillNull: Self = StObject.set(x, "boxFill", null)
       
-      @scala.inline
-      def setBoxFillUndefined: Self = StObject.set(x, "boxFill", js.undefined)
+      inline def setBoxFillUndefined: Self = StObject.set(x, "boxFill", js.undefined)
       
-      @scala.inline
-      def setBoxNull: Self = StObject.set(x, "box", null)
+      inline def setBoxNull: Self = StObject.set(x, "box", null)
       
-      @scala.inline
-      def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
+      inline def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
       
-      @scala.inline
-      def setDragMask(value: IStyle): Self = StObject.set(x, "dragMask", value.asInstanceOf[js.Any])
+      inline def setDragMask(value: IStyle): Self = StObject.set(x, "dragMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragMaskNull: Self = StObject.set(x, "dragMask", null)
+      inline def setDragMaskNull: Self = StObject.set(x, "dragMask", null)
       
-      @scala.inline
-      def setDragMaskUndefined: Self = StObject.set(x, "dragMask", js.undefined)
+      inline def setDragMaskUndefined: Self = StObject.set(x, "dragMask", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

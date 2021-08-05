@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SameSitePolicy extends StObject
 object SameSitePolicy {
   
-  @scala.inline
-  def Lax: typings.hapiHapi.hapiHapiStrings.Lax = "Lax".asInstanceOf[typings.hapiHapi.hapiHapiStrings.Lax]
+  inline def Lax: typings.hapiHapi.hapiHapiStrings.Lax = "Lax".asInstanceOf[typings.hapiHapi.hapiHapiStrings.Lax]
   
-  @scala.inline
-  def None: typings.hapiHapi.hapiHapiStrings.None = "None".asInstanceOf[typings.hapiHapi.hapiHapiStrings.None]
+  inline def None: typings.hapiHapi.hapiHapiStrings.None = "None".asInstanceOf[typings.hapiHapi.hapiHapiStrings.None]
   
-  @scala.inline
-  def Strict: typings.hapiHapi.hapiHapiStrings.Strict = "Strict".asInstanceOf[typings.hapiHapi.hapiHapiStrings.Strict]
+  inline def Strict: typings.hapiHapi.hapiHapiStrings.Strict = "Strict".asInstanceOf[typings.hapiHapi.hapiHapiStrings.Strict]
   
-  @scala.inline
-  def `false`: typings.hapiHapi.hapiHapiBooleans.`false` = false.asInstanceOf[typings.hapiHapi.hapiHapiBooleans.`false`]
+  inline def `false`: typings.hapiHapi.hapiHapiBooleans.`false` = false.asInstanceOf[typings.hapiHapi.hapiHapiBooleans.`false`]
 }

@@ -17,20 +17,16 @@ object dialogContentMod {
   }
   object DialogContentProps {
     
-    @scala.inline
-    def apply(): DialogContentProps = {
+    inline def apply(): DialogContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogContentProps]
     }
     
-    @scala.inline
-    implicit class DialogContentPropsMutableBuilder[Self <: DialogContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogContentProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
 }

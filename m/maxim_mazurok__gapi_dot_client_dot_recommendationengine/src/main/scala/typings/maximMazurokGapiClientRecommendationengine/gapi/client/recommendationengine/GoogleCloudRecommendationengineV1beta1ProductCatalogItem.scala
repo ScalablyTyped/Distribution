@@ -40,68 +40,49 @@ trait GoogleCloudRecommendationengineV1beta1ProductCatalogItem extends StObject 
 }
 object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ProductCatalogItem = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ProductCatalogItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ProductCatalogItem]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductCatalogItemMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItem] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ProductCatalogItem](x: Self) {
     
-    @scala.inline
-    def setAvailableQuantity(value: String): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
+    inline def setAvailableQuantity(value: String): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
+    inline def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
     
-    @scala.inline
-    def setCanonicalProductUri(value: String): Self = StObject.set(x, "canonicalProductUri", value.asInstanceOf[js.Any])
+    inline def setCanonicalProductUri(value: String): Self = StObject.set(x, "canonicalProductUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalProductUriUndefined: Self = StObject.set(x, "canonicalProductUri", js.undefined)
+    inline def setCanonicalProductUriUndefined: Self = StObject.set(x, "canonicalProductUri", js.undefined)
     
-    @scala.inline
-    def setCosts(
+    inline def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[js.Any]
     ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
+    inline def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setExactPrice(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice): Self = StObject.set(x, "exactPrice", value.asInstanceOf[js.Any])
+    inline def setExactPrice(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice): Self = StObject.set(x, "exactPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactPriceUndefined: Self = StObject.set(x, "exactPrice", js.undefined)
+    inline def setExactPriceUndefined: Self = StObject.set(x, "exactPrice", js.undefined)
     
-    @scala.inline
-    def setImages(value: js.Array[GoogleCloudRecommendationengineV1beta1Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[GoogleCloudRecommendationengineV1beta1Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: GoogleCloudRecommendationengineV1beta1Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: GoogleCloudRecommendationengineV1beta1Image*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setPriceRange(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange): Self = StObject.set(x, "priceRange", value.asInstanceOf[js.Any])
+    inline def setPriceRange(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange): Self = StObject.set(x, "priceRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceRangeUndefined: Self = StObject.set(x, "priceRange", js.undefined)
+    inline def setPriceRangeUndefined: Self = StObject.set(x, "priceRange", js.undefined)
     
-    @scala.inline
-    def setStockState(value: String): Self = StObject.set(x, "stockState", value.asInstanceOf[js.Any])
+    inline def setStockState(value: String): Self = StObject.set(x, "stockState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockStateUndefined: Self = StObject.set(x, "stockState", js.undefined)
+    inline def setStockStateUndefined: Self = StObject.set(x, "stockState", js.undefined)
   }
 }

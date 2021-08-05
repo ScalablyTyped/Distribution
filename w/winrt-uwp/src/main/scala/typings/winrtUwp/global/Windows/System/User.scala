@@ -62,24 +62,21 @@ object User {
     * @return A UserWatcher which enumerates users and raises events when the collection of users changes.
     */
   /* static member */
-  @scala.inline
-  def createWatcher(): typings.winrtUwp.Windows.System.UserWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrtUwp.Windows.System.UserWatcher]
+  inline def createWatcher(): typings.winrtUwp.Windows.System.UserWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")().asInstanceOf[typings.winrtUwp.Windows.System.UserWatcher]
   
   /**
     * Finds all users asynchronously.
     * @return When this method completes successfully, it returns a list (type IVectorView ) of Users .
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
   /**
     * Finds all users of a given type asynchronously.
     * @param type The type of users to find.
     * @return When this method completes successfully, it returns a list (type IVectorView ) of Users .
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(`type`: typings.winrtUwp.Windows.System.UserType): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def findAllAsync(`type`: typings.winrtUwp.Windows.System.UserType): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
   /**
     * Finds all users of a given type and authentication status asynchronously.
     * @param type The type of users to find.
@@ -87,8 +84,7 @@ object User {
     * @return When this method completes successfully, it returns a list (type IVectorView ) of Users .
     */
   /* static member */
-  @scala.inline
-  def findAllAsync(
+  inline def findAllAsync(
     `type`: typings.winrtUwp.Windows.System.UserType,
     status: typings.winrtUwp.Windows.System.UserAuthenticationStatus
   ): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
@@ -99,6 +95,5 @@ object User {
     * @return The user with the given Id.
     */
   /* static member */
-  @scala.inline
-  def getFromId(nonRoamableId: String): typings.winrtUwp.Windows.System.User = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromId")(nonRoamableId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.User]
+  inline def getFromId(nonRoamableId: String): typings.winrtUwp.Windows.System.User = ^.asInstanceOf[js.Dynamic].applyDynamic("getFromId")(nonRoamableId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.System.User]
 }

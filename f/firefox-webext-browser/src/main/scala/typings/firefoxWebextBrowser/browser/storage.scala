@@ -102,26 +102,20 @@ object storage {
   }
   object StorageChange {
     
-    @scala.inline
-    def apply(): StorageChange = {
+    inline def apply(): StorageChange = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StorageChange]
     }
     
-    @scala.inline
-    implicit class StorageChangeMutableBuilder[Self <: StorageChange] (val x: Self) extends AnyVal {
+    extension [Self <: StorageChange](x: Self) {
       
-      @scala.inline
-      def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+      inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      @scala.inline
-      def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+      inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }
   }
 }

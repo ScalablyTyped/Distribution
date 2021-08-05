@@ -13,19 +13,15 @@ trait UpdatePipelineOutput extends StObject {
 }
 object UpdatePipelineOutput {
   
-  @scala.inline
-  def apply(): UpdatePipelineOutput = {
+  inline def apply(): UpdatePipelineOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatePipelineOutput]
   }
   
-  @scala.inline
-  implicit class UpdatePipelineOutputMutableBuilder[Self <: UpdatePipelineOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePipelineOutput](x: Self) {
     
-    @scala.inline
-    def setPipeline(value: PipelineDeclaration): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: PipelineDeclaration): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
   }
 }

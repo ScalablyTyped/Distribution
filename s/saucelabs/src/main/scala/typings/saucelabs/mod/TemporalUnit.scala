@@ -19,37 +19,27 @@ trait TemporalUnit
 }
 object TemporalUnit {
   
-  @scala.inline
-  def apply(): TemporalUnit = {
+  inline def apply(): TemporalUnit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemporalUnit]
   }
   
-  @scala.inline
-  implicit class TemporalUnitMutableBuilder[Self <: TemporalUnit] (val x: Self) extends AnyVal {
+  extension [Self <: TemporalUnit](x: Self) {
     
-    @scala.inline
-    def setDateBased(value: Boolean): Self = StObject.set(x, "dateBased", value.asInstanceOf[js.Any])
+    inline def setDateBased(value: Boolean): Self = StObject.set(x, "dateBased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateBasedUndefined: Self = StObject.set(x, "dateBased", js.undefined)
+    inline def setDateBasedUndefined: Self = StObject.set(x, "dateBased", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationEstimated(value: Boolean): Self = StObject.set(x, "durationEstimated", value.asInstanceOf[js.Any])
+    inline def setDurationEstimated(value: Boolean): Self = StObject.set(x, "durationEstimated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationEstimatedUndefined: Self = StObject.set(x, "durationEstimated", js.undefined)
+    inline def setDurationEstimatedUndefined: Self = StObject.set(x, "durationEstimated", js.undefined)
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setTimeBased(value: Boolean): Self = StObject.set(x, "timeBased", value.asInstanceOf[js.Any])
+    inline def setTimeBased(value: Boolean): Self = StObject.set(x, "timeBased", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeBasedUndefined: Self = StObject.set(x, "timeBased", js.undefined)
+    inline def setTimeBasedUndefined: Self = StObject.set(x, "timeBased", js.undefined)
   }
 }

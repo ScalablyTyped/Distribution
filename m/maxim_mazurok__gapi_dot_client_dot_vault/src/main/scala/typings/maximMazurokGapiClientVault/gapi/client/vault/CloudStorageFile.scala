@@ -23,37 +23,27 @@ trait CloudStorageFile extends StObject {
 }
 object CloudStorageFile {
   
-  @scala.inline
-  def apply(): CloudStorageFile = {
+  inline def apply(): CloudStorageFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudStorageFile]
   }
   
-  @scala.inline
-  implicit class CloudStorageFileMutableBuilder[Self <: CloudStorageFile] (val x: Self) extends AnyVal {
+  extension [Self <: CloudStorageFile](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
+    inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
+    inline def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
     
-    @scala.inline
-    def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
+    inline def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
+    inline def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ trait GoogleApiYouTubeSubscriptionResource extends StObject {
 }
 object GoogleApiYouTubeSubscriptionResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentDetails: NewItemCount,
     etag: String,
     id: String,
@@ -54,25 +53,18 @@ object GoogleApiYouTubeSubscriptionResource {
     __obj.asInstanceOf[GoogleApiYouTubeSubscriptionResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubeSubscriptionResourceMutableBuilder[Self <: GoogleApiYouTubeSubscriptionResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubeSubscriptionResource](x: Self) {
     
-    @scala.inline
-    def setContentDetails(value: NewItemCount): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
+    inline def setContentDetails(value: NewItemCount): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippet(value: ChannelIdChannelTitle): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: ChannelIdChannelTitle): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriberSnippet(value: ChannelIdDescription): Self = StObject.set(x, "subscriberSnippet", value.asInstanceOf[js.Any])
+    inline def setSubscriberSnippet(value: ChannelIdDescription): Self = StObject.set(x, "subscriberSnippet", value.asInstanceOf[js.Any])
   }
 }

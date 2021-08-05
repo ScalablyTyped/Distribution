@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLStorage")
 @js.native
-class IHTMLStorage protected ()
+/* private */ class IHTMLStorage ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLStorage {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLStorage_typekey")
   var MSHTMLDotIHTMLStorage_typekey: typings.activexMshtml.MSHTML.IHTMLStorage = js.native
   

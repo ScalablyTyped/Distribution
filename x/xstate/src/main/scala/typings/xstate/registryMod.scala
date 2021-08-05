@@ -24,8 +24,7 @@ object registryMod {
   }
   object Registry_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bookId: () => String,
       free: String => Unit,
       get: String => js.UndefOr[Actor[js.Any, AnyEventObject]],
@@ -35,20 +34,15 @@ object registryMod {
       __obj.asInstanceOf[Registry_]
     }
     
-    @scala.inline
-    implicit class Registry_MutableBuilder[Self <: Registry_] (val x: Self) extends AnyVal {
+    extension [Self <: Registry_](x: Self) {
       
-      @scala.inline
-      def setBookId(value: () => String): Self = StObject.set(x, "bookId", js.Any.fromFunction0(value))
+      inline def setBookId(value: () => String): Self = StObject.set(x, "bookId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFree(value: String => Unit): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
+      inline def setFree(value: String => Unit): Self = StObject.set(x, "free", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => js.UndefOr[Actor[js.Any, AnyEventObject]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[Actor[js.Any, AnyEventObject]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegister(value: (String, Actor[js.Any, AnyEventObject]) => String): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+      inline def setRegister(value: (String, Actor[js.Any, AnyEventObject]) => String): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
 }

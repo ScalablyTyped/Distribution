@@ -21,41 +21,30 @@ object anon {
   }
   object Hash {
     
-    @scala.inline
-    def apply(pathname: String): Hash = {
+    inline def apply(pathname: String): Hash = {
       val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hash]
     }
     
-    @scala.inline
-    implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+    extension [Self <: Hash](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -67,26 +56,20 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(): Key = {
+    inline def apply(): Key = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
     }
   }
   
@@ -98,20 +81,16 @@ object anon {
   }
   object Params {
     
-    @scala.inline
-    def apply[T /* <: Record[String, js.Any] */](params: T, path: String): Params[T] = {
+    inline def apply[T /* <: Record[String, js.Any] */](params: T, path: String): Params[T] = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params[T]]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params[?], T /* <: Record[String, js.Any] */] (val x: Self & Params[T]) extends AnyVal {
+    extension [Self <: Params[?], T /* <: Record[String, js.Any] */](x: Self & Params[T]) {
       
-      @scala.inline
-      def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

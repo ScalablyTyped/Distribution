@@ -101,66 +101,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object GeoJSONProps {
   
-  @scala.inline
-  def apply(data: GeoJsonObject | js.Array[GeoJsonObject]): GeoJSONProps = {
+  inline def apply(data: GeoJsonObject | js.Array[GeoJsonObject]): GeoJSONProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONProps]
   }
   
-  @scala.inline
-  implicit class GeoJSONPropsMutableBuilder[Self <: GeoJSONProps] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONProps](x: Self) {
     
-    @scala.inline
-    def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
+    inline def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCoordsToLatLngUndefined: Self = StObject.set(x, "coordsToLatLng", js.undefined)
+    inline def setCoordsToLatLngUndefined: Self = StObject.set(x, "coordsToLatLng", js.undefined)
     
-    @scala.inline
-    def setData(value: GeoJsonObject | js.Array[GeoJsonObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: GeoJsonObject | js.Array[GeoJsonObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: GeoJsonObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: GeoJsonObject*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, js.Any] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, js.Any] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, js.Any], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
+    inline def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, js.Any], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
+    inline def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
     
-    @scala.inline
-    def setOnlayeradd(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayeradd", js.Any.fromFunction1(value))
+    inline def setOnlayeradd(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayeradd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnlayeraddUndefined: Self = StObject.set(x, "onlayeradd", js.undefined)
+    inline def setOnlayeraddUndefined: Self = StObject.set(x, "onlayeradd", js.undefined)
     
-    @scala.inline
-    def setOnlayerremove(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayerremove", js.Any.fromFunction1(value))
+    inline def setOnlayerremove(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayerremove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnlayerremoveUndefined: Self = StObject.set(x, "onlayerremove", js.undefined)
+    inline def setOnlayerremoveUndefined: Self = StObject.set(x, "onlayerremove", js.undefined)
     
-    @scala.inline
-    def setPointToLayer(
+    inline def setPointToLayer(
       value: (/* geoJsonPoint */ Feature[typings.geojson.mod.Point, js.Any], /* latlng */ LatLng_) => Layer
     ): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
+    inline def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
     
-    @scala.inline
-    def setStyle(value: PathOptions | StyleFunction[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: PathOptions | StyleFunction[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, js.Any]] => PathOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
+    inline def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, js.Any]] => PathOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

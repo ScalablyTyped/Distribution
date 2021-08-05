@@ -40,8 +40,7 @@ trait Aborted extends StObject {
 }
 object Aborted {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aborted: scala.Double,
     blocked: scala.Double,
     error: scala.Double,
@@ -63,55 +62,38 @@ object Aborted {
     __obj.asInstanceOf[Aborted]
   }
   
-  @scala.inline
-  implicit class AbortedMutableBuilder[Self <: Aborted] (val x: Self) extends AnyVal {
+  extension [Self <: Aborted](x: Self) {
     
-    @scala.inline
-    def setAborted(value: scala.Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+    inline def setAborted(value: scala.Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocked(value: scala.Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: scala.Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInconclusive(value: scala.Double): Self = StObject.set(x, "inconclusive", value.asInstanceOf[js.Any])
+    inline def setInconclusive(value: scala.Double): Self = StObject.set(x, "inconclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: scala.Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: scala.Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
+    inline def setNotApplicable(value: scala.Double): Self = StObject.set(x, "notApplicable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotExecuted(value: scala.Double): Self = StObject.set(x, "notExecuted", value.asInstanceOf[js.Any])
+    inline def setNotExecuted(value: scala.Double): Self = StObject.set(x, "notExecuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotImpacted(value: scala.Double): Self = StObject.set(x, "notImpacted", value.asInstanceOf[js.Any])
+    inline def setNotImpacted(value: scala.Double): Self = StObject.set(x, "notImpacted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassed(value: scala.Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: scala.Double): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaused(value: scala.Double): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: scala.Double): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: scala.Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: scala.Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
+    inline def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarning(value: scala.Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: scala.Double): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
   }
 }

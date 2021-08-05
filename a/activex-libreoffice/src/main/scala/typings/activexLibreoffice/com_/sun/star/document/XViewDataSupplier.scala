@@ -38,8 +38,7 @@ trait XViewDataSupplier
 }
 object XViewDataSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ViewData: XIndexAccess,
     acquire: () => Unit,
     getViewData: () => XIndexAccess,
@@ -51,16 +50,12 @@ object XViewDataSupplier {
     __obj.asInstanceOf[XViewDataSupplier]
   }
   
-  @scala.inline
-  implicit class XViewDataSupplierMutableBuilder[Self <: XViewDataSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XViewDataSupplier](x: Self) {
     
-    @scala.inline
-    def setGetViewData(value: () => XIndexAccess): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
+    inline def setGetViewData(value: () => XIndexAccess): Self = StObject.set(x, "getViewData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetViewData(value: XIndexAccess => Unit): Self = StObject.set(x, "setViewData", js.Any.fromFunction1(value))
+    inline def setSetViewData(value: XIndexAccess => Unit): Self = StObject.set(x, "setViewData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setViewData(value: XIndexAccess): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
+    inline def setViewData(value: XIndexAccess): Self = StObject.set(x, "ViewData", value.asInstanceOf[js.Any])
   }
 }

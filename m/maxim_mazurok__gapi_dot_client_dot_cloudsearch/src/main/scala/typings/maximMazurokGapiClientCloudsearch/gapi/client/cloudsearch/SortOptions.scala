@@ -14,25 +14,19 @@ trait SortOptions extends StObject {
 }
 object SortOptions {
   
-  @scala.inline
-  def apply(): SortOptions = {
+  inline def apply(): SortOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SortOptions]
   }
   
-  @scala.inline
-  implicit class SortOptionsMutableBuilder[Self <: SortOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SortOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait SlashCommand extends StObject {
 }
 object SlashCommand {
   
-  @scala.inline
-  def apply(): SlashCommand = {
+  inline def apply(): SlashCommand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlashCommand]
   }
   
-  @scala.inline
-  implicit class SlashCommandMutableBuilder[Self <: SlashCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SlashCommand](x: Self) {
     
-    @scala.inline
-    def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
+    inline def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandIdUndefined: Self = StObject.set(x, "commandId", js.undefined)
+    inline def setCommandIdUndefined: Self = StObject.set(x, "commandId", js.undefined)
   }
 }

@@ -14,16 +14,13 @@ trait ModalBodyInterface[TRow /* <: js.Object */] extends StObject {
 }
 object ModalBodyInterface {
   
-  @scala.inline
-  def apply[TRow /* <: js.Object */](getFieldValue: () => TRow): ModalBodyInterface[TRow] = {
+  inline def apply[TRow /* <: js.Object */](getFieldValue: () => TRow): ModalBodyInterface[TRow] = {
     val __obj = js.Dynamic.literal(getFieldValue = js.Any.fromFunction0(getFieldValue))
     __obj.asInstanceOf[ModalBodyInterface[TRow]]
   }
   
-  @scala.inline
-  implicit class ModalBodyInterfaceMutableBuilder[Self <: ModalBodyInterface[?], TRow /* <: js.Object */] (val x: Self & ModalBodyInterface[TRow]) extends AnyVal {
+  extension [Self <: ModalBodyInterface[?], TRow /* <: js.Object */](x: Self & ModalBodyInterface[TRow]) {
     
-    @scala.inline
-    def setGetFieldValue(value: () => TRow): Self = StObject.set(x, "getFieldValue", js.Any.fromFunction0(value))
+    inline def setGetFieldValue(value: () => TRow): Self = StObject.set(x, "getFieldValue", js.Any.fromFunction0(value))
   }
 }

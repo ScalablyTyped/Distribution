@@ -10,16 +10,13 @@ trait ViewModel extends StObject {
 }
 object ViewModel {
   
-  @scala.inline
-  def apply(getTitle: () => String): ViewModel = {
+  inline def apply(getTitle: () => String): ViewModel = {
     val __obj = js.Dynamic.literal(getTitle = js.Any.fromFunction0(getTitle))
     __obj.asInstanceOf[ViewModel]
   }
   
-  @scala.inline
-  implicit class ViewModelMutableBuilder[Self <: ViewModel] (val x: Self) extends AnyVal {
+  extension [Self <: ViewModel](x: Self) {
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
   }
 }

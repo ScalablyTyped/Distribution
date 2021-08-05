@@ -18,8 +18,7 @@ trait XHierarchicalNameContainer
 }
 object XHierarchicalNameContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getByHierarchicalName: String => js.Any,
     hasByHierarchicalName: String => Boolean,
@@ -33,13 +32,10 @@ object XHierarchicalNameContainer {
     __obj.asInstanceOf[XHierarchicalNameContainer]
   }
   
-  @scala.inline
-  implicit class XHierarchicalNameContainerMutableBuilder[Self <: XHierarchicalNameContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchicalNameContainer](x: Self) {
     
-    @scala.inline
-    def setInsertByHierarchicalName(value: (String, js.Any) => Unit): Self = StObject.set(x, "insertByHierarchicalName", js.Any.fromFunction2(value))
+    inline def setInsertByHierarchicalName(value: (String, js.Any) => Unit): Self = StObject.set(x, "insertByHierarchicalName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByHierarchicalName(value: String => Unit): Self = StObject.set(x, "removeByHierarchicalName", js.Any.fromFunction1(value))
+    inline def setRemoveByHierarchicalName(value: String => Unit): Self = StObject.set(x, "removeByHierarchicalName", js.Any.fromFunction1(value))
   }
 }

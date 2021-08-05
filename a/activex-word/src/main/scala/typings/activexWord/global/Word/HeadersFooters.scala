@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HeadersFooters")
 @js.native
-class HeadersFooters protected ()
+/* private */ class HeadersFooters ()
   extends StObject
      with typings.activexWord.Word.HeadersFooters {
   
@@ -26,7 +26,7 @@ class HeadersFooters protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.HeadersFooters_typekey")
   var WordDotHeadersFooters_typekey: typings.activexWord.Word.HeadersFooters = js.native
 }

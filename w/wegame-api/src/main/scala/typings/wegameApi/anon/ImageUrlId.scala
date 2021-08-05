@@ -29,34 +29,25 @@ trait ImageUrlId extends StObject {
 }
 object ImageUrlId {
   
-  @scala.inline
-  def apply(openId: String): ImageUrlId = {
+  inline def apply(openId: String): ImageUrlId = {
     val __obj = js.Dynamic.literal(openId = openId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageUrlId]
   }
   
-  @scala.inline
-  implicit class ImageUrlIdMutableBuilder[Self <: ImageUrlId] (val x: Self) extends AnyVal {
+  extension [Self <: ImageUrlId](x: Self) {
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlId(value: String): Self = StObject.set(x, "imageUrlId", value.asInstanceOf[js.Any])
+    inline def setImageUrlId(value: String): Self = StObject.set(x, "imageUrlId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlIdUndefined: Self = StObject.set(x, "imageUrlId", js.undefined)
+    inline def setImageUrlIdUndefined: Self = StObject.set(x, "imageUrlId", js.undefined)
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setOpenId(value: String): Self = StObject.set(x, "openId", value.asInstanceOf[js.Any])
+    inline def setOpenId(value: String): Self = StObject.set(x, "openId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

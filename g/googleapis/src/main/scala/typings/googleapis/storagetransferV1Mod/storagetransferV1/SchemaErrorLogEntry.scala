@@ -22,28 +22,21 @@ trait SchemaErrorLogEntry extends StObject {
 }
 object SchemaErrorLogEntry {
   
-  @scala.inline
-  def apply(): SchemaErrorLogEntry = {
+  inline def apply(): SchemaErrorLogEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorLogEntry]
   }
   
-  @scala.inline
-  implicit class SchemaErrorLogEntryMutableBuilder[Self <: SchemaErrorLogEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorLogEntry](x: Self) {
     
-    @scala.inline
-    def setErrorDetails(value: js.Array[String]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: js.Array[String]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
+    inline def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

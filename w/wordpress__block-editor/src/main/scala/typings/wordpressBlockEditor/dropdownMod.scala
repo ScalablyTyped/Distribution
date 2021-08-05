@@ -31,20 +31,16 @@ object dropdownMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+        inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+        inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
       }
     }
   }

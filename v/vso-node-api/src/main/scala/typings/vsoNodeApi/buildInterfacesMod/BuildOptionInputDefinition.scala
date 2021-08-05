@@ -48,8 +48,7 @@ trait BuildOptionInputDefinition extends StObject {
 }
 object BuildOptionInputDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: String,
     groupName: String,
     help: StringDictionary[String],
@@ -65,34 +64,24 @@ object BuildOptionInputDefinition {
     __obj.asInstanceOf[BuildOptionInputDefinition]
   }
   
-  @scala.inline
-  implicit class BuildOptionInputDefinitionMutableBuilder[Self <: BuildOptionInputDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: BuildOptionInputDefinition](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelp(value: StringDictionary[String]): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: StringDictionary[String]): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: BuildOptionInputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BuildOptionInputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleRule(value: String): Self = StObject.set(x, "visibleRule", value.asInstanceOf[js.Any])
+    inline def setVisibleRule(value: String): Self = StObject.set(x, "visibleRule", value.asInstanceOf[js.Any])
   }
 }

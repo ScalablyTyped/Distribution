@@ -27,8 +27,7 @@ trait BaseStatus
 }
 object BaseStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: Record[String, js.Array[Dictk]],
     name: String,
     `private`: Boolean,
@@ -44,28 +43,20 @@ object BaseStatus {
     __obj.asInstanceOf[BaseStatus]
   }
   
-  @scala.inline
-  implicit class BaseStatusMutableBuilder[Self <: BaseStatus] (val x: Self) extends AnyVal {
+  extension [Self <: BaseStatus](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
+    inline def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_in_list(value: Boolean): Self = StObject.set(x, "show_in_list", value.asInstanceOf[js.Any])
+    inline def setShow_in_list(value: Boolean): Self = StObject.set(x, "show_in_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
   }
 }

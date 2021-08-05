@@ -16,8 +16,7 @@ trait ILightSensor extends StObject {
 }
 object ILightSensor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => LightSensorReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,
@@ -27,19 +26,14 @@ object ILightSensor {
     __obj.asInstanceOf[ILightSensor]
   }
   
-  @scala.inline
-  implicit class ILightSensorMutableBuilder[Self <: ILightSensor] (val x: Self) extends AnyVal {
+  extension [Self <: ILightSensor](x: Self) {
     
-    @scala.inline
-    def setGetCurrentReading(value: () => LightSensorReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
+    inline def setGetCurrentReading(value: () => LightSensorReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
+    inline def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
+    inline def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
+    inline def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
   }
 }

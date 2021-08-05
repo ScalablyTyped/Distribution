@@ -50,21 +50,16 @@ object vpnGatewayAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState, opts: CustomResourceOptions): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
+    inline def get(name: String, id: Input[ID]): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
+    inline def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
+    inline def get(name: String, id: Input[ID], state: VpnGatewayAttachmentState, opts: CustomResourceOptions): VpnGatewayAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnGatewayAttachment]
     
     /**
       * Returns true if the given object is an instance of VpnGatewayAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ Boolean]
   }
   
   trait VpnGatewayAttachmentArgs extends StObject {
@@ -81,20 +76,16 @@ object vpnGatewayAttachmentMod {
   }
   object VpnGatewayAttachmentArgs {
     
-    @scala.inline
-    def apply(vpcId: Input[String], vpnGatewayId: Input[String]): VpnGatewayAttachmentArgs = {
+    inline def apply(vpcId: Input[String], vpnGatewayId: Input[String]): VpnGatewayAttachmentArgs = {
       val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any], vpnGatewayId = vpnGatewayId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpnGatewayAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class VpnGatewayAttachmentArgsMutableBuilder[Self <: VpnGatewayAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpnGatewayAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
+      inline def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object vpnGatewayAttachmentMod {
   }
   object VpnGatewayAttachmentState {
     
-    @scala.inline
-    def apply(): VpnGatewayAttachmentState = {
+    inline def apply(): VpnGatewayAttachmentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpnGatewayAttachmentState]
     }
     
-    @scala.inline
-    implicit class VpnGatewayAttachmentStateMutableBuilder[Self <: VpnGatewayAttachmentState] (val x: Self) extends AnyVal {
+    extension [Self <: VpnGatewayAttachmentState](x: Self) {
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
       
-      @scala.inline
-      def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
+      inline def setVpnGatewayId(value: Input[String]): Self = StObject.set(x, "vpnGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnGatewayIdUndefined: Self = StObject.set(x, "vpnGatewayId", js.undefined)
+      inline def setVpnGatewayIdUndefined: Self = StObject.set(x, "vpnGatewayId", js.undefined)
     }
   }
 }

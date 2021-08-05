@@ -21,34 +21,29 @@ object ToggleMode {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ToggleMode.None")
   @js.native
   def None: ToggleMode = js.native
-  @scala.inline
-  def None_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ToggleMode.PushContentAside")
   @js.native
   def PushContentAside: ToggleMode = js.native
-  @scala.inline
-  def PushContentAside_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PushContentAside")(x.asInstanceOf[js.Any])
+  inline def PushContentAside_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PushContentAside")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ToggleMode.ShrinkContentInitiallyClosed")
   @js.native
   def ShrinkContentInitiallyClosed: ToggleMode = js.native
-  @scala.inline
-  def ShrinkContentInitiallyClosed_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyClosed")(x.asInstanceOf[js.Any])
+  inline def ShrinkContentInitiallyClosed_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyClosed")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ToggleMode.ShrinkContentInitiallyOpen")
   @js.native
   def ShrinkContentInitiallyOpen: ToggleMode = js.native
-  @scala.inline
-  def ShrinkContentInitiallyOpen_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyOpen")(x.asInstanceOf[js.Any])
+  inline def ShrinkContentInitiallyOpen_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShrinkContentInitiallyOpen")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ToggleMode.SlideOverContent")
   @js.native
   def SlideOverContent: ToggleMode = js.native
-  @scala.inline
-  def SlideOverContent_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SlideOverContent")(x.asInstanceOf[js.Any])
+  inline def SlideOverContent_=(x: ToggleMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SlideOverContent")(x.asInstanceOf[js.Any])
 }

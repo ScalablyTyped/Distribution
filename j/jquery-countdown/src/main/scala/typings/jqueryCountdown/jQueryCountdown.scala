@@ -16,17 +16,13 @@ object jQueryCountdown {
   trait Controls extends StObject
   object Controls {
     
-    @scala.inline
-    def pause: typings.jqueryCountdown.jqueryCountdownStrings.pause = "pause".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.pause]
+    inline def pause: typings.jqueryCountdown.jqueryCountdownStrings.pause = "pause".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.pause]
     
-    @scala.inline
-    def resume: typings.jqueryCountdown.jqueryCountdownStrings.resume = "resume".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.resume]
+    inline def resume: typings.jqueryCountdown.jqueryCountdownStrings.resume = "resume".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.resume]
     
-    @scala.inline
-    def start: typings.jqueryCountdown.jqueryCountdownStrings.start = "start".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.start]
+    inline def start: typings.jqueryCountdown.jqueryCountdownStrings.start = "start".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.start]
     
-    @scala.inline
-    def stop: typings.jqueryCountdown.jqueryCountdownStrings.stop = "stop".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.stop]
+    inline def stop: typings.jqueryCountdown.jqueryCountdownStrings.stop = "stop".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.stop]
   }
   
   trait Event
@@ -52,8 +48,7 @@ object jQueryCountdown {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       elapsed: Boolean,
       finalDate: Date,
       isDefaultPrevented: () => Boolean,
@@ -72,20 +67,15 @@ object jQueryCountdown {
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setElapsed(value: Boolean): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+      inline def setElapsed(value: Boolean): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalDate(value: Date): Self = StObject.set(x, "finalDate", value.asInstanceOf[js.Any])
+      inline def setFinalDate(value: Date): Self = StObject.set(x, "finalDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: OffsetEvent): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: OffsetEvent): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
+      inline def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
     }
   }
   
@@ -97,14 +87,11 @@ object jQueryCountdown {
   trait Methods extends StObject
   object Methods {
     
-    @scala.inline
-    def finishDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.finishDotcountdown = "finish.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.finishDotcountdown]
+    inline def finishDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.finishDotcountdown = "finish.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.finishDotcountdown]
     
-    @scala.inline
-    def stopDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.stopDotcountdown = "stop.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.stopDotcountdown]
+    inline def stopDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.stopDotcountdown = "stop.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.stopDotcountdown]
     
-    @scala.inline
-    def updateDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown = "update.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown]
+    inline def updateDotcountdown: typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown = "update.countdown".asInstanceOf[typings.jqueryCountdown.jqueryCountdownStrings.updateDotcountdown]
   }
   
   trait OffsetEvent extends StObject {
@@ -181,8 +168,7 @@ object jQueryCountdown {
   }
   object OffsetEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       days: Double,
       daysToMonth: Double,
       daysToWeek: Double,
@@ -202,50 +188,35 @@ object jQueryCountdown {
       __obj.asInstanceOf[OffsetEvent]
     }
     
-    @scala.inline
-    implicit class OffsetEventMutableBuilder[Self <: OffsetEvent] (val x: Self) extends AnyVal {
+    extension [Self <: OffsetEvent](x: Self) {
       
-      @scala.inline
-      def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysToMonth(value: Double): Self = StObject.set(x, "daysToMonth", value.asInstanceOf[js.Any])
+      inline def setDaysToMonth(value: Double): Self = StObject.set(x, "daysToMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysToWeek(value: Double): Self = StObject.set(x, "daysToWeek", value.asInstanceOf[js.Any])
+      inline def setDaysToWeek(value: Double): Self = StObject.set(x, "daysToWeek", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDays(value: Double): Self = StObject.set(x, "totalDays", value.asInstanceOf[js.Any])
+      inline def setTotalDays(value: Double): Self = StObject.set(x, "totalDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalHours(value: Double): Self = StObject.set(x, "totalHours", value.asInstanceOf[js.Any])
+      inline def setTotalHours(value: Double): Self = StObject.set(x, "totalHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalMinutes(value: Double): Self = StObject.set(x, "totalMinutes", value.asInstanceOf[js.Any])
+      inline def setTotalMinutes(value: Double): Self = StObject.set(x, "totalMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalSeconds(value: Double): Self = StObject.set(x, "totalSeconds", value.asInstanceOf[js.Any])
+      inline def setTotalSeconds(value: Double): Self = StObject.set(x, "totalSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeks(value: Double): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+      inline def setWeeks(value: Double): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeksToMonth(value: Double): Self = StObject.set(x, "weeksToMonth", value.asInstanceOf[js.Any])
+      inline def setWeeksToMonth(value: Double): Self = StObject.set(x, "weeksToMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+      inline def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
     }
   }
   
@@ -268,32 +239,24 @@ object jQueryCountdown {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
-      @scala.inline
-      def setElapse(value: Boolean): Self = StObject.set(x, "elapse", value.asInstanceOf[js.Any])
+      inline def setElapse(value: Boolean): Self = StObject.set(x, "elapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapseUndefined: Self = StObject.set(x, "elapse", js.undefined)
+      inline def setElapseUndefined: Self = StObject.set(x, "elapse", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     }
   }
 }

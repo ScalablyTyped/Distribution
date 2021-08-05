@@ -16,8 +16,7 @@ trait PopcornManifestOptions extends StObject {
 }
 object PopcornManifestOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: PopcornManifestOption,
     start: PopcornManifestOption,
     target: String,
@@ -27,19 +26,14 @@ object PopcornManifestOptions {
     __obj.asInstanceOf[PopcornManifestOptions]
   }
   
-  @scala.inline
-  implicit class PopcornManifestOptionsMutableBuilder[Self <: PopcornManifestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopcornManifestOptions](x: Self) {
     
-    @scala.inline
-    def setEnd(value: PopcornManifestOption): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: PopcornManifestOption): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: PopcornManifestOption): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: PopcornManifestOption): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: PopcornManifestOption): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: PopcornManifestOption): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait AudioAtom extends StObject {
 }
 object AudioAtom {
   
-  @scala.inline
-  def apply(): AudioAtom = {
+  inline def apply(): AudioAtom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioAtom]
   }
   
-  @scala.inline
-  implicit class AudioAtomMutableBuilder[Self <: AudioAtom] (val x: Self) extends AnyVal {
+  extension [Self <: AudioAtom](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[AudioChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[AudioChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: AudioChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: AudioChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait Plugins extends StObject {
 }
 object Plugins {
   
-  @scala.inline
-  def apply(dragNodes: DragNodes): Plugins = {
+  inline def apply(dragNodes: DragNodes): Plugins = {
     val __obj = js.Dynamic.literal(dragNodes = dragNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugins]
   }
   
-  @scala.inline
-  implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
+  extension [Self <: Plugins](x: Self) {
     
-    @scala.inline
-    def setDragNodes(value: DragNodes): Self = StObject.set(x, "dragNodes", value.asInstanceOf[js.Any])
+    inline def setDragNodes(value: DragNodes): Self = StObject.set(x, "dragNodes", value.asInstanceOf[js.Any])
   }
 }

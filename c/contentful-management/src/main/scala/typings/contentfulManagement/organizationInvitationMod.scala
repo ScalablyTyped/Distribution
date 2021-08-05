@@ -13,8 +13,7 @@ object organizationInvitationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapOrganizationInvitation(http: AxiosInstance, data: OrganizationInvitationProps): OrganizationInvitation = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationInvitation")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[OrganizationInvitation]
+  inline def wrapOrganizationInvitation(http: AxiosInstance, data: OrganizationInvitationProps): OrganizationInvitation = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapOrganizationInvitation")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[OrganizationInvitation]
   
   trait OrganizationInvitation
     extends StObject
@@ -22,8 +21,7 @@ object organizationInvitationMod {
        with DefaultElements[OrganizationInvitationProps]
   object OrganizationInvitation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       email: String,
       firstName: String,
       lastName: String,
@@ -50,29 +48,22 @@ object organizationInvitationMod {
   }
   object OrganizationInvitationProps {
     
-    @scala.inline
-    def apply(email: String, firstName: String, lastName: String, role: String, sys: MetaSysPropsorganizationM): OrganizationInvitationProps = {
+    inline def apply(email: String, firstName: String, lastName: String, role: String, sys: MetaSysPropsorganizationM): OrganizationInvitationProps = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], firstName = firstName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
       __obj.asInstanceOf[OrganizationInvitationProps]
     }
     
-    @scala.inline
-    implicit class OrganizationInvitationPropsMutableBuilder[Self <: OrganizationInvitationProps] (val x: Self) extends AnyVal {
+    extension [Self <: OrganizationInvitationProps](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysPropsorganizationM): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysPropsorganizationM): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

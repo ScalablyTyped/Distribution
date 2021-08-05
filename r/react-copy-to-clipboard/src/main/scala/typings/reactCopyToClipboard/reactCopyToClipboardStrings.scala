@@ -8,11 +8,9 @@ object reactCopyToClipboardStrings {
   
   @js.native
   sealed trait textSlashhtml extends StObject
-  @scala.inline
-  def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
+  inline def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
   
   @js.native
   sealed trait textSlashplain extends StObject
-  @scala.inline
-  def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
+  inline def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
 }

@@ -12,25 +12,19 @@ trait Attributes extends StObject {
 }
 object Attributes {
   
-  @scala.inline
-  def apply(): Attributes = {
+  inline def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attributes]
   }
   
-  @scala.inline
-  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+  extension [Self <: Attributes](x: Self) {
     
-    @scala.inline
-    def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+    inline def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
+    inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

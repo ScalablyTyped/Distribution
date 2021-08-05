@@ -25,8 +25,7 @@ trait SafariExtensionContextMenuItemValidateEvent extends StObject {
 }
 object SafariExtensionContextMenuItemValidateEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTarget: SafariExtensionContextMenuItem,
     target: SafariExtensionContextMenuItem,
     userInfo: js.Any
@@ -35,16 +34,12 @@ object SafariExtensionContextMenuItemValidateEvent {
     __obj.asInstanceOf[SafariExtensionContextMenuItemValidateEvent]
   }
   
-  @scala.inline
-  implicit class SafariExtensionContextMenuItemValidateEventMutableBuilder[Self <: SafariExtensionContextMenuItemValidateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SafariExtensionContextMenuItemValidateEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

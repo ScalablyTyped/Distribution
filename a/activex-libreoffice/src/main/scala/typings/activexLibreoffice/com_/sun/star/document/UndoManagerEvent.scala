@@ -30,19 +30,15 @@ trait UndoManagerEvent
 }
 object UndoManagerEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, UndoActionTitle: String, UndoContextDepth: Double): UndoManagerEvent = {
+  inline def apply(Source: XInterface, UndoActionTitle: String, UndoContextDepth: Double): UndoManagerEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], UndoActionTitle = UndoActionTitle.asInstanceOf[js.Any], UndoContextDepth = UndoContextDepth.asInstanceOf[js.Any])
     __obj.asInstanceOf[UndoManagerEvent]
   }
   
-  @scala.inline
-  implicit class UndoManagerEventMutableBuilder[Self <: UndoManagerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UndoManagerEvent](x: Self) {
     
-    @scala.inline
-    def setUndoActionTitle(value: String): Self = StObject.set(x, "UndoActionTitle", value.asInstanceOf[js.Any])
+    inline def setUndoActionTitle(value: String): Self = StObject.set(x, "UndoActionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndoContextDepth(value: Double): Self = StObject.set(x, "UndoContextDepth", value.asInstanceOf[js.Any])
+    inline def setUndoContextDepth(value: Double): Self = StObject.set(x, "UndoContextDepth", value.asInstanceOf[js.Any])
   }
 }

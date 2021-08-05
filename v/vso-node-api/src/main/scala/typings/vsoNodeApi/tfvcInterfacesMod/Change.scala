@@ -33,8 +33,7 @@ trait Change[T] extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     changeType: VersionControlChangeType,
     item: T,
     newContent: ItemContent,
@@ -45,22 +44,16 @@ object Change {
     __obj.asInstanceOf[Change[T]]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change[?], T] (val x: Self & Change[T]) extends AnyVal {
+  extension [Self <: Change[?], T](x: Self & Change[T]) {
     
-    @scala.inline
-    def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewContent(value: ItemContent): Self = StObject.set(x, "newContent", value.asInstanceOf[js.Any])
+    inline def setNewContent(value: ItemContent): Self = StObject.set(x, "newContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceServerItem(value: String): Self = StObject.set(x, "sourceServerItem", value.asInstanceOf[js.Any])
+    inline def setSourceServerItem(value: String): Self = StObject.set(x, "sourceServerItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

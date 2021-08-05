@@ -13,8 +13,7 @@ object dataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasUri: UrlWithStringQuery, hasCache: DataOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], hasCache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  inline def default(hasUri: UrlWithStringQuery, hasCache: DataOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], hasCache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
   
   trait DataOptions
     extends StObject
@@ -25,20 +24,16 @@ object dataMod {
   }
   object DataOptions {
     
-    @scala.inline
-    def apply(): DataOptions = {
+    inline def apply(): DataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataOptions]
     }
     
-    @scala.inline
-    implicit class DataOptionsMutableBuilder[Self <: DataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DataOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: DataReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: DataReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
   

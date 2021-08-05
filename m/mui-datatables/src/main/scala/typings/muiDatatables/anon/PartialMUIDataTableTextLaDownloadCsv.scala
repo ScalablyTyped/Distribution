@@ -19,43 +19,31 @@ trait PartialMUIDataTableTextLaDownloadCsv extends StObject {
 }
 object PartialMUIDataTableTextLaDownloadCsv {
   
-  @scala.inline
-  def apply(): PartialMUIDataTableTextLaDownloadCsv = {
+  inline def apply(): PartialMUIDataTableTextLaDownloadCsv = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMUIDataTableTextLaDownloadCsv]
   }
   
-  @scala.inline
-  implicit class PartialMUIDataTableTextLaDownloadCsvMutableBuilder[Self <: PartialMUIDataTableTextLaDownloadCsv] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMUIDataTableTextLaDownloadCsv](x: Self) {
     
-    @scala.inline
-    def setDownloadCsv(value: String): Self = StObject.set(x, "downloadCsv", value.asInstanceOf[js.Any])
+    inline def setDownloadCsv(value: String): Self = StObject.set(x, "downloadCsv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadCsvUndefined: Self = StObject.set(x, "downloadCsv", js.undefined)
+    inline def setDownloadCsvUndefined: Self = StObject.set(x, "downloadCsv", js.undefined)
     
-    @scala.inline
-    def setFilterTable(value: String): Self = StObject.set(x, "filterTable", value.asInstanceOf[js.Any])
+    inline def setFilterTable(value: String): Self = StObject.set(x, "filterTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTableUndefined: Self = StObject.set(x, "filterTable", js.undefined)
+    inline def setFilterTableUndefined: Self = StObject.set(x, "filterTable", js.undefined)
     
-    @scala.inline
-    def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    inline def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+    inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setViewColumns(value: String): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
+    inline def setViewColumns(value: String): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
+    inline def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
   }
 }

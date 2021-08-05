@@ -16,17 +16,14 @@ object secretsmanager {
   }
   object SecretRotationRotationRules {
     
-    @scala.inline
-    def apply(automaticallyAfterDays: Input[Double]): SecretRotationRotationRules = {
+    inline def apply(automaticallyAfterDays: Input[Double]): SecretRotationRotationRules = {
       val __obj = js.Dynamic.literal(automaticallyAfterDays = automaticallyAfterDays.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecretRotationRotationRules]
     }
     
-    @scala.inline
-    implicit class SecretRotationRotationRulesMutableBuilder[Self <: SecretRotationRotationRules] (val x: Self) extends AnyVal {
+    extension [Self <: SecretRotationRotationRules](x: Self) {
       
-      @scala.inline
-      def setAutomaticallyAfterDays(value: Input[Double]): Self = StObject.set(x, "automaticallyAfterDays", value.asInstanceOf[js.Any])
+      inline def setAutomaticallyAfterDays(value: Input[Double]): Self = StObject.set(x, "automaticallyAfterDays", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,17 +36,14 @@ object secretsmanager {
   }
   object SecretRotationRules {
     
-    @scala.inline
-    def apply(automaticallyAfterDays: Input[Double]): SecretRotationRules = {
+    inline def apply(automaticallyAfterDays: Input[Double]): SecretRotationRules = {
       val __obj = js.Dynamic.literal(automaticallyAfterDays = automaticallyAfterDays.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecretRotationRules]
     }
     
-    @scala.inline
-    implicit class SecretRotationRulesMutableBuilder[Self <: SecretRotationRules] (val x: Self) extends AnyVal {
+    extension [Self <: SecretRotationRules](x: Self) {
       
-      @scala.inline
-      def setAutomaticallyAfterDays(value: Input[Double]): Self = StObject.set(x, "automaticallyAfterDays", value.asInstanceOf[js.Any])
+      inline def setAutomaticallyAfterDays(value: Input[Double]): Self = StObject.set(x, "automaticallyAfterDays", value.asInstanceOf[js.Any])
     }
   }
 }

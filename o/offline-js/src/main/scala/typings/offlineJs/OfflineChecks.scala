@@ -16,31 +16,23 @@ trait OfflineChecks extends StObject {
 }
 object OfflineChecks {
   
-  @scala.inline
-  def apply(): OfflineChecks = {
+  inline def apply(): OfflineChecks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OfflineChecks]
   }
   
-  @scala.inline
-  implicit class OfflineChecksMutableBuilder[Self <: OfflineChecks] (val x: Self) extends AnyVal {
+  extension [Self <: OfflineChecks](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setImage(value: OfflineCheck): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: OfflineCheck): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setXhr(value: OfflineCheck): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: OfflineCheck): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait Group
 }
 object Group {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _lastHeightUpdate: Double,
     _lastLeftUpdate: Double,
     _lastTopUpdate: Double,
@@ -65,13 +64,10 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setSelectLayout(value: (String, String) => scala.Unit): Self = StObject.set(x, "selectLayout", js.Any.fromFunction2(value))
+    inline def setSelectLayout(value: (String, String) => scala.Unit): Self = StObject.set(x, "selectLayout", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnselectLayout(value: () => scala.Unit): Self = StObject.set(x, "unselectLayout", js.Any.fromFunction0(value))
+    inline def setUnselectLayout(value: () => scala.Unit): Self = StObject.set(x, "unselectLayout", js.Any.fromFunction0(value))
   }
 }

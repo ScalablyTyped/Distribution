@@ -12,22 +12,17 @@ trait SessionProgressEvent extends StObject {
 }
 object SessionProgressEvent {
   
-  @scala.inline
-  def apply(originator: String): SessionProgressEvent = {
+  inline def apply(originator: String): SessionProgressEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionProgressEvent]
   }
   
-  @scala.inline
-  implicit class SessionProgressEventMutableBuilder[Self <: SessionProgressEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionProgressEvent](x: Self) {
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

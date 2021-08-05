@@ -21,25 +21,19 @@ trait SchemaShellTask extends StObject {
 }
 object SchemaShellTask {
   
-  @scala.inline
-  def apply(): SchemaShellTask = {
+  inline def apply(): SchemaShellTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShellTask]
   }
   
-  @scala.inline
-  implicit class SchemaShellTaskMutableBuilder[Self <: SchemaShellTask] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShellTask](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
+    inline def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
   }
 }

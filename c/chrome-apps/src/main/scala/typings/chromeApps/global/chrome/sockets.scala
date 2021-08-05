@@ -59,10 +59,8 @@ object sockets {
       * @param socketId The socket identifier.
       * @param [callback] Called when the close operation completes.
       */
-    @scala.inline
-    def close(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def close(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Connects the socket to a remote machine.
@@ -78,8 +76,7 @@ object sockets {
       *                 The result code returned from the underlying network call.
       *                 A negative value indicates an error.
       */
-    @scala.inline
-    def connect(
+    inline def connect(
       socketId: integer,
       peerAddress: String,
       peerPort: integer,
@@ -87,39 +84,33 @@ object sockets {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(socketId.asInstanceOf[js.Any], peerAddress.asInstanceOf[js.Any], peerPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Creates a TCP socket. */
-    @scala.inline
-    def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Creates a TCP socket.
       * @param properties The socket properties (optional).
       */
-    @scala.inline
-    def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @description Disconnects the socket.
       * @param socketId The socket identifier.
       * @param [callback] Called when the disconnect attempt is complete.
       */
-    @scala.inline
-    def disconnect(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def disconnect(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Retrieves the state of the given socket.
       * @param socketId The socket identifier.
       * @param callback Called when the socket state is available. Provides an object containing the socket information.
       */
-    @scala.inline
-    def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @description Retrieves the list of currently opened sockets owned by the application.
       * @param callback Called when the list of sockets is available. Provides an array of socket info.
       */
-    @scala.inline
-    def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSockets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSockets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Event raised when data has been received for a given socket. */
     @JSGlobal("chrome.sockets.tcp.onReceive")
@@ -142,8 +133,7 @@ object sockets {
       * @param socketId The existing, connected socket to use.
       * @param callback Called when the connection attempt is complete.
       */
-    @scala.inline
-    def secure(socketId: integer, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("secure")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def secure(socketId: integer, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("secure")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * Start a TLS client connection over the connected TCP client socket.
       * @since Chrome 38.
@@ -151,8 +141,7 @@ object sockets {
       * @param [options] Constraints and parameters for the TLS connection.
       * @param callback Called when the connection attempt is complete.
       */
-    @scala.inline
-    def secure(socketId: integer, options: SecureOptions, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("secure")(socketId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def secure(socketId: integer, options: SecureOptions, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("secure")(socketId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @description Sends data on the given TCP socket.
@@ -160,8 +149,7 @@ object sockets {
       * @param data The data to send.
       * @param callback Called when the send operation completes.
       */
-    @scala.inline
-    def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ SendInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def send(socketId: integer, data: ArrayBuffer, callback: js.Function1[/* sendInfo */ SendInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(socketId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @description Enables or disables the keep-alive functionality for a TCP connection.
@@ -169,8 +157,7 @@ object sockets {
       * @param enable If true, enable keep-alive functionality.
       * @param callback Provides the result code returned from the underlying network call. A negative value indicates an error.
       */
-    @scala.inline
-    def setKeepAlive(socketId: integer, enable: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setKeepAlive")(socketId.asInstanceOf[js.Any], enable.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setKeepAlive(socketId: integer, enable: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setKeepAlive")(socketId.asInstanceOf[js.Any], enable.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * @description Enables or disables the keep-alive functionality for a TCP connection.
       * @param socketId The socket identifier.
@@ -178,8 +165,7 @@ object sockets {
       * @param [delay] Set the delay seconds between the last data packet received and the first keepalive probe. Default is 0.
       * @param callback Provides the result code returned from the underlying network call. A negative value indicates an error.
       */
-    @scala.inline
-    def setKeepAlive(
+    inline def setKeepAlive(
       socketId: integer,
       enable: Boolean,
       delay: integer,
@@ -194,8 +180,7 @@ object sockets {
       * @param callback Called when the setNoDelay attempt is complete. Provides the result code returned
       *                 from the underlying network call. A negative value indicates an error.
       */
-    @scala.inline
-    def setNoDelay(socketId: integer, noDelay: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNoDelay")(socketId.asInstanceOf[js.Any], noDelay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setNoDelay(socketId: integer, noDelay: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNoDelay")(socketId.asInstanceOf[js.Any], noDelay.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Enables or disables the application from receiving messages from its peer.
@@ -204,16 +189,12 @@ object sockets {
       * no onReceive event is raised. When a socket is connected and un-paused,
       * onReceive events are raised again when messages are received.
       */
-    @scala.inline
-    def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Updates the socket properties. */
-    @scala.inline
-    def update(socketId: integer, properties: SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def update(socketId: integer, properties: SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -240,10 +221,8 @@ object sockets {
       * @param socketId The socket identifier.
       * @param callback Called when the close operation completes.
       */
-    @scala.inline
-    def close(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def close(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a TCP server socket.
@@ -251,8 +230,7 @@ object sockets {
       * @see https://developer.chrome.com/apps/sockets_tcpServer#method-create
       * @param callback Called when the socket has been created.
       */
-    @scala.inline
-    def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Creates a TCP server socket.
       *
@@ -260,8 +238,7 @@ object sockets {
       * @param properties The socket properties.
       * @param callback   Called when the socket has been created.
       */
-    @scala.inline
-    def create(
+    inline def create(
       properties: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties,
       callback: js.Function1[/* createInfo */ CreateInfo, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -276,10 +253,8 @@ object sockets {
       * @param socketId The socket identifier.
       * @param callback Called when the disconnect attempt is complete.
       */
-    @scala.inline
-    def disconnect(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def disconnect(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnect(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Retrieves the state of the given socket.
@@ -288,8 +263,7 @@ object sockets {
       * @param socketId The socket identifier.
       * @param callback Called when the socket state is available.
       */
-    @scala.inline
-    def getInfo(
+    inline def getInfo(
       socketId: integer,
       callback: js.Function1[/* socketInfo */ typings.chromeApps.chrome.sockets.tcpServer.SocketInfo, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -300,8 +274,7 @@ object sockets {
       * @see https://developer.chrome.com/apps/sockets_tcpServer#method-getSockets
       * @param callback Called when the list of sockets is available.
       */
-    @scala.inline
-    def getSockets(
+    inline def getSockets(
       callback: js.Function1[
           /* socketInfos */ js.Array[typings.chromeApps.chrome.sockets.tcpServer.SocketInfo], 
           Unit
@@ -323,8 +296,7 @@ object sockets {
       *                 ensures a reasonable queue length for most applications.
       * @param callback Called when listen operation completes.
       */
-    @scala.inline
-    def listen(
+    inline def listen(
       socketId: integer,
       address: String,
       port: integer,
@@ -343,8 +315,7 @@ object sockets {
       *                 be found by calling getInfo.
       * @param callback Called when listen operation completes.
       */
-    @scala.inline
-    def listen(
+    inline def listen(
       socketId: integer,
       address: String,
       port: integer,
@@ -381,10 +352,8 @@ object sockets {
       * @see https://developer.chrome.com/apps/sockets_tcpServer#method-setPaused
       * @param callback Callback from the setPaused method.
       */
-    @scala.inline
-    def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Updates the socket properties.
@@ -394,10 +363,8 @@ object sockets {
       * @param properties The properties to update.
       * @param callback   Called when the properties are updated.
       */
-    @scala.inline
-    def update(socketId: integer, properties: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def update(
+    inline def update(socketId: integer, properties: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def update(
       socketId: integer,
       properties: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties,
       callback: js.Function0[Unit]
@@ -435,8 +402,7 @@ object sockets {
       *                 port.
       * @param callback Called when the bind operation completes.
       */
-    @scala.inline
-    def bind(
+    inline def bind(
       socketId: integer,
       address: String,
       port: integer,
@@ -453,10 +419,8 @@ object sockets {
       * @param socketId The socket ID.
       * @param callback Called when the close operation completes.
       */
-    @scala.inline
-    def close(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def close(socketId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def close(socketId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("close")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates a UDP socket with default properties.
@@ -464,8 +428,7 @@ object sockets {
       * @see https://developer.chrome.com/apps/sockets_udp#method-create
       * @param createInfo.socketId The ID of the newly created socket.
       */
-    @scala.inline
-    def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def create(callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       * Creates a UDP socket with the given properties.
       *
@@ -473,8 +436,7 @@ object sockets {
       * @param properties          The socket properties.
       * @param createInfo.socketId The ID of the newly created socket.
       */
-    @scala.inline
-    def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def create(properties: SocketProperties, callback: js.Function1[/* createInfo */ CreateInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Retrieves the state of the given socket.
@@ -483,8 +445,7 @@ object sockets {
       * @param socketId The socket ID.
       * @param callback Called when the socket state is available.
       */
-    @scala.inline
-    def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getInfo(socketId: integer, callback: js.Function1[/* socketInfo */ SocketInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets the multicast group addresses the socket is currently joined to.
@@ -493,8 +454,7 @@ object sockets {
       * @param socketId The socket ID.
       * @param callback Called with an array of strings of the result.
       */
-    @scala.inline
-    def getJoinedGroups(socketId: integer, callback: js.Function1[/* groups */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getJoinedGroups")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getJoinedGroups(socketId: integer, callback: js.Function1[/* groups */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getJoinedGroups")(socketId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Retrieves the list of currently opened sockets owned by the application.
@@ -502,8 +462,7 @@ object sockets {
       * @see https://developer.chrome.com/apps/sockets_udp#method-getSockets
       * @param callback Called when the list of sockets is available.
       */
-    @scala.inline
-    def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSockets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getSockets(callback: js.Function1[/* socketInfos */ js.Array[SocketInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSockets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Joins the multicast group and starts to receive packets from that group.
@@ -514,8 +473,7 @@ object sockets {
       * @param address  The group address to join. Domain names are not supported.
       * @param callback Called when the joinGroup operation completes.
       */
-    @scala.inline
-    def joinGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("joinGroup")(socketId.asInstanceOf[js.Any], address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def joinGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("joinGroup")(socketId.asInstanceOf[js.Any], address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Leaves the multicast group previously joined using joinGroup. This is
@@ -532,8 +490,7 @@ object sockets {
       *                 supported.
       * @param callback Called when the leaveGroup operation completes.
       */
-    @scala.inline
-    def leaveGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("leaveGroup")(socketId.asInstanceOf[js.Any], address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def leaveGroup(socketId: integer, address: String, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("leaveGroup")(socketId.asInstanceOf[js.Any], address.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Event raised when a UDP packet has been received for the given socket.
@@ -567,8 +524,7 @@ object sockets {
       * @param port     The port of the remote machine.
       * @param callback Called when the send operation completes.
       */
-    @scala.inline
-    def send(
+    inline def send(
       socketId: integer,
       data: ArrayBuffer,
       address: String,
@@ -585,10 +541,8 @@ object sockets {
       * @param enabled  true to enable broadcast packets, false to disable them.
       * @param callback Callback from the setBroadcast method.
       */
-    @scala.inline
-    def setBroadcast(socketId: integer, enabled: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBroadcast")(socketId.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setBroadcast(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBroadcast")(socketId.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setBroadcast(socketId: integer, enabled: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBroadcast")(socketId.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setBroadcast(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setBroadcast")(socketId.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets whether multicast packets sent from the host to the multicast group
@@ -611,8 +565,7 @@ object sockets {
       * @param enabled  Indicate whether to enable loopback mode.
       * @param callback Called when the configuration operation completes.
       */
-    @scala.inline
-    def setMulticastLoopbackMode(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMulticastLoopbackMode")(socketId.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMulticastLoopbackMode(socketId: integer, enabled: Boolean, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMulticastLoopbackMode")(socketId.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the time-to-live of multicast packets sent to the multicast group.
@@ -624,8 +577,7 @@ object sockets {
       * @param ttl      The time-to-live value.
       * @param callback Called when the configuration operation completes.
       */
-    @scala.inline
-    def setMulticastTimeToLive(socketId: integer, ttl: integer, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMulticastTimeToLive")(socketId.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setMulticastTimeToLive(socketId: integer, ttl: integer, callback: js.Function1[/* result */ integer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMulticastTimeToLive")(socketId.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Pauses or unpauses a socket. A paused socket is blocked from firing
@@ -637,10 +589,8 @@ object sockets {
       * @param callback Called when the socket has been successfully paused or
       *                 unpaused.
       */
-    @scala.inline
-    def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setPaused(socketId: integer, paused: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setPaused(socketId: integer, paused: Boolean, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPaused")(socketId.asInstanceOf[js.Any], paused.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Updates the socket properties.
@@ -650,9 +600,7 @@ object sockets {
       * @param properties The properties to update.
       * @param callback   Called when the properties are updated.
       */
-    @scala.inline
-    def update(socketId: integer, properties: SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def update(socketId: integer, properties: SocketProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def update(socketId: integer, properties: SocketProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(socketId.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

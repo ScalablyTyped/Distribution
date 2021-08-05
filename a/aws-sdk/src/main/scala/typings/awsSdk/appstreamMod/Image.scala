@@ -88,109 +88,75 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(Name: String): Image = {
+  inline def apply(Name: String): Image = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setApplications(value: Applications): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: Applications): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
+    inline def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
-    @scala.inline
-    def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
     
-    @scala.inline
-    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
+    inline def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
+    inline def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setBaseImageArn(value: Arn): Self = StObject.set(x, "BaseImageArn", value.asInstanceOf[js.Any])
+    inline def setBaseImageArn(value: Arn): Self = StObject.set(x, "BaseImageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseImageArnUndefined: Self = StObject.set(x, "BaseImageArn", js.undefined)
+    inline def setBaseImageArnUndefined: Self = StObject.set(x, "BaseImageArn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setImageBuilderName(value: String): Self = StObject.set(x, "ImageBuilderName", value.asInstanceOf[js.Any])
+    inline def setImageBuilderName(value: String): Self = StObject.set(x, "ImageBuilderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBuilderNameUndefined: Self = StObject.set(x, "ImageBuilderName", js.undefined)
+    inline def setImageBuilderNameUndefined: Self = StObject.set(x, "ImageBuilderName", js.undefined)
     
-    @scala.inline
-    def setImageBuilderSupported(value: Boolean): Self = StObject.set(x, "ImageBuilderSupported", value.asInstanceOf[js.Any])
+    inline def setImageBuilderSupported(value: Boolean): Self = StObject.set(x, "ImageBuilderSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBuilderSupportedUndefined: Self = StObject.set(x, "ImageBuilderSupported", js.undefined)
+    inline def setImageBuilderSupportedUndefined: Self = StObject.set(x, "ImageBuilderSupported", js.undefined)
     
-    @scala.inline
-    def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
+    inline def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
+    inline def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: PlatformType): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: PlatformType): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
-    @scala.inline
-    def setPublicBaseImageReleasedDate(value: Timestamp): Self = StObject.set(x, "PublicBaseImageReleasedDate", value.asInstanceOf[js.Any])
+    inline def setPublicBaseImageReleasedDate(value: Timestamp): Self = StObject.set(x, "PublicBaseImageReleasedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicBaseImageReleasedDateUndefined: Self = StObject.set(x, "PublicBaseImageReleasedDate", js.undefined)
+    inline def setPublicBaseImageReleasedDateUndefined: Self = StObject.set(x, "PublicBaseImageReleasedDate", js.undefined)
     
-    @scala.inline
-    def setState(value: ImageState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ImageState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReason(value: ImageStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
+    inline def setStateChangeReason(value: ImageStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
+    inline def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: VisibilityType): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: VisibilityType): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

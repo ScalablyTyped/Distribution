@@ -25,8 +25,7 @@ object cardBodyMod {
     @JSImport("@ant-design/react-native/lib/card/CardBody", "default.defaultProps")
     @js.native
     def defaultProps: Style = js.native
-    @scala.inline
-    def defaultProps_=(x: Style): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Style): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -41,23 +40,18 @@ object cardBodyMod {
   }
   object CardBodyProps {
     
-    @scala.inline
-    def apply(): CardBodyProps = {
+    inline def apply(): CardBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardBodyProps]
     }
     
-    @scala.inline
-    implicit class CardBodyPropsMutableBuilder[Self <: CardBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardBodyProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

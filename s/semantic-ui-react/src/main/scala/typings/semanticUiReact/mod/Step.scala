@@ -19,6 +19,5 @@ class Step protected ()
 }
 object Step {
   
-  @scala.inline
-  def apply: StepComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Step").asInstanceOf[StepComponent]
+  inline def apply: StepComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Step").asInstanceOf[StepComponent]
 }

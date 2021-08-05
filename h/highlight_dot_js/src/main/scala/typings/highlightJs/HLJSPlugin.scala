@@ -21,37 +21,27 @@ trait HLJSPlugin extends StObject {
 }
 object HLJSPlugin {
   
-  @scala.inline
-  def apply(): HLJSPlugin = {
+  inline def apply(): HLJSPlugin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HLJSPlugin]
   }
   
-  @scala.inline
-  implicit class HLJSPluginMutableBuilder[Self <: HLJSPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: HLJSPlugin](x: Self) {
     
-    @scala.inline
-    def setAfterColonhighlight(value: js.Any): Self = StObject.set(x, "after:highlight", value.asInstanceOf[js.Any])
+    inline def setAfterColonhighlight(value: js.Any): Self = StObject.set(x, "after:highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterColonhighlightBlock(value: js.Any): Self = StObject.set(x, "after:highlightBlock", value.asInstanceOf[js.Any])
+    inline def setAfterColonhighlightBlock(value: js.Any): Self = StObject.set(x, "after:highlightBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterColonhighlightBlockUndefined: Self = StObject.set(x, "after:highlightBlock", js.undefined)
+    inline def setAfterColonhighlightBlockUndefined: Self = StObject.set(x, "after:highlightBlock", js.undefined)
     
-    @scala.inline
-    def setAfterColonhighlightUndefined: Self = StObject.set(x, "after:highlight", js.undefined)
+    inline def setAfterColonhighlightUndefined: Self = StObject.set(x, "after:highlight", js.undefined)
     
-    @scala.inline
-    def setBeforeColonhighlight(value: js.Any): Self = StObject.set(x, "before:highlight", value.asInstanceOf[js.Any])
+    inline def setBeforeColonhighlight(value: js.Any): Self = StObject.set(x, "before:highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeColonhighlightBlock(value: js.Any): Self = StObject.set(x, "before:highlightBlock", value.asInstanceOf[js.Any])
+    inline def setBeforeColonhighlightBlock(value: js.Any): Self = StObject.set(x, "before:highlightBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeColonhighlightBlockUndefined: Self = StObject.set(x, "before:highlightBlock", js.undefined)
+    inline def setBeforeColonhighlightBlockUndefined: Self = StObject.set(x, "before:highlightBlock", js.undefined)
     
-    @scala.inline
-    def setBeforeColonhighlightUndefined: Self = StObject.set(x, "before:highlight", js.undefined)
+    inline def setBeforeColonhighlightUndefined: Self = StObject.set(x, "before:highlight", js.undefined)
   }
 }

@@ -52,8 +52,7 @@ trait ObjectInspectorModel
 }
 object ObjectInspectorModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HandlerFactories: SafeArray[js.Any],
     HasHelpSection: Boolean,
     IsReadOnly: Boolean,
@@ -69,16 +68,12 @@ object ObjectInspectorModel {
     __obj.asInstanceOf[ObjectInspectorModel]
   }
   
-  @scala.inline
-  implicit class ObjectInspectorModelMutableBuilder[Self <: ObjectInspectorModel] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectInspectorModel](x: Self) {
     
-    @scala.inline
-    def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+    inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithHandlerFactories(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "createWithHandlerFactories", js.Any.fromFunction1(value))
+    inline def setCreateWithHandlerFactories(value: SeqEquiv[js.Any] => Unit): Self = StObject.set(x, "createWithHandlerFactories", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithHandlerFactoriesAndHelpSection(value: (SeqEquiv[js.Any], Double, Double) => Unit): Self = StObject.set(x, "createWithHandlerFactoriesAndHelpSection", js.Any.fromFunction3(value))
+    inline def setCreateWithHandlerFactoriesAndHelpSection(value: (SeqEquiv[js.Any], Double, Double) => Unit): Self = StObject.set(x, "createWithHandlerFactoriesAndHelpSection", js.Any.fromFunction3(value))
   }
 }

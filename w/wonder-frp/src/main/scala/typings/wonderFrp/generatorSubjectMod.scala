@@ -16,7 +16,7 @@ object generatorSubjectMod {
     extends Entity
        with IObserver {
     
-    var _isStart: js.Any = js.native
+    /* private */ var _isStart: js.Any = js.native
     
     /* CompleteClass */
     override def completed(): js.Any = js.native
@@ -76,7 +76,6 @@ object generatorSubjectMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): GeneratorSubject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GeneratorSubject]
+    inline def create(): GeneratorSubject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GeneratorSubject]
   }
 }

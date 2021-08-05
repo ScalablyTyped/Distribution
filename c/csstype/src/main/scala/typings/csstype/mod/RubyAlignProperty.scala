@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RubyAlignProperty extends StObject
 object RubyAlignProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.csstype.csstypeStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.csstype.csstypeStrings.`-moz-initial`]
   
-  @scala.inline
-  def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
+  inline def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
   
-  @scala.inline
-  def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
+  inline def inherit: typings.csstype.csstypeStrings.inherit = "inherit".asInstanceOf[typings.csstype.csstypeStrings.inherit]
   
-  @scala.inline
-  def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
+  inline def initial: typings.csstype.csstypeStrings.initial = "initial".asInstanceOf[typings.csstype.csstypeStrings.initial]
   
-  @scala.inline
-  def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
+  inline def revert: typings.csstype.csstypeStrings.revert = "revert".asInstanceOf[typings.csstype.csstypeStrings.revert]
   
-  @scala.inline
-  def `space-around`: typings.csstype.csstypeStrings.`space-around` = "space-around".asInstanceOf[typings.csstype.csstypeStrings.`space-around`]
+  inline def `space-around`: typings.csstype.csstypeStrings.`space-around` = "space-around".asInstanceOf[typings.csstype.csstypeStrings.`space-around`]
   
-  @scala.inline
-  def `space-between`: typings.csstype.csstypeStrings.`space-between` = "space-between".asInstanceOf[typings.csstype.csstypeStrings.`space-between`]
+  inline def `space-between`: typings.csstype.csstypeStrings.`space-between` = "space-between".asInstanceOf[typings.csstype.csstypeStrings.`space-between`]
   
-  @scala.inline
-  def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
+  inline def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
   
-  @scala.inline
-  def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
+  inline def unset: typings.csstype.csstypeStrings.unset = "unset".asInstanceOf[typings.csstype.csstypeStrings.unset]
 }

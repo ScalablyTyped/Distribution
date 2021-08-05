@@ -25,29 +25,22 @@ trait RenameQuery
 }
 object RenameQuery {
   
-  @scala.inline
-  def apply(end: Double | Position, file: String, newName: String): RenameQuery = {
+  inline def apply(end: Double | Position, file: String, newName: String): RenameQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], newName = newName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("rename")
     __obj.asInstanceOf[RenameQuery]
   }
   
-  @scala.inline
-  implicit class RenameQueryMutableBuilder[Self <: RenameQuery] (val x: Self) extends AnyVal {
+  extension [Self <: RenameQuery](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
+    inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setType(value: rename): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rename): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

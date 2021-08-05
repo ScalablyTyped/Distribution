@@ -13,19 +13,15 @@ trait ImportAppCatalogRequest extends StObject {
 }
 object ImportAppCatalogRequest {
   
-  @scala.inline
-  def apply(): ImportAppCatalogRequest = {
+  inline def apply(): ImportAppCatalogRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportAppCatalogRequest]
   }
   
-  @scala.inline
-  implicit class ImportAppCatalogRequestMutableBuilder[Self <: ImportAppCatalogRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAppCatalogRequest](x: Self) {
     
-    @scala.inline
-    def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
   }
 }

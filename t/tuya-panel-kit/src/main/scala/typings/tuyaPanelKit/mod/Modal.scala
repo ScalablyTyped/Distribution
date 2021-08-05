@@ -28,30 +28,24 @@ object Modal {
   @JSImport("tuya-panel-kit", "Modal.Countdown")
   @js.native
   def Countdown: ElementType[PopUpCountdownProps] = js.native
-  @scala.inline
-  def Countdown_=(x: ElementType[PopUpCountdownProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Countdown")(x.asInstanceOf[js.Any])
+  inline def Countdown_=(x: ElementType[PopUpCountdownProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Countdown")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "Modal.DatePicker")
   @js.native
   def DatePicker: ElementType[PopupDatePickerProps] = js.native
-  @scala.inline
-  def DatePicker_=(x: ElementType[PopupDatePickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DatePicker")(x.asInstanceOf[js.Any])
+  inline def DatePicker_=(x: ElementType[PopupDatePickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DatePicker")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "Modal.List")
   @js.native
   def List: ElementType[PopUpListProps] = js.native
-  @scala.inline
-  def List_=(x: ElementType[PopUpListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("List")(x.asInstanceOf[js.Any])
+  inline def List_=(x: ElementType[PopUpListProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("List")(x.asInstanceOf[js.Any])
   
   @JSImport("tuya-panel-kit", "Modal.Picker")
   @js.native
   def Picker: ElementType[PopupPickerProps] = js.native
-  @scala.inline
-  def Picker_=(x: ElementType[PopupPickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Picker")(x.asInstanceOf[js.Any])
+  inline def Picker_=(x: ElementType[PopupPickerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Picker")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
+  inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
   
-  @scala.inline
-  def render(option: ReactNode, props: ModalProps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(option.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(option: ReactNode, props: ModalProps): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(option.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

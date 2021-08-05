@@ -19,25 +19,19 @@ trait UploadFileItem extends StObject {
 }
 object UploadFileItem {
   
-  @scala.inline
-  def apply(filename: String, filepath: String, filetype: String, name: String): UploadFileItem = {
+  inline def apply(filename: String, filepath: String, filetype: String, name: String): UploadFileItem = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], filepath = filepath.asInstanceOf[js.Any], filetype = filetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileItem]
   }
   
-  @scala.inline
-  implicit class UploadFileItemMutableBuilder[Self <: UploadFileItem] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFileItem](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+    inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiletype(value: String): Self = StObject.set(x, "filetype", value.asInstanceOf[js.Any])
+    inline def setFiletype(value: String): Self = StObject.set(x, "filetype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

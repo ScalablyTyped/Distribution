@@ -21,43 +21,31 @@ trait LocationConstraint extends StObject {
 }
 object LocationConstraint {
   
-  @scala.inline
-  def apply(): LocationConstraint = {
+  inline def apply(): LocationConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationConstraint]
   }
   
-  @scala.inline
-  implicit class LocationConstraintMutableBuilder[Self <: LocationConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: LocationConstraint](x: Self) {
     
-    @scala.inline
-    def setIsRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequiredNull: Self = StObject.set(x, "isRequired", null)
+    inline def setIsRequiredNull: Self = StObject.set(x, "isRequired", null)
     
-    @scala.inline
-    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
+    inline def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
-    @scala.inline
-    def setLocations(value: NullableOption[js.Array[LocationConstraintItem]]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: NullableOption[js.Array[LocationConstraintItem]]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsNull: Self = StObject.set(x, "locations", null)
+    inline def setLocationsNull: Self = StObject.set(x, "locations", null)
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: LocationConstraintItem*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: LocationConstraintItem*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setSuggestLocation(value: NullableOption[Boolean]): Self = StObject.set(x, "suggestLocation", value.asInstanceOf[js.Any])
+    inline def setSuggestLocation(value: NullableOption[Boolean]): Self = StObject.set(x, "suggestLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestLocationNull: Self = StObject.set(x, "suggestLocation", null)
+    inline def setSuggestLocationNull: Self = StObject.set(x, "suggestLocation", null)
     
-    @scala.inline
-    def setSuggestLocationUndefined: Self = StObject.set(x, "suggestLocation", js.undefined)
+    inline def setSuggestLocationUndefined: Self = StObject.set(x, "suggestLocation", js.undefined)
   }
 }

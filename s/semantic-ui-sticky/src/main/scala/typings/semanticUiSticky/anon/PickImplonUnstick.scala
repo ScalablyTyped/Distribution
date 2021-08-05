@@ -14,16 +14,13 @@ trait PickImplonUnstick extends StObject {
 }
 object PickImplonUnstick {
   
-  @scala.inline
-  def apply(onUnstick: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonUnstick = {
+  inline def apply(onUnstick: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonUnstick = {
     val __obj = js.Dynamic.literal(onUnstick = onUnstick.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonUnstick]
   }
   
-  @scala.inline
-  implicit class PickImplonUnstickMutableBuilder[Self <: PickImplonUnstick] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonUnstick](x: Self) {
     
-    @scala.inline
-    def setOnUnstick(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onUnstick", value.asInstanceOf[js.Any])
+    inline def setOnUnstick(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onUnstick", value.asInstanceOf[js.Any])
   }
 }

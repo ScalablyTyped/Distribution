@@ -59,37 +59,27 @@ trait SchemaLeaseTasksRequest extends StObject {
 }
 object SchemaLeaseTasksRequest {
   
-  @scala.inline
-  def apply(): SchemaLeaseTasksRequest = {
+  inline def apply(): SchemaLeaseTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLeaseTasksRequest]
   }
   
-  @scala.inline
-  implicit class SchemaLeaseTasksRequestMutableBuilder[Self <: SchemaLeaseTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLeaseTasksRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setLeaseDuration(value: String): Self = StObject.set(x, "leaseDuration", value.asInstanceOf[js.Any])
+    inline def setLeaseDuration(value: String): Self = StObject.set(x, "leaseDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseDurationUndefined: Self = StObject.set(x, "leaseDuration", js.undefined)
+    inline def setLeaseDurationUndefined: Self = StObject.set(x, "leaseDuration", js.undefined)
     
-    @scala.inline
-    def setMaxTasks(value: Double): Self = StObject.set(x, "maxTasks", value.asInstanceOf[js.Any])
+    inline def setMaxTasks(value: Double): Self = StObject.set(x, "maxTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTasksUndefined: Self = StObject.set(x, "maxTasks", js.undefined)
+    inline def setMaxTasksUndefined: Self = StObject.set(x, "maxTasks", js.undefined)
     
-    @scala.inline
-    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
+    inline def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
+    inline def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
   }
 }

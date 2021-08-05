@@ -54,43 +54,31 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(author: CommentAuthorInformation, body: String | MarkdownString, mode: CommentMode): Comment = {
+  inline def apply(author: CommentAuthorInformation, body: String | MarkdownString, mode: CommentMode): Comment = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: CommentAuthorInformation): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: CommentAuthorInformation): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String | MarkdownString): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | MarkdownString): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
+    inline def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
+    inline def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMode(value: CommentMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: CommentMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactions(value: js.Array[CommentReaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: js.Array[CommentReaction]): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
+    inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     
-    @scala.inline
-    def setReactionsVarargs(value: CommentReaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: CommentReaction*): Self = StObject.set(x, "reactions", js.Array(value :_*))
   }
 }

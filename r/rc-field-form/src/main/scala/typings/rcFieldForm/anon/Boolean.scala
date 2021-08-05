@@ -34,8 +34,7 @@ trait Boolean extends StObject {
 }
 object Boolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     array: String,
     boolean: String,
     date: String,
@@ -55,46 +54,32 @@ object Boolean {
     __obj.asInstanceOf[Boolean]
   }
   
-  @scala.inline
-  implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
+  extension [Self <: Boolean](x: Self) {
     
-    @scala.inline
-    def setArray(value: String): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: String): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolean(value: String): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: String): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloat(value: String): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: String): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+    inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+    inline def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

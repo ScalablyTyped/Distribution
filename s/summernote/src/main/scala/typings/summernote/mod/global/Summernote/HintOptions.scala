@@ -22,8 +22,7 @@ trait HintOptions extends StObject {
 }
 object HintOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `match`: RegExp,
     search: (String, js.Function1[/* plausibleItems */ js.Array[String], Unit]) => Unit
   ): HintOptions = {
@@ -32,43 +31,30 @@ object HintOptions {
     __obj.asInstanceOf[HintOptions]
   }
   
-  @scala.inline
-  implicit class HintOptionsMutableBuilder[Self <: HintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HintOptions](x: Self) {
     
-    @scala.inline
-    def setContent(value: /* item */ String => htmlElement | Node): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    inline def setContent(value: /* item */ String => htmlElement | Node): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentions(value: js.Array[String]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+    inline def setMentions(value: js.Array[String]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
+    inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
-    @scala.inline
-    def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+    inline def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
-    @scala.inline
-    def setSearch(value: (String, js.Function1[/* plausibleItems */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+    inline def setSearch(value: (String, js.Function1[/* plausibleItems */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTemplate(value: /* item */ String => htmlElement): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplate(value: /* item */ String => htmlElement): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+    inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+    inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    @scala.inline
-    def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

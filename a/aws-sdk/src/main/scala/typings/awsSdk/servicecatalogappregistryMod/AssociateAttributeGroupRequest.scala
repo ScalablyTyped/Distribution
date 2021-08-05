@@ -18,19 +18,15 @@ trait AssociateAttributeGroupRequest extends StObject {
 }
 object AssociateAttributeGroupRequest {
   
-  @scala.inline
-  def apply(application: ApplicationSpecifier, attributeGroup: AttributeGroupSpecifier): AssociateAttributeGroupRequest = {
+  inline def apply(application: ApplicationSpecifier, attributeGroup: AttributeGroupSpecifier): AssociateAttributeGroupRequest = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], attributeGroup = attributeGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateAttributeGroupRequest]
   }
   
-  @scala.inline
-  implicit class AssociateAttributeGroupRequestMutableBuilder[Self <: AssociateAttributeGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateAttributeGroupRequest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
+    inline def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
   }
 }

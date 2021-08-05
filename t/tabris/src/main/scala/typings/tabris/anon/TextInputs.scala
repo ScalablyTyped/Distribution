@@ -14,22 +14,17 @@ trait TextInputs extends StObject {
 }
 object TextInputs {
   
-  @scala.inline
-  def apply(): TextInputs = {
+  inline def apply(): TextInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextInputs]
   }
   
-  @scala.inline
-  implicit class TextInputsMutableBuilder[Self <: TextInputs] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputs](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Flatten[String | TextInput]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Flatten[String | TextInput]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: (String | TextInput)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (String | TextInput)*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

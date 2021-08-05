@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "QuerySnapshot")
 @js.native
-class QuerySnapshot[T] protected () extends StObject {
+/* private */ class QuerySnapshot[T] () extends StObject {
   
   def docChanges(): js.Array[DocumentChange[T]] = js.native
   def docChanges(options: SnapshotListenOptions): js.Array[DocumentChange[T]] = js.native

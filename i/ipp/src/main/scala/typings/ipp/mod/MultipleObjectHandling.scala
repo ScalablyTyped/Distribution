@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MultipleObjectHandling extends StObject
 object MultipleObjectHandling {
   
-  @scala.inline
-  def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
+  inline def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
   
-  @scala.inline
-  def `best-fit`: typings.ipp.ippStrings.`best-fit` = "best-fit".asInstanceOf[typings.ipp.ippStrings.`best-fit`]
+  inline def `best-fit`: typings.ipp.ippStrings.`best-fit` = "best-fit".asInstanceOf[typings.ipp.ippStrings.`best-fit`]
   
-  @scala.inline
-  def `best-quality`: typings.ipp.ippStrings.`best-quality` = "best-quality".asInstanceOf[typings.ipp.ippStrings.`best-quality`]
+  inline def `best-quality`: typings.ipp.ippStrings.`best-quality` = "best-quality".asInstanceOf[typings.ipp.ippStrings.`best-quality`]
   
-  @scala.inline
-  def `best-speed`: typings.ipp.ippStrings.`best-speed` = "best-speed".asInstanceOf[typings.ipp.ippStrings.`best-speed`]
+  inline def `best-speed`: typings.ipp.ippStrings.`best-speed` = "best-speed".asInstanceOf[typings.ipp.ippStrings.`best-speed`]
   
-  @scala.inline
-  def `one-at-a-time`: typings.ipp.ippStrings.`one-at-a-time` = "one-at-a-time".asInstanceOf[typings.ipp.ippStrings.`one-at-a-time`]
+  inline def `one-at-a-time`: typings.ipp.ippStrings.`one-at-a-time` = "one-at-a-time".asInstanceOf[typings.ipp.ippStrings.`one-at-a-time`]
 }

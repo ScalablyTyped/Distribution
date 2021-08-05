@@ -20,40 +20,29 @@ trait CreateTopicRequest extends StObject {
 }
 object CreateTopicRequest {
   
-  @scala.inline
-  def apply(partitions: Double, replicationFactor: Double, topic: String): CreateTopicRequest = {
+  inline def apply(partitions: Double, replicationFactor: Double, topic: String): CreateTopicRequest = {
     val __obj = js.Dynamic.literal(partitions = partitions.asInstanceOf[js.Any], replicationFactor = replicationFactor.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTopicRequest]
   }
   
-  @scala.inline
-  implicit class CreateTopicRequestMutableBuilder[Self <: CreateTopicRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTopicRequest](x: Self) {
     
-    @scala.inline
-    def setConfigEntries(value: js.Array[Name]): Self = StObject.set(x, "configEntries", value.asInstanceOf[js.Any])
+    inline def setConfigEntries(value: js.Array[Name]): Self = StObject.set(x, "configEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigEntriesUndefined: Self = StObject.set(x, "configEntries", js.undefined)
+    inline def setConfigEntriesUndefined: Self = StObject.set(x, "configEntries", js.undefined)
     
-    @scala.inline
-    def setConfigEntriesVarargs(value: Name*): Self = StObject.set(x, "configEntries", js.Array(value :_*))
+    inline def setConfigEntriesVarargs(value: Name*): Self = StObject.set(x, "configEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setPartitions(value: Double): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
+    inline def setPartitions(value: Double): Self = StObject.set(x, "partitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaAssignment(value: js.Array[Partition]): Self = StObject.set(x, "replicaAssignment", value.asInstanceOf[js.Any])
+    inline def setReplicaAssignment(value: js.Array[Partition]): Self = StObject.set(x, "replicaAssignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaAssignmentUndefined: Self = StObject.set(x, "replicaAssignment", js.undefined)
+    inline def setReplicaAssignmentUndefined: Self = StObject.set(x, "replicaAssignment", js.undefined)
     
-    @scala.inline
-    def setReplicaAssignmentVarargs(value: Partition*): Self = StObject.set(x, "replicaAssignment", js.Array(value :_*))
+    inline def setReplicaAssignmentVarargs(value: Partition*): Self = StObject.set(x, "replicaAssignment", js.Array(value :_*))
     
-    @scala.inline
-    def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
+    inline def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

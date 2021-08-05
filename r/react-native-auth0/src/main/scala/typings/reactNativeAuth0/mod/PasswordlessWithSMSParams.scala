@@ -10,16 +10,13 @@ trait PasswordlessWithSMSParams extends StObject {
 }
 object PasswordlessWithSMSParams {
   
-  @scala.inline
-  def apply(phoneNumber: String): PasswordlessWithSMSParams = {
+  inline def apply(phoneNumber: String): PasswordlessWithSMSParams = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordlessWithSMSParams]
   }
   
-  @scala.inline
-  implicit class PasswordlessWithSMSParamsMutableBuilder[Self <: PasswordlessWithSMSParams] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordlessWithSMSParams](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

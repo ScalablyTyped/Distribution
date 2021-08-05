@@ -75,15 +75,15 @@ object executionContextMod {
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
     
-    var _currentContextIds: js.Any = js.native
+    /* private */ var _currentContextIds: js.Any = js.native
     
     def addTensorArray(tensorArray: TensorArray): Unit = js.native
     
     def addTensorList(tensorList: TensorList): Unit = js.native
     
-    var contextIdforContexts: js.Any = js.native
+    /* private */ var contextIdforContexts: js.Any = js.native
     
-    var contexts: js.Any = js.native
+    /* private */ var contexts: js.Any = js.native
     
     /**
       * Set the current context
@@ -119,7 +119,7 @@ object executionContextMod {
     
     val functionMap: StringDictionary[FunctionExecutor] = js.native
     
-    var generateCurrentContextIds: js.Any = js.native
+    /* private */ var generateCurrentContextIds: js.Any = js.native
     
     def getTensorArray(id: Double): TensorArray = js.native
     
@@ -127,9 +127,9 @@ object executionContextMod {
     
     def getWeight(name: String): js.Array[Tensor[Rank]] = js.native
     
-    var lastId: js.Any = js.native
+    /* private */ var lastId: js.Any = js.native
     
-    var newFrame: js.Any = js.native
+    /* private */ var newFrame: js.Any = js.native
     
     /**
       * Enter the next iteration of a loop, the iteration id of last context is
@@ -137,7 +137,7 @@ object executionContextMod {
       */
     def nextIteration(): Unit = js.native
     
-    var rootContext: js.Any = js.native
+    /* private */ var rootContext: js.Any = js.native
     
     val tensorArrayMap: TensorArrayMap = js.native
     
@@ -156,23 +156,18 @@ object executionContextMod {
   }
   object ExecutionContextInfo {
     
-    @scala.inline
-    def apply(frameName: String, id: Double, iterationId: Double): ExecutionContextInfo = {
+    inline def apply(frameName: String, id: Double, iterationId: Double): ExecutionContextInfo = {
       val __obj = js.Dynamic.literal(frameName = frameName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iterationId = iterationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecutionContextInfo]
     }
     
-    @scala.inline
-    implicit class ExecutionContextInfoMutableBuilder[Self <: ExecutionContextInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ExecutionContextInfo](x: Self) {
       
-      @scala.inline
-      def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
+      inline def setFrameName(value: String): Self = StObject.set(x, "frameName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
+      inline def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
     }
   }
 }

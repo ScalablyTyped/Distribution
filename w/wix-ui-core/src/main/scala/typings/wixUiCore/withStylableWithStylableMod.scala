@@ -15,8 +15,7 @@ object withStylableWithStylableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withStylable[CoreProps, ExtendedProps](
+  inline def withStylable[CoreProps, ExtendedProps](
     Component: ComponentClass[CoreProps, ComponentState],
     stylesheet: RuntimeStylesheet,
     getState: js.Function3[
@@ -26,8 +25,7 @@ object withStylableWithStylableMod {
       StateMap
     ]
   ): ComponentClass[CoreProps & ExtendedProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStylable")(Component.asInstanceOf[js.Any], stylesheet.asInstanceOf[js.Any], getState.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[CoreProps & ExtendedProps, ComponentState]]
-  @scala.inline
-  def withStylable[CoreProps, ExtendedProps](
+  inline def withStylable[CoreProps, ExtendedProps](
     Component: ComponentClass[CoreProps, ComponentState],
     stylesheet: RuntimeStylesheet,
     getState: js.Function3[
@@ -38,14 +36,12 @@ object withStylableWithStylableMod {
     ],
     extendedDefaultProps: js.Object
   ): ComponentClass[CoreProps & ExtendedProps, ComponentState] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStylable")(Component.asInstanceOf[js.Any], stylesheet.asInstanceOf[js.Any], getState.asInstanceOf[js.Any], extendedDefaultProps.asInstanceOf[js.Any])).asInstanceOf[ComponentClass[CoreProps & ExtendedProps, ComponentState]]
-  @scala.inline
-  def withStylable[CoreProps, ExtendedProps](
+  inline def withStylable[CoreProps, ExtendedProps](
     Component: FunctionComponent[CoreProps],
     stylesheet: RuntimeStylesheet,
     getState: js.Function1[/* p */ js.UndefOr[js.Any], StateMap]
   ): FunctionComponent[CoreProps & ExtendedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStylable")(Component.asInstanceOf[js.Any], stylesheet.asInstanceOf[js.Any], getState.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[CoreProps & ExtendedProps]]
-  @scala.inline
-  def withStylable[CoreProps, ExtendedProps](
+  inline def withStylable[CoreProps, ExtendedProps](
     Component: FunctionComponent[CoreProps],
     stylesheet: RuntimeStylesheet,
     getState: js.Function1[/* p */ js.UndefOr[js.Any], StateMap],

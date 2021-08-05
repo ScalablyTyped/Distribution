@@ -40,15 +40,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.ArcGauge = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.ArcGauge]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.ArcGauge = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.ArcGauge]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.ArcGauge.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.ArcGauge = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.ArcGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.ArcGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.Barcode")
@@ -66,15 +64,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Barcode = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Barcode]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Barcode = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Barcode]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.Barcode.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.Barcode = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Barcode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Barcode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.Chart")
@@ -92,15 +88,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Chart = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Chart]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Chart = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Chart]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.Chart.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.Chart = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Chart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Chart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.Diagram")
@@ -118,15 +112,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Diagram = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Diagram]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Diagram = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Diagram]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.Diagram.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.Diagram = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Diagram): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Diagram): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.LinearGauge")
@@ -144,15 +136,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.LinearGauge = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.LinearGauge]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.LinearGauge = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.LinearGauge]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.LinearGauge.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.LinearGauge = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.LinearGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.LinearGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.Map")
@@ -170,15 +160,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Map = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Map]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Map = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Map]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.Map.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.Map = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Map): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Map): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.QRCode")
@@ -196,15 +184,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.QRCode = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.QRCode]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.QRCode = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.QRCode]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.QRCode.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.QRCode = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.QRCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.QRCode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.RadialGauge")
@@ -222,15 +208,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.RadialGauge = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.RadialGauge]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.RadialGauge = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.RadialGauge]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.RadialGauge.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.RadialGauge = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.RadialGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.RadialGauge): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.Sparkline")
@@ -248,15 +232,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Sparkline = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Sparkline]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.Sparkline = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.Sparkline]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.Sparkline.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.Sparkline = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Sparkline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.Sparkline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.StockChart")
@@ -274,15 +256,13 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.StockChart = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.StockChart]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.StockChart = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.StockChart]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.StockChart.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.StockChart = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.StockChart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.StockChart): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("kendo.dataviz.ui.TreeMap")
@@ -300,24 +280,19 @@ object ui {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.TreeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.TreeMap]
+    inline def extend(proto: js.Object): typings.kendoUi.kendo.dataviz.ui.TreeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.dataviz.ui.TreeMap]
     
     /* static member */
     @JSGlobal("kendo.dataviz.ui.TreeMap.fn")
     @js.native
     def fn: typings.kendoUi.kendo.dataviz.ui.TreeMap = js.native
-    @scala.inline
-    def fn_=(x: typings.kendoUi.kendo.dataviz.ui.TreeMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+    inline def fn_=(x: typings.kendoUi.kendo.dataviz.ui.TreeMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def plugin(
+  inline def plugin(
     widget: TypeofWidget & (Instantiable2[/* element */ Element, /* options */ js.UndefOr[js.Object], Widget])
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def plugin(widget: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def plugin(widget: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerTheme(name: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerTheme(name: String, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

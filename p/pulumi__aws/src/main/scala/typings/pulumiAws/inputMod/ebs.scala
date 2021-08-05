@@ -23,23 +23,18 @@ object ebs {
   }
   object GetEbsVolumesFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetEbsVolumesFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetEbsVolumesFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEbsVolumesFilter]
     }
     
-    @scala.inline
-    implicit class GetEbsVolumesFilterMutableBuilder[Self <: GetEbsVolumesFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetEbsVolumesFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -51,23 +46,18 @@ object ebs {
   }
   object GetSnapshotFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetSnapshotFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetSnapshotFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSnapshotFilter]
     }
     
-    @scala.inline
-    implicit class GetSnapshotFilterMutableBuilder[Self <: GetSnapshotFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetSnapshotFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -79,23 +69,18 @@ object ebs {
   }
   object GetSnapshotIdsFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetSnapshotIdsFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetSnapshotIdsFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSnapshotIdsFilter]
     }
     
-    @scala.inline
-    implicit class GetSnapshotIdsFilterMutableBuilder[Self <: GetSnapshotIdsFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetSnapshotIdsFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -107,23 +92,18 @@ object ebs {
   }
   object GetVolumeFilter {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[String]): GetVolumeFilter = {
+    inline def apply(name: String, values: js.Array[String]): GetVolumeFilter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetVolumeFilter]
     }
     
-    @scala.inline
-    implicit class GetVolumeFilterMutableBuilder[Self <: GetVolumeFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetVolumeFilter](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

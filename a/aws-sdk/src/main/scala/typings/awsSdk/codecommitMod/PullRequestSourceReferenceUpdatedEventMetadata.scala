@@ -28,37 +28,27 @@ trait PullRequestSourceReferenceUpdatedEventMetadata extends StObject {
 }
 object PullRequestSourceReferenceUpdatedEventMetadata {
   
-  @scala.inline
-  def apply(): PullRequestSourceReferenceUpdatedEventMetadata = {
+  inline def apply(): PullRequestSourceReferenceUpdatedEventMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullRequestSourceReferenceUpdatedEventMetadata]
   }
   
-  @scala.inline
-  implicit class PullRequestSourceReferenceUpdatedEventMetadataMutableBuilder[Self <: PullRequestSourceReferenceUpdatedEventMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PullRequestSourceReferenceUpdatedEventMetadata](x: Self) {
     
-    @scala.inline
-    def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
+    inline def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
+    inline def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
     
-    @scala.inline
-    def setBeforeCommitId(value: CommitId): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
+    inline def setBeforeCommitId(value: CommitId): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
+    inline def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
     
-    @scala.inline
-    def setMergeBase(value: CommitId): Self = StObject.set(x, "mergeBase", value.asInstanceOf[js.Any])
+    inline def setMergeBase(value: CommitId): Self = StObject.set(x, "mergeBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeBaseUndefined: Self = StObject.set(x, "mergeBase", js.undefined)
+    inline def setMergeBaseUndefined: Self = StObject.set(x, "mergeBase", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

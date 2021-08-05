@@ -13,19 +13,15 @@ trait StopPHIDetectionJobResponse extends StObject {
 }
 object StopPHIDetectionJobResponse {
   
-  @scala.inline
-  def apply(): StopPHIDetectionJobResponse = {
+  inline def apply(): StopPHIDetectionJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopPHIDetectionJobResponse]
   }
   
-  @scala.inline
-  implicit class StopPHIDetectionJobResponseMutableBuilder[Self <: StopPHIDetectionJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopPHIDetectionJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

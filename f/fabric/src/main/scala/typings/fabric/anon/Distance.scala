@@ -14,25 +14,19 @@ trait Distance extends StObject {
 }
 object Distance {
   
-  @scala.inline
-  def apply(): Distance = {
+  inline def apply(): Distance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Distance]
   }
   
-  @scala.inline
-  implicit class DistanceMutableBuilder[Self <: Distance] (val x: Self) extends AnyVal {
+  extension [Self <: Distance](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

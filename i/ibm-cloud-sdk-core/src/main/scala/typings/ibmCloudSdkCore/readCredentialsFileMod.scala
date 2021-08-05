@@ -10,12 +10,9 @@ object readCredentialsFileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def constructFilepath(filepath: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("constructFilepath")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def constructFilepath(filepath: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("constructFilepath")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fileExistsAtPath(filepath: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsAtPath")(filepath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def fileExistsAtPath(filepath: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExistsAtPath")(filepath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def readCredentialsFile(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readCredentialsFile")().asInstanceOf[js.Any]
+  inline def readCredentialsFile(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readCredentialsFile")().asInstanceOf[js.Any]
 }

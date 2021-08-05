@@ -13,19 +13,15 @@ trait Digest extends StObject {
 }
 object Digest {
   
-  @scala.inline
-  def apply(digest: String): Digest = {
+  inline def apply(digest: String): Digest = {
     val __obj = js.Dynamic.literal(algorithm = "sha-256", digest = digest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Digest]
   }
   
-  @scala.inline
-  implicit class DigestMutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
+  extension [Self <: Digest](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: `sha-256`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: `sha-256`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
   }
 }

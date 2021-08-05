@@ -9,50 +9,41 @@ object simpleOauth2Strings {
   
   @js.native
   sealed trait AuthorizationCode extends StObject
-  @scala.inline
-  def AuthorizationCode: AuthorizationCode = "AuthorizationCode".asInstanceOf[AuthorizationCode]
+  inline def AuthorizationCode: AuthorizationCode = "AuthorizationCode".asInstanceOf[AuthorizationCode]
   
   @js.native
   sealed trait access_token
     extends StObject
        with TokenType
-  @scala.inline
-  def access_token: access_token = "access_token".asInstanceOf[access_token]
+  inline def access_token: access_token = "access_token".asInstanceOf[access_token]
   
   @js.native
   sealed trait body extends StObject
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
   sealed trait force extends StObject
-  @scala.inline
-  def force: force = "force".asInstanceOf[force]
+  inline def force: force = "force".asInstanceOf[force]
   
   @js.native
   sealed trait form extends StObject
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
   sealed trait header extends StObject
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
+  inline def header: header = "header".asInstanceOf[header]
   
   @js.native
   sealed trait json extends StObject
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait refresh_token
     extends StObject
        with TokenType
-  @scala.inline
-  def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
+  inline def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   
   @js.native
   sealed trait strict extends StObject
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  inline def strict: strict = "strict".asInstanceOf[strict]
 }

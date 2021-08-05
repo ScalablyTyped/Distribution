@@ -47,17 +47,14 @@ object anon {
   }
   object Length {
     
-    @scala.inline
-    def apply(length: Double): Length = {
+    inline def apply(length: Double): Length = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Length]
     }
     
-    @scala.inline
-    implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+    extension [Self <: Length](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,17 +64,14 @@ object anon {
   }
   object LodashAnyHack {
     
-    @scala.inline
-    def apply(__lodashAnyHack: js.Any): LodashAnyHack = {
+    inline def apply(__lodashAnyHack: js.Any): LodashAnyHack = {
       val __obj = js.Dynamic.literal(__lodashAnyHack = __lodashAnyHack.asInstanceOf[js.Any])
       __obj.asInstanceOf[LodashAnyHack]
     }
     
-    @scala.inline
-    implicit class LodashAnyHackMutableBuilder[Self <: LodashAnyHack] (val x: Self) extends AnyVal {
+    extension [Self <: LodashAnyHack](x: Self) {
       
-      @scala.inline
-      def set__lodashAnyHack(value: js.Any): Self = StObject.set(x, "__lodashAnyHack", value.asInstanceOf[js.Any])
+      inline def set__lodashAnyHack(value: js.Any): Self = StObject.set(x, "__lodashAnyHack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,17 +81,14 @@ object anon {
   }
   object TrapAny {
     
-    @scala.inline
-    def apply(__trapAny: js.Any): TrapAny = {
+    inline def apply(__trapAny: js.Any): TrapAny = {
       val __obj = js.Dynamic.literal(__trapAny = __trapAny.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrapAny]
     }
     
-    @scala.inline
-    implicit class TrapAnyMutableBuilder[Self <: TrapAny] (val x: Self) extends AnyVal {
+    extension [Self <: TrapAny](x: Self) {
       
-      @scala.inline
-      def set__trapAny(value: js.Any): Self = StObject.set(x, "__trapAny", value.asInstanceOf[js.Any])
+      inline def set__trapAny(value: js.Any): Self = StObject.set(x, "__trapAny", value.asInstanceOf[js.Any])
     }
   }
   

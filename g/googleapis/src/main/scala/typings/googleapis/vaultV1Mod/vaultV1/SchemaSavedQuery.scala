@@ -39,43 +39,31 @@ trait SchemaSavedQuery extends StObject {
 }
 object SchemaSavedQuery {
   
-  @scala.inline
-  def apply(): SchemaSavedQuery = {
+  inline def apply(): SchemaSavedQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSavedQuery]
   }
   
-  @scala.inline
-  implicit class SchemaSavedQueryMutableBuilder[Self <: SchemaSavedQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSavedQuery](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
+    inline def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
+    inline def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
-    @scala.inline
-    def setQuery(value: SchemaQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: SchemaQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSavedQueryId(value: String): Self = StObject.set(x, "savedQueryId", value.asInstanceOf[js.Any])
+    inline def setSavedQueryId(value: String): Self = StObject.set(x, "savedQueryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedQueryIdUndefined: Self = StObject.set(x, "savedQueryId", js.undefined)
+    inline def setSavedQueryIdUndefined: Self = StObject.set(x, "savedQueryId", js.undefined)
   }
 }

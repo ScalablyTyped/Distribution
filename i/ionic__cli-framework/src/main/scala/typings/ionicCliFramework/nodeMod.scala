@@ -19,19 +19,14 @@ object nodeMod {
   @js.native
   val ERROR_INVALID_PACKAGE_JSON: /* "INVALID_PACKAGE_JSON" */ String = js.native
   
-  @scala.inline
-  def compileNodeModulesPaths(filePath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileNodeModulesPaths")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def compileNodeModulesPaths(filePath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileNodeModulesPaths")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def isValidPackageName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPackageName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidPackageName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPackageName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def readPackageJsonFile(p: String): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageJsonFile")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
+  inline def readPackageJsonFile(p: String): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPackageJsonFile")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
   
-  @scala.inline
-  def resolveBin(m: String, bin: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBin")(m.asInstanceOf[js.Any], bin.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def resolveBin(m: String, bin: String, options: ResolveOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBin")(m.asInstanceOf[js.Any], bin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveBin(m: String, bin: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBin")(m.asInstanceOf[js.Any], bin.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def resolveBin(m: String, bin: String, options: ResolveOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveBin")(m.asInstanceOf[js.Any], bin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait ResolveOptions extends StObject {
     
@@ -39,23 +34,18 @@ object nodeMod {
   }
   object ResolveOptions {
     
-    @scala.inline
-    def apply(): ResolveOptions = {
+    inline def apply(): ResolveOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolveOptions]
     }
     
-    @scala.inline
-    implicit class ResolveOptionsMutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveOptions](x: Self) {
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     }
   }
 }

@@ -18,22 +18,17 @@ trait DescribeRulesPackagesResponse extends StObject {
 }
 object DescribeRulesPackagesResponse {
   
-  @scala.inline
-  def apply(failedItems: FailedItems, rulesPackages: RulesPackageList): DescribeRulesPackagesResponse = {
+  inline def apply(failedItems: FailedItems, rulesPackages: RulesPackageList): DescribeRulesPackagesResponse = {
     val __obj = js.Dynamic.literal(failedItems = failedItems.asInstanceOf[js.Any], rulesPackages = rulesPackages.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRulesPackagesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRulesPackagesResponseMutableBuilder[Self <: DescribeRulesPackagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRulesPackagesResponse](x: Self) {
     
-    @scala.inline
-    def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
+    inline def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackages(value: RulesPackageList): Self = StObject.set(x, "rulesPackages", value.asInstanceOf[js.Any])
+    inline def setRulesPackages(value: RulesPackageList): Self = StObject.set(x, "rulesPackages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackagesVarargs(value: RulesPackage*): Self = StObject.set(x, "rulesPackages", js.Array(value :_*))
+    inline def setRulesPackagesVarargs(value: RulesPackage*): Self = StObject.set(x, "rulesPackages", js.Array(value :_*))
   }
 }

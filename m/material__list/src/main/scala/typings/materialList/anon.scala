@@ -40,8 +40,7 @@ object anon {
   }
   object ACTIONEVENT {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACTION_EVENT: String,
       ARIA_CHECKED: String,
       ARIA_CHECKED_CHECKBOX_SELECTOR: String,
@@ -62,53 +61,37 @@ object anon {
       __obj.asInstanceOf[ACTIONEVENT]
     }
     
-    @scala.inline
-    implicit class ACTIONEVENTMutableBuilder[Self <: ACTIONEVENT] (val x: Self) extends AnyVal {
+    extension [Self <: ACTIONEVENT](x: Self) {
       
-      @scala.inline
-      def setACTION_EVENT(value: String): Self = StObject.set(x, "ACTION_EVENT", value.asInstanceOf[js.Any])
+      inline def setACTION_EVENT(value: String): Self = StObject.set(x, "ACTION_EVENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_CHECKED(value: String): Self = StObject.set(x, "ARIA_CHECKED", value.asInstanceOf[js.Any])
+      inline def setARIA_CHECKED(value: String): Self = StObject.set(x, "ARIA_CHECKED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_CHECKED_CHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "ARIA_CHECKED_CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setARIA_CHECKED_CHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "ARIA_CHECKED_CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_CHECKED_RADIO_SELECTOR(value: String): Self = StObject.set(x, "ARIA_CHECKED_RADIO_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setARIA_CHECKED_RADIO_SELECTOR(value: String): Self = StObject.set(x, "ARIA_CHECKED_RADIO_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_CURRENT(value: String): Self = StObject.set(x, "ARIA_CURRENT", value.asInstanceOf[js.Any])
+      inline def setARIA_CURRENT(value: String): Self = StObject.set(x, "ARIA_CURRENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_DISABLED(value: String): Self = StObject.set(x, "ARIA_DISABLED", value.asInstanceOf[js.Any])
+      inline def setARIA_DISABLED(value: String): Self = StObject.set(x, "ARIA_DISABLED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_ORIENTATION(value: String): Self = StObject.set(x, "ARIA_ORIENTATION", value.asInstanceOf[js.Any])
+      inline def setARIA_ORIENTATION(value: String): Self = StObject.set(x, "ARIA_ORIENTATION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_ORIENTATION_HORIZONTAL(value: String): Self = StObject.set(x, "ARIA_ORIENTATION_HORIZONTAL", value.asInstanceOf[js.Any])
+      inline def setARIA_ORIENTATION_HORIZONTAL(value: String): Self = StObject.set(x, "ARIA_ORIENTATION_HORIZONTAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_ROLE_CHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "ARIA_ROLE_CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setARIA_ROLE_CHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "ARIA_ROLE_CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARIA_SELECTED(value: String): Self = StObject.set(x, "ARIA_SELECTED", value.asInstanceOf[js.Any])
+      inline def setARIA_SELECTED(value: String): Self = StObject.set(x, "ARIA_SELECTED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHECKBOX_RADIO_SELECTOR(value: String): Self = StObject.set(x, "CHECKBOX_RADIO_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setCHECKBOX_RADIO_SELECTOR(value: String): Self = StObject.set(x, "CHECKBOX_RADIO_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setCHECKBOX_SELECTOR(value: String): Self = StObject.set(x, "CHECKBOX_SELECTOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHILD_ELEMENTS_TO_TOGGLE_TABINDEX(value: String): Self = StObject.set(x, "CHILD_ELEMENTS_TO_TOGGLE_TABINDEX", value.asInstanceOf[js.Any])
+      inline def setCHILD_ELEMENTS_TO_TOGGLE_TABINDEX(value: String): Self = StObject.set(x, "CHILD_ELEMENTS_TO_TOGGLE_TABINDEX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFOCUSABLE_CHILD_ELEMENTS(value: String): Self = StObject.set(x, "FOCUSABLE_CHILD_ELEMENTS", value.asInstanceOf[js.Any])
+      inline def setFOCUSABLE_CHILD_ELEMENTS(value: String): Self = StObject.set(x, "FOCUSABLE_CHILD_ELEMENTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRADIO_SELECTOR(value: String): Self = StObject.set(x, "RADIO_SELECTOR", value.asInstanceOf[js.Any])
+      inline def setRADIO_SELECTOR(value: String): Self = StObject.set(x, "RADIO_SELECTOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,8 +113,7 @@ object anon {
   }
   object LISTITEMACTIVATEDCLASS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       LIST_ITEM_ACTIVATED_CLASS: String,
       LIST_ITEM_CLASS: String,
       LIST_ITEM_DISABLED_CLASS: String,
@@ -144,29 +126,21 @@ object anon {
       __obj.asInstanceOf[LISTITEMACTIVATEDCLASS]
     }
     
-    @scala.inline
-    implicit class LISTITEMACTIVATEDCLASSMutableBuilder[Self <: LISTITEMACTIVATEDCLASS] (val x: Self) extends AnyVal {
+    extension [Self <: LISTITEMACTIVATEDCLASS](x: Self) {
       
-      @scala.inline
-      def setLIST_ITEM_ACTIVATED_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_ACTIVATED_CLASS", value.asInstanceOf[js.Any])
+      inline def setLIST_ITEM_ACTIVATED_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_ACTIVATED_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIST_ITEM_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_CLASS", value.asInstanceOf[js.Any])
+      inline def setLIST_ITEM_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIST_ITEM_DISABLED_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_DISABLED_CLASS", value.asInstanceOf[js.Any])
+      inline def setLIST_ITEM_DISABLED_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_DISABLED_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIST_ITEM_PRIMARY_TEXT_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_PRIMARY_TEXT_CLASS", value.asInstanceOf[js.Any])
+      inline def setLIST_ITEM_PRIMARY_TEXT_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_PRIMARY_TEXT_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIST_ITEM_SELECTED_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_SELECTED_CLASS", value.asInstanceOf[js.Any])
+      inline def setLIST_ITEM_SELECTED_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_SELECTED_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIST_ITEM_TEXT_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_TEXT_CLASS", value.asInstanceOf[js.Any])
+      inline def setLIST_ITEM_TEXT_CLASS(value: String): Self = StObject.set(x, "LIST_ITEM_TEXT_CLASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
+      inline def setROOT(value: String): Self = StObject.set(x, "ROOT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,116 +185,80 @@ object anon {
   }
   object PartialMDCListAdapter {
     
-    @scala.inline
-    def apply(): PartialMDCListAdapter = {
+    inline def apply(): PartialMDCListAdapter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMDCListAdapter]
     }
     
-    @scala.inline
-    implicit class PartialMDCListAdapterMutableBuilder[Self <: PartialMDCListAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMDCListAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClassForElementIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "addClassForElementIndex", js.Any.fromFunction2(value))
+      inline def setAddClassForElementIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "addClassForElementIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddClassForElementIndexUndefined: Self = StObject.set(x, "addClassForElementIndex", js.undefined)
+      inline def setAddClassForElementIndexUndefined: Self = StObject.set(x, "addClassForElementIndex", js.undefined)
       
-      @scala.inline
-      def setFocusItemAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "focusItemAtIndex", js.Any.fromFunction1(value))
+      inline def setFocusItemAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "focusItemAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocusItemAtIndexUndefined: Self = StObject.set(x, "focusItemAtIndex", js.undefined)
+      inline def setFocusItemAtIndexUndefined: Self = StObject.set(x, "focusItemAtIndex", js.undefined)
       
-      @scala.inline
-      def setGetAttributeForElementIndex(value: (/* index */ Double, /* attr */ String) => String | Null): Self = StObject.set(x, "getAttributeForElementIndex", js.Any.fromFunction2(value))
+      inline def setGetAttributeForElementIndex(value: (/* index */ Double, /* attr */ String) => String | Null): Self = StObject.set(x, "getAttributeForElementIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAttributeForElementIndexUndefined: Self = StObject.set(x, "getAttributeForElementIndex", js.undefined)
+      inline def setGetAttributeForElementIndexUndefined: Self = StObject.set(x, "getAttributeForElementIndex", js.undefined)
       
-      @scala.inline
-      def setGetFocusedElementIndex(value: () => Double): Self = StObject.set(x, "getFocusedElementIndex", js.Any.fromFunction0(value))
+      inline def setGetFocusedElementIndex(value: () => Double): Self = StObject.set(x, "getFocusedElementIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFocusedElementIndexUndefined: Self = StObject.set(x, "getFocusedElementIndex", js.undefined)
+      inline def setGetFocusedElementIndexUndefined: Self = StObject.set(x, "getFocusedElementIndex", js.undefined)
       
-      @scala.inline
-      def setGetListItemCount(value: () => Double): Self = StObject.set(x, "getListItemCount", js.Any.fromFunction0(value))
+      inline def setGetListItemCount(value: () => Double): Self = StObject.set(x, "getListItemCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetListItemCountUndefined: Self = StObject.set(x, "getListItemCount", js.undefined)
+      inline def setGetListItemCountUndefined: Self = StObject.set(x, "getListItemCount", js.undefined)
       
-      @scala.inline
-      def setGetPrimaryTextAtIndex(value: /* index */ Double => String): Self = StObject.set(x, "getPrimaryTextAtIndex", js.Any.fromFunction1(value))
+      inline def setGetPrimaryTextAtIndex(value: /* index */ Double => String): Self = StObject.set(x, "getPrimaryTextAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPrimaryTextAtIndexUndefined: Self = StObject.set(x, "getPrimaryTextAtIndex", js.undefined)
+      inline def setGetPrimaryTextAtIndexUndefined: Self = StObject.set(x, "getPrimaryTextAtIndex", js.undefined)
       
-      @scala.inline
-      def setHasCheckboxAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "hasCheckboxAtIndex", js.Any.fromFunction1(value))
+      inline def setHasCheckboxAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "hasCheckboxAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasCheckboxAtIndexUndefined: Self = StObject.set(x, "hasCheckboxAtIndex", js.undefined)
+      inline def setHasCheckboxAtIndexUndefined: Self = StObject.set(x, "hasCheckboxAtIndex", js.undefined)
       
-      @scala.inline
-      def setHasRadioAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "hasRadioAtIndex", js.Any.fromFunction1(value))
+      inline def setHasRadioAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "hasRadioAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasRadioAtIndexUndefined: Self = StObject.set(x, "hasRadioAtIndex", js.undefined)
+      inline def setHasRadioAtIndexUndefined: Self = StObject.set(x, "hasRadioAtIndex", js.undefined)
       
-      @scala.inline
-      def setIsCheckboxCheckedAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "isCheckboxCheckedAtIndex", js.Any.fromFunction1(value))
+      inline def setIsCheckboxCheckedAtIndex(value: /* index */ Double => Boolean): Self = StObject.set(x, "isCheckboxCheckedAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCheckboxCheckedAtIndexUndefined: Self = StObject.set(x, "isCheckboxCheckedAtIndex", js.undefined)
+      inline def setIsCheckboxCheckedAtIndexUndefined: Self = StObject.set(x, "isCheckboxCheckedAtIndex", js.undefined)
       
-      @scala.inline
-      def setIsFocusInsideList(value: () => Boolean): Self = StObject.set(x, "isFocusInsideList", js.Any.fromFunction0(value))
+      inline def setIsFocusInsideList(value: () => Boolean): Self = StObject.set(x, "isFocusInsideList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocusInsideListUndefined: Self = StObject.set(x, "isFocusInsideList", js.undefined)
+      inline def setIsFocusInsideListUndefined: Self = StObject.set(x, "isFocusInsideList", js.undefined)
       
-      @scala.inline
-      def setIsRootFocused(value: () => Boolean): Self = StObject.set(x, "isRootFocused", js.Any.fromFunction0(value))
+      inline def setIsRootFocused(value: () => Boolean): Self = StObject.set(x, "isRootFocused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRootFocusedUndefined: Self = StObject.set(x, "isRootFocused", js.undefined)
+      inline def setIsRootFocusedUndefined: Self = StObject.set(x, "isRootFocused", js.undefined)
       
-      @scala.inline
-      def setListItemAtIndexHasClass(value: (/* index */ Double, /* className */ String) => Boolean): Self = StObject.set(x, "listItemAtIndexHasClass", js.Any.fromFunction2(value))
+      inline def setListItemAtIndexHasClass(value: (/* index */ Double, /* className */ String) => Boolean): Self = StObject.set(x, "listItemAtIndexHasClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setListItemAtIndexHasClassUndefined: Self = StObject.set(x, "listItemAtIndexHasClass", js.undefined)
+      inline def setListItemAtIndexHasClassUndefined: Self = StObject.set(x, "listItemAtIndexHasClass", js.undefined)
       
-      @scala.inline
-      def setNotifyAction(value: /* index */ Double => Unit): Self = StObject.set(x, "notifyAction", js.Any.fromFunction1(value))
+      inline def setNotifyAction(value: /* index */ Double => Unit): Self = StObject.set(x, "notifyAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyActionUndefined: Self = StObject.set(x, "notifyAction", js.undefined)
+      inline def setNotifyActionUndefined: Self = StObject.set(x, "notifyAction", js.undefined)
       
-      @scala.inline
-      def setRemoveClassForElementIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "removeClassForElementIndex", js.Any.fromFunction2(value))
+      inline def setRemoveClassForElementIndex(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "removeClassForElementIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveClassForElementIndexUndefined: Self = StObject.set(x, "removeClassForElementIndex", js.undefined)
+      inline def setRemoveClassForElementIndexUndefined: Self = StObject.set(x, "removeClassForElementIndex", js.undefined)
       
-      @scala.inline
-      def setSetAttributeForElementIndex(value: (/* index */ Double, /* attribute */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttributeForElementIndex", js.Any.fromFunction3(value))
+      inline def setSetAttributeForElementIndex(value: (/* index */ Double, /* attribute */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttributeForElementIndex", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetAttributeForElementIndexUndefined: Self = StObject.set(x, "setAttributeForElementIndex", js.undefined)
+      inline def setSetAttributeForElementIndexUndefined: Self = StObject.set(x, "setAttributeForElementIndex", js.undefined)
       
-      @scala.inline
-      def setSetCheckedCheckboxOrRadioAtIndex(value: (/* index */ Double, /* isChecked */ Boolean) => Unit): Self = StObject.set(x, "setCheckedCheckboxOrRadioAtIndex", js.Any.fromFunction2(value))
+      inline def setSetCheckedCheckboxOrRadioAtIndex(value: (/* index */ Double, /* isChecked */ Boolean) => Unit): Self = StObject.set(x, "setCheckedCheckboxOrRadioAtIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetCheckedCheckboxOrRadioAtIndexUndefined: Self = StObject.set(x, "setCheckedCheckboxOrRadioAtIndex", js.undefined)
+      inline def setSetCheckedCheckboxOrRadioAtIndexUndefined: Self = StObject.set(x, "setCheckedCheckboxOrRadioAtIndex", js.undefined)
       
-      @scala.inline
-      def setSetTabIndexForListItemChildren(value: (/* listItemIndex */ Double, /* tabIndexValue */ String) => Unit): Self = StObject.set(x, "setTabIndexForListItemChildren", js.Any.fromFunction2(value))
+      inline def setSetTabIndexForListItemChildren(value: (/* listItemIndex */ Double, /* tabIndexValue */ String) => Unit): Self = StObject.set(x, "setTabIndexForListItemChildren", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTabIndexForListItemChildrenUndefined: Self = StObject.set(x, "setTabIndexForListItemChildren", js.undefined)
+      inline def setSetTabIndexForListItemChildrenUndefined: Self = StObject.set(x, "setTabIndexForListItemChildren", js.undefined)
     }
   }
   
@@ -332,20 +270,16 @@ object anon {
   }
   object TYPEAHEADBUFFERCLEARTIMEOUTMS {
     
-    @scala.inline
-    def apply(TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS: Double, UNSET_INDEX: Double): TYPEAHEADBUFFERCLEARTIMEOUTMS = {
+    inline def apply(TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS: Double, UNSET_INDEX: Double): TYPEAHEADBUFFERCLEARTIMEOUTMS = {
       val __obj = js.Dynamic.literal(TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS = TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS.asInstanceOf[js.Any], UNSET_INDEX = UNSET_INDEX.asInstanceOf[js.Any])
       __obj.asInstanceOf[TYPEAHEADBUFFERCLEARTIMEOUTMS]
     }
     
-    @scala.inline
-    implicit class TYPEAHEADBUFFERCLEARTIMEOUTMSMutableBuilder[Self <: TYPEAHEADBUFFERCLEARTIMEOUTMS] (val x: Self) extends AnyVal {
+    extension [Self <: TYPEAHEADBUFFERCLEARTIMEOUTMS](x: Self) {
       
-      @scala.inline
-      def setTYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS(value: Double): Self = StObject.set(x, "TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS", value.asInstanceOf[js.Any])
+      inline def setTYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS(value: Double): Self = StObject.set(x, "TYPEAHEAD_BUFFER_CLEAR_TIMEOUT_MS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNSET_INDEX(value: Double): Self = StObject.set(x, "UNSET_INDEX", value.asInstanceOf[js.Any])
+      inline def setUNSET_INDEX(value: Double): Self = StObject.set(x, "UNSET_INDEX", value.asInstanceOf[js.Any])
     }
   }
 }

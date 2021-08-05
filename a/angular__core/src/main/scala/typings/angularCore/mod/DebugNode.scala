@@ -25,8 +25,7 @@ trait DebugNode extends StObject {
 }
 object DebugNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     componentInstance: js.Any,
     context: js.Any,
     injector: Injector,
@@ -39,40 +38,28 @@ object DebugNode {
     __obj.asInstanceOf[DebugNode]
   }
   
-  @scala.inline
-  implicit class DebugNodeMutableBuilder[Self <: DebugNode] (val x: Self) extends AnyVal {
+  extension [Self <: DebugNode](x: Self) {
     
-    @scala.inline
-    def setComponentInstance(value: js.Any): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
+    inline def setComponentInstance(value: js.Any): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
+    inline def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListeners(value: js.Array[DebugEventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: js.Array[DebugEventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersVarargs(value: DebugEventListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: DebugEventListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
     
-    @scala.inline
-    def setNativeNode(value: js.Any): Self = StObject.set(x, "nativeNode", value.asInstanceOf[js.Any])
+    inline def setNativeNode(value: js.Any): Self = StObject.set(x, "nativeNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: DebugElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: DebugElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setProviderTokens(value: js.Array[js.Any]): Self = StObject.set(x, "providerTokens", value.asInstanceOf[js.Any])
+    inline def setProviderTokens(value: js.Array[js.Any]): Self = StObject.set(x, "providerTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderTokensVarargs(value: js.Any*): Self = StObject.set(x, "providerTokens", js.Array(value :_*))
+    inline def setProviderTokensVarargs(value: js.Any*): Self = StObject.set(x, "providerTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setReferences(value: StringDictionary[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: StringDictionary[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
   }
 }

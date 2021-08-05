@@ -38,49 +38,35 @@ trait AnimationOptions extends StObject {
 }
 object AnimationOptions {
   
-  @scala.inline
-  def apply(): AnimationOptions = {
+  inline def apply(): AnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationOptions]
   }
   
-  @scala.inline
-  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDismissModal(value: ModalAnimationOptions): Self = StObject.set(x, "dismissModal", value.asInstanceOf[js.Any])
+    inline def setDismissModal(value: ModalAnimationOptions): Self = StObject.set(x, "dismissModal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissModalUndefined: Self = StObject.set(x, "dismissModal", js.undefined)
+    inline def setDismissModalUndefined: Self = StObject.set(x, "dismissModal", js.undefined)
     
-    @scala.inline
-    def setPop(value: StackAnimationOptions): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
+    inline def setPop(value: StackAnimationOptions): Self = StObject.set(x, "pop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
+    inline def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
     
-    @scala.inline
-    def setPush(value: StackAnimationOptions): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: StackAnimationOptions): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+    inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
-    @scala.inline
-    def setSetRoot(value: ViewAnimationOptions): Self = StObject.set(x, "setRoot", value.asInstanceOf[js.Any])
+    inline def setSetRoot(value: ViewAnimationOptions): Self = StObject.set(x, "setRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
+    inline def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
     
-    @scala.inline
-    def setSetStackRoot(value: ViewAnimationOptions): Self = StObject.set(x, "setStackRoot", value.asInstanceOf[js.Any])
+    inline def setSetStackRoot(value: ViewAnimationOptions): Self = StObject.set(x, "setStackRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetStackRootUndefined: Self = StObject.set(x, "setStackRoot", js.undefined)
+    inline def setSetStackRootUndefined: Self = StObject.set(x, "setStackRoot", js.undefined)
     
-    @scala.inline
-    def setShowModal(value: ModalAnimationOptions): Self = StObject.set(x, "showModal", value.asInstanceOf[js.Any])
+    inline def setShowModal(value: ModalAnimationOptions): Self = StObject.set(x, "showModal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowModalUndefined: Self = StObject.set(x, "showModal", js.undefined)
+    inline def setShowModalUndefined: Self = StObject.set(x, "showModal", js.undefined)
   }
 }

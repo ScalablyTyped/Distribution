@@ -17,31 +17,23 @@ trait CalloutStatusRow extends StObject {
 }
 object CalloutStatusRow {
   
-  @scala.inline
-  def apply(): CalloutStatusRow = {
+  inline def apply(): CalloutStatusRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalloutStatusRow]
   }
   
-  @scala.inline
-  implicit class CalloutStatusRowMutableBuilder[Self <: CalloutStatusRow] (val x: Self) extends AnyVal {
+  extension [Self <: CalloutStatusRow](x: Self) {
     
-    @scala.inline
-    def setCalloutStatusId(value: Double): Self = StObject.set(x, "calloutStatusId", value.asInstanceOf[js.Any])
+    inline def setCalloutStatusId(value: Double): Self = StObject.set(x, "calloutStatusId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutStatusIdUndefined: Self = StObject.set(x, "calloutStatusId", js.undefined)
+    inline def setCalloutStatusIdUndefined: Self = StObject.set(x, "calloutStatusId", js.undefined)
     
-    @scala.inline
-    def setImpressionCount(value: MetricValue): Self = StObject.set(x, "impressionCount", value.asInstanceOf[js.Any])
+    inline def setImpressionCount(value: MetricValue): Self = StObject.set(x, "impressionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionCountUndefined: Self = StObject.set(x, "impressionCount", js.undefined)
+    inline def setImpressionCountUndefined: Self = StObject.set(x, "impressionCount", js.undefined)
     
-    @scala.inline
-    def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
+    inline def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
+    inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
   }
 }

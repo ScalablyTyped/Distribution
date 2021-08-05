@@ -16,7 +16,7 @@ class LanguagesImpl ()
   extends StObject
      with Remote {
   
-  var _connection: js.Any = js.native
+  /* private */ var _connection: js.Any = js.native
   
   /**
     * Attach the remote to the given connection.

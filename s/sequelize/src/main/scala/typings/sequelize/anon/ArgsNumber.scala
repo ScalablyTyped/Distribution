@@ -12,19 +12,15 @@ trait ArgsNumber extends StObject {
 }
 object ArgsNumber {
   
-  @scala.inline
-  def apply(args: Double, msg: String): ArgsNumber = {
+  inline def apply(args: Double, msg: String): ArgsNumber = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgsNumber]
   }
   
-  @scala.inline
-  implicit class ArgsNumberMutableBuilder[Self <: ArgsNumber] (val x: Self) extends AnyVal {
+  extension [Self <: ArgsNumber](x: Self) {
     
-    @scala.inline
-    def setArgs(value: Double): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Double): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
   }
 }

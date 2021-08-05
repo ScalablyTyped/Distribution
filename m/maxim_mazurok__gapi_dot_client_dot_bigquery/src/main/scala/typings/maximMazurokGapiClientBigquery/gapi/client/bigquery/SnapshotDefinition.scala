@@ -14,25 +14,19 @@ trait SnapshotDefinition extends StObject {
 }
 object SnapshotDefinition {
   
-  @scala.inline
-  def apply(): SnapshotDefinition = {
+  inline def apply(): SnapshotDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotDefinition]
   }
   
-  @scala.inline
-  implicit class SnapshotDefinitionMutableBuilder[Self <: SnapshotDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotDefinition](x: Self) {
     
-    @scala.inline
-    def setBaseTableReference(value: TableReference): Self = StObject.set(x, "baseTableReference", value.asInstanceOf[js.Any])
+    inline def setBaseTableReference(value: TableReference): Self = StObject.set(x, "baseTableReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseTableReferenceUndefined: Self = StObject.set(x, "baseTableReference", js.undefined)
+    inline def setBaseTableReferenceUndefined: Self = StObject.set(x, "baseTableReference", js.undefined)
     
-    @scala.inline
-    def setSnapshotTime(value: String): Self = StObject.set(x, "snapshotTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotTime(value: String): Self = StObject.set(x, "snapshotTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotTimeUndefined: Self = StObject.set(x, "snapshotTime", js.undefined)
+    inline def setSnapshotTimeUndefined: Self = StObject.set(x, "snapshotTime", js.undefined)
   }
 }

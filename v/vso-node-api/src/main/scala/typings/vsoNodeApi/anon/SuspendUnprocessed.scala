@@ -12,19 +12,15 @@ trait SuspendUnprocessed extends StObject {
 }
 object SuspendUnprocessed {
   
-  @scala.inline
-  def apply(none: scala.Double, suspendUnprocessed: scala.Double): SuspendUnprocessed = {
+  inline def apply(none: scala.Double, suspendUnprocessed: scala.Double): SuspendUnprocessed = {
     val __obj = js.Dynamic.literal(none = none.asInstanceOf[js.Any], suspendUnprocessed = suspendUnprocessed.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspendUnprocessed]
   }
   
-  @scala.inline
-  implicit class SuspendUnprocessedMutableBuilder[Self <: SuspendUnprocessed] (val x: Self) extends AnyVal {
+  extension [Self <: SuspendUnprocessed](x: Self) {
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendUnprocessed(value: scala.Double): Self = StObject.set(x, "suspendUnprocessed", value.asInstanceOf[js.Any])
+    inline def setSuspendUnprocessed(value: scala.Double): Self = StObject.set(x, "suspendUnprocessed", value.asInstanceOf[js.Any])
   }
 }

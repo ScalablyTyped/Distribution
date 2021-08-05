@@ -11,12 +11,9 @@ object projectionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(code: String, projection: default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(code.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(code: String, projection: default): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(code.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @scala.inline
-  def get(code: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(code.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def get(code: String): default = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(code.asInstanceOf[js.Any]).asInstanceOf[default]
 }

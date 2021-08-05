@@ -27,18 +27,14 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def call(command: String): js.Promise[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true`]]
+  inline def call(command: String): js.Promise[`true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`true`]]
   
-  @scala.inline
-  def count(converted: js.Array[StringDictionary[js.Any]], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def count(converted: js.Array[StringDictionary[js.Any]], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   /* static member */
-  @scala.inline
-  def count(converted: StringDictionary[js.Any], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def count(converted: StringDictionary[js.Any], key: String, value: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(converted.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def createDir(target: String, filename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDir")(target.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def createDir(target: String, filename: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDir")(target.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * The complete callback will be called when the conversion of the final TIFF has finished.
@@ -55,29 +51,22 @@ object mod {
   }
   object ConvertResult {
     
-    @scala.inline
-    def apply(converted: js.Array[Converted], errors: js.Array[TiffConverterError], total: Double): ConvertResult = {
+    inline def apply(converted: js.Array[Converted], errors: js.Array[TiffConverterError], total: Double): ConvertResult = {
       val __obj = js.Dynamic.literal(converted = converted.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvertResult]
     }
     
-    @scala.inline
-    implicit class ConvertResultMutableBuilder[Self <: ConvertResult] (val x: Self) extends AnyVal {
+    extension [Self <: ConvertResult](x: Self) {
       
-      @scala.inline
-      def setConverted(value: js.Array[Converted]): Self = StObject.set(x, "converted", value.asInstanceOf[js.Any])
+      inline def setConverted(value: js.Array[Converted]): Self = StObject.set(x, "converted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConvertedVarargs(value: Converted*): Self = StObject.set(x, "converted", js.Array(value :_*))
+      inline def setConvertedVarargs(value: Converted*): Self = StObject.set(x, "converted", js.Array(value :_*))
       
-      @scala.inline
-      def setErrors(value: js.Array[TiffConverterError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[TiffConverterError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: TiffConverterError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: TiffConverterError*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,26 +82,20 @@ object mod {
   }
   object Converted {
     
-    @scala.inline
-    def apply(filename: String, success: Boolean, target: String, tiff: String): Converted = {
+    inline def apply(filename: String, success: Boolean, target: String, tiff: String): Converted = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tiff = tiff.asInstanceOf[js.Any])
       __obj.asInstanceOf[Converted]
     }
     
-    @scala.inline
-    implicit class ConvertedMutableBuilder[Self <: Converted] (val x: Self) extends AnyVal {
+    extension [Self <: Converted](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiff(value: String): Self = StObject.set(x, "tiff", value.asInstanceOf[js.Any])
+      inline def setTiff(value: String): Self = StObject.set(x, "tiff", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,74 +155,52 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutoRemoveTmp(value: Boolean): Self = StObject.set(x, "autoRemoveTmp", value.asInstanceOf[js.Any])
+      inline def setAutoRemoveTmp(value: Boolean): Self = StObject.set(x, "autoRemoveTmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRemoveTmpUndefined: Self = StObject.set(x, "autoRemoveTmp", js.undefined)
+      inline def setAutoRemoveTmpUndefined: Self = StObject.set(x, "autoRemoveTmp", js.undefined)
       
-      @scala.inline
-      def setCommandPath(value: String): Self = StObject.set(x, "commandPath", value.asInstanceOf[js.Any])
+      inline def setCommandPath(value: String): Self = StObject.set(x, "commandPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandPathUndefined: Self = StObject.set(x, "commandPath", js.undefined)
+      inline def setCommandPathUndefined: Self = StObject.set(x, "commandPath", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: Double): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setPage(value: A4 | A3): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: A4 | A3): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSaveFolder(value: String): Self = StObject.set(x, "saveFolder", value.asInstanceOf[js.Any])
+      inline def setSaveFolder(value: String): Self = StObject.set(x, "saveFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveFolderUndefined: Self = StObject.set(x, "saveFolder", js.undefined)
+      inline def setSaveFolderUndefined: Self = StObject.set(x, "saveFolder", js.undefined)
       
-      @scala.inline
-      def setScene(value: `1` | `2`): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+      inline def setScene(value: `1` | `2`): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+      inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setTmpPath(value: String): Self = StObject.set(x, "tmpPath", value.asInstanceOf[js.Any])
+      inline def setTmpPath(value: String): Self = StObject.set(x, "tmpPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTmpPathUndefined: Self = StObject.set(x, "tmpPath", js.undefined)
+      inline def setTmpPathUndefined: Self = StObject.set(x, "tmpPath", js.undefined)
       
-      @scala.inline
-      def setType(value: png | jpg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: png | jpg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -256,20 +217,16 @@ object mod {
   }
   object SingleConvertResult {
     
-    @scala.inline
-    def apply(converted: Converted, error: TiffConverterError): SingleConvertResult = {
+    inline def apply(converted: Converted, error: TiffConverterError): SingleConvertResult = {
       val __obj = js.Dynamic.literal(converted = converted.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[SingleConvertResult]
     }
     
-    @scala.inline
-    implicit class SingleConvertResultMutableBuilder[Self <: SingleConvertResult] (val x: Self) extends AnyVal {
+    extension [Self <: SingleConvertResult](x: Self) {
       
-      @scala.inline
-      def setConverted(value: Converted): Self = StObject.set(x, "converted", value.asInstanceOf[js.Any])
+      inline def setConverted(value: Converted): Self = StObject.set(x, "converted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: TiffConverterError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: TiffConverterError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,26 +274,20 @@ object mod {
   }
   object TiffConverterError {
     
-    @scala.inline
-    def apply(error: Error, filename: String, target: String, tiff: String): TiffConverterError = {
+    inline def apply(error: Error, filename: String, target: String, tiff: String): TiffConverterError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], tiff = tiff.asInstanceOf[js.Any])
       __obj.asInstanceOf[TiffConverterError]
     }
     
-    @scala.inline
-    implicit class TiffConverterErrorMutableBuilder[Self <: TiffConverterError] (val x: Self) extends AnyVal {
+    extension [Self <: TiffConverterError](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiff(value: String): Self = StObject.set(x, "tiff", value.asInstanceOf[js.Any])
+      inline def setTiff(value: String): Self = StObject.set(x, "tiff", value.asInstanceOf[js.Any])
     }
   }
 }

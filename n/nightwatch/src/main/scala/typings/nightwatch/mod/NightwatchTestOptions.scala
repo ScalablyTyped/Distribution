@@ -14,19 +14,15 @@ trait NightwatchTestOptions
 }
 object NightwatchTestOptions {
   
-  @scala.inline
-  def apply(screenshots: Boolean, screenshotsPath: String): NightwatchTestOptions = {
+  inline def apply(screenshots: Boolean, screenshotsPath: String): NightwatchTestOptions = {
     val __obj = js.Dynamic.literal(screenshots = screenshots.asInstanceOf[js.Any], screenshotsPath = screenshotsPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestOptions]
   }
   
-  @scala.inline
-  implicit class NightwatchTestOptionsMutableBuilder[Self <: NightwatchTestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchTestOptions](x: Self) {
     
-    @scala.inline
-    def setScreenshots(value: Boolean): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
+    inline def setScreenshots(value: Boolean): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotsPath(value: String): Self = StObject.set(x, "screenshotsPath", value.asInstanceOf[js.Any])
+    inline def setScreenshotsPath(value: String): Self = StObject.set(x, "screenshotsPath", value.asInstanceOf[js.Any])
   }
 }

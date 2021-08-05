@@ -23,22 +23,17 @@ trait IonBackdrop extends StObject {
 }
 object IonBackdrop {
   
-  @scala.inline
-  def apply(stopPropagation: Boolean, tappable: Boolean, visible: Boolean): IonBackdrop = {
+  inline def apply(stopPropagation: Boolean, tappable: Boolean, visible: Boolean): IonBackdrop = {
     val __obj = js.Dynamic.literal(stopPropagation = stopPropagation.asInstanceOf[js.Any], tappable = tappable.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonBackdrop]
   }
   
-  @scala.inline
-  implicit class IonBackdropMutableBuilder[Self <: IonBackdrop] (val x: Self) extends AnyVal {
+  extension [Self <: IonBackdrop](x: Self) {
     
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTappable(value: Boolean): Self = StObject.set(x, "tappable", value.asInstanceOf[js.Any])
+    inline def setTappable(value: Boolean): Self = StObject.set(x, "tappable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

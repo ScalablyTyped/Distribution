@@ -46,8 +46,7 @@ trait SmsStatusMessage extends StObject {
 }
 object SmsStatusMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: String,
     cellularClass: CellularClass,
     deviceId: String,
@@ -65,43 +64,30 @@ object SmsStatusMessage {
     __obj.asInstanceOf[SmsStatusMessage]
   }
   
-  @scala.inline
-  implicit class SmsStatusMessageMutableBuilder[Self <: SmsStatusMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SmsStatusMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
+    inline def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDischargeTime(value: Date): Self = StObject.set(x, "dischargeTime", value.asInstanceOf[js.Any])
+    inline def setDischargeTime(value: Date): Self = StObject.set(x, "dischargeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+    inline def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageReferenceNumber(value: Double): Self = StObject.set(x, "messageReferenceNumber", value.asInstanceOf[js.Any])
+    inline def setMessageReferenceNumber(value: Double): Self = StObject.set(x, "messageReferenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCenterTimestamp(value: Date): Self = StObject.set(x, "serviceCenterTimestamp", value.asInstanceOf[js.Any])
+    inline def setServiceCenterTimestamp(value: Date): Self = StObject.set(x, "serviceCenterTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
+    inline def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

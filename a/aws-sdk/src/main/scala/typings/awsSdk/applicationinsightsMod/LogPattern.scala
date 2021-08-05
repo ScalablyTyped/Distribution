@@ -28,37 +28,27 @@ trait LogPattern extends StObject {
 }
 object LogPattern {
   
-  @scala.inline
-  def apply(): LogPattern = {
+  inline def apply(): LogPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogPattern]
   }
   
-  @scala.inline
-  implicit class LogPatternMutableBuilder[Self <: LogPattern] (val x: Self) extends AnyVal {
+  extension [Self <: LogPattern](x: Self) {
     
-    @scala.inline
-    def setPattern(value: LogPatternRegex): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: LogPatternRegex): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
+    inline def setPatternName(value: LogPatternName): Self = StObject.set(x, "PatternName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternNameUndefined: Self = StObject.set(x, "PatternName", js.undefined)
+    inline def setPatternNameUndefined: Self = StObject.set(x, "PatternName", js.undefined)
     
-    @scala.inline
-    def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
+    inline def setPatternSetName(value: LogPatternSetName): Self = StObject.set(x, "PatternSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternSetNameUndefined: Self = StObject.set(x, "PatternSetName", js.undefined)
+    inline def setPatternSetNameUndefined: Self = StObject.set(x, "PatternSetName", js.undefined)
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
     
-    @scala.inline
-    def setRank(value: LogPatternRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: LogPatternRank): Self = StObject.set(x, "Rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "Rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "Rank", js.undefined)
   }
 }

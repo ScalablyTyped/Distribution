@@ -26,8 +26,7 @@ trait XCompletedConnection
 }
 object XCompletedConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     connectWithCompletion: XInteractionHandler => XConnection,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XCompletedConnection {
     __obj.asInstanceOf[XCompletedConnection]
   }
   
-  @scala.inline
-  implicit class XCompletedConnectionMutableBuilder[Self <: XCompletedConnection] (val x: Self) extends AnyVal {
+  extension [Self <: XCompletedConnection](x: Self) {
     
-    @scala.inline
-    def setConnectWithCompletion(value: XInteractionHandler => XConnection): Self = StObject.set(x, "connectWithCompletion", js.Any.fromFunction1(value))
+    inline def setConnectWithCompletion(value: XInteractionHandler => XConnection): Self = StObject.set(x, "connectWithCompletion", js.Any.fromFunction1(value))
   }
 }

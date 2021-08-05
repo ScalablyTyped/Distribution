@@ -28,6 +28,5 @@ object mod {
   @js.native
   val UP: /* "Up" */ String = js.native
   
-  @scala.inline
-  def useSwipeable(options: SwipeableProps): SwipeableHandlers = ^.asInstanceOf[js.Dynamic].applyDynamic("useSwipeable")(options.asInstanceOf[js.Any]).asInstanceOf[SwipeableHandlers]
+  inline def useSwipeable(options: SwipeableProps): SwipeableHandlers = ^.asInstanceOf[js.Dynamic].applyDynamic("useSwipeable")(options.asInstanceOf[js.Any]).asInstanceOf[SwipeableHandlers]
 }

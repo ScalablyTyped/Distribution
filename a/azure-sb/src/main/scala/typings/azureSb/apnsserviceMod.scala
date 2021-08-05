@@ -151,50 +151,36 @@ object apnsserviceMod {
   }
   object Template {
     
-    @scala.inline
-    def apply(): Template = {
+    inline def apply(): Template = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Template]
     }
     
-    @scala.inline
-    implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+    extension [Self <: Template](x: Self) {
       
-      @scala.inline
-      def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
+      inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
       
-      @scala.inline
-      def setAps(value: js.Object): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
+      inline def setAps(value: js.Object): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApsUndefined: Self = StObject.set(x, "aps", js.undefined)
+      inline def setApsUndefined: Self = StObject.set(x, "aps", js.undefined)
       
-      @scala.inline
-      def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setExpiry(value: Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+      inline def setExpiry(value: Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+      inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
       
-      @scala.inline
-      def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+      inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     }
   }
 }

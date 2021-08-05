@@ -18,8 +18,7 @@ trait CustomPartitionAssignmentProtocol extends StObject {
 }
 object CustomPartitionAssignmentProtocol {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assign: (js.Any, js.Any, js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]) => Unit,
     name: String,
     version: Double
@@ -28,16 +27,12 @@ object CustomPartitionAssignmentProtocol {
     __obj.asInstanceOf[CustomPartitionAssignmentProtocol]
   }
   
-  @scala.inline
-  implicit class CustomPartitionAssignmentProtocolMutableBuilder[Self <: CustomPartitionAssignmentProtocol] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPartitionAssignmentProtocol](x: Self) {
     
-    @scala.inline
-    def setAssign(value: (js.Any, js.Any, js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]) => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction3(value))
+    inline def setAssign(value: (js.Any, js.Any, js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]) => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -23,7 +23,7 @@ class IonSplitPane protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   var ionSplitPaneVisible: EventEmitter[CustomEvent[js.Any]] = js.native
   
@@ -33,5 +33,5 @@ class IonSplitPane protected ()
   /* CompleteClass */
   var when: String | Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

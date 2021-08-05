@@ -52,8 +52,7 @@ trait BootstrapClientMenuItem
 }
 object BootstrapClientMenuItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetBadgeIconCssClass: () => String,
     GetBadgeText: () => String,
     GetChecked: () => Boolean,
@@ -85,28 +84,20 @@ object BootstrapClientMenuItem {
     __obj.asInstanceOf[BootstrapClientMenuItem]
   }
   
-  @scala.inline
-  implicit class BootstrapClientMenuItemMutableBuilder[Self <: BootstrapClientMenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientMenuItem](x: Self) {
     
-    @scala.inline
-    def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBadgeText(value: () => String): Self = StObject.set(x, "GetBadgeText", js.Any.fromFunction0(value))
+    inline def setGetBadgeText(value: () => String): Self = StObject.set(x, "GetBadgeText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIconCssClass(value: () => String): Self = StObject.set(x, "GetIconCssClass", js.Any.fromFunction0(value))
+    inline def setGetIconCssClass(value: () => String): Self = StObject.set(x, "GetIconCssClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: BootstrapClientMenuItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: BootstrapClientMenuItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetBadgeIconCssClass(value: String => Unit): Self = StObject.set(x, "SetBadgeIconCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBadgeText(value: String => Unit): Self = StObject.set(x, "SetBadgeText", js.Any.fromFunction1(value))
+    inline def setSetBadgeText(value: String => Unit): Self = StObject.set(x, "SetBadgeText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIconCssClass(value: String => Unit): Self = StObject.set(x, "SetIconCssClass", js.Any.fromFunction1(value))
+    inline def setSetIconCssClass(value: String => Unit): Self = StObject.set(x, "SetIconCssClass", js.Any.fromFunction1(value))
   }
 }

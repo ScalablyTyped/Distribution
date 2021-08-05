@@ -18,8 +18,7 @@ trait VpnConnectionVgwTelemetry extends StObject {
 }
 object VpnConnectionVgwTelemetry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptedRouteCount: Double,
     lastStatusChange: String,
     outsideIpAddress: String,
@@ -30,22 +29,16 @@ object VpnConnectionVgwTelemetry {
     __obj.asInstanceOf[VpnConnectionVgwTelemetry]
   }
   
-  @scala.inline
-  implicit class VpnConnectionVgwTelemetryMutableBuilder[Self <: VpnConnectionVgwTelemetry] (val x: Self) extends AnyVal {
+  extension [Self <: VpnConnectionVgwTelemetry](x: Self) {
     
-    @scala.inline
-    def setAcceptedRouteCount(value: Double): Self = StObject.set(x, "acceptedRouteCount", value.asInstanceOf[js.Any])
+    inline def setAcceptedRouteCount(value: Double): Self = StObject.set(x, "acceptedRouteCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStatusChange(value: String): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
+    inline def setLastStatusChange(value: String): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutsideIpAddress(value: String): Self = StObject.set(x, "outsideIpAddress", value.asInstanceOf[js.Any])
+    inline def setOutsideIpAddress(value: String): Self = StObject.set(x, "outsideIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

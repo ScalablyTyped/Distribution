@@ -10,19 +10,15 @@ trait ChartSeriesDefaultsOverlay extends StObject {
 }
 object ChartSeriesDefaultsOverlay {
   
-  @scala.inline
-  def apply(): ChartSeriesDefaultsOverlay = {
+  inline def apply(): ChartSeriesDefaultsOverlay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesDefaultsOverlay]
   }
   
-  @scala.inline
-  implicit class ChartSeriesDefaultsOverlayMutableBuilder[Self <: ChartSeriesDefaultsOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesDefaultsOverlay](x: Self) {
     
-    @scala.inline
-    def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
   }
 }

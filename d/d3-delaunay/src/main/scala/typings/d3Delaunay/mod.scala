@@ -159,37 +159,31 @@ object mod {
     /**
       * Returns the Delaunay triangulation for the given array or iterable of points where each point is an array in the form: [x, y].
       */
-    @scala.inline
-    def from(points: ArrayLike[Point]): Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunay[Point]]
-    @scala.inline
-    def from(points: Iterable[Point]): Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunay[Point]]
+    inline def from(points: ArrayLike[Point]): Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunay[Point]]
+    inline def from(points: Iterable[Point]): Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunay[Point]]
     /**
       * Returns the Delaunay triangulation for the given array or iterable of points.
       * Otherwise, the getX and getY functions are invoked for each point in order, and must return the respective x- and y-coordinate for each point.
       * If that is specified, the functions getX and getY are invoked with that as this.
       * (See Array.from for reference.)
       */
-    @scala.inline
-    def from[P](
+    inline def from[P](
       points: ArrayLike[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]]
     ): Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any])).asInstanceOf[Delaunay[P]]
-    @scala.inline
-    def from[P](
+    inline def from[P](
       points: ArrayLike[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       that: js.Any
     ): Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any], that.asInstanceOf[js.Any])).asInstanceOf[Delaunay[P]]
-    @scala.inline
-    def from[P](
+    inline def from[P](
       points: Iterable[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]]
     ): Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any])).asInstanceOf[Delaunay[P]]
-    @scala.inline
-    def from[P](
+    inline def from[P](
       points: Iterable[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
@@ -233,17 +227,14 @@ object mod {
     }
     object ClosableContext {
       
-      @scala.inline
-      def apply(closePath: () => Unit): ClosableContext = {
+      inline def apply(closePath: () => Unit): ClosableContext = {
         val __obj = js.Dynamic.literal(closePath = js.Any.fromFunction0(closePath))
         __obj.asInstanceOf[ClosableContext]
       }
       
-      @scala.inline
-      implicit class ClosableContextMutableBuilder[Self <: ClosableContext] (val x: Self) extends AnyVal {
+      extension [Self <: ClosableContext](x: Self) {
         
-        @scala.inline
-        def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
+        inline def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
       }
     }
     
@@ -264,17 +255,14 @@ object mod {
     }
     object LineContext {
       
-      @scala.inline
-      def apply(lineTo: (Double, Double) => Unit): LineContext = {
+      inline def apply(lineTo: (Double, Double) => Unit): LineContext = {
         val __obj = js.Dynamic.literal(lineTo = js.Any.fromFunction2(lineTo))
         __obj.asInstanceOf[LineContext]
       }
       
-      @scala.inline
-      implicit class LineContextMutableBuilder[Self <: LineContext] (val x: Self) extends AnyVal {
+      extension [Self <: LineContext](x: Self) {
         
-        @scala.inline
-        def setLineTo(value: (Double, Double) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
+        inline def setLineTo(value: (Double, Double) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
       }
     }
     
@@ -290,17 +278,14 @@ object mod {
     }
     object MoveContext {
       
-      @scala.inline
-      def apply(moveTo: (Double, Double) => Unit): MoveContext = {
+      inline def apply(moveTo: (Double, Double) => Unit): MoveContext = {
         val __obj = js.Dynamic.literal(moveTo = js.Any.fromFunction2(moveTo))
         __obj.asInstanceOf[MoveContext]
       }
       
-      @scala.inline
-      implicit class MoveContextMutableBuilder[Self <: MoveContext] (val x: Self) extends AnyVal {
+      extension [Self <: MoveContext](x: Self) {
         
-        @scala.inline
-        def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
+        inline def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
       }
     }
     
@@ -326,17 +311,14 @@ object mod {
     }
     object RectContext {
       
-      @scala.inline
-      def apply(rect: (Double, Double, Double, Double) => Unit): RectContext = {
+      inline def apply(rect: (Double, Double, Double, Double) => Unit): RectContext = {
         val __obj = js.Dynamic.literal(rect = js.Any.fromFunction4(rect))
         __obj.asInstanceOf[RectContext]
       }
       
-      @scala.inline
-      implicit class RectContextMutableBuilder[Self <: RectContext] (val x: Self) extends AnyVal {
+      extension [Self <: RectContext](x: Self) {
         
-        @scala.inline
-        def setRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "rect", js.Any.fromFunction4(value))
+        inline def setRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "rect", js.Any.fromFunction4(value))
       }
     }
     

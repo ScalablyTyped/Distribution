@@ -19,16 +19,12 @@ object LinguServiceEventFlags {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HYPHENATE_AGAIN: `4` = 4.asInstanceOf[`4`]
+    inline def HYPHENATE_AGAIN: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def PROOFREAD_AGAIN: `8` = 8.asInstanceOf[`8`]
+    inline def PROOFREAD_AGAIN: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def SPELL_CORRECT_WORDS_AGAIN: `1` = 1.asInstanceOf[`1`]
+    inline def SPELL_CORRECT_WORDS_AGAIN: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SPELL_WRONG_WORDS_AGAIN: `2` = 2.asInstanceOf[`2`]
+    inline def SPELL_WRONG_WORDS_AGAIN: `2` = 2.asInstanceOf[`2`]
   }
 }

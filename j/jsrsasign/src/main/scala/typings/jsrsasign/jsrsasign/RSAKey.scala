@@ -57,8 +57,7 @@ trait RSAKey extends StObject {
 }
 object RSAKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     readCertPubKeyHex: (String, Double) => Unit,
     readPKCS5PrvKeyHex: String => Unit,
     readPKCS5PubKeyHex: String => Unit,
@@ -71,28 +70,20 @@ object RSAKey {
     __obj.asInstanceOf[RSAKey]
   }
   
-  @scala.inline
-  implicit class RSAKeyMutableBuilder[Self <: RSAKey] (val x: Self) extends AnyVal {
+  extension [Self <: RSAKey](x: Self) {
     
-    @scala.inline
-    def setReadCertPubKeyHex(value: (String, Double) => Unit): Self = StObject.set(x, "readCertPubKeyHex", js.Any.fromFunction2(value))
+    inline def setReadCertPubKeyHex(value: (String, Double) => Unit): Self = StObject.set(x, "readCertPubKeyHex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReadPKCS5PrvKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS5PrvKeyHex", js.Any.fromFunction1(value))
+    inline def setReadPKCS5PrvKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS5PrvKeyHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadPKCS5PubKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS5PubKeyHex", js.Any.fromFunction1(value))
+    inline def setReadPKCS5PubKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS5PubKeyHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadPKCS8PrvKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS8PrvKeyHex", js.Any.fromFunction1(value))
+    inline def setReadPKCS8PrvKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS8PrvKeyHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadPKCS8PubKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS8PubKeyHex", js.Any.fromFunction1(value))
+    inline def setReadPKCS8PubKeyHex(value: String => Unit): Self = StObject.set(x, "readPKCS8PubKeyHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadPrivateKeyFromPEMString(value: String => Unit): Self = StObject.set(x, "readPrivateKeyFromPEMString", js.Any.fromFunction1(value))
+    inline def setReadPrivateKeyFromPEMString(value: String => Unit): Self = StObject.set(x, "readPrivateKeyFromPEMString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerify(value: (String, String) => `0` | `1`): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
+    inline def setVerify(value: (String, String) => `0` | `1`): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
   }
 }

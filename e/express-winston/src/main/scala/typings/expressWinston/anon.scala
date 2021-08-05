@@ -16,32 +16,24 @@ object anon {
   }
   object Body {
     
-    @scala.inline
-    def apply(body: js.Array[String], req: js.Array[String], res: js.Array[String]): Body = {
+    inline def apply(body: js.Array[String], req: js.Array[String], res: js.Array[String]): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
     
-    @scala.inline
-    implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+    extension [Self <: Body](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Array[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Array[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value :_*))
+      inline def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value :_*))
       
-      @scala.inline
-      def setReq(value: js.Array[String]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: js.Array[String]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqVarargs(value: String*): Self = StObject.set(x, "req", js.Array(value :_*))
+      inline def setReqVarargs(value: String*): Self = StObject.set(x, "req", js.Array(value :_*))
       
-      @scala.inline
-      def setRes(value: js.Array[String]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: js.Array[String]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResVarargs(value: String*): Self = StObject.set(x, "res", js.Array(value :_*))
+      inline def setResVarargs(value: String*): Self = StObject.set(x, "res", js.Array(value :_*))
     }
   }
 }

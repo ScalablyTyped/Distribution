@@ -19,43 +19,31 @@ trait Accessibility extends StObject {
 }
 object Accessibility {
   
-  @scala.inline
-  def apply(): Accessibility = {
+  inline def apply(): Accessibility = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Accessibility]
   }
   
-  @scala.inline
-  implicit class AccessibilityMutableBuilder[Self <: Accessibility] (val x: Self) extends AnyVal {
+  extension [Self <: Accessibility](x: Self) {
     
-    @scala.inline
-    def setAccessibility(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    @scala.inline
-    def `setBest-practices`(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "best-practices", value.asInstanceOf[js.Any])
+    inline def `setBest-practices`(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "best-practices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBest-practicesUndefined`: Self = StObject.set(x, "best-practices", js.undefined)
+    inline def `setBest-practicesUndefined`: Self = StObject.set(x, "best-practices", js.undefined)
     
-    @scala.inline
-    def setPerformance(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
+    inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    @scala.inline
-    def setPwa(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "pwa", value.asInstanceOf[js.Any])
+    inline def setPwa(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "pwa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwaUndefined: Self = StObject.set(x, "pwa", js.undefined)
+    inline def setPwaUndefined: Self = StObject.set(x, "pwa", js.undefined)
     
-    @scala.inline
-    def setSeo(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "seo", value.asInstanceOf[js.Any])
+    inline def setSeo(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "seo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeoUndefined: Self = StObject.set(x, "seo", js.undefined)
+    inline def setSeoUndefined: Self = StObject.set(x, "seo", js.undefined)
   }
 }

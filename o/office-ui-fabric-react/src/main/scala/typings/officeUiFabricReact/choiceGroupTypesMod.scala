@@ -35,23 +35,18 @@ object choiceGroupTypesMod {
   }
   object IChoiceGroup {
     
-    @scala.inline
-    def apply(focus: () => Unit): IChoiceGroup = {
+    inline def apply(focus: () => Unit): IChoiceGroup = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IChoiceGroup]
     }
     
-    @scala.inline
-    implicit class IChoiceGroupMutableBuilder[Self <: IChoiceGroup] (val x: Self) extends AnyVal {
+    extension [Self <: IChoiceGroup](x: Self) {
       
-      @scala.inline
-      def setCheckedOption(value: IChoiceGroupOption): Self = StObject.set(x, "checkedOption", value.asInstanceOf[js.Any])
+      inline def setCheckedOption(value: IChoiceGroupOption): Self = StObject.set(x, "checkedOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedOptionUndefined: Self = StObject.set(x, "checkedOption", js.undefined)
+      inline def setCheckedOptionUndefined: Self = StObject.set(x, "checkedOption", js.undefined)
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
   }
   
@@ -123,87 +118,62 @@ object choiceGroupTypesMod {
   }
   object IChoiceGroupOption {
     
-    @scala.inline
-    def apply(key: String, text: String): IChoiceGroupOption = {
+    inline def apply(key: String, text: String): IChoiceGroupOption = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChoiceGroupOption]
     }
     
-    @scala.inline
-    implicit class IChoiceGroupOptionMutableBuilder[Self <: IChoiceGroupOption] (val x: Self) extends AnyVal {
+    extension [Self <: IChoiceGroupOption](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setIconProps(value: IIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
+      inline def setIconProps(value: IIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
+      inline def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
       
-      @scala.inline
-      def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
+      inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
+      inline def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
       
-      @scala.inline
-      def setImageSize(value: Height): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
+      inline def setImageSize(value: Height): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
+      inline def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
       
-      @scala.inline
-      def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
+      inline def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSrcUndefined: Self = StObject.set(x, "imageSrc", js.undefined)
+      inline def setImageSrcUndefined: Self = StObject.set(x, "imageSrc", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+      inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+      inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
       
-      @scala.inline
-      def setOnRenderField(
+      inline def setOnRenderField(
         value: (/* props */ js.UndefOr[IChoiceGroupOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IChoiceGroupOption], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderField", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderFieldUndefined: Self = StObject.set(x, "onRenderField", js.undefined)
+      inline def setOnRenderFieldUndefined: Self = StObject.set(x, "onRenderField", js.undefined)
       
-      @scala.inline
-      def setOnRenderLabel(
+      inline def setOnRenderLabel(
         value: (/* props */ js.UndefOr[IChoiceGroupOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IChoiceGroupOption], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderLabel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderLabelUndefined: Self = StObject.set(x, "onRenderLabel", js.undefined)
+      inline def setOnRenderLabelUndefined: Self = StObject.set(x, "onRenderLabel", js.undefined)
       
-      @scala.inline
-      def setSelectedImageSrc(value: String): Self = StObject.set(x, "selectedImageSrc", value.asInstanceOf[js.Any])
+      inline def setSelectedImageSrc(value: String): Self = StObject.set(x, "selectedImageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedImageSrcUndefined: Self = StObject.set(x, "selectedImageSrc", js.undefined)
+      inline def setSelectedImageSrcUndefined: Self = StObject.set(x, "selectedImageSrc", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IChoiceGroupOptionStyleProps => DeepPartial[IChoiceGroupOptionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IChoiceGroupOptionStyleProps => DeepPartial[IChoiceGroupOptionStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -279,87 +249,62 @@ object choiceGroupTypesMod {
   }
   object IChoiceGroupProps {
     
-    @scala.inline
-    def apply(): IChoiceGroupProps = {
+    inline def apply(): IChoiceGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IChoiceGroupProps]
     }
     
-    @scala.inline
-    implicit class IChoiceGroupPropsMutableBuilder[Self <: IChoiceGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IChoiceGroupProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
+      inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IChoiceGroup]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IChoiceGroup]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IChoiceGroup | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IChoiceGroup | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedKey(value: String | Double): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
+      inline def setDefaultSelectedKey(value: String | Double): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
+      inline def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOnChange(
+      inline def setOnChange(
         value: (/* ev */ js.UndefOr[FormEvent[HTMLElement | HTMLInputElement]], /* option */ js.UndefOr[IChoiceGroupOption]) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnChanged(
+      inline def setOnChanged(
         value: (/* option */ IChoiceGroupOption, /* evt */ js.UndefOr[FormEvent[HTMLElement | HTMLInputElement]]) => Unit
       ): Self = StObject.set(x, "onChanged", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
+      inline def setOnChangedUndefined: Self = StObject.set(x, "onChanged", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[IChoiceGroupOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[IChoiceGroupOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: IChoiceGroupOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IChoiceGroupOption*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectedKey(value: String | Double): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      inline def setSelectedKey(value: String | Double): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
+      inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IChoiceGroupStyleProps, IChoiceGroupStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IChoiceGroupStyleProps, IChoiceGroupStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IChoiceGroupStyleProps => DeepPartial[IChoiceGroupStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IChoiceGroupStyleProps => DeepPartial[IChoiceGroupStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -373,29 +318,22 @@ object choiceGroupTypesMod {
   }
   object IChoiceGroupStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IChoiceGroupStyleProps = {
+    inline def apply(theme: ITheme): IChoiceGroupStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChoiceGroupStyleProps]
     }
     
-    @scala.inline
-    implicit class IChoiceGroupStylePropsMutableBuilder[Self <: IChoiceGroupStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IChoiceGroupStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOptionsContainIconOrImage(value: Boolean): Self = StObject.set(x, "optionsContainIconOrImage", value.asInstanceOf[js.Any])
+      inline def setOptionsContainIconOrImage(value: Boolean): Self = StObject.set(x, "optionsContainIconOrImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsContainIconOrImageUndefined: Self = StObject.set(x, "optionsContainIconOrImage", js.undefined)
+      inline def setOptionsContainIconOrImageUndefined: Self = StObject.set(x, "optionsContainIconOrImage", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -419,50 +357,36 @@ object choiceGroupTypesMod {
   }
   object IChoiceGroupStyles {
     
-    @scala.inline
-    def apply(): IChoiceGroupStyles = {
+    inline def apply(): IChoiceGroupStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IChoiceGroupStyles]
     }
     
-    @scala.inline
-    implicit class IChoiceGroupStylesMutableBuilder[Self <: IChoiceGroupStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IChoiceGroupStyles](x: Self) {
       
-      @scala.inline
-      def setApplicationRole(value: IStyle): Self = StObject.set(x, "applicationRole", value.asInstanceOf[js.Any])
+      inline def setApplicationRole(value: IStyle): Self = StObject.set(x, "applicationRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationRoleNull: Self = StObject.set(x, "applicationRole", null)
+      inline def setApplicationRoleNull: Self = StObject.set(x, "applicationRole", null)
       
-      @scala.inline
-      def setApplicationRoleUndefined: Self = StObject.set(x, "applicationRole", js.undefined)
+      inline def setApplicationRoleUndefined: Self = StObject.set(x, "applicationRole", js.undefined)
       
-      @scala.inline
-      def setFlexContainer(value: IStyle): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+      inline def setFlexContainer(value: IStyle): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexContainerNull: Self = StObject.set(x, "flexContainer", null)
+      inline def setFlexContainerNull: Self = StObject.set(x, "flexContainer", null)
       
-      @scala.inline
-      def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
+      inline def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
       
-      @scala.inline
-      def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: IStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelNull: Self = StObject.set(x, "label", null)
+      inline def setLabelNull: Self = StObject.set(x, "label", null)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

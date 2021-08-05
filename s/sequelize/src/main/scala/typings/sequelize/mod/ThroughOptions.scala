@@ -32,28 +32,21 @@ trait ThroughOptions extends StObject {
 }
 object ThroughOptions {
   
-  @scala.inline
-  def apply(model: Model[js.Any, js.Any, js.Any]): ThroughOptions = {
+  inline def apply(model: Model[js.Any, js.Any, js.Any]): ThroughOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThroughOptions]
   }
   
-  @scala.inline
-  implicit class ThroughOptionsMutableBuilder[Self <: ThroughOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThroughOptions](x: Self) {
     
-    @scala.inline
-    def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: AssociationScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: AssociationScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

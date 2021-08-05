@@ -12,19 +12,15 @@ trait AadOauthTokenResult extends StObject {
 }
 object AadOauthTokenResult {
   
-  @scala.inline
-  def apply(accessToken: String, refreshTokenCache: String): AadOauthTokenResult = {
+  inline def apply(accessToken: String, refreshTokenCache: String): AadOauthTokenResult = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], refreshTokenCache = refreshTokenCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[AadOauthTokenResult]
   }
   
-  @scala.inline
-  implicit class AadOauthTokenResultMutableBuilder[Self <: AadOauthTokenResult] (val x: Self) extends AnyVal {
+  extension [Self <: AadOauthTokenResult](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenCache(value: String): Self = StObject.set(x, "refreshTokenCache", value.asInstanceOf[js.Any])
+    inline def setRefreshTokenCache(value: String): Self = StObject.set(x, "refreshTokenCache", value.asInstanceOf[js.Any])
   }
 }

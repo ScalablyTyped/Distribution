@@ -18,28 +18,21 @@ trait ListOperationsResponse extends StObject {
 }
 object ListOperationsResponse {
   
-  @scala.inline
-  def apply(): ListOperationsResponse = {
+  inline def apply(): ListOperationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOperationsResponse]
   }
   
-  @scala.inline
-  implicit class ListOperationsResponseMutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOperationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOperations(value: OperationSummaryList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationSummaryList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: OperationSummary*): Self = StObject.set(x, "Operations", js.Array(value :_*))
   }
 }

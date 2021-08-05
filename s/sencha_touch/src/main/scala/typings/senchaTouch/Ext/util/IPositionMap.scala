@@ -21,25 +21,19 @@ trait IPositionMap
 }
 object IPositionMap {
   
-  @scala.inline
-  def apply(): IPositionMap = {
+  inline def apply(): IPositionMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPositionMap]
   }
   
-  @scala.inline
-  implicit class IPositionMapMutableBuilder[Self <: IPositionMap] (val x: Self) extends AnyVal {
+  extension [Self <: IPositionMap](x: Self) {
     
-    @scala.inline
-    def setGetMinimumHeight(value: () => Double): Self = StObject.set(x, "getMinimumHeight", js.Any.fromFunction0(value))
+    inline def setGetMinimumHeight(value: () => Double): Self = StObject.set(x, "getMinimumHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinimumHeightUndefined: Self = StObject.set(x, "getMinimumHeight", js.undefined)
+    inline def setGetMinimumHeightUndefined: Self = StObject.set(x, "getMinimumHeight", js.undefined)
     
-    @scala.inline
-    def setSetMinimumHeight(value: /* minimumHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimumHeight", js.Any.fromFunction1(value))
+    inline def setSetMinimumHeight(value: /* minimumHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimumHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMinimumHeightUndefined: Self = StObject.set(x, "setMinimumHeight", js.undefined)
+    inline def setSetMinimumHeightUndefined: Self = StObject.set(x, "setMinimumHeight", js.undefined)
   }
 }

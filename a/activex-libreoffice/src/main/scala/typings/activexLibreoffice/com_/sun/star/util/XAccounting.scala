@@ -19,8 +19,7 @@ trait XAccounting
 }
 object XAccounting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     estimateUsage: () => Double,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XAccounting {
     __obj.asInstanceOf[XAccounting]
   }
   
-  @scala.inline
-  implicit class XAccountingMutableBuilder[Self <: XAccounting] (val x: Self) extends AnyVal {
+  extension [Self <: XAccounting](x: Self) {
     
-    @scala.inline
-    def setEstimateUsage(value: () => Double): Self = StObject.set(x, "estimateUsage", js.Any.fromFunction0(value))
+    inline def setEstimateUsage(value: () => Double): Self = StObject.set(x, "estimateUsage", js.Any.fromFunction0(value))
   }
 }

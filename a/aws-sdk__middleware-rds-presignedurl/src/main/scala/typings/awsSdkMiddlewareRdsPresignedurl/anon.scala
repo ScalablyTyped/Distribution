@@ -16,23 +16,18 @@ object anon {
   }
   object AccessKeyId {
     
-    @scala.inline
-    def apply(accessKeyId: String, secretAccessKey: String, sessionToken: String): AccessKeyId = {
+    inline def apply(accessKeyId: String, secretAccessKey: String, sessionToken: String): AccessKeyId = {
       val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], secretAccessKey = secretAccessKey.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessKeyId]
     }
     
-    @scala.inline
-    implicit class AccessKeyIdMutableBuilder[Self <: AccessKeyId] (val x: Self) extends AnyVal {
+    extension [Self <: AccessKeyId](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,23 +41,18 @@ object anon {
   }
   object Hostname {
     
-    @scala.inline
-    def apply(hostname: String, path: String, protocol: String): Hostname = {
+    inline def apply(hostname: String, path: String, protocol: String): Hostname = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Hostname]
     }
     
-    @scala.inline
-    implicit class HostnameMutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
+    extension [Self <: Hostname](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     }
   }
 }

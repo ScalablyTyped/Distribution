@@ -10,16 +10,13 @@ trait ICoreCursorFactory extends StObject {
 }
 object ICoreCursorFactory {
   
-  @scala.inline
-  def apply(createCursor: (CoreCursorType, Double) => CoreCursor): ICoreCursorFactory = {
+  inline def apply(createCursor: (CoreCursorType, Double) => CoreCursor): ICoreCursorFactory = {
     val __obj = js.Dynamic.literal(createCursor = js.Any.fromFunction2(createCursor))
     __obj.asInstanceOf[ICoreCursorFactory]
   }
   
-  @scala.inline
-  implicit class ICoreCursorFactoryMutableBuilder[Self <: ICoreCursorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: ICoreCursorFactory](x: Self) {
     
-    @scala.inline
-    def setCreateCursor(value: (CoreCursorType, Double) => CoreCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction2(value))
+    inline def setCreateCursor(value: (CoreCursorType, Double) => CoreCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction2(value))
   }
 }

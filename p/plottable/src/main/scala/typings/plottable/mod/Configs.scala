@@ -13,12 +13,10 @@ object Configs {
   @JSImport("plottable", "Configs.ADD_TITLE_ELEMENTS")
   @js.native
   def ADD_TITLE_ELEMENTS: Boolean = js.native
-  @scala.inline
-  def ADD_TITLE_ELEMENTS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD_TITLE_ELEMENTS")(x.asInstanceOf[js.Any])
+  inline def ADD_TITLE_ELEMENTS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD_TITLE_ELEMENTS")(x.asInstanceOf[js.Any])
   
   @JSImport("plottable", "Configs.SHOW_WARNINGS")
   @js.native
   def SHOW_WARNINGS: Boolean = js.native
-  @scala.inline
-  def SHOW_WARNINGS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_WARNINGS")(x.asInstanceOf[js.Any])
+  inline def SHOW_WARNINGS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_WARNINGS")(x.asInstanceOf[js.Any])
 }

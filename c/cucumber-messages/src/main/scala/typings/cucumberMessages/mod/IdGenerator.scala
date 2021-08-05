@@ -11,9 +11,7 @@ object IdGenerator {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def incrementing(): NewId = ^.asInstanceOf[js.Dynamic].applyDynamic("incrementing")().asInstanceOf[NewId]
+  inline def incrementing(): NewId = ^.asInstanceOf[js.Dynamic].applyDynamic("incrementing")().asInstanceOf[NewId]
   
-  @scala.inline
-  def uuid(): NewId = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[NewId]
+  inline def uuid(): NewId = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid")().asInstanceOf[NewId]
 }

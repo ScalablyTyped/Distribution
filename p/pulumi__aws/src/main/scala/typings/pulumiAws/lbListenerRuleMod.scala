@@ -67,21 +67,16 @@ object lbListenerRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerRuleState): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerRuleState, opts: CustomResourceOptions): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
+    inline def get(name: String, id: Input[ID]): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
+    inline def get(name: String, id: Input[ID], state: ListenerRuleState): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
+    inline def get(name: String, id: Input[ID], state: ListenerRuleState, opts: CustomResourceOptions): ListenerRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerRule]
     
     /**
       * Returns true if the given object is an instance of ListenerRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lb/listenerRule.ListenerRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lb/listenerRule.ListenerRule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lb/listenerRule.ListenerRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lb/listenerRule.ListenerRule */ Boolean]
   }
   
   trait ListenerRuleArgs extends StObject {
@@ -108,8 +103,7 @@ object lbListenerRuleMod {
   }
   object ListenerRuleArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actions: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]]],
       conditions: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]]],
       listenerArn: Input[String]
@@ -118,29 +112,21 @@ object lbListenerRuleMod {
       __obj.asInstanceOf[ListenerRuleArgs]
     }
     
-    @scala.inline
-    implicit class ListenerRuleArgsMutableBuilder[Self <: ListenerRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerRuleArgs](x: Self) {
       
-      @scala.inline
-      def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setConditions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       
-      @scala.inline
-      def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
+      inline def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
   
@@ -173,50 +159,36 @@ object lbListenerRuleMod {
   }
   object ListenerRuleState {
     
-    @scala.inline
-    def apply(): ListenerRuleState = {
+    inline def apply(): ListenerRuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListenerRuleState]
     }
     
-    @scala.inline
-    implicit class ListenerRuleStateMutableBuilder[Self <: ListenerRuleState] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerRuleState](x: Self) {
       
-      @scala.inline
-      def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleAction]*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setConditions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]]]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+      inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
       
-      @scala.inline
-      def setConditionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: Input[typings.pulumiAws.inputMod.lb.ListenerRuleCondition]*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       
-      @scala.inline
-      def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
+      inline def setListenerArn(value: Input[String]): Self = StObject.set(x, "listenerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerArnUndefined: Self = StObject.set(x, "listenerArn", js.undefined)
+      inline def setListenerArnUndefined: Self = StObject.set(x, "listenerArn", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
 }

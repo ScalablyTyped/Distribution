@@ -25,55 +25,39 @@ trait MapStyleItemStylers
 }
 object MapStyleItemStylers {
   
-  @scala.inline
-  def apply(): MapStyleItemStylers = {
+  inline def apply(): MapStyleItemStylers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapStyleItemStylers]
   }
   
-  @scala.inline
-  implicit class MapStyleItemStylersMutableBuilder[Self <: MapStyleItemStylers] (val x: Self) extends AnyVal {
+  extension [Self <: MapStyleItemStylers](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setCurZoomRegion(value: String): Self = StObject.set(x, "curZoomRegion", value.asInstanceOf[js.Any])
+    inline def setCurZoomRegion(value: String): Self = StObject.set(x, "curZoomRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurZoomRegionId(value: String): Self = StObject.set(x, "curZoomRegionId", value.asInstanceOf[js.Any])
+    inline def setCurZoomRegionId(value: String): Self = StObject.set(x, "curZoomRegionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurZoomRegionIdUndefined: Self = StObject.set(x, "curZoomRegionId", js.undefined)
+    inline def setCurZoomRegionIdUndefined: Self = StObject.set(x, "curZoomRegionId", js.undefined)
     
-    @scala.inline
-    def setCurZoomRegionUndefined: Self = StObject.set(x, "curZoomRegion", js.undefined)
+    inline def setCurZoomRegionUndefined: Self = StObject.set(x, "curZoomRegion", js.undefined)
     
-    @scala.inline
-    def setFontsize(value: String): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
+    inline def setFontsize(value: String): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
+    inline def setFontsizeUndefined: Self = StObject.set(x, "fontsize", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
-    @scala.inline
-    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

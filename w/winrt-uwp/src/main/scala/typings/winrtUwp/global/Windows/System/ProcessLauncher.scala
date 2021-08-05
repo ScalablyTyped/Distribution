@@ -19,6 +19,5 @@ object ProcessLauncher {
   @JSGlobal("Windows.System.ProcessLauncher.runToCompletionAsync")
   @js.native
   def runToCompletionAsync: js.Any = js.native
-  @scala.inline
-  def runToCompletionAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runToCompletionAsync")(x.asInstanceOf[js.Any])
+  inline def runToCompletionAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runToCompletionAsync")(x.asInstanceOf[js.Any])
 }

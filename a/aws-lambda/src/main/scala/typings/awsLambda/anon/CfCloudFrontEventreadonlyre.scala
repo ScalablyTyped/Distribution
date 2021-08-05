@@ -10,16 +10,13 @@ trait CfCloudFrontEventreadonlyre extends StObject {
 }
 object CfCloudFrontEventreadonlyre {
   
-  @scala.inline
-  def apply(cf: CloudFrontEventreadonlyre): CfCloudFrontEventreadonlyre = {
+  inline def apply(cf: CloudFrontEventreadonlyre): CfCloudFrontEventreadonlyre = {
     val __obj = js.Dynamic.literal(cf = cf.asInstanceOf[js.Any])
     __obj.asInstanceOf[CfCloudFrontEventreadonlyre]
   }
   
-  @scala.inline
-  implicit class CfCloudFrontEventreadonlyreMutableBuilder[Self <: CfCloudFrontEventreadonlyre] (val x: Self) extends AnyVal {
+  extension [Self <: CfCloudFrontEventreadonlyre](x: Self) {
     
-    @scala.inline
-    def setCf(value: CloudFrontEventreadonlyre): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
+    inline def setCf(value: CloudFrontEventreadonlyre): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
   }
 }

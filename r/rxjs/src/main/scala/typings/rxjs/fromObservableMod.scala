@@ -19,19 +19,15 @@ object fromObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](
+    inline def create[T](
       ish: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
     ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ish.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T](
+    inline def create[T](
       ish: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(ish.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](ish: ArrayLike[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ish.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def create[T, R](
+    inline def create[T, R](ish: ArrayLike[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ish.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T, R](
       ish: ArrayLike[T],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(ish.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]

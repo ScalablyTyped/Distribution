@@ -19,6 +19,5 @@ object NoBorderInput {
   @JSImport("wix-style-react", "NoBorderInput.StatusError")
   @js.native
   def StatusError: InputStatusError = js.native
-  @scala.inline
-  def StatusError_=(x: InputStatusError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StatusError")(x.asInstanceOf[js.Any])
+  inline def StatusError_=(x: InputStatusError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StatusError")(x.asInstanceOf[js.Any])
 }

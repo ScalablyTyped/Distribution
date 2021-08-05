@@ -32,49 +32,35 @@ trait FillOpacity extends StObject {
 }
 object FillOpacity {
   
-  @scala.inline
-  def apply(): FillOpacity = {
+  inline def apply(): FillOpacity = {
     val __obj = js.Dynamic.literal(color = 1, fill = 1, fillOpacity = 1, opacity = 1, shape = 1, size = 1, stroke = 1, strokeOpacity = 1, strokeWidth = 1, text = 1, x = 1, y = 1)
     __obj.asInstanceOf[FillOpacity]
   }
   
-  @scala.inline
-  implicit class FillOpacityMutableBuilder[Self <: FillOpacity] (val x: Self) extends AnyVal {
+  extension [Self <: FillOpacity](x: Self) {
     
-    @scala.inline
-    def setColor(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacity(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStroke(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeOpacity(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    inline def setStrokeOpacity(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait TypeofSwitch extends StObject {
 }
 object TypeofSwitch {
   
-  @scala.inline
-  def apply(extend: js.Object => Switch, fn: Switch): TypeofSwitch = {
+  inline def apply(extend: js.Object => Switch, fn: Switch): TypeofSwitch = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSwitch]
   }
   
-  @scala.inline
-  implicit class TypeofSwitchMutableBuilder[Self <: TypeofSwitch] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSwitch](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Switch): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Switch): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Switch): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Switch): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

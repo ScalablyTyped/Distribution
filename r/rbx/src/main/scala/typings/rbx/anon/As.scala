@@ -11,19 +11,15 @@ trait As[TAsComponent /* <: ReactType[js.Any] */] extends StObject {
 }
 object As {
   
-  @scala.inline
-  def apply[TAsComponent /* <: ReactType[js.Any] */](): As[TAsComponent] = {
+  inline def apply[TAsComponent /* <: ReactType[js.Any] */](): As[TAsComponent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[As[TAsComponent]]
   }
   
-  @scala.inline
-  implicit class AsMutableBuilder[Self <: As[?], TAsComponent /* <: ReactType[js.Any] */] (val x: Self & As[TAsComponent]) extends AnyVal {
+  extension [Self <: As[?], TAsComponent /* <: ReactType[js.Any] */](x: Self & As[TAsComponent]) {
     
-    @scala.inline
-    def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
   }
 }

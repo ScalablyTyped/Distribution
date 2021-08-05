@@ -48,61 +48,43 @@ trait BotAliasMetadata extends StObject {
 }
 object BotAliasMetadata {
   
-  @scala.inline
-  def apply(): BotAliasMetadata = {
+  inline def apply(): BotAliasMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BotAliasMetadata]
   }
   
-  @scala.inline
-  implicit class BotAliasMetadataMutableBuilder[Self <: BotAliasMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BotAliasMetadata](x: Self) {
     
-    @scala.inline
-    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+    inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
+    inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
     
-    @scala.inline
-    def setBotVersion(value: Version): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
+    inline def setBotVersion(value: Version): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
+    inline def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setConversationLogs(value: ConversationLogsResponse): Self = StObject.set(x, "conversationLogs", value.asInstanceOf[js.Any])
+    inline def setConversationLogs(value: ConversationLogsResponse): Self = StObject.set(x, "conversationLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
+    inline def setConversationLogsUndefined: Self = StObject.set(x, "conversationLogs", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
+    inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
-    @scala.inline
-    def setName(value: AliasName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AliasName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

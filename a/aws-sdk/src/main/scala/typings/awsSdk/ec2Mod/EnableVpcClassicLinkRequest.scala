@@ -18,22 +18,17 @@ trait EnableVpcClassicLinkRequest extends StObject {
 }
 object EnableVpcClassicLinkRequest {
   
-  @scala.inline
-  def apply(VpcId: VpcId): EnableVpcClassicLinkRequest = {
+  inline def apply(VpcId: VpcId): EnableVpcClassicLinkRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableVpcClassicLinkRequest]
   }
   
-  @scala.inline
-  implicit class EnableVpcClassicLinkRequestMutableBuilder[Self <: EnableVpcClassicLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableVpcClassicLinkRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

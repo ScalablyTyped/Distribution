@@ -13,8 +13,6 @@ object resizeBilinearMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resizeBilinear[T /* <: Tensor3D | Tensor4D */](images: T | TensorLike, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def resizeBilinear[T /* <: Tensor3D | Tensor4D */](images: T | TensorLike, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def resizeBilinear[T /* <: Tensor3D | Tensor4D */](images: T | TensorLike, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def resizeBilinear[T /* <: Tensor3D | Tensor4D */](images: T | TensorLike, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
 }

@@ -16,8 +16,7 @@ trait ReadonlyPromiseListApiKey extends StObject {
 }
 object ReadonlyPromiseListApiKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[ListApiKeysResponse | js.Any],
     `finally`: () => js.Promise[ListApiKeysResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseListApiKey {
     __obj.asInstanceOf[ReadonlyPromiseListApiKey]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseListApiKeyMutableBuilder[Self <: ReadonlyPromiseListApiKey] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseListApiKey](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[ListApiKeysResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[ListApiKeysResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[ListApiKeysResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[ListApiKeysResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

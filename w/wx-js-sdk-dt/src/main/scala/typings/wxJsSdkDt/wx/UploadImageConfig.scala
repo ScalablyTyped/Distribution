@@ -26,25 +26,19 @@ trait UploadImageConfig
 }
 object UploadImageConfig {
   
-  @scala.inline
-  def apply(localId: String, success: js.Any => Unit): UploadImageConfig = {
+  inline def apply(localId: String, success: js.Any => Unit): UploadImageConfig = {
     val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[UploadImageConfig]
   }
   
-  @scala.inline
-  implicit class UploadImageConfigMutableBuilder[Self <: UploadImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: UploadImageConfig](x: Self) {
     
-    @scala.inline
-    def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
+    inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsShowProgressTipsUndefined: Self = StObject.set(x, "isShowProgressTips", js.undefined)
+    inline def setIsShowProgressTipsUndefined: Self = StObject.set(x, "isShowProgressTips", js.undefined)
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

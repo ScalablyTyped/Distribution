@@ -14,20 +14,16 @@ object anon {
   }
   object Peek {
     
-    @scala.inline
-    def apply[TPeek, TRewind](peek: () => TPeek, rewind: () => TRewind): Peek[TPeek, TRewind] = {
+    inline def apply[TPeek, TRewind](peek: () => TPeek, rewind: () => TRewind): Peek[TPeek, TRewind] = {
       val __obj = js.Dynamic.literal(peek = js.Any.fromFunction0(peek), rewind = js.Any.fromFunction0(rewind))
       __obj.asInstanceOf[Peek[TPeek, TRewind]]
     }
     
-    @scala.inline
-    implicit class PeekMutableBuilder[Self <: Peek[?, ?], TPeek, TRewind] (val x: Self & (Peek[TPeek, TRewind])) extends AnyVal {
+    extension [Self <: Peek[?, ?], TPeek, TRewind](x: Self & (Peek[TPeek, TRewind])) {
       
-      @scala.inline
-      def setPeek(value: () => TPeek): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => TPeek): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRewind(value: () => TRewind): Self = StObject.set(x, "rewind", js.Any.fromFunction0(value))
+      inline def setRewind(value: () => TRewind): Self = StObject.set(x, "rewind", js.Any.fromFunction0(value))
     }
   }
 }

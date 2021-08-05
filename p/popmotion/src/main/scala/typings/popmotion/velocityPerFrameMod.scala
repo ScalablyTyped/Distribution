@@ -10,6 +10,5 @@ object velocityPerFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def velocityPerFrame(xps: Double, frameDuration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("velocityPerFrame")(xps.asInstanceOf[js.Any], frameDuration.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def velocityPerFrame(xps: Double, frameDuration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("velocityPerFrame")(xps.asInstanceOf[js.Any], frameDuration.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

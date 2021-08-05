@@ -13,16 +13,13 @@ trait RequestPaymentConfiguration extends StObject {
 }
 object RequestPaymentConfiguration {
   
-  @scala.inline
-  def apply(Payer: Payer): RequestPaymentConfiguration = {
+  inline def apply(Payer: Payer): RequestPaymentConfiguration = {
     val __obj = js.Dynamic.literal(Payer = Payer.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPaymentConfiguration]
   }
   
-  @scala.inline
-  implicit class RequestPaymentConfigurationMutableBuilder[Self <: RequestPaymentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RequestPaymentConfiguration](x: Self) {
     
-    @scala.inline
-    def setPayer(value: Payer): Self = StObject.set(x, "Payer", value.asInstanceOf[js.Any])
+    inline def setPayer(value: Payer): Self = StObject.set(x, "Payer", value.asInstanceOf[js.Any])
   }
 }

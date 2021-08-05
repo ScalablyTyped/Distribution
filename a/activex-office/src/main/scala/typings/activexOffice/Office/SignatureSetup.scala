@@ -16,7 +16,7 @@ trait SignatureSetup extends StObject {
   
   val Id: String
   
-  @JSName("Office.SignatureSetup_typekey")
+  /* private */ @JSName("Office.SignatureSetup_typekey")
   var OfficeDotSignatureSetup_typekey: SignatureSetup
   
   val ReadOnly: Boolean
@@ -35,8 +35,7 @@ trait SignatureSetup extends StObject {
 }
 object SignatureSetup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdditionalXml: String,
     AllowComments: Boolean,
     Application: js.Any,
@@ -56,46 +55,32 @@ object SignatureSetup {
     __obj.asInstanceOf[SignatureSetup]
   }
   
-  @scala.inline
-  implicit class SignatureSetupMutableBuilder[Self <: SignatureSetup] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureSetup](x: Self) {
     
-    @scala.inline
-    def setAdditionalXml(value: String): Self = StObject.set(x, "AdditionalXml", value.asInstanceOf[js.Any])
+    inline def setAdditionalXml(value: String): Self = StObject.set(x, "AdditionalXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowComments(value: Boolean): Self = StObject.set(x, "AllowComments", value.asInstanceOf[js.Any])
+    inline def setAllowComments(value: Boolean): Self = StObject.set(x, "AllowComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotSignatureSetup_typekey(value: SignatureSetup): Self = StObject.set(x, "Office.SignatureSetup_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotSignatureSetup_typekey(value: SignatureSetup): Self = StObject.set(x, "Office.SignatureSetup_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSignDate(value: Boolean): Self = StObject.set(x, "ShowSignDate", value.asInstanceOf[js.Any])
+    inline def setShowSignDate(value: Boolean): Self = StObject.set(x, "ShowSignDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProvider(value: String): Self = StObject.set(x, "SignatureProvider", value.asInstanceOf[js.Any])
+    inline def setSignatureProvider(value: String): Self = StObject.set(x, "SignatureProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningInstructions(value: String): Self = StObject.set(x, "SigningInstructions", value.asInstanceOf[js.Any])
+    inline def setSigningInstructions(value: String): Self = StObject.set(x, "SigningInstructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedSigner(value: String): Self = StObject.set(x, "SuggestedSigner", value.asInstanceOf[js.Any])
+    inline def setSuggestedSigner(value: String): Self = StObject.set(x, "SuggestedSigner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedSignerEmail(value: String): Self = StObject.set(x, "SuggestedSignerEmail", value.asInstanceOf[js.Any])
+    inline def setSuggestedSignerEmail(value: String): Self = StObject.set(x, "SuggestedSignerEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedSignerLine2(value: String): Self = StObject.set(x, "SuggestedSignerLine2", value.asInstanceOf[js.Any])
+    inline def setSuggestedSignerLine2(value: String): Self = StObject.set(x, "SuggestedSignerLine2", value.asInstanceOf[js.Any])
   }
 }

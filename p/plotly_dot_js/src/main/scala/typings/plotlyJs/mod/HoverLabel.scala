@@ -28,8 +28,7 @@ trait HoverLabel
 }
 object HoverLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     align: left | right | auto,
     bgcolor: String,
     bordercolor: String,
@@ -40,13 +39,10 @@ object HoverLabel {
     __obj.asInstanceOf[HoverLabel]
   }
   
-  @scala.inline
-  implicit class HoverLabelMutableBuilder[Self <: HoverLabel] (val x: Self) extends AnyVal {
+  extension [Self <: HoverLabel](x: Self) {
     
-    @scala.inline
-    def setAlign(value: left | right | auto): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | right | auto): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamelength(value: Double): Self = StObject.set(x, "namelength", value.asInstanceOf[js.Any])
+    inline def setNamelength(value: Double): Self = StObject.set(x, "namelength", value.asInstanceOf[js.Any])
   }
 }

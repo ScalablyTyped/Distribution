@@ -14,28 +14,21 @@ trait NotIn extends StObject {
 }
 object NotIn {
   
-  @scala.inline
-  def apply(close: String, open: String): NotIn = {
+  inline def apply(close: String, open: String): NotIn = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotIn]
   }
   
-  @scala.inline
-  implicit class NotInMutableBuilder[Self <: NotIn] (val x: Self) extends AnyVal {
+  extension [Self <: NotIn](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotIn(value: js.Array[String]): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
+    inline def setNotIn(value: js.Array[String]): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
+    inline def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
     
-    @scala.inline
-    def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value :_*))
+    inline def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value :_*))
     
-    @scala.inline
-    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

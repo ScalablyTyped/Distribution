@@ -31,20 +31,16 @@ object instanceID {
   }
   object DeleteTokenParams {
     
-    @scala.inline
-    def apply(authorizedEntity: String, scope: String): DeleteTokenParams = {
+    inline def apply(authorizedEntity: String, scope: String): DeleteTokenParams = {
       val __obj = js.Dynamic.literal(authorizedEntity = authorizedEntity.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteTokenParams]
     }
     
-    @scala.inline
-    implicit class DeleteTokenParamsMutableBuilder[Self <: DeleteTokenParams] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteTokenParams](x: Self) {
       
-      @scala.inline
-      def setAuthorizedEntity(value: String): Self = StObject.set(x, "authorizedEntity", value.asInstanceOf[js.Any])
+      inline def setAuthorizedEntity(value: String): Self = StObject.set(x, "authorizedEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,26 +66,20 @@ object instanceID {
   }
   object TokenParams {
     
-    @scala.inline
-    def apply(authorizedEntity: String, scope: String): TokenParams = {
+    inline def apply(authorizedEntity: String, scope: String): TokenParams = {
       val __obj = js.Dynamic.literal(authorizedEntity = authorizedEntity.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenParams]
     }
     
-    @scala.inline
-    implicit class TokenParamsMutableBuilder[Self <: TokenParams] (val x: Self) extends AnyVal {
+    extension [Self <: TokenParams](x: Self) {
       
-      @scala.inline
-      def setAuthorizedEntity(value: String): Self = StObject.set(x, "authorizedEntity", value.asInstanceOf[js.Any])
+      inline def setAuthorizedEntity(value: String): Self = StObject.set(x, "authorizedEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,31 +23,23 @@ trait InferICD10CMResponse extends StObject {
 }
 object InferICD10CMResponse {
   
-  @scala.inline
-  def apply(Entities: ICD10CMEntityList): InferICD10CMResponse = {
+  inline def apply(Entities: ICD10CMEntityList): InferICD10CMResponse = {
     val __obj = js.Dynamic.literal(Entities = Entities.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferICD10CMResponse]
   }
   
-  @scala.inline
-  implicit class InferICD10CMResponseMutableBuilder[Self <: InferICD10CMResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InferICD10CMResponse](x: Self) {
     
-    @scala.inline
-    def setEntities(value: ICD10CMEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: ICD10CMEntityList): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: ICD10CMEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: ICD10CMEntity*): Self = StObject.set(x, "Entities", js.Array(value :_*))
     
-    @scala.inline
-    def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
+    inline def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
+    inline def setModelVersionUndefined: Self = StObject.set(x, "ModelVersion", js.undefined)
     
-    @scala.inline
-    def setPaginationToken(value: String): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: String): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
   }
 }

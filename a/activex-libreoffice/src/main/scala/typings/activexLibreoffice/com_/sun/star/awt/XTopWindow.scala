@@ -28,8 +28,7 @@ trait XTopWindow
 }
 object XTopWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addTopWindowListener: XTopWindowListener => Unit,
     queryInterface: `type` => js.Any,
@@ -43,22 +42,16 @@ object XTopWindow {
     __obj.asInstanceOf[XTopWindow]
   }
   
-  @scala.inline
-  implicit class XTopWindowMutableBuilder[Self <: XTopWindow] (val x: Self) extends AnyVal {
+  extension [Self <: XTopWindow](x: Self) {
     
-    @scala.inline
-    def setAddTopWindowListener(value: XTopWindowListener => Unit): Self = StObject.set(x, "addTopWindowListener", js.Any.fromFunction1(value))
+    inline def setAddTopWindowListener(value: XTopWindowListener => Unit): Self = StObject.set(x, "addTopWindowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTopWindowListener(value: XTopWindowListener => Unit): Self = StObject.set(x, "removeTopWindowListener", js.Any.fromFunction1(value))
+    inline def setRemoveTopWindowListener(value: XTopWindowListener => Unit): Self = StObject.set(x, "removeTopWindowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMenuBar(value: XMenuBar => Unit): Self = StObject.set(x, "setMenuBar", js.Any.fromFunction1(value))
+    inline def setSetMenuBar(value: XMenuBar => Unit): Self = StObject.set(x, "setMenuBar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToBack(value: () => Unit): Self = StObject.set(x, "toBack", js.Any.fromFunction0(value))
+    inline def setToBack(value: () => Unit): Self = StObject.set(x, "toBack", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToFront(value: () => Unit): Self = StObject.set(x, "toFront", js.Any.fromFunction0(value))
+    inline def setToFront(value: () => Unit): Self = StObject.set(x, "toFront", js.Any.fromFunction0(value))
   }
 }

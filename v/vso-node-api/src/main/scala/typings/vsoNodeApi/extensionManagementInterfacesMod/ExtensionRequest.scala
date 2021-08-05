@@ -45,8 +45,7 @@ trait ExtensionRequest extends StObject {
 }
 object ExtensionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     rejectMessage: String,
     requestDate: Date,
     requestMessage: String,
@@ -59,28 +58,20 @@ object ExtensionRequest {
     __obj.asInstanceOf[ExtensionRequest]
   }
   
-  @scala.inline
-  implicit class ExtensionRequestMutableBuilder[Self <: ExtensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionRequest](x: Self) {
     
-    @scala.inline
-    def setRejectMessage(value: String): Self = StObject.set(x, "rejectMessage", value.asInstanceOf[js.Any])
+    inline def setRejectMessage(value: String): Self = StObject.set(x, "rejectMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestDate(value: Date): Self = StObject.set(x, "requestDate", value.asInstanceOf[js.Any])
+    inline def setRequestDate(value: Date): Self = StObject.set(x, "requestDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMessage(value: String): Self = StObject.set(x, "requestMessage", value.asInstanceOf[js.Any])
+    inline def setRequestMessage(value: String): Self = StObject.set(x, "requestMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestState(value: ExtensionRequestState): Self = StObject.set(x, "requestState", value.asInstanceOf[js.Any])
+    inline def setRequestState(value: ExtensionRequestState): Self = StObject.set(x, "requestState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
+    inline def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveDate(value: Date): Self = StObject.set(x, "resolveDate", value.asInstanceOf[js.Any])
+    inline def setResolveDate(value: Date): Self = StObject.set(x, "resolveDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedBy(value: IdentityRef): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
+    inline def setResolvedBy(value: IdentityRef): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
   }
 }

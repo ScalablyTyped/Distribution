@@ -40,109 +40,75 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAbide(value: AbideOptions): Self = StObject.set(x, "abide", value.asInstanceOf[js.Any])
+    inline def setAbide(value: AbideOptions): Self = StObject.set(x, "abide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbideUndefined: Self = StObject.set(x, "abide", js.undefined)
+    inline def setAbideUndefined: Self = StObject.set(x, "abide", js.undefined)
     
-    @scala.inline
-    def setAccordion(value: AccordionOptions): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
+    inline def setAccordion(value: AccordionOptions): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
+    inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
     
-    @scala.inline
-    def setAlert(value: AlertOptions): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+    inline def setAlert(value: AlertOptions): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
+    inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
     
-    @scala.inline
-    def setClearing(value: ClearingOptions): Self = StObject.set(x, "clearing", value.asInstanceOf[js.Any])
+    inline def setClearing(value: ClearingOptions): Self = StObject.set(x, "clearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearingUndefined: Self = StObject.set(x, "clearing", js.undefined)
+    inline def setClearingUndefined: Self = StObject.set(x, "clearing", js.undefined)
     
-    @scala.inline
-    def setDropdown(value: DropdownOptions): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: DropdownOptions): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+    inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     
-    @scala.inline
-    def setEqualizer(value: EqualizerOptions): Self = StObject.set(x, "equalizer", value.asInstanceOf[js.Any])
+    inline def setEqualizer(value: EqualizerOptions): Self = StObject.set(x, "equalizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualizerUndefined: Self = StObject.set(x, "equalizer", js.undefined)
+    inline def setEqualizerUndefined: Self = StObject.set(x, "equalizer", js.undefined)
     
-    @scala.inline
-    def setInterchange(value: InterchangeOptions): Self = StObject.set(x, "interchange", value.asInstanceOf[js.Any])
+    inline def setInterchange(value: InterchangeOptions): Self = StObject.set(x, "interchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterchangeUndefined: Self = StObject.set(x, "interchange", js.undefined)
+    inline def setInterchangeUndefined: Self = StObject.set(x, "interchange", js.undefined)
     
-    @scala.inline
-    def setJoyride(value: JoyrideOptions): Self = StObject.set(x, "joyride", value.asInstanceOf[js.Any])
+    inline def setJoyride(value: JoyrideOptions): Self = StObject.set(x, "joyride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoyrideUndefined: Self = StObject.set(x, "joyride", js.undefined)
+    inline def setJoyrideUndefined: Self = StObject.set(x, "joyride", js.undefined)
     
-    @scala.inline
-    def setMagellan(value: MagellanOptions): Self = StObject.set(x, "magellan", value.asInstanceOf[js.Any])
+    inline def setMagellan(value: MagellanOptions): Self = StObject.set(x, "magellan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagellanUndefined: Self = StObject.set(x, "magellan", js.undefined)
+    inline def setMagellanUndefined: Self = StObject.set(x, "magellan", js.undefined)
     
-    @scala.inline
-    def setOffcanvas(value: OffCanvasOptions): Self = StObject.set(x, "offcanvas", value.asInstanceOf[js.Any])
+    inline def setOffcanvas(value: OffCanvasOptions): Self = StObject.set(x, "offcanvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffcanvasUndefined: Self = StObject.set(x, "offcanvas", js.undefined)
+    inline def setOffcanvasUndefined: Self = StObject.set(x, "offcanvas", js.undefined)
     
-    @scala.inline
-    def setOrbit(value: OrbitOptions): Self = StObject.set(x, "orbit", value.asInstanceOf[js.Any])
+    inline def setOrbit(value: OrbitOptions): Self = StObject.set(x, "orbit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrbitUndefined: Self = StObject.set(x, "orbit", js.undefined)
+    inline def setOrbitUndefined: Self = StObject.set(x, "orbit", js.undefined)
     
-    @scala.inline
-    def setReveal(value: RevealOptions): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
+    inline def setReveal(value: RevealOptions): Self = StObject.set(x, "reveal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevealUndefined: Self = StObject.set(x, "reveal", js.undefined)
+    inline def setRevealUndefined: Self = StObject.set(x, "reveal", js.undefined)
     
-    @scala.inline
-    def setSlider(value: SliderOptions): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: SliderOptions): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
+    inline def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
     
-    @scala.inline
-    def setTab(value: TabOptions): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: TabOptions): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
+    inline def setTabUndefined: Self = StObject.set(x, "tab", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: TooltipOptions): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: TooltipOptions): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setTopbar(value: TopbarOptions): Self = StObject.set(x, "topbar", value.asInstanceOf[js.Any])
+    inline def setTopbar(value: TopbarOptions): Self = StObject.set(x, "topbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopbarUndefined: Self = StObject.set(x, "topbar", js.undefined)
+    inline def setTopbarUndefined: Self = StObject.set(x, "topbar", js.undefined)
   }
 }

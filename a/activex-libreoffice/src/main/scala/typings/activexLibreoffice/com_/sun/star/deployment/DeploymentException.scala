@@ -19,16 +19,13 @@ trait DeploymentException
 }
 object DeploymentException {
   
-  @scala.inline
-  def apply(Cause: js.Any, Context: XInterface, Message: String): DeploymentException = {
+  inline def apply(Cause: js.Any, Context: XInterface, Message: String): DeploymentException = {
     val __obj = js.Dynamic.literal(Cause = Cause.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentException]
   }
   
-  @scala.inline
-  implicit class DeploymentExceptionMutableBuilder[Self <: DeploymentException] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentException](x: Self) {
     
-    @scala.inline
-    def setCause(value: js.Any): Self = StObject.set(x, "Cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: js.Any): Self = StObject.set(x, "Cause", value.asInstanceOf[js.Any])
   }
 }

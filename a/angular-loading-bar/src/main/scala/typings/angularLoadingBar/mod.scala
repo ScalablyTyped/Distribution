@@ -28,20 +28,16 @@ object mod extends Shortcut {
     }
     object IRequestShortcutConfig {
       
-      @scala.inline
-      def apply(): IRequestShortcutConfig = {
+      inline def apply(): IRequestShortcutConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IRequestShortcutConfig]
       }
       
-      @scala.inline
-      implicit class IRequestShortcutConfigMutableBuilder[Self <: IRequestShortcutConfig] (val x: Self) extends AnyVal {
+      extension [Self <: IRequestShortcutConfig](x: Self) {
         
-        @scala.inline
-        def setIgnoreLoadingBar(value: Boolean): Self = StObject.set(x, "ignoreLoadingBar", value.asInstanceOf[js.Any])
+        inline def setIgnoreLoadingBar(value: Boolean): Self = StObject.set(x, "ignoreLoadingBar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreLoadingBarUndefined: Self = StObject.set(x, "ignoreLoadingBar", js.undefined)
+        inline def setIgnoreLoadingBarUndefined: Self = StObject.set(x, "ignoreLoadingBar", js.undefined)
       }
     }
     
@@ -118,8 +114,7 @@ object mod extends Shortcut {
       }
       object ILoadingBarProvider {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           complete: () => Unit,
           inc: () => Unit,
           set: Double => Unit,
@@ -130,71 +125,49 @@ object mod extends Shortcut {
           __obj.asInstanceOf[ILoadingBarProvider]
         }
         
-        @scala.inline
-        implicit class ILoadingBarProviderMutableBuilder[Self <: ILoadingBarProvider] (val x: Self) extends AnyVal {
+        extension [Self <: ILoadingBarProvider](x: Self) {
           
-          @scala.inline
-          def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
+          inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
+          inline def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
           
-          @scala.inline
-          def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+          inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setInc(value: () => Unit): Self = StObject.set(x, "inc", js.Any.fromFunction0(value))
+          inline def setInc(value: () => Unit): Self = StObject.set(x, "inc", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setIncludeBar(value: Boolean): Self = StObject.set(x, "includeBar", value.asInstanceOf[js.Any])
+          inline def setIncludeBar(value: Boolean): Self = StObject.set(x, "includeBar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIncludeBarUndefined: Self = StObject.set(x, "includeBar", js.undefined)
+          inline def setIncludeBarUndefined: Self = StObject.set(x, "includeBar", js.undefined)
           
-          @scala.inline
-          def setIncludeSpinner(value: Boolean): Self = StObject.set(x, "includeSpinner", value.asInstanceOf[js.Any])
+          inline def setIncludeSpinner(value: Boolean): Self = StObject.set(x, "includeSpinner", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIncludeSpinnerUndefined: Self = StObject.set(x, "includeSpinner", js.undefined)
+          inline def setIncludeSpinnerUndefined: Self = StObject.set(x, "includeSpinner", js.undefined)
           
-          @scala.inline
-          def setLatencyThreshold(value: Double): Self = StObject.set(x, "latencyThreshold", value.asInstanceOf[js.Any])
+          inline def setLatencyThreshold(value: Double): Self = StObject.set(x, "latencyThreshold", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLatencyThresholdUndefined: Self = StObject.set(x, "latencyThreshold", js.undefined)
+          inline def setLatencyThresholdUndefined: Self = StObject.set(x, "latencyThreshold", js.undefined)
           
-          @scala.inline
-          def setLoadingBarTemplate(value: String): Self = StObject.set(x, "loadingBarTemplate", value.asInstanceOf[js.Any])
+          inline def setLoadingBarTemplate(value: String): Self = StObject.set(x, "loadingBarTemplate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLoadingBarTemplateUndefined: Self = StObject.set(x, "loadingBarTemplate", js.undefined)
+          inline def setLoadingBarTemplateUndefined: Self = StObject.set(x, "loadingBarTemplate", js.undefined)
           
-          @scala.inline
-          def setParentSelector(value: String): Self = StObject.set(x, "parentSelector", value.asInstanceOf[js.Any])
+          inline def setParentSelector(value: String): Self = StObject.set(x, "parentSelector", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setParentSelectorUndefined: Self = StObject.set(x, "parentSelector", js.undefined)
+          inline def setParentSelectorUndefined: Self = StObject.set(x, "parentSelector", js.undefined)
           
-          @scala.inline
-          def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+          inline def setSet(value: Double => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setSpinnerTemplate(value: String): Self = StObject.set(x, "spinnerTemplate", value.asInstanceOf[js.Any])
+          inline def setSpinnerTemplate(value: String): Self = StObject.set(x, "spinnerTemplate", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpinnerTemplateUndefined: Self = StObject.set(x, "spinnerTemplate", js.undefined)
+          inline def setSpinnerTemplateUndefined: Self = StObject.set(x, "spinnerTemplate", js.undefined)
           
-          @scala.inline
-          def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+          inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setStartSize(value: Double): Self = StObject.set(x, "startSize", value.asInstanceOf[js.Any])
+          inline def setStartSize(value: Double): Self = StObject.set(x, "startSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStartSizeUndefined: Self = StObject.set(x, "startSize", js.undefined)
+          inline def setStartSizeUndefined: Self = StObject.set(x, "startSize", js.undefined)
           
-          @scala.inline
-          def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
+          inline def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
         }
       }
     }

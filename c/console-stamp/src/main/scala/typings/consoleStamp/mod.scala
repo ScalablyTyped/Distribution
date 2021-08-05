@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(console: js.Object): Unit = ^.asInstanceOf[js.Dynamic].apply(console.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(console: js.Object, options: Colors): Unit = (^.asInstanceOf[js.Dynamic].apply(console.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(console: js.Object): Unit = ^.asInstanceOf[js.Dynamic].apply(console.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(console: js.Object, options: Colors): Unit = (^.asInstanceOf[js.Dynamic].apply(console.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("console-stamp", JSImport.Namespace)
   @js.native

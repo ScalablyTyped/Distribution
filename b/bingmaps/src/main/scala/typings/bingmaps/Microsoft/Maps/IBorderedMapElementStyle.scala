@@ -25,31 +25,23 @@ trait IBorderedMapElementStyle
 }
 object IBorderedMapElementStyle {
   
-  @scala.inline
-  def apply(): IBorderedMapElementStyle = {
+  inline def apply(): IBorderedMapElementStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBorderedMapElementStyle]
   }
   
-  @scala.inline
-  implicit class IBorderedMapElementStyleMutableBuilder[Self <: IBorderedMapElementStyle] (val x: Self) extends AnyVal {
+  extension [Self <: IBorderedMapElementStyle](x: Self) {
     
-    @scala.inline
-    def setBorderOutlineColor(value: String): Self = StObject.set(x, "borderOutlineColor", value.asInstanceOf[js.Any])
+    inline def setBorderOutlineColor(value: String): Self = StObject.set(x, "borderOutlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderOutlineColorUndefined: Self = StObject.set(x, "borderOutlineColor", js.undefined)
+    inline def setBorderOutlineColorUndefined: Self = StObject.set(x, "borderOutlineColor", js.undefined)
     
-    @scala.inline
-    def setBorderStrokeColor(value: String): Self = StObject.set(x, "borderStrokeColor", value.asInstanceOf[js.Any])
+    inline def setBorderStrokeColor(value: String): Self = StObject.set(x, "borderStrokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderStrokeColorUndefined: Self = StObject.set(x, "borderStrokeColor", js.undefined)
+    inline def setBorderStrokeColorUndefined: Self = StObject.set(x, "borderStrokeColor", js.undefined)
     
-    @scala.inline
-    def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
+    inline def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
+    inline def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
   }
 }

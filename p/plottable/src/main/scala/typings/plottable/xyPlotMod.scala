@@ -24,21 +24,21 @@ object xyPlotMod {
     
     /* private */ def _adjustXDomainOnChangeFromY(): js.Any = js.native
     
-    var _adjustXDomainOnChangeFromYCallback: js.Any = js.native
+    /* private */ var _adjustXDomainOnChangeFromYCallback: js.Any = js.native
     
     /* private */ def _adjustYDomainOnChangeFromX(): js.Any = js.native
     
-    var _adjustYDomainOnChangeFromXCallback: js.Any = js.native
+    /* private */ var _adjustYDomainOnChangeFromXCallback: js.Any = js.native
     
-    var _applyDeferredRenderingTransform: js.Any = js.native
+    /* private */ var _applyDeferredRenderingTransform: js.Any = js.native
     
-    var _autoAdjustXScaleDomain: js.Any = js.native
+    /* private */ var _autoAdjustXScaleDomain: js.Any = js.native
     
-    var _autoAdjustYScaleDomain: js.Any = js.native
+    /* private */ var _autoAdjustYScaleDomain: js.Any = js.native
     
-    var _deferredRenderer: js.Any = js.native
+    /* private */ var _deferredRenderer: js.Any = js.native
     
-    var _deferredRendering: js.Any = js.native
+    /* private */ var _deferredRendering: js.Any = js.native
     
     /* private */ def _makeFilterByProperty(property: js.Any): js.Any = js.native
     
@@ -149,13 +149,11 @@ object xyPlotMod {
     @JSImport("plottable/build/src/plots/xyPlot", "XYPlot._X_KEY")
     @js.native
     def _X_KEY: String = js.native
-    @scala.inline
-    def _X_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X_KEY")(x.asInstanceOf[js.Any])
+    inline def _X_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/xyPlot", "XYPlot._Y_KEY")
     @js.native
     def _Y_KEY: String = js.native
-    @scala.inline
-    def _Y_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y_KEY")(x.asInstanceOf[js.Any])
+    inline def _Y_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y_KEY")(x.asInstanceOf[js.Any])
   }
 }

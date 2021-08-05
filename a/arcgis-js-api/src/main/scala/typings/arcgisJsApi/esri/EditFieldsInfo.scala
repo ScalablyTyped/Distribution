@@ -40,8 +40,7 @@ trait EditFieldsInfo
 }
 object EditFieldsInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     creationDateField: String,
     creatorField: String,
@@ -54,19 +53,14 @@ object EditFieldsInfo {
     __obj.asInstanceOf[EditFieldsInfo]
   }
   
-  @scala.inline
-  implicit class EditFieldsInfoMutableBuilder[Self <: EditFieldsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EditFieldsInfo](x: Self) {
     
-    @scala.inline
-    def setCreationDateField(value: String): Self = StObject.set(x, "creationDateField", value.asInstanceOf[js.Any])
+    inline def setCreationDateField(value: String): Self = StObject.set(x, "creationDateField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorField(value: String): Self = StObject.set(x, "creatorField", value.asInstanceOf[js.Any])
+    inline def setCreatorField(value: String): Self = StObject.set(x, "creatorField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditDateField(value: String): Self = StObject.set(x, "editDateField", value.asInstanceOf[js.Any])
+    inline def setEditDateField(value: String): Self = StObject.set(x, "editDateField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorField(value: String): Self = StObject.set(x, "editorField", value.asInstanceOf[js.Any])
+    inline def setEditorField(value: String): Self = StObject.set(x, "editorField", value.asInstanceOf[js.Any])
   }
 }

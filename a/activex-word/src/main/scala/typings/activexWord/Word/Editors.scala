@@ -18,13 +18,12 @@ trait Editors extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Editors_typekey")
+  /* private */ @JSName("Word.Editors_typekey")
   var WordDotEditors_typekey: Editors
 }
 object Editors {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: js.Any => Editor,
     Application: Application,
     Count: Double,
@@ -38,28 +37,20 @@ object Editors {
     __obj.asInstanceOf[Editors]
   }
   
-  @scala.inline
-  implicit class EditorsMutableBuilder[Self <: Editors] (val x: Self) extends AnyVal {
+  extension [Self <: Editors](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Any => Editor): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Any => Editor): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Editor): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Editor): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotEditors_typekey(value: Editors): Self = StObject.set(x, "Word.Editors_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotEditors_typekey(value: Editors): Self = StObject.set(x, "Word.Editors_typekey", value.asInstanceOf[js.Any])
   }
 }

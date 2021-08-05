@@ -45,8 +45,7 @@ trait IContainer extends StObject {
 }
 object IContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addComponent: Component => Unit,
     findComponent: String => Component,
     getComponents: () => js.Array[Component],
@@ -56,19 +55,14 @@ object IContainer {
     __obj.asInstanceOf[IContainer]
   }
   
-  @scala.inline
-  implicit class IContainerMutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IContainer](x: Self) {
     
-    @scala.inline
-    def setAddComponent(value: Component => Unit): Self = StObject.set(x, "addComponent", js.Any.fromFunction1(value))
+    inline def setAddComponent(value: Component => Unit): Self = StObject.set(x, "addComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindComponent(value: String => Component): Self = StObject.set(x, "findComponent", js.Any.fromFunction1(value))
+    inline def setFindComponent(value: String => Component): Self = StObject.set(x, "findComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetComponents(value: () => js.Array[Component]): Self = StObject.set(x, "getComponents", js.Any.fromFunction0(value))
+    inline def setGetComponents(value: () => js.Array[Component]): Self = StObject.set(x, "getComponents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveComponent(value: Component => Unit): Self = StObject.set(x, "removeComponent", js.Any.fromFunction1(value))
+    inline def setRemoveComponent(value: Component => Unit): Self = StObject.set(x, "removeComponent", js.Any.fromFunction1(value))
   }
 }

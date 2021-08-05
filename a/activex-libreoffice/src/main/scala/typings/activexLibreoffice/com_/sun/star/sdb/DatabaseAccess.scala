@@ -53,8 +53,7 @@ trait DatabaseAccess
 }
 object DatabaseAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConnectInfo: SafeArray[PropertyValue],
     ConnectURL: String,
     IsPasswordRequired: Boolean,
@@ -90,34 +89,24 @@ object DatabaseAccess {
     __obj.asInstanceOf[DatabaseAccess]
   }
   
-  @scala.inline
-  implicit class DatabaseAccessMutableBuilder[Self <: DatabaseAccess] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseAccess](x: Self) {
     
-    @scala.inline
-    def setConnectInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectInfo", value.asInstanceOf[js.Any])
+    inline def setConnectInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectURL(value: String): Self = StObject.set(x, "ConnectURL", value.asInstanceOf[js.Any])
+    inline def setConnectURL(value: String): Self = StObject.set(x, "ConnectURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPasswordRequired(value: Boolean): Self = StObject.set(x, "IsPasswordRequired", value.asInstanceOf[js.Any])
+    inline def setIsPasswordRequired(value: Boolean): Self = StObject.set(x, "IsPasswordRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
+    inline def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableFilter(value: SafeArray[String]): Self = StObject.set(x, "TableFilter", value.asInstanceOf[js.Any])
+    inline def setTableFilter(value: SafeArray[String]): Self = StObject.set(x, "TableFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableTypeFilter(value: SafeArray[String]): Self = StObject.set(x, "TableTypeFilter", value.asInstanceOf[js.Any])
+    inline def setTableTypeFilter(value: SafeArray[String]): Self = StObject.set(x, "TableTypeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

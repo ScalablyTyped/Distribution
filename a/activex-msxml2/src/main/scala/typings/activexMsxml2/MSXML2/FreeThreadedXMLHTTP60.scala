@@ -9,7 +9,7 @@ trait FreeThreadedXMLHTTP60 extends StObject {
   
   def GetCookie(pwszUrl: String, pwszName: String, dwFlags: Double, pcCookies: Double, ppCookies: tagXHRCOOKIE): Unit
   
-  @JSName("MSXML2.FreeThreadedXMLHTTP60_typekey")
+  /* private */ @JSName("MSXML2.FreeThreadedXMLHTTP60_typekey")
   var MSXML2DotFreeThreadedXMLHTTP60_typekey: FreeThreadedXMLHTTP60
   
   def SetCookie(pCookie: tagXHRCOOKIE, pdwCookieState: Double): Unit
@@ -40,8 +40,7 @@ trait FreeThreadedXMLHTTP60 extends StObject {
 }
 object FreeThreadedXMLHTTP60 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCookie: (String, String, Double, Double, tagXHRCOOKIE) => Unit,
     MSXML2DotFreeThreadedXMLHTTP60_typekey: FreeThreadedXMLHTTP60,
     SetCookie: (tagXHRCOOKIE, Double) => Unit,
@@ -59,40 +58,28 @@ object FreeThreadedXMLHTTP60 {
     __obj.asInstanceOf[FreeThreadedXMLHTTP60]
   }
   
-  @scala.inline
-  implicit class FreeThreadedXMLHTTP60MutableBuilder[Self <: FreeThreadedXMLHTTP60] (val x: Self) extends AnyVal {
+  extension [Self <: FreeThreadedXMLHTTP60](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllResponseHeaders(value: String => Unit): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction1(value))
+    inline def setGetAllResponseHeaders(value: String => Unit): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCookie(value: (String, String, Double, Double, tagXHRCOOKIE) => Unit): Self = StObject.set(x, "GetCookie", js.Any.fromFunction5(value))
+    inline def setGetCookie(value: (String, String, Double, Double, tagXHRCOOKIE) => Unit): Self = StObject.set(x, "GetCookie", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetResponseHeader(value: (String, String) => Unit): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction2(value))
+    inline def setGetResponseHeader(value: (String, String) => Unit): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMSXML2DotFreeThreadedXMLHTTP60_typekey(value: FreeThreadedXMLHTTP60): Self = StObject.set(x, "MSXML2.FreeThreadedXMLHTTP60_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotFreeThreadedXMLHTTP60_typekey(value: FreeThreadedXMLHTTP60): Self = StObject.set(x, "MSXML2.FreeThreadedXMLHTTP60_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: (String, String, IXMLHTTPRequest2Callback, String, String, String, String) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction7(value))
+    inline def setOpen(value: (String, String, IXMLHTTPRequest2Callback, String, String, String, String) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setSend(value: (ISequentialStream, Double) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (ISequentialStream, Double) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCookie(value: (tagXHRCOOKIE, Double) => Unit): Self = StObject.set(x, "SetCookie", js.Any.fromFunction2(value))
+    inline def setSetCookie(value: (tagXHRCOOKIE, Double) => Unit): Self = StObject.set(x, "SetCookie", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCustomResponseStream(value: ISequentialStream => Unit): Self = StObject.set(x, "SetCustomResponseStream", js.Any.fromFunction1(value))
+    inline def setSetCustomResponseStream(value: ISequentialStream => Unit): Self = StObject.set(x, "SetCustomResponseStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProperty(value: (XHR_PROPERTY, Double) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
+    inline def setSetProperty(value: (XHR_PROPERTY, Double) => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
+    inline def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
   }
 }

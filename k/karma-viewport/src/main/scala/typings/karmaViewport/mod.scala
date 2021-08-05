@@ -32,20 +32,16 @@ object mod {
     }
     object ConfigOptions {
       
-      @scala.inline
-      def apply(): ConfigOptions = {
+      inline def apply(): ConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      @scala.inline
-      implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConfigOptions](x: Self) {
         
-        @scala.inline
-        def setViewport(value: PartialViewportConfigurat): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+        inline def setViewport(value: PartialViewportConfigurat): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+        inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
       }
     }
   }

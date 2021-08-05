@@ -41,8 +41,7 @@ object concordModulesPluginMod {
   }
   object ConcordModulesPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: typings.enhancedResolve.resolverMod.^ => Unit,
       options: Dictionary[js.Any],
       source: String,
@@ -52,20 +51,15 @@ object concordModulesPluginMod {
       __obj.asInstanceOf[ConcordModulesPlugin]
     }
     
-    @scala.inline
-    implicit class ConcordModulesPluginMutableBuilder[Self <: ConcordModulesPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ConcordModulesPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: Dictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Dictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

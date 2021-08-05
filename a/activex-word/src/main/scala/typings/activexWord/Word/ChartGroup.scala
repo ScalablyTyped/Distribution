@@ -70,6 +70,6 @@ trait ChartGroup extends StObject {
   
   var VaryByCategories: Boolean = js.native
   
-  @JSName("Word.ChartGroup_typekey")
+  /* private */ @JSName("Word.ChartGroup_typekey")
   var WordDotChartGroup_typekey: ChartGroup = js.native
 }

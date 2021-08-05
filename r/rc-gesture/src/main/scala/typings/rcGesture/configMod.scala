@@ -47,8 +47,7 @@ object configMod {
     @JSImport("rc-gesture/lib/config", "PRESS.time")
     @js.native
     def time: Double = js.native
-    @scala.inline
-    def time_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
+    inline def time_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
   }
   
   object SWIPE {
@@ -60,13 +59,11 @@ object configMod {
     @JSImport("rc-gesture/lib/config", "SWIPE.threshold")
     @js.native
     def threshold: Double = js.native
-    @scala.inline
-    def threshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("threshold")(x.asInstanceOf[js.Any])
+    inline def threshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("threshold")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-gesture/lib/config", "SWIPE.velocity")
     @js.native
     def velocity: Double = js.native
-    @scala.inline
-    def velocity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("velocity")(x.asInstanceOf[js.Any])
+    inline def velocity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("velocity")(x.asInstanceOf[js.Any])
   }
 }

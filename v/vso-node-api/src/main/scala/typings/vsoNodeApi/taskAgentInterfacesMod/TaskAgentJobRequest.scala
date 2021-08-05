@@ -50,8 +50,7 @@ trait TaskAgentJobRequest extends StObject {
 }
 object TaskAgentJobRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assignTime: Date,
     data: StringDictionary[String],
     definition: TaskOrchestrationOwner,
@@ -77,73 +76,50 @@ object TaskAgentJobRequest {
     __obj.asInstanceOf[TaskAgentJobRequest]
   }
   
-  @scala.inline
-  implicit class TaskAgentJobRequestMutableBuilder[Self <: TaskAgentJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentJobRequest](x: Self) {
     
-    @scala.inline
-    def setAssignTime(value: Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
+    inline def setAssignTime(value: Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
-    @scala.inline
-    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
+    inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUntil(value: Date): Self = StObject.set(x, "lockedUntil", value.asInstanceOf[js.Any])
+    inline def setLockedUntil(value: Date): Self = StObject.set(x, "lockedUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedAgents(value: js.Array[TaskAgentReference]): Self = StObject.set(x, "matchedAgents", value.asInstanceOf[js.Any])
+    inline def setMatchedAgents(value: js.Array[TaskAgentReference]): Self = StObject.set(x, "matchedAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "matchedAgents", js.Array(value :_*))
+    inline def setMatchedAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "matchedAgents", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: TaskOrchestrationOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: TaskOrchestrationOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanType(value: String): Self = StObject.set(x, "planType", value.asInstanceOf[js.Any])
+    inline def setPlanType(value: String): Self = StObject.set(x, "planType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveTime(value: Date): Self = StObject.set(x, "receiveTime", value.asInstanceOf[js.Any])
+    inline def setReceiveTime(value: Date): Self = StObject.set(x, "receiveTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedAgent(value: TaskAgentReference): Self = StObject.set(x, "reservedAgent", value.asInstanceOf[js.Any])
+    inline def setReservedAgent(value: TaskAgentReference): Self = StObject.set(x, "reservedAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
+    inline def setScopeId(value: String): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
+    inline def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
   }
 }

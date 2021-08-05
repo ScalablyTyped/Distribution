@@ -68,8 +68,7 @@ object ConcreteEntityType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
+  inline def create(model: IModel): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /**
     * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
@@ -80,8 +79,7 @@ object ConcreteEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
+  inline def createInBasicParameterTypeUnderType(container: BasicParameterType): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /**
     * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
@@ -92,8 +90,7 @@ object ConcreteEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCodeActionUnderActionReturnType(container: CodeAction): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
+  inline def createInCodeActionUnderActionReturnType(container: CodeAction): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /**
     * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
@@ -104,20 +101,17 @@ object ConcreteEntityType {
     *  7.21.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListTypeUnderParameter(container: ListType): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
+  inline def createInListTypeUnderParameter(container: ListType): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ConcreteEntityType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.ConcreteEntityType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

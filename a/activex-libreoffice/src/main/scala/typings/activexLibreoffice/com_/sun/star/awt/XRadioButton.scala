@@ -31,8 +31,7 @@ trait XRadioButton
 }
 object XRadioButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     State: Boolean,
     acquire: () => Unit,
     addItemListener: XItemListener => Unit,
@@ -47,25 +46,18 @@ object XRadioButton {
     __obj.asInstanceOf[XRadioButton]
   }
   
-  @scala.inline
-  implicit class XRadioButtonMutableBuilder[Self <: XRadioButton] (val x: Self) extends AnyVal {
+  extension [Self <: XRadioButton](x: Self) {
     
-    @scala.inline
-    def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
+    inline def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => Boolean): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => Boolean): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
+    inline def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetState(value: Boolean => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+    inline def setSetState(value: Boolean => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: Boolean): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: Boolean): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

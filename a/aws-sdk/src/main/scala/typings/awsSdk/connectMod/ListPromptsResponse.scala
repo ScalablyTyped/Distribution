@@ -18,28 +18,21 @@ trait ListPromptsResponse extends StObject {
 }
 object ListPromptsResponse {
   
-  @scala.inline
-  def apply(): ListPromptsResponse = {
+  inline def apply(): ListPromptsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPromptsResponse]
   }
   
-  @scala.inline
-  implicit class ListPromptsResponseMutableBuilder[Self <: ListPromptsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPromptsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPromptSummaryList(value: PromptSummaryList): Self = StObject.set(x, "PromptSummaryList", value.asInstanceOf[js.Any])
+    inline def setPromptSummaryList(value: PromptSummaryList): Self = StObject.set(x, "PromptSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptSummaryListUndefined: Self = StObject.set(x, "PromptSummaryList", js.undefined)
+    inline def setPromptSummaryListUndefined: Self = StObject.set(x, "PromptSummaryList", js.undefined)
     
-    @scala.inline
-    def setPromptSummaryListVarargs(value: PromptSummary*): Self = StObject.set(x, "PromptSummaryList", js.Array(value :_*))
+    inline def setPromptSummaryListVarargs(value: PromptSummary*): Self = StObject.set(x, "PromptSummaryList", js.Array(value :_*))
   }
 }

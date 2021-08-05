@@ -16,28 +16,21 @@ trait SmartHomeV1ExecuteRequestExecution extends StObject {
 }
 object SmartHomeV1ExecuteRequestExecution {
   
-  @scala.inline
-  def apply(command: String): SmartHomeV1ExecuteRequestExecution = {
+  inline def apply(command: String): SmartHomeV1ExecuteRequestExecution = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartHomeV1ExecuteRequestExecution]
   }
   
-  @scala.inline
-  implicit class SmartHomeV1ExecuteRequestExecutionMutableBuilder[Self <: SmartHomeV1ExecuteRequestExecution] (val x: Self) extends AnyVal {
+  extension [Self <: SmartHomeV1ExecuteRequestExecution](x: Self) {
     
-    @scala.inline
-    def setChallenge(value: Ack): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+    inline def setChallenge(value: Ack): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
+    inline def setChallengeUndefined: Self = StObject.set(x, "challenge", js.undefined)
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

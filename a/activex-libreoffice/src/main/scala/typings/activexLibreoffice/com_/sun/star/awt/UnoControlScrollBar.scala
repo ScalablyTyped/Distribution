@@ -15,8 +15,7 @@ trait UnoControlScrollBar
      with XScrollBar
 object UnoControlScrollBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     BlockIncrement: Double,
     Context: XInterface,

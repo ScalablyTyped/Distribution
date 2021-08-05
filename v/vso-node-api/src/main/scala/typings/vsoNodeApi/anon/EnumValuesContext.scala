@@ -10,16 +10,13 @@ trait EnumValuesContext extends StObject {
 }
 object EnumValuesContext {
   
-  @scala.inline
-  def apply(enumValues: Context): EnumValuesContext = {
+  inline def apply(enumValues: Context): EnumValuesContext = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesContext]
   }
   
-  @scala.inline
-  implicit class EnumValuesContextMutableBuilder[Self <: EnumValuesContext] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesContext](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Context): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Context): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

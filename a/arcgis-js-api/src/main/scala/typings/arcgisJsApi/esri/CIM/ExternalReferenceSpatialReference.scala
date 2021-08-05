@@ -16,37 +16,27 @@ trait ExternalReferenceSpatialReference extends StObject {
 }
 object ExternalReferenceSpatialReference {
   
-  @scala.inline
-  def apply(): ExternalReferenceSpatialReference = {
+  inline def apply(): ExternalReferenceSpatialReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalReferenceSpatialReference]
   }
   
-  @scala.inline
-  implicit class ExternalReferenceSpatialReferenceMutableBuilder[Self <: ExternalReferenceSpatialReference] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalReferenceSpatialReference](x: Self) {
     
-    @scala.inline
-    def setLatestVcsWkid(value: Double): Self = StObject.set(x, "latestVcsWkid", value.asInstanceOf[js.Any])
+    inline def setLatestVcsWkid(value: Double): Self = StObject.set(x, "latestVcsWkid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestVcsWkidUndefined: Self = StObject.set(x, "latestVcsWkid", js.undefined)
+    inline def setLatestVcsWkidUndefined: Self = StObject.set(x, "latestVcsWkid", js.undefined)
     
-    @scala.inline
-    def setLatestWkid(value: Double): Self = StObject.set(x, "latestWkid", value.asInstanceOf[js.Any])
+    inline def setLatestWkid(value: Double): Self = StObject.set(x, "latestWkid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestWkidUndefined: Self = StObject.set(x, "latestWkid", js.undefined)
+    inline def setLatestWkidUndefined: Self = StObject.set(x, "latestWkid", js.undefined)
     
-    @scala.inline
-    def setVcsWkid(value: Double): Self = StObject.set(x, "vcsWkid", value.asInstanceOf[js.Any])
+    inline def setVcsWkid(value: Double): Self = StObject.set(x, "vcsWkid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVcsWkidUndefined: Self = StObject.set(x, "vcsWkid", js.undefined)
+    inline def setVcsWkidUndefined: Self = StObject.set(x, "vcsWkid", js.undefined)
     
-    @scala.inline
-    def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
+    inline def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
+    inline def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
   }
 }

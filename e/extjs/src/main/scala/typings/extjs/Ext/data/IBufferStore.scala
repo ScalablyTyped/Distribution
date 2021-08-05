@@ -9,8 +9,7 @@ trait IBufferStore
      with IStore
 object IBufferStore {
   
-  @scala.inline
-  def apply(): IBufferStore = {
+  inline def apply(): IBufferStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBufferStore]
   }

@@ -18,19 +18,15 @@ trait GetApplicationRevisionInput extends StObject {
 }
 object GetApplicationRevisionInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName, revision: RevisionLocation): GetApplicationRevisionInput = {
+  inline def apply(applicationName: ApplicationName, revision: RevisionLocation): GetApplicationRevisionInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApplicationRevisionInput]
   }
   
-  @scala.inline
-  implicit class GetApplicationRevisionInputMutableBuilder[Self <: GetApplicationRevisionInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetApplicationRevisionInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

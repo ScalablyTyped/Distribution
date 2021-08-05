@@ -22,32 +22,23 @@ object perf {
   trait HttpMethod extends StObject
   object HttpMethod {
     
-    @scala.inline
-    def CONNECT: typings.reactNativeFirebase.reactNativeFirebaseStrings.CONNECT = "CONNECT".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.CONNECT]
+    inline def CONNECT: typings.reactNativeFirebase.reactNativeFirebaseStrings.CONNECT = "CONNECT".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.CONNECT]
     
-    @scala.inline
-    def DELETE: typings.reactNativeFirebase.reactNativeFirebaseStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.DELETE]
+    inline def DELETE: typings.reactNativeFirebase.reactNativeFirebaseStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.reactNativeFirebase.reactNativeFirebaseStrings.GET = "GET".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.GET]
+    inline def GET: typings.reactNativeFirebase.reactNativeFirebaseStrings.GET = "GET".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.reactNativeFirebase.reactNativeFirebaseStrings.HEAD = "HEAD".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.HEAD]
+    inline def HEAD: typings.reactNativeFirebase.reactNativeFirebaseStrings.HEAD = "HEAD".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.HEAD]
     
-    @scala.inline
-    def OPTIONS: typings.reactNativeFirebase.reactNativeFirebaseStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.OPTIONS]
+    inline def OPTIONS: typings.reactNativeFirebase.reactNativeFirebaseStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.reactNativeFirebase.reactNativeFirebaseStrings.PATCH = "PATCH".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.PATCH]
+    inline def PATCH: typings.reactNativeFirebase.reactNativeFirebaseStrings.PATCH = "PATCH".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.reactNativeFirebase.reactNativeFirebaseStrings.POST = "POST".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.POST]
+    inline def POST: typings.reactNativeFirebase.reactNativeFirebaseStrings.POST = "POST".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.POST]
     
-    @scala.inline
-    def PUT: typings.reactNativeFirebase.reactNativeFirebaseStrings.PUT = "PUT".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.PUT]
+    inline def PUT: typings.reactNativeFirebase.reactNativeFirebaseStrings.PUT = "PUT".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.PUT]
     
-    @scala.inline
-    def TRACE: typings.reactNativeFirebase.reactNativeFirebaseStrings.TRACE = "TRACE".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.TRACE]
+    inline def TRACE: typings.reactNativeFirebase.reactNativeFirebaseStrings.TRACE = "TRACE".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.TRACE]
   }
   
   trait HttpMetric extends StObject {
@@ -104,8 +95,7 @@ object perf {
   }
   object HttpMetric {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAttribute: String => js.Promise[String | Null],
       getAttributes: () => js.Promise[js.Object],
       putAttribute: (String, String) => js.Promise[`true` | `false`],
@@ -121,38 +111,27 @@ object perf {
       __obj.asInstanceOf[HttpMetric]
     }
     
-    @scala.inline
-    implicit class HttpMetricMutableBuilder[Self <: HttpMetric] (val x: Self) extends AnyVal {
+    extension [Self <: HttpMetric](x: Self) {
       
-      @scala.inline
-      def setGetAttribute(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttributes(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+      inline def setGetAttributes(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPutAttribute(value: (String, String) => js.Promise[`true` | `false`]): Self = StObject.set(x, "putAttribute", js.Any.fromFunction2(value))
+      inline def setPutAttribute(value: (String, String) => js.Promise[`true` | `false`]): Self = StObject.set(x, "putAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAttribute(value: String => js.Promise[Null]): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
+      inline def setRemoveAttribute(value: String => js.Promise[Null]): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetHttpResponseCode(value: Double => js.Promise[Null]): Self = StObject.set(x, "setHttpResponseCode", js.Any.fromFunction1(value))
+      inline def setSetHttpResponseCode(value: Double => js.Promise[Null]): Self = StObject.set(x, "setHttpResponseCode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRequestPayloadSize(value: Double => js.Promise[Null]): Self = StObject.set(x, "setRequestPayloadSize", js.Any.fromFunction1(value))
+      inline def setSetRequestPayloadSize(value: Double => js.Promise[Null]): Self = StObject.set(x, "setRequestPayloadSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetResponseContentType(value: String => js.Promise[Null]): Self = StObject.set(x, "setResponseContentType", js.Any.fromFunction1(value))
+      inline def setSetResponseContentType(value: String => js.Promise[Null]): Self = StObject.set(x, "setResponseContentType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetResponsePayloadSize(value: Double => js.Promise[Null]): Self = StObject.set(x, "setResponsePayloadSize", js.Any.fromFunction1(value))
+      inline def setSetResponsePayloadSize(value: Double => js.Promise[Null]): Self = StObject.set(x, "setResponsePayloadSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => js.Promise[Null]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[Null]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Promise[Null]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[Null]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -175,8 +154,7 @@ object perf {
   }
   object Perf {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       newHttpMetric: (String, HttpMethod) => HttpMetric,
       newTrace: String => Trace,
       setPerformanceCollectionEnabled: Boolean => Unit
@@ -185,17 +163,13 @@ object perf {
       __obj.asInstanceOf[Perf]
     }
     
-    @scala.inline
-    implicit class PerfMutableBuilder[Self <: Perf] (val x: Self) extends AnyVal {
+    extension [Self <: Perf](x: Self) {
       
-      @scala.inline
-      def setNewHttpMetric(value: (String, HttpMethod) => HttpMetric): Self = StObject.set(x, "newHttpMetric", js.Any.fromFunction2(value))
+      inline def setNewHttpMetric(value: (String, HttpMethod) => HttpMetric): Self = StObject.set(x, "newHttpMetric", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNewTrace(value: String => Trace): Self = StObject.set(x, "newTrace", js.Any.fromFunction1(value))
+      inline def setNewTrace(value: String => Trace): Self = StObject.set(x, "newTrace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPerformanceCollectionEnabled(value: Boolean => Unit): Self = StObject.set(x, "setPerformanceCollectionEnabled", js.Any.fromFunction1(value))
+      inline def setSetPerformanceCollectionEnabled(value: Boolean => Unit): Self = StObject.set(x, "setPerformanceCollectionEnabled", js.Any.fromFunction1(value))
     }
   }
   
@@ -248,8 +222,7 @@ object perf {
   }
   object Trace {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAttribute: String => js.Promise[String | Null],
       getAttributes: () => js.Promise[js.Object],
       getMetric: String => js.Promise[Double],
@@ -264,35 +237,25 @@ object perf {
       __obj.asInstanceOf[Trace]
     }
     
-    @scala.inline
-    implicit class TraceMutableBuilder[Self <: Trace] (val x: Self) extends AnyVal {
+    extension [Self <: Trace](x: Self) {
       
-      @scala.inline
-      def setGetAttribute(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttributes(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+      inline def setGetAttributes(value: () => js.Promise[js.Object]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMetric(value: String => js.Promise[Double]): Self = StObject.set(x, "getMetric", js.Any.fromFunction1(value))
+      inline def setGetMetric(value: String => js.Promise[Double]): Self = StObject.set(x, "getMetric", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncrementMetric(value: (String, Double) => js.Promise[Null]): Self = StObject.set(x, "incrementMetric", js.Any.fromFunction2(value))
+      inline def setIncrementMetric(value: (String, Double) => js.Promise[Null]): Self = StObject.set(x, "incrementMetric", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPutAttribute(value: (String, String) => js.Promise[`true` | `false`]): Self = StObject.set(x, "putAttribute", js.Any.fromFunction2(value))
+      inline def setPutAttribute(value: (String, String) => js.Promise[`true` | `false`]): Self = StObject.set(x, "putAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPutMetric(value: (String, Double) => js.Promise[Null]): Self = StObject.set(x, "putMetric", js.Any.fromFunction2(value))
+      inline def setPutMetric(value: (String, Double) => js.Promise[Null]): Self = StObject.set(x, "putMetric", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAttribute(value: String => js.Promise[Null]): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
+      inline def setRemoveAttribute(value: String => js.Promise[Null]): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => js.Promise[Null]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[Null]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Promise[Null]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[Null]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

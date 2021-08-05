@@ -21,19 +21,15 @@ trait CheckboxChoiceOptions[T /* <: Answers */]
 }
 object CheckboxChoiceOptions {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): CheckboxChoiceOptions[T] = {
+  inline def apply[T /* <: Answers */](): CheckboxChoiceOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckboxChoiceOptions[T]]
   }
   
-  @scala.inline
-  implicit class CheckboxChoiceOptionsMutableBuilder[Self <: CheckboxChoiceOptions[?], T /* <: Answers */] (val x: Self & CheckboxChoiceOptions[T]) extends AnyVal {
+  extension [Self <: CheckboxChoiceOptions[?], T /* <: Answers */](x: Self & CheckboxChoiceOptions[T]) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
   }
 }

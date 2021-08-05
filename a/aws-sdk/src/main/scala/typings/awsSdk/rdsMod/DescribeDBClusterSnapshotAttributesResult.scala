@@ -10,19 +10,15 @@ trait DescribeDBClusterSnapshotAttributesResult extends StObject {
 }
 object DescribeDBClusterSnapshotAttributesResult {
   
-  @scala.inline
-  def apply(): DescribeDBClusterSnapshotAttributesResult = {
+  inline def apply(): DescribeDBClusterSnapshotAttributesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDBClusterSnapshotAttributesResult]
   }
   
-  @scala.inline
-  implicit class DescribeDBClusterSnapshotAttributesResultMutableBuilder[Self <: DescribeDBClusterSnapshotAttributesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBClusterSnapshotAttributesResult](x: Self) {
     
-    @scala.inline
-    def setDBClusterSnapshotAttributesResult(value: DBClusterSnapshotAttributesResult): Self = StObject.set(x, "DBClusterSnapshotAttributesResult", value.asInstanceOf[js.Any])
+    inline def setDBClusterSnapshotAttributesResult(value: DBClusterSnapshotAttributesResult): Self = StObject.set(x, "DBClusterSnapshotAttributesResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterSnapshotAttributesResultUndefined: Self = StObject.set(x, "DBClusterSnapshotAttributesResult", js.undefined)
+    inline def setDBClusterSnapshotAttributesResultUndefined: Self = StObject.set(x, "DBClusterSnapshotAttributesResult", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotate: (js.Function, String) => Logger,
     debug: String => Logger,
     deprecate: (js.Function, String) => Unit,
@@ -33,25 +32,18 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setAnnotate(value: (js.Function, String) => Logger): Self = StObject.set(x, "annotate", js.Any.fromFunction2(value))
+    inline def setAnnotate(value: (js.Function, String) => Logger): Self = StObject.set(x, "annotate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDebug(value: String => Logger): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: String => Logger): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeprecate(value: (js.Function, String) => Unit): Self = StObject.set(x, "deprecate", js.Any.fromFunction2(value))
+    inline def setDeprecate(value: (js.Function, String) => Unit): Self = StObject.set(x, "deprecate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnableDebugLog(value: Boolean): Self = StObject.set(x, "enableDebugLog", value.asInstanceOf[js.Any])
+    inline def setEnableDebugLog(value: Boolean): Self = StObject.set(x, "enableDebugLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarn(value: String => Logger): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: String => Logger): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarnOnce(value: String => Logger): Self = StObject.set(x, "warnOnce", js.Any.fromFunction1(value))
+    inline def setWarnOnce(value: String => Logger): Self = StObject.set(x, "warnOnce", js.Any.fromFunction1(value))
   }
 }

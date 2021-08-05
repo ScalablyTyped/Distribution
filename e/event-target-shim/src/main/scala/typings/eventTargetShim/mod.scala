@@ -39,8 +39,7 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @scala.inline
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
+    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     /**
       * Define an `EventTarget` constructor with attribute events and detailed event definition.
       *
@@ -54,8 +53,7 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @scala.inline
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
+    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("event-target-shim", JSImport.Default)
@@ -85,8 +83,7 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @scala.inline
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
+    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](event0: String, events: String*): EventTargetConstructor[TEvents, TEventAttributes, TMode] = (^.asInstanceOf[js.Dynamic].apply(event0.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     /**
       * Define an `EventTarget` constructor with attribute events and detailed event definition.
       *
@@ -100,8 +97,7 @@ object mod {
       *
       * @param events Optional event attributes (e.g. passing in `"click"` adds `onclick` to prototype).
       */
-    @scala.inline
-    def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
+    inline def apply[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */](events: js.Array[String]): EventTargetConstructor[TEvents, TEventAttributes, TMode] = ^.asInstanceOf[js.Dynamic].apply(events.asInstanceOf[js.Any]).asInstanceOf[EventTargetConstructor[TEvents, TEventAttributes, TMode]]
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("event-target-shim", "EventTarget")
@@ -132,26 +128,20 @@ object mod {
     }
     object AddOptions {
       
-      @scala.inline
-      def apply(): AddOptions = {
+      inline def apply(): AddOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AddOptions]
       }
       
-      @scala.inline
-      implicit class AddOptionsMutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AddOptions](x: Self) {
         
-        @scala.inline
-        def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+        inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+        inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
         
-        @scala.inline
-        def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+        inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+        inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
       }
     }
     
@@ -193,14 +183,11 @@ object mod {
     trait Mode extends StObject
     object Mode {
       
-      @scala.inline
-      def loose: typings.eventTargetShim.eventTargetShimStrings.loose = "loose".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.loose]
+      inline def loose: typings.eventTargetShim.eventTargetShimStrings.loose = "loose".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.loose]
       
-      @scala.inline
-      def standard: typings.eventTargetShim.eventTargetShimStrings.standard = "standard".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.standard]
+      inline def standard: typings.eventTargetShim.eventTargetShimStrings.standard = "standard".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.standard]
       
-      @scala.inline
-      def strict: typings.eventTargetShim.eventTargetShimStrings.strict = "strict".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.strict]
+      inline def strict: typings.eventTargetShim.eventTargetShimStrings.strict = "strict".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.strict]
     }
     
     trait NonStandardEvent
@@ -212,18 +199,15 @@ object mod {
     }
     object NonStandardEvent {
       
-      @scala.inline
-      def apply(`type`: String): NonStandardEvent = {
+      inline def apply(`type`: String): NonStandardEvent = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NonStandardEvent]
       }
       
-      @scala.inline
-      implicit class NonStandardEventMutableBuilder[Self <: NonStandardEvent] (val x: Self) extends AnyVal {
+      extension [Self <: NonStandardEvent](x: Self) {
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -233,17 +217,14 @@ object mod {
     }
     object ObjectListener {
       
-      @scala.inline
-      def apply[TEvent](handleEvent: TEvent => Unit): ObjectListener[TEvent] = {
+      inline def apply[TEvent](handleEvent: TEvent => Unit): ObjectListener[TEvent] = {
         val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
         __obj.asInstanceOf[ObjectListener[TEvent]]
       }
       
-      @scala.inline
-      implicit class ObjectListenerMutableBuilder[Self <: ObjectListener[?], TEvent] (val x: Self & ObjectListener[TEvent]) extends AnyVal {
+      extension [Self <: ObjectListener[?], TEvent](x: Self & ObjectListener[TEvent]) {
         
-        @scala.inline
-        def setHandleEvent(value: TEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+        inline def setHandleEvent(value: TEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
       }
     }
     
@@ -274,68 +255,47 @@ object mod {
     trait OmittableEventKeys extends StObject
     object OmittableEventKeys {
       
-      @scala.inline
-      def AT_TARGET: typings.eventTargetShim.eventTargetShimStrings.AT_TARGET = "AT_TARGET".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.AT_TARGET]
+      inline def AT_TARGET: typings.eventTargetShim.eventTargetShimStrings.AT_TARGET = "AT_TARGET".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.AT_TARGET]
       
-      @scala.inline
-      def BUBBLING_PHASE: typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE = "BUBBLING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE]
+      inline def BUBBLING_PHASE: typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE = "BUBBLING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE]
       
-      @scala.inline
-      def CAPTURING_PHASE: typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE = "CAPTURING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE]
+      inline def CAPTURING_PHASE: typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE = "CAPTURING_PHASE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE]
       
-      @scala.inline
-      def NONE: typings.eventTargetShim.eventTargetShimStrings.NONE = "NONE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.NONE]
+      inline def NONE: typings.eventTargetShim.eventTargetShimStrings.NONE = "NONE".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.NONE]
       
-      @scala.inline
-      def bubbles: typings.eventTargetShim.eventTargetShimStrings.bubbles = "bubbles".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.bubbles]
+      inline def bubbles: typings.eventTargetShim.eventTargetShimStrings.bubbles = "bubbles".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.bubbles]
       
-      @scala.inline
-      def cancelBubble: typings.eventTargetShim.eventTargetShimStrings.cancelBubble = "cancelBubble".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelBubble]
+      inline def cancelBubble: typings.eventTargetShim.eventTargetShimStrings.cancelBubble = "cancelBubble".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelBubble]
       
-      @scala.inline
-      def cancelable: typings.eventTargetShim.eventTargetShimStrings.cancelable = "cancelable".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelable]
+      inline def cancelable: typings.eventTargetShim.eventTargetShimStrings.cancelable = "cancelable".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.cancelable]
       
-      @scala.inline
-      def composed: typings.eventTargetShim.eventTargetShimStrings.composed = "composed".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composed]
+      inline def composed: typings.eventTargetShim.eventTargetShimStrings.composed = "composed".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composed]
       
-      @scala.inline
-      def composedPath: typings.eventTargetShim.eventTargetShimStrings.composedPath = "composedPath".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composedPath]
+      inline def composedPath: typings.eventTargetShim.eventTargetShimStrings.composedPath = "composedPath".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.composedPath]
       
-      @scala.inline
-      def currentTarget: typings.eventTargetShim.eventTargetShimStrings.currentTarget = "currentTarget".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.currentTarget]
+      inline def currentTarget: typings.eventTargetShim.eventTargetShimStrings.currentTarget = "currentTarget".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.currentTarget]
       
-      @scala.inline
-      def defaultPrevented: typings.eventTargetShim.eventTargetShimStrings.defaultPrevented = "defaultPrevented".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.defaultPrevented]
+      inline def defaultPrevented: typings.eventTargetShim.eventTargetShimStrings.defaultPrevented = "defaultPrevented".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.defaultPrevented]
       
-      @scala.inline
-      def eventPhase: typings.eventTargetShim.eventTargetShimStrings.eventPhase = "eventPhase".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.eventPhase]
+      inline def eventPhase: typings.eventTargetShim.eventTargetShimStrings.eventPhase = "eventPhase".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.eventPhase]
       
-      @scala.inline
-      def initEvent: typings.eventTargetShim.eventTargetShimStrings.initEvent = "initEvent".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.initEvent]
+      inline def initEvent: typings.eventTargetShim.eventTargetShimStrings.initEvent = "initEvent".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.initEvent]
       
-      @scala.inline
-      def isTrusted: typings.eventTargetShim.eventTargetShimStrings.isTrusted = "isTrusted".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.isTrusted]
+      inline def isTrusted: typings.eventTargetShim.eventTargetShimStrings.isTrusted = "isTrusted".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.isTrusted]
       
-      @scala.inline
-      def preventDefault: typings.eventTargetShim.eventTargetShimStrings.preventDefault = "preventDefault".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.preventDefault]
+      inline def preventDefault: typings.eventTargetShim.eventTargetShimStrings.preventDefault = "preventDefault".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.preventDefault]
       
-      @scala.inline
-      def returnValue: typings.eventTargetShim.eventTargetShimStrings.returnValue = "returnValue".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.returnValue]
+      inline def returnValue: typings.eventTargetShim.eventTargetShimStrings.returnValue = "returnValue".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.returnValue]
       
-      @scala.inline
-      def srcElement: typings.eventTargetShim.eventTargetShimStrings.srcElement = "srcElement".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.srcElement]
+      inline def srcElement: typings.eventTargetShim.eventTargetShimStrings.srcElement = "srcElement".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.srcElement]
       
-      @scala.inline
-      def stopImmediatePropagation: typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation = "stopImmediatePropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation]
+      inline def stopImmediatePropagation: typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation = "stopImmediatePropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation]
       
-      @scala.inline
-      def stopPropagation: typings.eventTargetShim.eventTargetShimStrings.stopPropagation = "stopPropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopPropagation]
+      inline def stopPropagation: typings.eventTargetShim.eventTargetShimStrings.stopPropagation = "stopPropagation".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.stopPropagation]
       
-      @scala.inline
-      def target: typings.eventTargetShim.eventTargetShimStrings.target = "target".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.target]
+      inline def target: typings.eventTargetShim.eventTargetShimStrings.target = "target".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.target]
       
-      @scala.inline
-      def timeStamp: typings.eventTargetShim.eventTargetShimStrings.timeStamp = "timeStamp".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.timeStamp]
+      inline def timeStamp: typings.eventTargetShim.eventTargetShimStrings.timeStamp = "timeStamp".asInstanceOf[typings.eventTargetShim.eventTargetShimStrings.timeStamp]
     }
     
     type PickEvent[TEvents /* <: EventDefinition */, TEventType /* <: /* keyof TEvents */ String */] = Event | (/* import warning: importer.ImportType#apply Failed type conversion: TEvents[TEventType] */ js.Any)
@@ -349,20 +309,16 @@ object mod {
     }
     object RemoveOptions {
       
-      @scala.inline
-      def apply(): RemoveOptions = {
+      inline def apply(): RemoveOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RemoveOptions]
       }
       
-      @scala.inline
-      implicit class RemoveOptionsMutableBuilder[Self <: RemoveOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RemoveOptions](x: Self) {
         
-        @scala.inline
-        def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+        inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+        inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       }
     }
     
@@ -370,8 +326,7 @@ object mod {
   }
   type EventTarget[TEvents /* <: EventDefinition */, TEventAttributes /* <: EventDefinition */, TMode /* <: Mode */] = EventAttributes[TEventAttributes] & (AddEventListener[TEvents, TMode])
   
-  @scala.inline
-  def defineEventAttribute(prototype: EventTargetloose, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEventAttribute")(prototype.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineEventAttribute(prototype: EventTargetloose, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineEventAttribute")(prototype.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Event
@@ -507,18 +462,15 @@ object mod {
   }
   object Type {
     
-    @scala.inline
-    def apply[T /* <: String */](`type`: T): Type[T] = {
+    inline def apply[T /* <: String */](`type`: T): Type[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type[T]]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[?], T /* <: String */] (val x: Self & Type[T]) extends AnyVal {
+    extension [Self <: Type[?], T /* <: String */](x: Self & Type[T]) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,8 +12,7 @@ trait AdfsUserProfile
 }
 object AdfsUserProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientID: String,
     created_at: String,
     identities: js.Array[Auth0Identity],
@@ -28,13 +27,10 @@ object AdfsUserProfile {
     __obj.asInstanceOf[AdfsUserProfile]
   }
   
-  @scala.inline
-  implicit class AdfsUserProfileMutableBuilder[Self <: AdfsUserProfile] (val x: Self) extends AnyVal {
+  extension [Self <: AdfsUserProfile](x: Self) {
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
   }
 }

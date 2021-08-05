@@ -18,28 +18,21 @@ trait EbsConfiguration extends StObject {
 }
 object EbsConfiguration {
   
-  @scala.inline
-  def apply(): EbsConfiguration = {
+  inline def apply(): EbsConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EbsConfiguration]
   }
   
-  @scala.inline
-  implicit class EbsConfigurationMutableBuilder[Self <: EbsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EbsConfiguration](x: Self) {
     
-    @scala.inline
-    def setEbsBlockDeviceConfigs(value: EbsBlockDeviceConfigList): Self = StObject.set(x, "EbsBlockDeviceConfigs", value.asInstanceOf[js.Any])
+    inline def setEbsBlockDeviceConfigs(value: EbsBlockDeviceConfigList): Self = StObject.set(x, "EbsBlockDeviceConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsBlockDeviceConfigsUndefined: Self = StObject.set(x, "EbsBlockDeviceConfigs", js.undefined)
+    inline def setEbsBlockDeviceConfigsUndefined: Self = StObject.set(x, "EbsBlockDeviceConfigs", js.undefined)
     
-    @scala.inline
-    def setEbsBlockDeviceConfigsVarargs(value: EbsBlockDeviceConfig*): Self = StObject.set(x, "EbsBlockDeviceConfigs", js.Array(value :_*))
+    inline def setEbsBlockDeviceConfigsVarargs(value: EbsBlockDeviceConfig*): Self = StObject.set(x, "EbsBlockDeviceConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
+    inline def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
+    inline def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
   }
 }

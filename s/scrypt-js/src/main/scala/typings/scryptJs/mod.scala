@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scrypt(
+  inline def scrypt(
     password: ArrayLike[Double],
     salt: ArrayLike[Double],
     N: Double,
@@ -21,8 +20,7 @@ object mod {
     p: Double,
     dkLen: Double
   ): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
-  @scala.inline
-  def scrypt(
+  inline def scrypt(
     password: ArrayLike[Double],
     salt: ArrayLike[Double],
     N: Double,
@@ -32,8 +30,7 @@ object mod {
     callback: ProgressCallback
   ): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("scrypt")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], N.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], dkLen.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
   
-  @scala.inline
-  def syncScrypt(
+  inline def syncScrypt(
     password: ArrayLike[Double],
     salt: ArrayLike[Double],
     N: Double,

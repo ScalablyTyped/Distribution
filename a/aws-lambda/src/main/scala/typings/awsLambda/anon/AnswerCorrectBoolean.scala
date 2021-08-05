@@ -10,16 +10,13 @@ trait AnswerCorrectBoolean extends StObject {
 }
 object AnswerCorrectBoolean {
   
-  @scala.inline
-  def apply(answerCorrect: Boolean): AnswerCorrectBoolean = {
+  inline def apply(answerCorrect: Boolean): AnswerCorrectBoolean = {
     val __obj = js.Dynamic.literal(answerCorrect = answerCorrect.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerCorrectBoolean]
   }
   
-  @scala.inline
-  implicit class AnswerCorrectBooleanMutableBuilder[Self <: AnswerCorrectBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: AnswerCorrectBoolean](x: Self) {
     
-    @scala.inline
-    def setAnswerCorrect(value: Boolean): Self = StObject.set(x, "answerCorrect", value.asInstanceOf[js.Any])
+    inline def setAnswerCorrect(value: Boolean): Self = StObject.set(x, "answerCorrect", value.asInstanceOf[js.Any])
   }
 }

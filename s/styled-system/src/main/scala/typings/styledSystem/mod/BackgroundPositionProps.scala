@@ -16,25 +16,19 @@ trait BackgroundPositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVa
 }
 object BackgroundPositionProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BackgroundPositionProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): BackgroundPositionProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundPositionProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class BackgroundPositionPropsMutableBuilder[Self <: BackgroundPositionProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundPositionProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: BackgroundPositionProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BackgroundPositionProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setBackgroundPosition(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    inline def setBackgroundPosition(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundPositionNull: Self = StObject.set(x, "backgroundPosition", null)
+    inline def setBackgroundPositionNull: Self = StObject.set(x, "backgroundPosition", null)
     
-    @scala.inline
-    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+    inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
-    @scala.inline
-    def setBackgroundPositionVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
+    inline def setBackgroundPositionVarargs(value: (TVal | Null)*): Self = StObject.set(x, "backgroundPosition", js.Array(value :_*))
   }
 }

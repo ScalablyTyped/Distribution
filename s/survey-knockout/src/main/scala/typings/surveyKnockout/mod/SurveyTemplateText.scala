@@ -15,5 +15,5 @@ class SurveyTemplateText () extends StObject {
   def replaceText(replaceText: String, id: String): Unit = js.native
   def replaceText(replaceText: String, id: String, questionType: String): Unit = js.native
   
-  var text: String = js.native
+  /* protected */ var text: String = js.native
 }

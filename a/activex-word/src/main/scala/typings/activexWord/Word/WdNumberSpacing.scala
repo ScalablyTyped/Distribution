@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdNumberSpacing extends StObject
 object WdNumberSpacing {
   
-  @scala.inline
-  def wdNumberSpacingDefault: `0` = 0.asInstanceOf[`0`]
+  inline def wdNumberSpacingDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdNumberSpacingProportional: `1` = 1.asInstanceOf[`1`]
+  inline def wdNumberSpacingProportional: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdNumberSpacingTabular: `2` = 2.asInstanceOf[`2`]
+  inline def wdNumberSpacingTabular: `2` = 2.asInstanceOf[`2`]
 }

@@ -13,25 +13,19 @@ trait MultiplyInputs extends StObject {
 }
 object MultiplyInputs {
   
-  @scala.inline
-  def apply(): MultiplyInputs = {
+  inline def apply(): MultiplyInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplyInputs]
   }
   
-  @scala.inline
-  implicit class MultiplyInputsMutableBuilder[Self <: MultiplyInputs] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplyInputs](x: Self) {
     
-    @scala.inline
-    def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
-    @scala.inline
-    def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
   }
 }

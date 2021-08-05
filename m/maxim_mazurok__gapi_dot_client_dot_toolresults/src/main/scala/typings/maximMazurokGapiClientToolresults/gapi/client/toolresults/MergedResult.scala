@@ -22,34 +22,25 @@ trait MergedResult extends StObject {
 }
 object MergedResult {
   
-  @scala.inline
-  def apply(): MergedResult = {
+  inline def apply(): MergedResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergedResult]
   }
   
-  @scala.inline
-  implicit class MergedResultMutableBuilder[Self <: MergedResult] (val x: Self) extends AnyVal {
+  extension [Self <: MergedResult](x: Self) {
     
-    @scala.inline
-    def setOutcome(value: Outcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: Outcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
+    inline def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = StObject.set(x, "testSuiteOverviews", value.asInstanceOf[js.Any])
+    inline def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = StObject.set(x, "testSuiteOverviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSuiteOverviewsUndefined: Self = StObject.set(x, "testSuiteOverviews", js.undefined)
+    inline def setTestSuiteOverviewsUndefined: Self = StObject.set(x, "testSuiteOverviews", js.undefined)
     
-    @scala.inline
-    def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value :_*))
+    inline def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value :_*))
   }
 }

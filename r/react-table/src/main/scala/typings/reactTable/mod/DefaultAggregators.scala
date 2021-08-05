@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DefaultAggregators extends StObject
 object DefaultAggregators {
   
-  @scala.inline
-  def average: typings.reactTable.reactTableStrings.average = "average".asInstanceOf[typings.reactTable.reactTableStrings.average]
+  inline def average: typings.reactTable.reactTableStrings.average = "average".asInstanceOf[typings.reactTable.reactTableStrings.average]
   
-  @scala.inline
-  def count: typings.reactTable.reactTableStrings.count = "count".asInstanceOf[typings.reactTable.reactTableStrings.count]
+  inline def count: typings.reactTable.reactTableStrings.count = "count".asInstanceOf[typings.reactTable.reactTableStrings.count]
   
-  @scala.inline
-  def median: typings.reactTable.reactTableStrings.median = "median".asInstanceOf[typings.reactTable.reactTableStrings.median]
+  inline def median: typings.reactTable.reactTableStrings.median = "median".asInstanceOf[typings.reactTable.reactTableStrings.median]
   
-  @scala.inline
-  def sum: typings.reactTable.reactTableStrings.sum = "sum".asInstanceOf[typings.reactTable.reactTableStrings.sum]
+  inline def sum: typings.reactTable.reactTableStrings.sum = "sum".asInstanceOf[typings.reactTable.reactTableStrings.sum]
   
-  @scala.inline
-  def uniqueCount: typings.reactTable.reactTableStrings.uniqueCount = "uniqueCount".asInstanceOf[typings.reactTable.reactTableStrings.uniqueCount]
+  inline def uniqueCount: typings.reactTable.reactTableStrings.uniqueCount = "uniqueCount".asInstanceOf[typings.reactTable.reactTableStrings.uniqueCount]
 }

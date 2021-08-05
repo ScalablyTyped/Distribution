@@ -16,23 +16,18 @@ object anon {
   }
   object ClassPrefix {
     
-    @scala.inline
-    def apply(classPrefix: String, enableClasses: Boolean, enableJSClass: Boolean): ClassPrefix = {
+    inline def apply(classPrefix: String, enableClasses: Boolean, enableJSClass: Boolean): ClassPrefix = {
       val __obj = js.Dynamic.literal(classPrefix = classPrefix.asInstanceOf[js.Any], enableClasses = enableClasses.asInstanceOf[js.Any], enableJSClass = enableJSClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassPrefix]
     }
     
-    @scala.inline
-    implicit class ClassPrefixMutableBuilder[Self <: ClassPrefix] (val x: Self) extends AnyVal {
+    extension [Self <: ClassPrefix](x: Self) {
       
-      @scala.inline
-      def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
+      inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableClasses(value: Boolean): Self = StObject.set(x, "enableClasses", value.asInstanceOf[js.Any])
+      inline def setEnableClasses(value: Boolean): Self = StObject.set(x, "enableClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableJSClass(value: Boolean): Self = StObject.set(x, "enableJSClass", value.asInstanceOf[js.Any])
+      inline def setEnableJSClass(value: Boolean): Self = StObject.set(x, "enableJSClass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +37,16 @@ object anon {
   }
   object Src {
     
-    @scala.inline
-    def apply(src: js.Array[String]): Src = {
+    inline def apply(src: js.Array[String]): Src = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[Src]
     }
     
-    @scala.inline
-    implicit class SrcMutableBuilder[Self <: Src] (val x: Self) extends AnyVal {
+    extension [Self <: Src](x: Self) {
       
-      @scala.inline
-      def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
     }
   }
 }

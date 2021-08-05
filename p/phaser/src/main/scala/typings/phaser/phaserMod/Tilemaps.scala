@@ -325,8 +325,7 @@ object Tilemaps {
     @JSImport("phaser", "Tilemaps.Formats.ARRAY_2D")
     @js.native
     def ARRAY_2D: Double = js.native
-    @scala.inline
-    def ARRAY_2D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARRAY_2D")(x.asInstanceOf[js.Any])
+    inline def ARRAY_2D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARRAY_2D")(x.asInstanceOf[js.Any])
     
     /**
       * CSV Map Type
@@ -334,8 +333,7 @@ object Tilemaps {
     @JSImport("phaser", "Tilemaps.Formats.CSV")
     @js.native
     def CSV: Double = js.native
-    @scala.inline
-    def CSV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CSV")(x.asInstanceOf[js.Any])
+    inline def CSV_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CSV")(x.asInstanceOf[js.Any])
     
     /**
       * Tiled JSON Map Type
@@ -343,8 +341,7 @@ object Tilemaps {
     @JSImport("phaser", "Tilemaps.Formats.TILED_JSON")
     @js.native
     def TILED_JSON: Double = js.native
-    @scala.inline
-    def TILED_JSON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILED_JSON")(x.asInstanceOf[js.Any])
+    inline def TILED_JSON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TILED_JSON")(x.asInstanceOf[js.Any])
     
     /**
       * Weltmeister (Impact.js) Map Type
@@ -352,8 +349,7 @@ object Tilemaps {
     @JSImport("phaser", "Tilemaps.Formats.WELTMEISTER")
     @js.native
     def WELTMEISTER: Double = js.native
-    @scala.inline
-    def WELTMEISTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WELTMEISTER")(x.asInstanceOf[js.Any])
+    inline def WELTMEISTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WELTMEISTER")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -994,8 +990,7 @@ object Tilemaps {
     * consumption. However if your map is small or you need to update the tiles dynamically, then leave
     * the default value set. Default false.
     */
-  @scala.inline
-  def ParseToTilemap(
+  inline def ParseToTilemap(
     scene: typings.phaser.Phaser.Scene,
     key: js.UndefOr[String],
     tileWidth: js.UndefOr[integer],
@@ -1024,15 +1019,13 @@ object Tilemaps {
         * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
         * data are handled (see {@link Phaser.Tilemaps.Parsers.Tiled.ParseJSONTiled}).
         */
-      @scala.inline
-      def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[typings.phaser.Phaser.Tilemaps.LayerData] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseTileLayers")(json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Tilemaps.LayerData]]
+      inline def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[typings.phaser.Phaser.Tilemaps.LayerData] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseTileLayers")(json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Tilemaps.LayerData]]
       
       /**
         * Tilesets and Image Collections
         * @param json The Impact JSON data.
         */
-      @scala.inline
-      def ParseTilesets(json: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseTilesets")(json.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+      inline def ParseTilesets(json: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseTilesets")(json.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
       
       /**
         * Parses a Weltmeister JSON object into a new MapData object.
@@ -1045,12 +1038,10 @@ object Tilemaps {
         * consumption. However if your map is small or you need to update the tiles dynamically, then leave
         * the default value set.
         */
-      @scala.inline
-      def ParseWeltmeister(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseWeltmeister")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
+      inline def ParseWeltmeister(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseWeltmeister")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
     }
     
-    @scala.inline
-    def Parse(
+    inline def Parse(
       name: String,
       mapFormat: integer,
       data: String,
@@ -1077,8 +1068,7 @@ object Tilemaps {
       * consumption. However if your map is small or you need to update the tiles dynamically, then leave
       * the default value set.
       */
-    @scala.inline
-    def Parse(
+    inline def Parse(
       name: String,
       mapFormat: integer,
       data: js.Array[js.Array[integer]],
@@ -1086,8 +1076,7 @@ object Tilemaps {
       tileHeight: integer,
       insertNull: Boolean
     ): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(name.asInstanceOf[js.Any], mapFormat.asInstanceOf[js.Any], data.asInstanceOf[js.Any], tileWidth.asInstanceOf[js.Any], tileHeight.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
-    @scala.inline
-    def Parse(
+    inline def Parse(
       name: String,
       mapFormat: integer,
       data: js.Object,
@@ -1109,8 +1098,7 @@ object Tilemaps {
       * consumption. However if your map is small or you need to update the tiles dynamically, then leave
       * the default value set.
       */
-    @scala.inline
-    def Parse2DArray(
+    inline def Parse2DArray(
       name: String,
       data: js.Array[js.Array[integer]],
       tileWidth: integer,
@@ -1131,8 +1119,7 @@ object Tilemaps {
       * consumption. However if your map is small or you need to update the tiles dynamically, then leave
       * the default value set.
       */
-    @scala.inline
-    def ParseCSV(name: String, data: String, tileWidth: integer, tileHeight: integer, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseCSV")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], tileWidth.asInstanceOf[js.Any], tileHeight.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
+    inline def ParseCSV(name: String, data: String, tileWidth: integer, tileHeight: integer, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseCSV")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], tileWidth.asInstanceOf[js.Any], tileHeight.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
     
     object Tiled {
       
@@ -1144,22 +1131,19 @@ object Tilemaps {
         * Copy properties from tileset to tiles.
         * @param mapData The Map Data object.
         */
-      @scala.inline
-      def AssignTileProperties(mapData: typings.phaser.Phaser.Tilemaps.MapData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AssignTileProperties")(mapData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def AssignTileProperties(mapData: typings.phaser.Phaser.Tilemaps.MapData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AssignTileProperties")(mapData.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /**
         * Decode base-64 encoded data, for example as exported by Tiled.
         * @param data Base-64 encoded data to decode.
         */
-      @scala.inline
-      def Base64Decode(data: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+      inline def Base64Decode(data: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
       
       /**
         * Master list of tiles -> x, y, index in tileset.
         * @param mapData The Map Data object.
         */
-      @scala.inline
-      def BuildTilesetIndex(mapData: typings.phaser.Phaser.Tilemaps.MapData): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildTilesetIndex")(mapData.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+      inline def BuildTilesetIndex(mapData: typings.phaser.Phaser.Tilemaps.MapData): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildTilesetIndex")(mapData.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
       
       /**
         * Parse a Tiled group layer and create a state object for inheriting.
@@ -1167,29 +1151,23 @@ object Tilemaps {
         * @param currentl The current group layer from the Tiled JSON file.
         * @param parentstate The state of the parent group (if any).
         */
-      @scala.inline
-      def CreateGroupLayer(json: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-      @scala.inline
-      def CreateGroupLayer(json: js.Object, currentl: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def CreateGroupLayer(json: js.Object, currentl: js.Object, parentstate: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any], parentstate.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def CreateGroupLayer(json: js.Object, currentl: Unit, parentstate: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any], parentstate.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def CreateGroupLayer(json: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def CreateGroupLayer(json: js.Object, currentl: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def CreateGroupLayer(json: js.Object, currentl: js.Object, parentstate: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any], parentstate.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def CreateGroupLayer(json: js.Object, currentl: Unit, parentstate: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateGroupLayer")(json.asInstanceOf[js.Any], currentl.asInstanceOf[js.Any], parentstate.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       /**
         * See Tiled documentation on tile flipping:
         * http://docs.mapeditor.org/en/latest/reference/tmx-map-format/
         * @param gid A Tiled GID.
         */
-      @scala.inline
-      def ParseGID(gid: Double): GIDData = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseGID")(gid.asInstanceOf[js.Any]).asInstanceOf[GIDData]
+      inline def ParseGID(gid: Double): GIDData = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseGID")(gid.asInstanceOf[js.Any]).asInstanceOf[GIDData]
       
       /**
         * Parses a Tiled JSON object into an array of objects with details about the image layers.
         * @param json The Tiled JSON object.
         */
-      @scala.inline
-      def ParseImageLayers(json: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseImageLayers")(json.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+      inline def ParseImageLayers(json: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseImageLayers")(json.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
       
       /**
         * Parses a Tiled JSON object into a new MapData object.
@@ -1202,8 +1180,7 @@ object Tilemaps {
         * consumption. However if your map is small or you need to update the tiles dynamically, then leave
         * the default value set.
         */
-      @scala.inline
-      def ParseJSONTiled(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseJSONTiled")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
+      inline def ParseJSONTiled(name: String, json: js.Object, insertNull: Boolean): typings.phaser.Phaser.Tilemaps.MapData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseJSONTiled")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tilemaps.MapData]
       
       /**
         * Convert a Tiled object to an internal parsed object normalising and copying properties over, while applying optional x and y offsets. The parsed object will always have the properties `id`, `name`, `type`, `rotation`, `properties`, `visible`, `x`, `y`, `width` and `height`. Other properties will be added according to the object type (such as text, polyline, gid etc.)
@@ -1211,21 +1188,16 @@ object Tilemaps {
         * @param offsetX Optional additional offset to apply to the object's x property. Defaults to 0. Default 0.
         * @param offsetY Optional additional offset to apply to the object's y property. Defaults to 0. Default 0.
         */
-      @scala.inline
-      def ParseObject(tiledObject: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-      @scala.inline
-      def ParseObject(tiledObject: js.Object, offsetX: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def ParseObject(tiledObject: js.Object, offsetX: Double, offsetY: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-      @scala.inline
-      def ParseObject(tiledObject: js.Object, offsetX: Unit, offsetY: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def ParseObject(tiledObject: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def ParseObject(tiledObject: js.Object, offsetX: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def ParseObject(tiledObject: js.Object, offsetX: Double, offsetY: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def ParseObject(tiledObject: js.Object, offsetX: Unit, offsetY: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseObject")(tiledObject.asInstanceOf[js.Any], offsetX.asInstanceOf[js.Any], offsetY.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       /**
         * Parses a Tiled JSON object into an array of ObjectLayer objects.
         * @param json The Tiled JSON object.
         */
-      @scala.inline
-      def ParseObjectLayers(json: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseObjectLayers")(json.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+      inline def ParseObjectLayers(json: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseObjectLayers")(json.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
       
       /**
         * Parses all tilemap layers in a Tiled JSON object into new LayerData objects.
@@ -1233,15 +1205,13 @@ object Tilemaps {
         * @param insertNull Controls how empty tiles, tiles with an index of -1, in the map
         * data are handled (see {@link Phaser.Tilemaps.Parsers.Tiled.ParseJSONTiled}).
         */
-      @scala.inline
-      def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[typings.phaser.Phaser.Tilemaps.LayerData] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseTileLayers")(json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Tilemaps.LayerData]]
+      inline def ParseTileLayers(json: js.Object, insertNull: Boolean): js.Array[typings.phaser.Phaser.Tilemaps.LayerData] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseTileLayers")(json.asInstanceOf[js.Any], insertNull.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.Phaser.Tilemaps.LayerData]]
       
       /**
         * Tilesets and Image Collections
         * @param json The Tiled JSON data.
         */
-      @scala.inline
-      def ParseTilesets(json: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseTilesets")(json.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+      inline def ParseTilesets(json: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseTilesets")(json.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     }
   }
   

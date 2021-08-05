@@ -31,49 +31,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object PresetLayoutOptions {
   
-  @scala.inline
-  def apply(): PresetLayoutOptions = {
+  inline def apply(): PresetLayoutOptions = {
     val __obj = js.Dynamic.literal(name = "preset")
     __obj.asInstanceOf[PresetLayoutOptions]
   }
   
-  @scala.inline
-  implicit class PresetLayoutOptionsMutableBuilder[Self <: PresetLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PresetLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+    inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+    inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
-    @scala.inline
-    def setName(value: preset): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: preset): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
-    @scala.inline
-    def setPositions(value: NodePositionMap | NodePositionFunction): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: NodePositionMap | NodePositionFunction): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsFunction1(value: /* nodeid */ String => Position): Self = StObject.set(x, "positions", js.Any.fromFunction1(value))
+    inline def setPositionsFunction1(value: /* nodeid */ String => Position): Self = StObject.set(x, "positions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
+    inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

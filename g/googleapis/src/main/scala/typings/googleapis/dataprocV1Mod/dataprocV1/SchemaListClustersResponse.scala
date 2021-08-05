@@ -23,28 +23,21 @@ trait SchemaListClustersResponse extends StObject {
 }
 object SchemaListClustersResponse {
   
-  @scala.inline
-  def apply(): SchemaListClustersResponse = {
+  inline def apply(): SchemaListClustersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListClustersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListClustersResponseMutableBuilder[Self <: SchemaListClustersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListClustersResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[SchemaCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[SchemaCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: SchemaCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: SchemaCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

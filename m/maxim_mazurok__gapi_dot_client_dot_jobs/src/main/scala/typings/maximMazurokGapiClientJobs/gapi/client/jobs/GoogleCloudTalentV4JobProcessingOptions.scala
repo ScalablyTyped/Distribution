@@ -17,25 +17,19 @@ trait GoogleCloudTalentV4JobProcessingOptions extends StObject {
 }
 object GoogleCloudTalentV4JobProcessingOptions {
   
-  @scala.inline
-  def apply(): GoogleCloudTalentV4JobProcessingOptions = {
+  inline def apply(): GoogleCloudTalentV4JobProcessingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudTalentV4JobProcessingOptions]
   }
   
-  @scala.inline
-  implicit class GoogleCloudTalentV4JobProcessingOptionsMutableBuilder[Self <: GoogleCloudTalentV4JobProcessingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudTalentV4JobProcessingOptions](x: Self) {
     
-    @scala.inline
-    def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
+    inline def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
+    inline def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
     
-    @scala.inline
-    def setHtmlSanitization(value: String): Self = StObject.set(x, "htmlSanitization", value.asInstanceOf[js.Any])
+    inline def setHtmlSanitization(value: String): Self = StObject.set(x, "htmlSanitization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlSanitizationUndefined: Self = StObject.set(x, "htmlSanitization", js.undefined)
+    inline def setHtmlSanitizationUndefined: Self = StObject.set(x, "htmlSanitization", js.undefined)
   }
 }

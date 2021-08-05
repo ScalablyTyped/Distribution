@@ -15,22 +15,17 @@ trait IAssociatedPropertyDef extends StObject {
 }
 object IAssociatedPropertyDef {
   
-  @scala.inline
-  def apply(Clone: () => IAssociatedPropertyDef, PropertyDef: MFBuiltInPropertyDef | Double, Required: Boolean): IAssociatedPropertyDef = {
+  inline def apply(Clone: () => IAssociatedPropertyDef, PropertyDef: MFBuiltInPropertyDef | Double, Required: Boolean): IAssociatedPropertyDef = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), PropertyDef = PropertyDef.asInstanceOf[js.Any], Required = Required.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAssociatedPropertyDef]
   }
   
-  @scala.inline
-  implicit class IAssociatedPropertyDefMutableBuilder[Self <: IAssociatedPropertyDef] (val x: Self) extends AnyVal {
+  extension [Self <: IAssociatedPropertyDef](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IAssociatedPropertyDef): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAssociatedPropertyDef): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
+    inline def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
   }
 }

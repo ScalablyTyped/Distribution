@@ -12,25 +12,19 @@ trait FlipEffectOptions extends StObject {
 }
 object FlipEffectOptions {
   
-  @scala.inline
-  def apply(): FlipEffectOptions = {
+  inline def apply(): FlipEffectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlipEffectOptions]
   }
   
-  @scala.inline
-  implicit class FlipEffectOptionsMutableBuilder[Self <: FlipEffectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FlipEffectOptions](x: Self) {
     
-    @scala.inline
-    def setLimitRotation(value: Boolean): Self = StObject.set(x, "limitRotation", value.asInstanceOf[js.Any])
+    inline def setLimitRotation(value: Boolean): Self = StObject.set(x, "limitRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitRotationUndefined: Self = StObject.set(x, "limitRotation", js.undefined)
+    inline def setLimitRotationUndefined: Self = StObject.set(x, "limitRotation", js.undefined)
     
-    @scala.inline
-    def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
+    inline def setSlideShadows(value: Boolean): Self = StObject.set(x, "slideShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
+    inline def setSlideShadowsUndefined: Self = StObject.set(x, "slideShadows", js.undefined)
   }
 }

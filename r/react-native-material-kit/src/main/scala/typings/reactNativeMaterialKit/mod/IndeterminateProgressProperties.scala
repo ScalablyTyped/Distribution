@@ -15,25 +15,19 @@ trait IndeterminateProgressProperties
 }
 object IndeterminateProgressProperties {
   
-  @scala.inline
-  def apply(): IndeterminateProgressProperties = {
+  inline def apply(): IndeterminateProgressProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndeterminateProgressProperties]
   }
   
-  @scala.inline
-  implicit class IndeterminateProgressPropertiesMutableBuilder[Self <: IndeterminateProgressProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IndeterminateProgressProperties](x: Self) {
     
-    @scala.inline
-    def setProgressAniDuration(value: Double): Self = StObject.set(x, "progressAniDuration", value.asInstanceOf[js.Any])
+    inline def setProgressAniDuration(value: Double): Self = StObject.set(x, "progressAniDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressAniDurationUndefined: Self = StObject.set(x, "progressAniDuration", js.undefined)
+    inline def setProgressAniDurationUndefined: Self = StObject.set(x, "progressAniDuration", js.undefined)
     
-    @scala.inline
-    def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
+    inline def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
+    inline def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
   }
 }

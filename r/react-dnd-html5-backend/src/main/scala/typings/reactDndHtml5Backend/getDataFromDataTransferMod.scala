@@ -11,6 +11,5 @@ object getDataFromDataTransferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDataFromDataTransfer(dataTransfer: DataTransfer, typesToTry: js.Array[String], defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataFromDataTransfer")(dataTransfer.asInstanceOf[js.Any], typesToTry.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getDataFromDataTransfer(dataTransfer: DataTransfer, typesToTry: js.Array[String], defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataFromDataTransfer")(dataTransfer.asInstanceOf[js.Any], typesToTry.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
 }

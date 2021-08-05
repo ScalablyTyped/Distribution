@@ -18,19 +18,15 @@ trait ProjectEnvironmentRegistryCredential extends StObject {
 }
 object ProjectEnvironmentRegistryCredential {
   
-  @scala.inline
-  def apply(credential: String, credentialProvider: String): ProjectEnvironmentRegistryCredential = {
+  inline def apply(credential: String, credentialProvider: String): ProjectEnvironmentRegistryCredential = {
     val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], credentialProvider = credentialProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectEnvironmentRegistryCredential]
   }
   
-  @scala.inline
-  implicit class ProjectEnvironmentRegistryCredentialMutableBuilder[Self <: ProjectEnvironmentRegistryCredential] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectEnvironmentRegistryCredential](x: Self) {
     
-    @scala.inline
-    def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialProvider(value: String): Self = StObject.set(x, "credentialProvider", value.asInstanceOf[js.Any])
+    inline def setCredentialProvider(value: String): Self = StObject.set(x, "credentialProvider", value.asInstanceOf[js.Any])
   }
 }

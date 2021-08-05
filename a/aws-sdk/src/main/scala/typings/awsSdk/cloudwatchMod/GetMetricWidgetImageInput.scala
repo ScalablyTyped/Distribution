@@ -18,22 +18,17 @@ trait GetMetricWidgetImageInput extends StObject {
 }
 object GetMetricWidgetImageInput {
   
-  @scala.inline
-  def apply(MetricWidget: MetricWidget): GetMetricWidgetImageInput = {
+  inline def apply(MetricWidget: MetricWidget): GetMetricWidgetImageInput = {
     val __obj = js.Dynamic.literal(MetricWidget = MetricWidget.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricWidgetImageInput]
   }
   
-  @scala.inline
-  implicit class GetMetricWidgetImageInputMutableBuilder[Self <: GetMetricWidgetImageInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricWidgetImageInput](x: Self) {
     
-    @scala.inline
-    def setMetricWidget(value: MetricWidget): Self = StObject.set(x, "MetricWidget", value.asInstanceOf[js.Any])
+    inline def setMetricWidget(value: MetricWidget): Self = StObject.set(x, "MetricWidget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
+    inline def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFormatUndefined: Self = StObject.set(x, "OutputFormat", js.undefined)
+    inline def setOutputFormatUndefined: Self = StObject.set(x, "OutputFormat", js.undefined)
   }
 }

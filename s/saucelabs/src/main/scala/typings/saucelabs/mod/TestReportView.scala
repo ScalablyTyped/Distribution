@@ -22,25 +22,19 @@ trait TestReportView
 }
 object TestReportView {
   
-  @scala.inline
-  def apply(): TestReportView = {
+  inline def apply(): TestReportView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestReportView]
   }
   
-  @scala.inline
-  implicit class TestReportViewMutableBuilder[Self <: TestReportView] (val x: Self) extends AnyVal {
+  extension [Self <: TestReportView](x: Self) {
     
-    @scala.inline
-    def setReportId(value: Id): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
+    inline def setReportId(value: Id): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportIdUndefined: Self = StObject.set(x, "reportId", js.undefined)
+    inline def setReportIdUndefined: Self = StObject.set(x, "reportId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

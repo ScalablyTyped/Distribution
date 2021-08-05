@@ -78,7 +78,7 @@ trait ListBox extends StObject {
   
   var Locked: Boolean = js.native
   
-  @JSName("MSForms.ListBox_typekey")
+  /* private */ @JSName("MSForms.ListBox_typekey")
   var MSFormsDotListBox_typekey: ListBox = js.native
   
   var MatchEntry: fmMatchEntry = js.native

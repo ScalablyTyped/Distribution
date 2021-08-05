@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventBasedGatewayType extends StObject
 object EventBasedGatewayType {
   
-  @scala.inline
-  def Exclusive: typings.bpmnModdle.bpmnModdleStrings.Exclusive = "Exclusive".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Exclusive]
+  inline def Exclusive: typings.bpmnModdle.bpmnModdleStrings.Exclusive = "Exclusive".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Exclusive]
   
-  @scala.inline
-  def Parallel: typings.bpmnModdle.bpmnModdleStrings.Parallel = "Parallel".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Parallel]
+  inline def Parallel: typings.bpmnModdle.bpmnModdleStrings.Parallel = "Parallel".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Parallel]
 }

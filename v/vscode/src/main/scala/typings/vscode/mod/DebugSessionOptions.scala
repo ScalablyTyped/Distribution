@@ -34,37 +34,27 @@ trait DebugSessionOptions extends StObject {
 }
 object DebugSessionOptions {
   
-  @scala.inline
-  def apply(): DebugSessionOptions = {
+  inline def apply(): DebugSessionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugSessionOptions]
   }
   
-  @scala.inline
-  implicit class DebugSessionOptionsMutableBuilder[Self <: DebugSessionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DebugSessionOptions](x: Self) {
     
-    @scala.inline
-    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
-    @scala.inline
-    def setConsoleMode(value: DebugConsoleMode): Self = StObject.set(x, "consoleMode", value.asInstanceOf[js.Any])
+    inline def setConsoleMode(value: DebugConsoleMode): Self = StObject.set(x, "consoleMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsoleModeUndefined: Self = StObject.set(x, "consoleMode", js.undefined)
+    inline def setConsoleModeUndefined: Self = StObject.set(x, "consoleMode", js.undefined)
     
-    @scala.inline
-    def setNoDebug(value: Boolean): Self = StObject.set(x, "noDebug", value.asInstanceOf[js.Any])
+    inline def setNoDebug(value: Boolean): Self = StObject.set(x, "noDebug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDebugUndefined: Self = StObject.set(x, "noDebug", js.undefined)
+    inline def setNoDebugUndefined: Self = StObject.set(x, "noDebug", js.undefined)
     
-    @scala.inline
-    def setParentSession(value: DebugSession): Self = StObject.set(x, "parentSession", value.asInstanceOf[js.Any])
+    inline def setParentSession(value: DebugSession): Self = StObject.set(x, "parentSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSessionUndefined: Self = StObject.set(x, "parentSession", js.undefined)
+    inline def setParentSessionUndefined: Self = StObject.set(x, "parentSession", js.undefined)
   }
 }

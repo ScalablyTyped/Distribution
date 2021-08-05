@@ -23,8 +23,7 @@ trait JumpList extends StObject {
 }
 object JumpList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     items: IVector[JumpListItem],
     saveAsync: () => IPromiseWithIAsyncAction,
     systemGroupKind: JumpListSystemGroupKind
@@ -33,16 +32,12 @@ object JumpList {
     __obj.asInstanceOf[JumpList]
   }
   
-  @scala.inline
-  implicit class JumpListMutableBuilder[Self <: JumpList] (val x: Self) extends AnyVal {
+  extension [Self <: JumpList](x: Self) {
     
-    @scala.inline
-    def setItems(value: IVector[JumpListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IVector[JumpListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
+    inline def setSaveAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSystemGroupKind(value: JumpListSystemGroupKind): Self = StObject.set(x, "systemGroupKind", value.asInstanceOf[js.Any])
+    inline def setSystemGroupKind(value: JumpListSystemGroupKind): Self = StObject.set(x, "systemGroupKind", value.asInstanceOf[js.Any])
   }
 }

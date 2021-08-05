@@ -20,23 +20,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSQualifiedName_ {
   
-  @scala.inline
-  def apply(left: TSEntityName, right: Identifier_): TSQualifiedName_ = {
+  inline def apply(left: TSEntityName, right: Identifier_): TSQualifiedName_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSQualifiedName")
     __obj.asInstanceOf[TSQualifiedName_]
   }
   
-  @scala.inline
-  implicit class TSQualifiedName_MutableBuilder[Self <: TSQualifiedName_] (val x: Self) extends AnyVal {
+  extension [Self <: TSQualifiedName_](x: Self) {
     
-    @scala.inline
-    def setLeft(value: TSEntityName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: TSEntityName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Identifier_): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Identifier_): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSQualifiedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSQualifiedName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

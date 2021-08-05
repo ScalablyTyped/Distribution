@@ -10,19 +10,15 @@ trait CellFontColor extends StObject {
 }
 object CellFontColor {
   
-  @scala.inline
-  def apply(): CellFontColor = {
+  inline def apply(): CellFontColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellFontColor]
   }
   
-  @scala.inline
-  implicit class CellFontColorMutableBuilder[Self <: CellFontColor] (val x: Self) extends AnyVal {
+  extension [Self <: CellFontColor](x: Self) {
     
-    @scala.inline
-    def setCellFontColor(value: String): Self = StObject.set(x, "cellFontColor", value.asInstanceOf[js.Any])
+    inline def setCellFontColor(value: String): Self = StObject.set(x, "cellFontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellFontColorUndefined: Self = StObject.set(x, "cellFontColor", js.undefined)
+    inline def setCellFontColorUndefined: Self = StObject.set(x, "cellFontColor", js.undefined)
   }
 }

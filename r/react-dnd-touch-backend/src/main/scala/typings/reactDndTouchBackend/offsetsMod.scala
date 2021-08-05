@@ -15,24 +15,15 @@ object offsetsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEventClientOffset(e: MouseEvent): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
-  @scala.inline
-  def getEventClientOffset(e: MouseEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
-  @scala.inline
-  def getEventClientOffset(e: Touch): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
-  @scala.inline
-  def getEventClientOffset(e: TouchEvent): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
-  @scala.inline
-  def getEventClientOffset(e: TouchEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
-  @scala.inline
-  def getEventClientOffset(e: Touch, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientOffset(e: MouseEvent): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientOffset(e: MouseEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientOffset(e: Touch): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientOffset(e: TouchEvent): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientOffset(e: TouchEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientOffset(e: Touch, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
   
-  @scala.inline
-  def getEventClientTouchOffset(e: TouchEvent): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientTouchOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
-  @scala.inline
-  def getEventClientTouchOffset(e: TouchEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientTouchOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientTouchOffset(e: TouchEvent): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientTouchOffset")(e.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getEventClientTouchOffset(e: TouchEvent, lastTargetTouchFallback: Touch): js.UndefOr[XYCoord] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEventClientTouchOffset")(e.asInstanceOf[js.Any], lastTargetTouchFallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[XYCoord]]
   
-  @scala.inline
-  def getNodeClientOffset(node: Element): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeClientOffset")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
+  inline def getNodeClientOffset(node: Element): js.UndefOr[XYCoord] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeClientOffset")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[XYCoord]]
 }

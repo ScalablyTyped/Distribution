@@ -16,8 +16,7 @@ trait CanvasTextDrawingStyles extends StObject {
 }
 object CanvasTextDrawingStyles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: CanvasDirection,
     font: java.lang.String,
     textAlign: CanvasTextAlign,
@@ -27,19 +26,14 @@ object CanvasTextDrawingStyles {
     __obj.asInstanceOf[CanvasTextDrawingStyles]
   }
   
-  @scala.inline
-  implicit class CanvasTextDrawingStylesMutableBuilder[Self <: CanvasTextDrawingStyles] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasTextDrawingStyles](x: Self) {
     
-    @scala.inline
-    def setDirection(value: CanvasDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: CanvasDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: java.lang.String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: java.lang.String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: CanvasTextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: CanvasTextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBaseline(value: CanvasTextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
+    inline def setTextBaseline(value: CanvasTextBaseline): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
   }
 }

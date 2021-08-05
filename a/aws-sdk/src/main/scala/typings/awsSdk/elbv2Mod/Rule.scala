@@ -33,49 +33,35 @@ trait Rule extends StObject {
 }
 object Rule {
   
-  @scala.inline
-  def apply(): Rule = {
+  inline def apply(): Rule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rule]
   }
   
-  @scala.inline
-  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+  extension [Self <: Rule](x: Self) {
     
-    @scala.inline
-    def setActions(value: Actions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: Actions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setConditions(value: RuleConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: RuleConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
     
-    @scala.inline
-    def setConditionsVarargs(value: RuleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: RuleCondition*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
     
-    @scala.inline
-    def setIsDefault(value: IsDefault): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: IsDefault): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
-    @scala.inline
-    def setPriority(value: String): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: String): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
+    inline def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleArnUndefined: Self = StObject.set(x, "RuleArn", js.undefined)
+    inline def setRuleArnUndefined: Self = StObject.set(x, "RuleArn", js.undefined)
   }
 }

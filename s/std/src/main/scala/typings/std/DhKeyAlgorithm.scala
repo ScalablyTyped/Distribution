@@ -14,19 +14,15 @@ trait DhKeyAlgorithm
 }
 object DhKeyAlgorithm {
   
-  @scala.inline
-  def apply(generator: Uint8Array, name: java.lang.String, prime: Uint8Array): DhKeyAlgorithm = {
+  inline def apply(generator: Uint8Array, name: java.lang.String, prime: Uint8Array): DhKeyAlgorithm = {
     val __obj = js.Dynamic.literal(generator = generator.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prime = prime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DhKeyAlgorithm]
   }
   
-  @scala.inline
-  implicit class DhKeyAlgorithmMutableBuilder[Self <: DhKeyAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: DhKeyAlgorithm](x: Self) {
     
-    @scala.inline
-    def setGenerator(value: Uint8Array): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+    inline def setGenerator(value: Uint8Array): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrime(value: Uint8Array): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
+    inline def setPrime(value: Uint8Array): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
   }
 }

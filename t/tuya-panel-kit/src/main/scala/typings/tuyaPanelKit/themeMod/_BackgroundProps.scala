@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _BackgroundProps extends StObject
 object _BackgroundProps {
   
-  @scala.inline
-  def LinearGradientBackground(): typings.tuyaPanelKit.themeMod.LinearGradientBackground = {
+  inline def LinearGradientBackground(): typings.tuyaPanelKit.themeMod.LinearGradientBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tuyaPanelKit.themeMod.LinearGradientBackground]
   }
   
-  @scala.inline
-  def RadialGradientBackground(): typings.tuyaPanelKit.themeMod.RadialGradientBackground = {
+  inline def RadialGradientBackground(): typings.tuyaPanelKit.themeMod.RadialGradientBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tuyaPanelKit.themeMod.RadialGradientBackground]
   }

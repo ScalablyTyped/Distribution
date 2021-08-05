@@ -13,17 +13,14 @@ object anon {
   }
   object Event {
     
-    @scala.inline
-    def apply(event: HandledEvents): Event = {
+    inline def apply(event: HandledEvents): Event = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setEvent(value: HandledEvents): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: HandledEvents): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
 }

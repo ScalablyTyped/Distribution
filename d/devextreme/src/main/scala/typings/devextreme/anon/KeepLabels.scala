@@ -14,31 +14,23 @@ trait KeepLabels extends StObject {
 }
 object KeepLabels {
   
-  @scala.inline
-  def apply(): KeepLabels = {
+  inline def apply(): KeepLabels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeepLabels]
   }
   
-  @scala.inline
-  implicit class KeepLabelsMutableBuilder[Self <: KeepLabels] (val x: Self) extends AnyVal {
+  extension [Self <: KeepLabels](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setKeepLabels(value: Boolean): Self = StObject.set(x, "keepLabels", value.asInstanceOf[js.Any])
+    inline def setKeepLabels(value: Boolean): Self = StObject.set(x, "keepLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepLabelsUndefined: Self = StObject.set(x, "keepLabels", js.undefined)
+    inline def setKeepLabelsUndefined: Self = StObject.set(x, "keepLabels", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

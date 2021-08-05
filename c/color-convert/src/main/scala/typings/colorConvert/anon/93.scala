@@ -14,16 +14,13 @@ trait `93` extends StObject {
 }
 object `93` {
   
-  @scala.inline
-  def apply(raw: /* from */ LAB_ => LCH_): `93` = {
+  inline def apply(raw: /* from */ LAB_ => LCH_): `93` = {
     val __obj = js.Dynamic.literal(raw = js.Any.fromFunction1(raw))
     __obj.asInstanceOf[`93`]
   }
   
-  @scala.inline
-  implicit class `93MutableBuilder`[Self <: `93`] (val x: Self) extends AnyVal {
+  extension [Self <: `93`](x: Self) {
     
-    @scala.inline
-    def setRaw(value: /* from */ LAB_ => LCH_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+    inline def setRaw(value: /* from */ LAB_ => LCH_): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
   }
 }

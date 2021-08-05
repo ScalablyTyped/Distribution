@@ -9,8 +9,7 @@ trait NetworkSecuritySettings
      with INetworkSecuritySettings
 object NetworkSecuritySettings {
   
-  @scala.inline
-  def apply(networkAuthenticationType: NetworkAuthenticationType, networkEncryptionType: NetworkEncryptionType): NetworkSecuritySettings = {
+  inline def apply(networkAuthenticationType: NetworkAuthenticationType, networkEncryptionType: NetworkEncryptionType): NetworkSecuritySettings = {
     val __obj = js.Dynamic.literal(networkAuthenticationType = networkAuthenticationType.asInstanceOf[js.Any], networkEncryptionType = networkEncryptionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkSecuritySettings]
   }

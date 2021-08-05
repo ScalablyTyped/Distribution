@@ -14,31 +14,23 @@ trait BingLayerOptions extends StObject {
 }
 object BingLayerOptions {
   
-  @scala.inline
-  def apply(): BingLayerOptions = {
+  inline def apply(): BingLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BingLayerOptions]
   }
   
-  @scala.inline
-  implicit class BingLayerOptionsMutableBuilder[Self <: BingLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BingLayerOptions](x: Self) {
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
+    inline def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagerySetUndefined: Self = StObject.set(x, "imagerySet", js.undefined)
+    inline def setImagerySetUndefined: Self = StObject.set(x, "imagerySet", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

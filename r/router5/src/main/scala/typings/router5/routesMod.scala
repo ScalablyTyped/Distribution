@@ -13,8 +13,6 @@ object routesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[Dependencies](routes: js.Array[Route[Dependencies]]): js.Function1[/* router */ Router[Dependencies], Router[Dependencies]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* router */ Router[Dependencies], Router[Dependencies]]]
-  @scala.inline
-  def default[Dependencies](routes: RouteNode): js.Function1[/* router */ Router[Dependencies], Router[Dependencies]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* router */ Router[Dependencies], Router[Dependencies]]]
+  inline def default[Dependencies](routes: js.Array[Route[Dependencies]]): js.Function1[/* router */ Router[Dependencies], Router[Dependencies]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* router */ Router[Dependencies], Router[Dependencies]]]
+  inline def default[Dependencies](routes: RouteNode): js.Function1[/* router */ Router[Dependencies], Router[Dependencies]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* router */ Router[Dependencies], Router[Dependencies]]]
 }

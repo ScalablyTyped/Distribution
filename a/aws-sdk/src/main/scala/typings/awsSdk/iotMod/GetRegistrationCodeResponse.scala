@@ -13,19 +13,15 @@ trait GetRegistrationCodeResponse extends StObject {
 }
 object GetRegistrationCodeResponse {
   
-  @scala.inline
-  def apply(): GetRegistrationCodeResponse = {
+  inline def apply(): GetRegistrationCodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRegistrationCodeResponse]
   }
   
-  @scala.inline
-  implicit class GetRegistrationCodeResponseMutableBuilder[Self <: GetRegistrationCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRegistrationCodeResponse](x: Self) {
     
-    @scala.inline
-    def setRegistrationCode(value: RegistrationCode): Self = StObject.set(x, "registrationCode", value.asInstanceOf[js.Any])
+    inline def setRegistrationCode(value: RegistrationCode): Self = StObject.set(x, "registrationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationCodeUndefined: Self = StObject.set(x, "registrationCode", js.undefined)
+    inline def setRegistrationCodeUndefined: Self = StObject.set(x, "registrationCode", js.undefined)
   }
 }

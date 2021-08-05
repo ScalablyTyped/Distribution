@@ -23,9 +23,9 @@ object armManagerMod {
     @js.native
     class Manager () extends StObject {
       
-      var data: js.Any = js.native
+      /* private */ var data: js.Any = js.native
       
-      var events: js.Any = js.native
+      /* private */ var events: js.Any = js.native
       
       /**
         * Gets a subscription based on id from the mock data.
@@ -132,32 +132,24 @@ object armManagerMod {
     }
     object MockData {
       
-      @scala.inline
-      def apply(): MockData = {
+      inline def apply(): MockData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MockData]
       }
       
-      @scala.inline
-      implicit class MockDataMutableBuilder[Self <: MockData] (val x: Self) extends AnyVal {
+      extension [Self <: MockData](x: Self) {
         
-        @scala.inline
-        def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+        inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+        inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
         
-        @scala.inline
-        def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+        inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
         
-        @scala.inline
-        def setSubscriptions(value: js.Array[typings.msportalfxMock.mockModelMod.Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+        inline def setSubscriptions(value: js.Array[typings.msportalfxMock.mockModelMod.Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
+        inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
         
-        @scala.inline
-        def setSubscriptionsVarargs(value: typings.msportalfxMock.mockModelMod.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+        inline def setSubscriptionsVarargs(value: typings.msportalfxMock.mockModelMod.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
       }
     }
   }

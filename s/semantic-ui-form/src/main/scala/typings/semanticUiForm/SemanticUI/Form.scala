@@ -329,26 +329,20 @@ object Form {
     }
     object Impl {
       
-      @scala.inline
-      def apply(active: String, disabled: String, placeholder: String, visible: String): Impl = {
+      inline def apply(active: String, disabled: String, placeholder: String, visible: String): Impl = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+        inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       }
     }
     
@@ -363,17 +357,14 @@ object Form {
   }
   object ErrorSettings {
     
-    @scala.inline
-    def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+    inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorSettings]
     }
     
-    @scala.inline
-    implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorSettings](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
     
     trait Impl extends StObject {
@@ -385,17 +376,14 @@ object Form {
     }
     object Impl {
       
-      @scala.inline
-      def apply(method: String): Impl = {
+      inline def apply(method: String): Impl = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
     }
     
@@ -406,17 +394,14 @@ object Form {
     }
     object Param {
       
-      @scala.inline
-      def apply(method: String & js.UndefOr[String]): typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param = {
+      inline def apply(method: String & js.UndefOr[String]): typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param]
       }
       
-      @scala.inline
-      implicit class ParamMutableBuilder[Self <: typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param] (val x: Self) extends AnyVal {
+      extension [Self <: typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param](x: Self) {
         
-        @scala.inline
-        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -431,29 +416,22 @@ object Form {
   }
   object Field {
     
-    @scala.inline
-    def apply(identifier: String, rules: js.Array[Rule]): Field = {
+    inline def apply(identifier: String, rules: js.Array[Rule]): Field = {
       val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[Field]
     }
     
-    @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+    extension [Self <: Field](x: Self) {
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+      inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
   
@@ -466,8 +444,7 @@ object Form {
   }
   object MetadataSettings {
     
-    @scala.inline
-    def apply(validate: String & js.UndefOr[String]): MetadataSettings = {
+    inline def apply(validate: String & js.UndefOr[String]): MetadataSettings = {
       val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetadataSettings]
     }
@@ -481,25 +458,20 @@ object Form {
     }
     object Impl {
       
-      @scala.inline
-      def apply(validate: String): Impl = {
+      inline def apply(validate: String): Impl = {
         val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setValidate(value: String): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+        inline def setValidate(value: String): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class MetadataSettingsMutableBuilder[Self <: MetadataSettings] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataSettings](x: Self) {
       
-      @scala.inline
-      def setValidate(value: String & js.UndefOr[String]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: String & js.UndefOr[String]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     }
     
     /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.MetadataSettings._Impl, 'validate'> & std.Partial<std.Pick<semantic-ui-form.SemanticUI.Form.MetadataSettings._Impl, keyof semantic-ui-form.SemanticUI.Form.MetadataSettings._Impl>> */
@@ -509,17 +481,14 @@ object Form {
     }
     object Param {
       
-      @scala.inline
-      def apply(validate: String & js.UndefOr[String]): typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param = {
+      inline def apply(validate: String & js.UndefOr[String]): typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param = {
         val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param]
       }
       
-      @scala.inline
-      implicit class ParamMutableBuilder[Self <: typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param] (val x: Self) extends AnyVal {
+      extension [Self <: typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param](x: Self) {
         
-        @scala.inline
-        def setValidate(value: String & js.UndefOr[String]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+        inline def setValidate(value: String & js.UndefOr[String]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -660,8 +629,7 @@ object Form {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         checked: String,
         contain: String,
         containExactly: String,
@@ -694,86 +662,59 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+        inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContain(value: String): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+        inline def setContain(value: String): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContainExactly(value: String): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
+        inline def setContainExactly(value: String): Self = StObject.set(x, "containExactly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreditCard(value: String): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
+        inline def setCreditCard(value: String): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+        inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDifferent(value: String): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
+        inline def setDifferent(value: String): Self = StObject.set(x, "different", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
+        inline def setDoesntContain(value: String): Self = StObject.set(x, "doesntContain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDoesntContainExactly(value: String): Self = StObject.set(x, "doesntContainExactly", value.asInstanceOf[js.Any])
+        inline def setDoesntContainExactly(value: String): Self = StObject.set(x, "doesntContainExactly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+        inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+        inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExactCount(value: String): Self = StObject.set(x, "exactCount", value.asInstanceOf[js.Any])
+        inline def setExactCount(value: String): Self = StObject.set(x, "exactCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExactLength(value: String): Self = StObject.set(x, "exactLength", value.asInstanceOf[js.Any])
+        inline def setExactLength(value: String): Self = StObject.set(x, "exactLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+        inline def setInteger(value: String): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+        inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsExactly(value: String): Self = StObject.set(x, "isExactly", value.asInstanceOf[js.Any])
+        inline def setIsExactly(value: String): Self = StObject.set(x, "isExactly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+        inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxCount(value: String): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+        inline def setMaxCount(value: String): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxLength(value: String): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+        inline def setMaxLength(value: String): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinCount(value: String): Self = StObject.set(x, "minCount", value.asInstanceOf[js.Any])
+        inline def setMinCount(value: String): Self = StObject.set(x, "minCount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinLength(value: String): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+        inline def setMinLength(value: String): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNot(value: String): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+        inline def setNot(value: String): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotExactly(value: String): Self = StObject.set(x, "notExactly", value.asInstanceOf[js.Any])
+        inline def setNotExactly(value: String): Self = StObject.set(x, "notExactly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+        inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRegExp(value: String): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+        inline def setRegExp(value: String): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
     
@@ -789,21 +730,17 @@ object Form {
   }
   object Rule {
     
-    @scala.inline
-    def apply(prompt: String, `type`: String): Rule = {
+    inline def apply(prompt: String, `type`: String): Rule = {
       val __obj = js.Dynamic.literal(prompt = prompt.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
     }
     
-    @scala.inline
-    implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+    extension [Self <: Rule](x: Self) {
       
-      @scala.inline
-      def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -813,20 +750,16 @@ object Form {
   }
   object Rules {
     
-    @scala.inline
-    def apply(rules: js.Array[Rule]): Rules = {
+    inline def apply(rules: js.Array[Rule]): Rules = {
       val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rules]
     }
     
-    @scala.inline
-    implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+    extension [Self <: Rules](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
   
@@ -866,32 +799,24 @@ object Form {
     }
     object Impl {
       
-      @scala.inline
-      def apply(field: String, group: String, input: String, message: String, prompt: String, submit: String): Impl = {
+      inline def apply(field: String, group: String, input: String, message: String, prompt: String, submit: String): Impl = {
         val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+        inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+        inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+        inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+        inline def setSubmit(value: String): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
       }
     }
     
@@ -909,20 +834,16 @@ object Form {
     }
     object Impl {
       
-      @scala.inline
-      def apply(error: js.Array[String] => JQuery, prompt: js.Array[String] => JQuery): Impl = {
+      inline def apply(error: js.Array[String] => JQuery, prompt: js.Array[String] => JQuery): Impl = {
         val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), prompt = js.Any.fromFunction1(prompt))
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setError(value: js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+        inline def setError(value: js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPrompt(value: js.Array[String] => JQuery): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
+        inline def setPrompt(value: js.Array[String] => JQuery): Self = StObject.set(x, "prompt", js.Any.fromFunction1(value))
       }
     }
     
@@ -946,20 +867,16 @@ object Form {
     }
     object Impl {
       
-      @scala.inline
-      def apply(unspecifiedField: String, unspecifiedRule: String): Impl = {
+      inline def apply(unspecifiedField: String, unspecifiedRule: String): Impl = {
         val __obj = js.Dynamic.literal(unspecifiedField = unspecifiedField.asInstanceOf[js.Any], unspecifiedRule = unspecifiedRule.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setUnspecifiedField(value: String): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
+        inline def setUnspecifiedField(value: String): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
+        inline def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
       }
     }
     

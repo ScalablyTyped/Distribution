@@ -23,25 +23,19 @@ trait SetLoadBalancerPoliciesForBackendServerInput extends StObject {
 }
 object SetLoadBalancerPoliciesForBackendServerInput {
   
-  @scala.inline
-  def apply(InstancePort: EndPointPort, LoadBalancerName: AccessPointName, PolicyNames: PolicyNames): SetLoadBalancerPoliciesForBackendServerInput = {
+  inline def apply(InstancePort: EndPointPort, LoadBalancerName: AccessPointName, PolicyNames: PolicyNames): SetLoadBalancerPoliciesForBackendServerInput = {
     val __obj = js.Dynamic.literal(InstancePort = InstancePort.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], PolicyNames = PolicyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLoadBalancerPoliciesForBackendServerInput]
   }
   
-  @scala.inline
-  implicit class SetLoadBalancerPoliciesForBackendServerInputMutableBuilder[Self <: SetLoadBalancerPoliciesForBackendServerInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetLoadBalancerPoliciesForBackendServerInput](x: Self) {
     
-    @scala.inline
-    def setInstancePort(value: EndPointPort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
+    inline def setInstancePort(value: EndPointPort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNames(value: PolicyNames): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
+    inline def setPolicyNames(value: PolicyNames): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: PolicyName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
   }
 }

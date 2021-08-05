@@ -15,31 +15,23 @@ trait GoogleCloudDatalabelingV1beta1ObjectTrackingFrame extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ObjectTrackingFrame {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ObjectTrackingFrame = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ObjectTrackingFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ObjectTrackingFrame]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ObjectTrackingFrameMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: GoogleCloudDatalabelingV1beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: GoogleCloudDatalabelingV1beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setNormalizedBoundingPoly(value: GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly): Self = StObject.set(x, "normalizedBoundingPoly", value.asInstanceOf[js.Any])
+    inline def setNormalizedBoundingPoly(value: GoogleCloudDatalabelingV1beta1NormalizedBoundingPoly): Self = StObject.set(x, "normalizedBoundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedBoundingPolyUndefined: Self = StObject.set(x, "normalizedBoundingPoly", js.undefined)
+    inline def setNormalizedBoundingPolyUndefined: Self = StObject.set(x, "normalizedBoundingPoly", js.undefined)
     
-    @scala.inline
-    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

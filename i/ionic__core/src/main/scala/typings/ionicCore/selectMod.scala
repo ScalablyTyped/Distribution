@@ -20,7 +20,7 @@ object selectMod {
     extends StObject
        with ComponentInterface {
     
-    var buttonEl: js.Any = js.native
+    /* private */ var buttonEl: js.Any = js.native
     
     /**
       * The text to display on the cancel button.
@@ -32,7 +32,7 @@ object selectMod {
     /**
       * Close the select interface.
       */
-    var close: js.Any = js.native
+    /* private */ var close: js.Any = js.native
     
     /**
       * A property name or function used to compare object values
@@ -45,15 +45,15 @@ object selectMod {
     @JSName("connectedCallback")
     def connectedCallback_MSelect(): js.Promise[Unit] = js.native
     
-    var createActionSheetButtons: js.Any = js.native
+    /* private */ var createActionSheetButtons: js.Any = js.native
     
-    var createAlertInputs: js.Any = js.native
+    /* private */ var createAlertInputs: js.Any = js.native
     
-    var createOverlay: js.Any = js.native
+    /* private */ var createOverlay: js.Any = js.native
     
-    var createPopoverOptions: js.Any = js.native
+    /* private */ var createPopoverOptions: js.Any = js.native
     
-    var didInit: js.Any = js.native
+    /* private */ var didInit: js.Any = js.native
     
     /**
       * If `true`, the user cannot interact with the select.
@@ -67,15 +67,15 @@ object selectMod {
     
     var el: HTMLIonSelectElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var getLabel: js.Any = js.native
+    /* private */ var getLabel: js.Any = js.native
     
-    var getText: js.Any = js.native
+    /* private */ var getText: js.Any = js.native
     
-    var hasValue: js.Any = js.native
+    /* private */ var hasValue: js.Any = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * The interface the select should use: `action-sheet`, `popover` or `alert`.
@@ -126,7 +126,7 @@ object selectMod {
       */
     var multiple: Boolean = js.native
     
-    var mutationO: js.Any = js.native
+    /* private */ var mutationO: js.Any = js.native
     
     /**
       * The name of the control, which is submitted with the form data.
@@ -138,11 +138,11 @@ object selectMod {
       */
     var okText: String = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
     /**
       * Open the select overlay. The overlay is either an alert, action sheet, or popover,
@@ -153,13 +153,13 @@ object selectMod {
     def open(): js.Promise[js.Any] = js.native
     def open(event: UIEvent): js.Promise[js.Any] = js.native
     
-    var openActionSheet: js.Any = js.native
+    /* private */ var openActionSheet: js.Any = js.native
     
-    var openAlert: js.Any = js.native
+    /* private */ var openAlert: js.Any = js.native
     
-    var openPopover: js.Any = js.native
+    /* private */ var openPopover: js.Any = js.native
     
-    var overlay: js.Any = js.native
+    /* private */ var overlay: js.Any = js.native
     
     /**
       * The text to display when the select is empty.
@@ -174,9 +174,9 @@ object selectMod {
       */
     var selectedText: js.UndefOr[String | Null] = js.native
     
-    var setFocus: js.Any = js.native
+    /* private */ var setFocus: js.Any = js.native
     
-    var updateOverlayOptions: js.Any = js.native
+    /* private */ var updateOverlayOptions: js.Any = js.native
     
     /**
       * the value of the select.

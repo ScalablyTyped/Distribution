@@ -12,16 +12,13 @@ trait IWindowActivatedEventArgs
 }
 object IWindowActivatedEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, windowActivationState: CoreWindowActivationState): IWindowActivatedEventArgs = {
+  inline def apply(handled: Boolean, windowActivationState: CoreWindowActivationState): IWindowActivatedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], windowActivationState = windowActivationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWindowActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IWindowActivatedEventArgsMutableBuilder[Self <: IWindowActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IWindowActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setWindowActivationState(value: CoreWindowActivationState): Self = StObject.set(x, "windowActivationState", value.asInstanceOf[js.Any])
+    inline def setWindowActivationState(value: CoreWindowActivationState): Self = StObject.set(x, "windowActivationState", value.asInstanceOf[js.Any])
   }
 }

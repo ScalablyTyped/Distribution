@@ -18,22 +18,17 @@ trait CreateSnapshotRequest extends StObject {
 }
 object CreateSnapshotRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): CreateSnapshotRequest = {
+  inline def apply(DirectoryId: DirectoryId): CreateSnapshotRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateSnapshotRequestMutableBuilder[Self <: CreateSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: SnapshotName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SnapshotName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

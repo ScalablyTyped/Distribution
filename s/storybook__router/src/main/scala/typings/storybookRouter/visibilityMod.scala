@@ -12,8 +12,7 @@ object visibilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ToggleVisibility(hasHiddenChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleVisibility")(hasHiddenChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def ToggleVisibility(hasHiddenChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleVisibility")(hasHiddenChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -23,23 +22,18 @@ object visibilityMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(hidden: Boolean): Props = {
+    inline def apply(hidden: Boolean): Props = {
       val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     }
   }
 }

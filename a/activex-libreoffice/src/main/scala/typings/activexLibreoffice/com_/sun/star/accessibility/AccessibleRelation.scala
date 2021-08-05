@@ -32,19 +32,15 @@ trait AccessibleRelation extends StObject {
 }
 object AccessibleRelation {
   
-  @scala.inline
-  def apply(RelationType: Double, TargetSet: SafeArray[XInterface]): AccessibleRelation = {
+  inline def apply(RelationType: Double, TargetSet: SafeArray[XInterface]): AccessibleRelation = {
     val __obj = js.Dynamic.literal(RelationType = RelationType.asInstanceOf[js.Any], TargetSet = TargetSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibleRelation]
   }
   
-  @scala.inline
-  implicit class AccessibleRelationMutableBuilder[Self <: AccessibleRelation] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibleRelation](x: Self) {
     
-    @scala.inline
-    def setRelationType(value: Double): Self = StObject.set(x, "RelationType", value.asInstanceOf[js.Any])
+    inline def setRelationType(value: Double): Self = StObject.set(x, "RelationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSet(value: SafeArray[XInterface]): Self = StObject.set(x, "TargetSet", value.asInstanceOf[js.Any])
+    inline def setTargetSet(value: SafeArray[XInterface]): Self = StObject.set(x, "TargetSet", value.asInstanceOf[js.Any])
   }
 }

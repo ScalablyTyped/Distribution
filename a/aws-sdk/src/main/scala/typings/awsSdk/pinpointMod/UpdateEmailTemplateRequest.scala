@@ -25,31 +25,23 @@ trait UpdateEmailTemplateRequest extends StObject {
 }
 object UpdateEmailTemplateRequest {
   
-  @scala.inline
-  def apply(EmailTemplateRequest: EmailTemplateRequest, TemplateName: string): UpdateEmailTemplateRequest = {
+  inline def apply(EmailTemplateRequest: EmailTemplateRequest, TemplateName: string): UpdateEmailTemplateRequest = {
     val __obj = js.Dynamic.literal(EmailTemplateRequest = EmailTemplateRequest.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEmailTemplateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateEmailTemplateRequestMutableBuilder[Self <: UpdateEmailTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEmailTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setCreateNewVersion(value: boolean): Self = StObject.set(x, "CreateNewVersion", value.asInstanceOf[js.Any])
+    inline def setCreateNewVersion(value: boolean): Self = StObject.set(x, "CreateNewVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateNewVersionUndefined: Self = StObject.set(x, "CreateNewVersion", js.undefined)
+    inline def setCreateNewVersionUndefined: Self = StObject.set(x, "CreateNewVersion", js.undefined)
     
-    @scala.inline
-    def setEmailTemplateRequest(value: EmailTemplateRequest): Self = StObject.set(x, "EmailTemplateRequest", value.asInstanceOf[js.Any])
+    inline def setEmailTemplateRequest(value: EmailTemplateRequest): Self = StObject.set(x, "EmailTemplateRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

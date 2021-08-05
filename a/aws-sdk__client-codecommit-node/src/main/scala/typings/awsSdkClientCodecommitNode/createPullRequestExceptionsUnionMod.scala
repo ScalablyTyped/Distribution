@@ -36,152 +36,127 @@ object createPullRequestExceptionsUnionMod {
   trait CreatePullRequestExceptionsUnion extends StObject
   object CreatePullRequestExceptionsUnion {
     
-    @scala.inline
-    def ClientRequestTokenRequiredException(): typings.awsSdkClientCodecommitNode.typesClientRequestTokenRequiredExceptionMod.ClientRequestTokenRequiredException = {
+    inline def ClientRequestTokenRequiredException(): typings.awsSdkClientCodecommitNode.typesClientRequestTokenRequiredExceptionMod.ClientRequestTokenRequiredException = {
       val __obj = js.Dynamic.literal(name = "ClientRequestTokenRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesClientRequestTokenRequiredExceptionMod.ClientRequestTokenRequiredException]
     }
     
-    @scala.inline
-    def EncryptionIntegrityChecksFailedException(): typings.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException = {
+    inline def EncryptionIntegrityChecksFailedException(): typings.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException = {
       val __obj = js.Dynamic.literal(name = "EncryptionIntegrityChecksFailedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException]
     }
     
-    @scala.inline
-    def EncryptionKeyAccessDeniedException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException = {
+    inline def EncryptionKeyAccessDeniedException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyAccessDeniedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException]
     }
     
-    @scala.inline
-    def EncryptionKeyDisabledException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException = {
+    inline def EncryptionKeyDisabledException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyDisabledException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException]
     }
     
-    @scala.inline
-    def EncryptionKeyNotFoundException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException = {
+    inline def EncryptionKeyNotFoundException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException]
     }
     
-    @scala.inline
-    def EncryptionKeyUnavailableException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException = {
+    inline def EncryptionKeyUnavailableException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException = {
       val __obj = js.Dynamic.literal(name = "EncryptionKeyUnavailableException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException]
     }
     
-    @scala.inline
-    def IdempotencyParameterMismatchException(): typings.awsSdkClientCodecommitNode.typesIdempotencyParameterMismatchExceptionMod.IdempotencyParameterMismatchException = {
+    inline def IdempotencyParameterMismatchException(): typings.awsSdkClientCodecommitNode.typesIdempotencyParameterMismatchExceptionMod.IdempotencyParameterMismatchException = {
       val __obj = js.Dynamic.literal(name = "IdempotencyParameterMismatchException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesIdempotencyParameterMismatchExceptionMod.IdempotencyParameterMismatchException]
     }
     
-    @scala.inline
-    def InvalidClientRequestTokenException(): typings.awsSdkClientCodecommitNode.typesInvalidClientRequestTokenExceptionMod.InvalidClientRequestTokenException = {
+    inline def InvalidClientRequestTokenException(): typings.awsSdkClientCodecommitNode.typesInvalidClientRequestTokenExceptionMod.InvalidClientRequestTokenException = {
       val __obj = js.Dynamic.literal(name = "InvalidClientRequestTokenException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidClientRequestTokenExceptionMod.InvalidClientRequestTokenException]
     }
     
-    @scala.inline
-    def InvalidDescriptionException(): typings.awsSdkClientCodecommitNode.typesInvalidDescriptionExceptionMod.InvalidDescriptionException = {
+    inline def InvalidDescriptionException(): typings.awsSdkClientCodecommitNode.typesInvalidDescriptionExceptionMod.InvalidDescriptionException = {
       val __obj = js.Dynamic.literal(name = "InvalidDescriptionException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidDescriptionExceptionMod.InvalidDescriptionException]
     }
     
-    @scala.inline
-    def InvalidReferenceNameException(): typings.awsSdkClientCodecommitNode.typesInvalidReferenceNameExceptionMod.InvalidReferenceNameException = {
+    inline def InvalidReferenceNameException(): typings.awsSdkClientCodecommitNode.typesInvalidReferenceNameExceptionMod.InvalidReferenceNameException = {
       val __obj = js.Dynamic.literal(name = "InvalidReferenceNameException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidReferenceNameExceptionMod.InvalidReferenceNameException]
     }
     
-    @scala.inline
-    def InvalidRepositoryNameException(): typings.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException = {
+    inline def InvalidRepositoryNameException(): typings.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException = {
       val __obj = js.Dynamic.literal(name = "InvalidRepositoryNameException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException]
     }
     
-    @scala.inline
-    def InvalidTargetException(): typings.awsSdkClientCodecommitNode.typesInvalidTargetExceptionMod.InvalidTargetException = {
+    inline def InvalidTargetException(): typings.awsSdkClientCodecommitNode.typesInvalidTargetExceptionMod.InvalidTargetException = {
       val __obj = js.Dynamic.literal(name = "InvalidTargetException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidTargetExceptionMod.InvalidTargetException]
     }
     
-    @scala.inline
-    def InvalidTargetsException(): typings.awsSdkClientCodecommitNode.typesInvalidTargetsExceptionMod.InvalidTargetsException = {
+    inline def InvalidTargetsException(): typings.awsSdkClientCodecommitNode.typesInvalidTargetsExceptionMod.InvalidTargetsException = {
       val __obj = js.Dynamic.literal(name = "InvalidTargetsException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidTargetsExceptionMod.InvalidTargetsException]
     }
     
-    @scala.inline
-    def InvalidTitleException(): typings.awsSdkClientCodecommitNode.typesInvalidTitleExceptionMod.InvalidTitleException = {
+    inline def InvalidTitleException(): typings.awsSdkClientCodecommitNode.typesInvalidTitleExceptionMod.InvalidTitleException = {
       val __obj = js.Dynamic.literal(name = "InvalidTitleException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidTitleExceptionMod.InvalidTitleException]
     }
     
-    @scala.inline
-    def MaximumOpenPullRequestsExceededException(): typings.awsSdkClientCodecommitNode.typesMaximumOpenPullRequestsExceededExceptionMod.MaximumOpenPullRequestsExceededException = {
+    inline def MaximumOpenPullRequestsExceededException(): typings.awsSdkClientCodecommitNode.typesMaximumOpenPullRequestsExceededExceptionMod.MaximumOpenPullRequestsExceededException = {
       val __obj = js.Dynamic.literal(name = "MaximumOpenPullRequestsExceededException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesMaximumOpenPullRequestsExceededExceptionMod.MaximumOpenPullRequestsExceededException]
     }
     
-    @scala.inline
-    def MultipleRepositoriesInPullRequestException(): typings.awsSdkClientCodecommitNode.typesMultipleRepositoriesInPullRequestExceptionMod.MultipleRepositoriesInPullRequestException = {
+    inline def MultipleRepositoriesInPullRequestException(): typings.awsSdkClientCodecommitNode.typesMultipleRepositoriesInPullRequestExceptionMod.MultipleRepositoriesInPullRequestException = {
       val __obj = js.Dynamic.literal(name = "MultipleRepositoriesInPullRequestException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesMultipleRepositoriesInPullRequestExceptionMod.MultipleRepositoriesInPullRequestException]
     }
     
-    @scala.inline
-    def ReferenceDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesReferenceDoesNotExistExceptionMod.ReferenceDoesNotExistException = {
+    inline def ReferenceDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesReferenceDoesNotExistExceptionMod.ReferenceDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "ReferenceDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesReferenceDoesNotExistExceptionMod.ReferenceDoesNotExistException]
     }
     
-    @scala.inline
-    def ReferenceNameRequiredException(): typings.awsSdkClientCodecommitNode.typesReferenceNameRequiredExceptionMod.ReferenceNameRequiredException = {
+    inline def ReferenceNameRequiredException(): typings.awsSdkClientCodecommitNode.typesReferenceNameRequiredExceptionMod.ReferenceNameRequiredException = {
       val __obj = js.Dynamic.literal(name = "ReferenceNameRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesReferenceNameRequiredExceptionMod.ReferenceNameRequiredException]
     }
     
-    @scala.inline
-    def ReferenceTypeNotSupportedException(): typings.awsSdkClientCodecommitNode.typesReferenceTypeNotSupportedExceptionMod.ReferenceTypeNotSupportedException = {
+    inline def ReferenceTypeNotSupportedException(): typings.awsSdkClientCodecommitNode.typesReferenceTypeNotSupportedExceptionMod.ReferenceTypeNotSupportedException = {
       val __obj = js.Dynamic.literal(name = "ReferenceTypeNotSupportedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesReferenceTypeNotSupportedExceptionMod.ReferenceTypeNotSupportedException]
     }
     
-    @scala.inline
-    def RepositoryDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException = {
+    inline def RepositoryDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "RepositoryDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException]
     }
     
-    @scala.inline
-    def RepositoryNameRequiredException(): typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException = {
+    inline def RepositoryNameRequiredException(): typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException = {
       val __obj = js.Dynamic.literal(name = "RepositoryNameRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException]
     }
     
-    @scala.inline
-    def SourceAndDestinationAreSameException(): typings.awsSdkClientCodecommitNode.typesSourceAndDestinationAreSameExceptionMod.SourceAndDestinationAreSameException = {
+    inline def SourceAndDestinationAreSameException(): typings.awsSdkClientCodecommitNode.typesSourceAndDestinationAreSameExceptionMod.SourceAndDestinationAreSameException = {
       val __obj = js.Dynamic.literal(name = "SourceAndDestinationAreSameException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesSourceAndDestinationAreSameExceptionMod.SourceAndDestinationAreSameException]
     }
     
-    @scala.inline
-    def TargetRequiredException(): typings.awsSdkClientCodecommitNode.typesTargetRequiredExceptionMod.TargetRequiredException = {
+    inline def TargetRequiredException(): typings.awsSdkClientCodecommitNode.typesTargetRequiredExceptionMod.TargetRequiredException = {
       val __obj = js.Dynamic.literal(name = "TargetRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesTargetRequiredExceptionMod.TargetRequiredException]
     }
     
-    @scala.inline
-    def TargetsRequiredException(): typings.awsSdkClientCodecommitNode.typesTargetsRequiredExceptionMod.TargetsRequiredException = {
+    inline def TargetsRequiredException(): typings.awsSdkClientCodecommitNode.typesTargetsRequiredExceptionMod.TargetsRequiredException = {
       val __obj = js.Dynamic.literal(name = "TargetsRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesTargetsRequiredExceptionMod.TargetsRequiredException]
     }
     
-    @scala.inline
-    def TitleRequiredException(): typings.awsSdkClientCodecommitNode.typesTitleRequiredExceptionMod.TitleRequiredException = {
+    inline def TitleRequiredException(): typings.awsSdkClientCodecommitNode.typesTitleRequiredExceptionMod.TitleRequiredException = {
       val __obj = js.Dynamic.literal(name = "TitleRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesTitleRequiredExceptionMod.TitleRequiredException]
     }

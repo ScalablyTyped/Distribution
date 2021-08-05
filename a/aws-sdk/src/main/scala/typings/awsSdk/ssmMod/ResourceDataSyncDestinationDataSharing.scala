@@ -13,19 +13,15 @@ trait ResourceDataSyncDestinationDataSharing extends StObject {
 }
 object ResourceDataSyncDestinationDataSharing {
   
-  @scala.inline
-  def apply(): ResourceDataSyncDestinationDataSharing = {
+  inline def apply(): ResourceDataSyncDestinationDataSharing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceDataSyncDestinationDataSharing]
   }
   
-  @scala.inline
-  implicit class ResourceDataSyncDestinationDataSharingMutableBuilder[Self <: ResourceDataSyncDestinationDataSharing] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDataSyncDestinationDataSharing](x: Self) {
     
-    @scala.inline
-    def setDestinationDataSharingType(value: ResourceDataSyncDestinationDataSharingType): Self = StObject.set(x, "DestinationDataSharingType", value.asInstanceOf[js.Any])
+    inline def setDestinationDataSharingType(value: ResourceDataSyncDestinationDataSharingType): Self = StObject.set(x, "DestinationDataSharingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDataSharingTypeUndefined: Self = StObject.set(x, "DestinationDataSharingType", js.undefined)
+    inline def setDestinationDataSharingTypeUndefined: Self = StObject.set(x, "DestinationDataSharingType", js.undefined)
   }
 }

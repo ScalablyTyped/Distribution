@@ -14,17 +14,14 @@ trait Js
 }
 object Js {
   
-  @scala.inline
-  def apply(js_ : String): Js = {
+  inline def apply(js_ : String): Js = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Js]
   }
   
-  @scala.inline
-  implicit class JsMutableBuilder[Self <: Js] (val x: Self) extends AnyVal {
+  extension [Self <: Js](x: Self) {
     
-    @scala.inline
-    def setJs_(value: String): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+    inline def setJs_(value: String): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
   }
 }

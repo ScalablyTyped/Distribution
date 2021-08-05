@@ -26,37 +26,27 @@ trait ClearStorageDataOptions extends StObject {
 }
 object ClearStorageDataOptions {
   
-  @scala.inline
-  def apply(): ClearStorageDataOptions = {
+  inline def apply(): ClearStorageDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearStorageDataOptions]
   }
   
-  @scala.inline
-  implicit class ClearStorageDataOptionsMutableBuilder[Self <: ClearStorageDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClearStorageDataOptions](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setQuotas(value: js.Array[String]): Self = StObject.set(x, "quotas", value.asInstanceOf[js.Any])
+    inline def setQuotas(value: js.Array[String]): Self = StObject.set(x, "quotas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
+    inline def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
     
-    @scala.inline
-    def setQuotasVarargs(value: String*): Self = StObject.set(x, "quotas", js.Array(value :_*))
+    inline def setQuotasVarargs(value: String*): Self = StObject.set(x, "quotas", js.Array(value :_*))
     
-    @scala.inline
-    def setStorages(value: js.Array[String]): Self = StObject.set(x, "storages", value.asInstanceOf[js.Any])
+    inline def setStorages(value: js.Array[String]): Self = StObject.set(x, "storages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoragesUndefined: Self = StObject.set(x, "storages", js.undefined)
+    inline def setStoragesUndefined: Self = StObject.set(x, "storages", js.undefined)
     
-    @scala.inline
-    def setStoragesVarargs(value: String*): Self = StObject.set(x, "storages", js.Array(value :_*))
+    inline def setStoragesVarargs(value: String*): Self = StObject.set(x, "storages", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait EventActionCall extends StObject {
 }
 object EventActionCall {
   
-  @scala.inline
-  def apply(): EventActionCall = {
+  inline def apply(): EventActionCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventActionCall]
   }
   
-  @scala.inline
-  implicit class EventActionCallMutableBuilder[Self <: EventActionCall] (val x: Self) extends AnyVal {
+  extension [Self <: EventActionCall](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
   }
 }

@@ -21,19 +21,14 @@ object ContentAction {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DELETED: `2` = 2.asInstanceOf[`2`]
+    inline def DELETED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def EXCHANGED: `4` = 4.asInstanceOf[`4`]
+    inline def EXCHANGED: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def INSERTED: `0` = 0.asInstanceOf[`0`]
+    inline def INSERTED: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def REMOVED: `1` = 1.asInstanceOf[`1`]
+    inline def REMOVED: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SEARCH_MATCHED: `128` = 128.asInstanceOf[`128`]
+    inline def SEARCH_MATCHED: `128` = 128.asInstanceOf[`128`]
   }
 }

@@ -13,16 +13,13 @@ trait PutConfigurationRecorderRequest extends StObject {
 }
 object PutConfigurationRecorderRequest {
   
-  @scala.inline
-  def apply(ConfigurationRecorder: ConfigurationRecorder): PutConfigurationRecorderRequest = {
+  inline def apply(ConfigurationRecorder: ConfigurationRecorder): PutConfigurationRecorderRequest = {
     val __obj = js.Dynamic.literal(ConfigurationRecorder = ConfigurationRecorder.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConfigurationRecorderRequest]
   }
   
-  @scala.inline
-  implicit class PutConfigurationRecorderRequestMutableBuilder[Self <: PutConfigurationRecorderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutConfigurationRecorderRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationRecorder(value: ConfigurationRecorder): Self = StObject.set(x, "ConfigurationRecorder", value.asInstanceOf[js.Any])
+    inline def setConfigurationRecorder(value: ConfigurationRecorder): Self = StObject.set(x, "ConfigurationRecorder", value.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait XLabeledDataSequence
 }
 object XLabeledDataSequence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Label: XDataSequence,
     Values: XDataSequence,
     acquire: () => Unit,
@@ -51,25 +50,18 @@ object XLabeledDataSequence {
     __obj.asInstanceOf[XLabeledDataSequence]
   }
   
-  @scala.inline
-  implicit class XLabeledDataSequenceMutableBuilder[Self <: XLabeledDataSequence] (val x: Self) extends AnyVal {
+  extension [Self <: XLabeledDataSequence](x: Self) {
     
-    @scala.inline
-    def setGetLabel(value: () => XDataSequence): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    inline def setGetLabel(value: () => XDataSequence): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValues(value: () => XDataSequence): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+    inline def setGetValues(value: () => XDataSequence): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabel(value: XDataSequence): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: XDataSequence): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetLabel(value: XDataSequence => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: XDataSequence => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValues(value: XDataSequence => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
+    inline def setSetValues(value: XDataSequence => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValues(value: XDataSequence): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: XDataSequence): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait WorkerVersionUpdatedEvent extends StObject {
 }
 object WorkerVersionUpdatedEvent {
   
-  @scala.inline
-  def apply(versions: js.Array[ServiceWorkerVersion]): WorkerVersionUpdatedEvent = {
+  inline def apply(versions: js.Array[ServiceWorkerVersion]): WorkerVersionUpdatedEvent = {
     val __obj = js.Dynamic.literal(versions = versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerVersionUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class WorkerVersionUpdatedEventMutableBuilder[Self <: WorkerVersionUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerVersionUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setVersions(value: js.Array[ServiceWorkerVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[ServiceWorkerVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsVarargs(value: ServiceWorkerVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: ServiceWorkerVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

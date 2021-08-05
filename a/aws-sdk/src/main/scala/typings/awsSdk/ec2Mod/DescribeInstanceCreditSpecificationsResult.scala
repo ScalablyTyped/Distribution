@@ -18,28 +18,21 @@ trait DescribeInstanceCreditSpecificationsResult extends StObject {
 }
 object DescribeInstanceCreditSpecificationsResult {
   
-  @scala.inline
-  def apply(): DescribeInstanceCreditSpecificationsResult = {
+  inline def apply(): DescribeInstanceCreditSpecificationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstanceCreditSpecificationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceCreditSpecificationsResultMutableBuilder[Self <: DescribeInstanceCreditSpecificationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceCreditSpecificationsResult](x: Self) {
     
-    @scala.inline
-    def setInstanceCreditSpecifications(value: InstanceCreditSpecificationList): Self = StObject.set(x, "InstanceCreditSpecifications", value.asInstanceOf[js.Any])
+    inline def setInstanceCreditSpecifications(value: InstanceCreditSpecificationList): Self = StObject.set(x, "InstanceCreditSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCreditSpecificationsUndefined: Self = StObject.set(x, "InstanceCreditSpecifications", js.undefined)
+    inline def setInstanceCreditSpecificationsUndefined: Self = StObject.set(x, "InstanceCreditSpecifications", js.undefined)
     
-    @scala.inline
-    def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecification*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value :_*))
+    inline def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecification*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

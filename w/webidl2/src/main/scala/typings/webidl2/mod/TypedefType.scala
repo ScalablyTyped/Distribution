@@ -24,26 +24,20 @@ trait TypedefType
 }
 object TypedefType {
   
-  @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttribute], idlType: IDLTypeDescription, name: String, parent: Null): TypedefType = {
+  inline def apply(extAttrs: js.Array[ExtendedAttribute], idlType: IDLTypeDescription, name: String, parent: Null): TypedefType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("typedef")
     __obj.asInstanceOf[TypedefType]
   }
   
-  @scala.inline
-  implicit class TypedefTypeMutableBuilder[Self <: TypedefType] (val x: Self) extends AnyVal {
+  extension [Self <: TypedefType](x: Self) {
     
-    @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typedef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typedef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

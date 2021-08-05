@@ -10,16 +10,13 @@ trait SpinnerUIParam extends StObject {
 }
 object SpinnerUIParam {
   
-  @scala.inline
-  def apply(value: Double): SpinnerUIParam = {
+  inline def apply(value: Double): SpinnerUIParam = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerUIParam]
   }
   
-  @scala.inline
-  implicit class SpinnerUIParamMutableBuilder[Self <: SpinnerUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SpinnerUIParam](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

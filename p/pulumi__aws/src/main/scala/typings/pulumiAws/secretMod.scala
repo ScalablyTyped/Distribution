@@ -105,21 +105,16 @@ object secretMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Secret]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecretState): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Secret]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecretState, opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    inline def get(name: String, id: Input[ID]): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    inline def get(name: String, id: Input[ID], state: SecretState): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    inline def get(name: String, id: Input[ID], state: SecretState, opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
     
     /**
       * Returns true if the given object is an instance of Secret.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secret.Secret */ Boolean]
   }
   
   trait SecretArgs extends StObject {
@@ -175,68 +170,48 @@ object secretMod {
   }
   object SecretArgs {
     
-    @scala.inline
-    def apply(): SecretArgs = {
+    inline def apply(): SecretArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SecretArgs]
     }
     
-    @scala.inline
-    implicit class SecretArgsMutableBuilder[Self <: SecretArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SecretArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setRecoveryWindowInDays(value: Input[Double]): Self = StObject.set(x, "recoveryWindowInDays", value.asInstanceOf[js.Any])
+      inline def setRecoveryWindowInDays(value: Input[Double]): Self = StObject.set(x, "recoveryWindowInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "recoveryWindowInDays", js.undefined)
+      inline def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "recoveryWindowInDays", js.undefined)
       
-      @scala.inline
-      def setRotationLambdaArn(value: Input[String]): Self = StObject.set(x, "rotationLambdaArn", value.asInstanceOf[js.Any])
+      inline def setRotationLambdaArn(value: Input[String]): Self = StObject.set(x, "rotationLambdaArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationLambdaArnUndefined: Self = StObject.set(x, "rotationLambdaArn", js.undefined)
+      inline def setRotationLambdaArnUndefined: Self = StObject.set(x, "rotationLambdaArn", js.undefined)
       
-      @scala.inline
-      def setRotationRules(value: Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]): Self = StObject.set(x, "rotationRules", value.asInstanceOf[js.Any])
+      inline def setRotationRules(value: Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]): Self = StObject.set(x, "rotationRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationRulesUndefined: Self = StObject.set(x, "rotationRules", js.undefined)
+      inline def setRotationRulesUndefined: Self = StObject.set(x, "rotationRules", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -305,80 +280,56 @@ object secretMod {
   }
   object SecretState {
     
-    @scala.inline
-    def apply(): SecretState = {
+    inline def apply(): SecretState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SecretState]
     }
     
-    @scala.inline
-    implicit class SecretStateMutableBuilder[Self <: SecretState] (val x: Self) extends AnyVal {
+    extension [Self <: SecretState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setRecoveryWindowInDays(value: Input[Double]): Self = StObject.set(x, "recoveryWindowInDays", value.asInstanceOf[js.Any])
+      inline def setRecoveryWindowInDays(value: Input[Double]): Self = StObject.set(x, "recoveryWindowInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "recoveryWindowInDays", js.undefined)
+      inline def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "recoveryWindowInDays", js.undefined)
       
-      @scala.inline
-      def setRotationEnabled(value: Input[Boolean]): Self = StObject.set(x, "rotationEnabled", value.asInstanceOf[js.Any])
+      inline def setRotationEnabled(value: Input[Boolean]): Self = StObject.set(x, "rotationEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationEnabledUndefined: Self = StObject.set(x, "rotationEnabled", js.undefined)
+      inline def setRotationEnabledUndefined: Self = StObject.set(x, "rotationEnabled", js.undefined)
       
-      @scala.inline
-      def setRotationLambdaArn(value: Input[String]): Self = StObject.set(x, "rotationLambdaArn", value.asInstanceOf[js.Any])
+      inline def setRotationLambdaArn(value: Input[String]): Self = StObject.set(x, "rotationLambdaArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationLambdaArnUndefined: Self = StObject.set(x, "rotationLambdaArn", js.undefined)
+      inline def setRotationLambdaArnUndefined: Self = StObject.set(x, "rotationLambdaArn", js.undefined)
       
-      @scala.inline
-      def setRotationRules(value: Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]): Self = StObject.set(x, "rotationRules", value.asInstanceOf[js.Any])
+      inline def setRotationRules(value: Input[typings.pulumiAws.inputMod.secretsmanager.SecretRotationRules]): Self = StObject.set(x, "rotationRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationRulesUndefined: Self = StObject.set(x, "rotationRules", js.undefined)
+      inline def setRotationRulesUndefined: Self = StObject.set(x, "rotationRules", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

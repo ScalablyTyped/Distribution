@@ -80,39 +80,30 @@ object Integer {
   @JSImport("cassandra-driver/lib/types", "types.Integer.ONE")
   @js.native
   def ONE: Integer = js.native
-  @scala.inline
-  def ONE_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+  inline def ONE_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cassandra-driver/lib/types", "types.Integer.ZERO")
   @js.native
   def ZERO: Integer = js.native
-  @scala.inline
-  def ZERO_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  inline def ZERO_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def fromBits(bits: js.Array[Double]): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(bits.asInstanceOf[js.Any]).asInstanceOf[Integer]
+  inline def fromBits(bits: js.Array[Double]): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(bits.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @scala.inline
-  def fromBuffer(bits: Buffer): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(bits.asInstanceOf[js.Any]).asInstanceOf[Integer]
+  inline def fromBuffer(bits: Buffer): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(bits.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @scala.inline
-  def fromInt(value: Double): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Integer]
+  inline def fromInt(value: Double): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @scala.inline
-  def fromNumber(value: Double): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Integer]
+  inline def fromNumber(value: Double): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Integer]
   
   /* static member */
-  @scala.inline
-  def fromString(str: String): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Integer]
-  @scala.inline
-  def fromString(str: String, opt_radix: Double): Integer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Integer]
+  inline def fromString(str: String): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Integer]
+  inline def fromString(str: String, opt_radix: Double): Integer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[Integer]
   
   /* static member */
-  @scala.inline
-  def toBuffer(value: Integer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def toBuffer(value: Integer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdSignatureStatus extends StObject
 object XdSignatureStatus {
   
-  @scala.inline
-  def xdSignatureStatusError: `0` = 0.asInstanceOf[`0`]
+  inline def xdSignatureStatusError: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xdSignatureStatusInvalid: `2` = 2.asInstanceOf[`2`]
+  inline def xdSignatureStatusInvalid: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xdSignatureStatusUnsupported: `3` = 3.asInstanceOf[`3`]
+  inline def xdSignatureStatusUnsupported: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xdSignatureStatusValid: `1` = 1.asInstanceOf[`1`]
+  inline def xdSignatureStatusValid: `1` = 1.asInstanceOf[`1`]
 }

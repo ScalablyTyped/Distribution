@@ -13,16 +13,13 @@ trait SubscriptionAdminSettings extends StObject {
 }
 object SubscriptionAdminSettings {
   
-  @scala.inline
-  def apply(blockUserOptOut: Boolean): SubscriptionAdminSettings = {
+  inline def apply(blockUserOptOut: Boolean): SubscriptionAdminSettings = {
     val __obj = js.Dynamic.literal(blockUserOptOut = blockUserOptOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionAdminSettings]
   }
   
-  @scala.inline
-  implicit class SubscriptionAdminSettingsMutableBuilder[Self <: SubscriptionAdminSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionAdminSettings](x: Self) {
     
-    @scala.inline
-    def setBlockUserOptOut(value: Boolean): Self = StObject.set(x, "blockUserOptOut", value.asInstanceOf[js.Any])
+    inline def setBlockUserOptOut(value: Boolean): Self = StObject.set(x, "blockUserOptOut", value.asInstanceOf[js.Any])
   }
 }

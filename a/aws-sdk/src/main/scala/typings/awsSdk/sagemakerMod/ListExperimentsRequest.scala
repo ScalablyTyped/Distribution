@@ -38,49 +38,35 @@ trait ListExperimentsRequest extends StObject {
 }
 object ListExperimentsRequest {
   
-  @scala.inline
-  def apply(): ListExperimentsRequest = {
+  inline def apply(): ListExperimentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListExperimentsRequest]
   }
   
-  @scala.inline
-  implicit class ListExperimentsRequestMutableBuilder[Self <: ListExperimentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListExperimentsRequest](x: Self) {
     
-    @scala.inline
-    def setCreatedAfter(value: Timestamp): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
+    inline def setCreatedAfter(value: Timestamp): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
+    inline def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
-    @scala.inline
-    def setCreatedBefore(value: Timestamp): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
+    inline def setCreatedBefore(value: Timestamp): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
+    inline def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: SortExperimentsBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: SortExperimentsBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

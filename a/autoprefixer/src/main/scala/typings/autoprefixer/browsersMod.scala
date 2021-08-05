@@ -38,23 +38,18 @@ object browsersMod {
   }
   object Browsers {
     
-    @scala.inline
-    def apply(isSelected: String => Boolean, parse: Queries => js.Array[String], prefix: String => String): Browsers = {
+    inline def apply(isSelected: String => Boolean, parse: Queries => js.Array[String], prefix: String => String): Browsers = {
       val __obj = js.Dynamic.literal(isSelected = js.Any.fromFunction1(isSelected), parse = js.Any.fromFunction1(parse), prefix = js.Any.fromFunction1(prefix))
       __obj.asInstanceOf[Browsers]
     }
     
-    @scala.inline
-    implicit class BrowsersMutableBuilder[Self <: Browsers] (val x: Self) extends AnyVal {
+    extension [Self <: Browsers](x: Self) {
       
-      @scala.inline
-      def setIsSelected(value: String => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
+      inline def setIsSelected(value: String => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParse(value: Queries => js.Array[String]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: Queries => js.Array[String]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefix(value: String => String): Self = StObject.set(x, "prefix", js.Any.fromFunction1(value))
+      inline def setPrefix(value: String => String): Self = StObject.set(x, "prefix", js.Any.fromFunction1(value))
     }
   }
   

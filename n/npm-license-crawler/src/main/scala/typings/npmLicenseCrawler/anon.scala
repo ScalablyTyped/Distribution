@@ -18,26 +18,20 @@ object anon {
   }
   object LicenseUrl {
     
-    @scala.inline
-    def apply(licenseUrl: String, licenses: String, parents: String, repository: String): LicenseUrl = {
+    inline def apply(licenseUrl: String, licenses: String, parents: String, repository: String): LicenseUrl = {
       val __obj = js.Dynamic.literal(licenseUrl = licenseUrl.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
       __obj.asInstanceOf[LicenseUrl]
     }
     
-    @scala.inline
-    implicit class LicenseUrlMutableBuilder[Self <: LicenseUrl] (val x: Self) extends AnyVal {
+    extension [Self <: LicenseUrl](x: Self) {
       
-      @scala.inline
-      def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
+      inline def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenses(value: String): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+      inline def setLicenses(value: String): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParents(value: String): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: String): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     }
   }
 }

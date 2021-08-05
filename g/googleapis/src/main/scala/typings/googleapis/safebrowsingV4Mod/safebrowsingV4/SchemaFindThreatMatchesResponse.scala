@@ -13,22 +13,17 @@ trait SchemaFindThreatMatchesResponse extends StObject {
 }
 object SchemaFindThreatMatchesResponse {
   
-  @scala.inline
-  def apply(): SchemaFindThreatMatchesResponse = {
+  inline def apply(): SchemaFindThreatMatchesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFindThreatMatchesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaFindThreatMatchesResponseMutableBuilder[Self <: SchemaFindThreatMatchesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFindThreatMatchesResponse](x: Self) {
     
-    @scala.inline
-    def setMatches(value: js.Array[SchemaThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[SchemaThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    @scala.inline
-    def setMatchesVarargs(value: SchemaThreatMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: SchemaThreatMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

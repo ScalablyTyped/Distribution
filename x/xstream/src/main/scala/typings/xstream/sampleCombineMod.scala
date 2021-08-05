@@ -33,9 +33,9 @@ object sampleCombineMod {
     /* CompleteClass */
     override def _n(v: T): Unit = js.native
     
-    var i: js.Any = js.native
+    /* private */ var i: js.Any = js.native
     
-    var p: js.Any = js.native
+    /* private */ var p: js.Any = js.native
   }
   
   @JSImport("xstream/extra/sampleCombine", "SampleCombineOperator")
@@ -84,8 +84,7 @@ object sampleCombineMod {
     var vals: js.Array[js.Any] = js.native
   }
   
-  @scala.inline
-  def default_=(x: SampleCombineSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: SampleCombineSignature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait SampleCombineSignature extends StObject {

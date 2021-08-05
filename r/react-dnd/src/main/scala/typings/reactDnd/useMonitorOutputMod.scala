@@ -12,10 +12,8 @@ object useMonitorOutputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useMonitorOutput[Monitor /* <: HandlerManager */, Collected](monitor: Monitor & MonitorEventEmitter, collect: js.Function1[/* monitor */ Monitor, Collected]): Collected = (^.asInstanceOf[js.Dynamic].applyDynamic("useMonitorOutput")(monitor.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[Collected]
-  @scala.inline
-  def useMonitorOutput[Monitor /* <: HandlerManager */, Collected](
+  inline def useMonitorOutput[Monitor /* <: HandlerManager */, Collected](monitor: Monitor & MonitorEventEmitter, collect: js.Function1[/* monitor */ Monitor, Collected]): Collected = (^.asInstanceOf[js.Dynamic].applyDynamic("useMonitorOutput")(monitor.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[Collected]
+  inline def useMonitorOutput[Monitor /* <: HandlerManager */, Collected](
     monitor: Monitor & MonitorEventEmitter,
     collect: js.Function1[/* monitor */ Monitor, Collected],
     onCollect: js.Function0[Unit]

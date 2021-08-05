@@ -25,43 +25,31 @@ trait ConnectEvents extends StObject {
 }
 object ConnectEvents {
   
-  @scala.inline
-  def apply(): ConnectEvents = {
+  inline def apply(): ConnectEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectEvents]
   }
   
-  @scala.inline
-  implicit class ConnectEventsMutableBuilder[Self <: ConnectEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectEvents](x: Self) {
     
-    @scala.inline
-    def setFailures(value: js.Array[/* Contains information about a Connect log entry. */ ConnectLog]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: js.Array[/* Contains information about a Connect log entry. */ ConnectLog]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "failures", js.Array(value :_*))
     
-    @scala.inline
-    def setLogs(value: js.Array[/* Contains information about a Connect log entry. */ ConnectLog]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    inline def setLogs(value: js.Array[/* Contains information about a Connect log entry. */ ConnectLog]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
+    inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
-    @scala.inline
-    def setLogsVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: (/* Contains information about a Connect log entry. */ ConnectLog)*): Self = StObject.set(x, "logs", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
+    inline def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
+    inline def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

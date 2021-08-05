@@ -13,26 +13,17 @@ object Helpers {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanNode(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cleanNode(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanNode")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def escapeHtml(string: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtml")(string.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def escapeHtml(string: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtml")(string.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getAbsolutePosition(element: String): X = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsolutePosition")(element.asInstanceOf[js.Any]).asInstanceOf[X]
-  @scala.inline
-  def getAbsolutePosition(element: HTMLElement): X = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsolutePosition")(element.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def getAbsolutePosition(element: String): X = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsolutePosition")(element.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def getAbsolutePosition(element: HTMLElement): X = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbsolutePosition")(element.asInstanceOf[js.Any]).asInstanceOf[X]
   
-  @scala.inline
-  def numberToCssSize(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def numberToCssSize(value: Double, defaultValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def numberToCssSize(value: Double, defaultValue: Double, nullValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def numberToCssSize(value: Double, defaultValue: Unit, nullValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def numberToCssSize(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def numberToCssSize(value: Double, defaultValue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def numberToCssSize(value: Double, defaultValue: Double, nullValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def numberToCssSize(value: Double, defaultValue: Unit, nullValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberToCssSize")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
+  inline def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
 }

@@ -45,8 +45,7 @@ trait Frame extends StObject {
 }
 object Frame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseframe: String,
     data: js.Array[Data],
     group: String,
@@ -58,31 +57,22 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   
-  @scala.inline
-  implicit class FrameMutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
+  extension [Self <: Frame](x: Self) {
     
-    @scala.inline
-    def setBaseframe(value: String): Self = StObject.set(x, "baseframe", value.asInstanceOf[js.Any])
+    inline def setBaseframe(value: String): Self = StObject.set(x, "baseframe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraces(value: js.Array[Double]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
+    inline def setTraces(value: js.Array[Double]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
+    inline def setTracesVarargs(value: Double*): Self = StObject.set(x, "traces", js.Array(value :_*))
   }
 }

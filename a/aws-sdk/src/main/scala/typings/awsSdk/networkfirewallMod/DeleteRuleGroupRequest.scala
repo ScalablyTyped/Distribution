@@ -23,31 +23,23 @@ trait DeleteRuleGroupRequest extends StObject {
 }
 object DeleteRuleGroupRequest {
   
-  @scala.inline
-  def apply(): DeleteRuleGroupRequest = {
+  inline def apply(): DeleteRuleGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRuleGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRuleGroupRequestMutableBuilder[Self <: DeleteRuleGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRuleGroupRequest](x: Self) {
     
-    @scala.inline
-    def setRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "RuleGroupArn", value.asInstanceOf[js.Any])
+    inline def setRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "RuleGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupArnUndefined: Self = StObject.set(x, "RuleGroupArn", js.undefined)
+    inline def setRuleGroupArnUndefined: Self = StObject.set(x, "RuleGroupArn", js.undefined)
     
-    @scala.inline
-    def setRuleGroupName(value: ResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
+    inline def setRuleGroupName(value: ResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
+    inline def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
     
-    @scala.inline
-    def setType(value: RuleGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RuleGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

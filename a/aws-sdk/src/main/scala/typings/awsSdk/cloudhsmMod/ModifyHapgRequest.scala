@@ -23,31 +23,23 @@ trait ModifyHapgRequest extends StObject {
 }
 object ModifyHapgRequest {
   
-  @scala.inline
-  def apply(HapgArn: HapgArn): ModifyHapgRequest = {
+  inline def apply(HapgArn: HapgArn): ModifyHapgRequest = {
     val __obj = js.Dynamic.literal(HapgArn = HapgArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyHapgRequest]
   }
   
-  @scala.inline
-  implicit class ModifyHapgRequestMutableBuilder[Self <: ModifyHapgRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyHapgRequest](x: Self) {
     
-    @scala.inline
-    def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
+    inline def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setPartitionSerialList(value: PartitionSerialList): Self = StObject.set(x, "PartitionSerialList", value.asInstanceOf[js.Any])
+    inline def setPartitionSerialList(value: PartitionSerialList): Self = StObject.set(x, "PartitionSerialList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionSerialListUndefined: Self = StObject.set(x, "PartitionSerialList", js.undefined)
+    inline def setPartitionSerialListUndefined: Self = StObject.set(x, "PartitionSerialList", js.undefined)
     
-    @scala.inline
-    def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value :_*))
+    inline def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value :_*))
   }
 }

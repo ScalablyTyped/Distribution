@@ -73,50 +73,36 @@ object busboy {
   }
   object BusboyConfig {
     
-    @scala.inline
-    def apply(): BusboyConfig = {
+    inline def apply(): BusboyConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BusboyConfig]
     }
     
-    @scala.inline
-    implicit class BusboyConfigMutableBuilder[Self <: BusboyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BusboyConfig](x: Self) {
       
-      @scala.inline
-      def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
+      inline def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefCharsetUndefined: Self = StObject.set(x, "defCharset", js.undefined)
+      inline def setDefCharsetUndefined: Self = StObject.set(x, "defCharset", js.undefined)
       
-      @scala.inline
-      def setFileHwm(value: Double): Self = StObject.set(x, "fileHwm", value.asInstanceOf[js.Any])
+      inline def setFileHwm(value: Double): Self = StObject.set(x, "fileHwm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileHwmUndefined: Self = StObject.set(x, "fileHwm", js.undefined)
+      inline def setFileHwmUndefined: Self = StObject.set(x, "fileHwm", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
-      @scala.inline
-      def setPreservePath(value: Boolean): Self = StObject.set(x, "preservePath", value.asInstanceOf[js.Any])
+      inline def setPreservePath(value: Boolean): Self = StObject.set(x, "preservePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreservePathUndefined: Self = StObject.set(x, "preservePath", js.undefined)
+      inline def setPreservePathUndefined: Self = StObject.set(x, "preservePath", js.undefined)
     }
   }
   
@@ -131,17 +117,14 @@ object busboy {
   }
   object Options {
     
-    @scala.inline
-    def apply(headers: js.Any): Options = {
+    inline def apply(headers: js.Any): Options = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
 }

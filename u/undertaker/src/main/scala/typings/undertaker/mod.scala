@@ -29,35 +29,26 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(label: String, nodes: js.Array[Node]): Node = {
+    inline def apply(label: String, nodes: js.Array[Node]): Node = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setBranch(value: Boolean): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: Boolean): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -91,38 +82,28 @@ object mod {
   }
   object TaskFunctionParams {
     
-    @scala.inline
-    def apply(): TaskFunctionParams = {
+    inline def apply(): TaskFunctionParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskFunctionParams]
     }
     
-    @scala.inline
-    implicit class TaskFunctionParamsMutableBuilder[Self <: TaskFunctionParams] (val x: Self) extends AnyVal {
+    extension [Self <: TaskFunctionParams](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setFlags(value: TaskFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: TaskFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -144,20 +125,16 @@ object mod {
   }
   object TreeOptions {
     
-    @scala.inline
-    def apply(): TreeOptions = {
+    inline def apply(): TreeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeOptions]
     }
     
-    @scala.inline
-    implicit class TreeOptionsMutableBuilder[Self <: TreeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TreeOptions](x: Self) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     }
   }
   
@@ -169,23 +146,18 @@ object mod {
   }
   object TreeResult {
     
-    @scala.inline
-    def apply(nodes: js.Array[Node]): TreeResult = {
+    inline def apply(nodes: js.Array[Node]): TreeResult = {
       val __obj = js.Dynamic.literal(label = "Tasks", nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeResult]
     }
     
-    @scala.inline
-    implicit class TreeResultMutableBuilder[Self <: TreeResult] (val x: Self) extends AnyVal {
+    extension [Self <: TreeResult](x: Self) {
       
-      @scala.inline
-      def setLabel(value: Tasks): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Tasks): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   

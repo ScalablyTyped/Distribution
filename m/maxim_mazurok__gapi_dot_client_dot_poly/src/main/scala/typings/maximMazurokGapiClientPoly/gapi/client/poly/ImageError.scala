@@ -14,25 +14,19 @@ trait ImageError extends StObject {
 }
 object ImageError {
   
-  @scala.inline
-  def apply(): ImageError = {
+  inline def apply(): ImageError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageError]
   }
   
-  @scala.inline
-  implicit class ImageErrorMutableBuilder[Self <: ImageError] (val x: Self) extends AnyVal {
+  extension [Self <: ImageError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
   }
 }

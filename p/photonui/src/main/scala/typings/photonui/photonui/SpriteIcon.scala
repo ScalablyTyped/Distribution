@@ -19,8 +19,7 @@ trait SpriteIcon
 }
 object SpriteIcon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -49,16 +48,12 @@ object SpriteIcon {
     __obj.asInstanceOf[SpriteIcon]
   }
   
-  @scala.inline
-  implicit class SpriteIconMutableBuilder[Self <: SpriteIcon] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteIcon](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+    inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpriteSheetName(value: String): Self = StObject.set(x, "spriteSheetName", value.asInstanceOf[js.Any])
+    inline def setSpriteSheetName(value: String): Self = StObject.set(x, "spriteSheetName", value.asInstanceOf[js.Any])
   }
 }

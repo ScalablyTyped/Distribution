@@ -13,10 +13,8 @@ object mod {
   
   object mockReq {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query]) = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query])]
-    @scala.inline
-    def apply[T /* <: js.Object */](options: T): MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query]) = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query])]
+    inline def apply[T /* <: js.Object */](): MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query]) = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query])]
+    inline def apply[T /* <: js.Object */](options: T): MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query]) = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[MockReq & T & (Request_[ParamsDictionary, js.Any, js.Any, Query])]
     
     @JSImport("sinon-express-mock", "mockReq")
     @js.native
@@ -84,8 +82,7 @@ object mod {
     }
     object MockReq {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accepts: SinonStub[js.Array[js.Any], js.Any],
         acceptsCharsets: SinonStub[js.Array[js.Any], js.Any],
         acceptsEncodings: SinonStub[js.Array[js.Any], js.Any],
@@ -102,51 +99,37 @@ object mod {
         __obj.asInstanceOf[MockReq]
       }
       
-      @scala.inline
-      implicit class MockReqMutableBuilder[Self <: MockReq] (val x: Self) extends AnyVal {
+      extension [Self <: MockReq](x: Self) {
         
-        @scala.inline
-        def setAccepts(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
+        inline def setAccepts(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAcceptsCharsets(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "acceptsCharsets", value.asInstanceOf[js.Any])
+        inline def setAcceptsCharsets(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "acceptsCharsets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAcceptsEncodings(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "acceptsEncodings", value.asInstanceOf[js.Any])
+        inline def setAcceptsEncodings(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "acceptsEncodings", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAcceptsLanguages(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "acceptsLanguages", value.asInstanceOf[js.Any])
+        inline def setAcceptsLanguages(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "acceptsLanguages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlash(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
+        inline def setFlash(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGet(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+        inline def setGet(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIs(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+        inline def setIs(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSession(value: js.Object): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+        inline def setSession(value: js.Object): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object mockRes {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): MockRes & T & Response_[js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MockRes & T & Response_[js.Any]]
-    @scala.inline
-    def apply[T /* <: js.Object */](options: T): MockRes & T & Response_[js.Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[MockRes & T & Response_[js.Any]]
+    inline def apply[T /* <: js.Object */](): MockRes & T & Response_[js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MockRes & T & Response_[js.Any]]
+    inline def apply[T /* <: js.Object */](options: T): MockRes & T & Response_[js.Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[MockRes & T & Response_[js.Any]]
     
     @JSImport("sinon-express-mock", "mockRes")
     @js.native
@@ -308,8 +291,7 @@ object mod {
     }
     object MockRes {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         append: SinonStub[js.Array[js.Any], js.Any],
         attachement: SinonStub[js.Array[js.Any], js.Any],
         clearCookie: SinonStub[js.Array[js.Any], js.Any],
@@ -339,77 +321,53 @@ object mod {
         __obj.asInstanceOf[MockRes]
       }
       
-      @scala.inline
-      implicit class MockResMutableBuilder[Self <: MockRes] (val x: Self) extends AnyVal {
+      extension [Self <: MockRes](x: Self) {
         
-        @scala.inline
-        def setAppend(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+        inline def setAppend(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttachement(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "attachement", value.asInstanceOf[js.Any])
+        inline def setAttachement(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "attachement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClearCookie(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "clearCookie", value.asInstanceOf[js.Any])
+        inline def setClearCookie(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "clearCookie", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCookie(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+        inline def setCookie(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDownload(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+        inline def setDownload(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnd(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGet(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+        inline def setGet(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersSent(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "headersSent", value.asInstanceOf[js.Any])
+        inline def setHeadersSent(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "headersSent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJson(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+        inline def setJson(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJsonp(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+        inline def setJsonp(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinks(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+        inline def setLinks(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+        inline def setLocals(value: js.Object): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocation(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedirect(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+        inline def setRedirect(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRender(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+        inline def setRender(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSend(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+        inline def setSend(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSendFile(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "sendFile", value.asInstanceOf[js.Any])
+        inline def setSendFile(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "sendFile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSendStatus(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "sendStatus", value.asInstanceOf[js.Any])
+        inline def setSendStatus(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "sendStatus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSet(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+        inline def setSet(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVary(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
+        inline def setVary(value: SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
       }
     }
   }

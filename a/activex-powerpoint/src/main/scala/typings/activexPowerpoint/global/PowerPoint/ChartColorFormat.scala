@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartColorFormat")
 @js.native
-class ChartColorFormat protected ()
+/* private */ class ChartColorFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartColorFormat {
   
@@ -19,7 +19,7 @@ class ChartColorFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartColorFormat_typekey")
   var PowerPointDotChartColorFormat_typekey: typings.activexPowerpoint.PowerPoint.ChartColorFormat = js.native
   

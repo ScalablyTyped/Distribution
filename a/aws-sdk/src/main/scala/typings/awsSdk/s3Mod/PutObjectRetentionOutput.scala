@@ -10,19 +10,15 @@ trait PutObjectRetentionOutput extends StObject {
 }
 object PutObjectRetentionOutput {
   
-  @scala.inline
-  def apply(): PutObjectRetentionOutput = {
+  inline def apply(): PutObjectRetentionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutObjectRetentionOutput]
   }
   
-  @scala.inline
-  implicit class PutObjectRetentionOutputMutableBuilder[Self <: PutObjectRetentionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutObjectRetentionOutput](x: Self) {
     
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+    inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+    inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

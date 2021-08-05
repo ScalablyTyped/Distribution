@@ -26,8 +26,7 @@ trait ClearLastViewed extends StObject {
 }
 object ClearLastViewed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: /* args */ GetItemProps => ReactNode,
     clearLastViewed: () => Unit,
     dataset: CombinedDataset,
@@ -37,37 +36,26 @@ object ClearLastViewed {
     __obj.asInstanceOf[ClearLastViewed]
   }
   
-  @scala.inline
-  implicit class ClearLastViewedMutableBuilder[Self <: ClearLastViewed] (val x: Self) extends AnyVal {
+  extension [Self <: ClearLastViewed](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* args */ GetItemProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* args */ GetItemProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearLastViewed(value: () => Unit): Self = StObject.set(x, "clearLastViewed", js.Any.fromFunction0(value))
+    inline def setClearLastViewed(value: () => Unit): Self = StObject.set(x, "clearLastViewed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDataset(value: CombinedDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: CombinedDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableShortcuts(value: Boolean): Self = StObject.set(x, "enableShortcuts", value.asInstanceOf[js.Any])
+    inline def setEnableShortcuts(value: Boolean): Self = StObject.set(x, "enableShortcuts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableShortcutsUndefined: Self = StObject.set(x, "enableShortcuts", js.undefined)
+    inline def setEnableShortcutsUndefined: Self = StObject.set(x, "enableShortcuts", js.undefined)
     
-    @scala.inline
-    def setGetLastViewed(value: () => js.Array[StoryRef]): Self = StObject.set(x, "getLastViewed", js.Any.fromFunction0(value))
+    inline def setGetLastViewed(value: () => js.Array[StoryRef]): Self = StObject.set(x, "getLastViewed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialQuery(value: String): Self = StObject.set(x, "initialQuery", value.asInstanceOf[js.Any])
+    inline def setInitialQuery(value: String): Self = StObject.set(x, "initialQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialQueryUndefined: Self = StObject.set(x, "initialQuery", js.undefined)
+    inline def setInitialQueryUndefined: Self = StObject.set(x, "initialQuery", js.undefined)
     
-    @scala.inline
-    def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+    inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+    inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
   }
 }

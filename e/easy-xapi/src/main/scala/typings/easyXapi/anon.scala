@@ -14,20 +14,16 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(level: String, name: String): Level = {
+    inline def apply(level: String, name: String): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Partial {
     
-    @scala.inline
-    def apply(partial: Boolean): Partial = {
+    inline def apply(partial: Boolean): Partial = {
       val __obj = js.Dynamic.literal(partial = partial.asInstanceOf[js.Any])
       __obj.asInstanceOf[Partial]
     }
     
-    @scala.inline
-    implicit class PartialMutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
+    extension [Self <: Partial](x: Self) {
       
-      @scala.inline
-      def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     }
   }
 }

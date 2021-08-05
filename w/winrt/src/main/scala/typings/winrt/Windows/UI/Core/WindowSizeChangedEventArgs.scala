@@ -10,8 +10,7 @@ trait WindowSizeChangedEventArgs
      with IWindowSizeChangedEventArgs
 object WindowSizeChangedEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, size: Size): WindowSizeChangedEventArgs = {
+  inline def apply(handled: Boolean, size: Size): WindowSizeChangedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowSizeChangedEventArgs]
   }

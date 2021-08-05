@@ -16,16 +16,13 @@ trait IHyperCubeMeasureDef
 }
 object IHyperCubeMeasureDef {
   
-  @scala.inline
-  def apply(qDef: IHyperCubeMeasureqDef): IHyperCubeMeasureDef = {
+  inline def apply(qDef: IHyperCubeMeasureqDef): IHyperCubeMeasureDef = {
     val __obj = js.Dynamic.literal(qDef = qDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHyperCubeMeasureDef]
   }
   
-  @scala.inline
-  implicit class IHyperCubeMeasureDefMutableBuilder[Self <: IHyperCubeMeasureDef] (val x: Self) extends AnyVal {
+  extension [Self <: IHyperCubeMeasureDef](x: Self) {
     
-    @scala.inline
-    def setQDef(value: IHyperCubeMeasureqDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
+    inline def setQDef(value: IHyperCubeMeasureqDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait RangeError
 }
 object RangeError {
   
-  @scala.inline
-  def apply(message: String, method: String): RangeError = {
+  inline def apply(message: String, method: String): RangeError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "RangeError")
     __obj.asInstanceOf[RangeError]
   }
   
-  @scala.inline
-  implicit class RangeErrorMutableBuilder[Self <: RangeError] (val x: Self) extends AnyVal {
+  extension [Self <: RangeError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.RangeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.RangeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

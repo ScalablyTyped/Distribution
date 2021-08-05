@@ -17,25 +17,19 @@ trait CompensationRange extends StObject {
 }
 object CompensationRange {
   
-  @scala.inline
-  def apply(): CompensationRange = {
+  inline def apply(): CompensationRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompensationRange]
   }
   
-  @scala.inline
-  implicit class CompensationRangeMutableBuilder[Self <: CompensationRange] (val x: Self) extends AnyVal {
+  extension [Self <: CompensationRange](x: Self) {
     
-    @scala.inline
-    def setMaxCompensation(value: Money): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
+    inline def setMaxCompensation(value: Money): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCompensationUndefined: Self = StObject.set(x, "maxCompensation", js.undefined)
+    inline def setMaxCompensationUndefined: Self = StObject.set(x, "maxCompensation", js.undefined)
     
-    @scala.inline
-    def setMinCompensation(value: Money): Self = StObject.set(x, "minCompensation", value.asInstanceOf[js.Any])
+    inline def setMinCompensation(value: Money): Self = StObject.set(x, "minCompensation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCompensationUndefined: Self = StObject.set(x, "minCompensation", js.undefined)
+    inline def setMinCompensationUndefined: Self = StObject.set(x, "minCompensation", js.undefined)
   }
 }

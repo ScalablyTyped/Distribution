@@ -50,8 +50,7 @@ trait ReadDirectoryRequestedEventOptions
 }
 object ReadDirectoryRequestedEventOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directoryPath: String,
     fileSystemId: String,
     isDirectory: Boolean,
@@ -66,28 +65,20 @@ object ReadDirectoryRequestedEventOptions {
     __obj.asInstanceOf[ReadDirectoryRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class ReadDirectoryRequestedEventOptionsMutableBuilder[Self <: ReadDirectoryRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadDirectoryRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setDirectoryPath(value: String): Self = StObject.set(x, "directoryPath", value.asInstanceOf[js.Any])
+    inline def setDirectoryPath(value: String): Self = StObject.set(x, "directoryPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+    inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: Boolean): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: Boolean): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationTime(value: Boolean): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: Boolean): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

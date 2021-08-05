@@ -12,22 +12,17 @@ trait IGcsSource extends StObject {
 }
 object IGcsSource {
   
-  @scala.inline
-  def apply(): IGcsSource = {
+  inline def apply(): IGcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGcsSource]
   }
   
-  @scala.inline
-  implicit class IGcsSourceMutableBuilder[Self <: IGcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: IGcsSource](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriNull: Self = StObject.set(x, "uri", null)
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

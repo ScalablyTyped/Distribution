@@ -64,75 +64,53 @@ trait WebAclRuleStatementNotStatementStatementNotStatementStatement extends StOb
 }
 object WebAclRuleStatementNotStatementStatementNotStatementStatement {
   
-  @scala.inline
-  def apply(): WebAclRuleStatementNotStatementStatementNotStatementStatement = {
+  inline def apply(): WebAclRuleStatementNotStatementStatementNotStatementStatement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebAclRuleStatementNotStatementStatementNotStatementStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementNotStatementStatementNotStatementStatementMutableBuilder[Self <: WebAclRuleStatementNotStatementStatementNotStatementStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementNotStatementStatementNotStatementStatement](x: Self) {
     
-    @scala.inline
-    def setAndStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementAndStatement): Self = StObject.set(x, "andStatement", value.asInstanceOf[js.Any])
+    inline def setAndStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementAndStatement): Self = StObject.set(x, "andStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndStatementUndefined: Self = StObject.set(x, "andStatement", js.undefined)
+    inline def setAndStatementUndefined: Self = StObject.set(x, "andStatement", js.undefined)
     
-    @scala.inline
-    def setByteMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementByteMatchStatement): Self = StObject.set(x, "byteMatchStatement", value.asInstanceOf[js.Any])
+    inline def setByteMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementByteMatchStatement): Self = StObject.set(x, "byteMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchStatementUndefined: Self = StObject.set(x, "byteMatchStatement", js.undefined)
+    inline def setByteMatchStatementUndefined: Self = StObject.set(x, "byteMatchStatement", js.undefined)
     
-    @scala.inline
-    def setGeoMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatement): Self = StObject.set(x, "geoMatchStatement", value.asInstanceOf[js.Any])
+    inline def setGeoMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatement): Self = StObject.set(x, "geoMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoMatchStatementUndefined: Self = StObject.set(x, "geoMatchStatement", js.undefined)
+    inline def setGeoMatchStatementUndefined: Self = StObject.set(x, "geoMatchStatement", js.undefined)
     
-    @scala.inline
-    def setIpSetReferenceStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatement): Self = StObject.set(x, "ipSetReferenceStatement", value.asInstanceOf[js.Any])
+    inline def setIpSetReferenceStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatement): Self = StObject.set(x, "ipSetReferenceStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSetReferenceStatementUndefined: Self = StObject.set(x, "ipSetReferenceStatement", js.undefined)
+    inline def setIpSetReferenceStatementUndefined: Self = StObject.set(x, "ipSetReferenceStatement", js.undefined)
     
-    @scala.inline
-    def setNotStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementNotStatement): Self = StObject.set(x, "notStatement", value.asInstanceOf[js.Any])
+    inline def setNotStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementNotStatement): Self = StObject.set(x, "notStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotStatementUndefined: Self = StObject.set(x, "notStatement", js.undefined)
+    inline def setNotStatementUndefined: Self = StObject.set(x, "notStatement", js.undefined)
     
-    @scala.inline
-    def setOrStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementOrStatement): Self = StObject.set(x, "orStatement", value.asInstanceOf[js.Any])
+    inline def setOrStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementOrStatement): Self = StObject.set(x, "orStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrStatementUndefined: Self = StObject.set(x, "orStatement", js.undefined)
+    inline def setOrStatementUndefined: Self = StObject.set(x, "orStatement", js.undefined)
     
-    @scala.inline
-    def setRegexPatternSetReferenceStatement(
+    inline def setRegexPatternSetReferenceStatement(
       value: WebAclRuleStatementNotStatementStatementNotStatementStatementRegexPatternSetReferenceStatement
     ): Self = StObject.set(x, "regexPatternSetReferenceStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternSetReferenceStatementUndefined: Self = StObject.set(x, "regexPatternSetReferenceStatement", js.undefined)
+    inline def setRegexPatternSetReferenceStatementUndefined: Self = StObject.set(x, "regexPatternSetReferenceStatement", js.undefined)
     
-    @scala.inline
-    def setSizeConstraintStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementSizeConstraintStatement): Self = StObject.set(x, "sizeConstraintStatement", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementSizeConstraintStatement): Self = StObject.set(x, "sizeConstraintStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintStatementUndefined: Self = StObject.set(x, "sizeConstraintStatement", js.undefined)
+    inline def setSizeConstraintStatementUndefined: Self = StObject.set(x, "sizeConstraintStatement", js.undefined)
     
-    @scala.inline
-    def setSqliMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatement): Self = StObject.set(x, "sqliMatchStatement", value.asInstanceOf[js.Any])
+    inline def setSqliMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementSqliMatchStatement): Self = StObject.set(x, "sqliMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqliMatchStatementUndefined: Self = StObject.set(x, "sqliMatchStatement", js.undefined)
+    inline def setSqliMatchStatementUndefined: Self = StObject.set(x, "sqliMatchStatement", js.undefined)
     
-    @scala.inline
-    def setXssMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatement): Self = StObject.set(x, "xssMatchStatement", value.asInstanceOf[js.Any])
+    inline def setXssMatchStatement(value: WebAclRuleStatementNotStatementStatementNotStatementStatementXssMatchStatement): Self = StObject.set(x, "xssMatchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchStatementUndefined: Self = StObject.set(x, "xssMatchStatement", js.undefined)
+    inline def setXssMatchStatementUndefined: Self = StObject.set(x, "xssMatchStatement", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait AzureRestApiResponseModel
 }
 object AzureRestApiResponseModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assetDetails: AssetDetails,
     assetId: String,
     assetVersion: Double,
@@ -33,10 +32,8 @@ object AzureRestApiResponseModel {
     __obj.asInstanceOf[AzureRestApiResponseModel]
   }
   
-  @scala.inline
-  implicit class AzureRestApiResponseModelMutableBuilder[Self <: AzureRestApiResponseModel] (val x: Self) extends AnyVal {
+  extension [Self <: AzureRestApiResponseModel](x: Self) {
     
-    @scala.inline
-    def setOperationStatus(value: RestApiResponseStatusModel): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
+    inline def setOperationStatus(value: RestApiResponseStatusModel): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
   }
 }

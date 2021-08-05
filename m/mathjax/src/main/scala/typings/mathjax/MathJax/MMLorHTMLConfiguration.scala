@@ -20,19 +20,15 @@ trait MMLorHTMLConfiguration extends StObject {
 }
 object MMLorHTMLConfiguration {
   
-  @scala.inline
-  def apply(): MMLorHTMLConfiguration = {
+  inline def apply(): MMLorHTMLConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MMLorHTMLConfiguration]
   }
   
-  @scala.inline
-  implicit class MMLorHTMLConfigurationMutableBuilder[Self <: MMLorHTMLConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MMLorHTMLConfiguration](x: Self) {
     
-    @scala.inline
-    def setPrefer(value: BrowserPreference): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
+    inline def setPrefer(value: BrowserPreference): Self = StObject.set(x, "prefer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferUndefined: Self = StObject.set(x, "prefer", js.undefined)
+    inline def setPreferUndefined: Self = StObject.set(x, "prefer", js.undefined)
   }
 }

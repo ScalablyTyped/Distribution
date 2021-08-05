@@ -13,19 +13,15 @@ trait CreateRepositoryResponse extends StObject {
 }
 object CreateRepositoryResponse {
   
-  @scala.inline
-  def apply(): CreateRepositoryResponse = {
+  inline def apply(): CreateRepositoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRepositoryResponse]
   }
   
-  @scala.inline
-  implicit class CreateRepositoryResponseMutableBuilder[Self <: CreateRepositoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRepositoryResponse](x: Self) {
     
-    @scala.inline
-    def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
   }
 }

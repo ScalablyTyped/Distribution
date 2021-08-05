@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StateWhenUpdatesAllowed extends StObject
 object StateWhenUpdatesAllowed {
   
-  @scala.inline
-  def CollectingState(
+  inline def CollectingState(
     afterCritical: LiftEffect,
     critical: Critical,
     current: DragPositions,
@@ -28,8 +27,7 @@ object StateWhenUpdatesAllowed {
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.CollectingState]
   }
   
-  @scala.inline
-  def DraggingState(
+  inline def DraggingState(
     afterCritical: LiftEffect,
     critical: Critical,
     current: DragPositions,

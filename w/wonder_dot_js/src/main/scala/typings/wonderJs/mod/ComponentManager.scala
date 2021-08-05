@@ -17,6 +17,5 @@ object ComponentManager {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(entityObject: typings.wonderJs.entityObjectMod.EntityObject): typings.wonderJs.componentManagerMod.ComponentManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.componentManagerMod.ComponentManager]
+  inline def create(entityObject: typings.wonderJs.entityObjectMod.EntityObject): typings.wonderJs.componentManagerMod.ComponentManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.componentManagerMod.ComponentManager]
 }

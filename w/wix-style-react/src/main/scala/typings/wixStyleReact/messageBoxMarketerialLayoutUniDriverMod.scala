@@ -38,8 +38,7 @@ object messageBoxMarketerialLayoutUniDriverMod {
   }
   object MessageBoxMarketerialLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickOnPrimaryButton: () => Unit,
       clickOnSecondaryButton: () => Unit,
@@ -60,44 +59,31 @@ object messageBoxMarketerialLayoutUniDriverMod {
       __obj.asInstanceOf[MessageBoxMarketerialLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class MessageBoxMarketerialLayoutUniDriverMutableBuilder[Self <: MessageBoxMarketerialLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MessageBoxMarketerialLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnPrimaryButton(value: () => Unit): Self = StObject.set(x, "clickOnPrimaryButton", js.Any.fromFunction0(value))
+      inline def setClickOnPrimaryButton(value: () => Unit): Self = StObject.set(x, "clickOnPrimaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnSecondaryButton(value: () => Unit): Self = StObject.set(x, "clickOnSecondaryButton", js.Any.fromFunction0(value))
+      inline def setClickOnSecondaryButton(value: () => Unit): Self = StObject.set(x, "clickOnSecondaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseMessageBox(value: () => Unit): Self = StObject.set(x, "closeMessageBox", js.Any.fromFunction0(value))
+      inline def setCloseMessageBox(value: () => Unit): Self = StObject.set(x, "closeMessageBox", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentBySelector(value: String => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getContentBySelector", js.Any.fromFunction1(value))
+      inline def setGetContentBySelector(value: String => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getContentBySelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeaderCloseButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getHeaderCloseButton", js.Any.fromFunction0(value))
+      inline def setGetHeaderCloseButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getHeaderCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImageSrc(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getImageSrc", js.Any.fromFunction0(value))
+      inline def setGetImageSrc(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getImageSrc", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getPrimaryButton", js.Any.fromFunction0(value))
+      inline def setGetPrimaryButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getPrimaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryButtonNode(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getPrimaryButtonNode", js.Any.fromFunction0(value))
+      inline def setGetPrimaryButtonNode(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getPrimaryButtonNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getPrimaryButtonText", js.Any.fromFunction0(value))
+      inline def setGetPrimaryButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getPrimaryButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecondaryButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getSecondaryButton", js.Any.fromFunction0(value))
+      inline def setGetSecondaryButton(value: () => js.Promise[UniDriver[js.Any] | Null]): Self = StObject.set(x, "getSecondaryButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecondaryButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getSecondaryButtonText", js.Any.fromFunction0(value))
+      inline def setGetSecondaryButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getSecondaryButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

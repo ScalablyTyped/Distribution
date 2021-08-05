@@ -24,38 +24,28 @@ trait CustomPropertyTextArea
 }
 object CustomPropertyTextArea {
   
-  @scala.inline
-  def apply(): CustomPropertyTextArea = {
+  inline def apply(): CustomPropertyTextArea = {
     val __obj = js.Dynamic.literal(component = "textarea")
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomPropertyTextArea]
   }
   
-  @scala.inline
-  implicit class CustomPropertyTextAreaMutableBuilder[Self <: CustomPropertyTextArea] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyTextArea](x: Self) {
     
-    @scala.inline
-    def setComponent(value: textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+    inline def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
+    inline def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

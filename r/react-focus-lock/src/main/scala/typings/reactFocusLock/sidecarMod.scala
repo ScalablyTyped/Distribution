@@ -14,6 +14,5 @@ object sidecarMod {
   @JSImport("react-focus-lock/sidecar/sidecar", JSImport.Default)
   @js.native
   def default: SFC[js.Object] = js.native
-  @scala.inline
-  def default_=(x: SFC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: SFC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

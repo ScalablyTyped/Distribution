@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcExportXMLOtherFlags extends StObject
 object AcExportXMLOtherFlags {
   
-  @scala.inline
-  def acEmbedSchema: `1` = 1.asInstanceOf[`1`]
+  inline def acEmbedSchema: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acExcludePrimaryKeyAndIndexes: `2` = 2.asInstanceOf[`2`]
+  inline def acExcludePrimaryKeyAndIndexes: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acExportAllTableAndFieldProperties: `32` = 32.asInstanceOf[`32`]
+  inline def acExportAllTableAndFieldProperties: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def acLiveReportSource: `8` = 8.asInstanceOf[`8`]
+  inline def acLiveReportSource: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def acPersistReportML: `16` = 16.asInstanceOf[`16`]
+  inline def acPersistReportML: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def acRunFromServer: `4` = 4.asInstanceOf[`4`]
+  inline def acRunFromServer: `4` = 4.asInstanceOf[`4`]
 }

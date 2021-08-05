@@ -22,28 +22,21 @@ trait SchemaPostalCodesListResponse extends StObject {
 }
 object SchemaPostalCodesListResponse {
   
-  @scala.inline
-  def apply(): SchemaPostalCodesListResponse = {
+  inline def apply(): SchemaPostalCodesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPostalCodesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPostalCodesListResponseMutableBuilder[Self <: SchemaPostalCodesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPostalCodesListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPostalCodes(value: js.Array[SchemaPostalCode]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
+    inline def setPostalCodes(value: js.Array[SchemaPostalCode]): Self = StObject.set(x, "postalCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
+    inline def setPostalCodesUndefined: Self = StObject.set(x, "postalCodes", js.undefined)
     
-    @scala.inline
-    def setPostalCodesVarargs(value: SchemaPostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
+    inline def setPostalCodesVarargs(value: SchemaPostalCode*): Self = StObject.set(x, "postalCodes", js.Array(value :_*))
   }
 }

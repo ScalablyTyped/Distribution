@@ -8,11 +8,9 @@ object cacheManagerStrings {
   
   @js.native
   sealed trait memory extends StObject
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

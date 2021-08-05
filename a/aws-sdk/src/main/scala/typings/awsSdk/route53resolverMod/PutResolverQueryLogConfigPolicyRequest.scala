@@ -18,19 +18,15 @@ trait PutResolverQueryLogConfigPolicyRequest extends StObject {
 }
 object PutResolverQueryLogConfigPolicyRequest {
   
-  @scala.inline
-  def apply(Arn: Arn, ResolverQueryLogConfigPolicy: ResolverQueryLogConfigPolicy): PutResolverQueryLogConfigPolicyRequest = {
+  inline def apply(Arn: Arn, ResolverQueryLogConfigPolicy: ResolverQueryLogConfigPolicy): PutResolverQueryLogConfigPolicyRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ResolverQueryLogConfigPolicy = ResolverQueryLogConfigPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResolverQueryLogConfigPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutResolverQueryLogConfigPolicyRequestMutableBuilder[Self <: PutResolverQueryLogConfigPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutResolverQueryLogConfigPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverQueryLogConfigPolicy(value: ResolverQueryLogConfigPolicy): Self = StObject.set(x, "ResolverQueryLogConfigPolicy", value.asInstanceOf[js.Any])
+    inline def setResolverQueryLogConfigPolicy(value: ResolverQueryLogConfigPolicy): Self = StObject.set(x, "ResolverQueryLogConfigPolicy", value.asInstanceOf[js.Any])
   }
 }

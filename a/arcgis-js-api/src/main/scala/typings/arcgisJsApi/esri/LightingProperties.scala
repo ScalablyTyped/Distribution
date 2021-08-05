@@ -29,31 +29,23 @@ trait LightingProperties extends StObject {
 }
 object LightingProperties {
   
-  @scala.inline
-  def apply(): LightingProperties = {
+  inline def apply(): LightingProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LightingProperties]
   }
   
-  @scala.inline
-  implicit class LightingPropertiesMutableBuilder[Self <: LightingProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LightingProperties](x: Self) {
     
-    @scala.inline
-    def setDate(value: DateProperties): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: DateProperties): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDirectShadowsEnabled(value: Boolean): Self = StObject.set(x, "directShadowsEnabled", value.asInstanceOf[js.Any])
+    inline def setDirectShadowsEnabled(value: Boolean): Self = StObject.set(x, "directShadowsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectShadowsEnabledUndefined: Self = StObject.set(x, "directShadowsEnabled", js.undefined)
+    inline def setDirectShadowsEnabledUndefined: Self = StObject.set(x, "directShadowsEnabled", js.undefined)
     
-    @scala.inline
-    def setDisplayUTCOffset(value: Double): Self = StObject.set(x, "displayUTCOffset", value.asInstanceOf[js.Any])
+    inline def setDisplayUTCOffset(value: Double): Self = StObject.set(x, "displayUTCOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUTCOffsetUndefined: Self = StObject.set(x, "displayUTCOffset", js.undefined)
+    inline def setDisplayUTCOffsetUndefined: Self = StObject.set(x, "displayUTCOffset", js.undefined)
   }
 }

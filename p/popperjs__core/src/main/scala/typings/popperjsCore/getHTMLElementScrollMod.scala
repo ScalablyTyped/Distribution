@@ -12,6 +12,5 @@ object getHTMLElementScrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: HTMLElement): ScrollLeft = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[ScrollLeft]
+  inline def default(element: HTMLElement): ScrollLeft = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[ScrollLeft]
 }

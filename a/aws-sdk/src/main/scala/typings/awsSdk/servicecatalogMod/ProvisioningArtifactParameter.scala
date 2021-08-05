@@ -38,49 +38,35 @@ trait ProvisioningArtifactParameter extends StObject {
 }
 object ProvisioningArtifactParameter {
   
-  @scala.inline
-  def apply(): ProvisioningArtifactParameter = {
+  inline def apply(): ProvisioningArtifactParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvisioningArtifactParameter]
   }
   
-  @scala.inline
-  implicit class ProvisioningArtifactParameterMutableBuilder[Self <: ProvisioningArtifactParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisioningArtifactParameter](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setIsNoEcho(value: NoEcho): Self = StObject.set(x, "IsNoEcho", value.asInstanceOf[js.Any])
+    inline def setIsNoEcho(value: NoEcho): Self = StObject.set(x, "IsNoEcho", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNoEchoUndefined: Self = StObject.set(x, "IsNoEcho", js.undefined)
+    inline def setIsNoEchoUndefined: Self = StObject.set(x, "IsNoEcho", js.undefined)
     
-    @scala.inline
-    def setParameterConstraints(value: ParameterConstraints): Self = StObject.set(x, "ParameterConstraints", value.asInstanceOf[js.Any])
+    inline def setParameterConstraints(value: ParameterConstraints): Self = StObject.set(x, "ParameterConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterConstraintsUndefined: Self = StObject.set(x, "ParameterConstraints", js.undefined)
+    inline def setParameterConstraintsUndefined: Self = StObject.set(x, "ParameterConstraints", js.undefined)
     
-    @scala.inline
-    def setParameterKey(value: ParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
+    inline def setParameterKey(value: ParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterKeyUndefined: Self = StObject.set(x, "ParameterKey", js.undefined)
+    inline def setParameterKeyUndefined: Self = StObject.set(x, "ParameterKey", js.undefined)
     
-    @scala.inline
-    def setParameterType(value: ParameterType): Self = StObject.set(x, "ParameterType", value.asInstanceOf[js.Any])
+    inline def setParameterType(value: ParameterType): Self = StObject.set(x, "ParameterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterTypeUndefined: Self = StObject.set(x, "ParameterType", js.undefined)
+    inline def setParameterTypeUndefined: Self = StObject.set(x, "ParameterType", js.undefined)
   }
 }

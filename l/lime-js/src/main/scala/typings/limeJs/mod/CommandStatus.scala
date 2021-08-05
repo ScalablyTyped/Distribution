@@ -17,13 +17,11 @@ object CommandStatus {
   @JSImport("lime-js", "CommandStatus.failure")
   @js.native
   def failure: String = js.native
-  @scala.inline
-  def failure_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("failure")(x.asInstanceOf[js.Any])
+  inline def failure_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("failure")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "CommandStatus.success")
   @js.native
   def success: String = js.native
-  @scala.inline
-  def success_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
+  inline def success_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
 }

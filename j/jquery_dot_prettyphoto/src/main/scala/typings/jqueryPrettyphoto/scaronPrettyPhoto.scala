@@ -210,218 +210,148 @@ object scaronPrettyPhoto {
   }
   object PrettyPhotoSettings {
     
-    @scala.inline
-    def apply(): PrettyPhotoSettings = {
+    inline def apply(): PrettyPhotoSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrettyPhotoSettings]
     }
     
-    @scala.inline
-    implicit class PrettyPhotoSettingsMutableBuilder[Self <: PrettyPhotoSettings] (val x: Self) extends AnyVal {
+    extension [Self <: PrettyPhotoSettings](x: Self) {
       
-      @scala.inline
-      def setAjaxcallback(value: () => Unit): Self = StObject.set(x, "ajaxcallback", js.Any.fromFunction0(value))
+      inline def setAjaxcallback(value: () => Unit): Self = StObject.set(x, "ajaxcallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAjaxcallbackUndefined: Self = StObject.set(x, "ajaxcallback", js.undefined)
+      inline def setAjaxcallbackUndefined: Self = StObject.set(x, "ajaxcallback", js.undefined)
       
-      @scala.inline
-      def setAllow_expand(value: Boolean): Self = StObject.set(x, "allow_expand", value.asInstanceOf[js.Any])
+      inline def setAllow_expand(value: Boolean): Self = StObject.set(x, "allow_expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_expandUndefined: Self = StObject.set(x, "allow_expand", js.undefined)
+      inline def setAllow_expandUndefined: Self = StObject.set(x, "allow_expand", js.undefined)
       
-      @scala.inline
-      def setAllow_resize(value: Boolean): Self = StObject.set(x, "allow_resize", value.asInstanceOf[js.Any])
+      inline def setAllow_resize(value: Boolean): Self = StObject.set(x, "allow_resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_resizeUndefined: Self = StObject.set(x, "allow_resize", js.undefined)
+      inline def setAllow_resizeUndefined: Self = StObject.set(x, "allow_resize", js.undefined)
       
-      @scala.inline
-      def setAnimation_speed(value: String): Self = StObject.set(x, "animation_speed", value.asInstanceOf[js.Any])
+      inline def setAnimation_speed(value: String): Self = StObject.set(x, "animation_speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimation_speedUndefined: Self = StObject.set(x, "animation_speed", js.undefined)
+      inline def setAnimation_speedUndefined: Self = StObject.set(x, "animation_speed", js.undefined)
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setAutoplay_slideshow(value: Boolean): Self = StObject.set(x, "autoplay_slideshow", value.asInstanceOf[js.Any])
+      inline def setAutoplay_slideshow(value: Boolean): Self = StObject.set(x, "autoplay_slideshow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplay_slideshowUndefined: Self = StObject.set(x, "autoplay_slideshow", js.undefined)
+      inline def setAutoplay_slideshowUndefined: Self = StObject.set(x, "autoplay_slideshow", js.undefined)
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setChangepicturecallback(value: () => Unit): Self = StObject.set(x, "changepicturecallback", js.Any.fromFunction0(value))
+      inline def setChangepicturecallback(value: () => Unit): Self = StObject.set(x, "changepicturecallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setChangepicturecallbackUndefined: Self = StObject.set(x, "changepicturecallback", js.undefined)
+      inline def setChangepicturecallbackUndefined: Self = StObject.set(x, "changepicturecallback", js.undefined)
       
-      @scala.inline
-      def setCounter_separator_label(value: String): Self = StObject.set(x, "counter_separator_label", value.asInstanceOf[js.Any])
+      inline def setCounter_separator_label(value: String): Self = StObject.set(x, "counter_separator_label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounter_separator_labelUndefined: Self = StObject.set(x, "counter_separator_label", js.undefined)
+      inline def setCounter_separator_labelUndefined: Self = StObject.set(x, "counter_separator_label", js.undefined)
       
-      @scala.inline
-      def setCustom_markup(value: String): Self = StObject.set(x, "custom_markup", value.asInstanceOf[js.Any])
+      inline def setCustom_markup(value: String): Self = StObject.set(x, "custom_markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom_markupUndefined: Self = StObject.set(x, "custom_markup", js.undefined)
+      inline def setCustom_markupUndefined: Self = StObject.set(x, "custom_markup", js.undefined)
       
-      @scala.inline
-      def setDeeplinking(value: Boolean): Self = StObject.set(x, "deeplinking", value.asInstanceOf[js.Any])
+      inline def setDeeplinking(value: Boolean): Self = StObject.set(x, "deeplinking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeeplinkingUndefined: Self = StObject.set(x, "deeplinking", js.undefined)
+      inline def setDeeplinkingUndefined: Self = StObject.set(x, "deeplinking", js.undefined)
       
-      @scala.inline
-      def setDefault_height(value: Double): Self = StObject.set(x, "default_height", value.asInstanceOf[js.Any])
+      inline def setDefault_height(value: Double): Self = StObject.set(x, "default_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_heightUndefined: Self = StObject.set(x, "default_height", js.undefined)
+      inline def setDefault_heightUndefined: Self = StObject.set(x, "default_height", js.undefined)
       
-      @scala.inline
-      def setDefault_width(value: Double): Self = StObject.set(x, "default_width", value.asInstanceOf[js.Any])
+      inline def setDefault_width(value: Double): Self = StObject.set(x, "default_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_widthUndefined: Self = StObject.set(x, "default_width", js.undefined)
+      inline def setDefault_widthUndefined: Self = StObject.set(x, "default_width", js.undefined)
       
-      @scala.inline
-      def setFlash_markup(value: String): Self = StObject.set(x, "flash_markup", value.asInstanceOf[js.Any])
+      inline def setFlash_markup(value: String): Self = StObject.set(x, "flash_markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlash_markupUndefined: Self = StObject.set(x, "flash_markup", js.undefined)
+      inline def setFlash_markupUndefined: Self = StObject.set(x, "flash_markup", js.undefined)
       
-      @scala.inline
-      def setGallery_markup(value: String): Self = StObject.set(x, "gallery_markup", value.asInstanceOf[js.Any])
+      inline def setGallery_markup(value: String): Self = StObject.set(x, "gallery_markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGallery_markupUndefined: Self = StObject.set(x, "gallery_markup", js.undefined)
+      inline def setGallery_markupUndefined: Self = StObject.set(x, "gallery_markup", js.undefined)
       
-      @scala.inline
-      def setHideflash(value: Boolean): Self = StObject.set(x, "hideflash", value.asInstanceOf[js.Any])
+      inline def setHideflash(value: Boolean): Self = StObject.set(x, "hideflash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideflashUndefined: Self = StObject.set(x, "hideflash", js.undefined)
+      inline def setHideflashUndefined: Self = StObject.set(x, "hideflash", js.undefined)
       
-      @scala.inline
-      def setHook(value: String): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+      inline def setHook(value: String): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
+      inline def setHookUndefined: Self = StObject.set(x, "hook", js.undefined)
       
-      @scala.inline
-      def setHorizontal_padding(value: Double): Self = StObject.set(x, "horizontal_padding", value.asInstanceOf[js.Any])
+      inline def setHorizontal_padding(value: Double): Self = StObject.set(x, "horizontal_padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontal_paddingUndefined: Self = StObject.set(x, "horizontal_padding", js.undefined)
+      inline def setHorizontal_paddingUndefined: Self = StObject.set(x, "horizontal_padding", js.undefined)
       
-      @scala.inline
-      def setIe6_fallback(value: Boolean): Self = StObject.set(x, "ie6_fallback", value.asInstanceOf[js.Any])
+      inline def setIe6_fallback(value: Boolean): Self = StObject.set(x, "ie6_fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIe6_fallbackUndefined: Self = StObject.set(x, "ie6_fallback", js.undefined)
+      inline def setIe6_fallbackUndefined: Self = StObject.set(x, "ie6_fallback", js.undefined)
       
-      @scala.inline
-      def setIframe_markup(value: String): Self = StObject.set(x, "iframe_markup", value.asInstanceOf[js.Any])
+      inline def setIframe_markup(value: String): Self = StObject.set(x, "iframe_markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIframe_markupUndefined: Self = StObject.set(x, "iframe_markup", js.undefined)
+      inline def setIframe_markupUndefined: Self = StObject.set(x, "iframe_markup", js.undefined)
       
-      @scala.inline
-      def setImage_markup(value: String): Self = StObject.set(x, "image_markup", value.asInstanceOf[js.Any])
+      inline def setImage_markup(value: String): Self = StObject.set(x, "image_markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_markupUndefined: Self = StObject.set(x, "image_markup", js.undefined)
+      inline def setImage_markupUndefined: Self = StObject.set(x, "image_markup", js.undefined)
       
-      @scala.inline
-      def setInline_markup(value: String): Self = StObject.set(x, "inline_markup", value.asInstanceOf[js.Any])
+      inline def setInline_markup(value: String): Self = StObject.set(x, "inline_markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInline_markupUndefined: Self = StObject.set(x, "inline_markup", js.undefined)
+      inline def setInline_markupUndefined: Self = StObject.set(x, "inline_markup", js.undefined)
       
-      @scala.inline
-      def setKeyboard_shortcuts(value: Boolean): Self = StObject.set(x, "keyboard_shortcuts", value.asInstanceOf[js.Any])
+      inline def setKeyboard_shortcuts(value: Boolean): Self = StObject.set(x, "keyboard_shortcuts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboard_shortcutsUndefined: Self = StObject.set(x, "keyboard_shortcuts", js.undefined)
+      inline def setKeyboard_shortcutsUndefined: Self = StObject.set(x, "keyboard_shortcuts", js.undefined)
       
-      @scala.inline
-      def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+      inline def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+      inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
-      @scala.inline
-      def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+      inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+      inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setOverlay_gallery(value: Boolean): Self = StObject.set(x, "overlay_gallery", value.asInstanceOf[js.Any])
+      inline def setOverlay_gallery(value: Boolean): Self = StObject.set(x, "overlay_gallery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlay_galleryUndefined: Self = StObject.set(x, "overlay_gallery", js.undefined)
+      inline def setOverlay_galleryUndefined: Self = StObject.set(x, "overlay_gallery", js.undefined)
       
-      @scala.inline
-      def setOverlay_gallery_max(value: Double): Self = StObject.set(x, "overlay_gallery_max", value.asInstanceOf[js.Any])
+      inline def setOverlay_gallery_max(value: Double): Self = StObject.set(x, "overlay_gallery_max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlay_gallery_maxUndefined: Self = StObject.set(x, "overlay_gallery_max", js.undefined)
+      inline def setOverlay_gallery_maxUndefined: Self = StObject.set(x, "overlay_gallery_max", js.undefined)
       
-      @scala.inline
-      def setQuicktime_markup(value: String): Self = StObject.set(x, "quicktime_markup", value.asInstanceOf[js.Any])
+      inline def setQuicktime_markup(value: String): Self = StObject.set(x, "quicktime_markup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuicktime_markupUndefined: Self = StObject.set(x, "quicktime_markup", js.undefined)
+      inline def setQuicktime_markupUndefined: Self = StObject.set(x, "quicktime_markup", js.undefined)
       
-      @scala.inline
-      def setShow_title(value: Boolean): Self = StObject.set(x, "show_title", value.asInstanceOf[js.Any])
+      inline def setShow_title(value: Boolean): Self = StObject.set(x, "show_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_titleUndefined: Self = StObject.set(x, "show_title", js.undefined)
+      inline def setShow_titleUndefined: Self = StObject.set(x, "show_title", js.undefined)
       
-      @scala.inline
-      def setSlideshow(value: js.Any): Self = StObject.set(x, "slideshow", value.asInstanceOf[js.Any])
+      inline def setSlideshow(value: js.Any): Self = StObject.set(x, "slideshow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideshowUndefined: Self = StObject.set(x, "slideshow", js.undefined)
+      inline def setSlideshowUndefined: Self = StObject.set(x, "slideshow", js.undefined)
       
-      @scala.inline
-      def setSocial_tools(value: js.Any): Self = StObject.set(x, "social_tools", value.asInstanceOf[js.Any])
+      inline def setSocial_tools(value: js.Any): Self = StObject.set(x, "social_tools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocial_toolsUndefined: Self = StObject.set(x, "social_tools", js.undefined)
+      inline def setSocial_toolsUndefined: Self = StObject.set(x, "social_tools", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
+      inline def setWmode(value: String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
+      inline def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
     }
   }
   

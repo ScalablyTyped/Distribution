@@ -20,32 +20,24 @@ object anon {
   }
   object PickAuthorizationCodeauth {
     
-    @scala.inline
-    def apply(authorizationCode: String, expiresAt: Date, redirectUri: String): PickAuthorizationCodeauth = {
+    inline def apply(authorizationCode: String, expiresAt: Date, redirectUri: String): PickAuthorizationCodeauth = {
       val __obj = js.Dynamic.literal(authorizationCode = authorizationCode.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickAuthorizationCodeauth]
     }
     
-    @scala.inline
-    implicit class PickAuthorizationCodeauthMutableBuilder[Self <: PickAuthorizationCodeauth] (val x: Self) extends AnyVal {
+    extension [Self <: PickAuthorizationCodeauth](x: Self) {
       
-      @scala.inline
-      def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
+      inline def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     }
   }
 }

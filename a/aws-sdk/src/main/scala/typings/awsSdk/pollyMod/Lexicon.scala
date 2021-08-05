@@ -18,25 +18,19 @@ trait Lexicon extends StObject {
 }
 object Lexicon {
   
-  @scala.inline
-  def apply(): Lexicon = {
+  inline def apply(): Lexicon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lexicon]
   }
   
-  @scala.inline
-  implicit class LexiconMutableBuilder[Self <: Lexicon] (val x: Self) extends AnyVal {
+  extension [Self <: Lexicon](x: Self) {
     
-    @scala.inline
-    def setContent(value: LexiconContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: LexiconContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

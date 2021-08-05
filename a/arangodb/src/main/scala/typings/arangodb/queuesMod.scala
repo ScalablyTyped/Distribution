@@ -13,16 +13,12 @@ object queuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(name: String): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Queue]
-  @scala.inline
-  def create(name: String, maxWorkers: Double): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], maxWorkers.asInstanceOf[js.Any])).asInstanceOf[Queue]
+  inline def create(name: String): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Queue]
+  inline def create(name: String, maxWorkers: Double): Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], maxWorkers.asInstanceOf[js.Any])).asInstanceOf[Queue]
   
-  @scala.inline
-  def delete(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def delete(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def get(name: String): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[Queue]
+  inline def get(name: String): Queue = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[Queue]
   
   trait Job extends StObject {
     
@@ -62,8 +58,7 @@ object queuesMod {
   }
   object Job {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: () => Unit,
       created: Double,
       data: js.Any,
@@ -85,68 +80,47 @@ object queuesMod {
       __obj.asInstanceOf[Job]
     }
     
-    @scala.inline
-    implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+    extension [Self <: Job](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUntil(value: Double): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
+      inline def setDelayUntil(value: Double): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+      inline def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+      inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
-      @scala.inline
-      def setFailures(value: js.Array[js.Object]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: js.Array[js.Object]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
+      inline def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: Double): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Double): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatTimes(value: Double): Self = StObject.set(x, "repeatTimes", value.asInstanceOf[js.Any])
+      inline def setRepeatTimes(value: Double): Self = StObject.set(x, "repeatTimes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUntil(value: Double): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
+      inline def setRepeatUntil(value: Double): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunFailures(value: Double): Self = StObject.set(x, "runFailures", value.asInstanceOf[js.Any])
+      inline def setRunFailures(value: Double): Self = StObject.set(x, "runFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+      inline def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setType(value: Script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,65 +146,46 @@ object queuesMod {
   }
   object JobOptions {
     
-    @scala.inline
-    def apply(): JobOptions = {
+    inline def apply(): JobOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobOptions]
     }
     
-    @scala.inline
-    implicit class JobOptionsMutableBuilder[Self <: JobOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JobOptions](x: Self) {
       
-      @scala.inline
-      def setBackOff(value: (js.Function1[/* failureCount */ Double, Double]) | Double): Self = StObject.set(x, "backOff", value.asInstanceOf[js.Any])
+      inline def setBackOff(value: (js.Function1[/* failureCount */ Double, Double]) | Double): Self = StObject.set(x, "backOff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackOffFunction1(value: /* failureCount */ Double => Double): Self = StObject.set(x, "backOff", js.Any.fromFunction1(value))
+      inline def setBackOffFunction1(value: /* failureCount */ Double => Double): Self = StObject.set(x, "backOff", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackOffUndefined: Self = StObject.set(x, "backOff", js.undefined)
+      inline def setBackOffUndefined: Self = StObject.set(x, "backOff", js.undefined)
       
-      @scala.inline
-      def setDelayUntil(value: Double | Date): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
+      inline def setDelayUntil(value: Double | Date): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUntilUndefined: Self = StObject.set(x, "delayUntil", js.undefined)
+      inline def setDelayUntilUndefined: Self = StObject.set(x, "delayUntil", js.undefined)
       
-      @scala.inline
-      def setFailure(value: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction3(value))
+      inline def setFailure(value: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
+      inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
-      @scala.inline
-      def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
+      inline def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFailuresUndefined: Self = StObject.set(x, "maxFailures", js.undefined)
+      inline def setMaxFailuresUndefined: Self = StObject.set(x, "maxFailures", js.undefined)
       
-      @scala.inline
-      def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
+      inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
-      @scala.inline
-      def setRepeatTimes(value: Double): Self = StObject.set(x, "repeatTimes", value.asInstanceOf[js.Any])
+      inline def setRepeatTimes(value: Double): Self = StObject.set(x, "repeatTimes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatTimesUndefined: Self = StObject.set(x, "repeatTimes", js.undefined)
+      inline def setRepeatTimesUndefined: Self = StObject.set(x, "repeatTimes", js.undefined)
       
-      @scala.inline
-      def setRepeatUntil(value: Double | Date): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
+      inline def setRepeatUntil(value: Double | Date): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUntilUndefined: Self = StObject.set(x, "repeatUntil", js.undefined)
+      inline def setRepeatUntilUndefined: Self = StObject.set(x, "repeatUntil", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -276,47 +231,34 @@ object queuesMod {
   }
   object QueueItem {
     
-    @scala.inline
-    def apply(mount: String, name: String): QueueItem = {
+    inline def apply(mount: String, name: String): QueueItem = {
       val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueueItem]
     }
     
-    @scala.inline
-    implicit class QueueItemMutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
+    extension [Self <: QueueItem](x: Self) {
       
-      @scala.inline
-      def setBackOff(value: (js.Function1[/* failureCount */ Double, Double]) | Double): Self = StObject.set(x, "backOff", value.asInstanceOf[js.Any])
+      inline def setBackOff(value: (js.Function1[/* failureCount */ Double, Double]) | Double): Self = StObject.set(x, "backOff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackOffFunction1(value: /* failureCount */ Double => Double): Self = StObject.set(x, "backOff", js.Any.fromFunction1(value))
+      inline def setBackOffFunction1(value: /* failureCount */ Double => Double): Self = StObject.set(x, "backOff", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackOffUndefined: Self = StObject.set(x, "backOff", js.undefined)
+      inline def setBackOffUndefined: Self = StObject.set(x, "backOff", js.undefined)
       
-      @scala.inline
-      def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
+      inline def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFailuresUndefined: Self = StObject.set(x, "maxFailures", js.undefined)
+      inline def setMaxFailuresUndefined: Self = StObject.set(x, "maxFailures", js.undefined)
       
-      @scala.inline
-      def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreprocess(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
+      inline def setPreprocess(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
+      inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
       
-      @scala.inline
-      def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
   
@@ -328,20 +270,16 @@ object queuesMod {
   }
   object Script {
     
-    @scala.inline
-    def apply(mount: String, name: String): Script = {
+    inline def apply(mount: String, name: String): Script = {
       val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Script]
     }
     
-    @scala.inline
-    implicit class ScriptMutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
+    extension [Self <: Script](x: Self) {
       
-      @scala.inline
-      def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

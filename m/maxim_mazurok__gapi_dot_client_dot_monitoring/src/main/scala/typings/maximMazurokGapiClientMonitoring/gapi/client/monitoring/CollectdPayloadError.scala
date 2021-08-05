@@ -17,34 +17,25 @@ trait CollectdPayloadError extends StObject {
 }
 object CollectdPayloadError {
   
-  @scala.inline
-  def apply(): CollectdPayloadError = {
+  inline def apply(): CollectdPayloadError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectdPayloadError]
   }
   
-  @scala.inline
-  implicit class CollectdPayloadErrorMutableBuilder[Self <: CollectdPayloadError] (val x: Self) extends AnyVal {
+  extension [Self <: CollectdPayloadError](x: Self) {
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setValueErrors(value: js.Array[CollectdValueError]): Self = StObject.set(x, "valueErrors", value.asInstanceOf[js.Any])
+    inline def setValueErrors(value: js.Array[CollectdValueError]): Self = StObject.set(x, "valueErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueErrorsUndefined: Self = StObject.set(x, "valueErrors", js.undefined)
+    inline def setValueErrorsUndefined: Self = StObject.set(x, "valueErrors", js.undefined)
     
-    @scala.inline
-    def setValueErrorsVarargs(value: CollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value :_*))
+    inline def setValueErrorsVarargs(value: CollectdValueError*): Self = StObject.set(x, "valueErrors", js.Array(value :_*))
   }
 }

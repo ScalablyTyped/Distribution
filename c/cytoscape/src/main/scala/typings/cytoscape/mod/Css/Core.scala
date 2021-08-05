@@ -68,8 +68,7 @@ trait Core extends StObject {
 }
 object Core {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `active-bg-color`: PropertyValueCore[Colour],
     `active-bg-opacity`: PropertyValueCore[Double],
     `active-bg-size`: PropertyValueCore[Double],
@@ -93,61 +92,42 @@ object Core {
     __obj.asInstanceOf[Core]
   }
   
-  @scala.inline
-  implicit class CoreMutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
+  extension [Self <: Core](x: Self) {
     
-    @scala.inline
-    def `setActive-bg-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "active-bg-color", value.asInstanceOf[js.Any])
+    inline def `setActive-bg-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "active-bg-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setActive-bg-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "active-bg-color", js.Any.fromFunction1(value))
+    inline def `setActive-bg-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "active-bg-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setActive-bg-opacity`(value: PropertyValueCore[Double]): Self = StObject.set(x, "active-bg-opacity", value.asInstanceOf[js.Any])
+    inline def `setActive-bg-opacity`(value: PropertyValueCore[Double]): Self = StObject.set(x, "active-bg-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setActive-bg-opacityFunction1`(value: Core => Double): Self = StObject.set(x, "active-bg-opacity", js.Any.fromFunction1(value))
+    inline def `setActive-bg-opacityFunction1`(value: Core => Double): Self = StObject.set(x, "active-bg-opacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setActive-bg-size`(value: PropertyValueCore[Double]): Self = StObject.set(x, "active-bg-size", value.asInstanceOf[js.Any])
+    inline def `setActive-bg-size`(value: PropertyValueCore[Double]): Self = StObject.set(x, "active-bg-size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setActive-bg-sizeFunction1`(value: Core => Double): Self = StObject.set(x, "active-bg-size", js.Any.fromFunction1(value))
+    inline def `setActive-bg-sizeFunction1`(value: Core => Double): Self = StObject.set(x, "active-bg-size", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setOutside-texture-bg-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "outside-texture-bg-color", value.asInstanceOf[js.Any])
+    inline def `setOutside-texture-bg-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "outside-texture-bg-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOutside-texture-bg-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "outside-texture-bg-color", js.Any.fromFunction1(value))
+    inline def `setOutside-texture-bg-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "outside-texture-bg-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setOutside-texture-bg-opacity`(value: PropertyValueCore[Double]): Self = StObject.set(x, "outside-texture-bg-opacity", value.asInstanceOf[js.Any])
+    inline def `setOutside-texture-bg-opacity`(value: PropertyValueCore[Double]): Self = StObject.set(x, "outside-texture-bg-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOutside-texture-bg-opacityFunction1`(value: Core => Double): Self = StObject.set(x, "outside-texture-bg-opacity", js.Any.fromFunction1(value))
+    inline def `setOutside-texture-bg-opacityFunction1`(value: Core => Double): Self = StObject.set(x, "outside-texture-bg-opacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSelection-box-border-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "selection-box-border-color", value.asInstanceOf[js.Any])
+    inline def `setSelection-box-border-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "selection-box-border-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSelection-box-border-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "selection-box-border-color", js.Any.fromFunction1(value))
+    inline def `setSelection-box-border-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "selection-box-border-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSelection-box-border-width`(value: PropertyValueCore[Double]): Self = StObject.set(x, "selection-box-border-width", value.asInstanceOf[js.Any])
+    inline def `setSelection-box-border-width`(value: PropertyValueCore[Double]): Self = StObject.set(x, "selection-box-border-width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSelection-box-border-widthFunction1`(value: Core => Double): Self = StObject.set(x, "selection-box-border-width", js.Any.fromFunction1(value))
+    inline def `setSelection-box-border-widthFunction1`(value: Core => Double): Self = StObject.set(x, "selection-box-border-width", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSelection-box-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "selection-box-color", value.asInstanceOf[js.Any])
+    inline def `setSelection-box-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "selection-box-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSelection-box-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "selection-box-color", js.Any.fromFunction1(value))
+    inline def `setSelection-box-colorFunction1`(value: Core => Colour): Self = StObject.set(x, "selection-box-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setSelection-box-opacity`(value: PropertyValueCore[Double]): Self = StObject.set(x, "selection-box-opacity", value.asInstanceOf[js.Any])
+    inline def `setSelection-box-opacity`(value: PropertyValueCore[Double]): Self = StObject.set(x, "selection-box-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSelection-box-opacityFunction1`(value: Core => Double): Self = StObject.set(x, "selection-box-opacity", js.Any.fromFunction1(value))
+    inline def `setSelection-box-opacityFunction1`(value: Core => Double): Self = StObject.set(x, "selection-box-opacity", js.Any.fromFunction1(value))
   }
 }

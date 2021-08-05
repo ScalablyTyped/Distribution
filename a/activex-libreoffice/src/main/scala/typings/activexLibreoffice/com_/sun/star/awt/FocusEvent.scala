@@ -34,22 +34,17 @@ trait FocusEvent
 }
 object FocusEvent {
   
-  @scala.inline
-  def apply(FocusFlags: Double, NextFocus: XInterface, Source: XInterface, Temporary: Boolean): FocusEvent = {
+  inline def apply(FocusFlags: Double, NextFocus: XInterface, Source: XInterface, Temporary: Boolean): FocusEvent = {
     val __obj = js.Dynamic.literal(FocusFlags = FocusFlags.asInstanceOf[js.Any], NextFocus = NextFocus.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Temporary = Temporary.asInstanceOf[js.Any])
     __obj.asInstanceOf[FocusEvent]
   }
   
-  @scala.inline
-  implicit class FocusEventMutableBuilder[Self <: FocusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FocusEvent](x: Self) {
     
-    @scala.inline
-    def setFocusFlags(value: Double): Self = StObject.set(x, "FocusFlags", value.asInstanceOf[js.Any])
+    inline def setFocusFlags(value: Double): Self = StObject.set(x, "FocusFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextFocus(value: XInterface): Self = StObject.set(x, "NextFocus", value.asInstanceOf[js.Any])
+    inline def setNextFocus(value: XInterface): Self = StObject.set(x, "NextFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporary(value: Boolean): Self = StObject.set(x, "Temporary", value.asInstanceOf[js.Any])
+    inline def setTemporary(value: Boolean): Self = StObject.set(x, "Temporary", value.asInstanceOf[js.Any])
   }
 }

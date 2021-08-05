@@ -13,19 +13,15 @@ trait CreateGraphResponse extends StObject {
 }
 object CreateGraphResponse {
   
-  @scala.inline
-  def apply(): CreateGraphResponse = {
+  inline def apply(): CreateGraphResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGraphResponse]
   }
   
-  @scala.inline
-  implicit class CreateGraphResponseMutableBuilder[Self <: CreateGraphResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGraphResponse](x: Self) {
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphArnUndefined: Self = StObject.set(x, "GraphArn", js.undefined)
+    inline def setGraphArnUndefined: Self = StObject.set(x, "GraphArn", js.undefined)
   }
 }

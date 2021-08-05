@@ -22,8 +22,7 @@ trait UploadTask extends StObject {
 }
 object UploadTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: () => Unit,
     onProgressUpdate: js.Function1[/* res */ TotalBytesExpectedToSend, Unit] => Unit
   ): UploadTask = {
@@ -31,13 +30,10 @@ object UploadTask {
     __obj.asInstanceOf[UploadTask]
   }
   
-  @scala.inline
-  implicit class UploadTaskMutableBuilder[Self <: UploadTask] (val x: Self) extends AnyVal {
+  extension [Self <: UploadTask](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnProgressUpdate(value: js.Function1[/* res */ TotalBytesExpectedToSend, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
+    inline def setOnProgressUpdate(value: js.Function1[/* res */ TotalBytesExpectedToSend, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }
 }

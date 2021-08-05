@@ -12,25 +12,19 @@ trait GraphModel extends StObject {
 }
 object GraphModel {
   
-  @scala.inline
-  def apply(): GraphModel = {
+  inline def apply(): GraphModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphModel]
   }
   
-  @scala.inline
-  implicit class GraphModelMutableBuilder[Self <: GraphModel] (val x: Self) extends AnyVal {
+  extension [Self <: GraphModel](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: js.Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: js.Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+    inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     
-    @scala.inline
-    def setOnlineStoreUrl(value: String): Self = StObject.set(x, "onlineStoreUrl", value.asInstanceOf[js.Any])
+    inline def setOnlineStoreUrl(value: String): Self = StObject.set(x, "onlineStoreUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlineStoreUrlUndefined: Self = StObject.set(x, "onlineStoreUrl", js.undefined)
+    inline def setOnlineStoreUrlUndefined: Self = StObject.set(x, "onlineStoreUrl", js.undefined)
   }
 }

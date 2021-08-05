@@ -18,28 +18,21 @@ trait DescribeRecommendationExportJobsResponse extends StObject {
 }
 object DescribeRecommendationExportJobsResponse {
   
-  @scala.inline
-  def apply(): DescribeRecommendationExportJobsResponse = {
+  inline def apply(): DescribeRecommendationExportJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRecommendationExportJobsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRecommendationExportJobsResponseMutableBuilder[Self <: DescribeRecommendationExportJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRecommendationExportJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRecommendationExportJobs(value: RecommendationExportJobs): Self = StObject.set(x, "recommendationExportJobs", value.asInstanceOf[js.Any])
+    inline def setRecommendationExportJobs(value: RecommendationExportJobs): Self = StObject.set(x, "recommendationExportJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationExportJobsUndefined: Self = StObject.set(x, "recommendationExportJobs", js.undefined)
+    inline def setRecommendationExportJobsUndefined: Self = StObject.set(x, "recommendationExportJobs", js.undefined)
     
-    @scala.inline
-    def setRecommendationExportJobsVarargs(value: RecommendationExportJob*): Self = StObject.set(x, "recommendationExportJobs", js.Array(value :_*))
+    inline def setRecommendationExportJobsVarargs(value: RecommendationExportJob*): Self = StObject.set(x, "recommendationExportJobs", js.Array(value :_*))
   }
 }

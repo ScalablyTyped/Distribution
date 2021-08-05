@@ -12,25 +12,19 @@ trait Padding extends StObject {
 }
 object Padding {
   
-  @scala.inline
-  def apply(): Padding = {
+  inline def apply(): Padding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Padding]
   }
   
-  @scala.inline
-  implicit class PaddingMutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
+  extension [Self <: Padding](x: Self) {
     
-    @scala.inline
-    def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+    inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+    inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
     
-    @scala.inline
-    def setPadding(value: typings.jointjs.mod.dia.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: typings.jointjs.mod.dia.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

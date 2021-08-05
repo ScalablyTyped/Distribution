@@ -177,124 +177,85 @@ trait ServerOptions extends StObject {
 }
 object ServerOptions {
   
-  @scala.inline
-  def apply(): ServerOptions = {
+  inline def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerOptions]
   }
   
-  @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptions](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setApp(value: ServerOptionsApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: ServerOptionsApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    @scala.inline
-    def setAutoListen(value: Boolean): Self = StObject.set(x, "autoListen", value.asInstanceOf[js.Any])
+    inline def setAutoListen(value: Boolean): Self = StObject.set(x, "autoListen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoListenUndefined: Self = StObject.set(x, "autoListen", js.undefined)
+    inline def setAutoListenUndefined: Self = StObject.set(x, "autoListen", js.undefined)
     
-    @scala.inline
-    def setCache(value: CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setCacheVarargs(value: ServerOptionsCache*): Self = StObject.set(x, "cache", js.Array(value :_*))
+    inline def setCacheVarargs(value: ServerOptionsCache*): Self = StObject.set(x, "cache", js.Array(value :_*))
     
-    @scala.inline
-    def setCompression(value: Boolean | ServerOptionsCompression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: Boolean | ServerOptionsCompression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setDebug(value: `false` | Log): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: `false` | Log): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setListener(value: Server): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: Server): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
+    inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
-    @scala.inline
-    def setLoad(value: MaxEventLoopDelay): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: MaxEventLoopDelay): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setMime(value: MimosOptions): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+    inline def setMime(value: MimosOptions): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
+    inline def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: PluginSpecificConfiguration): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: PluginSpecificConfiguration): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setQuery(value: Parser): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Parser): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRouter(value: IsCaseSensitive): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: IsCaseSensitive): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
+    inline def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     
-    @scala.inline
-    def setRoutes(value: RouteOptions): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: RouteOptions): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    @scala.inline
-    def setState(value: Encoding): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Encoding): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTls(value: Boolean | typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Boolean | typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

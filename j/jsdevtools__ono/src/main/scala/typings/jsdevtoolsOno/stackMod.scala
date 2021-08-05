@@ -13,25 +13,17 @@ object stackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isLazyStack(): /* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazyStack")().asInstanceOf[/* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean]
-  @scala.inline
-  def isLazyStack(stackProp: PropertyDescriptor): /* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazyStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean]
+  inline def isLazyStack(): /* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazyStack")().asInstanceOf[/* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean]
+  inline def isLazyStack(stackProp: PropertyDescriptor): /* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLazyStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/ono.@jsdevtools/ono/esm/stack.LazyStack */ Boolean]
   
-  @scala.inline
-  def isWritableStack(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWritableStack")().asInstanceOf[Boolean]
-  @scala.inline
-  def isWritableStack(stackProp: PropertyDescriptor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWritableStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWritableStack(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWritableStack")().asInstanceOf[Boolean]
+  inline def isWritableStack(stackProp: PropertyDescriptor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWritableStack")(stackProp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def joinStacks(newError: ErrorLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinStacks")(newError.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def joinStacks(newError: ErrorLike, originalError: ErrorLike): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinStacks")(newError.asInstanceOf[js.Any], originalError.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def joinStacks(newError: ErrorLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinStacks")(newError.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def joinStacks(newError: ErrorLike, originalError: ErrorLike): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinStacks")(newError.asInstanceOf[js.Any], originalError.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def lazyJoinStacks(lazyStack: LazyStack, newError: ErrorLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lazyJoinStacks")(lazyStack.asInstanceOf[js.Any], newError.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def lazyJoinStacks(lazyStack: LazyStack, newError: ErrorLike, originalError: ErrorLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lazyJoinStacks")(lazyStack.asInstanceOf[js.Any], newError.asInstanceOf[js.Any], originalError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lazyJoinStacks(lazyStack: LazyStack, newError: ErrorLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lazyJoinStacks")(lazyStack.asInstanceOf[js.Any], newError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lazyJoinStacks(lazyStack: LazyStack, newError: ErrorLike, originalError: ErrorLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lazyJoinStacks")(lazyStack.asInstanceOf[js.Any], newError.asInstanceOf[js.Any], originalError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The Property Descriptor of a lazily-computed `stack` property.
@@ -47,20 +39,16 @@ object stackMod {
   }
   object LazyStack {
     
-    @scala.inline
-    def apply(get: () => js.UndefOr[String]): LazyStack = {
+    inline def apply(get: () => js.UndefOr[String]): LazyStack = {
       val __obj = js.Dynamic.literal(configurable = true, get = js.Any.fromFunction0(get))
       __obj.asInstanceOf[LazyStack]
     }
     
-    @scala.inline
-    implicit class LazyStackMutableBuilder[Self <: LazyStack] (val x: Self) extends AnyVal {
+    extension [Self <: LazyStack](x: Self) {
       
-      @scala.inline
-      def setConfigurable(value: `true`): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+      inline def setConfigurable(value: `true`): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: () => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
 }

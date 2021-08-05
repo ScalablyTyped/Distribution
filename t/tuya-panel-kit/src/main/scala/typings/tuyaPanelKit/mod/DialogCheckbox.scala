@@ -20,43 +20,31 @@ trait DialogCheckbox
 }
 object DialogCheckbox {
   
-  @scala.inline
-  def apply(): DialogCheckbox = {
+  inline def apply(): DialogCheckbox = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogCheckbox]
   }
   
-  @scala.inline
-  implicit class DialogCheckboxMutableBuilder[Self <: DialogCheckbox] (val x: Self) extends AnyVal {
+  extension [Self <: DialogCheckbox](x: Self) {
     
-    @scala.inline
-    def setHideOnUnselect(value: Boolean): Self = StObject.set(x, "hideOnUnselect", value.asInstanceOf[js.Any])
+    inline def setHideOnUnselect(value: Boolean): Self = StObject.set(x, "hideOnUnselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnUnselectUndefined: Self = StObject.set(x, "hideOnUnselect", js.undefined)
+    inline def setHideOnUnselectUndefined: Self = StObject.set(x, "hideOnUnselect", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+    inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+    inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

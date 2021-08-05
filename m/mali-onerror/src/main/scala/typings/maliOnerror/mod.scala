@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(fn: js.Function2[/* err */ Error, /* ctx */ Context, js.Any]): js.Function2[
+  inline def apply(fn: js.Function2[/* err */ Error, /* ctx */ Context, js.Any]): js.Function2[
     /* ctx */ Context, 
     /* next */ js.UndefOr[js.Function0[js.Promise[js.Any]]], 
     js.Promise[Unit]

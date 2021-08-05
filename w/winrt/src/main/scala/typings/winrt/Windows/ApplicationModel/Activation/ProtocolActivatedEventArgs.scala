@@ -10,8 +10,7 @@ trait ProtocolActivatedEventArgs
      with IProtocolActivatedEventArgs
 object ProtocolActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,

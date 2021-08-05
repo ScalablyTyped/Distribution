@@ -14,21 +14,21 @@ object glowMod {
   class Glow protected () extends StObject {
     def this(_scrollbar: default) = this()
     
-    var _canvas: js.Any = js.native
+    /* private */ var _canvas: js.Any = js.native
     
-    var _ctx: js.Any = js.native
+    /* private */ var _ctx: js.Any = js.native
     
-    var _getMaxOverscroll: js.Any = js.native
+    /* private */ var _getMaxOverscroll: js.Any = js.native
     
-    var _renderX: js.Any = js.native
+    /* private */ var _renderX: js.Any = js.native
     
-    var _renderY: js.Any = js.native
+    /* private */ var _renderY: js.Any = js.native
     
-    var _scrollbar: js.Any = js.native
+    /* private */ var _scrollbar: js.Any = js.native
     
-    var _touchX: js.Any = js.native
+    /* private */ var _touchX: js.Any = js.native
     
-    var _touchY: js.Any = js.native
+    /* private */ var _touchY: js.Any = js.native
     
     def adjust(): Unit = js.native
     

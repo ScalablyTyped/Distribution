@@ -21,8 +21,7 @@ object acstokenresultMod {
         }
         object AcsTokenResponse {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             WrapAccessToken: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any,
             WrapAccessTokenExpiresIn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
           ): AcsTokenResponse = {
@@ -30,16 +29,13 @@ object acstokenresultMod {
             __obj.asInstanceOf[AcsTokenResponse]
           }
           
-          @scala.inline
-          implicit class AcsTokenResponseMutableBuilder[Self <: AcsTokenResponse] (val x: Self) extends AnyVal {
+          extension [Self <: AcsTokenResponse](x: Self) {
             
-            @scala.inline
-            def setWrapAccessToken(
+            inline def setWrapAccessToken(
               value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
             ): Self = StObject.set(x, "WrapAccessToken", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setWrapAccessTokenExpiresIn(
+            inline def setWrapAccessTokenExpiresIn(
               value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
             ): Self = StObject.set(x, "WrapAccessTokenExpiresIn", value.asInstanceOf[js.Any])
           }
@@ -51,17 +47,14 @@ object acstokenresultMod {
         }
         object AcsTokenResult {
           
-          @scala.inline
-          def apply(parse: String => AcsTokenResponse): AcsTokenResult = {
+          inline def apply(parse: String => AcsTokenResponse): AcsTokenResult = {
             val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
             __obj.asInstanceOf[AcsTokenResult]
           }
           
-          @scala.inline
-          implicit class AcsTokenResultMutableBuilder[Self <: AcsTokenResult] (val x: Self) extends AnyVal {
+          extension [Self <: AcsTokenResult](x: Self) {
             
-            @scala.inline
-            def setParse(value: String => AcsTokenResponse): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+            inline def setParse(value: String => AcsTokenResponse): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
           }
         }
       }

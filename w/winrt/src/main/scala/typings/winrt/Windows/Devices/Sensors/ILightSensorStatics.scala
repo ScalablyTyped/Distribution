@@ -10,16 +10,13 @@ trait ILightSensorStatics extends StObject {
 }
 object ILightSensorStatics {
   
-  @scala.inline
-  def apply(getDefault: () => LightSensor): ILightSensorStatics = {
+  inline def apply(getDefault: () => LightSensor): ILightSensorStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[ILightSensorStatics]
   }
   
-  @scala.inline
-  implicit class ILightSensorStaticsMutableBuilder[Self <: ILightSensorStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ILightSensorStatics](x: Self) {
     
-    @scala.inline
-    def setGetDefault(value: () => LightSensor): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => LightSensor): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }
 }

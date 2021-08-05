@@ -37,8 +37,7 @@ trait FlexVolumeSource extends StObject {
 }
 object FlexVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     driver: String,
     fsType: String,
     options: StringDictionary[String],
@@ -49,22 +48,16 @@ object FlexVolumeSource {
     __obj.asInstanceOf[FlexVolumeSource]
   }
   
-  @scala.inline
-  implicit class FlexVolumeSourceMutableBuilder[Self <: FlexVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: FlexVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
   }
 }

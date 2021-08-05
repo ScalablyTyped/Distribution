@@ -23,31 +23,23 @@ trait StartPosition extends StObject {
 }
 object StartPosition {
   
-  @scala.inline
-  def apply(): StartPosition = {
+  inline def apply(): StartPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartPosition]
   }
   
-  @scala.inline
-  implicit class StartPositionMutableBuilder[Self <: StartPosition] (val x: Self) extends AnyVal {
+  extension [Self <: StartPosition](x: Self) {
     
-    @scala.inline
-    def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
+    inline def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteTimeUndefined: Self = StObject.set(x, "AbsoluteTime", js.undefined)
+    inline def setAbsoluteTimeUndefined: Self = StObject.set(x, "AbsoluteTime", js.undefined)
     
-    @scala.inline
-    def setId(value: ChatItemId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ChatItemId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setMostRecent(value: MostRecent): Self = StObject.set(x, "MostRecent", value.asInstanceOf[js.Any])
+    inline def setMostRecent(value: MostRecent): Self = StObject.set(x, "MostRecent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMostRecentUndefined: Self = StObject.set(x, "MostRecent", js.undefined)
+    inline def setMostRecentUndefined: Self = StObject.set(x, "MostRecent", js.undefined)
   }
 }

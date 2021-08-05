@@ -13,19 +13,15 @@ trait DeleteParametersRequest extends StObject {
 }
 object DeleteParametersRequest {
   
-  @scala.inline
-  def apply(Names: ParameterNameList): DeleteParametersRequest = {
+  inline def apply(Names: ParameterNameList): DeleteParametersRequest = {
     val __obj = js.Dynamic.literal(Names = Names.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersRequest]
   }
   
-  @scala.inline
-  implicit class DeleteParametersRequestMutableBuilder[Self <: DeleteParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteParametersRequest](x: Self) {
     
-    @scala.inline
-    def setNames(value: ParameterNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: ParameterNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value :_*))
   }
 }

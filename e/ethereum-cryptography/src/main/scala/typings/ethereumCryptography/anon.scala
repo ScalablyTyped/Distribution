@@ -15,20 +15,16 @@ object anon {
   }
   object Recovery {
     
-    @scala.inline
-    def apply(recovery: Double, signature: Buffer): Recovery = {
+    inline def apply(recovery: Double, signature: Buffer): Recovery = {
       val __obj = js.Dynamic.literal(recovery = recovery.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[Recovery]
     }
     
-    @scala.inline
-    implicit class RecoveryMutableBuilder[Self <: Recovery] (val x: Self) extends AnyVal {
+    extension [Self <: Recovery](x: Self) {
       
-      @scala.inline
-      def setRecovery(value: Double): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
+      inline def setRecovery(value: Double): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,17 +34,14 @@ object anon {
   }
   object Xpriv {
     
-    @scala.inline
-    def apply(xpriv: String): Xpriv = {
+    inline def apply(xpriv: String): Xpriv = {
       val __obj = js.Dynamic.literal(xpriv = xpriv.asInstanceOf[js.Any])
       __obj.asInstanceOf[Xpriv]
     }
     
-    @scala.inline
-    implicit class XprivMutableBuilder[Self <: Xpriv] (val x: Self) extends AnyVal {
+    extension [Self <: Xpriv](x: Self) {
       
-      @scala.inline
-      def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
+      inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,20 +53,16 @@ object anon {
   }
   object Xpub {
     
-    @scala.inline
-    def apply(xpriv: String, xpub: String): Xpub = {
+    inline def apply(xpriv: String, xpub: String): Xpub = {
       val __obj = js.Dynamic.literal(xpriv = xpriv.asInstanceOf[js.Any], xpub = xpub.asInstanceOf[js.Any])
       __obj.asInstanceOf[Xpub]
     }
     
-    @scala.inline
-    implicit class XpubMutableBuilder[Self <: Xpub] (val x: Self) extends AnyVal {
+    extension [Self <: Xpub](x: Self) {
       
-      @scala.inline
-      def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
+      inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
+      inline def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
     }
   }
 }

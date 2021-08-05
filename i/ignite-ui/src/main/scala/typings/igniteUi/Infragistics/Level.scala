@@ -78,8 +78,7 @@ trait Level extends StObject {
 }
 object Level {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: js.Object => String,
     depth: js.Object => Double,
     description: js.Object => String,
@@ -95,37 +94,26 @@ object Level {
     __obj.asInstanceOf[Level]
   }
   
-  @scala.inline
-  implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+  extension [Self <: Level](x: Self) {
     
-    @scala.inline
-    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+    inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDepth(value: js.Object => Double): Self = StObject.set(x, "depth", js.Any.fromFunction1(value))
+    inline def setDepth(value: js.Object => Double): Self = StObject.set(x, "depth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
+    inline def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDimensionUniqueName(value: js.Object => String): Self = StObject.set(x, "dimensionUniqueName", js.Any.fromFunction1(value))
+    inline def setDimensionUniqueName(value: js.Object => String): Self = StObject.set(x, "dimensionUniqueName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHierarchyUniqueName(value: js.Object => String): Self = StObject.set(x, "hierarchyUniqueName", js.Any.fromFunction1(value))
+    inline def setHierarchyUniqueName(value: js.Object => String): Self = StObject.set(x, "hierarchyUniqueName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLevelOrderingProperty(value: js.Object => Double): Self = StObject.set(x, "levelOrderingProperty", js.Any.fromFunction1(value))
+    inline def setLevelOrderingProperty(value: js.Object => Double): Self = StObject.set(x, "levelOrderingProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLevelOrigin(value: js.Object => Double): Self = StObject.set(x, "levelOrigin", js.Any.fromFunction1(value))
+    inline def setLevelOrigin(value: js.Object => Double): Self = StObject.set(x, "levelOrigin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMembersCount(value: js.Object => Double): Self = StObject.set(x, "membersCount", js.Any.fromFunction1(value))
+    inline def setMembersCount(value: js.Object => Double): Self = StObject.set(x, "membersCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
+    inline def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
+    inline def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

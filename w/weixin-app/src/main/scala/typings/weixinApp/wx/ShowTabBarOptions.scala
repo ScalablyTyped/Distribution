@@ -13,19 +13,15 @@ trait ShowTabBarOptions
 }
 object ShowTabBarOptions {
   
-  @scala.inline
-  def apply(): ShowTabBarOptions = {
+  inline def apply(): ShowTabBarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShowTabBarOptions]
   }
   
-  @scala.inline
-  implicit class ShowTabBarOptionsMutableBuilder[Self <: ShowTabBarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShowTabBarOptions](x: Self) {
     
-    @scala.inline
-    def setAniamtion(value: Boolean): Self = StObject.set(x, "aniamtion", value.asInstanceOf[js.Any])
+    inline def setAniamtion(value: Boolean): Self = StObject.set(x, "aniamtion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAniamtionUndefined: Self = StObject.set(x, "aniamtion", js.undefined)
+    inline def setAniamtionUndefined: Self = StObject.set(x, "aniamtion", js.undefined)
   }
 }

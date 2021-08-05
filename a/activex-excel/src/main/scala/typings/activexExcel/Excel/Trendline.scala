@@ -26,7 +26,7 @@ trait Trendline extends StObject {
   
   var DisplayRSquared: Boolean
   
-  @JSName("Excel.Trendline_typekey")
+  /* private */ @JSName("Excel.Trendline_typekey")
   var ExcelDotTrendline_typekey: Trendline
   
   val Format: ChartFormat
@@ -57,8 +57,7 @@ trait Trendline extends StObject {
 }
 object Trendline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Backward: Double,
     Backward2: Double,
@@ -89,79 +88,54 @@ object Trendline {
     __obj.asInstanceOf[Trendline]
   }
   
-  @scala.inline
-  implicit class TrendlineMutableBuilder[Self <: Trendline] (val x: Self) extends AnyVal {
+  extension [Self <: Trendline](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackward(value: Double): Self = StObject.set(x, "Backward", value.asInstanceOf[js.Any])
+    inline def setBackward(value: Double): Self = StObject.set(x, "Backward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackward2(value: Double): Self = StObject.set(x, "Backward2", value.asInstanceOf[js.Any])
+    inline def setBackward2(value: Double): Self = StObject.set(x, "Backward2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLabel(value: DataLabel): Self = StObject.set(x, "DataLabel", value.asInstanceOf[js.Any])
+    inline def setDataLabel(value: DataLabel): Self = StObject.set(x, "DataLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayEquation(value: Boolean): Self = StObject.set(x, "DisplayEquation", value.asInstanceOf[js.Any])
+    inline def setDisplayEquation(value: Boolean): Self = StObject.set(x, "DisplayEquation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayRSquared(value: Boolean): Self = StObject.set(x, "DisplayRSquared", value.asInstanceOf[js.Any])
+    inline def setDisplayRSquared(value: Boolean): Self = StObject.set(x, "DisplayRSquared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotTrendline_typekey(value: Trendline): Self = StObject.set(x, "Excel.Trendline_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotTrendline_typekey(value: Trendline): Self = StObject.set(x, "Excel.Trendline_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForward(value: Double): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Double): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForward2(value: Double): Self = StObject.set(x, "Forward2", value.asInstanceOf[js.Any])
+    inline def setForward2(value: Double): Self = StObject.set(x, "Forward2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntercept(value: Double): Self = StObject.set(x, "Intercept", value.asInstanceOf[js.Any])
+    inline def setIntercept(value: Double): Self = StObject.set(x, "Intercept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptIsAuto(value: Boolean): Self = StObject.set(x, "InterceptIsAuto", value.asInstanceOf[js.Any])
+    inline def setInterceptIsAuto(value: Boolean): Self = StObject.set(x, "InterceptIsAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameIsAuto(value: Boolean): Self = StObject.set(x, "NameIsAuto", value.asInstanceOf[js.Any])
+    inline def setNameIsAuto(value: Boolean): Self = StObject.set(x, "NameIsAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: XlTrendlineType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlTrendlineType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

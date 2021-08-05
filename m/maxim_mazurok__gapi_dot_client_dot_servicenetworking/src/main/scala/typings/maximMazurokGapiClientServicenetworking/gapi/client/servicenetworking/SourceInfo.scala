@@ -18,17 +18,14 @@ trait SourceInfo extends StObject {
 }
 object SourceInfo {
   
-  @scala.inline
-  def apply(): SourceInfo = {
+  inline def apply(): SourceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceInfo]
   }
   
-  @scala.inline
-  implicit class SourceInfoMutableBuilder[Self <: SourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SourceInfo](x: Self) {
     
-    @scala.inline
-    def setSourceFiles(
+    inline def setSourceFiles(
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
@@ -36,11 +33,9 @@ object SourceInfo {
         ]
     ): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFilesUndefined: Self = StObject.set(x, "sourceFiles", js.undefined)
+    inline def setSourceFilesUndefined: Self = StObject.set(x, "sourceFiles", js.undefined)
     
-    @scala.inline
-    def setSourceFilesVarargs(
+    inline def setSourceFilesVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicenetworking.maximMazurokGapiClientServicenetworkingStrings.SourceInfo & TopLevel[js.Any])*

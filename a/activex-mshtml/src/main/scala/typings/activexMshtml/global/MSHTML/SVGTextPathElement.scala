@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGTextPathElement")
 @js.native
-class SVGTextPathElement protected ()
+/* private */ class SVGTextPathElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGTextPathElement {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGTextPathElement_typekey")
   var MSHTMLDotSVGTextPathElement_typekey: typings.activexMshtml.MSHTML.SVGTextPathElement = js.native
   

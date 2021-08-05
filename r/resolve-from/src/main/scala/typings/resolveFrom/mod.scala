@@ -19,8 +19,7 @@ object mod {
   	//=> '/Users/sindresorhus/dev/test/foo/bar.js'
   	```
   	*/
-  @scala.inline
-  def apply(fromDirectory: String, moduleId: String): String = (^.asInstanceOf[js.Dynamic].apply(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fromDirectory: String, moduleId: String): String = (^.asInstanceOf[js.Dynamic].apply(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("resolve-from", JSImport.Namespace)
   @js.native
@@ -32,6 +31,5 @@ object mod {
   	@param moduleId - What you would use in `require()`.
   	@returns Resolved module path or `undefined` when the module can't be found.
   	*/
-  @scala.inline
-  def silent(fromDirectory: String, moduleId: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("silent")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def silent(fromDirectory: String, moduleId: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("silent")(fromDirectory.asInstanceOf[js.Any], moduleId.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

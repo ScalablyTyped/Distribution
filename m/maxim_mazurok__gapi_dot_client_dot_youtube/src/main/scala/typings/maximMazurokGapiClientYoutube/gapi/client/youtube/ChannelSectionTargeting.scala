@@ -17,40 +17,29 @@ trait ChannelSectionTargeting extends StObject {
 }
 object ChannelSectionTargeting {
   
-  @scala.inline
-  def apply(): ChannelSectionTargeting = {
+  inline def apply(): ChannelSectionTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelSectionTargeting]
   }
   
-  @scala.inline
-  implicit class ChannelSectionTargetingMutableBuilder[Self <: ChannelSectionTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSectionTargeting](x: Self) {
     
-    @scala.inline
-    def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+    inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+    inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    @scala.inline
-    def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
-    @scala.inline
-    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

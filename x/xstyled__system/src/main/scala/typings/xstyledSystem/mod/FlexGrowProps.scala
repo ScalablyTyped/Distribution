@@ -14,27 +14,22 @@ trait FlexGrowProps extends StObject {
 }
 object FlexGrowProps {
   
-  @scala.inline
-  def apply(): FlexGrowProps = {
+  inline def apply(): FlexGrowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexGrowProps]
   }
   
-  @scala.inline
-  implicit class FlexGrowPropsMutableBuilder[Self <: FlexGrowProps] (val x: Self) extends AnyVal {
+  extension [Self <: FlexGrowProps](x: Self) {
     
-    @scala.inline
-    def setFlexGrow(
+    inline def setFlexGrow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any
         ]
     ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
+    inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
-    @scala.inline
-    def setFlexGrowVarargs(
+    inline def setFlexGrowVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any)*
     ): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
   }

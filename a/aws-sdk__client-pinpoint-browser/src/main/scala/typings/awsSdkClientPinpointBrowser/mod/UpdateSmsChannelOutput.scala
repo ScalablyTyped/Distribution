@@ -11,8 +11,7 @@ trait UpdateSmsChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesUpdateSmsChannelOutputMod.UpdateSmsChannelOutput
 object UpdateSmsChannelOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, SMSChannelResponse: UnmarshalledSMSChannelResponse): UpdateSmsChannelOutput = {
+  inline def apply($metadata: ResponseMetadata, SMSChannelResponse: UnmarshalledSMSChannelResponse): UpdateSmsChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SMSChannelResponse = SMSChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSmsChannelOutput]
   }

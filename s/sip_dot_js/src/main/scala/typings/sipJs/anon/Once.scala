@@ -10,19 +10,15 @@ trait Once extends StObject {
 }
 object Once {
   
-  @scala.inline
-  def apply(): Once = {
+  inline def apply(): Once = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Once]
   }
   
-  @scala.inline
-  implicit class OnceMutableBuilder[Self <: Once] (val x: Self) extends AnyVal {
+  extension [Self <: Once](x: Self) {
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
   }
 }

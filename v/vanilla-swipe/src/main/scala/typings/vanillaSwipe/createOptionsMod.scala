@@ -10,8 +10,6 @@ object createOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createOptions(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createOptions")().asInstanceOf[js.Object]
-  @scala.inline
-  def createOptions(proxy: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createOptions")(proxy.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def createOptions(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createOptions")().asInstanceOf[js.Object]
+  inline def createOptions(proxy: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createOptions")(proxy.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

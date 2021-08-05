@@ -13,9 +13,7 @@ object debugMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRawMetadata(container: Container): js.Array[ControllerMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawMetadata")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[ControllerMetadata]]
+  inline def getRawMetadata(container: Container): js.Array[ControllerMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawMetadata")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[ControllerMetadata]]
   
-  @scala.inline
-  def getRouteInfo(container: Container): js.Array[Controller] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteInfo")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[Controller]]
+  inline def getRouteInfo(container: Container): js.Array[Controller] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteInfo")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[Controller]]
 }

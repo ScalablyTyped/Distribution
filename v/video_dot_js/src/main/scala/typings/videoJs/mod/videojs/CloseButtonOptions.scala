@@ -12,19 +12,15 @@ trait CloseButtonOptions
 }
 object CloseButtonOptions {
   
-  @scala.inline
-  def apply(): CloseButtonOptions = {
+  inline def apply(): CloseButtonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloseButtonOptions]
   }
   
-  @scala.inline
-  implicit class CloseButtonOptionsMutableBuilder[Self <: CloseButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CloseButtonOptions](x: Self) {
     
-    @scala.inline
-    def setControlText(value: String): Self = StObject.set(x, "controlText", value.asInstanceOf[js.Any])
+    inline def setControlText(value: String): Self = StObject.set(x, "controlText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlTextUndefined: Self = StObject.set(x, "controlText", js.undefined)
+    inline def setControlTextUndefined: Self = StObject.set(x, "controlText", js.undefined)
   }
 }

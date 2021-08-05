@@ -101,65 +101,46 @@ object schemaDotjsonMod extends Shortcut {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setCommitUrlFormat(value: String): Self = StObject.set(x, "commitUrlFormat", value.asInstanceOf[js.Any])
+      inline def setCommitUrlFormat(value: String): Self = StObject.set(x, "commitUrlFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitUrlFormatUndefined: Self = StObject.set(x, "commitUrlFormat", js.undefined)
+      inline def setCommitUrlFormatUndefined: Self = StObject.set(x, "commitUrlFormat", js.undefined)
       
-      @scala.inline
-      def setCompareUrlFormat(value: String): Self = StObject.set(x, "compareUrlFormat", value.asInstanceOf[js.Any])
+      inline def setCompareUrlFormat(value: String): Self = StObject.set(x, "compareUrlFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompareUrlFormatUndefined: Self = StObject.set(x, "compareUrlFormat", js.undefined)
+      inline def setCompareUrlFormatUndefined: Self = StObject.set(x, "compareUrlFormat", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setIssueUrlFormat(value: String): Self = StObject.set(x, "issueUrlFormat", value.asInstanceOf[js.Any])
+      inline def setIssueUrlFormat(value: String): Self = StObject.set(x, "issueUrlFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssueUrlFormatUndefined: Self = StObject.set(x, "issueUrlFormat", js.undefined)
+      inline def setIssueUrlFormatUndefined: Self = StObject.set(x, "issueUrlFormat", js.undefined)
       
-      @scala.inline
-      def setPreMajor(value: Boolean): Self = StObject.set(x, "preMajor", value.asInstanceOf[js.Any])
+      inline def setPreMajor(value: Boolean): Self = StObject.set(x, "preMajor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreMajorUndefined: Self = StObject.set(x, "preMajor", js.undefined)
+      inline def setPreMajorUndefined: Self = StObject.set(x, "preMajor", js.undefined)
       
-      @scala.inline
-      def setReleaseCommitMessageFormat(value: String): Self = StObject.set(x, "releaseCommitMessageFormat", value.asInstanceOf[js.Any])
+      inline def setReleaseCommitMessageFormat(value: String): Self = StObject.set(x, "releaseCommitMessageFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseCommitMessageFormatUndefined: Self = StObject.set(x, "releaseCommitMessageFormat", js.undefined)
+      inline def setReleaseCommitMessageFormatUndefined: Self = StObject.set(x, "releaseCommitMessageFormat", js.undefined)
       
-      @scala.inline
-      def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[Type]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      @scala.inline
-      def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
       
-      @scala.inline
-      def setUserUrlFormat(value: String): Self = StObject.set(x, "userUrlFormat", value.asInstanceOf[js.Any])
+      inline def setUserUrlFormat(value: String): Self = StObject.set(x, "userUrlFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUrlFormatUndefined: Self = StObject.set(x, "userUrlFormat", js.undefined)
+      inline def setUserUrlFormatUndefined: Self = StObject.set(x, "userUrlFormat", js.undefined)
     }
     
     /**
@@ -194,30 +175,23 @@ object schemaDotjsonMod extends Shortcut {
       }
       object Base {
         
-        @scala.inline
-        def apply(`type`: String): Base = {
+        inline def apply(`type`: String): Base = {
           val __obj = js.Dynamic.literal()
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[Base]
         }
         
-        @scala.inline
-        implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+        extension [Self <: Base](x: Self) {
           
-          @scala.inline
-          def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+          inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+          inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
           
-          @scala.inline
-          def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+          inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+          inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
           
-          @scala.inline
-          def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         }
       }
       
@@ -237,18 +211,15 @@ object schemaDotjsonMod extends Shortcut {
       }
       object WithHidden {
         
-        @scala.inline
-        def apply(hidden: Boolean, `type`: String): WithHidden = {
+        inline def apply(hidden: Boolean, `type`: String): WithHidden = {
           val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[WithHidden]
         }
         
-        @scala.inline
-        implicit class WithHiddenMutableBuilder[Self <: WithHidden] (val x: Self) extends AnyVal {
+        extension [Self <: WithHidden](x: Self) {
           
-          @scala.inline
-          def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+          inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
         }
       }
       
@@ -268,18 +239,15 @@ object schemaDotjsonMod extends Shortcut {
       }
       object WithSection {
         
-        @scala.inline
-        def apply(section: String, `type`: String): WithSection = {
+        inline def apply(section: String, `type`: String): WithSection = {
           val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[WithSection]
         }
         
-        @scala.inline
-        implicit class WithSectionMutableBuilder[Self <: WithSection] (val x: Self) extends AnyVal {
+        extension [Self <: WithSection](x: Self) {
           
-          @scala.inline
-          def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+          inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
         }
       }
     }

@@ -18,19 +18,15 @@ trait InstallToRemoteAccessSessionRequest extends StObject {
 }
 object InstallToRemoteAccessSessionRequest {
   
-  @scala.inline
-  def apply(appArn: AmazonResourceName, remoteAccessSessionArn: AmazonResourceName): InstallToRemoteAccessSessionRequest = {
+  inline def apply(appArn: AmazonResourceName, remoteAccessSessionArn: AmazonResourceName): InstallToRemoteAccessSessionRequest = {
     val __obj = js.Dynamic.literal(appArn = appArn.asInstanceOf[js.Any], remoteAccessSessionArn = remoteAccessSessionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallToRemoteAccessSessionRequest]
   }
   
-  @scala.inline
-  implicit class InstallToRemoteAccessSessionRequestMutableBuilder[Self <: InstallToRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstallToRemoteAccessSessionRequest](x: Self) {
     
-    @scala.inline
-    def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
+    inline def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAccessSessionArn(value: AmazonResourceName): Self = StObject.set(x, "remoteAccessSessionArn", value.asInstanceOf[js.Any])
+    inline def setRemoteAccessSessionArn(value: AmazonResourceName): Self = StObject.set(x, "remoteAccessSessionArn", value.asInstanceOf[js.Any])
   }
 }

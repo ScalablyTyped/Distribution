@@ -78,61 +78,43 @@ trait SchemaSecurityContext extends StObject {
 }
 object SchemaSecurityContext {
   
-  @scala.inline
-  def apply(): SchemaSecurityContext = {
+  inline def apply(): SchemaSecurityContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityContext]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityContextMutableBuilder[Self <: SchemaSecurityContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityContext](x: Self) {
     
-    @scala.inline
-    def setAllowPrivilegeEscalation(value: Boolean): Self = StObject.set(x, "allowPrivilegeEscalation", value.asInstanceOf[js.Any])
+    inline def setAllowPrivilegeEscalation(value: Boolean): Self = StObject.set(x, "allowPrivilegeEscalation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPrivilegeEscalationUndefined: Self = StObject.set(x, "allowPrivilegeEscalation", js.undefined)
+    inline def setAllowPrivilegeEscalationUndefined: Self = StObject.set(x, "allowPrivilegeEscalation", js.undefined)
     
-    @scala.inline
-    def setCapabilities(value: SchemaCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: SchemaCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
+    inline def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegedUndefined: Self = StObject.set(x, "privileged", js.undefined)
+    inline def setPrivilegedUndefined: Self = StObject.set(x, "privileged", js.undefined)
     
-    @scala.inline
-    def setReadOnlyRootFilesystem(value: Boolean): Self = StObject.set(x, "readOnlyRootFilesystem", value.asInstanceOf[js.Any])
+    inline def setReadOnlyRootFilesystem(value: Boolean): Self = StObject.set(x, "readOnlyRootFilesystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyRootFilesystemUndefined: Self = StObject.set(x, "readOnlyRootFilesystem", js.undefined)
+    inline def setReadOnlyRootFilesystemUndefined: Self = StObject.set(x, "readOnlyRootFilesystem", js.undefined)
     
-    @scala.inline
-    def setRunAsGroup(value: String): Self = StObject.set(x, "runAsGroup", value.asInstanceOf[js.Any])
+    inline def setRunAsGroup(value: String): Self = StObject.set(x, "runAsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsGroupUndefined: Self = StObject.set(x, "runAsGroup", js.undefined)
+    inline def setRunAsGroupUndefined: Self = StObject.set(x, "runAsGroup", js.undefined)
     
-    @scala.inline
-    def setRunAsNonRoot(value: Boolean): Self = StObject.set(x, "runAsNonRoot", value.asInstanceOf[js.Any])
+    inline def setRunAsNonRoot(value: Boolean): Self = StObject.set(x, "runAsNonRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsNonRootUndefined: Self = StObject.set(x, "runAsNonRoot", js.undefined)
+    inline def setRunAsNonRootUndefined: Self = StObject.set(x, "runAsNonRoot", js.undefined)
     
-    @scala.inline
-    def setRunAsUser(value: String): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
+    inline def setRunAsUser(value: String): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsUserUndefined: Self = StObject.set(x, "runAsUser", js.undefined)
+    inline def setRunAsUserUndefined: Self = StObject.set(x, "runAsUser", js.undefined)
     
-    @scala.inline
-    def setSeLinuxOptions(value: SchemaSELinuxOptions): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
+    inline def setSeLinuxOptions(value: SchemaSELinuxOptions): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeLinuxOptionsUndefined: Self = StObject.set(x, "seLinuxOptions", js.undefined)
+    inline def setSeLinuxOptionsUndefined: Self = StObject.set(x, "seLinuxOptions", js.undefined)
   }
 }

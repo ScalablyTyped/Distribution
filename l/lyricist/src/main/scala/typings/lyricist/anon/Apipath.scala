@@ -27,8 +27,7 @@ trait Apipath extends StObject {
 }
 object Apipath {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api_path: String,
     client_timestamps: ClientTimestamps,
     context: String,
@@ -44,34 +43,24 @@ object Apipath {
     __obj.asInstanceOf[Apipath]
   }
   
-  @scala.inline
-  implicit class ApipathMutableBuilder[Self <: Apipath] (val x: Self) extends AnyVal {
+  extension [Self <: Apipath](x: Self) {
     
-    @scala.inline
-    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
+    inline def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_timestamps(value: ClientTimestamps): Self = StObject.set(x, "client_timestamps", value.asInstanceOf[js.Any])
+    inline def setClient_timestamps(value: ClientTimestamps): Self = StObject.set(x, "client_timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
+    inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_title(value: String): Self = StObject.set(x, "link_title", value.asInstanceOf[js.Any])
+    inline def setLink_title(value: String): Self = StObject.set(x, "link_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

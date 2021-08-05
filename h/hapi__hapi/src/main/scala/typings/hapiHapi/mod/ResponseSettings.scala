@@ -33,25 +33,19 @@ trait ResponseSettings extends StObject {
 }
 object ResponseSettings {
   
-  @scala.inline
-  def apply(passThrough: Boolean, stringify: StringifyArguments, ttl: Double, varyEtag: Boolean): ResponseSettings = {
+  inline def apply(passThrough: Boolean, stringify: StringifyArguments, ttl: Double, varyEtag: Boolean): ResponseSettings = {
     val __obj = js.Dynamic.literal(passThrough = passThrough.asInstanceOf[js.Any], stringify = stringify.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any], varyEtag = varyEtag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseSettings]
   }
   
-  @scala.inline
-  implicit class ResponseSettingsMutableBuilder[Self <: ResponseSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseSettings](x: Self) {
     
-    @scala.inline
-    def setPassThrough(value: Boolean): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
+    inline def setPassThrough(value: Boolean): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringify(value: StringifyArguments): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+    inline def setStringify(value: StringifyArguments): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaryEtag(value: Boolean): Self = StObject.set(x, "varyEtag", value.asInstanceOf[js.Any])
+    inline def setVaryEtag(value: Boolean): Self = StObject.set(x, "varyEtag", value.asInstanceOf[js.Any])
   }
 }

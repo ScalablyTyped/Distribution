@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleWordBreak extends StObject
 object styleWordBreak {
   
-  @scala.inline
-  def styleWordBreakBreakAll: `2` = 2.asInstanceOf[`2`]
+  inline def styleWordBreakBreakAll: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleWordBreakKeepAll: `3` = 3.asInstanceOf[`3`]
+  inline def styleWordBreakKeepAll: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleWordBreakNormal: `1` = 1.asInstanceOf[`1`]
+  inline def styleWordBreakNormal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleWordBreakNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleWordBreakNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleWordBreak_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleWordBreak_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

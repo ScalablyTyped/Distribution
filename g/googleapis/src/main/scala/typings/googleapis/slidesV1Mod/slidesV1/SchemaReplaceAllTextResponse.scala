@@ -16,19 +16,15 @@ trait SchemaReplaceAllTextResponse extends StObject {
 }
 object SchemaReplaceAllTextResponse {
   
-  @scala.inline
-  def apply(): SchemaReplaceAllTextResponse = {
+  inline def apply(): SchemaReplaceAllTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplaceAllTextResponse]
   }
   
-  @scala.inline
-  implicit class SchemaReplaceAllTextResponseMutableBuilder[Self <: SchemaReplaceAllTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplaceAllTextResponse](x: Self) {
     
-    @scala.inline
-    def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+    inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+    inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
   }
 }

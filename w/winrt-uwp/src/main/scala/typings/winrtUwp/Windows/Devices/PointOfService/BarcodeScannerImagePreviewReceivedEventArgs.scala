@@ -13,16 +13,13 @@ trait BarcodeScannerImagePreviewReceivedEventArgs extends StObject {
 }
 object BarcodeScannerImagePreviewReceivedEventArgs {
   
-  @scala.inline
-  def apply(preview: IRandomAccessStreamWithContentType): BarcodeScannerImagePreviewReceivedEventArgs = {
+  inline def apply(preview: IRandomAccessStreamWithContentType): BarcodeScannerImagePreviewReceivedEventArgs = {
     val __obj = js.Dynamic.literal(preview = preview.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeScannerImagePreviewReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class BarcodeScannerImagePreviewReceivedEventArgsMutableBuilder[Self <: BarcodeScannerImagePreviewReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeScannerImagePreviewReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPreview(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait PutProtocolsListResponse extends StObject {
 }
 object PutProtocolsListResponse {
   
-  @scala.inline
-  def apply(): PutProtocolsListResponse = {
+  inline def apply(): PutProtocolsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutProtocolsListResponse]
   }
   
-  @scala.inline
-  implicit class PutProtocolsListResponseMutableBuilder[Self <: PutProtocolsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutProtocolsListResponse](x: Self) {
     
-    @scala.inline
-    def setProtocolsList(value: ProtocolsListData): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
+    inline def setProtocolsList(value: ProtocolsListData): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsListArn(value: ResourceArn): Self = StObject.set(x, "ProtocolsListArn", value.asInstanceOf[js.Any])
+    inline def setProtocolsListArn(value: ResourceArn): Self = StObject.set(x, "ProtocolsListArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsListArnUndefined: Self = StObject.set(x, "ProtocolsListArn", js.undefined)
+    inline def setProtocolsListArnUndefined: Self = StObject.set(x, "ProtocolsListArn", js.undefined)
     
-    @scala.inline
-    def setProtocolsListUndefined: Self = StObject.set(x, "ProtocolsList", js.undefined)
+    inline def setProtocolsListUndefined: Self = StObject.set(x, "ProtocolsList", js.undefined)
   }
 }

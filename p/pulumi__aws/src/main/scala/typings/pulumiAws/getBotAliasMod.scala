@@ -11,10 +11,8 @@ object getBotAliasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBotAlias(args: GetBotAliasArgs): js.Promise[GetBotAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBotAliasResult]]
-  @scala.inline
-  def getBotAlias(args: GetBotAliasArgs, opts: InvokeOptions): js.Promise[GetBotAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBotAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBotAliasResult]]
+  inline def getBotAlias(args: GetBotAliasArgs): js.Promise[GetBotAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBotAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBotAliasResult]]
+  inline def getBotAlias(args: GetBotAliasArgs, opts: InvokeOptions): js.Promise[GetBotAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBotAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBotAliasResult]]
   
   trait GetBotAliasArgs extends StObject {
     
@@ -30,20 +28,16 @@ object getBotAliasMod {
   }
   object GetBotAliasArgs {
     
-    @scala.inline
-    def apply(botName: String, name: String): GetBotAliasArgs = {
+    inline def apply(botName: String, name: String): GetBotAliasArgs = {
       val __obj = js.Dynamic.literal(botName = botName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBotAliasArgs]
     }
     
-    @scala.inline
-    implicit class GetBotAliasArgsMutableBuilder[Self <: GetBotAliasArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetBotAliasArgs](x: Self) {
       
-      @scala.inline
-      def setBotName(value: String): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+      inline def setBotName(value: String): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,8 +90,7 @@ object getBotAliasMod {
   }
   object GetBotAliasResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       botName: String,
       botVersion: String,
@@ -112,35 +105,25 @@ object getBotAliasMod {
       __obj.asInstanceOf[GetBotAliasResult]
     }
     
-    @scala.inline
-    implicit class GetBotAliasResultMutableBuilder[Self <: GetBotAliasResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetBotAliasResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotName(value: String): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+      inline def setBotName(value: String): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotVersion(value: String): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
+      inline def setBotVersion(value: String): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: String): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

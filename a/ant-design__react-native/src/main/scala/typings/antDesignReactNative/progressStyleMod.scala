@@ -12,8 +12,7 @@ object progressStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): ProgressStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ProgressStyle]
+  inline def default(theme: Theme): ProgressStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ProgressStyle]
   
   trait ProgressStyle extends StObject {
     
@@ -23,20 +22,16 @@ object progressStyleMod {
   }
   object ProgressStyle {
     
-    @scala.inline
-    def apply(progressBar: ViewStyle, progressOuter: ViewStyle): ProgressStyle = {
+    inline def apply(progressBar: ViewStyle, progressOuter: ViewStyle): ProgressStyle = {
       val __obj = js.Dynamic.literal(progressBar = progressBar.asInstanceOf[js.Any], progressOuter = progressOuter.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressStyle]
     }
     
-    @scala.inline
-    implicit class ProgressStyleMutableBuilder[Self <: ProgressStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressStyle](x: Self) {
       
-      @scala.inline
-      def setProgressBar(value: ViewStyle): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
+      inline def setProgressBar(value: ViewStyle): Self = StObject.set(x, "progressBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressOuter(value: ViewStyle): Self = StObject.set(x, "progressOuter", value.asInstanceOf[js.Any])
+      inline def setProgressOuter(value: ViewStyle): Self = StObject.set(x, "progressOuter", value.asInstanceOf[js.Any])
     }
   }
 }

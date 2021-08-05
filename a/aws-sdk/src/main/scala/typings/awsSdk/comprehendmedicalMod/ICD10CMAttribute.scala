@@ -48,64 +48,45 @@ trait ICD10CMAttribute extends StObject {
 }
 object ICD10CMAttribute {
   
-  @scala.inline
-  def apply(): ICD10CMAttribute = {
+  inline def apply(): ICD10CMAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICD10CMAttribute]
   }
   
-  @scala.inline
-  implicit class ICD10CMAttributeMutableBuilder[Self <: ICD10CMAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ICD10CMAttribute](x: Self) {
     
-    @scala.inline
-    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
+    inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
+    inline def setBeginOffsetUndefined: Self = StObject.set(x, "BeginOffset", js.undefined)
     
-    @scala.inline
-    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
+    inline def setEndOffsetUndefined: Self = StObject.set(x, "EndOffset", js.undefined)
     
-    @scala.inline
-    def setId(value: Integer): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Integer): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setRelationshipScore(value: Float): Self = StObject.set(x, "RelationshipScore", value.asInstanceOf[js.Any])
+    inline def setRelationshipScore(value: Float): Self = StObject.set(x, "RelationshipScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipScoreUndefined: Self = StObject.set(x, "RelationshipScore", js.undefined)
+    inline def setRelationshipScoreUndefined: Self = StObject.set(x, "RelationshipScore", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
-    @scala.inline
-    def setTraits(value: ICD10CMTraitList): Self = StObject.set(x, "Traits", value.asInstanceOf[js.Any])
+    inline def setTraits(value: ICD10CMTraitList): Self = StObject.set(x, "Traits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
+    inline def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
-    @scala.inline
-    def setTraitsVarargs(value: ICD10CMTrait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: ICD10CMTrait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ICD10CMAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ICD10CMAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait PartialPickImplkeyofImplMethod extends StObject {
 }
 object PartialPickImplkeyofImplMethod {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplMethod = {
+  inline def apply(): PartialPickImplkeyofImplMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplMethod]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplMethodMutableBuilder[Self <: PartialPickImplkeyofImplMethod] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplMethod](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setNoURL(value: String): Self = StObject.set(x, "noURL", value.asInstanceOf[js.Any])
+    inline def setNoURL(value: String): Self = StObject.set(x, "noURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoURLUndefined: Self = StObject.set(x, "noURL", js.undefined)
+    inline def setNoURLUndefined: Self = StObject.set(x, "noURL", js.undefined)
   }
 }

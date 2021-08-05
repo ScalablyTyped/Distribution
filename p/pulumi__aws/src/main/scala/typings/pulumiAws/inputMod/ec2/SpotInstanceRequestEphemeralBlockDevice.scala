@@ -26,28 +26,21 @@ trait SpotInstanceRequestEphemeralBlockDevice extends StObject {
 }
 object SpotInstanceRequestEphemeralBlockDevice {
   
-  @scala.inline
-  def apply(deviceName: Input[String]): SpotInstanceRequestEphemeralBlockDevice = {
+  inline def apply(deviceName: Input[String]): SpotInstanceRequestEphemeralBlockDevice = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotInstanceRequestEphemeralBlockDevice]
   }
   
-  @scala.inline
-  implicit class SpotInstanceRequestEphemeralBlockDeviceMutableBuilder[Self <: SpotInstanceRequestEphemeralBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SpotInstanceRequestEphemeralBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDevice(value: Input[Boolean]): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
+    inline def setNoDevice(value: Input[Boolean]): Self = StObject.set(x, "noDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDeviceUndefined: Self = StObject.set(x, "noDevice", js.undefined)
+    inline def setNoDeviceUndefined: Self = StObject.set(x, "noDevice", js.undefined)
     
-    @scala.inline
-    def setVirtualName(value: Input[String]): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
+    inline def setVirtualName(value: Input[String]): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNameUndefined: Self = StObject.set(x, "virtualName", js.undefined)
+    inline def setVirtualNameUndefined: Self = StObject.set(x, "virtualName", js.undefined)
   }
 }

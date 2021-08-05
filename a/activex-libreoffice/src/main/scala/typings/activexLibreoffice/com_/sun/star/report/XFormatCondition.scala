@@ -28,8 +28,7 @@ trait XFormatCondition
 }
 object XFormatCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharCaseMap: Double,
     CharColor: Color,
@@ -109,13 +108,10 @@ object XFormatCondition {
     __obj.asInstanceOf[XFormatCondition]
   }
   
-  @scala.inline
-  implicit class XFormatConditionMutableBuilder[Self <: XFormatCondition] (val x: Self) extends AnyVal {
+  extension [Self <: XFormatCondition](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
   }
 }

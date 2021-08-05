@@ -27,8 +27,7 @@ trait OrgsUpdateWebhookResponseData extends StObject {
 }
 object OrgsUpdateWebhookResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     config: ContenttypeUrl,
     created_at: String,
@@ -43,37 +42,26 @@ object OrgsUpdateWebhookResponseData {
     __obj.asInstanceOf[OrgsUpdateWebhookResponseData]
   }
   
-  @scala.inline
-  implicit class OrgsUpdateWebhookResponseDataMutableBuilder[Self <: OrgsUpdateWebhookResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsUpdateWebhookResponseData](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: ContenttypeUrl): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ContenttypeUrl): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPing_url(value: String): Self = StObject.set(x, "ping_url", value.asInstanceOf[js.Any])
+    inline def setPing_url(value: String): Self = StObject.set(x, "ping_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

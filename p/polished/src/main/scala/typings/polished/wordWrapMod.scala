@@ -11,8 +11,6 @@ object wordWrapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
-  @scala.inline
-  def default(wrap: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrap.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
+  inline def default(wrap: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrap.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

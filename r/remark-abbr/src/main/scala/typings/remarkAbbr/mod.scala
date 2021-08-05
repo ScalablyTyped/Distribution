@@ -21,20 +21,16 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExpandFirst(value: Boolean): Self = StObject.set(x, "expandFirst", value.asInstanceOf[js.Any])
+      inline def setExpandFirst(value: Boolean): Self = StObject.set(x, "expandFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandFirstUndefined: Self = StObject.set(x, "expandFirst", js.undefined)
+      inline def setExpandFirstUndefined: Self = StObject.set(x, "expandFirst", js.undefined)
     }
   }
   

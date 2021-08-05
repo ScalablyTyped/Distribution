@@ -20,25 +20,19 @@ trait ClipDirectionInvalidate extends StObject {
 }
 object ClipDirectionInvalidate {
   
-  @scala.inline
-  def apply(): ClipDirectionInvalidate = {
+  inline def apply(): ClipDirectionInvalidate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClipDirectionInvalidate]
   }
   
-  @scala.inline
-  implicit class ClipDirectionInvalidateMutableBuilder[Self <: ClipDirectionInvalidate] (val x: Self) extends AnyVal {
+  extension [Self <: ClipDirectionInvalidate](x: Self) {
     
-    @scala.inline
-    def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+    inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
+    inline def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
     
-    @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+    inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+    inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
   }
 }

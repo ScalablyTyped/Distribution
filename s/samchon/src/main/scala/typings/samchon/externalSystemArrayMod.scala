@@ -26,7 +26,7 @@ object externalSystemArrayMod {
     /**
       * @hidden
       */
-    var _Handle_system_erase: js.Any = js.native
+    /* private */ var _Handle_system_erase: js.Any = js.native
     
     /* InferMemberOverrides */
     override def addEventListener(

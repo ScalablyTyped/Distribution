@@ -11,22 +11,17 @@ trait RowData extends StObject {
 }
 object RowData {
   
-  @scala.inline
-  def apply(): RowData = {
+  inline def apply(): RowData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowData]
   }
   
-  @scala.inline
-  implicit class RowDataMutableBuilder[Self <: RowData] (val x: Self) extends AnyVal {
+  extension [Self <: RowData](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[CellData]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[CellData]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: CellData*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: CellData*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

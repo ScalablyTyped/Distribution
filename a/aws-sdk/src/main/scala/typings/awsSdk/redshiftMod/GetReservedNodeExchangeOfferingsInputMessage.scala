@@ -23,28 +23,21 @@ trait GetReservedNodeExchangeOfferingsInputMessage extends StObject {
 }
 object GetReservedNodeExchangeOfferingsInputMessage {
   
-  @scala.inline
-  def apply(ReservedNodeId: String): GetReservedNodeExchangeOfferingsInputMessage = {
+  inline def apply(ReservedNodeId: String): GetReservedNodeExchangeOfferingsInputMessage = {
     val __obj = js.Dynamic.literal(ReservedNodeId = ReservedNodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReservedNodeExchangeOfferingsInputMessage]
   }
   
-  @scala.inline
-  implicit class GetReservedNodeExchangeOfferingsInputMessageMutableBuilder[Self <: GetReservedNodeExchangeOfferingsInputMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GetReservedNodeExchangeOfferingsInputMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setReservedNodeId(value: String): Self = StObject.set(x, "ReservedNodeId", value.asInstanceOf[js.Any])
+    inline def setReservedNodeId(value: String): Self = StObject.set(x, "ReservedNodeId", value.asInstanceOf[js.Any])
   }
 }

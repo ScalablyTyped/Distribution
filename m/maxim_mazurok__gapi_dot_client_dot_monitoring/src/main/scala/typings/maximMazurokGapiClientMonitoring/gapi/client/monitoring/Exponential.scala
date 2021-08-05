@@ -17,31 +17,23 @@ trait Exponential extends StObject {
 }
 object Exponential {
   
-  @scala.inline
-  def apply(): Exponential = {
+  inline def apply(): Exponential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Exponential]
   }
   
-  @scala.inline
-  implicit class ExponentialMutableBuilder[Self <: Exponential] (val x: Self) extends AnyVal {
+  extension [Self <: Exponential](x: Self) {
     
-    @scala.inline
-    def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
+    inline def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowthFactorUndefined: Self = StObject.set(x, "growthFactor", js.undefined)
+    inline def setGrowthFactorUndefined: Self = StObject.set(x, "growthFactor", js.undefined)
     
-    @scala.inline
-    def setNumFiniteBuckets(value: Double): Self = StObject.set(x, "numFiniteBuckets", value.asInstanceOf[js.Any])
+    inline def setNumFiniteBuckets(value: Double): Self = StObject.set(x, "numFiniteBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumFiniteBucketsUndefined: Self = StObject.set(x, "numFiniteBuckets", js.undefined)
+    inline def setNumFiniteBucketsUndefined: Self = StObject.set(x, "numFiniteBuckets", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

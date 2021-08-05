@@ -34,8 +34,7 @@ trait R3ComponentMetadataFacade
 }
 object R3ComponentMetadataFacade {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directives: js.Array[Selector],
     encapsulation: ViewEncapsulation,
     host: StringDictionary[String],
@@ -60,61 +59,42 @@ object R3ComponentMetadataFacade {
     __obj.asInstanceOf[R3ComponentMetadataFacade]
   }
   
-  @scala.inline
-  implicit class R3ComponentMetadataFacadeMutableBuilder[Self <: R3ComponentMetadataFacade] (val x: Self) extends AnyVal {
+  extension [Self <: R3ComponentMetadataFacade](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
+    inline def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
-    @scala.inline
-    def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
-    @scala.inline
-    def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
+    inline def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeDetectionUndefined: Self = StObject.set(x, "changeDetection", js.undefined)
+    inline def setChangeDetectionUndefined: Self = StObject.set(x, "changeDetection", js.undefined)
     
-    @scala.inline
-    def setDirectives(value: js.Array[Selector]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    inline def setDirectives(value: js.Array[Selector]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectivesVarargs(value: Selector*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: Selector*): Self = StObject.set(x, "directives", js.Array(value :_*))
     
-    @scala.inline
-    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
+    inline def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setPipes(value: Map[String, js.Any]): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
+    inline def setPipes(value: Map[String, js.Any]): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
+    inline def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewProviders(value: js.Array[Provider]): Self = StObject.set(x, "viewProviders", value.asInstanceOf[js.Any])
+    inline def setViewProviders(value: js.Array[Provider]): Self = StObject.set(x, "viewProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewProvidersNull: Self = StObject.set(x, "viewProviders", null)
+    inline def setViewProvidersNull: Self = StObject.set(x, "viewProviders", null)
     
-    @scala.inline
-    def setViewProvidersVarargs(value: Provider*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
+    inline def setViewProvidersVarargs(value: Provider*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
   }
 }

@@ -23,37 +23,27 @@ trait GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart extends StObject {
 }
 object GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentTrainingPhrasePartMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentTrainingPhrasePart](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+    inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setUserDefined(value: Boolean): Self = StObject.set(x, "userDefined", value.asInstanceOf[js.Any])
+    inline def setUserDefined(value: Boolean): Self = StObject.set(x, "userDefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedUndefined: Self = StObject.set(x, "userDefined", js.undefined)
+    inline def setUserDefinedUndefined: Self = StObject.set(x, "userDefined", js.undefined)
   }
 }

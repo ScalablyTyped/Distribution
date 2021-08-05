@@ -16,17 +16,14 @@ object typesPointInTimeRecoveryUnavailableExceptionMod {
   }
   object PointInTimeRecoveryUnavailableException {
     
-    @scala.inline
-    def apply(): PointInTimeRecoveryUnavailableException = {
+    inline def apply(): PointInTimeRecoveryUnavailableException = {
       val __obj = js.Dynamic.literal(name = "PointInTimeRecoveryUnavailableException")
       __obj.asInstanceOf[PointInTimeRecoveryUnavailableException]
     }
     
-    @scala.inline
-    implicit class PointInTimeRecoveryUnavailableExceptionMutableBuilder[Self <: PointInTimeRecoveryUnavailableException] (val x: Self) extends AnyVal {
+    extension [Self <: PointInTimeRecoveryUnavailableException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.PointInTimeRecoveryUnavailableException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,20 +38,16 @@ object typesPointInTimeRecoveryUnavailableExceptionMod {
   }
   object PointInTimeRecoveryUnavailableExceptionDetails {
     
-    @scala.inline
-    def apply(): PointInTimeRecoveryUnavailableExceptionDetails = {
+    inline def apply(): PointInTimeRecoveryUnavailableExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PointInTimeRecoveryUnavailableExceptionDetails]
     }
     
-    @scala.inline
-    implicit class PointInTimeRecoveryUnavailableExceptionDetailsMutableBuilder[Self <: PointInTimeRecoveryUnavailableExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PointInTimeRecoveryUnavailableExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

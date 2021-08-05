@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait X86PointerTarget extends StObject
 object X86PointerTarget {
   
-  @scala.inline
-  def byte: typings.fridaGum.fridaGumStrings.byte = "byte".asInstanceOf[typings.fridaGum.fridaGumStrings.byte]
+  inline def byte: typings.fridaGum.fridaGumStrings.byte = "byte".asInstanceOf[typings.fridaGum.fridaGumStrings.byte]
   
-  @scala.inline
-  def dword: typings.fridaGum.fridaGumStrings.dword = "dword".asInstanceOf[typings.fridaGum.fridaGumStrings.dword]
+  inline def dword: typings.fridaGum.fridaGumStrings.dword = "dword".asInstanceOf[typings.fridaGum.fridaGumStrings.dword]
   
-  @scala.inline
-  def qword: typings.fridaGum.fridaGumStrings.qword = "qword".asInstanceOf[typings.fridaGum.fridaGumStrings.qword]
+  inline def qword: typings.fridaGum.fridaGumStrings.qword = "qword".asInstanceOf[typings.fridaGum.fridaGumStrings.qword]
 }

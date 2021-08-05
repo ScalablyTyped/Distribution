@@ -173,32 +173,24 @@ object taskMod {
   }
   object TaskMatchProps {
     
-    @scala.inline
-    def apply[T1, T2, T3, A /* <: js.Array[js.Any] */, R](): TaskMatchProps[T1, T2, T3, A, R] = {
+    inline def apply[T1, T2, T3, A /* <: js.Array[js.Any] */, R](): TaskMatchProps[T1, T2, T3, A, R] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskMatchProps[T1, T2, T3, A, R]]
     }
     
-    @scala.inline
-    implicit class TaskMatchPropsMutableBuilder[Self <: TaskMatchProps[?, ?, ?, ?, ?], T1, T2, T3, A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskMatchProps[T1, T2, T3, A, R])) extends AnyVal {
+    extension [Self <: TaskMatchProps[?, ?, ?, ?, ?], T1, T2, T3, A /* <: js.Array[js.Any] */, R](x: Self & (TaskMatchProps[T1, T2, T3, A, R])) {
       
-      @scala.inline
-      def setPending(value: /* args */ A => T1): Self = StObject.set(x, "pending", js.Any.fromFunction1(value))
+      inline def setPending(value: /* args */ A => T1): Self = StObject.set(x, "pending", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+      inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
       
-      @scala.inline
-      def setRejected(value: /* error */ js.Any => T2): Self = StObject.set(x, "rejected", js.Any.fromFunction1(value))
+      inline def setRejected(value: /* error */ js.Any => T2): Self = StObject.set(x, "rejected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRejectedUndefined: Self = StObject.set(x, "rejected", js.undefined)
+      inline def setRejectedUndefined: Self = StObject.set(x, "rejected", js.undefined)
       
-      @scala.inline
-      def setResolved(value: /* result */ WithoutPromise[R] => T3): Self = StObject.set(x, "resolved", js.Any.fromFunction1(value))
+      inline def setResolved(value: /* result */ WithoutPromise[R] => T3): Self = StObject.set(x, "resolved", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
+      inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
     }
   }
   
@@ -230,8 +222,7 @@ object taskMod {
   }
   object TaskMethods {
     
-    @scala.inline
-    def apply[A /* <: js.Array[js.Any] */, R](
+    inline def apply[A /* <: js.Array[js.Any] */, R](
       `match`: TaskMatchProps[js.Any, js.Any, js.Any, A, R] => js.Any | js.Any | js.Any,
       reset: () => Unit,
       setState: TaskOptions[A, R] => Unit,
@@ -242,20 +233,15 @@ object taskMod {
       __obj.asInstanceOf[TaskMethods[A, R]]
     }
     
-    @scala.inline
-    implicit class TaskMethodsMutableBuilder[Self <: TaskMethods[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskMethods[A, R])) extends AnyVal {
+    extension [Self <: TaskMethods[?, ?], A /* <: js.Array[js.Any] */, R](x: Self & (TaskMethods[A, R])) {
       
-      @scala.inline
-      def setMatch(value: TaskMatchProps[js.Any, js.Any, js.Any, A, R] => js.Any | js.Any | js.Any): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: TaskMatchProps[js.Any, js.Any, js.Any, A, R] => js.Any | js.Any | js.Any): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetState(value: TaskOptions[A, R] => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: TaskOptions[A, R] => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrap(
+      inline def setWrap(
         value: js.Function1[/* inner */ js.Function1[/* args */ A, R], js.Function1[js.Any, js.Any]] => Task_[js.Any, js.Any]
       ): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
     }
@@ -275,44 +261,32 @@ object taskMod {
   }
   object TaskOptions {
     
-    @scala.inline
-    def apply[A /* <: js.Array[js.Any] */, R](): TaskOptions[A, R] = {
+    inline def apply[A /* <: js.Array[js.Any] */, R](): TaskOptions[A, R] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskOptions[A, R]]
     }
     
-    @scala.inline
-    implicit class TaskOptionsMutableBuilder[Self <: TaskOptions[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskOptions[A, R])) extends AnyVal {
+    extension [Self <: TaskOptions[?, ?], A /* <: js.Array[js.Any] */, R](x: Self & (TaskOptions[A, R])) {
       
-      @scala.inline
-      def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResult(value: WithoutPromise[R]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: WithoutPromise[R]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setState(value: TaskStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TaskStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setSwallow(value: Boolean): Self = StObject.set(x, "swallow", value.asInstanceOf[js.Any])
+      inline def setSwallow(value: Boolean): Self = StObject.set(x, "swallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwallowUndefined: Self = StObject.set(x, "swallow", js.undefined)
+      inline def setSwallowUndefined: Self = StObject.set(x, "swallow", js.undefined)
     }
   }
   
@@ -355,41 +329,30 @@ object taskMod {
   }
   object TaskState {
     
-    @scala.inline
-    def apply[A /* <: js.Array[js.Any] */, R](args: A, pending: Boolean, rejected: Boolean, resolved: Boolean, state: TaskStatus): TaskState[A, R] = {
+    inline def apply[A /* <: js.Array[js.Any] */, R](args: A, pending: Boolean, rejected: Boolean, resolved: Boolean, state: TaskStatus): TaskState[A, R] = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaskState[A, R]]
     }
     
-    @scala.inline
-    implicit class TaskStateMutableBuilder[Self <: TaskState[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskState[A, R])) extends AnyVal {
+    extension [Self <: TaskState[?, ?], A /* <: js.Array[js.Any] */, R](x: Self & (TaskState[A, R])) {
       
-      @scala.inline
-      def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejected(value: Boolean): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      inline def setRejected(value: Boolean): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+      inline def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: WithoutPromise[R]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: WithoutPromise[R]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setState(value: TaskStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TaskStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -401,14 +364,11 @@ object taskMod {
   trait TaskStatus extends StObject
   object TaskStatus {
     
-    @scala.inline
-    def pending: typings.mobxTask.mobxTaskStrings.pending = "pending".asInstanceOf[typings.mobxTask.mobxTaskStrings.pending]
+    inline def pending: typings.mobxTask.mobxTaskStrings.pending = "pending".asInstanceOf[typings.mobxTask.mobxTaskStrings.pending]
     
-    @scala.inline
-    def rejected: typings.mobxTask.mobxTaskStrings.rejected = "rejected".asInstanceOf[typings.mobxTask.mobxTaskStrings.rejected]
+    inline def rejected: typings.mobxTask.mobxTaskStrings.rejected = "rejected".asInstanceOf[typings.mobxTask.mobxTaskStrings.rejected]
     
-    @scala.inline
-    def resolved: typings.mobxTask.mobxTaskStrings.resolved = "resolved".asInstanceOf[typings.mobxTask.mobxTaskStrings.resolved]
+    inline def resolved: typings.mobxTask.mobxTaskStrings.resolved = "resolved".asInstanceOf[typings.mobxTask.mobxTaskStrings.resolved]
   }
   
   @js.native

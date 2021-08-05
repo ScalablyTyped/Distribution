@@ -39,8 +39,7 @@ trait XHalfFloatBitmap
 }
 object XHalfFloatBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemoryLayout: FloatingPointBitmapLayout,
     Size: IntegerSize2D,
     acquire: () => Unit,
@@ -59,13 +58,10 @@ object XHalfFloatBitmap {
     __obj.asInstanceOf[XHalfFloatBitmap]
   }
   
-  @scala.inline
-  implicit class XHalfFloatBitmapMutableBuilder[Self <: XHalfFloatBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: XHalfFloatBitmap](x: Self) {
     
-    @scala.inline
-    def setSetData(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
+    inline def setSetData(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPixel(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerPoint2D) => Unit): Self = StObject.set(x, "setPixel", js.Any.fromFunction3(value))
+    inline def setSetPixel(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerPoint2D) => Unit): Self = StObject.set(x, "setPixel", js.Any.fromFunction3(value))
   }
 }

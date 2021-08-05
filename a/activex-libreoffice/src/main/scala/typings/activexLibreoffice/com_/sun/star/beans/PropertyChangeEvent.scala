@@ -40,8 +40,7 @@ trait PropertyChangeEvent
 }
 object PropertyChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Further: Boolean,
     NewValue: js.Any,
     OldValue: js.Any,
@@ -53,22 +52,16 @@ object PropertyChangeEvent {
     __obj.asInstanceOf[PropertyChangeEvent]
   }
   
-  @scala.inline
-  implicit class PropertyChangeEventMutableBuilder[Self <: PropertyChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyChangeEvent](x: Self) {
     
-    @scala.inline
-    def setFurther(value: Boolean): Self = StObject.set(x, "Further", value.asInstanceOf[js.Any])
+    inline def setFurther(value: Boolean): Self = StObject.set(x, "Further", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: js.Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: js.Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyHandle(value: Double): Self = StObject.set(x, "PropertyHandle", value.asInstanceOf[js.Any])
+    inline def setPropertyHandle(value: Double): Self = StObject.set(x, "PropertyHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
   }
 }

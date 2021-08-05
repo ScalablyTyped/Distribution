@@ -17,19 +17,15 @@ trait Encoding
 }
 object Encoding {
   
-  @scala.inline
-  def apply(encoding: binary | utf8, message: String): Encoding = {
+  inline def apply(encoding: binary | utf8, message: String): Encoding = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encoding]
   }
   
-  @scala.inline
-  implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+  extension [Self <: Encoding](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: binary | utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: binary | utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

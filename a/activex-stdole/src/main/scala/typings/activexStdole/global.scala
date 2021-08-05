@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("stdole.StdFont")
     @js.native
-    class StdFont protected ()
+    /* private */ class StdFont ()
       extends StObject
          with typings.activexStdole.stdole.StdFont {
       
@@ -38,14 +38,14 @@ object global {
       /* CompleteClass */
       override val Weight: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("stdole.StdFont_typekey")
       var stdoleDotStdFont_typekey: typings.activexStdole.stdole.StdFont = js.native
     }
     
     @JSGlobal("stdole.StdPicture")
     @js.native
-    class StdPicture protected ()
+    /* private */ class StdPicture ()
       extends StObject
          with typings.activexStdole.stdole.StdPicture {
       
@@ -78,7 +78,7 @@ object global {
       /* CompleteClass */
       override val hPal: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("stdole.StdPicture_typekey")
       var stdoleDotStdPicture_typekey: typings.activexStdole.stdole.StdPicture = js.native
     }

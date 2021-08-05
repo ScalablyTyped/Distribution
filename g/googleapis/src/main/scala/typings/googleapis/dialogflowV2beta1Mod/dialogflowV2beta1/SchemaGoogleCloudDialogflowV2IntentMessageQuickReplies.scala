@@ -21,28 +21,21 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentMessageQuickRepliesMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2IntentMessageQuickReplies](x: Self) {
     
-    @scala.inline
-    def setQuickReplies(value: js.Array[String]): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
+    inline def setQuickReplies(value: js.Array[String]): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
+    inline def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
     
-    @scala.inline
-    def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value :_*))
+    inline def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

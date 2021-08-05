@@ -18,28 +18,21 @@ trait ListDeviceDefinitionVersionsResponse extends StObject {
 }
 object ListDeviceDefinitionVersionsResponse {
   
-  @scala.inline
-  def apply(): ListDeviceDefinitionVersionsResponse = {
+  inline def apply(): ListDeviceDefinitionVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeviceDefinitionVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListDeviceDefinitionVersionsResponseMutableBuilder[Self <: ListDeviceDefinitionVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeviceDefinitionVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVersions(value: listOfVersionInformation): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: listOfVersionInformation): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: VersionInformation*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: VersionInformation*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

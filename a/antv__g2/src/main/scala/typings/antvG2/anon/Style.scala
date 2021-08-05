@@ -21,25 +21,19 @@ trait Style extends StObject {
 }
 object Style {
   
-  @scala.inline
-  def apply(): Style = {
+  inline def apply(): Style = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Style]
   }
   
-  @scala.inline
-  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+  extension [Self <: Style](x: Self) {
     
-    @scala.inline
-    def setStyle(value: background | line): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: background | line): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: rect | typings.antvG2.antvG2Strings.x | y | cross | typings.antvG2.antvG2Strings.line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rect | typings.antvG2.antvG2Strings.x | y | cross | typings.antvG2.antvG2Strings.line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

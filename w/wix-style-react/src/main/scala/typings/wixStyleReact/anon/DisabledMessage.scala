@@ -21,37 +21,27 @@ trait DisabledMessage extends StObject {
 }
 object DisabledMessage {
   
-  @scala.inline
-  def apply(): DisabledMessage = {
+  inline def apply(): DisabledMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisabledMessage]
   }
   
-  @scala.inline
-  implicit class DisabledMessageMutableBuilder[Self <: DisabledMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DisabledMessage](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledMessage(value: String): Self = StObject.set(x, "disabledMessage", value.asInstanceOf[js.Any])
+    inline def setDisabledMessage(value: String): Self = StObject.set(x, "disabledMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledMessageUndefined: Self = StObject.set(x, "disabledMessage", js.undefined)
+    inline def setDisabledMessageUndefined: Self = StObject.set(x, "disabledMessage", js.undefined)
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

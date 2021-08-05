@@ -28,8 +28,7 @@ object mod {
   @JSImport("vcf", "EOL")
   @js.native
   def EOL: CarriagereturnLinefeed = js.native
-  @scala.inline
-  def EOL_=(x: CarriagereturnLinefeed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOL")(x.asInstanceOf[js.Any])
+  inline def EOL_=(x: CarriagereturnLinefeed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOL")(x.asInstanceOf[js.Any])
   
   @JSImport("vcf", "Property")
   @js.native
@@ -56,8 +55,7 @@ object mod {
     
     /** Creates a property from a jCard formatted JSON object */
     /* static member */
-    @scala.inline
-    def fromJSON(data: jCardProperty): Property = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Property]
+    inline def fromJSON(data: jCardProperty): Property = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Property]
   }
   
   /** is equal to `.vcf` */
@@ -67,59 +65,45 @@ object mod {
   val `extension`: Dotvcf = js.native
   
   /* static member */
-  @scala.inline
-  def foldLine(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def foldLine(input: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def foldLine(input: String, maxLength: Double, hardWrap: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], hardWrap.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def foldLine(input: String, maxLength: Unit, hardWrap: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], hardWrap.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def foldLine(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def foldLine(input: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def foldLine(input: String, maxLength: Double, hardWrap: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], hardWrap.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def foldLine(input: String, maxLength: Unit, hardWrap: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLine")(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], hardWrap.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def format(card: vCard): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(card.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def format(card: vCard, version: CardVersion): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(card.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(card: vCard): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(card.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(card: vCard, version: CardVersion): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(card.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /** Returns a vCard object from a jCard JSON object */
   /* static member */
-  @scala.inline
-  def fromJSON(jcard: jCard): vCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(jcard.asInstanceOf[js.Any]).asInstanceOf[vCard]
+  inline def fromJSON(jcard: jCard): vCard = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(jcard.asInstanceOf[js.Any]).asInstanceOf[vCard]
   
   /* static member */
-  @scala.inline
-  def isSupported(version: CardVersion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSupported(version: CardVersion): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** Is equal to `text/vcard` */
   /* static member */
   @JSImport("vcf", "mimeType")
   @js.native
   def mimeType: String = js.native
-  @scala.inline
-  def mimeType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mimeType")(x.asInstanceOf[js.Any])
+  inline def mimeType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mimeType")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def normalize(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def normalize(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Returns an *array* of vCard objects from a multiple-card string. */
   /* static member */
-  @scala.inline
-  def parse(value: String): js.Array[vCard] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[vCard]]
-  @scala.inline
-  def parse(value: Buffer): js.Array[vCard] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[vCard]]
+  inline def parse(value: String): js.Array[vCard] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[vCard]]
+  inline def parse(value: Buffer): js.Array[vCard] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[vCard]]
   
   /* static member */
-  @scala.inline
-  def parseLines(lines: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLines")(lines.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseLines(lines: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLines")(lines.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
   @JSImport("vcf", "versions")
   @js.native
   def versions: js.Tuple3[`2Dot1`, `3Dot0`, `4Dot0`] = js.native
-  @scala.inline
-  def versions_=(x: js.Tuple3[`2Dot1`, `3Dot0`, `4Dot0`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versions")(x.asInstanceOf[js.Any])
+  inline def versions_=(x: js.Tuple3[`2Dot1`, `3Dot0`, `4Dot0`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versions")(x.asInstanceOf[js.Any])
   
   /* Rewritten from type alias, can be one of: 
     - typings.vcf.vcfStrings.`2Dot1`
@@ -129,14 +113,11 @@ object mod {
   trait CardVersion extends StObject
   object CardVersion {
     
-    @scala.inline
-    def `2Dot1`: typings.vcf.vcfStrings.`2Dot1` = "2.1".asInstanceOf[typings.vcf.vcfStrings.`2Dot1`]
+    inline def `2Dot1`: typings.vcf.vcfStrings.`2Dot1` = "2.1".asInstanceOf[typings.vcf.vcfStrings.`2Dot1`]
     
-    @scala.inline
-    def `3Dot0`: typings.vcf.vcfStrings.`3Dot0` = "3.0".asInstanceOf[typings.vcf.vcfStrings.`3Dot0`]
+    inline def `3Dot0`: typings.vcf.vcfStrings.`3Dot0` = "3.0".asInstanceOf[typings.vcf.vcfStrings.`3Dot0`]
     
-    @scala.inline
-    def `4Dot0`: typings.vcf.vcfStrings.`4Dot0` = "4.0".asInstanceOf[typings.vcf.vcfStrings.`4Dot0`]
+    inline def `4Dot0`: typings.vcf.vcfStrings.`4Dot0` = "4.0".asInstanceOf[typings.vcf.vcfStrings.`4Dot0`]
   }
   
   /** jCard standard format */

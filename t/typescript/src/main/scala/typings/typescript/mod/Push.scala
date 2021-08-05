@@ -11,16 +11,13 @@ trait Push[T] extends StObject {
 }
 object Push {
   
-  @scala.inline
-  def apply[T](push: /* repeated */ T => Unit): Push[T] = {
+  inline def apply[T](push: /* repeated */ T => Unit): Push[T] = {
     val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
     __obj.asInstanceOf[Push[T]]
   }
   
-  @scala.inline
-  implicit class PushMutableBuilder[Self <: Push[?], T] (val x: Self & Push[T]) extends AnyVal {
+  extension [Self <: Push[?], T](x: Self & Push[T]) {
     
-    @scala.inline
-    def setPush(value: /* repeated */ T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: /* repeated */ T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
   }
 }

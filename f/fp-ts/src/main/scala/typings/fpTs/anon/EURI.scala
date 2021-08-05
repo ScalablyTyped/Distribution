@@ -12,19 +12,15 @@ trait EURI[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRe
 }
 object EURI {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](URI: F, _E: E): EURI[F, E] = {
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](URI: F, _E: E): EURI[F, E] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _E = _E.asInstanceOf[js.Any])
     __obj.asInstanceOf[EURI[F, E]]
   }
   
-  @scala.inline
-  implicit class EURIMutableBuilder[Self <: EURI[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (EURI[F, E])) extends AnyVal {
+  extension [Self <: EURI[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (EURI[F, E])) {
     
-    @scala.inline
-    def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+    inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }
 }

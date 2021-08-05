@@ -602,7 +602,7 @@ trait WorksheetFunction extends StObject {
   
   def Even(Arg1: Double): Double = js.native
   
-  @JSName("Excel.WorksheetFunction_typekey")
+  /* private */ @JSName("Excel.WorksheetFunction_typekey")
   var ExcelDotWorksheetFunction_typekey: WorksheetFunction = js.native
   
   def ExponDist(Arg1: Double, Arg2: Double, Arg3: Boolean): Double = js.native

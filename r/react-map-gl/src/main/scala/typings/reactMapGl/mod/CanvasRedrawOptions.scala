@@ -13,8 +13,7 @@ trait CanvasRedrawOptions
 }
 object CanvasRedrawOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ctx: CanvasRenderingContext2D,
     height: Double,
     project: js.Array[Double] => js.Array[Double],
@@ -25,10 +24,8 @@ object CanvasRedrawOptions {
     __obj.asInstanceOf[CanvasRedrawOptions]
   }
   
-  @scala.inline
-  implicit class CanvasRedrawOptionsMutableBuilder[Self <: CanvasRedrawOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasRedrawOptions](x: Self) {
     
-    @scala.inline
-    def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
   }
 }

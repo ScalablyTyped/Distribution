@@ -11,6 +11,5 @@ object closestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(el: Element, selector: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+  inline def default(el: Element, selector: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(el.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
 }

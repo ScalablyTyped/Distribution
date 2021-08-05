@@ -23,28 +23,21 @@ trait IdentityDkimAttributes extends StObject {
 }
 object IdentityDkimAttributes {
   
-  @scala.inline
-  def apply(DkimEnabled: Enabled, DkimVerificationStatus: VerificationStatus): IdentityDkimAttributes = {
+  inline def apply(DkimEnabled: Enabled, DkimVerificationStatus: VerificationStatus): IdentityDkimAttributes = {
     val __obj = js.Dynamic.literal(DkimEnabled = DkimEnabled.asInstanceOf[js.Any], DkimVerificationStatus = DkimVerificationStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityDkimAttributes]
   }
   
-  @scala.inline
-  implicit class IdentityDkimAttributesMutableBuilder[Self <: IdentityDkimAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityDkimAttributes](x: Self) {
     
-    @scala.inline
-    def setDkimEnabled(value: Enabled): Self = StObject.set(x, "DkimEnabled", value.asInstanceOf[js.Any])
+    inline def setDkimEnabled(value: Enabled): Self = StObject.set(x, "DkimEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimTokens(value: VerificationTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
+    inline def setDkimTokens(value: VerificationTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkimTokensUndefined: Self = StObject.set(x, "DkimTokens", js.undefined)
+    inline def setDkimTokensUndefined: Self = StObject.set(x, "DkimTokens", js.undefined)
     
-    @scala.inline
-    def setDkimTokensVarargs(value: VerificationToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
+    inline def setDkimTokensVarargs(value: VerificationToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setDkimVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "DkimVerificationStatus", value.asInstanceOf[js.Any])
+    inline def setDkimVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "DkimVerificationStatus", value.asInstanceOf[js.Any])
   }
 }

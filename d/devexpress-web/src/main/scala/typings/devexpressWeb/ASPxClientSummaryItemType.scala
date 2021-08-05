@@ -36,28 +36,21 @@ trait ASPxClientSummaryItemType extends StObject {
 }
 object ASPxClientSummaryItemType {
   
-  @scala.inline
-  def apply(Average: Double, Count: Double, Max: Double, Min: Double, Sum: Double): ASPxClientSummaryItemType = {
+  inline def apply(Average: Double, Count: Double, Max: Double, Min: Double, Sum: Double): ASPxClientSummaryItemType = {
     val __obj = js.Dynamic.literal(Average = Average.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Max = Max.asInstanceOf[js.Any], Min = Min.asInstanceOf[js.Any], Sum = Sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSummaryItemType]
   }
   
-  @scala.inline
-  implicit class ASPxClientSummaryItemTypeMutableBuilder[Self <: ASPxClientSummaryItemType] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSummaryItemType](x: Self) {
     
-    @scala.inline
-    def setAverage(value: Double): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: Double): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: Double): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
   }
 }

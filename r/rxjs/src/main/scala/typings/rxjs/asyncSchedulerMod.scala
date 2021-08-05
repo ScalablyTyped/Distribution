@@ -66,7 +66,6 @@ object asyncSchedulerMod {
     @JSImport("rxjs/internal/scheduler/AsyncScheduler", "AsyncScheduler.delegate")
     @js.native
     def delegate: js.UndefOr[Scheduler] = js.native
-    @scala.inline
-    def delegate_=(x: js.UndefOr[Scheduler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delegate")(x.asInstanceOf[js.Any])
+    inline def delegate_=(x: js.UndefOr[Scheduler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delegate")(x.asInstanceOf[js.Any])
   }
 }

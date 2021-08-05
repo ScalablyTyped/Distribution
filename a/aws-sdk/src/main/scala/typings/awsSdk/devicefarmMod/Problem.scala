@@ -43,55 +43,39 @@ trait Problem extends StObject {
 }
 object Problem {
   
-  @scala.inline
-  def apply(): Problem = {
+  inline def apply(): Problem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Problem]
   }
   
-  @scala.inline
-  implicit class ProblemMutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
+  extension [Self <: Problem](x: Self) {
     
-    @scala.inline
-    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setJob(value: ProblemDetail): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: ProblemDetail): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResult(value: ExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setRun(value: ProblemDetail): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    inline def setRun(value: ProblemDetail): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
-    @scala.inline
-    def setSuite(value: ProblemDetail): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+    inline def setSuite(value: ProblemDetail): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
+    inline def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
     
-    @scala.inline
-    def setTest(value: ProblemDetail): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: ProblemDetail): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

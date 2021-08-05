@@ -50,61 +50,43 @@ trait Probe extends StObject {
 }
 object Probe {
   
-  @scala.inline
-  def apply(): Probe = {
+  inline def apply(): Probe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Probe]
   }
   
-  @scala.inline
-  implicit class ProbeMutableBuilder[Self <: Probe] (val x: Self) extends AnyVal {
+  extension [Self <: Probe](x: Self) {
     
-    @scala.inline
-    def setExec(value: ExecAction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    inline def setExec(value: ExecAction): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
+    inline def setExecUndefined: Self = StObject.set(x, "exec", js.undefined)
     
-    @scala.inline
-    def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+    inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+    inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     
-    @scala.inline
-    def setHttpGet(value: HTTPGetAction): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
+    inline def setHttpGet(value: HTTPGetAction): Self = StObject.set(x, "httpGet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpGetUndefined: Self = StObject.set(x, "httpGet", js.undefined)
+    inline def setHttpGetUndefined: Self = StObject.set(x, "httpGet", js.undefined)
     
-    @scala.inline
-    def setInitialDelaySeconds(value: Double): Self = StObject.set(x, "initialDelaySeconds", value.asInstanceOf[js.Any])
+    inline def setInitialDelaySeconds(value: Double): Self = StObject.set(x, "initialDelaySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDelaySecondsUndefined: Self = StObject.set(x, "initialDelaySeconds", js.undefined)
+    inline def setInitialDelaySecondsUndefined: Self = StObject.set(x, "initialDelaySeconds", js.undefined)
     
-    @scala.inline
-    def setPeriodSeconds(value: Double): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
+    inline def setPeriodSeconds(value: Double): Self = StObject.set(x, "periodSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodSecondsUndefined: Self = StObject.set(x, "periodSeconds", js.undefined)
+    inline def setPeriodSecondsUndefined: Self = StObject.set(x, "periodSeconds", js.undefined)
     
-    @scala.inline
-    def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
+    inline def setSuccessThreshold(value: Double): Self = StObject.set(x, "successThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
+    inline def setSuccessThresholdUndefined: Self = StObject.set(x, "successThreshold", js.undefined)
     
-    @scala.inline
-    def setTcpSocket(value: TCPSocketAction): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
+    inline def setTcpSocket(value: TCPSocketAction): Self = StObject.set(x, "tcpSocket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcpSocketUndefined: Self = StObject.set(x, "tcpSocket", js.undefined)
+    inline def setTcpSocketUndefined: Self = StObject.set(x, "tcpSocket", js.undefined)
     
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+    inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

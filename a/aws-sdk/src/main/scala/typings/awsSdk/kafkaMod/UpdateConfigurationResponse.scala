@@ -22,25 +22,19 @@ trait UpdateConfigurationResponse extends StObject {
 }
 object UpdateConfigurationResponse {
   
-  @scala.inline
-  def apply(): UpdateConfigurationResponse = {
+  inline def apply(): UpdateConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class UpdateConfigurationResponseMutableBuilder[Self <: UpdateConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setLatestRevision(value: ConfigurationRevision): Self = StObject.set(x, "LatestRevision", value.asInstanceOf[js.Any])
+    inline def setLatestRevision(value: ConfigurationRevision): Self = StObject.set(x, "LatestRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestRevisionUndefined: Self = StObject.set(x, "LatestRevision", js.undefined)
+    inline def setLatestRevisionUndefined: Self = StObject.set(x, "LatestRevision", js.undefined)
   }
 }

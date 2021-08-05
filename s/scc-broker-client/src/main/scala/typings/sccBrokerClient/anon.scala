@@ -12,17 +12,14 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: typings.std.Error): Error = {
+    inline def apply(error: typings.std.Error): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,8 +33,7 @@ object anon {
   }
   object NoMatchingPublishTargetError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       NoMatchingPublishTargetError: String => typings.std.Error,
       NoMatchingSubscribeTargetError: String => typings.std.Error,
       NoMatchingUnsubscribeTargetError: String => typings.std.Error
@@ -46,17 +42,13 @@ object anon {
       __obj.asInstanceOf[NoMatchingPublishTargetError]
     }
     
-    @scala.inline
-    implicit class NoMatchingPublishTargetErrorMutableBuilder[Self <: NoMatchingPublishTargetError] (val x: Self) extends AnyVal {
+    extension [Self <: NoMatchingPublishTargetError](x: Self) {
       
-      @scala.inline
-      def setNoMatchingPublishTargetError(value: String => typings.std.Error): Self = StObject.set(x, "NoMatchingPublishTargetError", js.Any.fromFunction1(value))
+      inline def setNoMatchingPublishTargetError(value: String => typings.std.Error): Self = StObject.set(x, "NoMatchingPublishTargetError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNoMatchingSubscribeTargetError(value: String => typings.std.Error): Self = StObject.set(x, "NoMatchingSubscribeTargetError", js.Any.fromFunction1(value))
+      inline def setNoMatchingSubscribeTargetError(value: String => typings.std.Error): Self = StObject.set(x, "NoMatchingSubscribeTargetError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNoMatchingUnsubscribeTargetError(value: String => typings.std.Error): Self = StObject.set(x, "NoMatchingUnsubscribeTargetError", js.Any.fromFunction1(value))
+      inline def setNoMatchingUnsubscribeTargetError(value: String => typings.std.Error): Self = StObject.set(x, "NoMatchingUnsubscribeTargetError", js.Any.fromFunction1(value))
     }
   }
 }

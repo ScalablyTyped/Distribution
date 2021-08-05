@@ -23,22 +23,17 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(conditionType: ConditionType, name: String, value: String): Condition = {
+  inline def apply(conditionType: ConditionType, name: String, value: String): Condition = {
     val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setConditionType(value: ConditionType): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: ConditionType): Self = StObject.set(x, "conditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

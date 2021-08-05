@@ -172,8 +172,7 @@ object boxMod {
   }
   object BoxPlotData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alignmentgroup: String,
       autobinx: Boolean,
       boxmean: Boolean | sd,
@@ -306,38 +305,27 @@ object boxMod {
       __obj.asInstanceOf[BoxPlotData]
     }
     
-    @scala.inline
-    implicit class BoxPlotDataMutableBuilder[Self <: BoxPlotData] (val x: Self) extends AnyVal {
+    extension [Self <: BoxPlotData](x: Self) {
       
-      @scala.inline
-      def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
+      inline def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarker(value: PartialoutliercolorColors): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: PartialoutliercolorColors): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetgroup(value: String): Self = StObject.set(x, "offsetgroup", value.asInstanceOf[js.Any])
+      inline def setOffsetgroup(value: String): Self = StObject.set(x, "offsetgroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuartilemethod(value: linear | exclusive | inclusive): Self = StObject.set(x, "quartilemethod", value.asInstanceOf[js.Any])
+      inline def setQuartilemethod(value: linear | exclusive | inclusive): Self = StObject.set(x, "quartilemethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: ScatterSelectedMarker): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: ScatterSelectedMarker): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: box): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: box): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselected(value: ScatterSelectedMarker): Self = StObject.set(x, "unselected", value.asInstanceOf[js.Any])
+      inline def setUnselected(value: ScatterSelectedMarker): Self = StObject.set(x, "unselected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX0(value: js.Any): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      inline def setX0(value: js.Any): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0(value: js.Any): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: js.Any): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     }
   }
 }

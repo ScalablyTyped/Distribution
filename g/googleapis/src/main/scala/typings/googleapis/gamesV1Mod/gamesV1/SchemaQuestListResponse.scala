@@ -27,34 +27,25 @@ trait SchemaQuestListResponse extends StObject {
 }
 object SchemaQuestListResponse {
   
-  @scala.inline
-  def apply(): SchemaQuestListResponse = {
+  inline def apply(): SchemaQuestListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuestListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaQuestListResponseMutableBuilder[Self <: SchemaQuestListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuestListResponse](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaQuest]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaQuest]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaQuest*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaQuest*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

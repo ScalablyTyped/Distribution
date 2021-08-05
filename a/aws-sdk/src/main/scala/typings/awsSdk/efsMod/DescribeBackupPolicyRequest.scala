@@ -13,16 +13,13 @@ trait DescribeBackupPolicyRequest extends StObject {
 }
 object DescribeBackupPolicyRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId): DescribeBackupPolicyRequest = {
+  inline def apply(FileSystemId: FileSystemId): DescribeBackupPolicyRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBackupPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBackupPolicyRequestMutableBuilder[Self <: DescribeBackupPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBackupPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
   }
 }

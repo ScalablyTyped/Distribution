@@ -16,31 +16,23 @@ trait GeolocationOptions extends StObject {
 }
 object GeolocationOptions {
   
-  @scala.inline
-  def apply(): GeolocationOptions = {
+  inline def apply(): GeolocationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeolocationOptions]
   }
   
-  @scala.inline
-  implicit class GeolocationOptionsMutableBuilder[Self <: GeolocationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationOptions](x: Self) {
     
-    @scala.inline
-    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
+    inline def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingOptions(value: PositionOptions): Self = StObject.set(x, "trackingOptions", value.asInstanceOf[js.Any])
+    inline def setTrackingOptions(value: PositionOptions): Self = StObject.set(x, "trackingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingOptionsUndefined: Self = StObject.set(x, "trackingOptions", js.undefined)
+    inline def setTrackingOptionsUndefined: Self = StObject.set(x, "trackingOptions", js.undefined)
     
-    @scala.inline
-    def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
+    inline def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
   }
 }

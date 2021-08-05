@@ -18,25 +18,19 @@ trait TranslationResult extends StObject {
 }
 object TranslationResult {
   
-  @scala.inline
-  def apply(character_count: Double, translations: js.Array[Translation], word_count: Double): TranslationResult = {
+  inline def apply(character_count: Double, translations: js.Array[Translation], word_count: Double): TranslationResult = {
     val __obj = js.Dynamic.literal(character_count = character_count.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], word_count = word_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationResult]
   }
   
-  @scala.inline
-  implicit class TranslationResultMutableBuilder[Self <: TranslationResult] (val x: Self) extends AnyVal {
+  extension [Self <: TranslationResult](x: Self) {
     
-    @scala.inline
-    def setCharacter_count(value: Double): Self = StObject.set(x, "character_count", value.asInstanceOf[js.Any])
+    inline def setCharacter_count(value: Double): Self = StObject.set(x, "character_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    inline def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
     
-    @scala.inline
-    def setWord_count(value: Double): Self = StObject.set(x, "word_count", value.asInstanceOf[js.Any])
+    inline def setWord_count(value: Double): Self = StObject.set(x, "word_count", value.asInstanceOf[js.Any])
   }
 }

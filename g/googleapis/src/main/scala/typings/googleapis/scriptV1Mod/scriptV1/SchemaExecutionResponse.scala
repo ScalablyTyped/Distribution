@@ -22,19 +22,15 @@ trait SchemaExecutionResponse extends StObject {
 }
 object SchemaExecutionResponse {
   
-  @scala.inline
-  def apply(): SchemaExecutionResponse = {
+  inline def apply(): SchemaExecutionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExecutionResponse]
   }
   
-  @scala.inline
-  implicit class SchemaExecutionResponseMutableBuilder[Self <: SchemaExecutionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExecutionResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

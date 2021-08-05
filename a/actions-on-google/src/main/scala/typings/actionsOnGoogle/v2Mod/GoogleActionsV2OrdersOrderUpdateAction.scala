@@ -18,25 +18,19 @@ trait GoogleActionsV2OrdersOrderUpdateAction extends StObject {
 }
 object GoogleActionsV2OrdersOrderUpdateAction {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersOrderUpdateAction = {
+  inline def apply(): GoogleActionsV2OrdersOrderUpdateAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderUpdateAction]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersOrderUpdateActionMutableBuilder[Self <: GoogleActionsV2OrdersOrderUpdateAction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersOrderUpdateAction](x: Self) {
     
-    @scala.inline
-    def setButton(value: GoogleActionsV2UiElementsButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: GoogleActionsV2UiElementsButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsV2OrdersOrderUpdateActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsV2OrdersOrderUpdateActionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

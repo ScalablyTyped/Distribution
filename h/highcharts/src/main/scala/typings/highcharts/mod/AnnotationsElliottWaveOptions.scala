@@ -29,37 +29,27 @@ trait AnnotationsElliottWaveOptions extends StObject {
 }
 object AnnotationsElliottWaveOptions {
   
-  @scala.inline
-  def apply(): AnnotationsElliottWaveOptions = {
+  inline def apply(): AnnotationsElliottWaveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsElliottWaveOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsElliottWaveOptionsMutableBuilder[Self <: AnnotationsElliottWaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsElliottWaveOptions](x: Self) {
     
-    @scala.inline
-    def setControlPointOptions(value: AnnotationsElliottWaveControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
+    inline def setControlPointOptions(value: AnnotationsElliottWaveControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
+    inline def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
     
-    @scala.inline
-    def setLabelOptions(value: AnnotationsElliottWaveLabelOptions): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
+    inline def setLabelOptions(value: AnnotationsElliottWaveLabelOptions): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelOptionsUndefined: Self = StObject.set(x, "labelOptions", js.undefined)
+    inline def setLabelOptionsUndefined: Self = StObject.set(x, "labelOptions", js.undefined)
     
-    @scala.inline
-    def setShapeOptions(value: AnnotationsElliottWaveShapeOptions): Self = StObject.set(x, "shapeOptions", value.asInstanceOf[js.Any])
+    inline def setShapeOptions(value: AnnotationsElliottWaveShapeOptions): Self = StObject.set(x, "shapeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeOptionsUndefined: Self = StObject.set(x, "shapeOptions", js.undefined)
+    inline def setShapeOptionsUndefined: Self = StObject.set(x, "shapeOptions", js.undefined)
     
-    @scala.inline
-    def setTypeOptions(value: AnnotationsElliottWaveTypeOptions): Self = StObject.set(x, "typeOptions", value.asInstanceOf[js.Any])
+    inline def setTypeOptions(value: AnnotationsElliottWaveTypeOptions): Self = StObject.set(x, "typeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeOptionsUndefined: Self = StObject.set(x, "typeOptions", js.undefined)
+    inline def setTypeOptionsUndefined: Self = StObject.set(x, "typeOptions", js.undefined)
   }
 }

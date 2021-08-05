@@ -27,20 +27,14 @@ object alchemyProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def getUrl(network: Network, apiKey: String): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
+    inline def getUrl(network: Network, apiKey: String): ConnectionInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[ConnectionInfo]
     
-    @scala.inline
-    def getWebSocketProvider(): AlchemyWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")().asInstanceOf[AlchemyWebSocketProvider]
-    @scala.inline
-    def getWebSocketProvider(network: Unit, apiKey: js.Any): AlchemyWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[AlchemyWebSocketProvider]
-    @scala.inline
-    def getWebSocketProvider(network: Networkish): AlchemyWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any]).asInstanceOf[AlchemyWebSocketProvider]
-    @scala.inline
-    def getWebSocketProvider(network: Networkish, apiKey: js.Any): AlchemyWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[AlchemyWebSocketProvider]
+    inline def getWebSocketProvider(): AlchemyWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")().asInstanceOf[AlchemyWebSocketProvider]
+    inline def getWebSocketProvider(network: Unit, apiKey: js.Any): AlchemyWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[AlchemyWebSocketProvider]
+    inline def getWebSocketProvider(network: Networkish): AlchemyWebSocketProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any]).asInstanceOf[AlchemyWebSocketProvider]
+    inline def getWebSocketProvider(network: Networkish, apiKey: js.Any): AlchemyWebSocketProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebSocketProvider")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[AlchemyWebSocketProvider]
   }
   
   @JSImport("@ethersproject/providers/lib/alchemy-provider", "AlchemyWebSocketProvider")

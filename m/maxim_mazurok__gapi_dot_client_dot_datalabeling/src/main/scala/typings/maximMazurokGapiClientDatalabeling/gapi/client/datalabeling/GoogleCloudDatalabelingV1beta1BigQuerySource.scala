@@ -16,19 +16,15 @@ trait GoogleCloudDatalabelingV1beta1BigQuerySource extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1BigQuerySource {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1BigQuerySource = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1BigQuerySource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1BigQuerySource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1BigQuerySourceMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1BigQuerySource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1BigQuerySource](x: Self) {
     
-    @scala.inline
-    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
+    inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
+    inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
   }
 }

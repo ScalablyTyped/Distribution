@@ -12,7 +12,7 @@ trait TextStyle extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.TextStyle_typekey")
+  /* private */ @JSName("PowerPoint.TextStyle_typekey")
   var PowerPointDotTextStyle_typekey: TextStyle
   
   val Ruler: typings.activexPowerpoint.PowerPoint.Ruler
@@ -21,8 +21,7 @@ trait TextStyle extends StObject {
 }
 object TextStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Levels: TextStyleLevels,
     Parent: js.Any,
@@ -35,25 +34,18 @@ object TextStyle {
     __obj.asInstanceOf[TextStyle]
   }
   
-  @scala.inline
-  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyle](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevels(value: TextStyleLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: TextStyleLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTextStyle_typekey(value: TextStyle): Self = StObject.set(x, "PowerPoint.TextStyle_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTextStyle_typekey(value: TextStyle): Self = StObject.set(x, "PowerPoint.TextStyle_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuler(value: Ruler): Self = StObject.set(x, "Ruler", value.asInstanceOf[js.Any])
+    inline def setRuler(value: Ruler): Self = StObject.set(x, "Ruler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFrame(value: TextFrame): Self = StObject.set(x, "TextFrame", value.asInstanceOf[js.Any])
+    inline def setTextFrame(value: TextFrame): Self = StObject.set(x, "TextFrame", value.asInstanceOf[js.Any])
   }
 }

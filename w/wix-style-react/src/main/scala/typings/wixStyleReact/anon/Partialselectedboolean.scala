@@ -11,19 +11,15 @@ trait Partialselectedboolean extends StObject {
 }
 object Partialselectedboolean {
   
-  @scala.inline
-  def apply(): Partialselectedboolean = {
+  inline def apply(): Partialselectedboolean = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialselectedboolean]
   }
   
-  @scala.inline
-  implicit class PartialselectedbooleanMutableBuilder[Self <: Partialselectedboolean] (val x: Self) extends AnyVal {
+  extension [Self <: Partialselectedboolean](x: Self) {
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

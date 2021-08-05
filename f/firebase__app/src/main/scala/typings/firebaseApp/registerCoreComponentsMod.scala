@@ -11,8 +11,6 @@ object registerCoreComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerCoreComponents(firebase: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerCoreComponents")(firebase.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def registerCoreComponents(firebase: FirebaseNamespace, variant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCoreComponents")(firebase.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerCoreComponents(firebase: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerCoreComponents")(firebase.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerCoreComponents(firebase: FirebaseNamespace, variant: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCoreComponents")(firebase.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -11,6 +11,5 @@ object hasHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasHeader(soughtHeader: String, headers: HeaderBag): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasHeader")(soughtHeader.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasHeader(soughtHeader: String, headers: HeaderBag): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasHeader")(soughtHeader.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

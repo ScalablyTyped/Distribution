@@ -20,47 +20,34 @@ object quantileMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(field: String): Options = {
+    inline def apply(field: String): Options = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
+      inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
+      inline def setFractionUndefined: Self = StObject.set(x, "fraction", js.undefined)
       
-      @scala.inline
-      def setGroupBy(value: js.Array[String]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      inline def setGroupBy(value: js.Array[String]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+      inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      @scala.inline
-      def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
       
-      @scala.inline
-      def setP(value: js.Array[Double]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: js.Array[Double]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+      inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      @scala.inline
-      def setPVarargs(value: Double*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: Double*): Self = StObject.set(x, "p", js.Array(value :_*))
     }
   }
 }

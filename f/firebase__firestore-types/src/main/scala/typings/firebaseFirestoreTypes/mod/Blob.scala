@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "Blob")
 @js.native
-class Blob protected () extends StObject {
+/* private */ class Blob () extends StObject {
   
   def isEqual(other: Blob): Boolean = js.native
   
@@ -22,9 +22,7 @@ object Blob {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromBase64String(base64: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def fromBase64String(base64: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64.asInstanceOf[js.Any]).asInstanceOf[Blob]
   
-  @scala.inline
-  def fromUint8Array(array: Uint8Array): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(array.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def fromUint8Array(array: Uint8Array): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(array.asInstanceOf[js.Any]).asInstanceOf[Blob]
 }

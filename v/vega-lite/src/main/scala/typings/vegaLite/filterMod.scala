@@ -16,14 +16,14 @@ object filterMod {
   class FilterNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, model: Model, filter: LogicalComposition[Predicate]) = this()
     
-    var _dependentFields: js.Any = js.native
+    /* private */ var _dependentFields: js.Any = js.native
     
     def assemble(): FilterTransform = js.native
     
-    var expr: js.Any = js.native
+    /* private */ var expr: js.Any = js.native
     
-    val filter: js.Any = js.native
+    /* private */ val filter: js.Any = js.native
     
-    val model: js.Any = js.native
+    /* private */ val model: js.Any = js.native
   }
 }

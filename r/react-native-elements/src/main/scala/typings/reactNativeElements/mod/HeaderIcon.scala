@@ -15,25 +15,19 @@ trait HeaderIcon
 }
 object HeaderIcon {
   
-  @scala.inline
-  def apply(): HeaderIcon = {
+  inline def apply(): HeaderIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderIcon]
   }
   
-  @scala.inline
-  implicit class HeaderIconMutableBuilder[Self <: HeaderIcon] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderIcon](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -65,39 +65,29 @@ trait PrintHandlers extends StObject {
 }
 object PrintHandlers {
   
-  @scala.inline
-  def apply(): PrintHandlers = {
+  inline def apply(): PrintHandlers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrintHandlers]
   }
   
-  @scala.inline
-  implicit class PrintHandlersMutableBuilder[Self <: PrintHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: PrintHandlers](x: Self) {
     
-    @scala.inline
-    def setHasGlobalName(value: /* name */ java.lang.String => Boolean): Self = StObject.set(x, "hasGlobalName", js.Any.fromFunction1(value))
+    inline def setHasGlobalName(value: /* name */ java.lang.String => Boolean): Self = StObject.set(x, "hasGlobalName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasGlobalNameUndefined: Self = StObject.set(x, "hasGlobalName", js.undefined)
+    inline def setHasGlobalNameUndefined: Self = StObject.set(x, "hasGlobalName", js.undefined)
     
-    @scala.inline
-    def setIsEmitNotificationEnabled(value: /* node */ js.UndefOr[Node] => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
+    inline def setIsEmitNotificationEnabled(value: /* node */ js.UndefOr[Node] => Boolean): Self = StObject.set(x, "isEmitNotificationEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
+    inline def setIsEmitNotificationEnabledUndefined: Self = StObject.set(x, "isEmitNotificationEnabled", js.undefined)
     
-    @scala.inline
-    def setOnEmitNode(
+    inline def setOnEmitNode(
       value: (/* hint */ EmitHint, /* node */ js.UndefOr[Node], /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], Unit]) => Unit
     ): Self = StObject.set(x, "onEmitNode", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnEmitNodeUndefined: Self = StObject.set(x, "onEmitNode", js.undefined)
+    inline def setOnEmitNodeUndefined: Self = StObject.set(x, "onEmitNode", js.undefined)
     
-    @scala.inline
-    def setSubstituteNode(value: (/* hint */ EmitHint, /* node */ Node) => Node): Self = StObject.set(x, "substituteNode", js.Any.fromFunction2(value))
+    inline def setSubstituteNode(value: (/* hint */ EmitHint, /* node */ Node) => Node): Self = StObject.set(x, "substituteNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSubstituteNodeUndefined: Self = StObject.set(x, "substituteNode", js.undefined)
+    inline def setSubstituteNodeUndefined: Self = StObject.set(x, "substituteNode", js.undefined)
   }
 }

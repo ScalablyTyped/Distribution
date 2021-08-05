@@ -50,13 +50,13 @@ object wuQuantMod {
     
     /* private */ def _addColor(color: js.Any): js.Any = js.native
     
-    var _alphaMaxSideIndex: js.Any = js.native
+    /* private */ var _alphaMaxSideIndex: js.Any = js.native
     
-    var _alphaSideSize: js.Any = js.native
+    /* private */ var _alphaSideSize: js.Any = js.native
     
-    var _alphas: js.Any = js.native
+    /* private */ var _alphas: js.Any = js.native
     
-    var _blues: js.Any = js.native
+    /* private */ var _blues: js.Any = js.native
     
     /**
       * Converts the histogram to a series of _moments.
@@ -68,19 +68,19 @@ object wuQuantMod {
       */
     /* private */ def _calculateVariance(cube: js.Any): js.Any = js.native
     
-    var _colors: js.Any = js.native
+    /* private */ var _colors: js.Any = js.native
     
-    var _cubes: js.Any = js.native
+    /* private */ var _cubes: js.Any = js.native
     
     /* private */ def _cut(first: js.Any, second: js.Any): js.Any = js.native
     
-    val _distance: js.Any = js.native
+    /* private */ val _distance: js.Any = js.native
     
-    var _greens: js.Any = js.native
+    /* private */ var _greens: js.Any = js.native
     
     /* private */ def _initialize(colors: js.Any): js.Any = js.native
     
-    var _maxSideIndex: js.Any = js.native
+    /* private */ var _maxSideIndex: js.Any = js.native
     
     /**
       * Finds the optimal (maximal) position for the cut.
@@ -97,33 +97,33 @@ object wuQuantMod {
       wholeWeight: js.Any
     ): js.Any = js.native
     
-    var _moments: js.Any = js.native
+    /* private */ var _moments: js.Any = js.native
     
-    var _momentsAlpha: js.Any = js.native
+    /* private */ var _momentsAlpha: js.Any = js.native
     
-    var _momentsBlue: js.Any = js.native
+    /* private */ var _momentsBlue: js.Any = js.native
     
-    var _momentsGreen: js.Any = js.native
+    /* private */ var _momentsGreen: js.Any = js.native
     
-    var _momentsRed: js.Any = js.native
+    /* private */ var _momentsRed: js.Any = js.native
     
-    var _pixels: js.Any = js.native
+    /* private */ var _pixels: js.Any = js.native
     
     /* private */ def _preparePalette(): js.Any = js.native
     
-    var _reds: js.Any = js.native
+    /* private */ var _reds: js.Any = js.native
     
     /* private */ def _setQuality(significantBitsPerChannel: js.Any): js.Any = js.native
     
-    var _sideSize: js.Any = js.native
+    /* private */ var _sideSize: js.Any = js.native
     
-    var _significantBitsPerChannel: js.Any = js.native
+    /* private */ var _significantBitsPerChannel: js.Any = js.native
     
-    var _sums: js.Any = js.native
+    /* private */ var _sums: js.Any = js.native
     
-    var _table: js.Any = js.native
+    /* private */ var _table: js.Any = js.native
     
-    var _weights: js.Any = js.native
+    /* private */ var _weights: js.Any = js.native
     
     def quantize(): Palette = js.native
     
@@ -139,26 +139,22 @@ object wuQuantMod {
     /**
       * Splits the cube in a given color direction at its minimum.
       */
-    @scala.inline
-    def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_bottom")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_bottom")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Splits the cube in given position][and color direction.
       */
-    @scala.inline
-    def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_top")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], position.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_top")(cube.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], position.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    @scala.inline
-    def _volume(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volume")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _volume(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volume")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    @scala.inline
-    def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volumeFloat")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_volumeFloat")(cube.asInstanceOf[js.Any], moment.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.alpha")
     @js.native

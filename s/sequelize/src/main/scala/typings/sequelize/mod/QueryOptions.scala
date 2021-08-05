@@ -97,103 +97,71 @@ trait QueryOptions
 }
 object QueryOptions {
   
-  @scala.inline
-  def apply(): QueryOptions = {
+  inline def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryOptions]
   }
   
-  @scala.inline
-  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOptions](x: Self) {
     
-    @scala.inline
-    def setBind(value: js.Object | js.Array[String]): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+    inline def setBind(value: js.Object | js.Array[String]): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+    inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
     
-    @scala.inline
-    def setBindVarargs(value: String*): Self = StObject.set(x, "bind", js.Array(value :_*))
+    inline def setBindVarargs(value: String*): Self = StObject.set(x, "bind", js.Array(value :_*))
     
-    @scala.inline
-    def setFieldMap(value: StringDictionary[String]): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
+    inline def setFieldMap(value: StringDictionary[String]): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
+    inline def setFieldMapUndefined: Self = StObject.set(x, "fieldMap", js.undefined)
     
-    @scala.inline
-    def setInstance(value: Instance[js.Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Instance[js.Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setMapToModel(value: Boolean): Self = StObject.set(x, "mapToModel", value.asInstanceOf[js.Any])
+    inline def setMapToModel(value: Boolean): Self = StObject.set(x, "mapToModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapToModelUndefined: Self = StObject.set(x, "mapToModel", js.undefined)
+    inline def setMapToModelUndefined: Self = StObject.set(x, "mapToModel", js.undefined)
     
-    @scala.inline
-    def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setNest(value: Boolean): Self = StObject.set(x, "nest", value.asInstanceOf[js.Any])
+    inline def setNest(value: Boolean): Self = StObject.set(x, "nest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestUndefined: Self = StObject.set(x, "nest", js.undefined)
+    inline def setNestUndefined: Self = StObject.set(x, "nest", js.undefined)
     
-    @scala.inline
-    def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+    inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setReplacements(value: js.Object | js.Array[String]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
+    inline def setReplacements(value: js.Object | js.Array[String]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementsUndefined: Self = StObject.set(x, "replacements", js.undefined)
+    inline def setReplacementsUndefined: Self = StObject.set(x, "replacements", js.undefined)
     
-    @scala.inline
-    def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+    inline def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value :_*))
     
-    @scala.inline
-    def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
-    @scala.inline
-    def setSupportsSearchPath(value: Boolean): Self = StObject.set(x, "supportsSearchPath", value.asInstanceOf[js.Any])
+    inline def setSupportsSearchPath(value: Boolean): Self = StObject.set(x, "supportsSearchPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsSearchPathUndefined: Self = StObject.set(x, "supportsSearchPath", js.undefined)
+    inline def setSupportsSearchPathUndefined: Self = StObject.set(x, "supportsSearchPath", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseMaster(value: Boolean): Self = StObject.set(x, "useMaster", value.asInstanceOf[js.Any])
+    inline def setUseMaster(value: Boolean): Self = StObject.set(x, "useMaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMasterUndefined: Self = StObject.set(x, "useMaster", js.undefined)
+    inline def setUseMasterUndefined: Self = StObject.set(x, "useMaster", js.undefined)
   }
 }

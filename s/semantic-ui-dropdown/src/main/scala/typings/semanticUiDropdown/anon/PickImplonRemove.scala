@@ -20,8 +20,7 @@ trait PickImplonRemove extends StObject {
 }
 object PickImplonRemove {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onRemove: js.ThisFunction3[
       /* this */ JQuery, 
       /* removedValue */ js.Any, 
@@ -34,11 +33,9 @@ object PickImplonRemove {
     __obj.asInstanceOf[PickImplonRemove]
   }
   
-  @scala.inline
-  implicit class PickImplonRemoveMutableBuilder[Self <: PickImplonRemove] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonRemove](x: Self) {
     
-    @scala.inline
-    def setOnRemove(
+    inline def setOnRemove(
       value: js.ThisFunction3[
           /* this */ JQuery, 
           /* removedValue */ js.Any, 

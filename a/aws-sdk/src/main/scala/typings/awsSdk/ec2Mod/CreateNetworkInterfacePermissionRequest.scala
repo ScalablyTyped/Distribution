@@ -33,37 +33,27 @@ trait CreateNetworkInterfacePermissionRequest extends StObject {
 }
 object CreateNetworkInterfacePermissionRequest {
   
-  @scala.inline
-  def apply(NetworkInterfaceId: NetworkInterfaceId, Permission: InterfacePermissionType): CreateNetworkInterfacePermissionRequest = {
+  inline def apply(NetworkInterfaceId: NetworkInterfaceId, Permission: InterfacePermissionType): CreateNetworkInterfacePermissionRequest = {
     val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], Permission = Permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNetworkInterfacePermissionRequest]
   }
   
-  @scala.inline
-  implicit class CreateNetworkInterfacePermissionRequestMutableBuilder[Self <: CreateNetworkInterfacePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNetworkInterfacePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountIdUndefined: Self = StObject.set(x, "AwsAccountId", js.undefined)
+    inline def setAwsAccountIdUndefined: Self = StObject.set(x, "AwsAccountId", js.undefined)
     
-    @scala.inline
-    def setAwsService(value: String): Self = StObject.set(x, "AwsService", value.asInstanceOf[js.Any])
+    inline def setAwsService(value: String): Self = StObject.set(x, "AwsService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsServiceUndefined: Self = StObject.set(x, "AwsService", js.undefined)
+    inline def setAwsServiceUndefined: Self = StObject.set(x, "AwsService", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermission(value: InterfacePermissionType): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: InterfacePermissionType): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
   }
 }

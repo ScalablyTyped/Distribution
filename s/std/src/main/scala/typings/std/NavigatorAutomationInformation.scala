@@ -10,16 +10,13 @@ trait NavigatorAutomationInformation extends StObject {
 }
 object NavigatorAutomationInformation {
   
-  @scala.inline
-  def apply(webdriver: scala.Boolean): NavigatorAutomationInformation = {
+  inline def apply(webdriver: scala.Boolean): NavigatorAutomationInformation = {
     val __obj = js.Dynamic.literal(webdriver = webdriver.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorAutomationInformation]
   }
   
-  @scala.inline
-  implicit class NavigatorAutomationInformationMutableBuilder[Self <: NavigatorAutomationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorAutomationInformation](x: Self) {
     
-    @scala.inline
-    def setWebdriver(value: scala.Boolean): Self = StObject.set(x, "webdriver", value.asInstanceOf[js.Any])
+    inline def setWebdriver(value: scala.Boolean): Self = StObject.set(x, "webdriver", value.asInstanceOf[js.Any])
   }
 }

@@ -20,20 +20,16 @@ trait DeclareFunction_
 }
 object DeclareFunction_ {
   
-  @scala.inline
-  def apply(end: Double, id: Identifier_, loc: SourceLocation, start: Double): DeclareFunction_ = {
+  inline def apply(end: Double, id: Identifier_, loc: SourceLocation, start: Double): DeclareFunction_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclareFunction")
     __obj.asInstanceOf[DeclareFunction_]
   }
   
-  @scala.inline
-  implicit class DeclareFunction_MutableBuilder[Self <: DeclareFunction_] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareFunction_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DeclareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclareFunction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

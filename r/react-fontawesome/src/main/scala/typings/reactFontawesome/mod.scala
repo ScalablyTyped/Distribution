@@ -23,11 +23,9 @@ object mod {
   trait FontAwesomeFlip extends StObject
   object FontAwesomeFlip {
     
-    @scala.inline
-    def horizontal: typings.reactFontawesome.reactFontawesomeStrings.horizontal = "horizontal".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.horizontal]
+    inline def horizontal: typings.reactFontawesome.reactFontawesomeStrings.horizontal = "horizontal".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.horizontal]
     
-    @scala.inline
-    def vertical: typings.reactFontawesome.reactFontawesomeStrings.vertical = "vertical".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.vertical]
+    inline def vertical: typings.reactFontawesome.reactFontawesomeStrings.vertical = "vertical".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.vertical]
   }
   
   trait FontAwesomeProps
@@ -64,89 +62,62 @@ object mod {
   }
   object FontAwesomeProps {
     
-    @scala.inline
-    def apply(name: String): FontAwesomeProps = {
+    inline def apply(name: String): FontAwesomeProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontAwesomeProps]
     }
     
-    @scala.inline
-    implicit class FontAwesomePropsMutableBuilder[Self <: FontAwesomeProps] (val x: Self) extends AnyVal {
+    extension [Self <: FontAwesomeProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setCssModule(value: js.Any): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: js.Any): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
+      inline def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
+      inline def setFixedWidthUndefined: Self = StObject.set(x, "fixedWidth", js.undefined)
       
-      @scala.inline
-      def setFlip(value: FontAwesomeFlip): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: FontAwesomeFlip): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
+      inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
+      inline def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulse(value: Boolean): Self = StObject.set(x, "pulse", value.asInstanceOf[js.Any])
+      inline def setPulse(value: Boolean): Self = StObject.set(x, "pulse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
+      inline def setPulseUndefined: Self = StObject.set(x, "pulse", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setSize(value: FontAwesomeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: FontAwesomeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
+      inline def setSpin(value: Boolean): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
+      inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
       
-      @scala.inline
-      def setStack(value: FontAwesomeStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: FontAwesomeStack): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
@@ -160,20 +131,15 @@ object mod {
   trait FontAwesomeSize extends StObject
   object FontAwesomeSize {
     
-    @scala.inline
-    def `2x`: typings.reactFontawesome.reactFontawesomeStrings.`2x` = "2x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`2x`]
+    inline def `2x`: typings.reactFontawesome.reactFontawesomeStrings.`2x` = "2x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`2x`]
     
-    @scala.inline
-    def `3x`: typings.reactFontawesome.reactFontawesomeStrings.`3x` = "3x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`3x`]
+    inline def `3x`: typings.reactFontawesome.reactFontawesomeStrings.`3x` = "3x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`3x`]
     
-    @scala.inline
-    def `4x`: typings.reactFontawesome.reactFontawesomeStrings.`4x` = "4x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`4x`]
+    inline def `4x`: typings.reactFontawesome.reactFontawesomeStrings.`4x` = "4x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`4x`]
     
-    @scala.inline
-    def `5x`: typings.reactFontawesome.reactFontawesomeStrings.`5x` = "5x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`5x`]
+    inline def `5x`: typings.reactFontawesome.reactFontawesomeStrings.`5x` = "5x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`5x`]
     
-    @scala.inline
-    def lg: typings.reactFontawesome.reactFontawesomeStrings.lg = "lg".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.lg]
+    inline def lg: typings.reactFontawesome.reactFontawesomeStrings.lg = "lg".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.lg]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -183,11 +149,9 @@ object mod {
   trait FontAwesomeStack extends StObject
   object FontAwesomeStack {
     
-    @scala.inline
-    def `1x`: typings.reactFontawesome.reactFontawesomeStrings.`1x` = "1x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`1x`]
+    inline def `1x`: typings.reactFontawesome.reactFontawesomeStrings.`1x` = "1x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`1x`]
     
-    @scala.inline
-    def `2x`: typings.reactFontawesome.reactFontawesomeStrings.`2x` = "2x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`2x`]
+    inline def `2x`: typings.reactFontawesome.reactFontawesomeStrings.`2x` = "2x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`2x`]
   }
   
   trait Intermediate
@@ -199,20 +163,16 @@ object mod {
   }
   object Intermediate {
     
-    @scala.inline
-    def apply(): Intermediate = {
+    inline def apply(): Intermediate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Intermediate]
     }
     
-    @scala.inline
-    implicit class IntermediateMutableBuilder[Self <: Intermediate] (val x: Self) extends AnyVal {
+    extension [Self <: Intermediate](x: Self) {
       
-      @scala.inline
-      def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

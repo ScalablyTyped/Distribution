@@ -29,31 +29,23 @@ trait ParamsResourceGroupsAliasesInsert
 }
 object ParamsResourceGroupsAliasesInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceGroupsAliasesInsert = {
+  inline def apply(): ParamsResourceGroupsAliasesInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceGroupsAliasesInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceGroupsAliasesInsertMutableBuilder[Self <: ParamsResourceGroupsAliasesInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceGroupsAliasesInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
+    inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
+    inline def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaAlias): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaAlias): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -13,29 +13,29 @@ class SyntaxTreeCache protected ()
      with typings.typescriptServices.TypeScript.Services.SyntaxTreeCache {
   def this(_host: ILanguageServiceHost) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _currentFileName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _currentFileScriptSnapshot: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _currentFileSyntaxTree: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _currentFileVersion: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _host: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _hostCache: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def createSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def createSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def ensureInvariants(
+  /* private */ /* CompleteClass */
+  override def ensureInvariants(
     fileName: js.Any,
     editRange: js.Any,
     incrementalTree: js.Any,
@@ -46,6 +46,6 @@ class SyntaxTreeCache protected ()
   /* CompleteClass */
   override def getCurrentFileSyntaxTree(fileName: String): SyntaxTree = js.native
   
-  /* CompleteClass */
-  /* private */ override def updateSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any, previousSyntaxTree: js.Any, previousFileVersion: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def updateSyntaxTree(fileName: js.Any, scriptSnapshot: js.Any, previousSyntaxTree: js.Any, previousFileVersion: js.Any): js.Any = js.native
 }

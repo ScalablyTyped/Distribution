@@ -11,16 +11,13 @@ trait Scale extends StObject {
 }
 object Scale {
   
-  @scala.inline
-  def apply(scale: MediaImageScaling): Scale = {
+  inline def apply(scale: MediaImageScaling): Scale = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scale]
   }
   
-  @scala.inline
-  implicit class ScaleMutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
+  extension [Self <: Scale](x: Self) {
     
-    @scala.inline
-    def setScale(value: MediaImageScaling): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: MediaImageScaling): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

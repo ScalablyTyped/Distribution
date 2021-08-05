@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSortMethodOld extends StObject
 object XlSortMethodOld {
   
-  @scala.inline
-  def xlCodePage: `2` = 2.asInstanceOf[`2`]
+  inline def xlCodePage: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlSyllabary: `1` = 1.asInstanceOf[`1`]
+  inline def xlSyllabary: `1` = 1.asInstanceOf[`1`]
 }

@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
-  @scala.inline
-  def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-xlsx", JSImport.Namespace)
   @js.native
@@ -28,23 +26,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(addBufferSize: Double, escapeAmp: Boolean, numberOfParsedAddIterations: Double): Options = {
+    inline def apply(addBufferSize: Double, escapeAmp: Boolean, numberOfParsedAddIterations: Double): Options = {
       val __obj = js.Dynamic.literal(addBufferSize = addBufferSize.asInstanceOf[js.Any], escapeAmp = escapeAmp.asInstanceOf[js.Any], numberOfParsedAddIterations = numberOfParsedAddIterations.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAddBufferSize(value: Double): Self = StObject.set(x, "addBufferSize", value.asInstanceOf[js.Any])
+      inline def setAddBufferSize(value: Double): Self = StObject.set(x, "addBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeAmp(value: Boolean): Self = StObject.set(x, "escapeAmp", value.asInstanceOf[js.Any])
+      inline def setEscapeAmp(value: Boolean): Self = StObject.set(x, "escapeAmp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfParsedAddIterations(value: Double): Self = StObject.set(x, "numberOfParsedAddIterations", value.asInstanceOf[js.Any])
+      inline def setNumberOfParsedAddIterations(value: Double): Self = StObject.set(x, "numberOfParsedAddIterations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,17 +47,14 @@ object mod {
   }
   object Xlsx {
     
-    @scala.inline
-    def apply(shortid: String): Xlsx = {
+    inline def apply(shortid: String): Xlsx = {
       val __obj = js.Dynamic.literal(shortid = shortid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Xlsx]
     }
     
-    @scala.inline
-    implicit class XlsxMutableBuilder[Self <: Xlsx] (val x: Self) extends AnyVal {
+    extension [Self <: Xlsx](x: Self) {
       
-      @scala.inline
-      def setShortid(value: String): Self = StObject.set(x, "shortid", value.asInstanceOf[js.Any])
+      inline def setShortid(value: String): Self = StObject.set(x, "shortid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,17 +67,14 @@ object mod {
     }
     object Template {
       
-      @scala.inline
-      def apply(recipe: xlsx | String): Template = {
+      inline def apply(recipe: xlsx | String): Template = {
         val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
         __obj.asInstanceOf[Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+      extension [Self <: Template](x: Self) {
         
-        @scala.inline
-        def setRecipe(value: xlsx | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setRecipe(value: xlsx | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
       }
     }
   }

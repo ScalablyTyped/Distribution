@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlWindowState extends StObject
 object OlWindowState {
   
-  @scala.inline
-  def olMaximized: `0` = 0.asInstanceOf[`0`]
+  inline def olMaximized: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olMinimized: `1` = 1.asInstanceOf[`1`]
+  inline def olMinimized: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olNormalWindow: `2` = 2.asInstanceOf[`2`]
+  inline def olNormalWindow: `2` = 2.asInstanceOf[`2`]
 }

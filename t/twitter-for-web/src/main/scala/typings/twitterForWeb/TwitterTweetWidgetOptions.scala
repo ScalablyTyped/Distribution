@@ -50,49 +50,35 @@ trait TwitterTweetWidgetOptions
 }
 object TwitterTweetWidgetOptions {
   
-  @scala.inline
-  def apply(): TwitterTweetWidgetOptions = {
+  inline def apply(): TwitterTweetWidgetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TwitterTweetWidgetOptions]
   }
   
-  @scala.inline
-  implicit class TwitterTweetWidgetOptionsMutableBuilder[Self <: TwitterTweetWidgetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterTweetWidgetOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setCards(value: hidden | visible): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
+    inline def setCards(value: hidden | visible): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
+    inline def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
     
-    @scala.inline
-    def setConversation(value: none | all): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
+    inline def setConversation(value: none | all): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationUndefined: Self = StObject.set(x, "conversation", js.undefined)
+    inline def setConversationUndefined: Self = StObject.set(x, "conversation", js.undefined)
     
-    @scala.inline
-    def setLinkColor(value: String): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
+    inline def setLinkColor(value: String): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkColorUndefined: Self = StObject.set(x, "linkColor", js.undefined)
+    inline def setLinkColorUndefined: Self = StObject.set(x, "linkColor", js.undefined)
     
-    @scala.inline
-    def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

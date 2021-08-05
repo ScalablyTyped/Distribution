@@ -9,8 +9,7 @@ trait XmlLoadSettings
      with IXmlLoadSettings
 object XmlLoadSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elementContentWhiteSpace: Boolean,
     maxElementDepth: Double,
     prohibitDtd: Boolean,

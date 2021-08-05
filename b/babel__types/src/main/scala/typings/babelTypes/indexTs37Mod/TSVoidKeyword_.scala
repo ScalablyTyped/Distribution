@@ -17,17 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSVoidKeyword_ {
   
-  @scala.inline
-  def apply(): TSVoidKeyword_ = {
+  inline def apply(): TSVoidKeyword_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSVoidKeyword")
     __obj.asInstanceOf[TSVoidKeyword_]
   }
   
-  @scala.inline
-  implicit class TSVoidKeyword_MutableBuilder[Self <: TSVoidKeyword_] (val x: Self) extends AnyVal {
+  extension [Self <: TSVoidKeyword_](x: Self) {
     
-    @scala.inline
-    def setType(value: TSVoidKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSVoidKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

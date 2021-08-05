@@ -14,16 +14,13 @@ trait SetSamplingIntervalRequest extends StObject {
 }
 object SetSamplingIntervalRequest {
   
-  @scala.inline
-  def apply(interval: integer): SetSamplingIntervalRequest = {
+  inline def apply(interval: integer): SetSamplingIntervalRequest = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSamplingIntervalRequest]
   }
   
-  @scala.inline
-  implicit class SetSamplingIntervalRequestMutableBuilder[Self <: SetSamplingIntervalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetSamplingIntervalRequest](x: Self) {
     
-    @scala.inline
-    def setInterval(value: integer): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: integer): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }
 }

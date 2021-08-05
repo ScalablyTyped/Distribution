@@ -27,8 +27,7 @@ object composerHeaderUniDriverMod {
   }
   object ComposerHeaderUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actionsExists: String => js.Promise[Boolean],
       backButtonExists: () => js.Promise[Boolean],
       click: () => js.Promise[Unit],
@@ -44,29 +43,21 @@ object composerHeaderUniDriverMod {
       __obj.asInstanceOf[ComposerHeaderUniDriver]
     }
     
-    @scala.inline
-    implicit class ComposerHeaderUniDriverMutableBuilder[Self <: ComposerHeaderUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ComposerHeaderUniDriver](x: Self) {
       
-      @scala.inline
-      def setActionsExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "actionsExists", js.Any.fromFunction1(value))
+      inline def setActionsExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "actionsExists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "backButtonExists", js.Any.fromFunction0(value))
+      inline def setBackButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "backButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickBack(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickBack", js.Any.fromFunction0(value))
+      inline def setClickBack(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickBack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBackButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getBackButtonText", js.Any.fromFunction0(value))
+      inline def setGetBackButtonText(value: () => js.Promise[String]): Self = StObject.set(x, "getBackButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSaveStatusValue(value: String => js.Promise[String]): Self = StObject.set(x, "getSaveStatusValue", js.Any.fromFunction1(value))
+      inline def setGetSaveStatusValue(value: String => js.Promise[String]): Self = StObject.set(x, "getSaveStatusValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMainActionsExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "mainActionsExists", js.Any.fromFunction1(value))
+      inline def setMainActionsExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "mainActionsExists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSaveStatusExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "saveStatusExists", js.Any.fromFunction1(value))
+      inline def setSaveStatusExists(value: String => js.Promise[Boolean]): Self = StObject.set(x, "saveStatusExists", js.Any.fromFunction1(value))
     }
   }
 }

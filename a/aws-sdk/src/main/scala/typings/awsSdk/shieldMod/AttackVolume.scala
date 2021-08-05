@@ -23,31 +23,23 @@ trait AttackVolume extends StObject {
 }
 object AttackVolume {
   
-  @scala.inline
-  def apply(): AttackVolume = {
+  inline def apply(): AttackVolume = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttackVolume]
   }
   
-  @scala.inline
-  implicit class AttackVolumeMutableBuilder[Self <: AttackVolume] (val x: Self) extends AnyVal {
+  extension [Self <: AttackVolume](x: Self) {
     
-    @scala.inline
-    def setBitsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "BitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setBitsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "BitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitsPerSecondUndefined: Self = StObject.set(x, "BitsPerSecond", js.undefined)
+    inline def setBitsPerSecondUndefined: Self = StObject.set(x, "BitsPerSecond", js.undefined)
     
-    @scala.inline
-    def setPacketsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "PacketsPerSecond", value.asInstanceOf[js.Any])
+    inline def setPacketsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "PacketsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketsPerSecondUndefined: Self = StObject.set(x, "PacketsPerSecond", js.undefined)
+    inline def setPacketsPerSecondUndefined: Self = StObject.set(x, "PacketsPerSecond", js.undefined)
     
-    @scala.inline
-    def setRequestsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "RequestsPerSecond", value.asInstanceOf[js.Any])
+    inline def setRequestsPerSecond(value: AttackVolumeStatistics): Self = StObject.set(x, "RequestsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsPerSecondUndefined: Self = StObject.set(x, "RequestsPerSecond", js.undefined)
+    inline def setRequestsPerSecondUndefined: Self = StObject.set(x, "RequestsPerSecond", js.undefined)
   }
 }

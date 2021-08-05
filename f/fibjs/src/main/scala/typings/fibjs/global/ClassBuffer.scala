@@ -101,18 +101,12 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def alloc(size: Double): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def alloc(size: Double, fill: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def alloc(size: Double, fill: String, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def alloc(size: Double, fill: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def alloc(size: Double, fill: Double, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def alloc(size: Double, fill: Unit, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double, fill: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double, fill: String, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double, fill: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double, fill: Double, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double, fill: Unit, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
   /**
     * 
     * @brief 分配一个指定长度的新缓存区。如果大小为0，将创建一个零长度的缓存区。
@@ -125,10 +119,8 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def alloc(size: Double, fill: typings.fibjs.ClassBuffer): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def alloc(size: Double, fill: typings.fibjs.ClassBuffer, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double, fill: typings.fibjs.ClassBuffer): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def alloc(size: Double, fill: typings.fibjs.ClassBuffer, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], fill.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
   
   /**
     * 
@@ -140,8 +132,7 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def allocUnsafe(size: Double): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUnsafe")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def allocUnsafe(size: Double): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUnsafe")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
   
   /**
     * 
@@ -153,8 +144,7 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def allocUnsafeSlow(size: Double): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUnsafeSlow")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def allocUnsafeSlow(size: Double): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocUnsafeSlow")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
   
   /**
     * 
@@ -167,10 +157,8 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def byteLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def byteLength(str: String, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byteLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byteLength(str: String, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
   /**
     * 
     * @brief 返回字符串的实际字节长度
@@ -182,10 +170,8 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def byteLength(str: typings.fibjs.ClassBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def byteLength(str: typings.fibjs.ClassBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byteLength(str: typings.fibjs.ClassBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byteLength(str: typings.fibjs.ClassBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
   /**
     * 
     * @brief 返回字符串的实际字节长度
@@ -197,8 +183,7 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def byteLength(str: ArrayBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byteLength(str: ArrayBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   /**
     * 
     * @brief 返回字符串的实际字节长度
@@ -210,12 +195,9 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def byteLength(str: ArrayBufferView): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def byteLength(str: ArrayBufferView, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def byteLength(str: ArrayBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byteLength(str: ArrayBufferView): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byteLength(str: ArrayBufferView, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byteLength(str: ArrayBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * 
@@ -228,10 +210,8 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def concat(buflist: js.Array[js.Any]): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def concat(buflist: js.Array[js.Any], cutLength: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any], cutLength.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def concat(buflist: js.Array[js.Any]): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def concat(buflist: js.Array[js.Any], cutLength: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any], cutLength.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
   
   /**
     * 
@@ -245,14 +225,10 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def from(buffer: typings.fibjs.ClassBuffer): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def from(buffer: typings.fibjs.ClassBuffer, byteOffset: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def from(buffer: typings.fibjs.ClassBuffer, byteOffset: Double, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def from(buffer: typings.fibjs.ClassBuffer, byteOffset: Unit, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(buffer: typings.fibjs.ClassBuffer): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(buffer: typings.fibjs.ClassBuffer, byteOffset: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(buffer: typings.fibjs.ClassBuffer, byteOffset: Double, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(buffer: typings.fibjs.ClassBuffer, byteOffset: Unit, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(buffer.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
   /**
     * 
     * @brief 通过字符串创建 Buffer 对象
@@ -275,16 +251,11 @@ object ClassBuffer {
     * 
     * 
     */
-  @scala.inline
-  def from(str: String): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def from(str: String, byteOffset: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def from(str: String, byteOffset: Double, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def from(str: String, byteOffset: Unit, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
-  @scala.inline
-  def from(str: String, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(str: String): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(str: String, byteOffset: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(str: String, byteOffset: Double, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(str: String, byteOffset: Unit, length: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], byteOffset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def from(str: String, codec: String): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
   
   /**
     * 
@@ -296,8 +267,7 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def isBuffer(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBuffer(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * 
@@ -309,6 +279,5 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  @scala.inline
-  def isEncoding(codec: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncoding")(codec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEncoding(codec: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEncoding")(codec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

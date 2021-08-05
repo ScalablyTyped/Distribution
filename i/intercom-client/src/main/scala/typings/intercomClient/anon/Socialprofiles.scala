@@ -14,23 +14,18 @@ trait Socialprofiles extends StObject {
 }
 object Socialprofiles {
   
-  @scala.inline
-  def apply(social_profiles: js.Array[SocialProfile]): Socialprofiles = {
+  inline def apply(social_profiles: js.Array[SocialProfile]): Socialprofiles = {
     val __obj = js.Dynamic.literal(social_profiles = social_profiles.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("social_profile.list")
     __obj.asInstanceOf[Socialprofiles]
   }
   
-  @scala.inline
-  implicit class SocialprofilesMutableBuilder[Self <: Socialprofiles] (val x: Self) extends AnyVal {
+  extension [Self <: Socialprofiles](x: Self) {
     
-    @scala.inline
-    def setSocial_profiles(value: js.Array[SocialProfile]): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
+    inline def setSocial_profiles(value: js.Array[SocialProfile]): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value :_*))
+    inline def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: social_profileDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: social_profileDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

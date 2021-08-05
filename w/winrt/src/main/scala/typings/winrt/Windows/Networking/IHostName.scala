@@ -21,8 +21,7 @@ trait IHostName extends StObject {
 }
 object IHostName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canonicalName: String,
     displayName: String,
     iPInformation: IPInformation,
@@ -35,25 +34,18 @@ object IHostName {
     __obj.asInstanceOf[IHostName]
   }
   
-  @scala.inline
-  implicit class IHostNameMutableBuilder[Self <: IHostName] (val x: Self) extends AnyVal {
+  extension [Self <: IHostName](x: Self) {
     
-    @scala.inline
-    def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
+    inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPInformation(value: IPInformation): Self = StObject.set(x, "iPInformation", value.asInstanceOf[js.Any])
+    inline def setIPInformation(value: IPInformation): Self = StObject.set(x, "iPInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEqual(value: HostName => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: HostName => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
+    inline def setRawName(value: String): Self = StObject.set(x, "rawName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: HostNameType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: HostNameType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

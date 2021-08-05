@@ -45,55 +45,39 @@ trait PNotifyButtons extends StObject {
 }
 object PNotifyButtons {
   
-  @scala.inline
-  def apply(): PNotifyButtons = {
+  inline def apply(): PNotifyButtons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PNotifyButtons]
   }
   
-  @scala.inline
-  implicit class PNotifyButtonsMutableBuilder[Self <: PNotifyButtons] (val x: Self) extends AnyVal {
+  extension [Self <: PNotifyButtons](x: Self) {
     
-    @scala.inline
-    def setClasses(value: Closer): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: Closer): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setCloser(value: Boolean): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
+    inline def setCloser(value: Boolean): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
+    inline def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
     
-    @scala.inline
-    def setCloser_hover(value: Boolean): Self = StObject.set(x, "closer_hover", value.asInstanceOf[js.Any])
+    inline def setCloser_hover(value: Boolean): Self = StObject.set(x, "closer_hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloser_hoverUndefined: Self = StObject.set(x, "closer_hover", js.undefined)
+    inline def setCloser_hoverUndefined: Self = StObject.set(x, "closer_hover", js.undefined)
     
-    @scala.inline
-    def setLabels(value: Close): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Close): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setShow_on_nonblock(value: Boolean): Self = StObject.set(x, "show_on_nonblock", value.asInstanceOf[js.Any])
+    inline def setShow_on_nonblock(value: Boolean): Self = StObject.set(x, "show_on_nonblock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_on_nonblockUndefined: Self = StObject.set(x, "show_on_nonblock", js.undefined)
+    inline def setShow_on_nonblockUndefined: Self = StObject.set(x, "show_on_nonblock", js.undefined)
     
-    @scala.inline
-    def setSticker(value: Boolean): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
+    inline def setSticker(value: Boolean): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickerUndefined: Self = StObject.set(x, "sticker", js.undefined)
+    inline def setStickerUndefined: Self = StObject.set(x, "sticker", js.undefined)
     
-    @scala.inline
-    def setSticker_hover(value: Boolean): Self = StObject.set(x, "sticker_hover", value.asInstanceOf[js.Any])
+    inline def setSticker_hover(value: Boolean): Self = StObject.set(x, "sticker_hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSticker_hoverUndefined: Self = StObject.set(x, "sticker_hover", js.undefined)
+    inline def setSticker_hoverUndefined: Self = StObject.set(x, "sticker_hover", js.undefined)
   }
 }

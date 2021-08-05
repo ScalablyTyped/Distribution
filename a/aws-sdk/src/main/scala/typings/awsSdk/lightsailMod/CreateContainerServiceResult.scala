@@ -13,19 +13,15 @@ trait CreateContainerServiceResult extends StObject {
 }
 object CreateContainerServiceResult {
   
-  @scala.inline
-  def apply(): CreateContainerServiceResult = {
+  inline def apply(): CreateContainerServiceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateContainerServiceResult]
   }
   
-  @scala.inline
-  implicit class CreateContainerServiceResultMutableBuilder[Self <: CreateContainerServiceResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateContainerServiceResult](x: Self) {
     
-    @scala.inline
-    def setContainerService(value: ContainerService): Self = StObject.set(x, "containerService", value.asInstanceOf[js.Any])
+    inline def setContainerService(value: ContainerService): Self = StObject.set(x, "containerService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerServiceUndefined: Self = StObject.set(x, "containerService", js.undefined)
+    inline def setContainerServiceUndefined: Self = StObject.set(x, "containerService", js.undefined)
   }
 }

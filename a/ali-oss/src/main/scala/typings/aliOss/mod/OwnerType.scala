@@ -12,19 +12,15 @@ trait OwnerType extends StObject {
 }
 object OwnerType {
   
-  @scala.inline
-  def apply(displayName: String, id: String): OwnerType = {
+  inline def apply(displayName: String, id: String): OwnerType = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerType]
   }
   
-  @scala.inline
-  implicit class OwnerTypeMutableBuilder[Self <: OwnerType] (val x: Self) extends AnyVal {
+  extension [Self <: OwnerType](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

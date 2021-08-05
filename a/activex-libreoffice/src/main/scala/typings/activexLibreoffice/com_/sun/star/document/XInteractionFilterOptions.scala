@@ -37,8 +37,7 @@ trait XInteractionFilterOptions
 }
 object XInteractionFilterOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FilterOptions: SafeArray[PropertyValue],
     acquire: () => Unit,
     getFilterOptions: () => SafeArray[PropertyValue],
@@ -51,16 +50,12 @@ object XInteractionFilterOptions {
     __obj.asInstanceOf[XInteractionFilterOptions]
   }
   
-  @scala.inline
-  implicit class XInteractionFilterOptionsMutableBuilder[Self <: XInteractionFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionFilterOptions](x: Self) {
     
-    @scala.inline
-    def setFilterOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
+    inline def setFilterOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFilterOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getFilterOptions", js.Any.fromFunction0(value))
+    inline def setGetFilterOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getFilterOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFilterOptions(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setFilterOptions", js.Any.fromFunction1(value))
+    inline def setSetFilterOptions(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setFilterOptions", js.Any.fromFunction1(value))
   }
 }

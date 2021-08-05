@@ -18,25 +18,19 @@ trait StreamFile extends StObject {
 }
 object StreamFile {
   
-  @scala.inline
-  def apply(): StreamFile = {
+  inline def apply(): StreamFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamFile]
   }
   
-  @scala.inline
-  implicit class StreamFileMutableBuilder[Self <: StreamFile] (val x: Self) extends AnyVal {
+  extension [Self <: StreamFile](x: Self) {
     
-    @scala.inline
-    def setFileId(value: FileId): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: FileId): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
   }
 }

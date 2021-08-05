@@ -8,11 +8,9 @@ object markoStrings {
   
   @js.native
   sealed trait html extends StObject
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait vdom extends StObject
-  @scala.inline
-  def vdom: vdom = "vdom".asInstanceOf[vdom]
+  inline def vdom: vdom = "vdom".asInstanceOf[vdom]
 }

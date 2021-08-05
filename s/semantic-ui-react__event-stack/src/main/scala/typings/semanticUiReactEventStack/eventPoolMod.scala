@@ -24,8 +24,7 @@ object eventPoolMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createByType(poolName: String, eventType: String, eventHandlers: js.Array[CallableEventListener]): EventPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createByType")(poolName.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventHandlers.asInstanceOf[js.Any])).asInstanceOf[EventPool]
+    inline def createByType(poolName: String, eventType: String, eventHandlers: js.Array[CallableEventListener]): EventPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createByType")(poolName.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventHandlers.asInstanceOf[js.Any])).asInstanceOf[EventPool]
   }
   
   @js.native
@@ -35,12 +34,12 @@ object eventPoolMod {
     
     def dispatchEvent(eventType: String, event: Event): Unit = js.native
     
-    val handlerSets: js.Any = js.native
+    /* private */ val handlerSets: js.Any = js.native
     
     def hasHandlers(): Boolean = js.native
     def hasHandlers(eventType: String): Boolean = js.native
     
-    val poolName: js.Any = js.native
+    /* private */ val poolName: js.Any = js.native
     
     def removeHandlers(eventType: String, eventHandlers: EventListeners): EventPool = js.native
   }

@@ -13,16 +13,13 @@ trait DeleteRoleRequest extends StObject {
 }
 object DeleteRoleRequest {
   
-  @scala.inline
-  def apply(RoleName: roleNameType): DeleteRoleRequest = {
+  inline def apply(RoleName: roleNameType): DeleteRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRoleRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRoleRequestMutableBuilder[Self <: DeleteRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRoleRequest](x: Self) {
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
   }
 }

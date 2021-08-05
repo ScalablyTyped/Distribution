@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[P](arg: Async): js.Function1[/* BaseComponent */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* BaseComponent */ ComponentType[P], ComponentType[P]]]
-  @scala.inline
-  def apply[P](arg: ComponentType[P]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
+  inline def apply[P](arg: Async): js.Function1[/* BaseComponent */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* BaseComponent */ ComponentType[P], ComponentType[P]]]
+  inline def apply[P](arg: ComponentType[P]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
   
   @JSImport("next-redux-saga", JSImport.Namespace)
   @js.native

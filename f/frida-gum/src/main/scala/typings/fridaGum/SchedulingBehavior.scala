@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchedulingBehavior extends StObject
 object SchedulingBehavior {
   
-  @scala.inline
-  def cooperative: typings.fridaGum.fridaGumStrings.cooperative = "cooperative".asInstanceOf[typings.fridaGum.fridaGumStrings.cooperative]
+  inline def cooperative: typings.fridaGum.fridaGumStrings.cooperative = "cooperative".asInstanceOf[typings.fridaGum.fridaGumStrings.cooperative]
   
-  @scala.inline
-  def exclusive: typings.fridaGum.fridaGumStrings.exclusive = "exclusive".asInstanceOf[typings.fridaGum.fridaGumStrings.exclusive]
+  inline def exclusive: typings.fridaGum.fridaGumStrings.exclusive = "exclusive".asInstanceOf[typings.fridaGum.fridaGumStrings.exclusive]
 }

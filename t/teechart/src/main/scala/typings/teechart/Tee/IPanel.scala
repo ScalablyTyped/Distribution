@@ -14,22 +14,17 @@ trait IPanel extends StObject {
 }
 object IPanel {
   
-  @scala.inline
-  def apply(format: IFormat, margins: IMargins, transparent: Boolean): IPanel = {
+  inline def apply(format: IFormat, margins: IMargins, transparent: Boolean): IPanel = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanel]
   }
   
-  @scala.inline
-  implicit class IPanelMutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
+  extension [Self <: IPanel](x: Self) {
     
-    @scala.inline
-    def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargins(value: IMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+    inline def setMargins(value: IMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
   }
 }

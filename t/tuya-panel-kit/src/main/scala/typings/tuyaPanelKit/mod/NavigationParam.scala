@@ -13,28 +13,21 @@ trait NavigationParam extends StObject {
 }
 object NavigationParam {
   
-  @scala.inline
-  def apply(router: js.Array[NavigationRoute]): NavigationParam = {
+  inline def apply(router: js.Array[NavigationRoute]): NavigationParam = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationParam]
   }
   
-  @scala.inline
-  implicit class NavigationParamMutableBuilder[Self <: NavigationParam] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationParam](x: Self) {
     
-    @scala.inline
-    def setRouter(value: js.Array[NavigationRoute]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: js.Array[NavigationRoute]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouterVarargs(value: NavigationRoute*): Self = StObject.set(x, "router", js.Array(value :_*))
+    inline def setRouterVarargs(value: NavigationRoute*): Self = StObject.set(x, "router", js.Array(value :_*))
     
-    @scala.inline
-    def setScreenOptions(value: ScreenOptions): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
+    inline def setScreenOptions(value: ScreenOptions): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenOptionsFunction1(value: /* props */ typings.tuyaPanelKit.anon.NavigationRoute => StackNavigationOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
+    inline def setScreenOptionsFunction1(value: /* props */ typings.tuyaPanelKit.anon.NavigationRoute => StackNavigationOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)
+    inline def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)
   }
 }

@@ -5,20 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def API: typings.nodal.mod.APIConstructor = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("API").asInstanceOf[typings.nodal.mod.APIConstructor]
+inline def API: typings.nodal.mod.APIConstructor = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("API").asInstanceOf[typings.nodal.mod.APIConstructor]
 
-@scala.inline
-def APIResource: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APIResource").asInstanceOf[js.Any]
+inline def APIResource: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APIResource").asInstanceOf[js.Any]
 
-@scala.inline
-def CLI: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CLI").asInstanceOf[js.Any]
+inline def CLI: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CLI").asInstanceOf[js.Any]
 
-@scala.inline
-def mime: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("mime").asInstanceOf[js.Any]
+inline def mime: js.Any = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("mime").asInstanceOf[js.Any]
 
-@scala.inline
-def require: typings.node.NodeRequire = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("require").asInstanceOf[typings.node.NodeRequire]
+inline def require: typings.node.NodeRequire = typings.nodal.mod.^.asInstanceOf[js.Dynamic].selectDynamic("require").asInstanceOf[typings.node.NodeRequire]
 
 type IAnyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
 

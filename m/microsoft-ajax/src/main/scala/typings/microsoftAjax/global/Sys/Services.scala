@@ -75,8 +75,7 @@ object Services {
     @JSGlobal("Sys.Services.ProfileService.DefaultWebServicePath")
     @js.native
     def DefaultWebServicePath: String = js.native
-    @scala.inline
-    def DefaultWebServicePath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultWebServicePath")(x.asInstanceOf[js.Any])
+    inline def DefaultWebServicePath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultWebServicePath")(x.asInstanceOf[js.Any])
     
     /**
       * Gets or sets the default succeeded callback function for the service.
@@ -84,11 +83,9 @@ object Services {
       *      A reference to the succeeded callback function for the service.
       */
     /* static member */
-    @scala.inline
-    def defaultSucceededCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSucceededCallback")().asInstanceOf[js.Function]
+    inline def defaultSucceededCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSucceededCallback")().asInstanceOf[js.Function]
     /* static member */
-    @scala.inline
-    def defaultSucceededCallback(value: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSucceededCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def defaultSucceededCallback(value: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSucceededCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the default user context for the service.
@@ -96,26 +93,21 @@ object Services {
       *      A reference to the user context for the service.
       */
     /* static member */
-    @scala.inline
-    def defaultUserContext(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserContext")().asInstanceOf[js.Object]
+    inline def defaultUserContext(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserContext")().asInstanceOf[js.Object]
     /**
       * Gets or sets the default user context for the service.
       */
     /* static member */
-    @scala.inline
-    def defaultUserContext(value: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserContext")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def defaultUserContext(value: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserContext")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def getDefaultFailedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultFailedCallback")().asInstanceOf[js.Function]
+    inline def getDefaultFailedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultFailedCallback")().asInstanceOf[js.Function]
     
     /* static member */
-    @scala.inline
-    def getDefaultLoadCompletedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultLoadCompletedCallback")().asInstanceOf[js.Function]
+    inline def getDefaultLoadCompletedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultLoadCompletedCallback")().asInstanceOf[js.Function]
     
     /* static member */
-    @scala.inline
-    def getDefaultSaveCompletedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultSaveCompletedCallback")().asInstanceOf[js.Function]
+    inline def getDefaultSaveCompletedCallback(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("get_defaultSaveCompletedCallback")().asInstanceOf[js.Function]
     
     /**
       * Gets or sets the profile service path.
@@ -123,15 +115,13 @@ object Services {
       *      The profile path
       */
     /* static member */
-    @scala.inline
-    def getPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_path")().asInstanceOf[String]
+    inline def getPath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get_path")().asInstanceOf[String]
     
     /**
       * Gets or sets the profile service time-out value.
       */
     /* static member */
-    @scala.inline
-    def getTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_timeout")().asInstanceOf[Double]
+    inline def getTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_timeout")().asInstanceOf[Double]
     
     //#endregion
     //#region Methods
@@ -154,8 +144,7 @@ object Services {
       *      User context information passed to the callback functions.
       */
     /* static member */
-    @scala.inline
-    def load(
+    inline def load(
       propertyNames: js.Array[String],
       loadCompletedCallback: js.Function,
       failedCallback: js.Function,
@@ -170,8 +159,7 @@ object Services {
     @JSGlobal("Sys.Services.ProfileService.properties")
     @js.native
     def properties: js.Any = js.native
-    @scala.inline
-    def properties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
+    inline def properties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("properties")(x.asInstanceOf[js.Any])
     
     /**
       * @param propertyNames
@@ -184,8 +172,7 @@ object Services {
       *      User context information passed to the callback functions.
       */
     /* static member */
-    @scala.inline
-    def save(
+    inline def save(
       propertyNames: js.Array[String],
       saveCompletedCallback: js.Function,
       failedCallback: js.Function,
@@ -200,8 +187,7 @@ object Services {
       *      A string that contains the name of the default failure callback function.
       */
     /* static member */
-    @scala.inline
-    def setDefaultFailedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultFailedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaultFailedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultFailedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the name of the default load-completed callback function.
@@ -210,8 +196,7 @@ object Services {
       *      A string that contains the name of the default load-completed callback function.
       */
     /* static member */
-    @scala.inline
-    def setDefaultLoadCompletedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultLoadCompletedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaultLoadCompletedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultLoadCompletedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the name of the default save-completed callback function.
@@ -219,8 +204,7 @@ object Services {
       *      A string that contains the name of the default save-completed callback function.
       */
     /* static member */
-    @scala.inline
-    def setDefaultSaveCompletedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultSaveCompletedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaultSaveCompletedCallback(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_defaultSaveCompletedCallback")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the profile service path.
@@ -228,8 +212,7 @@ object Services {
       *          A string that contains the profile service path.
       */
     /* static member */
-    @scala.inline
-    def setPath(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_path")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setPath(value: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_path")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gets or sets the profile service time-out value.
@@ -240,8 +223,7 @@ object Services {
       *          The time-out value in milliseconds.
       */
     /* static member */
-    @scala.inline
-    def setTimeout(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_timeout")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setTimeout(value: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_timeout")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**

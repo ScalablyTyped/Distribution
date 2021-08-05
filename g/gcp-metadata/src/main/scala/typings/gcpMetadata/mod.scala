@@ -40,28 +40,19 @@ object mod {
   @js.native
   val SECONDARY_HOST_ADDRESS: /* "http://metadata.google.internal." */ String = js.native
   
-  @scala.inline
-  def instance[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def instance[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def instance[T](options: Options): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def instance[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[js.Promise[T]]
+  inline def instance[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def instance[T](options: Options): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def isAvailable(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[js.Promise[Boolean]]
+  inline def isAvailable(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def project[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")().asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def project[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def project[T](options: Options): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def project[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")().asInstanceOf[js.Promise[T]]
+  inline def project[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def project[T](options: Options): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def requestTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")().asInstanceOf[Double]
+  inline def requestTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")().asInstanceOf[Double]
   
-  @scala.inline
-  def resetIsAvailableCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIsAvailableCache")().asInstanceOf[Unit]
+  inline def resetIsAvailableCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIsAvailableCache")().asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -73,32 +64,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     }
   }
 }

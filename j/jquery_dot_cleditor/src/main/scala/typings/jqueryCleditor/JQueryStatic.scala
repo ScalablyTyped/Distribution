@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(cleditor: JQueryCLEditorStatic): JQueryStatic = {
+  inline def apply(cleditor: JQueryCLEditorStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(cleditor = cleditor.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setCleditor(value: JQueryCLEditorStatic): Self = StObject.set(x, "cleditor", value.asInstanceOf[js.Any])
+    inline def setCleditor(value: JQueryCLEditorStatic): Self = StObject.set(x, "cleditor", value.asInstanceOf[js.Any])
   }
 }

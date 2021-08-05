@@ -48,8 +48,7 @@ object DynamicLabel {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
+  inline def create(model: IModel): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
   
   /**
     * Creates and returns a new DynamicLabel instance in the SDK and on the server.
@@ -57,8 +56,7 @@ object DynamicLabel {
     * of the parent DocumentTemplate element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
+  inline def createInDocumentTemplateUnderToplevels(container: DocumentTemplate): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateUnderToplevels")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
   
   /**
     * Creates and returns a new DynamicLabel instance in the SDK and on the server.
@@ -66,20 +64,17 @@ object DynamicLabel {
     * of the parent DropZone element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInDropZoneUnderWidget(container: DropZone): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
+  inline def createInDropZoneUnderWidget(container: DropZone): DynamicLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDropZoneUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[DynamicLabel]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicLabel.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicLabel.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

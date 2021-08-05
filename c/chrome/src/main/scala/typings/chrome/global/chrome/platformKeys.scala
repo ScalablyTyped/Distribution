@@ -26,31 +26,26 @@ object platformKeys {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getKeyPair(
+  inline def getKeyPair(
     certificate: ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeyPair")(certificate.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getKeyPairBySpki(
+  inline def getKeyPairBySpki(
     publicKeySpkiDer: ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeyPairBySpki")(publicKeySpkiDer.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def selectClientCertificates(
+  inline def selectClientCertificates(
     details: ClientCertificateSelectDetails,
     callback: js.Function1[/* matches */ js.Array[Match], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectClientCertificates")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def subtleCrypto(): SubtleCrypto = ^.asInstanceOf[js.Dynamic].applyDynamic("subtleCrypto")().asInstanceOf[SubtleCrypto]
+  inline def subtleCrypto(): SubtleCrypto = ^.asInstanceOf[js.Dynamic].applyDynamic("subtleCrypto")().asInstanceOf[SubtleCrypto]
   
-  @scala.inline
-  def verifyTLSServerCertificate(
+  inline def verifyTLSServerCertificate(
     details: ServerCertificateVerificationDetails,
     callback: js.Function1[/* result */ ServerCertificateVerificationResult, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyTLSServerCertificate")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

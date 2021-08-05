@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String): Expression = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def apply(str: String): Expression = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
   @JSImport("jsonata", JSImport.Namespace)
   @js.native
@@ -28,26 +27,20 @@ object mod {
   }
   object Environment {
     
-    @scala.inline
-    def apply(async: Boolean, bind: (String, js.Any) => Unit, lookup: String => js.Any, timestamp: Date): Environment = {
+    inline def apply(async: Boolean, bind: (String, js.Any) => Unit, lookup: String => js.Any, timestamp: Date): Environment = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], bind = js.Any.fromFunction2(bind), lookup = js.Any.fromFunction1(lookup), timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Environment]
     }
     
-    @scala.inline
-    implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+    extension [Self <: Environment](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBind(value: (String, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+      inline def setBind(value: (String, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => js.Any): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,60 +62,43 @@ object mod {
   }
   object ExprNode {
     
-    @scala.inline
-    def apply(`type`: String): ExprNode = {
+    inline def apply(`type`: String): ExprNode = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExprNode]
     }
     
-    @scala.inline
-    implicit class ExprNodeMutableBuilder[Self <: ExprNode] (val x: Self) extends AnyVal {
+    extension [Self <: ExprNode](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[ExprNode]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[ExprNode]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+      inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      @scala.inline
-      def setArgumentsVarargs(value: ExprNode*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: ExprNode*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setProcedure(value: ExprNode): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
+      inline def setProcedure(value: ExprNode): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcedureUndefined: Self = StObject.set(x, "procedure", js.undefined)
+      inline def setProcedureUndefined: Self = StObject.set(x, "procedure", js.undefined)
       
-      @scala.inline
-      def setSteps(value: js.Array[ExprNode]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[ExprNode]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      @scala.inline
-      def setStepsVarargs(value: ExprNode*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: ExprNode*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -162,20 +138,16 @@ object mod {
   }
   object Focus {
     
-    @scala.inline
-    def apply(environment: Environment, input: js.Any): Focus = {
+    inline def apply(environment: Environment, input: js.Any): Focus = {
       val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any])
       __obj.asInstanceOf[Focus]
     }
     
-    @scala.inline
-    implicit class FocusMutableBuilder[Self <: Focus] (val x: Self) extends AnyVal {
+    extension [Self <: Focus](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,23 +163,18 @@ object mod {
   }
   object JsonataError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String, position: Double, token: String): JsonataError = {
+    inline def apply(code: String, message: String, name: String, position: Double, token: String): JsonataError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonataError]
     }
     
-    @scala.inline
-    implicit class JsonataErrorMutableBuilder[Self <: JsonataError] (val x: Self) extends AnyVal {
+    extension [Self <: JsonataError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

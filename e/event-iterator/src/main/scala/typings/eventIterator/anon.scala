@@ -15,26 +15,20 @@ object anon {
   }
   object PartialEventIteratorOptio {
     
-    @scala.inline
-    def apply(): PartialEventIteratorOptio = {
+    inline def apply(): PartialEventIteratorOptio = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialEventIteratorOptio]
     }
     
-    @scala.inline
-    implicit class PartialEventIteratorOptioMutableBuilder[Self <: PartialEventIteratorOptio] (val x: Self) extends AnyVal {
+    extension [Self <: PartialEventIteratorOptio](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setLowWaterMark(value: Double): Self = StObject.set(x, "lowWaterMark", value.asInstanceOf[js.Any])
+      inline def setLowWaterMark(value: Double): Self = StObject.set(x, "lowWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowWaterMarkUndefined: Self = StObject.set(x, "lowWaterMark", js.undefined)
+      inline def setLowWaterMarkUndefined: Self = StObject.set(x, "lowWaterMark", js.undefined)
     }
   }
 }

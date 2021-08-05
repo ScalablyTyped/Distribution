@@ -33,46 +33,33 @@ trait ListSuppressedDestinationsRequest extends StObject {
 }
 object ListSuppressedDestinationsRequest {
   
-  @scala.inline
-  def apply(): ListSuppressedDestinationsRequest = {
+  inline def apply(): ListSuppressedDestinationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSuppressedDestinationsRequest]
   }
   
-  @scala.inline
-  implicit class ListSuppressedDestinationsRequestMutableBuilder[Self <: ListSuppressedDestinationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSuppressedDestinationsRequest](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: MaxItems): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setReasons(value: SuppressionListReasons): Self = StObject.set(x, "Reasons", value.asInstanceOf[js.Any])
+    inline def setReasons(value: SuppressionListReasons): Self = StObject.set(x, "Reasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
+    inline def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
     
-    @scala.inline
-    def setReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }
 }

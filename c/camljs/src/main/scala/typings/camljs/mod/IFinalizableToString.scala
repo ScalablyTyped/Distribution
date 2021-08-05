@@ -11,16 +11,13 @@ trait IFinalizableToString extends StObject {
 }
 object IFinalizableToString {
   
-  @scala.inline
-  def apply(ToString: () => String): IFinalizableToString = {
+  inline def apply(ToString: () => String): IFinalizableToString = {
     val __obj = js.Dynamic.literal(ToString = js.Any.fromFunction0(ToString))
     __obj.asInstanceOf[IFinalizableToString]
   }
   
-  @scala.inline
-  implicit class IFinalizableToStringMutableBuilder[Self <: IFinalizableToString] (val x: Self) extends AnyVal {
+  extension [Self <: IFinalizableToString](x: Self) {
     
-    @scala.inline
-    def setToString(value: () => String): Self = StObject.set(x, "ToString", js.Any.fromFunction0(value))
+    inline def setToString(value: () => String): Self = StObject.set(x, "ToString", js.Any.fromFunction0(value))
   }
 }

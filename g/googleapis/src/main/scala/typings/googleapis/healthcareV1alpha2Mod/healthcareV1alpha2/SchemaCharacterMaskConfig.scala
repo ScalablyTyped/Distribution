@@ -17,19 +17,15 @@ trait SchemaCharacterMaskConfig extends StObject {
 }
 object SchemaCharacterMaskConfig {
   
-  @scala.inline
-  def apply(): SchemaCharacterMaskConfig = {
+  inline def apply(): SchemaCharacterMaskConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCharacterMaskConfig]
   }
   
-  @scala.inline
-  implicit class SchemaCharacterMaskConfigMutableBuilder[Self <: SchemaCharacterMaskConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCharacterMaskConfig](x: Self) {
     
-    @scala.inline
-    def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
+    inline def setMaskingCharacter(value: String): Self = StObject.set(x, "maskingCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskingCharacterUndefined: Self = StObject.set(x, "maskingCharacter", js.undefined)
+    inline def setMaskingCharacterUndefined: Self = StObject.set(x, "maskingCharacter", js.undefined)
   }
 }

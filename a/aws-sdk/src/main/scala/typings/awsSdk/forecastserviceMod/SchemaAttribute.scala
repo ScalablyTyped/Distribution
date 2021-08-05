@@ -18,25 +18,19 @@ trait SchemaAttribute extends StObject {
 }
 object SchemaAttribute {
   
-  @scala.inline
-  def apply(): SchemaAttribute = {
+  inline def apply(): SchemaAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttribute]
   }
   
-  @scala.inline
-  implicit class SchemaAttributeMutableBuilder[Self <: SchemaAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: Name): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: Name): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeType(value: AttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+    inline def setAttributeType(value: AttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
+    inline def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
   }
 }

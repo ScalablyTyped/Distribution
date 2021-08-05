@@ -18,5 +18,5 @@ trait TypeofIntlMessageFormat
   
   var formats: Date = js.native
   
-  var memoizedDefaultLocale: js.Any = js.native
+  /* private */ var memoizedDefaultLocale: js.Any = js.native
 }

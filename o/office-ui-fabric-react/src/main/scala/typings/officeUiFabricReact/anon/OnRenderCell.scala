@@ -17,8 +17,7 @@ trait OnRenderCell extends StObject {
 }
 object OnRenderCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onRenderCell: (js.Any, Double, Boolean) => Element,
     renderedWindowsAhead: Double,
     renderedWindowsBehind: Double,
@@ -28,19 +27,14 @@ object OnRenderCell {
     __obj.asInstanceOf[OnRenderCell]
   }
   
-  @scala.inline
-  implicit class OnRenderCellMutableBuilder[Self <: OnRenderCell] (val x: Self) extends AnyVal {
+  extension [Self <: OnRenderCell](x: Self) {
     
-    @scala.inline
-    def setOnRenderCell(value: (js.Any, Double, Boolean) => Element): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
+    inline def setOnRenderCell(value: (js.Any, Double, Boolean) => Element): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderedWindowsAhead(value: Double): Self = StObject.set(x, "renderedWindowsAhead", value.asInstanceOf[js.Any])
+    inline def setRenderedWindowsAhead(value: Double): Self = StObject.set(x, "renderedWindowsAhead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedWindowsBehind(value: Double): Self = StObject.set(x, "renderedWindowsBehind", value.asInstanceOf[js.Any])
+    inline def setRenderedWindowsBehind(value: Double): Self = StObject.set(x, "renderedWindowsBehind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
   }
 }

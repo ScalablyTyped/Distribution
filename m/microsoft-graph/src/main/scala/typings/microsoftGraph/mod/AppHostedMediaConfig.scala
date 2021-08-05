@@ -13,22 +13,17 @@ trait AppHostedMediaConfig
 }
 object AppHostedMediaConfig {
   
-  @scala.inline
-  def apply(): AppHostedMediaConfig = {
+  inline def apply(): AppHostedMediaConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppHostedMediaConfig]
   }
   
-  @scala.inline
-  implicit class AppHostedMediaConfigMutableBuilder[Self <: AppHostedMediaConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AppHostedMediaConfig](x: Self) {
     
-    @scala.inline
-    def setBlob(value: NullableOption[String]): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: NullableOption[String]): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobNull: Self = StObject.set(x, "blob", null)
+    inline def setBlobNull: Self = StObject.set(x, "blob", null)
     
-    @scala.inline
-    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
   }
 }

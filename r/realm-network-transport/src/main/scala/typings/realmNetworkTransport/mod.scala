@@ -17,9 +17,9 @@ object mod {
     extends StObject
        with NetworkTransport {
     
-    var createTimeoutSignal: js.Any = js.native
+    /* private */ var createTimeoutSignal: js.Any = js.native
     
-    var fetch: js.Any = js.native
+    /* private */ var fetch: js.Any = js.native
     
     /* CompleteClass */
     override def fetchAndParse[RequestBody /* <: js.Any */, ResponseBody /* <: js.Any */](request: Request[RequestBody]): js.Promise[ResponseBody] = js.native
@@ -46,8 +46,7 @@ object mod {
     @JSImport("realm-network-transport", "DefaultNetworkTransport.AbortController")
     @js.native
     def AbortController: typings.realmNetworkTransport.mod.AbortController = js.native
-    @scala.inline
-    def AbortController_=(x: typings.realmNetworkTransport.mod.AbortController): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortController")(x.asInstanceOf[js.Any])
+    inline def AbortController_=(x: typings.realmNetworkTransport.mod.AbortController): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortController")(x.asInstanceOf[js.Any])
     
     /* static member */
     object DEFAULT_HEADERS {
@@ -59,23 +58,20 @@ object mod {
       @JSImport("realm-network-transport", "DefaultNetworkTransport.DEFAULT_HEADERS.Accept")
       @js.native
       def Accept: String = js.native
-      @scala.inline
-      def Accept_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Accept")(x.asInstanceOf[js.Any])
+      inline def Accept_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Accept")(x.asInstanceOf[js.Any])
       
       @JSImport("realm-network-transport", "DefaultNetworkTransport.DEFAULT_HEADERS.Content-Type")
       @js.native
       def ContentType: String = js.native
       
-      @scala.inline
-      def ContentType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content-Type")(x.asInstanceOf[js.Any])
+      inline def ContentType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content-Type")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
     @JSImport("realm-network-transport", "DefaultNetworkTransport.fetch")
     @js.native
     def fetch: Fetch = js.native
-    @scala.inline
-    def fetch_=(x: Fetch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetch")(x.asInstanceOf[js.Any])
+    inline def fetch_=(x: Fetch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetch")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -153,8 +149,7 @@ object mod {
   }
   object FetchBody {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrayBuffer: () => js.Promise[ArrayBuffer],
       blob: () => js.Promise[js.Any],
       bodyUsed: Boolean,
@@ -165,29 +160,21 @@ object mod {
       __obj.asInstanceOf[FetchBody]
     }
     
-    @scala.inline
-    implicit class FetchBodyMutableBuilder[Self <: FetchBody] (val x: Self) extends AnyVal {
+    extension [Self <: FetchBody](x: Self) {
       
-      @scala.inline
-      def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBlob(value: () => js.Promise[js.Any]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
+      inline def setBlob(value: () => js.Promise[js.Any]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
+      inline def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
   
@@ -209,8 +196,7 @@ object mod {
   }
   object FetchHeaders {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: (String, String) => Unit,
       delete: String => Unit,
       forEach: js.Function2[/* value */ String, /* name */ String, Unit] => Unit,
@@ -222,26 +208,19 @@ object mod {
       __obj.asInstanceOf[FetchHeaders]
     }
     
-    @scala.inline
-    implicit class FetchHeadersMutableBuilder[Self <: FetchHeaders] (val x: Self) extends AnyVal {
+    extension [Self <: FetchHeaders](x: Self) {
       
-      @scala.inline
-      def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+      inline def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function2[/* value */ String, /* name */ String, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function2[/* value */ String, /* name */ String, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -279,8 +258,7 @@ object mod {
   }
   object FetchRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrayBuffer: () => js.Promise[ArrayBuffer],
       blob: () => js.Promise[js.Any],
       bodyUsed: Boolean,
@@ -296,23 +274,17 @@ object mod {
       __obj.asInstanceOf[FetchRequest]
     }
     
-    @scala.inline
-    implicit class FetchRequestMutableBuilder[Self <: FetchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: FetchRequest](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: FetchHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: FetchHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+      inline def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -352,59 +324,42 @@ object mod {
   }
   object FetchRequestInit {
     
-    @scala.inline
-    def apply(): FetchRequestInit = {
+    inline def apply(): FetchRequestInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchRequestInit]
     }
     
-    @scala.inline
-    implicit class FetchRequestInitMutableBuilder[Self <: FetchRequestInit] (val x: Self) extends AnyVal {
+    extension [Self <: FetchRequestInit](x: Self) {
       
-      @scala.inline
-      def setBody(value: FetchBodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: FetchBodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: FetchHeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: FetchHeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
       
-      @scala.inline
-      def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+      inline def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+      inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalNull: Self = StObject.set(x, "signal", null)
+      inline def setSignalNull: Self = StObject.set(x, "signal", null)
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     }
   }
   
@@ -428,8 +383,7 @@ object mod {
   }
   object FetchResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrayBuffer: () => js.Promise[ArrayBuffer],
       blob: () => js.Promise[js.Any],
       bodyUsed: Boolean,
@@ -448,29 +402,21 @@ object mod {
       __obj.asInstanceOf[FetchResponse]
     }
     
-    @scala.inline
-    implicit class FetchResponseMutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
+    extension [Self <: FetchResponse](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: FetchHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: FetchHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirected(value: Boolean): Self = StObject.set(x, "redirected", value.asInstanceOf[js.Any])
+      inline def setRedirected(value: Boolean): Self = StObject.set(x, "redirected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -485,17 +431,13 @@ object mod {
   trait Method extends StObject
   object Method {
     
-    @scala.inline
-    def DELETE: typings.realmNetworkTransport.realmNetworkTransportStrings.DELETE = "DELETE".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.DELETE]
+    inline def DELETE: typings.realmNetworkTransport.realmNetworkTransportStrings.DELETE = "DELETE".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.realmNetworkTransport.realmNetworkTransportStrings.GET = "GET".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.GET]
+    inline def GET: typings.realmNetworkTransport.realmNetworkTransportStrings.GET = "GET".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.GET]
     
-    @scala.inline
-    def POST: typings.realmNetworkTransport.realmNetworkTransportStrings.POST = "POST".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.POST]
+    inline def POST: typings.realmNetworkTransport.realmNetworkTransportStrings.POST = "POST".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.POST]
     
-    @scala.inline
-    def PUT: typings.realmNetworkTransport.realmNetworkTransportStrings.PUT = "PUT".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.PUT]
+    inline def PUT: typings.realmNetworkTransport.realmNetworkTransportStrings.PUT = "PUT".asInstanceOf[typings.realmNetworkTransport.realmNetworkTransportStrings.PUT]
   }
   
   trait NetworkTransport extends StObject {
@@ -506,8 +448,7 @@ object mod {
   }
   object NetworkTransport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fetchAndParse: Request[js.Any] => js.Promise[js.Any],
       fetchWithCallbacks: (Request[js.Any], ResponseHandler) => Unit
     ): NetworkTransport = {
@@ -515,14 +456,11 @@ object mod {
       __obj.asInstanceOf[NetworkTransport]
     }
     
-    @scala.inline
-    implicit class NetworkTransportMutableBuilder[Self <: NetworkTransport] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkTransport](x: Self) {
       
-      @scala.inline
-      def setFetchAndParse(value: Request[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "fetchAndParse", js.Any.fromFunction1(value))
+      inline def setFetchAndParse(value: Request[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "fetchAndParse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFetchWithCallbacks(value: (Request[js.Any], ResponseHandler) => Unit): Self = StObject.set(x, "fetchWithCallbacks", js.Any.fromFunction2(value))
+      inline def setFetchWithCallbacks(value: (Request[js.Any], ResponseHandler) => Unit): Self = StObject.set(x, "fetchWithCallbacks", js.Any.fromFunction2(value))
     }
   }
   
@@ -540,38 +478,28 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply[RequestBody](method: Method, url: String): Request[RequestBody] = {
+    inline def apply[RequestBody](method: Method, url: String): Request[RequestBody] = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request[RequestBody]]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request[?], RequestBody] (val x: Self & Request[RequestBody]) extends AnyVal {
+    extension [Self <: Request[?], RequestBody](x: Self & Request[RequestBody]) {
       
-      @scala.inline
-      def setBody(value: RequestBody | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: RequestBody | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
+      inline def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutMsUndefined: Self = StObject.set(x, "timeoutMs", js.undefined)
+      inline def setTimeoutMsUndefined: Self = StObject.set(x, "timeoutMs", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -585,23 +513,18 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(body: String, headers: Headers, statusCode: Double): Response = {
+    inline def apply(body: String, headers: Headers, statusCode: Double): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -617,20 +540,16 @@ object mod {
   }
   object ResponseHandler {
     
-    @scala.inline
-    def apply(onError: /* err */ Error => Unit, onSuccess: /* response */ Response => Unit): ResponseHandler = {
+    inline def apply(onError: /* err */ Error => Unit, onSuccess: /* response */ Response => Unit): ResponseHandler = {
       val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1(onError), onSuccess = js.Any.fromFunction1(onSuccess))
       __obj.asInstanceOf[ResponseHandler]
     }
     
-    @scala.inline
-    implicit class ResponseHandlerMutableBuilder[Self <: ResponseHandler] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseHandler](x: Self) {
       
-      @scala.inline
-      def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccess(value: /* response */ Response => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: /* response */ Response => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     }
   }
   

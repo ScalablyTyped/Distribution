@@ -10,8 +10,7 @@ trait BatchGetItemOutput
      with typings.awsSdkClientDynamodbNode.typesBatchGetItemOutputMod.BatchGetItemOutput
 object BatchGetItemOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): BatchGetItemOutput = {
+  inline def apply($metadata: ResponseMetadata): BatchGetItemOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetItemOutput]
   }

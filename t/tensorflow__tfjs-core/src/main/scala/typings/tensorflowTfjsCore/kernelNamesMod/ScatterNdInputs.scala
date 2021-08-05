@@ -13,25 +13,19 @@ trait ScatterNdInputs extends StObject {
 }
 object ScatterNdInputs {
   
-  @scala.inline
-  def apply(): ScatterNdInputs = {
+  inline def apply(): ScatterNdInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScatterNdInputs]
   }
   
-  @scala.inline
-  implicit class ScatterNdInputsMutableBuilder[Self <: ScatterNdInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ScatterNdInputs](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    @scala.inline
-    def setUpdates(value: js.Any): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: js.Any): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
   }
 }

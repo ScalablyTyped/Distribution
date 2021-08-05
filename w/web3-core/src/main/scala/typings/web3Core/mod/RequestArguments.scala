@@ -15,22 +15,17 @@ trait RequestArguments
 }
 object RequestArguments {
   
-  @scala.inline
-  def apply(method: String): RequestArguments = {
+  inline def apply(method: String): RequestArguments = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestArguments]
   }
   
-  @scala.inline
-  implicit class RequestArgumentsMutableBuilder[Self <: RequestArguments] (val x: Self) extends AnyVal {
+  extension [Self <: RequestArguments](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

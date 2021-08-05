@@ -30,8 +30,7 @@ trait XLevelsSupplier
 }
 object XLevelsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Levels: XNameAccess,
     acquire: () => Unit,
     getLevels: () => XNameAccess,
@@ -42,13 +41,10 @@ object XLevelsSupplier {
     __obj.asInstanceOf[XLevelsSupplier]
   }
   
-  @scala.inline
-  implicit class XLevelsSupplierMutableBuilder[Self <: XLevelsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XLevelsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetLevels(value: () => XNameAccess): Self = StObject.set(x, "getLevels", js.Any.fromFunction0(value))
+    inline def setGetLevels(value: () => XNameAccess): Self = StObject.set(x, "getLevels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLevels(value: XNameAccess): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: XNameAccess): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
   }
 }

@@ -20,17 +20,14 @@ object gatewayMod {
   }
   object GatewayProps {
     
-    @scala.inline
-    def apply(into: String): GatewayProps = {
+    inline def apply(into: String): GatewayProps = {
       val __obj = js.Dynamic.literal(into = into.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatewayProps]
     }
     
-    @scala.inline
-    implicit class GatewayPropsMutableBuilder[Self <: GatewayProps] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayProps](x: Self) {
       
-      @scala.inline
-      def setInto(value: String): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
+      inline def setInto(value: String): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
     }
   }
 }

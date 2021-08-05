@@ -18,28 +18,21 @@ trait CreateCertificateResult extends StObject {
 }
 object CreateCertificateResult {
   
-  @scala.inline
-  def apply(): CreateCertificateResult = {
+  inline def apply(): CreateCertificateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCertificateResult]
   }
   
-  @scala.inline
-  implicit class CreateCertificateResultMutableBuilder[Self <: CreateCertificateResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCertificateResult](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: CertificateSummary): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: CertificateSummary): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

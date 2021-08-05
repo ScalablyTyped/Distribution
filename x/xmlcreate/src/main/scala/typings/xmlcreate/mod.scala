@@ -146,8 +146,6 @@ object mod {
     def this(parent: Parent, validation: Boolean, options: IXmlProcInstOptions) = this()
   }
   
-  @scala.inline
-  def document(): typings.xmlcreate.xmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")().asInstanceOf[typings.xmlcreate.xmlDocumentMod.default]
-  @scala.inline
-  def document(options: IXmlDocumentOptions): typings.xmlcreate.xmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(options.asInstanceOf[js.Any]).asInstanceOf[typings.xmlcreate.xmlDocumentMod.default]
+  inline def document(): typings.xmlcreate.xmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")().asInstanceOf[typings.xmlcreate.xmlDocumentMod.default]
+  inline def document(options: IXmlDocumentOptions): typings.xmlcreate.xmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(options.asInstanceOf[js.Any]).asInstanceOf[typings.xmlcreate.xmlDocumentMod.default]
 }

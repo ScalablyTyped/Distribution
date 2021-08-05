@@ -8,6 +8,5 @@ object d3SelectionMultiStrings {
   
   @js.native
   sealed trait important extends StObject
-  @scala.inline
-  def important: important = "important".asInstanceOf[important]
+  inline def important: important = "important".asInstanceOf[important]
 }

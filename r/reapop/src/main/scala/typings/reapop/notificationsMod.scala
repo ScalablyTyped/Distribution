@@ -13,15 +13,11 @@ object notificationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
+  inline def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   
-  @scala.inline
-  def prepareNotification(notification: NewNotification): Notification = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[Notification]
+  inline def prepareNotification(notification: NewNotification): Notification = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareNotification")(notification.asInstanceOf[js.Any]).asInstanceOf[Notification]
   
-  @scala.inline
-  def resetNotificationsConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetNotificationsConfig")().asInstanceOf[Unit]
+  inline def resetNotificationsConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetNotificationsConfig")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setUpNotifications(props: PartialNotificationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpNotifications")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setUpNotifications(props: PartialNotificationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpNotifications")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

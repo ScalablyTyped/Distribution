@@ -12,19 +12,15 @@ trait AccelerometerOptions extends StObject {
 }
 object AccelerometerOptions {
   
-  @scala.inline
-  def apply(): AccelerometerOptions = {
+  inline def apply(): AccelerometerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccelerometerOptions]
   }
   
-  @scala.inline
-  implicit class AccelerometerOptionsMutableBuilder[Self <: AccelerometerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccelerometerOptions](x: Self) {
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

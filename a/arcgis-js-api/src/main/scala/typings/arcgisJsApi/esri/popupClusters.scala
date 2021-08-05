@@ -20,16 +20,13 @@ trait popupClusters extends StObject {
 }
 object popupClusters {
   
-  @scala.inline
-  def apply(getTemplates: clustersGetTemplatesParams => js.Promise[Templates_]): popupClusters = {
+  inline def apply(getTemplates: clustersGetTemplatesParams => js.Promise[Templates_]): popupClusters = {
     val __obj = js.Dynamic.literal(getTemplates = js.Any.fromFunction1(getTemplates))
     __obj.asInstanceOf[popupClusters]
   }
   
-  @scala.inline
-  implicit class popupClustersMutableBuilder[Self <: popupClusters] (val x: Self) extends AnyVal {
+  extension [Self <: popupClusters](x: Self) {
     
-    @scala.inline
-    def setGetTemplates(value: clustersGetTemplatesParams => js.Promise[Templates_]): Self = StObject.set(x, "getTemplates", js.Any.fromFunction1(value))
+    inline def setGetTemplates(value: clustersGetTemplatesParams => js.Promise[Templates_]): Self = StObject.set(x, "getTemplates", js.Any.fromFunction1(value))
   }
 }

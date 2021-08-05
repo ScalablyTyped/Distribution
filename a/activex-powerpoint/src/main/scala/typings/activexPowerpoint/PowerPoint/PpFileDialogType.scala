@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpFileDialogType extends StObject
 object PpFileDialogType {
   
-  @scala.inline
-  def ppFileDialogOpen: `1` = 1.asInstanceOf[`1`]
+  inline def ppFileDialogOpen: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppFileDialogSave: `2` = 2.asInstanceOf[`2`]
+  inline def ppFileDialogSave: `2` = 2.asInstanceOf[`2`]
 }

@@ -73,91 +73,63 @@ trait TableInput extends StObject {
 }
 object TableInput {
   
-  @scala.inline
-  def apply(Name: NameString): TableInput = {
+  inline def apply(Name: NameString): TableInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableInput]
   }
   
-  @scala.inline
-  implicit class TableInputMutableBuilder[Self <: TableInput] (val x: Self) extends AnyVal {
+  extension [Self <: TableInput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setLastAccessTime(value: Timestamp): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessTime(value: Timestamp): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessTimeUndefined: Self = StObject.set(x, "LastAccessTime", js.undefined)
+    inline def setLastAccessTimeUndefined: Self = StObject.set(x, "LastAccessTime", js.undefined)
     
-    @scala.inline
-    def setLastAnalyzedTime(value: Timestamp): Self = StObject.set(x, "LastAnalyzedTime", value.asInstanceOf[js.Any])
+    inline def setLastAnalyzedTime(value: Timestamp): Self = StObject.set(x, "LastAnalyzedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAnalyzedTimeUndefined: Self = StObject.set(x, "LastAnalyzedTime", js.undefined)
+    inline def setLastAnalyzedTimeUndefined: Self = StObject.set(x, "LastAnalyzedTime", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: NameString): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: NameString): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
-    @scala.inline
-    def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setPartitionKeys(value: ColumnList): Self = StObject.set(x, "PartitionKeys", value.asInstanceOf[js.Any])
+    inline def setPartitionKeys(value: ColumnList): Self = StObject.set(x, "PartitionKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
+    inline def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
     
-    @scala.inline
-    def setPartitionKeysVarargs(value: Column*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
+    inline def setPartitionKeysVarargs(value: Column*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setRetention(value: NonNegativeInteger): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
+    inline def setRetention(value: NonNegativeInteger): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionUndefined: Self = StObject.set(x, "Retention", js.undefined)
+    inline def setRetentionUndefined: Self = StObject.set(x, "Retention", js.undefined)
     
-    @scala.inline
-    def setStorageDescriptor(value: StorageDescriptor): Self = StObject.set(x, "StorageDescriptor", value.asInstanceOf[js.Any])
+    inline def setStorageDescriptor(value: StorageDescriptor): Self = StObject.set(x, "StorageDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageDescriptorUndefined: Self = StObject.set(x, "StorageDescriptor", js.undefined)
+    inline def setStorageDescriptorUndefined: Self = StObject.set(x, "StorageDescriptor", js.undefined)
     
-    @scala.inline
-    def setTableType(value: TableTypeString): Self = StObject.set(x, "TableType", value.asInstanceOf[js.Any])
+    inline def setTableType(value: TableTypeString): Self = StObject.set(x, "TableType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableTypeUndefined: Self = StObject.set(x, "TableType", js.undefined)
+    inline def setTableTypeUndefined: Self = StObject.set(x, "TableType", js.undefined)
     
-    @scala.inline
-    def setTargetTable(value: TableIdentifier): Self = StObject.set(x, "TargetTable", value.asInstanceOf[js.Any])
+    inline def setTargetTable(value: TableIdentifier): Self = StObject.set(x, "TargetTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTableUndefined: Self = StObject.set(x, "TargetTable", js.undefined)
+    inline def setTargetTableUndefined: Self = StObject.set(x, "TargetTable", js.undefined)
     
-    @scala.inline
-    def setViewExpandedText(value: ViewTextString): Self = StObject.set(x, "ViewExpandedText", value.asInstanceOf[js.Any])
+    inline def setViewExpandedText(value: ViewTextString): Self = StObject.set(x, "ViewExpandedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewExpandedTextUndefined: Self = StObject.set(x, "ViewExpandedText", js.undefined)
+    inline def setViewExpandedTextUndefined: Self = StObject.set(x, "ViewExpandedText", js.undefined)
     
-    @scala.inline
-    def setViewOriginalText(value: ViewTextString): Self = StObject.set(x, "ViewOriginalText", value.asInstanceOf[js.Any])
+    inline def setViewOriginalText(value: ViewTextString): Self = StObject.set(x, "ViewOriginalText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewOriginalTextUndefined: Self = StObject.set(x, "ViewOriginalText", js.undefined)
+    inline def setViewOriginalTextUndefined: Self = StObject.set(x, "ViewOriginalText", js.undefined)
   }
 }

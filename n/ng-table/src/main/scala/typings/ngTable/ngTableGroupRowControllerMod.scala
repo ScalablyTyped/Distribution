@@ -16,7 +16,7 @@ object ngTableGroupRowControllerMod {
   class NgTableGroupRowController[T] protected () extends StObject {
     def this($scope: ITableScope[T] & IScopeExtensions[T]) = this()
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
     /* private */ def changeSortDirection(): js.Any = js.native
@@ -33,7 +33,7 @@ object ngTableGroupRowControllerMod {
     def groupBy(group: IGroupingFunc[js.Any]): Unit = js.native
     def groupBy(group: IColumnDef): Unit = js.native
     
-    var groupFns: js.Any = js.native
+    /* private */ var groupFns: js.Any = js.native
     
     /* private */ def isGroupingFunc(`val`: js.Any): js.Any = js.native
     
@@ -60,8 +60,7 @@ object ngTableGroupRowControllerMod {
     @JSImport("ng-table/src/browser/ngTableGroupRowController", "NgTableGroupRowController.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   trait IScopeExtensions[T] extends StObject {
@@ -74,20 +73,16 @@ object ngTableGroupRowControllerMod {
   }
   object IScopeExtensions {
     
-    @scala.inline
-    def apply[T]($selGroup: IGroupingFunc[js.Any] | String, $selGroupTitle: String): IScopeExtensions[T] = {
+    inline def apply[T]($selGroup: IGroupingFunc[js.Any] | String, $selGroupTitle: String): IScopeExtensions[T] = {
       val __obj = js.Dynamic.literal($selGroup = $selGroup.asInstanceOf[js.Any], $selGroupTitle = $selGroupTitle.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScopeExtensions[T]]
     }
     
-    @scala.inline
-    implicit class IScopeExtensionsMutableBuilder[Self <: IScopeExtensions[?], T] (val x: Self & IScopeExtensions[T]) extends AnyVal {
+    extension [Self <: IScopeExtensions[?], T](x: Self & IScopeExtensions[T]) {
       
-      @scala.inline
-      def set$selGroup(value: IGroupingFunc[js.Any] | String): Self = StObject.set(x, "$selGroup", value.asInstanceOf[js.Any])
+      inline def set$selGroup(value: IGroupingFunc[js.Any] | String): Self = StObject.set(x, "$selGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$selGroupTitle(value: String): Self = StObject.set(x, "$selGroupTitle", value.asInstanceOf[js.Any])
+      inline def set$selGroupTitle(value: String): Self = StObject.set(x, "$selGroupTitle", value.asInstanceOf[js.Any])
     }
   }
 }

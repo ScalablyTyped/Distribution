@@ -23,25 +23,19 @@ trait ContributionBase extends StObject {
 }
 object ContributionBase {
   
-  @scala.inline
-  def apply(description: String, id: String, visibleTo: js.Array[String]): ContributionBase = {
+  inline def apply(description: String, id: String, visibleTo: js.Array[String]): ContributionBase = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], visibleTo = visibleTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContributionBase]
   }
   
-  @scala.inline
-  implicit class ContributionBaseMutableBuilder[Self <: ContributionBase] (val x: Self) extends AnyVal {
+  extension [Self <: ContributionBase](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleTo(value: js.Array[String]): Self = StObject.set(x, "visibleTo", value.asInstanceOf[js.Any])
+    inline def setVisibleTo(value: js.Array[String]): Self = StObject.set(x, "visibleTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleToVarargs(value: String*): Self = StObject.set(x, "visibleTo", js.Array(value :_*))
+    inline def setVisibleToVarargs(value: String*): Self = StObject.set(x, "visibleTo", js.Array(value :_*))
   }
 }

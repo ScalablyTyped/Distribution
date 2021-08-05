@@ -12,16 +12,13 @@ trait ReadonlyIColorRectangleSt extends StObject {
 }
 object ReadonlyIColorRectangleSt {
   
-  @scala.inline
-  def apply(color: IColor): ReadonlyIColorRectangleSt = {
+  inline def apply(color: IColor): ReadonlyIColorRectangleSt = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIColorRectangleSt]
   }
   
-  @scala.inline
-  implicit class ReadonlyIColorRectangleStMutableBuilder[Self <: ReadonlyIColorRectangleSt] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyIColorRectangleSt](x: Self) {
     
-    @scala.inline
-    def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

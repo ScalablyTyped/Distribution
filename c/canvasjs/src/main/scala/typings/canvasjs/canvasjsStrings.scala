@@ -11,86 +11,73 @@ object canvasjsStrings {
   sealed trait dash
     extends StObject
        with DashType
-  @scala.inline
-  def dash: dash = "dash".asInstanceOf[dash]
+  inline def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
   sealed trait dashDot
     extends StObject
        with DashType
-  @scala.inline
-  def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
+  inline def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
   
   @js.native
   sealed trait dot
     extends StObject
        with DashType
-  @scala.inline
-  def dot: dot = "dot".asInstanceOf[dot]
+  inline def dot: dot = "dot".asInstanceOf[dot]
   
   @js.native
   sealed trait jpg extends StObject
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
   
   @js.native
   sealed trait longDash
     extends StObject
        with DashType
-  @scala.inline
-  def longDash: longDash = "longDash".asInstanceOf[longDash]
+  inline def longDash: longDash = "longDash".asInstanceOf[longDash]
   
   @js.native
   sealed trait longDashDot
     extends StObject
        with DashType
-  @scala.inline
-  def longDashDot: longDashDot = "longDashDot".asInstanceOf[longDashDot]
+  inline def longDashDot: longDashDot = "longDashDot".asInstanceOf[longDashDot]
   
   @js.native
   sealed trait longDashDotDot
     extends StObject
        with DashType
-  @scala.inline
-  def longDashDotDot: longDashDotDot = "longDashDotDot".asInstanceOf[longDashDotDot]
+  inline def longDashDotDot: longDashDotDot = "longDashDotDot".asInstanceOf[longDashDotDot]
   
   @js.native
   sealed trait png extends StObject
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
+  inline def png: png = "png".asInstanceOf[png]
   
   @js.native
   sealed trait shortDash
     extends StObject
        with DashType
-  @scala.inline
-  def shortDash: shortDash = "shortDash".asInstanceOf[shortDash]
+  inline def shortDash: shortDash = "shortDash".asInstanceOf[shortDash]
   
   @js.native
   sealed trait shortDashDot
     extends StObject
        with DashType
-  @scala.inline
-  def shortDashDot: shortDashDot = "shortDashDot".asInstanceOf[shortDashDot]
+  inline def shortDashDot: shortDashDot = "shortDashDot".asInstanceOf[shortDashDot]
   
   @js.native
   sealed trait shortDashDotDot
     extends StObject
        with DashType
-  @scala.inline
-  def shortDashDotDot: shortDashDotDot = "shortDashDotDot".asInstanceOf[shortDashDotDot]
+  inline def shortDashDotDot: shortDashDotDot = "shortDashDotDot".asInstanceOf[shortDashDotDot]
   
   @js.native
   sealed trait shortDot
     extends StObject
        with DashType
-  @scala.inline
-  def shortDot: shortDot = "shortDot".asInstanceOf[shortDot]
+  inline def shortDot: shortDot = "shortDot".asInstanceOf[shortDot]
   
   @js.native
   sealed trait solid
     extends StObject
        with DashType
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
+  inline def solid: solid = "solid".asInstanceOf[solid]
 }

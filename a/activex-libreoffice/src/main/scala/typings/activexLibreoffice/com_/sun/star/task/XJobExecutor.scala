@@ -30,8 +30,7 @@ trait XJobExecutor
 }
 object XJobExecutor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -41,10 +40,8 @@ object XJobExecutor {
     __obj.asInstanceOf[XJobExecutor]
   }
   
-  @scala.inline
-  implicit class XJobExecutorMutableBuilder[Self <: XJobExecutor] (val x: Self) extends AnyVal {
+  extension [Self <: XJobExecutor](x: Self) {
     
-    @scala.inline
-    def setTrigger(value: String => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
+    inline def setTrigger(value: String => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
   }
 }

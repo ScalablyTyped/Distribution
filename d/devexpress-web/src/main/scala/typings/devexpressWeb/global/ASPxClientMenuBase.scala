@@ -192,6 +192,5 @@ object ASPxClientMenuBase {
     * Returns a collection of client menu objects.
     */
   /* static member */
-  @scala.inline
-  def GetMenuCollection(): typings.devexpressWeb.ASPxClientMenuCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMenuCollection")().asInstanceOf[typings.devexpressWeb.ASPxClientMenuCollection]
+  inline def GetMenuCollection(): typings.devexpressWeb.ASPxClientMenuCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMenuCollection")().asInstanceOf[typings.devexpressWeb.ASPxClientMenuCollection]
 }

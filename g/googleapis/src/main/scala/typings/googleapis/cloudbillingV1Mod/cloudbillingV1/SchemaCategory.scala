@@ -37,37 +37,27 @@ trait SchemaCategory extends StObject {
 }
 object SchemaCategory {
   
-  @scala.inline
-  def apply(): SchemaCategory = {
+  inline def apply(): SchemaCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCategory]
   }
   
-  @scala.inline
-  implicit class SchemaCategoryMutableBuilder[Self <: SchemaCategory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCategory](x: Self) {
     
-    @scala.inline
-    def setResourceFamily(value: String): Self = StObject.set(x, "resourceFamily", value.asInstanceOf[js.Any])
+    inline def setResourceFamily(value: String): Self = StObject.set(x, "resourceFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceFamilyUndefined: Self = StObject.set(x, "resourceFamily", js.undefined)
+    inline def setResourceFamilyUndefined: Self = StObject.set(x, "resourceFamily", js.undefined)
     
-    @scala.inline
-    def setResourceGroup(value: String): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
+    inline def setResourceGroup(value: String): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
+    inline def setResourceGroupUndefined: Self = StObject.set(x, "resourceGroup", js.undefined)
     
-    @scala.inline
-    def setServiceDisplayName(value: String): Self = StObject.set(x, "serviceDisplayName", value.asInstanceOf[js.Any])
+    inline def setServiceDisplayName(value: String): Self = StObject.set(x, "serviceDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDisplayNameUndefined: Self = StObject.set(x, "serviceDisplayName", js.undefined)
+    inline def setServiceDisplayNameUndefined: Self = StObject.set(x, "serviceDisplayName", js.undefined)
     
-    @scala.inline
-    def setUsageType(value: String): Self = StObject.set(x, "usageType", value.asInstanceOf[js.Any])
+    inline def setUsageType(value: String): Self = StObject.set(x, "usageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageTypeUndefined: Self = StObject.set(x, "usageType", js.undefined)
+    inline def setUsageTypeUndefined: Self = StObject.set(x, "usageType", js.undefined)
   }
 }

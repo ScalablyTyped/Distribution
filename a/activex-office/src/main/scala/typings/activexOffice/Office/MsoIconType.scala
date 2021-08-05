@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoIconType extends StObject
 object MsoIconType {
   
-  @scala.inline
-  def msoIconAlert: `2` = 2.asInstanceOf[`2`]
+  inline def msoIconAlert: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoIconAlertCritical: `7` = 7.asInstanceOf[`7`]
+  inline def msoIconAlertCritical: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoIconAlertInfo: `4` = 4.asInstanceOf[`4`]
+  inline def msoIconAlertInfo: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoIconAlertQuery: `6` = 6.asInstanceOf[`6`]
+  inline def msoIconAlertQuery: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoIconAlertWarning: `5` = 5.asInstanceOf[`5`]
+  inline def msoIconAlertWarning: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoIconNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoIconNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoIconTip: `3` = 3.asInstanceOf[`3`]
+  inline def msoIconTip: `3` = 3.asInstanceOf[`3`]
 }

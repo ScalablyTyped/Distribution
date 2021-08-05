@@ -14,22 +14,17 @@ trait IPropertyDefs extends StObject {
 }
 object IPropertyDefs {
   
-  @scala.inline
-  def apply(Clone: () => IPropertyDefs, Count: Double, Item: Double => IPropertyDef): IPropertyDefs = {
+  inline def apply(Clone: () => IPropertyDefs, Count: Double, Item: Double => IPropertyDef): IPropertyDefs = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.asInstanceOf[IPropertyDefs]
   }
   
-  @scala.inline
-  implicit class IPropertyDefsMutableBuilder[Self <: IPropertyDefs] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyDefs](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyDefs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyDefs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IPropertyDef): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IPropertyDef): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

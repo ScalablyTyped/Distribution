@@ -23,31 +23,23 @@ trait AwsRdsDbInstanceAssociatedRole extends StObject {
 }
 object AwsRdsDbInstanceAssociatedRole {
   
-  @scala.inline
-  def apply(): AwsRdsDbInstanceAssociatedRole = {
+  inline def apply(): AwsRdsDbInstanceAssociatedRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbInstanceAssociatedRole]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbInstanceAssociatedRoleMutableBuilder[Self <: AwsRdsDbInstanceAssociatedRole] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbInstanceAssociatedRole](x: Self) {
     
-    @scala.inline
-    def setFeatureName(value: NonEmptyString): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
+    inline def setFeatureName(value: NonEmptyString): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNameUndefined: Self = StObject.set(x, "FeatureName", js.undefined)
+    inline def setFeatureNameUndefined: Self = StObject.set(x, "FeatureName", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: NonEmptyString): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: NonEmptyString): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

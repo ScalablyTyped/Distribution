@@ -85,16 +85,13 @@ object cleartext {
     * Creates a new CleartextMessage object from text
     * @param text
     */
-  @scala.inline
-  def fromText(text: String): CleartextMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[CleartextMessage]
+  inline def fromText(text: String): CleartextMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[CleartextMessage]
   
   /**
     * reads an OpenPGP cleartext signed message and returns a CleartextMessage object
     * @param armoredText text to be parsed
     * @returns new cleartext message object
     */
-  @scala.inline
-  def readArmored(armoredText: String): js.Promise[CleartextMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CleartextMessage]]
-  @scala.inline
-  def readArmored(armoredText: ReadableStream[String]): js.Promise[CleartextMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CleartextMessage]]
+  inline def readArmored(armoredText: String): js.Promise[CleartextMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CleartextMessage]]
+  inline def readArmored(armoredText: ReadableStream[String]): js.Promise[CleartextMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("readArmored")(armoredText.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CleartextMessage]]
 }

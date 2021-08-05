@@ -31,35 +31,26 @@ object teamsMod {
   }
   object CreateTeamProps {
     
-    @scala.inline
-    def apply(managers: js.Array[String], name: String, workers: js.Array[String]): CreateTeamProps = {
+    inline def apply(managers: js.Array[String], name: String, workers: js.Array[String]): CreateTeamProps = {
       val __obj = js.Dynamic.literal(managers = managers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], workers = workers.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateTeamProps]
     }
     
-    @scala.inline
-    implicit class CreateTeamPropsMutableBuilder[Self <: CreateTeamProps] (val x: Self) extends AnyVal {
+    extension [Self <: CreateTeamProps](x: Self) {
       
-      @scala.inline
-      def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+      inline def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
+      inline def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
       
-      @scala.inline
-      def setManagers(value: js.Array[String]): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
+      inline def setManagers(value: js.Array[String]): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagersVarargs(value: String*): Self = StObject.set(x, "managers", js.Array(value :_*))
+      inline def setManagersVarargs(value: String*): Self = StObject.set(x, "managers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkers(value: js.Array[String]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: js.Array[String]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersVarargs(value: String*): Self = StObject.set(x, "workers", js.Array(value :_*))
+      inline def setWorkersVarargs(value: String*): Self = StObject.set(x, "workers", js.Array(value :_*))
     }
   }
   
@@ -81,8 +72,7 @@ object teamsMod {
   }
   object OnfleetTeam {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hub: String,
       id: String,
       managers: js.Array[String],
@@ -95,35 +85,25 @@ object teamsMod {
       __obj.asInstanceOf[OnfleetTeam]
     }
     
-    @scala.inline
-    implicit class OnfleetTeamMutableBuilder[Self <: OnfleetTeam] (val x: Self) extends AnyVal {
+    extension [Self <: OnfleetTeam](x: Self) {
       
-      @scala.inline
-      def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+      inline def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagers(value: js.Array[String]): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
+      inline def setManagers(value: js.Array[String]): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagersVarargs(value: String*): Self = StObject.set(x, "managers", js.Array(value :_*))
+      inline def setManagersVarargs(value: String*): Self = StObject.set(x, "managers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      inline def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
+      inline def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkers(value: js.Array[String]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: js.Array[String]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersVarargs(value: String*): Self = StObject.set(x, "workers", js.Array(value :_*))
+      inline def setWorkersVarargs(value: String*): Self = StObject.set(x, "workers", js.Array(value :_*))
     }
   }
   
@@ -154,44 +134,32 @@ object teamsMod {
   }
   object UpdateTeamProps {
     
-    @scala.inline
-    def apply(): UpdateTeamProps = {
+    inline def apply(): UpdateTeamProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateTeamProps]
     }
     
-    @scala.inline
-    implicit class UpdateTeamPropsMutableBuilder[Self <: UpdateTeamProps] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTeamProps](x: Self) {
       
-      @scala.inline
-      def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
+      inline def setHub(value: String): Self = StObject.set(x, "hub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
+      inline def setHubUndefined: Self = StObject.set(x, "hub", js.undefined)
       
-      @scala.inline
-      def setManagers(value: js.Array[String]): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
+      inline def setManagers(value: js.Array[String]): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagersUndefined: Self = StObject.set(x, "managers", js.undefined)
+      inline def setManagersUndefined: Self = StObject.set(x, "managers", js.undefined)
       
-      @scala.inline
-      def setManagersVarargs(value: String*): Self = StObject.set(x, "managers", js.Array(value :_*))
+      inline def setManagersVarargs(value: String*): Self = StObject.set(x, "managers", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setWorkers(value: js.Array[String]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: js.Array[String]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+      inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
       
-      @scala.inline
-      def setWorkersVarargs(value: String*): Self = StObject.set(x, "workers", js.Array(value :_*))
+      inline def setWorkersVarargs(value: String*): Self = StObject.set(x, "workers", js.Array(value :_*))
     }
   }
 }

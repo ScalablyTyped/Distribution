@@ -10,19 +10,15 @@ trait NetworksUpdatePeeringRequest extends StObject {
 }
 object NetworksUpdatePeeringRequest {
   
-  @scala.inline
-  def apply(): NetworksUpdatePeeringRequest = {
+  inline def apply(): NetworksUpdatePeeringRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworksUpdatePeeringRequest]
   }
   
-  @scala.inline
-  implicit class NetworksUpdatePeeringRequestMutableBuilder[Self <: NetworksUpdatePeeringRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NetworksUpdatePeeringRequest](x: Self) {
     
-    @scala.inline
-    def setNetworkPeering(value: NetworkPeering): Self = StObject.set(x, "networkPeering", value.asInstanceOf[js.Any])
+    inline def setNetworkPeering(value: NetworkPeering): Self = StObject.set(x, "networkPeering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPeeringUndefined: Self = StObject.set(x, "networkPeering", js.undefined)
+    inline def setNetworkPeeringUndefined: Self = StObject.set(x, "networkPeering", js.undefined)
   }
 }

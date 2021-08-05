@@ -180,7 +180,7 @@ class QuestionPanelDynamicModel protected ()
     */
   val isRenderModeList: Boolean = js.native
   
-  val items: js.Array[ISurveyData] = js.native
+  /* protected */ val items: js.Array[ISurveyData] = js.native
   
   /**
     * The duplication value error text. Set it to show the text different from the default.

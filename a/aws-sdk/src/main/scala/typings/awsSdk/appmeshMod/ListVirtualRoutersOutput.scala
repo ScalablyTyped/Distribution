@@ -18,25 +18,19 @@ trait ListVirtualRoutersOutput extends StObject {
 }
 object ListVirtualRoutersOutput {
   
-  @scala.inline
-  def apply(virtualRouters: VirtualRouterList): ListVirtualRoutersOutput = {
+  inline def apply(virtualRouters: VirtualRouterList): ListVirtualRoutersOutput = {
     val __obj = js.Dynamic.literal(virtualRouters = virtualRouters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualRoutersOutput]
   }
   
-  @scala.inline
-  implicit class ListVirtualRoutersOutputMutableBuilder[Self <: ListVirtualRoutersOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVirtualRoutersOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVirtualRouters(value: VirtualRouterList): Self = StObject.set(x, "virtualRouters", value.asInstanceOf[js.Any])
+    inline def setVirtualRouters(value: VirtualRouterList): Self = StObject.set(x, "virtualRouters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualRoutersVarargs(value: VirtualRouterRef*): Self = StObject.set(x, "virtualRouters", js.Array(value :_*))
+    inline def setVirtualRoutersVarargs(value: VirtualRouterRef*): Self = StObject.set(x, "virtualRouters", js.Array(value :_*))
   }
 }

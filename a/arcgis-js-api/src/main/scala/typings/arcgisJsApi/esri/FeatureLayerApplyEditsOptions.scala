@@ -33,8 +33,7 @@ trait FeatureLayerApplyEditsOptions
 }
 object FeatureLayerApplyEditsOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object FeatureLayerApplyEditsOptions {
     __obj.asInstanceOf[FeatureLayerApplyEditsOptions]
   }
   
-  @scala.inline
-  implicit class FeatureLayerApplyEditsOptionsMutableBuilder[Self <: FeatureLayerApplyEditsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerApplyEditsOptions](x: Self) {
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
-    @scala.inline
-    def setGlobalIdUsed(value: Boolean): Self = StObject.set(x, "globalIdUsed", value.asInstanceOf[js.Any])
+    inline def setGlobalIdUsed(value: Boolean): Self = StObject.set(x, "globalIdUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalIdUsedUndefined: Self = StObject.set(x, "globalIdUsed", js.undefined)
+    inline def setGlobalIdUsedUndefined: Self = StObject.set(x, "globalIdUsed", js.undefined)
     
-    @scala.inline
-    def setRollbackOnFailureEnabled(value: Boolean): Self = StObject.set(x, "rollbackOnFailureEnabled", value.asInstanceOf[js.Any])
+    inline def setRollbackOnFailureEnabled(value: Boolean): Self = StObject.set(x, "rollbackOnFailureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollbackOnFailureEnabledUndefined: Self = StObject.set(x, "rollbackOnFailureEnabled", js.undefined)
+    inline def setRollbackOnFailureEnabledUndefined: Self = StObject.set(x, "rollbackOnFailureEnabled", js.undefined)
   }
 }

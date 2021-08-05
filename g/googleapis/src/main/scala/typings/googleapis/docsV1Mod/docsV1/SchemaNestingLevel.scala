@@ -91,61 +91,43 @@ trait SchemaNestingLevel extends StObject {
 }
 object SchemaNestingLevel {
   
-  @scala.inline
-  def apply(): SchemaNestingLevel = {
+  inline def apply(): SchemaNestingLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNestingLevel]
   }
   
-  @scala.inline
-  implicit class SchemaNestingLevelMutableBuilder[Self <: SchemaNestingLevel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNestingLevel](x: Self) {
     
-    @scala.inline
-    def setBulletAlignment(value: String): Self = StObject.set(x, "bulletAlignment", value.asInstanceOf[js.Any])
+    inline def setBulletAlignment(value: String): Self = StObject.set(x, "bulletAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletAlignmentUndefined: Self = StObject.set(x, "bulletAlignment", js.undefined)
+    inline def setBulletAlignmentUndefined: Self = StObject.set(x, "bulletAlignment", js.undefined)
     
-    @scala.inline
-    def setGlyphFormat(value: String): Self = StObject.set(x, "glyphFormat", value.asInstanceOf[js.Any])
+    inline def setGlyphFormat(value: String): Self = StObject.set(x, "glyphFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphFormatUndefined: Self = StObject.set(x, "glyphFormat", js.undefined)
+    inline def setGlyphFormatUndefined: Self = StObject.set(x, "glyphFormat", js.undefined)
     
-    @scala.inline
-    def setGlyphSymbol(value: String): Self = StObject.set(x, "glyphSymbol", value.asInstanceOf[js.Any])
+    inline def setGlyphSymbol(value: String): Self = StObject.set(x, "glyphSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphSymbolUndefined: Self = StObject.set(x, "glyphSymbol", js.undefined)
+    inline def setGlyphSymbolUndefined: Self = StObject.set(x, "glyphSymbol", js.undefined)
     
-    @scala.inline
-    def setGlyphType(value: String): Self = StObject.set(x, "glyphType", value.asInstanceOf[js.Any])
+    inline def setGlyphType(value: String): Self = StObject.set(x, "glyphType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphTypeUndefined: Self = StObject.set(x, "glyphType", js.undefined)
+    inline def setGlyphTypeUndefined: Self = StObject.set(x, "glyphType", js.undefined)
     
-    @scala.inline
-    def setIndentFirstLine(value: SchemaDimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
+    inline def setIndentFirstLine(value: SchemaDimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
+    inline def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
     
-    @scala.inline
-    def setIndentStart(value: SchemaDimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
+    inline def setIndentStart(value: SchemaDimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
+    inline def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
     
-    @scala.inline
-    def setStartNumber(value: Double): Self = StObject.set(x, "startNumber", value.asInstanceOf[js.Any])
+    inline def setStartNumber(value: Double): Self = StObject.set(x, "startNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartNumberUndefined: Self = StObject.set(x, "startNumber", js.undefined)
+    inline def setStartNumberUndefined: Self = StObject.set(x, "startNumber", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

@@ -68,8 +68,7 @@ trait SystemInfoEthernetNetwork
 }
 object SystemInfoEthernetNetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cable: String,
     dns: String,
     gateway: String,
@@ -84,34 +83,24 @@ object SystemInfoEthernetNetwork {
     __obj.asInstanceOf[SystemInfoEthernetNetwork]
   }
   
-  @scala.inline
-  implicit class SystemInfoEthernetNetworkMutableBuilder[Self <: SystemInfoEthernetNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoEthernetNetwork](x: Self) {
     
-    @scala.inline
-    def setCable(value: String): Self = StObject.set(x, "cable", value.asInstanceOf[js.Any])
+    inline def setCable(value: String): Self = StObject.set(x, "cable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+    inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = StObject.set(x, "ipMode", value.asInstanceOf[js.Any])
+    inline def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = StObject.set(x, "ipMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
+    inline def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
   }
 }

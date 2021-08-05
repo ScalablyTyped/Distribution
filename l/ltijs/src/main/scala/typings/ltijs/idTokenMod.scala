@@ -26,8 +26,7 @@ object idTokenMod {
   }
   object IdToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endpoint: LineItem,
       iss: String,
       issuerCode: String,
@@ -40,32 +39,23 @@ object idTokenMod {
       __obj.asInstanceOf[IdToken]
     }
     
-    @scala.inline
-    implicit class IdTokenMutableBuilder[Self <: IdToken] (val x: Self) extends AnyVal {
+    extension [Self <: IdToken](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: LineItem): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: LineItem): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
+      inline def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerCode(value: String): Self = StObject.set(x, "issuerCode", value.asInstanceOf[js.Any])
+      inline def setIssuerCode(value: String): Self = StObject.set(x, "issuerCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformInfo(value: PlatformInfo): Self = StObject.set(x, "platformInfo", value.asInstanceOf[js.Any])
+      inline def setPlatformInfo(value: PlatformInfo): Self = StObject.set(x, "platformInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+      inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,26 +71,20 @@ object idTokenMod {
   }
   object UserInfo {
     
-    @scala.inline
-    def apply(email: String, family_name: String, given_name: String, name: String): UserInfo = {
+    inline def apply(email: String, family_name: String, given_name: String, name: String): UserInfo = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], family_name = family_name.asInstanceOf[js.Any], given_name = given_name.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserInfo]
     }
     
-    @scala.inline
-    implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UserInfo](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
+      inline def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
+      inline def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

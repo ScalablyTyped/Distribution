@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Parameter extends StObject {
   
-  @JSName("ADODB.Parameter_typekey")
+  /* private */ @JSName("ADODB.Parameter_typekey")
   var ADODBDotParameter_typekey: Parameter
   
   def AppendChunk(Val: js.Any): Unit
@@ -35,8 +35,7 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADODBDotParameter_typekey: Parameter,
     AppendChunk: js.Any => Unit,
     Attributes: ParameterAttributesEnum,
@@ -54,40 +53,28 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setADODBDotParameter_typekey(value: Parameter): Self = StObject.set(x, "ADODB.Parameter_typekey", value.asInstanceOf[js.Any])
+    inline def setADODBDotParameter_typekey(value: Parameter): Self = StObject.set(x, "ADODB.Parameter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendChunk(value: js.Any => Unit): Self = StObject.set(x, "AppendChunk", js.Any.fromFunction1(value))
+    inline def setAppendChunk(value: js.Any => Unit): Self = StObject.set(x, "AppendChunk", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttributes(value: ParameterAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ParameterAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: ParameterDirectionEnum): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: ParameterDirectionEnum): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericScale(value: Double): Self = StObject.set(x, "NumericScale", value.asInstanceOf[js.Any])
+    inline def setNumericScale(value: Double): Self = StObject.set(x, "NumericScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

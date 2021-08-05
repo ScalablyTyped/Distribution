@@ -12,25 +12,19 @@ trait Init[B /* <: A */, A] extends StObject {
 }
 object Init {
   
-  @scala.inline
-  def apply[B /* <: A */, A](init: js.Array[B], rest: js.Array[A]): Init[B, A] = {
+  inline def apply[B /* <: A */, A](init: js.Array[B], rest: js.Array[A]): Init[B, A] = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any])
     __obj.asInstanceOf[Init[B, A]]
   }
   
-  @scala.inline
-  implicit class InitMutableBuilder[Self <: Init[?, ?], B /* <: A */, A] (val x: Self & (Init[B, A])) extends AnyVal {
+  extension [Self <: Init[?, ?], B /* <: A */, A](x: Self & (Init[B, A])) {
     
-    @scala.inline
-    def setInit(value: js.Array[B]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: js.Array[B]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitVarargs(value: B*): Self = StObject.set(x, "init", js.Array(value :_*))
+    inline def setInitVarargs(value: B*): Self = StObject.set(x, "init", js.Array(value :_*))
     
-    @scala.inline
-    def setRest(value: js.Array[A]): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+    inline def setRest(value: js.Array[A]): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestVarargs(value: A*): Self = StObject.set(x, "rest", js.Array(value :_*))
+    inline def setRestVarargs(value: A*): Self = StObject.set(x, "rest", js.Array(value :_*))
   }
 }

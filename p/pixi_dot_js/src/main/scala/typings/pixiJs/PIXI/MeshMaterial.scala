@@ -66,8 +66,7 @@ trait MeshMaterial
 }
 object MeshMaterial {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alpha: Double,
     batchable: Boolean,
     pluginName: String,
@@ -82,28 +81,20 @@ object MeshMaterial {
     __obj.asInstanceOf[MeshMaterial]
   }
   
-  @scala.inline
-  implicit class MeshMaterialMutableBuilder[Self <: MeshMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: MeshMaterial](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchable(value: Boolean): Self = StObject.set(x, "batchable", value.asInstanceOf[js.Any])
+    inline def setBatchable(value: Boolean): Self = StObject.set(x, "batchable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
+    inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+    inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUvMatrix(value: TextureMatrix): Self = StObject.set(x, "uvMatrix", value.asInstanceOf[js.Any])
+    inline def setUvMatrix(value: TextureMatrix): Self = StObject.set(x, "uvMatrix", value.asInstanceOf[js.Any])
   }
 }

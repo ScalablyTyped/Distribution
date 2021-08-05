@@ -12,8 +12,7 @@ trait PopupEvent
 }
 object PopupEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     layer: js.Any,
     popup: Popup_,
     propagatedFrom: js.Any,
@@ -26,10 +25,8 @@ object PopupEvent {
     __obj.asInstanceOf[PopupEvent]
   }
   
-  @scala.inline
-  implicit class PopupEventMutableBuilder[Self <: PopupEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PopupEvent](x: Self) {
     
-    @scala.inline
-    def setPopup(value: Popup_): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: Popup_): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
   }
 }

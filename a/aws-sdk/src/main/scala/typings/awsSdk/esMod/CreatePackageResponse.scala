@@ -13,19 +13,15 @@ trait CreatePackageResponse extends StObject {
 }
 object CreatePackageResponse {
   
-  @scala.inline
-  def apply(): CreatePackageResponse = {
+  inline def apply(): CreatePackageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePackageResponse]
   }
   
-  @scala.inline
-  implicit class CreatePackageResponseMutableBuilder[Self <: CreatePackageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePackageResponse](x: Self) {
     
-    @scala.inline
-    def setPackageDetails(value: PackageDetails): Self = StObject.set(x, "PackageDetails", value.asInstanceOf[js.Any])
+    inline def setPackageDetails(value: PackageDetails): Self = StObject.set(x, "PackageDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageDetailsUndefined: Self = StObject.set(x, "PackageDetails", js.undefined)
+    inline def setPackageDetailsUndefined: Self = StObject.set(x, "PackageDetails", js.undefined)
   }
 }

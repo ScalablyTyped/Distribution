@@ -13,19 +13,15 @@ trait DescribeCachediSCSIVolumesInput extends StObject {
 }
 object DescribeCachediSCSIVolumesInput {
   
-  @scala.inline
-  def apply(VolumeARNs: VolumeARNs): DescribeCachediSCSIVolumesInput = {
+  inline def apply(VolumeARNs: VolumeARNs): DescribeCachediSCSIVolumesInput = {
     val __obj = js.Dynamic.literal(VolumeARNs = VolumeARNs.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCachediSCSIVolumesInput]
   }
   
-  @scala.inline
-  implicit class DescribeCachediSCSIVolumesInputMutableBuilder[Self <: DescribeCachediSCSIVolumesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCachediSCSIVolumesInput](x: Self) {
     
-    @scala.inline
-    def setVolumeARNs(value: VolumeARNs): Self = StObject.set(x, "VolumeARNs", value.asInstanceOf[js.Any])
+    inline def setVolumeARNs(value: VolumeARNs): Self = StObject.set(x, "VolumeARNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNsVarargs(value: VolumeARN*): Self = StObject.set(x, "VolumeARNs", js.Array(value :_*))
+    inline def setVolumeARNsVarargs(value: VolumeARN*): Self = StObject.set(x, "VolumeARNs", js.Array(value :_*))
   }
 }

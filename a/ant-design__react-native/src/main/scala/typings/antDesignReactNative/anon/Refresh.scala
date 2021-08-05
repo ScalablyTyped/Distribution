@@ -10,16 +10,13 @@ trait Refresh extends StObject {
 }
 object Refresh {
   
-  @scala.inline
-  def apply(refresh: () => Unit): Refresh = {
+  inline def apply(refresh: () => Unit): Refresh = {
     val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction0(refresh))
     __obj.asInstanceOf[Refresh]
   }
   
-  @scala.inline
-  implicit class RefreshMutableBuilder[Self <: Refresh] (val x: Self) extends AnyVal {
+  extension [Self <: Refresh](x: Self) {
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }
 }

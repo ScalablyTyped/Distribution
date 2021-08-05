@@ -15,34 +15,25 @@ trait IListContextsResponse extends StObject {
 }
 object IListContextsResponse {
   
-  @scala.inline
-  def apply(): IListContextsResponse = {
+  inline def apply(): IListContextsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListContextsResponse]
   }
   
-  @scala.inline
-  implicit class IListContextsResponseMutableBuilder[Self <: IListContextsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IListContextsResponse](x: Self) {
     
-    @scala.inline
-    def setContexts(value: js.Array[IContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setContexts(value: js.Array[IContext]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextsNull: Self = StObject.set(x, "contexts", null)
+    inline def setContextsNull: Self = StObject.set(x, "contexts", null)
     
-    @scala.inline
-    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+    inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    @scala.inline
-    def setContextsVarargs(value: IContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: IContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

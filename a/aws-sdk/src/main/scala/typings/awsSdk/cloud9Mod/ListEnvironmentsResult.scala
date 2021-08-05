@@ -18,28 +18,21 @@ trait ListEnvironmentsResult extends StObject {
 }
 object ListEnvironmentsResult {
   
-  @scala.inline
-  def apply(): ListEnvironmentsResult = {
+  inline def apply(): ListEnvironmentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEnvironmentsResult]
   }
   
-  @scala.inline
-  implicit class ListEnvironmentsResultMutableBuilder[Self <: ListEnvironmentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListEnvironmentsResult](x: Self) {
     
-    @scala.inline
-    def setEnvironmentIds(value: EnvironmentIdList): Self = StObject.set(x, "environmentIds", value.asInstanceOf[js.Any])
+    inline def setEnvironmentIds(value: EnvironmentIdList): Self = StObject.set(x, "environmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdsUndefined: Self = StObject.set(x, "environmentIds", js.undefined)
+    inline def setEnvironmentIdsUndefined: Self = StObject.set(x, "environmentIds", js.undefined)
     
-    @scala.inline
-    def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value :_*))
+    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -55,8 +55,7 @@ trait Parameterization extends StObject {
 }
 object Parameterization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findParameterByName: String => Parameter,
     getAllParameterNames: () => js.Array[String],
     getAllParameters: () => js.Any,
@@ -69,28 +68,20 @@ object Parameterization {
     __obj.asInstanceOf[Parameterization]
   }
   
-  @scala.inline
-  implicit class ParameterizationMutableBuilder[Self <: Parameterization] (val x: Self) extends AnyVal {
+  extension [Self <: Parameterization](x: Self) {
     
-    @scala.inline
-    def setFindParameterByName(value: String => Parameter): Self = StObject.set(x, "findParameterByName", js.Any.fromFunction1(value))
+    inline def setFindParameterByName(value: String => Parameter): Self = StObject.set(x, "findParameterByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllParameterNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllParameterNames", js.Any.fromFunction0(value))
+    inline def setGetAllParameterNames(value: () => js.Array[String]): Self = StObject.set(x, "getAllParameterNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllParameters(value: () => js.Any): Self = StObject.set(x, "getAllParameters", js.Any.fromFunction0(value))
+    inline def setGetAllParameters(value: () => js.Any): Self = StObject.set(x, "getAllParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEntitySet(value: () => EntitySet): Self = StObject.set(x, "getEntitySet", js.Any.fromFunction0(value))
+    inline def setGetEntitySet(value: () => EntitySet): Self = StObject.set(x, "getEntitySet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
+    inline def setGetEntityType(value: () => EntityType): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNavigationPropertyToQueryResult(value: () => QueryResult): Self = StObject.set(x, "getNavigationPropertyToQueryResult", js.Any.fromFunction0(value))
+    inline def setGetNavigationPropertyToQueryResult(value: () => QueryResult): Self = StObject.set(x, "getNavigationPropertyToQueryResult", js.Any.fromFunction0(value))
   }
 }

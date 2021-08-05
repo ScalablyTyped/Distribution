@@ -24,26 +24,20 @@ object mod extends Shortcut {
   }
   object CustomPropertiesObject {
     
-    @scala.inline
-    def apply(): CustomPropertiesObject = {
+    inline def apply(): CustomPropertiesObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomPropertiesObject]
     }
     
-    @scala.inline
-    implicit class CustomPropertiesObjectMutableBuilder[Self <: CustomPropertiesObject] (val x: Self) extends AnyVal {
+    extension [Self <: CustomPropertiesObject](x: Self) {
       
-      @scala.inline
-      def `setCustom-properties`(value: StringDictionary[String]): Self = StObject.set(x, "custom-properties", value.asInstanceOf[js.Any])
+      inline def `setCustom-properties`(value: StringDictionary[String]): Self = StObject.set(x, "custom-properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCustom-propertiesUndefined`: Self = StObject.set(x, "custom-properties", js.undefined)
+      inline def `setCustom-propertiesUndefined`: Self = StObject.set(x, "custom-properties", js.undefined)
       
-      @scala.inline
-      def setCustomProperties(value: StringDictionary[String]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
+      inline def setCustomProperties(value: StringDictionary[String]): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
+      inline def setCustomPropertiesUndefined: Self = StObject.set(x, "customProperties", js.undefined)
     }
   }
   
@@ -102,44 +96,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExportTo(value: ExportSources | js.Array[ExportSources]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
+      inline def setExportTo(value: ExportSources | js.Array[ExportSources]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportToFunction1(value: /* customProperties */ CustomPropertiesObject => js.Any): Self = StObject.set(x, "exportTo", js.Any.fromFunction1(value))
+      inline def setExportToFunction1(value: /* customProperties */ CustomPropertiesObject => js.Any): Self = StObject.set(x, "exportTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
+      inline def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
       
-      @scala.inline
-      def setExportToVarargs(value: ExportSources*): Self = StObject.set(x, "exportTo", js.Array(value :_*))
+      inline def setExportToVarargs(value: ExportSources*): Self = StObject.set(x, "exportTo", js.Array(value :_*))
       
-      @scala.inline
-      def setImportFrom(value: ImportSources | js.Array[ImportSources]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
+      inline def setImportFrom(value: ImportSources | js.Array[ImportSources]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportFromFunction0(value: () => CustomPropertiesObject): Self = StObject.set(x, "importFrom", js.Any.fromFunction0(value))
+      inline def setImportFromFunction0(value: () => CustomPropertiesObject): Self = StObject.set(x, "importFrom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)
+      inline def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)
       
-      @scala.inline
-      def setImportFromVarargs(value: ImportSources*): Self = StObject.set(x, "importFrom", js.Array(value :_*))
+      inline def setImportFromVarargs(value: ImportSources*): Self = StObject.set(x, "importFrom", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
     }
   }
   

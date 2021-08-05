@@ -15,25 +15,19 @@ trait ZoneOptions extends StObject {
 }
 object ZoneOptions {
   
-  @scala.inline
-  def apply(): ZoneOptions = {
+  inline def apply(): ZoneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoneOptions]
   }
   
-  @scala.inline
-  implicit class ZoneOptionsMutableBuilder[Self <: ZoneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneOptions](x: Self) {
     
-    @scala.inline
-    def setKeepCalendarTime(value: Boolean): Self = StObject.set(x, "keepCalendarTime", value.asInstanceOf[js.Any])
+    inline def setKeepCalendarTime(value: Boolean): Self = StObject.set(x, "keepCalendarTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepCalendarTimeUndefined: Self = StObject.set(x, "keepCalendarTime", js.undefined)
+    inline def setKeepCalendarTimeUndefined: Self = StObject.set(x, "keepCalendarTime", js.undefined)
     
-    @scala.inline
-    def setKeepLocalTime(value: Boolean): Self = StObject.set(x, "keepLocalTime", value.asInstanceOf[js.Any])
+    inline def setKeepLocalTime(value: Boolean): Self = StObject.set(x, "keepLocalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepLocalTimeUndefined: Self = StObject.set(x, "keepLocalTime", js.undefined)
+    inline def setKeepLocalTimeUndefined: Self = StObject.set(x, "keepLocalTime", js.undefined)
   }
 }

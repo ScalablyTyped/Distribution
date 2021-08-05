@@ -15,23 +15,18 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(properties: WorksheetBasicProperties): Data = {
+    inline def apply(properties: WorksheetBasicProperties): Data = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setProperties(value: WorksheetBasicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: WorksheetBasicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,20 +38,16 @@ object anon {
   }
   object Insert {
     
-    @scala.inline
-    def apply(insert: Boolean, raw: Boolean): Insert = {
+    inline def apply(insert: Boolean, raw: Boolean): Insert = {
       val __obj = js.Dynamic.literal(insert = insert.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Insert]
     }
     
-    @scala.inline
-    implicit class InsertMutableBuilder[Self <: Insert] (val x: Self) extends AnyVal {
+    extension [Self <: Insert](x: Self) {
       
-      @scala.inline
-      def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
 }

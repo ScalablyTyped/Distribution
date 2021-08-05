@@ -28,8 +28,7 @@ trait XShapeEventListener
 }
 object XShapeEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     click: (XShape, MouseEvent) => Unit,
     disposing: EventObject => Unit,
@@ -40,10 +39,8 @@ object XShapeEventListener {
     __obj.asInstanceOf[XShapeEventListener]
   }
   
-  @scala.inline
-  implicit class XShapeEventListenerMutableBuilder[Self <: XShapeEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeEventListener](x: Self) {
     
-    @scala.inline
-    def setClick(value: (XShape, MouseEvent) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    inline def setClick(value: (XShape, MouseEvent) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
   }
 }

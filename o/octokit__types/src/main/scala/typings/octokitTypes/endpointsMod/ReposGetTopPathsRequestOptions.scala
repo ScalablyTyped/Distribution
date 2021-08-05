@@ -20,25 +20,19 @@ trait ReposGetTopPathsRequestOptions extends StObject {
 }
 object ReposGetTopPathsRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposGetTopPathsRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposGetTopPathsRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/traffic/popular/paths")
     __obj.asInstanceOf[ReposGetTopPathsRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposGetTopPathsRequestOptionsMutableBuilder[Self <: ReposGetTopPathsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetTopPathsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashpaths): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashpaths): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

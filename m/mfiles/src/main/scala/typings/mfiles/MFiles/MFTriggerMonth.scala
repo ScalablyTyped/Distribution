@@ -35,42 +35,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFTriggerMonth extends StObject
 object MFTriggerMonth {
   
-  @scala.inline
-  def April: `8` = 8.asInstanceOf[`8`]
+  inline def April: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def August: `128` = 128.asInstanceOf[`128`]
+  inline def August: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def December: `2048` = 2048.asInstanceOf[`2048`]
+  inline def December: `2048` = 2048.asInstanceOf[`2048`]
   
-  @scala.inline
-  def EveryMonth: `4095` = 4095.asInstanceOf[`4095`]
+  inline def EveryMonth: `4095` = 4095.asInstanceOf[`4095`]
   
-  @scala.inline
-  def February: `2` = 2.asInstanceOf[`2`]
+  inline def February: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def January: `1` = 1.asInstanceOf[`1`]
+  inline def January: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def July: `64` = 64.asInstanceOf[`64`]
+  inline def July: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def June: `32` = 32.asInstanceOf[`32`]
+  inline def June: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def March: `4` = 4.asInstanceOf[`4`]
+  inline def March: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def May: `16` = 16.asInstanceOf[`16`]
+  inline def May: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def November: `1024` = 1024.asInstanceOf[`1024`]
+  inline def November: `1024` = 1024.asInstanceOf[`1024`]
   
-  @scala.inline
-  def October: `512` = 512.asInstanceOf[`512`]
+  inline def October: `512` = 512.asInstanceOf[`512`]
   
-  @scala.inline
-  def September: `256` = 256.asInstanceOf[`256`]
+  inline def September: `256` = 256.asInstanceOf[`256`]
 }

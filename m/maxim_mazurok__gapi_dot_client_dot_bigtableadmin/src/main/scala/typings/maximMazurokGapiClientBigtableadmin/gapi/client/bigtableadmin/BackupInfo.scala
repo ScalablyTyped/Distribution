@@ -20,37 +20,27 @@ trait BackupInfo extends StObject {
 }
 object BackupInfo {
   
-  @scala.inline
-  def apply(): BackupInfo = {
+  inline def apply(): BackupInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupInfo]
   }
   
-  @scala.inline
-  implicit class BackupInfoMutableBuilder[Self <: BackupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BackupInfo](x: Self) {
     
-    @scala.inline
-    def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
+    inline def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setSourceTable(value: String): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
+    inline def setSourceTable(value: String): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
+    inline def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

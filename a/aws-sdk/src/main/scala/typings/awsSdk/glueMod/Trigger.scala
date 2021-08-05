@@ -53,70 +53,49 @@ trait Trigger extends StObject {
 }
 object Trigger {
   
-  @scala.inline
-  def apply(): Trigger = {
+  inline def apply(): Trigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Trigger]
   }
   
-  @scala.inline
-  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
+  extension [Self <: Trigger](x: Self) {
     
-    @scala.inline
-    def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setId(value: IdString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicateUndefined: Self = StObject.set(x, "Predicate", js.undefined)
+    inline def setPredicateUndefined: Self = StObject.set(x, "Predicate", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: GenericString): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: GenericString): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
-    @scala.inline
-    def setState(value: TriggerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TriggerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setType(value: TriggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: TriggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setWorkflowName(value: NameString): Self = StObject.set(x, "WorkflowName", value.asInstanceOf[js.Any])
+    inline def setWorkflowName(value: NameString): Self = StObject.set(x, "WorkflowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowNameUndefined: Self = StObject.set(x, "WorkflowName", js.undefined)
+    inline def setWorkflowNameUndefined: Self = StObject.set(x, "WorkflowName", js.undefined)
   }
 }

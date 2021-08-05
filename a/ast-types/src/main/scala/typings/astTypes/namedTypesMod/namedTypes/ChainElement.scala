@@ -17,13 +17,10 @@ object ChainElement {
   @js.native
   val ^ : Type[ChainElement] = js.native
   
-  @scala.inline
-  implicit class ChainElementMutableBuilder[Self <: ChainElement] (val x: Self) extends AnyVal {
+  extension [Self <: ChainElement](x: Self) {
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

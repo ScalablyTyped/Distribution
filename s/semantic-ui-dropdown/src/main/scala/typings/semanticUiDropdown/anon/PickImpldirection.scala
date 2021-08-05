@@ -14,16 +14,13 @@ trait PickImpldirection extends StObject {
 }
 object PickImpldirection {
   
-  @scala.inline
-  def apply(direction: auto | upward | downward): PickImpldirection = {
+  inline def apply(direction: auto | upward | downward): PickImpldirection = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldirection]
   }
   
-  @scala.inline
-  implicit class PickImpldirectionMutableBuilder[Self <: PickImpldirection] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldirection](x: Self) {
     
-    @scala.inline
-    def setDirection(value: auto | upward | downward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: auto | upward | downward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

@@ -34,91 +34,63 @@ trait CustomerUpdateRequest extends StObject {
 }
 object CustomerUpdateRequest {
   
-  @scala.inline
-  def apply(): CustomerUpdateRequest = {
+  inline def apply(): CustomerUpdateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerUpdateRequest]
   }
   
-  @scala.inline
-  implicit class CustomerUpdateRequestMutableBuilder[Self <: CustomerUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
-    @scala.inline
-    def setCreditCard(value: CreditCardUpdateRequest): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
+    inline def setCreditCard(value: CreditCardUpdateRequest): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
+    inline def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
     
-    @scala.inline
-    def setCustomFields(value: js.Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: js.Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setDefaultPaymentMethodToken(value: String): Self = StObject.set(x, "defaultPaymentMethodToken", value.asInstanceOf[js.Any])
+    inline def setDefaultPaymentMethodToken(value: String): Self = StObject.set(x, "defaultPaymentMethodToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPaymentMethodTokenUndefined: Self = StObject.set(x, "defaultPaymentMethodToken", js.undefined)
+    inline def setDefaultPaymentMethodTokenUndefined: Self = StObject.set(x, "defaultPaymentMethodToken", js.undefined)
     
-    @scala.inline
-    def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
+    inline def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceDataUndefined: Self = StObject.set(x, "deviceData", js.undefined)
+    inline def setDeviceDataUndefined: Self = StObject.set(x, "deviceData", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
+    inline def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
+    inline def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+    inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+    inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
     
-    @scala.inline
-    def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethodNonceUndefined: Self = StObject.set(x, "paymentMethodNonce", js.undefined)
+    inline def setPaymentMethodNonceUndefined: Self = StObject.set(x, "paymentMethodNonce", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setRiskData(value: CustomerRiskData): Self = StObject.set(x, "riskData", value.asInstanceOf[js.Any])
+    inline def setRiskData(value: CustomerRiskData): Self = StObject.set(x, "riskData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiskDataUndefined: Self = StObject.set(x, "riskData", js.undefined)
+    inline def setRiskDataUndefined: Self = StObject.set(x, "riskData", js.undefined)
     
-    @scala.inline
-    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+    inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

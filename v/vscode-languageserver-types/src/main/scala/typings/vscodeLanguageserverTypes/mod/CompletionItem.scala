@@ -131,8 +131,7 @@ trait CompletionItem extends StObject {
 }
 object CompletionItem {
   
-  @scala.inline
-  def apply(label: String): CompletionItem = {
+  inline def apply(label: String): CompletionItem = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionItem]
   }
@@ -145,112 +144,76 @@ object CompletionItem {
     * Create a completion item and seed it with a label.
     * @param label The completion item's label
     */
-  @scala.inline
-  def create(label: String): CompletionItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[CompletionItem]
+  inline def create(label: String): CompletionItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[CompletionItem]
   
-  @scala.inline
-  implicit class CompletionItemMutableBuilder[Self <: CompletionItem] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionItem](x: Self) {
     
-    @scala.inline
-    def setAdditionalTextEdits(value: js.Array[TextEdit]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
+    inline def setAdditionalTextEdits(value: js.Array[TextEdit]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
+    inline def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
     
-    @scala.inline
-    def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
+    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setCommitCharacters(value: js.Array[String]): Self = StObject.set(x, "commitCharacters", value.asInstanceOf[js.Any])
+    inline def setCommitCharacters(value: js.Array[String]): Self = StObject.set(x, "commitCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitCharactersUndefined: Self = StObject.set(x, "commitCharacters", js.undefined)
+    inline def setCommitCharactersUndefined: Self = StObject.set(x, "commitCharacters", js.undefined)
     
-    @scala.inline
-    def setCommitCharactersVarargs(value: String*): Self = StObject.set(x, "commitCharacters", js.Array(value :_*))
+    inline def setCommitCharactersVarargs(value: String*): Self = StObject.set(x, "commitCharacters", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setDocumentation(value: String | MarkupContent): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String | MarkupContent): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setFilterText(value: String): Self = StObject.set(x, "filterText", value.asInstanceOf[js.Any])
+    inline def setFilterText(value: String): Self = StObject.set(x, "filterText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTextUndefined: Self = StObject.set(x, "filterText", js.undefined)
+    inline def setFilterTextUndefined: Self = StObject.set(x, "filterText", js.undefined)
     
-    @scala.inline
-    def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
+    inline def setInsertText(value: String): Self = StObject.set(x, "insertText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTextFormat(value: InsertTextFormat): Self = StObject.set(x, "insertTextFormat", value.asInstanceOf[js.Any])
+    inline def setInsertTextFormat(value: InsertTextFormat): Self = StObject.set(x, "insertTextFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTextFormatUndefined: Self = StObject.set(x, "insertTextFormat", js.undefined)
+    inline def setInsertTextFormatUndefined: Self = StObject.set(x, "insertTextFormat", js.undefined)
     
-    @scala.inline
-    def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
+    inline def setInsertTextUndefined: Self = StObject.set(x, "insertText", js.undefined)
     
-    @scala.inline
-    def setKind(value: CompletionItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: CompletionItemKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreselect(value: Boolean): Self = StObject.set(x, "preselect", value.asInstanceOf[js.Any])
+    inline def setPreselect(value: Boolean): Self = StObject.set(x, "preselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreselectUndefined: Self = StObject.set(x, "preselect", js.undefined)
+    inline def setPreselectUndefined: Self = StObject.set(x, "preselect", js.undefined)
     
-    @scala.inline
-    def setSortText(value: String): Self = StObject.set(x, "sortText", value.asInstanceOf[js.Any])
+    inline def setSortText(value: String): Self = StObject.set(x, "sortText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortTextUndefined: Self = StObject.set(x, "sortText", js.undefined)
+    inline def setSortTextUndefined: Self = StObject.set(x, "sortText", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[CompletionItemTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[CompletionItemTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: CompletionItemTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: CompletionItemTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTextEdit(value: TextEdit): Self = StObject.set(x, "textEdit", value.asInstanceOf[js.Any])
+    inline def setTextEdit(value: TextEdit): Self = StObject.set(x, "textEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextEditUndefined: Self = StObject.set(x, "textEdit", js.undefined)
+    inline def setTextEditUndefined: Self = StObject.set(x, "textEdit", js.undefined)
   }
 }

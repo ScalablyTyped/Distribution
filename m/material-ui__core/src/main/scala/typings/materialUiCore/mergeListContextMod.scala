@@ -18,20 +18,16 @@ object mergeListContextMod extends Shortcut {
   }
   object MergeWithListContextProps {
     
-    @scala.inline
-    def apply(): MergeWithListContextProps = {
+    inline def apply(): MergeWithListContextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MergeWithListContextProps]
     }
     
-    @scala.inline
-    implicit class MergeWithListContextPropsMutableBuilder[Self <: MergeWithListContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: MergeWithListContextProps](x: Self) {
       
-      @scala.inline
-      def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+      inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+      inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     }
   }
   

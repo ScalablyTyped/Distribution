@@ -60,8 +60,7 @@ trait StartMedicalTranscriptionJobRequest extends StObject {
 }
 object StartMedicalTranscriptionJobRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LanguageCode: LanguageCode,
     Media: Media,
     MedicalTranscriptionJobName: TranscriptionJobName,
@@ -73,55 +72,38 @@ object StartMedicalTranscriptionJobRequest {
     __obj.asInstanceOf[StartMedicalTranscriptionJobRequest]
   }
   
-  @scala.inline
-  implicit class StartMedicalTranscriptionJobRequestMutableBuilder[Self <: StartMedicalTranscriptionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartMedicalTranscriptionJobRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaFormat(value: MediaFormat): Self = StObject.set(x, "MediaFormat", value.asInstanceOf[js.Any])
+    inline def setMediaFormat(value: MediaFormat): Self = StObject.set(x, "MediaFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaFormatUndefined: Self = StObject.set(x, "MediaFormat", js.undefined)
+    inline def setMediaFormatUndefined: Self = StObject.set(x, "MediaFormat", js.undefined)
     
-    @scala.inline
-    def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = StObject.set(x, "MediaSampleRateHertz", value.asInstanceOf[js.Any])
+    inline def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = StObject.set(x, "MediaSampleRateHertz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSampleRateHertzUndefined: Self = StObject.set(x, "MediaSampleRateHertz", js.undefined)
+    inline def setMediaSampleRateHertzUndefined: Self = StObject.set(x, "MediaSampleRateHertz", js.undefined)
     
-    @scala.inline
-    def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
+    inline def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = StObject.set(x, "MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputBucketName(value: OutputBucketName): Self = StObject.set(x, "OutputBucketName", value.asInstanceOf[js.Any])
+    inline def setOutputBucketName(value: OutputBucketName): Self = StObject.set(x, "OutputBucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputEncryptionKMSKeyId(value: KMSKeyId): Self = StObject.set(x, "OutputEncryptionKMSKeyId", value.asInstanceOf[js.Any])
+    inline def setOutputEncryptionKMSKeyId(value: KMSKeyId): Self = StObject.set(x, "OutputEncryptionKMSKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputEncryptionKMSKeyIdUndefined: Self = StObject.set(x, "OutputEncryptionKMSKeyId", js.undefined)
+    inline def setOutputEncryptionKMSKeyIdUndefined: Self = StObject.set(x, "OutputEncryptionKMSKeyId", js.undefined)
     
-    @scala.inline
-    def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
+    inline def setOutputKey(value: OutputKey): Self = StObject.set(x, "OutputKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
+    inline def setOutputKeyUndefined: Self = StObject.set(x, "OutputKey", js.undefined)
     
-    @scala.inline
-    def setSettings(value: MedicalTranscriptionSetting): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: MedicalTranscriptionSetting): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
-    @scala.inline
-    def setSpecialty(value: Specialty): Self = StObject.set(x, "Specialty", value.asInstanceOf[js.Any])
+    inline def setSpecialty(value: Specialty): Self = StObject.set(x, "Specialty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

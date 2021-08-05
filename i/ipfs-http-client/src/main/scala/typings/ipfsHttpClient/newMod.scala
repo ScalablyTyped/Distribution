@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object newMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[typings.cids.mod.^]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[typings.cids.mod.^]]]
+  inline def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[typings.cids.mod.^]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[typings.cids.mod.^]]]
   
   @JSImport("ipfs-http-client/dist/src/object/new", JSImport.Namespace)
   @js.native

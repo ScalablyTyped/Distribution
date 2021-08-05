@@ -13,19 +13,15 @@ trait CreateLocationS3Response extends StObject {
 }
 object CreateLocationS3Response {
   
-  @scala.inline
-  def apply(): CreateLocationS3Response = {
+  inline def apply(): CreateLocationS3Response = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLocationS3Response]
   }
   
-  @scala.inline
-  implicit class CreateLocationS3ResponseMutableBuilder[Self <: CreateLocationS3Response] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationS3Response](x: Self) {
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
   }
 }

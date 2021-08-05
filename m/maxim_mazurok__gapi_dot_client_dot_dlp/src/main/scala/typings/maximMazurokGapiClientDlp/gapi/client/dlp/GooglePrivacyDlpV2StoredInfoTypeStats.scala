@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2StoredInfoTypeStats extends StObject {
 }
 object GooglePrivacyDlpV2StoredInfoTypeStats {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2StoredInfoTypeStats = {
+  inline def apply(): GooglePrivacyDlpV2StoredInfoTypeStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2StoredInfoTypeStats]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2StoredInfoTypeStatsMutableBuilder[Self <: GooglePrivacyDlpV2StoredInfoTypeStats] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2StoredInfoTypeStats](x: Self) {
     
-    @scala.inline
-    def setLargeCustomDictionary(value: GooglePrivacyDlpV2LargeCustomDictionaryStats): Self = StObject.set(x, "largeCustomDictionary", value.asInstanceOf[js.Any])
+    inline def setLargeCustomDictionary(value: GooglePrivacyDlpV2LargeCustomDictionaryStats): Self = StObject.set(x, "largeCustomDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeCustomDictionaryUndefined: Self = StObject.set(x, "largeCustomDictionary", js.undefined)
+    inline def setLargeCustomDictionaryUndefined: Self = StObject.set(x, "largeCustomDictionary", js.undefined)
   }
 }

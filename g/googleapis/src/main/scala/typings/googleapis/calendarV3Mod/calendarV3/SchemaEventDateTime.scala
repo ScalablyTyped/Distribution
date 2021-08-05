@@ -30,31 +30,23 @@ trait SchemaEventDateTime extends StObject {
 }
 object SchemaEventDateTime {
   
-  @scala.inline
-  def apply(): SchemaEventDateTime = {
+  inline def apply(): SchemaEventDateTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventDateTime]
   }
   
-  @scala.inline
-  implicit class SchemaEventDateTimeMutableBuilder[Self <: SchemaEventDateTime] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventDateTime](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+    inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

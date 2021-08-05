@@ -10,19 +10,15 @@ trait AuthorizeOptions extends StObject {
 }
 object AuthorizeOptions {
   
-  @scala.inline
-  def apply(): AuthorizeOptions = {
+  inline def apply(): AuthorizeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  @scala.inline
-  implicit class AuthorizeOptionsMutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeOptions](x: Self) {
     
-    @scala.inline
-    def setEphemeralSession(value: Boolean): Self = StObject.set(x, "ephemeralSession", value.asInstanceOf[js.Any])
+    inline def setEphemeralSession(value: Boolean): Self = StObject.set(x, "ephemeralSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEphemeralSessionUndefined: Self = StObject.set(x, "ephemeralSession", js.undefined)
+    inline def setEphemeralSessionUndefined: Self = StObject.set(x, "ephemeralSession", js.undefined)
   }
 }

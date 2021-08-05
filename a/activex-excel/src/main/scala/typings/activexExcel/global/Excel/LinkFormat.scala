@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.LinkFormat")
 @js.native
-class LinkFormat protected ()
+/* private */ class LinkFormat ()
   extends StObject
      with typings.activexExcel.Excel.LinkFormat {
   
@@ -20,7 +20,7 @@ class LinkFormat protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.LinkFormat_typekey")
   var ExcelDotLinkFormat_typekey: typings.activexExcel.Excel.LinkFormat = js.native
   

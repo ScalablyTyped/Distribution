@@ -23,31 +23,23 @@ trait RevisionTarget extends StObject {
 }
 object RevisionTarget {
   
-  @scala.inline
-  def apply(): RevisionTarget = {
+  inline def apply(): RevisionTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevisionTarget]
   }
   
-  @scala.inline
-  implicit class RevisionTargetMutableBuilder[Self <: RevisionTarget] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionTarget](x: Self) {
     
-    @scala.inline
-    def setDatabaseRevision(value: String): Self = StObject.set(x, "DatabaseRevision", value.asInstanceOf[js.Any])
+    inline def setDatabaseRevision(value: String): Self = StObject.set(x, "DatabaseRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseRevisionReleaseDate(value: TStamp): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
+    inline def setDatabaseRevisionReleaseDate(value: TStamp): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseRevisionReleaseDateUndefined: Self = StObject.set(x, "DatabaseRevisionReleaseDate", js.undefined)
+    inline def setDatabaseRevisionReleaseDateUndefined: Self = StObject.set(x, "DatabaseRevisionReleaseDate", js.undefined)
     
-    @scala.inline
-    def setDatabaseRevisionUndefined: Self = StObject.set(x, "DatabaseRevision", js.undefined)
+    inline def setDatabaseRevisionUndefined: Self = StObject.set(x, "DatabaseRevision", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

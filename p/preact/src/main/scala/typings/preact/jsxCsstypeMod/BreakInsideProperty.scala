@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BreakInsideProperty extends StObject
 object BreakInsideProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
+  inline def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
   
-  @scala.inline
-  def avoid: typings.preact.preactStrings.avoid = "avoid".asInstanceOf[typings.preact.preactStrings.avoid]
+  inline def avoid: typings.preact.preactStrings.avoid = "avoid".asInstanceOf[typings.preact.preactStrings.avoid]
   
-  @scala.inline
-  def `avoid-column`: typings.preact.preactStrings.`avoid-column` = "avoid-column".asInstanceOf[typings.preact.preactStrings.`avoid-column`]
+  inline def `avoid-column`: typings.preact.preactStrings.`avoid-column` = "avoid-column".asInstanceOf[typings.preact.preactStrings.`avoid-column`]
   
-  @scala.inline
-  def `avoid-page`: typings.preact.preactStrings.`avoid-page` = "avoid-page".asInstanceOf[typings.preact.preactStrings.`avoid-page`]
+  inline def `avoid-page`: typings.preact.preactStrings.`avoid-page` = "avoid-page".asInstanceOf[typings.preact.preactStrings.`avoid-page`]
   
-  @scala.inline
-  def `avoid-region`: typings.preact.preactStrings.`avoid-region` = "avoid-region".asInstanceOf[typings.preact.preactStrings.`avoid-region`]
+  inline def `avoid-region`: typings.preact.preactStrings.`avoid-region` = "avoid-region".asInstanceOf[typings.preact.preactStrings.`avoid-region`]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
 }

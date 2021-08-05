@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMeetingStatus extends StObject
 object OlMeetingStatus {
   
-  @scala.inline
-  def olMeeting: `1` = 1.asInstanceOf[`1`]
+  inline def olMeeting: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olMeetingCanceled: `5` = 5.asInstanceOf[`5`]
+  inline def olMeetingCanceled: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olMeetingReceived: `3` = 3.asInstanceOf[`3`]
+  inline def olMeetingReceived: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olMeetingReceivedAndCanceled: `7` = 7.asInstanceOf[`7`]
+  inline def olMeetingReceivedAndCanceled: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def olNonMeeting: `0` = 0.asInstanceOf[`0`]
+  inline def olNonMeeting: `0` = 0.asInstanceOf[`0`]
 }

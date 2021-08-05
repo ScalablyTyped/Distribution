@@ -42,8 +42,7 @@ object i18n {
   }
   object Localization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getKeys: () => js.Array[String],
       getLocale: () => String,
       hasKey: String => Boolean,
@@ -53,20 +52,15 @@ object i18n {
       __obj.asInstanceOf[Localization]
     }
     
-    @scala.inline
-    implicit class LocalizationMutableBuilder[Self <: Localization] (val x: Self) extends AnyVal {
+    extension [Self <: Localization](x: Self) {
       
-      @scala.inline
-      def setGetKeys(value: () => js.Array[String]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+      inline def setGetKeys(value: () => js.Array[String]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+      inline def setGetLocale(value: () => String): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
+      inline def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTranslate(value: String => String): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
+      inline def setTranslate(value: String => String): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
     }
   }
 }

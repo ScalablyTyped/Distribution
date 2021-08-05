@@ -22,8 +22,7 @@ trait CellLabel extends StObject {
 }
 object CellLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellLabel: String,
     cellText: String,
     cellTextSelected: String,
@@ -36,28 +35,20 @@ object CellLabel {
     __obj.asInstanceOf[CellLabel]
   }
   
-  @scala.inline
-  implicit class CellLabelMutableBuilder[Self <: CellLabel] (val x: Self) extends AnyVal {
+  extension [Self <: CellLabel](x: Self) {
     
-    @scala.inline
-    def setCellLabel(value: String): Self = StObject.set(x, "cellLabel", value.asInstanceOf[js.Any])
+    inline def setCellLabel(value: String): Self = StObject.set(x, "cellLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellText(value: String): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
+    inline def setCellText(value: String): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellTextSelected(value: String): Self = StObject.set(x, "cellTextSelected", value.asInstanceOf[js.Any])
+    inline def setCellTextSelected(value: String): Self = StObject.set(x, "cellTextSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
+    inline def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
+    inline def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

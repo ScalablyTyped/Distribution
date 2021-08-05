@@ -22,35 +22,29 @@ object mod {
   @JSImport("relateurl", "ABSOLUTE")
   @js.native
   def ABSOLUTE: String = js.native
-  @scala.inline
-  def ABSOLUTE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE")(x.asInstanceOf[js.Any])
+  inline def ABSOLUTE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("relateurl", "PATH_RELATIVE")
   @js.native
   def PATH_RELATIVE: String = js.native
-  @scala.inline
-  def PATH_RELATIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PATH_RELATIVE")(x.asInstanceOf[js.Any])
+  inline def PATH_RELATIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PATH_RELATIVE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("relateurl", "ROOT_RELATIVE")
   @js.native
   def ROOT_RELATIVE: String = js.native
-  @scala.inline
-  def ROOT_RELATIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_RELATIVE")(x.asInstanceOf[js.Any])
+  inline def ROOT_RELATIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_RELATIVE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("relateurl", "SHORTEST")
   @js.native
   def SHORTEST: String = js.native
-  @scala.inline
-  def SHORTEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORTEST")(x.asInstanceOf[js.Any])
+  inline def SHORTEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORTEST")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def relate(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def relate(from: String, to: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def relate(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def relate(from: String, to: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options extends StObject {
     
@@ -157,92 +151,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultPorts(value: js.Object): Self = StObject.set(x, "defaultPorts", value.asInstanceOf[js.Any])
+      inline def setDefaultPorts(value: js.Object): Self = StObject.set(x, "defaultPorts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPortsUndefined: Self = StObject.set(x, "defaultPorts", js.undefined)
+      inline def setDefaultPortsUndefined: Self = StObject.set(x, "defaultPorts", js.undefined)
       
-      @scala.inline
-      def setDirectoryIndexes(value: js.Array[String]): Self = StObject.set(x, "directoryIndexes", value.asInstanceOf[js.Any])
+      inline def setDirectoryIndexes(value: js.Array[String]): Self = StObject.set(x, "directoryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryIndexesUndefined: Self = StObject.set(x, "directoryIndexes", js.undefined)
+      inline def setDirectoryIndexesUndefined: Self = StObject.set(x, "directoryIndexes", js.undefined)
       
-      @scala.inline
-      def setDirectoryIndexesVarargs(value: String*): Self = StObject.set(x, "directoryIndexes", js.Array(value :_*))
+      inline def setDirectoryIndexesVarargs(value: String*): Self = StObject.set(x, "directoryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnore_www(value: Boolean): Self = StObject.set(x, "ignore_www", value.asInstanceOf[js.Any])
+      inline def setIgnore_www(value: Boolean): Self = StObject.set(x, "ignore_www", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnore_wwwUndefined: Self = StObject.set(x, "ignore_www", js.undefined)
+      inline def setIgnore_wwwUndefined: Self = StObject.set(x, "ignore_www", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setRejectedSchemes(value: js.Array[String]): Self = StObject.set(x, "rejectedSchemes", value.asInstanceOf[js.Any])
+      inline def setRejectedSchemes(value: js.Array[String]): Self = StObject.set(x, "rejectedSchemes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectedSchemesUndefined: Self = StObject.set(x, "rejectedSchemes", js.undefined)
+      inline def setRejectedSchemesUndefined: Self = StObject.set(x, "rejectedSchemes", js.undefined)
       
-      @scala.inline
-      def setRejectedSchemesVarargs(value: String*): Self = StObject.set(x, "rejectedSchemes", js.Array(value :_*))
+      inline def setRejectedSchemesVarargs(value: String*): Self = StObject.set(x, "rejectedSchemes", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoveAuth(value: Boolean): Self = StObject.set(x, "removeAuth", value.asInstanceOf[js.Any])
+      inline def setRemoveAuth(value: Boolean): Self = StObject.set(x, "removeAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAuthUndefined: Self = StObject.set(x, "removeAuth", js.undefined)
+      inline def setRemoveAuthUndefined: Self = StObject.set(x, "removeAuth", js.undefined)
       
-      @scala.inline
-      def setRemoveDirectoryIndexes(value: Boolean): Self = StObject.set(x, "removeDirectoryIndexes", value.asInstanceOf[js.Any])
+      inline def setRemoveDirectoryIndexes(value: Boolean): Self = StObject.set(x, "removeDirectoryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveDirectoryIndexesUndefined: Self = StObject.set(x, "removeDirectoryIndexes", js.undefined)
+      inline def setRemoveDirectoryIndexesUndefined: Self = StObject.set(x, "removeDirectoryIndexes", js.undefined)
       
-      @scala.inline
-      def setRemoveEmptyQueries(value: Boolean): Self = StObject.set(x, "removeEmptyQueries", value.asInstanceOf[js.Any])
+      inline def setRemoveEmptyQueries(value: Boolean): Self = StObject.set(x, "removeEmptyQueries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEmptyQueriesUndefined: Self = StObject.set(x, "removeEmptyQueries", js.undefined)
+      inline def setRemoveEmptyQueriesUndefined: Self = StObject.set(x, "removeEmptyQueries", js.undefined)
       
-      @scala.inline
-      def setRemoveRootTrailingSlash(value: Boolean): Self = StObject.set(x, "removeRootTrailingSlash", value.asInstanceOf[js.Any])
+      inline def setRemoveRootTrailingSlash(value: Boolean): Self = StObject.set(x, "removeRootTrailingSlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveRootTrailingSlashUndefined: Self = StObject.set(x, "removeRootTrailingSlash", js.undefined)
+      inline def setRemoveRootTrailingSlashUndefined: Self = StObject.set(x, "removeRootTrailingSlash", js.undefined)
       
-      @scala.inline
-      def setSchemeRelative(value: Boolean): Self = StObject.set(x, "schemeRelative", value.asInstanceOf[js.Any])
+      inline def setSchemeRelative(value: Boolean): Self = StObject.set(x, "schemeRelative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeRelativeUndefined: Self = StObject.set(x, "schemeRelative", js.undefined)
+      inline def setSchemeRelativeUndefined: Self = StObject.set(x, "schemeRelative", js.undefined)
       
-      @scala.inline
-      def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+      inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+      inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
       
-      @scala.inline
-      def setSlashesDenoteHost(value: Boolean): Self = StObject.set(x, "slashesDenoteHost", value.asInstanceOf[js.Any])
+      inline def setSlashesDenoteHost(value: Boolean): Self = StObject.set(x, "slashesDenoteHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashesDenoteHostUndefined: Self = StObject.set(x, "slashesDenoteHost", js.undefined)
+      inline def setSlashesDenoteHostUndefined: Self = StObject.set(x, "slashesDenoteHost", js.undefined)
     }
   }
   

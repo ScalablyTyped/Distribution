@@ -21,26 +21,20 @@ trait ConstructorMemberType
 }
 object ConstructorMemberType {
   
-  @scala.inline
-  def apply(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], parent: InterfaceType): ConstructorMemberType = {
+  inline def apply(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], parent: InterfaceType): ConstructorMemberType = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("constructor")
     __obj.asInstanceOf[ConstructorMemberType]
   }
   
-  @scala.inline
-  implicit class ConstructorMemberTypeMutableBuilder[Self <: ConstructorMemberType] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorMemberType](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: constructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: constructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

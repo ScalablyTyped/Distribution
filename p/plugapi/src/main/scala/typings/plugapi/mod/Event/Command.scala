@@ -24,8 +24,7 @@ trait Command
 }
 object Command {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[String],
     command: String,
     from: User,
@@ -45,28 +44,20 @@ object Command {
     __obj.asInstanceOf[Command]
   }
   
-  @scala.inline
-  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+  extension [Self <: Command](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHavePermission(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "havePermission", js.Any.fromFunction1(value))
+    inline def setHavePermission(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "havePermission", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFrom(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "isFrom", js.Any.fromFunction1(value))
+    inline def setIsFrom(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "isFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRespond(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "respond", js.Any.fromFunction1(value))
+    inline def setRespond(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "respond", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRespondTimeout(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "respondTimeout", js.Any.fromFunction1(value))
+    inline def setRespondTimeout(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "respondTimeout", js.Any.fromFunction1(value))
   }
 }

@@ -17,28 +17,21 @@ trait ListLineItemAssignedTargetingOptionsResponse extends StObject {
 }
 object ListLineItemAssignedTargetingOptionsResponse {
   
-  @scala.inline
-  def apply(): ListLineItemAssignedTargetingOptionsResponse = {
+  inline def apply(): ListLineItemAssignedTargetingOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLineItemAssignedTargetingOptionsResponse]
   }
   
-  @scala.inline
-  implicit class ListLineItemAssignedTargetingOptionsResponseMutableBuilder[Self <: ListLineItemAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLineItemAssignedTargetingOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
+    inline def setAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedTargetingOptionsUndefined: Self = StObject.set(x, "assignedTargetingOptions", js.undefined)
+    inline def setAssignedTargetingOptionsUndefined: Self = StObject.set(x, "assignedTargetingOptions", js.undefined)
     
-    @scala.inline
-    def setAssignedTargetingOptionsVarargs(value: AssignedTargetingOption*): Self = StObject.set(x, "assignedTargetingOptions", js.Array(value :_*))
+    inline def setAssignedTargetingOptionsVarargs(value: AssignedTargetingOption*): Self = StObject.set(x, "assignedTargetingOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

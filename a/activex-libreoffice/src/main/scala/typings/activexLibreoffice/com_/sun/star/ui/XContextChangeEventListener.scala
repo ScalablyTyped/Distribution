@@ -15,8 +15,7 @@ trait XContextChangeEventListener
 }
 object XContextChangeEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notifyContextChangeEvent: ContextChangeEventObject => Unit,
@@ -27,10 +26,8 @@ object XContextChangeEventListener {
     __obj.asInstanceOf[XContextChangeEventListener]
   }
   
-  @scala.inline
-  implicit class XContextChangeEventListenerMutableBuilder[Self <: XContextChangeEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XContextChangeEventListener](x: Self) {
     
-    @scala.inline
-    def setNotifyContextChangeEvent(value: ContextChangeEventObject => Unit): Self = StObject.set(x, "notifyContextChangeEvent", js.Any.fromFunction1(value))
+    inline def setNotifyContextChangeEvent(value: ContextChangeEventObject => Unit): Self = StObject.set(x, "notifyContextChangeEvent", js.Any.fromFunction1(value))
   }
 }

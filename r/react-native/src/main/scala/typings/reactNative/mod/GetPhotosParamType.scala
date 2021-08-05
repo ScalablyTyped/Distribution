@@ -20,49 +20,35 @@ trait GetPhotosParamType extends StObject {
 }
 object GetPhotosParamType {
   
-  @scala.inline
-  def apply(first: Double): GetPhotosParamType = {
+  inline def apply(first: Double): GetPhotosParamType = {
     val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPhotosParamType]
   }
   
-  @scala.inline
-  implicit class GetPhotosParamTypeMutableBuilder[Self <: GetPhotosParamType] (val x: Self) extends AnyVal {
+  extension [Self <: GetPhotosParamType](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setAssetType(value: CameraRollAssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: CameraRollAssetType): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+    inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
-    @scala.inline
-    def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setGroupTypes(value: CameraRollGroupType): Self = StObject.set(x, "groupTypes", value.asInstanceOf[js.Any])
+    inline def setGroupTypes(value: CameraRollGroupType): Self = StObject.set(x, "groupTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupTypesUndefined: Self = StObject.set(x, "groupTypes", js.undefined)
+    inline def setGroupTypesUndefined: Self = StObject.set(x, "groupTypes", js.undefined)
     
-    @scala.inline
-    def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+    inline def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
+    inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
     
-    @scala.inline
-    def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+    inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
   }
 }

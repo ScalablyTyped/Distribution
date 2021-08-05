@@ -15,19 +15,15 @@ trait UpdateApnsVoipSandboxChannelRequest extends StObject {
 }
 object UpdateApnsVoipSandboxChannelRequest {
   
-  @scala.inline
-  def apply(APNSVoipSandboxChannelRequest: APNSVoipSandboxChannelRequest, ApplicationId: string): UpdateApnsVoipSandboxChannelRequest = {
+  inline def apply(APNSVoipSandboxChannelRequest: APNSVoipSandboxChannelRequest, ApplicationId: string): UpdateApnsVoipSandboxChannelRequest = {
     val __obj = js.Dynamic.literal(APNSVoipSandboxChannelRequest = APNSVoipSandboxChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApnsVoipSandboxChannelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateApnsVoipSandboxChannelRequestMutableBuilder[Self <: UpdateApnsVoipSandboxChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApnsVoipSandboxChannelRequest](x: Self) {
     
-    @scala.inline
-    def setAPNSVoipSandboxChannelRequest(value: APNSVoipSandboxChannelRequest): Self = StObject.set(x, "APNSVoipSandboxChannelRequest", value.asInstanceOf[js.Any])
+    inline def setAPNSVoipSandboxChannelRequest(value: APNSVoipSandboxChannelRequest): Self = StObject.set(x, "APNSVoipSandboxChannelRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

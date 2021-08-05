@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlDaysOfWeek extends StObject
 object OlDaysOfWeek {
   
-  @scala.inline
-  def olFriday: `32` = 32.asInstanceOf[`32`]
+  inline def olFriday: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def olMonday: `2` = 2.asInstanceOf[`2`]
+  inline def olMonday: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olSaturday: `64` = 64.asInstanceOf[`64`]
+  inline def olSaturday: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def olSunday: `1` = 1.asInstanceOf[`1`]
+  inline def olSunday: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olThursday: `16` = 16.asInstanceOf[`16`]
+  inline def olThursday: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def olTuesday: `4` = 4.asInstanceOf[`4`]
+  inline def olTuesday: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olWednesday: `8` = 8.asInstanceOf[`8`]
+  inline def olWednesday: `8` = 8.asInstanceOf[`8`]
 }

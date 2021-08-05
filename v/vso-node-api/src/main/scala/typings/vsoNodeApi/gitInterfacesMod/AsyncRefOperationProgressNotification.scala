@@ -12,16 +12,13 @@ trait AsyncRefOperationProgressNotification
 }
 object AsyncRefOperationProgressNotification {
   
-  @scala.inline
-  def apply(commitId: String, operationId: Double, progress: Double): AsyncRefOperationProgressNotification = {
+  inline def apply(commitId: String, operationId: Double, progress: Double): AsyncRefOperationProgressNotification = {
     val __obj = js.Dynamic.literal(commitId = commitId.asInstanceOf[js.Any], operationId = operationId.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncRefOperationProgressNotification]
   }
   
-  @scala.inline
-  implicit class AsyncRefOperationProgressNotificationMutableBuilder[Self <: AsyncRefOperationProgressNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncRefOperationProgressNotification](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
   }
 }

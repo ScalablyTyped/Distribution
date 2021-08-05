@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.IconCriterion")
 @js.native
-class IconCriterion protected ()
+/* private */ class IconCriterion ()
   extends StObject
      with typings.activexExcel.Excel.IconCriterion {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.IconCriterion_typekey")
   var ExcelDotIconCriterion_typekey: typings.activexExcel.Excel.IconCriterion = js.native
   

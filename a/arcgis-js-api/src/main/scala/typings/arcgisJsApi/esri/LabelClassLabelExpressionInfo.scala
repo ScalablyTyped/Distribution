@@ -26,8 +26,7 @@ trait LabelClassLabelExpressionInfo
 }
 object LabelClassLabelExpressionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     expression: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -37,16 +36,12 @@ object LabelClassLabelExpressionInfo {
     __obj.asInstanceOf[LabelClassLabelExpressionInfo]
   }
   
-  @scala.inline
-  implicit class LabelClassLabelExpressionInfoMutableBuilder[Self <: LabelClassLabelExpressionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LabelClassLabelExpressionInfo](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

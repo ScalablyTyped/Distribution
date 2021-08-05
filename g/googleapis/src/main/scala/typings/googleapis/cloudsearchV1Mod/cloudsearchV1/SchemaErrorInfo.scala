@@ -13,22 +13,17 @@ trait SchemaErrorInfo extends StObject {
 }
 object SchemaErrorInfo {
   
-  @scala.inline
-  def apply(): SchemaErrorInfo = {
+  inline def apply(): SchemaErrorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorInfo]
   }
   
-  @scala.inline
-  implicit class SchemaErrorInfoMutableBuilder[Self <: SchemaErrorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorInfo](x: Self) {
     
-    @scala.inline
-    def setErrorMessages(value: js.Array[SchemaErrorMessage]): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
+    inline def setErrorMessages(value: js.Array[SchemaErrorMessage]): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
+    inline def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
     
-    @scala.inline
-    def setErrorMessagesVarargs(value: SchemaErrorMessage*): Self = StObject.set(x, "errorMessages", js.Array(value :_*))
+    inline def setErrorMessagesVarargs(value: SchemaErrorMessage*): Self = StObject.set(x, "errorMessages", js.Array(value :_*))
   }
 }

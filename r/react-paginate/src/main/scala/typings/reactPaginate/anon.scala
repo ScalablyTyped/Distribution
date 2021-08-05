@@ -12,17 +12,14 @@ object anon {
   }
   object Selected {
     
-    @scala.inline
-    def apply(selected: Double): Selected = {
+    inline def apply(selected: Double): Selected = {
       val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[Selected]
     }
     
-    @scala.inline
-    implicit class SelectedMutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
+    extension [Self <: Selected](x: Self) {
       
-      @scala.inline
-      def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

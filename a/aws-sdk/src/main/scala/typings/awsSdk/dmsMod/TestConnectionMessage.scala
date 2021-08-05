@@ -18,19 +18,15 @@ trait TestConnectionMessage extends StObject {
 }
 object TestConnectionMessage {
   
-  @scala.inline
-  def apply(EndpointArn: String, ReplicationInstanceArn: String): TestConnectionMessage = {
+  inline def apply(EndpointArn: String, ReplicationInstanceArn: String): TestConnectionMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestConnectionMessage]
   }
   
-  @scala.inline
-  implicit class TestConnectionMessageMutableBuilder[Self <: TestConnectionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: TestConnectionMessage](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
   }
 }

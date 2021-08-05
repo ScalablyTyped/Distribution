@@ -26,15 +26,13 @@ object permissions {
     * Checks if the app has the specified permissions.
     * @param callback Parameter *result*: True if the app has the specified permissions.
     */
-  @scala.inline
-  def contains(permissions: Permissions, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def contains(permissions: Permissions, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Gets the app's current set of permissions.
     * @param callback Parameter *permissions*: The app's active permissions.
     */
-  @scala.inline
-  def getAll(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAll(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Fired when the app acquires new permissions. */
   @JSGlobal("chrome.permissions.onAdded")
@@ -50,10 +48,8 @@ object permissions {
     * Removes access to the specified permissions. If there are any problems removing the permissions, runtime.lastError will be set.
     * @param [callback] Parameter *removed*: True if the permissions were removed.
     */
-  @scala.inline
-  def remove(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def remove(permissions: Permissions, callback: js.Function1[/* removed */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(permissions: Permissions, callback: js.Function1[/* removed */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Requests access to the specified permissions.
@@ -61,8 +57,6 @@ object permissions {
     * If there are any problems requesting the permissions, runtime.lastError will be set.
     * @param [callback] Parameter *granted*: True if the user granted the specified permissions.
     */
-  @scala.inline
-  def request(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def request(permissions: Permissions, callback: js.Function1[/* granted */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def request(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def request(permissions: Permissions, callback: js.Function1[/* granted */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

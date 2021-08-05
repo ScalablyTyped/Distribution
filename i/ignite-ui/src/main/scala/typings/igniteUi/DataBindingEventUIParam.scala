@@ -18,25 +18,19 @@ trait DataBindingEventUIParam extends StObject {
 }
 object DataBindingEventUIParam {
   
-  @scala.inline
-  def apply(): DataBindingEventUIParam = {
+  inline def apply(): DataBindingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataBindingEventUIParam]
   }
   
-  @scala.inline
-  implicit class DataBindingEventUIParamMutableBuilder[Self <: DataBindingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DataBindingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

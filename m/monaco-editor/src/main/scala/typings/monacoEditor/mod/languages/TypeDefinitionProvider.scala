@@ -16,19 +16,16 @@ trait TypeDefinitionProvider extends StObject {
 }
 object TypeDefinitionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideTypeDefinition: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
   ): TypeDefinitionProvider = {
     val __obj = js.Dynamic.literal(provideTypeDefinition = js.Any.fromFunction3(provideTypeDefinition))
     __obj.asInstanceOf[TypeDefinitionProvider]
   }
   
-  @scala.inline
-  implicit class TypeDefinitionProviderMutableBuilder[Self <: TypeDefinitionProvider] (val x: Self) extends AnyVal {
+  extension [Self <: TypeDefinitionProvider](x: Self) {
     
-    @scala.inline
-    def setProvideTypeDefinition(
+    inline def setProvideTypeDefinition(
       value: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
     ): Self = StObject.set(x, "provideTypeDefinition", js.Any.fromFunction3(value))
   }

@@ -10,19 +10,15 @@ trait Loaded extends StObject {
 }
 object Loaded {
   
-  @scala.inline
-  def apply(loaded: js.Array[Double]): Loaded = {
+  inline def apply(loaded: js.Array[Double]): Loaded = {
     val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loaded]
   }
   
-  @scala.inline
-  implicit class LoadedMutableBuilder[Self <: Loaded] (val x: Self) extends AnyVal {
+  extension [Self <: Loaded](x: Self) {
     
-    @scala.inline
-    def setLoaded(value: js.Array[Double]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: js.Array[Double]): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedVarargs(value: Double*): Self = StObject.set(x, "loaded", js.Array(value :_*))
+    inline def setLoadedVarargs(value: Double*): Self = StObject.set(x, "loaded", js.Array(value :_*))
   }
 }

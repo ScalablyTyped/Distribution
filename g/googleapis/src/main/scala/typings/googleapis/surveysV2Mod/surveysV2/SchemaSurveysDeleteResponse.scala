@@ -14,19 +14,15 @@ trait SchemaSurveysDeleteResponse extends StObject {
 }
 object SchemaSurveysDeleteResponse {
   
-  @scala.inline
-  def apply(): SchemaSurveysDeleteResponse = {
+  inline def apply(): SchemaSurveysDeleteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveysDeleteResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSurveysDeleteResponseMutableBuilder[Self <: SchemaSurveysDeleteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveysDeleteResponse](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

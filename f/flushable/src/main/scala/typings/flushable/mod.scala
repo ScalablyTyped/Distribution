@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(onComplete: FlushableOnCompleteHandler, delay: Double): FlushableOperation = (^.asInstanceOf[js.Dynamic].apply(onComplete.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[FlushableOperation]
+  inline def apply(onComplete: FlushableOnCompleteHandler, delay: Double): FlushableOperation = (^.asInstanceOf[js.Dynamic].apply(onComplete.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[FlushableOperation]
   
   @JSImport("flushable", JSImport.Namespace)
   @js.native
@@ -28,23 +27,18 @@ object mod {
   }
   object FlushableOperation {
     
-    @scala.inline
-    def apply(cancel: () => Unit, flush: () => Unit, pending: () => Boolean): FlushableOperation = {
+    inline def apply(cancel: () => Unit, flush: () => Unit, pending: () => Boolean): FlushableOperation = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), flush = js.Any.fromFunction0(flush), pending = js.Any.fromFunction0(pending))
       __obj.asInstanceOf[FlushableOperation]
     }
     
-    @scala.inline
-    implicit class FlushableOperationMutableBuilder[Self <: FlushableOperation] (val x: Self) extends AnyVal {
+    extension [Self <: FlushableOperation](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPending(value: () => Boolean): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
+      inline def setPending(value: () => Boolean): Self = StObject.set(x, "pending", js.Any.fromFunction0(value))
     }
   }
 }

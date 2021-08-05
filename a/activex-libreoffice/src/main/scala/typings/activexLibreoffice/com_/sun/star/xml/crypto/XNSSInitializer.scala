@@ -14,8 +14,7 @@ trait XNSSInitializer
      with XCipherContextSupplier
 object XNSSInitializer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getCipherContext: (Double, SeqEquiv[Double], SeqEquiv[Double], Boolean, SeqEquiv[NamedValue]) => XCipherContext,
     getDigestContext: (Double, SeqEquiv[NamedValue]) => XDigestContext,

@@ -33,31 +33,23 @@ trait DrilldownDrillUpButtonOptions extends StObject {
 }
 object DrilldownDrillUpButtonOptions {
   
-  @scala.inline
-  def apply(): DrilldownDrillUpButtonOptions = {
+  inline def apply(): DrilldownDrillUpButtonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrilldownDrillUpButtonOptions]
   }
   
-  @scala.inline
-  implicit class DrilldownDrillUpButtonOptionsMutableBuilder[Self <: DrilldownDrillUpButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DrilldownDrillUpButtonOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: AlignObject | DrilldownDrillUpButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: AlignObject | DrilldownDrillUpButtonPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRelativeTo(value: ButtonRelativeToValue): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+    inline def setRelativeTo(value: ButtonRelativeToValue): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
+    inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     
-    @scala.inline
-    def setTheme(value: js.Object): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: js.Object): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

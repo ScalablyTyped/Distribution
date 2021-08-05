@@ -14,17 +14,13 @@ object uuidMod {
   @js.native
   val empty: UUID = js.native
   
-  @scala.inline
-  def generateUuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUuid")().asInstanceOf[String]
+  inline def generateUuid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUuid")().asInstanceOf[String]
   
-  @scala.inline
-  def isUUID(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUUID(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parse(value: String): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[UUID]
+  inline def parse(value: String): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[UUID]
   
-  @scala.inline
-  def v4(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[UUID]
+  inline def v4(): UUID = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[UUID]
   
   trait UUID extends StObject {
     
@@ -37,21 +33,17 @@ object uuidMod {
   }
   object UUID {
     
-    @scala.inline
-    def apply(asHex: () => String, equals_ : UUID => Boolean): UUID = {
+    inline def apply(asHex: () => String, equals_ : UUID => Boolean): UUID = {
       val __obj = js.Dynamic.literal(asHex = js.Any.fromFunction0(asHex))
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[UUID]
     }
     
-    @scala.inline
-    implicit class UUIDMutableBuilder[Self <: UUID] (val x: Self) extends AnyVal {
+    extension [Self <: UUID](x: Self) {
       
-      @scala.inline
-      def setAsHex(value: () => String): Self = StObject.set(x, "asHex", js.Any.fromFunction0(value))
+      inline def setAsHex(value: () => String): Self = StObject.set(x, "asHex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEquals_(value: UUID => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: UUID => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     }
   }
 }

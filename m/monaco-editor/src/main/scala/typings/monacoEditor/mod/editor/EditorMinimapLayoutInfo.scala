@@ -30,8 +30,7 @@ trait EditorMinimapLayoutInfo extends StObject {
 }
 object EditorMinimapLayoutInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     minimapCanvasInnerHeight: Double,
     minimapCanvasInnerWidth: Double,
     minimapCanvasOuterHeight: Double,
@@ -48,40 +47,28 @@ object EditorMinimapLayoutInfo {
     __obj.asInstanceOf[EditorMinimapLayoutInfo]
   }
   
-  @scala.inline
-  implicit class EditorMinimapLayoutInfoMutableBuilder[Self <: EditorMinimapLayoutInfo] (val x: Self) extends AnyVal {
+  extension [Self <: EditorMinimapLayoutInfo](x: Self) {
     
-    @scala.inline
-    def setMinimapCanvasInnerHeight(value: Double): Self = StObject.set(x, "minimapCanvasInnerHeight", value.asInstanceOf[js.Any])
+    inline def setMinimapCanvasInnerHeight(value: Double): Self = StObject.set(x, "minimapCanvasInnerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapCanvasInnerWidth(value: Double): Self = StObject.set(x, "minimapCanvasInnerWidth", value.asInstanceOf[js.Any])
+    inline def setMinimapCanvasInnerWidth(value: Double): Self = StObject.set(x, "minimapCanvasInnerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapCanvasOuterHeight(value: Double): Self = StObject.set(x, "minimapCanvasOuterHeight", value.asInstanceOf[js.Any])
+    inline def setMinimapCanvasOuterHeight(value: Double): Self = StObject.set(x, "minimapCanvasOuterHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapCanvasOuterWidth(value: Double): Self = StObject.set(x, "minimapCanvasOuterWidth", value.asInstanceOf[js.Any])
+    inline def setMinimapCanvasOuterWidth(value: Double): Self = StObject.set(x, "minimapCanvasOuterWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapHeightIsEditorHeight(value: Boolean): Self = StObject.set(x, "minimapHeightIsEditorHeight", value.asInstanceOf[js.Any])
+    inline def setMinimapHeightIsEditorHeight(value: Boolean): Self = StObject.set(x, "minimapHeightIsEditorHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapIsSampling(value: Boolean): Self = StObject.set(x, "minimapIsSampling", value.asInstanceOf[js.Any])
+    inline def setMinimapIsSampling(value: Boolean): Self = StObject.set(x, "minimapIsSampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapLeft(value: Double): Self = StObject.set(x, "minimapLeft", value.asInstanceOf[js.Any])
+    inline def setMinimapLeft(value: Double): Self = StObject.set(x, "minimapLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapLineHeight(value: Double): Self = StObject.set(x, "minimapLineHeight", value.asInstanceOf[js.Any])
+    inline def setMinimapLineHeight(value: Double): Self = StObject.set(x, "minimapLineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapScale(value: Double): Self = StObject.set(x, "minimapScale", value.asInstanceOf[js.Any])
+    inline def setMinimapScale(value: Double): Self = StObject.set(x, "minimapScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimapWidth(value: Double): Self = StObject.set(x, "minimapWidth", value.asInstanceOf[js.Any])
+    inline def setMinimapWidth(value: Double): Self = StObject.set(x, "minimapWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderMinimap(value: RenderMinimap): Self = StObject.set(x, "renderMinimap", value.asInstanceOf[js.Any])
+    inline def setRenderMinimap(value: RenderMinimap): Self = StObject.set(x, "renderMinimap", value.asInstanceOf[js.Any])
   }
 }

@@ -23,20 +23,16 @@ trait DiagramShape
 }
 object DiagramShape {
   
-  @scala.inline
-  def apply(id: String, key: js.Any, text: String, `type`: String): DiagramShape = {
+  inline def apply(id: String, key: js.Any, text: String, `type`: String): DiagramShape = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramShape]
   }
   
-  @scala.inline
-  implicit class DiagramShapeMutableBuilder[Self <: DiagramShape] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramShape](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

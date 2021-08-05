@@ -25,8 +25,7 @@ trait OptionData extends StObject {
 }
 object OptionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: Unit,
     disabled: Boolean,
     element: HTMLOptionElement,
@@ -40,31 +39,22 @@ object OptionData {
     __obj.asInstanceOf[OptionData]
   }
   
-  @scala.inline
-  implicit class OptionDataMutableBuilder[Self <: OptionData] (val x: Self) extends AnyVal {
+  extension [Self <: OptionData](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: HTMLOptionElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLOptionElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoading(value: Unit): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: Unit): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

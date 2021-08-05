@@ -55,73 +55,53 @@ trait _Hooks extends StObject {
 }
 object _Hooks {
   
-  @scala.inline
-  def apply(): _Hooks = {
+  inline def apply(): _Hooks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[_Hooks]
   }
   
-  @scala.inline
-  implicit class _HooksMutableBuilder[Self <: _Hooks] (val x: Self) extends AnyVal {
+  extension [Self <: _Hooks](x: Self) {
     
-    @scala.inline
-    def setAfterCommand(
+    inline def setAfterCommand(
       value: (/* commandName */ String, /* args */ js.Array[js.Any], /* result */ js.Any, /* error */ js.UndefOr[Error]) => Unit
     ): Self = StObject.set(x, "afterCommand", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAfterCommandUndefined: Self = StObject.set(x, "afterCommand", js.undefined)
+    inline def setAfterCommandUndefined: Self = StObject.set(x, "afterCommand", js.undefined)
     
-    @scala.inline
-    def setAfterHook(
+    inline def setAfterHook(
       value: (/* test */ js.Any, /* context */ js.Any, /* result */ TestResult, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "afterHook", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setAfterHookUndefined: Self = StObject.set(x, "afterHook", js.undefined)
+    inline def setAfterHookUndefined: Self = StObject.set(x, "afterHook", js.undefined)
     
-    @scala.inline
-    def setAfterSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
+    inline def setAfterSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "afterSuite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterSuiteUndefined: Self = StObject.set(x, "afterSuite", js.undefined)
+    inline def setAfterSuiteUndefined: Self = StObject.set(x, "afterSuite", js.undefined)
     
-    @scala.inline
-    def setAfterTest(value: (/* test */ Test, /* context */ js.Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
+    inline def setAfterTest(value: (/* test */ Test, /* context */ js.Any, /* result */ TestResult) => Unit): Self = StObject.set(x, "afterTest", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterTestUndefined: Self = StObject.set(x, "afterTest", js.undefined)
+    inline def setAfterTestUndefined: Self = StObject.set(x, "afterTest", js.undefined)
     
-    @scala.inline
-    def setBeforeCommand(value: (/* commandName */ String, /* args */ js.Array[js.Any]) => Unit): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
+    inline def setBeforeCommand(value: (/* commandName */ String, /* args */ js.Array[js.Any]) => Unit): Self = StObject.set(x, "beforeCommand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeCommandUndefined: Self = StObject.set(x, "beforeCommand", js.undefined)
+    inline def setBeforeCommandUndefined: Self = StObject.set(x, "beforeCommand", js.undefined)
     
-    @scala.inline
-    def setBeforeHook(
+    inline def setBeforeHook(
       value: (/* test */ js.Any, /* context */ js.Any, /* stepData */ js.UndefOr[js.Any], /* world */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "beforeHook", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBeforeHookUndefined: Self = StObject.set(x, "beforeHook", js.undefined)
+    inline def setBeforeHookUndefined: Self = StObject.set(x, "beforeHook", js.undefined)
     
-    @scala.inline
-    def setBeforeSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
+    inline def setBeforeSuite(value: /* suite */ Suite => Unit): Self = StObject.set(x, "beforeSuite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeSuiteUndefined: Self = StObject.set(x, "beforeSuite", js.undefined)
+    inline def setBeforeSuiteUndefined: Self = StObject.set(x, "beforeSuite", js.undefined)
     
-    @scala.inline
-    def setBeforeTest(value: (/* test */ Test, /* context */ js.Any) => Unit): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
+    inline def setBeforeTest(value: (/* test */ Test, /* context */ js.Any) => Unit): Self = StObject.set(x, "beforeTest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeTestUndefined: Self = StObject.set(x, "beforeTest", js.undefined)
+    inline def setBeforeTestUndefined: Self = StObject.set(x, "beforeTest", js.undefined)
     
-    @scala.inline
-    def setOnReload(value: (/* oldSessionId */ String, /* newSessionId */ String) => Unit): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
+    inline def setOnReload(value: (/* oldSessionId */ String, /* newSessionId */ String) => Unit): Self = StObject.set(x, "onReload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnReloadUndefined: Self = StObject.set(x, "onReload", js.undefined)
+    inline def setOnReloadUndefined: Self = StObject.set(x, "onReload", js.undefined)
   }
 }

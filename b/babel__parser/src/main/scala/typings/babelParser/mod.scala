@@ -24,15 +24,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(input: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[File_]
-  @scala.inline
-  def parse(input: String, options: ParserOptions): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
+  inline def parse(input: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[File_]
+  inline def parse(input: String, options: ParserOptions): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[File_]
   
-  @scala.inline
-  def parseExpression(input: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[Expression]
-  @scala.inline
-  def parseExpression(input: String, options: ParserOptions): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  inline def parseExpression(input: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def parseExpression(input: String, options: ParserOptions): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
   trait DecoratorsPluginOptions extends StObject {
     
@@ -40,20 +36,16 @@ object mod {
   }
   object DecoratorsPluginOptions {
     
-    @scala.inline
-    def apply(): DecoratorsPluginOptions = {
+    inline def apply(): DecoratorsPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecoratorsPluginOptions]
     }
     
-    @scala.inline
-    implicit class DecoratorsPluginOptionsMutableBuilder[Self <: DecoratorsPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DecoratorsPluginOptions](x: Self) {
       
-      @scala.inline
-      def setDecoratorsBeforeExport(value: Boolean): Self = StObject.set(x, "decoratorsBeforeExport", value.asInstanceOf[js.Any])
+      inline def setDecoratorsBeforeExport(value: Boolean): Self = StObject.set(x, "decoratorsBeforeExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoratorsBeforeExportUndefined: Self = StObject.set(x, "decoratorsBeforeExport", js.undefined)
+      inline def setDecoratorsBeforeExportUndefined: Self = StObject.set(x, "decoratorsBeforeExport", js.undefined)
     }
   }
   
@@ -63,20 +55,16 @@ object mod {
   }
   object FlowPluginOptions {
     
-    @scala.inline
-    def apply(): FlowPluginOptions = {
+    inline def apply(): FlowPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlowPluginOptions]
     }
     
-    @scala.inline
-    implicit class FlowPluginOptionsMutableBuilder[Self <: FlowPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FlowPluginOptions](x: Self) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     }
   }
   
@@ -161,95 +149,66 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
+      inline def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAwaitOutsideFunctionUndefined: Self = StObject.set(x, "allowAwaitOutsideFunction", js.undefined)
+      inline def setAllowAwaitOutsideFunctionUndefined: Self = StObject.set(x, "allowAwaitOutsideFunction", js.undefined)
       
-      @scala.inline
-      def setAllowImportExportEverywhere(value: Boolean): Self = StObject.set(x, "allowImportExportEverywhere", value.asInstanceOf[js.Any])
+      inline def setAllowImportExportEverywhere(value: Boolean): Self = StObject.set(x, "allowImportExportEverywhere", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowImportExportEverywhereUndefined: Self = StObject.set(x, "allowImportExportEverywhere", js.undefined)
+      inline def setAllowImportExportEverywhereUndefined: Self = StObject.set(x, "allowImportExportEverywhere", js.undefined)
       
-      @scala.inline
-      def setAllowReturnOutsideFunction(value: Boolean): Self = StObject.set(x, "allowReturnOutsideFunction", value.asInstanceOf[js.Any])
+      inline def setAllowReturnOutsideFunction(value: Boolean): Self = StObject.set(x, "allowReturnOutsideFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowReturnOutsideFunctionUndefined: Self = StObject.set(x, "allowReturnOutsideFunction", js.undefined)
+      inline def setAllowReturnOutsideFunctionUndefined: Self = StObject.set(x, "allowReturnOutsideFunction", js.undefined)
       
-      @scala.inline
-      def setAllowSuperOutsideMethod(value: Boolean): Self = StObject.set(x, "allowSuperOutsideMethod", value.asInstanceOf[js.Any])
+      inline def setAllowSuperOutsideMethod(value: Boolean): Self = StObject.set(x, "allowSuperOutsideMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSuperOutsideMethodUndefined: Self = StObject.set(x, "allowSuperOutsideMethod", js.undefined)
+      inline def setAllowSuperOutsideMethodUndefined: Self = StObject.set(x, "allowSuperOutsideMethod", js.undefined)
       
-      @scala.inline
-      def setAllowUndeclaredExports(value: Boolean): Self = StObject.set(x, "allowUndeclaredExports", value.asInstanceOf[js.Any])
+      inline def setAllowUndeclaredExports(value: Boolean): Self = StObject.set(x, "allowUndeclaredExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUndeclaredExportsUndefined: Self = StObject.set(x, "allowUndeclaredExports", js.undefined)
+      inline def setAllowUndeclaredExportsUndefined: Self = StObject.set(x, "allowUndeclaredExports", js.undefined)
       
-      @scala.inline
-      def setCreateParenthesizedExpressions(value: Boolean): Self = StObject.set(x, "createParenthesizedExpressions", value.asInstanceOf[js.Any])
+      inline def setCreateParenthesizedExpressions(value: Boolean): Self = StObject.set(x, "createParenthesizedExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateParenthesizedExpressionsUndefined: Self = StObject.set(x, "createParenthesizedExpressions", js.undefined)
+      inline def setCreateParenthesizedExpressionsUndefined: Self = StObject.set(x, "createParenthesizedExpressions", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[ParserPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+      inline def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+      inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
       
-      @scala.inline
-      def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
+      inline def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFilenameUndefined: Self = StObject.set(x, "sourceFilename", js.undefined)
+      inline def setSourceFilenameUndefined: Self = StObject.set(x, "sourceFilename", js.undefined)
       
-      @scala.inline
-      def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: script | module | unambiguous): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
       
-      @scala.inline
-      def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+      inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
+      inline def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
       
-      @scala.inline
-      def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+      inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
+      inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
       
-      @scala.inline
-      def setTokens(value: Boolean): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: Boolean): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+      inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     }
   }
   
@@ -305,17 +264,14 @@ object mod {
   }
   object PipelineOperatorPluginOptions {
     
-    @scala.inline
-    def apply(proposal: fsharp | minimal | smart): PipelineOperatorPluginOptions = {
+    inline def apply(proposal: fsharp | minimal | smart): PipelineOperatorPluginOptions = {
       val __obj = js.Dynamic.literal(proposal = proposal.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipelineOperatorPluginOptions]
     }
     
-    @scala.inline
-    implicit class PipelineOperatorPluginOptionsMutableBuilder[Self <: PipelineOperatorPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PipelineOperatorPluginOptions](x: Self) {
       
-      @scala.inline
-      def setProposal(value: fsharp | minimal | smart): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
+      inline def setProposal(value: fsharp | minimal | smart): Self = StObject.set(x, "proposal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,17 +281,14 @@ object mod {
   }
   object RecordAndTuplePluginOptions {
     
-    @scala.inline
-    def apply(syntaxType: bar | hash): RecordAndTuplePluginOptions = {
+    inline def apply(syntaxType: bar | hash): RecordAndTuplePluginOptions = {
       val __obj = js.Dynamic.literal(syntaxType = syntaxType.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordAndTuplePluginOptions]
     }
     
-    @scala.inline
-    implicit class RecordAndTuplePluginOptionsMutableBuilder[Self <: RecordAndTuplePluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RecordAndTuplePluginOptions](x: Self) {
       
-      @scala.inline
-      def setSyntaxType(value: bar | hash): Self = StObject.set(x, "syntaxType", value.asInstanceOf[js.Any])
+      inline def setSyntaxType(value: bar | hash): Self = StObject.set(x, "syntaxType", value.asInstanceOf[js.Any])
     }
   }
   

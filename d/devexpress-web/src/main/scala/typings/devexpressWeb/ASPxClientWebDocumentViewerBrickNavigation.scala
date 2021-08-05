@@ -14,22 +14,17 @@ trait ASPxClientWebDocumentViewerBrickNavigation extends StObject {
 }
 object ASPxClientWebDocumentViewerBrickNavigation {
   
-  @scala.inline
-  def apply(drillDownKey: String, target: String, url: String): ASPxClientWebDocumentViewerBrickNavigation = {
+  inline def apply(drillDownKey: String, target: String, url: String): ASPxClientWebDocumentViewerBrickNavigation = {
     val __obj = js.Dynamic.literal(drillDownKey = drillDownKey.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientWebDocumentViewerBrickNavigation]
   }
   
-  @scala.inline
-  implicit class ASPxClientWebDocumentViewerBrickNavigationMutableBuilder[Self <: ASPxClientWebDocumentViewerBrickNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWebDocumentViewerBrickNavigation](x: Self) {
     
-    @scala.inline
-    def setDrillDownKey(value: String): Self = StObject.set(x, "drillDownKey", value.asInstanceOf[js.Any])
+    inline def setDrillDownKey(value: String): Self = StObject.set(x, "drillDownKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

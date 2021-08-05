@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(serviceName: String): Nssm = ^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any]).asInstanceOf[Nssm]
-  @scala.inline
-  def apply(serviceName: String, options: NssmOptions): Nssm = (^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Nssm]
+  inline def apply(serviceName: String): Nssm = ^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any]).asInstanceOf[Nssm]
+  inline def apply(serviceName: String, options: NssmOptions): Nssm = (^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Nssm]
   
   @JSImport("nssm", JSImport.Namespace)
   @js.native
@@ -35,41 +33,29 @@ object mod {
   trait Command extends StObject
   object Command {
     
-    @scala.inline
-    def continue: typings.nssm.nssmStrings.continue = "continue".asInstanceOf[typings.nssm.nssmStrings.continue]
+    inline def continue: typings.nssm.nssmStrings.continue = "continue".asInstanceOf[typings.nssm.nssmStrings.continue]
     
-    @scala.inline
-    def get: typings.nssm.nssmStrings.get = "get".asInstanceOf[typings.nssm.nssmStrings.get]
+    inline def get: typings.nssm.nssmStrings.get = "get".asInstanceOf[typings.nssm.nssmStrings.get]
     
-    @scala.inline
-    def install: typings.nssm.nssmStrings.install = "install".asInstanceOf[typings.nssm.nssmStrings.install]
+    inline def install: typings.nssm.nssmStrings.install = "install".asInstanceOf[typings.nssm.nssmStrings.install]
     
-    @scala.inline
-    def pause: typings.nssm.nssmStrings.pause = "pause".asInstanceOf[typings.nssm.nssmStrings.pause]
+    inline def pause: typings.nssm.nssmStrings.pause = "pause".asInstanceOf[typings.nssm.nssmStrings.pause]
     
-    @scala.inline
-    def remove: typings.nssm.nssmStrings.remove = "remove".asInstanceOf[typings.nssm.nssmStrings.remove]
+    inline def remove: typings.nssm.nssmStrings.remove = "remove".asInstanceOf[typings.nssm.nssmStrings.remove]
     
-    @scala.inline
-    def reset: typings.nssm.nssmStrings.reset = "reset".asInstanceOf[typings.nssm.nssmStrings.reset]
+    inline def reset: typings.nssm.nssmStrings.reset = "reset".asInstanceOf[typings.nssm.nssmStrings.reset]
     
-    @scala.inline
-    def restart: typings.nssm.nssmStrings.restart = "restart".asInstanceOf[typings.nssm.nssmStrings.restart]
+    inline def restart: typings.nssm.nssmStrings.restart = "restart".asInstanceOf[typings.nssm.nssmStrings.restart]
     
-    @scala.inline
-    def rotate: typings.nssm.nssmStrings.rotate = "rotate".asInstanceOf[typings.nssm.nssmStrings.rotate]
+    inline def rotate: typings.nssm.nssmStrings.rotate = "rotate".asInstanceOf[typings.nssm.nssmStrings.rotate]
     
-    @scala.inline
-    def set: typings.nssm.nssmStrings.set = "set".asInstanceOf[typings.nssm.nssmStrings.set]
+    inline def set: typings.nssm.nssmStrings.set = "set".asInstanceOf[typings.nssm.nssmStrings.set]
     
-    @scala.inline
-    def start: typings.nssm.nssmStrings.start = "start".asInstanceOf[typings.nssm.nssmStrings.start]
+    inline def start: typings.nssm.nssmStrings.start = "start".asInstanceOf[typings.nssm.nssmStrings.start]
     
-    @scala.inline
-    def status: typings.nssm.nssmStrings.status = "status".asInstanceOf[typings.nssm.nssmStrings.status]
+    inline def status: typings.nssm.nssmStrings.status = "status".asInstanceOf[typings.nssm.nssmStrings.status]
     
-    @scala.inline
-    def stop: typings.nssm.nssmStrings.stop = "stop".asInstanceOf[typings.nssm.nssmStrings.stop]
+    inline def stop: typings.nssm.nssmStrings.stop = "stop".asInstanceOf[typings.nssm.nssmStrings.stop]
   }
   
   /* Inlined {[ key in nssm.nssm.Command ]: nssm.nssm.NssmCommandFn} */
@@ -101,8 +87,7 @@ object mod {
   }
   object Nssm {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       continue: NssmCommandFn,
       get: NssmCommandFn,
       install: NssmCommandFn,
@@ -120,44 +105,31 @@ object mod {
       __obj.asInstanceOf[Nssm]
     }
     
-    @scala.inline
-    implicit class NssmMutableBuilder[Self <: Nssm] (val x: Self) extends AnyVal {
+    extension [Self <: Nssm](x: Self) {
       
-      @scala.inline
-      def setContinue(value: NssmCommandFn): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
+      inline def setContinue(value: NssmCommandFn): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: NssmCommandFn): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: NssmCommandFn): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstall(value: NssmCommandFn): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+      inline def setInstall(value: NssmCommandFn): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: NssmCommandFn): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: NssmCommandFn): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: NssmCommandFn): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: NssmCommandFn): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: NssmCommandFn): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: NssmCommandFn): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestart(value: NssmCommandFn): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
+      inline def setRestart(value: NssmCommandFn): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotate(value: NssmCommandFn): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: NssmCommandFn): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: NssmCommandFn): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: NssmCommandFn): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: NssmCommandFn): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: NssmCommandFn): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: NssmCommandFn): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: NssmCommandFn): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: NssmCommandFn): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: NssmCommandFn): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,20 +166,16 @@ object mod {
   }
   object NssmOptions {
     
-    @scala.inline
-    def apply(): NssmOptions = {
+    inline def apply(): NssmOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NssmOptions]
     }
     
-    @scala.inline
-    implicit class NssmOptionsMutableBuilder[Self <: NssmOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NssmOptions](x: Self) {
       
-      @scala.inline
-      def setNssmExe(value: String): Self = StObject.set(x, "nssmExe", value.asInstanceOf[js.Any])
+      inline def setNssmExe(value: String): Self = StObject.set(x, "nssmExe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNssmExeUndefined: Self = StObject.set(x, "nssmExe", js.undefined)
+      inline def setNssmExeUndefined: Self = StObject.set(x, "nssmExe", js.undefined)
     }
   }
   

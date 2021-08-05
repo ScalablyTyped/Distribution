@@ -11,12 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validate(s: String): ValidateResults = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any]).asInstanceOf[ValidateResults]
-  @scala.inline
-  def validate(s: String, options: Optionswarningstrue): ValidateResults & Warnings = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidateResults & Warnings]
-  @scala.inline
-  def validate(s: String, options: Options): ValidateResults = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidateResults]
+  inline def validate(s: String): ValidateResults = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any]).asInstanceOf[ValidateResults]
+  inline def validate(s: String, options: Optionswarningstrue): ValidateResults & Warnings = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidateResults & Warnings]
+  inline def validate(s: String, options: Options): ValidateResults = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(s.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidateResults]
   
   trait Anchor extends StObject {
     
@@ -32,29 +29,22 @@ object mod {
   }
   object Anchor {
     
-    @scala.inline
-    def apply(defined: Double, emptyText: Double, localRefNoHash: Boolean, name: String, seen: Double): Anchor = {
+    inline def apply(defined: Double, emptyText: Double, localRefNoHash: Boolean, name: String, seen: Double): Anchor = {
       val __obj = js.Dynamic.literal(defined = defined.asInstanceOf[js.Any], emptyText = emptyText.asInstanceOf[js.Any], localRefNoHash = localRefNoHash.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], seen = seen.asInstanceOf[js.Any])
       __obj.asInstanceOf[Anchor]
     }
     
-    @scala.inline
-    implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
+    extension [Self <: Anchor](x: Self) {
       
-      @scala.inline
-      def setDefined(value: Double): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
+      inline def setDefined(value: Double): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyText(value: Double): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
+      inline def setEmptyText(value: Double): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalRefNoHash(value: Boolean): Self = StObject.set(x, "localRefNoHash", value.asInstanceOf[js.Any])
+      inline def setLocalRefNoHash(value: Boolean): Self = StObject.set(x, "localRefNoHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeen(value: Double): Self = StObject.set(x, "seen", value.asInstanceOf[js.Any])
+      inline def setSeen(value: Double): Self = StObject.set(x, "seen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,27 +60,21 @@ object mod {
   }
   object NonParsedEntry {
     
-    @scala.inline
-    def apply(`extension`: String, lineEnd: Double, lineStart: Double, message: String): NonParsedEntry = {
+    inline def apply(`extension`: String, lineEnd: Double, lineStart: Double, message: String): NonParsedEntry = {
       val __obj = js.Dynamic.literal(lineEnd = lineEnd.asInstanceOf[js.Any], lineStart = lineStart.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NonParsedEntry]
     }
     
-    @scala.inline
-    implicit class NonParsedEntryMutableBuilder[Self <: NonParsedEntry] (val x: Self) extends AnyVal {
+    extension [Self <: NonParsedEntry](x: Self) {
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineEnd(value: Double): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
+      inline def setLineEnd(value: Double): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineStart(value: Double): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
+      inline def setLineStart(value: Double): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,32 +99,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+      inline def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+      inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     }
   }
   
@@ -164,8 +140,7 @@ object mod {
   }
   object ValidateResults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anchorsWithEmptyText: js.Array[Anchor],
       anchorsWithHash: js.Array[Anchor],
       duplicatedAnchors: js.Array[Anchor],
@@ -179,50 +154,35 @@ object mod {
       __obj.asInstanceOf[ValidateResults]
     }
     
-    @scala.inline
-    implicit class ValidateResultsMutableBuilder[Self <: ValidateResults] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateResults](x: Self) {
       
-      @scala.inline
-      def setAnchorsWithEmptyText(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithEmptyText", value.asInstanceOf[js.Any])
+      inline def setAnchorsWithEmptyText(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithEmptyText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorsWithEmptyTextVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithEmptyText", js.Array(value :_*))
+      inline def setAnchorsWithEmptyTextVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithEmptyText", js.Array(value :_*))
       
-      @scala.inline
-      def setAnchorsWithHash(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithHash", value.asInstanceOf[js.Any])
+      inline def setAnchorsWithHash(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorsWithHashVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithHash", js.Array(value :_*))
+      inline def setAnchorsWithHashVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithHash", js.Array(value :_*))
       
-      @scala.inline
-      def setDuplicatedAnchors(value: js.Array[Anchor]): Self = StObject.set(x, "duplicatedAnchors", value.asInstanceOf[js.Any])
+      inline def setDuplicatedAnchors(value: js.Array[Anchor]): Self = StObject.set(x, "duplicatedAnchors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuplicatedAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "duplicatedAnchors", js.Array(value :_*))
+      inline def setDuplicatedAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "duplicatedAnchors", js.Array(value :_*))
       
-      @scala.inline
-      def setImagesWithMissingAlt(value: Double): Self = StObject.set(x, "imagesWithMissingAlt", value.asInstanceOf[js.Any])
+      inline def setImagesWithMissingAlt(value: Double): Self = StObject.set(x, "imagesWithMissingAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalRefNoHash(value: js.Array[Anchor]): Self = StObject.set(x, "localRefNoHash", value.asInstanceOf[js.Any])
+      inline def setLocalRefNoHash(value: js.Array[Anchor]): Self = StObject.set(x, "localRefNoHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalRefNoHashVarargs(value: Anchor*): Self = StObject.set(x, "localRefNoHash", js.Array(value :_*))
+      inline def setLocalRefNoHashVarargs(value: Anchor*): Self = StObject.set(x, "localRefNoHash", js.Array(value :_*))
       
-      @scala.inline
-      def setMissingAnchors(value: js.Array[Anchor]): Self = StObject.set(x, "missingAnchors", value.asInstanceOf[js.Any])
+      inline def setMissingAnchors(value: js.Array[Anchor]): Self = StObject.set(x, "missingAnchors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "missingAnchors", js.Array(value :_*))
+      inline def setMissingAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "missingAnchors", js.Array(value :_*))
       
-      @scala.inline
-      def setNonParsingExamples(value: js.Array[NonParsedEntry]): Self = StObject.set(x, "nonParsingExamples", value.asInstanceOf[js.Any])
+      inline def setNonParsingExamples(value: js.Array[NonParsedEntry]): Self = StObject.set(x, "nonParsingExamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonParsingExamplesVarargs(value: NonParsedEntry*): Self = StObject.set(x, "nonParsingExamples", js.Array(value :_*))
+      inline def setNonParsingExamplesVarargs(value: NonParsedEntry*): Self = StObject.set(x, "nonParsingExamples", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,23 +194,18 @@ object mod {
   }
   object Warnings {
     
-    @scala.inline
-    def apply(anchorsWithNoLinks: js.Array[Anchor], codeBlocksWithNoLanguage: Double): Warnings = {
+    inline def apply(anchorsWithNoLinks: js.Array[Anchor], codeBlocksWithNoLanguage: Double): Warnings = {
       val __obj = js.Dynamic.literal(anchorsWithNoLinks = anchorsWithNoLinks.asInstanceOf[js.Any], codeBlocksWithNoLanguage = codeBlocksWithNoLanguage.asInstanceOf[js.Any])
       __obj.asInstanceOf[Warnings]
     }
     
-    @scala.inline
-    implicit class WarningsMutableBuilder[Self <: Warnings] (val x: Self) extends AnyVal {
+    extension [Self <: Warnings](x: Self) {
       
-      @scala.inline
-      def setAnchorsWithNoLinks(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithNoLinks", value.asInstanceOf[js.Any])
+      inline def setAnchorsWithNoLinks(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithNoLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorsWithNoLinksVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithNoLinks", js.Array(value :_*))
+      inline def setAnchorsWithNoLinksVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithNoLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setCodeBlocksWithNoLanguage(value: Double): Self = StObject.set(x, "codeBlocksWithNoLanguage", value.asInstanceOf[js.Any])
+      inline def setCodeBlocksWithNoLanguage(value: Double): Self = StObject.set(x, "codeBlocksWithNoLanguage", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,12 +22,8 @@ object confusionMatrixMod {
     Tensor2D
   ] = js.native
   
-  @scala.inline
-  def confusionMatrix_(labels: Tensor1D, predictions: Tensor1D, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
-  @scala.inline
-  def confusionMatrix_(labels: Tensor1D, predictions: TensorLike, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
-  @scala.inline
-  def confusionMatrix_(labels: TensorLike, predictions: Tensor1D, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
-  @scala.inline
-  def confusionMatrix_(labels: TensorLike, predictions: TensorLike, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+  inline def confusionMatrix_(labels: Tensor1D, predictions: Tensor1D, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+  inline def confusionMatrix_(labels: Tensor1D, predictions: TensorLike, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+  inline def confusionMatrix_(labels: TensorLike, predictions: Tensor1D, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+  inline def confusionMatrix_(labels: TensorLike, predictions: TensorLike, numClasses: Double): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("confusionMatrix_")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], numClasses.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
 }

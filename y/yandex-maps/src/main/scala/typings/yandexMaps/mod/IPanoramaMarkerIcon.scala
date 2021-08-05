@@ -14,22 +14,17 @@ trait IPanoramaMarkerIcon extends StObject {
 }
 object IPanoramaMarkerIcon {
   
-  @scala.inline
-  def apply(image: HTMLCanvasElement | HTMLImageElement, offset: js.Array[Double]): IPanoramaMarkerIcon = {
+  inline def apply(image: HTMLCanvasElement | HTMLImageElement, offset: js.Array[Double]): IPanoramaMarkerIcon = {
     val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanoramaMarkerIcon]
   }
   
-  @scala.inline
-  implicit class IPanoramaMarkerIconMutableBuilder[Self <: IPanoramaMarkerIcon] (val x: Self) extends AnyVal {
+  extension [Self <: IPanoramaMarkerIcon](x: Self) {
     
-    @scala.inline
-    def setImage(value: HTMLCanvasElement | HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: HTMLCanvasElement | HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
   }
 }

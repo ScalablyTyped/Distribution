@@ -28,37 +28,27 @@ trait CompositionEvent
 }
 object CompositionEvent {
   
-  @scala.inline
-  def apply(): CompositionEvent = {
+  inline def apply(): CompositionEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompositionEvent]
   }
   
-  @scala.inline
-  implicit class CompositionEventMutableBuilder[Self <: CompositionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionEvent](x: Self) {
     
-    @scala.inline
-    def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "code", js.Array(value :_*))
+    inline def setCodeVarargs(value: CodeableConcept*): Self = StObject.set(x, "code", js.Array(value :_*))
     
-    @scala.inline
-    def setDetail(value: js.Array[Reference]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: js.Array[Reference]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setDetailVarargs(value: Reference*): Self = StObject.set(x, "detail", js.Array(value :_*))
+    inline def setDetailVarargs(value: Reference*): Self = StObject.set(x, "detail", js.Array(value :_*))
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

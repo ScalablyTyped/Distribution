@@ -37,37 +37,27 @@ trait SchemaCheckRequest extends StObject {
 }
 object SchemaCheckRequest {
   
-  @scala.inline
-  def apply(): SchemaCheckRequest = {
+  inline def apply(): SchemaCheckRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCheckRequestMutableBuilder[Self <: SchemaCheckRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckRequest](x: Self) {
     
-    @scala.inline
-    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setRequestProjectSettings(value: Boolean): Self = StObject.set(x, "requestProjectSettings", value.asInstanceOf[js.Any])
+    inline def setRequestProjectSettings(value: Boolean): Self = StObject.set(x, "requestProjectSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestProjectSettingsUndefined: Self = StObject.set(x, "requestProjectSettings", js.undefined)
+    inline def setRequestProjectSettingsUndefined: Self = StObject.set(x, "requestProjectSettings", js.undefined)
     
-    @scala.inline
-    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
+    inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
+    inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
     
-    @scala.inline
-    def setSkipActivationCheck(value: Boolean): Self = StObject.set(x, "skipActivationCheck", value.asInstanceOf[js.Any])
+    inline def setSkipActivationCheck(value: Boolean): Self = StObject.set(x, "skipActivationCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipActivationCheckUndefined: Self = StObject.set(x, "skipActivationCheck", js.undefined)
+    inline def setSkipActivationCheckUndefined: Self = StObject.set(x, "skipActivationCheck", js.undefined)
   }
 }

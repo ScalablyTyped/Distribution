@@ -13,22 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Mock = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mock]
+  inline def apply(): Mock = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Mock]
   
   @JSImport("mock-req-res", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mockRequest(): RequestOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockRequest")().asInstanceOf[RequestOutput]
-  @scala.inline
-  def mockRequest(options: RequestPayload): RequestOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockRequest")(options.asInstanceOf[js.Any]).asInstanceOf[RequestOutput]
+  inline def mockRequest(): RequestOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockRequest")().asInstanceOf[RequestOutput]
+  inline def mockRequest(options: RequestPayload): RequestOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockRequest")(options.asInstanceOf[js.Any]).asInstanceOf[RequestOutput]
   
-  @scala.inline
-  def mockResponse(): ResponseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockResponse")().asInstanceOf[ResponseOutput]
-  @scala.inline
-  def mockResponse(options: ResponsePayload): ResponseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockResponse")(options.asInstanceOf[js.Any]).asInstanceOf[ResponseOutput]
+  inline def mockResponse(): ResponseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockResponse")().asInstanceOf[ResponseOutput]
+  inline def mockResponse(options: ResponsePayload): ResponseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("mockResponse")(options.asInstanceOf[js.Any]).asInstanceOf[ResponseOutput]
   
   type Dictionary[T] = StringDictionary[T]
   

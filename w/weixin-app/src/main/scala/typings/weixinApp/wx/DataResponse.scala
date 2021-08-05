@@ -19,22 +19,17 @@ trait DataResponse extends StObject {
 }
 object DataResponse {
   
-  @scala.inline
-  def apply(data: js.Object | String | ArrayBuffer, header: js.Object, statusCode: Double): DataResponse = {
+  inline def apply(data: js.Object | String | ArrayBuffer, header: js.Object, statusCode: Double): DataResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataResponse]
   }
   
-  @scala.inline
-  implicit class DataResponseMutableBuilder[Self <: DataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DataResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object | String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object | String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

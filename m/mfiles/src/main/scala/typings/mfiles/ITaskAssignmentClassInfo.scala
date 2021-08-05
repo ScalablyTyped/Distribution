@@ -14,8 +14,7 @@ trait ITaskAssignmentClassInfo extends StObject {
 }
 object ITaskAssignmentClassInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnyAssigneeCompletes: Boolean,
     Clone: () => ITaskAssignmentClassInfo,
     SignatureForCompletion: ISignatureSettings
@@ -24,16 +23,12 @@ object ITaskAssignmentClassInfo {
     __obj.asInstanceOf[ITaskAssignmentClassInfo]
   }
   
-  @scala.inline
-  implicit class ITaskAssignmentClassInfoMutableBuilder[Self <: ITaskAssignmentClassInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ITaskAssignmentClassInfo](x: Self) {
     
-    @scala.inline
-    def setAnyAssigneeCompletes(value: Boolean): Self = StObject.set(x, "AnyAssigneeCompletes", value.asInstanceOf[js.Any])
+    inline def setAnyAssigneeCompletes(value: Boolean): Self = StObject.set(x, "AnyAssigneeCompletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => ITaskAssignmentClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ITaskAssignmentClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSignatureForCompletion(value: ISignatureSettings): Self = StObject.set(x, "SignatureForCompletion", value.asInstanceOf[js.Any])
+    inline def setSignatureForCompletion(value: ISignatureSettings): Self = StObject.set(x, "SignatureForCompletion", value.asInstanceOf[js.Any])
   }
 }

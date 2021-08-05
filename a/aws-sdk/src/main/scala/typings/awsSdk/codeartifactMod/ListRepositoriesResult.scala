@@ -18,28 +18,21 @@ trait ListRepositoriesResult extends StObject {
 }
 object ListRepositoriesResult {
   
-  @scala.inline
-  def apply(): ListRepositoriesResult = {
+  inline def apply(): ListRepositoriesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRepositoriesResult]
   }
   
-  @scala.inline
-  implicit class ListRepositoriesResultMutableBuilder[Self <: ListRepositoriesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListRepositoriesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRepositories(value: RepositorySummaryList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
+    inline def setRepositories(value: RepositorySummaryList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
+    inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
-    @scala.inline
-    def setRepositoriesVarargs(value: RepositorySummary*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+    inline def setRepositoriesVarargs(value: RepositorySummary*): Self = StObject.set(x, "repositories", js.Array(value :_*))
   }
 }

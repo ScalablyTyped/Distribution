@@ -29,8 +29,7 @@ trait NavigatorsConfig[TKeys, TState] extends StObject {
 }
 object NavigatorsConfig {
   
-  @scala.inline
-  def apply[TKeys, TState](
+  inline def apply[TKeys, TState](
     actionToNavigation: (Navigators[TState], js.Object, Nullable[NavigationAction], Nullable[Route[TKeys, TState]]) => js.Object,
     navigationToAction: (Navigators[TState], Store[TState, AnyAction], RoutesMap[TKeys, TState], js.Object) => typings.reduxFirstRouter.anon.Action,
     navigators: Navigators[TState],
@@ -40,23 +39,18 @@ object NavigatorsConfig {
     __obj.asInstanceOf[NavigatorsConfig[TKeys, TState]]
   }
   
-  @scala.inline
-  implicit class NavigatorsConfigMutableBuilder[Self <: NavigatorsConfig[?, ?], TKeys, TState] (val x: Self & (NavigatorsConfig[TKeys, TState])) extends AnyVal {
+  extension [Self <: NavigatorsConfig[?, ?], TKeys, TState](x: Self & (NavigatorsConfig[TKeys, TState])) {
     
-    @scala.inline
-    def setActionToNavigation(
+    inline def setActionToNavigation(
       value: (Navigators[TState], js.Object, Nullable[NavigationAction], Nullable[Route[TKeys, TState]]) => js.Object
     ): Self = StObject.set(x, "actionToNavigation", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setNavigationToAction(
+    inline def setNavigationToAction(
       value: (Navigators[TState], Store[TState, AnyAction], RoutesMap[TKeys, TState], js.Object) => typings.reduxFirstRouter.anon.Action
     ): Self = StObject.set(x, "navigationToAction", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setNavigators(value: Navigators[TState]): Self = StObject.set(x, "navigators", value.asInstanceOf[js.Any])
+    inline def setNavigators(value: Navigators[TState]): Self = StObject.set(x, "navigators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchNavigators(value: Navigators[TState] => Unit): Self = StObject.set(x, "patchNavigators", js.Any.fromFunction1(value))
+    inline def setPatchNavigators(value: Navigators[TState] => Unit): Self = StObject.set(x, "patchNavigators", js.Any.fromFunction1(value))
   }
 }

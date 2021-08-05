@@ -18,19 +18,15 @@ trait DeleteByteMatchSetRequest extends StObject {
 }
 object DeleteByteMatchSetRequest {
   
-  @scala.inline
-  def apply(ByteMatchSetId: ResourceId, ChangeToken: ChangeToken): DeleteByteMatchSetRequest = {
+  inline def apply(ByteMatchSetId: ResourceId, ChangeToken: ChangeToken): DeleteByteMatchSetRequest = {
     val __obj = js.Dynamic.literal(ByteMatchSetId = ByteMatchSetId.asInstanceOf[js.Any], ChangeToken = ChangeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteByteMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteByteMatchSetRequestMutableBuilder[Self <: DeleteByteMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteByteMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
+    inline def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
   }
 }

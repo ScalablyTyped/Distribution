@@ -23,16 +23,13 @@ trait PropertyChangedEventArgs
 }
 object PropertyChangedEventArgs {
   
-  @scala.inline
-  def apply(Empty: EventArgs, propertyName: () => String): PropertyChangedEventArgs = {
+  inline def apply(Empty: EventArgs, propertyName: () => String): PropertyChangedEventArgs = {
     val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], propertyName = js.Any.fromFunction0(propertyName))
     __obj.asInstanceOf[PropertyChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class PropertyChangedEventArgsMutableBuilder[Self <: PropertyChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPropertyName(value: () => String): Self = StObject.set(x, "propertyName", js.Any.fromFunction0(value))
+    inline def setPropertyName(value: () => String): Self = StObject.set(x, "propertyName", js.Any.fromFunction0(value))
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlColorIndex extends StObject
 object XlColorIndex {
   
-  @scala.inline
-  def xlColorIndexAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlColorIndexAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlColorIndexNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlColorIndexNone: `-4142` = -4142.asInstanceOf[`-4142`]
 }

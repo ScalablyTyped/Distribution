@@ -14,31 +14,23 @@ trait DefaultColumnValue extends StObject {
 }
 object DefaultColumnValue {
   
-  @scala.inline
-  def apply(): DefaultColumnValue = {
+  inline def apply(): DefaultColumnValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultColumnValue]
   }
   
-  @scala.inline
-  implicit class DefaultColumnValueMutableBuilder[Self <: DefaultColumnValue] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultColumnValue](x: Self) {
     
-    @scala.inline
-    def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaNull: Self = StObject.set(x, "formula", null)
+    inline def setFormulaNull: Self = StObject.set(x, "formula", null)
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

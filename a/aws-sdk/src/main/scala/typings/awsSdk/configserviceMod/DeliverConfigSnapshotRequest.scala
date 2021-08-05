@@ -13,16 +13,13 @@ trait DeliverConfigSnapshotRequest extends StObject {
 }
 object DeliverConfigSnapshotRequest {
   
-  @scala.inline
-  def apply(deliveryChannelName: ChannelName): DeliverConfigSnapshotRequest = {
+  inline def apply(deliveryChannelName: ChannelName): DeliverConfigSnapshotRequest = {
     val __obj = js.Dynamic.literal(deliveryChannelName = deliveryChannelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliverConfigSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class DeliverConfigSnapshotRequestMutableBuilder[Self <: DeliverConfigSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeliverConfigSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setDeliveryChannelName(value: ChannelName): Self = StObject.set(x, "deliveryChannelName", value.asInstanceOf[js.Any])
+    inline def setDeliveryChannelName(value: ChannelName): Self = StObject.set(x, "deliveryChannelName", value.asInstanceOf[js.Any])
   }
 }

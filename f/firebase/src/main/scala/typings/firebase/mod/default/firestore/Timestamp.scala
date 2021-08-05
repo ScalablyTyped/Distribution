@@ -65,8 +65,7 @@ object Timestamp {
     * @return A new `Timestamp` representing the same point in time as the given
     *     date.
     */
-  @scala.inline
-  def fromDate(date: Date): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
+  inline def fromDate(date: Date): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
   
   /**
     * Creates a new timestamp from the given number of milliseconds.
@@ -76,14 +75,12 @@ object Timestamp {
     * @return A new `Timestamp` representing the same point in time as the given
     *     number of milliseconds.
     */
-  @scala.inline
-  def fromMillis(milliseconds: Double): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
+  inline def fromMillis(milliseconds: Double): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
   
   /**
     * Creates a new timestamp with the current date, with millisecond precision.
     *
     * @return a new timestamp representing the current date.
     */
-  @scala.inline
-  def now(): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
+  inline def now(): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
 }

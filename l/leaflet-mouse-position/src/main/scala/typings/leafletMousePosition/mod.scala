@@ -46,68 +46,48 @@ object mod {
     }
     object MousePositionControlOptions {
       
-      @scala.inline
-      def apply(): MousePositionControlOptions = {
+      inline def apply(): MousePositionControlOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[MousePositionControlOptions]
       }
       
-      @scala.inline
-      implicit class MousePositionControlOptionsMutableBuilder[Self <: MousePositionControlOptions] (val x: Self) extends AnyVal {
+      extension [Self <: MousePositionControlOptions](x: Self) {
         
-        @scala.inline
-        def setEmptyString(value: String): Self = StObject.set(x, "emptyString", value.asInstanceOf[js.Any])
+        inline def setEmptyString(value: String): Self = StObject.set(x, "emptyString", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmptyStringUndefined: Self = StObject.set(x, "emptyString", js.undefined)
+        inline def setEmptyStringUndefined: Self = StObject.set(x, "emptyString", js.undefined)
         
-        @scala.inline
-        def setFormatter(value: (/* lng */ Double, /* lat */ Double) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
+        inline def setFormatter(value: (/* lng */ Double, /* lat */ Double) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+        inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
         
-        @scala.inline
-        def setLatFormatter(value: /* lat */ Double => String): Self = StObject.set(x, "latFormatter", js.Any.fromFunction1(value))
+        inline def setLatFormatter(value: /* lat */ Double => String): Self = StObject.set(x, "latFormatter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLatFormatterUndefined: Self = StObject.set(x, "latFormatter", js.undefined)
+        inline def setLatFormatterUndefined: Self = StObject.set(x, "latFormatter", js.undefined)
         
-        @scala.inline
-        def setLngFirst(value: Boolean): Self = StObject.set(x, "lngFirst", value.asInstanceOf[js.Any])
+        inline def setLngFirst(value: Boolean): Self = StObject.set(x, "lngFirst", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLngFirstUndefined: Self = StObject.set(x, "lngFirst", js.undefined)
+        inline def setLngFirstUndefined: Self = StObject.set(x, "lngFirst", js.undefined)
         
-        @scala.inline
-        def setLngFormatter(value: /* lng */ Double => String): Self = StObject.set(x, "lngFormatter", js.Any.fromFunction1(value))
+        inline def setLngFormatter(value: /* lng */ Double => String): Self = StObject.set(x, "lngFormatter", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setLngFormatterUndefined: Self = StObject.set(x, "lngFormatter", js.undefined)
+        inline def setLngFormatterUndefined: Self = StObject.set(x, "lngFormatter", js.undefined)
         
-        @scala.inline
-        def setNumDigits(value: Double): Self = StObject.set(x, "numDigits", value.asInstanceOf[js.Any])
+        inline def setNumDigits(value: Double): Self = StObject.set(x, "numDigits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumDigitsUndefined: Self = StObject.set(x, "numDigits", js.undefined)
+        inline def setNumDigitsUndefined: Self = StObject.set(x, "numDigits", js.undefined)
         
-        @scala.inline
-        def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+        inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
         
-        @scala.inline
-        def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+        inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+        inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
         
-        @scala.inline
-        def setWrapLng(value: Boolean): Self = StObject.set(x, "wrapLng", value.asInstanceOf[js.Any])
+        inline def setWrapLng(value: Boolean): Self = StObject.set(x, "wrapLng", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWrapLngUndefined: Self = StObject.set(x, "wrapLng", js.undefined)
+        inline def setWrapLngUndefined: Self = StObject.set(x, "wrapLng", js.undefined)
       }
     }
   }
@@ -118,10 +98,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def mousePosition(): MousePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("mousePosition")().asInstanceOf[MousePosition]
-    @scala.inline
-    def mousePosition(options: MousePositionControlOptions): MousePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("mousePosition")(options.asInstanceOf[js.Any]).asInstanceOf[MousePosition]
+    inline def mousePosition(): MousePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("mousePosition")().asInstanceOf[MousePosition]
+    inline def mousePosition(options: MousePositionControlOptions): MousePosition = ^.asInstanceOf[js.Dynamic].applyDynamic("mousePosition")(options.asInstanceOf[js.Any]).asInstanceOf[MousePosition]
   }
   
   trait MapOptions extends StObject {
@@ -130,20 +108,16 @@ object mod {
   }
   object MapOptions {
     
-    @scala.inline
-    def apply(): MapOptions = {
+    inline def apply(): MapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapOptions]
     }
     
-    @scala.inline
-    implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptions](x: Self) {
       
-      @scala.inline
-      def setPositionControl(value: Boolean): Self = StObject.set(x, "positionControl", value.asInstanceOf[js.Any])
+      inline def setPositionControl(value: Boolean): Self = StObject.set(x, "positionControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionControlUndefined: Self = StObject.set(x, "positionControl", js.undefined)
+      inline def setPositionControlUndefined: Self = StObject.set(x, "positionControl", js.undefined)
     }
   }
 }

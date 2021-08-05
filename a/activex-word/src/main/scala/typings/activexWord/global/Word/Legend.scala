@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Legend")
 @js.native
-class Legend protected ()
+/* private */ class Legend ()
   extends StObject
      with typings.activexWord.Word.Legend

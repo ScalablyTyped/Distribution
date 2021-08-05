@@ -33,43 +33,31 @@ trait GenerateDataKeyPairResponse extends StObject {
 }
 object GenerateDataKeyPairResponse {
   
-  @scala.inline
-  def apply(): GenerateDataKeyPairResponse = {
+  inline def apply(): GenerateDataKeyPairResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateDataKeyPairResponse]
   }
   
-  @scala.inline
-  implicit class GenerateDataKeyPairResponseMutableBuilder[Self <: GenerateDataKeyPairResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateDataKeyPairResponse](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setKeyPairSpec(value: DataKeyPairSpec): Self = StObject.set(x, "KeyPairSpec", value.asInstanceOf[js.Any])
+    inline def setKeyPairSpec(value: DataKeyPairSpec): Self = StObject.set(x, "KeyPairSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairSpecUndefined: Self = StObject.set(x, "KeyPairSpec", js.undefined)
+    inline def setKeyPairSpecUndefined: Self = StObject.set(x, "KeyPairSpec", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "PrivateKeyCiphertextBlob", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "PrivateKeyCiphertextBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyCiphertextBlobUndefined: Self = StObject.set(x, "PrivateKeyCiphertextBlob", js.undefined)
+    inline def setPrivateKeyCiphertextBlobUndefined: Self = StObject.set(x, "PrivateKeyCiphertextBlob", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyPlaintext(value: PlaintextType): Self = StObject.set(x, "PrivateKeyPlaintext", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyPlaintext(value: PlaintextType): Self = StObject.set(x, "PrivateKeyPlaintext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyPlaintextUndefined: Self = StObject.set(x, "PrivateKeyPlaintext", js.undefined)
+    inline def setPrivateKeyPlaintextUndefined: Self = StObject.set(x, "PrivateKeyPlaintext", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: PublicKeyType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PublicKeyType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
   }
 }

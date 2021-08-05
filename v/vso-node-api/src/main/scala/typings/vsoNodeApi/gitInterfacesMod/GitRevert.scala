@@ -12,8 +12,7 @@ trait GitRevert
 }
 object GitRevert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     detailedStatus: GitAsyncRefOperationDetail,
     parameters: GitAsyncRefOperationParameters,
@@ -25,10 +24,8 @@ object GitRevert {
     __obj.asInstanceOf[GitRevert]
   }
   
-  @scala.inline
-  implicit class GitRevertMutableBuilder[Self <: GitRevert] (val x: Self) extends AnyVal {
+  extension [Self <: GitRevert](x: Self) {
     
-    @scala.inline
-    def setRevertId(value: Double): Self = StObject.set(x, "revertId", value.asInstanceOf[js.Any])
+    inline def setRevertId(value: Double): Self = StObject.set(x, "revertId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceTransportPolicy extends StObject
 object RTCIceTransportPolicy {
   
-  @scala.inline
-  def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
+  inline def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
   
-  @scala.inline
-  def relay: typings.std.stdStrings.relay = "relay".asInstanceOf[typings.std.stdStrings.relay]
+  inline def relay: typings.std.stdStrings.relay = "relay".asInstanceOf[typings.std.stdStrings.relay]
 }

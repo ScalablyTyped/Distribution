@@ -17,14 +17,11 @@ object tagsListHelpersMod {
   trait DataHooks extends StObject
   object DataHooks {
     
-    @scala.inline
-    def Tag: `tags-list-tag` = "tags-list-tag".asInstanceOf[`tags-list-tag`]
+    inline def Tag: `tags-list-tag` = "tags-list-tag".asInstanceOf[`tags-list-tag`]
     
-    @scala.inline
-    def TagInput: `tags-list-tag-input` = "tags-list-tag-input".asInstanceOf[`tags-list-tag-input`]
+    inline def TagInput: `tags-list-tag-input` = "tags-list-tag-input".asInstanceOf[`tags-list-tag-input`]
     
-    @scala.inline
-    def TagsList: `tags-list` = "tags-list".asInstanceOf[`tags-list`]
+    inline def TagsList: `tags-list` = "tags-list".asInstanceOf[`tags-list`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -34,10 +31,8 @@ object tagsListHelpersMod {
   trait DisplayNames extends StObject
   object DisplayNames {
     
-    @scala.inline
-    def Tag: typings.wixUiCore.wixUiCoreStrings.Tag = "Tag".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.Tag]
+    inline def Tag: typings.wixUiCore.wixUiCoreStrings.Tag = "Tag".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.Tag]
     
-    @scala.inline
-    def TagsList: typings.wixUiCore.wixUiCoreStrings.TagsList = "TagsList".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.TagsList]
+    inline def TagsList: typings.wixUiCore.wixUiCoreStrings.TagsList = "TagsList".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.TagsList]
   }
 }

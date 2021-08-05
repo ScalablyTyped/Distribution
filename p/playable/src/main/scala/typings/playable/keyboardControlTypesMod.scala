@@ -15,20 +15,16 @@ object keyboardControlTypesMod {
   }
   object IKeyboardControl {
     
-    @scala.inline
-    def apply(addKeyControl: (Double, EventListener) => Unit, destroy: () => Unit): IKeyboardControl = {
+    inline def apply(addKeyControl: (Double, EventListener) => Unit, destroy: () => Unit): IKeyboardControl = {
       val __obj = js.Dynamic.literal(addKeyControl = js.Any.fromFunction2(addKeyControl), destroy = js.Any.fromFunction0(destroy))
       __obj.asInstanceOf[IKeyboardControl]
     }
     
-    @scala.inline
-    implicit class IKeyboardControlMutableBuilder[Self <: IKeyboardControl] (val x: Self) extends AnyVal {
+    extension [Self <: IKeyboardControl](x: Self) {
       
-      @scala.inline
-      def setAddKeyControl(value: (Double, EventListener) => Unit): Self = StObject.set(x, "addKeyControl", js.Any.fromFunction2(value))
+      inline def setAddKeyControl(value: (Double, EventListener) => Unit): Self = StObject.set(x, "addKeyControl", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
   }
 }

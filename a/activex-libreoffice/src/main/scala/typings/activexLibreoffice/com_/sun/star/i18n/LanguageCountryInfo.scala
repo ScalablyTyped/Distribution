@@ -22,8 +22,7 @@ trait LanguageCountryInfo extends StObject {
 }
 object LanguageCountryInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Country: String,
     CountryDefaultName: String,
     Language: String,
@@ -34,22 +33,16 @@ object LanguageCountryInfo {
     __obj.asInstanceOf[LanguageCountryInfo]
   }
   
-  @scala.inline
-  implicit class LanguageCountryInfoMutableBuilder[Self <: LanguageCountryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageCountryInfo](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryDefaultName(value: String): Self = StObject.set(x, "CountryDefaultName", value.asInstanceOf[js.Any])
+    inline def setCountryDefaultName(value: String): Self = StObject.set(x, "CountryDefaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageDefaultName(value: String): Self = StObject.set(x, "LanguageDefaultName", value.asInstanceOf[js.Any])
+    inline def setLanguageDefaultName(value: String): Self = StObject.set(x, "LanguageDefaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariant(value: String): Self = StObject.set(x, "Variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: String): Self = StObject.set(x, "Variant", value.asInstanceOf[js.Any])
   }
 }

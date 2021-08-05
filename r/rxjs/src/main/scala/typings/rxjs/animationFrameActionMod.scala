@@ -27,7 +27,7 @@ object animationFrameActionMod {
     /* protected */ def requestAsyncId(scheduler: AnimationFrameScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AnimationFrameScheduler, id: Unit, delay: Double): js.Any = js.native
     
-    @JSName("scheduler")
+    /* protected */ @JSName("scheduler")
     var scheduler_AnimationFrameAction: AnimationFrameScheduler = js.native
   }
 }

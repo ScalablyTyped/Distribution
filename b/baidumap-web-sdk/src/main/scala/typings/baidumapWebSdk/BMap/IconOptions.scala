@@ -16,37 +16,27 @@ trait IconOptions extends StObject {
 }
 object IconOptions {
   
-  @scala.inline
-  def apply(): IconOptions = {
+  inline def apply(): IconOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconOptions]
   }
   
-  @scala.inline
-  implicit class IconOptionsMutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IconOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Size): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Size): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setImageOffset(value: Size): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
+    inline def setImageOffset(value: Size): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageOffsetUndefined: Self = StObject.set(x, "imageOffset", js.undefined)
+    inline def setImageOffsetUndefined: Self = StObject.set(x, "imageOffset", js.undefined)
     
-    @scala.inline
-    def setInfoWindowAnchor(value: Size): Self = StObject.set(x, "infoWindowAnchor", value.asInstanceOf[js.Any])
+    inline def setInfoWindowAnchor(value: Size): Self = StObject.set(x, "infoWindowAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoWindowAnchorUndefined: Self = StObject.set(x, "infoWindowAnchor", js.undefined)
+    inline def setInfoWindowAnchorUndefined: Self = StObject.set(x, "infoWindowAnchor", js.undefined)
     
-    @scala.inline
-    def setPrintImageUrl(value: String): Self = StObject.set(x, "printImageUrl", value.asInstanceOf[js.Any])
+    inline def setPrintImageUrl(value: String): Self = StObject.set(x, "printImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintImageUrlUndefined: Self = StObject.set(x, "printImageUrl", js.undefined)
+    inline def setPrintImageUrlUndefined: Self = StObject.set(x, "printImageUrl", js.undefined)
   }
 }

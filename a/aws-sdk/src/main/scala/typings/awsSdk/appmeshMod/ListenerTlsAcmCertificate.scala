@@ -13,16 +13,13 @@ trait ListenerTlsAcmCertificate extends StObject {
 }
 object ListenerTlsAcmCertificate {
   
-  @scala.inline
-  def apply(certificateArn: Arn): ListenerTlsAcmCertificate = {
+  inline def apply(certificateArn: Arn): ListenerTlsAcmCertificate = {
     val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerTlsAcmCertificate]
   }
   
-  @scala.inline
-  implicit class ListenerTlsAcmCertificateMutableBuilder[Self <: ListenerTlsAcmCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerTlsAcmCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
   }
 }

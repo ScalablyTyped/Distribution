@@ -19,25 +19,19 @@ trait MapEventListener extends StObject {
 }
 object MapEventListener {
   
-  @scala.inline
-  def apply(eventName: String, listener: js.Any => js.Any, listenerId: String, target: js.Any): MapEventListener = {
+  inline def apply(eventName: String, listener: js.Any => js.Any, listenerId: String, target: js.Any): MapEventListener = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], listener = js.Any.fromFunction1(listener), listenerId = listenerId.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapEventListener]
   }
   
-  @scala.inline
-  implicit class MapEventListenerMutableBuilder[Self <: MapEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: MapEventListener](x: Self) {
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListener(value: js.Any => js.Any): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+    inline def setListener(value: js.Any => js.Any): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setListenerId(value: String): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
+    inline def setListenerId(value: String): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

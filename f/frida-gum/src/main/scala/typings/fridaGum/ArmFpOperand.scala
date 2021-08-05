@@ -16,20 +16,16 @@ trait ArmFpOperand
 }
 object ArmFpOperand {
   
-  @scala.inline
-  def apply(subtracted: Boolean, value: Double): ArmFpOperand = {
+  inline def apply(subtracted: Boolean, value: Double): ArmFpOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fp")
     __obj.asInstanceOf[ArmFpOperand]
   }
   
-  @scala.inline
-  implicit class ArmFpOperandMutableBuilder[Self <: ArmFpOperand] (val x: Self) extends AnyVal {
+  extension [Self <: ArmFpOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: fp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: fp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

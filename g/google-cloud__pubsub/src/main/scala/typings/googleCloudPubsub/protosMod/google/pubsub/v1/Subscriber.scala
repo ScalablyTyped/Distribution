@@ -261,14 +261,10 @@ object Subscriber {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @scala.inline
-  def create(rpcImpl: RPCImpl): Subscriber = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Subscriber]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
+  inline def create(rpcImpl: RPCImpl): Subscriber = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[Subscriber]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): Subscriber = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[Subscriber]
   
   /**
     * Callback as used by {@link google.pubsub.v1.Subscriber#acknowledge}.

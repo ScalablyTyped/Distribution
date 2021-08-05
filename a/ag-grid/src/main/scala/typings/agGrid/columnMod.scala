@@ -20,19 +20,19 @@ object columnMod {
        with OriginalColumnGroupChild {
     def this(colDef: ColDef, colId: String, primary: Boolean) = this()
     
-    var actualWidth: js.Any = js.native
+    /* private */ var actualWidth: js.Any = js.native
     
-    var aggFunc: js.Any = js.native
+    /* private */ var aggFunc: js.Any = js.native
     
-    var aggregationActive: js.Any = js.native
+    /* private */ var aggregationActive: js.Any = js.native
     
-    var colDef: js.Any = js.native
+    /* private */ var colDef: js.Any = js.native
     
-    var colId: js.Any = js.native
+    /* private */ var colId: js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnUtils: js.Any = js.native
+    /* private */ var columnUtils: js.Any = js.native
     
     /* private */ def createBaseColDefParams(rowNode: js.Any): js.Any = js.native
     
@@ -40,15 +40,15 @@ object columnMod {
     
     /* private */ def createIsColumnFuncParams(rowNode: js.Any): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var fieldContainsDots: js.Any = js.native
+    /* private */ var fieldContainsDots: js.Any = js.native
     
-    var filterActive: js.Any = js.native
+    /* private */ var filterActive: js.Any = js.native
     
-    var firstRightPinned: js.Any = js.native
+    /* private */ var firstRightPinned: js.Any = js.native
     
-    var frameworkFactory: js.Any = js.native
+    /* private */ var frameworkFactory: js.Any = js.native
     
     def getAggFunc(): String | IAggFunc = js.native
     
@@ -78,9 +78,9 @@ object columnMod {
     
     def getSortedAt(): Double = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def initialise(): Unit = js.native
     
@@ -155,35 +155,35 @@ object columnMod {
     /* CompleteClass */
     override def isVisible(): Boolean = js.native
     
-    var lastLeftPinned: js.Any = js.native
+    /* private */ var lastLeftPinned: js.Any = js.native
     
-    var left: js.Any = js.native
+    /* private */ var left: js.Any = js.native
     
-    var lockPinned: js.Any = js.native
+    /* private */ var lockPinned: js.Any = js.native
     
-    var lockPosition: js.Any = js.native
+    /* private */ var lockPosition: js.Any = js.native
     
-    var lockVisible: js.Any = js.native
+    /* private */ var lockVisible: js.Any = js.native
     
-    var maxWidth: js.Any = js.native
+    /* private */ var maxWidth: js.Any = js.native
     
-    var menuVisible: js.Any = js.native
+    /* private */ var menuVisible: js.Any = js.native
     
-    var minWidth: js.Any = js.native
+    /* private */ var minWidth: js.Any = js.native
     
-    var moving: js.Any = js.native
+    /* private */ var moving: js.Any = js.native
     
-    var oldLeft: js.Any = js.native
+    /* private */ var oldLeft: js.Any = js.native
     
-    var parent: js.Any = js.native
+    /* private */ var parent: js.Any = js.native
     
-    var pinned: js.Any = js.native
+    /* private */ var pinned: js.Any = js.native
     
-    var pivotActive: js.Any = js.native
+    /* private */ var pivotActive: js.Any = js.native
     
-    var primary: js.Any = js.native
+    /* private */ var primary: js.Any = js.native
     
-    var rowGroupActive: js.Any = js.native
+    /* private */ var rowGroupActive: js.Any = js.native
     
     def setActualWidth(actualWidth: Double): Unit = js.native
     def setActualWidth(actualWidth: Double, source: ColumnEventType): Unit = js.native
@@ -232,15 +232,15 @@ object columnMod {
     def setVisible(visible: Boolean): Unit = js.native
     def setVisible(visible: Boolean, source: ColumnEventType): Unit = js.native
     
-    var sort: js.Any = js.native
+    /* private */ var sort: js.Any = js.native
     
-    var sortedAt: js.Any = js.native
+    /* private */ var sortedAt: js.Any = js.native
     
-    var tooltipFieldContainsDots: js.Any = js.native
+    /* private */ var tooltipFieldContainsDots: js.Any = js.native
     
     /* private */ def validate(): js.Any = js.native
     
-    var visible: js.Any = js.native
+    /* private */ var visible: js.Any = js.native
   }
   /* static members */
   object Column {
@@ -252,103 +252,86 @@ object columnMod {
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_FILTER_ACTIVE_CHANGED")
     @js.native
     def EVENT_FILTER_ACTIVE_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_FILTER_ACTIVE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FILTER_ACTIVE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_FILTER_ACTIVE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FILTER_ACTIVE_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_FILTER_CHANGED")
     @js.native
     def EVENT_FILTER_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_FILTER_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FILTER_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_FILTER_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FILTER_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_FIRST_RIGHT_PINNED_CHANGED")
     @js.native
     def EVENT_FIRST_RIGHT_PINNED_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_FIRST_RIGHT_PINNED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FIRST_RIGHT_PINNED_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_FIRST_RIGHT_PINNED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FIRST_RIGHT_PINNED_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_LAST_LEFT_PINNED_CHANGED")
     @js.native
     def EVENT_LAST_LEFT_PINNED_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_LAST_LEFT_PINNED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LAST_LEFT_PINNED_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_LAST_LEFT_PINNED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LAST_LEFT_PINNED_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_LEFT_CHANGED")
     @js.native
     def EVENT_LEFT_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_LEFT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LEFT_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_LEFT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LEFT_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_MENU_VISIBLE_CHANGED")
     @js.native
     def EVENT_MENU_VISIBLE_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_MENU_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MENU_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_MENU_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MENU_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_MOVING_CHANGED")
     @js.native
     def EVENT_MOVING_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_MOVING_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MOVING_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_MOVING_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MOVING_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_PIVOT_CHANGED")
     @js.native
     def EVENT_PIVOT_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_PIVOT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_PIVOT_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_PIVOT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_PIVOT_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_ROW_GROUP_CHANGED")
     @js.native
     def EVENT_ROW_GROUP_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_ROW_GROUP_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ROW_GROUP_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_ROW_GROUP_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ROW_GROUP_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_SORT_CHANGED")
     @js.native
     def EVENT_SORT_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_SORT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_SORT_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_SORT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_SORT_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_VALUE_CHANGED")
     @js.native
     def EVENT_VALUE_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_VALUE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VALUE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_VALUE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VALUE_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_VISIBLE_CHANGED")
     @js.native
     def EVENT_VISIBLE_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.EVENT_WIDTH_CHANGED")
     @js.native
     def EVENT_WIDTH_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_WIDTH_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_WIDTH_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_WIDTH_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_WIDTH_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.PINNED_LEFT")
     @js.native
     def PINNED_LEFT: String = js.native
-    @scala.inline
-    def PINNED_LEFT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PINNED_LEFT")(x.asInstanceOf[js.Any])
+    inline def PINNED_LEFT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PINNED_LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.PINNED_RIGHT")
     @js.native
     def PINNED_RIGHT: String = js.native
-    @scala.inline
-    def PINNED_RIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PINNED_RIGHT")(x.asInstanceOf[js.Any])
+    inline def PINNED_RIGHT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PINNED_RIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.SORT_ASC")
     @js.native
     def SORT_ASC: String = js.native
-    @scala.inline
-    def SORT_ASC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORT_ASC")(x.asInstanceOf[js.Any])
+    inline def SORT_ASC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORT_ASC")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/column", "Column.SORT_DESC")
     @js.native
     def SORT_DESC: String = js.native
-    @scala.inline
-    def SORT_DESC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORT_DESC")(x.asInstanceOf[js.Any])
+    inline def SORT_DESC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SORT_DESC")(x.asInstanceOf[js.Any])
   }
 }

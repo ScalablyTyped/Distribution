@@ -38,77 +38,54 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setFormTypes(value: js.Array[String]): Self = StObject.set(x, "formTypes", value.asInstanceOf[js.Any])
+      inline def setFormTypes(value: js.Array[String]): Self = StObject.set(x, "formTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormTypesUndefined: Self = StObject.set(x, "formTypes", js.undefined)
+      inline def setFormTypesUndefined: Self = StObject.set(x, "formTypes", js.undefined)
       
-      @scala.inline
-      def setFormTypesVarargs(value: String*): Self = StObject.set(x, "formTypes", js.Array(value :_*))
+      inline def setFormTypesVarargs(value: String*): Self = StObject.set(x, "formTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setJsonTypes(value: js.Array[String]): Self = StObject.set(x, "jsonTypes", value.asInstanceOf[js.Any])
+      inline def setJsonTypes(value: js.Array[String]): Self = StObject.set(x, "jsonTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonTypesUndefined: Self = StObject.set(x, "jsonTypes", js.undefined)
+      inline def setJsonTypesUndefined: Self = StObject.set(x, "jsonTypes", js.undefined)
       
-      @scala.inline
-      def setJsonTypesVarargs(value: String*): Self = StObject.set(x, "jsonTypes", js.Array(value :_*))
+      inline def setJsonTypesVarargs(value: String*): Self = StObject.set(x, "jsonTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setQueryString(value: IParseOptions): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+      inline def setQueryString(value: IParseOptions): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
+      inline def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
       
-      @scala.inline
-      def setReturnRawBody(value: Boolean): Self = StObject.set(x, "returnRawBody", value.asInstanceOf[js.Any])
+      inline def setReturnRawBody(value: Boolean): Self = StObject.set(x, "returnRawBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnRawBodyUndefined: Self = StObject.set(x, "returnRawBody", js.undefined)
+      inline def setReturnRawBodyUndefined: Self = StObject.set(x, "returnRawBody", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setTextTypes(value: js.Array[String]): Self = StObject.set(x, "textTypes", value.asInstanceOf[js.Any])
+      inline def setTextTypes(value: js.Array[String]): Self = StObject.set(x, "textTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTypesUndefined: Self = StObject.set(x, "textTypes", js.undefined)
+      inline def setTextTypesUndefined: Self = StObject.set(x, "textTypes", js.undefined)
       
-      @scala.inline
-      def setTextTypesVarargs(value: String*): Self = StObject.set(x, "textTypes", js.Array(value :_*))
+      inline def setTextTypesVarargs(value: String*): Self = StObject.set(x, "textTypes", js.Array(value :_*))
     }
   }
   

@@ -13,8 +13,7 @@ object multiplyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def multiply(args: InputsBinaryInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def multiply(args: InputsBinaryInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Multiply", "multiplyConfig")
   @js.native

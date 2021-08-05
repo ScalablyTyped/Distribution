@@ -28,19 +28,15 @@ trait BatchShaderGenerator extends StObject {
 }
 object BatchShaderGenerator {
   
-  @scala.inline
-  def apply(fragTemplate: String, vertexSrc: String): BatchShaderGenerator = {
+  inline def apply(fragTemplate: String, vertexSrc: String): BatchShaderGenerator = {
     val __obj = js.Dynamic.literal(fragTemplate = fragTemplate.asInstanceOf[js.Any], vertexSrc = vertexSrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchShaderGenerator]
   }
   
-  @scala.inline
-  implicit class BatchShaderGeneratorMutableBuilder[Self <: BatchShaderGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: BatchShaderGenerator](x: Self) {
     
-    @scala.inline
-    def setFragTemplate(value: String): Self = StObject.set(x, "fragTemplate", value.asInstanceOf[js.Any])
+    inline def setFragTemplate(value: String): Self = StObject.set(x, "fragTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexSrc(value: String): Self = StObject.set(x, "vertexSrc", value.asInstanceOf[js.Any])
+    inline def setVertexSrc(value: String): Self = StObject.set(x, "vertexSrc", value.asInstanceOf[js.Any])
   }
 }

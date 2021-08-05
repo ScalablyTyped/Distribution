@@ -47,8 +47,7 @@ trait XTransferable
 }
 object XTransferable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TransferDataFlavors: SafeArray[DataFlavor],
     acquire: () => Unit,
     getTransferData: DataFlavor => js.Any,
@@ -61,19 +60,14 @@ object XTransferable {
     __obj.asInstanceOf[XTransferable]
   }
   
-  @scala.inline
-  implicit class XTransferableMutableBuilder[Self <: XTransferable] (val x: Self) extends AnyVal {
+  extension [Self <: XTransferable](x: Self) {
     
-    @scala.inline
-    def setGetTransferData(value: DataFlavor => js.Any): Self = StObject.set(x, "getTransferData", js.Any.fromFunction1(value))
+    inline def setGetTransferData(value: DataFlavor => js.Any): Self = StObject.set(x, "getTransferData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTransferDataFlavors(value: () => SafeArray[DataFlavor]): Self = StObject.set(x, "getTransferDataFlavors", js.Any.fromFunction0(value))
+    inline def setGetTransferDataFlavors(value: () => SafeArray[DataFlavor]): Self = StObject.set(x, "getTransferDataFlavors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDataFlavorSupported(value: DataFlavor => Boolean): Self = StObject.set(x, "isDataFlavorSupported", js.Any.fromFunction1(value))
+    inline def setIsDataFlavorSupported(value: DataFlavor => Boolean): Self = StObject.set(x, "isDataFlavorSupported", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransferDataFlavors(value: SafeArray[DataFlavor]): Self = StObject.set(x, "TransferDataFlavors", value.asInstanceOf[js.Any])
+    inline def setTransferDataFlavors(value: SafeArray[DataFlavor]): Self = StObject.set(x, "TransferDataFlavors", value.asInstanceOf[js.Any])
   }
 }

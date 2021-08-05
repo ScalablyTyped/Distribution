@@ -18,22 +18,17 @@ trait SetDataRetrievalPolicyInput extends StObject {
 }
 object SetDataRetrievalPolicyInput {
   
-  @scala.inline
-  def apply(accountId: String): SetDataRetrievalPolicyInput = {
+  inline def apply(accountId: String): SetDataRetrievalPolicyInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDataRetrievalPolicyInput]
   }
   
-  @scala.inline
-  implicit class SetDataRetrievalPolicyInputMutableBuilder[Self <: SetDataRetrievalPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetDataRetrievalPolicyInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: DataRetrievalPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: DataRetrievalPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

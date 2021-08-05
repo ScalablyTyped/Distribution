@@ -31,25 +31,19 @@ trait Hl7V2NotificationConfig extends StObject {
 }
 object Hl7V2NotificationConfig {
   
-  @scala.inline
-  def apply(): Hl7V2NotificationConfig = {
+  inline def apply(): Hl7V2NotificationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hl7V2NotificationConfig]
   }
   
-  @scala.inline
-  implicit class Hl7V2NotificationConfigMutableBuilder[Self <: Hl7V2NotificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: Hl7V2NotificationConfig](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
+    inline def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
+    inline def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait Executionid extends StObject {
 }
 object Executionid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: String,
     `execution-id`: String,
     pipeline: String,
@@ -39,28 +38,20 @@ object Executionid {
     __obj.asInstanceOf[Executionid]
   }
   
-  @scala.inline
-  implicit class ExecutionidMutableBuilder[Self <: Executionid] (val x: Self) extends AnyVal {
+  extension [Self <: Executionid](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setExecution-id`(value: String): Self = StObject.set(x, "execution-id", value.asInstanceOf[js.Any])
+    inline def `setExecution-id`(value: String): Self = StObject.set(x, "execution-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipeline(value: String): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: String): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: CodePipelineActionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CodePipelineActionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Category): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Category): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

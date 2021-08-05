@@ -14,16 +14,14 @@ object reactPortalTooltipStrings {
     extends StObject
        with Position
        with _Arrow
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait center
     extends StObject
        with _Align
        with _Arrow
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait left
@@ -31,8 +29,7 @@ object reactPortalTooltipStrings {
        with Position
        with _Align
        with _Arrow
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait right
@@ -40,14 +37,12 @@ object reactPortalTooltipStrings {
        with Position
        with _Align
        with _Arrow
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait top
     extends StObject
        with Position
        with _Arrow
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
 }

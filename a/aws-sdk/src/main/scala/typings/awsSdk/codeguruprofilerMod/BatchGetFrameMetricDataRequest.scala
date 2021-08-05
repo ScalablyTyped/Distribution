@@ -38,49 +38,35 @@ trait BatchGetFrameMetricDataRequest extends StObject {
 }
 object BatchGetFrameMetricDataRequest {
   
-  @scala.inline
-  def apply(profilingGroupName: ProfilingGroupName): BatchGetFrameMetricDataRequest = {
+  inline def apply(profilingGroupName: ProfilingGroupName): BatchGetFrameMetricDataRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetFrameMetricDataRequest]
   }
   
-  @scala.inline
-  implicit class BatchGetFrameMetricDataRequestMutableBuilder[Self <: BatchGetFrameMetricDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetFrameMetricDataRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setFrameMetrics(value: FrameMetrics): Self = StObject.set(x, "frameMetrics", value.asInstanceOf[js.Any])
+    inline def setFrameMetrics(value: FrameMetrics): Self = StObject.set(x, "frameMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameMetricsUndefined: Self = StObject.set(x, "frameMetrics", js.undefined)
+    inline def setFrameMetricsUndefined: Self = StObject.set(x, "frameMetrics", js.undefined)
     
-    @scala.inline
-    def setFrameMetricsVarargs(value: FrameMetric*): Self = StObject.set(x, "frameMetrics", js.Array(value :_*))
+    inline def setFrameMetricsVarargs(value: FrameMetric*): Self = StObject.set(x, "frameMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTargetResolution(value: AggregationPeriod): Self = StObject.set(x, "targetResolution", value.asInstanceOf[js.Any])
+    inline def setTargetResolution(value: AggregationPeriod): Self = StObject.set(x, "targetResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetResolutionUndefined: Self = StObject.set(x, "targetResolution", js.undefined)
+    inline def setTargetResolutionUndefined: Self = StObject.set(x, "targetResolution", js.undefined)
   }
 }

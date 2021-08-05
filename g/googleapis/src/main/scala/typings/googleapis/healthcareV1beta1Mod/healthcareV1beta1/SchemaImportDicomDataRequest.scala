@@ -21,19 +21,15 @@ trait SchemaImportDicomDataRequest extends StObject {
 }
 object SchemaImportDicomDataRequest {
   
-  @scala.inline
-  def apply(): SchemaImportDicomDataRequest = {
+  inline def apply(): SchemaImportDicomDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportDicomDataRequest]
   }
   
-  @scala.inline
-  implicit class SchemaImportDicomDataRequestMutableBuilder[Self <: SchemaImportDicomDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportDicomDataRequest](x: Self) {
     
-    @scala.inline
-    def setGcsSource(value: SchemaGoogleCloudHealthcareV1beta1DicomGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: SchemaGoogleCloudHealthcareV1beta1DicomGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object colors {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def `match`(hexColor: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(hexColor.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def `match`(hexColor: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(hexColor.asInstanceOf[js.Any]).asInstanceOf[String]
 }

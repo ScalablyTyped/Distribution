@@ -15,33 +15,27 @@ object documentRequiredComponentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(documentation: Unit, varToFilePath: ImportedVariableSet, originObject: Unit, opt: ParseOptions): js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]]]
-  @scala.inline
-  def default(
+  inline def default(documentation: Unit, varToFilePath: ImportedVariableSet, originObject: Unit, opt: ParseOptions): js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]]]
+  inline def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
     varToFilePath: ImportedVariableSet,
     originObject: Unit,
     opt: ParseOptions
   ): js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.vueDocgenApi.documentationMod.default]]]
   
-  @scala.inline
-  def default_extends(
+  inline def default_extends(
     documentation: Unit,
     varToFilePath: ImportedVariableSet,
     originObject: `extends`,
     opt: ParseOptions
   ): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
-  @scala.inline
-  def default_extends(
+  inline def default_extends(
     documentation: default,
     varToFilePath: ImportedVariableSet,
     originObject: `extends`,
     opt: ParseOptions
   ): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
   
-  @scala.inline
-  def default_mixin(documentation: Unit, varToFilePath: ImportedVariableSet, originObject: mixin, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
-  @scala.inline
-  def default_mixin(documentation: default, varToFilePath: ImportedVariableSet, originObject: mixin, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  inline def default_mixin(documentation: Unit, varToFilePath: ImportedVariableSet, originObject: mixin, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  inline def default_mixin(documentation: default, varToFilePath: ImportedVariableSet, originObject: mixin, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], originObject.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
 }

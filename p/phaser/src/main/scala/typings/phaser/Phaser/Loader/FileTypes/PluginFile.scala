@@ -26,8 +26,7 @@ trait PluginFile
      with File
 object PluginFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

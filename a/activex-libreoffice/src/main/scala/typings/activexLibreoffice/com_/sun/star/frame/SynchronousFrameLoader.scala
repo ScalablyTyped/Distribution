@@ -23,8 +23,7 @@ trait SynchronousFrameLoader
      with XNamed
 object SynchronousFrameLoader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     acquire: () => Unit,
     cancel: () => Unit,

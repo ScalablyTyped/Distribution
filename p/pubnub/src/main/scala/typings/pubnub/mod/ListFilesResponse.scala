@@ -17,28 +17,21 @@ trait ListFilesResponse extends StObject {
 }
 object ListFilesResponse {
   
-  @scala.inline
-  def apply(count: Double, data: js.Array[Created], next: String, status: Double): ListFilesResponse = {
+  inline def apply(count: Double, data: js.Array[Created], next: String, status: Double): ListFilesResponse = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFilesResponse]
   }
   
-  @scala.inline
-  implicit class ListFilesResponseMutableBuilder[Self <: ListFilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFilesResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[Created]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Created]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Created*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Created*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

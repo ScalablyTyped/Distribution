@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCmdType extends StObject
 object XlCmdType {
   
-  @scala.inline
-  def xlCmdCube: `1` = 1.asInstanceOf[`1`]
+  inline def xlCmdCube: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlCmdDefault: `4` = 4.asInstanceOf[`4`]
+  inline def xlCmdDefault: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlCmdList: `5` = 5.asInstanceOf[`5`]
+  inline def xlCmdList: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlCmdSql: `2` = 2.asInstanceOf[`2`]
+  inline def xlCmdSql: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlCmdTable: `3` = 3.asInstanceOf[`3`]
+  inline def xlCmdTable: `3` = 3.asInstanceOf[`3`]
 }

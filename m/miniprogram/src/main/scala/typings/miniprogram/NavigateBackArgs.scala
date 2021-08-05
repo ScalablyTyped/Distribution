@@ -16,19 +16,15 @@ trait NavigateBackArgs
 }
 object NavigateBackArgs {
   
-  @scala.inline
-  def apply(): NavigateBackArgs = {
+  inline def apply(): NavigateBackArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigateBackArgs]
   }
   
-  @scala.inline
-  implicit class NavigateBackArgsMutableBuilder[Self <: NavigateBackArgs] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateBackArgs](x: Self) {
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
   }
 }

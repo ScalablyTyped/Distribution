@@ -12,25 +12,19 @@ trait WindowPosition extends StObject {
 }
 object WindowPosition {
   
-  @scala.inline
-  def apply(): WindowPosition = {
+  inline def apply(): WindowPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowPosition]
   }
   
-  @scala.inline
-  implicit class WindowPositionMutableBuilder[Self <: WindowPosition] (val x: Self) extends AnyVal {
+  extension [Self <: WindowPosition](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

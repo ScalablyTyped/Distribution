@@ -355,733 +355,491 @@ trait Visitor extends StObject {
 }
 object Visitor {
   
-  @scala.inline
-  def apply(): Visitor = {
+  inline def apply(): Visitor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Visitor]
   }
   
-  @scala.inline
-  implicit class VisitorMutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
+  extension [Self <: Visitor](x: Self) {
     
-    @scala.inline
-    def setArrayTypeName(value: /* node */ ArrayTypeName => js.Any): Self = StObject.set(x, "ArrayTypeName", js.Any.fromFunction1(value))
+    inline def setArrayTypeName(value: /* node */ ArrayTypeName => js.Any): Self = StObject.set(x, "ArrayTypeName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArrayTypeNameColonexit(value: /* node */ ArrayTypeName => js.Any): Self = StObject.set(x, "ArrayTypeName:exit", js.Any.fromFunction1(value))
+    inline def setArrayTypeNameColonexit(value: /* node */ ArrayTypeName => js.Any): Self = StObject.set(x, "ArrayTypeName:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setArrayTypeNameColonexitUndefined: Self = StObject.set(x, "ArrayTypeName:exit", js.undefined)
+    inline def setArrayTypeNameColonexitUndefined: Self = StObject.set(x, "ArrayTypeName:exit", js.undefined)
     
-    @scala.inline
-    def setArrayTypeNameUndefined: Self = StObject.set(x, "ArrayTypeName", js.undefined)
+    inline def setArrayTypeNameUndefined: Self = StObject.set(x, "ArrayTypeName", js.undefined)
     
-    @scala.inline
-    def setAssemblyAssignment(value: /* node */ AssemblyAssignment => js.Any): Self = StObject.set(x, "AssemblyAssignment", js.Any.fromFunction1(value))
+    inline def setAssemblyAssignment(value: /* node */ AssemblyAssignment => js.Any): Self = StObject.set(x, "AssemblyAssignment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyAssignmentColonexit(value: /* node */ AssemblyAssignment => js.Any): Self = StObject.set(x, "AssemblyAssignment:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyAssignmentColonexit(value: /* node */ AssemblyAssignment => js.Any): Self = StObject.set(x, "AssemblyAssignment:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyAssignmentColonexitUndefined: Self = StObject.set(x, "AssemblyAssignment:exit", js.undefined)
+    inline def setAssemblyAssignmentColonexitUndefined: Self = StObject.set(x, "AssemblyAssignment:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyAssignmentUndefined: Self = StObject.set(x, "AssemblyAssignment", js.undefined)
+    inline def setAssemblyAssignmentUndefined: Self = StObject.set(x, "AssemblyAssignment", js.undefined)
     
-    @scala.inline
-    def setAssemblyBlock(value: /* node */ AssemblyBlock => js.Any): Self = StObject.set(x, "AssemblyBlock", js.Any.fromFunction1(value))
+    inline def setAssemblyBlock(value: /* node */ AssemblyBlock => js.Any): Self = StObject.set(x, "AssemblyBlock", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyBlockColonexit(value: /* node */ AssemblyBlock => js.Any): Self = StObject.set(x, "AssemblyBlock:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyBlockColonexit(value: /* node */ AssemblyBlock => js.Any): Self = StObject.set(x, "AssemblyBlock:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyBlockColonexitUndefined: Self = StObject.set(x, "AssemblyBlock:exit", js.undefined)
+    inline def setAssemblyBlockColonexitUndefined: Self = StObject.set(x, "AssemblyBlock:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyBlockUndefined: Self = StObject.set(x, "AssemblyBlock", js.undefined)
+    inline def setAssemblyBlockUndefined: Self = StObject.set(x, "AssemblyBlock", js.undefined)
     
-    @scala.inline
-    def setAssemblyCall(value: /* node */ AssemblyCall => js.Any): Self = StObject.set(x, "AssemblyCall", js.Any.fromFunction1(value))
+    inline def setAssemblyCall(value: /* node */ AssemblyCall => js.Any): Self = StObject.set(x, "AssemblyCall", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyCallColonexit(value: /* node */ AssemblyCall => js.Any): Self = StObject.set(x, "AssemblyCall:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyCallColonexit(value: /* node */ AssemblyCall => js.Any): Self = StObject.set(x, "AssemblyCall:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyCallColonexitUndefined: Self = StObject.set(x, "AssemblyCall:exit", js.undefined)
+    inline def setAssemblyCallColonexitUndefined: Self = StObject.set(x, "AssemblyCall:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyCallUndefined: Self = StObject.set(x, "AssemblyCall", js.undefined)
+    inline def setAssemblyCallUndefined: Self = StObject.set(x, "AssemblyCall", js.undefined)
     
-    @scala.inline
-    def setAssemblyCase(value: /* node */ AssemblyCase => js.Any): Self = StObject.set(x, "AssemblyCase", js.Any.fromFunction1(value))
+    inline def setAssemblyCase(value: /* node */ AssemblyCase => js.Any): Self = StObject.set(x, "AssemblyCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyCaseColonexit(value: /* node */ AssemblyCase => js.Any): Self = StObject.set(x, "AssemblyCase:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyCaseColonexit(value: /* node */ AssemblyCase => js.Any): Self = StObject.set(x, "AssemblyCase:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyCaseColonexitUndefined: Self = StObject.set(x, "AssemblyCase:exit", js.undefined)
+    inline def setAssemblyCaseColonexitUndefined: Self = StObject.set(x, "AssemblyCase:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyCaseUndefined: Self = StObject.set(x, "AssemblyCase", js.undefined)
+    inline def setAssemblyCaseUndefined: Self = StObject.set(x, "AssemblyCase", js.undefined)
     
-    @scala.inline
-    def setAssemblyFor(value: /* node */ AssemblyFor => js.Any): Self = StObject.set(x, "AssemblyFor", js.Any.fromFunction1(value))
+    inline def setAssemblyFor(value: /* node */ AssemblyFor => js.Any): Self = StObject.set(x, "AssemblyFor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyForColonexit(value: /* node */ AssemblyFor => js.Any): Self = StObject.set(x, "AssemblyFor:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyForColonexit(value: /* node */ AssemblyFor => js.Any): Self = StObject.set(x, "AssemblyFor:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyForColonexitUndefined: Self = StObject.set(x, "AssemblyFor:exit", js.undefined)
+    inline def setAssemblyForColonexitUndefined: Self = StObject.set(x, "AssemblyFor:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyForUndefined: Self = StObject.set(x, "AssemblyFor", js.undefined)
+    inline def setAssemblyForUndefined: Self = StObject.set(x, "AssemblyFor", js.undefined)
     
-    @scala.inline
-    def setAssemblyFunctionDefinition(value: /* node */ AssemblyFunctionDefinition => js.Any): Self = StObject.set(x, "AssemblyFunctionDefinition", js.Any.fromFunction1(value))
+    inline def setAssemblyFunctionDefinition(value: /* node */ AssemblyFunctionDefinition => js.Any): Self = StObject.set(x, "AssemblyFunctionDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyFunctionDefinitionColonexit(value: /* node */ AssemblyFunctionDefinition => js.Any): Self = StObject.set(x, "AssemblyFunctionDefinition:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyFunctionDefinitionColonexit(value: /* node */ AssemblyFunctionDefinition => js.Any): Self = StObject.set(x, "AssemblyFunctionDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyFunctionDefinitionColonexitUndefined: Self = StObject.set(x, "AssemblyFunctionDefinition:exit", js.undefined)
+    inline def setAssemblyFunctionDefinitionColonexitUndefined: Self = StObject.set(x, "AssemblyFunctionDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyFunctionDefinitionUndefined: Self = StObject.set(x, "AssemblyFunctionDefinition", js.undefined)
+    inline def setAssemblyFunctionDefinitionUndefined: Self = StObject.set(x, "AssemblyFunctionDefinition", js.undefined)
     
-    @scala.inline
-    def setAssemblyFunctionReturns(value: /* node */ AssemblyFunctionReturns => js.Any): Self = StObject.set(x, "AssemblyFunctionReturns", js.Any.fromFunction1(value))
+    inline def setAssemblyFunctionReturns(value: /* node */ AssemblyFunctionReturns => js.Any): Self = StObject.set(x, "AssemblyFunctionReturns", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyFunctionReturnsColonexit(value: /* node */ AssemblyFunctionReturns => js.Any): Self = StObject.set(x, "AssemblyFunctionReturns:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyFunctionReturnsColonexit(value: /* node */ AssemblyFunctionReturns => js.Any): Self = StObject.set(x, "AssemblyFunctionReturns:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyFunctionReturnsColonexitUndefined: Self = StObject.set(x, "AssemblyFunctionReturns:exit", js.undefined)
+    inline def setAssemblyFunctionReturnsColonexitUndefined: Self = StObject.set(x, "AssemblyFunctionReturns:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyFunctionReturnsUndefined: Self = StObject.set(x, "AssemblyFunctionReturns", js.undefined)
+    inline def setAssemblyFunctionReturnsUndefined: Self = StObject.set(x, "AssemblyFunctionReturns", js.undefined)
     
-    @scala.inline
-    def setAssemblyIf(value: /* node */ AssemblyIf => js.Any): Self = StObject.set(x, "AssemblyIf", js.Any.fromFunction1(value))
+    inline def setAssemblyIf(value: /* node */ AssemblyIf => js.Any): Self = StObject.set(x, "AssemblyIf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyIfColonexit(value: /* node */ AssemblyIf => js.Any): Self = StObject.set(x, "AssemblyIf:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyIfColonexit(value: /* node */ AssemblyIf => js.Any): Self = StObject.set(x, "AssemblyIf:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyIfColonexitUndefined: Self = StObject.set(x, "AssemblyIf:exit", js.undefined)
+    inline def setAssemblyIfColonexitUndefined: Self = StObject.set(x, "AssemblyIf:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyIfUndefined: Self = StObject.set(x, "AssemblyIf", js.undefined)
+    inline def setAssemblyIfUndefined: Self = StObject.set(x, "AssemblyIf", js.undefined)
     
-    @scala.inline
-    def setAssemblyLiteral(value: /* node */ AssemblyLiteral => js.Any): Self = StObject.set(x, "AssemblyLiteral", js.Any.fromFunction1(value))
+    inline def setAssemblyLiteral(value: /* node */ AssemblyLiteral => js.Any): Self = StObject.set(x, "AssemblyLiteral", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyLiteralColonexit(value: /* node */ AssemblyLiteral => js.Any): Self = StObject.set(x, "AssemblyLiteral:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyLiteralColonexit(value: /* node */ AssemblyLiteral => js.Any): Self = StObject.set(x, "AssemblyLiteral:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyLiteralColonexitUndefined: Self = StObject.set(x, "AssemblyLiteral:exit", js.undefined)
+    inline def setAssemblyLiteralColonexitUndefined: Self = StObject.set(x, "AssemblyLiteral:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyLiteralUndefined: Self = StObject.set(x, "AssemblyLiteral", js.undefined)
+    inline def setAssemblyLiteralUndefined: Self = StObject.set(x, "AssemblyLiteral", js.undefined)
     
-    @scala.inline
-    def setAssemblyLocalDefinition(value: /* node */ AssemblyLocalDefinition => js.Any): Self = StObject.set(x, "AssemblyLocalDefinition", js.Any.fromFunction1(value))
+    inline def setAssemblyLocalDefinition(value: /* node */ AssemblyLocalDefinition => js.Any): Self = StObject.set(x, "AssemblyLocalDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyLocalDefinitionColonexit(value: /* node */ AssemblyLocalDefinition => js.Any): Self = StObject.set(x, "AssemblyLocalDefinition:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyLocalDefinitionColonexit(value: /* node */ AssemblyLocalDefinition => js.Any): Self = StObject.set(x, "AssemblyLocalDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyLocalDefinitionColonexitUndefined: Self = StObject.set(x, "AssemblyLocalDefinition:exit", js.undefined)
+    inline def setAssemblyLocalDefinitionColonexitUndefined: Self = StObject.set(x, "AssemblyLocalDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyLocalDefinitionUndefined: Self = StObject.set(x, "AssemblyLocalDefinition", js.undefined)
+    inline def setAssemblyLocalDefinitionUndefined: Self = StObject.set(x, "AssemblyLocalDefinition", js.undefined)
     
-    @scala.inline
-    def setAssemblyStackAssignment(value: /* node */ AssemblyStackAssignment => js.Any): Self = StObject.set(x, "AssemblyStackAssignment", js.Any.fromFunction1(value))
+    inline def setAssemblyStackAssignment(value: /* node */ AssemblyStackAssignment => js.Any): Self = StObject.set(x, "AssemblyStackAssignment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyStackAssignmentColonexit(value: /* node */ AssemblyStackAssignment => js.Any): Self = StObject.set(x, "AssemblyStackAssignment:exit", js.Any.fromFunction1(value))
+    inline def setAssemblyStackAssignmentColonexit(value: /* node */ AssemblyStackAssignment => js.Any): Self = StObject.set(x, "AssemblyStackAssignment:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblyStackAssignmentColonexitUndefined: Self = StObject.set(x, "AssemblyStackAssignment:exit", js.undefined)
+    inline def setAssemblyStackAssignmentColonexitUndefined: Self = StObject.set(x, "AssemblyStackAssignment:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblyStackAssignmentUndefined: Self = StObject.set(x, "AssemblyStackAssignment", js.undefined)
+    inline def setAssemblyStackAssignmentUndefined: Self = StObject.set(x, "AssemblyStackAssignment", js.undefined)
     
-    @scala.inline
-    def setAssemblySwitch(value: /* node */ AssemblySwitch => js.Any): Self = StObject.set(x, "AssemblySwitch", js.Any.fromFunction1(value))
+    inline def setAssemblySwitch(value: /* node */ AssemblySwitch => js.Any): Self = StObject.set(x, "AssemblySwitch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblySwitchColonexit(value: /* node */ AssemblySwitch => js.Any): Self = StObject.set(x, "AssemblySwitch:exit", js.Any.fromFunction1(value))
+    inline def setAssemblySwitchColonexit(value: /* node */ AssemblySwitch => js.Any): Self = StObject.set(x, "AssemblySwitch:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAssemblySwitchColonexitUndefined: Self = StObject.set(x, "AssemblySwitch:exit", js.undefined)
+    inline def setAssemblySwitchColonexitUndefined: Self = StObject.set(x, "AssemblySwitch:exit", js.undefined)
     
-    @scala.inline
-    def setAssemblySwitchUndefined: Self = StObject.set(x, "AssemblySwitch", js.undefined)
+    inline def setAssemblySwitchUndefined: Self = StObject.set(x, "AssemblySwitch", js.undefined)
     
-    @scala.inline
-    def setBinaryOperation(value: /* node */ BinaryOperation => js.Any): Self = StObject.set(x, "BinaryOperation", js.Any.fromFunction1(value))
+    inline def setBinaryOperation(value: /* node */ BinaryOperation => js.Any): Self = StObject.set(x, "BinaryOperation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBinaryOperationColonexit(value: /* node */ BinaryOperation => js.Any): Self = StObject.set(x, "BinaryOperation:exit", js.Any.fromFunction1(value))
+    inline def setBinaryOperationColonexit(value: /* node */ BinaryOperation => js.Any): Self = StObject.set(x, "BinaryOperation:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBinaryOperationColonexitUndefined: Self = StObject.set(x, "BinaryOperation:exit", js.undefined)
+    inline def setBinaryOperationColonexitUndefined: Self = StObject.set(x, "BinaryOperation:exit", js.undefined)
     
-    @scala.inline
-    def setBinaryOperationUndefined: Self = StObject.set(x, "BinaryOperation", js.undefined)
+    inline def setBinaryOperationUndefined: Self = StObject.set(x, "BinaryOperation", js.undefined)
     
-    @scala.inline
-    def setBlock(value: /* node */ Block => js.Any): Self = StObject.set(x, "Block", js.Any.fromFunction1(value))
+    inline def setBlock(value: /* node */ Block => js.Any): Self = StObject.set(x, "Block", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBlockColonexit(value: /* node */ Block => js.Any): Self = StObject.set(x, "Block:exit", js.Any.fromFunction1(value))
+    inline def setBlockColonexit(value: /* node */ Block => js.Any): Self = StObject.set(x, "Block:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBlockColonexitUndefined: Self = StObject.set(x, "Block:exit", js.undefined)
+    inline def setBlockColonexitUndefined: Self = StObject.set(x, "Block:exit", js.undefined)
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
     
-    @scala.inline
-    def setBooleanLiteral(value: /* node */ BooleanLiteral => js.Any): Self = StObject.set(x, "BooleanLiteral", js.Any.fromFunction1(value))
+    inline def setBooleanLiteral(value: /* node */ BooleanLiteral => js.Any): Self = StObject.set(x, "BooleanLiteral", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBooleanLiteralColonexit(value: /* node */ BooleanLiteral => js.Any): Self = StObject.set(x, "BooleanLiteral:exit", js.Any.fromFunction1(value))
+    inline def setBooleanLiteralColonexit(value: /* node */ BooleanLiteral => js.Any): Self = StObject.set(x, "BooleanLiteral:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBooleanLiteralColonexitUndefined: Self = StObject.set(x, "BooleanLiteral:exit", js.undefined)
+    inline def setBooleanLiteralColonexitUndefined: Self = StObject.set(x, "BooleanLiteral:exit", js.undefined)
     
-    @scala.inline
-    def setBooleanLiteralUndefined: Self = StObject.set(x, "BooleanLiteral", js.undefined)
+    inline def setBooleanLiteralUndefined: Self = StObject.set(x, "BooleanLiteral", js.undefined)
     
-    @scala.inline
-    def setBreak(value: /* node */ Break => js.Any): Self = StObject.set(x, "Break", js.Any.fromFunction1(value))
+    inline def setBreak(value: /* node */ Break => js.Any): Self = StObject.set(x, "Break", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBreakColonexit(value: /* node */ Break => js.Any): Self = StObject.set(x, "Break:exit", js.Any.fromFunction1(value))
+    inline def setBreakColonexit(value: /* node */ Break => js.Any): Self = StObject.set(x, "Break:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBreakColonexitUndefined: Self = StObject.set(x, "Break:exit", js.undefined)
+    inline def setBreakColonexitUndefined: Self = StObject.set(x, "Break:exit", js.undefined)
     
-    @scala.inline
-    def setBreakStatement(value: /* node */ BreakStatement => js.Any): Self = StObject.set(x, "BreakStatement", js.Any.fromFunction1(value))
+    inline def setBreakStatement(value: /* node */ BreakStatement => js.Any): Self = StObject.set(x, "BreakStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBreakStatementColonexit(value: /* node */ BreakStatement => js.Any): Self = StObject.set(x, "BreakStatement:exit", js.Any.fromFunction1(value))
+    inline def setBreakStatementColonexit(value: /* node */ BreakStatement => js.Any): Self = StObject.set(x, "BreakStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBreakStatementColonexitUndefined: Self = StObject.set(x, "BreakStatement:exit", js.undefined)
+    inline def setBreakStatementColonexitUndefined: Self = StObject.set(x, "BreakStatement:exit", js.undefined)
     
-    @scala.inline
-    def setBreakStatementUndefined: Self = StObject.set(x, "BreakStatement", js.undefined)
+    inline def setBreakStatementUndefined: Self = StObject.set(x, "BreakStatement", js.undefined)
     
-    @scala.inline
-    def setBreakUndefined: Self = StObject.set(x, "Break", js.undefined)
+    inline def setBreakUndefined: Self = StObject.set(x, "Break", js.undefined)
     
-    @scala.inline
-    def setConditional(value: /* node */ Conditional => js.Any): Self = StObject.set(x, "Conditional", js.Any.fromFunction1(value))
+    inline def setConditional(value: /* node */ Conditional => js.Any): Self = StObject.set(x, "Conditional", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConditionalColonexit(value: /* node */ Conditional => js.Any): Self = StObject.set(x, "Conditional:exit", js.Any.fromFunction1(value))
+    inline def setConditionalColonexit(value: /* node */ Conditional => js.Any): Self = StObject.set(x, "Conditional:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConditionalColonexitUndefined: Self = StObject.set(x, "Conditional:exit", js.undefined)
+    inline def setConditionalColonexitUndefined: Self = StObject.set(x, "Conditional:exit", js.undefined)
     
-    @scala.inline
-    def setConditionalUndefined: Self = StObject.set(x, "Conditional", js.undefined)
+    inline def setConditionalUndefined: Self = StObject.set(x, "Conditional", js.undefined)
     
-    @scala.inline
-    def setContinue(value: /* node */ Continue => js.Any): Self = StObject.set(x, "Continue", js.Any.fromFunction1(value))
+    inline def setContinue(value: /* node */ Continue => js.Any): Self = StObject.set(x, "Continue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContinueColonexit(value: /* node */ Continue => js.Any): Self = StObject.set(x, "Continue:exit", js.Any.fromFunction1(value))
+    inline def setContinueColonexit(value: /* node */ Continue => js.Any): Self = StObject.set(x, "Continue:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContinueColonexitUndefined: Self = StObject.set(x, "Continue:exit", js.undefined)
+    inline def setContinueColonexitUndefined: Self = StObject.set(x, "Continue:exit", js.undefined)
     
-    @scala.inline
-    def setContinueStatement(value: /* node */ ContinueStatement => js.Any): Self = StObject.set(x, "ContinueStatement", js.Any.fromFunction1(value))
+    inline def setContinueStatement(value: /* node */ ContinueStatement => js.Any): Self = StObject.set(x, "ContinueStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContinueStatementColonexit(value: /* node */ ContinueStatement => js.Any): Self = StObject.set(x, "ContinueStatement:exit", js.Any.fromFunction1(value))
+    inline def setContinueStatementColonexit(value: /* node */ ContinueStatement => js.Any): Self = StObject.set(x, "ContinueStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContinueStatementColonexitUndefined: Self = StObject.set(x, "ContinueStatement:exit", js.undefined)
+    inline def setContinueStatementColonexitUndefined: Self = StObject.set(x, "ContinueStatement:exit", js.undefined)
     
-    @scala.inline
-    def setContinueStatementUndefined: Self = StObject.set(x, "ContinueStatement", js.undefined)
+    inline def setContinueStatementUndefined: Self = StObject.set(x, "ContinueStatement", js.undefined)
     
-    @scala.inline
-    def setContinueUndefined: Self = StObject.set(x, "Continue", js.undefined)
+    inline def setContinueUndefined: Self = StObject.set(x, "Continue", js.undefined)
     
-    @scala.inline
-    def setContractDefinition(value: /* node */ ContractDefinition => js.Any): Self = StObject.set(x, "ContractDefinition", js.Any.fromFunction1(value))
+    inline def setContractDefinition(value: /* node */ ContractDefinition => js.Any): Self = StObject.set(x, "ContractDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContractDefinitionColonexit(value: /* node */ ContractDefinition => js.Any): Self = StObject.set(x, "ContractDefinition:exit", js.Any.fromFunction1(value))
+    inline def setContractDefinitionColonexit(value: /* node */ ContractDefinition => js.Any): Self = StObject.set(x, "ContractDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContractDefinitionColonexitUndefined: Self = StObject.set(x, "ContractDefinition:exit", js.undefined)
+    inline def setContractDefinitionColonexitUndefined: Self = StObject.set(x, "ContractDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setContractDefinitionUndefined: Self = StObject.set(x, "ContractDefinition", js.undefined)
+    inline def setContractDefinitionUndefined: Self = StObject.set(x, "ContractDefinition", js.undefined)
     
-    @scala.inline
-    def setDecimalNumber(value: /* node */ DecimalNumber => js.Any): Self = StObject.set(x, "DecimalNumber", js.Any.fromFunction1(value))
+    inline def setDecimalNumber(value: /* node */ DecimalNumber => js.Any): Self = StObject.set(x, "DecimalNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecimalNumberColonexit(value: /* node */ DecimalNumber => js.Any): Self = StObject.set(x, "DecimalNumber:exit", js.Any.fromFunction1(value))
+    inline def setDecimalNumberColonexit(value: /* node */ DecimalNumber => js.Any): Self = StObject.set(x, "DecimalNumber:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecimalNumberColonexitUndefined: Self = StObject.set(x, "DecimalNumber:exit", js.undefined)
+    inline def setDecimalNumberColonexitUndefined: Self = StObject.set(x, "DecimalNumber:exit", js.undefined)
     
-    @scala.inline
-    def setDecimalNumberUndefined: Self = StObject.set(x, "DecimalNumber", js.undefined)
+    inline def setDecimalNumberUndefined: Self = StObject.set(x, "DecimalNumber", js.undefined)
     
-    @scala.inline
-    def setDoWhileStatement(value: /* node */ DoWhileStatement => js.Any): Self = StObject.set(x, "DoWhileStatement", js.Any.fromFunction1(value))
+    inline def setDoWhileStatement(value: /* node */ DoWhileStatement => js.Any): Self = StObject.set(x, "DoWhileStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoWhileStatementColonexit(value: /* node */ DoWhileStatement => js.Any): Self = StObject.set(x, "DoWhileStatement:exit", js.Any.fromFunction1(value))
+    inline def setDoWhileStatementColonexit(value: /* node */ DoWhileStatement => js.Any): Self = StObject.set(x, "DoWhileStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoWhileStatementColonexitUndefined: Self = StObject.set(x, "DoWhileStatement:exit", js.undefined)
+    inline def setDoWhileStatementColonexitUndefined: Self = StObject.set(x, "DoWhileStatement:exit", js.undefined)
     
-    @scala.inline
-    def setDoWhileStatementUndefined: Self = StObject.set(x, "DoWhileStatement", js.undefined)
+    inline def setDoWhileStatementUndefined: Self = StObject.set(x, "DoWhileStatement", js.undefined)
     
-    @scala.inline
-    def setElementaryTypeName(value: /* node */ ElementaryTypeName => js.Any): Self = StObject.set(x, "ElementaryTypeName", js.Any.fromFunction1(value))
+    inline def setElementaryTypeName(value: /* node */ ElementaryTypeName => js.Any): Self = StObject.set(x, "ElementaryTypeName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementaryTypeNameColonexit(value: /* node */ ElementaryTypeName => js.Any): Self = StObject.set(x, "ElementaryTypeName:exit", js.Any.fromFunction1(value))
+    inline def setElementaryTypeNameColonexit(value: /* node */ ElementaryTypeName => js.Any): Self = StObject.set(x, "ElementaryTypeName:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementaryTypeNameColonexitUndefined: Self = StObject.set(x, "ElementaryTypeName:exit", js.undefined)
+    inline def setElementaryTypeNameColonexitUndefined: Self = StObject.set(x, "ElementaryTypeName:exit", js.undefined)
     
-    @scala.inline
-    def setElementaryTypeNameExpression(value: /* node */ ElementaryTypeNameExpression => js.Any): Self = StObject.set(x, "ElementaryTypeNameExpression", js.Any.fromFunction1(value))
+    inline def setElementaryTypeNameExpression(value: /* node */ ElementaryTypeNameExpression => js.Any): Self = StObject.set(x, "ElementaryTypeNameExpression", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementaryTypeNameExpressionColonexit(value: /* node */ ElementaryTypeNameExpression => js.Any): Self = StObject.set(x, "ElementaryTypeNameExpression:exit", js.Any.fromFunction1(value))
+    inline def setElementaryTypeNameExpressionColonexit(value: /* node */ ElementaryTypeNameExpression => js.Any): Self = StObject.set(x, "ElementaryTypeNameExpression:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElementaryTypeNameExpressionColonexitUndefined: Self = StObject.set(x, "ElementaryTypeNameExpression:exit", js.undefined)
+    inline def setElementaryTypeNameExpressionColonexitUndefined: Self = StObject.set(x, "ElementaryTypeNameExpression:exit", js.undefined)
     
-    @scala.inline
-    def setElementaryTypeNameExpressionUndefined: Self = StObject.set(x, "ElementaryTypeNameExpression", js.undefined)
+    inline def setElementaryTypeNameExpressionUndefined: Self = StObject.set(x, "ElementaryTypeNameExpression", js.undefined)
     
-    @scala.inline
-    def setElementaryTypeNameUndefined: Self = StObject.set(x, "ElementaryTypeName", js.undefined)
+    inline def setElementaryTypeNameUndefined: Self = StObject.set(x, "ElementaryTypeName", js.undefined)
     
-    @scala.inline
-    def setEmitStatement(value: /* node */ EmitStatement => js.Any): Self = StObject.set(x, "EmitStatement", js.Any.fromFunction1(value))
+    inline def setEmitStatement(value: /* node */ EmitStatement => js.Any): Self = StObject.set(x, "EmitStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitStatementColonexit(value: /* node */ EmitStatement => js.Any): Self = StObject.set(x, "EmitStatement:exit", js.Any.fromFunction1(value))
+    inline def setEmitStatementColonexit(value: /* node */ EmitStatement => js.Any): Self = StObject.set(x, "EmitStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmitStatementColonexitUndefined: Self = StObject.set(x, "EmitStatement:exit", js.undefined)
+    inline def setEmitStatementColonexitUndefined: Self = StObject.set(x, "EmitStatement:exit", js.undefined)
     
-    @scala.inline
-    def setEmitStatementUndefined: Self = StObject.set(x, "EmitStatement", js.undefined)
+    inline def setEmitStatementUndefined: Self = StObject.set(x, "EmitStatement", js.undefined)
     
-    @scala.inline
-    def setEnumDefinition(value: /* node */ EnumDefinition => js.Any): Self = StObject.set(x, "EnumDefinition", js.Any.fromFunction1(value))
+    inline def setEnumDefinition(value: /* node */ EnumDefinition => js.Any): Self = StObject.set(x, "EnumDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnumDefinitionColonexit(value: /* node */ EnumDefinition => js.Any): Self = StObject.set(x, "EnumDefinition:exit", js.Any.fromFunction1(value))
+    inline def setEnumDefinitionColonexit(value: /* node */ EnumDefinition => js.Any): Self = StObject.set(x, "EnumDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnumDefinitionColonexitUndefined: Self = StObject.set(x, "EnumDefinition:exit", js.undefined)
+    inline def setEnumDefinitionColonexitUndefined: Self = StObject.set(x, "EnumDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setEnumDefinitionUndefined: Self = StObject.set(x, "EnumDefinition", js.undefined)
+    inline def setEnumDefinitionUndefined: Self = StObject.set(x, "EnumDefinition", js.undefined)
     
-    @scala.inline
-    def setEnumValue(value: /* node */ EnumValue => js.Any): Self = StObject.set(x, "EnumValue", js.Any.fromFunction1(value))
+    inline def setEnumValue(value: /* node */ EnumValue => js.Any): Self = StObject.set(x, "EnumValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnumValueColonexit(value: /* node */ EnumValue => js.Any): Self = StObject.set(x, "EnumValue:exit", js.Any.fromFunction1(value))
+    inline def setEnumValueColonexit(value: /* node */ EnumValue => js.Any): Self = StObject.set(x, "EnumValue:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnumValueColonexitUndefined: Self = StObject.set(x, "EnumValue:exit", js.undefined)
+    inline def setEnumValueColonexitUndefined: Self = StObject.set(x, "EnumValue:exit", js.undefined)
     
-    @scala.inline
-    def setEnumValueUndefined: Self = StObject.set(x, "EnumValue", js.undefined)
+    inline def setEnumValueUndefined: Self = StObject.set(x, "EnumValue", js.undefined)
     
-    @scala.inline
-    def setEventDefinition(value: /* node */ EventDefinition => js.Any): Self = StObject.set(x, "EventDefinition", js.Any.fromFunction1(value))
+    inline def setEventDefinition(value: /* node */ EventDefinition => js.Any): Self = StObject.set(x, "EventDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEventDefinitionColonexit(value: /* node */ EventDefinition => js.Any): Self = StObject.set(x, "EventDefinition:exit", js.Any.fromFunction1(value))
+    inline def setEventDefinitionColonexit(value: /* node */ EventDefinition => js.Any): Self = StObject.set(x, "EventDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEventDefinitionColonexitUndefined: Self = StObject.set(x, "EventDefinition:exit", js.undefined)
+    inline def setEventDefinitionColonexitUndefined: Self = StObject.set(x, "EventDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setEventDefinitionUndefined: Self = StObject.set(x, "EventDefinition", js.undefined)
+    inline def setEventDefinitionUndefined: Self = StObject.set(x, "EventDefinition", js.undefined)
     
-    @scala.inline
-    def setExpressionStatement(value: /* node */ ExpressionStatement => js.Any): Self = StObject.set(x, "ExpressionStatement", js.Any.fromFunction1(value))
+    inline def setExpressionStatement(value: /* node */ ExpressionStatement => js.Any): Self = StObject.set(x, "ExpressionStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpressionStatementColonexit(value: /* node */ ExpressionStatement => js.Any): Self = StObject.set(x, "ExpressionStatement:exit", js.Any.fromFunction1(value))
+    inline def setExpressionStatementColonexit(value: /* node */ ExpressionStatement => js.Any): Self = StObject.set(x, "ExpressionStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpressionStatementColonexitUndefined: Self = StObject.set(x, "ExpressionStatement:exit", js.undefined)
+    inline def setExpressionStatementColonexitUndefined: Self = StObject.set(x, "ExpressionStatement:exit", js.undefined)
     
-    @scala.inline
-    def setExpressionStatementUndefined: Self = StObject.set(x, "ExpressionStatement", js.undefined)
+    inline def setExpressionStatementUndefined: Self = StObject.set(x, "ExpressionStatement", js.undefined)
     
-    @scala.inline
-    def setForStatement(value: /* node */ ForStatement => js.Any): Self = StObject.set(x, "ForStatement", js.Any.fromFunction1(value))
+    inline def setForStatement(value: /* node */ ForStatement => js.Any): Self = StObject.set(x, "ForStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForStatementColonexit(value: /* node */ ForStatement => js.Any): Self = StObject.set(x, "ForStatement:exit", js.Any.fromFunction1(value))
+    inline def setForStatementColonexit(value: /* node */ ForStatement => js.Any): Self = StObject.set(x, "ForStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForStatementColonexitUndefined: Self = StObject.set(x, "ForStatement:exit", js.undefined)
+    inline def setForStatementColonexitUndefined: Self = StObject.set(x, "ForStatement:exit", js.undefined)
     
-    @scala.inline
-    def setForStatementUndefined: Self = StObject.set(x, "ForStatement", js.undefined)
+    inline def setForStatementUndefined: Self = StObject.set(x, "ForStatement", js.undefined)
     
-    @scala.inline
-    def setFunctionDefinition(value: /* node */ FunctionDefinition => js.Any): Self = StObject.set(x, "FunctionDefinition", js.Any.fromFunction1(value))
+    inline def setFunctionDefinition(value: /* node */ FunctionDefinition => js.Any): Self = StObject.set(x, "FunctionDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFunctionDefinitionColonexit(value: /* node */ FunctionDefinition => js.Any): Self = StObject.set(x, "FunctionDefinition:exit", js.Any.fromFunction1(value))
+    inline def setFunctionDefinitionColonexit(value: /* node */ FunctionDefinition => js.Any): Self = StObject.set(x, "FunctionDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFunctionDefinitionColonexitUndefined: Self = StObject.set(x, "FunctionDefinition:exit", js.undefined)
+    inline def setFunctionDefinitionColonexitUndefined: Self = StObject.set(x, "FunctionDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setFunctionDefinitionUndefined: Self = StObject.set(x, "FunctionDefinition", js.undefined)
+    inline def setFunctionDefinitionUndefined: Self = StObject.set(x, "FunctionDefinition", js.undefined)
     
-    @scala.inline
-    def setFunctionTypeName(value: /* node */ FunctionTypeName => js.Any): Self = StObject.set(x, "FunctionTypeName", js.Any.fromFunction1(value))
+    inline def setFunctionTypeName(value: /* node */ FunctionTypeName => js.Any): Self = StObject.set(x, "FunctionTypeName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFunctionTypeNameColonexit(value: /* node */ FunctionTypeName => js.Any): Self = StObject.set(x, "FunctionTypeName:exit", js.Any.fromFunction1(value))
+    inline def setFunctionTypeNameColonexit(value: /* node */ FunctionTypeName => js.Any): Self = StObject.set(x, "FunctionTypeName:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFunctionTypeNameColonexitUndefined: Self = StObject.set(x, "FunctionTypeName:exit", js.undefined)
+    inline def setFunctionTypeNameColonexitUndefined: Self = StObject.set(x, "FunctionTypeName:exit", js.undefined)
     
-    @scala.inline
-    def setFunctionTypeNameUndefined: Self = StObject.set(x, "FunctionTypeName", js.undefined)
+    inline def setFunctionTypeNameUndefined: Self = StObject.set(x, "FunctionTypeName", js.undefined)
     
-    @scala.inline
-    def setHexNumber(value: /* node */ HexNumber => js.Any): Self = StObject.set(x, "HexNumber", js.Any.fromFunction1(value))
+    inline def setHexNumber(value: /* node */ HexNumber => js.Any): Self = StObject.set(x, "HexNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHexNumberColonexit(value: /* node */ HexNumber => js.Any): Self = StObject.set(x, "HexNumber:exit", js.Any.fromFunction1(value))
+    inline def setHexNumberColonexit(value: /* node */ HexNumber => js.Any): Self = StObject.set(x, "HexNumber:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHexNumberColonexitUndefined: Self = StObject.set(x, "HexNumber:exit", js.undefined)
+    inline def setHexNumberColonexitUndefined: Self = StObject.set(x, "HexNumber:exit", js.undefined)
     
-    @scala.inline
-    def setHexNumberUndefined: Self = StObject.set(x, "HexNumber", js.undefined)
+    inline def setHexNumberUndefined: Self = StObject.set(x, "HexNumber", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: /* node */ Identifier => js.Any): Self = StObject.set(x, "Identifier", js.Any.fromFunction1(value))
+    inline def setIdentifier(value: /* node */ Identifier => js.Any): Self = StObject.set(x, "Identifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIdentifierColonexit(value: /* node */ Identifier => js.Any): Self = StObject.set(x, "Identifier:exit", js.Any.fromFunction1(value))
+    inline def setIdentifierColonexit(value: /* node */ Identifier => js.Any): Self = StObject.set(x, "Identifier:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIdentifierColonexitUndefined: Self = StObject.set(x, "Identifier:exit", js.undefined)
+    inline def setIdentifierColonexitUndefined: Self = StObject.set(x, "Identifier:exit", js.undefined)
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
     
-    @scala.inline
-    def setIfStatement(value: /* node */ IfStatement => js.Any): Self = StObject.set(x, "IfStatement", js.Any.fromFunction1(value))
+    inline def setIfStatement(value: /* node */ IfStatement => js.Any): Self = StObject.set(x, "IfStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIfStatementColonexit(value: /* node */ IfStatement => js.Any): Self = StObject.set(x, "IfStatement:exit", js.Any.fromFunction1(value))
+    inline def setIfStatementColonexit(value: /* node */ IfStatement => js.Any): Self = StObject.set(x, "IfStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIfStatementColonexitUndefined: Self = StObject.set(x, "IfStatement:exit", js.undefined)
+    inline def setIfStatementColonexitUndefined: Self = StObject.set(x, "IfStatement:exit", js.undefined)
     
-    @scala.inline
-    def setIfStatementUndefined: Self = StObject.set(x, "IfStatement", js.undefined)
+    inline def setIfStatementUndefined: Self = StObject.set(x, "IfStatement", js.undefined)
     
-    @scala.inline
-    def setImportDirective(value: /* node */ ImportDirective => js.Any): Self = StObject.set(x, "ImportDirective", js.Any.fromFunction1(value))
+    inline def setImportDirective(value: /* node */ ImportDirective => js.Any): Self = StObject.set(x, "ImportDirective", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImportDirectiveColonexit(value: /* node */ ImportDirective => js.Any): Self = StObject.set(x, "ImportDirective:exit", js.Any.fromFunction1(value))
+    inline def setImportDirectiveColonexit(value: /* node */ ImportDirective => js.Any): Self = StObject.set(x, "ImportDirective:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImportDirectiveColonexitUndefined: Self = StObject.set(x, "ImportDirective:exit", js.undefined)
+    inline def setImportDirectiveColonexitUndefined: Self = StObject.set(x, "ImportDirective:exit", js.undefined)
     
-    @scala.inline
-    def setImportDirectiveUndefined: Self = StObject.set(x, "ImportDirective", js.undefined)
+    inline def setImportDirectiveUndefined: Self = StObject.set(x, "ImportDirective", js.undefined)
     
-    @scala.inline
-    def setIndexAccess(value: /* node */ IndexAccess => js.Any): Self = StObject.set(x, "IndexAccess", js.Any.fromFunction1(value))
+    inline def setIndexAccess(value: /* node */ IndexAccess => js.Any): Self = StObject.set(x, "IndexAccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexAccessColonexit(value: /* node */ IndexAccess => js.Any): Self = StObject.set(x, "IndexAccess:exit", js.Any.fromFunction1(value))
+    inline def setIndexAccessColonexit(value: /* node */ IndexAccess => js.Any): Self = StObject.set(x, "IndexAccess:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexAccessColonexitUndefined: Self = StObject.set(x, "IndexAccess:exit", js.undefined)
+    inline def setIndexAccessColonexitUndefined: Self = StObject.set(x, "IndexAccess:exit", js.undefined)
     
-    @scala.inline
-    def setIndexAccessUndefined: Self = StObject.set(x, "IndexAccess", js.undefined)
+    inline def setIndexAccessUndefined: Self = StObject.set(x, "IndexAccess", js.undefined)
     
-    @scala.inline
-    def setInheritanceSpecifier(value: /* node */ InheritanceSpecifier => js.Any): Self = StObject.set(x, "InheritanceSpecifier", js.Any.fromFunction1(value))
+    inline def setInheritanceSpecifier(value: /* node */ InheritanceSpecifier => js.Any): Self = StObject.set(x, "InheritanceSpecifier", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInheritanceSpecifierColonexit(value: /* node */ InheritanceSpecifier => js.Any): Self = StObject.set(x, "InheritanceSpecifier:exit", js.Any.fromFunction1(value))
+    inline def setInheritanceSpecifierColonexit(value: /* node */ InheritanceSpecifier => js.Any): Self = StObject.set(x, "InheritanceSpecifier:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInheritanceSpecifierColonexitUndefined: Self = StObject.set(x, "InheritanceSpecifier:exit", js.undefined)
+    inline def setInheritanceSpecifierColonexitUndefined: Self = StObject.set(x, "InheritanceSpecifier:exit", js.undefined)
     
-    @scala.inline
-    def setInheritanceSpecifierUndefined: Self = StObject.set(x, "InheritanceSpecifier", js.undefined)
+    inline def setInheritanceSpecifierUndefined: Self = StObject.set(x, "InheritanceSpecifier", js.undefined)
     
-    @scala.inline
-    def setInlineAssemblyStatement(value: /* node */ InlineAssemblyStatement => js.Any): Self = StObject.set(x, "InlineAssemblyStatement", js.Any.fromFunction1(value))
+    inline def setInlineAssemblyStatement(value: /* node */ InlineAssemblyStatement => js.Any): Self = StObject.set(x, "InlineAssemblyStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInlineAssemblyStatementColonexit(value: /* node */ InlineAssemblyStatement => js.Any): Self = StObject.set(x, "InlineAssemblyStatement:exit", js.Any.fromFunction1(value))
+    inline def setInlineAssemblyStatementColonexit(value: /* node */ InlineAssemblyStatement => js.Any): Self = StObject.set(x, "InlineAssemblyStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInlineAssemblyStatementColonexitUndefined: Self = StObject.set(x, "InlineAssemblyStatement:exit", js.undefined)
+    inline def setInlineAssemblyStatementColonexitUndefined: Self = StObject.set(x, "InlineAssemblyStatement:exit", js.undefined)
     
-    @scala.inline
-    def setInlineAssemblyStatementUndefined: Self = StObject.set(x, "InlineAssemblyStatement", js.undefined)
+    inline def setInlineAssemblyStatementUndefined: Self = StObject.set(x, "InlineAssemblyStatement", js.undefined)
     
-    @scala.inline
-    def setLabelDefinition(value: /* node */ LabelDefinition => js.Any): Self = StObject.set(x, "LabelDefinition", js.Any.fromFunction1(value))
+    inline def setLabelDefinition(value: /* node */ LabelDefinition => js.Any): Self = StObject.set(x, "LabelDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabelDefinitionColonexit(value: /* node */ LabelDefinition => js.Any): Self = StObject.set(x, "LabelDefinition:exit", js.Any.fromFunction1(value))
+    inline def setLabelDefinitionColonexit(value: /* node */ LabelDefinition => js.Any): Self = StObject.set(x, "LabelDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLabelDefinitionColonexitUndefined: Self = StObject.set(x, "LabelDefinition:exit", js.undefined)
+    inline def setLabelDefinitionColonexitUndefined: Self = StObject.set(x, "LabelDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setLabelDefinitionUndefined: Self = StObject.set(x, "LabelDefinition", js.undefined)
+    inline def setLabelDefinitionUndefined: Self = StObject.set(x, "LabelDefinition", js.undefined)
     
-    @scala.inline
-    def setMapping(value: /* node */ Mapping => js.Any): Self = StObject.set(x, "Mapping", js.Any.fromFunction1(value))
+    inline def setMapping(value: /* node */ Mapping => js.Any): Self = StObject.set(x, "Mapping", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMappingColonexit(value: /* node */ Mapping => js.Any): Self = StObject.set(x, "Mapping:exit", js.Any.fromFunction1(value))
+    inline def setMappingColonexit(value: /* node */ Mapping => js.Any): Self = StObject.set(x, "Mapping:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMappingColonexitUndefined: Self = StObject.set(x, "Mapping:exit", js.undefined)
+    inline def setMappingColonexitUndefined: Self = StObject.set(x, "Mapping:exit", js.undefined)
     
-    @scala.inline
-    def setMappingUndefined: Self = StObject.set(x, "Mapping", js.undefined)
+    inline def setMappingUndefined: Self = StObject.set(x, "Mapping", js.undefined)
     
-    @scala.inline
-    def setMemberAccess(value: /* node */ MemberAccess => js.Any): Self = StObject.set(x, "MemberAccess", js.Any.fromFunction1(value))
+    inline def setMemberAccess(value: /* node */ MemberAccess => js.Any): Self = StObject.set(x, "MemberAccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMemberAccessColonexit(value: /* node */ MemberAccess => js.Any): Self = StObject.set(x, "MemberAccess:exit", js.Any.fromFunction1(value))
+    inline def setMemberAccessColonexit(value: /* node */ MemberAccess => js.Any): Self = StObject.set(x, "MemberAccess:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMemberAccessColonexitUndefined: Self = StObject.set(x, "MemberAccess:exit", js.undefined)
+    inline def setMemberAccessColonexitUndefined: Self = StObject.set(x, "MemberAccess:exit", js.undefined)
     
-    @scala.inline
-    def setMemberAccessUndefined: Self = StObject.set(x, "MemberAccess", js.undefined)
+    inline def setMemberAccessUndefined: Self = StObject.set(x, "MemberAccess", js.undefined)
     
-    @scala.inline
-    def setModifierDefinition(value: /* node */ ModifierDefinition => js.Any): Self = StObject.set(x, "ModifierDefinition", js.Any.fromFunction1(value))
+    inline def setModifierDefinition(value: /* node */ ModifierDefinition => js.Any): Self = StObject.set(x, "ModifierDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifierDefinitionColonexit(value: /* node */ ModifierDefinition => js.Any): Self = StObject.set(x, "ModifierDefinition:exit", js.Any.fromFunction1(value))
+    inline def setModifierDefinitionColonexit(value: /* node */ ModifierDefinition => js.Any): Self = StObject.set(x, "ModifierDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifierDefinitionColonexitUndefined: Self = StObject.set(x, "ModifierDefinition:exit", js.undefined)
+    inline def setModifierDefinitionColonexitUndefined: Self = StObject.set(x, "ModifierDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setModifierDefinitionUndefined: Self = StObject.set(x, "ModifierDefinition", js.undefined)
+    inline def setModifierDefinitionUndefined: Self = StObject.set(x, "ModifierDefinition", js.undefined)
     
-    @scala.inline
-    def setModifierInvocation(value: /* node */ ModifierInvocation => js.Any): Self = StObject.set(x, "ModifierInvocation", js.Any.fromFunction1(value))
+    inline def setModifierInvocation(value: /* node */ ModifierInvocation => js.Any): Self = StObject.set(x, "ModifierInvocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifierInvocationColonexit(value: /* node */ ModifierInvocation => js.Any): Self = StObject.set(x, "ModifierInvocation:exit", js.Any.fromFunction1(value))
+    inline def setModifierInvocationColonexit(value: /* node */ ModifierInvocation => js.Any): Self = StObject.set(x, "ModifierInvocation:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setModifierInvocationColonexitUndefined: Self = StObject.set(x, "ModifierInvocation:exit", js.undefined)
+    inline def setModifierInvocationColonexitUndefined: Self = StObject.set(x, "ModifierInvocation:exit", js.undefined)
     
-    @scala.inline
-    def setModifierInvocationUndefined: Self = StObject.set(x, "ModifierInvocation", js.undefined)
+    inline def setModifierInvocationUndefined: Self = StObject.set(x, "ModifierInvocation", js.undefined)
     
-    @scala.inline
-    def setNumberLiteral(value: /* node */ NumberLiteral => js.Any): Self = StObject.set(x, "NumberLiteral", js.Any.fromFunction1(value))
+    inline def setNumberLiteral(value: /* node */ NumberLiteral => js.Any): Self = StObject.set(x, "NumberLiteral", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNumberLiteralColonexit(value: /* node */ NumberLiteral => js.Any): Self = StObject.set(x, "NumberLiteral:exit", js.Any.fromFunction1(value))
+    inline def setNumberLiteralColonexit(value: /* node */ NumberLiteral => js.Any): Self = StObject.set(x, "NumberLiteral:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNumberLiteralColonexitUndefined: Self = StObject.set(x, "NumberLiteral:exit", js.undefined)
+    inline def setNumberLiteralColonexitUndefined: Self = StObject.set(x, "NumberLiteral:exit", js.undefined)
     
-    @scala.inline
-    def setNumberLiteralUndefined: Self = StObject.set(x, "NumberLiteral", js.undefined)
+    inline def setNumberLiteralUndefined: Self = StObject.set(x, "NumberLiteral", js.undefined)
     
-    @scala.inline
-    def setPragmaDirective(value: /* node */ PragmaDirective => js.Any): Self = StObject.set(x, "PragmaDirective", js.Any.fromFunction1(value))
+    inline def setPragmaDirective(value: /* node */ PragmaDirective => js.Any): Self = StObject.set(x, "PragmaDirective", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPragmaDirectiveColonexit(value: /* node */ PragmaDirective => js.Any): Self = StObject.set(x, "PragmaDirective:exit", js.Any.fromFunction1(value))
+    inline def setPragmaDirectiveColonexit(value: /* node */ PragmaDirective => js.Any): Self = StObject.set(x, "PragmaDirective:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPragmaDirectiveColonexitUndefined: Self = StObject.set(x, "PragmaDirective:exit", js.undefined)
+    inline def setPragmaDirectiveColonexitUndefined: Self = StObject.set(x, "PragmaDirective:exit", js.undefined)
     
-    @scala.inline
-    def setPragmaDirectiveUndefined: Self = StObject.set(x, "PragmaDirective", js.undefined)
+    inline def setPragmaDirectiveUndefined: Self = StObject.set(x, "PragmaDirective", js.undefined)
     
-    @scala.inline
-    def setReturnStatement(value: /* node */ ReturnStatement => js.Any): Self = StObject.set(x, "ReturnStatement", js.Any.fromFunction1(value))
+    inline def setReturnStatement(value: /* node */ ReturnStatement => js.Any): Self = StObject.set(x, "ReturnStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReturnStatementColonexit(value: /* node */ ReturnStatement => js.Any): Self = StObject.set(x, "ReturnStatement:exit", js.Any.fromFunction1(value))
+    inline def setReturnStatementColonexit(value: /* node */ ReturnStatement => js.Any): Self = StObject.set(x, "ReturnStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReturnStatementColonexitUndefined: Self = StObject.set(x, "ReturnStatement:exit", js.undefined)
+    inline def setReturnStatementColonexitUndefined: Self = StObject.set(x, "ReturnStatement:exit", js.undefined)
     
-    @scala.inline
-    def setReturnStatementUndefined: Self = StObject.set(x, "ReturnStatement", js.undefined)
+    inline def setReturnStatementUndefined: Self = StObject.set(x, "ReturnStatement", js.undefined)
     
-    @scala.inline
-    def setSourceUnit(value: /* node */ SourceUnit => js.Any): Self = StObject.set(x, "SourceUnit", js.Any.fromFunction1(value))
+    inline def setSourceUnit(value: /* node */ SourceUnit => js.Any): Self = StObject.set(x, "SourceUnit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSourceUnitColonexit(value: /* node */ SourceUnit => js.Any): Self = StObject.set(x, "SourceUnit:exit", js.Any.fromFunction1(value))
+    inline def setSourceUnitColonexit(value: /* node */ SourceUnit => js.Any): Self = StObject.set(x, "SourceUnit:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSourceUnitColonexitUndefined: Self = StObject.set(x, "SourceUnit:exit", js.undefined)
+    inline def setSourceUnitColonexitUndefined: Self = StObject.set(x, "SourceUnit:exit", js.undefined)
     
-    @scala.inline
-    def setSourceUnitUndefined: Self = StObject.set(x, "SourceUnit", js.undefined)
+    inline def setSourceUnitUndefined: Self = StObject.set(x, "SourceUnit", js.undefined)
     
-    @scala.inline
-    def setStateVariableDeclaration(value: /* node */ StateVariableDeclaration => js.Any): Self = StObject.set(x, "StateVariableDeclaration", js.Any.fromFunction1(value))
+    inline def setStateVariableDeclaration(value: /* node */ StateVariableDeclaration => js.Any): Self = StObject.set(x, "StateVariableDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStateVariableDeclarationColonexit(value: /* node */ StateVariableDeclaration => js.Any): Self = StObject.set(x, "StateVariableDeclaration:exit", js.Any.fromFunction1(value))
+    inline def setStateVariableDeclarationColonexit(value: /* node */ StateVariableDeclaration => js.Any): Self = StObject.set(x, "StateVariableDeclaration:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStateVariableDeclarationColonexitUndefined: Self = StObject.set(x, "StateVariableDeclaration:exit", js.undefined)
+    inline def setStateVariableDeclarationColonexitUndefined: Self = StObject.set(x, "StateVariableDeclaration:exit", js.undefined)
     
-    @scala.inline
-    def setStateVariableDeclarationUndefined: Self = StObject.set(x, "StateVariableDeclaration", js.undefined)
+    inline def setStateVariableDeclarationUndefined: Self = StObject.set(x, "StateVariableDeclaration", js.undefined)
     
-    @scala.inline
-    def setStructDefinition(value: /* node */ StructDefinition => js.Any): Self = StObject.set(x, "StructDefinition", js.Any.fromFunction1(value))
+    inline def setStructDefinition(value: /* node */ StructDefinition => js.Any): Self = StObject.set(x, "StructDefinition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStructDefinitionColonexit(value: /* node */ StructDefinition => js.Any): Self = StObject.set(x, "StructDefinition:exit", js.Any.fromFunction1(value))
+    inline def setStructDefinitionColonexit(value: /* node */ StructDefinition => js.Any): Self = StObject.set(x, "StructDefinition:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStructDefinitionColonexitUndefined: Self = StObject.set(x, "StructDefinition:exit", js.undefined)
+    inline def setStructDefinitionColonexitUndefined: Self = StObject.set(x, "StructDefinition:exit", js.undefined)
     
-    @scala.inline
-    def setStructDefinitionUndefined: Self = StObject.set(x, "StructDefinition", js.undefined)
+    inline def setStructDefinitionUndefined: Self = StObject.set(x, "StructDefinition", js.undefined)
     
-    @scala.inline
-    def setSubAssembly(value: /* node */ SubAssembly => js.Any): Self = StObject.set(x, "SubAssembly", js.Any.fromFunction1(value))
+    inline def setSubAssembly(value: /* node */ SubAssembly => js.Any): Self = StObject.set(x, "SubAssembly", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubAssemblyColonexit(value: /* node */ SubAssembly => js.Any): Self = StObject.set(x, "SubAssembly:exit", js.Any.fromFunction1(value))
+    inline def setSubAssemblyColonexit(value: /* node */ SubAssembly => js.Any): Self = StObject.set(x, "SubAssembly:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubAssemblyColonexitUndefined: Self = StObject.set(x, "SubAssembly:exit", js.undefined)
+    inline def setSubAssemblyColonexitUndefined: Self = StObject.set(x, "SubAssembly:exit", js.undefined)
     
-    @scala.inline
-    def setSubAssemblyUndefined: Self = StObject.set(x, "SubAssembly", js.undefined)
+    inline def setSubAssemblyUndefined: Self = StObject.set(x, "SubAssembly", js.undefined)
     
-    @scala.inline
-    def setThrowStatement(value: /* node */ ThrowStatement => js.Any): Self = StObject.set(x, "ThrowStatement", js.Any.fromFunction1(value))
+    inline def setThrowStatement(value: /* node */ ThrowStatement => js.Any): Self = StObject.set(x, "ThrowStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrowStatementColonexit(value: /* node */ ThrowStatement => js.Any): Self = StObject.set(x, "ThrowStatement:exit", js.Any.fromFunction1(value))
+    inline def setThrowStatementColonexit(value: /* node */ ThrowStatement => js.Any): Self = StObject.set(x, "ThrowStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrowStatementColonexitUndefined: Self = StObject.set(x, "ThrowStatement:exit", js.undefined)
+    inline def setThrowStatementColonexitUndefined: Self = StObject.set(x, "ThrowStatement:exit", js.undefined)
     
-    @scala.inline
-    def setThrowStatementUndefined: Self = StObject.set(x, "ThrowStatement", js.undefined)
+    inline def setThrowStatementUndefined: Self = StObject.set(x, "ThrowStatement", js.undefined)
     
-    @scala.inline
-    def setTupleExpression(value: /* node */ TupleExpression => js.Any): Self = StObject.set(x, "TupleExpression", js.Any.fromFunction1(value))
+    inline def setTupleExpression(value: /* node */ TupleExpression => js.Any): Self = StObject.set(x, "TupleExpression", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTupleExpressionColonexit(value: /* node */ TupleExpression => js.Any): Self = StObject.set(x, "TupleExpression:exit", js.Any.fromFunction1(value))
+    inline def setTupleExpressionColonexit(value: /* node */ TupleExpression => js.Any): Self = StObject.set(x, "TupleExpression:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTupleExpressionColonexitUndefined: Self = StObject.set(x, "TupleExpression:exit", js.undefined)
+    inline def setTupleExpressionColonexitUndefined: Self = StObject.set(x, "TupleExpression:exit", js.undefined)
     
-    @scala.inline
-    def setTupleExpressionUndefined: Self = StObject.set(x, "TupleExpression", js.undefined)
+    inline def setTupleExpressionUndefined: Self = StObject.set(x, "TupleExpression", js.undefined)
     
-    @scala.inline
-    def setUserDefinedTypeName(value: /* node */ UserDefinedTypeName => js.Any): Self = StObject.set(x, "UserDefinedTypeName", js.Any.fromFunction1(value))
+    inline def setUserDefinedTypeName(value: /* node */ UserDefinedTypeName => js.Any): Self = StObject.set(x, "UserDefinedTypeName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUserDefinedTypeNameColonexit(value: /* node */ UserDefinedTypeName => js.Any): Self = StObject.set(x, "UserDefinedTypeName:exit", js.Any.fromFunction1(value))
+    inline def setUserDefinedTypeNameColonexit(value: /* node */ UserDefinedTypeName => js.Any): Self = StObject.set(x, "UserDefinedTypeName:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUserDefinedTypeNameColonexitUndefined: Self = StObject.set(x, "UserDefinedTypeName:exit", js.undefined)
+    inline def setUserDefinedTypeNameColonexitUndefined: Self = StObject.set(x, "UserDefinedTypeName:exit", js.undefined)
     
-    @scala.inline
-    def setUserDefinedTypeNameUndefined: Self = StObject.set(x, "UserDefinedTypeName", js.undefined)
+    inline def setUserDefinedTypeNameUndefined: Self = StObject.set(x, "UserDefinedTypeName", js.undefined)
     
-    @scala.inline
-    def setUsingForDeclaration(value: /* node */ UsingForDeclaration => js.Any): Self = StObject.set(x, "UsingForDeclaration", js.Any.fromFunction1(value))
+    inline def setUsingForDeclaration(value: /* node */ UsingForDeclaration => js.Any): Self = StObject.set(x, "UsingForDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUsingForDeclarationColonexit(value: /* node */ UsingForDeclaration => js.Any): Self = StObject.set(x, "UsingForDeclaration:exit", js.Any.fromFunction1(value))
+    inline def setUsingForDeclarationColonexit(value: /* node */ UsingForDeclaration => js.Any): Self = StObject.set(x, "UsingForDeclaration:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUsingForDeclarationColonexitUndefined: Self = StObject.set(x, "UsingForDeclaration:exit", js.undefined)
+    inline def setUsingForDeclarationColonexitUndefined: Self = StObject.set(x, "UsingForDeclaration:exit", js.undefined)
     
-    @scala.inline
-    def setUsingForDeclarationUndefined: Self = StObject.set(x, "UsingForDeclaration", js.undefined)
+    inline def setUsingForDeclarationUndefined: Self = StObject.set(x, "UsingForDeclaration", js.undefined)
     
-    @scala.inline
-    def setVariableDeclaration(value: /* node */ VariableDeclaration => js.Any): Self = StObject.set(x, "VariableDeclaration", js.Any.fromFunction1(value))
+    inline def setVariableDeclaration(value: /* node */ VariableDeclaration => js.Any): Self = StObject.set(x, "VariableDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVariableDeclarationColonexit(value: /* node */ VariableDeclaration => js.Any): Self = StObject.set(x, "VariableDeclaration:exit", js.Any.fromFunction1(value))
+    inline def setVariableDeclarationColonexit(value: /* node */ VariableDeclaration => js.Any): Self = StObject.set(x, "VariableDeclaration:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVariableDeclarationColonexitUndefined: Self = StObject.set(x, "VariableDeclaration:exit", js.undefined)
+    inline def setVariableDeclarationColonexitUndefined: Self = StObject.set(x, "VariableDeclaration:exit", js.undefined)
     
-    @scala.inline
-    def setVariableDeclarationStatement(value: /* node */ VariableDeclarationStatement => js.Any): Self = StObject.set(x, "VariableDeclarationStatement", js.Any.fromFunction1(value))
+    inline def setVariableDeclarationStatement(value: /* node */ VariableDeclarationStatement => js.Any): Self = StObject.set(x, "VariableDeclarationStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVariableDeclarationStatementColonexit(value: /* node */ VariableDeclarationStatement => js.Any): Self = StObject.set(x, "VariableDeclarationStatement:exit", js.Any.fromFunction1(value))
+    inline def setVariableDeclarationStatementColonexit(value: /* node */ VariableDeclarationStatement => js.Any): Self = StObject.set(x, "VariableDeclarationStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVariableDeclarationStatementColonexitUndefined: Self = StObject.set(x, "VariableDeclarationStatement:exit", js.undefined)
+    inline def setVariableDeclarationStatementColonexitUndefined: Self = StObject.set(x, "VariableDeclarationStatement:exit", js.undefined)
     
-    @scala.inline
-    def setVariableDeclarationStatementUndefined: Self = StObject.set(x, "VariableDeclarationStatement", js.undefined)
+    inline def setVariableDeclarationStatementUndefined: Self = StObject.set(x, "VariableDeclarationStatement", js.undefined)
     
-    @scala.inline
-    def setVariableDeclarationUndefined: Self = StObject.set(x, "VariableDeclaration", js.undefined)
+    inline def setVariableDeclarationUndefined: Self = StObject.set(x, "VariableDeclaration", js.undefined)
     
-    @scala.inline
-    def setWhileStatement(value: /* node */ WhileStatement => js.Any): Self = StObject.set(x, "WhileStatement", js.Any.fromFunction1(value))
+    inline def setWhileStatement(value: /* node */ WhileStatement => js.Any): Self = StObject.set(x, "WhileStatement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhileStatementColonexit(value: /* node */ WhileStatement => js.Any): Self = StObject.set(x, "WhileStatement:exit", js.Any.fromFunction1(value))
+    inline def setWhileStatementColonexit(value: /* node */ WhileStatement => js.Any): Self = StObject.set(x, "WhileStatement:exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhileStatementColonexitUndefined: Self = StObject.set(x, "WhileStatement:exit", js.undefined)
+    inline def setWhileStatementColonexitUndefined: Self = StObject.set(x, "WhileStatement:exit", js.undefined)
     
-    @scala.inline
-    def setWhileStatementUndefined: Self = StObject.set(x, "WhileStatement", js.undefined)
+    inline def setWhileStatementUndefined: Self = StObject.set(x, "WhileStatement", js.undefined)
   }
 }

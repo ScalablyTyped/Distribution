@@ -107,14 +107,10 @@ object KnowledgeBases {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @scala.inline
-  def create(rpcImpl: RPCImpl): KnowledgeBases = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBases]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
-  @scala.inline
-  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
+  inline def create(rpcImpl: RPCImpl): KnowledgeBases = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[KnowledgeBases]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
+  inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): KnowledgeBases = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[KnowledgeBases]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.KnowledgeBases#createKnowledgeBase}.

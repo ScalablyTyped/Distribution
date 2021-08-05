@@ -18,8 +18,7 @@ trait Geolocation
 }
 object Geolocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearWatch: Double => Double,
     getCurrentPosition: () => Unit,
     isSupported: () => Boolean,
@@ -31,19 +30,14 @@ object Geolocation {
     __obj.asInstanceOf[Geolocation]
   }
   
-  @scala.inline
-  implicit class GeolocationMutableBuilder[Self <: Geolocation] (val x: Self) extends AnyVal {
+  extension [Self <: Geolocation](x: Self) {
     
-    @scala.inline
-    def setClearWatch(value: Double => Double): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
+    inline def setClearWatch(value: Double => Double): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentPosition(value: () => Unit): Self = StObject.set(x, "getCurrentPosition", js.Any.fromFunction0(value))
+    inline def setGetCurrentPosition(value: () => Unit): Self = StObject.set(x, "getCurrentPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
+    inline def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWatchPosition(value: () => Double): Self = StObject.set(x, "watchPosition", js.Any.fromFunction0(value))
+    inline def setWatchPosition(value: () => Double): Self = StObject.set(x, "watchPosition", js.Any.fromFunction0(value))
   }
 }

@@ -18,28 +18,21 @@ trait ListJournalKinesisStreamsForLedgerResponse extends StObject {
 }
 object ListJournalKinesisStreamsForLedgerResponse {
   
-  @scala.inline
-  def apply(): ListJournalKinesisStreamsForLedgerResponse = {
+  inline def apply(): ListJournalKinesisStreamsForLedgerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJournalKinesisStreamsForLedgerResponse]
   }
   
-  @scala.inline
-  implicit class ListJournalKinesisStreamsForLedgerResponseMutableBuilder[Self <: ListJournalKinesisStreamsForLedgerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListJournalKinesisStreamsForLedgerResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStreams(value: JournalKinesisStreamDescriptionList): Self = StObject.set(x, "Streams", value.asInstanceOf[js.Any])
+    inline def setStreams(value: JournalKinesisStreamDescriptionList): Self = StObject.set(x, "Streams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamsUndefined: Self = StObject.set(x, "Streams", js.undefined)
+    inline def setStreamsUndefined: Self = StObject.set(x, "Streams", js.undefined)
     
-    @scala.inline
-    def setStreamsVarargs(value: JournalKinesisStreamDescription*): Self = StObject.set(x, "Streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: JournalKinesisStreamDescription*): Self = StObject.set(x, "Streams", js.Array(value :_*))
   }
 }

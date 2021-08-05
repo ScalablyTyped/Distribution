@@ -29,55 +29,39 @@ trait PubsubLocation extends StObject {
 }
 object PubsubLocation {
   
-  @scala.inline
-  def apply(): PubsubLocation = {
+  inline def apply(): PubsubLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PubsubLocation]
   }
   
-  @scala.inline
-  implicit class PubsubLocationMutableBuilder[Self <: PubsubLocation] (val x: Self) extends AnyVal {
+  extension [Self <: PubsubLocation](x: Self) {
     
-    @scala.inline
-    def setDropLateData(value: Boolean): Self = StObject.set(x, "dropLateData", value.asInstanceOf[js.Any])
+    inline def setDropLateData(value: Boolean): Self = StObject.set(x, "dropLateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropLateDataUndefined: Self = StObject.set(x, "dropLateData", js.undefined)
+    inline def setDropLateDataUndefined: Self = StObject.set(x, "dropLateData", js.undefined)
     
-    @scala.inline
-    def setIdLabel(value: String): Self = StObject.set(x, "idLabel", value.asInstanceOf[js.Any])
+    inline def setIdLabel(value: String): Self = StObject.set(x, "idLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdLabelUndefined: Self = StObject.set(x, "idLabel", js.undefined)
+    inline def setIdLabelUndefined: Self = StObject.set(x, "idLabel", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setTimestampLabel(value: String): Self = StObject.set(x, "timestampLabel", value.asInstanceOf[js.Any])
+    inline def setTimestampLabel(value: String): Self = StObject.set(x, "timestampLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampLabelUndefined: Self = StObject.set(x, "timestampLabel", js.undefined)
+    inline def setTimestampLabelUndefined: Self = StObject.set(x, "timestampLabel", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
-    @scala.inline
-    def setTrackingSubscription(value: String): Self = StObject.set(x, "trackingSubscription", value.asInstanceOf[js.Any])
+    inline def setTrackingSubscription(value: String): Self = StObject.set(x, "trackingSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingSubscriptionUndefined: Self = StObject.set(x, "trackingSubscription", js.undefined)
+    inline def setTrackingSubscriptionUndefined: Self = StObject.set(x, "trackingSubscription", js.undefined)
     
-    @scala.inline
-    def setWithAttributes(value: Boolean): Self = StObject.set(x, "withAttributes", value.asInstanceOf[js.Any])
+    inline def setWithAttributes(value: Boolean): Self = StObject.set(x, "withAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithAttributesUndefined: Self = StObject.set(x, "withAttributes", js.undefined)
+    inline def setWithAttributesUndefined: Self = StObject.set(x, "withAttributes", js.undefined)
   }
 }

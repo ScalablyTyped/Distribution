@@ -11,8 +11,7 @@ trait IConfiguredColorPalette
      with /* name */ StringDictionary[IPalette]
 object IConfiguredColorPalette {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     amber: IPalette,
     blue: IPalette,
     `blue-grey`: IPalette,

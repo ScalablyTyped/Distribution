@@ -92,46 +92,34 @@ object treeBase {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply[TEntity](): typings.uiGrid.mod.treeBase.IColumnDef[TEntity] = {
+    inline def apply[TEntity](): typings.uiGrid.mod.treeBase.IColumnDef[TEntity] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.treeBase.IColumnDef[TEntity]]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.treeBase.IColumnDef[?], TEntity] (val x: Self & typings.uiGrid.mod.treeBase.IColumnDef[TEntity]) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.treeBase.IColumnDef[?], TEntity](x: Self & typings.uiGrid.mod.treeBase.IColumnDef[TEntity]) {
       
-      @scala.inline
-      def setCustomTreeAggregationFinalizerFn(value: /* aggregation */ IGridTreeBaseAggregationObject => Unit): Self = StObject.set(x, "customTreeAggregationFinalizerFn", js.Any.fromFunction1(value))
+      inline def setCustomTreeAggregationFinalizerFn(value: /* aggregation */ IGridTreeBaseAggregationObject => Unit): Self = StObject.set(x, "customTreeAggregationFinalizerFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomTreeAggregationFinalizerFnUndefined: Self = StObject.set(x, "customTreeAggregationFinalizerFn", js.undefined)
+      inline def setCustomTreeAggregationFinalizerFnUndefined: Self = StObject.set(x, "customTreeAggregationFinalizerFn", js.undefined)
       
-      @scala.inline
-      def setCustomTreeAggregationFn(
+      inline def setCustomTreeAggregationFn(
         value: (/* aggregation */ IGridTreeBaseAggregationObject, /* fieldValue */ js.Any, /* numValue */ Double, /* row */ IGridRowOf[TEntity]) => Unit
       ): Self = StObject.set(x, "customTreeAggregationFn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCustomTreeAggregationFnUndefined: Self = StObject.set(x, "customTreeAggregationFn", js.undefined)
+      inline def setCustomTreeAggregationFnUndefined: Self = StObject.set(x, "customTreeAggregationFn", js.undefined)
       
-      @scala.inline
-      def setTreeAggregationLabel(value: String): Self = StObject.set(x, "treeAggregationLabel", value.asInstanceOf[js.Any])
+      inline def setTreeAggregationLabel(value: String): Self = StObject.set(x, "treeAggregationLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeAggregationLabelUndefined: Self = StObject.set(x, "treeAggregationLabel", js.undefined)
+      inline def setTreeAggregationLabelUndefined: Self = StObject.set(x, "treeAggregationLabel", js.undefined)
       
-      @scala.inline
-      def setTreeAggregationType(value: String): Self = StObject.set(x, "treeAggregationType", value.asInstanceOf[js.Any])
+      inline def setTreeAggregationType(value: String): Self = StObject.set(x, "treeAggregationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeAggregationTypeUndefined: Self = StObject.set(x, "treeAggregationType", js.undefined)
+      inline def setTreeAggregationTypeUndefined: Self = StObject.set(x, "treeAggregationType", js.undefined)
       
-      @scala.inline
-      def setTreeAggregationUpdateEntity(value: Boolean): Self = StObject.set(x, "treeAggregationUpdateEntity", value.asInstanceOf[js.Any])
+      inline def setTreeAggregationUpdateEntity(value: Boolean): Self = StObject.set(x, "treeAggregationUpdateEntity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeAggregationUpdateEntityUndefined: Self = StObject.set(x, "treeAggregationUpdateEntity", js.undefined)
+      inline def setTreeAggregationUpdateEntityUndefined: Self = StObject.set(x, "treeAggregationUpdateEntity", js.undefined)
     }
   }
   
@@ -194,50 +182,36 @@ object treeBase {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply[TEntity](): typings.uiGrid.mod.treeBase.IGridOptions[TEntity] = {
+    inline def apply[TEntity](): typings.uiGrid.mod.treeBase.IGridOptions[TEntity] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.treeBase.IGridOptions[TEntity]]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.treeBase.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.treeBase.IGridOptions[TEntity]) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.treeBase.IGridOptions[?], TEntity](x: Self & typings.uiGrid.mod.treeBase.IGridOptions[TEntity]) {
       
-      @scala.inline
-      def setShowTreeExpandNoChildren(value: Boolean): Self = StObject.set(x, "showTreeExpandNoChildren", value.asInstanceOf[js.Any])
+      inline def setShowTreeExpandNoChildren(value: Boolean): Self = StObject.set(x, "showTreeExpandNoChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTreeExpandNoChildrenUndefined: Self = StObject.set(x, "showTreeExpandNoChildren", js.undefined)
+      inline def setShowTreeExpandNoChildrenUndefined: Self = StObject.set(x, "showTreeExpandNoChildren", js.undefined)
       
-      @scala.inline
-      def setShowTreeRowHeader(value: Boolean): Self = StObject.set(x, "showTreeRowHeader", value.asInstanceOf[js.Any])
+      inline def setShowTreeRowHeader(value: Boolean): Self = StObject.set(x, "showTreeRowHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTreeRowHeaderUndefined: Self = StObject.set(x, "showTreeRowHeader", js.undefined)
+      inline def setShowTreeRowHeaderUndefined: Self = StObject.set(x, "showTreeRowHeader", js.undefined)
       
-      @scala.inline
-      def setTreeCustomAggregations(value: StringDictionary[IGridTreeBaseCustomAggregation[TEntity]]): Self = StObject.set(x, "treeCustomAggregations", value.asInstanceOf[js.Any])
+      inline def setTreeCustomAggregations(value: StringDictionary[IGridTreeBaseCustomAggregation[TEntity]]): Self = StObject.set(x, "treeCustomAggregations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeCustomAggregationsUndefined: Self = StObject.set(x, "treeCustomAggregations", js.undefined)
+      inline def setTreeCustomAggregationsUndefined: Self = StObject.set(x, "treeCustomAggregations", js.undefined)
       
-      @scala.inline
-      def setTreeIndent(value: Double): Self = StObject.set(x, "treeIndent", value.asInstanceOf[js.Any])
+      inline def setTreeIndent(value: Double): Self = StObject.set(x, "treeIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeIndentUndefined: Self = StObject.set(x, "treeIndent", js.undefined)
+      inline def setTreeIndentUndefined: Self = StObject.set(x, "treeIndent", js.undefined)
       
-      @scala.inline
-      def setTreeRowHeaderAlwaysVisible(value: Boolean): Self = StObject.set(x, "treeRowHeaderAlwaysVisible", value.asInstanceOf[js.Any])
+      inline def setTreeRowHeaderAlwaysVisible(value: Boolean): Self = StObject.set(x, "treeRowHeaderAlwaysVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeRowHeaderAlwaysVisibleUndefined: Self = StObject.set(x, "treeRowHeaderAlwaysVisible", js.undefined)
+      inline def setTreeRowHeaderAlwaysVisibleUndefined: Self = StObject.set(x, "treeRowHeaderAlwaysVisible", js.undefined)
       
-      @scala.inline
-      def setTreeRowHeaderBaseWidth(value: Double): Self = StObject.set(x, "treeRowHeaderBaseWidth", value.asInstanceOf[js.Any])
+      inline def setTreeRowHeaderBaseWidth(value: Double): Self = StObject.set(x, "treeRowHeaderBaseWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeRowHeaderBaseWidthUndefined: Self = StObject.set(x, "treeRowHeaderBaseWidth", js.undefined)
+      inline def setTreeRowHeaderBaseWidthUndefined: Self = StObject.set(x, "treeRowHeaderBaseWidth", js.undefined)
     }
   }
   
@@ -253,29 +227,22 @@ object treeBase {
   }
   object IGridTreeBaseAggregationObject {
     
-    @scala.inline
-    def apply(count: Double, sum: Double, value: Double): IGridTreeBaseAggregationObject = {
+    inline def apply(count: Double, sum: Double, value: Double): IGridTreeBaseAggregationObject = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridTreeBaseAggregationObject]
     }
     
-    @scala.inline
-    implicit class IGridTreeBaseAggregationObjectMutableBuilder[Self <: IGridTreeBaseAggregationObject] (val x: Self) extends AnyVal {
+    extension [Self <: IGridTreeBaseAggregationObject](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+      inline def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+      inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
       
-      @scala.inline
-      def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+      inline def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -344,8 +311,7 @@ object treeBase {
   }
   object IGridTreeBaseApi {
     
-    @scala.inline
-    def apply[TEntity](
+    inline def apply[TEntity](
       collapseAllRows: () => Unit,
       collapseRow: IGridRowOf[TEntity] => Unit,
       collapseRowChildren: IGridRowOf[TEntity] => Unit,
@@ -361,38 +327,27 @@ object treeBase {
       __obj.asInstanceOf[IGridTreeBaseApi[TEntity]]
     }
     
-    @scala.inline
-    implicit class IGridTreeBaseApiMutableBuilder[Self <: IGridTreeBaseApi[?], TEntity] (val x: Self & IGridTreeBaseApi[TEntity]) extends AnyVal {
+    extension [Self <: IGridTreeBaseApi[?], TEntity](x: Self & IGridTreeBaseApi[TEntity]) {
       
-      @scala.inline
-      def setCollapseAllRows(value: () => Unit): Self = StObject.set(x, "collapseAllRows", js.Any.fromFunction0(value))
+      inline def setCollapseAllRows(value: () => Unit): Self = StObject.set(x, "collapseAllRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCollapseRow(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "collapseRow", js.Any.fromFunction1(value))
+      inline def setCollapseRow(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "collapseRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCollapseRowChildren(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "collapseRowChildren", js.Any.fromFunction1(value))
+      inline def setCollapseRowChildren(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "collapseRowChildren", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpandAllRows(value: () => Unit): Self = StObject.set(x, "expandAllRows", js.Any.fromFunction0(value))
+      inline def setExpandAllRows(value: () => Unit): Self = StObject.set(x, "expandAllRows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExpandRow(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "expandRow", js.Any.fromFunction1(value))
+      inline def setExpandRow(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "expandRow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRowChildren(value: IGridRowOf[TEntity] => js.Array[IGridRowOf[TEntity]]): Self = StObject.set(x, "getRowChildren", js.Any.fromFunction1(value))
+      inline def setGetRowChildren(value: IGridRowOf[TEntity] => js.Array[IGridRowOf[TEntity]]): Self = StObject.set(x, "getRowChildren", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTreeState(value: () => ITreeState): Self = StObject.set(x, "getTreeState", js.Any.fromFunction0(value))
+      inline def setGetTreeState(value: () => ITreeState): Self = StObject.set(x, "getTreeState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn(value: RowCollapsed[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: RowCollapsed[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetTreeState(value: ITreeState => Unit): Self = StObject.set(x, "setTreeState", js.Any.fromFunction1(value))
+      inline def setSetTreeState(value: ITreeState => Unit): Self = StObject.set(x, "setTreeState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleRowTreeState(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "toggleRowTreeState", js.Any.fromFunction1(value))
+      inline def setToggleRowTreeState(value: IGridRowOf[TEntity] => Unit): Self = StObject.set(x, "toggleRowTreeState", js.Any.fromFunction1(value))
     }
   }
   
@@ -418,17 +373,14 @@ object treeBase {
   }
   object ITreeState {
     
-    @scala.inline
-    def apply(expandedState: StringDictionary[String]): ITreeState = {
+    inline def apply(expandedState: StringDictionary[String]): ITreeState = {
       val __obj = js.Dynamic.literal(expandedState = expandedState.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITreeState]
     }
     
-    @scala.inline
-    implicit class ITreeStateMutableBuilder[Self <: ITreeState] (val x: Self) extends AnyVal {
+    extension [Self <: ITreeState](x: Self) {
       
-      @scala.inline
-      def setExpandedState(value: StringDictionary[String]): Self = StObject.set(x, "expandedState", value.asInstanceOf[js.Any])
+      inline def setExpandedState(value: StringDictionary[String]): Self = StObject.set(x, "expandedState", value.asInstanceOf[js.Any])
     }
   }
   
@@ -440,8 +392,7 @@ object treeBase {
   }
   object IUiGridTreeBaseConstants {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       COLLAPSED: String,
       EXPANDED: String,
       aggregation: AVG_,
@@ -452,11 +403,9 @@ object treeBase {
       __obj.asInstanceOf[IUiGridTreeBaseConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridTreeBaseConstantsMutableBuilder[Self <: IUiGridTreeBaseConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridTreeBaseConstants](x: Self) {
       
-      @scala.inline
-      def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+      inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }
   }
   

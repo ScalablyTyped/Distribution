@@ -32,20 +32,16 @@ object honeycodeMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -70,20 +66,16 @@ object honeycodeMod {
   }
   object ColumnMetadata {
     
-    @scala.inline
-    def apply(format: Format, name: Name): ColumnMetadata = {
+    inline def apply(format: Format, name: Name): ColumnMetadata = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnMetadata]
     }
     
-    @scala.inline
-    implicit class ColumnMetadataMutableBuilder[Self <: ColumnMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnMetadata](x: Self) {
       
-      @scala.inline
-      def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,32 +98,24 @@ object honeycodeMod {
   }
   object DataItem {
     
-    @scala.inline
-    def apply(): DataItem = {
+    inline def apply(): DataItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataItem]
     }
     
-    @scala.inline
-    implicit class DataItemMutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
+    extension [Self <: DataItem](x: Self) {
       
-      @scala.inline
-      def setFormattedValue(value: FormattedValue): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+      inline def setFormattedValue(value: FormattedValue): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
+      inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
       
-      @scala.inline
-      def setOverrideFormat(value: Format): Self = StObject.set(x, "overrideFormat", value.asInstanceOf[js.Any])
+      inline def setOverrideFormat(value: Format): Self = StObject.set(x, "overrideFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideFormatUndefined: Self = StObject.set(x, "overrideFormat", js.undefined)
+      inline def setOverrideFormatUndefined: Self = StObject.set(x, "overrideFormat", js.undefined)
       
-      @scala.inline
-      def setRawValue(value: RawValue): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+      inline def setRawValue(value: RawValue): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawValueUndefined: Self = StObject.set(x, "rawValue", js.undefined)
+      inline def setRawValueUndefined: Self = StObject.set(x, "rawValue", js.undefined)
     }
   }
   
@@ -189,41 +173,30 @@ object honeycodeMod {
   }
   object GetScreenDataRequest {
     
-    @scala.inline
-    def apply(appId: ResourceId, screenId: ResourceId, workbookId: ResourceId): GetScreenDataRequest = {
+    inline def apply(appId: ResourceId, screenId: ResourceId, workbookId: ResourceId): GetScreenDataRequest = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], screenId = screenId.asInstanceOf[js.Any], workbookId = workbookId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetScreenDataRequest]
     }
     
-    @scala.inline
-    implicit class GetScreenDataRequestMutableBuilder[Self <: GetScreenDataRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetScreenDataRequest](x: Self) {
       
-      @scala.inline
-      def setAppId(value: ResourceId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: ResourceId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setScreenId(value: ResourceId): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
+      inline def setScreenId(value: ResourceId): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: VariableValueMap): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: VariableValueMap): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
       
-      @scala.inline
-      def setWorkbookId(value: ResourceId): Self = StObject.set(x, "workbookId", value.asInstanceOf[js.Any])
+      inline def setWorkbookId(value: ResourceId): Self = StObject.set(x, "workbookId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,26 +219,20 @@ object honeycodeMod {
   }
   object GetScreenDataResult {
     
-    @scala.inline
-    def apply(results: ResultSetMap, workbookCursor: WorkbookCursor): GetScreenDataResult = {
+    inline def apply(results: ResultSetMap, workbookCursor: WorkbookCursor): GetScreenDataResult = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], workbookCursor = workbookCursor.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetScreenDataResult]
     }
     
-    @scala.inline
-    implicit class GetScreenDataResultMutableBuilder[Self <: GetScreenDataResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetScreenDataResult](x: Self) {
       
-      @scala.inline
-      def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setResults(value: ResultSetMap): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: ResultSetMap): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkbookCursor(value: WorkbookCursor): Self = StObject.set(x, "workbookCursor", value.asInstanceOf[js.Any])
+      inline def setWorkbookCursor(value: WorkbookCursor): Self = StObject.set(x, "workbookCursor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -343,44 +310,32 @@ object honeycodeMod {
   }
   object InvokeScreenAutomationRequest {
     
-    @scala.inline
-    def apply(appId: ResourceId, screenAutomationId: ResourceId, screenId: ResourceId, workbookId: ResourceId): InvokeScreenAutomationRequest = {
+    inline def apply(appId: ResourceId, screenAutomationId: ResourceId, screenId: ResourceId, workbookId: ResourceId): InvokeScreenAutomationRequest = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], screenAutomationId = screenAutomationId.asInstanceOf[js.Any], screenId = screenId.asInstanceOf[js.Any], workbookId = workbookId.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeScreenAutomationRequest]
     }
     
-    @scala.inline
-    implicit class InvokeScreenAutomationRequestMutableBuilder[Self <: InvokeScreenAutomationRequest] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeScreenAutomationRequest](x: Self) {
       
-      @scala.inline
-      def setAppId(value: ResourceId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: ResourceId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+      inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+      inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
       
-      @scala.inline
-      def setRowId(value: RowId): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+      inline def setRowId(value: RowId): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
+      inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
       
-      @scala.inline
-      def setScreenAutomationId(value: ResourceId): Self = StObject.set(x, "screenAutomationId", value.asInstanceOf[js.Any])
+      inline def setScreenAutomationId(value: ResourceId): Self = StObject.set(x, "screenAutomationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenId(value: ResourceId): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
+      inline def setScreenId(value: ResourceId): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: VariableValueMap): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: VariableValueMap): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
       
-      @scala.inline
-      def setWorkbookId(value: ResourceId): Self = StObject.set(x, "workbookId", value.asInstanceOf[js.Any])
+      inline def setWorkbookId(value: ResourceId): Self = StObject.set(x, "workbookId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -393,17 +348,14 @@ object honeycodeMod {
   }
   object InvokeScreenAutomationResult {
     
-    @scala.inline
-    def apply(workbookCursor: WorkbookCursor): InvokeScreenAutomationResult = {
+    inline def apply(workbookCursor: WorkbookCursor): InvokeScreenAutomationResult = {
       val __obj = js.Dynamic.literal(workbookCursor = workbookCursor.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeScreenAutomationResult]
     }
     
-    @scala.inline
-    implicit class InvokeScreenAutomationResultMutableBuilder[Self <: InvokeScreenAutomationResult] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeScreenAutomationResult](x: Self) {
       
-      @scala.inline
-      def setWorkbookCursor(value: WorkbookCursor): Self = StObject.set(x, "workbookCursor", value.asInstanceOf[js.Any])
+      inline def setWorkbookCursor(value: WorkbookCursor): Self = StObject.set(x, "workbookCursor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -433,26 +385,20 @@ object honeycodeMod {
   }
   object ResultRow {
     
-    @scala.inline
-    def apply(dataItems: DataItems): ResultRow = {
+    inline def apply(dataItems: DataItems): ResultRow = {
       val __obj = js.Dynamic.literal(dataItems = dataItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultRow]
     }
     
-    @scala.inline
-    implicit class ResultRowMutableBuilder[Self <: ResultRow] (val x: Self) extends AnyVal {
+    extension [Self <: ResultRow](x: Self) {
       
-      @scala.inline
-      def setDataItems(value: DataItems): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
+      inline def setDataItems(value: DataItems): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataItemsVarargs(value: DataItem*): Self = StObject.set(x, "dataItems", js.Array(value :_*))
+      inline def setDataItemsVarargs(value: DataItem*): Self = StObject.set(x, "dataItems", js.Array(value :_*))
       
-      @scala.inline
-      def setRowId(value: RowId): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+      inline def setRowId(value: RowId): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
+      inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     }
   }
   
@@ -472,26 +418,20 @@ object honeycodeMod {
   }
   object ResultSet {
     
-    @scala.inline
-    def apply(headers: ResultHeader, rows: ResultRows): ResultSet = {
+    inline def apply(headers: ResultHeader, rows: ResultRows): ResultSet = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultSet]
     }
     
-    @scala.inline
-    implicit class ResultSetMutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
+    extension [Self <: ResultSet](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: ResultHeader): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: ResultHeader): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersVarargs(value: ColumnMetadata*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: ColumnMetadata*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setRows(value: ResultRows): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: ResultRows): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: ResultRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: ResultRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
   
@@ -510,17 +450,14 @@ object honeycodeMod {
   }
   object VariableValue {
     
-    @scala.inline
-    def apply(rawValue: RawValue): VariableValue = {
+    inline def apply(rawValue: RawValue): VariableValue = {
       val __obj = js.Dynamic.literal(rawValue = rawValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[VariableValue]
     }
     
-    @scala.inline
-    implicit class VariableValueMutableBuilder[Self <: VariableValue] (val x: Self) extends AnyVal {
+    extension [Self <: VariableValue](x: Self) {
       
-      @scala.inline
-      def setRawValue(value: RawValue): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+      inline def setRawValue(value: RawValue): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     }
   }
   

@@ -21,8 +21,7 @@ trait SessionCache extends StObject {
 }
 object SessionCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cache: StringDictionary[Session],
     capacity: Double,
     getSession: Bytes => Session,
@@ -33,25 +32,18 @@ object SessionCache {
     __obj.asInstanceOf[SessionCache]
   }
   
-  @scala.inline
-  implicit class SessionCacheMutableBuilder[Self <: SessionCache] (val x: Self) extends AnyVal {
+  extension [Self <: SessionCache](x: Self) {
     
-    @scala.inline
-    def setCache(value: StringDictionary[Session]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: StringDictionary[Session]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSession(value: Bytes => Session): Self = StObject.set(x, "getSession", js.Any.fromFunction1(value))
+    inline def setGetSession(value: Bytes => Session): Self = StObject.set(x, "getSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrder(value: js.Array[Hex]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: js.Array[Hex]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderVarargs(value: Hex*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: Hex*): Self = StObject.set(x, "order", js.Array(value :_*))
     
-    @scala.inline
-    def setSetSession(value: (Bytes, Session) => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction2(value))
+    inline def setSetSession(value: (Bytes, Session) => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction2(value))
   }
 }

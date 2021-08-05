@@ -29,8 +29,7 @@ trait XElementStackKeeper
 }
 object XElementStackKeeper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -42,16 +41,12 @@ object XElementStackKeeper {
     __obj.asInstanceOf[XElementStackKeeper]
   }
   
-  @scala.inline
-  implicit class XElementStackKeeperMutableBuilder[Self <: XElementStackKeeper] (val x: Self) extends AnyVal {
+  extension [Self <: XElementStackKeeper](x: Self) {
     
-    @scala.inline
-    def setRetrieve(value: (XDocumentHandler, Boolean) => Unit): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
+    inline def setRetrieve(value: (XDocumentHandler, Boolean) => Unit): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

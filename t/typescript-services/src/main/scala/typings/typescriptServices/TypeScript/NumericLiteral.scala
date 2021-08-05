@@ -8,11 +8,11 @@ trait NumericLiteral
   extends StObject
      with IASTToken {
   
-  var _text: js.Any
+  /* private */ var _text: js.Any
   
-  var _value: js.Any
+  /* private */ var _value: js.Any
   
-  var _valueText: js.Any
+  /* private */ var _valueText: js.Any
   
   def structuralEquals(ast: NumericLiteral, includingPosition: Boolean): Boolean
   
@@ -20,8 +20,7 @@ trait NumericLiteral
 }
 object NumericLiteral {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -53,22 +52,16 @@ object NumericLiteral {
     __obj.asInstanceOf[NumericLiteral]
   }
   
-  @scala.inline
-  implicit class NumericLiteralMutableBuilder[Self <: NumericLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: NumericLiteral](x: Self) {
     
-    @scala.inline
-    def setStructuralEquals(value: (NumericLiteral, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (NumericLiteral, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValue(value: () => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    inline def setValue(value: () => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
+    inline def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

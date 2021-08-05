@@ -18,19 +18,15 @@ trait CallerID extends StObject {
 }
 object CallerID {
   
-  @scala.inline
-  def apply(name: String, number: String): CallerID = {
+  inline def apply(name: String, number: String): CallerID = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallerID]
   }
   
-  @scala.inline
-  implicit class CallerIDMutableBuilder[Self <: CallerID] (val x: Self) extends AnyVal {
+  extension [Self <: CallerID](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }
 }

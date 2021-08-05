@@ -27,7 +27,7 @@ object unlinkDeveloperIdentityCommandMod {
         ] {
     def this(input: UnlinkDeveloperIdentityCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -39,7 +39,7 @@ object unlinkDeveloperIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[UnlinkDeveloperIdentityCommandInput, UnlinkDeveloperIdentityCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type UnlinkDeveloperIdentityCommandInput = UnlinkDeveloperIdentityInput

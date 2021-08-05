@@ -23,34 +23,25 @@ trait QueryObjectsOutput extends StObject {
 }
 object QueryObjectsOutput {
   
-  @scala.inline
-  def apply(): QueryObjectsOutput = {
+  inline def apply(): QueryObjectsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryObjectsOutput]
   }
   
-  @scala.inline
-  implicit class QueryObjectsOutputMutableBuilder[Self <: QueryObjectsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: QueryObjectsOutput](x: Self) {
     
-    @scala.inline
-    def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
+    inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
+    inline def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
     
-    @scala.inline
-    def setIds(value: idList): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: idList): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: id*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: id*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
   }
 }

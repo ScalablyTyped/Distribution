@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(bootstrapWizard: Wizard): JQueryStatic = {
+  inline def apply(bootstrapWizard: Wizard): JQueryStatic = {
     val __obj = js.Dynamic.literal(bootstrapWizard = bootstrapWizard.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setBootstrapWizard(value: Wizard): Self = StObject.set(x, "bootstrapWizard", value.asInstanceOf[js.Any])
+    inline def setBootstrapWizard(value: Wizard): Self = StObject.set(x, "bootstrapWizard", value.asInstanceOf[js.Any])
   }
 }

@@ -88,7 +88,7 @@ object dictionaryMod {
       * @type {number}
       * @private
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var nElements: Double = js.native
     
     /**
@@ -126,7 +126,7 @@ object dictionaryMod {
       * @type {Object}
       * @private
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var table: StringDictionary[IDictionaryPair[K, V]] = js.native
     
     /**
@@ -134,8 +134,8 @@ object dictionaryMod {
       * @type {function(Object):string}
       * @protected
       */
-    /* CompleteClass */
-    /* protected */ override def toStr(key: K): String = js.native
+    /* protected */ /* CompleteClass */
+    override def toStr(key: K): String = js.native
     
     /**
       * Returns an array containing all of the values in this dictionary.
@@ -197,7 +197,7 @@ object dictionaryMod {
       * @type {number}
       * @private
       */
-    var nElements: Double
+    /* protected */ var nElements: Double
     
     /**
       * Removes the mapping for this key from this dictionary if it is present.
@@ -231,7 +231,7 @@ object dictionaryMod {
       * @type {Object}
       * @private
       */
-    var table: StringDictionary[IDictionaryPair[K, V]]
+    /* protected */ var table: StringDictionary[IDictionaryPair[K, V]]
     
     /**
       * Function used to convert keys to strings.
@@ -248,8 +248,7 @@ object dictionaryMod {
   }
   object Dictionary {
     
-    @scala.inline
-    def apply[K, V](
+    inline def apply[K, V](
       clear: () => Unit,
       containsKey: K => Boolean,
       forEach: js.Function2[/* key */ K, /* value */ V, js.Any] => Unit,
@@ -268,47 +267,33 @@ object dictionaryMod {
       __obj.asInstanceOf[Dictionary[K, V]]
     }
     
-    @scala.inline
-    implicit class DictionaryMutableBuilder[Self <: Dictionary[?, ?], K, V] (val x: Self & (Dictionary[K, V])) extends AnyVal {
+    extension [Self <: Dictionary[?, ?], K, V](x: Self & (Dictionary[K, V])) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContainsKey(value: K => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
+      inline def setContainsKey(value: K => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: js.Function2[/* key */ K, /* value */ V, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function2[/* key */ K, /* value */ V, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValue(value: K => js.UndefOr[V]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: K => js.UndefOr[V]): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeys(value: () => js.Array[K]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => js.Array[K]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNElements(value: Double): Self = StObject.set(x, "nElements", value.asInstanceOf[js.Any])
+      inline def setNElements(value: Double): Self = StObject.set(x, "nElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: K => js.UndefOr[V]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: K => js.UndefOr[V]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValue(value: (K, V) => js.UndefOr[V]): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+      inline def setSetValue(value: (K, V) => js.UndefOr[V]): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTable(value: StringDictionary[IDictionaryPair[K, V]]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: StringDictionary[IDictionaryPair[K, V]]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToStr(value: K => String): Self = StObject.set(x, "toStr", js.Any.fromFunction1(value))
+      inline def setToStr(value: K => String): Self = StObject.set(x, "toStr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValues(value: () => js.Array[V]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValues(value: () => js.Array[V]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
     }
   }
   
@@ -320,20 +305,16 @@ object dictionaryMod {
   }
   object IDictionaryPair {
     
-    @scala.inline
-    def apply[K, V](key: K, value: V): IDictionaryPair[K, V] = {
+    inline def apply[K, V](key: K, value: V): IDictionaryPair[K, V] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDictionaryPair[K, V]]
     }
     
-    @scala.inline
-    implicit class IDictionaryPairMutableBuilder[Self <: IDictionaryPair[?, ?], K, V] (val x: Self & (IDictionaryPair[K, V])) extends AnyVal {
+    extension [Self <: IDictionaryPair[?, ?], K, V](x: Self & (IDictionaryPair[K, V])) {
       
-      @scala.inline
-      def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

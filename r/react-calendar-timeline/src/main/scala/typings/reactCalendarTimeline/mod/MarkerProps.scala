@@ -14,22 +14,17 @@ trait MarkerProps extends StObject {
 }
 object MarkerProps {
   
-  @scala.inline
-  def apply(date: Date | Double): MarkerProps = {
+  inline def apply(date: Date | Double): MarkerProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerProps]
   }
   
-  @scala.inline
-  implicit class MarkerPropsMutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* props */ CustomMarkerChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* props */ CustomMarkerChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDate(value: Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

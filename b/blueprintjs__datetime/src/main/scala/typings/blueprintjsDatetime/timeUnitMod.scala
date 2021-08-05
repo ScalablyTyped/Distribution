@@ -51,32 +51,22 @@ object timeUnitMod {
     /* "second" */ val SECOND: typings.blueprintjsDatetime.timeUnitMod.TimeUnit.SECOND & String = js.native
   }
   
-  @scala.inline
-  def getDefaultMaxTime(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMaxTime")().asInstanceOf[Date]
+  inline def getDefaultMaxTime(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMaxTime")().asInstanceOf[Date]
   
-  @scala.inline
-  def getDefaultMinTime(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMinTime")().asInstanceOf[Date]
+  inline def getDefaultMinTime(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMinTime")().asInstanceOf[Date]
   
-  @scala.inline
-  def getTimeUnit(unit: TimeUnit, date: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnit")(unit.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getTimeUnit(unit: TimeUnit, date: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnit")(unit.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getTimeUnitClassName(unit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitClassName")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTimeUnitClassName(unit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitClassName")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getTimeUnitMax(unit: TimeUnit): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitMax")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getTimeUnitMax(unit: TimeUnit): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitMax")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getTimeUnitMin(unit: TimeUnit): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitMin")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getTimeUnitMin(unit: TimeUnit): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitMin")(unit.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def isTimeUnitValid(unit: TimeUnit): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeUnitValid")(unit.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isTimeUnitValid(unit: TimeUnit, time: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTimeUnitValid")(unit.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTimeUnitValid(unit: TimeUnit): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeUnitValid")(unit.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTimeUnitValid(unit: TimeUnit, time: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTimeUnitValid")(unit.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def setTimeUnit(unit: TimeUnit, time: Double, date: Date, isPm: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeUnit")(unit.asInstanceOf[js.Any], time.asInstanceOf[js.Any], date.asInstanceOf[js.Any], isPm.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def setTimeUnit(unit: TimeUnit, time: Double, date: Date, isPm: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeUnit")(unit.asInstanceOf[js.Any], time.asInstanceOf[js.Any], date.asInstanceOf[js.Any], isPm.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def wrapTimeAtUnit(unit: TimeUnit, time: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTimeAtUnit")(unit.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def wrapTimeAtUnit(unit: TimeUnit, time: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTimeAtUnit")(unit.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

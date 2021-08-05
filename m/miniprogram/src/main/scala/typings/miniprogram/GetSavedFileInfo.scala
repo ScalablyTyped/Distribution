@@ -13,16 +13,13 @@ trait GetSavedFileInfo
 }
 object GetSavedFileInfo {
   
-  @scala.inline
-  def apply(apFilePath: String): GetSavedFileInfo = {
+  inline def apply(apFilePath: String): GetSavedFileInfo = {
     val __obj = js.Dynamic.literal(apFilePath = apFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavedFileInfo]
   }
   
-  @scala.inline
-  implicit class GetSavedFileInfoMutableBuilder[Self <: GetSavedFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavedFileInfo](x: Self) {
     
-    @scala.inline
-    def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
+    inline def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
   }
 }

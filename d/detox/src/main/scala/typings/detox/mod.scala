@@ -212,17 +212,14 @@ object mod extends Shortcut {
       }
       object CircusTestEventListenerBase {
         
-        @scala.inline
-        def apply(handleTestEvent: (js.Any, js.Any) => js.Promise[Unit]): CircusTestEventListenerBase = {
+        inline def apply(handleTestEvent: (js.Any, js.Any) => js.Promise[Unit]): CircusTestEventListenerBase = {
           val __obj = js.Dynamic.literal(handleTestEvent = js.Any.fromFunction2(handleTestEvent))
           __obj.asInstanceOf[CircusTestEventListenerBase]
         }
         
-        @scala.inline
-        implicit class CircusTestEventListenerBaseMutableBuilder[Self <: CircusTestEventListenerBase] (val x: Self) extends AnyVal {
+        extension [Self <: CircusTestEventListenerBase](x: Self) {
           
-          @scala.inline
-          def setHandleTestEvent(value: (js.Any, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "handleTestEvent", js.Any.fromFunction2(value))
+          inline def setHandleTestEvent(value: (js.Any, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "handleTestEvent", js.Any.fromFunction2(value))
         }
       }
       
@@ -281,17 +278,14 @@ object mod extends Shortcut {
       }
       object DetoxCircus {
         
-        @scala.inline
-        def apply(getEnv: () => AddEventsListener): DetoxCircus = {
+        inline def apply(getEnv: () => AddEventsListener): DetoxCircus = {
           val __obj = js.Dynamic.literal(getEnv = js.Any.fromFunction0(getEnv))
           __obj.asInstanceOf[DetoxCircus]
         }
         
-        @scala.inline
-        implicit class DetoxCircusMutableBuilder[Self <: DetoxCircus] (val x: Self) extends AnyVal {
+        extension [Self <: DetoxCircus](x: Self) {
           
-          @scala.inline
-          def setGetEnv(value: () => AddEventsListener): Self = StObject.set(x, "getEnv", js.Any.fromFunction0(value))
+          inline def setGetEnv(value: () => AddEventsListener): Self = StObject.set(x, "getEnv", js.Any.fromFunction0(value))
         }
       }
       
@@ -345,32 +339,24 @@ object mod extends Shortcut {
       }
       object DetoxInitOptions {
         
-        @scala.inline
-        def apply(): DetoxInitOptions = {
+        inline def apply(): DetoxInitOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[DetoxInitOptions]
         }
         
-        @scala.inline
-        implicit class DetoxInitOptionsMutableBuilder[Self <: DetoxInitOptions] (val x: Self) extends AnyVal {
+        extension [Self <: DetoxInitOptions](x: Self) {
           
-          @scala.inline
-          def setInitGlobals(value: Boolean): Self = StObject.set(x, "initGlobals", value.asInstanceOf[js.Any])
+          inline def setInitGlobals(value: Boolean): Self = StObject.set(x, "initGlobals", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInitGlobalsUndefined: Self = StObject.set(x, "initGlobals", js.undefined)
+          inline def setInitGlobalsUndefined: Self = StObject.set(x, "initGlobals", js.undefined)
           
-          @scala.inline
-          def setLaunchApp(value: Boolean): Self = StObject.set(x, "launchApp", value.asInstanceOf[js.Any])
+          inline def setLaunchApp(value: Boolean): Self = StObject.set(x, "launchApp", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLaunchAppUndefined: Self = StObject.set(x, "launchApp", js.undefined)
+          inline def setLaunchAppUndefined: Self = StObject.set(x, "launchApp", js.undefined)
           
-          @scala.inline
-          def setReuse(value: Boolean): Self = StObject.set(x, "reuse", value.asInstanceOf[js.Any])
+          inline def setReuse(value: Boolean): Self = StObject.set(x, "reuse", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReuseUndefined: Self = StObject.set(x, "reuse", js.undefined)
+          inline def setReuseUndefined: Self = StObject.set(x, "reuse", js.undefined)
         }
       }
       
@@ -632,62 +618,44 @@ object mod extends Shortcut {
       }
       object DeviceLanchAppConfig {
         
-        @scala.inline
-        def apply(): DeviceLanchAppConfig = {
+        inline def apply(): DeviceLanchAppConfig = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[DeviceLanchAppConfig]
         }
         
-        @scala.inline
-        implicit class DeviceLanchAppConfigMutableBuilder[Self <: DeviceLanchAppConfig] (val x: Self) extends AnyVal {
+        extension [Self <: DeviceLanchAppConfig](x: Self) {
           
-          @scala.inline
-          def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+          inline def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+          inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
           
-          @scala.inline
-          def setLanguageAndLocale(value: LanguageAndLocale): Self = StObject.set(x, "languageAndLocale", value.asInstanceOf[js.Any])
+          inline def setLanguageAndLocale(value: LanguageAndLocale): Self = StObject.set(x, "languageAndLocale", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLanguageAndLocaleUndefined: Self = StObject.set(x, "languageAndLocale", js.undefined)
+          inline def setLanguageAndLocaleUndefined: Self = StObject.set(x, "languageAndLocale", js.undefined)
           
-          @scala.inline
-          def setLaunchArgs(value: js.Any): Self = StObject.set(x, "launchArgs", value.asInstanceOf[js.Any])
+          inline def setLaunchArgs(value: js.Any): Self = StObject.set(x, "launchArgs", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLaunchArgsUndefined: Self = StObject.set(x, "launchArgs", js.undefined)
+          inline def setLaunchArgsUndefined: Self = StObject.set(x, "launchArgs", js.undefined)
           
-          @scala.inline
-          def setNewInstance(value: Boolean): Self = StObject.set(x, "newInstance", value.asInstanceOf[js.Any])
+          inline def setNewInstance(value: Boolean): Self = StObject.set(x, "newInstance", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNewInstanceUndefined: Self = StObject.set(x, "newInstance", js.undefined)
+          inline def setNewInstanceUndefined: Self = StObject.set(x, "newInstance", js.undefined)
           
-          @scala.inline
-          def setPermissions(value: DevicePermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+          inline def setPermissions(value: DevicePermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+          inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
           
-          @scala.inline
-          def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
           
-          @scala.inline
-          def setUserActivity(value: js.Any): Self = StObject.set(x, "userActivity", value.asInstanceOf[js.Any])
+          inline def setUserActivity(value: js.Any): Self = StObject.set(x, "userActivity", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUserActivityUndefined: Self = StObject.set(x, "userActivity", js.undefined)
+          inline def setUserActivityUndefined: Self = StObject.set(x, "userActivity", js.undefined)
           
-          @scala.inline
-          def setUserNotification(value: js.Any): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
+          inline def setUserNotification(value: js.Any): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
+          inline def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
         }
       }
       
@@ -728,104 +696,72 @@ object mod extends Shortcut {
       }
       object DevicePermissions {
         
-        @scala.inline
-        def apply(): DevicePermissions = {
+        inline def apply(): DevicePermissions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[DevicePermissions]
         }
         
-        @scala.inline
-        implicit class DevicePermissionsMutableBuilder[Self <: DevicePermissions] (val x: Self) extends AnyVal {
+        extension [Self <: DevicePermissions](x: Self) {
           
-          @scala.inline
-          def setCalendar(value: CalendarPermission): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+          inline def setCalendar(value: CalendarPermission): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+          inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
           
-          @scala.inline
-          def setCamera(value: CameraPermission): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+          inline def setCamera(value: CameraPermission): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+          inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
           
-          @scala.inline
-          def setContacts(value: ContactsPermission): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
+          inline def setContacts(value: ContactsPermission): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
+          inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
           
-          @scala.inline
-          def setFaceid(value: FaceIDPermission): Self = StObject.set(x, "faceid", value.asInstanceOf[js.Any])
+          inline def setFaceid(value: FaceIDPermission): Self = StObject.set(x, "faceid", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFaceidUndefined: Self = StObject.set(x, "faceid", js.undefined)
+          inline def setFaceidUndefined: Self = StObject.set(x, "faceid", js.undefined)
           
-          @scala.inline
-          def setHealth(value: HealthPermission): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+          inline def setHealth(value: HealthPermission): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
+          inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
           
-          @scala.inline
-          def setHomekit(value: HomekitPermission): Self = StObject.set(x, "homekit", value.asInstanceOf[js.Any])
+          inline def setHomekit(value: HomekitPermission): Self = StObject.set(x, "homekit", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHomekitUndefined: Self = StObject.set(x, "homekit", js.undefined)
+          inline def setHomekitUndefined: Self = StObject.set(x, "homekit", js.undefined)
           
-          @scala.inline
-          def setLocation(value: LocationPermission): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+          inline def setLocation(value: LocationPermission): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+          inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
           
-          @scala.inline
-          def setMedialibrary(value: MediaLibraryPermission): Self = StObject.set(x, "medialibrary", value.asInstanceOf[js.Any])
+          inline def setMedialibrary(value: MediaLibraryPermission): Self = StObject.set(x, "medialibrary", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMedialibraryUndefined: Self = StObject.set(x, "medialibrary", js.undefined)
+          inline def setMedialibraryUndefined: Self = StObject.set(x, "medialibrary", js.undefined)
           
-          @scala.inline
-          def setMicrophone(value: MicrophonePermission): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
+          inline def setMicrophone(value: MicrophonePermission): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMicrophoneUndefined: Self = StObject.set(x, "microphone", js.undefined)
+          inline def setMicrophoneUndefined: Self = StObject.set(x, "microphone", js.undefined)
           
-          @scala.inline
-          def setMotion(value: MotionPermission): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+          inline def setMotion(value: MotionPermission): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
+          inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
           
-          @scala.inline
-          def setNotifications(value: NotificationsPermission): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+          inline def setNotifications(value: NotificationsPermission): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+          inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
           
-          @scala.inline
-          def setPhotos(value: PhotosPermission): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+          inline def setPhotos(value: PhotosPermission): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
+          inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
           
-          @scala.inline
-          def setReminders(value: RemindersPermission): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
+          inline def setReminders(value: RemindersPermission): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
+          inline def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
           
-          @scala.inline
-          def setSiri(value: SiriPermission): Self = StObject.set(x, "siri", value.asInstanceOf[js.Any])
+          inline def setSiri(value: SiriPermission): Self = StObject.set(x, "siri", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSiriUndefined: Self = StObject.set(x, "siri", js.undefined)
+          inline def setSiriUndefined: Self = StObject.set(x, "siri", js.undefined)
           
-          @scala.inline
-          def setSpeech(value: SpeechPermission): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
+          inline def setSpeech(value: SpeechPermission): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
+          inline def setSpeechUndefined: Self = StObject.set(x, "speech", js.undefined)
         }
       }
       
@@ -840,23 +776,17 @@ object mod extends Shortcut {
       trait Direction extends StObject
       object Direction {
         
-        @scala.inline
-        def bottom: typings.detox.detoxStrings.bottom = "bottom".asInstanceOf[typings.detox.detoxStrings.bottom]
+        inline def bottom: typings.detox.detoxStrings.bottom = "bottom".asInstanceOf[typings.detox.detoxStrings.bottom]
         
-        @scala.inline
-        def down: typings.detox.detoxStrings.down = "down".asInstanceOf[typings.detox.detoxStrings.down]
+        inline def down: typings.detox.detoxStrings.down = "down".asInstanceOf[typings.detox.detoxStrings.down]
         
-        @scala.inline
-        def left: typings.detox.detoxStrings.left = "left".asInstanceOf[typings.detox.detoxStrings.left]
+        inline def left: typings.detox.detoxStrings.left = "left".asInstanceOf[typings.detox.detoxStrings.left]
         
-        @scala.inline
-        def right: typings.detox.detoxStrings.right = "right".asInstanceOf[typings.detox.detoxStrings.right]
+        inline def right: typings.detox.detoxStrings.right = "right".asInstanceOf[typings.detox.detoxStrings.right]
         
-        @scala.inline
-        def top: typings.detox.detoxStrings.top = "top".asInstanceOf[typings.detox.detoxStrings.top]
+        inline def top: typings.detox.detoxStrings.top = "top".asInstanceOf[typings.detox.detoxStrings.top]
         
-        @scala.inline
-        def up: typings.detox.detoxStrings.up = "up".asInstanceOf[typings.detox.detoxStrings.up]
+        inline def up: typings.detox.detoxStrings.up = "up".asInstanceOf[typings.detox.detoxStrings.up]
       }
       
       @js.native
@@ -959,26 +889,20 @@ object mod extends Shortcut {
       }
       object LanguageAndLocale {
         
-        @scala.inline
-        def apply(): LanguageAndLocale = {
+        inline def apply(): LanguageAndLocale = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[LanguageAndLocale]
         }
         
-        @scala.inline
-        implicit class LanguageAndLocaleMutableBuilder[Self <: LanguageAndLocale] (val x: Self) extends AnyVal {
+        extension [Self <: LanguageAndLocale](x: Self) {
           
-          @scala.inline
-          def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+          inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+          inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
           
-          @scala.inline
-          def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+          inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+          inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
         }
       }
       
@@ -991,17 +915,13 @@ object mod extends Shortcut {
       trait LocationPermission extends StObject
       object LocationPermission {
         
-        @scala.inline
-        def always: typings.detox.detoxStrings.always = "always".asInstanceOf[typings.detox.detoxStrings.always]
+        inline def always: typings.detox.detoxStrings.always = "always".asInstanceOf[typings.detox.detoxStrings.always]
         
-        @scala.inline
-        def inuse: typings.detox.detoxStrings.inuse = "inuse".asInstanceOf[typings.detox.detoxStrings.inuse]
+        inline def inuse: typings.detox.detoxStrings.inuse = "inuse".asInstanceOf[typings.detox.detoxStrings.inuse]
         
-        @scala.inline
-        def never: typings.detox.detoxStrings.never = "never".asInstanceOf[typings.detox.detoxStrings.never]
+        inline def never: typings.detox.detoxStrings.never = "never".asInstanceOf[typings.detox.detoxStrings.never]
         
-        @scala.inline
-        def unset: typings.detox.detoxStrings.unset = "unset".asInstanceOf[typings.detox.detoxStrings.unset]
+        inline def unset: typings.detox.detoxStrings.unset = "unset".asInstanceOf[typings.detox.detoxStrings.unset]
       }
       
       @js.native
@@ -1083,11 +1003,9 @@ object mod extends Shortcut {
       trait Orientation extends StObject
       object Orientation {
         
-        @scala.inline
-        def landscape: typings.detox.detoxStrings.landscape = "landscape".asInstanceOf[typings.detox.detoxStrings.landscape]
+        inline def landscape: typings.detox.detoxStrings.landscape = "landscape".asInstanceOf[typings.detox.detoxStrings.landscape]
         
-        @scala.inline
-        def portrait: typings.detox.detoxStrings.portrait = "portrait".asInstanceOf[typings.detox.detoxStrings.portrait]
+        inline def portrait: typings.detox.detoxStrings.portrait = "portrait".asInstanceOf[typings.detox.detoxStrings.portrait]
       }
       
       /* Rewritten from type alias, can be one of: 
@@ -1098,14 +1016,11 @@ object mod extends Shortcut {
       trait PermissionState extends StObject
       object PermissionState {
         
-        @scala.inline
-        def NO: typings.detox.detoxStrings.NO = "NO".asInstanceOf[typings.detox.detoxStrings.NO]
+        inline def NO: typings.detox.detoxStrings.NO = "NO".asInstanceOf[typings.detox.detoxStrings.NO]
         
-        @scala.inline
-        def YES: typings.detox.detoxStrings.YES = "YES".asInstanceOf[typings.detox.detoxStrings.YES]
+        inline def YES: typings.detox.detoxStrings.YES = "YES".asInstanceOf[typings.detox.detoxStrings.YES]
         
-        @scala.inline
-        def unset: typings.detox.detoxStrings.unset = "unset".asInstanceOf[typings.detox.detoxStrings.unset]
+        inline def unset: typings.detox.detoxStrings.unset = "unset".asInstanceOf[typings.detox.detoxStrings.unset]
       }
       
       type PhotosPermission = PermissionState
@@ -1123,11 +1038,9 @@ object mod extends Shortcut {
       trait Speed extends StObject
       object Speed {
         
-        @scala.inline
-        def fast: typings.detox.detoxStrings.fast = "fast".asInstanceOf[typings.detox.detoxStrings.fast]
+        inline def fast: typings.detox.detoxStrings.fast = "fast".asInstanceOf[typings.detox.detoxStrings.fast]
         
-        @scala.inline
-        def slow: typings.detox.detoxStrings.slow = "slow".asInstanceOf[typings.detox.detoxStrings.slow]
+        inline def slow: typings.detox.detoxStrings.slow = "slow".asInstanceOf[typings.detox.detoxStrings.slow]
       }
       
       @js.native

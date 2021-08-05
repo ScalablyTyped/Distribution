@@ -22,23 +22,18 @@ object subscribeMod {
   }
   object IncomingRequestWithSubscription {
     
-    @scala.inline
-    def apply(request: IncomingNotifyRequest): IncomingRequestWithSubscription = {
+    inline def apply(request: IncomingNotifyRequest): IncomingRequestWithSubscription = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncomingRequestWithSubscription]
     }
     
-    @scala.inline
-    implicit class IncomingRequestWithSubscriptionMutableBuilder[Self <: IncomingRequestWithSubscription] (val x: Self) extends AnyVal {
+    extension [Self <: IncomingRequestWithSubscription](x: Self) {
       
-      @scala.inline
-      def setRequest(value: IncomingNotifyRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: IncomingNotifyRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscription(value: Subscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: Subscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+      inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     }
   }
   
@@ -78,26 +73,20 @@ object subscribeMod {
   }
   object OutgoingSubscribeRequestDelegate {
     
-    @scala.inline
-    def apply(): OutgoingSubscribeRequestDelegate = {
+    inline def apply(): OutgoingSubscribeRequestDelegate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutgoingSubscribeRequestDelegate]
     }
     
-    @scala.inline
-    implicit class OutgoingSubscribeRequestDelegateMutableBuilder[Self <: OutgoingSubscribeRequestDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: OutgoingSubscribeRequestDelegate](x: Self) {
       
-      @scala.inline
-      def setOnNotify(value: /* request */ IncomingRequestWithSubscription => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
+      inline def setOnNotify(value: /* request */ IncomingRequestWithSubscription => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNotifyTimeout(value: () => Unit): Self = StObject.set(x, "onNotifyTimeout", js.Any.fromFunction0(value))
+      inline def setOnNotifyTimeout(value: () => Unit): Self = StObject.set(x, "onNotifyTimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNotifyTimeoutUndefined: Self = StObject.set(x, "onNotifyTimeout", js.undefined)
+      inline def setOnNotifyTimeoutUndefined: Self = StObject.set(x, "onNotifyTimeout", js.undefined)
       
-      @scala.inline
-      def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
+      inline def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
     }
   }
 }

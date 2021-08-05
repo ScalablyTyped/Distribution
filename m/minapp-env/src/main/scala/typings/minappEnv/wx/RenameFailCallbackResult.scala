@@ -15,16 +15,13 @@ trait RenameFailCallbackResult extends StObject {
 }
 object RenameFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): RenameFailCallbackResult = {
+  inline def apply(errMsg: String): RenameFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class RenameFailCallbackResultMutableBuilder[Self <: RenameFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RenameFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

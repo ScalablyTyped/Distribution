@@ -14,8 +14,7 @@ trait FailedExpectation
 }
 object FailedExpectation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actual: String,
     expected: String,
     matcherName: String,
@@ -27,13 +26,10 @@ object FailedExpectation {
     __obj.asInstanceOf[FailedExpectation]
   }
   
-  @scala.inline
-  implicit class FailedExpectationMutableBuilder[Self <: FailedExpectation] (val x: Self) extends AnyVal {
+  extension [Self <: FailedExpectation](x: Self) {
     
-    @scala.inline
-    def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

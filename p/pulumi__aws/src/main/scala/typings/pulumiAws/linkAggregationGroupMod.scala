@@ -79,21 +79,16 @@ object linkAggregationGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LinkAggregationGroupState): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LinkAggregationGroupState, opts: CustomResourceOptions): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
+    inline def get(name: String, id: Input[ID]): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
+    inline def get(name: String, id: Input[ID], state: LinkAggregationGroupState): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
+    inline def get(name: String, id: Input[ID], state: LinkAggregationGroupState, opts: CustomResourceOptions): LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LinkAggregationGroup]
     
     /**
       * Returns true if the given object is an instance of LinkAggregationGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean]
   }
   
   trait LinkAggregationGroupArgs extends StObject {
@@ -125,38 +120,28 @@ object linkAggregationGroupMod {
   }
   object LinkAggregationGroupArgs {
     
-    @scala.inline
-    def apply(connectionsBandwidth: Input[String], location: Input[String]): LinkAggregationGroupArgs = {
+    inline def apply(connectionsBandwidth: Input[String], location: Input[String]): LinkAggregationGroupArgs = {
       val __obj = js.Dynamic.literal(connectionsBandwidth = connectionsBandwidth.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkAggregationGroupArgs]
     }
     
-    @scala.inline
-    implicit class LinkAggregationGroupArgsMutableBuilder[Self <: LinkAggregationGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LinkAggregationGroupArgs](x: Self) {
       
-      @scala.inline
-      def setConnectionsBandwidth(value: Input[String]): Self = StObject.set(x, "connectionsBandwidth", value.asInstanceOf[js.Any])
+      inline def setConnectionsBandwidth(value: Input[String]): Self = StObject.set(x, "connectionsBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -202,62 +187,44 @@ object linkAggregationGroupMod {
   }
   object LinkAggregationGroupState {
     
-    @scala.inline
-    def apply(): LinkAggregationGroupState = {
+    inline def apply(): LinkAggregationGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkAggregationGroupState]
     }
     
-    @scala.inline
-    implicit class LinkAggregationGroupStateMutableBuilder[Self <: LinkAggregationGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: LinkAggregationGroupState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setConnectionsBandwidth(value: Input[String]): Self = StObject.set(x, "connectionsBandwidth", value.asInstanceOf[js.Any])
+      inline def setConnectionsBandwidth(value: Input[String]): Self = StObject.set(x, "connectionsBandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionsBandwidthUndefined: Self = StObject.set(x, "connectionsBandwidth", js.undefined)
+      inline def setConnectionsBandwidthUndefined: Self = StObject.set(x, "connectionsBandwidth", js.undefined)
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setHasLogicalRedundancy(value: Input[String]): Self = StObject.set(x, "hasLogicalRedundancy", value.asInstanceOf[js.Any])
+      inline def setHasLogicalRedundancy(value: Input[String]): Self = StObject.set(x, "hasLogicalRedundancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasLogicalRedundancyUndefined: Self = StObject.set(x, "hasLogicalRedundancy", js.undefined)
+      inline def setHasLogicalRedundancyUndefined: Self = StObject.set(x, "hasLogicalRedundancy", js.undefined)
       
-      @scala.inline
-      def setJumboFrameCapable(value: Input[Boolean]): Self = StObject.set(x, "jumboFrameCapable", value.asInstanceOf[js.Any])
+      inline def setJumboFrameCapable(value: Input[Boolean]): Self = StObject.set(x, "jumboFrameCapable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJumboFrameCapableUndefined: Self = StObject.set(x, "jumboFrameCapable", js.undefined)
+      inline def setJumboFrameCapableUndefined: Self = StObject.set(x, "jumboFrameCapable", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

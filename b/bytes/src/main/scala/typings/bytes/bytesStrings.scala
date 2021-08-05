@@ -11,83 +11,71 @@ object bytesStrings {
   sealed trait B
     extends StObject
        with Unit
-  @scala.inline
-  def B: B = "B".asInstanceOf[B]
+  inline def B: B = "B".asInstanceOf[B]
   
   @js.native
   sealed trait GB
     extends StObject
        with Unit
-  @scala.inline
-  def GB: GB = "GB".asInstanceOf[GB]
+  inline def GB: GB = "GB".asInstanceOf[GB]
   
   @js.native
   sealed trait KB
     extends StObject
        with Unit
-  @scala.inline
-  def KB: KB = "KB".asInstanceOf[KB]
+  inline def KB: KB = "KB".asInstanceOf[KB]
   
   @js.native
   sealed trait MB
     extends StObject
        with Unit
-  @scala.inline
-  def MB: MB = "MB".asInstanceOf[MB]
+  inline def MB: MB = "MB".asInstanceOf[MB]
   
   @js.native
   sealed trait PB
     extends StObject
        with Unit
-  @scala.inline
-  def PB: PB = "PB".asInstanceOf[PB]
+  inline def PB: PB = "PB".asInstanceOf[PB]
   
   @js.native
   sealed trait TB
     extends StObject
        with Unit
-  @scala.inline
-  def TB: TB = "TB".asInstanceOf[TB]
+  inline def TB: TB = "TB".asInstanceOf[TB]
   
   @js.native
   sealed trait b_
     extends StObject
        with Unit
-  @scala.inline
-  def b_ : b_ = "b".asInstanceOf[b_]
+  inline def b_ : b_ = "b".asInstanceOf[b_]
   
   @js.native
   sealed trait gb_
     extends StObject
        with Unit
-  @scala.inline
-  def gb_ : gb_ = "gb".asInstanceOf[gb_]
+  inline def gb_ : gb_ = "gb".asInstanceOf[gb_]
   
   @js.native
   sealed trait kb_
     extends StObject
        with Unit
-  @scala.inline
-  def kb_ : kb_ = "kb".asInstanceOf[kb_]
+  inline def kb_ : kb_ = "kb".asInstanceOf[kb_]
   
   @js.native
   sealed trait mb_
     extends StObject
        with Unit
-  @scala.inline
-  def mb_ : mb_ = "mb".asInstanceOf[mb_]
+  inline def mb_ : mb_ = "mb".asInstanceOf[mb_]
   
   @js.native
   sealed trait pb_
     extends StObject
        with Unit
-  @scala.inline
-  def pb_ : pb_ = "pb".asInstanceOf[pb_]
+  inline def pb_ : pb_ = "pb".asInstanceOf[pb_]
   
   @js.native
   sealed trait tb_
     extends StObject
        with Unit
-  @scala.inline
-  def tb_ : tb_ = "tb".asInstanceOf[tb_]
+  inline def tb_ : tb_ = "tb".asInstanceOf[tb_]
 }

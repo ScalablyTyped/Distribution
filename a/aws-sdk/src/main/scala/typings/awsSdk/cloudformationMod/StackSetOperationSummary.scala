@@ -33,43 +33,31 @@ trait StackSetOperationSummary extends StObject {
 }
 object StackSetOperationSummary {
   
-  @scala.inline
-  def apply(): StackSetOperationSummary = {
+  inline def apply(): StackSetOperationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackSetOperationSummary]
   }
   
-  @scala.inline
-  implicit class StackSetOperationSummaryMutableBuilder[Self <: StackSetOperationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: StackSetOperationSummary](x: Self) {
     
-    @scala.inline
-    def setAction(value: StackSetOperationAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: StackSetOperationAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setCreationTimestamp(value: Timestamp): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: Timestamp): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
-    @scala.inline
-    def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
+    inline def setEndTimestamp(value: Timestamp): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimestampUndefined: Self = StObject.set(x, "EndTimestamp", js.undefined)
+    inline def setEndTimestampUndefined: Self = StObject.set(x, "EndTimestamp", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: ClientRequestToken): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StackSetOperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StackSetOperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

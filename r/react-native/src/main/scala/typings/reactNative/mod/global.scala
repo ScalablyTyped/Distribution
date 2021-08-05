@@ -30,8 +30,7 @@ object global {
   @JSGlobal("console")
   @js.native
   def console: Console_ = js.native
-  @scala.inline
-  def console_=(x: Console_): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
+  inline def console_=(x: Console_): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
   
   /**
     * This contains the non-native `XMLHttpRequest` object, which you can use if you want to route network requests
@@ -48,8 +47,7 @@ object global {
   @JSGlobal("require")
   @js.native
   def require: NodeRequire = js.native
-  @scala.inline
-  def require_=(x: NodeRequire): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
+  inline def require_=(x: NodeRequire): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
   
   /**
     * Console polyfill

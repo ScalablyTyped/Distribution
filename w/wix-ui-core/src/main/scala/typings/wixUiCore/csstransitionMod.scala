@@ -10,6 +10,5 @@ object csstransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

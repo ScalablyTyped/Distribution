@@ -13,19 +13,15 @@ trait StatusBar extends StObject {
 }
 object StatusBar {
   
-  @scala.inline
-  def apply(add: Align => Unit, init: () => Unit): StatusBar = {
+  inline def apply(add: Align => Unit, init: () => Unit): StatusBar = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), init = js.Any.fromFunction0(init))
     __obj.asInstanceOf[StatusBar]
   }
   
-  @scala.inline
-  implicit class StatusBarMutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
+  extension [Self <: StatusBar](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Align => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Align => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
   }
 }

@@ -42,8 +42,7 @@ object Ocr {
     @JSGlobal("Windows.Media.Ocr.OcrEngine.availableRecognizerLanguages")
     @js.native
     def availableRecognizerLanguages: IVectorView[Language] = js.native
-    @scala.inline
-    def availableRecognizerLanguages_=(x: IVectorView[Language]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableRecognizerLanguages")(x.asInstanceOf[js.Any])
+    inline def availableRecognizerLanguages_=(x: IVectorView[Language]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableRecognizerLanguages")(x.asInstanceOf[js.Any])
     
     /**
       * Returns true if a specified language can be resolved to any of the available OCR languages. See language matching for a further explanation of language resolving.
@@ -51,16 +50,14 @@ object Ocr {
       * @return TRUE, if the specified language can be resolved to any of the available OCR languages; otherwise, FALSE.
       */
     /* static member */
-    @scala.inline
-    def isLanguageSupported(language: Language): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLanguageSupported")(language.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLanguageSupported(language: Language): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLanguageSupported")(language.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Gets the maximum image pixel dimensions supported by the OCR engine. */
     /* static member */
     @JSGlobal("Windows.Media.Ocr.OcrEngine.maxImageDimension")
     @js.native
     def maxImageDimension: Double = js.native
-    @scala.inline
-    def maxImageDimension_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxImageDimension")(x.asInstanceOf[js.Any])
+    inline def maxImageDimension_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxImageDimension")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a new instance of the OcrEngine class.
@@ -68,16 +65,14 @@ object Ocr {
       * @return If the specified language can be resolved to any of the OCR languages available on the device, returns new instance of OcrEngine class, otherwise returns null. See language matching for a further explanation of language resolving.
       */
     /* static member */
-    @scala.inline
-    def tryCreateFromLanguage(language: Language): typings.winrtUwp.Windows.Media.Ocr.OcrEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCreateFromLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Ocr.OcrEngine]
+    inline def tryCreateFromLanguage(language: Language): typings.winrtUwp.Windows.Media.Ocr.OcrEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCreateFromLanguage")(language.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Media.Ocr.OcrEngine]
     
     /**
       * Creates a new instance of the OcrEngine class.
       * @return If any language from GlobalizationPreferences.Languages can be resolved to any of the available OCR languages returns new instance of OcrEngine class, otherwise returns null.
       */
     /* static member */
-    @scala.inline
-    def tryCreateFromUserProfileLanguages(): typings.winrtUwp.Windows.Media.Ocr.OcrEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCreateFromUserProfileLanguages")().asInstanceOf[typings.winrtUwp.Windows.Media.Ocr.OcrEngine]
+    inline def tryCreateFromUserProfileLanguages(): typings.winrtUwp.Windows.Media.Ocr.OcrEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCreateFromUserProfileLanguages")().asInstanceOf[typings.winrtUwp.Windows.Media.Ocr.OcrEngine]
   }
   
   /** Represents a single line of text recognized by the OCR engine and returned as part of the OcrResult . */

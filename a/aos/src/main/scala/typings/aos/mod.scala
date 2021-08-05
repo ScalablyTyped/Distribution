@@ -60,11 +60,9 @@ object mod extends Shortcut {
   trait AosEventType extends StObject
   object AosEventType {
     
-    @scala.inline
-    def aosColonin: typings.aos.aosStrings.aosColonin = "aos:in".asInstanceOf[typings.aos.aosStrings.aosColonin]
+    inline def aosColonin: typings.aos.aosStrings.aosColonin = "aos:in".asInstanceOf[typings.aos.aosStrings.aosColonin]
     
-    @scala.inline
-    def aosColonout: typings.aos.aosStrings.aosColonout = "aos:out".asInstanceOf[typings.aos.aosStrings.aosColonout]
+    inline def aosColonout: typings.aos.aosStrings.aosColonout = "aos:out".asInstanceOf[typings.aos.aosStrings.aosColonout]
   }
   
   trait AosOptions extends StObject {
@@ -149,107 +147,74 @@ object mod extends Shortcut {
   }
   object AosOptions {
     
-    @scala.inline
-    def apply(): AosOptions = {
+    inline def apply(): AosOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AosOptions]
     }
     
-    @scala.inline
-    implicit class AosOptionsMutableBuilder[Self <: AosOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AosOptions](x: Self) {
       
-      @scala.inline
-      def setAnchorPlacement(value: anchorPlacementOptions): Self = StObject.set(x, "anchorPlacement", value.asInstanceOf[js.Any])
+      inline def setAnchorPlacement(value: anchorPlacementOptions): Self = StObject.set(x, "anchorPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorPlacementUndefined: Self = StObject.set(x, "anchorPlacement", js.undefined)
+      inline def setAnchorPlacementUndefined: Self = StObject.set(x, "anchorPlacement", js.undefined)
       
-      @scala.inline
-      def setAnimatedClassName(value: String): Self = StObject.set(x, "animatedClassName", value.asInstanceOf[js.Any])
+      inline def setAnimatedClassName(value: String): Self = StObject.set(x, "animatedClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedClassNameUndefined: Self = StObject.set(x, "animatedClassName", js.undefined)
+      inline def setAnimatedClassNameUndefined: Self = StObject.set(x, "animatedClassName", js.undefined)
       
-      @scala.inline
-      def setDebounceDelay(value: Double): Self = StObject.set(x, "debounceDelay", value.asInstanceOf[js.Any])
+      inline def setDebounceDelay(value: Double): Self = StObject.set(x, "debounceDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceDelayUndefined: Self = StObject.set(x, "debounceDelay", js.undefined)
+      inline def setDebounceDelayUndefined: Self = StObject.set(x, "debounceDelay", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDisable(value: phone | tablet | mobile | Boolean | js.Function0[Boolean]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+      inline def setDisable(value: phone | tablet | mobile | Boolean | js.Function0[Boolean]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFunction0(value: () => Boolean): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisableFunction0(value: () => Boolean): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableMutationObserver(value: Boolean): Self = StObject.set(x, "disableMutationObserver", value.asInstanceOf[js.Any])
+      inline def setDisableMutationObserver(value: Boolean): Self = StObject.set(x, "disableMutationObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableMutationObserverUndefined: Self = StObject.set(x, "disableMutationObserver", js.undefined)
+      inline def setDisableMutationObserverUndefined: Self = StObject.set(x, "disableMutationObserver", js.undefined)
       
-      @scala.inline
-      def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+      inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: easingOptions): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: easingOptions): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setInitClassName(value: String): Self = StObject.set(x, "initClassName", value.asInstanceOf[js.Any])
+      inline def setInitClassName(value: String): Self = StObject.set(x, "initClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitClassNameUndefined: Self = StObject.set(x, "initClassName", js.undefined)
+      inline def setInitClassNameUndefined: Self = StObject.set(x, "initClassName", js.undefined)
       
-      @scala.inline
-      def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+      inline def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+      inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+      inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
       
-      @scala.inline
-      def setStartEvent(value: String): Self = StObject.set(x, "startEvent", value.asInstanceOf[js.Any])
+      inline def setStartEvent(value: String): Self = StObject.set(x, "startEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartEventUndefined: Self = StObject.set(x, "startEvent", js.undefined)
+      inline def setStartEventUndefined: Self = StObject.set(x, "startEvent", js.undefined)
       
-      @scala.inline
-      def setThrottleDelay(value: Double): Self = StObject.set(x, "throttleDelay", value.asInstanceOf[js.Any])
+      inline def setThrottleDelay(value: Double): Self = StObject.set(x, "throttleDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleDelayUndefined: Self = StObject.set(x, "throttleDelay", js.undefined)
+      inline def setThrottleDelayUndefined: Self = StObject.set(x, "throttleDelay", js.undefined)
       
-      @scala.inline
-      def setUseClassNames(value: Boolean): Self = StObject.set(x, "useClassNames", value.asInstanceOf[js.Any])
+      inline def setUseClassNames(value: Boolean): Self = StObject.set(x, "useClassNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClassNamesUndefined: Self = StObject.set(x, "useClassNames", js.undefined)
+      inline def setUseClassNamesUndefined: Self = StObject.set(x, "useClassNames", js.undefined)
     }
   }
   
@@ -272,32 +237,23 @@ object mod extends Shortcut {
   trait anchorPlacementOptions extends StObject
   object anchorPlacementOptions {
     
-    @scala.inline
-    def `bottom-bottom`: typings.aos.aosStrings.`bottom-bottom` = "bottom-bottom".asInstanceOf[typings.aos.aosStrings.`bottom-bottom`]
+    inline def `bottom-bottom`: typings.aos.aosStrings.`bottom-bottom` = "bottom-bottom".asInstanceOf[typings.aos.aosStrings.`bottom-bottom`]
     
-    @scala.inline
-    def `bottom-center`: typings.aos.aosStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.aos.aosStrings.`bottom-center`]
+    inline def `bottom-center`: typings.aos.aosStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.aos.aosStrings.`bottom-center`]
     
-    @scala.inline
-    def `bottom-top`: typings.aos.aosStrings.`bottom-top` = "bottom-top".asInstanceOf[typings.aos.aosStrings.`bottom-top`]
+    inline def `bottom-top`: typings.aos.aosStrings.`bottom-top` = "bottom-top".asInstanceOf[typings.aos.aosStrings.`bottom-top`]
     
-    @scala.inline
-    def `center-bottom`: typings.aos.aosStrings.`center-bottom` = "center-bottom".asInstanceOf[typings.aos.aosStrings.`center-bottom`]
+    inline def `center-bottom`: typings.aos.aosStrings.`center-bottom` = "center-bottom".asInstanceOf[typings.aos.aosStrings.`center-bottom`]
     
-    @scala.inline
-    def `center-center`: typings.aos.aosStrings.`center-center` = "center-center".asInstanceOf[typings.aos.aosStrings.`center-center`]
+    inline def `center-center`: typings.aos.aosStrings.`center-center` = "center-center".asInstanceOf[typings.aos.aosStrings.`center-center`]
     
-    @scala.inline
-    def `center-top`: typings.aos.aosStrings.`center-top` = "center-top".asInstanceOf[typings.aos.aosStrings.`center-top`]
+    inline def `center-top`: typings.aos.aosStrings.`center-top` = "center-top".asInstanceOf[typings.aos.aosStrings.`center-top`]
     
-    @scala.inline
-    def `top-bottom`: typings.aos.aosStrings.`top-bottom` = "top-bottom".asInstanceOf[typings.aos.aosStrings.`top-bottom`]
+    inline def `top-bottom`: typings.aos.aosStrings.`top-bottom` = "top-bottom".asInstanceOf[typings.aos.aosStrings.`top-bottom`]
     
-    @scala.inline
-    def `top-center`: typings.aos.aosStrings.`top-center` = "top-center".asInstanceOf[typings.aos.aosStrings.`top-center`]
+    inline def `top-center`: typings.aos.aosStrings.`top-center` = "top-center".asInstanceOf[typings.aos.aosStrings.`top-center`]
     
-    @scala.inline
-    def `top-top`: typings.aos.aosStrings.`top-top` = "top-top".asInstanceOf[typings.aos.aosStrings.`top-top`]
+    inline def `top-top`: typings.aos.aosStrings.`top-top` = "top-top".asInstanceOf[typings.aos.aosStrings.`top-top`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -325,65 +281,45 @@ object mod extends Shortcut {
   trait easingOptions extends StObject
   object easingOptions {
     
-    @scala.inline
-    def ease: typings.aos.aosStrings.ease = "ease".asInstanceOf[typings.aos.aosStrings.ease]
+    inline def ease: typings.aos.aosStrings.ease = "ease".asInstanceOf[typings.aos.aosStrings.ease]
     
-    @scala.inline
-    def `ease-in`: typings.aos.aosStrings.`ease-in` = "ease-in".asInstanceOf[typings.aos.aosStrings.`ease-in`]
+    inline def `ease-in`: typings.aos.aosStrings.`ease-in` = "ease-in".asInstanceOf[typings.aos.aosStrings.`ease-in`]
     
-    @scala.inline
-    def `ease-in-back`: typings.aos.aosStrings.`ease-in-back` = "ease-in-back".asInstanceOf[typings.aos.aosStrings.`ease-in-back`]
+    inline def `ease-in-back`: typings.aos.aosStrings.`ease-in-back` = "ease-in-back".asInstanceOf[typings.aos.aosStrings.`ease-in-back`]
     
-    @scala.inline
-    def `ease-in-cubic`: typings.aos.aosStrings.`ease-in-cubic` = "ease-in-cubic".asInstanceOf[typings.aos.aosStrings.`ease-in-cubic`]
+    inline def `ease-in-cubic`: typings.aos.aosStrings.`ease-in-cubic` = "ease-in-cubic".asInstanceOf[typings.aos.aosStrings.`ease-in-cubic`]
     
-    @scala.inline
-    def `ease-in-out`: typings.aos.aosStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.aos.aosStrings.`ease-in-out`]
+    inline def `ease-in-out`: typings.aos.aosStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.aos.aosStrings.`ease-in-out`]
     
-    @scala.inline
-    def `ease-in-out-back`: typings.aos.aosStrings.`ease-in-out-back` = "ease-in-out-back".asInstanceOf[typings.aos.aosStrings.`ease-in-out-back`]
+    inline def `ease-in-out-back`: typings.aos.aosStrings.`ease-in-out-back` = "ease-in-out-back".asInstanceOf[typings.aos.aosStrings.`ease-in-out-back`]
     
-    @scala.inline
-    def `ease-in-out-cubic`: typings.aos.aosStrings.`ease-in-out-cubic` = "ease-in-out-cubic".asInstanceOf[typings.aos.aosStrings.`ease-in-out-cubic`]
+    inline def `ease-in-out-cubic`: typings.aos.aosStrings.`ease-in-out-cubic` = "ease-in-out-cubic".asInstanceOf[typings.aos.aosStrings.`ease-in-out-cubic`]
     
-    @scala.inline
-    def `ease-in-out-quad`: typings.aos.aosStrings.`ease-in-out-quad` = "ease-in-out-quad".asInstanceOf[typings.aos.aosStrings.`ease-in-out-quad`]
+    inline def `ease-in-out-quad`: typings.aos.aosStrings.`ease-in-out-quad` = "ease-in-out-quad".asInstanceOf[typings.aos.aosStrings.`ease-in-out-quad`]
     
-    @scala.inline
-    def `ease-in-out-quart`: typings.aos.aosStrings.`ease-in-out-quart` = "ease-in-out-quart".asInstanceOf[typings.aos.aosStrings.`ease-in-out-quart`]
+    inline def `ease-in-out-quart`: typings.aos.aosStrings.`ease-in-out-quart` = "ease-in-out-quart".asInstanceOf[typings.aos.aosStrings.`ease-in-out-quart`]
     
-    @scala.inline
-    def `ease-in-out-sine`: typings.aos.aosStrings.`ease-in-out-sine` = "ease-in-out-sine".asInstanceOf[typings.aos.aosStrings.`ease-in-out-sine`]
+    inline def `ease-in-out-sine`: typings.aos.aosStrings.`ease-in-out-sine` = "ease-in-out-sine".asInstanceOf[typings.aos.aosStrings.`ease-in-out-sine`]
     
-    @scala.inline
-    def `ease-in-quad`: typings.aos.aosStrings.`ease-in-quad` = "ease-in-quad".asInstanceOf[typings.aos.aosStrings.`ease-in-quad`]
+    inline def `ease-in-quad`: typings.aos.aosStrings.`ease-in-quad` = "ease-in-quad".asInstanceOf[typings.aos.aosStrings.`ease-in-quad`]
     
-    @scala.inline
-    def `ease-in-quart`: typings.aos.aosStrings.`ease-in-quart` = "ease-in-quart".asInstanceOf[typings.aos.aosStrings.`ease-in-quart`]
+    inline def `ease-in-quart`: typings.aos.aosStrings.`ease-in-quart` = "ease-in-quart".asInstanceOf[typings.aos.aosStrings.`ease-in-quart`]
     
-    @scala.inline
-    def `ease-in-sine`: typings.aos.aosStrings.`ease-in-sine` = "ease-in-sine".asInstanceOf[typings.aos.aosStrings.`ease-in-sine`]
+    inline def `ease-in-sine`: typings.aos.aosStrings.`ease-in-sine` = "ease-in-sine".asInstanceOf[typings.aos.aosStrings.`ease-in-sine`]
     
-    @scala.inline
-    def `ease-out`: typings.aos.aosStrings.`ease-out` = "ease-out".asInstanceOf[typings.aos.aosStrings.`ease-out`]
+    inline def `ease-out`: typings.aos.aosStrings.`ease-out` = "ease-out".asInstanceOf[typings.aos.aosStrings.`ease-out`]
     
-    @scala.inline
-    def `ease-out-back`: typings.aos.aosStrings.`ease-out-back` = "ease-out-back".asInstanceOf[typings.aos.aosStrings.`ease-out-back`]
+    inline def `ease-out-back`: typings.aos.aosStrings.`ease-out-back` = "ease-out-back".asInstanceOf[typings.aos.aosStrings.`ease-out-back`]
     
-    @scala.inline
-    def `ease-out-cubic`: typings.aos.aosStrings.`ease-out-cubic` = "ease-out-cubic".asInstanceOf[typings.aos.aosStrings.`ease-out-cubic`]
+    inline def `ease-out-cubic`: typings.aos.aosStrings.`ease-out-cubic` = "ease-out-cubic".asInstanceOf[typings.aos.aosStrings.`ease-out-cubic`]
     
-    @scala.inline
-    def `ease-out-quad`: typings.aos.aosStrings.`ease-out-quad` = "ease-out-quad".asInstanceOf[typings.aos.aosStrings.`ease-out-quad`]
+    inline def `ease-out-quad`: typings.aos.aosStrings.`ease-out-quad` = "ease-out-quad".asInstanceOf[typings.aos.aosStrings.`ease-out-quad`]
     
-    @scala.inline
-    def `ease-out-quart`: typings.aos.aosStrings.`ease-out-quart` = "ease-out-quart".asInstanceOf[typings.aos.aosStrings.`ease-out-quart`]
+    inline def `ease-out-quart`: typings.aos.aosStrings.`ease-out-quart` = "ease-out-quart".asInstanceOf[typings.aos.aosStrings.`ease-out-quart`]
     
-    @scala.inline
-    def `ease-out-sine`: typings.aos.aosStrings.`ease-out-sine` = "ease-out-sine".asInstanceOf[typings.aos.aosStrings.`ease-out-sine`]
+    inline def `ease-out-sine`: typings.aos.aosStrings.`ease-out-sine` = "ease-out-sine".asInstanceOf[typings.aos.aosStrings.`ease-out-sine`]
     
-    @scala.inline
-    def linear: typings.aos.aosStrings.linear = "linear".asInstanceOf[typings.aos.aosStrings.linear]
+    inline def linear: typings.aos.aosStrings.linear = "linear".asInstanceOf[typings.aos.aosStrings.linear]
   }
   
   object global {

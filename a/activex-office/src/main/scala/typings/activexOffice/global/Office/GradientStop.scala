@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.GradientStop")
 @js.native
-class GradientStop protected ()
+/* private */ class GradientStop ()
   extends StObject
      with typings.activexOffice.Office.GradientStop {
   
@@ -19,7 +19,7 @@ class GradientStop protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.GradientStop_typekey")
   var OfficeDotGradientStop_typekey: typings.activexOffice.Office.GradientStop = js.native
   

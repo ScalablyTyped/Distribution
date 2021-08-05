@@ -13,16 +13,13 @@ trait DescribeLedgerRequest extends StObject {
 }
 object DescribeLedgerRequest {
   
-  @scala.inline
-  def apply(Name: LedgerName): DescribeLedgerRequest = {
+  inline def apply(Name: LedgerName): DescribeLedgerRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLedgerRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLedgerRequestMutableBuilder[Self <: DescribeLedgerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLedgerRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

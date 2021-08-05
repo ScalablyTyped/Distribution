@@ -30,8 +30,7 @@ trait IExtJSCore extends StObject {
 }
 object IExtJSCore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Ext: () => js.Any,
     clickCQ: (String, js.Any, js.Function) => js.Any,
     clickComponentQuery: (String, js.Any, js.Function) => js.Any,
@@ -46,34 +45,24 @@ object IExtJSCore {
     __obj.asInstanceOf[IExtJSCore]
   }
   
-  @scala.inline
-  implicit class IExtJSCoreMutableBuilder[Self <: IExtJSCore] (val x: Self) extends AnyVal {
+  extension [Self <: IExtJSCore](x: Self) {
     
-    @scala.inline
-    def setClickCQ(value: (String, js.Any, js.Function) => js.Any): Self = StObject.set(x, "clickCQ", js.Any.fromFunction3(value))
+    inline def setClickCQ(value: (String, js.Any, js.Function) => js.Any): Self = StObject.set(x, "clickCQ", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setClickComponentQuery(value: (String, js.Any, js.Function) => js.Any): Self = StObject.set(x, "clickComponentQuery", js.Any.fromFunction3(value))
+    inline def setClickComponentQuery(value: (String, js.Any, js.Function) => js.Any): Self = StObject.set(x, "clickComponentQuery", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCompositeQuery(value: (String, js.Any, Boolean) => js.Array[HTMLElement]): Self = StObject.set(x, "compositeQuery", js.Any.fromFunction3(value))
+    inline def setCompositeQuery(value: (String, js.Any, Boolean) => js.Array[HTMLElement]): Self = StObject.set(x, "compositeQuery", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCq(value: String => js.Any): Self = StObject.set(x, "cq", js.Any.fromFunction1(value))
+    inline def setCq(value: String => js.Any): Self = StObject.set(x, "cq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCq1(value: String => js.Any): Self = StObject.set(x, "cq1", js.Any.fromFunction1(value))
+    inline def setCq1(value: String => js.Any): Self = StObject.set(x, "cq1", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExt(value: () => js.Any): Self = StObject.set(x, "Ext", js.Any.fromFunction0(value))
+    inline def setExt(value: () => js.Any): Self = StObject.set(x, "Ext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExt(value: () => js.Any): Self = StObject.set(x, "getExt", js.Any.fromFunction0(value))
+    inline def setGetExt(value: () => js.Any): Self = StObject.set(x, "getExt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKnownBugIn(value: (String, js.Function, String) => js.Any): Self = StObject.set(x, "knownBugIn", js.Any.fromFunction3(value))
+    inline def setKnownBugIn(value: (String, js.Function, String) => js.Any): Self = StObject.set(x, "knownBugIn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRequireOk(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "requireOk", js.Any.fromFunction1(value))
+    inline def setRequireOk(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "requireOk", js.Any.fromFunction1(value))
   }
 }

@@ -20,31 +20,23 @@ trait OptimizationActivity extends StObject {
 }
 object OptimizationActivity {
   
-  @scala.inline
-  def apply(): OptimizationActivity = {
+  inline def apply(): OptimizationActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptimizationActivity]
   }
   
-  @scala.inline
-  implicit class OptimizationActivityMutableBuilder[Self <: OptimizationActivity] (val x: Self) extends AnyVal {
+  extension [Self <: OptimizationActivity](x: Self) {
     
-    @scala.inline
-    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "floodlightActivityIdDimensionValue", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityIdDimensionValue(value: DimensionValue): Self = StObject.set(x, "floodlightActivityIdDimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdDimensionValueUndefined: Self = StObject.set(x, "floodlightActivityIdDimensionValue", js.undefined)
+    inline def setFloodlightActivityIdDimensionValueUndefined: Self = StObject.set(x, "floodlightActivityIdDimensionValue", js.undefined)
     
-    @scala.inline
-    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
+    inline def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

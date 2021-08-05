@@ -12,19 +12,15 @@ trait ReposDeleteResponseData extends StObject {
 }
 object ReposDeleteResponseData {
   
-  @scala.inline
-  def apply(documentation_url: String, message: String): ReposDeleteResponseData = {
+  inline def apply(documentation_url: String, message: String): ReposDeleteResponseData = {
     val __obj = js.Dynamic.literal(documentation_url = documentation_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposDeleteResponseData]
   }
   
-  @scala.inline
-  implicit class ReposDeleteResponseDataMutableBuilder[Self <: ReposDeleteResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeleteResponseData](x: Self) {
     
-    @scala.inline
-    def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
+    inline def setDocumentation_url(value: String): Self = StObject.set(x, "documentation_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

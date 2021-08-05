@@ -16,6 +16,5 @@ object contextualMenuCnstylesMod {
   @js.native
   val CONTEXTUAL_MENU_ITEM_HEIGHT: /* 36 */ Double = js.native
   
-  @scala.inline
-  def getMenuItemStyles(theme: ITheme): IMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IMenuItemStyles]
+  inline def getMenuItemStyles(theme: ITheme): IMenuItemStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuItemStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IMenuItemStyles]
 }

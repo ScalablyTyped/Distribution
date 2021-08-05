@@ -132,8 +132,7 @@ trait FollowedItem
 }
 object FollowedItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -180,115 +179,78 @@ object FollowedItem {
     __obj.asInstanceOf[FollowedItem]
   }
   
-  @scala.inline
-  implicit class FollowedItemMutableBuilder[Self <: FollowedItem] (val x: Self) extends AnyVal {
+  extension [Self <: FollowedItem](x: Self) {
     
-    @scala.inline
-    def setGet_data(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_data", js.Any.fromFunction0(value))
+    inline def setGet_data(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_data", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fileType(value: () => String): Self = StObject.set(x, "get_fileType", js.Any.fromFunction0(value))
+    inline def setGet_fileType(value: () => String): Self = StObject.set(x, "get_fileType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_fileTypeProgid(value: () => String): Self = StObject.set(x, "get_fileTypeProgid", js.Any.fromFunction0(value))
+    inline def setGet_fileTypeProgid(value: () => String): Self = StObject.set(x, "get_fileTypeProgid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_flags(value: () => String): Self = StObject.set(x, "get_flags", js.Any.fromFunction0(value))
+    inline def setGet_flags(value: () => String): Self = StObject.set(x, "get_flags", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hasFeed(value: () => Boolean): Self = StObject.set(x, "get_hasFeed", js.Any.fromFunction0(value))
+    inline def setGet_hasFeed(value: () => Boolean): Self = StObject.set(x, "get_hasFeed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hidden(value: () => Boolean): Self = StObject.set(x, "get_hidden", js.Any.fromFunction0(value))
+    inline def setGet_hidden(value: () => Boolean): Self = StObject.set(x, "get_hidden", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_iconUrl(value: () => String): Self = StObject.set(x, "get_iconUrl", js.Any.fromFunction0(value))
+    inline def setGet_iconUrl(value: () => String): Self = StObject.set(x, "get_iconUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_itemId(value: () => Double): Self = StObject.set(x, "get_itemId", js.Any.fromFunction0(value))
+    inline def setGet_itemId(value: () => Double): Self = StObject.set(x, "get_itemId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_itemType(value: () => FollowedItemType): Self = StObject.set(x, "get_itemType", js.Any.fromFunction0(value))
+    inline def setGet_itemType(value: () => FollowedItemType): Self = StObject.set(x, "get_itemType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_listId(value: () => String): Self = StObject.set(x, "get_listId", js.Any.fromFunction0(value))
+    inline def setGet_listId(value: () => String): Self = StObject.set(x, "get_listId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_parentUrl(value: () => String): Self = StObject.set(x, "get_parentUrl", js.Any.fromFunction0(value))
+    inline def setGet_parentUrl(value: () => String): Self = StObject.set(x, "get_parentUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_serverUrlProgid(value: () => String): Self = StObject.set(x, "get_serverUrlProgid", js.Any.fromFunction0(value))
+    inline def setGet_serverUrlProgid(value: () => String): Self = StObject.set(x, "get_serverUrlProgid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_siteId(value: () => String): Self = StObject.set(x, "get_siteId", js.Any.fromFunction0(value))
+    inline def setGet_siteId(value: () => String): Self = StObject.set(x, "get_siteId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_subtype(value: () => Double): Self = StObject.set(x, "get_subtype", js.Any.fromFunction0(value))
+    inline def setGet_subtype(value: () => Double): Self = StObject.set(x, "get_subtype", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_uniqueId(value: () => Guid): Self = StObject.set(x, "get_uniqueId", js.Any.fromFunction0(value))
+    inline def setGet_uniqueId(value: () => Guid): Self = StObject.set(x, "get_uniqueId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
+    inline def setGet_url(value: () => String): Self = StObject.set(x, "get_url", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_webId(value: () => Guid): Self = StObject.set(x, "get_webId", js.Any.fromFunction0(value))
+    inline def setGet_webId(value: () => Guid): Self = StObject.set(x, "get_webId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_data(value: StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "set_data", js.Any.fromFunction1(value))
+    inline def setSet_data(value: StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "set_data", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fileType(value: String => String): Self = StObject.set(x, "set_fileType", js.Any.fromFunction1(value))
+    inline def setSet_fileType(value: String => String): Self = StObject.set(x, "set_fileType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_fileTypeProgid(value: String => String): Self = StObject.set(x, "set_fileTypeProgid", js.Any.fromFunction1(value))
+    inline def setSet_fileTypeProgid(value: String => String): Self = StObject.set(x, "set_fileTypeProgid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_flags(value: String => String): Self = StObject.set(x, "set_flags", js.Any.fromFunction1(value))
+    inline def setSet_flags(value: String => String): Self = StObject.set(x, "set_flags", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_hasFeed(value: Boolean => Boolean): Self = StObject.set(x, "set_hasFeed", js.Any.fromFunction1(value))
+    inline def setSet_hasFeed(value: Boolean => Boolean): Self = StObject.set(x, "set_hasFeed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_hidden(value: Boolean => Boolean): Self = StObject.set(x, "set_hidden", js.Any.fromFunction1(value))
+    inline def setSet_hidden(value: Boolean => Boolean): Self = StObject.set(x, "set_hidden", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_iconUrl(value: String => String): Self = StObject.set(x, "set_iconUrl", js.Any.fromFunction1(value))
+    inline def setSet_iconUrl(value: String => String): Self = StObject.set(x, "set_iconUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_itemId(value: Double => Double): Self = StObject.set(x, "set_itemId", js.Any.fromFunction1(value))
+    inline def setSet_itemId(value: Double => Double): Self = StObject.set(x, "set_itemId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_itemType(value: FollowedItemType => FollowedItemType): Self = StObject.set(x, "set_itemType", js.Any.fromFunction1(value))
+    inline def setSet_itemType(value: FollowedItemType => FollowedItemType): Self = StObject.set(x, "set_itemType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_listId(value: String => String): Self = StObject.set(x, "set_listId", js.Any.fromFunction1(value))
+    inline def setSet_listId(value: String => String): Self = StObject.set(x, "set_listId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_parentUrl(value: String => String): Self = StObject.set(x, "set_parentUrl", js.Any.fromFunction1(value))
+    inline def setSet_parentUrl(value: String => String): Self = StObject.set(x, "set_parentUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_serverUrlProgid(value: String => String): Self = StObject.set(x, "set_serverUrlProgid", js.Any.fromFunction1(value))
+    inline def setSet_serverUrlProgid(value: String => String): Self = StObject.set(x, "set_serverUrlProgid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_siteId(value: String => String): Self = StObject.set(x, "set_siteId", js.Any.fromFunction1(value))
+    inline def setSet_siteId(value: String => String): Self = StObject.set(x, "set_siteId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_subtype(value: Double => Double): Self = StObject.set(x, "set_subtype", js.Any.fromFunction1(value))
+    inline def setSet_subtype(value: Double => Double): Self = StObject.set(x, "set_subtype", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => String): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => String): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_uniqueId(value: Guid => Guid): Self = StObject.set(x, "set_uniqueId", js.Any.fromFunction1(value))
+    inline def setSet_uniqueId(value: Guid => Guid): Self = StObject.set(x, "set_uniqueId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_url(value: String => String): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
+    inline def setSet_url(value: String => String): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_webId(value: Guid => js.Any): Self = StObject.set(x, "set_webId", js.Any.fromFunction1(value))
+    inline def setSet_webId(value: Guid => js.Any): Self = StObject.set(x, "set_webId", js.Any.fromFunction1(value))
   }
 }

@@ -22,9 +22,9 @@ object itemSlidingMod {
     extends StObject
        with ComponentInterface {
     
-    var calculateOptsWidth: js.Any = js.native
+    /* private */ var calculateOptsWidth: js.Any = js.native
     
-    var canStart: js.Any = js.native
+    /* private */ var canStart: js.Any = js.native
     
     /**
       * Close the sliding item. Items can also be closed from the [List](../list).
@@ -51,7 +51,7 @@ object itemSlidingMod {
     
     var el: HTMLIonItemSlidingElement = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
     /**
       * Get the amount the item is open in pixels.
@@ -64,7 +64,7 @@ object itemSlidingMod {
       * @param side This side of the options to get. If a side is not provided it will
       * return the first one available.
       */
-    var getOptions: js.Any = js.native
+    /* private */ var getOptions: js.Any = js.native
     
     /**
       * Get the ratio of the open amount of the item compared to the width of the options.
@@ -75,24 +75,24 @@ object itemSlidingMod {
       */
     def getSlidingRatio(): js.Promise[Double] = js.native
     
-    var getSlidingRatioSync: js.Any = js.native
+    /* private */ var getSlidingRatioSync: js.Any = js.native
     
-    var initialOpenAmount: js.Any = js.native
+    /* private */ var initialOpenAmount: js.Any = js.native
     
     /**
       * Emitted when the sliding position changes.
       */
     var ionDrag: EventEmitter[js.Any] = js.native
     
-    var item: js.Any = js.native
+    /* private */ var item: js.Any = js.native
     
-    var leftOptions: js.Any = js.native
+    /* private */ var leftOptions: js.Any = js.native
     
-    var onEnd: js.Any = js.native
+    /* private */ var onEnd: js.Any = js.native
     
-    var onMove: js.Any = js.native
+    /* private */ var onMove: js.Any = js.native
     
-    var onStart: js.Any = js.native
+    /* private */ var onStart: js.Any = js.native
     
     /**
       * Open the sliding item.
@@ -102,28 +102,28 @@ object itemSlidingMod {
     def open(): js.Promise[Unit] = js.native
     def open(side: Side): js.Promise[Unit] = js.native
     
-    var openAmount: js.Any = js.native
+    /* private */ var openAmount: js.Any = js.native
     
-    var optsDirty: js.Any = js.native
+    /* private */ var optsDirty: js.Any = js.native
     
-    var optsWidthLeftSide: js.Any = js.native
+    /* private */ var optsWidthLeftSide: js.Any = js.native
     
-    var optsWidthRightSide: js.Any = js.native
+    /* private */ var optsWidthRightSide: js.Any = js.native
     
     @JSName("render")
     def render_MItemSliding(): js.Any = js.native
     
-    var rightOptions: js.Any = js.native
+    /* private */ var rightOptions: js.Any = js.native
     
-    var setOpenAmount: js.Any = js.native
+    /* private */ var setOpenAmount: js.Any = js.native
     
-    var sides: js.Any = js.native
+    /* private */ var sides: js.Any = js.native
     
     var state: SlidingState = js.native
     
-    var tmr: js.Any = js.native
+    /* private */ var tmr: js.Any = js.native
     
-    var updateOptions: js.Any = js.native
+    /* private */ var updateOptions: js.Any = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -137,22 +137,16 @@ object itemSlidingMod {
   trait SlidingState extends StObject
   object SlidingState {
     
-    @scala.inline
-    def Disabled: `2` = 2.asInstanceOf[`2`]
+    inline def Disabled: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def Enabled: `4` = 4.asInstanceOf[`4`]
+    inline def Enabled: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def End: `8` = 8.asInstanceOf[`8`]
+    inline def End: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def Start: `16` = 16.asInstanceOf[`16`]
+    inline def Start: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def SwipeEnd: `32` = 32.asInstanceOf[`32`]
+    inline def SwipeEnd: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def SwipeStart: `64` = 64.asInstanceOf[`64`]
+    inline def SwipeStart: `64` = 64.asInstanceOf[`64`]
   }
 }

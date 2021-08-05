@@ -13,16 +13,13 @@ trait PutBlockPublicAccessConfigurationInput extends StObject {
 }
 object PutBlockPublicAccessConfigurationInput {
   
-  @scala.inline
-  def apply(BlockPublicAccessConfiguration: BlockPublicAccessConfiguration): PutBlockPublicAccessConfigurationInput = {
+  inline def apply(BlockPublicAccessConfiguration: BlockPublicAccessConfiguration): PutBlockPublicAccessConfigurationInput = {
     val __obj = js.Dynamic.literal(BlockPublicAccessConfiguration = BlockPublicAccessConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBlockPublicAccessConfigurationInput]
   }
   
-  @scala.inline
-  implicit class PutBlockPublicAccessConfigurationInputMutableBuilder[Self <: PutBlockPublicAccessConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutBlockPublicAccessConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setBlockPublicAccessConfiguration(value: BlockPublicAccessConfiguration): Self = StObject.set(x, "BlockPublicAccessConfiguration", value.asInstanceOf[js.Any])
+    inline def setBlockPublicAccessConfiguration(value: BlockPublicAccessConfiguration): Self = StObject.set(x, "BlockPublicAccessConfiguration", value.asInstanceOf[js.Any])
   }
 }

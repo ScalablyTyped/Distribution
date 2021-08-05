@@ -20,8 +20,7 @@ trait Day extends StObject {
 }
 object Day {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     day: /* repeated */ js.Any => js.Any,
     dayPeriod: /* repeated */ js.Any => js.Any,
     era: /* repeated */ js.Any => js.Any,
@@ -33,25 +32,18 @@ object Day {
     __obj.asInstanceOf[Day]
   }
   
-  @scala.inline
-  implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
+  extension [Self <: Day](x: Self) {
     
-    @scala.inline
-    def setDay(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "day", js.Any.fromFunction1(value))
+    inline def setDay(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "day", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDayPeriod(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dayPeriod", js.Any.fromFunction1(value))
+    inline def setDayPeriod(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dayPeriod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEra(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "era", js.Any.fromFunction1(value))
+    inline def setEra(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "era", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMonth(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "month", js.Any.fromFunction1(value))
+    inline def setMonth(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "month", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrdinalNumber(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ordinalNumber", js.Any.fromFunction1(value))
+    inline def setOrdinalNumber(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ordinalNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQuarter(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "quarter", js.Any.fromFunction1(value))
+    inline def setQuarter(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "quarter", js.Any.fromFunction1(value))
   }
 }

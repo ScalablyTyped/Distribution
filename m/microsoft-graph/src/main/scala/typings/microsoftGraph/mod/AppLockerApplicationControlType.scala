@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppLockerApplicationControlType extends StObject
 object AppLockerApplicationControlType {
   
-  @scala.inline
-  def auditComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps = "auditComponentsAndStoreApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps]
+  inline def auditComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps = "auditComponentsAndStoreApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.auditComponentsAndStoreApps]
   
-  @scala.inline
-  def auditComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker = "auditComponentsStoreAppsAndSmartlocker".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker]
+  inline def auditComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker = "auditComponentsStoreAppsAndSmartlocker".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.auditComponentsStoreAppsAndSmartlocker]
   
-  @scala.inline
-  def enforceComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps = "enforceComponentsAndStoreApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps]
+  inline def enforceComponentsAndStoreApps: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps = "enforceComponentsAndStoreApps".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enforceComponentsAndStoreApps]
   
-  @scala.inline
-  def enforceComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker = "enforceComponentsStoreAppsAndSmartlocker".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker]
+  inline def enforceComponentsStoreAppsAndSmartlocker: typings.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker = "enforceComponentsStoreAppsAndSmartlocker".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enforceComponentsStoreAppsAndSmartlocker]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
 }

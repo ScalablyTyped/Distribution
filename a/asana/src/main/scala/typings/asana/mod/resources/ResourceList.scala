@@ -24,8 +24,7 @@ trait ResourceList[T /* <: Resource */] extends StObject {
 }
 object ResourceList {
   
-  @scala.inline
-  def apply[T /* <: Resource */](
+  inline def apply[T /* <: Resource */](
     _dispatcher: AsanaBaseUrl,
     _response: Data[T],
     data: js.Array[T],
@@ -35,22 +34,16 @@ object ResourceList {
     __obj.asInstanceOf[ResourceList[T]]
   }
   
-  @scala.inline
-  implicit class ResourceListMutableBuilder[Self <: ResourceList[?], T /* <: Resource */] (val x: Self & ResourceList[T]) extends AnyVal {
+  extension [Self <: ResourceList[?], T /* <: Resource */](x: Self & ResourceList[T]) {
     
-    @scala.inline
-    def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPage(value: () => typings.bluebird.mod.^[ResourceList[T] | Null]): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
+    inline def setNextPage(value: () => typings.bluebird.mod.^[ResourceList[T] | Null]): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_dispatcher(value: AsanaBaseUrl): Self = StObject.set(x, "_dispatcher", value.asInstanceOf[js.Any])
+    inline def set_dispatcher(value: AsanaBaseUrl): Self = StObject.set(x, "_dispatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_response(value: Data[T]): Self = StObject.set(x, "_response", value.asInstanceOf[js.Any])
+    inline def set_response(value: Data[T]): Self = StObject.set(x, "_response", value.asInstanceOf[js.Any])
   }
 }

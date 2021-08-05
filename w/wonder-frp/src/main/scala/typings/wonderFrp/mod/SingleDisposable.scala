@@ -19,10 +19,7 @@ object SingleDisposable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderFrp.singleDisposableMod.SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.singleDisposableMod.SingleDisposable]
-  @scala.inline
-  def create(dispose: js.Function): typings.wonderFrp.singleDisposableMod.SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.singleDisposableMod.SingleDisposable]
-  @scala.inline
-  def create(dispose: IDisposable): typings.wonderFrp.singleDisposableMod.SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.singleDisposableMod.SingleDisposable]
+  inline def create(): typings.wonderFrp.singleDisposableMod.SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.singleDisposableMod.SingleDisposable]
+  inline def create(dispose: js.Function): typings.wonderFrp.singleDisposableMod.SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.singleDisposableMod.SingleDisposable]
+  inline def create(dispose: IDisposable): typings.wonderFrp.singleDisposableMod.SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.singleDisposableMod.SingleDisposable]
 }

@@ -10,6 +10,5 @@ object getUniqueIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(classImportName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(classImportName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(classImportName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(classImportName.asInstanceOf[js.Any]).asInstanceOf[String]
 }

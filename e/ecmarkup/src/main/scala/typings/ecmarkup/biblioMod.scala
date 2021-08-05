@@ -30,21 +30,17 @@ object biblioMod {
   }
   object AlgorithmBiblioEntry {
     
-    @scala.inline
-    def apply(aoid: String, referencingIds: js.Array[String]): AlgorithmBiblioEntry = {
+    inline def apply(aoid: String, referencingIds: js.Array[String]): AlgorithmBiblioEntry = {
       val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("op")
       __obj.asInstanceOf[AlgorithmBiblioEntry]
     }
     
-    @scala.inline
-    implicit class AlgorithmBiblioEntryMutableBuilder[Self <: AlgorithmBiblioEntry] (val x: Self) extends AnyVal {
+    extension [Self <: AlgorithmBiblioEntry](x: Self) {
       
-      @scala.inline
-      def setAoid(value: String): Self = StObject.set(x, "aoid", value.asInstanceOf[js.Any])
+      inline def setAoid(value: String): Self = StObject.set(x, "aoid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: op): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: op): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,15 +57,13 @@ object biblioMod {
   trait BiblioEntry extends StObject
   object BiblioEntry {
     
-    @scala.inline
-    def AlgorithmBiblioEntry(aoid: String, referencingIds: js.Array[String]): typings.ecmarkup.biblioMod.AlgorithmBiblioEntry = {
+    inline def AlgorithmBiblioEntry(aoid: String, referencingIds: js.Array[String]): typings.ecmarkup.biblioMod.AlgorithmBiblioEntry = {
       val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("op")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.AlgorithmBiblioEntry]
     }
     
-    @scala.inline
-    def ClauseBiblioEntry(
+    inline def ClauseBiblioEntry(
       aoid: String,
       id: String,
       number: String | Double,
@@ -82,8 +76,7 @@ object biblioMod {
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.ClauseBiblioEntry]
     }
     
-    @scala.inline
-    def FigureBiblioEntry(
+    inline def FigureBiblioEntry(
       id: String,
       node: HTMLElement,
       number: String | Double,
@@ -95,22 +88,19 @@ object biblioMod {
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.FigureBiblioEntry]
     }
     
-    @scala.inline
-    def ProductionBiblioEntry(name: String, referencingIds: js.Array[String]): typings.ecmarkup.biblioMod.ProductionBiblioEntry = {
+    inline def ProductionBiblioEntry(name: String, referencingIds: js.Array[String]): typings.ecmarkup.biblioMod.ProductionBiblioEntry = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("production")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.ProductionBiblioEntry]
     }
     
-    @scala.inline
-    def StepBiblioEntry(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double]): typings.ecmarkup.biblioMod.StepBiblioEntry = {
+    inline def StepBiblioEntry(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double]): typings.ecmarkup.biblioMod.StepBiblioEntry = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], stepNumbers = stepNumbers.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("step")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.StepBiblioEntry]
     }
     
-    @scala.inline
-    def TermBiblioEntry(refId: String, referencingIds: js.Array[String], term: String): typings.ecmarkup.biblioMod.TermBiblioEntry = {
+    inline def TermBiblioEntry(refId: String, referencingIds: js.Array[String], term: String): typings.ecmarkup.biblioMod.TermBiblioEntry = {
       val __obj = js.Dynamic.literal(refId = refId.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("term")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.TermBiblioEntry]
@@ -149,96 +139,67 @@ object biblioMod {
   }
   object BiblioEntryBase {
     
-    @scala.inline
-    def apply(referencingIds: js.Array[String], `type`: String): BiblioEntryBase = {
+    inline def apply(referencingIds: js.Array[String], `type`: String): BiblioEntryBase = {
       val __obj = js.Dynamic.literal(referencingIds = referencingIds.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BiblioEntryBase]
     }
     
-    @scala.inline
-    implicit class BiblioEntryBaseMutableBuilder[Self <: BiblioEntryBase] (val x: Self) extends AnyVal {
+    extension [Self <: BiblioEntryBase](x: Self) {
       
-      @scala.inline
-      def setAoid(value: String): Self = StObject.set(x, "aoid", value.asInstanceOf[js.Any])
+      inline def setAoid(value: String): Self = StObject.set(x, "aoid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAoidUndefined: Self = StObject.set(x, "aoid", js.undefined)
+      inline def setAoidUndefined: Self = StObject.set(x, "aoid", js.undefined)
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setClauseId(value: String): Self = StObject.set(x, "clauseId", value.asInstanceOf[js.Any])
+      inline def setClauseId(value: String): Self = StObject.set(x, "clauseId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClauseIdUndefined: Self = StObject.set(x, "clauseId", js.undefined)
+      inline def setClauseIdUndefined: Self = StObject.set(x, "clauseId", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setNumber(value: String | Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String | Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
       
-      @scala.inline
-      def setReferencingIds(value: js.Array[String]): Self = StObject.set(x, "referencingIds", value.asInstanceOf[js.Any])
+      inline def setReferencingIds(value: js.Array[String]): Self = StObject.set(x, "referencingIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencingIdsVarargs(value: String*): Self = StObject.set(x, "referencingIds", js.Array(value :_*))
+      inline def setReferencingIdsVarargs(value: String*): Self = StObject.set(x, "referencingIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+      inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,8 +227,7 @@ object biblioMod {
   }
   object ClauseBiblioEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aoid: String,
       id: String,
       number: String | Double,
@@ -280,26 +240,19 @@ object biblioMod {
       __obj.asInstanceOf[ClauseBiblioEntry]
     }
     
-    @scala.inline
-    implicit class ClauseBiblioEntryMutableBuilder[Self <: ClauseBiblioEntry] (val x: Self) extends AnyVal {
+    extension [Self <: ClauseBiblioEntry](x: Self) {
       
-      @scala.inline
-      def setAoid(value: String): Self = StObject.set(x, "aoid", value.asInstanceOf[js.Any])
+      inline def setAoid(value: String): Self = StObject.set(x, "aoid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String | Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String | Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleHTML(value: String): Self = StObject.set(x, "titleHTML", value.asInstanceOf[js.Any])
+      inline def setTitleHTML(value: String): Self = StObject.set(x, "titleHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: clause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: clause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,8 +274,7 @@ object biblioMod {
   }
   object FigureBiblioEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       node: HTMLElement,
       number: String | Double,
@@ -334,20 +286,15 @@ object biblioMod {
       __obj.asInstanceOf[FigureBiblioEntry]
     }
     
-    @scala.inline
-    implicit class FigureBiblioEntryMutableBuilder[Self <: FigureBiblioEntry] (val x: Self) extends AnyVal {
+    extension [Self <: FigureBiblioEntry](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String | Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String | Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: table | figure | example | note): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: table | figure | example | note): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,21 +311,17 @@ object biblioMod {
   }
   object ProductionBiblioEntry {
     
-    @scala.inline
-    def apply(name: String, referencingIds: js.Array[String]): ProductionBiblioEntry = {
+    inline def apply(name: String, referencingIds: js.Array[String]): ProductionBiblioEntry = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("production")
       __obj.asInstanceOf[ProductionBiblioEntry]
     }
     
-    @scala.inline
-    implicit class ProductionBiblioEntryMutableBuilder[Self <: ProductionBiblioEntry] (val x: Self) extends AnyVal {
+    extension [Self <: ProductionBiblioEntry](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: production): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: production): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -397,27 +340,21 @@ object biblioMod {
   }
   object StepBiblioEntry {
     
-    @scala.inline
-    def apply(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double]): StepBiblioEntry = {
+    inline def apply(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double]): StepBiblioEntry = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], stepNumbers = stepNumbers.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("step")
       __obj.asInstanceOf[StepBiblioEntry]
     }
     
-    @scala.inline
-    implicit class StepBiblioEntryMutableBuilder[Self <: StepBiblioEntry] (val x: Self) extends AnyVal {
+    extension [Self <: StepBiblioEntry](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepNumbers(value: js.Array[Double]): Self = StObject.set(x, "stepNumbers", value.asInstanceOf[js.Any])
+      inline def setStepNumbers(value: js.Array[Double]): Self = StObject.set(x, "stepNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepNumbersVarargs(value: Double*): Self = StObject.set(x, "stepNumbers", js.Array(value :_*))
+      inline def setStepNumbersVarargs(value: Double*): Self = StObject.set(x, "stepNumbers", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: step): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: step): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -437,24 +374,19 @@ object biblioMod {
   }
   object TermBiblioEntry {
     
-    @scala.inline
-    def apply(refId: String, referencingIds: js.Array[String], term: String): TermBiblioEntry = {
+    inline def apply(refId: String, referencingIds: js.Array[String], term: String): TermBiblioEntry = {
       val __obj = js.Dynamic.literal(refId = refId.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("term")
       __obj.asInstanceOf[TermBiblioEntry]
     }
     
-    @scala.inline
-    implicit class TermBiblioEntryMutableBuilder[Self <: TermBiblioEntry] (val x: Self) extends AnyVal {
+    extension [Self <: TermBiblioEntry](x: Self) {
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: term): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: term): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

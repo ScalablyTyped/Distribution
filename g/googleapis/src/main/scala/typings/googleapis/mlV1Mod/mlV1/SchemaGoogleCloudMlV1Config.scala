@@ -13,19 +13,15 @@ trait SchemaGoogleCloudMlV1Config extends StObject {
 }
 object SchemaGoogleCloudMlV1Config {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1Config = {
+  inline def apply(): SchemaGoogleCloudMlV1Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1Config]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1ConfigMutableBuilder[Self <: SchemaGoogleCloudMlV1Config] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1Config](x: Self) {
     
-    @scala.inline
-    def setTpuServiceAccount(value: String): Self = StObject.set(x, "tpuServiceAccount", value.asInstanceOf[js.Any])
+    inline def setTpuServiceAccount(value: String): Self = StObject.set(x, "tpuServiceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpuServiceAccountUndefined: Self = StObject.set(x, "tpuServiceAccount", js.undefined)
+    inline def setTpuServiceAccountUndefined: Self = StObject.set(x, "tpuServiceAccount", js.undefined)
   }
 }

@@ -16,17 +16,14 @@ object typesMessageNotInflightMod {
   }
   object MessageNotInflight {
     
-    @scala.inline
-    def apply(): MessageNotInflight = {
+    inline def apply(): MessageNotInflight = {
       val __obj = js.Dynamic.literal(name = "MessageNotInflight")
       __obj.asInstanceOf[MessageNotInflight]
     }
     
-    @scala.inline
-    implicit class MessageNotInflightMutableBuilder[Self <: MessageNotInflight] (val x: Self) extends AnyVal {
+    extension [Self <: MessageNotInflight](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.MessageNotInflight): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.MessageNotInflight): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

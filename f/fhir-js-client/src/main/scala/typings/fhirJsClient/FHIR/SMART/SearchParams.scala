@@ -50,29 +50,22 @@ trait SearchParams
 }
 object SearchParams {
   
-  @scala.inline
-  def apply(`type`: String): SearchParams = {
+  inline def apply(`type`: String): SearchParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParams]
   }
   
-  @scala.inline
-  implicit class SearchParamsMutableBuilder[Self <: SearchParams] (val x: Self) extends AnyVal {
+  extension [Self <: SearchParams](x: Self) {
     
-    @scala.inline
-    def setPatient(value: String): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    inline def setPatient(value: String): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
+    inline def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
-    @scala.inline
-    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

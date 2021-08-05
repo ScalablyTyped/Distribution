@@ -12,22 +12,17 @@ trait IMultiRouteModelJson extends StObject {
 }
 object IMultiRouteModelJson {
   
-  @scala.inline
-  def apply(params: IMultiRouteParams, referencePoints: js.Array[IMultiRouteReferencePoint]): IMultiRouteModelJson = {
+  inline def apply(params: IMultiRouteParams, referencePoints: js.Array[IMultiRouteReferencePoint]): IMultiRouteModelJson = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], referencePoints = referencePoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMultiRouteModelJson]
   }
   
-  @scala.inline
-  implicit class IMultiRouteModelJsonMutableBuilder[Self <: IMultiRouteModelJson] (val x: Self) extends AnyVal {
+  extension [Self <: IMultiRouteModelJson](x: Self) {
     
-    @scala.inline
-    def setParams(value: IMultiRouteParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: IMultiRouteParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencePoints(value: js.Array[IMultiRouteReferencePoint]): Self = StObject.set(x, "referencePoints", value.asInstanceOf[js.Any])
+    inline def setReferencePoints(value: js.Array[IMultiRouteReferencePoint]): Self = StObject.set(x, "referencePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencePointsVarargs(value: IMultiRouteReferencePoint*): Self = StObject.set(x, "referencePoints", js.Array(value :_*))
+    inline def setReferencePointsVarargs(value: IMultiRouteReferencePoint*): Self = StObject.set(x, "referencePoints", js.Array(value :_*))
   }
 }

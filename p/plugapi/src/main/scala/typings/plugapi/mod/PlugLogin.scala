@@ -12,19 +12,15 @@ trait PlugLogin extends StObject {
 }
 object PlugLogin {
   
-  @scala.inline
-  def apply(email: String, password: String): PlugLogin = {
+  inline def apply(email: String, password: String): PlugLogin = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlugLogin]
   }
   
-  @scala.inline
-  implicit class PlugLoginMutableBuilder[Self <: PlugLogin] (val x: Self) extends AnyVal {
+  extension [Self <: PlugLogin](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
   }
 }

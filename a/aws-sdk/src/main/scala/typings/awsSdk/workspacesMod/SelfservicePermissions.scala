@@ -33,43 +33,31 @@ trait SelfservicePermissions extends StObject {
 }
 object SelfservicePermissions {
   
-  @scala.inline
-  def apply(): SelfservicePermissions = {
+  inline def apply(): SelfservicePermissions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelfservicePermissions]
   }
   
-  @scala.inline
-  implicit class SelfservicePermissionsMutableBuilder[Self <: SelfservicePermissions] (val x: Self) extends AnyVal {
+  extension [Self <: SelfservicePermissions](x: Self) {
     
-    @scala.inline
-    def setChangeComputeType(value: ReconnectEnum): Self = StObject.set(x, "ChangeComputeType", value.asInstanceOf[js.Any])
+    inline def setChangeComputeType(value: ReconnectEnum): Self = StObject.set(x, "ChangeComputeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeComputeTypeUndefined: Self = StObject.set(x, "ChangeComputeType", js.undefined)
+    inline def setChangeComputeTypeUndefined: Self = StObject.set(x, "ChangeComputeType", js.undefined)
     
-    @scala.inline
-    def setIncreaseVolumeSize(value: ReconnectEnum): Self = StObject.set(x, "IncreaseVolumeSize", value.asInstanceOf[js.Any])
+    inline def setIncreaseVolumeSize(value: ReconnectEnum): Self = StObject.set(x, "IncreaseVolumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncreaseVolumeSizeUndefined: Self = StObject.set(x, "IncreaseVolumeSize", js.undefined)
+    inline def setIncreaseVolumeSizeUndefined: Self = StObject.set(x, "IncreaseVolumeSize", js.undefined)
     
-    @scala.inline
-    def setRebuildWorkspace(value: ReconnectEnum): Self = StObject.set(x, "RebuildWorkspace", value.asInstanceOf[js.Any])
+    inline def setRebuildWorkspace(value: ReconnectEnum): Self = StObject.set(x, "RebuildWorkspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebuildWorkspaceUndefined: Self = StObject.set(x, "RebuildWorkspace", js.undefined)
+    inline def setRebuildWorkspaceUndefined: Self = StObject.set(x, "RebuildWorkspace", js.undefined)
     
-    @scala.inline
-    def setRestartWorkspace(value: ReconnectEnum): Self = StObject.set(x, "RestartWorkspace", value.asInstanceOf[js.Any])
+    inline def setRestartWorkspace(value: ReconnectEnum): Self = StObject.set(x, "RestartWorkspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartWorkspaceUndefined: Self = StObject.set(x, "RestartWorkspace", js.undefined)
+    inline def setRestartWorkspaceUndefined: Self = StObject.set(x, "RestartWorkspace", js.undefined)
     
-    @scala.inline
-    def setSwitchRunningMode(value: ReconnectEnum): Self = StObject.set(x, "SwitchRunningMode", value.asInstanceOf[js.Any])
+    inline def setSwitchRunningMode(value: ReconnectEnum): Self = StObject.set(x, "SwitchRunningMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchRunningModeUndefined: Self = StObject.set(x, "SwitchRunningMode", js.undefined)
+    inline def setSwitchRunningModeUndefined: Self = StObject.set(x, "SwitchRunningMode", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ object retryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def retry[T](toRetry: RetryableProvider[T], maxRetries: Double): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(toRetry.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def retry[T](toRetry: RetryableProvider[T], maxRetries: Double): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(toRetry.asInstanceOf[js.Any], maxRetries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   type RetryableProvider[T] = js.Function0[js.Promise[T]]
 }

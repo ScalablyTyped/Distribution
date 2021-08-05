@@ -14,25 +14,19 @@ trait metadataUploadMetadataund extends StObject {
 }
 object metadataUploadMetadataund {
   
-  @scala.inline
-  def apply(): metadataUploadMetadataund = {
+  inline def apply(): metadataUploadMetadataund = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[metadataUploadMetadataund]
   }
   
-  @scala.inline
-  implicit class metadataUploadMetadataundMutableBuilder[Self <: metadataUploadMetadataund] (val x: Self) extends AnyVal {
+  extension [Self <: metadataUploadMetadataund](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: UploadMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: UploadMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

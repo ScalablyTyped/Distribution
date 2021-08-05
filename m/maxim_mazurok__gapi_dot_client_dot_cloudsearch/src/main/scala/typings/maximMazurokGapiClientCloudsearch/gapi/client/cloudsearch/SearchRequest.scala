@@ -34,67 +34,47 @@ trait SearchRequest extends StObject {
 }
 object SearchRequest {
   
-  @scala.inline
-  def apply(): SearchRequest = {
+  inline def apply(): SearchRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchRequest]
   }
   
-  @scala.inline
-  implicit class SearchRequestMutableBuilder[Self <: SearchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchRequest](x: Self) {
     
-    @scala.inline
-    def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
+    inline def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
+    inline def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
     
-    @scala.inline
-    def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
+    inline def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
     
-    @scala.inline
-    def setFacetOptions(value: js.Array[FacetOptions]): Self = StObject.set(x, "facetOptions", value.asInstanceOf[js.Any])
+    inline def setFacetOptions(value: js.Array[FacetOptions]): Self = StObject.set(x, "facetOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetOptionsUndefined: Self = StObject.set(x, "facetOptions", js.undefined)
+    inline def setFacetOptionsUndefined: Self = StObject.set(x, "facetOptions", js.undefined)
     
-    @scala.inline
-    def setFacetOptionsVarargs(value: FacetOptions*): Self = StObject.set(x, "facetOptions", js.Array(value :_*))
+    inline def setFacetOptionsVarargs(value: FacetOptions*): Self = StObject.set(x, "facetOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryInterpretationOptions(value: QueryInterpretationOptions): Self = StObject.set(x, "queryInterpretationOptions", value.asInstanceOf[js.Any])
+    inline def setQueryInterpretationOptions(value: QueryInterpretationOptions): Self = StObject.set(x, "queryInterpretationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryInterpretationOptionsUndefined: Self = StObject.set(x, "queryInterpretationOptions", js.undefined)
+    inline def setQueryInterpretationOptionsUndefined: Self = StObject.set(x, "queryInterpretationOptions", js.undefined)
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
-    @scala.inline
-    def setSortOptions(value: SortOptions): Self = StObject.set(x, "sortOptions", value.asInstanceOf[js.Any])
+    inline def setSortOptions(value: SortOptions): Self = StObject.set(x, "sortOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOptionsUndefined: Self = StObject.set(x, "sortOptions", js.undefined)
+    inline def setSortOptionsUndefined: Self = StObject.set(x, "sortOptions", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

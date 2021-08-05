@@ -23,28 +23,21 @@ trait DetectLabelsRequest extends StObject {
 }
 object DetectLabelsRequest {
   
-  @scala.inline
-  def apply(Image: Image): DetectLabelsRequest = {
+  inline def apply(Image: Image): DetectLabelsRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectLabelsRequest]
   }
   
-  @scala.inline
-  implicit class DetectLabelsRequestMutableBuilder[Self <: DetectLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLabels(value: UInteger): Self = StObject.set(x, "MaxLabels", value.asInstanceOf[js.Any])
+    inline def setMaxLabels(value: UInteger): Self = StObject.set(x, "MaxLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLabelsUndefined: Self = StObject.set(x, "MaxLabels", js.undefined)
+    inline def setMaxLabelsUndefined: Self = StObject.set(x, "MaxLabels", js.undefined)
     
-    @scala.inline
-    def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
+    inline def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
+    inline def setMinConfidenceUndefined: Self = StObject.set(x, "MinConfidence", js.undefined)
   }
 }

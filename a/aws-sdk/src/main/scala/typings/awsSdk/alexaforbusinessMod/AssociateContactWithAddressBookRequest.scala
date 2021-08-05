@@ -18,19 +18,15 @@ trait AssociateContactWithAddressBookRequest extends StObject {
 }
 object AssociateContactWithAddressBookRequest {
   
-  @scala.inline
-  def apply(AddressBookArn: Arn, ContactArn: Arn): AssociateContactWithAddressBookRequest = {
+  inline def apply(AddressBookArn: Arn, ContactArn: Arn): AssociateContactWithAddressBookRequest = {
     val __obj = js.Dynamic.literal(AddressBookArn = AddressBookArn.asInstanceOf[js.Any], ContactArn = ContactArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateContactWithAddressBookRequest]
   }
   
-  @scala.inline
-  implicit class AssociateContactWithAddressBookRequestMutableBuilder[Self <: AssociateContactWithAddressBookRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateContactWithAddressBookRequest](x: Self) {
     
-    @scala.inline
-    def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
+    inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactArn(value: Arn): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
+    inline def setContactArn(value: Arn): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait StatusEvent extends StObject {
 }
 object StatusEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     affectedChannelGroups: js.Array[String],
     affectedChannels: js.Array[String],
     category: String,
@@ -38,37 +37,26 @@ object StatusEvent {
     __obj.asInstanceOf[StatusEvent]
   }
   
-  @scala.inline
-  implicit class StatusEventMutableBuilder[Self <: StatusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StatusEvent](x: Self) {
     
-    @scala.inline
-    def setAffectedChannelGroups(value: js.Array[String]): Self = StObject.set(x, "affectedChannelGroups", value.asInstanceOf[js.Any])
+    inline def setAffectedChannelGroups(value: js.Array[String]): Self = StObject.set(x, "affectedChannelGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectedChannelGroupsVarargs(value: String*): Self = StObject.set(x, "affectedChannelGroups", js.Array(value :_*))
+    inline def setAffectedChannelGroupsVarargs(value: String*): Self = StObject.set(x, "affectedChannelGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setAffectedChannels(value: js.Array[String]): Self = StObject.set(x, "affectedChannels", value.asInstanceOf[js.Any])
+    inline def setAffectedChannels(value: js.Array[String]): Self = StObject.set(x, "affectedChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectedChannelsVarargs(value: String*): Self = StObject.set(x, "affectedChannels", js.Array(value :_*))
+    inline def setAffectedChannelsVarargs(value: String*): Self = StObject.set(x, "affectedChannels", js.Array(value :_*))
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimetoken(value: Double | String): Self = StObject.set(x, "currentTimetoken", value.asInstanceOf[js.Any])
+    inline def setCurrentTimetoken(value: Double | String): Self = StObject.set(x, "currentTimetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTimetoken(value: Double | String): Self = StObject.set(x, "lastTimetoken", value.asInstanceOf[js.Any])
+    inline def setLastTimetoken(value: Double | String): Self = StObject.set(x, "lastTimetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedChannels(value: js.Array[String]): Self = StObject.set(x, "subscribedChannels", value.asInstanceOf[js.Any])
+    inline def setSubscribedChannels(value: js.Array[String]): Self = StObject.set(x, "subscribedChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedChannelsVarargs(value: String*): Self = StObject.set(x, "subscribedChannels", js.Array(value :_*))
+    inline def setSubscribedChannelsVarargs(value: String*): Self = StObject.set(x, "subscribedChannels", js.Array(value :_*))
   }
 }

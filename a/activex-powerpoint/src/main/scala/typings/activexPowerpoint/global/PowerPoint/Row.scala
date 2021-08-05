@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Row")
 @js.native
-class Row protected ()
+/* private */ class Row ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Row {
   
@@ -25,7 +25,7 @@ class Row protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Row_typekey")
   var PowerPointDotRow_typekey: typings.activexPowerpoint.PowerPoint.Row = js.native
   

@@ -18,8 +18,7 @@ trait ParametersSearchReposEndpoint extends StObject {
 }
 object ParametersSearchReposEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: SearchReposEndpoint,
     request: SearchReposRequestOptions,
     response: OctokitResponse[SearchReposResponseData]
@@ -28,16 +27,12 @@ object ParametersSearchReposEndpoint {
     __obj.asInstanceOf[ParametersSearchReposEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersSearchReposEndpointMutableBuilder[Self <: ParametersSearchReposEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersSearchReposEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: SearchReposEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SearchReposEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: SearchReposRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: SearchReposRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[SearchReposResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[SearchReposResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

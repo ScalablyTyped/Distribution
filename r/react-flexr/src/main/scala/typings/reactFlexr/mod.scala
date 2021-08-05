@@ -29,14 +29,11 @@ object mod {
   @js.native
   val desk: String = js.native
   
-  @scala.inline
-  def findBreakpoints(): js.Array[ErgonomicType] | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findBreakpoints")().asInstanceOf[js.Array[ErgonomicType] | Boolean]
+  inline def findBreakpoints(): js.Array[ErgonomicType] | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findBreakpoints")().asInstanceOf[js.Array[ErgonomicType] | Boolean]
   
-  @scala.inline
-  def findMatch(arguments: ErgonomicType*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findMatch")(arguments.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def findMatch(arguments: ErgonomicType*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findMatch")(arguments.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def getCurrentBreakpoints(): js.Array[ErgonomicType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentBreakpoints")().asInstanceOf[js.Array[ErgonomicType]]
+  inline def getCurrentBreakpoints(): js.Array[ErgonomicType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentBreakpoints")().asInstanceOf[js.Array[ErgonomicType]]
   
   @JSImport("react-flexr", "lap")
   @js.native
@@ -54,6 +51,5 @@ object mod {
   @js.native
   val portable: String = js.native
   
-  @scala.inline
-  def setBreakpoints(breakpoints: js.Array[ErgonomicType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBreakpoints")(breakpoints.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBreakpoints(breakpoints: js.Array[ErgonomicType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBreakpoints")(breakpoints.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

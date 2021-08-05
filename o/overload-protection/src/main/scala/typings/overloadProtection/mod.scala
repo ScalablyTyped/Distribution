@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(framework: HttpFrameworkSelection): HttpProtectionInstance = ^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any]).asInstanceOf[HttpProtectionInstance]
-  @scala.inline
-  def apply(framework: HttpFrameworkSelection, config: ProtectionConfig): HttpProtectionInstance = (^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[HttpProtectionInstance]
-  @scala.inline
-  def apply(framework: KoaFrameworkSelection): KoaProtectionInstance = ^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any]).asInstanceOf[KoaProtectionInstance]
-  @scala.inline
-  def apply(framework: KoaFrameworkSelection, config: ProtectionConfig): KoaProtectionInstance = (^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[KoaProtectionInstance]
+  inline def apply(framework: HttpFrameworkSelection): HttpProtectionInstance = ^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any]).asInstanceOf[HttpProtectionInstance]
+  inline def apply(framework: HttpFrameworkSelection, config: ProtectionConfig): HttpProtectionInstance = (^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[HttpProtectionInstance]
+  inline def apply(framework: KoaFrameworkSelection): KoaProtectionInstance = ^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any]).asInstanceOf[KoaProtectionInstance]
+  inline def apply(framework: KoaFrameworkSelection, config: ProtectionConfig): KoaProtectionInstance = (^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[KoaProtectionInstance]
   
   @JSImport("overload-protection", JSImport.Namespace)
   @js.native
@@ -29,14 +25,11 @@ object mod {
   trait HttpFrameworkSelection extends StObject
   object HttpFrameworkSelection {
     
-    @scala.inline
-    def express: typings.overloadProtection.overloadProtectionStrings.express = "express".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.express]
+    inline def express: typings.overloadProtection.overloadProtectionStrings.express = "express".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.express]
     
-    @scala.inline
-    def http: typings.overloadProtection.overloadProtectionStrings.http = "http".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.http]
+    inline def http: typings.overloadProtection.overloadProtectionStrings.http = "http".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.http]
     
-    @scala.inline
-    def restify: typings.overloadProtection.overloadProtectionStrings.restify = "restify".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.restify]
+    inline def restify: typings.overloadProtection.overloadProtectionStrings.restify = "restify".asInstanceOf[typings.overloadProtection.overloadProtectionStrings.restify]
   }
   
   @js.native
@@ -79,71 +72,50 @@ object mod {
   }
   object ProtectionConfig {
     
-    @scala.inline
-    def apply(): ProtectionConfig = {
+    inline def apply(): ProtectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProtectionConfig]
     }
     
-    @scala.inline
-    implicit class ProtectionConfigMutableBuilder[Self <: ProtectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ProtectionConfig](x: Self) {
       
-      @scala.inline
-      def setClientRetrySecs(value: Double): Self = StObject.set(x, "clientRetrySecs", value.asInstanceOf[js.Any])
+      inline def setClientRetrySecs(value: Double): Self = StObject.set(x, "clientRetrySecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRetrySecsUndefined: Self = StObject.set(x, "clientRetrySecs", js.undefined)
+      inline def setClientRetrySecsUndefined: Self = StObject.set(x, "clientRetrySecs", js.undefined)
       
-      @scala.inline
-      def setErrorPropagationMode(value: Boolean): Self = StObject.set(x, "errorPropagationMode", value.asInstanceOf[js.Any])
+      inline def setErrorPropagationMode(value: Boolean): Self = StObject.set(x, "errorPropagationMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorPropagationModeUndefined: Self = StObject.set(x, "errorPropagationMode", js.undefined)
+      inline def setErrorPropagationModeUndefined: Self = StObject.set(x, "errorPropagationMode", js.undefined)
       
-      @scala.inline
-      def setLogStatsOnReq(value: `false`): Self = StObject.set(x, "logStatsOnReq", value.asInstanceOf[js.Any])
+      inline def setLogStatsOnReq(value: `false`): Self = StObject.set(x, "logStatsOnReq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogStatsOnReqUndefined: Self = StObject.set(x, "logStatsOnReq", js.undefined)
+      inline def setLogStatsOnReqUndefined: Self = StObject.set(x, "logStatsOnReq", js.undefined)
       
-      @scala.inline
-      def setLogging(value: Boolean | String | (js.Function1[/* msg */ String, Unit])): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: Boolean | String | (js.Function1[/* msg */ String, Unit])): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingFunction1(value: /* msg */ String => Unit): Self = StObject.set(x, "logging", js.Any.fromFunction1(value))
+      inline def setLoggingFunction1(value: /* msg */ String => Unit): Self = StObject.set(x, "logging", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      @scala.inline
-      def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
+      inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
+      inline def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
       
-      @scala.inline
-      def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
+      inline def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
+      inline def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
       
-      @scala.inline
-      def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
+      inline def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
+      inline def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
       
-      @scala.inline
-      def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+      inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
+      inline def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
       
-      @scala.inline
-      def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
+      inline def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
+      inline def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
     }
   }
   
@@ -167,8 +139,7 @@ object mod {
   }
   object ProtectionInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       eventLoopDelay: Double,
       eventLoopOverload: Boolean,
       heapUsedOverload: Boolean,
@@ -182,32 +153,23 @@ object mod {
       __obj.asInstanceOf[ProtectionInstance]
     }
     
-    @scala.inline
-    implicit class ProtectionInstanceMutableBuilder[Self <: ProtectionInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ProtectionInstance](x: Self) {
       
-      @scala.inline
-      def setEventLoopDelay(value: Double): Self = StObject.set(x, "eventLoopDelay", value.asInstanceOf[js.Any])
+      inline def setEventLoopDelay(value: Double): Self = StObject.set(x, "eventLoopDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventLoopOverload(value: Boolean): Self = StObject.set(x, "eventLoopOverload", value.asInstanceOf[js.Any])
+      inline def setEventLoopOverload(value: Boolean): Self = StObject.set(x, "eventLoopOverload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeapUsedOverload(value: Boolean): Self = StObject.set(x, "heapUsedOverload", value.asInstanceOf[js.Any])
+      inline def setHeapUsedOverload(value: Boolean): Self = StObject.set(x, "heapUsedOverload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
+      inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
+      inline def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
+      inline def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
+      inline def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRssOverload(value: Boolean): Self = StObject.set(x, "rssOverload", value.asInstanceOf[js.Any])
+      inline def setRssOverload(value: Boolean): Self = StObject.set(x, "rssOverload", value.asInstanceOf[js.Any])
     }
   }
 }

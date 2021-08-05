@@ -26,20 +26,16 @@ object flexPropsTypeMod {
   }
   object FlexItemPropsType {
     
-    @scala.inline
-    def apply(): FlexItemPropsType = {
+    inline def apply(): FlexItemPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexItemPropsType]
     }
     
-    @scala.inline
-    implicit class FlexItemPropsTypeMutableBuilder[Self <: FlexItemPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: FlexItemPropsType](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     }
   }
   
@@ -57,44 +53,32 @@ object flexPropsTypeMod {
   }
   object FlexPropsType {
     
-    @scala.inline
-    def apply(): FlexPropsType = {
+    inline def apply(): FlexPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexPropsType]
     }
     
-    @scala.inline
-    implicit class FlexPropsTypeMutableBuilder[Self <: FlexPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: FlexPropsType](x: Self) {
       
-      @scala.inline
-      def setAlign(value: start | center | end | baseline | stretch): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: start | center | end | baseline | stretch): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setDirection(value: row | `row-reverse` | column | `column-reverse`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: row | `row-reverse` | column | `column-reverse`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setJustify(value: start | end | center | between | around): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
+      inline def setJustify(value: start | end | center | between | around): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
+      inline def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
       
-      @scala.inline
-      def setWrap(value: nowrap | wrap | `wrap-reverse`): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: nowrap | wrap | `wrap-reverse`): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
 }

@@ -29,8 +29,7 @@ trait CreateOfferDialogParams
 }
 object CreateOfferDialogParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     account_id: String,
     objective: APP_INSTALLS | CONVERSIONS | LINK_CLICKS | OFFER_CLAIMS | PRODUCT_CATALOG_SALES | STORE_VISITS,
     page_id: String
@@ -39,24 +38,18 @@ object CreateOfferDialogParams {
     __obj.asInstanceOf[CreateOfferDialogParams]
   }
   
-  @scala.inline
-  implicit class CreateOfferDialogParamsMutableBuilder[Self <: CreateOfferDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOfferDialogParams](x: Self) {
     
-    @scala.inline
-    def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    inline def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: create_offer): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: create_offer): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjective(
+    inline def setObjective(
       value: APP_INSTALLS | CONVERSIONS | LINK_CLICKS | OFFER_CLAIMS | PRODUCT_CATALOG_SALES | STORE_VISITS
     ): Self = StObject.set(x, "objective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
+    inline def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
   }
 }

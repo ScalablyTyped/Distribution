@@ -29,26 +29,20 @@ object typesGetBucketVersioningOutputMod {
   }
   object GetBucketVersioningOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketVersioningOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketVersioningOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketVersioningOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketVersioningOutputMutableBuilder[Self <: GetBucketVersioningOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketVersioningOutput](x: Self) {
       
-      @scala.inline
-      def setMFADelete(value: Enabled | Disabled | String): Self = StObject.set(x, "MFADelete", value.asInstanceOf[js.Any])
+      inline def setMFADelete(value: Enabled | Disabled | String): Self = StObject.set(x, "MFADelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMFADeleteUndefined: Self = StObject.set(x, "MFADelete", js.undefined)
+      inline def setMFADeleteUndefined: Self = StObject.set(x, "MFADelete", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Enabled | Suspended | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Enabled | Suspended | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     }
   }
 }

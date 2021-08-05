@@ -18,8 +18,7 @@ trait ParametersProjectsGetEndpoint extends StObject {
 }
 object ParametersProjectsGetEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ProjectsGetEndpoint,
     request: ProjectsGetRequestOptions,
     response: OctokitResponse[ProjectsGetResponseData]
@@ -28,16 +27,12 @@ object ParametersProjectsGetEndpoint {
     __obj.asInstanceOf[ParametersProjectsGetEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersProjectsGetEndpointMutableBuilder[Self <: ParametersProjectsGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersProjectsGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ProjectsGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ProjectsGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ProjectsGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ProjectsGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ProjectsGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ProjectsGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

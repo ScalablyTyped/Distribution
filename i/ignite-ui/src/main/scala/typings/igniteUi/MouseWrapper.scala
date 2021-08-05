@@ -29,55 +29,39 @@ trait MouseWrapper
 }
 object MouseWrapper {
   
-  @scala.inline
-  def apply(): MouseWrapper = {
+  inline def apply(): MouseWrapper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MouseWrapper]
   }
   
-  @scala.inline
-  implicit class MouseWrapperMutableBuilder[Self <: MouseWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: MouseWrapper](x: Self) {
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setCapture(value: (/* event */ Event, /* ui */ CaptureEventUIParam) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
+    inline def setCapture(value: (/* event */ Event, /* ui */ CaptureEventUIParam) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setDrag(value: (/* event */ Event, /* ui */ DragEventUIParam) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
+    inline def setDrag(value: (/* event */ Event, /* ui */ DragEventUIParam) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    @scala.inline
-    def setStart(value: (/* event */ Event, /* ui */ StartEventUIParam) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    inline def setStart(value: (/* event */ Event, /* ui */ StartEventUIParam) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStop(value: (/* event */ Event, /* ui */ StopEventUIParam) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
+    inline def setStop(value: (/* event */ Event, /* ui */ StopEventUIParam) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

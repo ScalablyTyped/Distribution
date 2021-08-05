@@ -13,19 +13,15 @@ trait CapacityReservationOptionsRequest extends StObject {
 }
 object CapacityReservationOptionsRequest {
   
-  @scala.inline
-  def apply(): CapacityReservationOptionsRequest = {
+  inline def apply(): CapacityReservationOptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapacityReservationOptionsRequest]
   }
   
-  @scala.inline
-  implicit class CapacityReservationOptionsRequestMutableBuilder[Self <: CapacityReservationOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityReservationOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setUsageStrategy(value: FleetCapacityReservationUsageStrategy): Self = StObject.set(x, "UsageStrategy", value.asInstanceOf[js.Any])
+    inline def setUsageStrategy(value: FleetCapacityReservationUsageStrategy): Self = StObject.set(x, "UsageStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageStrategyUndefined: Self = StObject.set(x, "UsageStrategy", js.undefined)
+    inline def setUsageStrategyUndefined: Self = StObject.set(x, "UsageStrategy", js.undefined)
   }
 }

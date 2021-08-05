@@ -13,6 +13,5 @@ object mod {
   @JSImport("libp2p-interfaces/src/connection", "Connection")
   @js.native
   def Connection: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof Connection */ js.Any = js.native
-  @scala.inline
-  def Connection_=(x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof Connection */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Connection")(x.asInstanceOf[js.Any])
+  inline def Connection_=(x: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof Connection */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Connection")(x.asInstanceOf[js.Any])
 }

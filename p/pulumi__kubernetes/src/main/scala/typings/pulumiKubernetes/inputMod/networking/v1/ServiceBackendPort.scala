@@ -22,25 +22,19 @@ trait ServiceBackendPort extends StObject {
 }
 object ServiceBackendPort {
   
-  @scala.inline
-  def apply(): ServiceBackendPort = {
+  inline def apply(): ServiceBackendPort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceBackendPort]
   }
   
-  @scala.inline
-  implicit class ServiceBackendPortMutableBuilder[Self <: ServiceBackendPort] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceBackendPort](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumber(value: Input[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Input[Double]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

@@ -16,16 +16,13 @@ trait ClassifiedInteractionRequest
 }
 object ClassifiedInteractionRequest {
   
-  @scala.inline
-  def apply(Classification: InteractionClassification, Context: XInterface, Message: String): ClassifiedInteractionRequest = {
+  inline def apply(Classification: InteractionClassification, Context: XInterface, Message: String): ClassifiedInteractionRequest = {
     val __obj = js.Dynamic.literal(Classification = Classification.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedInteractionRequest]
   }
   
-  @scala.inline
-  implicit class ClassifiedInteractionRequestMutableBuilder[Self <: ClassifiedInteractionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifiedInteractionRequest](x: Self) {
     
-    @scala.inline
-    def setClassification(value: InteractionClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
+    inline def setClassification(value: InteractionClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
   }
 }

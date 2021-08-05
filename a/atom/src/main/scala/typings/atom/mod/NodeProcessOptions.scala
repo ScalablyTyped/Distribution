@@ -32,49 +32,35 @@ trait NodeProcessOptions extends StObject {
 }
 object NodeProcessOptions {
   
-  @scala.inline
-  def apply(command: String): NodeProcessOptions = {
+  inline def apply(command: String): NodeProcessOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeProcessOptions]
   }
   
-  @scala.inline
-  implicit class NodeProcessOptionsMutableBuilder[Self <: NodeProcessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NodeProcessOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExit(value: /* code */ Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
+    inline def setExit(value: /* code */ Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+    inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
-    @scala.inline
-    def setOptions(value: SpawnProcessOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SpawnProcessOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setStderr(value: /* data */ String => Unit): Self = StObject.set(x, "stderr", js.Any.fromFunction1(value))
+    inline def setStderr(value: /* data */ String => Unit): Self = StObject.set(x, "stderr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+    inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
-    @scala.inline
-    def setStdout(value: /* data */ String => Unit): Self = StObject.set(x, "stdout", js.Any.fromFunction1(value))
+    inline def setStdout(value: /* data */ String => Unit): Self = StObject.set(x, "stdout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+    inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
   }
 }

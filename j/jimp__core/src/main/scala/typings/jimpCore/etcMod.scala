@@ -24,23 +24,18 @@ object etcMod {
   }
   object Bitmap {
     
-    @scala.inline
-    def apply(data: Buffer, height: Double, width: Double): Bitmap = {
+    inline def apply(data: Buffer, height: Double, width: Double): Bitmap = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bitmap]
     }
     
-    @scala.inline
-    implicit class BitmapMutableBuilder[Self <: Bitmap] (val x: Self) extends AnyVal {
+    extension [Self <: Bitmap](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,23 +49,18 @@ object etcMod {
   }
   object BlendMode {
     
-    @scala.inline
-    def apply(mode: String, opacityDest: Double, opacitySource: Double): BlendMode = {
+    inline def apply(mode: String, opacityDest: Double, opacitySource: Double): BlendMode = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], opacityDest = opacityDest.asInstanceOf[js.Any], opacitySource = opacitySource.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlendMode]
     }
     
-    @scala.inline
-    implicit class BlendModeMutableBuilder[Self <: BlendMode] (val x: Self) extends AnyVal {
+    extension [Self <: BlendMode](x: Self) {
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityDest(value: Double): Self = StObject.set(x, "opacityDest", value.asInstanceOf[js.Any])
+      inline def setOpacityDest(value: Double): Self = StObject.set(x, "opacityDest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacitySource(value: Double): Self = StObject.set(x, "opacitySource", value.asInstanceOf[js.Any])
+      inline def setOpacitySource(value: Double): Self = StObject.set(x, "opacitySource", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,14 +72,11 @@ object etcMod {
   trait ChangeName extends StObject
   object ChangeName {
     
-    @scala.inline
-    def background: typings.jimpCore.jimpCoreStrings.background = "background".asInstanceOf[typings.jimpCore.jimpCoreStrings.background]
+    inline def background: typings.jimpCore.jimpCoreStrings.background = "background".asInstanceOf[typings.jimpCore.jimpCoreStrings.background]
     
-    @scala.inline
-    def crop: typings.jimpCore.jimpCoreStrings.crop = "crop".asInstanceOf[typings.jimpCore.jimpCoreStrings.crop]
+    inline def crop: typings.jimpCore.jimpCoreStrings.crop = "crop".asInstanceOf[typings.jimpCore.jimpCoreStrings.crop]
     
-    @scala.inline
-    def scan: typings.jimpCore.jimpCoreStrings.scan = "scan".asInstanceOf[typings.jimpCore.jimpCoreStrings.scan]
+    inline def scan: typings.jimpCore.jimpCoreStrings.scan = "scan".asInstanceOf[typings.jimpCore.jimpCoreStrings.scan]
   }
   
   type DecoderFn = js.Function1[/* data */ Buffer, Bitmap]
@@ -104,17 +91,14 @@ object etcMod {
   }
   object Image {
     
-    @scala.inline
-    def apply(bitmap: Bitmap): Image = {
+    inline def apply(bitmap: Bitmap): Image = {
       val __obj = js.Dynamic.literal(bitmap = bitmap.asInstanceOf[js.Any])
       __obj.asInstanceOf[Image]
     }
     
-    @scala.inline
-    implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+    extension [Self <: Image](x: Self) {
       
-      @scala.inline
-      def setBitmap(value: Bitmap): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
+      inline def setBitmap(value: Bitmap): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,32 +118,23 @@ object etcMod {
   trait ListenableName extends StObject
   object ListenableName {
     
-    @scala.inline
-    def any: typings.jimpCore.jimpCoreStrings.any = "any".asInstanceOf[typings.jimpCore.jimpCoreStrings.any]
+    inline def any: typings.jimpCore.jimpCoreStrings.any = "any".asInstanceOf[typings.jimpCore.jimpCoreStrings.any]
     
-    @scala.inline
-    def background: typings.jimpCore.jimpCoreStrings.background = "background".asInstanceOf[typings.jimpCore.jimpCoreStrings.background]
+    inline def background: typings.jimpCore.jimpCoreStrings.background = "background".asInstanceOf[typings.jimpCore.jimpCoreStrings.background]
     
-    @scala.inline
-    def `before-change`: typings.jimpCore.jimpCoreStrings.`before-change` = "before-change".asInstanceOf[typings.jimpCore.jimpCoreStrings.`before-change`]
+    inline def `before-change`: typings.jimpCore.jimpCoreStrings.`before-change` = "before-change".asInstanceOf[typings.jimpCore.jimpCoreStrings.`before-change`]
     
-    @scala.inline
-    def `before-clone`: typings.jimpCore.jimpCoreStrings.`before-clone` = "before-clone".asInstanceOf[typings.jimpCore.jimpCoreStrings.`before-clone`]
+    inline def `before-clone`: typings.jimpCore.jimpCoreStrings.`before-clone` = "before-clone".asInstanceOf[typings.jimpCore.jimpCoreStrings.`before-clone`]
     
-    @scala.inline
-    def changed: typings.jimpCore.jimpCoreStrings.changed = "changed".asInstanceOf[typings.jimpCore.jimpCoreStrings.changed]
+    inline def changed: typings.jimpCore.jimpCoreStrings.changed = "changed".asInstanceOf[typings.jimpCore.jimpCoreStrings.changed]
     
-    @scala.inline
-    def cloned: typings.jimpCore.jimpCoreStrings.cloned = "cloned".asInstanceOf[typings.jimpCore.jimpCoreStrings.cloned]
+    inline def cloned: typings.jimpCore.jimpCoreStrings.cloned = "cloned".asInstanceOf[typings.jimpCore.jimpCoreStrings.cloned]
     
-    @scala.inline
-    def crop: typings.jimpCore.jimpCoreStrings.crop = "crop".asInstanceOf[typings.jimpCore.jimpCoreStrings.crop]
+    inline def crop: typings.jimpCore.jimpCoreStrings.crop = "crop".asInstanceOf[typings.jimpCore.jimpCoreStrings.crop]
     
-    @scala.inline
-    def initialized: typings.jimpCore.jimpCoreStrings.initialized = "initialized".asInstanceOf[typings.jimpCore.jimpCoreStrings.initialized]
+    inline def initialized: typings.jimpCore.jimpCoreStrings.initialized = "initialized".asInstanceOf[typings.jimpCore.jimpCoreStrings.initialized]
     
-    @scala.inline
-    def scan: typings.jimpCore.jimpCoreStrings.scan = "scan".asInstanceOf[typings.jimpCore.jimpCoreStrings.scan]
+    inline def scan: typings.jimpCore.jimpCoreStrings.scan = "scan".asInstanceOf[typings.jimpCore.jimpCoreStrings.scan]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -169,14 +144,12 @@ object etcMod {
   trait ListenerData[T /* <: ListenableName */] extends StObject
   object ListenerData {
     
-    @scala.inline
-    def Dictkey[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): typings.jimpCore.anon.Dictkey[T] = {
+    inline def Dictkey[T /* <: ListenableName */](eventName: `before-change` | changed, methodName: T): typings.jimpCore.anon.Dictkey[T] = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jimpCore.anon.Dictkey[T]]
     }
     
-    @scala.inline
-    def EventName[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): typings.jimpCore.anon.EventName[T] = {
+    inline def EventName[T /* <: ListenableName */](eventName: T, methodName: clone | ChangeName | constructor): typings.jimpCore.anon.EventName[T] = {
       val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jimpCore.anon.EventName[T]]
     }
@@ -192,23 +165,18 @@ object etcMod {
   }
   object RGB {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): RGB = {
+    inline def apply(b: Double, g: Double, r: Double): RGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGB]
     }
     
-    @scala.inline
-    implicit class RGBMutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
+    extension [Self <: RGB](x: Self) {
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,26 +192,20 @@ object etcMod {
   }
   object RGBA {
     
-    @scala.inline
-    def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
+    inline def apply(a: Double, b: Double, g: Double, r: Double): RGBA = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBA]
     }
     
-    @scala.inline
-    implicit class RGBAMutableBuilder[Self <: RGBA] (val x: Self) extends AnyVal {
+    extension [Self <: RGBA](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,26 +219,20 @@ object etcMod {
   }
   object URLOptions {
     
-    @scala.inline
-    def apply(headers: StringDictionary[js.Any], url: String): URLOptions = {
+    inline def apply(headers: StringDictionary[js.Any], url: String): URLOptions = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[URLOptions]
     }
     
-    @scala.inline
-    implicit class URLOptionsMutableBuilder[Self <: URLOptions] (val x: Self) extends AnyVal {
+    extension [Self <: URLOptions](x: Self) {
       
-      @scala.inline
-      def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

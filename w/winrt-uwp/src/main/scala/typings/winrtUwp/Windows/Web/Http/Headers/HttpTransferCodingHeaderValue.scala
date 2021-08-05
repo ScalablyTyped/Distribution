@@ -16,19 +16,15 @@ trait HttpTransferCodingHeaderValue extends StObject {
 }
 object HttpTransferCodingHeaderValue {
   
-  @scala.inline
-  def apply(parameters: IVector[HttpNameValueHeaderValue], value: String): HttpTransferCodingHeaderValue = {
+  inline def apply(parameters: IVector[HttpNameValueHeaderValue], value: String): HttpTransferCodingHeaderValue = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpTransferCodingHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpTransferCodingHeaderValueMutableBuilder[Self <: HttpTransferCodingHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpTransferCodingHeaderValue](x: Self) {
     
-    @scala.inline
-    def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

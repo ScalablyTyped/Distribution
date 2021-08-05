@@ -14,19 +14,15 @@ trait RequestSubscribeMessageSuccessCallbackResult extends StObject {
 }
 object RequestSubscribeMessageSuccessCallbackResult {
   
-  @scala.inline
-  def apply(TEMPLATE_ID: String, errMsg: String): RequestSubscribeMessageSuccessCallbackResult = {
+  inline def apply(TEMPLATE_ID: String, errMsg: String): RequestSubscribeMessageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(TEMPLATE_ID = TEMPLATE_ID.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSubscribeMessageSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class RequestSubscribeMessageSuccessCallbackResultMutableBuilder[Self <: RequestSubscribeMessageSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSubscribeMessageSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEMPLATE_ID(value: String): Self = StObject.set(x, "TEMPLATE_ID", value.asInstanceOf[js.Any])
+    inline def setTEMPLATE_ID(value: String): Self = StObject.set(x, "TEMPLATE_ID", value.asInstanceOf[js.Any])
   }
 }

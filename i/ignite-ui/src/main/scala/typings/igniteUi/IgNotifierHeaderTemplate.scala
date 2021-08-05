@@ -26,25 +26,19 @@ trait IgNotifierHeaderTemplate
 }
 object IgNotifierHeaderTemplate {
   
-  @scala.inline
-  def apply(): IgNotifierHeaderTemplate = {
+  inline def apply(): IgNotifierHeaderTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgNotifierHeaderTemplate]
   }
   
-  @scala.inline
-  implicit class IgNotifierHeaderTemplateMutableBuilder[Self <: IgNotifierHeaderTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: IgNotifierHeaderTemplate](x: Self) {
     
-    @scala.inline
-    def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

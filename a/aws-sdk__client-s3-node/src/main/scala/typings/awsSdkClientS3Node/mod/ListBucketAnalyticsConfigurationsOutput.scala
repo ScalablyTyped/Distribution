@@ -10,8 +10,7 @@ trait ListBucketAnalyticsConfigurationsOutput
      with typings.awsSdkClientS3Node.typesListBucketAnalyticsConfigurationsOutputMod.ListBucketAnalyticsConfigurationsOutput
 object ListBucketAnalyticsConfigurationsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListBucketAnalyticsConfigurationsOutput = {
+  inline def apply($metadata: ResponseMetadata): ListBucketAnalyticsConfigurationsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketAnalyticsConfigurationsOutput]
   }

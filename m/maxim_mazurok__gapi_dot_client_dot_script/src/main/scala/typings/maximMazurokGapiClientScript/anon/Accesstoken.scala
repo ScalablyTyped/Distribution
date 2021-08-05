@@ -84,154 +84,105 @@ trait Accesstoken extends StObject {
 }
 object Accesstoken {
   
-  @scala.inline
-  def apply(): Accesstoken = {
+  inline def apply(): Accesstoken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Accesstoken]
   }
   
-  @scala.inline
-  implicit class AccesstokenMutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
+  extension [Self <: Accesstoken](x: Self) {
     
-    @scala.inline
-    def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+    inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+    inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+    inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+    inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+    inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    @scala.inline
-    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+    inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    @scala.inline
-    def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
-    @scala.inline
-    def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+    inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotdeploymentId(value: String): Self = StObject.set(x, "userProcessFilter.deploymentId", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotdeploymentId(value: String): Self = StObject.set(x, "userProcessFilter.deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotdeploymentIdUndefined: Self = StObject.set(x, "userProcessFilter.deploymentId", js.undefined)
+    inline def setUserProcessFilterDotdeploymentIdUndefined: Self = StObject.set(x, "userProcessFilter.deploymentId", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotendTime(value: String): Self = StObject.set(x, "userProcessFilter.endTime", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotendTime(value: String): Self = StObject.set(x, "userProcessFilter.endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotendTimeUndefined: Self = StObject.set(x, "userProcessFilter.endTime", js.undefined)
+    inline def setUserProcessFilterDotendTimeUndefined: Self = StObject.set(x, "userProcessFilter.endTime", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotfunctionName(value: String): Self = StObject.set(x, "userProcessFilter.functionName", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotfunctionName(value: String): Self = StObject.set(x, "userProcessFilter.functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotfunctionNameUndefined: Self = StObject.set(x, "userProcessFilter.functionName", js.undefined)
+    inline def setUserProcessFilterDotfunctionNameUndefined: Self = StObject.set(x, "userProcessFilter.functionName", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotprojectName(value: String): Self = StObject.set(x, "userProcessFilter.projectName", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotprojectName(value: String): Self = StObject.set(x, "userProcessFilter.projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotprojectNameUndefined: Self = StObject.set(x, "userProcessFilter.projectName", js.undefined)
+    inline def setUserProcessFilterDotprojectNameUndefined: Self = StObject.set(x, "userProcessFilter.projectName", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotscriptId(value: String): Self = StObject.set(x, "userProcessFilter.scriptId", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotscriptId(value: String): Self = StObject.set(x, "userProcessFilter.scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotscriptIdUndefined: Self = StObject.set(x, "userProcessFilter.scriptId", js.undefined)
+    inline def setUserProcessFilterDotscriptIdUndefined: Self = StObject.set(x, "userProcessFilter.scriptId", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotstartTime(value: String): Self = StObject.set(x, "userProcessFilter.startTime", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotstartTime(value: String): Self = StObject.set(x, "userProcessFilter.startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotstartTimeUndefined: Self = StObject.set(x, "userProcessFilter.startTime", js.undefined)
+    inline def setUserProcessFilterDotstartTimeUndefined: Self = StObject.set(x, "userProcessFilter.startTime", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotstatuses(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.statuses", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotstatuses(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotstatusesUndefined: Self = StObject.set(x, "userProcessFilter.statuses", js.undefined)
+    inline def setUserProcessFilterDotstatusesUndefined: Self = StObject.set(x, "userProcessFilter.statuses", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotstatusesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.statuses", js.Array(value :_*))
+    inline def setUserProcessFilterDotstatusesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.statuses", js.Array(value :_*))
     
-    @scala.inline
-    def setUserProcessFilterDottypes(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.types", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDottypes(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDottypesUndefined: Self = StObject.set(x, "userProcessFilter.types", js.undefined)
+    inline def setUserProcessFilterDottypesUndefined: Self = StObject.set(x, "userProcessFilter.types", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDottypesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.types", js.Array(value :_*))
+    inline def setUserProcessFilterDottypesVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.types", js.Array(value :_*))
     
-    @scala.inline
-    def setUserProcessFilterDotuserAccessLevels(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.userAccessLevels", value.asInstanceOf[js.Any])
+    inline def setUserProcessFilterDotuserAccessLevels(value: String | js.Array[String]): Self = StObject.set(x, "userProcessFilter.userAccessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProcessFilterDotuserAccessLevelsUndefined: Self = StObject.set(x, "userProcessFilter.userAccessLevels", js.undefined)
+    inline def setUserProcessFilterDotuserAccessLevelsUndefined: Self = StObject.set(x, "userProcessFilter.userAccessLevels", js.undefined)
     
-    @scala.inline
-    def setUserProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.userAccessLevels", js.Array(value :_*))
+    inline def setUserProcessFilterDotuserAccessLevelsVarargs(value: String*): Self = StObject.set(x, "userProcessFilter.userAccessLevels", js.Array(value :_*))
   }
 }

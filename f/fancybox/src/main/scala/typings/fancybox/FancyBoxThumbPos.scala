@@ -14,25 +14,19 @@ trait FancyBoxThumbPos
 }
 object FancyBoxThumbPos {
   
-  @scala.inline
-  def apply(): FancyBoxThumbPos = {
+  inline def apply(): FancyBoxThumbPos = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancyBoxThumbPos]
   }
   
-  @scala.inline
-  implicit class FancyBoxThumbPosMutableBuilder[Self <: FancyBoxThumbPos] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxThumbPos](x: Self) {
     
-    @scala.inline
-    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+    inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
   }
 }

@@ -53,8 +53,7 @@ trait DomainAssociation extends StObject {
 }
 object DomainAssociation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     domainAssociationArn: DomainAssociationArn,
     domainName: DomainName,
     domainStatus: DomainStatus,
@@ -66,49 +65,34 @@ object DomainAssociation {
     __obj.asInstanceOf[DomainAssociation]
   }
   
-  @scala.inline
-  implicit class DomainAssociationMutableBuilder[Self <: DomainAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: DomainAssociation](x: Self) {
     
-    @scala.inline
-    def setAutoSubDomainCreationPatterns(value: AutoSubDomainCreationPatterns): Self = StObject.set(x, "autoSubDomainCreationPatterns", value.asInstanceOf[js.Any])
+    inline def setAutoSubDomainCreationPatterns(value: AutoSubDomainCreationPatterns): Self = StObject.set(x, "autoSubDomainCreationPatterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSubDomainCreationPatternsUndefined: Self = StObject.set(x, "autoSubDomainCreationPatterns", js.undefined)
+    inline def setAutoSubDomainCreationPatternsUndefined: Self = StObject.set(x, "autoSubDomainCreationPatterns", js.undefined)
     
-    @scala.inline
-    def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = StObject.set(x, "autoSubDomainCreationPatterns", js.Array(value :_*))
+    inline def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = StObject.set(x, "autoSubDomainCreationPatterns", js.Array(value :_*))
     
-    @scala.inline
-    def setAutoSubDomainIAMRole(value: AutoSubDomainIAMRole): Self = StObject.set(x, "autoSubDomainIAMRole", value.asInstanceOf[js.Any])
+    inline def setAutoSubDomainIAMRole(value: AutoSubDomainIAMRole): Self = StObject.set(x, "autoSubDomainIAMRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoSubDomainIAMRoleUndefined: Self = StObject.set(x, "autoSubDomainIAMRole", js.undefined)
+    inline def setAutoSubDomainIAMRoleUndefined: Self = StObject.set(x, "autoSubDomainIAMRole", js.undefined)
     
-    @scala.inline
-    def setCertificateVerificationDNSRecord(value: CertificateVerificationDNSRecord): Self = StObject.set(x, "certificateVerificationDNSRecord", value.asInstanceOf[js.Any])
+    inline def setCertificateVerificationDNSRecord(value: CertificateVerificationDNSRecord): Self = StObject.set(x, "certificateVerificationDNSRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateVerificationDNSRecordUndefined: Self = StObject.set(x, "certificateVerificationDNSRecord", js.undefined)
+    inline def setCertificateVerificationDNSRecordUndefined: Self = StObject.set(x, "certificateVerificationDNSRecord", js.undefined)
     
-    @scala.inline
-    def setDomainAssociationArn(value: DomainAssociationArn): Self = StObject.set(x, "domainAssociationArn", value.asInstanceOf[js.Any])
+    inline def setDomainAssociationArn(value: DomainAssociationArn): Self = StObject.set(x, "domainAssociationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainStatus(value: DomainStatus): Self = StObject.set(x, "domainStatus", value.asInstanceOf[js.Any])
+    inline def setDomainStatus(value: DomainStatus): Self = StObject.set(x, "domainStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutoSubDomain(value: EnableAutoSubDomain): Self = StObject.set(x, "enableAutoSubDomain", value.asInstanceOf[js.Any])
+    inline def setEnableAutoSubDomain(value: EnableAutoSubDomain): Self = StObject.set(x, "enableAutoSubDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDomains(value: SubDomains): Self = StObject.set(x, "subDomains", value.asInstanceOf[js.Any])
+    inline def setSubDomains(value: SubDomains): Self = StObject.set(x, "subDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubDomainsVarargs(value: SubDomain*): Self = StObject.set(x, "subDomains", js.Array(value :_*))
+    inline def setSubDomainsVarargs(value: SubDomain*): Self = StObject.set(x, "subDomains", js.Array(value :_*))
   }
 }

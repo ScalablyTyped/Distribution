@@ -23,37 +23,27 @@ trait InstanceResizePolicy extends StObject {
 }
 object InstanceResizePolicy {
   
-  @scala.inline
-  def apply(): InstanceResizePolicy = {
+  inline def apply(): InstanceResizePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceResizePolicy]
   }
   
-  @scala.inline
-  implicit class InstanceResizePolicyMutableBuilder[Self <: InstanceResizePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceResizePolicy](x: Self) {
     
-    @scala.inline
-    def setInstanceTerminationTimeout(value: Integer): Self = StObject.set(x, "InstanceTerminationTimeout", value.asInstanceOf[js.Any])
+    inline def setInstanceTerminationTimeout(value: Integer): Self = StObject.set(x, "InstanceTerminationTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTerminationTimeoutUndefined: Self = StObject.set(x, "InstanceTerminationTimeout", js.undefined)
+    inline def setInstanceTerminationTimeoutUndefined: Self = StObject.set(x, "InstanceTerminationTimeout", js.undefined)
     
-    @scala.inline
-    def setInstancesToProtect(value: EC2InstanceIdsList): Self = StObject.set(x, "InstancesToProtect", value.asInstanceOf[js.Any])
+    inline def setInstancesToProtect(value: EC2InstanceIdsList): Self = StObject.set(x, "InstancesToProtect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesToProtectUndefined: Self = StObject.set(x, "InstancesToProtect", js.undefined)
+    inline def setInstancesToProtectUndefined: Self = StObject.set(x, "InstancesToProtect", js.undefined)
     
-    @scala.inline
-    def setInstancesToProtectVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToProtect", js.Array(value :_*))
+    inline def setInstancesToProtectVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToProtect", js.Array(value :_*))
     
-    @scala.inline
-    def setInstancesToTerminate(value: EC2InstanceIdsList): Self = StObject.set(x, "InstancesToTerminate", value.asInstanceOf[js.Any])
+    inline def setInstancesToTerminate(value: EC2InstanceIdsList): Self = StObject.set(x, "InstancesToTerminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesToTerminateUndefined: Self = StObject.set(x, "InstancesToTerminate", js.undefined)
+    inline def setInstancesToTerminateUndefined: Self = StObject.set(x, "InstancesToTerminate", js.undefined)
     
-    @scala.inline
-    def setInstancesToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToTerminate", js.Array(value :_*))
+    inline def setInstancesToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "InstancesToTerminate", js.Array(value :_*))
   }
 }

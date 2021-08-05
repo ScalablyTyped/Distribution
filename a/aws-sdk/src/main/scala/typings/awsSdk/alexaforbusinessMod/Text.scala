@@ -18,19 +18,15 @@ trait Text extends StObject {
 }
 object Text {
   
-  @scala.inline
-  def apply(Locale: Locale, Value: TextValue): Text = {
+  inline def apply(Locale: Locale, Value: TextValue): Text = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TextValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TextValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

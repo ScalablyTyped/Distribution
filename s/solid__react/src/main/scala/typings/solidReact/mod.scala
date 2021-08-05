@@ -245,29 +245,21 @@ object mod {
     def this(props: Src, context: js.Any) = this()
   }
   
-  @scala.inline
-  def useLDflex(expression: String): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
+  inline def useLDflex(expression: String): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
   
-  @scala.inline
-  def useLDflexList(expression: String): js.Array[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexList")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Array[LDflexValue]]
+  inline def useLDflexList(expression: String): js.Array[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexList")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Array[LDflexValue]]
   
-  @scala.inline
-  def useLDflexValue(expression: String): js.UndefOr[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexValue")(expression.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LDflexValue]]
+  inline def useLDflexValue(expression: String): js.UndefOr[LDflexValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLDflexValue")(expression.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LDflexValue]]
   
-  @scala.inline
-  def useLDflex_false(expression: String, listMode: `false`): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
+  inline def useLDflex_false(expression: String, listMode: `false`): js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[LDflexValue, Boolean, js.UndefOr[Error]]]
   
-  @scala.inline
-  def useLDflex_true(expression: String, listMode: `true`): js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]]]
+  inline def useLDflex_true(expression: String, listMode: `true`): js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLDflex")(expression.asInstanceOf[js.Any], listMode.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[LDflexValue], Boolean, js.UndefOr[Error]]]
   
-  @scala.inline
-  def useLoggedIn(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoggedIn")().asInstanceOf[js.UndefOr[Boolean]]
+  inline def useLoggedIn(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoggedIn")().asInstanceOf[js.UndefOr[Boolean]]
   
-  @scala.inline
-  def useLoggedOut(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoggedOut")().asInstanceOf[js.UndefOr[Boolean]]
+  inline def useLoggedOut(): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoggedOut")().asInstanceOf[js.UndefOr[Boolean]]
   
-  @scala.inline
-  def useWebId(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWebId")().asInstanceOf[js.UndefOr[String | Null]]
+  inline def useWebId(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWebId")().asInstanceOf[js.UndefOr[String | Null]]
   
   trait ActivityButtonProps extends StObject {
     
@@ -285,50 +277,36 @@ object mod {
   }
   object ActivityButtonProps {
     
-    @scala.inline
-    def apply(): ActivityButtonProps = {
+    inline def apply(): ActivityButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActivityButtonProps]
     }
     
-    @scala.inline
-    implicit class ActivityButtonPropsMutableBuilder[Self <: ActivityButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActivityButtonProps](x: Self) {
       
-      @scala.inline
-      def setActivateLabel(value: String | (js.Tuple3[String, String, ReactNode])): Self = StObject.set(x, "activateLabel", value.asInstanceOf[js.Any])
+      inline def setActivateLabel(value: String | (js.Tuple3[String, String, ReactNode])): Self = StObject.set(x, "activateLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivateLabelUndefined: Self = StObject.set(x, "activateLabel", js.undefined)
+      inline def setActivateLabelUndefined: Self = StObject.set(x, "activateLabel", js.undefined)
       
-      @scala.inline
-      def setActivateText(value: String): Self = StObject.set(x, "activateText", value.asInstanceOf[js.Any])
+      inline def setActivateText(value: String): Self = StObject.set(x, "activateText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivateTextUndefined: Self = StObject.set(x, "activateText", js.undefined)
+      inline def setActivateTextUndefined: Self = StObject.set(x, "activateText", js.undefined)
       
-      @scala.inline
-      def setDeactivateLabel(value: String | (js.Tuple3[String, String, ReactNode])): Self = StObject.set(x, "deactivateLabel", value.asInstanceOf[js.Any])
+      inline def setDeactivateLabel(value: String | (js.Tuple3[String, String, ReactNode])): Self = StObject.set(x, "deactivateLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeactivateLabelUndefined: Self = StObject.set(x, "deactivateLabel", js.undefined)
+      inline def setDeactivateLabelUndefined: Self = StObject.set(x, "deactivateLabel", js.undefined)
       
-      @scala.inline
-      def setDeactivateText(value: String): Self = StObject.set(x, "deactivateText", value.asInstanceOf[js.Any])
+      inline def setDeactivateText(value: String): Self = StObject.set(x, "deactivateText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeactivateTextUndefined: Self = StObject.set(x, "deactivateText", js.undefined)
+      inline def setDeactivateTextUndefined: Self = StObject.set(x, "deactivateText", js.undefined)
       
-      @scala.inline
-      def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+      inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     }
   }
   
@@ -342,20 +320,16 @@ object mod {
   }
   object AuthButtonProps {
     
-    @scala.inline
-    def apply(login: String, logout: String, popup: String): AuthButtonProps = {
+    inline def apply(login: String, logout: String, popup: String): AuthButtonProps = {
       val __obj = js.Dynamic.literal(login = login.asInstanceOf[js.Any], logout = logout.asInstanceOf[js.Any], popup = popup.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthButtonProps]
     }
     
-    @scala.inline
-    implicit class AuthButtonPropsMutableBuilder[Self <: AuthButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: AuthButtonProps](x: Self) {
       
-      @scala.inline
-      def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+      inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogout(value: String): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
+      inline def setLogout(value: String): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -387,49 +361,36 @@ object mod {
   }
   object ListProps {
     
-    @scala.inline
-    def apply(src: String): ListProps = {
+    inline def apply(src: String): ListProps = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListProps]
     }
     
-    @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: (/* listItem */ LDflexValue, /* index */ Double) => Element): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (/* listItem */ LDflexValue, /* index */ Double) => Element): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setContainer(value: /* items */ Element => Element): Self = StObject.set(x, "container", js.Any.fromFunction1(value))
+      inline def setContainer(value: /* items */ Element => Element): Self = StObject.set(x, "container", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* item */ LDflexValue, /* index */ Double, /* array */ js.Array[LDflexValue]) => /* is @solid/react.@solid/react.LDflexValue */ Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -441,23 +402,18 @@ object mod {
   }
   object LoginButtonProps {
     
-    @scala.inline
-    def apply(popup: String): LoginButtonProps = {
+    inline def apply(popup: String): LoginButtonProps = {
       val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoginButtonProps]
     }
     
-    @scala.inline
-    implicit class LoginButtonPropsMutableBuilder[Self <: LoginButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoginButtonProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+      inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     }
   }
 }

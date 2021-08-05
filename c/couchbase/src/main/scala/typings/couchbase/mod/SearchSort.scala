@@ -45,15 +45,11 @@ object SearchSort {
   @js.native
   class ScoreSort () extends SearchSort
   
-  @scala.inline
-  def field(field: String): FieldSort = ^.asInstanceOf[js.Dynamic].applyDynamic("field")(field.asInstanceOf[js.Any]).asInstanceOf[FieldSort]
+  inline def field(field: String): FieldSort = ^.asInstanceOf[js.Dynamic].applyDynamic("field")(field.asInstanceOf[js.Any]).asInstanceOf[FieldSort]
   
-  @scala.inline
-  def geoDistance(field: String, lat: Double, lon: Double): GeoDistanceSort = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(field.asInstanceOf[js.Any], lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[GeoDistanceSort]
+  inline def geoDistance(field: String, lat: Double, lon: Double): GeoDistanceSort = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(field.asInstanceOf[js.Any], lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[GeoDistanceSort]
   
-  @scala.inline
-  def id(): IdSort = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[IdSort]
+  inline def id(): IdSort = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[IdSort]
   
-  @scala.inline
-  def score(): ScoreSort = ^.asInstanceOf[js.Dynamic].applyDynamic("score")().asInstanceOf[ScoreSort]
+  inline def score(): ScoreSort = ^.asInstanceOf[js.Dynamic].applyDynamic("score")().asInstanceOf[ScoreSort]
 }

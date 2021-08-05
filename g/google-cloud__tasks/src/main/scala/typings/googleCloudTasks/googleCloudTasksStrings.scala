@@ -8,11 +8,9 @@ object googleCloudTasksStrings {
   
   @js.native
   sealed trait CreateNamedRequest extends StObject
-  @scala.inline
-  def CreateNamedRequest: CreateNamedRequest = "CreateNamedRequest".asInstanceOf[CreateNamedRequest]
+  inline def CreateNamedRequest: CreateNamedRequest = "CreateNamedRequest".asInstanceOf[CreateNamedRequest]
   
   @js.native
   sealed trait UpdateNamedRequest extends StObject
-  @scala.inline
-  def UpdateNamedRequest: UpdateNamedRequest = "UpdateNamedRequest".asInstanceOf[UpdateNamedRequest]
+  inline def UpdateNamedRequest: UpdateNamedRequest = "UpdateNamedRequest".asInstanceOf[UpdateNamedRequest]
 }

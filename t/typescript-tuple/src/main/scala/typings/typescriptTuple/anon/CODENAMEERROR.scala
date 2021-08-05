@@ -14,19 +14,15 @@ trait CODENAMEERROR extends StObject {
 }
 object CODENAMEERROR {
   
-  @scala.inline
-  def apply(CODENAME: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): CODENAMEERROR = {
+  inline def apply(CODENAME: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): CODENAMEERROR = {
     val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = "TupleSet is not finite")
     __obj.asInstanceOf[CODENAMEERROR]
   }
   
-  @scala.inline
-  implicit class CODENAMEERRORMutableBuilder[Self <: CODENAMEERROR] (val x: Self) extends AnyVal {
+  extension [Self <: CODENAMEERROR](x: Self) {
     
-    @scala.inline
-    def setCODENAME(value: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
+    inline def setCODENAME(value: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: `TupleSet is not finite`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: `TupleSet is not finite`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
   }
 }

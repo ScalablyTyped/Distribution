@@ -22,20 +22,16 @@ object pauseSmallMod extends Shortcut {
   }
   object PauseSmallProps {
     
-    @scala.inline
-    def apply(): PauseSmallProps = {
+    inline def apply(): PauseSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PauseSmallProps]
     }
     
-    @scala.inline
-    implicit class PauseSmallPropsMutableBuilder[Self <: PauseSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: PauseSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

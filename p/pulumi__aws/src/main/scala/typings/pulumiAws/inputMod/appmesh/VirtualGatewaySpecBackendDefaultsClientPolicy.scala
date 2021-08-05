@@ -14,19 +14,15 @@ trait VirtualGatewaySpecBackendDefaultsClientPolicy extends StObject {
 }
 object VirtualGatewaySpecBackendDefaultsClientPolicy {
   
-  @scala.inline
-  def apply(): VirtualGatewaySpecBackendDefaultsClientPolicy = {
+  inline def apply(): VirtualGatewaySpecBackendDefaultsClientPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualGatewaySpecBackendDefaultsClientPolicy]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecBackendDefaultsClientPolicyMutableBuilder[Self <: VirtualGatewaySpecBackendDefaultsClientPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpecBackendDefaultsClientPolicy](x: Self) {
     
-    @scala.inline
-    def setTls(value: Input[VirtualGatewaySpecBackendDefaultsClientPolicyTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Input[VirtualGatewaySpecBackendDefaultsClientPolicyTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

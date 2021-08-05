@@ -133,157 +133,107 @@ trait CoverageGrouping
 }
 object CoverageGrouping {
   
-  @scala.inline
-  def apply(): CoverageGrouping = {
+  inline def apply(): CoverageGrouping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoverageGrouping]
   }
   
-  @scala.inline
-  implicit class CoverageGroupingMutableBuilder[Self <: CoverageGrouping] (val x: Self) extends AnyVal {
+  extension [Self <: CoverageGrouping](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassDisplay(value: String): Self = StObject.set(x, "classDisplay", value.asInstanceOf[js.Any])
+    inline def setClassDisplay(value: String): Self = StObject.set(x, "classDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassDisplayUndefined: Self = StObject.set(x, "classDisplay", js.undefined)
+    inline def setClassDisplayUndefined: Self = StObject.set(x, "classDisplay", js.undefined)
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDisplay(value: String): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
+    inline def setGroupDisplay(value: String): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDisplayUndefined: Self = StObject.set(x, "groupDisplay", js.undefined)
+    inline def setGroupDisplayUndefined: Self = StObject.set(x, "groupDisplay", js.undefined)
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+    inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanDisplay(value: String): Self = StObject.set(x, "planDisplay", value.asInstanceOf[js.Any])
+    inline def setPlanDisplay(value: String): Self = StObject.set(x, "planDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanDisplayUndefined: Self = StObject.set(x, "planDisplay", js.undefined)
+    inline def setPlanDisplayUndefined: Self = StObject.set(x, "planDisplay", js.undefined)
     
-    @scala.inline
-    def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+    inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
     
-    @scala.inline
-    def setSubClass(value: String): Self = StObject.set(x, "subClass", value.asInstanceOf[js.Any])
+    inline def setSubClass(value: String): Self = StObject.set(x, "subClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubClassDisplay(value: String): Self = StObject.set(x, "subClassDisplay", value.asInstanceOf[js.Any])
+    inline def setSubClassDisplay(value: String): Self = StObject.set(x, "subClassDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubClassDisplayUndefined: Self = StObject.set(x, "subClassDisplay", js.undefined)
+    inline def setSubClassDisplayUndefined: Self = StObject.set(x, "subClassDisplay", js.undefined)
     
-    @scala.inline
-    def setSubClassUndefined: Self = StObject.set(x, "subClass", js.undefined)
+    inline def setSubClassUndefined: Self = StObject.set(x, "subClass", js.undefined)
     
-    @scala.inline
-    def setSubGroup(value: String): Self = StObject.set(x, "subGroup", value.asInstanceOf[js.Any])
+    inline def setSubGroup(value: String): Self = StObject.set(x, "subGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubGroupDisplay(value: String): Self = StObject.set(x, "subGroupDisplay", value.asInstanceOf[js.Any])
+    inline def setSubGroupDisplay(value: String): Self = StObject.set(x, "subGroupDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubGroupDisplayUndefined: Self = StObject.set(x, "subGroupDisplay", js.undefined)
+    inline def setSubGroupDisplayUndefined: Self = StObject.set(x, "subGroupDisplay", js.undefined)
     
-    @scala.inline
-    def setSubGroupUndefined: Self = StObject.set(x, "subGroup", js.undefined)
+    inline def setSubGroupUndefined: Self = StObject.set(x, "subGroup", js.undefined)
     
-    @scala.inline
-    def setSubPlan(value: String): Self = StObject.set(x, "subPlan", value.asInstanceOf[js.Any])
+    inline def setSubPlan(value: String): Self = StObject.set(x, "subPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPlanDisplay(value: String): Self = StObject.set(x, "subPlanDisplay", value.asInstanceOf[js.Any])
+    inline def setSubPlanDisplay(value: String): Self = StObject.set(x, "subPlanDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPlanDisplayUndefined: Self = StObject.set(x, "subPlanDisplay", js.undefined)
+    inline def setSubPlanDisplayUndefined: Self = StObject.set(x, "subPlanDisplay", js.undefined)
     
-    @scala.inline
-    def setSubPlanUndefined: Self = StObject.set(x, "subPlan", js.undefined)
+    inline def setSubPlanUndefined: Self = StObject.set(x, "subPlan", js.undefined)
     
-    @scala.inline
-    def set_class(value: Element): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: Element): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_classDisplay(value: Element): Self = StObject.set(x, "_classDisplay", value.asInstanceOf[js.Any])
+    inline def set_classDisplay(value: Element): Self = StObject.set(x, "_classDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_classDisplayUndefined: Self = StObject.set(x, "_classDisplay", js.undefined)
+    inline def set_classDisplayUndefined: Self = StObject.set(x, "_classDisplay", js.undefined)
     
-    @scala.inline
-    def set_classUndefined: Self = StObject.set(x, "_class", js.undefined)
+    inline def set_classUndefined: Self = StObject.set(x, "_class", js.undefined)
     
-    @scala.inline
-    def set_group(value: Element): Self = StObject.set(x, "_group", value.asInstanceOf[js.Any])
+    inline def set_group(value: Element): Self = StObject.set(x, "_group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_groupDisplay(value: Element): Self = StObject.set(x, "_groupDisplay", value.asInstanceOf[js.Any])
+    inline def set_groupDisplay(value: Element): Self = StObject.set(x, "_groupDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_groupDisplayUndefined: Self = StObject.set(x, "_groupDisplay", js.undefined)
+    inline def set_groupDisplayUndefined: Self = StObject.set(x, "_groupDisplay", js.undefined)
     
-    @scala.inline
-    def set_groupUndefined: Self = StObject.set(x, "_group", js.undefined)
+    inline def set_groupUndefined: Self = StObject.set(x, "_group", js.undefined)
     
-    @scala.inline
-    def set_plan(value: Element): Self = StObject.set(x, "_plan", value.asInstanceOf[js.Any])
+    inline def set_plan(value: Element): Self = StObject.set(x, "_plan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_planDisplay(value: Element): Self = StObject.set(x, "_planDisplay", value.asInstanceOf[js.Any])
+    inline def set_planDisplay(value: Element): Self = StObject.set(x, "_planDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_planDisplayUndefined: Self = StObject.set(x, "_planDisplay", js.undefined)
+    inline def set_planDisplayUndefined: Self = StObject.set(x, "_planDisplay", js.undefined)
     
-    @scala.inline
-    def set_planUndefined: Self = StObject.set(x, "_plan", js.undefined)
+    inline def set_planUndefined: Self = StObject.set(x, "_plan", js.undefined)
     
-    @scala.inline
-    def set_subClass(value: Element): Self = StObject.set(x, "_subClass", value.asInstanceOf[js.Any])
+    inline def set_subClass(value: Element): Self = StObject.set(x, "_subClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_subClassDisplay(value: Element): Self = StObject.set(x, "_subClassDisplay", value.asInstanceOf[js.Any])
+    inline def set_subClassDisplay(value: Element): Self = StObject.set(x, "_subClassDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_subClassDisplayUndefined: Self = StObject.set(x, "_subClassDisplay", js.undefined)
+    inline def set_subClassDisplayUndefined: Self = StObject.set(x, "_subClassDisplay", js.undefined)
     
-    @scala.inline
-    def set_subClassUndefined: Self = StObject.set(x, "_subClass", js.undefined)
+    inline def set_subClassUndefined: Self = StObject.set(x, "_subClass", js.undefined)
     
-    @scala.inline
-    def set_subGroup(value: Element): Self = StObject.set(x, "_subGroup", value.asInstanceOf[js.Any])
+    inline def set_subGroup(value: Element): Self = StObject.set(x, "_subGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_subGroupDisplay(value: Element): Self = StObject.set(x, "_subGroupDisplay", value.asInstanceOf[js.Any])
+    inline def set_subGroupDisplay(value: Element): Self = StObject.set(x, "_subGroupDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_subGroupDisplayUndefined: Self = StObject.set(x, "_subGroupDisplay", js.undefined)
+    inline def set_subGroupDisplayUndefined: Self = StObject.set(x, "_subGroupDisplay", js.undefined)
     
-    @scala.inline
-    def set_subGroupUndefined: Self = StObject.set(x, "_subGroup", js.undefined)
+    inline def set_subGroupUndefined: Self = StObject.set(x, "_subGroup", js.undefined)
     
-    @scala.inline
-    def set_subPlan(value: Element): Self = StObject.set(x, "_subPlan", value.asInstanceOf[js.Any])
+    inline def set_subPlan(value: Element): Self = StObject.set(x, "_subPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_subPlanDisplay(value: Element): Self = StObject.set(x, "_subPlanDisplay", value.asInstanceOf[js.Any])
+    inline def set_subPlanDisplay(value: Element): Self = StObject.set(x, "_subPlanDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_subPlanDisplayUndefined: Self = StObject.set(x, "_subPlanDisplay", js.undefined)
+    inline def set_subPlanDisplayUndefined: Self = StObject.set(x, "_subPlanDisplay", js.undefined)
     
-    @scala.inline
-    def set_subPlanUndefined: Self = StObject.set(x, "_subPlan", js.undefined)
+    inline def set_subPlanUndefined: Self = StObject.set(x, "_subPlan", js.undefined)
   }
 }

@@ -42,70 +42,49 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(): Account = {
+  inline def apply(): Account = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setApplyPretargetingToNonGuaranteedDeals(value: Boolean): Self = StObject.set(x, "applyPretargetingToNonGuaranteedDeals", value.asInstanceOf[js.Any])
+    inline def setApplyPretargetingToNonGuaranteedDeals(value: Boolean): Self = StObject.set(x, "applyPretargetingToNonGuaranteedDeals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyPretargetingToNonGuaranteedDealsUndefined: Self = StObject.set(x, "applyPretargetingToNonGuaranteedDeals", js.undefined)
+    inline def setApplyPretargetingToNonGuaranteedDealsUndefined: Self = StObject.set(x, "applyPretargetingToNonGuaranteedDeals", js.undefined)
     
-    @scala.inline
-    def setBidderLocation(value: js.Array[BidProtocol]): Self = StObject.set(x, "bidderLocation", value.asInstanceOf[js.Any])
+    inline def setBidderLocation(value: js.Array[BidProtocol]): Self = StObject.set(x, "bidderLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidderLocationUndefined: Self = StObject.set(x, "bidderLocation", js.undefined)
+    inline def setBidderLocationUndefined: Self = StObject.set(x, "bidderLocation", js.undefined)
     
-    @scala.inline
-    def setBidderLocationVarargs(value: BidProtocol*): Self = StObject.set(x, "bidderLocation", js.Array(value :_*))
+    inline def setBidderLocationVarargs(value: BidProtocol*): Self = StObject.set(x, "bidderLocation", js.Array(value :_*))
     
-    @scala.inline
-    def setCookieMatchingNid(value: String): Self = StObject.set(x, "cookieMatchingNid", value.asInstanceOf[js.Any])
+    inline def setCookieMatchingNid(value: String): Self = StObject.set(x, "cookieMatchingNid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieMatchingNidUndefined: Self = StObject.set(x, "cookieMatchingNid", js.undefined)
+    inline def setCookieMatchingNidUndefined: Self = StObject.set(x, "cookieMatchingNid", js.undefined)
     
-    @scala.inline
-    def setCookieMatchingUrl(value: String): Self = StObject.set(x, "cookieMatchingUrl", value.asInstanceOf[js.Any])
+    inline def setCookieMatchingUrl(value: String): Self = StObject.set(x, "cookieMatchingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieMatchingUrlUndefined: Self = StObject.set(x, "cookieMatchingUrl", js.undefined)
+    inline def setCookieMatchingUrlUndefined: Self = StObject.set(x, "cookieMatchingUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMaximumActiveCreatives(value: Double): Self = StObject.set(x, "maximumActiveCreatives", value.asInstanceOf[js.Any])
+    inline def setMaximumActiveCreatives(value: Double): Self = StObject.set(x, "maximumActiveCreatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumActiveCreativesUndefined: Self = StObject.set(x, "maximumActiveCreatives", js.undefined)
+    inline def setMaximumActiveCreativesUndefined: Self = StObject.set(x, "maximumActiveCreatives", js.undefined)
     
-    @scala.inline
-    def setMaximumTotalQps(value: Double): Self = StObject.set(x, "maximumTotalQps", value.asInstanceOf[js.Any])
+    inline def setMaximumTotalQps(value: Double): Self = StObject.set(x, "maximumTotalQps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumTotalQpsUndefined: Self = StObject.set(x, "maximumTotalQps", js.undefined)
+    inline def setMaximumTotalQpsUndefined: Self = StObject.set(x, "maximumTotalQps", js.undefined)
     
-    @scala.inline
-    def setNumberActiveCreatives(value: Double): Self = StObject.set(x, "numberActiveCreatives", value.asInstanceOf[js.Any])
+    inline def setNumberActiveCreatives(value: Double): Self = StObject.set(x, "numberActiveCreatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberActiveCreativesUndefined: Self = StObject.set(x, "numberActiveCreatives", js.undefined)
+    inline def setNumberActiveCreativesUndefined: Self = StObject.set(x, "numberActiveCreatives", js.undefined)
   }
 }

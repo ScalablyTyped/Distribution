@@ -26,25 +26,19 @@ trait SchemaLocalCopy extends StObject {
 }
 object SchemaLocalCopy {
   
-  @scala.inline
-  def apply(): SchemaLocalCopy = {
+  inline def apply(): SchemaLocalCopy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocalCopy]
   }
   
-  @scala.inline
-  implicit class SchemaLocalCopyMutableBuilder[Self <: SchemaLocalCopy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocalCopy](x: Self) {
     
-    @scala.inline
-    def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
+    inline def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
+    inline def setDiskUndefined: Self = StObject.set(x, "disk", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

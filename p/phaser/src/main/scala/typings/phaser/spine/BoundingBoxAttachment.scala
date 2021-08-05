@@ -12,8 +12,7 @@ trait BoundingBoxAttachment
 }
 object BoundingBoxAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bones: js.Array[Double],
     color: Color,
     computeWorldVertices: (Slot, Double, Double, ArrayLike[Double], Double, Double) => Unit,
@@ -29,10 +28,8 @@ object BoundingBoxAttachment {
     __obj.asInstanceOf[BoundingBoxAttachment]
   }
   
-  @scala.inline
-  implicit class BoundingBoxAttachmentMutableBuilder[Self <: BoundingBoxAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: BoundingBoxAttachment](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object prependHttpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prependHTTP(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prependHTTP")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prependHTTP(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prependHTTP")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

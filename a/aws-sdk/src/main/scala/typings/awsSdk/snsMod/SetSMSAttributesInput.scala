@@ -13,16 +13,13 @@ trait SetSMSAttributesInput extends StObject {
 }
 object SetSMSAttributesInput {
   
-  @scala.inline
-  def apply(attributes: MapStringToString): SetSMSAttributesInput = {
+  inline def apply(attributes: MapStringToString): SetSMSAttributesInput = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSMSAttributesInput]
   }
   
-  @scala.inline
-  implicit class SetSMSAttributesInputMutableBuilder[Self <: SetSMSAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: SetSMSAttributesInput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
   }
 }

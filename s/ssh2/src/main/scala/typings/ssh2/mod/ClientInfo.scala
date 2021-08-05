@@ -15,19 +15,15 @@ trait ClientInfo extends StObject {
 }
 object ClientInfo {
   
-  @scala.inline
-  def apply(header: Header, ip: String): ClientInfo = {
+  inline def apply(header: Header, ip: String): ClientInfo = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientInfo]
   }
   
-  @scala.inline
-  implicit class ClientInfoMutableBuilder[Self <: ClientInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClientInfo](x: Self) {
     
-    @scala.inline
-    def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }
 }

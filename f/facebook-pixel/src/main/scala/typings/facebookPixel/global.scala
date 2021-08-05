@@ -10,8 +10,7 @@ object global {
   @JSGlobal("fbq")
   @js.native
   def fbq: Event = js.native
-  @scala.inline
-  def fbq_=(x: Event): Unit = js.Dynamic.global.updateDynamic("fbq")(x.asInstanceOf[js.Any])
+  inline def fbq_=(x: Event): Unit = js.Dynamic.global.updateDynamic("fbq")(x.asInstanceOf[js.Any])
   
   object facebook {
     

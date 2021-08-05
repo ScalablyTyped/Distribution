@@ -21,8 +21,7 @@ trait StorageItemThumbnail
 }
 object StorageItemThumbnail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRead: Boolean,
     canWrite: Boolean,
     cloneStream: () => IRandomAccessStream,
@@ -47,10 +46,8 @@ object StorageItemThumbnail {
     __obj.asInstanceOf[StorageItemThumbnail]
   }
   
-  @scala.inline
-  implicit class StorageItemThumbnailMutableBuilder[Self <: StorageItemThumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: StorageItemThumbnail](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

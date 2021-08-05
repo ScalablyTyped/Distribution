@@ -17,8 +17,7 @@ trait XTitleChangeListener
 }
 object XTitleChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -29,10 +28,8 @@ object XTitleChangeListener {
     __obj.asInstanceOf[XTitleChangeListener]
   }
   
-  @scala.inline
-  implicit class XTitleChangeListenerMutableBuilder[Self <: XTitleChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XTitleChangeListener](x: Self) {
     
-    @scala.inline
-    def setTitleChanged(value: TitleChangedEvent => Unit): Self = StObject.set(x, "titleChanged", js.Any.fromFunction1(value))
+    inline def setTitleChanged(value: TitleChangedEvent => Unit): Self = StObject.set(x, "titleChanged", js.Any.fromFunction1(value))
   }
 }

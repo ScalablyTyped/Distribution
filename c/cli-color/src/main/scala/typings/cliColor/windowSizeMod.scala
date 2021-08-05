@@ -25,20 +25,16 @@ object windowSizeMod extends Shortcut {
   }
   object WindowSize {
     
-    @scala.inline
-    def apply(height: Double, width: Double): WindowSize = {
+    inline def apply(height: Double, width: Double): WindowSize = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowSize]
     }
     
-    @scala.inline
-    implicit class WindowSizeMutableBuilder[Self <: WindowSize] (val x: Self) extends AnyVal {
+    extension [Self <: WindowSize](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   

@@ -14,25 +14,19 @@ trait FlowId extends StObject {
 }
 object FlowId {
   
-  @scala.inline
-  def apply(flow: js.Object, id: String): FlowId = {
+  inline def apply(flow: js.Object, id: String): FlowId = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowId]
   }
   
-  @scala.inline
-  implicit class FlowIdMutableBuilder[Self <: FlowId] (val x: Self) extends AnyVal {
+  extension [Self <: FlowId](x: Self) {
     
-    @scala.inline
-    def setFlow(value: js.Object): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: js.Object): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

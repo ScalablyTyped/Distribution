@@ -39,23 +39,18 @@ object formSectionMod {
   }
   object FormSectionProps {
     
-    @scala.inline
-    def apply[P](name: String): FormSectionProps[P] = {
+    inline def apply[P](name: String): FormSectionProps[P] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormSectionProps[P]]
     }
     
-    @scala.inline
-    implicit class FormSectionPropsMutableBuilder[Self <: FormSectionProps[?], P] (val x: Self & FormSectionProps[P]) extends AnyVal {
+    extension [Self <: FormSectionProps[?], P](x: Self & FormSectionProps[P]) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -187,97 +187,67 @@ trait PlusWebviewWebviewTitleNViewButtonStyles extends StObject {
 }
 object PlusWebviewWebviewTitleNViewButtonStyles {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewTitleNViewButtonStyles = {
+  inline def apply(): PlusWebviewWebviewTitleNViewButtonStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewTitleNViewButtonStyles]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewTitleNViewButtonStylesMutableBuilder[Self <: PlusWebviewWebviewTitleNViewButtonStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewTitleNViewButtonStyles](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBadgeText(value: String): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
+    inline def setBadgeText(value: String): Self = StObject.set(x, "badgeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeTextUndefined: Self = StObject.set(x, "badgeText", js.undefined)
+    inline def setBadgeTextUndefined: Self = StObject.set(x, "badgeText", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPressed(value: String): Self = StObject.set(x, "colorPressed", value.asInstanceOf[js.Any])
+    inline def setColorPressed(value: String): Self = StObject.set(x, "colorPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPressedUndefined: Self = StObject.set(x, "colorPressed", js.undefined)
+    inline def setColorPressedUndefined: Self = StObject.set(x, "colorPressed", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFloat(value: right | left): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: right | left): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+    inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setFontSrc(value: String): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
+    inline def setFontSrc(value: String): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
+    inline def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
     
-    @scala.inline
-    def setFontWeight(value: normal | bold): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: normal | bold): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setOnclick(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
+    inline def setOnclick(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+    inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
-    @scala.inline
-    def setRedDot(value: Boolean): Self = StObject.set(x, "redDot", value.asInstanceOf[js.Any])
+    inline def setRedDot(value: Boolean): Self = StObject.set(x, "redDot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedDotUndefined: Self = StObject.set(x, "redDot", js.undefined)
+    inline def setRedDotUndefined: Self = StObject.set(x, "redDot", js.undefined)
     
-    @scala.inline
-    def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: forward | back | share | favorite | home | menu | close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: forward | back | share | favorite | home | menu | close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

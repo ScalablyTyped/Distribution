@@ -13,16 +13,13 @@ trait DeletePortalResponse extends StObject {
 }
 object DeletePortalResponse {
   
-  @scala.inline
-  def apply(portalStatus: PortalStatus): DeletePortalResponse = {
+  inline def apply(portalStatus: PortalStatus): DeletePortalResponse = {
     val __obj = js.Dynamic.literal(portalStatus = portalStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePortalResponse]
   }
   
-  @scala.inline
-  implicit class DeletePortalResponseMutableBuilder[Self <: DeletePortalResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePortalResponse](x: Self) {
     
-    @scala.inline
-    def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
+    inline def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
   }
 }

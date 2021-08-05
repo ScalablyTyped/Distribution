@@ -20,25 +20,19 @@ trait AppsCreateContentAttachmentRequestOptions extends StObject {
 }
 object AppsCreateContentAttachmentRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsCreateContentAttachmentRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsCreateContentAttachmentRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/content_references/:content_reference_id/attachments")
     __obj.asInstanceOf[AppsCreateContentAttachmentRequestOptions]
   }
   
-  @scala.inline
-  implicit class AppsCreateContentAttachmentRequestOptionsMutableBuilder[Self <: AppsCreateContentAttachmentRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppsCreateContentAttachmentRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Slashcontent_referencesSlashColoncontent_reference_idSlashattachments): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Slashcontent_referencesSlashColoncontent_reference_idSlashattachments): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

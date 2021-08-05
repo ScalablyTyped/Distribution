@@ -51,44 +51,37 @@ object mod {
       @JSImport("react-easy-crop", "default.defaultProps.aspect")
       @js.native
       def aspect: Double = js.native
-      @scala.inline
-      def aspect_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aspect")(x.asInstanceOf[js.Any])
+      inline def aspect_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aspect")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.cropShape")
       @js.native
       def cropShape: String = js.native
-      @scala.inline
-      def cropShape_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cropShape")(x.asInstanceOf[js.Any])
+      inline def cropShape_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cropShape")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.maxZoom")
       @js.native
       def maxZoom: Double = js.native
-      @scala.inline
-      def maxZoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxZoom")(x.asInstanceOf[js.Any])
+      inline def maxZoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxZoom")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.minZoom")
       @js.native
       def minZoom: Double = js.native
-      @scala.inline
-      def minZoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minZoom")(x.asInstanceOf[js.Any])
+      inline def minZoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minZoom")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.restrictPosition")
       @js.native
       def restrictPosition: Boolean = js.native
-      @scala.inline
-      def restrictPosition_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("restrictPosition")(x.asInstanceOf[js.Any])
+      inline def restrictPosition_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("restrictPosition")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.rotation")
       @js.native
       def rotation: Double = js.native
-      @scala.inline
-      def rotation_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotation")(x.asInstanceOf[js.Any])
+      inline def rotation_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rotation")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.showGrid")
       @js.native
       def showGrid: Boolean = js.native
-      @scala.inline
-      def showGrid_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showGrid")(x.asInstanceOf[js.Any])
+      inline def showGrid_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showGrid")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.zoom")
       @js.native
@@ -97,32 +90,27 @@ object mod {
       @JSImport("react-easy-crop", "default.defaultProps.zoomSpeed")
       @js.native
       def zoomSpeed: Double = js.native
-      @scala.inline
-      def zoomSpeed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoomSpeed")(x.asInstanceOf[js.Any])
+      inline def zoomSpeed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoomSpeed")(x.asInstanceOf[js.Any])
       
       @JSImport("react-easy-crop", "default.defaultProps.zoomWithScroll")
       @js.native
       def zoomWithScroll: Boolean = js.native
-      @scala.inline
-      def zoomWithScroll_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoomWithScroll")(x.asInstanceOf[js.Any])
+      inline def zoomWithScroll_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoomWithScroll")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def zoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoom")(x.asInstanceOf[js.Any])
+      inline def zoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoom")(x.asInstanceOf[js.Any])
     }
     
     /* static member */
     @JSImport("react-easy-crop", "default.getMousePoint")
     @js.native
     def getMousePoint: js.Function1[/* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]), X] = js.native
-    @scala.inline
-    def getMousePoint_=(x: js.Function1[/* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]), X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMousePoint")(x.asInstanceOf[js.Any])
+    inline def getMousePoint_=(x: js.Function1[/* e */ MouseEvent | (typings.react.mod.MouseEvent[Element, NativeMouseEvent]), X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMousePoint")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("react-easy-crop", "default.getTouchPoint")
     @js.native
     def getTouchPoint: js.Function1[/* touch */ Touch | typings.react.mod.Touch, X] = js.native
-    @scala.inline
-    def getTouchPoint_=(x: js.Function1[/* touch */ Touch | typings.react.mod.Touch, X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTouchPoint")(x.asInstanceOf[js.Any])
+    inline def getTouchPoint_=(x: js.Function1[/* touch */ Touch | typings.react.mod.Touch, X]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTouchPoint")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -275,8 +263,7 @@ object mod {
   }
   object CropperProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aspect: Double,
       classes: ContainerClassName,
       crop: Point,
@@ -295,143 +282,97 @@ object mod {
       __obj.asInstanceOf[CropperProps]
     }
     
-    @scala.inline
-    implicit class CropperPropsMutableBuilder[Self <: CropperProps] (val x: Self) extends AnyVal {
+    extension [Self <: CropperProps](x: Self) {
       
-      @scala.inline
-      def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
+      inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClasses(value: ContainerClassName): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: ContainerClassName): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrop(value: Point): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: Point): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropShape(value: rect | round): Self = StObject.set(x, "cropShape", value.asInstanceOf[js.Any])
+      inline def setCropShape(value: rect | round): Self = StObject.set(x, "cropShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropSize(value: Size): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
+      inline def setCropSize(value: Size): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropSizeUndefined: Self = StObject.set(x, "cropSize", js.undefined)
+      inline def setCropSizeUndefined: Self = StObject.set(x, "cropSize", js.undefined)
       
-      @scala.inline
-      def setDisableAutomaticStylesInjection(value: Boolean): Self = StObject.set(x, "disableAutomaticStylesInjection", value.asInstanceOf[js.Any])
+      inline def setDisableAutomaticStylesInjection(value: Boolean): Self = StObject.set(x, "disableAutomaticStylesInjection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAutomaticStylesInjectionUndefined: Self = StObject.set(x, "disableAutomaticStylesInjection", js.undefined)
+      inline def setDisableAutomaticStylesInjectionUndefined: Self = StObject.set(x, "disableAutomaticStylesInjection", js.undefined)
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setInitialCroppedAreaPixels(value: Area): Self = StObject.set(x, "initialCroppedAreaPixels", value.asInstanceOf[js.Any])
+      inline def setInitialCroppedAreaPixels(value: Area): Self = StObject.set(x, "initialCroppedAreaPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialCroppedAreaPixelsUndefined: Self = StObject.set(x, "initialCroppedAreaPixels", js.undefined)
+      inline def setInitialCroppedAreaPixelsUndefined: Self = StObject.set(x, "initialCroppedAreaPixels", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaProps(value: ImgHTMLAttributes[HTMLElement] | VideoHTMLAttributes[HTMLElement]): Self = StObject.set(x, "mediaProps", value.asInstanceOf[js.Any])
+      inline def setMediaProps(value: ImgHTMLAttributes[HTMLElement] | VideoHTMLAttributes[HTMLElement]): Self = StObject.set(x, "mediaProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCropAreaChange(value: (/* croppedArea */ Area, /* croppedAreaPixels */ Area) => Unit): Self = StObject.set(x, "onCropAreaChange", js.Any.fromFunction2(value))
+      inline def setOnCropAreaChange(value: (/* croppedArea */ Area, /* croppedAreaPixels */ Area) => Unit): Self = StObject.set(x, "onCropAreaChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCropAreaChangeUndefined: Self = StObject.set(x, "onCropAreaChange", js.undefined)
+      inline def setOnCropAreaChangeUndefined: Self = StObject.set(x, "onCropAreaChange", js.undefined)
       
-      @scala.inline
-      def setOnCropChange(value: Point => Unit): Self = StObject.set(x, "onCropChange", js.Any.fromFunction1(value))
+      inline def setOnCropChange(value: Point => Unit): Self = StObject.set(x, "onCropChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCropComplete(value: (/* croppedArea */ Area, /* croppedAreaPixels */ Area) => Unit): Self = StObject.set(x, "onCropComplete", js.Any.fromFunction2(value))
+      inline def setOnCropComplete(value: (/* croppedArea */ Area, /* croppedAreaPixels */ Area) => Unit): Self = StObject.set(x, "onCropComplete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCropCompleteUndefined: Self = StObject.set(x, "onCropComplete", js.undefined)
+      inline def setOnCropCompleteUndefined: Self = StObject.set(x, "onCropComplete", js.undefined)
       
-      @scala.inline
-      def setOnCropSizeChange(value: /* cropSize */ Size => Unit): Self = StObject.set(x, "onCropSizeChange", js.Any.fromFunction1(value))
+      inline def setOnCropSizeChange(value: /* cropSize */ Size => Unit): Self = StObject.set(x, "onCropSizeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCropSizeChangeUndefined: Self = StObject.set(x, "onCropSizeChange", js.undefined)
+      inline def setOnCropSizeChangeUndefined: Self = StObject.set(x, "onCropSizeChange", js.undefined)
       
-      @scala.inline
-      def setOnInteractionEnd(value: () => Unit): Self = StObject.set(x, "onInteractionEnd", js.Any.fromFunction0(value))
+      inline def setOnInteractionEnd(value: () => Unit): Self = StObject.set(x, "onInteractionEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInteractionEndUndefined: Self = StObject.set(x, "onInteractionEnd", js.undefined)
+      inline def setOnInteractionEndUndefined: Self = StObject.set(x, "onInteractionEnd", js.undefined)
       
-      @scala.inline
-      def setOnInteractionStart(value: () => Unit): Self = StObject.set(x, "onInteractionStart", js.Any.fromFunction0(value))
+      inline def setOnInteractionStart(value: () => Unit): Self = StObject.set(x, "onInteractionStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnInteractionStartUndefined: Self = StObject.set(x, "onInteractionStart", js.undefined)
+      inline def setOnInteractionStartUndefined: Self = StObject.set(x, "onInteractionStart", js.undefined)
       
-      @scala.inline
-      def setOnMediaLoaded(value: /* mediaSize */ MediaSize => Unit): Self = StObject.set(x, "onMediaLoaded", js.Any.fromFunction1(value))
+      inline def setOnMediaLoaded(value: /* mediaSize */ MediaSize => Unit): Self = StObject.set(x, "onMediaLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMediaLoadedUndefined: Self = StObject.set(x, "onMediaLoaded", js.undefined)
+      inline def setOnMediaLoadedUndefined: Self = StObject.set(x, "onMediaLoaded", js.undefined)
       
-      @scala.inline
-      def setOnRotationChange(value: /* rotation */ Double => Unit): Self = StObject.set(x, "onRotationChange", js.Any.fromFunction1(value))
+      inline def setOnRotationChange(value: /* rotation */ Double => Unit): Self = StObject.set(x, "onRotationChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRotationChangeUndefined: Self = StObject.set(x, "onRotationChange", js.undefined)
+      inline def setOnRotationChangeUndefined: Self = StObject.set(x, "onRotationChange", js.undefined)
       
-      @scala.inline
-      def setOnZoomChange(value: /* zoom */ Double => Unit): Self = StObject.set(x, "onZoomChange", js.Any.fromFunction1(value))
+      inline def setOnZoomChange(value: /* zoom */ Double => Unit): Self = StObject.set(x, "onZoomChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnZoomChangeUndefined: Self = StObject.set(x, "onZoomChange", js.undefined)
+      inline def setOnZoomChangeUndefined: Self = StObject.set(x, "onZoomChange", js.undefined)
       
-      @scala.inline
-      def setRestrictPosition(value: Boolean): Self = StObject.set(x, "restrictPosition", value.asInstanceOf[js.Any])
+      inline def setRestrictPosition(value: Boolean): Self = StObject.set(x, "restrictPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowGrid(value: Boolean): Self = StObject.set(x, "showGrid", value.asInstanceOf[js.Any])
+      inline def setShowGrid(value: Boolean): Self = StObject.set(x, "showGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowGridUndefined: Self = StObject.set(x, "showGrid", js.undefined)
+      inline def setShowGridUndefined: Self = StObject.set(x, "showGrid", js.undefined)
       
-      @scala.inline
-      def setStyle(value: ContainerStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: ContainerStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+      inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
+      inline def setZoomSpeed(value: Double): Self = StObject.set(x, "zoomSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomWithScroll(value: Boolean): Self = StObject.set(x, "zoomWithScroll", value.asInstanceOf[js.Any])
+      inline def setZoomWithScroll(value: Boolean): Self = StObject.set(x, "zoomWithScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomWithScrollUndefined: Self = StObject.set(x, "zoomWithScroll", js.undefined)
+      inline def setZoomWithScrollUndefined: Self = StObject.set(x, "zoomWithScroll", js.undefined)
     }
   }
   
@@ -443,23 +384,18 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(hasWheelJustStarted: Boolean): State = {
+    inline def apply(hasWheelJustStarted: Boolean): State = {
       val __obj = js.Dynamic.literal(hasWheelJustStarted = hasWheelJustStarted.asInstanceOf[js.Any], cropSize = null)
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setCropSize(value: Size): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
+      inline def setCropSize(value: Size): Self = StObject.set(x, "cropSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropSizeNull: Self = StObject.set(x, "cropSize", null)
+      inline def setCropSizeNull: Self = StObject.set(x, "cropSize", null)
       
-      @scala.inline
-      def setHasWheelJustStarted(value: Boolean): Self = StObject.set(x, "hasWheelJustStarted", value.asInstanceOf[js.Any])
+      inline def setHasWheelJustStarted(value: Boolean): Self = StObject.set(x, "hasWheelJustStarted", value.asInstanceOf[js.Any])
     }
   }
 }

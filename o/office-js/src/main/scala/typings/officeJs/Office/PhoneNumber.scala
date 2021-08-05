@@ -36,23 +36,18 @@ trait PhoneNumber extends StObject {
 }
 object PhoneNumber {
   
-  @scala.inline
-  def apply(originalPhoneString: String, phoneString: String, `type`: String): PhoneNumber = {
+  inline def apply(originalPhoneString: String, phoneString: String, `type`: String): PhoneNumber = {
     val __obj = js.Dynamic.literal(originalPhoneString = originalPhoneString.asInstanceOf[js.Any], phoneString = phoneString.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumber]
   }
   
-  @scala.inline
-  implicit class PhoneNumberMutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneNumber](x: Self) {
     
-    @scala.inline
-    def setOriginalPhoneString(value: String): Self = StObject.set(x, "originalPhoneString", value.asInstanceOf[js.Any])
+    inline def setOriginalPhoneString(value: String): Self = StObject.set(x, "originalPhoneString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneString(value: String): Self = StObject.set(x, "phoneString", value.asInstanceOf[js.Any])
+    inline def setPhoneString(value: String): Self = StObject.set(x, "phoneString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

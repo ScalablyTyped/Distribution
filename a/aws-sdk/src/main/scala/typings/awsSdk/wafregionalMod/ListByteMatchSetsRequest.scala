@@ -18,25 +18,19 @@ trait ListByteMatchSetsRequest extends StObject {
 }
 object ListByteMatchSetsRequest {
   
-  @scala.inline
-  def apply(): ListByteMatchSetsRequest = {
+  inline def apply(): ListByteMatchSetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListByteMatchSetsRequest]
   }
   
-  @scala.inline
-  implicit class ListByteMatchSetsRequestMutableBuilder[Self <: ListByteMatchSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListByteMatchSetsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

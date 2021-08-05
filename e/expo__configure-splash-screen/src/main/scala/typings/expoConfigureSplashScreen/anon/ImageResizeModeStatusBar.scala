@@ -13,25 +13,19 @@ trait ImageResizeModeStatusBar extends StObject {
 }
 object ImageResizeModeStatusBar {
   
-  @scala.inline
-  def apply(): ImageResizeModeStatusBar = {
+  inline def apply(): ImageResizeModeStatusBar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageResizeModeStatusBar]
   }
   
-  @scala.inline
-  implicit class ImageResizeModeStatusBarMutableBuilder[Self <: ImageResizeModeStatusBar] (val x: Self) extends AnyVal {
+  extension [Self <: ImageResizeModeStatusBar](x: Self) {
     
-    @scala.inline
-    def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
+    inline def setImageResizeMode(value: SplashScreenImageResizeModeType): Self = StObject.set(x, "imageResizeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
+    inline def setImageResizeModeUndefined: Self = StObject.set(x, "imageResizeMode", js.undefined)
     
-    @scala.inline
-    def setStatusBar(value: `3`): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: `3`): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+    inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
   }
 }

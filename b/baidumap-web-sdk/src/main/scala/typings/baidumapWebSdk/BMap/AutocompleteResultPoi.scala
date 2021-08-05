@@ -21,8 +21,7 @@ trait AutocompleteResultPoi extends StObject {
 }
 object AutocompleteResultPoi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     City: String,
     business: String,
     district: String,
@@ -34,25 +33,18 @@ object AutocompleteResultPoi {
     __obj.asInstanceOf[AutocompleteResultPoi]
   }
   
-  @scala.inline
-  implicit class AutocompleteResultPoiMutableBuilder[Self <: AutocompleteResultPoi] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteResultPoi](x: Self) {
     
-    @scala.inline
-    def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+    inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
+    inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+    inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreetNumber(value: String): Self = StObject.set(x, "streetNumber", value.asInstanceOf[js.Any])
+    inline def setStreetNumber(value: String): Self = StObject.set(x, "streetNumber", value.asInstanceOf[js.Any])
   }
 }

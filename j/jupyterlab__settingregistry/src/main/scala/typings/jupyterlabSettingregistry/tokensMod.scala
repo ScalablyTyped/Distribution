@@ -140,8 +140,7 @@ object tokensMod {
   }
   object ISettingRegistry extends Shortcut {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connector: IDataConnector[IPlugin, String, String, String],
       get: (String, String) => js.Promise[Composite],
       load: String => js.Promise[ISettings],
@@ -200,29 +199,22 @@ object tokensMod {
       */
     object IPlugin {
       
-      @scala.inline
-      def apply(data: ISettingBundle, id: String, raw: String, schema: ISchema, version: String): IPlugin = {
+      inline def apply(data: ISettingBundle, id: String, raw: String, schema: ISchema, version: String): IPlugin = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPlugin]
       }
       
-      @scala.inline
-      implicit class IPluginMutableBuilder[Self <: IPlugin] (val x: Self) extends AnyVal {
+      extension [Self <: IPlugin](x: Self) {
         
-        @scala.inline
-        def setData(value: ISettingBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: ISettingBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+        inline def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
       
       /**
@@ -235,11 +227,9 @@ object tokensMod {
       trait Phase extends StObject
       object Phase {
         
-        @scala.inline
-        def compose: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.compose = "compose".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.compose]
+        inline def compose: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.compose = "compose".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.compose]
         
-        @scala.inline
-        def fetch: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.fetch = "fetch".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.fetch]
+        inline def fetch: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.fetch = "fetch".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.fetch]
       }
       
       /**
@@ -283,50 +273,36 @@ object tokensMod {
     }
     object IProperty {
       
-      @scala.inline
-      def apply(): IProperty = {
+      inline def apply(): IProperty = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IProperty]
       }
       
-      @scala.inline
-      implicit class IPropertyMutableBuilder[Self <: IProperty] (val x: Self) extends AnyVal {
+      extension [Self <: IProperty](x: Self) {
         
-        @scala.inline
-        def setDefault(value: PartialJSONValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+        inline def setDefault(value: PartialJSONValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultNull: Self = StObject.set(x, "default", null)
+        inline def setDefaultNull: Self = StObject.set(x, "default", null)
         
-        @scala.inline
-        def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+        inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setProperties(value: StringDictionary[IProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        inline def setProperties(value: StringDictionary[IProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+        inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setType(value: Primitive | js.Array[Primitive]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Primitive | js.Array[Primitive]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setTypeVarargs(value: Primitive*): Self = StObject.set(x, "type", js.Array(value :_*))
+        inline def setTypeVarargs(value: Primitive*): Self = StObject.set(x, "type", js.Array(value :_*))
       }
     }
     
@@ -396,57 +372,41 @@ object tokensMod {
     }
     object ISchema {
       
-      @scala.inline
-      def apply(): ISchema = {
+      inline def apply(): ISchema = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")("object")
         __obj.asInstanceOf[ISchema]
       }
       
-      @scala.inline
-      implicit class ISchemaMutableBuilder[Self <: ISchema] (val x: Self) extends AnyVal {
+      extension [Self <: ISchema](x: Self) {
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-deprecated`(value: Boolean): Self = StObject.set(x, "jupyter.lab.setting-deprecated", value.asInstanceOf[js.Any])
+        inline def `setJupyterDotlabDotsetting-deprecated`(value: Boolean): Self = StObject.set(x, "jupyter.lab.setting-deprecated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-deprecatedUndefined`: Self = StObject.set(x, "jupyter.lab.setting-deprecated", js.undefined)
+        inline def `setJupyterDotlabDotsetting-deprecatedUndefined`: Self = StObject.set(x, "jupyter.lab.setting-deprecated", js.undefined)
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-icon`(value: String): Self = StObject.set(x, "jupyter.lab.setting-icon", value.asInstanceOf[js.Any])
+        inline def `setJupyterDotlabDotsetting-icon`(value: String): Self = StObject.set(x, "jupyter.lab.setting-icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-icon-class`(value: String): Self = StObject.set(x, "jupyter.lab.setting-icon-class", value.asInstanceOf[js.Any])
+        inline def `setJupyterDotlabDotsetting-icon-class`(value: String): Self = StObject.set(x, "jupyter.lab.setting-icon-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-icon-classUndefined`: Self = StObject.set(x, "jupyter.lab.setting-icon-class", js.undefined)
+        inline def `setJupyterDotlabDotsetting-icon-classUndefined`: Self = StObject.set(x, "jupyter.lab.setting-icon-class", js.undefined)
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-icon-label`(value: String): Self = StObject.set(x, "jupyter.lab.setting-icon-label", value.asInstanceOf[js.Any])
+        inline def `setJupyterDotlabDotsetting-icon-label`(value: String): Self = StObject.set(x, "jupyter.lab.setting-icon-label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-icon-labelUndefined`: Self = StObject.set(x, "jupyter.lab.setting-icon-label", js.undefined)
+        inline def `setJupyterDotlabDotsetting-icon-labelUndefined`: Self = StObject.set(x, "jupyter.lab.setting-icon-label", js.undefined)
         
-        @scala.inline
-        def `setJupyterDotlabDotsetting-iconUndefined`: Self = StObject.set(x, "jupyter.lab.setting-icon", js.undefined)
+        inline def `setJupyterDotlabDotsetting-iconUndefined`: Self = StObject.set(x, "jupyter.lab.setting-icon", js.undefined)
         
-        @scala.inline
-        def setJupyterDotlabDotshortcuts(value: js.Array[IShortcut]): Self = StObject.set(x, "jupyter.lab.shortcuts", value.asInstanceOf[js.Any])
+        inline def setJupyterDotlabDotshortcuts(value: js.Array[IShortcut]): Self = StObject.set(x, "jupyter.lab.shortcuts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJupyterDotlabDotshortcutsUndefined: Self = StObject.set(x, "jupyter.lab.shortcuts", js.undefined)
+        inline def setJupyterDotlabDotshortcutsUndefined: Self = StObject.set(x, "jupyter.lab.shortcuts", js.undefined)
         
-        @scala.inline
-        def setJupyterDotlabDotshortcutsVarargs(value: IShortcut*): Self = StObject.set(x, "jupyter.lab.shortcuts", js.Array(value :_*))
+        inline def setJupyterDotlabDotshortcutsVarargs(value: IShortcut*): Self = StObject.set(x, "jupyter.lab.shortcuts", js.Array(value :_*))
         
-        @scala.inline
-        def setJupyterDotlabDottransform(value: Boolean): Self = StObject.set(x, "jupyter.lab.transform", value.asInstanceOf[js.Any])
+        inline def setJupyterDotlabDottransform(value: Boolean): Self = StObject.set(x, "jupyter.lab.transform", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJupyterDotlabDottransformUndefined: Self = StObject.set(x, "jupyter.lab.transform", js.undefined)
+        inline def setJupyterDotlabDottransformUndefined: Self = StObject.set(x, "jupyter.lab.transform", js.undefined)
         
-        @scala.inline
-        def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -472,61 +432,44 @@ object tokensMod {
     }
     object ISettingBundle {
       
-      @scala.inline
-      def apply(composite: PartialJSONObject, user: PartialJSONObject): ISettingBundle = {
+      inline def apply(composite: PartialJSONObject, user: PartialJSONObject): ISettingBundle = {
         val __obj = js.Dynamic.literal(composite = composite.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
         __obj.asInstanceOf[ISettingBundle]
       }
       
-      @scala.inline
-      implicit class ISettingBundleMutableBuilder[Self <: ISettingBundle] (val x: Self) extends AnyVal {
+      extension [Self <: ISettingBundle](x: Self) {
         
-        @scala.inline
-        def setComposite(value: PartialJSONObject): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+        inline def setComposite(value: PartialJSONObject): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUser(value: PartialJSONObject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: PartialJSONObject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class ISettingRegistryMutableBuilder[Self <: ISettingRegistry] (val x: Self) extends AnyVal {
+    extension [Self <: ISettingRegistry](x: Self) {
       
-      @scala.inline
-      def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      inline def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: (String, String) => js.Promise[Composite]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (String, String) => js.Promise[Composite]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoad(value: String => js.Promise[ISettings]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: String => js.Promise[ISettings]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPluginChanged(value: ISignal[ISettingRegistry, String]): Self = StObject.set(x, "pluginChanged", value.asInstanceOf[js.Any])
+      inline def setPluginChanged(value: ISignal[ISettingRegistry, String]): Self = StObject.set(x, "pluginChanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugins(value: StringDictionary[js.UndefOr[IPlugin]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: StringDictionary[js.UndefOr[IPlugin]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReload(value: String => js.Promise[ISettings]): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
+      inline def setReload(value: String => js.Promise[ISettings]): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: (String, String, PartialJSONValue) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (String, String, PartialJSONValue) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransform(value: (String, phaseinPhaseTransform) => IDisposable): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (String, phaseinPhaseTransform) => IDisposable): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpload(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "upload", js.Any.fromFunction2(value))
+      inline def setUpload(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "upload", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidator(value: ISchemaValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: ISchemaValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
     
     /**
@@ -638,8 +581,7 @@ object tokensMod {
     }
     object ISettings {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         annotatedDefaults: () => String,
         changed: ISignal[ISettings, Unit],
         composite: ReadonlyPartialJSONObject,
@@ -662,53 +604,37 @@ object tokensMod {
         __obj.asInstanceOf[ISettings]
       }
       
-      @scala.inline
-      implicit class ISettingsMutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
+      extension [Self <: ISettings](x: Self) {
         
-        @scala.inline
-        def setAnnotatedDefaults(value: () => String): Self = StObject.set(x, "annotatedDefaults", js.Any.fromFunction0(value))
+        inline def setAnnotatedDefaults(value: () => String): Self = StObject.set(x, "annotatedDefaults", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setChanged(value: ISignal[ISettings, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+        inline def setChanged(value: ISignal[ISettings, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComposite(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+        inline def setComposite(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefault(value: String => js.UndefOr[PartialJSONValue]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+        inline def setDefault(value: String => js.UndefOr[PartialJSONValue]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGet(value: String => User): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        inline def setGet(value: String => User): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlugin(value: IPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+        inline def setPlugin(value: IPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemove(value: String => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+        inline def setRemove(value: String => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSave(value: String => js.Promise[Unit]): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+        inline def setSave(value: String => js.Promise[Unit]): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+        inline def setSchema(value: ISchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSet(value: (String, PartialJSONValue) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+        inline def setSet(value: (String, PartialJSONValue) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUser(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValidate(value: String => js.Array[IError] | Null): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+        inline def setValidate(value: String => js.Array[IError] | Null): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -746,38 +672,28 @@ object tokensMod {
     }
     object IShortcut {
       
-      @scala.inline
-      def apply(command: String, keys: js.Array[String], selector: String): IShortcut = {
+      inline def apply(command: String, keys: js.Array[String], selector: String): IShortcut = {
         val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
         __obj.asInstanceOf[IShortcut]
       }
       
-      @scala.inline
-      implicit class IShortcutMutableBuilder[Self <: IShortcut] (val x: Self) extends AnyVal {
+      extension [Self <: IShortcut](x: Self) {
         
-        @scala.inline
-        def setArgs(value: PartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: PartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        @scala.inline
-        def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+        inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
         
-        @scala.inline
-        def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       }
     }
     
@@ -795,23 +711,17 @@ object tokensMod {
     trait Primitive extends StObject
     object Primitive {
       
-      @scala.inline
-      def array: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.array = "array".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.array]
+      inline def array: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.array = "array".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.array]
       
-      @scala.inline
-      def boolean: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.boolean = "boolean".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.boolean]
+      inline def boolean: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.boolean = "boolean".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.boolean]
       
-      @scala.inline
-      def `null`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`null` = "null".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`null`]
+      inline def `null`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`null` = "null".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`null`]
       
-      @scala.inline
-      def number: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.number = "number".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.number]
+      inline def number: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.number = "number".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.number]
       
-      @scala.inline
-      def `object`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object` = "object".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object`]
+      inline def `object`: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object` = "object".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.`object`]
       
-      @scala.inline
-      def string: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.string = "string".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.string]
+      inline def string: typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.string = "string".asInstanceOf[typings.jupyterlabSettingregistry.jupyterlabSettingregistryStrings.string]
     }
     
     type _To = Token[ISettingRegistry]

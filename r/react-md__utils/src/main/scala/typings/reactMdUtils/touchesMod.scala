@@ -14,8 +14,7 @@ object touchesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -29,8 +28,7 @@ object touchesMod {
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -49,8 +47,7 @@ object touchesMod {
     */
   capture: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -73,8 +70,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -97,8 +93,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -112,8 +107,7 @@ object touchesMod {
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -132,8 +126,7 @@ object touchesMod {
     */
   capture: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -156,8 +149,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addTouchEvent(
+  inline def addTouchEvent(
     /**
     * The element to add the touch event to.
     */
@@ -181,8 +173,7 @@ object touchesMod {
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
     /**
@@ -190,8 +181,7 @@ object touchesMod {
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
     /**
@@ -204,8 +194,7 @@ object touchesMod {
     */
   capture: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
     /**
@@ -222,8 +211,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: HTMLElement,
     eventType: TouchTypes,
     /**
@@ -240,8 +228,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: Window,
     eventType: TouchTypes,
     /**
@@ -249,8 +236,7 @@ object touchesMod {
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: Window,
     eventType: TouchTypes,
     /**
@@ -263,8 +249,7 @@ object touchesMod {
     */
   capture: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: Window,
     eventType: TouchTypes,
     /**
@@ -281,8 +266,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeTouchEvent(
+  inline def removeTouchEvent(
     el: Window,
     eventType: TouchTypes,
     /**
@@ -300,8 +284,7 @@ object touchesMod {
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTouchEvent")(el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -319,8 +302,7 @@ object touchesMod {
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -343,8 +325,7 @@ object touchesMod {
     */
   capture: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -371,8 +352,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -399,8 +379,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -418,8 +397,7 @@ object touchesMod {
     */
   callback: js.Function1[/* e */ TouchEvent, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -442,8 +420,7 @@ object touchesMod {
     */
   capture: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -470,8 +447,7 @@ object touchesMod {
     */
   options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTouchEvent")(add.asInstanceOf[js.Any], el.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], capture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setTouchEvent(
+  inline def setTouchEvent(
     /**
     * Boolean if the event should be added or removed.
     */
@@ -508,16 +484,12 @@ object touchesMod {
   trait TouchTypes extends StObject
   object TouchTypes {
     
-    @scala.inline
-    def cancel: typings.reactMdUtils.reactMdUtilsStrings.cancel = "cancel".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.cancel]
+    inline def cancel: typings.reactMdUtils.reactMdUtilsStrings.cancel = "cancel".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.cancel]
     
-    @scala.inline
-    def end: typings.reactMdUtils.reactMdUtilsStrings.end = "end".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.end]
+    inline def end: typings.reactMdUtils.reactMdUtilsStrings.end = "end".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.end]
     
-    @scala.inline
-    def move: typings.reactMdUtils.reactMdUtilsStrings.move = "move".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.move]
+    inline def move: typings.reactMdUtils.reactMdUtilsStrings.move = "move".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.move]
     
-    @scala.inline
-    def start: typings.reactMdUtils.reactMdUtilsStrings.start = "start".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.start]
+    inline def start: typings.reactMdUtils.reactMdUtilsStrings.start = "start".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.start]
   }
 }

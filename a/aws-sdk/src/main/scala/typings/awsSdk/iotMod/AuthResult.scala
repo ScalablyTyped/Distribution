@@ -33,46 +33,33 @@ trait AuthResult extends StObject {
 }
 object AuthResult {
   
-  @scala.inline
-  def apply(): AuthResult = {
+  inline def apply(): AuthResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthResult]
   }
   
-  @scala.inline
-  implicit class AuthResultMutableBuilder[Self <: AuthResult] (val x: Self) extends AnyVal {
+  extension [Self <: AuthResult](x: Self) {
     
-    @scala.inline
-    def setAllowed(value: Allowed): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+    inline def setAllowed(value: Allowed): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+    inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
-    @scala.inline
-    def setAuthDecision(value: AuthDecision): Self = StObject.set(x, "authDecision", value.asInstanceOf[js.Any])
+    inline def setAuthDecision(value: AuthDecision): Self = StObject.set(x, "authDecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthDecisionUndefined: Self = StObject.set(x, "authDecision", js.undefined)
+    inline def setAuthDecisionUndefined: Self = StObject.set(x, "authDecision", js.undefined)
     
-    @scala.inline
-    def setAuthInfo(value: AuthInfo): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
+    inline def setAuthInfo(value: AuthInfo): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
+    inline def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
     
-    @scala.inline
-    def setDenied(value: Denied): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
+    inline def setDenied(value: Denied): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeniedUndefined: Self = StObject.set(x, "denied", js.undefined)
+    inline def setDeniedUndefined: Self = StObject.set(x, "denied", js.undefined)
     
-    @scala.inline
-    def setMissingContextValues(value: MissingContextValues): Self = StObject.set(x, "missingContextValues", value.asInstanceOf[js.Any])
+    inline def setMissingContextValues(value: MissingContextValues): Self = StObject.set(x, "missingContextValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingContextValuesUndefined: Self = StObject.set(x, "missingContextValues", js.undefined)
+    inline def setMissingContextValuesUndefined: Self = StObject.set(x, "missingContextValues", js.undefined)
     
-    @scala.inline
-    def setMissingContextValuesVarargs(value: MissingContextValue*): Self = StObject.set(x, "missingContextValues", js.Array(value :_*))
+    inline def setMissingContextValuesVarargs(value: MissingContextValue*): Self = StObject.set(x, "missingContextValues", js.Array(value :_*))
   }
 }

@@ -109,136 +109,93 @@ trait MongodbFindOneOptions extends StObject {
 }
 object MongodbFindOneOptions {
   
-  @scala.inline
-  def apply(): MongodbFindOneOptions = {
+  inline def apply(): MongodbFindOneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MongodbFindOneOptions]
   }
   
-  @scala.inline
-  implicit class MongodbFindOneOptionsMutableBuilder[Self <: MongodbFindOneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MongodbFindOneOptions](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
+    inline def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
+    inline def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setHint(value: js.Object): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: js.Object): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
-    @scala.inline
-    def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: scala.Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScan(value: scala.Double): Self = StObject.set(x, "maxScan", value.asInstanceOf[js.Any])
+    inline def setMaxScan(value: scala.Double): Self = StObject.set(x, "maxScan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScanUndefined: Self = StObject.set(x, "maxScan", js.undefined)
+    inline def setMaxScanUndefined: Self = StObject.set(x, "maxScan", js.undefined)
     
-    @scala.inline
-    def setMaxTimeMs(value: scala.Double): Self = StObject.set(x, "maxTimeMs", value.asInstanceOf[js.Any])
+    inline def setMaxTimeMs(value: scala.Double): Self = StObject.set(x, "maxTimeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeMsUndefined: Self = StObject.set(x, "maxTimeMs", js.undefined)
+    inline def setMaxTimeMsUndefined: Self = StObject.set(x, "maxTimeMs", js.undefined)
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+    inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+    inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setReturnKey(value: Boolean): Self = StObject.set(x, "returnKey", value.asInstanceOf[js.Any])
+    inline def setReturnKey(value: Boolean): Self = StObject.set(x, "returnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnKeyUndefined: Self = StObject.set(x, "returnKey", js.undefined)
+    inline def setReturnKeyUndefined: Self = StObject.set(x, "returnKey", js.undefined)
     
-    @scala.inline
-    def setShowDiskLoc(value: Boolean): Self = StObject.set(x, "showDiskLoc", value.asInstanceOf[js.Any])
+    inline def setShowDiskLoc(value: Boolean): Self = StObject.set(x, "showDiskLoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDiskLocUndefined: Self = StObject.set(x, "showDiskLoc", js.undefined)
+    inline def setShowDiskLocUndefined: Self = StObject.set(x, "showDiskLoc", js.undefined)
     
-    @scala.inline
-    def setSkip(value: scala.Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: scala.Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setSnapshot(value: Boolean): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: Boolean): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
-    @scala.inline
-    def setSort(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSortVarargs(value: js.Any*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: js.Any*): Self = StObject.set(x, "sort", js.Array(value :_*))
     
-    @scala.inline
-    def setTailable(value: Boolean): Self = StObject.set(x, "tailable", value.asInstanceOf[js.Any])
+    inline def setTailable(value: Boolean): Self = StObject.set(x, "tailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTailableUndefined: Self = StObject.set(x, "tailable", js.undefined)
+    inline def setTailableUndefined: Self = StObject.set(x, "tailable", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

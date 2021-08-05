@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pathWithTilde: String): String = ^.asInstanceOf[js.Dynamic].apply(pathWithTilde.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(pathWithTilde: String): String = ^.asInstanceOf[js.Dynamic].apply(pathWithTilde.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("untildify", JSImport.Namespace)
   @js.native

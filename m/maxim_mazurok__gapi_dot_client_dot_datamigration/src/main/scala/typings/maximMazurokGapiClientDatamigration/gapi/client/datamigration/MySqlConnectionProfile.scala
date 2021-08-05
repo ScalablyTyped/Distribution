@@ -32,55 +32,39 @@ trait MySqlConnectionProfile extends StObject {
 }
 object MySqlConnectionProfile {
   
-  @scala.inline
-  def apply(): MySqlConnectionProfile = {
+  inline def apply(): MySqlConnectionProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MySqlConnectionProfile]
   }
   
-  @scala.inline
-  implicit class MySqlConnectionProfileMutableBuilder[Self <: MySqlConnectionProfile] (val x: Self) extends AnyVal {
+  extension [Self <: MySqlConnectionProfile](x: Self) {
     
-    @scala.inline
-    def setCloudSqlId(value: String): Self = StObject.set(x, "cloudSqlId", value.asInstanceOf[js.Any])
+    inline def setCloudSqlId(value: String): Self = StObject.set(x, "cloudSqlId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudSqlIdUndefined: Self = StObject.set(x, "cloudSqlId", js.undefined)
+    inline def setCloudSqlIdUndefined: Self = StObject.set(x, "cloudSqlId", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordSet(value: Boolean): Self = StObject.set(x, "passwordSet", value.asInstanceOf[js.Any])
+    inline def setPasswordSet(value: Boolean): Self = StObject.set(x, "passwordSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordSetUndefined: Self = StObject.set(x, "passwordSet", js.undefined)
+    inline def setPasswordSetUndefined: Self = StObject.set(x, "passwordSet", js.undefined)
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setSsl(value: SslConfig): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: SslConfig): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

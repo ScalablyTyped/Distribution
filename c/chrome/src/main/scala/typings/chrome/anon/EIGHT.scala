@@ -14,19 +14,15 @@ trait EIGHT extends StObject {
 }
 object EIGHT {
   
-  @scala.inline
-  def apply(): EIGHT = {
+  inline def apply(): EIGHT = {
     val __obj = js.Dynamic.literal(EIGHT = "eight", SEVEN = "seven")
     __obj.asInstanceOf[EIGHT]
   }
   
-  @scala.inline
-  implicit class EIGHTMutableBuilder[Self <: EIGHT] (val x: Self) extends AnyVal {
+  extension [Self <: EIGHT](x: Self) {
     
-    @scala.inline
-    def setEIGHT(value: eight): Self = StObject.set(x, "EIGHT", value.asInstanceOf[js.Any])
+    inline def setEIGHT(value: eight): Self = StObject.set(x, "EIGHT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSEVEN(value: seven): Self = StObject.set(x, "SEVEN", value.asInstanceOf[js.Any])
+    inline def setSEVEN(value: seven): Self = StObject.set(x, "SEVEN", value.asInstanceOf[js.Any])
   }
 }

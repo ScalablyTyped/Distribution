@@ -11,8 +11,7 @@ object utilErrorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def errorToPOJO(error: Error): ErrorPlainObject = ^.asInstanceOf[js.Dynamic].applyDynamic("errorToPOJO")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorPlainObject]
+  inline def errorToPOJO(error: Error): ErrorPlainObject = ^.asInstanceOf[js.Dynamic].applyDynamic("errorToPOJO")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorPlainObject]
   
   trait ErrorPlainObject extends StObject {
     
@@ -22,20 +21,16 @@ object utilErrorsMod {
   }
   object ErrorPlainObject {
     
-    @scala.inline
-    def apply(message: String, stack: String): ErrorPlainObject = {
+    inline def apply(message: String, stack: String): ErrorPlainObject = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorPlainObject]
     }
     
-    @scala.inline
-    implicit class ErrorPlainObjectMutableBuilder[Self <: ErrorPlainObject] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorPlainObject](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
 }

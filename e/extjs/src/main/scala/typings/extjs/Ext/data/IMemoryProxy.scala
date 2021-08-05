@@ -17,25 +17,19 @@ trait IMemoryProxy
 }
 object IMemoryProxy {
   
-  @scala.inline
-  def apply(): IMemoryProxy = {
+  inline def apply(): IMemoryProxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMemoryProxy]
   }
   
-  @scala.inline
-  implicit class IMemoryProxyMutableBuilder[Self <: IMemoryProxy] (val x: Self) extends AnyVal {
+  extension [Self <: IMemoryProxy](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEnablePaging(value: Boolean): Self = StObject.set(x, "enablePaging", value.asInstanceOf[js.Any])
+    inline def setEnablePaging(value: Boolean): Self = StObject.set(x, "enablePaging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePagingUndefined: Self = StObject.set(x, "enablePaging", js.undefined)
+    inline def setEnablePagingUndefined: Self = StObject.set(x, "enablePaging", js.undefined)
   }
 }

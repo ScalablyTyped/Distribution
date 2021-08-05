@@ -25,31 +25,23 @@ trait LineItemFlight extends StObject {
 }
 object LineItemFlight {
   
-  @scala.inline
-  def apply(): LineItemFlight = {
+  inline def apply(): LineItemFlight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineItemFlight]
   }
   
-  @scala.inline
-  implicit class LineItemFlightMutableBuilder[Self <: LineItemFlight] (val x: Self) extends AnyVal {
+  extension [Self <: LineItemFlight](x: Self) {
     
-    @scala.inline
-    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setFlightDateType(value: String): Self = StObject.set(x, "flightDateType", value.asInstanceOf[js.Any])
+    inline def setFlightDateType(value: String): Self = StObject.set(x, "flightDateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlightDateTypeUndefined: Self = StObject.set(x, "flightDateType", js.undefined)
+    inline def setFlightDateTypeUndefined: Self = StObject.set(x, "flightDateType", js.undefined)
     
-    @scala.inline
-    def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
+    inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
   }
 }

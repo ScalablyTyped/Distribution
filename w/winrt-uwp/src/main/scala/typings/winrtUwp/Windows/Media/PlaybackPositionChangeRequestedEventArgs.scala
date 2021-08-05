@@ -12,16 +12,13 @@ trait PlaybackPositionChangeRequestedEventArgs extends StObject {
 }
 object PlaybackPositionChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(requestedPlaybackPosition: Double): PlaybackPositionChangeRequestedEventArgs = {
+  inline def apply(requestedPlaybackPosition: Double): PlaybackPositionChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(requestedPlaybackPosition = requestedPlaybackPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaybackPositionChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class PlaybackPositionChangeRequestedEventArgsMutableBuilder[Self <: PlaybackPositionChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackPositionChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequestedPlaybackPosition(value: Double): Self = StObject.set(x, "requestedPlaybackPosition", value.asInstanceOf[js.Any])
+    inline def setRequestedPlaybackPosition(value: Double): Self = StObject.set(x, "requestedPlaybackPosition", value.asInstanceOf[js.Any])
   }
 }

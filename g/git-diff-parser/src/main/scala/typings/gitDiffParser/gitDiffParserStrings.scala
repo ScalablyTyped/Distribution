@@ -11,20 +11,17 @@ object gitDiffParserStrings {
   sealed trait added
     extends StObject
        with LineType
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
   sealed trait deleted
     extends StObject
        with LineType
-  @scala.inline
-  def deleted: deleted = "deleted".asInstanceOf[deleted]
+  inline def deleted: deleted = "deleted".asInstanceOf[deleted]
   
   @js.native
   sealed trait normal
     extends StObject
        with LineType
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
 }

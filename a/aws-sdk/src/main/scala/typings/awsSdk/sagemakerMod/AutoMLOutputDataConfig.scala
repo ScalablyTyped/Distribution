@@ -18,22 +18,17 @@ trait AutoMLOutputDataConfig extends StObject {
 }
 object AutoMLOutputDataConfig {
   
-  @scala.inline
-  def apply(S3OutputPath: S3Uri): AutoMLOutputDataConfig = {
+  inline def apply(S3OutputPath: S3Uri): AutoMLOutputDataConfig = {
     val __obj = js.Dynamic.literal(S3OutputPath = S3OutputPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLOutputDataConfig]
   }
   
-  @scala.inline
-  implicit class AutoMLOutputDataConfigMutableBuilder[Self <: AutoMLOutputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLOutputDataConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
+    inline def setS3OutputPath(value: S3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
   }
 }

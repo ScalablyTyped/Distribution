@@ -13,19 +13,15 @@ trait JourneyStateRequest extends StObject {
 }
 object JourneyStateRequest {
   
-  @scala.inline
-  def apply(): JourneyStateRequest = {
+  inline def apply(): JourneyStateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JourneyStateRequest]
   }
   
-  @scala.inline
-  implicit class JourneyStateRequestMutableBuilder[Self <: JourneyStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: JourneyStateRequest](x: Self) {
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

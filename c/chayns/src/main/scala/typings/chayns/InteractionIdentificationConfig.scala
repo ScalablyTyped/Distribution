@@ -21,40 +21,29 @@ trait InteractionIdentificationConfig extends StObject {
 }
 object InteractionIdentificationConfig {
   
-  @scala.inline
-  def apply(callback: js.Any, duration: Double, foregroundColor: String): InteractionIdentificationConfig = {
+  inline def apply(callback: js.Any, duration: Double, foregroundColor: String): InteractionIdentificationConfig = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], foregroundColor = foregroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractionIdentificationConfig]
   }
   
-  @scala.inline
-  implicit class InteractionIdentificationConfigMutableBuilder[Self <: InteractionIdentificationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionIdentificationConfig](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOnInteraction(value: Boolean): Self = StObject.set(x, "resetOnInteraction", value.asInstanceOf[js.Any])
+    inline def setResetOnInteraction(value: Boolean): Self = StObject.set(x, "resetOnInteraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOnInteractionUndefined: Self = StObject.set(x, "resetOnInteraction", js.undefined)
+    inline def setResetOnInteractionUndefined: Self = StObject.set(x, "resetOnInteraction", js.undefined)
   }
 }

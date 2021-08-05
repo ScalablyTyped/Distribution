@@ -151,21 +151,16 @@ object elasticsearchDomainMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Domain]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainState): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Domain]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    inline def get(name: String, id: Input[ID]): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    inline def get(name: String, id: Input[ID], state: DomainState): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    inline def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean]
   }
   
   trait DomainArgs extends StObject {
@@ -251,111 +246,78 @@ object elasticsearchDomainMod {
   }
   object DomainArgs {
     
-    @scala.inline
-    def apply(): DomainArgs = {
+    inline def apply(): DomainArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainArgs]
     }
     
-    @scala.inline
-    implicit class DomainArgsMutableBuilder[Self <: DomainArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DomainArgs](x: Self) {
       
-      @scala.inline
-      def setAccessPolicies(value: Input[String | PolicyDocument]): Self = StObject.set(x, "accessPolicies", value.asInstanceOf[js.Any])
+      inline def setAccessPolicies(value: Input[String | PolicyDocument]): Self = StObject.set(x, "accessPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessPoliciesUndefined: Self = StObject.set(x, "accessPolicies", js.undefined)
+      inline def setAccessPoliciesUndefined: Self = StObject.set(x, "accessPolicies", js.undefined)
       
-      @scala.inline
-      def setAdvancedOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "advancedOptions", value.asInstanceOf[js.Any])
+      inline def setAdvancedOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "advancedOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedOptionsUndefined: Self = StObject.set(x, "advancedOptions", js.undefined)
+      inline def setAdvancedOptionsUndefined: Self = StObject.set(x, "advancedOptions", js.undefined)
       
-      @scala.inline
-      def setAdvancedSecurityOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]): Self = StObject.set(x, "advancedSecurityOptions", value.asInstanceOf[js.Any])
+      inline def setAdvancedSecurityOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]): Self = StObject.set(x, "advancedSecurityOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "advancedSecurityOptions", js.undefined)
+      inline def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "advancedSecurityOptions", js.undefined)
       
-      @scala.inline
-      def setClusterConfig(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
+      inline def setClusterConfig(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterConfigUndefined: Self = StObject.set(x, "clusterConfig", js.undefined)
+      inline def setClusterConfigUndefined: Self = StObject.set(x, "clusterConfig", js.undefined)
       
-      @scala.inline
-      def setCognitoOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]): Self = StObject.set(x, "cognitoOptions", value.asInstanceOf[js.Any])
+      inline def setCognitoOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]): Self = StObject.set(x, "cognitoOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoOptionsUndefined: Self = StObject.set(x, "cognitoOptions", js.undefined)
+      inline def setCognitoOptionsUndefined: Self = StObject.set(x, "cognitoOptions", js.undefined)
       
-      @scala.inline
-      def setDomainEndpointOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]): Self = StObject.set(x, "domainEndpointOptions", value.asInstanceOf[js.Any])
+      inline def setDomainEndpointOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]): Self = StObject.set(x, "domainEndpointOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "domainEndpointOptions", js.undefined)
+      inline def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "domainEndpointOptions", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setEbsOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]): Self = StObject.set(x, "ebsOptions", value.asInstanceOf[js.Any])
+      inline def setEbsOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]): Self = StObject.set(x, "ebsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptionsUndefined: Self = StObject.set(x, "ebsOptions", js.undefined)
+      inline def setEbsOptionsUndefined: Self = StObject.set(x, "ebsOptions", js.undefined)
       
-      @scala.inline
-      def setElasticsearchVersion(value: Input[String]): Self = StObject.set(x, "elasticsearchVersion", value.asInstanceOf[js.Any])
+      inline def setElasticsearchVersion(value: Input[String]): Self = StObject.set(x, "elasticsearchVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchVersionUndefined: Self = StObject.set(x, "elasticsearchVersion", js.undefined)
+      inline def setElasticsearchVersionUndefined: Self = StObject.set(x, "elasticsearchVersion", js.undefined)
       
-      @scala.inline
-      def setEncryptAtRest(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]): Self = StObject.set(x, "encryptAtRest", value.asInstanceOf[js.Any])
+      inline def setEncryptAtRest(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]): Self = StObject.set(x, "encryptAtRest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptAtRestUndefined: Self = StObject.set(x, "encryptAtRest", js.undefined)
+      inline def setEncryptAtRestUndefined: Self = StObject.set(x, "encryptAtRest", js.undefined)
       
-      @scala.inline
-      def setLogPublishingOptions(
+      inline def setLogPublishingOptions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]]
             ]
       ): Self = StObject.set(x, "logPublishingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogPublishingOptionsUndefined: Self = StObject.set(x, "logPublishingOptions", js.undefined)
+      inline def setLogPublishingOptionsUndefined: Self = StObject.set(x, "logPublishingOptions", js.undefined)
       
-      @scala.inline
-      def setLogPublishingOptionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]*): Self = StObject.set(x, "logPublishingOptions", js.Array(value :_*))
+      inline def setLogPublishingOptionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]*): Self = StObject.set(x, "logPublishingOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeToNodeEncryption(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]): Self = StObject.set(x, "nodeToNodeEncryption", value.asInstanceOf[js.Any])
+      inline def setNodeToNodeEncryption(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]): Self = StObject.set(x, "nodeToNodeEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeToNodeEncryptionUndefined: Self = StObject.set(x, "nodeToNodeEncryption", js.undefined)
+      inline def setNodeToNodeEncryptionUndefined: Self = StObject.set(x, "nodeToNodeEncryption", js.undefined)
       
-      @scala.inline
-      def setSnapshotOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]): Self = StObject.set(x, "snapshotOptions", value.asInstanceOf[js.Any])
+      inline def setSnapshotOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]): Self = StObject.set(x, "snapshotOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotOptionsUndefined: Self = StObject.set(x, "snapshotOptions", js.undefined)
+      inline def setSnapshotOptionsUndefined: Self = StObject.set(x, "snapshotOptions", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]): Self = StObject.set(x, "vpcOptions", value.asInstanceOf[js.Any])
+      inline def setVpcOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]): Self = StObject.set(x, "vpcOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcOptionsUndefined: Self = StObject.set(x, "vpcOptions", js.undefined)
+      inline def setVpcOptionsUndefined: Self = StObject.set(x, "vpcOptions", js.undefined)
     }
   }
   
@@ -464,135 +426,94 @@ object elasticsearchDomainMod {
   }
   object DomainState {
     
-    @scala.inline
-    def apply(): DomainState = {
+    inline def apply(): DomainState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomainState]
     }
     
-    @scala.inline
-    implicit class DomainStateMutableBuilder[Self <: DomainState] (val x: Self) extends AnyVal {
+    extension [Self <: DomainState](x: Self) {
       
-      @scala.inline
-      def setAccessPolicies(value: Input[String | PolicyDocument]): Self = StObject.set(x, "accessPolicies", value.asInstanceOf[js.Any])
+      inline def setAccessPolicies(value: Input[String | PolicyDocument]): Self = StObject.set(x, "accessPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessPoliciesUndefined: Self = StObject.set(x, "accessPolicies", js.undefined)
+      inline def setAccessPoliciesUndefined: Self = StObject.set(x, "accessPolicies", js.undefined)
       
-      @scala.inline
-      def setAdvancedOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "advancedOptions", value.asInstanceOf[js.Any])
+      inline def setAdvancedOptions(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "advancedOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedOptionsUndefined: Self = StObject.set(x, "advancedOptions", js.undefined)
+      inline def setAdvancedOptionsUndefined: Self = StObject.set(x, "advancedOptions", js.undefined)
       
-      @scala.inline
-      def setAdvancedSecurityOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]): Self = StObject.set(x, "advancedSecurityOptions", value.asInstanceOf[js.Any])
+      inline def setAdvancedSecurityOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]): Self = StObject.set(x, "advancedSecurityOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "advancedSecurityOptions", js.undefined)
+      inline def setAdvancedSecurityOptionsUndefined: Self = StObject.set(x, "advancedSecurityOptions", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setClusterConfig(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
+      inline def setClusterConfig(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterConfigUndefined: Self = StObject.set(x, "clusterConfig", js.undefined)
+      inline def setClusterConfigUndefined: Self = StObject.set(x, "clusterConfig", js.undefined)
       
-      @scala.inline
-      def setCognitoOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]): Self = StObject.set(x, "cognitoOptions", value.asInstanceOf[js.Any])
+      inline def setCognitoOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]): Self = StObject.set(x, "cognitoOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoOptionsUndefined: Self = StObject.set(x, "cognitoOptions", js.undefined)
+      inline def setCognitoOptionsUndefined: Self = StObject.set(x, "cognitoOptions", js.undefined)
       
-      @scala.inline
-      def setDomainEndpointOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]): Self = StObject.set(x, "domainEndpointOptions", value.asInstanceOf[js.Any])
+      inline def setDomainEndpointOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]): Self = StObject.set(x, "domainEndpointOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "domainEndpointOptions", js.undefined)
+      inline def setDomainEndpointOptionsUndefined: Self = StObject.set(x, "domainEndpointOptions", js.undefined)
       
-      @scala.inline
-      def setDomainId(value: Input[String]): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
+      inline def setDomainId(value: Input[String]): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainIdUndefined: Self = StObject.set(x, "domainId", js.undefined)
+      inline def setDomainIdUndefined: Self = StObject.set(x, "domainId", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setEbsOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]): Self = StObject.set(x, "ebsOptions", value.asInstanceOf[js.Any])
+      inline def setEbsOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]): Self = StObject.set(x, "ebsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptionsUndefined: Self = StObject.set(x, "ebsOptions", js.undefined)
+      inline def setEbsOptionsUndefined: Self = StObject.set(x, "ebsOptions", js.undefined)
       
-      @scala.inline
-      def setElasticsearchVersion(value: Input[String]): Self = StObject.set(x, "elasticsearchVersion", value.asInstanceOf[js.Any])
+      inline def setElasticsearchVersion(value: Input[String]): Self = StObject.set(x, "elasticsearchVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticsearchVersionUndefined: Self = StObject.set(x, "elasticsearchVersion", js.undefined)
+      inline def setElasticsearchVersionUndefined: Self = StObject.set(x, "elasticsearchVersion", js.undefined)
       
-      @scala.inline
-      def setEncryptAtRest(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]): Self = StObject.set(x, "encryptAtRest", value.asInstanceOf[js.Any])
+      inline def setEncryptAtRest(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]): Self = StObject.set(x, "encryptAtRest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptAtRestUndefined: Self = StObject.set(x, "encryptAtRest", js.undefined)
+      inline def setEncryptAtRestUndefined: Self = StObject.set(x, "encryptAtRest", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: Input[String]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setKibanaEndpoint(value: Input[String]): Self = StObject.set(x, "kibanaEndpoint", value.asInstanceOf[js.Any])
+      inline def setKibanaEndpoint(value: Input[String]): Self = StObject.set(x, "kibanaEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKibanaEndpointUndefined: Self = StObject.set(x, "kibanaEndpoint", js.undefined)
+      inline def setKibanaEndpointUndefined: Self = StObject.set(x, "kibanaEndpoint", js.undefined)
       
-      @scala.inline
-      def setLogPublishingOptions(
+      inline def setLogPublishingOptions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]]
             ]
       ): Self = StObject.set(x, "logPublishingOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogPublishingOptionsUndefined: Self = StObject.set(x, "logPublishingOptions", js.undefined)
+      inline def setLogPublishingOptionsUndefined: Self = StObject.set(x, "logPublishingOptions", js.undefined)
       
-      @scala.inline
-      def setLogPublishingOptionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]*): Self = StObject.set(x, "logPublishingOptions", js.Array(value :_*))
+      inline def setLogPublishingOptionsVarargs(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]*): Self = StObject.set(x, "logPublishingOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeToNodeEncryption(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]): Self = StObject.set(x, "nodeToNodeEncryption", value.asInstanceOf[js.Any])
+      inline def setNodeToNodeEncryption(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]): Self = StObject.set(x, "nodeToNodeEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeToNodeEncryptionUndefined: Self = StObject.set(x, "nodeToNodeEncryption", js.undefined)
+      inline def setNodeToNodeEncryptionUndefined: Self = StObject.set(x, "nodeToNodeEncryption", js.undefined)
       
-      @scala.inline
-      def setSnapshotOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]): Self = StObject.set(x, "snapshotOptions", value.asInstanceOf[js.Any])
+      inline def setSnapshotOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]): Self = StObject.set(x, "snapshotOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotOptionsUndefined: Self = StObject.set(x, "snapshotOptions", js.undefined)
+      inline def setSnapshotOptionsUndefined: Self = StObject.set(x, "snapshotOptions", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]): Self = StObject.set(x, "vpcOptions", value.asInstanceOf[js.Any])
+      inline def setVpcOptions(value: Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]): Self = StObject.set(x, "vpcOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcOptionsUndefined: Self = StObject.set(x, "vpcOptions", js.undefined)
+      inline def setVpcOptionsUndefined: Self = StObject.set(x, "vpcOptions", js.undefined)
     }
   }
 }

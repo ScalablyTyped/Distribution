@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLEventObj extends StObject {
   
-  @JSName("MSHTML.IHTMLEventObj_typekey")
+  /* private */ @JSName("MSHTML.IHTMLEventObj_typekey")
   var MSHTMLDotIHTMLEventObj_typekey: IHTMLEventObj
   
   val altKey: Boolean
@@ -55,8 +55,7 @@ trait IHTMLEventObj extends StObject {
 }
 object IHTMLEventObj {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLEventObj_typekey: IHTMLEventObj,
     altKey: Boolean,
     button: Double,
@@ -87,76 +86,52 @@ object IHTMLEventObj {
     __obj.asInstanceOf[IHTMLEventObj]
   }
   
-  @scala.inline
-  implicit class IHTMLEventObjMutableBuilder[Self <: IHTMLEventObj] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLEventObj](x: Self) {
     
-    @scala.inline
-    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
+    inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+    inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+    inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromElement(value: IHTMLElement): Self = StObject.set(x, "fromElement", value.asInstanceOf[js.Any])
+    inline def setFromElement(value: IHTMLElement): Self = StObject.set(x, "fromElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+    inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIHTMLEventObj_typekey(value: IHTMLEventObj): Self = StObject.set(x, "MSHTML.IHTMLEventObj_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLEventObj_typekey(value: IHTMLEventObj): Self = StObject.set(x, "MSHTML.IHTMLEventObj_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+    inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+    inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
+    inline def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcFilter(value: js.Any): Self = StObject.set(x, "srcFilter", value.asInstanceOf[js.Any])
+    inline def setSrcFilter(value: js.Any): Self = StObject.set(x, "srcFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToElement(value: IHTMLElement): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+    inline def setToElement(value: IHTMLElement): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

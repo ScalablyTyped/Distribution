@@ -63,67 +63,47 @@ trait SchemaPipeline extends StObject {
 }
 object SchemaPipeline {
   
-  @scala.inline
-  def apply(): SchemaPipeline = {
+  inline def apply(): SchemaPipeline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPipeline]
   }
   
-  @scala.inline
-  implicit class SchemaPipelineMutableBuilder[Self <: SchemaPipeline] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPipeline](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDocker(value: SchemaDockerExecutor): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
+    inline def setDocker(value: SchemaDockerExecutor): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerUndefined: Self = StObject.set(x, "docker", js.undefined)
+    inline def setDockerUndefined: Self = StObject.set(x, "docker", js.undefined)
     
-    @scala.inline
-    def setInputParameters(value: js.Array[SchemaPipelineParameter]): Self = StObject.set(x, "inputParameters", value.asInstanceOf[js.Any])
+    inline def setInputParameters(value: js.Array[SchemaPipelineParameter]): Self = StObject.set(x, "inputParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputParametersUndefined: Self = StObject.set(x, "inputParameters", js.undefined)
+    inline def setInputParametersUndefined: Self = StObject.set(x, "inputParameters", js.undefined)
     
-    @scala.inline
-    def setInputParametersVarargs(value: SchemaPipelineParameter*): Self = StObject.set(x, "inputParameters", js.Array(value :_*))
+    inline def setInputParametersVarargs(value: SchemaPipelineParameter*): Self = StObject.set(x, "inputParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutputParameters(value: js.Array[SchemaPipelineParameter]): Self = StObject.set(x, "outputParameters", value.asInstanceOf[js.Any])
+    inline def setOutputParameters(value: js.Array[SchemaPipelineParameter]): Self = StObject.set(x, "outputParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputParametersUndefined: Self = StObject.set(x, "outputParameters", js.undefined)
+    inline def setOutputParametersUndefined: Self = StObject.set(x, "outputParameters", js.undefined)
     
-    @scala.inline
-    def setOutputParametersVarargs(value: SchemaPipelineParameter*): Self = StObject.set(x, "outputParameters", js.Array(value :_*))
+    inline def setOutputParametersVarargs(value: SchemaPipelineParameter*): Self = StObject.set(x, "outputParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineId(value: String): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: String): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
+    inline def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setResources(value: SchemaPipelineResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: SchemaPipelineResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
   }
 }

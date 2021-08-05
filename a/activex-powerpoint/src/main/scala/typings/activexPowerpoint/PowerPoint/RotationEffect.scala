@@ -14,15 +14,14 @@ trait RotationEffect extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.RotationEffect_typekey")
+  /* private */ @JSName("PowerPoint.RotationEffect_typekey")
   var PowerPointDotRotationEffect_typekey: RotationEffect
   
   var To: Double
 }
 object RotationEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     By: Double,
     From: Double,
@@ -35,25 +34,18 @@ object RotationEffect {
     __obj.asInstanceOf[RotationEffect]
   }
   
-  @scala.inline
-  implicit class RotationEffectMutableBuilder[Self <: RotationEffect] (val x: Self) extends AnyVal {
+  extension [Self <: RotationEffect](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBy(value: Double): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
+    inline def setBy(value: Double): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotRotationEffect_typekey(value: RotationEffect): Self = StObject.set(x, "PowerPoint.RotationEffect_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotRotationEffect_typekey(value: RotationEffect): Self = StObject.set(x, "PowerPoint.RotationEffect_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

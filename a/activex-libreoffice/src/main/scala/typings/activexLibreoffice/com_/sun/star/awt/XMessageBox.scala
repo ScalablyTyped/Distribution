@@ -21,22 +21,17 @@ trait XMessageBox extends StObject {
 }
 object XMessageBox {
   
-  @scala.inline
-  def apply(CaptionText: String, MessageText: String, execute: () => Double): XMessageBox = {
+  inline def apply(CaptionText: String, MessageText: String, execute: () => Double): XMessageBox = {
     val __obj = js.Dynamic.literal(CaptionText = CaptionText.asInstanceOf[js.Any], MessageText = MessageText.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute))
     __obj.asInstanceOf[XMessageBox]
   }
   
-  @scala.inline
-  implicit class XMessageBoxMutableBuilder[Self <: XMessageBox] (val x: Self) extends AnyVal {
+  extension [Self <: XMessageBox](x: Self) {
     
-    @scala.inline
-    def setCaptionText(value: String): Self = StObject.set(x, "CaptionText", value.asInstanceOf[js.Any])
+    inline def setCaptionText(value: String): Self = StObject.set(x, "CaptionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecute(value: () => Double): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Double): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "MessageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "MessageText", value.asInstanceOf[js.Any])
   }
 }

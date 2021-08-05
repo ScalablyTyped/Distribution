@@ -14,16 +14,13 @@ trait PickImplonTopVisibleRever extends StObject {
 }
 object PickImplonTopVisibleRever {
   
-  @scala.inline
-  def apply(onTopVisibleReverse: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonTopVisibleRever = {
+  inline def apply(onTopVisibleReverse: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonTopVisibleRever = {
     val __obj = js.Dynamic.literal(onTopVisibleReverse = onTopVisibleReverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonTopVisibleRever]
   }
   
-  @scala.inline
-  implicit class PickImplonTopVisibleReverMutableBuilder[Self <: PickImplonTopVisibleRever] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonTopVisibleRever](x: Self) {
     
-    @scala.inline
-    def setOnTopVisibleReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopVisibleReverse", value.asInstanceOf[js.Any])
+    inline def setOnTopVisibleReverse(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopVisibleReverse", value.asInstanceOf[js.Any])
   }
 }

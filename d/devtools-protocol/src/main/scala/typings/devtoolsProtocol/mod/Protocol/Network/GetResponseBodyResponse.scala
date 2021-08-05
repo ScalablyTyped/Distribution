@@ -18,19 +18,15 @@ trait GetResponseBodyResponse extends StObject {
 }
 object GetResponseBodyResponse {
   
-  @scala.inline
-  def apply(base64Encoded: Boolean, body: String): GetResponseBodyResponse = {
+  inline def apply(base64Encoded: Boolean, body: String): GetResponseBodyResponse = {
     val __obj = js.Dynamic.literal(base64Encoded = base64Encoded.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponseBodyResponse]
   }
   
-  @scala.inline
-  implicit class GetResponseBodyResponseMutableBuilder[Self <: GetResponseBodyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResponseBodyResponse](x: Self) {
     
-    @scala.inline
-    def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
+    inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

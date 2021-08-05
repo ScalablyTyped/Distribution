@@ -13,8 +13,7 @@ trait GetParametersForImportInput
      with typings.awsSdkClientKmsNode.typesGetParametersForImportInputMod.GetParametersForImportInput
 object GetParametersForImportInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     KeyId: String,
     WrappingAlgorithm: RSAES_PKCS1_V1_5 | RSAES_OAEP_SHA_1 | RSAES_OAEP_SHA_256 | String,
     WrappingKeySpec: RSA_2048 | String

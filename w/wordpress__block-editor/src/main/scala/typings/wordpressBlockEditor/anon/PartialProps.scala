@@ -16,34 +16,25 @@ trait PartialProps extends StObject {
 }
 object PartialProps {
   
-  @scala.inline
-  def apply(): PartialProps = {
+  inline def apply(): PartialProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialProps]
   }
   
-  @scala.inline
-  implicit class PartialPropsMutableBuilder[Self <: PartialProps] (val x: Self) extends AnyVal {
+  extension [Self <: PartialProps](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[EditorColor]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[EditorColor]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: EditorColor*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
+    inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCustomColorsUndefined: Self = StObject.set(x, "disableCustomColors", js.undefined)
+    inline def setDisableCustomColorsUndefined: Self = StObject.set(x, "disableCustomColors", js.undefined)
     
-    @scala.inline
-    def setHasColorsToChoose(value: Boolean): Self = StObject.set(x, "hasColorsToChoose", value.asInstanceOf[js.Any])
+    inline def setHasColorsToChoose(value: Boolean): Self = StObject.set(x, "hasColorsToChoose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasColorsToChooseUndefined: Self = StObject.set(x, "hasColorsToChoose", js.undefined)
+    inline def setHasColorsToChooseUndefined: Self = StObject.set(x, "hasColorsToChoose", js.undefined)
   }
 }

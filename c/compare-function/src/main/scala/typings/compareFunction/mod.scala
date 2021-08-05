@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](fn: js.Function1[/* item */ T, js.Any]): js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`]]
-  @scala.inline
-  def apply[T](sign: Double, fn: js.Function1[/* item */ T, js.Any]): js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`] = (^.asInstanceOf[js.Dynamic].apply(sign.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`]]
+  inline def apply[T](fn: js.Function1[/* item */ T, js.Any]): js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`]]
+  inline def apply[T](sign: Double, fn: js.Function1[/* item */ T, js.Any]): js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`] = (^.asInstanceOf[js.Dynamic].apply(sign.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* a */ T, /* b */ T, `-1` | `0` | `1`]]
   
   @JSImport("compare-function", JSImport.Namespace)
   @js.native

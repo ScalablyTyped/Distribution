@@ -27,55 +27,39 @@ trait ReadonlyStatusBarProps extends StObject {
 }
 object ReadonlyStatusBarProps {
   
-  @scala.inline
-  def apply(): ReadonlyStatusBarProps = {
+  inline def apply(): ReadonlyStatusBarProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlyStatusBarProps]
   }
   
-  @scala.inline
-  implicit class ReadonlyStatusBarPropsMutableBuilder[Self <: ReadonlyStatusBarProps] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyStatusBarProps](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setNetworkActivityIndicatorVisible(value: Boolean): Self = StObject.set(x, "networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
+    inline def setNetworkActivityIndicatorVisible(value: Boolean): Self = StObject.set(x, "networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
+    inline def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
     
-    @scala.inline
-    def setShowHideTransition(value: fade | slide): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    inline def setShowHideTransition(value: fade | slide): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
+    inline def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

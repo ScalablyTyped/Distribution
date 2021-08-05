@@ -16,19 +16,15 @@ trait ISearchMatchCombinations extends StObject {
 }
 object ISearchMatchCombinations {
   
-  @scala.inline
-  def apply(qSearchMatchCombinations: js.Array[ISerachMatchCombination]): ISearchMatchCombinations = {
+  inline def apply(qSearchMatchCombinations: js.Array[ISerachMatchCombination]): ISearchMatchCombinations = {
     val __obj = js.Dynamic.literal(qSearchMatchCombinations = qSearchMatchCombinations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchMatchCombinations]
   }
   
-  @scala.inline
-  implicit class ISearchMatchCombinationsMutableBuilder[Self <: ISearchMatchCombinations] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchMatchCombinations](x: Self) {
     
-    @scala.inline
-    def setQSearchMatchCombinations(value: js.Array[ISerachMatchCombination]): Self = StObject.set(x, "qSearchMatchCombinations", value.asInstanceOf[js.Any])
+    inline def setQSearchMatchCombinations(value: js.Array[ISerachMatchCombination]): Self = StObject.set(x, "qSearchMatchCombinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSearchMatchCombinationsVarargs(value: ISerachMatchCombination*): Self = StObject.set(x, "qSearchMatchCombinations", js.Array(value :_*))
+    inline def setQSearchMatchCombinationsVarargs(value: ISerachMatchCombination*): Self = StObject.set(x, "qSearchMatchCombinations", js.Array(value :_*))
   }
 }

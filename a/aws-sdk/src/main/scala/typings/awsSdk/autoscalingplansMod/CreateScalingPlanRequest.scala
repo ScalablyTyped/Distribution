@@ -23,8 +23,7 @@ trait CreateScalingPlanRequest extends StObject {
 }
 object CreateScalingPlanRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationSource: ApplicationSource,
     ScalingInstructions: ScalingInstructions,
     ScalingPlanName: ScalingPlanName
@@ -33,19 +32,14 @@ object CreateScalingPlanRequest {
     __obj.asInstanceOf[CreateScalingPlanRequest]
   }
   
-  @scala.inline
-  implicit class CreateScalingPlanRequestMutableBuilder[Self <: CreateScalingPlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScalingPlanRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationSource(value: ApplicationSource): Self = StObject.set(x, "ApplicationSource", value.asInstanceOf[js.Any])
+    inline def setApplicationSource(value: ApplicationSource): Self = StObject.set(x, "ApplicationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingInstructions(value: ScalingInstructions): Self = StObject.set(x, "ScalingInstructions", value.asInstanceOf[js.Any])
+    inline def setScalingInstructions(value: ScalingInstructions): Self = StObject.set(x, "ScalingInstructions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
+    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
     
-    @scala.inline
-    def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
+    inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
   }
 }

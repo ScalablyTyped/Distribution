@@ -12,25 +12,19 @@ trait EventInit extends StObject {
 }
 object EventInit {
   
-  @scala.inline
-  def apply(): EventInit = {
+  inline def apply(): EventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventInit]
   }
   
-  @scala.inline
-  implicit class EventInitMutableBuilder[Self <: EventInit] (val x: Self) extends AnyVal {
+  extension [Self <: EventInit](x: Self) {
     
-    @scala.inline
-    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+    inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
   }
 }

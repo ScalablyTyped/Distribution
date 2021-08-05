@@ -24,20 +24,16 @@ object mod {
   }
   object WatchOptions {
     
-    @scala.inline
-    def apply(): WatchOptions = {
+    inline def apply(): WatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WatchOptions]
     }
     
-    @scala.inline
-    implicit class WatchOptionsMutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatchOptions](x: Self) {
       
-      @scala.inline
-      def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
+      inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
+      inline def setAggregateTimeoutUndefined: Self = StObject.set(x, "aggregateTimeout", js.undefined)
     }
   }
   
@@ -49,32 +45,24 @@ object mod {
   }
   object WatcherOptions {
     
-    @scala.inline
-    def apply(): WatcherOptions = {
+    inline def apply(): WatcherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WatcherOptions]
     }
     
-    @scala.inline
-    implicit class WatcherOptionsMutableBuilder[Self <: WatcherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatcherOptions](x: Self) {
       
-      @scala.inline
-      def setIgnored(value: js.Array[String] | String | RegExp | (js.Function1[/* path */ String, Boolean])): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setIgnored(value: js.Array[String] | String | RegExp | (js.Function1[/* path */ String, Boolean])): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "ignored", js.Any.fromFunction1(value))
+      inline def setIgnoredFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "ignored", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+      inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
       
-      @scala.inline
-      def setIgnoredVarargs(value: String*): Self = StObject.set(x, "ignored", js.Array(value :_*))
+      inline def setIgnoredVarargs(value: String*): Self = StObject.set(x, "ignored", js.Array(value :_*))
       
-      @scala.inline
-      def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+      inline def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+      inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
     }
   }
   

@@ -12,8 +12,7 @@ trait WorkspaceTaskQueueInstance
 }
 object WorkspaceTaskQueueInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     get: RestMethod,
     post: RestMethod,
@@ -24,10 +23,8 @@ object WorkspaceTaskQueueInstance {
     __obj.asInstanceOf[WorkspaceTaskQueueInstance]
   }
   
-  @scala.inline
-  implicit class WorkspaceTaskQueueInstanceMutableBuilder[Self <: WorkspaceTaskQueueInstance] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceTaskQueueInstance](x: Self) {
     
-    @scala.inline
-    def setStatistics(value: WorkspaceInstanceStatisticResource): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: WorkspaceInstanceStatisticResource): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
   }
 }

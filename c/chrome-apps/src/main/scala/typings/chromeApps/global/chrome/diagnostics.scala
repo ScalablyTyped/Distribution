@@ -20,6 +20,5 @@ object diagnostics {
   val ^ : js.Any = js.native
   
   /** @todo TODO PROPER DOCS */
-  @scala.inline
-  def sendPacket(options: js.Object, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendPacket(options: js.Object, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

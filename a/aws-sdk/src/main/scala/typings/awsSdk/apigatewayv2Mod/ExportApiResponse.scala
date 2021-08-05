@@ -10,19 +10,15 @@ trait ExportApiResponse extends StObject {
 }
 object ExportApiResponse {
   
-  @scala.inline
-  def apply(): ExportApiResponse = {
+  inline def apply(): ExportApiResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportApiResponse]
   }
   
-  @scala.inline
-  implicit class ExportApiResponseMutableBuilder[Self <: ExportApiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportApiResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: ExportedApi): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ExportedApi): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

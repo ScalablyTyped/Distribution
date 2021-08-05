@@ -8,16 +8,13 @@ object passportAppleStrings {
   
   @js.native
   sealed trait apple extends StObject
-  @scala.inline
-  def apple: apple = "apple".asInstanceOf[apple]
+  inline def apple: apple = "apple".asInstanceOf[apple]
   
   @js.native
   sealed trait form_post extends StObject
-  @scala.inline
-  def form_post: form_post = "form_post".asInstanceOf[form_post]
+  inline def form_post: form_post = "form_post".asInstanceOf[form_post]
   
   @js.native
   sealed trait `name email` extends StObject
-  @scala.inline
-  def `name email`: `name email` = ("name email").asInstanceOf[`name email`]
+  inline def `name email`: `name email` = ("name email").asInstanceOf[`name email`]
 }

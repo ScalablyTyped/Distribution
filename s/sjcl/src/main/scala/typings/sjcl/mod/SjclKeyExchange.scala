@@ -11,16 +11,13 @@ trait SjclKeyExchange extends StObject {
 }
 object SjclKeyExchange {
   
-  @scala.inline
-  def apply(srp: SjclSecureRemotePassword): SjclKeyExchange = {
+  inline def apply(srp: SjclSecureRemotePassword): SjclKeyExchange = {
     val __obj = js.Dynamic.literal(srp = srp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclKeyExchange]
   }
   
-  @scala.inline
-  implicit class SjclKeyExchangeMutableBuilder[Self <: SjclKeyExchange] (val x: Self) extends AnyVal {
+  extension [Self <: SjclKeyExchange](x: Self) {
     
-    @scala.inline
-    def setSrp(value: SjclSecureRemotePassword): Self = StObject.set(x, "srp", value.asInstanceOf[js.Any])
+    inline def setSrp(value: SjclSecureRemotePassword): Self = StObject.set(x, "srp", value.asInstanceOf[js.Any])
   }
 }

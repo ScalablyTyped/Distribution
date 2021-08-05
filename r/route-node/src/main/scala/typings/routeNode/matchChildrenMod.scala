@@ -13,25 +13,21 @@ object matchChildrenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(nodes: js.Array[RouteNode], pathSegment: String, currentMatch: MatchResponse): MatchResponse | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], pathSegment.asInstanceOf[js.Any], currentMatch.asInstanceOf[js.Any])).asInstanceOf[MatchResponse | Null]
-  @scala.inline
-  def default(
+  inline def default(nodes: js.Array[RouteNode], pathSegment: String, currentMatch: MatchResponse): MatchResponse | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], pathSegment.asInstanceOf[js.Any], currentMatch.asInstanceOf[js.Any])).asInstanceOf[MatchResponse | Null]
+  inline def default(
     nodes: js.Array[RouteNode],
     pathSegment: String,
     currentMatch: MatchResponse,
     options: Unit,
     consumedBefore: String
   ): MatchResponse | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], pathSegment.asInstanceOf[js.Any], currentMatch.asInstanceOf[js.Any], options.asInstanceOf[js.Any], consumedBefore.asInstanceOf[js.Any])).asInstanceOf[MatchResponse | Null]
-  @scala.inline
-  def default(
+  inline def default(
     nodes: js.Array[RouteNode],
     pathSegment: String,
     currentMatch: MatchResponse,
     options: MatchOptions
   ): MatchResponse | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(nodes.asInstanceOf[js.Any], pathSegment.asInstanceOf[js.Any], currentMatch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchResponse | Null]
-  @scala.inline
-  def default(
+  inline def default(
     nodes: js.Array[RouteNode],
     pathSegment: String,
     currentMatch: MatchResponse,

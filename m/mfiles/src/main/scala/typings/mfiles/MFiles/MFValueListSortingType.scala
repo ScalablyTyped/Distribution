@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFValueListSortingType extends StObject
 object MFValueListSortingType {
   
-  @scala.inline
-  def ExtID: `1` = 1.asInstanceOf[`1`]
+  inline def ExtID: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Name: `0` = 0.asInstanceOf[`0`]
+  inline def Name: `0` = 0.asInstanceOf[`0`]
 }

@@ -15,25 +15,19 @@ trait PanelBarErrorEvent
 }
 object PanelBarErrorEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PanelBar): PanelBarErrorEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PanelBar): PanelBarErrorEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelBarErrorEvent]
   }
   
-  @scala.inline
-  implicit class PanelBarErrorEventMutableBuilder[Self <: PanelBarErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PanelBarErrorEvent](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setXhr(value: JQueryXHR): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: JQueryXHR): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

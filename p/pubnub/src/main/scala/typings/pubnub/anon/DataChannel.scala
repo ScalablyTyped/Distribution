@@ -17,23 +17,18 @@ trait DataChannel[MembershipCustom /* <: ObjectCustom */] extends StObject {
 }
 object DataChannel {
   
-  @scala.inline
-  def apply[MembershipCustom /* <: ObjectCustom */](data: Channel[MembershipCustom]): DataChannel[MembershipCustom] = {
+  inline def apply[MembershipCustom /* <: ObjectCustom */](data: Channel[MembershipCustom]): DataChannel[MembershipCustom] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "set")
     __obj.updateDynamic("type")("membership")
     __obj.asInstanceOf[DataChannel[MembershipCustom]]
   }
   
-  @scala.inline
-  implicit class DataChannelMutableBuilder[Self <: DataChannel[?], MembershipCustom /* <: ObjectCustom */] (val x: Self & DataChannel[MembershipCustom]) extends AnyVal {
+  extension [Self <: DataChannel[?], MembershipCustom /* <: ObjectCustom */](x: Self & DataChannel[MembershipCustom]) {
     
-    @scala.inline
-    def setData(value: Channel[MembershipCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Channel[MembershipCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: set): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

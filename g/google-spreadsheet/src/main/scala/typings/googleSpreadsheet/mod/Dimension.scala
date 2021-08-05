@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Dimension extends StObject
 object Dimension {
   
-  @scala.inline
-  def COLUMNS: typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMNS = "COLUMNS".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMNS]
+  inline def COLUMNS: typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMNS = "COLUMNS".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.COLUMNS]
   
-  @scala.inline
-  def ROWS: typings.googleSpreadsheet.googleSpreadsheetStrings.ROWS = "ROWS".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.ROWS]
+  inline def ROWS: typings.googleSpreadsheet.googleSpreadsheetStrings.ROWS = "ROWS".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.ROWS]
 }

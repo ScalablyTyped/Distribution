@@ -29,25 +29,19 @@ trait LaunchOption extends StObject {
 }
 object LaunchOption {
   
-  @scala.inline
-  def apply(isSticky: Boolean, query: js.Any, scene: Double, shareTicket: String): LaunchOption = {
+  inline def apply(isSticky: Boolean, query: js.Any, scene: Double, shareTicket: String): LaunchOption = {
     val __obj = js.Dynamic.literal(isSticky = isSticky.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOption]
   }
   
-  @scala.inline
-  implicit class LaunchOptionMutableBuilder[Self <: LaunchOption] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchOption](x: Self) {
     
-    @scala.inline
-    def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
+    inline def setIsSticky(value: Boolean): Self = StObject.set(x, "isSticky", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SketchMSFillTypeEnum extends StObject
 object SketchMSFillTypeEnum {
   
-  @scala.inline
-  def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
+  inline def `0`: typings.sketchapp.sketchappNumbers.`0` = 0.asInstanceOf[typings.sketchapp.sketchappNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
+  inline def `1`: typings.sketchapp.sketchappNumbers.`1` = 1.asInstanceOf[typings.sketchapp.sketchappNumbers.`1`]
   
-  @scala.inline
-  def `4`: typings.sketchapp.sketchappNumbers.`4` = 4.asInstanceOf[typings.sketchapp.sketchappNumbers.`4`]
+  inline def `4`: typings.sketchapp.sketchappNumbers.`4` = 4.asInstanceOf[typings.sketchapp.sketchappNumbers.`4`]
   
-  @scala.inline
-  def `5`: typings.sketchapp.sketchappNumbers.`5` = 5.asInstanceOf[typings.sketchapp.sketchappNumbers.`5`]
+  inline def `5`: typings.sketchapp.sketchappNumbers.`5` = 5.asInstanceOf[typings.sketchapp.sketchappNumbers.`5`]
 }

@@ -23,10 +23,8 @@ object mod {
     /**
       * Creates a geocoder control.
       */
-    @scala.inline
-    def geocoder(api_key: String): Geocoder = ^.asInstanceOf[js.Dynamic].applyDynamic("geocoder")(api_key.asInstanceOf[js.Any]).asInstanceOf[Geocoder]
-    @scala.inline
-    def geocoder(api_key: String, options: GeocoderOptions): Geocoder = (^.asInstanceOf[js.Dynamic].applyDynamic("geocoder")(api_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Geocoder]
+    inline def geocoder(api_key: String): Geocoder = ^.asInstanceOf[js.Dynamic].applyDynamic("geocoder")(api_key.asInstanceOf[js.Any]).asInstanceOf[Geocoder]
+    inline def geocoder(api_key: String, options: GeocoderOptions): Geocoder = (^.asInstanceOf[js.Dynamic].applyDynamic("geocoder")(api_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Geocoder]
   }
   
   object Control_ {
@@ -186,115 +184,80 @@ object mod {
     }
     object GeocoderOptions {
       
-      @scala.inline
-      def apply(): GeocoderOptions = {
+      inline def apply(): GeocoderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GeocoderOptions]
       }
       
-      @scala.inline
-      implicit class GeocoderOptionsMutableBuilder[Self <: GeocoderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: GeocoderOptions](x: Self) {
         
-        @scala.inline
-        def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+        inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+        inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
         
-        @scala.inline
-        def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+        inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
+        inline def setAutocompleteUndefined: Self = StObject.set(x, "autocomplete", js.undefined)
         
-        @scala.inline
-        def setBounds(value: LatLngBounds_ | Boolean): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: LatLngBounds_ | Boolean): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+        inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
         
-        @scala.inline
-        def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+        inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+        inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
         
-        @scala.inline
-        def setFocus(value: LatLng_ | Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+        inline def setFocus(value: LatLng_ | Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+        inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
         
-        @scala.inline
-        def setFullWidth(value: Double | Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+        inline def setFullWidth(value: Double | Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+        inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
         
-        @scala.inline
-        def setLayers(value: String | js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+        inline def setLayers(value: String | js.Array[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+        inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
         
-        @scala.inline
-        def setLayersVarargs(value: js.Any*): Self = StObject.set(x, "layers", js.Array(value :_*))
+        inline def setLayersVarargs(value: js.Any*): Self = StObject.set(x, "layers", js.Array(value :_*))
         
-        @scala.inline
-        def setMarkers(value: MarkerOptions | Boolean): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+        inline def setMarkers(value: MarkerOptions | Boolean): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
+        inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
         
-        @scala.inline
-        def setPanToPoint(value: Boolean): Self = StObject.set(x, "panToPoint", value.asInstanceOf[js.Any])
+        inline def setPanToPoint(value: Boolean): Self = StObject.set(x, "panToPoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPanToPointUndefined: Self = StObject.set(x, "panToPoint", js.undefined)
+        inline def setPanToPointUndefined: Self = StObject.set(x, "panToPoint", js.undefined)
         
-        @scala.inline
-        def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+        inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        @scala.inline
-        def setPlace(value: Boolean): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
+        inline def setPlace(value: Boolean): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
+        inline def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
         
-        @scala.inline
-        def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+        inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+        inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
         
-        @scala.inline
-        def setPolygonIcon(value: Boolean | String): Self = StObject.set(x, "polygonIcon", value.asInstanceOf[js.Any])
+        inline def setPolygonIcon(value: Boolean | String): Self = StObject.set(x, "polygonIcon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPolygonIconUndefined: Self = StObject.set(x, "polygonIcon", js.undefined)
+        inline def setPolygonIconUndefined: Self = StObject.set(x, "polygonIcon", js.undefined)
         
-        @scala.inline
-        def setPosition(
+        inline def setPosition(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionString */ js.Any
         ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+        inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       }
     }
     

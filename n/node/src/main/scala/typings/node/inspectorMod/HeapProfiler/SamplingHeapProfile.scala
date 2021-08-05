@@ -13,16 +13,13 @@ trait SamplingHeapProfile extends StObject {
 }
 object SamplingHeapProfile {
   
-  @scala.inline
-  def apply(head: SamplingHeapProfileNode): SamplingHeapProfile = {
+  inline def apply(head: SamplingHeapProfileNode): SamplingHeapProfile = {
     val __obj = js.Dynamic.literal(head = head.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingHeapProfile]
   }
   
-  @scala.inline
-  implicit class SamplingHeapProfileMutableBuilder[Self <: SamplingHeapProfile] (val x: Self) extends AnyVal {
+  extension [Self <: SamplingHeapProfile](x: Self) {
     
-    @scala.inline
-    def setHead(value: SamplingHeapProfileNode): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: SamplingHeapProfileNode): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
   }
 }

@@ -24,43 +24,31 @@ trait HTMLReturn extends StObject {
 }
 object HTMLReturn {
   
-  @scala.inline
-  def apply(): HTMLReturn = {
+  inline def apply(): HTMLReturn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTMLReturn]
   }
   
-  @scala.inline
-  implicit class HTMLReturnMutableBuilder[Self <: HTMLReturn] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLReturn](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setNum_pages(value: String): Self = StObject.set(x, "num_pages", value.asInstanceOf[js.Any])
+    inline def setNum_pages(value: String): Self = StObject.set(x, "num_pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_pagesUndefined: Self = StObject.set(x, "num_pages", js.undefined)
+    inline def setNum_pagesUndefined: Self = StObject.set(x, "num_pages", js.undefined)
     
-    @scala.inline
-    def setPublication_date(value: String): Self = StObject.set(x, "publication_date", value.asInstanceOf[js.Any])
+    inline def setPublication_date(value: String): Self = StObject.set(x, "publication_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublication_dateUndefined: Self = StObject.set(x, "publication_date", js.undefined)
+    inline def setPublication_dateUndefined: Self = StObject.set(x, "publication_date", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

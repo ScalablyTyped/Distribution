@@ -20,37 +20,27 @@ trait AnimationFade extends StObject {
 }
 object AnimationFade {
   
-  @scala.inline
-  def apply(): AnimationFade = {
+  inline def apply(): AnimationFade = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationFade]
   }
   
-  @scala.inline
-  implicit class AnimationFadeMutableBuilder[Self <: AnimationFade] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationFade](x: Self) {
     
-    @scala.inline
-    def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
+    inline def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
+    inline def setEndTimeOffsetUndefined: Self = StObject.set(x, "endTimeOffset", js.undefined)
     
-    @scala.inline
-    def setFadeType(value: String): Self = StObject.set(x, "fadeType", value.asInstanceOf[js.Any])
+    inline def setFadeType(value: String): Self = StObject.set(x, "fadeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeTypeUndefined: Self = StObject.set(x, "fadeType", js.undefined)
+    inline def setFadeTypeUndefined: Self = StObject.set(x, "fadeType", js.undefined)
     
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
+    inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
+    inline def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
     
-    @scala.inline
-    def setXy(value: NormalizedCoordinate): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
+    inline def setXy(value: NormalizedCoordinate): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
+    inline def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
   }
 }

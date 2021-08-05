@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFieldKind extends StObject
 object WdFieldKind {
   
-  @scala.inline
-  def wdFieldKindCold: `3` = 3.asInstanceOf[`3`]
+  inline def wdFieldKindCold: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdFieldKindHot: `1` = 1.asInstanceOf[`1`]
+  inline def wdFieldKindHot: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdFieldKindNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdFieldKindNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdFieldKindWarm: `2` = 2.asInstanceOf[`2`]
+  inline def wdFieldKindWarm: `2` = 2.asInstanceOf[`2`]
 }

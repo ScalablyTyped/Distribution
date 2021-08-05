@@ -17,31 +17,23 @@ trait VmCreationConfig extends StObject {
 }
 object VmCreationConfig {
   
-  @scala.inline
-  def apply(): VmCreationConfig = {
+  inline def apply(): VmCreationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VmCreationConfig]
   }
   
-  @scala.inline
-  implicit class VmCreationConfigMutableBuilder[Self <: VmCreationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: VmCreationConfig](x: Self) {
     
-    @scala.inline
-    def setSubnet(value: String): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
+    inline def setSubnet(value: String): Self = StObject.set(x, "subnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
+    inline def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
     
-    @scala.inline
-    def setVmMachineType(value: String): Self = StObject.set(x, "vmMachineType", value.asInstanceOf[js.Any])
+    inline def setVmMachineType(value: String): Self = StObject.set(x, "vmMachineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmMachineTypeUndefined: Self = StObject.set(x, "vmMachineType", js.undefined)
+    inline def setVmMachineTypeUndefined: Self = StObject.set(x, "vmMachineType", js.undefined)
     
-    @scala.inline
-    def setVmZone(value: String): Self = StObject.set(x, "vmZone", value.asInstanceOf[js.Any])
+    inline def setVmZone(value: String): Self = StObject.set(x, "vmZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmZoneUndefined: Self = StObject.set(x, "vmZone", js.undefined)
+    inline def setVmZoneUndefined: Self = StObject.set(x, "vmZone", js.undefined)
   }
 }

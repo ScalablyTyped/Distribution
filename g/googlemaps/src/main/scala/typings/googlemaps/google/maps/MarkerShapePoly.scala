@@ -19,20 +19,16 @@ trait MarkerShapePoly
 }
 object MarkerShapePoly {
   
-  @scala.inline
-  def apply(coords: MarkerShapePolyCoords): MarkerShapePoly = {
+  inline def apply(coords: MarkerShapePolyCoords): MarkerShapePoly = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("poly")
     __obj.asInstanceOf[MarkerShapePoly]
   }
   
-  @scala.inline
-  implicit class MarkerShapePolyMutableBuilder[Self <: MarkerShapePoly] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerShapePoly](x: Self) {
     
-    @scala.inline
-    def setCoords(value: MarkerShapePolyCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: MarkerShapePolyCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: poly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: poly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

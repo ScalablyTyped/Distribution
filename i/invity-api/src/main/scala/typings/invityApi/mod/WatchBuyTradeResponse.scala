@@ -13,25 +13,19 @@ trait WatchBuyTradeResponse extends StObject {
 }
 object WatchBuyTradeResponse {
   
-  @scala.inline
-  def apply(): WatchBuyTradeResponse = {
+  inline def apply(): WatchBuyTradeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WatchBuyTradeResponse]
   }
   
-  @scala.inline
-  implicit class WatchBuyTradeResponseMutableBuilder[Self <: WatchBuyTradeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WatchBuyTradeResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setStatus(value: BuyTradeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BuyTradeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

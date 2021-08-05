@@ -23,29 +23,22 @@ object typesSegmentsResponseMod {
   }
   object SegmentsResponse {
     
-    @scala.inline
-    def apply(): SegmentsResponse = {
+    inline def apply(): SegmentsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentsResponse]
     }
     
-    @scala.inline
-    implicit class SegmentsResponseMutableBuilder[Self <: SegmentsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[SegmentResponse] | Iterable[SegmentResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[SegmentResponse] | Iterable[SegmentResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: SegmentResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: SegmentResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -61,23 +54,18 @@ object typesSegmentsResponseMod {
   }
   object UnmarshalledSegmentsResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledSegmentsResponse = {
+    inline def apply(): UnmarshalledSegmentsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSegmentsResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSegmentsResponseMutableBuilder[Self <: UnmarshalledSegmentsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSegmentsResponse](x: Self) {
       
-      @scala.inline
-      def setItem(value: js.Array[UnmarshalledSegmentResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[UnmarshalledSegmentResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      @scala.inline
-      def setItemVarargs(value: UnmarshalledSegmentResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledSegmentResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
     }
   }
 }

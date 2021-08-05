@@ -62,79 +62,55 @@ trait ParserOptions extends StObject {
 }
 object ParserOptions {
   
-  @scala.inline
-  def apply(): ParserOptions = {
+  inline def apply(): ParserOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParserOptions]
   }
   
-  @scala.inline
-  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParserOptions](x: Self) {
     
-    @scala.inline
-    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setDecodeEntities(value: (/* rawText */ String, /* asAttr */ Boolean) => String): Self = StObject.set(x, "decodeEntities", js.Any.fromFunction2(value))
+    inline def setDecodeEntities(value: (/* rawText */ String, /* asAttr */ Boolean) => String): Self = StObject.set(x, "decodeEntities", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
+    inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
     
-    @scala.inline
-    def setDelimiters(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+    inline def setDelimiters(value: js.Tuple2[String, String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
+    inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
     
-    @scala.inline
-    def setGetNamespace(value: (/* tag */ String, /* parent */ js.UndefOr[ElementNode]) => Namespace): Self = StObject.set(x, "getNamespace", js.Any.fromFunction2(value))
+    inline def setGetNamespace(value: (/* tag */ String, /* parent */ js.UndefOr[ElementNode]) => Namespace): Self = StObject.set(x, "getNamespace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
+    inline def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
     
-    @scala.inline
-    def setGetTextMode(value: (/* node */ ElementNode, /* parent */ js.UndefOr[ElementNode]) => TextModes): Self = StObject.set(x, "getTextMode", js.Any.fromFunction2(value))
+    inline def setGetTextMode(value: (/* node */ ElementNode, /* parent */ js.UndefOr[ElementNode]) => TextModes): Self = StObject.set(x, "getTextMode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTextModeUndefined: Self = StObject.set(x, "getTextMode", js.undefined)
+    inline def setGetTextModeUndefined: Self = StObject.set(x, "getTextMode", js.undefined)
     
-    @scala.inline
-    def setIsBuiltInComponent(value: /* tag */ String => js.Symbol | Unit): Self = StObject.set(x, "isBuiltInComponent", js.Any.fromFunction1(value))
+    inline def setIsBuiltInComponent(value: /* tag */ String => js.Symbol | Unit): Self = StObject.set(x, "isBuiltInComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsBuiltInComponentUndefined: Self = StObject.set(x, "isBuiltInComponent", js.undefined)
+    inline def setIsBuiltInComponentUndefined: Self = StObject.set(x, "isBuiltInComponent", js.undefined)
     
-    @scala.inline
-    def setIsCustomElement(value: /* tag */ String => Boolean | Unit): Self = StObject.set(x, "isCustomElement", js.Any.fromFunction1(value))
+    inline def setIsCustomElement(value: /* tag */ String => Boolean | Unit): Self = StObject.set(x, "isCustomElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsCustomElementUndefined: Self = StObject.set(x, "isCustomElement", js.undefined)
+    inline def setIsCustomElementUndefined: Self = StObject.set(x, "isCustomElement", js.undefined)
     
-    @scala.inline
-    def setIsNativeTag(value: /* tag */ String => Boolean): Self = StObject.set(x, "isNativeTag", js.Any.fromFunction1(value))
+    inline def setIsNativeTag(value: /* tag */ String => Boolean): Self = StObject.set(x, "isNativeTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNativeTagUndefined: Self = StObject.set(x, "isNativeTag", js.undefined)
+    inline def setIsNativeTagUndefined: Self = StObject.set(x, "isNativeTag", js.undefined)
     
-    @scala.inline
-    def setIsPreTag(value: /* tag */ String => Boolean): Self = StObject.set(x, "isPreTag", js.Any.fromFunction1(value))
+    inline def setIsPreTag(value: /* tag */ String => Boolean): Self = StObject.set(x, "isPreTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsPreTagUndefined: Self = StObject.set(x, "isPreTag", js.undefined)
+    inline def setIsPreTagUndefined: Self = StObject.set(x, "isPreTag", js.undefined)
     
-    @scala.inline
-    def setIsVoidTag(value: /* tag */ String => Boolean): Self = StObject.set(x, "isVoidTag", js.Any.fromFunction1(value))
+    inline def setIsVoidTag(value: /* tag */ String => Boolean): Self = StObject.set(x, "isVoidTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsVoidTagUndefined: Self = StObject.set(x, "isVoidTag", js.undefined)
+    inline def setIsVoidTagUndefined: Self = StObject.set(x, "isVoidTag", js.undefined)
     
-    @scala.inline
-    def setOnError(value: /* error */ CompilerError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ CompilerError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
   }
 }

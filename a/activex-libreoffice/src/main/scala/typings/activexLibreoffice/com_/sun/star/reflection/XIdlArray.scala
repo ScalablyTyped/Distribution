@@ -50,8 +50,7 @@ trait XIdlArray
 }
 object XIdlArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     get: (js.Any, Double) => js.Any,
     getLen: js.Any => Double,
@@ -64,19 +63,14 @@ object XIdlArray {
     __obj.asInstanceOf[XIdlArray]
   }
   
-  @scala.inline
-  implicit class XIdlArrayMutableBuilder[Self <: XIdlArray] (val x: Self) extends AnyVal {
+  extension [Self <: XIdlArray](x: Self) {
     
-    @scala.inline
-    def setGet(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLen(value: js.Any => Double): Self = StObject.set(x, "getLen", js.Any.fromFunction1(value))
+    inline def setGetLen(value: js.Any => Double): Self = StObject.set(x, "getLen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRealloc(value: (js.Array[js.Any], Double) => Unit): Self = StObject.set(x, "realloc", js.Any.fromFunction2(value))
+    inline def setRealloc(value: (js.Array[js.Any], Double) => Unit): Self = StObject.set(x, "realloc", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet(value: (js.Array[js.Any], Double, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (js.Array[js.Any], Double, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
   }
 }

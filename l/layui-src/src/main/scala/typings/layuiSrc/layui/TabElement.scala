@@ -12,19 +12,15 @@ trait TabElement extends StObject {
 }
 object TabElement {
   
-  @scala.inline
-  def apply(bodyElem: String, headerElem: String): TabElement = {
+  inline def apply(bodyElem: String, headerElem: String): TabElement = {
     val __obj = js.Dynamic.literal(bodyElem = bodyElem.asInstanceOf[js.Any], headerElem = headerElem.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabElement]
   }
   
-  @scala.inline
-  implicit class TabElementMutableBuilder[Self <: TabElement] (val x: Self) extends AnyVal {
+  extension [Self <: TabElement](x: Self) {
     
-    @scala.inline
-    def setBodyElem(value: String): Self = StObject.set(x, "bodyElem", value.asInstanceOf[js.Any])
+    inline def setBodyElem(value: String): Self = StObject.set(x, "bodyElem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderElem(value: String): Self = StObject.set(x, "headerElem", value.asInstanceOf[js.Any])
+    inline def setHeaderElem(value: String): Self = StObject.set(x, "headerElem", value.asInstanceOf[js.Any])
   }
 }

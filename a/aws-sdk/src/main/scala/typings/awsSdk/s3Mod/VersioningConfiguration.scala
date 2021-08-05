@@ -18,25 +18,19 @@ trait VersioningConfiguration extends StObject {
 }
 object VersioningConfiguration {
   
-  @scala.inline
-  def apply(): VersioningConfiguration = {
+  inline def apply(): VersioningConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VersioningConfiguration]
   }
   
-  @scala.inline
-  implicit class VersioningConfigurationMutableBuilder[Self <: VersioningConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VersioningConfiguration](x: Self) {
     
-    @scala.inline
-    def setMFADelete(value: MFADelete): Self = StObject.set(x, "MFADelete", value.asInstanceOf[js.Any])
+    inline def setMFADelete(value: MFADelete): Self = StObject.set(x, "MFADelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFADeleteUndefined: Self = StObject.set(x, "MFADelete", js.undefined)
+    inline def setMFADeleteUndefined: Self = StObject.set(x, "MFADelete", js.undefined)
     
-    @scala.inline
-    def setStatus(value: BucketVersioningStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BucketVersioningStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

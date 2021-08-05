@@ -23,25 +23,19 @@ trait GetInvalidationRequestwai extends StObject {
 }
 object GetInvalidationRequestwai {
   
-  @scala.inline
-  def apply(DistributionId: String, Id: String): GetInvalidationRequestwai = {
+  inline def apply(DistributionId: String, Id: String): GetInvalidationRequestwai = {
     val __obj = js.Dynamic.literal(DistributionId = DistributionId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInvalidationRequestwai]
   }
   
-  @scala.inline
-  implicit class GetInvalidationRequestwaiMutableBuilder[Self <: GetInvalidationRequestwai] (val x: Self) extends AnyVal {
+  extension [Self <: GetInvalidationRequestwai](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
+    inline def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

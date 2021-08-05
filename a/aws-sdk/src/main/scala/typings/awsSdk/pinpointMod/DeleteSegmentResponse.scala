@@ -10,16 +10,13 @@ trait DeleteSegmentResponse extends StObject {
 }
 object DeleteSegmentResponse {
   
-  @scala.inline
-  def apply(SegmentResponse: SegmentResponse): DeleteSegmentResponse = {
+  inline def apply(SegmentResponse: SegmentResponse): DeleteSegmentResponse = {
     val __obj = js.Dynamic.literal(SegmentResponse = SegmentResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSegmentResponse]
   }
   
-  @scala.inline
-  implicit class DeleteSegmentResponseMutableBuilder[Self <: DeleteSegmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSegmentResponse](x: Self) {
     
-    @scala.inline
-    def setSegmentResponse(value: SegmentResponse): Self = StObject.set(x, "SegmentResponse", value.asInstanceOf[js.Any])
+    inline def setSegmentResponse(value: SegmentResponse): Self = StObject.set(x, "SegmentResponse", value.asInstanceOf[js.Any])
   }
 }

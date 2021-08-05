@@ -101,38 +101,28 @@ object anon {
   }
   object PartialRectangle {
     
-    @scala.inline
-    def apply(): PartialRectangle = {
+    inline def apply(): PartialRectangle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRectangle]
     }
     
-    @scala.inline
-    implicit class PartialRectangleMutableBuilder[Self <: PartialRectangle] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRectangle](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -267,8 +257,7 @@ object anon {
   }
   object TypeofBrowserWindow {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addDevToolsExtension: String => Unit,
       addExtension: String => Unit,
       fromBrowserView: BrowserView => BrowserWindow | Null,
@@ -285,41 +274,29 @@ object anon {
       __obj.asInstanceOf[TypeofBrowserWindow]
     }
     
-    @scala.inline
-    implicit class TypeofBrowserWindowMutableBuilder[Self <: TypeofBrowserWindow] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofBrowserWindow](x: Self) {
       
-      @scala.inline
-      def setAddDevToolsExtension(value: String => Unit): Self = StObject.set(x, "addDevToolsExtension", js.Any.fromFunction1(value))
+      inline def setAddDevToolsExtension(value: String => Unit): Self = StObject.set(x, "addDevToolsExtension", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddExtension(value: String => Unit): Self = StObject.set(x, "addExtension", js.Any.fromFunction1(value))
+      inline def setAddExtension(value: String => Unit): Self = StObject.set(x, "addExtension", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromBrowserView(value: BrowserView => BrowserWindow | Null): Self = StObject.set(x, "fromBrowserView", js.Any.fromFunction1(value))
+      inline def setFromBrowserView(value: BrowserView => BrowserWindow | Null): Self = StObject.set(x, "fromBrowserView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromId(value: Double => BrowserWindow | Null): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
+      inline def setFromId(value: Double => BrowserWindow | Null): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromWebContents(value: WebContents_ => BrowserWindow | Null): Self = StObject.set(x, "fromWebContents", js.Any.fromFunction1(value))
+      inline def setFromWebContents(value: WebContents_ => BrowserWindow | Null): Self = StObject.set(x, "fromWebContents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAllWindows(value: () => js.Array[BrowserWindow]): Self = StObject.set(x, "getAllWindows", js.Any.fromFunction0(value))
+      inline def setGetAllWindows(value: () => js.Array[BrowserWindow]): Self = StObject.set(x, "getAllWindows", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDevToolsExtensions(value: () => Record[String, ExtensionInfo]): Self = StObject.set(x, "getDevToolsExtensions", js.Any.fromFunction0(value))
+      inline def setGetDevToolsExtensions(value: () => Record[String, ExtensionInfo]): Self = StObject.set(x, "getDevToolsExtensions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExtensions(value: () => Record[String, ExtensionInfo]): Self = StObject.set(x, "getExtensions", js.Any.fromFunction0(value))
+      inline def setGetExtensions(value: () => Record[String, ExtensionInfo]): Self = StObject.set(x, "getExtensions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFocusedWindow(value: () => BrowserWindow | Null): Self = StObject.set(x, "getFocusedWindow", js.Any.fromFunction0(value))
+      inline def setGetFocusedWindow(value: () => BrowserWindow | Null): Self = StObject.set(x, "getFocusedWindow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveDevToolsExtension(value: String => Unit): Self = StObject.set(x, "removeDevToolsExtension", js.Any.fromFunction1(value))
+      inline def setRemoveDevToolsExtension(value: String => Unit): Self = StObject.set(x, "removeDevToolsExtension", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveExtension(value: String => Unit): Self = StObject.set(x, "removeExtension", js.Any.fromFunction1(value))
+      inline def setRemoveExtension(value: String => Unit): Self = StObject.set(x, "removeExtension", js.Any.fromFunction1(value))
     }
   }
   
@@ -337,8 +314,7 @@ object anon {
   }
   object TypeofCommon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       NativeImage: Instantiable0[NativeImage_],
       clipboard: Clipboard,
       crashReporter: CrashReporter,
@@ -349,23 +325,17 @@ object anon {
       __obj.asInstanceOf[TypeofCommon]
     }
     
-    @scala.inline
-    implicit class TypeofCommonMutableBuilder[Self <: TypeofCommon] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofCommon](x: Self) {
       
-      @scala.inline
-      def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+      inline def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrashReporter(value: CrashReporter): Self = StObject.set(x, "crashReporter", value.asInstanceOf[js.Any])
+      inline def setCrashReporter(value: CrashReporter): Self = StObject.set(x, "crashReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopCapturer(value: DesktopCapturer): Self = StObject.set(x, "desktopCapturer", value.asInstanceOf[js.Any])
+      inline def setDesktopCapturer(value: DesktopCapturer): Self = StObject.set(x, "desktopCapturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeImage(value: Instantiable0[NativeImage_]): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
+      inline def setNativeImage(value: Instantiable0[NativeImage_]): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
   
@@ -536,8 +506,7 @@ object anon {
   }
   object TypeofElectron {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Accelerator: Instantiable0[Accelerator],
       BrowserView: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView],
       BrowserWindow: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) & TypeofBrowserWindow,
@@ -607,182 +576,125 @@ object anon {
       __obj.asInstanceOf[TypeofElectron]
     }
     
-    @scala.inline
-    implicit class TypeofElectronMutableBuilder[Self <: TypeofElectron] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofElectron](x: Self) {
       
-      @scala.inline
-      def setAccelerator(value: Instantiable0[Accelerator]): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
+      inline def setAccelerator(value: Instantiable0[Accelerator]): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUpdater(value: AutoUpdater): Self = StObject.set(x, "autoUpdater", value.asInstanceOf[js.Any])
+      inline def setAutoUpdater(value: AutoUpdater): Self = StObject.set(x, "autoUpdater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserView(value: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView]): Self = StObject.set(x, "BrowserView", value.asInstanceOf[js.Any])
+      inline def setBrowserView(value: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView]): Self = StObject.set(x, "BrowserView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserWindow(
+      inline def setBrowserWindow(
         value: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) & TypeofBrowserWindow
       ): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserWindowProxy(value: Instantiable0[BrowserWindowProxy]): Self = StObject.set(x, "BrowserWindowProxy", value.asInstanceOf[js.Any])
+      inline def setBrowserWindowProxy(value: Instantiable0[BrowserWindowProxy]): Self = StObject.set(x, "BrowserWindowProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRequest(value: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest]): Self = StObject.set(x, "ClientRequest", value.asInstanceOf[js.Any])
+      inline def setClientRequest(value: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest]): Self = StObject.set(x, "ClientRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+      inline def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandLine(value: Instantiable0[CommandLine]): Self = StObject.set(x, "CommandLine", value.asInstanceOf[js.Any])
+      inline def setCommandLine(value: Instantiable0[CommandLine]): Self = StObject.set(x, "CommandLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommon(value: TypeofCommon): Self = StObject.set(x, "Common", value.asInstanceOf[js.Any])
+      inline def setCommon(value: TypeofCommon): Self = StObject.set(x, "Common", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTracing(value: ContentTracing): Self = StObject.set(x, "contentTracing", value.asInstanceOf[js.Any])
+      inline def setContentTracing(value: ContentTracing): Self = StObject.set(x, "contentTracing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextBridge(value: ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
+      inline def setContextBridge(value: ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookies(value: Instantiable0[Cookies]): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: Instantiable0[Cookies]): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrashReporter(value: CrashReporter): Self = StObject.set(x, "crashReporter", value.asInstanceOf[js.Any])
+      inline def setCrashReporter(value: CrashReporter): Self = StObject.set(x, "crashReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugger(value: Instantiable0[Debugger]): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
+      inline def setDebugger(value: Instantiable0[Debugger]): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktopCapturer(value: DesktopCapturer): Self = StObject.set(x, "desktopCapturer", value.asInstanceOf[js.Any])
+      inline def setDesktopCapturer(value: DesktopCapturer): Self = StObject.set(x, "desktopCapturer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      inline def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDock(value: Instantiable0[Dock]): Self = StObject.set(x, "Dock", value.asInstanceOf[js.Any])
+      inline def setDock(value: Instantiable0[Dock]): Self = StObject.set(x, "Dock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadItem(value: Instantiable0[DownloadItem]): Self = StObject.set(x, "DownloadItem", value.asInstanceOf[js.Any])
+      inline def setDownloadItem(value: Instantiable0[DownloadItem]): Self = StObject.set(x, "DownloadItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalShortcut(value: GlobalShortcut): Self = StObject.set(x, "globalShortcut", value.asInstanceOf[js.Any])
+      inline def setGlobalShortcut(value: GlobalShortcut): Self = StObject.set(x, "globalShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInAppPurchase(value: InAppPurchase): Self = StObject.set(x, "inAppPurchase", value.asInstanceOf[js.Any])
+      inline def setInAppPurchase(value: InAppPurchase): Self = StObject.set(x, "inAppPurchase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncomingMessage(value: Instantiable0[IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
+      inline def setIncomingMessage(value: Instantiable0[IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcMain(value: IpcMain): Self = StObject.set(x, "ipcMain", value.asInstanceOf[js.Any])
+      inline def setIpcMain(value: IpcMain): Self = StObject.set(x, "ipcMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcRenderer(value: IpcRenderer): Self = StObject.set(x, "ipcRenderer", value.asInstanceOf[js.Any])
+      inline def setIpcRenderer(value: IpcRenderer): Self = StObject.set(x, "ipcRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMain(value: TypeofMain): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
+      inline def setMain(value: TypeofMain): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenu(value: Instantiable0[Menu] & TypeofMenu): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Instantiable0[Menu] & TypeofMenu): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItem(value: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem]): Self = StObject.set(x, "MenuItem", value.asInstanceOf[js.Any])
+      inline def setMenuItem(value: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem]): Self = StObject.set(x, "MenuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageChannelMain(value: Instantiable0[MessageChannelMain]): Self = StObject.set(x, "MessageChannelMain", value.asInstanceOf[js.Any])
+      inline def setMessageChannelMain(value: Instantiable0[MessageChannelMain]): Self = StObject.set(x, "MessageChannelMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagePortMain(value: Instantiable0[MessagePortMain]): Self = StObject.set(x, "MessagePortMain", value.asInstanceOf[js.Any])
+      inline def setMessagePortMain(value: Instantiable0[MessagePortMain]): Self = StObject.set(x, "MessagePortMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeImage(value: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
+      inline def setNativeImage(value: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeTheme(value: NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
+      inline def setNativeTheme(value: NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNet(value: Net): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
+      inline def setNet(value: Net): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetLog(value: NetLog): Self = StObject.set(x, "netLog", value.asInstanceOf[js.Any])
+      inline def setNetLog(value: NetLog): Self = StObject.set(x, "netLog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(
+      inline def setNotification(
         value: (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]) & TypeofNotification
       ): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerMonitor(value: PowerMonitor): Self = StObject.set(x, "powerMonitor", value.asInstanceOf[js.Any])
+      inline def setPowerMonitor(value: PowerMonitor): Self = StObject.set(x, "powerMonitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerSaveBlocker(value: PowerSaveBlocker): Self = StObject.set(x, "powerSaveBlocker", value.asInstanceOf[js.Any])
+      inline def setPowerSaveBlocker(value: PowerSaveBlocker): Self = StObject.set(x, "powerSaveBlocker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: Remote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: Remote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderer(value: TypeofRenderer): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: TypeofRenderer): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen(value: Screen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: Screen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceWorkers(value: Instantiable0[ServiceWorkers]): Self = StObject.set(x, "ServiceWorkers", value.asInstanceOf[js.Any])
+      inline def setServiceWorkers(value: Instantiable0[ServiceWorkers]): Self = StObject.set(x, "ServiceWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Instantiable0[Session_] & TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Instantiable0[Session_] & TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemPreferences(value: SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
+      inline def setSystemPreferences(value: SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBar(value: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) & TypeofTouchBar): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
+      inline def setTouchBar(value: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) & TypeofTouchBar): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarButton(value: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton]): Self = StObject.set(x, "TouchBarButton", value.asInstanceOf[js.Any])
+      inline def setTouchBarButton(value: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton]): Self = StObject.set(x, "TouchBarButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarColorPicker(value: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker]): Self = StObject.set(x, "TouchBarColorPicker", value.asInstanceOf[js.Any])
+      inline def setTouchBarColorPicker(value: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker]): Self = StObject.set(x, "TouchBarColorPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarGroup(value: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup]): Self = StObject.set(x, "TouchBarGroup", value.asInstanceOf[js.Any])
+      inline def setTouchBarGroup(value: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup]): Self = StObject.set(x, "TouchBarGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarLabel(value: Instantiable1[/* options */ TouchBarLabelConstructorOptions, TouchBarLabel]): Self = StObject.set(x, "TouchBarLabel", value.asInstanceOf[js.Any])
+      inline def setTouchBarLabel(value: Instantiable1[/* options */ TouchBarLabelConstructorOptions, TouchBarLabel]): Self = StObject.set(x, "TouchBarLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarOtherItemsProxy(value: Instantiable0[TouchBarOtherItemsProxy]): Self = StObject.set(x, "TouchBarOtherItemsProxy", value.asInstanceOf[js.Any])
+      inline def setTouchBarOtherItemsProxy(value: Instantiable0[TouchBarOtherItemsProxy]): Self = StObject.set(x, "TouchBarOtherItemsProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarPopover(value: Instantiable1[/* options */ TouchBarPopoverConstructorOptions, TouchBarPopover]): Self = StObject.set(x, "TouchBarPopover", value.asInstanceOf[js.Any])
+      inline def setTouchBarPopover(value: Instantiable1[/* options */ TouchBarPopoverConstructorOptions, TouchBarPopover]): Self = StObject.set(x, "TouchBarPopover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarScrubber(value: Instantiable1[/* options */ TouchBarScrubberConstructorOptions, TouchBarScrubber]): Self = StObject.set(x, "TouchBarScrubber", value.asInstanceOf[js.Any])
+      inline def setTouchBarScrubber(value: Instantiable1[/* options */ TouchBarScrubberConstructorOptions, TouchBarScrubber]): Self = StObject.set(x, "TouchBarScrubber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarSegmentedControl(
+      inline def setTouchBarSegmentedControl(
         value: Instantiable1[/* options */ TouchBarSegmentedControlConstructorOptions, TouchBarSegmentedControl]
       ): Self = StObject.set(x, "TouchBarSegmentedControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarSlider(value: Instantiable1[/* options */ TouchBarSliderConstructorOptions, TouchBarSlider]): Self = StObject.set(x, "TouchBarSlider", value.asInstanceOf[js.Any])
+      inline def setTouchBarSlider(value: Instantiable1[/* options */ TouchBarSliderConstructorOptions, TouchBarSlider]): Self = StObject.set(x, "TouchBarSlider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarSpacer(value: Instantiable1[/* options */ TouchBarSpacerConstructorOptions, TouchBarSpacer]): Self = StObject.set(x, "TouchBarSpacer", value.asInstanceOf[js.Any])
+      inline def setTouchBarSpacer(value: Instantiable1[/* options */ TouchBarSpacerConstructorOptions, TouchBarSpacer]): Self = StObject.set(x, "TouchBarSpacer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTray(
+      inline def setTray(
         value: Instantiable2[
               /* image */ typings.electron.Electron.NativeImage_ | String, 
               /* guid */ js.UndefOr[String], 
@@ -790,17 +702,13 @@ object anon {
             ]
       ): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebContents(value: Instantiable0[WebContents_] & TypeofWebContents): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
+      inline def setWebContents(value: Instantiable0[WebContents_] & TypeofWebContents): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebFrame(value: WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
+      inline def setWebFrame(value: WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebRequest(value: Instantiable0[WebRequest]): Self = StObject.set(x, "WebRequest", value.asInstanceOf[js.Any])
+      inline def setWebRequest(value: Instantiable0[WebRequest]): Self = StObject.set(x, "WebRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebviewTag(value: WebviewTag): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
+      inline def setWebviewTag(value: WebviewTag): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -898,8 +806,7 @@ object anon {
   }
   object TypeofMain {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BrowserView: Instantiable0[typings.electron.Electron.Main.BrowserView],
       BrowserWindow: Instantiable0[typings.electron.Electron.Main.BrowserWindow],
       ClientRequest: Instantiable0[typings.electron.Electron.Main.ClientRequest],
@@ -950,143 +857,97 @@ object anon {
       __obj.asInstanceOf[TypeofMain]
     }
     
-    @scala.inline
-    implicit class TypeofMainMutableBuilder[Self <: TypeofMain] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofMain](x: Self) {
       
-      @scala.inline
-      def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUpdater(value: AutoUpdater): Self = StObject.set(x, "autoUpdater", value.asInstanceOf[js.Any])
+      inline def setAutoUpdater(value: AutoUpdater): Self = StObject.set(x, "autoUpdater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserView(value: Instantiable0[typings.electron.Electron.Main.BrowserView]): Self = StObject.set(x, "BrowserView", value.asInstanceOf[js.Any])
+      inline def setBrowserView(value: Instantiable0[typings.electron.Electron.Main.BrowserView]): Self = StObject.set(x, "BrowserView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserWindow(value: Instantiable0[typings.electron.Electron.Main.BrowserWindow]): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
+      inline def setBrowserWindow(value: Instantiable0[typings.electron.Electron.Main.BrowserWindow]): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientRequest(value: Instantiable0[typings.electron.Electron.Main.ClientRequest]): Self = StObject.set(x, "ClientRequest", value.asInstanceOf[js.Any])
+      inline def setClientRequest(value: Instantiable0[typings.electron.Electron.Main.ClientRequest]): Self = StObject.set(x, "ClientRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandLine(value: Instantiable0[typings.electron.Electron.Main.CommandLine]): Self = StObject.set(x, "CommandLine", value.asInstanceOf[js.Any])
+      inline def setCommandLine(value: Instantiable0[typings.electron.Electron.Main.CommandLine]): Self = StObject.set(x, "CommandLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTracing(value: ContentTracing): Self = StObject.set(x, "contentTracing", value.asInstanceOf[js.Any])
+      inline def setContentTracing(value: ContentTracing): Self = StObject.set(x, "contentTracing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookies(value: Instantiable0[typings.electron.Electron.Main.Cookies]): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: Instantiable0[typings.electron.Electron.Main.Cookies]): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugger(value: Instantiable0[typings.electron.Electron.Main.Debugger]): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
+      inline def setDebugger(value: Instantiable0[typings.electron.Electron.Main.Debugger]): Self = StObject.set(x, "Debugger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      inline def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDock(value: Instantiable0[typings.electron.Electron.Main.Dock]): Self = StObject.set(x, "Dock", value.asInstanceOf[js.Any])
+      inline def setDock(value: Instantiable0[typings.electron.Electron.Main.Dock]): Self = StObject.set(x, "Dock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadItem(value: Instantiable0[typings.electron.Electron.Main.DownloadItem]): Self = StObject.set(x, "DownloadItem", value.asInstanceOf[js.Any])
+      inline def setDownloadItem(value: Instantiable0[typings.electron.Electron.Main.DownloadItem]): Self = StObject.set(x, "DownloadItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalShortcut(value: GlobalShortcut): Self = StObject.set(x, "globalShortcut", value.asInstanceOf[js.Any])
+      inline def setGlobalShortcut(value: GlobalShortcut): Self = StObject.set(x, "globalShortcut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInAppPurchase(value: InAppPurchase): Self = StObject.set(x, "inAppPurchase", value.asInstanceOf[js.Any])
+      inline def setInAppPurchase(value: InAppPurchase): Self = StObject.set(x, "inAppPurchase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncomingMessage(value: Instantiable0[typings.electron.Electron.Main.IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
+      inline def setIncomingMessage(value: Instantiable0[typings.electron.Electron.Main.IncomingMessage]): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcMain(value: IpcMain): Self = StObject.set(x, "ipcMain", value.asInstanceOf[js.Any])
+      inline def setIpcMain(value: IpcMain): Self = StObject.set(x, "ipcMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenu(value: Instantiable0[typings.electron.Electron.Main.Menu]): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Instantiable0[typings.electron.Electron.Main.Menu]): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItem(value: Instantiable0[typings.electron.Electron.Main.MenuItem]): Self = StObject.set(x, "MenuItem", value.asInstanceOf[js.Any])
+      inline def setMenuItem(value: Instantiable0[typings.electron.Electron.Main.MenuItem]): Self = StObject.set(x, "MenuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageChannelMain(value: Instantiable0[typings.electron.Electron.Main.MessageChannelMain]): Self = StObject.set(x, "MessageChannelMain", value.asInstanceOf[js.Any])
+      inline def setMessageChannelMain(value: Instantiable0[typings.electron.Electron.Main.MessageChannelMain]): Self = StObject.set(x, "MessageChannelMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagePortMain(value: Instantiable0[typings.electron.Electron.Main.MessagePortMain]): Self = StObject.set(x, "MessagePortMain", value.asInstanceOf[js.Any])
+      inline def setMessagePortMain(value: Instantiable0[typings.electron.Electron.Main.MessagePortMain]): Self = StObject.set(x, "MessagePortMain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeTheme(value: NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
+      inline def setNativeTheme(value: NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNet(value: Net): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
+      inline def setNet(value: Net): Self = StObject.set(x, "net", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetLog(value: NetLog): Self = StObject.set(x, "netLog", value.asInstanceOf[js.Any])
+      inline def setNetLog(value: NetLog): Self = StObject.set(x, "netLog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: Instantiable0[typings.electron.Electron.Main.Notification]): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Instantiable0[typings.electron.Electron.Main.Notification]): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerMonitor(value: PowerMonitor): Self = StObject.set(x, "powerMonitor", value.asInstanceOf[js.Any])
+      inline def setPowerMonitor(value: PowerMonitor): Self = StObject.set(x, "powerMonitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerSaveBlocker(value: PowerSaveBlocker): Self = StObject.set(x, "powerSaveBlocker", value.asInstanceOf[js.Any])
+      inline def setPowerSaveBlocker(value: PowerSaveBlocker): Self = StObject.set(x, "powerSaveBlocker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: Protocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen(value: Screen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: Screen): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceWorkers(value: Instantiable0[typings.electron.Electron.Main.ServiceWorkers]): Self = StObject.set(x, "ServiceWorkers", value.asInstanceOf[js.Any])
+      inline def setServiceWorkers(value: Instantiable0[typings.electron.Electron.Main.ServiceWorkers]): Self = StObject.set(x, "ServiceWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Instantiable0[typings.electron.Electron.Main.Session_]): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Instantiable0[typings.electron.Electron.Main.Session_]): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemPreferences(value: SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
+      inline def setSystemPreferences(value: SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBar(value: Instantiable0[typings.electron.Electron.Main.TouchBar]): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
+      inline def setTouchBar(value: Instantiable0[typings.electron.Electron.Main.TouchBar]): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarButton(value: Instantiable0[typings.electron.Electron.Main.TouchBarButton]): Self = StObject.set(x, "TouchBarButton", value.asInstanceOf[js.Any])
+      inline def setTouchBarButton(value: Instantiable0[typings.electron.Electron.Main.TouchBarButton]): Self = StObject.set(x, "TouchBarButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarColorPicker(value: Instantiable0[typings.electron.Electron.Main.TouchBarColorPicker]): Self = StObject.set(x, "TouchBarColorPicker", value.asInstanceOf[js.Any])
+      inline def setTouchBarColorPicker(value: Instantiable0[typings.electron.Electron.Main.TouchBarColorPicker]): Self = StObject.set(x, "TouchBarColorPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarGroup(value: Instantiable0[typings.electron.Electron.Main.TouchBarGroup]): Self = StObject.set(x, "TouchBarGroup", value.asInstanceOf[js.Any])
+      inline def setTouchBarGroup(value: Instantiable0[typings.electron.Electron.Main.TouchBarGroup]): Self = StObject.set(x, "TouchBarGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarLabel(value: Instantiable0[typings.electron.Electron.Main.TouchBarLabel]): Self = StObject.set(x, "TouchBarLabel", value.asInstanceOf[js.Any])
+      inline def setTouchBarLabel(value: Instantiable0[typings.electron.Electron.Main.TouchBarLabel]): Self = StObject.set(x, "TouchBarLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarOtherItemsProxy(value: Instantiable0[typings.electron.Electron.Main.TouchBarOtherItemsProxy]): Self = StObject.set(x, "TouchBarOtherItemsProxy", value.asInstanceOf[js.Any])
+      inline def setTouchBarOtherItemsProxy(value: Instantiable0[typings.electron.Electron.Main.TouchBarOtherItemsProxy]): Self = StObject.set(x, "TouchBarOtherItemsProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarPopover(value: Instantiable0[typings.electron.Electron.Main.TouchBarPopover]): Self = StObject.set(x, "TouchBarPopover", value.asInstanceOf[js.Any])
+      inline def setTouchBarPopover(value: Instantiable0[typings.electron.Electron.Main.TouchBarPopover]): Self = StObject.set(x, "TouchBarPopover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarScrubber(value: Instantiable0[typings.electron.Electron.Main.TouchBarScrubber]): Self = StObject.set(x, "TouchBarScrubber", value.asInstanceOf[js.Any])
+      inline def setTouchBarScrubber(value: Instantiable0[typings.electron.Electron.Main.TouchBarScrubber]): Self = StObject.set(x, "TouchBarScrubber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarSegmentedControl(value: Instantiable0[typings.electron.Electron.Main.TouchBarSegmentedControl]): Self = StObject.set(x, "TouchBarSegmentedControl", value.asInstanceOf[js.Any])
+      inline def setTouchBarSegmentedControl(value: Instantiable0[typings.electron.Electron.Main.TouchBarSegmentedControl]): Self = StObject.set(x, "TouchBarSegmentedControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarSlider(value: Instantiable0[typings.electron.Electron.Main.TouchBarSlider]): Self = StObject.set(x, "TouchBarSlider", value.asInstanceOf[js.Any])
+      inline def setTouchBarSlider(value: Instantiable0[typings.electron.Electron.Main.TouchBarSlider]): Self = StObject.set(x, "TouchBarSlider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchBarSpacer(value: Instantiable0[typings.electron.Electron.Main.TouchBarSpacer]): Self = StObject.set(x, "TouchBarSpacer", value.asInstanceOf[js.Any])
+      inline def setTouchBarSpacer(value: Instantiable0[typings.electron.Electron.Main.TouchBarSpacer]): Self = StObject.set(x, "TouchBarSpacer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTray(value: Instantiable0[typings.electron.Electron.Main.Tray]): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
+      inline def setTray(value: Instantiable0[typings.electron.Electron.Main.Tray]): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebContents(value: Instantiable0[typings.electron.Electron.Main.WebContents_]): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
+      inline def setWebContents(value: Instantiable0[typings.electron.Electron.Main.WebContents_]): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebRequest(value: Instantiable0[typings.electron.Electron.Main.WebRequest]): Self = StObject.set(x, "WebRequest", value.asInstanceOf[js.Any])
+      inline def setWebRequest(value: Instantiable0[typings.electron.Electron.Main.WebRequest]): Self = StObject.set(x, "WebRequest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1240,17 +1101,14 @@ object anon {
   }
   object TypeofNotification {
     
-    @scala.inline
-    def apply(isSupported: () => Boolean): TypeofNotification = {
+    inline def apply(isSupported: () => Boolean): TypeofNotification = {
       val __obj = js.Dynamic.literal(isSupported = js.Any.fromFunction0(isSupported))
       __obj.asInstanceOf[TypeofNotification]
     }
     
-    @scala.inline
-    implicit class TypeofNotificationMutableBuilder[Self <: TypeofNotification] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofNotification](x: Self) {
       
-      @scala.inline
-      def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
+      inline def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
     }
   }
   
@@ -1270,8 +1128,7 @@ object anon {
   }
   object TypeofRenderer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BrowserWindowProxy: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy],
       contextBridge: ContextBridge,
       ipcRenderer: IpcRenderer,
@@ -1283,26 +1140,19 @@ object anon {
       __obj.asInstanceOf[TypeofRenderer]
     }
     
-    @scala.inline
-    implicit class TypeofRendererMutableBuilder[Self <: TypeofRenderer] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofRenderer](x: Self) {
       
-      @scala.inline
-      def setBrowserWindowProxy(value: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy]): Self = StObject.set(x, "BrowserWindowProxy", value.asInstanceOf[js.Any])
+      inline def setBrowserWindowProxy(value: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy]): Self = StObject.set(x, "BrowserWindowProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextBridge(value: ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
+      inline def setContextBridge(value: ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcRenderer(value: IpcRenderer): Self = StObject.set(x, "ipcRenderer", value.asInstanceOf[js.Any])
+      inline def setIpcRenderer(value: IpcRenderer): Self = StObject.set(x, "ipcRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: Remote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: Remote): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebFrame(value: WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
+      inline def setWebFrame(value: WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebviewTag(value: WebviewTag): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
+      inline def setWebviewTag(value: WebviewTag): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1361,8 +1211,7 @@ object anon {
   }
   object TypeofWebContents {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromId: Double => WebContents_,
       getAllWebContents: () => js.Array[WebContents_],
       getFocusedWebContents: () => WebContents_
@@ -1371,17 +1220,13 @@ object anon {
       __obj.asInstanceOf[TypeofWebContents]
     }
     
-    @scala.inline
-    implicit class TypeofWebContentsMutableBuilder[Self <: TypeofWebContents] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofWebContents](x: Self) {
       
-      @scala.inline
-      def setFromId(value: Double => WebContents_): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
+      inline def setFromId(value: Double => WebContents_): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAllWebContents(value: () => js.Array[WebContents_]): Self = StObject.set(x, "getAllWebContents", js.Any.fromFunction0(value))
+      inline def setGetAllWebContents(value: () => js.Array[WebContents_]): Self = StObject.set(x, "getAllWebContents", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFocusedWebContents(value: () => WebContents_): Self = StObject.set(x, "getFocusedWebContents", js.Any.fromFunction0(value))
+      inline def setGetFocusedWebContents(value: () => WebContents_): Self = StObject.set(x, "getFocusedWebContents", js.Any.fromFunction0(value))
     }
   }
 }

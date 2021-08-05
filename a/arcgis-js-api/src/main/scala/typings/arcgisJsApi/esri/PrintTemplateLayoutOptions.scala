@@ -58,8 +58,7 @@ trait PrintTemplateLayoutOptions
 }
 object PrintTemplateLayoutOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -68,49 +67,34 @@ object PrintTemplateLayoutOptions {
     __obj.asInstanceOf[PrintTemplateLayoutOptions]
   }
   
-  @scala.inline
-  implicit class PrintTemplateLayoutOptionsMutableBuilder[Self <: PrintTemplateLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrintTemplateLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setAuthorText(value: String): Self = StObject.set(x, "authorText", value.asInstanceOf[js.Any])
+    inline def setAuthorText(value: String): Self = StObject.set(x, "authorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorTextUndefined: Self = StObject.set(x, "authorText", js.undefined)
+    inline def setAuthorTextUndefined: Self = StObject.set(x, "authorText", js.undefined)
     
-    @scala.inline
-    def setCopyrightText(value: String): Self = StObject.set(x, "copyrightText", value.asInstanceOf[js.Any])
+    inline def setCopyrightText(value: String): Self = StObject.set(x, "copyrightText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightTextUndefined: Self = StObject.set(x, "copyrightText", js.undefined)
+    inline def setCopyrightTextUndefined: Self = StObject.set(x, "copyrightText", js.undefined)
     
-    @scala.inline
-    def setCustomTextElements(value: js.Array[js.Any]): Self = StObject.set(x, "customTextElements", value.asInstanceOf[js.Any])
+    inline def setCustomTextElements(value: js.Array[js.Any]): Self = StObject.set(x, "customTextElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTextElementsUndefined: Self = StObject.set(x, "customTextElements", js.undefined)
+    inline def setCustomTextElementsUndefined: Self = StObject.set(x, "customTextElements", js.undefined)
     
-    @scala.inline
-    def setCustomTextElementsVarargs(value: js.Any*): Self = StObject.set(x, "customTextElements", js.Array(value :_*))
+    inline def setCustomTextElementsVarargs(value: js.Any*): Self = StObject.set(x, "customTextElements", js.Array(value :_*))
     
-    @scala.inline
-    def setLegendLayers(value: js.Array[LegendLayer]): Self = StObject.set(x, "legendLayers", value.asInstanceOf[js.Any])
+    inline def setLegendLayers(value: js.Array[LegendLayer]): Self = StObject.set(x, "legendLayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendLayersUndefined: Self = StObject.set(x, "legendLayers", js.undefined)
+    inline def setLegendLayersUndefined: Self = StObject.set(x, "legendLayers", js.undefined)
     
-    @scala.inline
-    def setLegendLayersVarargs(value: LegendLayer*): Self = StObject.set(x, "legendLayers", js.Array(value :_*))
+    inline def setLegendLayersVarargs(value: LegendLayer*): Self = StObject.set(x, "legendLayers", js.Array(value :_*))
     
-    @scala.inline
-    def setScalebarUnit(value: Miles | Kilometers | Meters | Feet): Self = StObject.set(x, "scalebarUnit", value.asInstanceOf[js.Any])
+    inline def setScalebarUnit(value: Miles | Kilometers | Meters | Feet): Self = StObject.set(x, "scalebarUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalebarUnitUndefined: Self = StObject.set(x, "scalebarUnit", js.undefined)
+    inline def setScalebarUnitUndefined: Self = StObject.set(x, "scalebarUnit", js.undefined)
     
-    @scala.inline
-    def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+    inline def setTitleText(value: String): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
+    inline def setTitleTextUndefined: Self = StObject.set(x, "titleText", js.undefined)
   }
 }

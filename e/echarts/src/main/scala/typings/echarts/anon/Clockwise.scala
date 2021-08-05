@@ -70,55 +70,39 @@ trait Clockwise extends StObject {
 }
 object Clockwise {
   
-  @scala.inline
-  def apply(): Clockwise = {
+  inline def apply(): Clockwise = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Clockwise]
   }
   
-  @scala.inline
-  implicit class ClockwiseMutableBuilder[Self <: Clockwise] (val x: Self) extends AnyVal {
+  extension [Self <: Clockwise](x: Self) {
     
-    @scala.inline
-    def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+    inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
+    inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
     
-    @scala.inline
-    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR0(value: Double): Self = StObject.set(x, "r0", value.asInstanceOf[js.Any])
+    inline def setR0(value: Double): Self = StObject.set(x, "r0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR0Undefined: Self = StObject.set(x, "r0", js.undefined)
+    inline def setR0Undefined: Self = StObject.set(x, "r0", js.undefined)
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait PutEvaluationsRequest extends StObject {
 }
 object PutEvaluationsRequest {
   
-  @scala.inline
-  def apply(ResultToken: String): PutEvaluationsRequest = {
+  inline def apply(ResultToken: String): PutEvaluationsRequest = {
     val __obj = js.Dynamic.literal(ResultToken = ResultToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEvaluationsRequest]
   }
   
-  @scala.inline
-  implicit class PutEvaluationsRequestMutableBuilder[Self <: PutEvaluationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEvaluationsRequest](x: Self) {
     
-    @scala.inline
-    def setEvaluations(value: Evaluations): Self = StObject.set(x, "Evaluations", value.asInstanceOf[js.Any])
+    inline def setEvaluations(value: Evaluations): Self = StObject.set(x, "Evaluations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationsUndefined: Self = StObject.set(x, "Evaluations", js.undefined)
+    inline def setEvaluationsUndefined: Self = StObject.set(x, "Evaluations", js.undefined)
     
-    @scala.inline
-    def setEvaluationsVarargs(value: Evaluation*): Self = StObject.set(x, "Evaluations", js.Array(value :_*))
+    inline def setEvaluationsVarargs(value: Evaluation*): Self = StObject.set(x, "Evaluations", js.Array(value :_*))
     
-    @scala.inline
-    def setResultToken(value: String): Self = StObject.set(x, "ResultToken", value.asInstanceOf[js.Any])
+    inline def setResultToken(value: String): Self = StObject.set(x, "ResultToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestMode(value: Boolean): Self = StObject.set(x, "TestMode", value.asInstanceOf[js.Any])
+    inline def setTestMode(value: Boolean): Self = StObject.set(x, "TestMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestModeUndefined: Self = StObject.set(x, "TestMode", js.undefined)
+    inline def setTestModeUndefined: Self = StObject.set(x, "TestMode", js.undefined)
   }
 }

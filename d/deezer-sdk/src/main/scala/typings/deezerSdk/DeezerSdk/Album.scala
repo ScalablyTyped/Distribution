@@ -15,19 +15,15 @@ trait Album extends StObject {
 }
 object Album {
   
-  @scala.inline
-  def apply(id: String, title: String): Album = {
+  inline def apply(id: String, title: String): Album = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Album]
   }
   
-  @scala.inline
-  implicit class AlbumMutableBuilder[Self <: Album] (val x: Self) extends AnyVal {
+  extension [Self <: Album](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

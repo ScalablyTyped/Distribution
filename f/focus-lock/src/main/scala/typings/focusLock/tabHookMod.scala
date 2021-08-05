@@ -12,10 +12,8 @@ object tabHookMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")().asInstanceOf[Unit]
+    inline def attach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")().asInstanceOf[Unit]
     
-    @scala.inline
-    def detach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")().asInstanceOf[Unit]
+    inline def detach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")().asInstanceOf[Unit]
   }
 }

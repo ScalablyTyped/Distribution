@@ -17,6 +17,5 @@ object tagItemMod {
   @js.native
   val TagItem: FunctionComponent[ITagItemProps] = js.native
   
-  @scala.inline
-  def TagItemBase(props: ITagItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TagItemBase(props: ITagItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

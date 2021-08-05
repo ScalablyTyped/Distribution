@@ -37,8 +37,7 @@ object mentionsContextMod {
   }
   object MentionsContextProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeIndex: Double,
       onBlur: FocusEvent[HTMLElement] => Unit,
       onFocus: FocusEvent[HTMLElement] => Unit,
@@ -49,29 +48,21 @@ object mentionsContextMod {
       __obj.asInstanceOf[MentionsContextProps]
     }
     
-    @scala.inline
-    implicit class MentionsContextPropsMutableBuilder[Self <: MentionsContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: MentionsContextProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
+      inline def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
+      inline def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectOption(value: OptionProps => Unit): Self = StObject.set(x, "selectOption", js.Any.fromFunction1(value))
+      inline def setSelectOption(value: OptionProps => Unit): Self = StObject.set(x, "selectOption", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetActiveIndex(value: Double => Unit): Self = StObject.set(x, "setActiveIndex", js.Any.fromFunction1(value))
+      inline def setSetActiveIndex(value: Double => Unit): Self = StObject.set(x, "setActiveIndex", js.Any.fromFunction1(value))
     }
   }
 }

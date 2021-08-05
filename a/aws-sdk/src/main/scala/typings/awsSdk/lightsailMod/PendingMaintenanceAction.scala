@@ -23,31 +23,23 @@ trait PendingMaintenanceAction extends StObject {
 }
 object PendingMaintenanceAction {
   
-  @scala.inline
-  def apply(): PendingMaintenanceAction = {
+  inline def apply(): PendingMaintenanceAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingMaintenanceAction]
   }
   
-  @scala.inline
-  implicit class PendingMaintenanceActionMutableBuilder[Self <: PendingMaintenanceAction] (val x: Self) extends AnyVal {
+  extension [Self <: PendingMaintenanceAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: NonEmptyString): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NonEmptyString): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setCurrentApplyDate(value: IsoDate): Self = StObject.set(x, "currentApplyDate", value.asInstanceOf[js.Any])
+    inline def setCurrentApplyDate(value: IsoDate): Self = StObject.set(x, "currentApplyDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplyDateUndefined: Self = StObject.set(x, "currentApplyDate", js.undefined)
+    inline def setCurrentApplyDateUndefined: Self = StObject.set(x, "currentApplyDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

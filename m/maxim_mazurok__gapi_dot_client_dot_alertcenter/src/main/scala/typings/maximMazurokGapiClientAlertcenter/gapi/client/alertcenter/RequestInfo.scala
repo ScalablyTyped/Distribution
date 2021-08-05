@@ -17,34 +17,25 @@ trait RequestInfo extends StObject {
 }
 object RequestInfo {
   
-  @scala.inline
-  def apply(): RequestInfo = {
+  inline def apply(): RequestInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestInfo]
   }
   
-  @scala.inline
-  implicit class RequestInfoMutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RequestInfo](x: Self) {
     
-    @scala.inline
-    def setAppDeveloperEmail(value: js.Array[String]): Self = StObject.set(x, "appDeveloperEmail", value.asInstanceOf[js.Any])
+    inline def setAppDeveloperEmail(value: js.Array[String]): Self = StObject.set(x, "appDeveloperEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppDeveloperEmailUndefined: Self = StObject.set(x, "appDeveloperEmail", js.undefined)
+    inline def setAppDeveloperEmailUndefined: Self = StObject.set(x, "appDeveloperEmail", js.undefined)
     
-    @scala.inline
-    def setAppDeveloperEmailVarargs(value: String*): Self = StObject.set(x, "appDeveloperEmail", js.Array(value :_*))
+    inline def setAppDeveloperEmailVarargs(value: String*): Self = StObject.set(x, "appDeveloperEmail", js.Array(value :_*))
     
-    @scala.inline
-    def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
+    inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppKeyUndefined: Self = StObject.set(x, "appKey", js.undefined)
+    inline def setAppKeyUndefined: Self = StObject.set(x, "appKey", js.undefined)
     
-    @scala.inline
-    def setNumberOfRequests(value: String): Self = StObject.set(x, "numberOfRequests", value.asInstanceOf[js.Any])
+    inline def setNumberOfRequests(value: String): Self = StObject.set(x, "numberOfRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRequestsUndefined: Self = StObject.set(x, "numberOfRequests", js.undefined)
+    inline def setNumberOfRequestsUndefined: Self = StObject.set(x, "numberOfRequests", js.undefined)
   }
 }

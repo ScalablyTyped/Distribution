@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IWebGeolocation extends StObject {
   
-  @JSName("MSHTML.IWebGeolocation_typekey")
+  /* private */ @JSName("MSHTML.IWebGeolocation_typekey")
   var MSHTMLDotIWebGeolocation_typekey: IWebGeolocation = js.native
   
   def clearWatch(watchId: Double): Unit = js.native

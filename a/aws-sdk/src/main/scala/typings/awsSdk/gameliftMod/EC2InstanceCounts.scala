@@ -43,55 +43,39 @@ trait EC2InstanceCounts extends StObject {
 }
 object EC2InstanceCounts {
   
-  @scala.inline
-  def apply(): EC2InstanceCounts = {
+  inline def apply(): EC2InstanceCounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EC2InstanceCounts]
   }
   
-  @scala.inline
-  implicit class EC2InstanceCountsMutableBuilder[Self <: EC2InstanceCounts] (val x: Self) extends AnyVal {
+  extension [Self <: EC2InstanceCounts](x: Self) {
     
-    @scala.inline
-    def setACTIVE(value: WholeNumber): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
+    inline def setACTIVE(value: WholeNumber): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setACTIVEUndefined: Self = StObject.set(x, "ACTIVE", js.undefined)
+    inline def setACTIVEUndefined: Self = StObject.set(x, "ACTIVE", js.undefined)
     
-    @scala.inline
-    def setDESIRED(value: WholeNumber): Self = StObject.set(x, "DESIRED", value.asInstanceOf[js.Any])
+    inline def setDESIRED(value: WholeNumber): Self = StObject.set(x, "DESIRED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDESIREDUndefined: Self = StObject.set(x, "DESIRED", js.undefined)
+    inline def setDESIREDUndefined: Self = StObject.set(x, "DESIRED", js.undefined)
     
-    @scala.inline
-    def setIDLE(value: WholeNumber): Self = StObject.set(x, "IDLE", value.asInstanceOf[js.Any])
+    inline def setIDLE(value: WholeNumber): Self = StObject.set(x, "IDLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIDLEUndefined: Self = StObject.set(x, "IDLE", js.undefined)
+    inline def setIDLEUndefined: Self = StObject.set(x, "IDLE", js.undefined)
     
-    @scala.inline
-    def setMAXIMUM(value: WholeNumber): Self = StObject.set(x, "MAXIMUM", value.asInstanceOf[js.Any])
+    inline def setMAXIMUM(value: WholeNumber): Self = StObject.set(x, "MAXIMUM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAXIMUMUndefined: Self = StObject.set(x, "MAXIMUM", js.undefined)
+    inline def setMAXIMUMUndefined: Self = StObject.set(x, "MAXIMUM", js.undefined)
     
-    @scala.inline
-    def setMINIMUM(value: WholeNumber): Self = StObject.set(x, "MINIMUM", value.asInstanceOf[js.Any])
+    inline def setMINIMUM(value: WholeNumber): Self = StObject.set(x, "MINIMUM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMINIMUMUndefined: Self = StObject.set(x, "MINIMUM", js.undefined)
+    inline def setMINIMUMUndefined: Self = StObject.set(x, "MINIMUM", js.undefined)
     
-    @scala.inline
-    def setPENDING(value: WholeNumber): Self = StObject.set(x, "PENDING", value.asInstanceOf[js.Any])
+    inline def setPENDING(value: WholeNumber): Self = StObject.set(x, "PENDING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPENDINGUndefined: Self = StObject.set(x, "PENDING", js.undefined)
+    inline def setPENDINGUndefined: Self = StObject.set(x, "PENDING", js.undefined)
     
-    @scala.inline
-    def setTERMINATING(value: WholeNumber): Self = StObject.set(x, "TERMINATING", value.asInstanceOf[js.Any])
+    inline def setTERMINATING(value: WholeNumber): Self = StObject.set(x, "TERMINATING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTERMINATINGUndefined: Self = StObject.set(x, "TERMINATING", js.undefined)
+    inline def setTERMINATINGUndefined: Self = StObject.set(x, "TERMINATING", js.undefined)
   }
 }

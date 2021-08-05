@@ -21,25 +21,19 @@ trait SchemaPerfEnvironment extends StObject {
 }
 object SchemaPerfEnvironment {
   
-  @scala.inline
-  def apply(): SchemaPerfEnvironment = {
+  inline def apply(): SchemaPerfEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPerfEnvironment]
   }
   
-  @scala.inline
-  implicit class SchemaPerfEnvironmentMutableBuilder[Self <: SchemaPerfEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPerfEnvironment](x: Self) {
     
-    @scala.inline
-    def setCpuInfo(value: SchemaCPUInfo): Self = StObject.set(x, "cpuInfo", value.asInstanceOf[js.Any])
+    inline def setCpuInfo(value: SchemaCPUInfo): Self = StObject.set(x, "cpuInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuInfoUndefined: Self = StObject.set(x, "cpuInfo", js.undefined)
+    inline def setCpuInfoUndefined: Self = StObject.set(x, "cpuInfo", js.undefined)
     
-    @scala.inline
-    def setMemoryInfo(value: SchemaMemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
+    inline def setMemoryInfo(value: SchemaMemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
+    inline def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
   }
 }

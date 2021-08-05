@@ -21,7 +21,7 @@ trait SlideShowSettings extends StObject {
   
   val PointerColor: ColorFormat
   
-  @JSName("PowerPoint.SlideShowSettings_typekey")
+  /* private */ @JSName("PowerPoint.SlideShowSettings_typekey")
   var PowerPointDotSlideShowSettings_typekey: SlideShowSettings
   
   var RangeType: PpSlideShowRangeType
@@ -46,8 +46,7 @@ trait SlideShowSettings extends StObject {
 }
 object SlideShowSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdvanceMode: PpSlideShowAdvanceMode,
     Application: Application,
     EndingSlide: Double,
@@ -72,61 +71,42 @@ object SlideShowSettings {
     __obj.asInstanceOf[SlideShowSettings]
   }
   
-  @scala.inline
-  implicit class SlideShowSettingsMutableBuilder[Self <: SlideShowSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SlideShowSettings](x: Self) {
     
-    @scala.inline
-    def setAdvanceMode(value: PpSlideShowAdvanceMode): Self = StObject.set(x, "AdvanceMode", value.asInstanceOf[js.Any])
+    inline def setAdvanceMode(value: PpSlideShowAdvanceMode): Self = StObject.set(x, "AdvanceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndingSlide(value: Double): Self = StObject.set(x, "EndingSlide", value.asInstanceOf[js.Any])
+    inline def setEndingSlide(value: Double): Self = StObject.set(x, "EndingSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUntilStopped(value: MsoTriState): Self = StObject.set(x, "LoopUntilStopped", value.asInstanceOf[js.Any])
+    inline def setLoopUntilStopped(value: MsoTriState): Self = StObject.set(x, "LoopUntilStopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedSlideShows(value: NamedSlideShows): Self = StObject.set(x, "NamedSlideShows", value.asInstanceOf[js.Any])
+    inline def setNamedSlideShows(value: NamedSlideShows): Self = StObject.set(x, "NamedSlideShows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerColor(value: ColorFormat): Self = StObject.set(x, "PointerColor", value.asInstanceOf[js.Any])
+    inline def setPointerColor(value: ColorFormat): Self = StObject.set(x, "PointerColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotSlideShowSettings_typekey(value: SlideShowSettings): Self = StObject.set(x, "PowerPoint.SlideShowSettings_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSlideShowSettings_typekey(value: SlideShowSettings): Self = StObject.set(x, "PowerPoint.SlideShowSettings_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeType(value: PpSlideShowRangeType): Self = StObject.set(x, "RangeType", value.asInstanceOf[js.Any])
+    inline def setRangeType(value: PpSlideShowRangeType): Self = StObject.set(x, "RangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: () => SlideShowWindow): Self = StObject.set(x, "Run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => SlideShowWindow): Self = StObject.set(x, "Run", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowMediaControls(value: MsoTriState): Self = StObject.set(x, "ShowMediaControls", value.asInstanceOf[js.Any])
+    inline def setShowMediaControls(value: MsoTriState): Self = StObject.set(x, "ShowMediaControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPresenterView(value: MsoTriState): Self = StObject.set(x, "ShowPresenterView", value.asInstanceOf[js.Any])
+    inline def setShowPresenterView(value: MsoTriState): Self = StObject.set(x, "ShowPresenterView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowScrollbar(value: MsoTriState): Self = StObject.set(x, "ShowScrollbar", value.asInstanceOf[js.Any])
+    inline def setShowScrollbar(value: MsoTriState): Self = StObject.set(x, "ShowScrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowType(value: PpSlideShowType): Self = StObject.set(x, "ShowType", value.asInstanceOf[js.Any])
+    inline def setShowType(value: PpSlideShowType): Self = StObject.set(x, "ShowType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowWithAnimation(value: MsoTriState): Self = StObject.set(x, "ShowWithAnimation", value.asInstanceOf[js.Any])
+    inline def setShowWithAnimation(value: MsoTriState): Self = StObject.set(x, "ShowWithAnimation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowWithNarration(value: MsoTriState): Self = StObject.set(x, "ShowWithNarration", value.asInstanceOf[js.Any])
+    inline def setShowWithNarration(value: MsoTriState): Self = StObject.set(x, "ShowWithNarration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
+    inline def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingSlide(value: Double): Self = StObject.set(x, "StartingSlide", value.asInstanceOf[js.Any])
+    inline def setStartingSlide(value: Double): Self = StObject.set(x, "StartingSlide", value.asInstanceOf[js.Any])
   }
 }

@@ -25,28 +25,21 @@ trait ExportSchemaRequest extends StObject {
 }
 object ExportSchemaRequest {
   
-  @scala.inline
-  def apply(RegistryName: string, SchemaName: string, Type: string): ExportSchemaRequest = {
+  inline def apply(RegistryName: string, SchemaName: string, Type: string): ExportSchemaRequest = {
     val __obj = js.Dynamic.literal(RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSchemaRequest]
   }
   
-  @scala.inline
-  implicit class ExportSchemaRequestMutableBuilder[Self <: ExportSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
+    inline def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

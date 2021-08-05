@@ -10,8 +10,6 @@ object rgbaOrHexStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rgbaOrHexString(r: Double, g: Double, b: Double, a: Double, hex: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_rgbaOrHexString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], hex.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def rgbaOrHexString(r: Double, g: Double, b: Double, a: Unit, hex: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_rgbaOrHexString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], hex.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rgbaOrHexString(r: Double, g: Double, b: Double, a: Double, hex: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_rgbaOrHexString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], hex.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rgbaOrHexString(r: Double, g: Double, b: Double, a: Unit, hex: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_rgbaOrHexString")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], a.asInstanceOf[js.Any], hex.asInstanceOf[js.Any])).asInstanceOf[String]
 }

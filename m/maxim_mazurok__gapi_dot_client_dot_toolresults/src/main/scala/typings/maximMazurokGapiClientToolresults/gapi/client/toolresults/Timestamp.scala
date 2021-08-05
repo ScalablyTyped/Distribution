@@ -17,25 +17,19 @@ trait Timestamp extends StObject {
 }
 object Timestamp {
   
-  @scala.inline
-  def apply(): Timestamp = {
+  inline def apply(): Timestamp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Timestamp]
   }
   
-  @scala.inline
-  implicit class TimestampMutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
+  extension [Self <: Timestamp](x: Self) {
     
-    @scala.inline
-    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

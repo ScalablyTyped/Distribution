@@ -18,19 +18,15 @@ trait DeleteWebACLRequest extends StObject {
 }
 object DeleteWebACLRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, WebACLId: ResourceId): DeleteWebACLRequest = {
+  inline def apply(ChangeToken: ChangeToken, WebACLId: ResourceId): DeleteWebACLRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWebACLRequest]
   }
   
-  @scala.inline
-  implicit class DeleteWebACLRequestMutableBuilder[Self <: DeleteWebACLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWebACLRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
+    inline def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

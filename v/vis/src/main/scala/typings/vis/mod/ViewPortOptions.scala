@@ -26,31 +26,23 @@ trait ViewPortOptions extends StObject {
 }
 object ViewPortOptions {
   
-  @scala.inline
-  def apply(): ViewPortOptions = {
+  inline def apply(): ViewPortOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewPortOptions]
   }
   
-  @scala.inline
-  implicit class ViewPortOptionsMutableBuilder[Self <: ViewPortOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ViewPortOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: AnimationOptions | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: AnimationOptions | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Position): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

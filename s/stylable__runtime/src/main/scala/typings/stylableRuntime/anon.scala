@@ -216,26 +216,20 @@ object anon {
   }
   object Css {
     
-    @scala.inline
-    def apply($css: String, $depth: String | Double, $id: String | Double, $theme: Boolean): Css = {
+    inline def apply($css: String, $depth: String | Double, $id: String | Double, $theme: Boolean): Css = {
       val __obj = js.Dynamic.literal($css = $css.asInstanceOf[js.Any], $depth = $depth.asInstanceOf[js.Any], $id = $id.asInstanceOf[js.Any], $theme = $theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[Css]
     }
     
-    @scala.inline
-    implicit class CssMutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
+    extension [Self <: Css](x: Self) {
       
-      @scala.inline
-      def set$css(value: String): Self = StObject.set(x, "$css", value.asInstanceOf[js.Any])
+      inline def set$css(value: String): Self = StObject.set(x, "$css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$depth(value: String | Double): Self = StObject.set(x, "$depth", value.asInstanceOf[js.Any])
+      inline def set$depth(value: String | Double): Self = StObject.set(x, "$depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$id(value: String | Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
+      inline def set$id(value: String | Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$theme(value: Boolean): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
+      inline def set$theme(value: Boolean): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
     }
   }
   

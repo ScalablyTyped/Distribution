@@ -45,8 +45,7 @@ trait XResourceFactoryManager extends StObject {
 }
 object XResourceFactoryManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addResourceFactory: (String, XResourceFactory) => Unit,
     getResourceFactory: String => XResourceFactory,
     removeResourceFactoryForReference: XResourceFactory => Unit,
@@ -56,19 +55,14 @@ object XResourceFactoryManager {
     __obj.asInstanceOf[XResourceFactoryManager]
   }
   
-  @scala.inline
-  implicit class XResourceFactoryManagerMutableBuilder[Self <: XResourceFactoryManager] (val x: Self) extends AnyVal {
+  extension [Self <: XResourceFactoryManager](x: Self) {
     
-    @scala.inline
-    def setAddResourceFactory(value: (String, XResourceFactory) => Unit): Self = StObject.set(x, "addResourceFactory", js.Any.fromFunction2(value))
+    inline def setAddResourceFactory(value: (String, XResourceFactory) => Unit): Self = StObject.set(x, "addResourceFactory", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResourceFactory(value: String => XResourceFactory): Self = StObject.set(x, "getResourceFactory", js.Any.fromFunction1(value))
+    inline def setGetResourceFactory(value: String => XResourceFactory): Self = StObject.set(x, "getResourceFactory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveResourceFactoryForReference(value: XResourceFactory => Unit): Self = StObject.set(x, "removeResourceFactoryForReference", js.Any.fromFunction1(value))
+    inline def setRemoveResourceFactoryForReference(value: XResourceFactory => Unit): Self = StObject.set(x, "removeResourceFactoryForReference", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveResourceFactoryForURL(value: String => Unit): Self = StObject.set(x, "removeResourceFactoryForURL", js.Any.fromFunction1(value))
+    inline def setRemoveResourceFactoryForURL(value: String => Unit): Self = StObject.set(x, "removeResourceFactoryForURL", js.Any.fromFunction1(value))
   }
 }

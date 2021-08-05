@@ -12,25 +12,19 @@ trait SimpleValidatorConfig[T /* <: js.Object */] extends StObject {
 }
 object SimpleValidatorConfig {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](message: String): SimpleValidatorConfig[T] = {
+  inline def apply[T /* <: js.Object */](message: String): SimpleValidatorConfig[T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleValidatorConfig[T]]
   }
   
-  @scala.inline
-  implicit class SimpleValidatorConfigMutableBuilder[Self <: SimpleValidatorConfig[?], T /* <: js.Object */] (val x: Self & SimpleValidatorConfig[T]) extends AnyVal {
+  extension [Self <: SimpleValidatorConfig[?], T /* <: js.Object */](x: Self & SimpleValidatorConfig[T]) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateIf(value: (js.Function1[/* context */ ValidatorContext[T], Boolean]) | Boolean): Self = StObject.set(x, "validateIf", value.asInstanceOf[js.Any])
+    inline def setValidateIf(value: (js.Function1[/* context */ ValidatorContext[T], Boolean]) | Boolean): Self = StObject.set(x, "validateIf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateIfFunction1(value: /* context */ ValidatorContext[T] => Boolean): Self = StObject.set(x, "validateIf", js.Any.fromFunction1(value))
+    inline def setValidateIfFunction1(value: /* context */ ValidatorContext[T] => Boolean): Self = StObject.set(x, "validateIf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateIfUndefined: Self = StObject.set(x, "validateIf", js.undefined)
+    inline def setValidateIfUndefined: Self = StObject.set(x, "validateIf", js.undefined)
   }
 }

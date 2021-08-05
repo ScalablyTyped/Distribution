@@ -10,16 +10,13 @@ trait CalendarsDeleteParameters extends StObject {
 }
 object CalendarsDeleteParameters {
   
-  @scala.inline
-  def apply(calendarId: String): CalendarsDeleteParameters = {
+  inline def apply(calendarId: String): CalendarsDeleteParameters = {
     val __obj = js.Dynamic.literal(calendarId = calendarId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarsDeleteParameters]
   }
   
-  @scala.inline
-  implicit class CalendarsDeleteParametersMutableBuilder[Self <: CalendarsDeleteParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarsDeleteParameters](x: Self) {
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
   }
 }

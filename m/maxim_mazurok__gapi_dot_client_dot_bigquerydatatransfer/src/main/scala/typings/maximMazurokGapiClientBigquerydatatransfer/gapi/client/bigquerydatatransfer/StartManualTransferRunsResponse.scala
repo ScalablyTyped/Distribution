@@ -11,22 +11,17 @@ trait StartManualTransferRunsResponse extends StObject {
 }
 object StartManualTransferRunsResponse {
   
-  @scala.inline
-  def apply(): StartManualTransferRunsResponse = {
+  inline def apply(): StartManualTransferRunsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartManualTransferRunsResponse]
   }
   
-  @scala.inline
-  implicit class StartManualTransferRunsResponseMutableBuilder[Self <: StartManualTransferRunsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartManualTransferRunsResponse](x: Self) {
     
-    @scala.inline
-    def setRuns(value: js.Array[TransferRun]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: js.Array[TransferRun]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
+    inline def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
     
-    @scala.inline
-    def setRunsVarargs(value: TransferRun*): Self = StObject.set(x, "runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: TransferRun*): Self = StObject.set(x, "runs", js.Array(value :_*))
   }
 }

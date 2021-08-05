@@ -15,22 +15,17 @@ trait ToolbarModeHandler extends StObject {
 }
 object ToolbarModeHandler {
   
-  @scala.inline
-  def apply(enabled: Boolean, handler: Handler, title: String): ToolbarModeHandler = {
+  inline def apply(enabled: Boolean, handler: Handler, title: String): ToolbarModeHandler = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolbarModeHandler]
   }
   
-  @scala.inline
-  implicit class ToolbarModeHandlerMutableBuilder[Self <: ToolbarModeHandler] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarModeHandler](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

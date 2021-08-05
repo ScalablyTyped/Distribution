@@ -14,22 +14,17 @@ trait ClusterType extends StObject {
 }
 object ClusterType {
   
-  @scala.inline
-  def apply(accessKeyId: String, accessKeySecret: String, host: String): ClusterType = {
+  inline def apply(accessKeyId: String, accessKeySecret: String, host: String): ClusterType = {
     val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], accessKeySecret = accessKeySecret.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterType]
   }
   
-  @scala.inline
-  implicit class ClusterTypeMutableBuilder[Self <: ClusterType] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterType](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessKeySecret(value: String): Self = StObject.set(x, "accessKeySecret", value.asInstanceOf[js.Any])
+    inline def setAccessKeySecret(value: String): Self = StObject.set(x, "accessKeySecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
   }
 }

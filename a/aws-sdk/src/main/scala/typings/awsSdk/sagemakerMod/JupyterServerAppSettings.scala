@@ -13,19 +13,15 @@ trait JupyterServerAppSettings extends StObject {
 }
 object JupyterServerAppSettings {
   
-  @scala.inline
-  def apply(): JupyterServerAppSettings = {
+  inline def apply(): JupyterServerAppSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JupyterServerAppSettings]
   }
   
-  @scala.inline
-  implicit class JupyterServerAppSettingsMutableBuilder[Self <: JupyterServerAppSettings] (val x: Self) extends AnyVal {
+  extension [Self <: JupyterServerAppSettings](x: Self) {
     
-    @scala.inline
-    def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
+    inline def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultResourceSpecUndefined: Self = StObject.set(x, "DefaultResourceSpec", js.undefined)
+    inline def setDefaultResourceSpecUndefined: Self = StObject.set(x, "DefaultResourceSpec", js.undefined)
   }
 }

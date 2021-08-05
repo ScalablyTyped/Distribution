@@ -22,25 +22,19 @@ trait Describedby extends StObject {
 }
 object Describedby {
   
-  @scala.inline
-  def apply(): Describedby = {
+  inline def apply(): Describedby = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Describedby]
   }
   
-  @scala.inline
-  implicit class DescribedbyMutableBuilder[Self <: Describedby] (val x: Self) extends AnyVal {
+  extension [Self <: Describedby](x: Self) {
     
-    @scala.inline
-    def setDescribedby(value: String): Self = StObject.set(x, "describedby", value.asInstanceOf[js.Any])
+    inline def setDescribedby(value: String): Self = StObject.set(x, "describedby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribedbyUndefined: Self = StObject.set(x, "describedby", js.undefined)
+    inline def setDescribedbyUndefined: Self = StObject.set(x, "describedby", js.undefined)
     
-    @scala.inline
-    def setLabelledby(value: String): Self = StObject.set(x, "labelledby", value.asInstanceOf[js.Any])
+    inline def setLabelledby(value: String): Self = StObject.set(x, "labelledby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelledbyUndefined: Self = StObject.set(x, "labelledby", js.undefined)
+    inline def setLabelledbyUndefined: Self = StObject.set(x, "labelledby", js.undefined)
   }
 }

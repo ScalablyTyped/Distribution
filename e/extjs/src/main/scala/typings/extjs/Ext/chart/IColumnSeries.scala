@@ -15,19 +15,15 @@ trait IColumnSeries
 }
 object IColumnSeries {
   
-  @scala.inline
-  def apply(): IColumnSeries = {
+  inline def apply(): IColumnSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnSeries]
   }
   
-  @scala.inline
-  implicit class IColumnSeriesMutableBuilder[Self <: IColumnSeries] (val x: Self) extends AnyVal {
+  extension [Self <: IColumnSeries](x: Self) {
     
-    @scala.inline
-    def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
   }
 }

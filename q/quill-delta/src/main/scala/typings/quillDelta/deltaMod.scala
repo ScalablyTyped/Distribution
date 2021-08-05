@@ -27,49 +27,29 @@ object deltaMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def compose(a: Unit, b: Unit, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def compose(a: Unit, b: typings.quillDelta.mod.AttributeMap, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def compose(a: typings.quillDelta.mod.AttributeMap, b: Unit, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def compose(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def compose(a: Unit, b: Unit, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def compose(a: Unit, b: typings.quillDelta.mod.AttributeMap, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def compose(a: typings.quillDelta.mod.AttributeMap, b: Unit, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def compose(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap, keepNull: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
     
-    @scala.inline
-    def diff(): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")().asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def diff(a: Unit, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def diff(a: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def diff(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def diff(): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")().asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def diff(a: Unit, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def diff(a: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def diff(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
     
-    @scala.inline
-    def invert(): typings.quillDelta.mod.AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")().asInstanceOf[typings.quillDelta.mod.AttributeMap]
-    @scala.inline
-    def invert(attr: Unit, base: typings.quillDelta.mod.AttributeMap): typings.quillDelta.mod.AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.quillDelta.mod.AttributeMap]
-    @scala.inline
-    def invert(attr: typings.quillDelta.mod.AttributeMap): typings.quillDelta.mod.AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any]).asInstanceOf[typings.quillDelta.mod.AttributeMap]
-    @scala.inline
-    def invert(attr: typings.quillDelta.mod.AttributeMap, base: typings.quillDelta.mod.AttributeMap): typings.quillDelta.mod.AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.quillDelta.mod.AttributeMap]
+    inline def invert(): typings.quillDelta.mod.AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")().asInstanceOf[typings.quillDelta.mod.AttributeMap]
+    inline def invert(attr: Unit, base: typings.quillDelta.mod.AttributeMap): typings.quillDelta.mod.AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.quillDelta.mod.AttributeMap]
+    inline def invert(attr: typings.quillDelta.mod.AttributeMap): typings.quillDelta.mod.AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any]).asInstanceOf[typings.quillDelta.mod.AttributeMap]
+    inline def invert(attr: typings.quillDelta.mod.AttributeMap, base: typings.quillDelta.mod.AttributeMap): typings.quillDelta.mod.AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.quillDelta.mod.AttributeMap]
     
-    @scala.inline
-    def transform(): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")().asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def transform(a: Unit, b: Unit, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def transform(a: Unit, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def transform(a: Unit, b: typings.quillDelta.mod.AttributeMap, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def transform(a: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def transform(a: typings.quillDelta.mod.AttributeMap, b: Unit, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def transform(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
-    @scala.inline
-    def transform(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")().asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(a: Unit, b: Unit, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(a: Unit, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(a: Unit, b: typings.quillDelta.mod.AttributeMap, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(a: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(a: typings.quillDelta.mod.AttributeMap, b: Unit, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
+    inline def transform(a: typings.quillDelta.mod.AttributeMap, b: typings.quillDelta.mod.AttributeMap, priority: Boolean): js.UndefOr[typings.quillDelta.mod.AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.quillDelta.mod.AttributeMap]]
   }
   
   /* static member */
@@ -79,11 +59,9 @@ object deltaMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def iterator(ops: js.Array[typings.quillDelta.opMod.Op]): default = ^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(ops.asInstanceOf[js.Any]).asInstanceOf[default]
+    inline def iterator(ops: js.Array[typings.quillDelta.opMod.Op]): default = ^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(ops.asInstanceOf[js.Any]).asInstanceOf[default]
     
-    @scala.inline
-    def length(op: typings.quillDelta.opMod.Op): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(op.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def length(op: typings.quillDelta.opMod.Op): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("length")(op.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   @js.native

@@ -41,12 +41,9 @@ object infrastructureMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[DelResponse]
       ] = js.native
-    @scala.inline
-    def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[DelResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DelResponse]]
-    @scala.inline
-    def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[DelResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DelResponse]]
-    @scala.inline
-    def del_=(
+    inline def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[DelResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DelResponse]]
+    inline def del(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[DelResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DelResponse]]
+    inline def del_=(
       x: js.Function3[
           /* service */ typings.gitlab.baseServiceMod.BaseService, 
           /* endpoint */ String, 
@@ -63,16 +60,13 @@ object infrastructureMod {
         /* options */ js.UndefOr[PaginatedRequestOptions], 
         js.Promise[GetResponse]
       ] = js.native
-    @scala.inline
-    def get(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[GetResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResponse]]
-    @scala.inline
-    def get(
+    inline def get(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[GetResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResponse]]
+    inline def get(
       service: typings.gitlab.baseServiceMod.BaseService,
       endpoint: String,
       options: PaginatedRequestOptions
     ): js.Promise[GetResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResponse]]
-    @scala.inline
-    def get_=(
+    inline def get_=(
       x: js.Function3[
           /* service */ typings.gitlab.baseServiceMod.BaseService, 
           /* endpoint */ String, 
@@ -89,12 +83,9 @@ object infrastructureMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[PostResponse]
       ] = js.native
-    @scala.inline
-    def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PostResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PostResponse]]
-    @scala.inline
-    def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PostResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PostResponse]]
-    @scala.inline
-    def post_=(
+    inline def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PostResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PostResponse]]
+    inline def post(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PostResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PostResponse]]
+    inline def post_=(
       x: js.Function3[
           /* service */ typings.gitlab.baseServiceMod.BaseService, 
           /* endpoint */ String, 
@@ -111,12 +102,9 @@ object infrastructureMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Promise[PutResponse]
       ] = js.native
-    @scala.inline
-    def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PutResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PutResponse]]
-    @scala.inline
-    def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PutResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PutResponse]]
-    @scala.inline
-    def put_=(
+    inline def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Promise[PutResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PutResponse]]
+    inline def put(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Promise[PutResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PutResponse]]
+    inline def put_=(
       x: js.Function3[
           /* service */ typings.gitlab.baseServiceMod.BaseService, 
           /* endpoint */ String, 
@@ -133,12 +121,9 @@ object infrastructureMod {
         /* options */ js.UndefOr[BaseRequestOptions], 
         js.Any
       ] = js.native
-    @scala.inline
-    def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def stream_=(
+    inline def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def stream(service: typings.gitlab.baseServiceMod.BaseService, endpoint: String, options: BaseRequestOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def stream_=(
       x: js.Function3[
           /* service */ typings.gitlab.baseServiceMod.BaseService, 
           /* endpoint */ String, 
@@ -148,6 +133,5 @@ object infrastructureMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundler")(services.asInstanceOf[js.Any]).asInstanceOf[Bundle[T, P]]
+  inline def bundler[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */](services: T): Bundle[T, P] = ^.asInstanceOf[js.Dynamic].applyDynamic("bundler")(services.asInstanceOf[js.Any]).asInstanceOf[Bundle[T, P]]
 }

@@ -22,46 +22,33 @@ trait RedirectProps extends StObject {
 }
 object RedirectProps {
   
-  @scala.inline
-  def apply(to: LocationDescriptor[LocationState]): RedirectProps = {
+  inline def apply(to: LocationDescriptor[LocationState]): RedirectProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectProps]
   }
   
-  @scala.inline
-  implicit class RedirectPropsMutableBuilder[Self <: RedirectProps] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectProps](x: Self) {
     
-    @scala.inline
-    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+    inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    @scala.inline
-    def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

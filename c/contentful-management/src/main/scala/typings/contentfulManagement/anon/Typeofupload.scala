@@ -12,16 +12,13 @@ trait Typeofupload extends StObject {
 }
 object Typeofupload {
   
-  @scala.inline
-  def apply(wrapUpload: (AxiosInstance, UploadProps) => deletePromisevoidtoPlainO): Typeofupload = {
+  inline def apply(wrapUpload: (AxiosInstance, UploadProps) => deletePromisevoidtoPlainO): Typeofupload = {
     val __obj = js.Dynamic.literal(wrapUpload = js.Any.fromFunction2(wrapUpload))
     __obj.asInstanceOf[Typeofupload]
   }
   
-  @scala.inline
-  implicit class TypeofuploadMutableBuilder[Self <: Typeofupload] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofupload](x: Self) {
     
-    @scala.inline
-    def setWrapUpload(value: (AxiosInstance, UploadProps) => deletePromisevoidtoPlainO): Self = StObject.set(x, "wrapUpload", js.Any.fromFunction2(value))
+    inline def setWrapUpload(value: (AxiosInstance, UploadProps) => deletePromisevoidtoPlainO): Self = StObject.set(x, "wrapUpload", js.Any.fromFunction2(value))
   }
 }

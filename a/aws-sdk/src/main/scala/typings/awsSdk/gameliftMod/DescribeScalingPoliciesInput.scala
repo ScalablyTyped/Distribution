@@ -28,34 +28,25 @@ trait DescribeScalingPoliciesInput extends StObject {
 }
 object DescribeScalingPoliciesInput {
   
-  @scala.inline
-  def apply(FleetId: FleetIdOrArn): DescribeScalingPoliciesInput = {
+  inline def apply(FleetId: FleetIdOrArn): DescribeScalingPoliciesInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingPoliciesInput]
   }
   
-  @scala.inline
-  implicit class DescribeScalingPoliciesInputMutableBuilder[Self <: DescribeScalingPoliciesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScalingPoliciesInput](x: Self) {
     
-    @scala.inline
-    def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetIdOrArn): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatusFilter(value: ScalingStatusType): Self = StObject.set(x, "StatusFilter", value.asInstanceOf[js.Any])
+    inline def setStatusFilter(value: ScalingStatusType): Self = StObject.set(x, "StatusFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusFilterUndefined: Self = StObject.set(x, "StatusFilter", js.undefined)
+    inline def setStatusFilterUndefined: Self = StObject.set(x, "StatusFilter", js.undefined)
   }
 }

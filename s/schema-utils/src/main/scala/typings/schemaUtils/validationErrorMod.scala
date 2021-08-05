@@ -54,23 +54,18 @@ object validationErrorMod {
   }
   object SchemaUtilErrorObject {
     
-    @scala.inline
-    def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
+    inline def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
       val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
-    @scala.inline
-    implicit class SchemaUtilErrorObjectMutableBuilder[Self <: SchemaUtilErrorObject] (val x: Self) extends AnyVal {
+    extension [Self <: SchemaUtilErrorObject](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
@@ -173,34 +168,26 @@ object validationErrorMod {
   }
   object ValidationErrorConfiguration {
     
-    @scala.inline
-    def apply(): ValidationErrorConfiguration = {
+    inline def apply(): ValidationErrorConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationErrorConfiguration]
     }
     
-    @scala.inline
-    implicit class ValidationErrorConfigurationMutableBuilder[Self <: ValidationErrorConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationErrorConfiguration](x: Self) {
       
-      @scala.inline
-      def setBaseDataPath(value: String): Self = StObject.set(x, "baseDataPath", value.asInstanceOf[js.Any])
+      inline def setBaseDataPath(value: String): Self = StObject.set(x, "baseDataPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDataPathUndefined: Self = StObject.set(x, "baseDataPath", js.undefined)
+      inline def setBaseDataPathUndefined: Self = StObject.set(x, "baseDataPath", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPostFormatter(
+      inline def setPostFormatter(
         value: (/* formattedError */ String, /* error */ typings.schemaUtils.validateMod.SchemaUtilErrorObject) => String
       ): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostFormatterUndefined: Self = StObject.set(x, "postFormatter", js.undefined)
+      inline def setPostFormatterUndefined: Self = StObject.set(x, "postFormatter", js.undefined)
     }
   }
 }

@@ -18,20 +18,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(read: UInt4 => js.Tuple4[Bit, Bit, Bit, Bit], write: js.Tuple4[Bit, Bit, Bit, Bit] => UInt4): `0` = {
+    inline def apply(read: UInt4 => js.Tuple4[Bit, Bit, Bit, Bit], write: js.Tuple4[Bit, Bit, Bit, Bit] => UInt4): `0` = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setRead(value: UInt4 => js.Tuple4[Bit, Bit, Bit, Bit]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: UInt4 => js.Tuple4[Bit, Bit, Bit, Bit]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: js.Tuple4[Bit, Bit, Bit, Bit] => UInt4): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: js.Tuple4[Bit, Bit, Bit, Bit] => UInt4): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -41,17 +37,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(toBits: String => js.Array[Bit]): `1` = {
+    inline def apply(toBits: String => js.Array[Bit]): `1` = {
       val __obj = js.Dynamic.literal(toBits = js.Any.fromFunction1(toBits))
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setToBits(value: String => js.Array[Bit]): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
+      inline def setToBits(value: String => js.Array[Bit]): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
     }
   }
   
@@ -146,8 +139,7 @@ object anon {
   }
   object GetBit {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getBit: (Double, Double) => typings.bitwise.typesMod.Bit,
       setBit: (Double, Double, typings.bitwise.typesMod.Bit) => typings.bitwise.typesMod.Bit,
       toggleBit: (Double, Double) => Double
@@ -156,17 +148,13 @@ object anon {
       __obj.asInstanceOf[GetBit]
     }
     
-    @scala.inline
-    implicit class GetBitMutableBuilder[Self <: GetBit] (val x: Self) extends AnyVal {
+    extension [Self <: GetBit](x: Self) {
       
-      @scala.inline
-      def setGetBit(value: (Double, Double) => typings.bitwise.typesMod.Bit): Self = StObject.set(x, "getBit", js.Any.fromFunction2(value))
+      inline def setGetBit(value: (Double, Double) => typings.bitwise.typesMod.Bit): Self = StObject.set(x, "getBit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetBit(value: (Double, Double, typings.bitwise.typesMod.Bit) => typings.bitwise.typesMod.Bit): Self = StObject.set(x, "setBit", js.Any.fromFunction3(value))
+      inline def setSetBit(value: (Double, Double, typings.bitwise.typesMod.Bit) => typings.bitwise.typesMod.Bit): Self = StObject.set(x, "setBit", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setToggleBit(value: (Double, Double) => Double): Self = StObject.set(x, "toggleBit", js.Any.fromFunction2(value))
+      inline def setToggleBit(value: (Double, Double) => Double): Self = StObject.set(x, "toggleBit", js.Any.fromFunction2(value))
     }
   }
   
@@ -279,8 +267,7 @@ object anon {
   }
   object Read {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       read: UInt8 => js.Tuple8[
           typings.bitwise.typesMod.Bit, 
           typings.bitwise.typesMod.Bit, 
@@ -306,11 +293,9 @@ object anon {
       __obj.asInstanceOf[Read]
     }
     
-    @scala.inline
-    implicit class ReadMutableBuilder[Self <: Read] (val x: Self) extends AnyVal {
+    extension [Self <: Read](x: Self) {
       
-      @scala.inline
-      def setRead(
+      inline def setRead(
         value: UInt8 => js.Tuple8[
               typings.bitwise.typesMod.Bit, 
               typings.bitwise.typesMod.Bit, 
@@ -323,8 +308,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(
+      inline def setWrite(
         value: js.Tuple8[
               typings.bitwise.typesMod.Bit, 
               typings.bitwise.typesMod.Bit, 
@@ -347,8 +331,7 @@ object anon {
   }
   object ReadWrite {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       read: typings.bitwise.bitwiseTypesMod.UInt8 => js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit],
       write: js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit] => typings.bitwise.bitwiseTypesMod.UInt8
     ): ReadWrite = {
@@ -356,14 +339,11 @@ object anon {
       __obj.asInstanceOf[ReadWrite]
     }
     
-    @scala.inline
-    implicit class ReadWriteMutableBuilder[Self <: ReadWrite] (val x: Self) extends AnyVal {
+    extension [Self <: ReadWrite](x: Self) {
       
-      @scala.inline
-      def setRead(value: typings.bitwise.bitwiseTypesMod.UInt8 => js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: typings.bitwise.bitwiseTypesMod.UInt8 => js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit] => typings.bitwise.bitwiseTypesMod.UInt8): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit] => typings.bitwise.bitwiseTypesMod.UInt8): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -377,8 +357,7 @@ object anon {
   }
   object SetBit {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getBit: (Double, Double) => Bit,
       setBit: (Double, Double, Bit) => Bit,
       toggleBit: (Double, Double) => Double
@@ -387,17 +366,13 @@ object anon {
       __obj.asInstanceOf[SetBit]
     }
     
-    @scala.inline
-    implicit class SetBitMutableBuilder[Self <: SetBit] (val x: Self) extends AnyVal {
+    extension [Self <: SetBit](x: Self) {
       
-      @scala.inline
-      def setGetBit(value: (Double, Double) => Bit): Self = StObject.set(x, "getBit", js.Any.fromFunction2(value))
+      inline def setGetBit(value: (Double, Double) => Bit): Self = StObject.set(x, "getBit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetBit(value: (Double, Double, Bit) => Bit): Self = StObject.set(x, "setBit", js.Any.fromFunction3(value))
+      inline def setSetBit(value: (Double, Double, Bit) => Bit): Self = StObject.set(x, "setBit", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setToggleBit(value: (Double, Double) => Double): Self = StObject.set(x, "toggleBit", js.Any.fromFunction2(value))
+      inline def setToggleBit(value: (Double, Double) => Double): Self = StObject.set(x, "toggleBit", js.Any.fromFunction2(value))
     }
   }
   
@@ -407,17 +382,14 @@ object anon {
   }
   object ToBits {
     
-    @scala.inline
-    def apply(toBits: String => js.Array[typings.bitwise.typesMod.Bit]): ToBits = {
+    inline def apply(toBits: String => js.Array[typings.bitwise.typesMod.Bit]): ToBits = {
       val __obj = js.Dynamic.literal(toBits = js.Any.fromFunction1(toBits))
       __obj.asInstanceOf[ToBits]
     }
     
-    @scala.inline
-    implicit class ToBitsMutableBuilder[Self <: ToBits] (val x: Self) extends AnyVal {
+    extension [Self <: ToBits](x: Self) {
       
-      @scala.inline
-      def setToBits(value: String => js.Array[typings.bitwise.typesMod.Bit]): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
+      inline def setToBits(value: String => js.Array[typings.bitwise.typesMod.Bit]): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
     }
   }
   
@@ -441,8 +413,7 @@ object anon {
   }
   object Write {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       read: typings.bitwise.typesMod.UInt4 => js.Tuple4[
           typings.bitwise.typesMod.Bit, 
           typings.bitwise.typesMod.Bit, 
@@ -460,11 +431,9 @@ object anon {
       __obj.asInstanceOf[Write]
     }
     
-    @scala.inline
-    implicit class WriteMutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
+    extension [Self <: Write](x: Self) {
       
-      @scala.inline
-      def setRead(
+      inline def setRead(
         value: typings.bitwise.typesMod.UInt4 => js.Tuple4[
               typings.bitwise.typesMod.Bit, 
               typings.bitwise.typesMod.Bit, 
@@ -473,8 +442,7 @@ object anon {
             ]
       ): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(
+      inline def setWrite(
         value: js.Tuple4[
               typings.bitwise.typesMod.Bit, 
               typings.bitwise.typesMod.Bit, 

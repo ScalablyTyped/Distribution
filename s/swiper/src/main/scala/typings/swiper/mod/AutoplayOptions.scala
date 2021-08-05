@@ -54,43 +54,31 @@ trait AutoplayOptions extends StObject {
 }
 object AutoplayOptions {
   
-  @scala.inline
-  def apply(): AutoplayOptions = {
+  inline def apply(): AutoplayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoplayOptions]
   }
   
-  @scala.inline
-  implicit class AutoplayOptionsMutableBuilder[Self <: AutoplayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AutoplayOptions](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDisableOnInteraction(value: Boolean): Self = StObject.set(x, "disableOnInteraction", value.asInstanceOf[js.Any])
+    inline def setDisableOnInteraction(value: Boolean): Self = StObject.set(x, "disableOnInteraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableOnInteractionUndefined: Self = StObject.set(x, "disableOnInteraction", js.undefined)
+    inline def setDisableOnInteractionUndefined: Self = StObject.set(x, "disableOnInteraction", js.undefined)
     
-    @scala.inline
-    def setReverseDirection(value: Boolean): Self = StObject.set(x, "reverseDirection", value.asInstanceOf[js.Any])
+    inline def setReverseDirection(value: Boolean): Self = StObject.set(x, "reverseDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseDirectionUndefined: Self = StObject.set(x, "reverseDirection", js.undefined)
+    inline def setReverseDirectionUndefined: Self = StObject.set(x, "reverseDirection", js.undefined)
     
-    @scala.inline
-    def setStopOnLastSlide(value: Boolean): Self = StObject.set(x, "stopOnLastSlide", value.asInstanceOf[js.Any])
+    inline def setStopOnLastSlide(value: Boolean): Self = StObject.set(x, "stopOnLastSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopOnLastSlideUndefined: Self = StObject.set(x, "stopOnLastSlide", js.undefined)
+    inline def setStopOnLastSlideUndefined: Self = StObject.set(x, "stopOnLastSlide", js.undefined)
     
-    @scala.inline
-    def setWaitForTransition(value: Boolean): Self = StObject.set(x, "waitForTransition", value.asInstanceOf[js.Any])
+    inline def setWaitForTransition(value: Boolean): Self = StObject.set(x, "waitForTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForTransitionUndefined: Self = StObject.set(x, "waitForTransition", js.undefined)
+    inline def setWaitForTransitionUndefined: Self = StObject.set(x, "waitForTransition", js.undefined)
   }
 }

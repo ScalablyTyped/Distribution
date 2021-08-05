@@ -23,40 +23,29 @@ trait SignInStatus extends StObject {
 }
 object SignInStatus {
   
-  @scala.inline
-  def apply(): SignInStatus = {
+  inline def apply(): SignInStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignInStatus]
   }
   
-  @scala.inline
-  implicit class SignInStatusMutableBuilder[Self <: SignInStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SignInStatus](x: Self) {
     
-    @scala.inline
-    def setAdditionalDetails(value: NullableOption[String]): Self = StObject.set(x, "additionalDetails", value.asInstanceOf[js.Any])
+    inline def setAdditionalDetails(value: NullableOption[String]): Self = StObject.set(x, "additionalDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDetailsNull: Self = StObject.set(x, "additionalDetails", null)
+    inline def setAdditionalDetailsNull: Self = StObject.set(x, "additionalDetails", null)
     
-    @scala.inline
-    def setAdditionalDetailsUndefined: Self = StObject.set(x, "additionalDetails", js.undefined)
+    inline def setAdditionalDetailsUndefined: Self = StObject.set(x, "additionalDetails", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: NullableOption[Double]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: NullableOption[Double]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeNull: Self = StObject.set(x, "errorCode", null)
+    inline def setErrorCodeNull: Self = StObject.set(x, "errorCode", null)
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: NullableOption[String]): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: NullableOption[String]): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonNull: Self = StObject.set(x, "failureReason", null)
+    inline def setFailureReasonNull: Self = StObject.set(x, "failureReason", null)
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
   }
 }

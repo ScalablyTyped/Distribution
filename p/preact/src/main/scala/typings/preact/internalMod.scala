@@ -152,20 +152,16 @@ object internalMod {
   }
   object DevSource {
     
-    @scala.inline
-    def apply(fileName: String, lineNumber: Double): DevSource = {
+    inline def apply(fileName: String, lineNumber: Double): DevSource = {
       val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[DevSource]
     }
     
-    @scala.inline
-    implicit class DevSourceMutableBuilder[Self <: DevSource] (val x: Self) extends AnyVal {
+    extension [Self <: DevSource](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,20 +234,16 @@ object internalMod {
   }
   object PreactContext {
     
-    @scala.inline
-    def apply(Consumer: Consumer[js.Any], Provider: Provider[js.Any], _defaultValue: js.Any, _id: String): PreactContext = {
+    inline def apply(Consumer: Consumer[js.Any], Provider: Provider[js.Any], _defaultValue: js.Any, _id: String): PreactContext = {
       val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], _defaultValue = _defaultValue.asInstanceOf[js.Any], _id = _id.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreactContext]
     }
     
-    @scala.inline
-    implicit class PreactContextMutableBuilder[Self <: PreactContext] (val x: Self) extends AnyVal {
+    extension [Self <: PreactContext](x: Self) {
       
-      @scala.inline
-      def set_defaultValue(value: js.Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
+      inline def set_defaultValue(value: js.Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -348,72 +340,51 @@ object internalMod {
   }
   object VNode {
     
-    @scala.inline
-    def apply[P](constructor: Unit, key: Key, props: P & Children, `type`: ComponentType[P] | String): VNode[P] = {
+    inline def apply[P](constructor: Unit, key: Key, props: P & Children, `type`: ComponentType[P] | String): VNode[P] = {
       val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], _children = null, _component = null, _depth = null, _dom = null, _hydrating = null, _nextDom = null, _parent = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VNode[P]]
     }
     
-    @scala.inline
-    implicit class VNodeMutableBuilder[Self <: VNode[?], P] (val x: Self & VNode[P]) extends AnyVal {
+    extension [Self <: VNode[?], P](x: Self & VNode[P]) {
       
-      @scala.inline
-      def setConstructor(value: Unit): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      inline def setConstructor(value: Unit): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_children(value: js.Array[VNode[js.Any]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
+      inline def set_children(value: js.Array[VNode[js.Any]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_childrenNull: Self = StObject.set(x, "_children", null)
+      inline def set_childrenNull: Self = StObject.set(x, "_children", null)
       
-      @scala.inline
-      def set_childrenVarargs(value: VNode[js.Any]*): Self = StObject.set(x, "_children", js.Array(value :_*))
+      inline def set_childrenVarargs(value: VNode[js.Any]*): Self = StObject.set(x, "_children", js.Array(value :_*))
       
-      @scala.inline
-      def set_component(value: Component[js.Object, js.Object]): Self = StObject.set(x, "_component", value.asInstanceOf[js.Any])
+      inline def set_component(value: Component[js.Object, js.Object]): Self = StObject.set(x, "_component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_componentNull: Self = StObject.set(x, "_component", null)
+      inline def set_componentNull: Self = StObject.set(x, "_component", null)
       
-      @scala.inline
-      def set_depth(value: Double): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
+      inline def set_depth(value: Double): Self = StObject.set(x, "_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_depthNull: Self = StObject.set(x, "_depth", null)
+      inline def set_depthNull: Self = StObject.set(x, "_depth", null)
       
-      @scala.inline
-      def set_dom(value: PreactElement): Self = StObject.set(x, "_dom", value.asInstanceOf[js.Any])
+      inline def set_dom(value: PreactElement): Self = StObject.set(x, "_dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_domNull: Self = StObject.set(x, "_dom", null)
+      inline def set_domNull: Self = StObject.set(x, "_dom", null)
       
-      @scala.inline
-      def set_hydrating(value: Boolean): Self = StObject.set(x, "_hydrating", value.asInstanceOf[js.Any])
+      inline def set_hydrating(value: Boolean): Self = StObject.set(x, "_hydrating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hydratingNull: Self = StObject.set(x, "_hydrating", null)
+      inline def set_hydratingNull: Self = StObject.set(x, "_hydrating", null)
       
-      @scala.inline
-      def set_nextDom(value: PreactElement): Self = StObject.set(x, "_nextDom", value.asInstanceOf[js.Any])
+      inline def set_nextDom(value: PreactElement): Self = StObject.set(x, "_nextDom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_nextDomNull: Self = StObject.set(x, "_nextDom", null)
+      inline def set_nextDomNull: Self = StObject.set(x, "_nextDom", null)
       
-      @scala.inline
-      def set_original(value: VNode[js.Object]): Self = StObject.set(x, "_original", value.asInstanceOf[js.Any])
+      inline def set_original(value: VNode[js.Object]): Self = StObject.set(x, "_original", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_originalNull: Self = StObject.set(x, "_original", null)
+      inline def set_originalNull: Self = StObject.set(x, "_original", null)
       
-      @scala.inline
-      def set_originalUndefined: Self = StObject.set(x, "_original", js.undefined)
+      inline def set_originalUndefined: Self = StObject.set(x, "_original", js.undefined)
       
-      @scala.inline
-      def set_parent(value: VNode[js.Object]): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
+      inline def set_parent(value: VNode[js.Object]): Self = StObject.set(x, "_parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_parentNull: Self = StObject.set(x, "_parent", null)
+      inline def set_parentNull: Self = StObject.set(x, "_parent", null)
     }
   }
 }

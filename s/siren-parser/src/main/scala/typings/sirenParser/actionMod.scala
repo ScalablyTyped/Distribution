@@ -12,8 +12,7 @@ object actionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(action: js.Object): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(action.asInstanceOf[js.Any]).asInstanceOf[Action]
+  inline def default(action: js.Object): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(action.asInstanceOf[js.Any]).asInstanceOf[Action]
   
   @JSImport("siren-parser/Action", "FieldType")
   @js.native

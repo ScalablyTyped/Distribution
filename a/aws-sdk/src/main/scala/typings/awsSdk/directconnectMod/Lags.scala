@@ -13,22 +13,17 @@ trait Lags extends StObject {
 }
 object Lags {
   
-  @scala.inline
-  def apply(): Lags = {
+  inline def apply(): Lags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Lags]
   }
   
-  @scala.inline
-  implicit class LagsMutableBuilder[Self <: Lags] (val x: Self) extends AnyVal {
+  extension [Self <: Lags](x: Self) {
     
-    @scala.inline
-    def setLags(value: LagList): Self = StObject.set(x, "lags", value.asInstanceOf[js.Any])
+    inline def setLags(value: LagList): Self = StObject.set(x, "lags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagsUndefined: Self = StObject.set(x, "lags", js.undefined)
+    inline def setLagsUndefined: Self = StObject.set(x, "lags", js.undefined)
     
-    @scala.inline
-    def setLagsVarargs(value: Lag*): Self = StObject.set(x, "lags", js.Array(value :_*))
+    inline def setLagsVarargs(value: Lag*): Self = StObject.set(x, "lags", js.Array(value :_*))
   }
 }

@@ -48,76 +48,53 @@ trait Presentation extends StObject {
 }
 object Presentation {
   
-  @scala.inline
-  def apply(): Presentation = {
+  inline def apply(): Presentation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Presentation]
   }
   
-  @scala.inline
-  implicit class PresentationMutableBuilder[Self <: Presentation] (val x: Self) extends AnyVal {
+  extension [Self <: Presentation](x: Self) {
     
-    @scala.inline
-    def setLayouts(value: js.Array[Page]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
+    inline def setLayouts(value: js.Array[Page]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutsUndefined: Self = StObject.set(x, "layouts", js.undefined)
+    inline def setLayoutsUndefined: Self = StObject.set(x, "layouts", js.undefined)
     
-    @scala.inline
-    def setLayoutsVarargs(value: Page*): Self = StObject.set(x, "layouts", js.Array(value :_*))
+    inline def setLayoutsVarargs(value: Page*): Self = StObject.set(x, "layouts", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMasters(value: js.Array[Page]): Self = StObject.set(x, "masters", value.asInstanceOf[js.Any])
+    inline def setMasters(value: js.Array[Page]): Self = StObject.set(x, "masters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMastersUndefined: Self = StObject.set(x, "masters", js.undefined)
+    inline def setMastersUndefined: Self = StObject.set(x, "masters", js.undefined)
     
-    @scala.inline
-    def setMastersVarargs(value: Page*): Self = StObject.set(x, "masters", js.Array(value :_*))
+    inline def setMastersVarargs(value: Page*): Self = StObject.set(x, "masters", js.Array(value :_*))
     
-    @scala.inline
-    def setNotesMaster(value: Page): Self = StObject.set(x, "notesMaster", value.asInstanceOf[js.Any])
+    inline def setNotesMaster(value: Page): Self = StObject.set(x, "notesMaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesMasterUndefined: Self = StObject.set(x, "notesMaster", js.undefined)
+    inline def setNotesMasterUndefined: Self = StObject.set(x, "notesMaster", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
+    inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
+    inline def setPresentationIdUndefined: Self = StObject.set(x, "presentationId", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
-    @scala.inline
-    def setSlides(value: js.Array[Page]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+    inline def setSlides(value: js.Array[Page]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
+    inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
     
-    @scala.inline
-    def setSlidesVarargs(value: Page*): Self = StObject.set(x, "slides", js.Array(value :_*))
+    inline def setSlidesVarargs(value: Page*): Self = StObject.set(x, "slides", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

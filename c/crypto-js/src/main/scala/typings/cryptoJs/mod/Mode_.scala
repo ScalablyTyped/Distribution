@@ -20,16 +20,13 @@ trait Mode_ extends StObject {
 }
 object Mode_ {
   
-  @scala.inline
-  def apply(processBlock: (js.Array[Double], Double) => Unit): Mode_ = {
+  inline def apply(processBlock: (js.Array[Double], Double) => Unit): Mode_ = {
     val __obj = js.Dynamic.literal(processBlock = js.Any.fromFunction2(processBlock))
     __obj.asInstanceOf[Mode_]
   }
   
-  @scala.inline
-  implicit class Mode_MutableBuilder[Self <: Mode_] (val x: Self) extends AnyVal {
+  extension [Self <: Mode_](x: Self) {
     
-    @scala.inline
-    def setProcessBlock(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "processBlock", js.Any.fromFunction2(value))
+    inline def setProcessBlock(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "processBlock", js.Any.fromFunction2(value))
   }
 }

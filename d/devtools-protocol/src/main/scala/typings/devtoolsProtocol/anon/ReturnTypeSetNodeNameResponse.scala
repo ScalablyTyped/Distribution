@@ -14,22 +14,17 @@ trait ReturnTypeSetNodeNameResponse extends StObject {
 }
 object ReturnTypeSetNodeNameResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetNodeNameRequest], returnType: SetNodeNameResponse): ReturnTypeSetNodeNameResponse = {
+  inline def apply(paramsType: js.Array[SetNodeNameRequest], returnType: SetNodeNameResponse): ReturnTypeSetNodeNameResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeSetNodeNameResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeSetNodeNameResponseMutableBuilder[Self <: ReturnTypeSetNodeNameResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeSetNodeNameResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetNodeNameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetNodeNameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetNodeNameRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetNodeNameRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: SetNodeNameResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: SetNodeNameResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

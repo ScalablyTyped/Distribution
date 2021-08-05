@@ -14,31 +14,23 @@ trait NotificationReplyMarkup extends StObject {
 }
 object NotificationReplyMarkup {
   
-  @scala.inline
-  def apply(): NotificationReplyMarkup = {
+  inline def apply(): NotificationReplyMarkup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationReplyMarkup]
   }
   
-  @scala.inline
-  implicit class NotificationReplyMarkupMutableBuilder[Self <: NotificationReplyMarkup] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationReplyMarkup](x: Self) {
     
-    @scala.inline
-    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
+    inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
-    @scala.inline
-    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
+    inline def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
+    inline def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
   }
 }

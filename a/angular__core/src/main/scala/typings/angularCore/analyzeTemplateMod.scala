@@ -12,8 +12,7 @@ object analyzeTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def analyzeResolvedTemplate(template: ResolvedTemplate): js.Array[TemplateVariableAssignment] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("analyzeResolvedTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[js.Array[TemplateVariableAssignment] | Null]
+  inline def analyzeResolvedTemplate(template: ResolvedTemplate): js.Array[TemplateVariableAssignment] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("analyzeResolvedTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[js.Array[TemplateVariableAssignment] | Null]
   
   trait TemplateVariableAssignment extends StObject {
     
@@ -25,23 +24,18 @@ object analyzeTemplateMod {
   }
   object TemplateVariableAssignment {
     
-    @scala.inline
-    def apply(end: Double, node: PropertyWrite, start: Double): TemplateVariableAssignment = {
+    inline def apply(end: Double, node: PropertyWrite, start: Double): TemplateVariableAssignment = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateVariableAssignment]
     }
     
-    @scala.inline
-    implicit class TemplateVariableAssignmentMutableBuilder[Self <: TemplateVariableAssignment] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateVariableAssignment](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: PropertyWrite): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: PropertyWrite): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

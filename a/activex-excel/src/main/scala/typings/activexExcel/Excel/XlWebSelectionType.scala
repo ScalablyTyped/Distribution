@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlWebSelectionType extends StObject
 object XlWebSelectionType {
   
-  @scala.inline
-  def xlAllTables: `2` = 2.asInstanceOf[`2`]
+  inline def xlAllTables: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlEntirePage: `1` = 1.asInstanceOf[`1`]
+  inline def xlEntirePage: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlSpecifiedTables: `3` = 3.asInstanceOf[`3`]
+  inline def xlSpecifiedTables: `3` = 3.asInstanceOf[`3`]
 }

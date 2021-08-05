@@ -17,22 +17,17 @@ trait ButtonText extends StObject {
 }
 object ButtonText {
   
-  @scala.inline
-  def apply(buttonText: String, cancelText: String, okText: String): ButtonText = {
+  inline def apply(buttonText: String, cancelText: String, okText: String): ButtonText = {
     val __obj = js.Dynamic.literal(buttonText = buttonText.asInstanceOf[js.Any], cancelText = cancelText.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonText]
   }
   
-  @scala.inline
-  implicit class ButtonTextMutableBuilder[Self <: ButtonText] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonText](x: Self) {
     
-    @scala.inline
-    def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+    inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait AccountsSettingsPaneEventDeferral extends StObject {
 }
 object AccountsSettingsPaneEventDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): AccountsSettingsPaneEventDeferral = {
+  inline def apply(complete: () => Unit): AccountsSettingsPaneEventDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[AccountsSettingsPaneEventDeferral]
   }
   
-  @scala.inline
-  implicit class AccountsSettingsPaneEventDeferralMutableBuilder[Self <: AccountsSettingsPaneEventDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: AccountsSettingsPaneEventDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

@@ -17,25 +17,19 @@ trait OAuthToken extends StObject {
 }
 object OAuthToken {
   
-  @scala.inline
-  def apply(): OAuthToken = {
+  inline def apply(): OAuthToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OAuthToken]
   }
   
-  @scala.inline
-  implicit class OAuthTokenMutableBuilder[Self <: OAuthToken] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthToken](x: Self) {
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+    inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+    inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
   }
 }

@@ -40,46 +40,33 @@ trait StaticWebLayerEbsVolume extends StObject {
 }
 object StaticWebLayerEbsVolume {
   
-  @scala.inline
-  def apply(mountPoint: String, numberOfDisks: Double, size: Double): StaticWebLayerEbsVolume = {
+  inline def apply(mountPoint: String, numberOfDisks: Double, size: Double): StaticWebLayerEbsVolume = {
     val __obj = js.Dynamic.literal(mountPoint = mountPoint.asInstanceOf[js.Any], numberOfDisks = numberOfDisks.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticWebLayerEbsVolume]
   }
   
-  @scala.inline
-  implicit class StaticWebLayerEbsVolumeMutableBuilder[Self <: StaticWebLayerEbsVolume] (val x: Self) extends AnyVal {
+  extension [Self <: StaticWebLayerEbsVolume](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
-    @scala.inline
-    def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
-    @scala.inline
-    def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
+    inline def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDisks(value: Double): Self = StObject.set(x, "numberOfDisks", value.asInstanceOf[js.Any])
+    inline def setNumberOfDisks(value: Double): Self = StObject.set(x, "numberOfDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidLevel(value: String): Self = StObject.set(x, "raidLevel", value.asInstanceOf[js.Any])
+    inline def setRaidLevel(value: String): Self = StObject.set(x, "raidLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidLevelUndefined: Self = StObject.set(x, "raidLevel", js.undefined)
+    inline def setRaidLevelUndefined: Self = StObject.set(x, "raidLevel", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

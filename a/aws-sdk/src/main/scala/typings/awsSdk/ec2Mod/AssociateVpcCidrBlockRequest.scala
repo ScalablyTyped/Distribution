@@ -38,46 +38,33 @@ trait AssociateVpcCidrBlockRequest extends StObject {
 }
 object AssociateVpcCidrBlockRequest {
   
-  @scala.inline
-  def apply(VpcId: VpcId): AssociateVpcCidrBlockRequest = {
+  inline def apply(VpcId: VpcId): AssociateVpcCidrBlockRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateVpcCidrBlockRequest]
   }
   
-  @scala.inline
-  implicit class AssociateVpcCidrBlockRequestMutableBuilder[Self <: AssociateVpcCidrBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateVpcCidrBlockRequest](x: Self) {
     
-    @scala.inline
-    def setAmazonProvidedIpv6CidrBlock(value: Boolean): Self = StObject.set(x, "AmazonProvidedIpv6CidrBlock", value.asInstanceOf[js.Any])
+    inline def setAmazonProvidedIpv6CidrBlock(value: Boolean): Self = StObject.set(x, "AmazonProvidedIpv6CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmazonProvidedIpv6CidrBlockUndefined: Self = StObject.set(x, "AmazonProvidedIpv6CidrBlock", js.undefined)
+    inline def setAmazonProvidedIpv6CidrBlockUndefined: Self = StObject.set(x, "AmazonProvidedIpv6CidrBlock", js.undefined)
     
-    @scala.inline
-    def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
+    inline def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
+    inline def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockNetworkBorderGroup(value: String): Self = StObject.set(x, "Ipv6CidrBlockNetworkBorderGroup", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlockNetworkBorderGroup(value: String): Self = StObject.set(x, "Ipv6CidrBlockNetworkBorderGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockNetworkBorderGroupUndefined: Self = StObject.set(x, "Ipv6CidrBlockNetworkBorderGroup", js.undefined)
+    inline def setIpv6CidrBlockNetworkBorderGroupUndefined: Self = StObject.set(x, "Ipv6CidrBlockNetworkBorderGroup", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlockUndefined: Self = StObject.set(x, "Ipv6CidrBlock", js.undefined)
+    inline def setIpv6CidrBlockUndefined: Self = StObject.set(x, "Ipv6CidrBlock", js.undefined)
     
-    @scala.inline
-    def setIpv6Pool(value: Ipv6PoolEc2Id): Self = StObject.set(x, "Ipv6Pool", value.asInstanceOf[js.Any])
+    inline def setIpv6Pool(value: Ipv6PoolEc2Id): Self = StObject.set(x, "Ipv6Pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6PoolUndefined: Self = StObject.set(x, "Ipv6Pool", js.undefined)
+    inline def setIpv6PoolUndefined: Self = StObject.set(x, "Ipv6Pool", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

@@ -16,22 +16,17 @@ trait OnItemDragObjectBase extends StObject {
 }
 object OnItemDragObjectBase {
   
-  @scala.inline
-  def apply(eventType: move | resize, itemId: Id, time: Double): OnItemDragObjectBase = {
+  inline def apply(eventType: move | resize, itemId: Id, time: Double): OnItemDragObjectBase = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnItemDragObjectBase]
   }
   
-  @scala.inline
-  implicit class OnItemDragObjectBaseMutableBuilder[Self <: OnItemDragObjectBase] (val x: Self) extends AnyVal {
+  extension [Self <: OnItemDragObjectBase](x: Self) {
     
-    @scala.inline
-    def setEventType(value: move | resize): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: move | resize): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemId(value: Id): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: Id): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

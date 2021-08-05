@@ -29,61 +29,43 @@ trait ManagedProperty extends StObject {
 }
 object ManagedProperty {
   
-  @scala.inline
-  def apply(): ManagedProperty = {
+  inline def apply(): ManagedProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedProperty]
   }
   
-  @scala.inline
-  implicit class ManagedPropertyMutableBuilder[Self <: ManagedProperty] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedProperty](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[ManagedPropertyEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[ManagedPropertyEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: ManagedPropertyEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ManagedPropertyEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setNestedProperties(value: js.Array[ManagedProperty]): Self = StObject.set(x, "nestedProperties", value.asInstanceOf[js.Any])
+    inline def setNestedProperties(value: js.Array[ManagedProperty]): Self = StObject.set(x, "nestedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestedPropertiesUndefined: Self = StObject.set(x, "nestedProperties", js.undefined)
+    inline def setNestedPropertiesUndefined: Self = StObject.set(x, "nestedProperties", js.undefined)
     
-    @scala.inline
-    def setNestedPropertiesVarargs(value: ManagedProperty*): Self = StObject.set(x, "nestedProperties", js.Array(value :_*))
+    inline def setNestedPropertiesVarargs(value: ManagedProperty*): Self = StObject.set(x, "nestedProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

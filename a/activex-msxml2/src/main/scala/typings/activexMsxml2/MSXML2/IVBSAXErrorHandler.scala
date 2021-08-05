@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** IVBSAXErrorHandler interface */
 trait IVBSAXErrorHandler extends StObject {
   
-  @JSName("MSXML2.IVBSAXErrorHandler_typekey")
+  /* private */ @JSName("MSXML2.IVBSAXErrorHandler_typekey")
   var MSXML2DotIVBSAXErrorHandler_typekey: IVBSAXErrorHandler
   
   /** Receive notification of a recoverable error. */
@@ -21,8 +21,7 @@ trait IVBSAXErrorHandler extends StObject {
 }
 object IVBSAXErrorHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSXML2DotIVBSAXErrorHandler_typekey: IVBSAXErrorHandler,
     error: (IVBSAXLocator, String, Double) => Unit,
     fatalError: (IVBSAXLocator, String, Double) => Unit,
@@ -33,19 +32,14 @@ object IVBSAXErrorHandler {
     __obj.asInstanceOf[IVBSAXErrorHandler]
   }
   
-  @scala.inline
-  implicit class IVBSAXErrorHandlerMutableBuilder[Self <: IVBSAXErrorHandler] (val x: Self) extends AnyVal {
+  extension [Self <: IVBSAXErrorHandler](x: Self) {
     
-    @scala.inline
-    def setError(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFatalError(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "fatalError", js.Any.fromFunction3(value))
+    inline def setFatalError(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "fatalError", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIgnorableWarning(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "ignorableWarning", js.Any.fromFunction3(value))
+    inline def setIgnorableWarning(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "ignorableWarning", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMSXML2DotIVBSAXErrorHandler_typekey(value: IVBSAXErrorHandler): Self = StObject.set(x, "MSXML2.IVBSAXErrorHandler_typekey", value.asInstanceOf[js.Any])
+    inline def setMSXML2DotIVBSAXErrorHandler_typekey(value: IVBSAXErrorHandler): Self = StObject.set(x, "MSXML2.IVBSAXErrorHandler_typekey", value.asInstanceOf[js.Any])
   }
 }

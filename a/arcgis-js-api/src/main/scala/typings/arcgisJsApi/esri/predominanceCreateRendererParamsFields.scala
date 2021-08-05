@@ -26,8 +26,7 @@ trait predominanceCreateRendererParamsFields
 }
 object predominanceCreateRendererParamsFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     name: String,
@@ -37,16 +36,12 @@ object predominanceCreateRendererParamsFields {
     __obj.asInstanceOf[predominanceCreateRendererParamsFields]
   }
   
-  @scala.inline
-  implicit class predominanceCreateRendererParamsFieldsMutableBuilder[Self <: predominanceCreateRendererParamsFields] (val x: Self) extends AnyVal {
+  extension [Self <: predominanceCreateRendererParamsFields](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait InMemory extends StObject {
 }
 object InMemory {
   
-  @scala.inline
-  def apply(inMemory: SizeNumber): InMemory = {
+  inline def apply(inMemory: SizeNumber): InMemory = {
     val __obj = js.Dynamic.literal(inMemory = inMemory.asInstanceOf[js.Any])
     __obj.asInstanceOf[InMemory]
   }
   
-  @scala.inline
-  implicit class InMemoryMutableBuilder[Self <: InMemory] (val x: Self) extends AnyVal {
+  extension [Self <: InMemory](x: Self) {
     
-    @scala.inline
-    def setInMemory(value: SizeNumber): Self = StObject.set(x, "inMemory", value.asInstanceOf[js.Any])
+    inline def setInMemory(value: SizeNumber): Self = StObject.set(x, "inMemory", value.asInstanceOf[js.Any])
   }
 }

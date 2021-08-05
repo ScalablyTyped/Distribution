@@ -24,31 +24,23 @@ trait FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions e
 }
 object FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions = {
+  inline def apply(): FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsMutableBuilder[Self <: FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
-    @scala.inline
-    def setLogStreamName(value: Input[String]): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
+    inline def setLogStreamName(value: Input[String]): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
+    inline def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
   }
 }

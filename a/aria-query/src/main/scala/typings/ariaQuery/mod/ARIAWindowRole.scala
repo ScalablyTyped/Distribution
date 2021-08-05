@@ -13,9 +13,7 @@ trait ARIAWindowRole
      with _ARIARole
 object ARIAWindowRole {
   
-  @scala.inline
-  def alertdialog: typings.ariaQuery.ariaQueryStrings.alertdialog = "alertdialog".asInstanceOf[typings.ariaQuery.ariaQueryStrings.alertdialog]
+  inline def alertdialog: typings.ariaQuery.ariaQueryStrings.alertdialog = "alertdialog".asInstanceOf[typings.ariaQuery.ariaQueryStrings.alertdialog]
   
-  @scala.inline
-  def dialog: typings.ariaQuery.ariaQueryStrings.dialog = "dialog".asInstanceOf[typings.ariaQuery.ariaQueryStrings.dialog]
+  inline def dialog: typings.ariaQuery.ariaQueryStrings.dialog = "dialog".asInstanceOf[typings.ariaQuery.ariaQueryStrings.dialog]
 }

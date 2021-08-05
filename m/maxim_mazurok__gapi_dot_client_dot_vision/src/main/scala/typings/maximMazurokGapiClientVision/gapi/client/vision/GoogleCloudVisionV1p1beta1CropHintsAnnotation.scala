@@ -11,22 +11,17 @@ trait GoogleCloudVisionV1p1beta1CropHintsAnnotation extends StObject {
 }
 object GoogleCloudVisionV1p1beta1CropHintsAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p1beta1CropHintsAnnotation = {
+  inline def apply(): GoogleCloudVisionV1p1beta1CropHintsAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1CropHintsAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p1beta1CropHintsAnnotationMutableBuilder[Self <: GoogleCloudVisionV1p1beta1CropHintsAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p1beta1CropHintsAnnotation](x: Self) {
     
-    @scala.inline
-    def setCropHints(value: js.Array[GoogleCloudVisionV1p1beta1CropHint]): Self = StObject.set(x, "cropHints", value.asInstanceOf[js.Any])
+    inline def setCropHints(value: js.Array[GoogleCloudVisionV1p1beta1CropHint]): Self = StObject.set(x, "cropHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropHintsUndefined: Self = StObject.set(x, "cropHints", js.undefined)
+    inline def setCropHintsUndefined: Self = StObject.set(x, "cropHints", js.undefined)
     
-    @scala.inline
-    def setCropHintsVarargs(value: GoogleCloudVisionV1p1beta1CropHint*): Self = StObject.set(x, "cropHints", js.Array(value :_*))
+    inline def setCropHintsVarargs(value: GoogleCloudVisionV1p1beta1CropHint*): Self = StObject.set(x, "cropHints", js.Array(value :_*))
   }
 }

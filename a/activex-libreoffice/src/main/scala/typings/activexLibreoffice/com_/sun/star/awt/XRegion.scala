@@ -56,8 +56,7 @@ trait XRegion
 }
 object XRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bounds: Rectangle,
     Rectangles: SafeArray[Rectangle],
     acquire: () => Unit,
@@ -80,49 +79,34 @@ object XRegion {
     __obj.asInstanceOf[XRegion]
   }
   
-  @scala.inline
-  implicit class XRegionMutableBuilder[Self <: XRegion] (val x: Self) extends AnyVal {
+  extension [Self <: XRegion](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Rectangle): Self = StObject.set(x, "Bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludeRectangle(value: Rectangle => Unit): Self = StObject.set(x, "excludeRectangle", js.Any.fromFunction1(value))
+    inline def setExcludeRectangle(value: Rectangle => Unit): Self = StObject.set(x, "excludeRectangle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExcludeRegion(value: XRegion => Unit): Self = StObject.set(x, "excludeRegion", js.Any.fromFunction1(value))
+    inline def setExcludeRegion(value: XRegion => Unit): Self = StObject.set(x, "excludeRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRectangles(value: () => SafeArray[Rectangle]): Self = StObject.set(x, "getRectangles", js.Any.fromFunction0(value))
+    inline def setGetRectangles(value: () => SafeArray[Rectangle]): Self = StObject.set(x, "getRectangles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIntersectRectangle(value: Rectangle => Unit): Self = StObject.set(x, "intersectRectangle", js.Any.fromFunction1(value))
+    inline def setIntersectRectangle(value: Rectangle => Unit): Self = StObject.set(x, "intersectRectangle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersectRegion(value: XRegion => Unit): Self = StObject.set(x, "intersectRegion", js.Any.fromFunction1(value))
+    inline def setIntersectRegion(value: XRegion => Unit): Self = StObject.set(x, "intersectRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
+    inline def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRectangles(value: SafeArray[Rectangle]): Self = StObject.set(x, "Rectangles", value.asInstanceOf[js.Any])
+    inline def setRectangles(value: SafeArray[Rectangle]): Self = StObject.set(x, "Rectangles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnionRectangle(value: Rectangle => Unit): Self = StObject.set(x, "unionRectangle", js.Any.fromFunction1(value))
+    inline def setUnionRectangle(value: Rectangle => Unit): Self = StObject.set(x, "unionRectangle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnionRegion(value: XRegion => Unit): Self = StObject.set(x, "unionRegion", js.Any.fromFunction1(value))
+    inline def setUnionRegion(value: XRegion => Unit): Self = StObject.set(x, "unionRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXOrRectangle(value: Rectangle => Unit): Self = StObject.set(x, "xOrRectangle", js.Any.fromFunction1(value))
+    inline def setXOrRectangle(value: Rectangle => Unit): Self = StObject.set(x, "xOrRectangle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXOrRegion(value: XRegion => Unit): Self = StObject.set(x, "xOrRegion", js.Any.fromFunction1(value))
+    inline def setXOrRegion(value: XRegion => Unit): Self = StObject.set(x, "xOrRegion", js.Any.fromFunction1(value))
   }
 }

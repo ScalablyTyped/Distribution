@@ -17,9 +17,9 @@ object gatherNdGpuMod {
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native
     
-    var sliceDim: js.Any = js.native
+    /* private */ var sliceDim: js.Any = js.native
     
-    var strides: js.Any = js.native
+    /* private */ var strides: js.Any = js.native
     
     /* CompleteClass */
     var userCode: String = js.native

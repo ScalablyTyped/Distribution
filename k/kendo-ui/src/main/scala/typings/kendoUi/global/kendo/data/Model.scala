@@ -23,23 +23,19 @@ object Model {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model])]
+  inline def define(options: DataSourceSchemaModelWithFieldsArray): TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model])]
   /* static member */
-  @scala.inline
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model])]
+  inline def define(options: DataSourceSchemaModelWithFieldsObject): TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofModel & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.Model])]
   
   /* static member */
   @JSGlobal("kendo.data.Model.fields")
   @js.native
   def fields: DataSourceSchemaModelFields = js.native
-  @scala.inline
-  def fields_=(x: DataSourceSchemaModelFields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
+  inline def fields_=(x: DataSourceSchemaModelFields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("kendo.data.Model.idField")
   @js.native
   def idField: String = js.native
-  @scala.inline
-  def idField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idField")(x.asInstanceOf[js.Any])
+  inline def idField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idField")(x.asInstanceOf[js.Any])
 }

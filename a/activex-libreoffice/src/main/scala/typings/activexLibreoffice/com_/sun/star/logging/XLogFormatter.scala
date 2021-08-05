@@ -55,8 +55,7 @@ trait XLogFormatter extends StObject {
 }
 object XLogFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Head: String,
     Tail: String,
     format: LogRecord => String,
@@ -67,22 +66,16 @@ object XLogFormatter {
     __obj.asInstanceOf[XLogFormatter]
   }
   
-  @scala.inline
-  implicit class XLogFormatterMutableBuilder[Self <: XLogFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: XLogFormatter](x: Self) {
     
-    @scala.inline
-    def setFormat(value: LogRecord => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: LogRecord => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHead(value: () => String): Self = StObject.set(x, "getHead", js.Any.fromFunction0(value))
+    inline def setGetHead(value: () => String): Self = StObject.set(x, "getHead", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTail(value: () => String): Self = StObject.set(x, "getTail", js.Any.fromFunction0(value))
+    inline def setGetTail(value: () => String): Self = StObject.set(x, "getTail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHead(value: String): Self = StObject.set(x, "Head", value.asInstanceOf[js.Any])
+    inline def setHead(value: String): Self = StObject.set(x, "Head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTail(value: String): Self = StObject.set(x, "Tail", value.asInstanceOf[js.Any])
+    inline def setTail(value: String): Self = StObject.set(x, "Tail", value.asInstanceOf[js.Any])
   }
 }

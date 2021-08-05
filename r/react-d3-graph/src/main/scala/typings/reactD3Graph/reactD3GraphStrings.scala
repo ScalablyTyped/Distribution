@@ -8,6 +8,5 @@ object reactD3GraphStrings {
   
   @js.native
   sealed trait SAME extends StObject
-  @scala.inline
-  def SAME: SAME = "SAME".asInstanceOf[SAME]
+  inline def SAME: SAME = "SAME".asInstanceOf[SAME]
 }

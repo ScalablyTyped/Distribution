@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Stack[T] extends StObject {
   
-  var N: js.Any = js.native
+  /* private */ var N: js.Any = js.native
   
   def _push(x: Null, a: T): StackNode[T] = js.native
   def _push(x: StackNode[T], a: T): StackNode[T] = js.native
   
-  var first: js.Any = js.native
+  /* private */ var first: js.Any = js.native
   
   def isEmpty(): Boolean = js.native
   

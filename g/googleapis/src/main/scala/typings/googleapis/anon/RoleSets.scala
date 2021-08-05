@@ -12,28 +12,21 @@ trait RoleSets extends StObject {
 }
 object RoleSets {
   
-  @scala.inline
-  def apply(): RoleSets = {
+  inline def apply(): RoleSets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoleSets]
   }
   
-  @scala.inline
-  implicit class RoleSetsMutableBuilder[Self <: RoleSets] (val x: Self) extends AnyVal {
+  extension [Self <: RoleSets](x: Self) {
     
-    @scala.inline
-    def setRoleSets(value: js.Array[AdditionalRoles]): Self = StObject.set(x, "roleSets", value.asInstanceOf[js.Any])
+    inline def setRoleSets(value: js.Array[AdditionalRoles]): Self = StObject.set(x, "roleSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleSetsUndefined: Self = StObject.set(x, "roleSets", js.undefined)
+    inline def setRoleSetsUndefined: Self = StObject.set(x, "roleSets", js.undefined)
     
-    @scala.inline
-    def setRoleSetsVarargs(value: AdditionalRoles*): Self = StObject.set(x, "roleSets", js.Array(value :_*))
+    inline def setRoleSetsVarargs(value: AdditionalRoles*): Self = StObject.set(x, "roleSets", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

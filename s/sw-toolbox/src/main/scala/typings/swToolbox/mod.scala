@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cache(url: String, options: Options_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cache(url: String, options: Options_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("sw-toolbox", "cacheFirst")
   @js.native
@@ -38,15 +37,13 @@ object mod {
   @js.native
   val options: Options_ = js.native
   
-  @scala.inline
-  def precache(urls: PrecacheURLs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("precache")(urls.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def precache(urls: PrecacheURLs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("precache")(urls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sw-toolbox", "router")
   @js.native
   val router: Router_ = js.native
   
-  @scala.inline
-  def uncache(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uncache")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def uncache(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uncache")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait CacheOptions extends StObject {
     
@@ -58,23 +55,18 @@ object mod {
   }
   object CacheOptions {
     
-    @scala.inline
-    def apply(maxAgeSeconds: Double, maxEntries: Double, name: String): CacheOptions = {
+    inline def apply(maxAgeSeconds: Double, maxEntries: Double, name: String): CacheOptions = {
       val __obj = js.Dynamic.literal(maxAgeSeconds = maxAgeSeconds.asInstanceOf[js.Any], maxEntries = maxEntries.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheOptions]
     }
     
-    @scala.inline
-    implicit class CacheOptionsMutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CacheOptions](x: Self) {
       
-      @scala.inline
-      def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
+      inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
+      inline def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,23 +82,18 @@ object mod {
   }
   object Options_ {
     
-    @scala.inline
-    def apply(cache: CacheOptions, debug: Boolean, networkTimeoutSeconds: Double): Options_ = {
+    inline def apply(cache: CacheOptions, debug: Boolean, networkTimeoutSeconds: Double): Options_ = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], networkTimeoutSeconds = networkTimeoutSeconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options_]
     }
     
-    @scala.inline
-    implicit class Options_MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
+    extension [Self <: Options_](x: Self) {
       
-      @scala.inline
-      def setCache(value: CacheOptions): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: CacheOptions): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkTimeoutSeconds(value: Double): Self = StObject.set(x, "networkTimeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setNetworkTimeoutSeconds(value: Double): Self = StObject.set(x, "networkTimeoutSeconds", value.asInstanceOf[js.Any])
     }
   }
   

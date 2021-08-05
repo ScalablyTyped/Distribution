@@ -53,76 +53,53 @@ trait ElasticLoadBalancer extends StObject {
 }
 object ElasticLoadBalancer {
   
-  @scala.inline
-  def apply(): ElasticLoadBalancer = {
+  inline def apply(): ElasticLoadBalancer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElasticLoadBalancer]
   }
   
-  @scala.inline
-  implicit class ElasticLoadBalancerMutableBuilder[Self <: ElasticLoadBalancer] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticLoadBalancer](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: Strings): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: Strings): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setDnsName(value: String): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: String): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
+    inline def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
-    @scala.inline
-    def setEc2InstanceIds(value: Strings): Self = StObject.set(x, "Ec2InstanceIds", value.asInstanceOf[js.Any])
+    inline def setEc2InstanceIds(value: Strings): Self = StObject.set(x, "Ec2InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2InstanceIdsUndefined: Self = StObject.set(x, "Ec2InstanceIds", js.undefined)
+    inline def setEc2InstanceIdsUndefined: Self = StObject.set(x, "Ec2InstanceIds", js.undefined)
     
-    @scala.inline
-    def setEc2InstanceIdsVarargs(value: String*): Self = StObject.set(x, "Ec2InstanceIds", js.Array(value :_*))
+    inline def setEc2InstanceIdsVarargs(value: String*): Self = StObject.set(x, "Ec2InstanceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setElasticLoadBalancerName(value: String): Self = StObject.set(x, "ElasticLoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setElasticLoadBalancerName(value: String): Self = StObject.set(x, "ElasticLoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticLoadBalancerNameUndefined: Self = StObject.set(x, "ElasticLoadBalancerName", js.undefined)
+    inline def setElasticLoadBalancerNameUndefined: Self = StObject.set(x, "ElasticLoadBalancerName", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
-    @scala.inline
-    def setSubnetIds(value: Strings): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: Strings): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
+    inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

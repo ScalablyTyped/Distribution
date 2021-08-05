@@ -27,8 +27,7 @@ object iniLoaderMod {
     def loadFrom(options: LoadFileOptions): IniFileContent = js.native
   }
   
-  @scala.inline
-  def parseFile(filename: String, isConfig: Boolean): IniFileContent = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filename.asInstanceOf[js.Any], isConfig.asInstanceOf[js.Any])).asInstanceOf[IniFileContent]
+  inline def parseFile(filename: String, isConfig: Boolean): IniFileContent = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filename.asInstanceOf[js.Any], isConfig.asInstanceOf[js.Any])).asInstanceOf[IniFileContent]
   
   type IniFileContent = StringDictionary[StringDictionary[String]]
   
@@ -40,26 +39,20 @@ object iniLoaderMod {
   }
   object LoadFileOptions {
     
-    @scala.inline
-    def apply(): LoadFileOptions = {
+    inline def apply(): LoadFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadFileOptions]
     }
     
-    @scala.inline
-    implicit class LoadFileOptionsMutableBuilder[Self <: LoadFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoadFileOptions](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setIsConfig(value: Boolean): Self = StObject.set(x, "isConfig", value.asInstanceOf[js.Any])
+      inline def setIsConfig(value: Boolean): Self = StObject.set(x, "isConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsConfigUndefined: Self = StObject.set(x, "isConfig", js.undefined)
+      inline def setIsConfigUndefined: Self = StObject.set(x, "isConfig", js.undefined)
     }
   }
 }

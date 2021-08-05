@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackCardMode extends StObject
 object StackCardMode {
   
-  @scala.inline
-  def card: typings.tuyaPanelKit.tuyaPanelKitStrings.card = "card".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.card]
+  inline def card: typings.tuyaPanelKit.tuyaPanelKitStrings.card = "card".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.card]
   
-  @scala.inline
-  def modal: typings.tuyaPanelKit.tuyaPanelKitStrings.modal = "modal".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.modal]
+  inline def modal: typings.tuyaPanelKit.tuyaPanelKitStrings.modal = "modal".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.modal]
 }

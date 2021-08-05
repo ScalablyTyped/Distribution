@@ -30,25 +30,19 @@ trait UpdateConfigurationRequest extends StObject {
 }
 object UpdateConfigurationRequest {
   
-  @scala.inline
-  def apply(Arn: string, ServerProperties: _Blob): UpdateConfigurationRequest = {
+  inline def apply(Arn: string, ServerProperties: _Blob): UpdateConfigurationRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ServerProperties = ServerProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConfigurationRequestMutableBuilder[Self <: UpdateConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setServerProperties(value: _Blob): Self = StObject.set(x, "ServerProperties", value.asInstanceOf[js.Any])
+    inline def setServerProperties(value: _Blob): Self = StObject.set(x, "ServerProperties", value.asInstanceOf[js.Any])
   }
 }

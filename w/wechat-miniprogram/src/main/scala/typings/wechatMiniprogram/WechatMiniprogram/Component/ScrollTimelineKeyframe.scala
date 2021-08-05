@@ -21,34 +21,25 @@ trait ScrollTimelineKeyframe
 }
 object ScrollTimelineKeyframe {
   
-  @scala.inline
-  def apply(): ScrollTimelineKeyframe = {
+  inline def apply(): ScrollTimelineKeyframe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollTimelineKeyframe]
   }
   
-  @scala.inline
-  implicit class ScrollTimelineKeyframeMutableBuilder[Self <: ScrollTimelineKeyframe] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollTimelineKeyframe](x: Self) {
     
-    @scala.inline
-    def setComposite(value: replace | add | accumulate | auto): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+    inline def setComposite(value: replace | add | accumulate | auto): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+    inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetNull: Self = StObject.set(x, "offset", null)
+    inline def setOffsetNull: Self = StObject.set(x, "offset", null)
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

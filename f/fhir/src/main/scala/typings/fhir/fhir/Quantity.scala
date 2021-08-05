@@ -63,73 +63,51 @@ trait Quantity
 }
 object Quantity {
   
-  @scala.inline
-  def apply(): Quantity = {
+  inline def apply(): Quantity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Quantity]
   }
   
-  @scala.inline
-  implicit class QuantityMutableBuilder[Self <: Quantity] (val x: Self) extends AnyVal {
+  extension [Self <: Quantity](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setComparator(value: code): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
+    inline def setComparator(value: code): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
     
-    @scala.inline
-    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValue(value: decimal): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: decimal): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_comparator(value: Element): Self = StObject.set(x, "_comparator", value.asInstanceOf[js.Any])
+    inline def set_comparator(value: Element): Self = StObject.set(x, "_comparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_comparatorUndefined: Self = StObject.set(x, "_comparator", js.undefined)
+    inline def set_comparatorUndefined: Self = StObject.set(x, "_comparator", js.undefined)
     
-    @scala.inline
-    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
+    inline def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
+    inline def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
-    @scala.inline
-    def set_unit(value: Element): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
+    inline def set_unit(value: Element): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_unitUndefined: Self = StObject.set(x, "_unit", js.undefined)
+    inline def set_unitUndefined: Self = StObject.set(x, "_unit", js.undefined)
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

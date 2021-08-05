@@ -16,31 +16,23 @@ trait IUpdateSnapshotRequest extends StObject {
 }
 object IUpdateSnapshotRequest {
   
-  @scala.inline
-  def apply(): IUpdateSnapshotRequest = {
+  inline def apply(): IUpdateSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpdateSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class IUpdateSnapshotRequestMutableBuilder[Self <: IUpdateSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: ISnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: ISnapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotNull: Self = StObject.set(x, "snapshot", null)
+    inline def setSnapshotNull: Self = StObject.set(x, "snapshot", null)
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

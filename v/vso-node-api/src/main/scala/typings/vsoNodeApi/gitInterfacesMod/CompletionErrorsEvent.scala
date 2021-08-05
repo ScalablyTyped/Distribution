@@ -15,16 +15,13 @@ trait CompletionErrorsEvent
 }
 object CompletionErrorsEvent {
   
-  @scala.inline
-  def apply(errorMessage: String, eventId: String, pullRequestId: Double): CompletionErrorsEvent = {
+  inline def apply(errorMessage: String, eventId: String, pullRequestId: Double): CompletionErrorsEvent = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionErrorsEvent]
   }
   
-  @scala.inline
-  implicit class CompletionErrorsEventMutableBuilder[Self <: CompletionErrorsEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionErrorsEvent](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait FindOneAndUpdateOption[T]
 }
 object FindOneAndUpdateOption {
   
-  @scala.inline
-  def apply[T](): FindOneAndUpdateOption[T] = {
+  inline def apply[T](): FindOneAndUpdateOption[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOneAndUpdateOption[T]]
   }
   
-  @scala.inline
-  implicit class FindOneAndUpdateOptionMutableBuilder[Self <: FindOneAndUpdateOption[?], T] (val x: Self & FindOneAndUpdateOption[T]) extends AnyVal {
+  extension [Self <: FindOneAndUpdateOption[?], T](x: Self & FindOneAndUpdateOption[T]) {
     
-    @scala.inline
-    def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+    inline def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
+    inline def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
     
-    @scala.inline
-    def setArrayFiltersVarargs(value: js.Object*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
+    inline def setArrayFiltersVarargs(value: js.Object*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
   }
 }

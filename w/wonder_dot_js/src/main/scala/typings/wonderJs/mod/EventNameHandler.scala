@@ -15,6 +15,5 @@ object EventNameHandler {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def handleEventName(domEventName: typings.wonderJs.eventNameHandlerMod.EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventName")(domEventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def handleEventName(domEventName: typings.wonderJs.eventNameHandlerMod.EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventName")(domEventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

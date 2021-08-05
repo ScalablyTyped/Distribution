@@ -42,8 +42,7 @@ trait RequestInfo extends StObject {
 }
 object RequestInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptEncoding: String,
     completed: Double,
     cors: IsOriginMatch,
@@ -60,40 +59,28 @@ object RequestInfo {
     __obj.asInstanceOf[RequestInfo]
   }
   
-  @scala.inline
-  implicit class RequestInfoMutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RequestInfo](x: Self) {
     
-    @scala.inline
-    def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
+    inline def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCors(value: IsOriginMatch): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: IsOriginMatch): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceived(value: Double): Self = StObject.set(x, "received", value.asInstanceOf[js.Any])
+    inline def setReceived(value: Double): Self = StObject.set(x, "received", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
+    inline def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
+    inline def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponded(value: Double): Self = StObject.set(x, "responded", value.asInstanceOf[js.Any])
+    inline def setResponded(value: Double): Self = StObject.set(x, "responded", value.asInstanceOf[js.Any])
   }
 }

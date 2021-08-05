@@ -16,15 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VppTokenSyncStatus extends StObject
 object VppTokenSyncStatus {
   
-  @scala.inline
-  def completed: completed_ = "completed".asInstanceOf[completed_]
+  inline def completed: completed_ = "completed".asInstanceOf[completed_]
   
-  @scala.inline
-  def failed: failed_ = "failed".asInstanceOf[failed_]
+  inline def failed: failed_ = "failed".asInstanceOf[failed_]
   
-  @scala.inline
-  def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = "inProgress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inProgress]
+  inline def inProgress: typings.microsoftGraph.microsoftGraphStrings.inProgress = "inProgress".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.inProgress]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
 }

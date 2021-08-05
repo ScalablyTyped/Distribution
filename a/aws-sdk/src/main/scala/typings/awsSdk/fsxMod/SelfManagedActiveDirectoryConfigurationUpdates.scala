@@ -23,34 +23,25 @@ trait SelfManagedActiveDirectoryConfigurationUpdates extends StObject {
 }
 object SelfManagedActiveDirectoryConfigurationUpdates {
   
-  @scala.inline
-  def apply(): SelfManagedActiveDirectoryConfigurationUpdates = {
+  inline def apply(): SelfManagedActiveDirectoryConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelfManagedActiveDirectoryConfigurationUpdates]
   }
   
-  @scala.inline
-  implicit class SelfManagedActiveDirectoryConfigurationUpdatesMutableBuilder[Self <: SelfManagedActiveDirectoryConfigurationUpdates] (val x: Self) extends AnyVal {
+  extension [Self <: SelfManagedActiveDirectoryConfigurationUpdates](x: Self) {
     
-    @scala.inline
-    def setDnsIps(value: DnsIps): Self = StObject.set(x, "DnsIps", value.asInstanceOf[js.Any])
+    inline def setDnsIps(value: DnsIps): Self = StObject.set(x, "DnsIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsIpsUndefined: Self = StObject.set(x, "DnsIps", js.undefined)
+    inline def setDnsIpsUndefined: Self = StObject.set(x, "DnsIps", js.undefined)
     
-    @scala.inline
-    def setDnsIpsVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIps", js.Array(value :_*))
+    inline def setDnsIpsVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIps", js.Array(value :_*))
     
-    @scala.inline
-    def setPassword(value: DirectoryPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: DirectoryPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setUserName(value: DirectoryUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: DirectoryUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

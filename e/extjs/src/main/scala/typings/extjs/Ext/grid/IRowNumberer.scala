@@ -9,8 +9,7 @@ trait IRowNumberer
      with typings.extjs.Ext.grid.column.IColumn
 object IRowNumberer {
   
-  @scala.inline
-  def apply(): IRowNumberer = {
+  inline def apply(): IRowNumberer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRowNumberer]
   }

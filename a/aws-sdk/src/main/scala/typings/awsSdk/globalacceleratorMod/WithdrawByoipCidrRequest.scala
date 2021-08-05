@@ -13,16 +13,13 @@ trait WithdrawByoipCidrRequest extends StObject {
 }
 object WithdrawByoipCidrRequest {
   
-  @scala.inline
-  def apply(Cidr: GenericString): WithdrawByoipCidrRequest = {
+  inline def apply(Cidr: GenericString): WithdrawByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithdrawByoipCidrRequest]
   }
   
-  @scala.inline
-  implicit class WithdrawByoipCidrRequestMutableBuilder[Self <: WithdrawByoipCidrRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WithdrawByoipCidrRequest](x: Self) {
     
-    @scala.inline
-    def setCidr(value: GenericString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: GenericString): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
   }
 }

@@ -50,8 +50,7 @@ trait XAnimationListener
 }
 object XAnimationListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     beginEvent: XAnimationNode => Unit,
     disposing: EventObject => Unit,
@@ -64,16 +63,12 @@ object XAnimationListener {
     __obj.asInstanceOf[XAnimationListener]
   }
   
-  @scala.inline
-  implicit class XAnimationListenerMutableBuilder[Self <: XAnimationListener] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimationListener](x: Self) {
     
-    @scala.inline
-    def setBeginEvent(value: XAnimationNode => Unit): Self = StObject.set(x, "beginEvent", js.Any.fromFunction1(value))
+    inline def setBeginEvent(value: XAnimationNode => Unit): Self = StObject.set(x, "beginEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndEvent(value: XAnimationNode => Unit): Self = StObject.set(x, "endEvent", js.Any.fromFunction1(value))
+    inline def setEndEvent(value: XAnimationNode => Unit): Self = StObject.set(x, "endEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRepeat(value: (XAnimationNode, Double) => Unit): Self = StObject.set(x, "repeat", js.Any.fromFunction2(value))
+    inline def setRepeat(value: (XAnimationNode, Double) => Unit): Self = StObject.set(x, "repeat", js.Any.fromFunction2(value))
   }
 }

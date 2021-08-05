@@ -12,8 +12,7 @@ trait DragEndEvent
 }
 object DragEndEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Double,
     layer: js.Any,
     propagatedFrom: js.Any,
@@ -26,10 +25,8 @@ object DragEndEvent {
     __obj.asInstanceOf[DragEndEvent]
   }
   
-  @scala.inline
-  implicit class DragEndEventMutableBuilder[Self <: DragEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DragEndEvent](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
   }
 }

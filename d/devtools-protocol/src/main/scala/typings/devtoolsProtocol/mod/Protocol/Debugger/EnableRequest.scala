@@ -14,19 +14,15 @@ trait EnableRequest extends StObject {
 }
 object EnableRequest {
   
-  @scala.inline
-  def apply(): EnableRequest = {
+  inline def apply(): EnableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableRequest]
   }
   
-  @scala.inline
-  implicit class EnableRequestMutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableRequest](x: Self) {
     
-    @scala.inline
-    def setMaxScriptsCacheSize(value: Double): Self = StObject.set(x, "maxScriptsCacheSize", value.asInstanceOf[js.Any])
+    inline def setMaxScriptsCacheSize(value: Double): Self = StObject.set(x, "maxScriptsCacheSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScriptsCacheSizeUndefined: Self = StObject.set(x, "maxScriptsCacheSize", js.undefined)
+    inline def setMaxScriptsCacheSizeUndefined: Self = StObject.set(x, "maxScriptsCacheSize", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait InstanceFleetInstanceTypeConfig extends StObject {
 }
 object InstanceFleetInstanceTypeConfig {
   
-  @scala.inline
-  def apply(ebsConfigs: js.Array[InstanceFleetInstanceTypeConfigEbsConfig], instanceType: String): InstanceFleetInstanceTypeConfig = {
+  inline def apply(ebsConfigs: js.Array[InstanceFleetInstanceTypeConfigEbsConfig], instanceType: String): InstanceFleetInstanceTypeConfig = {
     val __obj = js.Dynamic.literal(ebsConfigs = ebsConfigs.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetInstanceTypeConfig]
   }
   
-  @scala.inline
-  implicit class InstanceFleetInstanceTypeConfigMutableBuilder[Self <: InstanceFleetInstanceTypeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetInstanceTypeConfig](x: Self) {
     
-    @scala.inline
-    def setBidPrice(value: String): Self = StObject.set(x, "bidPrice", value.asInstanceOf[js.Any])
+    inline def setBidPrice(value: String): Self = StObject.set(x, "bidPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceAsPercentageOfOnDemandPrice(value: Double): Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
+    inline def setBidPriceAsPercentageOfOnDemandPrice(value: Double): Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidPriceAsPercentageOfOnDemandPriceUndefined: Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", js.undefined)
+    inline def setBidPriceAsPercentageOfOnDemandPriceUndefined: Self = StObject.set(x, "bidPriceAsPercentageOfOnDemandPrice", js.undefined)
     
-    @scala.inline
-    def setBidPriceUndefined: Self = StObject.set(x, "bidPrice", js.undefined)
+    inline def setBidPriceUndefined: Self = StObject.set(x, "bidPrice", js.undefined)
     
-    @scala.inline
-    def setConfigurations(value: js.Array[InstanceFleetInstanceTypeConfigConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: js.Array[InstanceFleetInstanceTypeConfigConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: InstanceFleetInstanceTypeConfigConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: InstanceFleetInstanceTypeConfigConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
     
-    @scala.inline
-    def setEbsConfigs(value: js.Array[InstanceFleetInstanceTypeConfigEbsConfig]): Self = StObject.set(x, "ebsConfigs", value.asInstanceOf[js.Any])
+    inline def setEbsConfigs(value: js.Array[InstanceFleetInstanceTypeConfigEbsConfig]): Self = StObject.set(x, "ebsConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsConfigsVarargs(value: InstanceFleetInstanceTypeConfigEbsConfig*): Self = StObject.set(x, "ebsConfigs", js.Array(value :_*))
+    inline def setEbsConfigsVarargs(value: InstanceFleetInstanceTypeConfigEbsConfig*): Self = StObject.set(x, "ebsConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacity(value: Double): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
+    inline def setWeightedCapacity(value: Double): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedCapacityUndefined: Self = StObject.set(x, "weightedCapacity", js.undefined)
+    inline def setWeightedCapacityUndefined: Self = StObject.set(x, "weightedCapacity", js.undefined)
   }
 }

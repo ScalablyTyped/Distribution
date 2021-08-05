@@ -14,25 +14,19 @@ trait PropertyOrder extends StObject {
 }
 object PropertyOrder {
   
-  @scala.inline
-  def apply(): PropertyOrder = {
+  inline def apply(): PropertyOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyOrder]
   }
   
-  @scala.inline
-  implicit class PropertyOrderMutableBuilder[Self <: PropertyOrder] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyOrder](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setProperty(value: PropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: PropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

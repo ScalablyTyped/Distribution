@@ -42,8 +42,7 @@ trait EasingStatic extends StObject {
 }
 object EasingStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     back: Double => EasingFunction,
     bezier: (Double, Double, Double, Double) => EasingFunction,
     bounce: /* value */ Double => Double,
@@ -66,58 +65,40 @@ object EasingStatic {
     __obj.asInstanceOf[EasingStatic]
   }
   
-  @scala.inline
-  implicit class EasingStaticMutableBuilder[Self <: EasingStatic] (val x: Self) extends AnyVal {
+  extension [Self <: EasingStatic](x: Self) {
     
-    @scala.inline
-    def setBack(value: Double => EasingFunction): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
+    inline def setBack(value: Double => EasingFunction): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBezier(value: (Double, Double, Double, Double) => EasingFunction): Self = StObject.set(x, "bezier", js.Any.fromFunction4(value))
+    inline def setBezier(value: (Double, Double, Double, Double) => EasingFunction): Self = StObject.set(x, "bezier", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setBounce(value: /* value */ Double => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
+    inline def setBounce(value: /* value */ Double => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCircle(value: /* value */ Double => Double): Self = StObject.set(x, "circle", js.Any.fromFunction1(value))
+    inline def setCircle(value: /* value */ Double => Double): Self = StObject.set(x, "circle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCubic(value: /* value */ Double => Double): Self = StObject.set(x, "cubic", js.Any.fromFunction1(value))
+    inline def setCubic(value: /* value */ Double => Double): Self = StObject.set(x, "cubic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEase(value: /* value */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
+    inline def setEase(value: /* value */ Double => Double): Self = StObject.set(x, "ease", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElastic(value: Double => EasingFunction): Self = StObject.set(x, "elastic", js.Any.fromFunction1(value))
+    inline def setElastic(value: Double => EasingFunction): Self = StObject.set(x, "elastic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExp(value: /* value */ Double => Double): Self = StObject.set(x, "exp", js.Any.fromFunction1(value))
+    inline def setExp(value: /* value */ Double => Double): Self = StObject.set(x, "exp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn(value: EasingFunction => EasingFunction): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: EasingFunction => EasingFunction): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInOut(value: EasingFunction => EasingFunction): Self = StObject.set(x, "inOut", js.Any.fromFunction1(value))
+    inline def setInOut(value: EasingFunction => EasingFunction): Self = StObject.set(x, "inOut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLinear(value: /* value */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
+    inline def setLinear(value: /* value */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOut(value: EasingFunction => EasingFunction): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
+    inline def setOut(value: EasingFunction => EasingFunction): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPoly(value: Double => EasingFunction): Self = StObject.set(x, "poly", js.Any.fromFunction1(value))
+    inline def setPoly(value: Double => EasingFunction): Self = StObject.set(x, "poly", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQuad(value: /* value */ Double => Double): Self = StObject.set(x, "quad", js.Any.fromFunction1(value))
+    inline def setQuad(value: /* value */ Double => Double): Self = StObject.set(x, "quad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSin(value: /* value */ Double => Double): Self = StObject.set(x, "sin", js.Any.fromFunction1(value))
+    inline def setSin(value: /* value */ Double => Double): Self = StObject.set(x, "sin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStep0(value: /* value */ Double => Double): Self = StObject.set(x, "step0", js.Any.fromFunction1(value))
+    inline def setStep0(value: /* value */ Double => Double): Self = StObject.set(x, "step0", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStep1(value: /* value */ Double => Double): Self = StObject.set(x, "step1", js.Any.fromFunction1(value))
+    inline def setStep1(value: /* value */ Double => Double): Self = StObject.set(x, "step1", js.Any.fromFunction1(value))
   }
 }

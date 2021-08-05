@@ -12,22 +12,17 @@ trait CatCountParams
 }
 object CatCountParams {
   
-  @scala.inline
-  def apply(format: String): CatCountParams = {
+  inline def apply(format: String): CatCountParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatCountParams]
   }
   
-  @scala.inline
-  implicit class CatCountParamsMutableBuilder[Self <: CatCountParams] (val x: Self) extends AnyVal {
+  extension [Self <: CatCountParams](x: Self) {
     
-    @scala.inline
-    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
   }
 }

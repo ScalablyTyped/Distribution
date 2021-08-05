@@ -13,19 +13,15 @@ trait GetObjectLockConfigurationOutput extends StObject {
 }
 object GetObjectLockConfigurationOutput {
   
-  @scala.inline
-  def apply(): GetObjectLockConfigurationOutput = {
+  inline def apply(): GetObjectLockConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectLockConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class GetObjectLockConfigurationOutputMutableBuilder[Self <: GetObjectLockConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectLockConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setObjectLockConfiguration(value: ObjectLockConfiguration): Self = StObject.set(x, "ObjectLockConfiguration", value.asInstanceOf[js.Any])
+    inline def setObjectLockConfiguration(value: ObjectLockConfiguration): Self = StObject.set(x, "ObjectLockConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectLockConfigurationUndefined: Self = StObject.set(x, "ObjectLockConfiguration", js.undefined)
+    inline def setObjectLockConfigurationUndefined: Self = StObject.set(x, "ObjectLockConfiguration", js.undefined)
   }
 }

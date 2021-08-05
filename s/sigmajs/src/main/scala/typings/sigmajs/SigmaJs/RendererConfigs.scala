@@ -15,31 +15,23 @@ trait RendererConfigs extends StObject {
 }
 object RendererConfigs {
   
-  @scala.inline
-  def apply(): RendererConfigs = {
+  inline def apply(): RendererConfigs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RendererConfigs]
   }
   
-  @scala.inline
-  implicit class RendererConfigsMutableBuilder[Self <: RendererConfigs] (val x: Self) extends AnyVal {
+  extension [Self <: RendererConfigs](x: Self) {
     
-    @scala.inline
-    def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -51,53 +51,42 @@ object mod {
     @js.native
     val __INTERNAL_SLOT_MAP__ : js.Any = js.native
     
-    @scala.inline
-    def __addLocaleData(data: ListPatternLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def __addLocaleData(data: ListPatternLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@formatjs/intl-listformat", "default.__defaultLocale")
     @js.native
     def __defaultLocale: js.Any = js.native
-    @scala.inline
-    def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
+    inline def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat", "default.availableLocales")
     @js.native
     def availableLocales: js.Any = js.native
-    @scala.inline
-    def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
+    inline def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat", "default.getDefaultLocale")
     @js.native
     def getDefaultLocale: js.Any = js.native
-    @scala.inline
-    def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
+    inline def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat", "default.localeData")
     @js.native
     def localeData: Record[String, js.UndefOr[ListPatternFieldsData]] = js.native
-    @scala.inline
-    def localeData_=(x: Record[String, js.UndefOr[ListPatternFieldsData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeData")(x.asInstanceOf[js.Any])
+    inline def localeData_=(x: Record[String, js.UndefOr[ListPatternFieldsData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeData")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat", "default.polyfilled")
     @js.native
     def polyfilled: Boolean = js.native
-    @scala.inline
-    def polyfilled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyfilled")(x.asInstanceOf[js.Any])
+    inline def polyfilled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyfilled")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-listformat", "default.relevantExtensionKeys")
     @js.native
     def relevantExtensionKeys: js.Any = js.native
-    @scala.inline
-    def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
+    inline def relevantExtensionKeys_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relevantExtensionKeys")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: String, options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: js.Array[String], options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: String, options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: js.Array[String], options: PickIntlListFormatOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
   trait ElementPart extends StObject {
@@ -108,21 +97,17 @@ object mod {
   }
   object ElementPart {
     
-    @scala.inline
-    def apply(value: String): ElementPart = {
+    inline def apply(value: String): ElementPart = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[ElementPart]
     }
     
-    @scala.inline
-    implicit class ElementPartMutableBuilder[Self <: ElementPart] (val x: Self) extends AnyVal {
+    extension [Self <: ElementPart](x: Self) {
       
-      @scala.inline
-      def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,32 +141,24 @@ object mod {
   }
   object IntlListFormatOptions {
     
-    @scala.inline
-    def apply(): IntlListFormatOptions = {
+    inline def apply(): IntlListFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntlListFormatOptions]
     }
     
-    @scala.inline
-    implicit class IntlListFormatOptionsMutableBuilder[Self <: IntlListFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IntlListFormatOptions](x: Self) {
       
-      @scala.inline
-      def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: conjunction | disjunction | unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: conjunction | disjunction | unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -195,8 +172,7 @@ object mod {
   }
   object ListFormat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       format: js.Array[String] => String,
       formatToParts: js.Array[String] => js.Array[Part],
       resolvedOptions: () => ResolvedIntlListFormatOptions
@@ -205,17 +181,13 @@ object mod {
       __obj.asInstanceOf[ListFormat]
     }
     
-    @scala.inline
-    implicit class ListFormatMutableBuilder[Self <: ListFormat] (val x: Self) extends AnyVal {
+    extension [Self <: ListFormat](x: Self) {
       
-      @scala.inline
-      def setFormat(value: js.Array[String] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: js.Array[String] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatToParts(value: js.Array[String] => js.Array[Part]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction1(value))
+      inline def setFormatToParts(value: js.Array[String] => js.Array[Part]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolvedOptions(value: () => ResolvedIntlListFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
+      inline def setResolvedOptions(value: () => ResolvedIntlListFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     }
   }
   
@@ -252,24 +224,19 @@ object mod {
   }
   object ResolvedIntlListFormatOptions {
     
-    @scala.inline
-    def apply(locale: String, style: long | short | narrow, `type`: conjunction | disjunction | unit): ResolvedIntlListFormatOptions = {
+    inline def apply(locale: String, style: long | short | narrow, `type`: conjunction | disjunction | unit): ResolvedIntlListFormatOptions = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedIntlListFormatOptions]
     }
     
-    @scala.inline
-    implicit class ResolvedIntlListFormatOptionsMutableBuilder[Self <: ResolvedIntlListFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedIntlListFormatOptions](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: conjunction | disjunction | unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: conjunction | disjunction | unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

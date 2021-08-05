@@ -44,8 +44,7 @@ object timeInputDriverMod {
   }
   object TimeInputDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blur: () => Unit,
       clickTickerDown: () => Unit,
       clickTickerUp: () => Unit,
@@ -66,50 +65,35 @@ object timeInputDriverMod {
       __obj.asInstanceOf[TimeInputDriver]
     }
     
-    @scala.inline
-    implicit class TimeInputDriverMutableBuilder[Self <: TimeInputDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TimeInputDriver](x: Self) {
       
-      @scala.inline
-      def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickTickerDown(value: () => Unit): Self = StObject.set(x, "clickTickerDown", js.Any.fromFunction0(value))
+      inline def setClickTickerDown(value: () => Unit): Self = StObject.set(x, "clickTickerDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickTickerUp(value: () => Unit): Self = StObject.set(x, "clickTickerUp", js.Any.fromFunction0(value))
+      inline def setClickTickerUp(value: () => Unit): Self = StObject.set(x, "clickTickerUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAmPmIndicatorText(value: () => String): Self = StObject.set(x, "getAmPmIndicatorText", js.Any.fromFunction0(value))
+      inline def setGetAmPmIndicatorText(value: () => String): Self = StObject.set(x, "getAmPmIndicatorText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCustomSuffix(value: () => ReactNode): Self = StObject.set(x, "getCustomSuffix", js.Any.fromFunction0(value))
+      inline def setGetCustomSuffix(value: () => ReactNode): Self = StObject.set(x, "getCustomSuffix", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
+      inline def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsAmPmIndicatorExist(value: () => Boolean): Self = StObject.set(x, "isAmPmIndicatorExist", js.Any.fromFunction0(value))
+      inline def setIsAmPmIndicatorExist(value: () => Boolean): Self = StObject.set(x, "isAmPmIndicatorExist", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRtl(value: () => Boolean): Self = StObject.set(x, "isRtl", js.Any.fromFunction0(value))
+      inline def setIsRtl(value: () => Boolean): Self = StObject.set(x, "isRtl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsShowSeconds(value: () => Boolean): Self = StObject.set(x, "isShowSeconds", js.Any.fromFunction0(value))
+      inline def setIsShowSeconds(value: () => Boolean): Self = StObject.set(x, "isShowSeconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleAmPmIndicator(value: () => Unit): Self = StObject.set(x, "toggleAmPmIndicator", js.Any.fromFunction0(value))
+      inline def setToggleAmPmIndicator(value: () => Unit): Self = StObject.set(x, "toggleAmPmIndicator", js.Any.fromFunction0(value))
     }
   }
 }

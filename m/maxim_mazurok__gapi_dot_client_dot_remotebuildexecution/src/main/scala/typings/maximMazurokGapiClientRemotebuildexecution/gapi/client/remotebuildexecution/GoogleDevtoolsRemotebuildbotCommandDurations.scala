@@ -41,79 +41,55 @@ trait GoogleDevtoolsRemotebuildbotCommandDurations extends StObject {
 }
 object GoogleDevtoolsRemotebuildbotCommandDurations {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildbotCommandDurations = {
+  inline def apply(): GoogleDevtoolsRemotebuildbotCommandDurations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotCommandDurations]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildbotCommandDurationsMutableBuilder[Self <: GoogleDevtoolsRemotebuildbotCommandDurations] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildbotCommandDurations](x: Self) {
     
-    @scala.inline
-    def setDockerPrep(value: String): Self = StObject.set(x, "dockerPrep", value.asInstanceOf[js.Any])
+    inline def setDockerPrep(value: String): Self = StObject.set(x, "dockerPrep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerPrepStartTime(value: String): Self = StObject.set(x, "dockerPrepStartTime", value.asInstanceOf[js.Any])
+    inline def setDockerPrepStartTime(value: String): Self = StObject.set(x, "dockerPrepStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerPrepStartTimeUndefined: Self = StObject.set(x, "dockerPrepStartTime", js.undefined)
+    inline def setDockerPrepStartTimeUndefined: Self = StObject.set(x, "dockerPrepStartTime", js.undefined)
     
-    @scala.inline
-    def setDockerPrepUndefined: Self = StObject.set(x, "dockerPrep", js.undefined)
+    inline def setDockerPrepUndefined: Self = StObject.set(x, "dockerPrep", js.undefined)
     
-    @scala.inline
-    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadStartTime(value: String): Self = StObject.set(x, "downloadStartTime", value.asInstanceOf[js.Any])
+    inline def setDownloadStartTime(value: String): Self = StObject.set(x, "downloadStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadStartTimeUndefined: Self = StObject.set(x, "downloadStartTime", js.undefined)
+    inline def setDownloadStartTimeUndefined: Self = StObject.set(x, "downloadStartTime", js.undefined)
     
-    @scala.inline
-    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
-    @scala.inline
-    def setExecStartTime(value: String): Self = StObject.set(x, "execStartTime", value.asInstanceOf[js.Any])
+    inline def setExecStartTime(value: String): Self = StObject.set(x, "execStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecStartTimeUndefined: Self = StObject.set(x, "execStartTime", js.undefined)
+    inline def setExecStartTimeUndefined: Self = StObject.set(x, "execStartTime", js.undefined)
     
-    @scala.inline
-    def setExecution(value: String): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: String): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
+    inline def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
     
-    @scala.inline
-    def setIsoPrepDone(value: String): Self = StObject.set(x, "isoPrepDone", value.asInstanceOf[js.Any])
+    inline def setIsoPrepDone(value: String): Self = StObject.set(x, "isoPrepDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsoPrepDoneUndefined: Self = StObject.set(x, "isoPrepDone", js.undefined)
+    inline def setIsoPrepDoneUndefined: Self = StObject.set(x, "isoPrepDone", js.undefined)
     
-    @scala.inline
-    def setOverall(value: String): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
+    inline def setOverall(value: String): Self = StObject.set(x, "overall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverallUndefined: Self = StObject.set(x, "overall", js.undefined)
+    inline def setOverallUndefined: Self = StObject.set(x, "overall", js.undefined)
     
-    @scala.inline
-    def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+    inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     
-    @scala.inline
-    def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadStartTime(value: String): Self = StObject.set(x, "uploadStartTime", value.asInstanceOf[js.Any])
+    inline def setUploadStartTime(value: String): Self = StObject.set(x, "uploadStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadStartTimeUndefined: Self = StObject.set(x, "uploadStartTime", js.undefined)
+    inline def setUploadStartTimeUndefined: Self = StObject.set(x, "uploadStartTime", js.undefined)
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
   }
 }

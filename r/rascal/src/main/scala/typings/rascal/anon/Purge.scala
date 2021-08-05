@@ -14,22 +14,17 @@ trait Purge extends StObject {
 }
 object Purge {
   
-  @scala.inline
-  def apply(assert: Boolean, options: Durable, purge: Boolean): Purge = {
+  inline def apply(assert: Boolean, options: Durable, purge: Boolean): Purge = {
     val __obj = js.Dynamic.literal(assert = assert.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], purge = purge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Purge]
   }
   
-  @scala.inline
-  implicit class PurgeMutableBuilder[Self <: Purge] (val x: Self) extends AnyVal {
+  extension [Self <: Purge](x: Self) {
     
-    @scala.inline
-    def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Durable): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Durable): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurge(value: Boolean): Self = StObject.set(x, "purge", value.asInstanceOf[js.Any])
+    inline def setPurge(value: Boolean): Self = StObject.set(x, "purge", value.asInstanceOf[js.Any])
   }
 }

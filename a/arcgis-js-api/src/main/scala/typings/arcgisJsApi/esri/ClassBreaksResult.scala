@@ -40,8 +40,7 @@ trait ClassBreaksResult
 }
 object ClassBreaksResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classBreakInfos: js.Array[ClassBreak],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -54,22 +53,16 @@ object ClassBreaksResult {
     __obj.asInstanceOf[ClassBreaksResult]
   }
   
-  @scala.inline
-  implicit class ClassBreaksResultMutableBuilder[Self <: ClassBreaksResult] (val x: Self) extends AnyVal {
+  extension [Self <: ClassBreaksResult](x: Self) {
     
-    @scala.inline
-    def setClassBreakInfos(value: js.Array[ClassBreak]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
+    inline def setClassBreakInfos(value: js.Array[ClassBreak]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassBreakInfosVarargs(value: ClassBreak*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
+    inline def setClassBreakInfosVarargs(value: ClassBreak*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationTotal(value: Double): Self = StObject.set(x, "normalizationTotal", value.asInstanceOf[js.Any])
+    inline def setNormalizationTotal(value: Double): Self = StObject.set(x, "normalizationTotal", value.asInstanceOf[js.Any])
   }
 }

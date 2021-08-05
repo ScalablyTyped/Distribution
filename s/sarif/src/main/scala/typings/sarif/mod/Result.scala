@@ -167,224 +167,152 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(message: Message): Result = {
+  inline def apply(message: Message): Result = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setAnalysisTarget(value: ArtifactLocation): Self = StObject.set(x, "analysisTarget", value.asInstanceOf[js.Any])
+    inline def setAnalysisTarget(value: ArtifactLocation): Self = StObject.set(x, "analysisTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisTargetUndefined: Self = StObject.set(x, "analysisTarget", js.undefined)
+    inline def setAnalysisTargetUndefined: Self = StObject.set(x, "analysisTarget", js.undefined)
     
-    @scala.inline
-    def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setBaselineState(value: baselineState): Self = StObject.set(x, "baselineState", value.asInstanceOf[js.Any])
+    inline def setBaselineState(value: baselineState): Self = StObject.set(x, "baselineState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineStateUndefined: Self = StObject.set(x, "baselineState", js.undefined)
+    inline def setBaselineStateUndefined: Self = StObject.set(x, "baselineState", js.undefined)
     
-    @scala.inline
-    def setCodeFlows(value: js.Array[CodeFlow]): Self = StObject.set(x, "codeFlows", value.asInstanceOf[js.Any])
+    inline def setCodeFlows(value: js.Array[CodeFlow]): Self = StObject.set(x, "codeFlows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeFlowsUndefined: Self = StObject.set(x, "codeFlows", js.undefined)
+    inline def setCodeFlowsUndefined: Self = StObject.set(x, "codeFlows", js.undefined)
     
-    @scala.inline
-    def setCodeFlowsVarargs(value: CodeFlow*): Self = StObject.set(x, "codeFlows", js.Array(value :_*))
+    inline def setCodeFlowsVarargs(value: CodeFlow*): Self = StObject.set(x, "codeFlows", js.Array(value :_*))
     
-    @scala.inline
-    def setCorrelationGuid(value: String): Self = StObject.set(x, "correlationGuid", value.asInstanceOf[js.Any])
+    inline def setCorrelationGuid(value: String): Self = StObject.set(x, "correlationGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationGuidUndefined: Self = StObject.set(x, "correlationGuid", js.undefined)
+    inline def setCorrelationGuidUndefined: Self = StObject.set(x, "correlationGuid", js.undefined)
     
-    @scala.inline
-    def setFingerprints(value: StringDictionary[String]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
+    inline def setFingerprints(value: StringDictionary[String]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintsUndefined: Self = StObject.set(x, "fingerprints", js.undefined)
+    inline def setFingerprintsUndefined: Self = StObject.set(x, "fingerprints", js.undefined)
     
-    @scala.inline
-    def setFixes(value: js.Array[Fix]): Self = StObject.set(x, "fixes", value.asInstanceOf[js.Any])
+    inline def setFixes(value: js.Array[Fix]): Self = StObject.set(x, "fixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixesUndefined: Self = StObject.set(x, "fixes", js.undefined)
+    inline def setFixesUndefined: Self = StObject.set(x, "fixes", js.undefined)
     
-    @scala.inline
-    def setFixesVarargs(value: Fix*): Self = StObject.set(x, "fixes", js.Array(value :_*))
+    inline def setFixesVarargs(value: Fix*): Self = StObject.set(x, "fixes", js.Array(value :_*))
     
-    @scala.inline
-    def setGraphTraversals(value: js.Array[GraphTraversal]): Self = StObject.set(x, "graphTraversals", value.asInstanceOf[js.Any])
+    inline def setGraphTraversals(value: js.Array[GraphTraversal]): Self = StObject.set(x, "graphTraversals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphTraversalsUndefined: Self = StObject.set(x, "graphTraversals", js.undefined)
+    inline def setGraphTraversalsUndefined: Self = StObject.set(x, "graphTraversals", js.undefined)
     
-    @scala.inline
-    def setGraphTraversalsVarargs(value: GraphTraversal*): Self = StObject.set(x, "graphTraversals", js.Array(value :_*))
+    inline def setGraphTraversalsVarargs(value: GraphTraversal*): Self = StObject.set(x, "graphTraversals", js.Array(value :_*))
     
-    @scala.inline
-    def setGraphs(value: js.Array[Graph]): Self = StObject.set(x, "graphs", value.asInstanceOf[js.Any])
+    inline def setGraphs(value: js.Array[Graph]): Self = StObject.set(x, "graphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
+    inline def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
     
-    @scala.inline
-    def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value :_*))
+    inline def setGraphsVarargs(value: Graph*): Self = StObject.set(x, "graphs", js.Array(value :_*))
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
-    @scala.inline
-    def setHostedViewerUri(value: String): Self = StObject.set(x, "hostedViewerUri", value.asInstanceOf[js.Any])
+    inline def setHostedViewerUri(value: String): Self = StObject.set(x, "hostedViewerUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedViewerUriUndefined: Self = StObject.set(x, "hostedViewerUri", js.undefined)
+    inline def setHostedViewerUriUndefined: Self = StObject.set(x, "hostedViewerUri", js.undefined)
     
-    @scala.inline
-    def setKind(value: kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLevel(value: level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceCount(value: Double): Self = StObject.set(x, "occurrenceCount", value.asInstanceOf[js.Any])
+    inline def setOccurrenceCount(value: Double): Self = StObject.set(x, "occurrenceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceCountUndefined: Self = StObject.set(x, "occurrenceCount", js.undefined)
+    inline def setOccurrenceCountUndefined: Self = StObject.set(x, "occurrenceCount", js.undefined)
     
-    @scala.inline
-    def setPartialFingerprints(value: StringDictionary[String]): Self = StObject.set(x, "partialFingerprints", value.asInstanceOf[js.Any])
+    inline def setPartialFingerprints(value: StringDictionary[String]): Self = StObject.set(x, "partialFingerprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialFingerprintsUndefined: Self = StObject.set(x, "partialFingerprints", js.undefined)
+    inline def setPartialFingerprintsUndefined: Self = StObject.set(x, "partialFingerprints", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setProvenance(value: ResultProvenance): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
+    inline def setProvenance(value: ResultProvenance): Self = StObject.set(x, "provenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
+    inline def setProvenanceUndefined: Self = StObject.set(x, "provenance", js.undefined)
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
-    @scala.inline
-    def setRelatedLocations(value: js.Array[Location]): Self = StObject.set(x, "relatedLocations", value.asInstanceOf[js.Any])
+    inline def setRelatedLocations(value: js.Array[Location]): Self = StObject.set(x, "relatedLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedLocationsUndefined: Self = StObject.set(x, "relatedLocations", js.undefined)
+    inline def setRelatedLocationsUndefined: Self = StObject.set(x, "relatedLocations", js.undefined)
     
-    @scala.inline
-    def setRelatedLocationsVarargs(value: Location*): Self = StObject.set(x, "relatedLocations", js.Array(value :_*))
+    inline def setRelatedLocationsVarargs(value: Location*): Self = StObject.set(x, "relatedLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setRule(value: ReportingDescriptorReference): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: ReportingDescriptorReference): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
+    inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
     
-    @scala.inline
-    def setRuleIndex(value: Double): Self = StObject.set(x, "ruleIndex", value.asInstanceOf[js.Any])
+    inline def setRuleIndex(value: Double): Self = StObject.set(x, "ruleIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleIndexUndefined: Self = StObject.set(x, "ruleIndex", js.undefined)
+    inline def setRuleIndexUndefined: Self = StObject.set(x, "ruleIndex", js.undefined)
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setStacks(value: js.Array[Stack]): Self = StObject.set(x, "stacks", value.asInstanceOf[js.Any])
+    inline def setStacks(value: js.Array[Stack]): Self = StObject.set(x, "stacks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStacksUndefined: Self = StObject.set(x, "stacks", js.undefined)
+    inline def setStacksUndefined: Self = StObject.set(x, "stacks", js.undefined)
     
-    @scala.inline
-    def setStacksVarargs(value: Stack*): Self = StObject.set(x, "stacks", js.Array(value :_*))
+    inline def setStacksVarargs(value: Stack*): Self = StObject.set(x, "stacks", js.Array(value :_*))
     
-    @scala.inline
-    def setSuppressions(value: js.Array[Suppression]): Self = StObject.set(x, "suppressions", value.asInstanceOf[js.Any])
+    inline def setSuppressions(value: js.Array[Suppression]): Self = StObject.set(x, "suppressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressionsUndefined: Self = StObject.set(x, "suppressions", js.undefined)
+    inline def setSuppressionsUndefined: Self = StObject.set(x, "suppressions", js.undefined)
     
-    @scala.inline
-    def setSuppressionsVarargs(value: Suppression*): Self = StObject.set(x, "suppressions", js.Array(value :_*))
+    inline def setSuppressionsVarargs(value: Suppression*): Self = StObject.set(x, "suppressions", js.Array(value :_*))
     
-    @scala.inline
-    def setTaxa(value: js.Array[ReportingDescriptorReference]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
+    inline def setTaxa(value: js.Array[ReportingDescriptorReference]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
+    inline def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
     
-    @scala.inline
-    def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value :_*))
+    inline def setTaxaVarargs(value: ReportingDescriptorReference*): Self = StObject.set(x, "taxa", js.Array(value :_*))
     
-    @scala.inline
-    def setWebRequest(value: WebRequest): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
+    inline def setWebRequest(value: WebRequest): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebRequestUndefined: Self = StObject.set(x, "webRequest", js.undefined)
+    inline def setWebRequestUndefined: Self = StObject.set(x, "webRequest", js.undefined)
     
-    @scala.inline
-    def setWebResponse(value: WebResponse): Self = StObject.set(x, "webResponse", value.asInstanceOf[js.Any])
+    inline def setWebResponse(value: WebResponse): Self = StObject.set(x, "webResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebResponseUndefined: Self = StObject.set(x, "webResponse", js.undefined)
+    inline def setWebResponseUndefined: Self = StObject.set(x, "webResponse", js.undefined)
     
-    @scala.inline
-    def setWorkItemUris(value: js.Array[String]): Self = StObject.set(x, "workItemUris", value.asInstanceOf[js.Any])
+    inline def setWorkItemUris(value: js.Array[String]): Self = StObject.set(x, "workItemUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemUrisUndefined: Self = StObject.set(x, "workItemUris", js.undefined)
+    inline def setWorkItemUrisUndefined: Self = StObject.set(x, "workItemUris", js.undefined)
     
-    @scala.inline
-    def setWorkItemUrisVarargs(value: String*): Self = StObject.set(x, "workItemUris", js.Array(value :_*))
+    inline def setWorkItemUrisVarargs(value: String*): Self = StObject.set(x, "workItemUris", js.Array(value :_*))
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -396,17 +324,13 @@ object Result {
   trait baselineState extends StObject
   object baselineState {
     
-    @scala.inline
-    def absent: typings.sarif.sarifStrings.absent = "absent".asInstanceOf[typings.sarif.sarifStrings.absent]
+    inline def absent: typings.sarif.sarifStrings.absent = "absent".asInstanceOf[typings.sarif.sarifStrings.absent]
     
-    @scala.inline
-    def `new`: typings.sarif.sarifStrings.`new` = "new".asInstanceOf[typings.sarif.sarifStrings.`new`]
+    inline def `new`: typings.sarif.sarifStrings.`new` = "new".asInstanceOf[typings.sarif.sarifStrings.`new`]
     
-    @scala.inline
-    def unchanged: typings.sarif.sarifStrings.unchanged = "unchanged".asInstanceOf[typings.sarif.sarifStrings.unchanged]
+    inline def unchanged: typings.sarif.sarifStrings.unchanged = "unchanged".asInstanceOf[typings.sarif.sarifStrings.unchanged]
     
-    @scala.inline
-    def updated: typings.sarif.sarifStrings.updated = "updated".asInstanceOf[typings.sarif.sarifStrings.updated]
+    inline def updated: typings.sarif.sarifStrings.updated = "updated".asInstanceOf[typings.sarif.sarifStrings.updated]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -420,23 +344,17 @@ object Result {
   trait kind extends StObject
   object kind {
     
-    @scala.inline
-    def fail: typings.sarif.sarifStrings.fail = "fail".asInstanceOf[typings.sarif.sarifStrings.fail]
+    inline def fail: typings.sarif.sarifStrings.fail = "fail".asInstanceOf[typings.sarif.sarifStrings.fail]
     
-    @scala.inline
-    def informational: typings.sarif.sarifStrings.informational = "informational".asInstanceOf[typings.sarif.sarifStrings.informational]
+    inline def informational: typings.sarif.sarifStrings.informational = "informational".asInstanceOf[typings.sarif.sarifStrings.informational]
     
-    @scala.inline
-    def notApplicable: typings.sarif.sarifStrings.notApplicable = "notApplicable".asInstanceOf[typings.sarif.sarifStrings.notApplicable]
+    inline def notApplicable: typings.sarif.sarifStrings.notApplicable = "notApplicable".asInstanceOf[typings.sarif.sarifStrings.notApplicable]
     
-    @scala.inline
-    def open: typings.sarif.sarifStrings.open = "open".asInstanceOf[typings.sarif.sarifStrings.open]
+    inline def open: typings.sarif.sarifStrings.open = "open".asInstanceOf[typings.sarif.sarifStrings.open]
     
-    @scala.inline
-    def pass: typings.sarif.sarifStrings.pass = "pass".asInstanceOf[typings.sarif.sarifStrings.pass]
+    inline def pass: typings.sarif.sarifStrings.pass = "pass".asInstanceOf[typings.sarif.sarifStrings.pass]
     
-    @scala.inline
-    def review: typings.sarif.sarifStrings.review = "review".asInstanceOf[typings.sarif.sarifStrings.review]
+    inline def review: typings.sarif.sarifStrings.review = "review".asInstanceOf[typings.sarif.sarifStrings.review]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -448,16 +366,12 @@ object Result {
   trait level extends StObject
   object level {
     
-    @scala.inline
-    def error: typings.sarif.sarifStrings.error = "error".asInstanceOf[typings.sarif.sarifStrings.error]
+    inline def error: typings.sarif.sarifStrings.error = "error".asInstanceOf[typings.sarif.sarifStrings.error]
     
-    @scala.inline
-    def none: typings.sarif.sarifStrings.none = "none".asInstanceOf[typings.sarif.sarifStrings.none]
+    inline def none: typings.sarif.sarifStrings.none = "none".asInstanceOf[typings.sarif.sarifStrings.none]
     
-    @scala.inline
-    def note: typings.sarif.sarifStrings.note = "note".asInstanceOf[typings.sarif.sarifStrings.note]
+    inline def note: typings.sarif.sarifStrings.note = "note".asInstanceOf[typings.sarif.sarifStrings.note]
     
-    @scala.inline
-    def warning: typings.sarif.sarifStrings.warning = "warning".asInstanceOf[typings.sarif.sarifStrings.warning]
+    inline def warning: typings.sarif.sarifStrings.warning = "warning".asInstanceOf[typings.sarif.sarifStrings.warning]
   }
 }

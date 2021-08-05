@@ -28,37 +28,27 @@ trait Parameter extends StObject {
 }
 object Parameter {
   
-  @scala.inline
-  def apply(): Parameter = {
+  inline def apply(): Parameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parameter]
   }
   
-  @scala.inline
-  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+  extension [Self <: Parameter](x: Self) {
     
-    @scala.inline
-    def setParameterKey(value: ParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
+    inline def setParameterKey(value: ParameterKey): Self = StObject.set(x, "ParameterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterKeyUndefined: Self = StObject.set(x, "ParameterKey", js.undefined)
+    inline def setParameterKeyUndefined: Self = StObject.set(x, "ParameterKey", js.undefined)
     
-    @scala.inline
-    def setParameterValue(value: ParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
+    inline def setParameterValue(value: ParameterValue): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValueUndefined: Self = StObject.set(x, "ParameterValue", js.undefined)
+    inline def setParameterValueUndefined: Self = StObject.set(x, "ParameterValue", js.undefined)
     
-    @scala.inline
-    def setResolvedValue(value: ParameterValue): Self = StObject.set(x, "ResolvedValue", value.asInstanceOf[js.Any])
+    inline def setResolvedValue(value: ParameterValue): Self = StObject.set(x, "ResolvedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedValueUndefined: Self = StObject.set(x, "ResolvedValue", js.undefined)
+    inline def setResolvedValueUndefined: Self = StObject.set(x, "ResolvedValue", js.undefined)
     
-    @scala.inline
-    def setUsePreviousValue(value: UsePreviousValue): Self = StObject.set(x, "UsePreviousValue", value.asInstanceOf[js.Any])
+    inline def setUsePreviousValue(value: UsePreviousValue): Self = StObject.set(x, "UsePreviousValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePreviousValueUndefined: Self = StObject.set(x, "UsePreviousValue", js.undefined)
+    inline def setUsePreviousValueUndefined: Self = StObject.set(x, "UsePreviousValue", js.undefined)
   }
 }

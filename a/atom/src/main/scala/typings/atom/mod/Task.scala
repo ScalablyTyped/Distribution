@@ -59,6 +59,5 @@ object Task {
   // the ES6 spec. Maybe when they rewrite it in JavaScript this will change.
   /** A helper method to easily launch and run a task once. */
   // tslint:disable-next-line:no-any
-  @scala.inline
-  def once(taskPath: String, args: js.Any*): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(taskPath.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Task]
+  inline def once(taskPath: String, args: js.Any*): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(taskPath.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Task]
 }

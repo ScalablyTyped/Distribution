@@ -27,25 +27,20 @@ trait EventConfig extends StObject {
 }
 object EventConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventType: keydown | keyup | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup
   ): EventConfig = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventConfig]
   }
   
-  @scala.inline
-  implicit class EventConfigMutableBuilder[Self <: EventConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EventConfig](x: Self) {
     
-    @scala.inline
-    def setEventProps(value: js.Object): Self = StObject.set(x, "eventProps", value.asInstanceOf[js.Any])
+    inline def setEventProps(value: js.Object): Self = StObject.set(x, "eventProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPropsUndefined: Self = StObject.set(x, "eventProps", js.undefined)
+    inline def setEventPropsUndefined: Self = StObject.set(x, "eventProps", js.undefined)
     
-    @scala.inline
-    def setEventType(
+    inline def setEventType(
       value: keydown | keyup | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup
     ): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
   }

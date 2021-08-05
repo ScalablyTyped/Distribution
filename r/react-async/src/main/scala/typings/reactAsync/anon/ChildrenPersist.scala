@@ -21,36 +21,28 @@ trait ChildrenPersist[T /* <: js.Object */] extends StObject {
 }
 object ChildrenPersist {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](
+  inline def apply[T /* <: js.Object */](
     state: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]])
   ): ChildrenPersist[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenPersist[T]]
   }
   
-  @scala.inline
-  implicit class ChildrenPersistMutableBuilder[Self <: ChildrenPersist[?], T /* <: js.Object */] (val x: Self & ChildrenPersist[T]) extends AnyVal {
+  extension [Self <: ChildrenPersist[?], T /* <: js.Object */](x: Self & ChildrenPersist[T]) {
     
-    @scala.inline
-    def setChildren(value: RejectedChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: RejectedChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenFunction2(
+    inline def setChildrenFunction2(
       value: (/* error */ typings.std.Error, /* state */ AsyncRejected[T, AbstractState[T]]) => ReactNode
     ): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+    inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
-    @scala.inline
-    def setState(
+    inline def setState(
       value: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]])
     ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

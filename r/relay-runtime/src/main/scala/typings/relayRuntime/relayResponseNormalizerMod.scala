@@ -16,8 +16,7 @@ object relayResponseNormalizerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalize(
+  inline def normalize(
     recordSource: MutableRecordSource,
     selector: NormalizationSelector,
     response: PayloadData,
@@ -38,8 +37,7 @@ object relayResponseNormalizerMod {
   }
   object NormalizationOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDataID: (/* fieldValue */ StringDictionary[js.Any], /* typeName */ String) => js.Any,
       request: RequestDescriptor
     ): NormalizationOptions = {
@@ -47,23 +45,17 @@ object relayResponseNormalizerMod {
       __obj.asInstanceOf[NormalizationOptions]
     }
     
-    @scala.inline
-    implicit class NormalizationOptionsMutableBuilder[Self <: NormalizationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizationOptions](x: Self) {
       
-      @scala.inline
-      def setGetDataID(value: (/* fieldValue */ StringDictionary[js.Any], /* typeName */ String) => js.Any): Self = StObject.set(x, "getDataID", js.Any.fromFunction2(value))
+      inline def setGetDataID(value: (/* fieldValue */ StringDictionary[js.Any], /* typeName */ String) => js.Any): Self = StObject.set(x, "getDataID", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setRequest(value: RequestDescriptor): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: RequestDescriptor): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
 }

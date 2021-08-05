@@ -10,16 +10,13 @@ trait OidString extends StObject {
 }
 object OidString {
   
-  @scala.inline
-  def apply(oid: String): OidString = {
+  inline def apply(oid: String): OidString = {
     val __obj = js.Dynamic.literal(oid = oid.asInstanceOf[js.Any])
     __obj.asInstanceOf[OidString]
   }
   
-  @scala.inline
-  implicit class OidStringMutableBuilder[Self <: OidString] (val x: Self) extends AnyVal {
+  extension [Self <: OidString](x: Self) {
     
-    @scala.inline
-    def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+    inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
   }
 }

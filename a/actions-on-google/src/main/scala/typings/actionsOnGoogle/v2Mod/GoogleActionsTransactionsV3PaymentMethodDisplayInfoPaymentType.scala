@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsTransactionsV3PaymentMethodDisplayInfoPaymentType extends StObject
 object GoogleActionsTransactionsV3PaymentMethodDisplayInfoPaymentType {
   
-  @scala.inline
-  def BANK: typings.actionsOnGoogle.actionsOnGoogleStrings.BANK = "BANK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.BANK]
+  inline def BANK: typings.actionsOnGoogle.actionsOnGoogleStrings.BANK = "BANK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.BANK]
   
-  @scala.inline
-  def CASH: typings.actionsOnGoogle.actionsOnGoogleStrings.CASH = "CASH".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CASH]
+  inline def CASH: typings.actionsOnGoogle.actionsOnGoogleStrings.CASH = "CASH".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CASH]
   
-  @scala.inline
-  def GIFT_CARD: typings.actionsOnGoogle.actionsOnGoogleStrings.GIFT_CARD = "GIFT_CARD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GIFT_CARD]
+  inline def GIFT_CARD: typings.actionsOnGoogle.actionsOnGoogleStrings.GIFT_CARD = "GIFT_CARD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GIFT_CARD]
   
-  @scala.inline
-  def LOYALTY_PROGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.LOYALTY_PROGRAM = "LOYALTY_PROGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.LOYALTY_PROGRAM]
+  inline def LOYALTY_PROGRAM: typings.actionsOnGoogle.actionsOnGoogleStrings.LOYALTY_PROGRAM = "LOYALTY_PROGRAM".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.LOYALTY_PROGRAM]
   
-  @scala.inline
-  def PAYMENT_CARD: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_CARD = "PAYMENT_CARD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_CARD]
+  inline def PAYMENT_CARD: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_CARD = "PAYMENT_CARD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_CARD]
   
-  @scala.inline
-  def PAYMENT_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_TYPE_UNSPECIFIED = "PAYMENT_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_TYPE_UNSPECIFIED]
+  inline def PAYMENT_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_TYPE_UNSPECIFIED = "PAYMENT_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PAYMENT_TYPE_UNSPECIFIED]
   
-  @scala.inline
-  def WALLET: typings.actionsOnGoogle.actionsOnGoogleStrings.WALLET = "WALLET".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.WALLET]
+  inline def WALLET: typings.actionsOnGoogle.actionsOnGoogleStrings.WALLET = "WALLET".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.WALLET]
 }

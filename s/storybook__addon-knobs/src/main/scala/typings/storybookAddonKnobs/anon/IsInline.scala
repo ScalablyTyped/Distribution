@@ -17,8 +17,7 @@ trait IsInline extends StObject {
 }
 object IsInline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isInline: Validator[Boolean],
     knob: Validator[CheckboxesTypeKnob],
     onChange: Validator[js.Function1[/* value */ CheckboxesTypeKnobValue, CheckboxesTypeKnobValue]]
@@ -27,16 +26,12 @@ object IsInline {
     __obj.asInstanceOf[IsInline]
   }
   
-  @scala.inline
-  implicit class IsInlineMutableBuilder[Self <: IsInline] (val x: Self) extends AnyVal {
+  extension [Self <: IsInline](x: Self) {
     
-    @scala.inline
-    def setIsInline(value: Validator[Boolean]): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+    inline def setIsInline(value: Validator[Boolean]): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnob(value: Validator[CheckboxesTypeKnob]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[CheckboxesTypeKnob]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: Validator[js.Function1[/* value */ CheckboxesTypeKnobValue, CheckboxesTypeKnobValue]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Validator[js.Function1[/* value */ CheckboxesTypeKnobValue, CheckboxesTypeKnobValue]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
   }
 }

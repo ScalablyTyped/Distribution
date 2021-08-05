@@ -20,8 +20,7 @@ object textMod {
        with TextConfig
   object TextProps {
     
-    @scala.inline
-    def apply(name: String, onChange: js.UndefOr[TextValue] => js.UndefOr[TextValue] | Unit): TextProps = {
+    inline def apply(name: String, onChange: js.UndefOr[TextValue] => js.UndefOr[TextValue] | Unit): TextProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[TextProps]
     }

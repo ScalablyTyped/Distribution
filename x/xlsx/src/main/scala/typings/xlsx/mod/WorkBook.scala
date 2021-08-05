@@ -28,46 +28,33 @@ trait WorkBook extends StObject {
 }
 object WorkBook {
   
-  @scala.inline
-  def apply(SheetNames: js.Array[String], Sheets: StringDictionary[WorkSheet]): WorkBook = {
+  inline def apply(SheetNames: js.Array[String], Sheets: StringDictionary[WorkSheet]): WorkBook = {
     val __obj = js.Dynamic.literal(SheetNames = SheetNames.asInstanceOf[js.Any], Sheets = Sheets.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkBook]
   }
   
-  @scala.inline
-  implicit class WorkBookMutableBuilder[Self <: WorkBook] (val x: Self) extends AnyVal {
+  extension [Self <: WorkBook](x: Self) {
     
-    @scala.inline
-    def setCustprops(value: js.Object): Self = StObject.set(x, "Custprops", value.asInstanceOf[js.Any])
+    inline def setCustprops(value: js.Object): Self = StObject.set(x, "Custprops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustpropsUndefined: Self = StObject.set(x, "Custprops", js.undefined)
+    inline def setCustpropsUndefined: Self = StObject.set(x, "Custprops", js.undefined)
     
-    @scala.inline
-    def setProps(value: FullProperties): Self = StObject.set(x, "Props", value.asInstanceOf[js.Any])
+    inline def setProps(value: FullProperties): Self = StObject.set(x, "Props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "Props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "Props", js.undefined)
     
-    @scala.inline
-    def setSheetNames(value: js.Array[String]): Self = StObject.set(x, "SheetNames", value.asInstanceOf[js.Any])
+    inline def setSheetNames(value: js.Array[String]): Self = StObject.set(x, "SheetNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetNamesVarargs(value: String*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
+    inline def setSheetNamesVarargs(value: String*): Self = StObject.set(x, "SheetNames", js.Array(value :_*))
     
-    @scala.inline
-    def setSheets(value: StringDictionary[WorkSheet]): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
+    inline def setSheets(value: StringDictionary[WorkSheet]): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVbaraw(value: js.Any): Self = StObject.set(x, "vbaraw", value.asInstanceOf[js.Any])
+    inline def setVbaraw(value: js.Any): Self = StObject.set(x, "vbaraw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVbarawUndefined: Self = StObject.set(x, "vbaraw", js.undefined)
+    inline def setVbarawUndefined: Self = StObject.set(x, "vbaraw", js.undefined)
     
-    @scala.inline
-    def setWorkbook(value: WBProps): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: WBProps): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkbookUndefined: Self = StObject.set(x, "Workbook", js.undefined)
+    inline def setWorkbookUndefined: Self = StObject.set(x, "Workbook", js.undefined)
   }
 }

@@ -52,49 +52,35 @@ trait InstanceGroupManagerUpdatePolicy extends StObject {
 }
 object InstanceGroupManagerUpdatePolicy {
   
-  @scala.inline
-  def apply(): InstanceGroupManagerUpdatePolicy = {
+  inline def apply(): InstanceGroupManagerUpdatePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagerUpdatePolicy]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagerUpdatePolicyMutableBuilder[Self <: InstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagerUpdatePolicy](x: Self) {
     
-    @scala.inline
-    def setInstanceRedistributionType(value: String): Self = StObject.set(x, "instanceRedistributionType", value.asInstanceOf[js.Any])
+    inline def setInstanceRedistributionType(value: String): Self = StObject.set(x, "instanceRedistributionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRedistributionTypeUndefined: Self = StObject.set(x, "instanceRedistributionType", js.undefined)
+    inline def setInstanceRedistributionTypeUndefined: Self = StObject.set(x, "instanceRedistributionType", js.undefined)
     
-    @scala.inline
-    def setMaxSurge(value: FixedOrPercent): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
+    inline def setMaxSurge(value: FixedOrPercent): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
+    inline def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
     
-    @scala.inline
-    def setMaxUnavailable(value: FixedOrPercent): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+    inline def setMaxUnavailable(value: FixedOrPercent): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
+    inline def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
     
-    @scala.inline
-    def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
+    inline def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
+    inline def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
     
-    @scala.inline
-    def setReplacementMethod(value: String): Self = StObject.set(x, "replacementMethod", value.asInstanceOf[js.Any])
+    inline def setReplacementMethod(value: String): Self = StObject.set(x, "replacementMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementMethodUndefined: Self = StObject.set(x, "replacementMethod", js.undefined)
+    inline def setReplacementMethodUndefined: Self = StObject.set(x, "replacementMethod", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

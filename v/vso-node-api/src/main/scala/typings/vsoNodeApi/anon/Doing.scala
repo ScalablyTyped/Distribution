@@ -14,22 +14,17 @@ trait Doing extends StObject {
 }
 object Doing {
   
-  @scala.inline
-  def apply(doing: scala.Double, done: scala.Double, followed: scala.Double): Doing = {
+  inline def apply(doing: scala.Double, done: scala.Double, followed: scala.Double): Doing = {
     val __obj = js.Dynamic.literal(doing = doing.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], followed = followed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Doing]
   }
   
-  @scala.inline
-  implicit class DoingMutableBuilder[Self <: Doing] (val x: Self) extends AnyVal {
+  extension [Self <: Doing](x: Self) {
     
-    @scala.inline
-    def setDoing(value: scala.Double): Self = StObject.set(x, "doing", value.asInstanceOf[js.Any])
+    inline def setDoing(value: scala.Double): Self = StObject.set(x, "doing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDone(value: scala.Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: scala.Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowed(value: scala.Double): Self = StObject.set(x, "followed", value.asInstanceOf[js.Any])
+    inline def setFollowed(value: scala.Double): Self = StObject.set(x, "followed", value.asInstanceOf[js.Any])
   }
 }

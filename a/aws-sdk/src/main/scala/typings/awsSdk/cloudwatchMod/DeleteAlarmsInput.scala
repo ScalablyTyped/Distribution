@@ -13,19 +13,15 @@ trait DeleteAlarmsInput extends StObject {
 }
 object DeleteAlarmsInput {
   
-  @scala.inline
-  def apply(AlarmNames: AlarmNames): DeleteAlarmsInput = {
+  inline def apply(AlarmNames: AlarmNames): DeleteAlarmsInput = {
     val __obj = js.Dynamic.literal(AlarmNames = AlarmNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAlarmsInput]
   }
   
-  @scala.inline
-  implicit class DeleteAlarmsInputMutableBuilder[Self <: DeleteAlarmsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAlarmsInput](x: Self) {
     
-    @scala.inline
-    def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
+    inline def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
+    inline def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
   }
 }

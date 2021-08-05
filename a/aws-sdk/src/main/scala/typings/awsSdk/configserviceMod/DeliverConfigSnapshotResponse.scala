@@ -13,19 +13,15 @@ trait DeliverConfigSnapshotResponse extends StObject {
 }
 object DeliverConfigSnapshotResponse {
   
-  @scala.inline
-  def apply(): DeliverConfigSnapshotResponse = {
+  inline def apply(): DeliverConfigSnapshotResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeliverConfigSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class DeliverConfigSnapshotResponseMutableBuilder[Self <: DeliverConfigSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeliverConfigSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setConfigSnapshotId(value: String): Self = StObject.set(x, "configSnapshotId", value.asInstanceOf[js.Any])
+    inline def setConfigSnapshotId(value: String): Self = StObject.set(x, "configSnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigSnapshotIdUndefined: Self = StObject.set(x, "configSnapshotId", js.undefined)
+    inline def setConfigSnapshotIdUndefined: Self = StObject.set(x, "configSnapshotId", js.undefined)
   }
 }

@@ -19,43 +19,31 @@ trait ICellContents extends StObject {
 }
 object ICellContents {
   
-  @scala.inline
-  def apply(cell_type: CellType, source: String | js.Array[String]): ICellContents = {
+  inline def apply(cell_type: CellType, source: String | js.Array[String]): ICellContents = {
     val __obj = js.Dynamic.literal(cell_type = cell_type.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICellContents]
   }
   
-  @scala.inline
-  implicit class ICellContentsMutableBuilder[Self <: ICellContents] (val x: Self) extends AnyVal {
+  extension [Self <: ICellContents](x: Self) {
     
-    @scala.inline
-    def setCell_type(value: CellType): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
+    inline def setCell_type(value: CellType): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
+    inline def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecution_countUndefined: Self = StObject.set(x, "execution_count", js.undefined)
+    inline def setExecution_countUndefined: Self = StObject.set(x, "execution_count", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Azdatacellguid): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Azdatacellguid): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: js.Array[ICellOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: js.Array[ICellOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: ICellOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: ICellOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

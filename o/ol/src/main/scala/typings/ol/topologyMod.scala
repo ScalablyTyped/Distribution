@@ -10,6 +10,5 @@ object topologyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def lineStringIsClosed(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringIsClosed")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lineStringIsClosed(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringIsClosed")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

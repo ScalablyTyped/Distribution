@@ -13,19 +13,15 @@ trait NodeFrameworkAttributes extends StObject {
 }
 object NodeFrameworkAttributes {
   
-  @scala.inline
-  def apply(): NodeFrameworkAttributes = {
+  inline def apply(): NodeFrameworkAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeFrameworkAttributes]
   }
   
-  @scala.inline
-  implicit class NodeFrameworkAttributesMutableBuilder[Self <: NodeFrameworkAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: NodeFrameworkAttributes](x: Self) {
     
-    @scala.inline
-    def setFabric(value: NodeFabricAttributes): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
+    inline def setFabric(value: NodeFabricAttributes): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
+    inline def setFabricUndefined: Self = StObject.set(x, "Fabric", js.undefined)
   }
 }

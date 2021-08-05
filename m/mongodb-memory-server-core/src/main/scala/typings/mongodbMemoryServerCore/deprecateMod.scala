@@ -10,6 +10,5 @@ object deprecateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deprecate(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecate")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deprecate(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecate")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

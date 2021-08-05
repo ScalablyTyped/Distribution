@@ -13,16 +13,13 @@ trait ImageLoadEventData
 }
 object ImageLoadEventData {
   
-  @scala.inline
-  def apply(source: Url): ImageLoadEventData = {
+  inline def apply(source: Url): ImageLoadEventData = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLoadEventData]
   }
   
-  @scala.inline
-  implicit class ImageLoadEventDataMutableBuilder[Self <: ImageLoadEventData] (val x: Self) extends AnyVal {
+  extension [Self <: ImageLoadEventData](x: Self) {
     
-    @scala.inline
-    def setSource(value: Url): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Url): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

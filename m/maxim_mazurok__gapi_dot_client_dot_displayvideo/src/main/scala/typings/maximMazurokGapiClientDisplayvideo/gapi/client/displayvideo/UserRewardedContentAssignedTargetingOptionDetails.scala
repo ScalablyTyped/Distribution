@@ -14,25 +14,19 @@ trait UserRewardedContentAssignedTargetingOptionDetails extends StObject {
 }
 object UserRewardedContentAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): UserRewardedContentAssignedTargetingOptionDetails = {
+  inline def apply(): UserRewardedContentAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserRewardedContentAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class UserRewardedContentAssignedTargetingOptionDetailsMutableBuilder[Self <: UserRewardedContentAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: UserRewardedContentAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
     
-    @scala.inline
-    def setUserRewardedContent(value: String): Self = StObject.set(x, "userRewardedContent", value.asInstanceOf[js.Any])
+    inline def setUserRewardedContent(value: String): Self = StObject.set(x, "userRewardedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRewardedContentUndefined: Self = StObject.set(x, "userRewardedContent", js.undefined)
+    inline def setUserRewardedContentUndefined: Self = StObject.set(x, "userRewardedContent", js.undefined)
   }
 }

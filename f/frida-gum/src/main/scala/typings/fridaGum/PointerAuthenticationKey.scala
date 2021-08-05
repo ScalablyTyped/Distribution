@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointerAuthenticationKey extends StObject
 object PointerAuthenticationKey {
   
-  @scala.inline
-  def da: typings.fridaGum.fridaGumStrings.da = "da".asInstanceOf[typings.fridaGum.fridaGumStrings.da]
+  inline def da: typings.fridaGum.fridaGumStrings.da = "da".asInstanceOf[typings.fridaGum.fridaGumStrings.da]
   
-  @scala.inline
-  def db: typings.fridaGum.fridaGumStrings.db = "db".asInstanceOf[typings.fridaGum.fridaGumStrings.db]
+  inline def db: typings.fridaGum.fridaGumStrings.db = "db".asInstanceOf[typings.fridaGum.fridaGumStrings.db]
   
-  @scala.inline
-  def ia: typings.fridaGum.fridaGumStrings.ia = "ia".asInstanceOf[typings.fridaGum.fridaGumStrings.ia]
+  inline def ia: typings.fridaGum.fridaGumStrings.ia = "ia".asInstanceOf[typings.fridaGum.fridaGumStrings.ia]
   
-  @scala.inline
-  def ib: typings.fridaGum.fridaGumStrings.ib = "ib".asInstanceOf[typings.fridaGum.fridaGumStrings.ib]
+  inline def ib: typings.fridaGum.fridaGumStrings.ib = "ib".asInstanceOf[typings.fridaGum.fridaGumStrings.ib]
 }

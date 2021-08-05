@@ -33,8 +33,7 @@ trait CreateConnectorProfileRequest extends StObject {
 }
 object CreateConnectorProfileRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionMode: ConnectionMode,
     connectorProfileConfig: ConnectorProfileConfig,
     connectorProfileName: ConnectorProfileName,
@@ -44,25 +43,18 @@ object CreateConnectorProfileRequest {
     __obj.asInstanceOf[CreateConnectorProfileRequest]
   }
   
-  @scala.inline
-  implicit class CreateConnectorProfileRequestMutableBuilder[Self <: CreateConnectorProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnectorProfileRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
+    inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "connectionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileConfig(value: ConnectorProfileConfig): Self = StObject.set(x, "connectorProfileConfig", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileConfig(value: ConnectorProfileConfig): Self = StObject.set(x, "connectorProfileConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsArn(value: KMSArn): Self = StObject.set(x, "kmsArn", value.asInstanceOf[js.Any])
+    inline def setKmsArn(value: KMSArn): Self = StObject.set(x, "kmsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsArnUndefined: Self = StObject.set(x, "kmsArn", js.undefined)
+    inline def setKmsArnUndefined: Self = StObject.set(x, "kmsArn", js.undefined)
   }
 }

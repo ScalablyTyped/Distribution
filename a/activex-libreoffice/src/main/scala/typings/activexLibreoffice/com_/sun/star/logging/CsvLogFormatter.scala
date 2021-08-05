@@ -23,8 +23,7 @@ trait CsvLogFormatter
 }
 object CsvLogFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columnnames: SafeArray[String],
     Head: String,
     LogEventNo: Boolean,
@@ -42,10 +41,8 @@ object CsvLogFormatter {
     __obj.asInstanceOf[CsvLogFormatter]
   }
   
-  @scala.inline
-  implicit class CsvLogFormatterMutableBuilder[Self <: CsvLogFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: CsvLogFormatter](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }
 }

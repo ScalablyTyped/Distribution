@@ -16,8 +16,7 @@ trait XTextEditField
 }
 object XTextEditField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -27,10 +26,8 @@ object XTextEditField {
     __obj.asInstanceOf[XTextEditField]
   }
   
-  @scala.inline
-  implicit class XTextEditFieldMutableBuilder[Self <: XTextEditField] (val x: Self) extends AnyVal {
+  extension [Self <: XTextEditField](x: Self) {
     
-    @scala.inline
-    def setSetEchoChar(value: String => Unit): Self = StObject.set(x, "setEchoChar", js.Any.fromFunction1(value))
+    inline def setSetEchoChar(value: String => Unit): Self = StObject.set(x, "setEchoChar", js.Any.fromFunction1(value))
   }
 }

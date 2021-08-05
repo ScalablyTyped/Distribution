@@ -18,25 +18,19 @@ trait MinimumEngineVersionPerAllowedValue extends StObject {
 }
 object MinimumEngineVersionPerAllowedValue {
   
-  @scala.inline
-  def apply(): MinimumEngineVersionPerAllowedValue = {
+  inline def apply(): MinimumEngineVersionPerAllowedValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinimumEngineVersionPerAllowedValue]
   }
   
-  @scala.inline
-  implicit class MinimumEngineVersionPerAllowedValueMutableBuilder[Self <: MinimumEngineVersionPerAllowedValue] (val x: Self) extends AnyVal {
+  extension [Self <: MinimumEngineVersionPerAllowedValue](x: Self) {
     
-    @scala.inline
-    def setAllowedValue(value: String): Self = StObject.set(x, "AllowedValue", value.asInstanceOf[js.Any])
+    inline def setAllowedValue(value: String): Self = StObject.set(x, "AllowedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValueUndefined: Self = StObject.set(x, "AllowedValue", js.undefined)
+    inline def setAllowedValueUndefined: Self = StObject.set(x, "AllowedValue", js.undefined)
     
-    @scala.inline
-    def setMinimumEngineVersion(value: String): Self = StObject.set(x, "MinimumEngineVersion", value.asInstanceOf[js.Any])
+    inline def setMinimumEngineVersion(value: String): Self = StObject.set(x, "MinimumEngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumEngineVersionUndefined: Self = StObject.set(x, "MinimumEngineVersion", js.undefined)
+    inline def setMinimumEngineVersionUndefined: Self = StObject.set(x, "MinimumEngineVersion", js.undefined)
   }
 }

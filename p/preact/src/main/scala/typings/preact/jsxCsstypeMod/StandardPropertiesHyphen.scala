@@ -10,8 +10,7 @@ trait StandardPropertiesHyphen[TLength]
      with StandardShorthandPropertiesHyphen[TLength]
 object StandardPropertiesHyphen {
   
-  @scala.inline
-  def apply[TLength](): StandardPropertiesHyphen[TLength] = {
+  inline def apply[TLength](): StandardPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StandardPropertiesHyphen[TLength]]
   }

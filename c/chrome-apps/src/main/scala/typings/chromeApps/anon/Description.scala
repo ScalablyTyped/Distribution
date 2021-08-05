@@ -21,8 +21,7 @@ trait Description extends StObject {
 }
 object Description {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     state: ToStringLiteral[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus */ js.Any, 
@@ -37,14 +36,11 @@ object Description {
     __obj.asInstanceOf[Description]
   }
   
-  @scala.inline
-  implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+  extension [Self <: Description](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(
+    inline def setState(
       value: ToStringLiteral[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ServiceStatus */ js.Any, 
           /* keyof typeof ServiceStatus */ String, 

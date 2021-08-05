@@ -15,19 +15,15 @@ trait IdentifiableLanguage extends StObject {
 }
 object IdentifiableLanguage {
   
-  @scala.inline
-  def apply(language: String, name: String): IdentifiableLanguage = {
+  inline def apply(language: String, name: String): IdentifiableLanguage = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifiableLanguage]
   }
   
-  @scala.inline
-  implicit class IdentifiableLanguageMutableBuilder[Self <: IdentifiableLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: IdentifiableLanguage](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

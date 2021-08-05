@@ -42,46 +42,33 @@ trait ListData extends StObject {
 }
 object ListData {
   
-  @scala.inline
-  def apply(): ListData = {
+  inline def apply(): ListData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListData]
   }
   
-  @scala.inline
-  implicit class ListDataMutableBuilder[Self <: ListData] (val x: Self) extends AnyVal {
+  extension [Self <: ListData](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLevelExistences(value: js.Array[Boolean]): Self = StObject.set(x, "levelExistences", value.asInstanceOf[js.Any])
+    inline def setLevelExistences(value: js.Array[Boolean]): Self = StObject.set(x, "levelExistences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelExistencesUndefined: Self = StObject.set(x, "levelExistences", js.undefined)
+    inline def setLevelExistencesUndefined: Self = StObject.set(x, "levelExistences", js.undefined)
     
-    @scala.inline
-    def setLevelExistencesVarargs(value: Boolean*): Self = StObject.set(x, "levelExistences", js.Array(value :_*))
+    inline def setLevelExistencesVarargs(value: Boolean*): Self = StObject.set(x, "levelExistences", js.Array(value :_*))
     
-    @scala.inline
-    def setLevelTypes(value: js.Array[ListLevelType]): Self = StObject.set(x, "levelTypes", value.asInstanceOf[js.Any])
+    inline def setLevelTypes(value: js.Array[ListLevelType]): Self = StObject.set(x, "levelTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelTypesUndefined: Self = StObject.set(x, "levelTypes", js.undefined)
+    inline def setLevelTypesUndefined: Self = StObject.set(x, "levelTypes", js.undefined)
     
-    @scala.inline
-    def setLevelTypesVarargs(value: ListLevelType*): Self = StObject.set(x, "levelTypes", js.Array(value :_*))
+    inline def setLevelTypesVarargs(value: ListLevelType*): Self = StObject.set(x, "levelTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+    inline def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
+    inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    @scala.inline
-    def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
   }
 }

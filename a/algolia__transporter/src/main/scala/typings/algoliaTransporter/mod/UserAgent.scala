@@ -20,19 +20,15 @@ trait UserAgent extends StObject {
 }
 object UserAgent {
   
-  @scala.inline
-  def apply(add: UserAgentOptions => UserAgent, value: String): UserAgent = {
+  inline def apply(add: UserAgentOptions => UserAgent, value: String): UserAgent = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgent]
   }
   
-  @scala.inline
-  implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgent](x: Self) {
     
-    @scala.inline
-    def setAdd(value: UserAgentOptions => UserAgent): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: UserAgentOptions => UserAgent): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

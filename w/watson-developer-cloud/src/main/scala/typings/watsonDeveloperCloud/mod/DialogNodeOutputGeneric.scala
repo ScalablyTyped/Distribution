@@ -45,88 +45,61 @@ trait DialogNodeOutputGeneric extends StObject {
 }
 object DialogNodeOutputGeneric {
   
-  @scala.inline
-  def apply(response_type: String): DialogNodeOutputGeneric = {
+  inline def apply(response_type: String): DialogNodeOutputGeneric = {
     val __obj = js.Dynamic.literal(response_type = response_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeOutputGeneric]
   }
   
-  @scala.inline
-  implicit class DialogNodeOutputGenericMutableBuilder[Self <: DialogNodeOutputGeneric] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodeOutputGeneric](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setMessage_to_human_agent(value: String): Self = StObject.set(x, "message_to_human_agent", value.asInstanceOf[js.Any])
+    inline def setMessage_to_human_agent(value: String): Self = StObject.set(x, "message_to_human_agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage_to_human_agentUndefined: Self = StObject.set(x, "message_to_human_agent", js.undefined)
+    inline def setMessage_to_human_agentUndefined: Self = StObject.set(x, "message_to_human_agent", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[DialogNodeOutputOptionsElement]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[DialogNodeOutputOptionsElement]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: DialogNodeOutputOptionsElement*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: DialogNodeOutputOptionsElement*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
-    @scala.inline
-    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection_policy(value: String): Self = StObject.set(x, "selection_policy", value.asInstanceOf[js.Any])
+    inline def setSelection_policy(value: String): Self = StObject.set(x, "selection_policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection_policyUndefined: Self = StObject.set(x, "selection_policy", js.undefined)
+    inline def setSelection_policyUndefined: Self = StObject.set(x, "selection_policy", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTyping(value: Boolean): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
+    inline def setTyping(value: Boolean): Self = StObject.set(x, "typing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypingUndefined: Self = StObject.set(x, "typing", js.undefined)
+    inline def setTypingUndefined: Self = StObject.set(x, "typing", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[DialogNodeOutputTextValuesElement]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[DialogNodeOutputTextValuesElement]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: DialogNodeOutputTextValuesElement*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: DialogNodeOutputTextValuesElement*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

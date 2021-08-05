@@ -11,19 +11,15 @@ trait ProviderInfo extends StObject {
 }
 object ProviderInfo {
   
-  @scala.inline
-  def apply(): ProviderInfo = {
+  inline def apply(): ProviderInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProviderInfo]
   }
   
-  @scala.inline
-  implicit class ProviderInfoMutableBuilder[Self <: ProviderInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

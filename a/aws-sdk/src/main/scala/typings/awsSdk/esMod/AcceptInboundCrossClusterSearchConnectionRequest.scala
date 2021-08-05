@@ -13,16 +13,13 @@ trait AcceptInboundCrossClusterSearchConnectionRequest extends StObject {
 }
 object AcceptInboundCrossClusterSearchConnectionRequest {
   
-  @scala.inline
-  def apply(CrossClusterSearchConnectionId: CrossClusterSearchConnectionId): AcceptInboundCrossClusterSearchConnectionRequest = {
+  inline def apply(CrossClusterSearchConnectionId: CrossClusterSearchConnectionId): AcceptInboundCrossClusterSearchConnectionRequest = {
     val __obj = js.Dynamic.literal(CrossClusterSearchConnectionId = CrossClusterSearchConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptInboundCrossClusterSearchConnectionRequest]
   }
   
-  @scala.inline
-  implicit class AcceptInboundCrossClusterSearchConnectionRequestMutableBuilder[Self <: AcceptInboundCrossClusterSearchConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptInboundCrossClusterSearchConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
+    inline def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
   }
 }

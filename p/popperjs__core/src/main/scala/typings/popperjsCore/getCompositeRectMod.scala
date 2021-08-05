@@ -14,20 +14,12 @@ object getCompositeRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Window): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
-  @scala.inline
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Window, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
-  @scala.inline
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Element): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
-  @scala.inline
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Element, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
-  @scala.inline
-  def default(elementOrVirtualElement: Element, offsetParent: Window): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
-  @scala.inline
-  def default(elementOrVirtualElement: Element, offsetParent: Window, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
-  @scala.inline
-  def default(elementOrVirtualElement: Element, offsetParent: Element): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
-  @scala.inline
-  def default(elementOrVirtualElement: Element, offsetParent: Element, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: VirtualElement, offsetParent: Window): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: VirtualElement, offsetParent: Window, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: VirtualElement, offsetParent: Element): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: VirtualElement, offsetParent: Element, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: Element, offsetParent: Window): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: Element, offsetParent: Window, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: Element, offsetParent: Element): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  inline def default(elementOrVirtualElement: Element, offsetParent: Element, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
 }

@@ -12,25 +12,19 @@ trait Timeout extends StObject {
 }
 object Timeout {
   
-  @scala.inline
-  def apply(): Timeout = {
+  inline def apply(): Timeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Timeout]
   }
   
-  @scala.inline
-  implicit class TimeoutMutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
+  extension [Self <: Timeout](x: Self) {
     
-    @scala.inline
-    def setCaller(value: String): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+    inline def setCaller(value: String): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+    inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

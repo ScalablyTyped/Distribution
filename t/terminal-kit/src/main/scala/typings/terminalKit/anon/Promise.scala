@@ -12,19 +12,15 @@ trait Promise extends StObject {
 }
 object Promise {
   
-  @scala.inline
-  def apply(abort: () => Unit, promise: js.Promise[js.UndefOr[String]]): Promise = {
+  inline def apply(abort: () => Unit, promise: js.Promise[js.UndefOr[String]]): Promise = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[Promise]
   }
   
-  @scala.inline
-  implicit class PromiseMutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
+  extension [Self <: Promise](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPromise(value: js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

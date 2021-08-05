@@ -14,28 +14,21 @@ trait Section extends StObject {
 }
 object Section {
   
-  @scala.inline
-  def apply(): Section = {
+  inline def apply(): Section = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Section]
   }
   
-  @scala.inline
-  implicit class SectionMutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
+  extension [Self <: Section](x: Self) {
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setWidgets(value: js.Array[WidgetMarkup]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
+    inline def setWidgets(value: js.Array[WidgetMarkup]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
+    inline def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
     
-    @scala.inline
-    def setWidgetsVarargs(value: WidgetMarkup*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+    inline def setWidgetsVarargs(value: WidgetMarkup*): Self = StObject.set(x, "widgets", js.Array(value :_*))
   }
 }

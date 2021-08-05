@@ -10,19 +10,15 @@ trait TransposeAttrs extends StObject {
 }
 object TransposeAttrs {
   
-  @scala.inline
-  def apply(perm: js.Array[Double]): TransposeAttrs = {
+  inline def apply(perm: js.Array[Double]): TransposeAttrs = {
     val __obj = js.Dynamic.literal(perm = perm.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransposeAttrs]
   }
   
-  @scala.inline
-  implicit class TransposeAttrsMutableBuilder[Self <: TransposeAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: TransposeAttrs](x: Self) {
     
-    @scala.inline
-    def setPerm(value: js.Array[Double]): Self = StObject.set(x, "perm", value.asInstanceOf[js.Any])
+    inline def setPerm(value: js.Array[Double]): Self = StObject.set(x, "perm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermVarargs(value: Double*): Self = StObject.set(x, "perm", js.Array(value :_*))
+    inline def setPermVarargs(value: Double*): Self = StObject.set(x, "perm", js.Array(value :_*))
   }
 }

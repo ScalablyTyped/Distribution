@@ -29,7 +29,7 @@ object tableBodyCellsMod {
     def this(props: ITableBodyCellsProps) = this()
     def this(props: ITableBodyCellsProps, context: js.Any) = this()
     
-    var batcher: js.Any = js.native
+    /* private */ var batcher: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MTableBodyCells(): Unit = js.native
@@ -40,17 +40,17 @@ object tableBodyCellsMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MTableBodyCells(): Unit = js.native
     
-    var didViewportRectChange: js.Any = js.native
+    /* private */ var didViewportRectChange: js.Any = js.native
     
-    var maybeInvokeOnCompleteRender: js.Any = js.native
+    /* private */ var maybeInvokeOnCompleteRender: js.Any = js.native
     
-    var renderAllCells: js.Any = js.native
+    /* private */ var renderAllCells: js.Any = js.native
     
-    var renderBatchedCells: js.Any = js.native
+    /* private */ var renderBatchedCells: js.Any = js.native
     
-    var renderCell: js.Any = js.native
+    /* private */ var renderCell: js.Any = js.native
     
-    var renderNewCell: js.Any = js.native
+    /* private */ var renderNewCell: js.Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MTableBodyCells(): Boolean = js.native
@@ -67,18 +67,15 @@ object tableBodyCellsMod {
     @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "TableBodyCells.cellReactKey")
     @js.native
     def cellReactKey: js.Any = js.native
-    @scala.inline
-    def cellReactKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellReactKey")(x.asInstanceOf[js.Any])
+    inline def cellReactKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellReactKey")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "TableBodyCells.defaultProps")
     @js.native
     def defaultProps: RenderMode = js.native
-    @scala.inline
-    def defaultProps_=(x: RenderMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: RenderMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellClassNames")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def cellClassNames(rowIndex: Double, columnIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellClassNames")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   trait ITableBodyCellsProps
     extends StObject
@@ -131,8 +128,7 @@ object tableBodyCellsMod {
   }
   object ITableBodyCellsProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement,
       columnIndexEnd: Double,
       columnIndexStart: Double,
@@ -146,38 +142,27 @@ object tableBodyCellsMod {
       __obj.asInstanceOf[ITableBodyCellsProps]
     }
     
-    @scala.inline
-    implicit class ITableBodyCellsPropsMutableBuilder[Self <: ITableBodyCellsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITableBodyCellsProps](x: Self) {
       
-      @scala.inline
-      def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
+      inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => ReactElement): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFocusedCell(value: IFocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
+      inline def setFocusedCell(value: IFocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedCellUndefined: Self = StObject.set(x, "focusedCell", js.undefined)
+      inline def setFocusedCellUndefined: Self = StObject.set(x, "focusedCell", js.undefined)
       
-      @scala.inline
-      def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCompleteRender(value: () => Unit): Self = StObject.set(x, "onCompleteRender", js.Any.fromFunction0(value))
+      inline def setOnCompleteRender(value: () => Unit): Self = StObject.set(x, "onCompleteRender", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompleteRenderUndefined: Self = StObject.set(x, "onCompleteRender", js.undefined)
+      inline def setOnCompleteRenderUndefined: Self = StObject.set(x, "onCompleteRender", js.undefined)
       
-      @scala.inline
-      def setRenderMode(value: BATCH | NONE): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
+      inline def setRenderMode(value: BATCH | NONE): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
+      inline def setRenderModeUndefined: Self = StObject.set(x, "renderMode", js.undefined)
       
-      @scala.inline
-      def setViewportRect(value: Rect): Self = StObject.set(x, "viewportRect", value.asInstanceOf[js.Any])
+      inline def setViewportRect(value: Rect): Self = StObject.set(x, "viewportRect", value.asInstanceOf[js.Any])
     }
   }
 }

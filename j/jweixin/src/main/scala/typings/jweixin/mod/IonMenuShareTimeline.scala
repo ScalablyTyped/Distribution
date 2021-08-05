@@ -26,28 +26,21 @@ trait IonMenuShareTimeline
 }
 object IonMenuShareTimeline {
   
-  @scala.inline
-  def apply(cancel: () => Unit, imgUrl: String, link: String, success: () => Unit, title: String): IonMenuShareTimeline = {
+  inline def apply(cancel: () => Unit, imgUrl: String, link: String, success: () => Unit, title: String): IonMenuShareTimeline = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), imgUrl = imgUrl.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], success = js.Any.fromFunction0(success), title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonMenuShareTimeline]
   }
   
-  @scala.inline
-  implicit class IonMenuShareTimelineMutableBuilder[Self <: IonMenuShareTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: IonMenuShareTimeline](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
+    inline def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -40,8 +40,7 @@ trait XDiagram
 }
 object XDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DiagramType: String,
     Position: Point,
     ShapeType: String,
@@ -62,19 +61,14 @@ object XDiagram {
     __obj.asInstanceOf[XDiagram]
   }
   
-  @scala.inline
-  implicit class XDiagramMutableBuilder[Self <: XDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: XDiagram](x: Self) {
     
-    @scala.inline
-    def setDiagramType(value: String): Self = StObject.set(x, "DiagramType", value.asInstanceOf[js.Any])
+    inline def setDiagramType(value: String): Self = StObject.set(x, "DiagramType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataPointProperties(value: (Double, Double) => XPropertySet): Self = StObject.set(x, "getDataPointProperties", js.Any.fromFunction2(value))
+    inline def setGetDataPointProperties(value: (Double, Double) => XPropertySet): Self = StObject.set(x, "getDataPointProperties", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDataRowProperties(value: Double => XPropertySet): Self = StObject.set(x, "getDataRowProperties", js.Any.fromFunction1(value))
+    inline def setGetDataRowProperties(value: Double => XPropertySet): Self = StObject.set(x, "getDataRowProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDiagramType(value: () => String): Self = StObject.set(x, "getDiagramType", js.Any.fromFunction0(value))
+    inline def setGetDiagramType(value: () => String): Self = StObject.set(x, "getDiagramType", js.Any.fromFunction0(value))
   }
 }

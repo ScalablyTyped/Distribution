@@ -31,19 +31,15 @@ trait XResourceFactory extends StObject {
 }
 object XResourceFactory {
   
-  @scala.inline
-  def apply(createResource: XResourceId => XResource, releaseResource: XResource => Unit): XResourceFactory = {
+  inline def apply(createResource: XResourceId => XResource, releaseResource: XResource => Unit): XResourceFactory = {
     val __obj = js.Dynamic.literal(createResource = js.Any.fromFunction1(createResource), releaseResource = js.Any.fromFunction1(releaseResource))
     __obj.asInstanceOf[XResourceFactory]
   }
   
-  @scala.inline
-  implicit class XResourceFactoryMutableBuilder[Self <: XResourceFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XResourceFactory](x: Self) {
     
-    @scala.inline
-    def setCreateResource(value: XResourceId => XResource): Self = StObject.set(x, "createResource", js.Any.fromFunction1(value))
+    inline def setCreateResource(value: XResourceId => XResource): Self = StObject.set(x, "createResource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReleaseResource(value: XResource => Unit): Self = StObject.set(x, "releaseResource", js.Any.fromFunction1(value))
+    inline def setReleaseResource(value: XResource => Unit): Self = StObject.set(x, "releaseResource", js.Any.fromFunction1(value))
   }
 }

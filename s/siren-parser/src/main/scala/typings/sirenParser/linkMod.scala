@@ -11,8 +11,7 @@ object linkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(link: js.Object): Link = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(link.asInstanceOf[js.Any]).asInstanceOf[Link]
+  inline def default(link: js.Object): Link = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(link.asInstanceOf[js.Any]).asInstanceOf[Link]
   
   @js.native
   trait Link extends StObject {

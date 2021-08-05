@@ -33,82 +33,57 @@ trait BillingAgreementDescription extends StObject {
 }
 object BillingAgreementDescription {
   
-  @scala.inline
-  def apply(flow: String): BillingAgreementDescription = {
+  inline def apply(flow: String): BillingAgreementDescription = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingAgreementDescription]
   }
   
-  @scala.inline
-  implicit class BillingAgreementDescriptionMutableBuilder[Self <: BillingAgreementDescription] (val x: Self) extends AnyVal {
+  extension [Self <: BillingAgreementDescription](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String | Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setBillingAgreementDescription(value: String): Self = StObject.set(x, "billingAgreementDescription", value.asInstanceOf[js.Any])
+    inline def setBillingAgreementDescription(value: String): Self = StObject.set(x, "billingAgreementDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAgreementDescriptionUndefined: Self = StObject.set(x, "billingAgreementDescription", js.undefined)
+    inline def setBillingAgreementDescriptionUndefined: Self = StObject.set(x, "billingAgreementDescription", js.undefined)
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnableShippingAddress(value: Boolean): Self = StObject.set(x, "enableShippingAddress", value.asInstanceOf[js.Any])
+    inline def setEnableShippingAddress(value: Boolean): Self = StObject.set(x, "enableShippingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableShippingAddressUndefined: Self = StObject.set(x, "enableShippingAddress", js.undefined)
+    inline def setEnableShippingAddressUndefined: Self = StObject.set(x, "enableShippingAddress", js.undefined)
     
-    @scala.inline
-    def setFlow(value: String): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: String): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setOfferCredit(value: Boolean): Self = StObject.set(x, "offerCredit", value.asInstanceOf[js.Any])
+    inline def setOfferCredit(value: Boolean): Self = StObject.set(x, "offerCredit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferCreditUndefined: Self = StObject.set(x, "offerCredit", js.undefined)
+    inline def setOfferCreditUndefined: Self = StObject.set(x, "offerCredit", js.undefined)
     
-    @scala.inline
-    def setShippingAddressEditable(value: Boolean): Self = StObject.set(x, "shippingAddressEditable", value.asInstanceOf[js.Any])
+    inline def setShippingAddressEditable(value: Boolean): Self = StObject.set(x, "shippingAddressEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressEditableUndefined: Self = StObject.set(x, "shippingAddressEditable", js.undefined)
+    inline def setShippingAddressEditableUndefined: Self = StObject.set(x, "shippingAddressEditable", js.undefined)
     
-    @scala.inline
-    def setShippingAddressOverride(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddressOverride", value.asInstanceOf[js.Any])
+    inline def setShippingAddressOverride(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddressOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressOverrideUndefined: Self = StObject.set(x, "shippingAddressOverride", js.undefined)
+    inline def setShippingAddressOverrideUndefined: Self = StObject.set(x, "shippingAddressOverride", js.undefined)
     
-    @scala.inline
-    def setUseraction(value: String): Self = StObject.set(x, "useraction", value.asInstanceOf[js.Any])
+    inline def setUseraction(value: String): Self = StObject.set(x, "useraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseractionUndefined: Self = StObject.set(x, "useraction", js.undefined)
+    inline def setUseractionUndefined: Self = StObject.set(x, "useraction", js.undefined)
   }
 }

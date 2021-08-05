@@ -18,9 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelativeTimeFormatNumeric extends StObject
 object RelativeTimeFormatNumeric {
   
-  @scala.inline
-  def always: typings.std.stdStrings.always = "always".asInstanceOf[typings.std.stdStrings.always]
+  inline def always: typings.std.stdStrings.always = "always".asInstanceOf[typings.std.stdStrings.always]
   
-  @scala.inline
-  def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
+  inline def auto: typings.std.stdStrings.auto = "auto".asInstanceOf[typings.std.stdStrings.auto]
 }

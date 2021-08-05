@@ -69,8 +69,7 @@ trait InternalRuntimeAPI extends StObject {
 }
 object InternalRuntimeAPI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adminApi: js.Object,
     adminApp: Express,
     events: EventEmitter,
@@ -91,52 +90,36 @@ object InternalRuntimeAPI {
     __obj.asInstanceOf[InternalRuntimeAPI]
   }
   
-  @scala.inline
-  implicit class InternalRuntimeAPIMutableBuilder[Self <: InternalRuntimeAPI] (val x: Self) extends AnyVal {
+  extension [Self <: InternalRuntimeAPI](x: Self) {
     
-    @scala.inline
-    def setAdminApi(value: js.Object): Self = StObject.set(x, "adminApi", value.asInstanceOf[js.Any])
+    inline def setAdminApi(value: js.Object): Self = StObject.set(x, "adminApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdminApp(value: Express): Self = StObject.set(x, "adminApp", value.asInstanceOf[js.Any])
+    inline def setAdminApp(value: Express): Self = StObject.set(x, "adminApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExec(value: InternalExecModule): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+    inline def setExec(value: InternalExecModule): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStarted(value: () => Boolean): Self = StObject.set(x, "isStarted", js.Any.fromFunction0(value))
+    inline def setIsStarted(value: () => Boolean): Self = StObject.set(x, "isStarted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLibrary(value: InternalLibraryModule): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+    inline def setLibrary(value: InternalLibraryModule): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeApp(value: Express): Self = StObject.set(x, "nodeApp", value.asInstanceOf[js.Any])
+    inline def setNodeApp(value: Express): Self = StObject.set(x, "nodeApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: InternalNodesModule): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: InternalNodesModule): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: PersistentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: PersistentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: StorageModule): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: StorageModule): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+    inline def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: () => String): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
+    inline def setVersion(value: () => String): Self = StObject.set(x, "version", js.Any.fromFunction0(value))
   }
 }

@@ -33,8 +33,7 @@ trait GoogleApiYouTubeThumbnailResource extends StObject {
 }
 object GoogleApiYouTubeThumbnailResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     default: GoogleApiYouTubeThumbnailItemResource,
     high: GoogleApiYouTubeThumbnailItemResource,
     medium: GoogleApiYouTubeThumbnailItemResource
@@ -43,28 +42,20 @@ object GoogleApiYouTubeThumbnailResource {
     __obj.asInstanceOf[GoogleApiYouTubeThumbnailResource]
   }
   
-  @scala.inline
-  implicit class GoogleApiYouTubeThumbnailResourceMutableBuilder[Self <: GoogleApiYouTubeThumbnailResource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleApiYouTubeThumbnailResource](x: Self) {
     
-    @scala.inline
-    def setDefault(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHigh(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxres(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "maxres", value.asInstanceOf[js.Any])
+    inline def setMaxres(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "maxres", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxresUndefined: Self = StObject.set(x, "maxres", js.undefined)
+    inline def setMaxresUndefined: Self = StObject.set(x, "maxres", js.undefined)
     
-    @scala.inline
-    def setMedium(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait BandMixins extends StObject {
 }
 object BandMixins {
   
-  @scala.inline
-  def apply(): BandMixins = {
+  inline def apply(): BandMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BandMixins]
   }
   
-  @scala.inline
-  implicit class BandMixinsMutableBuilder[Self <: BandMixins] (val x: Self) extends AnyVal {
+  extension [Self <: BandMixins](x: Self) {
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
   }
 }

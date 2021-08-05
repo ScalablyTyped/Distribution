@@ -10,16 +10,13 @@ trait SleepingFactory extends StObject {
 }
 object SleepingFactory {
   
-  @scala.inline
-  def apply(set: (BodyType, Boolean) => Unit): SleepingFactory = {
+  inline def apply(set: (BodyType, Boolean) => Unit): SleepingFactory = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[SleepingFactory]
   }
   
-  @scala.inline
-  implicit class SleepingFactoryMutableBuilder[Self <: SleepingFactory] (val x: Self) extends AnyVal {
+  extension [Self <: SleepingFactory](x: Self) {
     
-    @scala.inline
-    def setSet(value: (BodyType, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (BodyType, Boolean) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

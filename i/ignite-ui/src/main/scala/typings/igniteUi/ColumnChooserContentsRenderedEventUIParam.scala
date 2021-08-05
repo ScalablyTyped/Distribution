@@ -18,25 +18,19 @@ trait ColumnChooserContentsRenderedEventUIParam extends StObject {
 }
 object ColumnChooserContentsRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnChooserContentsRenderedEventUIParam = {
+  inline def apply(): ColumnChooserContentsRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnChooserContentsRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnChooserContentsRenderedEventUIParamMutableBuilder[Self <: ColumnChooserContentsRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnChooserContentsRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
+    inline def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
+    inline def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

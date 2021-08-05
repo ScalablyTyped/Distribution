@@ -19,28 +19,21 @@ trait Any extends StObject {
 }
 object Any {
   
-  @scala.inline
-  def apply(Any: RegExp, Cc: RegExp, Cf: RegExp, P: RegExp, Z: RegExp): Any = {
+  inline def apply(Any: RegExp, Cc: RegExp, Cf: RegExp, P: RegExp, Z: RegExp): Any = {
     val __obj = js.Dynamic.literal(Any = Any.asInstanceOf[js.Any], Cc = Cc.asInstanceOf[js.Any], Cf = Cf.asInstanceOf[js.Any], P = P.asInstanceOf[js.Any], Z = Z.asInstanceOf[js.Any])
     __obj.asInstanceOf[Any]
   }
   
-  @scala.inline
-  implicit class AnyMutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
+  extension [Self <: Any](x: Self) {
     
-    @scala.inline
-    def setAny(value: RegExp): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
+    inline def setAny(value: RegExp): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCc(value: RegExp): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: RegExp): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCf(value: RegExp): Self = StObject.set(x, "Cf", value.asInstanceOf[js.Any])
+    inline def setCf(value: RegExp): Self = StObject.set(x, "Cf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: RegExp): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
+    inline def setP(value: RegExp): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: RegExp): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
+    inline def setZ(value: RegExp): Self = StObject.set(x, "Z", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait PageBreak
      with Element
 object PageBreak {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,

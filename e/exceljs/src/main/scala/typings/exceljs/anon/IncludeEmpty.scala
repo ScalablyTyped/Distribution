@@ -10,16 +10,13 @@ trait IncludeEmpty extends StObject {
 }
 object IncludeEmpty {
   
-  @scala.inline
-  def apply(includeEmpty: Boolean): IncludeEmpty = {
+  inline def apply(includeEmpty: Boolean): IncludeEmpty = {
     val __obj = js.Dynamic.literal(includeEmpty = includeEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeEmpty]
   }
   
-  @scala.inline
-  implicit class IncludeEmptyMutableBuilder[Self <: IncludeEmpty] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeEmpty](x: Self) {
     
-    @scala.inline
-    def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
+    inline def setIncludeEmpty(value: Boolean): Self = StObject.set(x, "includeEmpty", value.asInstanceOf[js.Any])
   }
 }

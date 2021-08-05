@@ -16,16 +16,13 @@ trait TypeofPropertyBindingComposite extends StObject {
 }
 object TypeofPropertyBindingComposite {
   
-  @scala.inline
-  def apply(Composite: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): TypeofPropertyBindingComposite = {
+  inline def apply(Composite: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): TypeofPropertyBindingComposite = {
     val __obj = js.Dynamic.literal(Composite = Composite.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPropertyBindingComposite]
   }
   
-  @scala.inline
-  implicit class TypeofPropertyBindingCompositeMutableBuilder[Self <: TypeofPropertyBindingComposite] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPropertyBindingComposite](x: Self) {
     
-    @scala.inline
-    def setComposite(value: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): Self = StObject.set(x, "Composite", value.asInstanceOf[js.Any])
+    inline def setComposite(value: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): Self = StObject.set(x, "Composite", value.asInstanceOf[js.Any])
   }
 }

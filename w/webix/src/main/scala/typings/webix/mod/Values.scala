@@ -33,6 +33,5 @@ trait Values extends StObject {
 }
 object Values {
   
-  @scala.inline
-  def apply: Values = ^.asInstanceOf[js.Dynamic].selectDynamic("Values").asInstanceOf[Values]
+  inline def apply: Values = ^.asInstanceOf[js.Dynamic].selectDynamic("Values").asInstanceOf[Values]
 }

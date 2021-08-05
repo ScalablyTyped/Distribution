@@ -16,32 +16,24 @@ object linearGradientConfigurationMod {
   }
   object LinearGradientConfiguration {
     
-    @scala.inline
-    def apply(colorStops: js.Array[String]): LinearGradientConfiguration = {
+    inline def apply(colorStops: js.Array[String]): LinearGradientConfiguration = {
       val __obj = js.Dynamic.literal(colorStops = colorStops.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinearGradientConfiguration]
     }
     
-    @scala.inline
-    implicit class LinearGradientConfigurationMutableBuilder[Self <: LinearGradientConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: LinearGradientConfiguration](x: Self) {
       
-      @scala.inline
-      def setColorStops(value: js.Array[String]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
+      inline def setColorStops(value: js.Array[String]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorStopsVarargs(value: String*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+      inline def setColorStopsVarargs(value: String*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
       
-      @scala.inline
-      def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setToDirection(value: String): Self = StObject.set(x, "toDirection", value.asInstanceOf[js.Any])
+      inline def setToDirection(value: String): Self = StObject.set(x, "toDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDirectionUndefined: Self = StObject.set(x, "toDirection", js.undefined)
+      inline def setToDirectionUndefined: Self = StObject.set(x, "toDirection", js.undefined)
     }
   }
 }

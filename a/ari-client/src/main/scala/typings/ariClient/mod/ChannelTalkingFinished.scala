@@ -21,20 +21,16 @@ trait ChannelTalkingFinished
 }
 object ChannelTalkingFinished {
   
-  @scala.inline
-  def apply(application: String, channel: Channel, duration: Double, timestamp: Date, `type`: String): ChannelTalkingFinished = {
+  inline def apply(application: String, channel: Channel, duration: Double, timestamp: Date, `type`: String): ChannelTalkingFinished = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelTalkingFinished]
   }
   
-  @scala.inline
-  implicit class ChannelTalkingFinishedMutableBuilder[Self <: ChannelTalkingFinished] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelTalkingFinished](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
   }
 }

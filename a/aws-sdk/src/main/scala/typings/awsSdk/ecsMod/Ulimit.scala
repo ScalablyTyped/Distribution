@@ -23,22 +23,17 @@ trait Ulimit extends StObject {
 }
 object Ulimit {
   
-  @scala.inline
-  def apply(hardLimit: Integer, name: UlimitName, softLimit: Integer): Ulimit = {
+  inline def apply(hardLimit: Integer, name: UlimitName, softLimit: Integer): Ulimit = {
     val __obj = js.Dynamic.literal(hardLimit = hardLimit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], softLimit = softLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ulimit]
   }
   
-  @scala.inline
-  implicit class UlimitMutableBuilder[Self <: Ulimit] (val x: Self) extends AnyVal {
+  extension [Self <: Ulimit](x: Self) {
     
-    @scala.inline
-    def setHardLimit(value: Integer): Self = StObject.set(x, "hardLimit", value.asInstanceOf[js.Any])
+    inline def setHardLimit(value: Integer): Self = StObject.set(x, "hardLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: UlimitName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: UlimitName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftLimit(value: Integer): Self = StObject.set(x, "softLimit", value.asInstanceOf[js.Any])
+    inline def setSoftLimit(value: Integer): Self = StObject.set(x, "softLimit", value.asInstanceOf[js.Any])
   }
 }

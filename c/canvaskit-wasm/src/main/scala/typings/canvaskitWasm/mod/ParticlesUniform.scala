@@ -15,22 +15,17 @@ trait ParticlesUniform extends StObject {
 }
 object ParticlesUniform {
   
-  @scala.inline
-  def apply(columns: Double, rows: Double, slot: Double): ParticlesUniform = {
+  inline def apply(columns: Double, rows: Double, slot: Double): ParticlesUniform = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticlesUniform]
   }
   
-  @scala.inline
-  implicit class ParticlesUniformMutableBuilder[Self <: ParticlesUniform] (val x: Self) extends AnyVal {
+  extension [Self <: ParticlesUniform](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
   }
 }

@@ -21,16 +21,13 @@ trait Panel extends StObject {
 }
 object Panel {
   
-  @scala.inline
-  def apply(loadPanel: (String, String) => Unit): Panel = {
+  inline def apply(loadPanel: (String, String) => Unit): Panel = {
     val __obj = js.Dynamic.literal(loadPanel = js.Any.fromFunction2(loadPanel))
     __obj.asInstanceOf[Panel]
   }
   
-  @scala.inline
-  implicit class PanelMutableBuilder[Self <: Panel] (val x: Self) extends AnyVal {
+  extension [Self <: Panel](x: Self) {
     
-    @scala.inline
-    def setLoadPanel(value: (String, String) => Unit): Self = StObject.set(x, "loadPanel", js.Any.fromFunction2(value))
+    inline def setLoadPanel(value: (String, String) => Unit): Self = StObject.set(x, "loadPanel", js.Any.fromFunction2(value))
   }
 }

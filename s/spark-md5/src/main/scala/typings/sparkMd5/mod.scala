@@ -40,23 +40,17 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def hash(arr: JsArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def hash(arr: JsArrayBuffer, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(arr.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def hash(arr: JsArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def hash(arr: JsArrayBuffer, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(arr.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /* static member */
-  @scala.inline
-  def hash(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def hash(str: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hash(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hash(str: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @scala.inline
-  def hashBinary(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashBinary")(content.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def hashBinary(content: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashBinary")(content.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hashBinary(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashBinary")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hashBinary(content: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashBinary")(content.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type JsArrayBuffer = typings.std.ArrayBuffer
   
@@ -89,26 +83,20 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(buff: Uint8Array, hash: js.Array[Double], length: Double): State = {
+    inline def apply(buff: Uint8Array, hash: js.Array[Double], length: Double): State = {
       val __obj = js.Dynamic.literal(buff = buff.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setBuff(value: Uint8Array): Self = StObject.set(x, "buff", value.asInstanceOf[js.Any])
+      inline def setBuff(value: Uint8Array): Self = StObject.set(x, "buff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: js.Array[Double]): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: js.Array[Double]): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashVarargs(value: Double*): Self = StObject.set(x, "hash", js.Array(value :_*))
+      inline def setHashVarargs(value: Double*): Self = StObject.set(x, "hash", js.Array(value :_*))
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
 }

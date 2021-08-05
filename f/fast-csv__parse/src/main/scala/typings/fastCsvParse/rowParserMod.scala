@@ -14,14 +14,14 @@ object rowParserMod {
   class RowParser protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
-    val columnParser: js.Any = js.native
+    /* private */ val columnParser: js.Any = js.native
     
-    var getStartToken: js.Any = js.native
+    /* private */ var getStartToken: js.Any = js.native
     
     def parse(scanner: Scanner): RowArray[js.Any] | Null = js.native
     
-    val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: js.Any = js.native
     
-    var shouldSkipColumnParse: js.Any = js.native
+    /* private */ var shouldSkipColumnParse: js.Any = js.native
   }
 }

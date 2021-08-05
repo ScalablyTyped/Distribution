@@ -12,6 +12,5 @@ object horizontalMenuDotPrivateUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def horizontalMenuPrivateDriverFactory(base: UniDriver[js.Any]): ClickMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("horizontalMenuPrivateDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ClickMenuItem]
+  inline def horizontalMenuPrivateDriverFactory(base: UniDriver[js.Any]): ClickMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("horizontalMenuPrivateDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ClickMenuItem]
 }

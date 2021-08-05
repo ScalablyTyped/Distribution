@@ -14,22 +14,17 @@ trait LCDI2COption
 }
 object LCDI2COption {
   
-  @scala.inline
-  def apply(controller: String): LCDI2COption = {
+  inline def apply(controller: String): LCDI2COption = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCDI2COption]
   }
   
-  @scala.inline
-  implicit class LCDI2COptionMutableBuilder[Self <: LCDI2COption] (val x: Self) extends AnyVal {
+  extension [Self <: LCDI2COption](x: Self) {
     
-    @scala.inline
-    def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
+    inline def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacklightUndefined: Self = StObject.set(x, "backlight", js.undefined)
+    inline def setBacklightUndefined: Self = StObject.set(x, "backlight", js.undefined)
     
-    @scala.inline
-    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
   }
 }

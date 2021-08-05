@@ -8,6 +8,5 @@ object rcCollapseStrings {
   
   @js.native
   sealed trait header extends StObject
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
+  inline def header: header = "header".asInstanceOf[header]
 }

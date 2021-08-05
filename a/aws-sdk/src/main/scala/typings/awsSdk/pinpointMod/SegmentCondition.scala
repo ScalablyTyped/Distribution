@@ -13,16 +13,13 @@ trait SegmentCondition extends StObject {
 }
 object SegmentCondition {
   
-  @scala.inline
-  def apply(SegmentId: string): SegmentCondition = {
+  inline def apply(SegmentId: string): SegmentCondition = {
     val __obj = js.Dynamic.literal(SegmentId = SegmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentCondition]
   }
   
-  @scala.inline
-  implicit class SegmentConditionMutableBuilder[Self <: SegmentCondition] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentCondition](x: Self) {
     
-    @scala.inline
-    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
   }
 }

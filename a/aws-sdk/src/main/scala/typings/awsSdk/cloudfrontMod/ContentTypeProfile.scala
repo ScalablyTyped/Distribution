@@ -23,25 +23,19 @@ trait ContentTypeProfile extends StObject {
 }
 object ContentTypeProfile {
   
-  @scala.inline
-  def apply(ContentType: String, Format: Format): ContentTypeProfile = {
+  inline def apply(ContentType: String, Format: Format): ContentTypeProfile = {
     val __obj = js.Dynamic.literal(ContentType = ContentType.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentTypeProfile]
   }
   
-  @scala.inline
-  implicit class ContentTypeProfileMutableBuilder[Self <: ContentTypeProfile] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTypeProfile](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "ProfileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "ProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "ProfileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "ProfileId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait DescribeInstanceStorageConfigResponse extends StObject {
 }
 object DescribeInstanceStorageConfigResponse {
   
-  @scala.inline
-  def apply(): DescribeInstanceStorageConfigResponse = {
+  inline def apply(): DescribeInstanceStorageConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstanceStorageConfigResponse]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceStorageConfigResponseMutableBuilder[Self <: DescribeInstanceStorageConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceStorageConfigResponse](x: Self) {
     
-    @scala.inline
-    def setStorageConfig(value: InstanceStorageConfig): Self = StObject.set(x, "StorageConfig", value.asInstanceOf[js.Any])
+    inline def setStorageConfig(value: InstanceStorageConfig): Self = StObject.set(x, "StorageConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageConfigUndefined: Self = StObject.set(x, "StorageConfig", js.undefined)
+    inline def setStorageConfigUndefined: Self = StObject.set(x, "StorageConfig", js.undefined)
   }
 }

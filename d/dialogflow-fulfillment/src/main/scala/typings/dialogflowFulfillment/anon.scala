@@ -19,20 +19,16 @@ object anon {
   }
   object ImageUrl {
     
-    @scala.inline
-    def apply(imageUrl: String, platform: Platforms): ImageUrl = {
+    inline def apply(imageUrl: String, platform: Platforms): ImageUrl = {
       val __obj = js.Dynamic.literal(imageUrl = imageUrl.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageUrl]
     }
     
-    @scala.inline
-    implicit class ImageUrlMutableBuilder[Self <: ImageUrl] (val x: Self) extends AnyVal {
+    extension [Self <: ImageUrl](x: Self) {
       
-      @scala.inline
-      def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+      inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: Platforms): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: Platforms): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,23 +42,18 @@ object anon {
   }
   object Lifespan {
     
-    @scala.inline
-    def apply(lifespan: Double, name: String, parameters: js.Object): Lifespan = {
+    inline def apply(lifespan: Double, name: String, parameters: js.Object): Lifespan = {
       val __obj = js.Dynamic.literal(lifespan = lifespan.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
       __obj.asInstanceOf[Lifespan]
     }
     
-    @scala.inline
-    implicit class LifespanMutableBuilder[Self <: Lifespan] (val x: Self) extends AnyVal {
+    extension [Self <: Lifespan](x: Self) {
       
-      @scala.inline
-      def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
+      inline def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,26 +65,20 @@ object anon {
   }
   object RawPayload {
     
-    @scala.inline
-    def apply(): RawPayload = {
+    inline def apply(): RawPayload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RawPayload]
     }
     
-    @scala.inline
-    implicit class RawPayloadMutableBuilder[Self <: RawPayload] (val x: Self) extends AnyVal {
+    extension [Self <: RawPayload](x: Self) {
       
-      @scala.inline
-      def setRawPayload(value: Boolean): Self = StObject.set(x, "rawPayload", value.asInstanceOf[js.Any])
+      inline def setRawPayload(value: Boolean): Self = StObject.set(x, "rawPayload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawPayloadUndefined: Self = StObject.set(x, "rawPayload", js.undefined)
+      inline def setRawPayloadUndefined: Self = StObject.set(x, "rawPayload", js.undefined)
       
-      @scala.inline
-      def setSendAsMessage(value: Boolean): Self = StObject.set(x, "sendAsMessage", value.asInstanceOf[js.Any])
+      inline def setSendAsMessage(value: Boolean): Self = StObject.set(x, "sendAsMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendAsMessageUndefined: Self = StObject.set(x, "sendAsMessage", js.undefined)
+      inline def setSendAsMessageUndefined: Self = StObject.set(x, "sendAsMessage", js.undefined)
     }
   }
   
@@ -105,20 +90,16 @@ object anon {
   }
   object Request {
     
-    @scala.inline
-    def apply(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): Request = {
+    inline def apply(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): Request = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,20 +111,16 @@ object anon {
   }
   object Text {
     
-    @scala.inline
-    def apply(text: String, url: String): Text = {
+    inline def apply(text: String, url: String): Text = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

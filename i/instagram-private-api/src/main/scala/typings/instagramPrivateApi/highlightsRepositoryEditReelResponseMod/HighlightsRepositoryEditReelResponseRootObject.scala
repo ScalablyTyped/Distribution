@@ -12,19 +12,15 @@ trait HighlightsRepositoryEditReelResponseRootObject extends StObject {
 }
 object HighlightsRepositoryEditReelResponseRootObject {
   
-  @scala.inline
-  def apply(reel: HighlightsRepositoryEditReelResponseReel, status: String): HighlightsRepositoryEditReelResponseRootObject = {
+  inline def apply(reel: HighlightsRepositoryEditReelResponseReel, status: String): HighlightsRepositoryEditReelResponseRootObject = {
     val __obj = js.Dynamic.literal(reel = reel.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightsRepositoryEditReelResponseRootObject]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseRootObjectMutableBuilder[Self <: HighlightsRepositoryEditReelResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryEditReelResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setReel(value: HighlightsRepositoryEditReelResponseReel): Self = StObject.set(x, "reel", value.asInstanceOf[js.Any])
+    inline def setReel(value: HighlightsRepositoryEditReelResponseReel): Self = StObject.set(x, "reel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

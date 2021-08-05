@@ -75,9 +75,9 @@ object observableobjectMod {
     def observe(callback: js.Function1[/* changes */ IObjectDidChange[js.Any], Unit]): Lambda = js.native
     def observe(callback: js.Function1[/* changes */ IObjectDidChange[js.Any], Unit], fireImmediately: Boolean): Lambda = js.native
     
-    var pendingKeys: js.Any = js.native
+    /* private */ var pendingKeys: js.Any = js.native
     
-    var proxy: js.Any = js.native
+    /* private */ var proxy: js.Any = js.native
     
     def read(key: PropertyKey): js.Any = js.native
     
@@ -90,23 +90,16 @@ object observableobjectMod {
     def write(key: PropertyKey, newValue: js.Any): Unit = js.native
   }
   
-  @scala.inline
-  def asObservableObject(target: js.Any): ObservableObjectAdministration = ^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any]).asInstanceOf[ObservableObjectAdministration]
-  @scala.inline
-  def asObservableObject(target: js.Any, name: Unit, defaultEnhancer: IEnhancer[js.Any]): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultEnhancer.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
-  @scala.inline
-  def asObservableObject(target: js.Any, name: PropertyKey): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
-  @scala.inline
-  def asObservableObject(target: js.Any, name: PropertyKey, defaultEnhancer: IEnhancer[js.Any]): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultEnhancer.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
+  inline def asObservableObject(target: js.Any): ObservableObjectAdministration = ^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any]).asInstanceOf[ObservableObjectAdministration]
+  inline def asObservableObject(target: js.Any, name: Unit, defaultEnhancer: IEnhancer[js.Any]): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultEnhancer.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
+  inline def asObservableObject(target: js.Any, name: PropertyKey): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
+  inline def asObservableObject(target: js.Any, name: PropertyKey, defaultEnhancer: IEnhancer[js.Any]): ObservableObjectAdministration = (^.asInstanceOf[js.Dynamic].applyDynamic("asObservableObject")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultEnhancer.asInstanceOf[js.Any])).asInstanceOf[ObservableObjectAdministration]
   
-  @scala.inline
-  def generateComputedPropConfig(propName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateComputedPropConfig")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def generateComputedPropConfig(propName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateComputedPropConfig")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def generateObservablePropConfig(propName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateObservablePropConfig")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def generateObservablePropConfig(propName: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateObservablePropConfig")(propName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableObject")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observableobject.IObservableObject */ Boolean]
+  inline def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservableObject")(thing.asInstanceOf[js.Any]).asInstanceOf[/* is mobx.mobx/lib/types/observableobject.IObservableObject */ Boolean]
   
   trait IIsObservableObject extends StObject {
     
@@ -115,17 +108,14 @@ object observableobjectMod {
   }
   object IIsObservableObject {
     
-    @scala.inline
-    def apply($mobx: ObservableObjectAdministration): IIsObservableObject = {
+    inline def apply($mobx: ObservableObjectAdministration): IIsObservableObject = {
       val __obj = js.Dynamic.literal($mobx = $mobx.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIsObservableObject]
     }
     
-    @scala.inline
-    implicit class IIsObservableObjectMutableBuilder[Self <: IIsObservableObject] (val x: Self) extends AnyVal {
+    extension [Self <: IIsObservableObject](x: Self) {
       
-      @scala.inline
-      def set$mobx(value: ObservableObjectAdministration): Self = StObject.set(x, "$mobx", value.asInstanceOf[js.Any])
+      inline def set$mobx(value: ObservableObjectAdministration): Self = StObject.set(x, "$mobx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,24 +127,21 @@ object observableobjectMod {
   trait IObjectDidChange[T] extends StObject
   object IObjectDidChange {
     
-    @scala.inline
-    def NameObject[T](name: PropertyKey, `object`: T, oldValue: js.Any): typings.mobx.anon.NameObject[T] = {
+    inline def NameObject[T](name: PropertyKey, `object`: T, oldValue: js.Any): typings.mobx.anon.NameObject[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("remove")
       __obj.asInstanceOf[typings.mobx.anon.NameObject[T]]
     }
     
-    @scala.inline
-    def OldValue[T](name: PropertyKey, newValue: js.Any, `object`: T, oldValue: js.Any): typings.mobx.anon.OldValue[T] = {
+    inline def OldValue[T](name: PropertyKey, newValue: js.Any, `object`: T, oldValue: js.Any): typings.mobx.anon.OldValue[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("update")
       __obj.asInstanceOf[typings.mobx.anon.OldValue[T]]
     }
     
-    @scala.inline
-    def Type[T](name: PropertyKey, newValue: js.Any, `object`: T): typings.mobx.anon.Type[T] = {
+    inline def Type[T](name: PropertyKey, newValue: js.Any, `object`: T): typings.mobx.anon.Type[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("add")
@@ -169,16 +156,14 @@ object observableobjectMod {
   trait IObjectWillChange[T] extends StObject
   object IObjectWillChange {
     
-    @scala.inline
-    def NameNewValue[T](name: PropertyKey, newValue: js.Any, `object`: T, `type`: update | add): typings.mobx.anon.NameNewValue[T] = {
+    inline def NameNewValue[T](name: PropertyKey, newValue: js.Any, `object`: T, `type`: update | add): typings.mobx.anon.NameNewValue[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.mobx.anon.NameNewValue[T]]
     }
     
-    @scala.inline
-    def ObjectType[T](name: PropertyKey, `object`: T): typings.mobx.anon.ObjectType[T] = {
+    inline def ObjectType[T](name: PropertyKey, `object`: T): typings.mobx.anon.ObjectType[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("remove")
@@ -192,18 +177,15 @@ object observableobjectMod {
   }
   object IObservableObject {
     
-    @scala.inline
-    def apply(`observable-object`: IObservableObject): IObservableObject = {
+    inline def apply(`observable-object`: IObservableObject): IObservableObject = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("observable-object")(`observable-object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IObservableObject]
     }
     
-    @scala.inline
-    implicit class IObservableObjectMutableBuilder[Self <: IObservableObject] (val x: Self) extends AnyVal {
+    extension [Self <: IObservableObject](x: Self) {
       
-      @scala.inline
-      def `setObservable-object`(value: IObservableObject): Self = StObject.set(x, "observable-object", value.asInstanceOf[js.Any])
+      inline def `setObservable-object`(value: IObservableObject): Self = StObject.set(x, "observable-object", value.asInstanceOf[js.Any])
     }
   }
 }

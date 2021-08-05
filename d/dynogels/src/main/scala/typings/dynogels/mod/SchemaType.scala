@@ -11,8 +11,7 @@ trait SchemaType
      with /* key */ StringDictionary[AnySchema | SchemaType]
 object SchemaType {
   
-  @scala.inline
-  def apply(): SchemaType = {
+  inline def apply(): SchemaType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaType]
   }

@@ -12,19 +12,15 @@ trait UsageIntermediary extends StObject {
 }
 object UsageIntermediary {
   
-  @scala.inline
-  def apply(records: UsageRecordResource, triggers: UsageTriggerResource): UsageIntermediary = {
+  inline def apply(records: UsageRecordResource, triggers: UsageTriggerResource): UsageIntermediary = {
     val __obj = js.Dynamic.literal(records = records.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageIntermediary]
   }
   
-  @scala.inline
-  implicit class UsageIntermediaryMutableBuilder[Self <: UsageIntermediary] (val x: Self) extends AnyVal {
+  extension [Self <: UsageIntermediary](x: Self) {
     
-    @scala.inline
-    def setRecords(value: UsageRecordResource): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: UsageRecordResource): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggers(value: UsageTriggerResource): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+    inline def setTriggers(value: UsageTriggerResource): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
   }
 }

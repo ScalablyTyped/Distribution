@@ -181,8 +181,7 @@ object Loader {
   }
   object ILoaderSignal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID,
       detach: /* id */ ICallbackID => Unit,
       once: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID
@@ -191,19 +190,15 @@ object Loader {
       __obj.asInstanceOf[ILoaderSignal]
     }
     
-    @scala.inline
-    implicit class ILoaderSignalMutableBuilder[Self <: ILoaderSignal] (val x: Self) extends AnyVal {
+    extension [Self <: ILoaderSignal](x: Self) {
       
-      @scala.inline
-      def setAdd(
+      inline def setAdd(
         value: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID
       ): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDetach(value: /* id */ ICallbackID => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction1(value))
+      inline def setDetach(value: /* id */ ICallbackID => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnce(
+      inline def setOnce(
         value: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID
       ): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     }

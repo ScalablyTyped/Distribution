@@ -10,19 +10,15 @@ trait SchemaBackendServiceReference extends StObject {
 }
 object SchemaBackendServiceReference {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceReference = {
+  inline def apply(): SchemaBackendServiceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceReference]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceReferenceMutableBuilder[Self <: SchemaBackendServiceReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceReference](x: Self) {
     
-    @scala.inline
-    def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
+    inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
+    inline def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
   }
 }

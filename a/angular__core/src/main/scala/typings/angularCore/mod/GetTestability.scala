@@ -12,8 +12,7 @@ trait GetTestability extends StObject {
 }
 object GetTestability {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToWindow: TestabilityRegistry => Unit,
     findTestabilityInTree: (TestabilityRegistry, js.Any, Boolean) => Testability | Null
   ): GetTestability = {
@@ -21,13 +20,10 @@ object GetTestability {
     __obj.asInstanceOf[GetTestability]
   }
   
-  @scala.inline
-  implicit class GetTestabilityMutableBuilder[Self <: GetTestability] (val x: Self) extends AnyVal {
+  extension [Self <: GetTestability](x: Self) {
     
-    @scala.inline
-    def setAddToWindow(value: TestabilityRegistry => Unit): Self = StObject.set(x, "addToWindow", js.Any.fromFunction1(value))
+    inline def setAddToWindow(value: TestabilityRegistry => Unit): Self = StObject.set(x, "addToWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindTestabilityInTree(value: (TestabilityRegistry, js.Any, Boolean) => Testability | Null): Self = StObject.set(x, "findTestabilityInTree", js.Any.fromFunction3(value))
+    inline def setFindTestabilityInTree(value: (TestabilityRegistry, js.Any, Boolean) => Testability | Null): Self = StObject.set(x, "findTestabilityInTree", js.Any.fromFunction3(value))
   }
 }

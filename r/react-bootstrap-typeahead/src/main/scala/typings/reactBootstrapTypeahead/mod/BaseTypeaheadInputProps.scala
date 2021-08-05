@@ -16,17 +16,14 @@ trait BaseTypeaheadInputProps
 }
 object BaseTypeaheadInputProps {
   
-  @scala.inline
-  def apply(): BaseTypeaheadInputProps = {
+  inline def apply(): BaseTypeaheadInputProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[BaseTypeaheadInputProps]
   }
   
-  @scala.inline
-  implicit class BaseTypeaheadInputPropsMutableBuilder[Self <: BaseTypeaheadInputProps] (val x: Self) extends AnyVal {
+  extension [Self <: BaseTypeaheadInputProps](x: Self) {
     
-    @scala.inline
-    def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -22,35 +22,27 @@ trait WorkerLifecycleEvent extends StObject {
 }
 object WorkerLifecycleEvent {
   
-  @scala.inline
-  def apply(): WorkerLifecycleEvent = {
+  inline def apply(): WorkerLifecycleEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkerLifecycleEvent]
   }
   
-  @scala.inline
-  implicit class WorkerLifecycleEventMutableBuilder[Self <: WorkerLifecycleEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerLifecycleEvent](x: Self) {
     
-    @scala.inline
-    def setContainerStartTime(value: String): Self = StObject.set(x, "containerStartTime", value.asInstanceOf[js.Any])
+    inline def setContainerStartTime(value: String): Self = StObject.set(x, "containerStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStartTimeUndefined: Self = StObject.set(x, "containerStartTime", js.undefined)
+    inline def setContainerStartTimeUndefined: Self = StObject.set(x, "containerStartTime", js.undefined)
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.WorkerLifecycleEvent & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

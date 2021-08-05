@@ -13,22 +13,17 @@ trait SearchAvailablePhoneNumbersResponse extends StObject {
 }
 object SearchAvailablePhoneNumbersResponse {
   
-  @scala.inline
-  def apply(): SearchAvailablePhoneNumbersResponse = {
+  inline def apply(): SearchAvailablePhoneNumbersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchAvailablePhoneNumbersResponse]
   }
   
-  @scala.inline
-  implicit class SearchAvailablePhoneNumbersResponseMutableBuilder[Self <: SearchAvailablePhoneNumbersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchAvailablePhoneNumbersResponse](x: Self) {
     
-    @scala.inline
-    def setE164PhoneNumbers(value: E164PhoneNumberList): Self = StObject.set(x, "E164PhoneNumbers", value.asInstanceOf[js.Any])
+    inline def setE164PhoneNumbers(value: E164PhoneNumberList): Self = StObject.set(x, "E164PhoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE164PhoneNumbersUndefined: Self = StObject.set(x, "E164PhoneNumbers", js.undefined)
+    inline def setE164PhoneNumbersUndefined: Self = StObject.set(x, "E164PhoneNumbers", js.undefined)
     
-    @scala.inline
-    def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value :_*))
+    inline def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value :_*))
   }
 }

@@ -17,34 +17,25 @@ trait PlacementStrategiesListResponse extends StObject {
 }
 object PlacementStrategiesListResponse {
   
-  @scala.inline
-  def apply(): PlacementStrategiesListResponse = {
+  inline def apply(): PlacementStrategiesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementStrategiesListResponse]
   }
   
-  @scala.inline
-  implicit class PlacementStrategiesListResponseMutableBuilder[Self <: PlacementStrategiesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementStrategiesListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPlacementStrategies(value: js.Array[PlacementStrategy]): Self = StObject.set(x, "placementStrategies", value.asInstanceOf[js.Any])
+    inline def setPlacementStrategies(value: js.Array[PlacementStrategy]): Self = StObject.set(x, "placementStrategies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementStrategiesUndefined: Self = StObject.set(x, "placementStrategies", js.undefined)
+    inline def setPlacementStrategiesUndefined: Self = StObject.set(x, "placementStrategies", js.undefined)
     
-    @scala.inline
-    def setPlacementStrategiesVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategies", js.Array(value :_*))
+    inline def setPlacementStrategiesVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategies", js.Array(value :_*))
   }
 }

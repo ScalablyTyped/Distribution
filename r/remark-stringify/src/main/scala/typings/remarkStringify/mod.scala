@@ -78,128 +78,88 @@ object mod extends Shortcut {
   }
   object PartialRemarkStringifyOptions {
     
-    @scala.inline
-    def apply(): PartialRemarkStringifyOptions = {
+    inline def apply(): PartialRemarkStringifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRemarkStringifyOptions]
     }
     
-    @scala.inline
-    implicit class PartialRemarkStringifyOptionsMutableBuilder[Self <: PartialRemarkStringifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRemarkStringifyOptions](x: Self) {
       
-      @scala.inline
-      def setBullet(value: `-_` | Asterisk | Plussign): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+      inline def setBullet(value: `-_` | Asterisk | Plussign): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
+      inline def setBulletUndefined: Self = StObject.set(x, "bullet", js.undefined)
       
-      @scala.inline
-      def setCloseAtx(value: Boolean): Self = StObject.set(x, "closeAtx", value.asInstanceOf[js.Any])
+      inline def setCloseAtx(value: Boolean): Self = StObject.set(x, "closeAtx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseAtxUndefined: Self = StObject.set(x, "closeAtx", js.undefined)
+      inline def setCloseAtxUndefined: Self = StObject.set(x, "closeAtx", js.undefined)
       
-      @scala.inline
-      def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
+      inline def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonmarkUndefined: Self = StObject.set(x, "commonmark", js.undefined)
+      inline def setCommonmarkUndefined: Self = StObject.set(x, "commonmark", js.undefined)
       
-      @scala.inline
-      def setEmphasis(value: _underscore | Asterisk): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: _underscore | Asterisk): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+      inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
       
-      @scala.inline
-      def setEntities(value: Boolean | numbers | escape): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: Boolean | numbers | escape): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+      inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
       
-      @scala.inline
-      def setFence(value: Tilde | Graveaccent): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
+      inline def setFence(value: Tilde | Graveaccent): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFenceUndefined: Self = StObject.set(x, "fence", js.undefined)
+      inline def setFenceUndefined: Self = StObject.set(x, "fence", js.undefined)
       
-      @scala.inline
-      def setFences(value: Boolean): Self = StObject.set(x, "fences", value.asInstanceOf[js.Any])
+      inline def setFences(value: Boolean): Self = StObject.set(x, "fences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFencesUndefined: Self = StObject.set(x, "fences", js.undefined)
+      inline def setFencesUndefined: Self = StObject.set(x, "fences", js.undefined)
       
-      @scala.inline
-      def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+      inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
+      inline def setGfmUndefined: Self = StObject.set(x, "gfm", js.undefined)
       
-      @scala.inline
-      def setIncrementListMarker(value: Boolean): Self = StObject.set(x, "incrementListMarker", value.asInstanceOf[js.Any])
+      inline def setIncrementListMarker(value: Boolean): Self = StObject.set(x, "incrementListMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementListMarkerUndefined: Self = StObject.set(x, "incrementListMarker", js.undefined)
+      inline def setIncrementListMarkerUndefined: Self = StObject.set(x, "incrementListMarker", js.undefined)
       
-      @scala.inline
-      def setListItemIndent(value: tab | `1` | mixed): Self = StObject.set(x, "listItemIndent", value.asInstanceOf[js.Any])
+      inline def setListItemIndent(value: tab | `1` | mixed): Self = StObject.set(x, "listItemIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListItemIndentUndefined: Self = StObject.set(x, "listItemIndent", js.undefined)
+      inline def setListItemIndentUndefined: Self = StObject.set(x, "listItemIndent", js.undefined)
       
-      @scala.inline
-      def setRule(value: `-_` | _underscore | Asterisk): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: `-_` | _underscore | Asterisk): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleRepetition(value: Double): Self = StObject.set(x, "ruleRepetition", value.asInstanceOf[js.Any])
+      inline def setRuleRepetition(value: Double): Self = StObject.set(x, "ruleRepetition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleRepetitionUndefined: Self = StObject.set(x, "ruleRepetition", js.undefined)
+      inline def setRuleRepetitionUndefined: Self = StObject.set(x, "ruleRepetition", js.undefined)
       
-      @scala.inline
-      def setRuleSpaces(value: Boolean): Self = StObject.set(x, "ruleSpaces", value.asInstanceOf[js.Any])
+      inline def setRuleSpaces(value: Boolean): Self = StObject.set(x, "ruleSpaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleSpacesUndefined: Self = StObject.set(x, "ruleSpaces", js.undefined)
+      inline def setRuleSpacesUndefined: Self = StObject.set(x, "ruleSpaces", js.undefined)
       
-      @scala.inline
-      def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+      inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
       
-      @scala.inline
-      def setSetext(value: Boolean): Self = StObject.set(x, "setext", value.asInstanceOf[js.Any])
+      inline def setSetext(value: Boolean): Self = StObject.set(x, "setext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetextUndefined: Self = StObject.set(x, "setext", js.undefined)
+      inline def setSetextUndefined: Self = StObject.set(x, "setext", js.undefined)
       
-      @scala.inline
-      def setStringLength(value: /* s */ String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
+      inline def setStringLength(value: /* s */ String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringLengthUndefined: Self = StObject.set(x, "stringLength", js.undefined)
+      inline def setStringLengthUndefined: Self = StObject.set(x, "stringLength", js.undefined)
       
-      @scala.inline
-      def setStrong(value: _underscore | Asterisk): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: _underscore | Asterisk): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+      inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
       
-      @scala.inline
-      def setTableCellPadding(value: Boolean): Self = StObject.set(x, "tableCellPadding", value.asInstanceOf[js.Any])
+      inline def setTableCellPadding(value: Boolean): Self = StObject.set(x, "tableCellPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableCellPaddingUndefined: Self = StObject.set(x, "tableCellPadding", js.undefined)
+      inline def setTableCellPaddingUndefined: Self = StObject.set(x, "tableCellPadding", js.undefined)
       
-      @scala.inline
-      def setTablePipeAlign(value: Boolean): Self = StObject.set(x, "tablePipeAlign", value.asInstanceOf[js.Any])
+      inline def setTablePipeAlign(value: Boolean): Self = StObject.set(x, "tablePipeAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablePipeAlignUndefined: Self = StObject.set(x, "tablePipeAlign", js.undefined)
+      inline def setTablePipeAlignUndefined: Self = StObject.set(x, "tablePipeAlign", js.undefined)
       
-      @scala.inline
-      def setTightDefinitions(value: Boolean): Self = StObject.set(x, "tightDefinitions", value.asInstanceOf[js.Any])
+      inline def setTightDefinitions(value: Boolean): Self = StObject.set(x, "tightDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTightDefinitionsUndefined: Self = StObject.set(x, "tightDefinitions", js.undefined)
+      inline def setTightDefinitionsUndefined: Self = StObject.set(x, "tightDefinitions", js.undefined)
     }
   }
   
@@ -211,20 +171,16 @@ object mod extends Shortcut {
   }
   object RemarkCompiler {
     
-    @scala.inline
-    def apply(compile: () => String, visitors: StringDictionary[Visitor]): RemarkCompiler = {
+    inline def apply(compile: () => String, visitors: StringDictionary[Visitor]): RemarkCompiler = {
       val __obj = js.Dynamic.literal(compile = js.Any.fromFunction0(compile), visitors = visitors.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemarkCompiler]
     }
     
-    @scala.inline
-    implicit class RemarkCompilerMutableBuilder[Self <: RemarkCompiler] (val x: Self) extends AnyVal {
+    extension [Self <: RemarkCompiler](x: Self) {
       
-      @scala.inline
-      def setCompile(value: () => String): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
+      inline def setCompile(value: () => String): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisitors(value: StringDictionary[Visitor]): Self = StObject.set(x, "visitors", value.asInstanceOf[js.Any])
+      inline def setVisitors(value: StringDictionary[Visitor]): Self = StObject.set(x, "visitors", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,8 +226,7 @@ object mod extends Shortcut {
   }
   object RemarkStringifyOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bullet: `-_` | Asterisk | Plussign,
       closeAtx: Boolean,
       commonmark: Boolean,
@@ -296,65 +251,45 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RemarkStringifyOptions]
     }
     
-    @scala.inline
-    implicit class RemarkStringifyOptionsMutableBuilder[Self <: RemarkStringifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemarkStringifyOptions](x: Self) {
       
-      @scala.inline
-      def setBullet(value: `-_` | Asterisk | Plussign): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
+      inline def setBullet(value: `-_` | Asterisk | Plussign): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseAtx(value: Boolean): Self = StObject.set(x, "closeAtx", value.asInstanceOf[js.Any])
+      inline def setCloseAtx(value: Boolean): Self = StObject.set(x, "closeAtx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
+      inline def setCommonmark(value: Boolean): Self = StObject.set(x, "commonmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmphasis(value: _underscore | Asterisk): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+      inline def setEmphasis(value: _underscore | Asterisk): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntities(value: Boolean | numbers | escape): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: Boolean | numbers | escape): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFence(value: Tilde | Graveaccent): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
+      inline def setFence(value: Tilde | Graveaccent): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFences(value: Boolean): Self = StObject.set(x, "fences", value.asInstanceOf[js.Any])
+      inline def setFences(value: Boolean): Self = StObject.set(x, "fences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
+      inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncrementListMarker(value: Boolean): Self = StObject.set(x, "incrementListMarker", value.asInstanceOf[js.Any])
+      inline def setIncrementListMarker(value: Boolean): Self = StObject.set(x, "incrementListMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListItemIndent(value: tab | `1` | mixed): Self = StObject.set(x, "listItemIndent", value.asInstanceOf[js.Any])
+      inline def setListItemIndent(value: tab | `1` | mixed): Self = StObject.set(x, "listItemIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: `-_` | _underscore | Asterisk): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: `-_` | _underscore | Asterisk): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleRepetition(value: Double): Self = StObject.set(x, "ruleRepetition", value.asInstanceOf[js.Any])
+      inline def setRuleRepetition(value: Double): Self = StObject.set(x, "ruleRepetition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleSpaces(value: Boolean): Self = StObject.set(x, "ruleSpaces", value.asInstanceOf[js.Any])
+      inline def setRuleSpaces(value: Boolean): Self = StObject.set(x, "ruleSpaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetext(value: Boolean): Self = StObject.set(x, "setext", value.asInstanceOf[js.Any])
+      inline def setSetext(value: Boolean): Self = StObject.set(x, "setext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringLength(value: String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
+      inline def setStringLength(value: String => Double): Self = StObject.set(x, "stringLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStrong(value: _underscore | Asterisk): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: _underscore | Asterisk): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableCellPadding(value: Boolean): Self = StObject.set(x, "tableCellPadding", value.asInstanceOf[js.Any])
+      inline def setTableCellPadding(value: Boolean): Self = StObject.set(x, "tableCellPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablePipeAlign(value: Boolean): Self = StObject.set(x, "tablePipeAlign", value.asInstanceOf[js.Any])
+      inline def setTablePipeAlign(value: Boolean): Self = StObject.set(x, "tablePipeAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTightDefinitions(value: Boolean): Self = StObject.set(x, "tightDefinitions", value.asInstanceOf[js.Any])
+      inline def setTightDefinitions(value: Boolean): Self = StObject.set(x, "tightDefinitions", value.asInstanceOf[js.Any])
     }
   }
   

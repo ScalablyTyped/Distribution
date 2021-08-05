@@ -10,19 +10,15 @@ trait CreateCacheSubnetGroupResult extends StObject {
 }
 object CreateCacheSubnetGroupResult {
   
-  @scala.inline
-  def apply(): CreateCacheSubnetGroupResult = {
+  inline def apply(): CreateCacheSubnetGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCacheSubnetGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateCacheSubnetGroupResultMutableBuilder[Self <: CreateCacheSubnetGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCacheSubnetGroupResult](x: Self) {
     
-    @scala.inline
-    def setCacheSubnetGroup(value: CacheSubnetGroup): Self = StObject.set(x, "CacheSubnetGroup", value.asInstanceOf[js.Any])
+    inline def setCacheSubnetGroup(value: CacheSubnetGroup): Self = StObject.set(x, "CacheSubnetGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSubnetGroupUndefined: Self = StObject.set(x, "CacheSubnetGroup", js.undefined)
+    inline def setCacheSubnetGroupUndefined: Self = StObject.set(x, "CacheSubnetGroup", js.undefined)
   }
 }

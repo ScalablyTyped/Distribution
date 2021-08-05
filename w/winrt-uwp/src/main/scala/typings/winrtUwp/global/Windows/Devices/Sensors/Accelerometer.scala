@@ -21,6 +21,5 @@ object Accelerometer {
     * @return The default accelerometer or null if no integrated accelerometers are found.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Accelerometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Accelerometer]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Accelerometer = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Accelerometer]
 }

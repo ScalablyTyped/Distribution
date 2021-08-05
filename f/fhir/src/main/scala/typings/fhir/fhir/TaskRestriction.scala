@@ -33,40 +33,29 @@ trait TaskRestriction
 }
 object TaskRestriction {
   
-  @scala.inline
-  def apply(): TaskRestriction = {
+  inline def apply(): TaskRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskRestriction]
   }
   
-  @scala.inline
-  implicit class TaskRestrictionMutableBuilder[Self <: TaskRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRestriction](x: Self) {
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setRecipient(value: js.Array[Reference]): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: js.Array[Reference]): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
+    inline def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     
-    @scala.inline
-    def setRecipientVarargs(value: Reference*): Self = StObject.set(x, "recipient", js.Array(value :_*))
+    inline def setRecipientVarargs(value: Reference*): Self = StObject.set(x, "recipient", js.Array(value :_*))
     
-    @scala.inline
-    def setRepetitions(value: positiveInt): Self = StObject.set(x, "repetitions", value.asInstanceOf[js.Any])
+    inline def setRepetitions(value: positiveInt): Self = StObject.set(x, "repetitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepetitionsUndefined: Self = StObject.set(x, "repetitions", js.undefined)
+    inline def setRepetitionsUndefined: Self = StObject.set(x, "repetitions", js.undefined)
     
-    @scala.inline
-    def set_repetitions(value: Element): Self = StObject.set(x, "_repetitions", value.asInstanceOf[js.Any])
+    inline def set_repetitions(value: Element): Self = StObject.set(x, "_repetitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_repetitionsUndefined: Self = StObject.set(x, "_repetitions", js.undefined)
+    inline def set_repetitionsUndefined: Self = StObject.set(x, "_repetitions", js.undefined)
   }
 }

@@ -54,8 +54,7 @@ trait QueryObj extends StObject {
 }
 object QueryObj {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OR: js.Array[Query],
     URI: String,
     ascending: String => Query,
@@ -84,76 +83,52 @@ object QueryObj {
     __obj.asInstanceOf[QueryObj]
   }
   
-  @scala.inline
-  implicit class QueryObjMutableBuilder[Self <: QueryObj] (val x: Self) extends AnyVal {
+  extension [Self <: QueryObj](x: Self) {
     
-    @scala.inline
-    def setAscending(value: String => Query): Self = StObject.set(x, "ascending", js.Any.fromFunction1(value))
+    inline def setAscending(value: String => Query): Self = StObject.set(x, "ascending", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescending(value: String => Query): Self = StObject.set(x, "descending", js.Any.fromFunction1(value))
+    inline def setDescending(value: String => Query): Self = StObject.set(x, "descending", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "equalTo", js.Any.fromFunction2(value))
+    inline def setEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "equalTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFetch(value: CbCallback => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+    inline def setFetch(value: CbCallback => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGreaterThan(value: (String, QueryValue) => Query): Self = StObject.set(x, "greaterThan", js.Any.fromFunction2(value))
+    inline def setGreaterThan(value: (String, QueryValue) => Query): Self = StObject.set(x, "greaterThan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGreaterThanEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "greaterThanEqualTo", js.Any.fromFunction2(value))
+    inline def setGreaterThanEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "greaterThanEqualTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLessThan(value: (String, QueryValue) => Query): Self = StObject.set(x, "lessThan", js.Any.fromFunction2(value))
+    inline def setLessThan(value: (String, QueryValue) => Query): Self = StObject.set(x, "lessThan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLessThanEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "lessThanEqualTo", js.Any.fromFunction2(value))
+    inline def setLessThanEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "lessThanEqualTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: (String, String) => Query): Self = StObject.set(x, "matches", js.Any.fromFunction2(value))
+    inline def setMatches(value: (String, String) => Query): Self = StObject.set(x, "matches", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNotEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "notEqualTo", js.Any.fromFunction2(value))
+    inline def setNotEqualTo(value: (String, QueryValue) => Query): Self = StObject.set(x, "notEqualTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOR(value: js.Array[Query]): Self = StObject.set(x, "OR", value.asInstanceOf[js.Any])
+    inline def setOR(value: js.Array[Query]): Self = StObject.set(x, "OR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setORVarargs(value: Query*): Self = StObject.set(x, "OR", js.Array(value :_*))
+    inline def setORVarargs(value: Query*): Self = StObject.set(x, "OR", js.Array(value :_*))
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: CbCallback => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: CbCallback => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPage(value: (Double, Double) => Query): Self = StObject.set(x, "setPage", js.Any.fromFunction2(value))
+    inline def setSetPage(value: (Double, Double) => Query): Self = StObject.set(x, "setPage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (js.Object, CbCallback) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

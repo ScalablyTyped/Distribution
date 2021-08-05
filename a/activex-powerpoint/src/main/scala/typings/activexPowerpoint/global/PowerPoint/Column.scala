@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Column")
 @js.native
-class Column protected ()
+/* private */ class Column ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Column {
   
@@ -22,7 +22,7 @@ class Column protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Column_typekey")
   var PowerPointDotColumn_typekey: typings.activexPowerpoint.PowerPoint.Column = js.native
   

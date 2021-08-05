@@ -40,43 +40,31 @@ trait GoogleActionsV2Input extends StObject {
 }
 object GoogleActionsV2Input {
   
-  @scala.inline
-  def apply(): GoogleActionsV2Input = {
+  inline def apply(): GoogleActionsV2Input = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2Input]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2InputMutableBuilder[Self <: GoogleActionsV2Input] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2Input](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: GoogleActionsV2Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setCanvasState(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "canvasState", value.asInstanceOf[js.Any])
+    inline def setCanvasState(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "canvasState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasStateUndefined: Self = StObject.set(x, "canvasState", js.undefined)
+    inline def setCanvasStateUndefined: Self = StObject.set(x, "canvasState", js.undefined)
     
-    @scala.inline
-    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
-    @scala.inline
-    def setRawInputs(value: js.Array[GoogleActionsV2RawInput]): Self = StObject.set(x, "rawInputs", value.asInstanceOf[js.Any])
+    inline def setRawInputs(value: js.Array[GoogleActionsV2RawInput]): Self = StObject.set(x, "rawInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawInputsUndefined: Self = StObject.set(x, "rawInputs", js.undefined)
+    inline def setRawInputsUndefined: Self = StObject.set(x, "rawInputs", js.undefined)
     
-    @scala.inline
-    def setRawInputsVarargs(value: GoogleActionsV2RawInput*): Self = StObject.set(x, "rawInputs", js.Array(value :_*))
+    inline def setRawInputsVarargs(value: GoogleActionsV2RawInput*): Self = StObject.set(x, "rawInputs", js.Array(value :_*))
   }
 }

@@ -50,7 +50,7 @@ trait IMsoChartTitle extends StObject {
   
   val Name: String = js.native
   
-  @JSName("Office.IMsoChartTitle_typekey")
+  /* private */ @JSName("Office.IMsoChartTitle_typekey")
   var OfficeDotIMsoChartTitle_typekey: IMsoChartTitle = js.native
   
   var Orientation: js.Any = js.native

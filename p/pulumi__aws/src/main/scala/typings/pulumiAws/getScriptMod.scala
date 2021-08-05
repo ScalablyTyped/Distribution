@@ -13,10 +13,8 @@ object getScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getScript(args: GetScriptArgs): js.Promise[GetScriptResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScript")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetScriptResult]]
-  @scala.inline
-  def getScript(args: GetScriptArgs, opts: InvokeOptions): js.Promise[GetScriptResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getScript")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetScriptResult]]
+  inline def getScript(args: GetScriptArgs): js.Promise[GetScriptResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScript")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetScriptResult]]
+  inline def getScript(args: GetScriptArgs, opts: InvokeOptions): js.Promise[GetScriptResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getScript")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetScriptResult]]
   
   trait GetScriptArgs extends StObject {
     
@@ -37,32 +35,24 @@ object getScriptMod {
   }
   object GetScriptArgs {
     
-    @scala.inline
-    def apply(dagEdges: js.Array[GetScriptDagEdge], dagNodes: js.Array[GetScriptDagNode]): GetScriptArgs = {
+    inline def apply(dagEdges: js.Array[GetScriptDagEdge], dagNodes: js.Array[GetScriptDagNode]): GetScriptArgs = {
       val __obj = js.Dynamic.literal(dagEdges = dagEdges.asInstanceOf[js.Any], dagNodes = dagNodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetScriptArgs]
     }
     
-    @scala.inline
-    implicit class GetScriptArgsMutableBuilder[Self <: GetScriptArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetScriptArgs](x: Self) {
       
-      @scala.inline
-      def setDagEdges(value: js.Array[GetScriptDagEdge]): Self = StObject.set(x, "dagEdges", value.asInstanceOf[js.Any])
+      inline def setDagEdges(value: js.Array[GetScriptDagEdge]): Self = StObject.set(x, "dagEdges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDagEdgesVarargs(value: GetScriptDagEdge*): Self = StObject.set(x, "dagEdges", js.Array(value :_*))
+      inline def setDagEdgesVarargs(value: GetScriptDagEdge*): Self = StObject.set(x, "dagEdges", js.Array(value :_*))
       
-      @scala.inline
-      def setDagNodes(value: js.Array[GetScriptDagNode]): Self = StObject.set(x, "dagNodes", value.asInstanceOf[js.Any])
+      inline def setDagNodes(value: js.Array[GetScriptDagNode]): Self = StObject.set(x, "dagNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDagNodesVarargs(value: GetScriptDagNode*): Self = StObject.set(x, "dagNodes", js.Array(value :_*))
+      inline def setDagNodesVarargs(value: GetScriptDagNode*): Self = StObject.set(x, "dagNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     }
   }
   
@@ -91,8 +81,7 @@ object getScriptMod {
   }
   object GetScriptResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dagEdges: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagEdge],
       dagNodes: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagNode],
       id: String,
@@ -103,35 +92,25 @@ object getScriptMod {
       __obj.asInstanceOf[GetScriptResult]
     }
     
-    @scala.inline
-    implicit class GetScriptResultMutableBuilder[Self <: GetScriptResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetScriptResult](x: Self) {
       
-      @scala.inline
-      def setDagEdges(value: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagEdge]): Self = StObject.set(x, "dagEdges", value.asInstanceOf[js.Any])
+      inline def setDagEdges(value: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagEdge]): Self = StObject.set(x, "dagEdges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDagEdgesVarargs(value: typings.pulumiAws.outputMod.glue.GetScriptDagEdge*): Self = StObject.set(x, "dagEdges", js.Array(value :_*))
+      inline def setDagEdgesVarargs(value: typings.pulumiAws.outputMod.glue.GetScriptDagEdge*): Self = StObject.set(x, "dagEdges", js.Array(value :_*))
       
-      @scala.inline
-      def setDagNodes(value: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagNode]): Self = StObject.set(x, "dagNodes", value.asInstanceOf[js.Any])
+      inline def setDagNodes(value: js.Array[typings.pulumiAws.outputMod.glue.GetScriptDagNode]): Self = StObject.set(x, "dagNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDagNodesVarargs(value: typings.pulumiAws.outputMod.glue.GetScriptDagNode*): Self = StObject.set(x, "dagNodes", js.Array(value :_*))
+      inline def setDagNodesVarargs(value: typings.pulumiAws.outputMod.glue.GetScriptDagNode*): Self = StObject.set(x, "dagNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setPythonScript(value: String): Self = StObject.set(x, "pythonScript", value.asInstanceOf[js.Any])
+      inline def setPythonScript(value: String): Self = StObject.set(x, "pythonScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalaCode(value: String): Self = StObject.set(x, "scalaCode", value.asInstanceOf[js.Any])
+      inline def setScalaCode(value: String): Self = StObject.set(x, "scalaCode", value.asInstanceOf[js.Any])
     }
   }
 }

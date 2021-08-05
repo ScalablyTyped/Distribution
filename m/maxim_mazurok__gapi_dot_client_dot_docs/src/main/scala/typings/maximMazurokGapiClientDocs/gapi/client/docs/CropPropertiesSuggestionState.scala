@@ -23,43 +23,31 @@ trait CropPropertiesSuggestionState extends StObject {
 }
 object CropPropertiesSuggestionState {
   
-  @scala.inline
-  def apply(): CropPropertiesSuggestionState = {
+  inline def apply(): CropPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CropPropertiesSuggestionState]
   }
   
-  @scala.inline
-  implicit class CropPropertiesSuggestionStateMutableBuilder[Self <: CropPropertiesSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: CropPropertiesSuggestionState](x: Self) {
     
-    @scala.inline
-    def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
+    inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
+    inline def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
     
-    @scala.inline
-    def setOffsetBottomSuggested(value: Boolean): Self = StObject.set(x, "offsetBottomSuggested", value.asInstanceOf[js.Any])
+    inline def setOffsetBottomSuggested(value: Boolean): Self = StObject.set(x, "offsetBottomSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetBottomSuggestedUndefined: Self = StObject.set(x, "offsetBottomSuggested", js.undefined)
+    inline def setOffsetBottomSuggestedUndefined: Self = StObject.set(x, "offsetBottomSuggested", js.undefined)
     
-    @scala.inline
-    def setOffsetLeftSuggested(value: Boolean): Self = StObject.set(x, "offsetLeftSuggested", value.asInstanceOf[js.Any])
+    inline def setOffsetLeftSuggested(value: Boolean): Self = StObject.set(x, "offsetLeftSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetLeftSuggestedUndefined: Self = StObject.set(x, "offsetLeftSuggested", js.undefined)
+    inline def setOffsetLeftSuggestedUndefined: Self = StObject.set(x, "offsetLeftSuggested", js.undefined)
     
-    @scala.inline
-    def setOffsetRightSuggested(value: Boolean): Self = StObject.set(x, "offsetRightSuggested", value.asInstanceOf[js.Any])
+    inline def setOffsetRightSuggested(value: Boolean): Self = StObject.set(x, "offsetRightSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetRightSuggestedUndefined: Self = StObject.set(x, "offsetRightSuggested", js.undefined)
+    inline def setOffsetRightSuggestedUndefined: Self = StObject.set(x, "offsetRightSuggested", js.undefined)
     
-    @scala.inline
-    def setOffsetTopSuggested(value: Boolean): Self = StObject.set(x, "offsetTopSuggested", value.asInstanceOf[js.Any])
+    inline def setOffsetTopSuggested(value: Boolean): Self = StObject.set(x, "offsetTopSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetTopSuggestedUndefined: Self = StObject.set(x, "offsetTopSuggested", js.undefined)
+    inline def setOffsetTopSuggestedUndefined: Self = StObject.set(x, "offsetTopSuggested", js.undefined)
   }
 }

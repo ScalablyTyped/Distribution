@@ -30,7 +30,7 @@ object listIdentitiesCommandMod {
         ] {
     def this(input: ListIdentitiesCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object listIdentitiesCommandMod {
       options: HttpHandlerOptions
     ): Handler[ListIdentitiesCommandInput, ListIdentitiesCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type ListIdentitiesCommandInput = ListIdentitiesInput
@@ -54,8 +54,7 @@ object listIdentitiesCommandMod {
        with _ServiceOutputTypes
   object ListIdentitiesCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListIdentitiesCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): ListIdentitiesCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListIdentitiesCommandOutput]
     }

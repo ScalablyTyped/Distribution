@@ -21,25 +21,19 @@ trait SchemaIntegerGauge extends StObject {
 }
 object SchemaIntegerGauge {
   
-  @scala.inline
-  def apply(): SchemaIntegerGauge = {
+  inline def apply(): SchemaIntegerGauge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIntegerGauge]
   }
   
-  @scala.inline
-  implicit class SchemaIntegerGaugeMutableBuilder[Self <: SchemaIntegerGauge] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIntegerGauge](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setValue(value: SchemaSplitInt64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SchemaSplitInt64): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

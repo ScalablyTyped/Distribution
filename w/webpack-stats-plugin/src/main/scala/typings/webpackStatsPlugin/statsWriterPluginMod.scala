@@ -44,46 +44,34 @@ object statsWriterPluginMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsNull: Self = StObject.set(x, "fields", null)
+      inline def setFieldsNull: Self = StObject.set(x, "fields", null)
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setStats(value: StringDictionary[js.Any] | String): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: StringDictionary[js.Any] | String): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (/* data */ StringDictionary[js.Any], /* options */ js.UndefOr[TransformOptions]) => String | js.Promise[String]
       ): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -117,19 +105,16 @@ object statsWriterPluginMod {
   }
   object TransformOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
     ): TransformOptions = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformOptions]
     }
     
-    @scala.inline
-    implicit class TransformOptionsMutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransformOptions](x: Self) {
       
-      @scala.inline
-      def setCompiler(
+      inline def setCompiler(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
       ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     }

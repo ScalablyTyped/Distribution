@@ -13,19 +13,15 @@ trait GetDASHStreamingSessionURLOutput extends StObject {
 }
 object GetDASHStreamingSessionURLOutput {
   
-  @scala.inline
-  def apply(): GetDASHStreamingSessionURLOutput = {
+  inline def apply(): GetDASHStreamingSessionURLOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDASHStreamingSessionURLOutput]
   }
   
-  @scala.inline
-  implicit class GetDASHStreamingSessionURLOutputMutableBuilder[Self <: GetDASHStreamingSessionURLOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDASHStreamingSessionURLOutput](x: Self) {
     
-    @scala.inline
-    def setDASHStreamingSessionURL(value: DASHStreamingSessionURL): Self = StObject.set(x, "DASHStreamingSessionURL", value.asInstanceOf[js.Any])
+    inline def setDASHStreamingSessionURL(value: DASHStreamingSessionURL): Self = StObject.set(x, "DASHStreamingSessionURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDASHStreamingSessionURLUndefined: Self = StObject.set(x, "DASHStreamingSessionURL", js.undefined)
+    inline def setDASHStreamingSessionURLUndefined: Self = StObject.set(x, "DASHStreamingSessionURL", js.undefined)
   }
 }

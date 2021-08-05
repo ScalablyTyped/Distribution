@@ -17,17 +17,14 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(pending: Boolean): Dictkey = {
+    inline def apply(pending: Boolean): Dictkey = {
       val __obj = js.Dynamic.literal(pending = pending.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     }
   }
 }

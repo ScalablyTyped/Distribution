@@ -12,11 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def css(options: Options, callback: Callback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def css(options: Options, callback: Callback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("css")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def html(options: Options, callback: Callback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def html(options: Options, callback: Callback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Callback = js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
   
@@ -150,83 +148,58 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(fileContent: String): Options = {
+    inline def apply(fileContent: String): Options = {
       val __obj = js.Dynamic.literal(fileContent = fileContent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+      inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImages(value: Boolean | Double): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: Boolean | Double): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setInlineAttribute(value: String): Self = StObject.set(x, "inlineAttribute", value.asInstanceOf[js.Any])
+      inline def setInlineAttribute(value: String): Self = StObject.set(x, "inlineAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineAttributeUndefined: Self = StObject.set(x, "inlineAttribute", js.undefined)
+      inline def setInlineAttributeUndefined: Self = StObject.set(x, "inlineAttribute", js.undefined)
       
-      @scala.inline
-      def setLinkTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "linkTransform", js.Any.fromFunction2(value))
+      inline def setLinkTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "linkTransform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLinkTransformUndefined: Self = StObject.set(x, "linkTransform", js.undefined)
+      inline def setLinkTransformUndefined: Self = StObject.set(x, "linkTransform", js.undefined)
       
-      @scala.inline
-      def setLinks(value: Boolean | Double): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Boolean | Double): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setRebaseRelativeTo(value: String): Self = StObject.set(x, "rebaseRelativeTo", value.asInstanceOf[js.Any])
+      inline def setRebaseRelativeTo(value: String): Self = StObject.set(x, "rebaseRelativeTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRebaseRelativeToUndefined: Self = StObject.set(x, "rebaseRelativeTo", js.undefined)
+      inline def setRebaseRelativeToUndefined: Self = StObject.set(x, "rebaseRelativeTo", js.undefined)
       
-      @scala.inline
-      def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+      inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
+      inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
       
-      @scala.inline
-      def setRequestTransform(value: /* requestOptions */ RequiredUriUrl & CoreOptions => RequiredUriUrl & CoreOptions): Self = StObject.set(x, "requestTransform", js.Any.fromFunction1(value))
+      inline def setRequestTransform(value: /* requestOptions */ RequiredUriUrl & CoreOptions => RequiredUriUrl & CoreOptions): Self = StObject.set(x, "requestTransform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestTransformUndefined: Self = StObject.set(x, "requestTransform", js.undefined)
+      inline def setRequestTransformUndefined: Self = StObject.set(x, "requestTransform", js.undefined)
       
-      @scala.inline
-      def setScriptTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "scriptTransform", js.Any.fromFunction2(value))
+      inline def setScriptTransform(value: (/* content */ String, /* done */ Callback) => js.Any): Self = StObject.set(x, "scriptTransform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScriptTransformUndefined: Self = StObject.set(x, "scriptTransform", js.undefined)
+      inline def setScriptTransformUndefined: Self = StObject.set(x, "scriptTransform", js.undefined)
       
-      @scala.inline
-      def setScripts(value: Boolean | Double): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: Boolean | Double): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setSvgs(value: Boolean | Double): Self = StObject.set(x, "svgs", value.asInstanceOf[js.Any])
+      inline def setSvgs(value: Boolean | Double): Self = StObject.set(x, "svgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgsUndefined: Self = StObject.set(x, "svgs", js.undefined)
+      inline def setSvgsUndefined: Self = StObject.set(x, "svgs", js.undefined)
     }
   }
 }

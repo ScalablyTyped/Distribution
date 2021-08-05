@@ -14,22 +14,17 @@ trait RemoteInfo[T] extends StObject {
 }
 object RemoteInfo {
   
-  @scala.inline
-  def apply[T](isIndexing: Boolean, original: T, patch: JSONDiff[T]): RemoteInfo[T] = {
+  inline def apply[T](isIndexing: Boolean, original: T, patch: JSONDiff[T]): RemoteInfo[T] = {
     val __obj = js.Dynamic.literal(isIndexing = isIndexing.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteInfo[T]]
   }
   
-  @scala.inline
-  implicit class RemoteInfoMutableBuilder[Self <: RemoteInfo[?], T] (val x: Self & RemoteInfo[T]) extends AnyVal {
+  extension [Self <: RemoteInfo[?], T](x: Self & RemoteInfo[T]) {
     
-    @scala.inline
-    def setIsIndexing(value: Boolean): Self = StObject.set(x, "isIndexing", value.asInstanceOf[js.Any])
+    inline def setIsIndexing(value: Boolean): Self = StObject.set(x, "isIndexing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal(value: T): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: T): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatch(value: JSONDiff[T]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: JSONDiff[T]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

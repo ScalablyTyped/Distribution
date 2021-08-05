@@ -23,14 +23,14 @@ object stateRegistryMod {
     def this(router: UIRouter) = this()
     
     /** @internal */
-    var _deregisterTree: js.Any = js.native
+    /* private */ var _deregisterTree: js.Any = js.native
     
     /** @internal */
-    var _registerRoot: js.Any = js.native
+    /* private */ var _registerRoot: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var builder: js.Any = js.native
+    /* private */ var builder: js.Any = js.native
     
     /**
       * Registers a [[BuilderFunction]] for a specific [[StateObject]] property (e.g., `parent`, `url`, or `path`).
@@ -143,12 +143,12 @@ object stateRegistryMod {
       */
     def root(): StateObject = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /** @internal */
     var stateQueue: StateQueueManager = js.native
     
-    var states: js.Any = js.native
+    /* private */ var states: js.Any = js.native
   }
   
   type StateRegistryListener = js.Function2[/* event */ registered | deregistered, /* states */ js.Array[StateDeclaration], Unit]

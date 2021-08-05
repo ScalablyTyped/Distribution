@@ -28,17 +28,14 @@ object anon {
   }
   object TypeofAST {
     
-    @scala.inline
-    def apply(helpers: helpers): TypeofAST = {
+    inline def apply(helpers: helpers): TypeofAST = {
       val __obj = js.Dynamic.literal(helpers = helpers.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofAST]
     }
     
-    @scala.inline
-    implicit class TypeofASTMutableBuilder[Self <: TypeofAST] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofAST](x: Self) {
       
-      @scala.inline
-      def setHelpers(value: helpers): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+      inline def setHelpers(value: helpers): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,8 +129,7 @@ object anon {
   }
   object TypeofUtils {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blockParams: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any],
       createFrame: js.Any => js.Any,
       escapeExpression: String => String,
@@ -148,32 +144,23 @@ object anon {
       __obj.asInstanceOf[TypeofUtils]
     }
     
-    @scala.inline
-    implicit class TypeofUtilsMutableBuilder[Self <: TypeofUtils] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofUtils](x: Self) {
       
-      @scala.inline
-      def setBlockParams(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "blockParams", js.Any.fromFunction2(value))
+      inline def setBlockParams(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "blockParams", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateFrame(value: js.Any => js.Any): Self = StObject.set(x, "createFrame", js.Any.fromFunction1(value))
+      inline def setCreateFrame(value: js.Any => js.Any): Self = StObject.set(x, "createFrame", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeExpression(value: String => String): Self = StObject.set(x, "escapeExpression", js.Any.fromFunction1(value))
+      inline def setEscapeExpression(value: String => String): Self = StObject.set(x, "escapeExpression", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtend(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
+      inline def setExtend(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsArray(value: js.Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
+      inline def setIsArray(value: js.Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+      inline def setIsEmpty(value: js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFunction(value: js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
+      inline def setIsFunction(value: js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToString_(value: js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+      inline def setToString_(value: js.Any => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     }
   }
   

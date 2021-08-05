@@ -13,16 +13,13 @@ trait GetClusterCertificateAuthority extends StObject {
 }
 object GetClusterCertificateAuthority {
   
-  @scala.inline
-  def apply(data: String): GetClusterCertificateAuthority = {
+  inline def apply(data: String): GetClusterCertificateAuthority = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterCertificateAuthority]
   }
   
-  @scala.inline
-  implicit class GetClusterCertificateAuthorityMutableBuilder[Self <: GetClusterCertificateAuthority] (val x: Self) extends AnyVal {
+  extension [Self <: GetClusterCertificateAuthority](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

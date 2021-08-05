@@ -105,38 +105,28 @@ object saveMod {
   }
   object SaveObject {
     
-    @scala.inline
-    def apply(date: Double, id: String, state: SavedState, title: String): SaveObject = {
+    inline def apply(date: Double, id: String, state: SavedState, title: String): SaveObject = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[SaveObject]
     }
     
-    @scala.inline
-    implicit class SaveObjectMutableBuilder[Self <: SaveObject] (val x: Self) extends AnyVal {
+    extension [Self <: SaveObject](x: Self) {
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setState(value: SavedState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: SavedState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -153,26 +143,20 @@ object saveMod {
   }
   object SavedMoment {
     
-    @scala.inline
-    def apply(title: String, variables: StringDictionary[js.Any]): SavedMoment = {
+    inline def apply(title: String, variables: StringDictionary[js.Any]): SavedMoment = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[SavedMoment]
     }
     
-    @scala.inline
-    implicit class SavedMomentMutableBuilder[Self <: SavedMoment] (val x: Self) extends AnyVal {
+    extension [Self <: SavedMoment](x: Self) {
       
-      @scala.inline
-      def setPull(value: Double): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+      inline def setPull(value: Double): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
+      inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,32 +176,24 @@ object saveMod {
   }
   object SavedState {
     
-    @scala.inline
-    def apply(history: Array[SavedMoment], index: Double): SavedState = {
+    inline def apply(history: Array[SavedMoment], index: Double): SavedState = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[SavedState]
     }
     
-    @scala.inline
-    implicit class SavedStateMutableBuilder[Self <: SavedState] (val x: Self) extends AnyVal {
+    extension [Self <: SavedState](x: Self) {
       
-      @scala.inline
-      def setExpired(value: Array[String]): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+      inline def setExpired(value: Array[String]): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
+      inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
       
-      @scala.inline
-      def setHistory(value: Array[SavedMoment]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Array[SavedMoment]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+      inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     }
   }
 }

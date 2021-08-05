@@ -19,6 +19,5 @@ class Embed protected ()
 }
 object Embed {
   
-  @scala.inline
-  def apply: ComponentClass[EmbedProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Embed").asInstanceOf[ComponentClass[EmbedProps, ComponentState]]
+  inline def apply: ComponentClass[EmbedProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Embed").asInstanceOf[ComponentClass[EmbedProps, ComponentState]]
 }

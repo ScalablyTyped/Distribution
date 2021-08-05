@@ -72,21 +72,16 @@ object maintenanceWindowTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState, opts: CustomResourceOptions): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
+    inline def get(name: String, id: Input[ID]): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
+    inline def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
+    inline def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState, opts: CustomResourceOptions): MaintenanceWindowTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MaintenanceWindowTarget]
     
     /**
       * Returns true if the given object is an instance of MaintenanceWindowTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ Boolean]
   }
   
   trait MaintenanceWindowTargetArgs extends StObject {
@@ -124,8 +119,7 @@ object maintenanceWindowTargetMod {
   }
   object MaintenanceWindowTargetArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       resourceType: Input[String],
       targets: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]],
       windowId: Input[String]
@@ -134,38 +128,27 @@ object maintenanceWindowTargetMod {
       __obj.asInstanceOf[MaintenanceWindowTargetArgs]
     }
     
-    @scala.inline
-    implicit class MaintenanceWindowTargetArgsMutableBuilder[Self <: MaintenanceWindowTargetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: MaintenanceWindowTargetArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerInformation(value: Input[String]): Self = StObject.set(x, "ownerInformation", value.asInstanceOf[js.Any])
+      inline def setOwnerInformation(value: Input[String]): Self = StObject.set(x, "ownerInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerInformationUndefined: Self = StObject.set(x, "ownerInformation", js.undefined)
+      inline def setOwnerInformationUndefined: Self = StObject.set(x, "ownerInformation", js.undefined)
       
-      @scala.inline
-      def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+      inline def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
       
-      @scala.inline
-      def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,53 +189,38 @@ object maintenanceWindowTargetMod {
   }
   object MaintenanceWindowTargetState {
     
-    @scala.inline
-    def apply(): MaintenanceWindowTargetState = {
+    inline def apply(): MaintenanceWindowTargetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaintenanceWindowTargetState]
     }
     
-    @scala.inline
-    implicit class MaintenanceWindowTargetStateMutableBuilder[Self <: MaintenanceWindowTargetState] (val x: Self) extends AnyVal {
+    extension [Self <: MaintenanceWindowTargetState](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerInformation(value: Input[String]): Self = StObject.set(x, "ownerInformation", value.asInstanceOf[js.Any])
+      inline def setOwnerInformation(value: Input[String]): Self = StObject.set(x, "ownerInformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerInformationUndefined: Self = StObject.set(x, "ownerInformation", js.undefined)
+      inline def setOwnerInformationUndefined: Self = StObject.set(x, "ownerInformation", js.undefined)
       
-      @scala.inline
-      def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+      inline def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+      inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
       
-      @scala.inline
-      def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.MaintenanceWindowTargetTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
       
-      @scala.inline
-      def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Input[String]): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
 }

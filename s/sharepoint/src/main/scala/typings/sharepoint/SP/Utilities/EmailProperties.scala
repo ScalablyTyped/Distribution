@@ -41,8 +41,7 @@ trait EmailProperties
 }
 object EmailProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -67,49 +66,34 @@ object EmailProperties {
     __obj.asInstanceOf[EmailProperties]
   }
   
-  @scala.inline
-  implicit class EmailPropertiesMutableBuilder[Self <: EmailProperties] (val x: Self) extends AnyVal {
+  extension [Self <: EmailProperties](x: Self) {
     
-    @scala.inline
-    def setGet_additionalHeaders(value: () => js.Any): Self = StObject.set(x, "get_additionalHeaders", js.Any.fromFunction0(value))
+    inline def setGet_additionalHeaders(value: () => js.Any): Self = StObject.set(x, "get_additionalHeaders", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_bCC(value: () => js.Array[String]): Self = StObject.set(x, "get_bCC", js.Any.fromFunction0(value))
+    inline def setGet_bCC(value: () => js.Array[String]): Self = StObject.set(x, "get_bCC", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
+    inline def setGet_body(value: () => String): Self = StObject.set(x, "get_body", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_cC(value: () => js.Array[String]): Self = StObject.set(x, "get_cC", js.Any.fromFunction0(value))
+    inline def setGet_cC(value: () => js.Array[String]): Self = StObject.set(x, "get_cC", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_from(value: () => String): Self = StObject.set(x, "get_from", js.Any.fromFunction0(value))
+    inline def setGet_from(value: () => String): Self = StObject.set(x, "get_from", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_subject(value: () => String): Self = StObject.set(x, "get_subject", js.Any.fromFunction0(value))
+    inline def setGet_subject(value: () => String): Self = StObject.set(x, "get_subject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_to(value: () => js.Array[String]): Self = StObject.set(x, "get_to", js.Any.fromFunction0(value))
+    inline def setGet_to(value: () => js.Array[String]): Self = StObject.set(x, "get_to", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_additionalHeaders(value: js.Any => Unit): Self = StObject.set(x, "set_additionalHeaders", js.Any.fromFunction1(value))
+    inline def setSet_additionalHeaders(value: js.Any => Unit): Self = StObject.set(x, "set_additionalHeaders", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_bCC(value: js.Array[String] => Unit): Self = StObject.set(x, "set_bCC", js.Any.fromFunction1(value))
+    inline def setSet_bCC(value: js.Array[String] => Unit): Self = StObject.set(x, "set_bCC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
+    inline def setSet_body(value: String => Unit): Self = StObject.set(x, "set_body", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_cC(value: js.Array[String] => Unit): Self = StObject.set(x, "set_cC", js.Any.fromFunction1(value))
+    inline def setSet_cC(value: js.Array[String] => Unit): Self = StObject.set(x, "set_cC", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_from(value: String => Unit): Self = StObject.set(x, "set_from", js.Any.fromFunction1(value))
+    inline def setSet_from(value: String => Unit): Self = StObject.set(x, "set_from", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_subject(value: String => Unit): Self = StObject.set(x, "set_subject", js.Any.fromFunction1(value))
+    inline def setSet_subject(value: String => Unit): Self = StObject.set(x, "set_subject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_to(value: js.Array[String] => Unit): Self = StObject.set(x, "set_to", js.Any.fromFunction1(value))
+    inline def setSet_to(value: js.Array[String] => Unit): Self = StObject.set(x, "set_to", js.Any.fromFunction1(value))
   }
 }

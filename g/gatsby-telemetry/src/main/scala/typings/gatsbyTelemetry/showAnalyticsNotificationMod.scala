@@ -11,12 +11,8 @@ object showAnalyticsNotificationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def showAnalyticsNotification(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")().asInstanceOf[Unit]
-  @scala.inline
-  def showAnalyticsNotification(config: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")(config.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def showAnalyticsNotification(config: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def showAnalyticsNotification(config: Options, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")(config.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showAnalyticsNotification(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")().asInstanceOf[Unit]
+  inline def showAnalyticsNotification(config: Unit, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")(config.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showAnalyticsNotification(config: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def showAnalyticsNotification(config: Options, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showAnalyticsNotification")(config.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -26,67 +26,47 @@ trait Outpost extends StObject {
 }
 object Outpost {
   
-  @scala.inline
-  def apply(): Outpost = {
+  inline def apply(): Outpost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Outpost]
   }
   
-  @scala.inline
-  implicit class OutpostMutableBuilder[Self <: Outpost] (val x: Self) extends AnyVal {
+  extension [Self <: Outpost](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneId(value: AvailabilityZoneId): Self = StObject.set(x, "AvailabilityZoneId", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZoneId(value: AvailabilityZoneId): Self = StObject.set(x, "AvailabilityZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "AvailabilityZoneId", js.undefined)
+    inline def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "AvailabilityZoneId", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setDescription(value: OutpostDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: OutpostDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setLifeCycleStatus(value: LifeCycleStatus): Self = StObject.set(x, "LifeCycleStatus", value.asInstanceOf[js.Any])
+    inline def setLifeCycleStatus(value: LifeCycleStatus): Self = StObject.set(x, "LifeCycleStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifeCycleStatusUndefined: Self = StObject.set(x, "LifeCycleStatus", js.undefined)
+    inline def setLifeCycleStatusUndefined: Self = StObject.set(x, "LifeCycleStatus", js.undefined)
     
-    @scala.inline
-    def setName(value: OutpostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: OutpostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOutpostArn(value: OutpostArn): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    inline def setOutpostArn(value: OutpostArn): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
-    @scala.inline
-    def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
+    inline def setOutpostId(value: OutpostId): Self = StObject.set(x, "OutpostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
+    inline def setOutpostIdUndefined: Self = StObject.set(x, "OutpostId", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: OwnerId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: OwnerId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
+    inline def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
   }
 }

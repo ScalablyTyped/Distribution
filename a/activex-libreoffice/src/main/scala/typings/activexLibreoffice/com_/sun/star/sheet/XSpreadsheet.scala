@@ -27,8 +27,7 @@ trait XSpreadsheet
 }
 object XSpreadsheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Spreadsheet: XSpreadsheet,
     acquire: () => Unit,
     createCursor: () => XSheetCellCursor,
@@ -44,13 +43,10 @@ object XSpreadsheet {
     __obj.asInstanceOf[XSpreadsheet]
   }
   
-  @scala.inline
-  implicit class XSpreadsheetMutableBuilder[Self <: XSpreadsheet] (val x: Self) extends AnyVal {
+  extension [Self <: XSpreadsheet](x: Self) {
     
-    @scala.inline
-    def setCreateCursor(value: () => XSheetCellCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction0(value))
+    inline def setCreateCursor(value: () => XSheetCellCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateCursorByRange(value: XSheetCellRange => XSheetCellCursor): Self = StObject.set(x, "createCursorByRange", js.Any.fromFunction1(value))
+    inline def setCreateCursorByRange(value: XSheetCellRange => XSheetCellCursor): Self = StObject.set(x, "createCursorByRange", js.Any.fromFunction1(value))
   }
 }

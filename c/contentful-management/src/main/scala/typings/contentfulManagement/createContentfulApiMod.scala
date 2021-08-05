@@ -13,8 +13,7 @@ object createContentfulApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasHttp: Http): CreatePersonalAccessToken = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttp.asInstanceOf[js.Any]).asInstanceOf[CreatePersonalAccessToken]
+  inline def default(hasHttp: Http): CreatePersonalAccessToken = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttp.asInstanceOf[js.Any]).asInstanceOf[CreatePersonalAccessToken]
   
   type ClientAPI = ReturnType[js.Function1[/* hasHttp */ Http, CreatePersonalAccessToken]]
 }

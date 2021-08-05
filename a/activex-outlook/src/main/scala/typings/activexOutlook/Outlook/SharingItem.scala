@@ -125,7 +125,7 @@ trait SharingItem extends StObject {
   
   var OriginatorDeliveryReportRequested: Boolean = js.native
   
-  @JSName("Outlook.SharingItem_typekey")
+  /* private */ @JSName("Outlook.SharingItem_typekey")
   var OutlookDotSharingItem_typekey: SharingItem = js.native
   
   val OutlookInternalVersion: Double = js.native

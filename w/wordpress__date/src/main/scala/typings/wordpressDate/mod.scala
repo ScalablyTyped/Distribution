@@ -14,40 +14,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def date(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def date(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def date(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def date(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def dateI18n(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def dateI18n(dateFormat: String, dateValue: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def dateI18n(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def dateI18n(dateFormat: String, dateValue: MomentInput, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String, dateValue: Unit, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def dateI18n(dateFormat: String, dateValue: MomentInput, gmt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("dateI18n")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def format(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def format(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")().asInstanceOf[Date]
-  @scala.inline
-  def getDate(dateValue: MomentInput): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def getDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")().asInstanceOf[Date]
+  inline def getDate(dateValue: MomentInput): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @scala.inline
-  def gmdate(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def gmdate(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def gmdate(dateFormat: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def gmdate(dateFormat: String, dateValue: MomentInput): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gmdate")(dateFormat.asInstanceOf[js.Any], dateValue.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def isInTheFuture(dateValue: MomentInput): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTheFuture")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInTheFuture(dateValue: MomentInput): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInTheFuture")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def setSettings(dateSettings: DateSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSettings")(dateSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSettings(dateSettings: DateSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSettings")(dateSettings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait DateSettings extends StObject {
     
@@ -59,23 +45,18 @@ object mod {
   }
   object DateSettings {
     
-    @scala.inline
-    def apply(formats: typings.wordpressDate.anon.Date, l10n: Locale, timezone: Offset): DateSettings = {
+    inline def apply(formats: typings.wordpressDate.anon.Date, l10n: Locale, timezone: Offset): DateSettings = {
       val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any], l10n = l10n.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any])
       __obj.asInstanceOf[DateSettings]
     }
     
-    @scala.inline
-    implicit class DateSettingsMutableBuilder[Self <: DateSettings] (val x: Self) extends AnyVal {
+    extension [Self <: DateSettings](x: Self) {
       
-      @scala.inline
-      def setFormats(value: typings.wordpressDate.anon.Date): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: typings.wordpressDate.anon.Date): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL10n(value: Locale): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
+      inline def setL10n(value: Locale): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezone(value: Offset): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: Offset): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }
   }
 }

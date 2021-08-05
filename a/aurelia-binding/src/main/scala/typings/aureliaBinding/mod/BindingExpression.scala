@@ -10,16 +10,13 @@ trait BindingExpression extends StObject {
 }
 object BindingExpression {
   
-  @scala.inline
-  def apply(createBinding: js.Any => Binding): BindingExpression = {
+  inline def apply(createBinding: js.Any => Binding): BindingExpression = {
     val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction1(createBinding))
     __obj.asInstanceOf[BindingExpression]
   }
   
-  @scala.inline
-  implicit class BindingExpressionMutableBuilder[Self <: BindingExpression] (val x: Self) extends AnyVal {
+  extension [Self <: BindingExpression](x: Self) {
     
-    @scala.inline
-    def setCreateBinding(value: js.Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
+    inline def setCreateBinding(value: js.Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
   }
 }

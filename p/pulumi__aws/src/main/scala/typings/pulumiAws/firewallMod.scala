@@ -97,21 +97,16 @@ object firewallMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Firewall]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Firewall]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FirewallState): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Firewall]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FirewallState, opts: CustomResourceOptions): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Firewall]
+    inline def get(name: String, id: Input[ID]): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Firewall]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Firewall]
+    inline def get(name: String, id: Input[ID], state: FirewallState): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Firewall]
+    inline def get(name: String, id: Input[ID], state: FirewallState, opts: CustomResourceOptions): Firewall = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Firewall]
     
     /**
       * Returns true if the given object is an instance of Firewall.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/firewall.Firewall */ Boolean]
   }
   
   trait FirewallArgs extends StObject {
@@ -165,8 +160,7 @@ object firewallMod {
   }
   object FirewallArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firewallPolicyArn: Input[String],
       subnetMappings: Input[
           js.Array[Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]]
@@ -177,60 +171,43 @@ object firewallMod {
       __obj.asInstanceOf[FirewallArgs]
     }
     
-    @scala.inline
-    implicit class FirewallArgsMutableBuilder[Self <: FirewallArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FirewallArgs](x: Self) {
       
-      @scala.inline
-      def setDeleteProtection(value: Input[Boolean]): Self = StObject.set(x, "deleteProtection", value.asInstanceOf[js.Any])
+      inline def setDeleteProtection(value: Input[Boolean]): Self = StObject.set(x, "deleteProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteProtectionUndefined: Self = StObject.set(x, "deleteProtection", js.undefined)
+      inline def setDeleteProtectionUndefined: Self = StObject.set(x, "deleteProtection", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFirewallPolicyArn(value: Input[String]): Self = StObject.set(x, "firewallPolicyArn", value.asInstanceOf[js.Any])
+      inline def setFirewallPolicyArn(value: Input[String]): Self = StObject.set(x, "firewallPolicyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirewallPolicyChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "firewallPolicyChangeProtection", value.asInstanceOf[js.Any])
+      inline def setFirewallPolicyChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "firewallPolicyChangeProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirewallPolicyChangeProtectionUndefined: Self = StObject.set(x, "firewallPolicyChangeProtection", js.undefined)
+      inline def setFirewallPolicyChangeProtectionUndefined: Self = StObject.set(x, "firewallPolicyChangeProtection", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSubnetChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "subnetChangeProtection", value.asInstanceOf[js.Any])
+      inline def setSubnetChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "subnetChangeProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetChangeProtectionUndefined: Self = StObject.set(x, "subnetChangeProtection", js.undefined)
+      inline def setSubnetChangeProtectionUndefined: Self = StObject.set(x, "subnetChangeProtection", js.undefined)
       
-      @scala.inline
-      def setSubnetMappings(
+      inline def setSubnetMappings(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]]
             ]
       ): Self = StObject.set(x, "subnetMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetMappingsVarargs(value: Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]*): Self = StObject.set(x, "subnetMappings", js.Array(value :_*))
+      inline def setSubnetMappingsVarargs(value: Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]*): Self = StObject.set(x, "subnetMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,87 +274,62 @@ object firewallMod {
   }
   object FirewallState {
     
-    @scala.inline
-    def apply(): FirewallState = {
+    inline def apply(): FirewallState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirewallState]
     }
     
-    @scala.inline
-    implicit class FirewallStateMutableBuilder[Self <: FirewallState] (val x: Self) extends AnyVal {
+    extension [Self <: FirewallState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDeleteProtection(value: Input[Boolean]): Self = StObject.set(x, "deleteProtection", value.asInstanceOf[js.Any])
+      inline def setDeleteProtection(value: Input[Boolean]): Self = StObject.set(x, "deleteProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteProtectionUndefined: Self = StObject.set(x, "deleteProtection", js.undefined)
+      inline def setDeleteProtectionUndefined: Self = StObject.set(x, "deleteProtection", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setFirewallPolicyArn(value: Input[String]): Self = StObject.set(x, "firewallPolicyArn", value.asInstanceOf[js.Any])
+      inline def setFirewallPolicyArn(value: Input[String]): Self = StObject.set(x, "firewallPolicyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirewallPolicyArnUndefined: Self = StObject.set(x, "firewallPolicyArn", js.undefined)
+      inline def setFirewallPolicyArnUndefined: Self = StObject.set(x, "firewallPolicyArn", js.undefined)
       
-      @scala.inline
-      def setFirewallPolicyChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "firewallPolicyChangeProtection", value.asInstanceOf[js.Any])
+      inline def setFirewallPolicyChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "firewallPolicyChangeProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirewallPolicyChangeProtectionUndefined: Self = StObject.set(x, "firewallPolicyChangeProtection", js.undefined)
+      inline def setFirewallPolicyChangeProtectionUndefined: Self = StObject.set(x, "firewallPolicyChangeProtection", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSubnetChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "subnetChangeProtection", value.asInstanceOf[js.Any])
+      inline def setSubnetChangeProtection(value: Input[Boolean]): Self = StObject.set(x, "subnetChangeProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetChangeProtectionUndefined: Self = StObject.set(x, "subnetChangeProtection", js.undefined)
+      inline def setSubnetChangeProtectionUndefined: Self = StObject.set(x, "subnetChangeProtection", js.undefined)
       
-      @scala.inline
-      def setSubnetMappings(
+      inline def setSubnetMappings(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]]
             ]
       ): Self = StObject.set(x, "subnetMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetMappingsUndefined: Self = StObject.set(x, "subnetMappings", js.undefined)
+      inline def setSubnetMappingsUndefined: Self = StObject.set(x, "subnetMappings", js.undefined)
       
-      @scala.inline
-      def setSubnetMappingsVarargs(value: Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]*): Self = StObject.set(x, "subnetMappings", js.Array(value :_*))
+      inline def setSubnetMappingsVarargs(value: Input[typings.pulumiAws.inputMod.networkfirewall.FirewallSubnetMapping]*): Self = StObject.set(x, "subnetMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUpdateToken(value: Input[String]): Self = StObject.set(x, "updateToken", value.asInstanceOf[js.Any])
+      inline def setUpdateToken(value: Input[String]): Self = StObject.set(x, "updateToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateTokenUndefined: Self = StObject.set(x, "updateToken", js.undefined)
+      inline def setUpdateTokenUndefined: Self = StObject.set(x, "updateToken", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

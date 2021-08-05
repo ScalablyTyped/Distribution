@@ -36,38 +36,28 @@ object typesListIdentitiesOutputMod {
   }
   object ListIdentitiesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListIdentitiesOutput = {
+    inline def apply($metadata: ResponseMetadata): ListIdentitiesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListIdentitiesOutput]
     }
     
-    @scala.inline
-    implicit class ListIdentitiesOutputMutableBuilder[Self <: ListIdentitiesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListIdentitiesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentities(value: js.Array[UnmarshalledIdentityDescription]): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
+      inline def setIdentities(value: js.Array[UnmarshalledIdentityDescription]): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
+      inline def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
       
-      @scala.inline
-      def setIdentitiesVarargs(value: UnmarshalledIdentityDescription*): Self = StObject.set(x, "Identities", js.Array(value :_*))
+      inline def setIdentitiesVarargs(value: UnmarshalledIdentityDescription*): Self = StObject.set(x, "Identities", js.Array(value :_*))
       
-      @scala.inline
-      def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+      inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+      inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
 }

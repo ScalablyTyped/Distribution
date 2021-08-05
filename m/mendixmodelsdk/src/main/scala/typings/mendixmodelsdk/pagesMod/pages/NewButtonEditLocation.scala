@@ -21,20 +21,17 @@ object NewButtonEditLocation {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NewButtonEditLocation.Form")
   @js.native
   def Form: NewButtonEditLocation = js.native
-  @scala.inline
-  def Form_=(x: NewButtonEditLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
+  inline def Form_=(x: NewButtonEditLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Form")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NewButtonEditLocation.InlineAtBottom")
   @js.native
   def InlineAtBottom: NewButtonEditLocation = js.native
-  @scala.inline
-  def InlineAtBottom_=(x: NewButtonEditLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InlineAtBottom")(x.asInstanceOf[js.Any])
+  inline def InlineAtBottom_=(x: NewButtonEditLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InlineAtBottom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NewButtonEditLocation.InlineAtTop")
   @js.native
   def InlineAtTop: NewButtonEditLocation = js.native
-  @scala.inline
-  def InlineAtTop_=(x: NewButtonEditLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InlineAtTop")(x.asInstanceOf[js.Any])
+  inline def InlineAtTop_=(x: NewButtonEditLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InlineAtTop")(x.asInstanceOf[js.Any])
 }

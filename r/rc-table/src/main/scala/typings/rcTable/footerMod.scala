@@ -14,8 +14,7 @@ object footerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasChildren: FooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasChildren: FooterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object FooterComponents {
     
@@ -26,14 +25,12 @@ object footerMod {
     @JSImport("rc-table/lib/Footer", "FooterComponents.Cell")
     @js.native
     def Cell: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element] = js.native
-    @scala.inline
-    def Cell_=(x: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+    inline def Cell_=(x: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-table/lib/Footer", "FooterComponents.Row")
     @js.native
     def Row: js.Function1[/* props */ FooterRowProps, Element] = js.native
-    @scala.inline
-    def Row_=(x: js.Function1[/* props */ FooterRowProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+    inline def Row_=(x: js.Function1[/* props */ FooterRowProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
   }
   
   trait FooterProps extends StObject {
@@ -42,20 +39,16 @@ object footerMod {
   }
   object FooterProps {
     
-    @scala.inline
-    def apply(): FooterProps = {
+    inline def apply(): FooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FooterProps]
     }
     
-    @scala.inline
-    implicit class FooterPropsMutableBuilder[Self <: FooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: FooterProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

@@ -24,28 +24,21 @@ trait ColorVariableProperties
 }
 object ColorVariableProperties {
   
-  @scala.inline
-  def apply(): ColorVariableProperties = {
+  inline def apply(): ColorVariableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorVariableProperties]
   }
   
-  @scala.inline
-  implicit class ColorVariablePropertiesMutableBuilder[Self <: ColorVariableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ColorVariableProperties](x: Self) {
     
-    @scala.inline
-    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[ColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[ColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: ColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

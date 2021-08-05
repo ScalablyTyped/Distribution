@@ -24,8 +24,7 @@ object componentsPlaceholderMod {
   @js.native
   val Placeholder: ComponentType[PlaceholderProps[js.Any]] = js.native
   
-  @scala.inline
-  def placeholderCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("placeholderCSS")().asInstanceOf[CSSProperties]
+  inline def placeholderCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("placeholderCSS")().asInstanceOf[CSSProperties]
   
   @js.native
   trait PlaceholderProps[OptionType /* <: OptionTypeBase */]

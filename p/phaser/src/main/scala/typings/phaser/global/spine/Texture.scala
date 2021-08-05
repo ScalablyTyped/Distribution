@@ -12,7 +12,7 @@ abstract class Texture protected ()
      with typings.phaser.spine.Texture {
   def this(image: HTMLImageElement) = this()
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   var _image: HTMLImageElement = js.native
   
   /* CompleteClass */
@@ -34,10 +34,8 @@ object Texture {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def filterFromString(text: String): typings.phaser.spine.TextureFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("filterFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.TextureFilter]
+  inline def filterFromString(text: String): typings.phaser.spine.TextureFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("filterFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.TextureFilter]
   
   /* static member */
-  @scala.inline
-  def wrapFromString(text: String): typings.phaser.spine.TextureWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.TextureWrap]
+  inline def wrapFromString(text: String): typings.phaser.spine.TextureWrap = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapFromString")(text.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.spine.TextureWrap]
 }

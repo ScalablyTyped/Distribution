@@ -21,52 +21,37 @@ trait AddToGroup extends StObject {
 }
 object AddToGroup {
   
-  @scala.inline
-  def apply(nodes: js.Array[js.Object]): AddToGroup = {
+  inline def apply(nodes: js.Array[js.Object]): AddToGroup = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], t = "move")
     __obj.asInstanceOf[AddToGroup]
   }
   
-  @scala.inline
-  implicit class AddToGroupMutableBuilder[Self <: AddToGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AddToGroup](x: Self) {
     
-    @scala.inline
-    def setAddToGroup(value: js.Object): Self = StObject.set(x, "addToGroup", value.asInstanceOf[js.Any])
+    inline def setAddToGroup(value: js.Object): Self = StObject.set(x, "addToGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddToGroupUndefined: Self = StObject.set(x, "addToGroup", js.undefined)
+    inline def setAddToGroupUndefined: Self = StObject.set(x, "addToGroup", js.undefined)
     
-    @scala.inline
-    def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: js.Object*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: js.Object*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[js.Object]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[js.Object]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: js.Object*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: js.Object*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoveFromGroup(value: js.Object): Self = StObject.set(x, "removeFromGroup", value.asInstanceOf[js.Any])
+    inline def setRemoveFromGroup(value: js.Object): Self = StObject.set(x, "removeFromGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFromGroupUndefined: Self = StObject.set(x, "removeFromGroup", js.undefined)
+    inline def setRemoveFromGroupUndefined: Self = StObject.set(x, "removeFromGroup", js.undefined)
     
-    @scala.inline
-    def setRemovedLinks(value: js.Array[js.Object]): Self = StObject.set(x, "removedLinks", value.asInstanceOf[js.Any])
+    inline def setRemovedLinks(value: js.Array[js.Object]): Self = StObject.set(x, "removedLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedLinksUndefined: Self = StObject.set(x, "removedLinks", js.undefined)
+    inline def setRemovedLinksUndefined: Self = StObject.set(x, "removedLinks", js.undefined)
     
-    @scala.inline
-    def setRemovedLinksVarargs(value: js.Object*): Self = StObject.set(x, "removedLinks", js.Array(value :_*))
+    inline def setRemovedLinksVarargs(value: js.Object*): Self = StObject.set(x, "removedLinks", js.Array(value :_*))
     
-    @scala.inline
-    def setT(value: move): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: move): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

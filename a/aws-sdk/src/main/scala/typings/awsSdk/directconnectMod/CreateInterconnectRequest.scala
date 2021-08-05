@@ -38,43 +38,31 @@ trait CreateInterconnectRequest extends StObject {
 }
 object CreateInterconnectRequest {
   
-  @scala.inline
-  def apply(bandwidth: Bandwidth, interconnectName: InterconnectName, location: LocationCode): CreateInterconnectRequest = {
+  inline def apply(bandwidth: Bandwidth, interconnectName: InterconnectName, location: LocationCode): CreateInterconnectRequest = {
     val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], interconnectName = interconnectName.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInterconnectRequest]
   }
   
-  @scala.inline
-  implicit class CreateInterconnectRequestMutableBuilder[Self <: CreateInterconnectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInterconnectRequest](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectName(value: InterconnectName): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
+    inline def setInterconnectName(value: InterconnectName): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+    inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
+    inline def setLagIdUndefined: Self = StObject.set(x, "lagId", js.undefined)
     
-    @scala.inline
-    def setLocation(value: LocationCode): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LocationCode): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: ProviderName): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
+    inline def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

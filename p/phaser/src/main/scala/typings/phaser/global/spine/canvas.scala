@@ -26,7 +26,7 @@ object canvas {
        with typings.phaser.spine.canvas.CanvasTexture {
     def this(image: HTMLImageElement) = this()
     
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var _image: HTMLImageElement = js.native
     
     /* CompleteClass */
@@ -49,13 +49,13 @@ object canvas {
        with typings.phaser.spine.canvas.SkeletonRenderer {
     def this(context: CanvasRenderingContext2D) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var computeMeshVertices: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var computeRegionVertices: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var ctx: js.Any = js.native
     
     /* CompleteClass */
@@ -64,22 +64,22 @@ object canvas {
     /* CompleteClass */
     override def draw(skeleton: typings.phaser.spine.Skeleton): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawImages: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawTriangle: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var drawTriangles: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var tempColor: js.Any = js.native
     
     /* CompleteClass */
     var triangleRendering: Boolean = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var vertices: js.Any = js.native
   }
   object SkeletonRenderer {
@@ -92,14 +92,12 @@ object canvas {
     @JSGlobal("spine.canvas.SkeletonRenderer.QUAD_TRIANGLES")
     @js.native
     def QUAD_TRIANGLES: js.Array[Double] = js.native
-    @scala.inline
-    def QUAD_TRIANGLES_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUAD_TRIANGLES")(x.asInstanceOf[js.Any])
+    inline def QUAD_TRIANGLES_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUAD_TRIANGLES")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("spine.canvas.SkeletonRenderer.VERTEX_SIZE")
     @js.native
     def VERTEX_SIZE: Double = js.native
-    @scala.inline
-    def VERTEX_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_SIZE")(x.asInstanceOf[js.Any])
+    inline def VERTEX_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_SIZE")(x.asInstanceOf[js.Any])
   }
 }

@@ -68,8 +68,7 @@ trait XPropertyControl extends StObject {
 }
 object XPropertyControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ControlContext: XPropertyControlContext,
     ControlType: Double,
     ControlWindow: XWindow,
@@ -82,28 +81,20 @@ object XPropertyControl {
     __obj.asInstanceOf[XPropertyControl]
   }
   
-  @scala.inline
-  implicit class XPropertyControlMutableBuilder[Self <: XPropertyControl] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyControl](x: Self) {
     
-    @scala.inline
-    def setControlContext(value: XPropertyControlContext): Self = StObject.set(x, "ControlContext", value.asInstanceOf[js.Any])
+    inline def setControlContext(value: XPropertyControlContext): Self = StObject.set(x, "ControlContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlType(value: Double): Self = StObject.set(x, "ControlType", value.asInstanceOf[js.Any])
+    inline def setControlType(value: Double): Self = StObject.set(x, "ControlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlWindow(value: XWindow): Self = StObject.set(x, "ControlWindow", value.asInstanceOf[js.Any])
+    inline def setControlWindow(value: XWindow): Self = StObject.set(x, "ControlWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
+    inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotifyModifiedValue(value: () => Unit): Self = StObject.set(x, "notifyModifiedValue", js.Any.fromFunction0(value))
+    inline def setNotifyModifiedValue(value: () => Unit): Self = StObject.set(x, "notifyModifiedValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
   }
 }

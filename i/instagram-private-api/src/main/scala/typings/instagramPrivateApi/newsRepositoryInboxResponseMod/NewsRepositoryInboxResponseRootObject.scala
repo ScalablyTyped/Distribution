@@ -30,8 +30,7 @@ trait NewsRepositoryInboxResponseRootObject extends StObject {
 }
 object NewsRepositoryInboxResponseRootObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ads_manager: NewsRepositoryInboxResponseAdsManager,
     aymf: NewsRepositoryInboxResponseAymf,
     business_profile_reminder: NewsRepositoryInboxResponseBusinessProfileReminder,
@@ -48,49 +47,34 @@ object NewsRepositoryInboxResponseRootObject {
     __obj.asInstanceOf[NewsRepositoryInboxResponseRootObject]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseRootObjectMutableBuilder[Self <: NewsRepositoryInboxResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setAds_manager(value: NewsRepositoryInboxResponseAdsManager): Self = StObject.set(x, "ads_manager", value.asInstanceOf[js.Any])
+    inline def setAds_manager(value: NewsRepositoryInboxResponseAdsManager): Self = StObject.set(x, "ads_manager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAymf(value: NewsRepositoryInboxResponseAymf): Self = StObject.set(x, "aymf", value.asInstanceOf[js.Any])
+    inline def setAymf(value: NewsRepositoryInboxResponseAymf): Self = StObject.set(x, "aymf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusiness_profile_reminder(value: NewsRepositoryInboxResponseBusinessProfileReminder): Self = StObject.set(x, "business_profile_reminder", value.asInstanceOf[js.Any])
+    inline def setBusiness_profile_reminder(value: NewsRepositoryInboxResponseBusinessProfileReminder): Self = StObject.set(x, "business_profile_reminder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuation_token(value: Double): Self = StObject.set(x, "continuation_token", value.asInstanceOf[js.Any])
+    inline def setContinuation_token(value: Double): Self = StObject.set(x, "continuation_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounts(value: NewsRepositoryInboxResponseCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: NewsRepositoryInboxResponseCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriend_request_stories(value: js.Array[js.Any]): Self = StObject.set(x, "friend_request_stories", value.asInstanceOf[js.Any])
+    inline def setFriend_request_stories(value: js.Array[js.Any]): Self = StObject.set(x, "friend_request_stories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriend_request_storiesVarargs(value: js.Any*): Self = StObject.set(x, "friend_request_stories", js.Array(value :_*))
+    inline def setFriend_request_storiesVarargs(value: js.Any*): Self = StObject.set(x, "friend_request_stories", js.Array(value :_*))
     
-    @scala.inline
-    def setNew_stories(value: js.Array[NewsRepositoryInboxResponseNewStoriesItem]): Self = StObject.set(x, "new_stories", value.asInstanceOf[js.Any])
+    inline def setNew_stories(value: js.Array[NewsRepositoryInboxResponseNewStoriesItem]): Self = StObject.set(x, "new_stories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_storiesVarargs(value: NewsRepositoryInboxResponseNewStoriesItem*): Self = StObject.set(x, "new_stories", js.Array(value :_*))
+    inline def setNew_storiesVarargs(value: NewsRepositoryInboxResponseNewStoriesItem*): Self = StObject.set(x, "new_stories", js.Array(value :_*))
     
-    @scala.inline
-    def setOld_stories(value: js.Array[NewsRepositoryInboxResponseOldStoriesItem]): Self = StObject.set(x, "old_stories", value.asInstanceOf[js.Any])
+    inline def setOld_stories(value: js.Array[NewsRepositoryInboxResponseOldStoriesItem]): Self = StObject.set(x, "old_stories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOld_storiesVarargs(value: NewsRepositoryInboxResponseOldStoriesItem*): Self = StObject.set(x, "old_stories", js.Array(value :_*))
+    inline def setOld_storiesVarargs(value: NewsRepositoryInboxResponseOldStoriesItem*): Self = StObject.set(x, "old_stories", js.Array(value :_*))
     
-    @scala.inline
-    def setPartition(value: NewsRepositoryInboxResponsePartition): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: NewsRepositoryInboxResponsePartition): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription(value: js.Any): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: js.Any): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
   }
 }

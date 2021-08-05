@@ -59,8 +59,7 @@ trait XIdlField2
 }
 object XIdlField2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessMode: FieldAccessMode,
     DeclaringClass: XIdlClass[js.Any],
     Name: String,
@@ -79,25 +78,18 @@ object XIdlField2 {
     __obj.asInstanceOf[XIdlField2]
   }
   
-  @scala.inline
-  implicit class XIdlField2MutableBuilder[Self <: XIdlField2] (val x: Self) extends AnyVal {
+  extension [Self <: XIdlField2](x: Self) {
     
-    @scala.inline
-    def setAccessMode(value: FieldAccessMode): Self = StObject.set(x, "AccessMode", value.asInstanceOf[js.Any])
+    inline def setAccessMode(value: FieldAccessMode): Self = StObject.set(x, "AccessMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAccessMode(value: () => FieldAccessMode): Self = StObject.set(x, "getAccessMode", js.Any.fromFunction0(value))
+    inline def setGetAccessMode(value: () => FieldAccessMode): Self = StObject.set(x, "getAccessMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (js.Array[js.Any], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (js.Array[js.Any], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: XIdlClass[js.Any]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XIdlClass[js.Any]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

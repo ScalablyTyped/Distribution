@@ -18,19 +18,15 @@ trait GetEnvironmentRequest extends StObject {
 }
 object GetEnvironmentRequest {
   
-  @scala.inline
-  def apply(ApplicationId: Id, EnvironmentId: Id): GetEnvironmentRequest = {
+  inline def apply(ApplicationId: Id, EnvironmentId: Id): GetEnvironmentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EnvironmentId = EnvironmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class GetEnvironmentRequestMutableBuilder[Self <: GetEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentId(value: Id): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: Id): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
   }
 }

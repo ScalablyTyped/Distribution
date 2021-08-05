@@ -13,16 +13,13 @@ trait ClientSetServerQueryLogin
 }
 object ClientSetServerQueryLogin {
   
-  @scala.inline
-  def apply(clientLoginPassword: String): ClientSetServerQueryLogin = {
+  inline def apply(clientLoginPassword: String): ClientSetServerQueryLogin = {
     val __obj = js.Dynamic.literal(clientLoginPassword = clientLoginPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSetServerQueryLogin]
   }
   
-  @scala.inline
-  implicit class ClientSetServerQueryLoginMutableBuilder[Self <: ClientSetServerQueryLogin] (val x: Self) extends AnyVal {
+  extension [Self <: ClientSetServerQueryLogin](x: Self) {
     
-    @scala.inline
-    def setClientLoginPassword(value: String): Self = StObject.set(x, "clientLoginPassword", value.asInstanceOf[js.Any])
+    inline def setClientLoginPassword(value: String): Self = StObject.set(x, "clientLoginPassword", value.asInstanceOf[js.Any])
   }
 }

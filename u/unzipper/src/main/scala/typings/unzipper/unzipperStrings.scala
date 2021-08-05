@@ -8,66 +8,53 @@ object unzipperStrings {
   
   @js.native
   sealed trait Directory extends StObject
-  @scala.inline
-  def Directory: Directory = "Directory".asInstanceOf[Directory]
+  inline def Directory: Directory = "Directory".asInstanceOf[Directory]
   
   @js.native
   sealed trait File extends StObject
-  @scala.inline
-  def File: File = "File".asInstanceOf[File]
+  inline def File: File = "File".asInstanceOf[File]
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait data extends StObject
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait drain extends StObject
-  @scala.inline
-  def drain: drain = "drain".asInstanceOf[drain]
+  inline def drain: drain = "drain".asInstanceOf[drain]
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait finish extends StObject
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
+  inline def finish: finish = "finish".asInstanceOf[finish]
   
   @js.native
   sealed trait pause extends StObject
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
   sealed trait pipe extends StObject
-  @scala.inline
-  def pipe: pipe = "pipe".asInstanceOf[pipe]
+  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
   sealed trait readable extends StObject
-  @scala.inline
-  def readable: readable = "readable".asInstanceOf[readable]
+  inline def readable: readable = "readable".asInstanceOf[readable]
   
   @js.native
   sealed trait resume extends StObject
-  @scala.inline
-  def resume: resume = "resume".asInstanceOf[resume]
+  inline def resume: resume = "resume".asInstanceOf[resume]
   
   @js.native
   sealed trait unpipe extends StObject
-  @scala.inline
-  def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
 }

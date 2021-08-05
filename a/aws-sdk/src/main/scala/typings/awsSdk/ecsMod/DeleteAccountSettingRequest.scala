@@ -18,22 +18,17 @@ trait DeleteAccountSettingRequest extends StObject {
 }
 object DeleteAccountSettingRequest {
   
-  @scala.inline
-  def apply(name: SettingName): DeleteAccountSettingRequest = {
+  inline def apply(name: SettingName): DeleteAccountSettingRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccountSettingRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAccountSettingRequestMutableBuilder[Self <: DeleteAccountSettingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAccountSettingRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
+    inline def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
+    inline def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
   }
 }

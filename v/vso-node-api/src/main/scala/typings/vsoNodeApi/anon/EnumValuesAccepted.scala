@@ -10,16 +10,13 @@ trait EnumValuesAccepted extends StObject {
 }
 object EnumValuesAccepted {
   
-  @scala.inline
-  def apply(enumValues: Accepted): EnumValuesAccepted = {
+  inline def apply(enumValues: Accepted): EnumValuesAccepted = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAccepted]
   }
   
-  @scala.inline
-  implicit class EnumValuesAcceptedMutableBuilder[Self <: EnumValuesAccepted] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAccepted](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Accepted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Accepted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

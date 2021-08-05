@@ -20,25 +20,19 @@ trait GetIdentityVerificationAt extends StObject {
 }
 object GetIdentityVerificationAt {
   
-  @scala.inline
-  def apply(Identities: IdentityList): GetIdentityVerificationAt = {
+  inline def apply(Identities: IdentityList): GetIdentityVerificationAt = {
     val __obj = js.Dynamic.literal(Identities = Identities.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityVerificationAt]
   }
   
-  @scala.inline
-  implicit class GetIdentityVerificationAtMutableBuilder[Self <: GetIdentityVerificationAt] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityVerificationAt](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setIdentities(value: IdentityList): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: IdentityList): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "Identities", js.Array(value :_*))
+    inline def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "Identities", js.Array(value :_*))
   }
 }

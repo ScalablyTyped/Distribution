@@ -10,19 +10,15 @@ trait SchemaContextParams extends StObject {
 }
 object SchemaContextParams {
   
-  @scala.inline
-  def apply(): SchemaContextParams = {
+  inline def apply(): SchemaContextParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContextParams]
   }
   
-  @scala.inline
-  implicit class SchemaContextParamsMutableBuilder[Self <: SchemaContextParams] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContextParams](x: Self) {
     
-    @scala.inline
-    def setClientProfile(value: String): Self = StObject.set(x, "clientProfile", value.asInstanceOf[js.Any])
+    inline def setClientProfile(value: String): Self = StObject.set(x, "clientProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientProfileUndefined: Self = StObject.set(x, "clientProfile", js.undefined)
+    inline def setClientProfileUndefined: Self = StObject.set(x, "clientProfile", js.undefined)
   }
 }

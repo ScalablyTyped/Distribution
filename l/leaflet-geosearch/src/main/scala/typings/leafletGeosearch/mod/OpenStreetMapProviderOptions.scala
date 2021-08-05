@@ -14,8 +14,7 @@ trait OpenStreetMapProviderOptions
      with OpenStreetMapProviderOptionsOther
 object OpenStreetMapProviderOptions {
   
-  @scala.inline
-  def apply(): OpenStreetMapProviderOptions = {
+  inline def apply(): OpenStreetMapProviderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenStreetMapProviderOptions]
   }

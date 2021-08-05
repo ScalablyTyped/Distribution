@@ -15,25 +15,19 @@ trait ConverterPriority extends StObject {
 }
 object ConverterPriority {
   
-  @scala.inline
-  def apply(model: String | Value, view: String | Key): ConverterPriority = {
+  inline def apply(model: String | Value, view: String | Key): ConverterPriority = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterPriority]
   }
   
-  @scala.inline
-  implicit class ConverterPriorityMutableBuilder[Self <: ConverterPriority] (val x: Self) extends AnyVal {
+  extension [Self <: ConverterPriority](x: Self) {
     
-    @scala.inline
-    def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
+    inline def setConverterPriority(value: PriorityString): Self = StObject.set(x, "converterPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
+    inline def setConverterPriorityUndefined: Self = StObject.set(x, "converterPriority", js.undefined)
     
-    @scala.inline
-    def setModel(value: String | Value): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | Value): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: String | Key): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String | Key): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

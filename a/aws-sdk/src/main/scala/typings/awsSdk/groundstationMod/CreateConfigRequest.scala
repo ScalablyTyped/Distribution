@@ -23,25 +23,19 @@ trait CreateConfigRequest extends StObject {
 }
 object CreateConfigRequest {
   
-  @scala.inline
-  def apply(configData: ConfigTypeData, name: SafeName): CreateConfigRequest = {
+  inline def apply(configData: ConfigTypeData, name: SafeName): CreateConfigRequest = {
     val __obj = js.Dynamic.literal(configData = configData.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigRequest]
   }
   
-  @scala.inline
-  implicit class CreateConfigRequestMutableBuilder[Self <: CreateConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConfigData(value: ConfigTypeData): Self = StObject.set(x, "configData", value.asInstanceOf[js.Any])
+    inline def setConfigData(value: ConfigTypeData): Self = StObject.set(x, "configData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

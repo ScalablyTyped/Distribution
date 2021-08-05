@@ -19,8 +19,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: TableToolkitProps[js.Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def default(props: TableToolkitProps[js.Any]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   object CSVExport {
     
@@ -28,8 +27,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def ExportCSVButton(props: ExportCSVButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportCSVButton")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def ExportCSVButton(props: ExportCSVButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportCSVButton")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   }
   
   object ColumnToggle {
@@ -38,8 +36,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def ToggleList(props: ToggleListProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleList")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def ToggleList(props: ToggleListProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleList")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   }
   
   object Search {
@@ -48,11 +45,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def ClearSearchButton(props: ClearSearchButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearSearchButton")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def ClearSearchButton(props: ClearSearchButtonProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearSearchButton")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
-    @scala.inline
-    def SearchBar(props: SearchBarProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SearchBar")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def SearchBar(props: SearchBarProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("SearchBar")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   }
   
   @JSImport("react-bootstrap-table2-toolkit", "ToolkitContext")
@@ -82,62 +77,44 @@ object mod {
   }
   object CSVProps {
     
-    @scala.inline
-    def apply(): CSVProps = {
+    inline def apply(): CSVProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSVProps]
     }
     
-    @scala.inline
-    implicit class CSVPropsMutableBuilder[Self <: CSVProps] (val x: Self) extends AnyVal {
+    extension [Self <: CSVProps](x: Self) {
       
-      @scala.inline
-      def setBlobType(value: String): Self = StObject.set(x, "blobType", value.asInstanceOf[js.Any])
+      inline def setBlobType(value: String): Self = StObject.set(x, "blobType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlobTypeUndefined: Self = StObject.set(x, "blobType", js.undefined)
+      inline def setBlobTypeUndefined: Self = StObject.set(x, "blobType", js.undefined)
       
-      @scala.inline
-      def setExportAll(value: Boolean): Self = StObject.set(x, "exportAll", value.asInstanceOf[js.Any])
+      inline def setExportAll(value: Boolean): Self = StObject.set(x, "exportAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportAllUndefined: Self = StObject.set(x, "exportAll", js.undefined)
+      inline def setExportAllUndefined: Self = StObject.set(x, "exportAll", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setIgnoreHeader(value: Boolean): Self = StObject.set(x, "ignoreHeader", value.asInstanceOf[js.Any])
+      inline def setIgnoreHeader(value: Boolean): Self = StObject.set(x, "ignoreHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreHeaderUndefined: Self = StObject.set(x, "ignoreHeader", js.undefined)
+      inline def setIgnoreHeaderUndefined: Self = StObject.set(x, "ignoreHeader", js.undefined)
       
-      @scala.inline
-      def setNoAutoBOM(value: Boolean): Self = StObject.set(x, "noAutoBOM", value.asInstanceOf[js.Any])
+      inline def setNoAutoBOM(value: Boolean): Self = StObject.set(x, "noAutoBOM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoAutoBOMUndefined: Self = StObject.set(x, "noAutoBOM", js.undefined)
+      inline def setNoAutoBOMUndefined: Self = StObject.set(x, "noAutoBOM", js.undefined)
       
-      @scala.inline
-      def setOnlyExportFiltered(value: Boolean): Self = StObject.set(x, "onlyExportFiltered", value.asInstanceOf[js.Any])
+      inline def setOnlyExportFiltered(value: Boolean): Self = StObject.set(x, "onlyExportFiltered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyExportFilteredUndefined: Self = StObject.set(x, "onlyExportFiltered", js.undefined)
+      inline def setOnlyExportFilteredUndefined: Self = StObject.set(x, "onlyExportFiltered", js.undefined)
       
-      @scala.inline
-      def setOnlyExportSelection(value: Boolean): Self = StObject.set(x, "onlyExportSelection", value.asInstanceOf[js.Any])
+      inline def setOnlyExportSelection(value: Boolean): Self = StObject.set(x, "onlyExportSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyExportSelectionUndefined: Self = StObject.set(x, "onlyExportSelection", js.undefined)
+      inline def setOnlyExportSelectionUndefined: Self = StObject.set(x, "onlyExportSelection", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
   
@@ -151,32 +128,24 @@ object mod {
   }
   object ClearSearchButtonProps {
     
-    @scala.inline
-    def apply(): ClearSearchButtonProps = {
+    inline def apply(): ClearSearchButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClearSearchButtonProps]
     }
     
-    @scala.inline
-    implicit class ClearSearchButtonPropsMutableBuilder[Self <: ClearSearchButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ClearSearchButtonProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+      inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+      inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -192,35 +161,26 @@ object mod {
   }
   object ExportCSVButtonProps {
     
-    @scala.inline
-    def apply(onExport: () => Unit): ExportCSVButtonProps = {
+    inline def apply(onExport: () => Unit): ExportCSVButtonProps = {
       val __obj = js.Dynamic.literal(onExport = js.Any.fromFunction0(onExport))
       __obj.asInstanceOf[ExportCSVButtonProps]
     }
     
-    @scala.inline
-    implicit class ExportCSVButtonPropsMutableBuilder[Self <: ExportCSVButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExportCSVButtonProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnExport(value: () => Unit): Self = StObject.set(x, "onExport", js.Any.fromFunction0(value))
+      inline def setOnExport(value: () => Unit): Self = StObject.set(x, "onExport", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -234,23 +194,18 @@ object mod {
   }
   object InjectedSearchProps {
     
-    @scala.inline
-    def apply(onClear: () => Unit, onSearch: String => Unit, searchText: String): InjectedSearchProps = {
+    inline def apply(onClear: () => Unit, onSearch: String => Unit, searchText: String): InjectedSearchProps = {
       val __obj = js.Dynamic.literal(onClear = js.Any.fromFunction0(onClear), onSearch = js.Any.fromFunction1(onSearch), searchText = searchText.asInstanceOf[js.Any])
       __obj.asInstanceOf[InjectedSearchProps]
     }
     
-    @scala.inline
-    implicit class InjectedSearchPropsMutableBuilder[Self <: InjectedSearchProps] (val x: Self) extends AnyVal {
+    extension [Self <: InjectedSearchProps](x: Self) {
       
-      @scala.inline
-      def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+      inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSearch(value: String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+      inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,53 +227,38 @@ object mod {
   }
   object SearchBarProps {
     
-    @scala.inline
-    def apply(onSearch: String => Unit): SearchBarProps = {
+    inline def apply(onSearch: String => Unit): SearchBarProps = {
       val __obj = js.Dynamic.literal(onSearch = js.Any.fromFunction1(onSearch))
       __obj.asInstanceOf[SearchBarProps]
     }
     
-    @scala.inline
-    implicit class SearchBarPropsMutableBuilder[Self <: SearchBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: SearchBarProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setOnSearch(value: String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+      inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+      inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+      inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+      inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     }
   }
   
@@ -334,26 +274,20 @@ object mod {
   }
   object SearchMatchProps {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](column: ColumnDescription[T, js.Any], row: T, searchText: String, value: String): SearchMatchProps[T] = {
+    inline def apply[T /* <: js.Object */](column: ColumnDescription[T, js.Any], row: T, searchText: String, value: String): SearchMatchProps[T] = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], searchText = searchText.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchMatchProps[T]]
     }
     
-    @scala.inline
-    implicit class SearchMatchPropsMutableBuilder[Self <: SearchMatchProps[?], T /* <: js.Object */] (val x: Self & SearchMatchProps[T]) extends AnyVal {
+    extension [Self <: SearchMatchProps[?], T /* <: js.Object */](x: Self & SearchMatchProps[T]) {
       
-      @scala.inline
-      def setColumn(value: ColumnDescription[T, js.Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: ColumnDescription[T, js.Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+      inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,44 +305,32 @@ object mod {
   }
   object TableSearchProps {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): TableSearchProps[T] = {
+    inline def apply[T /* <: js.Object */](): TableSearchProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableSearchProps[T]]
     }
     
-    @scala.inline
-    implicit class TableSearchPropsMutableBuilder[Self <: TableSearchProps[?], T /* <: js.Object */] (val x: Self & TableSearchProps[T]) extends AnyVal {
+    extension [Self <: TableSearchProps[?], T /* <: js.Object */](x: Self & TableSearchProps[T]) {
       
-      @scala.inline
-      def setCustomMatchFunc(value: /* props */ SearchMatchProps[T] => Boolean): Self = StObject.set(x, "customMatchFunc", js.Any.fromFunction1(value))
+      inline def setCustomMatchFunc(value: /* props */ SearchMatchProps[T] => Boolean): Self = StObject.set(x, "customMatchFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomMatchFuncUndefined: Self = StObject.set(x, "customMatchFunc", js.undefined)
+      inline def setCustomMatchFuncUndefined: Self = StObject.set(x, "customMatchFunc", js.undefined)
       
-      @scala.inline
-      def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
+      inline def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSearchUndefined: Self = StObject.set(x, "defaultSearch", js.undefined)
+      inline def setDefaultSearchUndefined: Self = StObject.set(x, "defaultSearch", js.undefined)
       
-      @scala.inline
-      def setOnColumnMatch(value: /* props */ SearchMatchProps[T] => Unit): Self = StObject.set(x, "onColumnMatch", js.Any.fromFunction1(value))
+      inline def setOnColumnMatch(value: /* props */ SearchMatchProps[T] => Unit): Self = StObject.set(x, "onColumnMatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnColumnMatchUndefined: Self = StObject.set(x, "onColumnMatch", js.undefined)
+      inline def setOnColumnMatchUndefined: Self = StObject.set(x, "onColumnMatch", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setSearchFormatted(value: Boolean): Self = StObject.set(x, "searchFormatted", value.asInstanceOf[js.Any])
+      inline def setSearchFormatted(value: Boolean): Self = StObject.set(x, "searchFormatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchFormattedUndefined: Self = StObject.set(x, "searchFormatted", js.undefined)
+      inline def setSearchFormattedUndefined: Self = StObject.set(x, "searchFormatted", js.undefined)
     }
   }
   
@@ -434,8 +356,7 @@ object mod {
   }
   object TableToolkitProps {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](
+    inline def apply[T /* <: js.Object */](
       children: ToolkitContextType => Element,
       columns: js.Array[ColumnDescription[T, js.Any]],
       data: js.Array[T],
@@ -445,56 +366,39 @@ object mod {
       __obj.asInstanceOf[TableToolkitProps[T]]
     }
     
-    @scala.inline
-    implicit class TableToolkitPropsMutableBuilder[Self <: TableToolkitProps[?], T /* <: js.Object */] (val x: Self & TableToolkitProps[T]) extends AnyVal {
+    extension [Self <: TableToolkitProps[?], T /* <: js.Object */](x: Self & TableToolkitProps[T]) {
       
-      @scala.inline
-      def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
+      inline def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBootstrap4Undefined: Self = StObject.set(x, "bootstrap4", js.undefined)
+      inline def setBootstrap4Undefined: Self = StObject.set(x, "bootstrap4", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ToolkitContextType => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: ToolkitContextType => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColumnToggle(value: Boolean): Self = StObject.set(x, "columnToggle", value.asInstanceOf[js.Any])
+      inline def setColumnToggle(value: Boolean): Self = StObject.set(x, "columnToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnToggleUndefined: Self = StObject.set(x, "columnToggle", js.undefined)
+      inline def setColumnToggleUndefined: Self = StObject.set(x, "columnToggle", js.undefined)
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[T, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[T, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: (ColumnDescription[T, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[T, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setExportCSV(value: Boolean | CSVProps): Self = StObject.set(x, "exportCSV", value.asInstanceOf[js.Any])
+      inline def setExportCSV(value: Boolean | CSVProps): Self = StObject.set(x, "exportCSV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportCSVUndefined: Self = StObject.set(x, "exportCSV", js.undefined)
+      inline def setExportCSVUndefined: Self = StObject.set(x, "exportCSV", js.undefined)
       
-      @scala.inline
-      def setKeyField(value: /* keyof T */ String): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
+      inline def setKeyField(value: /* keyof T */ String): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setSearch(value: TableSearchProps[T] | Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: TableSearchProps[T] | Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     }
   }
   
@@ -517,8 +421,7 @@ object mod {
   }
   object ToggleListProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columns: js.Array[ColumnDescription[js.Any, js.Any]],
       onColumnToggle: String => Unit,
       toggles: js.Array[Boolean]
@@ -527,41 +430,29 @@ object mod {
       __obj.asInstanceOf[ToggleListProps]
     }
     
-    @scala.inline
-    implicit class ToggleListPropsMutableBuilder[Self <: ToggleListProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleListProps](x: Self) {
       
-      @scala.inline
-      def setBtnClassName(value: String): Self = StObject.set(x, "btnClassName", value.asInstanceOf[js.Any])
+      inline def setBtnClassName(value: String): Self = StObject.set(x, "btnClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBtnClassNameUndefined: Self = StObject.set(x, "btnClassName", js.undefined)
+      inline def setBtnClassNameUndefined: Self = StObject.set(x, "btnClassName", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setContextual(value: String): Self = StObject.set(x, "contextual", value.asInstanceOf[js.Any])
+      inline def setContextual(value: String): Self = StObject.set(x, "contextual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextualUndefined: Self = StObject.set(x, "contextual", js.undefined)
+      inline def setContextualUndefined: Self = StObject.set(x, "contextual", js.undefined)
       
-      @scala.inline
-      def setOnColumnToggle(value: String => Unit): Self = StObject.set(x, "onColumnToggle", js.Any.fromFunction1(value))
+      inline def setOnColumnToggle(value: String => Unit): Self = StObject.set(x, "onColumnToggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggles(value: js.Array[Boolean]): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
+      inline def setToggles(value: js.Array[Boolean]): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value :_*))
+      inline def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value :_*))
     }
   }
   
@@ -577,8 +468,7 @@ object mod {
   }
   object ToolkitContextType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseProps: Bootstrap4,
       columnToggleProps: Columns,
       csvProps: OnExport,
@@ -588,20 +478,15 @@ object mod {
       __obj.asInstanceOf[ToolkitContextType]
     }
     
-    @scala.inline
-    implicit class ToolkitContextTypeMutableBuilder[Self <: ToolkitContextType] (val x: Self) extends AnyVal {
+    extension [Self <: ToolkitContextType](x: Self) {
       
-      @scala.inline
-      def setBaseProps(value: Bootstrap4): Self = StObject.set(x, "baseProps", value.asInstanceOf[js.Any])
+      inline def setBaseProps(value: Bootstrap4): Self = StObject.set(x, "baseProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnToggleProps(value: Columns): Self = StObject.set(x, "columnToggleProps", value.asInstanceOf[js.Any])
+      inline def setColumnToggleProps(value: Columns): Self = StObject.set(x, "columnToggleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsvProps(value: OnExport): Self = StObject.set(x, "csvProps", value.asInstanceOf[js.Any])
+      inline def setCsvProps(value: OnExport): Self = StObject.set(x, "csvProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchProps(value: InjectedSearchProps): Self = StObject.set(x, "searchProps", value.asInstanceOf[js.Any])
+      inline def setSearchProps(value: InjectedSearchProps): Self = StObject.set(x, "searchProps", value.asInstanceOf[js.Any])
     }
   }
 }

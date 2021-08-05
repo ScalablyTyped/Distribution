@@ -17,16 +17,13 @@ trait IVaultNotificationOperations extends StObject {
 }
 object IVaultNotificationOperations {
   
-  @scala.inline
-  def apply(SendCustomNotification: (IUserOrUserGroupIDs, Boolean, IStrings, Boolean, String, String) => Unit): IVaultNotificationOperations = {
+  inline def apply(SendCustomNotification: (IUserOrUserGroupIDs, Boolean, IStrings, Boolean, String, String) => Unit): IVaultNotificationOperations = {
     val __obj = js.Dynamic.literal(SendCustomNotification = js.Any.fromFunction6(SendCustomNotification))
     __obj.asInstanceOf[IVaultNotificationOperations]
   }
   
-  @scala.inline
-  implicit class IVaultNotificationOperationsMutableBuilder[Self <: IVaultNotificationOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultNotificationOperations](x: Self) {
     
-    @scala.inline
-    def setSendCustomNotification(value: (IUserOrUserGroupIDs, Boolean, IStrings, Boolean, String, String) => Unit): Self = StObject.set(x, "SendCustomNotification", js.Any.fromFunction6(value))
+    inline def setSendCustomNotification(value: (IUserOrUserGroupIDs, Boolean, IStrings, Boolean, String, String) => Unit): Self = StObject.set(x, "SendCustomNotification", js.Any.fromFunction6(value))
   }
 }

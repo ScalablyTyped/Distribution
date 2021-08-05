@@ -10,19 +10,15 @@ trait StrictHtmlImageProps extends StObject {
 }
 object StrictHtmlImageProps {
   
-  @scala.inline
-  def apply(): StrictHtmlImageProps = {
+  inline def apply(): StrictHtmlImageProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrictHtmlImageProps]
   }
   
-  @scala.inline
-  implicit class StrictHtmlImagePropsMutableBuilder[Self <: StrictHtmlImageProps] (val x: Self) extends AnyVal {
+  extension [Self <: StrictHtmlImageProps](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
   }
 }

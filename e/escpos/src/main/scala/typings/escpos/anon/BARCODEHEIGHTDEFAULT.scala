@@ -16,22 +16,17 @@ trait BARCODEHEIGHTDEFAULT extends StObject {
 }
 object BARCODEHEIGHTDEFAULT {
   
-  @scala.inline
-  def apply(BARCODE_MODE: OFF, CODE2D_FORMAT: LENOFFSET): BARCODEHEIGHTDEFAULT = {
+  inline def apply(BARCODE_MODE: OFF, CODE2D_FORMAT: LENOFFSET): BARCODEHEIGHTDEFAULT = {
     val __obj = js.Dynamic.literal(BARCODE_HEIGHT_DEFAULT = "\u001Dh\u00A2", BARCODE_MODE = BARCODE_MODE.asInstanceOf[js.Any], CODE2D_FORMAT = CODE2D_FORMAT.asInstanceOf[js.Any])
     __obj.asInstanceOf[BARCODEHEIGHTDEFAULT]
   }
   
-  @scala.inline
-  implicit class BARCODEHEIGHTDEFAULTMutableBuilder[Self <: BARCODEHEIGHTDEFAULT] (val x: Self) extends AnyVal {
+  extension [Self <: BARCODEHEIGHTDEFAULT](x: Self) {
     
-    @scala.inline
-    def setBARCODE_HEIGHT_DEFAULT(value: InformationseparatorthreehCentsign): Self = StObject.set(x, "BARCODE_HEIGHT_DEFAULT", value.asInstanceOf[js.Any])
+    inline def setBARCODE_HEIGHT_DEFAULT(value: InformationseparatorthreehCentsign): Self = StObject.set(x, "BARCODE_HEIGHT_DEFAULT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBARCODE_MODE(value: OFF): Self = StObject.set(x, "BARCODE_MODE", value.asInstanceOf[js.Any])
+    inline def setBARCODE_MODE(value: OFF): Self = StObject.set(x, "BARCODE_MODE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCODE2D_FORMAT(value: LENOFFSET): Self = StObject.set(x, "CODE2D_FORMAT", value.asInstanceOf[js.Any])
+    inline def setCODE2D_FORMAT(value: LENOFFSET): Self = StObject.set(x, "CODE2D_FORMAT", value.asInstanceOf[js.Any])
   }
 }

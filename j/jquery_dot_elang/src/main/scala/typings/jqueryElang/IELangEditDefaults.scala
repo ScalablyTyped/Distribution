@@ -22,8 +22,7 @@ trait IELangEditDefaults
 }
 object IELangEditDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addButtonHtml: String,
     addButtonLabel: String,
     contentCSS: String,
@@ -49,25 +48,18 @@ object IELangEditDefaults {
     __obj.asInstanceOf[IELangEditDefaults]
   }
   
-  @scala.inline
-  implicit class IELangEditDefaultsMutableBuilder[Self <: IELangEditDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: IELangEditDefaults](x: Self) {
     
-    @scala.inline
-    def setAddButtonHtml(value: String): Self = StObject.set(x, "addButtonHtml", value.asInstanceOf[js.Any])
+    inline def setAddButtonHtml(value: String): Self = StObject.set(x, "addButtonHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddButtonLabel(value: String): Self = StObject.set(x, "addButtonLabel", value.asInstanceOf[js.Any])
+    inline def setAddButtonLabel(value: String): Self = StObject.set(x, "addButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditFieldHtml(value: String): Self = StObject.set(x, "editFieldHtml", value.asInstanceOf[js.Any])
+    inline def setEditFieldHtml(value: String): Self = StObject.set(x, "editFieldHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditFormHtml(value: String): Self = StObject.set(x, "editFormHtml", value.asInstanceOf[js.Any])
+    inline def setEditFormHtml(value: String): Self = StObject.set(x, "editFormHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditKeyLabel(value: String): Self = StObject.set(x, "editKeyLabel", value.asInstanceOf[js.Any])
+    inline def setEditKeyLabel(value: String): Self = StObject.set(x, "editKeyLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditValueLabel(value: String): Self = StObject.set(x, "editValueLabel", value.asInstanceOf[js.Any])
+    inline def setEditValueLabel(value: String): Self = StObject.set(x, "editValueLabel", value.asInstanceOf[js.Any])
   }
 }

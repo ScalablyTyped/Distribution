@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmListStyle extends StObject
 object fmListStyle {
   
-  @scala.inline
-  def fmListStyleOption: `1` = 1.asInstanceOf[`1`]
+  inline def fmListStyleOption: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmListStylePlain: `0` = 0.asInstanceOf[`0`]
+  inline def fmListStylePlain: `0` = 0.asInstanceOf[`0`]
 }

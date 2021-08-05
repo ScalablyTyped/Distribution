@@ -53,8 +53,7 @@ object LongAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
+  inline def create(model: IModel): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
   
   /**
     * Creates and returns a new LongAttributeType instance in the SDK and on the server.
@@ -65,8 +64,7 @@ object LongAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: Attribute): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
+  inline def createIn(container: Attribute): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
   
   /**
     * Creates and returns a new LongAttributeType instance in the SDK and on the server.
@@ -74,8 +72,7 @@ object LongAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInAttributeUnderType(container: Attribute): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
+  inline def createInAttributeUnderType(container: Attribute): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
   
   /**
     * Creates and returns a new LongAttributeType instance in the SDK and on the server.
@@ -86,8 +83,7 @@ object LongAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEntityKeyPartUnderType(container: EntityKeyPart): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
+  inline def createInEntityKeyPartUnderType(container: EntityKeyPart): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
   
   /**
     * Creates and returns a new LongAttributeType instance in the SDK and on the server.
@@ -98,20 +94,17 @@ object LongAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInODataKeyPartUnderType(container: ODataKeyPart): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
+  inline def createInODataKeyPartUnderType(container: ODataKeyPart): LongAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[LongAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.LongAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.LongAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

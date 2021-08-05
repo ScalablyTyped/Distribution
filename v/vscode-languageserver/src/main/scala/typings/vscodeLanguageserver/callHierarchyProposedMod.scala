@@ -19,17 +19,14 @@ object callHierarchyProposedMod {
   }
   object CallHierarchy {
     
-    @scala.inline
-    def apply(callHierarchy: OnIncomingCalls): CallHierarchy = {
+    inline def apply(callHierarchy: OnIncomingCalls): CallHierarchy = {
       val __obj = js.Dynamic.literal(callHierarchy = callHierarchy.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallHierarchy]
     }
     
-    @scala.inline
-    implicit class CallHierarchyMutableBuilder[Self <: CallHierarchy] (val x: Self) extends AnyVal {
+    extension [Self <: CallHierarchy](x: Self) {
       
-      @scala.inline
-      def setCallHierarchy(value: OnIncomingCalls): Self = StObject.set(x, "callHierarchy", value.asInstanceOf[js.Any])
+      inline def setCallHierarchy(value: OnIncomingCalls): Self = StObject.set(x, "callHierarchy", value.asInstanceOf[js.Any])
     }
   }
 }

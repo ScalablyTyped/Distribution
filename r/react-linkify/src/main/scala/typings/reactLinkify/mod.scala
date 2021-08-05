@@ -42,29 +42,22 @@ object mod {
   }
   object MatchInfo {
     
-    @scala.inline
-    def apply(index: Double, lastIndex: Double, schema: String, text: String, url: String): MatchInfo = {
+    inline def apply(index: Double, lastIndex: Double, schema: String, text: String, url: String): MatchInfo = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], lastIndex = lastIndex.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchInfo]
     }
     
-    @scala.inline
-    implicit class MatchInfoMutableBuilder[Self <: MatchInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MatchInfo](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
+      inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,44 +94,32 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setComponentDecorator(value: (/* decoratedHref */ String, /* decoratedText */ String, /* key */ Double) => ReactNode): Self = StObject.set(x, "componentDecorator", js.Any.fromFunction3(value))
+      inline def setComponentDecorator(value: (/* decoratedHref */ String, /* decoratedText */ String, /* key */ Double) => ReactNode): Self = StObject.set(x, "componentDecorator", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setComponentDecoratorUndefined: Self = StObject.set(x, "componentDecorator", js.undefined)
+      inline def setComponentDecoratorUndefined: Self = StObject.set(x, "componentDecorator", js.undefined)
       
-      @scala.inline
-      def setHrefDecorator(value: /* urlHref */ String => String): Self = StObject.set(x, "hrefDecorator", js.Any.fromFunction1(value))
+      inline def setHrefDecorator(value: /* urlHref */ String => String): Self = StObject.set(x, "hrefDecorator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHrefDecoratorUndefined: Self = StObject.set(x, "hrefDecorator", js.undefined)
+      inline def setHrefDecoratorUndefined: Self = StObject.set(x, "hrefDecorator", js.undefined)
       
-      @scala.inline
-      def setMatchDecorator(value: /* text */ String => js.Array[MatchInfo] | Null): Self = StObject.set(x, "matchDecorator", js.Any.fromFunction1(value))
+      inline def setMatchDecorator(value: /* text */ String => js.Array[MatchInfo] | Null): Self = StObject.set(x, "matchDecorator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatchDecoratorUndefined: Self = StObject.set(x, "matchDecorator", js.undefined)
+      inline def setMatchDecoratorUndefined: Self = StObject.set(x, "matchDecorator", js.undefined)
       
-      @scala.inline
-      def setTextDecorator(value: /* urlText */ String => String): Self = StObject.set(x, "textDecorator", js.Any.fromFunction1(value))
+      inline def setTextDecorator(value: /* urlText */ String => String): Self = StObject.set(x, "textDecorator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTextDecoratorUndefined: Self = StObject.set(x, "textDecorator", js.undefined)
+      inline def setTextDecoratorUndefined: Self = StObject.set(x, "textDecorator", js.undefined)
     }
   }
   

@@ -18,8 +18,7 @@ trait CalloutActionMenu extends StObject {
 }
 object CalloutActionMenu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAction: CalloutAction => Unit,
     calculateActionWidth: () => Unit,
     getActions: () => js.Array[CalloutAction],
@@ -30,22 +29,16 @@ object CalloutActionMenu {
     __obj.asInstanceOf[CalloutActionMenu]
   }
   
-  @scala.inline
-  implicit class CalloutActionMenuMutableBuilder[Self <: CalloutActionMenu] (val x: Self) extends AnyVal {
+  extension [Self <: CalloutActionMenu](x: Self) {
     
-    @scala.inline
-    def setAddAction(value: CalloutAction => Unit): Self = StObject.set(x, "addAction", js.Any.fromFunction1(value))
+    inline def setAddAction(value: CalloutAction => Unit): Self = StObject.set(x, "addAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateActionWidth(value: () => Unit): Self = StObject.set(x, "calculateActionWidth", js.Any.fromFunction0(value))
+    inline def setCalculateActionWidth(value: () => Unit): Self = StObject.set(x, "calculateActionWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActions(value: () => js.Array[CalloutAction]): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
+    inline def setGetActions(value: () => js.Array[CalloutAction]): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshActions(value: () => Unit): Self = StObject.set(x, "refreshActions", js.Any.fromFunction0(value))
+    inline def setRefreshActions(value: () => Unit): Self = StObject.set(x, "refreshActions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }
 }

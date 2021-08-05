@@ -18,19 +18,15 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply(DisplayName: GroupDisplayName, GroupId: ResourceId): Group = {
+  inline def apply(DisplayName: GroupDisplayName, GroupId: ResourceId): Group = {
     val __obj = js.Dynamic.literal(DisplayName = DisplayName.asInstanceOf[js.Any], GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: GroupDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: GroupDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: ResourceId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: ResourceId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

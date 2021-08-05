@@ -18,43 +18,31 @@ trait PNotifyLabel extends StObject {
 }
 object PNotifyLabel {
   
-  @scala.inline
-  def apply(): PNotifyLabel = {
+  inline def apply(): PNotifyLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PNotifyLabel]
   }
   
-  @scala.inline
-  implicit class PNotifyLabelMutableBuilder[Self <: PNotifyLabel] (val x: Self) extends AnyVal {
+  extension [Self <: PNotifyLabel](x: Self) {
     
-    @scala.inline
-    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
-    @scala.inline
-    def setRedisplay(value: String): Self = StObject.set(x, "redisplay", value.asInstanceOf[js.Any])
+    inline def setRedisplay(value: String): Self = StObject.set(x, "redisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedisplayUndefined: Self = StObject.set(x, "redisplay", js.undefined)
+    inline def setRedisplayUndefined: Self = StObject.set(x, "redisplay", js.undefined)
     
-    @scala.inline
-    def setStick(value: String): Self = StObject.set(x, "stick", value.asInstanceOf[js.Any])
+    inline def setStick(value: String): Self = StObject.set(x, "stick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickUndefined: Self = StObject.set(x, "stick", js.undefined)
+    inline def setStickUndefined: Self = StObject.set(x, "stick", js.undefined)
   }
 }

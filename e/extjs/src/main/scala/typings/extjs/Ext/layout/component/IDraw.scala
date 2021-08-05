@@ -9,8 +9,7 @@ trait IDraw
      with IAuto
 object IDraw {
   
-  @scala.inline
-  def apply(): IDraw = {
+  inline def apply(): IDraw = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDraw]
   }

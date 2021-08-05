@@ -16,8 +16,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAct
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     publishMetricAction: Input[
       RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction
     ]
@@ -26,11 +25,9 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionAc
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition](x: Self) {
     
-    @scala.inline
-    def setPublishMetricAction(
+    inline def setPublishMetricAction(
       value: Input[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction
         ]

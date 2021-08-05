@@ -37,61 +37,43 @@ trait CircleCiEnv
 }
 object CircleCiEnv {
   
-  @scala.inline
-  def apply(build: String, buildUrl: String, commit: String, isPr: Boolean, job: String, slug: String): CircleCiEnv = {
+  inline def apply(build: String, buildUrl: String, commit: String, isPr: Boolean, job: String, slug: String): CircleCiEnv = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], name = "CircleCI", service = "circleci", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleCiEnv]
   }
   
-  @scala.inline
-  implicit class CircleCiEnvMutableBuilder[Self <: CircleCiEnv] (val x: Self) extends AnyVal {
+  extension [Self <: CircleCiEnv](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUrl(value: String): Self = StObject.set(x, "buildUrl", value.asInstanceOf[js.Any])
+    inline def setBuildUrl(value: String): Self = StObject.set(x, "buildUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPr(value: Boolean): Self = StObject.set(x, "isPr", value.asInstanceOf[js.Any])
+    inline def setIsPr(value: Boolean): Self = StObject.set(x, "isPr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob(value: String): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: String): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: CircleCI): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: CircleCI): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPr(value: String): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+    inline def setPr(value: String): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrBranch(value: String): Self = StObject.set(x, "prBranch", value.asInstanceOf[js.Any])
+    inline def setPrBranch(value: String): Self = StObject.set(x, "prBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrBranchUndefined: Self = StObject.set(x, "prBranch", js.undefined)
+    inline def setPrBranchUndefined: Self = StObject.set(x, "prBranch", js.undefined)
     
-    @scala.inline
-    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
+    inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
-    @scala.inline
-    def setService(value: circleci_): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: circleci_): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

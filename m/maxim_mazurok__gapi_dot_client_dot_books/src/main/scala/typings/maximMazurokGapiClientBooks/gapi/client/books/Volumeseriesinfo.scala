@@ -20,40 +20,29 @@ trait Volumeseriesinfo extends StObject {
 }
 object Volumeseriesinfo {
   
-  @scala.inline
-  def apply(): Volumeseriesinfo = {
+  inline def apply(): Volumeseriesinfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Volumeseriesinfo]
   }
   
-  @scala.inline
-  implicit class VolumeseriesinfoMutableBuilder[Self <: Volumeseriesinfo] (val x: Self) extends AnyVal {
+  extension [Self <: Volumeseriesinfo](x: Self) {
     
-    @scala.inline
-    def setBookDisplayNumber(value: String): Self = StObject.set(x, "bookDisplayNumber", value.asInstanceOf[js.Any])
+    inline def setBookDisplayNumber(value: String): Self = StObject.set(x, "bookDisplayNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookDisplayNumberUndefined: Self = StObject.set(x, "bookDisplayNumber", js.undefined)
+    inline def setBookDisplayNumberUndefined: Self = StObject.set(x, "bookDisplayNumber", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setShortSeriesBookTitle(value: String): Self = StObject.set(x, "shortSeriesBookTitle", value.asInstanceOf[js.Any])
+    inline def setShortSeriesBookTitle(value: String): Self = StObject.set(x, "shortSeriesBookTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortSeriesBookTitleUndefined: Self = StObject.set(x, "shortSeriesBookTitle", js.undefined)
+    inline def setShortSeriesBookTitleUndefined: Self = StObject.set(x, "shortSeriesBookTitle", js.undefined)
     
-    @scala.inline
-    def setVolumeSeries(value: js.Array[Issue]): Self = StObject.set(x, "volumeSeries", value.asInstanceOf[js.Any])
+    inline def setVolumeSeries(value: js.Array[Issue]): Self = StObject.set(x, "volumeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSeriesUndefined: Self = StObject.set(x, "volumeSeries", js.undefined)
+    inline def setVolumeSeriesUndefined: Self = StObject.set(x, "volumeSeries", js.undefined)
     
-    @scala.inline
-    def setVolumeSeriesVarargs(value: Issue*): Self = StObject.set(x, "volumeSeries", js.Array(value :_*))
+    inline def setVolumeSeriesVarargs(value: Issue*): Self = StObject.set(x, "volumeSeries", js.Array(value :_*))
   }
 }

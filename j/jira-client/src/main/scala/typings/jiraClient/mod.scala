@@ -53,9 +53,9 @@ object mod {
     def addWorklog(issueId: String, worklog: WorklogObject): js.Promise[JsonResponse] = js.native
     def addWorklog(issueId: String, worklog: WorklogObject, newEstimate: EstimateObject): js.Promise[JsonResponse] = js.native
     
-    var apiVersion: String = js.native
+    /* private */ var apiVersion: String = js.native
     
-    var base: String = js.native
+    /* private */ var base: String = js.native
     
     def createBoard(boardBody: BoardObject): js.Promise[JsonResponse] = js.native
     
@@ -930,11 +930,11 @@ object mod {
     
     def getWebhook(webhookID: String): js.Promise[JsonResponse] = js.native
     
-    var greenhopperVersion: String = js.native
+    /* private */ var greenhopperVersion: String = js.native
     
-    var host: String = js.native
+    /* private */ var host: String = js.native
     
-    var intermediatePath: js.UndefOr[String] = js.native
+    /* private */ var intermediatePath: js.UndefOr[String] = js.native
     
     def issueLink(link: LinkObject): js.Promise[JsonResponse] = js.native
     
@@ -975,9 +975,9 @@ object mod {
     
     def moveToBacklog(issues: js.Array[String]): js.Promise[JsonResponse] = js.native
     
-    var port: String | Null = js.native
+    /* private */ var port: String | Null = js.native
     
-    var protocol: String = js.native
+    /* private */ var protocol: String = js.native
     
     def registerWebhook(webhook: WebhookObject): js.Promise[JsonResponse] = js.native
     
@@ -988,7 +988,7 @@ object mod {
     
     def setBoardProperty(boardId: String, propertyKey: String, body: String): js.Promise[JsonResponse] = js.native
     
-    var strictSSL: Boolean = js.native
+    /* private */ var strictSSL: Boolean = js.native
     
     def transitionIssue(issueId: String, issueTransition: TransitionObject): js.Promise[JsonResponse] = js.native
     
@@ -1002,7 +1002,7 @@ object mod {
     
     def upsertFieldOption(fieldKey: String, optionId: String, option: FieldOptionObject): js.Promise[JsonResponse] = js.native
     
-    var webhookVersion: String = js.native
+    /* private */ var webhookVersion: String = js.native
   }
   
   trait JiraApiOptions extends StObject {
@@ -1039,101 +1039,70 @@ object mod {
   }
   object JiraApiOptions {
     
-    @scala.inline
-    def apply(host: String): JiraApiOptions = {
+    inline def apply(host: String): JiraApiOptions = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[JiraApiOptions]
     }
     
-    @scala.inline
-    implicit class JiraApiOptionsMutableBuilder[Self <: JiraApiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JiraApiOptions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
+      inline def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
+      inline def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
       
-      @scala.inline
-      def setGreenhopperVersion(value: String): Self = StObject.set(x, "greenhopperVersion", value.asInstanceOf[js.Any])
+      inline def setGreenhopperVersion(value: String): Self = StObject.set(x, "greenhopperVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreenhopperVersionUndefined: Self = StObject.set(x, "greenhopperVersion", js.undefined)
+      inline def setGreenhopperVersionUndefined: Self = StObject.set(x, "greenhopperVersion", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntermediatePath(value: String): Self = StObject.set(x, "intermediatePath", value.asInstanceOf[js.Any])
+      inline def setIntermediatePath(value: String): Self = StObject.set(x, "intermediatePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntermediatePathUndefined: Self = StObject.set(x, "intermediatePath", js.undefined)
+      inline def setIntermediatePathUndefined: Self = StObject.set(x, "intermediatePath", js.undefined)
       
-      @scala.inline
-      def setOauth(value: OAuth): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
+      inline def setOauth(value: OAuth): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
+      inline def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
+      inline def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
+      inline def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      @scala.inline
-      def setWebhookVersion(value: String): Self = StObject.set(x, "webhookVersion", value.asInstanceOf[js.Any])
+      inline def setWebhookVersion(value: String): Self = StObject.set(x, "webhookVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhookVersionUndefined: Self = StObject.set(x, "webhookVersion", js.undefined)
+      inline def setWebhookVersionUndefined: Self = StObject.set(x, "webhookVersion", js.undefined)
     }
   }
   
@@ -1157,32 +1126,24 @@ object mod {
   }
   object OAuth {
     
-    @scala.inline
-    def apply(access_token: String, access_token_secret: String, consumer_key: String, consumer_secret: String): OAuth = {
+    inline def apply(access_token: String, access_token_secret: String, consumer_key: String, consumer_secret: String): OAuth = {
       val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], access_token_secret = access_token_secret.asInstanceOf[js.Any], consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[OAuth]
     }
     
-    @scala.inline
-    implicit class OAuthMutableBuilder[Self <: OAuth] (val x: Self) extends AnyVal {
+    extension [Self <: OAuth](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccess_token_secret(value: String): Self = StObject.set(x, "access_token_secret", value.asInstanceOf[js.Any])
+      inline def setAccess_token_secret(value: String): Self = StObject.set(x, "access_token_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
+      inline def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
+      inline def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature_method(value: String): Self = StObject.set(x, "signature_method", value.asInstanceOf[js.Any])
+      inline def setSignature_method(value: String): Self = StObject.set(x, "signature_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature_methodUndefined: Self = StObject.set(x, "signature_method", js.undefined)
+      inline def setSignature_methodUndefined: Self = StObject.set(x, "signature_method", js.undefined)
     }
   }
   
@@ -1200,44 +1161,32 @@ object mod {
   }
   object SearchQuery {
     
-    @scala.inline
-    def apply(): SearchQuery = {
+    inline def apply(): SearchQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchQuery]
     }
     
-    @scala.inline
-    implicit class SearchQueryMutableBuilder[Self <: SearchQuery] (val x: Self) extends AnyVal {
+    extension [Self <: SearchQuery](x: Self) {
       
-      @scala.inline
-      def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
+      inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+      inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
     }
   }
   
@@ -1255,41 +1204,30 @@ object mod {
   }
   object SearchUserOptions {
     
-    @scala.inline
-    def apply(username: String): SearchUserOptions = {
+    inline def apply(username: String): SearchUserOptions = {
       val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchUserOptions]
     }
     
-    @scala.inline
-    implicit class SearchUserOptionsMutableBuilder[Self <: SearchUserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SearchUserOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeActive(value: Boolean): Self = StObject.set(x, "includeActive", value.asInstanceOf[js.Any])
+      inline def setIncludeActive(value: Boolean): Self = StObject.set(x, "includeActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeActiveUndefined: Self = StObject.set(x, "includeActive", js.undefined)
+      inline def setIncludeActiveUndefined: Self = StObject.set(x, "includeActive", js.undefined)
       
-      @scala.inline
-      def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
+      inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
+      inline def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+      inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1305,29 +1243,22 @@ object mod {
   }
   object UriOptions {
     
-    @scala.inline
-    def apply(pathname: String): UriOptions = {
+    inline def apply(pathname: String): UriOptions = {
       val __obj = js.Dynamic.literal(pathname = pathname.asInstanceOf[js.Any])
       __obj.asInstanceOf[UriOptions]
     }
     
-    @scala.inline
-    implicit class UriOptionsMutableBuilder[Self <: UriOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UriOptions](x: Self) {
       
-      @scala.inline
-      def setIntermediatePath(value: String): Self = StObject.set(x, "intermediatePath", value.asInstanceOf[js.Any])
+      inline def setIntermediatePath(value: String): Self = StObject.set(x, "intermediatePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntermediatePathUndefined: Self = StObject.set(x, "intermediatePath", js.undefined)
+      inline def setIntermediatePathUndefined: Self = StObject.set(x, "intermediatePath", js.undefined)
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   

@@ -10,16 +10,13 @@ trait RemoveChannelMetadataParameters extends StObject {
 }
 object RemoveChannelMetadataParameters {
   
-  @scala.inline
-  def apply(channel: String): RemoveChannelMetadataParameters = {
+  inline def apply(channel: String): RemoveChannelMetadataParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveChannelMetadataParameters]
   }
   
-  @scala.inline
-  implicit class RemoveChannelMetadataParametersMutableBuilder[Self <: RemoveChannelMetadataParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveChannelMetadataParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

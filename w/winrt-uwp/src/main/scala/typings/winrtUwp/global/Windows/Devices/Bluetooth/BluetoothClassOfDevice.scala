@@ -41,8 +41,7 @@ object BluetoothClassOfDevice {
     * @return A BluetoothClassOfDevice object.
     */
   /* static member */
-  @scala.inline
-  def fromParts(
+  inline def fromParts(
     majorClass: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothMajorClass,
     minorClass: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothMinorClass,
     serviceCapabilities: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothServiceCapabilities
@@ -54,6 +53,5 @@ object BluetoothClassOfDevice {
     * @return A BluetoothClassOfDevice object.
     */
   /* static member */
-  @scala.inline
-  def fromRawValue(rawValue: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothClassOfDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRawValue")(rawValue.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothClassOfDevice]
+  inline def fromRawValue(rawValue: Double): typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothClassOfDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRawValue")(rawValue.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothClassOfDevice]
 }

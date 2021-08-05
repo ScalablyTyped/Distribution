@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access._PageHdrFtrInReport")
 @js.native
-class PageHdrFtrInReport protected ()
+/* private */ class PageHdrFtrInReport ()
   extends StObject
      with typings.activexAccess.Access.PageHdrFtrInReport {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access._PageHdrFtrInReport_typekey")
   var AccessDot_PageHdrFtrInReport_typekey: typings.activexAccess.Access.PageHdrFtrInReport = js.native
   

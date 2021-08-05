@@ -27,41 +27,30 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(isOpen: Boolean): Props = {
+    inline def apply(isOpen: Boolean): Props = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameNull: Self = StObject.set(x, "className", null)
+      inline def setClassNameNull: Self = StObject.set(x, "className", null)
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRest(value: () => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction0(value))
+      inline def setOnRest(value: () => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
+      inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
       
-      @scala.inline
-      def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionNull: Self = StObject.set(x, "transition", null)
+      inline def setTransitionNull: Self = StObject.set(x, "transition", null)
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
 }

@@ -40,37 +40,27 @@ trait SchemaCallCredentials extends StObject {
 }
 object SchemaCallCredentials {
   
-  @scala.inline
-  def apply(): SchemaCallCredentials = {
+  inline def apply(): SchemaCallCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCallCredentials]
   }
   
-  @scala.inline
-  implicit class SchemaCallCredentialsMutableBuilder[Self <: SchemaCallCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCallCredentials](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setCallCredentialType(value: String): Self = StObject.set(x, "callCredentialType", value.asInstanceOf[js.Any])
+    inline def setCallCredentialType(value: String): Self = StObject.set(x, "callCredentialType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallCredentialTypeUndefined: Self = StObject.set(x, "callCredentialType", js.undefined)
+    inline def setCallCredentialTypeUndefined: Self = StObject.set(x, "callCredentialType", js.undefined)
     
-    @scala.inline
-    def setFromPlugin(value: SchemaMetadataCredentialsFromPlugin): Self = StObject.set(x, "fromPlugin", value.asInstanceOf[js.Any])
+    inline def setFromPlugin(value: SchemaMetadataCredentialsFromPlugin): Self = StObject.set(x, "fromPlugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPluginUndefined: Self = StObject.set(x, "fromPlugin", js.undefined)
+    inline def setFromPluginUndefined: Self = StObject.set(x, "fromPlugin", js.undefined)
     
-    @scala.inline
-    def setJwtServiceAccount(value: SchemaServiceAccountJwtAccessCredentials): Self = StObject.set(x, "jwtServiceAccount", value.asInstanceOf[js.Any])
+    inline def setJwtServiceAccount(value: SchemaServiceAccountJwtAccessCredentials): Self = StObject.set(x, "jwtServiceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJwtServiceAccountUndefined: Self = StObject.set(x, "jwtServiceAccount", js.undefined)
+    inline def setJwtServiceAccountUndefined: Self = StObject.set(x, "jwtServiceAccount", js.undefined)
   }
 }

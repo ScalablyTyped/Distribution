@@ -39,37 +39,27 @@ trait PaymentLineItem extends StObject {
 }
 object PaymentLineItem {
   
-  @scala.inline
-  def apply(): PaymentLineItem = {
+  inline def apply(): PaymentLineItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentLineItem]
   }
   
-  @scala.inline
-  implicit class PaymentLineItemMutableBuilder[Self <: PaymentLineItem] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentLineItem](x: Self) {
     
-    @scala.inline
-    def setAmountReference(value: String): Self = StObject.set(x, "amountReference", value.asInstanceOf[js.Any])
+    inline def setAmountReference(value: String): Self = StObject.set(x, "amountReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountReferenceUndefined: Self = StObject.set(x, "amountReference", js.undefined)
+    inline def setAmountReferenceUndefined: Self = StObject.set(x, "amountReference", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setItemCode(value: String): Self = StObject.set(x, "itemCode", value.asInstanceOf[js.Any])
+    inline def setItemCode(value: String): Self = StObject.set(x, "itemCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCodeUndefined: Self = StObject.set(x, "itemCode", js.undefined)
+    inline def setItemCodeUndefined: Self = StObject.set(x, "itemCode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

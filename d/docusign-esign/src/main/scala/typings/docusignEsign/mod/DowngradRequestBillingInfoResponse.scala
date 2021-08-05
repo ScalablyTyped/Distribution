@@ -25,25 +25,19 @@ trait DowngradRequestBillingInfoResponse extends StObject {
 }
 object DowngradRequestBillingInfoResponse {
   
-  @scala.inline
-  def apply(): DowngradRequestBillingInfoResponse = {
+  inline def apply(): DowngradRequestBillingInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DowngradRequestBillingInfoResponse]
   }
   
-  @scala.inline
-  implicit class DowngradRequestBillingInfoResponseMutableBuilder[Self <: DowngradRequestBillingInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DowngradRequestBillingInfoResponse](x: Self) {
     
-    @scala.inline
-    def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = StObject.set(x, "downgradePlanInformation", value.asInstanceOf[js.Any])
+    inline def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = StObject.set(x, "downgradePlanInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDowngradePlanInformationUndefined: Self = StObject.set(x, "downgradePlanInformation", js.undefined)
+    inline def setDowngradePlanInformationUndefined: Self = StObject.set(x, "downgradePlanInformation", js.undefined)
     
-    @scala.inline
-    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
+    inline def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
+    inline def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
   }
 }

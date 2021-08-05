@@ -14,8 +14,7 @@ trait GeoJSONLayerEditsEventUpdatedFeatures
 }
 object GeoJSONLayerEditsEventUpdatedFeatures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     objectId: Double,
@@ -25,10 +24,8 @@ object GeoJSONLayerEditsEventUpdatedFeatures {
     __obj.asInstanceOf[GeoJSONLayerEditsEventUpdatedFeatures]
   }
   
-  @scala.inline
-  implicit class GeoJSONLayerEditsEventUpdatedFeaturesMutableBuilder[Self <: GeoJSONLayerEditsEventUpdatedFeatures] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONLayerEditsEventUpdatedFeatures](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

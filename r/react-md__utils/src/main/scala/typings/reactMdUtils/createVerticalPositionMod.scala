@@ -14,23 +14,17 @@ object createVerticalPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAnchoredAbove(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredAbove")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
+  inline def createAnchoredAbove(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredAbove")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @scala.inline
-  def createAnchoredBelow(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredBelow")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
+  inline def createAnchoredBelow(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredBelow")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @scala.inline
-  def createAnchoredBottom(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredBottom")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
+  inline def createAnchoredBottom(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredBottom")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @scala.inline
-  def createAnchoredCenter(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredCenter")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
+  inline def createAnchoredCenter(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredCenter")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @scala.inline
-  def createAnchoredTop(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredTop")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
+  inline def createAnchoredTop(config: FixConfig): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnchoredTop")(config.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
-  @scala.inline
-  def createVerticalPosition(
+  inline def createVerticalPosition(
     hasYVhVhMarginYMarginElHeightInitialYContainerRectDisableSwappingPreventOverlapDisableVHBounds: Options
   ): YPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerticalPosition")(hasYVhVhMarginYMarginElHeightInitialYContainerRectDisableSwappingPreventOverlapDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[YPosition]
   
@@ -50,8 +44,7 @@ object createVerticalPositionMod {
   }
   object FixConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerRect: DOMRect | ClientRect,
       disableSwapping: Boolean,
       disableVHBounds: Boolean,
@@ -65,23 +58,17 @@ object createVerticalPositionMod {
       __obj.asInstanceOf[FixConfig]
     }
     
-    @scala.inline
-    implicit class FixConfigMutableBuilder[Self <: FixConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FixConfig](x: Self) {
       
-      @scala.inline
-      def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
+      inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
+      inline def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
+      inline def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenBottom(value: Double): Self = StObject.set(x, "screenBottom", value.asInstanceOf[js.Any])
+      inline def setScreenBottom(value: Double): Self = StObject.set(x, "screenBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
+      inline def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +100,7 @@ object createVerticalPositionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerRect: DOMRect | ClientRect,
       disableSwapping: Boolean,
       disableVHBounds: Boolean,
@@ -129,41 +115,29 @@ object createVerticalPositionMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
+      inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
+      inline def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElHeight(value: Double): Self = StObject.set(x, "elHeight", value.asInstanceOf[js.Any])
+      inline def setElHeight(value: Double): Self = StObject.set(x, "elHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
+      inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
+      inline def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
       
-      @scala.inline
-      def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
+      inline def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVh(value: Double): Self = StObject.set(x, "vh", value.asInstanceOf[js.Any])
+      inline def setVh(value: Double): Self = StObject.set(x, "vh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
+      inline def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: VerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: VerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYMargin(value: Double): Self = StObject.set(x, "yMargin", value.asInstanceOf[js.Any])
+      inline def setYMargin(value: Double): Self = StObject.set(x, "yMargin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,26 +154,20 @@ object createVerticalPositionMod {
   }
   object YPosition {
     
-    @scala.inline
-    def apply(actualY: VerticalPosition, top: Double): YPosition = {
+    inline def apply(actualY: VerticalPosition, top: Double): YPosition = {
       val __obj = js.Dynamic.literal(actualY = actualY.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[YPosition]
     }
     
-    @scala.inline
-    implicit class YPositionMutableBuilder[Self <: YPosition] (val x: Self) extends AnyVal {
+    extension [Self <: YPosition](x: Self) {
       
-      @scala.inline
-      def setActualY(value: VerticalPosition): Self = StObject.set(x, "actualY", value.asInstanceOf[js.Any])
+      inline def setActualY(value: VerticalPosition): Self = StObject.set(x, "actualY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

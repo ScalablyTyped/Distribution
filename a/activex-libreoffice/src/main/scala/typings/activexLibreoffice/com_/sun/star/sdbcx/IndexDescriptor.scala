@@ -29,8 +29,7 @@ trait IndexDescriptor
 }
 object IndexDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Catalog: String,
     Columns: XNameAccess,
     IsClustered: Boolean,
@@ -53,16 +52,12 @@ object IndexDescriptor {
     __obj.asInstanceOf[IndexDescriptor]
   }
   
-  @scala.inline
-  implicit class IndexDescriptorMutableBuilder[Self <: IndexDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: IndexDescriptor](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: String): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: String): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClustered(value: Boolean): Self = StObject.set(x, "IsClustered", value.asInstanceOf[js.Any])
+    inline def setIsClustered(value: Boolean): Self = StObject.set(x, "IsClustered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnique(value: Boolean): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
+    inline def setIsUnique(value: Boolean): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
   }
 }

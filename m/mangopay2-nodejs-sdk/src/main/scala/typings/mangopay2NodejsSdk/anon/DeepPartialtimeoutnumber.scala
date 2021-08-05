@@ -12,19 +12,15 @@ trait DeepPartialtimeoutnumber extends StObject {
 }
 object DeepPartialtimeoutnumber {
   
-  @scala.inline
-  def apply(): DeepPartialtimeoutnumber = {
+  inline def apply(): DeepPartialtimeoutnumber = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeepPartialtimeoutnumber]
   }
   
-  @scala.inline
-  implicit class DeepPartialtimeoutnumberMutableBuilder[Self <: DeepPartialtimeoutnumber] (val x: Self) extends AnyVal {
+  extension [Self <: DeepPartialtimeoutnumber](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: DeepPartial[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: DeepPartial[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait UpResult extends StObject {
 }
 object UpResult {
   
-  @scala.inline
-  def apply(outputs: OutputMap, stderr: String, stdout: String, summary: UpdateSummary): UpResult = {
+  inline def apply(outputs: OutputMap, stderr: String, stdout: String, summary: UpdateSummary): UpResult = {
     val __obj = js.Dynamic.literal(outputs = outputs.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpResult]
   }
   
-  @scala.inline
-  implicit class UpResultMutableBuilder[Self <: UpResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpResult](x: Self) {
     
-    @scala.inline
-    def setOutputs(value: OutputMap): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: OutputMap): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    inline def setStdout(value: String): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: UpdateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: UpdateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

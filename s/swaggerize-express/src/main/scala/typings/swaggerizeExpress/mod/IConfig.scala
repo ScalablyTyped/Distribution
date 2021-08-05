@@ -14,22 +14,17 @@ trait IConfig extends StObject {
 }
 object IConfig {
   
-  @scala.inline
-  def apply(api: ApiDefinition, routes: js.Array[IRoute]): IConfig = {
+  inline def apply(api: ApiDefinition, routes: js.Array[IRoute]): IConfig = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConfig]
   }
   
-  @scala.inline
-  implicit class IConfigMutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IConfig](x: Self) {
     
-    @scala.inline
-    def setApi(value: ApiDefinition): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: ApiDefinition): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutes(value: js.Array[IRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[IRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: IRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: IRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
   }
 }

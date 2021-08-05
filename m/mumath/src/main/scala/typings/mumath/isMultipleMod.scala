@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isMultipleMod {
   
-  @scala.inline
-  def apply(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(a: Double, b: Double, eps: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], eps.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: Double, b: Double, eps: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], eps.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("mumath/isMultiple", JSImport.Namespace)
   @js.native

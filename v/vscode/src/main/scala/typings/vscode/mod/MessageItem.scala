@@ -22,22 +22,17 @@ trait MessageItem extends StObject {
 }
 object MessageItem {
   
-  @scala.inline
-  def apply(title: String): MessageItem = {
+  inline def apply(title: String): MessageItem = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageItem]
   }
   
-  @scala.inline
-  implicit class MessageItemMutableBuilder[Self <: MessageItem] (val x: Self) extends AnyVal {
+  extension [Self <: MessageItem](x: Self) {
     
-    @scala.inline
-    def setIsCloseAffordance(value: Boolean): Self = StObject.set(x, "isCloseAffordance", value.asInstanceOf[js.Any])
+    inline def setIsCloseAffordance(value: Boolean): Self = StObject.set(x, "isCloseAffordance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCloseAffordanceUndefined: Self = StObject.set(x, "isCloseAffordance", js.undefined)
+    inline def setIsCloseAffordanceUndefined: Self = StObject.set(x, "isCloseAffordance", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

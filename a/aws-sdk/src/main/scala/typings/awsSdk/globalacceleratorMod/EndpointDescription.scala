@@ -33,43 +33,31 @@ trait EndpointDescription extends StObject {
 }
 object EndpointDescription {
   
-  @scala.inline
-  def apply(): EndpointDescription = {
+  inline def apply(): EndpointDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointDescription]
   }
   
-  @scala.inline
-  implicit class EndpointDescriptionMutableBuilder[Self <: EndpointDescription] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointDescription](x: Self) {
     
-    @scala.inline
-    def setClientIPPreservationEnabled(value: GenericBoolean): Self = StObject.set(x, "ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
+    inline def setClientIPPreservationEnabled(value: GenericBoolean): Self = StObject.set(x, "ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIPPreservationEnabledUndefined: Self = StObject.set(x, "ClientIPPreservationEnabled", js.undefined)
+    inline def setClientIPPreservationEnabledUndefined: Self = StObject.set(x, "ClientIPPreservationEnabled", js.undefined)
     
-    @scala.inline
-    def setEndpointId(value: GenericString): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
+    inline def setEndpointId(value: GenericString): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointIdUndefined: Self = StObject.set(x, "EndpointId", js.undefined)
+    inline def setEndpointIdUndefined: Self = StObject.set(x, "EndpointId", js.undefined)
     
-    @scala.inline
-    def setHealthReason(value: GenericString): Self = StObject.set(x, "HealthReason", value.asInstanceOf[js.Any])
+    inline def setHealthReason(value: GenericString): Self = StObject.set(x, "HealthReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthReasonUndefined: Self = StObject.set(x, "HealthReason", js.undefined)
+    inline def setHealthReasonUndefined: Self = StObject.set(x, "HealthReason", js.undefined)
     
-    @scala.inline
-    def setHealthState(value: HealthState): Self = StObject.set(x, "HealthState", value.asInstanceOf[js.Any])
+    inline def setHealthState(value: HealthState): Self = StObject.set(x, "HealthState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStateUndefined: Self = StObject.set(x, "HealthState", js.undefined)
+    inline def setHealthStateUndefined: Self = StObject.set(x, "HealthState", js.undefined)
     
-    @scala.inline
-    def setWeight(value: EndpointWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: EndpointWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
   }
 }

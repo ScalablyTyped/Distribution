@@ -48,61 +48,43 @@ trait Archive extends StObject {
 }
 object Archive {
   
-  @scala.inline
-  def apply(): Archive = {
+  inline def apply(): Archive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Archive]
   }
   
-  @scala.inline
-  implicit class ArchiveMutableBuilder[Self <: Archive] (val x: Self) extends AnyVal {
+  extension [Self <: Archive](x: Self) {
     
-    @scala.inline
-    def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
+    inline def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveNameUndefined: Self = StObject.set(x, "ArchiveName", js.undefined)
+    inline def setArchiveNameUndefined: Self = StObject.set(x, "ArchiveName", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setEventCount(value: Long): Self = StObject.set(x, "EventCount", value.asInstanceOf[js.Any])
+    inline def setEventCount(value: Long): Self = StObject.set(x, "EventCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCountUndefined: Self = StObject.set(x, "EventCount", js.undefined)
+    inline def setEventCountUndefined: Self = StObject.set(x, "EventCount", js.undefined)
     
-    @scala.inline
-    def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
+    inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
+    inline def setEventSourceArnUndefined: Self = StObject.set(x, "EventSourceArn", js.undefined)
     
-    @scala.inline
-    def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
+    inline def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
+    inline def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: Long): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: Long): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "SizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "SizeBytes", js.undefined)
     
-    @scala.inline
-    def setState(value: ArchiveState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ArchiveState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReason(value: ArchiveStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
+    inline def setStateReason(value: ArchiveStateReason): Self = StObject.set(x, "StateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

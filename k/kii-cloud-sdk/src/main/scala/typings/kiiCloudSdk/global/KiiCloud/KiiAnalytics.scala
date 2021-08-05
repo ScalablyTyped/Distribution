@@ -25,8 +25,7 @@ object KiiAnalytics {
     * @return The current app ID
     */
   /* static member */
-  @scala.inline
-  def getAppID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppID")().asInstanceOf[String]
+  inline def getAppID(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppID")().asInstanceOf[String]
   
   /**
     * Retrieve the current app key
@@ -34,8 +33,7 @@ object KiiAnalytics {
     * @return The current app key
     */
   /* static member */
-  @scala.inline
-  def getAppKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppKey")().asInstanceOf[String]
+  inline def getAppKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppKey")().asInstanceOf[String]
   
   /**
     * Get the deviceId. If deviceId has not specified while initialization, it returns SDK generated deviceId.It is recommended to retrieve the deviceId and store it to identify the device
@@ -44,8 +42,7 @@ object KiiAnalytics {
     * @return deviceId.
     */
   /* static member */
-  @scala.inline
-  def getDeviceId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceId")().asInstanceOf[String]
+  inline def getDeviceId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceId")().asInstanceOf[String]
   
   /**
     *
@@ -55,8 +52,7 @@ object KiiAnalytics {
     * @return current version number of the SDK
     */
   /* static member */
-  @scala.inline
-  def getSDKVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDKVersion")().asInstanceOf[String]
+  inline def getSDKVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSDKVersion")().asInstanceOf[String]
   
   /**
     *
@@ -77,8 +73,7 @@ object KiiAnalytics {
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiAnalyticsSite.JP, "my-device-id");
     */
   /* static member */
-  @scala.inline
-  def initialize(appID: String, appKey: String, deviceid: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], deviceid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initialize(appID: String, appKey: String, deviceid: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(appID.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], deviceid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *
@@ -100,8 +95,7 @@ object KiiAnalytics {
     *     Kii.initializeWithSite("my-app-id", "my-app-key", KiiAnalyticsSite.JP, "my-device-id");
     */
   /* static member */
-  @scala.inline
-  def initializeWithSite(
+  inline def initializeWithSite(
     appID: String,
     appKey: String,
     site: typings.kiiCloudSdk.KiiCloud.KiiAnalyticsSite,
@@ -114,8 +108,7 @@ object KiiAnalytics {
     * @return True if printing logs, false otherwise
     */
   /* static member */
-  @scala.inline
-  def isLogging(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogging")().asInstanceOf[Boolean]
+  inline def isLogging(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLogging")().asInstanceOf[Boolean]
   
   /**
     * Utilize the KiiAnalytics logger to track SDK-specific actions
@@ -128,8 +121,7 @@ object KiiAnalytics {
     *         KiiAnalytics.logger("My message");
     */
   /* static member */
-  @scala.inline
-  def logger(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logger(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     *
@@ -139,8 +131,7 @@ object KiiAnalytics {
     * @param url A string containing the desired endpoint
     */
   /* static member */
-  @scala.inline
-  def setBaseURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBaseURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBaseURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Set the logging status of the SDK
@@ -153,8 +144,7 @@ object KiiAnalytics {
     *         KiiAnalytics.setLogging(true);
     */
   /* static member */
-  @scala.inline
-  def setLogging(True: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogging")(True.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogging(True: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogging")(True.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Log a single event to be uploaded to KiiAnalytics
@@ -174,8 +164,7 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  @scala.inline
-  def trackEvent(eventName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def trackEvent(eventName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("trackEvent")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Log a single event to be uploaded to KiiAnalytics
@@ -199,8 +188,7 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  @scala.inline
-  def trackEventWithExtras(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtras")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def trackEventWithExtras(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtras")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Log a single event to be uploaded to KiiAnalytics
@@ -225,8 +213,6 @@ object KiiAnalytics {
     *     </ul>
     */
   /* static member */
-  @scala.inline
-  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def trackEventWithExtrasAndCallbacks(eventName: String, extras: js.Any, callbacks: `19`): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("trackEventWithExtrasAndCallbacks")(eventName.asInstanceOf[js.Any], extras.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

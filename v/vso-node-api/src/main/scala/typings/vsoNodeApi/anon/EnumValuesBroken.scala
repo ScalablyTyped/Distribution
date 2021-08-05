@@ -10,16 +10,13 @@ trait EnumValuesBroken extends StObject {
 }
 object EnumValuesBroken {
   
-  @scala.inline
-  def apply(enumValues: Broken): EnumValuesBroken = {
+  inline def apply(enumValues: Broken): EnumValuesBroken = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesBroken]
   }
   
-  @scala.inline
-  implicit class EnumValuesBrokenMutableBuilder[Self <: EnumValuesBroken] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesBroken](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Broken): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Broken): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

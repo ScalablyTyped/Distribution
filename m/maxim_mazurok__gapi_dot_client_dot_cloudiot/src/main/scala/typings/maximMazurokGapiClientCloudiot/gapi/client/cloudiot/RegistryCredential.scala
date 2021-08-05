@@ -11,19 +11,15 @@ trait RegistryCredential extends StObject {
 }
 object RegistryCredential {
   
-  @scala.inline
-  def apply(): RegistryCredential = {
+  inline def apply(): RegistryCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegistryCredential]
   }
   
-  @scala.inline
-  implicit class RegistryCredentialMutableBuilder[Self <: RegistryCredential] (val x: Self) extends AnyVal {
+  extension [Self <: RegistryCredential](x: Self) {
     
-    @scala.inline
-    def setPublicKeyCertificate(value: PublicKeyCertificate): Self = StObject.set(x, "publicKeyCertificate", value.asInstanceOf[js.Any])
+    inline def setPublicKeyCertificate(value: PublicKeyCertificate): Self = StObject.set(x, "publicKeyCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyCertificateUndefined: Self = StObject.set(x, "publicKeyCertificate", js.undefined)
+    inline def setPublicKeyCertificateUndefined: Self = StObject.set(x, "publicKeyCertificate", js.undefined)
   }
 }

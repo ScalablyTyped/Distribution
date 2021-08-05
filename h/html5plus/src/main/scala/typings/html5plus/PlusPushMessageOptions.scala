@@ -77,55 +77,39 @@ trait PlusPushMessageOptions extends StObject {
 }
 object PlusPushMessageOptions {
   
-  @scala.inline
-  def apply(): PlusPushMessageOptions = {
+  inline def apply(): PlusPushMessageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusPushMessageOptions]
   }
   
-  @scala.inline
-  implicit class PlusPushMessageOptionsMutableBuilder[Self <: PlusPushMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusPushMessageOptions](x: Self) {
     
-    @scala.inline
-    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
-    @scala.inline
-    def setCover(value: Boolean): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
+    inline def setCover(value: Boolean): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverUndefined: Self = StObject.set(x, "cover", js.undefined)
+    inline def setCoverUndefined: Self = StObject.set(x, "cover", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setSound(value: system | none): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: system | none): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: Date): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

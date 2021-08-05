@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionState extends StObject
 object ConnectionState {
   
-  @scala.inline
-  def CONNECTED: typings.trtcJsSdk.trtcJsSdkStrings.CONNECTED = "CONNECTED".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.CONNECTED]
+  inline def CONNECTED: typings.trtcJsSdk.trtcJsSdkStrings.CONNECTED = "CONNECTED".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.CONNECTED]
   
-  @scala.inline
-  def CONNECTING: typings.trtcJsSdk.trtcJsSdkStrings.CONNECTING = "CONNECTING".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.CONNECTING]
+  inline def CONNECTING: typings.trtcJsSdk.trtcJsSdkStrings.CONNECTING = "CONNECTING".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.CONNECTING]
   
-  @scala.inline
-  def DISCONNECTED: typings.trtcJsSdk.trtcJsSdkStrings.DISCONNECTED = "DISCONNECTED".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.DISCONNECTED]
+  inline def DISCONNECTED: typings.trtcJsSdk.trtcJsSdkStrings.DISCONNECTED = "DISCONNECTED".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.DISCONNECTED]
   
-  @scala.inline
-  def RECONNECTING: typings.trtcJsSdk.trtcJsSdkStrings.RECONNECTING = "RECONNECTING".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.RECONNECTING]
+  inline def RECONNECTING: typings.trtcJsSdk.trtcJsSdkStrings.RECONNECTING = "RECONNECTING".asInstanceOf[typings.trtcJsSdk.trtcJsSdkStrings.RECONNECTING]
 }

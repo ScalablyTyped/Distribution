@@ -16,31 +16,23 @@ trait PagedObjectsResponse[DataType]
 }
 object PagedObjectsResponse {
   
-  @scala.inline
-  def apply[DataType](data: js.Array[DataType], status: Double): PagedObjectsResponse[DataType] = {
+  inline def apply[DataType](data: js.Array[DataType], status: Double): PagedObjectsResponse[DataType] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagedObjectsResponse[DataType]]
   }
   
-  @scala.inline
-  implicit class PagedObjectsResponseMutableBuilder[Self <: PagedObjectsResponse[?], DataType] (val x: Self & PagedObjectsResponse[DataType]) extends AnyVal {
+  extension [Self <: PagedObjectsResponse[?], DataType](x: Self & PagedObjectsResponse[DataType]) {
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

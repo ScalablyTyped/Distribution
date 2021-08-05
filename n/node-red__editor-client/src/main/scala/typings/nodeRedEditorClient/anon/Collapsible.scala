@@ -12,22 +12,17 @@ trait Collapsible extends StObject {
 }
 object Collapsible {
   
-  @scala.inline
-  def apply(title: String): Collapsible = {
+  inline def apply(title: String): Collapsible = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collapsible]
   }
   
-  @scala.inline
-  implicit class CollapsibleMutableBuilder[Self <: Collapsible] (val x: Self) extends AnyVal {
+  extension [Self <: Collapsible](x: Self) {
     
-    @scala.inline
-    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

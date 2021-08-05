@@ -103,21 +103,16 @@ object roleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Role]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Role]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RoleState): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Role]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RoleState, opts: CustomResourceOptions): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Role]
+    inline def get(name: String, id: Input[ID]): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Role]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Role]
+    inline def get(name: String, id: Input[ID], state: RoleState): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Role]
+    inline def get(name: String, id: Input[ID], state: RoleState, opts: CustomResourceOptions): Role = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Role]
     
     /**
       * Returns true if the given object is an instance of Role.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/role.Role */ Boolean]
   }
   
   trait RoleArgs extends StObject {
@@ -170,65 +165,46 @@ object roleMod {
   }
   object RoleArgs {
     
-    @scala.inline
-    def apply(assumeRolePolicy: Input[String | PolicyDocument]): RoleArgs = {
+    inline def apply(assumeRolePolicy: Input[String | PolicyDocument]): RoleArgs = {
       val __obj = js.Dynamic.literal(assumeRolePolicy = assumeRolePolicy.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleArgs]
     }
     
-    @scala.inline
-    implicit class RoleArgsMutableBuilder[Self <: RoleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RoleArgs](x: Self) {
       
-      @scala.inline
-      def setAssumeRolePolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "assumeRolePolicy", value.asInstanceOf[js.Any])
+      inline def setAssumeRolePolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "assumeRolePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setForceDetachPolicies(value: Input[Boolean]): Self = StObject.set(x, "forceDetachPolicies", value.asInstanceOf[js.Any])
+      inline def setForceDetachPolicies(value: Input[Boolean]): Self = StObject.set(x, "forceDetachPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDetachPoliciesUndefined: Self = StObject.set(x, "forceDetachPolicies", js.undefined)
+      inline def setForceDetachPoliciesUndefined: Self = StObject.set(x, "forceDetachPolicies", js.undefined)
       
-      @scala.inline
-      def setMaxSessionDuration(value: Input[Double]): Self = StObject.set(x, "maxSessionDuration", value.asInstanceOf[js.Any])
+      inline def setMaxSessionDuration(value: Input[Double]): Self = StObject.set(x, "maxSessionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSessionDurationUndefined: Self = StObject.set(x, "maxSessionDuration", js.undefined)
+      inline def setMaxSessionDurationUndefined: Self = StObject.set(x, "maxSessionDuration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPermissionsBoundary(value: Input[String]): Self = StObject.set(x, "permissionsBoundary", value.asInstanceOf[js.Any])
+      inline def setPermissionsBoundary(value: Input[String]): Self = StObject.set(x, "permissionsBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsBoundaryUndefined: Self = StObject.set(x, "permissionsBoundary", js.undefined)
+      inline def setPermissionsBoundaryUndefined: Self = StObject.set(x, "permissionsBoundary", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -297,86 +273,60 @@ object roleMod {
   }
   object RoleState {
     
-    @scala.inline
-    def apply(): RoleState = {
+    inline def apply(): RoleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoleState]
     }
     
-    @scala.inline
-    implicit class RoleStateMutableBuilder[Self <: RoleState] (val x: Self) extends AnyVal {
+    extension [Self <: RoleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAssumeRolePolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "assumeRolePolicy", value.asInstanceOf[js.Any])
+      inline def setAssumeRolePolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "assumeRolePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssumeRolePolicyUndefined: Self = StObject.set(x, "assumeRolePolicy", js.undefined)
+      inline def setAssumeRolePolicyUndefined: Self = StObject.set(x, "assumeRolePolicy", js.undefined)
       
-      @scala.inline
-      def setCreateDate(value: Input[String]): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: Input[String]): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDateUndefined: Self = StObject.set(x, "createDate", js.undefined)
+      inline def setCreateDateUndefined: Self = StObject.set(x, "createDate", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setForceDetachPolicies(value: Input[Boolean]): Self = StObject.set(x, "forceDetachPolicies", value.asInstanceOf[js.Any])
+      inline def setForceDetachPolicies(value: Input[Boolean]): Self = StObject.set(x, "forceDetachPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDetachPoliciesUndefined: Self = StObject.set(x, "forceDetachPolicies", js.undefined)
+      inline def setForceDetachPoliciesUndefined: Self = StObject.set(x, "forceDetachPolicies", js.undefined)
       
-      @scala.inline
-      def setMaxSessionDuration(value: Input[Double]): Self = StObject.set(x, "maxSessionDuration", value.asInstanceOf[js.Any])
+      inline def setMaxSessionDuration(value: Input[Double]): Self = StObject.set(x, "maxSessionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSessionDurationUndefined: Self = StObject.set(x, "maxSessionDuration", js.undefined)
+      inline def setMaxSessionDurationUndefined: Self = StObject.set(x, "maxSessionDuration", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPermissionsBoundary(value: Input[String]): Self = StObject.set(x, "permissionsBoundary", value.asInstanceOf[js.Any])
+      inline def setPermissionsBoundary(value: Input[String]): Self = StObject.set(x, "permissionsBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsBoundaryUndefined: Self = StObject.set(x, "permissionsBoundary", js.undefined)
+      inline def setPermissionsBoundaryUndefined: Self = StObject.set(x, "permissionsBoundary", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+      inline def setUniqueId(value: Input[String]): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
+      inline def setUniqueIdUndefined: Self = StObject.set(x, "uniqueId", js.undefined)
     }
   }
 }

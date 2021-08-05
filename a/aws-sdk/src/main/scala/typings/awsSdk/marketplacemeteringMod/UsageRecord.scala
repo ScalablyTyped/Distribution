@@ -33,37 +33,27 @@ trait UsageRecord extends StObject {
 }
 object UsageRecord {
   
-  @scala.inline
-  def apply(CustomerIdentifier: CustomerIdentifier, Dimension: UsageDimension, Timestamp: Timestamp): UsageRecord = {
+  inline def apply(CustomerIdentifier: CustomerIdentifier, Dimension: UsageDimension, Timestamp: Timestamp): UsageRecord = {
     val __obj = js.Dynamic.literal(CustomerIdentifier = CustomerIdentifier.asInstanceOf[js.Any], Dimension = Dimension.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageRecord]
   }
   
-  @scala.inline
-  implicit class UsageRecordMutableBuilder[Self <: UsageRecord] (val x: Self) extends AnyVal {
+  extension [Self <: UsageRecord](x: Self) {
     
-    @scala.inline
-    def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
+    inline def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimension(value: UsageDimension): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: UsageDimension): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: UsageQuantity): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: UsageQuantity): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "Quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "Quantity", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageAllocations(value: UsageAllocations): Self = StObject.set(x, "UsageAllocations", value.asInstanceOf[js.Any])
+    inline def setUsageAllocations(value: UsageAllocations): Self = StObject.set(x, "UsageAllocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageAllocationsUndefined: Self = StObject.set(x, "UsageAllocations", js.undefined)
+    inline def setUsageAllocationsUndefined: Self = StObject.set(x, "UsageAllocations", js.undefined)
     
-    @scala.inline
-    def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value :_*))
+    inline def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value :_*))
   }
 }

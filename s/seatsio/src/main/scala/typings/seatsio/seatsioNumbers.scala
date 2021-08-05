@@ -8,6 +8,5 @@ object seatsioNumbers {
   
   @js.native
   sealed trait `5` extends StObject
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
 }

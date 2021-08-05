@@ -26,8 +26,7 @@ trait XMenuListener
 }
 object XMenuListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     itemActivated: MenuEvent => Unit,
@@ -41,19 +40,14 @@ object XMenuListener {
     __obj.asInstanceOf[XMenuListener]
   }
   
-  @scala.inline
-  implicit class XMenuListenerMutableBuilder[Self <: XMenuListener] (val x: Self) extends AnyVal {
+  extension [Self <: XMenuListener](x: Self) {
     
-    @scala.inline
-    def setItemActivated(value: MenuEvent => Unit): Self = StObject.set(x, "itemActivated", js.Any.fromFunction1(value))
+    inline def setItemActivated(value: MenuEvent => Unit): Self = StObject.set(x, "itemActivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemDeactivated(value: MenuEvent => Unit): Self = StObject.set(x, "itemDeactivated", js.Any.fromFunction1(value))
+    inline def setItemDeactivated(value: MenuEvent => Unit): Self = StObject.set(x, "itemDeactivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemHighlighted(value: MenuEvent => Unit): Self = StObject.set(x, "itemHighlighted", js.Any.fromFunction1(value))
+    inline def setItemHighlighted(value: MenuEvent => Unit): Self = StObject.set(x, "itemHighlighted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItemSelected(value: MenuEvent => Unit): Self = StObject.set(x, "itemSelected", js.Any.fromFunction1(value))
+    inline def setItemSelected(value: MenuEvent => Unit): Self = StObject.set(x, "itemSelected", js.Any.fromFunction1(value))
   }
 }

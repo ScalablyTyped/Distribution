@@ -13,19 +13,15 @@ trait WebCLMemoryObject extends StObject {
 }
 object WebCLMemoryObject {
   
-  @scala.inline
-  def apply(getInfo: MemInfo => js.Any, release: () => Unit): WebCLMemoryObject = {
+  inline def apply(getInfo: MemInfo => js.Any, release: () => Unit): WebCLMemoryObject = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[WebCLMemoryObject]
   }
   
-  @scala.inline
-  implicit class WebCLMemoryObjectMutableBuilder[Self <: WebCLMemoryObject] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLMemoryObject](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: MemInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: MemInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
   }
 }

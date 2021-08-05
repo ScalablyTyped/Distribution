@@ -22,8 +22,7 @@ trait XNameContainer
 }
 object XNameContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -42,13 +41,10 @@ object XNameContainer {
     __obj.asInstanceOf[XNameContainer]
   }
   
-  @scala.inline
-  implicit class XNameContainerMutableBuilder[Self <: XNameContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XNameContainer](x: Self) {
     
-    @scala.inline
-    def setInsertByName(value: (String, js.Any) => Unit): Self = StObject.set(x, "insertByName", js.Any.fromFunction2(value))
+    inline def setInsertByName(value: (String, js.Any) => Unit): Self = StObject.set(x, "insertByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
   }
 }

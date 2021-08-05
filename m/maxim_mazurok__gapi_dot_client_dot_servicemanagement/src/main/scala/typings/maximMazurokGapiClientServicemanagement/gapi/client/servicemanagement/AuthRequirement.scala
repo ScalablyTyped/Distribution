@@ -20,25 +20,19 @@ trait AuthRequirement extends StObject {
 }
 object AuthRequirement {
   
-  @scala.inline
-  def apply(): AuthRequirement = {
+  inline def apply(): AuthRequirement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthRequirement]
   }
   
-  @scala.inline
-  implicit class AuthRequirementMutableBuilder[Self <: AuthRequirement] (val x: Self) extends AnyVal {
+  extension [Self <: AuthRequirement](x: Self) {
     
-    @scala.inline
-    def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
+    inline def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
+    inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
+    inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
   }
 }

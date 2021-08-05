@@ -10,8 +10,7 @@ trait ListTablesExceptionsUnion
      with InternalServerError
 object ListTablesExceptionsUnion {
   
-  @scala.inline
-  def apply(): ListTablesExceptionsUnion = {
+  inline def apply(): ListTablesExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "InternalServerError")
     __obj.asInstanceOf[ListTablesExceptionsUnion]
   }

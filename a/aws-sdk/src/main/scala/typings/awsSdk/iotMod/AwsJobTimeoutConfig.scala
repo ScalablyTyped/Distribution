@@ -13,19 +13,15 @@ trait AwsJobTimeoutConfig extends StObject {
 }
 object AwsJobTimeoutConfig {
   
-  @scala.inline
-  def apply(): AwsJobTimeoutConfig = {
+  inline def apply(): AwsJobTimeoutConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsJobTimeoutConfig]
   }
   
-  @scala.inline
-  implicit class AwsJobTimeoutConfigMutableBuilder[Self <: AwsJobTimeoutConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AwsJobTimeoutConfig](x: Self) {
     
-    @scala.inline
-    def setInProgressTimeoutInMinutes(value: AwsJobTimeoutInProgressTimeoutInMinutes): Self = StObject.set(x, "inProgressTimeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setInProgressTimeoutInMinutes(value: AwsJobTimeoutInProgressTimeoutInMinutes): Self = StObject.set(x, "inProgressTimeoutInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgressTimeoutInMinutesUndefined: Self = StObject.set(x, "inProgressTimeoutInMinutes", js.undefined)
+    inline def setInProgressTimeoutInMinutesUndefined: Self = StObject.set(x, "inProgressTimeoutInMinutes", js.undefined)
   }
 }

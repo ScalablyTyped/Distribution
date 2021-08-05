@@ -178,343 +178,231 @@ trait TerminalModes
 }
 object TerminalModes {
   
-  @scala.inline
-  def apply(): TerminalModes = {
+  inline def apply(): TerminalModes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminalModes]
   }
   
-  @scala.inline
-  implicit class TerminalModesMutableBuilder[Self <: TerminalModes] (val x: Self) extends AnyVal {
+  extension [Self <: TerminalModes](x: Self) {
     
-    @scala.inline
-    def setCS7(value: `0` | `1`): Self = StObject.set(x, "CS7", value.asInstanceOf[js.Any])
+    inline def setCS7(value: `0` | `1`): Self = StObject.set(x, "CS7", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCS7Undefined: Self = StObject.set(x, "CS7", js.undefined)
+    inline def setCS7Undefined: Self = StObject.set(x, "CS7", js.undefined)
     
-    @scala.inline
-    def setCS8(value: `0` | `1`): Self = StObject.set(x, "CS8", value.asInstanceOf[js.Any])
+    inline def setCS8(value: `0` | `1`): Self = StObject.set(x, "CS8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCS8Undefined: Self = StObject.set(x, "CS8", js.undefined)
+    inline def setCS8Undefined: Self = StObject.set(x, "CS8", js.undefined)
     
-    @scala.inline
-    def setECHO(value: `0` | `1`): Self = StObject.set(x, "ECHO", value.asInstanceOf[js.Any])
+    inline def setECHO(value: `0` | `1`): Self = StObject.set(x, "ECHO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setECHOCTL(value: `0` | `1`): Self = StObject.set(x, "ECHOCTL", value.asInstanceOf[js.Any])
+    inline def setECHOCTL(value: `0` | `1`): Self = StObject.set(x, "ECHOCTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setECHOCTLUndefined: Self = StObject.set(x, "ECHOCTL", js.undefined)
+    inline def setECHOCTLUndefined: Self = StObject.set(x, "ECHOCTL", js.undefined)
     
-    @scala.inline
-    def setECHOE(value: `0` | `1`): Self = StObject.set(x, "ECHOE", value.asInstanceOf[js.Any])
+    inline def setECHOE(value: `0` | `1`): Self = StObject.set(x, "ECHOE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setECHOEUndefined: Self = StObject.set(x, "ECHOE", js.undefined)
+    inline def setECHOEUndefined: Self = StObject.set(x, "ECHOE", js.undefined)
     
-    @scala.inline
-    def setECHOK(value: `0` | `1`): Self = StObject.set(x, "ECHOK", value.asInstanceOf[js.Any])
+    inline def setECHOK(value: `0` | `1`): Self = StObject.set(x, "ECHOK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setECHOKE(value: `0` | `1`): Self = StObject.set(x, "ECHOKE", value.asInstanceOf[js.Any])
+    inline def setECHOKE(value: `0` | `1`): Self = StObject.set(x, "ECHOKE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setECHOKEUndefined: Self = StObject.set(x, "ECHOKE", js.undefined)
+    inline def setECHOKEUndefined: Self = StObject.set(x, "ECHOKE", js.undefined)
     
-    @scala.inline
-    def setECHOKUndefined: Self = StObject.set(x, "ECHOK", js.undefined)
+    inline def setECHOKUndefined: Self = StObject.set(x, "ECHOK", js.undefined)
     
-    @scala.inline
-    def setECHONL(value: `0` | `1`): Self = StObject.set(x, "ECHONL", value.asInstanceOf[js.Any])
+    inline def setECHONL(value: `0` | `1`): Self = StObject.set(x, "ECHONL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setECHONLUndefined: Self = StObject.set(x, "ECHONL", js.undefined)
+    inline def setECHONLUndefined: Self = StObject.set(x, "ECHONL", js.undefined)
     
-    @scala.inline
-    def setECHOUndefined: Self = StObject.set(x, "ECHO", js.undefined)
+    inline def setECHOUndefined: Self = StObject.set(x, "ECHO", js.undefined)
     
-    @scala.inline
-    def setICANON(value: `0` | `1`): Self = StObject.set(x, "ICANON", value.asInstanceOf[js.Any])
+    inline def setICANON(value: `0` | `1`): Self = StObject.set(x, "ICANON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setICANONUndefined: Self = StObject.set(x, "ICANON", js.undefined)
+    inline def setICANONUndefined: Self = StObject.set(x, "ICANON", js.undefined)
     
-    @scala.inline
-    def setICRNL(value: `0` | `1`): Self = StObject.set(x, "ICRNL", value.asInstanceOf[js.Any])
+    inline def setICRNL(value: `0` | `1`): Self = StObject.set(x, "ICRNL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setICRNLUndefined: Self = StObject.set(x, "ICRNL", js.undefined)
+    inline def setICRNLUndefined: Self = StObject.set(x, "ICRNL", js.undefined)
     
-    @scala.inline
-    def setIEXTEN(value: `0` | `1`): Self = StObject.set(x, "IEXTEN", value.asInstanceOf[js.Any])
+    inline def setIEXTEN(value: `0` | `1`): Self = StObject.set(x, "IEXTEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIEXTENUndefined: Self = StObject.set(x, "IEXTEN", js.undefined)
+    inline def setIEXTENUndefined: Self = StObject.set(x, "IEXTEN", js.undefined)
     
-    @scala.inline
-    def setIGNCR(value: `0` | `1`): Self = StObject.set(x, "IGNCR", value.asInstanceOf[js.Any])
+    inline def setIGNCR(value: `0` | `1`): Self = StObject.set(x, "IGNCR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIGNCRUndefined: Self = StObject.set(x, "IGNCR", js.undefined)
+    inline def setIGNCRUndefined: Self = StObject.set(x, "IGNCR", js.undefined)
     
-    @scala.inline
-    def setIGNPAR(value: `0` | `1`): Self = StObject.set(x, "IGNPAR", value.asInstanceOf[js.Any])
+    inline def setIGNPAR(value: `0` | `1`): Self = StObject.set(x, "IGNPAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIGNPARUndefined: Self = StObject.set(x, "IGNPAR", js.undefined)
+    inline def setIGNPARUndefined: Self = StObject.set(x, "IGNPAR", js.undefined)
     
-    @scala.inline
-    def setIMAXBEL(value: `0` | `1`): Self = StObject.set(x, "IMAXBEL", value.asInstanceOf[js.Any])
+    inline def setIMAXBEL(value: `0` | `1`): Self = StObject.set(x, "IMAXBEL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIMAXBELUndefined: Self = StObject.set(x, "IMAXBEL", js.undefined)
+    inline def setIMAXBELUndefined: Self = StObject.set(x, "IMAXBEL", js.undefined)
     
-    @scala.inline
-    def setINLCR(value: `0` | `1`): Self = StObject.set(x, "INLCR", value.asInstanceOf[js.Any])
+    inline def setINLCR(value: `0` | `1`): Self = StObject.set(x, "INLCR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINLCRUndefined: Self = StObject.set(x, "INLCR", js.undefined)
+    inline def setINLCRUndefined: Self = StObject.set(x, "INLCR", js.undefined)
     
-    @scala.inline
-    def setINPCK(value: `0` | `1`): Self = StObject.set(x, "INPCK", value.asInstanceOf[js.Any])
+    inline def setINPCK(value: `0` | `1`): Self = StObject.set(x, "INPCK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINPCKUndefined: Self = StObject.set(x, "INPCK", js.undefined)
+    inline def setINPCKUndefined: Self = StObject.set(x, "INPCK", js.undefined)
     
-    @scala.inline
-    def setISIG(value: `0` | `1`): Self = StObject.set(x, "ISIG", value.asInstanceOf[js.Any])
+    inline def setISIG(value: `0` | `1`): Self = StObject.set(x, "ISIG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setISIGUndefined: Self = StObject.set(x, "ISIG", js.undefined)
+    inline def setISIGUndefined: Self = StObject.set(x, "ISIG", js.undefined)
     
-    @scala.inline
-    def setISTRIP(value: `0` | `1`): Self = StObject.set(x, "ISTRIP", value.asInstanceOf[js.Any])
+    inline def setISTRIP(value: `0` | `1`): Self = StObject.set(x, "ISTRIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setISTRIPUndefined: Self = StObject.set(x, "ISTRIP", js.undefined)
+    inline def setISTRIPUndefined: Self = StObject.set(x, "ISTRIP", js.undefined)
     
-    @scala.inline
-    def setIUCLC(value: `0` | `1`): Self = StObject.set(x, "IUCLC", value.asInstanceOf[js.Any])
+    inline def setIUCLC(value: `0` | `1`): Self = StObject.set(x, "IUCLC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIUCLCUndefined: Self = StObject.set(x, "IUCLC", js.undefined)
+    inline def setIUCLCUndefined: Self = StObject.set(x, "IUCLC", js.undefined)
     
-    @scala.inline
-    def setIXANY(value: `0` | `1`): Self = StObject.set(x, "IXANY", value.asInstanceOf[js.Any])
+    inline def setIXANY(value: `0` | `1`): Self = StObject.set(x, "IXANY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIXANYUndefined: Self = StObject.set(x, "IXANY", js.undefined)
+    inline def setIXANYUndefined: Self = StObject.set(x, "IXANY", js.undefined)
     
-    @scala.inline
-    def setIXOFF(value: `0` | `1`): Self = StObject.set(x, "IXOFF", value.asInstanceOf[js.Any])
+    inline def setIXOFF(value: `0` | `1`): Self = StObject.set(x, "IXOFF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIXOFFUndefined: Self = StObject.set(x, "IXOFF", js.undefined)
+    inline def setIXOFFUndefined: Self = StObject.set(x, "IXOFF", js.undefined)
     
-    @scala.inline
-    def setIXON(value: `0` | `1`): Self = StObject.set(x, "IXON", value.asInstanceOf[js.Any])
+    inline def setIXON(value: `0` | `1`): Self = StObject.set(x, "IXON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIXONUndefined: Self = StObject.set(x, "IXON", js.undefined)
+    inline def setIXONUndefined: Self = StObject.set(x, "IXON", js.undefined)
     
-    @scala.inline
-    def setNOFLSH(value: `0` | `1`): Self = StObject.set(x, "NOFLSH", value.asInstanceOf[js.Any])
+    inline def setNOFLSH(value: `0` | `1`): Self = StObject.set(x, "NOFLSH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOFLSHUndefined: Self = StObject.set(x, "NOFLSH", js.undefined)
+    inline def setNOFLSHUndefined: Self = StObject.set(x, "NOFLSH", js.undefined)
     
-    @scala.inline
-    def setOCRNL(value: `0` | `1`): Self = StObject.set(x, "OCRNL", value.asInstanceOf[js.Any])
+    inline def setOCRNL(value: `0` | `1`): Self = StObject.set(x, "OCRNL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOCRNLUndefined: Self = StObject.set(x, "OCRNL", js.undefined)
+    inline def setOCRNLUndefined: Self = StObject.set(x, "OCRNL", js.undefined)
     
-    @scala.inline
-    def setOLCUC(value: `0` | `1`): Self = StObject.set(x, "OLCUC", value.asInstanceOf[js.Any])
+    inline def setOLCUC(value: `0` | `1`): Self = StObject.set(x, "OLCUC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOLCUCUndefined: Self = StObject.set(x, "OLCUC", js.undefined)
+    inline def setOLCUCUndefined: Self = StObject.set(x, "OLCUC", js.undefined)
     
-    @scala.inline
-    def setONLCR(value: `0` | `1`): Self = StObject.set(x, "ONLCR", value.asInstanceOf[js.Any])
+    inline def setONLCR(value: `0` | `1`): Self = StObject.set(x, "ONLCR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setONLCRUndefined: Self = StObject.set(x, "ONLCR", js.undefined)
+    inline def setONLCRUndefined: Self = StObject.set(x, "ONLCR", js.undefined)
     
-    @scala.inline
-    def setONLRET(value: `0` | `1`): Self = StObject.set(x, "ONLRET", value.asInstanceOf[js.Any])
+    inline def setONLRET(value: `0` | `1`): Self = StObject.set(x, "ONLRET", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setONLRETUndefined: Self = StObject.set(x, "ONLRET", js.undefined)
+    inline def setONLRETUndefined: Self = StObject.set(x, "ONLRET", js.undefined)
     
-    @scala.inline
-    def setONOCR(value: `0` | `1`): Self = StObject.set(x, "ONOCR", value.asInstanceOf[js.Any])
+    inline def setONOCR(value: `0` | `1`): Self = StObject.set(x, "ONOCR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setONOCRUndefined: Self = StObject.set(x, "ONOCR", js.undefined)
+    inline def setONOCRUndefined: Self = StObject.set(x, "ONOCR", js.undefined)
     
-    @scala.inline
-    def setOPOST(value: `0` | `1`): Self = StObject.set(x, "OPOST", value.asInstanceOf[js.Any])
+    inline def setOPOST(value: `0` | `1`): Self = StObject.set(x, "OPOST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPOSTUndefined: Self = StObject.set(x, "OPOST", js.undefined)
+    inline def setOPOSTUndefined: Self = StObject.set(x, "OPOST", js.undefined)
     
-    @scala.inline
-    def setPARENB(value: `0` | `1`): Self = StObject.set(x, "PARENB", value.asInstanceOf[js.Any])
+    inline def setPARENB(value: `0` | `1`): Self = StObject.set(x, "PARENB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPARENBUndefined: Self = StObject.set(x, "PARENB", js.undefined)
+    inline def setPARENBUndefined: Self = StObject.set(x, "PARENB", js.undefined)
     
-    @scala.inline
-    def setPARMRK(value: `0` | `1`): Self = StObject.set(x, "PARMRK", value.asInstanceOf[js.Any])
+    inline def setPARMRK(value: `0` | `1`): Self = StObject.set(x, "PARMRK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPARMRKUndefined: Self = StObject.set(x, "PARMRK", js.undefined)
+    inline def setPARMRKUndefined: Self = StObject.set(x, "PARMRK", js.undefined)
     
-    @scala.inline
-    def setPARODD(value: `0` | `1`): Self = StObject.set(x, "PARODD", value.asInstanceOf[js.Any])
+    inline def setPARODD(value: `0` | `1`): Self = StObject.set(x, "PARODD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPARODDUndefined: Self = StObject.set(x, "PARODD", js.undefined)
+    inline def setPARODDUndefined: Self = StObject.set(x, "PARODD", js.undefined)
     
-    @scala.inline
-    def setPENDIN(value: `0` | `1`): Self = StObject.set(x, "PENDIN", value.asInstanceOf[js.Any])
+    inline def setPENDIN(value: `0` | `1`): Self = StObject.set(x, "PENDIN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPENDINUndefined: Self = StObject.set(x, "PENDIN", js.undefined)
+    inline def setPENDINUndefined: Self = StObject.set(x, "PENDIN", js.undefined)
     
-    @scala.inline
-    def setTOSTOP(value: `0` | `1`): Self = StObject.set(x, "TOSTOP", value.asInstanceOf[js.Any])
+    inline def setTOSTOP(value: `0` | `1`): Self = StObject.set(x, "TOSTOP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTOSTOPUndefined: Self = StObject.set(x, "TOSTOP", js.undefined)
+    inline def setTOSTOPUndefined: Self = StObject.set(x, "TOSTOP", js.undefined)
     
-    @scala.inline
-    def setTTY_OP_ISPEED(value: Double): Self = StObject.set(x, "TTY_OP_ISPEED", value.asInstanceOf[js.Any])
+    inline def setTTY_OP_ISPEED(value: Double): Self = StObject.set(x, "TTY_OP_ISPEED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTY_OP_ISPEEDUndefined: Self = StObject.set(x, "TTY_OP_ISPEED", js.undefined)
+    inline def setTTY_OP_ISPEEDUndefined: Self = StObject.set(x, "TTY_OP_ISPEED", js.undefined)
     
-    @scala.inline
-    def setTTY_OP_OSPEED(value: Double): Self = StObject.set(x, "TTY_OP_OSPEED", value.asInstanceOf[js.Any])
+    inline def setTTY_OP_OSPEED(value: Double): Self = StObject.set(x, "TTY_OP_OSPEED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTY_OP_OSPEEDUndefined: Self = StObject.set(x, "TTY_OP_OSPEED", js.undefined)
+    inline def setTTY_OP_OSPEEDUndefined: Self = StObject.set(x, "TTY_OP_OSPEED", js.undefined)
     
-    @scala.inline
-    def setVDISCARD(value: Double): Self = StObject.set(x, "VDISCARD", value.asInstanceOf[js.Any])
+    inline def setVDISCARD(value: Double): Self = StObject.set(x, "VDISCARD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVDISCARDUndefined: Self = StObject.set(x, "VDISCARD", js.undefined)
+    inline def setVDISCARDUndefined: Self = StObject.set(x, "VDISCARD", js.undefined)
     
-    @scala.inline
-    def setVDSUSP(value: Double): Self = StObject.set(x, "VDSUSP", value.asInstanceOf[js.Any])
+    inline def setVDSUSP(value: Double): Self = StObject.set(x, "VDSUSP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVDSUSPUndefined: Self = StObject.set(x, "VDSUSP", js.undefined)
+    inline def setVDSUSPUndefined: Self = StObject.set(x, "VDSUSP", js.undefined)
     
-    @scala.inline
-    def setVEOF(value: Double): Self = StObject.set(x, "VEOF", value.asInstanceOf[js.Any])
+    inline def setVEOF(value: Double): Self = StObject.set(x, "VEOF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVEOFUndefined: Self = StObject.set(x, "VEOF", js.undefined)
+    inline def setVEOFUndefined: Self = StObject.set(x, "VEOF", js.undefined)
     
-    @scala.inline
-    def setVEOL(value: Double): Self = StObject.set(x, "VEOL", value.asInstanceOf[js.Any])
+    inline def setVEOL(value: Double): Self = StObject.set(x, "VEOL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVEOL2(value: Double): Self = StObject.set(x, "VEOL2", value.asInstanceOf[js.Any])
+    inline def setVEOL2(value: Double): Self = StObject.set(x, "VEOL2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVEOL2Undefined: Self = StObject.set(x, "VEOL2", js.undefined)
+    inline def setVEOL2Undefined: Self = StObject.set(x, "VEOL2", js.undefined)
     
-    @scala.inline
-    def setVEOLUndefined: Self = StObject.set(x, "VEOL", js.undefined)
+    inline def setVEOLUndefined: Self = StObject.set(x, "VEOL", js.undefined)
     
-    @scala.inline
-    def setVERASE(value: Double): Self = StObject.set(x, "VERASE", value.asInstanceOf[js.Any])
+    inline def setVERASE(value: Double): Self = StObject.set(x, "VERASE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVERASEUndefined: Self = StObject.set(x, "VERASE", js.undefined)
+    inline def setVERASEUndefined: Self = StObject.set(x, "VERASE", js.undefined)
     
-    @scala.inline
-    def setVFLUSH(value: Double): Self = StObject.set(x, "VFLUSH", value.asInstanceOf[js.Any])
+    inline def setVFLUSH(value: Double): Self = StObject.set(x, "VFLUSH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVFLUSHUndefined: Self = StObject.set(x, "VFLUSH", js.undefined)
+    inline def setVFLUSHUndefined: Self = StObject.set(x, "VFLUSH", js.undefined)
     
-    @scala.inline
-    def setVINTR(value: Double): Self = StObject.set(x, "VINTR", value.asInstanceOf[js.Any])
+    inline def setVINTR(value: Double): Self = StObject.set(x, "VINTR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVINTRUndefined: Self = StObject.set(x, "VINTR", js.undefined)
+    inline def setVINTRUndefined: Self = StObject.set(x, "VINTR", js.undefined)
     
-    @scala.inline
-    def setVKILL(value: Double): Self = StObject.set(x, "VKILL", value.asInstanceOf[js.Any])
+    inline def setVKILL(value: Double): Self = StObject.set(x, "VKILL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVKILLUndefined: Self = StObject.set(x, "VKILL", js.undefined)
+    inline def setVKILLUndefined: Self = StObject.set(x, "VKILL", js.undefined)
     
-    @scala.inline
-    def setVLNEXT(value: Double): Self = StObject.set(x, "VLNEXT", value.asInstanceOf[js.Any])
+    inline def setVLNEXT(value: Double): Self = StObject.set(x, "VLNEXT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVLNEXTUndefined: Self = StObject.set(x, "VLNEXT", js.undefined)
+    inline def setVLNEXTUndefined: Self = StObject.set(x, "VLNEXT", js.undefined)
     
-    @scala.inline
-    def setVQUIT(value: Double): Self = StObject.set(x, "VQUIT", value.asInstanceOf[js.Any])
+    inline def setVQUIT(value: Double): Self = StObject.set(x, "VQUIT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVQUITUndefined: Self = StObject.set(x, "VQUIT", js.undefined)
+    inline def setVQUITUndefined: Self = StObject.set(x, "VQUIT", js.undefined)
     
-    @scala.inline
-    def setVREPRINT(value: Double): Self = StObject.set(x, "VREPRINT", value.asInstanceOf[js.Any])
+    inline def setVREPRINT(value: Double): Self = StObject.set(x, "VREPRINT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVREPRINTUndefined: Self = StObject.set(x, "VREPRINT", js.undefined)
+    inline def setVREPRINTUndefined: Self = StObject.set(x, "VREPRINT", js.undefined)
     
-    @scala.inline
-    def setVSTART(value: Double): Self = StObject.set(x, "VSTART", value.asInstanceOf[js.Any])
+    inline def setVSTART(value: Double): Self = StObject.set(x, "VSTART", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVSTARTUndefined: Self = StObject.set(x, "VSTART", js.undefined)
+    inline def setVSTARTUndefined: Self = StObject.set(x, "VSTART", js.undefined)
     
-    @scala.inline
-    def setVSTATUS(value: Double): Self = StObject.set(x, "VSTATUS", value.asInstanceOf[js.Any])
+    inline def setVSTATUS(value: Double): Self = StObject.set(x, "VSTATUS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVSTATUSUndefined: Self = StObject.set(x, "VSTATUS", js.undefined)
+    inline def setVSTATUSUndefined: Self = StObject.set(x, "VSTATUS", js.undefined)
     
-    @scala.inline
-    def setVSTOP(value: Double): Self = StObject.set(x, "VSTOP", value.asInstanceOf[js.Any])
+    inline def setVSTOP(value: Double): Self = StObject.set(x, "VSTOP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVSTOPUndefined: Self = StObject.set(x, "VSTOP", js.undefined)
+    inline def setVSTOPUndefined: Self = StObject.set(x, "VSTOP", js.undefined)
     
-    @scala.inline
-    def setVSUSP(value: Double): Self = StObject.set(x, "VSUSP", value.asInstanceOf[js.Any])
+    inline def setVSUSP(value: Double): Self = StObject.set(x, "VSUSP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVSUSPUndefined: Self = StObject.set(x, "VSUSP", js.undefined)
+    inline def setVSUSPUndefined: Self = StObject.set(x, "VSUSP", js.undefined)
     
-    @scala.inline
-    def setVSWTCH(value: Double): Self = StObject.set(x, "VSWTCH", value.asInstanceOf[js.Any])
+    inline def setVSWTCH(value: Double): Self = StObject.set(x, "VSWTCH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVSWTCHUndefined: Self = StObject.set(x, "VSWTCH", js.undefined)
+    inline def setVSWTCHUndefined: Self = StObject.set(x, "VSWTCH", js.undefined)
     
-    @scala.inline
-    def setVWERASE(value: Double): Self = StObject.set(x, "VWERASE", value.asInstanceOf[js.Any])
+    inline def setVWERASE(value: Double): Self = StObject.set(x, "VWERASE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVWERASEUndefined: Self = StObject.set(x, "VWERASE", js.undefined)
+    inline def setVWERASEUndefined: Self = StObject.set(x, "VWERASE", js.undefined)
     
-    @scala.inline
-    def setXCASE(value: `0` | `1`): Self = StObject.set(x, "XCASE", value.asInstanceOf[js.Any])
+    inline def setXCASE(value: `0` | `1`): Self = StObject.set(x, "XCASE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXCASEUndefined: Self = StObject.set(x, "XCASE", js.undefined)
+    inline def setXCASEUndefined: Self = StObject.set(x, "XCASE", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class SPURI ()
   extends typings.xadesjs.xmlMod.SPURI
 object SPURI {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.SPURI] = ^.asInstanceOf[js.Dynamic].selectDynamic("SPURI").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SPURI]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.SPURI] = ^.asInstanceOf[js.Dynamic].selectDynamic("SPURI").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.SPURI]]
 }

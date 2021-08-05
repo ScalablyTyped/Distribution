@@ -16,31 +16,23 @@ trait ProfileSettings extends StObject {
 }
 object ProfileSettings {
   
-  @scala.inline
-  def apply(): ProfileSettings = {
+  inline def apply(): ProfileSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProfileSettings]
   }
   
-  @scala.inline
-  implicit class ProfileSettingsMutableBuilder[Self <: ProfileSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileSettings](x: Self) {
     
-    @scala.inline
-    def setFriendsListVisibility(value: String): Self = StObject.set(x, "friendsListVisibility", value.asInstanceOf[js.Any])
+    inline def setFriendsListVisibility(value: String): Self = StObject.set(x, "friendsListVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendsListVisibilityUndefined: Self = StObject.set(x, "friendsListVisibility", js.undefined)
+    inline def setFriendsListVisibilityUndefined: Self = StObject.set(x, "friendsListVisibility", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProfileVisible(value: Boolean): Self = StObject.set(x, "profileVisible", value.asInstanceOf[js.Any])
+    inline def setProfileVisible(value: Boolean): Self = StObject.set(x, "profileVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileVisibleUndefined: Self = StObject.set(x, "profileVisible", js.undefined)
+    inline def setProfileVisibleUndefined: Self = StObject.set(x, "profileVisible", js.undefined)
   }
 }

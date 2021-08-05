@@ -23,31 +23,23 @@ trait VoteSummary extends StObject {
 }
 object VoteSummary {
   
-  @scala.inline
-  def apply(): VoteSummary = {
+  inline def apply(): VoteSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoteSummary]
   }
   
-  @scala.inline
-  implicit class VoteSummaryMutableBuilder[Self <: VoteSummary] (val x: Self) extends AnyVal {
+  extension [Self <: VoteSummary](x: Self) {
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
+    inline def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
     
-    @scala.inline
-    def setMemberName(value: NetworkMemberNameString): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
+    inline def setMemberName(value: NetworkMemberNameString): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberNameUndefined: Self = StObject.set(x, "MemberName", js.undefined)
+    inline def setMemberNameUndefined: Self = StObject.set(x, "MemberName", js.undefined)
     
-    @scala.inline
-    def setVote(value: VoteValue): Self = StObject.set(x, "Vote", value.asInstanceOf[js.Any])
+    inline def setVote(value: VoteValue): Self = StObject.set(x, "Vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoteUndefined: Self = StObject.set(x, "Vote", js.undefined)
+    inline def setVoteUndefined: Self = StObject.set(x, "Vote", js.undefined)
   }
 }

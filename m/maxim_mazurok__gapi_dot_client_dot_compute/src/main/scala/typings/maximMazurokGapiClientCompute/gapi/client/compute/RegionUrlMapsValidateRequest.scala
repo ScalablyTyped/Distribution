@@ -11,19 +11,15 @@ trait RegionUrlMapsValidateRequest extends StObject {
 }
 object RegionUrlMapsValidateRequest {
   
-  @scala.inline
-  def apply(): RegionUrlMapsValidateRequest = {
+  inline def apply(): RegionUrlMapsValidateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionUrlMapsValidateRequest]
   }
   
-  @scala.inline
-  implicit class RegionUrlMapsValidateRequestMutableBuilder[Self <: RegionUrlMapsValidateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegionUrlMapsValidateRequest](x: Self) {
     
-    @scala.inline
-    def setResource(value: UrlMap): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: UrlMap): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

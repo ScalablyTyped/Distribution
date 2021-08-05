@@ -16,20 +16,16 @@ object anon {
   }
   object JobId {
     
-    @scala.inline
-    def apply(jobId: Double, promise: js.Promise[DownloadResult]): JobId = {
+    inline def apply(jobId: Double, promise: js.Promise[DownloadResult]): JobId = {
       val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any])
       __obj.asInstanceOf[JobId]
     }
     
-    @scala.inline
-    implicit class JobIdMutableBuilder[Self <: JobId] (val x: Self) extends AnyVal {
+    extension [Self <: JobId](x: Self) {
       
-      @scala.inline
-      def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: js.Promise[DownloadResult]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[DownloadResult]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,20 +37,16 @@ object anon {
   }
   object Promise {
     
-    @scala.inline
-    def apply(jobId: Double, promise: js.Promise[UploadResult]): Promise = {
+    inline def apply(jobId: Double, promise: js.Promise[UploadResult]): Promise = {
       val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], promise = promise.asInstanceOf[js.Any])
       __obj.asInstanceOf[Promise]
     }
     
-    @scala.inline
-    implicit class PromiseMutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
+    extension [Self <: Promise](x: Self) {
       
-      @scala.inline
-      def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: js.Promise[UploadResult]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[UploadResult]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     }
   }
 }

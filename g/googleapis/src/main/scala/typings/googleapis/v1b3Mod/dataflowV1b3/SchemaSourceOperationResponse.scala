@@ -23,25 +23,19 @@ trait SchemaSourceOperationResponse extends StObject {
 }
 object SchemaSourceOperationResponse {
   
-  @scala.inline
-  def apply(): SchemaSourceOperationResponse = {
+  inline def apply(): SchemaSourceOperationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceOperationResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSourceOperationResponseMutableBuilder[Self <: SchemaSourceOperationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceOperationResponse](x: Self) {
     
-    @scala.inline
-    def setGetMetadata(value: SchemaSourceGetMetadataResponse): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
+    inline def setGetMetadata(value: SchemaSourceGetMetadataResponse): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
+    inline def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
-    @scala.inline
-    def setSplit(value: SchemaSourceSplitResponse): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    inline def setSplit(value: SchemaSourceSplitResponse): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
   }
 }

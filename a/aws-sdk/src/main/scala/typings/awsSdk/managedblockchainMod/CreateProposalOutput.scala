@@ -13,19 +13,15 @@ trait CreateProposalOutput extends StObject {
 }
 object CreateProposalOutput {
   
-  @scala.inline
-  def apply(): CreateProposalOutput = {
+  inline def apply(): CreateProposalOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateProposalOutput]
   }
   
-  @scala.inline
-  implicit class CreateProposalOutputMutableBuilder[Self <: CreateProposalOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProposalOutput](x: Self) {
     
-    @scala.inline
-    def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: ResourceIdString): Self = StObject.set(x, "ProposalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalIdUndefined: Self = StObject.set(x, "ProposalId", js.undefined)
+    inline def setProposalIdUndefined: Self = StObject.set(x, "ProposalId", js.undefined)
   }
 }

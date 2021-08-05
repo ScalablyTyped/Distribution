@@ -33,37 +33,27 @@ trait MedicationPackageBatch
 }
 object MedicationPackageBatch {
   
-  @scala.inline
-  def apply(): MedicationPackageBatch = {
+  inline def apply(): MedicationPackageBatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicationPackageBatch]
   }
   
-  @scala.inline
-  implicit class MedicationPackageBatchMutableBuilder[Self <: MedicationPackageBatch] (val x: Self) extends AnyVal {
+  extension [Self <: MedicationPackageBatch](x: Self) {
     
-    @scala.inline
-    def setExpirationDate(value: dateTime): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: dateTime): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
-    @scala.inline
-    def setLotNumber(value: String): Self = StObject.set(x, "lotNumber", value.asInstanceOf[js.Any])
+    inline def setLotNumber(value: String): Self = StObject.set(x, "lotNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLotNumberUndefined: Self = StObject.set(x, "lotNumber", js.undefined)
+    inline def setLotNumberUndefined: Self = StObject.set(x, "lotNumber", js.undefined)
     
-    @scala.inline
-    def set_expirationDate(value: Element): Self = StObject.set(x, "_expirationDate", value.asInstanceOf[js.Any])
+    inline def set_expirationDate(value: Element): Self = StObject.set(x, "_expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_expirationDateUndefined: Self = StObject.set(x, "_expirationDate", js.undefined)
+    inline def set_expirationDateUndefined: Self = StObject.set(x, "_expirationDate", js.undefined)
     
-    @scala.inline
-    def set_lotNumber(value: Element): Self = StObject.set(x, "_lotNumber", value.asInstanceOf[js.Any])
+    inline def set_lotNumber(value: Element): Self = StObject.set(x, "_lotNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_lotNumberUndefined: Self = StObject.set(x, "_lotNumber", js.undefined)
+    inline def set_lotNumberUndefined: Self = StObject.set(x, "_lotNumber", js.undefined)
   }
 }

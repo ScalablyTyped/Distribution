@@ -21,7 +21,7 @@ class IonChip protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * Display an outline style button.
@@ -29,5 +29,5 @@ class IonChip protected ()
   /* CompleteClass */
   var outline: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

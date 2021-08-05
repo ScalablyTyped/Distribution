@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): Store = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Store]
+  inline def create(): Store = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Store]
   
   @js.native
   trait Store extends EventEmitter {

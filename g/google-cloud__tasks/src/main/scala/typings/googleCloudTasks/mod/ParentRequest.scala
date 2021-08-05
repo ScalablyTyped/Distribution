@@ -13,16 +13,13 @@ trait ParentRequest extends StObject {
 }
 object ParentRequest {
   
-  @scala.inline
-  def apply(parent: String): ParentRequest = {
+  inline def apply(parent: String): ParentRequest = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParentRequest]
   }
   
-  @scala.inline
-  implicit class ParentRequestMutableBuilder[Self <: ParentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ParentRequest](x: Self) {
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }
 }

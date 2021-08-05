@@ -21,28 +21,21 @@ trait SchemaMultiClassClassificationMetrics extends StObject {
 }
 object SchemaMultiClassClassificationMetrics {
   
-  @scala.inline
-  def apply(): SchemaMultiClassClassificationMetrics = {
+  inline def apply(): SchemaMultiClassClassificationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMultiClassClassificationMetrics]
   }
   
-  @scala.inline
-  implicit class SchemaMultiClassClassificationMetricsMutableBuilder[Self <: SchemaMultiClassClassificationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMultiClassClassificationMetrics](x: Self) {
     
-    @scala.inline
-    def setAggregateClassificationMetrics(value: SchemaAggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
+    inline def setAggregateClassificationMetrics(value: SchemaAggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
+    inline def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
     
-    @scala.inline
-    def setConfusionMatrixList(value: js.Array[SchemaConfusionMatrix]): Self = StObject.set(x, "confusionMatrixList", value.asInstanceOf[js.Any])
+    inline def setConfusionMatrixList(value: js.Array[SchemaConfusionMatrix]): Self = StObject.set(x, "confusionMatrixList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfusionMatrixListUndefined: Self = StObject.set(x, "confusionMatrixList", js.undefined)
+    inline def setConfusionMatrixListUndefined: Self = StObject.set(x, "confusionMatrixList", js.undefined)
     
-    @scala.inline
-    def setConfusionMatrixListVarargs(value: SchemaConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value :_*))
+    inline def setConfusionMatrixListVarargs(value: SchemaConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value :_*))
   }
 }

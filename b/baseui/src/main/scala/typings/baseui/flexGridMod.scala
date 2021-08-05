@@ -28,26 +28,20 @@ object flexGridMod {
   }
   object FlexGridItemProps {
     
-    @scala.inline
-    def apply(): FlexGridItemProps = {
+    inline def apply(): FlexGridItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexGridItemProps]
     }
     
-    @scala.inline
-    implicit class FlexGridItemPropsMutableBuilder[Self <: FlexGridItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlexGridItemProps](x: Self) {
       
-      @scala.inline
-      def setFlexGridItemCount(value: Double): Self = StObject.set(x, "flexGridItemCount", value.asInstanceOf[js.Any])
+      inline def setFlexGridItemCount(value: Double): Self = StObject.set(x, "flexGridItemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGridItemCountUndefined: Self = StObject.set(x, "flexGridItemCount", js.undefined)
+      inline def setFlexGridItemCountUndefined: Self = StObject.set(x, "flexGridItemCount", js.undefined)
       
-      @scala.inline
-      def setFlexGridItemIndex(value: Double): Self = StObject.set(x, "flexGridItemIndex", value.asInstanceOf[js.Any])
+      inline def setFlexGridItemIndex(value: Double): Self = StObject.set(x, "flexGridItemIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGridItemIndexUndefined: Self = StObject.set(x, "flexGridItemIndex", js.undefined)
+      inline def setFlexGridItemIndexUndefined: Self = StObject.set(x, "flexGridItemIndex", js.undefined)
     }
   }
   
@@ -63,41 +57,30 @@ object flexGridMod {
   }
   object FlexGridProps {
     
-    @scala.inline
-    def apply(): FlexGridProps = {
+    inline def apply(): FlexGridProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexGridProps]
     }
     
-    @scala.inline
-    implicit class FlexGridPropsMutableBuilder[Self <: FlexGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlexGridProps](x: Self) {
       
-      @scala.inline
-      def setFlexGridColumnCount(value: Responsive[Double]): Self = StObject.set(x, "flexGridColumnCount", value.asInstanceOf[js.Any])
+      inline def setFlexGridColumnCount(value: Responsive[Double]): Self = StObject.set(x, "flexGridColumnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGridColumnCountUndefined: Self = StObject.set(x, "flexGridColumnCount", js.undefined)
+      inline def setFlexGridColumnCountUndefined: Self = StObject.set(x, "flexGridColumnCount", js.undefined)
       
-      @scala.inline
-      def setFlexGridColumnCountVarargs(value: Double*): Self = StObject.set(x, "flexGridColumnCount", js.Array(value :_*))
+      inline def setFlexGridColumnCountVarargs(value: Double*): Self = StObject.set(x, "flexGridColumnCount", js.Array(value :_*))
       
-      @scala.inline
-      def setFlexGridColumnGap(value: Responsive[Scale]): Self = StObject.set(x, "flexGridColumnGap", value.asInstanceOf[js.Any])
+      inline def setFlexGridColumnGap(value: Responsive[Scale]): Self = StObject.set(x, "flexGridColumnGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGridColumnGapUndefined: Self = StObject.set(x, "flexGridColumnGap", js.undefined)
+      inline def setFlexGridColumnGapUndefined: Self = StObject.set(x, "flexGridColumnGap", js.undefined)
       
-      @scala.inline
-      def setFlexGridColumnGapVarargs(value: Scale*): Self = StObject.set(x, "flexGridColumnGap", js.Array(value :_*))
+      inline def setFlexGridColumnGapVarargs(value: Scale*): Self = StObject.set(x, "flexGridColumnGap", js.Array(value :_*))
       
-      @scala.inline
-      def setFlexGridRowGap(value: Responsive[Scale]): Self = StObject.set(x, "flexGridRowGap", value.asInstanceOf[js.Any])
+      inline def setFlexGridRowGap(value: Responsive[Scale]): Self = StObject.set(x, "flexGridRowGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGridRowGapUndefined: Self = StObject.set(x, "flexGridRowGap", js.undefined)
+      inline def setFlexGridRowGapUndefined: Self = StObject.set(x, "flexGridRowGap", js.undefined)
       
-      @scala.inline
-      def setFlexGridRowGapVarargs(value: Scale*): Self = StObject.set(x, "flexGridRowGap", js.Array(value :_*))
+      inline def setFlexGridRowGapVarargs(value: Scale*): Self = StObject.set(x, "flexGridRowGap", js.Array(value :_*))
     }
   }
 }

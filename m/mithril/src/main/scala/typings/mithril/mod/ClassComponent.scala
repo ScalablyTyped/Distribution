@@ -44,54 +44,39 @@ trait ClassComponent[A]
 }
 object ClassComponent {
   
-  @scala.inline
-  def apply[A](view: Vnode[A, ClassComponent[A]] => Children | Null | Unit): ClassComponent[A] = {
+  inline def apply[A](view: Vnode[A, ClassComponent[A]] => Children | Null | Unit): ClassComponent[A] = {
     val __obj = js.Dynamic.literal(view = js.Any.fromFunction1(view))
     __obj.asInstanceOf[ClassComponent[A]]
   }
   
-  @scala.inline
-  implicit class ClassComponentMutableBuilder[Self <: ClassComponent[?], A] (val x: Self & ClassComponent[A]) extends AnyVal {
+  extension [Self <: ClassComponent[?], A](x: Self & ClassComponent[A]) {
     
-    @scala.inline
-    def setOnbeforeremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onbeforeremove", js.Any.fromFunction1(value))
+    inline def setOnbeforeremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onbeforeremove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnbeforeremoveUndefined: Self = StObject.set(x, "onbeforeremove", js.undefined)
+    inline def setOnbeforeremoveUndefined: Self = StObject.set(x, "onbeforeremove", js.undefined)
     
-    @scala.inline
-    def setOnbeforeupdate(
+    inline def setOnbeforeupdate(
       value: (/* vnode */ Vnode[A, ClassComponent[A]], /* old */ VnodeDOM[A, ClassComponent[A]]) => Boolean | Unit
     ): Self = StObject.set(x, "onbeforeupdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnbeforeupdateUndefined: Self = StObject.set(x, "onbeforeupdate", js.undefined)
+    inline def setOnbeforeupdateUndefined: Self = StObject.set(x, "onbeforeupdate", js.undefined)
     
-    @scala.inline
-    def setOncreate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "oncreate", js.Any.fromFunction1(value))
+    inline def setOncreate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "oncreate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOncreateUndefined: Self = StObject.set(x, "oncreate", js.undefined)
+    inline def setOncreateUndefined: Self = StObject.set(x, "oncreate", js.undefined)
     
-    @scala.inline
-    def setOninit(value: /* vnode */ Vnode[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "oninit", js.Any.fromFunction1(value))
+    inline def setOninit(value: /* vnode */ Vnode[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "oninit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
+    inline def setOninitUndefined: Self = StObject.set(x, "oninit", js.undefined)
     
-    @scala.inline
-    def setOnremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "onremove", js.Any.fromFunction1(value))
+    inline def setOnremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "onremove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
+    inline def setOnremoveUndefined: Self = StObject.set(x, "onremove", js.undefined)
     
-    @scala.inline
-    def setOnupdate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "onupdate", js.Any.fromFunction1(value))
+    inline def setOnupdate(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Any): Self = StObject.set(x, "onupdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
+    inline def setOnupdateUndefined: Self = StObject.set(x, "onupdate", js.undefined)
     
-    @scala.inline
-    def setView(value: Vnode[A, ClassComponent[A]] => Children | Null | Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+    inline def setView(value: Vnode[A, ClassComponent[A]] => Children | Null | Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

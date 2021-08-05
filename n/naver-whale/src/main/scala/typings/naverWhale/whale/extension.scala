@@ -25,26 +25,20 @@ object `extension` {
   }
   object FetchProperties {
     
-    @scala.inline
-    def apply(): FetchProperties = {
+    inline def apply(): FetchProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchProperties]
     }
     
-    @scala.inline
-    implicit class FetchPropertiesMutableBuilder[Self <: FetchProperties] (val x: Self) extends AnyVal {
+    extension [Self <: FetchProperties](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     }
   }
   
@@ -55,17 +49,14 @@ object `extension` {
   }
   object LastError {
     
-    @scala.inline
-    def apply(message: String): LastError = {
+    inline def apply(message: String): LastError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[LastError]
     }
     
-    @scala.inline
-    implicit class LastErrorMutableBuilder[Self <: LastError] (val x: Self) extends AnyVal {
+    extension [Self <: LastError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   

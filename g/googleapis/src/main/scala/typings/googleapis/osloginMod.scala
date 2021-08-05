@@ -38,8 +38,7 @@ object osloginMod {
     @JSImport("googleapis/build/src/apis/oslogin", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Oslogin] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Oslogin]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
@@ -58,8 +57,7 @@ object osloginMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin
       ] = js.native
-    @scala.inline
-    def v1alpha_=(
+    inline def v1alpha_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -82,8 +80,7 @@ object osloginMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin
       ] = js.native
-    @scala.inline
-    def v1beta_=(
+    inline def v1beta_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -125,8 +122,7 @@ object osloginMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -170,19 +166,13 @@ object osloginMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def oslogin(options: Options): Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[Oslogin]
-  @scala.inline
-  def oslogin(options: typings.googleapis.osloginV1alphaMod.osloginV1alpha.Options): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin]
-  @scala.inline
-  def oslogin(options: typings.googleapis.osloginV1betaMod.osloginV1beta.Options): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin]
+  inline def oslogin(options: Options): Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[Oslogin]
+  inline def oslogin(options: typings.googleapis.osloginV1alphaMod.osloginV1alpha.Options): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin]
+  inline def oslogin(options: typings.googleapis.osloginV1betaMod.osloginV1beta.Options): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin]
   
-  @scala.inline
-  def oslogin_v1(version: v1): Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[Oslogin]
+  inline def oslogin_v1(version: v1): Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[Oslogin]
   
-  @scala.inline
-  def oslogin_v1alpha(version: v1alpha): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin]
+  inline def oslogin_v1alpha(version: v1alpha): typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin]
   
-  @scala.inline
-  def oslogin_v1beta(version: v1beta): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin]
+  inline def oslogin_v1beta(version: v1beta): typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin = ^.asInstanceOf[js.Dynamic].applyDynamic("oslogin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin]
 }

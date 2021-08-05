@@ -20,8 +20,7 @@ trait AllPermissions extends StObject {
 }
 object AllPermissions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allPermissions: scala.Double,
     delete: scala.Double,
     edit: scala.Double,
@@ -33,25 +32,18 @@ object AllPermissions {
     __obj.asInstanceOf[AllPermissions]
   }
   
-  @scala.inline
-  implicit class AllPermissionsMutableBuilder[Self <: AllPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: AllPermissions](x: Self) {
     
-    @scala.inline
-    def setAllPermissions(value: scala.Double): Self = StObject.set(x, "allPermissions", value.asInstanceOf[js.Any])
+    inline def setAllPermissions(value: scala.Double): Self = StObject.set(x, "allPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManage(value: scala.Double): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
+    inline def setManage(value: scala.Double): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: scala.Double): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: scala.Double): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

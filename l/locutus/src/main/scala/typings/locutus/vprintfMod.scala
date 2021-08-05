@@ -6,14 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object vprintfMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(format: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(format: Unit, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(format: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(format: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(format: Unit, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/strings/vprintf", JSImport.Namespace)
   @js.native

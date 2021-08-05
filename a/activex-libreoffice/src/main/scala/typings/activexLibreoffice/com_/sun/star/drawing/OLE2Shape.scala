@@ -47,8 +47,7 @@ trait OLE2Shape
 }
 object OLE2Shape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CLSID: String,
     GluePoints: XIndexContainer,
     Hyperlink: String,
@@ -103,19 +102,14 @@ object OLE2Shape {
     __obj.asInstanceOf[OLE2Shape]
   }
   
-  @scala.inline
-  implicit class OLE2ShapeMutableBuilder[Self <: OLE2Shape] (val x: Self) extends AnyVal {
+  extension [Self <: OLE2Shape](x: Self) {
     
-    @scala.inline
-    def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
+    inline def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInternal(value: Boolean): Self = StObject.set(x, "IsInternal", value.asInstanceOf[js.Any])
+    inline def setIsInternal(value: Boolean): Self = StObject.set(x, "IsInternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistName(value: String): Self = StObject.set(x, "PersistName", value.asInstanceOf[js.Any])
+    inline def setPersistName(value: String): Self = StObject.set(x, "PersistName", value.asInstanceOf[js.Any])
   }
 }

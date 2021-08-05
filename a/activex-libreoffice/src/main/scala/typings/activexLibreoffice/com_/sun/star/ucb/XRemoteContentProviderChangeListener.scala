@@ -24,8 +24,7 @@ trait XRemoteContentProviderChangeListener
 }
 object XRemoteContentProviderChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XRemoteContentProviderChangeListener {
     __obj.asInstanceOf[XRemoteContentProviderChangeListener]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderChangeListenerMutableBuilder[Self <: XRemoteContentProviderChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderChangeListener](x: Self) {
     
-    @scala.inline
-    def setRemoteContentProviderChange(value: RemoteContentProviderChangeEvent => Unit): Self = StObject.set(x, "remoteContentProviderChange", js.Any.fromFunction1(value))
+    inline def setRemoteContentProviderChange(value: RemoteContentProviderChangeEvent => Unit): Self = StObject.set(x, "remoteContentProviderChange", js.Any.fromFunction1(value))
   }
 }

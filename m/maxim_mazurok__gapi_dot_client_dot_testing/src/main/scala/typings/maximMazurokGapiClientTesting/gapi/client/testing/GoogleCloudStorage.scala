@@ -11,19 +11,15 @@ trait GoogleCloudStorage extends StObject {
 }
 object GoogleCloudStorage {
   
-  @scala.inline
-  def apply(): GoogleCloudStorage = {
+  inline def apply(): GoogleCloudStorage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudStorage]
   }
   
-  @scala.inline
-  implicit class GoogleCloudStorageMutableBuilder[Self <: GoogleCloudStorage] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudStorage](x: Self) {
     
-    @scala.inline
-    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
+    inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }
 }

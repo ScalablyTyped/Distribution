@@ -18,28 +18,21 @@ trait HttpHeaderConditionConfig extends StObject {
 }
 object HttpHeaderConditionConfig {
   
-  @scala.inline
-  def apply(): HttpHeaderConditionConfig = {
+  inline def apply(): HttpHeaderConditionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpHeaderConditionConfig]
   }
   
-  @scala.inline
-  implicit class HttpHeaderConditionConfigMutableBuilder[Self <: HttpHeaderConditionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HttpHeaderConditionConfig](x: Self) {
     
-    @scala.inline
-    def setHttpHeaderName(value: HttpHeaderConditionName): Self = StObject.set(x, "HttpHeaderName", value.asInstanceOf[js.Any])
+    inline def setHttpHeaderName(value: HttpHeaderConditionName): Self = StObject.set(x, "HttpHeaderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeaderNameUndefined: Self = StObject.set(x, "HttpHeaderName", js.undefined)
+    inline def setHttpHeaderNameUndefined: Self = StObject.set(x, "HttpHeaderName", js.undefined)
     
-    @scala.inline
-    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -18,13 +18,12 @@ trait ProofreadingErrors extends StObject {
   
   val Type: WdProofreadingErrorType
   
-  @JSName("Word.ProofreadingErrors_typekey")
+  /* private */ @JSName("Word.ProofreadingErrors_typekey")
   var WordDotProofreadingErrors_typekey: ProofreadingErrors
 }
 object ProofreadingErrors {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -38,28 +37,20 @@ object ProofreadingErrors {
     __obj.asInstanceOf[ProofreadingErrors]
   }
   
-  @scala.inline
-  implicit class ProofreadingErrorsMutableBuilder[Self <: ProofreadingErrors] (val x: Self) extends AnyVal {
+  extension [Self <: ProofreadingErrors](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Range): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Range): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WdProofreadingErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdProofreadingErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotProofreadingErrors_typekey(value: ProofreadingErrors): Self = StObject.set(x, "Word.ProofreadingErrors_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotProofreadingErrors_typekey(value: ProofreadingErrors): Self = StObject.set(x, "Word.ProofreadingErrors_typekey", value.asInstanceOf[js.Any])
   }
 }

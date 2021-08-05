@@ -164,197 +164,134 @@ trait ToolComponent extends StObject {
 }
 object ToolComponent {
   
-  @scala.inline
-  def apply(name: String): ToolComponent = {
+  inline def apply(name: String): ToolComponent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolComponent]
   }
   
-  @scala.inline
-  implicit class ToolComponentMutableBuilder[Self <: ToolComponent] (val x: Self) extends AnyVal {
+  extension [Self <: ToolComponent](x: Self) {
     
-    @scala.inline
-    def setAssociatedComponent(value: ToolComponentReference): Self = StObject.set(x, "associatedComponent", value.asInstanceOf[js.Any])
+    inline def setAssociatedComponent(value: ToolComponentReference): Self = StObject.set(x, "associatedComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedComponentUndefined: Self = StObject.set(x, "associatedComponent", js.undefined)
+    inline def setAssociatedComponentUndefined: Self = StObject.set(x, "associatedComponent", js.undefined)
     
-    @scala.inline
-    def setContents(value: js.Array[contents]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[contents]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setContentsVarargs(value: contents*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: contents*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setDottedQuadFileVersion(value: String): Self = StObject.set(x, "dottedQuadFileVersion", value.asInstanceOf[js.Any])
+    inline def setDottedQuadFileVersion(value: String): Self = StObject.set(x, "dottedQuadFileVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDottedQuadFileVersionUndefined: Self = StObject.set(x, "dottedQuadFileVersion", js.undefined)
+    inline def setDottedQuadFileVersionUndefined: Self = StObject.set(x, "dottedQuadFileVersion", js.undefined)
     
-    @scala.inline
-    def setDownloadUri(value: String): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
+    inline def setDownloadUri(value: String): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadUriUndefined: Self = StObject.set(x, "downloadUri", js.undefined)
+    inline def setDownloadUriUndefined: Self = StObject.set(x, "downloadUri", js.undefined)
     
-    @scala.inline
-    def setFullDescription(value: MultiformatMessageString): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
+    inline def setFullDescription(value: MultiformatMessageString): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDescriptionUndefined: Self = StObject.set(x, "fullDescription", js.undefined)
+    inline def setFullDescriptionUndefined: Self = StObject.set(x, "fullDescription", js.undefined)
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
+    inline def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
-    @scala.inline
-    def setGlobalMessageStrings(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "globalMessageStrings", value.asInstanceOf[js.Any])
+    inline def setGlobalMessageStrings(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "globalMessageStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalMessageStringsUndefined: Self = StObject.set(x, "globalMessageStrings", js.undefined)
+    inline def setGlobalMessageStringsUndefined: Self = StObject.set(x, "globalMessageStrings", js.undefined)
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
-    @scala.inline
-    def setInformationUri(value: String): Self = StObject.set(x, "informationUri", value.asInstanceOf[js.Any])
+    inline def setInformationUri(value: String): Self = StObject.set(x, "informationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInformationUriUndefined: Self = StObject.set(x, "informationUri", js.undefined)
+    inline def setInformationUriUndefined: Self = StObject.set(x, "informationUri", js.undefined)
     
-    @scala.inline
-    def setIsComprehensive(value: Boolean): Self = StObject.set(x, "isComprehensive", value.asInstanceOf[js.Any])
+    inline def setIsComprehensive(value: Boolean): Self = StObject.set(x, "isComprehensive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsComprehensiveUndefined: Self = StObject.set(x, "isComprehensive", js.undefined)
+    inline def setIsComprehensiveUndefined: Self = StObject.set(x, "isComprehensive", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocalizedDataSemanticVersion(value: String): Self = StObject.set(x, "localizedDataSemanticVersion", value.asInstanceOf[js.Any])
+    inline def setLocalizedDataSemanticVersion(value: String): Self = StObject.set(x, "localizedDataSemanticVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedDataSemanticVersionUndefined: Self = StObject.set(x, "localizedDataSemanticVersion", js.undefined)
+    inline def setLocalizedDataSemanticVersionUndefined: Self = StObject.set(x, "localizedDataSemanticVersion", js.undefined)
     
-    @scala.inline
-    def setLocations(value: js.Array[ArtifactLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[ArtifactLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: ArtifactLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: ArtifactLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimumRequiredLocalizedDataSemanticVersion(value: String): Self = StObject.set(x, "minimumRequiredLocalizedDataSemanticVersion", value.asInstanceOf[js.Any])
+    inline def setMinimumRequiredLocalizedDataSemanticVersion(value: String): Self = StObject.set(x, "minimumRequiredLocalizedDataSemanticVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumRequiredLocalizedDataSemanticVersionUndefined: Self = StObject.set(x, "minimumRequiredLocalizedDataSemanticVersion", js.undefined)
+    inline def setMinimumRequiredLocalizedDataSemanticVersionUndefined: Self = StObject.set(x, "minimumRequiredLocalizedDataSemanticVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifications(value: js.Array[ReportingDescriptor]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: js.Array[ReportingDescriptor]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    @scala.inline
-    def setNotificationsVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "notifications", js.Array(value :_*))
     
-    @scala.inline
-    def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSuite(value: String): Self = StObject.set(x, "productSuite", value.asInstanceOf[js.Any])
+    inline def setProductSuite(value: String): Self = StObject.set(x, "productSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSuiteUndefined: Self = StObject.set(x, "productSuite", js.undefined)
+    inline def setProductSuiteUndefined: Self = StObject.set(x, "productSuite", js.undefined)
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setReleaseDateUtc(value: String): Self = StObject.set(x, "releaseDateUtc", value.asInstanceOf[js.Any])
+    inline def setReleaseDateUtc(value: String): Self = StObject.set(x, "releaseDateUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDateUtcUndefined: Self = StObject.set(x, "releaseDateUtc", js.undefined)
+    inline def setReleaseDateUtcUndefined: Self = StObject.set(x, "releaseDateUtc", js.undefined)
     
-    @scala.inline
-    def setRules(value: js.Array[ReportingDescriptor]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[ReportingDescriptor]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
-    @scala.inline
-    def setSemanticVersion(value: String): Self = StObject.set(x, "semanticVersion", value.asInstanceOf[js.Any])
+    inline def setSemanticVersion(value: String): Self = StObject.set(x, "semanticVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticVersionUndefined: Self = StObject.set(x, "semanticVersion", js.undefined)
+    inline def setSemanticVersionUndefined: Self = StObject.set(x, "semanticVersion", js.undefined)
     
-    @scala.inline
-    def setShortDescription(value: MultiformatMessageString): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
+    inline def setShortDescription(value: MultiformatMessageString): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
+    inline def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
     
-    @scala.inline
-    def setSupportedTaxonomies(value: js.Array[ToolComponentReference]): Self = StObject.set(x, "supportedTaxonomies", value.asInstanceOf[js.Any])
+    inline def setSupportedTaxonomies(value: js.Array[ToolComponentReference]): Self = StObject.set(x, "supportedTaxonomies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTaxonomiesUndefined: Self = StObject.set(x, "supportedTaxonomies", js.undefined)
+    inline def setSupportedTaxonomiesUndefined: Self = StObject.set(x, "supportedTaxonomies", js.undefined)
     
-    @scala.inline
-    def setSupportedTaxonomiesVarargs(value: ToolComponentReference*): Self = StObject.set(x, "supportedTaxonomies", js.Array(value :_*))
+    inline def setSupportedTaxonomiesVarargs(value: ToolComponentReference*): Self = StObject.set(x, "supportedTaxonomies", js.Array(value :_*))
     
-    @scala.inline
-    def setTaxa(value: js.Array[ReportingDescriptor]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
+    inline def setTaxa(value: js.Array[ReportingDescriptor]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
+    inline def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
     
-    @scala.inline
-    def setTaxaVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "taxa", js.Array(value :_*))
+    inline def setTaxaVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "taxa", js.Array(value :_*))
     
-    @scala.inline
-    def setTranslationMetadata(value: TranslationMetadata): Self = StObject.set(x, "translationMetadata", value.asInstanceOf[js.Any])
+    inline def setTranslationMetadata(value: TranslationMetadata): Self = StObject.set(x, "translationMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslationMetadataUndefined: Self = StObject.set(x, "translationMetadata", js.undefined)
+    inline def setTranslationMetadataUndefined: Self = StObject.set(x, "translationMetadata", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -364,10 +301,8 @@ object ToolComponent {
   trait contents extends StObject
   object contents {
     
-    @scala.inline
-    def localizedData: typings.sarif.sarifStrings.localizedData = "localizedData".asInstanceOf[typings.sarif.sarifStrings.localizedData]
+    inline def localizedData: typings.sarif.sarifStrings.localizedData = "localizedData".asInstanceOf[typings.sarif.sarifStrings.localizedData]
     
-    @scala.inline
-    def nonLocalizedData: typings.sarif.sarifStrings.nonLocalizedData = "nonLocalizedData".asInstanceOf[typings.sarif.sarifStrings.nonLocalizedData]
+    inline def nonLocalizedData: typings.sarif.sarifStrings.nonLocalizedData = "nonLocalizedData".asInstanceOf[typings.sarif.sarifStrings.nonLocalizedData]
   }
 }

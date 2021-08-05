@@ -10,16 +10,13 @@ trait TokenizerStatic extends StObject {
 }
 object TokenizerStatic {
   
-  @scala.inline
-  def apply(splitByPunctuation: String => js.Array[String]): TokenizerStatic = {
+  inline def apply(splitByPunctuation: String => js.Array[String]): TokenizerStatic = {
     val __obj = js.Dynamic.literal(splitByPunctuation = js.Any.fromFunction1(splitByPunctuation))
     __obj.asInstanceOf[TokenizerStatic]
   }
   
-  @scala.inline
-  implicit class TokenizerStaticMutableBuilder[Self <: TokenizerStatic] (val x: Self) extends AnyVal {
+  extension [Self <: TokenizerStatic](x: Self) {
     
-    @scala.inline
-    def setSplitByPunctuation(value: String => js.Array[String]): Self = StObject.set(x, "splitByPunctuation", js.Any.fromFunction1(value))
+    inline def setSplitByPunctuation(value: String => js.Array[String]): Self = StObject.set(x, "splitByPunctuation", js.Any.fromFunction1(value))
   }
 }

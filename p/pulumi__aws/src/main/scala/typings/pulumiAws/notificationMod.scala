@@ -57,21 +57,16 @@ object notificationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Notification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Notification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NotificationState): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Notification]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NotificationState, opts: CustomResourceOptions): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Notification]
+    inline def get(name: String, id: Input[ID]): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Notification]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Notification]
+    inline def get(name: String, id: Input[ID], state: NotificationState): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Notification]
+    inline def get(name: String, id: Input[ID], state: NotificationState, opts: CustomResourceOptions): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Notification]
     
     /**
       * Returns true if the given object is an instance of Notification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean]
   }
   
   trait NotificationArgs extends StObject {
@@ -94,8 +89,7 @@ object notificationMod {
   }
   object NotificationArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       groupNames: Input[js.Array[Input[String]]],
       notifications: Input[js.Array[Input[NotificationType]]],
       topicArn: Input[String]
@@ -104,23 +98,17 @@ object notificationMod {
       __obj.asInstanceOf[NotificationArgs]
     }
     
-    @scala.inline
-    implicit class NotificationArgsMutableBuilder[Self <: NotificationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationArgs](x: Self) {
       
-      @scala.inline
-      def setGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groupNames", value.asInstanceOf[js.Any])
+      inline def setGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "groupNames", js.Array(value :_*))
+      inline def setGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "groupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setNotifications(value: Input[js.Array[Input[NotificationType]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[js.Array[Input[NotificationType]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsVarargs(value: Input[NotificationType]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Input[NotificationType]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,38 +132,28 @@ object notificationMod {
   }
   object NotificationState {
     
-    @scala.inline
-    def apply(): NotificationState = {
+    inline def apply(): NotificationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotificationState]
     }
     
-    @scala.inline
-    implicit class NotificationStateMutableBuilder[Self <: NotificationState] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationState](x: Self) {
       
-      @scala.inline
-      def setGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groupNames", value.asInstanceOf[js.Any])
+      inline def setGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "groupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupNamesUndefined: Self = StObject.set(x, "groupNames", js.undefined)
+      inline def setGroupNamesUndefined: Self = StObject.set(x, "groupNames", js.undefined)
       
-      @scala.inline
-      def setGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "groupNames", js.Array(value :_*))
+      inline def setGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "groupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setNotifications(value: Input[js.Array[Input[NotificationType]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[js.Array[Input[NotificationType]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setNotificationsVarargs(value: Input[NotificationType]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Input[NotificationType]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: Input[String]): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
 }

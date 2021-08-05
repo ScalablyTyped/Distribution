@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageSizeType extends StObject
 object ImageSizeType {
   
-  @scala.inline
-  def compressed: typings.weappApi.weappApiStrings.compressed = "compressed".asInstanceOf[typings.weappApi.weappApiStrings.compressed]
+  inline def compressed: typings.weappApi.weappApiStrings.compressed = "compressed".asInstanceOf[typings.weappApi.weappApiStrings.compressed]
   
-  @scala.inline
-  def original: typings.weappApi.weappApiStrings.original = "original".asInstanceOf[typings.weappApi.weappApiStrings.original]
+  inline def original: typings.weappApi.weappApiStrings.original = "original".asInstanceOf[typings.weappApi.weappApiStrings.original]
 }

@@ -44,8 +44,7 @@ trait IMimeModel extends StObject {
   */
 object IMimeModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: ReadonlyPartialJSONObject,
     metadata: ReadonlyPartialJSONObject,
     setData: ISetDataOptions => Unit,
@@ -55,20 +54,15 @@ object IMimeModel {
     __obj.asInstanceOf[IMimeModel]
   }
   
-  @scala.inline
-  implicit class IMimeModelMutableBuilder[Self <: IMimeModel] (val x: Self) extends AnyVal {
+  extension [Self <: IMimeModel](x: Self) {
     
-    @scala.inline
-    def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetData(value: ISetDataOptions => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: ISetDataOptions => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+    inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
   }
   
   /**
@@ -88,26 +82,20 @@ object IMimeModel {
   }
   object ISetDataOptions {
     
-    @scala.inline
-    def apply(): ISetDataOptions = {
+    inline def apply(): ISetDataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISetDataOptions]
     }
     
-    @scala.inline
-    implicit class ISetDataOptionsMutableBuilder[Self <: ISetDataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISetDataOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
 }

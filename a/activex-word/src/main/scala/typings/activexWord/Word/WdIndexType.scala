@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdIndexType extends StObject
 object WdIndexType {
   
-  @scala.inline
-  def wdIndexIndent: `0` = 0.asInstanceOf[`0`]
+  inline def wdIndexIndent: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdIndexRunin: `1` = 1.asInstanceOf[`1`]
+  inline def wdIndexRunin: `1` = 1.asInstanceOf[`1`]
 }

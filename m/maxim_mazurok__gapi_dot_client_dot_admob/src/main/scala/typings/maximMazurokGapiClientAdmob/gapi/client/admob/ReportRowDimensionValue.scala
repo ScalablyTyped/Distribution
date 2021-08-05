@@ -14,25 +14,19 @@ trait ReportRowDimensionValue extends StObject {
 }
 object ReportRowDimensionValue {
   
-  @scala.inline
-  def apply(): ReportRowDimensionValue = {
+  inline def apply(): ReportRowDimensionValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportRowDimensionValue]
   }
   
-  @scala.inline
-  implicit class ReportRowDimensionValueMutableBuilder[Self <: ReportRowDimensionValue] (val x: Self) extends AnyVal {
+  extension [Self <: ReportRowDimensionValue](x: Self) {
     
-    @scala.inline
-    def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
+    inline def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLabelUndefined: Self = StObject.set(x, "displayLabel", js.undefined)
+    inline def setDisplayLabelUndefined: Self = StObject.set(x, "displayLabel", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

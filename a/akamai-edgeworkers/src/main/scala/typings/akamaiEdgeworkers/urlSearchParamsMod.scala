@@ -125,8 +125,7 @@ object urlSearchParamsMod {
   }
   object URLSearchParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: (String, String) => Unit,
       delete: String => Unit,
       entries: () => IterableIterator[js.Tuple2[String, String]],
@@ -141,35 +140,25 @@ object urlSearchParamsMod {
       __obj.asInstanceOf[URLSearchParams]
     }
     
-    @scala.inline
-    implicit class URLSearchParamsMutableBuilder[Self <: URLSearchParams] (val x: Self) extends AnyVal {
+    extension [Self <: URLSearchParams](x: Self) {
       
-      @scala.inline
-      def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+      inline def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntries(value: () => IterableIterator[js.Tuple2[String, String]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntries(value: () => IterableIterator[js.Tuple2[String, String]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAll(value: String => js.Array[String]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
+      inline def setGetAll(value: String => js.Array[String]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: () => IterableIterator[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
+      inline def setKeys(value: () => IterableIterator[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValues(value: () => IterableIterator[String]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
+      inline def setValues(value: () => IterableIterator[String]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
     }
   }
 }

@@ -11,8 +11,7 @@ object incMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isNum(v: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNum")(v.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  inline def isNum(v: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNum")(v.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
   
   @JSImport("@popmotion/popcorn/lib/inc", "zeroPoint")
   @js.native

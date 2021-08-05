@@ -10,19 +10,15 @@ trait DeleteGlobalReplicationGroupResult extends StObject {
 }
 object DeleteGlobalReplicationGroupResult {
   
-  @scala.inline
-  def apply(): DeleteGlobalReplicationGroupResult = {
+  inline def apply(): DeleteGlobalReplicationGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteGlobalReplicationGroupResult]
   }
   
-  @scala.inline
-  implicit class DeleteGlobalReplicationGroupResultMutableBuilder[Self <: DeleteGlobalReplicationGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGlobalReplicationGroupResult](x: Self) {
     
-    @scala.inline
-    def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
+    inline def setGlobalReplicationGroupUndefined: Self = StObject.set(x, "GlobalReplicationGroup", js.undefined)
   }
 }

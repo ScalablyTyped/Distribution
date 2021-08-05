@@ -24,19 +24,15 @@ trait ChangeFontFormattingCommand
 }
 object ChangeFontFormattingCommand {
   
-  @scala.inline
-  def apply(execute: FontFormattingSettings => Boolean, getState: () => CommandState[FontFormattingSettings]): ChangeFontFormattingCommand = {
+  inline def apply(execute: FontFormattingSettings => Boolean, getState: () => CommandState[FontFormattingSettings]): ChangeFontFormattingCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeFontFormattingCommand]
   }
   
-  @scala.inline
-  implicit class ChangeFontFormattingCommandMutableBuilder[Self <: ChangeFontFormattingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeFontFormattingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: FontFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: FontFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[FontFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[FontFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

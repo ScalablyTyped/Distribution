@@ -43,28 +43,21 @@ trait Endpoints extends StObject {
 }
 object Endpoints {
   
-  @scala.inline
-  def apply(metadata: ObjectMeta, subsets: js.Array[EndpointSubset]): Endpoints = {
+  inline def apply(metadata: ObjectMeta, subsets: js.Array[EndpointSubset]): Endpoints = {
     val __obj = js.Dynamic.literal(apiVersion = "v1", kind = "Endpoints", metadata = metadata.asInstanceOf[js.Any], subsets = subsets.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoints]
   }
   
-  @scala.inline
-  implicit class EndpointsMutableBuilder[Self <: Endpoints] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoints](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Endpoints): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Endpoints): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsets(value: js.Array[EndpointSubset]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
+    inline def setSubsets(value: js.Array[EndpointSubset]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsetsVarargs(value: EndpointSubset*): Self = StObject.set(x, "subsets", js.Array(value :_*))
+    inline def setSubsetsVarargs(value: EndpointSubset*): Self = StObject.set(x, "subsets", js.Array(value :_*))
   }
 }

@@ -15,19 +15,15 @@ trait DialogLogMessage extends StObject {
 }
 object DialogLogMessage {
   
-  @scala.inline
-  def apply(level: String, message: String): DialogLogMessage = {
+  inline def apply(level: String, message: String): DialogLogMessage = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogLogMessage]
   }
   
-  @scala.inline
-  implicit class DialogLogMessageMutableBuilder[Self <: DialogLogMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DialogLogMessage](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

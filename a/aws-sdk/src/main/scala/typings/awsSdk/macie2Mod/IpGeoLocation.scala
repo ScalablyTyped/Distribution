@@ -18,25 +18,19 @@ trait IpGeoLocation extends StObject {
 }
 object IpGeoLocation {
   
-  @scala.inline
-  def apply(): IpGeoLocation = {
+  inline def apply(): IpGeoLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpGeoLocation]
   }
   
-  @scala.inline
-  implicit class IpGeoLocationMutableBuilder[Self <: IpGeoLocation] (val x: Self) extends AnyVal {
+  extension [Self <: IpGeoLocation](x: Self) {
     
-    @scala.inline
-    def setLat(value: double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
+    inline def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
-    @scala.inline
-    def setLon(value: double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
+    inline def setLon(value: double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLonUndefined: Self = StObject.set(x, "lon", js.undefined)
+    inline def setLonUndefined: Self = StObject.set(x, "lon", js.undefined)
   }
 }

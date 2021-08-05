@@ -12,8 +12,7 @@ object measureCellMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasColumnKeyOnColumnResize: MeasureCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColumnKeyOnColumnResize.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasColumnKeyOnColumnResize: MeasureCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColumnKeyOnColumnResize.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait MeasureCellProps extends StObject {
     
@@ -23,20 +22,16 @@ object measureCellMod {
   }
   object MeasureCellProps {
     
-    @scala.inline
-    def apply(columnKey: Key, onColumnResize: (Key, Double) => Unit): MeasureCellProps = {
+    inline def apply(columnKey: Key, onColumnResize: (Key, Double) => Unit): MeasureCellProps = {
       val __obj = js.Dynamic.literal(columnKey = columnKey.asInstanceOf[js.Any], onColumnResize = js.Any.fromFunction2(onColumnResize))
       __obj.asInstanceOf[MeasureCellProps]
     }
     
-    @scala.inline
-    implicit class MeasureCellPropsMutableBuilder[Self <: MeasureCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: MeasureCellProps](x: Self) {
       
-      @scala.inline
-      def setColumnKey(value: Key): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+      inline def setColumnKey(value: Key): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnColumnResize(value: (Key, Double) => Unit): Self = StObject.set(x, "onColumnResize", js.Any.fromFunction2(value))
+      inline def setOnColumnResize(value: (Key, Double) => Unit): Self = StObject.set(x, "onColumnResize", js.Any.fromFunction2(value))
     }
   }
 }

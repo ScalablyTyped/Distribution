@@ -50,8 +50,7 @@ object sliderMod {
     @JSImport("carbon-components/components/slider/slider", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -75,8 +74,7 @@ object sliderMod {
   }
   object Slider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _calcValue: js.Any => NewValue,
       _changeState: (js.Any, js.Any, js.Any) => Unit,
       _updateInput: () => Unit,
@@ -90,32 +88,23 @@ object sliderMod {
       __obj.asInstanceOf[Slider]
     }
     
-    @scala.inline
-    implicit class SliderMutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
+    extension [Self <: Slider](x: Self) {
       
-      @scala.inline
-      def setGetInputProps(value: () => Max): Self = StObject.set(x, "getInputProps", js.Any.fromFunction0(value))
+      inline def setGetInputProps(value: () => Max): Self = StObject.set(x, "getInputProps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStepDown(value: () => Unit): Self = StObject.set(x, "stepDown", js.Any.fromFunction0(value))
+      inline def setStepDown(value: () => Unit): Self = StObject.set(x, "stepDown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStepUp(value: () => Unit): Self = StObject.set(x, "stepUp", js.Any.fromFunction0(value))
+      inline def setStepUp(value: () => Unit): Self = StObject.set(x, "stepUp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_calcValue(value: js.Any => NewValue): Self = StObject.set(x, "_calcValue", js.Any.fromFunction1(value))
+      inline def set_calcValue(value: js.Any => NewValue): Self = StObject.set(x, "_calcValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
+      inline def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_updateInput(value: () => Unit): Self = StObject.set(x, "_updateInput", js.Any.fromFunction0(value))
+      inline def set_updateInput(value: () => Unit): Self = StObject.set(x, "_updateInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_updatePosition(value: js.Any => Unit): Self = StObject.set(x, "_updatePosition", js.Any.fromFunction1(value))
+      inline def set_updatePosition(value: js.Any => Unit): Self = StObject.set(x, "_updatePosition", js.Any.fromFunction1(value))
     }
   }
 }

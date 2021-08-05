@@ -13,150 +13,127 @@ object fortawesomeFontawesomeSvgCoreStrings {
   sealed trait `10x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `10x`: `10x` = "10x".asInstanceOf[`10x`]
+  inline def `10x`: `10x` = "10x".asInstanceOf[`10x`]
   
   @js.native
   sealed trait `1x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `1x`: `1x` = "1x".asInstanceOf[`1x`]
+  inline def `1x`: `1x` = "1x".asInstanceOf[`1x`]
   
   @js.native
   sealed trait `2x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `2x`: `2x` = "2x".asInstanceOf[`2x`]
+  inline def `2x`: `2x` = "2x".asInstanceOf[`2x`]
   
   @js.native
   sealed trait `3x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `3x`: `3x` = "3x".asInstanceOf[`3x`]
+  inline def `3x`: `3x` = "3x".asInstanceOf[`3x`]
   
   @js.native
   sealed trait `4x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `4x`: `4x` = "4x".asInstanceOf[`4x`]
+  inline def `4x`: `4x` = "4x".asInstanceOf[`4x`]
   
   @js.native
   sealed trait `5x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `5x`: `5x` = "5x".asInstanceOf[`5x`]
+  inline def `5x`: `5x` = "5x".asInstanceOf[`5x`]
   
   @js.native
   sealed trait `6x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `6x`: `6x` = "6x".asInstanceOf[`6x`]
+  inline def `6x`: `6x` = "6x".asInstanceOf[`6x`]
   
   @js.native
   sealed trait `7x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `7x`: `7x` = "7x".asInstanceOf[`7x`]
+  inline def `7x`: `7x` = "7x".asInstanceOf[`7x`]
   
   @js.native
   sealed trait `8x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `8x`: `8x` = "8x".asInstanceOf[`8x`]
+  inline def `8x`: `8x` = "8x".asInstanceOf[`8x`]
   
   @js.native
   sealed trait `9x`
     extends StObject
        with SizeProp
-  @scala.inline
-  def `9x`: `9x` = "9x".asInstanceOf[`9x`]
+  inline def `9x`: `9x` = "9x".asInstanceOf[`9x`]
   
   @js.native
   sealed trait both
     extends StObject
        with FlipProp
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait counter extends StObject
-  @scala.inline
-  def counter: counter = "counter".asInstanceOf[counter]
+  inline def counter: counter = "counter".asInstanceOf[counter]
   
   @js.native
   sealed trait horizontal
     extends StObject
        with FlipProp
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait icon extends StObject
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
+  inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
   sealed trait layer extends StObject
-  @scala.inline
-  def layer: layer = "layer".asInstanceOf[layer]
+  inline def layer: layer = "layer".asInstanceOf[layer]
   
   @js.native
   sealed trait left
     extends StObject
        with PullProp
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait lg
     extends StObject
        with SizeProp
-  @scala.inline
-  def lg: lg = "lg".asInstanceOf[lg]
+  inline def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
   sealed trait nest extends StObject
-  @scala.inline
-  def nest: nest = "nest".asInstanceOf[nest]
+  inline def nest: nest = "nest".asInstanceOf[nest]
   
   @js.native
   sealed trait right
     extends StObject
        with PullProp
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait sm
     extends StObject
        with SizeProp
-  @scala.inline
-  def sm: sm = "sm".asInstanceOf[sm]
+  inline def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait vertical
     extends StObject
        with FlipProp
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
   sealed trait xs
     extends StObject
        with SizeProp
-  @scala.inline
-  def xs: xs = "xs".asInstanceOf[xs]
+  inline def xs: xs = "xs".asInstanceOf[xs]
 }

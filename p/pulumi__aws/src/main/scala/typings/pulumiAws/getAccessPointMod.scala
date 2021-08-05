@@ -14,10 +14,8 @@ object getAccessPointMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAccessPoint(args: GetAccessPointArgs): js.Promise[GetAccessPointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAccessPointResult]]
-  @scala.inline
-  def getAccessPoint(args: GetAccessPointArgs, opts: InvokeOptions): js.Promise[GetAccessPointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAccessPointResult]]
+  inline def getAccessPoint(args: GetAccessPointArgs): js.Promise[GetAccessPointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAccessPointResult]]
+  inline def getAccessPoint(args: GetAccessPointArgs, opts: InvokeOptions): js.Promise[GetAccessPointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAccessPointResult]]
   
   trait GetAccessPointArgs extends StObject {
     
@@ -33,23 +31,18 @@ object getAccessPointMod {
   }
   object GetAccessPointArgs {
     
-    @scala.inline
-    def apply(accessPointId: String): GetAccessPointArgs = {
+    inline def apply(accessPointId: String): GetAccessPointArgs = {
       val __obj = js.Dynamic.literal(accessPointId = accessPointId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAccessPointArgs]
     }
     
-    @scala.inline
-    implicit class GetAccessPointArgsMutableBuilder[Self <: GetAccessPointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetAccessPointArgs](x: Self) {
       
-      @scala.inline
-      def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
+      inline def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -93,8 +86,7 @@ object getAccessPointMod {
   }
   object GetAccessPointResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessPointId: String,
       arn: String,
       fileSystemArn: String,
@@ -108,44 +100,31 @@ object getAccessPointMod {
       __obj.asInstanceOf[GetAccessPointResult]
     }
     
-    @scala.inline
-    implicit class GetAccessPointResultMutableBuilder[Self <: GetAccessPointResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetAccessPointResult](x: Self) {
       
-      @scala.inline
-      def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
+      inline def setAccessPointId(value: String): Self = StObject.set(x, "accessPointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemArn(value: String): Self = StObject.set(x, "fileSystemArn", value.asInstanceOf[js.Any])
+      inline def setFileSystemArn(value: String): Self = StObject.set(x, "fileSystemArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosixUsers(value: js.Array[GetAccessPointPosixUser]): Self = StObject.set(x, "posixUsers", value.asInstanceOf[js.Any])
+      inline def setPosixUsers(value: js.Array[GetAccessPointPosixUser]): Self = StObject.set(x, "posixUsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosixUsersVarargs(value: GetAccessPointPosixUser*): Self = StObject.set(x, "posixUsers", js.Array(value :_*))
+      inline def setPosixUsersVarargs(value: GetAccessPointPosixUser*): Self = StObject.set(x, "posixUsers", js.Array(value :_*))
       
-      @scala.inline
-      def setRootDirectories(value: js.Array[GetAccessPointRootDirectory]): Self = StObject.set(x, "rootDirectories", value.asInstanceOf[js.Any])
+      inline def setRootDirectories(value: js.Array[GetAccessPointRootDirectory]): Self = StObject.set(x, "rootDirectories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDirectoriesVarargs(value: GetAccessPointRootDirectory*): Self = StObject.set(x, "rootDirectories", js.Array(value :_*))
+      inline def setRootDirectoriesVarargs(value: GetAccessPointRootDirectory*): Self = StObject.set(x, "rootDirectories", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

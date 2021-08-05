@@ -18,28 +18,21 @@ trait GetRelationalDatabaseBlueprintsResult extends StObject {
 }
 object GetRelationalDatabaseBlueprintsResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseBlueprintsResult = {
+  inline def apply(): GetRelationalDatabaseBlueprintsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseBlueprintsResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseBlueprintsResultMutableBuilder[Self <: GetRelationalDatabaseBlueprintsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseBlueprintsResult](x: Self) {
     
-    @scala.inline
-    def setBlueprints(value: RelationalDatabaseBlueprintList): Self = StObject.set(x, "blueprints", value.asInstanceOf[js.Any])
+    inline def setBlueprints(value: RelationalDatabaseBlueprintList): Self = StObject.set(x, "blueprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlueprintsUndefined: Self = StObject.set(x, "blueprints", js.undefined)
+    inline def setBlueprintsUndefined: Self = StObject.set(x, "blueprints", js.undefined)
     
-    @scala.inline
-    def setBlueprintsVarargs(value: RelationalDatabaseBlueprint*): Self = StObject.set(x, "blueprints", js.Array(value :_*))
+    inline def setBlueprintsVarargs(value: RelationalDatabaseBlueprint*): Self = StObject.set(x, "blueprints", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

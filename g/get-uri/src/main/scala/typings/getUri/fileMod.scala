@@ -16,8 +16,7 @@ object fileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasUri: UrlWithStringQuery, opts: FileOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  inline def default(hasUri: UrlWithStringQuery, opts: FileOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
   
   type FileOptions = GetUriOptions & ReadStreamOptions & Cache
   

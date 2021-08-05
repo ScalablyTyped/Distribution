@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThemeColor extends StObject
 object ThemeColor {
   
-  @scala.inline
-  def dark: typings.reactEmailEditor.reactEmailEditorStrings.dark = "dark".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.dark]
+  inline def dark: typings.reactEmailEditor.reactEmailEditorStrings.dark = "dark".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.dark]
   
-  @scala.inline
-  def light: typings.reactEmailEditor.reactEmailEditorStrings.light = "light".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.light]
+  inline def light: typings.reactEmailEditor.reactEmailEditorStrings.light = "light".asInstanceOf[typings.reactEmailEditor.reactEmailEditorStrings.light]
 }

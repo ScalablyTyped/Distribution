@@ -18,22 +18,17 @@ trait EntityDetails extends StObject {
 }
 object EntityDetails {
   
-  @scala.inline
-  def apply(EntityInfo: EntityInfo): EntityDetails = {
+  inline def apply(EntityInfo: EntityInfo): EntityDetails = {
     val __obj = js.Dynamic.literal(EntityInfo = EntityInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityDetails]
   }
   
-  @scala.inline
-  implicit class EntityDetailsMutableBuilder[Self <: EntityDetails] (val x: Self) extends AnyVal {
+  extension [Self <: EntityDetails](x: Self) {
     
-    @scala.inline
-    def setEntityInfo(value: EntityInfo): Self = StObject.set(x, "EntityInfo", value.asInstanceOf[js.Any])
+    inline def setEntityInfo(value: EntityInfo): Self = StObject.set(x, "EntityInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAuthenticated(value: dateType): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
+    inline def setLastAuthenticated(value: dateType): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAuthenticatedUndefined: Self = StObject.set(x, "LastAuthenticated", js.undefined)
+    inline def setLastAuthenticatedUndefined: Self = StObject.set(x, "LastAuthenticated", js.undefined)
   }
 }

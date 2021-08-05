@@ -15,25 +15,19 @@ trait FileSystemHandlePermissionDescriptor extends StObject {
 }
 object FileSystemHandlePermissionDescriptor {
   
-  @scala.inline
-  def apply(): FileSystemHandlePermissionDescriptor = {
+  inline def apply(): FileSystemHandlePermissionDescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSystemHandlePermissionDescriptor]
   }
   
-  @scala.inline
-  implicit class FileSystemHandlePermissionDescriptorMutableBuilder[Self <: FileSystemHandlePermissionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemHandlePermissionDescriptor](x: Self) {
     
-    @scala.inline
-    def setMode(value: FileSystemPermissionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: FileSystemPermissionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

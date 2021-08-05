@@ -23,25 +23,19 @@ trait RegionLocationCfg
 }
 object RegionLocationCfg {
   
-  @scala.inline
-  def apply(): RegionLocationCfg = {
+  inline def apply(): RegionLocationCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegionLocationCfg]
   }
   
-  @scala.inline
-  implicit class RegionLocationCfgMutableBuilder[Self <: RegionLocationCfg] (val x: Self) extends AnyVal {
+  extension [Self <: RegionLocationCfg](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

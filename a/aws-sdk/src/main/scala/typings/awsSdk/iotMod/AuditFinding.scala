@@ -63,82 +63,57 @@ trait AuditFinding extends StObject {
 }
 object AuditFinding {
   
-  @scala.inline
-  def apply(): AuditFinding = {
+  inline def apply(): AuditFinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditFinding]
   }
   
-  @scala.inline
-  implicit class AuditFindingMutableBuilder[Self <: AuditFinding] (val x: Self) extends AnyVal {
+  extension [Self <: AuditFinding](x: Self) {
     
-    @scala.inline
-    def setCheckName(value: AuditCheckName): Self = StObject.set(x, "checkName", value.asInstanceOf[js.Any])
+    inline def setCheckName(value: AuditCheckName): Self = StObject.set(x, "checkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckNameUndefined: Self = StObject.set(x, "checkName", js.undefined)
+    inline def setCheckNameUndefined: Self = StObject.set(x, "checkName", js.undefined)
     
-    @scala.inline
-    def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
+    inline def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingIdUndefined: Self = StObject.set(x, "findingId", js.undefined)
+    inline def setFindingIdUndefined: Self = StObject.set(x, "findingId", js.undefined)
     
-    @scala.inline
-    def setFindingTime(value: Timestamp): Self = StObject.set(x, "findingTime", value.asInstanceOf[js.Any])
+    inline def setFindingTime(value: Timestamp): Self = StObject.set(x, "findingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingTimeUndefined: Self = StObject.set(x, "findingTime", js.undefined)
+    inline def setFindingTimeUndefined: Self = StObject.set(x, "findingTime", js.undefined)
     
-    @scala.inline
-    def setIsSuppressed(value: IsSuppressed): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
+    inline def setIsSuppressed(value: IsSuppressed): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuppressedUndefined: Self = StObject.set(x, "isSuppressed", js.undefined)
+    inline def setIsSuppressedUndefined: Self = StObject.set(x, "isSuppressed", js.undefined)
     
-    @scala.inline
-    def setNonCompliantResource(value: NonCompliantResource): Self = StObject.set(x, "nonCompliantResource", value.asInstanceOf[js.Any])
+    inline def setNonCompliantResource(value: NonCompliantResource): Self = StObject.set(x, "nonCompliantResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCompliantResourceUndefined: Self = StObject.set(x, "nonCompliantResource", js.undefined)
+    inline def setNonCompliantResourceUndefined: Self = StObject.set(x, "nonCompliantResource", js.undefined)
     
-    @scala.inline
-    def setReasonForNonCompliance(value: ReasonForNonCompliance): Self = StObject.set(x, "reasonForNonCompliance", value.asInstanceOf[js.Any])
+    inline def setReasonForNonCompliance(value: ReasonForNonCompliance): Self = StObject.set(x, "reasonForNonCompliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonForNonComplianceCode(value: ReasonForNonComplianceCode): Self = StObject.set(x, "reasonForNonComplianceCode", value.asInstanceOf[js.Any])
+    inline def setReasonForNonComplianceCode(value: ReasonForNonComplianceCode): Self = StObject.set(x, "reasonForNonComplianceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonForNonComplianceCodeUndefined: Self = StObject.set(x, "reasonForNonComplianceCode", js.undefined)
+    inline def setReasonForNonComplianceCodeUndefined: Self = StObject.set(x, "reasonForNonComplianceCode", js.undefined)
     
-    @scala.inline
-    def setReasonForNonComplianceUndefined: Self = StObject.set(x, "reasonForNonCompliance", js.undefined)
+    inline def setReasonForNonComplianceUndefined: Self = StObject.set(x, "reasonForNonCompliance", js.undefined)
     
-    @scala.inline
-    def setRelatedResources(value: RelatedResources): Self = StObject.set(x, "relatedResources", value.asInstanceOf[js.Any])
+    inline def setRelatedResources(value: RelatedResources): Self = StObject.set(x, "relatedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedResourcesUndefined: Self = StObject.set(x, "relatedResources", js.undefined)
+    inline def setRelatedResourcesUndefined: Self = StObject.set(x, "relatedResources", js.undefined)
     
-    @scala.inline
-    def setRelatedResourcesVarargs(value: RelatedResource*): Self = StObject.set(x, "relatedResources", js.Array(value :_*))
+    inline def setRelatedResourcesVarargs(value: RelatedResource*): Self = StObject.set(x, "relatedResources", js.Array(value :_*))
     
-    @scala.inline
-    def setSeverity(value: AuditFindingSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: AuditFindingSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    @scala.inline
-    def setTaskStartTime(value: Timestamp): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
+    inline def setTaskStartTime(value: Timestamp): Self = StObject.set(x, "taskStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStartTimeUndefined: Self = StObject.set(x, "taskStartTime", js.undefined)
+    inline def setTaskStartTimeUndefined: Self = StObject.set(x, "taskStartTime", js.undefined)
   }
 }

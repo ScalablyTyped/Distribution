@@ -11,16 +11,13 @@ trait PickImplkeyboardShortcuts extends StObject {
 }
 object PickImplkeyboardShortcuts {
   
-  @scala.inline
-  def apply(keyboardShortcuts: Boolean): PickImplkeyboardShortcuts = {
+  inline def apply(keyboardShortcuts: Boolean): PickImplkeyboardShortcuts = {
     val __obj = js.Dynamic.literal(keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplkeyboardShortcuts]
   }
   
-  @scala.inline
-  implicit class PickImplkeyboardShortcutsMutableBuilder[Self <: PickImplkeyboardShortcuts] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplkeyboardShortcuts](x: Self) {
     
-    @scala.inline
-    def setKeyboardShortcuts(value: Boolean): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
+    inline def setKeyboardShortcuts(value: Boolean): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
   }
 }

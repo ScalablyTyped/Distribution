@@ -37,8 +37,7 @@ trait KmlOverlay
 }
 object KmlOverlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -94,22 +93,16 @@ object KmlOverlay {
     __obj.asInstanceOf[KmlOverlay]
   }
   
-  @scala.inline
-  implicit class KmlOverlayMutableBuilder[Self <: KmlOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: KmlOverlay](x: Self) {
     
-    @scala.inline
-    def setGetColor(value: () => KmlColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
+    inline def setGetColor(value: () => KmlColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDrawOrder(value: () => Double): Self = StObject.set(x, "getDrawOrder", js.Any.fromFunction0(value))
+    inline def setGetDrawOrder(value: () => Double): Self = StObject.set(x, "getDrawOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIcon(value: () => KmlIcon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
+    inline def setGetIcon(value: () => KmlIcon): Self = StObject.set(x, "getIcon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDrawOrder(value: Double => Unit): Self = StObject.set(x, "setDrawOrder", js.Any.fromFunction1(value))
+    inline def setSetDrawOrder(value: Double => Unit): Self = StObject.set(x, "setDrawOrder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIcon(value: KmlIcon => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: KmlIcon => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
   }
 }

@@ -41,8 +41,7 @@ trait MapImageLayerFetchImageOptions
 }
 object MapImageLayerFetchImageOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -51,31 +50,22 @@ object MapImageLayerFetchImageOptions {
     __obj.asInstanceOf[MapImageLayerFetchImageOptions]
   }
   
-  @scala.inline
-  implicit class MapImageLayerFetchImageOptionsMutableBuilder[Self <: MapImageLayerFetchImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapImageLayerFetchImageOptions](x: Self) {
     
-    @scala.inline
-    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+    inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+    inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setTimeExtent(value: js.Any): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: js.Any): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }
 }

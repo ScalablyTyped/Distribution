@@ -14,22 +14,17 @@ trait Target extends StObject {
 }
 object Target {
   
-  @scala.inline
-  def apply(originalEvent: typings.std.Event, target: Id, value: js.Any): Target = {
+  inline def apply(originalEvent: typings.std.Event, target: Id, value: js.Any): Target = {
     val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target]
   }
   
-  @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+  extension [Self <: Target](x: Self) {
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Id): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Id): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

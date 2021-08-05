@@ -187,8 +187,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TextCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     BorderDistance: Double,
     BottomBorder: BorderLine,
@@ -396,88 +395,60 @@ object TextCursor {
     __obj.asInstanceOf[TextCursor]
   }
   
-  @scala.inline
-  implicit class TextCursorMutableBuilder[Self <: TextCursor] (val x: Self) extends AnyVal {
+  extension [Self <: TextCursor](x: Self) {
     
-    @scala.inline
-    def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
+    inline def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapseToStart(value: () => Unit): Self = StObject.set(x, "collapseToStart", js.Any.fromFunction0(value))
+    inline def setCollapseToStart(value: () => Unit): Self = StObject.set(x, "collapseToStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
+    inline def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
+    inline def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGotoEnd(value: Boolean => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction1(value))
+    inline def setGotoEnd(value: Boolean => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoEndOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfParagraph", js.Any.fromFunction1(value))
+    inline def setGotoEndOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoEndOfSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfSentence", js.Any.fromFunction1(value))
+    inline def setGotoEndOfSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfSentence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoEndOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfWord", js.Any.fromFunction1(value))
+    inline def setGotoEndOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfWord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoNextParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextParagraph", js.Any.fromFunction1(value))
+    inline def setGotoNextParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoNextSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextSentence", js.Any.fromFunction1(value))
+    inline def setGotoNextSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextSentence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoNextWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextWord", js.Any.fromFunction1(value))
+    inline def setGotoNextWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextWord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoPreviousParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousParagraph", js.Any.fromFunction1(value))
+    inline def setGotoPreviousParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoPreviousSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousSentence", js.Any.fromFunction1(value))
+    inline def setGotoPreviousSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousSentence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoPreviousWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousWord", js.Any.fromFunction1(value))
+    inline def setGotoPreviousWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousWord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoRange(value: (XTextRange, Boolean) => Unit): Self = StObject.set(x, "gotoRange", js.Any.fromFunction2(value))
+    inline def setGotoRange(value: (XTextRange, Boolean) => Unit): Self = StObject.set(x, "gotoRange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGotoStart(value: Boolean => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction1(value))
+    inline def setGotoStart(value: Boolean => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoStartOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfParagraph", js.Any.fromFunction1(value))
+    inline def setGotoStartOfParagraph(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoStartOfSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfSentence", js.Any.fromFunction1(value))
+    inline def setGotoStartOfSentence(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfSentence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGotoStartOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfWord", js.Any.fromFunction1(value))
+    inline def setGotoStartOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfWord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
+    inline def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEndOfParagraph(value: () => Boolean): Self = StObject.set(x, "isEndOfParagraph", js.Any.fromFunction0(value))
+    inline def setIsEndOfParagraph(value: () => Boolean): Self = StObject.set(x, "isEndOfParagraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEndOfSentence(value: () => Boolean): Self = StObject.set(x, "isEndOfSentence", js.Any.fromFunction0(value))
+    inline def setIsEndOfSentence(value: () => Boolean): Self = StObject.set(x, "isEndOfSentence", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEndOfWord(value: () => Boolean): Self = StObject.set(x, "isEndOfWord", js.Any.fromFunction0(value))
+    inline def setIsEndOfWord(value: () => Boolean): Self = StObject.set(x, "isEndOfWord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStartOfParagraph(value: () => Boolean): Self = StObject.set(x, "isStartOfParagraph", js.Any.fromFunction0(value))
+    inline def setIsStartOfParagraph(value: () => Boolean): Self = StObject.set(x, "isStartOfParagraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStartOfSentence(value: () => Boolean): Self = StObject.set(x, "isStartOfSentence", js.Any.fromFunction0(value))
+    inline def setIsStartOfSentence(value: () => Boolean): Self = StObject.set(x, "isStartOfSentence", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStartOfWord(value: () => Boolean): Self = StObject.set(x, "isStartOfWord", js.Any.fromFunction0(value))
+    inline def setIsStartOfWord(value: () => Boolean): Self = StObject.set(x, "isStartOfWord", js.Any.fromFunction0(value))
   }
 }

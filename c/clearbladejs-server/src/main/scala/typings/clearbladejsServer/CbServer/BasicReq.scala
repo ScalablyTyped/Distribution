@@ -23,8 +23,7 @@ trait BasicReq extends StObject {
 }
 object BasicReq {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isLogging: Boolean,
     params: StringDictionary[js.Any],
     systemKey: String,
@@ -37,28 +36,20 @@ object BasicReq {
     __obj.asInstanceOf[BasicReq]
   }
   
-  @scala.inline
-  implicit class BasicReqMutableBuilder[Self <: BasicReq] (val x: Self) extends AnyVal {
+  extension [Self <: BasicReq](x: Self) {
     
-    @scala.inline
-    def setIsLogging(value: Boolean): Self = StObject.set(x, "isLogging", value.asInstanceOf[js.Any])
+    inline def setIsLogging(value: Boolean): Self = StObject.set(x, "isLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
+    inline def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
+    inline def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserid(value: String): Self = StObject.set(x, "userid", value.asInstanceOf[js.Any])
+    inline def setUserid(value: String): Self = StObject.set(x, "userid", value.asInstanceOf[js.Any])
   }
 }

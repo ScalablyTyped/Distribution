@@ -13,16 +13,13 @@ trait CreateAccessKeyResponse extends StObject {
 }
 object CreateAccessKeyResponse {
   
-  @scala.inline
-  def apply(AccessKey: AccessKey): CreateAccessKeyResponse = {
+  inline def apply(AccessKey: AccessKey): CreateAccessKeyResponse = {
     val __obj = js.Dynamic.literal(AccessKey = AccessKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccessKeyResponse]
   }
   
-  @scala.inline
-  implicit class CreateAccessKeyResponseMutableBuilder[Self <: CreateAccessKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccessKeyResponse](x: Self) {
     
-    @scala.inline
-    def setAccessKey(value: AccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
+    inline def setAccessKey(value: AccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
   }
 }

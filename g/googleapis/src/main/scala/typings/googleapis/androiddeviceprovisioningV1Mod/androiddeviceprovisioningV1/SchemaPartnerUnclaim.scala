@@ -26,31 +26,23 @@ trait SchemaPartnerUnclaim extends StObject {
 }
 object SchemaPartnerUnclaim {
   
-  @scala.inline
-  def apply(): SchemaPartnerUnclaim = {
+  inline def apply(): SchemaPartnerUnclaim = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPartnerUnclaim]
   }
   
-  @scala.inline
-  implicit class SchemaPartnerUnclaimMutableBuilder[Self <: SchemaPartnerUnclaim] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPartnerUnclaim](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
+    inline def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
     
-    @scala.inline
-    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
+    inline def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
+    inline def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }
 }

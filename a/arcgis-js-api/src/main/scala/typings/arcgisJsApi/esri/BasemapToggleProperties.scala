@@ -45,43 +45,31 @@ trait BasemapToggleProperties
 }
 object BasemapToggleProperties {
   
-  @scala.inline
-  def apply(): BasemapToggleProperties = {
+  inline def apply(): BasemapToggleProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BasemapToggleProperties]
   }
   
-  @scala.inline
-  implicit class BasemapTogglePropertiesMutableBuilder[Self <: BasemapToggleProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BasemapToggleProperties](x: Self) {
     
-    @scala.inline
-    def setNextBasemap(value: BasemapProperties | String): Self = StObject.set(x, "nextBasemap", value.asInstanceOf[js.Any])
+    inline def setNextBasemap(value: BasemapProperties | String): Self = StObject.set(x, "nextBasemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextBasemapUndefined: Self = StObject.set(x, "nextBasemap", js.undefined)
+    inline def setNextBasemapUndefined: Self = StObject.set(x, "nextBasemap", js.undefined)
     
-    @scala.inline
-    def setTitleVisible(value: Boolean): Self = StObject.set(x, "titleVisible", value.asInstanceOf[js.Any])
+    inline def setTitleVisible(value: Boolean): Self = StObject.set(x, "titleVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleVisibleUndefined: Self = StObject.set(x, "titleVisible", js.undefined)
+    inline def setTitleVisibleUndefined: Self = StObject.set(x, "titleVisible", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: BasemapToggleViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: BasemapToggleViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setVisibleElements(value: BasemapToggleVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    inline def setVisibleElements(value: BasemapToggleVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

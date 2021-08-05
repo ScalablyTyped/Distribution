@@ -40,8 +40,7 @@ trait PluginShape
 }
 object PluginShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GluePoints: XIndexContainer,
     Hyperlink: String,
     InteropGrabBag: SafeArray[PropertyValue],
@@ -95,16 +94,12 @@ object PluginShape {
     __obj.asInstanceOf[PluginShape]
   }
   
-  @scala.inline
-  implicit class PluginShapeMutableBuilder[Self <: PluginShape] (val x: Self) extends AnyVal {
+  extension [Self <: PluginShape](x: Self) {
     
-    @scala.inline
-    def setPluginCommands(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PluginCommands", value.asInstanceOf[js.Any])
+    inline def setPluginCommands(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PluginCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginMimeType(value: String): Self = StObject.set(x, "PluginMimeType", value.asInstanceOf[js.Any])
+    inline def setPluginMimeType(value: String): Self = StObject.set(x, "PluginMimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginURL(value: String): Self = StObject.set(x, "PluginURL", value.asInstanceOf[js.Any])
+    inline def setPluginURL(value: String): Self = StObject.set(x, "PluginURL", value.asInstanceOf[js.Any])
   }
 }

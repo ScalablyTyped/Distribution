@@ -18,25 +18,19 @@ trait FaultStatistics extends StObject {
 }
 object FaultStatistics {
   
-  @scala.inline
-  def apply(): FaultStatistics = {
+  inline def apply(): FaultStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FaultStatistics]
   }
   
-  @scala.inline
-  implicit class FaultStatisticsMutableBuilder[Self <: FaultStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: FaultStatistics](x: Self) {
     
-    @scala.inline
-    def setOtherCount(value: NullableLong): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
+    inline def setOtherCount(value: NullableLong): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
+    inline def setOtherCountUndefined: Self = StObject.set(x, "OtherCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: NullableLong): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

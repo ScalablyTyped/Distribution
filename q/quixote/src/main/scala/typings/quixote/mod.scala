@@ -29,19 +29,16 @@ object mod {
   }
   object Quixote {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createFrame: (QuixoteFrameOptions, js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]) => QFrame
     ): typings.quixote.mod.Quixote = {
       val __obj = js.Dynamic.literal(createFrame = js.Any.fromFunction2(createFrame))
       __obj.asInstanceOf[typings.quixote.mod.Quixote]
     }
     
-    @scala.inline
-    implicit class QuixoteMutableBuilder[Self <: typings.quixote.mod.Quixote] (val x: Self) extends AnyVal {
+    extension [Self <: typings.quixote.mod.Quixote](x: Self) {
       
-      @scala.inline
-      def setCreateFrame(
+      inline def setCreateFrame(
         value: (QuixoteFrameOptions, js.Function2[/* err */ Error, /* loadedFrame */ QFrame, Unit]) => QFrame
       ): Self = StObject.set(x, "createFrame", js.Any.fromFunction2(value))
     }

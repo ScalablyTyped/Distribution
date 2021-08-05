@@ -12,17 +12,14 @@ object anon {
   }
   object Dirty {
     
-    @scala.inline
-    def apply[TKey](dirty: TKey => Unit): Dirty[TKey] = {
+    inline def apply[TKey](dirty: TKey => Unit): Dirty[TKey] = {
       val __obj = js.Dynamic.literal(dirty = js.Any.fromFunction1(dirty))
       __obj.asInstanceOf[Dirty[TKey]]
     }
     
-    @scala.inline
-    implicit class DirtyMutableBuilder[Self <: Dirty[?], TKey] (val x: Self & Dirty[TKey]) extends AnyVal {
+    extension [Self <: Dirty[?], TKey](x: Self & Dirty[TKey]) {
       
-      @scala.inline
-      def setDirty(value: TKey => Unit): Self = StObject.set(x, "dirty", js.Any.fromFunction1(value))
+      inline def setDirty(value: TKey => Unit): Self = StObject.set(x, "dirty", js.Any.fromFunction1(value))
     }
   }
   
@@ -42,23 +39,18 @@ object anon {
   }
   object Forget {
     
-    @scala.inline
-    def apply[TKeyArgs /* <: js.Array[js.Any] */, TResult](dirty: TKeyArgs => Unit, forget: TKeyArgs => Boolean, peek: TKeyArgs => js.UndefOr[TResult]): Forget[TKeyArgs, TResult] = {
+    inline def apply[TKeyArgs /* <: js.Array[js.Any] */, TResult](dirty: TKeyArgs => Unit, forget: TKeyArgs => Boolean, peek: TKeyArgs => js.UndefOr[TResult]): Forget[TKeyArgs, TResult] = {
       val __obj = js.Dynamic.literal(dirty = js.Any.fromFunction1(dirty), forget = js.Any.fromFunction1(forget), peek = js.Any.fromFunction1(peek))
       __obj.asInstanceOf[Forget[TKeyArgs, TResult]]
     }
     
-    @scala.inline
-    implicit class ForgetMutableBuilder[Self <: Forget[?, ?], TKeyArgs /* <: js.Array[js.Any] */, TResult] (val x: Self & (Forget[TKeyArgs, TResult])) extends AnyVal {
+    extension [Self <: Forget[?, ?], TKeyArgs /* <: js.Array[js.Any] */, TResult](x: Self & (Forget[TKeyArgs, TResult])) {
       
-      @scala.inline
-      def setDirty(value: TKeyArgs => Unit): Self = StObject.set(x, "dirty", js.Any.fromFunction1(value))
+      inline def setDirty(value: TKeyArgs => Unit): Self = StObject.set(x, "dirty", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForget(value: TKeyArgs => Boolean): Self = StObject.set(x, "forget", js.Any.fromFunction1(value))
+      inline def setForget(value: TKeyArgs => Boolean): Self = StObject.set(x, "forget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPeek(value: TKeyArgs => js.UndefOr[TResult]): Self = StObject.set(x, "peek", js.Any.fromFunction1(value))
+      inline def setPeek(value: TKeyArgs => js.UndefOr[TResult]): Self = StObject.set(x, "peek", js.Any.fromFunction1(value))
     }
   }
   
@@ -68,19 +60,16 @@ object anon {
   }
   object Subscribe {
     
-    @scala.inline
-    def apply[TKey](
+    inline def apply[TKey](
       subscribe: /* import warning: importer.ImportType#apply Failed type conversion: optimism.optimism.OptimisticWrapOptions<[TKey], [TKey]>['subscribe'] */ js.Any
     ): Subscribe[TKey] = {
       val __obj = js.Dynamic.literal(subscribe = subscribe.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscribe[TKey]]
     }
     
-    @scala.inline
-    implicit class SubscribeMutableBuilder[Self <: Subscribe[?], TKey] (val x: Self & Subscribe[TKey]) extends AnyVal {
+    extension [Self <: Subscribe[?], TKey](x: Self & Subscribe[TKey]) {
       
-      @scala.inline
-      def setSubscribe(
+      inline def setSubscribe(
         value: /* import warning: importer.ImportType#apply Failed type conversion: optimism.optimism.OptimisticWrapOptions<[TKey], [TKey]>['subscribe'] */ js.Any
       ): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     }

@@ -14,19 +14,15 @@ trait EditUpdateCellParams
 }
 object EditUpdateCellParams {
   
-  @scala.inline
-  def apply(columnId: Double, newValue: String, ownerUri: String, rowId: Double): EditUpdateCellParams = {
+  inline def apply(columnId: Double, newValue: String, ownerUri: String, rowId: Double): EditUpdateCellParams = {
     val __obj = js.Dynamic.literal(columnId = columnId.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], rowId = rowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditUpdateCellParams]
   }
   
-  @scala.inline
-  implicit class EditUpdateCellParamsMutableBuilder[Self <: EditUpdateCellParams] (val x: Self) extends AnyVal {
+  extension [Self <: EditUpdateCellParams](x: Self) {
     
-    @scala.inline
-    def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+    inline def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }
 }

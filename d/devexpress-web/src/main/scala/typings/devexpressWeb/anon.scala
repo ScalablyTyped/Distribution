@@ -14,26 +14,20 @@ object anon {
   }
   object ModifyPdfDocument {
     
-    @scala.inline
-    def apply(): ModifyPdfDocument = {
+    inline def apply(): ModifyPdfDocument = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModifyPdfDocument]
     }
     
-    @scala.inline
-    implicit class ModifyPdfDocumentMutableBuilder[Self <: ModifyPdfDocument] (val x: Self) extends AnyVal {
+    extension [Self <: ModifyPdfDocument](x: Self) {
       
-      @scala.inline
-      def setModifyPdfDocument(value: /* pdfDocument */ js.Any => Unit): Self = StObject.set(x, "modifyPdfDocument", js.Any.fromFunction1(value))
+      inline def setModifyPdfDocument(value: /* pdfDocument */ js.Any => Unit): Self = StObject.set(x, "modifyPdfDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setModifyPdfDocumentUndefined: Self = StObject.set(x, "modifyPdfDocument", js.undefined)
+      inline def setModifyPdfDocumentUndefined: Self = StObject.set(x, "modifyPdfDocument", js.undefined)
       
-      @scala.inline
-      def setModifyPdfPage(value: /* pdfDocument */ js.Any => Unit): Self = StObject.set(x, "modifyPdfPage", js.Any.fromFunction1(value))
+      inline def setModifyPdfPage(value: /* pdfDocument */ js.Any => Unit): Self = StObject.set(x, "modifyPdfPage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setModifyPdfPageUndefined: Self = StObject.set(x, "modifyPdfPage", js.undefined)
+      inline def setModifyPdfPageUndefined: Self = StObject.set(x, "modifyPdfPage", js.undefined)
     }
   }
 }

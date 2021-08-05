@@ -41,8 +41,7 @@ object domainMod {
   }
   object Domain {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DKIMVerified: Boolean,
       ID: Double,
       Name: String,
@@ -54,26 +53,19 @@ object domainMod {
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setDKIMVerified(value: Boolean): Self = StObject.set(x, "DKIMVerified", value.asInstanceOf[js.Any])
+      inline def setDKIMVerified(value: Boolean): Self = StObject.set(x, "DKIMVerified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnPathDomainVerified(value: Boolean): Self = StObject.set(x, "ReturnPathDomainVerified", value.asInstanceOf[js.Any])
+      inline def setReturnPathDomainVerified(value: Boolean): Self = StObject.set(x, "ReturnPathDomainVerified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPFVerified(value: Boolean): Self = StObject.set(x, "SPFVerified", value.asInstanceOf[js.Any])
+      inline def setSPFVerified(value: Boolean): Self = StObject.set(x, "SPFVerified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakDKIM(value: Boolean): Self = StObject.set(x, "WeakDKIM", value.asInstanceOf[js.Any])
+      inline def setWeakDKIM(value: Boolean): Self = StObject.set(x, "WeakDKIM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,8 +99,7 @@ object domainMod {
   }
   object DomainDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DKIMHost: String,
       DKIMPendingHost: String,
       DKIMPendingTextValue: String,
@@ -132,44 +123,31 @@ object domainMod {
       __obj.asInstanceOf[DomainDetails]
     }
     
-    @scala.inline
-    implicit class DomainDetailsMutableBuilder[Self <: DomainDetails] (val x: Self) extends AnyVal {
+    extension [Self <: DomainDetails](x: Self) {
       
-      @scala.inline
-      def setDKIMHost(value: String): Self = StObject.set(x, "DKIMHost", value.asInstanceOf[js.Any])
+      inline def setDKIMHost(value: String): Self = StObject.set(x, "DKIMHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKIMPendingHost(value: String): Self = StObject.set(x, "DKIMPendingHost", value.asInstanceOf[js.Any])
+      inline def setDKIMPendingHost(value: String): Self = StObject.set(x, "DKIMPendingHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKIMPendingTextValue(value: String): Self = StObject.set(x, "DKIMPendingTextValue", value.asInstanceOf[js.Any])
+      inline def setDKIMPendingTextValue(value: String): Self = StObject.set(x, "DKIMPendingTextValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKIMRevokedHost(value: String): Self = StObject.set(x, "DKIMRevokedHost", value.asInstanceOf[js.Any])
+      inline def setDKIMRevokedHost(value: String): Self = StObject.set(x, "DKIMRevokedHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKIMRevokedTextValue(value: String): Self = StObject.set(x, "DKIMRevokedTextValue", value.asInstanceOf[js.Any])
+      inline def setDKIMRevokedTextValue(value: String): Self = StObject.set(x, "DKIMRevokedTextValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKIMTextValue(value: String): Self = StObject.set(x, "DKIMTextValue", value.asInstanceOf[js.Any])
+      inline def setDKIMTextValue(value: String): Self = StObject.set(x, "DKIMTextValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKIMUpdateStatus(value: String): Self = StObject.set(x, "DKIMUpdateStatus", value.asInstanceOf[js.Any])
+      inline def setDKIMUpdateStatus(value: String): Self = StObject.set(x, "DKIMUpdateStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnPathDomain(value: String): Self = StObject.set(x, "ReturnPathDomain", value.asInstanceOf[js.Any])
+      inline def setReturnPathDomain(value: String): Self = StObject.set(x, "ReturnPathDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnPathDomainCNAMEValue(value: String): Self = StObject.set(x, "ReturnPathDomainCNAMEValue", value.asInstanceOf[js.Any])
+      inline def setReturnPathDomainCNAMEValue(value: String): Self = StObject.set(x, "ReturnPathDomainCNAMEValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPFHost(value: String): Self = StObject.set(x, "SPFHost", value.asInstanceOf[js.Any])
+      inline def setSPFHost(value: String): Self = StObject.set(x, "SPFHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSPFTextValue(value: String): Self = StObject.set(x, "SPFTextValue", value.asInstanceOf[js.Any])
+      inline def setSPFTextValue(value: String): Self = StObject.set(x, "SPFTextValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeToRemoveRevokedKeyFromDNS(value: String): Self = StObject.set(x, "SafeToRemoveRevokedKeyFromDNS", value.asInstanceOf[js.Any])
+      inline def setSafeToRemoveRevokedKeyFromDNS(value: String): Self = StObject.set(x, "SafeToRemoveRevokedKeyFromDNS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,23 +159,18 @@ object domainMod {
   }
   object Domains {
     
-    @scala.inline
-    def apply(Domains: js.Array[Domain], TotalCount: Double): Domains = {
+    inline def apply(Domains: js.Array[Domain], TotalCount: Double): Domains = {
       val __obj = js.Dynamic.literal(Domains = Domains.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[Domains]
     }
     
-    @scala.inline
-    implicit class DomainsMutableBuilder[Self <: Domains] (val x: Self) extends AnyVal {
+    extension [Self <: Domains](x: Self) {
       
-      @scala.inline
-      def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
+      inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "Domains", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
 }

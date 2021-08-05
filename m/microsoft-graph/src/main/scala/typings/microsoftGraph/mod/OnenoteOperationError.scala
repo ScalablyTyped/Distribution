@@ -14,31 +14,23 @@ trait OnenoteOperationError extends StObject {
 }
 object OnenoteOperationError {
   
-  @scala.inline
-  def apply(): OnenoteOperationError = {
+  inline def apply(): OnenoteOperationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenoteOperationError]
   }
   
-  @scala.inline
-  implicit class OnenoteOperationErrorMutableBuilder[Self <: OnenoteOperationError] (val x: Self) extends AnyVal {
+  extension [Self <: OnenoteOperationError](x: Self) {
     
-    @scala.inline
-    def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeNull: Self = StObject.set(x, "code", null)
+    inline def setCodeNull: Self = StObject.set(x, "code", null)
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

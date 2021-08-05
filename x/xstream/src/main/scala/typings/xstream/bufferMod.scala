@@ -11,6 +11,5 @@ object bufferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](s: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[js.Array[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(s.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[js.Array[T]]]]
+  inline def default[T](s: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[js.Array[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(s.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[js.Array[T]]]]
 }

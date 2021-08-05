@@ -14,31 +14,23 @@ trait Streamingbuffer extends StObject {
 }
 object Streamingbuffer {
   
-  @scala.inline
-  def apply(): Streamingbuffer = {
+  inline def apply(): Streamingbuffer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Streamingbuffer]
   }
   
-  @scala.inline
-  implicit class StreamingbufferMutableBuilder[Self <: Streamingbuffer] (val x: Self) extends AnyVal {
+  extension [Self <: Streamingbuffer](x: Self) {
     
-    @scala.inline
-    def setEstimatedBytes(value: String): Self = StObject.set(x, "estimatedBytes", value.asInstanceOf[js.Any])
+    inline def setEstimatedBytes(value: String): Self = StObject.set(x, "estimatedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedBytesUndefined: Self = StObject.set(x, "estimatedBytes", js.undefined)
+    inline def setEstimatedBytesUndefined: Self = StObject.set(x, "estimatedBytes", js.undefined)
     
-    @scala.inline
-    def setEstimatedRows(value: String): Self = StObject.set(x, "estimatedRows", value.asInstanceOf[js.Any])
+    inline def setEstimatedRows(value: String): Self = StObject.set(x, "estimatedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedRowsUndefined: Self = StObject.set(x, "estimatedRows", js.undefined)
+    inline def setEstimatedRowsUndefined: Self = StObject.set(x, "estimatedRows", js.undefined)
     
-    @scala.inline
-    def setOldestEntryTime(value: String): Self = StObject.set(x, "oldestEntryTime", value.asInstanceOf[js.Any])
+    inline def setOldestEntryTime(value: String): Self = StObject.set(x, "oldestEntryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldestEntryTimeUndefined: Self = StObject.set(x, "oldestEntryTime", js.undefined)
+    inline def setOldestEntryTimeUndefined: Self = StObject.set(x, "oldestEntryTime", js.undefined)
   }
 }

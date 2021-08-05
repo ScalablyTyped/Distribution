@@ -10,19 +10,15 @@ trait HighlightOptions extends StObject {
 }
 object HighlightOptions {
   
-  @scala.inline
-  def apply(): HighlightOptions = {
+  inline def apply(): HighlightOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HighlightOptions]
   }
   
-  @scala.inline
-  implicit class HighlightOptionsMutableBuilder[Self <: HighlightOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightOptions](x: Self) {
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

@@ -81,76 +81,54 @@ object typesAddPermissionInputMod {
   }
   object AddPermissionInput {
     
-    @scala.inline
-    def apply(Action: String, FunctionName: String, Principal: String, StatementId: String): AddPermissionInput = {
+    inline def apply(Action: String, FunctionName: String, Principal: String, StatementId: String): AddPermissionInput = {
       val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any], Principal = Principal.asInstanceOf[js.Any], StatementId = StatementId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddPermissionInput]
     }
     
-    @scala.inline
-    implicit class AddPermissionInputMutableBuilder[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
+    extension [Self <: AddPermissionInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceToken(value: String): Self = StObject.set(x, "EventSourceToken", value.asInstanceOf[js.Any])
+      inline def setEventSourceToken(value: String): Self = StObject.set(x, "EventSourceToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceTokenUndefined: Self = StObject.set(x, "EventSourceToken", js.undefined)
+      inline def setEventSourceTokenUndefined: Self = StObject.set(x, "EventSourceToken", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipal(value: String): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: String): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
       
-      @scala.inline
-      def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+      inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+      inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
       
-      @scala.inline
-      def setSourceAccount(value: String): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
+      inline def setSourceAccount(value: String): Self = StObject.set(x, "SourceAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
+      inline def setSourceAccountUndefined: Self = StObject.set(x, "SourceAccount", js.undefined)
       
-      @scala.inline
-      def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+      inline def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+      inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
       
-      @scala.inline
-      def setStatementId(value: String): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
+      inline def setStatementId(value: String): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     }
   }
 }

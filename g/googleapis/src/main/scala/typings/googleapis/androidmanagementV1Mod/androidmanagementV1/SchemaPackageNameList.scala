@@ -16,22 +16,17 @@ trait SchemaPackageNameList extends StObject {
 }
 object SchemaPackageNameList {
   
-  @scala.inline
-  def apply(): SchemaPackageNameList = {
+  inline def apply(): SchemaPackageNameList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPackageNameList]
   }
   
-  @scala.inline
-  implicit class SchemaPackageNameListMutableBuilder[Self <: SchemaPackageNameList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPackageNameList](x: Self) {
     
-    @scala.inline
-    def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
+    inline def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
+    inline def setPackageNamesUndefined: Self = StObject.set(x, "packageNames", js.undefined)
     
-    @scala.inline
-    def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
+    inline def setPackageNamesVarargs(value: String*): Self = StObject.set(x, "packageNames", js.Array(value :_*))
   }
 }

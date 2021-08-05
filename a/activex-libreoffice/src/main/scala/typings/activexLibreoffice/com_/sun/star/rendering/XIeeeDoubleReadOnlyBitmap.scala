@@ -65,8 +65,7 @@ trait XIeeeDoubleReadOnlyBitmap
 }
 object XIeeeDoubleReadOnlyBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MemoryLayout: FloatingPointBitmapLayout,
     Size: IntegerSize2D,
     acquire: () => Unit,
@@ -83,19 +82,14 @@ object XIeeeDoubleReadOnlyBitmap {
     __obj.asInstanceOf[XIeeeDoubleReadOnlyBitmap]
   }
   
-  @scala.inline
-  implicit class XIeeeDoubleReadOnlyBitmapMutableBuilder[Self <: XIeeeDoubleReadOnlyBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: XIeeeDoubleReadOnlyBitmap](x: Self) {
     
-    @scala.inline
-    def setGetData(value: (js.Array[FloatingPointBitmapLayout], IntegerRectangle2D) => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
+    inline def setGetData(value: (js.Array[FloatingPointBitmapLayout], IntegerRectangle2D) => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMemoryLayout(value: () => FloatingPointBitmapLayout): Self = StObject.set(x, "getMemoryLayout", js.Any.fromFunction0(value))
+    inline def setGetMemoryLayout(value: () => FloatingPointBitmapLayout): Self = StObject.set(x, "getMemoryLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPixel(value: (js.Array[FloatingPointBitmapLayout], IntegerPoint2D) => SafeArray[Double]): Self = StObject.set(x, "getPixel", js.Any.fromFunction2(value))
+    inline def setGetPixel(value: (js.Array[FloatingPointBitmapLayout], IntegerPoint2D) => SafeArray[Double]): Self = StObject.set(x, "getPixel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMemoryLayout(value: FloatingPointBitmapLayout): Self = StObject.set(x, "MemoryLayout", value.asInstanceOf[js.Any])
+    inline def setMemoryLayout(value: FloatingPointBitmapLayout): Self = StObject.set(x, "MemoryLayout", value.asInstanceOf[js.Any])
   }
 }

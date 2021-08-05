@@ -14,7 +14,7 @@ trait OLEControl extends StObject {
   
   var Name: String
   
-  @JSName("PowerPoint.OLEControl_typekey")
+  /* private */ @JSName("PowerPoint.OLEControl_typekey")
   var PowerPointDotOLEControl_typekey: OLEControl
   
   var Top: Double
@@ -27,8 +27,7 @@ trait OLEControl extends StObject {
 }
 object OLEControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AltHTML: String,
     Height: Double,
     Left: Double,
@@ -44,34 +43,24 @@ object OLEControl {
     __obj.asInstanceOf[OLEControl]
   }
   
-  @scala.inline
-  implicit class OLEControlMutableBuilder[Self <: OLEControl] (val x: Self) extends AnyVal {
+  extension [Self <: OLEControl](x: Self) {
     
-    @scala.inline
-    def setAltHTML(value: String): Self = StObject.set(x, "AltHTML", value.asInstanceOf[js.Any])
+    inline def setAltHTML(value: String): Self = StObject.set(x, "AltHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotOLEControl_typekey(value: OLEControl): Self = StObject.set(x, "PowerPoint.OLEControl_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotOLEControl_typekey(value: OLEControl): Self = StObject.set(x, "PowerPoint.OLEControl_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOrderPosition(value: Double): Self = StObject.set(x, "ZOrderPosition", value.asInstanceOf[js.Any])
+    inline def setZOrderPosition(value: Double): Self = StObject.set(x, "ZOrderPosition", value.asInstanceOf[js.Any])
   }
 }

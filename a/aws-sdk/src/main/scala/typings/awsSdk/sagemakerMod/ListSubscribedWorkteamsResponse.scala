@@ -18,25 +18,19 @@ trait ListSubscribedWorkteamsResponse extends StObject {
 }
 object ListSubscribedWorkteamsResponse {
   
-  @scala.inline
-  def apply(SubscribedWorkteams: SubscribedWorkteams): ListSubscribedWorkteamsResponse = {
+  inline def apply(SubscribedWorkteams: SubscribedWorkteams): ListSubscribedWorkteamsResponse = {
     val __obj = js.Dynamic.literal(SubscribedWorkteams = SubscribedWorkteams.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSubscribedWorkteamsResponse]
   }
   
-  @scala.inline
-  implicit class ListSubscribedWorkteamsResponseMutableBuilder[Self <: ListSubscribedWorkteamsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSubscribedWorkteamsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSubscribedWorkteams(value: SubscribedWorkteams): Self = StObject.set(x, "SubscribedWorkteams", value.asInstanceOf[js.Any])
+    inline def setSubscribedWorkteams(value: SubscribedWorkteams): Self = StObject.set(x, "SubscribedWorkteams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedWorkteamsVarargs(value: SubscribedWorkteam*): Self = StObject.set(x, "SubscribedWorkteams", js.Array(value :_*))
+    inline def setSubscribedWorkteamsVarargs(value: SubscribedWorkteam*): Self = StObject.set(x, "SubscribedWorkteams", js.Array(value :_*))
   }
 }

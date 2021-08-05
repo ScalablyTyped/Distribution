@@ -18,19 +18,15 @@ trait UpdateResourceRequest extends StObject {
 }
 object UpdateResourceRequest {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArnString, RoleArn: IAMRoleArn): UpdateResourceRequest = {
+  inline def apply(ResourceArn: ResourceArnString, RoleArn: IAMRoleArn): UpdateResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateResourceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateResourceRequestMutableBuilder[Self <: UpdateResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateResourceRequest](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

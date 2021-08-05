@@ -18,28 +18,21 @@ trait DBEngineVersionMessage extends StObject {
 }
 object DBEngineVersionMessage {
   
-  @scala.inline
-  def apply(): DBEngineVersionMessage = {
+  inline def apply(): DBEngineVersionMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBEngineVersionMessage]
   }
   
-  @scala.inline
-  implicit class DBEngineVersionMessageMutableBuilder[Self <: DBEngineVersionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBEngineVersionMessage](x: Self) {
     
-    @scala.inline
-    def setDBEngineVersions(value: DBEngineVersionList): Self = StObject.set(x, "DBEngineVersions", value.asInstanceOf[js.Any])
+    inline def setDBEngineVersions(value: DBEngineVersionList): Self = StObject.set(x, "DBEngineVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBEngineVersionsUndefined: Self = StObject.set(x, "DBEngineVersions", js.undefined)
+    inline def setDBEngineVersionsUndefined: Self = StObject.set(x, "DBEngineVersions", js.undefined)
     
-    @scala.inline
-    def setDBEngineVersionsVarargs(value: DBEngineVersion*): Self = StObject.set(x, "DBEngineVersions", js.Array(value :_*))
+    inline def setDBEngineVersionsVarargs(value: DBEngineVersion*): Self = StObject.set(x, "DBEngineVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeScheme extends StObject
 object TypeScheme {
   
-  @scala.inline
-  def TypeSchemeForMesh(
+  inline def TypeSchemeForMesh(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -29,8 +28,7 @@ object TypeScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.TypeSchemeForMesh]
   }
   
-  @scala.inline
-  def TypeSchemeForPoint(
+  inline def TypeSchemeForPoint(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,8 +44,7 @@ object TypeScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.TypeSchemeForPoint]
   }
   
-  @scala.inline
-  def TypeSchemeForPolygon(
+  inline def TypeSchemeForPolygon(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -62,8 +59,7 @@ object TypeScheme {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.TypeSchemeForPolygon]
   }
   
-  @scala.inline
-  def TypeSchemeForPolyline(
+  inline def TypeSchemeForPolyline(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,

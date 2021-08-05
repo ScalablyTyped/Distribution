@@ -21,25 +21,19 @@ trait ShowLoadingArgs
 }
 object ShowLoadingArgs {
   
-  @scala.inline
-  def apply(): ShowLoadingArgs = {
+  inline def apply(): ShowLoadingArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShowLoadingArgs]
   }
   
-  @scala.inline
-  implicit class ShowLoadingArgsMutableBuilder[Self <: ShowLoadingArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ShowLoadingArgs](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(optionDefinitions: js.Array[OptionDefinition]): CommandLineOptions = ^.asInstanceOf[js.Dynamic].apply(optionDefinitions.asInstanceOf[js.Any]).asInstanceOf[CommandLineOptions]
-  @scala.inline
-  def apply(optionDefinitions: js.Array[OptionDefinition], options: ParseOptions): CommandLineOptions = (^.asInstanceOf[js.Dynamic].apply(optionDefinitions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
+  inline def apply(optionDefinitions: js.Array[OptionDefinition]): CommandLineOptions = ^.asInstanceOf[js.Dynamic].apply(optionDefinitions.asInstanceOf[js.Any]).asInstanceOf[CommandLineOptions]
+  inline def apply(optionDefinitions: js.Array[OptionDefinition], options: ParseOptions): CommandLineOptions = (^.asInstanceOf[js.Dynamic].apply(optionDefinitions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
   
   @JSImport("command-line-args", JSImport.Namespace)
   @js.native
@@ -27,23 +25,18 @@ object mod {
   }
   object CommandLineOptions {
     
-    @scala.inline
-    def apply(): CommandLineOptions = {
+    inline def apply(): CommandLineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandLineOptions]
     }
     
-    @scala.inline
-    implicit class CommandLineOptionsMutableBuilder[Self <: CommandLineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CommandLineOptions](x: Self) {
       
-      @scala.inline
-      def set_unknown(value: js.Array[String]): Self = StObject.set(x, "_unknown", value.asInstanceOf[js.Any])
+      inline def set_unknown(value: js.Array[String]): Self = StObject.set(x, "_unknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unknownUndefined: Self = StObject.set(x, "_unknown", js.undefined)
+      inline def set_unknownUndefined: Self = StObject.set(x, "_unknown", js.undefined)
       
-      @scala.inline
-      def set_unknownVarargs(value: String*): Self = StObject.set(x, "_unknown", js.Array(value :_*))
+      inline def set_unknownVarargs(value: String*): Self = StObject.set(x, "_unknown", js.Array(value :_*))
     }
   }
   
@@ -93,62 +86,44 @@ object mod {
   }
   object OptionDefinition {
     
-    @scala.inline
-    def apply(name: String): OptionDefinition = {
+    inline def apply(name: String): OptionDefinition = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionDefinition]
     }
     
-    @scala.inline
-    implicit class OptionDefinitionMutableBuilder[Self <: OptionDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: OptionDefinition](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setDefaultOption(value: Boolean): Self = StObject.set(x, "defaultOption", value.asInstanceOf[js.Any])
+      inline def setDefaultOption(value: Boolean): Self = StObject.set(x, "defaultOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
+      inline def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setGroup(value: String | js.Array[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String | js.Array[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
       
-      @scala.inline
-      def setLazyMultiple(value: Boolean): Self = StObject.set(x, "lazyMultiple", value.asInstanceOf[js.Any])
+      inline def setLazyMultiple(value: Boolean): Self = StObject.set(x, "lazyMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyMultipleUndefined: Self = StObject.set(x, "lazyMultiple", js.undefined)
+      inline def setLazyMultipleUndefined: Self = StObject.set(x, "lazyMultiple", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: /* input */ String => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setType(value: /* input */ String => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -177,41 +152,30 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
+      inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      @scala.inline
-      def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
       
-      @scala.inline
-      def setCamelCase(value: Boolean): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
+      inline def setCamelCase(value: Boolean): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamelCaseUndefined: Self = StObject.set(x, "camelCase", js.undefined)
+      inline def setCamelCaseUndefined: Self = StObject.set(x, "camelCase", js.undefined)
       
-      @scala.inline
-      def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+      inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
       
-      @scala.inline
-      def setStopAtFirstUnknown(value: Boolean): Self = StObject.set(x, "stopAtFirstUnknown", value.asInstanceOf[js.Any])
+      inline def setStopAtFirstUnknown(value: Boolean): Self = StObject.set(x, "stopAtFirstUnknown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopAtFirstUnknownUndefined: Self = StObject.set(x, "stopAtFirstUnknown", js.undefined)
+      inline def setStopAtFirstUnknownUndefined: Self = StObject.set(x, "stopAtFirstUnknown", js.undefined)
     }
   }
 }

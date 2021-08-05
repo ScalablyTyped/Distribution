@@ -40,47 +40,34 @@ trait Suppression extends StObject {
 }
 object Suppression {
   
-  @scala.inline
-  def apply(kind: kind): Suppression = {
+  inline def apply(kind: kind): Suppression = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suppression]
   }
   
-  @scala.inline
-  implicit class SuppressionMutableBuilder[Self <: Suppression] (val x: Self) extends AnyVal {
+  extension [Self <: Suppression](x: Self) {
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
-    @scala.inline
-    def setJustification(value: String): Self = StObject.set(x, "justification", value.asInstanceOf[js.Any])
+    inline def setJustification(value: String): Self = StObject.set(x, "justification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustificationUndefined: Self = StObject.set(x, "justification", js.undefined)
+    inline def setJustificationUndefined: Self = StObject.set(x, "justification", js.undefined)
     
-    @scala.inline
-    def setKind(value: kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setStatus(value: status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -90,11 +77,9 @@ object Suppression {
   trait kind extends StObject
   object kind {
     
-    @scala.inline
-    def external: typings.sarif.sarifStrings.external = "external".asInstanceOf[typings.sarif.sarifStrings.external]
+    inline def external: typings.sarif.sarifStrings.external = "external".asInstanceOf[typings.sarif.sarifStrings.external]
     
-    @scala.inline
-    def inSource: typings.sarif.sarifStrings.inSource = "inSource".asInstanceOf[typings.sarif.sarifStrings.inSource]
+    inline def inSource: typings.sarif.sarifStrings.inSource = "inSource".asInstanceOf[typings.sarif.sarifStrings.inSource]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -105,13 +90,10 @@ object Suppression {
   trait status extends StObject
   object status {
     
-    @scala.inline
-    def accepted: typings.sarif.sarifStrings.accepted = "accepted".asInstanceOf[typings.sarif.sarifStrings.accepted]
+    inline def accepted: typings.sarif.sarifStrings.accepted = "accepted".asInstanceOf[typings.sarif.sarifStrings.accepted]
     
-    @scala.inline
-    def rejected: typings.sarif.sarifStrings.rejected = "rejected".asInstanceOf[typings.sarif.sarifStrings.rejected]
+    inline def rejected: typings.sarif.sarifStrings.rejected = "rejected".asInstanceOf[typings.sarif.sarifStrings.rejected]
     
-    @scala.inline
-    def underReview: typings.sarif.sarifStrings.underReview = "underReview".asInstanceOf[typings.sarif.sarifStrings.underReview]
+    inline def underReview: typings.sarif.sarifStrings.underReview = "underReview".asInstanceOf[typings.sarif.sarifStrings.underReview]
   }
 }

@@ -36,8 +36,7 @@ object spanProcessorMod {
   }
   object SpanProcessor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       forceFlush: js.Function0[Unit] => Unit,
       onEnd: ReadableSpan => Unit,
       onStart: ReadableSpan => Unit,
@@ -47,20 +46,15 @@ object spanProcessorMod {
       __obj.asInstanceOf[SpanProcessor]
     }
     
-    @scala.inline
-    implicit class SpanProcessorMutableBuilder[Self <: SpanProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: SpanProcessor](x: Self) {
       
-      @scala.inline
-      def setForceFlush(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "forceFlush", js.Any.fromFunction1(value))
+      inline def setForceFlush(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "forceFlush", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEnd(value: ReadableSpan => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: ReadableSpan => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStart(value: ReadableSpan => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: ReadableSpan => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShutdown(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction1(value))
+      inline def setShutdown(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "shutdown", js.Any.fromFunction1(value))
     }
   }
 }

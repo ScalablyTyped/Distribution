@@ -23,26 +23,20 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +46,14 @@ object anon {
   }
   object Get {
     
-    @scala.inline
-    def apply(get: () => js.Any): Get = {
+    inline def apply(get: () => js.Any): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get))
       __obj.asInstanceOf[Get]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+    extension [Self <: Get](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
   }
   
@@ -81,44 +72,32 @@ object anon {
   }
   object PartialScrollIntoViewOpti {
     
-    @scala.inline
-    def apply(): PartialScrollIntoViewOpti = {
+    inline def apply(): PartialScrollIntoViewOpti = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialScrollIntoViewOpti]
     }
     
-    @scala.inline
-    implicit class PartialScrollIntoViewOptiMutableBuilder[Self <: PartialScrollIntoViewOpti] (val x: Self) extends AnyVal {
+    extension [Self <: PartialScrollIntoViewOpti](x: Self) {
       
-      @scala.inline
-      def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
+      inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignToTopUndefined: Self = StObject.set(x, "alignToTop", js.undefined)
+      inline def setAlignToTopUndefined: Self = StObject.set(x, "alignToTop", js.undefined)
       
-      @scala.inline
-      def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
+      inline def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
+      inline def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
       
-      @scala.inline
-      def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
+      inline def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
+      inline def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
       
-      @scala.inline
-      def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+      inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
+      inline def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
       
-      @scala.inline
-      def setOnlyScrollIfNeeded(value: Boolean): Self = StObject.set(x, "onlyScrollIfNeeded", value.asInstanceOf[js.Any])
+      inline def setOnlyScrollIfNeeded(value: Boolean): Self = StObject.set(x, "onlyScrollIfNeeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyScrollIfNeededUndefined: Self = StObject.set(x, "onlyScrollIfNeeded", js.undefined)
+      inline def setOnlyScrollIfNeededUndefined: Self = StObject.set(x, "onlyScrollIfNeeded", js.undefined)
     }
   }
   
@@ -131,26 +110,20 @@ object anon {
   }
   object PartialScrollToOptions {
     
-    @scala.inline
-    def apply(): PartialScrollToOptions = {
+    inline def apply(): PartialScrollToOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialScrollToOptions]
     }
     
-    @scala.inline
-    implicit class PartialScrollToOptionsMutableBuilder[Self <: PartialScrollToOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialScrollToOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: js.ThisFunction0[PartialScrollToOptions, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.ThisFunction0[PartialScrollToOptions, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setEasing(value: /* percent */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasing(value: /* percent */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     }
   }
   
@@ -163,26 +136,20 @@ object anon {
   }
   object PartialScrollToOptionsCallback {
     
-    @scala.inline
-    def apply(): PartialScrollToOptionsCallback = {
+    inline def apply(): PartialScrollToOptionsCallback = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialScrollToOptionsCallback]
     }
     
-    @scala.inline
-    implicit class PartialScrollToOptionsCallbackMutableBuilder[Self <: PartialScrollToOptionsCallback] (val x: Self) extends AnyVal {
+    extension [Self <: PartialScrollToOptionsCallback](x: Self) {
       
-      @scala.inline
-      def setCallback(value: js.ThisFunction0[/* this */ Scrollbar, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: js.ThisFunction0[/* this */ Scrollbar, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setEasing(value: /* percent */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasing(value: /* percent */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     }
   }
   
@@ -207,68 +174,48 @@ object anon {
   }
   object PartialScrollbarOptions {
     
-    @scala.inline
-    def apply(): PartialScrollbarOptions = {
+    inline def apply(): PartialScrollbarOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialScrollbarOptions]
     }
     
-    @scala.inline
-    implicit class PartialScrollbarOptionsMutableBuilder[Self <: PartialScrollbarOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialScrollbarOptions](x: Self) {
       
-      @scala.inline
-      def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
+      inline def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysShowTracksUndefined: Self = StObject.set(x, "alwaysShowTracks", js.undefined)
+      inline def setAlwaysShowTracksUndefined: Self = StObject.set(x, "alwaysShowTracks", js.undefined)
       
-      @scala.inline
-      def setContinuousScrolling(value: Boolean): Self = StObject.set(x, "continuousScrolling", value.asInstanceOf[js.Any])
+      inline def setContinuousScrolling(value: Boolean): Self = StObject.set(x, "continuousScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousScrollingUndefined: Self = StObject.set(x, "continuousScrolling", js.undefined)
+      inline def setContinuousScrollingUndefined: Self = StObject.set(x, "continuousScrolling", js.undefined)
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+      inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
       
-      @scala.inline
-      def setDelegateTo(value: EventTarget): Self = StObject.set(x, "delegateTo", value.asInstanceOf[js.Any])
+      inline def setDelegateTo(value: EventTarget): Self = StObject.set(x, "delegateTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateToNull: Self = StObject.set(x, "delegateTo", null)
+      inline def setDelegateToNull: Self = StObject.set(x, "delegateTo", null)
       
-      @scala.inline
-      def setDelegateToUndefined: Self = StObject.set(x, "delegateTo", js.undefined)
+      inline def setDelegateToUndefined: Self = StObject.set(x, "delegateTo", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setRenderByPixels(value: Boolean): Self = StObject.set(x, "renderByPixels", value.asInstanceOf[js.Any])
+      inline def setRenderByPixels(value: Boolean): Self = StObject.set(x, "renderByPixels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderByPixelsUndefined: Self = StObject.set(x, "renderByPixels", js.undefined)
+      inline def setRenderByPixelsUndefined: Self = StObject.set(x, "renderByPixels", js.undefined)
       
-      @scala.inline
-      def setThumbMinSize(value: Double): Self = StObject.set(x, "thumbMinSize", value.asInstanceOf[js.Any])
+      inline def setThumbMinSize(value: Double): Self = StObject.set(x, "thumbMinSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbMinSizeUndefined: Self = StObject.set(x, "thumbMinSize", js.undefined)
+      inline def setThumbMinSizeUndefined: Self = StObject.set(x, "thumbMinSize", js.undefined)
       
-      @scala.inline
-      def setWheelEventTarget(value: EventTarget): Self = StObject.set(x, "wheelEventTarget", value.asInstanceOf[js.Any])
+      inline def setWheelEventTarget(value: EventTarget): Self = StObject.set(x, "wheelEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelEventTargetNull: Self = StObject.set(x, "wheelEventTarget", null)
+      inline def setWheelEventTargetNull: Self = StObject.set(x, "wheelEventTarget", null)
       
-      @scala.inline
-      def setWheelEventTargetUndefined: Self = StObject.set(x, "wheelEventTarget", js.undefined)
+      inline def setWheelEventTargetUndefined: Self = StObject.set(x, "wheelEventTarget", js.undefined)
     }
   }
   
@@ -279,20 +226,16 @@ object anon {
   }
   object PartialSetPositionOptions {
     
-    @scala.inline
-    def apply(): PartialSetPositionOptions = {
+    inline def apply(): PartialSetPositionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSetPositionOptions]
     }
     
-    @scala.inline
-    implicit class PartialSetPositionOptionsMutableBuilder[Self <: PartialSetPositionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSetPositionOptions](x: Self) {
       
-      @scala.inline
-      def setWithoutCallbacks(value: Boolean): Self = StObject.set(x, "withoutCallbacks", value.asInstanceOf[js.Any])
+      inline def setWithoutCallbacks(value: Boolean): Self = StObject.set(x, "withoutCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithoutCallbacksUndefined: Self = StObject.set(x, "withoutCallbacks", js.undefined)
+      inline def setWithoutCallbacksUndefined: Self = StObject.set(x, "withoutCallbacks", js.undefined)
     }
   }
   
@@ -322,26 +265,20 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(): X = {
+    inline def apply(): X = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -353,20 +290,16 @@ object anon {
   }
   object XY {
     
-    @scala.inline
-    def apply(x: js.Any, y: js.Any): XY = {
+    inline def apply(x: js.Any, y: js.Any): XY = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[XY]
     }
     
-    @scala.inline
-    implicit class XYMutableBuilder[Self <: XY] (val x: Self) extends AnyVal {
+    extension [Self <: XY](x: Self) {
       
-      @scala.inline
-      def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -378,20 +311,16 @@ object anon {
   }
   object Y {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Y = {
+    inline def apply(x: Double, y: Double): Y = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Y]
     }
     
-    @scala.inline
-    implicit class YMutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
+    extension [Self <: Y](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

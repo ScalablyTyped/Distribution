@@ -13,19 +13,15 @@ trait StartInstanceRefreshAnswer extends StObject {
 }
 object StartInstanceRefreshAnswer {
   
-  @scala.inline
-  def apply(): StartInstanceRefreshAnswer = {
+  inline def apply(): StartInstanceRefreshAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartInstanceRefreshAnswer]
   }
   
-  @scala.inline
-  implicit class StartInstanceRefreshAnswerMutableBuilder[Self <: StartInstanceRefreshAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: StartInstanceRefreshAnswer](x: Self) {
     
-    @scala.inline
-    def setInstanceRefreshId(value: XmlStringMaxLen255): Self = StObject.set(x, "InstanceRefreshId", value.asInstanceOf[js.Any])
+    inline def setInstanceRefreshId(value: XmlStringMaxLen255): Self = StObject.set(x, "InstanceRefreshId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceRefreshIdUndefined: Self = StObject.set(x, "InstanceRefreshId", js.undefined)
+    inline def setInstanceRefreshIdUndefined: Self = StObject.set(x, "InstanceRefreshId", js.undefined)
   }
 }

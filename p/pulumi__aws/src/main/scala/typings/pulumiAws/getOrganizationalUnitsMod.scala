@@ -12,10 +12,8 @@ object getOrganizationalUnitsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
-  @scala.inline
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
+  inline def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
+  inline def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
   
   trait GetOrganizationalUnitsArgs extends StObject {
     
@@ -26,17 +24,14 @@ object getOrganizationalUnitsMod {
   }
   object GetOrganizationalUnitsArgs {
     
-    @scala.inline
-    def apply(parentId: String): GetOrganizationalUnitsArgs = {
+    inline def apply(parentId: String): GetOrganizationalUnitsArgs = {
       val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOrganizationalUnitsArgs]
     }
     
-    @scala.inline
-    implicit class GetOrganizationalUnitsArgsMutableBuilder[Self <: GetOrganizationalUnitsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationalUnitsArgs](x: Self) {
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,26 +51,20 @@ object getOrganizationalUnitsMod {
   }
   object GetOrganizationalUnitsResult {
     
-    @scala.inline
-    def apply(childrens: js.Array[GetOrganizationalUnitsChildren], id: String, parentId: String): GetOrganizationalUnitsResult = {
+    inline def apply(childrens: js.Array[GetOrganizationalUnitsChildren], id: String, parentId: String): GetOrganizationalUnitsResult = {
       val __obj = js.Dynamic.literal(childrens = childrens.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOrganizationalUnitsResult]
     }
     
-    @scala.inline
-    implicit class GetOrganizationalUnitsResultMutableBuilder[Self <: GetOrganizationalUnitsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetOrganizationalUnitsResult](x: Self) {
       
-      @scala.inline
-      def setChildrens(value: js.Array[GetOrganizationalUnitsChildren]): Self = StObject.set(x, "childrens", value.asInstanceOf[js.Any])
+      inline def setChildrens(value: js.Array[GetOrganizationalUnitsChildren]): Self = StObject.set(x, "childrens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrensVarargs(value: GetOrganizationalUnitsChildren*): Self = StObject.set(x, "childrens", js.Array(value :_*))
+      inline def setChildrensVarargs(value: GetOrganizationalUnitsChildren*): Self = StObject.set(x, "childrens", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     }
   }
 }

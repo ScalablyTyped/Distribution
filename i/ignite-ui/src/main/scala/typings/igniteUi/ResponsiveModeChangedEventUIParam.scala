@@ -23,31 +23,23 @@ trait ResponsiveModeChangedEventUIParam extends StObject {
 }
 object ResponsiveModeChangedEventUIParam {
   
-  @scala.inline
-  def apply(): ResponsiveModeChangedEventUIParam = {
+  inline def apply(): ResponsiveModeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponsiveModeChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ResponsiveModeChangedEventUIParamMutableBuilder[Self <: ResponsiveModeChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsiveModeChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPreviousMode(value: String): Self = StObject.set(x, "previousMode", value.asInstanceOf[js.Any])
+    inline def setPreviousMode(value: String): Self = StObject.set(x, "previousMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousModeUndefined: Self = StObject.set(x, "previousMode", js.undefined)
+    inline def setPreviousModeUndefined: Self = StObject.set(x, "previousMode", js.undefined)
   }
 }

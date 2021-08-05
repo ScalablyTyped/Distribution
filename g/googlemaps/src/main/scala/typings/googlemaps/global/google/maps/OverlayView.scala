@@ -21,14 +21,12 @@ object OverlayView {
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/overlay-view#OverlayView.preventMapHitsAndGesturesFrom Maps JavaScript API}
     */
   /* static member */
-  @scala.inline
-  def preventMapHitsAndGesturesFrom(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventMapHitsAndGesturesFrom")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def preventMapHitsAndGesturesFrom(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventMapHitsAndGesturesFrom")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Stops click or tap on the element from bubbling up to the map. Use this to prevent the map from triggering "click" events.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/overlay-view#OverlayView.preventMapHitsFrom Maps JavaScript API}
     */
   /* static member */
-  @scala.inline
-  def preventMapHitsFrom(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventMapHitsFrom")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def preventMapHitsFrom(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventMapHitsFrom")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

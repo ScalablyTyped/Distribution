@@ -18,43 +18,31 @@ trait SchemaAccountStatusExampleItem extends StObject {
 }
 object SchemaAccountStatusExampleItem {
   
-  @scala.inline
-  def apply(): SchemaAccountStatusExampleItem = {
+  inline def apply(): SchemaAccountStatusExampleItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountStatusExampleItem]
   }
   
-  @scala.inline
-  implicit class SchemaAccountStatusExampleItemMutableBuilder[Self <: SchemaAccountStatusExampleItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountStatusExampleItem](x: Self) {
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setSubmittedValue(value: String): Self = StObject.set(x, "submittedValue", value.asInstanceOf[js.Any])
+    inline def setSubmittedValue(value: String): Self = StObject.set(x, "submittedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedValueUndefined: Self = StObject.set(x, "submittedValue", js.undefined)
+    inline def setSubmittedValueUndefined: Self = StObject.set(x, "submittedValue", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setValueOnLandingPage(value: String): Self = StObject.set(x, "valueOnLandingPage", value.asInstanceOf[js.Any])
+    inline def setValueOnLandingPage(value: String): Self = StObject.set(x, "valueOnLandingPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueOnLandingPageUndefined: Self = StObject.set(x, "valueOnLandingPage", js.undefined)
+    inline def setValueOnLandingPageUndefined: Self = StObject.set(x, "valueOnLandingPage", js.undefined)
   }
 }

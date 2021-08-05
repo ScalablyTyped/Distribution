@@ -11,22 +11,17 @@ trait GooglePrivacyDlpV2ImageLocation extends StObject {
 }
 object GooglePrivacyDlpV2ImageLocation {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ImageLocation = {
+  inline def apply(): GooglePrivacyDlpV2ImageLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ImageLocation]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ImageLocationMutableBuilder[Self <: GooglePrivacyDlpV2ImageLocation] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ImageLocation](x: Self) {
     
-    @scala.inline
-    def setBoundingBoxes(value: js.Array[GooglePrivacyDlpV2BoundingBox]): Self = StObject.set(x, "boundingBoxes", value.asInstanceOf[js.Any])
+    inline def setBoundingBoxes(value: js.Array[GooglePrivacyDlpV2BoundingBox]): Self = StObject.set(x, "boundingBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxesUndefined: Self = StObject.set(x, "boundingBoxes", js.undefined)
+    inline def setBoundingBoxesUndefined: Self = StObject.set(x, "boundingBoxes", js.undefined)
     
-    @scala.inline
-    def setBoundingBoxesVarargs(value: GooglePrivacyDlpV2BoundingBox*): Self = StObject.set(x, "boundingBoxes", js.Array(value :_*))
+    inline def setBoundingBoxesVarargs(value: GooglePrivacyDlpV2BoundingBox*): Self = StObject.set(x, "boundingBoxes", js.Array(value :_*))
   }
 }

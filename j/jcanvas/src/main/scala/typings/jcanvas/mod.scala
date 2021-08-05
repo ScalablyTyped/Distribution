@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // the JQuery interface below should extend the existing jquery module interface
 object mod {
   
-  @scala.inline
-  def apply(jquery: JQueryStatic, window: Window): Unit = (^.asInstanceOf[js.Dynamic].apply(jquery.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(jquery: JQueryStatic, window: Window): Unit = (^.asInstanceOf[js.Dynamic].apply(jquery.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("jcanvas", JSImport.Namespace)
   @js.native

@@ -20,8 +20,7 @@ trait TfvcItemRequestData extends StObject {
 }
 object TfvcItemRequestData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     includeContentMetadata: Boolean,
     includeLinks: Boolean,
     itemDescriptors: js.Array[TfvcItemDescriptor]
@@ -30,19 +29,14 @@ object TfvcItemRequestData {
     __obj.asInstanceOf[TfvcItemRequestData]
   }
   
-  @scala.inline
-  implicit class TfvcItemRequestDataMutableBuilder[Self <: TfvcItemRequestData] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcItemRequestData](x: Self) {
     
-    @scala.inline
-    def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
+    inline def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDescriptors(value: js.Array[TfvcItemDescriptor]): Self = StObject.set(x, "itemDescriptors", value.asInstanceOf[js.Any])
+    inline def setItemDescriptors(value: js.Array[TfvcItemDescriptor]): Self = StObject.set(x, "itemDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDescriptorsVarargs(value: TfvcItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value :_*))
+    inline def setItemDescriptorsVarargs(value: TfvcItemDescriptor*): Self = StObject.set(x, "itemDescriptors", js.Array(value :_*))
   }
 }

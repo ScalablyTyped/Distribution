@@ -34,8 +34,7 @@ object xpath {
   }
   object Libxml2ExtensionHandle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       functionData: Double,
       functionLookupFunction: Double,
       variableData: Double,
@@ -45,20 +44,15 @@ object xpath {
       __obj.asInstanceOf[Libxml2ExtensionHandle]
     }
     
-    @scala.inline
-    implicit class Libxml2ExtensionHandleMutableBuilder[Self <: Libxml2ExtensionHandle] (val x: Self) extends AnyVal {
+    extension [Self <: Libxml2ExtensionHandle](x: Self) {
       
-      @scala.inline
-      def setFunctionData(value: Double): Self = StObject.set(x, "functionData", value.asInstanceOf[js.Any])
+      inline def setFunctionData(value: Double): Self = StObject.set(x, "functionData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionLookupFunction(value: Double): Self = StObject.set(x, "functionLookupFunction", value.asInstanceOf[js.Any])
+      inline def setFunctionLookupFunction(value: Double): Self = StObject.set(x, "functionLookupFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableData(value: Double): Self = StObject.set(x, "variableData", value.asInstanceOf[js.Any])
+      inline def setVariableData(value: Double): Self = StObject.set(x, "variableData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableLookupFunction(value: Double): Self = StObject.set(x, "variableLookupFunction", value.asInstanceOf[js.Any])
+      inline def setVariableLookupFunction(value: Double): Self = StObject.set(x, "variableLookupFunction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,8 +73,7 @@ object xpath {
   }
   object XPathExtension {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Libxml2ExtensionHandle: Libxml2ExtensionHandle,
       acquire: () => Unit,
       createWithModel: (XModel, XNode) => Unit,
@@ -92,11 +85,9 @@ object xpath {
       __obj.asInstanceOf[XPathExtension]
     }
     
-    @scala.inline
-    implicit class XPathExtensionMutableBuilder[Self <: XPathExtension] (val x: Self) extends AnyVal {
+    extension [Self <: XPathExtension](x: Self) {
       
-      @scala.inline
-      def setCreateWithModel(value: (XModel, XNode) => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction2(value))
+      inline def setCreateWithModel(value: (XModel, XNode) => Unit): Self = StObject.set(x, "createWithModel", js.Any.fromFunction2(value))
     }
   }
   
@@ -115,35 +106,25 @@ object xpath {
   trait XPathObjectType extends StObject
   object XPathObjectType {
     
-    @scala.inline
-    def XPATH_BOOLEAN: `2` = 2.asInstanceOf[`2`]
+    inline def XPATH_BOOLEAN: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def XPATH_LOCATIONSET: `7` = 7.asInstanceOf[`7`]
+    inline def XPATH_LOCATIONSET: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def XPATH_NODESET: `1` = 1.asInstanceOf[`1`]
+    inline def XPATH_NODESET: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def XPATH_NUMBER: `3` = 3.asInstanceOf[`3`]
+    inline def XPATH_NUMBER: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def XPATH_POINT: `5` = 5.asInstanceOf[`5`]
+    inline def XPATH_POINT: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def XPATH_RANGE: `6` = 6.asInstanceOf[`6`]
+    inline def XPATH_RANGE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def XPATH_STRING: `4` = 4.asInstanceOf[`4`]
+    inline def XPATH_STRING: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def XPATH_UNDEFINED: `0` = 0.asInstanceOf[`0`]
+    inline def XPATH_UNDEFINED: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def XPATH_USERS: `8` = 8.asInstanceOf[`8`]
+    inline def XPATH_USERS: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def XPATH_XSLT_TREE: `9` = 9.asInstanceOf[`9`]
+    inline def XPATH_XSLT_TREE: `9` = 9.asInstanceOf[`9`]
   }
   
   trait XXPathAPI
@@ -221,8 +202,7 @@ object xpath {
   }
   object XXPathAPI {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       eval: (XNode, String) => XXPathObject,
       evalNS: (XNode, String, XNode) => XXPathObject,
@@ -241,38 +221,27 @@ object xpath {
       __obj.asInstanceOf[XXPathAPI]
     }
     
-    @scala.inline
-    implicit class XXPathAPIMutableBuilder[Self <: XXPathAPI] (val x: Self) extends AnyVal {
+    extension [Self <: XXPathAPI](x: Self) {
       
-      @scala.inline
-      def setEval(value: (XNode, String) => XXPathObject): Self = StObject.set(x, "eval", js.Any.fromFunction2(value))
+      inline def setEval(value: (XNode, String) => XXPathObject): Self = StObject.set(x, "eval", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalNS(value: (XNode, String, XNode) => XXPathObject): Self = StObject.set(x, "evalNS", js.Any.fromFunction3(value))
+      inline def setEvalNS(value: (XNode, String, XNode) => XXPathObject): Self = StObject.set(x, "evalNS", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRegisterExtension(value: String => Unit): Self = StObject.set(x, "registerExtension", js.Any.fromFunction1(value))
+      inline def setRegisterExtension(value: String => Unit): Self = StObject.set(x, "registerExtension", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterExtensionInstance(value: XXPathExtension => Unit): Self = StObject.set(x, "registerExtensionInstance", js.Any.fromFunction1(value))
+      inline def setRegisterExtensionInstance(value: XXPathExtension => Unit): Self = StObject.set(x, "registerExtensionInstance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterNS(value: (String, String) => Unit): Self = StObject.set(x, "registerNS", js.Any.fromFunction2(value))
+      inline def setRegisterNS(value: (String, String) => Unit): Self = StObject.set(x, "registerNS", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelectNodeList(value: (XNode, String) => XNodeList): Self = StObject.set(x, "selectNodeList", js.Any.fromFunction2(value))
+      inline def setSelectNodeList(value: (XNode, String) => XNodeList): Self = StObject.set(x, "selectNodeList", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelectNodeListNS(value: (XNode, String, XNode) => XNodeList): Self = StObject.set(x, "selectNodeListNS", js.Any.fromFunction3(value))
+      inline def setSelectNodeListNS(value: (XNode, String, XNode) => XNodeList): Self = StObject.set(x, "selectNodeListNS", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSelectSingleNode(value: (XNode, String) => XNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction2(value))
+      inline def setSelectSingleNode(value: (XNode, String) => XNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSelectSingleNodeNS(value: (XNode, String, XNode) => XNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction3(value))
+      inline def setSelectSingleNodeNS(value: (XNode, String, XNode) => XNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUnregisterNS(value: (String, String) => Unit): Self = StObject.set(x, "unregisterNS", js.Any.fromFunction2(value))
+      inline def setUnregisterNS(value: (String, String) => Unit): Self = StObject.set(x, "unregisterNS", js.Any.fromFunction2(value))
     }
   }
   
@@ -286,8 +255,7 @@ object xpath {
   }
   object XXPathExtension {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Libxml2ExtensionHandle: Libxml2ExtensionHandle,
       acquire: () => Unit,
       getLibxml2ExtensionHandle: () => Libxml2ExtensionHandle,
@@ -298,14 +266,11 @@ object xpath {
       __obj.asInstanceOf[XXPathExtension]
     }
     
-    @scala.inline
-    implicit class XXPathExtensionMutableBuilder[Self <: XXPathExtension] (val x: Self) extends AnyVal {
+    extension [Self <: XXPathExtension](x: Self) {
       
-      @scala.inline
-      def setGetLibxml2ExtensionHandle(value: () => Libxml2ExtensionHandle): Self = StObject.set(x, "getLibxml2ExtensionHandle", js.Any.fromFunction0(value))
+      inline def setGetLibxml2ExtensionHandle(value: () => Libxml2ExtensionHandle): Self = StObject.set(x, "getLibxml2ExtensionHandle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLibxml2ExtensionHandle(value: Libxml2ExtensionHandle): Self = StObject.set(x, "Libxml2ExtensionHandle", value.asInstanceOf[js.Any])
+      inline def setLibxml2ExtensionHandle(value: Libxml2ExtensionHandle): Self = StObject.set(x, "Libxml2ExtensionHandle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -375,8 +340,7 @@ object xpath {
   }
   object XXPathObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Boolean: Boolean,
       Byte: Double,
       Double: Double,
@@ -405,68 +369,47 @@ object xpath {
       __obj.asInstanceOf[XXPathObject]
     }
     
-    @scala.inline
-    implicit class XXPathObjectMutableBuilder[Self <: XXPathObject] (val x: Self) extends AnyVal {
+    extension [Self <: XXPathObject](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: Boolean): Self = StObject.set(x, "Boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: Boolean): Self = StObject.set(x, "Boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setByte(value: Double): Self = StObject.set(x, "Byte", value.asInstanceOf[js.Any])
+      inline def setByte(value: Double): Self = StObject.set(x, "Byte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDouble(value: Double): Self = StObject.set(x, "Double", value.asInstanceOf[js.Any])
+      inline def setDouble(value: Double): Self = StObject.set(x, "Double", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloat(value: Double): Self = StObject.set(x, "Float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: Double): Self = StObject.set(x, "Float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetBoolean(value: () => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction0(value))
+      inline def setGetBoolean(value: () => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetByte(value: () => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction0(value))
+      inline def setGetByte(value: () => Double): Self = StObject.set(x, "getByte", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDouble(value: () => Double): Self = StObject.set(x, "getDouble", js.Any.fromFunction0(value))
+      inline def setGetDouble(value: () => Double): Self = StObject.set(x, "getDouble", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFloat(value: () => Double): Self = StObject.set(x, "getFloat", js.Any.fromFunction0(value))
+      inline def setGetFloat(value: () => Double): Self = StObject.set(x, "getFloat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHyper(value: () => Double): Self = StObject.set(x, "getHyper", js.Any.fromFunction0(value))
+      inline def setGetHyper(value: () => Double): Self = StObject.set(x, "getHyper", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLong(value: () => Double): Self = StObject.set(x, "getLong", js.Any.fromFunction0(value))
+      inline def setGetLong(value: () => Double): Self = StObject.set(x, "getLong", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNodeList(value: () => XNodeList): Self = StObject.set(x, "getNodeList", js.Any.fromFunction0(value))
+      inline def setGetNodeList(value: () => XNodeList): Self = StObject.set(x, "getNodeList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetObjectType(value: () => XPathObjectType): Self = StObject.set(x, "getObjectType", js.Any.fromFunction0(value))
+      inline def setGetObjectType(value: () => XPathObjectType): Self = StObject.set(x, "getObjectType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetShort(value: () => Double): Self = StObject.set(x, "getShort", js.Any.fromFunction0(value))
+      inline def setGetShort(value: () => Double): Self = StObject.set(x, "getShort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
+      inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHyper(value: Double): Self = StObject.set(x, "Hyper", value.asInstanceOf[js.Any])
+      inline def setHyper(value: Double): Self = StObject.set(x, "Hyper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong(value: Double): Self = StObject.set(x, "Long", value.asInstanceOf[js.Any])
+      inline def setLong(value: Double): Self = StObject.set(x, "Long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeList(value: XNodeList): Self = StObject.set(x, "NodeList", value.asInstanceOf[js.Any])
+      inline def setNodeList(value: XNodeList): Self = StObject.set(x, "NodeList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectType(value: XPathObjectType): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
+      inline def setObjectType(value: XPathObjectType): Self = StObject.set(x, "ObjectType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort(value: Double): Self = StObject.set(x, "Short", value.asInstanceOf[js.Any])
+      inline def setShort(value: Double): Self = StObject.set(x, "Short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
     }
   }
 }

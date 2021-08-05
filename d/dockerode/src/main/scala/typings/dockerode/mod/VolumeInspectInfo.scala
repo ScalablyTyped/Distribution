@@ -31,8 +31,7 @@ trait VolumeInspectInfo extends StObject {
 }
 object VolumeInspectInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Driver: String,
     Labels: StringDictionary[String],
     Mountpoint: String,
@@ -43,43 +42,30 @@ object VolumeInspectInfo {
     __obj.asInstanceOf[VolumeInspectInfo]
   }
   
-  @scala.inline
-  implicit class VolumeInspectInfoMutableBuilder[Self <: VolumeInspectInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeInspectInfo](x: Self) {
     
-    @scala.inline
-    def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountpoint(value: String): Self = StObject.set(x, "Mountpoint", value.asInstanceOf[js.Any])
+    inline def setMountpoint(value: String): Self = StObject.set(x, "Mountpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "Options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "Options", null)
     
-    @scala.inline
-    def setScope(value: local | global): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: local | global): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: StringDictionary[String]): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StringDictionary[String]): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUsageData(value: RefCount): Self = StObject.set(x, "UsageData", value.asInstanceOf[js.Any])
+    inline def setUsageData(value: RefCount): Self = StObject.set(x, "UsageData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageDataNull: Self = StObject.set(x, "UsageData", null)
+    inline def setUsageDataNull: Self = StObject.set(x, "UsageData", null)
     
-    @scala.inline
-    def setUsageDataUndefined: Self = StObject.set(x, "UsageData", js.undefined)
+    inline def setUsageDataUndefined: Self = StObject.set(x, "UsageData", js.undefined)
   }
 }

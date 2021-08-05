@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAlwaysDeleteConversation extends StObject
 object OlAlwaysDeleteConversation {
   
-  @scala.inline
-  def olAlwaysDelete: `1` = 1.asInstanceOf[`1`]
+  inline def olAlwaysDelete: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olAlwaysDeleteUnsupported: `2` = 2.asInstanceOf[`2`]
+  inline def olAlwaysDeleteUnsupported: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olDoNotDelete: `0` = 0.asInstanceOf[`0`]
+  inline def olDoNotDelete: `0` = 0.asInstanceOf[`0`]
 }

@@ -18,22 +18,17 @@ trait DeleteTransitGatewayMulticastDomainRequest extends StObject {
 }
 object DeleteTransitGatewayMulticastDomainRequest {
   
-  @scala.inline
-  def apply(TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId): DeleteTransitGatewayMulticastDomainRequest = {
+  inline def apply(TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId): DeleteTransitGatewayMulticastDomainRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayMulticastDomainId = TransitGatewayMulticastDomainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayMulticastDomainRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTransitGatewayMulticastDomainRequestMutableBuilder[Self <: DeleteTransitGatewayMulticastDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTransitGatewayMulticastDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayMulticastDomainId(value: TransitGatewayMulticastDomainId): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayMulticastDomainId(value: TransitGatewayMulticastDomainId): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
   }
 }

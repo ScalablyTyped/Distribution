@@ -101,97 +101,67 @@ trait DataSourceSettingsSorting
 }
 object DataSourceSettingsSorting {
   
-  @scala.inline
-  def apply(): DataSourceSettingsSorting = {
+  inline def apply(): DataSourceSettingsSorting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSettingsSorting]
   }
   
-  @scala.inline
-  implicit class DataSourceSettingsSortingMutableBuilder[Self <: DataSourceSettingsSorting] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSettingsSorting](x: Self) {
     
-    @scala.inline
-    def setApplyToAllData(value: Boolean): Self = StObject.set(x, "applyToAllData", value.asInstanceOf[js.Any])
+    inline def setApplyToAllData(value: Boolean): Self = StObject.set(x, "applyToAllData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyToAllDataUndefined: Self = StObject.set(x, "applyToAllData", js.undefined)
+    inline def setApplyToAllDataUndefined: Self = StObject.set(x, "applyToAllData", js.undefined)
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setCompareFunc(value: js.Any): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
+    inline def setCompareFunc(value: js.Any): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
+    inline def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
     
-    @scala.inline
-    def setCustomConvertFunc(value: js.Any): Self = StObject.set(x, "customConvertFunc", value.asInstanceOf[js.Any])
+    inline def setCustomConvertFunc(value: js.Any): Self = StObject.set(x, "customConvertFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomConvertFuncUndefined: Self = StObject.set(x, "customConvertFunc", js.undefined)
+    inline def setCustomConvertFuncUndefined: Self = StObject.set(x, "customConvertFunc", js.undefined)
     
-    @scala.inline
-    def setCustomFunc(value: js.Any): Self = StObject.set(x, "customFunc", value.asInstanceOf[js.Any])
+    inline def setCustomFunc(value: js.Any): Self = StObject.set(x, "customFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFuncUndefined: Self = StObject.set(x, "customFunc", js.undefined)
+    inline def setCustomFuncUndefined: Self = StObject.set(x, "customFunc", js.undefined)
     
-    @scala.inline
-    def setDefaultDirection(value: String): Self = StObject.set(x, "defaultDirection", value.asInstanceOf[js.Any])
+    inline def setDefaultDirection(value: String): Self = StObject.set(x, "defaultDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDirectionUndefined: Self = StObject.set(x, "defaultDirection", js.undefined)
+    inline def setDefaultDirectionUndefined: Self = StObject.set(x, "defaultDirection", js.undefined)
     
-    @scala.inline
-    def setDefaultFields(value: js.Array[js.Any]): Self = StObject.set(x, "defaultFields", value.asInstanceOf[js.Any])
+    inline def setDefaultFields(value: js.Array[js.Any]): Self = StObject.set(x, "defaultFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFieldsUndefined: Self = StObject.set(x, "defaultFields", js.undefined)
+    inline def setDefaultFieldsUndefined: Self = StObject.set(x, "defaultFields", js.undefined)
     
-    @scala.inline
-    def setDefaultFieldsVarargs(value: js.Any*): Self = StObject.set(x, "defaultFields", js.Array(value :_*))
+    inline def setDefaultFieldsVarargs(value: js.Any*): Self = StObject.set(x, "defaultFields", js.Array(value :_*))
     
-    @scala.inline
-    def setExprString(value: String): Self = StObject.set(x, "exprString", value.asInstanceOf[js.Any])
+    inline def setExprString(value: String): Self = StObject.set(x, "exprString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExprStringUndefined: Self = StObject.set(x, "exprString", js.undefined)
+    inline def setExprStringUndefined: Self = StObject.set(x, "exprString", js.undefined)
     
-    @scala.inline
-    def setExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+    inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    @scala.inline
-    def setExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
-    @scala.inline
-    def setSortUrlAscValueKey(value: String): Self = StObject.set(x, "sortUrlAscValueKey", value.asInstanceOf[js.Any])
+    inline def setSortUrlAscValueKey(value: String): Self = StObject.set(x, "sortUrlAscValueKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUrlAscValueKeyUndefined: Self = StObject.set(x, "sortUrlAscValueKey", js.undefined)
+    inline def setSortUrlAscValueKeyUndefined: Self = StObject.set(x, "sortUrlAscValueKey", js.undefined)
     
-    @scala.inline
-    def setSortUrlDescValueKey(value: String): Self = StObject.set(x, "sortUrlDescValueKey", value.asInstanceOf[js.Any])
+    inline def setSortUrlDescValueKey(value: String): Self = StObject.set(x, "sortUrlDescValueKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUrlDescValueKeyUndefined: Self = StObject.set(x, "sortUrlDescValueKey", js.undefined)
+    inline def setSortUrlDescValueKeyUndefined: Self = StObject.set(x, "sortUrlDescValueKey", js.undefined)
     
-    @scala.inline
-    def setSortUrlKey(value: String): Self = StObject.set(x, "sortUrlKey", value.asInstanceOf[js.Any])
+    inline def setSortUrlKey(value: String): Self = StObject.set(x, "sortUrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUrlKeyUndefined: Self = StObject.set(x, "sortUrlKey", js.undefined)
+    inline def setSortUrlKeyUndefined: Self = StObject.set(x, "sortUrlKey", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

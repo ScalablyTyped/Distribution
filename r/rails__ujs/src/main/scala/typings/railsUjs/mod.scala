@@ -124,14 +124,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CSRFProtection(xhr: XMLHttpRequest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CSRFProtection")(xhr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def CSRFProtection(xhr: XMLHttpRequest): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CSRFProtection")(xhr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def _empty(selector: String): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
+  inline def _empty(selector: String): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
   
-  @scala.inline
-  def ajax(options: AjaxOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ajax(options: AjaxOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@rails/ujs", "buttonClickSelector")
   @js.native
@@ -141,1430 +138,1232 @@ object mod {
   @js.native
   val buttonDisableSelector: String = js.native
   
-  @scala.inline
-  def confirm(message: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def confirm(message: String, element: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def confirm(message: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def confirm(message: String, element: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cspNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("cspNonce")().asInstanceOf[js.UndefOr[String]]
+  inline def cspNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("cspNonce")().asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def csrfParam(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("csrfParam")().asInstanceOf[String | Null]
+  inline def csrfParam(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("csrfParam")().asInstanceOf[String | Null]
   
-  @scala.inline
-  def csrfToken(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("csrfToken")().asInstanceOf[String | Null]
+  inline def csrfToken(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("csrfToken")().asInstanceOf[String | Null]
   
-  @scala.inline
-  def delegate(element: EventTarget, selector: String, eventType: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate(element: EventTarget, selector: SelectorObject, eventType: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def delegate(element: EventTarget, selector: String, eventType: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def delegate(element: EventTarget, selector: SelectorObject, eventType: String, handler: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_abort(
+  inline def delegate_abort(
     element: EventTarget,
     selector: String,
     eventType: abort,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_abort(
+  inline def delegate_abort(
     element: EventTarget,
     selector: SelectorObject,
     eventType: abort,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_animationcancel(
+  inline def delegate_animationcancel(
     element: EventTarget,
     selector: String,
     eventType: animationcancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_animationcancel(
+  inline def delegate_animationcancel(
     element: EventTarget,
     selector: SelectorObject,
     eventType: animationcancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_animationend(
+  inline def delegate_animationend(
     element: EventTarget,
     selector: String,
     eventType: animationend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_animationend(
+  inline def delegate_animationend(
     element: EventTarget,
     selector: SelectorObject,
     eventType: animationend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_animationiteration(
+  inline def delegate_animationiteration(
     element: EventTarget,
     selector: String,
     eventType: animationiteration,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_animationiteration(
+  inline def delegate_animationiteration(
     element: EventTarget,
     selector: SelectorObject,
     eventType: animationiteration,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_animationstart(
+  inline def delegate_animationstart(
     element: EventTarget,
     selector: String,
     eventType: animationstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_animationstart(
+  inline def delegate_animationstart(
     element: EventTarget,
     selector: SelectorObject,
     eventType: animationstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ AnimationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_auxclick(
+  inline def delegate_auxclick(
     element: EventTarget,
     selector: String,
     eventType: auxclick,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_auxclick(
+  inline def delegate_auxclick(
     element: EventTarget,
     selector: SelectorObject,
     eventType: auxclick,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_blur(
+  inline def delegate_blur(
     element: EventTarget,
     selector: String,
     eventType: blur,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_blur(
+  inline def delegate_blur(
     element: EventTarget,
     selector: SelectorObject,
     eventType: blur,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_cancel(
+  inline def delegate_cancel(
     element: EventTarget,
     selector: String,
     eventType: cancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_cancel(
+  inline def delegate_cancel(
     element: EventTarget,
     selector: SelectorObject,
     eventType: cancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_canplay(
+  inline def delegate_canplay(
     element: EventTarget,
     selector: String,
     eventType: canplay,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_canplay(
+  inline def delegate_canplay(
     element: EventTarget,
     selector: SelectorObject,
     eventType: canplay,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_canplaythrough(
+  inline def delegate_canplaythrough(
     element: EventTarget,
     selector: String,
     eventType: canplaythrough,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_canplaythrough(
+  inline def delegate_canplaythrough(
     element: EventTarget,
     selector: SelectorObject,
     eventType: canplaythrough,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_change(
+  inline def delegate_change(
     element: EventTarget,
     selector: String,
     eventType: change,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_change(
+  inline def delegate_change(
     element: EventTarget,
     selector: SelectorObject,
     eventType: change,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_click(
+  inline def delegate_click(
     element: EventTarget,
     selector: String,
     eventType: click,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_click(
+  inline def delegate_click(
     element: EventTarget,
     selector: SelectorObject,
     eventType: click,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_close(
+  inline def delegate_close(
     element: EventTarget,
     selector: String,
     eventType: close,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_close(
+  inline def delegate_close(
     element: EventTarget,
     selector: SelectorObject,
     eventType: close,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_contextmenu(
+  inline def delegate_contextmenu(
     element: EventTarget,
     selector: String,
     eventType: contextmenu,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_contextmenu(
+  inline def delegate_contextmenu(
     element: EventTarget,
     selector: SelectorObject,
     eventType: contextmenu,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_copy(
+  inline def delegate_copy(
     element: EventTarget,
     selector: String,
     eventType: copy,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_copy(
+  inline def delegate_copy(
     element: EventTarget,
     selector: SelectorObject,
     eventType: copy,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_cuechange(
+  inline def delegate_cuechange(
     element: EventTarget,
     selector: String,
     eventType: cuechange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_cuechange(
+  inline def delegate_cuechange(
     element: EventTarget,
     selector: SelectorObject,
     eventType: cuechange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_cut(
+  inline def delegate_cut(
     element: EventTarget,
     selector: String,
     eventType: cut,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_cut(
+  inline def delegate_cut(
     element: EventTarget,
     selector: SelectorObject,
     eventType: cut,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_dblclick(
+  inline def delegate_dblclick(
     element: EventTarget,
     selector: String,
     eventType: dblclick,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_dblclick(
+  inline def delegate_dblclick(
     element: EventTarget,
     selector: SelectorObject,
     eventType: dblclick,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_drag(
+  inline def delegate_drag(
     element: EventTarget,
     selector: String,
     eventType: drag,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_drag(
+  inline def delegate_drag(
     element: EventTarget,
     selector: SelectorObject,
     eventType: drag,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_dragend(
+  inline def delegate_dragend(
     element: EventTarget,
     selector: String,
     eventType: dragend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_dragend(
+  inline def delegate_dragend(
     element: EventTarget,
     selector: SelectorObject,
     eventType: dragend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_dragenter(
+  inline def delegate_dragenter(
     element: EventTarget,
     selector: String,
     eventType: dragenter,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_dragenter(
+  inline def delegate_dragenter(
     element: EventTarget,
     selector: SelectorObject,
     eventType: dragenter,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_dragexit(
+  inline def delegate_dragexit(
     element: EventTarget,
     selector: String,
     eventType: dragexit,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_dragexit(
+  inline def delegate_dragexit(
     element: EventTarget,
     selector: SelectorObject,
     eventType: dragexit,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_dragleave(
+  inline def delegate_dragleave(
     element: EventTarget,
     selector: String,
     eventType: dragleave,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_dragleave(
+  inline def delegate_dragleave(
     element: EventTarget,
     selector: SelectorObject,
     eventType: dragleave,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_dragover(
+  inline def delegate_dragover(
     element: EventTarget,
     selector: String,
     eventType: dragover,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_dragover(
+  inline def delegate_dragover(
     element: EventTarget,
     selector: SelectorObject,
     eventType: dragover,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_dragstart(
+  inline def delegate_dragstart(
     element: EventTarget,
     selector: String,
     eventType: dragstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_dragstart(
+  inline def delegate_dragstart(
     element: EventTarget,
     selector: SelectorObject,
     eventType: dragstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_drop(
+  inline def delegate_drop(
     element: EventTarget,
     selector: String,
     eventType: drop,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_drop(
+  inline def delegate_drop(
     element: EventTarget,
     selector: SelectorObject,
     eventType: drop,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_durationchange(
+  inline def delegate_durationchange(
     element: EventTarget,
     selector: String,
     eventType: durationchange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_durationchange(
+  inline def delegate_durationchange(
     element: EventTarget,
     selector: SelectorObject,
     eventType: durationchange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_emptied(
+  inline def delegate_emptied(
     element: EventTarget,
     selector: String,
     eventType: emptied,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_emptied(
+  inline def delegate_emptied(
     element: EventTarget,
     selector: SelectorObject,
     eventType: emptied,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_ended(
+  inline def delegate_ended(
     element: EventTarget,
     selector: String,
     eventType: ended,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_ended(
+  inline def delegate_ended(
     element: EventTarget,
     selector: SelectorObject,
     eventType: ended,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_error(
+  inline def delegate_error(
     element: EventTarget,
     selector: String,
     eventType: error,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_error(
+  inline def delegate_error(
     element: EventTarget,
     selector: SelectorObject,
     eventType: error,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_focus(
+  inline def delegate_focus(
     element: EventTarget,
     selector: String,
     eventType: focus,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_focus(
+  inline def delegate_focus(
     element: EventTarget,
     selector: SelectorObject,
     eventType: focus,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_focusin(
+  inline def delegate_focusin(
     element: EventTarget,
     selector: String,
     eventType: focusin,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_focusin(
+  inline def delegate_focusin(
     element: EventTarget,
     selector: SelectorObject,
     eventType: focusin,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_focusout(
+  inline def delegate_focusout(
     element: EventTarget,
     selector: String,
     eventType: focusout,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_focusout(
+  inline def delegate_focusout(
     element: EventTarget,
     selector: SelectorObject,
     eventType: focusout,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ FocusEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_fullscreenchange(
+  inline def delegate_fullscreenchange(
     element: EventTarget,
     selector: String,
     eventType: fullscreenchange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_fullscreenchange(
+  inline def delegate_fullscreenchange(
     element: EventTarget,
     selector: SelectorObject,
     eventType: fullscreenchange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_fullscreenerror(
+  inline def delegate_fullscreenerror(
     element: EventTarget,
     selector: String,
     eventType: fullscreenerror,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_fullscreenerror(
+  inline def delegate_fullscreenerror(
     element: EventTarget,
     selector: SelectorObject,
     eventType: fullscreenerror,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_gotpointercapture(
+  inline def delegate_gotpointercapture(
     element: EventTarget,
     selector: String,
     eventType: gotpointercapture,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_gotpointercapture(
+  inline def delegate_gotpointercapture(
     element: EventTarget,
     selector: SelectorObject,
     eventType: gotpointercapture,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_input(
+  inline def delegate_input(
     element: EventTarget,
     selector: String,
     eventType: input,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_input(
+  inline def delegate_input(
     element: EventTarget,
     selector: SelectorObject,
     eventType: input,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_invalid(
+  inline def delegate_invalid(
     element: EventTarget,
     selector: String,
     eventType: invalid,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_invalid(
+  inline def delegate_invalid(
     element: EventTarget,
     selector: SelectorObject,
     eventType: invalid,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_keydown(
+  inline def delegate_keydown(
     element: EventTarget,
     selector: String,
     eventType: keydown,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_keydown(
+  inline def delegate_keydown(
     element: EventTarget,
     selector: SelectorObject,
     eventType: keydown,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_keypress(
+  inline def delegate_keypress(
     element: EventTarget,
     selector: String,
     eventType: keypress,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_keypress(
+  inline def delegate_keypress(
     element: EventTarget,
     selector: SelectorObject,
     eventType: keypress,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_keyup(
+  inline def delegate_keyup(
     element: EventTarget,
     selector: String,
     eventType: keyup,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_keyup(
+  inline def delegate_keyup(
     element: EventTarget,
     selector: SelectorObject,
     eventType: keyup,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ KeyboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_load(
+  inline def delegate_load(
     element: EventTarget,
     selector: String,
     eventType: load,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_load(
+  inline def delegate_load(
     element: EventTarget,
     selector: SelectorObject,
     eventType: load,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_loadeddata(
+  inline def delegate_loadeddata(
     element: EventTarget,
     selector: String,
     eventType: loadeddata,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_loadeddata(
+  inline def delegate_loadeddata(
     element: EventTarget,
     selector: SelectorObject,
     eventType: loadeddata,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_loadedmetadata(
+  inline def delegate_loadedmetadata(
     element: EventTarget,
     selector: String,
     eventType: loadedmetadata,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_loadedmetadata(
+  inline def delegate_loadedmetadata(
     element: EventTarget,
     selector: SelectorObject,
     eventType: loadedmetadata,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_loadstart(
+  inline def delegate_loadstart(
     element: EventTarget,
     selector: String,
     eventType: loadstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_loadstart(
+  inline def delegate_loadstart(
     element: EventTarget,
     selector: SelectorObject,
     eventType: loadstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_lostpointercapture(
+  inline def delegate_lostpointercapture(
     element: EventTarget,
     selector: String,
     eventType: lostpointercapture,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_lostpointercapture(
+  inline def delegate_lostpointercapture(
     element: EventTarget,
     selector: SelectorObject,
     eventType: lostpointercapture,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_mousedown(
+  inline def delegate_mousedown(
     element: EventTarget,
     selector: String,
     eventType: mousedown,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_mousedown(
+  inline def delegate_mousedown(
     element: EventTarget,
     selector: SelectorObject,
     eventType: mousedown,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_mouseenter(
+  inline def delegate_mouseenter(
     element: EventTarget,
     selector: String,
     eventType: mouseenter,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_mouseenter(
+  inline def delegate_mouseenter(
     element: EventTarget,
     selector: SelectorObject,
     eventType: mouseenter,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_mouseleave(
+  inline def delegate_mouseleave(
     element: EventTarget,
     selector: String,
     eventType: mouseleave,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_mouseleave(
+  inline def delegate_mouseleave(
     element: EventTarget,
     selector: SelectorObject,
     eventType: mouseleave,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_mousemove(
+  inline def delegate_mousemove(
     element: EventTarget,
     selector: String,
     eventType: mousemove,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_mousemove(
+  inline def delegate_mousemove(
     element: EventTarget,
     selector: SelectorObject,
     eventType: mousemove,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_mouseout(
+  inline def delegate_mouseout(
     element: EventTarget,
     selector: String,
     eventType: mouseout,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_mouseout(
+  inline def delegate_mouseout(
     element: EventTarget,
     selector: SelectorObject,
     eventType: mouseout,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_mouseover(
+  inline def delegate_mouseover(
     element: EventTarget,
     selector: String,
     eventType: mouseover,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_mouseover(
+  inline def delegate_mouseover(
     element: EventTarget,
     selector: SelectorObject,
     eventType: mouseover,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_mouseup(
+  inline def delegate_mouseup(
     element: EventTarget,
     selector: String,
     eventType: mouseup,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_mouseup(
+  inline def delegate_mouseup(
     element: EventTarget,
     selector: SelectorObject,
     eventType: mouseup,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_paste(
+  inline def delegate_paste(
     element: EventTarget,
     selector: String,
     eventType: paste,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_paste(
+  inline def delegate_paste(
     element: EventTarget,
     selector: SelectorObject,
     eventType: paste,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ClipboardEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pause(
+  inline def delegate_pause(
     element: EventTarget,
     selector: String,
     eventType: pause,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pause(
+  inline def delegate_pause(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pause,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_play(
+  inline def delegate_play(
     element: EventTarget,
     selector: String,
     eventType: play,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_play(
+  inline def delegate_play(
     element: EventTarget,
     selector: SelectorObject,
     eventType: play,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_playing(
+  inline def delegate_playing(
     element: EventTarget,
     selector: String,
     eventType: playing,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_playing(
+  inline def delegate_playing(
     element: EventTarget,
     selector: SelectorObject,
     eventType: playing,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointercancel(
+  inline def delegate_pointercancel(
     element: EventTarget,
     selector: String,
     eventType: pointercancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointercancel(
+  inline def delegate_pointercancel(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointercancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointerdown(
+  inline def delegate_pointerdown(
     element: EventTarget,
     selector: String,
     eventType: pointerdown,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointerdown(
+  inline def delegate_pointerdown(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointerdown,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointerenter(
+  inline def delegate_pointerenter(
     element: EventTarget,
     selector: String,
     eventType: pointerenter,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointerenter(
+  inline def delegate_pointerenter(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointerenter,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointerleave(
+  inline def delegate_pointerleave(
     element: EventTarget,
     selector: String,
     eventType: pointerleave,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointerleave(
+  inline def delegate_pointerleave(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointerleave,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointermove(
+  inline def delegate_pointermove(
     element: EventTarget,
     selector: String,
     eventType: pointermove,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointermove(
+  inline def delegate_pointermove(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointermove,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointerout(
+  inline def delegate_pointerout(
     element: EventTarget,
     selector: String,
     eventType: pointerout,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointerout(
+  inline def delegate_pointerout(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointerout,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointerover(
+  inline def delegate_pointerover(
     element: EventTarget,
     selector: String,
     eventType: pointerover,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointerover(
+  inline def delegate_pointerover(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointerover,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_pointerup(
+  inline def delegate_pointerup(
     element: EventTarget,
     selector: String,
     eventType: pointerup,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_pointerup(
+  inline def delegate_pointerup(
     element: EventTarget,
     selector: SelectorObject,
     eventType: pointerup,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_progress(
+  inline def delegate_progress(
     element: EventTarget,
     selector: String,
     eventType: progress,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_progress(
+  inline def delegate_progress(
     element: EventTarget,
     selector: SelectorObject,
     eventType: progress,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ProgressEvent[EventTarget], js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_ratechange(
+  inline def delegate_ratechange(
     element: EventTarget,
     selector: String,
     eventType: ratechange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_ratechange(
+  inline def delegate_ratechange(
     element: EventTarget,
     selector: SelectorObject,
     eventType: ratechange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_reset(
+  inline def delegate_reset(
     element: EventTarget,
     selector: String,
     eventType: reset,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_reset(
+  inline def delegate_reset(
     element: EventTarget,
     selector: SelectorObject,
     eventType: reset,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_resize(
+  inline def delegate_resize(
     element: EventTarget,
     selector: String,
     eventType: resize,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_resize(
+  inline def delegate_resize(
     element: EventTarget,
     selector: SelectorObject,
     eventType: resize,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ UIEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_scroll(
+  inline def delegate_scroll(
     element: EventTarget,
     selector: String,
     eventType: scroll,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_scroll(
+  inline def delegate_scroll(
     element: EventTarget,
     selector: SelectorObject,
     eventType: scroll,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_securitypolicyviolation(
+  inline def delegate_securitypolicyviolation(
     element: EventTarget,
     selector: String,
     eventType: securitypolicyviolation,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ SecurityPolicyViolationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_securitypolicyviolation(
+  inline def delegate_securitypolicyviolation(
     element: EventTarget,
     selector: SelectorObject,
     eventType: securitypolicyviolation,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ SecurityPolicyViolationEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_seeked(
+  inline def delegate_seeked(
     element: EventTarget,
     selector: String,
     eventType: seeked,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_seeked(
+  inline def delegate_seeked(
     element: EventTarget,
     selector: SelectorObject,
     eventType: seeked,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_seeking(
+  inline def delegate_seeking(
     element: EventTarget,
     selector: String,
     eventType: seeking,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_seeking(
+  inline def delegate_seeking(
     element: EventTarget,
     selector: SelectorObject,
     eventType: seeking,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_select(
+  inline def delegate_select(
     element: EventTarget,
     selector: String,
     eventType: select,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_select(
+  inline def delegate_select(
     element: EventTarget,
     selector: SelectorObject,
     eventType: select,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_selectionchange(
+  inline def delegate_selectionchange(
     element: EventTarget,
     selector: String,
     eventType: selectionchange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_selectionchange(
+  inline def delegate_selectionchange(
     element: EventTarget,
     selector: SelectorObject,
     eventType: selectionchange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_selectstart(
+  inline def delegate_selectstart(
     element: EventTarget,
     selector: String,
     eventType: selectstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_selectstart(
+  inline def delegate_selectstart(
     element: EventTarget,
     selector: SelectorObject,
     eventType: selectstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_stalled(
+  inline def delegate_stalled(
     element: EventTarget,
     selector: String,
     eventType: stalled,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_stalled(
+  inline def delegate_stalled(
     element: EventTarget,
     selector: SelectorObject,
     eventType: stalled,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_submit(
+  inline def delegate_submit(
     element: EventTarget,
     selector: String,
     eventType: submit,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_submit(
+  inline def delegate_submit(
     element: EventTarget,
     selector: SelectorObject,
     eventType: submit,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_suspend(
+  inline def delegate_suspend(
     element: EventTarget,
     selector: String,
     eventType: suspend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_suspend(
+  inline def delegate_suspend(
     element: EventTarget,
     selector: SelectorObject,
     eventType: suspend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_timeupdate(
+  inline def delegate_timeupdate(
     element: EventTarget,
     selector: String,
     eventType: timeupdate,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_timeupdate(
+  inline def delegate_timeupdate(
     element: EventTarget,
     selector: SelectorObject,
     eventType: timeupdate,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_toggle(
+  inline def delegate_toggle(
     element: EventTarget,
     selector: String,
     eventType: toggle,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_toggle(
+  inline def delegate_toggle(
     element: EventTarget,
     selector: SelectorObject,
     eventType: toggle,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_touchcancel(
+  inline def delegate_touchcancel(
     element: EventTarget,
     selector: String,
     eventType: touchcancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_touchcancel(
+  inline def delegate_touchcancel(
     element: EventTarget,
     selector: SelectorObject,
     eventType: touchcancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_touchend(
+  inline def delegate_touchend(
     element: EventTarget,
     selector: String,
     eventType: touchend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_touchend(
+  inline def delegate_touchend(
     element: EventTarget,
     selector: SelectorObject,
     eventType: touchend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_touchmove(
+  inline def delegate_touchmove(
     element: EventTarget,
     selector: String,
     eventType: touchmove,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_touchmove(
+  inline def delegate_touchmove(
     element: EventTarget,
     selector: SelectorObject,
     eventType: touchmove,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_touchstart(
+  inline def delegate_touchstart(
     element: EventTarget,
     selector: String,
     eventType: touchstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_touchstart(
+  inline def delegate_touchstart(
     element: EventTarget,
     selector: SelectorObject,
     eventType: touchstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_transitioncancel(
+  inline def delegate_transitioncancel(
     element: EventTarget,
     selector: String,
     eventType: transitioncancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_transitioncancel(
+  inline def delegate_transitioncancel(
     element: EventTarget,
     selector: SelectorObject,
     eventType: transitioncancel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_transitionend(
+  inline def delegate_transitionend(
     element: EventTarget,
     selector: String,
     eventType: transitionend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_transitionend(
+  inline def delegate_transitionend(
     element: EventTarget,
     selector: SelectorObject,
     eventType: transitionend,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_transitionrun(
+  inline def delegate_transitionrun(
     element: EventTarget,
     selector: String,
     eventType: transitionrun,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_transitionrun(
+  inline def delegate_transitionrun(
     element: EventTarget,
     selector: SelectorObject,
     eventType: transitionrun,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_transitionstart(
+  inline def delegate_transitionstart(
     element: EventTarget,
     selector: String,
     eventType: transitionstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_transitionstart(
+  inline def delegate_transitionstart(
     element: EventTarget,
     selector: SelectorObject,
     eventType: transitionstart,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TransitionEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_volumechange(
+  inline def delegate_volumechange(
     element: EventTarget,
     selector: String,
     eventType: volumechange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_volumechange(
+  inline def delegate_volumechange(
     element: EventTarget,
     selector: SelectorObject,
     eventType: volumechange,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_waiting(
+  inline def delegate_waiting(
     element: EventTarget,
     selector: String,
     eventType: waiting,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_waiting(
+  inline def delegate_waiting(
     element: EventTarget,
     selector: SelectorObject,
     eventType: waiting,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ Event, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def delegate_wheel(
+  inline def delegate_wheel(
     element: EventTarget,
     selector: String,
     eventType: wheel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def delegate_wheel(
+  inline def delegate_wheel(
     element: EventTarget,
     selector: SelectorObject,
     eventType: wheel,
     handler: js.ThisFunction1[/* this */ HTMLElement, /* ev */ WheelEvent, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("delegate")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def disableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def disableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def enableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def enableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableElement(e: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@rails/ujs", "fileInputSelector")
   @js.native
   val fileInputSelector: String = js.native
   
-  @scala.inline
-  def fire(obj: EventTarget, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def fire(obj: EventTarget, name: String, data: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def fire(obj: EventTarget, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def fire(obj: EventTarget, name: String, data: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(obj.asInstanceOf[js.Any], name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@rails/ujs", "formDisableSelector")
   @js.native
   val formDisableSelector: String = js.native
   
-  @scala.inline
-  def formElements(form: Element, selector: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("formElements")(form.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
+  inline def formElements(form: Element, selector: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("formElements")(form.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
   @JSImport("@rails/ujs", "formEnableSelector")
   @js.native
@@ -1574,37 +1373,29 @@ object mod {
   @js.native
   val formInputClickSelector: String = js.native
   
-  @scala.inline
-  def formSubmitButtonClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formSubmitButtonClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def formSubmitButtonClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("formSubmitButtonClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@rails/ujs", "formSubmitSelector")
   @js.native
   val formSubmitSelector: String = js.native
   
-  @scala.inline
-  def getData(element: Element, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getData(element: Element, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def handleConfirm(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleConfirm")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleConfirm(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleConfirm")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def handleDisabledElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleDisabledElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleDisabledElement(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleDisabledElement")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def handleMethod(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleMethod")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleMethod(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleMethod")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def handleRemote(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleRemote")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handleRemote(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleRemote")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def href(element: HTMLElement): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("href")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def href(element: HTMLElement): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("href")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   @JSImport("@rails/ujs", "inputChangeSelector")
   @js.native
   val inputChangeSelector: String = js.native
   
-  @scala.inline
-  def isCrossDomain(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrossDomain")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCrossDomain(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrossDomain")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("@rails/ujs", "linkClickSelector")
   @js.native
@@ -1614,29 +1405,20 @@ object mod {
   @js.native
   val linkDisableSelector: String = js.native
   
-  @scala.inline
-  def loadCSPNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCSPNonce")().asInstanceOf[js.UndefOr[String]]
+  inline def loadCSPNonce(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCSPNonce")().asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def matches(element: Element, selector: SelectorObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matches(element: Element, selector: SelectorObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def preventInsignificantClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventInsignificantClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def preventInsignificantClick(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventInsignificantClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def refreshCSRFTokens(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCSRFTokens")().asInstanceOf[Unit]
+  inline def refreshCSRFTokens(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshCSRFTokens")().asInstanceOf[Unit]
   
-  @scala.inline
-  def serializeElement(element: Element, additionalParam: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeElement")(element.asInstanceOf[js.Any], additionalParam.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def serializeElement(element: Element, additionalParam: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeElement")(element.asInstanceOf[js.Any], additionalParam.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def setData(element: Element, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setData(element: Element, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(element.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
+  inline def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
-  @scala.inline
-  def stopEverything(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEverything")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def stopEverything(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEverything")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

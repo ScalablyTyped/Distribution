@@ -19,8 +19,7 @@ trait SaveWidget extends StObject {
 }
 object SaveWidget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAttribution: () => Attribution,
     getPlace: () => Place,
     setAttribution: Attribution => Unit,
@@ -31,22 +30,16 @@ object SaveWidget {
     __obj.asInstanceOf[SaveWidget]
   }
   
-  @scala.inline
-  implicit class SaveWidgetMutableBuilder[Self <: SaveWidget] (val x: Self) extends AnyVal {
+  extension [Self <: SaveWidget](x: Self) {
     
-    @scala.inline
-    def setGetAttribution(value: () => Attribution): Self = StObject.set(x, "getAttribution", js.Any.fromFunction0(value))
+    inline def setGetAttribution(value: () => Attribution): Self = StObject.set(x, "getAttribution", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlace(value: () => Place): Self = StObject.set(x, "getPlace", js.Any.fromFunction0(value))
+    inline def setGetPlace(value: () => Place): Self = StObject.set(x, "getPlace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAttribution(value: Attribution => Unit): Self = StObject.set(x, "setAttribution", js.Any.fromFunction1(value))
+    inline def setSetAttribution(value: Attribution => Unit): Self = StObject.set(x, "setAttribution", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: SaveWidgetOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: SaveWidgetOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPlace(value: Place => Unit): Self = StObject.set(x, "setPlace", js.Any.fromFunction1(value))
+    inline def setSetPlace(value: Place => Unit): Self = StObject.set(x, "setPlace", js.Any.fromFunction1(value))
   }
 }

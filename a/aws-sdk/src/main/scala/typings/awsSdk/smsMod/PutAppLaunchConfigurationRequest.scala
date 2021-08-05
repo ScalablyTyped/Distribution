@@ -28,40 +28,29 @@ trait PutAppLaunchConfigurationRequest extends StObject {
 }
 object PutAppLaunchConfigurationRequest {
   
-  @scala.inline
-  def apply(): PutAppLaunchConfigurationRequest = {
+  inline def apply(): PutAppLaunchConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAppLaunchConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutAppLaunchConfigurationRequestMutableBuilder[Self <: PutAppLaunchConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAppLaunchConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setAutoLaunch(value: AutoLaunch): Self = StObject.set(x, "autoLaunch", value.asInstanceOf[js.Any])
+    inline def setAutoLaunch(value: AutoLaunch): Self = StObject.set(x, "autoLaunch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoLaunchUndefined: Self = StObject.set(x, "autoLaunch", js.undefined)
+    inline def setAutoLaunchUndefined: Self = StObject.set(x, "autoLaunch", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
-    @scala.inline
-    def setServerGroupLaunchConfigurations(value: ServerGroupLaunchConfigurations): Self = StObject.set(x, "serverGroupLaunchConfigurations", value.asInstanceOf[js.Any])
+    inline def setServerGroupLaunchConfigurations(value: ServerGroupLaunchConfigurations): Self = StObject.set(x, "serverGroupLaunchConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerGroupLaunchConfigurationsUndefined: Self = StObject.set(x, "serverGroupLaunchConfigurations", js.undefined)
+    inline def setServerGroupLaunchConfigurationsUndefined: Self = StObject.set(x, "serverGroupLaunchConfigurations", js.undefined)
     
-    @scala.inline
-    def setServerGroupLaunchConfigurationsVarargs(value: ServerGroupLaunchConfiguration*): Self = StObject.set(x, "serverGroupLaunchConfigurations", js.Array(value :_*))
+    inline def setServerGroupLaunchConfigurationsVarargs(value: ServerGroupLaunchConfiguration*): Self = StObject.set(x, "serverGroupLaunchConfigurations", js.Array(value :_*))
   }
 }

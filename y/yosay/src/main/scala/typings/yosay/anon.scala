@@ -12,17 +12,14 @@ object anon {
   }
   object MaxLength {
     
-    @scala.inline
-    def apply(maxLength: Double): MaxLength = {
+    inline def apply(maxLength: Double): MaxLength = {
       val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxLength]
     }
     
-    @scala.inline
-    implicit class MaxLengthMutableBuilder[Self <: MaxLength] (val x: Self) extends AnyVal {
+    extension [Self <: MaxLength](x: Self) {
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,34 +21,25 @@ trait AdmissionRule extends StObject {
 }
 object AdmissionRule {
   
-  @scala.inline
-  def apply(): AdmissionRule = {
+  inline def apply(): AdmissionRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdmissionRule]
   }
   
-  @scala.inline
-  implicit class AdmissionRuleMutableBuilder[Self <: AdmissionRule] (val x: Self) extends AnyVal {
+  extension [Self <: AdmissionRule](x: Self) {
     
-    @scala.inline
-    def setEnforcementMode(value: String): Self = StObject.set(x, "enforcementMode", value.asInstanceOf[js.Any])
+    inline def setEnforcementMode(value: String): Self = StObject.set(x, "enforcementMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforcementModeUndefined: Self = StObject.set(x, "enforcementMode", js.undefined)
+    inline def setEnforcementModeUndefined: Self = StObject.set(x, "enforcementMode", js.undefined)
     
-    @scala.inline
-    def setEvaluationMode(value: String): Self = StObject.set(x, "evaluationMode", value.asInstanceOf[js.Any])
+    inline def setEvaluationMode(value: String): Self = StObject.set(x, "evaluationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationModeUndefined: Self = StObject.set(x, "evaluationMode", js.undefined)
+    inline def setEvaluationModeUndefined: Self = StObject.set(x, "evaluationMode", js.undefined)
     
-    @scala.inline
-    def setRequireAttestationsBy(value: js.Array[String]): Self = StObject.set(x, "requireAttestationsBy", value.asInstanceOf[js.Any])
+    inline def setRequireAttestationsBy(value: js.Array[String]): Self = StObject.set(x, "requireAttestationsBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireAttestationsByUndefined: Self = StObject.set(x, "requireAttestationsBy", js.undefined)
+    inline def setRequireAttestationsByUndefined: Self = StObject.set(x, "requireAttestationsBy", js.undefined)
     
-    @scala.inline
-    def setRequireAttestationsByVarargs(value: String*): Self = StObject.set(x, "requireAttestationsBy", js.Array(value :_*))
+    inline def setRequireAttestationsByVarargs(value: String*): Self = StObject.set(x, "requireAttestationsBy", js.Array(value :_*))
   }
 }

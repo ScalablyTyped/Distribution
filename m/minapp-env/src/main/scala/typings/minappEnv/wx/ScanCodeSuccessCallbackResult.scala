@@ -63,8 +63,7 @@ trait ScanCodeSuccessCallbackResult extends StObject {
 }
 object ScanCodeSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     charSet: String,
     path: String,
     rawData: String,
@@ -75,23 +74,17 @@ object ScanCodeSuccessCallbackResult {
     __obj.asInstanceOf[ScanCodeSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ScanCodeSuccessCallbackResultMutableBuilder[Self <: ScanCodeSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScanCodeSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+    inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanType(
+    inline def setScanType(
       value: QR_CODE | AZTEC | CODABAR | CODE_39 | CODE_93 | CODE_128 | DATA_MATRIX | EAN_8 | EAN_13 | ITF | MAXICODE | PDF_417 | RSS_14 | RSS_EXPANDED | UPC_A | UPC_E | UPC_EAN_EXTENSION | WX_CODE | CODE_25
     ): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
   }

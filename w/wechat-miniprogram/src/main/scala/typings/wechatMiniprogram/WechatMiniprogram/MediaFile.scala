@@ -27,8 +27,7 @@ trait MediaFile extends StObject {
 }
 object MediaFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double,
     height: Double,
     size: Double,
@@ -40,25 +39,18 @@ object MediaFile {
     __obj.asInstanceOf[MediaFile]
   }
   
-  @scala.inline
-  implicit class MediaFileMutableBuilder[Self <: MediaFile] (val x: Self) extends AnyVal {
+  extension [Self <: MediaFile](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbTempFilePath(value: String): Self = StObject.set(x, "thumbTempFilePath", value.asInstanceOf[js.Any])
+    inline def setThumbTempFilePath(value: String): Self = StObject.set(x, "thumbTempFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

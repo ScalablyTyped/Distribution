@@ -10,6 +10,5 @@ object wrapConnectorHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapConnectorHooks(hooks: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapConnectorHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def wrapConnectorHooks(hooks: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapConnectorHooks")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

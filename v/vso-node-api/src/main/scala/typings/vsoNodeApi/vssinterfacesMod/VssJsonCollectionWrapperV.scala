@@ -12,16 +12,13 @@ trait VssJsonCollectionWrapperV[T]
 }
 object VssJsonCollectionWrapperV {
   
-  @scala.inline
-  def apply[T](count: Double, value: T): VssJsonCollectionWrapperV[T] = {
+  inline def apply[T](count: Double, value: T): VssJsonCollectionWrapperV[T] = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[VssJsonCollectionWrapperV[T]]
   }
   
-  @scala.inline
-  implicit class VssJsonCollectionWrapperVMutableBuilder[Self <: VssJsonCollectionWrapperV[?], T] (val x: Self & VssJsonCollectionWrapperV[T]) extends AnyVal {
+  extension [Self <: VssJsonCollectionWrapperV[?], T](x: Self & VssJsonCollectionWrapperV[T]) {
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

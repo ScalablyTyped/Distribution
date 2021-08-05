@@ -19,6 +19,5 @@ object Connection {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromSession(session: typings.puppeteerCore.commonConnectionMod.CDPSession): typings.puppeteerCore.commonConnectionMod.Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSession")(session.asInstanceOf[js.Any]).asInstanceOf[typings.puppeteerCore.commonConnectionMod.Connection]
+  inline def fromSession(session: typings.puppeteerCore.commonConnectionMod.CDPSession): typings.puppeteerCore.commonConnectionMod.Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSession")(session.asInstanceOf[js.Any]).asInstanceOf[typings.puppeteerCore.commonConnectionMod.Connection]
 }

@@ -23,43 +23,31 @@ trait AndroidRoboTest extends StObject {
 }
 object AndroidRoboTest {
   
-  @scala.inline
-  def apply(): AndroidRoboTest = {
+  inline def apply(): AndroidRoboTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidRoboTest]
   }
   
-  @scala.inline
-  implicit class AndroidRoboTestMutableBuilder[Self <: AndroidRoboTest] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidRoboTest](x: Self) {
     
-    @scala.inline
-    def setAppInitialActivity(value: String): Self = StObject.set(x, "appInitialActivity", value.asInstanceOf[js.Any])
+    inline def setAppInitialActivity(value: String): Self = StObject.set(x, "appInitialActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInitialActivityUndefined: Self = StObject.set(x, "appInitialActivity", js.undefined)
+    inline def setAppInitialActivityUndefined: Self = StObject.set(x, "appInitialActivity", js.undefined)
     
-    @scala.inline
-    def setBootstrapPackageId(value: String): Self = StObject.set(x, "bootstrapPackageId", value.asInstanceOf[js.Any])
+    inline def setBootstrapPackageId(value: String): Self = StObject.set(x, "bootstrapPackageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapPackageIdUndefined: Self = StObject.set(x, "bootstrapPackageId", js.undefined)
+    inline def setBootstrapPackageIdUndefined: Self = StObject.set(x, "bootstrapPackageId", js.undefined)
     
-    @scala.inline
-    def setBootstrapRunnerClass(value: String): Self = StObject.set(x, "bootstrapRunnerClass", value.asInstanceOf[js.Any])
+    inline def setBootstrapRunnerClass(value: String): Self = StObject.set(x, "bootstrapRunnerClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapRunnerClassUndefined: Self = StObject.set(x, "bootstrapRunnerClass", js.undefined)
+    inline def setBootstrapRunnerClassUndefined: Self = StObject.set(x, "bootstrapRunnerClass", js.undefined)
     
-    @scala.inline
-    def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+    inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+    inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
     
-    @scala.inline
-    def setMaxSteps(value: Double): Self = StObject.set(x, "maxSteps", value.asInstanceOf[js.Any])
+    inline def setMaxSteps(value: Double): Self = StObject.set(x, "maxSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStepsUndefined: Self = StObject.set(x, "maxSteps", js.undefined)
+    inline def setMaxStepsUndefined: Self = StObject.set(x, "maxSteps", js.undefined)
   }
 }

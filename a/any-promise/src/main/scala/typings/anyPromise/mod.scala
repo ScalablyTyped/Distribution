@@ -29,20 +29,15 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def all[T1](values: js.Array[T1 | Thenable[T1]]): Promise[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[T1]]]
+  inline def all[T1](values: js.Array[T1 | Thenable[T1]]): Promise[js.Array[T1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[T1]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2](values: js.Tuple2[T1 | Thenable[T1], T2 | Thenable[T2]]): Promise[js.Tuple2[T1, T2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple2[T1, T2]]]
+  inline def all[T1, T2](values: js.Tuple2[T1 | Thenable[T1], T2 | Thenable[T2]]): Promise[js.Tuple2[T1, T2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple2[T1, T2]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3](values: js.Tuple3[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3]]): Promise[js.Tuple3[T1, T2, T3]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple3[T1, T2, T3]]]
+  inline def all[T1, T2, T3](values: js.Tuple3[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3]]): Promise[js.Tuple3[T1, T2, T3]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple3[T1, T2, T3]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4](values: js.Tuple4[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3], T4 | Thenable[T4]]): Promise[js.Tuple4[T1, T2, T3, T4]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple4[T1, T2, T3, T4]]]
+  inline def all[T1, T2, T3, T4](values: js.Tuple4[T1 | Thenable[T1], T2 | Thenable[T2], T3 | Thenable[T3], T4 | Thenable[T4]]): Promise[js.Tuple4[T1, T2, T3, T4]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple4[T1, T2, T3, T4]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4, T5](
+  inline def all[T1, T2, T3, T4, T5](
     values: js.Tuple5[
       T1 | Thenable[T1], 
       T2 | Thenable[T2], 
@@ -52,8 +47,7 @@ object mod {
     ]
   ): Promise[js.Tuple5[T1, T2, T3, T4, T5]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple5[T1, T2, T3, T4, T5]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6](
+  inline def all[T1, T2, T3, T4, T5, T6](
     values: js.Tuple6[
       T1 | Thenable[T1], 
       T2 | Thenable[T2], 
@@ -64,8 +58,7 @@ object mod {
     ]
   ): Promise[js.Tuple6[T1, T2, T3, T4, T5, T6]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple6[T1, T2, T3, T4, T5, T6]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6, T7](
+  inline def all[T1, T2, T3, T4, T5, T6, T7](
     values: js.Tuple7[
       T1 | Thenable[T1], 
       T2 | Thenable[T2], 
@@ -77,8 +70,7 @@ object mod {
     ]
   ): Promise[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple7[T1, T2, T3, T4, T5, T6, T7]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6, T7, T8](
+  inline def all[T1, T2, T3, T4, T5, T6, T7, T8](
     values: js.Tuple8[
       T1 | Thenable[T1], 
       T2 | Thenable[T2], 
@@ -91,8 +83,7 @@ object mod {
     ]
   ): Promise[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple8[T1, T2, T3, T4, T5, T6, T7, T8]]]
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6, T7, T8, T9](
+  inline def all[T1, T2, T3, T4, T5, T6, T7, T8, T9](
     values: js.Tuple9[
       T1 | Thenable[T1], 
       T2 | Thenable[T2], 
@@ -111,8 +102,7 @@ object mod {
     * The fulfillment value is an array (in order) of fulfillment values. The rejection value is the first rejection value.
     */
   /* static member */
-  @scala.inline
-  def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
+  inline def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
     values: js.Tuple10[
       T1 | Thenable[T1], 
       T2 | Thenable[T2], 
@@ -128,35 +118,29 @@ object mod {
   ): Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]]]
   
   /* static member */
-  @scala.inline
-  def all_TAll[TAll](values: js.Array[TAll | Thenable[TAll]]): Promise[js.Array[TAll]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[TAll]]]
+  inline def all_TAll[TAll](values: js.Array[TAll | Thenable[TAll]]): Promise[js.Array[TAll]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[TAll]]]
   
   /**
     * Make a Promise that fulfills when any item fulfills, and rejects if any item rejects.
     */
   /* static member */
-  @scala.inline
-  def race[R](promises: js.Array[R | Thenable[R]]): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
+  inline def race[R](promises: js.Array[R | Thenable[R]]): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
   
   /**
     * Make a promise that rejects to obj. For consistency and debugging (eg stack traces), obj should be an instanceof Error
     */
   /* static member */
-  @scala.inline
-  def reject[R](error: js.Any): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(error.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
+  inline def reject[R](error: js.Any): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(error.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
   
   /**
     * Make a new promise from the thenable.
     * A thenable is promise-like in as far as it has a "then" method.
     */
   /* static member */
-  @scala.inline
-  def resolve(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise[Unit]]
+  inline def resolve(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise[Unit]]
   /* static member */
-  @scala.inline
-  def resolve[R](value: R): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
-  @scala.inline
-  def resolve[R](value: Thenable[R]): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
+  inline def resolve[R](value: R): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
+  inline def resolve[R](value: Thenable[R]): Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[Promise[R]]
   
   @js.native
   trait Promise[R]

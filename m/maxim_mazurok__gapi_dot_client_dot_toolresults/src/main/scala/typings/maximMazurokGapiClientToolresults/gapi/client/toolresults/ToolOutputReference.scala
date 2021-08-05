@@ -17,31 +17,23 @@ trait ToolOutputReference extends StObject {
 }
 object ToolOutputReference {
   
-  @scala.inline
-  def apply(): ToolOutputReference = {
+  inline def apply(): ToolOutputReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolOutputReference]
   }
   
-  @scala.inline
-  implicit class ToolOutputReferenceMutableBuilder[Self <: ToolOutputReference] (val x: Self) extends AnyVal {
+  extension [Self <: ToolOutputReference](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setOutput(value: FileReference): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: FileReference): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setTestCase(value: TestCaseReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
+    inline def setTestCase(value: TestCaseReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseUndefined: Self = StObject.set(x, "testCase", js.undefined)
+    inline def setTestCaseUndefined: Self = StObject.set(x, "testCase", js.undefined)
   }
 }

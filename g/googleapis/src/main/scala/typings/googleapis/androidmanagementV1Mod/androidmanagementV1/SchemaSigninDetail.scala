@@ -36,31 +36,23 @@ trait SchemaSigninDetail extends StObject {
 }
 object SchemaSigninDetail {
   
-  @scala.inline
-  def apply(): SchemaSigninDetail = {
+  inline def apply(): SchemaSigninDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSigninDetail]
   }
   
-  @scala.inline
-  implicit class SchemaSigninDetailMutableBuilder[Self <: SchemaSigninDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSigninDetail](x: Self) {
     
-    @scala.inline
-    def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
+    inline def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
+    inline def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
     
-    @scala.inline
-    def setSigninEnrollmentToken(value: String): Self = StObject.set(x, "signinEnrollmentToken", value.asInstanceOf[js.Any])
+    inline def setSigninEnrollmentToken(value: String): Self = StObject.set(x, "signinEnrollmentToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninEnrollmentTokenUndefined: Self = StObject.set(x, "signinEnrollmentToken", js.undefined)
+    inline def setSigninEnrollmentTokenUndefined: Self = StObject.set(x, "signinEnrollmentToken", js.undefined)
     
-    @scala.inline
-    def setSigninUrl(value: String): Self = StObject.set(x, "signinUrl", value.asInstanceOf[js.Any])
+    inline def setSigninUrl(value: String): Self = StObject.set(x, "signinUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigninUrlUndefined: Self = StObject.set(x, "signinUrl", js.undefined)
+    inline def setSigninUrlUndefined: Self = StObject.set(x, "signinUrl", js.undefined)
   }
 }

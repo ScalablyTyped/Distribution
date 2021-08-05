@@ -57,8 +57,7 @@ trait XDevice
 }
 object XDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FontDescriptors: SafeArray[FontDescriptor],
     Info: DeviceInfo,
     acquire: () => Unit,
@@ -76,34 +75,24 @@ object XDevice {
     __obj.asInstanceOf[XDevice]
   }
   
-  @scala.inline
-  implicit class XDeviceMutableBuilder[Self <: XDevice] (val x: Self) extends AnyVal {
+  extension [Self <: XDevice](x: Self) {
     
-    @scala.inline
-    def setCreateBitmap(value: (Double, Double, Double, Double) => XBitmap): Self = StObject.set(x, "createBitmap", js.Any.fromFunction4(value))
+    inline def setCreateBitmap(value: (Double, Double, Double, Double) => XBitmap): Self = StObject.set(x, "createBitmap", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreateDevice(value: (Double, Double) => XDevice): Self = StObject.set(x, "createDevice", js.Any.fromFunction2(value))
+    inline def setCreateDevice(value: (Double, Double) => XDevice): Self = StObject.set(x, "createDevice", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateDisplayBitmap(value: XBitmap => XDisplayBitmap): Self = StObject.set(x, "createDisplayBitmap", js.Any.fromFunction1(value))
+    inline def setCreateDisplayBitmap(value: XBitmap => XDisplayBitmap): Self = StObject.set(x, "createDisplayBitmap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateGraphics(value: () => XGraphics): Self = StObject.set(x, "createGraphics", js.Any.fromFunction0(value))
+    inline def setCreateGraphics(value: () => XGraphics): Self = StObject.set(x, "createGraphics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFontDescriptors(value: SafeArray[FontDescriptor]): Self = StObject.set(x, "FontDescriptors", value.asInstanceOf[js.Any])
+    inline def setFontDescriptors(value: SafeArray[FontDescriptor]): Self = StObject.set(x, "FontDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFont(value: FontDescriptor => XFont): Self = StObject.set(x, "getFont", js.Any.fromFunction1(value))
+    inline def setGetFont(value: FontDescriptor => XFont): Self = StObject.set(x, "getFont", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFontDescriptors(value: () => SafeArray[FontDescriptor]): Self = StObject.set(x, "getFontDescriptors", js.Any.fromFunction0(value))
+    inline def setGetFontDescriptors(value: () => SafeArray[FontDescriptor]): Self = StObject.set(x, "getFontDescriptors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInfo(value: () => DeviceInfo): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => DeviceInfo): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInfo(value: DeviceInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: DeviceInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
   }
 }

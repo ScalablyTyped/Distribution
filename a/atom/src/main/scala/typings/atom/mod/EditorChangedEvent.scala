@@ -17,22 +17,17 @@ trait EditorChangedEvent extends StObject {
 }
 object EditorChangedEvent {
   
-  @scala.inline
-  def apply(newExtent: Point, oldExtent: Point, start: Point): EditorChangedEvent = {
+  inline def apply(newExtent: Point, oldExtent: Point, start: Point): EditorChangedEvent = {
     val __obj = js.Dynamic.literal(newExtent = newExtent.asInstanceOf[js.Any], oldExtent = oldExtent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorChangedEvent]
   }
   
-  @scala.inline
-  implicit class EditorChangedEventMutableBuilder[Self <: EditorChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EditorChangedEvent](x: Self) {
     
-    @scala.inline
-    def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
+    inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
+    inline def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

@@ -49,121 +49,83 @@ trait StopOver extends StObject {
 }
 object StopOver {
   
-  @scala.inline
-  def apply(stop: Station | Stop): StopOver = {
+  inline def apply(stop: Station | Stop): StopOver = {
     val __obj = js.Dynamic.literal(stop = stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopOver]
   }
   
-  @scala.inline
-  implicit class StopOverMutableBuilder[Self <: StopOver] (val x: Self) extends AnyVal {
+  extension [Self <: StopOver](x: Self) {
     
-    @scala.inline
-    def setArrival(value: String): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
+    inline def setArrival(value: String): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrivalDelay(value: Double): Self = StObject.set(x, "arrivalDelay", value.asInstanceOf[js.Any])
+    inline def setArrivalDelay(value: Double): Self = StObject.set(x, "arrivalDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrivalDelayUndefined: Self = StObject.set(x, "arrivalDelay", js.undefined)
+    inline def setArrivalDelayUndefined: Self = StObject.set(x, "arrivalDelay", js.undefined)
     
-    @scala.inline
-    def setArrivalPlatform(value: String): Self = StObject.set(x, "arrivalPlatform", value.asInstanceOf[js.Any])
+    inline def setArrivalPlatform(value: String): Self = StObject.set(x, "arrivalPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrivalPlatformUndefined: Self = StObject.set(x, "arrivalPlatform", js.undefined)
+    inline def setArrivalPlatformUndefined: Self = StObject.set(x, "arrivalPlatform", js.undefined)
     
-    @scala.inline
-    def setArrivalUndefined: Self = StObject.set(x, "arrival", js.undefined)
+    inline def setArrivalUndefined: Self = StObject.set(x, "arrival", js.undefined)
     
-    @scala.inline
-    def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+    inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
+    inline def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
     
-    @scala.inline
-    def setDeparture(value: String): Self = StObject.set(x, "departure", value.asInstanceOf[js.Any])
+    inline def setDeparture(value: String): Self = StObject.set(x, "departure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartureDelay(value: Double): Self = StObject.set(x, "departureDelay", value.asInstanceOf[js.Any])
+    inline def setDepartureDelay(value: Double): Self = StObject.set(x, "departureDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartureDelayUndefined: Self = StObject.set(x, "departureDelay", js.undefined)
+    inline def setDepartureDelayUndefined: Self = StObject.set(x, "departureDelay", js.undefined)
     
-    @scala.inline
-    def setDeparturePlatform(value: String): Self = StObject.set(x, "departurePlatform", value.asInstanceOf[js.Any])
+    inline def setDeparturePlatform(value: String): Self = StObject.set(x, "departurePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeparturePlatformUndefined: Self = StObject.set(x, "departurePlatform", js.undefined)
+    inline def setDeparturePlatformUndefined: Self = StObject.set(x, "departurePlatform", js.undefined)
     
-    @scala.inline
-    def setDepartureUndefined: Self = StObject.set(x, "departure", js.undefined)
+    inline def setDepartureUndefined: Self = StObject.set(x, "departure", js.undefined)
     
-    @scala.inline
-    def setPassBy(value: Boolean): Self = StObject.set(x, "passBy", value.asInstanceOf[js.Any])
+    inline def setPassBy(value: Boolean): Self = StObject.set(x, "passBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassByUndefined: Self = StObject.set(x, "passBy", js.undefined)
+    inline def setPassByUndefined: Self = StObject.set(x, "passBy", js.undefined)
     
-    @scala.inline
-    def setPlannedArrival(value: String): Self = StObject.set(x, "plannedArrival", value.asInstanceOf[js.Any])
+    inline def setPlannedArrival(value: String): Self = StObject.set(x, "plannedArrival", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlannedArrivalPlatform(value: String): Self = StObject.set(x, "plannedArrivalPlatform", value.asInstanceOf[js.Any])
+    inline def setPlannedArrivalPlatform(value: String): Self = StObject.set(x, "plannedArrivalPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlannedArrivalPlatformUndefined: Self = StObject.set(x, "plannedArrivalPlatform", js.undefined)
+    inline def setPlannedArrivalPlatformUndefined: Self = StObject.set(x, "plannedArrivalPlatform", js.undefined)
     
-    @scala.inline
-    def setPlannedArrivalUndefined: Self = StObject.set(x, "plannedArrival", js.undefined)
+    inline def setPlannedArrivalUndefined: Self = StObject.set(x, "plannedArrival", js.undefined)
     
-    @scala.inline
-    def setPlannedDeparture(value: String): Self = StObject.set(x, "plannedDeparture", value.asInstanceOf[js.Any])
+    inline def setPlannedDeparture(value: String): Self = StObject.set(x, "plannedDeparture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlannedDeparturePlatform(value: String): Self = StObject.set(x, "plannedDeparturePlatform", value.asInstanceOf[js.Any])
+    inline def setPlannedDeparturePlatform(value: String): Self = StObject.set(x, "plannedDeparturePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlannedDeparturePlatformUndefined: Self = StObject.set(x, "plannedDeparturePlatform", js.undefined)
+    inline def setPlannedDeparturePlatformUndefined: Self = StObject.set(x, "plannedDeparturePlatform", js.undefined)
     
-    @scala.inline
-    def setPlannedDepartureUndefined: Self = StObject.set(x, "plannedDeparture", js.undefined)
+    inline def setPlannedDepartureUndefined: Self = StObject.set(x, "plannedDeparture", js.undefined)
     
-    @scala.inline
-    def setPrognosedArrival(value: String): Self = StObject.set(x, "prognosedArrival", value.asInstanceOf[js.Any])
+    inline def setPrognosedArrival(value: String): Self = StObject.set(x, "prognosedArrival", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrognosedArrivalPlatform(value: String): Self = StObject.set(x, "prognosedArrivalPlatform", value.asInstanceOf[js.Any])
+    inline def setPrognosedArrivalPlatform(value: String): Self = StObject.set(x, "prognosedArrivalPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrognosedArrivalPlatformUndefined: Self = StObject.set(x, "prognosedArrivalPlatform", js.undefined)
+    inline def setPrognosedArrivalPlatformUndefined: Self = StObject.set(x, "prognosedArrivalPlatform", js.undefined)
     
-    @scala.inline
-    def setPrognosedArrivalUndefined: Self = StObject.set(x, "prognosedArrival", js.undefined)
+    inline def setPrognosedArrivalUndefined: Self = StObject.set(x, "prognosedArrival", js.undefined)
     
-    @scala.inline
-    def setPrognosedDeparture(value: String): Self = StObject.set(x, "prognosedDeparture", value.asInstanceOf[js.Any])
+    inline def setPrognosedDeparture(value: String): Self = StObject.set(x, "prognosedDeparture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrognosedDeparturePlatform(value: String): Self = StObject.set(x, "prognosedDeparturePlatform", value.asInstanceOf[js.Any])
+    inline def setPrognosedDeparturePlatform(value: String): Self = StObject.set(x, "prognosedDeparturePlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrognosedDeparturePlatformUndefined: Self = StObject.set(x, "prognosedDeparturePlatform", js.undefined)
+    inline def setPrognosedDeparturePlatformUndefined: Self = StObject.set(x, "prognosedDeparturePlatform", js.undefined)
     
-    @scala.inline
-    def setPrognosedDepartureUndefined: Self = StObject.set(x, "prognosedDeparture", js.undefined)
+    inline def setPrognosedDepartureUndefined: Self = StObject.set(x, "prognosedDeparture", js.undefined)
     
-    @scala.inline
-    def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
+    inline def setRemarks(value: js.Array[Hint | Warning]): Self = StObject.set(x, "remarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
+    inline def setRemarksUndefined: Self = StObject.set(x, "remarks", js.undefined)
     
-    @scala.inline
-    def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
+    inline def setRemarksVarargs(value: (Hint | Warning)*): Self = StObject.set(x, "remarks", js.Array(value :_*))
     
-    @scala.inline
-    def setStop(value: Station | Stop): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Station | Stop): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

@@ -16,29 +16,22 @@ object anon {
   }
   object Count {
     
-    @scala.inline
-    def apply(count: Double, matches: js.Array[String]): Count = {
+    inline def apply(count: Double, matches: js.Array[String]): Count = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], line = null)
       __obj.asInstanceOf[Count]
     }
     
-    @scala.inline
-    implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+    extension [Self <: Count](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNull: Self = StObject.set(x, "line", null)
+      inline def setLineNull: Self = StObject.set(x, "line", null)
       
-      @scala.inline
-      def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
     }
   }
 }

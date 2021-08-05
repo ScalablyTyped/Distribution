@@ -28,37 +28,27 @@ trait AccountSettings extends StObject {
 }
 object AccountSettings {
   
-  @scala.inline
-  def apply(): AccountSettings = {
+  inline def apply(): AccountSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountSettings]
   }
   
-  @scala.inline
-  implicit class AccountSettingsMutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AccountSettings](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "AccountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "AccountName", js.undefined)
     
-    @scala.inline
-    def setDefaultNamespace(value: Namespace): Self = StObject.set(x, "DefaultNamespace", value.asInstanceOf[js.Any])
+    inline def setDefaultNamespace(value: Namespace): Self = StObject.set(x, "DefaultNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNamespaceUndefined: Self = StObject.set(x, "DefaultNamespace", js.undefined)
+    inline def setDefaultNamespaceUndefined: Self = StObject.set(x, "DefaultNamespace", js.undefined)
     
-    @scala.inline
-    def setEdition(value: Edition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
+    inline def setEdition(value: Edition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
+    inline def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
-    @scala.inline
-    def setNotificationEmail(value: String): Self = StObject.set(x, "NotificationEmail", value.asInstanceOf[js.Any])
+    inline def setNotificationEmail(value: String): Self = StObject.set(x, "NotificationEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEmailUndefined: Self = StObject.set(x, "NotificationEmail", js.undefined)
+    inline def setNotificationEmailUndefined: Self = StObject.set(x, "NotificationEmail", js.undefined)
   }
 }

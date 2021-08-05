@@ -27,8 +27,7 @@ trait BluetoothCharacteristicProperties extends StObject {
 }
 object BluetoothCharacteristicProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticatedSignedWrites: Boolean,
     broadcast: Boolean,
     indicate: Boolean,
@@ -44,34 +43,24 @@ object BluetoothCharacteristicProperties {
     __obj.asInstanceOf[BluetoothCharacteristicProperties]
   }
   
-  @scala.inline
-  implicit class BluetoothCharacteristicPropertiesMutableBuilder[Self <: BluetoothCharacteristicProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothCharacteristicProperties](x: Self) {
     
-    @scala.inline
-    def setAuthenticatedSignedWrites(value: Boolean): Self = StObject.set(x, "authenticatedSignedWrites", value.asInstanceOf[js.Any])
+    inline def setAuthenticatedSignedWrites(value: Boolean): Self = StObject.set(x, "authenticatedSignedWrites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcast(value: Boolean): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
+    inline def setBroadcast(value: Boolean): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
+    inline def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReliableWrite(value: Boolean): Self = StObject.set(x, "reliableWrite", value.asInstanceOf[js.Any])
+    inline def setReliableWrite(value: Boolean): Self = StObject.set(x, "reliableWrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritableAuxiliaries(value: Boolean): Self = StObject.set(x, "writableAuxiliaries", value.asInstanceOf[js.Any])
+    inline def setWritableAuxiliaries(value: Boolean): Self = StObject.set(x, "writableAuxiliaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteWithoutResponse(value: Boolean): Self = StObject.set(x, "writeWithoutResponse", value.asInstanceOf[js.Any])
+    inline def setWriteWithoutResponse(value: Boolean): Self = StObject.set(x, "writeWithoutResponse", value.asInstanceOf[js.Any])
   }
 }

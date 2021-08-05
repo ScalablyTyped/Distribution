@@ -12,19 +12,15 @@ trait Grammars extends StObject {
 }
 object Grammars {
   
-  @scala.inline
-  def apply(grammars: js.Array[Grammar]): Grammars = {
+  inline def apply(grammars: js.Array[Grammar]): Grammars = {
     val __obj = js.Dynamic.literal(grammars = grammars.asInstanceOf[js.Any])
     __obj.asInstanceOf[Grammars]
   }
   
-  @scala.inline
-  implicit class GrammarsMutableBuilder[Self <: Grammars] (val x: Self) extends AnyVal {
+  extension [Self <: Grammars](x: Self) {
     
-    @scala.inline
-    def setGrammars(value: js.Array[Grammar]): Self = StObject.set(x, "grammars", value.asInstanceOf[js.Any])
+    inline def setGrammars(value: js.Array[Grammar]): Self = StObject.set(x, "grammars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrammarsVarargs(value: Grammar*): Self = StObject.set(x, "grammars", js.Array(value :_*))
+    inline def setGrammarsVarargs(value: Grammar*): Self = StObject.set(x, "grammars", js.Array(value :_*))
   }
 }

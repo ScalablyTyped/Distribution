@@ -24,19 +24,15 @@ trait HttpUpload extends StObject {
 }
 object HttpUpload {
   
-  @scala.inline
-  def apply(http: AxiosInstance, httpUpload: AxiosInstance): HttpUpload = {
+  inline def apply(http: AxiosInstance, httpUpload: AxiosInstance): HttpUpload = {
     val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any], httpUpload = httpUpload.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpUpload]
   }
   
-  @scala.inline
-  implicit class HttpUploadMutableBuilder[Self <: HttpUpload] (val x: Self) extends AnyVal {
+  extension [Self <: HttpUpload](x: Self) {
     
-    @scala.inline
-    def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpUpload(value: AxiosInstance): Self = StObject.set(x, "httpUpload", value.asInstanceOf[js.Any])
+    inline def setHttpUpload(value: AxiosInstance): Self = StObject.set(x, "httpUpload", value.asInstanceOf[js.Any])
   }
 }

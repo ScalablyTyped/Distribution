@@ -28,25 +28,19 @@ trait CreateProcessModel extends StObject {
 }
 object CreateProcessModel {
   
-  @scala.inline
-  def apply(description: String, name: String, parentProcessTypeId: String, referenceName: String): CreateProcessModel = {
+  inline def apply(description: String, name: String, parentProcessTypeId: String, referenceName: String): CreateProcessModel = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentProcessTypeId = parentProcessTypeId.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProcessModel]
   }
   
-  @scala.inline
-  implicit class CreateProcessModelMutableBuilder[Self <: CreateProcessModel] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProcessModel](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentProcessTypeId(value: String): Self = StObject.set(x, "parentProcessTypeId", value.asInstanceOf[js.Any])
+    inline def setParentProcessTypeId(value: String): Self = StObject.set(x, "parentProcessTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+    inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
   }
 }

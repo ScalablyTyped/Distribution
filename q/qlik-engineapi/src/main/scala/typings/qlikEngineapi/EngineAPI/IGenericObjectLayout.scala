@@ -42,8 +42,7 @@ trait IGenericObjectLayout
 }
 object IGenericObjectLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qExtendsId: String,
     qHasSoftPatches: Boolean,
     qInfo: INxInfo,
@@ -55,25 +54,18 @@ object IGenericObjectLayout {
     __obj.asInstanceOf[IGenericObjectLayout]
   }
   
-  @scala.inline
-  implicit class IGenericObjectLayoutMutableBuilder[Self <: IGenericObjectLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericObjectLayout](x: Self) {
     
-    @scala.inline
-    def setQError(value: INxLayoutErrors): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
+    inline def setQError(value: INxLayoutErrors): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
+    inline def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
     
-    @scala.inline
-    def setQExtendsId(value: String): Self = StObject.set(x, "qExtendsId", value.asInstanceOf[js.Any])
+    inline def setQExtendsId(value: String): Self = StObject.set(x, "qExtendsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQHasSoftPatches(value: Boolean): Self = StObject.set(x, "qHasSoftPatches", value.asInstanceOf[js.Any])
+    inline def setQHasSoftPatches(value: Boolean): Self = StObject.set(x, "qHasSoftPatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSelectionInfo(value: INxSelectionInfo): Self = StObject.set(x, "qSelectionInfo", value.asInstanceOf[js.Any])
+    inline def setQSelectionInfo(value: INxSelectionInfo): Self = StObject.set(x, "qSelectionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
+    inline def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }
 }

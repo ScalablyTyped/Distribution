@@ -80,24 +80,16 @@ object Duration {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromISO(text: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[Duration]
-  @scala.inline
-  def fromISO(text: String, options: DurationOptions): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  inline def fromISO(text: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def fromISO(text: String, options: DurationOptions): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromISO")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
-  @scala.inline
-  def fromMillis(count: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any]).asInstanceOf[Duration]
-  @scala.inline
-  def fromMillis(count: Double, options: DurationOptions): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  inline def fromMillis(count: Double): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def fromMillis(count: Double, options: DurationOptions): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
-  @scala.inline
-  def fromObject(Object: DurationObject): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(Object.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def fromObject(Object: DurationObject): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(Object.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def invalid(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Duration]
-  @scala.inline
-  def invalid(reason: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def invalid(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Duration]
+  inline def invalid(reason: String): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
-  @scala.inline
-  def isDuration(o: js.Any): /* is luxon.luxon.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.Duration */ Boolean]
+  inline def isDuration(o: js.Any): /* is luxon.luxon.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon.Duration */ Boolean]
 }

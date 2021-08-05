@@ -16,19 +16,15 @@ trait SaxesStartTagPlain
 }
 object SaxesStartTagPlain {
   
-  @scala.inline
-  def apply(attributes: Record[String, SaxesAttributeNS | String], name: String): SaxesStartTagPlain = {
+  inline def apply(attributes: Record[String, SaxesAttributeNS | String], name: String): SaxesStartTagPlain = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaxesStartTagPlain]
   }
   
-  @scala.inline
-  implicit class SaxesStartTagPlainMutableBuilder[Self <: SaxesStartTagPlain] (val x: Self) extends AnyVal {
+  extension [Self <: SaxesStartTagPlain](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Record[String, SaxesAttributeNS | String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Record[String, SaxesAttributeNS | String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

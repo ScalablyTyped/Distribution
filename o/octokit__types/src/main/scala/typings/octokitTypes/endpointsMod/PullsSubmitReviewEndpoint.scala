@@ -29,8 +29,7 @@ trait PullsSubmitReviewEndpoint extends StObject {
 }
 object PullsSubmitReviewEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     event: APPROVE | REQUEST_CHANGES | COMMENT,
     owner: String,
     pull_number: Double,
@@ -41,28 +40,20 @@ object PullsSubmitReviewEndpoint {
     __obj.asInstanceOf[PullsSubmitReviewEndpoint]
   }
   
-  @scala.inline
-  implicit class PullsSubmitReviewEndpointMutableBuilder[Self <: PullsSubmitReviewEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: PullsSubmitReviewEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setEvent(value: APPROVE | REQUEST_CHANGES | COMMENT): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: APPROVE | REQUEST_CHANGES | COMMENT): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
+    inline def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReview_id(value: Double): Self = StObject.set(x, "review_id", value.asInstanceOf[js.Any])
+    inline def setReview_id(value: Double): Self = StObject.set(x, "review_id", value.asInstanceOf[js.Any])
   }
 }

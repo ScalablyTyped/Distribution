@@ -48,58 +48,41 @@ trait DescribeScheduledInstanceAvailabilityRequest extends StObject {
 }
 object DescribeScheduledInstanceAvailabilityRequest {
   
-  @scala.inline
-  def apply(FirstSlotStartTimeRange: SlotDateTimeRangeRequest, Recurrence: ScheduledInstanceRecurrenceRequest): DescribeScheduledInstanceAvailabilityRequest = {
+  inline def apply(FirstSlotStartTimeRange: SlotDateTimeRangeRequest, Recurrence: ScheduledInstanceRecurrenceRequest): DescribeScheduledInstanceAvailabilityRequest = {
     val __obj = js.Dynamic.literal(FirstSlotStartTimeRange = FirstSlotStartTimeRange.asInstanceOf[js.Any], Recurrence = Recurrence.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScheduledInstanceAvailabilityRequest]
   }
   
-  @scala.inline
-  implicit class DescribeScheduledInstanceAvailabilityRequestMutableBuilder[Self <: DescribeScheduledInstanceAvailabilityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScheduledInstanceAvailabilityRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstSlotStartTimeRange(value: SlotDateTimeRangeRequest): Self = StObject.set(x, "FirstSlotStartTimeRange", value.asInstanceOf[js.Any])
+    inline def setFirstSlotStartTimeRange(value: SlotDateTimeRangeRequest): Self = StObject.set(x, "FirstSlotStartTimeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: DescribeScheduledInstanceAvailabilityMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribeScheduledInstanceAvailabilityMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMaxSlotDurationInHours(value: Integer): Self = StObject.set(x, "MaxSlotDurationInHours", value.asInstanceOf[js.Any])
+    inline def setMaxSlotDurationInHours(value: Integer): Self = StObject.set(x, "MaxSlotDurationInHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSlotDurationInHoursUndefined: Self = StObject.set(x, "MaxSlotDurationInHours", js.undefined)
+    inline def setMaxSlotDurationInHoursUndefined: Self = StObject.set(x, "MaxSlotDurationInHours", js.undefined)
     
-    @scala.inline
-    def setMinSlotDurationInHours(value: Integer): Self = StObject.set(x, "MinSlotDurationInHours", value.asInstanceOf[js.Any])
+    inline def setMinSlotDurationInHours(value: Integer): Self = StObject.set(x, "MinSlotDurationInHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSlotDurationInHoursUndefined: Self = StObject.set(x, "MinSlotDurationInHours", js.undefined)
+    inline def setMinSlotDurationInHoursUndefined: Self = StObject.set(x, "MinSlotDurationInHours", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRecurrence(value: ScheduledInstanceRecurrenceRequest): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: ScheduledInstanceRecurrenceRequest): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
   }
 }

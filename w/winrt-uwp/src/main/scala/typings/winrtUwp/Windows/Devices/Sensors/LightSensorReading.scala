@@ -16,19 +16,15 @@ trait LightSensorReading extends StObject {
 }
 object LightSensorReading {
   
-  @scala.inline
-  def apply(illuminanceInLux: Double, timestamp: Date): LightSensorReading = {
+  inline def apply(illuminanceInLux: Double, timestamp: Date): LightSensorReading = {
     val __obj = js.Dynamic.literal(illuminanceInLux = illuminanceInLux.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightSensorReading]
   }
   
-  @scala.inline
-  implicit class LightSensorReadingMutableBuilder[Self <: LightSensorReading] (val x: Self) extends AnyVal {
+  extension [Self <: LightSensorReading](x: Self) {
     
-    @scala.inline
-    def setIlluminanceInLux(value: Double): Self = StObject.set(x, "illuminanceInLux", value.asInstanceOf[js.Any])
+    inline def setIlluminanceInLux(value: Double): Self = StObject.set(x, "illuminanceInLux", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

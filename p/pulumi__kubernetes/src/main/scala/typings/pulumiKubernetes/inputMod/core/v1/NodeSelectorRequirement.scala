@@ -27,28 +27,21 @@ trait NodeSelectorRequirement extends StObject {
 }
 object NodeSelectorRequirement {
   
-  @scala.inline
-  def apply(key: Input[String], operator: Input[String]): NodeSelectorRequirement = {
+  inline def apply(key: Input[String], operator: Input[String]): NodeSelectorRequirement = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeSelectorRequirement]
   }
   
-  @scala.inline
-  implicit class NodeSelectorRequirementMutableBuilder[Self <: NodeSelectorRequirement] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSelectorRequirement](x: Self) {
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Input[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Input[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

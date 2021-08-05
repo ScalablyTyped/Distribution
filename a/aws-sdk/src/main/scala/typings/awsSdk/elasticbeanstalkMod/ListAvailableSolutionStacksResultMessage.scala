@@ -18,31 +18,23 @@ trait ListAvailableSolutionStacksResultMessage extends StObject {
 }
 object ListAvailableSolutionStacksResultMessage {
   
-  @scala.inline
-  def apply(): ListAvailableSolutionStacksResultMessage = {
+  inline def apply(): ListAvailableSolutionStacksResultMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAvailableSolutionStacksResultMessage]
   }
   
-  @scala.inline
-  implicit class ListAvailableSolutionStacksResultMessageMutableBuilder[Self <: ListAvailableSolutionStacksResultMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ListAvailableSolutionStacksResultMessage](x: Self) {
     
-    @scala.inline
-    def setSolutionStackDetails(value: AvailableSolutionStackDetailsList): Self = StObject.set(x, "SolutionStackDetails", value.asInstanceOf[js.Any])
+    inline def setSolutionStackDetails(value: AvailableSolutionStackDetailsList): Self = StObject.set(x, "SolutionStackDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionStackDetailsUndefined: Self = StObject.set(x, "SolutionStackDetails", js.undefined)
+    inline def setSolutionStackDetailsUndefined: Self = StObject.set(x, "SolutionStackDetails", js.undefined)
     
-    @scala.inline
-    def setSolutionStackDetailsVarargs(value: SolutionStackDescription*): Self = StObject.set(x, "SolutionStackDetails", js.Array(value :_*))
+    inline def setSolutionStackDetailsVarargs(value: SolutionStackDescription*): Self = StObject.set(x, "SolutionStackDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setSolutionStacks(value: AvailableSolutionStackNamesList): Self = StObject.set(x, "SolutionStacks", value.asInstanceOf[js.Any])
+    inline def setSolutionStacks(value: AvailableSolutionStackNamesList): Self = StObject.set(x, "SolutionStacks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionStacksUndefined: Self = StObject.set(x, "SolutionStacks", js.undefined)
+    inline def setSolutionStacksUndefined: Self = StObject.set(x, "SolutionStacks", js.undefined)
     
-    @scala.inline
-    def setSolutionStacksVarargs(value: SolutionStackName*): Self = StObject.set(x, "SolutionStacks", js.Array(value :_*))
+    inline def setSolutionStacksVarargs(value: SolutionStackName*): Self = StObject.set(x, "SolutionStacks", js.Array(value :_*))
   }
 }

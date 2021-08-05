@@ -23,31 +23,23 @@ trait PausedEventUIParam extends StObject {
 }
 object PausedEventUIParam {
   
-  @scala.inline
-  def apply(): PausedEventUIParam = {
+  inline def apply(): PausedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PausedEventUIParam]
   }
   
-  @scala.inline
-  implicit class PausedEventUIParamMutableBuilder[Self <: PausedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: PausedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
+    inline def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

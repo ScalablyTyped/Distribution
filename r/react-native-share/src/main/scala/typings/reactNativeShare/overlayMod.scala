@@ -35,26 +35,20 @@ object overlayMod {
   }
   object OverlayProps {
     
-    @scala.inline
-    def apply(onCancel: () => Unit, visible: Boolean): OverlayProps = {
+    inline def apply(onCancel: () => Unit, visible: Boolean): OverlayProps = {
       val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[OverlayProps]
     }
     
-    @scala.inline
-    implicit class OverlayPropsMutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,26 +60,20 @@ object overlayMod {
   }
   object OverlayState {
     
-    @scala.inline
-    def apply(fadeAnim: Value): OverlayState = {
+    inline def apply(fadeAnim: Value): OverlayState = {
       val __obj = js.Dynamic.literal(fadeAnim = fadeAnim.asInstanceOf[js.Any])
       __obj.asInstanceOf[OverlayState]
     }
     
-    @scala.inline
-    implicit class OverlayStateMutableBuilder[Self <: OverlayState] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayState](x: Self) {
       
-      @scala.inline
-      def setFadeAnim(value: Value): Self = StObject.set(x, "fadeAnim", value.asInstanceOf[js.Any])
+      inline def setFadeAnim(value: Value): Self = StObject.set(x, "fadeAnim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStyle(value: StyleProp[ViewProps]): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+      inline def setOverlayStyle(value: StyleProp[ViewProps]): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayStyleNull: Self = StObject.set(x, "overlayStyle", null)
+      inline def setOverlayStyleNull: Self = StObject.set(x, "overlayStyle", null)
       
-      @scala.inline
-      def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+      inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     }
   }
 }

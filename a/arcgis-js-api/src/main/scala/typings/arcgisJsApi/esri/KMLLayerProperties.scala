@@ -27,28 +27,21 @@ trait KMLLayerProperties
 }
 object KMLLayerProperties {
   
-  @scala.inline
-  def apply(): KMLLayerProperties = {
+  inline def apply(): KMLLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KMLLayerProperties]
   }
   
-  @scala.inline
-  implicit class KMLLayerPropertiesMutableBuilder[Self <: KMLLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: KMLLayerProperties](x: Self) {
     
-    @scala.inline
-    def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
+    inline def setSublayers(value: CollectionProperties[KMLSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
+    inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
-    @scala.inline
-    def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
+    inline def setSublayersVarargs(value: KMLSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

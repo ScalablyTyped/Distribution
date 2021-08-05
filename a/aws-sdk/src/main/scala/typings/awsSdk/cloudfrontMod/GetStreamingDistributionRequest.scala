@@ -13,16 +13,13 @@ trait GetStreamingDistributionRequest extends StObject {
 }
 object GetStreamingDistributionRequest {
   
-  @scala.inline
-  def apply(Id: String): GetStreamingDistributionRequest = {
+  inline def apply(Id: String): GetStreamingDistributionRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStreamingDistributionRequest]
   }
   
-  @scala.inline
-  implicit class GetStreamingDistributionRequestMutableBuilder[Self <: GetStreamingDistributionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetStreamingDistributionRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

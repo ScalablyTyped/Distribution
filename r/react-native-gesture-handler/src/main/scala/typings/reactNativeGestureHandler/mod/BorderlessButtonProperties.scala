@@ -14,25 +14,19 @@ trait BorderlessButtonProperties
 }
 object BorderlessButtonProperties {
   
-  @scala.inline
-  def apply(): BorderlessButtonProperties = {
+  inline def apply(): BorderlessButtonProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderlessButtonProperties]
   }
   
-  @scala.inline
-  implicit class BorderlessButtonPropertiesMutableBuilder[Self <: BorderlessButtonProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BorderlessButtonProperties](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
-    @scala.inline
-    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
   }
 }

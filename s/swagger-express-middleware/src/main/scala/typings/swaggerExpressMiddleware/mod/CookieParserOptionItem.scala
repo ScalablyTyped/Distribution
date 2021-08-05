@@ -21,28 +21,21 @@ trait CookieParserOptionItem extends StObject {
 }
 object CookieParserOptionItem {
   
-  @scala.inline
-  def apply(): CookieParserOptionItem = {
+  inline def apply(): CookieParserOptionItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CookieParserOptionItem]
   }
   
-  @scala.inline
-  implicit class CookieParserOptionItemMutableBuilder[Self <: CookieParserOptionItem] (val x: Self) extends AnyVal {
+  extension [Self <: CookieParserOptionItem](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String | js.Array[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String | js.Array[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value :_*))
+    inline def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value :_*))
   }
 }

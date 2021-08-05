@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def getItems(options: js.Object): typings.std.Iterable[typings.ckeditorCkeditor5Engine.mod.model.Item] = typings.ckeditorCkeditor5Engine.mod.model.^.asInstanceOf[js.Dynamic].applyDynamic("getItems")(options.asInstanceOf[js.Any]).asInstanceOf[typings.std.Iterable[typings.ckeditorCkeditor5Engine.mod.model.Item]]
+inline def getItems(options: js.Object): typings.std.Iterable[typings.ckeditorCkeditor5Engine.mod.model.Item] = typings.ckeditorCkeditor5Engine.mod.model.^.asInstanceOf[js.Dynamic].applyDynamic("getItems")(options.asInstanceOf[js.Any]).asInstanceOf[typings.std.Iterable[typings.ckeditorCkeditor5Engine.mod.model.Item]]
 
 /* Rewritten from type alias, can be one of: 
   - typings.ckeditorCkeditor5Engine.mod.model.Node

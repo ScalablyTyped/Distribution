@@ -28,37 +28,27 @@ trait UserPoolEmailConfiguration extends StObject {
 }
 object UserPoolEmailConfiguration {
   
-  @scala.inline
-  def apply(): UserPoolEmailConfiguration = {
+  inline def apply(): UserPoolEmailConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPoolEmailConfiguration]
   }
   
-  @scala.inline
-  implicit class UserPoolEmailConfigurationMutableBuilder[Self <: UserPoolEmailConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolEmailConfiguration](x: Self) {
     
-    @scala.inline
-    def setEmailSendingAccount(value: String): Self = StObject.set(x, "emailSendingAccount", value.asInstanceOf[js.Any])
+    inline def setEmailSendingAccount(value: String): Self = StObject.set(x, "emailSendingAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSendingAccountUndefined: Self = StObject.set(x, "emailSendingAccount", js.undefined)
+    inline def setEmailSendingAccountUndefined: Self = StObject.set(x, "emailSendingAccount", js.undefined)
     
-    @scala.inline
-    def setFromEmailAddress(value: String): Self = StObject.set(x, "fromEmailAddress", value.asInstanceOf[js.Any])
+    inline def setFromEmailAddress(value: String): Self = StObject.set(x, "fromEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromEmailAddressUndefined: Self = StObject.set(x, "fromEmailAddress", js.undefined)
+    inline def setFromEmailAddressUndefined: Self = StObject.set(x, "fromEmailAddress", js.undefined)
     
-    @scala.inline
-    def setReplyToEmailAddress(value: String): Self = StObject.set(x, "replyToEmailAddress", value.asInstanceOf[js.Any])
+    inline def setReplyToEmailAddress(value: String): Self = StObject.set(x, "replyToEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToEmailAddressUndefined: Self = StObject.set(x, "replyToEmailAddress", js.undefined)
+    inline def setReplyToEmailAddressUndefined: Self = StObject.set(x, "replyToEmailAddress", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: String): Self = StObject.set(x, "sourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: String): Self = StObject.set(x, "sourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "sourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "sourceArn", js.undefined)
   }
 }

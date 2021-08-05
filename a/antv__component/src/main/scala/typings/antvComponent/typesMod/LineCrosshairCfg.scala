@@ -24,19 +24,15 @@ trait LineCrosshairCfg
 }
 object LineCrosshairCfg {
   
-  @scala.inline
-  def apply(container: IGroup, end: Point, start: Point): LineCrosshairCfg = {
+  inline def apply(container: IGroup, end: Point, start: Point): LineCrosshairCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineCrosshairCfg]
   }
   
-  @scala.inline
-  implicit class LineCrosshairCfgMutableBuilder[Self <: LineCrosshairCfg] (val x: Self) extends AnyVal {
+  extension [Self <: LineCrosshairCfg](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

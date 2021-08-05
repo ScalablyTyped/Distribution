@@ -12,17 +12,14 @@ object Replies {
   }
   object AssertExchange {
     
-    @scala.inline
-    def apply(exchange: String): AssertExchange = {
+    inline def apply(exchange: String): AssertExchange = {
       val __obj = js.Dynamic.literal(exchange = exchange.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertExchange]
     }
     
-    @scala.inline
-    implicit class AssertExchangeMutableBuilder[Self <: AssertExchange] (val x: Self) extends AnyVal {
+    extension [Self <: AssertExchange](x: Self) {
       
-      @scala.inline
-      def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+      inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,23 +33,18 @@ object Replies {
   }
   object AssertQueue {
     
-    @scala.inline
-    def apply(consumerCount: Double, messageCount: Double, queue: String): AssertQueue = {
+    inline def apply(consumerCount: Double, messageCount: Double, queue: String): AssertQueue = {
       val __obj = js.Dynamic.literal(consumerCount = consumerCount.asInstanceOf[js.Any], messageCount = messageCount.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertQueue]
     }
     
-    @scala.inline
-    implicit class AssertQueueMutableBuilder[Self <: AssertQueue] (val x: Self) extends AnyVal {
+    extension [Self <: AssertQueue](x: Self) {
       
-      @scala.inline
-      def setConsumerCount(value: Double): Self = StObject.set(x, "consumerCount", value.asInstanceOf[js.Any])
+      inline def setConsumerCount(value: Double): Self = StObject.set(x, "consumerCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+      inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,17 +54,14 @@ object Replies {
   }
   object Consume {
     
-    @scala.inline
-    def apply(consumerTag: String): Consume = {
+    inline def apply(consumerTag: String): Consume = {
       val __obj = js.Dynamic.literal(consumerTag = consumerTag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Consume]
     }
     
-    @scala.inline
-    implicit class ConsumeMutableBuilder[Self <: Consume] (val x: Self) extends AnyVal {
+    extension [Self <: Consume](x: Self) {
       
-      @scala.inline
-      def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
+      inline def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,17 +71,14 @@ object Replies {
   }
   object DeleteQueue {
     
-    @scala.inline
-    def apply(messageCount: Double): DeleteQueue = {
+    inline def apply(messageCount: Double): DeleteQueue = {
       val __obj = js.Dynamic.literal(messageCount = messageCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteQueue]
     }
     
-    @scala.inline
-    implicit class DeleteQueueMutableBuilder[Self <: DeleteQueue] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteQueue](x: Self) {
       
-      @scala.inline
-      def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+      inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,17 +90,14 @@ object Replies {
   }
   object PurgeQueue {
     
-    @scala.inline
-    def apply(messageCount: Double): PurgeQueue = {
+    inline def apply(messageCount: Double): PurgeQueue = {
       val __obj = js.Dynamic.literal(messageCount = messageCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[PurgeQueue]
     }
     
-    @scala.inline
-    implicit class PurgeQueueMutableBuilder[Self <: PurgeQueue] (val x: Self) extends AnyVal {
+    extension [Self <: PurgeQueue](x: Self) {
       
-      @scala.inline
-      def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+      inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
     }
   }
 }

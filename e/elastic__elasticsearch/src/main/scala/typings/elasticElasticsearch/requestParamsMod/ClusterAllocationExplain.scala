@@ -16,31 +16,23 @@ trait ClusterAllocationExplain[T]
 }
 object ClusterAllocationExplain {
   
-  @scala.inline
-  def apply[T](): ClusterAllocationExplain[T] = {
+  inline def apply[T](): ClusterAllocationExplain[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterAllocationExplain[T]]
   }
   
-  @scala.inline
-  implicit class ClusterAllocationExplainMutableBuilder[Self <: ClusterAllocationExplain[?], T] (val x: Self & ClusterAllocationExplain[T]) extends AnyVal {
+  extension [Self <: ClusterAllocationExplain[?], T](x: Self & ClusterAllocationExplain[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setInclude_disk_info(value: Boolean): Self = StObject.set(x, "include_disk_info", value.asInstanceOf[js.Any])
+    inline def setInclude_disk_info(value: Boolean): Self = StObject.set(x, "include_disk_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_disk_infoUndefined: Self = StObject.set(x, "include_disk_info", js.undefined)
+    inline def setInclude_disk_infoUndefined: Self = StObject.set(x, "include_disk_info", js.undefined)
     
-    @scala.inline
-    def setInclude_yes_decisions(value: Boolean): Self = StObject.set(x, "include_yes_decisions", value.asInstanceOf[js.Any])
+    inline def setInclude_yes_decisions(value: Boolean): Self = StObject.set(x, "include_yes_decisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_yes_decisionsUndefined: Self = StObject.set(x, "include_yes_decisions", js.undefined)
+    inline def setInclude_yes_decisionsUndefined: Self = StObject.set(x, "include_yes_decisions", js.undefined)
   }
 }

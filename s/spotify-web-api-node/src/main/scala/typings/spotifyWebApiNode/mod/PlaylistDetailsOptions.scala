@@ -14,25 +14,19 @@ trait PlaylistDetailsOptions
 }
 object PlaylistDetailsOptions {
   
-  @scala.inline
-  def apply(): PlaylistDetailsOptions = {
+  inline def apply(): PlaylistDetailsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaylistDetailsOptions]
   }
   
-  @scala.inline
-  implicit class PlaylistDetailsOptionsMutableBuilder[Self <: PlaylistDetailsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlaylistDetailsOptions](x: Self) {
     
-    @scala.inline
-    def setCollaborative(value: Boolean): Self = StObject.set(x, "collaborative", value.asInstanceOf[js.Any])
+    inline def setCollaborative(value: Boolean): Self = StObject.set(x, "collaborative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollaborativeUndefined: Self = StObject.set(x, "collaborative", js.undefined)
+    inline def setCollaborativeUndefined: Self = StObject.set(x, "collaborative", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

@@ -13,16 +13,16 @@ object mod {
     extends StObject
        with Hash {
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var bufferLength: js.Any = js.native
+    /* private */ var bufferLength: js.Any = js.native
     
-    var bytesHashed: js.Any = js.native
+    /* private */ var bytesHashed: js.Any = js.native
     
-    var finished: js.Any = js.native
+    /* private */ var finished: js.Any = js.native
     
-    var hashBuffer: js.Any = js.native
+    /* private */ var hashBuffer: js.Any = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
   }
 }

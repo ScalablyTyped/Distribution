@@ -59,71 +59,50 @@ object validatorOptionsMod {
   }
   object ValidatorOptions {
     
-    @scala.inline
-    def apply(): ValidatorOptions = {
+    inline def apply(): ValidatorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidatorOptions]
     }
     
-    @scala.inline
-    implicit class ValidatorOptionsMutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatorOptions](x: Self) {
       
-      @scala.inline
-      def setDismissDefaultMessages(value: Boolean): Self = StObject.set(x, "dismissDefaultMessages", value.asInstanceOf[js.Any])
+      inline def setDismissDefaultMessages(value: Boolean): Self = StObject.set(x, "dismissDefaultMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissDefaultMessagesUndefined: Self = StObject.set(x, "dismissDefaultMessages", js.undefined)
+      inline def setDismissDefaultMessagesUndefined: Self = StObject.set(x, "dismissDefaultMessages", js.undefined)
       
-      @scala.inline
-      def setForbidNonWhitelisted(value: Boolean): Self = StObject.set(x, "forbidNonWhitelisted", value.asInstanceOf[js.Any])
+      inline def setForbidNonWhitelisted(value: Boolean): Self = StObject.set(x, "forbidNonWhitelisted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbidNonWhitelistedUndefined: Self = StObject.set(x, "forbidNonWhitelisted", js.undefined)
+      inline def setForbidNonWhitelistedUndefined: Self = StObject.set(x, "forbidNonWhitelisted", js.undefined)
       
-      @scala.inline
-      def setForbidUnknownValues(value: Boolean): Self = StObject.set(x, "forbidUnknownValues", value.asInstanceOf[js.Any])
+      inline def setForbidUnknownValues(value: Boolean): Self = StObject.set(x, "forbidUnknownValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbidUnknownValuesUndefined: Self = StObject.set(x, "forbidUnknownValues", js.undefined)
+      inline def setForbidUnknownValuesUndefined: Self = StObject.set(x, "forbidUnknownValues", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setSkipMissingProperties(value: Boolean): Self = StObject.set(x, "skipMissingProperties", value.asInstanceOf[js.Any])
+      inline def setSkipMissingProperties(value: Boolean): Self = StObject.set(x, "skipMissingProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipMissingPropertiesUndefined: Self = StObject.set(x, "skipMissingProperties", js.undefined)
+      inline def setSkipMissingPropertiesUndefined: Self = StObject.set(x, "skipMissingProperties", js.undefined)
       
-      @scala.inline
-      def setSkipNullProperties(value: Boolean): Self = StObject.set(x, "skipNullProperties", value.asInstanceOf[js.Any])
+      inline def setSkipNullProperties(value: Boolean): Self = StObject.set(x, "skipNullProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipNullPropertiesUndefined: Self = StObject.set(x, "skipNullProperties", js.undefined)
+      inline def setSkipNullPropertiesUndefined: Self = StObject.set(x, "skipNullProperties", js.undefined)
       
-      @scala.inline
-      def setSkipUndefinedProperties(value: Boolean): Self = StObject.set(x, "skipUndefinedProperties", value.asInstanceOf[js.Any])
+      inline def setSkipUndefinedProperties(value: Boolean): Self = StObject.set(x, "skipUndefinedProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefinedPropertiesUndefined: Self = StObject.set(x, "skipUndefinedProperties", js.undefined)
+      inline def setSkipUndefinedPropertiesUndefined: Self = StObject.set(x, "skipUndefinedProperties", js.undefined)
       
-      @scala.inline
-      def setValidationError(value: Target): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
+      inline def setValidationError(value: Target): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
+      inline def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: Boolean): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: Boolean): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
     }
   }
 }

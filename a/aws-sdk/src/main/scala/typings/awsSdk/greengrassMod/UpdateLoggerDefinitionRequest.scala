@@ -18,22 +18,17 @@ trait UpdateLoggerDefinitionRequest extends StObject {
 }
 object UpdateLoggerDefinitionRequest {
   
-  @scala.inline
-  def apply(LoggerDefinitionId: string): UpdateLoggerDefinitionRequest = {
+  inline def apply(LoggerDefinitionId: string): UpdateLoggerDefinitionRequest = {
     val __obj = js.Dynamic.literal(LoggerDefinitionId = LoggerDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLoggerDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLoggerDefinitionRequestMutableBuilder[Self <: UpdateLoggerDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLoggerDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
+    inline def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

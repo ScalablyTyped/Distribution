@@ -18,8 +18,7 @@ trait TeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint extends StObject {
 }
 object TeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     groups: js.Array[TeamsCreateOrUpdateIdPGroupConnectionsInOrgParamsGroups],
     org_ : String,
     team_slug: String
@@ -29,19 +28,14 @@ object TeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint {
     __obj.asInstanceOf[TeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpointMutableBuilder[Self <: TeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[TeamsCreateOrUpdateIdPGroupConnectionsInOrgParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[TeamsCreateOrUpdateIdPGroupConnectionsInOrgParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: TeamsCreateOrUpdateIdPGroupConnectionsInOrgParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: TeamsCreateOrUpdateIdPGroupConnectionsInOrgParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

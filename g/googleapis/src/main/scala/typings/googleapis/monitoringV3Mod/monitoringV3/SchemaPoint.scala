@@ -28,25 +28,19 @@ trait SchemaPoint extends StObject {
 }
 object SchemaPoint {
   
-  @scala.inline
-  def apply(): SchemaPoint = {
+  inline def apply(): SchemaPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPoint]
   }
   
-  @scala.inline
-  implicit class SchemaPointMutableBuilder[Self <: SchemaPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPoint](x: Self) {
     
-    @scala.inline
-    def setInterval(value: SchemaTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: SchemaTimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setValue(value: SchemaTypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SchemaTypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

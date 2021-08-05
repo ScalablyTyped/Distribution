@@ -16,20 +16,16 @@ object optionsColumnWithLengthOptionsMod {
   }
   object ColumnWithLengthOptions {
     
-    @scala.inline
-    def apply(): ColumnWithLengthOptions = {
+    inline def apply(): ColumnWithLengthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnWithLengthOptions]
     }
     
-    @scala.inline
-    implicit class ColumnWithLengthOptionsMutableBuilder[Self <: ColumnWithLengthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnWithLengthOptions](x: Self) {
       
-      @scala.inline
-      def setLength(value: String | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: String | Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     }
   }
 }

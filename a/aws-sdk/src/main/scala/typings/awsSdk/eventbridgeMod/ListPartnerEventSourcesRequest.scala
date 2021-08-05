@@ -23,28 +23,21 @@ trait ListPartnerEventSourcesRequest extends StObject {
 }
 object ListPartnerEventSourcesRequest {
   
-  @scala.inline
-  def apply(NamePrefix: PartnerEventSourceNamePrefix): ListPartnerEventSourcesRequest = {
+  inline def apply(NamePrefix: PartnerEventSourceNamePrefix): ListPartnerEventSourcesRequest = {
     val __obj = js.Dynamic.literal(NamePrefix = NamePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPartnerEventSourcesRequest]
   }
   
-  @scala.inline
-  implicit class ListPartnerEventSourcesRequestMutableBuilder[Self <: ListPartnerEventSourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListPartnerEventSourcesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitMax100): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNamePrefix(value: PartnerEventSourceNamePrefix): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: PartnerEventSourceNamePrefix): Self = StObject.set(x, "NamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

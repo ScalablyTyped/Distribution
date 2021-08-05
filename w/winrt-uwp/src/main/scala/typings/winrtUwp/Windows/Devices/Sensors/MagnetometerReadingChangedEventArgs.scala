@@ -12,16 +12,13 @@ trait MagnetometerReadingChangedEventArgs extends StObject {
 }
 object MagnetometerReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: MagnetometerReading): MagnetometerReadingChangedEventArgs = {
+  inline def apply(reading: MagnetometerReading): MagnetometerReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagnetometerReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class MagnetometerReadingChangedEventArgsMutableBuilder[Self <: MagnetometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MagnetometerReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: MagnetometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: MagnetometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

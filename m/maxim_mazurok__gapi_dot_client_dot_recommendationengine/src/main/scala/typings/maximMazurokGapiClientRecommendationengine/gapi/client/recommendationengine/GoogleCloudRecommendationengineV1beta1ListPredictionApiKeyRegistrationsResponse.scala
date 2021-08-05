@@ -14,28 +14,21 @@ trait GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsRes
 }
 object GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setPredictionApiKeyRegistrations(value: js.Array[GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration]): Self = StObject.set(x, "predictionApiKeyRegistrations", value.asInstanceOf[js.Any])
+    inline def setPredictionApiKeyRegistrations(value: js.Array[GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration]): Self = StObject.set(x, "predictionApiKeyRegistrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictionApiKeyRegistrationsUndefined: Self = StObject.set(x, "predictionApiKeyRegistrations", js.undefined)
+    inline def setPredictionApiKeyRegistrationsUndefined: Self = StObject.set(x, "predictionApiKeyRegistrations", js.undefined)
     
-    @scala.inline
-    def setPredictionApiKeyRegistrationsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration*): Self = StObject.set(x, "predictionApiKeyRegistrations", js.Array(value :_*))
+    inline def setPredictionApiKeyRegistrationsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration*): Self = StObject.set(x, "predictionApiKeyRegistrations", js.Array(value :_*))
   }
 }

@@ -12,25 +12,19 @@ trait GenerateOptions extends StObject {
 }
 object GenerateOptions {
   
-  @scala.inline
-  def apply(): GenerateOptions = {
+  inline def apply(): GenerateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateOptions]
   }
   
-  @scala.inline
-  implicit class GenerateOptionsMutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateOptions](x: Self) {
     
-    @scala.inline
-    def setDecorator(value: /* handlers */ GenerateHandlers => GenerateHandlers): Self = StObject.set(x, "decorator", js.Any.fromFunction1(value))
+    inline def setDecorator(value: /* handlers */ GenerateHandlers => GenerateHandlers): Self = StObject.set(x, "decorator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecoratorUndefined: Self = StObject.set(x, "decorator", js.undefined)
+    inline def setDecoratorUndefined: Self = StObject.set(x, "decorator", js.undefined)
     
-    @scala.inline
-    def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+    inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+    inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
   }
 }

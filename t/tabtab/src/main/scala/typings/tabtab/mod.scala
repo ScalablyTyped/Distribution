@@ -12,22 +12,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def completionItem(item: String): CompletionItem_ = ^.asInstanceOf[js.Dynamic].applyDynamic("completionItem")(item.asInstanceOf[js.Any]).asInstanceOf[CompletionItem_]
-  @scala.inline
-  def completionItem(item: CompletionItem_): CompletionItem_ = ^.asInstanceOf[js.Dynamic].applyDynamic("completionItem")(item.asInstanceOf[js.Any]).asInstanceOf[CompletionItem_]
+  inline def completionItem(item: String): CompletionItem_ = ^.asInstanceOf[js.Dynamic].applyDynamic("completionItem")(item.asInstanceOf[js.Any]).asInstanceOf[CompletionItem_]
+  inline def completionItem(item: CompletionItem_): CompletionItem_ = ^.asInstanceOf[js.Dynamic].applyDynamic("completionItem")(item.asInstanceOf[js.Any]).asInstanceOf[CompletionItem_]
   
-  @scala.inline
-  def install(options: InstallOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def install(options: InstallOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def log(args: js.Array[String | ReadonlyCompletionItem]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(args: js.Array[String | ReadonlyCompletionItem]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def parseEnv(env: ProcessEnv): TabtabEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEnv")(env.asInstanceOf[js.Any]).asInstanceOf[TabtabEnv]
+  inline def parseEnv(env: ProcessEnv): TabtabEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEnv")(env.asInstanceOf[js.Any]).asInstanceOf[TabtabEnv]
   
-  @scala.inline
-  def uninstall(options: UninstallOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def uninstall(options: UninstallOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   type CompleteItemOrString = String | CompletionItem_
   
@@ -45,23 +39,18 @@ object mod {
   }
   object CompletionItem_ {
     
-    @scala.inline
-    def apply(name: String): CompletionItem_ = {
+    inline def apply(name: String): CompletionItem_ = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompletionItem_]
     }
     
-    @scala.inline
-    implicit class CompletionItem_MutableBuilder[Self <: CompletionItem_] (val x: Self) extends AnyVal {
+    extension [Self <: CompletionItem_](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,20 +64,16 @@ object mod {
   }
   object InstallOptions {
     
-    @scala.inline
-    def apply(completer: String, name: String): InstallOptions = {
+    inline def apply(completer: String, name: String): InstallOptions = {
       val __obj = js.Dynamic.literal(completer = completer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallOptions]
     }
     
-    @scala.inline
-    implicit class InstallOptionsMutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InstallOptions](x: Self) {
       
-      @scala.inline
-      def setCompleter(value: String): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
+      inline def setCompleter(value: String): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,8 +121,7 @@ object mod {
   }
   object TabtabEnv {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complete: Boolean,
       last: String,
       lastPartial: String,
@@ -151,32 +135,23 @@ object mod {
       __obj.asInstanceOf[TabtabEnv]
     }
     
-    @scala.inline
-    implicit class TabtabEnvMutableBuilder[Self <: TabtabEnv] (val x: Self) extends AnyVal {
+    extension [Self <: TabtabEnv](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPartial(value: String): Self = StObject.set(x, "lastPartial", value.asInstanceOf[js.Any])
+      inline def setLastPartial(value: String): Self = StObject.set(x, "lastPartial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartial(value: String): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: String): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoint(value: Double): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Double): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: String): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: Double): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,17 +162,14 @@ object mod {
   }
   object UninstallOptions {
     
-    @scala.inline
-    def apply(name: String): UninstallOptions = {
+    inline def apply(name: String): UninstallOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[UninstallOptions]
     }
     
-    @scala.inline
-    implicit class UninstallOptionsMutableBuilder[Self <: UninstallOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UninstallOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

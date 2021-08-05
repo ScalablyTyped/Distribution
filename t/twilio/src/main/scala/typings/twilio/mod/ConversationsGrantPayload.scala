@@ -12,16 +12,13 @@ trait ConversationsGrantPayload
 }
 object ConversationsGrantPayload {
   
-  @scala.inline
-  def apply(configuration_profile_sid: String): ConversationsGrantPayload = {
+  inline def apply(configuration_profile_sid: String): ConversationsGrantPayload = {
     val __obj = js.Dynamic.literal(configuration_profile_sid = configuration_profile_sid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConversationsGrantPayload]
   }
   
-  @scala.inline
-  implicit class ConversationsGrantPayloadMutableBuilder[Self <: ConversationsGrantPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationsGrantPayload](x: Self) {
     
-    @scala.inline
-    def setConfiguration_profile_sid(value: String): Self = StObject.set(x, "configuration_profile_sid", value.asInstanceOf[js.Any])
+    inline def setConfiguration_profile_sid(value: String): Self = StObject.set(x, "configuration_profile_sid", value.asInstanceOf[js.Any])
   }
 }

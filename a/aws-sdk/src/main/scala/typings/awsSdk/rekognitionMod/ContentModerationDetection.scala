@@ -18,25 +18,19 @@ trait ContentModerationDetection extends StObject {
 }
 object ContentModerationDetection {
   
-  @scala.inline
-  def apply(): ContentModerationDetection = {
+  inline def apply(): ContentModerationDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentModerationDetection]
   }
   
-  @scala.inline
-  implicit class ContentModerationDetectionMutableBuilder[Self <: ContentModerationDetection] (val x: Self) extends AnyVal {
+  extension [Self <: ContentModerationDetection](x: Self) {
     
-    @scala.inline
-    def setModerationLabel(value: ModerationLabel): Self = StObject.set(x, "ModerationLabel", value.asInstanceOf[js.Any])
+    inline def setModerationLabel(value: ModerationLabel): Self = StObject.set(x, "ModerationLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerationLabelUndefined: Self = StObject.set(x, "ModerationLabel", js.undefined)
+    inline def setModerationLabelUndefined: Self = StObject.set(x, "ModerationLabel", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

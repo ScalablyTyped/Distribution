@@ -20,13 +20,11 @@ object ChannelJoinPermission {
   		 * @see https://developer.knuddels.de/docs/classes/ChannelJoinPermission.html#method_accepted
   		 */
   /* static member */
-  @scala.inline
-  def accepted(): ChannelJoinPermission = ^.asInstanceOf[js.Dynamic].applyDynamic("accepted")().asInstanceOf[ChannelJoinPermission]
+  inline def accepted(): ChannelJoinPermission = ^.asInstanceOf[js.Dynamic].applyDynamic("accepted")().asInstanceOf[ChannelJoinPermission]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ChannelJoinPermission.html#method_denied
   		 */
   /* static member */
-  @scala.inline
-  def denied(denyReason: java.lang.String): ChannelJoinPermission = ^.asInstanceOf[js.Dynamic].applyDynamic("denied")(denyReason.asInstanceOf[js.Any]).asInstanceOf[ChannelJoinPermission]
+  inline def denied(denyReason: java.lang.String): ChannelJoinPermission = ^.asInstanceOf[js.Dynamic].applyDynamic("denied")(denyReason.asInstanceOf[js.Any]).asInstanceOf[ChannelJoinPermission]
 }

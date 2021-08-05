@@ -34,22 +34,19 @@ object clientMod {
       @JSImport("mendixmodelsdk/dist/gen/client", "client.SupportedPlatform.All")
       @js.native
       def All: SupportedPlatform = js.native
-      @scala.inline
-      def All_=(x: SupportedPlatform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
+      inline def All_=(x: SupportedPlatform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("All")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/client", "client.SupportedPlatform.Native")
       @js.native
       def Native: SupportedPlatform = js.native
-      @scala.inline
-      def Native_=(x: SupportedPlatform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Native")(x.asInstanceOf[js.Any])
+      inline def Native_=(x: SupportedPlatform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Native")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/client", "client.SupportedPlatform.Web")
       @js.native
       def Web: SupportedPlatform = js.native
-      @scala.inline
-      def Web_=(x: SupportedPlatform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Web")(x.asInstanceOf[js.Any])
+      inline def Web_=(x: SupportedPlatform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Web")(x.asInstanceOf[js.Any])
     }
   }
 }

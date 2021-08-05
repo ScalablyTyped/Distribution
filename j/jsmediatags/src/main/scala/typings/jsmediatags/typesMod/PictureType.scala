@@ -12,22 +12,17 @@ trait PictureType extends StObject {
 }
 object PictureType {
   
-  @scala.inline
-  def apply(data: js.Array[Double], format: String): PictureType = {
+  inline def apply(data: js.Array[Double], format: String): PictureType = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureType]
   }
   
-  @scala.inline
-  implicit class PictureTypeMutableBuilder[Self <: PictureType] (val x: Self) extends AnyVal {
+  extension [Self <: PictureType](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

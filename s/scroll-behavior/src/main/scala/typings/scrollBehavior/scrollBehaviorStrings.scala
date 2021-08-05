@@ -8,6 +8,5 @@ object scrollBehaviorStrings {
   
   @js.native
   sealed trait PUSH extends StObject
-  @scala.inline
-  def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
+  inline def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
 }

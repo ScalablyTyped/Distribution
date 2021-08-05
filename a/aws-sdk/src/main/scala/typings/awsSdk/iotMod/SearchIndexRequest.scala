@@ -33,40 +33,29 @@ trait SearchIndexRequest extends StObject {
 }
 object SearchIndexRequest {
   
-  @scala.inline
-  def apply(queryString: QueryString): SearchIndexRequest = {
+  inline def apply(queryString: QueryString): SearchIndexRequest = {
     val __obj = js.Dynamic.literal(queryString = queryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchIndexRequest]
   }
   
-  @scala.inline
-  implicit class SearchIndexRequestMutableBuilder[Self <: SearchIndexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchIndexRequest](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: QueryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: QueryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: QueryString): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
+    inline def setQueryVersion(value: QueryVersion): Self = StObject.set(x, "queryVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
+    inline def setQueryVersionUndefined: Self = StObject.set(x, "queryVersion", js.undefined)
   }
 }

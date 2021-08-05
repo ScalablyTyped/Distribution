@@ -24,22 +24,17 @@ trait IMarkdownCell
 }
 object IMarkdownCell {
   
-  @scala.inline
-  def apply(metadata: Partial[ICellMetadata], source: MultilineString): IMarkdownCell = {
+  inline def apply(metadata: Partial[ICellMetadata], source: MultilineString): IMarkdownCell = {
     val __obj = js.Dynamic.literal(cell_type = "markdown", metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMarkdownCell]
   }
   
-  @scala.inline
-  implicit class IMarkdownCellMutableBuilder[Self <: IMarkdownCell] (val x: Self) extends AnyVal {
+  extension [Self <: IMarkdownCell](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: IAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: IAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setCell_type(value: markdown): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
+    inline def setCell_type(value: markdown): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
   }
 }

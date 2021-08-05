@@ -11,6 +11,5 @@ object invalidTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerInvalidTransitionHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInvalidTransitionHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def registerInvalidTransitionHook(transitionService: TransitionService): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("registerInvalidTransitionHook")(transitionService.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

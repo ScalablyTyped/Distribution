@@ -58,61 +58,43 @@ trait GroupCharacteristic
 }
 object GroupCharacteristic {
   
-  @scala.inline
-  def apply(code: CodeableConcept, exclude: Boolean): GroupCharacteristic = {
+  inline def apply(code: CodeableConcept, exclude: Boolean): GroupCharacteristic = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupCharacteristic]
   }
   
-  @scala.inline
-  implicit class GroupCharacteristicMutableBuilder[Self <: GroupCharacteristic] (val x: Self) extends AnyVal {
+  extension [Self <: GroupCharacteristic](x: Self) {
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
+    inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
+    inline def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
     
-    @scala.inline
-    def setValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
+    inline def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
+    inline def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
+    inline def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
     
-    @scala.inline
-    def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
+    inline def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
+    inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     
-    @scala.inline
-    def set_exclude(value: Element): Self = StObject.set(x, "_exclude", value.asInstanceOf[js.Any])
+    inline def set_exclude(value: Element): Self = StObject.set(x, "_exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_excludeUndefined: Self = StObject.set(x, "_exclude", js.undefined)
+    inline def set_excludeUndefined: Self = StObject.set(x, "_exclude", js.undefined)
     
-    @scala.inline
-    def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
+    inline def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
+    inline def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
   }
 }

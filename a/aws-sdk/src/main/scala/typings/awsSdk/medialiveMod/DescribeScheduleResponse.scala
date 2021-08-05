@@ -18,28 +18,21 @@ trait DescribeScheduleResponse extends StObject {
 }
 object DescribeScheduleResponse {
   
-  @scala.inline
-  def apply(): DescribeScheduleResponse = {
+  inline def apply(): DescribeScheduleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeScheduleResponse]
   }
   
-  @scala.inline
-  implicit class DescribeScheduleResponseMutableBuilder[Self <: DescribeScheduleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScheduleResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScheduleActions(value: listOfScheduleAction): Self = StObject.set(x, "ScheduleActions", value.asInstanceOf[js.Any])
+    inline def setScheduleActions(value: listOfScheduleAction): Self = StObject.set(x, "ScheduleActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleActionsUndefined: Self = StObject.set(x, "ScheduleActions", js.undefined)
+    inline def setScheduleActionsUndefined: Self = StObject.set(x, "ScheduleActions", js.undefined)
     
-    @scala.inline
-    def setScheduleActionsVarargs(value: ScheduleAction*): Self = StObject.set(x, "ScheduleActions", js.Array(value :_*))
+    inline def setScheduleActionsVarargs(value: ScheduleAction*): Self = StObject.set(x, "ScheduleActions", js.Array(value :_*))
   }
 }

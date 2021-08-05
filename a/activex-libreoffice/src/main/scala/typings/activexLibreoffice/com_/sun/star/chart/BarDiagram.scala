@@ -65,8 +65,7 @@ trait BarDiagram
 }
 object BarDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     ConstantErrorHigh: Double,
@@ -189,22 +188,16 @@ object BarDiagram {
     __obj.asInstanceOf[BarDiagram]
   }
   
-  @scala.inline
-  implicit class BarDiagramMutableBuilder[Self <: BarDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: BarDiagram](x: Self) {
     
-    @scala.inline
-    def setDeep(value: Boolean): Self = StObject.set(x, "Deep", value.asInstanceOf[js.Any])
+    inline def setDeep(value: Boolean): Self = StObject.set(x, "Deep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBarsPerAxis(value: Boolean): Self = StObject.set(x, "GroupBarsPerAxis", value.asInstanceOf[js.Any])
+    inline def setGroupBarsPerAxis(value: Boolean): Self = StObject.set(x, "GroupBarsPerAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfLines(value: Double): Self = StObject.set(x, "NumberOfLines", value.asInstanceOf[js.Any])
+    inline def setNumberOfLines(value: Double): Self = StObject.set(x, "NumberOfLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackedBarsConnected(value: Boolean): Self = StObject.set(x, "StackedBarsConnected", value.asInstanceOf[js.Any])
+    inline def setStackedBarsConnected(value: Boolean): Self = StObject.set(x, "StackedBarsConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "Vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "Vertical", value.asInstanceOf[js.Any])
   }
 }

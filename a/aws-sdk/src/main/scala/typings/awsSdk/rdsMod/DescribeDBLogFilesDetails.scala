@@ -23,31 +23,23 @@ trait DescribeDBLogFilesDetails extends StObject {
 }
 object DescribeDBLogFilesDetails {
   
-  @scala.inline
-  def apply(): DescribeDBLogFilesDetails = {
+  inline def apply(): DescribeDBLogFilesDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDBLogFilesDetails]
   }
   
-  @scala.inline
-  implicit class DescribeDBLogFilesDetailsMutableBuilder[Self <: DescribeDBLogFilesDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBLogFilesDetails](x: Self) {
     
-    @scala.inline
-    def setLastWritten(value: Long): Self = StObject.set(x, "LastWritten", value.asInstanceOf[js.Any])
+    inline def setLastWritten(value: Long): Self = StObject.set(x, "LastWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastWrittenUndefined: Self = StObject.set(x, "LastWritten", js.undefined)
+    inline def setLastWrittenUndefined: Self = StObject.set(x, "LastWritten", js.undefined)
     
-    @scala.inline
-    def setLogFileName(value: String): Self = StObject.set(x, "LogFileName", value.asInstanceOf[js.Any])
+    inline def setLogFileName(value: String): Self = StObject.set(x, "LogFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogFileNameUndefined: Self = StObject.set(x, "LogFileName", js.undefined)
+    inline def setLogFileNameUndefined: Self = StObject.set(x, "LogFileName", js.undefined)
     
-    @scala.inline
-    def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

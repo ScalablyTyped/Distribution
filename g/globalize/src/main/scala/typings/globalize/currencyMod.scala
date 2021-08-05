@@ -58,20 +58,16 @@ object currencyMod extends Shortcut {
     }
     object CurrencyFormatterOptions {
       
-      @scala.inline
-      def apply(): CurrencyFormatterOptions = {
+      inline def apply(): CurrencyFormatterOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CurrencyFormatterOptions]
       }
       
-      @scala.inline
-      implicit class CurrencyFormatterOptionsMutableBuilder[Self <: CurrencyFormatterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CurrencyFormatterOptions](x: Self) {
         
-        @scala.inline
-        def setStyle(value: symbol | accounting | code | name): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: symbol | accounting | code | name): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
     

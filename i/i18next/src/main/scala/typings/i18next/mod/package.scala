@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def default: typings.i18next.mod.i18n = typings.i18next.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.i18next.mod.i18n]
+inline def default: typings.i18next.mod.i18n = typings.i18next.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.i18next.mod.i18n]
 
 type Callback = js.Function2[/* error */ js.Any, /* t */ typings.i18next.mod.TFunction, scala.Unit]
 

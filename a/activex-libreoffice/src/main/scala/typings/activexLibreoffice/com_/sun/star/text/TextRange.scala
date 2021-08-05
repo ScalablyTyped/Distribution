@@ -61,8 +61,7 @@ trait TextRange
      with ParagraphPropertiesComplex
 object TextRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     BorderDistance: Double,
     BottomBorder: BorderLine,

@@ -51,8 +51,7 @@ object BitmapText {
     * @static
     */
   /* static member */
-  @scala.inline
-  def registerFont(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")().asInstanceOf[Unit]
+  inline def registerFont(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerFont")().asInstanceOf[Unit]
   
   /**
     * Get the list of installed fonts.

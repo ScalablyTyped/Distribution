@@ -22,8 +22,7 @@ trait Dictionary
      with XStorable
 object Dictionary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     DictionaryType: DictionaryType,
     Entries: SafeArray[XDictionaryEntry],

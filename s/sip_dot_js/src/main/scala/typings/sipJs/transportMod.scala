@@ -132,8 +132,7 @@ object transportMod {
   }
   object Transport {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: () => js.Promise[Unit],
       disconnect: () => js.Promise[Unit],
       dispose: () => js.Promise[Unit],
@@ -147,44 +146,31 @@ object transportMod {
       __obj.asInstanceOf[Transport]
     }
     
-    @scala.inline
-    implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+    extension [Self <: Transport](x: Self) {
       
-      @scala.inline
-      def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDispose(value: () => js.Promise[Unit]): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => js.Promise[Unit]): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
+      inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnConnect(value: () => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction0(value))
+      inline def setOnConnect(value: () => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+      inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      @scala.inline
-      def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
+      inline def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
+      inline def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
       
-      @scala.inline
-      def setOnMessage(value: /* message */ String => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: /* message */ String => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+      inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
-      @scala.inline
-      def setState(value: TransportState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: TransportState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateChange(value: Emitter[TransportState]): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
+      inline def setStateChange(value: Emitter[TransportState]): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
     }
   }
 }

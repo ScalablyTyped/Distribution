@@ -14,8 +14,7 @@ object Variables {
        with SFSUserVariable
   object MMOItemVariable {
     
-    @scala.inline
-    def apply(getTypeName: Double => String, isNull: () => Boolean, name: String, value: Double): MMOItemVariable = {
+    inline def apply(getTypeName: Double => String, isNull: () => Boolean, name: String, value: Double): MMOItemVariable = {
       val __obj = js.Dynamic.literal(getTypeName = js.Any.fromFunction1(getTypeName), isNull = js.Any.fromFunction0(isNull), name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MMOItemVariable]
     }
@@ -37,8 +36,7 @@ object Variables {
   }
   object SFSBuddyVariable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getTypeName: Double => String,
       isNull: () => Boolean,
       isOffline: () => Boolean,
@@ -49,11 +47,9 @@ object Variables {
       __obj.asInstanceOf[SFSBuddyVariable]
     }
     
-    @scala.inline
-    implicit class SFSBuddyVariableMutableBuilder[Self <: SFSBuddyVariable] (val x: Self) extends AnyVal {
+    extension [Self <: SFSBuddyVariable](x: Self) {
       
-      @scala.inline
-      def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
+      inline def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
     }
   }
   
@@ -69,8 +65,7 @@ object Variables {
   }
   object SFSRoomVariable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getTypeName: Double => String,
       isNull: () => Boolean,
       isPersistent: Boolean,
@@ -82,14 +77,11 @@ object Variables {
       __obj.asInstanceOf[SFSRoomVariable]
     }
     
-    @scala.inline
-    implicit class SFSRoomVariableMutableBuilder[Self <: SFSRoomVariable] (val x: Self) extends AnyVal {
+    extension [Self <: SFSRoomVariable](x: Self) {
       
-      @scala.inline
-      def setIsPersistent(value: Boolean): Self = StObject.set(x, "isPersistent", value.asInstanceOf[js.Any])
+      inline def setIsPersistent(value: Boolean): Self = StObject.set(x, "isPersistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+      inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,26 +108,20 @@ object Variables {
   }
   object SFSUserVariable {
     
-    @scala.inline
-    def apply(getTypeName: Double => String, isNull: () => Boolean, name: String, value: Double): SFSUserVariable = {
+    inline def apply(getTypeName: Double => String, isNull: () => Boolean, name: String, value: Double): SFSUserVariable = {
       val __obj = js.Dynamic.literal(getTypeName = js.Any.fromFunction1(getTypeName), isNull = js.Any.fromFunction0(isNull), name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SFSUserVariable]
     }
     
-    @scala.inline
-    implicit class SFSUserVariableMutableBuilder[Self <: SFSUserVariable] (val x: Self) extends AnyVal {
+    extension [Self <: SFSUserVariable](x: Self) {
       
-      @scala.inline
-      def setGetTypeName(value: Double => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction1(value))
+      inline def setGetTypeName(value: Double => String): Self = StObject.set(x, "getTypeName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsNull(value: () => Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction0(value))
+      inline def setIsNull(value: () => Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

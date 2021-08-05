@@ -13,19 +13,15 @@ trait GetPermissionResponse extends StObject {
 }
 object GetPermissionResponse {
   
-  @scala.inline
-  def apply(): GetPermissionResponse = {
+  inline def apply(): GetPermissionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPermissionResponse]
   }
   
-  @scala.inline
-  implicit class GetPermissionResponseMutableBuilder[Self <: GetPermissionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPermissionResponse](x: Self) {
     
-    @scala.inline
-    def setPermission(value: ResourceSharePermissionDetail): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: ResourceSharePermissionDetail): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
   }
 }

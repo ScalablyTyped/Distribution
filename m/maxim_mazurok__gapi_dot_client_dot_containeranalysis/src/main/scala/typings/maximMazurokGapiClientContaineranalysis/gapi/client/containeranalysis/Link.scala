@@ -34,52 +34,37 @@ trait Link extends StObject {
 }
 object Link {
   
-  @scala.inline
-  def apply(): Link = {
+  inline def apply(): Link = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Link]
   }
   
-  @scala.inline
-  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+  extension [Self <: Link](x: Self) {
     
-    @scala.inline
-    def setByproducts(value: ByProducts): Self = StObject.set(x, "byproducts", value.asInstanceOf[js.Any])
+    inline def setByproducts(value: ByProducts): Self = StObject.set(x, "byproducts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByproductsUndefined: Self = StObject.set(x, "byproducts", js.undefined)
+    inline def setByproductsUndefined: Self = StObject.set(x, "byproducts", js.undefined)
     
-    @scala.inline
-    def setCommand(value: js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setMaterials(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
+    inline def setMaterials(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
+    inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
-    @scala.inline
-    def setMaterialsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = StObject.set(x, "materials", js.Array(value :_*))
     
-    @scala.inline
-    def setProducts(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: js.Array[GrafeasV1beta1IntotoArtifact]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    @scala.inline
-    def setProductsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: GrafeasV1beta1IntotoArtifact*): Self = StObject.set(x, "products", js.Array(value :_*))
   }
 }

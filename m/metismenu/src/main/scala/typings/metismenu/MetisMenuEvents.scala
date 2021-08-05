@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetisMenuEvents extends StObject
 object MetisMenuEvents {
   
-  @scala.inline
-  def hiddenDotmetisMenu: typings.metismenu.metismenuStrings.hiddenDotmetisMenu = "hidden.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.hiddenDotmetisMenu]
+  inline def hiddenDotmetisMenu: typings.metismenu.metismenuStrings.hiddenDotmetisMenu = "hidden.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.hiddenDotmetisMenu]
   
-  @scala.inline
-  def hideDotmetisMenu: typings.metismenu.metismenuStrings.hideDotmetisMenu = "hide.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.hideDotmetisMenu]
+  inline def hideDotmetisMenu: typings.metismenu.metismenuStrings.hideDotmetisMenu = "hide.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.hideDotmetisMenu]
   
-  @scala.inline
-  def showDotmetisMenu: typings.metismenu.metismenuStrings.showDotmetisMenu = "show.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.showDotmetisMenu]
+  inline def showDotmetisMenu: typings.metismenu.metismenuStrings.showDotmetisMenu = "show.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.showDotmetisMenu]
   
-  @scala.inline
-  def shownDotmetisMenu: typings.metismenu.metismenuStrings.shownDotmetisMenu = "shown.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.shownDotmetisMenu]
+  inline def shownDotmetisMenu: typings.metismenu.metismenuStrings.shownDotmetisMenu = "shown.metisMenu".asInstanceOf[typings.metismenu.metismenuStrings.shownDotmetisMenu]
 }

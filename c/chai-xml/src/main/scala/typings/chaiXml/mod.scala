@@ -52,8 +52,7 @@ object mod extends Shortcut {
     }
     object XmlAssertion {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         and: XmlAssertion,
         at: XmlAssertion,
         be: XmlAssertion,
@@ -76,53 +75,37 @@ object mod extends Shortcut {
         __obj.asInstanceOf[XmlAssertion]
       }
       
-      @scala.inline
-      implicit class XmlAssertionMutableBuilder[Self <: XmlAssertion] (val x: Self) extends AnyVal {
+      extension [Self <: XmlAssertion](x: Self) {
         
-        @scala.inline
-        def setAnd(value: XmlAssertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+        inline def setAnd(value: XmlAssertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAt(value: XmlAssertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+        inline def setAt(value: XmlAssertion): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBe(value: XmlAssertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
+        inline def setBe(value: XmlAssertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBeen(value: XmlAssertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
+        inline def setBeen(value: XmlAssertion): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHas(value: XmlAssertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
+        inline def setHas(value: XmlAssertion): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHave(value: XmlAssertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
+        inline def setHave(value: XmlAssertion): Self = StObject.set(x, "have", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIs(value: XmlAssertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+        inline def setIs(value: XmlAssertion): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNot(value: XmlAssertion): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+        inline def setNot(value: XmlAssertion): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOf(value: XmlAssertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+        inline def setOf(value: XmlAssertion): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSame(value: XmlAssertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
+        inline def setSame(value: XmlAssertion): Self = StObject.set(x, "same", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThat(value: XmlAssertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
+        inline def setThat(value: XmlAssertion): Self = StObject.set(x, "that", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTo(value: XmlAssertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+        inline def setTo(value: XmlAssertion): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValid(value: () => XmlAssertion): Self = StObject.set(x, "valid", js.Any.fromFunction0(value))
+        inline def setValid(value: () => XmlAssertion): Self = StObject.set(x, "valid", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWhich(value: XmlAssertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+        inline def setWhich(value: XmlAssertion): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWith(value: XmlAssertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+        inline def setWith(value: XmlAssertion): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -142,17 +125,14 @@ object mod extends Shortcut {
       }
       object Assertion {
         
-        @scala.inline
-        def apply(xml: XmlAssertion): Assertion = {
+        inline def apply(xml: XmlAssertion): Assertion = {
           val __obj = js.Dynamic.literal(xml = xml.asInstanceOf[js.Any])
           __obj.asInstanceOf[Assertion]
         }
         
-        @scala.inline
-        implicit class AssertionMutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
+        extension [Self <: Assertion](x: Self) {
           
-          @scala.inline
-          def setXml(value: XmlAssertion): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+          inline def setXml(value: XmlAssertion): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
         }
       }
     }

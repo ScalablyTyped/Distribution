@@ -23,28 +23,21 @@ trait DescribeRegionsRequest extends StObject {
 }
 object DescribeRegionsRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): DescribeRegionsRequest = {
+  inline def apply(DirectoryId: DirectoryId): DescribeRegionsRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRegionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRegionsRequestMutableBuilder[Self <: DescribeRegionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRegionsRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+    inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
   }
 }

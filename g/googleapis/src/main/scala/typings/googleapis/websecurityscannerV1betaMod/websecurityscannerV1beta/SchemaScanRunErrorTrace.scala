@@ -31,31 +31,23 @@ trait SchemaScanRunErrorTrace extends StObject {
 }
 object SchemaScanRunErrorTrace {
   
-  @scala.inline
-  def apply(): SchemaScanRunErrorTrace = {
+  inline def apply(): SchemaScanRunErrorTrace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaScanRunErrorTrace]
   }
   
-  @scala.inline
-  implicit class SchemaScanRunErrorTraceMutableBuilder[Self <: SchemaScanRunErrorTrace] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaScanRunErrorTrace](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setMostCommonHttpErrorCode(value: Double): Self = StObject.set(x, "mostCommonHttpErrorCode", value.asInstanceOf[js.Any])
+    inline def setMostCommonHttpErrorCode(value: Double): Self = StObject.set(x, "mostCommonHttpErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMostCommonHttpErrorCodeUndefined: Self = StObject.set(x, "mostCommonHttpErrorCode", js.undefined)
+    inline def setMostCommonHttpErrorCodeUndefined: Self = StObject.set(x, "mostCommonHttpErrorCode", js.undefined)
     
-    @scala.inline
-    def setScanConfigError(value: SchemaScanConfigError): Self = StObject.set(x, "scanConfigError", value.asInstanceOf[js.Any])
+    inline def setScanConfigError(value: SchemaScanConfigError): Self = StObject.set(x, "scanConfigError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanConfigErrorUndefined: Self = StObject.set(x, "scanConfigError", js.undefined)
+    inline def setScanConfigErrorUndefined: Self = StObject.set(x, "scanConfigError", js.undefined)
   }
 }

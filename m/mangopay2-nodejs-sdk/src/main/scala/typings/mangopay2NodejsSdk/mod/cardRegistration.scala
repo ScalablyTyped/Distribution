@@ -71,8 +71,7 @@ object cardRegistration {
   }
   object CardRegistrationData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessKey: String,
       CardId: String,
       CardRegistrationURL: String,
@@ -92,41 +91,29 @@ object cardRegistration {
       __obj.asInstanceOf[CardRegistrationData]
     }
     
-    @scala.inline
-    implicit class CardRegistrationDataMutableBuilder[Self <: CardRegistrationData] (val x: Self) extends AnyVal {
+    extension [Self <: CardRegistrationData](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardId(value: String): Self = StObject.set(x, "CardId", value.asInstanceOf[js.Any])
+      inline def setCardId(value: String): Self = StObject.set(x, "CardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardRegistrationURL(value: String): Self = StObject.set(x, "CardRegistrationURL", value.asInstanceOf[js.Any])
+      inline def setCardRegistrationURL(value: String): Self = StObject.set(x, "CardRegistrationURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreregistrationData(value: String): Self = StObject.set(x, "PreregistrationData", value.asInstanceOf[js.Any])
+      inline def setPreregistrationData(value: String): Self = StObject.set(x, "PreregistrationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationData(value: String): Self = StObject.set(x, "RegistrationData", value.asInstanceOf[js.Any])
+      inline def setRegistrationData(value: String): Self = StObject.set(x, "RegistrationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
+      inline def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: CardStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: CardStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,32 +130,24 @@ object cardRegistration {
   }
   object CreateCardRegistration {
     
-    @scala.inline
-    def apply(Currency: CurrencyISO, UserId: String): CreateCardRegistration = {
+    inline def apply(Currency: CurrencyISO, UserId: String): CreateCardRegistration = {
       val __obj = js.Dynamic.literal(Currency = Currency.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateCardRegistration]
     }
     
-    @scala.inline
-    implicit class CreateCardRegistrationMutableBuilder[Self <: CreateCardRegistration] (val x: Self) extends AnyVal {
+    extension [Self <: CreateCardRegistration](x: Self) {
       
-      @scala.inline
-      def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardTypeUndefined: Self = StObject.set(x, "CardType", js.undefined)
+      inline def setCardTypeUndefined: Self = StObject.set(x, "CardType", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,26 +160,20 @@ object cardRegistration {
   }
   object UpdateCardRegistration {
     
-    @scala.inline
-    def apply(): UpdateCardRegistration = {
+    inline def apply(): UpdateCardRegistration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateCardRegistration]
     }
     
-    @scala.inline
-    implicit class UpdateCardRegistrationMutableBuilder[Self <: UpdateCardRegistration] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateCardRegistration](x: Self) {
       
-      @scala.inline
-      def setRegistrationData(value: String): Self = StObject.set(x, "RegistrationData", value.asInstanceOf[js.Any])
+      inline def setRegistrationData(value: String): Self = StObject.set(x, "RegistrationData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistrationDataUndefined: Self = StObject.set(x, "RegistrationData", js.undefined)
+      inline def setRegistrationDataUndefined: Self = StObject.set(x, "RegistrationData", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
 }

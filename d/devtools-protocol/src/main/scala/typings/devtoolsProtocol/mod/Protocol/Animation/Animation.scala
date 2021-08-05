@@ -62,8 +62,7 @@ trait Animation extends StObject {
 }
 object Animation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTime: Double,
     id: String,
     name: String,
@@ -78,43 +77,30 @@ object Animation {
     __obj.asInstanceOf[typings.devtoolsProtocol.mod.Protocol.Animation.Animation]
   }
   
-  @scala.inline
-  implicit class AnimationMutableBuilder[Self <: typings.devtoolsProtocol.mod.Protocol.Animation.Animation] (val x: Self) extends AnyVal {
+  extension [Self <: typings.devtoolsProtocol.mod.Protocol.Animation.Animation](x: Self) {
     
-    @scala.inline
-    def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
+    inline def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
+    inline def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPausedState(value: Boolean): Self = StObject.set(x, "pausedState", value.asInstanceOf[js.Any])
+    inline def setPausedState(value: Boolean): Self = StObject.set(x, "pausedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayState(value: String): Self = StObject.set(x, "playState", value.asInstanceOf[js.Any])
+    inline def setPlayState(value: String): Self = StObject.set(x, "playState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: AnimationEffect): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: AnimationEffect): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CSSTransition | CSSAnimation | WebAnimation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CSSTransition | CSSAnimation | WebAnimation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -41,51 +41,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlFormatDateTime extends StObject
 object OlFormatDateTime {
   
-  @scala.inline
-  def OlFormatDateTimeLongDayDate: `5` = 5.asInstanceOf[`5`]
+  inline def OlFormatDateTimeLongDayDate: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olFormatDateTimeBestFit: `17` = 17.asInstanceOf[`17`]
+  inline def olFormatDateTimeBestFit: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def olFormatDateTimeLongDate: `6` = 6.asInstanceOf[`6`]
+  inline def olFormatDateTimeLongDate: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def olFormatDateTimeLongDateReversed: `7` = 7.asInstanceOf[`7`]
+  inline def olFormatDateTimeLongDateReversed: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def olFormatDateTimeLongDayDateTime: `1` = 1.asInstanceOf[`1`]
+  inline def olFormatDateTimeLongDayDateTime: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olFormatDateTimeLongTime: `15` = 15.asInstanceOf[`15`]
+  inline def olFormatDateTimeLongTime: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def olFormatDateTimeShortDate: `8` = 8.asInstanceOf[`8`]
+  inline def olFormatDateTimeShortDate: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def olFormatDateTimeShortDateNumOnly: `9` = 9.asInstanceOf[`9`]
+  inline def olFormatDateTimeShortDateNumOnly: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def olFormatDateTimeShortDateTime: `2` = 2.asInstanceOf[`2`]
+  inline def olFormatDateTimeShortDateTime: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olFormatDateTimeShortDayDate: `13` = 13.asInstanceOf[`13`]
+  inline def olFormatDateTimeShortDayDate: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def olFormatDateTimeShortDayDateTime: `3` = 3.asInstanceOf[`3`]
+  inline def olFormatDateTimeShortDayDateTime: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olFormatDateTimeShortDayMonth: `10` = 10.asInstanceOf[`10`]
+  inline def olFormatDateTimeShortDayMonth: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def olFormatDateTimeShortDayMonthDateTime: `4` = 4.asInstanceOf[`4`]
+  inline def olFormatDateTimeShortDayMonthDateTime: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olFormatDateTimeShortMonthYear: `11` = 11.asInstanceOf[`11`]
+  inline def olFormatDateTimeShortMonthYear: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def olFormatDateTimeShortMonthYearNumOnly: `12` = 12.asInstanceOf[`12`]
+  inline def olFormatDateTimeShortMonthYearNumOnly: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def olFormatDateTimeShortTime: `16` = 16.asInstanceOf[`16`]
+  inline def olFormatDateTimeShortTime: `16` = 16.asInstanceOf[`16`]
 }

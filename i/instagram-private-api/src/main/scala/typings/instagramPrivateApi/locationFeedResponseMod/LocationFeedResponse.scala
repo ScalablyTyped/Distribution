@@ -20,8 +20,7 @@ trait LocationFeedResponse extends StObject {
 }
 object LocationFeedResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     more_available: Boolean,
     next_max_id: String,
     next_media_ids: js.Array[String],
@@ -33,31 +32,22 @@ object LocationFeedResponse {
     __obj.asInstanceOf[LocationFeedResponse]
   }
   
-  @scala.inline
-  implicit class LocationFeedResponseMutableBuilder[Self <: LocationFeedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LocationFeedResponse](x: Self) {
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+    inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_media_ids(value: js.Array[String]): Self = StObject.set(x, "next_media_ids", value.asInstanceOf[js.Any])
+    inline def setNext_media_ids(value: js.Array[String]): Self = StObject.set(x, "next_media_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_media_idsVarargs(value: String*): Self = StObject.set(x, "next_media_ids", js.Array(value :_*))
+    inline def setNext_media_idsVarargs(value: String*): Self = StObject.set(x, "next_media_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
+    inline def setNext_page(value: Double): Self = StObject.set(x, "next_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSections(value: js.Array[LocationFeedResponseSectionsItem]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: js.Array[LocationFeedResponseSectionsItem]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsVarargs(value: LocationFeedResponseSectionsItem*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: LocationFeedResponseSectionsItem*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

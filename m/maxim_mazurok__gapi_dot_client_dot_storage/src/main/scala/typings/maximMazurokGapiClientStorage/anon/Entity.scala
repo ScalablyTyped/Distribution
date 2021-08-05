@@ -14,25 +14,19 @@ trait Entity extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply(): Entity = {
+  inline def apply(): Entity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Entity]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+  extension [Self <: Entity](x: Self) {
     
-    @scala.inline
-    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
   }
 }

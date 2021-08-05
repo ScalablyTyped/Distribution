@@ -22,8 +22,7 @@ trait User
 }
 object User {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Groups: XNameAccess,
     Name: String,
     PropertySetInfo: XPropertySetInfo,
@@ -48,10 +47,8 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

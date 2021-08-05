@@ -12,8 +12,7 @@ trait GlobalChoreographyTask
 }
 object GlobalChoreographyTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     artifacts: js.Array[Artifact],
@@ -37,10 +36,8 @@ object GlobalChoreographyTask {
     __obj.asInstanceOf[GlobalChoreographyTask]
   }
   
-  @scala.inline
-  implicit class GlobalChoreographyTaskMutableBuilder[Self <: GlobalChoreographyTask] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalChoreographyTask](x: Self) {
     
-    @scala.inline
-    def setInitiatingParticipantRef(value: Participant): Self = StObject.set(x, "initiatingParticipantRef", value.asInstanceOf[js.Any])
+    inline def setInitiatingParticipantRef(value: Participant): Self = StObject.set(x, "initiatingParticipantRef", value.asInstanceOf[js.Any])
   }
 }

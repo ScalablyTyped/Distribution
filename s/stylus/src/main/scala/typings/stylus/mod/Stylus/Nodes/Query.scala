@@ -31,8 +31,7 @@ trait Query
 }
 object Query {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -59,31 +58,22 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+  extension [Self <: Query](x: Self) {
     
-    @scala.inline
-    def setMerge(value: Query => Query): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
+    inline def setMerge(value: Query => Query): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNodes(value: js.Array[QueryExpr]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[QueryExpr]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: QueryExpr*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: QueryExpr*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setPredicate(value: java.lang.String): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: java.lang.String): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: QueryExpr => scala.Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: QueryExpr => scala.Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolvedPredicate(value: java.lang.String): Self = StObject.set(x, "resolvedPredicate", value.asInstanceOf[js.Any])
+    inline def setResolvedPredicate(value: java.lang.String): Self = StObject.set(x, "resolvedPredicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedType(value: java.lang.String): Self = StObject.set(x, "resolvedType", value.asInstanceOf[js.Any])
+    inline def setResolvedType(value: java.lang.String): Self = StObject.set(x, "resolvedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait MenuItemParameters extends StObject {
 }
 object MenuItemParameters {
   
-  @scala.inline
-  def apply(engineId: String, items: js.Array[js.Object]): MenuItemParameters = {
+  inline def apply(engineId: String, items: js.Array[js.Object]): MenuItemParameters = {
     val __obj = js.Dynamic.literal(engineId = engineId.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuItemParameters]
   }
   
-  @scala.inline
-  implicit class MenuItemParametersMutableBuilder[Self <: MenuItemParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MenuItemParameters](x: Self) {
     
-    @scala.inline
-    def setEngineId(value: String): Self = StObject.set(x, "engineId", value.asInstanceOf[js.Any])
+    inline def setEngineId(value: String): Self = StObject.set(x, "engineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

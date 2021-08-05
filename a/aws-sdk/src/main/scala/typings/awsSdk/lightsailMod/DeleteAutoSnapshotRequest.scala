@@ -18,19 +18,15 @@ trait DeleteAutoSnapshotRequest extends StObject {
 }
 object DeleteAutoSnapshotRequest {
   
-  @scala.inline
-  def apply(date: AutoSnapshotDate, resourceName: ResourceName): DeleteAutoSnapshotRequest = {
+  inline def apply(date: AutoSnapshotDate, resourceName: ResourceName): DeleteAutoSnapshotRequest = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAutoSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAutoSnapshotRequestMutableBuilder[Self <: DeleteAutoSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAutoSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setDate(value: AutoSnapshotDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: AutoSnapshotDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
   }
 }

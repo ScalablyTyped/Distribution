@@ -11,16 +11,13 @@ trait PickImplsearchDelay extends StObject {
 }
 object PickImplsearchDelay {
   
-  @scala.inline
-  def apply(searchDelay: Double): PickImplsearchDelay = {
+  inline def apply(searchDelay: Double): PickImplsearchDelay = {
     val __obj = js.Dynamic.literal(searchDelay = searchDelay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsearchDelay]
   }
   
-  @scala.inline
-  implicit class PickImplsearchDelayMutableBuilder[Self <: PickImplsearchDelay] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsearchDelay](x: Self) {
     
-    @scala.inline
-    def setSearchDelay(value: Double): Self = StObject.set(x, "searchDelay", value.asInstanceOf[js.Any])
+    inline def setSearchDelay(value: Double): Self = StObject.set(x, "searchDelay", value.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ object subjectMod {
     def this(destination: Unit, source: Observable[T]) = this()
     def this(destination: Observer[T], source: Observable[T]) = this()
     
-    var destination: js.UndefOr[Observer[T]] = js.native
+    /* protected */ var destination: js.UndefOr[Observer[T]] = js.native
   }
   
   @JSImport("rxjs/internal/Subject", "Subject")
@@ -68,8 +68,7 @@ object subjectMod {
     @JSImport("rxjs/internal/Subject", "Subject.create")
     @js.native
     def create: js.Function = js.native
-    @scala.inline
-    def create_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
+    inline def create_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rxjs/internal/Subject", "SubjectSubscriber")
@@ -77,7 +76,7 @@ object subjectMod {
   class SubjectSubscriber[T] protected () extends Subscriber[T] {
     def this(destination: Subject[T]) = this()
     
-    @JSName("destination")
+    /* protected */ @JSName("destination")
     var destination_SubjectSubscriber: Subject[T] = js.native
   }
 }

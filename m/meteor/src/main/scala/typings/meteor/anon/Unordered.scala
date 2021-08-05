@@ -12,25 +12,19 @@ trait Unordered extends StObject {
 }
 object Unordered {
   
-  @scala.inline
-  def apply(): Unordered = {
+  inline def apply(): Unordered = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Unordered]
   }
   
-  @scala.inline
-  implicit class UnorderedMutableBuilder[Self <: Unordered] (val x: Self) extends AnyVal {
+  extension [Self <: Unordered](x: Self) {
     
-    @scala.inline
-    def setUnordered(value: Boolean): Self = StObject.set(x, "unordered", value.asInstanceOf[js.Any])
+    inline def setUnordered(value: Boolean): Self = StObject.set(x, "unordered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnorderedUndefined: Self = StObject.set(x, "unordered", js.undefined)
+    inline def setUnorderedUndefined: Self = StObject.set(x, "unordered", js.undefined)
     
-    @scala.inline
-    def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+    inline def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
+    inline def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
   }
 }

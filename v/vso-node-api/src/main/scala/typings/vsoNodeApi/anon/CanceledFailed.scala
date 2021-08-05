@@ -14,22 +14,17 @@ trait CanceledFailed extends StObject {
 }
 object CanceledFailed {
   
-  @scala.inline
-  def apply(canceled: scala.Double, failed: scala.Double, succeeded: scala.Double): CanceledFailed = {
+  inline def apply(canceled: scala.Double, failed: scala.Double, succeeded: scala.Double): CanceledFailed = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanceledFailed]
   }
   
-  @scala.inline
-  implicit class CanceledFailedMutableBuilder[Self <: CanceledFailed] (val x: Self) extends AnyVal {
+  extension [Self <: CanceledFailed](x: Self) {
     
-    @scala.inline
-    def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

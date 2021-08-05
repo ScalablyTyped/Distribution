@@ -18,28 +18,21 @@ trait GetLoadBalancersResult extends StObject {
 }
 object GetLoadBalancersResult {
   
-  @scala.inline
-  def apply(): GetLoadBalancersResult = {
+  inline def apply(): GetLoadBalancersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLoadBalancersResult]
   }
   
-  @scala.inline
-  implicit class GetLoadBalancersResultMutableBuilder[Self <: GetLoadBalancersResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoadBalancersResult](x: Self) {
     
-    @scala.inline
-    def setLoadBalancers(value: LoadBalancerList): Self = StObject.set(x, "loadBalancers", value.asInstanceOf[js.Any])
+    inline def setLoadBalancers(value: LoadBalancerList): Self = StObject.set(x, "loadBalancers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
+    inline def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
     
-    @scala.inline
-    def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -26,40 +26,29 @@ trait PasswordProfile extends StObject {
 }
 object PasswordProfile {
   
-  @scala.inline
-  def apply(): PasswordProfile = {
+  inline def apply(): PasswordProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PasswordProfile]
   }
   
-  @scala.inline
-  implicit class PasswordProfileMutableBuilder[Self <: PasswordProfile] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordProfile](x: Self) {
     
-    @scala.inline
-    def setForceChangePasswordNextSignIn(value: NullableOption[Boolean]): Self = StObject.set(x, "forceChangePasswordNextSignIn", value.asInstanceOf[js.Any])
+    inline def setForceChangePasswordNextSignIn(value: NullableOption[Boolean]): Self = StObject.set(x, "forceChangePasswordNextSignIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceChangePasswordNextSignInNull: Self = StObject.set(x, "forceChangePasswordNextSignIn", null)
+    inline def setForceChangePasswordNextSignInNull: Self = StObject.set(x, "forceChangePasswordNextSignIn", null)
     
-    @scala.inline
-    def setForceChangePasswordNextSignInUndefined: Self = StObject.set(x, "forceChangePasswordNextSignIn", js.undefined)
+    inline def setForceChangePasswordNextSignInUndefined: Self = StObject.set(x, "forceChangePasswordNextSignIn", js.undefined)
     
-    @scala.inline
-    def setForceChangePasswordNextSignInWithMfa(value: NullableOption[Boolean]): Self = StObject.set(x, "forceChangePasswordNextSignInWithMfa", value.asInstanceOf[js.Any])
+    inline def setForceChangePasswordNextSignInWithMfa(value: NullableOption[Boolean]): Self = StObject.set(x, "forceChangePasswordNextSignInWithMfa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceChangePasswordNextSignInWithMfaNull: Self = StObject.set(x, "forceChangePasswordNextSignInWithMfa", null)
+    inline def setForceChangePasswordNextSignInWithMfaNull: Self = StObject.set(x, "forceChangePasswordNextSignInWithMfa", null)
     
-    @scala.inline
-    def setForceChangePasswordNextSignInWithMfaUndefined: Self = StObject.set(x, "forceChangePasswordNextSignInWithMfa", js.undefined)
+    inline def setForceChangePasswordNextSignInWithMfaUndefined: Self = StObject.set(x, "forceChangePasswordNextSignInWithMfa", js.undefined)
     
-    @scala.inline
-    def setPassword(value: NullableOption[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: NullableOption[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordNull: Self = StObject.set(x, "password", null)
+    inline def setPasswordNull: Self = StObject.set(x, "password", null)
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
   }
 }

@@ -15,29 +15,22 @@ object stacktraceMod {
   }
   object Stacktrace {
     
-    @scala.inline
-    def apply(): Stacktrace = {
+    inline def apply(): Stacktrace = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Stacktrace]
     }
     
-    @scala.inline
-    implicit class StacktraceMutableBuilder[Self <: Stacktrace] (val x: Self) extends AnyVal {
+    extension [Self <: Stacktrace](x: Self) {
       
-      @scala.inline
-      def setFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+      inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
       
-      @scala.inline
-      def setFramesVarargs(value: StackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: StackFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setFrames_omitted(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "frames_omitted", value.asInstanceOf[js.Any])
+      inline def setFrames_omitted(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "frames_omitted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrames_omittedUndefined: Self = StObject.set(x, "frames_omitted", js.undefined)
+      inline def setFrames_omittedUndefined: Self = StObject.set(x, "frames_omitted", js.undefined)
     }
   }
 }

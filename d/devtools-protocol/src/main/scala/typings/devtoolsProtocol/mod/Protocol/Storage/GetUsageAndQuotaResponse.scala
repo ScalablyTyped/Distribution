@@ -28,28 +28,21 @@ trait GetUsageAndQuotaResponse extends StObject {
 }
 object GetUsageAndQuotaResponse {
   
-  @scala.inline
-  def apply(overrideActive: Boolean, quota: Double, usage: Double, usageBreakdown: js.Array[UsageForType]): GetUsageAndQuotaResponse = {
+  inline def apply(overrideActive: Boolean, quota: Double, usage: Double, usageBreakdown: js.Array[UsageForType]): GetUsageAndQuotaResponse = {
     val __obj = js.Dynamic.literal(overrideActive = overrideActive.asInstanceOf[js.Any], quota = quota.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], usageBreakdown = usageBreakdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsageAndQuotaResponse]
   }
   
-  @scala.inline
-  implicit class GetUsageAndQuotaResponseMutableBuilder[Self <: GetUsageAndQuotaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsageAndQuotaResponse](x: Self) {
     
-    @scala.inline
-    def setOverrideActive(value: Boolean): Self = StObject.set(x, "overrideActive", value.asInstanceOf[js.Any])
+    inline def setOverrideActive(value: Boolean): Self = StObject.set(x, "overrideActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
+    inline def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageBreakdown(value: js.Array[UsageForType]): Self = StObject.set(x, "usageBreakdown", value.asInstanceOf[js.Any])
+    inline def setUsageBreakdown(value: js.Array[UsageForType]): Self = StObject.set(x, "usageBreakdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageBreakdownVarargs(value: UsageForType*): Self = StObject.set(x, "usageBreakdown", js.Array(value :_*))
+    inline def setUsageBreakdownVarargs(value: UsageForType*): Self = StObject.set(x, "usageBreakdown", js.Array(value :_*))
   }
 }

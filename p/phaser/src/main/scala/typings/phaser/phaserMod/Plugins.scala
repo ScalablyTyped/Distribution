@@ -37,8 +37,7 @@ object Plugins {
   @JSImport("phaser", "Plugins.CoreScene")
   @js.native
   def CoreScene: js.Array[js.Any] = js.native
-  @scala.inline
-  def CoreScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CoreScene")(x.asInstanceOf[js.Any])
+  inline def CoreScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CoreScene")(x.asInstanceOf[js.Any])
   
   /**
     * These plugins are created in Scene.Systems in addition to the CoreScenePlugins.
@@ -54,8 +53,7 @@ object Plugins {
   @JSImport("phaser", "Plugins.DefaultScene")
   @js.native
   def DefaultScene: js.Array[js.Any] = js.native
-  @scala.inline
-  def DefaultScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultScene")(x.asInstanceOf[js.Any])
+  inline def DefaultScene_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultScene")(x.asInstanceOf[js.Any])
   
   /**
     * These are the Global Managers that are created by the Phaser.Game instance.
@@ -64,8 +62,7 @@ object Plugins {
   @JSImport("phaser", "Plugins.Global")
   @js.native
   def Global: js.Array[js.Any] = js.native
-  @scala.inline
-  def Global_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Global")(x.asInstanceOf[js.Any])
+  inline def Global_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Global")(x.asInstanceOf[js.Any])
   
   object PluginCache {
     
@@ -79,49 +76,42 @@ object Plugins {
       * This includes all of the internal system plugins that Phaser needs, like the Input Plugin and Loader Plugin.
       * So be sure you only call this if you do not wish to run Phaser again.
       */
-    @scala.inline
-    def destroyCorePlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyCorePlugins")().asInstanceOf[Unit]
+    inline def destroyCorePlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyCorePlugins")().asInstanceOf[Unit]
     
     /**
       * Removes all Custom Plugins.
       */
-    @scala.inline
-    def destroyCustomPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyCustomPlugins")().asInstanceOf[Unit]
+    inline def destroyCustomPlugins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyCustomPlugins")().asInstanceOf[Unit]
     
     /**
       * Returns the core plugin object from the cache based on the given key.
       * @param key The key of the core plugin to get.
       */
-    @scala.inline
-    def getCore(key: String): CorePluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")(key.asInstanceOf[js.Any]).asInstanceOf[CorePluginContainer]
+    inline def getCore(key: String): CorePluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")(key.asInstanceOf[js.Any]).asInstanceOf[CorePluginContainer]
     
     /**
       * Returns the custom plugin object from the cache based on the given key.
       * @param key The key of the custom plugin to get.
       */
-    @scala.inline
-    def getCustom(key: String): CustomPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustom")(key.asInstanceOf[js.Any]).asInstanceOf[CustomPluginContainer]
+    inline def getCustom(key: String): CustomPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustom")(key.asInstanceOf[js.Any]).asInstanceOf[CustomPluginContainer]
     
     /**
       * Returns an object from the custom cache based on the given key that can be instantiated.
       * @param key The key of the custom plugin to get.
       */
-    @scala.inline
-    def getCustomClass(key: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomClass")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def getCustomClass(key: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomClass")(key.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     
     /**
       * Checks if the given key is already being used in the core plugin cache.
       * @param key The key to check for.
       */
-    @scala.inline
-    def hasCore(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCore")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasCore(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCore")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Checks if the given key is already being used in the custom plugin cache.
       * @param key The key to check for.
       */
-    @scala.inline
-    def hasCustom(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCustom")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasCustom(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCustom")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Static method called directly by the Core internal Plugins.
@@ -133,10 +123,8 @@ object Plugins {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param custom Core Scene plugin or a Custom Scene plugin? Default false.
       */
-    @scala.inline
-    def register(key: String, plugin: js.Function, mapping: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def register(key: String, plugin: js.Function, mapping: String, custom: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], custom.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(key: String, plugin: js.Function, mapping: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(key: String, plugin: js.Function, mapping: String, custom: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], custom.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Stores a custom plugin in the global plugin cache.
@@ -146,22 +134,19 @@ object Plugins {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param data A value to be passed to the plugin's `init` method.
       */
-    @scala.inline
-    def registerCustom(key: String, plugin: js.Function, mapping: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustom")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerCustom(key: String, plugin: js.Function, mapping: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustom")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a core plugin based on the given key.
       * @param key The key of the core plugin to remove.
       */
-    @scala.inline
-    def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes a custom plugin based on the given key.
       * @param key The key of the custom plugin to remove.
       */
-    @scala.inline
-    def removeCustom(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustom")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeCustom(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustom")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**

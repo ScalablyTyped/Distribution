@@ -144,193 +144,131 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ClinicalImpression {
   
-  @scala.inline
-  def apply(status: code, subject: Reference): ClinicalImpression = {
+  inline def apply(status: code, subject: Reference): ClinicalImpression = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClinicalImpression]
   }
   
-  @scala.inline
-  implicit class ClinicalImpressionMutableBuilder[Self <: ClinicalImpression] (val x: Self) extends AnyVal {
+  extension [Self <: ClinicalImpression](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Array[Reference]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Array[Reference]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setActionVarargs(value: Reference*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: Reference*): Self = StObject.set(x, "action", js.Array(value :_*))
     
-    @scala.inline
-    def setAssessor(value: Reference): Self = StObject.set(x, "assessor", value.asInstanceOf[js.Any])
+    inline def setAssessor(value: Reference): Self = StObject.set(x, "assessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessorUndefined: Self = StObject.set(x, "assessor", js.undefined)
+    inline def setAssessorUndefined: Self = StObject.set(x, "assessor", js.undefined)
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEffectiveDateTime(value: dateTime): Self = StObject.set(x, "effectiveDateTime", value.asInstanceOf[js.Any])
+    inline def setEffectiveDateTime(value: dateTime): Self = StObject.set(x, "effectiveDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveDateTimeUndefined: Self = StObject.set(x, "effectiveDateTime", js.undefined)
+    inline def setEffectiveDateTimeUndefined: Self = StObject.set(x, "effectiveDateTime", js.undefined)
     
-    @scala.inline
-    def setEffectivePeriod(value: Period): Self = StObject.set(x, "effectivePeriod", value.asInstanceOf[js.Any])
+    inline def setEffectivePeriod(value: Period): Self = StObject.set(x, "effectivePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectivePeriodUndefined: Self = StObject.set(x, "effectivePeriod", js.undefined)
+    inline def setEffectivePeriodUndefined: Self = StObject.set(x, "effectivePeriod", js.undefined)
     
-    @scala.inline
-    def setFinding(value: js.Array[ClinicalImpressionFinding]): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: js.Array[ClinicalImpressionFinding]): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
     
-    @scala.inline
-    def setFindingVarargs(value: ClinicalImpressionFinding*): Self = StObject.set(x, "finding", js.Array(value :_*))
+    inline def setFindingVarargs(value: ClinicalImpressionFinding*): Self = StObject.set(x, "finding", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
-    @scala.inline
-    def setInvestigation(value: js.Array[ClinicalImpressionInvestigation]): Self = StObject.set(x, "investigation", value.asInstanceOf[js.Any])
+    inline def setInvestigation(value: js.Array[ClinicalImpressionInvestigation]): Self = StObject.set(x, "investigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvestigationUndefined: Self = StObject.set(x, "investigation", js.undefined)
+    inline def setInvestigationUndefined: Self = StObject.set(x, "investigation", js.undefined)
     
-    @scala.inline
-    def setInvestigationVarargs(value: ClinicalImpressionInvestigation*): Self = StObject.set(x, "investigation", js.Array(value :_*))
+    inline def setInvestigationVarargs(value: ClinicalImpressionInvestigation*): Self = StObject.set(x, "investigation", js.Array(value :_*))
     
-    @scala.inline
-    def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
+    inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value :_*))
     
-    @scala.inline
-    def setPrevious(value: Reference): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: Reference): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
-    @scala.inline
-    def setProblem(value: js.Array[Reference]): Self = StObject.set(x, "problem", value.asInstanceOf[js.Any])
+    inline def setProblem(value: js.Array[Reference]): Self = StObject.set(x, "problem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProblemUndefined: Self = StObject.set(x, "problem", js.undefined)
+    inline def setProblemUndefined: Self = StObject.set(x, "problem", js.undefined)
     
-    @scala.inline
-    def setProblemVarargs(value: Reference*): Self = StObject.set(x, "problem", js.Array(value :_*))
+    inline def setProblemVarargs(value: Reference*): Self = StObject.set(x, "problem", js.Array(value :_*))
     
-    @scala.inline
-    def setPrognosisCodeableConcept(value: js.Array[CodeableConcept]): Self = StObject.set(x, "prognosisCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setPrognosisCodeableConcept(value: js.Array[CodeableConcept]): Self = StObject.set(x, "prognosisCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrognosisCodeableConceptUndefined: Self = StObject.set(x, "prognosisCodeableConcept", js.undefined)
+    inline def setPrognosisCodeableConceptUndefined: Self = StObject.set(x, "prognosisCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setPrognosisCodeableConceptVarargs(value: CodeableConcept*): Self = StObject.set(x, "prognosisCodeableConcept", js.Array(value :_*))
+    inline def setPrognosisCodeableConceptVarargs(value: CodeableConcept*): Self = StObject.set(x, "prognosisCodeableConcept", js.Array(value :_*))
     
-    @scala.inline
-    def setPrognosisReference(value: js.Array[Reference]): Self = StObject.set(x, "prognosisReference", value.asInstanceOf[js.Any])
+    inline def setPrognosisReference(value: js.Array[Reference]): Self = StObject.set(x, "prognosisReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrognosisReferenceUndefined: Self = StObject.set(x, "prognosisReference", js.undefined)
+    inline def setPrognosisReferenceUndefined: Self = StObject.set(x, "prognosisReference", js.undefined)
     
-    @scala.inline
-    def setPrognosisReferenceVarargs(value: Reference*): Self = StObject.set(x, "prognosisReference", js.Array(value :_*))
+    inline def setPrognosisReferenceVarargs(value: Reference*): Self = StObject.set(x, "prognosisReference", js.Array(value :_*))
     
-    @scala.inline
-    def setProtocol(value: js.Array[uri]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: js.Array[uri]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setProtocolVarargs(value: uri*): Self = StObject.set(x, "protocol", js.Array(value :_*))
+    inline def setProtocolVarargs(value: uri*): Self = StObject.set(x, "protocol", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    @scala.inline
-    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_effectiveDateTime(value: Element): Self = StObject.set(x, "_effectiveDateTime", value.asInstanceOf[js.Any])
+    inline def set_effectiveDateTime(value: Element): Self = StObject.set(x, "_effectiveDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_effectiveDateTimeUndefined: Self = StObject.set(x, "_effectiveDateTime", js.undefined)
+    inline def set_effectiveDateTimeUndefined: Self = StObject.set(x, "_effectiveDateTime", js.undefined)
     
-    @scala.inline
-    def set_protocol(value: js.Array[Element]): Self = StObject.set(x, "_protocol", value.asInstanceOf[js.Any])
+    inline def set_protocol(value: js.Array[Element]): Self = StObject.set(x, "_protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_protocolUndefined: Self = StObject.set(x, "_protocol", js.undefined)
+    inline def set_protocolUndefined: Self = StObject.set(x, "_protocol", js.undefined)
     
-    @scala.inline
-    def set_protocolVarargs(value: Element*): Self = StObject.set(x, "_protocol", js.Array(value :_*))
+    inline def set_protocolVarargs(value: Element*): Self = StObject.set(x, "_protocol", js.Array(value :_*))
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
-    @scala.inline
-    def set_summary(value: Element): Self = StObject.set(x, "_summary", value.asInstanceOf[js.Any])
+    inline def set_summary(value: Element): Self = StObject.set(x, "_summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_summaryUndefined: Self = StObject.set(x, "_summary", js.undefined)
+    inline def set_summaryUndefined: Self = StObject.set(x, "_summary", js.undefined)
   }
 }

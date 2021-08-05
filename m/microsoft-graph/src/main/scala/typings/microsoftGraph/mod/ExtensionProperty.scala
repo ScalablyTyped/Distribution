@@ -29,52 +29,37 @@ trait ExtensionProperty
 }
 object ExtensionProperty {
   
-  @scala.inline
-  def apply(): ExtensionProperty = {
+  inline def apply(): ExtensionProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtensionProperty]
   }
   
-  @scala.inline
-  implicit class ExtensionPropertyMutableBuilder[Self <: ExtensionProperty] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionProperty](x: Self) {
     
-    @scala.inline
-    def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
+    inline def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppDisplayNameNull: Self = StObject.set(x, "appDisplayName", null)
+    inline def setAppDisplayNameNull: Self = StObject.set(x, "appDisplayName", null)
     
-    @scala.inline
-    def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
+    inline def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setIsSyncedFromOnPremises(value: NullableOption[Boolean]): Self = StObject.set(x, "isSyncedFromOnPremises", value.asInstanceOf[js.Any])
+    inline def setIsSyncedFromOnPremises(value: NullableOption[Boolean]): Self = StObject.set(x, "isSyncedFromOnPremises", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSyncedFromOnPremisesNull: Self = StObject.set(x, "isSyncedFromOnPremises", null)
+    inline def setIsSyncedFromOnPremisesNull: Self = StObject.set(x, "isSyncedFromOnPremises", null)
     
-    @scala.inline
-    def setIsSyncedFromOnPremisesUndefined: Self = StObject.set(x, "isSyncedFromOnPremises", js.undefined)
+    inline def setIsSyncedFromOnPremisesUndefined: Self = StObject.set(x, "isSyncedFromOnPremises", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTargetObjects(value: js.Array[String]): Self = StObject.set(x, "targetObjects", value.asInstanceOf[js.Any])
+    inline def setTargetObjects(value: js.Array[String]): Self = StObject.set(x, "targetObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetObjectsUndefined: Self = StObject.set(x, "targetObjects", js.undefined)
+    inline def setTargetObjectsUndefined: Self = StObject.set(x, "targetObjects", js.undefined)
     
-    @scala.inline
-    def setTargetObjectsVarargs(value: String*): Self = StObject.set(x, "targetObjects", js.Array(value :_*))
+    inline def setTargetObjectsVarargs(value: String*): Self = StObject.set(x, "targetObjects", js.Array(value :_*))
   }
 }

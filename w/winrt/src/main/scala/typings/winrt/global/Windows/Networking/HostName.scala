@@ -37,6 +37,5 @@ object HostName {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compare(value1: String, value2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(value1: String, value2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

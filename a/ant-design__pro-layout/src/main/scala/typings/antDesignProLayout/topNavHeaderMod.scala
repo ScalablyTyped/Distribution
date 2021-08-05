@@ -76,143 +76,98 @@ object topNavHeaderMod extends Shortcut {
   }
   object TopNavHeaderProps {
     
-    @scala.inline
-    def apply(matchMenuKeys: js.Array[String]): TopNavHeaderProps = {
+    inline def apply(matchMenuKeys: js.Array[String]): TopNavHeaderProps = {
       val __obj = js.Dynamic.literal(matchMenuKeys = matchMenuKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopNavHeaderProps]
     }
     
-    @scala.inline
-    implicit class TopNavHeaderPropsMutableBuilder[Self <: TopNavHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: TopNavHeaderProps](x: Self) {
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
+      inline def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorWeakUndefined: Self = StObject.set(x, "colorWeak", js.undefined)
+      inline def setColorWeakUndefined: Self = StObject.set(x, "colorWeak", js.undefined)
       
-      @scala.inline
-      def setContentWidth(value: ContentWidth): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
+      inline def setContentWidth(value: ContentWidth): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
+      inline def setContentWidthUndefined: Self = StObject.set(x, "contentWidth", js.undefined)
       
-      @scala.inline
-      def setFixSiderbar(value: Boolean): Self = StObject.set(x, "fixSiderbar", value.asInstanceOf[js.Any])
+      inline def setFixSiderbar(value: Boolean): Self = StObject.set(x, "fixSiderbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixSiderbarUndefined: Self = StObject.set(x, "fixSiderbar", js.undefined)
+      inline def setFixSiderbarUndefined: Self = StObject.set(x, "fixSiderbar", js.undefined)
       
-      @scala.inline
-      def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+      inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      @scala.inline
-      def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+      inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
+      inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
       
-      @scala.inline
-      def setHeaderTheme(value: MenuTheme): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
+      inline def setHeaderTheme(value: MenuTheme): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
+      inline def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
       
-      @scala.inline
-      def setIconfontUrl(value: String): Self = StObject.set(x, "iconfontUrl", value.asInstanceOf[js.Any])
+      inline def setIconfontUrl(value: String): Self = StObject.set(x, "iconfontUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconfontUrlUndefined: Self = StObject.set(x, "iconfontUrl", js.undefined)
+      inline def setIconfontUrlUndefined: Self = StObject.set(x, "iconfontUrl", js.undefined)
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+      inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
       
-      @scala.inline
-      def setLayout(value: side | top | mix): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: side | top | mix): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuData(value: js.Array[MenuDataItem]): Self = StObject.set(x, "menuData", value.asInstanceOf[js.Any])
+      inline def setMenuData(value: js.Array[MenuDataItem]): Self = StObject.set(x, "menuData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuDataUndefined: Self = StObject.set(x, "menuData", js.undefined)
+      inline def setMenuDataUndefined: Self = StObject.set(x, "menuData", js.undefined)
       
-      @scala.inline
-      def setMenuDataVarargs(value: MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value :_*))
+      inline def setMenuDataVarargs(value: MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value :_*))
       
-      @scala.inline
-      def setMenuRender(value: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]): Self = StObject.set(x, "menuRender", value.asInstanceOf[js.Any])
+      inline def setMenuRender(value: WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]): Self = StObject.set(x, "menuRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuRenderFunction2(value: (/* props */ HeaderViewProps, /* defaultDom */ ReactNode) => ReactNode): Self = StObject.set(x, "menuRender", js.Any.fromFunction2(value))
+      inline def setMenuRenderFunction2(value: (/* props */ HeaderViewProps, /* defaultDom */ ReactNode) => ReactNode): Self = StObject.set(x, "menuRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMenuRenderUndefined: Self = StObject.set(x, "menuRender", js.undefined)
+      inline def setMenuRenderUndefined: Self = StObject.set(x, "menuRender", js.undefined)
       
-      @scala.inline
-      def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      @scala.inline
-      def setNavTheme(value: MenuTheme | realDark): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
+      inline def setNavTheme(value: MenuTheme | realDark): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavThemeUndefined: Self = StObject.set(x, "navTheme", js.undefined)
+      inline def setNavThemeUndefined: Self = StObject.set(x, "navTheme", js.undefined)
       
-      @scala.inline
-      def setOnCollapse(value: /* collapsed */ Boolean => Unit): Self = StObject.set(x, "onCollapse", js.Any.fromFunction1(value))
+      inline def setOnCollapse(value: /* collapsed */ Boolean => Unit): Self = StObject.set(x, "onCollapse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCollapseUndefined: Self = StObject.set(x, "onCollapse", js.undefined)
+      inline def setOnCollapseUndefined: Self = StObject.set(x, "onCollapse", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+      inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+      inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
       
-      @scala.inline
-      def setRightContentRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]]): Self = StObject.set(x, "rightContentRender", value.asInstanceOf[js.Any])
+      inline def setRightContentRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]]): Self = StObject.set(x, "rightContentRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightContentRenderFunction1(value: /* props */ HeaderViewProps => ReactNode): Self = StObject.set(x, "rightContentRender", js.Any.fromFunction1(value))
+      inline def setRightContentRenderFunction1(value: /* props */ HeaderViewProps => ReactNode): Self = StObject.set(x, "rightContentRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRightContentRenderUndefined: Self = StObject.set(x, "rightContentRender", js.undefined)
+      inline def setRightContentRenderUndefined: Self = StObject.set(x, "rightContentRender", js.undefined)
       
-      @scala.inline
-      def setSplitMenus(value: Boolean): Self = StObject.set(x, "splitMenus", value.asInstanceOf[js.Any])
+      inline def setSplitMenus(value: Boolean): Self = StObject.set(x, "splitMenus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitMenusUndefined: Self = StObject.set(x, "splitMenus", js.undefined)
+      inline def setSplitMenusUndefined: Self = StObject.set(x, "splitMenus", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

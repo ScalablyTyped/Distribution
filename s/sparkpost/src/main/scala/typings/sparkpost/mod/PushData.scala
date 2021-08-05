@@ -14,25 +14,19 @@ trait PushData extends StObject {
 }
 object PushData {
   
-  @scala.inline
-  def apply(): PushData = {
+  inline def apply(): PushData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PushData]
   }
   
-  @scala.inline
-  implicit class PushDataMutableBuilder[Self <: PushData] (val x: Self) extends AnyVal {
+  extension [Self <: PushData](x: Self) {
     
-    @scala.inline
-    def setApns(value: js.Any): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    inline def setApns(value: js.Any): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
+    inline def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
     
-    @scala.inline
-    def setGcm(value: js.Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+    inline def setGcm(value: js.Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcmUndefined: Self = StObject.set(x, "gcm", js.undefined)
+    inline def setGcmUndefined: Self = StObject.set(x, "gcm", js.undefined)
   }
 }

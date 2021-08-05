@@ -48,64 +48,45 @@ trait UsageLimit extends StObject {
 }
 object UsageLimit {
   
-  @scala.inline
-  def apply(): UsageLimit = {
+  inline def apply(): UsageLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageLimit]
   }
   
-  @scala.inline
-  implicit class UsageLimitMutableBuilder[Self <: UsageLimit] (val x: Self) extends AnyVal {
+  extension [Self <: UsageLimit](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Long): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Long): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
     
-    @scala.inline
-    def setBreachAction(value: UsageLimitBreachAction): Self = StObject.set(x, "BreachAction", value.asInstanceOf[js.Any])
+    inline def setBreachAction(value: UsageLimitBreachAction): Self = StObject.set(x, "BreachAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreachActionUndefined: Self = StObject.set(x, "BreachAction", js.undefined)
+    inline def setBreachActionUndefined: Self = StObject.set(x, "BreachAction", js.undefined)
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setFeatureType(value: UsageLimitFeatureType): Self = StObject.set(x, "FeatureType", value.asInstanceOf[js.Any])
+    inline def setFeatureType(value: UsageLimitFeatureType): Self = StObject.set(x, "FeatureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTypeUndefined: Self = StObject.set(x, "FeatureType", js.undefined)
+    inline def setFeatureTypeUndefined: Self = StObject.set(x, "FeatureType", js.undefined)
     
-    @scala.inline
-    def setLimitType(value: UsageLimitLimitType): Self = StObject.set(x, "LimitType", value.asInstanceOf[js.Any])
+    inline def setLimitType(value: UsageLimitLimitType): Self = StObject.set(x, "LimitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitTypeUndefined: Self = StObject.set(x, "LimitType", js.undefined)
+    inline def setLimitTypeUndefined: Self = StObject.set(x, "LimitType", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: UsageLimitPeriod): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: UsageLimitPeriod): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
+    inline def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageLimitIdUndefined: Self = StObject.set(x, "UsageLimitId", js.undefined)
+    inline def setUsageLimitIdUndefined: Self = StObject.set(x, "UsageLimitId", js.undefined)
   }
 }

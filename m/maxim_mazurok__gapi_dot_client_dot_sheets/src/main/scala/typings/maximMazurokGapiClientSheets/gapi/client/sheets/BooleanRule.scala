@@ -14,25 +14,19 @@ trait BooleanRule extends StObject {
 }
 object BooleanRule {
   
-  @scala.inline
-  def apply(): BooleanRule = {
+  inline def apply(): BooleanRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BooleanRule]
   }
   
-  @scala.inline
-  implicit class BooleanRuleMutableBuilder[Self <: BooleanRule] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanRule](x: Self) {
     
-    @scala.inline
-    def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setFormat(value: CellFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CellFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait objectTablesStatic extends StObject {
 }
 object objectTablesStatic {
   
-  @scala.inline
-  def apply(api: Boolean, visible: Boolean): objectTablesStatic = {
+  inline def apply(api: Boolean, visible: Boolean): objectTablesStatic = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[objectTablesStatic]
   }
   
-  @scala.inline
-  implicit class objectTablesStaticMutableBuilder[Self <: objectTablesStatic] (val x: Self) extends AnyVal {
+  extension [Self <: objectTablesStatic](x: Self) {
     
-    @scala.inline
-    def setApi(value: Boolean): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Boolean): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

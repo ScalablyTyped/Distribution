@@ -23,8 +23,7 @@ trait ImageMapType
 }
 object ImageMapType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getMapTypeOptions: () => ImageMapTypeOptions,
     getMaxZoom: () => Double,
     getMinZoom: () => Double,
@@ -42,25 +41,18 @@ object ImageMapType {
     __obj.asInstanceOf[ImageMapType]
   }
   
-  @scala.inline
-  implicit class ImageMapTypeMutableBuilder[Self <: ImageMapType] (val x: Self) extends AnyVal {
+  extension [Self <: ImageMapType](x: Self) {
     
-    @scala.inline
-    def setGetMapTypeOptions(value: () => ImageMapTypeOptions): Self = StObject.set(x, "getMapTypeOptions", js.Any.fromFunction0(value))
+    inline def setGetMapTypeOptions(value: () => ImageMapTypeOptions): Self = StObject.set(x, "getMapTypeOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
+    inline def setGetMaxZoom(value: () => Double): Self = StObject.set(x, "getMaxZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
+    inline def setGetMinZoom(value: () => Double): Self = StObject.set(x, "getMinZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTileUrls(value: (Double, Double, Double) => js.Array[String]): Self = StObject.set(x, "getTileUrls", js.Any.fromFunction3(value))
+    inline def setGetTileUrls(value: (Double, Double, Double) => js.Array[String]): Self = StObject.set(x, "getTileUrls", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetMapTypeOptions(value: ImageMapTypeOptions => Unit): Self = StObject.set(x, "setMapTypeOptions", js.Any.fromFunction1(value))
+    inline def setSetMapTypeOptions(value: ImageMapTypeOptions => Unit): Self = StObject.set(x, "setMapTypeOptions", js.Any.fromFunction1(value))
   }
 }

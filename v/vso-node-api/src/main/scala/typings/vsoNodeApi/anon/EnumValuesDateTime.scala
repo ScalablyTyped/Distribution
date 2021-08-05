@@ -10,16 +10,13 @@ trait EnumValuesDateTime extends StObject {
 }
 object EnumValuesDateTime {
   
-  @scala.inline
-  def apply(enumValues: DateTime): EnumValuesDateTime = {
+  inline def apply(enumValues: DateTime): EnumValuesDateTime = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDateTime]
   }
   
-  @scala.inline
-  implicit class EnumValuesDateTimeMutableBuilder[Self <: EnumValuesDateTime] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDateTime](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: DateTime): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: DateTime): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

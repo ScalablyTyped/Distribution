@@ -8,11 +8,9 @@ object curriableStrings {
   
   @js.native
   sealed trait CleanedGaps extends StObject
-  @scala.inline
-  def CleanedGaps: CleanedGaps = "CleanedGaps".asInstanceOf[CleanedGaps]
+  inline def CleanedGaps: CleanedGaps = "CleanedGaps".asInstanceOf[CleanedGaps]
   
   @js.native
   sealed trait PartialGaps extends StObject
-  @scala.inline
-  def PartialGaps: PartialGaps = "PartialGaps".asInstanceOf[PartialGaps]
+  inline def PartialGaps: PartialGaps = "PartialGaps".asInstanceOf[PartialGaps]
 }

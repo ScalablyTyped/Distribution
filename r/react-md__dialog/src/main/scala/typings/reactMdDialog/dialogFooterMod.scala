@@ -33,20 +33,16 @@ object dialogFooterMod {
   }
   object DialogFooterProps {
     
-    @scala.inline
-    def apply(): DialogFooterProps = {
+    inline def apply(): DialogFooterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogFooterProps]
     }
     
-    @scala.inline
-    implicit class DialogFooterPropsMutableBuilder[Self <: DialogFooterProps] (val x: Self) extends AnyVal {
+    extension [Self <: DialogFooterProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: none | start | end | between | `stacked-start` | `stacked-end`): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: none | start | end | between | `stacked-start` | `stacked-end`): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     }
   }
 }

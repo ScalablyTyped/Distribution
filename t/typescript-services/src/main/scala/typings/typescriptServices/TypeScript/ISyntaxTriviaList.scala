@@ -30,8 +30,7 @@ trait ISyntaxTriviaList extends StObject {
 }
 object ISyntaxTriviaList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collectTextElements: js.Array[String] => Unit,
     concat: ISyntaxTriviaList => ISyntaxTriviaList,
     count: () => Double,
@@ -48,40 +47,28 @@ object ISyntaxTriviaList {
     __obj.asInstanceOf[ISyntaxTriviaList]
   }
   
-  @scala.inline
-  implicit class ISyntaxTriviaListMutableBuilder[Self <: ISyntaxTriviaList] (val x: Self) extends AnyVal {
+  extension [Self <: ISyntaxTriviaList](x: Self) {
     
-    @scala.inline
-    def setCollectTextElements(value: js.Array[String] => Unit): Self = StObject.set(x, "collectTextElements", js.Any.fromFunction1(value))
+    inline def setCollectTextElements(value: js.Array[String] => Unit): Self = StObject.set(x, "collectTextElements", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConcat(value: ISyntaxTriviaList => ISyntaxTriviaList): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+    inline def setConcat(value: ISyntaxTriviaList => ISyntaxTriviaList): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
+    inline def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
+    inline def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasComment(value: () => Boolean): Self = StObject.set(x, "hasComment", js.Any.fromFunction0(value))
+    inline def setHasComment(value: () => Boolean): Self = StObject.set(x, "hasComment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasNewLine(value: () => Boolean): Self = StObject.set(x, "hasNewLine", js.Any.fromFunction0(value))
+    inline def setHasNewLine(value: () => Boolean): Self = StObject.set(x, "hasNewLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasSkippedToken(value: () => Boolean): Self = StObject.set(x, "hasSkippedToken", js.Any.fromFunction0(value))
+    inline def setHasSkippedToken(value: () => Boolean): Self = StObject.set(x, "hasSkippedToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLast(value: () => ISyntaxTrivia): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    inline def setLast(value: () => ISyntaxTrivia): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSyntaxTriviaAt(value: Double => ISyntaxTrivia): Self = StObject.set(x, "syntaxTriviaAt", js.Any.fromFunction1(value))
+    inline def setSyntaxTriviaAt(value: Double => ISyntaxTrivia): Self = StObject.set(x, "syntaxTriviaAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Array[ISyntaxTrivia]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[ISyntaxTrivia]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

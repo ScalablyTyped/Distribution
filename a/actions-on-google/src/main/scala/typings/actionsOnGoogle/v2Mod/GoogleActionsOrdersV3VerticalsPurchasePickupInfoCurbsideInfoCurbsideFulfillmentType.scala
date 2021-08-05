@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType extends StObject
 object GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType {
   
-  @scala.inline
-  def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = "UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED]
+  inline def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = "UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED]
   
-  @scala.inline
-  def VEHICLE_DETAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.VEHICLE_DETAIL = "VEHICLE_DETAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VEHICLE_DETAIL]
+  inline def VEHICLE_DETAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.VEHICLE_DETAIL = "VEHICLE_DETAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VEHICLE_DETAIL]
 }

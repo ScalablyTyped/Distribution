@@ -10,19 +10,15 @@ trait OptionsArray extends StObject {
 }
 object OptionsArray {
   
-  @scala.inline
-  def apply(options: js.Array[String]): OptionsArray = {
+  inline def apply(options: js.Array[String]): OptionsArray = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsArray]
   }
   
-  @scala.inline
-  implicit class OptionsArrayMutableBuilder[Self <: OptionsArray] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsArray](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

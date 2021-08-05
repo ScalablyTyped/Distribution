@@ -16,19 +16,15 @@ trait I18NLanMap
 }
 object I18NLanMap {
   
-  @scala.inline
-  def apply(en: Record[String, String], zh: Record[String, String]): I18NLanMap = {
+  inline def apply(en: Record[String, String], zh: Record[String, String]): I18NLanMap = {
     val __obj = js.Dynamic.literal(en = en.asInstanceOf[js.Any], zh = zh.asInstanceOf[js.Any])
     __obj.asInstanceOf[I18NLanMap]
   }
   
-  @scala.inline
-  implicit class I18NLanMapMutableBuilder[Self <: I18NLanMap] (val x: Self) extends AnyVal {
+  extension [Self <: I18NLanMap](x: Self) {
     
-    @scala.inline
-    def setEn(value: Record[String, String]): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
+    inline def setEn(value: Record[String, String]): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZh(value: Record[String, String]): Self = StObject.set(x, "zh", value.asInstanceOf[js.Any])
+    inline def setZh(value: Record[String, String]): Self = StObject.set(x, "zh", value.asInstanceOf[js.Any])
   }
 }

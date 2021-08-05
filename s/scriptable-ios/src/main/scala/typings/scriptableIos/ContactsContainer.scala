@@ -24,19 +24,15 @@ trait ContactsContainer extends StObject {
 }
 object ContactsContainer {
   
-  @scala.inline
-  def apply(identifier: String, name: String): ContactsContainer = {
+  inline def apply(identifier: String, name: String): ContactsContainer = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactsContainer]
   }
   
-  @scala.inline
-  implicit class ContactsContainerMutableBuilder[Self <: ContactsContainer] (val x: Self) extends AnyVal {
+  extension [Self <: ContactsContainer](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

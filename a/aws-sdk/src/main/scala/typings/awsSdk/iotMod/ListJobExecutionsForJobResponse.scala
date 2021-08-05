@@ -18,28 +18,21 @@ trait ListJobExecutionsForJobResponse extends StObject {
 }
 object ListJobExecutionsForJobResponse {
   
-  @scala.inline
-  def apply(): ListJobExecutionsForJobResponse = {
+  inline def apply(): ListJobExecutionsForJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobExecutionsForJobResponse]
   }
   
-  @scala.inline
-  implicit class ListJobExecutionsForJobResponseMutableBuilder[Self <: ListJobExecutionsForJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobExecutionsForJobResponse](x: Self) {
     
-    @scala.inline
-    def setExecutionSummaries(value: JobExecutionSummaryForJobList): Self = StObject.set(x, "executionSummaries", value.asInstanceOf[js.Any])
+    inline def setExecutionSummaries(value: JobExecutionSummaryForJobList): Self = StObject.set(x, "executionSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionSummariesUndefined: Self = StObject.set(x, "executionSummaries", js.undefined)
+    inline def setExecutionSummariesUndefined: Self = StObject.set(x, "executionSummaries", js.undefined)
     
-    @scala.inline
-    def setExecutionSummariesVarargs(value: JobExecutionSummaryForJob*): Self = StObject.set(x, "executionSummaries", js.Array(value :_*))
+    inline def setExecutionSummariesVarargs(value: JobExecutionSummaryForJob*): Self = StObject.set(x, "executionSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

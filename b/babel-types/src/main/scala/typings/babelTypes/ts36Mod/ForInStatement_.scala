@@ -26,8 +26,7 @@ trait ForInStatement_
 }
 object ForInStatement_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: Statement,
     end: Double,
     left: VariableDeclaration_ | LVal,
@@ -40,19 +39,14 @@ object ForInStatement_ {
     __obj.asInstanceOf[ForInStatement_]
   }
   
-  @scala.inline
-  implicit class ForInStatement_MutableBuilder[Self <: ForInStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: ForInStatement_](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: VariableDeclaration_ | LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: VariableDeclaration_ | LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ForInStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ForInStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

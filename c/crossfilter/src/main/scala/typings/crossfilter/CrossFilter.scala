@@ -40,8 +40,7 @@ object CrossFilter {
   }
   object CrossFilter {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       GroupAll: () => GroupAll[T, T],
       add: js.Array[T] => typings.crossfilter.CrossFilter.CrossFilter[T],
       dimension: js.Function1[/* data */ T, js.Any] => Dimension[T, js.Any],
@@ -53,23 +52,17 @@ object CrossFilter {
       __obj.asInstanceOf[typings.crossfilter.CrossFilter.CrossFilter[T]]
     }
     
-    @scala.inline
-    implicit class CrossFilterMutableBuilder[Self <: typings.crossfilter.CrossFilter.CrossFilter[?], T] (val x: Self & typings.crossfilter.CrossFilter.CrossFilter[T]) extends AnyVal {
+    extension [Self <: typings.crossfilter.CrossFilter.CrossFilter[?], T](x: Self & typings.crossfilter.CrossFilter.CrossFilter[T]) {
       
-      @scala.inline
-      def setAdd(value: js.Array[T] => typings.crossfilter.CrossFilter.CrossFilter[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: js.Array[T] => typings.crossfilter.CrossFilter.CrossFilter[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDimension(value: js.Function1[/* data */ T, js.Any] => Dimension[T, js.Any]): Self = StObject.set(x, "dimension", js.Any.fromFunction1(value))
+      inline def setDimension(value: js.Function1[/* data */ T, js.Any] => Dimension[T, js.Any]): Self = StObject.set(x, "dimension", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGroupAll(value: () => GroupAll[T, T]): Self = StObject.set(x, "GroupAll", js.Any.fromFunction0(value))
+      inline def setGroupAll(value: () => GroupAll[T, T]): Self = StObject.set(x, "GroupAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: () => typings.crossfilter.CrossFilter.CrossFilter[T]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => typings.crossfilter.CrossFilter.CrossFilter[T]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }
   }
   
@@ -177,8 +170,7 @@ object CrossFilter {
   }
   object GroupAll {
     
-    @scala.inline
-    def apply[T, TValue](
+    inline def apply[T, TValue](
       dispose: () => GroupAll[T, TValue],
       reduce: (js.Function2[js.Any, /* v */ T, js.Any], js.Function2[js.Any, /* v */ T, js.Any], js.Function0[js.Any]) => GroupAll[T, js.Any],
       reduceCount: () => GroupAll[T, TValue],
@@ -189,25 +181,19 @@ object CrossFilter {
       __obj.asInstanceOf[GroupAll[T, TValue]]
     }
     
-    @scala.inline
-    implicit class GroupAllMutableBuilder[Self <: GroupAll[?, ?], T, TValue] (val x: Self & (GroupAll[T, TValue])) extends AnyVal {
+    extension [Self <: GroupAll[?, ?], T, TValue](x: Self & (GroupAll[T, TValue])) {
       
-      @scala.inline
-      def setDispose(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReduce(
+      inline def setReduce(
         value: (js.Function2[js.Any, /* v */ T, js.Any], js.Function2[js.Any, /* v */ T, js.Any], js.Function0[js.Any]) => GroupAll[T, js.Any]
       ): Self = StObject.set(x, "reduce", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReduceCount(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "reduceCount", js.Any.fromFunction0(value))
+      inline def setReduceCount(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "reduceCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReduceSum(value: Selector[T] => GroupAll[T, TValue]): Self = StObject.set(x, "reduceSum", js.Any.fromFunction1(value))
+      inline def setReduceSum(value: Selector[T] => GroupAll[T, TValue]): Self = StObject.set(x, "reduceSum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: () => TValue): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+      inline def setValue(value: () => TValue): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     }
   }
   
@@ -219,20 +205,16 @@ object CrossFilter {
   }
   object Grouping {
     
-    @scala.inline
-    def apply[TKey, TValue](key: TKey, value: TValue): Grouping[TKey, TValue] = {
+    inline def apply[TKey, TValue](key: TKey, value: TValue): Grouping[TKey, TValue] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Grouping[TKey, TValue]]
     }
     
-    @scala.inline
-    implicit class GroupingMutableBuilder[Self <: Grouping[?, ?], TKey, TValue] (val x: Self & (Grouping[TKey, TValue])) extends AnyVal {
+    extension [Self <: Grouping[?, ?], TKey, TValue](x: Self & (Grouping[TKey, TValue])) {
       
-      @scala.inline
-      def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

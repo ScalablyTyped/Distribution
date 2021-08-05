@@ -23,31 +23,23 @@ trait DecryptResponse extends StObject {
 }
 object DecryptResponse {
   
-  @scala.inline
-  def apply(): DecryptResponse = {
+  inline def apply(): DecryptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DecryptResponse]
   }
   
-  @scala.inline
-  implicit class DecryptResponseMutableBuilder[Self <: DecryptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DecryptResponse](x: Self) {
     
-    @scala.inline
-    def setEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "EncryptionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = StObject.set(x, "EncryptionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "EncryptionAlgorithm", js.undefined)
+    inline def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "EncryptionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setPlaintext(value: PlaintextType): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
+    inline def setPlaintext(value: PlaintextType): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
+    inline def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
   }
 }

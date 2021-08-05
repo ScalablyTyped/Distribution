@@ -20,20 +20,16 @@ object dragDropContextProviderMod {
   }
   object DragDropContextProviderProps {
     
-    @scala.inline
-    def apply(): DragDropContextProviderProps = {
+    inline def apply(): DragDropContextProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragDropContextProviderProps]
     }
     
-    @scala.inline
-    implicit class DragDropContextProviderPropsMutableBuilder[Self <: DragDropContextProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: DragDropContextProviderProps](x: Self) {
       
-      @scala.inline
-      def setBackend(value: js.Function): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      inline def setBackend(value: js.Function): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
+      inline def setBackendUndefined: Self = StObject.set(x, "backend", js.undefined)
     }
   }
 }

@@ -17,19 +17,15 @@ trait SchemaPodSecurityPolicyConfig extends StObject {
 }
 object SchemaPodSecurityPolicyConfig {
   
-  @scala.inline
-  def apply(): SchemaPodSecurityPolicyConfig = {
+  inline def apply(): SchemaPodSecurityPolicyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPodSecurityPolicyConfig]
   }
   
-  @scala.inline
-  implicit class SchemaPodSecurityPolicyConfigMutableBuilder[Self <: SchemaPodSecurityPolicyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPodSecurityPolicyConfig](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

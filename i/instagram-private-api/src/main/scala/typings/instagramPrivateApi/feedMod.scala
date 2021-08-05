@@ -19,7 +19,7 @@ object feedMod {
     
     var attemptOptions: PartialAttemptOptionsany = js.native
     
-    var chance: Chance = js.native
+    /* protected */ var chance: Chance = js.native
     
     def deserialize(data: String): Unit = js.native
     
@@ -30,14 +30,14 @@ object feedMod {
     @JSName("items$")
     def items$: Observable_[js.Array[Item]] = js.native
     
-    var moreAvailable: Boolean = js.native
+    /* protected */ var moreAvailable: Boolean = js.native
     
     def observable(): Observable_[js.Array[Item]] = js.native
     def observable(semaphore: js.Function0[js.Promise[js.Any]]): Observable_[js.Array[Item]] = js.native
     def observable(semaphore: js.Function0[js.Promise[js.Any]], attemptOptions: PartialAttemptOptionsany): Observable_[js.Array[Item]] = js.native
     def observable(semaphore: Unit, attemptOptions: PartialAttemptOptionsany): Observable_[js.Array[Item]] = js.native
     
-    var rankToken: String = js.native
+    /* protected */ var rankToken: String = js.native
     
     def request(args: js.Any*): js.Promise[Response] = js.native
     

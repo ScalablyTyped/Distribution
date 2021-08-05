@@ -13,19 +13,15 @@ trait DescribeEnvironmentsRequest extends StObject {
 }
 object DescribeEnvironmentsRequest {
   
-  @scala.inline
-  def apply(environmentIds: BoundedEnvironmentIdList): DescribeEnvironmentsRequest = {
+  inline def apply(environmentIds: BoundedEnvironmentIdList): DescribeEnvironmentsRequest = {
     val __obj = js.Dynamic.literal(environmentIds = environmentIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEnvironmentsRequestMutableBuilder[Self <: DescribeEnvironmentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEnvironmentsRequest](x: Self) {
     
-    @scala.inline
-    def setEnvironmentIds(value: BoundedEnvironmentIdList): Self = StObject.set(x, "environmentIds", value.asInstanceOf[js.Any])
+    inline def setEnvironmentIds(value: BoundedEnvironmentIdList): Self = StObject.set(x, "environmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value :_*))
+    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value :_*))
   }
 }

@@ -18,6 +18,5 @@ object ConcatObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(currentObserver: IObserver, startNextStream: js.Function): typings.wonderFrp.concatObserverMod.ConcatObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], startNextStream.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.concatObserverMod.ConcatObserver]
+  inline def create(currentObserver: IObserver, startNextStream: js.Function): typings.wonderFrp.concatObserverMod.ConcatObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], startNextStream.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.concatObserverMod.ConcatObserver]
 }

@@ -13,22 +13,17 @@ trait StopInstancesResult extends StObject {
 }
 object StopInstancesResult {
   
-  @scala.inline
-  def apply(): StopInstancesResult = {
+  inline def apply(): StopInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopInstancesResult]
   }
   
-  @scala.inline
-  implicit class StopInstancesResultMutableBuilder[Self <: StopInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: StopInstancesResult](x: Self) {
     
-    @scala.inline
-    def setStoppingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "StoppingInstances", value.asInstanceOf[js.Any])
+    inline def setStoppingInstances(value: InstanceStateChangeList): Self = StObject.set(x, "StoppingInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppingInstancesUndefined: Self = StObject.set(x, "StoppingInstances", js.undefined)
+    inline def setStoppingInstancesUndefined: Self = StObject.set(x, "StoppingInstances", js.undefined)
     
-    @scala.inline
-    def setStoppingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "StoppingInstances", js.Array(value :_*))
+    inline def setStoppingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "StoppingInstances", js.Array(value :_*))
   }
 }

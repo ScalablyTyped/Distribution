@@ -19,19 +19,15 @@ trait AnotherTypeOfBowerFile extends StObject {
 }
 object AnotherTypeOfBowerFile {
   
-  @scala.inline
-  def apply(anotherTypeOfBowerFile: String => String, typeOfBowerFile: String): AnotherTypeOfBowerFile = {
+  inline def apply(anotherTypeOfBowerFile: String => String, typeOfBowerFile: String): AnotherTypeOfBowerFile = {
     val __obj = js.Dynamic.literal(anotherTypeOfBowerFile = js.Any.fromFunction1(anotherTypeOfBowerFile), typeOfBowerFile = typeOfBowerFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnotherTypeOfBowerFile]
   }
   
-  @scala.inline
-  implicit class AnotherTypeOfBowerFileMutableBuilder[Self <: AnotherTypeOfBowerFile] (val x: Self) extends AnyVal {
+  extension [Self <: AnotherTypeOfBowerFile](x: Self) {
     
-    @scala.inline
-    def setAnotherTypeOfBowerFile(value: String => String): Self = StObject.set(x, "anotherTypeOfBowerFile", js.Any.fromFunction1(value))
+    inline def setAnotherTypeOfBowerFile(value: String => String): Self = StObject.set(x, "anotherTypeOfBowerFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypeOfBowerFile(value: String): Self = StObject.set(x, "typeOfBowerFile", value.asInstanceOf[js.Any])
+    inline def setTypeOfBowerFile(value: String): Self = StObject.set(x, "typeOfBowerFile", value.asInstanceOf[js.Any])
   }
 }

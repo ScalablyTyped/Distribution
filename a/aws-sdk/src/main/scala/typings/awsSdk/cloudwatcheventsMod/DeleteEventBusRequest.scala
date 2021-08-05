@@ -13,16 +13,13 @@ trait DeleteEventBusRequest extends StObject {
 }
 object DeleteEventBusRequest {
   
-  @scala.inline
-  def apply(Name: EventBusName): DeleteEventBusRequest = {
+  inline def apply(Name: EventBusName): DeleteEventBusRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventBusRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEventBusRequestMutableBuilder[Self <: DeleteEventBusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventBusRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: EventBusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventBusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

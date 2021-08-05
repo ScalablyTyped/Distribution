@@ -18,22 +18,17 @@ trait JdbcSQLXML extends StObject {
 }
 object JdbcSQLXML {
   
-  @scala.inline
-  def apply(free: () => Unit, getString: () => String, setString: String => Unit): JdbcSQLXML = {
+  inline def apply(free: () => Unit, getString: () => String, setString: String => Unit): JdbcSQLXML = {
     val __obj = js.Dynamic.literal(free = js.Any.fromFunction0(free), getString = js.Any.fromFunction0(getString), setString = js.Any.fromFunction1(setString))
     __obj.asInstanceOf[JdbcSQLXML]
   }
   
-  @scala.inline
-  implicit class JdbcSQLXMLMutableBuilder[Self <: JdbcSQLXML] (val x: Self) extends AnyVal {
+  extension [Self <: JdbcSQLXML](x: Self) {
     
-    @scala.inline
-    def setFree(value: () => Unit): Self = StObject.set(x, "free", js.Any.fromFunction0(value))
+    inline def setFree(value: () => Unit): Self = StObject.set(x, "free", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
+    inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
+    inline def setSetString(value: String => Unit): Self = StObject.set(x, "setString", js.Any.fromFunction1(value))
   }
 }

@@ -8,7 +8,7 @@ trait HTCDefaultDispatch extends StObject {
   
   def CreateEventObject(): IHTMLEventObj
   
-  @JSName("MSHTML.HTCDefaultDispatch_typekey")
+  /* private */ @JSName("MSHTML.HTCDefaultDispatch_typekey")
   var MSHTMLDotHTCDefaultDispatch_typekey: HTCDefaultDispatch
   
   val defaults: js.Any
@@ -19,8 +19,7 @@ trait HTCDefaultDispatch extends StObject {
 }
 object HTCDefaultDispatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreateEventObject: () => IHTMLEventObj,
     MSHTMLDotHTCDefaultDispatch_typekey: HTCDefaultDispatch,
     defaults: js.Any,
@@ -32,22 +31,16 @@ object HTCDefaultDispatch {
     __obj.asInstanceOf[HTCDefaultDispatch]
   }
   
-  @scala.inline
-  implicit class HTCDefaultDispatchMutableBuilder[Self <: HTCDefaultDispatch] (val x: Self) extends AnyVal {
+  extension [Self <: HTCDefaultDispatch](x: Self) {
     
-    @scala.inline
-    def setCreateEventObject(value: () => IHTMLEventObj): Self = StObject.set(x, "CreateEventObject", js.Any.fromFunction0(value))
+    inline def setCreateEventObject(value: () => IHTMLEventObj): Self = StObject.set(x, "CreateEventObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: IHTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: IHTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotHTCDefaultDispatch_typekey(value: HTCDefaultDispatch): Self = StObject.set(x, "MSHTML.HTCDefaultDispatch_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTCDefaultDispatch_typekey(value: HTCDefaultDispatch): Self = StObject.set(x, "MSHTML.HTCDefaultDispatch_typekey", value.asInstanceOf[js.Any])
   }
 }

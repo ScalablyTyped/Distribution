@@ -13,11 +13,9 @@ object globalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createGlobal(hasColorBackgroundTypography: Background): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(hasColorBackgroundTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
+  inline def createGlobal(hasColorBackgroundTypography: Background): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createGlobal")(hasColorBackgroundTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
   
-  @scala.inline
-  def createReset(hasTypography: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(hasTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
+  inline def createReset(hasTypography: Typography): Return = ^.asInstanceOf[js.Dynamic].applyDynamic("createReset")(hasTypography.asInstanceOf[js.Any]).asInstanceOf[Return]
   
   type Return = StringDictionary[StringDictionary[Value]]
   

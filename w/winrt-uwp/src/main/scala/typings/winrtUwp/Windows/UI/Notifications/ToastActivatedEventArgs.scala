@@ -12,16 +12,13 @@ trait ToastActivatedEventArgs extends StObject {
 }
 object ToastActivatedEventArgs {
   
-  @scala.inline
-  def apply(arguments: String): ToastActivatedEventArgs = {
+  inline def apply(arguments: String): ToastActivatedEventArgs = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ToastActivatedEventArgsMutableBuilder[Self <: ToastActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ToastActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }
 }

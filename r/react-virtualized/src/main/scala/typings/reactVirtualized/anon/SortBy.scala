@@ -13,19 +13,15 @@ trait SortBy extends StObject {
 }
 object SortBy {
   
-  @scala.inline
-  def apply(sortBy: String, sortDirection: SortDirectionType): SortBy = {
+  inline def apply(sortBy: String, sortDirection: SortDirectionType): SortBy = {
     val __obj = js.Dynamic.literal(sortBy = sortBy.asInstanceOf[js.Any], sortDirection = sortDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortBy]
   }
   
-  @scala.inline
-  implicit class SortByMutableBuilder[Self <: SortBy] (val x: Self) extends AnyVal {
+  extension [Self <: SortBy](x: Self) {
     
-    @scala.inline
-    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
   }
 }

@@ -17,34 +17,25 @@ trait CustomSVGSeriesProps
 }
 object CustomSVGSeriesProps {
   
-  @scala.inline
-  def apply(): CustomSVGSeriesProps = {
+  inline def apply(): CustomSVGSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomSVGSeriesProps]
   }
   
-  @scala.inline
-  implicit class CustomSVGSeriesPropsMutableBuilder[Self <: CustomSVGSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: CustomSVGSeriesProps](x: Self) {
     
-    @scala.inline
-    def setCustomComponent(value: String | (js.Function1[/* row */ js.Any, js.Any])): Self = StObject.set(x, "customComponent", value.asInstanceOf[js.Any])
+    inline def setCustomComponent(value: String | (js.Function1[/* row */ js.Any, js.Any])): Self = StObject.set(x, "customComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomComponentFunction1(value: /* row */ js.Any => js.Any): Self = StObject.set(x, "customComponent", js.Any.fromFunction1(value))
+    inline def setCustomComponentFunction1(value: /* row */ js.Any => js.Any): Self = StObject.set(x, "customComponent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomComponentUndefined: Self = StObject.set(x, "customComponent", js.undefined)
+    inline def setCustomComponentUndefined: Self = StObject.set(x, "customComponent", js.undefined)
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
   }
 }

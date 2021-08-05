@@ -16,31 +16,23 @@ trait PrevMaxProp extends StObject {
 }
 object PrevMaxProp {
   
-  @scala.inline
-  def apply(stepMaxPrecision: Double, value: String): PrevMaxProp = {
+  inline def apply(stepMaxPrecision: Double, value: String): PrevMaxProp = {
     val __obj = js.Dynamic.literal(stepMaxPrecision = stepMaxPrecision.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrevMaxProp]
   }
   
-  @scala.inline
-  implicit class PrevMaxPropMutableBuilder[Self <: PrevMaxProp] (val x: Self) extends AnyVal {
+  extension [Self <: PrevMaxProp](x: Self) {
     
-    @scala.inline
-    def setPrevMaxProp(value: Double): Self = StObject.set(x, "prevMaxProp", value.asInstanceOf[js.Any])
+    inline def setPrevMaxProp(value: Double): Self = StObject.set(x, "prevMaxProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevMaxPropUndefined: Self = StObject.set(x, "prevMaxProp", js.undefined)
+    inline def setPrevMaxPropUndefined: Self = StObject.set(x, "prevMaxProp", js.undefined)
     
-    @scala.inline
-    def setPrevMinProp(value: Double): Self = StObject.set(x, "prevMinProp", value.asInstanceOf[js.Any])
+    inline def setPrevMinProp(value: Double): Self = StObject.set(x, "prevMinProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevMinPropUndefined: Self = StObject.set(x, "prevMinProp", js.undefined)
+    inline def setPrevMinPropUndefined: Self = StObject.set(x, "prevMinProp", js.undefined)
     
-    @scala.inline
-    def setStepMaxPrecision(value: Double): Self = StObject.set(x, "stepMaxPrecision", value.asInstanceOf[js.Any])
+    inline def setStepMaxPrecision(value: Double): Self = StObject.set(x, "stepMaxPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

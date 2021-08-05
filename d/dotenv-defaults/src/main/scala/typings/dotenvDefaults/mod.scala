@@ -13,15 +13,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvConfigOutput]
-  @scala.inline
-  def config(options: DotenvConfigOptions): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvConfigOutput]
+  inline def config(): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvConfigOutput]
+  inline def config(options: DotenvConfigOptions): DotenvConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvConfigOutput]
   
-  @scala.inline
-  def parse(src: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
-  @scala.inline
-  def parse(src: String, defaultSrc: String): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], defaultSrc.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
+  inline def parse(src: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  inline def parse(src: String, defaultSrc: String): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(src.asInstanceOf[js.Any], defaultSrc.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
   
   /**
     * A dotenv system that supports defaults
@@ -38,20 +34,16 @@ object mod {
     }
     object DotenvConfigOptions {
       
-      @scala.inline
-      def apply(): typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions = {
+      inline def apply(): typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions]
       }
       
-      @scala.inline
-      implicit class DotenvConfigOptionsMutableBuilder[Self <: typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: typings.dotenvDefaults.mod.dotenvAugmentingMod.DotenvConfigOptions](x: Self) {
         
-        @scala.inline
-        def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+        inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+        inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       }
     }
   }

@@ -25,20 +25,16 @@ object inputGroupButtonMod {
   }
   object InputGroupButtonProps {
     
-    @scala.inline
-    def apply(): InputGroupButtonProps = {
+    inline def apply(): InputGroupButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputGroupButtonProps]
     }
     
-    @scala.inline
-    implicit class InputGroupButtonPropsMutableBuilder[Self <: InputGroupButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputGroupButtonProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
     }
   }
 }

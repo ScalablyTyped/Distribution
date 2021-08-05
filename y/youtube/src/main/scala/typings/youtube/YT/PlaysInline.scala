@@ -16,12 +16,10 @@ object PlaysInline {
   /**
     * Playback in fullscreen.
     */
-  @scala.inline
-  def Fullscreen: `0` = 0.asInstanceOf[`0`]
+  inline def Fullscreen: `0` = 0.asInstanceOf[`0`]
   
   /**
     * Playback inline
     */
-  @scala.inline
-  def Inline: `1` = 1.asInstanceOf[`1`]
+  inline def Inline: `1` = 1.asInstanceOf[`1`]
 }

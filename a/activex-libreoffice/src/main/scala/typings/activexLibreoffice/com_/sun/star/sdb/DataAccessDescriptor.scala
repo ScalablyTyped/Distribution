@@ -204,8 +204,7 @@ trait DataAccessDescriptor extends StObject {
 }
 object DataAccessDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveConnection: XConnection,
     BookmarkSelection: Boolean,
     Column: XPropertySet,
@@ -228,58 +227,40 @@ object DataAccessDescriptor {
     __obj.asInstanceOf[DataAccessDescriptor]
   }
   
-  @scala.inline
-  implicit class DataAccessDescriptorMutableBuilder[Self <: DataAccessDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: DataAccessDescriptor](x: Self) {
     
-    @scala.inline
-    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
+    inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkSelection(value: Boolean): Self = StObject.set(x, "BookmarkSelection", value.asInstanceOf[js.Any])
+    inline def setBookmarkSelection(value: Boolean): Self = StObject.set(x, "BookmarkSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: XPropertySet): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: XPropertySet): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnName(value: String): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: String): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
+    inline def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
+    inline def setConnectionInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionResource(value: String): Self = StObject.set(x, "ConnectionResource", value.asInstanceOf[js.Any])
+    inline def setConnectionResource(value: String): Self = StObject.set(x, "ConnectionResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseLocation(value: String): Self = StObject.set(x, "DatabaseLocation", value.asInstanceOf[js.Any])
+    inline def setDatabaseLocation(value: String): Self = StObject.set(x, "DatabaseLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
+    inline def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBy(value: String): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
+    inline def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
+    inline def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: SafeArray[js.Any]): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: SafeArray[js.Any]): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
   }
 }

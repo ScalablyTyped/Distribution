@@ -34,7 +34,7 @@ object navMod {
       */
     var animation: js.UndefOr[AnimationBuilder] = js.native
     
-    var animationEnabled: js.Any = js.native
+    /* private */ var animationEnabled: js.Any = js.native
     
     /**
       * Returns `true` if the current view can go back.
@@ -44,14 +44,14 @@ object navMod {
     def canGoBack(): js.Promise[Boolean] = js.native
     def canGoBack(view: ViewController): js.Promise[Boolean] = js.native
     
-    var canGoBackSync: js.Any = js.native
+    /* private */ var canGoBackSync: js.Any = js.native
     
-    var canStart: js.Any = js.native
+    /* private */ var canStart: js.Any = js.native
     
     /**
       * DOM WRITE
       */
-    var cleanup: js.Any = js.native
+    /* private */ var cleanup: js.Any = js.native
     
     def componentDidLoad(): js.Promise[Unit] = js.native
     
@@ -60,26 +60,26 @@ object navMod {
     /** @internal */
     var delegate: js.UndefOr[FrameworkDelegate] = js.native
     
-    var destroyView: js.Any = js.native
+    /* private */ var destroyView: js.Any = js.native
     
-    var destroyed: js.Any = js.native
+    /* private */ var destroyed: js.Any = js.native
     
     def disconnectedCallback(): Unit = js.native
     
     var el: HTMLElement = js.native
     
-    var failed: js.Any = js.native
+    /* private */ var failed: js.Any = js.native
     
-    var fireError: js.Any = js.native
+    /* private */ var fireError: js.Any = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
     /**
       * Get the active view.
       */
     def getActive(): js.Promise[js.UndefOr[ViewController]] = js.native
     
-    var getActiveSync: js.Any = js.native
+    /* private */ var getActiveSync: js.Any = js.native
     
     /**
       * Get the view at the specified index.
@@ -88,7 +88,7 @@ object navMod {
       */
     def getByIndex(index: Double): js.Promise[js.UndefOr[ViewController]] = js.native
     
-    var getEnteringView: js.Any = js.native
+    /* private */ var getEnteringView: js.Any = js.native
     
     def getLength(): Double = js.native
     
@@ -100,7 +100,7 @@ object navMod {
     def getPrevious(): js.Promise[js.UndefOr[ViewController]] = js.native
     def getPrevious(view: ViewController): js.Promise[js.UndefOr[ViewController]] = js.native
     
-    var getPreviousSync: js.Any = js.native
+    /* private */ var getPreviousSync: js.Any = js.native
     
     def insert(insertIndex: Double): js.Promise[Boolean] = js.native
     def insert(insertIndex: Double, component: String): js.Promise[Boolean] = js.native
@@ -469,7 +469,7 @@ object navMod {
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
     
-    var insertViewAt: js.Any = js.native
+    /* private */ var insertViewAt: js.Any = js.native
     
     /**
       * Event fired when the nav has changed components
@@ -487,15 +487,15 @@ object navMod {
       */
     var ionNavWillLoad: EventEmitter[Unit] = js.native
     
-    var isTransitioning: js.Any = js.native
+    /* private */ var isTransitioning: js.Any = js.native
     
-    var nextTrns: js.Any = js.native
+    /* private */ var nextTrns: js.Any = js.native
     
-    var onEnd: js.Any = js.native
+    /* private */ var onEnd: js.Any = js.native
     
-    var onMove: js.Any = js.native
+    /* private */ var onMove: js.Any = js.native
     
-    var onStart: js.Any = js.native
+    /* private */ var onStart: js.Any = js.native
     
     /**
       * Pop a component off of the navigation stack. Navigates back from the current
@@ -540,9 +540,9 @@ object navMod {
     def popToRoot(opts: NavOptions): js.Promise[Boolean] = js.native
     def popToRoot(opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
     
-    var postViewInit: js.Any = js.native
+    /* private */ var postViewInit: js.Any = js.native
     
-    var prepareTI: js.Any = js.native
+    /* private */ var prepareTI: js.Any = js.native
     
     def push(): js.Promise[Boolean] = js.native
     def push(component: String): js.Promise[Boolean] = js.native
@@ -720,7 +720,7 @@ object navMod {
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
     
-    var queueTrns: js.Any = js.native
+    /* private */ var queueTrns: js.Any = js.native
     
     /**
       * Removes a component from the navigation stack at the specified index.
@@ -741,7 +741,7 @@ object navMod {
     def removeIndex(startIndex: Double, removeCount: Unit, opts: NavOptions): js.Promise[Boolean] = js.native
     def removeIndex(startIndex: Double, removeCount: Unit, opts: NavOptions, done: TransitionDoneFn): js.Promise[Boolean] = js.native
     
-    var removeView: js.Any = js.native
+    /* private */ var removeView: js.Any = js.native
     
     def render(): js.Any = js.native
     
@@ -757,9 +757,9 @@ object navMod {
       */
     var rootParams: js.UndefOr[ComponentProps[Null]] = js.native
     
-    var runTransition: js.Any = js.native
+    /* private */ var runTransition: js.Any = js.native
     
-    var sbAni: js.Any = js.native
+    /* private */ var sbAni: js.Any = js.native
     
     /**
       * Set the views of the current navigation stack and navigate to the last view.
@@ -955,7 +955,7 @@ object navMod {
       done: TransitionDoneFn
     ): js.Promise[Boolean] = js.native
     
-    var success: js.Any = js.native
+    /* private */ var success: js.Any = js.native
     
     /**
       * If the nav component should allow for swipe-to-go-back.
@@ -964,14 +964,14 @@ object navMod {
     
     def swipeGestureChanged(): Unit = js.native
     
-    var transInstr: js.Any = js.native
+    /* private */ var transInstr: js.Any = js.native
     
-    var transition: js.Any = js.native
+    /* private */ var transition: js.Any = js.native
     
-    var transitionFinish: js.Any = js.native
+    /* private */ var transitionFinish: js.Any = js.native
     
-    var useRouter: js.Any = js.native
+    /* private */ var useRouter: js.Any = js.native
     
-    var views: js.Any = js.native
+    /* private */ var views: js.Any = js.native
   }
 }

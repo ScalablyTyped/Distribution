@@ -78,41 +78,30 @@ object mod extends Shortcut {
   }
   object PicaOptions {
     
-    @scala.inline
-    def apply(): PicaOptions = {
+    inline def apply(): PicaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PicaOptions]
     }
     
-    @scala.inline
-    implicit class PicaOptionsMutableBuilder[Self <: PicaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PicaOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      @scala.inline
-      def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
       
-      @scala.inline
-      def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+      inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
       
-      @scala.inline
-      def setTile(value: Double): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+      inline def setTile(value: Double): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+      inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
     }
   }
   
@@ -154,68 +143,48 @@ object mod extends Shortcut {
   }
   object PicaResizeBufferOptions {
     
-    @scala.inline
-    def apply(height: Double, src: js.Array[Double], toHeigh: Double, toWidth: Double, width: Double): PicaResizeBufferOptions = {
+    inline def apply(height: Double, src: js.Array[Double], toHeigh: Double, toWidth: Double, width: Double): PicaResizeBufferOptions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], toHeigh = toHeigh.asInstanceOf[js.Any], toWidth = toWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PicaResizeBufferOptions]
     }
     
-    @scala.inline
-    implicit class PicaResizeBufferOptionsMutableBuilder[Self <: PicaResizeBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PicaResizeBufferOptions](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSrc(value: js.Array[Double]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Array[Double]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcVarargs(value: Double*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: Double*): Self = StObject.set(x, "src", js.Array(value :_*))
       
-      @scala.inline
-      def setToHeigh(value: Double): Self = StObject.set(x, "toHeigh", value.asInstanceOf[js.Any])
+      inline def setToHeigh(value: Double): Self = StObject.set(x, "toHeigh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToWidth(value: Double): Self = StObject.set(x, "toWidth", value.asInstanceOf[js.Any])
+      inline def setToWidth(value: Double): Self = StObject.set(x, "toWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsharpAmount(value: Double): Self = StObject.set(x, "unsharpAmount", value.asInstanceOf[js.Any])
+      inline def setUnsharpAmount(value: Double): Self = StObject.set(x, "unsharpAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsharpAmountUndefined: Self = StObject.set(x, "unsharpAmount", js.undefined)
+      inline def setUnsharpAmountUndefined: Self = StObject.set(x, "unsharpAmount", js.undefined)
       
-      @scala.inline
-      def setUnsharpRadius(value: Double): Self = StObject.set(x, "unsharpRadius", value.asInstanceOf[js.Any])
+      inline def setUnsharpRadius(value: Double): Self = StObject.set(x, "unsharpRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsharpRadiusUndefined: Self = StObject.set(x, "unsharpRadius", js.undefined)
+      inline def setUnsharpRadiusUndefined: Self = StObject.set(x, "unsharpRadius", js.undefined)
       
-      @scala.inline
-      def setUnsharpThreshold(value: Double): Self = StObject.set(x, "unsharpThreshold", value.asInstanceOf[js.Any])
+      inline def setUnsharpThreshold(value: Double): Self = StObject.set(x, "unsharpThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsharpThresholdUndefined: Self = StObject.set(x, "unsharpThreshold", js.undefined)
+      inline def setUnsharpThresholdUndefined: Self = StObject.set(x, "unsharpThreshold", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,50 +211,36 @@ object mod extends Shortcut {
   }
   object PicaResizeOptions {
     
-    @scala.inline
-    def apply(): PicaResizeOptions = {
+    inline def apply(): PicaResizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PicaResizeOptions]
     }
     
-    @scala.inline
-    implicit class PicaResizeOptionsMutableBuilder[Self <: PicaResizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PicaResizeOptions](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setCancelToken(value: js.Promise[js.Any]): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
+      inline def setCancelToken(value: js.Promise[js.Any]): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelTokenUndefined: Self = StObject.set(x, "cancelToken", js.undefined)
+      inline def setCancelTokenUndefined: Self = StObject.set(x, "cancelToken", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setUnsharpAmount(value: Double): Self = StObject.set(x, "unsharpAmount", value.asInstanceOf[js.Any])
+      inline def setUnsharpAmount(value: Double): Self = StObject.set(x, "unsharpAmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsharpAmountUndefined: Self = StObject.set(x, "unsharpAmount", js.undefined)
+      inline def setUnsharpAmountUndefined: Self = StObject.set(x, "unsharpAmount", js.undefined)
       
-      @scala.inline
-      def setUnsharpRadius(value: Double): Self = StObject.set(x, "unsharpRadius", value.asInstanceOf[js.Any])
+      inline def setUnsharpRadius(value: Double): Self = StObject.set(x, "unsharpRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsharpRadiusUndefined: Self = StObject.set(x, "unsharpRadius", js.undefined)
+      inline def setUnsharpRadiusUndefined: Self = StObject.set(x, "unsharpRadius", js.undefined)
       
-      @scala.inline
-      def setUnsharpThreshold(value: Double): Self = StObject.set(x, "unsharpThreshold", value.asInstanceOf[js.Any])
+      inline def setUnsharpThreshold(value: Double): Self = StObject.set(x, "unsharpThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsharpThresholdUndefined: Self = StObject.set(x, "unsharpThreshold", js.undefined)
+      inline def setUnsharpThresholdUndefined: Self = StObject.set(x, "unsharpThreshold", js.undefined)
     }
   }
   

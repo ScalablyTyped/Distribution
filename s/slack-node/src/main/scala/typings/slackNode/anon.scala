@@ -16,21 +16,17 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: icon_url | icon_emoji, `val`: String): Key = {
+    inline def apply(key: icon_url | icon_emoji, `val`: String): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: icon_url | icon_emoji): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: icon_url | icon_emoji): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
 }

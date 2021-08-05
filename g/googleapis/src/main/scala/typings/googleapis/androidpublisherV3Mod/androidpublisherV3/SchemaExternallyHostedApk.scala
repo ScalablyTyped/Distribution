@@ -92,115 +92,79 @@ trait SchemaExternallyHostedApk extends StObject {
 }
 object SchemaExternallyHostedApk {
   
-  @scala.inline
-  def apply(): SchemaExternallyHostedApk = {
+  inline def apply(): SchemaExternallyHostedApk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExternallyHostedApk]
   }
   
-  @scala.inline
-  implicit class SchemaExternallyHostedApkMutableBuilder[Self <: SchemaExternallyHostedApk] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExternallyHostedApk](x: Self) {
     
-    @scala.inline
-    def setApplicationLabel(value: String): Self = StObject.set(x, "applicationLabel", value.asInstanceOf[js.Any])
+    inline def setApplicationLabel(value: String): Self = StObject.set(x, "applicationLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationLabelUndefined: Self = StObject.set(x, "applicationLabel", js.undefined)
+    inline def setApplicationLabelUndefined: Self = StObject.set(x, "applicationLabel", js.undefined)
     
-    @scala.inline
-    def setCertificateBase64s(value: js.Array[String]): Self = StObject.set(x, "certificateBase64s", value.asInstanceOf[js.Any])
+    inline def setCertificateBase64s(value: js.Array[String]): Self = StObject.set(x, "certificateBase64s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateBase64sUndefined: Self = StObject.set(x, "certificateBase64s", js.undefined)
+    inline def setCertificateBase64sUndefined: Self = StObject.set(x, "certificateBase64s", js.undefined)
     
-    @scala.inline
-    def setCertificateBase64sVarargs(value: String*): Self = StObject.set(x, "certificateBase64s", js.Array(value :_*))
+    inline def setCertificateBase64sVarargs(value: String*): Self = StObject.set(x, "certificateBase64s", js.Array(value :_*))
     
-    @scala.inline
-    def setExternallyHostedUrl(value: String): Self = StObject.set(x, "externallyHostedUrl", value.asInstanceOf[js.Any])
+    inline def setExternallyHostedUrl(value: String): Self = StObject.set(x, "externallyHostedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternallyHostedUrlUndefined: Self = StObject.set(x, "externallyHostedUrl", js.undefined)
+    inline def setExternallyHostedUrlUndefined: Self = StObject.set(x, "externallyHostedUrl", js.undefined)
     
-    @scala.inline
-    def setFileSha1Base64(value: String): Self = StObject.set(x, "fileSha1Base64", value.asInstanceOf[js.Any])
+    inline def setFileSha1Base64(value: String): Self = StObject.set(x, "fileSha1Base64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSha1Base64Undefined: Self = StObject.set(x, "fileSha1Base64", js.undefined)
+    inline def setFileSha1Base64Undefined: Self = StObject.set(x, "fileSha1Base64", js.undefined)
     
-    @scala.inline
-    def setFileSha256Base64(value: String): Self = StObject.set(x, "fileSha256Base64", value.asInstanceOf[js.Any])
+    inline def setFileSha256Base64(value: String): Self = StObject.set(x, "fileSha256Base64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSha256Base64Undefined: Self = StObject.set(x, "fileSha256Base64", js.undefined)
+    inline def setFileSha256Base64Undefined: Self = StObject.set(x, "fileSha256Base64", js.undefined)
     
-    @scala.inline
-    def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+    inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
-    @scala.inline
-    def setIconBase64(value: String): Self = StObject.set(x, "iconBase64", value.asInstanceOf[js.Any])
+    inline def setIconBase64(value: String): Self = StObject.set(x, "iconBase64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconBase64Undefined: Self = StObject.set(x, "iconBase64", js.undefined)
+    inline def setIconBase64Undefined: Self = StObject.set(x, "iconBase64", js.undefined)
     
-    @scala.inline
-    def setMaximumSdk(value: Double): Self = StObject.set(x, "maximumSdk", value.asInstanceOf[js.Any])
+    inline def setMaximumSdk(value: Double): Self = StObject.set(x, "maximumSdk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumSdkUndefined: Self = StObject.set(x, "maximumSdk", js.undefined)
+    inline def setMaximumSdkUndefined: Self = StObject.set(x, "maximumSdk", js.undefined)
     
-    @scala.inline
-    def setMinimumSdk(value: Double): Self = StObject.set(x, "minimumSdk", value.asInstanceOf[js.Any])
+    inline def setMinimumSdk(value: Double): Self = StObject.set(x, "minimumSdk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSdkUndefined: Self = StObject.set(x, "minimumSdk", js.undefined)
+    inline def setMinimumSdkUndefined: Self = StObject.set(x, "minimumSdk", js.undefined)
     
-    @scala.inline
-    def setNativeCodes(value: js.Array[String]): Self = StObject.set(x, "nativeCodes", value.asInstanceOf[js.Any])
+    inline def setNativeCodes(value: js.Array[String]): Self = StObject.set(x, "nativeCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeCodesUndefined: Self = StObject.set(x, "nativeCodes", js.undefined)
+    inline def setNativeCodesUndefined: Self = StObject.set(x, "nativeCodes", js.undefined)
     
-    @scala.inline
-    def setNativeCodesVarargs(value: String*): Self = StObject.set(x, "nativeCodes", js.Array(value :_*))
+    inline def setNativeCodesVarargs(value: String*): Self = StObject.set(x, "nativeCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setUsesFeatures(value: js.Array[String]): Self = StObject.set(x, "usesFeatures", value.asInstanceOf[js.Any])
+    inline def setUsesFeatures(value: js.Array[String]): Self = StObject.set(x, "usesFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesFeaturesUndefined: Self = StObject.set(x, "usesFeatures", js.undefined)
+    inline def setUsesFeaturesUndefined: Self = StObject.set(x, "usesFeatures", js.undefined)
     
-    @scala.inline
-    def setUsesFeaturesVarargs(value: String*): Self = StObject.set(x, "usesFeatures", js.Array(value :_*))
+    inline def setUsesFeaturesVarargs(value: String*): Self = StObject.set(x, "usesFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setUsesPermissions(value: js.Array[SchemaExternallyHostedApkUsesPermission]): Self = StObject.set(x, "usesPermissions", value.asInstanceOf[js.Any])
+    inline def setUsesPermissions(value: js.Array[SchemaExternallyHostedApkUsesPermission]): Self = StObject.set(x, "usesPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesPermissionsUndefined: Self = StObject.set(x, "usesPermissions", js.undefined)
+    inline def setUsesPermissionsUndefined: Self = StObject.set(x, "usesPermissions", js.undefined)
     
-    @scala.inline
-    def setUsesPermissionsVarargs(value: SchemaExternallyHostedApkUsesPermission*): Self = StObject.set(x, "usesPermissions", js.Array(value :_*))
+    inline def setUsesPermissionsVarargs(value: SchemaExternallyHostedApkUsesPermission*): Self = StObject.set(x, "usesPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
-    @scala.inline
-    def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
+    inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait IamInstanceProfile extends StObject {
 }
 object IamInstanceProfile {
   
-  @scala.inline
-  def apply(): IamInstanceProfile = {
+  inline def apply(): IamInstanceProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IamInstanceProfile]
   }
   
-  @scala.inline
-  implicit class IamInstanceProfileMutableBuilder[Self <: IamInstanceProfile] (val x: Self) extends AnyVal {
+  extension [Self <: IamInstanceProfile](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

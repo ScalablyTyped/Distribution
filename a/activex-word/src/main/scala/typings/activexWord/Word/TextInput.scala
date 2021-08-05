@@ -34,6 +34,6 @@ trait TextInput extends StObject {
   
   var Width: Double = js.native
   
-  @JSName("Word.TextInput_typekey")
+  /* private */ @JSName("Word.TextInput_typekey")
   var WordDotTextInput_typekey: TextInput = js.native
 }

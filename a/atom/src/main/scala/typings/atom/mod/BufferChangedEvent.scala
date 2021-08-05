@@ -27,31 +27,23 @@ trait BufferChangedEvent extends StObject {
 }
 object BufferChangedEvent {
   
-  @scala.inline
-  def apply(changes: js.Array[NewRange], newRange: Range, newText: String, oldRange: Range, oldText: String): BufferChangedEvent = {
+  inline def apply(changes: js.Array[NewRange], newRange: Range, newText: String, oldRange: Range, oldText: String): BufferChangedEvent = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], newRange = newRange.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any], oldText = oldText.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferChangedEvent]
   }
   
-  @scala.inline
-  implicit class BufferChangedEventMutableBuilder[Self <: BufferChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BufferChangedEvent](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[NewRange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[NewRange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: NewRange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: NewRange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
-    @scala.inline
-    def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
+    inline def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+    inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
+    inline def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
+    inline def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
   }
 }

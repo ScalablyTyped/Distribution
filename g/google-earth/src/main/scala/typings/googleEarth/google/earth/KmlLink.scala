@@ -116,8 +116,7 @@ trait KmlLink
 }
 object KmlLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -152,49 +151,34 @@ object KmlLink {
     __obj.asInstanceOf[KmlLink]
   }
   
-  @scala.inline
-  implicit class KmlLinkMutableBuilder[Self <: KmlLink] (val x: Self) extends AnyVal {
+  extension [Self <: KmlLink](x: Self) {
     
-    @scala.inline
-    def setGetHref(value: () => String): Self = StObject.set(x, "getHref", js.Any.fromFunction0(value))
+    inline def setGetHref(value: () => String): Self = StObject.set(x, "getHref", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRefreshInterval(value: () => Double): Self = StObject.set(x, "getRefreshInterval", js.Any.fromFunction0(value))
+    inline def setGetRefreshInterval(value: () => Double): Self = StObject.set(x, "getRefreshInterval", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRefreshMode(value: () => KmlRefreshModeEnum): Self = StObject.set(x, "getRefreshMode", js.Any.fromFunction0(value))
+    inline def setGetRefreshMode(value: () => KmlRefreshModeEnum): Self = StObject.set(x, "getRefreshMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewBoundScale(value: () => Double): Self = StObject.set(x, "getViewBoundScale", js.Any.fromFunction0(value))
+    inline def setGetViewBoundScale(value: () => Double): Self = StObject.set(x, "getViewBoundScale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewFormat(value: () => String): Self = StObject.set(x, "getViewFormat", js.Any.fromFunction0(value))
+    inline def setGetViewFormat(value: () => String): Self = StObject.set(x, "getViewFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewRefreshMode(value: () => KmlViewRefreshModeEnum): Self = StObject.set(x, "getViewRefreshMode", js.Any.fromFunction0(value))
+    inline def setGetViewRefreshMode(value: () => KmlViewRefreshModeEnum): Self = StObject.set(x, "getViewRefreshMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewRefreshTime(value: () => Double): Self = StObject.set(x, "getViewRefreshTime", js.Any.fromFunction0(value))
+    inline def setGetViewRefreshTime(value: () => Double): Self = StObject.set(x, "getViewRefreshTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHref(value: String => Unit): Self = StObject.set(x, "setHref", js.Any.fromFunction1(value))
+    inline def setSetHref(value: String => Unit): Self = StObject.set(x, "setHref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRefreshInterval(value: Double => Unit): Self = StObject.set(x, "setRefreshInterval", js.Any.fromFunction1(value))
+    inline def setSetRefreshInterval(value: Double => Unit): Self = StObject.set(x, "setRefreshInterval", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRefreshMode(value: KmlRefreshModeEnum => Unit): Self = StObject.set(x, "setRefreshMode", js.Any.fromFunction1(value))
+    inline def setSetRefreshMode(value: KmlRefreshModeEnum => Unit): Self = StObject.set(x, "setRefreshMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetViewBoundScale(value: Double => Unit): Self = StObject.set(x, "setViewBoundScale", js.Any.fromFunction1(value))
+    inline def setSetViewBoundScale(value: Double => Unit): Self = StObject.set(x, "setViewBoundScale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetViewFormat(value: String => Unit): Self = StObject.set(x, "setViewFormat", js.Any.fromFunction1(value))
+    inline def setSetViewFormat(value: String => Unit): Self = StObject.set(x, "setViewFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetViewRefreshMode(value: KmlViewRefreshModeEnum => Unit): Self = StObject.set(x, "setViewRefreshMode", js.Any.fromFunction1(value))
+    inline def setSetViewRefreshMode(value: KmlViewRefreshModeEnum => Unit): Self = StObject.set(x, "setViewRefreshMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetViewRefreshTime(value: Double => Unit): Self = StObject.set(x, "setViewRefreshTime", js.Any.fromFunction1(value))
+    inline def setSetViewRefreshTime(value: Double => Unit): Self = StObject.set(x, "setViewRefreshTime", js.Any.fromFunction1(value))
   }
 }

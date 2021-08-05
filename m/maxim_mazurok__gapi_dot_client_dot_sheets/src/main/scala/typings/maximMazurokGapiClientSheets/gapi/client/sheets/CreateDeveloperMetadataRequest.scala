@@ -11,19 +11,15 @@ trait CreateDeveloperMetadataRequest extends StObject {
 }
 object CreateDeveloperMetadataRequest {
   
-  @scala.inline
-  def apply(): CreateDeveloperMetadataRequest = {
+  inline def apply(): CreateDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDeveloperMetadataRequest]
   }
   
-  @scala.inline
-  implicit class CreateDeveloperMetadataRequestMutableBuilder[Self <: CreateDeveloperMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeveloperMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
   }
 }

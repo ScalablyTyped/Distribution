@@ -15,19 +15,15 @@ trait TypeofPivotGauge extends StObject {
 }
 object TypeofPivotGauge {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: PivotGauge): TypeofPivotGauge = {
+  inline def apply(Locale: js.Any, fn: PivotGauge): TypeofPivotGauge = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotGauge]
   }
   
-  @scala.inline
-  implicit class TypeofPivotGaugeMutableBuilder[Self <: TypeofPivotGauge] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPivotGauge](x: Self) {
     
-    @scala.inline
-    def setFn(value: PivotGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PivotGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

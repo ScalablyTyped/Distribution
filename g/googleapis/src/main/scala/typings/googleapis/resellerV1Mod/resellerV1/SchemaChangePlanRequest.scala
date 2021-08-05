@@ -54,43 +54,31 @@ trait SchemaChangePlanRequest extends StObject {
 }
 object SchemaChangePlanRequest {
   
-  @scala.inline
-  def apply(): SchemaChangePlanRequest = {
+  inline def apply(): SchemaChangePlanRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChangePlanRequest]
   }
   
-  @scala.inline
-  implicit class SchemaChangePlanRequestMutableBuilder[Self <: SchemaChangePlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChangePlanRequest](x: Self) {
     
-    @scala.inline
-    def setDealCode(value: String): Self = StObject.set(x, "dealCode", value.asInstanceOf[js.Any])
+    inline def setDealCode(value: String): Self = StObject.set(x, "dealCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDealCodeUndefined: Self = StObject.set(x, "dealCode", js.undefined)
+    inline def setDealCodeUndefined: Self = StObject.set(x, "dealCode", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
+    inline def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
+    inline def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
     
-    @scala.inline
-    def setPurchaseOrderId(value: String): Self = StObject.set(x, "purchaseOrderId", value.asInstanceOf[js.Any])
+    inline def setPurchaseOrderId(value: String): Self = StObject.set(x, "purchaseOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseOrderIdUndefined: Self = StObject.set(x, "purchaseOrderId", js.undefined)
+    inline def setPurchaseOrderIdUndefined: Self = StObject.set(x, "purchaseOrderId", js.undefined)
     
-    @scala.inline
-    def setSeats(value: SchemaSeats): Self = StObject.set(x, "seats", value.asInstanceOf[js.Any])
+    inline def setSeats(value: SchemaSeats): Self = StObject.set(x, "seats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeatsUndefined: Self = StObject.set(x, "seats", js.undefined)
+    inline def setSeatsUndefined: Self = StObject.set(x, "seats", js.undefined)
   }
 }

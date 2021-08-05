@@ -36,8 +36,7 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collapse: () => Group,
     expand: () => Group,
     getControlIndex: () => Integer,
@@ -50,28 +49,20 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: () => Group): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
+    inline def setCollapse(value: () => Group): Self = StObject.set(x, "collapse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpand(value: () => Group): Self = StObject.set(x, "expand", js.Any.fromFunction0(value))
+    inline def setExpand(value: () => Group): Self = StObject.set(x, "expand", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetControlIndex(value: () => Integer): Self = StObject.set(x, "getControlIndex", js.Any.fromFunction0(value))
+    inline def setGetControlIndex(value: () => Integer): Self = StObject.set(x, "getControlIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDepth(value: () => Integer): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
+    inline def setGetDepth(value: () => Integer): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
+    inline def setGetRange(value: () => Range): Self = StObject.set(x, "getRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
+    inline def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

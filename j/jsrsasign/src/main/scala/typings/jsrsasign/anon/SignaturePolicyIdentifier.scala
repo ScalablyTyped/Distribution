@@ -18,8 +18,7 @@ trait SignaturePolicyIdentifier extends StObject {
 }
 object SignaturePolicyIdentifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SignaturePolicyIdentifier: Oid,
     SigningCertificateV2: ArrayParam[String] | Array | SigningCertificateV2,
     SigningTime: TypeParam | StringParam
@@ -28,16 +27,12 @@ object SignaturePolicyIdentifier {
     __obj.asInstanceOf[SignaturePolicyIdentifier]
   }
   
-  @scala.inline
-  implicit class SignaturePolicyIdentifierMutableBuilder[Self <: SignaturePolicyIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: SignaturePolicyIdentifier](x: Self) {
     
-    @scala.inline
-    def setSignaturePolicyIdentifier(value: Oid): Self = StObject.set(x, "SignaturePolicyIdentifier", value.asInstanceOf[js.Any])
+    inline def setSignaturePolicyIdentifier(value: Oid): Self = StObject.set(x, "SignaturePolicyIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningCertificateV2(value: ArrayParam[String] | Array | SigningCertificateV2): Self = StObject.set(x, "SigningCertificateV2", value.asInstanceOf[js.Any])
+    inline def setSigningCertificateV2(value: ArrayParam[String] | Array | SigningCertificateV2): Self = StObject.set(x, "SigningCertificateV2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningTime(value: TypeParam | StringParam): Self = StObject.set(x, "SigningTime", value.asInstanceOf[js.Any])
+    inline def setSigningTime(value: TypeParam | StringParam): Self = StObject.set(x, "SigningTime", value.asInstanceOf[js.Any])
   }
 }

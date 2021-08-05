@@ -26,47 +26,34 @@ object anon {
   }
   object Handler {
     
-    @scala.inline
-    def apply(): Handler = {
+    inline def apply(): Handler = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Handler]
     }
     
-    @scala.inline
-    implicit class HandlerMutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
+    extension [Self <: Handler](x: Self) {
       
-      @scala.inline
-      def setHandler(value: (/* context */ js.Any, /* ev */ Event, /* biding */ js.Any) => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+      inline def setHandler(value: (/* context */ js.Any, /* ev */ Event, /* biding */ js.Any) => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setPreloadData(value: Boolean): Self = StObject.set(x, "preloadData", value.asInstanceOf[js.Any])
+      inline def setPreloadData(value: Boolean): Self = StObject.set(x, "preloadData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadDataUndefined: Self = StObject.set(x, "preloadData", js.undefined)
+      inline def setPreloadDataUndefined: Self = StObject.set(x, "preloadData", js.undefined)
       
-      @scala.inline
-      def setRootInterface(value: String): Self = StObject.set(x, "rootInterface", value.asInstanceOf[js.Any])
+      inline def setRootInterface(value: String): Self = StObject.set(x, "rootInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootInterfaceUndefined: Self = StObject.set(x, "rootInterface", js.undefined)
+      inline def setRootInterfaceUndefined: Self = StObject.set(x, "rootInterface", js.undefined)
       
-      @scala.inline
-      def setTemplateDelimiters(value: js.Array[String]): Self = StObject.set(x, "templateDelimiters", value.asInstanceOf[js.Any])
+      inline def setTemplateDelimiters(value: js.Array[String]): Self = StObject.set(x, "templateDelimiters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateDelimitersUndefined: Self = StObject.set(x, "templateDelimiters", js.undefined)
+      inline def setTemplateDelimitersUndefined: Self = StObject.set(x, "templateDelimiters", js.undefined)
       
-      @scala.inline
-      def setTemplateDelimitersVarargs(value: String*): Self = StObject.set(x, "templateDelimiters", js.Array(value :_*))
+      inline def setTemplateDelimitersVarargs(value: String*): Self = StObject.set(x, "templateDelimiters", js.Array(value :_*))
     }
   }
 }

@@ -113,190 +113,129 @@ trait Tag extends StObject {
 }
 object Tag {
   
-  @scala.inline
-  def apply(): Tag = {
+  inline def apply(): Tag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tag]
   }
   
-  @scala.inline
-  implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+  extension [Self <: Tag](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBlockingRuleId(value: js.Array[String]): Self = StObject.set(x, "blockingRuleId", value.asInstanceOf[js.Any])
+    inline def setBlockingRuleId(value: js.Array[String]): Self = StObject.set(x, "blockingRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockingRuleIdUndefined: Self = StObject.set(x, "blockingRuleId", js.undefined)
+    inline def setBlockingRuleIdUndefined: Self = StObject.set(x, "blockingRuleId", js.undefined)
     
-    @scala.inline
-    def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value :_*))
+    inline def setBlockingRuleIdVarargs(value: String*): Self = StObject.set(x, "blockingRuleId", js.Array(value :_*))
     
-    @scala.inline
-    def setBlockingTriggerId(value: js.Array[String]): Self = StObject.set(x, "blockingTriggerId", value.asInstanceOf[js.Any])
+    inline def setBlockingTriggerId(value: js.Array[String]): Self = StObject.set(x, "blockingTriggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockingTriggerIdUndefined: Self = StObject.set(x, "blockingTriggerId", js.undefined)
+    inline def setBlockingTriggerIdUndefined: Self = StObject.set(x, "blockingTriggerId", js.undefined)
     
-    @scala.inline
-    def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value :_*))
+    inline def setBlockingTriggerIdVarargs(value: String*): Self = StObject.set(x, "blockingTriggerId", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setFiringRuleId(value: js.Array[String]): Self = StObject.set(x, "firingRuleId", value.asInstanceOf[js.Any])
+    inline def setFiringRuleId(value: js.Array[String]): Self = StObject.set(x, "firingRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiringRuleIdUndefined: Self = StObject.set(x, "firingRuleId", js.undefined)
+    inline def setFiringRuleIdUndefined: Self = StObject.set(x, "firingRuleId", js.undefined)
     
-    @scala.inline
-    def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value :_*))
+    inline def setFiringRuleIdVarargs(value: String*): Self = StObject.set(x, "firingRuleId", js.Array(value :_*))
     
-    @scala.inline
-    def setFiringTriggerId(value: js.Array[String]): Self = StObject.set(x, "firingTriggerId", value.asInstanceOf[js.Any])
+    inline def setFiringTriggerId(value: js.Array[String]): Self = StObject.set(x, "firingTriggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiringTriggerIdUndefined: Self = StObject.set(x, "firingTriggerId", js.undefined)
+    inline def setFiringTriggerIdUndefined: Self = StObject.set(x, "firingTriggerId", js.undefined)
     
-    @scala.inline
-    def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value :_*))
+    inline def setFiringTriggerIdVarargs(value: String*): Self = StObject.set(x, "firingTriggerId", js.Array(value :_*))
     
-    @scala.inline
-    def setLiveOnly(value: Boolean): Self = StObject.set(x, "liveOnly", value.asInstanceOf[js.Any])
+    inline def setLiveOnly(value: Boolean): Self = StObject.set(x, "liveOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveOnlyUndefined: Self = StObject.set(x, "liveOnly", js.undefined)
+    inline def setLiveOnlyUndefined: Self = StObject.set(x, "liveOnly", js.undefined)
     
-    @scala.inline
-    def setMonitoringMetadata(value: Parameter): Self = StObject.set(x, "monitoringMetadata", value.asInstanceOf[js.Any])
+    inline def setMonitoringMetadata(value: Parameter): Self = StObject.set(x, "monitoringMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringMetadataTagNameKey(value: String): Self = StObject.set(x, "monitoringMetadataTagNameKey", value.asInstanceOf[js.Any])
+    inline def setMonitoringMetadataTagNameKey(value: String): Self = StObject.set(x, "monitoringMetadataTagNameKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringMetadataTagNameKeyUndefined: Self = StObject.set(x, "monitoringMetadataTagNameKey", js.undefined)
+    inline def setMonitoringMetadataTagNameKeyUndefined: Self = StObject.set(x, "monitoringMetadataTagNameKey", js.undefined)
     
-    @scala.inline
-    def setMonitoringMetadataUndefined: Self = StObject.set(x, "monitoringMetadata", js.undefined)
+    inline def setMonitoringMetadataUndefined: Self = StObject.set(x, "monitoringMetadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
+    inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    @scala.inline
-    def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
     
-    @scala.inline
-    def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
+    inline def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
+    inline def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+    inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Parameter): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Parameter): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setScheduleEndMs(value: String): Self = StObject.set(x, "scheduleEndMs", value.asInstanceOf[js.Any])
+    inline def setScheduleEndMs(value: String): Self = StObject.set(x, "scheduleEndMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleEndMsUndefined: Self = StObject.set(x, "scheduleEndMs", js.undefined)
+    inline def setScheduleEndMsUndefined: Self = StObject.set(x, "scheduleEndMs", js.undefined)
     
-    @scala.inline
-    def setScheduleStartMs(value: String): Self = StObject.set(x, "scheduleStartMs", value.asInstanceOf[js.Any])
+    inline def setScheduleStartMs(value: String): Self = StObject.set(x, "scheduleStartMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleStartMsUndefined: Self = StObject.set(x, "scheduleStartMs", js.undefined)
+    inline def setScheduleStartMsUndefined: Self = StObject.set(x, "scheduleStartMs", js.undefined)
     
-    @scala.inline
-    def setSetupTag(value: js.Array[SetupTag]): Self = StObject.set(x, "setupTag", value.asInstanceOf[js.Any])
+    inline def setSetupTag(value: js.Array[SetupTag]): Self = StObject.set(x, "setupTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetupTagUndefined: Self = StObject.set(x, "setupTag", js.undefined)
+    inline def setSetupTagUndefined: Self = StObject.set(x, "setupTag", js.undefined)
     
-    @scala.inline
-    def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value :_*))
+    inline def setSetupTagVarargs(value: SetupTag*): Self = StObject.set(x, "setupTag", js.Array(value :_*))
     
-    @scala.inline
-    def setTagFiringOption(value: String): Self = StObject.set(x, "tagFiringOption", value.asInstanceOf[js.Any])
+    inline def setTagFiringOption(value: String): Self = StObject.set(x, "tagFiringOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFiringOptionUndefined: Self = StObject.set(x, "tagFiringOption", js.undefined)
+    inline def setTagFiringOptionUndefined: Self = StObject.set(x, "tagFiringOption", js.undefined)
     
-    @scala.inline
-    def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
+    inline def setTagId(value: String): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
+    inline def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
     
-    @scala.inline
-    def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
+    inline def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
+    inline def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
     
-    @scala.inline
-    def setTeardownTag(value: js.Array[TeardownTag]): Self = StObject.set(x, "teardownTag", value.asInstanceOf[js.Any])
+    inline def setTeardownTag(value: js.Array[TeardownTag]): Self = StObject.set(x, "teardownTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeardownTagUndefined: Self = StObject.set(x, "teardownTag", js.undefined)
+    inline def setTeardownTagUndefined: Self = StObject.set(x, "teardownTag", js.undefined)
     
-    @scala.inline
-    def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value :_*))
+    inline def setTeardownTagVarargs(value: TeardownTag*): Self = StObject.set(x, "teardownTag", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

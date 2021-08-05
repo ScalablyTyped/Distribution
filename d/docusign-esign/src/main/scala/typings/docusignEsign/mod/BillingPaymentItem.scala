@@ -30,43 +30,31 @@ trait BillingPaymentItem extends StObject {
 }
 object BillingPaymentItem {
   
-  @scala.inline
-  def apply(): BillingPaymentItem = {
+  inline def apply(): BillingPaymentItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingPaymentItem]
   }
   
-  @scala.inline
-  implicit class BillingPaymentItemMutableBuilder[Self <: BillingPaymentItem] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPaymentItem](x: Self) {
     
-    @scala.inline
-    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setPaymentDate(value: String): Self = StObject.set(x, "paymentDate", value.asInstanceOf[js.Any])
+    inline def setPaymentDate(value: String): Self = StObject.set(x, "paymentDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentDateUndefined: Self = StObject.set(x, "paymentDate", js.undefined)
+    inline def setPaymentDateUndefined: Self = StObject.set(x, "paymentDate", js.undefined)
     
-    @scala.inline
-    def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
+    inline def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
+    inline def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
     
-    @scala.inline
-    def setPaymentNumber(value: String): Self = StObject.set(x, "paymentNumber", value.asInstanceOf[js.Any])
+    inline def setPaymentNumber(value: String): Self = StObject.set(x, "paymentNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentNumberUndefined: Self = StObject.set(x, "paymentNumber", js.undefined)
+    inline def setPaymentNumberUndefined: Self = StObject.set(x, "paymentNumber", js.undefined)
   }
 }

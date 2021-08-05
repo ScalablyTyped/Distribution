@@ -28,23 +28,23 @@ object colorRectangleBaseMod {
        with IColorRectangle {
     def this(props: IColorRectangleProps) = this()
     
-    var _descriptionId: js.Any = js.native
+    /* private */ var _descriptionId: js.Any = js.native
     
-    var _disposables: js.Any = js.native
+    /* private */ var _disposables: js.Any = js.native
     
-    var _disposeListeners: js.Any = js.native
+    /* private */ var _disposeListeners: js.Any = js.native
     
-    var _isAdjustingSaturation: js.Any = js.native
+    /* private */ var _isAdjustingSaturation: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: js.Any = js.native
     
-    var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _updateColor: js.Any = js.native
+    /* private */ var _updateColor: js.Any = js.native
     
     /** Currently selected color. */
     /* CompleteClass */
@@ -66,14 +66,11 @@ object colorRectangleBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base", "ColorRectangleBase.defaultProps")
     @js.native
     def defaultProps: PartialIColorRectanglePro = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIColorRectanglePro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIColorRectanglePro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getNewColor(ev: MouseEvent[Element, NativeMouseEvent], prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getNewColor")(ev.asInstanceOf[js.Any], prevColor.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IColor]]
-  @scala.inline
-  def getNewColor(ev: typings.std.MouseEvent, prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getNewColor")(ev.asInstanceOf[js.Any], prevColor.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IColor]]
+  inline def getNewColor(ev: MouseEvent[Element, NativeMouseEvent], prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getNewColor")(ev.asInstanceOf[js.Any], prevColor.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IColor]]
+  inline def getNewColor(ev: typings.std.MouseEvent, prevColor: IColor, root: HTMLElement): js.UndefOr[IColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("_getNewColor")(ev.asInstanceOf[js.Any], prevColor.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[IColor]]
   
   trait IColorRectangleState extends StObject {
     
@@ -81,17 +78,14 @@ object colorRectangleBaseMod {
   }
   object IColorRectangleState {
     
-    @scala.inline
-    def apply(color: IColor): IColorRectangleState = {
+    inline def apply(color: IColor): IColorRectangleState = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColorRectangleState]
     }
     
-    @scala.inline
-    implicit class IColorRectangleStateMutableBuilder[Self <: IColorRectangleState] (val x: Self) extends AnyVal {
+    extension [Self <: IColorRectangleState](x: Self) {
       
-      @scala.inline
-      def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
   }
 }

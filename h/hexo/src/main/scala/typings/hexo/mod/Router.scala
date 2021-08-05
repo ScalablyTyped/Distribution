@@ -52,26 +52,20 @@ object Router {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: String | Buffer | Callback, modified: Boolean): Data = {
+    inline def apply(data: String | Buffer | Callback, modified: Boolean): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: String | Buffer | Callback): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Buffer | Callback): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setDataFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDataFunction2(value: (/* err */ js.Any, /* result */ String) => Unit): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+      inline def setDataFunction2(value: (/* err */ js.Any, /* result */ String) => Unit): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     }
   }
   

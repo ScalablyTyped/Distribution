@@ -12,8 +12,7 @@ trait BusinessRuleTask
 }
 object BusinessRuleTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -42,10 +41,8 @@ object BusinessRuleTask {
     __obj.asInstanceOf[BusinessRuleTask]
   }
   
-  @scala.inline
-  implicit class BusinessRuleTaskMutableBuilder[Self <: BusinessRuleTask] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessRuleTask](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
   }
 }

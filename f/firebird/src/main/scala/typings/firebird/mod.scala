@@ -382,8 +382,7 @@ object mod {
   /**
     * @see createConnection() method will create Firebird Connection object for you
     */
-  @scala.inline
-  def createConnection(): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[Connection]
+  inline def createConnection(): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[Connection]
   
   /**
     * @desc
@@ -600,8 +599,7 @@ object mod {
   }
   object Transaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       commit: js.Function1[/* err */ Error | Null, Unit] => Unit,
       commitSync: () => Unit,
       inTransaction: Boolean,
@@ -617,38 +615,27 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    @scala.inline
-    implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+    extension [Self <: Transaction](x: Self) {
       
-      @scala.inline
-      def setCommit(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
+      inline def setCommit(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCommitSync(value: () => Unit): Self = StObject.set(x, "commitSync", js.Any.fromFunction0(value))
+      inline def setCommitSync(value: () => Unit): Self = StObject.set(x, "commitSync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInTransaction(value: Boolean): Self = StObject.set(x, "inTransaction", value.asInstanceOf[js.Any])
+      inline def setInTransaction(value: Boolean): Self = StObject.set(x, "inTransaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrepareSync(value: String => FBStatement): Self = StObject.set(x, "prepareSync", js.Any.fromFunction1(value))
+      inline def setPrepareSync(value: String => FBStatement): Self = StObject.set(x, "prepareSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuery(value: (String, js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]) => Unit): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      inline def setQuery(value: (String, js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]) => Unit): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQuerySync(value: String => Unit): Self = StObject.set(x, "querySync", js.Any.fromFunction1(value))
+      inline def setQuerySync(value: String => Unit): Self = StObject.set(x, "querySync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRollback(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction1(value))
+      inline def setRollback(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRollbackSync(value: () => Unit): Self = StObject.set(x, "rollbackSync", js.Any.fromFunction0(value))
+      inline def setRollbackSync(value: () => Unit): Self = StObject.set(x, "rollbackSync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartSync(value: () => Unit): Self = StObject.set(x, "startSync", js.Any.fromFunction0(value))
+      inline def setStartSync(value: () => Unit): Self = StObject.set(x, "startSync", js.Any.fromFunction0(value))
     }
   }
 }

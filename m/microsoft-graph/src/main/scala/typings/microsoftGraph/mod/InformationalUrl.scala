@@ -23,58 +23,41 @@ trait InformationalUrl extends StObject {
 }
 object InformationalUrl {
   
-  @scala.inline
-  def apply(): InformationalUrl = {
+  inline def apply(): InformationalUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InformationalUrl]
   }
   
-  @scala.inline
-  implicit class InformationalUrlMutableBuilder[Self <: InformationalUrl] (val x: Self) extends AnyVal {
+  extension [Self <: InformationalUrl](x: Self) {
     
-    @scala.inline
-    def setLogoUrl(value: NullableOption[String]): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
+    inline def setLogoUrl(value: NullableOption[String]): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUrlNull: Self = StObject.set(x, "logoUrl", null)
+    inline def setLogoUrlNull: Self = StObject.set(x, "logoUrl", null)
     
-    @scala.inline
-    def setLogoUrlUndefined: Self = StObject.set(x, "logoUrl", js.undefined)
+    inline def setLogoUrlUndefined: Self = StObject.set(x, "logoUrl", js.undefined)
     
-    @scala.inline
-    def setMarketingUrl(value: NullableOption[String]): Self = StObject.set(x, "marketingUrl", value.asInstanceOf[js.Any])
+    inline def setMarketingUrl(value: NullableOption[String]): Self = StObject.set(x, "marketingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketingUrlNull: Self = StObject.set(x, "marketingUrl", null)
+    inline def setMarketingUrlNull: Self = StObject.set(x, "marketingUrl", null)
     
-    @scala.inline
-    def setMarketingUrlUndefined: Self = StObject.set(x, "marketingUrl", js.undefined)
+    inline def setMarketingUrlUndefined: Self = StObject.set(x, "marketingUrl", js.undefined)
     
-    @scala.inline
-    def setPrivacyStatementUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyStatementUrl", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatementUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyStatementUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatementUrlNull: Self = StObject.set(x, "privacyStatementUrl", null)
+    inline def setPrivacyStatementUrlNull: Self = StObject.set(x, "privacyStatementUrl", null)
     
-    @scala.inline
-    def setPrivacyStatementUrlUndefined: Self = StObject.set(x, "privacyStatementUrl", js.undefined)
+    inline def setPrivacyStatementUrlUndefined: Self = StObject.set(x, "privacyStatementUrl", js.undefined)
     
-    @scala.inline
-    def setSupportUrl(value: NullableOption[String]): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
+    inline def setSupportUrl(value: NullableOption[String]): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUrlNull: Self = StObject.set(x, "supportUrl", null)
+    inline def setSupportUrlNull: Self = StObject.set(x, "supportUrl", null)
     
-    @scala.inline
-    def setSupportUrlUndefined: Self = StObject.set(x, "supportUrl", js.undefined)
+    inline def setSupportUrlUndefined: Self = StObject.set(x, "supportUrl", js.undefined)
     
-    @scala.inline
-    def setTermsOfServiceUrl(value: NullableOption[String]): Self = StObject.set(x, "termsOfServiceUrl", value.asInstanceOf[js.Any])
+    inline def setTermsOfServiceUrl(value: NullableOption[String]): Self = StObject.set(x, "termsOfServiceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsOfServiceUrlNull: Self = StObject.set(x, "termsOfServiceUrl", null)
+    inline def setTermsOfServiceUrlNull: Self = StObject.set(x, "termsOfServiceUrl", null)
     
-    @scala.inline
-    def setTermsOfServiceUrlUndefined: Self = StObject.set(x, "termsOfServiceUrl", js.undefined)
+    inline def setTermsOfServiceUrlUndefined: Self = StObject.set(x, "termsOfServiceUrl", js.undefined)
   }
 }

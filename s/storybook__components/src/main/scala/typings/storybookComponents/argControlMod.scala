@@ -23,23 +23,18 @@ object argControlMod {
   }
   object ArgControlProps {
     
-    @scala.inline
-    def apply(arg: js.Any, row: ArgType, updateArgs: Args => Unit): ArgControlProps = {
+    inline def apply(arg: js.Any, row: ArgType, updateArgs: Args => Unit): ArgControlProps = {
       val __obj = js.Dynamic.literal(arg = arg.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], updateArgs = js.Any.fromFunction1(updateArgs))
       __obj.asInstanceOf[ArgControlProps]
     }
     
-    @scala.inline
-    implicit class ArgControlPropsMutableBuilder[Self <: ArgControlProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArgControlProps](x: Self) {
       
-      @scala.inline
-      def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
+      inline def setArg(value: js.Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: ArgType): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: ArgType): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateArgs(value: Args => Unit): Self = StObject.set(x, "updateArgs", js.Any.fromFunction1(value))
+      inline def setUpdateArgs(value: Args => Unit): Self = StObject.set(x, "updateArgs", js.Any.fromFunction1(value))
     }
   }
 }

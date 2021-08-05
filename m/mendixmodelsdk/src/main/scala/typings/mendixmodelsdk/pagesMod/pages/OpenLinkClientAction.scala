@@ -47,8 +47,7 @@ object OpenLinkClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def create(model: IModel): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -59,8 +58,7 @@ object OpenLinkClientAction {
     *  7.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionButtonUnderAction(container: ActionButton): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInActionButtonUnderAction(container: ActionButton): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -71,8 +69,7 @@ object OpenLinkClientAction {
     *  7.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionItemUnderAction(container: ActionItem): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInActionItemUnderAction(container: ActionItem): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -83,8 +80,7 @@ object OpenLinkClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -95,8 +91,7 @@ object OpenLinkClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -107,8 +102,7 @@ object OpenLinkClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -119,8 +113,7 @@ object OpenLinkClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -131,8 +124,7 @@ object OpenLinkClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBottomBarItemUnderAction(container: BottomBarItem): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInBottomBarItemUnderAction(container: BottomBarItem): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -143,8 +135,7 @@ object OpenLinkClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderOnClickAction(container: DivContainer): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInDivContainerUnderOnClickAction(container: DivContainer): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -155,8 +146,7 @@ object OpenLinkClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -167,8 +157,7 @@ object OpenLinkClientAction {
     *  7.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGridActionButtonUnderAction(container: GridActionButton): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInGridActionButtonUnderAction(container: GridActionButton): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -179,8 +168,7 @@ object OpenLinkClientAction {
     *  7.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderClickAction(container: ListView): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInListViewUnderClickAction(container: ListView): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -191,8 +179,7 @@ object OpenLinkClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderPullDownAction(container: ListView): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInListViewUnderPullDownAction(container: ListView): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -203,8 +190,7 @@ object OpenLinkClientAction {
     *  7.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMenuItemUnderAction(container: MenuItem): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInMenuItemUnderAction(container: MenuItem): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -215,8 +201,7 @@ object OpenLinkClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -227,8 +212,7 @@ object OpenLinkClientAction {
     *  7.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -239,8 +223,7 @@ object OpenLinkClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /**
     * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
@@ -251,20 +234,17 @@ object OpenLinkClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderAction(container: WidgetValue): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
+  inline def createInWidgetValueUnderAction(container: WidgetValue): OpenLinkClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[OpenLinkClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenLinkClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenLinkClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -28,37 +28,27 @@ trait BackupSelection extends StObject {
 }
 object BackupSelection {
   
-  @scala.inline
-  def apply(IamRoleArn: IAMRoleArn, SelectionName: BackupSelectionName): BackupSelection = {
+  inline def apply(IamRoleArn: IAMRoleArn, SelectionName: BackupSelectionName): BackupSelection = {
     val __obj = js.Dynamic.literal(IamRoleArn = IamRoleArn.asInstanceOf[js.Any], SelectionName = SelectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupSelection]
   }
   
-  @scala.inline
-  implicit class BackupSelectionMutableBuilder[Self <: BackupSelection] (val x: Self) extends AnyVal {
+  extension [Self <: BackupSelection](x: Self) {
     
-    @scala.inline
-    def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: IAMRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListOfTags(value: ListOfTags): Self = StObject.set(x, "ListOfTags", value.asInstanceOf[js.Any])
+    inline def setListOfTags(value: ListOfTags): Self = StObject.set(x, "ListOfTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListOfTagsUndefined: Self = StObject.set(x, "ListOfTags", js.undefined)
+    inline def setListOfTagsUndefined: Self = StObject.set(x, "ListOfTags", js.undefined)
     
-    @scala.inline
-    def setListOfTagsVarargs(value: Condition*): Self = StObject.set(x, "ListOfTags", js.Array(value :_*))
+    inline def setListOfTagsVarargs(value: Condition*): Self = StObject.set(x, "ListOfTags", js.Array(value :_*))
     
-    @scala.inline
-    def setResources(value: ResourceArns): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceArns): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: ARN*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: ARN*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectionName(value: BackupSelectionName): Self = StObject.set(x, "SelectionName", value.asInstanceOf[js.Any])
+    inline def setSelectionName(value: BackupSelectionName): Self = StObject.set(x, "SelectionName", value.asInstanceOf[js.Any])
   }
 }

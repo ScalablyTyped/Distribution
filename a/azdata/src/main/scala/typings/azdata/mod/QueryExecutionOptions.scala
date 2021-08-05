@@ -11,16 +11,13 @@ trait QueryExecutionOptions extends StObject {
 }
 object QueryExecutionOptions {
   
-  @scala.inline
-  def apply(options: StringDictionary[js.Any]): QueryExecutionOptions = {
+  inline def apply(options: StringDictionary[js.Any]): QueryExecutionOptions = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecutionOptions]
   }
   
-  @scala.inline
-  implicit class QueryExecutionOptionsMutableBuilder[Self <: QueryExecutionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecutionOptions](x: Self) {
     
-    @scala.inline
-    def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

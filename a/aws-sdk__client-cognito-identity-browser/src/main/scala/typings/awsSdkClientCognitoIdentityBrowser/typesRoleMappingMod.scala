@@ -31,29 +31,22 @@ object typesRoleMappingMod {
   }
   object RoleMapping {
     
-    @scala.inline
-    def apply(Type: Token | Rules | String): RoleMapping = {
+    inline def apply(Type: Token | Rules | String): RoleMapping = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleMapping]
     }
     
-    @scala.inline
-    implicit class RoleMappingMutableBuilder[Self <: RoleMapping] (val x: Self) extends AnyVal {
+    extension [Self <: RoleMapping](x: Self) {
       
-      @scala.inline
-      def setAmbiguousRoleResolution(value: AuthenticatedRole | Deny | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
+      inline def setAmbiguousRoleResolution(value: AuthenticatedRole | Deny | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
+      inline def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
       
-      @scala.inline
-      def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
+      inline def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
+      inline def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
       
-      @scala.inline
-      def setType(value: Token | Rules | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: Token | Rules | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,20 +62,16 @@ object typesRoleMappingMod {
   }
   object UnmarshalledRoleMapping {
     
-    @scala.inline
-    def apply(Type: Token | Rules | String): UnmarshalledRoleMapping = {
+    inline def apply(Type: Token | Rules | String): UnmarshalledRoleMapping = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledRoleMapping]
     }
     
-    @scala.inline
-    implicit class UnmarshalledRoleMappingMutableBuilder[Self <: UnmarshalledRoleMapping] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledRoleMapping](x: Self) {
       
-      @scala.inline
-      def setRulesConfiguration(value: UnmarshalledRulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
+      inline def setRulesConfiguration(value: UnmarshalledRulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
+      inline def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
     }
   }
 }

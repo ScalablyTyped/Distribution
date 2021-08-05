@@ -33,46 +33,33 @@ trait TransitGatewayRoute extends StObject {
 }
 object TransitGatewayRoute {
   
-  @scala.inline
-  def apply(): TransitGatewayRoute = {
+  inline def apply(): TransitGatewayRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayRoute]
   }
   
-  @scala.inline
-  implicit class TransitGatewayRouteMutableBuilder[Self <: TransitGatewayRoute] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayRoute](x: Self) {
     
-    @scala.inline
-    def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
+    inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
+    inline def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
     
-    @scala.inline
-    def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
+    inline def setPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
+    inline def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
     
-    @scala.inline
-    def setState(value: TransitGatewayRouteState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TransitGatewayRouteState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachments(value: TransitGatewayRouteAttachmentList): Self = StObject.set(x, "TransitGatewayAttachments", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachments(value: TransitGatewayRouteAttachmentList): Self = StObject.set(x, "TransitGatewayAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayAttachments", js.undefined)
+    inline def setTransitGatewayAttachmentsUndefined: Self = StObject.set(x, "TransitGatewayAttachments", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentsVarargs(value: TransitGatewayRouteAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value :_*))
+    inline def setTransitGatewayAttachmentsVarargs(value: TransitGatewayRouteAttachment*): Self = StObject.set(x, "TransitGatewayAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TransitGatewayRouteType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: TransitGatewayRouteType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -28,53 +28,41 @@ trait MenuOverrides extends StObject {
 }
 object MenuOverrides {
   
-  @scala.inline
-  def apply(): MenuOverrides = {
+  inline def apply(): MenuOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuOverrides]
   }
   
-  @scala.inline
-  implicit class MenuOverridesMutableBuilder[Self <: MenuOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: MenuOverrides](x: Self) {
     
-    @scala.inline
-    def setEmptyState(
+    inline def setEmptyState(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "EmptyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyStateUndefined: Self = StObject.set(x, "EmptyState", js.undefined)
+    inline def setEmptyStateUndefined: Self = StObject.set(x, "EmptyState", js.undefined)
     
-    @scala.inline
-    def setList(
+    inline def setList(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItem(
+    inline def setListItem(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "ListItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListItemUndefined: Self = StObject.set(x, "ListItem", js.undefined)
+    inline def setListItemUndefined: Self = StObject.set(x, "ListItem", js.undefined)
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "List", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "List", js.undefined)
     
-    @scala.inline
-    def setOptgroupHeader(
+    inline def setOptgroupHeader(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "OptgroupHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptgroupHeaderUndefined: Self = StObject.set(x, "OptgroupHeader", js.undefined)
+    inline def setOptgroupHeaderUndefined: Self = StObject.set(x, "OptgroupHeader", js.undefined)
     
-    @scala.inline
-    def setOption(
+    inline def setOption(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "Option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "Option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "Option", js.undefined)
   }
 }

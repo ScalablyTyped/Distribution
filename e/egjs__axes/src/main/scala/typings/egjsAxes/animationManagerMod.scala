@@ -17,9 +17,9 @@ object animationManagerMod {
   class AnimationManager protected () extends StObject {
     def this(options: AxesOption, itm: InterruptManager, em: EventManager, axm: AxisManager) = this()
     
-    var _animateParam: js.Any = js.native
+    /* private */ var _animateParam: js.Any = js.native
     
-    var _raf: js.Any = js.native
+    /* private */ var _raf: js.Any = js.native
     
     /* private */ def animateLoop(param: js.Any, complete: js.Any): js.Any = js.native
     
@@ -28,13 +28,13 @@ object animationManagerMod {
     
     def animationEnd(): Unit = js.native
     
-    var axm: js.Any = js.native
+    /* private */ var axm: js.Any = js.native
     
     /* private */ def createAnimationParam(pos: js.Any, duration: js.Any, inputEvent: js.Any): js.Any = js.native
     
     def easing(p: js.Any): Double = js.native
     
-    var em: js.Any = js.native
+    /* private */ var em: js.Any = js.native
     
     /* private */ def frame(param: js.Any): js.Any = js.native
     
@@ -46,9 +46,9 @@ object animationManagerMod {
     def grab(axes: js.Array[String]): Unit = js.native
     def grab(axes: js.Array[String], event: js.Any): Unit = js.native
     
-    var itm: js.Any = js.native
+    /* private */ var itm: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def restore(): Unit = js.native
     def restore(inputEvent: js.Any): Unit = js.native
@@ -66,8 +66,7 @@ object animationManagerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDuration(duration: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDuration")(duration.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def getDuration(duration: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDuration")(duration.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   trait AnimationParam extends StObject {
@@ -92,50 +91,36 @@ object animationManagerMod {
   }
   object AnimationParam {
     
-    @scala.inline
-    def apply(delta: Axis, depaPos: Axis, destPos: Axis, duration: Double): AnimationParam = {
+    inline def apply(delta: Axis, depaPos: Axis, destPos: Axis, duration: Double): AnimationParam = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], depaPos = depaPos.asInstanceOf[js.Any], destPos = destPos.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnimationParam]
     }
     
-    @scala.inline
-    implicit class AnimationParamMutableBuilder[Self <: AnimationParam] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationParam](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Axis): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Axis): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepaPos(value: Axis): Self = StObject.set(x, "depaPos", value.asInstanceOf[js.Any])
+      inline def setDepaPos(value: Axis): Self = StObject.set(x, "depaPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestPos(value: Axis): Self = StObject.set(x, "destPos", value.asInstanceOf[js.Any])
+      inline def setDestPos(value: Axis): Self = StObject.set(x, "destPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+      inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputEvent(value: js.Any): Self = StObject.set(x, "inputEvent", value.asInstanceOf[js.Any])
+      inline def setInputEvent(value: js.Any): Self = StObject.set(x, "inputEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputEventUndefined: Self = StObject.set(x, "inputEvent", js.undefined)
+      inline def setInputEventUndefined: Self = StObject.set(x, "inputEvent", js.undefined)
       
-      @scala.inline
-      def setSetTo(value: (/* destPos */ js.UndefOr[Axis], /* duration */ js.UndefOr[Double]) => DestPos): Self = StObject.set(x, "setTo", js.Any.fromFunction2(value))
+      inline def setSetTo(value: (/* destPos */ js.UndefOr[Axis], /* duration */ js.UndefOr[Double]) => DestPos): Self = StObject.set(x, "setTo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetToUndefined: Self = StObject.set(x, "setTo", js.undefined)
+      inline def setSetToUndefined: Self = StObject.set(x, "setTo", js.undefined)
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+      inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     }
   }
 }

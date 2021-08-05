@@ -23,28 +23,21 @@ trait SchemaGoogleCloudVideointelligenceV1beta2TextAnnotation extends StObject {
 }
 object SchemaGoogleCloudVideointelligenceV1beta2TextAnnotation {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1beta2TextAnnotation = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1beta2TextAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1beta2TextAnnotation]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1beta2TextAnnotationMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1beta2TextAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1beta2TextAnnotation](x: Self) {
     
-    @scala.inline
-    def setSegments(value: js.Array[SchemaGoogleCloudVideointelligenceV1beta2TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[SchemaGoogleCloudVideointelligenceV1beta2TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2TextSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2TextSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

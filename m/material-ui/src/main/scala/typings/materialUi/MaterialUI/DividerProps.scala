@@ -15,31 +15,23 @@ trait DividerProps extends StObject {
 }
 object DividerProps {
   
-  @scala.inline
-  def apply(): DividerProps = {
+  inline def apply(): DividerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DividerProps]
   }
   
-  @scala.inline
-  implicit class DividerPropsMutableBuilder[Self <: DividerProps] (val x: Self) extends AnyVal {
+  extension [Self <: DividerProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

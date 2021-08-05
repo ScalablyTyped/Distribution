@@ -141,6 +141,5 @@ object Reader {
     * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
     * @throws {Error} If `buffer` is not a valid buffer
     */
-  @scala.inline
-  def create(buffer: Buffer | Uint8Array): Reader | BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[Reader | BufferReader]
+  inline def create(buffer: Buffer | Uint8Array): Reader | BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[Reader | BufferReader]
 }

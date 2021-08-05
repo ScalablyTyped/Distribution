@@ -18,16 +18,13 @@ trait ASPxClientDockManagerEventArgs
 }
 object ASPxClientDockManagerEventArgs {
   
-  @scala.inline
-  def apply(panel: ASPxClientDockPanel): ASPxClientDockManagerEventArgs = {
+  inline def apply(panel: ASPxClientDockPanel): ASPxClientDockManagerEventArgs = {
     val __obj = js.Dynamic.literal(panel = panel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDockManagerEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDockManagerEventArgsMutableBuilder[Self <: ASPxClientDockManagerEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDockManagerEventArgs](x: Self) {
     
-    @scala.inline
-    def setPanel(value: ASPxClientDockPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: ASPxClientDockPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
   }
 }

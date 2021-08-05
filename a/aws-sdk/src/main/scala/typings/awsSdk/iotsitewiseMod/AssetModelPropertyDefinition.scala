@@ -28,29 +28,22 @@ trait AssetModelPropertyDefinition extends StObject {
 }
 object AssetModelPropertyDefinition {
   
-  @scala.inline
-  def apply(dataType: PropertyDataType, name: Name, `type`: PropertyType): AssetModelPropertyDefinition = {
+  inline def apply(dataType: PropertyDataType, name: Name, `type`: PropertyType): AssetModelPropertyDefinition = {
     val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetModelPropertyDefinition]
   }
   
-  @scala.inline
-  implicit class AssetModelPropertyDefinitionMutableBuilder[Self <: AssetModelPropertyDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AssetModelPropertyDefinition](x: Self) {
     
-    @scala.inline
-    def setDataType(value: PropertyDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: PropertyDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: PropertyUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: PropertyUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

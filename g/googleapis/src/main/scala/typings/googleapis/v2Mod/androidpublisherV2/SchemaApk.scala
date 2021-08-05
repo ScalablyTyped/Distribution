@@ -18,25 +18,19 @@ trait SchemaApk extends StObject {
 }
 object SchemaApk {
   
-  @scala.inline
-  def apply(): SchemaApk = {
+  inline def apply(): SchemaApk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApk]
   }
   
-  @scala.inline
-  implicit class SchemaApkMutableBuilder[Self <: SchemaApk] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApk](x: Self) {
     
-    @scala.inline
-    def setBinary(value: SchemaApkBinary): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: SchemaApkBinary): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
   }
 }

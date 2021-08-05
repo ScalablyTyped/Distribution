@@ -31,8 +31,7 @@ object menusMod {
     @JSImport("rc-cascader/es/Menus", "default.defaultProps")
     @js.native
     def defaultProps: MenusProps = js.native
-    @scala.inline
-    def defaultProps_=(x: MenusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: MenusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type MenuItems = NumberDictionary[HTMLLIElement]
@@ -113,105 +112,74 @@ object menusMod {
   }
   object MenusProps {
     
-    @scala.inline
-    def apply(): MenusProps = {
+    inline def apply(): MenusProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenusProps]
     }
     
-    @scala.inline
-    implicit class MenusPropsMutableBuilder[Self <: MenusProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenusProps](x: Self) {
       
-      @scala.inline
-      def setActiveValue(value: js.Array[String | Double]): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
+      inline def setActiveValue(value: js.Array[String | Double]): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveValueUndefined: Self = StObject.set(x, "activeValue", js.undefined)
+      inline def setActiveValueUndefined: Self = StObject.set(x, "activeValue", js.undefined)
       
-      @scala.inline
-      def setActiveValueVarargs(value: (String | Double)*): Self = StObject.set(x, "activeValue", js.Array(value :_*))
+      inline def setActiveValueVarargs(value: (String | Double)*): Self = StObject.set(x, "activeValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultFieldNames(value: CascaderFieldNames): Self = StObject.set(x, "defaultFieldNames", value.asInstanceOf[js.Any])
+      inline def setDefaultFieldNames(value: CascaderFieldNames): Self = StObject.set(x, "defaultFieldNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFieldNamesUndefined: Self = StObject.set(x, "defaultFieldNames", js.undefined)
+      inline def setDefaultFieldNamesUndefined: Self = StObject.set(x, "defaultFieldNames", js.undefined)
       
-      @scala.inline
-      def setDropdownMenuColumnStyle(value: CSSProperties): Self = StObject.set(x, "dropdownMenuColumnStyle", value.asInstanceOf[js.Any])
+      inline def setDropdownMenuColumnStyle(value: CSSProperties): Self = StObject.set(x, "dropdownMenuColumnStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownMenuColumnStyleUndefined: Self = StObject.set(x, "dropdownMenuColumnStyle", js.undefined)
+      inline def setDropdownMenuColumnStyleUndefined: Self = StObject.set(x, "dropdownMenuColumnStyle", js.undefined)
       
-      @scala.inline
-      def setExpandIcon(value: ReactNode): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+      inline def setExpandIcon(value: ReactNode): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
-      @scala.inline
-      def setExpandTrigger(value: String): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
+      inline def setExpandTrigger(value: String): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandTriggerUndefined: Self = StObject.set(x, "expandTrigger", js.undefined)
+      inline def setExpandTriggerUndefined: Self = StObject.set(x, "expandTrigger", js.undefined)
       
-      @scala.inline
-      def setFieldNames(value: CascaderFieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+      inline def setFieldNames(value: CascaderFieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
       
-      @scala.inline
-      def setLoadingIcon(value: ReactNode): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+      inline def setLoadingIcon(value: ReactNode): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
+      inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
       
-      @scala.inline
-      def setOnItemDoubleClick(
+      inline def setOnItemDoubleClick(
         value: (/* targetOption */ js.Array[String], /* index */ Double, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
       ): Self = StObject.set(x, "onItemDoubleClick", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemDoubleClickUndefined: Self = StObject.set(x, "onItemDoubleClick", js.undefined)
+      inline def setOnItemDoubleClickUndefined: Self = StObject.set(x, "onItemDoubleClick", js.undefined)
       
-      @scala.inline
-      def setOnSelect(
+      inline def setOnSelect(
         value: (/* targetOption */ js.Array[String], /* index */ Double, /* e */ KeyboardEvent[HTMLElement]) => Unit
       ): Self = StObject.set(x, "onSelect", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[CascaderOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CascaderOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: CascaderOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: CascaderOption*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Array[String | Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[String | Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
 }

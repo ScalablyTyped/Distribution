@@ -22,28 +22,21 @@ trait SchemaOperatingSystemVersionsListResponse extends StObject {
 }
 object SchemaOperatingSystemVersionsListResponse {
   
-  @scala.inline
-  def apply(): SchemaOperatingSystemVersionsListResponse = {
+  inline def apply(): SchemaOperatingSystemVersionsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperatingSystemVersionsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaOperatingSystemVersionsListResponseMutableBuilder[Self <: SchemaOperatingSystemVersionsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperatingSystemVersionsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemVersions(value: js.Array[SchemaOperatingSystemVersion]): Self = StObject.set(x, "operatingSystemVersions", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemVersions(value: js.Array[SchemaOperatingSystemVersion]): Self = StObject.set(x, "operatingSystemVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemVersionsUndefined: Self = StObject.set(x, "operatingSystemVersions", js.undefined)
+    inline def setOperatingSystemVersionsUndefined: Self = StObject.set(x, "operatingSystemVersions", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemVersionsVarargs(value: SchemaOperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value :_*))
+    inline def setOperatingSystemVersionsVarargs(value: SchemaOperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value :_*))
   }
 }

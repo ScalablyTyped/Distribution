@@ -18,31 +18,23 @@ trait TabsProps
 }
 object TabsProps {
   
-  @scala.inline
-  def apply(): TabsProps = {
+  inline def apply(): TabsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabsProps]
   }
   
-  @scala.inline
-  implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+  extension [Self <: TabsProps](x: Self) {
     
-    @scala.inline
-    def setDefaultSelectedIndex(value: Double): Self = StObject.set(x, "defaultSelectedIndex", value.asInstanceOf[js.Any])
+    inline def setDefaultSelectedIndex(value: Double): Self = StObject.set(x, "defaultSelectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSelectedIndexUndefined: Self = StObject.set(x, "defaultSelectedIndex", js.undefined)
+    inline def setDefaultSelectedIndexUndefined: Self = StObject.set(x, "defaultSelectedIndex", js.undefined)
     
-    @scala.inline
-    def setJustified(value: Boolean): Self = StObject.set(x, "justified", value.asInstanceOf[js.Any])
+    inline def setJustified(value: Boolean): Self = StObject.set(x, "justified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifiedUndefined: Self = StObject.set(x, "justified", js.undefined)
+    inline def setJustifiedUndefined: Self = StObject.set(x, "justified", js.undefined)
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
   }
 }

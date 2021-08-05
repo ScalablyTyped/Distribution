@@ -22,26 +22,20 @@ object typesGrantConstraintsMod {
   }
   object GrantConstraints {
     
-    @scala.inline
-    def apply(): GrantConstraints = {
+    inline def apply(): GrantConstraints = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GrantConstraints]
     }
     
-    @scala.inline
-    implicit class GrantConstraintsMutableBuilder[Self <: GrantConstraints] (val x: Self) extends AnyVal {
+    extension [Self <: GrantConstraints](x: Self) {
       
-      @scala.inline
-      def setEncryptionContextEquals(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextEquals(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
+      inline def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
       
-      @scala.inline
-      def setEncryptionContextSubset(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextSubset(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
+      inline def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
     }
   }
   
@@ -63,26 +57,20 @@ object typesGrantConstraintsMod {
   }
   object UnmarshalledGrantConstraints {
     
-    @scala.inline
-    def apply(): UnmarshalledGrantConstraints = {
+    inline def apply(): UnmarshalledGrantConstraints = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledGrantConstraints]
     }
     
-    @scala.inline
-    implicit class UnmarshalledGrantConstraintsMutableBuilder[Self <: UnmarshalledGrantConstraints] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledGrantConstraints](x: Self) {
       
-      @scala.inline
-      def setEncryptionContextEquals(value: StringDictionary[String]): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextEquals(value: StringDictionary[String]): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
+      inline def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
       
-      @scala.inline
-      def setEncryptionContextSubset(value: StringDictionary[String]): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextSubset(value: StringDictionary[String]): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
+      inline def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
     }
   }
 }

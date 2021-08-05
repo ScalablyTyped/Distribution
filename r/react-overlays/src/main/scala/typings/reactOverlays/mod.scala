@@ -42,8 +42,7 @@ object mod {
     /**
       * @displayName Dropdown
       */
-    @scala.inline
-    def apply(
+    inline def apply(
       hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
     ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -60,8 +59,7 @@ object mod {
         * @displayName DropdownMenu
         * @memberOf Dropdown
         */
-      @scala.inline
-      def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/cjs", "Dropdown.Menu")
       @js.native
@@ -76,15 +74,13 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Menu.defaultProps.usePopper")
         @js.native
         def usePopper: Boolean = js.native
-        @scala.inline
-        def usePopper_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
+        inline def usePopper_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
       }
       
       @JSImport("react-overlays/cjs", "Dropdown.Menu.displayName")
       @js.native
       def displayName: String = js.native
-      @scala.inline
-      def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       object propTypes {
         
@@ -100,8 +96,7 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Menu.propTypes.alignEnd")
         @js.native
         def alignEnd: Requireable[Boolean] = js.native
-        @scala.inline
-        def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
+        inline def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
         
         /**
           * A render prop that returns a Menu element. The `props`
@@ -128,8 +123,7 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Menu.propTypes.children")
         @js.native
         def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        @scala.inline
-        def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
         
         /**
           * Enables the Popper.js `flip` modifier, allowing the Dropdown to
@@ -139,8 +133,7 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Menu.propTypes.flip")
         @js.native
         def flip: Requireable[Boolean] = js.native
-        @scala.inline
-        def flip_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flip")(x.asInstanceOf[js.Any])
+        inline def flip_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flip")(x.asInstanceOf[js.Any])
         
         /**
           * A set of popper options and props passed directly to react-popper's Popper component.
@@ -148,8 +141,7 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Menu.propTypes.popperConfig")
         @js.native
         def popperConfig: Requireable[js.Object] = js.native
-        @scala.inline
-        def popperConfig_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
+        inline def popperConfig_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
         
         /**
           * Override the default event used by RootCloseWrapper.
@@ -157,8 +149,7 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Menu.propTypes.rootCloseEvent")
         @js.native
         def rootCloseEvent: Requireable[String] = js.native
-        @scala.inline
-        def rootCloseEvent_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootCloseEvent")(x.asInstanceOf[js.Any])
+        inline def rootCloseEvent_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootCloseEvent")(x.asInstanceOf[js.Any])
         
         /**
           * Controls the visible state of the menu, generally this is
@@ -168,14 +159,12 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Menu.propTypes.show")
         @js.native
         def show: Requireable[Boolean] = js.native
-        @scala.inline
-        def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
+        inline def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
         
         @JSImport("react-overlays/cjs", "Dropdown.Menu.propTypes.usePopper")
         @js.native
         def usePopper: Requireable[Boolean] = js.native
-        @scala.inline
-        def usePopper_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
+        inline def usePopper_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
       }
     }
     
@@ -188,8 +177,7 @@ object mod {
         * @displayName DropdownToggle
         * @memberOf Dropdown
         */
-      @scala.inline
-      def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+      inline def apply(hasChildren: DropdownToggleProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
       
       @JSImport("react-overlays/cjs", "Dropdown.Toggle")
       @js.native
@@ -198,8 +186,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.Toggle.displayName")
       @js.native
       def displayName: String = js.native
-      @scala.inline
-      def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+      inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
       
       object propTypes {
         
@@ -225,16 +212,14 @@ object mod {
         @JSImport("react-overlays/cjs", "Dropdown.Toggle.propTypes.children")
         @js.native
         def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        @scala.inline
-        def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       }
     }
     
     @JSImport("react-overlays/cjs", "Dropdown.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     object propTypes {
       
@@ -248,8 +233,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.alignEnd")
       @js.native
       def alignEnd: Requireable[Boolean] = js.native
-      @scala.inline
-      def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
+      inline def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
       
       /**
         * A render prop that returns the root dropdown element. The `props`
@@ -265,8 +249,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.children")
       @js.native
       def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      @scala.inline
-      def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       /**
         * Sets the initial show position of the Dropdown.
@@ -274,8 +257,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.defaultShow")
       @js.native
       def defaultShow: Requireable[Boolean] = js.native
-      @scala.inline
-      def defaultShow_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultShow")(x.asInstanceOf[js.Any])
+      inline def defaultShow_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultShow")(x.asInstanceOf[js.Any])
       
       /**
         * Determines the direction and location of the Menu in relation to it's Toggle.
@@ -283,8 +265,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.drop")
       @js.native
       def drop: Requireable[String] = js.native
-      @scala.inline
-      def drop_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drop")(x.asInstanceOf[js.Any])
+      inline def drop_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drop")(x.asInstanceOf[js.Any])
       
       /**
         * Controls the focus behavior for when the Dropdown is opened. Set to
@@ -297,8 +278,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.focusFirstItemOnShow")
       @js.native
       def focusFirstItemOnShow: Requireable[String | Boolean] = js.native
-      @scala.inline
-      def focusFirstItemOnShow_=(x: Requireable[String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusFirstItemOnShow")(x.asInstanceOf[js.Any])
+      inline def focusFirstItemOnShow_=(x: Requireable[String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusFirstItemOnShow")(x.asInstanceOf[js.Any])
       
       /**
         * A css slector string that will return __focusable__ menu items.
@@ -308,8 +288,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.itemSelector")
       @js.native
       def itemSelector: Requireable[String] = js.native
-      @scala.inline
-      def itemSelector_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemSelector")(x.asInstanceOf[js.Any])
+      inline def itemSelector_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("itemSelector")(x.asInstanceOf[js.Any])
       
       /**
         * A callback fired when the Dropdown wishes to change visibility. Called with the requested
@@ -327,8 +306,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.onToggle")
       @js.native
       def onToggle: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      @scala.inline
-      def onToggle_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
+      inline def onToggle_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
       
       /**
         * Whether or not the Dropdown is visible.
@@ -338,8 +316,7 @@ object mod {
       @JSImport("react-overlays/cjs", "Dropdown.propTypes.show")
       @js.native
       def show: Requireable[Boolean] = js.native
-      @scala.inline
-      def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
+      inline def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -349,8 +326,7 @@ object mod {
     /**
       * **NOTE**: Exotic components are not callable.
       */
-    @scala.inline
-    def apply(props: ModalProps & RefAttributes[ModalHandle]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ModalProps & RefAttributes[ModalHandle]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("react-overlays/cjs", "Modal")
     @js.native
@@ -368,8 +344,7 @@ object mod {
         /* hasHideSiblingNodesHandleContainerOverflow */ js.UndefOr[HandleContainerOverflow], 
         default
       ] = js.native
-    @scala.inline
-    def Manager_=(
+    inline def Manager_=(
       x: Instantiable1[
           /* hasHideSiblingNodesHandleContainerOverflow */ js.UndefOr[HandleContainerOverflow], 
           default
@@ -379,20 +354,17 @@ object mod {
     @JSImport("react-overlays/cjs", "Modal.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialModalPropsRefAttri] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialModalPropsRefAttri]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialModalPropsRefAttri]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-overlays/cjs", "Modal.displayName")
     @js.native
     def displayName: js.UndefOr[String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("react-overlays/cjs", "Modal.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapModalPro] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapModalPro]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapModalPro]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("react-overlays/cjs", "Modal.$$typeof")
     @js.native
@@ -412,8 +384,7 @@ object mod {
     */
   object Portal {
     
-    @scala.inline
-    def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(hasContainerChildrenOnRendered.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    inline def apply(hasContainerChildrenOnRendered: PortalProps): Element | Null = ^.asInstanceOf[js.Dynamic].apply(hasContainerChildrenOnRendered.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
     @JSImport("react-overlays/cjs", "Portal")
     @js.native
@@ -422,36 +393,27 @@ object mod {
     @JSImport("react-overlays/cjs", "Portal.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("react-overlays/cjs", "Portal.propTypes")
     @js.native
     def propTypes: Container = js.native
-    @scala.inline
-    def propTypes_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
-  @scala.inline
-  def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
+  inline def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
+  inline def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
   
-  @scala.inline
-  def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
+  inline def useDropdownToggle(): js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownToggle")().asInstanceOf[js.Tuple2[UseDropdownToggleProps, UseDropdownToggleHelpers]]
   
-  @scala.inline
-  def useRootClose(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useRootClose(
+  inline def useRootClose(ref: Null, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRootClose(
     ref: Null,
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useRootClose(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useRootClose(
+  inline def useRootClose(ref: Unit, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRootClose(
     ref: Unit,
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
@@ -468,18 +430,14 @@ object mod {
     * @param {boolean=} options.disabled
     * @param {string=}  options.clickTrigger The DOM event name (click, mousedown, etc) to attach listeners on
     */
-  @scala.inline
-  def useRootClose(ref: RefObject[typings.std.Element], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useRootClose(
+  inline def useRootClose(ref: RefObject[typings.std.Element], onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRootClose(
     ref: RefObject[typings.std.Element],
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any], hasDisabledClickTrigger.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useRootClose(ref: typings.std.Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useRootClose(
+  inline def useRootClose(ref: typings.std.Element, onRootClose: js.Function1[/* e */ Event, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useRootClose")(ref.asInstanceOf[js.Any], onRootClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useRootClose(
     ref: typings.std.Element,
     onRootClose: js.Function1[/* e */ Event, Unit],
     hasDisabledClickTrigger: RootCloseOptions

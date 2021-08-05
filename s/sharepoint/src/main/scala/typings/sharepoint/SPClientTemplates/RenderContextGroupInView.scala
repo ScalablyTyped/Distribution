@@ -18,8 +18,7 @@ trait RenderContextGroupInView
 }
 object RenderContextGroupInView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowCreateFolder: Boolean,
     AllowGridMode: Boolean,
     BasePermissions: StringDictionary[Boolean],
@@ -109,19 +108,14 @@ object RenderContextGroupInView {
     __obj.asInstanceOf[RenderContextGroupInView]
   }
   
-  @scala.inline
-  implicit class RenderContextGroupInViewMutableBuilder[Self <: RenderContextGroupInView] (val x: Self) extends AnyVal {
+  extension [Self <: RenderContextGroupInView](x: Self) {
     
-    @scala.inline
-    def setCurrentGroup(value: Group): Self = StObject.set(x, "CurrentGroup", value.asInstanceOf[js.Any])
+    inline def setCurrentGroup(value: Group): Self = StObject.set(x, "CurrentGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentGroupIdx(value: Double): Self = StObject.set(x, "CurrentGroupIdx", value.asInstanceOf[js.Any])
+    inline def setCurrentGroupIdx(value: Double): Self = StObject.set(x, "CurrentGroupIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentItems(value: js.Array[Item]): Self = StObject.set(x, "CurrentItems", value.asInstanceOf[js.Any])
+    inline def setCurrentItems(value: js.Array[Item]): Self = StObject.set(x, "CurrentItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentItemsVarargs(value: Item*): Self = StObject.set(x, "CurrentItems", js.Array(value :_*))
+    inline def setCurrentItemsVarargs(value: Item*): Self = StObject.set(x, "CurrentItems", js.Array(value :_*))
   }
 }

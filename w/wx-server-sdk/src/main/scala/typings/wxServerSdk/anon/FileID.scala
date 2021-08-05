@@ -10,16 +10,13 @@ trait FileID extends StObject {
 }
 object FileID {
   
-  @scala.inline
-  def apply(fileID: String): FileID = {
+  inline def apply(fileID: String): FileID = {
     val __obj = js.Dynamic.literal(fileID = fileID.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileID]
   }
   
-  @scala.inline
-  implicit class FileIDMutableBuilder[Self <: FileID] (val x: Self) extends AnyVal {
+  extension [Self <: FileID](x: Self) {
     
-    @scala.inline
-    def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
+    inline def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
   }
 }

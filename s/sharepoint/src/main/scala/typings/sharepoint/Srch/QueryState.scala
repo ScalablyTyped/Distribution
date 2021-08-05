@@ -14,25 +14,19 @@ trait QueryState extends StObject {
 }
 object QueryState {
   
-  @scala.inline
-  def apply(e: Double, k: String, r: js.Array[RefinementCategory]): QueryState = {
+  inline def apply(e: Double, k: String, r: js.Array[RefinementCategory]): QueryState = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], k = k.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryState]
   }
   
-  @scala.inline
-  implicit class QueryStateMutableBuilder[Self <: QueryState] (val x: Self) extends AnyVal {
+  extension [Self <: QueryState](x: Self) {
     
-    @scala.inline
-    def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+    inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: js.Array[RefinementCategory]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: js.Array[RefinementCategory]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRVarargs(value: RefinementCategory*): Self = StObject.set(x, "r", js.Array(value :_*))
+    inline def setRVarargs(value: RefinementCategory*): Self = StObject.set(x, "r", js.Array(value :_*))
   }
 }

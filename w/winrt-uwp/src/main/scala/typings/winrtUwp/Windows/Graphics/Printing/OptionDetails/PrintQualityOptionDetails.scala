@@ -35,8 +35,7 @@ trait PrintQualityOptionDetails extends StObject {
 }
 object PrintQualityOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorText: String,
     items: IVectorView[js.Any],
     optionId: String,
@@ -49,28 +48,20 @@ object PrintQualityOptionDetails {
     __obj.asInstanceOf[PrintQualityOptionDetails]
   }
   
-  @scala.inline
-  implicit class PrintQualityOptionDetailsMutableBuilder[Self <: PrintQualityOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PrintQualityOptionDetails](x: Self) {
     
-    @scala.inline
-    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
+    inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: IVectorView[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IVectorView[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionId(value: String): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
+    inline def setOptionId(value: String): Self = StObject.set(x, "optionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionType(value: PrintOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
+    inline def setOptionType(value: PrintOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: PrintOptionStates): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PrintOptionStates): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrySetValue(value: js.Any => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
+    inline def setTrySetValue(value: js.Any => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

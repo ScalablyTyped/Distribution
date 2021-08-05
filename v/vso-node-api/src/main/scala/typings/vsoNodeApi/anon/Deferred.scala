@@ -48,8 +48,7 @@ trait Deferred extends StObject {
 }
 object Deferred {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     approved: scala.Double,
     canceled: scala.Double,
@@ -75,67 +74,46 @@ object Deferred {
     __obj.asInstanceOf[Deferred]
   }
   
-  @scala.inline
-  implicit class DeferredMutableBuilder[Self <: Deferred] (val x: Self) extends AnyVal {
+  extension [Self <: Deferred](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+    inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelling(value: scala.Double): Self = StObject.set(x, "cancelling", value.asInstanceOf[js.Any])
+    inline def setCancelling(value: scala.Double): Self = StObject.set(x, "cancelling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferred(value: scala.Double): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
+    inline def setDeferred(value: scala.Double): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluatingGates(value: scala.Double): Self = StObject.set(x, "evaluatingGates", value.asInstanceOf[js.Any])
+    inline def setEvaluatingGates(value: scala.Double): Self = StObject.set(x, "evaluatingGates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateFailed(value: scala.Double): Self = StObject.set(x, "gateFailed", value.asInstanceOf[js.Any])
+    inline def setGateFailed(value: scala.Double): Self = StObject.set(x, "gateFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualInterventionPending(value: scala.Double): Self = StObject.set(x, "manualInterventionPending", value.asInstanceOf[js.Any])
+    inline def setManualInterventionPending(value: scala.Double): Self = StObject.set(x, "manualInterventionPending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseCanceled(value: scala.Double): Self = StObject.set(x, "phaseCanceled", value.asInstanceOf[js.Any])
+    inline def setPhaseCanceled(value: scala.Double): Self = StObject.set(x, "phaseCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseFailed(value: scala.Double): Self = StObject.set(x, "phaseFailed", value.asInstanceOf[js.Any])
+    inline def setPhaseFailed(value: scala.Double): Self = StObject.set(x, "phaseFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseInProgress(value: scala.Double): Self = StObject.set(x, "phaseInProgress", value.asInstanceOf[js.Any])
+    inline def setPhaseInProgress(value: scala.Double): Self = StObject.set(x, "phaseInProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhasePartiallySucceeded(value: scala.Double): Self = StObject.set(x, "phasePartiallySucceeded", value.asInstanceOf[js.Any])
+    inline def setPhasePartiallySucceeded(value: scala.Double): Self = StObject.set(x, "phasePartiallySucceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseSucceeded(value: scala.Double): Self = StObject.set(x, "phaseSucceeded", value.asInstanceOf[js.Any])
+    inline def setPhaseSucceeded(value: scala.Double): Self = StObject.set(x, "phaseSucceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuedForAgent(value: scala.Double): Self = StObject.set(x, "queuedForAgent", value.asInstanceOf[js.Any])
+    inline def setQueuedForAgent(value: scala.Double): Self = StObject.set(x, "queuedForAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuedForPipeline(value: scala.Double): Self = StObject.set(x, "queuedForPipeline", value.asInstanceOf[js.Any])
+    inline def setQueuedForPipeline(value: scala.Double): Self = StObject.set(x, "queuedForPipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+    inline def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduled(value: scala.Double): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
+    inline def setScheduled(value: scala.Double): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

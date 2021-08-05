@@ -13,16 +13,13 @@ trait SSEKMS extends StObject {
 }
 object SSEKMS {
   
-  @scala.inline
-  def apply(KeyId: SSEKMSKeyId): SSEKMS = {
+  inline def apply(KeyId: SSEKMSKeyId): SSEKMS = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SSEKMS]
   }
   
-  @scala.inline
-  implicit class SSEKMSMutableBuilder[Self <: SSEKMS] (val x: Self) extends AnyVal {
+  extension [Self <: SSEKMS](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: SSEKMSKeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: SSEKMSKeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

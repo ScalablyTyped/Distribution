@@ -26,8 +26,7 @@ trait AdaptiveMediaSourceDownloadFailedEventArgs extends StObject {
 }
 object AdaptiveMediaSourceDownloadFailedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     httpResponseMessage: HttpResponseMessage,
     resourceByteRangeLength: Double,
     resourceByteRangeOffset: Double,
@@ -38,22 +37,16 @@ object AdaptiveMediaSourceDownloadFailedEventArgs {
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourceDownloadFailedEventArgsMutableBuilder[Self <: AdaptiveMediaSourceDownloadFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourceDownloadFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHttpResponseMessage(value: HttpResponseMessage): Self = StObject.set(x, "httpResponseMessage", value.asInstanceOf[js.Any])
+    inline def setHttpResponseMessage(value: HttpResponseMessage): Self = StObject.set(x, "httpResponseMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceByteRangeLength(value: Double): Self = StObject.set(x, "resourceByteRangeLength", value.asInstanceOf[js.Any])
+    inline def setResourceByteRangeLength(value: Double): Self = StObject.set(x, "resourceByteRangeLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceByteRangeOffset(value: Double): Self = StObject.set(x, "resourceByteRangeOffset", value.asInstanceOf[js.Any])
+    inline def setResourceByteRangeOffset(value: Double): Self = StObject.set(x, "resourceByteRangeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: AdaptiveMediaSourceResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: AdaptiveMediaSourceResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
   }
 }

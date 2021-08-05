@@ -23,55 +23,39 @@ trait ClearingOptions extends StObject {
 }
 object ClearingOptions {
   
-  @scala.inline
-  def apply(): ClearingOptions = {
+  inline def apply(): ClearingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearingOptions]
   }
   
-  @scala.inline
-  implicit class ClearingOptionsMutableBuilder[Self <: ClearingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClearingOptions](x: Self) {
     
-    @scala.inline
-    def setClose_selectors(value: String): Self = StObject.set(x, "close_selectors", value.asInstanceOf[js.Any])
+    inline def setClose_selectors(value: String): Self = StObject.set(x, "close_selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose_selectorsUndefined: Self = StObject.set(x, "close_selectors", js.undefined)
+    inline def setClose_selectorsUndefined: Self = StObject.set(x, "close_selectors", js.undefined)
     
-    @scala.inline
-    def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
     
-    @scala.inline
-    def setOpen_selectors(value: String): Self = StObject.set(x, "open_selectors", value.asInstanceOf[js.Any])
+    inline def setOpen_selectors(value: String): Self = StObject.set(x, "open_selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen_selectorsUndefined: Self = StObject.set(x, "open_selectors", js.undefined)
+    inline def setOpen_selectorsUndefined: Self = StObject.set(x, "open_selectors", js.undefined)
     
-    @scala.inline
-    def setSkip_selector(value: String): Self = StObject.set(x, "skip_selector", value.asInstanceOf[js.Any])
+    inline def setSkip_selector(value: String): Self = StObject.set(x, "skip_selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip_selectorUndefined: Self = StObject.set(x, "skip_selector", js.undefined)
+    inline def setSkip_selectorUndefined: Self = StObject.set(x, "skip_selector", js.undefined)
     
-    @scala.inline
-    def setTemplates(value: js.Object): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: js.Object): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    @scala.inline
-    def setTouch_label(value: String): Self = StObject.set(x, "touch_label", value.asInstanceOf[js.Any])
+    inline def setTouch_label(value: String): Self = StObject.set(x, "touch_label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouch_labelUndefined: Self = StObject.set(x, "touch_label", js.undefined)
+    inline def setTouch_labelUndefined: Self = StObject.set(x, "touch_label", js.undefined)
   }
 }

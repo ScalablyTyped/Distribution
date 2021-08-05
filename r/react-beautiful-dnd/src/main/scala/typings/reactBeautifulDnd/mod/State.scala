@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait State extends StObject
 object State {
   
-  @scala.inline
-  def CollectingState(
+  inline def CollectingState(
     afterCritical: LiftEffect,
     critical: Critical,
     current: DragPositions,
@@ -31,8 +30,7 @@ object State {
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.CollectingState]
   }
   
-  @scala.inline
-  def DraggingState(
+  inline def DraggingState(
     afterCritical: LiftEffect,
     critical: Critical,
     current: DragPositions,
@@ -48,8 +46,7 @@ object State {
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.DraggingState]
   }
   
-  @scala.inline
-  def DropAnimatingState(
+  inline def DropAnimatingState(
     completed: CompletedDrag,
     dimensions: DimensionMap,
     dropDuration: Double,
@@ -59,8 +56,7 @@ object State {
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.DropAnimatingState]
   }
   
-  @scala.inline
-  def DropPendingState(
+  inline def DropPendingState(
     afterCritical: LiftEffect,
     critical: Critical,
     current: DragPositions,
@@ -78,8 +74,7 @@ object State {
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.DropPendingState]
   }
   
-  @scala.inline
-  def IdleState(shouldFlush: Boolean): typings.reactBeautifulDnd.mod.IdleState = {
+  inline def IdleState(shouldFlush: Boolean): typings.reactBeautifulDnd.mod.IdleState = {
     val __obj = js.Dynamic.literal(phase = "IDLE", shouldFlush = shouldFlush.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.IdleState]
   }

@@ -12,6 +12,5 @@ object circularProgressBarDotPrivateUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def circularProgressBarUniDriverFactory(base: UniDriver[js.Any]): GetAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[GetAttribute]
+  inline def circularProgressBarUniDriverFactory(base: UniDriver[js.Any]): GetAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[GetAttribute]
 }

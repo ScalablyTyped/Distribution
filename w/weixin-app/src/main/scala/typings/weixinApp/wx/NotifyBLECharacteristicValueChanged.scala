@@ -33,8 +33,7 @@ trait NotifyBLECharacteristicValueChanged
 }
 object NotifyBLECharacteristicValueChanged {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     characteristicId: String,
     deviceId: String,
     serviceId: String,
@@ -45,22 +44,16 @@ object NotifyBLECharacteristicValueChanged {
     __obj.asInstanceOf[NotifyBLECharacteristicValueChanged]
   }
   
-  @scala.inline
-  implicit class NotifyBLECharacteristicValueChangedMutableBuilder[Self <: NotifyBLECharacteristicValueChanged] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyBLECharacteristicValueChanged](x: Self) {
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

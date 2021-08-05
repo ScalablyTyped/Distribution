@@ -10,8 +10,7 @@ trait DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement
      with DOMElement[P, T]
 object DetailedReactHTMLElement {
   
-  @scala.inline
-  def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](props: js.Any, `type`: js.Any): DetailedReactHTMLElement[P, T] = {
+  inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](props: js.Any, `type`: js.Any): DetailedReactHTMLElement[P, T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null, ref = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedReactHTMLElement[P, T]]

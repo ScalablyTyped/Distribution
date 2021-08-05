@@ -28,37 +28,27 @@ trait DescribeStackResourceDriftsInput extends StObject {
 }
 object DescribeStackResourceDriftsInput {
   
-  @scala.inline
-  def apply(StackName: StackNameOrId): DescribeStackResourceDriftsInput = {
+  inline def apply(StackName: StackNameOrId): DescribeStackResourceDriftsInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStackResourceDriftsInput]
   }
   
-  @scala.inline
-  implicit class DescribeStackResourceDriftsInputMutableBuilder[Self <: DescribeStackResourceDriftsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStackResourceDriftsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: BoxedMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackResourceDriftStatusFilters(value: StackResourceDriftStatusFilters): Self = StObject.set(x, "StackResourceDriftStatusFilters", value.asInstanceOf[js.Any])
+    inline def setStackResourceDriftStatusFilters(value: StackResourceDriftStatusFilters): Self = StObject.set(x, "StackResourceDriftStatusFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackResourceDriftStatusFiltersUndefined: Self = StObject.set(x, "StackResourceDriftStatusFilters", js.undefined)
+    inline def setStackResourceDriftStatusFiltersUndefined: Self = StObject.set(x, "StackResourceDriftStatusFilters", js.undefined)
     
-    @scala.inline
-    def setStackResourceDriftStatusFiltersVarargs(value: StackResourceDriftStatus*): Self = StObject.set(x, "StackResourceDriftStatusFilters", js.Array(value :_*))
+    inline def setStackResourceDriftStatusFiltersVarargs(value: StackResourceDriftStatus*): Self = StObject.set(x, "StackResourceDriftStatusFilters", js.Array(value :_*))
   }
 }

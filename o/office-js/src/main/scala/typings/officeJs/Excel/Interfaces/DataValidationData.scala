@@ -75,51 +75,37 @@ trait DataValidationData extends StObject {
 }
 object DataValidationData {
   
-  @scala.inline
-  def apply(): DataValidationData = {
+  inline def apply(): DataValidationData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataValidationData]
   }
   
-  @scala.inline
-  implicit class DataValidationDataMutableBuilder[Self <: DataValidationData] (val x: Self) extends AnyVal {
+  extension [Self <: DataValidationData](x: Self) {
     
-    @scala.inline
-    def setErrorAlert(value: DataValidationErrorAlert): Self = StObject.set(x, "errorAlert", value.asInstanceOf[js.Any])
+    inline def setErrorAlert(value: DataValidationErrorAlert): Self = StObject.set(x, "errorAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorAlertUndefined: Self = StObject.set(x, "errorAlert", js.undefined)
+    inline def setErrorAlertUndefined: Self = StObject.set(x, "errorAlert", js.undefined)
     
-    @scala.inline
-    def setIgnoreBlanks(value: Boolean): Self = StObject.set(x, "ignoreBlanks", value.asInstanceOf[js.Any])
+    inline def setIgnoreBlanks(value: Boolean): Self = StObject.set(x, "ignoreBlanks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreBlanksUndefined: Self = StObject.set(x, "ignoreBlanks", js.undefined)
+    inline def setIgnoreBlanksUndefined: Self = StObject.set(x, "ignoreBlanks", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: DataValidationPrompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: DataValidationPrompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    @scala.inline
-    def setRule(value: DataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: DataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+    inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
   }
 }

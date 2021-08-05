@@ -10,19 +10,15 @@ trait ApplePay extends StObject {
 }
 object ApplePay {
   
-  @scala.inline
-  def apply(): ApplePay = {
+  inline def apply(): ApplePay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplePay]
   }
   
-  @scala.inline
-  implicit class ApplePayMutableBuilder[Self <: ApplePay] (val x: Self) extends AnyVal {
+  extension [Self <: ApplePay](x: Self) {
     
-    @scala.inline
-    def setApplePay(value: Boolean): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
+    inline def setApplePay(value: Boolean): Self = StObject.set(x, "applePay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplePayUndefined: Self = StObject.set(x, "applePay", js.undefined)
+    inline def setApplePayUndefined: Self = StObject.set(x, "applePay", js.undefined)
   }
 }

@@ -12,23 +12,18 @@ object textareaInterfaceMod {
   }
   object TextareaChangeEventDetail {
     
-    @scala.inline
-    def apply(): TextareaChangeEventDetail = {
+    inline def apply(): TextareaChangeEventDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextareaChangeEventDetail]
     }
     
-    @scala.inline
-    implicit class TextareaChangeEventDetailMutableBuilder[Self <: TextareaChangeEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: TextareaChangeEventDetail](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

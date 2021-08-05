@@ -32,8 +32,7 @@ trait ExceptionHandlingScope extends StObject {
 }
 object ExceptionHandlingScope {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get_errorMessage: () => String,
     get_hasException: () => Boolean,
     get_processed: () => Boolean,
@@ -51,43 +50,30 @@ object ExceptionHandlingScope {
     __obj.asInstanceOf[ExceptionHandlingScope]
   }
   
-  @scala.inline
-  implicit class ExceptionHandlingScopeMutableBuilder[Self <: ExceptionHandlingScope] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptionHandlingScope](x: Self) {
     
-    @scala.inline
-    def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
+    inline def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hasException(value: () => Boolean): Self = StObject.set(x, "get_hasException", js.Any.fromFunction0(value))
+    inline def setGet_hasException(value: () => Boolean): Self = StObject.set(x, "get_hasException", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_processed(value: () => Boolean): Self = StObject.set(x, "get_processed", js.Any.fromFunction0(value))
+    inline def setGet_processed(value: () => Boolean): Self = StObject.set(x, "get_processed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_serverErrorCode(value: () => Double): Self = StObject.set(x, "get_serverErrorCode", js.Any.fromFunction0(value))
+    inline def setGet_serverErrorCode(value: () => Double): Self = StObject.set(x, "get_serverErrorCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_serverErrorDetails(value: () => js.Any): Self = StObject.set(x, "get_serverErrorDetails", js.Any.fromFunction0(value))
+    inline def setGet_serverErrorDetails(value: () => js.Any): Self = StObject.set(x, "get_serverErrorDetails", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_serverErrorTypeName(value: () => String): Self = StObject.set(x, "get_serverErrorTypeName", js.Any.fromFunction0(value))
+    inline def setGet_serverErrorTypeName(value: () => String): Self = StObject.set(x, "get_serverErrorTypeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_serverErrorValue(value: () => String): Self = StObject.set(x, "get_serverErrorValue", js.Any.fromFunction0(value))
+    inline def setGet_serverErrorValue(value: () => String): Self = StObject.set(x, "get_serverErrorValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_serverStackTrace(value: () => String): Self = StObject.set(x, "get_serverStackTrace", js.Any.fromFunction0(value))
+    inline def setGet_serverStackTrace(value: () => String): Self = StObject.set(x, "get_serverStackTrace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartCatch(value: () => js.Any): Self = StObject.set(x, "startCatch", js.Any.fromFunction0(value))
+    inline def setStartCatch(value: () => js.Any): Self = StObject.set(x, "startCatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartFinally(value: () => js.Any): Self = StObject.set(x, "startFinally", js.Any.fromFunction0(value))
+    inline def setStartFinally(value: () => js.Any): Self = StObject.set(x, "startFinally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartScope(value: () => js.Any): Self = StObject.set(x, "startScope", js.Any.fromFunction0(value))
+    inline def setStartScope(value: () => js.Any): Self = StObject.set(x, "startScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartTry(value: () => js.Any): Self = StObject.set(x, "startTry", js.Any.fromFunction0(value))
+    inline def setStartTry(value: () => js.Any): Self = StObject.set(x, "startTry", js.Any.fromFunction0(value))
   }
 }

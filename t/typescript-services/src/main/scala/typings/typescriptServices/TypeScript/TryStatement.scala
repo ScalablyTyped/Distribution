@@ -18,8 +18,7 @@ trait TryStatement
 }
 object TryStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -48,19 +47,14 @@ object TryStatement {
     __obj.asInstanceOf[TryStatement]
   }
   
-  @scala.inline
-  implicit class TryStatementMutableBuilder[Self <: TryStatement] (val x: Self) extends AnyVal {
+  extension [Self <: TryStatement](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatchClause(value: CatchClause): Self = StObject.set(x, "catchClause", value.asInstanceOf[js.Any])
+    inline def setCatchClause(value: CatchClause): Self = StObject.set(x, "catchClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinallyClause(value: FinallyClause): Self = StObject.set(x, "finallyClause", value.asInstanceOf[js.Any])
+    inline def setFinallyClause(value: FinallyClause): Self = StObject.set(x, "finallyClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (TryStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (TryStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

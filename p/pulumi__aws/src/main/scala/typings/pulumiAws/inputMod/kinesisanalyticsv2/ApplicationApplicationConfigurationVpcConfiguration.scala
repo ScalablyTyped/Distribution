@@ -23,37 +23,27 @@ trait ApplicationApplicationConfigurationVpcConfiguration extends StObject {
 }
 object ApplicationApplicationConfigurationVpcConfiguration {
   
-  @scala.inline
-  def apply(securityGroupIds: Input[js.Array[Input[String]]], subnetIds: Input[js.Array[Input[String]]]): ApplicationApplicationConfigurationVpcConfiguration = {
+  inline def apply(securityGroupIds: Input[js.Array[Input[String]]], subnetIds: Input[js.Array[Input[String]]]): ApplicationApplicationConfigurationVpcConfiguration = {
     val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationVpcConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationVpcConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationVpcConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationVpcConfiguration](x: Self) {
     
-    @scala.inline
-    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcConfigurationId(value: Input[String]): Self = StObject.set(x, "vpcConfigurationId", value.asInstanceOf[js.Any])
+    inline def setVpcConfigurationId(value: Input[String]): Self = StObject.set(x, "vpcConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationIdUndefined: Self = StObject.set(x, "vpcConfigurationId", js.undefined)
+    inline def setVpcConfigurationIdUndefined: Self = StObject.set(x, "vpcConfigurationId", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
   }
 }

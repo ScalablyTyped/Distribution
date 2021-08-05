@@ -16,19 +16,15 @@ trait ExtendedInfo
 }
 object ExtendedInfo {
   
-  @scala.inline
-  def apply(code: Double, error: String): ExtendedInfo = {
+  inline def apply(code: Double, error: String): ExtendedInfo = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedInfo]
   }
   
-  @scala.inline
-  implicit class ExtendedInfoMutableBuilder[Self <: ExtendedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedInfo](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

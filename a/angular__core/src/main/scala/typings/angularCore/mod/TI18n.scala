@@ -24,19 +24,15 @@ trait TI18n extends StObject {
 }
 object TI18n {
   
-  @scala.inline
-  def apply(create: I18nCreateOpCodes, update: I18nUpdateOpCodes): TI18n = {
+  inline def apply(create: I18nCreateOpCodes, update: I18nUpdateOpCodes): TI18n = {
     val __obj = js.Dynamic.literal(create = create.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[TI18n]
   }
   
-  @scala.inline
-  implicit class TI18nMutableBuilder[Self <: TI18n] (val x: Self) extends AnyVal {
+  extension [Self <: TI18n](x: Self) {
     
-    @scala.inline
-    def setCreate(value: I18nCreateOpCodes): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: I18nCreateOpCodes): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: I18nUpdateOpCodes): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: I18nUpdateOpCodes): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

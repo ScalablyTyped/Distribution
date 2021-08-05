@@ -13,11 +13,8 @@ object moduleWithProvidersUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createModuleWithProvidersType(`type`: String): TypeReferenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleWithProvidersType")(`type`.asInstanceOf[js.Any]).asInstanceOf[TypeReferenceNode]
-  @scala.inline
-  def createModuleWithProvidersType(`type`: String, node: TypeReferenceNode): TypeReferenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleWithProvidersType")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceNode]
+  inline def createModuleWithProvidersType(`type`: String): TypeReferenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleWithProvidersType")(`type`.asInstanceOf[js.Any]).asInstanceOf[TypeReferenceNode]
+  inline def createModuleWithProvidersType(`type`: String, node: TypeReferenceNode): TypeReferenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleWithProvidersType")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceNode]
   
-  @scala.inline
-  def isModuleWithProvidersNotGeneric(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleWithProvidersNotGeneric")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is typescript.typescript.TypeReferenceNode */ Boolean]
+  inline def isModuleWithProvidersNotGeneric(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleWithProvidersNotGeneric")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is typescript.typescript.TypeReferenceNode */ Boolean]
 }

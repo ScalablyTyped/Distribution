@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _GlobalRequest extends StObject
 object _GlobalRequest {
   
-  @scala.inline
-  def TcpipForwardGlobalRequest(bindAddr: String, bindPort: Double): typings.ssh2Streams.mod.TcpipForwardGlobalRequest = {
+  inline def TcpipForwardGlobalRequest(bindAddr: String, bindPort: Double): typings.ssh2Streams.mod.TcpipForwardGlobalRequest = {
     val __obj = js.Dynamic.literal(bindAddr = bindAddr.asInstanceOf[js.Any], bindPort = bindPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ssh2Streams.mod.TcpipForwardGlobalRequest]
   }
   
-  @scala.inline
-  def opensshStreamLocalForwardGlobalRequest(socketPath: String): typings.ssh2Streams.mod.opensshStreamLocalForwardGlobalRequest = {
+  inline def opensshStreamLocalForwardGlobalRequest(socketPath: String): typings.ssh2Streams.mod.opensshStreamLocalForwardGlobalRequest = {
     val __obj = js.Dynamic.literal(socketPath = socketPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ssh2Streams.mod.opensshStreamLocalForwardGlobalRequest]
   }

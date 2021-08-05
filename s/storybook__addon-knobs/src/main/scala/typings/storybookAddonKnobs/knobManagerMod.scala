@@ -67,8 +67,7 @@ object knobManagerMod {
   }
   object KnobManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _mayCallChannel: () => Unit,
       calling: Boolean,
       getKnobValue: Knob[js.Any] => js.Any,
@@ -84,42 +83,31 @@ object knobManagerMod {
       __obj.asInstanceOf[KnobManager]
     }
     
-    @scala.inline
-    implicit class KnobManagerMutableBuilder[Self <: KnobManager] (val x: Self) extends AnyVal {
+    extension [Self <: KnobManager](x: Self) {
       
-      @scala.inline
-      def setCalling(value: Boolean): Self = StObject.set(x, "calling", value.asInstanceOf[js.Any])
+      inline def setCalling(value: Boolean): Self = StObject.set(x, "calling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setGetKnobValue(value: Knob[js.Any] => js.Any): Self = StObject.set(x, "getKnobValue", js.Any.fromFunction1(value))
+      inline def setGetKnobValue(value: Knob[js.Any] => js.Any): Self = StObject.set(x, "getKnobValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKnob(
+      inline def setKnob(
         value: (String, Knob[js.Any]) => Mutable[
               /* import warning: importer.ImportType#apply Failed type conversion: @storybook/addon-knobs.@storybook/addon-knobs/dist/type-defs.Knob<T>['value'] */ js.Any
             ]
       ): Self = StObject.set(x, "knob", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKnobStore(value: typings.storybookAddonKnobs.knobStoreMod.default): Self = StObject.set(x, "knobStore", value.asInstanceOf[js.Any])
+      inline def setKnobStore(value: typings.storybookAddonKnobs.knobStoreMod.default): Self = StObject.set(x, "knobStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: KnobManagerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: KnobManagerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetChannel(value: Channel => Unit): Self = StObject.set(x, "setChannel", js.Any.fromFunction1(value))
+      inline def setSetChannel(value: Channel => Unit): Self = StObject.set(x, "setChannel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOptions(value: KnobManagerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+      inline def setSetOptions(value: KnobManagerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_mayCallChannel(value: () => Unit): Self = StObject.set(x, "_mayCallChannel", js.Any.fromFunction0(value))
+      inline def set_mayCallChannel(value: () => Unit): Self = StObject.set(x, "_mayCallChannel", js.Any.fromFunction0(value))
     }
   }
   
@@ -133,32 +121,24 @@ object knobManagerMod {
   }
   object KnobManagerOptions {
     
-    @scala.inline
-    def apply(): KnobManagerOptions = {
+    inline def apply(): KnobManagerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KnobManagerOptions]
     }
     
-    @scala.inline
-    implicit class KnobManagerOptionsMutableBuilder[Self <: KnobManagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KnobManagerOptions](x: Self) {
       
-      @scala.inline
-      def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
+      inline def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableDebounceUndefined: Self = StObject.set(x, "disableDebounce", js.undefined)
+      inline def setDisableDebounceUndefined: Self = StObject.set(x, "disableDebounce", js.undefined)
       
-      @scala.inline
-      def setDisableForceUpdate(value: Boolean): Self = StObject.set(x, "disableForceUpdate", value.asInstanceOf[js.Any])
+      inline def setDisableForceUpdate(value: Boolean): Self = StObject.set(x, "disableForceUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableForceUpdateUndefined: Self = StObject.set(x, "disableForceUpdate", js.undefined)
+      inline def setDisableForceUpdateUndefined: Self = StObject.set(x, "disableForceUpdate", js.undefined)
       
-      @scala.inline
-      def setEscapeHTML(value: Boolean): Self = StObject.set(x, "escapeHTML", value.asInstanceOf[js.Any])
+      inline def setEscapeHTML(value: Boolean): Self = StObject.set(x, "escapeHTML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeHTMLUndefined: Self = StObject.set(x, "escapeHTML", js.undefined)
+      inline def setEscapeHTMLUndefined: Self = StObject.set(x, "escapeHTML", js.undefined)
     }
   }
 }

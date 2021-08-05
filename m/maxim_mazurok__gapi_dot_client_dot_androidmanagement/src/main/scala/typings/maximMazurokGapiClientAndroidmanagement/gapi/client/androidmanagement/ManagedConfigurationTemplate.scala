@@ -19,29 +19,23 @@ trait ManagedConfigurationTemplate extends StObject {
 }
 object ManagedConfigurationTemplate {
   
-  @scala.inline
-  def apply(): ManagedConfigurationTemplate = {
+  inline def apply(): ManagedConfigurationTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedConfigurationTemplate]
   }
   
-  @scala.inline
-  implicit class ManagedConfigurationTemplateMutableBuilder[Self <: ManagedConfigurationTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedConfigurationTemplate](x: Self) {
     
-    @scala.inline
-    def setConfigurationVariables(
+    inline def setConfigurationVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ManagedConfigurationTemplate & TopLevel[js.Any]
     ): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)
+    inline def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
   }
 }

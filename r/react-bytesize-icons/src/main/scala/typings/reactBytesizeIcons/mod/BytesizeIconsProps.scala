@@ -16,31 +16,23 @@ trait BytesizeIconsProps
 }
 object BytesizeIconsProps {
   
-  @scala.inline
-  def apply(): BytesizeIconsProps = {
+  inline def apply(): BytesizeIconsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BytesizeIconsProps]
   }
   
-  @scala.inline
-  implicit class BytesizeIconsPropsMutableBuilder[Self <: BytesizeIconsProps] (val x: Self) extends AnyVal {
+  extension [Self <: BytesizeIconsProps](x: Self) {
     
-    @scala.inline
-    def setStrokeLinecap(value: StrokeLinecap): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    inline def setStrokeLinecap(value: StrokeLinecap): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+    inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
-    @scala.inline
-    def setStrokeLinejoin(value: StrokeLinejoin): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    inline def setStrokeLinejoin(value: StrokeLinejoin): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
+    inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: String): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: String): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

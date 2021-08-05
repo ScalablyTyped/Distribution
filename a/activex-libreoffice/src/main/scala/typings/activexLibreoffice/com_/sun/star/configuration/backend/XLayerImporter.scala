@@ -62,8 +62,7 @@ trait XLayerImporter
 }
 object XLayerImporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TargetBackend: XBackend,
     acquire: () => Unit,
     getTargetBackend: () => XBackend,
@@ -77,22 +76,16 @@ object XLayerImporter {
     __obj.asInstanceOf[XLayerImporter]
   }
   
-  @scala.inline
-  implicit class XLayerImporterMutableBuilder[Self <: XLayerImporter] (val x: Self) extends AnyVal {
+  extension [Self <: XLayerImporter](x: Self) {
     
-    @scala.inline
-    def setGetTargetBackend(value: () => XBackend): Self = StObject.set(x, "getTargetBackend", js.Any.fromFunction0(value))
+    inline def setGetTargetBackend(value: () => XBackend): Self = StObject.set(x, "getTargetBackend", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImportLayer(value: XLayer => Unit): Self = StObject.set(x, "importLayer", js.Any.fromFunction1(value))
+    inline def setImportLayer(value: XLayer => Unit): Self = StObject.set(x, "importLayer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImportLayerForEntity(value: (XLayer, String) => Unit): Self = StObject.set(x, "importLayerForEntity", js.Any.fromFunction2(value))
+    inline def setImportLayerForEntity(value: (XLayer, String) => Unit): Self = StObject.set(x, "importLayerForEntity", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTargetBackend(value: XBackend => Unit): Self = StObject.set(x, "setTargetBackend", js.Any.fromFunction1(value))
+    inline def setSetTargetBackend(value: XBackend => Unit): Self = StObject.set(x, "setTargetBackend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTargetBackend(value: XBackend): Self = StObject.set(x, "TargetBackend", value.asInstanceOf[js.Any])
+    inline def setTargetBackend(value: XBackend): Self = StObject.set(x, "TargetBackend", value.asInstanceOf[js.Any])
   }
 }

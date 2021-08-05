@@ -17,20 +17,16 @@ trait ElementaryTypeNameExpression
 }
 object ElementaryTypeNameExpression {
   
-  @scala.inline
-  def apply(typeName: ElementaryTypeName): ElementaryTypeNameExpression = {
+  inline def apply(typeName: ElementaryTypeName): ElementaryTypeNameExpression = {
     val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ElementaryTypeNameExpression")
     __obj.asInstanceOf[ElementaryTypeNameExpression]
   }
   
-  @scala.inline
-  implicit class ElementaryTypeNameExpressionMutableBuilder[Self <: ElementaryTypeNameExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ElementaryTypeNameExpression](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: ElementaryTypeName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: ElementaryTypeName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
   }
 }

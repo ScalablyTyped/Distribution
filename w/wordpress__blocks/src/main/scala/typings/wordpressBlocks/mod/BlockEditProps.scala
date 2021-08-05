@@ -20,8 +20,7 @@ trait BlockEditProps[T /* <: Record[String, js.Any] */]
 }
 object BlockEditProps {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](
+  inline def apply[T /* <: Record[String, js.Any] */](
     attributes: T,
     className: String,
     clientId: String,
@@ -32,19 +31,14 @@ object BlockEditProps {
     __obj.asInstanceOf[BlockEditProps[T]]
   }
   
-  @scala.inline
-  implicit class BlockEditPropsMutableBuilder[Self <: BlockEditProps[?], T /* <: Record[String, js.Any] */] (val x: Self & BlockEditProps[T]) extends AnyVal {
+  extension [Self <: BlockEditProps[?], T /* <: Record[String, js.Any] */](x: Self & BlockEditProps[T]) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAttributes(value: Partial[T] => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
+    inline def setSetAttributes(value: Partial[T] => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
   }
 }

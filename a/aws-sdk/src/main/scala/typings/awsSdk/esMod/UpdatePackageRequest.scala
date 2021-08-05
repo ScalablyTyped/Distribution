@@ -25,31 +25,23 @@ trait UpdatePackageRequest extends StObject {
 }
 object UpdatePackageRequest {
   
-  @scala.inline
-  def apply(PackageID: PackageID, PackageSource: PackageSource): UpdatePackageRequest = {
+  inline def apply(PackageID: PackageID, PackageSource: PackageSource): UpdatePackageRequest = {
     val __obj = js.Dynamic.literal(PackageID = PackageID.asInstanceOf[js.Any], PackageSource = PackageSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePackageRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePackageRequestMutableBuilder[Self <: UpdatePackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePackageRequest](x: Self) {
     
-    @scala.inline
-    def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "CommitMessage", value.asInstanceOf[js.Any])
+    inline def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "CommitMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitMessageUndefined: Self = StObject.set(x, "CommitMessage", js.undefined)
+    inline def setCommitMessageUndefined: Self = StObject.set(x, "CommitMessage", js.undefined)
     
-    @scala.inline
-    def setPackageDescription(value: PackageDescription): Self = StObject.set(x, "PackageDescription", value.asInstanceOf[js.Any])
+    inline def setPackageDescription(value: PackageDescription): Self = StObject.set(x, "PackageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageDescriptionUndefined: Self = StObject.set(x, "PackageDescription", js.undefined)
+    inline def setPackageDescriptionUndefined: Self = StObject.set(x, "PackageDescription", js.undefined)
     
-    @scala.inline
-    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
+    inline def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageSource(value: PackageSource): Self = StObject.set(x, "PackageSource", value.asInstanceOf[js.Any])
+    inline def setPackageSource(value: PackageSource): Self = StObject.set(x, "PackageSource", value.asInstanceOf[js.Any])
   }
 }

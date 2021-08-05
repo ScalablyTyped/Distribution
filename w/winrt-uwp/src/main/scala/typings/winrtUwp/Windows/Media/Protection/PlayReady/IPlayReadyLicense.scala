@@ -35,8 +35,7 @@ trait IPlayReadyLicense extends StObject {
 }
 object IPlayReadyLicense {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chainDepth: Double,
     domainAccountID: String,
     expirationDate: Date,
@@ -49,28 +48,20 @@ object IPlayReadyLicense {
     __obj.asInstanceOf[IPlayReadyLicense]
   }
   
-  @scala.inline
-  implicit class IPlayReadyLicenseMutableBuilder[Self <: IPlayReadyLicense] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayReadyLicense](x: Self) {
     
-    @scala.inline
-    def setChainDepth(value: Double): Self = StObject.set(x, "chainDepth", value.asInstanceOf[js.Any])
+    inline def setChainDepth(value: Double): Self = StObject.set(x, "chainDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainAccountID(value: String): Self = StObject.set(x, "domainAccountID", value.asInstanceOf[js.Any])
+    inline def setDomainAccountID(value: String): Self = StObject.set(x, "domainAccountID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireAfterFirstPlay(value: Double): Self = StObject.set(x, "expireAfterFirstPlay", value.asInstanceOf[js.Any])
+    inline def setExpireAfterFirstPlay(value: Double): Self = StObject.set(x, "expireAfterFirstPlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyEvaluated(value: Boolean): Self = StObject.set(x, "fullyEvaluated", value.asInstanceOf[js.Any])
+    inline def setFullyEvaluated(value: Boolean): Self = StObject.set(x, "fullyEvaluated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKIDAtChainDepth(value: Double => String): Self = StObject.set(x, "getKIDAtChainDepth", js.Any.fromFunction1(value))
+    inline def setGetKIDAtChainDepth(value: Double => String): Self = StObject.set(x, "getKIDAtChainDepth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUsableForPlay(value: Boolean): Self = StObject.set(x, "usableForPlay", value.asInstanceOf[js.Any])
+    inline def setUsableForPlay(value: Boolean): Self = StObject.set(x, "usableForPlay", value.asInstanceOf[js.Any])
   }
 }

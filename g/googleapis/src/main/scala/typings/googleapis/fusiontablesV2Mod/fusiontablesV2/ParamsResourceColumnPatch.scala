@@ -34,37 +34,27 @@ trait ParamsResourceColumnPatch
 }
 object ParamsResourceColumnPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceColumnPatch = {
+  inline def apply(): ParamsResourceColumnPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceColumnPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceColumnPatchMutableBuilder[Self <: ParamsResourceColumnPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceColumnPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+    inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
+    inline def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaColumn): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaColumn): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

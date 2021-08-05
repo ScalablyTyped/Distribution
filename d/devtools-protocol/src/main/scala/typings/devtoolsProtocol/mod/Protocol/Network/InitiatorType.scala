@@ -18,18 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InitiatorType extends StObject
 object InitiatorType {
   
-  @scala.inline
-  def Other: other_ = "other".asInstanceOf[other_]
+  inline def Other: other_ = "other".asInstanceOf[other_]
   
-  @scala.inline
-  def Parser: parser = "parser".asInstanceOf[parser]
+  inline def Parser: parser = "parser".asInstanceOf[parser]
   
-  @scala.inline
-  def Preload: preload = "preload".asInstanceOf[preload]
+  inline def Preload: preload = "preload".asInstanceOf[preload]
   
-  @scala.inline
-  def Script: script_ = "script".asInstanceOf[script_]
+  inline def Script: script_ = "script".asInstanceOf[script_]
   
-  @scala.inline
-  def SignedExchange: typings.devtoolsProtocol.devtoolsProtocolStrings.SignedExchange = "SignedExchange".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SignedExchange]
+  inline def SignedExchange: typings.devtoolsProtocol.devtoolsProtocolStrings.SignedExchange = "SignedExchange".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SignedExchange]
 }

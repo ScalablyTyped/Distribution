@@ -21,44 +21,32 @@ object anon {
   }
   object PartialAnswerCallbackQuer {
     
-    @scala.inline
-    def apply(): PartialAnswerCallbackQuer = {
+    inline def apply(): PartialAnswerCallbackQuer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialAnswerCallbackQuer]
     }
     
-    @scala.inline
-    implicit class PartialAnswerCallbackQuerMutableBuilder[Self <: PartialAnswerCallbackQuer] (val x: Self) extends AnyVal {
+    extension [Self <: PartialAnswerCallbackQuer](x: Self) {
       
-      @scala.inline
-      def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
+      inline def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache_timeUndefined: Self = StObject.set(x, "cache_time", js.undefined)
+      inline def setCache_timeUndefined: Self = StObject.set(x, "cache_time", js.undefined)
       
-      @scala.inline
-      def setCallback_query_id(value: String): Self = StObject.set(x, "callback_query_id", value.asInstanceOf[js.Any])
+      inline def setCallback_query_id(value: String): Self = StObject.set(x, "callback_query_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallback_query_idUndefined: Self = StObject.set(x, "callback_query_id", js.undefined)
+      inline def setCallback_query_idUndefined: Self = StObject.set(x, "callback_query_id", js.undefined)
       
-      @scala.inline
-      def setShow_alert(value: Boolean): Self = StObject.set(x, "show_alert", value.asInstanceOf[js.Any])
+      inline def setShow_alert(value: Boolean): Self = StObject.set(x, "show_alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_alertUndefined: Self = StObject.set(x, "show_alert", js.undefined)
+      inline def setShow_alertUndefined: Self = StObject.set(x, "show_alert", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

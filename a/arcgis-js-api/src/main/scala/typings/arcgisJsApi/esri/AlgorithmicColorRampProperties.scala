@@ -34,31 +34,23 @@ trait AlgorithmicColorRampProperties
 }
 object AlgorithmicColorRampProperties {
   
-  @scala.inline
-  def apply(): AlgorithmicColorRampProperties = {
+  inline def apply(): AlgorithmicColorRampProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlgorithmicColorRampProperties]
   }
   
-  @scala.inline
-  implicit class AlgorithmicColorRampPropertiesMutableBuilder[Self <: AlgorithmicColorRampProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AlgorithmicColorRampProperties](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: `cie-lab` | `lab-lch` | hsv): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: `cie-lab` | `lab-lch` | hsv): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setFromColor(value: Color_): Self = StObject.set(x, "fromColor", value.asInstanceOf[js.Any])
+    inline def setFromColor(value: Color_): Self = StObject.set(x, "fromColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromColorUndefined: Self = StObject.set(x, "fromColor", js.undefined)
+    inline def setFromColorUndefined: Self = StObject.set(x, "fromColor", js.undefined)
     
-    @scala.inline
-    def setToColor(value: Color_): Self = StObject.set(x, "toColor", value.asInstanceOf[js.Any])
+    inline def setToColor(value: Color_): Self = StObject.set(x, "toColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToColorUndefined: Self = StObject.set(x, "toColor", js.undefined)
+    inline def setToColorUndefined: Self = StObject.set(x, "toColor", js.undefined)
   }
 }

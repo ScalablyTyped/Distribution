@@ -28,28 +28,21 @@ trait SchemaListStepThumbnailsResponse extends StObject {
 }
 object SchemaListStepThumbnailsResponse {
   
-  @scala.inline
-  def apply(): SchemaListStepThumbnailsResponse = {
+  inline def apply(): SchemaListStepThumbnailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListStepThumbnailsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListStepThumbnailsResponseMutableBuilder[Self <: SchemaListStepThumbnailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListStepThumbnailsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setThumbnails(value: js.Array[SchemaImage]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: js.Array[SchemaImage]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+    inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    @scala.inline
-    def setThumbnailsVarargs(value: SchemaImage*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+    inline def setThumbnailsVarargs(value: SchemaImage*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
   }
 }

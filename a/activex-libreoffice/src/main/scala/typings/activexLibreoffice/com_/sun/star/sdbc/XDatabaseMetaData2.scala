@@ -29,8 +29,7 @@ trait XDatabaseMetaData2
 }
 object XDatabaseMetaData2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CatalogSeparator: String,
     CatalogTerm: String,
     Catalogs: XResultSet,
@@ -236,13 +235,10 @@ object XDatabaseMetaData2 {
     __obj.asInstanceOf[XDatabaseMetaData2]
   }
   
-  @scala.inline
-  implicit class XDatabaseMetaData2MutableBuilder[Self <: XDatabaseMetaData2] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseMetaData2](x: Self) {
     
-    @scala.inline
-    def setConnectionInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
+    inline def setConnectionInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConnectionInfo(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getConnectionInfo", js.Any.fromFunction0(value))
+    inline def setGetConnectionInfo(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getConnectionInfo", js.Any.fromFunction0(value))
   }
 }

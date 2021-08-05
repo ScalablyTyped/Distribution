@@ -14,8 +14,7 @@ trait FlowElementsContainer
 }
 object FlowElementsContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     flowElements: js.Array[FlowElement],
@@ -26,19 +25,14 @@ object FlowElementsContainer {
     __obj.asInstanceOf[FlowElementsContainer]
   }
   
-  @scala.inline
-  implicit class FlowElementsContainerMutableBuilder[Self <: FlowElementsContainer] (val x: Self) extends AnyVal {
+  extension [Self <: FlowElementsContainer](x: Self) {
     
-    @scala.inline
-    def setFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "flowElements", value.asInstanceOf[js.Any])
+    inline def setFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "flowElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "flowElements", js.Array(value :_*))
+    inline def setFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "flowElements", js.Array(value :_*))
     
-    @scala.inline
-    def setLaneSets(value: js.Array[LaneSet]): Self = StObject.set(x, "laneSets", value.asInstanceOf[js.Any])
+    inline def setLaneSets(value: js.Array[LaneSet]): Self = StObject.set(x, "laneSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaneSetsVarargs(value: LaneSet*): Self = StObject.set(x, "laneSets", js.Array(value :_*))
+    inline def setLaneSetsVarargs(value: LaneSet*): Self = StObject.set(x, "laneSets", js.Array(value :_*))
   }
 }

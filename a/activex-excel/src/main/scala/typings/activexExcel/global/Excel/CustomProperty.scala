@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CustomProperty")
 @js.native
-class CustomProperty protected ()
+/* private */ class CustomProperty ()
   extends StObject
      with typings.activexExcel.Excel.CustomProperty {
   
@@ -20,7 +20,7 @@ class CustomProperty protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.CustomProperty_typekey")
   var ExcelDotCustomProperty_typekey: typings.activexExcel.Excel.CustomProperty = js.native
   

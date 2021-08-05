@@ -8,6 +8,5 @@ object checkTypesStrings {
   
   @js.native
   sealed trait CheckType extends StObject
-  @scala.inline
-  def CheckType: CheckType = "CheckType".asInstanceOf[CheckType]
+  inline def CheckType: CheckType = "CheckType".asInstanceOf[CheckType]
 }

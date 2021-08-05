@@ -18,19 +18,15 @@ trait GetMailboxDetailsRequest extends StObject {
 }
 object GetMailboxDetailsRequest {
   
-  @scala.inline
-  def apply(OrganizationId: OrganizationId, UserId: WorkMailIdentifier): GetMailboxDetailsRequest = {
+  inline def apply(OrganizationId: OrganizationId, UserId: WorkMailIdentifier): GetMailboxDetailsRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMailboxDetailsRequest]
   }
   
-  @scala.inline
-  implicit class GetMailboxDetailsRequestMutableBuilder[Self <: GetMailboxDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMailboxDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: WorkMailIdentifier): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: WorkMailIdentifier): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

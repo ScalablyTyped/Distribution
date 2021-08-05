@@ -24,8 +24,7 @@ trait IParameters extends StObject {
 }
 object IParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ast: AST,
     astAt: Double => AST,
     identifierAt: Double => Identifier,
@@ -39,31 +38,22 @@ object IParameters {
     __obj.asInstanceOf[IParameters]
   }
   
-  @scala.inline
-  implicit class IParametersMutableBuilder[Self <: IParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IParameters](x: Self) {
     
-    @scala.inline
-    def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAstAt(value: Double => AST): Self = StObject.set(x, "astAt", js.Any.fromFunction1(value))
+    inline def setAstAt(value: Double => AST): Self = StObject.set(x, "astAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIdentifierAt(value: Double => Identifier): Self = StObject.set(x, "identifierAt", js.Any.fromFunction1(value))
+    inline def setIdentifierAt(value: Double => Identifier): Self = StObject.set(x, "identifierAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitializerAt(value: Double => EqualsValueClause): Self = StObject.set(x, "initializerAt", js.Any.fromFunction1(value))
+    inline def setInitializerAt(value: Double => EqualsValueClause): Self = StObject.set(x, "initializerAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsOptionalAt(value: Double => Boolean): Self = StObject.set(x, "isOptionalAt", js.Any.fromFunction1(value))
+    inline def setIsOptionalAt(value: Double => Boolean): Self = StObject.set(x, "isOptionalAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLastParameterIsRest(value: () => Boolean): Self = StObject.set(x, "lastParameterIsRest", js.Any.fromFunction0(value))
+    inline def setLastParameterIsRest(value: () => Boolean): Self = StObject.set(x, "lastParameterIsRest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAt(value: Double => AST): Self = StObject.set(x, "typeAt", js.Any.fromFunction1(value))
+    inline def setTypeAt(value: Double => AST): Self = StObject.set(x, "typeAt", js.Any.fromFunction1(value))
   }
 }

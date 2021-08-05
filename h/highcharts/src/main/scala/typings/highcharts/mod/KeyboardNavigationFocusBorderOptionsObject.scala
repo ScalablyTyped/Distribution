@@ -36,37 +36,27 @@ trait KeyboardNavigationFocusBorderOptionsObject extends StObject {
 }
 object KeyboardNavigationFocusBorderOptionsObject {
   
-  @scala.inline
-  def apply(): KeyboardNavigationFocusBorderOptionsObject = {
+  inline def apply(): KeyboardNavigationFocusBorderOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardNavigationFocusBorderOptionsObject]
   }
   
-  @scala.inline
-  implicit class KeyboardNavigationFocusBorderOptionsObjectMutableBuilder[Self <: KeyboardNavigationFocusBorderOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardNavigationFocusBorderOptionsObject](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHideBrowserFocusOutline(value: Boolean): Self = StObject.set(x, "hideBrowserFocusOutline", value.asInstanceOf[js.Any])
+    inline def setHideBrowserFocusOutline(value: Boolean): Self = StObject.set(x, "hideBrowserFocusOutline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideBrowserFocusOutlineUndefined: Self = StObject.set(x, "hideBrowserFocusOutline", js.undefined)
+    inline def setHideBrowserFocusOutlineUndefined: Self = StObject.set(x, "hideBrowserFocusOutline", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

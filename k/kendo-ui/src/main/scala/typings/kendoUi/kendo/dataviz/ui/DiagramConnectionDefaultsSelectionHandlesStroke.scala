@@ -10,19 +10,15 @@ trait DiagramConnectionDefaultsSelectionHandlesStroke extends StObject {
 }
 object DiagramConnectionDefaultsSelectionHandlesStroke {
   
-  @scala.inline
-  def apply(): DiagramConnectionDefaultsSelectionHandlesStroke = {
+  inline def apply(): DiagramConnectionDefaultsSelectionHandlesStroke = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramConnectionDefaultsSelectionHandlesStroke]
   }
   
-  @scala.inline
-  implicit class DiagramConnectionDefaultsSelectionHandlesStrokeMutableBuilder[Self <: DiagramConnectionDefaultsSelectionHandlesStroke] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramConnectionDefaultsSelectionHandlesStroke](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

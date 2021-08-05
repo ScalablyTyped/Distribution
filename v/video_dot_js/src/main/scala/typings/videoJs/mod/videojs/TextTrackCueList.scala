@@ -37,8 +37,7 @@ trait TextTrackCueList
 }
 object TextTrackCueList {
   
-  @scala.inline
-  def apply(getCueById: String => TextTrackCue, length: Double): TextTrackCueList = {
+  inline def apply(getCueById: String => TextTrackCue, length: Double): TextTrackCueList = {
     val __obj = js.Dynamic.literal(getCueById = js.Any.fromFunction1(getCueById), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackCueList]
   }
@@ -75,39 +74,29 @@ object TextTrackCueList {
   }
   object TextTrackCue {
     
-    @scala.inline
-    def apply(endTime: Double, id: String, pauseOnExit: Boolean, startTime: Double, text: String): TextTrackCue = {
+    inline def apply(endTime: Double, id: String, pauseOnExit: Boolean, startTime: Double, text: String): TextTrackCue = {
       val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pauseOnExit = pauseOnExit.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextTrackCue]
     }
     
-    @scala.inline
-    implicit class TextTrackCueMutableBuilder[Self <: TextTrackCue] (val x: Self) extends AnyVal {
+    extension [Self <: TextTrackCue](x: Self) {
       
-      @scala.inline
-      def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseOnExit(value: Boolean): Self = StObject.set(x, "pauseOnExit", value.asInstanceOf[js.Any])
+      inline def setPauseOnExit(value: Boolean): Self = StObject.set(x, "pauseOnExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  implicit class TextTrackCueListMutableBuilder[Self <: TextTrackCueList] (val x: Self) extends AnyVal {
+  extension [Self <: TextTrackCueList](x: Self) {
     
-    @scala.inline
-    def setGetCueById(value: String => TextTrackCue): Self = StObject.set(x, "getCueById", js.Any.fromFunction1(value))
+    inline def setGetCueById(value: String => TextTrackCue): Self = StObject.set(x, "getCueById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

@@ -23,26 +23,20 @@ object typesMod {
   }
   object PackedData {
     
-    @scala.inline
-    def apply(abbrvs: String, offsets: String, zones: js.Array[String]): PackedData = {
+    inline def apply(abbrvs: String, offsets: String, zones: js.Array[String]): PackedData = {
       val __obj = js.Dynamic.literal(abbrvs = abbrvs.asInstanceOf[js.Any], offsets = offsets.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackedData]
     }
     
-    @scala.inline
-    implicit class PackedDataMutableBuilder[Self <: PackedData] (val x: Self) extends AnyVal {
+    extension [Self <: PackedData](x: Self) {
       
-      @scala.inline
-      def setAbbrvs(value: String): Self = StObject.set(x, "abbrvs", value.asInstanceOf[js.Any])
+      inline def setAbbrvs(value: String): Self = StObject.set(x, "abbrvs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsets(value: String): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+      inline def setOffsets(value: String): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+      inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+      inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
     }
   }
   
@@ -87,8 +81,7 @@ object typesMod {
   }
   object RawDateTimeLocaleInternalData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       am: String,
       ca: js.Array[String],
       dateFormat: Full,
@@ -111,68 +104,47 @@ object typesMod {
       __obj.asInstanceOf[RawDateTimeLocaleInternalData]
     }
     
-    @scala.inline
-    implicit class RawDateTimeLocaleInternalDataMutableBuilder[Self <: RawDateTimeLocaleInternalData] (val x: Self) extends AnyVal {
+    extension [Self <: RawDateTimeLocaleInternalData](x: Self) {
       
-      @scala.inline
-      def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
+      inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
       
-      @scala.inline
-      def setDateFormat(value: Full): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: Full): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeFormat(value: Full): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
+      inline def setDateTimeFormat(value: Full): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEra(value: LongEraData): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: LongEraData): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormats(value: Record[String, Record[String, String]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Record[String, Record[String, String]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGmtFormat(value: String): Self = StObject.set(x, "gmtFormat", value.asInstanceOf[js.Any])
+      inline def setGmtFormat(value: String): Self = StObject.set(x, "gmtFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHc(value: js.Array[String]): Self = StObject.set(x, "hc", value.asInstanceOf[js.Any])
+      inline def setHc(value: js.Array[String]): Self = StObject.set(x, "hc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHcVarargs(value: String*): Self = StObject.set(x, "hc", js.Array(value :_*))
+      inline def setHcVarargs(value: String*): Self = StObject.set(x, "hc", js.Array(value :_*))
       
-      @scala.inline
-      def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
+      inline def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
+      inline def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalFormats(value: IntervalFormatsData): Self = StObject.set(x, "intervalFormats", value.asInstanceOf[js.Any])
+      inline def setIntervalFormats(value: IntervalFormatsData): Self = StObject.set(x, "intervalFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: Narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
+      inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
+      inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
       
-      @scala.inline
-      def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
+      inline def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeFormat(value: Full): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+      inline def setTimeFormat(value: Full): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneName(value: typings.formatjsEcma402Abstract.typesDateTimeMod.TimeZoneNameData): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: typings.formatjsEcma402Abstract.typesDateTimeMod.TimeZoneNameData): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekday(value: Narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: Narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,29 +163,22 @@ object typesMod {
   }
   object UnpackedData {
     
-    @scala.inline
-    def apply(abbrvs: js.Array[String], offsets: js.Array[Double], zones: Record[String, js.Array[ZoneData]]): UnpackedData = {
+    inline def apply(abbrvs: js.Array[String], offsets: js.Array[Double], zones: Record[String, js.Array[ZoneData]]): UnpackedData = {
       val __obj = js.Dynamic.literal(abbrvs = abbrvs.asInstanceOf[js.Any], offsets = offsets.asInstanceOf[js.Any], zones = zones.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnpackedData]
     }
     
-    @scala.inline
-    implicit class UnpackedDataMutableBuilder[Self <: UnpackedData] (val x: Self) extends AnyVal {
+    extension [Self <: UnpackedData](x: Self) {
       
-      @scala.inline
-      def setAbbrvs(value: js.Array[String]): Self = StObject.set(x, "abbrvs", value.asInstanceOf[js.Any])
+      inline def setAbbrvs(value: js.Array[String]): Self = StObject.set(x, "abbrvs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbbrvsVarargs(value: String*): Self = StObject.set(x, "abbrvs", js.Array(value :_*))
+      inline def setAbbrvsVarargs(value: String*): Self = StObject.set(x, "abbrvs", js.Array(value :_*))
       
-      @scala.inline
-      def setOffsets(value: js.Array[Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+      inline def setOffsets(value: js.Array[Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value :_*))
+      inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value :_*))
       
-      @scala.inline
-      def setZones(value: Record[String, js.Array[ZoneData]]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+      inline def setZones(value: Record[String, js.Array[ZoneData]]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     }
   }
   

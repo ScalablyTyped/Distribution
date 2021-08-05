@@ -14,22 +14,17 @@ trait Undo extends StObject {
 }
 object Undo {
   
-  @scala.inline
-  def apply(ignoreUndo: WebixCallback => Unit, removeUndo: String => Unit, undo: String => Unit): Undo = {
+  inline def apply(ignoreUndo: WebixCallback => Unit, removeUndo: String => Unit, undo: String => Unit): Undo = {
     val __obj = js.Dynamic.literal(ignoreUndo = js.Any.fromFunction1(ignoreUndo), removeUndo = js.Any.fromFunction1(removeUndo), undo = js.Any.fromFunction1(undo))
     __obj.asInstanceOf[Undo]
   }
   
-  @scala.inline
-  implicit class UndoMutableBuilder[Self <: Undo] (val x: Self) extends AnyVal {
+  extension [Self <: Undo](x: Self) {
     
-    @scala.inline
-    def setIgnoreUndo(value: WebixCallback => Unit): Self = StObject.set(x, "ignoreUndo", js.Any.fromFunction1(value))
+    inline def setIgnoreUndo(value: WebixCallback => Unit): Self = StObject.set(x, "ignoreUndo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveUndo(value: String => Unit): Self = StObject.set(x, "removeUndo", js.Any.fromFunction1(value))
+    inline def setRemoveUndo(value: String => Unit): Self = StObject.set(x, "removeUndo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUndo(value: String => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
+    inline def setUndo(value: String => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
   }
 }

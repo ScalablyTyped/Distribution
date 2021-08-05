@@ -32,51 +32,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelativeTimeFormatUnit extends StObject
 object RelativeTimeFormatUnit {
   
-  @scala.inline
-  def day: typings.std.stdStrings.day = "day".asInstanceOf[typings.std.stdStrings.day]
+  inline def day: typings.std.stdStrings.day = "day".asInstanceOf[typings.std.stdStrings.day]
   
-  @scala.inline
-  def days: typings.std.stdStrings.days = "days".asInstanceOf[typings.std.stdStrings.days]
+  inline def days: typings.std.stdStrings.days = "days".asInstanceOf[typings.std.stdStrings.days]
   
-  @scala.inline
-  def hour: typings.std.stdStrings.hour = "hour".asInstanceOf[typings.std.stdStrings.hour]
+  inline def hour: typings.std.stdStrings.hour = "hour".asInstanceOf[typings.std.stdStrings.hour]
   
-  @scala.inline
-  def hours: typings.std.stdStrings.hours = "hours".asInstanceOf[typings.std.stdStrings.hours]
+  inline def hours: typings.std.stdStrings.hours = "hours".asInstanceOf[typings.std.stdStrings.hours]
   
-  @scala.inline
-  def minute: typings.std.stdStrings.minute = "minute".asInstanceOf[typings.std.stdStrings.minute]
+  inline def minute: typings.std.stdStrings.minute = "minute".asInstanceOf[typings.std.stdStrings.minute]
   
-  @scala.inline
-  def minutes: typings.std.stdStrings.minutes = "minutes".asInstanceOf[typings.std.stdStrings.minutes]
+  inline def minutes: typings.std.stdStrings.minutes = "minutes".asInstanceOf[typings.std.stdStrings.minutes]
   
-  @scala.inline
-  def month: typings.std.stdStrings.month = "month".asInstanceOf[typings.std.stdStrings.month]
+  inline def month: typings.std.stdStrings.month = "month".asInstanceOf[typings.std.stdStrings.month]
   
-  @scala.inline
-  def months: typings.std.stdStrings.months = "months".asInstanceOf[typings.std.stdStrings.months]
+  inline def months: typings.std.stdStrings.months = "months".asInstanceOf[typings.std.stdStrings.months]
   
-  @scala.inline
-  def quarter: typings.std.stdStrings.quarter = "quarter".asInstanceOf[typings.std.stdStrings.quarter]
+  inline def quarter: typings.std.stdStrings.quarter = "quarter".asInstanceOf[typings.std.stdStrings.quarter]
   
-  @scala.inline
-  def quarters: typings.std.stdStrings.quarters = "quarters".asInstanceOf[typings.std.stdStrings.quarters]
+  inline def quarters: typings.std.stdStrings.quarters = "quarters".asInstanceOf[typings.std.stdStrings.quarters]
   
-  @scala.inline
-  def second: typings.std.stdStrings.second = "second".asInstanceOf[typings.std.stdStrings.second]
+  inline def second: typings.std.stdStrings.second = "second".asInstanceOf[typings.std.stdStrings.second]
   
-  @scala.inline
-  def seconds: typings.std.stdStrings.seconds = "seconds".asInstanceOf[typings.std.stdStrings.seconds]
+  inline def seconds: typings.std.stdStrings.seconds = "seconds".asInstanceOf[typings.std.stdStrings.seconds]
   
-  @scala.inline
-  def week: typings.std.stdStrings.week = "week".asInstanceOf[typings.std.stdStrings.week]
+  inline def week: typings.std.stdStrings.week = "week".asInstanceOf[typings.std.stdStrings.week]
   
-  @scala.inline
-  def weeks: typings.std.stdStrings.weeks = "weeks".asInstanceOf[typings.std.stdStrings.weeks]
+  inline def weeks: typings.std.stdStrings.weeks = "weeks".asInstanceOf[typings.std.stdStrings.weeks]
   
-  @scala.inline
-  def year: typings.std.stdStrings.year = "year".asInstanceOf[typings.std.stdStrings.year]
+  inline def year: typings.std.stdStrings.year = "year".asInstanceOf[typings.std.stdStrings.year]
   
-  @scala.inline
-  def years: typings.std.stdStrings.years = "years".asInstanceOf[typings.std.stdStrings.years]
+  inline def years: typings.std.stdStrings.years = "years".asInstanceOf[typings.std.stdStrings.years]
 }

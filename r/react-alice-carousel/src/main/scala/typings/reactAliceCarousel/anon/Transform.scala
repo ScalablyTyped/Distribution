@@ -14,22 +14,17 @@ trait Transform extends StObject {
 }
 object Transform {
   
-  @scala.inline
-  def apply(animationDuration: Unit, transform: Unit, width: Double): Transform = {
+  inline def apply(animationDuration: Unit, transform: Unit, width: Double): Transform = {
     val __obj = js.Dynamic.literal(animationDuration = animationDuration.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
   
-  @scala.inline
-  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
+  extension [Self <: Transform](x: Self) {
     
-    @scala.inline
-    def setAnimationDuration(value: Unit): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Unit): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform(value: Unit): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Unit): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

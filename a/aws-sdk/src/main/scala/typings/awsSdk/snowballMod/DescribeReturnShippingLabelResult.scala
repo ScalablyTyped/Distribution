@@ -18,25 +18,19 @@ trait DescribeReturnShippingLabelResult extends StObject {
 }
 object DescribeReturnShippingLabelResult {
   
-  @scala.inline
-  def apply(): DescribeReturnShippingLabelResult = {
+  inline def apply(): DescribeReturnShippingLabelResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReturnShippingLabelResult]
   }
   
-  @scala.inline
-  implicit class DescribeReturnShippingLabelResultMutableBuilder[Self <: DescribeReturnShippingLabelResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReturnShippingLabelResult](x: Self) {
     
-    @scala.inline
-    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ShippingLabelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ShippingLabelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

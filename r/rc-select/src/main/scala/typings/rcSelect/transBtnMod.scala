@@ -34,50 +34,36 @@ object transBtnMod extends Shortcut {
   }
   object TransBtnProps {
     
-    @scala.inline
-    def apply(className: String): TransBtnProps = {
+    inline def apply(className: String): TransBtnProps = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransBtnProps]
     }
     
-    @scala.inline
-    implicit class TransBtnPropsMutableBuilder[Self <: TransBtnProps] (val x: Self) extends AnyVal {
+    extension [Self <: TransBtnProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomizeIcon(value: RenderNode): Self = StObject.set(x, "customizeIcon", value.asInstanceOf[js.Any])
+      inline def setCustomizeIcon(value: RenderNode): Self = StObject.set(x, "customizeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomizeIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "customizeIcon", js.Any.fromFunction1(value))
+      inline def setCustomizeIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "customizeIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomizeIconProps(value: js.Any): Self = StObject.set(x, "customizeIconProps", value.asInstanceOf[js.Any])
+      inline def setCustomizeIconProps(value: js.Any): Self = StObject.set(x, "customizeIconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomizeIconPropsUndefined: Self = StObject.set(x, "customizeIconProps", js.undefined)
+      inline def setCustomizeIconPropsUndefined: Self = StObject.set(x, "customizeIconProps", js.undefined)
       
-      @scala.inline
-      def setCustomizeIconUndefined: Self = StObject.set(x, "customizeIcon", js.undefined)
+      inline def setCustomizeIconUndefined: Self = StObject.set(x, "customizeIcon", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     }
   }
   

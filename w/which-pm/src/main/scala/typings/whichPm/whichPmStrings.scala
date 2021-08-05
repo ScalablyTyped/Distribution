@@ -8,16 +8,13 @@ object whichPmStrings {
   
   @js.native
   sealed trait npm extends StObject
-  @scala.inline
-  def npm: npm = "npm".asInstanceOf[npm]
+  inline def npm: npm = "npm".asInstanceOf[npm]
   
   @js.native
   sealed trait pnpm extends StObject
-  @scala.inline
-  def pnpm: pnpm = "pnpm".asInstanceOf[pnpm]
+  inline def pnpm: pnpm = "pnpm".asInstanceOf[pnpm]
   
   @js.native
   sealed trait yarn extends StObject
-  @scala.inline
-  def yarn: yarn = "yarn".asInstanceOf[yarn]
+  inline def yarn: yarn = "yarn".asInstanceOf[yarn]
 }

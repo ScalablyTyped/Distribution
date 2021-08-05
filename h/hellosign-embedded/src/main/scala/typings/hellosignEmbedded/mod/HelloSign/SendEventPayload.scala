@@ -13,19 +13,15 @@ trait SendEventPayload extends StObject {
 }
 object SendEventPayload {
   
-  @scala.inline
-  def apply(signatureRequestId: String, signatureRequestInfo: CcEmailAddresses): SendEventPayload = {
+  inline def apply(signatureRequestId: String, signatureRequestInfo: CcEmailAddresses): SendEventPayload = {
     val __obj = js.Dynamic.literal(signatureRequestId = signatureRequestId.asInstanceOf[js.Any], signatureRequestInfo = signatureRequestInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendEventPayload]
   }
   
-  @scala.inline
-  implicit class SendEventPayloadMutableBuilder[Self <: SendEventPayload] (val x: Self) extends AnyVal {
+  extension [Self <: SendEventPayload](x: Self) {
     
-    @scala.inline
-    def setSignatureRequestId(value: String): Self = StObject.set(x, "signatureRequestId", value.asInstanceOf[js.Any])
+    inline def setSignatureRequestId(value: String): Self = StObject.set(x, "signatureRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureRequestInfo(value: CcEmailAddresses): Self = StObject.set(x, "signatureRequestInfo", value.asInstanceOf[js.Any])
+    inline def setSignatureRequestInfo(value: CcEmailAddresses): Self = StObject.set(x, "signatureRequestInfo", value.asInstanceOf[js.Any])
   }
 }

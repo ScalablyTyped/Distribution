@@ -23,8 +23,7 @@ trait IObjectWindowResult extends StObject {
 }
 object IObjectWindowResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlList: IAccessControlList,
     ObjVer: IObjVer,
     Properties: IPropertyValues,
@@ -37,28 +36,20 @@ object IObjectWindowResult {
     __obj.asInstanceOf[IObjectWindowResult]
   }
   
-  @scala.inline
-  implicit class IObjectWindowResultMutableBuilder[Self <: IObjectWindowResult] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectWindowResult](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
+    inline def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertyValues): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertyValues): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: MFObjectWindowResultCode): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: MFObjectWindowResultCode): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedFileClass(value: IFileClass): Self = StObject.set(x, "SelectedFileClass", value.asInstanceOf[js.Any])
+    inline def setSelectedFileClass(value: IFileClass): Self = StObject.set(x, "SelectedFileClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAsDefaults(value: Boolean): Self = StObject.set(x, "UseAsDefaults", value.asInstanceOf[js.Any])
+    inline def setUseAsDefaults(value: Boolean): Self = StObject.set(x, "UseAsDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

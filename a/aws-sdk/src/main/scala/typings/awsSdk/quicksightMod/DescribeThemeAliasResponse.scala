@@ -23,31 +23,23 @@ trait DescribeThemeAliasResponse extends StObject {
 }
 object DescribeThemeAliasResponse {
   
-  @scala.inline
-  def apply(): DescribeThemeAliasResponse = {
+  inline def apply(): DescribeThemeAliasResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeThemeAliasResponse]
   }
   
-  @scala.inline
-  implicit class DescribeThemeAliasResponseMutableBuilder[Self <: DescribeThemeAliasResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeThemeAliasResponse](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setThemeAlias(value: ThemeAlias): Self = StObject.set(x, "ThemeAlias", value.asInstanceOf[js.Any])
+    inline def setThemeAlias(value: ThemeAlias): Self = StObject.set(x, "ThemeAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeAliasUndefined: Self = StObject.set(x, "ThemeAlias", js.undefined)
+    inline def setThemeAliasUndefined: Self = StObject.set(x, "ThemeAlias", js.undefined)
   }
 }

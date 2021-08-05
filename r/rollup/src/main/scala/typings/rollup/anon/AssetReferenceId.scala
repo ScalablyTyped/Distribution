@@ -25,8 +25,7 @@ trait AssetReferenceId extends StObject {
 }
 object AssetReferenceId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chunkId: String,
     fileName: String,
     format: InternalModuleFormat,
@@ -38,37 +37,26 @@ object AssetReferenceId {
     __obj.asInstanceOf[AssetReferenceId]
   }
   
-  @scala.inline
-  implicit class AssetReferenceIdMutableBuilder[Self <: AssetReferenceId] (val x: Self) extends AnyVal {
+  extension [Self <: AssetReferenceId](x: Self) {
     
-    @scala.inline
-    def setAssetReferenceId(value: String): Self = StObject.set(x, "assetReferenceId", value.asInstanceOf[js.Any])
+    inline def setAssetReferenceId(value: String): Self = StObject.set(x, "assetReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetReferenceIdNull: Self = StObject.set(x, "assetReferenceId", null)
+    inline def setAssetReferenceIdNull: Self = StObject.set(x, "assetReferenceId", null)
     
-    @scala.inline
-    def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
+    inline def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkReferenceId(value: String): Self = StObject.set(x, "chunkReferenceId", value.asInstanceOf[js.Any])
+    inline def setChunkReferenceId(value: String): Self = StObject.set(x, "chunkReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkReferenceIdNull: Self = StObject.set(x, "chunkReferenceId", null)
+    inline def setChunkReferenceIdNull: Self = StObject.set(x, "chunkReferenceId", null)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: InternalModuleFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+    inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
   }
 }

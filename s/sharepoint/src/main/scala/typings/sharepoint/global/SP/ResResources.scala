@@ -16,6 +16,5 @@ object ResResources {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getString(resourceId: String, args: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getString")(resourceId.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getString(resourceId: String, args: js.Array[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getString")(resourceId.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -16,23 +16,19 @@ trait SetInstanceLabelsRequest extends StObject {
 }
 object SetInstanceLabelsRequest {
   
-  @scala.inline
-  def apply(): SetInstanceLabelsRequest = {
+  inline def apply(): SetInstanceLabelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetInstanceLabelsRequest]
   }
   
-  @scala.inline
-  implicit class SetInstanceLabelsRequestMutableBuilder[Self <: SetInstanceLabelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetInstanceLabelsRequest](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

@@ -8,11 +8,9 @@ object reactBootstrapTable2PaginatorStrings {
   
   @js.native
   sealed trait dropdown extends StObject
-  @scala.inline
-  def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
   sealed trait dropup extends StObject
-  @scala.inline
-  def dropup: dropup = "dropup".asInstanceOf[dropup]
+  inline def dropup: dropup = "dropup".asInstanceOf[dropup]
 }

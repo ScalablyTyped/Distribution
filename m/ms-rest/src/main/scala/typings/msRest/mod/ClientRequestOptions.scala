@@ -12,19 +12,15 @@ trait ClientRequestOptions
 }
 object ClientRequestOptions {
   
-  @scala.inline
-  def apply(): ClientRequestOptions = {
+  inline def apply(): ClientRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientRequestOptions]
   }
   
-  @scala.inline
-  implicit class ClientRequestOptionsMutableBuilder[Self <: ClientRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientRequestOptions](x: Self) {
     
-    @scala.inline
-    def setJar(value: Boolean): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
+    inline def setJar(value: Boolean): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
+    inline def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
   }
 }

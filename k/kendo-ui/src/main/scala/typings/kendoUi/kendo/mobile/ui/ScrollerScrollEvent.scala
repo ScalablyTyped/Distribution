@@ -14,25 +14,19 @@ trait ScrollerScrollEvent
 }
 object ScrollerScrollEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Scroller): ScrollerScrollEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Scroller): ScrollerScrollEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollerScrollEvent]
   }
   
-  @scala.inline
-  implicit class ScrollerScrollEventMutableBuilder[Self <: ScrollerScrollEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollerScrollEvent](x: Self) {
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
   }
 }

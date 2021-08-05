@@ -10,16 +10,13 @@ trait IToastFailedEventArgs extends StObject {
 }
 object IToastFailedEventArgs {
   
-  @scala.inline
-  def apply(errorCode: Double): IToastFailedEventArgs = {
+  inline def apply(errorCode: Double): IToastFailedEventArgs = {
     val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToastFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class IToastFailedEventArgsMutableBuilder[Self <: IToastFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IToastFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
   }
 }

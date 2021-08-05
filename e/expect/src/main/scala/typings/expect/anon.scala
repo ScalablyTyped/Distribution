@@ -23,23 +23,18 @@ object anon {
   }
   object Actual {
     
-    @scala.inline
-    def apply(actual: String | Double, error: Error, expected: String): Actual = {
+    inline def apply(actual: String | Double, error: Error, expected: String): Actual = {
       val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any])
       __obj.asInstanceOf[Actual]
     }
     
-    @scala.inline
-    implicit class ActualMutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
+    extension [Self <: Actual](x: Self) {
       
-      @scala.inline
-      def setActual(value: String | Double): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: String | Double): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,112 +82,78 @@ object anon {
   }
   object PartialMatcherState {
     
-    @scala.inline
-    def apply(): PartialMatcherState = {
+    inline def apply(): PartialMatcherState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMatcherState]
     }
     
-    @scala.inline
-    implicit class PartialMatcherStateMutableBuilder[Self <: PartialMatcherState] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMatcherState](x: Self) {
       
-      @scala.inline
-      def setAssertionCalls(value: Double): Self = StObject.set(x, "assertionCalls", value.asInstanceOf[js.Any])
+      inline def setAssertionCalls(value: Double): Self = StObject.set(x, "assertionCalls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssertionCallsUndefined: Self = StObject.set(x, "assertionCalls", js.undefined)
+      inline def setAssertionCallsUndefined: Self = StObject.set(x, "assertionCalls", js.undefined)
       
-      @scala.inline
-      def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
+      inline def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTestNameUndefined: Self = StObject.set(x, "currentTestName", js.undefined)
+      inline def setCurrentTestNameUndefined: Self = StObject.set(x, "currentTestName", js.undefined)
       
-      @scala.inline
-      def setDontThrow(value: () => Unit): Self = StObject.set(x, "dontThrow", js.Any.fromFunction0(value))
+      inline def setDontThrow(value: () => Unit): Self = StObject.set(x, "dontThrow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDontThrowUndefined: Self = StObject.set(x, "dontThrow", js.undefined)
+      inline def setDontThrowUndefined: Self = StObject.set(x, "dontThrow", js.undefined)
       
-      @scala.inline
-      def setEquals_(
+      inline def setEquals_(
         value: (/* a */ js.Any, /* b */ js.Any, /* customTesters */ js.UndefOr[js.Array[Tester]], /* strictCheck */ js.UndefOr[Boolean]) => Boolean
       ): Self = StObject.set(x, "equals", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setExpectedAssertionsNumber(value: Double): Self = StObject.set(x, "expectedAssertionsNumber", value.asInstanceOf[js.Any])
+      inline def setExpectedAssertionsNumber(value: Double): Self = StObject.set(x, "expectedAssertionsNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedAssertionsNumberError(value: Error): Self = StObject.set(x, "expectedAssertionsNumberError", value.asInstanceOf[js.Any])
+      inline def setExpectedAssertionsNumberError(value: Error): Self = StObject.set(x, "expectedAssertionsNumberError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedAssertionsNumberErrorUndefined: Self = StObject.set(x, "expectedAssertionsNumberError", js.undefined)
+      inline def setExpectedAssertionsNumberErrorUndefined: Self = StObject.set(x, "expectedAssertionsNumberError", js.undefined)
       
-      @scala.inline
-      def setExpectedAssertionsNumberNull: Self = StObject.set(x, "expectedAssertionsNumber", null)
+      inline def setExpectedAssertionsNumberNull: Self = StObject.set(x, "expectedAssertionsNumber", null)
       
-      @scala.inline
-      def setExpectedAssertionsNumberUndefined: Self = StObject.set(x, "expectedAssertionsNumber", js.undefined)
+      inline def setExpectedAssertionsNumberUndefined: Self = StObject.set(x, "expectedAssertionsNumber", js.undefined)
       
-      @scala.inline
-      def setIsExpectingAssertions(value: Boolean): Self = StObject.set(x, "isExpectingAssertions", value.asInstanceOf[js.Any])
+      inline def setIsExpectingAssertions(value: Boolean): Self = StObject.set(x, "isExpectingAssertions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpectingAssertionsError(value: Error): Self = StObject.set(x, "isExpectingAssertionsError", value.asInstanceOf[js.Any])
+      inline def setIsExpectingAssertionsError(value: Error): Self = StObject.set(x, "isExpectingAssertionsError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpectingAssertionsErrorUndefined: Self = StObject.set(x, "isExpectingAssertionsError", js.undefined)
+      inline def setIsExpectingAssertionsErrorUndefined: Self = StObject.set(x, "isExpectingAssertionsError", js.undefined)
       
-      @scala.inline
-      def setIsExpectingAssertionsUndefined: Self = StObject.set(x, "isExpectingAssertions", js.undefined)
+      inline def setIsExpectingAssertionsUndefined: Self = StObject.set(x, "isExpectingAssertions", js.undefined)
       
-      @scala.inline
-      def setIsNot(value: Boolean): Self = StObject.set(x, "isNot", value.asInstanceOf[js.Any])
+      inline def setIsNot(value: Boolean): Self = StObject.set(x, "isNot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
+      inline def setIsNotUndefined: Self = StObject.set(x, "isNot", js.undefined)
       
-      @scala.inline
-      def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: String): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
-      @scala.inline
-      def setSuppressedErrors(value: js.Array[Error]): Self = StObject.set(x, "suppressedErrors", value.asInstanceOf[js.Any])
+      inline def setSuppressedErrors(value: js.Array[Error]): Self = StObject.set(x, "suppressedErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressedErrorsUndefined: Self = StObject.set(x, "suppressedErrors", js.undefined)
+      inline def setSuppressedErrorsUndefined: Self = StObject.set(x, "suppressedErrors", js.undefined)
       
-      @scala.inline
-      def setSuppressedErrorsVarargs(value: Error*): Self = StObject.set(x, "suppressedErrors", js.Array(value :_*))
+      inline def setSuppressedErrorsVarargs(value: Error*): Self = StObject.set(x, "suppressedErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setTestPath(value: Path): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
+      inline def setTestPath(value: Path): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestPathUndefined: Self = StObject.set(x, "testPath", js.undefined)
+      inline def setTestPathUndefined: Self = StObject.set(x, "testPath", js.undefined)
       
-      @scala.inline
-      def setUtils(value: readonlyprintExpectedvalu): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: readonlyprintExpectedvalu): Self = StObject.set(x, "utils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtilsUndefined: Self = StObject.set(x, "utils", js.undefined)
+      inline def setUtilsUndefined: Self = StObject.set(x, "utils", js.undefined)
     }
   }
   

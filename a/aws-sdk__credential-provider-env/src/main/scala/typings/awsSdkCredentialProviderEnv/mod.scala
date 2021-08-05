@@ -27,6 +27,5 @@ object mod {
   @js.native
   val ENV_SESSION: /* "AWS_SESSION_TOKEN" */ String = js.native
   
-  @scala.inline
-  def fromEnv(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[CredentialProvider]
+  inline def fromEnv(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[CredentialProvider]
 }

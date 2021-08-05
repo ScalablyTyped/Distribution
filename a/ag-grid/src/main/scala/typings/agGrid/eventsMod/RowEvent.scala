@@ -26,8 +26,7 @@ trait RowEvent
 }
 object RowEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     columnApi: ColumnApi,
     context: js.Any,
@@ -42,28 +41,20 @@ object RowEvent {
     __obj.asInstanceOf[RowEvent]
   }
   
-  @scala.inline
-  implicit class RowEventMutableBuilder[Self <: RowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RowEvent](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowPinned(value: String): Self = StObject.set(x, "rowPinned", value.asInstanceOf[js.Any])
+    inline def setRowPinned(value: String): Self = StObject.set(x, "rowPinned", value.asInstanceOf[js.Any])
   }
 }

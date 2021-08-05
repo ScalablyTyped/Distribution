@@ -62,8 +62,7 @@ trait GraphicsData extends StObject {
 }
 object GraphicsData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     fillStyle: FillStyle,
     holes: js.Array[GraphicsData],
@@ -78,37 +77,26 @@ object GraphicsData {
     __obj.asInstanceOf[GraphicsData]
   }
   
-  @scala.inline
-  implicit class GraphicsDataMutableBuilder[Self <: GraphicsData] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicsData](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFillStyle(value: FillStyle): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+    inline def setFillStyle(value: FillStyle): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoles(value: js.Array[GraphicsData]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
+    inline def setHoles(value: js.Array[GraphicsData]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHolesVarargs(value: GraphicsData*): Self = StObject.set(x, "holes", js.Array(value :_*))
+    inline def setHolesVarargs(value: GraphicsData*): Self = StObject.set(x, "holes", js.Array(value :_*))
     
-    @scala.inline
-    def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix(value: Matrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: Matrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setShape(value: Circle | Ellipse | Polygon | Rectangle | RoundedRectangle): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Circle | Ellipse | Polygon | Rectangle | RoundedRectangle): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

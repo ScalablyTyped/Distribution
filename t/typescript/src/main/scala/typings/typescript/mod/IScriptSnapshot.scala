@@ -31,8 +31,7 @@ trait IScriptSnapshot extends StObject {
 }
 object IScriptSnapshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getChangeRange: IScriptSnapshot => js.UndefOr[TextChangeRange],
     getLength: () => Double,
     getText: (Double, Double) => java.lang.String
@@ -41,22 +40,16 @@ object IScriptSnapshot {
     __obj.asInstanceOf[IScriptSnapshot]
   }
   
-  @scala.inline
-  implicit class IScriptSnapshotMutableBuilder[Self <: IScriptSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: IScriptSnapshot](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+    inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
-    @scala.inline
-    def setGetChangeRange(value: IScriptSnapshot => js.UndefOr[TextChangeRange]): Self = StObject.set(x, "getChangeRange", js.Any.fromFunction1(value))
+    inline def setGetChangeRange(value: IScriptSnapshot => js.UndefOr[TextChangeRange]): Self = StObject.set(x, "getChangeRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: (Double, Double) => java.lang.String): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
+    inline def setGetText(value: (Double, Double) => java.lang.String): Self = StObject.set(x, "getText", js.Any.fromFunction2(value))
   }
 }

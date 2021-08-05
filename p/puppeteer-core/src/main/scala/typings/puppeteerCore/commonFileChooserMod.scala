@@ -17,11 +17,11 @@ object commonFileChooserMod {
       */
     def this(element: ElementHandle[Element], event: FileChooserOpenedEvent) = this()
     
-    var _element: js.Any = js.native
+    /* private */ var _element: js.Any = js.native
     
-    var _handled: js.Any = js.native
+    /* private */ var _handled: js.Any = js.native
     
-    var _multiple: js.Any = js.native
+    /* private */ var _multiple: js.Any = js.native
     
     /**
       * Accept the file chooser request with given paths.

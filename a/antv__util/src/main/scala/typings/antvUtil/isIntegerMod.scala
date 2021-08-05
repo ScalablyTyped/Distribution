@@ -10,6 +10,5 @@ object isIntegerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

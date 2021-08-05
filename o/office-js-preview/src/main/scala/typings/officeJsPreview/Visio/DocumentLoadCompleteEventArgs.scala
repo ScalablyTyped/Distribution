@@ -22,16 +22,13 @@ trait DocumentLoadCompleteEventArgs extends StObject {
 }
 object DocumentLoadCompleteEventArgs {
   
-  @scala.inline
-  def apply(success: Boolean): DocumentLoadCompleteEventArgs = {
+  inline def apply(success: Boolean): DocumentLoadCompleteEventArgs = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentLoadCompleteEventArgs]
   }
   
-  @scala.inline
-  implicit class DocumentLoadCompleteEventArgsMutableBuilder[Self <: DocumentLoadCompleteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLoadCompleteEventArgs](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -81,115 +81,79 @@ trait IDragTracker
 }
 object IDragTracker {
   
-  @scala.inline
-  def apply(): IDragTracker = {
+  inline def apply(): IDragTracker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDragTracker]
   }
   
-  @scala.inline
-  implicit class IDragTrackerMutableBuilder[Self <: IDragTracker] (val x: Self) extends AnyVal {
+  extension [Self <: IDragTracker](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAutoStart(value: js.Any): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+    inline def setAutoStart(value: js.Any): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+    inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
     
-    @scala.inline
-    def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
+    inline def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
+    inline def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
-    @scala.inline
-    def setDelegate(value: String): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+    inline def setDelegate(value: String): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+    inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     
-    @scala.inline
-    def setDragTarget(value: HTMLElement): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
+    inline def setDragTarget(value: HTMLElement): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
+    inline def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
     
-    @scala.inline
-    def setGetDragTarget(value: () => IElement): Self = StObject.set(x, "getDragTarget", js.Any.fromFunction0(value))
+    inline def setGetDragTarget(value: () => IElement): Self = StObject.set(x, "getDragTarget", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDragTargetUndefined: Self = StObject.set(x, "getDragTarget", js.undefined)
+    inline def setGetDragTargetUndefined: Self = StObject.set(x, "getDragTarget", js.undefined)
     
-    @scala.inline
-    def setGetOffset(value: /* constrainMode */ js.UndefOr[String] => Array): Self = StObject.set(x, "getOffset", js.Any.fromFunction1(value))
+    inline def setGetOffset(value: /* constrainMode */ js.UndefOr[String] => Array): Self = StObject.set(x, "getOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOffsetUndefined: Self = StObject.set(x, "getOffset", js.undefined)
+    inline def setGetOffsetUndefined: Self = StObject.set(x, "getOffset", js.undefined)
     
-    @scala.inline
-    def setInitEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "initEl", js.Any.fromFunction1(value))
+    inline def setInitEl(value: /* el */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "initEl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitElUndefined: Self = StObject.set(x, "initEl", js.undefined)
+    inline def setInitElUndefined: Self = StObject.set(x, "initEl", js.undefined)
     
-    @scala.inline
-    def setOnBeforeStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
+    inline def setOnBeforeStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onBeforeStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
+    inline def setOnBeforeStartUndefined: Self = StObject.set(x, "onBeforeStart", js.undefined)
     
-    @scala.inline
-    def setOnDrag(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+    inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    @scala.inline
-    def setOnEnd(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+    inline def setOnEnd(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
-    @scala.inline
-    def setOnStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+    inline def setOnStart(value: /* e */ js.UndefOr[IEventObject] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     
-    @scala.inline
-    def setOverCls(value: String): Self = StObject.set(x, "overCls", value.asInstanceOf[js.Any])
+    inline def setOverCls(value: String): Self = StObject.set(x, "overCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverClsUndefined: Self = StObject.set(x, "overCls", js.undefined)
+    inline def setOverClsUndefined: Self = StObject.set(x, "overCls", js.undefined)
     
-    @scala.inline
-    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+    inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
-    @scala.inline
-    def setStopEvent(value: Boolean): Self = StObject.set(x, "stopEvent", value.asInstanceOf[js.Any])
+    inline def setStopEvent(value: Boolean): Self = StObject.set(x, "stopEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
+    inline def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
     
-    @scala.inline
-    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     
-    @scala.inline
-    def setTrackOver(value: Boolean): Self = StObject.set(x, "trackOver", value.asInstanceOf[js.Any])
+    inline def setTrackOver(value: Boolean): Self = StObject.set(x, "trackOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackOverUndefined: Self = StObject.set(x, "trackOver", js.undefined)
+    inline def setTrackOverUndefined: Self = StObject.set(x, "trackOver", js.undefined)
   }
 }

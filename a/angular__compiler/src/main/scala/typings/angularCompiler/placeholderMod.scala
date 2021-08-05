@@ -11,15 +11,15 @@ object placeholderMod {
   @js.native
   class PlaceholderRegistry () extends StObject {
     
-    var _generateUniqueName: js.Any = js.native
+    /* private */ var _generateUniqueName: js.Any = js.native
     
-    var _hashClosingTag: js.Any = js.native
+    /* private */ var _hashClosingTag: js.Any = js.native
     
-    var _hashTag: js.Any = js.native
+    /* private */ var _hashTag: js.Any = js.native
     
-    var _placeHolderNameCounts: js.Any = js.native
+    /* private */ var _placeHolderNameCounts: js.Any = js.native
     
-    var _signatureToName: js.Any = js.native
+    /* private */ var _signatureToName: js.Any = js.native
     
     def getCloseTagPlaceholderName(tag: String): String = js.native
     

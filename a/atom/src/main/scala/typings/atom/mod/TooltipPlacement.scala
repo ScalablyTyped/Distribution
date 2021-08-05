@@ -22,30 +22,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TooltipPlacement extends StObject
 object TooltipPlacement {
   
-  @scala.inline
-  def auto: typings.atom.atomStrings.auto = "auto".asInstanceOf[typings.atom.atomStrings.auto]
+  inline def auto: typings.atom.atomStrings.auto = "auto".asInstanceOf[typings.atom.atomStrings.auto]
   
-  @scala.inline
-  def `auto bottom`: typings.atom.atomStrings.`auto bottom` = ("auto bottom").asInstanceOf[typings.atom.atomStrings.`auto bottom`]
+  inline def `auto bottom`: typings.atom.atomStrings.`auto bottom` = ("auto bottom").asInstanceOf[typings.atom.atomStrings.`auto bottom`]
   
-  @scala.inline
-  def `auto left`: typings.atom.atomStrings.`auto left` = ("auto left").asInstanceOf[typings.atom.atomStrings.`auto left`]
+  inline def `auto left`: typings.atom.atomStrings.`auto left` = ("auto left").asInstanceOf[typings.atom.atomStrings.`auto left`]
   
-  @scala.inline
-  def `auto right`: typings.atom.atomStrings.`auto right` = ("auto right").asInstanceOf[typings.atom.atomStrings.`auto right`]
+  inline def `auto right`: typings.atom.atomStrings.`auto right` = ("auto right").asInstanceOf[typings.atom.atomStrings.`auto right`]
   
-  @scala.inline
-  def `auto top`: typings.atom.atomStrings.`auto top` = ("auto top").asInstanceOf[typings.atom.atomStrings.`auto top`]
+  inline def `auto top`: typings.atom.atomStrings.`auto top` = ("auto top").asInstanceOf[typings.atom.atomStrings.`auto top`]
   
-  @scala.inline
-  def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
+  inline def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
   
-  @scala.inline
-  def left: left_ = "left".asInstanceOf[left_]
+  inline def left: left_ = "left".asInstanceOf[left_]
   
-  @scala.inline
-  def right: right_ = "right".asInstanceOf[right_]
+  inline def right: right_ = "right".asInstanceOf[right_]
   
-  @scala.inline
-  def top: top_ = "top".asInstanceOf[top_]
+  inline def top: top_ = "top".asInstanceOf[top_]
 }

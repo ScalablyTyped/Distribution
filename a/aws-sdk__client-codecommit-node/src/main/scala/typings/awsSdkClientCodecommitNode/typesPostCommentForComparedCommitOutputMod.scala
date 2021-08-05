@@ -57,59 +57,42 @@ object typesPostCommentForComparedCommitOutputMod {
   }
   object PostCommentForComparedCommitOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PostCommentForComparedCommitOutput = {
+    inline def apply($metadata: ResponseMetadata): PostCommentForComparedCommitOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostCommentForComparedCommitOutput]
     }
     
-    @scala.inline
-    implicit class PostCommentForComparedCommitOutputMutableBuilder[Self <: PostCommentForComparedCommitOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PostCommentForComparedCommitOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterBlobId(value: String): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
+      inline def setAfterBlobId(value: String): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterBlobIdUndefined: Self = StObject.set(x, "afterBlobId", js.undefined)
+      inline def setAfterBlobIdUndefined: Self = StObject.set(x, "afterBlobId", js.undefined)
       
-      @scala.inline
-      def setAfterCommitId(value: String): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
+      inline def setAfterCommitId(value: String): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
+      inline def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
       
-      @scala.inline
-      def setBeforeBlobId(value: String): Self = StObject.set(x, "beforeBlobId", value.asInstanceOf[js.Any])
+      inline def setBeforeBlobId(value: String): Self = StObject.set(x, "beforeBlobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeBlobIdUndefined: Self = StObject.set(x, "beforeBlobId", js.undefined)
+      inline def setBeforeBlobIdUndefined: Self = StObject.set(x, "beforeBlobId", js.undefined)
       
-      @scala.inline
-      def setBeforeCommitId(value: String): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
+      inline def setBeforeCommitId(value: String): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
+      inline def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
       
-      @scala.inline
-      def setComment(value: UnmarshalledComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: UnmarshalledComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setLocation(value: UnmarshalledLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: UnmarshalledLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+      inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
     }
   }
 }

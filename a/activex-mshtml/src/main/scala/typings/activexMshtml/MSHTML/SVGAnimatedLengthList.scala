@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAnimatedLengthList extends StObject {
   
-  @JSName("MSHTML.SVGAnimatedLengthList_typekey")
+  /* private */ @JSName("MSHTML.SVGAnimatedLengthList_typekey")
   var MSHTMLDotSVGAnimatedLengthList_typekey: SVGAnimatedLengthList
   
   var animVal: SVGLengthList
@@ -15,8 +15,7 @@ trait SVGAnimatedLengthList extends StObject {
 }
 object SVGAnimatedLengthList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGAnimatedLengthList_typekey: SVGAnimatedLengthList,
     animVal: SVGLengthList,
     baseVal: SVGLengthList
@@ -26,16 +25,12 @@ object SVGAnimatedLengthList {
     __obj.asInstanceOf[SVGAnimatedLengthList]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedLengthListMutableBuilder[Self <: SVGAnimatedLengthList] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedLengthList](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: SVGLengthList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: SVGLengthList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: SVGLengthList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: SVGLengthList): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedLengthList_typekey(value: SVGAnimatedLengthList): Self = StObject.set(x, "MSHTML.SVGAnimatedLengthList_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGAnimatedLengthList_typekey(value: SVGAnimatedLengthList): Self = StObject.set(x, "MSHTML.SVGAnimatedLengthList_typekey", value.asInstanceOf[js.Any])
   }
 }

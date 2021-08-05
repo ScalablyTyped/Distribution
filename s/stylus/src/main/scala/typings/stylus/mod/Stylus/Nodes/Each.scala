@@ -19,8 +19,7 @@ trait Each
 }
 object Each {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     block: Block,
     coerce: Node => Node,
     column: Double,
@@ -44,19 +43,14 @@ object Each {
     __obj.asInstanceOf[Each]
   }
   
-  @scala.inline
-  implicit class EachMutableBuilder[Self <: Each] (val x: Self) extends AnyVal {
+  extension [Self <: Each](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: java.lang.String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: java.lang.String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

@@ -45,8 +45,7 @@ trait XStruct
 }
 object XStruct {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SQLTypeName: String,
     acquire: () => Unit,
     getAttributes: XNameAccess => SafeArray[js.Any],
@@ -58,16 +57,12 @@ object XStruct {
     __obj.asInstanceOf[XStruct]
   }
   
-  @scala.inline
-  implicit class XStructMutableBuilder[Self <: XStruct] (val x: Self) extends AnyVal {
+  extension [Self <: XStruct](x: Self) {
     
-    @scala.inline
-    def setGetAttributes(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction1(value))
+    inline def setGetAttributes(value: XNameAccess => SafeArray[js.Any]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
+    inline def setGetSQLTypeName(value: () => String): Self = StObject.set(x, "getSQLTypeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSQLTypeName(value: String): Self = StObject.set(x, "SQLTypeName", value.asInstanceOf[js.Any])
+    inline def setSQLTypeName(value: String): Self = StObject.set(x, "SQLTypeName", value.asInstanceOf[js.Any])
   }
 }

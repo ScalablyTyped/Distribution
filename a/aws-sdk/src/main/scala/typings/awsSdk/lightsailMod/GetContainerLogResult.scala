@@ -18,28 +18,21 @@ trait GetContainerLogResult extends StObject {
 }
 object GetContainerLogResult {
   
-  @scala.inline
-  def apply(): GetContainerLogResult = {
+  inline def apply(): GetContainerLogResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContainerLogResult]
   }
   
-  @scala.inline
-  implicit class GetContainerLogResultMutableBuilder[Self <: GetContainerLogResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerLogResult](x: Self) {
     
-    @scala.inline
-    def setLogEvents(value: ContainerServiceLogEventList): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
+    inline def setLogEvents(value: ContainerServiceLogEventList): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogEventsUndefined: Self = StObject.set(x, "logEvents", js.undefined)
+    inline def setLogEventsUndefined: Self = StObject.set(x, "logEvents", js.undefined)
     
-    @scala.inline
-    def setLogEventsVarargs(value: ContainerServiceLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
+    inline def setLogEventsVarargs(value: ContainerServiceLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

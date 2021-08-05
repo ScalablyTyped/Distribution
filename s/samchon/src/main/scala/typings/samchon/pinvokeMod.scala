@@ -36,7 +36,7 @@ object pinvokeMod {
     /**
       * @hidden
       */
-    var history_ : js.Any = js.native
+    /* private */ var history_ : js.Any = js.native
     
     /**
       * Hold reporting completion to master.
@@ -46,7 +46,7 @@ object pinvokeMod {
     /**
       * @hidden
       */
-    var hold_ : js.Any = js.native
+    /* private */ var hold_ : js.Any = js.native
     
     /**
       * Is the reporting hold?
@@ -56,6 +56,6 @@ object pinvokeMod {
     /**
       * @hidden
       */
-    var slave_system_ : js.Any = js.native
+    /* private */ var slave_system_ : js.Any = js.native
   }
 }

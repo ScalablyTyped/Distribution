@@ -38,8 +38,7 @@ trait ImportWorkspaceImageRequest extends StObject {
 }
 object ImportWorkspaceImageRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Ec2ImageId: Ec2ImageId,
     ImageDescription: WorkspaceImageDescription,
     ImageName: WorkspaceImageName,
@@ -49,37 +48,26 @@ object ImportWorkspaceImageRequest {
     __obj.asInstanceOf[ImportWorkspaceImageRequest]
   }
   
-  @scala.inline
-  implicit class ImportWorkspaceImageRequestMutableBuilder[Self <: ImportWorkspaceImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportWorkspaceImageRequest](x: Self) {
     
-    @scala.inline
-    def setApplications(value: ApplicationList): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: ApplicationList): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
+    inline def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
-    @scala.inline
-    def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
+    inline def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
     
-    @scala.inline
-    def setEc2ImageId(value: Ec2ImageId): Self = StObject.set(x, "Ec2ImageId", value.asInstanceOf[js.Any])
+    inline def setEc2ImageId(value: Ec2ImageId): Self = StObject.set(x, "Ec2ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDescription(value: WorkspaceImageDescription): Self = StObject.set(x, "ImageDescription", value.asInstanceOf[js.Any])
+    inline def setImageDescription(value: WorkspaceImageDescription): Self = StObject.set(x, "ImageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageName(value: WorkspaceImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
+    inline def setImageName(value: WorkspaceImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestionProcess(value: WorkspaceImageIngestionProcess): Self = StObject.set(x, "IngestionProcess", value.asInstanceOf[js.Any])
+    inline def setIngestionProcess(value: WorkspaceImageIngestionProcess): Self = StObject.set(x, "IngestionProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

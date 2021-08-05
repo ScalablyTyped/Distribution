@@ -21,25 +21,19 @@ trait ResourceReference extends StObject {
 }
 object ResourceReference {
   
-  @scala.inline
-  def apply(): ResourceReference = {
+  inline def apply(): ResourceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceReference]
   }
   
-  @scala.inline
-  implicit class ResourceReferenceMutableBuilder[Self <: ResourceReference] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceReference](x: Self) {
     
-    @scala.inline
-    def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
+    inline def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildTypeUndefined: Self = StObject.set(x, "childType", js.undefined)
+    inline def setChildTypeUndefined: Self = StObject.set(x, "childType", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

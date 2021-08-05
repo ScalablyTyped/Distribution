@@ -45,37 +45,27 @@ trait ImagePropsAndroid extends StObject {
 }
 object ImagePropsAndroid {
   
-  @scala.inline
-  def apply(): ImagePropsAndroid = {
+  inline def apply(): ImagePropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePropsAndroid]
   }
   
-  @scala.inline
-  implicit class ImagePropsAndroidMutableBuilder[Self <: ImagePropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePropsAndroid](x: Self) {
     
-    @scala.inline
-    def setFadeDuration(value: Double): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
+    inline def setFadeDuration(value: Double): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
+    inline def setFadeDurationUndefined: Self = StObject.set(x, "fadeDuration", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setResizeMethod(value: auto | resize | scale): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
+    inline def setResizeMethod(value: auto | resize | scale): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
+    inline def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

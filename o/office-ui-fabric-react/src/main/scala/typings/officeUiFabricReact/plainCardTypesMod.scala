@@ -24,22 +24,18 @@ object plainCardTypesMod {
   }
   object IPlainCardProps {
     
-    @scala.inline
-    def apply(): IPlainCardProps = {
+    inline def apply(): IPlainCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPlainCardProps]
     }
     
-    @scala.inline
-    implicit class IPlainCardPropsMutableBuilder[Self <: IPlainCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPlainCardProps](x: Self) {
       
-      @scala.inline
-      def setOnRenderPlainCard(
+      inline def setOnRenderPlainCard(
         value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderPlainCard", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderPlainCardUndefined: Self = StObject.set(x, "onRenderPlainCard", js.undefined)
+      inline def setOnRenderPlainCardUndefined: Self = StObject.set(x, "onRenderPlainCard", js.undefined)
     }
   }
   

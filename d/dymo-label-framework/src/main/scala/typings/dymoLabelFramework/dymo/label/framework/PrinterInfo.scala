@@ -29,8 +29,7 @@ trait PrinterInfo extends StObject {
 }
 object PrinterInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isAutoCutSupported: Boolean,
     isConnected: Boolean,
     isLocal: Boolean,
@@ -43,28 +42,20 @@ object PrinterInfo {
     __obj.asInstanceOf[PrinterInfo]
   }
   
-  @scala.inline
-  implicit class PrinterInfoMutableBuilder[Self <: PrinterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PrinterInfo](x: Self) {
     
-    @scala.inline
-    def setIsAutoCutSupported(value: Boolean): Self = StObject.set(x, "isAutoCutSupported", value.asInstanceOf[js.Any])
+    inline def setIsAutoCutSupported(value: Boolean): Self = StObject.set(x, "isAutoCutSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
+    inline def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTwinTurbo(value: Boolean): Self = StObject.set(x, "isTwinTurbo", value.asInstanceOf[js.Any])
+    inline def setIsTwinTurbo(value: Boolean): Self = StObject.set(x, "isTwinTurbo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrinterType(value: String): Self = StObject.set(x, "printerType", value.asInstanceOf[js.Any])
+    inline def setPrinterType(value: String): Self = StObject.set(x, "printerType", value.asInstanceOf[js.Any])
   }
 }

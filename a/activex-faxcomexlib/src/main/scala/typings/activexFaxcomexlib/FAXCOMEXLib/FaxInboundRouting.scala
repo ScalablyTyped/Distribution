@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxInboundRouting Class */
 trait FaxInboundRouting extends StObject {
   
-  @JSName("FAXCOMEXLib.FaxInboundRouting_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxInboundRouting_typekey")
   var FAXCOMEXLibDotFaxInboundRouting_typekey: FaxInboundRouting
   
   /** Registered inbound routing extensions collection */
@@ -18,8 +18,7 @@ trait FaxInboundRouting extends StObject {
 }
 object FaxInboundRouting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FAXCOMEXLibDotFaxInboundRouting_typekey: FaxInboundRouting,
     GetExtensions: () => FaxInboundRoutingExtensions,
     GetMethods: () => FaxInboundRoutingMethods
@@ -29,16 +28,12 @@ object FaxInboundRouting {
     __obj.asInstanceOf[FaxInboundRouting]
   }
   
-  @scala.inline
-  implicit class FaxInboundRoutingMutableBuilder[Self <: FaxInboundRouting] (val x: Self) extends AnyVal {
+  extension [Self <: FaxInboundRouting](x: Self) {
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxInboundRouting_typekey(value: FaxInboundRouting): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRouting_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxInboundRouting_typekey(value: FaxInboundRouting): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRouting_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExtensions(value: () => FaxInboundRoutingExtensions): Self = StObject.set(x, "GetExtensions", js.Any.fromFunction0(value))
+    inline def setGetExtensions(value: () => FaxInboundRoutingExtensions): Self = StObject.set(x, "GetExtensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMethods(value: () => FaxInboundRoutingMethods): Self = StObject.set(x, "GetMethods", js.Any.fromFunction0(value))
+    inline def setGetMethods(value: () => FaxInboundRoutingMethods): Self = StObject.set(x, "GetMethods", js.Any.fromFunction0(value))
   }
 }

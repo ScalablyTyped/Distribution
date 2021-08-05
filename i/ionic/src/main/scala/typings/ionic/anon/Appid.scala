@@ -20,8 +20,7 @@ trait Appid extends StObject {
 }
 object Appid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `app-id`: String,
     `channel-name`: String,
     `max-store`: String,
@@ -39,25 +38,18 @@ object Appid {
     __obj.asInstanceOf[Appid]
   }
   
-  @scala.inline
-  implicit class AppidMutableBuilder[Self <: Appid] (val x: Self) extends AnyVal {
+  extension [Self <: Appid](x: Self) {
     
-    @scala.inline
-    def `setApp-id`(value: String): Self = StObject.set(x, "app-id", value.asInstanceOf[js.Any])
+    inline def `setApp-id`(value: String): Self = StObject.set(x, "app-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setChannel-name`(value: String): Self = StObject.set(x, "channel-name", value.asInstanceOf[js.Any])
+    inline def `setChannel-name`(value: String): Self = StObject.set(x, "channel-name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-store`(value: String): Self = StObject.set(x, "max-store", value.asInstanceOf[js.Any])
+    inline def `setMax-store`(value: String): Self = StObject.set(x, "max-store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMin-background-duration`(value: String): Self = StObject.set(x, "min-background-duration", value.asInstanceOf[js.Any])
+    inline def `setMin-background-duration`(value: String): Self = StObject.set(x, "min-background-duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUpdate-api`(value: String): Self = StObject.set(x, "update-api", value.asInstanceOf[js.Any])
+    inline def `setUpdate-api`(value: String): Self = StObject.set(x, "update-api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUpdate-method`(value: String): Self = StObject.set(x, "update-method", value.asInstanceOf[js.Any])
+    inline def `setUpdate-method`(value: String): Self = StObject.set(x, "update-method", value.asInstanceOf[js.Any])
   }
 }

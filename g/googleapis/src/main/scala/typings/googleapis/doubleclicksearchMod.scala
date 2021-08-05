@@ -40,8 +40,7 @@ object doubleclicksearchMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Doubleclicksearch
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object doubleclicksearchMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object doubleclicksearchMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def doubleclicksearch(options: Options): Doubleclicksearch = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleclicksearch")(options.asInstanceOf[js.Any]).asInstanceOf[Doubleclicksearch]
+  inline def doubleclicksearch(options: Options): Doubleclicksearch = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleclicksearch")(options.asInstanceOf[js.Any]).asInstanceOf[Doubleclicksearch]
   
-  @scala.inline
-  def doubleclicksearch_v2(version: v2): Doubleclicksearch = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleclicksearch")(version.asInstanceOf[js.Any]).asInstanceOf[Doubleclicksearch]
+  inline def doubleclicksearch_v2(version: v2): Doubleclicksearch = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleclicksearch")(version.asInstanceOf[js.Any]).asInstanceOf[Doubleclicksearch]
 }

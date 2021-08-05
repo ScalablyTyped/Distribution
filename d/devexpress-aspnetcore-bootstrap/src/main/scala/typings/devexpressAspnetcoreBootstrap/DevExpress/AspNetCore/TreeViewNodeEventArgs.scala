@@ -12,16 +12,13 @@ trait TreeViewNodeEventArgs
 }
 object TreeViewNodeEventArgs {
   
-  @scala.inline
-  def apply(node: BootstrapTreeViewNode, sender: Control): TreeViewNodeEventArgs = {
+  inline def apply(node: BootstrapTreeViewNode, sender: Control): TreeViewNodeEventArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewNodeEventArgs]
   }
   
-  @scala.inline
-  implicit class TreeViewNodeEventArgsMutableBuilder[Self <: TreeViewNodeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewNodeEventArgs](x: Self) {
     
-    @scala.inline
-    def setNode(value: BootstrapTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: BootstrapTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

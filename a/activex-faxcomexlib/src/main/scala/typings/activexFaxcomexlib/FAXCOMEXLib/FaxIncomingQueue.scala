@@ -10,7 +10,7 @@ trait FaxIncomingQueue extends StObject {
   /** Is queue blocked */
   var Blocked: Boolean
   
-  @JSName("FAXCOMEXLib.FaxIncomingQueue_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxIncomingQueue_typekey")
   var FAXCOMEXLibDotFaxIncomingQueue_typekey: FaxIncomingQueue
   
   /** Get incoming job by ID */
@@ -27,8 +27,7 @@ trait FaxIncomingQueue extends StObject {
 }
 object FaxIncomingQueue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Blocked: Boolean,
     FAXCOMEXLibDotFaxIncomingQueue_typekey: FaxIncomingQueue,
     GetJob: String => FaxIncomingJob,
@@ -41,25 +40,18 @@ object FaxIncomingQueue {
     __obj.asInstanceOf[FaxIncomingQueue]
   }
   
-  @scala.inline
-  implicit class FaxIncomingQueueMutableBuilder[Self <: FaxIncomingQueue] (val x: Self) extends AnyVal {
+  extension [Self <: FaxIncomingQueue](x: Self) {
     
-    @scala.inline
-    def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxIncomingQueue_typekey(value: FaxIncomingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxIncomingQueue_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxIncomingQueue_typekey(value: FaxIncomingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxIncomingQueue_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetJob(value: String => FaxIncomingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
+    inline def setGetJob(value: String => FaxIncomingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetJobs(value: () => FaxIncomingJobs): Self = StObject.set(x, "GetJobs", js.Any.fromFunction0(value))
+    inline def setGetJobs(value: () => FaxIncomingJobs): Self = StObject.set(x, "GetJobs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
   }
 }

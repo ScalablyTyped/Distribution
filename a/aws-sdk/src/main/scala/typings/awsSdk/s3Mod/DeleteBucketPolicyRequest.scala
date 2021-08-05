@@ -18,22 +18,17 @@ trait DeleteBucketPolicyRequest extends StObject {
 }
 object DeleteBucketPolicyRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName): DeleteBucketPolicyRequest = {
+  inline def apply(Bucket: BucketName): DeleteBucketPolicyRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBucketPolicyRequestMutableBuilder[Self <: DeleteBucketPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBucketPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
   }
 }

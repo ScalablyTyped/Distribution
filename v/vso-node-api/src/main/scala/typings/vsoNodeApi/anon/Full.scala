@@ -16,8 +16,7 @@ trait Full extends StObject {
 }
 object Full {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     full: scala.Double,
     none: scala.Double,
     oneLevel: scala.Double,
@@ -27,19 +26,14 @@ object Full {
     __obj.asInstanceOf[Full]
   }
   
-  @scala.inline
-  implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
+  extension [Self <: Full](x: Self) {
     
-    @scala.inline
-    def setFull(value: scala.Double): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: scala.Double): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneLevel(value: scala.Double): Self = StObject.set(x, "oneLevel", value.asInstanceOf[js.Any])
+    inline def setOneLevel(value: scala.Double): Self = StObject.set(x, "oneLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneLevelPlusNestedEmptyFolders(value: scala.Double): Self = StObject.set(x, "oneLevelPlusNestedEmptyFolders", value.asInstanceOf[js.Any])
+    inline def setOneLevelPlusNestedEmptyFolders(value: scala.Double): Self = StObject.set(x, "oneLevelPlusNestedEmptyFolders", value.asInstanceOf[js.Any])
   }
 }

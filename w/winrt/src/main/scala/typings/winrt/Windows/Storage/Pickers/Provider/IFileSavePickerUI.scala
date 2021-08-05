@@ -23,8 +23,7 @@ trait IFileSavePickerUI extends StObject {
 }
 object IFileSavePickerUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedFileTypes: IVectorView[String],
     fileName: String,
     onfilenamechanged: js.Any,
@@ -37,28 +36,20 @@ object IFileSavePickerUI {
     __obj.asInstanceOf[IFileSavePickerUI]
   }
   
-  @scala.inline
-  implicit class IFileSavePickerUIMutableBuilder[Self <: IFileSavePickerUI] (val x: Self) extends AnyVal {
+  extension [Self <: IFileSavePickerUI](x: Self) {
     
-    @scala.inline
-    def setAllowedFileTypes(value: IVectorView[String]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
+    inline def setAllowedFileTypes(value: IVectorView[String]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnfilenamechanged(value: js.Any): Self = StObject.set(x, "onfilenamechanged", value.asInstanceOf[js.Any])
+    inline def setOnfilenamechanged(value: js.Any): Self = StObject.set(x, "onfilenamechanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOntargetfilerequested(value: js.Any): Self = StObject.set(x, "ontargetfilerequested", value.asInstanceOf[js.Any])
+    inline def setOntargetfilerequested(value: js.Any): Self = StObject.set(x, "ontargetfilerequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
+    inline def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrySetFileName(value: String => SetFileNameResult): Self = StObject.set(x, "trySetFileName", js.Any.fromFunction1(value))
+    inline def setTrySetFileName(value: String => SetFileNameResult): Self = StObject.set(x, "trySetFileName", js.Any.fromFunction1(value))
   }
 }

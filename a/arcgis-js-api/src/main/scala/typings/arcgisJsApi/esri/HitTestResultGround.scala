@@ -26,8 +26,7 @@ trait HitTestResultGround
 }
 object HitTestResultGround {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     distance: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object HitTestResultGround {
     __obj.asInstanceOf[HitTestResultGround]
   }
   
-  @scala.inline
-  implicit class HitTestResultGroundMutableBuilder[Self <: HitTestResultGround] (val x: Self) extends AnyVal {
+  extension [Self <: HitTestResultGround](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
+    inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
   }
 }

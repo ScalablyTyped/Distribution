@@ -12,8 +12,7 @@ trait ExclusiveGateway
 }
 object ExclusiveGateway {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -30,10 +29,8 @@ object ExclusiveGateway {
     __obj.asInstanceOf[ExclusiveGateway]
   }
   
-  @scala.inline
-  implicit class ExclusiveGatewayMutableBuilder[Self <: ExclusiveGateway] (val x: Self) extends AnyVal {
+  extension [Self <: ExclusiveGateway](x: Self) {
     
-    @scala.inline
-    def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

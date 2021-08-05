@@ -11,72 +11,61 @@ object httpBasicStrings {
   sealed trait CONNECT
     extends StObject
        with HttpVerb
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
+  inline def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
   sealed trait DELETE
     extends StObject
        with HttpVerb
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
   sealed trait GET
     extends StObject
        with HttpVerb
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait HEAD
     extends StObject
        with HttpVerb
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
   sealed trait OPTIONS
     extends StObject
        with HttpVerb
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
   sealed trait PATCH
     extends StObject
        with HttpVerb
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
   sealed trait POST
     extends StObject
        with HttpVerb
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
   sealed trait PUT
     extends StObject
        with HttpVerb
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
   sealed trait TRACE
     extends StObject
        with HttpVerb
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait memory extends StObject
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  inline def memory: memory = "memory".asInstanceOf[memory]
 }

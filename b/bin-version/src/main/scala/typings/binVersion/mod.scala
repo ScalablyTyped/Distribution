@@ -27,10 +27,8 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply(binary: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(binary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def apply(binary: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(binary.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(binary: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(binary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(binary: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(binary.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("bin-version", JSImport.Namespace)
   @js.native
@@ -46,23 +44,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     }
   }
 }

@@ -10,16 +10,13 @@ trait EnumValuesPartiallySucceeded extends StObject {
 }
 object EnumValuesPartiallySucceeded {
   
-  @scala.inline
-  def apply(enumValues: PartiallySucceeded): EnumValuesPartiallySucceeded = {
+  inline def apply(enumValues: PartiallySucceeded): EnumValuesPartiallySucceeded = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesPartiallySucceeded]
   }
   
-  @scala.inline
-  implicit class EnumValuesPartiallySucceededMutableBuilder[Self <: EnumValuesPartiallySucceeded] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesPartiallySucceeded](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: PartiallySucceeded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: PartiallySucceeded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

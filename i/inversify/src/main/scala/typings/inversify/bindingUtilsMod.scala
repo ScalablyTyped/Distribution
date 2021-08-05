@@ -13,8 +13,7 @@ object bindingUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def multiBindToService(container: Container): js.Function1[
+  inline def multiBindToService(container: Container): js.Function1[
     /* service */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], 
     js.Function1[/* repeated */ String | js.Symbol | Newable[js.Any] | Abstract[js.Any], Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiBindToService")(container.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

@@ -21,43 +21,31 @@ trait ChildTileMask extends StObject {
 }
 object ChildTileMask {
   
-  @scala.inline
-  def apply(buffer: ArrayBuffer, negativeAltitudeExponentBias: Double, negativeElevationThreshold: Double): ChildTileMask = {
+  inline def apply(buffer: ArrayBuffer, negativeAltitudeExponentBias: Double, negativeElevationThreshold: Double): ChildTileMask = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], negativeAltitudeExponentBias = negativeAltitudeExponentBias.asInstanceOf[js.Any], negativeElevationThreshold = negativeElevationThreshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildTileMask]
   }
   
-  @scala.inline
-  implicit class ChildTileMaskMutableBuilder[Self <: ChildTileMask] (val x: Self) extends AnyVal {
+  extension [Self <: ChildTileMask](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildTileMask(value: Double): Self = StObject.set(x, "childTileMask", value.asInstanceOf[js.Any])
+    inline def setChildTileMask(value: Double): Self = StObject.set(x, "childTileMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildTileMaskUndefined: Self = StObject.set(x, "childTileMask", js.undefined)
+    inline def setChildTileMaskUndefined: Self = StObject.set(x, "childTileMask", js.undefined)
     
-    @scala.inline
-    def setCreatedByUpsampling(value: Boolean): Self = StObject.set(x, "createdByUpsampling", value.asInstanceOf[js.Any])
+    inline def setCreatedByUpsampling(value: Boolean): Self = StObject.set(x, "createdByUpsampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
+    inline def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
     
-    @scala.inline
-    def setCredits(value: js.Array[typings.cesium.mod.Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
+    inline def setCredits(value: js.Array[typings.cesium.mod.Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
+    inline def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
     
-    @scala.inline
-    def setCreditsVarargs(value: typings.cesium.mod.Credit*): Self = StObject.set(x, "credits", js.Array(value :_*))
+    inline def setCreditsVarargs(value: typings.cesium.mod.Credit*): Self = StObject.set(x, "credits", js.Array(value :_*))
     
-    @scala.inline
-    def setNegativeAltitudeExponentBias(value: Double): Self = StObject.set(x, "negativeAltitudeExponentBias", value.asInstanceOf[js.Any])
+    inline def setNegativeAltitudeExponentBias(value: Double): Self = StObject.set(x, "negativeAltitudeExponentBias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeElevationThreshold(value: Double): Self = StObject.set(x, "negativeElevationThreshold", value.asInstanceOf[js.Any])
+    inline def setNegativeElevationThreshold(value: Double): Self = StObject.set(x, "negativeElevationThreshold", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteServerCertificateRequest extends StObject {
 }
 object DeleteServerCertificateRequest {
   
-  @scala.inline
-  def apply(ServerCertificateName: serverCertificateNameType): DeleteServerCertificateRequest = {
+  inline def apply(ServerCertificateName: serverCertificateNameType): DeleteServerCertificateRequest = {
     val __obj = js.Dynamic.literal(ServerCertificateName = ServerCertificateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteServerCertificateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteServerCertificateRequestMutableBuilder[Self <: DeleteServerCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteServerCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
+    inline def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
   }
 }

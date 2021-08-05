@@ -10,16 +10,13 @@ trait OrganizationsResource extends StObject {
 }
 object OrganizationsResource {
   
-  @scala.inline
-  def apply(locations: LocationsResource): OrganizationsResource = {
+  inline def apply(locations: LocationsResource): OrganizationsResource = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationsResource]
   }
   
-  @scala.inline
-  implicit class OrganizationsResourceMutableBuilder[Self <: OrganizationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationsResource](x: Self) {
     
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
   }
 }

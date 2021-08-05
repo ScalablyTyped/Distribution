@@ -47,18 +47,18 @@ object tooltipReferenceMod {
     extends StObject
        with ITooltipReference {
     
-    @JSName("_$reference")
+    /* private */ @JSName("_$reference")
     var _$reference: js.Any = js.native
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _eventListeners: js.Any = js.native
+    /* private */ var _eventListeners: js.Any = js.native
     
-    var _isDisabled: js.Any = js.native
+    /* private */ var _isDisabled: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: js.Any = js.native
     
     @JSName("isDisabled")
     def isDisabled_MTooltipReference: Boolean = js.native

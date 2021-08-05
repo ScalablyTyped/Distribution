@@ -10,16 +10,13 @@ trait HandleFocusOutside extends StObject {
 }
 object HandleFocusOutside {
   
-  @scala.inline
-  def apply(handleFocusOutside: () => Unit): HandleFocusOutside = {
+  inline def apply(handleFocusOutside: () => Unit): HandleFocusOutside = {
     val __obj = js.Dynamic.literal(handleFocusOutside = js.Any.fromFunction0(handleFocusOutside))
     __obj.asInstanceOf[HandleFocusOutside]
   }
   
-  @scala.inline
-  implicit class HandleFocusOutsideMutableBuilder[Self <: HandleFocusOutside] (val x: Self) extends AnyVal {
+  extension [Self <: HandleFocusOutside](x: Self) {
     
-    @scala.inline
-    def setHandleFocusOutside(value: () => Unit): Self = StObject.set(x, "handleFocusOutside", js.Any.fromFunction0(value))
+    inline def setHandleFocusOutside(value: () => Unit): Self = StObject.set(x, "handleFocusOutside", js.Any.fromFunction0(value))
   }
 }

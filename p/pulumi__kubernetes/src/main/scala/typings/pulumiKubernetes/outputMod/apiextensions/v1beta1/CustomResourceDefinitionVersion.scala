@@ -51,8 +51,7 @@ trait CustomResourceDefinitionVersion extends StObject {
 }
 object CustomResourceDefinitionVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additionalPrinterColumns: js.Array[CustomResourceColumnDefinition],
     deprecated: Boolean,
     deprecationWarning: String,
@@ -66,34 +65,24 @@ object CustomResourceDefinitionVersion {
     __obj.asInstanceOf[CustomResourceDefinitionVersion]
   }
   
-  @scala.inline
-  implicit class CustomResourceDefinitionVersionMutableBuilder[Self <: CustomResourceDefinitionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceDefinitionVersion](x: Self) {
     
-    @scala.inline
-    def setAdditionalPrinterColumns(value: js.Array[CustomResourceColumnDefinition]): Self = StObject.set(x, "additionalPrinterColumns", value.asInstanceOf[js.Any])
+    inline def setAdditionalPrinterColumns(value: js.Array[CustomResourceColumnDefinition]): Self = StObject.set(x, "additionalPrinterColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalPrinterColumnsVarargs(value: CustomResourceColumnDefinition*): Self = StObject.set(x, "additionalPrinterColumns", js.Array(value :_*))
+    inline def setAdditionalPrinterColumnsVarargs(value: CustomResourceColumnDefinition*): Self = StObject.set(x, "additionalPrinterColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationWarning(value: String): Self = StObject.set(x, "deprecationWarning", value.asInstanceOf[js.Any])
+    inline def setDeprecationWarning(value: String): Self = StObject.set(x, "deprecationWarning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: CustomResourceValidation): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: CustomResourceValidation): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServed(value: Boolean): Self = StObject.set(x, "served", value.asInstanceOf[js.Any])
+    inline def setServed(value: Boolean): Self = StObject.set(x, "served", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: Boolean): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: Boolean): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubresources(value: CustomResourceSubresources): Self = StObject.set(x, "subresources", value.asInstanceOf[js.Any])
+    inline def setSubresources(value: CustomResourceSubresources): Self = StObject.set(x, "subresources", value.asInstanceOf[js.Any])
   }
 }

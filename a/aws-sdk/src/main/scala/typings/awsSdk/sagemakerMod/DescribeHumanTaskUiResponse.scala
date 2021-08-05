@@ -30,8 +30,7 @@ trait DescribeHumanTaskUiResponse extends StObject {
 }
 object DescribeHumanTaskUiResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: Timestamp,
     HumanTaskUiArn: HumanTaskUiArn,
     HumanTaskUiName: HumanTaskUiName,
@@ -41,25 +40,18 @@ object DescribeHumanTaskUiResponse {
     __obj.asInstanceOf[DescribeHumanTaskUiResponse]
   }
   
-  @scala.inline
-  implicit class DescribeHumanTaskUiResponseMutableBuilder[Self <: DescribeHumanTaskUiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHumanTaskUiResponse](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanTaskUiName(value: HumanTaskUiName): Self = StObject.set(x, "HumanTaskUiName", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiName(value: HumanTaskUiName): Self = StObject.set(x, "HumanTaskUiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanTaskUiStatus(value: HumanTaskUiStatus): Self = StObject.set(x, "HumanTaskUiStatus", value.asInstanceOf[js.Any])
+    inline def setHumanTaskUiStatus(value: HumanTaskUiStatus): Self = StObject.set(x, "HumanTaskUiStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanTaskUiStatusUndefined: Self = StObject.set(x, "HumanTaskUiStatus", js.undefined)
+    inline def setHumanTaskUiStatusUndefined: Self = StObject.set(x, "HumanTaskUiStatus", js.undefined)
     
-    @scala.inline
-    def setUiTemplate(value: UiTemplateInfo): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
+    inline def setUiTemplate(value: UiTemplateInfo): Self = StObject.set(x, "UiTemplate", value.asInstanceOf[js.Any])
   }
 }

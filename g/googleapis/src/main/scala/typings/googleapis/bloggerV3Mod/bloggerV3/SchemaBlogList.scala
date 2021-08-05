@@ -23,37 +23,27 @@ trait SchemaBlogList extends StObject {
 }
 object SchemaBlogList {
   
-  @scala.inline
-  def apply(): SchemaBlogList = {
+  inline def apply(): SchemaBlogList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBlogList]
   }
   
-  @scala.inline
-  implicit class SchemaBlogListMutableBuilder[Self <: SchemaBlogList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBlogList](x: Self) {
     
-    @scala.inline
-    def setBlogUserInfos(value: js.Array[SchemaBlogUserInfo]): Self = StObject.set(x, "blogUserInfos", value.asInstanceOf[js.Any])
+    inline def setBlogUserInfos(value: js.Array[SchemaBlogUserInfo]): Self = StObject.set(x, "blogUserInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogUserInfosUndefined: Self = StObject.set(x, "blogUserInfos", js.undefined)
+    inline def setBlogUserInfosUndefined: Self = StObject.set(x, "blogUserInfos", js.undefined)
     
-    @scala.inline
-    def setBlogUserInfosVarargs(value: SchemaBlogUserInfo*): Self = StObject.set(x, "blogUserInfos", js.Array(value :_*))
+    inline def setBlogUserInfosVarargs(value: SchemaBlogUserInfo*): Self = StObject.set(x, "blogUserInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaBlog]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaBlog]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaBlog*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaBlog*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

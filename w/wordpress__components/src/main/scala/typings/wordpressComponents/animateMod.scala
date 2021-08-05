@@ -41,24 +41,19 @@ object animateMod {
     }
     object AppearProps {
       
-      @scala.inline
-      def apply(children: ClassName => ReactNode): AppearProps = {
+      inline def apply(children: ClassName => ReactNode): AppearProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
         __obj.updateDynamic("type")("appear")
         __obj.asInstanceOf[AppearProps]
       }
       
-      @scala.inline
-      implicit class AppearPropsMutableBuilder[Self <: AppearProps] (val x: Self) extends AnyVal {
+      extension [Self <: AppearProps](x: Self) {
         
-        @scala.inline
-        def setOptions(value: Origin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: Origin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        @scala.inline
-        def setType(value: appear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: appear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -70,21 +65,17 @@ object animateMod {
     }
     object BaseProps {
       
-      @scala.inline
-      def apply(children: ClassName => ReactNode, `type`: appear | `slide-in`): BaseProps = {
+      inline def apply(children: ClassName => ReactNode, `type`: appear | `slide-in`): BaseProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseProps]
       }
       
-      @scala.inline
-      implicit class BasePropsMutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
+      extension [Self <: BaseProps](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ClassName => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+        inline def setChildren(value: ClassName => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setType(value: appear | `slide-in`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: appear | `slide-in`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -95,15 +86,13 @@ object animateMod {
     trait Props extends StObject
     object Props {
       
-      @scala.inline
-      def AppearProps(children: ClassName => ReactNode): typings.wordpressComponents.animateMod.Animate.AppearProps = {
+      inline def AppearProps(children: ClassName => ReactNode): typings.wordpressComponents.animateMod.Animate.AppearProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
         __obj.updateDynamic("type")("appear")
         __obj.asInstanceOf[typings.wordpressComponents.animateMod.Animate.AppearProps]
       }
       
-      @scala.inline
-      def SlideInProps(children: ClassName => ReactNode): typings.wordpressComponents.animateMod.Animate.SlideInProps = {
+      inline def SlideInProps(children: ClassName => ReactNode): typings.wordpressComponents.animateMod.Animate.SlideInProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
         __obj.updateDynamic("type")("slide-in")
         __obj.asInstanceOf[typings.wordpressComponents.animateMod.Animate.SlideInProps]
@@ -122,24 +111,19 @@ object animateMod {
     }
     object SlideInProps {
       
-      @scala.inline
-      def apply(children: ClassName => ReactNode): SlideInProps = {
+      inline def apply(children: ClassName => ReactNode): SlideInProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
         __obj.updateDynamic("type")("slide-in")
         __obj.asInstanceOf[SlideInProps]
       }
       
-      @scala.inline
-      implicit class SlideInPropsMutableBuilder[Self <: SlideInProps] (val x: Self) extends AnyVal {
+      extension [Self <: SlideInProps](x: Self) {
         
-        @scala.inline
-        def setOptions(value: `0`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: `0`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+        inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
-        @scala.inline
-        def setType(value: `slide-in`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: `slide-in`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }

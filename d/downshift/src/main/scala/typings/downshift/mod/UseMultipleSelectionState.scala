@@ -12,22 +12,17 @@ trait UseMultipleSelectionState[Item] extends StObject {
 }
 object UseMultipleSelectionState {
   
-  @scala.inline
-  def apply[Item](activeIndex: Double, selectedItems: js.Array[Item]): UseMultipleSelectionState[Item] = {
+  inline def apply[Item](activeIndex: Double, selectedItems: js.Array[Item]): UseMultipleSelectionState[Item] = {
     val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], selectedItems = selectedItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseMultipleSelectionState[Item]]
   }
   
-  @scala.inline
-  implicit class UseMultipleSelectionStateMutableBuilder[Self <: UseMultipleSelectionState[?], Item] (val x: Self & UseMultipleSelectionState[Item]) extends AnyVal {
+  extension [Self <: UseMultipleSelectionState[?], Item](x: Self & UseMultipleSelectionState[Item]) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItems(value: js.Array[Item]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[Item]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

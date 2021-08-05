@@ -80,98 +80,68 @@ object typesNumberValidateResponseMod {
   }
   object NumberValidateResponse {
     
-    @scala.inline
-    def apply(): NumberValidateResponse = {
+    inline def apply(): NumberValidateResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberValidateResponse]
     }
     
-    @scala.inline
-    implicit class NumberValidateResponseMutableBuilder[Self <: NumberValidateResponse] (val x: Self) extends AnyVal {
+    extension [Self <: NumberValidateResponse](x: Self) {
       
-      @scala.inline
-      def setCarrier(value: String): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
+      inline def setCarrier(value: String): Self = StObject.set(x, "Carrier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
+      inline def setCarrierUndefined: Self = StObject.set(x, "Carrier", js.undefined)
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
+      inline def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
       
-      @scala.inline
-      def setCleansedPhoneNumberE164(value: String): Self = StObject.set(x, "CleansedPhoneNumberE164", value.asInstanceOf[js.Any])
+      inline def setCleansedPhoneNumberE164(value: String): Self = StObject.set(x, "CleansedPhoneNumberE164", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleansedPhoneNumberE164Undefined: Self = StObject.set(x, "CleansedPhoneNumberE164", js.undefined)
+      inline def setCleansedPhoneNumberE164Undefined: Self = StObject.set(x, "CleansedPhoneNumberE164", js.undefined)
       
-      @scala.inline
-      def setCleansedPhoneNumberNational(value: String): Self = StObject.set(x, "CleansedPhoneNumberNational", value.asInstanceOf[js.Any])
+      inline def setCleansedPhoneNumberNational(value: String): Self = StObject.set(x, "CleansedPhoneNumberNational", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleansedPhoneNumberNationalUndefined: Self = StObject.set(x, "CleansedPhoneNumberNational", js.undefined)
+      inline def setCleansedPhoneNumberNationalUndefined: Self = StObject.set(x, "CleansedPhoneNumberNational", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCodeIso2(value: String): Self = StObject.set(x, "CountryCodeIso2", value.asInstanceOf[js.Any])
+      inline def setCountryCodeIso2(value: String): Self = StObject.set(x, "CountryCodeIso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCodeIso2Undefined: Self = StObject.set(x, "CountryCodeIso2", js.undefined)
+      inline def setCountryCodeIso2Undefined: Self = StObject.set(x, "CountryCodeIso2", js.undefined)
       
-      @scala.inline
-      def setCountryCodeNumeric(value: String): Self = StObject.set(x, "CountryCodeNumeric", value.asInstanceOf[js.Any])
+      inline def setCountryCodeNumeric(value: String): Self = StObject.set(x, "CountryCodeNumeric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCodeNumericUndefined: Self = StObject.set(x, "CountryCodeNumeric", js.undefined)
+      inline def setCountryCodeNumericUndefined: Self = StObject.set(x, "CountryCodeNumeric", js.undefined)
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
       
-      @scala.inline
-      def setCounty(value: String): Self = StObject.set(x, "County", value.asInstanceOf[js.Any])
+      inline def setCounty(value: String): Self = StObject.set(x, "County", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountyUndefined: Self = StObject.set(x, "County", js.undefined)
+      inline def setCountyUndefined: Self = StObject.set(x, "County", js.undefined)
       
-      @scala.inline
-      def setOriginalCountryCodeIso2(value: String): Self = StObject.set(x, "OriginalCountryCodeIso2", value.asInstanceOf[js.Any])
+      inline def setOriginalCountryCodeIso2(value: String): Self = StObject.set(x, "OriginalCountryCodeIso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalCountryCodeIso2Undefined: Self = StObject.set(x, "OriginalCountryCodeIso2", js.undefined)
+      inline def setOriginalCountryCodeIso2Undefined: Self = StObject.set(x, "OriginalCountryCodeIso2", js.undefined)
       
-      @scala.inline
-      def setOriginalPhoneNumber(value: String): Self = StObject.set(x, "OriginalPhoneNumber", value.asInstanceOf[js.Any])
+      inline def setOriginalPhoneNumber(value: String): Self = StObject.set(x, "OriginalPhoneNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalPhoneNumberUndefined: Self = StObject.set(x, "OriginalPhoneNumber", js.undefined)
+      inline def setOriginalPhoneNumberUndefined: Self = StObject.set(x, "OriginalPhoneNumber", js.undefined)
       
-      @scala.inline
-      def setPhoneType(value: String): Self = StObject.set(x, "PhoneType", value.asInstanceOf[js.Any])
+      inline def setPhoneType(value: String): Self = StObject.set(x, "PhoneType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneTypeCode(value: Double): Self = StObject.set(x, "PhoneTypeCode", value.asInstanceOf[js.Any])
+      inline def setPhoneTypeCode(value: Double): Self = StObject.set(x, "PhoneTypeCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneTypeCodeUndefined: Self = StObject.set(x, "PhoneTypeCode", js.undefined)
+      inline def setPhoneTypeCodeUndefined: Self = StObject.set(x, "PhoneTypeCode", js.undefined)
       
-      @scala.inline
-      def setPhoneTypeUndefined: Self = StObject.set(x, "PhoneType", js.undefined)
+      inline def setPhoneTypeUndefined: Self = StObject.set(x, "PhoneType", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
       
-      @scala.inline
-      def setZipCode(value: String): Self = StObject.set(x, "ZipCode", value.asInstanceOf[js.Any])
+      inline def setZipCode(value: String): Self = StObject.set(x, "ZipCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZipCodeUndefined: Self = StObject.set(x, "ZipCode", js.undefined)
+      inline def setZipCodeUndefined: Self = StObject.set(x, "ZipCode", js.undefined)
     }
   }
   

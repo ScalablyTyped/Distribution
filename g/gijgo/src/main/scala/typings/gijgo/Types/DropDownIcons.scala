@@ -11,19 +11,15 @@ trait DropDownIcons extends StObject {
 }
 object DropDownIcons {
   
-  @scala.inline
-  def apply(): DropDownIcons = {
+  inline def apply(): DropDownIcons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropDownIcons]
   }
   
-  @scala.inline
-  implicit class DropDownIconsMutableBuilder[Self <: DropDownIcons] (val x: Self) extends AnyVal {
+  extension [Self <: DropDownIcons](x: Self) {
     
-    @scala.inline
-    def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+    inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
   }
 }

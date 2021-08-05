@@ -15,25 +15,19 @@ trait DeviceAuthorizationParameters
 }
 object DeviceAuthorizationParameters {
   
-  @scala.inline
-  def apply(): DeviceAuthorizationParameters = {
+  inline def apply(): DeviceAuthorizationParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceAuthorizationParameters]
   }
   
-  @scala.inline
-  implicit class DeviceAuthorizationParametersMutableBuilder[Self <: DeviceAuthorizationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceAuthorizationParameters](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

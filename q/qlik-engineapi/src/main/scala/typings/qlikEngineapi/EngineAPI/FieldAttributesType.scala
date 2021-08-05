@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldAttributesType extends StObject
 object FieldAttributesType {
   
-  @scala.inline
-  def A: typings.qlikEngineapi.qlikEngineapiStrings.A = "A".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.A]
+  inline def A: typings.qlikEngineapi.qlikEngineapiStrings.A = "A".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.A]
   
-  @scala.inline
-  def D: typings.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D]
+  inline def D: typings.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.D]
   
-  @scala.inline
-  def F: typings.qlikEngineapi.qlikEngineapiStrings.F = "F".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.F]
+  inline def F: typings.qlikEngineapi.qlikEngineapiStrings.F = "F".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.F]
   
-  @scala.inline
-  def I: typings.qlikEngineapi.qlikEngineapiStrings.I = "I".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.I]
+  inline def I: typings.qlikEngineapi.qlikEngineapiStrings.I = "I".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.I]
   
-  @scala.inline
-  def IV: typings.qlikEngineapi.qlikEngineapiStrings.IV = "IV".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IV]
+  inline def IV: typings.qlikEngineapi.qlikEngineapiStrings.IV = "IV".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.IV]
   
-  @scala.inline
-  def M: typings.qlikEngineapi.qlikEngineapiStrings.M = "M".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.M]
+  inline def M: typings.qlikEngineapi.qlikEngineapiStrings.M = "M".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.M]
   
-  @scala.inline
-  def R: typings.qlikEngineapi.qlikEngineapiStrings.R = "R".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.R]
+  inline def R: typings.qlikEngineapi.qlikEngineapiStrings.R = "R".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.R]
   
-  @scala.inline
-  def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
+  inline def T: typings.qlikEngineapi.qlikEngineapiStrings.T = "T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.T]
   
-  @scala.inline
-  def TS: typings.qlikEngineapi.qlikEngineapiStrings.TS = "TS".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TS]
+  inline def TS: typings.qlikEngineapi.qlikEngineapiStrings.TS = "TS".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.TS]
   
-  @scala.inline
-  def U: typings.qlikEngineapi.qlikEngineapiStrings.U = "U".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.U]
+  inline def U: typings.qlikEngineapi.qlikEngineapiStrings.U = "U".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.U]
 }

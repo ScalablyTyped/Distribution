@@ -10,16 +10,13 @@ trait OutlineWidth extends StObject {
 }
 object OutlineWidth {
   
-  @scala.inline
-  def apply(outlineWidth: Double): OutlineWidth = {
+  inline def apply(outlineWidth: Double): OutlineWidth = {
     val __obj = js.Dynamic.literal(outlineWidth = outlineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutlineWidth]
   }
   
-  @scala.inline
-  implicit class OutlineWidthMutableBuilder[Self <: OutlineWidth] (val x: Self) extends AnyVal {
+  extension [Self <: OutlineWidth](x: Self) {
     
-    @scala.inline
-    def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
+    inline def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
   }
 }

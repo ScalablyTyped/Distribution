@@ -13,16 +13,13 @@ trait GetDashboardInput extends StObject {
 }
 object GetDashboardInput {
   
-  @scala.inline
-  def apply(DashboardName: DashboardName): GetDashboardInput = {
+  inline def apply(DashboardName: DashboardName): GetDashboardInput = {
     val __obj = js.Dynamic.literal(DashboardName = DashboardName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDashboardInput]
   }
   
-  @scala.inline
-  implicit class GetDashboardInputMutableBuilder[Self <: GetDashboardInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDashboardInput](x: Self) {
     
-    @scala.inline
-    def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
+    inline def setDashboardName(value: DashboardName): Self = StObject.set(x, "DashboardName", value.asInstanceOf[js.Any])
   }
 }

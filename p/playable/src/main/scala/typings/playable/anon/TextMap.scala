@@ -20,8 +20,7 @@ trait TextMap extends StObject {
 }
 object TextMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventEmitter: IEventEmitter,
     textMap: ITextMap,
     theme: IThemeService,
@@ -31,19 +30,14 @@ object TextMap {
     __obj.asInstanceOf[TextMap]
   }
   
-  @scala.inline
-  implicit class TextMapMutableBuilder[Self <: TextMap] (val x: Self) extends AnyVal {
+  extension [Self <: TextMap](x: Self) {
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+    inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

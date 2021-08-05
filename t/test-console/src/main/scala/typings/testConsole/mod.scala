@@ -24,23 +24,18 @@ object mod {
   }
   object Inspector {
     
-    @scala.inline
-    def apply(output: Output, restore: () => Unit): Inspector = {
+    inline def apply(output: Output, restore: () => Unit): Inspector = {
       val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], restore = js.Any.fromFunction0(restore))
       __obj.asInstanceOf[Inspector]
     }
     
-    @scala.inline
-    implicit class InspectorMutableBuilder[Self <: Inspector] (val x: Self) extends AnyVal {
+    extension [Self <: Inspector](x: Self) {
       
-      @scala.inline
-      def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
       
-      @scala.inline
-      def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+      inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     }
   }
   
@@ -52,20 +47,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIsTTY(value: Boolean): Self = StObject.set(x, "isTTY", value.asInstanceOf[js.Any])
+      inline def setIsTTY(value: Boolean): Self = StObject.set(x, "isTTY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTTYUndefined: Self = StObject.set(x, "isTTY", js.undefined)
+      inline def setIsTTYUndefined: Self = StObject.set(x, "isTTY", js.undefined)
     }
   }
   

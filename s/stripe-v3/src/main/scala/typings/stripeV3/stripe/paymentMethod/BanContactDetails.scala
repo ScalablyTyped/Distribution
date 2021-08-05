@@ -24,8 +24,7 @@ trait BanContactDetails extends StObject {
 }
 object BanContactDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bank_code: String,
     bank_name: String,
     bic: String,
@@ -37,25 +36,18 @@ object BanContactDetails {
     __obj.asInstanceOf[BanContactDetails]
   }
   
-  @scala.inline
-  implicit class BanContactDetailsMutableBuilder[Self <: BanContactDetails] (val x: Self) extends AnyVal {
+  extension [Self <: BanContactDetails](x: Self) {
     
-    @scala.inline
-    def setBank_code(value: String): Self = StObject.set(x, "bank_code", value.asInstanceOf[js.Any])
+    inline def setBank_code(value: String): Self = StObject.set(x, "bank_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
+    inline def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBic(value: String): Self = StObject.set(x, "bic", value.asInstanceOf[js.Any])
+    inline def setBic(value: String): Self = StObject.set(x, "bic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIban_last4(value: String): Self = StObject.set(x, "iban_last4", value.asInstanceOf[js.Any])
+    inline def setIban_last4(value: String): Self = StObject.set(x, "iban_last4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferred_language(value: en | de | fr | nl): Self = StObject.set(x, "preferred_language", value.asInstanceOf[js.Any])
+    inline def setPreferred_language(value: en | de | fr | nl): Self = StObject.set(x, "preferred_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
+    inline def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
   }
 }

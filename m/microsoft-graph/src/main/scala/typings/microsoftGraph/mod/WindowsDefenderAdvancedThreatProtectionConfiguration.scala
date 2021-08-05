@@ -16,25 +16,19 @@ trait WindowsDefenderAdvancedThreatProtectionConfiguration
 }
 object WindowsDefenderAdvancedThreatProtectionConfiguration {
   
-  @scala.inline
-  def apply(): WindowsDefenderAdvancedThreatProtectionConfiguration = {
+  inline def apply(): WindowsDefenderAdvancedThreatProtectionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsDefenderAdvancedThreatProtectionConfiguration]
   }
   
-  @scala.inline
-  implicit class WindowsDefenderAdvancedThreatProtectionConfigurationMutableBuilder[Self <: WindowsDefenderAdvancedThreatProtectionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsDefenderAdvancedThreatProtectionConfiguration](x: Self) {
     
-    @scala.inline
-    def setAllowSampleSharing(value: Boolean): Self = StObject.set(x, "allowSampleSharing", value.asInstanceOf[js.Any])
+    inline def setAllowSampleSharing(value: Boolean): Self = StObject.set(x, "allowSampleSharing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSampleSharingUndefined: Self = StObject.set(x, "allowSampleSharing", js.undefined)
+    inline def setAllowSampleSharingUndefined: Self = StObject.set(x, "allowSampleSharing", js.undefined)
     
-    @scala.inline
-    def setEnableExpeditedTelemetryReporting(value: Boolean): Self = StObject.set(x, "enableExpeditedTelemetryReporting", value.asInstanceOf[js.Any])
+    inline def setEnableExpeditedTelemetryReporting(value: Boolean): Self = StObject.set(x, "enableExpeditedTelemetryReporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableExpeditedTelemetryReportingUndefined: Self = StObject.set(x, "enableExpeditedTelemetryReporting", js.undefined)
+    inline def setEnableExpeditedTelemetryReportingUndefined: Self = StObject.set(x, "enableExpeditedTelemetryReporting", js.undefined)
   }
 }

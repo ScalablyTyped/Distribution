@@ -27,58 +27,41 @@ trait IPubsubMessage extends StObject {
 }
 object IPubsubMessage {
   
-  @scala.inline
-  def apply(): IPubsubMessage = {
+  inline def apply(): IPubsubMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPubsubMessage]
   }
   
-  @scala.inline
-  implicit class IPubsubMessageMutableBuilder[Self <: IPubsubMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IPubsubMessage](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesNull: Self = StObject.set(x, "attributes", null)
+    inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setData(value: Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdNull: Self = StObject.set(x, "messageId", null)
+    inline def setMessageIdNull: Self = StObject.set(x, "messageId", null)
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setOrderingKey(value: String): Self = StObject.set(x, "orderingKey", value.asInstanceOf[js.Any])
+    inline def setOrderingKey(value: String): Self = StObject.set(x, "orderingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderingKeyNull: Self = StObject.set(x, "orderingKey", null)
+    inline def setOrderingKeyNull: Self = StObject.set(x, "orderingKey", null)
     
-    @scala.inline
-    def setOrderingKeyUndefined: Self = StObject.set(x, "orderingKey", js.undefined)
+    inline def setOrderingKeyUndefined: Self = StObject.set(x, "orderingKey", js.undefined)
     
-    @scala.inline
-    def setPublishTime(value: ITimestamp): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
+    inline def setPublishTime(value: ITimestamp): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishTimeNull: Self = StObject.set(x, "publishTime", null)
+    inline def setPublishTimeNull: Self = StObject.set(x, "publishTime", null)
     
-    @scala.inline
-    def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
+    inline def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
   }
 }

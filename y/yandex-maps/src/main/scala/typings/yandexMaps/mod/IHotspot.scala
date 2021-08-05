@@ -9,8 +9,7 @@ trait IHotspot
      with IEventEmitter
 object IHotspot {
   
-  @scala.inline
-  def apply(events: IEventManager[js.Object]): IHotspot = {
+  inline def apply(events: IEventManager[js.Object]): IHotspot = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHotspot]
   }

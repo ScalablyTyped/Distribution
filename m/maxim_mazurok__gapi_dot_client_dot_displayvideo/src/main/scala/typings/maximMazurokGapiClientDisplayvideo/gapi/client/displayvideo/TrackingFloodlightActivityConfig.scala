@@ -17,31 +17,23 @@ trait TrackingFloodlightActivityConfig extends StObject {
 }
 object TrackingFloodlightActivityConfig {
   
-  @scala.inline
-  def apply(): TrackingFloodlightActivityConfig = {
+  inline def apply(): TrackingFloodlightActivityConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackingFloodlightActivityConfig]
   }
   
-  @scala.inline
-  implicit class TrackingFloodlightActivityConfigMutableBuilder[Self <: TrackingFloodlightActivityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TrackingFloodlightActivityConfig](x: Self) {
     
-    @scala.inline
-    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
+    inline def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
+    inline def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
-    @scala.inline
-    def setPostClickLookbackWindowDays(value: Double): Self = StObject.set(x, "postClickLookbackWindowDays", value.asInstanceOf[js.Any])
+    inline def setPostClickLookbackWindowDays(value: Double): Self = StObject.set(x, "postClickLookbackWindowDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostClickLookbackWindowDaysUndefined: Self = StObject.set(x, "postClickLookbackWindowDays", js.undefined)
+    inline def setPostClickLookbackWindowDaysUndefined: Self = StObject.set(x, "postClickLookbackWindowDays", js.undefined)
     
-    @scala.inline
-    def setPostViewLookbackWindowDays(value: Double): Self = StObject.set(x, "postViewLookbackWindowDays", value.asInstanceOf[js.Any])
+    inline def setPostViewLookbackWindowDays(value: Double): Self = StObject.set(x, "postViewLookbackWindowDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostViewLookbackWindowDaysUndefined: Self = StObject.set(x, "postViewLookbackWindowDays", js.undefined)
+    inline def setPostViewLookbackWindowDaysUndefined: Self = StObject.set(x, "postViewLookbackWindowDays", js.undefined)
   }
 }

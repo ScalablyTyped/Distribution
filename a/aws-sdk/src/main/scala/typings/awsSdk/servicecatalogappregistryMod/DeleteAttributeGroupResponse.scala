@@ -13,19 +13,15 @@ trait DeleteAttributeGroupResponse extends StObject {
 }
 object DeleteAttributeGroupResponse {
   
-  @scala.inline
-  def apply(): DeleteAttributeGroupResponse = {
+  inline def apply(): DeleteAttributeGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteAttributeGroupResponse]
   }
   
-  @scala.inline
-  implicit class DeleteAttributeGroupResponseMutableBuilder[Self <: DeleteAttributeGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAttributeGroupResponse](x: Self) {
     
-    @scala.inline
-    def setAttributeGroup(value: AttributeGroupSummary): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
+    inline def setAttributeGroup(value: AttributeGroupSummary): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeGroupUndefined: Self = StObject.set(x, "attributeGroup", js.undefined)
+    inline def setAttributeGroupUndefined: Self = StObject.set(x, "attributeGroup", js.undefined)
   }
 }

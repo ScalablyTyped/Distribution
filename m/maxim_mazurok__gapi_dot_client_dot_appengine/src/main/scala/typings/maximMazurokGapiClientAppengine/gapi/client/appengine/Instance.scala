@@ -56,109 +56,75 @@ trait Instance extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply(): Instance = {
+  inline def apply(): Instance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instance]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+  extension [Self <: Instance](x: Self) {
     
-    @scala.inline
-    def setAppEngineRelease(value: String): Self = StObject.set(x, "appEngineRelease", value.asInstanceOf[js.Any])
+    inline def setAppEngineRelease(value: String): Self = StObject.set(x, "appEngineRelease", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineReleaseUndefined: Self = StObject.set(x, "appEngineRelease", js.undefined)
+    inline def setAppEngineReleaseUndefined: Self = StObject.set(x, "appEngineRelease", js.undefined)
     
-    @scala.inline
-    def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
-    @scala.inline
-    def setAverageLatency(value: Double): Self = StObject.set(x, "averageLatency", value.asInstanceOf[js.Any])
+    inline def setAverageLatency(value: Double): Self = StObject.set(x, "averageLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageLatencyUndefined: Self = StObject.set(x, "averageLatency", js.undefined)
+    inline def setAverageLatencyUndefined: Self = StObject.set(x, "averageLatency", js.undefined)
     
-    @scala.inline
-    def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMemoryUsage(value: String): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
+    inline def setMemoryUsage(value: String): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryUsageUndefined: Self = StObject.set(x, "memoryUsage", js.undefined)
+    inline def setMemoryUsageUndefined: Self = StObject.set(x, "memoryUsage", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setQps(value: Double): Self = StObject.set(x, "qps", value.asInstanceOf[js.Any])
+    inline def setQps(value: Double): Self = StObject.set(x, "qps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQpsUndefined: Self = StObject.set(x, "qps", js.undefined)
+    inline def setQpsUndefined: Self = StObject.set(x, "qps", js.undefined)
     
-    @scala.inline
-    def setRequests(value: Double): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: Double): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setVmDebugEnabled(value: Boolean): Self = StObject.set(x, "vmDebugEnabled", value.asInstanceOf[js.Any])
+    inline def setVmDebugEnabled(value: Boolean): Self = StObject.set(x, "vmDebugEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmDebugEnabledUndefined: Self = StObject.set(x, "vmDebugEnabled", js.undefined)
+    inline def setVmDebugEnabledUndefined: Self = StObject.set(x, "vmDebugEnabled", js.undefined)
     
-    @scala.inline
-    def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
+    inline def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
+    inline def setVmIdUndefined: Self = StObject.set(x, "vmId", js.undefined)
     
-    @scala.inline
-    def setVmIp(value: String): Self = StObject.set(x, "vmIp", value.asInstanceOf[js.Any])
+    inline def setVmIp(value: String): Self = StObject.set(x, "vmIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmIpUndefined: Self = StObject.set(x, "vmIp", js.undefined)
+    inline def setVmIpUndefined: Self = StObject.set(x, "vmIp", js.undefined)
     
-    @scala.inline
-    def setVmName(value: String): Self = StObject.set(x, "vmName", value.asInstanceOf[js.Any])
+    inline def setVmName(value: String): Self = StObject.set(x, "vmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmNameUndefined: Self = StObject.set(x, "vmName", js.undefined)
+    inline def setVmNameUndefined: Self = StObject.set(x, "vmName", js.undefined)
     
-    @scala.inline
-    def setVmStatus(value: String): Self = StObject.set(x, "vmStatus", value.asInstanceOf[js.Any])
+    inline def setVmStatus(value: String): Self = StObject.set(x, "vmStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmStatusUndefined: Self = StObject.set(x, "vmStatus", js.undefined)
+    inline def setVmStatusUndefined: Self = StObject.set(x, "vmStatus", js.undefined)
     
-    @scala.inline
-    def setVmZoneName(value: String): Self = StObject.set(x, "vmZoneName", value.asInstanceOf[js.Any])
+    inline def setVmZoneName(value: String): Self = StObject.set(x, "vmZoneName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmZoneNameUndefined: Self = StObject.set(x, "vmZoneName", js.undefined)
+    inline def setVmZoneNameUndefined: Self = StObject.set(x, "vmZoneName", js.undefined)
   }
 }

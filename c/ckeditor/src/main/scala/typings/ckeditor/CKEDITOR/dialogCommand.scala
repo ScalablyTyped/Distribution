@@ -10,16 +10,13 @@ trait dialogCommand extends StObject {
 }
 object dialogCommand {
   
-  @scala.inline
-  def apply(value: js.Any): dialogCommand = {
+  inline def apply(value: js.Any): dialogCommand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[dialogCommand]
   }
   
-  @scala.inline
-  implicit class dialogCommandMutableBuilder[Self <: dialogCommand] (val x: Self) extends AnyVal {
+  extension [Self <: dialogCommand](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

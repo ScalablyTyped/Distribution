@@ -26,61 +26,43 @@ trait ServerConfig extends StObject {
 }
 object ServerConfig {
   
-  @scala.inline
-  def apply(): ServerConfig = {
+  inline def apply(): ServerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerConfig]
   }
   
-  @scala.inline
-  implicit class ServerConfigMutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ServerConfig](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[ReleaseChannelConfig]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[ReleaseChannelConfig]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: ReleaseChannelConfig*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: ReleaseChannelConfig*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultClusterVersion(value: String): Self = StObject.set(x, "defaultClusterVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultClusterVersion(value: String): Self = StObject.set(x, "defaultClusterVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultClusterVersionUndefined: Self = StObject.set(x, "defaultClusterVersion", js.undefined)
+    inline def setDefaultClusterVersionUndefined: Self = StObject.set(x, "defaultClusterVersion", js.undefined)
     
-    @scala.inline
-    def setDefaultImageType(value: String): Self = StObject.set(x, "defaultImageType", value.asInstanceOf[js.Any])
+    inline def setDefaultImageType(value: String): Self = StObject.set(x, "defaultImageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultImageTypeUndefined: Self = StObject.set(x, "defaultImageType", js.undefined)
+    inline def setDefaultImageTypeUndefined: Self = StObject.set(x, "defaultImageType", js.undefined)
     
-    @scala.inline
-    def setValidImageTypes(value: js.Array[String]): Self = StObject.set(x, "validImageTypes", value.asInstanceOf[js.Any])
+    inline def setValidImageTypes(value: js.Array[String]): Self = StObject.set(x, "validImageTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidImageTypesUndefined: Self = StObject.set(x, "validImageTypes", js.undefined)
+    inline def setValidImageTypesUndefined: Self = StObject.set(x, "validImageTypes", js.undefined)
     
-    @scala.inline
-    def setValidImageTypesVarargs(value: String*): Self = StObject.set(x, "validImageTypes", js.Array(value :_*))
+    inline def setValidImageTypesVarargs(value: String*): Self = StObject.set(x, "validImageTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setValidMasterVersions(value: js.Array[String]): Self = StObject.set(x, "validMasterVersions", value.asInstanceOf[js.Any])
+    inline def setValidMasterVersions(value: js.Array[String]): Self = StObject.set(x, "validMasterVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidMasterVersionsUndefined: Self = StObject.set(x, "validMasterVersions", js.undefined)
+    inline def setValidMasterVersionsUndefined: Self = StObject.set(x, "validMasterVersions", js.undefined)
     
-    @scala.inline
-    def setValidMasterVersionsVarargs(value: String*): Self = StObject.set(x, "validMasterVersions", js.Array(value :_*))
+    inline def setValidMasterVersionsVarargs(value: String*): Self = StObject.set(x, "validMasterVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setValidNodeVersions(value: js.Array[String]): Self = StObject.set(x, "validNodeVersions", value.asInstanceOf[js.Any])
+    inline def setValidNodeVersions(value: js.Array[String]): Self = StObject.set(x, "validNodeVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidNodeVersionsUndefined: Self = StObject.set(x, "validNodeVersions", js.undefined)
+    inline def setValidNodeVersionsUndefined: Self = StObject.set(x, "validNodeVersions", js.undefined)
     
-    @scala.inline
-    def setValidNodeVersionsVarargs(value: String*): Self = StObject.set(x, "validNodeVersions", js.Array(value :_*))
+    inline def setValidNodeVersionsVarargs(value: String*): Self = StObject.set(x, "validNodeVersions", js.Array(value :_*))
   }
 }

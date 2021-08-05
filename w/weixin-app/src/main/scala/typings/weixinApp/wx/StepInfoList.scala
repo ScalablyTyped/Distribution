@@ -11,19 +11,15 @@ trait StepInfoList extends StObject {
 }
 object StepInfoList {
   
-  @scala.inline
-  def apply(stepInfoList: js.Array[StepInfo]): StepInfoList = {
+  inline def apply(stepInfoList: js.Array[StepInfo]): StepInfoList = {
     val __obj = js.Dynamic.literal(stepInfoList = stepInfoList.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepInfoList]
   }
   
-  @scala.inline
-  implicit class StepInfoListMutableBuilder[Self <: StepInfoList] (val x: Self) extends AnyVal {
+  extension [Self <: StepInfoList](x: Self) {
     
-    @scala.inline
-    def setStepInfoList(value: js.Array[StepInfo]): Self = StObject.set(x, "stepInfoList", value.asInstanceOf[js.Any])
+    inline def setStepInfoList(value: js.Array[StepInfo]): Self = StObject.set(x, "stepInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepInfoListVarargs(value: StepInfo*): Self = StObject.set(x, "stepInfoList", js.Array(value :_*))
+    inline def setStepInfoListVarargs(value: StepInfo*): Self = StObject.set(x, "stepInfoList", js.Array(value :_*))
   }
 }

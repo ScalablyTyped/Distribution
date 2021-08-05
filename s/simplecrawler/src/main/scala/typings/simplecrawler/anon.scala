@@ -29,8 +29,7 @@ object anon {
   }
   object ActualDataSize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actualDataSize: Double,
       code: Double,
       contentLength: Double,
@@ -45,35 +44,25 @@ object anon {
       __obj.asInstanceOf[ActualDataSize]
     }
     
-    @scala.inline
-    implicit class ActualDataSizeMutableBuilder[Self <: ActualDataSize] (val x: Self) extends AnyVal {
+    extension [Self <: ActualDataSize](x: Self) {
       
-      @scala.inline
-      def setActualDataSize(value: Double): Self = StObject.set(x, "actualDataSize", value.asInstanceOf[js.Any])
+      inline def setActualDataSize(value: Double): Self = StObject.set(x, "actualDataSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+      inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadTime(value: Double): Self = StObject.set(x, "downloadTime", value.asInstanceOf[js.Any])
+      inline def setDownloadTime(value: Double): Self = StObject.set(x, "downloadTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestLatency(value: Double): Self = StObject.set(x, "requestLatency", value.asInstanceOf[js.Any])
+      inline def setRequestLatency(value: Double): Self = StObject.set(x, "requestLatency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTime(value: Double): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+      inline def setRequestTime(value: Double): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentIncorrectSize(value: Boolean): Self = StObject.set(x, "sentIncorrectSize", value.asInstanceOf[js.Any])
+      inline def setSentIncorrectSize(value: Boolean): Self = StObject.set(x, "sentIncorrectSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,54 +88,39 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(Accept: String, Host: String, `User-Agent`: String): Dictkey = {
+    inline def apply(Accept: String, Host: String, `User-Agent`: String): Dictkey = {
       val __obj = js.Dynamic.literal(Accept = Accept.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any])
       __obj.updateDynamic("User-Agent")(`User-Agent`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setAccept(value: String): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: String): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAccept-Encoding`(value: String): Self = StObject.set(x, "Accept-Encoding", value.asInstanceOf[js.Any])
+      inline def `setAccept-Encoding`(value: String): Self = StObject.set(x, "Accept-Encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAccept-EncodingUndefined`: Self = StObject.set(x, "Accept-Encoding", js.undefined)
+      inline def `setAccept-EncodingUndefined`: Self = StObject.set(x, "Accept-Encoding", js.undefined)
       
-      @scala.inline
-      def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+      inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
       
-      @scala.inline
-      def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setProxy-Authorization`(value: String): Self = StObject.set(x, "Proxy-Authorization", value.asInstanceOf[js.Any])
+      inline def `setProxy-Authorization`(value: String): Self = StObject.set(x, "Proxy-Authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setProxy-AuthorizationUndefined`: Self = StObject.set(x, "Proxy-Authorization", js.undefined)
+      inline def `setProxy-AuthorizationUndefined`: Self = StObject.set(x, "Proxy-Authorization", js.undefined)
       
-      @scala.inline
-      def setReferer(value: String): Self = StObject.set(x, "Referer", value.asInstanceOf[js.Any])
+      inline def setReferer(value: String): Self = StObject.set(x, "Referer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefererUndefined: Self = StObject.set(x, "Referer", js.undefined)
+      inline def setRefererUndefined: Self = StObject.set(x, "Referer", js.undefined)
       
-      @scala.inline
-      def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+      inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
     }
   }
 }

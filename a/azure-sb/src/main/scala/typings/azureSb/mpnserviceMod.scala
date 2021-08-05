@@ -32,8 +32,7 @@ object mpnserviceMod {
   }
   object FlipTileTemplate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backBackgroundImage: String,
       backContent: String,
       backTitle: String,
@@ -50,20 +49,15 @@ object mpnserviceMod {
       __obj.asInstanceOf[FlipTileTemplate]
     }
     
-    @scala.inline
-    implicit class FlipTileTemplateMutableBuilder[Self <: FlipTileTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: FlipTileTemplate](x: Self) {
       
-      @scala.inline
-      def setSmallBackgroundImage(value: String): Self = StObject.set(x, "smallBackgroundImage", value.asInstanceOf[js.Any])
+      inline def setSmallBackgroundImage(value: String): Self = StObject.set(x, "smallBackgroundImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWideBackBackgroundImage(value: String): Self = StObject.set(x, "wideBackBackgroundImage", value.asInstanceOf[js.Any])
+      inline def setWideBackBackgroundImage(value: String): Self = StObject.set(x, "wideBackBackgroundImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWideBackContent(value: String): Self = StObject.set(x, "wideBackContent", value.asInstanceOf[js.Any])
+      inline def setWideBackContent(value: String): Self = StObject.set(x, "wideBackContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWideBackgroundImage(value: String): Self = StObject.set(x, "wideBackgroundImage", value.asInstanceOf[js.Any])
+      inline def setWideBackgroundImage(value: String): Self = StObject.set(x, "wideBackgroundImage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -310,8 +304,7 @@ object mpnserviceMod {
   trait Template extends StObject
   object Template {
     
-    @scala.inline
-    def FlipTileTemplate(
+    inline def FlipTileTemplate(
       backBackgroundImage: String,
       backContent: String,
       backTitle: String,
@@ -328,8 +321,7 @@ object mpnserviceMod {
       __obj.asInstanceOf[typings.azureSb.mpnserviceMod.FlipTileTemplate]
     }
     
-    @scala.inline
-    def TileTemplate(
+    inline def TileTemplate(
       backBackgroundImage: String,
       backContent: String,
       backTitle: String,
@@ -342,8 +334,7 @@ object mpnserviceMod {
       __obj.asInstanceOf[typings.azureSb.mpnserviceMod.TileTemplate]
     }
     
-    @scala.inline
-    def ToastTemplate(text1: String, text2: String): typings.azureSb.mpnserviceMod.ToastTemplate = {
+    inline def ToastTemplate(text1: String, text2: String): typings.azureSb.mpnserviceMod.ToastTemplate = {
       val __obj = js.Dynamic.literal(text1 = text1.asInstanceOf[js.Any], text2 = text2.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.azureSb.mpnserviceMod.ToastTemplate]
     }
@@ -369,8 +360,7 @@ object mpnserviceMod {
   }
   object TileTemplate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backBackgroundImage: String,
       backContent: String,
       backTitle: String,
@@ -383,29 +373,21 @@ object mpnserviceMod {
       __obj.asInstanceOf[TileTemplate]
     }
     
-    @scala.inline
-    implicit class TileTemplateMutableBuilder[Self <: TileTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: TileTemplate](x: Self) {
       
-      @scala.inline
-      def setBackBackgroundImage(value: String): Self = StObject.set(x, "backBackgroundImage", value.asInstanceOf[js.Any])
+      inline def setBackBackgroundImage(value: String): Self = StObject.set(x, "backBackgroundImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackContent(value: String): Self = StObject.set(x, "backContent", value.asInstanceOf[js.Any])
+      inline def setBackContent(value: String): Self = StObject.set(x, "backContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackTitle(value: String): Self = StObject.set(x, "backTitle", value.asInstanceOf[js.Any])
+      inline def setBackTitle(value: String): Self = StObject.set(x, "backTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+      inline def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -421,26 +403,20 @@ object mpnserviceMod {
   }
   object ToastTemplate {
     
-    @scala.inline
-    def apply(text1: String, text2: String): ToastTemplate = {
+    inline def apply(text1: String, text2: String): ToastTemplate = {
       val __obj = js.Dynamic.literal(text1 = text1.asInstanceOf[js.Any], text2 = text2.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToastTemplate]
     }
     
-    @scala.inline
-    implicit class ToastTemplateMutableBuilder[Self <: ToastTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: ToastTemplate](x: Self) {
       
-      @scala.inline
-      def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+      inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+      inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
       
-      @scala.inline
-      def setText1(value: String): Self = StObject.set(x, "text1", value.asInstanceOf[js.Any])
+      inline def setText1(value: String): Self = StObject.set(x, "text1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText2(value: String): Self = StObject.set(x, "text2", value.asInstanceOf[js.Any])
+      inline def setText2(value: String): Self = StObject.set(x, "text2", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,15 +15,15 @@ object layerBaseMod {
     extends Component[ILayerProps, ILayerBaseState, js.Any] {
     def this(props: ILayerProps) = this()
     
-    var _createLayerElement: js.Any = js.native
+    /* private */ var _createLayerElement: js.Any = js.native
     
-    var _getClassNames: js.Any = js.native
+    /* private */ var _getClassNames: js.Any = js.native
     
-    var _getHost: js.Any = js.native
+    /* private */ var _getHost: js.Any = js.native
     
-    var _removeLayerElement: js.Any = js.native
+    /* private */ var _removeLayerElement: js.Any = js.native
     
-    var _rootRef: js.Any = js.native
+    /* private */ var _rootRef: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MLayerBase(): Unit = js.native
@@ -44,8 +44,7 @@ object layerBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/Layer/Layer.base", "LayerBase.defaultProps")
     @js.native
     def defaultProps: ILayerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ILayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ILayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ILayerBaseState extends StObject {
@@ -56,26 +55,20 @@ object layerBaseMod {
   }
   object ILayerBaseState {
     
-    @scala.inline
-    def apply(): ILayerBaseState = {
+    inline def apply(): ILayerBaseState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILayerBaseState]
     }
     
-    @scala.inline
-    implicit class ILayerBaseStateMutableBuilder[Self <: ILayerBaseState] (val x: Self) extends AnyVal {
+    extension [Self <: ILayerBaseState](x: Self) {
       
-      @scala.inline
-      def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
+      inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostIdUndefined: Self = StObject.set(x, "hostId", js.undefined)
+      inline def setHostIdUndefined: Self = StObject.set(x, "hostId", js.undefined)
       
-      @scala.inline
-      def setLayerElement(value: HTMLElement): Self = StObject.set(x, "layerElement", value.asInstanceOf[js.Any])
+      inline def setLayerElement(value: HTMLElement): Self = StObject.set(x, "layerElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerElementUndefined: Self = StObject.set(x, "layerElement", js.undefined)
+      inline def setLayerElementUndefined: Self = StObject.set(x, "layerElement", js.undefined)
     }
   }
 }

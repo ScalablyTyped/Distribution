@@ -61,8 +61,7 @@ trait MeshVertex
 }
 object MeshVertex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     distance: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -78,28 +77,20 @@ object MeshVertex {
     __obj.asInstanceOf[MeshVertex]
   }
   
-  @scala.inline
-  implicit class MeshVertexMutableBuilder[Self <: MeshVertex] (val x: Self) extends AnyVal {
+  extension [Self <: MeshVertex](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUTexcoord(value: Double): Self = StObject.set(x, "uTexcoord", value.asInstanceOf[js.Any])
+    inline def setUTexcoord(value: Double): Self = StObject.set(x, "uTexcoord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVTexcoord(value: Double): Self = StObject.set(x, "vTexcoord", value.asInstanceOf[js.Any])
+    inline def setVTexcoord(value: Double): Self = StObject.set(x, "vTexcoord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+    inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+    inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
   }
 }

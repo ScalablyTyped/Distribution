@@ -19,19 +19,15 @@ trait Ellipse
 }
 object Ellipse {
   
-  @scala.inline
-  def apply(models: IModelMap, origin: IPoint): Ellipse = {
+  inline def apply(models: IModelMap, origin: IPoint): Ellipse = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ellipse]
   }
   
-  @scala.inline
-  implicit class EllipseMutableBuilder[Self <: Ellipse] (val x: Self) extends AnyVal {
+  extension [Self <: Ellipse](x: Self) {
     
-    @scala.inline
-    def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object orderMod extends Shortcut {
   }
   object OrderProps {
     
-    @scala.inline
-    def apply(): OrderProps = {
+    inline def apply(): OrderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OrderProps]
     }
     
-    @scala.inline
-    implicit class OrderPropsMutableBuilder[Self <: OrderProps] (val x: Self) extends AnyVal {
+    extension [Self <: OrderProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

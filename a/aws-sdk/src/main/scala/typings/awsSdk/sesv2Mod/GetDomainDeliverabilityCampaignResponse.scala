@@ -13,16 +13,13 @@ trait GetDomainDeliverabilityCampaignResponse extends StObject {
 }
 object GetDomainDeliverabilityCampaignResponse {
   
-  @scala.inline
-  def apply(DomainDeliverabilityCampaign: DomainDeliverabilityCampaign): GetDomainDeliverabilityCampaignResponse = {
+  inline def apply(DomainDeliverabilityCampaign: DomainDeliverabilityCampaign): GetDomainDeliverabilityCampaignResponse = {
     val __obj = js.Dynamic.literal(DomainDeliverabilityCampaign = DomainDeliverabilityCampaign.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainDeliverabilityCampaignResponse]
   }
   
-  @scala.inline
-  implicit class GetDomainDeliverabilityCampaignResponseMutableBuilder[Self <: GetDomainDeliverabilityCampaignResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainDeliverabilityCampaignResponse](x: Self) {
     
-    @scala.inline
-    def setDomainDeliverabilityCampaign(value: DomainDeliverabilityCampaign): Self = StObject.set(x, "DomainDeliverabilityCampaign", value.asInstanceOf[js.Any])
+    inline def setDomainDeliverabilityCampaign(value: DomainDeliverabilityCampaign): Self = StObject.set(x, "DomainDeliverabilityCampaign", value.asInstanceOf[js.Any])
   }
 }

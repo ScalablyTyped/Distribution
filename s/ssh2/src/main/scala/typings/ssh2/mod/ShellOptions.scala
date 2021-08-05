@@ -15,25 +15,19 @@ trait ShellOptions extends StObject {
 }
 object ShellOptions {
   
-  @scala.inline
-  def apply(): ShellOptions = {
+  inline def apply(): ShellOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShellOptions]
   }
   
-  @scala.inline
-  implicit class ShellOptionsMutableBuilder[Self <: ShellOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShellOptions](x: Self) {
     
-    @scala.inline
-    def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setX11(value: Boolean | Double | X11Options): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
+    inline def setX11(value: Boolean | Double | X11Options): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX11Undefined: Self = StObject.set(x, "x11", js.undefined)
+    inline def setX11Undefined: Self = StObject.set(x, "x11", js.undefined)
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPivotTableMissingItems extends StObject
 object XlPivotTableMissingItems {
   
-  @scala.inline
-  def xlMissingItemsDefault: `-1` = -1.asInstanceOf[`-1`]
+  inline def xlMissingItemsDefault: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def xlMissingItemsMax: `32500` = 32500.asInstanceOf[`32500`]
+  inline def xlMissingItemsMax: `32500` = 32500.asInstanceOf[`32500`]
   
-  @scala.inline
-  def xlMissingItemsMax2: `1048576` = 1048576.asInstanceOf[`1048576`]
+  inline def xlMissingItemsMax2: `1048576` = 1048576.asInstanceOf[`1048576`]
   
-  @scala.inline
-  def xlMissingItemsNone: `0` = 0.asInstanceOf[`0`]
+  inline def xlMissingItemsNone: `0` = 0.asInstanceOf[`0`]
 }

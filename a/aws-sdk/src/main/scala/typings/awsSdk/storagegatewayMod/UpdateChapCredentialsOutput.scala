@@ -18,25 +18,19 @@ trait UpdateChapCredentialsOutput extends StObject {
 }
 object UpdateChapCredentialsOutput {
   
-  @scala.inline
-  def apply(): UpdateChapCredentialsOutput = {
+  inline def apply(): UpdateChapCredentialsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateChapCredentialsOutput]
   }
   
-  @scala.inline
-  implicit class UpdateChapCredentialsOutputMutableBuilder[Self <: UpdateChapCredentialsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateChapCredentialsOutput](x: Self) {
     
-    @scala.inline
-    def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
+    inline def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorNameUndefined: Self = StObject.set(x, "InitiatorName", js.undefined)
+    inline def setInitiatorNameUndefined: Self = StObject.set(x, "InitiatorName", js.undefined)
     
-    @scala.inline
-    def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
+    inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
+    inline def setTargetARNUndefined: Self = StObject.set(x, "TargetARN", js.undefined)
   }
 }

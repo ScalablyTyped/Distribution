@@ -17,34 +17,25 @@ trait SortCaret extends StObject {
 }
 object SortCaret {
   
-  @scala.inline
-  def apply(order: SortOrder): SortCaret = {
+  inline def apply(order: SortOrder): SortCaret = {
     val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortCaret]
   }
   
-  @scala.inline
-  implicit class SortCaretMutableBuilder[Self <: SortCaret] (val x: Self) extends AnyVal {
+  extension [Self <: SortCaret](x: Self) {
     
-    @scala.inline
-    def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
+    inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
     
-    @scala.inline
-    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCaret(value: js.Any): Self = StObject.set(x, "sortCaret", value.asInstanceOf[js.Any])
+    inline def setSortCaret(value: js.Any): Self = StObject.set(x, "sortCaret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCaretUndefined: Self = StObject.set(x, "sortCaret", js.undefined)
+    inline def setSortCaretUndefined: Self = StObject.set(x, "sortCaret", js.undefined)
     
-    @scala.inline
-    def setSortFunc(value: js.Any): Self = StObject.set(x, "sortFunc", value.asInstanceOf[js.Any])
+    inline def setSortFunc(value: js.Any): Self = StObject.set(x, "sortFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortFuncUndefined: Self = StObject.set(x, "sortFunc", js.undefined)
+    inline def setSortFuncUndefined: Self = StObject.set(x, "sortFunc", js.undefined)
   }
 }

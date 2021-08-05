@@ -39,8 +39,7 @@ trait Index
 }
 object Index {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Catalog: String,
     Columns: XNameAccess,
     IsClustered: Boolean,
@@ -65,22 +64,16 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  @scala.inline
-  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+  extension [Self <: Index](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: String): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: String): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClustered(value: Boolean): Self = StObject.set(x, "IsClustered", value.asInstanceOf[js.Any])
+    inline def setIsClustered(value: Boolean): Self = StObject.set(x, "IsClustered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrimaryKeyIndex(value: Boolean): Self = StObject.set(x, "IsPrimaryKeyIndex", value.asInstanceOf[js.Any])
+    inline def setIsPrimaryKeyIndex(value: Boolean): Self = StObject.set(x, "IsPrimaryKeyIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnique(value: Boolean): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
+    inline def setIsUnique(value: Boolean): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

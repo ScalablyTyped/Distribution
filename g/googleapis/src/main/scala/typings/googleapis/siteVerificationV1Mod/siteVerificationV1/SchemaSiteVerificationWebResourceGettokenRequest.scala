@@ -21,25 +21,19 @@ trait SchemaSiteVerificationWebResourceGettokenRequest extends StObject {
 }
 object SchemaSiteVerificationWebResourceGettokenRequest {
   
-  @scala.inline
-  def apply(): SchemaSiteVerificationWebResourceGettokenRequest = {
+  inline def apply(): SchemaSiteVerificationWebResourceGettokenRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSiteVerificationWebResourceGettokenRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSiteVerificationWebResourceGettokenRequestMutableBuilder[Self <: SchemaSiteVerificationWebResourceGettokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSiteVerificationWebResourceGettokenRequest](x: Self) {
     
-    @scala.inline
-    def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    inline def setSite(value: Identifier): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+    inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
-    @scala.inline
-    def setVerificationMethod(value: String): Self = StObject.set(x, "verificationMethod", value.asInstanceOf[js.Any])
+    inline def setVerificationMethod(value: String): Self = StObject.set(x, "verificationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationMethodUndefined: Self = StObject.set(x, "verificationMethod", js.undefined)
+    inline def setVerificationMethodUndefined: Self = StObject.set(x, "verificationMethod", js.undefined)
   }
 }

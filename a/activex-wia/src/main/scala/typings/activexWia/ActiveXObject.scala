@@ -25,8 +25,7 @@ trait ActiveXObject extends StObject {
 }
 object ActiveXObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     on: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]) => Unit,
     set: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit
   ): ActiveXObject = {
@@ -34,15 +33,12 @@ object ActiveXObject {
     __obj.asInstanceOf[ActiveXObject]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectMutableBuilder[Self <: ActiveXObject] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObject](x: Self) {
     
-    @scala.inline
-    def setOn(
+    inline def setOn(
       value: (DeviceManager, OnEvent, js.Tuple3[EventID, DeviceID, ItemID], js.ThisFunction1[/* this */ DeviceManager, /* parameter */ typings.activexWia.anon.DeviceID, Unit]) => Unit
     ): Self = StObject.set(x, "on", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSet(value: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    inline def setSet(value: (Vector[js.Any], Item, js.Array[Double], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
   }
 }

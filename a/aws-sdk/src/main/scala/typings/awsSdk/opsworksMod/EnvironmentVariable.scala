@@ -23,25 +23,19 @@ trait EnvironmentVariable extends StObject {
 }
 object EnvironmentVariable {
   
-  @scala.inline
-  def apply(Key: String, Value: String): EnvironmentVariable = {
+  inline def apply(Key: String, Value: String): EnvironmentVariable = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentVariable]
   }
   
-  @scala.inline
-  implicit class EnvironmentVariableMutableBuilder[Self <: EnvironmentVariable] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentVariable](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "Secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "Secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureUndefined: Self = StObject.set(x, "Secure", js.undefined)
+    inline def setSecureUndefined: Self = StObject.set(x, "Secure", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ trait FoldableWithIndex[F, I]
 }
 object FoldableWithIndex {
   
-  @scala.inline
-  def apply[F, I](
+  inline def apply[F, I](
     URI: F,
     foldMap: Monoid[js.Any] => js.Function2[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
@@ -52,11 +51,9 @@ object FoldableWithIndex {
     __obj.asInstanceOf[FoldableWithIndex[F, I]]
   }
   
-  @scala.inline
-  implicit class FoldableWithIndexMutableBuilder[Self <: FoldableWithIndex[?, ?], F, I] (val x: Self & (FoldableWithIndex[F, I])) extends AnyVal {
+  extension [Self <: FoldableWithIndex[?, ?], F, I](x: Self & (FoldableWithIndex[F, I])) {
     
-    @scala.inline
-    def setFoldMapWithIndex(
+    inline def setFoldMapWithIndex(
       value: Monoid[js.Any] => js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ /* fa */ js.Any, 
           /* f */ js.Function2[/* i */ I, /* a */ js.Any, js.Any], 
@@ -64,13 +61,11 @@ object FoldableWithIndex {
         ]
     ): Self = StObject.set(x, "foldMapWithIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduceRightWithIndex(
+    inline def setReduceRightWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceRightWithIndex", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReduceWithIndex(
+    inline def setReduceWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Any, js.Function3[/* i */ I, js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceWithIndex", js.Any.fromFunction3(value))
   }

@@ -18,19 +18,15 @@ trait AssociateIamInstanceProfileRequest extends StObject {
 }
 object AssociateIamInstanceProfileRequest {
   
-  @scala.inline
-  def apply(IamInstanceProfile: IamInstanceProfileSpecification, InstanceId: InstanceId): AssociateIamInstanceProfileRequest = {
+  inline def apply(IamInstanceProfile: IamInstanceProfileSpecification, InstanceId: InstanceId): AssociateIamInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(IamInstanceProfile = IamInstanceProfile.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateIamInstanceProfileRequest]
   }
   
-  @scala.inline
-  implicit class AssociateIamInstanceProfileRequestMutableBuilder[Self <: AssociateIamInstanceProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateIamInstanceProfileRequest](x: Self) {
     
-    @scala.inline
-    def setIamInstanceProfile(value: IamInstanceProfileSpecification): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
+    inline def setIamInstanceProfile(value: IamInstanceProfileSpecification): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

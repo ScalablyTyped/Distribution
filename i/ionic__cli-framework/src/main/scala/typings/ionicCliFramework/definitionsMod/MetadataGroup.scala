@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetadataGroup extends StObject
 object MetadataGroup {
   
-  @scala.inline
-  def ADVANCED: advanced = "advanced".asInstanceOf[advanced]
+  inline def ADVANCED: advanced = "advanced".asInstanceOf[advanced]
   
-  @scala.inline
-  def BETA: beta = "beta".asInstanceOf[beta]
+  inline def BETA: beta = "beta".asInstanceOf[beta]
   
-  @scala.inline
-  def DEPRECATED: deprecated = "deprecated".asInstanceOf[deprecated]
+  inline def DEPRECATED: deprecated = "deprecated".asInstanceOf[deprecated]
   
-  @scala.inline
-  def EXPERIMENTAL: experimental = "experimental".asInstanceOf[experimental]
+  inline def EXPERIMENTAL: experimental = "experimental".asInstanceOf[experimental]
   
-  @scala.inline
-  def HIDDEN: hidden = "hidden".asInstanceOf[hidden]
+  inline def HIDDEN: hidden = "hidden".asInstanceOf[hidden]
   
-  @scala.inline
-  def PAID: paid = "paid".asInstanceOf[paid]
+  inline def PAID: paid = "paid".asInstanceOf[paid]
 }

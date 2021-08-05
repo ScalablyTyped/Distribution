@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathRad")
 @js.native
-class OMathRad protected ()
+/* private */ class OMathRad ()
   extends StObject
      with typings.activexWord.Word.OMathRad {
   
@@ -28,7 +28,7 @@ class OMathRad protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathRad_typekey")
   var WordDotOMathRad_typekey: typings.activexWord.Word.OMathRad = js.native
 }

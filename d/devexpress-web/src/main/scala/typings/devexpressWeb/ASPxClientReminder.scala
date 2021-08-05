@@ -44,8 +44,7 @@ trait ASPxClientReminder extends StObject {
 }
 object ASPxClientReminder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dismiss: () => Unit,
     GetAlertTime: () => Date,
     GetCustomField: String => js.Any,
@@ -57,25 +56,18 @@ object ASPxClientReminder {
     __obj.asInstanceOf[ASPxClientReminder]
   }
   
-  @scala.inline
-  implicit class ASPxClientReminderMutableBuilder[Self <: ASPxClientReminder] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientReminder](x: Self) {
     
-    @scala.inline
-    def setDismiss(value: () => Unit): Self = StObject.set(x, "Dismiss", js.Any.fromFunction0(value))
+    inline def setDismiss(value: () => Unit): Self = StObject.set(x, "Dismiss", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAlertTime(value: () => Date): Self = StObject.set(x, "GetAlertTime", js.Any.fromFunction0(value))
+    inline def setGetAlertTime(value: () => Date): Self = StObject.set(x, "GetAlertTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCustomField(value: String => js.Any): Self = StObject.set(x, "GetCustomField", js.Any.fromFunction1(value))
+    inline def setGetCustomField(value: String => js.Any): Self = StObject.set(x, "GetCustomField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTimeBeforeStart(value: () => Date): Self = StObject.set(x, "GetTimeBeforeStart", js.Any.fromFunction0(value))
+    inline def setGetTimeBeforeStart(value: () => Date): Self = StObject.set(x, "GetTimeBeforeStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSnooze(value: Double => Unit): Self = StObject.set(x, "Snooze", js.Any.fromFunction1(value))
+    inline def setSnooze(value: Double => Unit): Self = StObject.set(x, "Snooze", js.Any.fromFunction1(value))
   }
 }

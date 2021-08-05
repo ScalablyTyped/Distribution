@@ -25,26 +25,20 @@ object loggerMod {
   }
   object Bindings {
     
-    @scala.inline
-    def apply(): Bindings = {
+    inline def apply(): Bindings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bindings]
     }
     
-    @scala.inline
-    implicit class BindingsMutableBuilder[Self <: Bindings] (val x: Self) extends AnyVal {
+    extension [Self <: Bindings](x: Self) {
       
-      @scala.inline
-      def setLevel(value: LogLevel | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setSerializers(value: StringDictionary[SerializerFn]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: StringDictionary[SerializerFn]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
     }
   }
   
@@ -98,8 +92,7 @@ object loggerMod {
   }
   object FastifyLoggerInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       child: Bindings => FastifyLoggerInstance,
       debug: FastifyLogFn,
       error: FastifyLogFn,
@@ -112,29 +105,21 @@ object loggerMod {
       __obj.asInstanceOf[FastifyLoggerInstance]
     }
     
-    @scala.inline
-    implicit class FastifyLoggerInstanceMutableBuilder[Self <: FastifyLoggerInstance] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyLoggerInstance](x: Self) {
       
-      @scala.inline
-      def setChild(value: Bindings => FastifyLoggerInstance): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: Bindings => FastifyLoggerInstance): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebug(value: FastifyLogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: FastifyLogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: FastifyLogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: FastifyLogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatal(value: FastifyLogFn): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: FastifyLogFn): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: FastifyLogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: FastifyLogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrace(value: FastifyLogFn): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: FastifyLogFn): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: FastifyLogFn): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: FastifyLogFn): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,38 +137,28 @@ object loggerMod {
   }
   object FastifyLoggerOptions {
     
-    @scala.inline
-    def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */](): FastifyLoggerOptions[RawServer, RawRequest, RawReply] = {
+    inline def apply[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */](): FastifyLoggerOptions[RawServer, RawRequest, RawReply] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastifyLoggerOptions[RawServer, RawRequest, RawReply]]
     }
     
-    @scala.inline
-    implicit class FastifyLoggerOptionsMutableBuilder[Self <: FastifyLoggerOptions[?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */] (val x: Self & (FastifyLoggerOptions[RawServer, RawRequest, RawReply])) extends AnyVal {
+    extension [Self <: FastifyLoggerOptions[?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */](x: Self & (FastifyLoggerOptions[RawServer, RawRequest, RawReply])) {
       
-      @scala.inline
-      def setGenReqId(value: /* req */ FastifyRequest[RequestGenericInterface, RawServer, RawRequest] => String): Self = StObject.set(x, "genReqId", js.Any.fromFunction1(value))
+      inline def setGenReqId(value: /* req */ FastifyRequest[RequestGenericInterface, RawServer, RawRequest] => String): Self = StObject.set(x, "genReqId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenReqIdUndefined: Self = StObject.set(x, "genReqId", js.undefined)
+      inline def setGenReqIdUndefined: Self = StObject.set(x, "genReqId", js.undefined)
       
-      @scala.inline
-      def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      inline def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
       
-      @scala.inline
-      def setSerializers(value: Err[RawRequest, RawReply, RawServer]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: Err[RawRequest, RawReply, RawServer]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
     }
   }
   
@@ -198,23 +173,17 @@ object loggerMod {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def debug: typings.fastify.fastifyStrings.debug = "debug".asInstanceOf[typings.fastify.fastifyStrings.debug]
+    inline def debug: typings.fastify.fastifyStrings.debug = "debug".asInstanceOf[typings.fastify.fastifyStrings.debug]
     
-    @scala.inline
-    def error: typings.fastify.fastifyStrings.error = "error".asInstanceOf[typings.fastify.fastifyStrings.error]
+    inline def error: typings.fastify.fastifyStrings.error = "error".asInstanceOf[typings.fastify.fastifyStrings.error]
     
-    @scala.inline
-    def fatal: typings.fastify.fastifyStrings.fatal = "fatal".asInstanceOf[typings.fastify.fastifyStrings.fatal]
+    inline def fatal: typings.fastify.fastifyStrings.fatal = "fatal".asInstanceOf[typings.fastify.fastifyStrings.fatal]
     
-    @scala.inline
-    def info: typings.fastify.fastifyStrings.info = "info".asInstanceOf[typings.fastify.fastifyStrings.info]
+    inline def info: typings.fastify.fastifyStrings.info = "info".asInstanceOf[typings.fastify.fastifyStrings.info]
     
-    @scala.inline
-    def trace: typings.fastify.fastifyStrings.trace = "trace".asInstanceOf[typings.fastify.fastifyStrings.trace]
+    inline def trace: typings.fastify.fastifyStrings.trace = "trace".asInstanceOf[typings.fastify.fastifyStrings.trace]
     
-    @scala.inline
-    def warn: typings.fastify.fastifyStrings.warn = "warn".asInstanceOf[typings.fastify.fastifyStrings.warn]
+    inline def warn: typings.fastify.fastifyStrings.warn = "warn".asInstanceOf[typings.fastify.fastifyStrings.warn]
   }
   
   trait PrettyOptions extends StObject {
@@ -285,89 +254,62 @@ object loggerMod {
   }
   object PrettyOptions {
     
-    @scala.inline
-    def apply(): PrettyOptions = {
+    inline def apply(): PrettyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PrettyOptions]
     }
     
-    @scala.inline
-    implicit class PrettyOptionsMutableBuilder[Self <: PrettyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PrettyOptions](x: Self) {
       
-      @scala.inline
-      def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
+      inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
+      inline def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
       
-      @scala.inline
-      def setCrlf(value: Boolean): Self = StObject.set(x, "crlf", value.asInstanceOf[js.Any])
+      inline def setCrlf(value: Boolean): Self = StObject.set(x, "crlf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrlfUndefined: Self = StObject.set(x, "crlf", js.undefined)
+      inline def setCrlfUndefined: Self = StObject.set(x, "crlf", js.undefined)
       
-      @scala.inline
-      def setErrorLikeObjectKeys(value: js.Array[String]): Self = StObject.set(x, "errorLikeObjectKeys", value.asInstanceOf[js.Any])
+      inline def setErrorLikeObjectKeys(value: js.Array[String]): Self = StObject.set(x, "errorLikeObjectKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorLikeObjectKeysUndefined: Self = StObject.set(x, "errorLikeObjectKeys", js.undefined)
+      inline def setErrorLikeObjectKeysUndefined: Self = StObject.set(x, "errorLikeObjectKeys", js.undefined)
       
-      @scala.inline
-      def setErrorLikeObjectKeysVarargs(value: String*): Self = StObject.set(x, "errorLikeObjectKeys", js.Array(value :_*))
+      inline def setErrorLikeObjectKeysVarargs(value: String*): Self = StObject.set(x, "errorLikeObjectKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setErrorProps(value: String): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
+      inline def setErrorProps(value: String): Self = StObject.set(x, "errorProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
+      inline def setErrorPropsUndefined: Self = StObject.set(x, "errorProps", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setLevelFirst(value: Boolean): Self = StObject.set(x, "levelFirst", value.asInstanceOf[js.Any])
+      inline def setLevelFirst(value: Boolean): Self = StObject.set(x, "levelFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelFirstUndefined: Self = StObject.set(x, "levelFirst", js.undefined)
+      inline def setLevelFirstUndefined: Self = StObject.set(x, "levelFirst", js.undefined)
       
-      @scala.inline
-      def setMessageFormat(value: `false` | String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+      inline def setMessageFormat(value: `false` | String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+      inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
       
-      @scala.inline
-      def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
+      inline def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
+      inline def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setSuppressFlushSyncWarning(value: Boolean): Self = StObject.set(x, "suppressFlushSyncWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressFlushSyncWarning(value: Boolean): Self = StObject.set(x, "suppressFlushSyncWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressFlushSyncWarningUndefined: Self = StObject.set(x, "suppressFlushSyncWarning", js.undefined)
+      inline def setSuppressFlushSyncWarningUndefined: Self = StObject.set(x, "suppressFlushSyncWarning", js.undefined)
       
-      @scala.inline
-      def setTimestampKey(value: String): Self = StObject.set(x, "timestampKey", value.asInstanceOf[js.Any])
+      inline def setTimestampKey(value: String): Self = StObject.set(x, "timestampKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampKeyUndefined: Self = StObject.set(x, "timestampKey", js.undefined)
+      inline def setTimestampKeyUndefined: Self = StObject.set(x, "timestampKey", js.undefined)
       
-      @scala.inline
-      def setTranslateTime(value: Boolean | String): Self = StObject.set(x, "translateTime", value.asInstanceOf[js.Any])
+      inline def setTranslateTime(value: Boolean | String): Self = StObject.set(x, "translateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateTimeUndefined: Self = StObject.set(x, "translateTime", js.undefined)
+      inline def setTranslateTimeUndefined: Self = StObject.set(x, "translateTime", js.undefined)
     }
   }
   

@@ -9,8 +9,7 @@ object ConstOfSecurityId {
   
   object Constants {
     
-    @scala.inline
-    def UNDEFINEDSECURITYID: `-1` = -1.asInstanceOf[`-1`]
+    inline def UNDEFINEDSECURITYID: `-1` = -1.asInstanceOf[`-1`]
   }
   type Constants = `-1`
 }

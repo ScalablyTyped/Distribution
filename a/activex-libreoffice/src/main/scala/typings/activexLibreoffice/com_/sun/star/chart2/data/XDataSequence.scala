@@ -61,8 +61,7 @@ trait XDataSequence
 }
 object XDataSequence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Data: SafeArray[js.Any],
     SourceRangeRepresentation: String,
     acquire: () => Unit,
@@ -77,25 +76,18 @@ object XDataSequence {
     __obj.asInstanceOf[XDataSequence]
   }
   
-  @scala.inline
-  implicit class XDataSequenceMutableBuilder[Self <: XDataSequence] (val x: Self) extends AnyVal {
+  extension [Self <: XDataSequence](x: Self) {
     
-    @scala.inline
-    def setData(value: SafeArray[js.Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: SafeArray[js.Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateLabel(value: LabelOrigin => SafeArray[String]): Self = StObject.set(x, "generateLabel", js.Any.fromFunction1(value))
+    inline def setGenerateLabel(value: LabelOrigin => SafeArray[String]): Self = StObject.set(x, "generateLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetData(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => SafeArray[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberFormatKeyByIndex(value: Double => Double): Self = StObject.set(x, "getNumberFormatKeyByIndex", js.Any.fromFunction1(value))
+    inline def setGetNumberFormatKeyByIndex(value: Double => Double): Self = StObject.set(x, "getNumberFormatKeyByIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSourceRangeRepresentation(value: () => String): Self = StObject.set(x, "getSourceRangeRepresentation", js.Any.fromFunction0(value))
+    inline def setGetSourceRangeRepresentation(value: () => String): Self = StObject.set(x, "getSourceRangeRepresentation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSourceRangeRepresentation(value: String): Self = StObject.set(x, "SourceRangeRepresentation", value.asInstanceOf[js.Any])
+    inline def setSourceRangeRepresentation(value: String): Self = StObject.set(x, "SourceRangeRepresentation", value.asInstanceOf[js.Any])
   }
 }

@@ -29,23 +29,18 @@ trait IntermediatePaymentMethodData extends StObject {
 }
 object IntermediatePaymentMethodData {
   
-  @scala.inline
-  def apply(`type`: PaymentMethodType): IntermediatePaymentMethodData = {
+  inline def apply(`type`: PaymentMethodType): IntermediatePaymentMethodData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntermediatePaymentMethodData]
   }
   
-  @scala.inline
-  implicit class IntermediatePaymentMethodDataMutableBuilder[Self <: IntermediatePaymentMethodData] (val x: Self) extends AnyVal {
+  extension [Self <: IntermediatePaymentMethodData](x: Self) {
     
-    @scala.inline
-    def setInfo(value: IntermediateCardInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: IntermediateCardInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

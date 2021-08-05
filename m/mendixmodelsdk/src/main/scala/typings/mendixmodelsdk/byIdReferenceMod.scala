@@ -37,13 +37,13 @@ object byIdReferenceMod {
       */
     def intercept(callback: js.Function1[/* change */ IValueWillChange[T | Null], IValueWillChange[T | Null]]): IVoidCallback = js.native
     
-    var isResolved: Boolean = js.native
+    /* protected */ var isResolved: Boolean = js.native
     
-    var isResolving: Boolean = js.native
+    /* protected */ var isResolving: Boolean = js.native
     
     var owner: AbstractElement[IAbstractModel, Container] = js.native
     
-    var referenceId: String | Null = js.native
+    /* protected */ var referenceId: String | Null = js.native
     
     def resolve(): Unit = js.native
     

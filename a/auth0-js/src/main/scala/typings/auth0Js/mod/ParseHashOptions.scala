@@ -19,43 +19,31 @@ trait ParseHashOptions extends StObject {
 }
 object ParseHashOptions {
   
-  @scala.inline
-  def apply(): ParseHashOptions = {
+  inline def apply(): ParseHashOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParseHashOptions]
   }
   
-  @scala.inline
-  implicit class ParseHashOptionsMutableBuilder[Self <: ParseHashOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParseHashOptions](x: Self) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def set__enableIdPInitiatedLogin(value: Boolean): Self = StObject.set(x, "__enableIdPInitiatedLogin", value.asInstanceOf[js.Any])
+    inline def set__enableIdPInitiatedLogin(value: Boolean): Self = StObject.set(x, "__enableIdPInitiatedLogin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__enableIdPInitiatedLoginUndefined: Self = StObject.set(x, "__enableIdPInitiatedLogin", js.undefined)
+    inline def set__enableIdPInitiatedLoginUndefined: Self = StObject.set(x, "__enableIdPInitiatedLogin", js.undefined)
     
-    @scala.inline
-    def set_idTokenVerification(value: Boolean): Self = StObject.set(x, "_idTokenVerification", value.asInstanceOf[js.Any])
+    inline def set_idTokenVerification(value: Boolean): Self = StObject.set(x, "_idTokenVerification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_idTokenVerificationUndefined: Self = StObject.set(x, "_idTokenVerification", js.undefined)
+    inline def set_idTokenVerificationUndefined: Self = StObject.set(x, "_idTokenVerification", js.undefined)
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlDesignMode extends StObject
 object htmlDesignMode {
   
-  @scala.inline
-  def htmlDesignModeInherit: `-2` = -2.asInstanceOf[`-2`]
+  inline def htmlDesignModeInherit: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def htmlDesignModeOff: `0` = 0.asInstanceOf[`0`]
+  inline def htmlDesignModeOff: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlDesignModeOn: `-1` = -1.asInstanceOf[`-1`]
+  inline def htmlDesignModeOn: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def htmlDesignMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlDesignMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

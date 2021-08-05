@@ -61,112 +61,77 @@ trait AdapterOptions extends StObject {
 }
 object AdapterOptions {
   
-  @scala.inline
-  def apply(name: String): AdapterOptions = {
+  inline def apply(name: String): AdapterOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdapterOptions]
   }
   
-  @scala.inline
-  implicit class AdapterOptionsMutableBuilder[Self <: AdapterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AdapterOptions](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+    inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
+    inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
     
-    @scala.inline
-    def setError(value: /* err */ Error => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* err */ Error => Boolean): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInstance(value: Double): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Double): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setLogTransporter(value: Boolean): Self = StObject.set(x, "logTransporter", value.asInstanceOf[js.Any])
+    inline def setLogTransporter(value: Boolean): Self = StObject.set(x, "logTransporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTransporterUndefined: Self = StObject.set(x, "logTransporter", js.undefined)
+    inline def setLogTransporterUndefined: Self = StObject.set(x, "logTransporter", js.undefined)
     
-    @scala.inline
-    def setMessage(value: /* obj */ Message => Unit | js.Promise[Unit]): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+    inline def setMessage(value: /* obj */ Message => Unit | js.Promise[Unit]): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoNamespace(value: Boolean): Self = StObject.set(x, "noNamespace", value.asInstanceOf[js.Any])
+    inline def setNoNamespace(value: Boolean): Self = StObject.set(x, "noNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoNamespaceUndefined: Self = StObject.set(x, "noNamespace", js.undefined)
+    inline def setNoNamespaceUndefined: Self = StObject.set(x, "noNamespace", js.undefined)
     
-    @scala.inline
-    def setObjectChange(value: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "objectChange", js.Any.fromFunction2(value))
+    inline def setObjectChange(value: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "objectChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setObjectChangeUndefined: Self = StObject.set(x, "objectChange", js.undefined)
+    inline def setObjectChangeUndefined: Self = StObject.set(x, "objectChange", js.undefined)
     
-    @scala.inline
-    def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: Boolean): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
+    inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
-    @scala.inline
-    def setReady(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    inline def setReady(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
-    @scala.inline
-    def setStateChange(value: (/* id */ String, /* obj */ js.UndefOr[State | Null]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "stateChange", js.Any.fromFunction2(value))
+    inline def setStateChange(value: (/* id */ String, /* obj */ js.UndefOr[State | Null]) => Unit | js.Promise[Unit]): Self = StObject.set(x, "stateChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
+    inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
     
-    @scala.inline
-    def setStates(value: Boolean): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: Boolean): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    @scala.inline
-    def setStrictObjectChecks(value: Boolean): Self = StObject.set(x, "strictObjectChecks", value.asInstanceOf[js.Any])
+    inline def setStrictObjectChecks(value: Boolean): Self = StObject.set(x, "strictObjectChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictObjectChecksUndefined: Self = StObject.set(x, "strictObjectChecks", js.undefined)
+    inline def setStrictObjectChecksUndefined: Self = StObject.set(x, "strictObjectChecks", js.undefined)
     
-    @scala.inline
-    def setSystemConfig(value: Boolean): Self = StObject.set(x, "systemConfig", value.asInstanceOf[js.Any])
+    inline def setSystemConfig(value: Boolean): Self = StObject.set(x, "systemConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemConfigUndefined: Self = StObject.set(x, "systemConfig", js.undefined)
+    inline def setSystemConfigUndefined: Self = StObject.set(x, "systemConfig", js.undefined)
     
-    @scala.inline
-    def setUnload(value: /* callback */ EmptyCallback => Unit | js.Promise[Unit]): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
+    inline def setUnload(value: /* callback */ EmptyCallback => Unit | js.Promise[Unit]): Self = StObject.set(x, "unload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
+    inline def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
     
-    @scala.inline
-    def setUseFormatDate(value: Boolean): Self = StObject.set(x, "useFormatDate", value.asInstanceOf[js.Any])
+    inline def setUseFormatDate(value: Boolean): Self = StObject.set(x, "useFormatDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFormatDateUndefined: Self = StObject.set(x, "useFormatDate", js.undefined)
+    inline def setUseFormatDateUndefined: Self = StObject.set(x, "useFormatDate", js.undefined)
   }
 }

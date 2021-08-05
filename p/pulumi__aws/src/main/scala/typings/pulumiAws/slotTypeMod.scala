@@ -94,21 +94,16 @@ object slotTypeMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SlotType]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SlotType]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SlotTypeState): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SlotType]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SlotTypeState, opts: CustomResourceOptions): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SlotType]
+    inline def get(name: String, id: Input[ID]): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SlotType]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SlotType]
+    inline def get(name: String, id: Input[ID], state: SlotTypeState): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SlotType]
+    inline def get(name: String, id: Input[ID], state: SlotTypeState, opts: CustomResourceOptions): SlotType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SlotType]
     
     /**
       * Returns true if the given object is an instance of SlotType.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/slotType.SlotType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/slotType.SlotType */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/slotType.SlotType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/slotType.SlotType */ Boolean]
   }
   
   trait SlotTypeArgs extends StObject {
@@ -147,44 +142,32 @@ object slotTypeMod {
   }
   object SlotTypeArgs {
     
-    @scala.inline
-    def apply(enumerationValues: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]]]): SlotTypeArgs = {
+    inline def apply(enumerationValues: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]]]): SlotTypeArgs = {
       val __obj = js.Dynamic.literal(enumerationValues = enumerationValues.asInstanceOf[js.Any])
       __obj.asInstanceOf[SlotTypeArgs]
     }
     
-    @scala.inline
-    implicit class SlotTypeArgsMutableBuilder[Self <: SlotTypeArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SlotTypeArgs](x: Self) {
       
-      @scala.inline
-      def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
+      inline def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
+      inline def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnumerationValues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]]]): Self = StObject.set(x, "enumerationValues", value.asInstanceOf[js.Any])
+      inline def setEnumerationValues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]]]): Self = StObject.set(x, "enumerationValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerationValuesVarargs(value: Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
+      inline def setEnumerationValuesVarargs(value: Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setValueSelectionStrategy(value: Input[String]): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
+      inline def setValueSelectionStrategy(value: Input[String]): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueSelectionStrategyUndefined: Self = StObject.set(x, "valueSelectionStrategy", js.undefined)
+      inline def setValueSelectionStrategyUndefined: Self = StObject.set(x, "valueSelectionStrategy", js.undefined)
     }
   }
   
@@ -245,71 +228,50 @@ object slotTypeMod {
   }
   object SlotTypeState {
     
-    @scala.inline
-    def apply(): SlotTypeState = {
+    inline def apply(): SlotTypeState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SlotTypeState]
     }
     
-    @scala.inline
-    implicit class SlotTypeStateMutableBuilder[Self <: SlotTypeState] (val x: Self) extends AnyVal {
+    extension [Self <: SlotTypeState](x: Self) {
       
-      @scala.inline
-      def setChecksum(value: Input[String]): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: Input[String]): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
       
-      @scala.inline
-      def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
+      inline def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
+      inline def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
       
-      @scala.inline
-      def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+      inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEnumerationValues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]]]): Self = StObject.set(x, "enumerationValues", value.asInstanceOf[js.Any])
+      inline def setEnumerationValues(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]]]): Self = StObject.set(x, "enumerationValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumerationValuesUndefined: Self = StObject.set(x, "enumerationValues", js.undefined)
+      inline def setEnumerationValuesUndefined: Self = StObject.set(x, "enumerationValues", js.undefined)
       
-      @scala.inline
-      def setEnumerationValuesVarargs(value: Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
+      inline def setEnumerationValuesVarargs(value: Input[typings.pulumiAws.inputMod.lex.SlotTypeEnumerationValue]*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
       
-      @scala.inline
-      def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
+      inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setValueSelectionStrategy(value: Input[String]): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
+      inline def setValueSelectionStrategy(value: Input[String]): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueSelectionStrategyUndefined: Self = StObject.set(x, "valueSelectionStrategy", js.undefined)
+      inline def setValueSelectionStrategyUndefined: Self = StObject.set(x, "valueSelectionStrategy", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

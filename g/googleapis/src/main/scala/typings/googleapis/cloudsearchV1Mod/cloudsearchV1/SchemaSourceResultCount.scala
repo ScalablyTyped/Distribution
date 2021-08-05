@@ -31,37 +31,27 @@ trait SchemaSourceResultCount extends StObject {
 }
 object SchemaSourceResultCount {
   
-  @scala.inline
-  def apply(): SchemaSourceResultCount = {
+  inline def apply(): SchemaSourceResultCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceResultCount]
   }
   
-  @scala.inline
-  implicit class SchemaSourceResultCountMutableBuilder[Self <: SchemaSourceResultCount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceResultCount](x: Self) {
     
-    @scala.inline
-    def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
+    inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
+    inline def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
     
-    @scala.inline
-    def setResultCountEstimate(value: String): Self = StObject.set(x, "resultCountEstimate", value.asInstanceOf[js.Any])
+    inline def setResultCountEstimate(value: String): Self = StObject.set(x, "resultCountEstimate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultCountEstimateUndefined: Self = StObject.set(x, "resultCountEstimate", js.undefined)
+    inline def setResultCountEstimateUndefined: Self = StObject.set(x, "resultCountEstimate", js.undefined)
     
-    @scala.inline
-    def setResultCountExact(value: String): Self = StObject.set(x, "resultCountExact", value.asInstanceOf[js.Any])
+    inline def setResultCountExact(value: String): Self = StObject.set(x, "resultCountExact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultCountExactUndefined: Self = StObject.set(x, "resultCountExact", js.undefined)
+    inline def setResultCountExactUndefined: Self = StObject.set(x, "resultCountExact", js.undefined)
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

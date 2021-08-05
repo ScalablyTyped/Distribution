@@ -16,17 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Super_ {
   
-  @scala.inline
-  def apply(): Super_ = {
+  inline def apply(): Super_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("Super")
     __obj.asInstanceOf[Super_]
   }
   
-  @scala.inline
-  implicit class Super_MutableBuilder[Self <: Super_] (val x: Self) extends AnyVal {
+  extension [Self <: Super_](x: Self) {
     
-    @scala.inline
-    def setType(value: Super): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Super): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

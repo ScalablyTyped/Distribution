@@ -40,8 +40,7 @@ object safebrowsingMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Safebrowsing
       ] = js.native
-    @scala.inline
-    def v4_=(
+    inline def v4_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object safebrowsingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object safebrowsingMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def safebrowsing(options: Options): Safebrowsing = ^.asInstanceOf[js.Dynamic].applyDynamic("safebrowsing")(options.asInstanceOf[js.Any]).asInstanceOf[Safebrowsing]
+  inline def safebrowsing(options: Options): Safebrowsing = ^.asInstanceOf[js.Dynamic].applyDynamic("safebrowsing")(options.asInstanceOf[js.Any]).asInstanceOf[Safebrowsing]
   
-  @scala.inline
-  def safebrowsing_v4(version: v4): Safebrowsing = ^.asInstanceOf[js.Dynamic].applyDynamic("safebrowsing")(version.asInstanceOf[js.Any]).asInstanceOf[Safebrowsing]
+  inline def safebrowsing_v4(version: v4): Safebrowsing = ^.asInstanceOf[js.Dynamic].applyDynamic("safebrowsing")(version.asInstanceOf[js.Any]).asInstanceOf[Safebrowsing]
 }

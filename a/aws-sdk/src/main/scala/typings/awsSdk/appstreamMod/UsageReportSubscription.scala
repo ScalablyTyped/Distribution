@@ -28,40 +28,29 @@ trait UsageReportSubscription extends StObject {
 }
 object UsageReportSubscription {
   
-  @scala.inline
-  def apply(): UsageReportSubscription = {
+  inline def apply(): UsageReportSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageReportSubscription]
   }
   
-  @scala.inline
-  implicit class UsageReportSubscriptionMutableBuilder[Self <: UsageReportSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: UsageReportSubscription](x: Self) {
     
-    @scala.inline
-    def setLastGeneratedReportDate(value: Timestamp): Self = StObject.set(x, "LastGeneratedReportDate", value.asInstanceOf[js.Any])
+    inline def setLastGeneratedReportDate(value: Timestamp): Self = StObject.set(x, "LastGeneratedReportDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastGeneratedReportDateUndefined: Self = StObject.set(x, "LastGeneratedReportDate", js.undefined)
+    inline def setLastGeneratedReportDateUndefined: Self = StObject.set(x, "LastGeneratedReportDate", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: UsageReportSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: UsageReportSchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
-    @scala.inline
-    def setSubscriptionErrors(value: LastReportGenerationExecutionErrors): Self = StObject.set(x, "SubscriptionErrors", value.asInstanceOf[js.Any])
+    inline def setSubscriptionErrors(value: LastReportGenerationExecutionErrors): Self = StObject.set(x, "SubscriptionErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionErrorsUndefined: Self = StObject.set(x, "SubscriptionErrors", js.undefined)
+    inline def setSubscriptionErrorsUndefined: Self = StObject.set(x, "SubscriptionErrors", js.undefined)
     
-    @scala.inline
-    def setSubscriptionErrorsVarargs(value: LastReportGenerationExecutionError*): Self = StObject.set(x, "SubscriptionErrors", js.Array(value :_*))
+    inline def setSubscriptionErrorsVarargs(value: LastReportGenerationExecutionError*): Self = StObject.set(x, "SubscriptionErrors", js.Array(value :_*))
   }
 }

@@ -16,7 +16,7 @@ trait LegendKey extends StObject {
   
   def Delete(): js.Any
   
-  @JSName("Excel.LegendKey_typekey")
+  /* private */ @JSName("Excel.LegendKey_typekey")
   var ExcelDotLegendKey_typekey: LegendKey
   
   val Fill: ChartFillFormat
@@ -63,8 +63,7 @@ trait LegendKey extends StObject {
 }
 object LegendKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Border: Border,
     ClearFormats: () => js.Any,
@@ -98,88 +97,60 @@ object LegendKey {
     __obj.asInstanceOf[LegendKey]
   }
   
-  @scala.inline
-  implicit class LegendKeyMutableBuilder[Self <: LegendKey] (val x: Self) extends AnyVal {
+  extension [Self <: LegendKey](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotLegendKey_typekey(value: LegendKey): Self = StObject.set(x, "Excel.LegendKey_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotLegendKey_typekey(value: LegendKey): Self = StObject.set(x, "Excel.LegendKey_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertIfNegative(value: Boolean): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
+    inline def setInvertIfNegative(value: Boolean): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerBackgroundColor(value: Double): Self = StObject.set(x, "MarkerBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setMarkerBackgroundColor(value: Double): Self = StObject.set(x, "MarkerBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerBackgroundColorIndex(value: XlColorIndex): Self = StObject.set(x, "MarkerBackgroundColorIndex", value.asInstanceOf[js.Any])
+    inline def setMarkerBackgroundColorIndex(value: XlColorIndex): Self = StObject.set(x, "MarkerBackgroundColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerForegroundColor(value: Double): Self = StObject.set(x, "MarkerForegroundColor", value.asInstanceOf[js.Any])
+    inline def setMarkerForegroundColor(value: Double): Self = StObject.set(x, "MarkerForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerForegroundColorIndex(value: XlColorIndex): Self = StObject.set(x, "MarkerForegroundColorIndex", value.asInstanceOf[js.Any])
+    inline def setMarkerForegroundColorIndex(value: XlColorIndex): Self = StObject.set(x, "MarkerForegroundColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerSize(value: Double): Self = StObject.set(x, "MarkerSize", value.asInstanceOf[js.Any])
+    inline def setMarkerSize(value: Double): Self = StObject.set(x, "MarkerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerStyle(value: XlMarkerStyle): Self = StObject.set(x, "MarkerStyle", value.asInstanceOf[js.Any])
+    inline def setMarkerStyle(value: XlMarkerStyle): Self = StObject.set(x, "MarkerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureType(value: Double): Self = StObject.set(x, "PictureType", value.asInstanceOf[js.Any])
+    inline def setPictureType(value: Double): Self = StObject.set(x, "PictureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureUnit(value: Double): Self = StObject.set(x, "PictureUnit", value.asInstanceOf[js.Any])
+    inline def setPictureUnit(value: Double): Self = StObject.set(x, "PictureUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureUnit2(value: Double): Self = StObject.set(x, "PictureUnit2", value.asInstanceOf[js.Any])
+    inline def setPictureUnit2(value: Double): Self = StObject.set(x, "PictureUnit2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmooth(value: Boolean): Self = StObject.set(x, "Smooth", value.asInstanceOf[js.Any])
+    inline def setSmooth(value: Boolean): Self = StObject.set(x, "Smooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

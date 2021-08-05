@@ -28,37 +28,27 @@ trait GetParametersForImportResponse extends StObject {
 }
 object GetParametersForImportResponse {
   
-  @scala.inline
-  def apply(): GetParametersForImportResponse = {
+  inline def apply(): GetParametersForImportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetParametersForImportResponse]
   }
   
-  @scala.inline
-  implicit class GetParametersForImportResponseMutableBuilder[Self <: GetParametersForImportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetParametersForImportResponse](x: Self) {
     
-    @scala.inline
-    def setImportToken(value: CiphertextType): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
+    inline def setImportToken(value: CiphertextType): Self = StObject.set(x, "ImportToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTokenUndefined: Self = StObject.set(x, "ImportToken", js.undefined)
+    inline def setImportTokenUndefined: Self = StObject.set(x, "ImportToken", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setParametersValidTo(value: DateType): Self = StObject.set(x, "ParametersValidTo", value.asInstanceOf[js.Any])
+    inline def setParametersValidTo(value: DateType): Self = StObject.set(x, "ParametersValidTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersValidToUndefined: Self = StObject.set(x, "ParametersValidTo", js.undefined)
+    inline def setParametersValidToUndefined: Self = StObject.set(x, "ParametersValidTo", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: PlaintextType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PlaintextType): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
   }
 }

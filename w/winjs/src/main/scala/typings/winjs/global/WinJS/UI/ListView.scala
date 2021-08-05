@@ -37,13 +37,11 @@ object ListView {
   @JSGlobal("WinJS.UI.ListView.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
   
   /**
     * Triggers the ListView disposal service manually.
     **/
   /* static member */
-  @scala.inline
-  def triggerDispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerDispose")().asInstanceOf[Unit]
+  inline def triggerDispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerDispose")().asInstanceOf[Unit]
 }

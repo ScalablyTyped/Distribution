@@ -24,7 +24,6 @@ object uuidMod {
       * turn will use the underlying `crypto` module of the platform if
       * it is available. The fallback for randomness is `Math.random`.
       */
-    @scala.inline
-    def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
+    inline def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
   }
 }

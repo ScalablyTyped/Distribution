@@ -47,8 +47,7 @@ trait ElevationTileData
 }
 object ElevationTileData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     height: Double,
@@ -62,25 +61,18 @@ object ElevationTileData {
     __obj.asInstanceOf[ElevationTileData]
   }
   
-  @scala.inline
-  implicit class ElevationTileDataMutableBuilder[Self <: ElevationTileData] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationTileData](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZError(value: Double): Self = StObject.set(x, "maxZError", value.asInstanceOf[js.Any])
+    inline def setMaxZError(value: Double): Self = StObject.set(x, "maxZError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

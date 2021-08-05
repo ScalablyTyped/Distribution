@@ -29,43 +29,31 @@ trait ActiveViewVideoViewabilityMetricConfig extends StObject {
 }
 object ActiveViewVideoViewabilityMetricConfig {
   
-  @scala.inline
-  def apply(): ActiveViewVideoViewabilityMetricConfig = {
+  inline def apply(): ActiveViewVideoViewabilityMetricConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActiveViewVideoViewabilityMetricConfig]
   }
   
-  @scala.inline
-  implicit class ActiveViewVideoViewabilityMetricConfigMutableBuilder[Self <: ActiveViewVideoViewabilityMetricConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveViewVideoViewabilityMetricConfig](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMinimumDuration(value: String): Self = StObject.set(x, "minimumDuration", value.asInstanceOf[js.Any])
+    inline def setMinimumDuration(value: String): Self = StObject.set(x, "minimumDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumDurationUndefined: Self = StObject.set(x, "minimumDuration", js.undefined)
+    inline def setMinimumDurationUndefined: Self = StObject.set(x, "minimumDuration", js.undefined)
     
-    @scala.inline
-    def setMinimumQuartile(value: String): Self = StObject.set(x, "minimumQuartile", value.asInstanceOf[js.Any])
+    inline def setMinimumQuartile(value: String): Self = StObject.set(x, "minimumQuartile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumQuartileUndefined: Self = StObject.set(x, "minimumQuartile", js.undefined)
+    inline def setMinimumQuartileUndefined: Self = StObject.set(x, "minimumQuartile", js.undefined)
     
-    @scala.inline
-    def setMinimumViewability(value: String): Self = StObject.set(x, "minimumViewability", value.asInstanceOf[js.Any])
+    inline def setMinimumViewability(value: String): Self = StObject.set(x, "minimumViewability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumViewabilityUndefined: Self = StObject.set(x, "minimumViewability", js.undefined)
+    inline def setMinimumViewabilityUndefined: Self = StObject.set(x, "minimumViewability", js.undefined)
     
-    @scala.inline
-    def setMinimumVolume(value: String): Self = StObject.set(x, "minimumVolume", value.asInstanceOf[js.Any])
+    inline def setMinimumVolume(value: String): Self = StObject.set(x, "minimumVolume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumVolumeUndefined: Self = StObject.set(x, "minimumVolume", js.undefined)
+    inline def setMinimumVolumeUndefined: Self = StObject.set(x, "minimumVolume", js.undefined)
   }
 }

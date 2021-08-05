@@ -22,17 +22,14 @@ object pathMod {
   }
   object PathProps {
     
-    @scala.inline
-    def apply(d: String): PathProps = {
+    inline def apply(d: String): PathProps = {
       val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathProps]
     }
     
-    @scala.inline
-    implicit class PathPropsMutableBuilder[Self <: PathProps] (val x: Self) extends AnyVal {
+    extension [Self <: PathProps](x: Self) {
       
-      @scala.inline
-      def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     }
   }
 }

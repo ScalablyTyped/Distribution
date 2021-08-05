@@ -27,25 +27,19 @@ trait EntityReference extends StObject {
 }
 object EntityReference {
   
-  @scala.inline
-  def apply(id: Guid, name: String): EntityReference = {
+  inline def apply(id: Guid, name: String): EntityReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityReference]
   }
   
-  @scala.inline
-  implicit class EntityReferenceMutableBuilder[Self <: EntityReference] (val x: Self) extends AnyVal {
+  extension [Self <: EntityReference](x: Self) {
     
-    @scala.inline
-    def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
+    inline def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtnUndefined: Self = StObject.set(x, "etn", js.undefined)
+    inline def setEtnUndefined: Self = StObject.set(x, "etn", js.undefined)
     
-    @scala.inline
-    def setId(value: Guid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Guid): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

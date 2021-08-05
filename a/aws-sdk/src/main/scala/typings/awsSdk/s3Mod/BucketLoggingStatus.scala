@@ -10,19 +10,15 @@ trait BucketLoggingStatus extends StObject {
 }
 object BucketLoggingStatus {
   
-  @scala.inline
-  def apply(): BucketLoggingStatus = {
+  inline def apply(): BucketLoggingStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketLoggingStatus]
   }
   
-  @scala.inline
-  implicit class BucketLoggingStatusMutableBuilder[Self <: BucketLoggingStatus] (val x: Self) extends AnyVal {
+  extension [Self <: BucketLoggingStatus](x: Self) {
     
-    @scala.inline
-    def setLoggingEnabled(value: LoggingEnabled): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
+    inline def setLoggingEnabled(value: LoggingEnabled): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingEnabledUndefined: Self = StObject.set(x, "LoggingEnabled", js.undefined)
+    inline def setLoggingEnabledUndefined: Self = StObject.set(x, "LoggingEnabled", js.undefined)
   }
 }

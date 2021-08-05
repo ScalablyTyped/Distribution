@@ -23,34 +23,25 @@ trait BitLockerRemovableDrivePolicy extends StObject {
 }
 object BitLockerRemovableDrivePolicy {
   
-  @scala.inline
-  def apply(): BitLockerRemovableDrivePolicy = {
+  inline def apply(): BitLockerRemovableDrivePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BitLockerRemovableDrivePolicy]
   }
   
-  @scala.inline
-  implicit class BitLockerRemovableDrivePolicyMutableBuilder[Self <: BitLockerRemovableDrivePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: BitLockerRemovableDrivePolicy](x: Self) {
     
-    @scala.inline
-    def setBlockCrossOrganizationWriteAccess(value: Boolean): Self = StObject.set(x, "blockCrossOrganizationWriteAccess", value.asInstanceOf[js.Any])
+    inline def setBlockCrossOrganizationWriteAccess(value: Boolean): Self = StObject.set(x, "blockCrossOrganizationWriteAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockCrossOrganizationWriteAccessUndefined: Self = StObject.set(x, "blockCrossOrganizationWriteAccess", js.undefined)
+    inline def setBlockCrossOrganizationWriteAccessUndefined: Self = StObject.set(x, "blockCrossOrganizationWriteAccess", js.undefined)
     
-    @scala.inline
-    def setEncryptionMethod(value: NullableOption[BitLockerEncryptionMethod]): Self = StObject.set(x, "encryptionMethod", value.asInstanceOf[js.Any])
+    inline def setEncryptionMethod(value: NullableOption[BitLockerEncryptionMethod]): Self = StObject.set(x, "encryptionMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionMethodNull: Self = StObject.set(x, "encryptionMethod", null)
+    inline def setEncryptionMethodNull: Self = StObject.set(x, "encryptionMethod", null)
     
-    @scala.inline
-    def setEncryptionMethodUndefined: Self = StObject.set(x, "encryptionMethod", js.undefined)
+    inline def setEncryptionMethodUndefined: Self = StObject.set(x, "encryptionMethod", js.undefined)
     
-    @scala.inline
-    def setRequireEncryptionForWriteAccess(value: Boolean): Self = StObject.set(x, "requireEncryptionForWriteAccess", value.asInstanceOf[js.Any])
+    inline def setRequireEncryptionForWriteAccess(value: Boolean): Self = StObject.set(x, "requireEncryptionForWriteAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireEncryptionForWriteAccessUndefined: Self = StObject.set(x, "requireEncryptionForWriteAccess", js.undefined)
+    inline def setRequireEncryptionForWriteAccessUndefined: Self = StObject.set(x, "requireEncryptionForWriteAccess", js.undefined)
   }
 }

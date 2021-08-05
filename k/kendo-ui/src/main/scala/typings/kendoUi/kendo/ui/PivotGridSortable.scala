@@ -10,19 +10,15 @@ trait PivotGridSortable extends StObject {
 }
 object PivotGridSortable {
   
-  @scala.inline
-  def apply(): PivotGridSortable = {
+  inline def apply(): PivotGridSortable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotGridSortable]
   }
   
-  @scala.inline
-  implicit class PivotGridSortableMutableBuilder[Self <: PivotGridSortable] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGridSortable](x: Self) {
     
-    @scala.inline
-    def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
+    inline def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnsortUndefined: Self = StObject.set(x, "allowUnsort", js.undefined)
+    inline def setAllowUnsortUndefined: Self = StObject.set(x, "allowUnsort", js.undefined)
   }
 }

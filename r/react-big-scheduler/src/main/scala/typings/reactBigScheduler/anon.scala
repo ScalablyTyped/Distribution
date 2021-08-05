@@ -20,23 +20,18 @@ object anon {
   }
   object CellUnit {
     
-    @scala.inline
-    def apply(cellUnit: CellUnits, endDate: String, startDate: String): CellUnit = {
+    inline def apply(cellUnit: CellUnits, endDate: String, startDate: String): CellUnit = {
       val __obj = js.Dynamic.literal(cellUnit = cellUnit.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
       __obj.asInstanceOf[CellUnit]
     }
     
-    @scala.inline
-    implicit class CellUnitMutableBuilder[Self <: CellUnit] (val x: Self) extends AnyVal {
+    extension [Self <: CellUnit](x: Self) {
       
-      @scala.inline
-      def setCellUnit(value: CellUnits): Self = StObject.set(x, "cellUnit", value.asInstanceOf[js.Any])
+      inline def setCellUnit(value: CellUnits): Self = StObject.set(x, "cellUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     }
   }
   

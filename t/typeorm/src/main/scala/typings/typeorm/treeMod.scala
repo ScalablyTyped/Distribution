@@ -12,6 +12,5 @@ object treeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Tree(`type`: TreeType): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Tree")(`type`.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Tree(`type`: TreeType): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Tree")(`type`.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

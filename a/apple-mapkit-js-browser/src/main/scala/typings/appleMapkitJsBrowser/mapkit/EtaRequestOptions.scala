@@ -33,8 +33,7 @@ trait EtaRequestOptions extends StObject {
 }
 object EtaRequestOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     departureDate: Date,
     destinations: js.Array[Coordinate],
     origin: Coordinate,
@@ -44,22 +43,16 @@ object EtaRequestOptions {
     __obj.asInstanceOf[EtaRequestOptions]
   }
   
-  @scala.inline
-  implicit class EtaRequestOptionsMutableBuilder[Self <: EtaRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EtaRequestOptions](x: Self) {
     
-    @scala.inline
-    def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
+    inline def setDepartureDate(value: Date): Self = StObject.set(x, "departureDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinations(value: js.Array[Coordinate]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
+    inline def setDestinations(value: js.Array[Coordinate]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationsVarargs(value: Coordinate*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Coordinate*): Self = StObject.set(x, "destinations", js.Array(value :_*))
     
-    @scala.inline
-    def setOrigin(value: Coordinate): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Coordinate): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
+    inline def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
   }
 }

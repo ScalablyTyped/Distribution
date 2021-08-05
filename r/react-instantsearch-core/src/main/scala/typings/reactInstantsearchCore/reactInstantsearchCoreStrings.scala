@@ -8,31 +8,25 @@ object reactInstantsearchCoreStrings {
   
   @js.native
   sealed trait HighlightResult extends StObject
-  @scala.inline
-  def HighlightResult: HighlightResult = "HighlightResult".asInstanceOf[HighlightResult]
+  inline def HighlightResult: HighlightResult = "HighlightResult".asInstanceOf[HighlightResult]
   
   @js.native
   sealed trait and extends StObject
-  @scala.inline
-  def and: and = "and".asInstanceOf[and]
+  inline def and: and = "and".asInstanceOf[and]
   
   @js.native
   sealed trait full extends StObject
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait or extends StObject
-  @scala.inline
-  def or: or = "or".asInstanceOf[or]
+  inline def or: or = "or".asInstanceOf[or]
   
   @js.native
   sealed trait partial extends StObject
-  @scala.inline
-  def partial: partial = "partial".asInstanceOf[partial]
+  inline def partial: partial = "partial".asInstanceOf[partial]
 }

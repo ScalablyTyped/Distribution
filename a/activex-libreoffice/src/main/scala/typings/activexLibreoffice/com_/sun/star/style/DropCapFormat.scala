@@ -18,22 +18,17 @@ trait DropCapFormat extends StObject {
 }
 object DropCapFormat {
   
-  @scala.inline
-  def apply(Count: Double, Distance: Double, Lines: Double): DropCapFormat = {
+  inline def apply(Count: Double, Distance: Double, Lines: Double): DropCapFormat = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Distance = Distance.asInstanceOf[js.Any], Lines = Lines.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropCapFormat]
   }
   
-  @scala.inline
-  implicit class DropCapFormatMutableBuilder[Self <: DropCapFormat] (val x: Self) extends AnyVal {
+  extension [Self <: DropCapFormat](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: Double): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: Double): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
   }
 }

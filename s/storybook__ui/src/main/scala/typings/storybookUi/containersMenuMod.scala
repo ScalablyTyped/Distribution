@@ -13,6 +13,5 @@ object containersMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useMenu(api: API, isFullscreen: Boolean, showPanel: Boolean, showNav: Boolean, enableShortcuts: Boolean): js.Array[OnClick | Title] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMenu")(api.asInstanceOf[js.Any], isFullscreen.asInstanceOf[js.Any], showPanel.asInstanceOf[js.Any], showNav.asInstanceOf[js.Any], enableShortcuts.asInstanceOf[js.Any])).asInstanceOf[js.Array[OnClick | Title]]
+  inline def useMenu(api: API, isFullscreen: Boolean, showPanel: Boolean, showNav: Boolean, enableShortcuts: Boolean): js.Array[OnClick | Title] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMenu")(api.asInstanceOf[js.Any], isFullscreen.asInstanceOf[js.Any], showPanel.asInstanceOf[js.Any], showNav.asInstanceOf[js.Any], enableShortcuts.asInstanceOf[js.Any])).asInstanceOf[js.Array[OnClick | Title]]
 }

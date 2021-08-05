@@ -12,11 +12,11 @@ object utilsEventsMod {
   class Event protected () extends StObject {
     def this(name: String) = this()
     
-    var _isDefaultPrevented: js.Any = js.native
+    /* private */ var _isDefaultPrevented: js.Any = js.native
     
-    var _isPropagationStopped: js.Any = js.native
+    /* private */ var _isPropagationStopped: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
     def isDefaultPrevented: Boolean = js.native
     
@@ -33,17 +33,17 @@ object utilsEventsMod {
   @js.native
   class EventDispatcher () extends StObject {
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
     /* private */ def _listenId: js.Any = js.native
     
-    var _listeners: js.Any = js.native
+    /* private */ var _listeners: js.Any = js.native
     
-    var _listeningTo: js.Any = js.native
+    /* private */ var _listeningTo: js.Any = js.native
     
-    var _savedListenId: js.Any = js.native
+    /* private */ var _savedListenId: js.Any = js.native
     
-    var internalOn: js.Any = js.native
+    /* private */ var internalOn: js.Any = js.native
     
     def listenTo(obj: EventDispatcher, name: String): this.type = js.native
     def listenTo(obj: EventDispatcher, name: String, callback: Unit, priority: Double): this.type = js.native

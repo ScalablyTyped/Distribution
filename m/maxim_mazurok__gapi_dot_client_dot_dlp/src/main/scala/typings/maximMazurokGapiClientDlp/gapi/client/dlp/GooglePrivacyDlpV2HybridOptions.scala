@@ -32,44 +32,33 @@ trait GooglePrivacyDlpV2HybridOptions extends StObject {
 }
 object GooglePrivacyDlpV2HybridOptions {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2HybridOptions = {
+  inline def apply(): GooglePrivacyDlpV2HybridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2HybridOptions]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2HybridOptionsMutableBuilder[Self <: GooglePrivacyDlpV2HybridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2HybridOptions](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDlp.maximMazurokGapiClientDlpStrings.GooglePrivacyDlpV2HybridOptions & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setRequiredFindingLabelKeys(value: js.Array[String]): Self = StObject.set(x, "requiredFindingLabelKeys", value.asInstanceOf[js.Any])
+    inline def setRequiredFindingLabelKeys(value: js.Array[String]): Self = StObject.set(x, "requiredFindingLabelKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredFindingLabelKeysUndefined: Self = StObject.set(x, "requiredFindingLabelKeys", js.undefined)
+    inline def setRequiredFindingLabelKeysUndefined: Self = StObject.set(x, "requiredFindingLabelKeys", js.undefined)
     
-    @scala.inline
-    def setRequiredFindingLabelKeysVarargs(value: String*): Self = StObject.set(x, "requiredFindingLabelKeys", js.Array(value :_*))
+    inline def setRequiredFindingLabelKeysVarargs(value: String*): Self = StObject.set(x, "requiredFindingLabelKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
+    inline def setTableOptions(value: GooglePrivacyDlpV2TableOptions): Self = StObject.set(x, "tableOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
+    inline def setTableOptionsUndefined: Self = StObject.set(x, "tableOptions", js.undefined)
   }
 }

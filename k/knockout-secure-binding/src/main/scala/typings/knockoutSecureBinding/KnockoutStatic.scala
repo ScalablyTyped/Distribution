@@ -11,16 +11,13 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(secureBindingsProvider: Instantiable): KnockoutStatic = {
+  inline def apply(secureBindingsProvider: Instantiable): KnockoutStatic = {
     val __obj = js.Dynamic.literal(secureBindingsProvider = secureBindingsProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setSecureBindingsProvider(value: Instantiable): Self = StObject.set(x, "secureBindingsProvider", value.asInstanceOf[js.Any])
+    inline def setSecureBindingsProvider(value: Instantiable): Self = StObject.set(x, "secureBindingsProvider", value.asInstanceOf[js.Any])
   }
 }

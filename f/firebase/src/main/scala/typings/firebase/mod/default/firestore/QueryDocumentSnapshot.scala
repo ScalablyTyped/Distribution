@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.QueryDocumentSnapshot")
 @js.native
-class QueryDocumentSnapshot[T] protected ()
+/* private */ class QueryDocumentSnapshot[T] ()
   extends StObject
      with typings.firebase.mod.firebase.firestore.DocumentSnapshot[T]

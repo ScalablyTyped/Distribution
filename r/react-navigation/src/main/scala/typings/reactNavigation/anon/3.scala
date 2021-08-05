@@ -16,25 +16,19 @@ trait `3`[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationFocusI
 }
 object `3` {
   
-  @scala.inline
-  def apply[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationFocusInjectedProps[NavigationParams] */](): `3`[T, P] = {
+  inline def apply[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationFocusInjectedProps[NavigationParams] */](): `3`[T, P] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`3`[T, P]]
   }
   
-  @scala.inline
-  implicit class `3MutableBuilder`[Self <: `3`[?, ?], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationFocusInjectedProps[NavigationParams] */] (val x: Self & (`3`[T, P])) extends AnyVal {
+  extension [Self <: `3`[?, ?], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationFocusInjectedProps[NavigationParams] */](x: Self & (`3`[T, P])) {
     
-    @scala.inline
-    def setOnRef(value: Ref[InstanceType[T]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
+    inline def setOnRef(value: Ref[InstanceType[T]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRefFunction1(value: /* instance */ InstanceType[T] | Null => Unit): Self = StObject.set(x, "onRef", js.Any.fromFunction1(value))
+    inline def setOnRefFunction1(value: /* instance */ InstanceType[T] | Null => Unit): Self = StObject.set(x, "onRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRefNull: Self = StObject.set(x, "onRef", null)
+    inline def setOnRefNull: Self = StObject.set(x, "onRef", null)
     
-    @scala.inline
-    def setOnRefUndefined: Self = StObject.set(x, "onRef", js.undefined)
+    inline def setOnRefUndefined: Self = StObject.set(x, "onRef", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait SubstituteNumberFormatOptions
 }
 object SubstituteNumberFormatOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     intlOptions: NumberFormatOptions,
@@ -40,13 +39,10 @@ object SubstituteNumberFormatOptions {
     __obj.asInstanceOf[SubstituteNumberFormatOptions]
   }
   
-  @scala.inline
-  implicit class SubstituteNumberFormatOptionsMutableBuilder[Self <: SubstituteNumberFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SubstituteNumberFormatOptions](x: Self) {
     
-    @scala.inline
-    def setIntlOptions(value: NumberFormatOptions): Self = StObject.set(x, "intlOptions", value.asInstanceOf[js.Any])
+    inline def setIntlOptions(value: NumberFormatOptions): Self = StObject.set(x, "intlOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

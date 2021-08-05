@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ink-text-input"
-version := "2.0-dt-20200515Z-882bc5"
+version := "2.0-dt-20200515Z-e031f1"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

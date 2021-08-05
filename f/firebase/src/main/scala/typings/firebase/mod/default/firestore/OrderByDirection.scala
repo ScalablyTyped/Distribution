@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrderByDirection extends StObject
 object OrderByDirection {
   
-  @scala.inline
-  def asc: typings.firebase.firebaseStrings.asc = "asc".asInstanceOf[typings.firebase.firebaseStrings.asc]
+  inline def asc: typings.firebase.firebaseStrings.asc = "asc".asInstanceOf[typings.firebase.firebaseStrings.asc]
   
-  @scala.inline
-  def desc: typings.firebase.firebaseStrings.desc = "desc".asInstanceOf[typings.firebase.firebaseStrings.desc]
+  inline def desc: typings.firebase.firebaseStrings.desc = "desc".asInstanceOf[typings.firebase.firebaseStrings.desc]
 }

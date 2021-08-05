@@ -18,25 +18,19 @@ trait AgeRange extends StObject {
 }
 object AgeRange {
   
-  @scala.inline
-  def apply(): AgeRange = {
+  inline def apply(): AgeRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AgeRange]
   }
   
-  @scala.inline
-  implicit class AgeRangeMutableBuilder[Self <: AgeRange] (val x: Self) extends AnyVal {
+  extension [Self <: AgeRange](x: Self) {
     
-    @scala.inline
-    def setHigh(value: UInteger): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
+    inline def setHigh(value: UInteger): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighUndefined: Self = StObject.set(x, "High", js.undefined)
+    inline def setHighUndefined: Self = StObject.set(x, "High", js.undefined)
     
-    @scala.inline
-    def setLow(value: UInteger): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
+    inline def setLow(value: UInteger): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowUndefined: Self = StObject.set(x, "Low", js.undefined)
+    inline def setLowUndefined: Self = StObject.set(x, "Low", js.undefined)
   }
 }

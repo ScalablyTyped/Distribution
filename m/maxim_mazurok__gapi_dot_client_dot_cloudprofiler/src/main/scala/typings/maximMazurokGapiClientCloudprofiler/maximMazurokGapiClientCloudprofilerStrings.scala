@@ -8,21 +8,17 @@ object maximMazurokGapiClientCloudprofilerStrings {
   
   @js.native
   sealed trait Deployment extends StObject
-  @scala.inline
-  def Deployment: Deployment = "Deployment".asInstanceOf[Deployment]
+  inline def Deployment: Deployment = "Deployment".asInstanceOf[Deployment]
   
   @js.native
   sealed trait Profile extends StObject
-  @scala.inline
-  def Profile: Profile = "Profile".asInstanceOf[Profile]
+  inline def Profile: Profile = "Profile".asInstanceOf[Profile]
   
   @js.native
   sealed trait cloudprofiler extends StObject
-  @scala.inline
-  def cloudprofiler: cloudprofiler = "cloudprofiler".asInstanceOf[cloudprofiler]
+  inline def cloudprofiler: cloudprofiler = "cloudprofiler".asInstanceOf[cloudprofiler]
   
   @js.native
   sealed trait v2 extends StObject
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

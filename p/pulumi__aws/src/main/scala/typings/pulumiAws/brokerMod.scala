@@ -146,21 +146,16 @@ object brokerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Broker]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Broker]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BrokerState): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Broker]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Broker]
+    inline def get(name: String, id: Input[ID]): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Broker]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Broker]
+    inline def get(name: String, id: Input[ID], state: BrokerState): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Broker]
+    inline def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Broker]
     
     /**
       * Returns true if the given object is an instance of Broker.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean]
   }
   
   trait BrokerArgs extends StObject {
@@ -248,8 +243,7 @@ object brokerMod {
   }
   object BrokerArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       brokerName: Input[String],
       engineType: Input[String],
       engineVersion: Input[String],
@@ -261,95 +255,65 @@ object brokerMod {
       __obj.asInstanceOf[BrokerArgs]
     }
     
-    @scala.inline
-    implicit class BrokerArgsMutableBuilder[Self <: BrokerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerArgs](x: Self) {
       
-      @scala.inline
-      def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
+      inline def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
+      inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
       
-      @scala.inline
-      def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+      inline def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
+      inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
       
-      @scala.inline
-      def setBrokerName(value: Input[String]): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
+      inline def setBrokerName(value: Input[String]): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguration(value: Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setDeploymentMode(value: Input[String]): Self = StObject.set(x, "deploymentMode", value.asInstanceOf[js.Any])
+      inline def setDeploymentMode(value: Input[String]): Self = StObject.set(x, "deploymentMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentModeUndefined: Self = StObject.set(x, "deploymentMode", js.undefined)
+      inline def setDeploymentModeUndefined: Self = StObject.set(x, "deploymentMode", js.undefined)
       
-      @scala.inline
-      def setEncryptionOptions(value: Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
+      inline def setEncryptionOptions(value: Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
+      inline def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
       
-      @scala.inline
-      def setEngineType(value: Input[String]): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
+      inline def setEngineType(value: Input[String]): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostInstanceType(value: Input[String]): Self = StObject.set(x, "hostInstanceType", value.asInstanceOf[js.Any])
+      inline def setHostInstanceType(value: Input[String]): Self = StObject.set(x, "hostInstanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogs(value: Input[typings.pulumiAws.inputMod.mq.BrokerLogs]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: Input[typings.pulumiAws.inputMod.mq.BrokerLogs]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
+      inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
       
-      @scala.inline
-      def setMaintenanceWindowStartTime(value: Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]): Self = StObject.set(x, "maintenanceWindowStartTime", value.asInstanceOf[js.Any])
+      inline def setMaintenanceWindowStartTime(value: Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]): Self = StObject.set(x, "maintenanceWindowStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "maintenanceWindowStartTime", js.undefined)
+      inline def setMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "maintenanceWindowStartTime", js.undefined)
       
-      @scala.inline
-      def setPubliclyAccessible(value: Input[Boolean]): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
+      inline def setPubliclyAccessible(value: Input[Boolean]): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
+      inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
       
-      @scala.inline
-      def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUsers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: Input[typings.pulumiAws.inputMod.mq.BrokerUser]*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: Input[typings.pulumiAws.inputMod.mq.BrokerUser]*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -456,134 +420,92 @@ object brokerMod {
   }
   object BrokerState {
     
-    @scala.inline
-    def apply(): BrokerState = {
+    inline def apply(): BrokerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrokerState]
     }
     
-    @scala.inline
-    implicit class BrokerStateMutableBuilder[Self <: BrokerState] (val x: Self) extends AnyVal {
+    extension [Self <: BrokerState](x: Self) {
       
-      @scala.inline
-      def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
+      inline def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
+      inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+      inline def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
+      inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
       
-      @scala.inline
-      def setBrokerName(value: Input[String]): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
+      inline def setBrokerName(value: Input[String]): Self = StObject.set(x, "brokerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrokerNameUndefined: Self = StObject.set(x, "brokerName", js.undefined)
+      inline def setBrokerNameUndefined: Self = StObject.set(x, "brokerName", js.undefined)
       
-      @scala.inline
-      def setConfiguration(value: Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Input[typings.pulumiAws.inputMod.mq.BrokerConfiguration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+      inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
       
-      @scala.inline
-      def setDeploymentMode(value: Input[String]): Self = StObject.set(x, "deploymentMode", value.asInstanceOf[js.Any])
+      inline def setDeploymentMode(value: Input[String]): Self = StObject.set(x, "deploymentMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentModeUndefined: Self = StObject.set(x, "deploymentMode", js.undefined)
+      inline def setDeploymentModeUndefined: Self = StObject.set(x, "deploymentMode", js.undefined)
       
-      @scala.inline
-      def setEncryptionOptions(value: Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
+      inline def setEncryptionOptions(value: Input[typings.pulumiAws.inputMod.mq.BrokerEncryptionOptions]): Self = StObject.set(x, "encryptionOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
+      inline def setEncryptionOptionsUndefined: Self = StObject.set(x, "encryptionOptions", js.undefined)
       
-      @scala.inline
-      def setEngineType(value: Input[String]): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
+      inline def setEngineType(value: Input[String]): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineTypeUndefined: Self = StObject.set(x, "engineType", js.undefined)
+      inline def setEngineTypeUndefined: Self = StObject.set(x, "engineType", js.undefined)
       
-      @scala.inline
-      def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
+      inline def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
       
-      @scala.inline
-      def setHostInstanceType(value: Input[String]): Self = StObject.set(x, "hostInstanceType", value.asInstanceOf[js.Any])
+      inline def setHostInstanceType(value: Input[String]): Self = StObject.set(x, "hostInstanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostInstanceTypeUndefined: Self = StObject.set(x, "hostInstanceType", js.undefined)
+      inline def setHostInstanceTypeUndefined: Self = StObject.set(x, "hostInstanceType", js.undefined)
       
-      @scala.inline
-      def setInstances(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerInstance]]]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerInstance]]]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+      inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
       
-      @scala.inline
-      def setInstancesVarargs(value: Input[typings.pulumiAws.inputMod.mq.BrokerInstance]*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: Input[typings.pulumiAws.inputMod.mq.BrokerInstance]*): Self = StObject.set(x, "instances", js.Array(value :_*))
       
-      @scala.inline
-      def setLogs(value: Input[typings.pulumiAws.inputMod.mq.BrokerLogs]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: Input[typings.pulumiAws.inputMod.mq.BrokerLogs]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
+      inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
       
-      @scala.inline
-      def setMaintenanceWindowStartTime(value: Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]): Self = StObject.set(x, "maintenanceWindowStartTime", value.asInstanceOf[js.Any])
+      inline def setMaintenanceWindowStartTime(value: Input[typings.pulumiAws.inputMod.mq.BrokerMaintenanceWindowStartTime]): Self = StObject.set(x, "maintenanceWindowStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "maintenanceWindowStartTime", js.undefined)
+      inline def setMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "maintenanceWindowStartTime", js.undefined)
       
-      @scala.inline
-      def setPubliclyAccessible(value: Input[Boolean]): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
+      inline def setPubliclyAccessible(value: Input[Boolean]): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
+      inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
       
-      @scala.inline
-      def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
+      inline def setSecurityGroupsUndefined: Self = StObject.set(x, "securityGroups", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUsers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: Input[js.Array[Input[typings.pulumiAws.inputMod.mq.BrokerUser]]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
       
-      @scala.inline
-      def setUsersVarargs(value: Input[typings.pulumiAws.inputMod.mq.BrokerUser]*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: Input[typings.pulumiAws.inputMod.mq.BrokerUser]*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
 }

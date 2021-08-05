@@ -10,6 +10,5 @@ object skipWaitingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def skipWaiting(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWaiting")().asInstanceOf[Unit]
+  inline def skipWaiting(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWaiting")().asInstanceOf[Unit]
 }

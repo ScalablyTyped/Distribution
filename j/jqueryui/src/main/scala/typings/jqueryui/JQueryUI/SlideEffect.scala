@@ -12,25 +12,19 @@ trait SlideEffect extends StObject {
 }
 object SlideEffect {
   
-  @scala.inline
-  def apply(): SlideEffect = {
+  inline def apply(): SlideEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlideEffect]
   }
   
-  @scala.inline
-  implicit class SlideEffectMutableBuilder[Self <: SlideEffect] (val x: Self) extends AnyVal {
+  extension [Self <: SlideEffect](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
   }
 }

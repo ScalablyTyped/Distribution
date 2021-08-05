@@ -26,8 +26,7 @@ object xmlDtdMod {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdOptions) = this()
   }
   
-  @scala.inline
-  def validatePubId(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePubId")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validatePubId(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePubId")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait IXmlDtdOptions extends StObject {
     
@@ -51,52 +50,45 @@ object xmlDtdMod {
   }
   object IXmlDtdOptions {
     
-    @scala.inline
-    def apply(name: String): IXmlDtdOptions = {
+    inline def apply(name: String): IXmlDtdOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlDtdOptions]
     }
     
-    @scala.inline
-    implicit class IXmlDtdOptionsMutableBuilder[Self <: IXmlDtdOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlDtdOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubId(value: String): Self = StObject.set(x, "pubId", value.asInstanceOf[js.Any])
+      inline def setPubId(value: String): Self = StObject.set(x, "pubId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubIdUndefined: Self = StObject.set(x, "pubId", js.undefined)
+      inline def setPubIdUndefined: Self = StObject.set(x, "pubId", js.undefined)
       
-      @scala.inline
-      def setSysId(value: String): Self = StObject.set(x, "sysId", value.asInstanceOf[js.Any])
+      inline def setSysId(value: String): Self = StObject.set(x, "sysId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSysIdUndefined: Self = StObject.set(x, "sysId", js.undefined)
+      inline def setSysIdUndefined: Self = StObject.set(x, "sysId", js.undefined)
     }
   }
   
   @js.native
   trait XmlDtd[Parent] extends StObject {
     
-    val _children: js.Any = js.native
+    /* private */ val _children: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    var _pubId: js.Any = js.native
+    /* private */ var _pubId: js.Any = js.native
     
-    var _sysId: js.Any = js.native
+    /* private */ var _sysId: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Appends the XML string representation of a public or system identifier
       * to an existing string.
       */
-    var appendId: js.Any = js.native
+    /* private */ var appendId: js.Any = js.native
     
     /**
       * Adds an attribute-list declaration to this document type declaration

@@ -12,22 +12,17 @@ trait KeyParams extends StObject {
 }
 object KeyParams {
   
-  @scala.inline
-  def apply(key: String): KeyParams = {
+  inline def apply(key: String): KeyParams = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyParams]
   }
   
-  @scala.inline
-  implicit class KeyParamsMutableBuilder[Self <: KeyParams] (val x: Self) extends AnyVal {
+  extension [Self <: KeyParams](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

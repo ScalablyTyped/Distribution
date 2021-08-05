@@ -71,101 +71,70 @@ object mod extends Shortcut {
   }
   object ClientConfig {
     
-    @scala.inline
-    def apply(host: String, password: String, user: String): ClientConfig = {
+    inline def apply(host: String, password: String, user: String): ClientConfig = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientConfig]
     }
     
-    @scala.inline
-    implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ClientConfig](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setConnTimeout(value: Double): Self = StObject.set(x, "connTimeout", value.asInstanceOf[js.Any])
+      inline def setConnTimeout(value: Double): Self = StObject.set(x, "connTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnTimeoutUndefined: Self = StObject.set(x, "connTimeout", js.undefined)
+      inline def setConnTimeoutUndefined: Self = StObject.set(x, "connTimeout", js.undefined)
       
-      @scala.inline
-      def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepQueries(value: Boolean): Self = StObject.set(x, "keepQueries", value.asInstanceOf[js.Any])
+      inline def setKeepQueries(value: Boolean): Self = StObject.set(x, "keepQueries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepQueriesUndefined: Self = StObject.set(x, "keepQueries", js.undefined)
+      inline def setKeepQueriesUndefined: Self = StObject.set(x, "keepQueries", js.undefined)
       
-      @scala.inline
-      def setLocal_infile(value: Boolean): Self = StObject.set(x, "local_infile", value.asInstanceOf[js.Any])
+      inline def setLocal_infile(value: Boolean): Self = StObject.set(x, "local_infile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocal_infileUndefined: Self = StObject.set(x, "local_infile", js.undefined)
+      inline def setLocal_infileUndefined: Self = StObject.set(x, "local_infile", js.undefined)
       
-      @scala.inline
-      def setMultiStatements(value: Boolean): Self = StObject.set(x, "multiStatements", value.asInstanceOf[js.Any])
+      inline def setMultiStatements(value: Boolean): Self = StObject.set(x, "multiStatements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiStatementsUndefined: Self = StObject.set(x, "multiStatements", js.undefined)
+      inline def setMultiStatementsUndefined: Self = StObject.set(x, "multiStatements", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
+      inline def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
+      inline def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRead_default_group(value: String): Self = StObject.set(x, "read_default_group", value.asInstanceOf[js.Any])
+      inline def setRead_default_group(value: String): Self = StObject.set(x, "read_default_group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead_default_groupUndefined: Self = StObject.set(x, "read_default_group", js.undefined)
+      inline def setRead_default_groupUndefined: Self = StObject.set(x, "read_default_group", js.undefined)
       
-      @scala.inline
-      def setSecureAuth(value: Boolean): Self = StObject.set(x, "secureAuth", value.asInstanceOf[js.Any])
+      inline def setSecureAuth(value: Boolean): Self = StObject.set(x, "secureAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureAuthUndefined: Self = StObject.set(x, "secureAuth", js.undefined)
+      inline def setSecureAuthUndefined: Self = StObject.set(x, "secureAuth", js.undefined)
       
-      @scala.inline
-      def setSsl(value: js.Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: js.Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+      inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
-      @scala.inline
-      def setUnixSocket(value: String): Self = StObject.set(x, "unixSocket", value.asInstanceOf[js.Any])
+      inline def setUnixSocket(value: String): Self = StObject.set(x, "unixSocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnixSocketUndefined: Self = StObject.set(x, "unixSocket", js.undefined)
+      inline def setUnixSocketUndefined: Self = StObject.set(x, "unixSocket", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,23 +200,18 @@ object mod extends Shortcut {
   }
   object MariaInfo {
     
-    @scala.inline
-    def apply(affectedRows: Double, insertId: Double, numRows: Double): MariaInfo = {
+    inline def apply(affectedRows: Double, insertId: Double, numRows: Double): MariaInfo = {
       val __obj = js.Dynamic.literal(affectedRows = affectedRows.asInstanceOf[js.Any], insertId = insertId.asInstanceOf[js.Any], numRows = numRows.asInstanceOf[js.Any])
       __obj.asInstanceOf[MariaInfo]
     }
     
-    @scala.inline
-    implicit class MariaInfoMutableBuilder[Self <: MariaInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MariaInfo](x: Self) {
       
-      @scala.inline
-      def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
+      inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
+      inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumRows(value: Double): Self = StObject.set(x, "numRows", value.asInstanceOf[js.Any])
+      inline def setNumRows(value: Double): Self = StObject.set(x, "numRows", value.asInstanceOf[js.Any])
     }
   }
   

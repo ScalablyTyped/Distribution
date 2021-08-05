@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFileNewAction extends StObject
 object MsoFileNewAction {
   
-  @scala.inline
-  def msoCreateNewFile: `1` = 1.asInstanceOf[`1`]
+  inline def msoCreateNewFile: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoEditFile: `0` = 0.asInstanceOf[`0`]
+  inline def msoEditFile: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoOpenFile: `2` = 2.asInstanceOf[`2`]
+  inline def msoOpenFile: `2` = 2.asInstanceOf[`2`]
 }

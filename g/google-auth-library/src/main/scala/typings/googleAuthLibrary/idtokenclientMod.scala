@@ -18,7 +18,7 @@ object idtokenclientMod {
       */
     def this(options: IdTokenOptions) = this()
     
-    var getIdTokenExpiryDate: js.Any = js.native
+    /* private */ var getIdTokenExpiryDate: js.Any = js.native
     
     var idTokenProvider: IdTokenProvider = js.native
     
@@ -39,20 +39,16 @@ object idtokenclientMod {
   }
   object IdTokenOptions {
     
-    @scala.inline
-    def apply(idTokenProvider: IdTokenProvider, targetAudience: String): IdTokenOptions = {
+    inline def apply(idTokenProvider: IdTokenProvider, targetAudience: String): IdTokenOptions = {
       val __obj = js.Dynamic.literal(idTokenProvider = idTokenProvider.asInstanceOf[js.Any], targetAudience = targetAudience.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdTokenOptions]
     }
     
-    @scala.inline
-    implicit class IdTokenOptionsMutableBuilder[Self <: IdTokenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IdTokenOptions](x: Self) {
       
-      @scala.inline
-      def setIdTokenProvider(value: IdTokenProvider): Self = StObject.set(x, "idTokenProvider", value.asInstanceOf[js.Any])
+      inline def setIdTokenProvider(value: IdTokenProvider): Self = StObject.set(x, "idTokenProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetAudience(value: String): Self = StObject.set(x, "targetAudience", value.asInstanceOf[js.Any])
+      inline def setTargetAudience(value: String): Self = StObject.set(x, "targetAudience", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,17 +58,14 @@ object idtokenclientMod {
   }
   object IdTokenProvider {
     
-    @scala.inline
-    def apply(fetchIdToken: String => js.Promise[String]): IdTokenProvider = {
+    inline def apply(fetchIdToken: String => js.Promise[String]): IdTokenProvider = {
       val __obj = js.Dynamic.literal(fetchIdToken = js.Any.fromFunction1(fetchIdToken))
       __obj.asInstanceOf[IdTokenProvider]
     }
     
-    @scala.inline
-    implicit class IdTokenProviderMutableBuilder[Self <: IdTokenProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IdTokenProvider](x: Self) {
       
-      @scala.inline
-      def setFetchIdToken(value: String => js.Promise[String]): Self = StObject.set(x, "fetchIdToken", js.Any.fromFunction1(value))
+      inline def setFetchIdToken(value: String => js.Promise[String]): Self = StObject.set(x, "fetchIdToken", js.Any.fromFunction1(value))
     }
   }
 }

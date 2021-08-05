@@ -26,31 +26,23 @@ trait MessagingDeviceResult extends StObject {
 }
 object MessagingDeviceResult {
   
-  @scala.inline
-  def apply(): MessagingDeviceResult = {
+  inline def apply(): MessagingDeviceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessagingDeviceResult]
   }
   
-  @scala.inline
-  implicit class MessagingDeviceResultMutableBuilder[Self <: MessagingDeviceResult] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingDeviceResult](x: Self) {
     
-    @scala.inline
-    def setCanonicalRegistrationToken(value: String): Self = StObject.set(x, "canonicalRegistrationToken", value.asInstanceOf[js.Any])
+    inline def setCanonicalRegistrationToken(value: String): Self = StObject.set(x, "canonicalRegistrationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalRegistrationTokenUndefined: Self = StObject.set(x, "canonicalRegistrationToken", js.undefined)
+    inline def setCanonicalRegistrationTokenUndefined: Self = StObject.set(x, "canonicalRegistrationToken", js.undefined)
     
-    @scala.inline
-    def setError(value: FirebaseError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: FirebaseError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
   }
 }

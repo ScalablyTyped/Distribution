@@ -13,16 +13,13 @@ trait GetOuterHTMLResponse extends StObject {
 }
 object GetOuterHTMLResponse {
   
-  @scala.inline
-  def apply(outerHTML: String): GetOuterHTMLResponse = {
+  inline def apply(outerHTML: String): GetOuterHTMLResponse = {
     val __obj = js.Dynamic.literal(outerHTML = outerHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOuterHTMLResponse]
   }
   
-  @scala.inline
-  implicit class GetOuterHTMLResponseMutableBuilder[Self <: GetOuterHTMLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetOuterHTMLResponse](x: Self) {
     
-    @scala.inline
-    def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
+    inline def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
   }
 }

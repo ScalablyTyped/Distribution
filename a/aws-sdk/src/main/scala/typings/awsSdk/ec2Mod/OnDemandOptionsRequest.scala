@@ -38,49 +38,35 @@ trait OnDemandOptionsRequest extends StObject {
 }
 object OnDemandOptionsRequest {
   
-  @scala.inline
-  def apply(): OnDemandOptionsRequest = {
+  inline def apply(): OnDemandOptionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnDemandOptionsRequest]
   }
   
-  @scala.inline
-  implicit class OnDemandOptionsRequestMutableBuilder[Self <: OnDemandOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OnDemandOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: FleetOnDemandAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: FleetOnDemandAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationStrategyUndefined: Self = StObject.set(x, "AllocationStrategy", js.undefined)
+    inline def setAllocationStrategyUndefined: Self = StObject.set(x, "AllocationStrategy", js.undefined)
     
-    @scala.inline
-    def setCapacityReservationOptions(value: CapacityReservationOptionsRequest): Self = StObject.set(x, "CapacityReservationOptions", value.asInstanceOf[js.Any])
+    inline def setCapacityReservationOptions(value: CapacityReservationOptionsRequest): Self = StObject.set(x, "CapacityReservationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityReservationOptionsUndefined: Self = StObject.set(x, "CapacityReservationOptions", js.undefined)
+    inline def setCapacityReservationOptionsUndefined: Self = StObject.set(x, "CapacityReservationOptions", js.undefined)
     
-    @scala.inline
-    def setMaxTotalPrice(value: String): Self = StObject.set(x, "MaxTotalPrice", value.asInstanceOf[js.Any])
+    inline def setMaxTotalPrice(value: String): Self = StObject.set(x, "MaxTotalPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTotalPriceUndefined: Self = StObject.set(x, "MaxTotalPrice", js.undefined)
+    inline def setMaxTotalPriceUndefined: Self = StObject.set(x, "MaxTotalPrice", js.undefined)
     
-    @scala.inline
-    def setMinTargetCapacity(value: Integer): Self = StObject.set(x, "MinTargetCapacity", value.asInstanceOf[js.Any])
+    inline def setMinTargetCapacity(value: Integer): Self = StObject.set(x, "MinTargetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTargetCapacityUndefined: Self = StObject.set(x, "MinTargetCapacity", js.undefined)
+    inline def setMinTargetCapacityUndefined: Self = StObject.set(x, "MinTargetCapacity", js.undefined)
     
-    @scala.inline
-    def setSingleAvailabilityZone(value: Boolean): Self = StObject.set(x, "SingleAvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setSingleAvailabilityZone(value: Boolean): Self = StObject.set(x, "SingleAvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleAvailabilityZoneUndefined: Self = StObject.set(x, "SingleAvailabilityZone", js.undefined)
+    inline def setSingleAvailabilityZoneUndefined: Self = StObject.set(x, "SingleAvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setSingleInstanceType(value: Boolean): Self = StObject.set(x, "SingleInstanceType", value.asInstanceOf[js.Any])
+    inline def setSingleInstanceType(value: Boolean): Self = StObject.set(x, "SingleInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleInstanceTypeUndefined: Self = StObject.set(x, "SingleInstanceType", js.undefined)
+    inline def setSingleInstanceTypeUndefined: Self = StObject.set(x, "SingleInstanceType", js.undefined)
   }
 }

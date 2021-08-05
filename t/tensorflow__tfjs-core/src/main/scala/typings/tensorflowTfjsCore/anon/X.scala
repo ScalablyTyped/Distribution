@@ -12,16 +12,13 @@ trait X extends StObject {
 }
 object X {
   
-  @scala.inline
-  def apply(x: () => Tensor[Rank]): X = {
+  inline def apply(x: () => Tensor[Rank]): X = {
     val __obj = js.Dynamic.literal(x = js.Any.fromFunction0(x))
     __obj.asInstanceOf[X]
   }
   
-  @scala.inline
-  implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+  extension [Self <: X](x: Self) {
     
-    @scala.inline
-    def setX(value: () => Tensor[Rank]): Self = StObject.set(x, "x", js.Any.fromFunction0(value))
+    inline def setX(value: () => Tensor[Rank]): Self = StObject.set(x, "x", js.Any.fromFunction0(value))
   }
 }

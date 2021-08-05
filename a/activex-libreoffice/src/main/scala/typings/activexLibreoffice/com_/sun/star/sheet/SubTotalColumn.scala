@@ -18,19 +18,15 @@ trait SubTotalColumn extends StObject {
 }
 object SubTotalColumn {
   
-  @scala.inline
-  def apply(Column: Double, Function: GeneralFunction): SubTotalColumn = {
+  inline def apply(Column: Double, Function: GeneralFunction): SubTotalColumn = {
     val __obj = js.Dynamic.literal(Column = Column.asInstanceOf[js.Any], Function = Function.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubTotalColumn]
   }
   
-  @scala.inline
-  implicit class SubTotalColumnMutableBuilder[Self <: SubTotalColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SubTotalColumn](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
   }
 }

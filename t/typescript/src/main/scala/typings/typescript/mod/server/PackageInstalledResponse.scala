@@ -17,22 +17,17 @@ trait PackageInstalledResponse
 }
 object PackageInstalledResponse {
   
-  @scala.inline
-  def apply(kind: ActionPackageInstalled, message: String, projectName: String, success: Boolean): PackageInstalledResponse = {
+  inline def apply(kind: ActionPackageInstalled, message: String, projectName: String, success: Boolean): PackageInstalledResponse = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageInstalledResponse]
   }
   
-  @scala.inline
-  implicit class PackageInstalledResponseMutableBuilder[Self <: PackageInstalledResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PackageInstalledResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: ActionPackageInstalled): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActionPackageInstalled): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

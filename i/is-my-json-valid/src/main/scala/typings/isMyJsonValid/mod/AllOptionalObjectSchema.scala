@@ -16,26 +16,20 @@ trait AllOptionalObjectSchema[Properties /* <: Record[String, AnySchema] */] ext
 }
 object AllOptionalObjectSchema {
   
-  @scala.inline
-  def apply[Properties /* <: Record[String, AnySchema] */](properties: Properties): AllOptionalObjectSchema[Properties] = {
+  inline def apply[Properties /* <: Record[String, AnySchema] */](properties: Properties): AllOptionalObjectSchema[Properties] = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[AllOptionalObjectSchema[Properties]]
   }
   
-  @scala.inline
-  implicit class AllOptionalObjectSchemaMutableBuilder[Self <: AllOptionalObjectSchema[?], Properties /* <: Record[String, AnySchema] */] (val x: Self & AllOptionalObjectSchema[Properties]) extends AnyVal {
+  extension [Self <: AllOptionalObjectSchema[?], Properties /* <: Record[String, AnySchema] */](x: Self & AllOptionalObjectSchema[Properties]) {
     
-    @scala.inline
-    def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+    inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

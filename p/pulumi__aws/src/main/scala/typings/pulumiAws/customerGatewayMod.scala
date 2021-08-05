@@ -67,21 +67,16 @@ object customerGatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CustomerGatewayState): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CustomerGatewayState, opts: CustomResourceOptions): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
+    inline def get(name: String, id: Input[ID]): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
+    inline def get(name: String, id: Input[ID], state: CustomerGatewayState): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
+    inline def get(name: String, id: Input[ID], state: CustomerGatewayState, opts: CustomResourceOptions): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
     
     /**
       * Returns true if the given object is an instance of CustomerGateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean]
   }
   
   trait CustomerGatewayArgs extends StObject {
@@ -109,30 +104,23 @@ object customerGatewayMod {
   }
   object CustomerGatewayArgs {
     
-    @scala.inline
-    def apply(bgpAsn: Input[String], ipAddress: Input[String], `type`: Input[String]): CustomerGatewayArgs = {
+    inline def apply(bgpAsn: Input[String], ipAddress: Input[String], `type`: Input[String]): CustomerGatewayArgs = {
       val __obj = js.Dynamic.literal(bgpAsn = bgpAsn.asInstanceOf[js.Any], ipAddress = ipAddress.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomerGatewayArgs]
     }
     
-    @scala.inline
-    implicit class CustomerGatewayArgsMutableBuilder[Self <: CustomerGatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CustomerGatewayArgs](x: Self) {
       
-      @scala.inline
-      def setBgpAsn(value: Input[String]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
+      inline def setBgpAsn(value: Input[String]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,44 +154,32 @@ object customerGatewayMod {
   }
   object CustomerGatewayState {
     
-    @scala.inline
-    def apply(): CustomerGatewayState = {
+    inline def apply(): CustomerGatewayState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomerGatewayState]
     }
     
-    @scala.inline
-    implicit class CustomerGatewayStateMutableBuilder[Self <: CustomerGatewayState] (val x: Self) extends AnyVal {
+    extension [Self <: CustomerGatewayState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBgpAsn(value: Input[String]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
+      inline def setBgpAsn(value: Input[String]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpAsnUndefined: Self = StObject.set(x, "bgpAsn", js.undefined)
+      inline def setBgpAsnUndefined: Self = StObject.set(x, "bgpAsn", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

@@ -64,60 +64,43 @@ object sqlserverSqlServerConnectionOptionsMod {
   }
   object SqlServerConnectionOptions {
     
-    @scala.inline
-    def apply(): SqlServerConnectionOptions = {
+    inline def apply(): SqlServerConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("mssql")
       __obj.asInstanceOf[SqlServerConnectionOptions]
     }
     
-    @scala.inline
-    implicit class SqlServerConnectionOptionsMutableBuilder[Self <: SqlServerConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SqlServerConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+      inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
       
-      @scala.inline
-      def setOptions(value: AbortTransactionOnError): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: AbortTransactionOnError): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPool(value: AcquireTimeoutMillis): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: AcquireTimeoutMillis): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+      inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      @scala.inline
-      def setReplication(value: SlavesArray): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
+      inline def setReplication(value: SlavesArray): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
+      inline def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
       
-      @scala.inline
-      def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setType(value: mssql): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mssql): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

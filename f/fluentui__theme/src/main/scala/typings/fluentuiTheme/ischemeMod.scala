@@ -45,8 +45,7 @@ object ischemeMod {
   }
   object IScheme {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableGlobalClassNames: Boolean,
       effects: IEffects,
       fonts: IFontStyles,
@@ -59,35 +58,25 @@ object ischemeMod {
       __obj.asInstanceOf[IScheme]
     }
     
-    @scala.inline
-    implicit class ISchemeMutableBuilder[Self <: IScheme] (val x: Self) extends AnyVal {
+    extension [Self <: IScheme](x: Self) {
       
-      @scala.inline
-      def setDisableGlobalClassNames(value: Boolean): Self = StObject.set(x, "disableGlobalClassNames", value.asInstanceOf[js.Any])
+      inline def setDisableGlobalClassNames(value: Boolean): Self = StObject.set(x, "disableGlobalClassNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffects(value: IEffects): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+      inline def setEffects(value: IEffects): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFonts(value: IFontStyles): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+      inline def setFonts(value: IFontStyles): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInverted(value: Boolean): Self = StObject.set(x, "isInverted", value.asInstanceOf[js.Any])
+      inline def setIsInverted(value: Boolean): Self = StObject.set(x, "isInverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPalette(value: IPalette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: IPalette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setSemanticColors(value: ISemanticColors): Self = StObject.set(x, "semanticColors", value.asInstanceOf[js.Any])
+      inline def setSemanticColors(value: ISemanticColors): Self = StObject.set(x, "semanticColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacing(value: ISpacing): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: ISpacing): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,16 +89,12 @@ object ischemeMod {
   trait ISchemeNames extends StObject
   object ISchemeNames {
     
-    @scala.inline
-    def default: typings.fluentuiTheme.fluentuiThemeStrings.default = "default".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.default]
+    inline def default: typings.fluentuiTheme.fluentuiThemeStrings.default = "default".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.default]
     
-    @scala.inline
-    def neutral: typings.fluentuiTheme.fluentuiThemeStrings.neutral = "neutral".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.neutral]
+    inline def neutral: typings.fluentuiTheme.fluentuiThemeStrings.neutral = "neutral".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.neutral]
     
-    @scala.inline
-    def soft: typings.fluentuiTheme.fluentuiThemeStrings.soft = "soft".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.soft]
+    inline def soft: typings.fluentuiTheme.fluentuiThemeStrings.soft = "soft".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.soft]
     
-    @scala.inline
-    def strong: typings.fluentuiTheme.fluentuiThemeStrings.strong = "strong".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.strong]
+    inline def strong: typings.fluentuiTheme.fluentuiThemeStrings.strong = "strong".asInstanceOf[typings.fluentuiTheme.fluentuiThemeStrings.strong]
   }
 }

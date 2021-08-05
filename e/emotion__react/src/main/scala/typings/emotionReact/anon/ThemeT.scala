@@ -10,16 +10,13 @@ trait ThemeT[T] extends StObject {
 }
 object ThemeT {
   
-  @scala.inline
-  def apply[T](theme: T): ThemeT[T] = {
+  inline def apply[T](theme: T): ThemeT[T] = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeT[T]]
   }
   
-  @scala.inline
-  implicit class ThemeTMutableBuilder[Self <: ThemeT[?], T] (val x: Self & ThemeT[T]) extends AnyVal {
+  extension [Self <: ThemeT[?], T](x: Self & ThemeT[T]) {
     
-    @scala.inline
-    def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

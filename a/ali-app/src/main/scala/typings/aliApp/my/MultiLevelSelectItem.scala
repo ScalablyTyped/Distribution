@@ -14,25 +14,19 @@ trait MultiLevelSelectItem extends StObject {
 }
 object MultiLevelSelectItem {
   
-  @scala.inline
-  def apply(name: String): MultiLevelSelectItem = {
+  inline def apply(name: String): MultiLevelSelectItem = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiLevelSelectItem]
   }
   
-  @scala.inline
-  implicit class MultiLevelSelectItemMutableBuilder[Self <: MultiLevelSelectItem] (val x: Self) extends AnyVal {
+  extension [Self <: MultiLevelSelectItem](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubList(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "subList", value.asInstanceOf[js.Any])
+    inline def setSubList(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "subList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubListUndefined: Self = StObject.set(x, "subList", js.undefined)
+    inline def setSubListUndefined: Self = StObject.set(x, "subList", js.undefined)
     
-    @scala.inline
-    def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value :_*))
+    inline def setSubListVarargs(value: MultiLevelSelectItem*): Self = StObject.set(x, "subList", js.Array(value :_*))
   }
 }

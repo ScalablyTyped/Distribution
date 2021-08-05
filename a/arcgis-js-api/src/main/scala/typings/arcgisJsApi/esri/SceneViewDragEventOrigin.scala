@@ -16,8 +16,7 @@ trait SceneViewDragEventOrigin
 }
 object SceneViewDragEventOrigin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -28,13 +27,10 @@ object SceneViewDragEventOrigin {
     __obj.asInstanceOf[SceneViewDragEventOrigin]
   }
   
-  @scala.inline
-  implicit class SceneViewDragEventOriginMutableBuilder[Self <: SceneViewDragEventOrigin] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewDragEventOrigin](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

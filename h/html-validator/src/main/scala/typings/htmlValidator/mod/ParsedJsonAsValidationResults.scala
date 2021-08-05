@@ -10,19 +10,15 @@ trait ParsedJsonAsValidationResults extends StObject {
 }
 object ParsedJsonAsValidationResults {
   
-  @scala.inline
-  def apply(messages: js.Array[ValidationMessageObject]): ParsedJsonAsValidationResults = {
+  inline def apply(messages: js.Array[ValidationMessageObject]): ParsedJsonAsValidationResults = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedJsonAsValidationResults]
   }
   
-  @scala.inline
-  implicit class ParsedJsonAsValidationResultsMutableBuilder[Self <: ParsedJsonAsValidationResults] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedJsonAsValidationResults](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[ValidationMessageObject]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[ValidationMessageObject]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: ValidationMessageObject*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: ValidationMessageObject*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

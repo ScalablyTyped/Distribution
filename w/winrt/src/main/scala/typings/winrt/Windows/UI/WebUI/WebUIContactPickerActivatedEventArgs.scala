@@ -15,8 +15,7 @@ trait WebUIContactPickerActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIContactPickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     contactPickerUI: ContactPickerUI,
     kind: ActivationKind,

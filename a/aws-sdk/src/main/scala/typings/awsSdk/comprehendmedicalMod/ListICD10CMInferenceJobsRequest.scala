@@ -23,31 +23,23 @@ trait ListICD10CMInferenceJobsRequest extends StObject {
 }
 object ListICD10CMInferenceJobsRequest {
   
-  @scala.inline
-  def apply(): ListICD10CMInferenceJobsRequest = {
+  inline def apply(): ListICD10CMInferenceJobsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListICD10CMInferenceJobsRequest]
   }
   
-  @scala.inline
-  implicit class ListICD10CMInferenceJobsRequestMutableBuilder[Self <: ListICD10CMInferenceJobsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListICD10CMInferenceJobsRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: ComprehendMedicalAsyncJobFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ComprehendMedicalAsyncJobFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

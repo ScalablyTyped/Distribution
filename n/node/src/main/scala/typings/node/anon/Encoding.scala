@@ -14,22 +14,17 @@ trait Encoding extends StObject {
 }
 object Encoding {
   
-  @scala.inline
-  def apply(): Encoding = {
+  inline def apply(): Encoding = {
     val __obj = js.Dynamic.literal(encoding = "buffer")
     __obj.asInstanceOf[Encoding]
   }
   
-  @scala.inline
-  implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+  extension [Self <: Encoding](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
+    inline def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
+    inline def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
   }
 }

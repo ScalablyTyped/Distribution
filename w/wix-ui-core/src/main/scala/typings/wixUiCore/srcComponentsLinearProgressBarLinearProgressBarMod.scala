@@ -45,74 +45,52 @@ object srcComponentsLinearProgressBarLinearProgressBarMod {
   }
   object LinearProgressBarProps {
     
-    @scala.inline
-    def apply(): LinearProgressBarProps = {
+    inline def apply(): LinearProgressBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinearProgressBarProps]
     }
     
-    @scala.inline
-    implicit class LinearProgressBarPropsMutableBuilder[Self <: LinearProgressBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinearProgressBarProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorIcon(value: Element): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
+      inline def setErrorIcon(value: Element): Self = StObject.set(x, "errorIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorIconUndefined: Self = StObject.set(x, "errorIcon", js.undefined)
+      inline def setErrorIconUndefined: Self = StObject.set(x, "errorIcon", js.undefined)
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setShowProgressIndication(value: Boolean): Self = StObject.set(x, "showProgressIndication", value.asInstanceOf[js.Any])
+      inline def setShowProgressIndication(value: Boolean): Self = StObject.set(x, "showProgressIndication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowProgressIndicationUndefined: Self = StObject.set(x, "showProgressIndication", js.undefined)
+      inline def setShowProgressIndicationUndefined: Self = StObject.set(x, "showProgressIndication", js.undefined)
       
-      @scala.inline
-      def setSuccessIcon(value: Element): Self = StObject.set(x, "successIcon", value.asInstanceOf[js.Any])
+      inline def setSuccessIcon(value: Element): Self = StObject.set(x, "successIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessIconUndefined: Self = StObject.set(x, "successIcon", js.undefined)
+      inline def setSuccessIconUndefined: Self = StObject.set(x, "successIcon", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

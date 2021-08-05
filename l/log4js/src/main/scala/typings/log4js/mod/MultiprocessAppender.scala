@@ -27,38 +27,28 @@ trait MultiprocessAppender
 }
 object MultiprocessAppender {
   
-  @scala.inline
-  def apply(mode: master | worker): MultiprocessAppender = {
+  inline def apply(mode: master | worker): MultiprocessAppender = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("multiprocess")
     __obj.asInstanceOf[MultiprocessAppender]
   }
   
-  @scala.inline
-  implicit class MultiprocessAppenderMutableBuilder[Self <: MultiprocessAppender] (val x: Self) extends AnyVal {
+  extension [Self <: MultiprocessAppender](x: Self) {
     
-    @scala.inline
-    def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
+    inline def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppenderUndefined: Self = StObject.set(x, "appender", js.undefined)
+    inline def setAppenderUndefined: Self = StObject.set(x, "appender", js.undefined)
     
-    @scala.inline
-    def setLoggerHost(value: String): Self = StObject.set(x, "loggerHost", value.asInstanceOf[js.Any])
+    inline def setLoggerHost(value: String): Self = StObject.set(x, "loggerHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerHostUndefined: Self = StObject.set(x, "loggerHost", js.undefined)
+    inline def setLoggerHostUndefined: Self = StObject.set(x, "loggerHost", js.undefined)
     
-    @scala.inline
-    def setLoggerPort(value: Double): Self = StObject.set(x, "loggerPort", value.asInstanceOf[js.Any])
+    inline def setLoggerPort(value: Double): Self = StObject.set(x, "loggerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerPortUndefined: Self = StObject.set(x, "loggerPort", js.undefined)
+    inline def setLoggerPortUndefined: Self = StObject.set(x, "loggerPort", js.undefined)
     
-    @scala.inline
-    def setMode(value: master | worker): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: master | worker): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: multiprocess): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: multiprocess): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

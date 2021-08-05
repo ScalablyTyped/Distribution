@@ -28,37 +28,27 @@ trait JSONEditorObjectOptions extends StObject {
 }
 object JSONEditorObjectOptions {
   
-  @scala.inline
-  def apply(): JSONEditorObjectOptions = {
+  inline def apply(): JSONEditorObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONEditorObjectOptions]
   }
   
-  @scala.inline
-  implicit class JSONEditorObjectOptionsMutableBuilder[Self <: JSONEditorObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorObjectOptions](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setDisable_collapse(value: Boolean): Self = StObject.set(x, "disable_collapse", value.asInstanceOf[js.Any])
+    inline def setDisable_collapse(value: Boolean): Self = StObject.set(x, "disable_collapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_collapseUndefined: Self = StObject.set(x, "disable_collapse", js.undefined)
+    inline def setDisable_collapseUndefined: Self = StObject.set(x, "disable_collapse", js.undefined)
     
-    @scala.inline
-    def setDisable_edit_json(value: Boolean): Self = StObject.set(x, "disable_edit_json", value.asInstanceOf[js.Any])
+    inline def setDisable_edit_json(value: Boolean): Self = StObject.set(x, "disable_edit_json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_edit_jsonUndefined: Self = StObject.set(x, "disable_edit_json", js.undefined)
+    inline def setDisable_edit_jsonUndefined: Self = StObject.set(x, "disable_edit_json", js.undefined)
     
-    @scala.inline
-    def setDisable_properties(value: Boolean): Self = StObject.set(x, "disable_properties", value.asInstanceOf[js.Any])
+    inline def setDisable_properties(value: Boolean): Self = StObject.set(x, "disable_properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_propertiesUndefined: Self = StObject.set(x, "disable_properties", js.undefined)
+    inline def setDisable_propertiesUndefined: Self = StObject.set(x, "disable_properties", js.undefined)
   }
 }

@@ -11,23 +11,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assert(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def conform(spec: SpecInput, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("conform")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def conform(spec: SpecInput, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("conform")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def explain(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("explain")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def explain(spec: SpecInput, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("explain")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def explainData(spec: SpecInput, value: js.Any): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].applyDynamic("explainData")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
+  inline def explainData(spec: SpecInput, value: js.Any): js.Array[Problem] = (^.asInstanceOf[js.Dynamic].applyDynamic("explainData")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Problem]]
   
-  @scala.inline
-  def explainStr(spec: SpecInput, value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("explainStr")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def explainStr(spec: SpecInput, value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("explainStr")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def problemStr(problem: Problem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("problemStr")(problem.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def problemStr(problem: Problem): String = ^.asInstanceOf[js.Dynamic].applyDynamic("problemStr")(problem.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object spec {
     
@@ -41,8 +35,7 @@ object mod {
       * @param specs the array of specs that must all match
       * @returns the constructed Spec
       */
-    @scala.inline
-    def and(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def and(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is an Array.
@@ -82,10 +75,8 @@ object mod {
       * @param spec the spec to apply to values in the collection
       * @param options symbol.count or symbol.minCount / symbol.maxCount
       */
-    @scala.inline
-    def collection(name: String, spec: SpecInput): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Spec_]
-    @scala.inline
-    def collection(name: String, spec: SpecInput, options: StringDictionary[Double]): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def collection(name: String, spec: SpecInput): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def collection(name: String, spec: SpecInput, options: StringDictionary[Double]): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a Date.
@@ -137,8 +128,7 @@ object mod {
       * @param shape the shape map with keys and associated specs
       * @returns the constructed spec
       */
-    @scala.inline
-    def map(name: String, shape: js.Object): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def map(name: String, shape: js.Object): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(name.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a number smaller than zero.
@@ -160,8 +150,7 @@ object mod {
       * @param spec the spec to apply if a value is non-nil
       * @returns the constructed spec
       */
-    @scala.inline
-    def nilable(name: String, spec: SpecInput): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("nilable")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def nilable(name: String, spec: SpecInput): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("nilable")(name.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a number (can be double or integer).
@@ -197,8 +186,7 @@ object mod {
       * @param values the emum of values
       * @returns the constructed spec
       */
-    @scala.inline
-    def oneOf(name: String, values: js.Any*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def oneOf(name: String, values: js.Any*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(name.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Data must conform to at least one provided spec. The order in which they are validated is not defined.
@@ -207,8 +195,7 @@ object mod {
       * @param alts map of alternative keys with their respective SpecInputs
       * @returns the constructed Spec
       */
-    @scala.inline
-    def or(name: String, alts: StringDictionary[SpecInput]): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(name.asInstanceOf[js.Any], alts.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def or(name: String, alts: StringDictionary[SpecInput]): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(name.asInstanceOf[js.Any], alts.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a number greater than zero.
@@ -223,8 +210,7 @@ object mod {
       * @param predicate the predicate function
       * @returns the constructed spec
       */
-    @scala.inline
-    def predicate(name: String, predicate: PredFn): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("predicate")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def predicate(name: String, predicate: PredFn): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("predicate")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is a Set.
@@ -267,8 +253,7 @@ object mod {
       * @param specs the specs to test the value array
       * @returns the constructed spec
       */
-    @scala.inline
-    def tuple(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
+    inline def tuple(name: String, specs: SpecInput*): Spec_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(name.asInstanceOf[js.Any], specs.asInstanceOf[js.Any])).asInstanceOf[Spec_]
     
     /**
       * Returns true if data is the number zero.
@@ -317,8 +302,7 @@ object mod {
     val optional: js.Symbol = js.native
   }
   
-  @scala.inline
-  def valid(spec: SpecInput, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def valid(spec: SpecInput, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(spec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type PredFn = js.Function1[/* value */ js.Any, Boolean]
   
@@ -346,32 +330,24 @@ object mod {
   }
   object Problem {
     
-    @scala.inline
-    def apply(path: js.Array[String], predicate: js.Any => Boolean, value: js.Any, via: js.Array[String]): Problem = {
+    inline def apply(path: js.Array[String], predicate: js.Any => Boolean, value: js.Any, via: js.Array[String]): Problem = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate), value = value.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
       __obj.asInstanceOf[Problem]
     }
     
-    @scala.inline
-    implicit class ProblemMutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
+    extension [Self <: Problem](x: Self) {
       
-      @scala.inline
-      def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setPredicate(value: js.Any => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: js.Any => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVia(value: js.Array[String]): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
+      inline def setVia(value: js.Array[String]): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViaVarargs(value: String*): Self = StObject.set(x, "via", js.Array(value :_*))
+      inline def setViaVarargs(value: String*): Self = StObject.set(x, "via", js.Array(value :_*))
     }
   }
   
@@ -407,8 +383,7 @@ object mod {
   }
   object Spec_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       conform: js.Any => js.Any,
       explain: (js.Array[String], js.Array[String], js.Any) => js.Array[Problem],
       name: String,
@@ -418,20 +393,15 @@ object mod {
       __obj.asInstanceOf[Spec_]
     }
     
-    @scala.inline
-    implicit class Spec_MutableBuilder[Self <: Spec_] (val x: Self) extends AnyVal {
+    extension [Self <: Spec_](x: Self) {
       
-      @scala.inline
-      def setConform(value: js.Any => js.Any): Self = StObject.set(x, "conform", js.Any.fromFunction1(value))
+      inline def setConform(value: js.Any => js.Any): Self = StObject.set(x, "conform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExplain(value: (js.Array[String], js.Array[String], js.Any) => js.Array[Problem]): Self = StObject.set(x, "explain", js.Any.fromFunction3(value))
+      inline def setExplain(value: (js.Array[String], js.Array[String], js.Any) => js.Array[Problem]): Self = StObject.set(x, "explain", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

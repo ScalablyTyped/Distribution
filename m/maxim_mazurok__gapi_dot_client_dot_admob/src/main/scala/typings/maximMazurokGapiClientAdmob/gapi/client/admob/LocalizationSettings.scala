@@ -17,25 +17,19 @@ trait LocalizationSettings extends StObject {
 }
 object LocalizationSettings {
   
-  @scala.inline
-  def apply(): LocalizationSettings = {
+  inline def apply(): LocalizationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalizationSettings]
   }
   
-  @scala.inline
-  implicit class LocalizationSettingsMutableBuilder[Self <: LocalizationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizationSettings](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

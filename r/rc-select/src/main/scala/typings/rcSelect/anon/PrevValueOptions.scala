@@ -10,22 +10,17 @@ trait PrevValueOptions[OptionsType /* <: js.Array[js.Object] */] extends StObjec
 }
 object PrevValueOptions {
   
-  @scala.inline
-  def apply[OptionsType /* <: js.Array[js.Object] */](): PrevValueOptions[OptionsType] = {
+  inline def apply[OptionsType /* <: js.Array[js.Object] */](): PrevValueOptions[OptionsType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrevValueOptions[OptionsType]]
   }
   
-  @scala.inline
-  implicit class PrevValueOptionsMutableBuilder[Self <: PrevValueOptions[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & PrevValueOptions[OptionsType]) extends AnyVal {
+  extension [Self <: PrevValueOptions[?], OptionsType /* <: js.Array[js.Object] */](x: Self & PrevValueOptions[OptionsType]) {
     
-    @scala.inline
-    def setPrevValueOptions(value: js.Array[OptionsType]): Self = StObject.set(x, "prevValueOptions", value.asInstanceOf[js.Any])
+    inline def setPrevValueOptions(value: js.Array[OptionsType]): Self = StObject.set(x, "prevValueOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevValueOptionsUndefined: Self = StObject.set(x, "prevValueOptions", js.undefined)
+    inline def setPrevValueOptionsUndefined: Self = StObject.set(x, "prevValueOptions", js.undefined)
     
-    @scala.inline
-    def setPrevValueOptionsVarargs(value: OptionsType*): Self = StObject.set(x, "prevValueOptions", js.Array(value :_*))
+    inline def setPrevValueOptionsVarargs(value: OptionsType*): Self = StObject.set(x, "prevValueOptions", js.Array(value :_*))
   }
 }

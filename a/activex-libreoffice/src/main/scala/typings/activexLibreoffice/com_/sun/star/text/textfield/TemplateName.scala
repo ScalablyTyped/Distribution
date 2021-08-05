@@ -27,8 +27,7 @@ trait TemplateName
 }
 object TemplateName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object TemplateName {
     __obj.asInstanceOf[TemplateName]
   }
   
-  @scala.inline
-  implicit class TemplateNameMutableBuilder[Self <: TemplateName] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateName](x: Self) {
     
-    @scala.inline
-    def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
+    inline def setFileFormat(value: Double): Self = StObject.set(x, "FileFormat", value.asInstanceOf[js.Any])
   }
 }

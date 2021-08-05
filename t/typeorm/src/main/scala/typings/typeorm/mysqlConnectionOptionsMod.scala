@@ -112,111 +112,77 @@ object mysqlConnectionOptionsMod {
   }
   object MysqlConnectionOptions {
     
-    @scala.inline
-    def apply(`type`: mysql | mariadb): MysqlConnectionOptions = {
+    inline def apply(`type`: mysql | mariadb): MysqlConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MysqlConnectionOptions]
     }
     
-    @scala.inline
-    implicit class MysqlConnectionOptionsMutableBuilder[Self <: MysqlConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MysqlConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
+      inline def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcquireTimeoutUndefined: Self = StObject.set(x, "acquireTimeout", js.undefined)
+      inline def setAcquireTimeoutUndefined: Self = StObject.set(x, "acquireTimeout", js.undefined)
       
-      @scala.inline
-      def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
+      inline def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
+      inline def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+      inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
       
-      @scala.inline
-      def setDateStrings(value: Boolean | js.Array[String]): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
+      inline def setDateStrings(value: Boolean | js.Array[String]): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
+      inline def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
       
-      @scala.inline
-      def setDateStringsVarargs(value: String*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
+      inline def setDateStringsVarargs(value: String*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: Boolean | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
+      inline def setDebugVarargs(value: String*): Self = StObject.set(x, "debug", js.Array(value :_*))
       
-      @scala.inline
-      def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
       
-      @scala.inline
-      def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
+      inline def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
+      inline def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
       
-      @scala.inline
-      def setLegacySpatialSupport(value: Boolean): Self = StObject.set(x, "legacySpatialSupport", value.asInstanceOf[js.Any])
+      inline def setLegacySpatialSupport(value: Boolean): Self = StObject.set(x, "legacySpatialSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegacySpatialSupportUndefined: Self = StObject.set(x, "legacySpatialSupport", js.undefined)
+      inline def setLegacySpatialSupportUndefined: Self = StObject.set(x, "legacySpatialSupport", js.undefined)
       
-      @scala.inline
-      def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
+      inline def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
+      inline def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
       
-      @scala.inline
-      def setReplication(value: CanRetry): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
+      inline def setReplication(value: CanRetry): Self = StObject.set(x, "replication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
+      inline def setReplicationUndefined: Self = StObject.set(x, "replication", js.undefined)
       
-      @scala.inline
-      def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
+      inline def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
+      inline def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
       
-      @scala.inline
-      def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
-      @scala.inline
-      def setType(value: mysql | mariadb): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mysql | mariadb): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,7 +15,7 @@ object blockedUsersFeedMod {
   class BlockedUsersFeed protected () extends Feed[BlockedUsersFeedResponseRootObject, BlockedUsersFeedResponseBlockedListItem] {
     def this(client: IgApiClient) = this()
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[BlockedUsersFeedResponseRootObject] = js.native
   }

@@ -38,44 +38,32 @@ trait ParameterRuleBase extends StObject {
 }
 object ParameterRuleBase {
   
-  @scala.inline
-  def apply(`type`: String): ParameterRuleBase = {
+  inline def apply(`type`: String): ParameterRuleBase = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleBase]
   }
   
-  @scala.inline
-  implicit class ParameterRuleBaseMutableBuilder[Self <: ParameterRuleBase] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleBase](x: Self) {
     
-    @scala.inline
-    def setConvertType(value: ParameterConvertType): Self = StObject.set(x, "convertType", value.asInstanceOf[js.Any])
+    inline def setConvertType(value: ParameterConvertType): Self = StObject.set(x, "convertType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertTypeFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "convertType", js.Any.fromFunction1(value))
+    inline def setConvertTypeFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "convertType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertTypeUndefined: Self = StObject.set(x, "convertType", js.undefined)
+    inline def setConvertTypeUndefined: Self = StObject.set(x, "convertType", js.undefined)
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidelyUndefined(value: Boolean): Self = StObject.set(x, "widelyUndefined", value.asInstanceOf[js.Any])
+    inline def setWidelyUndefined(value: Boolean): Self = StObject.set(x, "widelyUndefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidelyUndefinedUndefined: Self = StObject.set(x, "widelyUndefined", js.undefined)
+    inline def setWidelyUndefinedUndefined: Self = StObject.set(x, "widelyUndefined", js.undefined)
   }
 }

@@ -16,34 +16,25 @@ trait DownshiftState[Item] extends StObject {
 }
 object DownshiftState {
   
-  @scala.inline
-  def apply[Item](isOpen: Boolean): DownshiftState[Item] = {
+  inline def apply[Item](isOpen: Boolean): DownshiftState[Item] = {
     val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any], highlightedIndex = null, inputValue = null, selectedItem = null)
     __obj.asInstanceOf[DownshiftState[Item]]
   }
   
-  @scala.inline
-  implicit class DownshiftStateMutableBuilder[Self <: DownshiftState[?], Item] (val x: Self & DownshiftState[Item]) extends AnyVal {
+  extension [Self <: DownshiftState[?], Item](x: Self & DownshiftState[Item]) {
     
-    @scala.inline
-    def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
+    inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightedIndexNull: Self = StObject.set(x, "highlightedIndex", null)
+    inline def setHighlightedIndexNull: Self = StObject.set(x, "highlightedIndex", null)
     
-    @scala.inline
-    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+    inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputValueNull: Self = StObject.set(x, "inputValue", null)
+    inline def setInputValueNull: Self = StObject.set(x, "inputValue", null)
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
+    inline def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
   }
 }

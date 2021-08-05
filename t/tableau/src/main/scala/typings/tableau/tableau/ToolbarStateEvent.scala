@@ -13,16 +13,13 @@ trait ToolbarStateEvent
 }
 object ToolbarStateEvent {
   
-  @scala.inline
-  def apply(getEventName: () => TableauEventName, getToolbarState: () => ToolbarState, getViz: () => Viz): ToolbarStateEvent = {
+  inline def apply(getEventName: () => TableauEventName, getToolbarState: () => ToolbarState, getViz: () => Viz): ToolbarStateEvent = {
     val __obj = js.Dynamic.literal(getEventName = js.Any.fromFunction0(getEventName), getToolbarState = js.Any.fromFunction0(getToolbarState), getViz = js.Any.fromFunction0(getViz))
     __obj.asInstanceOf[ToolbarStateEvent]
   }
   
-  @scala.inline
-  implicit class ToolbarStateEventMutableBuilder[Self <: ToolbarStateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ToolbarStateEvent](x: Self) {
     
-    @scala.inline
-    def setGetToolbarState(value: () => ToolbarState): Self = StObject.set(x, "getToolbarState", js.Any.fromFunction0(value))
+    inline def setGetToolbarState(value: () => ToolbarState): Self = StObject.set(x, "getToolbarState", js.Any.fromFunction0(value))
   }
 }

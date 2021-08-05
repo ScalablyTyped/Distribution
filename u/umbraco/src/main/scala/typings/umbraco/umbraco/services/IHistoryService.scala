@@ -75,8 +75,7 @@ trait IHistoryService extends StObject {
 }
 object IHistoryService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: IHistoryItem => IHistoryItem,
     getCurrent: () => js.Array[IHistoryItem],
     remove: Double => Unit,
@@ -86,19 +85,14 @@ object IHistoryService {
     __obj.asInstanceOf[IHistoryService]
   }
   
-  @scala.inline
-  implicit class IHistoryServiceMutableBuilder[Self <: IHistoryService] (val x: Self) extends AnyVal {
+  extension [Self <: IHistoryService](x: Self) {
     
-    @scala.inline
-    def setAdd(value: IHistoryItem => IHistoryItem): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: IHistoryItem => IHistoryItem): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrent(value: () => js.Array[IHistoryItem]): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
+    inline def setGetCurrent(value: () => js.Array[IHistoryItem]): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
+    inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
   }
 }

@@ -59,8 +59,7 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cpCode: Double,
     host: String,
     method: String,
@@ -73,40 +72,28 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setCpCode(value: Double): Self = StObject.set(x, "cpCode", value.asInstanceOf[js.Any])
+    inline def setCpCode(value: Double): Self = StObject.set(x, "cpCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLocation(value: UserLocation): Self = StObject.set(x, "userLocation", value.asInstanceOf[js.Any])
+    inline def setUserLocation(value: UserLocation): Self = StObject.set(x, "userLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLocationUndefined: Self = StObject.set(x, "userLocation", js.undefined)
+    inline def setUserLocationUndefined: Self = StObject.set(x, "userLocation", js.undefined)
   }
 }

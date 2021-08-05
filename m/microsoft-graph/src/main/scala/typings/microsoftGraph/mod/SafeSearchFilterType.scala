@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SafeSearchFilterType extends StObject
 object SafeSearchFilterType {
   
-  @scala.inline
-  def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = "moderate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderate]
+  inline def moderate: typings.microsoftGraph.microsoftGraphStrings.moderate = "moderate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderate]
   
-  @scala.inline
-  def strict: typings.microsoftGraph.microsoftGraphStrings.strict = "strict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.strict]
+  inline def strict: typings.microsoftGraph.microsoftGraphStrings.strict = "strict".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.strict]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

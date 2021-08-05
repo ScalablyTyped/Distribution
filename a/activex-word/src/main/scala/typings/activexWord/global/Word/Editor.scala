@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Editor")
 @js.native
-class Editor protected ()
+/* private */ class Editor ()
   extends StObject
      with typings.activexWord.Word.Editor {
   
@@ -40,7 +40,7 @@ class Editor protected ()
   /* CompleteClass */
   override def SelectAll(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Editor_typekey")
   var WordDotEditor_typekey: typings.activexWord.Word.Editor = js.native
 }

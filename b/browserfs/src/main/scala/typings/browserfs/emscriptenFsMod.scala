@@ -37,11 +37,11 @@ object emscriptenFsMod {
     extends StObject
        with EmscriptenFS {
     
-    var ERRNO_CODES: js.Any = js.native
+    /* private */ var ERRNO_CODES: js.Any = js.native
     
-    var FS: js.Any = js.native
+    /* private */ var FS: js.Any = js.native
     
-    var PATH: js.Any = js.native
+    /* private */ var PATH: js.Any = js.native
     
     def createNode(parent: Null, name: String, mode: Double): EmscriptenFSNode = js.native
     def createNode(parent: Null, name: String, mode: Double, dev: js.Any): EmscriptenFSNode = js.native
@@ -59,7 +59,7 @@ object emscriptenFsMod {
     
     def getPATH(): js.Any = js.native
     
-    var nodefs: js.Any = js.native
+    /* private */ var nodefs: js.Any = js.native
   }
   
   @js.native
@@ -95,8 +95,7 @@ object emscriptenFsMod {
   }
   object EmscriptenFSNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mode: Double,
       mount: Opts,
       name: String,
@@ -108,26 +107,19 @@ object emscriptenFsMod {
       __obj.asInstanceOf[EmscriptenFSNode]
     }
     
-    @scala.inline
-    implicit class EmscriptenFSNodeMutableBuilder[Self <: EmscriptenFSNode] (val x: Self) extends AnyVal {
+    extension [Self <: EmscriptenFSNode](x: Self) {
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMount(value: Opts): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: Opts): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode_ops(value: EmscriptenNodeOps): Self = StObject.set(x, "node_ops", value.asInstanceOf[js.Any])
+      inline def setNode_ops(value: EmscriptenNodeOps): Self = StObject.set(x, "node_ops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: EmscriptenFSNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: EmscriptenFSNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream_ops(value: EmscriptenStreamOps): Self = StObject.set(x, "stream_ops", value.asInstanceOf[js.Any])
+      inline def setStream_ops(value: EmscriptenStreamOps): Self = StObject.set(x, "stream_ops", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,8 +147,7 @@ object emscriptenFsMod {
   }
   object EmscriptenNodeOps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getattr: EmscriptenFSNode => Stats,
       lookup: (EmscriptenFSNode, String) => EmscriptenFSNode,
       mknod: (EmscriptenFSNode, String, Double, js.Any) => EmscriptenFSNode,
@@ -172,38 +163,27 @@ object emscriptenFsMod {
       __obj.asInstanceOf[EmscriptenNodeOps]
     }
     
-    @scala.inline
-    implicit class EmscriptenNodeOpsMutableBuilder[Self <: EmscriptenNodeOps] (val x: Self) extends AnyVal {
+    extension [Self <: EmscriptenNodeOps](x: Self) {
       
-      @scala.inline
-      def setGetattr(value: EmscriptenFSNode => Stats): Self = StObject.set(x, "getattr", js.Any.fromFunction1(value))
+      inline def setGetattr(value: EmscriptenFSNode => Stats): Self = StObject.set(x, "getattr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLookup(value: (EmscriptenFSNode, String) => EmscriptenFSNode): Self = StObject.set(x, "lookup", js.Any.fromFunction2(value))
+      inline def setLookup(value: (EmscriptenFSNode, String) => EmscriptenFSNode): Self = StObject.set(x, "lookup", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMknod(value: (EmscriptenFSNode, String, Double, js.Any) => EmscriptenFSNode): Self = StObject.set(x, "mknod", js.Any.fromFunction4(value))
+      inline def setMknod(value: (EmscriptenFSNode, String, Double, js.Any) => EmscriptenFSNode): Self = StObject.set(x, "mknod", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setReaddir(value: EmscriptenFSNode => js.Array[String]): Self = StObject.set(x, "readdir", js.Any.fromFunction1(value))
+      inline def setReaddir(value: EmscriptenFSNode => js.Array[String]): Self = StObject.set(x, "readdir", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadlink(value: EmscriptenFSNode => String): Self = StObject.set(x, "readlink", js.Any.fromFunction1(value))
+      inline def setReadlink(value: EmscriptenFSNode => String): Self = StObject.set(x, "readlink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRename(value: (EmscriptenFSNode, EmscriptenFSNode, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction3(value))
+      inline def setRename(value: (EmscriptenFSNode, EmscriptenFSNode, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRmdir(value: (EmscriptenFSNode, String) => Unit): Self = StObject.set(x, "rmdir", js.Any.fromFunction2(value))
+      inline def setRmdir(value: (EmscriptenFSNode, String) => Unit): Self = StObject.set(x, "rmdir", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetattr(value: (EmscriptenFSNode, Stats) => Unit): Self = StObject.set(x, "setattr", js.Any.fromFunction2(value))
+      inline def setSetattr(value: (EmscriptenFSNode, Stats) => Unit): Self = StObject.set(x, "setattr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSymlink(value: (EmscriptenFSNode, String, String) => Unit): Self = StObject.set(x, "symlink", js.Any.fromFunction3(value))
+      inline def setSymlink(value: (EmscriptenFSNode, String, String) => Unit): Self = StObject.set(x, "symlink", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUnlink(value: (EmscriptenFSNode, String) => Unit): Self = StObject.set(x, "unlink", js.Any.fromFunction2(value))
+      inline def setUnlink(value: (EmscriptenFSNode, String) => Unit): Self = StObject.set(x, "unlink", js.Any.fromFunction2(value))
     }
   }
   
@@ -219,26 +199,20 @@ object emscriptenFsMod {
   }
   object EmscriptenStream {
     
-    @scala.inline
-    def apply(flags: String, nfd: js.Any, node: EmscriptenFSNode, position: Double): EmscriptenStream = {
+    inline def apply(flags: String, nfd: js.Any, node: EmscriptenFSNode, position: Double): EmscriptenStream = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], nfd = nfd.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmscriptenStream]
     }
     
-    @scala.inline
-    implicit class EmscriptenStreamMutableBuilder[Self <: EmscriptenStream] (val x: Self) extends AnyVal {
+    extension [Self <: EmscriptenStream](x: Self) {
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNfd(value: js.Any): Self = StObject.set(x, "nfd", value.asInstanceOf[js.Any])
+      inline def setNfd(value: js.Any): Self = StObject.set(x, "nfd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: EmscriptenFSNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: EmscriptenFSNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,8 +230,7 @@ object emscriptenFsMod {
   }
   object EmscriptenStreamOps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: EmscriptenStream => Unit,
       llseek: (EmscriptenStream, Double, Double) => Double,
       open: EmscriptenStream => Unit,
@@ -268,23 +241,17 @@ object emscriptenFsMod {
       __obj.asInstanceOf[EmscriptenStreamOps]
     }
     
-    @scala.inline
-    implicit class EmscriptenStreamOpsMutableBuilder[Self <: EmscriptenStreamOps] (val x: Self) extends AnyVal {
+    extension [Self <: EmscriptenStreamOps](x: Self) {
       
-      @scala.inline
-      def setClose(value: EmscriptenStream => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: EmscriptenStream => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLlseek(value: (EmscriptenStream, Double, Double) => Double): Self = StObject.set(x, "llseek", js.Any.fromFunction3(value))
+      inline def setLlseek(value: (EmscriptenStream, Double, Double) => Double): Self = StObject.set(x, "llseek", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOpen(value: EmscriptenStream => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: EmscriptenStream => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRead(value: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "read", js.Any.fromFunction5(value))
+      inline def setRead(value: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "read", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setWrite(value: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "write", js.Any.fromFunction5(value))
+      inline def setWrite(value: (EmscriptenStream, Uint8Array, Double, Double, Double) => Double): Self = StObject.set(x, "write", js.Any.fromFunction5(value))
     }
   }
   
@@ -320,8 +287,7 @@ object emscriptenFsMod {
   }
   object Stats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       atime: Date,
       blksize: Double,
       blocks: Double,
@@ -340,53 +306,37 @@ object emscriptenFsMod {
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
+      inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
+      inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
+      inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
+      inline def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
 }

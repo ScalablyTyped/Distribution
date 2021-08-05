@@ -58,8 +58,7 @@ trait RedshiftDestinationDescription extends StObject {
 }
 object RedshiftDestinationDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClusterJDBCURL: ClusterJDBCURL,
     CopyCommand: CopyCommand,
     RoleARN: RoleARN,
@@ -70,52 +69,36 @@ object RedshiftDestinationDescription {
     __obj.asInstanceOf[RedshiftDestinationDescription]
   }
   
-  @scala.inline
-  implicit class RedshiftDestinationDescriptionMutableBuilder[Self <: RedshiftDestinationDescription] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftDestinationDescription](x: Self) {
     
-    @scala.inline
-    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    inline def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
+    inline def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
     
-    @scala.inline
-    def setClusterJDBCURL(value: ClusterJDBCURL): Self = StObject.set(x, "ClusterJDBCURL", value.asInstanceOf[js.Any])
+    inline def setClusterJDBCURL(value: ClusterJDBCURL): Self = StObject.set(x, "ClusterJDBCURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyCommand(value: CopyCommand): Self = StObject.set(x, "CopyCommand", value.asInstanceOf[js.Any])
+    inline def setCopyCommand(value: CopyCommand): Self = StObject.set(x, "CopyCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingConfiguration(value: ProcessingConfiguration): Self = StObject.set(x, "ProcessingConfiguration", value.asInstanceOf[js.Any])
+    inline def setProcessingConfiguration(value: ProcessingConfiguration): Self = StObject.set(x, "ProcessingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingConfigurationUndefined: Self = StObject.set(x, "ProcessingConfiguration", js.undefined)
+    inline def setProcessingConfigurationUndefined: Self = StObject.set(x, "ProcessingConfiguration", js.undefined)
     
-    @scala.inline
-    def setRetryOptions(value: RedshiftRetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
+    inline def setRetryOptions(value: RedshiftRetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryOptionsUndefined: Self = StObject.set(x, "RetryOptions", js.undefined)
+    inline def setRetryOptionsUndefined: Self = StObject.set(x, "RetryOptions", js.undefined)
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupDescription(value: S3DestinationDescription): Self = StObject.set(x, "S3BackupDescription", value.asInstanceOf[js.Any])
+    inline def setS3BackupDescription(value: S3DestinationDescription): Self = StObject.set(x, "S3BackupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupDescriptionUndefined: Self = StObject.set(x, "S3BackupDescription", js.undefined)
+    inline def setS3BackupDescriptionUndefined: Self = StObject.set(x, "S3BackupDescription", js.undefined)
     
-    @scala.inline
-    def setS3BackupMode(value: RedshiftS3BackupMode): Self = StObject.set(x, "S3BackupMode", value.asInstanceOf[js.Any])
+    inline def setS3BackupMode(value: RedshiftS3BackupMode): Self = StObject.set(x, "S3BackupMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupModeUndefined: Self = StObject.set(x, "S3BackupMode", js.undefined)
+    inline def setS3BackupModeUndefined: Self = StObject.set(x, "S3BackupMode", js.undefined)
     
-    @scala.inline
-    def setS3DestinationDescription(value: S3DestinationDescription): Self = StObject.set(x, "S3DestinationDescription", value.asInstanceOf[js.Any])
+    inline def setS3DestinationDescription(value: S3DestinationDescription): Self = StObject.set(x, "S3DestinationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

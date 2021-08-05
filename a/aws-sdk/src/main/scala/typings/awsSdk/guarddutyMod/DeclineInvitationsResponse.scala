@@ -13,19 +13,15 @@ trait DeclineInvitationsResponse extends StObject {
 }
 object DeclineInvitationsResponse {
   
-  @scala.inline
-  def apply(UnprocessedAccounts: UnprocessedAccounts): DeclineInvitationsResponse = {
+  inline def apply(UnprocessedAccounts: UnprocessedAccounts): DeclineInvitationsResponse = {
     val __obj = js.Dynamic.literal(UnprocessedAccounts = UnprocessedAccounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclineInvitationsResponse]
   }
   
-  @scala.inline
-  implicit class DeclineInvitationsResponseMutableBuilder[Self <: DeclineInvitationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeclineInvitationsResponse](x: Self) {
     
-    @scala.inline
-    def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
+    inline def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
   }
 }

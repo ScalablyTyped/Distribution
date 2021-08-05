@@ -12,19 +12,15 @@ trait Exited extends StObject {
 }
 object Exited {
   
-  @scala.inline
-  def apply(exited: js.Any, exiting: js.Any): Exited = {
+  inline def apply(exited: js.Any, exiting: js.Any): Exited = {
     val __obj = js.Dynamic.literal(exited = exited.asInstanceOf[js.Any], exiting = exiting.asInstanceOf[js.Any])
     __obj.asInstanceOf[Exited]
   }
   
-  @scala.inline
-  implicit class ExitedMutableBuilder[Self <: Exited] (val x: Self) extends AnyVal {
+  extension [Self <: Exited](x: Self) {
     
-    @scala.inline
-    def setExited(value: js.Any): Self = StObject.set(x, "exited", value.asInstanceOf[js.Any])
+    inline def setExited(value: js.Any): Self = StObject.set(x, "exited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExiting(value: js.Any): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
+    inline def setExiting(value: js.Any): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
   }
 }

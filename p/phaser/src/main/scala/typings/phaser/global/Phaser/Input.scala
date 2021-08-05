@@ -29,8 +29,7 @@ object Input {
     * @param hitArea The hit area for this Interactive Object. Typically a geometry shape, like a Rectangle or Circle.
     * @param hitAreaCallback The 'contains' check callback that the hit area shape will use for all hit tests.
     */
-  @scala.inline
-  def CreateInteractiveObject(gameObject: GameObject, hitArea: js.Any, hitAreaCallback: HitAreaCallback): InteractiveObject = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateInteractiveObject")(gameObject.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[InteractiveObject]
+  inline def CreateInteractiveObject(gameObject: GameObject, hitArea: js.Any, hitAreaCallback: HitAreaCallback): InteractiveObject = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateInteractiveObject")(gameObject.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[InteractiveObject]
   
   /**
     * Creates a new Pixel Perfect Handler function.
@@ -39,8 +38,7 @@ object Input {
     * @param textureManager A reference to the Texture Manager.
     * @param alphaTolerance The alpha level that the pixel should be above to be included as a successful interaction.
     */
-  @scala.inline
-  def CreatePixelPerfectHandler(textureManager: TextureManager, alphaTolerance: integer): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePixelPerfectHandler")(textureManager.asInstanceOf[js.Any], alphaTolerance.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def CreatePixelPerfectHandler(textureManager: TextureManager, alphaTolerance: integer): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePixelPerfectHandler")(textureManager.asInstanceOf[js.Any], alphaTolerance.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   object Events {
     
@@ -967,8 +965,7 @@ object Input {
       @JSGlobal("Phaser.Input.Gamepad.Configs.DUALSHOCK_4")
       @js.native
       def DUALSHOCK_4: js.Object = js.native
-      @scala.inline
-      def DUALSHOCK_4_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUALSHOCK_4")(x.asInstanceOf[js.Any])
+      inline def DUALSHOCK_4_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DUALSHOCK_4")(x.asInstanceOf[js.Any])
       
       /**
         * Tatar SNES USB Controller Gamepad Configuration.
@@ -977,8 +974,7 @@ object Input {
       @JSGlobal("Phaser.Input.Gamepad.Configs.SNES_USB")
       @js.native
       def SNES_USB: js.Object = js.native
-      @scala.inline
-      def SNES_USB_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNES_USB")(x.asInstanceOf[js.Any])
+      inline def SNES_USB_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNES_USB")(x.asInstanceOf[js.Any])
       
       /**
         * XBox 360 Gamepad Configuration.
@@ -986,8 +982,7 @@ object Input {
       @JSGlobal("Phaser.Input.Gamepad.Configs.XBOX_360")
       @js.native
       def XBOX_360: js.Object = js.native
-      @scala.inline
-      def XBOX_360_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX_360")(x.asInstanceOf[js.Any])
+      inline def XBOX_360_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("XBOX_360")(x.asInstanceOf[js.Any])
     }
     
     object Events {
@@ -1220,15 +1215,13 @@ object Input {
       * Returns the input plugin object from the cache based on the given key.
       * @param key The key of the input plugin to get.
       */
-    @scala.inline
-    def getCore(key: String): InputPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")(key.asInstanceOf[js.Any]).asInstanceOf[InputPluginContainer]
+    inline def getCore(key: String): InputPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")(key.asInstanceOf[js.Any]).asInstanceOf[InputPluginContainer]
     
     /**
       * Installs all of the registered Input Plugins into the given target.
       * @param target The target InputPlugin to install the plugins into.
       */
-    @scala.inline
-    def install(target: typings.phaser.Phaser.Input.InputPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def install(target: typings.phaser.Phaser.Input.InputPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Static method called directly by the Core internal Plugins.
@@ -1241,15 +1234,13 @@ object Input {
       * @param settingsKey The key in the Scene Settings to check to see if this plugin should install or not.
       * @param configKey The key in the Game Config to check to see if this plugin should install or not.
       */
-    @scala.inline
-    def register(key: String, plugin: js.Function, mapping: String, settingsKey: String, configKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], settingsKey.asInstanceOf[js.Any], configKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def register(key: String, plugin: js.Function, mapping: String, settingsKey: String, configKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], settingsKey.asInstanceOf[js.Any], configKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes an input plugin based on the given key.
       * @param key The key of the input plugin to remove.
       */
-    @scala.inline
-    def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object Keyboard {
@@ -1264,10 +1255,8 @@ object Input {
       * @param key The Key object to test.
       * @param duration The duration, in ms, within which the key must have been pressed down. Default 50.
       */
-    @scala.inline
-    def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     object Events {
       
@@ -1418,8 +1407,7 @@ object Input {
       * This allows you to use it in situations where you want to check if this key is down without using an event, such as in a core game loop.
       * @param key The Key to check to see if it's just down or not.
       */
-    @scala.inline
-    def JustDown(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("JustDown")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def JustDown(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("JustDown")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * The justUp value allows you to test if this Key has just been released or not.
@@ -1430,8 +1418,7 @@ object Input {
       * This allows you to use it in situations where you want to check if this key is up without using an event, such as in a core game loop.
       * @param key The Key to check to see if it's just up or not.
       */
-    @scala.inline
-    def JustUp(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("JustUp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def JustUp(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("JustUp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * A generic Key object which can be passed to the Process functions (and so on)
@@ -1472,11 +1459,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.ALT")
       @js.native
       def ALT: integer = js.native
-      @scala.inline
-      def ALT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT")(x.asInstanceOf[js.Any])
+      inline def ALT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def A_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A")(x.asInstanceOf[js.Any])
+      inline def A_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A")(x.asInstanceOf[js.Any])
       
       /**
         * The B key.
@@ -1491,8 +1476,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.BACKSPACE")
       @js.native
       def BACKSPACE: integer = js.native
-      @scala.inline
-      def BACKSPACE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKSPACE")(x.asInstanceOf[js.Any])
+      inline def BACKSPACE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKSPACE")(x.asInstanceOf[js.Any])
       
       /**
         * The BACKTICK key.
@@ -1500,8 +1484,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.BACKTICK")
       @js.native
       def BACKTICK: integer = js.native
-      @scala.inline
-      def BACKTICK_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKTICK")(x.asInstanceOf[js.Any])
+      inline def BACKTICK_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKTICK")(x.asInstanceOf[js.Any])
       
       /**
         * The BACK_SLASH key.
@@ -1509,8 +1492,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.BACK_SLASH")
       @js.native
       def BACK_SLASH: integer = js.native
-      @scala.inline
-      def BACK_SLASH_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK_SLASH")(x.asInstanceOf[js.Any])
+      inline def BACK_SLASH_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK_SLASH")(x.asInstanceOf[js.Any])
       
       /**
         * The BRACKET_LEFT_FIREFOX key.
@@ -1518,8 +1500,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.BRACKET_LEFT_FIREFOX")
       @js.native
       def BRACKET_LEFT_FIREFOX: integer = js.native
-      @scala.inline
-      def BRACKET_LEFT_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_LEFT_FIREFOX")(x.asInstanceOf[js.Any])
+      inline def BRACKET_LEFT_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_LEFT_FIREFOX")(x.asInstanceOf[js.Any])
       
       /**
         * The BRACKET_RIGHT_FIREFOX key.
@@ -1527,11 +1508,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.BRACKET_RIGHT_FIREFOX")
       @js.native
       def BRACKET_RIGHT_FIREFOX: integer = js.native
-      @scala.inline
-      def BRACKET_RIGHT_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_RIGHT_FIREFOX")(x.asInstanceOf[js.Any])
+      inline def BRACKET_RIGHT_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_RIGHT_FIREFOX")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def B_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("B")(x.asInstanceOf[js.Any])
+      inline def B_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("B")(x.asInstanceOf[js.Any])
       
       /**
         * The C key.
@@ -1546,8 +1525,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.CAPS_LOCK")
       @js.native
       def CAPS_LOCK: integer = js.native
-      @scala.inline
-      def CAPS_LOCK_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPS_LOCK")(x.asInstanceOf[js.Any])
+      inline def CAPS_LOCK_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPS_LOCK")(x.asInstanceOf[js.Any])
       
       /**
         * The CLOSED_BRACKET key.
@@ -1555,8 +1533,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.CLOSED_BRACKET")
       @js.native
       def CLOSED_BRACKET: integer = js.native
-      @scala.inline
-      def CLOSED_BRACKET_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_BRACKET")(x.asInstanceOf[js.Any])
+      inline def CLOSED_BRACKET_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_BRACKET")(x.asInstanceOf[js.Any])
       
       /**
         * The COLON key.
@@ -1564,8 +1541,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.COLON")
       @js.native
       def COLON: integer = js.native
-      @scala.inline
-      def COLON_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLON")(x.asInstanceOf[js.Any])
+      inline def COLON_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLON")(x.asInstanceOf[js.Any])
       
       /**
         * The COMMA key.
@@ -1573,8 +1549,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.COMMA")
       @js.native
       def COMMA: integer = js.native
-      @scala.inline
-      def COMMA_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA")(x.asInstanceOf[js.Any])
+      inline def COMMA_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA")(x.asInstanceOf[js.Any])
       
       /**
         * The COMMA_FIREFOX key.
@@ -1582,8 +1557,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.COMMA_FIREFOX")
       @js.native
       def COMMA_FIREFOX: integer = js.native
-      @scala.inline
-      def COMMA_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX")(x.asInstanceOf[js.Any])
+      inline def COMMA_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX")(x.asInstanceOf[js.Any])
       
       /**
         * The COMMA_FIREFOX_WINDOWS key.
@@ -1591,8 +1565,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.COMMA_FIREFOX_WINDOWS")
       @js.native
       def COMMA_FIREFOX_WINDOWS: integer = js.native
-      @scala.inline
-      def COMMA_FIREFOX_WINDOWS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX_WINDOWS")(x.asInstanceOf[js.Any])
+      inline def COMMA_FIREFOX_WINDOWS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX_WINDOWS")(x.asInstanceOf[js.Any])
       
       /**
         * The CTRL key.
@@ -1600,11 +1573,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.CTRL")
       @js.native
       def CTRL: integer = js.native
-      @scala.inline
-      def CTRL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CTRL")(x.asInstanceOf[js.Any])
+      inline def CTRL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CTRL")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def C_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("C")(x.asInstanceOf[js.Any])
+      inline def C_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("C")(x.asInstanceOf[js.Any])
       
       /**
         * The D key.
@@ -1619,8 +1590,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.DELETE")
       @js.native
       def DELETE: integer = js.native
-      @scala.inline
-      def DELETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETE")(x.asInstanceOf[js.Any])
+      inline def DELETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETE")(x.asInstanceOf[js.Any])
       
       /**
         * The DOWN key.
@@ -1628,11 +1598,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.DOWN")
       @js.native
       def DOWN: integer = js.native
-      @scala.inline
-      def DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOWN")(x.asInstanceOf[js.Any])
+      inline def DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOWN")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def D_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("D")(x.asInstanceOf[js.Any])
+      inline def D_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("D")(x.asInstanceOf[js.Any])
       
       /**
         * The E key.
@@ -1647,8 +1615,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.EIGHT")
       @js.native
       def EIGHT: integer = js.native
-      @scala.inline
-      def EIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIGHT")(x.asInstanceOf[js.Any])
+      inline def EIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIGHT")(x.asInstanceOf[js.Any])
       
       /**
         * The END key.
@@ -1656,8 +1623,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.END")
       @js.native
       def END: integer = js.native
-      @scala.inline
-      def END_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+      inline def END_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
       
       /**
         * The ENTER key.
@@ -1665,8 +1631,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.ENTER")
       @js.native
       def ENTER: integer = js.native
-      @scala.inline
-      def ENTER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTER")(x.asInstanceOf[js.Any])
+      inline def ENTER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTER")(x.asInstanceOf[js.Any])
       
       /**
         * The ESC key.
@@ -1674,11 +1639,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.ESC")
       @js.native
       def ESC: integer = js.native
-      @scala.inline
-      def ESC_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESC")(x.asInstanceOf[js.Any])
+      inline def ESC_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESC")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def E_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
+      inline def E_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
       
       /**
         * The F key.
@@ -1700,8 +1663,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F10")
       @js.native
       def F10: integer = js.native
-      @scala.inline
-      def F10_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F10")(x.asInstanceOf[js.Any])
+      inline def F10_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F10")(x.asInstanceOf[js.Any])
       
       /**
         * The F11 key.
@@ -1709,8 +1671,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F11")
       @js.native
       def F11: integer = js.native
-      @scala.inline
-      def F11_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F11")(x.asInstanceOf[js.Any])
+      inline def F11_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F11")(x.asInstanceOf[js.Any])
       
       /**
         * The F12 key.
@@ -1718,11 +1679,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F12")
       @js.native
       def F12: integer = js.native
-      @scala.inline
-      def F12_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F12")(x.asInstanceOf[js.Any])
+      inline def F12_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F12")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def F1_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F1")(x.asInstanceOf[js.Any])
+      inline def F1_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F1")(x.asInstanceOf[js.Any])
       
       /**
         * The F2 key.
@@ -1730,8 +1689,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F2")
       @js.native
       def F2: integer = js.native
-      @scala.inline
-      def F2_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F2")(x.asInstanceOf[js.Any])
+      inline def F2_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F2")(x.asInstanceOf[js.Any])
       
       /**
         * The F3 key.
@@ -1739,8 +1697,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F3")
       @js.native
       def F3: integer = js.native
-      @scala.inline
-      def F3_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F3")(x.asInstanceOf[js.Any])
+      inline def F3_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F3")(x.asInstanceOf[js.Any])
       
       /**
         * The F4 key.
@@ -1748,8 +1705,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F4")
       @js.native
       def F4: integer = js.native
-      @scala.inline
-      def F4_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F4")(x.asInstanceOf[js.Any])
+      inline def F4_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F4")(x.asInstanceOf[js.Any])
       
       /**
         * The F5 key.
@@ -1757,8 +1713,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F5")
       @js.native
       def F5: integer = js.native
-      @scala.inline
-      def F5_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F5")(x.asInstanceOf[js.Any])
+      inline def F5_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F5")(x.asInstanceOf[js.Any])
       
       /**
         * The F6 key.
@@ -1766,8 +1721,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F6")
       @js.native
       def F6: integer = js.native
-      @scala.inline
-      def F6_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F6")(x.asInstanceOf[js.Any])
+      inline def F6_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F6")(x.asInstanceOf[js.Any])
       
       /**
         * The F7 key.
@@ -1775,8 +1729,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F7")
       @js.native
       def F7: integer = js.native
-      @scala.inline
-      def F7_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F7")(x.asInstanceOf[js.Any])
+      inline def F7_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F7")(x.asInstanceOf[js.Any])
       
       /**
         * The F8 key.
@@ -1784,8 +1737,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F8")
       @js.native
       def F8: integer = js.native
-      @scala.inline
-      def F8_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F8")(x.asInstanceOf[js.Any])
+      inline def F8_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F8")(x.asInstanceOf[js.Any])
       
       /**
         * The F9 key.
@@ -1793,8 +1745,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.F9")
       @js.native
       def F9: integer = js.native
-      @scala.inline
-      def F9_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F9")(x.asInstanceOf[js.Any])
+      inline def F9_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F9")(x.asInstanceOf[js.Any])
       
       /**
         * The FIVE key.
@@ -1802,8 +1753,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.FIVE")
       @js.native
       def FIVE: integer = js.native
-      @scala.inline
-      def FIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIVE")(x.asInstanceOf[js.Any])
+      inline def FIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIVE")(x.asInstanceOf[js.Any])
       
       /**
         * The FORWARD_SLASH key.
@@ -1811,8 +1761,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.FORWARD_SLASH")
       @js.native
       def FORWARD_SLASH: integer = js.native
-      @scala.inline
-      def FORWARD_SLASH_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD_SLASH")(x.asInstanceOf[js.Any])
+      inline def FORWARD_SLASH_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD_SLASH")(x.asInstanceOf[js.Any])
       
       /**
         * The FOUR key.
@@ -1820,11 +1769,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.FOUR")
       @js.native
       def FOUR: integer = js.native
-      @scala.inline
-      def FOUR_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
+      inline def FOUR_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def F_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F")(x.asInstanceOf[js.Any])
+      inline def F_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F")(x.asInstanceOf[js.Any])
       
       /**
         * The G key.
@@ -1832,8 +1779,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.G")
       @js.native
       def G: integer = js.native
-      @scala.inline
-      def G_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("G")(x.asInstanceOf[js.Any])
+      inline def G_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("G")(x.asInstanceOf[js.Any])
       
       /**
         * The H key.
@@ -1848,11 +1794,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.HOME")
       @js.native
       def HOME: integer = js.native
-      @scala.inline
-      def HOME_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOME")(x.asInstanceOf[js.Any])
+      inline def HOME_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOME")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def H_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("H")(x.asInstanceOf[js.Any])
+      inline def H_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("H")(x.asInstanceOf[js.Any])
       
       /**
         * The I key.
@@ -1867,11 +1811,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.INSERT")
       @js.native
       def INSERT: integer = js.native
-      @scala.inline
-      def INSERT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSERT")(x.asInstanceOf[js.Any])
+      inline def INSERT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSERT")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def I_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I")(x.asInstanceOf[js.Any])
+      inline def I_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I")(x.asInstanceOf[js.Any])
       
       /**
         * The J key.
@@ -1879,8 +1821,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.J")
       @js.native
       def J: integer = js.native
-      @scala.inline
-      def J_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("J")(x.asInstanceOf[js.Any])
+      inline def J_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("J")(x.asInstanceOf[js.Any])
       
       /**
         * The K key.
@@ -1888,8 +1829,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.K")
       @js.native
       def K: integer = js.native
-      @scala.inline
-      def K_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("K")(x.asInstanceOf[js.Any])
+      inline def K_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("K")(x.asInstanceOf[js.Any])
       
       /**
         * The L key.
@@ -1904,11 +1844,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.LEFT")
       @js.native
       def LEFT: integer = js.native
-      @scala.inline
-      def LEFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+      inline def LEFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def L_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("L")(x.asInstanceOf[js.Any])
+      inline def L_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("L")(x.asInstanceOf[js.Any])
       
       /**
         * The M key.
@@ -1923,11 +1861,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.MINUS")
       @js.native
       def MINUS: integer = js.native
-      @scala.inline
-      def MINUS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUS")(x.asInstanceOf[js.Any])
+      inline def MINUS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUS")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def M_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("M")(x.asInstanceOf[js.Any])
+      inline def M_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("M")(x.asInstanceOf[js.Any])
       
       /**
         * The N key.
@@ -1942,8 +1878,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NINE")
       @js.native
       def NINE: integer = js.native
-      @scala.inline
-      def NINE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NINE")(x.asInstanceOf[js.Any])
+      inline def NINE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NINE")(x.asInstanceOf[js.Any])
       
       /**
         * The Numpad Addition (+) key.
@@ -1951,8 +1886,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_ADD")
       @js.native
       def NUMPAD_ADD: integer = js.native
-      @scala.inline
-      def NUMPAD_ADD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ADD")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_ADD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ADD")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_EIGHT key.
@@ -1960,8 +1894,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_EIGHT")
       @js.native
       def NUMPAD_EIGHT: integer = js.native
-      @scala.inline
-      def NUMPAD_EIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_EIGHT")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_EIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_EIGHT")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_FIVE key.
@@ -1969,8 +1902,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_FIVE")
       @js.native
       def NUMPAD_FIVE: integer = js.native
-      @scala.inline
-      def NUMPAD_FIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FIVE")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_FIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FIVE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_FOUR key.
@@ -1978,8 +1910,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_FOUR")
       @js.native
       def NUMPAD_FOUR: integer = js.native
-      @scala.inline
-      def NUMPAD_FOUR_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FOUR")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_FOUR_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FOUR")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_NINE key.
@@ -1987,8 +1918,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_NINE")
       @js.native
       def NUMPAD_NINE: integer = js.native
-      @scala.inline
-      def NUMPAD_NINE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_NINE")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_NINE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_NINE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_ONE key.
@@ -1996,8 +1926,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_ONE")
       @js.native
       def NUMPAD_ONE: integer = js.native
-      @scala.inline
-      def NUMPAD_ONE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ONE")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_ONE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ONE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_SEVEN key.
@@ -2005,8 +1934,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_SEVEN")
       @js.native
       def NUMPAD_SEVEN: integer = js.native
-      @scala.inline
-      def NUMPAD_SEVEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SEVEN")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_SEVEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SEVEN")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_SIX key.
@@ -2014,8 +1942,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_SIX")
       @js.native
       def NUMPAD_SIX: integer = js.native
-      @scala.inline
-      def NUMPAD_SIX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SIX")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_SIX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SIX")(x.asInstanceOf[js.Any])
       
       /**
         * The Numpad Subtraction (-) key.
@@ -2023,8 +1950,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_SUBTRACT")
       @js.native
       def NUMPAD_SUBTRACT: integer = js.native
-      @scala.inline
-      def NUMPAD_SUBTRACT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SUBTRACT")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_SUBTRACT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SUBTRACT")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_THREE key.
@@ -2032,8 +1958,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_THREE")
       @js.native
       def NUMPAD_THREE: integer = js.native
-      @scala.inline
-      def NUMPAD_THREE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_THREE")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_THREE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_THREE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_TWO key.
@@ -2041,8 +1966,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_TWO")
       @js.native
       def NUMPAD_TWO: integer = js.native
-      @scala.inline
-      def NUMPAD_TWO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_TWO")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_TWO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_TWO")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_ZERO key.
@@ -2050,11 +1974,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.NUMPAD_ZERO")
       @js.native
       def NUMPAD_ZERO: integer = js.native
-      @scala.inline
-      def NUMPAD_ZERO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ZERO")(x.asInstanceOf[js.Any])
+      inline def NUMPAD_ZERO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ZERO")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def N_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("N")(x.asInstanceOf[js.Any])
+      inline def N_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("N")(x.asInstanceOf[js.Any])
       
       /**
         * The O key.
@@ -2069,8 +1991,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.ONE")
       @js.native
       def ONE: integer = js.native
-      @scala.inline
-      def ONE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+      inline def ONE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
       
       /**
         * The OPEN_BRACKET key.
@@ -2078,11 +1999,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.OPEN_BRACKET")
       @js.native
       def OPEN_BRACKET: integer = js.native
-      @scala.inline
-      def OPEN_BRACKET_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_BRACKET")(x.asInstanceOf[js.Any])
+      inline def OPEN_BRACKET_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_BRACKET")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def O_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O")(x.asInstanceOf[js.Any])
+      inline def O_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O")(x.asInstanceOf[js.Any])
       
       /**
         * The P key.
@@ -2097,8 +2016,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.PAGE_DOWN")
       @js.native
       def PAGE_DOWN: integer = js.native
-      @scala.inline
-      def PAGE_DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_DOWN")(x.asInstanceOf[js.Any])
+      inline def PAGE_DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_DOWN")(x.asInstanceOf[js.Any])
       
       /**
         * The PAGE_UP key.
@@ -2106,8 +2024,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.PAGE_UP")
       @js.native
       def PAGE_UP: integer = js.native
-      @scala.inline
-      def PAGE_UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_UP")(x.asInstanceOf[js.Any])
+      inline def PAGE_UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_UP")(x.asInstanceOf[js.Any])
       
       /**
         * The PAUSE key.
@@ -2115,8 +2032,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.PAUSE")
       @js.native
       def PAUSE: integer = js.native
-      @scala.inline
-      def PAUSE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSE")(x.asInstanceOf[js.Any])
+      inline def PAUSE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSE")(x.asInstanceOf[js.Any])
       
       /**
         * The PERIOD key.
@@ -2124,8 +2040,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.PERIOD")
       @js.native
       def PERIOD: integer = js.native
-      @scala.inline
-      def PERIOD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERIOD")(x.asInstanceOf[js.Any])
+      inline def PERIOD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERIOD")(x.asInstanceOf[js.Any])
       
       /**
         * The PLUS key.
@@ -2133,8 +2048,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.PLUS")
       @js.native
       def PLUS: integer = js.native
-      @scala.inline
-      def PLUS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLUS")(x.asInstanceOf[js.Any])
+      inline def PLUS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLUS")(x.asInstanceOf[js.Any])
       
       /**
         * The PRINT_SCREEN key.
@@ -2142,11 +2056,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.PRINT_SCREEN")
       @js.native
       def PRINT_SCREEN: integer = js.native
-      @scala.inline
-      def PRINT_SCREEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINT_SCREEN")(x.asInstanceOf[js.Any])
+      inline def PRINT_SCREEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINT_SCREEN")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def P_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("P")(x.asInstanceOf[js.Any])
+      inline def P_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("P")(x.asInstanceOf[js.Any])
       
       /**
         * The Q key.
@@ -2161,11 +2073,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.QUOTES")
       @js.native
       def QUOTES: integer = js.native
-      @scala.inline
-      def QUOTES_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTES")(x.asInstanceOf[js.Any])
+      inline def QUOTES_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTES")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Q_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Q")(x.asInstanceOf[js.Any])
+      inline def Q_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Q")(x.asInstanceOf[js.Any])
       
       /**
         * The R key.
@@ -2180,11 +2090,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.RIGHT")
       @js.native
       def RIGHT: integer = js.native
-      @scala.inline
-      def RIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+      inline def RIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def R_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("R")(x.asInstanceOf[js.Any])
+      inline def R_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("R")(x.asInstanceOf[js.Any])
       
       /**
         * The S key.
@@ -2199,8 +2107,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.SEMICOLON")
       @js.native
       def SEMICOLON: integer = js.native
-      @scala.inline
-      def SEMICOLON_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON")(x.asInstanceOf[js.Any])
+      inline def SEMICOLON_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON")(x.asInstanceOf[js.Any])
       
       /**
         * The SEMICOLON_FIREFOX key.
@@ -2208,8 +2115,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.SEMICOLON_FIREFOX")
       @js.native
       def SEMICOLON_FIREFOX: integer = js.native
-      @scala.inline
-      def SEMICOLON_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON_FIREFOX")(x.asInstanceOf[js.Any])
+      inline def SEMICOLON_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON_FIREFOX")(x.asInstanceOf[js.Any])
       
       /**
         * The SEVEN key.
@@ -2217,8 +2123,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.SEVEN")
       @js.native
       def SEVEN: integer = js.native
-      @scala.inline
-      def SEVEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEVEN")(x.asInstanceOf[js.Any])
+      inline def SEVEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEVEN")(x.asInstanceOf[js.Any])
       
       /**
         * The SHIFT key.
@@ -2226,8 +2131,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.SHIFT")
       @js.native
       def SHIFT: integer = js.native
-      @scala.inline
-      def SHIFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHIFT")(x.asInstanceOf[js.Any])
+      inline def SHIFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHIFT")(x.asInstanceOf[js.Any])
       
       /**
         * The SIX key.
@@ -2235,8 +2139,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.SIX")
       @js.native
       def SIX: integer = js.native
-      @scala.inline
-      def SIX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIX")(x.asInstanceOf[js.Any])
+      inline def SIX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIX")(x.asInstanceOf[js.Any])
       
       /**
         * The SPACE key.
@@ -2244,11 +2147,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.SPACE")
       @js.native
       def SPACE: integer = js.native
-      @scala.inline
-      def SPACE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE")(x.asInstanceOf[js.Any])
+      inline def SPACE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def S_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S")(x.asInstanceOf[js.Any])
+      inline def S_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S")(x.asInstanceOf[js.Any])
       
       /**
         * The T key.
@@ -2263,8 +2164,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.TAB")
       @js.native
       def TAB: integer = js.native
-      @scala.inline
-      def TAB_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
+      inline def TAB_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
       
       /**
         * The THREE key.
@@ -2272,8 +2172,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.THREE")
       @js.native
       def THREE: integer = js.native
-      @scala.inline
-      def THREE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
+      inline def THREE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
       
       /**
         * The TWO key.
@@ -2281,11 +2180,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.TWO")
       @js.native
       def TWO: integer = js.native
-      @scala.inline
-      def TWO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
+      inline def TWO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def T_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
+      inline def T_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
       
       /**
         * The U key.
@@ -2300,11 +2197,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.UP")
       @js.native
       def UP: integer = js.native
-      @scala.inline
-      def UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP")(x.asInstanceOf[js.Any])
+      inline def UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def U_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("U")(x.asInstanceOf[js.Any])
+      inline def U_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("U")(x.asInstanceOf[js.Any])
       
       /**
         * The V key.
@@ -2312,8 +2207,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.V")
       @js.native
       def V: integer = js.native
-      @scala.inline
-      def V_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V")(x.asInstanceOf[js.Any])
+      inline def V_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V")(x.asInstanceOf[js.Any])
       
       /**
         * The W key.
@@ -2321,8 +2215,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.W")
       @js.native
       def W: integer = js.native
-      @scala.inline
-      def W_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("W")(x.asInstanceOf[js.Any])
+      inline def W_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("W")(x.asInstanceOf[js.Any])
       
       /**
         * The X key.
@@ -2330,8 +2223,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.X")
       @js.native
       def X: integer = js.native
-      @scala.inline
-      def X_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
+      inline def X_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
       
       /**
         * The Y key.
@@ -2339,8 +2231,7 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.Y")
       @js.native
       def Y: integer = js.native
-      @scala.inline
-      def Y_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
+      inline def Y_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
       
       /**
         * The Z key.
@@ -2355,11 +2246,9 @@ object Input {
       @JSGlobal("Phaser.Input.Keyboard.KeyCodes.ZERO")
       @js.native
       def ZERO: integer = js.native
-      @scala.inline
-      def ZERO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+      inline def ZERO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def Z_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
+      inline def Z_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -2581,10 +2470,8 @@ object Input {
       * @param key The Key object to test.
       * @param duration The duration, in ms, within which the key must have been released. Default 50.
       */
-    @scala.inline
-    def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -2593,8 +2480,7 @@ object Input {
   @JSGlobal("Phaser.Input.MOUSE_DOWN")
   @js.native
   def MOUSE_DOWN: integer = js.native
-  @scala.inline
-  def MOUSE_DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_DOWN")(x.asInstanceOf[js.Any])
+  inline def MOUSE_DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_DOWN")(x.asInstanceOf[js.Any])
   
   /**
     * The mouse pointer is being moved.
@@ -2602,8 +2488,7 @@ object Input {
   @JSGlobal("Phaser.Input.MOUSE_MOVE")
   @js.native
   def MOUSE_MOVE: integer = js.native
-  @scala.inline
-  def MOUSE_MOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_MOVE")(x.asInstanceOf[js.Any])
+  inline def MOUSE_MOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_MOVE")(x.asInstanceOf[js.Any])
   
   /**
     * The mouse pointer is released.
@@ -2611,8 +2496,7 @@ object Input {
   @JSGlobal("Phaser.Input.MOUSE_UP")
   @js.native
   def MOUSE_UP: integer = js.native
-  @scala.inline
-  def MOUSE_UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_UP")(x.asInstanceOf[js.Any])
+  inline def MOUSE_UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_UP")(x.asInstanceOf[js.Any])
   
   /**
     * The mouse wheel changes.
@@ -2620,8 +2504,7 @@ object Input {
   @JSGlobal("Phaser.Input.MOUSE_WHEEL")
   @js.native
   def MOUSE_WHEEL: integer = js.native
-  @scala.inline
-  def MOUSE_WHEEL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_WHEEL")(x.asInstanceOf[js.Any])
+  inline def MOUSE_WHEEL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_WHEEL")(x.asInstanceOf[js.Any])
   
   object Mouse {
     
@@ -2809,8 +2692,7 @@ object Input {
   @JSGlobal("Phaser.Input.POINTER_LOCK_CHANGE")
   @js.native
   def POINTER_LOCK_CHANGE: integer = js.native
-  @scala.inline
-  def POINTER_LOCK_CHANGE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINTER_LOCK_CHANGE")(x.asInstanceOf[js.Any])
+  inline def POINTER_LOCK_CHANGE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINTER_LOCK_CHANGE")(x.asInstanceOf[js.Any])
   
   /**
     * A Pointer object encapsulates both mouse and touch input within Phaser.
@@ -2845,8 +2727,7 @@ object Input {
   @JSGlobal("Phaser.Input.TOUCH_CANCEL")
   @js.native
   def TOUCH_CANCEL: integer = js.native
-  @scala.inline
-  def TOUCH_CANCEL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_CANCEL")(x.asInstanceOf[js.Any])
+  inline def TOUCH_CANCEL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_CANCEL")(x.asInstanceOf[js.Any])
   
   /**
     * A touch pointer has been started.
@@ -2854,8 +2735,7 @@ object Input {
   @JSGlobal("Phaser.Input.TOUCH_END")
   @js.native
   def TOUCH_END: integer = js.native
-  @scala.inline
-  def TOUCH_END_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_END")(x.asInstanceOf[js.Any])
+  inline def TOUCH_END_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_END")(x.asInstanceOf[js.Any])
   
   /**
     * A touch pointer has been started.
@@ -2863,8 +2743,7 @@ object Input {
   @JSGlobal("Phaser.Input.TOUCH_MOVE")
   @js.native
   def TOUCH_MOVE: integer = js.native
-  @scala.inline
-  def TOUCH_MOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_MOVE")(x.asInstanceOf[js.Any])
+  inline def TOUCH_MOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_MOVE")(x.asInstanceOf[js.Any])
   
   /**
     * A touch pointer has been started.
@@ -2872,8 +2751,7 @@ object Input {
   @JSGlobal("Phaser.Input.TOUCH_START")
   @js.native
   def TOUCH_START: integer = js.native
-  @scala.inline
-  def TOUCH_START_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_START")(x.asInstanceOf[js.Any])
+  inline def TOUCH_START_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_START")(x.asInstanceOf[js.Any])
   
   object Touch {
     

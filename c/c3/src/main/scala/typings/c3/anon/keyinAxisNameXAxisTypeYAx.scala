@@ -17,31 +17,23 @@ trait keyinAxisNameXAxisTypeYAx extends StObject {
 }
 object keyinAxisNameXAxisTypeYAx {
   
-  @scala.inline
-  def apply(): keyinAxisNameXAxisTypeYAx = {
+  inline def apply(): keyinAxisNameXAxisTypeYAx = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[keyinAxisNameXAxisTypeYAx]
   }
   
-  @scala.inline
-  implicit class keyinAxisNameXAxisTypeYAxMutableBuilder[Self <: keyinAxisNameXAxisTypeYAx] (val x: Self) extends AnyVal {
+  extension [Self <: keyinAxisNameXAxisTypeYAx](x: Self) {
     
-    @scala.inline
-    def setX(value: XAxisType | YAxisType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: XAxisType | YAxisType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: XAxisType | YAxisType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: XAxisType | YAxisType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: XAxisType | YAxisType): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: XAxisType | YAxisType): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

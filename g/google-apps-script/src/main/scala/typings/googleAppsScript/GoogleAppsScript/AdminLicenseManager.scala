@@ -20,8 +20,7 @@ trait AdminLicenseManager extends StObject {
 }
 object AdminLicenseManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     newLicenseAssignment: () => LicenseAssignment,
     newLicenseAssignmentInsert: () => LicenseAssignmentInsert
   ): AdminLicenseManager = {
@@ -29,20 +28,15 @@ object AdminLicenseManager {
     __obj.asInstanceOf[AdminLicenseManager]
   }
   
-  @scala.inline
-  implicit class AdminLicenseManagerMutableBuilder[Self <: AdminLicenseManager] (val x: Self) extends AnyVal {
+  extension [Self <: AdminLicenseManager](x: Self) {
     
-    @scala.inline
-    def setLicenseAssignments(value: LicenseAssignmentsCollection): Self = StObject.set(x, "LicenseAssignments", value.asInstanceOf[js.Any])
+    inline def setLicenseAssignments(value: LicenseAssignmentsCollection): Self = StObject.set(x, "LicenseAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseAssignmentsUndefined: Self = StObject.set(x, "LicenseAssignments", js.undefined)
+    inline def setLicenseAssignmentsUndefined: Self = StObject.set(x, "LicenseAssignments", js.undefined)
     
-    @scala.inline
-    def setNewLicenseAssignment(value: () => LicenseAssignment): Self = StObject.set(x, "newLicenseAssignment", js.Any.fromFunction0(value))
+    inline def setNewLicenseAssignment(value: () => LicenseAssignment): Self = StObject.set(x, "newLicenseAssignment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewLicenseAssignmentInsert(value: () => LicenseAssignmentInsert): Self = StObject.set(x, "newLicenseAssignmentInsert", js.Any.fromFunction0(value))
+    inline def setNewLicenseAssignmentInsert(value: () => LicenseAssignmentInsert): Self = StObject.set(x, "newLicenseAssignmentInsert", js.Any.fromFunction0(value))
   }
   
   object Collection {
@@ -99,62 +93,44 @@ object AdminLicenseManager {
     }
     object LicenseAssignment {
       
-      @scala.inline
-      def apply(): LicenseAssignment = {
+      inline def apply(): LicenseAssignment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LicenseAssignment]
       }
       
-      @scala.inline
-      implicit class LicenseAssignmentMutableBuilder[Self <: LicenseAssignment] (val x: Self) extends AnyVal {
+      extension [Self <: LicenseAssignment](x: Self) {
         
-        @scala.inline
-        def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
+        inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
+        inline def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+        inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+        inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
         
-        @scala.inline
-        def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+        inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
         
-        @scala.inline
-        def setSkuName(value: String): Self = StObject.set(x, "skuName", value.asInstanceOf[js.Any])
+        inline def setSkuName(value: String): Self = StObject.set(x, "skuName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuNameUndefined: Self = StObject.set(x, "skuName", js.undefined)
+        inline def setSkuNameUndefined: Self = StObject.set(x, "skuName", js.undefined)
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -164,20 +140,16 @@ object AdminLicenseManager {
     }
     object LicenseAssignmentInsert {
       
-      @scala.inline
-      def apply(): LicenseAssignmentInsert = {
+      inline def apply(): LicenseAssignmentInsert = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LicenseAssignmentInsert]
       }
       
-      @scala.inline
-      implicit class LicenseAssignmentInsertMutableBuilder[Self <: LicenseAssignmentInsert] (val x: Self) extends AnyVal {
+      extension [Self <: LicenseAssignmentInsert](x: Self) {
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -193,41 +165,30 @@ object AdminLicenseManager {
     }
     object LicenseAssignmentList {
       
-      @scala.inline
-      def apply(): LicenseAssignmentList = {
+      inline def apply(): LicenseAssignmentList = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LicenseAssignmentList]
       }
       
-      @scala.inline
-      implicit class LicenseAssignmentListMutableBuilder[Self <: LicenseAssignmentList] (val x: Self) extends AnyVal {
+      extension [Self <: LicenseAssignmentList](x: Self) {
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[LicenseAssignment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[LicenseAssignment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: LicenseAssignment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LicenseAssignment*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
   }

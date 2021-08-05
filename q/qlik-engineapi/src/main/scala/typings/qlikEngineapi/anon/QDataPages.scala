@@ -14,22 +14,17 @@ trait QDataPages extends StObject {
 }
 object QDataPages {
   
-  @scala.inline
-  def apply(qAxisData: js.Array[INxAxisData], qDataPages: INxDataPage): QDataPages = {
+  inline def apply(qAxisData: js.Array[INxAxisData], qDataPages: INxDataPage): QDataPages = {
     val __obj = js.Dynamic.literal(qAxisData = qAxisData.asInstanceOf[js.Any], qDataPages = qDataPages.asInstanceOf[js.Any])
     __obj.asInstanceOf[QDataPages]
   }
   
-  @scala.inline
-  implicit class QDataPagesMutableBuilder[Self <: QDataPages] (val x: Self) extends AnyVal {
+  extension [Self <: QDataPages](x: Self) {
     
-    @scala.inline
-    def setQAxisData(value: js.Array[INxAxisData]): Self = StObject.set(x, "qAxisData", value.asInstanceOf[js.Any])
+    inline def setQAxisData(value: js.Array[INxAxisData]): Self = StObject.set(x, "qAxisData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAxisDataVarargs(value: INxAxisData*): Self = StObject.set(x, "qAxisData", js.Array(value :_*))
+    inline def setQAxisDataVarargs(value: INxAxisData*): Self = StObject.set(x, "qAxisData", js.Array(value :_*))
     
-    @scala.inline
-    def setQDataPages(value: INxDataPage): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
+    inline def setQDataPages(value: INxDataPage): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
   }
 }

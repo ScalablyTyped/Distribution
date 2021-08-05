@@ -33,37 +33,27 @@ trait ServiceArguments
 }
 object ServiceArguments {
   
-  @scala.inline
-  def apply(): ServiceArguments = {
+  inline def apply(): ServiceArguments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceArguments]
   }
   
-  @scala.inline
-  implicit class ServiceArgumentsMutableBuilder[Self <: ServiceArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceArguments](x: Self) {
     
-    @scala.inline
-    def setContainers(value: Containers): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: Containers): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+    inline def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+    inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    @scala.inline
-    def setWaitForSteadyState(value: Boolean): Self = StObject.set(x, "waitForSteadyState", value.asInstanceOf[js.Any])
+    inline def setWaitForSteadyState(value: Boolean): Self = StObject.set(x, "waitForSteadyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForSteadyStateUndefined: Self = StObject.set(x, "waitForSteadyState", js.undefined)
+    inline def setWaitForSteadyStateUndefined: Self = StObject.set(x, "waitForSteadyState", js.undefined)
   }
 }

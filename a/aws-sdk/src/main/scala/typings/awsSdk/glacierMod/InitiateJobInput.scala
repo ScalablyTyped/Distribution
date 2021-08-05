@@ -23,25 +23,19 @@ trait InitiateJobInput extends StObject {
 }
 object InitiateJobInput {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): InitiateJobInput = {
+  inline def apply(accountId: String, vaultName: String): InitiateJobInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateJobInput]
   }
   
-  @scala.inline
-  implicit class InitiateJobInputMutableBuilder[Self <: InitiateJobInput] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateJobInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobParameters(value: JobParameters): Self = StObject.set(x, "jobParameters", value.asInstanceOf[js.Any])
+    inline def setJobParameters(value: JobParameters): Self = StObject.set(x, "jobParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobParametersUndefined: Self = StObject.set(x, "jobParameters", js.undefined)
+    inline def setJobParametersUndefined: Self = StObject.set(x, "jobParameters", js.undefined)
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

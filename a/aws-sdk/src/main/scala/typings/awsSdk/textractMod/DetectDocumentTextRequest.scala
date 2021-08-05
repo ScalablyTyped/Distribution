@@ -13,16 +13,13 @@ trait DetectDocumentTextRequest extends StObject {
 }
 object DetectDocumentTextRequest {
   
-  @scala.inline
-  def apply(Document: Document): DetectDocumentTextRequest = {
+  inline def apply(Document: Document): DetectDocumentTextRequest = {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectDocumentTextRequest]
   }
   
-  @scala.inline
-  implicit class DetectDocumentTextRequestMutableBuilder[Self <: DetectDocumentTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectDocumentTextRequest](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
   }
 }

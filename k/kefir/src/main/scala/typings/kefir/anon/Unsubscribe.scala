@@ -10,16 +10,13 @@ trait Unsubscribe extends StObject {
 }
 object Unsubscribe {
   
-  @scala.inline
-  def apply(unsubscribe: () => Unit): Unsubscribe = {
+  inline def apply(unsubscribe: () => Unit): Unsubscribe = {
     val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
     __obj.asInstanceOf[Unsubscribe]
   }
   
-  @scala.inline
-  implicit class UnsubscribeMutableBuilder[Self <: Unsubscribe] (val x: Self) extends AnyVal {
+  extension [Self <: Unsubscribe](x: Self) {
     
-    @scala.inline
-    def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+    inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
   }
 }

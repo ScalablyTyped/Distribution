@@ -13,16 +13,13 @@ trait RevocationAndRenewalInformation extends StObject {
 }
 object RevocationAndRenewalInformation {
   
-  @scala.inline
-  def apply(items: IVector[RevocationAndRenewalItem]): RevocationAndRenewalInformation = {
+  inline def apply(items: IVector[RevocationAndRenewalItem]): RevocationAndRenewalInformation = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevocationAndRenewalInformation]
   }
   
-  @scala.inline
-  implicit class RevocationAndRenewalInformationMutableBuilder[Self <: RevocationAndRenewalInformation] (val x: Self) extends AnyVal {
+  extension [Self <: RevocationAndRenewalInformation](x: Self) {
     
-    @scala.inline
-    def setItems(value: IVector[RevocationAndRenewalItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IVector[RevocationAndRenewalItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

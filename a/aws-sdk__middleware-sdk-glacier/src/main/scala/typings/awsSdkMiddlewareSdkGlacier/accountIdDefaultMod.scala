@@ -12,8 +12,7 @@ object accountIdDefaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def accountIdDefaultMiddleware(): InitializeMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("accountIdDefaultMiddleware")().asInstanceOf[InitializeMiddleware[js.Any, js.Any]]
+  inline def accountIdDefaultMiddleware(): InitializeMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("accountIdDefaultMiddleware")().asInstanceOf[InitializeMiddleware[js.Any, js.Any]]
   
   @JSImport("@aws-sdk/middleware-sdk-glacier/dist/cjs/account-id-default", "accountIdDefaultMiddlewareOptions")
   @js.native

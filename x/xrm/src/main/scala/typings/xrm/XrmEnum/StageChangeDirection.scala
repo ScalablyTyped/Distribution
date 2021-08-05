@@ -15,9 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StageChangeDirection extends StObject
 object StageChangeDirection {
   
-  @scala.inline
-  def Next: typings.xrm.xrmStrings.Next = "Next".asInstanceOf[typings.xrm.xrmStrings.Next]
+  inline def Next: typings.xrm.xrmStrings.Next = "Next".asInstanceOf[typings.xrm.xrmStrings.Next]
   
-  @scala.inline
-  def Previous: typings.xrm.xrmStrings.Previous = "Previous".asInstanceOf[typings.xrm.xrmStrings.Previous]
+  inline def Previous: typings.xrm.xrmStrings.Previous = "Previous".asInstanceOf[typings.xrm.xrmStrings.Previous]
 }

@@ -26,8 +26,7 @@ trait XConnectorShape
 }
 object XConnectorShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Position: Point,
     ShapeType: String,
     Size: Size,
@@ -48,19 +47,14 @@ object XConnectorShape {
     __obj.asInstanceOf[XConnectorShape]
   }
   
-  @scala.inline
-  implicit class XConnectorShapeMutableBuilder[Self <: XConnectorShape] (val x: Self) extends AnyVal {
+  extension [Self <: XConnectorShape](x: Self) {
     
-    @scala.inline
-    def setConnectEnd(value: (XConnectableShape, ConnectionType) => Unit): Self = StObject.set(x, "connectEnd", js.Any.fromFunction2(value))
+    inline def setConnectEnd(value: (XConnectableShape, ConnectionType) => Unit): Self = StObject.set(x, "connectEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConnectStart(value: (XConnectableShape, ConnectionType) => Unit): Self = StObject.set(x, "connectStart", js.Any.fromFunction2(value))
+    inline def setConnectStart(value: (XConnectableShape, ConnectionType) => Unit): Self = StObject.set(x, "connectStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisconnectBegin(value: XConnectableShape => Unit): Self = StObject.set(x, "disconnectBegin", js.Any.fromFunction1(value))
+    inline def setDisconnectBegin(value: XConnectableShape => Unit): Self = StObject.set(x, "disconnectBegin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisconnectEnd(value: XConnectableShape => Unit): Self = StObject.set(x, "disconnectEnd", js.Any.fromFunction1(value))
+    inline def setDisconnectEnd(value: XConnectableShape => Unit): Self = StObject.set(x, "disconnectEnd", js.Any.fromFunction1(value))
   }
 }

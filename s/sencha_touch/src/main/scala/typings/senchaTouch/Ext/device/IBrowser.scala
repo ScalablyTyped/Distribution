@@ -10,8 +10,7 @@ trait IBrowser
      with IAbstract
 object IBrowser {
   
-  @scala.inline
-  def apply(): IBrowser = {
+  inline def apply(): IBrowser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBrowser]
   }

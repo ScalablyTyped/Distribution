@@ -13,9 +13,7 @@ object fftUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fftBatch(input: TensorInfo, inverse: Boolean, cpuBackend: MathBackendCPU): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("fftBatch")(input.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any], cpuBackend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
+  inline def fftBatch(input: TensorInfo, inverse: Boolean, cpuBackend: MathBackendCPU): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("fftBatch")(input.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any], cpuBackend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
   
-  @scala.inline
-  def fftImpl(input: TensorInfo, inverse: Boolean, cpuBackend: MathBackendCPU): ImagReal = (^.asInstanceOf[js.Dynamic].applyDynamic("fftImpl")(input.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any], cpuBackend.asInstanceOf[js.Any])).asInstanceOf[ImagReal]
+  inline def fftImpl(input: TensorInfo, inverse: Boolean, cpuBackend: MathBackendCPU): ImagReal = (^.asInstanceOf[js.Dynamic].applyDynamic("fftImpl")(input.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any], cpuBackend.asInstanceOf[js.Any])).asInstanceOf[ImagReal]
 }

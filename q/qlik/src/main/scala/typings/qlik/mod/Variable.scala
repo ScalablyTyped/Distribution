@@ -11,16 +11,13 @@ trait Variable extends StObject {
 }
 object Variable {
   
-  @scala.inline
-  def apply(qContent: QIsNum): Variable = {
+  inline def apply(qContent: QIsNum): Variable = {
     val __obj = js.Dynamic.literal(qContent = qContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Variable]
   }
   
-  @scala.inline
-  implicit class VariableMutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
+  extension [Self <: Variable](x: Self) {
     
-    @scala.inline
-    def setQContent(value: QIsNum): Self = StObject.set(x, "qContent", value.asInstanceOf[js.Any])
+    inline def setQContent(value: QIsNum): Self = StObject.set(x, "qContent", value.asInstanceOf[js.Any])
   }
 }

@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IntegerAttributeFormat extends StObject
 object IntegerAttributeFormat {
   
-  @scala.inline
-  def Duration: duration = "duration".asInstanceOf[duration]
+  inline def Duration: duration = "duration".asInstanceOf[duration]
   
-  @scala.inline
-  def None: none = "none".asInstanceOf[none]
+  inline def None: none = "none".asInstanceOf[none]
 }

@@ -41,8 +41,7 @@ trait CephFSPersistentVolumeSource extends StObject {
 }
 object CephFSPersistentVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     monitors: js.Array[String],
     path: String,
     readOnly: Boolean,
@@ -54,28 +53,20 @@ object CephFSPersistentVolumeSource {
     __obj.asInstanceOf[CephFSPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class CephFSPersistentVolumeSourceMutableBuilder[Self <: CephFSPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: CephFSPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setMonitors(value: js.Array[String]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
+    inline def setMonitors(value: js.Array[String]): Self = StObject.set(x, "monitors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorsVarargs(value: String*): Self = StObject.set(x, "monitors", js.Array(value :_*))
+    inline def setMonitorsVarargs(value: String*): Self = StObject.set(x, "monitors", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretFile(value: String): Self = StObject.set(x, "secretFile", value.asInstanceOf[js.Any])
+    inline def setSecretFile(value: String): Self = StObject.set(x, "secretFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: SecretReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: SecretReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait CreateSamplingRuleRequest extends StObject {
 }
 object CreateSamplingRuleRequest {
   
-  @scala.inline
-  def apply(SamplingRule: SamplingRule): CreateSamplingRuleRequest = {
+  inline def apply(SamplingRule: SamplingRule): CreateSamplingRuleRequest = {
     val __obj = js.Dynamic.literal(SamplingRule = SamplingRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSamplingRuleRequest]
   }
   
-  @scala.inline
-  implicit class CreateSamplingRuleRequestMutableBuilder[Self <: CreateSamplingRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSamplingRuleRequest](x: Self) {
     
-    @scala.inline
-    def setSamplingRule(value: SamplingRule): Self = StObject.set(x, "SamplingRule", value.asInstanceOf[js.Any])
+    inline def setSamplingRule(value: SamplingRule): Self = StObject.set(x, "SamplingRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

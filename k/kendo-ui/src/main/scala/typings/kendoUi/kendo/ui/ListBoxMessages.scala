@@ -10,19 +10,15 @@ trait ListBoxMessages extends StObject {
 }
 object ListBoxMessages {
   
-  @scala.inline
-  def apply(): ListBoxMessages = {
+  inline def apply(): ListBoxMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBoxMessages]
   }
   
-  @scala.inline
-  implicit class ListBoxMessagesMutableBuilder[Self <: ListBoxMessages] (val x: Self) extends AnyVal {
+  extension [Self <: ListBoxMessages](x: Self) {
     
-    @scala.inline
-    def setTools(value: ListBoxMessagesTools): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    inline def setTools(value: ListBoxMessagesTools): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+    inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
   }
 }

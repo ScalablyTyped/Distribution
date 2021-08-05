@@ -23,31 +23,23 @@ trait ModalDialogSortClickEventUIParam extends StObject {
 }
 object ModalDialogSortClickEventUIParam {
   
-  @scala.inline
-  def apply(): ModalDialogSortClickEventUIParam = {
+  inline def apply(): ModalDialogSortClickEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalDialogSortClickEventUIParam]
   }
   
-  @scala.inline
-  implicit class ModalDialogSortClickEventUIParamMutableBuilder[Self <: ModalDialogSortClickEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ModalDialogSortClickEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
+    inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
+    inline def setModalDialogElementUndefined: Self = StObject.set(x, "modalDialogElement", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

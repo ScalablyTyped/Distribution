@@ -17,31 +17,23 @@ trait CreateTemplateOptions extends StObject {
 }
 object CreateTemplateOptions {
   
-  @scala.inline
-  def apply(): CreateTemplateOptions = {
+  inline def apply(): CreateTemplateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTemplateOptions]
   }
   
-  @scala.inline
-  implicit class CreateTemplateOptionsMutableBuilder[Self <: CreateTemplateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTemplateOptions](x: Self) {
     
-    @scala.inline
-    def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
+    inline def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick_trackingUndefined: Self = StObject.set(x, "click_tracking", js.undefined)
+    inline def setClick_trackingUndefined: Self = StObject.set(x, "click_tracking", js.undefined)
     
-    @scala.inline
-    def setOpen_tracking(value: Boolean): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
+    inline def setOpen_tracking(value: Boolean): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen_trackingUndefined: Self = StObject.set(x, "open_tracking", js.undefined)
+    inline def setOpen_trackingUndefined: Self = StObject.set(x, "open_tracking", js.undefined)
     
-    @scala.inline
-    def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
+    inline def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
+    inline def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
   }
 }

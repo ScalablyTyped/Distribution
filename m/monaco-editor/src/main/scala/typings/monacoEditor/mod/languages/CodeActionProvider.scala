@@ -16,18 +16,15 @@ trait CodeActionProvider extends StObject {
 }
 object CodeActionProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideCodeActions: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]
   ): CodeActionProvider = {
     val __obj = js.Dynamic.literal(provideCodeActions = js.Any.fromFunction4(provideCodeActions))
     __obj.asInstanceOf[CodeActionProvider]
   }
   
-  @scala.inline
-  implicit class CodeActionProviderMutableBuilder[Self <: CodeActionProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionProvider](x: Self) {
     
-    @scala.inline
-    def setProvideCodeActions(value: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]): Self = StObject.set(x, "provideCodeActions", js.Any.fromFunction4(value))
+    inline def setProvideCodeActions(value: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]): Self = StObject.set(x, "provideCodeActions", js.Any.fromFunction4(value))
   }
 }

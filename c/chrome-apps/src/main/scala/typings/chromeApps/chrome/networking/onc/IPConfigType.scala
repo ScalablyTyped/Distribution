@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IPConfigType extends StObject
 object IPConfigType {
   
-  @scala.inline
-  def DHCP: typings.chromeApps.chromeAppsStrings.DHCP = "DHCP".asInstanceOf[typings.chromeApps.chromeAppsStrings.DHCP]
+  inline def DHCP: typings.chromeApps.chromeAppsStrings.DHCP = "DHCP".asInstanceOf[typings.chromeApps.chromeAppsStrings.DHCP]
   
-  @scala.inline
-  def Static: typings.chromeApps.chromeAppsStrings.Static = "Static".asInstanceOf[typings.chromeApps.chromeAppsStrings.Static]
+  inline def Static: typings.chromeApps.chromeAppsStrings.Static = "Static".asInstanceOf[typings.chromeApps.chromeAppsStrings.Static]
 }

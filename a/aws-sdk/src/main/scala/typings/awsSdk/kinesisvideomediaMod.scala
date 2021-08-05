@@ -35,20 +35,16 @@ object kinesisvideomediaMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -82,29 +78,22 @@ object kinesisvideomediaMod {
   }
   object GetMediaInput {
     
-    @scala.inline
-    def apply(StartSelector: StartSelector): GetMediaInput = {
+    inline def apply(StartSelector: StartSelector): GetMediaInput = {
       val __obj = js.Dynamic.literal(StartSelector = StartSelector.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetMediaInput]
     }
     
-    @scala.inline
-    implicit class GetMediaInputMutableBuilder[Self <: GetMediaInput] (val x: Self) extends AnyVal {
+    extension [Self <: GetMediaInput](x: Self) {
       
-      @scala.inline
-      def setStartSelector(value: StartSelector): Self = StObject.set(x, "StartSelector", value.asInstanceOf[js.Any])
+      inline def setStartSelector(value: StartSelector): Self = StObject.set(x, "StartSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+      inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+      inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
       
-      @scala.inline
-      def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+      inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     }
   }
   
@@ -122,26 +111,20 @@ object kinesisvideomediaMod {
   }
   object GetMediaOutput {
     
-    @scala.inline
-    def apply(): GetMediaOutput = {
+    inline def apply(): GetMediaOutput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetMediaOutput]
     }
     
-    @scala.inline
-    implicit class GetMediaOutputMutableBuilder[Self <: GetMediaOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetMediaOutput](x: Self) {
       
-      @scala.inline
-      def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     }
   }
   
@@ -191,35 +174,26 @@ object kinesisvideomediaMod {
   }
   object StartSelector {
     
-    @scala.inline
-    def apply(StartSelectorType: StartSelectorType): StartSelector = {
+    inline def apply(StartSelectorType: StartSelectorType): StartSelector = {
       val __obj = js.Dynamic.literal(StartSelectorType = StartSelectorType.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartSelector]
     }
     
-    @scala.inline
-    implicit class StartSelectorMutableBuilder[Self <: StartSelector] (val x: Self) extends AnyVal {
+    extension [Self <: StartSelector](x: Self) {
       
-      @scala.inline
-      def setAfterFragmentNumber(value: FragmentNumberString): Self = StObject.set(x, "AfterFragmentNumber", value.asInstanceOf[js.Any])
+      inline def setAfterFragmentNumber(value: FragmentNumberString): Self = StObject.set(x, "AfterFragmentNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterFragmentNumberUndefined: Self = StObject.set(x, "AfterFragmentNumber", js.undefined)
+      inline def setAfterFragmentNumberUndefined: Self = StObject.set(x, "AfterFragmentNumber", js.undefined)
       
-      @scala.inline
-      def setContinuationToken(value: ContinuationToken): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
+      inline def setContinuationToken(value: ContinuationToken): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
+      inline def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
       
-      @scala.inline
-      def setStartSelectorType(value: StartSelectorType): Self = StObject.set(x, "StartSelectorType", value.asInstanceOf[js.Any])
+      inline def setStartSelectorType(value: StartSelectorType): Self = StObject.set(x, "StartSelectorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartTimestamp(value: Timestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
+      inline def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
     }
   }
   

@@ -53,50 +53,36 @@ object pagerDataPartMod {
   }
   object PagerDataPart {
     
-    @scala.inline
-    def apply[TElement](total: Double): PagerDataPart[TElement] = {
+    inline def apply[TElement](total: Double): PagerDataPart[TElement] = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[PagerDataPart[TElement]]
     }
     
-    @scala.inline
-    implicit class PagerDataPartMutableBuilder[Self <: PagerDataPart[?], TElement] (val x: Self & PagerDataPart[TElement]) extends AnyVal {
+    extension [Self <: PagerDataPart[?], TElement](x: Self & PagerDataPart[TElement]) {
       
-      @scala.inline
-      def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
+      inline def setFilteredRows(value: Double): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilteredRowsUndefined: Self = StObject.set(x, "filteredRows", js.undefined)
+      inline def setFilteredRowsUndefined: Self = StObject.set(x, "filteredRows", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setOutput(value: String | PagerOutputProcessor[TElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String | PagerOutputProcessor[TElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunction2(value: (TElement, /* pager */ js.Any) => String): Self = StObject.set(x, "output", js.Any.fromFunction2(value))
+      inline def setOutputFunction2(value: (TElement, /* pager */ js.Any) => String): Self = StObject.set(x, "output", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setRows(value: js.Array[js.Array[js.Any]] | JQuery[HTMLElement]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[js.Any]] | JQuery[HTMLElement]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

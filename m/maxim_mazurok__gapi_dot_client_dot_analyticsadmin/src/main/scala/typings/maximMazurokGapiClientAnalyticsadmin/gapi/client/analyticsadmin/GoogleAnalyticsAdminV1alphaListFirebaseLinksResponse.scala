@@ -11,22 +11,17 @@ trait GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaListFirebaseLinksResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse](x: Self) {
     
-    @scala.inline
-    def setFirebaseLinks(value: js.Array[GoogleAnalyticsAdminV1alphaFirebaseLink]): Self = StObject.set(x, "firebaseLinks", value.asInstanceOf[js.Any])
+    inline def setFirebaseLinks(value: js.Array[GoogleAnalyticsAdminV1alphaFirebaseLink]): Self = StObject.set(x, "firebaseLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirebaseLinksUndefined: Self = StObject.set(x, "firebaseLinks", js.undefined)
+    inline def setFirebaseLinksUndefined: Self = StObject.set(x, "firebaseLinks", js.undefined)
     
-    @scala.inline
-    def setFirebaseLinksVarargs(value: GoogleAnalyticsAdminV1alphaFirebaseLink*): Self = StObject.set(x, "firebaseLinks", js.Array(value :_*))
+    inline def setFirebaseLinksVarargs(value: GoogleAnalyticsAdminV1alphaFirebaseLink*): Self = StObject.set(x, "firebaseLinks", js.Array(value :_*))
   }
 }

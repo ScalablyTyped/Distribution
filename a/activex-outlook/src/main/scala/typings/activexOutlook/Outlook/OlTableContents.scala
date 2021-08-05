@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlTableContents extends StObject
 object OlTableContents {
   
-  @scala.inline
-  def olHiddenItems: `1` = 1.asInstanceOf[`1`]
+  inline def olHiddenItems: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olUserItems: `0` = 0.asInstanceOf[`0`]
+  inline def olUserItems: `0` = 0.asInstanceOf[`0`]
 }

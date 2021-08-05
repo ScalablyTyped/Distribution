@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2NumericalStatsConfig extends StObject {
 }
 object GooglePrivacyDlpV2NumericalStatsConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2NumericalStatsConfig = {
+  inline def apply(): GooglePrivacyDlpV2NumericalStatsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2NumericalStatsConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2NumericalStatsConfigMutableBuilder[Self <: GooglePrivacyDlpV2NumericalStatsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2NumericalStatsConfig](x: Self) {
     
-    @scala.inline
-    def setField(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

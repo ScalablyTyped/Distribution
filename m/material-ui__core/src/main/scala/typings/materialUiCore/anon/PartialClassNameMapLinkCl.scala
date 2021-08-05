@@ -19,43 +19,31 @@ trait PartialClassNameMapLinkCl extends StObject {
 }
 object PartialClassNameMapLinkCl {
   
-  @scala.inline
-  def apply(): PartialClassNameMapLinkCl = {
+  inline def apply(): PartialClassNameMapLinkCl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapLinkCl]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapLinkClMutableBuilder[Self <: PartialClassNameMapLinkCl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapLinkCl](x: Self) {
     
-    @scala.inline
-    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setUnderlineAlways(value: String): Self = StObject.set(x, "underlineAlways", value.asInstanceOf[js.Any])
+    inline def setUnderlineAlways(value: String): Self = StObject.set(x, "underlineAlways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineAlwaysUndefined: Self = StObject.set(x, "underlineAlways", js.undefined)
+    inline def setUnderlineAlwaysUndefined: Self = StObject.set(x, "underlineAlways", js.undefined)
     
-    @scala.inline
-    def setUnderlineHover(value: String): Self = StObject.set(x, "underlineHover", value.asInstanceOf[js.Any])
+    inline def setUnderlineHover(value: String): Self = StObject.set(x, "underlineHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineHoverUndefined: Self = StObject.set(x, "underlineHover", js.undefined)
+    inline def setUnderlineHoverUndefined: Self = StObject.set(x, "underlineHover", js.undefined)
     
-    @scala.inline
-    def setUnderlineNone(value: String): Self = StObject.set(x, "underlineNone", value.asInstanceOf[js.Any])
+    inline def setUnderlineNone(value: String): Self = StObject.set(x, "underlineNone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineNoneUndefined: Self = StObject.set(x, "underlineNone", js.undefined)
+    inline def setUnderlineNoneUndefined: Self = StObject.set(x, "underlineNone", js.undefined)
   }
 }

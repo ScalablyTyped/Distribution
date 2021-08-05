@@ -22,8 +22,7 @@ object floatingHelperDriverMod {
   }
   object FloatingHelperDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickCloseButton: () => Unit,
       getHelperContentDriver: () => FloatingHelperContentDriver,
       getWidth: () => String,
@@ -34,20 +33,15 @@ object floatingHelperDriverMod {
       __obj.asInstanceOf[FloatingHelperDriver]
     }
     
-    @scala.inline
-    implicit class FloatingHelperDriverMutableBuilder[Self <: FloatingHelperDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingHelperDriver](x: Self) {
       
-      @scala.inline
-      def setClickCloseButton(value: () => Unit): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
+      inline def setClickCloseButton(value: () => Unit): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHelperContentDriver(value: () => FloatingHelperContentDriver): Self = StObject.set(x, "getHelperContentDriver", js.Any.fromFunction0(value))
+      inline def setGetHelperContentDriver(value: () => FloatingHelperContentDriver): Self = StObject.set(x, "getHelperContentDriver", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => String): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => String): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasCloseButton(value: () => Boolean): Self = StObject.set(x, "hasCloseButton", js.Any.fromFunction0(value))
+      inline def setHasCloseButton(value: () => Boolean): Self = StObject.set(x, "hasCloseButton", js.Any.fromFunction0(value))
     }
   }
 }

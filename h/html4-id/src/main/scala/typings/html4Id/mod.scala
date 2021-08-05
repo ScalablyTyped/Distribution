@@ -10,8 +10,7 @@ object mod {
     * Removes invalid characters and generates an id meant to be used for HTML elements.
     * See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id|MDN} for the note about invalid characters.
     */
-  @scala.inline
-  def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("html4-id", JSImport.Namespace)
   @js.native

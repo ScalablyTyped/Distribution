@@ -13,19 +13,15 @@ trait ModifyInstancePlacementResult extends StObject {
 }
 object ModifyInstancePlacementResult {
   
-  @scala.inline
-  def apply(): ModifyInstancePlacementResult = {
+  inline def apply(): ModifyInstancePlacementResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyInstancePlacementResult]
   }
   
-  @scala.inline
-  implicit class ModifyInstancePlacementResultMutableBuilder[Self <: ModifyInstancePlacementResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstancePlacementResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

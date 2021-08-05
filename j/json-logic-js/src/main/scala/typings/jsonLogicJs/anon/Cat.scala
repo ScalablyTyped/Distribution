@@ -15,8 +15,7 @@ trait Cat
 }
 object Cat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cat: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
     ]
@@ -25,18 +24,15 @@ object Cat {
     __obj.asInstanceOf[Cat]
   }
   
-  @scala.inline
-  implicit class CatMutableBuilder[Self <: Cat] (val x: Self) extends AnyVal {
+  extension [Self <: Cat](x: Self) {
     
-    @scala.inline
-    def setCat(
+    inline def setCat(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]
     ): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatVarargs(
+    inline def setCatVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object)*
     ): Self = StObject.set(x, "cat", js.Array(value :_*))
   }

@@ -25,61 +25,43 @@ trait SliderOptions extends StObject {
 }
 object SliderOptions {
   
-  @scala.inline
-  def apply(): SliderOptions = {
+  inline def apply(): SliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderOptions]
   }
   
-  @scala.inline
-  implicit class SliderOptionsMutableBuilder[Self <: SliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SliderOptions](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
-    @scala.inline
-    def setOn_change(value: () => js.Any): Self = StObject.set(x, "on_change", js.Any.fromFunction0(value))
+    inline def setOn_change(value: () => js.Any): Self = StObject.set(x, "on_change", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn_changeUndefined: Self = StObject.set(x, "on_change", js.undefined)
+    inline def setOn_changeUndefined: Self = StObject.set(x, "on_change", js.undefined)
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setTrigger_input_change(value: Boolean): Self = StObject.set(x, "trigger_input_change", value.asInstanceOf[js.Any])
+    inline def setTrigger_input_change(value: Boolean): Self = StObject.set(x, "trigger_input_change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrigger_input_changeUndefined: Self = StObject.set(x, "trigger_input_change", js.undefined)
+    inline def setTrigger_input_changeUndefined: Self = StObject.set(x, "trigger_input_change", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

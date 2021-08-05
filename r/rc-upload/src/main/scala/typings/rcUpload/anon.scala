@@ -15,17 +15,14 @@ object anon {
   }
   object Abort {
     
-    @scala.inline
-    def apply(abort: () => Unit): Abort = {
+    inline def apply(abort: () => Unit): Abort = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
       __obj.asInstanceOf[Abort]
     }
     
-    @scala.inline
-    implicit class AbortMutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
+    extension [Self <: Abort](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     }
   }
   
@@ -67,17 +64,14 @@ object anon {
   }
   object Uid {
     
-    @scala.inline
-    def apply(uid: String): Uid = {
+    inline def apply(uid: String): Uid = {
       val __obj = js.Dynamic.literal(uid = uid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Uid]
     }
     
-    @scala.inline
-    implicit class UidMutableBuilder[Self <: Uid] (val x: Self) extends AnyVal {
+    extension [Self <: Uid](x: Self) {
       
-      @scala.inline
-      def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
 }

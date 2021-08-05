@@ -17,8 +17,7 @@ trait Typeofusage extends StObject {
 }
 object Typeofusage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapUsage: (AxiosInstance, UsageProps) => Usage,
     wrapUsageCollection: (AxiosInstance, CollectionProp[UsageProps]) => Collection[Usage, UsageProps]
   ): Typeofusage = {
@@ -26,13 +25,10 @@ object Typeofusage {
     __obj.asInstanceOf[Typeofusage]
   }
   
-  @scala.inline
-  implicit class TypeofusageMutableBuilder[Self <: Typeofusage] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofusage](x: Self) {
     
-    @scala.inline
-    def setWrapUsage(value: (AxiosInstance, UsageProps) => Usage): Self = StObject.set(x, "wrapUsage", js.Any.fromFunction2(value))
+    inline def setWrapUsage(value: (AxiosInstance, UsageProps) => Usage): Self = StObject.set(x, "wrapUsage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapUsageCollection(value: (AxiosInstance, CollectionProp[UsageProps]) => Collection[Usage, UsageProps]): Self = StObject.set(x, "wrapUsageCollection", js.Any.fromFunction2(value))
+    inline def setWrapUsageCollection(value: (AxiosInstance, CollectionProp[UsageProps]) => Collection[Usage, UsageProps]): Self = StObject.set(x, "wrapUsageCollection", js.Any.fromFunction2(value))
   }
 }

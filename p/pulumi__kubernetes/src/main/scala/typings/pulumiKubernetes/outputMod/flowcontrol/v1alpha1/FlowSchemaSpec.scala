@@ -31,8 +31,7 @@ trait FlowSchemaSpec extends StObject {
 }
 object FlowSchemaSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distinguisherMethod: FlowDistinguisherMethod,
     matchingPrecedence: Double,
     priorityLevelConfiguration: PriorityLevelConfigurationReference,
@@ -42,22 +41,16 @@ object FlowSchemaSpec {
     __obj.asInstanceOf[FlowSchemaSpec]
   }
   
-  @scala.inline
-  implicit class FlowSchemaSpecMutableBuilder[Self <: FlowSchemaSpec] (val x: Self) extends AnyVal {
+  extension [Self <: FlowSchemaSpec](x: Self) {
     
-    @scala.inline
-    def setDistinguisherMethod(value: FlowDistinguisherMethod): Self = StObject.set(x, "distinguisherMethod", value.asInstanceOf[js.Any])
+    inline def setDistinguisherMethod(value: FlowDistinguisherMethod): Self = StObject.set(x, "distinguisherMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingPrecedence(value: Double): Self = StObject.set(x, "matchingPrecedence", value.asInstanceOf[js.Any])
+    inline def setMatchingPrecedence(value: Double): Self = StObject.set(x, "matchingPrecedence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityLevelConfiguration(value: PriorityLevelConfigurationReference): Self = StObject.set(x, "priorityLevelConfiguration", value.asInstanceOf[js.Any])
+    inline def setPriorityLevelConfiguration(value: PriorityLevelConfigurationReference): Self = StObject.set(x, "priorityLevelConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: js.Array[PolicyRulesWithSubjects]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[PolicyRulesWithSubjects]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: PolicyRulesWithSubjects*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: PolicyRulesWithSubjects*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

@@ -38,46 +38,33 @@ trait TestInvokeAuthorizerRequest extends StObject {
 }
 object TestInvokeAuthorizerRequest {
   
-  @scala.inline
-  def apply(authorizerName: AuthorizerName): TestInvokeAuthorizerRequest = {
+  inline def apply(authorizerName: AuthorizerName): TestInvokeAuthorizerRequest = {
     val __obj = js.Dynamic.literal(authorizerName = authorizerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeAuthorizerRequest]
   }
   
-  @scala.inline
-  implicit class TestInvokeAuthorizerRequestMutableBuilder[Self <: TestInvokeAuthorizerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestInvokeAuthorizerRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
+    inline def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpContext(value: HttpContext): Self = StObject.set(x, "httpContext", value.asInstanceOf[js.Any])
+    inline def setHttpContext(value: HttpContext): Self = StObject.set(x, "httpContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpContextUndefined: Self = StObject.set(x, "httpContext", js.undefined)
+    inline def setHttpContextUndefined: Self = StObject.set(x, "httpContext", js.undefined)
     
-    @scala.inline
-    def setMqttContext(value: MqttContext): Self = StObject.set(x, "mqttContext", value.asInstanceOf[js.Any])
+    inline def setMqttContext(value: MqttContext): Self = StObject.set(x, "mqttContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMqttContextUndefined: Self = StObject.set(x, "mqttContext", js.undefined)
+    inline def setMqttContextUndefined: Self = StObject.set(x, "mqttContext", js.undefined)
     
-    @scala.inline
-    def setTlsContext(value: TlsContext): Self = StObject.set(x, "tlsContext", value.asInstanceOf[js.Any])
+    inline def setTlsContext(value: TlsContext): Self = StObject.set(x, "tlsContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsContextUndefined: Self = StObject.set(x, "tlsContext", js.undefined)
+    inline def setTlsContextUndefined: Self = StObject.set(x, "tlsContext", js.undefined)
     
-    @scala.inline
-    def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenSignature(value: TokenSignature): Self = StObject.set(x, "tokenSignature", value.asInstanceOf[js.Any])
+    inline def setTokenSignature(value: TokenSignature): Self = StObject.set(x, "tokenSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenSignatureUndefined: Self = StObject.set(x, "tokenSignature", js.undefined)
+    inline def setTokenSignatureUndefined: Self = StObject.set(x, "tokenSignature", js.undefined)
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

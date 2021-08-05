@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.GlowFormat")
 @js.native
-class GlowFormat protected ()
+/* private */ class GlowFormat ()
   extends StObject
      with typings.activexWord.Word.GlowFormat {
   
@@ -28,7 +28,7 @@ class GlowFormat protected ()
   /* CompleteClass */
   var Transparency: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.GlowFormat_typekey")
   var WordDotGlowFormat_typekey: typings.activexWord.Word.GlowFormat = js.native
 }

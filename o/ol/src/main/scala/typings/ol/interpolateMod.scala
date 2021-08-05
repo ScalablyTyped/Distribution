@@ -11,10 +11,8 @@ object interpolateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def interpolatePoint(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, fraction: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def interpolatePoint(
+  inline def interpolatePoint(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, fraction: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def interpolatePoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -22,8 +20,7 @@ object interpolateMod {
     fraction: Double,
     opt_dest: js.Array[Double]
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def interpolatePoint(
+  inline def interpolatePoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -32,8 +29,7 @@ object interpolateMod {
     opt_dest: js.Array[Double],
     opt_dimension: Double
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def interpolatePoint(
+  inline def interpolatePoint(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -43,8 +39,7 @@ object interpolateMod {
     opt_dimension: Double
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePoint")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], fraction.asInstanceOf[js.Any], opt_dest.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def lineStringCoordinateAtM(
+  inline def lineStringCoordinateAtM(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,
@@ -53,8 +48,7 @@ object interpolateMod {
     extrapolate: Boolean
   ): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("lineStringCoordinateAtM")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], m.asInstanceOf[js.Any], extrapolate.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @scala.inline
-  def lineStringsCoordinateAtM(
+  inline def lineStringsCoordinateAtM(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],

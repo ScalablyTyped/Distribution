@@ -18,22 +18,17 @@ trait AssociateSkillWithSkillGroupRequest extends StObject {
 }
 object AssociateSkillWithSkillGroupRequest {
   
-  @scala.inline
-  def apply(SkillId: SkillId): AssociateSkillWithSkillGroupRequest = {
+  inline def apply(SkillId: SkillId): AssociateSkillWithSkillGroupRequest = {
     val __obj = js.Dynamic.literal(SkillId = SkillId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateSkillWithSkillGroupRequest]
   }
   
-  @scala.inline
-  implicit class AssociateSkillWithSkillGroupRequestMutableBuilder[Self <: AssociateSkillWithSkillGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSkillWithSkillGroupRequest](x: Self) {
     
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
+    inline def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
+    inline def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
     
-    @scala.inline
-    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
+    inline def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

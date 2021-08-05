@@ -29,8 +29,7 @@ trait RuleGroupRuleStatementSizeConstraintStatement extends StObject {
 }
 object RuleGroupRuleStatementSizeConstraintStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comparisonOperator: Input[String],
     size: Input[Double],
     textTransformations: Input[js.Array[Input[RuleGroupRuleStatementSizeConstraintStatementTextTransformation]]]
@@ -39,25 +38,18 @@ object RuleGroupRuleStatementSizeConstraintStatement {
     __obj.asInstanceOf[RuleGroupRuleStatementSizeConstraintStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementSizeConstraintStatementMutableBuilder[Self <: RuleGroupRuleStatementSizeConstraintStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementSizeConstraintStatement](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatch(value: Input[RuleGroupRuleStatementSizeConstraintStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: Input[RuleGroupRuleStatementSizeConstraintStatementFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformations(value: Input[js.Array[Input[RuleGroupRuleStatementSizeConstraintStatementTextTransformation]]]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
+    inline def setTextTransformations(value: Input[js.Array[Input[RuleGroupRuleStatementSizeConstraintStatementTextTransformation]]]): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementSizeConstraintStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
+    inline def setTextTransformationsVarargs(value: Input[RuleGroupRuleStatementSizeConstraintStatementTextTransformation]*): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

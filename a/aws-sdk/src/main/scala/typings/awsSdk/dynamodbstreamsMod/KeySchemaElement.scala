@@ -18,19 +18,15 @@ trait KeySchemaElement extends StObject {
 }
 object KeySchemaElement {
   
-  @scala.inline
-  def apply(AttributeName: KeySchemaAttributeName, KeyType: KeyType): KeySchemaElement = {
+  inline def apply(AttributeName: KeySchemaAttributeName, KeyType: KeyType): KeySchemaElement = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeySchemaElement]
   }
   
-  @scala.inline
-  implicit class KeySchemaElementMutableBuilder[Self <: KeySchemaElement] (val x: Self) extends AnyVal {
+  extension [Self <: KeySchemaElement](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
   }
 }

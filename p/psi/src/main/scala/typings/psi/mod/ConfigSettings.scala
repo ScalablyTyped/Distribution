@@ -14,22 +14,17 @@ trait ConfigSettings extends StObject {
 }
 object ConfigSettings {
   
-  @scala.inline
-  def apply(emulatedFormFactor: String, locale: String, onlyCategories: js.Object): ConfigSettings = {
+  inline def apply(emulatedFormFactor: String, locale: String, onlyCategories: js.Object): ConfigSettings = {
     val __obj = js.Dynamic.literal(emulatedFormFactor = emulatedFormFactor.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], onlyCategories = onlyCategories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigSettings]
   }
   
-  @scala.inline
-  implicit class ConfigSettingsMutableBuilder[Self <: ConfigSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigSettings](x: Self) {
     
-    @scala.inline
-    def setEmulatedFormFactor(value: String): Self = StObject.set(x, "emulatedFormFactor", value.asInstanceOf[js.Any])
+    inline def setEmulatedFormFactor(value: String): Self = StObject.set(x, "emulatedFormFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyCategories(value: js.Object): Self = StObject.set(x, "onlyCategories", value.asInstanceOf[js.Any])
+    inline def setOnlyCategories(value: js.Object): Self = StObject.set(x, "onlyCategories", value.asInstanceOf[js.Any])
   }
 }

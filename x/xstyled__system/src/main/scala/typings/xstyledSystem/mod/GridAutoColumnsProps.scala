@@ -14,27 +14,22 @@ trait GridAutoColumnsProps[TLength] extends StObject {
 }
 object GridAutoColumnsProps {
   
-  @scala.inline
-  def apply[TLength](): GridAutoColumnsProps[TLength] = {
+  inline def apply[TLength](): GridAutoColumnsProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridAutoColumnsProps[TLength]]
   }
   
-  @scala.inline
-  implicit class GridAutoColumnsPropsMutableBuilder[Self <: GridAutoColumnsProps[?], TLength] (val x: Self & GridAutoColumnsProps[TLength]) extends AnyVal {
+  extension [Self <: GridAutoColumnsProps[?], TLength](x: Self & GridAutoColumnsProps[TLength]) {
     
-    @scala.inline
-    def setGridAutoColumns(
+    inline def setGridAutoColumns(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
+    inline def setGridAutoColumnsUndefined: Self = StObject.set(x, "gridAutoColumns", js.undefined)
     
-    @scala.inline
-    def setGridAutoColumnsVarargs(
+    inline def setGridAutoColumnsVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoColumns<TLength> */ js.Any)*
     ): Self = StObject.set(x, "gridAutoColumns", js.Array(value :_*))
   }

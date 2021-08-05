@@ -16,23 +16,18 @@ object anon {
   }
   object CoverInfo {
     
-    @scala.inline
-    def apply(coverInfo: LeftImageOffset, coverPhoto: Height, layout: String): CoverInfo = {
+    inline def apply(coverInfo: LeftImageOffset, coverPhoto: Height, layout: String): CoverInfo = {
       val __obj = js.Dynamic.literal(coverInfo = coverInfo.asInstanceOf[js.Any], coverPhoto = coverPhoto.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoverInfo]
     }
     
-    @scala.inline
-    implicit class CoverInfoMutableBuilder[Self <: CoverInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CoverInfo](x: Self) {
       
-      @scala.inline
-      def setCoverInfo(value: LeftImageOffset): Self = StObject.set(x, "coverInfo", value.asInstanceOf[js.Any])
+      inline def setCoverInfo(value: LeftImageOffset): Self = StObject.set(x, "coverInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverPhoto(value: Height): Self = StObject.set(x, "coverPhoto", value.asInstanceOf[js.Any])
+      inline def setCoverPhoto(value: Height): Self = StObject.set(x, "coverPhoto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,8 +53,7 @@ object anon {
   }
   object Department {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       department: String,
       description: String,
       endDate: String,
@@ -75,35 +69,25 @@ object anon {
       __obj.asInstanceOf[Department]
     }
     
-    @scala.inline
-    implicit class DepartmentMutableBuilder[Self <: Department] (val x: Self) extends AnyVal {
+    extension [Self <: Department](x: Self) {
       
-      @scala.inline
-      def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
+      inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,8 +107,7 @@ object anon {
   }
   object FamilyName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       familyName: String,
       formatted: String,
       givenName: String,
@@ -136,26 +119,19 @@ object anon {
       __obj.asInstanceOf[FamilyName]
     }
     
-    @scala.inline
-    implicit class FamilyNameMutableBuilder[Self <: FamilyName] (val x: Self) extends AnyVal {
+    extension [Self <: FamilyName](x: Self) {
       
-      @scala.inline
-      def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+      inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+      inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+      inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
+      inline def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
+      inline def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
+      inline def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,23 +145,18 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, url: String, width: Double): Height = {
+    inline def apply(height: Double, url: String, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,24 +170,19 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String, `type`: String, value: String): Label = {
+    inline def apply(label: String, `type`: String, value: String): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -228,20 +194,16 @@ object anon {
   }
   object LeftImageOffset {
     
-    @scala.inline
-    def apply(leftImageOffset: Double, topImageOffset: Double): LeftImageOffset = {
+    inline def apply(leftImageOffset: Double, topImageOffset: Double): LeftImageOffset = {
       val __obj = js.Dynamic.literal(leftImageOffset = leftImageOffset.asInstanceOf[js.Any], topImageOffset = topImageOffset.asInstanceOf[js.Any])
       __obj.asInstanceOf[LeftImageOffset]
     }
     
-    @scala.inline
-    implicit class LeftImageOffsetMutableBuilder[Self <: LeftImageOffset] (val x: Self) extends AnyVal {
+    extension [Self <: LeftImageOffset](x: Self) {
       
-      @scala.inline
-      def setLeftImageOffset(value: Double): Self = StObject.set(x, "leftImageOffset", value.asInstanceOf[js.Any])
+      inline def setLeftImageOffset(value: Double): Self = StObject.set(x, "leftImageOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopImageOffset(value: Double): Self = StObject.set(x, "topImageOffset", value.asInstanceOf[js.Any])
+      inline def setTopImageOffset(value: Double): Self = StObject.set(x, "topImageOffset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,20 +215,16 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(max: Double, min: Double): Max = {
+    inline def apply(max: Double, min: Double): Max = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
   
@@ -278,20 +236,16 @@ object anon {
   }
   object Primary {
     
-    @scala.inline
-    def apply(primary: Boolean, value: String): Primary = {
+    inline def apply(primary: Boolean, value: String): Primary = {
       val __obj = js.Dynamic.literal(primary = primary.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Primary]
     }
     
-    @scala.inline
-    implicit class PrimaryMutableBuilder[Self <: Primary] (val x: Self) extends AnyVal {
+    extension [Self <: Primary](x: Self) {
       
-      @scala.inline
-      def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -303,21 +257,17 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: String, value: String): Type = {
+    inline def apply(`type`: String, value: String): Type = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,17 +277,14 @@ object anon {
   }
   object Url {
     
-    @scala.inline
-    def apply(url: String): Url = {
+    inline def apply(url: String): Url = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Url]
     }
     
-    @scala.inline
-    implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+    extension [Self <: Url](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

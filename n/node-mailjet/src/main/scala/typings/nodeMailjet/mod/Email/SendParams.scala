@@ -13,25 +13,19 @@ trait SendParams extends StObject {
 }
 object SendParams {
   
-  @scala.inline
-  def apply(Messages: js.Array[SendParamsMessage]): SendParams = {
+  inline def apply(Messages: js.Array[SendParamsMessage]): SendParams = {
     val __obj = js.Dynamic.literal(Messages = Messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendParams]
   }
   
-  @scala.inline
-  implicit class SendParamsMutableBuilder[Self <: SendParams] (val x: Self) extends AnyVal {
+  extension [Self <: SendParams](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[SendParamsMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[SendParamsMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: SendParamsMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SendParamsMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
-    @scala.inline
-    def setSandboxMode(value: Boolean): Self = StObject.set(x, "SandboxMode", value.asInstanceOf[js.Any])
+    inline def setSandboxMode(value: Boolean): Self = StObject.set(x, "SandboxMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxModeUndefined: Self = StObject.set(x, "SandboxMode", js.undefined)
+    inline def setSandboxModeUndefined: Self = StObject.set(x, "SandboxMode", js.undefined)
   }
 }

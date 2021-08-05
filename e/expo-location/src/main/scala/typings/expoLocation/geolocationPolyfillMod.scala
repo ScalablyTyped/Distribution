@@ -10,6 +10,5 @@ object geolocationPolyfillMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def installWebGeolocationPolyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installWebGeolocationPolyfill")().asInstanceOf[Unit]
+  inline def installWebGeolocationPolyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installWebGeolocationPolyfill")().asInstanceOf[Unit]
 }

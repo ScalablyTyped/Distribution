@@ -6,22 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(reqSelectors: js.Array[Select]): js.Any = ^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select]): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(reqSelectors: js.Array[Select], resSelectors: Unit, htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(reqSelectors: Unit, resSelectors: js.Array[Select]): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(reqSelectors: Unit, resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def apply(reqSelectors: Unit, resSelectors: Unit, htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(reqSelectors: js.Array[Select]): js.Any = ^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select]): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(reqSelectors: js.Array[Select], resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(reqSelectors: js.Array[Select], resSelectors: Unit, htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(reqSelectors: Unit, resSelectors: js.Array[Select]): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(reqSelectors: Unit, resSelectors: js.Array[Select], htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(reqSelectors: Unit, resSelectors: Unit, htmlOnly: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(reqSelectors.asInstanceOf[js.Any], resSelectors.asInstanceOf[js.Any], htmlOnly.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("harmon", JSImport.Namespace)
   @js.native
@@ -35,20 +27,16 @@ object mod {
   }
   object Select {
     
-    @scala.inline
-    def apply(func: js.Any => js.Any, query: String): Select = {
+    inline def apply(func: js.Any => js.Any, query: String): Select = {
       val __obj = js.Dynamic.literal(func = js.Any.fromFunction1(func), query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[Select]
     }
     
-    @scala.inline
-    implicit class SelectMutableBuilder[Self <: Select] (val x: Self) extends AnyVal {
+    extension [Self <: Select](x: Self) {
       
-      @scala.inline
-      def setFunc(value: js.Any => js.Any): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
+      inline def setFunc(value: js.Any => js.Any): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
 }

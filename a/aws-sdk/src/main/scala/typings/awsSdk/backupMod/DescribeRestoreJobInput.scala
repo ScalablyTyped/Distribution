@@ -13,16 +13,13 @@ trait DescribeRestoreJobInput extends StObject {
 }
 object DescribeRestoreJobInput {
   
-  @scala.inline
-  def apply(RestoreJobId: RestoreJobId): DescribeRestoreJobInput = {
+  inline def apply(RestoreJobId: RestoreJobId): DescribeRestoreJobInput = {
     val __obj = js.Dynamic.literal(RestoreJobId = RestoreJobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRestoreJobInput]
   }
   
-  @scala.inline
-  implicit class DescribeRestoreJobInputMutableBuilder[Self <: DescribeRestoreJobInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRestoreJobInput](x: Self) {
     
-    @scala.inline
-    def setRestoreJobId(value: RestoreJobId): Self = StObject.set(x, "RestoreJobId", value.asInstanceOf[js.Any])
+    inline def setRestoreJobId(value: RestoreJobId): Self = StObject.set(x, "RestoreJobId", value.asInstanceOf[js.Any])
   }
 }

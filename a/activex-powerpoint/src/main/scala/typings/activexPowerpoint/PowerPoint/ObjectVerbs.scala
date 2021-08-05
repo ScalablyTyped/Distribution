@@ -14,13 +14,12 @@ trait ObjectVerbs extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ObjectVerbs_typekey")
+  /* private */ @JSName("PowerPoint.ObjectVerbs_typekey")
   var PowerPointDotObjectVerbs_typekey: ObjectVerbs
 }
 object ObjectVerbs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Item: Double => String,
@@ -32,22 +31,16 @@ object ObjectVerbs {
     __obj.asInstanceOf[ObjectVerbs]
   }
   
-  @scala.inline
-  implicit class ObjectVerbsMutableBuilder[Self <: ObjectVerbs] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectVerbs](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => String): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotObjectVerbs_typekey(value: ObjectVerbs): Self = StObject.set(x, "PowerPoint.ObjectVerbs_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotObjectVerbs_typekey(value: ObjectVerbs): Self = StObject.set(x, "PowerPoint.ObjectVerbs_typekey", value.asInstanceOf[js.Any])
   }
 }

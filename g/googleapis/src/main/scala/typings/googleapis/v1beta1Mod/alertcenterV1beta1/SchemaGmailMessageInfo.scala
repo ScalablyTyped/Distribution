@@ -52,64 +52,45 @@ trait SchemaGmailMessageInfo extends StObject {
 }
 object SchemaGmailMessageInfo {
   
-  @scala.inline
-  def apply(): SchemaGmailMessageInfo = {
+  inline def apply(): SchemaGmailMessageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGmailMessageInfo]
   }
   
-  @scala.inline
-  implicit class SchemaGmailMessageInfoMutableBuilder[Self <: SchemaGmailMessageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGmailMessageInfo](x: Self) {
     
-    @scala.inline
-    def setAttachmentsSha256Hash(value: js.Array[String]): Self = StObject.set(x, "attachmentsSha256Hash", value.asInstanceOf[js.Any])
+    inline def setAttachmentsSha256Hash(value: js.Array[String]): Self = StObject.set(x, "attachmentsSha256Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsSha256HashUndefined: Self = StObject.set(x, "attachmentsSha256Hash", js.undefined)
+    inline def setAttachmentsSha256HashUndefined: Self = StObject.set(x, "attachmentsSha256Hash", js.undefined)
     
-    @scala.inline
-    def setAttachmentsSha256HashVarargs(value: String*): Self = StObject.set(x, "attachmentsSha256Hash", js.Array(value :_*))
+    inline def setAttachmentsSha256HashVarargs(value: String*): Self = StObject.set(x, "attachmentsSha256Hash", js.Array(value :_*))
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setMd5HashMessageBody(value: String): Self = StObject.set(x, "md5HashMessageBody", value.asInstanceOf[js.Any])
+    inline def setMd5HashMessageBody(value: String): Self = StObject.set(x, "md5HashMessageBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5HashMessageBodyUndefined: Self = StObject.set(x, "md5HashMessageBody", js.undefined)
+    inline def setMd5HashMessageBodyUndefined: Self = StObject.set(x, "md5HashMessageBody", js.undefined)
     
-    @scala.inline
-    def setMd5HashSubject(value: String): Self = StObject.set(x, "md5HashSubject", value.asInstanceOf[js.Any])
+    inline def setMd5HashSubject(value: String): Self = StObject.set(x, "md5HashSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMd5HashSubjectUndefined: Self = StObject.set(x, "md5HashSubject", js.undefined)
+    inline def setMd5HashSubjectUndefined: Self = StObject.set(x, "md5HashSubject", js.undefined)
     
-    @scala.inline
-    def setMessageBodySnippet(value: String): Self = StObject.set(x, "messageBodySnippet", value.asInstanceOf[js.Any])
+    inline def setMessageBodySnippet(value: String): Self = StObject.set(x, "messageBodySnippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageBodySnippetUndefined: Self = StObject.set(x, "messageBodySnippet", js.undefined)
+    inline def setMessageBodySnippetUndefined: Self = StObject.set(x, "messageBodySnippet", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
+    inline def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     
-    @scala.inline
-    def setSubjectText(value: String): Self = StObject.set(x, "subjectText", value.asInstanceOf[js.Any])
+    inline def setSubjectText(value: String): Self = StObject.set(x, "subjectText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectTextUndefined: Self = StObject.set(x, "subjectText", js.undefined)
+    inline def setSubjectTextUndefined: Self = StObject.set(x, "subjectText", js.undefined)
   }
 }

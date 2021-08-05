@@ -16,8 +16,7 @@ trait SearchCampaignAudience
 }
 object SearchCampaignAudience {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bidding: () => SearchAudienceBidding,
     getAudienceId: () => Double,
     getCampaign: () => Campaign,
@@ -31,16 +30,12 @@ object SearchCampaignAudience {
     __obj.asInstanceOf[SearchCampaignAudience]
   }
   
-  @scala.inline
-  implicit class SearchCampaignAudienceMutableBuilder[Self <: SearchCampaignAudience] (val x: Self) extends AnyVal {
+  extension [Self <: SearchCampaignAudience](x: Self) {
     
-    @scala.inline
-    def setBidding(value: () => SearchAudienceBidding): Self = StObject.set(x, "bidding", js.Any.fromFunction0(value))
+    inline def setBidding(value: () => SearchAudienceBidding): Self = StObject.set(x, "bidding", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+    inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPaused(value: () => Boolean): Self = StObject.set(x, "isPaused", js.Any.fromFunction0(value))
+    inline def setIsPaused(value: () => Boolean): Self = StObject.set(x, "isPaused", js.Any.fromFunction0(value))
   }
 }

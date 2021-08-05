@@ -74,8 +74,7 @@ object adapterMod {
   }
   object MDCTabBarScrollerAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       addClassToBackIndicator: String => Unit,
       addClassToForwardIndicator: String => Unit,
@@ -107,86 +106,59 @@ object adapterMod {
       __obj.asInstanceOf[MDCTabBarScrollerAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTabBarScrollerAdapterMutableBuilder[Self <: MDCTabBarScrollerAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTabBarScrollerAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassToBackIndicator(value: String => Unit): Self = StObject.set(x, "addClassToBackIndicator", js.Any.fromFunction1(value))
+      inline def setAddClassToBackIndicator(value: String => Unit): Self = StObject.set(x, "addClassToBackIndicator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddClassToForwardIndicator(value: String => Unit): Self = StObject.set(x, "addClassToForwardIndicator", js.Any.fromFunction1(value))
+      inline def setAddClassToForwardIndicator(value: String => Unit): Self = StObject.set(x, "addClassToForwardIndicator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterBackIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "deregisterBackIndicatorClickHandler", js.Any.fromFunction1(value))
+      inline def setDeregisterBackIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "deregisterBackIndicatorClickHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterCapturedInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterCapturedInteractionHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterCapturedInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterCapturedInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeregisterForwardIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "deregisterForwardIndicatorClickHandler", js.Any.fromFunction1(value))
+      inline def setDeregisterForwardIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "deregisterForwardIndicatorClickHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterWindowResizeHandler(value: SpecificEventListener[resize] => Unit): Self = StObject.set(x, "deregisterWindowResizeHandler", js.Any.fromFunction1(value))
+      inline def setDeregisterWindowResizeHandler(value: SpecificEventListener[resize] => Unit): Self = StObject.set(x, "deregisterWindowResizeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEventTargetHasClass(value: (Element, String) => Boolean): Self = StObject.set(x, "eventTargetHasClass", js.Any.fromFunction2(value))
+      inline def setEventTargetHasClass(value: (Element, String) => Boolean): Self = StObject.set(x, "eventTargetHasClass", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetComputedLeftForTabAtIndex(value: Double => Double): Self = StObject.set(x, "getComputedLeftForTabAtIndex", js.Any.fromFunction1(value))
+      inline def setGetComputedLeftForTabAtIndex(value: Double => Double): Self = StObject.set(x, "getComputedLeftForTabAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetComputedWidthForTabAtIndex(value: Double => Double): Self = StObject.set(x, "getComputedWidthForTabAtIndex", js.Any.fromFunction1(value))
+      inline def setGetComputedWidthForTabAtIndex(value: Double => Double): Self = StObject.set(x, "getComputedWidthForTabAtIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNumberOfTabs(value: () => Double): Self = StObject.set(x, "getNumberOfTabs", js.Any.fromFunction0(value))
+      inline def setGetNumberOfTabs(value: () => Double): Self = StObject.set(x, "getNumberOfTabs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffsetLeftForEventTarget(value: HTMLElement => Double): Self = StObject.set(x, "getOffsetLeftForEventTarget", js.Any.fromFunction1(value))
+      inline def setGetOffsetLeftForEventTarget(value: HTMLElement => Double): Self = StObject.set(x, "getOffsetLeftForEventTarget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOffsetWidthForEventTarget(value: HTMLElement => Double): Self = StObject.set(x, "getOffsetWidthForEventTarget", js.Any.fromFunction1(value))
+      inline def setGetOffsetWidthForEventTarget(value: HTMLElement => Double): Self = StObject.set(x, "getOffsetWidthForEventTarget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOffsetWidthForScrollFrame(value: () => Double): Self = StObject.set(x, "getOffsetWidthForScrollFrame", js.Any.fromFunction0(value))
+      inline def setGetOffsetWidthForScrollFrame(value: () => Double): Self = StObject.set(x, "getOffsetWidthForScrollFrame", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOffsetWidthForTabBar(value: () => Double): Self = StObject.set(x, "getOffsetWidthForTabBar", js.Any.fromFunction0(value))
+      inline def setGetOffsetWidthForTabBar(value: () => Double): Self = StObject.set(x, "getOffsetWidthForTabBar", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScrollLeftForScrollFrame(value: () => Double): Self = StObject.set(x, "getScrollLeftForScrollFrame", js.Any.fromFunction0(value))
+      inline def setGetScrollLeftForScrollFrame(value: () => Double): Self = StObject.set(x, "getScrollLeftForScrollFrame", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
+      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterBackIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "registerBackIndicatorClickHandler", js.Any.fromFunction1(value))
+      inline def setRegisterBackIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "registerBackIndicatorClickHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterCapturedInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerCapturedInteractionHandler", js.Any.fromFunction2(value))
+      inline def setRegisterCapturedInteractionHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerCapturedInteractionHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterForwardIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "registerForwardIndicatorClickHandler", js.Any.fromFunction1(value))
+      inline def setRegisterForwardIndicatorClickHandler(value: SpecificEventListener[click] => Unit): Self = StObject.set(x, "registerForwardIndicatorClickHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterWindowResizeHandler(value: SpecificEventListener[resize] => Unit): Self = StObject.set(x, "registerWindowResizeHandler", js.Any.fromFunction1(value))
+      inline def setRegisterWindowResizeHandler(value: SpecificEventListener[resize] => Unit): Self = StObject.set(x, "registerWindowResizeHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassFromBackIndicator(value: String => Unit): Self = StObject.set(x, "removeClassFromBackIndicator", js.Any.fromFunction1(value))
+      inline def setRemoveClassFromBackIndicator(value: String => Unit): Self = StObject.set(x, "removeClassFromBackIndicator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClassFromForwardIndicator(value: String => Unit): Self = StObject.set(x, "removeClassFromForwardIndicator", js.Any.fromFunction1(value))
+      inline def setRemoveClassFromForwardIndicator(value: String => Unit): Self = StObject.set(x, "removeClassFromForwardIndicator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetScrollLeftForScrollFrame(value: Double => Unit): Self = StObject.set(x, "setScrollLeftForScrollFrame", js.Any.fromFunction1(value))
+      inline def setSetScrollLeftForScrollFrame(value: Double => Unit): Self = StObject.set(x, "setScrollLeftForScrollFrame", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTransformStyleForTabBar(value: String => Unit): Self = StObject.set(x, "setTransformStyleForTabBar", js.Any.fromFunction1(value))
+      inline def setSetTransformStyleForTabBar(value: String => Unit): Self = StObject.set(x, "setTransformStyleForTabBar", js.Any.fromFunction1(value))
     }
   }
 }

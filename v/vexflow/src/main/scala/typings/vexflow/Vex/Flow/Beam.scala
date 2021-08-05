@@ -41,8 +41,7 @@ trait Beam extends StObject {
 }
 object Beam {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyStemExtensions: () => Unit,
     breakSecondaryAt: js.Array[Double] => Beam,
     calculateSlope: () => Unit,
@@ -63,52 +62,36 @@ object Beam {
     __obj.asInstanceOf[Beam]
   }
   
-  @scala.inline
-  implicit class BeamMutableBuilder[Self <: Beam] (val x: Self) extends AnyVal {
+  extension [Self <: Beam](x: Self) {
     
-    @scala.inline
-    def setApplyStemExtensions(value: () => Unit): Self = StObject.set(x, "applyStemExtensions", js.Any.fromFunction0(value))
+    inline def setApplyStemExtensions(value: () => Unit): Self = StObject.set(x, "applyStemExtensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBreakSecondaryAt(value: js.Array[Double] => Beam): Self = StObject.set(x, "breakSecondaryAt", js.Any.fromFunction1(value))
+    inline def setBreakSecondaryAt(value: js.Array[Double] => Beam): Self = StObject.set(x, "breakSecondaryAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateSlope(value: () => Unit): Self = StObject.set(x, "calculateSlope", js.Any.fromFunction0(value))
+    inline def setCalculateSlope(value: () => Unit): Self = StObject.set(x, "calculateSlope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCalculateStemDirection(value: Note => Double): Self = StObject.set(x, "calculateStemDirection", js.Any.fromFunction1(value))
+    inline def setCalculateStemDirection(value: Note => Double): Self = StObject.set(x, "calculateStemDirection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDrawBeamLines(value: () => Unit): Self = StObject.set(x, "drawBeamLines", js.Any.fromFunction0(value))
+    inline def setDrawBeamLines(value: () => Unit): Self = StObject.set(x, "drawBeamLines", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDrawStems(value: () => Unit): Self = StObject.set(x, "drawStems", js.Any.fromFunction0(value))
+    inline def setDrawStems(value: () => Unit): Self = StObject.set(x, "drawStems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBeamCount(value: () => Double): Self = StObject.set(x, "getBeamCount", js.Any.fromFunction0(value))
+    inline def setGetBeamCount(value: () => Double): Self = StObject.set(x, "getBeamCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBeamLines(value: String => js.Array[End]): Self = StObject.set(x, "getBeamLines", js.Any.fromFunction1(value))
+    inline def setGetBeamLines(value: String => js.Array[End]): Self = StObject.set(x, "getBeamLines", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNotes(value: () => js.Array[StemmableNote]): Self = StObject.set(x, "getNotes", js.Any.fromFunction0(value))
+    inline def setGetNotes(value: () => js.Array[StemmableNote]): Self = StObject.set(x, "getNotes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSlopeY(value: () => Double): Self = StObject.set(x, "getSlopeY", js.Any.fromFunction0(value))
+    inline def setGetSlopeY(value: () => Double): Self = StObject.set(x, "getSlopeY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPostFormat(value: () => Beam): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
+    inline def setPostFormat(value: () => Beam): Self = StObject.set(x, "postFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreFormat(value: () => Beam): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
+    inline def setPreFormat(value: () => Beam): Self = StObject.set(x, "preFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetContext(value: IRenderContext => Beam): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: IRenderContext => Beam): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStyle(value: FillStyle_ => Beam): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
+    inline def setSetStyle(value: FillStyle_ => Beam): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
   }
 }

@@ -13,19 +13,15 @@ trait FillLayout
 }
 object FillLayout {
   
-  @scala.inline
-  def apply(): FillLayout = {
+  inline def apply(): FillLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillLayout]
   }
   
-  @scala.inline
-  implicit class FillLayoutMutableBuilder[Self <: FillLayout] (val x: Self) extends AnyVal {
+  extension [Self <: FillLayout](x: Self) {
     
-    @scala.inline
-    def `setFill-sort-key`(value: Double | Expression): Self = StObject.set(x, "fill-sort-key", value.asInstanceOf[js.Any])
+    inline def `setFill-sort-key`(value: Double | Expression): Self = StObject.set(x, "fill-sort-key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFill-sort-keyUndefined`: Self = StObject.set(x, "fill-sort-key", js.undefined)
+    inline def `setFill-sort-keyUndefined`: Self = StObject.set(x, "fill-sort-key", js.undefined)
   }
 }

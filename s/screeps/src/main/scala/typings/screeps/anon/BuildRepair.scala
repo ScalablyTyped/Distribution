@@ -12,19 +12,15 @@ trait BuildRepair extends StObject {
 }
 object BuildRepair {
   
-  @scala.inline
-  def apply(): BuildRepair = {
+  inline def apply(): BuildRepair = {
     val __obj = js.Dynamic.literal(build = 2, repair = 2)
     __obj.asInstanceOf[BuildRepair]
   }
   
-  @scala.inline
-  implicit class BuildRepairMutableBuilder[Self <: BuildRepair] (val x: Self) extends AnyVal {
+  extension [Self <: BuildRepair](x: Self) {
     
-    @scala.inline
-    def setBuild(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepair(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "repair", value.asInstanceOf[js.Any])
+    inline def setRepair(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "repair", value.asInstanceOf[js.Any])
   }
 }

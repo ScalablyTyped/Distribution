@@ -12,25 +12,19 @@ trait FrameWithData extends StObject {
 }
 object FrameWithData {
   
-  @scala.inline
-  def apply(): FrameWithData = {
+  inline def apply(): FrameWithData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FrameWithData]
   }
   
-  @scala.inline
-  implicit class FrameWithDataMutableBuilder[Self <: FrameWithData] (val x: Self) extends AnyVal {
+  extension [Self <: FrameWithData](x: Self) {
     
-    @scala.inline
-    def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Encodable): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Encodable): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

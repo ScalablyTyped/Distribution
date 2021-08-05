@@ -18,43 +18,31 @@ trait IBatchDeleteEntitiesRequest extends StObject {
 }
 object IBatchDeleteEntitiesRequest {
   
-  @scala.inline
-  def apply(): IBatchDeleteEntitiesRequest = {
+  inline def apply(): IBatchDeleteEntitiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBatchDeleteEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class IBatchDeleteEntitiesRequestMutableBuilder[Self <: IBatchDeleteEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IBatchDeleteEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setEntityValues(value: js.Array[String]): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
+    inline def setEntityValues(value: js.Array[String]): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityValuesNull: Self = StObject.set(x, "entityValues", null)
+    inline def setEntityValuesNull: Self = StObject.set(x, "entityValues", null)
     
-    @scala.inline
-    def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
+    inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    @scala.inline
-    def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: String*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

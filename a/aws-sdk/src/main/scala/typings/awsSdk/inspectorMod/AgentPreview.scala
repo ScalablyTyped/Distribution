@@ -48,58 +48,41 @@ trait AgentPreview extends StObject {
 }
 object AgentPreview {
   
-  @scala.inline
-  def apply(agentId: AgentId): AgentPreview = {
+  inline def apply(agentId: AgentId): AgentPreview = {
     val __obj = js.Dynamic.literal(agentId = agentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentPreview]
   }
   
-  @scala.inline
-  implicit class AgentPreviewMutableBuilder[Self <: AgentPreview] (val x: Self) extends AnyVal {
+  extension [Self <: AgentPreview](x: Self) {
     
-    @scala.inline
-    def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
+    inline def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentHealthUndefined: Self = StObject.set(x, "agentHealth", js.undefined)
+    inline def setAgentHealthUndefined: Self = StObject.set(x, "agentHealth", js.undefined)
     
-    @scala.inline
-    def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
+    inline def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentVersion(value: AgentVersion): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
+    inline def setAgentVersion(value: AgentVersion): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
+    inline def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
+    inline def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
     
-    @scala.inline
-    def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setIpv4Address(value: Ipv4Address): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
+    inline def setIpv4Address(value: Ipv4Address): Self = StObject.set(x, "ipv4Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
+    inline def setIpv4AddressUndefined: Self = StObject.set(x, "ipv4Address", js.undefined)
     
-    @scala.inline
-    def setKernelVersion(value: KernelVersion): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
+    inline def setKernelVersion(value: KernelVersion): Self = StObject.set(x, "kernelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
+    inline def setKernelVersionUndefined: Self = StObject.set(x, "kernelVersion", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
   }
 }

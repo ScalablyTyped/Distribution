@@ -18,22 +18,17 @@ trait ClusterEncryptionConfig extends StObject {
 }
 object ClusterEncryptionConfig {
   
-  @scala.inline
-  def apply(provider: ClusterEncryptionConfigProvider, resources: js.Array[String]): ClusterEncryptionConfig = {
+  inline def apply(provider: ClusterEncryptionConfigProvider, resources: js.Array[String]): ClusterEncryptionConfig = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEncryptionConfig]
   }
   
-  @scala.inline
-  implicit class ClusterEncryptionConfigMutableBuilder[Self <: ClusterEncryptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterEncryptionConfig](x: Self) {
     
-    @scala.inline
-    def setProvider(value: ClusterEncryptionConfigProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: ClusterEncryptionConfigProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

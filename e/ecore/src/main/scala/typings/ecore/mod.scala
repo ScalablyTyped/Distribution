@@ -14,64 +14,55 @@ object mod {
   @js.native
   def EAnnotation: EAnnotation = js.native
   type EAnnotation = EModelElement
-  @scala.inline
-  def EAnnotation_=(x: EAnnotation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EAnnotation")(x.asInstanceOf[js.Any])
+  inline def EAnnotation_=(x: EAnnotation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EAnnotation")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EAttribute")
   @js.native
   def EAttribute: EAttribute = js.native
   type EAttribute = EStructuralFeature
-  @scala.inline
-  def EAttribute_=(x: EAttribute): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EAttribute")(x.asInstanceOf[js.Any])
+  inline def EAttribute_=(x: EAttribute): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EAttribute")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EBoolean")
   @js.native
   def EBoolean: EBoolean = js.native
   type EBoolean = EObject
-  @scala.inline
-  def EBoolean_=(x: EBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EBoolean")(x.asInstanceOf[js.Any])
+  inline def EBoolean_=(x: EBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EBoolean")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EClass")
   @js.native
   def EClass: EClass = js.native
   type EClass = EClassifier
-  @scala.inline
-  def EClass_=(x: EClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EClass")(x.asInstanceOf[js.Any])
+  inline def EClass_=(x: EClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EClass")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EClassifier")
   @js.native
   def EClassifier: EClassifier = js.native
   type EClassifier = ENamedElement
-  @scala.inline
-  def EClassifier_=(x: EClassifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EClassifier")(x.asInstanceOf[js.Any])
+  inline def EClassifier_=(x: EClassifier): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EClassifier")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EDataType")
   @js.native
   def EDataType: EDataType = js.native
   type EDataType = EClassifier
-  @scala.inline
-  def EDataType_=(x: EDataType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDataType")(x.asInstanceOf[js.Any])
+  inline def EDataType_=(x: EDataType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDataType")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EDate")
   @js.native
   def EDate: EDate = js.native
   type EDate = EObject
-  @scala.inline
-  def EDate_=(x: EDate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDate")(x.asInstanceOf[js.Any])
+  inline def EDate_=(x: EDate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDate")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EDiagnosticChain")
   @js.native
   def EDiagnosticChain: EDiagnosticChain = js.native
   type EDiagnosticChain = EObject
-  @scala.inline
-  def EDiagnosticChain_=(x: EDiagnosticChain): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDiagnosticChain")(x.asInstanceOf[js.Any])
+  inline def EDiagnosticChain_=(x: EDiagnosticChain): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDiagnosticChain")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EDouble")
   @js.native
   def EDouble: EDouble = js.native
   type EDouble = EObject
-  @scala.inline
-  def EDouble_=(x: EDouble): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDouble")(x.asInstanceOf[js.Any])
+  inline def EDouble_=(x: EDouble): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EDouble")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EEnum")
   @js.native
@@ -82,39 +73,33 @@ object mod {
   @js.native
   def EEnumLiteral: EEnumLiteral = js.native
   type EEnumLiteral = ENamedElement
-  @scala.inline
-  def EEnumLiteral_=(x: EEnumLiteral): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EEnumLiteral")(x.asInstanceOf[js.Any])
+  inline def EEnumLiteral_=(x: EEnumLiteral): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EEnumLiteral")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def EEnum_=(x: EEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EEnum")(x.asInstanceOf[js.Any])
+  inline def EEnum_=(x: EEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EEnum")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EFloatObject")
   @js.native
   def EFloatObject: EFloatObject = js.native
   type EFloatObject = EObject
-  @scala.inline
-  def EFloatObject_=(x: EFloatObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EFloatObject")(x.asInstanceOf[js.Any])
+  inline def EFloatObject_=(x: EFloatObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EFloatObject")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EGenericType")
   @js.native
   def EGenericType: EGenericType = js.native
   type EGenericType = EObject
-  @scala.inline
-  def EGenericType_=(x: EGenericType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EGenericType")(x.asInstanceOf[js.Any])
+  inline def EGenericType_=(x: EGenericType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EGenericType")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EInt")
   @js.native
   def EInt: EInt = js.native
   type EInt = EObject
-  @scala.inline
-  def EInt_=(x: EInt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EInt")(x.asInstanceOf[js.Any])
+  inline def EInt_=(x: EInt): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EInt")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EIntegerObject")
   @js.native
   def EIntegerObject: EIntegerObject = js.native
   type EIntegerObject = EObject
-  @scala.inline
-  def EIntegerObject_=(x: EIntegerObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIntegerObject")(x.asInstanceOf[js.Any])
+  inline def EIntegerObject_=(x: EIntegerObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIntegerObject")(x.asInstanceOf[js.Any])
   
   @js.native
   trait EList
@@ -177,36 +162,31 @@ object mod {
   @JSImport("ecore", "EList")
   @js.native
   def EList: EList = js.native
-  @scala.inline
-  def EList_=(x: EList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EList")(x.asInstanceOf[js.Any])
+  inline def EList_=(x: EList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EList")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "ELongObject")
   @js.native
   def ELongObject: ELongObject = js.native
   type ELongObject = EObject
-  @scala.inline
-  def ELongObject_=(x: ELongObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELongObject")(x.asInstanceOf[js.Any])
+  inline def ELongObject_=(x: ELongObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ELongObject")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EMap")
   @js.native
   def EMap: EMap = js.native
   type EMap = EObject
-  @scala.inline
-  def EMap_=(x: EMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMap")(x.asInstanceOf[js.Any])
+  inline def EMap_=(x: EMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMap")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EModelElement")
   @js.native
   def EModelElement: EModelElement = js.native
   type EModelElement = EObject
-  @scala.inline
-  def EModelElement_=(x: EModelElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EModelElement")(x.asInstanceOf[js.Any])
+  inline def EModelElement_=(x: EModelElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EModelElement")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "ENamedElement")
   @js.native
   def ENamedElement: ENamedElement = js.native
   type ENamedElement = EModelElement
-  @scala.inline
-  def ENamedElement_=(x: ENamedElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENamedElement")(x.asInstanceOf[js.Any])
+  inline def ENamedElement_=(x: ENamedElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENamedElement")(x.asInstanceOf[js.Any])
   
   @js.native
   trait EObject extends StObject {
@@ -255,15 +235,13 @@ object mod {
   @JSImport("ecore", "EObject")
   @js.native
   def EObject: EObject = js.native
-  @scala.inline
-  def EObject_=(x: EObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EObject")(x.asInstanceOf[js.Any])
+  inline def EObject_=(x: EObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EObject")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EOperation")
   @js.native
   def EOperation: EOperation = js.native
   type EOperation = ETypedElement
-  @scala.inline
-  def EOperation_=(x: EOperation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOperation")(x.asInstanceOf[js.Any])
+  inline def EOperation_=(x: EOperation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOperation")(x.asInstanceOf[js.Any])
   
   @js.native
   trait EPackage
@@ -294,53 +272,45 @@ object mod {
   @JSImport("ecore", "EPackageRegistry")
   @js.native
   def EPackageRegistry: EPackageRegistry = js.native
-  @scala.inline
-  def EPackageRegistry_=(x: EPackageRegistry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPackageRegistry")(x.asInstanceOf[js.Any])
+  inline def EPackageRegistry_=(x: EPackageRegistry): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPackageRegistry")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def EPackage_=(x: EPackage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPackage")(x.asInstanceOf[js.Any])
+  inline def EPackage_=(x: EPackage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPackage")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EParameter")
   @js.native
   def EParameter: EParameter = js.native
   type EParameter = ETypedElement
-  @scala.inline
-  def EParameter_=(x: EParameter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EParameter")(x.asInstanceOf[js.Any])
+  inline def EParameter_=(x: EParameter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EParameter")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EReference")
   @js.native
   def EReference: EReference = js.native
   type EReference = EStructuralFeature
-  @scala.inline
-  def EReference_=(x: EReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EReference")(x.asInstanceOf[js.Any])
+  inline def EReference_=(x: EReference): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EReference")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EString")
   @js.native
   def EString: EString = js.native
   type EString = EObject
-  @scala.inline
-  def EString_=(x: EString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EString")(x.asInstanceOf[js.Any])
+  inline def EString_=(x: EString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EString")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "EStructuralFeature")
   @js.native
   def EStructuralFeature: EStructuralFeature = js.native
   type EStructuralFeature = ETypedElement
-  @scala.inline
-  def EStructuralFeature_=(x: EStructuralFeature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EStructuralFeature")(x.asInstanceOf[js.Any])
+  inline def EStructuralFeature_=(x: EStructuralFeature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EStructuralFeature")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "ETypeParameter")
   @js.native
   def ETypeParameter: ETypeParameter = js.native
   type ETypeParameter = ENamedElement
-  @scala.inline
-  def ETypeParameter_=(x: ETypeParameter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETypeParameter")(x.asInstanceOf[js.Any])
+  inline def ETypeParameter_=(x: ETypeParameter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETypeParameter")(x.asInstanceOf[js.Any])
   
   @JSImport("ecore", "ETypedElement")
   @js.native
   def ETypedElement: ETypedElement = js.native
   type ETypedElement = ENamedElement
-  @scala.inline
-  def ETypedElement_=(x: ETypedElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETypedElement")(x.asInstanceOf[js.Any])
+  inline def ETypedElement_=(x: ETypedElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ETypedElement")(x.asInstanceOf[js.Any])
   
   trait Edit extends StObject {
     
@@ -360,23 +330,17 @@ object mod {
     @js.native
     val ^ : Edit = js.native
     
-    @scala.inline
-    implicit class EditMutableBuilder[Self <: Edit] (val x: Self) extends AnyVal {
+    extension [Self <: Edit](x: Self) {
       
-      @scala.inline
-      def setChildDescriptors(value: EObject => js.Array[EObject]): Self = StObject.set(x, "childDescriptors", js.Any.fromFunction1(value))
+      inline def setChildDescriptors(value: EObject => js.Array[EObject]): Self = StObject.set(x, "childDescriptors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildTypes(value: (EObject, js.Any) => js.Array[EObject]): Self = StObject.set(x, "childTypes", js.Any.fromFunction2(value))
+      inline def setChildTypes(value: (EObject, js.Any) => js.Array[EObject]): Self = StObject.set(x, "childTypes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChoiceOfValues(value: (EObject, EObject) => js.Array[EObject]): Self = StObject.set(x, "choiceOfValues", js.Any.fromFunction2(value))
+      inline def setChoiceOfValues(value: (EObject, EObject) => js.Array[EObject]): Self = StObject.set(x, "choiceOfValues", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSiblingDescriptors(value: EObject => js.Array[EObject]): Self = StObject.set(x, "siblingDescriptors", js.Any.fromFunction1(value))
+      inline def setSiblingDescriptors(value: EObject => js.Array[EObject]): Self = StObject.set(x, "siblingDescriptors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSiblingTypes(value: (EObject, js.Any) => js.Array[EObject]): Self = StObject.set(x, "siblingTypes", js.Any.fromFunction2(value))
+      inline def setSiblingTypes(value: (EObject, js.Any) => js.Array[EObject]): Self = StObject.set(x, "siblingTypes", js.Any.fromFunction2(value))
     }
   }
   
@@ -384,8 +348,7 @@ object mod {
   @js.native
   def JSObject: JSObject = js.native
   type JSObject = EObject
-  @scala.inline
-  def JSObject_=(x: JSObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSObject")(x.asInstanceOf[js.Any])
+  inline def JSObject_=(x: JSObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JSObject")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Resource
@@ -440,13 +403,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): ResourceSet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResourceSet]
+    inline def create(): ResourceSet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResourceSet]
   }
   
-  @scala.inline
-  def Resource_=(x: Resource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Resource")(x.asInstanceOf[js.Any])
+  inline def Resource_=(x: Resource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Resource")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def create(eClass: EClass): EObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eClass.asInstanceOf[js.Any]).asInstanceOf[EObject]
+  inline def create(eClass: EClass): EObject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(eClass.asInstanceOf[js.Any]).asInstanceOf[EObject]
 }

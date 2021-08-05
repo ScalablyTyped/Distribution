@@ -14,16 +14,13 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(logSpan: Span => Unit): Logger = {
+  inline def apply(logSpan: Span => Unit): Logger = {
     val __obj = js.Dynamic.literal(logSpan = js.Any.fromFunction1(logSpan))
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setLogSpan(value: Span => Unit): Self = StObject.set(x, "logSpan", js.Any.fromFunction1(value))
+    inline def setLogSpan(value: Span => Unit): Self = StObject.set(x, "logSpan", js.Any.fromFunction1(value))
   }
 }

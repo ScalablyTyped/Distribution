@@ -22,20 +22,16 @@ object overlaySmallMod extends Shortcut {
   }
   object OverlaySmallProps {
     
-    @scala.inline
-    def apply(): OverlaySmallProps = {
+    inline def apply(): OverlaySmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OverlaySmallProps]
     }
     
-    @scala.inline
-    implicit class OverlaySmallPropsMutableBuilder[Self <: OverlaySmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: OverlaySmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

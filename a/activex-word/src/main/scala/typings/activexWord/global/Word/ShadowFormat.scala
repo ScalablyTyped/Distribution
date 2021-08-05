@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ShadowFormat")
 @js.native
-class ShadowFormat protected ()
+/* private */ class ShadowFormat ()
   extends StObject
      with typings.activexWord.Word.ShadowFormat {
   
@@ -61,7 +61,7 @@ class ShadowFormat protected ()
   /* CompleteClass */
   var Visible: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ShadowFormat_typekey")
   var WordDotShadowFormat_typekey: typings.activexWord.Word.ShadowFormat = js.native
 }

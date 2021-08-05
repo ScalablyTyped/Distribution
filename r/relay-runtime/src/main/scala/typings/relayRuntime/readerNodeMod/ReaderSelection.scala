@@ -17,33 +17,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReaderSelection extends StObject
 object ReaderSelection {
   
-  @scala.inline
-  def ReaderClientExtension(kind: String, selections: js.Array[ReaderSelection]): typings.relayRuntime.readerNodeMod.ReaderClientExtension = {
+  inline def ReaderClientExtension(kind: String, selections: js.Array[ReaderSelection]): typings.relayRuntime.readerNodeMod.ReaderClientExtension = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderClientExtension]
   }
   
-  @scala.inline
-  def ReaderCondition(condition: String, kind: String, passingValue: Boolean, selections: js.Array[ReaderSelection]): typings.relayRuntime.readerNodeMod.ReaderCondition = {
+  inline def ReaderCondition(condition: String, kind: String, passingValue: Boolean, selections: js.Array[ReaderSelection]): typings.relayRuntime.readerNodeMod.ReaderCondition = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], passingValue = passingValue.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderCondition]
   }
   
-  @scala.inline
-  def ReaderFragmentSpread(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderFragmentSpread = {
+  inline def ReaderFragmentSpread(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderFragmentSpread = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderFragmentSpread]
   }
   
-  @scala.inline
-  def ReaderInlineFragment(kind: String, selections: js.Array[ReaderSelection], `type`: String): typings.relayRuntime.readerNodeMod.ReaderInlineFragment = {
+  inline def ReaderInlineFragment(kind: String, selections: js.Array[ReaderSelection], `type`: String): typings.relayRuntime.readerNodeMod.ReaderInlineFragment = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderInlineFragment]
   }
   
-  @scala.inline
-  def ReaderLinkedField(
+  inline def ReaderLinkedField(
     args: js.Array[ReaderArgument],
     kind: String,
     name: String,
@@ -54,14 +49,12 @@ object ReaderSelection {
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderLinkedField]
   }
   
-  @scala.inline
-  def ReaderMatchField(kind: String, matchesByType: StringDictionary[FragmentName], name: String): typings.relayRuntime.readerNodeMod.ReaderMatchField = {
+  inline def ReaderMatchField(kind: String, matchesByType: StringDictionary[FragmentName], name: String): typings.relayRuntime.readerNodeMod.ReaderMatchField = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], matchesByType = matchesByType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderMatchField]
   }
   
-  @scala.inline
-  def ReaderScalarField(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderScalarField = {
+  inline def ReaderScalarField(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderScalarField = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderScalarField]
   }

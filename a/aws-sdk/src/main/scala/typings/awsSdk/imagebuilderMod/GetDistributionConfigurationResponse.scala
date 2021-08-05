@@ -18,25 +18,19 @@ trait GetDistributionConfigurationResponse extends StObject {
 }
 object GetDistributionConfigurationResponse {
   
-  @scala.inline
-  def apply(): GetDistributionConfigurationResponse = {
+  inline def apply(): GetDistributionConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDistributionConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class GetDistributionConfigurationResponseMutableBuilder[Self <: GetDistributionConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setDistributionConfiguration(value: DistributionConfiguration): Self = StObject.set(x, "distributionConfiguration", value.asInstanceOf[js.Any])
+    inline def setDistributionConfiguration(value: DistributionConfiguration): Self = StObject.set(x, "distributionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionConfigurationUndefined: Self = StObject.set(x, "distributionConfiguration", js.undefined)
+    inline def setDistributionConfigurationUndefined: Self = StObject.set(x, "distributionConfiguration", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

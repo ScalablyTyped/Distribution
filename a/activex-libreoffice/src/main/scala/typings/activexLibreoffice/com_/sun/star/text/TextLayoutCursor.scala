@@ -43,8 +43,7 @@ trait TextLayoutCursor
 }
 object TextLayoutCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableServiceNames: SafeArray[String],
     BorderDistance: Double,
     BottomBorder: BorderLine,
@@ -261,10 +260,8 @@ object TextLayoutCursor {
     __obj.asInstanceOf[TextLayoutCursor]
   }
   
-  @scala.inline
-  implicit class TextLayoutCursorMutableBuilder[Self <: TextLayoutCursor] (val x: Self) extends AnyVal {
+  extension [Self <: TextLayoutCursor](x: Self) {
     
-    @scala.inline
-    def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
+    inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }
 }

@@ -23,78 +23,65 @@ object accessibilityFeatures {
   @JSGlobal("chrome.accessibilityFeatures.animationPolicy")
   @js.native
   def animationPolicy: ChromeSetting = js.native
-  @scala.inline
-  def animationPolicy_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animationPolicy")(x.asInstanceOf[js.Any])
+  inline def animationPolicy_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("animationPolicy")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.autoclick")
   @js.native
   def autoclick: ChromeSetting = js.native
-  @scala.inline
-  def autoclick_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoclick")(x.asInstanceOf[js.Any])
+  inline def autoclick_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoclick")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.caretHighlight")
   @js.native
   def caretHighlight: ChromeSetting = js.native
-  @scala.inline
-  def caretHighlight_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caretHighlight")(x.asInstanceOf[js.Any])
+  inline def caretHighlight_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caretHighlight")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.cursorHighlight")
   @js.native
   def cursorHighlight: ChromeSetting = js.native
-  @scala.inline
-  def cursorHighlight_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorHighlight")(x.asInstanceOf[js.Any])
+  inline def cursorHighlight_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorHighlight")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.focusHighlight")
   @js.native
   def focusHighlight: ChromeSetting = js.native
-  @scala.inline
-  def focusHighlight_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusHighlight")(x.asInstanceOf[js.Any])
+  inline def focusHighlight_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusHighlight")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.highContrast")
   @js.native
   def highContrast: ChromeSetting = js.native
-  @scala.inline
-  def highContrast_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highContrast")(x.asInstanceOf[js.Any])
+  inline def highContrast_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highContrast")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.largeCursor")
   @js.native
   def largeCursor: ChromeSetting = js.native
-  @scala.inline
-  def largeCursor_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("largeCursor")(x.asInstanceOf[js.Any])
+  inline def largeCursor_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("largeCursor")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.screenMagnifier")
   @js.native
   def screenMagnifier: ChromeSetting = js.native
-  @scala.inline
-  def screenMagnifier_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenMagnifier")(x.asInstanceOf[js.Any])
+  inline def screenMagnifier_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenMagnifier")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.selectToSpeak")
   @js.native
   def selectToSpeak: ChromeSetting = js.native
-  @scala.inline
-  def selectToSpeak_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectToSpeak")(x.asInstanceOf[js.Any])
+  inline def selectToSpeak_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectToSpeak")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.spokenFeedback")
   @js.native
   def spokenFeedback: ChromeSetting = js.native
-  @scala.inline
-  def spokenFeedback_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spokenFeedback")(x.asInstanceOf[js.Any])
+  inline def spokenFeedback_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spokenFeedback")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.stickyKeys")
   @js.native
   def stickyKeys: ChromeSetting = js.native
-  @scala.inline
-  def stickyKeys_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stickyKeys")(x.asInstanceOf[js.Any])
+  inline def stickyKeys_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stickyKeys")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.switchAccess")
   @js.native
   def switchAccess: ChromeSetting = js.native
-  @scala.inline
-  def switchAccess_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("switchAccess")(x.asInstanceOf[js.Any])
+  inline def switchAccess_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("switchAccess")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.accessibilityFeatures.virtualKeyboard")
   @js.native
   def virtualKeyboard: ChromeSetting = js.native
-  @scala.inline
-  def virtualKeyboard_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("virtualKeyboard")(x.asInstanceOf[js.Any])
+  inline def virtualKeyboard_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("virtualKeyboard")(x.asInstanceOf[js.Any])
 }

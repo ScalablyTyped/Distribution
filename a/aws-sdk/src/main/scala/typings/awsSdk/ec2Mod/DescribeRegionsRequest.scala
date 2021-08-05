@@ -28,43 +28,31 @@ trait DescribeRegionsRequest extends StObject {
 }
 object DescribeRegionsRequest {
   
-  @scala.inline
-  def apply(): DescribeRegionsRequest = {
+  inline def apply(): DescribeRegionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRegionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRegionsRequestMutableBuilder[Self <: DescribeRegionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRegionsRequest](x: Self) {
     
-    @scala.inline
-    def setAllRegions(value: Boolean): Self = StObject.set(x, "AllRegions", value.asInstanceOf[js.Any])
+    inline def setAllRegions(value: Boolean): Self = StObject.set(x, "AllRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllRegionsUndefined: Self = StObject.set(x, "AllRegions", js.undefined)
+    inline def setAllRegionsUndefined: Self = StObject.set(x, "AllRegions", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setRegionNames(value: RegionNameStringList): Self = StObject.set(x, "RegionNames", value.asInstanceOf[js.Any])
+    inline def setRegionNames(value: RegionNameStringList): Self = StObject.set(x, "RegionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNamesUndefined: Self = StObject.set(x, "RegionNames", js.undefined)
+    inline def setRegionNamesUndefined: Self = StObject.set(x, "RegionNames", js.undefined)
     
-    @scala.inline
-    def setRegionNamesVarargs(value: String*): Self = StObject.set(x, "RegionNames", js.Array(value :_*))
+    inline def setRegionNamesVarargs(value: String*): Self = StObject.set(x, "RegionNames", js.Array(value :_*))
   }
 }

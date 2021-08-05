@@ -28,28 +28,21 @@ trait DescribeGatewayRouteInput extends StObject {
 }
 object DescribeGatewayRouteInput {
   
-  @scala.inline
-  def apply(gatewayRouteName: ResourceName, meshName: ResourceName, virtualGatewayName: ResourceName): DescribeGatewayRouteInput = {
+  inline def apply(gatewayRouteName: ResourceName, meshName: ResourceName, virtualGatewayName: ResourceName): DescribeGatewayRouteInput = {
     val __obj = js.Dynamic.literal(gatewayRouteName = gatewayRouteName.asInstanceOf[js.Any], meshName = meshName.asInstanceOf[js.Any], virtualGatewayName = virtualGatewayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGatewayRouteInput]
   }
   
-  @scala.inline
-  implicit class DescribeGatewayRouteInputMutableBuilder[Self <: DescribeGatewayRouteInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGatewayRouteInput](x: Self) {
     
-    @scala.inline
-    def setGatewayRouteName(value: ResourceName): Self = StObject.set(x, "gatewayRouteName", value.asInstanceOf[js.Any])
+    inline def setGatewayRouteName(value: ResourceName): Self = StObject.set(x, "gatewayRouteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+    inline def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
+    inline def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
     
-    @scala.inline
-    def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
   }
 }

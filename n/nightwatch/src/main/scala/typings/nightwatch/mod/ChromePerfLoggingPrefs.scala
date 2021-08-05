@@ -31,37 +31,27 @@ trait ChromePerfLoggingPrefs extends StObject {
 }
 object ChromePerfLoggingPrefs {
   
-  @scala.inline
-  def apply(): ChromePerfLoggingPrefs = {
+  inline def apply(): ChromePerfLoggingPrefs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChromePerfLoggingPrefs]
   }
   
-  @scala.inline
-  implicit class ChromePerfLoggingPrefsMutableBuilder[Self <: ChromePerfLoggingPrefs] (val x: Self) extends AnyVal {
+  extension [Self <: ChromePerfLoggingPrefs](x: Self) {
     
-    @scala.inline
-    def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
+    inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferUsageReportingIntervalUndefined: Self = StObject.set(x, "bufferUsageReportingInterval", js.undefined)
+    inline def setBufferUsageReportingIntervalUndefined: Self = StObject.set(x, "bufferUsageReportingInterval", js.undefined)
     
-    @scala.inline
-    def setEnableNetwork(value: Boolean): Self = StObject.set(x, "enableNetwork", value.asInstanceOf[js.Any])
+    inline def setEnableNetwork(value: Boolean): Self = StObject.set(x, "enableNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNetworkUndefined: Self = StObject.set(x, "enableNetwork", js.undefined)
+    inline def setEnableNetworkUndefined: Self = StObject.set(x, "enableNetwork", js.undefined)
     
-    @scala.inline
-    def setEnablePage(value: Boolean): Self = StObject.set(x, "enablePage", value.asInstanceOf[js.Any])
+    inline def setEnablePage(value: Boolean): Self = StObject.set(x, "enablePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePageUndefined: Self = StObject.set(x, "enablePage", js.undefined)
+    inline def setEnablePageUndefined: Self = StObject.set(x, "enablePage", js.undefined)
     
-    @scala.inline
-    def setTraceCategories(value: String): Self = StObject.set(x, "traceCategories", value.asInstanceOf[js.Any])
+    inline def setTraceCategories(value: String): Self = StObject.set(x, "traceCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceCategoriesUndefined: Self = StObject.set(x, "traceCategories", js.undefined)
+    inline def setTraceCategoriesUndefined: Self = StObject.set(x, "traceCategories", js.undefined)
   }
 }

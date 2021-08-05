@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Procedure extends StObject {
   
-  @JSName("ADOX.Procedure_typekey")
+  /* private */ @JSName("ADOX.Procedure_typekey")
   var ADOXDotProcedure_typekey: Procedure
   
   var Command: typings.activexAdodb.ADODB.Command
@@ -21,35 +21,26 @@ trait Procedure extends StObject {
 }
 object Procedure {
   
-  @scala.inline
-  def apply(ADOXDotProcedure_typekey: Procedure, Command: Command, Name: String): Procedure = {
+  inline def apply(ADOXDotProcedure_typekey: Procedure, Command: Command, Name: String): Procedure = {
     val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], DateCreated = null, DateModified = null)
     __obj.updateDynamic("ADOX.Procedure_typekey")(ADOXDotProcedure_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Procedure]
   }
   
-  @scala.inline
-  implicit class ProcedureMutableBuilder[Self <: Procedure] (val x: Self) extends AnyVal {
+  extension [Self <: Procedure](x: Self) {
     
-    @scala.inline
-    def setADOXDotProcedure_typekey(value: Procedure): Self = StObject.set(x, "ADOX.Procedure_typekey", value.asInstanceOf[js.Any])
+    inline def setADOXDotProcedure_typekey(value: Procedure): Self = StObject.set(x, "ADOX.Procedure_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreatedNull: Self = StObject.set(x, "DateCreated", null)
+    inline def setDateCreatedNull: Self = StObject.set(x, "DateCreated", null)
     
-    @scala.inline
-    def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    inline def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateModifiedNull: Self = StObject.set(x, "DateModified", null)
+    inline def setDateModifiedNull: Self = StObject.set(x, "DateModified", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

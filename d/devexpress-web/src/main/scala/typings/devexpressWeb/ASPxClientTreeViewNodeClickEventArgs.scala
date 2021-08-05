@@ -23,19 +23,15 @@ trait ASPxClientTreeViewNodeClickEventArgs
 }
 object ASPxClientTreeViewNodeClickEventArgs {
   
-  @scala.inline
-  def apply(htmlElement: js.Any, htmlEvent: js.Any, node: ASPxClientTreeViewNode, processOnServer: Boolean): ASPxClientTreeViewNodeClickEventArgs = {
+  inline def apply(htmlElement: js.Any, htmlEvent: js.Any, node: ASPxClientTreeViewNode, processOnServer: Boolean): ASPxClientTreeViewNodeClickEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeViewNodeClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeViewNodeClickEventArgsMutableBuilder[Self <: ASPxClientTreeViewNodeClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeViewNodeClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

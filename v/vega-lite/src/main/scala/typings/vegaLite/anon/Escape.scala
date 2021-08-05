@@ -10,16 +10,13 @@ trait Escape extends StObject {
 }
 object Escape {
   
-  @scala.inline
-  def apply(escape: Boolean): Escape = {
+  inline def apply(escape: Boolean): Escape = {
     val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Escape]
   }
   
-  @scala.inline
-  implicit class EscapeMutableBuilder[Self <: Escape] (val x: Self) extends AnyVal {
+  extension [Self <: Escape](x: Self) {
     
-    @scala.inline
-    def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
   }
 }

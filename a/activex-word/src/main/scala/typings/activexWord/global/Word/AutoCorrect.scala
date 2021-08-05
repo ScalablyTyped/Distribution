@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.AutoCorrect")
 @js.native
-class AutoCorrect protected ()
+/* private */ class AutoCorrect ()
   extends StObject
      with typings.activexWord.Word.AutoCorrect {
   
@@ -76,7 +76,7 @@ class AutoCorrect protected ()
   /* CompleteClass */
   override val TwoInitialCapsExceptions: typings.activexWord.Word.TwoInitialCapsExceptions = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.AutoCorrect_typekey")
   var WordDotAutoCorrect_typekey: typings.activexWord.Word.AutoCorrect = js.native
 }

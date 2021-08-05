@@ -11,22 +11,17 @@ trait IConsensusNotifyPeerConnected extends StObject {
 }
 object IConsensusNotifyPeerConnected {
   
-  @scala.inline
-  def apply(): IConsensusNotifyPeerConnected = {
+  inline def apply(): IConsensusNotifyPeerConnected = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusNotifyPeerConnected]
   }
   
-  @scala.inline
-  implicit class IConsensusNotifyPeerConnectedMutableBuilder[Self <: IConsensusNotifyPeerConnected] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusNotifyPeerConnected](x: Self) {
     
-    @scala.inline
-    def setPeerInfo(value: IConsensusPeerInfo): Self = StObject.set(x, "peerInfo", value.asInstanceOf[js.Any])
+    inline def setPeerInfo(value: IConsensusPeerInfo): Self = StObject.set(x, "peerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerInfoNull: Self = StObject.set(x, "peerInfo", null)
+    inline def setPeerInfoNull: Self = StObject.set(x, "peerInfo", null)
     
-    @scala.inline
-    def setPeerInfoUndefined: Self = StObject.set(x, "peerInfo", js.undefined)
+    inline def setPeerInfoUndefined: Self = StObject.set(x, "peerInfo", js.undefined)
   }
 }

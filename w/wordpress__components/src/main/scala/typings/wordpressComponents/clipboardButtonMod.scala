@@ -46,29 +46,22 @@ object clipboardButtonMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(text: String): Props = {
+      inline def apply(text: String): Props = {
         val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setOnCopy(value: () => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction0(value))
+        inline def setOnCopy(value: () => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+        inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
         
-        @scala.inline
-        def setOnFinishCopy(value: () => Unit): Self = StObject.set(x, "onFinishCopy", js.Any.fromFunction0(value))
+        inline def setOnFinishCopy(value: () => Unit): Self = StObject.set(x, "onFinishCopy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnFinishCopyUndefined: Self = StObject.set(x, "onFinishCopy", js.undefined)
+        inline def setOnFinishCopyUndefined: Self = StObject.set(x, "onFinishCopy", js.undefined)
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
   }

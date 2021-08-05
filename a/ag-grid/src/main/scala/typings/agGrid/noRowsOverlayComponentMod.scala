@@ -28,8 +28,7 @@ object noRowsOverlayComponentMod {
     @JSImport("ag-grid/dist/lib/rendering/overlays/noRowsOverlayComponent", "NoRowsOverlayComponent.DEFAULT_NO_ROWS_TEMPLATE")
     @js.native
     def DEFAULT_NO_ROWS_TEMPLATE: js.Any = js.native
-    @scala.inline
-    def DEFAULT_NO_ROWS_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_NO_ROWS_TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_NO_ROWS_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_NO_ROWS_TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   type INoRowsOverlayComp = IComponent[INoRowsOverlayParams]

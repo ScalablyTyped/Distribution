@@ -10,19 +10,15 @@ trait IFilterFlags extends StObject {
 }
 object IFilterFlags {
   
-  @scala.inline
-  def apply(): IFilterFlags = {
+  inline def apply(): IFilterFlags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFilterFlags]
   }
   
-  @scala.inline
-  implicit class IFilterFlagsMutableBuilder[Self <: IFilterFlags] (val x: Self) extends AnyVal {
+  extension [Self <: IFilterFlags](x: Self) {
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
   }
 }

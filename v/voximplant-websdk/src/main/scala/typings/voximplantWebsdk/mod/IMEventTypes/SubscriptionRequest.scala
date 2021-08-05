@@ -35,32 +35,24 @@ trait SubscriptionRequest
 }
 object SubscriptionRequest {
   
-  @scala.inline
-  def apply(id: String, `type`: SubscriptionRequestType): SubscriptionRequest = {
+  inline def apply(id: String, `type`: SubscriptionRequestType): SubscriptionRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class SubscriptionRequestMutableBuilder[Self <: SubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setType(value: SubscriptionRequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SubscriptionRequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

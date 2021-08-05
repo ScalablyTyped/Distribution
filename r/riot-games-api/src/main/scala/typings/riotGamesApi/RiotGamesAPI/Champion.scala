@@ -25,8 +25,7 @@ object Champion {
   }
   object ChampionDto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       botEnabled: Boolean,
       botMmEnabled: Boolean,
@@ -38,26 +37,19 @@ object Champion {
       __obj.asInstanceOf[ChampionDto]
     }
     
-    @scala.inline
-    implicit class ChampionDtoMutableBuilder[Self <: ChampionDto] (val x: Self) extends AnyVal {
+    extension [Self <: ChampionDto](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotEnabled(value: Boolean): Self = StObject.set(x, "botEnabled", value.asInstanceOf[js.Any])
+      inline def setBotEnabled(value: Boolean): Self = StObject.set(x, "botEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBotMmEnabled(value: Boolean): Self = StObject.set(x, "botMmEnabled", value.asInstanceOf[js.Any])
+      inline def setBotMmEnabled(value: Boolean): Self = StObject.set(x, "botMmEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeToPlay(value: Boolean): Self = StObject.set(x, "freeToPlay", value.asInstanceOf[js.Any])
+      inline def setFreeToPlay(value: Boolean): Self = StObject.set(x, "freeToPlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankedPlayEnabled(value: Boolean): Self = StObject.set(x, "rankedPlayEnabled", value.asInstanceOf[js.Any])
+      inline def setRankedPlayEnabled(value: Boolean): Self = StObject.set(x, "rankedPlayEnabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,20 +59,16 @@ object Champion {
   }
   object ChampionListDto {
     
-    @scala.inline
-    def apply(champions: js.Array[ChampionDto]): ChampionListDto = {
+    inline def apply(champions: js.Array[ChampionDto]): ChampionListDto = {
       val __obj = js.Dynamic.literal(champions = champions.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChampionListDto]
     }
     
-    @scala.inline
-    implicit class ChampionListDtoMutableBuilder[Self <: ChampionListDto] (val x: Self) extends AnyVal {
+    extension [Self <: ChampionListDto](x: Self) {
       
-      @scala.inline
-      def setChampions(value: js.Array[ChampionDto]): Self = StObject.set(x, "champions", value.asInstanceOf[js.Any])
+      inline def setChampions(value: js.Array[ChampionDto]): Self = StObject.set(x, "champions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChampionsVarargs(value: ChampionDto*): Self = StObject.set(x, "champions", js.Array(value :_*))
+      inline def setChampionsVarargs(value: ChampionDto*): Self = StObject.set(x, "champions", js.Array(value :_*))
     }
   }
 }

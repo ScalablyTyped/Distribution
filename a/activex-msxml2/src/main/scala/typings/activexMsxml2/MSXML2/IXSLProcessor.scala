@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IXSLProcessor extends StObject {
   
-  @JSName("MSXML2.IXSLProcessor_typekey")
+  /* private */ @JSName("MSXML2.IXSLProcessor_typekey")
   var MSXML2DotIXSLProcessor_typekey: IXSLProcessor = js.native
   
   /** pass object to stylesheet */

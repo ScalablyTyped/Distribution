@@ -13,19 +13,15 @@ trait SendingOptions extends StObject {
 }
 object SendingOptions {
   
-  @scala.inline
-  def apply(): SendingOptions = {
+  inline def apply(): SendingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendingOptions]
   }
   
-  @scala.inline
-  implicit class SendingOptionsMutableBuilder[Self <: SendingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendingOptions](x: Self) {
     
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
+    inline def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
+    inline def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

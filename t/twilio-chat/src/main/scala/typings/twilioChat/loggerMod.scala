@@ -8,7 +8,7 @@ object loggerMod {
   
   @JSImport("twilio-chat/lib/logger", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  /* private */ class Logger () extends StObject {
     
     def debug(args: js.Any*): Unit = js.native
     
@@ -16,7 +16,7 @@ object loggerMod {
     
     def info(args: js.Any*): Unit = js.native
     
-    var prefix: js.Any = js.native
+    /* private */ var prefix: js.Any = js.native
     
     def setLevel(level: js.Any): Unit = js.native
     
@@ -31,31 +31,24 @@ object loggerMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def info(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def info(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def scope(prefix: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(prefix.asInstanceOf[js.Any]).asInstanceOf[Logger]
+    inline def scope(prefix: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("scope")(prefix.asInstanceOf[js.Any]).asInstanceOf[Logger]
     
     /* static member */
-    @scala.inline
-    def setLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def trace(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def trace(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

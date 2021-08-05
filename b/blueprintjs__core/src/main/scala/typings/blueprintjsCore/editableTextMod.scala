@@ -24,23 +24,23 @@ object editableTextMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MEditableText(prevProps: IEditableTextProps, prevState: IEditableTextState): Unit = js.native
     
-    var handleFocus: js.Any = js.native
+    /* private */ var handleFocus: js.Any = js.native
     
-    var handleKeyEvent: js.Any = js.native
+    /* private */ var handleKeyEvent: js.Any = js.native
     
-    var handleTextChange: js.Any = js.native
+    /* private */ var handleTextChange: js.Any = js.native
     
-    var inputElement: js.Any = js.native
+    /* private */ var inputElement: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var renderInput: js.Any = js.native
+    /* private */ var renderInput: js.Any = js.native
     
     def toggleEditing(): Unit = js.native
     
-    var updateInputDimensions: js.Any = js.native
+    /* private */ var updateInputDimensions: js.Any = js.native
     
-    var valueElement: js.Any = js.native
+    /* private */ var valueElement: js.Any = js.native
   }
   /* static members */
   object EditableText {
@@ -52,14 +52,12 @@ object editableTextMod {
     @JSImport("@blueprintjs/core/lib/esm/components/editable-text/editableText", "EditableText.defaultProps")
     @js.native
     def defaultProps: IEditableTextProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IEditableTextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IEditableTextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/editable-text/editableText", "EditableText.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IEditableTextProps
@@ -160,122 +158,84 @@ object editableTextMod {
   }
   object IEditableTextProps {
     
-    @scala.inline
-    def apply(): IEditableTextProps = {
+    inline def apply(): IEditableTextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditableTextProps]
     }
     
-    @scala.inline
-    implicit class IEditableTextPropsMutableBuilder[Self <: IEditableTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: IEditableTextProps](x: Self) {
       
-      @scala.inline
-      def setAlwaysRenderInput(value: Boolean): Self = StObject.set(x, "alwaysRenderInput", value.asInstanceOf[js.Any])
+      inline def setAlwaysRenderInput(value: Boolean): Self = StObject.set(x, "alwaysRenderInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysRenderInputUndefined: Self = StObject.set(x, "alwaysRenderInput", js.undefined)
+      inline def setAlwaysRenderInputUndefined: Self = StObject.set(x, "alwaysRenderInput", js.undefined)
       
-      @scala.inline
-      def setConfirmOnEnterKey(value: Boolean): Self = StObject.set(x, "confirmOnEnterKey", value.asInstanceOf[js.Any])
+      inline def setConfirmOnEnterKey(value: Boolean): Self = StObject.set(x, "confirmOnEnterKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmOnEnterKeyUndefined: Self = StObject.set(x, "confirmOnEnterKey", js.undefined)
+      inline def setConfirmOnEnterKeyUndefined: Self = StObject.set(x, "confirmOnEnterKey", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
+      inline def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
+      inline def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+      inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
+      inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
       
-      @scala.inline
-      def setMinLines(value: Double): Self = StObject.set(x, "minLines", value.asInstanceOf[js.Any])
+      inline def setMinLines(value: Double): Self = StObject.set(x, "minLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLinesUndefined: Self = StObject.set(x, "minLines", js.undefined)
+      inline def setMinLinesUndefined: Self = StObject.set(x, "minLines", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: /* value */ String => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: /* value */ String => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnConfirm(value: /* value */ String => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
+      inline def setOnConfirm(value: /* value */ String => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+      inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
-      @scala.inline
-      def setOnEdit(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
+      inline def setOnEdit(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onEdit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEditUndefined: Self = StObject.set(x, "onEdit", js.undefined)
+      inline def setOnEditUndefined: Self = StObject.set(x, "onEdit", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setSelectAllOnFocus(value: Boolean): Self = StObject.set(x, "selectAllOnFocus", value.asInstanceOf[js.Any])
+      inline def setSelectAllOnFocus(value: Boolean): Self = StObject.set(x, "selectAllOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectAllOnFocusUndefined: Self = StObject.set(x, "selectAllOnFocus", js.undefined)
+      inline def setSelectAllOnFocusUndefined: Self = StObject.set(x, "selectAllOnFocus", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -298,44 +258,32 @@ object editableTextMod {
   }
   object IEditableTextState {
     
-    @scala.inline
-    def apply(): IEditableTextState = {
+    inline def apply(): IEditableTextState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditableTextState]
     }
     
-    @scala.inline
-    implicit class IEditableTextStateMutableBuilder[Self <: IEditableTextState] (val x: Self) extends AnyVal {
+    extension [Self <: IEditableTextState](x: Self) {
       
-      @scala.inline
-      def setInputHeight(value: Double): Self = StObject.set(x, "inputHeight", value.asInstanceOf[js.Any])
+      inline def setInputHeight(value: Double): Self = StObject.set(x, "inputHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputHeightUndefined: Self = StObject.set(x, "inputHeight", js.undefined)
+      inline def setInputHeightUndefined: Self = StObject.set(x, "inputHeight", js.undefined)
       
-      @scala.inline
-      def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
+      inline def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputWidthUndefined: Self = StObject.set(x, "inputWidth", js.undefined)
+      inline def setInputWidthUndefined: Self = StObject.set(x, "inputWidth", js.undefined)
       
-      @scala.inline
-      def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
+      inline def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
+      inline def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
       
-      @scala.inline
-      def setLastValue(value: String): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
+      inline def setLastValue(value: String): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastValueUndefined: Self = StObject.set(x, "lastValue", js.undefined)
+      inline def setLastValueUndefined: Self = StObject.set(x, "lastValue", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

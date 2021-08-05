@@ -11,13 +11,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def schedule(cronExpression: String, func: js.Function0[Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
-  @scala.inline
-  def schedule(cronExpression: String, func: js.Function0[Unit], options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def schedule(cronExpression: String, func: js.Function0[Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def schedule(cronExpression: String, func: js.Function0[Unit], options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
   
-  @scala.inline
-  def validate(cronExpression: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(cronExpression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validate(cronExpression: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(cronExpression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait ScheduleOptions extends StObject {
     
@@ -35,26 +32,20 @@ object mod {
   }
   object ScheduleOptions {
     
-    @scala.inline
-    def apply(): ScheduleOptions = {
+    inline def apply(): ScheduleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScheduleOptions]
     }
     
-    @scala.inline
-    implicit class ScheduleOptionsMutableBuilder[Self <: ScheduleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduleOptions](x: Self) {
       
-      @scala.inline
-      def setScheduled(value: Boolean): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
+      inline def setScheduled(value: Boolean): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduledUndefined: Self = StObject.set(x, "scheduled", js.undefined)
+      inline def setScheduledUndefined: Self = StObject.set(x, "scheduled", js.undefined)
       
-      @scala.inline
-      def setTimezone(value: Timezone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: Timezone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     }
   }
   
@@ -70,8 +61,7 @@ object mod {
   }
   object ScheduledTask {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getStatus: () => String,
       start: () => ScheduledTask,
@@ -81,20 +71,15 @@ object mod {
       __obj.asInstanceOf[ScheduledTask]
     }
     
-    @scala.inline
-    implicit class ScheduledTaskMutableBuilder[Self <: ScheduledTask] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduledTask](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatus(value: () => String): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
+      inline def setGetStatus(value: () => String): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStart(value: () => ScheduledTask): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => ScheduledTask): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => ScheduledTask): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => ScheduledTask): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

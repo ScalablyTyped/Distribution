@@ -10,16 +10,13 @@ trait Overflow extends StObject {
 }
 object Overflow {
   
-  @scala.inline
-  def apply(overflow: AdjustX): Overflow = {
+  inline def apply(overflow: AdjustX): Overflow = {
     val __obj = js.Dynamic.literal(overflow = overflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Overflow]
   }
   
-  @scala.inline
-  implicit class OverflowMutableBuilder[Self <: Overflow] (val x: Self) extends AnyVal {
+  extension [Self <: Overflow](x: Self) {
     
-    @scala.inline
-    def setOverflow(value: AdjustX): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: AdjustX): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
   }
 }

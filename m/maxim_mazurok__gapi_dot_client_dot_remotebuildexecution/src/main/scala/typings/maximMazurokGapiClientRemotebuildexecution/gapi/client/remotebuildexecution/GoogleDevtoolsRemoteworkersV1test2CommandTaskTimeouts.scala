@@ -27,31 +27,23 @@ trait GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts extends StObject {
 }
 object GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts = {
+  inline def apply(): GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeoutsMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts](x: Self) {
     
-    @scala.inline
-    def setExecution(value: String): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: String): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
+    inline def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
     
-    @scala.inline
-    def setIdle(value: String): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: String): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
-    @scala.inline
-    def setShutdown(value: String): Self = StObject.set(x, "shutdown", value.asInstanceOf[js.Any])
+    inline def setShutdown(value: String): Self = StObject.set(x, "shutdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShutdownUndefined: Self = StObject.set(x, "shutdown", js.undefined)
+    inline def setShutdownUndefined: Self = StObject.set(x, "shutdown", js.undefined)
   }
 }

@@ -39,8 +39,7 @@ trait TableBorderDistances extends StObject {
 }
 object TableBorderDistances {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BottomDistance: Double,
     IsBottomDistanceValid: Boolean,
     IsLeftDistanceValid: Boolean,
@@ -54,31 +53,22 @@ object TableBorderDistances {
     __obj.asInstanceOf[TableBorderDistances]
   }
   
-  @scala.inline
-  implicit class TableBorderDistancesMutableBuilder[Self <: TableBorderDistances] (val x: Self) extends AnyVal {
+  extension [Self <: TableBorderDistances](x: Self) {
     
-    @scala.inline
-    def setBottomDistance(value: Double): Self = StObject.set(x, "BottomDistance", value.asInstanceOf[js.Any])
+    inline def setBottomDistance(value: Double): Self = StObject.set(x, "BottomDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBottomDistanceValid(value: Boolean): Self = StObject.set(x, "IsBottomDistanceValid", value.asInstanceOf[js.Any])
+    inline def setIsBottomDistanceValid(value: Boolean): Self = StObject.set(x, "IsBottomDistanceValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLeftDistanceValid(value: Boolean): Self = StObject.set(x, "IsLeftDistanceValid", value.asInstanceOf[js.Any])
+    inline def setIsLeftDistanceValid(value: Boolean): Self = StObject.set(x, "IsLeftDistanceValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRightDistanceValid(value: Boolean): Self = StObject.set(x, "IsRightDistanceValid", value.asInstanceOf[js.Any])
+    inline def setIsRightDistanceValid(value: Boolean): Self = StObject.set(x, "IsRightDistanceValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTopDistanceValid(value: Boolean): Self = StObject.set(x, "IsTopDistanceValid", value.asInstanceOf[js.Any])
+    inline def setIsTopDistanceValid(value: Boolean): Self = StObject.set(x, "IsTopDistanceValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftDistance(value: Double): Self = StObject.set(x, "LeftDistance", value.asInstanceOf[js.Any])
+    inline def setLeftDistance(value: Double): Self = StObject.set(x, "LeftDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightDistance(value: Double): Self = StObject.set(x, "RightDistance", value.asInstanceOf[js.Any])
+    inline def setRightDistance(value: Double): Self = StObject.set(x, "RightDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopDistance(value: Double): Self = StObject.set(x, "TopDistance", value.asInstanceOf[js.Any])
+    inline def setTopDistance(value: Double): Self = StObject.set(x, "TopDistance", value.asInstanceOf[js.Any])
   }
 }

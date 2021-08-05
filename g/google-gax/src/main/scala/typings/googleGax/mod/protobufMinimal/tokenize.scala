@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tokenize {
   
-  @scala.inline
-  def apply(source: String, alternateCommentMode: Boolean): ITokenizerHandle = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], alternateCommentMode.asInstanceOf[js.Any])).asInstanceOf[ITokenizerHandle]
+  inline def apply(source: String, alternateCommentMode: Boolean): ITokenizerHandle = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], alternateCommentMode.asInstanceOf[js.Any])).asInstanceOf[ITokenizerHandle]
   
   @JSImport("google-gax", "protobufMinimal.tokenize")
   @js.native
@@ -19,6 +18,5 @@ object tokenize {
     * @param str String to unescape
     * @returns Unescaped string
     */
-  @scala.inline
-  def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

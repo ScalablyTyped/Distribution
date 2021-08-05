@@ -14,16 +14,13 @@ trait GetHeapObjectIdRequest extends StObject {
 }
 object GetHeapObjectIdRequest {
   
-  @scala.inline
-  def apply(objectId: RemoteObjectId): GetHeapObjectIdRequest = {
+  inline def apply(objectId: RemoteObjectId): GetHeapObjectIdRequest = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHeapObjectIdRequest]
   }
   
-  @scala.inline
-  implicit class GetHeapObjectIdRequestMutableBuilder[Self <: GetHeapObjectIdRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHeapObjectIdRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait StopContinuousExportResponse extends StObject {
 }
 object StopContinuousExportResponse {
   
-  @scala.inline
-  def apply(): StopContinuousExportResponse = {
+  inline def apply(): StopContinuousExportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopContinuousExportResponse]
   }
   
-  @scala.inline
-  implicit class StopContinuousExportResponseMutableBuilder[Self <: StopContinuousExportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopContinuousExportResponse](x: Self) {
     
-    @scala.inline
-    def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStopTime(value: TimeStamp): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
+    inline def setStopTime(value: TimeStamp): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopTimeUndefined: Self = StObject.set(x, "stopTime", js.undefined)
+    inline def setStopTimeUndefined: Self = StObject.set(x, "stopTime", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait LoadPolicyConfig extends StObject {
 }
 object LoadPolicyConfig {
   
-  @scala.inline
-  def apply(): LoadPolicyConfig = {
+  inline def apply(): LoadPolicyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadPolicyConfig]
   }
   
-  @scala.inline
-  implicit class LoadPolicyConfigMutableBuilder[Self <: LoadPolicyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoadPolicyConfig](x: Self) {
     
-    @scala.inline
-    def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
+    inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
+    inline def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
     
-    @scala.inline
-    def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
+    inline def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
+    inline def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
     
-    @scala.inline
-    def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
+    inline def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
+    inline def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
   }
 }

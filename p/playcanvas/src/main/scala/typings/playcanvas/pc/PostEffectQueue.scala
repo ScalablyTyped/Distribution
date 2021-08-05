@@ -41,8 +41,7 @@ trait PostEffectQueue extends StObject {
 }
 object PostEffectQueue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEffect: PostEffect => Unit,
     destroy: () => Unit,
     disable: () => Unit,
@@ -53,22 +52,16 @@ object PostEffectQueue {
     __obj.asInstanceOf[PostEffectQueue]
   }
   
-  @scala.inline
-  implicit class PostEffectQueueMutableBuilder[Self <: PostEffectQueue] (val x: Self) extends AnyVal {
+  extension [Self <: PostEffectQueue](x: Self) {
     
-    @scala.inline
-    def setAddEffect(value: PostEffect => Unit): Self = StObject.set(x, "addEffect", js.Any.fromFunction1(value))
+    inline def setAddEffect(value: PostEffect => Unit): Self = StObject.set(x, "addEffect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveEffect(value: PostEffect => Unit): Self = StObject.set(x, "removeEffect", js.Any.fromFunction1(value))
+    inline def setRemoveEffect(value: PostEffect => Unit): Self = StObject.set(x, "removeEffect", js.Any.fromFunction1(value))
   }
 }

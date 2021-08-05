@@ -18,22 +18,17 @@ trait ListTagsForResourcesRequest extends StObject {
 }
 object ListTagsForResourcesRequest {
   
-  @scala.inline
-  def apply(ResourceIds: TagResourceIdList, ResourceType: TagResourceType): ListTagsForResourcesRequest = {
+  inline def apply(ResourceIds: TagResourceIdList, ResourceType: TagResourceType): ListTagsForResourcesRequest = {
     val __obj = js.Dynamic.literal(ResourceIds = ResourceIds.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourcesRequest]
   }
   
-  @scala.inline
-  implicit class ListTagsForResourcesRequestMutableBuilder[Self <: ListTagsForResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setResourceIds(value: TagResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
+    inline def setResourceIds(value: TagResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdsVarargs(value: TagResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: TagResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceType(value: TagResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: TagResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

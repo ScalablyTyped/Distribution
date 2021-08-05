@@ -12,25 +12,19 @@ trait RefreshOptions extends StObject {
 }
 object RefreshOptions {
   
-  @scala.inline
-  def apply(): RefreshOptions = {
+  inline def apply(): RefreshOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshOptions]
   }
   
-  @scala.inline
-  implicit class RefreshOptionsMutableBuilder[Self <: RefreshOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshOptions](x: Self) {
     
-    @scala.inline
-    def setEagerRefreshThresholdMillis(value: Double): Self = StObject.set(x, "eagerRefreshThresholdMillis", value.asInstanceOf[js.Any])
+    inline def setEagerRefreshThresholdMillis(value: Double): Self = StObject.set(x, "eagerRefreshThresholdMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEagerRefreshThresholdMillisUndefined: Self = StObject.set(x, "eagerRefreshThresholdMillis", js.undefined)
+    inline def setEagerRefreshThresholdMillisUndefined: Self = StObject.set(x, "eagerRefreshThresholdMillis", js.undefined)
     
-    @scala.inline
-    def setForceRefreshOnFailure(value: Boolean): Self = StObject.set(x, "forceRefreshOnFailure", value.asInstanceOf[js.Any])
+    inline def setForceRefreshOnFailure(value: Boolean): Self = StObject.set(x, "forceRefreshOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceRefreshOnFailureUndefined: Self = StObject.set(x, "forceRefreshOnFailure", js.undefined)
+    inline def setForceRefreshOnFailureUndefined: Self = StObject.set(x, "forceRefreshOnFailure", js.undefined)
   }
 }

@@ -34,37 +34,27 @@ trait ParamsResourceRepliesDelete
 }
 object ParamsResourceRepliesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceRepliesDelete = {
+  inline def apply(): ParamsResourceRepliesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRepliesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRepliesDeleteMutableBuilder[Self <: ParamsResourceRepliesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRepliesDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
+    inline def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setReplyId(value: String): Self = StObject.set(x, "replyId", value.asInstanceOf[js.Any])
+    inline def setReplyId(value: String): Self = StObject.set(x, "replyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyIdUndefined: Self = StObject.set(x, "replyId", js.undefined)
+    inline def setReplyIdUndefined: Self = StObject.set(x, "replyId", js.undefined)
   }
 }

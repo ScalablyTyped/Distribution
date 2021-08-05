@@ -13,19 +13,15 @@ trait DescribeTrustedAdvisorCheckResultResponse extends StObject {
 }
 object DescribeTrustedAdvisorCheckResultResponse {
   
-  @scala.inline
-  def apply(): DescribeTrustedAdvisorCheckResultResponse = {
+  inline def apply(): DescribeTrustedAdvisorCheckResultResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTrustedAdvisorCheckResultResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTrustedAdvisorCheckResultResponseMutableBuilder[Self <: DescribeTrustedAdvisorCheckResultResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrustedAdvisorCheckResultResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: TrustedAdvisorCheckResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: TrustedAdvisorCheckResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

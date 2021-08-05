@@ -42,43 +42,31 @@ trait CardElementOptionsselecto extends StObject {
 }
 object CardElementOptionsselecto {
   
-  @scala.inline
-  def apply(): CardElementOptionsselecto = {
+  inline def apply(): CardElementOptionsselecto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardElementOptionsselecto]
   }
   
-  @scala.inline
-  implicit class CardElementOptionsselectoMutableBuilder[Self <: CardElementOptionsselecto] (val x: Self) extends AnyVal {
+  extension [Self <: CardElementOptionsselecto](x: Self) {
     
-    @scala.inline
-    def setDisplayIcon(value: Boolean): Self = StObject.set(x, "displayIcon", value.asInstanceOf[js.Any])
+    inline def setDisplayIcon(value: Boolean): Self = StObject.set(x, "displayIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayIconUndefined: Self = StObject.set(x, "displayIcon", js.undefined)
+    inline def setDisplayIconUndefined: Self = StObject.set(x, "displayIcon", js.undefined)
     
-    @scala.inline
-    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+    inline def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CommonElementStyle & Placeholder): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CommonElementStyle & Placeholder): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTabIndex(value: String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
   }
 }

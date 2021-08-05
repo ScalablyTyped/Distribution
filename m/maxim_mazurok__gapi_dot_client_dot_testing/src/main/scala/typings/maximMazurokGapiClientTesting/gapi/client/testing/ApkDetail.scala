@@ -10,19 +10,15 @@ trait ApkDetail extends StObject {
 }
 object ApkDetail {
   
-  @scala.inline
-  def apply(): ApkDetail = {
+  inline def apply(): ApkDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApkDetail]
   }
   
-  @scala.inline
-  implicit class ApkDetailMutableBuilder[Self <: ApkDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ApkDetail](x: Self) {
     
-    @scala.inline
-    def setApkManifest(value: ApkManifest): Self = StObject.set(x, "apkManifest", value.asInstanceOf[js.Any])
+    inline def setApkManifest(value: ApkManifest): Self = StObject.set(x, "apkManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApkManifestUndefined: Self = StObject.set(x, "apkManifest", js.undefined)
+    inline def setApkManifestUndefined: Self = StObject.set(x, "apkManifest", js.undefined)
   }
 }

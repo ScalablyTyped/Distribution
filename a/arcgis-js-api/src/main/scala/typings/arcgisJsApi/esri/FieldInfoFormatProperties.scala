@@ -54,33 +54,25 @@ trait FieldInfoFormatProperties extends StObject {
 }
 object FieldInfoFormatProperties {
   
-  @scala.inline
-  def apply(): FieldInfoFormatProperties = {
+  inline def apply(): FieldInfoFormatProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldInfoFormatProperties]
   }
   
-  @scala.inline
-  implicit class FieldInfoFormatPropertiesMutableBuilder[Self <: FieldInfoFormatProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FieldInfoFormatProperties](x: Self) {
     
-    @scala.inline
-    def setDateFormat(
+    inline def setDateFormat(
       value: default | `short-date` | `short-date-short-time` | `short-date-long-time` | `short-date-long-time-24` | `long-month-day-year` | `long-month-day-year-short-time` | `long-month-day-year-short-time-24` | `long-month-day-year-long-time` | `long-month-day-year-long-time-24` | `day-short-month-year` | `day-short-month-year-short-time` | `day-short-month-year-short-time-24` | `day-short-month-year-long-time` | `day-short-month-year-long-time-24` | `long-date` | `long-date-short-time` | `long-date-short-time-24` | `long-date-long-time` | `long-date-long-time-24` | `long-month-year` | `short-month-year` | year
     ): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setDigitSeparator(value: Boolean): Self = StObject.set(x, "digitSeparator", value.asInstanceOf[js.Any])
+    inline def setDigitSeparator(value: Boolean): Self = StObject.set(x, "digitSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitSeparatorUndefined: Self = StObject.set(x, "digitSeparator", js.undefined)
+    inline def setDigitSeparatorUndefined: Self = StObject.set(x, "digitSeparator", js.undefined)
     
-    @scala.inline
-    def setPlaces(value: Double): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+    inline def setPlaces(value: Double): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
+    inline def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
   }
 }

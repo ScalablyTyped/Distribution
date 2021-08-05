@@ -196,8 +196,7 @@ object mod extends Shortcut {
   }
   object Client {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       conn: EngineSocket,
       id: String,
       nsps: StringDictionary[Socket],
@@ -209,26 +208,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setConn(value: EngineSocket): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
+      inline def setConn(value: EngineSocket): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsps(value: StringDictionary[Socket]): Self = StObject.set(x, "nsps", value.asInstanceOf[js.Any])
+      inline def setNsps(value: StringDictionary[Socket]): Self = StObject.set(x, "nsps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockets(value: StringDictionary[Socket]): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
+      inline def setSockets(value: StringDictionary[Socket]): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,8 +313,7 @@ object mod extends Shortcut {
   }
   object Handshake {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       headers: js.Any,
       issued: Double,
@@ -336,32 +327,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Handshake]
     }
     
-    @scala.inline
-    implicit class HandshakeMutableBuilder[Self <: Handshake] (val x: Self) extends AnyVal {
+    extension [Self <: Handshake](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssued(value: Double): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
+      inline def setIssued(value: Double): Self = StObject.set(x, "issued", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdomain(value: Boolean): Self = StObject.set(x, "xdomain", value.asInstanceOf[js.Any])
+      inline def setXdomain(value: Boolean): Self = StObject.set(x, "xdomain", value.asInstanceOf[js.Any])
     }
   }
   
@@ -496,20 +478,16 @@ object mod extends Shortcut {
   }
   object Room {
     
-    @scala.inline
-    def apply(length: Double, sockets: StringDictionary[Boolean]): Room = {
+    inline def apply(length: Double, sockets: StringDictionary[Boolean]): Room = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], sockets = sockets.asInstanceOf[js.Any])
       __obj.asInstanceOf[Room]
     }
     
-    @scala.inline
-    implicit class RoomMutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
+    extension [Self <: Room](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSockets(value: StringDictionary[Boolean]): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
+      inline def setSockets(value: StringDictionary[Boolean]): Self = StObject.set(x, "sockets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -933,35 +911,26 @@ object mod extends Shortcut {
   }
   object ServerOptions {
     
-    @scala.inline
-    def apply(): ServerOptions = {
+    inline def apply(): ServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerOptions]
     }
     
-    @scala.inline
-    implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServerOptions](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: Adapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: Adapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setOrigins(value: String | js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: String | js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+      inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
       
-      @scala.inline
-      def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
       
-      @scala.inline
-      def setServeClient(value: Boolean): Self = StObject.set(x, "serveClient", value.asInstanceOf[js.Any])
+      inline def setServeClient(value: Boolean): Self = StObject.set(x, "serveClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServeClientUndefined: Self = StObject.set(x, "serveClient", js.undefined)
+      inline def setServeClientUndefined: Self = StObject.set(x, "serveClient", js.undefined)
     }
   }
   

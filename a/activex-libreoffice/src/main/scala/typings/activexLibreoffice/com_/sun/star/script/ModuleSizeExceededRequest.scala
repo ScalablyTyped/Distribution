@@ -17,16 +17,13 @@ trait ModuleSizeExceededRequest
 }
 object ModuleSizeExceededRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, Names: SafeArray[String]): ModuleSizeExceededRequest = {
+  inline def apply(Context: XInterface, Message: String, Names: SafeArray[String]): ModuleSizeExceededRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Names = Names.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleSizeExceededRequest]
   }
   
-  @scala.inline
-  implicit class ModuleSizeExceededRequestMutableBuilder[Self <: ModuleSizeExceededRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleSizeExceededRequest](x: Self) {
     
-    @scala.inline
-    def setNames(value: SafeArray[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: SafeArray[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
   }
 }

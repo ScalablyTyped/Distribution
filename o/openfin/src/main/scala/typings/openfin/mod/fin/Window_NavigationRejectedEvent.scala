@@ -28,28 +28,21 @@ trait Window_NavigationRejectedEvent extends StObject {
 }
 object Window_NavigationRejectedEvent {
   
-  @scala.inline
-  def apply(name: String, sourceName: String, url: String, uuid: String): Window_NavigationRejectedEvent = {
+  inline def apply(name: String, sourceName: String, url: String, uuid: String): Window_NavigationRejectedEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sourceName = sourceName.asInstanceOf[js.Any], topic = "navigation-rejected", url = url.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window_NavigationRejectedEvent]
   }
   
-  @scala.inline
-  implicit class Window_NavigationRejectedEventMutableBuilder[Self <: Window_NavigationRejectedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: Window_NavigationRejectedEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: `navigation-rejected`): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: `navigation-rejected`): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

@@ -12,14 +12,14 @@ object immutableServiceMod {
   @js.native
   class ImmutableService () extends StObject {
     
-    var clientSideRowModel: js.Any = js.native
+    /* private */ var clientSideRowModel: js.Any = js.native
     
     def createTransactionForRowData(data: js.Array[js.Any]): js.Tuple2[RowDataTransaction, StringDictionary[Double]] = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
   }
 }

@@ -12,8 +12,7 @@ trait HighlightProps[TDoc]
      with HighlightPassedThru[TDoc]
 object HighlightProps {
   
-  @scala.inline
-  def apply[TDoc](attribute: String, highlight: HighlightProperty[TDoc] => js.Array[IsHighlighted], hit: Hit[TDoc]): HighlightProps[TDoc] = {
+  inline def apply[TDoc](attribute: String, highlight: HighlightProperty[TDoc] => js.Array[IsHighlighted], hit: Hit[TDoc]): HighlightProps[TDoc] = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], highlight = js.Any.fromFunction1(highlight), hit = hit.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightProps[TDoc]]
   }

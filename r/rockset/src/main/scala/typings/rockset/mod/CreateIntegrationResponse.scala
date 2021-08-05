@@ -11,19 +11,15 @@ trait CreateIntegrationResponse extends StObject {
 }
 object CreateIntegrationResponse {
   
-  @scala.inline
-  def apply(): CreateIntegrationResponse = {
+  inline def apply(): CreateIntegrationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateIntegrationResponse]
   }
   
-  @scala.inline
-  implicit class CreateIntegrationResponseMutableBuilder[Self <: CreateIntegrationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIntegrationResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: Integration): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Integration): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

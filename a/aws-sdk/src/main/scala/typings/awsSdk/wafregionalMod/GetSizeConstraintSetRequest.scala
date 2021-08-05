@@ -13,16 +13,13 @@ trait GetSizeConstraintSetRequest extends StObject {
 }
 object GetSizeConstraintSetRequest {
   
-  @scala.inline
-  def apply(SizeConstraintSetId: ResourceId): GetSizeConstraintSetRequest = {
+  inline def apply(SizeConstraintSetId: ResourceId): GetSizeConstraintSetRequest = {
     val __obj = js.Dynamic.literal(SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSizeConstraintSetRequest]
   }
   
-  @scala.inline
-  implicit class GetSizeConstraintSetRequestMutableBuilder[Self <: GetSizeConstraintSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSizeConstraintSetRequest](x: Self) {
     
-    @scala.inline
-    def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
   }
 }

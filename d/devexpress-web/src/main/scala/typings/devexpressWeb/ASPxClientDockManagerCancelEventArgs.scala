@@ -18,16 +18,13 @@ trait ASPxClientDockManagerCancelEventArgs
 }
 object ASPxClientDockManagerCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, panel: ASPxClientDockPanel): ASPxClientDockManagerCancelEventArgs = {
+  inline def apply(cancel: Boolean, panel: ASPxClientDockPanel): ASPxClientDockManagerCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDockManagerCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDockManagerCancelEventArgsMutableBuilder[Self <: ASPxClientDockManagerCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDockManagerCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setPanel(value: ASPxClientDockPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: ASPxClientDockPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
   }
 }

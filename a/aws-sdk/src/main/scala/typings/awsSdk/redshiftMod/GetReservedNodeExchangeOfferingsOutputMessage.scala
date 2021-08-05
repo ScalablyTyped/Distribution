@@ -18,28 +18,21 @@ trait GetReservedNodeExchangeOfferingsOutputMessage extends StObject {
 }
 object GetReservedNodeExchangeOfferingsOutputMessage {
   
-  @scala.inline
-  def apply(): GetReservedNodeExchangeOfferingsOutputMessage = {
+  inline def apply(): GetReservedNodeExchangeOfferingsOutputMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReservedNodeExchangeOfferingsOutputMessage]
   }
   
-  @scala.inline
-  implicit class GetReservedNodeExchangeOfferingsOutputMessageMutableBuilder[Self <: GetReservedNodeExchangeOfferingsOutputMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GetReservedNodeExchangeOfferingsOutputMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReservedNodeOfferings(value: ReservedNodeOfferingList): Self = StObject.set(x, "ReservedNodeOfferings", value.asInstanceOf[js.Any])
+    inline def setReservedNodeOfferings(value: ReservedNodeOfferingList): Self = StObject.set(x, "ReservedNodeOfferings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedNodeOfferingsUndefined: Self = StObject.set(x, "ReservedNodeOfferings", js.undefined)
+    inline def setReservedNodeOfferingsUndefined: Self = StObject.set(x, "ReservedNodeOfferings", js.undefined)
     
-    @scala.inline
-    def setReservedNodeOfferingsVarargs(value: ReservedNodeOffering*): Self = StObject.set(x, "ReservedNodeOfferings", js.Array(value :_*))
+    inline def setReservedNodeOfferingsVarargs(value: ReservedNodeOffering*): Self = StObject.set(x, "ReservedNodeOfferings", js.Array(value :_*))
   }
 }

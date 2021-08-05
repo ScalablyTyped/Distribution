@@ -18,37 +18,27 @@ trait PartialSwatchesPickerStyl extends StObject {
 }
 object PartialSwatchesPickerStyl {
   
-  @scala.inline
-  def apply(): PartialSwatchesPickerStyl = {
+  inline def apply(): PartialSwatchesPickerStyl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSwatchesPickerStyl]
   }
   
-  @scala.inline
-  implicit class PartialSwatchesPickerStylMutableBuilder[Self <: PartialSwatchesPickerStyl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSwatchesPickerStyl](x: Self) {
     
-    @scala.inline
-    def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setOverflow(value: CSSProperties): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: CSSProperties): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    @scala.inline
-    def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
+    inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
   }
 }

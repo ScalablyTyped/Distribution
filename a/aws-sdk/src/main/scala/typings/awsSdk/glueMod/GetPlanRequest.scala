@@ -38,49 +38,35 @@ trait GetPlanRequest extends StObject {
 }
 object GetPlanRequest {
   
-  @scala.inline
-  def apply(Mapping: MappingList, Source: CatalogEntry): GetPlanRequest = {
+  inline def apply(Mapping: MappingList, Source: CatalogEntry): GetPlanRequest = {
     val __obj = js.Dynamic.literal(Mapping = Mapping.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPlanRequest]
   }
   
-  @scala.inline
-  implicit class GetPlanRequestMutableBuilder[Self <: GetPlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPlanRequest](x: Self) {
     
-    @scala.inline
-    def setAdditionalPlanOptionsMap(value: AdditionalPlanOptionsMap): Self = StObject.set(x, "AdditionalPlanOptionsMap", value.asInstanceOf[js.Any])
+    inline def setAdditionalPlanOptionsMap(value: AdditionalPlanOptionsMap): Self = StObject.set(x, "AdditionalPlanOptionsMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalPlanOptionsMapUndefined: Self = StObject.set(x, "AdditionalPlanOptionsMap", js.undefined)
+    inline def setAdditionalPlanOptionsMapUndefined: Self = StObject.set(x, "AdditionalPlanOptionsMap", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setMapping(value: MappingList): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: MappingList): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingVarargs(value: MappingEntry*): Self = StObject.set(x, "Mapping", js.Array(value :_*))
+    inline def setMappingVarargs(value: MappingEntry*): Self = StObject.set(x, "Mapping", js.Array(value :_*))
     
-    @scala.inline
-    def setSinks(value: CatalogEntries): Self = StObject.set(x, "Sinks", value.asInstanceOf[js.Any])
+    inline def setSinks(value: CatalogEntries): Self = StObject.set(x, "Sinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinksUndefined: Self = StObject.set(x, "Sinks", js.undefined)
+    inline def setSinksUndefined: Self = StObject.set(x, "Sinks", js.undefined)
     
-    @scala.inline
-    def setSinksVarargs(value: CatalogEntry*): Self = StObject.set(x, "Sinks", js.Array(value :_*))
+    inline def setSinksVarargs(value: CatalogEntry*): Self = StObject.set(x, "Sinks", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: CatalogEntry): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: CatalogEntry): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

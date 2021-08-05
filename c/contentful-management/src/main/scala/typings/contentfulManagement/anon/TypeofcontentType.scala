@@ -16,8 +16,7 @@ trait TypeofcontentType extends StObject {
 }
 object TypeofcontentType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapContentType: (AxiosInstance, ContentTypeProps) => typings.contentfulManagement.contentTypeMod.ContentType,
     wrapContentTypeCollection: (AxiosInstance, CollectionProp[ContentTypeProps]) => Collection[typings.contentfulManagement.contentTypeMod.ContentType, ContentTypeProps]
   ): TypeofcontentType = {
@@ -25,16 +24,13 @@ object TypeofcontentType {
     __obj.asInstanceOf[TypeofcontentType]
   }
   
-  @scala.inline
-  implicit class TypeofcontentTypeMutableBuilder[Self <: TypeofcontentType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofcontentType](x: Self) {
     
-    @scala.inline
-    def setWrapContentType(
+    inline def setWrapContentType(
       value: (AxiosInstance, ContentTypeProps) => typings.contentfulManagement.contentTypeMod.ContentType
     ): Self = StObject.set(x, "wrapContentType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapContentTypeCollection(
+    inline def setWrapContentTypeCollection(
       value: (AxiosInstance, CollectionProp[ContentTypeProps]) => Collection[typings.contentfulManagement.contentTypeMod.ContentType, ContentTypeProps]
     ): Self = StObject.set(x, "wrapContentTypeCollection", js.Any.fromFunction2(value))
   }

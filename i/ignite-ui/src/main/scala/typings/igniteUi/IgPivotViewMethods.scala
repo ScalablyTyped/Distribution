@@ -49,8 +49,7 @@ trait IgPivotViewMethods extends StObject {
 }
 object IgPivotViewMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: js.Object => Unit,
@@ -63,28 +62,20 @@ object IgPivotViewMethods {
     __obj.asInstanceOf[IgPivotViewMethods]
   }
   
-  @scala.inline
-  implicit class IgPivotViewMethodsMutableBuilder[Self <: IgPivotViewMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotViewMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
+    inline def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataSelector(value: () => js.Object): Self = StObject.set(x, "dataSelector", js.Any.fromFunction0(value))
+    inline def setDataSelector(value: () => js.Object): Self = StObject.set(x, "dataSelector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPivotGrid(value: () => js.Object): Self = StObject.set(x, "pivotGrid", js.Any.fromFunction0(value))
+    inline def setPivotGrid(value: () => js.Object): Self = StObject.set(x, "pivotGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSplitter(value: () => js.Object): Self = StObject.set(x, "splitter", js.Any.fromFunction0(value))
+    inline def setSplitter(value: () => js.Object): Self = StObject.set(x, "splitter", js.Any.fromFunction0(value))
   }
 }

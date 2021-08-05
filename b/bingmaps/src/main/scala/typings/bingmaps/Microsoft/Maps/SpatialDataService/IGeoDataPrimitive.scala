@@ -26,25 +26,19 @@ trait IGeoDataPrimitive extends StObject {
 }
 object IGeoDataPrimitive {
   
-  @scala.inline
-  def apply(NumPoints: String, PrimitiveID: String, Shape: String, SourceID: String): IGeoDataPrimitive = {
+  inline def apply(NumPoints: String, PrimitiveID: String, Shape: String, SourceID: String): IGeoDataPrimitive = {
     val __obj = js.Dynamic.literal(NumPoints = NumPoints.asInstanceOf[js.Any], PrimitiveID = PrimitiveID.asInstanceOf[js.Any], Shape = Shape.asInstanceOf[js.Any], SourceID = SourceID.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoDataPrimitive]
   }
   
-  @scala.inline
-  implicit class IGeoDataPrimitiveMutableBuilder[Self <: IGeoDataPrimitive] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoDataPrimitive](x: Self) {
     
-    @scala.inline
-    def setNumPoints(value: String): Self = StObject.set(x, "NumPoints", value.asInstanceOf[js.Any])
+    inline def setNumPoints(value: String): Self = StObject.set(x, "NumPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveID(value: String): Self = StObject.set(x, "PrimitiveID", value.asInstanceOf[js.Any])
+    inline def setPrimitiveID(value: String): Self = StObject.set(x, "PrimitiveID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: String): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: String): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
+    inline def setSourceID(value: String): Self = StObject.set(x, "SourceID", value.asInstanceOf[js.Any])
   }
 }

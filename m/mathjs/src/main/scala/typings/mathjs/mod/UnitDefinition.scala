@@ -16,40 +16,29 @@ trait UnitDefinition extends StObject {
 }
 object UnitDefinition {
   
-  @scala.inline
-  def apply(): UnitDefinition = {
+  inline def apply(): UnitDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnitDefinition]
   }
   
-  @scala.inline
-  implicit class UnitDefinitionMutableBuilder[Self <: UnitDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: UnitDefinition](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setDefinition(value: String | Unit): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: String | Unit): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPrefixes(value: String): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    inline def setPrefixes(value: String): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+    inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
   }
 }

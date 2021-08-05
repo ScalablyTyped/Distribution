@@ -12,19 +12,15 @@ trait Scanbeam extends StObject {
 }
 object Scanbeam {
   
-  @scala.inline
-  def apply(Y: Double, next: TEdge): Scanbeam = {
+  inline def apply(Y: Double, next: TEdge): Scanbeam = {
     val __obj = js.Dynamic.literal(Y = Y.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scanbeam]
   }
   
-  @scala.inline
-  implicit class ScanbeamMutableBuilder[Self <: Scanbeam] (val x: Self) extends AnyVal {
+  extension [Self <: Scanbeam](x: Self) {
     
-    @scala.inline
-    def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

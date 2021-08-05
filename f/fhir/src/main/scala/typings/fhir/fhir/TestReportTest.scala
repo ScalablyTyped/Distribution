@@ -38,43 +38,31 @@ trait TestReportTest
 }
 object TestReportTest {
   
-  @scala.inline
-  def apply(action: js.Array[TestReportTestAction]): TestReportTest = {
+  inline def apply(action: js.Array[TestReportTestAction]): TestReportTest = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReportTest]
   }
   
-  @scala.inline
-  implicit class TestReportTestMutableBuilder[Self <: TestReportTest] (val x: Self) extends AnyVal {
+  extension [Self <: TestReportTest](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Array[TestReportTestAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Array[TestReportTestAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionVarargs(value: TestReportTestAction*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: TestReportTestAction*): Self = StObject.set(x, "action", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
   }
 }

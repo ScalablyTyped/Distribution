@@ -13,19 +13,15 @@ trait GetSqlInjectionMatchSetResponse extends StObject {
 }
 object GetSqlInjectionMatchSetResponse {
   
-  @scala.inline
-  def apply(): GetSqlInjectionMatchSetResponse = {
+  inline def apply(): GetSqlInjectionMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSqlInjectionMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class GetSqlInjectionMatchSetResponseMutableBuilder[Self <: GetSqlInjectionMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSqlInjectionMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setSqlInjectionMatchSet(value: SqlInjectionMatchSet): Self = StObject.set(x, "SqlInjectionMatchSet", value.asInstanceOf[js.Any])
+    inline def setSqlInjectionMatchSet(value: SqlInjectionMatchSet): Self = StObject.set(x, "SqlInjectionMatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlInjectionMatchSetUndefined: Self = StObject.set(x, "SqlInjectionMatchSet", js.undefined)
+    inline def setSqlInjectionMatchSetUndefined: Self = StObject.set(x, "SqlInjectionMatchSet", js.undefined)
   }
 }

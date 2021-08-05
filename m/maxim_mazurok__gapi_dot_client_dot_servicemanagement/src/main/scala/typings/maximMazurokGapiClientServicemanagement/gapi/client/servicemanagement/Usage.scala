@@ -21,37 +21,27 @@ trait Usage extends StObject {
 }
 object Usage {
   
-  @scala.inline
-  def apply(): Usage = {
+  inline def apply(): Usage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Usage]
   }
   
-  @scala.inline
-  implicit class UsageMutableBuilder[Self <: Usage] (val x: Self) extends AnyVal {
+  extension [Self <: Usage](x: Self) {
     
-    @scala.inline
-    def setProducerNotificationChannel(value: String): Self = StObject.set(x, "producerNotificationChannel", value.asInstanceOf[js.Any])
+    inline def setProducerNotificationChannel(value: String): Self = StObject.set(x, "producerNotificationChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerNotificationChannelUndefined: Self = StObject.set(x, "producerNotificationChannel", js.undefined)
+    inline def setProducerNotificationChannelUndefined: Self = StObject.set(x, "producerNotificationChannel", js.undefined)
     
-    @scala.inline
-    def setRequirements(value: js.Array[String]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+    inline def setRequirements(value: js.Array[String]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+    inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
-    @scala.inline
-    def setRequirementsVarargs(value: String*): Self = StObject.set(x, "requirements", js.Array(value :_*))
+    inline def setRequirementsVarargs(value: String*): Self = StObject.set(x, "requirements", js.Array(value :_*))
     
-    @scala.inline
-    def setRules(value: js.Array[UsageRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[UsageRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: UsageRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: UsageRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

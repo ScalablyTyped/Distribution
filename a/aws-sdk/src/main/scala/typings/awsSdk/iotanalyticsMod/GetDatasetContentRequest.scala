@@ -18,22 +18,17 @@ trait GetDatasetContentRequest extends StObject {
 }
 object GetDatasetContentRequest {
   
-  @scala.inline
-  def apply(datasetName: DatasetName): GetDatasetContentRequest = {
+  inline def apply(datasetName: DatasetName): GetDatasetContentRequest = {
     val __obj = js.Dynamic.literal(datasetName = datasetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDatasetContentRequest]
   }
   
-  @scala.inline
-  implicit class GetDatasetContentRequestMutableBuilder[Self <: GetDatasetContentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDatasetContentRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "datasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionId(value: DatasetContentVersion): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DatasetContentVersion): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

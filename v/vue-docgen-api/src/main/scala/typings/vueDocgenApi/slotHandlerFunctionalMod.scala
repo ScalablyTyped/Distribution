@@ -13,8 +13,7 @@ object slotHandlerFunctionalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait TypedParamTag
     extends StObject
@@ -25,18 +24,15 @@ object slotHandlerFunctionalMod {
   }
   object TypedParamTag {
     
-    @scala.inline
-    def apply(title: String, `type`: ParamType): TypedParamTag = {
+    inline def apply(title: String, `type`: ParamType): TypedParamTag = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypedParamTag]
     }
     
-    @scala.inline
-    implicit class TypedParamTagMutableBuilder[Self <: TypedParamTag] (val x: Self) extends AnyVal {
+    extension [Self <: TypedParamTag](x: Self) {
       
-      @scala.inline
-      def setType(value: ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

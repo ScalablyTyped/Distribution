@@ -38,49 +38,35 @@ trait EvaluationResult extends StObject {
 }
 object EvaluationResult {
   
-  @scala.inline
-  def apply(): EvaluationResult = {
+  inline def apply(): EvaluationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  @scala.inline
-  implicit class EvaluationResultMutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluationResult](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: StringWithCharLimit256): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: StringWithCharLimit256): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationUndefined: Self = StObject.set(x, "Annotation", js.undefined)
+    inline def setAnnotationUndefined: Self = StObject.set(x, "Annotation", js.undefined)
     
-    @scala.inline
-    def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
+    inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
-    @scala.inline
-    def setConfigRuleInvokedTime(value: Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
+    inline def setConfigRuleInvokedTime(value: Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleInvokedTimeUndefined: Self = StObject.set(x, "ConfigRuleInvokedTime", js.undefined)
+    inline def setConfigRuleInvokedTimeUndefined: Self = StObject.set(x, "ConfigRuleInvokedTime", js.undefined)
     
-    @scala.inline
-    def setEvaluationResultIdentifier(value: EvaluationResultIdentifier): Self = StObject.set(x, "EvaluationResultIdentifier", value.asInstanceOf[js.Any])
+    inline def setEvaluationResultIdentifier(value: EvaluationResultIdentifier): Self = StObject.set(x, "EvaluationResultIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationResultIdentifierUndefined: Self = StObject.set(x, "EvaluationResultIdentifier", js.undefined)
+    inline def setEvaluationResultIdentifierUndefined: Self = StObject.set(x, "EvaluationResultIdentifier", js.undefined)
     
-    @scala.inline
-    def setResultRecordedTime(value: Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
+    inline def setResultRecordedTime(value: Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultRecordedTimeUndefined: Self = StObject.set(x, "ResultRecordedTime", js.undefined)
+    inline def setResultRecordedTimeUndefined: Self = StObject.set(x, "ResultRecordedTime", js.undefined)
     
-    @scala.inline
-    def setResultToken(value: String): Self = StObject.set(x, "ResultToken", value.asInstanceOf[js.Any])
+    inline def setResultToken(value: String): Self = StObject.set(x, "ResultToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultTokenUndefined: Self = StObject.set(x, "ResultToken", js.undefined)
+    inline def setResultTokenUndefined: Self = StObject.set(x, "ResultToken", js.undefined)
   }
 }

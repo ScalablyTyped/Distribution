@@ -16,8 +16,7 @@ trait PaymentMethodLimits extends StObject {
 }
 object PaymentMethodLimits {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buy: js.Array[PaymentMethodLimit],
     deposit: js.Array[PaymentMethodLimit],
     instant_buy: js.Array[PaymentMethodLimit],
@@ -27,31 +26,22 @@ object PaymentMethodLimits {
     __obj.asInstanceOf[PaymentMethodLimits]
   }
   
-  @scala.inline
-  implicit class PaymentMethodLimitsMutableBuilder[Self <: PaymentMethodLimits] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethodLimits](x: Self) {
     
-    @scala.inline
-    def setBuy(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "buy", value.asInstanceOf[js.Any])
+    inline def setBuy(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "buy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "buy", js.Array(value :_*))
+    inline def setBuyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "buy", js.Array(value :_*))
     
-    @scala.inline
-    def setDeposit(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "deposit", value.asInstanceOf[js.Any])
+    inline def setDeposit(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "deposit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "deposit", js.Array(value :_*))
+    inline def setDepositVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "deposit", js.Array(value :_*))
     
-    @scala.inline
-    def setInstant_buy(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "instant_buy", value.asInstanceOf[js.Any])
+    inline def setInstant_buy(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "instant_buy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstant_buyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "instant_buy", js.Array(value :_*))
+    inline def setInstant_buyVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "instant_buy", js.Array(value :_*))
     
-    @scala.inline
-    def setSell(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "sell", value.asInstanceOf[js.Any])
+    inline def setSell(value: js.Array[PaymentMethodLimit]): Self = StObject.set(x, "sell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "sell", js.Array(value :_*))
+    inline def setSellVarargs(value: PaymentMethodLimit*): Self = StObject.set(x, "sell", js.Array(value :_*))
   }
 }

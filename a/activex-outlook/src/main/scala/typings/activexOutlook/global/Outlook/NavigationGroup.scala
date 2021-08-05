@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.NavigationGroup")
 @js.native
-class NavigationGroup protected ()
+/* private */ class NavigationGroup ()
   extends StObject
      with typings.activexOutlook.Outlook.NavigationGroup {
   
@@ -27,7 +27,7 @@ class NavigationGroup protected ()
   /* CompleteClass */
   override val NavigationFolders: typings.activexOutlook.Outlook.NavigationFolders = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.NavigationGroup_typekey")
   var OutlookDotNavigationGroup_typekey: typings.activexOutlook.Outlook.NavigationGroup = js.native
   

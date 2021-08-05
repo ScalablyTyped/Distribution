@@ -10,6 +10,5 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stringToChars(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToChars")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def stringToChars(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToChars")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

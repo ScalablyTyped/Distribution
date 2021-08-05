@@ -21,13 +21,11 @@ object EnumFormat {
   @JSImport("mendixmodelsdk", "pages.EnumFormat.Image")
   @js.native
   def Image: typings.mendixmodelsdk.pagesMod.pages.EnumFormat = js.native
-  @scala.inline
-  def Image_=(x: typings.mendixmodelsdk.pagesMod.pages.EnumFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
+  inline def Image_=(x: typings.mendixmodelsdk.pagesMod.pages.EnumFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Image")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.EnumFormat.Text")
   @js.native
   def Text: typings.mendixmodelsdk.pagesMod.pages.EnumFormat = js.native
-  @scala.inline
-  def Text_=(x: typings.mendixmodelsdk.pagesMod.pages.EnumFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
+  inline def Text_=(x: typings.mendixmodelsdk.pagesMod.pages.EnumFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

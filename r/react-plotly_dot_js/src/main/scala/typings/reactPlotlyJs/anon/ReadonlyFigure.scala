@@ -17,34 +17,25 @@ trait ReadonlyFigure extends StObject {
 }
 object ReadonlyFigure {
   
-  @scala.inline
-  def apply(data: js.Array[Data], layout: PartialLayout): ReadonlyFigure = {
+  inline def apply(data: js.Array[Data], layout: PartialLayout): ReadonlyFigure = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyFigure]
   }
   
-  @scala.inline
-  implicit class ReadonlyFigureMutableBuilder[Self <: ReadonlyFigure] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyFigure](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesNull: Self = StObject.set(x, "frames", null)
+    inline def setFramesNull: Self = StObject.set(x, "frames", null)
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

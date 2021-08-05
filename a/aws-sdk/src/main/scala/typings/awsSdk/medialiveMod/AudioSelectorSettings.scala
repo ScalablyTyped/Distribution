@@ -14,31 +14,23 @@ trait AudioSelectorSettings extends StObject {
 }
 object AudioSelectorSettings {
   
-  @scala.inline
-  def apply(): AudioSelectorSettings = {
+  inline def apply(): AudioSelectorSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioSelectorSettings]
   }
   
-  @scala.inline
-  implicit class AudioSelectorSettingsMutableBuilder[Self <: AudioSelectorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AudioSelectorSettings](x: Self) {
     
-    @scala.inline
-    def setAudioLanguageSelection(value: AudioLanguageSelection): Self = StObject.set(x, "AudioLanguageSelection", value.asInstanceOf[js.Any])
+    inline def setAudioLanguageSelection(value: AudioLanguageSelection): Self = StObject.set(x, "AudioLanguageSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioLanguageSelectionUndefined: Self = StObject.set(x, "AudioLanguageSelection", js.undefined)
+    inline def setAudioLanguageSelectionUndefined: Self = StObject.set(x, "AudioLanguageSelection", js.undefined)
     
-    @scala.inline
-    def setAudioPidSelection(value: AudioPidSelection): Self = StObject.set(x, "AudioPidSelection", value.asInstanceOf[js.Any])
+    inline def setAudioPidSelection(value: AudioPidSelection): Self = StObject.set(x, "AudioPidSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioPidSelectionUndefined: Self = StObject.set(x, "AudioPidSelection", js.undefined)
+    inline def setAudioPidSelectionUndefined: Self = StObject.set(x, "AudioPidSelection", js.undefined)
     
-    @scala.inline
-    def setAudioTrackSelection(value: AudioTrackSelection): Self = StObject.set(x, "AudioTrackSelection", value.asInstanceOf[js.Any])
+    inline def setAudioTrackSelection(value: AudioTrackSelection): Self = StObject.set(x, "AudioTrackSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioTrackSelectionUndefined: Self = StObject.set(x, "AudioTrackSelection", js.undefined)
+    inline def setAudioTrackSelectionUndefined: Self = StObject.set(x, "AudioTrackSelection", js.undefined)
   }
 }

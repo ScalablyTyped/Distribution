@@ -31,7 +31,7 @@ object reactBuildMod {
   class ReactBuildRunner protected () extends BuildRunner[ReactBuildOptions] {
     def this(e: ReactBuildRunnerDeps) = this()
     
-    @JSName("e")
+    /* protected */ @JSName("e")
     val e_ReactBuildRunner: ReactBuildRunnerDeps = js.native
   }
   
@@ -44,17 +44,14 @@ object reactBuildMod {
   }
   object ReactBuildRunnerDeps {
     
-    @scala.inline
-    def apply(config: IConfig, log: ILogger, project: ReactProject, prompt: PromptModule, shell: IShell): ReactBuildRunnerDeps = {
+    inline def apply(config: IConfig, log: ILogger, project: ReactProject, prompt: PromptModule, shell: IShell): ReactBuildRunnerDeps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactBuildRunnerDeps]
     }
     
-    @scala.inline
-    implicit class ReactBuildRunnerDepsMutableBuilder[Self <: ReactBuildRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactBuildRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setProject(value: ReactProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: ReactProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
   }
 }

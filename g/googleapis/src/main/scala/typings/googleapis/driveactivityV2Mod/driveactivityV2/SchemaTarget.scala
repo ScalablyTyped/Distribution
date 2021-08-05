@@ -26,31 +26,23 @@ trait SchemaTarget extends StObject {
 }
 object SchemaTarget {
   
-  @scala.inline
-  def apply(): SchemaTarget = {
+  inline def apply(): SchemaTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTarget]
   }
   
-  @scala.inline
-  implicit class SchemaTargetMutableBuilder[Self <: SchemaTarget] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTarget](x: Self) {
     
-    @scala.inline
-    def setDriveItem(value: SchemaDriveItem): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
+    inline def setDriveItem(value: SchemaDriveItem): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
+    inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
     
-    @scala.inline
-    def setFileComment(value: SchemaFileComment): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
+    inline def setFileComment(value: SchemaFileComment): Self = StObject.set(x, "fileComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileCommentUndefined: Self = StObject.set(x, "fileComment", js.undefined)
+    inline def setFileCommentUndefined: Self = StObject.set(x, "fileComment", js.undefined)
     
-    @scala.inline
-    def setTeamDrive(value: SchemaTeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
+    inline def setTeamDrive(value: SchemaTeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
+    inline def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait CreateDeliveryStreamOutput extends StObject {
 }
 object CreateDeliveryStreamOutput {
   
-  @scala.inline
-  def apply(): CreateDeliveryStreamOutput = {
+  inline def apply(): CreateDeliveryStreamOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDeliveryStreamOutput]
   }
   
-  @scala.inline
-  implicit class CreateDeliveryStreamOutputMutableBuilder[Self <: CreateDeliveryStreamOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeliveryStreamOutput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamARN(value: DeliveryStreamARN): Self = StObject.set(x, "DeliveryStreamARN", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamARN(value: DeliveryStreamARN): Self = StObject.set(x, "DeliveryStreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamARNUndefined: Self = StObject.set(x, "DeliveryStreamARN", js.undefined)
+    inline def setDeliveryStreamARNUndefined: Self = StObject.set(x, "DeliveryStreamARN", js.undefined)
   }
 }

@@ -18,43 +18,31 @@ trait ISPClientAutoFillData extends StObject {
 }
 object ISPClientAutoFillData {
   
-  @scala.inline
-  def apply(): ISPClientAutoFillData = {
+  inline def apply(): ISPClientAutoFillData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISPClientAutoFillData]
   }
   
-  @scala.inline
-  implicit class ISPClientAutoFillDataMutableBuilder[Self <: ISPClientAutoFillData] (val x: Self) extends AnyVal {
+  extension [Self <: ISPClientAutoFillData](x: Self) {
     
-    @scala.inline
-    def setAutoFillDisplayText(value: String): Self = StObject.set(x, "AutoFillDisplayText", value.asInstanceOf[js.Any])
+    inline def setAutoFillDisplayText(value: String): Self = StObject.set(x, "AutoFillDisplayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillDisplayTextUndefined: Self = StObject.set(x, "AutoFillDisplayText", js.undefined)
+    inline def setAutoFillDisplayTextUndefined: Self = StObject.set(x, "AutoFillDisplayText", js.undefined)
     
-    @scala.inline
-    def setAutoFillKey(value: js.Any): Self = StObject.set(x, "AutoFillKey", value.asInstanceOf[js.Any])
+    inline def setAutoFillKey(value: js.Any): Self = StObject.set(x, "AutoFillKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillKeyUndefined: Self = StObject.set(x, "AutoFillKey", js.undefined)
+    inline def setAutoFillKeyUndefined: Self = StObject.set(x, "AutoFillKey", js.undefined)
     
-    @scala.inline
-    def setAutoFillMenuOptionType(value: Double): Self = StObject.set(x, "AutoFillMenuOptionType", value.asInstanceOf[js.Any])
+    inline def setAutoFillMenuOptionType(value: Double): Self = StObject.set(x, "AutoFillMenuOptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillMenuOptionTypeUndefined: Self = StObject.set(x, "AutoFillMenuOptionType", js.undefined)
+    inline def setAutoFillMenuOptionTypeUndefined: Self = StObject.set(x, "AutoFillMenuOptionType", js.undefined)
     
-    @scala.inline
-    def setAutoFillSubDisplayText(value: String): Self = StObject.set(x, "AutoFillSubDisplayText", value.asInstanceOf[js.Any])
+    inline def setAutoFillSubDisplayText(value: String): Self = StObject.set(x, "AutoFillSubDisplayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillSubDisplayTextUndefined: Self = StObject.set(x, "AutoFillSubDisplayText", js.undefined)
+    inline def setAutoFillSubDisplayTextUndefined: Self = StObject.set(x, "AutoFillSubDisplayText", js.undefined)
     
-    @scala.inline
-    def setAutoFillTitleText(value: String): Self = StObject.set(x, "AutoFillTitleText", value.asInstanceOf[js.Any])
+    inline def setAutoFillTitleText(value: String): Self = StObject.set(x, "AutoFillTitleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFillTitleTextUndefined: Self = StObject.set(x, "AutoFillTitleText", js.undefined)
+    inline def setAutoFillTitleTextUndefined: Self = StObject.set(x, "AutoFillTitleText", js.undefined)
   }
 }

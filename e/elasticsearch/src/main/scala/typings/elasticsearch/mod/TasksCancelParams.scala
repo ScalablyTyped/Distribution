@@ -20,49 +20,35 @@ trait TasksCancelParams
 }
 object TasksCancelParams {
   
-  @scala.inline
-  def apply(): TasksCancelParams = {
+  inline def apply(): TasksCancelParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TasksCancelParams]
   }
   
-  @scala.inline
-  implicit class TasksCancelParamsMutableBuilder[Self <: TasksCancelParams] (val x: Self) extends AnyVal {
+  extension [Self <: TasksCancelParams](x: Self) {
     
-    @scala.inline
-    def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
     
-    @scala.inline
-    def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+    inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
-    @scala.inline
-    def setParentTask(value: String): Self = StObject.set(x, "parentTask", value.asInstanceOf[js.Any])
+    inline def setParentTask(value: String): Self = StObject.set(x, "parentTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTaskUndefined: Self = StObject.set(x, "parentTask", js.undefined)
+    inline def setParentTaskUndefined: Self = StObject.set(x, "parentTask", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

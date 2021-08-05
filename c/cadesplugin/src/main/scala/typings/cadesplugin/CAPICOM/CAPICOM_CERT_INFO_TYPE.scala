@@ -28,31 +28,23 @@ trait CAPICOM_CERT_INFO_TYPE
 }
 object CAPICOM_CERT_INFO_TYPE {
   
-  @scala.inline
-  def apply(): CAPICOM_CERT_INFO_TYPE = {
+  inline def apply(): CAPICOM_CERT_INFO_TYPE = {
     val __obj = js.Dynamic.literal(CAPICOM_CERT_INFO_ISSUER_DNS_NAME = 7, CAPICOM_CERT_INFO_ISSUER_EMAIL_NAME = 3, CAPICOM_CERT_INFO_ISSUER_SIMPLE_NAME = 1, CAPICOM_CERT_INFO_ISSUER_UPN = 5, CAPICOM_CERT_INFO_SUBJECT_DNS_NAME = 6, CAPICOM_CERT_INFO_SUBJECT_EMAIL_NAME = 2, CAPICOM_CERT_INFO_SUBJECT_SIMPLE_NAME = 0, CAPICOM_CERT_INFO_SUBJECT_UPN = 4)
     __obj.asInstanceOf[CAPICOM_CERT_INFO_TYPE]
   }
   
-  @scala.inline
-  implicit class CAPICOM_CERT_INFO_TYPEMutableBuilder[Self <: CAPICOM_CERT_INFO_TYPE] (val x: Self) extends AnyVal {
+  extension [Self <: CAPICOM_CERT_INFO_TYPE](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_CERT_INFO_ISSUER_DNS_NAME(value: `7`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_DNS_NAME", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERT_INFO_ISSUER_DNS_NAME(value: `7`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_DNS_NAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CERT_INFO_ISSUER_EMAIL_NAME(value: `3`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_EMAIL_NAME", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERT_INFO_ISSUER_EMAIL_NAME(value: `3`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_EMAIL_NAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CERT_INFO_ISSUER_UPN(value: `5`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_UPN", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERT_INFO_ISSUER_UPN(value: `5`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_UPN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CERT_INFO_SUBJECT_DNS_NAME(value: `6`): Self = StObject.set(x, "CAPICOM_CERT_INFO_SUBJECT_DNS_NAME", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERT_INFO_SUBJECT_DNS_NAME(value: `6`): Self = StObject.set(x, "CAPICOM_CERT_INFO_SUBJECT_DNS_NAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CERT_INFO_SUBJECT_EMAIL_NAME(value: `2`): Self = StObject.set(x, "CAPICOM_CERT_INFO_SUBJECT_EMAIL_NAME", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERT_INFO_SUBJECT_EMAIL_NAME(value: `2`): Self = StObject.set(x, "CAPICOM_CERT_INFO_SUBJECT_EMAIL_NAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPICOM_CERT_INFO_SUBJECT_UPN(value: `4`): Self = StObject.set(x, "CAPICOM_CERT_INFO_SUBJECT_UPN", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_CERT_INFO_SUBJECT_UPN(value: `4`): Self = StObject.set(x, "CAPICOM_CERT_INFO_SUBJECT_UPN", value.asInstanceOf[js.Any])
   }
 }

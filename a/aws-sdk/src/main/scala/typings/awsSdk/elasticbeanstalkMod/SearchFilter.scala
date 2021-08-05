@@ -23,34 +23,25 @@ trait SearchFilter extends StObject {
 }
 object SearchFilter {
   
-  @scala.inline
-  def apply(): SearchFilter = {
+  inline def apply(): SearchFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchFilter]
   }
   
-  @scala.inline
-  implicit class SearchFilterMutableBuilder[Self <: SearchFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFilter](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: SearchFilterAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: SearchFilterAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
-    @scala.inline
-    def setOperator(value: SearchFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: SearchFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
     
-    @scala.inline
-    def setValues(value: SearchFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SearchFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: SearchFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SearchFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

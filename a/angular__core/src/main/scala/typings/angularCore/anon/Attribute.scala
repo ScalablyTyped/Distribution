@@ -36,43 +36,31 @@ trait Attribute extends StObject {
 }
 object Attribute {
   
-  @scala.inline
-  def apply(): Attribute = {
+  inline def apply(): Attribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attribute]
   }
   
-  @scala.inline
-  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+  extension [Self <: Attribute](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String | js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String | js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setHost(value: `true`): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: `true`): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setSelf(value: `true`): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: `true`): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
+    inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
     
-    @scala.inline
-    def setSkipSelf(value: `true`): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
+    inline def setSkipSelf(value: `true`): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipSelfUndefined: Self = StObject.set(x, "skipSelf", js.undefined)
+    inline def setSkipSelfUndefined: Self = StObject.set(x, "skipSelf", js.undefined)
   }
 }

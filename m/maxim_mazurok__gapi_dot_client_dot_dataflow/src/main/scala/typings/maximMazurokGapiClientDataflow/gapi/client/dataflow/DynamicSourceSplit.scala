@@ -14,25 +14,19 @@ trait DynamicSourceSplit extends StObject {
 }
 object DynamicSourceSplit {
   
-  @scala.inline
-  def apply(): DynamicSourceSplit = {
+  inline def apply(): DynamicSourceSplit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicSourceSplit]
   }
   
-  @scala.inline
-  implicit class DynamicSourceSplitMutableBuilder[Self <: DynamicSourceSplit] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicSourceSplit](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: DerivedSource): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: DerivedSource): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setResidual(value: DerivedSource): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
+    inline def setResidual(value: DerivedSource): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
+    inline def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
   }
 }

@@ -19,19 +19,15 @@ trait OpenAddressConfig
 }
 object OpenAddressConfig {
   
-  @scala.inline
-  def apply(): OpenAddressConfig = {
+  inline def apply(): OpenAddressConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenAddressConfig]
   }
   
-  @scala.inline
-  implicit class OpenAddressConfigMutableBuilder[Self <: OpenAddressConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OpenAddressConfig](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ OpenAddressResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ OpenAddressResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

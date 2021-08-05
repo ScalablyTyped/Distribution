@@ -47,10 +47,8 @@ object CommandGenerateSnippet {
     * @returns CommandGenerateSnippet instance
     */
   /* static member */
-  @scala.inline
-  def create(): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandGenerateSnippet]
-  @scala.inline
-  def create(properties: ICommandGenerateSnippet): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  inline def create(): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CommandGenerateSnippet]
+  inline def create(properties: ICommandGenerateSnippet): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Decodes a CommandGenerateSnippet message from the specified reader or buffer.
@@ -61,14 +59,10 @@ object CommandGenerateSnippet {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
-  @scala.inline
-  def decode(reader: Reader, length: Double): CommandGenerateSnippet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandGenerateSnippet]
-  @scala.inline
-  def decode(reader: Uint8Array): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): CommandGenerateSnippet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandGenerateSnippet]
+  inline def decode(reader: Reader): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  inline def decode(reader: Reader, length: Double): CommandGenerateSnippet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandGenerateSnippet]
+  inline def decode(reader: Uint8Array): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  inline def decode(reader: Uint8Array, length: Double): CommandGenerateSnippet = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Decodes a CommandGenerateSnippet message from the specified reader or buffer, length delimited.
@@ -78,10 +72,8 @@ object CommandGenerateSnippet {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  inline def decodeDelimited(reader: Reader): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  inline def decodeDelimited(reader: Uint8Array): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Encodes the specified CommandGenerateSnippet message. Does not implicitly {@link io.cucumber.messages.CommandGenerateSnippet.verify|verify} messages.
@@ -90,10 +82,8 @@ object CommandGenerateSnippet {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: ICommandGenerateSnippet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: ICommandGenerateSnippet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: ICommandGenerateSnippet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: ICommandGenerateSnippet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CommandGenerateSnippet message, length delimited. Does not implicitly {@link io.cucumber.messages.CommandGenerateSnippet.verify|verify} messages.
@@ -102,10 +92,8 @@ object CommandGenerateSnippet {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: ICommandGenerateSnippet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: ICommandGenerateSnippet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ICommandGenerateSnippet): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ICommandGenerateSnippet, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CommandGenerateSnippet message from a plain object. Also converts values to their respective internal types.
@@ -113,8 +101,7 @@ object CommandGenerateSnippet {
     * @returns CommandGenerateSnippet
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
+  inline def fromObject(`object`: StringDictionary[js.Any]): CommandGenerateSnippet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CommandGenerateSnippet]
   
   /**
     * Creates a plain object from a CommandGenerateSnippet message. Also converts values to other types if specified.
@@ -123,10 +110,8 @@ object CommandGenerateSnippet {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: CommandGenerateSnippet): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: CommandGenerateSnippet, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CommandGenerateSnippet): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CommandGenerateSnippet, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CommandGenerateSnippet message.
@@ -134,6 +119,5 @@ object CommandGenerateSnippet {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -12,23 +12,18 @@ trait MessageConfig extends StObject {
 }
 object MessageConfig {
   
-  @scala.inline
-  def apply(`type`: String): MessageConfig = {
+  inline def apply(`type`: String): MessageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageConfig]
   }
   
-  @scala.inline
-  implicit class MessageConfigMutableBuilder[Self <: MessageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MessageConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -20,7 +20,6 @@ object WingBlank {
     @JSImport("antd-mobile-rn", "WingBlank.defaultProps.size")
     @js.native
     def size: String = js.native
-    @scala.inline
-    def size_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+    inline def size_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
   }
 }

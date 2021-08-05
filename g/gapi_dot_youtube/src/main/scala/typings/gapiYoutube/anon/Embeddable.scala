@@ -43,8 +43,7 @@ trait Embeddable extends StObject {
 }
 object Embeddable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     embeddable: Boolean,
     failureReason: String,
     license: String,
@@ -57,28 +56,20 @@ object Embeddable {
     __obj.asInstanceOf[Embeddable]
   }
   
-  @scala.inline
-  implicit class EmbeddableMutableBuilder[Self <: Embeddable] (val x: Self) extends AnyVal {
+  extension [Self <: Embeddable](x: Self) {
     
-    @scala.inline
-    def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
+    inline def setEmbeddable(value: Boolean): Self = StObject.set(x, "embeddable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicStatsViewable(value: Boolean): Self = StObject.set(x, "publicStatsViewable", value.asInstanceOf[js.Any])
+    inline def setPublicStatsViewable(value: Boolean): Self = StObject.set(x, "publicStatsViewable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectionReason(value: String): Self = StObject.set(x, "rejectionReason", value.asInstanceOf[js.Any])
+    inline def setRejectionReason(value: String): Self = StObject.set(x, "rejectionReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadStatus(value: String): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
+    inline def setUploadStatus(value: String): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
   }
 }

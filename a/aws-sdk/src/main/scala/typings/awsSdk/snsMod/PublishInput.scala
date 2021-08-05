@@ -53,64 +53,45 @@ trait PublishInput extends StObject {
 }
 object PublishInput {
   
-  @scala.inline
-  def apply(Message: message): PublishInput = {
+  inline def apply(Message: message): PublishInput = {
     val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishInput]
   }
   
-  @scala.inline
-  implicit class PublishInputMutableBuilder[Self <: PublishInput] (val x: Self) extends AnyVal {
+  extension [Self <: PublishInput](x: Self) {
     
-    @scala.inline
-    def setMessage(value: message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageAttributes(value: MessageAttributeMap): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
+    inline def setMessageAttributes(value: MessageAttributeMap): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
+    inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
     
-    @scala.inline
-    def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
+    inline def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
+    inline def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
     
-    @scala.inline
-    def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
+    inline def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
+    inline def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
     
-    @scala.inline
-    def setMessageStructure(value: messageStructure): Self = StObject.set(x, "MessageStructure", value.asInstanceOf[js.Any])
+    inline def setMessageStructure(value: messageStructure): Self = StObject.set(x, "MessageStructure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageStructureUndefined: Self = StObject.set(x, "MessageStructure", js.undefined)
+    inline def setMessageStructureUndefined: Self = StObject.set(x, "MessageStructure", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
     
-    @scala.inline
-    def setSubject(value: subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     
-    @scala.inline
-    def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetArnUndefined: Self = StObject.set(x, "TargetArn", js.undefined)
+    inline def setTargetArnUndefined: Self = StObject.set(x, "TargetArn", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

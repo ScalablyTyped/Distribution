@@ -54,99 +54,69 @@ trait PartialITableQuadrantProp extends StObject {
 }
 object PartialITableQuadrantProp {
   
-  @scala.inline
-  def apply(): PartialITableQuadrantProp = {
+  inline def apply(): PartialITableQuadrantProp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialITableQuadrantProp]
   }
   
-  @scala.inline
-  implicit class PartialITableQuadrantPropMutableBuilder[Self <: PartialITableQuadrantProp] (val x: Self) extends AnyVal {
+  extension [Self <: PartialITableQuadrantProp](x: Self) {
     
-    @scala.inline
-    def setBodyRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
+    inline def setBodyRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "bodyRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBodyRefUndefined: Self = StObject.set(x, "bodyRef", js.undefined)
+    inline def setBodyRefUndefined: Self = StObject.set(x, "bodyRef", js.undefined)
     
-    @scala.inline
-    def setBodyRenderer(
+    inline def setBodyRenderer(
       value: (/* quadrantType */ js.UndefOr[QuadrantType], /* showFrozenRowsOnly */ js.UndefOr[Boolean], /* showFrozenColumnsOnly */ js.UndefOr[Boolean]) => Element
     ): Self = StObject.set(x, "bodyRenderer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBodyRendererUndefined: Self = StObject.set(x, "bodyRenderer", js.undefined)
+    inline def setBodyRendererUndefined: Self = StObject.set(x, "bodyRenderer", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setColumnHeaderCellRenderer(value: /* showFrozenColumnsOnly */ js.UndefOr[Boolean] => Element): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction1(value))
+    inline def setColumnHeaderCellRenderer(value: /* showFrozenColumnsOnly */ js.UndefOr[Boolean] => Element): Self = StObject.set(x, "columnHeaderCellRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
+    inline def setColumnHeaderCellRendererUndefined: Self = StObject.set(x, "columnHeaderCellRenderer", js.undefined)
     
-    @scala.inline
-    def setEnableRowHeader(value: Boolean): Self = StObject.set(x, "enableRowHeader", value.asInstanceOf[js.Any])
+    inline def setEnableRowHeader(value: Boolean): Self = StObject.set(x, "enableRowHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRowHeaderUndefined: Self = StObject.set(x, "enableRowHeader", js.undefined)
+    inline def setEnableRowHeaderUndefined: Self = StObject.set(x, "enableRowHeader", js.undefined)
     
-    @scala.inline
-    def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setMenuRenderer(value: () => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction0(value))
+    inline def setMenuRenderer(value: () => Element): Self = StObject.set(x, "menuRenderer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMenuRendererUndefined: Self = StObject.set(x, "menuRenderer", js.undefined)
+    inline def setMenuRendererUndefined: Self = StObject.set(x, "menuRenderer", js.undefined)
     
-    @scala.inline
-    def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+    inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    @scala.inline
-    def setOnWheel(value: WheelEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
+    inline def setOnWheel(value: WheelEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+    inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
-    @scala.inline
-    def setQuadrantRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
+    inline def setQuadrantRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "quadrantRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQuadrantRefUndefined: Self = StObject.set(x, "quadrantRef", js.undefined)
+    inline def setQuadrantRefUndefined: Self = StObject.set(x, "quadrantRef", js.undefined)
     
-    @scala.inline
-    def setQuadrantType(value: QuadrantType): Self = StObject.set(x, "quadrantType", value.asInstanceOf[js.Any])
+    inline def setQuadrantType(value: QuadrantType): Self = StObject.set(x, "quadrantType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuadrantTypeUndefined: Self = StObject.set(x, "quadrantType", js.undefined)
+    inline def setQuadrantTypeUndefined: Self = StObject.set(x, "quadrantType", js.undefined)
     
-    @scala.inline
-    def setRowHeaderCellRenderer(value: /* showFrozenRowsOnly */ js.UndefOr[Boolean] => Element): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction1(value))
+    inline def setRowHeaderCellRenderer(value: /* showFrozenRowsOnly */ js.UndefOr[Boolean] => Element): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowHeaderCellRendererUndefined: Self = StObject.set(x, "rowHeaderCellRenderer", js.undefined)
+    inline def setRowHeaderCellRendererUndefined: Self = StObject.set(x, "rowHeaderCellRenderer", js.undefined)
     
-    @scala.inline
-    def setScrollContainerRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
+    inline def setScrollContainerRef(value: /* ref */ HTMLElement | Null => js.Any): Self = StObject.set(x, "scrollContainerRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollContainerRefUndefined: Self = StObject.set(x, "scrollContainerRef", js.undefined)
+    inline def setScrollContainerRefUndefined: Self = StObject.set(x, "scrollContainerRef", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

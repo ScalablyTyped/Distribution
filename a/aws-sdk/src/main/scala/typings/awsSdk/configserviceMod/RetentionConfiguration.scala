@@ -18,19 +18,15 @@ trait RetentionConfiguration extends StObject {
 }
 object RetentionConfiguration {
   
-  @scala.inline
-  def apply(Name: RetentionConfigurationName, RetentionPeriodInDays: RetentionPeriodInDays): RetentionConfiguration = {
+  inline def apply(Name: RetentionConfigurationName, RetentionPeriodInDays: RetentionPeriodInDays): RetentionConfiguration = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RetentionPeriodInDays = RetentionPeriodInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetentionConfiguration]
   }
   
-  @scala.inline
-  implicit class RetentionConfigurationMutableBuilder[Self <: RetentionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionConfiguration](x: Self) {
     
-    @scala.inline
-    def setName(value: RetentionConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RetentionConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodInDays(value: RetentionPeriodInDays): Self = StObject.set(x, "RetentionPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriodInDays(value: RetentionPeriodInDays): Self = StObject.set(x, "RetentionPeriodInDays", value.asInstanceOf[js.Any])
   }
 }

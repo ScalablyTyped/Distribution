@@ -21,52 +21,37 @@ trait ISourcesConfig extends StObject {
 }
 object ISourcesConfig {
   
-  @scala.inline
-  def apply(): ISourcesConfig = {
+  inline def apply(): ISourcesConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISourcesConfig]
   }
   
-  @scala.inline
-  implicit class ISourcesConfigMutableBuilder[Self <: ISourcesConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ISourcesConfig](x: Self) {
     
-    @scala.inline
-    def setAbsolutePaths(value: js.Array[String]): Self = StObject.set(x, "absolutePaths", value.asInstanceOf[js.Any])
+    inline def setAbsolutePaths(value: js.Array[String]): Self = StObject.set(x, "absolutePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsolutePathsNull: Self = StObject.set(x, "absolutePaths", null)
+    inline def setAbsolutePathsNull: Self = StObject.set(x, "absolutePaths", null)
     
-    @scala.inline
-    def setAbsolutePathsUndefined: Self = StObject.set(x, "absolutePaths", js.undefined)
+    inline def setAbsolutePathsUndefined: Self = StObject.set(x, "absolutePaths", js.undefined)
     
-    @scala.inline
-    def setAbsolutePathsVarargs(value: String*): Self = StObject.set(x, "absolutePaths", js.Array(value :_*))
+    inline def setAbsolutePathsVarargs(value: String*): Self = StObject.set(x, "absolutePaths", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: ISourcesFilterConfig): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ISourcesFilterConfig): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersNull: Self = StObject.set(x, "filters", null)
+    inline def setFiltersNull: Self = StObject.set(x, "filters", null)
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNull: Self = StObject.set(x, "language", null)
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setOrder(value: ISourcesOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: ISourcesOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderNull: Self = StObject.set(x, "order", null)
+    inline def setOrderNull: Self = StObject.set(x, "order", null)
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

@@ -18,37 +18,27 @@ trait EmailListCreateOptions extends StObject {
 }
 object EmailListCreateOptions {
   
-  @scala.inline
-  def apply(api_key: String, api_user: String): EmailListCreateOptions = {
+  inline def apply(api_key: String, api_user: String): EmailListCreateOptions = {
     val __obj = js.Dynamic.literal(api_key = api_key.asInstanceOf[js.Any], api_user = api_user.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailListCreateOptions]
   }
   
-  @scala.inline
-  implicit class EmailListCreateOptionsMutableBuilder[Self <: EmailListCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EmailListCreateOptions](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+    inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApi_user(value: String): Self = StObject.set(x, "api_user", value.asInstanceOf[js.Any])
+    inline def setApi_user(value: String): Self = StObject.set(x, "api_user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

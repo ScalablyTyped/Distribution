@@ -167,24 +167,20 @@ object TableService {
   @JSImport("azure", "TableService.incorrectCallbackErr")
   @js.native
   def incorrectCallbackErr: String = js.native
-  @scala.inline
-  def incorrectCallbackErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectCallbackErr")(x.asInstanceOf[js.Any])
+  inline def incorrectCallbackErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectCallbackErr")(x.asInstanceOf[js.Any])
   
   @JSImport("azure", "TableService.incorrectPartitionErr")
   @js.native
   def incorrectPartitionErr: String = js.native
-  @scala.inline
-  def incorrectPartitionErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectPartitionErr")(x.asInstanceOf[js.Any])
+  inline def incorrectPartitionErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectPartitionErr")(x.asInstanceOf[js.Any])
   
   @JSImport("azure", "TableService.incorrectTableNameErr")
   @js.native
   def incorrectTableNameErr: String = js.native
-  @scala.inline
-  def incorrectTableNameErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectTableNameErr")(x.asInstanceOf[js.Any])
+  inline def incorrectTableNameErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectTableNameErr")(x.asInstanceOf[js.Any])
   
   @JSImport("azure", "TableService.incorrectTableQuery")
   @js.native
   def incorrectTableQuery: String = js.native
-  @scala.inline
-  def incorrectTableQuery_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectTableQuery")(x.asInstanceOf[js.Any])
+  inline def incorrectTableQuery_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectTableQuery")(x.asInstanceOf[js.Any])
 }

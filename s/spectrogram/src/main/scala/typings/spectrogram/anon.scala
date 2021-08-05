@@ -12,20 +12,16 @@ object anon {
   }
   object Enable {
     
-    @scala.inline
-    def apply(): Enable = {
+    inline def apply(): Enable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Enable]
     }
     
-    @scala.inline
-    implicit class EnableMutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
+    extension [Self <: Enable](x: Self) {
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     }
   }
   
@@ -37,32 +33,24 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(): Height = {
+    inline def apply(): Height = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double | js.Function0[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | js.Function0[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightFunction0(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+      inline def setHeightFunction0(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | js.Function0[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | js.Function0[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthFunction0(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+      inline def setWidthFunction0(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

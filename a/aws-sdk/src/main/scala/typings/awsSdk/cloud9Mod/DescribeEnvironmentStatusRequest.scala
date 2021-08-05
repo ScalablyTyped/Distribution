@@ -13,16 +13,13 @@ trait DescribeEnvironmentStatusRequest extends StObject {
 }
 object DescribeEnvironmentStatusRequest {
   
-  @scala.inline
-  def apply(environmentId: EnvironmentId): DescribeEnvironmentStatusRequest = {
+  inline def apply(environmentId: EnvironmentId): DescribeEnvironmentStatusRequest = {
     val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEnvironmentStatusRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEnvironmentStatusRequestMutableBuilder[Self <: DescribeEnvironmentStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEnvironmentStatusRequest](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
   }
 }

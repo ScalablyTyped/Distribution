@@ -207,8 +207,7 @@ object anon {
   }
   object RecordES2015BuiltinsES201 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ArrayDotfrom: Boolean,
       ArrayDotof: Boolean,
       ArrayDotprototypeDotcopyWithin: Boolean,
@@ -339,221 +338,149 @@ object anon {
       __obj.asInstanceOf[RecordES2015BuiltinsES201]
     }
     
-    @scala.inline
-    implicit class RecordES2015BuiltinsES201MutableBuilder[Self <: RecordES2015BuiltinsES201] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2015BuiltinsES201](x: Self) {
       
-      @scala.inline
-      def setArrayDotfrom(value: Boolean): Self = StObject.set(x, "Array.from", value.asInstanceOf[js.Any])
+      inline def setArrayDotfrom(value: Boolean): Self = StObject.set(x, "Array.from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotof(value: Boolean): Self = StObject.set(x, "Array.of", value.asInstanceOf[js.Any])
+      inline def setArrayDotof(value: Boolean): Self = StObject.set(x, "Array.of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotcopyWithin(value: Boolean): Self = StObject.set(x, "Array.prototype.copyWithin", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotcopyWithin(value: Boolean): Self = StObject.set(x, "Array.prototype.copyWithin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotentries(value: Boolean): Self = StObject.set(x, "Array.prototype.entries", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotentries(value: Boolean): Self = StObject.set(x, "Array.prototype.entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotfill(value: Boolean): Self = StObject.set(x, "Array.prototype.fill", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotfill(value: Boolean): Self = StObject.set(x, "Array.prototype.fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotfind(value: Boolean): Self = StObject.set(x, "Array.prototype.find", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotfind(value: Boolean): Self = StObject.set(x, "Array.prototype.find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotfindIndex(value: Boolean): Self = StObject.set(x, "Array.prototype.findIndex", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotfindIndex(value: Boolean): Self = StObject.set(x, "Array.prototype.findIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "Array.prototype.includes", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "Array.prototype.includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotkeys(value: Boolean): Self = StObject.set(x, "Array.prototype.keys", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotkeys(value: Boolean): Self = StObject.set(x, "Array.prototype.keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtomics(value: Boolean): Self = StObject.set(x, "Atomics", value.asInstanceOf[js.Any])
+      inline def setAtomics(value: Boolean): Self = StObject.set(x, "Atomics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs2015(value: RecordES2015Builtinsboole): Self = StObject.set(x, "es2015", value.asInstanceOf[js.Any])
+      inline def setEs2015(value: RecordES2015Builtinsboole): Self = StObject.set(x, "es2015", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs2016(value: RecordES2016Builtinsboole): Self = StObject.set(x, "es2016", value.asInstanceOf[js.Any])
+      inline def setEs2016(value: RecordES2016Builtinsboole): Self = StObject.set(x, "es2016", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs2017(value: RecordES2017Builtinsboole): Self = StObject.set(x, "es2017", value.asInstanceOf[js.Any])
+      inline def setEs2017(value: RecordES2017Builtinsboole): Self = StObject.set(x, "es2017", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: Boolean): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Boolean): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotacosh(value: Boolean): Self = StObject.set(x, "Math.acosh", value.asInstanceOf[js.Any])
+      inline def setMathDotacosh(value: Boolean): Self = StObject.set(x, "Math.acosh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotasinh(value: Boolean): Self = StObject.set(x, "Math.asinh", value.asInstanceOf[js.Any])
+      inline def setMathDotasinh(value: Boolean): Self = StObject.set(x, "Math.asinh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotcbrt(value: Boolean): Self = StObject.set(x, "Math.cbrt", value.asInstanceOf[js.Any])
+      inline def setMathDotcbrt(value: Boolean): Self = StObject.set(x, "Math.cbrt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotclz32(value: Boolean): Self = StObject.set(x, "Math.clz32", value.asInstanceOf[js.Any])
+      inline def setMathDotclz32(value: Boolean): Self = StObject.set(x, "Math.clz32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotcosh(value: Boolean): Self = StObject.set(x, "Math.cosh", value.asInstanceOf[js.Any])
+      inline def setMathDotcosh(value: Boolean): Self = StObject.set(x, "Math.cosh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotexpm1(value: Boolean): Self = StObject.set(x, "Math.expm1", value.asInstanceOf[js.Any])
+      inline def setMathDotexpm1(value: Boolean): Self = StObject.set(x, "Math.expm1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotfround(value: Boolean): Self = StObject.set(x, "Math.fround", value.asInstanceOf[js.Any])
+      inline def setMathDotfround(value: Boolean): Self = StObject.set(x, "Math.fround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDothypot(value: Boolean): Self = StObject.set(x, "Math.hypot", value.asInstanceOf[js.Any])
+      inline def setMathDothypot(value: Boolean): Self = StObject.set(x, "Math.hypot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotimul(value: Boolean): Self = StObject.set(x, "Math.imul", value.asInstanceOf[js.Any])
+      inline def setMathDotimul(value: Boolean): Self = StObject.set(x, "Math.imul", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotlog10(value: Boolean): Self = StObject.set(x, "Math.log10", value.asInstanceOf[js.Any])
+      inline def setMathDotlog10(value: Boolean): Self = StObject.set(x, "Math.log10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotlog1p(value: Boolean): Self = StObject.set(x, "Math.log1p", value.asInstanceOf[js.Any])
+      inline def setMathDotlog1p(value: Boolean): Self = StObject.set(x, "Math.log1p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotlog2(value: Boolean): Self = StObject.set(x, "Math.log2", value.asInstanceOf[js.Any])
+      inline def setMathDotlog2(value: Boolean): Self = StObject.set(x, "Math.log2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotsign(value: Boolean): Self = StObject.set(x, "Math.sign", value.asInstanceOf[js.Any])
+      inline def setMathDotsign(value: Boolean): Self = StObject.set(x, "Math.sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotsinh(value: Boolean): Self = StObject.set(x, "Math.sinh", value.asInstanceOf[js.Any])
+      inline def setMathDotsinh(value: Boolean): Self = StObject.set(x, "Math.sinh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDottanh(value: Boolean): Self = StObject.set(x, "Math.tanh", value.asInstanceOf[js.Any])
+      inline def setMathDottanh(value: Boolean): Self = StObject.set(x, "Math.tanh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDottrunc(value: Boolean): Self = StObject.set(x, "Math.trunc", value.asInstanceOf[js.Any])
+      inline def setMathDottrunc(value: Boolean): Self = StObject.set(x, "Math.trunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewDottarget(value: Boolean): Self = StObject.set(x, "new.target", value.asInstanceOf[js.Any])
+      inline def setNewDottarget(value: Boolean): Self = StObject.set(x, "new.target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotEPSILON(value: Boolean): Self = StObject.set(x, "Number.EPSILON", value.asInstanceOf[js.Any])
+      inline def setNumberDotEPSILON(value: Boolean): Self = StObject.set(x, "Number.EPSILON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotMAX_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MAX_SAFE_INTEGER", value.asInstanceOf[js.Any])
+      inline def setNumberDotMAX_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MAX_SAFE_INTEGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotMIN_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MIN_SAFE_INTEGER", value.asInstanceOf[js.Any])
+      inline def setNumberDotMIN_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MIN_SAFE_INTEGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisFinite(value: Boolean): Self = StObject.set(x, "Number.isFinite", value.asInstanceOf[js.Any])
+      inline def setNumberDotisFinite(value: Boolean): Self = StObject.set(x, "Number.isFinite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisInteger(value: Boolean): Self = StObject.set(x, "Number.isInteger", value.asInstanceOf[js.Any])
+      inline def setNumberDotisInteger(value: Boolean): Self = StObject.set(x, "Number.isInteger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisNaN(value: Boolean): Self = StObject.set(x, "Number.isNaN", value.asInstanceOf[js.Any])
+      inline def setNumberDotisNaN(value: Boolean): Self = StObject.set(x, "Number.isNaN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisSafeInteger(value: Boolean): Self = StObject.set(x, "Number.isSafeInteger", value.asInstanceOf[js.Any])
+      inline def setNumberDotisSafeInteger(value: Boolean): Self = StObject.set(x, "Number.isSafeInteger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotparseFloat(value: Boolean): Self = StObject.set(x, "Number.parseFloat", value.asInstanceOf[js.Any])
+      inline def setNumberDotparseFloat(value: Boolean): Self = StObject.set(x, "Number.parseFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotparseInt(value: Boolean): Self = StObject.set(x, "Number.parseInt", value.asInstanceOf[js.Any])
+      inline def setNumberDotparseInt(value: Boolean): Self = StObject.set(x, "Number.parseInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotassign(value: Boolean): Self = StObject.set(x, "Object.assign", value.asInstanceOf[js.Any])
+      inline def setObjectDotassign(value: Boolean): Self = StObject.set(x, "Object.assign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotentries(value: Boolean): Self = StObject.set(x, "Object.entries", value.asInstanceOf[js.Any])
+      inline def setObjectDotentries(value: Boolean): Self = StObject.set(x, "Object.entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotgetOwnPropertyDescriptors(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertyDescriptors", value.asInstanceOf[js.Any])
+      inline def setObjectDotgetOwnPropertyDescriptors(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertyDescriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotgetOwnPropertySymbols(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertySymbols", value.asInstanceOf[js.Any])
+      inline def setObjectDotgetOwnPropertySymbols(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertySymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotis(value: Boolean): Self = StObject.set(x, "Object.is", value.asInstanceOf[js.Any])
+      inline def setObjectDotis(value: Boolean): Self = StObject.set(x, "Object.is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotprototypeDot__proto__(value: Boolean): Self = StObject.set(x, "Object.prototype.__proto__", value.asInstanceOf[js.Any])
+      inline def setObjectDotprototypeDot__proto__(value: Boolean): Self = StObject.set(x, "Object.prototype.__proto__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotsetPrototypeOf(value: Boolean): Self = StObject.set(x, "Object.setPrototypeOf", value.asInstanceOf[js.Any])
+      inline def setObjectDotsetPrototypeOf(value: Boolean): Self = StObject.set(x, "Object.setPrototypeOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotvalues(value: Boolean): Self = StObject.set(x, "Object.values", value.asInstanceOf[js.Any])
+      inline def setObjectDotvalues(value: Boolean): Self = StObject.set(x, "Object.values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: Boolean): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Boolean): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: Boolean): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Boolean): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflect(value: Boolean): Self = StObject.set(x, "Reflect", value.asInstanceOf[js.Any])
+      inline def setReflect(value: Boolean): Self = StObject.set(x, "Reflect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
+      inline def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: Boolean): Self = StObject.set(x, "Set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Boolean): Self = StObject.set(x, "Set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedArrayBuffer(value: Boolean): Self = StObject.set(x, "SharedArrayBuffer", value.asInstanceOf[js.Any])
+      inline def setSharedArrayBuffer(value: Boolean): Self = StObject.set(x, "SharedArrayBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotfromCodePoint(value: Boolean): Self = StObject.set(x, "String.fromCodePoint", value.asInstanceOf[js.Any])
+      inline def setStringDotfromCodePoint(value: Boolean): Self = StObject.set(x, "String.fromCodePoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotcodePointAt(value: Boolean): Self = StObject.set(x, "String.prototype.codePointAt", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotcodePointAt(value: Boolean): Self = StObject.set(x, "String.prototype.codePointAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotendsWith(value: Boolean): Self = StObject.set(x, "String.prototype.endsWith", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotendsWith(value: Boolean): Self = StObject.set(x, "String.prototype.endsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "String.prototype.includes", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "String.prototype.includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotnormalize(value: Boolean): Self = StObject.set(x, "String.prototype.normalize", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotnormalize(value: Boolean): Self = StObject.set(x, "String.prototype.normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotpadEnd(value: Boolean): Self = StObject.set(x, "String.prototype.padEnd", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotpadEnd(value: Boolean): Self = StObject.set(x, "String.prototype.padEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotpadStart(value: Boolean): Self = StObject.set(x, "String.prototype.padStart", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotpadStart(value: Boolean): Self = StObject.set(x, "String.prototype.padStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotrepeat(value: Boolean): Self = StObject.set(x, "String.prototype.repeat", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotrepeat(value: Boolean): Self = StObject.set(x, "String.prototype.repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotstartsWith(value: Boolean): Self = StObject.set(x, "String.prototype.startsWith", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotstartsWith(value: Boolean): Self = StObject.set(x, "String.prototype.startsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotraw(value: Boolean): Self = StObject.set(x, "String.raw", value.asInstanceOf[js.Any])
+      inline def setStringDotraw(value: Boolean): Self = StObject.set(x, "String.raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: Boolean): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Boolean): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypedArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "TypedArray.prototype.includes", value.asInstanceOf[js.Any])
+      inline def setTypedArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "TypedArray.prototype.includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypedArrays(value: Boolean): Self = StObject.set(x, "TypedArrays", value.asInstanceOf[js.Any])
+      inline def setTypedArrays(value: Boolean): Self = StObject.set(x, "TypedArrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakMap(value: Boolean): Self = StObject.set(x, "WeakMap", value.asInstanceOf[js.Any])
+      inline def setWeakMap(value: Boolean): Self = StObject.set(x, "WeakMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakSet(value: Boolean): Self = StObject.set(x, "WeakSet", value.asInstanceOf[js.Any])
+      inline def setWeakSet(value: Boolean): Self = StObject.set(x, "WeakSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -727,8 +654,7 @@ object anon {
   }
   object RecordES2015Builtinsboole {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ArrayDotfrom: Boolean,
       ArrayDotof: Boolean,
       ArrayDotprototypeDotcopyWithin: Boolean,
@@ -840,185 +766,125 @@ object anon {
       __obj.asInstanceOf[RecordES2015Builtinsboole]
     }
     
-    @scala.inline
-    implicit class RecordES2015BuiltinsbooleMutableBuilder[Self <: RecordES2015Builtinsboole] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2015Builtinsboole](x: Self) {
       
-      @scala.inline
-      def setArrayDotfrom(value: Boolean): Self = StObject.set(x, "Array.from", value.asInstanceOf[js.Any])
+      inline def setArrayDotfrom(value: Boolean): Self = StObject.set(x, "Array.from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotof(value: Boolean): Self = StObject.set(x, "Array.of", value.asInstanceOf[js.Any])
+      inline def setArrayDotof(value: Boolean): Self = StObject.set(x, "Array.of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotcopyWithin(value: Boolean): Self = StObject.set(x, "Array.prototype.copyWithin", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotcopyWithin(value: Boolean): Self = StObject.set(x, "Array.prototype.copyWithin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotentries(value: Boolean): Self = StObject.set(x, "Array.prototype.entries", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotentries(value: Boolean): Self = StObject.set(x, "Array.prototype.entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotfill(value: Boolean): Self = StObject.set(x, "Array.prototype.fill", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotfill(value: Boolean): Self = StObject.set(x, "Array.prototype.fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotfind(value: Boolean): Self = StObject.set(x, "Array.prototype.find", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotfind(value: Boolean): Self = StObject.set(x, "Array.prototype.find", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotfindIndex(value: Boolean): Self = StObject.set(x, "Array.prototype.findIndex", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotfindIndex(value: Boolean): Self = StObject.set(x, "Array.prototype.findIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayDotprototypeDotkeys(value: Boolean): Self = StObject.set(x, "Array.prototype.keys", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotkeys(value: Boolean): Self = StObject.set(x, "Array.prototype.keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: Boolean): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Boolean): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotacosh(value: Boolean): Self = StObject.set(x, "Math.acosh", value.asInstanceOf[js.Any])
+      inline def setMathDotacosh(value: Boolean): Self = StObject.set(x, "Math.acosh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotasinh(value: Boolean): Self = StObject.set(x, "Math.asinh", value.asInstanceOf[js.Any])
+      inline def setMathDotasinh(value: Boolean): Self = StObject.set(x, "Math.asinh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotcbrt(value: Boolean): Self = StObject.set(x, "Math.cbrt", value.asInstanceOf[js.Any])
+      inline def setMathDotcbrt(value: Boolean): Self = StObject.set(x, "Math.cbrt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotclz32(value: Boolean): Self = StObject.set(x, "Math.clz32", value.asInstanceOf[js.Any])
+      inline def setMathDotclz32(value: Boolean): Self = StObject.set(x, "Math.clz32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotcosh(value: Boolean): Self = StObject.set(x, "Math.cosh", value.asInstanceOf[js.Any])
+      inline def setMathDotcosh(value: Boolean): Self = StObject.set(x, "Math.cosh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotexpm1(value: Boolean): Self = StObject.set(x, "Math.expm1", value.asInstanceOf[js.Any])
+      inline def setMathDotexpm1(value: Boolean): Self = StObject.set(x, "Math.expm1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotfround(value: Boolean): Self = StObject.set(x, "Math.fround", value.asInstanceOf[js.Any])
+      inline def setMathDotfround(value: Boolean): Self = StObject.set(x, "Math.fround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDothypot(value: Boolean): Self = StObject.set(x, "Math.hypot", value.asInstanceOf[js.Any])
+      inline def setMathDothypot(value: Boolean): Self = StObject.set(x, "Math.hypot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotimul(value: Boolean): Self = StObject.set(x, "Math.imul", value.asInstanceOf[js.Any])
+      inline def setMathDotimul(value: Boolean): Self = StObject.set(x, "Math.imul", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotlog10(value: Boolean): Self = StObject.set(x, "Math.log10", value.asInstanceOf[js.Any])
+      inline def setMathDotlog10(value: Boolean): Self = StObject.set(x, "Math.log10", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotlog1p(value: Boolean): Self = StObject.set(x, "Math.log1p", value.asInstanceOf[js.Any])
+      inline def setMathDotlog1p(value: Boolean): Self = StObject.set(x, "Math.log1p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotlog2(value: Boolean): Self = StObject.set(x, "Math.log2", value.asInstanceOf[js.Any])
+      inline def setMathDotlog2(value: Boolean): Self = StObject.set(x, "Math.log2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotsign(value: Boolean): Self = StObject.set(x, "Math.sign", value.asInstanceOf[js.Any])
+      inline def setMathDotsign(value: Boolean): Self = StObject.set(x, "Math.sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDotsinh(value: Boolean): Self = StObject.set(x, "Math.sinh", value.asInstanceOf[js.Any])
+      inline def setMathDotsinh(value: Boolean): Self = StObject.set(x, "Math.sinh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDottanh(value: Boolean): Self = StObject.set(x, "Math.tanh", value.asInstanceOf[js.Any])
+      inline def setMathDottanh(value: Boolean): Self = StObject.set(x, "Math.tanh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMathDottrunc(value: Boolean): Self = StObject.set(x, "Math.trunc", value.asInstanceOf[js.Any])
+      inline def setMathDottrunc(value: Boolean): Self = StObject.set(x, "Math.trunc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewDottarget(value: Boolean): Self = StObject.set(x, "new.target", value.asInstanceOf[js.Any])
+      inline def setNewDottarget(value: Boolean): Self = StObject.set(x, "new.target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotEPSILON(value: Boolean): Self = StObject.set(x, "Number.EPSILON", value.asInstanceOf[js.Any])
+      inline def setNumberDotEPSILON(value: Boolean): Self = StObject.set(x, "Number.EPSILON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotMAX_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MAX_SAFE_INTEGER", value.asInstanceOf[js.Any])
+      inline def setNumberDotMAX_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MAX_SAFE_INTEGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotMIN_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MIN_SAFE_INTEGER", value.asInstanceOf[js.Any])
+      inline def setNumberDotMIN_SAFE_INTEGER(value: Boolean): Self = StObject.set(x, "Number.MIN_SAFE_INTEGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisFinite(value: Boolean): Self = StObject.set(x, "Number.isFinite", value.asInstanceOf[js.Any])
+      inline def setNumberDotisFinite(value: Boolean): Self = StObject.set(x, "Number.isFinite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisInteger(value: Boolean): Self = StObject.set(x, "Number.isInteger", value.asInstanceOf[js.Any])
+      inline def setNumberDotisInteger(value: Boolean): Self = StObject.set(x, "Number.isInteger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisNaN(value: Boolean): Self = StObject.set(x, "Number.isNaN", value.asInstanceOf[js.Any])
+      inline def setNumberDotisNaN(value: Boolean): Self = StObject.set(x, "Number.isNaN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotisSafeInteger(value: Boolean): Self = StObject.set(x, "Number.isSafeInteger", value.asInstanceOf[js.Any])
+      inline def setNumberDotisSafeInteger(value: Boolean): Self = StObject.set(x, "Number.isSafeInteger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotparseFloat(value: Boolean): Self = StObject.set(x, "Number.parseFloat", value.asInstanceOf[js.Any])
+      inline def setNumberDotparseFloat(value: Boolean): Self = StObject.set(x, "Number.parseFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberDotparseInt(value: Boolean): Self = StObject.set(x, "Number.parseInt", value.asInstanceOf[js.Any])
+      inline def setNumberDotparseInt(value: Boolean): Self = StObject.set(x, "Number.parseInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotassign(value: Boolean): Self = StObject.set(x, "Object.assign", value.asInstanceOf[js.Any])
+      inline def setObjectDotassign(value: Boolean): Self = StObject.set(x, "Object.assign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotgetOwnPropertySymbols(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertySymbols", value.asInstanceOf[js.Any])
+      inline def setObjectDotgetOwnPropertySymbols(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertySymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotis(value: Boolean): Self = StObject.set(x, "Object.is", value.asInstanceOf[js.Any])
+      inline def setObjectDotis(value: Boolean): Self = StObject.set(x, "Object.is", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotprototypeDot__proto__(value: Boolean): Self = StObject.set(x, "Object.prototype.__proto__", value.asInstanceOf[js.Any])
+      inline def setObjectDotprototypeDot__proto__(value: Boolean): Self = StObject.set(x, "Object.prototype.__proto__", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotsetPrototypeOf(value: Boolean): Self = StObject.set(x, "Object.setPrototypeOf", value.asInstanceOf[js.Any])
+      inline def setObjectDotsetPrototypeOf(value: Boolean): Self = StObject.set(x, "Object.setPrototypeOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: Boolean): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Boolean): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxy(value: Boolean): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Boolean): Self = StObject.set(x, "Proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflect(value: Boolean): Self = StObject.set(x, "Reflect", value.asInstanceOf[js.Any])
+      inline def setReflect(value: Boolean): Self = StObject.set(x, "Reflect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
+      inline def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: Boolean): Self = StObject.set(x, "Set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Boolean): Self = StObject.set(x, "Set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotfromCodePoint(value: Boolean): Self = StObject.set(x, "String.fromCodePoint", value.asInstanceOf[js.Any])
+      inline def setStringDotfromCodePoint(value: Boolean): Self = StObject.set(x, "String.fromCodePoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotcodePointAt(value: Boolean): Self = StObject.set(x, "String.prototype.codePointAt", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotcodePointAt(value: Boolean): Self = StObject.set(x, "String.prototype.codePointAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotendsWith(value: Boolean): Self = StObject.set(x, "String.prototype.endsWith", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotendsWith(value: Boolean): Self = StObject.set(x, "String.prototype.endsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "String.prototype.includes", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "String.prototype.includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotnormalize(value: Boolean): Self = StObject.set(x, "String.prototype.normalize", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotnormalize(value: Boolean): Self = StObject.set(x, "String.prototype.normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotrepeat(value: Boolean): Self = StObject.set(x, "String.prototype.repeat", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotrepeat(value: Boolean): Self = StObject.set(x, "String.prototype.repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotstartsWith(value: Boolean): Self = StObject.set(x, "String.prototype.startsWith", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotstartsWith(value: Boolean): Self = StObject.set(x, "String.prototype.startsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotraw(value: Boolean): Self = StObject.set(x, "String.raw", value.asInstanceOf[js.Any])
+      inline def setStringDotraw(value: Boolean): Self = StObject.set(x, "String.raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: Boolean): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Boolean): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypedArrays(value: Boolean): Self = StObject.set(x, "TypedArrays", value.asInstanceOf[js.Any])
+      inline def setTypedArrays(value: Boolean): Self = StObject.set(x, "TypedArrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakMap(value: Boolean): Self = StObject.set(x, "WeakMap", value.asInstanceOf[js.Any])
+      inline def setWeakMap(value: Boolean): Self = StObject.set(x, "WeakMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeakSet(value: Boolean): Self = StObject.set(x, "WeakSet", value.asInstanceOf[js.Any])
+      inline def setWeakSet(value: Boolean): Self = StObject.set(x, "WeakSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1087,8 +953,7 @@ object anon {
   }
   object RecordES2015SyntaxES2016S {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `Arrow function`: Boolean,
       `Binary literals`: Boolean,
       `Block level function declaration`: Boolean,
@@ -1143,92 +1008,63 @@ object anon {
       __obj.asInstanceOf[RecordES2015SyntaxES2016S]
     }
     
-    @scala.inline
-    implicit class RecordES2015SyntaxES2016SMutableBuilder[Self <: RecordES2015SyntaxES2016S] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2015SyntaxES2016S](x: Self) {
       
-      @scala.inline
-      def `setArrow function`(value: Boolean): Self = StObject.set(x, "Arrow function", value.asInstanceOf[js.Any])
+      inline def `setArrow function`(value: Boolean): Self = StObject.set(x, "Arrow function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncSlashawait(value: Boolean): Self = StObject.set(x, "async/await", value.asInstanceOf[js.Any])
+      inline def setAsyncSlashawait(value: Boolean): Self = StObject.set(x, "async/await", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBinary literals`(value: Boolean): Self = StObject.set(x, "Binary literals", value.asInstanceOf[js.Any])
+      inline def `setBinary literals`(value: Boolean): Self = StObject.set(x, "Binary literals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlock level function declaration`(value: Boolean): Self = StObject.set(x, "Block level function declaration", value.asInstanceOf[js.Any])
+      inline def `setBlock level function declaration`(value: Boolean): Self = StObject.set(x, "Block level function declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClass(value: Boolean): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: Boolean): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setComputed property`(value: Boolean): Self = StObject.set(x, "Computed property", value.asInstanceOf[js.Any])
+      inline def `setComputed property`(value: Boolean): Self = StObject.set(x, "Computed property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+      inline def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDefault parameters`(value: Boolean): Self = StObject.set(x, "Default parameters", value.asInstanceOf[js.Any])
+      inline def `setDefault parameters`(value: Boolean): Self = StObject.set(x, "Default parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuring(value: Boolean): Self = StObject.set(x, "Destructuring", value.asInstanceOf[js.Any])
+      inline def setDestructuring(value: Boolean): Self = StObject.set(x, "Destructuring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs2015(value: RecordES2015Syntaxboolean): Self = StObject.set(x, "es2015", value.asInstanceOf[js.Any])
+      inline def setEs2015(value: RecordES2015Syntaxboolean): Self = StObject.set(x, "es2015", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs2016(value: RecordES2016Syntaxboolean): Self = StObject.set(x, "es2016", value.asInstanceOf[js.Any])
+      inline def setEs2016(value: RecordES2016Syntaxboolean): Self = StObject.set(x, "es2016", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEs2017(value: RecordES2017Syntaxboolean): Self = StObject.set(x, "es2017", value.asInstanceOf[js.Any])
+      inline def setEs2017(value: RecordES2017Syntaxboolean): Self = StObject.set(x, "es2017", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setExponentiation operator`(value: Boolean): Self = StObject.set(x, "Exponentiation operator", value.asInstanceOf[js.Any])
+      inline def `setExponentiation operator`(value: Boolean): Self = StObject.set(x, "Exponentiation operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForDotDotDotof(value: Boolean): Self = StObject.set(x, "for...of", value.asInstanceOf[js.Any])
+      inline def setForDotDotDotof(value: Boolean): Self = StObject.set(x, "for...of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGenerator function`(value: Boolean): Self = StObject.set(x, "Generator function", value.asInstanceOf[js.Any])
+      inline def `setGenerator function`(value: Boolean): Self = StObject.set(x, "Generator function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLet(value: Boolean): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
+      inline def setLet(value: Boolean): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOctal literals`(value: Boolean): Self = StObject.set(x, "Octal literals", value.asInstanceOf[js.Any])
+      inline def `setOctal literals`(value: Boolean): Self = StObject.set(x, "Octal literals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegExpDotprototypeDotsticky(value: Boolean): Self = StObject.set(x, "RegExp.prototype.sticky", value.asInstanceOf[js.Any])
+      inline def setRegExpDotprototypeDotsticky(value: Boolean): Self = StObject.set(x, "RegExp.prototype.sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegExpDotprototypeDotunicode(value: Boolean): Self = StObject.set(x, "RegExp.prototype.unicode", value.asInstanceOf[js.Any])
+      inline def setRegExpDotprototypeDotunicode(value: Boolean): Self = StObject.set(x, "RegExp.prototype.unicode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRest destructuring`(value: Boolean): Self = StObject.set(x, "Rest destructuring", value.asInstanceOf[js.Any])
+      inline def `setRest destructuring`(value: Boolean): Self = StObject.set(x, "Rest destructuring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRest parameters`(value: Boolean): Self = StObject.set(x, "Rest parameters", value.asInstanceOf[js.Any])
+      inline def `setRest parameters`(value: Boolean): Self = StObject.set(x, "Rest parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShorthand method`(value: Boolean): Self = StObject.set(x, "Shorthand method", value.asInstanceOf[js.Any])
+      inline def `setShorthand method`(value: Boolean): Self = StObject.set(x, "Shorthand method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShorthand property`(value: Boolean): Self = StObject.set(x, "Shorthand property", value.asInstanceOf[js.Any])
+      inline def `setShorthand property`(value: Boolean): Self = StObject.set(x, "Shorthand property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSpread Array`(value: Boolean): Self = StObject.set(x, "Spread Array", value.asInstanceOf[js.Any])
+      inline def `setSpread Array`(value: Boolean): Self = StObject.set(x, "Spread Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSpread Function call`(value: Boolean): Self = StObject.set(x, "Spread Function call", value.asInstanceOf[js.Any])
+      inline def `setSpread Function call`(value: Boolean): Self = StObject.set(x, "Spread Function call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTemplate Strings`(value: Boolean): Self = StObject.set(x, "Template Strings", value.asInstanceOf[js.Any])
+      inline def `setTemplate Strings`(value: Boolean): Self = StObject.set(x, "Template Strings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTrailing parameter commas`(value: Boolean): Self = StObject.set(x, "Trailing parameter commas", value.asInstanceOf[js.Any])
+      inline def `setTrailing parameter commas`(value: Boolean): Self = StObject.set(x, "Trailing parameter commas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1282,8 +1118,7 @@ object anon {
   }
   object RecordES2015Syntaxboolean {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `Arrow function`: Boolean,
       `Binary literals`: Boolean,
       `Block level function declaration`: Boolean,
@@ -1327,71 +1162,49 @@ object anon {
       __obj.asInstanceOf[RecordES2015Syntaxboolean]
     }
     
-    @scala.inline
-    implicit class RecordES2015SyntaxbooleanMutableBuilder[Self <: RecordES2015Syntaxboolean] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2015Syntaxboolean](x: Self) {
       
-      @scala.inline
-      def `setArrow function`(value: Boolean): Self = StObject.set(x, "Arrow function", value.asInstanceOf[js.Any])
+      inline def `setArrow function`(value: Boolean): Self = StObject.set(x, "Arrow function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBinary literals`(value: Boolean): Self = StObject.set(x, "Binary literals", value.asInstanceOf[js.Any])
+      inline def `setBinary literals`(value: Boolean): Self = StObject.set(x, "Binary literals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBlock level function declaration`(value: Boolean): Self = StObject.set(x, "Block level function declaration", value.asInstanceOf[js.Any])
+      inline def `setBlock level function declaration`(value: Boolean): Self = StObject.set(x, "Block level function declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClass(value: Boolean): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: Boolean): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setComputed property`(value: Boolean): Self = StObject.set(x, "Computed property", value.asInstanceOf[js.Any])
+      inline def `setComputed property`(value: Boolean): Self = StObject.set(x, "Computed property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+      inline def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDefault parameters`(value: Boolean): Self = StObject.set(x, "Default parameters", value.asInstanceOf[js.Any])
+      inline def `setDefault parameters`(value: Boolean): Self = StObject.set(x, "Default parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuring(value: Boolean): Self = StObject.set(x, "Destructuring", value.asInstanceOf[js.Any])
+      inline def setDestructuring(value: Boolean): Self = StObject.set(x, "Destructuring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForDotDotDotof(value: Boolean): Self = StObject.set(x, "for...of", value.asInstanceOf[js.Any])
+      inline def setForDotDotDotof(value: Boolean): Self = StObject.set(x, "for...of", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setGenerator function`(value: Boolean): Self = StObject.set(x, "Generator function", value.asInstanceOf[js.Any])
+      inline def `setGenerator function`(value: Boolean): Self = StObject.set(x, "Generator function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLet(value: Boolean): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
+      inline def setLet(value: Boolean): Self = StObject.set(x, "let", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setOctal literals`(value: Boolean): Self = StObject.set(x, "Octal literals", value.asInstanceOf[js.Any])
+      inline def `setOctal literals`(value: Boolean): Self = StObject.set(x, "Octal literals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegExpDotprototypeDotsticky(value: Boolean): Self = StObject.set(x, "RegExp.prototype.sticky", value.asInstanceOf[js.Any])
+      inline def setRegExpDotprototypeDotsticky(value: Boolean): Self = StObject.set(x, "RegExp.prototype.sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegExpDotprototypeDotunicode(value: Boolean): Self = StObject.set(x, "RegExp.prototype.unicode", value.asInstanceOf[js.Any])
+      inline def setRegExpDotprototypeDotunicode(value: Boolean): Self = StObject.set(x, "RegExp.prototype.unicode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRest parameters`(value: Boolean): Self = StObject.set(x, "Rest parameters", value.asInstanceOf[js.Any])
+      inline def `setRest parameters`(value: Boolean): Self = StObject.set(x, "Rest parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShorthand method`(value: Boolean): Self = StObject.set(x, "Shorthand method", value.asInstanceOf[js.Any])
+      inline def `setShorthand method`(value: Boolean): Self = StObject.set(x, "Shorthand method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShorthand property`(value: Boolean): Self = StObject.set(x, "Shorthand property", value.asInstanceOf[js.Any])
+      inline def `setShorthand property`(value: Boolean): Self = StObject.set(x, "Shorthand property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSpread Array`(value: Boolean): Self = StObject.set(x, "Spread Array", value.asInstanceOf[js.Any])
+      inline def `setSpread Array`(value: Boolean): Self = StObject.set(x, "Spread Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSpread Function call`(value: Boolean): Self = StObject.set(x, "Spread Function call", value.asInstanceOf[js.Any])
+      inline def `setSpread Function call`(value: Boolean): Self = StObject.set(x, "Spread Function call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTemplate Strings`(value: Boolean): Self = StObject.set(x, "Template Strings", value.asInstanceOf[js.Any])
+      inline def `setTemplate Strings`(value: Boolean): Self = StObject.set(x, "Template Strings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1408,25 +1221,20 @@ object anon {
   }
   object RecordES2016Builtinsboole {
     
-    @scala.inline
-    def apply(ArrayDotprototypeDotincludes: Boolean, TypedArrayDotprototypeDotincludes: Boolean, __all: Boolean): RecordES2016Builtinsboole = {
+    inline def apply(ArrayDotprototypeDotincludes: Boolean, TypedArrayDotprototypeDotincludes: Boolean, __all: Boolean): RecordES2016Builtinsboole = {
       val __obj = js.Dynamic.literal(__all = __all.asInstanceOf[js.Any])
       __obj.updateDynamic("Array.prototype.includes")(ArrayDotprototypeDotincludes.asInstanceOf[js.Any])
       __obj.updateDynamic("TypedArray.prototype.includes")(TypedArrayDotprototypeDotincludes.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordES2016Builtinsboole]
     }
     
-    @scala.inline
-    implicit class RecordES2016BuiltinsbooleMutableBuilder[Self <: RecordES2016Builtinsboole] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2016Builtinsboole](x: Self) {
       
-      @scala.inline
-      def setArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "Array.prototype.includes", value.asInstanceOf[js.Any])
+      inline def setArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "Array.prototype.includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypedArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "TypedArray.prototype.includes", value.asInstanceOf[js.Any])
+      inline def setTypedArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "TypedArray.prototype.includes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1441,25 +1249,20 @@ object anon {
   }
   object RecordES2016Syntaxboolean {
     
-    @scala.inline
-    def apply(`Exponentiation operator`: Boolean, `Rest destructuring`: Boolean, __all: Boolean): RecordES2016Syntaxboolean = {
+    inline def apply(`Exponentiation operator`: Boolean, `Rest destructuring`: Boolean, __all: Boolean): RecordES2016Syntaxboolean = {
       val __obj = js.Dynamic.literal(__all = __all.asInstanceOf[js.Any])
       __obj.updateDynamic("Exponentiation operator")((`Exponentiation operator`).asInstanceOf[js.Any])
       __obj.updateDynamic("Rest destructuring")((`Rest destructuring`).asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordES2016Syntaxboolean]
     }
     
-    @scala.inline
-    implicit class RecordES2016SyntaxbooleanMutableBuilder[Self <: RecordES2016Syntaxboolean] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2016Syntaxboolean](x: Self) {
       
-      @scala.inline
-      def `setExponentiation operator`(value: Boolean): Self = StObject.set(x, "Exponentiation operator", value.asInstanceOf[js.Any])
+      inline def `setExponentiation operator`(value: Boolean): Self = StObject.set(x, "Exponentiation operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRest destructuring`(value: Boolean): Self = StObject.set(x, "Rest destructuring", value.asInstanceOf[js.Any])
+      inline def `setRest destructuring`(value: Boolean): Self = StObject.set(x, "Rest destructuring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1489,8 +1292,7 @@ object anon {
   }
   object RecordES2017Builtinsboole {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Atomics: Boolean,
       ObjectDotentries: Boolean,
       ObjectDotgetOwnPropertyDescriptors: Boolean,
@@ -1509,32 +1311,23 @@ object anon {
       __obj.asInstanceOf[RecordES2017Builtinsboole]
     }
     
-    @scala.inline
-    implicit class RecordES2017BuiltinsbooleMutableBuilder[Self <: RecordES2017Builtinsboole] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2017Builtinsboole](x: Self) {
       
-      @scala.inline
-      def setAtomics(value: Boolean): Self = StObject.set(x, "Atomics", value.asInstanceOf[js.Any])
+      inline def setAtomics(value: Boolean): Self = StObject.set(x, "Atomics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotentries(value: Boolean): Self = StObject.set(x, "Object.entries", value.asInstanceOf[js.Any])
+      inline def setObjectDotentries(value: Boolean): Self = StObject.set(x, "Object.entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotgetOwnPropertyDescriptors(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertyDescriptors", value.asInstanceOf[js.Any])
+      inline def setObjectDotgetOwnPropertyDescriptors(value: Boolean): Self = StObject.set(x, "Object.getOwnPropertyDescriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectDotvalues(value: Boolean): Self = StObject.set(x, "Object.values", value.asInstanceOf[js.Any])
+      inline def setObjectDotvalues(value: Boolean): Self = StObject.set(x, "Object.values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedArrayBuffer(value: Boolean): Self = StObject.set(x, "SharedArrayBuffer", value.asInstanceOf[js.Any])
+      inline def setSharedArrayBuffer(value: Boolean): Self = StObject.set(x, "SharedArrayBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotpadEnd(value: Boolean): Self = StObject.set(x, "String.prototype.padEnd", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotpadEnd(value: Boolean): Self = StObject.set(x, "String.prototype.padEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDotprototypeDotpadStart(value: Boolean): Self = StObject.set(x, "String.prototype.padStart", value.asInstanceOf[js.Any])
+      inline def setStringDotprototypeDotpadStart(value: Boolean): Self = StObject.set(x, "String.prototype.padStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1550,25 +1343,20 @@ object anon {
   }
   object RecordES2017Syntaxboolean {
     
-    @scala.inline
-    def apply(`Trailing parameter commas`: Boolean, __all: Boolean, asyncSlashawait: Boolean): RecordES2017Syntaxboolean = {
+    inline def apply(`Trailing parameter commas`: Boolean, __all: Boolean, asyncSlashawait: Boolean): RecordES2017Syntaxboolean = {
       val __obj = js.Dynamic.literal(__all = __all.asInstanceOf[js.Any])
       __obj.updateDynamic("Trailing parameter commas")((`Trailing parameter commas`).asInstanceOf[js.Any])
       __obj.updateDynamic("async/await")(asyncSlashawait.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordES2017Syntaxboolean]
     }
     
-    @scala.inline
-    implicit class RecordES2017SyntaxbooleanMutableBuilder[Self <: RecordES2017Syntaxboolean] (val x: Self) extends AnyVal {
+    extension [Self <: RecordES2017Syntaxboolean](x: Self) {
       
-      @scala.inline
-      def setAsyncSlashawait(value: Boolean): Self = StObject.set(x, "async/await", value.asInstanceOf[js.Any])
+      inline def setAsyncSlashawait(value: Boolean): Self = StObject.set(x, "async/await", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTrailing parameter commas`(value: Boolean): Self = StObject.set(x, "Trailing parameter commas", value.asInstanceOf[js.Any])
+      inline def `setTrailing parameter commas`(value: Boolean): Self = StObject.set(x, "Trailing parameter commas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
+      inline def set__all(value: Boolean): Self = StObject.set(x, "__all", value.asInstanceOf[js.Any])
     }
   }
 }

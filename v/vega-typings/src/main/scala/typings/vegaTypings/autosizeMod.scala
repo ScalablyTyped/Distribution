@@ -24,19 +24,14 @@ object autosizeMod {
        with AutoSize
   object AutoSizeType {
     
-    @scala.inline
-    def fit: typings.vegaTypings.vegaTypingsStrings.fit = "fit".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.fit]
+    inline def fit: typings.vegaTypings.vegaTypingsStrings.fit = "fit".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.fit]
     
-    @scala.inline
-    def `fit-x`: typings.vegaTypings.vegaTypingsStrings.`fit-x` = "fit-x".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`fit-x`]
+    inline def `fit-x`: typings.vegaTypings.vegaTypingsStrings.`fit-x` = "fit-x".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`fit-x`]
     
-    @scala.inline
-    def `fit-y`: typings.vegaTypings.vegaTypingsStrings.`fit-y` = "fit-y".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`fit-y`]
+    inline def `fit-y`: typings.vegaTypings.vegaTypingsStrings.`fit-y` = "fit-y".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`fit-y`]
     
-    @scala.inline
-    def none: typings.vegaTypings.vegaTypingsStrings.none = "none".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.none]
+    inline def none: typings.vegaTypings.vegaTypingsStrings.none = "none".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.none]
     
-    @scala.inline
-    def pad: typings.vegaTypings.vegaTypingsStrings.pad = "pad".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pad]
+    inline def pad: typings.vegaTypings.vegaTypingsStrings.pad = "pad".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.pad]
   }
 }

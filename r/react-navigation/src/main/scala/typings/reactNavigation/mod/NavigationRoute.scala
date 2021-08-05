@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavigationRoute[Params] extends StObject
 object NavigationRoute {
   
-  @scala.inline
-  def NavigationLeafRoute[Params](
+  inline def NavigationLeafRoute[Params](
     index: Double,
     isTransitioning: Boolean,
     key: String,
@@ -23,8 +22,7 @@ object NavigationRoute {
     __obj.asInstanceOf[typings.reactNavigation.mod.NavigationLeafRoute[Params]]
   }
   
-  @scala.inline
-  def NavigationStateRoute[Params](
+  inline def NavigationStateRoute[Params](
     index: Double,
     isTransitioning: Boolean,
     key: String,

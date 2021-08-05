@@ -19,27 +19,21 @@ object token {
   }
   object Token {
     
-    @scala.inline
-    def apply(compare: Token => Double, equals_ : Token => Boolean, getType: () => Code, getValue: () => js.Any): Token = {
+    inline def apply(compare: Token => Double, equals_ : Token => Boolean, getType: () => Code, getValue: () => js.Any): Token = {
       val __obj = js.Dynamic.literal(compare = js.Any.fromFunction1(compare), getType = js.Any.fromFunction0(getType), getValue = js.Any.fromFunction0(getValue))
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setCompare(value: Token => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
+      inline def setCompare(value: Token => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEquals_(value: Token => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: Token => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetType(value: () => Code): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+      inline def setGetType(value: () => Code): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -65,8 +59,7 @@ object token {
   }
   object TokenRange {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compare: TokenRange => Double,
       contains: Token => Boolean,
       end: Token,
@@ -82,35 +75,25 @@ object token {
       __obj.asInstanceOf[TokenRange]
     }
     
-    @scala.inline
-    implicit class TokenRangeMutableBuilder[Self <: TokenRange] (val x: Self) extends AnyVal {
+    extension [Self <: TokenRange](x: Self) {
       
-      @scala.inline
-      def setCompare(value: TokenRange => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
+      inline def setCompare(value: TokenRange => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContains(value: Token => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: Token => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnd(value: Token): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Token): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_(value: TokenRange => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+      inline def setEquals_(value: TokenRange => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWrappedAround(value: () => Boolean): Self = StObject.set(x, "isWrappedAround", js.Any.fromFunction0(value))
+      inline def setIsWrappedAround(value: () => Boolean): Self = StObject.set(x, "isWrappedAround", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSplitEvenly(value: Double => js.Array[TokenRange]): Self = StObject.set(x, "splitEvenly", js.Any.fromFunction1(value))
+      inline def setSplitEvenly(value: Double => js.Array[TokenRange]): Self = StObject.set(x, "splitEvenly", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: Token): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Token): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnwrap(value: () => js.Array[TokenRange]): Self = StObject.set(x, "unwrap", js.Any.fromFunction0(value))
+      inline def setUnwrap(value: () => js.Array[TokenRange]): Self = StObject.set(x, "unwrap", js.Any.fromFunction0(value))
     }
   }
 }

@@ -13,11 +13,11 @@ class RandomUniform protected () extends Initializer {
   
   val DEFAULT_MINVAL: /* -0.05 */ Double = js.native
   
-  var maxval: js.Any = js.native
+  /* private */ var maxval: js.Any = js.native
   
-  var minval: js.Any = js.native
+  /* private */ var minval: js.Any = js.native
   
-  var seed: js.Any = js.native
+  /* private */ var seed: js.Any = js.native
 }
 /* static members */
 object RandomUniform {
@@ -30,6 +30,5 @@ object RandomUniform {
   @JSImport("@tensorflow/tfjs-layers/dist/initializers", "RandomUniform.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

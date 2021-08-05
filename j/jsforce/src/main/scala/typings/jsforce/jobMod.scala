@@ -67,27 +67,21 @@ object jobMod {
   }
   object JobInfo {
     
-    @scala.inline
-    def apply(id: String, `object`: String, operation: String, state: String): JobInfo = {
+    inline def apply(id: String, `object`: String, operation: String, state: String): JobInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JobInfo]
     }
     
-    @scala.inline
-    implicit class JobInfoMutableBuilder[Self <: JobInfo] (val x: Self) extends AnyVal {
+    extension [Self <: JobInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

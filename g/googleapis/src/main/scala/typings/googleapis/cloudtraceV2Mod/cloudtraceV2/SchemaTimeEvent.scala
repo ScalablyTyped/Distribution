@@ -26,31 +26,23 @@ trait SchemaTimeEvent extends StObject {
 }
 object SchemaTimeEvent {
   
-  @scala.inline
-  def apply(): SchemaTimeEvent = {
+  inline def apply(): SchemaTimeEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTimeEvent]
   }
   
-  @scala.inline
-  implicit class SchemaTimeEventMutableBuilder[Self <: SchemaTimeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTimeEvent](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: SchemaAnnotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: SchemaAnnotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
+    inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
-    @scala.inline
-    def setMessageEvent(value: SchemaMessageEvent): Self = StObject.set(x, "messageEvent", value.asInstanceOf[js.Any])
+    inline def setMessageEvent(value: SchemaMessageEvent): Self = StObject.set(x, "messageEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageEventUndefined: Self = StObject.set(x, "messageEvent", js.undefined)
+    inline def setMessageEventUndefined: Self = StObject.set(x, "messageEvent", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

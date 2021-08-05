@@ -20,37 +20,27 @@ trait GoogleDevtoolsArtifactregistryV1alpha1Package extends StObject {
 }
 object GoogleDevtoolsArtifactregistryV1alpha1Package {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsArtifactregistryV1alpha1Package = {
+  inline def apply(): GoogleDevtoolsArtifactregistryV1alpha1Package = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsArtifactregistryV1alpha1Package]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsArtifactregistryV1alpha1PackageMutableBuilder[Self <: GoogleDevtoolsArtifactregistryV1alpha1Package] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsArtifactregistryV1alpha1Package](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AccountCustomization extends StObject {
 }
 object AccountCustomization {
   
-  @scala.inline
-  def apply(): AccountCustomization = {
+  inline def apply(): AccountCustomization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountCustomization]
   }
   
-  @scala.inline
-  implicit class AccountCustomizationMutableBuilder[Self <: AccountCustomization] (val x: Self) extends AnyVal {
+  extension [Self <: AccountCustomization](x: Self) {
     
-    @scala.inline
-    def setDefaultTheme(value: Arn): Self = StObject.set(x, "DefaultTheme", value.asInstanceOf[js.Any])
+    inline def setDefaultTheme(value: Arn): Self = StObject.set(x, "DefaultTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultThemeUndefined: Self = StObject.set(x, "DefaultTheme", js.undefined)
+    inline def setDefaultThemeUndefined: Self = StObject.set(x, "DefaultTheme", js.undefined)
   }
 }

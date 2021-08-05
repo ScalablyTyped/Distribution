@@ -13,16 +13,13 @@ trait TimePickerAndroidDismissedAction
 }
 object TimePickerAndroidDismissedAction {
   
-  @scala.inline
-  def apply(): TimePickerAndroidDismissedAction = {
+  inline def apply(): TimePickerAndroidDismissedAction = {
     val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[TimePickerAndroidDismissedAction]
   }
   
-  @scala.inline
-  implicit class TimePickerAndroidDismissedActionMutableBuilder[Self <: TimePickerAndroidDismissedAction] (val x: Self) extends AnyVal {
+  extension [Self <: TimePickerAndroidDismissedAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

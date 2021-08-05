@@ -21,40 +21,29 @@ trait ParsedTsconfig extends StObject {
 }
 object ParsedTsconfig {
   
-  @scala.inline
-  def apply(raw: js.Any): ParsedTsconfig = {
+  inline def apply(raw: js.Any): ParsedTsconfig = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedTsconfig]
   }
   
-  @scala.inline
-  implicit class ParsedTsconfigMutableBuilder[Self <: ParsedTsconfig] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedTsconfig](x: Self) {
     
-    @scala.inline
-    def setExtendedConfigPath(value: java.lang.String): Self = StObject.set(x, "extendedConfigPath", value.asInstanceOf[js.Any])
+    inline def setExtendedConfigPath(value: java.lang.String): Self = StObject.set(x, "extendedConfigPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedConfigPathUndefined: Self = StObject.set(x, "extendedConfigPath", js.undefined)
+    inline def setExtendedConfigPathUndefined: Self = StObject.set(x, "extendedConfigPath", js.undefined)
     
-    @scala.inline
-    def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
+    inline def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAcquisitionUndefined: Self = StObject.set(x, "typeAcquisition", js.undefined)
+    inline def setTypeAcquisitionUndefined: Self = StObject.set(x, "typeAcquisition", js.undefined)
     
-    @scala.inline
-    def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
+    inline def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
+    inline def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
   }
 }

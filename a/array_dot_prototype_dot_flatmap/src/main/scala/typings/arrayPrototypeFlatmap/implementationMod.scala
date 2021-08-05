@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object implementationMod {
   
-  @scala.inline
-  def apply[A, B, T /* <: js.UndefOr[js.Object] */](
+  inline def apply[A, B, T /* <: js.UndefOr[js.Object] */](
     xs: ReadonlyArray[A],
     fn: js.ThisFunction3[/* this */ T, /* x */ A, /* index */ Double, /* array */ Array[A], ReadonlyArray[B]]
   ): Array[B] = (^.asInstanceOf[js.Dynamic].apply(xs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Array[B]]
-  @scala.inline
-  def apply[A, B, T /* <: js.UndefOr[js.Object] */](
+  inline def apply[A, B, T /* <: js.UndefOr[js.Object] */](
     xs: ReadonlyArray[A],
     fn: js.ThisFunction3[/* this */ T, /* x */ A, /* index */ Double, /* array */ Array[A], ReadonlyArray[B]],
     thisArg: T

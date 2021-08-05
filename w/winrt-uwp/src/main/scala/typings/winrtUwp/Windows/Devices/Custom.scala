@@ -150,8 +150,7 @@ object Custom {
   }
   object CustomDevice {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inputStream: IInputStream,
       outputStream: IOutputStream,
       sendIOControlAsync: (IIOControlCode, IBuffer, IBuffer) => IPromiseWithIAsyncOperation[Double],
@@ -161,20 +160,15 @@ object Custom {
       __obj.asInstanceOf[CustomDevice]
     }
     
-    @scala.inline
-    implicit class CustomDeviceMutableBuilder[Self <: CustomDevice] (val x: Self) extends AnyVal {
+    extension [Self <: CustomDevice](x: Self) {
       
-      @scala.inline
-      def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+      inline def setInputStream(value: IInputStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputStream(value: IOutputStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: IOutputStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendIOControlAsync(value: (IIOControlCode, IBuffer, IBuffer) => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "sendIOControlAsync", js.Any.fromFunction3(value))
+      inline def setSendIOControlAsync(value: (IIOControlCode, IBuffer, IBuffer) => IPromiseWithIAsyncOperation[Double]): Self = StObject.set(x, "sendIOControlAsync", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTrySendIOControlAsync(value: (IIOControlCode, IBuffer, IBuffer) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySendIOControlAsync", js.Any.fromFunction3(value))
+      inline def setTrySendIOControlAsync(value: (IIOControlCode, IBuffer, IBuffer) => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySendIOControlAsync", js.Any.fromFunction3(value))
     }
   }
   
@@ -198,8 +192,7 @@ object Custom {
   }
   object IIOControlCode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessMode: IOControlAccessMode,
       bufferingMethod: IOControlBufferingMethod,
       controlCode: Double,
@@ -210,23 +203,17 @@ object Custom {
       __obj.asInstanceOf[IIOControlCode]
     }
     
-    @scala.inline
-    implicit class IIOControlCodeMutableBuilder[Self <: IIOControlCode] (val x: Self) extends AnyVal {
+    extension [Self <: IIOControlCode](x: Self) {
       
-      @scala.inline
-      def setAccessMode(value: IOControlAccessMode): Self = StObject.set(x, "accessMode", value.asInstanceOf[js.Any])
+      inline def setAccessMode(value: IOControlAccessMode): Self = StObject.set(x, "accessMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferingMethod(value: IOControlBufferingMethod): Self = StObject.set(x, "bufferingMethod", value.asInstanceOf[js.Any])
+      inline def setBufferingMethod(value: IOControlBufferingMethod): Self = StObject.set(x, "bufferingMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlCode(value: Double): Self = StObject.set(x, "controlCode", value.asInstanceOf[js.Any])
+      inline def setControlCode(value: Double): Self = StObject.set(x, "controlCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceType(value: Double): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+      inline def setDeviceType(value: Double): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction(value: Double): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Double): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,8 +237,7 @@ object Custom {
   }
   object IOControlCode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessMode: IOControlAccessMode,
       bufferingMethod: IOControlBufferingMethod,
       controlCode: Double,
@@ -262,23 +248,17 @@ object Custom {
       __obj.asInstanceOf[IOControlCode]
     }
     
-    @scala.inline
-    implicit class IOControlCodeMutableBuilder[Self <: IOControlCode] (val x: Self) extends AnyVal {
+    extension [Self <: IOControlCode](x: Self) {
       
-      @scala.inline
-      def setAccessMode(value: IOControlAccessMode): Self = StObject.set(x, "accessMode", value.asInstanceOf[js.Any])
+      inline def setAccessMode(value: IOControlAccessMode): Self = StObject.set(x, "accessMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferingMethod(value: IOControlBufferingMethod): Self = StObject.set(x, "bufferingMethod", value.asInstanceOf[js.Any])
+      inline def setBufferingMethod(value: IOControlBufferingMethod): Self = StObject.set(x, "bufferingMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlCode(value: Double): Self = StObject.set(x, "controlCode", value.asInstanceOf[js.Any])
+      inline def setControlCode(value: Double): Self = StObject.set(x, "controlCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceType(value: Double): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+      inline def setDeviceType(value: Double): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunction(value: Double): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Double): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     }
   }
   

@@ -12,14 +12,10 @@ object getAutoscalingGroupsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAutoscalingGroups(): js.Promise[GetAutoscalingGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")().asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
-  @scala.inline
-  def getAutoscalingGroups(args: Unit, opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
-  @scala.inline
-  def getAutoscalingGroups(args: GetAutoscalingGroupsArgs): js.Promise[GetAutoscalingGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
-  @scala.inline
-  def getAutoscalingGroups(args: GetAutoscalingGroupsArgs, opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  inline def getAutoscalingGroups(): js.Promise[GetAutoscalingGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")().asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  inline def getAutoscalingGroups(args: Unit, opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  inline def getAutoscalingGroups(args: GetAutoscalingGroupsArgs): js.Promise[GetAutoscalingGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
+  inline def getAutoscalingGroups(args: GetAutoscalingGroupsArgs, opts: InvokeOptions): js.Promise[GetAutoscalingGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoscalingGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAutoscalingGroupsResult]]
   
   trait GetAutoscalingGroupsArgs extends StObject {
     
@@ -30,23 +26,18 @@ object getAutoscalingGroupsMod {
   }
   object GetAutoscalingGroupsArgs {
     
-    @scala.inline
-    def apply(): GetAutoscalingGroupsArgs = {
+    inline def apply(): GetAutoscalingGroupsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAutoscalingGroupsArgs]
     }
     
-    @scala.inline
-    implicit class GetAutoscalingGroupsArgsMutableBuilder[Self <: GetAutoscalingGroupsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetAutoscalingGroupsArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetAutoscalingGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetAutoscalingGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetAutoscalingGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetAutoscalingGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     }
   }
   
@@ -71,38 +62,28 @@ object getAutoscalingGroupsMod {
   }
   object GetAutoscalingGroupsResult {
     
-    @scala.inline
-    def apply(arns: js.Array[String], id: String, names: js.Array[String]): GetAutoscalingGroupsResult = {
+    inline def apply(arns: js.Array[String], id: String, names: js.Array[String]): GetAutoscalingGroupsResult = {
       val __obj = js.Dynamic.literal(arns = arns.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAutoscalingGroupsResult]
     }
     
-    @scala.inline
-    implicit class GetAutoscalingGroupsResultMutableBuilder[Self <: GetAutoscalingGroupsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetAutoscalingGroupsResult](x: Self) {
       
-      @scala.inline
-      def setArns(value: js.Array[String]): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
+      inline def setArns(value: js.Array[String]): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnsVarargs(value: String*): Self = StObject.set(x, "arns", js.Array(value :_*))
+      inline def setArnsVarargs(value: String*): Self = StObject.set(x, "arns", js.Array(value :_*))
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetAutoscalingGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.GetAutoscalingGroupsFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetAutoscalingGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.GetAutoscalingGroupsFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     }
   }
 }

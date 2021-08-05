@@ -30,20 +30,16 @@ object stringDecoderMod {
   }
   object NodeStringDecoder {
     
-    @scala.inline
-    def apply(detectIncompleteChar: Buffer => Double, write: Buffer => String): NodeStringDecoder = {
+    inline def apply(detectIncompleteChar: Buffer => Double, write: Buffer => String): NodeStringDecoder = {
       val __obj = js.Dynamic.literal(detectIncompleteChar = js.Any.fromFunction1(detectIncompleteChar), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[NodeStringDecoder]
     }
     
-    @scala.inline
-    implicit class NodeStringDecoderMutableBuilder[Self <: NodeStringDecoder] (val x: Self) extends AnyVal {
+    extension [Self <: NodeStringDecoder](x: Self) {
       
-      @scala.inline
-      def setDetectIncompleteChar(value: Buffer => Double): Self = StObject.set(x, "detectIncompleteChar", js.Any.fromFunction1(value))
+      inline def setDetectIncompleteChar(value: Buffer => Double): Self = StObject.set(x, "detectIncompleteChar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: Buffer => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: Buffer => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
 }

@@ -20,49 +20,35 @@ trait CollatorOptions extends StObject {
 }
 object CollatorOptions {
   
-  @scala.inline
-  def apply(): CollatorOptions = {
+  inline def apply(): CollatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollatorOptions]
   }
   
-  @scala.inline
-  implicit class CollatorOptionsMutableBuilder[Self <: CollatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollatorOptions](x: Self) {
     
-    @scala.inline
-    def setCaseFirst(value: String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
+    inline def setCaseFirst(value: String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseFirstUndefined: Self = StObject.set(x, "caseFirst", js.undefined)
+    inline def setCaseFirstUndefined: Self = StObject.set(x, "caseFirst", js.undefined)
     
-    @scala.inline
-    def setIgnorePunctuation(value: Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
+    inline def setIgnorePunctuation(value: Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePunctuationUndefined: Self = StObject.set(x, "ignorePunctuation", js.undefined)
+    inline def setIgnorePunctuationUndefined: Self = StObject.set(x, "ignorePunctuation", js.undefined)
     
-    @scala.inline
-    def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    inline def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+    inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
-    @scala.inline
-    def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+    inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
-    @scala.inline
-    def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+    inline def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
+    inline def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
     
-    @scala.inline
-    def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    inline def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

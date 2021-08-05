@@ -27,7 +27,7 @@ trait WorkflowTask extends StObject {
   
   val Name: String
   
-  @JSName("Office.WorkflowTask_typekey")
+  /* private */ @JSName("Office.WorkflowTask_typekey")
   var OfficeDotWorkflowTask_typekey: WorkflowTask
   
   def Show(): Double
@@ -36,8 +36,7 @@ trait WorkflowTask extends StObject {
 }
 object WorkflowTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     AssignedTo: String,
     CreatedBy: String,
@@ -57,46 +56,32 @@ object WorkflowTask {
     __obj.asInstanceOf[WorkflowTask]
   }
   
-  @scala.inline
-  implicit class WorkflowTaskMutableBuilder[Self <: WorkflowTask] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTask](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedTo(value: String): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
+    inline def setAssignedTo(value: String): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: VarDate): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDate(value: VarDate): Self = StObject.set(x, "DueDate", value.asInstanceOf[js.Any])
+    inline def setDueDate(value: VarDate): Self = StObject.set(x, "DueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListID(value: String): Self = StObject.set(x, "ListID", value.asInstanceOf[js.Any])
+    inline def setListID(value: String): Self = StObject.set(x, "ListID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotWorkflowTask_typekey(value: WorkflowTask): Self = StObject.set(x, "Office.WorkflowTask_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotWorkflowTask_typekey(value: WorkflowTask): Self = StObject.set(x, "Office.WorkflowTask_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: () => Double): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Double): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWorkflowID(value: String): Self = StObject.set(x, "WorkflowID", value.asInstanceOf[js.Any])
+    inline def setWorkflowID(value: String): Self = StObject.set(x, "WorkflowID", value.asInstanceOf[js.Any])
   }
 }

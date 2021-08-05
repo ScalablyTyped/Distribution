@@ -12,25 +12,19 @@ trait TemperatureMax extends StObject {
 }
 object TemperatureMax {
   
-  @scala.inline
-  def apply(): TemperatureMax = {
+  inline def apply(): TemperatureMax = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemperatureMax]
   }
   
-  @scala.inline
-  implicit class TemperatureMaxMutableBuilder[Self <: TemperatureMax] (val x: Self) extends AnyVal {
+  extension [Self <: TemperatureMax](x: Self) {
     
-    @scala.inline
-    def setTemperatureMax(value: Double): Self = StObject.set(x, "temperatureMax", value.asInstanceOf[js.Any])
+    inline def setTemperatureMax(value: Double): Self = StObject.set(x, "temperatureMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemperatureMaxUndefined: Self = StObject.set(x, "temperatureMax", js.undefined)
+    inline def setTemperatureMaxUndefined: Self = StObject.set(x, "temperatureMax", js.undefined)
     
-    @scala.inline
-    def setTemperatureMin(value: Double): Self = StObject.set(x, "temperatureMin", value.asInstanceOf[js.Any])
+    inline def setTemperatureMin(value: Double): Self = StObject.set(x, "temperatureMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemperatureMinUndefined: Self = StObject.set(x, "temperatureMin", js.undefined)
+    inline def setTemperatureMinUndefined: Self = StObject.set(x, "temperatureMin", js.undefined)
   }
 }

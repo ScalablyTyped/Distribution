@@ -18,17 +18,14 @@ object typesInvalidRepositoryTriggerCustomDataExceptionMod {
   }
   object InvalidRepositoryTriggerCustomDataException {
     
-    @scala.inline
-    def apply(): InvalidRepositoryTriggerCustomDataException = {
+    inline def apply(): InvalidRepositoryTriggerCustomDataException = {
       val __obj = js.Dynamic.literal(name = "InvalidRepositoryTriggerCustomDataException")
       __obj.asInstanceOf[InvalidRepositoryTriggerCustomDataException]
     }
     
-    @scala.inline
-    implicit class InvalidRepositoryTriggerCustomDataExceptionMutableBuilder[Self <: InvalidRepositoryTriggerCustomDataException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRepositoryTriggerCustomDataException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryTriggerCustomDataException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

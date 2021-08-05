@@ -13,7 +13,7 @@ trait FaxInboundRoutingMethod extends StObject {
   /** Image name of the extension exposing this method */
   val ExtensionImageName: String
   
-  @JSName("FAXCOMEXLib.FaxInboundRoutingMethod_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxInboundRoutingMethod_typekey")
   var FAXCOMEXLibDotFaxInboundRoutingMethod_typekey: FaxInboundRoutingMethod
   
   /** Internal function name */
@@ -36,8 +36,7 @@ trait FaxInboundRoutingMethod extends StObject {
 }
 object FaxInboundRoutingMethod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExtensionFriendlyName: String,
     ExtensionImageName: String,
     FAXCOMEXLibDotFaxInboundRoutingMethod_typekey: FaxInboundRoutingMethod,
@@ -53,34 +52,24 @@ object FaxInboundRoutingMethod {
     __obj.asInstanceOf[FaxInboundRoutingMethod]
   }
   
-  @scala.inline
-  implicit class FaxInboundRoutingMethodMutableBuilder[Self <: FaxInboundRoutingMethod] (val x: Self) extends AnyVal {
+  extension [Self <: FaxInboundRoutingMethod](x: Self) {
     
-    @scala.inline
-    def setExtensionFriendlyName(value: String): Self = StObject.set(x, "ExtensionFriendlyName", value.asInstanceOf[js.Any])
+    inline def setExtensionFriendlyName(value: String): Self = StObject.set(x, "ExtensionFriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionImageName(value: String): Self = StObject.set(x, "ExtensionImageName", value.asInstanceOf[js.Any])
+    inline def setExtensionImageName(value: String): Self = StObject.set(x, "ExtensionImageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxInboundRoutingMethod_typekey(value: FaxInboundRoutingMethod): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRoutingMethod_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxInboundRoutingMethod_typekey(value: FaxInboundRoutingMethod): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRoutingMethod_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+    inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
   }
 }

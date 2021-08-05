@@ -29,8 +29,7 @@ trait ChecksCreateParamsOutputAnnotations extends StObject {
 }
 object ChecksCreateParamsOutputAnnotations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotation_level: notice | warning | failure,
     end_line: Double,
     message: String,
@@ -41,46 +40,32 @@ object ChecksCreateParamsOutputAnnotations {
     __obj.asInstanceOf[ChecksCreateParamsOutputAnnotations]
   }
   
-  @scala.inline
-  implicit class ChecksCreateParamsOutputAnnotationsMutableBuilder[Self <: ChecksCreateParamsOutputAnnotations] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksCreateParamsOutputAnnotations](x: Self) {
     
-    @scala.inline
-    def setAnnotation_level(value: notice | warning | failure): Self = StObject.set(x, "annotation_level", value.asInstanceOf[js.Any])
+    inline def setAnnotation_level(value: notice | warning | failure): Self = StObject.set(x, "annotation_level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_column(value: Double): Self = StObject.set(x, "end_column", value.asInstanceOf[js.Any])
+    inline def setEnd_column(value: Double): Self = StObject.set(x, "end_column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_columnUndefined: Self = StObject.set(x, "end_column", js.undefined)
+    inline def setEnd_columnUndefined: Self = StObject.set(x, "end_column", js.undefined)
     
-    @scala.inline
-    def setEnd_line(value: Double): Self = StObject.set(x, "end_line", value.asInstanceOf[js.Any])
+    inline def setEnd_line(value: Double): Self = StObject.set(x, "end_line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_details(value: String): Self = StObject.set(x, "raw_details", value.asInstanceOf[js.Any])
+    inline def setRaw_details(value: String): Self = StObject.set(x, "raw_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw_detailsUndefined: Self = StObject.set(x, "raw_details", js.undefined)
+    inline def setRaw_detailsUndefined: Self = StObject.set(x, "raw_details", js.undefined)
     
-    @scala.inline
-    def setStart_column(value: Double): Self = StObject.set(x, "start_column", value.asInstanceOf[js.Any])
+    inline def setStart_column(value: Double): Self = StObject.set(x, "start_column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_columnUndefined: Self = StObject.set(x, "start_column", js.undefined)
+    inline def setStart_columnUndefined: Self = StObject.set(x, "start_column", js.undefined)
     
-    @scala.inline
-    def setStart_line(value: Double): Self = StObject.set(x, "start_line", value.asInstanceOf[js.Any])
+    inline def setStart_line(value: Double): Self = StObject.set(x, "start_line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

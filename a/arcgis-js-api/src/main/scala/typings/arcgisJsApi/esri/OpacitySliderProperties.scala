@@ -31,34 +31,25 @@ trait OpacitySliderProperties
 }
 object OpacitySliderProperties {
   
-  @scala.inline
-  def apply(): OpacitySliderProperties = {
+  inline def apply(): OpacitySliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpacitySliderProperties]
   }
   
-  @scala.inline
-  implicit class OpacitySliderPropertiesMutableBuilder[Self <: OpacitySliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OpacitySliderProperties](x: Self) {
     
-    @scala.inline
-    def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: OpacityStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: OpacitySliderStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: OpacitySliderStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: OpacitySliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: OpacitySliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

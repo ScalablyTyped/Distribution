@@ -28,28 +28,21 @@ trait IntegerParameterRange extends StObject {
 }
 object IntegerParameterRange {
   
-  @scala.inline
-  def apply(MaxValue: ParameterValue, MinValue: ParameterValue, Name: ParameterKey): IntegerParameterRange = {
+  inline def apply(MaxValue: ParameterValue, MinValue: ParameterValue, Name: ParameterKey): IntegerParameterRange = {
     val __obj = js.Dynamic.literal(MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerParameterRange]
   }
   
-  @scala.inline
-  implicit class IntegerParameterRangeMutableBuilder[Self <: IntegerParameterRange] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerParameterRange](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: ParameterValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: ParameterValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: ParameterValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: ParameterValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ParameterKey): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ParameterKey): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingType(value: HyperParameterScalingType): Self = StObject.set(x, "ScalingType", value.asInstanceOf[js.Any])
+    inline def setScalingType(value: HyperParameterScalingType): Self = StObject.set(x, "ScalingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalingTypeUndefined: Self = StObject.set(x, "ScalingType", js.undefined)
+    inline def setScalingTypeUndefined: Self = StObject.set(x, "ScalingType", js.undefined)
   }
 }

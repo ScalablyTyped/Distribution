@@ -77,48 +77,36 @@ object expandingCardTypesMod {
   }
   object IExpandingCardProps {
     
-    @scala.inline
-    def apply(): IExpandingCardProps = {
+    inline def apply(): IExpandingCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IExpandingCardProps]
     }
     
-    @scala.inline
-    implicit class IExpandingCardPropsMutableBuilder[Self <: IExpandingCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: IExpandingCardProps](x: Self) {
       
-      @scala.inline
-      def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
+      inline def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactCardHeightUndefined: Self = StObject.set(x, "compactCardHeight", js.undefined)
+      inline def setCompactCardHeightUndefined: Self = StObject.set(x, "compactCardHeight", js.undefined)
       
-      @scala.inline
-      def setExpandedCardHeight(value: Double): Self = StObject.set(x, "expandedCardHeight", value.asInstanceOf[js.Any])
+      inline def setExpandedCardHeight(value: Double): Self = StObject.set(x, "expandedCardHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedCardHeightUndefined: Self = StObject.set(x, "expandedCardHeight", js.undefined)
+      inline def setExpandedCardHeightUndefined: Self = StObject.set(x, "expandedCardHeight", js.undefined)
       
-      @scala.inline
-      def setMode(value: ExpandingCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: ExpandingCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnRenderCompactCard(
+      inline def setOnRenderCompactCard(
         value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderCompactCard", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderCompactCardUndefined: Self = StObject.set(x, "onRenderCompactCard", js.undefined)
+      inline def setOnRenderCompactCardUndefined: Self = StObject.set(x, "onRenderCompactCard", js.undefined)
       
-      @scala.inline
-      def setOnRenderExpandedCard(
+      inline def setOnRenderExpandedCard(
         value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderExpandedCard", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderExpandedCardUndefined: Self = StObject.set(x, "onRenderExpandedCard", js.undefined)
+      inline def setOnRenderExpandedCardUndefined: Self = StObject.set(x, "onRenderExpandedCard", js.undefined)
     }
   }
   
@@ -148,38 +136,28 @@ object expandingCardTypesMod {
   }
   object IExpandingCardStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IExpandingCardStyleProps = {
+    inline def apply(theme: ITheme): IExpandingCardStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IExpandingCardStyleProps]
     }
     
-    @scala.inline
-    implicit class IExpandingCardStylePropsMutableBuilder[Self <: IExpandingCardStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IExpandingCardStyleProps](x: Self) {
       
-      @scala.inline
-      def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
+      inline def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactCardHeightUndefined: Self = StObject.set(x, "compactCardHeight", js.undefined)
+      inline def setCompactCardHeightUndefined: Self = StObject.set(x, "compactCardHeight", js.undefined)
       
-      @scala.inline
-      def setExpandedCardFirstFrameRendered(value: Boolean): Self = StObject.set(x, "expandedCardFirstFrameRendered", value.asInstanceOf[js.Any])
+      inline def setExpandedCardFirstFrameRendered(value: Boolean): Self = StObject.set(x, "expandedCardFirstFrameRendered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedCardFirstFrameRenderedUndefined: Self = StObject.set(x, "expandedCardFirstFrameRendered", js.undefined)
+      inline def setExpandedCardFirstFrameRenderedUndefined: Self = StObject.set(x, "expandedCardFirstFrameRendered", js.undefined)
       
-      @scala.inline
-      def setExpandedCardHeight(value: Double): Self = StObject.set(x, "expandedCardHeight", value.asInstanceOf[js.Any])
+      inline def setExpandedCardHeight(value: Double): Self = StObject.set(x, "expandedCardHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedCardHeightUndefined: Self = StObject.set(x, "expandedCardHeight", js.undefined)
+      inline def setExpandedCardHeightUndefined: Self = StObject.set(x, "expandedCardHeight", js.undefined)
       
-      @scala.inline
-      def setNeedsScroll(value: Boolean): Self = StObject.set(x, "needsScroll", value.asInstanceOf[js.Any])
+      inline def setNeedsScroll(value: Boolean): Self = StObject.set(x, "needsScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedsScrollUndefined: Self = StObject.set(x, "needsScroll", js.undefined)
+      inline def setNeedsScrollUndefined: Self = StObject.set(x, "needsScroll", js.undefined)
     }
   }
   
@@ -204,41 +182,30 @@ object expandingCardTypesMod {
   }
   object IExpandingCardStyles {
     
-    @scala.inline
-    def apply(): IExpandingCardStyles = {
+    inline def apply(): IExpandingCardStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IExpandingCardStyles]
     }
     
-    @scala.inline
-    implicit class IExpandingCardStylesMutableBuilder[Self <: IExpandingCardStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IExpandingCardStyles](x: Self) {
       
-      @scala.inline
-      def setCompactCard(value: IStyle): Self = StObject.set(x, "compactCard", value.asInstanceOf[js.Any])
+      inline def setCompactCard(value: IStyle): Self = StObject.set(x, "compactCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactCardNull: Self = StObject.set(x, "compactCard", null)
+      inline def setCompactCardNull: Self = StObject.set(x, "compactCard", null)
       
-      @scala.inline
-      def setCompactCardUndefined: Self = StObject.set(x, "compactCard", js.undefined)
+      inline def setCompactCardUndefined: Self = StObject.set(x, "compactCard", js.undefined)
       
-      @scala.inline
-      def setExpandedCard(value: IStyle): Self = StObject.set(x, "expandedCard", value.asInstanceOf[js.Any])
+      inline def setExpandedCard(value: IStyle): Self = StObject.set(x, "expandedCard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedCardNull: Self = StObject.set(x, "expandedCard", null)
+      inline def setExpandedCardNull: Self = StObject.set(x, "expandedCard", null)
       
-      @scala.inline
-      def setExpandedCardScroll(value: IStyle): Self = StObject.set(x, "expandedCardScroll", value.asInstanceOf[js.Any])
+      inline def setExpandedCardScroll(value: IStyle): Self = StObject.set(x, "expandedCardScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedCardScrollNull: Self = StObject.set(x, "expandedCardScroll", null)
+      inline def setExpandedCardScrollNull: Self = StObject.set(x, "expandedCardScroll", null)
       
-      @scala.inline
-      def setExpandedCardScrollUndefined: Self = StObject.set(x, "expandedCardScroll", js.undefined)
+      inline def setExpandedCardScrollUndefined: Self = StObject.set(x, "expandedCardScroll", js.undefined)
       
-      @scala.inline
-      def setExpandedCardUndefined: Self = StObject.set(x, "expandedCard", js.undefined)
+      inline def setExpandedCardUndefined: Self = StObject.set(x, "expandedCard", js.undefined)
     }
   }
 }

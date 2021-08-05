@@ -20,25 +20,19 @@ trait OPENDIRECTORY extends StObject {
 }
 object OPENDIRECTORY {
   
-  @scala.inline
-  def apply(): OPENDIRECTORY = {
+  inline def apply(): OPENDIRECTORY = {
     val __obj = js.Dynamic.literal(OPEN_DIRECTORY = "openDirectory", OPEN_FILE = "openFile", OPEN_WRITABLE_FILE = "openWritableFile", SAVE_FILE = "saveFile")
     __obj.asInstanceOf[OPENDIRECTORY]
   }
   
-  @scala.inline
-  implicit class OPENDIRECTORYMutableBuilder[Self <: OPENDIRECTORY] (val x: Self) extends AnyVal {
+  extension [Self <: OPENDIRECTORY](x: Self) {
     
-    @scala.inline
-    def setOPEN_DIRECTORY(value: openDirectory): Self = StObject.set(x, "OPEN_DIRECTORY", value.asInstanceOf[js.Any])
+    inline def setOPEN_DIRECTORY(value: openDirectory): Self = StObject.set(x, "OPEN_DIRECTORY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPEN_FILE(value: openFile): Self = StObject.set(x, "OPEN_FILE", value.asInstanceOf[js.Any])
+    inline def setOPEN_FILE(value: openFile): Self = StObject.set(x, "OPEN_FILE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOPEN_WRITABLE_FILE(value: openWritableFile): Self = StObject.set(x, "OPEN_WRITABLE_FILE", value.asInstanceOf[js.Any])
+    inline def setOPEN_WRITABLE_FILE(value: openWritableFile): Self = StObject.set(x, "OPEN_WRITABLE_FILE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAVE_FILE(value: saveFile): Self = StObject.set(x, "SAVE_FILE", value.asInstanceOf[js.Any])
+    inline def setSAVE_FILE(value: saveFile): Self = StObject.set(x, "SAVE_FILE", value.asInstanceOf[js.Any])
   }
 }

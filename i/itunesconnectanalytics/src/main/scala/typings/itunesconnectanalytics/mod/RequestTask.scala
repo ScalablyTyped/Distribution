@@ -13,19 +13,15 @@ trait RequestTask extends StObject {
 }
 object RequestTask {
   
-  @scala.inline
-  def apply(completed: (Error, String) => Unit, query: String): RequestTask = {
+  inline def apply(completed: (Error, String) => Unit, query: String): RequestTask = {
     val __obj = js.Dynamic.literal(completed = js.Any.fromFunction2(completed), query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestTask]
   }
   
-  @scala.inline
-  implicit class RequestTaskMutableBuilder[Self <: RequestTask] (val x: Self) extends AnyVal {
+  extension [Self <: RequestTask](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: (Error, String) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    inline def setCompleted(value: (Error, String) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class NgLocaleLocalization protected () extends NgLocalization {
   def this(locale: String) = this()
   
-  var locale: String = js.native
+  /* protected */ var locale: String = js.native
 }

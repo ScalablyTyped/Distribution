@@ -20,37 +20,27 @@ trait EmbeddedObjectBorder extends StObject {
 }
 object EmbeddedObjectBorder {
   
-  @scala.inline
-  def apply(): EmbeddedObjectBorder = {
+  inline def apply(): EmbeddedObjectBorder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmbeddedObjectBorder]
   }
   
-  @scala.inline
-  implicit class EmbeddedObjectBorderMutableBuilder[Self <: EmbeddedObjectBorder] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedObjectBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+    inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+    inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

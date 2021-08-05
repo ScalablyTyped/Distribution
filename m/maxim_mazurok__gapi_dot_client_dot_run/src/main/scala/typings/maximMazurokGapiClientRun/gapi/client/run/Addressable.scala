@@ -10,19 +10,15 @@ trait Addressable extends StObject {
 }
 object Addressable {
   
-  @scala.inline
-  def apply(): Addressable = {
+  inline def apply(): Addressable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Addressable]
   }
   
-  @scala.inline
-  implicit class AddressableMutableBuilder[Self <: Addressable] (val x: Self) extends AnyVal {
+  extension [Self <: Addressable](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

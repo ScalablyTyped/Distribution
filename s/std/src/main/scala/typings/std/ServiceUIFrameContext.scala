@@ -12,8 +12,7 @@ trait ServiceUIFrameContext extends StObject {
 }
 object ServiceUIFrameContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCachedFrameMessage: java.lang.String => java.lang.String,
     postFrameMessage: (java.lang.String, java.lang.String) => Unit
   ): ServiceUIFrameContext = {
@@ -21,13 +20,10 @@ object ServiceUIFrameContext {
     __obj.asInstanceOf[ServiceUIFrameContext]
   }
   
-  @scala.inline
-  implicit class ServiceUIFrameContextMutableBuilder[Self <: ServiceUIFrameContext] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceUIFrameContext](x: Self) {
     
-    @scala.inline
-    def setGetCachedFrameMessage(value: java.lang.String => java.lang.String): Self = StObject.set(x, "getCachedFrameMessage", js.Any.fromFunction1(value))
+    inline def setGetCachedFrameMessage(value: java.lang.String => java.lang.String): Self = StObject.set(x, "getCachedFrameMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPostFrameMessage(value: (java.lang.String, java.lang.String) => Unit): Self = StObject.set(x, "postFrameMessage", js.Any.fromFunction2(value))
+    inline def setPostFrameMessage(value: (java.lang.String, java.lang.String) => Unit): Self = StObject.set(x, "postFrameMessage", js.Any.fromFunction2(value))
   }
 }

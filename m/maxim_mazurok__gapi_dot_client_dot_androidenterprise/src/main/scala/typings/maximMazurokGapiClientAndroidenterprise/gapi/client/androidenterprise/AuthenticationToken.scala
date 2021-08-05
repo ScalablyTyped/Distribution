@@ -11,19 +11,15 @@ trait AuthenticationToken extends StObject {
 }
 object AuthenticationToken {
   
-  @scala.inline
-  def apply(): AuthenticationToken = {
+  inline def apply(): AuthenticationToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationToken]
   }
   
-  @scala.inline
-  implicit class AuthenticationTokenMutableBuilder[Self <: AuthenticationToken] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationToken](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

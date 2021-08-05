@@ -31,8 +31,7 @@ trait ObjectConstructor extends StObject {
 }
 object ObjectConstructor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assign: (js.Any, /* repeated */ js.Any) => js.Any,
     is: (js.Any, js.Any) => Boolean,
     setPrototypeOf: (js.Any, js.Any) => js.Any
@@ -41,16 +40,12 @@ object ObjectConstructor {
     __obj.asInstanceOf[ObjectConstructor]
   }
   
-  @scala.inline
-  implicit class ObjectConstructorMutableBuilder[Self <: ObjectConstructor] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectConstructor](x: Self) {
     
-    @scala.inline
-    def setAssign(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
+    inline def setAssign(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIs(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
+    inline def setIs(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPrototypeOf(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setPrototypeOf", js.Any.fromFunction2(value))
+    inline def setSetPrototypeOf(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setPrototypeOf", js.Any.fromFunction2(value))
   }
 }

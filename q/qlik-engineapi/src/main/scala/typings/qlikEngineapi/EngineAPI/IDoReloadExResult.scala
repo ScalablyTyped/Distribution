@@ -21,19 +21,15 @@ trait IDoReloadExResult extends StObject {
 }
 object IDoReloadExResult {
   
-  @scala.inline
-  def apply(qScriptLogFile: String, qSuccess: Boolean): IDoReloadExResult = {
+  inline def apply(qScriptLogFile: String, qSuccess: Boolean): IDoReloadExResult = {
     val __obj = js.Dynamic.literal(qScriptLogFile = qScriptLogFile.asInstanceOf[js.Any], qSuccess = qSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDoReloadExResult]
   }
   
-  @scala.inline
-  implicit class IDoReloadExResultMutableBuilder[Self <: IDoReloadExResult] (val x: Self) extends AnyVal {
+  extension [Self <: IDoReloadExResult](x: Self) {
     
-    @scala.inline
-    def setQScriptLogFile(value: String): Self = StObject.set(x, "qScriptLogFile", value.asInstanceOf[js.Any])
+    inline def setQScriptLogFile(value: String): Self = StObject.set(x, "qScriptLogFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSuccess(value: Boolean): Self = StObject.set(x, "qSuccess", value.asInstanceOf[js.Any])
+    inline def setQSuccess(value: Boolean): Self = StObject.set(x, "qSuccess", value.asInstanceOf[js.Any])
   }
 }

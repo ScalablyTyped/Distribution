@@ -14,20 +14,16 @@ object commonCellMod {
   }
   object ICellCoordinates {
     
-    @scala.inline
-    def apply(col: Double, row: Double): ICellCoordinates = {
+    inline def apply(col: Double, row: Double): ICellCoordinates = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICellCoordinates]
     }
     
-    @scala.inline
-    implicit class ICellCoordinatesMutableBuilder[Self <: ICellCoordinates] (val x: Self) extends AnyVal {
+    extension [Self <: ICellCoordinates](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,17 +35,14 @@ object commonCellMod {
   }
   object IFocusedCellCoordinates {
     
-    @scala.inline
-    def apply(col: Double, focusSelectionIndex: Double, row: Double): IFocusedCellCoordinates = {
+    inline def apply(col: Double, focusSelectionIndex: Double, row: Double): IFocusedCellCoordinates = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], focusSelectionIndex = focusSelectionIndex.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFocusedCellCoordinates]
     }
     
-    @scala.inline
-    implicit class IFocusedCellCoordinatesMutableBuilder[Self <: IFocusedCellCoordinates] (val x: Self) extends AnyVal {
+    extension [Self <: IFocusedCellCoordinates](x: Self) {
       
-      @scala.inline
-      def setFocusSelectionIndex(value: Double): Self = StObject.set(x, "focusSelectionIndex", value.asInstanceOf[js.Any])
+      inline def setFocusSelectionIndex(value: Double): Self = StObject.set(x, "focusSelectionIndex", value.asInstanceOf[js.Any])
     }
   }
 }

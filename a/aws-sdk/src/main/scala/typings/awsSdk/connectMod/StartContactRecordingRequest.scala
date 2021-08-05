@@ -28,8 +28,7 @@ trait StartContactRecordingRequest extends StObject {
 }
 object StartContactRecordingRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContactId: ContactId,
     InitialContactId: ContactId,
     InstanceId: InstanceId,
@@ -39,19 +38,14 @@ object StartContactRecordingRequest {
     __obj.asInstanceOf[StartContactRecordingRequest]
   }
   
-  @scala.inline
-  implicit class StartContactRecordingRequestMutableBuilder[Self <: StartContactRecordingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartContactRecordingRequest](x: Self) {
     
-    @scala.inline
-    def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
+    inline def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceRecordingConfiguration(value: VoiceRecordingConfiguration): Self = StObject.set(x, "VoiceRecordingConfiguration", value.asInstanceOf[js.Any])
+    inline def setVoiceRecordingConfiguration(value: VoiceRecordingConfiguration): Self = StObject.set(x, "VoiceRecordingConfiguration", value.asInstanceOf[js.Any])
   }
 }

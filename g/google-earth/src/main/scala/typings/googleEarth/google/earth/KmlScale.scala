@@ -45,8 +45,7 @@ trait KmlScale
 }
 object KmlScale {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -74,28 +73,20 @@ object KmlScale {
     __obj.asInstanceOf[KmlScale]
   }
   
-  @scala.inline
-  implicit class KmlScaleMutableBuilder[Self <: KmlScale] (val x: Self) extends AnyVal {
+  extension [Self <: KmlScale](x: Self) {
     
-    @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+    inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+    inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetZ(value: () => Double): Self = StObject.set(x, "getZ", js.Any.fromFunction0(value))
+    inline def setGetZ(value: () => Double): Self = StObject.set(x, "getZ", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+    inline def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetX(value: Double => Unit): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
+    inline def setSetX(value: Double => Unit): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
+    inline def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetZ(value: Double => Unit): Self = StObject.set(x, "setZ", js.Any.fromFunction1(value))
+    inline def setSetZ(value: Double => Unit): Self = StObject.set(x, "setZ", js.Any.fromFunction1(value))
   }
 }

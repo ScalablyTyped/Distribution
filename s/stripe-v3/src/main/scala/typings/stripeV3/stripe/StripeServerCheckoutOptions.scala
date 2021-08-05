@@ -10,16 +10,13 @@ trait StripeServerCheckoutOptions extends StObject {
 }
 object StripeServerCheckoutOptions {
   
-  @scala.inline
-  def apply(sessionId: String): StripeServerCheckoutOptions = {
+  inline def apply(sessionId: String): StripeServerCheckoutOptions = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeServerCheckoutOptions]
   }
   
-  @scala.inline
-  implicit class StripeServerCheckoutOptionsMutableBuilder[Self <: StripeServerCheckoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StripeServerCheckoutOptions](x: Self) {
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

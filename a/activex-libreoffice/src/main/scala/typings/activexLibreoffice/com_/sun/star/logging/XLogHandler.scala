@@ -50,8 +50,7 @@ trait XLogHandler
 }
 object XLogHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Encoding: String,
     Formatter: XLogFormatter,
     Level: Double,
@@ -68,22 +67,16 @@ object XLogHandler {
     __obj.asInstanceOf[XLogHandler]
   }
   
-  @scala.inline
-  implicit class XLogHandlerMutableBuilder[Self <: XLogHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XLogHandler](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormatter(value: XLogFormatter): Self = StObject.set(x, "Formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: XLogFormatter): Self = StObject.set(x, "Formatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublish(value: LogRecord => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
+    inline def setPublish(value: LogRecord => Boolean): Self = StObject.set(x, "publish", js.Any.fromFunction1(value))
   }
 }

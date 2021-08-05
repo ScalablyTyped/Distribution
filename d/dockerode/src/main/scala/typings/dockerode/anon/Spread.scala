@@ -10,16 +10,13 @@ trait Spread extends StObject {
 }
 object Spread {
   
-  @scala.inline
-  def apply(Spread: SpreadDescriptor): Spread = {
+  inline def apply(Spread: SpreadDescriptor): Spread = {
     val __obj = js.Dynamic.literal(Spread = Spread.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spread]
   }
   
-  @scala.inline
-  implicit class SpreadMutableBuilder[Self <: Spread] (val x: Self) extends AnyVal {
+  extension [Self <: Spread](x: Self) {
     
-    @scala.inline
-    def setSpread(value: SpreadDescriptor): Self = StObject.set(x, "Spread", value.asInstanceOf[js.Any])
+    inline def setSpread(value: SpreadDescriptor): Self = StObject.set(x, "Spread", value.asInstanceOf[js.Any])
   }
 }

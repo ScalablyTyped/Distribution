@@ -19,20 +19,16 @@ object endpointOptionsMod {
   }
   object EndpointOptions {
     
-    @scala.inline
-    def apply(method: RequestMethod, url: Url): EndpointOptions = {
+    inline def apply(method: RequestMethod, url: Url): EndpointOptions = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndpointOptions]
     }
     
-    @scala.inline
-    implicit class EndpointOptionsMutableBuilder[Self <: EndpointOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointOptions](x: Self) {
       
-      @scala.inline
-      def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

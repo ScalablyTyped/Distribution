@@ -16,19 +16,15 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest ext
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest = {
+  inline def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequestMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociation(value: SchemaGoogleCloudPrivatecatalogproducerV1beta1Association): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
+    inline def setAssociation(value: SchemaGoogleCloudPrivatecatalogproducerV1beta1Association): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
+    inline def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
   }
 }

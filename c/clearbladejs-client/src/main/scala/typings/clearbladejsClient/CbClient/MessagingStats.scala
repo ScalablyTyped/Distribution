@@ -22,8 +22,7 @@ trait MessagingStats extends StObject {
 }
 object MessagingStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URI: String,
     endpoint: String,
     getAveragePayloadSize: (String, Double, Double, CbCallback) => Unit,
@@ -36,28 +35,20 @@ object MessagingStats {
     __obj.asInstanceOf[MessagingStats]
   }
   
-  @scala.inline
-  implicit class MessagingStatsMutableBuilder[Self <: MessagingStats] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingStats](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAveragePayloadSize(value: (String, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getAveragePayloadSize", js.Any.fromFunction4(value))
+    inline def setGetAveragePayloadSize(value: (String, Double, Double, CbCallback) => Unit): Self = StObject.set(x, "getAveragePayloadSize", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetCurrentSubscribers(value: (String, CbCallback) => Unit): Self = StObject.set(x, "getCurrentSubscribers", js.Any.fromFunction2(value))
+    inline def setGetCurrentSubscribers(value: (String, CbCallback) => Unit): Self = StObject.set(x, "getCurrentSubscribers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetOpenConnections(value: CbCallback => Unit): Self = StObject.set(x, "getOpenConnections", js.Any.fromFunction1(value))
+    inline def setGetOpenConnections(value: CbCallback => Unit): Self = StObject.set(x, "getOpenConnections", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

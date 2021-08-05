@@ -19,43 +19,31 @@ trait Loop extends StObject {
 }
 object Loop {
   
-  @scala.inline
-  def apply(positions: js.Array[Cartesian3]): Loop = {
+  inline def apply(positions: js.Array[Cartesian3]): Loop = {
     val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loop]
   }
   
-  @scala.inline
-  implicit class LoopMutableBuilder[Self <: Loop] (val x: Self) extends AnyVal {
+  extension [Self <: Loop](x: Self) {
     
-    @scala.inline
-    def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
+    inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
+    inline def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
     
-    @scala.inline
-    def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

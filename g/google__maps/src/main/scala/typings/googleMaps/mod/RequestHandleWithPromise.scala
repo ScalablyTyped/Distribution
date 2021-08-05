@@ -17,8 +17,7 @@ trait RequestHandleWithPromise[T]
 }
 object RequestHandleWithPromise {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     asPromise: () => js.Promise[ClientResponse[T]],
     cancel: () => Unit,
     `finally`: js.Function0[Unit] => RequestHandle[T]
@@ -28,10 +27,8 @@ object RequestHandleWithPromise {
     __obj.asInstanceOf[RequestHandleWithPromise[T]]
   }
   
-  @scala.inline
-  implicit class RequestHandleWithPromiseMutableBuilder[Self <: RequestHandleWithPromise[?], T] (val x: Self & RequestHandleWithPromise[T]) extends AnyVal {
+  extension [Self <: RequestHandleWithPromise[?], T](x: Self & RequestHandleWithPromise[T]) {
     
-    @scala.inline
-    def setAsPromise(value: () => js.Promise[ClientResponse[T]]): Self = StObject.set(x, "asPromise", js.Any.fromFunction0(value))
+    inline def setAsPromise(value: () => js.Promise[ClientResponse[T]]): Self = StObject.set(x, "asPromise", js.Any.fromFunction0(value))
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TSort extends StObject
 object TSort {
   
-  @scala.inline
-  def asc: typings.musicmatch.musicmatchStrings.asc = "asc".asInstanceOf[typings.musicmatch.musicmatchStrings.asc]
+  inline def asc: typings.musicmatch.musicmatchStrings.asc = "asc".asInstanceOf[typings.musicmatch.musicmatchStrings.asc]
   
-  @scala.inline
-  def desc: typings.musicmatch.musicmatchStrings.desc = "desc".asInstanceOf[typings.musicmatch.musicmatchStrings.desc]
+  inline def desc: typings.musicmatch.musicmatchStrings.desc = "desc".asInstanceOf[typings.musicmatch.musicmatchStrings.desc]
 }

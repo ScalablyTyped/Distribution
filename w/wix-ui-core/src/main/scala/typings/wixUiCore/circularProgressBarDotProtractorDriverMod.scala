@@ -28,8 +28,7 @@ object circularProgressBarDotProtractorDriverMod {
   }
   object CircularProgressBarDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: () => ElementFinder,
       exists: () => js.Promise[Boolean],
       getValue: () => js.Promise[Double],
@@ -39,17 +38,13 @@ object circularProgressBarDotProtractorDriverMod {
       __obj.asInstanceOf[CircularProgressBarDriver]
     }
     
-    @scala.inline
-    implicit class CircularProgressBarDriverMutableBuilder[Self <: CircularProgressBarDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressBarDriver](x: Self) {
       
-      @scala.inline
-      def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProgressIndicationValue(value: () => js.Promise[String]): Self = StObject.set(x, "progressIndicationValue", js.Any.fromFunction0(value))
+      inline def setProgressIndicationValue(value: () => js.Promise[String]): Self = StObject.set(x, "progressIndicationValue", js.Any.fromFunction0(value))
     }
   }
 }

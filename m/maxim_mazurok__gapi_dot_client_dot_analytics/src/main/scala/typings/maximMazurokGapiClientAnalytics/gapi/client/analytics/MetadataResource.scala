@@ -10,16 +10,13 @@ trait MetadataResource extends StObject {
 }
 object MetadataResource {
   
-  @scala.inline
-  def apply(columns: ColumnsResource): MetadataResource = {
+  inline def apply(columns: ColumnsResource): MetadataResource = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataResource]
   }
   
-  @scala.inline
-  implicit class MetadataResourceMutableBuilder[Self <: MetadataResource] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataResource](x: Self) {
     
-    @scala.inline
-    def setColumns(value: ColumnsResource): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: ColumnsResource): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
   }
 }

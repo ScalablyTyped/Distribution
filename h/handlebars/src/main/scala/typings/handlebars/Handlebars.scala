@@ -33,59 +33,42 @@ object Handlebars {
   }
   object Exception {
     
-    @scala.inline
-    def apply(description: String, fileName: String, message: String, name: String, number: Double): Exception = {
+    inline def apply(description: String, fileName: String, message: String, name: String, number: Double): Exception = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exception]
     }
     
-    @scala.inline
-    implicit class ExceptionMutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
+    extension [Self <: Exception](x: Self) {
       
-      @scala.inline
-      def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndColumn(value: js.Any): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+      inline def setEndColumn(value: js.Any): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
+      inline def setEndColumnUndefined: Self = StObject.set(x, "endColumn", js.undefined)
       
-      @scala.inline
-      def setEndLineNumber(value: js.Any): Self = StObject.set(x, "endLineNumber", value.asInstanceOf[js.Any])
+      inline def setEndLineNumber(value: js.Any): Self = StObject.set(x, "endLineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndLineNumberUndefined: Self = StObject.set(x, "endLineNumber", js.undefined)
+      inline def setEndLineNumberUndefined: Self = StObject.set(x, "endLineNumber", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: js.Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: js.Any): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -120,8 +103,7 @@ object Handlebars {
   }
   object HelperOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fn: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String,
       hash: js.Any,
       inverse: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String
@@ -130,23 +112,17 @@ object Handlebars {
       __obj.asInstanceOf[HelperOptions]
     }
     
-    @scala.inline
-    implicit class HelperOptionsMutableBuilder[Self <: HelperOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HelperOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFn(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
+      inline def setFn(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: js.Any): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverse(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
+      inline def setInverse(value: (js.Any, /* options */ js.UndefOr[typings.handlebars.Handlebars.RuntimeOptions]) => String): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
     }
   }
   
@@ -199,26 +175,20 @@ object Handlebars {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreStandalone(value: Boolean): Self = StObject.set(x, "ignoreStandalone", value.asInstanceOf[js.Any])
+      inline def setIgnoreStandalone(value: Boolean): Self = StObject.set(x, "ignoreStandalone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreStandaloneUndefined: Self = StObject.set(x, "ignoreStandalone", js.undefined)
+      inline def setIgnoreStandaloneUndefined: Self = StObject.set(x, "ignoreStandalone", js.undefined)
       
-      @scala.inline
-      def setSrcName(value: String): Self = StObject.set(x, "srcName", value.asInstanceOf[js.Any])
+      inline def setSrcName(value: String): Self = StObject.set(x, "srcName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcNameUndefined: Self = StObject.set(x, "srcName", js.undefined)
+      inline def setSrcNameUndefined: Self = StObject.set(x, "srcName", js.undefined)
     }
   }
   
@@ -236,41 +206,30 @@ object Handlebars {
   }
   object ResolvePartialOptions {
     
-    @scala.inline
-    def apply(name: String): ResolvePartialOptions = {
+    inline def apply(name: String): ResolvePartialOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvePartialOptions]
     }
     
-    @scala.inline
-    implicit class ResolvePartialOptionsMutableBuilder[Self <: ResolvePartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvePartialOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDecorators(value: StringDictionary[js.Function]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+      inline def setDecorators(value: StringDictionary[js.Function]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+      inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
       
-      @scala.inline
-      def setHelpers(value: StringDictionary[js.Function]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+      inline def setHelpers(value: StringDictionary[js.Function]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
+      inline def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+      inline def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
+      inline def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
     }
   }
   
@@ -302,92 +261,64 @@ object Handlebars {
   }
   object RuntimeOptions {
     
-    @scala.inline
-    def apply(): typings.handlebars.Handlebars.RuntimeOptions = {
+    inline def apply(): typings.handlebars.Handlebars.RuntimeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.handlebars.Handlebars.RuntimeOptions]
     }
     
-    @scala.inline
-    implicit class RuntimeOptionsMutableBuilder[Self <: typings.handlebars.Handlebars.RuntimeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.handlebars.Handlebars.RuntimeOptions](x: Self) {
       
-      @scala.inline
-      def setAllowCallsToHelperMissing(value: Boolean): Self = StObject.set(x, "allowCallsToHelperMissing", value.asInstanceOf[js.Any])
+      inline def setAllowCallsToHelperMissing(value: Boolean): Self = StObject.set(x, "allowCallsToHelperMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowCallsToHelperMissingUndefined: Self = StObject.set(x, "allowCallsToHelperMissing", js.undefined)
+      inline def setAllowCallsToHelperMissingUndefined: Self = StObject.set(x, "allowCallsToHelperMissing", js.undefined)
       
-      @scala.inline
-      def setAllowProtoMethodsByDefault(value: Boolean): Self = StObject.set(x, "allowProtoMethodsByDefault", value.asInstanceOf[js.Any])
+      inline def setAllowProtoMethodsByDefault(value: Boolean): Self = StObject.set(x, "allowProtoMethodsByDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowProtoMethodsByDefaultUndefined: Self = StObject.set(x, "allowProtoMethodsByDefault", js.undefined)
+      inline def setAllowProtoMethodsByDefaultUndefined: Self = StObject.set(x, "allowProtoMethodsByDefault", js.undefined)
       
-      @scala.inline
-      def setAllowProtoPropertiesByDefault(value: Boolean): Self = StObject.set(x, "allowProtoPropertiesByDefault", value.asInstanceOf[js.Any])
+      inline def setAllowProtoPropertiesByDefault(value: Boolean): Self = StObject.set(x, "allowProtoPropertiesByDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowProtoPropertiesByDefaultUndefined: Self = StObject.set(x, "allowProtoPropertiesByDefault", js.undefined)
+      inline def setAllowProtoPropertiesByDefaultUndefined: Self = StObject.set(x, "allowProtoPropertiesByDefault", js.undefined)
       
-      @scala.inline
-      def setAllowedProtoMethods(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedProtoMethods", value.asInstanceOf[js.Any])
+      inline def setAllowedProtoMethods(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedProtoMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedProtoMethodsUndefined: Self = StObject.set(x, "allowedProtoMethods", js.undefined)
+      inline def setAllowedProtoMethodsUndefined: Self = StObject.set(x, "allowedProtoMethods", js.undefined)
       
-      @scala.inline
-      def setAllowedProtoProperties(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedProtoProperties", value.asInstanceOf[js.Any])
+      inline def setAllowedProtoProperties(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedProtoProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedProtoPropertiesUndefined: Self = StObject.set(x, "allowedProtoProperties", js.undefined)
+      inline def setAllowedProtoPropertiesUndefined: Self = StObject.set(x, "allowedProtoProperties", js.undefined)
       
-      @scala.inline
-      def setBlockParams(value: js.Array[js.Any]): Self = StObject.set(x, "blockParams", value.asInstanceOf[js.Any])
+      inline def setBlockParams(value: js.Array[js.Any]): Self = StObject.set(x, "blockParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockParamsUndefined: Self = StObject.set(x, "blockParams", js.undefined)
+      inline def setBlockParamsUndefined: Self = StObject.set(x, "blockParams", js.undefined)
       
-      @scala.inline
-      def setBlockParamsVarargs(value: js.Any*): Self = StObject.set(x, "blockParams", js.Array(value :_*))
+      inline def setBlockParamsVarargs(value: js.Any*): Self = StObject.set(x, "blockParams", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDecorators(value: StringDictionary[js.Function]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+      inline def setDecorators(value: StringDictionary[js.Function]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+      inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
       
-      @scala.inline
-      def setDepths(value: js.Array[js.Any]): Self = StObject.set(x, "depths", value.asInstanceOf[js.Any])
+      inline def setDepths(value: js.Array[js.Any]): Self = StObject.set(x, "depths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthsUndefined: Self = StObject.set(x, "depths", js.undefined)
+      inline def setDepthsUndefined: Self = StObject.set(x, "depths", js.undefined)
       
-      @scala.inline
-      def setDepthsVarargs(value: js.Any*): Self = StObject.set(x, "depths", js.Array(value :_*))
+      inline def setDepthsVarargs(value: js.Any*): Self = StObject.set(x, "depths", js.Array(value :_*))
       
-      @scala.inline
-      def setHelpers(value: StringDictionary[js.Function]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
+      inline def setHelpers(value: StringDictionary[js.Function]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
+      inline def setHelpersUndefined: Self = StObject.set(x, "helpers", js.undefined)
       
-      @scala.inline
-      def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+      inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
       
-      @scala.inline
-      def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+      inline def setPartials(value: StringDictionary[HandlebarsTemplateDelegate[js.Any]]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
+      inline def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
     }
   }
   
@@ -397,17 +328,14 @@ object Handlebars {
   }
   object SafeString {
     
-    @scala.inline
-    def apply(toHTML: () => String): SafeString = {
+    inline def apply(toHTML: () => String): SafeString = {
       val __obj = js.Dynamic.literal(toHTML = js.Any.fromFunction0(toHTML))
       __obj.asInstanceOf[SafeString]
     }
     
-    @scala.inline
-    implicit class SafeStringMutableBuilder[Self <: SafeString] (val x: Self) extends AnyVal {
+    extension [Self <: SafeString](x: Self) {
       
-      @scala.inline
-      def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
+      inline def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
     }
   }
   

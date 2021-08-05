@@ -13,19 +13,15 @@ trait DeleteInsightRulesInput extends StObject {
 }
 object DeleteInsightRulesInput {
   
-  @scala.inline
-  def apply(RuleNames: InsightRuleNames): DeleteInsightRulesInput = {
+  inline def apply(RuleNames: InsightRuleNames): DeleteInsightRulesInput = {
     val __obj = js.Dynamic.literal(RuleNames = RuleNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInsightRulesInput]
   }
   
-  @scala.inline
-  implicit class DeleteInsightRulesInputMutableBuilder[Self <: DeleteInsightRulesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInsightRulesInput](x: Self) {
     
-    @scala.inline
-    def setRuleNames(value: InsightRuleNames): Self = StObject.set(x, "RuleNames", value.asInstanceOf[js.Any])
+    inline def setRuleNames(value: InsightRuleNames): Self = StObject.set(x, "RuleNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNamesVarargs(value: InsightRuleName*): Self = StObject.set(x, "RuleNames", js.Array(value :_*))
+    inline def setRuleNamesVarargs(value: InsightRuleName*): Self = StObject.set(x, "RuleNames", js.Array(value :_*))
   }
 }

@@ -13,25 +13,19 @@ trait UnsortedSegmentSumInputs extends StObject {
 }
 object UnsortedSegmentSumInputs {
   
-  @scala.inline
-  def apply(): UnsortedSegmentSumInputs = {
+  inline def apply(): UnsortedSegmentSumInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnsortedSegmentSumInputs]
   }
   
-  @scala.inline
-  implicit class UnsortedSegmentSumInputsMutableBuilder[Self <: UnsortedSegmentSumInputs] (val x: Self) extends AnyVal {
+  extension [Self <: UnsortedSegmentSumInputs](x: Self) {
     
-    @scala.inline
-    def setSegmentIds(value: js.Any): Self = StObject.set(x, "segmentIds", value.asInstanceOf[js.Any])
+    inline def setSegmentIds(value: js.Any): Self = StObject.set(x, "segmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdsUndefined: Self = StObject.set(x, "segmentIds", js.undefined)
+    inline def setSegmentIdsUndefined: Self = StObject.set(x, "segmentIds", js.undefined)
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

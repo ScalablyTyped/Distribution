@@ -33,43 +33,31 @@ trait CacheEngineVersion extends StObject {
 }
 object CacheEngineVersion {
   
-  @scala.inline
-  def apply(): CacheEngineVersion = {
+  inline def apply(): CacheEngineVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheEngineVersion]
   }
   
-  @scala.inline
-  implicit class CacheEngineVersionMutableBuilder[Self <: CacheEngineVersion] (val x: Self) extends AnyVal {
+  extension [Self <: CacheEngineVersion](x: Self) {
     
-    @scala.inline
-    def setCacheEngineDescription(value: String): Self = StObject.set(x, "CacheEngineDescription", value.asInstanceOf[js.Any])
+    inline def setCacheEngineDescription(value: String): Self = StObject.set(x, "CacheEngineDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheEngineDescriptionUndefined: Self = StObject.set(x, "CacheEngineDescription", js.undefined)
+    inline def setCacheEngineDescriptionUndefined: Self = StObject.set(x, "CacheEngineDescription", js.undefined)
     
-    @scala.inline
-    def setCacheEngineVersionDescription(value: String): Self = StObject.set(x, "CacheEngineVersionDescription", value.asInstanceOf[js.Any])
+    inline def setCacheEngineVersionDescription(value: String): Self = StObject.set(x, "CacheEngineVersionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheEngineVersionDescriptionUndefined: Self = StObject.set(x, "CacheEngineVersionDescription", js.undefined)
+    inline def setCacheEngineVersionDescriptionUndefined: Self = StObject.set(x, "CacheEngineVersionDescription", js.undefined)
     
-    @scala.inline
-    def setCacheParameterGroupFamily(value: String): Self = StObject.set(x, "CacheParameterGroupFamily", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupFamily(value: String): Self = StObject.set(x, "CacheParameterGroupFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheParameterGroupFamilyUndefined: Self = StObject.set(x, "CacheParameterGroupFamily", js.undefined)
+    inline def setCacheParameterGroupFamilyUndefined: Self = StObject.set(x, "CacheParameterGroupFamily", js.undefined)
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
-    @scala.inline
-    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
   }
 }

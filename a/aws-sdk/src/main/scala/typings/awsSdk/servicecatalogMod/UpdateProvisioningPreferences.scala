@@ -43,61 +43,43 @@ trait UpdateProvisioningPreferences extends StObject {
 }
 object UpdateProvisioningPreferences {
   
-  @scala.inline
-  def apply(): UpdateProvisioningPreferences = {
+  inline def apply(): UpdateProvisioningPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateProvisioningPreferences]
   }
   
-  @scala.inline
-  implicit class UpdateProvisioningPreferencesMutableBuilder[Self <: UpdateProvisioningPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProvisioningPreferences](x: Self) {
     
-    @scala.inline
-    def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
+    inline def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetAccountsUndefined: Self = StObject.set(x, "StackSetAccounts", js.undefined)
+    inline def setStackSetAccountsUndefined: Self = StObject.set(x, "StackSetAccounts", js.undefined)
     
-    @scala.inline
-    def setStackSetAccountsVarargs(value: AccountId*): Self = StObject.set(x, "StackSetAccounts", js.Array(value :_*))
+    inline def setStackSetAccountsVarargs(value: AccountId*): Self = StObject.set(x, "StackSetAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setStackSetFailureToleranceCount(value: StackSetFailureToleranceCount): Self = StObject.set(x, "StackSetFailureToleranceCount", value.asInstanceOf[js.Any])
+    inline def setStackSetFailureToleranceCount(value: StackSetFailureToleranceCount): Self = StObject.set(x, "StackSetFailureToleranceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetFailureToleranceCountUndefined: Self = StObject.set(x, "StackSetFailureToleranceCount", js.undefined)
+    inline def setStackSetFailureToleranceCountUndefined: Self = StObject.set(x, "StackSetFailureToleranceCount", js.undefined)
     
-    @scala.inline
-    def setStackSetFailureTolerancePercentage(value: StackSetFailureTolerancePercentage): Self = StObject.set(x, "StackSetFailureTolerancePercentage", value.asInstanceOf[js.Any])
+    inline def setStackSetFailureTolerancePercentage(value: StackSetFailureTolerancePercentage): Self = StObject.set(x, "StackSetFailureTolerancePercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetFailureTolerancePercentageUndefined: Self = StObject.set(x, "StackSetFailureTolerancePercentage", js.undefined)
+    inline def setStackSetFailureTolerancePercentageUndefined: Self = StObject.set(x, "StackSetFailureTolerancePercentage", js.undefined)
     
-    @scala.inline
-    def setStackSetMaxConcurrencyCount(value: StackSetMaxConcurrencyCount): Self = StObject.set(x, "StackSetMaxConcurrencyCount", value.asInstanceOf[js.Any])
+    inline def setStackSetMaxConcurrencyCount(value: StackSetMaxConcurrencyCount): Self = StObject.set(x, "StackSetMaxConcurrencyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetMaxConcurrencyCountUndefined: Self = StObject.set(x, "StackSetMaxConcurrencyCount", js.undefined)
+    inline def setStackSetMaxConcurrencyCountUndefined: Self = StObject.set(x, "StackSetMaxConcurrencyCount", js.undefined)
     
-    @scala.inline
-    def setStackSetMaxConcurrencyPercentage(value: StackSetMaxConcurrencyPercentage): Self = StObject.set(x, "StackSetMaxConcurrencyPercentage", value.asInstanceOf[js.Any])
+    inline def setStackSetMaxConcurrencyPercentage(value: StackSetMaxConcurrencyPercentage): Self = StObject.set(x, "StackSetMaxConcurrencyPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetMaxConcurrencyPercentageUndefined: Self = StObject.set(x, "StackSetMaxConcurrencyPercentage", js.undefined)
+    inline def setStackSetMaxConcurrencyPercentageUndefined: Self = StObject.set(x, "StackSetMaxConcurrencyPercentage", js.undefined)
     
-    @scala.inline
-    def setStackSetOperationType(value: StackSetOperationType): Self = StObject.set(x, "StackSetOperationType", value.asInstanceOf[js.Any])
+    inline def setStackSetOperationType(value: StackSetOperationType): Self = StObject.set(x, "StackSetOperationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetOperationTypeUndefined: Self = StObject.set(x, "StackSetOperationType", js.undefined)
+    inline def setStackSetOperationTypeUndefined: Self = StObject.set(x, "StackSetOperationType", js.undefined)
     
-    @scala.inline
-    def setStackSetRegions(value: StackSetRegions): Self = StObject.set(x, "StackSetRegions", value.asInstanceOf[js.Any])
+    inline def setStackSetRegions(value: StackSetRegions): Self = StObject.set(x, "StackSetRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetRegionsUndefined: Self = StObject.set(x, "StackSetRegions", js.undefined)
+    inline def setStackSetRegionsUndefined: Self = StObject.set(x, "StackSetRegions", js.undefined)
     
-    @scala.inline
-    def setStackSetRegionsVarargs(value: Region*): Self = StObject.set(x, "StackSetRegions", js.Array(value :_*))
+    inline def setStackSetRegionsVarargs(value: Region*): Self = StObject.set(x, "StackSetRegions", js.Array(value :_*))
   }
 }

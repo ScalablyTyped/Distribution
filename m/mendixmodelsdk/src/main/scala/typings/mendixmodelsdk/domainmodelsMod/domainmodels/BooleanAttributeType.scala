@@ -51,8 +51,7 @@ object BooleanAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
+  inline def create(model: IModel): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -63,8 +62,7 @@ object BooleanAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: Attribute): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
+  inline def createIn(container: Attribute): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -72,8 +70,7 @@ object BooleanAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInAttributeUnderType(container: Attribute): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
+  inline def createInAttributeUnderType(container: Attribute): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -84,8 +81,7 @@ object BooleanAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEntityKeyPartUnderType(container: EntityKeyPart): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
+  inline def createInEntityKeyPartUnderType(container: EntityKeyPart): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
   
   /**
     * Creates and returns a new BooleanAttributeType instance in the SDK and on the server.
@@ -96,20 +92,17 @@ object BooleanAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInODataKeyPartUnderType(container: ODataKeyPart): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
+  inline def createInODataKeyPartUnderType(container: ODataKeyPart): BooleanAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BooleanAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BooleanAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

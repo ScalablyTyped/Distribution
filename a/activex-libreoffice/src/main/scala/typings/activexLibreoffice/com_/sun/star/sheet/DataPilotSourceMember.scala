@@ -37,8 +37,7 @@ trait DataPilotSourceMember
 }
 object DataPilotSourceMember {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsVisible: Boolean,
     Name: String,
     Position: Boolean,
@@ -61,16 +60,12 @@ object DataPilotSourceMember {
     __obj.asInstanceOf[DataPilotSourceMember]
   }
   
-  @scala.inline
-  implicit class DataPilotSourceMemberMutableBuilder[Self <: DataPilotSourceMember] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotSourceMember](x: Self) {
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Boolean): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Boolean): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDetails(value: Boolean): Self = StObject.set(x, "ShowDetails", value.asInstanceOf[js.Any])
+    inline def setShowDetails(value: Boolean): Self = StObject.set(x, "ShowDetails", value.asInstanceOf[js.Any])
   }
 }

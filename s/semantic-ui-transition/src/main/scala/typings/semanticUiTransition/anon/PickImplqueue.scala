@@ -11,16 +11,13 @@ trait PickImplqueue extends StObject {
 }
 object PickImplqueue {
   
-  @scala.inline
-  def apply(queue: Boolean): PickImplqueue = {
+  inline def apply(queue: Boolean): PickImplqueue = {
     val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplqueue]
   }
   
-  @scala.inline
-  implicit class PickImplqueueMutableBuilder[Self <: PickImplqueue] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplqueue](x: Self) {
     
-    @scala.inline
-    def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
   }
 }

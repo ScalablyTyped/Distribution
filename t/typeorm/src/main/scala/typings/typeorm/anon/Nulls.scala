@@ -16,22 +16,17 @@ trait Nulls extends StObject {
 }
 object Nulls {
   
-  @scala.inline
-  def apply(order: ASC | DESC): Nulls = {
+  inline def apply(order: ASC | DESC): Nulls = {
     val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Nulls]
   }
   
-  @scala.inline
-  implicit class NullsMutableBuilder[Self <: Nulls] (val x: Self) extends AnyVal {
+  extension [Self <: Nulls](x: Self) {
     
-    @scala.inline
-    def setNulls(value: (`NULLS FIRST`) | (`NULLS LAST`)): Self = StObject.set(x, "nulls", value.asInstanceOf[js.Any])
+    inline def setNulls(value: (`NULLS FIRST`) | (`NULLS LAST`)): Self = StObject.set(x, "nulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullsUndefined: Self = StObject.set(x, "nulls", js.undefined)
+    inline def setNullsUndefined: Self = StObject.set(x, "nulls", js.undefined)
     
-    @scala.inline
-    def setOrder(value: ASC | DESC): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: ASC | DESC): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

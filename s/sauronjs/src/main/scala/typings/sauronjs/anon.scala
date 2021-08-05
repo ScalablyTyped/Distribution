@@ -13,17 +13,14 @@ object anon {
   }
   object TypeofComponent {
     
-    @scala.inline
-    def apply(_index: Double): TypeofComponent = {
+    inline def apply(_index: Double): TypeofComponent = {
       val __obj = js.Dynamic.literal(_index = _index.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    @scala.inline
-    implicit class TypeofComponentMutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofComponent](x: Self) {
       
-      @scala.inline
-      def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+      inline def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     }
   }
 }

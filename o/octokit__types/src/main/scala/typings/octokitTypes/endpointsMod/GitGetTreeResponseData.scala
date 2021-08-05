@@ -17,28 +17,21 @@ trait GitGetTreeResponseData extends StObject {
 }
 object GitGetTreeResponseData {
   
-  @scala.inline
-  def apply(sha: String, tree: js.Array[Mode], truncated: Boolean, url: String): GitGetTreeResponseData = {
+  inline def apply(sha: String, tree: js.Array[Mode], truncated: Boolean, url: String): GitGetTreeResponseData = {
     val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], truncated = truncated.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitGetTreeResponseData]
   }
   
-  @scala.inline
-  implicit class GitGetTreeResponseDataMutableBuilder[Self <: GitGetTreeResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: GitGetTreeResponseData](x: Self) {
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: js.Array[Mode]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: js.Array[Mode]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeVarargs(value: Mode*): Self = StObject.set(x, "tree", js.Array(value :_*))
+    inline def setTreeVarargs(value: Mode*): Self = StObject.set(x, "tree", js.Array(value :_*))
     
-    @scala.inline
-    def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

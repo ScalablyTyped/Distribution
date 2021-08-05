@@ -16,19 +16,15 @@ trait SchemaInstancesCloneRequest extends StObject {
 }
 object SchemaInstancesCloneRequest {
   
-  @scala.inline
-  def apply(): SchemaInstancesCloneRequest = {
+  inline def apply(): SchemaInstancesCloneRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstancesCloneRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstancesCloneRequestMutableBuilder[Self <: SchemaInstancesCloneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstancesCloneRequest](x: Self) {
     
-    @scala.inline
-    def setCloneContext(value: SchemaCloneContext): Self = StObject.set(x, "cloneContext", value.asInstanceOf[js.Any])
+    inline def setCloneContext(value: SchemaCloneContext): Self = StObject.set(x, "cloneContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloneContextUndefined: Self = StObject.set(x, "cloneContext", js.undefined)
+    inline def setCloneContextUndefined: Self = StObject.set(x, "cloneContext", js.undefined)
   }
 }

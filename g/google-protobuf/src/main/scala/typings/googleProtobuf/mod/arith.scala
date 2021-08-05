@@ -26,8 +26,7 @@ object arith {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromString(str: String): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Int64]
+    inline def fromString(str: String): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Int64]
   }
   
   @JSImport("google-protobuf", "arith.UInt64")
@@ -66,11 +65,9 @@ object arith {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromString(str: String): UInt64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[UInt64]
+    inline def fromString(str: String): UInt64 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[UInt64]
     
     /* static member */
-    @scala.inline
-    def mul32x32(a: Double, b: Double): UInt64 = (^.asInstanceOf[js.Dynamic].applyDynamic("mul32x32")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[UInt64]
+    inline def mul32x32(a: Double, b: Double): UInt64 = (^.asInstanceOf[js.Dynamic].applyDynamic("mul32x32")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[UInt64]
   }
 }

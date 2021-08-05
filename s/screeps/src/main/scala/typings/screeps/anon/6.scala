@@ -10,16 +10,13 @@ trait `6` extends StObject {
 }
 object `6` {
   
-  @scala.inline
-  def apply(): `6` = {
+  inline def apply(): `6` = {
     val __obj = js.Dynamic.literal(attack = 3)
     __obj.asInstanceOf[`6`]
   }
   
-  @scala.inline
-  implicit class `6MutableBuilder`[Self <: `6`] (val x: Self) extends AnyVal {
+  extension [Self <: `6`](x: Self) {
     
-    @scala.inline
-    def setAttack(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
+    inline def setAttack(value: typings.screeps.screepsNumbers.`3`): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
   }
 }

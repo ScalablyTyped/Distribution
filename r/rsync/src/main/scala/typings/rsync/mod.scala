@@ -31,20 +31,16 @@ object mod extends Shortcut {
   }
   object Pattern {
     
-    @scala.inline
-    def apply(action: String, pattern: String): Pattern = {
+    inline def apply(action: String, pattern: String): Pattern = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pattern]
     }
     
-    @scala.inline
-    implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+    extension [Self <: Pattern](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     }
   }
   

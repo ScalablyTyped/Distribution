@@ -13,19 +13,15 @@ trait GetBucketLocationOutput extends StObject {
 }
 object GetBucketLocationOutput {
   
-  @scala.inline
-  def apply(): GetBucketLocationOutput = {
+  inline def apply(): GetBucketLocationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketLocationOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketLocationOutputMutableBuilder[Self <: GetBucketLocationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketLocationOutput](x: Self) {
     
-    @scala.inline
-    def setLocationConstraint(value: BucketLocationConstraint): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
+    inline def setLocationConstraint(value: BucketLocationConstraint): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
+    inline def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
   }
 }

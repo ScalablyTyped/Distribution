@@ -24,8 +24,7 @@ object hoganjsUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def compile(templateString: String): Template_ = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(templateString.asInstanceOf[js.Any]).asInstanceOf[Template_]
+    inline def compile(templateString: String): Template_ = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(templateString.asInstanceOf[js.Any]).asInstanceOf[Template_]
   }
   
   type CompiledTemplates = StringDictionary[Template_]
@@ -33,7 +32,7 @@ object hoganjsUtilsMod {
   @js.native
   trait HoganJsUtils extends StObject {
     
-    var preCompiledTemplates: js.Any = js.native
+    /* private */ var preCompiledTemplates: js.Any = js.native
     
     def render(namespace: String, view: String, params: Context): String = js.native
     def render(namespace: String, view: String, params: Context, partials: Unit, indent: String): String = js.native
@@ -42,7 +41,7 @@ object hoganjsUtilsMod {
     
     def template(namespace: String, view: String): Template_ = js.native
     
-    var templateKey: js.Any = js.native
+    /* private */ var templateKey: js.Any = js.native
   }
   
   trait HoganJsUtilsConfig extends StObject {
@@ -53,26 +52,20 @@ object hoganjsUtilsMod {
   }
   object HoganJsUtilsConfig {
     
-    @scala.inline
-    def apply(): HoganJsUtilsConfig = {
+    inline def apply(): HoganJsUtilsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HoganJsUtilsConfig]
     }
     
-    @scala.inline
-    implicit class HoganJsUtilsConfigMutableBuilder[Self <: HoganJsUtilsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: HoganJsUtilsConfig](x: Self) {
       
-      @scala.inline
-      def setCompiledTemplates(value: CompiledTemplates): Self = StObject.set(x, "compiledTemplates", value.asInstanceOf[js.Any])
+      inline def setCompiledTemplates(value: CompiledTemplates): Self = StObject.set(x, "compiledTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompiledTemplatesUndefined: Self = StObject.set(x, "compiledTemplates", js.undefined)
+      inline def setCompiledTemplatesUndefined: Self = StObject.set(x, "compiledTemplates", js.undefined)
       
-      @scala.inline
-      def setRawTemplates(value: RawTemplates): Self = StObject.set(x, "rawTemplates", value.asInstanceOf[js.Any])
+      inline def setRawTemplates(value: RawTemplates): Self = StObject.set(x, "rawTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawTemplatesUndefined: Self = StObject.set(x, "rawTemplates", js.undefined)
+      inline def setRawTemplatesUndefined: Self = StObject.set(x, "rawTemplates", js.undefined)
     }
   }
   

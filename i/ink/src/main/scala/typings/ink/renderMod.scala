@@ -45,8 +45,7 @@ object renderMod extends Shortcut {
   }
   object Instance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cleanup: () => Unit,
       clear: () => Unit,
       rerender: /* node */ ReactNode => Unit,
@@ -57,23 +56,17 @@ object renderMod extends Shortcut {
       __obj.asInstanceOf[Instance]
     }
     
-    @scala.inline
-    implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+    extension [Self <: Instance](x: Self) {
       
-      @scala.inline
-      def setCleanup(value: () => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
+      inline def setCleanup(value: () => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRerender(value: /* node */ ReactNode => Unit): Self = StObject.set(x, "rerender", js.Any.fromFunction1(value))
+      inline def setRerender(value: /* node */ ReactNode => Unit): Self = StObject.set(x, "rerender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnmount(value: /* error */ js.UndefOr[Error | Double | Null] => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
+      inline def setUnmount(value: /* error */ js.UndefOr[Error | Double | Null] => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWaitUntilExit(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitUntilExit", js.Any.fromFunction0(value))
+      inline def setWaitUntilExit(value: () => js.Promise[Unit]): Self = StObject.set(x, "waitUntilExit", js.Any.fromFunction0(value))
     }
   }
   
@@ -128,50 +121,36 @@ object renderMod extends Shortcut {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply(): RenderOptions = {
+    inline def apply(): RenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderOptions]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setExitOnCtrlC(value: Boolean): Self = StObject.set(x, "exitOnCtrlC", value.asInstanceOf[js.Any])
+      inline def setExitOnCtrlC(value: Boolean): Self = StObject.set(x, "exitOnCtrlC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitOnCtrlCUndefined: Self = StObject.set(x, "exitOnCtrlC", js.undefined)
+      inline def setExitOnCtrlCUndefined: Self = StObject.set(x, "exitOnCtrlC", js.undefined)
       
-      @scala.inline
-      def setPatchConsole(value: Boolean): Self = StObject.set(x, "patchConsole", value.asInstanceOf[js.Any])
+      inline def setPatchConsole(value: Boolean): Self = StObject.set(x, "patchConsole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchConsoleUndefined: Self = StObject.set(x, "patchConsole", js.undefined)
+      inline def setPatchConsoleUndefined: Self = StObject.set(x, "patchConsole", js.undefined)
       
-      @scala.inline
-      def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
   

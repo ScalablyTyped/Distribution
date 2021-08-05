@@ -18,19 +18,15 @@ trait Swipe
 }
 object Swipe {
   
-  @scala.inline
-  def apply(): Swipe = {
+  inline def apply(): Swipe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Swipe]
   }
   
-  @scala.inline
-  implicit class SwipeMutableBuilder[Self <: Swipe] (val x: Self) extends AnyVal {
+  extension [Self <: Swipe](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
   }
 }

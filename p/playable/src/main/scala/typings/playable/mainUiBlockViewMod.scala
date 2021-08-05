@@ -19,10 +19,10 @@ object mainUiBlockViewMod {
   trait MainUIBlockView
     extends typings.playable.viewMod.default[IMainUIBlockViewStyles] {
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
     def destroy(): Unit = js.native
     

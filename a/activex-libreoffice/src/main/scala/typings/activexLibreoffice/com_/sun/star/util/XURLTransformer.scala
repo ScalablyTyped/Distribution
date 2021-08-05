@@ -56,8 +56,7 @@ trait XURLTransformer
 }
 object XURLTransformer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     assemble: js.Array[URL] => Boolean,
     getPresentation: (URL, Boolean) => String,
@@ -70,19 +69,14 @@ object XURLTransformer {
     __obj.asInstanceOf[XURLTransformer]
   }
   
-  @scala.inline
-  implicit class XURLTransformerMutableBuilder[Self <: XURLTransformer] (val x: Self) extends AnyVal {
+  extension [Self <: XURLTransformer](x: Self) {
     
-    @scala.inline
-    def setAssemble(value: js.Array[URL] => Boolean): Self = StObject.set(x, "assemble", js.Any.fromFunction1(value))
+    inline def setAssemble(value: js.Array[URL] => Boolean): Self = StObject.set(x, "assemble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPresentation(value: (URL, Boolean) => String): Self = StObject.set(x, "getPresentation", js.Any.fromFunction2(value))
+    inline def setGetPresentation(value: (URL, Boolean) => String): Self = StObject.set(x, "getPresentation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseSmart(value: (js.Array[URL], String) => Boolean): Self = StObject.set(x, "parseSmart", js.Any.fromFunction2(value))
+    inline def setParseSmart(value: (js.Array[URL], String) => Boolean): Self = StObject.set(x, "parseSmart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseStrict(value: js.Array[URL] => Boolean): Self = StObject.set(x, "parseStrict", js.Any.fromFunction1(value))
+    inline def setParseStrict(value: js.Array[URL] => Boolean): Self = StObject.set(x, "parseStrict", js.Any.fromFunction1(value))
   }
 }

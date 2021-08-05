@@ -18,19 +18,19 @@ object bodyDropTargetMod {
        with DropTarget {
     def this(pinned: String, eContainer: HTMLElement) = this()
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
-    var currentDropListener: js.Any = js.native
+    /* private */ var currentDropListener: js.Any = js.native
     
-    var dragAndDropService: js.Any = js.native
+    /* private */ var dragAndDropService: js.Any = js.native
     
-    var dropListeners: js.Any = js.native
+    /* private */ var dropListeners: js.Any = js.native
     
-    var eContainer: js.Any = js.native
+    /* private */ var eContainer: js.Any = js.native
     
-    var eSecondaryContainers: js.Any = js.native
+    /* private */ var eSecondaryContainers: js.Any = js.native
     
     /** The main container that will get the drop. */
     /* CompleteClass */
@@ -44,14 +44,14 @@ object bodyDropTargetMod {
     @JSName("getSecondaryContainers")
     def getSecondaryContainers_MBodyDropTarget(): js.Array[HTMLElement] = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
     
     /* CompleteClass */
     override def isInterestedIn(`type`: DragSourceType): Boolean = js.native
     
-    var moveColumnController: js.Any = js.native
+    /* private */ var moveColumnController: js.Any = js.native
     
     @JSName("onDragEnter")
     def onDragEnter_MBodyDropTarget(draggingEvent: DraggingEvent): Unit = js.native
@@ -65,7 +65,7 @@ object bodyDropTargetMod {
     @JSName("onDragging")
     def onDragging_MBodyDropTarget(params: DraggingEvent): Unit = js.native
     
-    var pinned: js.Any = js.native
+    /* private */ var pinned: js.Any = js.native
     
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
   }
@@ -84,8 +84,7 @@ object bodyDropTargetMod {
   }
   object DropListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getIconName: () => String,
       onDragEnter: DraggingEvent => Unit,
       onDragLeave: DraggingEvent => Unit,
@@ -96,23 +95,17 @@ object bodyDropTargetMod {
       __obj.asInstanceOf[DropListener]
     }
     
-    @scala.inline
-    implicit class DropListenerMutableBuilder[Self <: DropListener] (val x: Self) extends AnyVal {
+    extension [Self <: DropListener](x: Self) {
       
-      @scala.inline
-      def setGetIconName(value: () => String): Self = StObject.set(x, "getIconName", js.Any.fromFunction0(value))
+      inline def setGetIconName(value: () => String): Self = StObject.set(x, "getIconName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragEnter(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
+      inline def setOnDragEnter(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragLeave(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
+      inline def setOnDragLeave(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragStop(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragStop", js.Any.fromFunction1(value))
+      inline def setOnDragStop(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragStop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragging(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragging", js.Any.fromFunction1(value))
+      inline def setOnDragging(value: DraggingEvent => Unit): Self = StObject.set(x, "onDragging", js.Any.fromFunction1(value))
     }
   }
 }

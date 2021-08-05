@@ -47,8 +47,7 @@ object SaveChangesClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def create(model: IModel): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -59,8 +58,7 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionButtonUnderAction(container: ActionButton): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInActionButtonUnderAction(container: ActionButton): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -71,8 +69,7 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInActionItemUnderAction(container: ActionItem): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInActionItemUnderAction(container: ActionItem): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -83,8 +80,7 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -95,8 +91,7 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -107,8 +102,7 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -119,8 +113,7 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -131,8 +124,7 @@ object SaveChangesClientAction {
     *  8.0.0 to 8.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBottomBarItemUnderAction(container: BottomBarItem): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInBottomBarItemUnderAction(container: BottomBarItem): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -143,8 +135,7 @@ object SaveChangesClientAction {
     *  8.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderOnClickAction(container: DivContainer): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInDivContainerUnderOnClickAction(container: DivContainer): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -155,8 +146,7 @@ object SaveChangesClientAction {
     *  7.18.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -167,8 +157,7 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGridActionButtonUnderAction(container: GridActionButton): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInGridActionButtonUnderAction(container: GridActionButton): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -179,8 +168,7 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderClickAction(container: ListView): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInListViewUnderClickAction(container: ListView): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -191,8 +179,7 @@ object SaveChangesClientAction {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderPullDownAction(container: ListView): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInListViewUnderPullDownAction(container: ListView): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -203,8 +190,7 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMenuItemUnderAction(container: MenuItem): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInMenuItemUnderAction(container: MenuItem): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -215,8 +201,7 @@ object SaveChangesClientAction {
     *  7.13.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -227,8 +212,7 @@ object SaveChangesClientAction {
     *  7.0.2 and higher
     */
   /* static member */
-  @scala.inline
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -239,8 +223,7 @@ object SaveChangesClientAction {
     *  8.7.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /**
     * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
@@ -251,20 +234,17 @@ object SaveChangesClientAction {
     *  7.19.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderAction(container: WidgetValue): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
+  inline def createInWidgetValueUnderAction(container: WidgetValue): SaveChangesClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SaveChangesClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveChangesClientAction.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SaveChangesClientAction.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

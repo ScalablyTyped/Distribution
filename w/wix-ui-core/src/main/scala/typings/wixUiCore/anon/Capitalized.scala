@@ -14,22 +14,17 @@ trait Capitalized extends StObject {
 }
 object Capitalized {
   
-  @scala.inline
-  def apply(capitalized: Am, lowercase: Am, uppercase: Am): Capitalized = {
+  inline def apply(capitalized: Am, lowercase: Am, uppercase: Am): Capitalized = {
     val __obj = js.Dynamic.literal(capitalized = capitalized.asInstanceOf[js.Any], lowercase = lowercase.asInstanceOf[js.Any], uppercase = uppercase.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capitalized]
   }
   
-  @scala.inline
-  implicit class CapitalizedMutableBuilder[Self <: Capitalized] (val x: Self) extends AnyVal {
+  extension [Self <: Capitalized](x: Self) {
     
-    @scala.inline
-    def setCapitalized(value: Am): Self = StObject.set(x, "capitalized", value.asInstanceOf[js.Any])
+    inline def setCapitalized(value: Am): Self = StObject.set(x, "capitalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowercase(value: Am): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
+    inline def setLowercase(value: Am): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUppercase(value: Am): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
+    inline def setUppercase(value: Am): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
   }
 }

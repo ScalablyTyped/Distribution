@@ -33,43 +33,31 @@ trait WindowSummary extends StObject {
 }
 object WindowSummary {
   
-  @scala.inline
-  def apply(): WindowSummary = {
+  inline def apply(): WindowSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowSummary]
   }
   
-  @scala.inline
-  implicit class WindowSummaryMutableBuilder[Self <: WindowSummary] (val x: Self) extends AnyVal {
+  extension [Self <: WindowSummary](x: Self) {
     
-    @scala.inline
-    def setEvaluationType(value: EvaluationType): Self = StObject.set(x, "EvaluationType", value.asInstanceOf[js.Any])
+    inline def setEvaluationType(value: EvaluationType): Self = StObject.set(x, "EvaluationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationTypeUndefined: Self = StObject.set(x, "EvaluationType", js.undefined)
+    inline def setEvaluationTypeUndefined: Self = StObject.set(x, "EvaluationType", js.undefined)
     
-    @scala.inline
-    def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
+    inline def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    @scala.inline
-    def setTestWindowEnd(value: Timestamp): Self = StObject.set(x, "TestWindowEnd", value.asInstanceOf[js.Any])
+    inline def setTestWindowEnd(value: Timestamp): Self = StObject.set(x, "TestWindowEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestWindowEndUndefined: Self = StObject.set(x, "TestWindowEnd", js.undefined)
+    inline def setTestWindowEndUndefined: Self = StObject.set(x, "TestWindowEnd", js.undefined)
     
-    @scala.inline
-    def setTestWindowStart(value: Timestamp): Self = StObject.set(x, "TestWindowStart", value.asInstanceOf[js.Any])
+    inline def setTestWindowStart(value: Timestamp): Self = StObject.set(x, "TestWindowStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestWindowStartUndefined: Self = StObject.set(x, "TestWindowStart", js.undefined)
+    inline def setTestWindowStartUndefined: Self = StObject.set(x, "TestWindowStart", js.undefined)
   }
 }

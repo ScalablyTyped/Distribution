@@ -77,35 +77,26 @@ object iterresultMod {
   }
   object IterArgs {
     
-    @scala.inline
-    def apply(after: Date, before: Date, dt: Date, inc: Boolean): IterArgs = {
+    inline def apply(after: Date, before: Date, dt: Date, inc: Boolean): IterArgs = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], inc = inc.asInstanceOf[js.Any], _value = null)
       __obj.asInstanceOf[IterArgs]
     }
     
-    @scala.inline
-    implicit class IterArgsMutableBuilder[Self <: IterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IterArgs](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDt(value: Date): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
+      inline def setDt(value: Date): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInc(value: Boolean): Self = StObject.set(x, "inc", value.asInstanceOf[js.Any])
+      inline def setInc(value: Boolean): Self = StObject.set(x, "inc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_value(value: Date | js.Array[Date]): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+      inline def set_value(value: Date | js.Array[Date]): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_valueNull: Self = StObject.set(x, "_value", null)
+      inline def set_valueNull: Self = StObject.set(x, "_value", null)
       
-      @scala.inline
-      def set_valueVarargs(value: Date*): Self = StObject.set(x, "_value", js.Array(value :_*))
+      inline def set_valueVarargs(value: Date*): Self = StObject.set(x, "_value", js.Array(value :_*))
     }
   }
   
@@ -149,8 +140,7 @@ object iterresultMod {
   }
   object IterResult {
     
-    @scala.inline
-    def apply[M /* <: QueryMethodTypes */](
+    inline def apply[M /* <: QueryMethodTypes */](
       _result: js.Array[Date],
       accept: Date => Boolean,
       add: Date => Boolean,
@@ -163,44 +153,31 @@ object iterresultMod {
       __obj.asInstanceOf[IterResult[M]]
     }
     
-    @scala.inline
-    implicit class IterResultMutableBuilder[Self <: IterResult[?], M /* <: QueryMethodTypes */] (val x: Self & IterResult[M]) extends AnyVal {
+    extension [Self <: IterResult[?], M /* <: QueryMethodTypes */](x: Self & IterResult[M]) {
       
-      @scala.inline
-      def setAccept(value: Date => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+      inline def setAccept(value: Date => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAdd(value: Date => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Date => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setArgs(value: PartialIterArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: PartialIterArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetValue(value: () => IterResultType[M]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => IterResultType[M]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDateNull: Self = StObject.set(x, "maxDate", null)
+      inline def setMaxDateNull: Self = StObject.set(x, "maxDate", null)
       
-      @scala.inline
-      def setMethod(value: M): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: M): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDateNull: Self = StObject.set(x, "minDate", null)
+      inline def setMinDateNull: Self = StObject.set(x, "minDate", null)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_result(value: js.Array[Date]): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
+      inline def set_result(value: js.Array[Date]): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_resultVarargs(value: Date*): Self = StObject.set(x, "_result", js.Array(value :_*))
+      inline def set_resultVarargs(value: Date*): Self = StObject.set(x, "_result", js.Array(value :_*))
     }
   }
 }

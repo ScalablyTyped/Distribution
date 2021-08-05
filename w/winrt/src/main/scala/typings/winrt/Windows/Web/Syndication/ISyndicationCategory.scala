@@ -19,8 +19,7 @@ trait ISyndicationCategory
 }
 object ISyndicationCategory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeExtensions: IVector[SyndicationAttribute],
     baseUri: Uri,
     elementExtensions: IVector[ISyndicationNode],
@@ -37,16 +36,12 @@ object ISyndicationCategory {
     __obj.asInstanceOf[ISyndicationCategory]
   }
   
-  @scala.inline
-  implicit class ISyndicationCategoryMutableBuilder[Self <: ISyndicationCategory] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationCategory](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
   }
 }

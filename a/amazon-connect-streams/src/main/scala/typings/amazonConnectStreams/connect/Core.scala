@@ -54,8 +54,7 @@ trait Core extends StObject {
 }
 object Core {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     initCCP: (HTMLElement, InitCCPOptions) => Unit,
     onAccessDenied: SuccessFailCallback[js.Array[js.Any]] => Unit,
     onAuthFail: SuccessFailCallback[js.Array[js.Any]] => Unit,
@@ -67,25 +66,18 @@ object Core {
     __obj.asInstanceOf[Core]
   }
   
-  @scala.inline
-  implicit class CoreMutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
+  extension [Self <: Core](x: Self) {
     
-    @scala.inline
-    def setInitCCP(value: (HTMLElement, InitCCPOptions) => Unit): Self = StObject.set(x, "initCCP", js.Any.fromFunction2(value))
+    inline def setInitCCP(value: (HTMLElement, InitCCPOptions) => Unit): Self = StObject.set(x, "initCCP", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnAccessDenied(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = StObject.set(x, "onAccessDenied", js.Any.fromFunction1(value))
+    inline def setOnAccessDenied(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = StObject.set(x, "onAccessDenied", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAuthFail(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = StObject.set(x, "onAuthFail", js.Any.fromFunction1(value))
+    inline def setOnAuthFail(value: SuccessFailCallback[js.Array[js.Any]] => Unit): Self = StObject.set(x, "onAuthFail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewContact(value: ViewContactCallback => Unit): Self = StObject.set(x, "onViewContact", js.Any.fromFunction1(value))
+    inline def setOnViewContact(value: ViewContactCallback => Unit): Self = StObject.set(x, "onViewContact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setViewContact(value: String => Unit): Self = StObject.set(x, "viewContact", js.Any.fromFunction1(value))
+    inline def setViewContact(value: String => Unit): Self = StObject.set(x, "viewContact", js.Any.fromFunction1(value))
   }
 }

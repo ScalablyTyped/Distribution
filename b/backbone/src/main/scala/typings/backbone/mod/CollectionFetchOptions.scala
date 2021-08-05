@@ -13,19 +13,15 @@ trait CollectionFetchOptions
 }
 object CollectionFetchOptions {
   
-  @scala.inline
-  def apply(): CollectionFetchOptions = {
+  inline def apply(): CollectionFetchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionFetchOptions]
   }
   
-  @scala.inline
-  implicit class CollectionFetchOptionsMutableBuilder[Self <: CollectionFetchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionFetchOptions](x: Self) {
     
-    @scala.inline
-    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
   }
 }

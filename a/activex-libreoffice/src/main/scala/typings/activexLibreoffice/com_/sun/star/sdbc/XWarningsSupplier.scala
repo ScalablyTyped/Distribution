@@ -41,8 +41,7 @@ trait XWarningsSupplier
 }
 object XWarningsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Warnings: js.Any,
     acquire: () => Unit,
     clearWarnings: () => Unit,
@@ -54,16 +53,12 @@ object XWarningsSupplier {
     __obj.asInstanceOf[XWarningsSupplier]
   }
   
-  @scala.inline
-  implicit class XWarningsSupplierMutableBuilder[Self <: XWarningsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XWarningsSupplier](x: Self) {
     
-    @scala.inline
-    def setClearWarnings(value: () => Unit): Self = StObject.set(x, "clearWarnings", js.Any.fromFunction0(value))
+    inline def setClearWarnings(value: () => Unit): Self = StObject.set(x, "clearWarnings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWarnings(value: () => js.Any): Self = StObject.set(x, "getWarnings", js.Any.fromFunction0(value))
+    inline def setGetWarnings(value: () => js.Any): Self = StObject.set(x, "getWarnings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWarnings(value: js.Any): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Any): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
   }
 }

@@ -15,34 +15,25 @@ trait IAcknowledgeRequest extends StObject {
 }
 object IAcknowledgeRequest {
   
-  @scala.inline
-  def apply(): IAcknowledgeRequest = {
+  inline def apply(): IAcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAcknowledgeRequest]
   }
   
-  @scala.inline
-  implicit class IAcknowledgeRequestMutableBuilder[Self <: IAcknowledgeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IAcknowledgeRequest](x: Self) {
     
-    @scala.inline
-    def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
+    inline def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdsNull: Self = StObject.set(x, "ackIds", null)
+    inline def setAckIdsNull: Self = StObject.set(x, "ackIds", null)
     
-    @scala.inline
-    def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
+    inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    @scala.inline
-    def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    inline def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

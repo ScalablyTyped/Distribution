@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FirewallPreSharedKeyEncodingMethodType extends StObject
 object FirewallPreSharedKeyEncodingMethodType {
   
-  @scala.inline
-  def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  inline def deviceDefault: typings.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceDefault]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def utF8: typings.microsoftGraph.microsoftGraphStrings.utF8 = "utF8".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.utF8]
+  inline def utF8: typings.microsoftGraph.microsoftGraphStrings.utF8 = "utF8".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.utF8]
 }

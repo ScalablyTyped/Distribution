@@ -28,62 +28,44 @@ object anon {
   }
   object Createdat {
     
-    @scala.inline
-    def apply(id: String | Double, name: String): Createdat = {
+    inline def apply(id: String | Double, name: String): Createdat = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Createdat]
     }
     
-    @scala.inline
-    implicit class CreatedatMutableBuilder[Self <: Createdat] (val x: Self) extends AnyVal {
+    extension [Self <: Createdat](x: Self) {
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
+      inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndustry(value: String): Self = StObject.set(x, "industry", value.asInstanceOf[js.Any])
+      inline def setIndustry(value: String): Self = StObject.set(x, "industry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndustryUndefined: Self = StObject.set(x, "industry", js.undefined)
+      inline def setIndustryUndefined: Self = StObject.set(x, "industry", js.undefined)
       
-      @scala.inline
-      def setMonthly_spend(value: Double): Self = StObject.set(x, "monthly_spend", value.asInstanceOf[js.Any])
+      inline def setMonthly_spend(value: Double): Self = StObject.set(x, "monthly_spend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthly_spendUndefined: Self = StObject.set(x, "monthly_spend", js.undefined)
+      inline def setMonthly_spendUndefined: Self = StObject.set(x, "monthly_spend", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+      inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setUser_count(value: Double): Self = StObject.set(x, "user_count", value.asInstanceOf[js.Any])
+      inline def setUser_count(value: Double): Self = StObject.set(x, "user_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_countUndefined: Self = StObject.set(x, "user_count", js.undefined)
+      inline def setUser_countUndefined: Self = StObject.set(x, "user_count", js.undefined)
       
-      @scala.inline
-      def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+      inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+      inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
     }
   }
 }

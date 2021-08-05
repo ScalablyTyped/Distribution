@@ -12,19 +12,15 @@ trait CancelStore extends StObject {
 }
 object CancelStore {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Store: typings.activexOutlook.Outlook.Store): CancelStore = {
+  inline def apply(Cancel: Boolean, Store: typings.activexOutlook.Outlook.Store): CancelStore = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Store = Store.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelStore]
   }
   
-  @scala.inline
-  implicit class CancelStoreMutableBuilder[Self <: CancelStore] (val x: Self) extends AnyVal {
+  extension [Self <: CancelStore](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: typings.activexOutlook.Outlook.Store): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
+    inline def setStore(value: typings.activexOutlook.Outlook.Store): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
   }
 }

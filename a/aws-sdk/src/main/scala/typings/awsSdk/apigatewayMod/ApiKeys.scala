@@ -20,37 +20,27 @@ trait ApiKeys extends StObject {
 }
 object ApiKeys {
   
-  @scala.inline
-  def apply(): ApiKeys = {
+  inline def apply(): ApiKeys = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiKeys]
   }
   
-  @scala.inline
-  implicit class ApiKeysMutableBuilder[Self <: ApiKeys] (val x: Self) extends AnyVal {
+  extension [Self <: ApiKeys](x: Self) {
     
-    @scala.inline
-    def setItems(value: ListOfApiKey): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ListOfApiKey): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ApiKey*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ApiKey*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: ListOfString): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: ListOfString): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

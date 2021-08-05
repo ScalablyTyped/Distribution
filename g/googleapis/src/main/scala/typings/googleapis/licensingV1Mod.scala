@@ -301,17 +301,14 @@ object licensingV1Mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -341,38 +338,28 @@ object licensingV1Mod {
     }
     object ParamsResourceLicenseassignmentsDelete {
       
-      @scala.inline
-      def apply(): ParamsResourceLicenseassignmentsDelete = {
+      inline def apply(): ParamsResourceLicenseassignmentsDelete = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceLicenseassignmentsDelete]
       }
       
-      @scala.inline
-      implicit class ParamsResourceLicenseassignmentsDeleteMutableBuilder[Self <: ParamsResourceLicenseassignmentsDelete] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceLicenseassignmentsDelete](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -402,38 +389,28 @@ object licensingV1Mod {
     }
     object ParamsResourceLicenseassignmentsGet {
       
-      @scala.inline
-      def apply(): ParamsResourceLicenseassignmentsGet = {
+      inline def apply(): ParamsResourceLicenseassignmentsGet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceLicenseassignmentsGet]
       }
       
-      @scala.inline
-      implicit class ParamsResourceLicenseassignmentsGetMutableBuilder[Self <: ParamsResourceLicenseassignmentsGet] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceLicenseassignmentsGet](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -463,38 +440,28 @@ object licensingV1Mod {
     }
     object ParamsResourceLicenseassignmentsInsert {
       
-      @scala.inline
-      def apply(): ParamsResourceLicenseassignmentsInsert = {
+      inline def apply(): ParamsResourceLicenseassignmentsInsert = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceLicenseassignmentsInsert]
       }
       
-      @scala.inline
-      implicit class ParamsResourceLicenseassignmentsInsertMutableBuilder[Self <: ParamsResourceLicenseassignmentsInsert] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceLicenseassignmentsInsert](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setRequestBody(value: SchemaLicenseAssignmentInsert): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+        inline def setRequestBody(value: SchemaLicenseAssignmentInsert): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+        inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
       }
     }
     
@@ -532,44 +499,32 @@ object licensingV1Mod {
     }
     object ParamsResourceLicenseassignmentsListforproduct {
       
-      @scala.inline
-      def apply(): ParamsResourceLicenseassignmentsListforproduct = {
+      inline def apply(): ParamsResourceLicenseassignmentsListforproduct = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceLicenseassignmentsListforproduct]
       }
       
-      @scala.inline
-      implicit class ParamsResourceLicenseassignmentsListforproductMutableBuilder[Self <: ParamsResourceLicenseassignmentsListforproduct] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceLicenseassignmentsListforproduct](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+        inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+        inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
         
-        @scala.inline
-        def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+        inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+        inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       }
     }
     
@@ -612,50 +567,36 @@ object licensingV1Mod {
     }
     object ParamsResourceLicenseassignmentsListforproductandsku {
       
-      @scala.inline
-      def apply(): ParamsResourceLicenseassignmentsListforproductandsku = {
+      inline def apply(): ParamsResourceLicenseassignmentsListforproductandsku = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceLicenseassignmentsListforproductandsku]
       }
       
-      @scala.inline
-      implicit class ParamsResourceLicenseassignmentsListforproductandskuMutableBuilder[Self <: ParamsResourceLicenseassignmentsListforproductandsku] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceLicenseassignmentsListforproductandsku](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+        inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+        inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
         
-        @scala.inline
-        def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+        inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+        inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
       }
     }
     
@@ -690,44 +631,32 @@ object licensingV1Mod {
     }
     object ParamsResourceLicenseassignmentsPatch {
       
-      @scala.inline
-      def apply(): ParamsResourceLicenseassignmentsPatch = {
+      inline def apply(): ParamsResourceLicenseassignmentsPatch = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceLicenseassignmentsPatch]
       }
       
-      @scala.inline
-      implicit class ParamsResourceLicenseassignmentsPatchMutableBuilder[Self <: ParamsResourceLicenseassignmentsPatch] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceLicenseassignmentsPatch](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setRequestBody(value: SchemaLicenseAssignment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+        inline def setRequestBody(value: SchemaLicenseAssignment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+        inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -762,44 +691,32 @@ object licensingV1Mod {
     }
     object ParamsResourceLicenseassignmentsUpdate {
       
-      @scala.inline
-      def apply(): ParamsResourceLicenseassignmentsUpdate = {
+      inline def apply(): ParamsResourceLicenseassignmentsUpdate = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceLicenseassignmentsUpdate]
       }
       
-      @scala.inline
-      implicit class ParamsResourceLicenseassignmentsUpdateMutableBuilder[Self <: ParamsResourceLicenseassignmentsUpdate] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceLicenseassignmentsUpdate](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setRequestBody(value: SchemaLicenseAssignment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+        inline def setRequestBody(value: SchemaLicenseAssignment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+        inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -850,62 +767,44 @@ object licensingV1Mod {
     }
     object SchemaLicenseAssignment {
       
-      @scala.inline
-      def apply(): SchemaLicenseAssignment = {
+      inline def apply(): SchemaLicenseAssignment = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaLicenseAssignment]
       }
       
-      @scala.inline
-      implicit class SchemaLicenseAssignmentMutableBuilder[Self <: SchemaLicenseAssignment] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaLicenseAssignment](x: Self) {
         
-        @scala.inline
-        def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
+        inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
+        inline def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+        inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+        inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
         
-        @scala.inline
-        def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+        inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+        inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
         
-        @scala.inline
-        def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+        inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
         
-        @scala.inline
-        def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
+        inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
+        inline def setSkuIdUndefined: Self = StObject.set(x, "skuId", js.undefined)
         
-        @scala.inline
-        def setSkuName(value: String): Self = StObject.set(x, "skuName", value.asInstanceOf[js.Any])
+        inline def setSkuName(value: String): Self = StObject.set(x, "skuName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkuNameUndefined: Self = StObject.set(x, "skuName", js.undefined)
+        inline def setSkuNameUndefined: Self = StObject.set(x, "skuName", js.undefined)
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -921,20 +820,16 @@ object licensingV1Mod {
     }
     object SchemaLicenseAssignmentInsert {
       
-      @scala.inline
-      def apply(): SchemaLicenseAssignmentInsert = {
+      inline def apply(): SchemaLicenseAssignmentInsert = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaLicenseAssignmentInsert]
       }
       
-      @scala.inline
-      implicit class SchemaLicenseAssignmentInsertMutableBuilder[Self <: SchemaLicenseAssignmentInsert] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaLicenseAssignmentInsert](x: Self) {
         
-        @scala.inline
-        def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+        inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+        inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
       }
     }
     
@@ -966,41 +861,30 @@ object licensingV1Mod {
     }
     object SchemaLicenseAssignmentList {
       
-      @scala.inline
-      def apply(): SchemaLicenseAssignmentList = {
+      inline def apply(): SchemaLicenseAssignmentList = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaLicenseAssignmentList]
       }
       
-      @scala.inline
-      implicit class SchemaLicenseAssignmentListMutableBuilder[Self <: SchemaLicenseAssignmentList] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaLicenseAssignmentList](x: Self) {
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[SchemaLicenseAssignment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[SchemaLicenseAssignment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: SchemaLicenseAssignment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SchemaLicenseAssignment*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -1046,56 +930,40 @@ object licensingV1Mod {
     }
     object StandardParameters {
       
-      @scala.inline
-      def apply(): StandardParameters = {
+      inline def apply(): StandardParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StandardParameters]
       }
       
-      @scala.inline
-      implicit class StandardParametersMutableBuilder[Self <: StandardParameters] (val x: Self) extends AnyVal {
+      extension [Self <: StandardParameters](x: Self) {
         
-        @scala.inline
-        def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+        inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+        inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
         
-        @scala.inline
-        def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+        inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+        inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
         
-        @scala.inline
-        def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+        inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+        inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        @scala.inline
-        def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
+        inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
+        inline def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
       }
     }
   }

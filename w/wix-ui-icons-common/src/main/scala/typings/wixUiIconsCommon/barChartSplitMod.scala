@@ -22,20 +22,16 @@ object barChartSplitMod extends Shortcut {
   }
   object BarChartSplitProps {
     
-    @scala.inline
-    def apply(): BarChartSplitProps = {
+    inline def apply(): BarChartSplitProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BarChartSplitProps]
     }
     
-    @scala.inline
-    implicit class BarChartSplitPropsMutableBuilder[Self <: BarChartSplitProps] (val x: Self) extends AnyVal {
+    extension [Self <: BarChartSplitProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

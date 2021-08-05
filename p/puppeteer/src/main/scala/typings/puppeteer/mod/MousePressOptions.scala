@@ -20,25 +20,19 @@ trait MousePressOptions extends StObject {
 }
 object MousePressOptions {
   
-  @scala.inline
-  def apply(): MousePressOptions = {
+  inline def apply(): MousePressOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MousePressOptions]
   }
   
-  @scala.inline
-  implicit class MousePressOptionsMutableBuilder[Self <: MousePressOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MousePressOptions](x: Self) {
     
-    @scala.inline
-    def setButton(value: MouseButtons): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: MouseButtons): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
+    inline def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
+    inline def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
   }
 }

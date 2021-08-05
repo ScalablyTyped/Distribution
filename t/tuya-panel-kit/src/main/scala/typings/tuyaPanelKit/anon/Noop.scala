@@ -19,19 +19,15 @@ trait Noop extends StObject {
 }
 object Noop {
   
-  @scala.inline
-  def apply(action: NavigationAction, noop: Boolean): Noop = {
+  inline def apply(action: NavigationAction, noop: Boolean): Noop = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], noop = noop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Noop]
   }
   
-  @scala.inline
-  implicit class NoopMutableBuilder[Self <: Noop] (val x: Self) extends AnyVal {
+  extension [Self <: Noop](x: Self) {
     
-    @scala.inline
-    def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoop(value: Boolean): Self = StObject.set(x, "noop", value.asInstanceOf[js.Any])
+    inline def setNoop(value: Boolean): Self = StObject.set(x, "noop", value.asInstanceOf[js.Any])
   }
 }

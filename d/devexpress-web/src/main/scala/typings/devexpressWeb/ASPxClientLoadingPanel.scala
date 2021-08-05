@@ -53,8 +53,7 @@ trait ASPxClientLoadingPanel
 }
 object ASPxClientLoadingPanel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -82,28 +81,20 @@ object ASPxClientLoadingPanel {
     __obj.asInstanceOf[ASPxClientLoadingPanel]
   }
   
-  @scala.inline
-  implicit class ASPxClientLoadingPanelMutableBuilder[Self <: ASPxClientLoadingPanel] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientLoadingPanel](x: Self) {
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowAtPos(value: (Double, Double) => Unit): Self = StObject.set(x, "ShowAtPos", js.Any.fromFunction2(value))
+    inline def setShowAtPos(value: (Double, Double) => Unit): Self = StObject.set(x, "ShowAtPos", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowInElement(value: js.Any => Unit): Self = StObject.set(x, "ShowInElement", js.Any.fromFunction1(value))
+    inline def setShowInElement(value: js.Any => Unit): Self = StObject.set(x, "ShowInElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowInElementByID(value: String => Unit): Self = StObject.set(x, "ShowInElementByID", js.Any.fromFunction1(value))
+    inline def setShowInElementByID(value: String => Unit): Self = StObject.set(x, "ShowInElementByID", js.Any.fromFunction1(value))
   }
 }

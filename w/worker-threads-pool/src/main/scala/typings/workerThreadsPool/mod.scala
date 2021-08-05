@@ -34,26 +34,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMaxWaiting(value: Double): Self = StObject.set(x, "maxWaiting", value.asInstanceOf[js.Any])
+      inline def setMaxWaiting(value: Double): Self = StObject.set(x, "maxWaiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitingUndefined: Self = StObject.set(x, "maxWaiting", js.undefined)
+      inline def setMaxWaitingUndefined: Self = StObject.set(x, "maxWaiting", js.undefined)
     }
   }
   

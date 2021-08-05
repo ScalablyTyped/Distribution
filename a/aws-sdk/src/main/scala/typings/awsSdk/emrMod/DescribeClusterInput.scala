@@ -13,16 +13,13 @@ trait DescribeClusterInput extends StObject {
 }
 object DescribeClusterInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId): DescribeClusterInput = {
+  inline def apply(ClusterId: ClusterId): DescribeClusterInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClusterInput]
   }
   
-  @scala.inline
-  implicit class DescribeClusterInputMutableBuilder[Self <: DescribeClusterInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClusterInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait ToolExitCode extends StObject {
 }
 object ToolExitCode {
   
-  @scala.inline
-  def apply(): ToolExitCode = {
+  inline def apply(): ToolExitCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolExitCode]
   }
   
-  @scala.inline
-  implicit class ToolExitCodeMutableBuilder[Self <: ToolExitCode] (val x: Self) extends AnyVal {
+  extension [Self <: ToolExitCode](x: Self) {
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

@@ -30,52 +30,37 @@ trait InitOpts[T /* <: Ractive[T] */]
 }
 object InitOpts {
   
-  @scala.inline
-  def apply[T /* <: Ractive[T] */](): InitOpts[T] = {
+  inline def apply[T /* <: Ractive[T] */](): InitOpts[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitOpts[T]]
   }
   
-  @scala.inline
-  implicit class InitOptsMutableBuilder[Self <: InitOpts[?], T /* <: Ractive[T] */] (val x: Self & InitOpts[T]) extends AnyVal {
+  extension [Self <: InitOpts[?], T /* <: Ractive[T] */](x: Self & InitOpts[T]) {
     
-    @scala.inline
-    def setAppend(value: `true`): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: `true`): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
-    @scala.inline
-    def setData(value: Data | DataFn[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data | DataFn[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEl(value: Target): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Target): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+    inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
-    @scala.inline
-    def setEnhance(value: `true`): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
+    inline def setEnhance(value: `true`): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
+    inline def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUse(value: js.Array[PluginInstance]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: js.Array[PluginInstance]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    @scala.inline
-    def setUseVarargs(value: PluginInstance*): Self = StObject.set(x, "use", js.Array(value :_*))
+    inline def setUseVarargs(value: PluginInstance*): Self = StObject.set(x, "use", js.Array(value :_*))
   }
 }

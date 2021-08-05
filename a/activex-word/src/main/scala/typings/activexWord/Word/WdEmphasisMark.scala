@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdEmphasisMark extends StObject
 object WdEmphasisMark {
   
-  @scala.inline
-  def wdEmphasisMarkNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdEmphasisMarkNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdEmphasisMarkOverComma: `2` = 2.asInstanceOf[`2`]
+  inline def wdEmphasisMarkOverComma: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdEmphasisMarkOverSolidCircle: `1` = 1.asInstanceOf[`1`]
+  inline def wdEmphasisMarkOverSolidCircle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdEmphasisMarkOverWhiteCircle: `3` = 3.asInstanceOf[`3`]
+  inline def wdEmphasisMarkOverWhiteCircle: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdEmphasisMarkUnderSolidCircle: `4` = 4.asInstanceOf[`4`]
+  inline def wdEmphasisMarkUnderSolidCircle: `4` = 4.asInstanceOf[`4`]
 }

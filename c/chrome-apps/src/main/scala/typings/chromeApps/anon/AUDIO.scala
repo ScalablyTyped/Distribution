@@ -20,25 +20,19 @@ trait AUDIO extends StObject {
 }
 object AUDIO {
   
-  @scala.inline
-  def apply(): AUDIO = {
+  inline def apply(): AUDIO = {
     val __obj = js.Dynamic.literal(AUDIO = "audio", SCREEN = "screen", TAB = "tab", WINDOW = "window")
     __obj.asInstanceOf[AUDIO]
   }
   
-  @scala.inline
-  implicit class AUDIOMutableBuilder[Self <: AUDIO] (val x: Self) extends AnyVal {
+  extension [Self <: AUDIO](x: Self) {
     
-    @scala.inline
-    def setAUDIO(value: audio_): Self = StObject.set(x, "AUDIO", value.asInstanceOf[js.Any])
+    inline def setAUDIO(value: audio_): Self = StObject.set(x, "AUDIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSCREEN(value: screen_): Self = StObject.set(x, "SCREEN", value.asInstanceOf[js.Any])
+    inline def setSCREEN(value: screen_): Self = StObject.set(x, "SCREEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTAB(value: tab_): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
+    inline def setTAB(value: tab_): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWINDOW(value: window_): Self = StObject.set(x, "WINDOW", value.asInstanceOf[js.Any])
+    inline def setWINDOW(value: window_): Self = StObject.set(x, "WINDOW", value.asInstanceOf[js.Any])
   }
 }

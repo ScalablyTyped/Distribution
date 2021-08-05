@@ -14,8 +14,7 @@ trait TfvcLabel
 }
 object TfvcLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     description: String,
     id: Double,
@@ -30,13 +29,10 @@ object TfvcLabel {
     __obj.asInstanceOf[TfvcLabel]
   }
   
-  @scala.inline
-  implicit class TfvcLabelMutableBuilder[Self <: TfvcLabel] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcLabel](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[TfvcItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[TfvcItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: TfvcItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TfvcItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

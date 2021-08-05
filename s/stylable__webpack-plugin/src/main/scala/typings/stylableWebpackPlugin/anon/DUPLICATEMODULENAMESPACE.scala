@@ -10,16 +10,13 @@ trait DUPLICATEMODULENAMESPACE extends StObject {
 }
 object DUPLICATEMODULENAMESPACE {
   
-  @scala.inline
-  def apply(DUPLICATE_MODULE_NAMESPACE: Boolean): DUPLICATEMODULENAMESPACE = {
+  inline def apply(DUPLICATE_MODULE_NAMESPACE: Boolean): DUPLICATEMODULENAMESPACE = {
     val __obj = js.Dynamic.literal(DUPLICATE_MODULE_NAMESPACE = DUPLICATE_MODULE_NAMESPACE.asInstanceOf[js.Any])
     __obj.asInstanceOf[DUPLICATEMODULENAMESPACE]
   }
   
-  @scala.inline
-  implicit class DUPLICATEMODULENAMESPACEMutableBuilder[Self <: DUPLICATEMODULENAMESPACE] (val x: Self) extends AnyVal {
+  extension [Self <: DUPLICATEMODULENAMESPACE](x: Self) {
     
-    @scala.inline
-    def setDUPLICATE_MODULE_NAMESPACE(value: Boolean): Self = StObject.set(x, "DUPLICATE_MODULE_NAMESPACE", value.asInstanceOf[js.Any])
+    inline def setDUPLICATE_MODULE_NAMESPACE(value: Boolean): Self = StObject.set(x, "DUPLICATE_MODULE_NAMESPACE", value.asInstanceOf[js.Any])
   }
 }

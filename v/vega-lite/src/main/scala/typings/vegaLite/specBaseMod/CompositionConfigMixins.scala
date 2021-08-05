@@ -14,25 +14,19 @@ trait CompositionConfigMixins extends StObject {
 }
 object CompositionConfigMixins {
   
-  @scala.inline
-  def apply(): CompositionConfigMixins = {
+  inline def apply(): CompositionConfigMixins = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompositionConfigMixins]
   }
   
-  @scala.inline
-  implicit class CompositionConfigMixinsMutableBuilder[Self <: CompositionConfigMixins] (val x: Self) extends AnyVal {
+  extension [Self <: CompositionConfigMixins](x: Self) {
     
-    @scala.inline
-    def setConcat(value: CompositionConfig): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
+    inline def setConcat(value: CompositionConfig): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcatUndefined: Self = StObject.set(x, "concat", js.undefined)
+    inline def setConcatUndefined: Self = StObject.set(x, "concat", js.undefined)
     
-    @scala.inline
-    def setFacet(value: CompositionConfig): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
+    inline def setFacet(value: CompositionConfig): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
+    inline def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
   }
 }

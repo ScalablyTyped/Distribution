@@ -27,8 +27,7 @@ trait DeploymentApprovalPendingEvent extends StObject {
 }
 object DeploymentApprovalPendingEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approval: ReleaseApproval,
     approvalOptions: ApprovalOptions,
     completedApprovals: js.Array[ReleaseApproval],
@@ -43,40 +42,28 @@ object DeploymentApprovalPendingEvent {
     __obj.asInstanceOf[DeploymentApprovalPendingEvent]
   }
   
-  @scala.inline
-  implicit class DeploymentApprovalPendingEventMutableBuilder[Self <: DeploymentApprovalPendingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentApprovalPendingEvent](x: Self) {
     
-    @scala.inline
-    def setApproval(value: ReleaseApproval): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
+    inline def setApproval(value: ReleaseApproval): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalOptions(value: ApprovalOptions): Self = StObject.set(x, "approvalOptions", value.asInstanceOf[js.Any])
+    inline def setApprovalOptions(value: ApprovalOptions): Self = StObject.set(x, "approvalOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "completedApprovals", value.asInstanceOf[js.Any])
+    inline def setCompletedApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "completedApprovals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "completedApprovals", js.Array(value :_*))
+    inline def setCompletedApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "completedApprovals", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMultipleRankApproval(value: Boolean): Self = StObject.set(x, "isMultipleRankApproval", value.asInstanceOf[js.Any])
+    inline def setIsMultipleRankApproval(value: Boolean): Self = StObject.set(x, "isMultipleRankApproval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "pendingApprovals", value.asInstanceOf[js.Any])
+    inline def setPendingApprovals(value: js.Array[ReleaseApproval]): Self = StObject.set(x, "pendingApprovals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "pendingApprovals", js.Array(value :_*))
+    inline def setPendingApprovalsVarargs(value: ReleaseApproval*): Self = StObject.set(x, "pendingApprovals", js.Array(value :_*))
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

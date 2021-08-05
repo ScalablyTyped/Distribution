@@ -26,43 +26,31 @@ trait ContentRestriction extends StObject {
 }
 object ContentRestriction {
   
-  @scala.inline
-  def apply(): ContentRestriction = {
+  inline def apply(): ContentRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentRestriction]
   }
   
-  @scala.inline
-  implicit class ContentRestrictionMutableBuilder[Self <: ContentRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: ContentRestriction](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setRestrictingUser(value: User): Self = StObject.set(x, "restrictingUser", value.asInstanceOf[js.Any])
+    inline def setRestrictingUser(value: User): Self = StObject.set(x, "restrictingUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictingUserUndefined: Self = StObject.set(x, "restrictingUser", js.undefined)
+    inline def setRestrictingUserUndefined: Self = StObject.set(x, "restrictingUser", js.undefined)
     
-    @scala.inline
-    def setRestrictionTime(value: String): Self = StObject.set(x, "restrictionTime", value.asInstanceOf[js.Any])
+    inline def setRestrictionTime(value: String): Self = StObject.set(x, "restrictionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionTimeUndefined: Self = StObject.set(x, "restrictionTime", js.undefined)
+    inline def setRestrictionTimeUndefined: Self = StObject.set(x, "restrictionTime", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -30,34 +30,25 @@ trait ProfileSnapshotRequest extends StObject {
 }
 object ProfileSnapshotRequest {
   
-  @scala.inline
-  def apply(snapshotId: SnapshotId): ProfileSnapshotRequest = {
+  inline def apply(snapshotId: SnapshotId): ProfileSnapshotRequest = {
     val __obj = js.Dynamic.literal(snapshotId = snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class ProfileSnapshotRequestMutableBuilder[Self <: ProfileSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setClipRect(value: Rect): Self = StObject.set(x, "clipRect", value.asInstanceOf[js.Any])
+    inline def setClipRect(value: Rect): Self = StObject.set(x, "clipRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipRectUndefined: Self = StObject.set(x, "clipRect", js.undefined)
+    inline def setClipRectUndefined: Self = StObject.set(x, "clipRect", js.undefined)
     
-    @scala.inline
-    def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
+    inline def setMinDuration(value: Double): Self = StObject.set(x, "minDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
+    inline def setMinDurationUndefined: Self = StObject.set(x, "minDuration", js.undefined)
     
-    @scala.inline
-    def setMinRepeatCount(value: integer): Self = StObject.set(x, "minRepeatCount", value.asInstanceOf[js.Any])
+    inline def setMinRepeatCount(value: integer): Self = StObject.set(x, "minRepeatCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRepeatCountUndefined: Self = StObject.set(x, "minRepeatCount", js.undefined)
+    inline def setMinRepeatCountUndefined: Self = StObject.set(x, "minRepeatCount", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
   }
 }

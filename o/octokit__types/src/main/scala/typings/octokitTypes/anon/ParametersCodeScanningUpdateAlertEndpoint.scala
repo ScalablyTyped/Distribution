@@ -18,8 +18,7 @@ trait ParametersCodeScanningUpdateAlertEndpoint extends StObject {
 }
 object ParametersCodeScanningUpdateAlertEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: CodeScanningUpdateAlertEndpoint,
     request: CodeScanningUpdateAlertRequestOptions,
     response: OctokitResponse[CodeScanningUpdateAlertResponseData]
@@ -28,16 +27,12 @@ object ParametersCodeScanningUpdateAlertEndpoint {
     __obj.asInstanceOf[ParametersCodeScanningUpdateAlertEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersCodeScanningUpdateAlertEndpointMutableBuilder[Self <: ParametersCodeScanningUpdateAlertEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersCodeScanningUpdateAlertEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: CodeScanningUpdateAlertEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: CodeScanningUpdateAlertEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: CodeScanningUpdateAlertRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: CodeScanningUpdateAlertRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[CodeScanningUpdateAlertResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[CodeScanningUpdateAlertResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

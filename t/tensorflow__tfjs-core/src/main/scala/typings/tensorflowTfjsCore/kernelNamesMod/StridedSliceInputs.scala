@@ -11,19 +11,15 @@ trait StridedSliceInputs extends StObject {
 }
 object StridedSliceInputs {
   
-  @scala.inline
-  def apply(): StridedSliceInputs = {
+  inline def apply(): StridedSliceInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StridedSliceInputs]
   }
   
-  @scala.inline
-  implicit class StridedSliceInputsMutableBuilder[Self <: StridedSliceInputs] (val x: Self) extends AnyVal {
+  extension [Self <: StridedSliceInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

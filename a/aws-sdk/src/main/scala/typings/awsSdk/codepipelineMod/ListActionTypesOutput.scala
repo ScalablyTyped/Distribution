@@ -18,25 +18,19 @@ trait ListActionTypesOutput extends StObject {
 }
 object ListActionTypesOutput {
   
-  @scala.inline
-  def apply(actionTypes: ActionTypeList): ListActionTypesOutput = {
+  inline def apply(actionTypes: ActionTypeList): ListActionTypesOutput = {
     val __obj = js.Dynamic.literal(actionTypes = actionTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActionTypesOutput]
   }
   
-  @scala.inline
-  implicit class ListActionTypesOutputMutableBuilder[Self <: ListActionTypesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListActionTypesOutput](x: Self) {
     
-    @scala.inline
-    def setActionTypes(value: ActionTypeList): Self = StObject.set(x, "actionTypes", value.asInstanceOf[js.Any])
+    inline def setActionTypes(value: ActionTypeList): Self = StObject.set(x, "actionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypesVarargs(value: ActionType*): Self = StObject.set(x, "actionTypes", js.Array(value :_*))
+    inline def setActionTypesVarargs(value: ActionType*): Self = StObject.set(x, "actionTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

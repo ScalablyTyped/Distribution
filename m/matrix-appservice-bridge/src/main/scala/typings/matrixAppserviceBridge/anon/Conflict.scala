@@ -13,25 +13,19 @@ trait Conflict extends StObject {
 }
 object Conflict {
   
-  @scala.inline
-  def apply(conflict: js.Array[RegExp], exempt: js.Array[RegExp]): Conflict = {
+  inline def apply(conflict: js.Array[RegExp], exempt: js.Array[RegExp]): Conflict = {
     val __obj = js.Dynamic.literal(conflict = conflict.asInstanceOf[js.Any], exempt = exempt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conflict]
   }
   
-  @scala.inline
-  implicit class ConflictMutableBuilder[Self <: Conflict] (val x: Self) extends AnyVal {
+  extension [Self <: Conflict](x: Self) {
     
-    @scala.inline
-    def setConflict(value: js.Array[RegExp]): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
+    inline def setConflict(value: js.Array[RegExp]): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictVarargs(value: RegExp*): Self = StObject.set(x, "conflict", js.Array(value :_*))
+    inline def setConflictVarargs(value: RegExp*): Self = StObject.set(x, "conflict", js.Array(value :_*))
     
-    @scala.inline
-    def setExempt(value: js.Array[RegExp]): Self = StObject.set(x, "exempt", value.asInstanceOf[js.Any])
+    inline def setExempt(value: js.Array[RegExp]): Self = StObject.set(x, "exempt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExemptVarargs(value: RegExp*): Self = StObject.set(x, "exempt", js.Array(value :_*))
+    inline def setExemptVarargs(value: RegExp*): Self = StObject.set(x, "exempt", js.Array(value :_*))
   }
 }

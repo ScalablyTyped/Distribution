@@ -14,25 +14,19 @@ trait Ids extends StObject {
 }
 object Ids {
   
-  @scala.inline
-  def apply(ids: js.Array[RouteID]): Ids = {
+  inline def apply(ids: js.Array[RouteID]): Ids = {
     val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ids]
   }
   
-  @scala.inline
-  implicit class IdsMutableBuilder[Self <: Ids] (val x: Self) extends AnyVal {
+  extension [Self <: Ids](x: Self) {
     
-    @scala.inline
-    def setIds(value: js.Array[RouteID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[RouteID]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsVarargs(value: RouteID*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: RouteID*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setOutlet(value: NavOutletElement): Self = StObject.set(x, "outlet", value.asInstanceOf[js.Any])
+    inline def setOutlet(value: NavOutletElement): Self = StObject.set(x, "outlet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutletUndefined: Self = StObject.set(x, "outlet", js.undefined)
+    inline def setOutletUndefined: Self = StObject.set(x, "outlet", js.undefined)
   }
 }

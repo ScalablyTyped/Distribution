@@ -65,8 +65,7 @@ object EnumerationAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
+  inline def create(model: IModel): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
   
   /**
     * Creates and returns a new EnumerationAttributeType instance in the SDK and on the server.
@@ -77,8 +76,7 @@ object EnumerationAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: Attribute): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
+  inline def createIn(container: Attribute): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
   
   /**
     * Creates and returns a new EnumerationAttributeType instance in the SDK and on the server.
@@ -86,8 +84,7 @@ object EnumerationAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInAttributeUnderType(container: Attribute): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
+  inline def createInAttributeUnderType(container: Attribute): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
   
   /**
     * Creates and returns a new EnumerationAttributeType instance in the SDK and on the server.
@@ -98,8 +95,7 @@ object EnumerationAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInEntityKeyPartUnderType(container: EntityKeyPart): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
+  inline def createInEntityKeyPartUnderType(container: EntityKeyPart): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
   
   /**
     * Creates and returns a new EnumerationAttributeType instance in the SDK and on the server.
@@ -110,20 +106,17 @@ object EnumerationAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInODataKeyPartUnderType(container: ODataKeyPart): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
+  inline def createInODataKeyPartUnderType(container: ODataKeyPart): EnumerationAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[EnumerationAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EnumerationAttributeType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.EnumerationAttributeType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

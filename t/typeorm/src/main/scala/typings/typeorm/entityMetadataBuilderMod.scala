@@ -29,7 +29,7 @@ object entityMetadataBuilderMod {
     /**
       * Used to build entity metadatas of the closure junction entities.
       */
-    var closureJunctionEntityMetadataBuilder: ClosureJunctionEntityMetadataBuilder = js.native
+    /* protected */ var closureJunctionEntityMetadataBuilder: ClosureJunctionEntityMetadataBuilder = js.native
     
     /* protected */ def computeEntityMetadataStep1(allEntityMetadatas: js.Array[EntityMetadata], entityMetadata: EntityMetadata): Unit = js.native
     
@@ -45,7 +45,7 @@ object entityMetadataBuilderMod {
     
     /* protected */ def computeParentEntityMetadata(allEntityMetadatas: js.Array[EntityMetadata], entityMetadata: EntityMetadata): Unit = js.native
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
     
     /**
       * Creates from the given embedded metadata args real embedded metadatas with its columns and relations,
@@ -67,13 +67,13 @@ object entityMetadataBuilderMod {
     /**
       * Used to build entity metadatas of the junction entities.
       */
-    var junctionEntityMetadataBuilder: JunctionEntityMetadataBuilder = js.native
+    /* protected */ var junctionEntityMetadataBuilder: JunctionEntityMetadataBuilder = js.native
     
-    var metadataArgsStorage: js.Any = js.native
+    /* private */ var metadataArgsStorage: js.Any = js.native
     
     /**
       * Used to build join columns of the relations.
       */
-    var relationJoinColumnBuilder: RelationJoinColumnBuilder = js.native
+    /* protected */ var relationJoinColumnBuilder: RelationJoinColumnBuilder = js.native
   }
 }

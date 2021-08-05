@@ -14,31 +14,23 @@ trait JobSheetsInterface extends StObject {
 }
 object JobSheetsInterface {
   
-  @scala.inline
-  def apply(): JobSheetsInterface = {
+  inline def apply(): JobSheetsInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobSheetsInterface]
   }
   
-  @scala.inline
-  implicit class JobSheetsInterfaceMutableBuilder[Self <: JobSheetsInterface] (val x: Self) extends AnyVal {
+  extension [Self <: JobSheetsInterface](x: Self) {
     
-    @scala.inline
-    def `setJob-sheets`(value: JobSheets): Self = StObject.set(x, "job-sheets", value.asInstanceOf[js.Any])
+    inline def `setJob-sheets`(value: JobSheets): Self = StObject.set(x, "job-sheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-sheetsUndefined`: Self = StObject.set(x, "job-sheets", js.undefined)
+    inline def `setJob-sheetsUndefined`: Self = StObject.set(x, "job-sheets", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
+    inline def `setMedia-col`(value: MediaInterface): Self = StObject.set(x, "media-col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
+    inline def `setMedia-colUndefined`: Self = StObject.set(x, "media-col", js.undefined)
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait DetachTrustRequest extends StObject {
 }
 object DetachTrustRequest {
   
-  @scala.inline
-  def apply(): DetachTrustRequest = {
+  inline def apply(): DetachTrustRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetachTrustRequest]
   }
   
-  @scala.inline
-  implicit class DetachTrustRequestMutableBuilder[Self <: DetachTrustRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachTrustRequest](x: Self) {
     
-    @scala.inline
-    def setTrust(value: Trust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
+    inline def setTrust(value: Trust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustUndefined: Self = StObject.set(x, "trust", js.undefined)
+    inline def setTrustUndefined: Self = StObject.set(x, "trust", js.undefined)
   }
 }

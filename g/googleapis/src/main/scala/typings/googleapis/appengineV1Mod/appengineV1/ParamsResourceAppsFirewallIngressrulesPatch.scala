@@ -40,43 +40,31 @@ trait ParamsResourceAppsFirewallIngressrulesPatch
 }
 object ParamsResourceAppsFirewallIngressrulesPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceAppsFirewallIngressrulesPatch = {
+  inline def apply(): ParamsResourceAppsFirewallIngressrulesPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAppsFirewallIngressrulesPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAppsFirewallIngressrulesPatchMutableBuilder[Self <: ParamsResourceAppsFirewallIngressrulesPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAppsFirewallIngressrulesPatch](x: Self) {
     
-    @scala.inline
-    def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
+    inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
+    inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIngressRulesId(value: String): Self = StObject.set(x, "ingressRulesId", value.asInstanceOf[js.Any])
+    inline def setIngressRulesId(value: String): Self = StObject.set(x, "ingressRulesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressRulesIdUndefined: Self = StObject.set(x, "ingressRulesId", js.undefined)
+    inline def setIngressRulesIdUndefined: Self = StObject.set(x, "ingressRulesId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaFirewallRule): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaFirewallRule): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

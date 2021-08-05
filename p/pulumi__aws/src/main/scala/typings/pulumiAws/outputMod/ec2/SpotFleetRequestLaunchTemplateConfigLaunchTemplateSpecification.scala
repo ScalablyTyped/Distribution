@@ -23,31 +23,23 @@ trait SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification extends St
 }
 object SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification {
   
-  @scala.inline
-  def apply(): SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification = {
+  inline def apply(): SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification]
   }
   
-  @scala.inline
-  implicit class SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationMutableBuilder[Self <: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

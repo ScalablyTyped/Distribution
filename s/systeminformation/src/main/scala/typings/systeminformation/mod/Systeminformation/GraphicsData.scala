@@ -12,25 +12,19 @@ trait GraphicsData extends StObject {
 }
 object GraphicsData {
   
-  @scala.inline
-  def apply(controllers: js.Array[GraphicsControllerData], displays: js.Array[GraphicsDisplayData]): GraphicsData = {
+  inline def apply(controllers: js.Array[GraphicsControllerData], displays: js.Array[GraphicsDisplayData]): GraphicsData = {
     val __obj = js.Dynamic.literal(controllers = controllers.asInstanceOf[js.Any], displays = displays.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphicsData]
   }
   
-  @scala.inline
-  implicit class GraphicsDataMutableBuilder[Self <: GraphicsData] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicsData](x: Self) {
     
-    @scala.inline
-    def setControllers(value: js.Array[GraphicsControllerData]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
+    inline def setControllers(value: js.Array[GraphicsControllerData]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllersVarargs(value: GraphicsControllerData*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+    inline def setControllersVarargs(value: GraphicsControllerData*): Self = StObject.set(x, "controllers", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplays(value: js.Array[GraphicsDisplayData]): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
+    inline def setDisplays(value: js.Array[GraphicsDisplayData]): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaysVarargs(value: GraphicsDisplayData*): Self = StObject.set(x, "displays", js.Array(value :_*))
+    inline def setDisplaysVarargs(value: GraphicsDisplayData*): Self = StObject.set(x, "displays", js.Array(value :_*))
   }
 }

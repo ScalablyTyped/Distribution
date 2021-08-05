@@ -29,10 +29,8 @@ object mod {
   //=> 'Windows 8.1'
   ```
   */
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(platform: Platform, release: String): String = (^.asInstanceOf[js.Dynamic].apply(platform.asInstanceOf[js.Any], release.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(platform: Platform, release: String): String = (^.asInstanceOf[js.Dynamic].apply(platform.asInstanceOf[js.Any], release.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("os-name", JSImport.Namespace)
   @js.native

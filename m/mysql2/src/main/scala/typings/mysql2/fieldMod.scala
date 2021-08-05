@@ -29,8 +29,7 @@ object fieldMod {
   }
   object Field {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buffer: js.Function,
       constructor: Name,
       db: String,
@@ -46,35 +45,25 @@ object fieldMod {
       __obj.asInstanceOf[Field]
     }
     
-    @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+    extension [Self <: Field](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: js.Function): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.Function): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructor(value: Name): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      inline def setConstructor(value: Name): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometry(value: js.Function): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: js.Function): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: js.Function): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: js.Function): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

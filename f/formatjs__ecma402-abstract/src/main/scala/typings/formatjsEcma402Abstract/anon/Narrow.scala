@@ -14,31 +14,23 @@ trait Narrow extends StObject {
 }
 object Narrow {
   
-  @scala.inline
-  def apply(long: js.Array[String], narrow: js.Array[String], short: js.Array[String]): Narrow = {
+  inline def apply(long: js.Array[String], narrow: js.Array[String], short: js.Array[String]): Narrow = {
     val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any], narrow = narrow.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Narrow]
   }
   
-  @scala.inline
-  implicit class NarrowMutableBuilder[Self <: Narrow] (val x: Self) extends AnyVal {
+  extension [Self <: Narrow](x: Self) {
     
-    @scala.inline
-    def setLong(value: js.Array[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: js.Array[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongVarargs(value: String*): Self = StObject.set(x, "long", js.Array(value :_*))
+    inline def setLongVarargs(value: String*): Self = StObject.set(x, "long", js.Array(value :_*))
     
-    @scala.inline
-    def setNarrow(value: js.Array[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: js.Array[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrowVarargs(value: String*): Self = StObject.set(x, "narrow", js.Array(value :_*))
+    inline def setNarrowVarargs(value: String*): Self = StObject.set(x, "narrow", js.Array(value :_*))
     
-    @scala.inline
-    def setShort(value: js.Array[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: js.Array[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortVarargs(value: String*): Self = StObject.set(x, "short", js.Array(value :_*))
+    inline def setShortVarargs(value: String*): Self = StObject.set(x, "short", js.Array(value :_*))
   }
 }

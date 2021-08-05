@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MobileThreatPartnerTenantState extends StObject
 object MobileThreatPartnerTenantState {
   
-  @scala.inline
-  def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
+  inline def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
   
-  @scala.inline
-  def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
+  inline def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
   
-  @scala.inline
-  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
+  inline def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
   
-  @scala.inline
-  def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = "unresponsive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unresponsive]
+  inline def unresponsive: typings.microsoftGraph.microsoftGraphStrings.unresponsive = "unresponsive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unresponsive]
 }

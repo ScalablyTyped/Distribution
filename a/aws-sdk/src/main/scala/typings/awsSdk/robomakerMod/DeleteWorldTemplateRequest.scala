@@ -13,16 +13,13 @@ trait DeleteWorldTemplateRequest extends StObject {
 }
 object DeleteWorldTemplateRequest {
   
-  @scala.inline
-  def apply(template: Arn): DeleteWorldTemplateRequest = {
+  inline def apply(template: Arn): DeleteWorldTemplateRequest = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWorldTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteWorldTemplateRequestMutableBuilder[Self <: DeleteWorldTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWorldTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

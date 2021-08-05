@@ -13,19 +13,15 @@ trait InitialActive extends StObject {
 }
 object InitialActive {
   
-  @scala.inline
-  def apply(initialActive: ActiveTabsType, isToolshown: Boolean): InitialActive = {
+  inline def apply(initialActive: ActiveTabsType, isToolshown: Boolean): InitialActive = {
     val __obj = js.Dynamic.literal(initialActive = initialActive.asInstanceOf[js.Any], isToolshown = isToolshown.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialActive]
   }
   
-  @scala.inline
-  implicit class InitialActiveMutableBuilder[Self <: InitialActive] (val x: Self) extends AnyVal {
+  extension [Self <: InitialActive](x: Self) {
     
-    @scala.inline
-    def setInitialActive(value: ActiveTabsType): Self = StObject.set(x, "initialActive", value.asInstanceOf[js.Any])
+    inline def setInitialActive(value: ActiveTabsType): Self = StObject.set(x, "initialActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
+    inline def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
   }
 }

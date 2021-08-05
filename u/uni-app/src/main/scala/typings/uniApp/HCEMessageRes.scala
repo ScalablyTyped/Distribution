@@ -23,34 +23,25 @@ trait HCEMessageRes extends StObject {
 }
 object HCEMessageRes {
   
-  @scala.inline
-  def apply(): HCEMessageRes = {
+  inline def apply(): HCEMessageRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HCEMessageRes]
   }
   
-  @scala.inline
-  implicit class HCEMessageResMutableBuilder[Self <: HCEMessageRes] (val x: Self) extends AnyVal {
+  extension [Self <: HCEMessageRes](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setMessageType(value: Double): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: Double): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
     
-    @scala.inline
-    def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Double): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

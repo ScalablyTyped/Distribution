@@ -14,19 +14,15 @@ trait DENIED extends StObject {
 }
 object DENIED {
   
-  @scala.inline
-  def apply(): DENIED = {
+  inline def apply(): DENIED = {
     val __obj = js.Dynamic.literal(DENIED = "denied", GRANTED = "granted")
     __obj.asInstanceOf[DENIED]
   }
   
-  @scala.inline
-  implicit class DENIEDMutableBuilder[Self <: DENIED] (val x: Self) extends AnyVal {
+  extension [Self <: DENIED](x: Self) {
     
-    @scala.inline
-    def setDENIED(value: denied_): Self = StObject.set(x, "DENIED", value.asInstanceOf[js.Any])
+    inline def setDENIED(value: denied_): Self = StObject.set(x, "DENIED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGRANTED(value: granted_): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
+    inline def setGRANTED(value: granted_): Self = StObject.set(x, "GRANTED", value.asInstanceOf[js.Any])
   }
 }

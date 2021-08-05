@@ -23,31 +23,23 @@ trait ListPoliciesGrantingServiceAccessResponse extends StObject {
 }
 object ListPoliciesGrantingServiceAccessResponse {
   
-  @scala.inline
-  def apply(PoliciesGrantingServiceAccess: listPolicyGrantingServiceAccessResponseListType): ListPoliciesGrantingServiceAccessResponse = {
+  inline def apply(PoliciesGrantingServiceAccess: listPolicyGrantingServiceAccessResponseListType): ListPoliciesGrantingServiceAccessResponse = {
     val __obj = js.Dynamic.literal(PoliciesGrantingServiceAccess = PoliciesGrantingServiceAccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesGrantingServiceAccessResponse]
   }
   
-  @scala.inline
-  implicit class ListPoliciesGrantingServiceAccessResponseMutableBuilder[Self <: ListPoliciesGrantingServiceAccessResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPoliciesGrantingServiceAccessResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPoliciesGrantingServiceAccess(value: listPolicyGrantingServiceAccessResponseListType): Self = StObject.set(x, "PoliciesGrantingServiceAccess", value.asInstanceOf[js.Any])
+    inline def setPoliciesGrantingServiceAccess(value: listPolicyGrantingServiceAccessResponseListType): Self = StObject.set(x, "PoliciesGrantingServiceAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoliciesGrantingServiceAccessVarargs(value: ListPoliciesGrantingServiceAccessEntry*): Self = StObject.set(x, "PoliciesGrantingServiceAccess", js.Array(value :_*))
+    inline def setPoliciesGrantingServiceAccessVarargs(value: ListPoliciesGrantingServiceAccessEntry*): Self = StObject.set(x, "PoliciesGrantingServiceAccess", js.Array(value :_*))
   }
 }

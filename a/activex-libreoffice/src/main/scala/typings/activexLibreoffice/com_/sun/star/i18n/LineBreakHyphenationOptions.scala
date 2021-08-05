@@ -20,25 +20,19 @@ trait LineBreakHyphenationOptions extends StObject {
 }
 object LineBreakHyphenationOptions {
   
-  @scala.inline
-  def apply(aHyphenationOptions: PropertyValues, hyphenIndex: Double, rHyphenator: XHyphenator): LineBreakHyphenationOptions = {
+  inline def apply(aHyphenationOptions: PropertyValues, hyphenIndex: Double, rHyphenator: XHyphenator): LineBreakHyphenationOptions = {
     val __obj = js.Dynamic.literal(aHyphenationOptions = aHyphenationOptions.asInstanceOf[js.Any], hyphenIndex = hyphenIndex.asInstanceOf[js.Any], rHyphenator = rHyphenator.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineBreakHyphenationOptions]
   }
   
-  @scala.inline
-  implicit class LineBreakHyphenationOptionsMutableBuilder[Self <: LineBreakHyphenationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LineBreakHyphenationOptions](x: Self) {
     
-    @scala.inline
-    def setAHyphenationOptions(value: PropertyValues): Self = StObject.set(x, "aHyphenationOptions", value.asInstanceOf[js.Any])
+    inline def setAHyphenationOptions(value: PropertyValues): Self = StObject.set(x, "aHyphenationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAHyphenationOptionsVarargs(value: PropertyValue*): Self = StObject.set(x, "aHyphenationOptions", js.Array(value :_*))
+    inline def setAHyphenationOptionsVarargs(value: PropertyValue*): Self = StObject.set(x, "aHyphenationOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setHyphenIndex(value: Double): Self = StObject.set(x, "hyphenIndex", value.asInstanceOf[js.Any])
+    inline def setHyphenIndex(value: Double): Self = StObject.set(x, "hyphenIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRHyphenator(value: XHyphenator): Self = StObject.set(x, "rHyphenator", value.asInstanceOf[js.Any])
+    inline def setRHyphenator(value: XHyphenator): Self = StObject.set(x, "rHyphenator", value.asInstanceOf[js.Any])
   }
 }

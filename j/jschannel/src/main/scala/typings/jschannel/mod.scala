@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def build(config: ChannelConfiguration): MessagingChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(config.asInstanceOf[js.Any]).asInstanceOf[MessagingChannel]
+  inline def build(config: ChannelConfiguration): MessagingChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(config.asInstanceOf[js.Any]).asInstanceOf[MessagingChannel]
   
   trait ChannelConfiguration extends StObject {
     
@@ -38,68 +37,48 @@ object mod {
   }
   object ChannelConfiguration {
     
-    @scala.inline
-    def apply(origin: String, scope: String, window: Window): ChannelConfiguration = {
+    inline def apply(origin: String, scope: String, window: Window): ChannelConfiguration = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelConfiguration]
     }
     
-    @scala.inline
-    implicit class ChannelConfigurationMutableBuilder[Self <: ChannelConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelConfiguration](x: Self) {
       
-      @scala.inline
-      def setDebugOutput(value: Boolean): Self = StObject.set(x, "debugOutput", value.asInstanceOf[js.Any])
+      inline def setDebugOutput(value: Boolean): Self = StObject.set(x, "debugOutput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugOutputUndefined: Self = StObject.set(x, "debugOutput", js.undefined)
+      inline def setDebugOutputUndefined: Self = StObject.set(x, "debugOutput", js.undefined)
       
-      @scala.inline
-      def setGotMessageObserver(value: (/* origin */ String, /* message */ Message) => Unit): Self = StObject.set(x, "gotMessageObserver", js.Any.fromFunction2(value))
+      inline def setGotMessageObserver(value: (/* origin */ String, /* message */ Message) => Unit): Self = StObject.set(x, "gotMessageObserver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGotMessageObserverUndefined: Self = StObject.set(x, "gotMessageObserver", js.undefined)
+      inline def setGotMessageObserverUndefined: Self = StObject.set(x, "gotMessageObserver", js.undefined)
       
-      @scala.inline
-      def setOnReady(value: /* channel */ MessagingChannel => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+      inline def setOnReady(value: /* channel */ MessagingChannel => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+      inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostMessageObserver(value: (/* origin */ String, /* message */ Message) => Unit): Self = StObject.set(x, "postMessageObserver", js.Any.fromFunction2(value))
+      inline def setPostMessageObserver(value: (/* origin */ String, /* message */ Message) => Unit): Self = StObject.set(x, "postMessageObserver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostMessageObserverUndefined: Self = StObject.set(x, "postMessageObserver", js.undefined)
+      inline def setPostMessageObserverUndefined: Self = StObject.set(x, "postMessageObserver", js.undefined)
       
-      @scala.inline
-      def setPublish(value: Boolean): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+      inline def setPublish(value: Boolean): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
+      inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
       
-      @scala.inline
-      def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+      inline def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
+      inline def setReconnectUndefined: Self = StObject.set(x, "reconnect", js.undefined)
       
-      @scala.inline
-      def setRemote(value: String | js.Array[String]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String | js.Array[String]): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
+      inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
       
-      @scala.inline
-      def setRemoteVarargs(value: String*): Self = StObject.set(x, "remote", js.Array(value :_*))
+      inline def setRemoteVarargs(value: String*): Self = StObject.set(x, "remote", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,41 +96,30 @@ object mod {
   }
   object Message {
     
-    @scala.inline
-    def apply(method: String): Message = {
+    inline def apply(method: String): Message = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setError(value: (/* error */ js.Any, /* message */ String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (/* error */ js.Any, /* message */ String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* result */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* result */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -169,8 +137,7 @@ object mod {
   }
   object MessageTransaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complete: js.Any => Unit,
       completed: () => Boolean,
       delayReturn: Boolean => Boolean,
@@ -181,23 +148,17 @@ object mod {
       __obj.asInstanceOf[MessageTransaction]
     }
     
-    @scala.inline
-    implicit class MessageTransactionMutableBuilder[Self <: MessageTransaction] (val x: Self) extends AnyVal {
+    extension [Self <: MessageTransaction](x: Self) {
       
-      @scala.inline
-      def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompleted(value: () => Boolean): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
+      inline def setCompleted(value: () => Boolean): Self = StObject.set(x, "completed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDelayReturn(value: Boolean => Boolean): Self = StObject.set(x, "delayReturn", js.Any.fromFunction1(value))
+      inline def setDelayReturn(value: Boolean => Boolean): Self = StObject.set(x, "delayReturn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setError(value: (js.Any, String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      inline def setError(value: (js.Any, String) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvoke(value: (String, js.Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+      inline def setInvoke(value: (String, js.Any) => Unit): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     }
   }
   

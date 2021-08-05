@@ -28,37 +28,27 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(): File = {
+  inline def apply(): File = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setAbsolutePath(value: Path): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+    inline def setAbsolutePath(value: Path): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+    inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
-    @scala.inline
-    def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+    inline def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
+    inline def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
     
-    @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
+    inline def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
     
-    @scala.inline
-    def setRelativePath(value: Path): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+    inline def setRelativePath(value: Path): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+    inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
   }
 }

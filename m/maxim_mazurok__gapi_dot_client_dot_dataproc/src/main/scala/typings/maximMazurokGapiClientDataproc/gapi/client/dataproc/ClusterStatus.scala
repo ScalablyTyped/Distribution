@@ -20,37 +20,27 @@ trait ClusterStatus extends StObject {
 }
 object ClusterStatus {
   
-  @scala.inline
-  def apply(): ClusterStatus = {
+  inline def apply(): ClusterStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterStatus]
   }
   
-  @scala.inline
-  implicit class ClusterStatusMutableBuilder[Self <: ClusterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterStatus](x: Self) {
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateStartTime(value: String): Self = StObject.set(x, "stateStartTime", value.asInstanceOf[js.Any])
+    inline def setStateStartTime(value: String): Self = StObject.set(x, "stateStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateStartTimeUndefined: Self = StObject.set(x, "stateStartTime", js.undefined)
+    inline def setStateStartTimeUndefined: Self = StObject.set(x, "stateStartTime", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSubstate(value: String): Self = StObject.set(x, "substate", value.asInstanceOf[js.Any])
+    inline def setSubstate(value: String): Self = StObject.set(x, "substate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstateUndefined: Self = StObject.set(x, "substate", js.undefined)
+    inline def setSubstateUndefined: Self = StObject.set(x, "substate", js.undefined)
   }
 }

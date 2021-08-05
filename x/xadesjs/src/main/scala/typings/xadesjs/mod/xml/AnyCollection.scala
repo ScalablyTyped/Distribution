@@ -13,6 +13,5 @@ class AnyCollection ()
   extends typings.xadesjs.xmlMod.AnyCollection
 object AnyCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.AnyCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("AnyCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AnyCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.AnyCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("AnyCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.AnyCollection]]
 }

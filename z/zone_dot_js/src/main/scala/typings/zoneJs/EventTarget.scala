@@ -54,25 +54,19 @@ trait EventTarget extends StObject {
 }
 object EventTarget {
   
-  @scala.inline
-  def apply(): EventTarget = {
+  inline def apply(): EventTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventTarget]
   }
   
-  @scala.inline
-  implicit class EventTargetMutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: EventTarget](x: Self) {
     
-    @scala.inline
-    def setEventListeners(value: /* eventName */ js.UndefOr[String] => js.Array[EventListenerOrEventListenerObject]): Self = StObject.set(x, "eventListeners", js.Any.fromFunction1(value))
+    inline def setEventListeners(value: /* eventName */ js.UndefOr[String] => js.Array[EventListenerOrEventListenerObject]): Self = StObject.set(x, "eventListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEventListenersUndefined: Self = StObject.set(x, "eventListeners", js.undefined)
+    inline def setEventListenersUndefined: Self = StObject.set(x, "eventListeners", js.undefined)
     
-    @scala.inline
-    def setRemoveAllListeners(value: /* eventName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
+    inline def setRemoveAllListeners(value: /* eventName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAllListenersUndefined: Self = StObject.set(x, "removeAllListeners", js.undefined)
+    inline def setRemoveAllListenersUndefined: Self = StObject.set(x, "removeAllListeners", js.undefined)
   }
 }

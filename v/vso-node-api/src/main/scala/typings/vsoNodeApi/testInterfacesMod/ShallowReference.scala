@@ -23,22 +23,17 @@ trait ShallowReference extends StObject {
 }
 object ShallowReference {
   
-  @scala.inline
-  def apply(id: String, name: String, url: String): ShallowReference = {
+  inline def apply(id: String, name: String, url: String): ShallowReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShallowReference]
   }
   
-  @scala.inline
-  implicit class ShallowReferenceMutableBuilder[Self <: ShallowReference] (val x: Self) extends AnyVal {
+  extension [Self <: ShallowReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

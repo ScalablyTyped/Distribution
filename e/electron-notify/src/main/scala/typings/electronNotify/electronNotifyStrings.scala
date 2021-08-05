@@ -8,16 +8,13 @@ object electronNotifyStrings {
   
   @js.native
   sealed trait click extends StObject
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait show extends StObject
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
+  inline def show: show = "show".asInstanceOf[show]
 }

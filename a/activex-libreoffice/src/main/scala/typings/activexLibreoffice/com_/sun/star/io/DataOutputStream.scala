@@ -17,8 +17,7 @@ trait DataOutputStream
      with XActiveDataSource
 object DataOutputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputStream: XOutputStream,
     acquire: () => Unit,
     closeOutput: () => Unit,

@@ -30,7 +30,6 @@ object mod {
     @JSImport("react-dnd-touch-backend", "TouchBackendImpl.isSetUp")
     @js.native
     def isSetUp: js.Any = js.native
-    @scala.inline
-    def isSetUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSetUp")(x.asInstanceOf[js.Any])
+    inline def isSetUp_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSetUp")(x.asInstanceOf[js.Any])
   }
 }

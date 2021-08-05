@@ -29,8 +29,7 @@ object locationRepositoryInfoResponseMod {
   }
   object LocationRepositoryInfoResponseLocation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       city: String,
       external_source: String,
@@ -45,35 +44,25 @@ object locationRepositoryInfoResponseMod {
       __obj.asInstanceOf[LocationRepositoryInfoResponseLocation]
     }
     
-    @scala.inline
-    implicit class LocationRepositoryInfoResponseLocationMutableBuilder[Self <: LocationRepositoryInfoResponseLocation] (val x: Self) extends AnyVal {
+    extension [Self <: LocationRepositoryInfoResponseLocation](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
+      inline def setExternal_source(value: String): Self = StObject.set(x, "external_source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacebook_places_id(value: Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
+      inline def setFacebook_places_id(value: Double): Self = StObject.set(x, "facebook_places_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+      inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,17 +74,14 @@ object locationRepositoryInfoResponseMod {
   }
   object LocationRepositoryInfoResponseRootObject {
     
-    @scala.inline
-    def apply(location: LocationRepositoryInfoResponseLocation, status: String): LocationRepositoryInfoResponseRootObject = {
+    inline def apply(location: LocationRepositoryInfoResponseLocation, status: String): LocationRepositoryInfoResponseRootObject = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationRepositoryInfoResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LocationRepositoryInfoResponseRootObjectMutableBuilder[Self <: LocationRepositoryInfoResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LocationRepositoryInfoResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setLocation(value: LocationRepositoryInfoResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LocationRepositoryInfoResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
 }

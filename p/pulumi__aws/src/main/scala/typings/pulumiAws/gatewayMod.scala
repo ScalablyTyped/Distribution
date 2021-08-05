@@ -55,21 +55,16 @@ object gatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Gateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayState): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gateway]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID]): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID], state: GatewayState): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Gateway]
+    inline def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Gateway]
     
     /**
       * Returns true if the given object is an instance of Gateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ Boolean]
   }
   
   trait GatewayArgs extends StObject {
@@ -86,23 +81,18 @@ object gatewayMod {
   }
   object GatewayArgs {
     
-    @scala.inline
-    def apply(amazonSideAsn: Input[String]): GatewayArgs = {
+    inline def apply(amazonSideAsn: Input[String]): GatewayArgs = {
       val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatewayArgs]
     }
     
-    @scala.inline
-    implicit class GatewayArgsMutableBuilder[Self <: GatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayArgs](x: Self) {
       
-      @scala.inline
-      def setAmazonSideAsn(value: Input[String]): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
+      inline def setAmazonSideAsn(value: Input[String]): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -125,32 +115,24 @@ object gatewayMod {
   }
   object GatewayState {
     
-    @scala.inline
-    def apply(): GatewayState = {
+    inline def apply(): GatewayState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GatewayState]
     }
     
-    @scala.inline
-    implicit class GatewayStateMutableBuilder[Self <: GatewayState] (val x: Self) extends AnyVal {
+    extension [Self <: GatewayState](x: Self) {
       
-      @scala.inline
-      def setAmazonSideAsn(value: Input[String]): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
+      inline def setAmazonSideAsn(value: Input[String]): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmazonSideAsnUndefined: Self = StObject.set(x, "amazonSideAsn", js.undefined)
+      inline def setAmazonSideAsnUndefined: Self = StObject.set(x, "amazonSideAsn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerAccountId(value: Input[String]): Self = StObject.set(x, "ownerAccountId", value.asInstanceOf[js.Any])
+      inline def setOwnerAccountId(value: Input[String]): Self = StObject.set(x, "ownerAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerAccountIdUndefined: Self = StObject.set(x, "ownerAccountId", js.undefined)
+      inline def setOwnerAccountIdUndefined: Self = StObject.set(x, "ownerAccountId", js.undefined)
     }
   }
 }

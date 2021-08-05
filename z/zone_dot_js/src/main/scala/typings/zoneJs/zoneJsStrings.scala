@@ -10,62 +10,53 @@ object zoneJsStrings {
   sealed trait canceling
     extends StObject
        with TaskState
-  @scala.inline
-  def canceling: canceling = "canceling".asInstanceOf[canceling]
+  inline def canceling: canceling = "canceling".asInstanceOf[canceling]
   
   @js.native
   sealed trait eventTask
     extends StObject
        with TaskType
-  @scala.inline
-  def eventTask: eventTask = "eventTask".asInstanceOf[eventTask]
+  inline def eventTask: eventTask = "eventTask".asInstanceOf[eventTask]
   
   @js.native
   sealed trait macroTask
     extends StObject
        with TaskType
-  @scala.inline
-  def macroTask: macroTask = "macroTask".asInstanceOf[macroTask]
+  inline def macroTask: macroTask = "macroTask".asInstanceOf[macroTask]
   
   @js.native
   sealed trait microTask
     extends StObject
        with TaskType
-  @scala.inline
-  def microTask: microTask = "microTask".asInstanceOf[microTask]
+  inline def microTask: microTask = "microTask".asInstanceOf[microTask]
   
   @js.native
   sealed trait notScheduled
     extends StObject
        with TaskState
-  @scala.inline
-  def notScheduled: notScheduled = "notScheduled".asInstanceOf[notScheduled]
+  inline def notScheduled: notScheduled = "notScheduled".asInstanceOf[notScheduled]
   
   @js.native
   sealed trait running
     extends StObject
        with TaskState
-  @scala.inline
-  def running: running = "running".asInstanceOf[running]
+  inline def running: running = "running".asInstanceOf[running]
   
   @js.native
   sealed trait scheduled
     extends StObject
        with TaskState
-  @scala.inline
-  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
+  inline def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
   
   @js.native
   sealed trait scheduling
     extends StObject
        with TaskState
-  @scala.inline
-  def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
+  inline def scheduling: scheduling = "scheduling".asInstanceOf[scheduling]
   
   @js.native
   sealed trait unknown
     extends StObject
        with TaskState
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
 }

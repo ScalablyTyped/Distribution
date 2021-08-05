@@ -13,22 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComplexShape extends StObject
 object ComplexShape {
   
-  @scala.inline
-  def List(member: Member): typings.awsSdkBuildTypes.apiModelMod.List = {
+  inline def List(member: Member): typings.awsSdkBuildTypes.apiModelMod.List = {
     val __obj = js.Dynamic.literal(member = member.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("list")
     __obj.asInstanceOf[typings.awsSdkBuildTypes.apiModelMod.List]
   }
   
-  @scala.inline
-  def Map(key: Member, value: Member): typings.awsSdkBuildTypes.apiModelMod.Map = {
+  inline def Map(key: Member, value: Member): typings.awsSdkBuildTypes.apiModelMod.Map = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("map")
     __obj.asInstanceOf[typings.awsSdkBuildTypes.apiModelMod.Map]
   }
   
-  @scala.inline
-  def Structure(members: StringDictionary[StructureMember]): typings.awsSdkBuildTypes.apiModelMod.Structure = {
+  inline def Structure(members: StringDictionary[StructureMember]): typings.awsSdkBuildTypes.apiModelMod.Structure = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("structure")
     __obj.asInstanceOf[typings.awsSdkBuildTypes.apiModelMod.Structure]

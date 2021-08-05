@@ -54,67 +54,47 @@ trait GeoNearOptions extends StObject {
 }
 object GeoNearOptions {
   
-  @scala.inline
-  def apply(): GeoNearOptions = {
+  inline def apply(): GeoNearOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoNearOptions]
   }
   
-  @scala.inline
-  implicit class GeoNearOptionsMutableBuilder[Self <: GeoNearOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoNearOptions](x: Self) {
     
-    @scala.inline
-    def setDistanceMultiplier(value: scala.Double): Self = StObject.set(x, "distanceMultiplier", value.asInstanceOf[js.Any])
+    inline def setDistanceMultiplier(value: scala.Double): Self = StObject.set(x, "distanceMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceMultiplierUndefined: Self = StObject.set(x, "distanceMultiplier", js.undefined)
+    inline def setDistanceMultiplierUndefined: Self = StObject.set(x, "distanceMultiplier", js.undefined)
     
-    @scala.inline
-    def setIncludeLocs(value: Boolean): Self = StObject.set(x, "includeLocs", value.asInstanceOf[js.Any])
+    inline def setIncludeLocs(value: Boolean): Self = StObject.set(x, "includeLocs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLocsUndefined: Self = StObject.set(x, "includeLocs", js.undefined)
+    inline def setIncludeLocsUndefined: Self = StObject.set(x, "includeLocs", js.undefined)
     
-    @scala.inline
-    def setMaxDistance(value: scala.Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
+    inline def setMaxDistance(value: scala.Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
+    inline def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
-    @scala.inline
-    def setMinDistance(value: scala.Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
+    inline def setMinDistance(value: scala.Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
+    inline def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
     
-    @scala.inline
-    def setNum(value: scala.Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+    inline def setNum(value: scala.Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
+    inline def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
     
-    @scala.inline
-    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setSpherical(value: Boolean): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
+    inline def setSpherical(value: Boolean): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSphericalUndefined: Self = StObject.set(x, "spherical", js.undefined)
+    inline def setSphericalUndefined: Self = StObject.set(x, "spherical", js.undefined)
     
-    @scala.inline
-    def setUniqueDocs(value: Boolean): Self = StObject.set(x, "uniqueDocs", value.asInstanceOf[js.Any])
+    inline def setUniqueDocs(value: Boolean): Self = StObject.set(x, "uniqueDocs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueDocsUndefined: Self = StObject.set(x, "uniqueDocs", js.undefined)
+    inline def setUniqueDocsUndefined: Self = StObject.set(x, "uniqueDocs", js.undefined)
   }
 }

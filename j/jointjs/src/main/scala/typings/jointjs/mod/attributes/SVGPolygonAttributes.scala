@@ -12,19 +12,15 @@ trait SVGPolygonAttributes
 }
 object SVGPolygonAttributes {
   
-  @scala.inline
-  def apply(): SVGPolygonAttributes = {
+  inline def apply(): SVGPolygonAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SVGPolygonAttributes]
   }
   
-  @scala.inline
-  implicit class SVGPolygonAttributesMutableBuilder[Self <: SVGPolygonAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SVGPolygonAttributes](x: Self) {
     
-    @scala.inline
-    def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
   }
 }

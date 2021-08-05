@@ -19,8 +19,7 @@ object global {
       * Construct the SMART client directly without using the Oauth2 workflow
       * @param context Context required to construct the client.
       */
-    @scala.inline
-    def client(context: Context): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(context.asInstanceOf[js.Any]).asInstanceOf[Client]
+    inline def client(context: Context): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(context.asInstanceOf[js.Any]).asInstanceOf[Client]
     
     /**
       * Property which exposes the OAUth2 specific workflow helpers

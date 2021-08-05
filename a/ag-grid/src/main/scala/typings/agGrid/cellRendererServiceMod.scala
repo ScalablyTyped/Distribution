@@ -17,11 +17,11 @@ object cellRendererServiceMod {
     
     def bindToHtml(cellRendererPromise: Promise[ICellRendererComp], eTarget: HTMLElement): Promise[ICellRendererComp] = js.native
     
-    var componentRecipes: js.Any = js.native
+    /* private */ var componentRecipes: js.Any = js.native
     
-    var componentResolver: js.Any = js.native
+    /* private */ var componentResolver: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def useCellRenderer(target: ColDef, eTarget: HTMLElement, params: js.Any): Promise[ICellRendererComp] = js.native
     

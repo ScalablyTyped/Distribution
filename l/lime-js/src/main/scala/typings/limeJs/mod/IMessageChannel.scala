@@ -12,19 +12,15 @@ trait IMessageChannel extends StObject {
 }
 object IMessageChannel {
   
-  @scala.inline
-  def apply(onMessage: Message => js.Any, sendMessage: Message => Unit): IMessageChannel = {
+  inline def apply(onMessage: Message => js.Any, sendMessage: Message => Unit): IMessageChannel = {
     val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), sendMessage = js.Any.fromFunction1(sendMessage))
     __obj.asInstanceOf[IMessageChannel]
   }
   
-  @scala.inline
-  implicit class IMessageChannelMutableBuilder[Self <: IMessageChannel] (val x: Self) extends AnyVal {
+  extension [Self <: IMessageChannel](x: Self) {
     
-    @scala.inline
-    def setOnMessage(value: Message => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: Message => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendMessage(value: Message => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
+    inline def setSendMessage(value: Message => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
   }
 }

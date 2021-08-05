@@ -13,19 +13,15 @@ trait InitiateVaultLockOutput extends StObject {
 }
 object InitiateVaultLockOutput {
   
-  @scala.inline
-  def apply(): InitiateVaultLockOutput = {
+  inline def apply(): InitiateVaultLockOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitiateVaultLockOutput]
   }
   
-  @scala.inline
-  implicit class InitiateVaultLockOutputMutableBuilder[Self <: InitiateVaultLockOutput] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateVaultLockOutput](x: Self) {
     
-    @scala.inline
-    def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
+    inline def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
+    inline def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait InputColumn extends StObject {
 }
 object InputColumn {
   
-  @scala.inline
-  def apply(Name: ColumnName, Type: InputColumnDataType): InputColumn = {
+  inline def apply(Name: ColumnName, Type: InputColumnDataType): InputColumn = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputColumn]
   }
   
-  @scala.inline
-  implicit class InputColumnMutableBuilder[Self <: InputColumn] (val x: Self) extends AnyVal {
+  extension [Self <: InputColumn](x: Self) {
     
-    @scala.inline
-    def setName(value: ColumnName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ColumnName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: InputColumnDataType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: InputColumnDataType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

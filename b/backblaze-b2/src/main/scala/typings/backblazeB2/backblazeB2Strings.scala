@@ -11,43 +11,35 @@ object backblazeB2Strings {
   sealed trait allPrivate
     extends StObject
        with BucketType
-  @scala.inline
-  def allPrivate: allPrivate = "allPrivate".asInstanceOf[allPrivate]
+  inline def allPrivate: allPrivate = "allPrivate".asInstanceOf[allPrivate]
   
   @js.native
   sealed trait allPublic
     extends StObject
        with BucketType
-  @scala.inline
-  def allPublic: allPublic = "allPublic".asInstanceOf[allPublic]
+  inline def allPublic: allPublic = "allPublic".asInstanceOf[allPublic]
   
   @js.native
   sealed trait arraybuffer extends StObject
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
   sealed trait blob extends StObject
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
   sealed trait document extends StObject
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
   sealed trait json extends StObject
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait stream extends StObject
-  @scala.inline
-  def stream: stream = "stream".asInstanceOf[stream]
+  inline def stream: stream = "stream".asInstanceOf[stream]
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

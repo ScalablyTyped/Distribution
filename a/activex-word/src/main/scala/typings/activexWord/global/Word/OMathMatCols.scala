@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathMatCols")
 @js.native
-class OMathMatCols protected ()
+/* private */ class OMathMatCols ()
   extends StObject
      with typings.activexWord.Word.OMathMatCols

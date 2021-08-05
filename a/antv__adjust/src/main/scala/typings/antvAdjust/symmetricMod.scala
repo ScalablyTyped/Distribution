@@ -14,8 +14,8 @@ object symmetricMod {
   trait Symmetric
     extends typings.antvAdjust.adjustMod.default {
     
-    var getDimMaxValue: js.Any = js.native
+    /* private */ var getDimMaxValue: js.Any = js.native
     
-    var getXValuesMaxMap: js.Any = js.native
+    /* private */ var getXValuesMaxMap: js.Any = js.native
   }
 }

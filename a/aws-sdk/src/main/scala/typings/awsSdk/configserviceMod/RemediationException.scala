@@ -33,8 +33,7 @@ trait RemediationException extends StObject {
 }
 object RemediationException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigRuleName: ConfigRuleName,
     ResourceId: StringWithCharLimit1024,
     ResourceType: StringWithCharLimit256
@@ -43,28 +42,20 @@ object RemediationException {
     __obj.asInstanceOf[RemediationException]
   }
   
-  @scala.inline
-  implicit class RemediationExceptionMutableBuilder[Self <: RemediationException] (val x: Self) extends AnyVal {
+  extension [Self <: RemediationException](x: Self) {
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTime(value: Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
-    @scala.inline
-    def setMessage(value: StringWithCharLimit1024): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: StringWithCharLimit1024): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: StringWithCharLimit1024): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: StringWithCharLimit1024): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

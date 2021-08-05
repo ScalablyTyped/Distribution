@@ -11,16 +11,13 @@ trait SectionDropdownClickEvent extends StObject {
 }
 object SectionDropdownClickEvent {
   
-  @scala.inline
-  def apply(dropdown: DropdownView): SectionDropdownClickEvent = {
+  inline def apply(dropdown: DropdownView): SectionDropdownClickEvent = {
     val __obj = js.Dynamic.literal(dropdown = dropdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionDropdownClickEvent]
   }
   
-  @scala.inline
-  implicit class SectionDropdownClickEventMutableBuilder[Self <: SectionDropdownClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SectionDropdownClickEvent](x: Self) {
     
-    @scala.inline
-    def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
   }
 }

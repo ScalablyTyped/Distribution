@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoplayEvent extends StObject
 object AutoplayEvent {
   
-  @scala.inline
-  def autoplay: typings.swiper.swiperStrings.autoplay = "autoplay".asInstanceOf[typings.swiper.swiperStrings.autoplay]
+  inline def autoplay: typings.swiper.swiperStrings.autoplay = "autoplay".asInstanceOf[typings.swiper.swiperStrings.autoplay]
   
-  @scala.inline
-  def autoplayStart: typings.swiper.swiperStrings.autoplayStart = "autoplayStart".asInstanceOf[typings.swiper.swiperStrings.autoplayStart]
+  inline def autoplayStart: typings.swiper.swiperStrings.autoplayStart = "autoplayStart".asInstanceOf[typings.swiper.swiperStrings.autoplayStart]
   
-  @scala.inline
-  def autoplayStop: typings.swiper.swiperStrings.autoplayStop = "autoplayStop".asInstanceOf[typings.swiper.swiperStrings.autoplayStop]
+  inline def autoplayStop: typings.swiper.swiperStrings.autoplayStop = "autoplayStop".asInstanceOf[typings.swiper.swiperStrings.autoplayStop]
 }

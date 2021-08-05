@@ -16,25 +16,19 @@ trait Keyhash extends StObject {
 }
 object Keyhash {
   
-  @scala.inline
-  def apply(alg: String, keyhash: String, namehash: String, serial: String): Keyhash = {
+  inline def apply(alg: String, keyhash: String, namehash: String, serial: String): Keyhash = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], keyhash = keyhash.asInstanceOf[js.Any], namehash = namehash.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any])
     __obj.asInstanceOf[Keyhash]
   }
   
-  @scala.inline
-  implicit class KeyhashMutableBuilder[Self <: Keyhash] (val x: Self) extends AnyVal {
+  extension [Self <: Keyhash](x: Self) {
     
-    @scala.inline
-    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyhash(value: String): Self = StObject.set(x, "keyhash", value.asInstanceOf[js.Any])
+    inline def setKeyhash(value: String): Self = StObject.set(x, "keyhash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamehash(value: String): Self = StObject.set(x, "namehash", value.asInstanceOf[js.Any])
+    inline def setNamehash(value: String): Self = StObject.set(x, "namehash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
   }
 }

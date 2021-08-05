@@ -47,10 +47,8 @@ object mod {
     * rdfc({rx: /foo/}) // {rx: {}}
     * ```
     */
-  @scala.inline
-  def apply(): js.Function1[/* obj */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* obj */ js.Any, js.Any]]
-  @scala.inline
-  def apply(opts: Options): js.Function1[/* obj */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, js.Any]]
+  inline def apply(): js.Function1[/* obj */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* obj */ js.Any, js.Any]]
+  inline def apply(opts: Options): js.Function1[/* obj */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, js.Any]]
   
   @JSImport("rfdc", JSImport.Namespace)
   @js.native
@@ -94,26 +92,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCircles(value: Boolean): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
+      inline def setCircles(value: Boolean): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCirclesUndefined: Self = StObject.set(x, "circles", js.undefined)
+      inline def setCirclesUndefined: Self = StObject.set(x, "circles", js.undefined)
       
-      @scala.inline
-      def setProto(value: Boolean): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
+      inline def setProto(value: Boolean): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
+      inline def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
     }
   }
 }

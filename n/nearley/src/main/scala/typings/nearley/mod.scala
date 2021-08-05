@@ -29,8 +29,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromCompiled(rules: CompiledRules): Grammar = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompiled")(rules.asInstanceOf[js.Any]).asInstanceOf[Grammar]
+    inline def fromCompiled(rules: CompiledRules): Grammar = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompiled")(rules.asInstanceOf[js.Any]).asInstanceOf[Grammar]
   }
   
   @JSImport("nearley", "Parser")
@@ -87,8 +86,7 @@ object mod {
     @JSImport("nearley", "Parser.fail")
     @js.native
     def fail: js.Object = js.native
-    @scala.inline
-    def fail_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fail")(x.asInstanceOf[js.Any])
+    inline def fail_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fail")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("nearley", "Rule")
@@ -117,8 +115,7 @@ object mod {
     @JSImport("nearley", "Rule.highestId")
     @js.native
     def highestId: Double = js.native
-    @scala.inline
-    def highestId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highestId")(x.asInstanceOf[js.Any])
+    inline def highestId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highestId")(x.asInstanceOf[js.Any])
   }
   
   trait CompiledRules extends StObject {
@@ -131,29 +128,22 @@ object mod {
   }
   object CompiledRules {
     
-    @scala.inline
-    def apply(ParserRules: js.Array[ParserRule], ParserStart: String): CompiledRules = {
+    inline def apply(ParserRules: js.Array[ParserRule], ParserStart: String): CompiledRules = {
       val __obj = js.Dynamic.literal(ParserRules = ParserRules.asInstanceOf[js.Any], ParserStart = ParserStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompiledRules]
     }
     
-    @scala.inline
-    implicit class CompiledRulesMutableBuilder[Self <: CompiledRules] (val x: Self) extends AnyVal {
+    extension [Self <: CompiledRules](x: Self) {
       
-      @scala.inline
-      def setLexer(value: Lexer): Self = StObject.set(x, "Lexer", value.asInstanceOf[js.Any])
+      inline def setLexer(value: Lexer): Self = StObject.set(x, "Lexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLexerUndefined: Self = StObject.set(x, "Lexer", js.undefined)
+      inline def setLexerUndefined: Self = StObject.set(x, "Lexer", js.undefined)
       
-      @scala.inline
-      def setParserRules(value: js.Array[ParserRule]): Self = StObject.set(x, "ParserRules", value.asInstanceOf[js.Any])
+      inline def setParserRules(value: js.Array[ParserRule]): Self = StObject.set(x, "ParserRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserRulesVarargs(value: ParserRule*): Self = StObject.set(x, "ParserRules", js.Array(value :_*))
+      inline def setParserRulesVarargs(value: ParserRule*): Self = StObject.set(x, "ParserRules", js.Array(value :_*))
       
-      @scala.inline
-      def setParserStart(value: String): Self = StObject.set(x, "ParserStart", value.asInstanceOf[js.Any])
+      inline def setParserStart(value: String): Self = StObject.set(x, "ParserStart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,26 +185,20 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setKeepHistory(value: Boolean): Self = StObject.set(x, "keepHistory", value.asInstanceOf[js.Any])
+      inline def setKeepHistory(value: Boolean): Self = StObject.set(x, "keepHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepHistoryUndefined: Self = StObject.set(x, "keepHistory", js.undefined)
+      inline def setKeepHistoryUndefined: Self = StObject.set(x, "keepHistory", js.undefined)
       
-      @scala.inline
-      def setLexer(value: Lexer): Self = StObject.set(x, "lexer", value.asInstanceOf[js.Any])
+      inline def setLexer(value: Lexer): Self = StObject.set(x, "lexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLexerUndefined: Self = StObject.set(x, "lexer", js.undefined)
+      inline def setLexerUndefined: Self = StObject.set(x, "lexer", js.undefined)
     }
   }
   
@@ -228,31 +212,24 @@ object mod {
   }
   object ParserRule {
     
-    @scala.inline
-    def apply(name: String, symbols: js.Array[js.Any]): ParserRule = {
+    inline def apply(name: String, symbols: js.Array[js.Any]): ParserRule = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParserRule]
     }
     
-    @scala.inline
-    implicit class ParserRuleMutableBuilder[Self <: ParserRule] (val x: Self) extends AnyVal {
+    extension [Self <: ParserRule](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostprocess(
+      inline def setPostprocess(
         value: (/* data */ js.Array[js.Any], /* reference */ js.UndefOr[Double], /* wantedBy */ js.UndefOr[js.Object]) => Unit
       ): Self = StObject.set(x, "postprocess", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostprocessUndefined: Self = StObject.set(x, "postprocess", js.undefined)
+      inline def setPostprocessUndefined: Self = StObject.set(x, "postprocess", js.undefined)
       
-      @scala.inline
-      def setSymbols(value: js.Array[js.Any]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: js.Array[js.Any]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsVarargs(value: js.Any*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+      inline def setSymbolsVarargs(value: js.Any*): Self = StObject.set(x, "symbols", js.Array(value :_*))
     }
   }
   

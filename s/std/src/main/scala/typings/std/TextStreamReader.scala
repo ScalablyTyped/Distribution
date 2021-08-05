@@ -53,8 +53,7 @@ trait TextStreamReader
 }
 object TextStreamReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AtEndOfLine: scala.Boolean,
     AtEndOfStream: scala.Boolean,
     Close: () => Unit,
@@ -70,28 +69,20 @@ object TextStreamReader {
     __obj.asInstanceOf[TextStreamReader]
   }
   
-  @scala.inline
-  implicit class TextStreamReaderMutableBuilder[Self <: TextStreamReader] (val x: Self) extends AnyVal {
+  extension [Self <: TextStreamReader](x: Self) {
     
-    @scala.inline
-    def setAtEndOfLine(value: scala.Boolean): Self = StObject.set(x, "AtEndOfLine", value.asInstanceOf[js.Any])
+    inline def setAtEndOfLine(value: scala.Boolean): Self = StObject.set(x, "AtEndOfLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtEndOfStream(value: scala.Boolean): Self = StObject.set(x, "AtEndOfStream", value.asInstanceOf[js.Any])
+    inline def setAtEndOfStream(value: scala.Boolean): Self = StObject.set(x, "AtEndOfStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: Double => java.lang.String): Self = StObject.set(x, "Read", js.Any.fromFunction1(value))
+    inline def setRead(value: Double => java.lang.String): Self = StObject.set(x, "Read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadAll(value: () => java.lang.String): Self = StObject.set(x, "ReadAll", js.Any.fromFunction0(value))
+    inline def setReadAll(value: () => java.lang.String): Self = StObject.set(x, "ReadAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadLine(value: () => java.lang.String): Self = StObject.set(x, "ReadLine", js.Any.fromFunction0(value))
+    inline def setReadLine(value: () => java.lang.String): Self = StObject.set(x, "ReadLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSkip(value: Double => Unit): Self = StObject.set(x, "Skip", js.Any.fromFunction1(value))
+    inline def setSkip(value: Double => Unit): Self = StObject.set(x, "Skip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkipLine(value: () => Unit): Self = StObject.set(x, "SkipLine", js.Any.fromFunction0(value))
+    inline def setSkipLine(value: () => Unit): Self = StObject.set(x, "SkipLine", js.Any.fromFunction0(value))
   }
 }

@@ -13,19 +13,15 @@ trait CreateWorkteamResponse extends StObject {
 }
 object CreateWorkteamResponse {
   
-  @scala.inline
-  def apply(): CreateWorkteamResponse = {
+  inline def apply(): CreateWorkteamResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateWorkteamResponse]
   }
   
-  @scala.inline
-  implicit class CreateWorkteamResponseMutableBuilder[Self <: CreateWorkteamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkteamResponse](x: Self) {
     
-    @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
+    inline def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkteamArnUndefined: Self = StObject.set(x, "WorkteamArn", js.undefined)
+    inline def setWorkteamArnUndefined: Self = StObject.set(x, "WorkteamArn", js.undefined)
   }
 }

@@ -36,38 +36,28 @@ object tileDebugMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+      inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
-      @scala.inline
-      def setTileGrid(value: typings.ol.tilegridTileGridMod.default): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
+      inline def setTileGrid(value: typings.ol.tilegridTileGridMod.default): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
+      inline def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
       
-      @scala.inline
-      def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+      inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+      inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
       
-      @scala.inline
-      def setZDirection(value: Double): Self = StObject.set(x, "zDirection", value.asInstanceOf[js.Any])
+      inline def setZDirection(value: Double): Self = StObject.set(x, "zDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZDirectionUndefined: Self = StObject.set(x, "zDirection", js.undefined)
+      inline def setZDirectionUndefined: Self = StObject.set(x, "zDirection", js.undefined)
     }
   }
   

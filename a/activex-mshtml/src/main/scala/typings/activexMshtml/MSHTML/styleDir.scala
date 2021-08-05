@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleDir extends StObject
 object styleDir {
   
-  @scala.inline
-  def styleDirInherit: `3` = 3.asInstanceOf[`3`]
+  inline def styleDirInherit: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleDirLeftToRight: `1` = 1.asInstanceOf[`1`]
+  inline def styleDirLeftToRight: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleDirNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleDirNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleDirRightToLeft: `2` = 2.asInstanceOf[`2`]
+  inline def styleDirRightToLeft: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleDir_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleDir_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

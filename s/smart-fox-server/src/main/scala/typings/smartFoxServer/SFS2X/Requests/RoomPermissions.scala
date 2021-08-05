@@ -20,8 +20,7 @@ trait RoomPermissions extends StObject {
 }
 object RoomPermissions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowNameChange: Boolean,
     allowPasswordStateChange: Boolean,
     allowPublicMessages: Boolean,
@@ -31,19 +30,14 @@ object RoomPermissions {
     __obj.asInstanceOf[RoomPermissions]
   }
   
-  @scala.inline
-  implicit class RoomPermissionsMutableBuilder[Self <: RoomPermissions] (val x: Self) extends AnyVal {
+  extension [Self <: RoomPermissions](x: Self) {
     
-    @scala.inline
-    def setAllowNameChange(value: Boolean): Self = StObject.set(x, "allowNameChange", value.asInstanceOf[js.Any])
+    inline def setAllowNameChange(value: Boolean): Self = StObject.set(x, "allowNameChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPasswordStateChange(value: Boolean): Self = StObject.set(x, "allowPasswordStateChange", value.asInstanceOf[js.Any])
+    inline def setAllowPasswordStateChange(value: Boolean): Self = StObject.set(x, "allowPasswordStateChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPublicMessages(value: Boolean): Self = StObject.set(x, "allowPublicMessages", value.asInstanceOf[js.Any])
+    inline def setAllowPublicMessages(value: Boolean): Self = StObject.set(x, "allowPublicMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAloowResizing(value: Boolean): Self = StObject.set(x, "aloowResizing", value.asInstanceOf[js.Any])
+    inline def setAloowResizing(value: Boolean): Self = StObject.set(x, "aloowResizing", value.asInstanceOf[js.Any])
   }
 }

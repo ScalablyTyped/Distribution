@@ -10,8 +10,7 @@ trait IPush
      with IAbstract
 object IPush {
   
-  @scala.inline
-  def apply(): IPush = {
+  inline def apply(): IPush = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPush]
   }

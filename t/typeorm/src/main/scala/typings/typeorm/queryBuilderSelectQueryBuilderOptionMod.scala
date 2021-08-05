@@ -13,10 +13,8 @@ object queryBuilderSelectQueryBuilderOptionMod {
   trait SelectQueryBuilderOption extends StObject
   object SelectQueryBuilderOption {
     
-    @scala.inline
-    def `create-pojo`: typings.typeorm.typeormStrings.`create-pojo` = "create-pojo".asInstanceOf[typings.typeorm.typeormStrings.`create-pojo`]
+    inline def `create-pojo`: typings.typeorm.typeormStrings.`create-pojo` = "create-pojo".asInstanceOf[typings.typeorm.typeormStrings.`create-pojo`]
     
-    @scala.inline
-    def `disable-global-order`: typings.typeorm.typeormStrings.`disable-global-order` = "disable-global-order".asInstanceOf[typings.typeorm.typeormStrings.`disable-global-order`]
+    inline def `disable-global-order`: typings.typeorm.typeormStrings.`disable-global-order` = "disable-global-order".asInstanceOf[typings.typeorm.typeormStrings.`disable-global-order`]
   }
 }

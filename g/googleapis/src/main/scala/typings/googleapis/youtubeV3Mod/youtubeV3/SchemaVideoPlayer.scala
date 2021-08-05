@@ -23,31 +23,23 @@ trait SchemaVideoPlayer extends StObject {
 }
 object SchemaVideoPlayer {
   
-  @scala.inline
-  def apply(): SchemaVideoPlayer = {
+  inline def apply(): SchemaVideoPlayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoPlayer]
   }
   
-  @scala.inline
-  implicit class SchemaVideoPlayerMutableBuilder[Self <: SchemaVideoPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoPlayer](x: Self) {
     
-    @scala.inline
-    def setEmbedHeight(value: String): Self = StObject.set(x, "embedHeight", value.asInstanceOf[js.Any])
+    inline def setEmbedHeight(value: String): Self = StObject.set(x, "embedHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedHeightUndefined: Self = StObject.set(x, "embedHeight", js.undefined)
+    inline def setEmbedHeightUndefined: Self = StObject.set(x, "embedHeight", js.undefined)
     
-    @scala.inline
-    def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
+    inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
+    inline def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
     
-    @scala.inline
-    def setEmbedWidth(value: String): Self = StObject.set(x, "embedWidth", value.asInstanceOf[js.Any])
+    inline def setEmbedWidth(value: String): Self = StObject.set(x, "embedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedWidthUndefined: Self = StObject.set(x, "embedWidth", js.undefined)
+    inline def setEmbedWidthUndefined: Self = StObject.set(x, "embedWidth", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait Suggestion extends StObject {
 }
 object Suggestion {
   
-  @scala.inline
-  def apply(suggestion: js.Any): Suggestion = {
+  inline def apply(suggestion: js.Any): Suggestion = {
     val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any], target = null)
     __obj.asInstanceOf[Suggestion]
   }
   
-  @scala.inline
-  implicit class SuggestionMutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
+  extension [Self <: Suggestion](x: Self) {
     
-    @scala.inline
-    def setSuggestion(value: js.Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+    inline def setSuggestion(value: js.Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNull: Self = StObject.set(x, "target", null)
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
   }
 }

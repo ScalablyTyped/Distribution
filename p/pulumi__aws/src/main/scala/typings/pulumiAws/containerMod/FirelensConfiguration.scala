@@ -13,23 +13,18 @@ trait FirelensConfiguration extends StObject {
 }
 object FirelensConfiguration {
   
-  @scala.inline
-  def apply(`type`: String): FirelensConfiguration = {
+  inline def apply(`type`: String): FirelensConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirelensConfiguration]
   }
   
-  @scala.inline
-  implicit class FirelensConfigurationMutableBuilder[Self <: FirelensConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FirelensConfiguration](x: Self) {
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

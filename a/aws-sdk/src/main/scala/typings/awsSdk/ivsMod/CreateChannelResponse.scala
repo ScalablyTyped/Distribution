@@ -12,25 +12,19 @@ trait CreateChannelResponse extends StObject {
 }
 object CreateChannelResponse {
   
-  @scala.inline
-  def apply(): CreateChannelResponse = {
+  inline def apply(): CreateChannelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateChannelResponse]
   }
   
-  @scala.inline
-  implicit class CreateChannelResponseMutableBuilder[Self <: CreateChannelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelResponse](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setStreamKey(value: StreamKey): Self = StObject.set(x, "streamKey", value.asInstanceOf[js.Any])
+    inline def setStreamKey(value: StreamKey): Self = StObject.set(x, "streamKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamKeyUndefined: Self = StObject.set(x, "streamKey", js.undefined)
+    inline def setStreamKeyUndefined: Self = StObject.set(x, "streamKey", js.undefined)
   }
 }

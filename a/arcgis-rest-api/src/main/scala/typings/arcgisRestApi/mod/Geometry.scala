@@ -10,19 +10,15 @@ trait Geometry extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply(): Geometry = {
+  inline def apply(): Geometry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

@@ -65,64 +65,45 @@ trait FeatureReductionClusterProperties extends StObject {
 }
 object FeatureReductionClusterProperties {
   
-  @scala.inline
-  def apply(): FeatureReductionClusterProperties = {
+  inline def apply(): FeatureReductionClusterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureReductionClusterProperties]
   }
   
-  @scala.inline
-  implicit class FeatureReductionClusterPropertiesMutableBuilder[Self <: FeatureReductionClusterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureReductionClusterProperties](x: Self) {
     
-    @scala.inline
-    def setClusterMaxSize(value: Double | String): Self = StObject.set(x, "clusterMaxSize", value.asInstanceOf[js.Any])
+    inline def setClusterMaxSize(value: Double | String): Self = StObject.set(x, "clusterMaxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterMaxSizeUndefined: Self = StObject.set(x, "clusterMaxSize", js.undefined)
+    inline def setClusterMaxSizeUndefined: Self = StObject.set(x, "clusterMaxSize", js.undefined)
     
-    @scala.inline
-    def setClusterMinSize(value: Double | String): Self = StObject.set(x, "clusterMinSize", value.asInstanceOf[js.Any])
+    inline def setClusterMinSize(value: Double | String): Self = StObject.set(x, "clusterMinSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterMinSizeUndefined: Self = StObject.set(x, "clusterMinSize", js.undefined)
+    inline def setClusterMinSizeUndefined: Self = StObject.set(x, "clusterMinSize", js.undefined)
     
-    @scala.inline
-    def setClusterRadius(value: Double | String): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
+    inline def setClusterRadius(value: Double | String): Self = StObject.set(x, "clusterRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
+    inline def setClusterRadiusUndefined: Self = StObject.set(x, "clusterRadius", js.undefined)
     
-    @scala.inline
-    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
+    inline def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
+    inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    @scala.inline
-    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
+    inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
-    @scala.inline
-    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
-    @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
-    @scala.inline
-    def setType(value: cluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: cluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

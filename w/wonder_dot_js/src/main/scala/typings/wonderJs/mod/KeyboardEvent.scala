@@ -17,6 +17,5 @@ object KeyboardEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.keyboardEventMod.KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.keyboardEventMod.KeyboardEvent]
+  inline def create(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.keyboardEventMod.KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.keyboardEventMod.KeyboardEvent]
 }

@@ -35,53 +35,38 @@ object chartCardMod {
   }
   object IChartCardProps {
     
-    @scala.inline
-    def apply(): IChartCardProps = {
+    inline def apply(): IChartCardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IChartCardProps]
     }
     
-    @scala.inline
-    implicit class IChartCardPropsMutableBuilder[Self <: IChartCardProps] (val x: Self) extends AnyVal {
+    extension [Self <: IChartCardProps](x: Self) {
       
-      @scala.inline
-      def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
+      inline def setAvatarUndefined: Self = StObject.set(x, "avatar", js.undefined)
       
-      @scala.inline
-      def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
+      inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
+      inline def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
       
-      @scala.inline
-      def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTotal(value: ReactNode | Double | (js.Function0[ReactNode | Double])): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: ReactNode | Double | (js.Function0[ReactNode | Double])): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalFunction0(value: () => ReactNode | Double): Self = StObject.set(x, "total", js.Any.fromFunction0(value))
+      inline def setTotalFunction0(value: () => ReactNode | Double): Self = StObject.set(x, "total", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
 }

@@ -28,16 +28,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(toastmessage: ToastmessageStatic): JQuery = {
+  inline def apply(toastmessage: ToastmessageStatic): JQuery = {
     val __obj = js.Dynamic.literal(toastmessage = toastmessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setToastmessage(value: ToastmessageStatic): Self = StObject.set(x, "toastmessage", value.asInstanceOf[js.Any])
+    inline def setToastmessage(value: ToastmessageStatic): Self = StObject.set(x, "toastmessage", value.asInstanceOf[js.Any])
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CellValueType extends StObject
 object CellValueType {
   
-  @scala.inline
-  def boolValue: typings.googleSpreadsheet.googleSpreadsheetStrings.boolValue = "boolValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.boolValue]
+  inline def boolValue: typings.googleSpreadsheet.googleSpreadsheetStrings.boolValue = "boolValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.boolValue]
   
-  @scala.inline
-  def errorValue: typings.googleSpreadsheet.googleSpreadsheetStrings.errorValue = "errorValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.errorValue]
+  inline def errorValue: typings.googleSpreadsheet.googleSpreadsheetStrings.errorValue = "errorValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.errorValue]
   
-  @scala.inline
-  def numberValue: typings.googleSpreadsheet.googleSpreadsheetStrings.numberValue = "numberValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.numberValue]
+  inline def numberValue: typings.googleSpreadsheet.googleSpreadsheetStrings.numberValue = "numberValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.numberValue]
   
-  @scala.inline
-  def stringValue: typings.googleSpreadsheet.googleSpreadsheetStrings.stringValue = "stringValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.stringValue]
+  inline def stringValue: typings.googleSpreadsheet.googleSpreadsheetStrings.stringValue = "stringValue".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.stringValue]
 }

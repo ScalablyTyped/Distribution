@@ -18,43 +18,31 @@ trait MapTypeOptions extends StObject {
 }
 object MapTypeOptions {
   
-  @scala.inline
-  def apply(): MapTypeOptions = {
+  inline def apply(): MapTypeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapTypeOptions]
   }
   
-  @scala.inline
-  implicit class MapTypeOptionsMutableBuilder[Self <: MapTypeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapTypeOptions](x: Self) {
     
-    @scala.inline
-    def setErrorImageUrl(value: String): Self = StObject.set(x, "errorImageUrl", value.asInstanceOf[js.Any])
+    inline def setErrorImageUrl(value: String): Self = StObject.set(x, "errorImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorImageUrlUndefined: Self = StObject.set(x, "errorImageUrl", js.undefined)
+    inline def setErrorImageUrlUndefined: Self = StObject.set(x, "errorImageUrl", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: Double): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: Double): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
-    @scala.inline
-    def setTips(value: String): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+    inline def setTips(value: String): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
+    inline def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
   }
 }

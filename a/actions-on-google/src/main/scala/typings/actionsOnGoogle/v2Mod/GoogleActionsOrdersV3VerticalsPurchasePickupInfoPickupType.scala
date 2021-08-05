@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsOrdersV3VerticalsPurchasePickupInfoPickupType extends StObject
 object GoogleActionsOrdersV3VerticalsPurchasePickupInfoPickupType {
   
-  @scala.inline
-  def CURBSIDE: typings.actionsOnGoogle.actionsOnGoogleStrings.CURBSIDE = "CURBSIDE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CURBSIDE]
+  inline def CURBSIDE: typings.actionsOnGoogle.actionsOnGoogleStrings.CURBSIDE = "CURBSIDE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CURBSIDE]
   
-  @scala.inline
-  def INSTORE: typings.actionsOnGoogle.actionsOnGoogleStrings.INSTORE = "INSTORE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.INSTORE]
+  inline def INSTORE: typings.actionsOnGoogle.actionsOnGoogleStrings.INSTORE = "INSTORE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.INSTORE]
   
-  @scala.inline
-  def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = "UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED]
+  inline def UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED = "UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNSPECIFIED]
 }

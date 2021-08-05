@@ -19,32 +19,24 @@ trait CategoryFilterAppender
 }
 object CategoryFilterAppender {
   
-  @scala.inline
-  def apply(): CategoryFilterAppender = {
+  inline def apply(): CategoryFilterAppender = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("categoryFilter")
     __obj.asInstanceOf[CategoryFilterAppender]
   }
   
-  @scala.inline
-  implicit class CategoryFilterAppenderMutableBuilder[Self <: CategoryFilterAppender] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryFilterAppender](x: Self) {
     
-    @scala.inline
-    def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
+    inline def setAppender(value: String): Self = StObject.set(x, "appender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppenderUndefined: Self = StObject.set(x, "appender", js.undefined)
+    inline def setAppenderUndefined: Self = StObject.set(x, "appender", js.undefined)
     
-    @scala.inline
-    def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: categoryFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: categoryFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

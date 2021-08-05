@@ -21,8 +21,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction ex
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionDefinition: Input[
       RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition
     ],
@@ -32,17 +31,14 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction {
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction](x: Self) {
     
-    @scala.inline
-    def setActionDefinition(
+    inline def setActionDefinition(
       value: Input[
           RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition
         ]
     ): Self = StObject.set(x, "actionDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionName(value: Input[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: Input[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
   }
 }

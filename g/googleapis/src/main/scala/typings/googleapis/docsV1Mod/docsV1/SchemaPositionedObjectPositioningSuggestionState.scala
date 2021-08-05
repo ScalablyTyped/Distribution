@@ -28,31 +28,23 @@ trait SchemaPositionedObjectPositioningSuggestionState extends StObject {
 }
 object SchemaPositionedObjectPositioningSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaPositionedObjectPositioningSuggestionState = {
+  inline def apply(): SchemaPositionedObjectPositioningSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPositionedObjectPositioningSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaPositionedObjectPositioningSuggestionStateMutableBuilder[Self <: SchemaPositionedObjectPositioningSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPositionedObjectPositioningSuggestionState](x: Self) {
     
-    @scala.inline
-    def setLayoutSuggested(value: Boolean): Self = StObject.set(x, "layoutSuggested", value.asInstanceOf[js.Any])
+    inline def setLayoutSuggested(value: Boolean): Self = StObject.set(x, "layoutSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutSuggestedUndefined: Self = StObject.set(x, "layoutSuggested", js.undefined)
+    inline def setLayoutSuggestedUndefined: Self = StObject.set(x, "layoutSuggested", js.undefined)
     
-    @scala.inline
-    def setLeftOffsetSuggested(value: Boolean): Self = StObject.set(x, "leftOffsetSuggested", value.asInstanceOf[js.Any])
+    inline def setLeftOffsetSuggested(value: Boolean): Self = StObject.set(x, "leftOffsetSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftOffsetSuggestedUndefined: Self = StObject.set(x, "leftOffsetSuggested", js.undefined)
+    inline def setLeftOffsetSuggestedUndefined: Self = StObject.set(x, "leftOffsetSuggested", js.undefined)
     
-    @scala.inline
-    def setTopOffsetSuggested(value: Boolean): Self = StObject.set(x, "topOffsetSuggested", value.asInstanceOf[js.Any])
+    inline def setTopOffsetSuggested(value: Boolean): Self = StObject.set(x, "topOffsetSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopOffsetSuggestedUndefined: Self = StObject.set(x, "topOffsetSuggested", js.undefined)
+    inline def setTopOffsetSuggestedUndefined: Self = StObject.set(x, "topOffsetSuggested", js.undefined)
   }
 }

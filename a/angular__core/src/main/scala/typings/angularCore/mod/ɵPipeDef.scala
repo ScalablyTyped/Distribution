@@ -34,35 +34,26 @@ trait ɵPipeDef[T] extends StObject {
 }
 object ɵPipeDef {
   
-  @scala.inline
-  def apply[T](name: String, pure: Boolean, `type`: Type[T]): ɵPipeDef[T] = {
+  inline def apply[T](name: String, pure: Boolean, `type`: Type[T]): ɵPipeDef[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pure = pure.asInstanceOf[js.Any], factory = null, onDestroy = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵPipeDef[T]]
   }
   
-  @scala.inline
-  implicit class ɵPipeDefMutableBuilder[Self <: ɵPipeDef[?], T] (val x: Self & ɵPipeDef[T]) extends AnyVal {
+  extension [Self <: ɵPipeDef[?], T](x: Self & ɵPipeDef[T]) {
     
-    @scala.inline
-    def setFactory(value: FactoryFn[T]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    inline def setFactory(value: FactoryFn[T]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactoryNull: Self = StObject.set(x, "factory", null)
+    inline def setFactoryNull: Self = StObject.set(x, "factory", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDestroy(value: () => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction0(value))
+    inline def setOnDestroy(value: () => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDestroyNull: Self = StObject.set(x, "onDestroy", null)
+    inline def setOnDestroyNull: Self = StObject.set(x, "onDestroy", null)
     
-    @scala.inline
-    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+    inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait CancelChangeSetRequest extends StObject {
 }
 object CancelChangeSetRequest {
   
-  @scala.inline
-  def apply(Catalog: Catalog, ChangeSetId: ResourceId): CancelChangeSetRequest = {
+  inline def apply(Catalog: Catalog, ChangeSetId: ResourceId): CancelChangeSetRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], ChangeSetId = ChangeSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelChangeSetRequest]
   }
   
-  @scala.inline
-  implicit class CancelChangeSetRequestMutableBuilder[Self <: CancelChangeSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelChangeSetRequest](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
+    inline def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
   }
 }

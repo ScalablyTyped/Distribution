@@ -34,8 +34,7 @@ trait XSpinField
 }
 object XSpinField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addSpinListener: XSpinListener => Unit,
     down: () => Unit,
@@ -51,28 +50,20 @@ object XSpinField {
     __obj.asInstanceOf[XSpinField]
   }
   
-  @scala.inline
-  implicit class XSpinFieldMutableBuilder[Self <: XSpinField] (val x: Self) extends AnyVal {
+  extension [Self <: XSpinField](x: Self) {
     
-    @scala.inline
-    def setAddSpinListener(value: XSpinListener => Unit): Self = StObject.set(x, "addSpinListener", js.Any.fromFunction1(value))
+    inline def setAddSpinListener(value: XSpinListener => Unit): Self = StObject.set(x, "addSpinListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDown(value: () => Unit): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
+    inline def setDown(value: () => Unit): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnableRepeat(value: Boolean => Unit): Self = StObject.set(x, "enableRepeat", js.Any.fromFunction1(value))
+    inline def setEnableRepeat(value: Boolean => Unit): Self = StObject.set(x, "enableRepeat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirst(value: () => Unit): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => Unit): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLast(value: () => Unit): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
+    inline def setLast(value: () => Unit): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveSpinListener(value: XSpinListener => Unit): Self = StObject.set(x, "removeSpinListener", js.Any.fromFunction1(value))
+    inline def setRemoveSpinListener(value: XSpinListener => Unit): Self = StObject.set(x, "removeSpinListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUp(value: () => Unit): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
+    inline def setUp(value: () => Unit): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
   }
 }

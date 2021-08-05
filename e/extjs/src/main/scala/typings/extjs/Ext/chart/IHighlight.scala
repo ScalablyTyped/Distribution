@@ -25,37 +25,27 @@ trait IHighlight
 }
 object IHighlight {
   
-  @scala.inline
-  def apply(): IHighlight = {
+  inline def apply(): IHighlight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHighlight]
   }
   
-  @scala.inline
-  implicit class IHighlightMutableBuilder[Self <: IHighlight] (val x: Self) extends AnyVal {
+  extension [Self <: IHighlight](x: Self) {
     
-    @scala.inline
-    def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightCfg(value: js.Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
+    inline def setHighlightCfg(value: js.Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightCfgUndefined: Self = StObject.set(x, "highlightCfg", js.undefined)
+    inline def setHighlightCfgUndefined: Self = StObject.set(x, "highlightCfg", js.undefined)
     
-    @scala.inline
-    def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+    inline def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
+    inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setUnHighlightItem(value: () => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction0(value))
+    inline def setUnHighlightItem(value: () => Unit): Self = StObject.set(x, "unHighlightItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
+    inline def setUnHighlightItemUndefined: Self = StObject.set(x, "unHighlightItem", js.undefined)
   }
 }

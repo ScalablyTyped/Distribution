@@ -17,19 +17,15 @@ trait SchemaActivityContentDetailsComment extends StObject {
 }
 object SchemaActivityContentDetailsComment {
   
-  @scala.inline
-  def apply(): SchemaActivityContentDetailsComment = {
+  inline def apply(): SchemaActivityContentDetailsComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActivityContentDetailsComment]
   }
   
-  @scala.inline
-  implicit class SchemaActivityContentDetailsCommentMutableBuilder[Self <: SchemaActivityContentDetailsComment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActivityContentDetailsComment](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: SchemaResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

@@ -127,38 +127,28 @@ object Barcode {
   }
   object LoadEventArgs {
     
-    @scala.inline
-    def apply(): LoadEventArgs = {
+    inline def apply(): LoadEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    @scala.inline
-    implicit class LoadEventArgsMutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LoadEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -231,104 +221,72 @@ object Barcode {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.datavisualization.Barcode.Model = {
+    inline def apply(): typings.ejWebAll.ej.datavisualization.Barcode.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Barcode.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Barcode.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.datavisualization.Barcode.Model](x: Self) {
       
-      @scala.inline
-      def setBarHeight(value: Double): Self = StObject.set(x, "barHeight", value.asInstanceOf[js.Any])
+      inline def setBarHeight(value: Double): Self = StObject.set(x, "barHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarHeightUndefined: Self = StObject.set(x, "barHeight", js.undefined)
+      inline def setBarHeightUndefined: Self = StObject.set(x, "barHeight", js.undefined)
       
-      @scala.inline
-      def setBarcodeToTextGapHeight(value: Double): Self = StObject.set(x, "barcodeToTextGapHeight", value.asInstanceOf[js.Any])
+      inline def setBarcodeToTextGapHeight(value: Double): Self = StObject.set(x, "barcodeToTextGapHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarcodeToTextGapHeightUndefined: Self = StObject.set(x, "barcodeToTextGapHeight", js.undefined)
+      inline def setBarcodeToTextGapHeightUndefined: Self = StObject.set(x, "barcodeToTextGapHeight", js.undefined)
       
-      @scala.inline
-      def setDarkBarColor(value: js.Any): Self = StObject.set(x, "darkBarColor", value.asInstanceOf[js.Any])
+      inline def setDarkBarColor(value: js.Any): Self = StObject.set(x, "darkBarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkBarColorUndefined: Self = StObject.set(x, "darkBarColor", js.undefined)
+      inline def setDarkBarColorUndefined: Self = StObject.set(x, "darkBarColor", js.undefined)
       
-      @scala.inline
-      def setDisplayText(value: Boolean): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+      inline def setDisplayText(value: Boolean): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
+      inline def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setEncodeStartStopSymbol(value: Double): Self = StObject.set(x, "encodeStartStopSymbol", value.asInstanceOf[js.Any])
+      inline def setEncodeStartStopSymbol(value: Double): Self = StObject.set(x, "encodeStartStopSymbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeStartStopSymbolUndefined: Self = StObject.set(x, "encodeStartStopSymbol", js.undefined)
+      inline def setEncodeStartStopSymbolUndefined: Self = StObject.set(x, "encodeStartStopSymbol", js.undefined)
       
-      @scala.inline
-      def setLightBarColor(value: js.Any): Self = StObject.set(x, "lightBarColor", value.asInstanceOf[js.Any])
+      inline def setLightBarColor(value: js.Any): Self = StObject.set(x, "lightBarColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightBarColorUndefined: Self = StObject.set(x, "lightBarColor", js.undefined)
+      inline def setLightBarColorUndefined: Self = StObject.set(x, "lightBarColor", js.undefined)
       
-      @scala.inline
-      def setLoad(value: /* e */ LoadEventArgs => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: /* e */ LoadEventArgs => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+      inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       
-      @scala.inline
-      def setNarrowBarWidth(value: Double): Self = StObject.set(x, "narrowBarWidth", value.asInstanceOf[js.Any])
+      inline def setNarrowBarWidth(value: Double): Self = StObject.set(x, "narrowBarWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNarrowBarWidthUndefined: Self = StObject.set(x, "narrowBarWidth", js.undefined)
+      inline def setNarrowBarWidthUndefined: Self = StObject.set(x, "narrowBarWidth", js.undefined)
       
-      @scala.inline
-      def setQuietZone(value: QuietZone): Self = StObject.set(x, "quietZone", value.asInstanceOf[js.Any])
+      inline def setQuietZone(value: QuietZone): Self = StObject.set(x, "quietZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietZoneUndefined: Self = StObject.set(x, "quietZone", js.undefined)
+      inline def setQuietZoneUndefined: Self = StObject.set(x, "quietZone", js.undefined)
       
-      @scala.inline
-      def setSymbologyType(value: SymbologyType | String): Self = StObject.set(x, "symbologyType", value.asInstanceOf[js.Any])
+      inline def setSymbologyType(value: SymbologyType | String): Self = StObject.set(x, "symbologyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbologyTypeUndefined: Self = StObject.set(x, "symbologyType", js.undefined)
+      inline def setSymbologyTypeUndefined: Self = StObject.set(x, "symbologyType", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+      inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setWideBarWidth(value: Double): Self = StObject.set(x, "wideBarWidth", value.asInstanceOf[js.Any])
+      inline def setWideBarWidth(value: Double): Self = StObject.set(x, "wideBarWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWideBarWidthUndefined: Self = StObject.set(x, "wideBarWidth", js.undefined)
+      inline def setWideBarWidthUndefined: Self = StObject.set(x, "wideBarWidth", js.undefined)
       
-      @scala.inline
-      def setXDimension(value: Double): Self = StObject.set(x, "xDimension", value.asInstanceOf[js.Any])
+      inline def setXDimension(value: Double): Self = StObject.set(x, "xDimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXDimensionUndefined: Self = StObject.set(x, "xDimension", js.undefined)
+      inline def setXDimensionUndefined: Self = StObject.set(x, "xDimension", js.undefined)
     }
   }
   
@@ -356,44 +314,32 @@ object Barcode {
   }
   object QuietZone {
     
-    @scala.inline
-    def apply(): QuietZone = {
+    inline def apply(): QuietZone = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QuietZone]
     }
     
-    @scala.inline
-    implicit class QuietZoneMutableBuilder[Self <: QuietZone] (val x: Self) extends AnyVal {
+    extension [Self <: QuietZone](x: Self) {
       
-      @scala.inline
-      def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
 }

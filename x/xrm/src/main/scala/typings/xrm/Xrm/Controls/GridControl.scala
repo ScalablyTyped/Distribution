@@ -68,8 +68,7 @@ trait GridControl
 }
 object GridControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addOnLoad: ContextSensitiveHandler => Unit,
     getContextType: () => GridControlContext,
     getControlType: () => ControlType | String,
@@ -89,31 +88,22 @@ object GridControl {
     __obj.asInstanceOf[GridControl]
   }
   
-  @scala.inline
-  implicit class GridControlMutableBuilder[Self <: GridControl] (val x: Self) extends AnyVal {
+  extension [Self <: GridControl](x: Self) {
     
-    @scala.inline
-    def setAddOnLoad(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnLoad", js.Any.fromFunction1(value))
+    inline def setAddOnLoad(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContextType(value: () => GridControlContext): Self = StObject.set(x, "getContextType", js.Any.fromFunction0(value))
+    inline def setGetContextType(value: () => GridControlContext): Self = StObject.set(x, "getContextType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
+    inline def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGrid(value: () => Grid): Self = StObject.set(x, "getGrid", js.Any.fromFunction0(value))
+    inline def setGetGrid(value: () => Grid): Self = StObject.set(x, "getGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewSelector(value: () => ViewSelector): Self = StObject.set(x, "getViewSelector", js.Any.fromFunction0(value))
+    inline def setGetViewSelector(value: () => ViewSelector): Self = StObject.set(x, "getViewSelector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshRibbon(value: () => Unit): Self = StObject.set(x, "refreshRibbon", js.Any.fromFunction0(value))
+    inline def setRefreshRibbon(value: () => Unit): Self = StObject.set(x, "refreshRibbon", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveOnLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "removeOnLoad", js.Any.fromFunction1(value))
+    inline def setRemoveOnLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "removeOnLoad", js.Any.fromFunction1(value))
   }
 }

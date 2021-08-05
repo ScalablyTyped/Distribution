@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parseMod {
   
-  @scala.inline
-  def apply(tokens: js.Array[Token]): Info = ^.asInstanceOf[js.Dynamic].apply(tokens.asInstanceOf[js.Any]).asInstanceOf[Info]
+  inline def apply(tokens: js.Array[Token]): Info = ^.asInstanceOf[js.Dynamic].apply(tokens.asInstanceOf[js.Any]).asInstanceOf[Info]
   
   @JSImport("spdx-expression-parse/parse", JSImport.Namespace)
   @js.native

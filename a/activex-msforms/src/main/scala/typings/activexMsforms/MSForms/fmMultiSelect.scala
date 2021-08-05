@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmMultiSelect extends StObject
 object fmMultiSelect {
   
-  @scala.inline
-  def fmMultiSelectExtended: `2` = 2.asInstanceOf[`2`]
+  inline def fmMultiSelectExtended: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmMultiSelectMulti: `1` = 1.asInstanceOf[`1`]
+  inline def fmMultiSelectMulti: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmMultiSelectSingle: `0` = 0.asInstanceOf[`0`]
+  inline def fmMultiSelectSingle: `0` = 0.asInstanceOf[`0`]
 }

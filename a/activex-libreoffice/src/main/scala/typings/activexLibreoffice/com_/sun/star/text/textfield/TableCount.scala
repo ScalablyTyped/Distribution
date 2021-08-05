@@ -27,8 +27,7 @@ trait TableCount
 }
 object TableCount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object TableCount {
     __obj.asInstanceOf[TableCount]
   }
   
-  @scala.inline
-  implicit class TableCountMutableBuilder[Self <: TableCount] (val x: Self) extends AnyVal {
+  extension [Self <: TableCount](x: Self) {
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

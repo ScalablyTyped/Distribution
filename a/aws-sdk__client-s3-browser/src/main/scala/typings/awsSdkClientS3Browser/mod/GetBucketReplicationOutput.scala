@@ -10,8 +10,7 @@ trait GetBucketReplicationOutput
      with typings.awsSdkClientS3Browser.typesGetBucketReplicationOutputMod.GetBucketReplicationOutput
 object GetBucketReplicationOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketReplicationOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketReplicationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketReplicationOutput]
   }

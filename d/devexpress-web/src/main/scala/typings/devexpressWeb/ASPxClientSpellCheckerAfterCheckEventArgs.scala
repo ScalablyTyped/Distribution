@@ -28,22 +28,17 @@ trait ASPxClientSpellCheckerAfterCheckEventArgs
 }
 object ASPxClientSpellCheckerAfterCheckEventArgs {
   
-  @scala.inline
-  def apply(checkedText: String, controlId: String, reason: String): ASPxClientSpellCheckerAfterCheckEventArgs = {
+  inline def apply(checkedText: String, controlId: String, reason: String): ASPxClientSpellCheckerAfterCheckEventArgs = {
     val __obj = js.Dynamic.literal(checkedText = checkedText.asInstanceOf[js.Any], controlId = controlId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSpellCheckerAfterCheckEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpellCheckerAfterCheckEventArgsMutableBuilder[Self <: ASPxClientSpellCheckerAfterCheckEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpellCheckerAfterCheckEventArgs](x: Self) {
     
-    @scala.inline
-    def setCheckedText(value: String): Self = StObject.set(x, "checkedText", value.asInstanceOf[js.Any])
+    inline def setCheckedText(value: String): Self = StObject.set(x, "checkedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
+    inline def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

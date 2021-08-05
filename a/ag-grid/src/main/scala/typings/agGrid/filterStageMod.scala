@@ -17,10 +17,10 @@ object filterStageMod {
     /* CompleteClass */
     override def execute(params: StageExecuteParams): js.Any = js.native
     
-    var filterService: js.Any = js.native
+    /* private */ var filterService: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var selectableService: js.Any = js.native
+    /* private */ var selectableService: js.Any = js.native
   }
 }

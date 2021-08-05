@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kms-json"
-version := "1.1-dt-20200515Z-614fdf"
+version := "1.1-dt-20200515Z-9a1abd"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -38,8 +38,7 @@ object libMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource]
+    inline def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource]
   }
   
   /**
@@ -298,38 +297,28 @@ object libMod {
   }
   object CachedData {
     
-    @scala.inline
-    def apply(): CachedData = {
+    inline def apply(): CachedData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CachedData]
     }
     
-    @scala.inline
-    implicit class CachedDataMutableBuilder[Self <: CachedData] (val x: Self) extends AnyVal {
+    extension [Self <: CachedData](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setCachedData(value: Map[js.Any, js.Any]): Self = StObject.set(x, "cachedData", value.asInstanceOf[js.Any])
+      inline def setCachedData(value: Map[js.Any, js.Any]): Self = StObject.set(x, "cachedData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachedDataUndefined: Self = StObject.set(x, "cachedData", js.undefined)
+      inline def setCachedDataUndefined: Self = StObject.set(x, "cachedData", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSource(value: String | Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -349,26 +338,20 @@ object libMod {
   }
   object MapOptions {
     
-    @scala.inline
-    def apply(): MapOptions = {
+    inline def apply(): MapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapOptions]
     }
     
-    @scala.inline
-    implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptions](x: Self) {
       
-      @scala.inline
-      def setColumns(value: Boolean): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Boolean): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     }
   }
   
@@ -386,29 +369,22 @@ object libMod {
   }
   object Replacement {
     
-    @scala.inline
-    def apply(content: String, end: Double, insertIndex: Double, name: String, start: Double): Replacement = {
+    inline def apply(content: String, end: Double, insertIndex: Double, name: String, start: Double): Replacement = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], insertIndex = insertIndex.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Replacement]
     }
     
-    @scala.inline
-    implicit class ReplacementMutableBuilder[Self <: Replacement] (val x: Self) extends AnyVal {
+    extension [Self <: Replacement](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertIndex(value: Double): Self = StObject.set(x, "insertIndex", value.asInstanceOf[js.Any])
+      inline def setInsertIndex(value: Double): Self = StObject.set(x, "insertIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -438,23 +414,18 @@ object libMod {
   }
   object SourceAndMapResult {
     
-    @scala.inline
-    def apply(source: String): SourceAndMapResult = {
+    inline def apply(source: String): SourceAndMapResult = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], map = null)
       __obj.asInstanceOf[SourceAndMapResult]
     }
     
-    @scala.inline
-    implicit class SourceAndMapResultMutableBuilder[Self <: SourceAndMapResult] (val x: Self) extends AnyVal {
+    extension [Self <: SourceAndMapResult](x: Self) {
       
-      @scala.inline
-      def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapNull: Self = StObject.set(x, "map", null)
+      inline def setMapNull: Self = StObject.set(x, "map", null)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -475,50 +446,36 @@ object libMod {
   }
   object SourceLike {
     
-    @scala.inline
-    def apply(): SourceLike = {
+    inline def apply(): SourceLike = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SourceLike]
     }
     
-    @scala.inline
-    implicit class SourceLikeMutableBuilder[Self <: SourceLike] (val x: Self) extends AnyVal {
+    extension [Self <: SourceLike](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: () => Buffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
+      inline def setBuffer(value: () => Buffer): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setMap(value: /* options */ js.UndefOr[MapOptions] => RawSourceMap | Null): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* options */ js.UndefOr[MapOptions] => RawSourceMap | Null): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSource(value: () => String | ArrayBuffer): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
+      inline def setSource(value: () => String | ArrayBuffer): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSourceAndMap(value: /* options */ js.UndefOr[MapOptions] => SourceAndMapResult): Self = StObject.set(x, "sourceAndMap", js.Any.fromFunction1(value))
+      inline def setSourceAndMap(value: /* options */ js.UndefOr[MapOptions] => SourceAndMapResult): Self = StObject.set(x, "sourceAndMap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourceAndMapUndefined: Self = StObject.set(x, "sourceAndMap", js.undefined)
+      inline def setSourceAndMapUndefined: Self = StObject.set(x, "sourceAndMap", js.undefined)
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setUpdateHash(value: /* hash */ Hash => Unit): Self = StObject.set(x, "updateHash", js.Any.fromFunction1(value))
+      inline def setUpdateHash(value: /* hash */ Hash => Unit): Self = StObject.set(x, "updateHash", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateHashUndefined: Self = StObject.set(x, "updateHash", js.undefined)
+      inline def setUpdateHashUndefined: Self = StObject.set(x, "updateHash", js.undefined)
     }
   }
 }

@@ -26,31 +26,23 @@ trait ShellQuotingOptions extends StObject {
 }
 object ShellQuotingOptions {
   
-  @scala.inline
-  def apply(): ShellQuotingOptions = {
+  inline def apply(): ShellQuotingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShellQuotingOptions]
   }
   
-  @scala.inline
-  implicit class ShellQuotingOptionsMutableBuilder[Self <: ShellQuotingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShellQuotingOptions](x: Self) {
     
-    @scala.inline
-    def setEscape(value: String | CharsToEscape): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: String | CharsToEscape): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+    inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
-    @scala.inline
-    def setStrong(value: String): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+    inline def setStrong(value: String): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+    inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
     
-    @scala.inline
-    def setWeak(value: String): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+    inline def setWeak(value: String): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
+    inline def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
   }
 }

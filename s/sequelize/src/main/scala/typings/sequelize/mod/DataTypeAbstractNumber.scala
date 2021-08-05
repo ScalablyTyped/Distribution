@@ -14,19 +14,15 @@ trait DataTypeAbstractNumber[T]
 }
 object DataTypeAbstractNumber {
   
-  @scala.inline
-  def apply[T](UNSIGNED: T, ZEROFILL: T, dialectTypes: String): DataTypeAbstractNumber[T] = {
+  inline def apply[T](UNSIGNED: T, ZEROFILL: T, dialectTypes: String): DataTypeAbstractNumber[T] = {
     val __obj = js.Dynamic.literal(UNSIGNED = UNSIGNED.asInstanceOf[js.Any], ZEROFILL = ZEROFILL.asInstanceOf[js.Any], dialectTypes = dialectTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTypeAbstractNumber[T]]
   }
   
-  @scala.inline
-  implicit class DataTypeAbstractNumberMutableBuilder[Self <: DataTypeAbstractNumber[?], T] (val x: Self & DataTypeAbstractNumber[T]) extends AnyVal {
+  extension [Self <: DataTypeAbstractNumber[?], T](x: Self & DataTypeAbstractNumber[T]) {
     
-    @scala.inline
-    def setUNSIGNED(value: T): Self = StObject.set(x, "UNSIGNED", value.asInstanceOf[js.Any])
+    inline def setUNSIGNED(value: T): Self = StObject.set(x, "UNSIGNED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZEROFILL(value: T): Self = StObject.set(x, "ZEROFILL", value.asInstanceOf[js.Any])
+    inline def setZEROFILL(value: T): Self = StObject.set(x, "ZEROFILL", value.asInstanceOf[js.Any])
   }
 }

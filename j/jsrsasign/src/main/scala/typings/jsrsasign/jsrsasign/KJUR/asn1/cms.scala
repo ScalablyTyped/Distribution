@@ -58,8 +58,7 @@ object cms {
        with ASN1Object
   object Attribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -106,8 +105,7 @@ object cms {
   }
   object AttributeList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Attribute => Unit,
       clear: () => Unit,
       getEncodedHex: () => String,
@@ -125,17 +123,13 @@ object cms {
       __obj.asInstanceOf[AttributeList]
     }
     
-    @scala.inline
-    implicit class AttributeListMutableBuilder[Self <: AttributeList] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeList](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Attribute => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Attribute => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     }
   }
   
@@ -163,8 +157,7 @@ object cms {
   }
   object ContentInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -180,11 +173,9 @@ object cms {
       __obj.asInstanceOf[ContentInfo]
     }
     
-    @scala.inline
-    implicit class ContentInfoMutableBuilder[Self <: ContentInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ContentInfo](x: Self) {
       
-      @scala.inline
-      def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
+      inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
     }
   }
   
@@ -265,8 +256,7 @@ object cms {
   }
   object IssuerAndSerialNumber {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -282,11 +272,9 @@ object cms {
       __obj.asInstanceOf[IssuerAndSerialNumber]
     }
     
-    @scala.inline
-    implicit class IssuerAndSerialNumberMutableBuilder[Self <: IssuerAndSerialNumber] (val x: Self) extends AnyVal {
+    extension [Self <: IssuerAndSerialNumber](x: Self) {
       
-      @scala.inline
-      def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
+      inline def setSetByCertPEM(value: String => Unit): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1(value))
     }
   }
   
@@ -352,8 +340,7 @@ object cms {
   }
   object SignedData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addCertificatesByPEM: String => Unit,
       getContentInfo: () => ContentInfo,
       getContentInfoEncodedHex: () => String,
@@ -373,26 +360,19 @@ object cms {
       __obj.asInstanceOf[SignedData]
     }
     
-    @scala.inline
-    implicit class SignedDataMutableBuilder[Self <: SignedData] (val x: Self) extends AnyVal {
+    extension [Self <: SignedData](x: Self) {
       
-      @scala.inline
-      def setAddCertificatesByPEM(value: String => Unit): Self = StObject.set(x, "addCertificatesByPEM", js.Any.fromFunction1(value))
+      inline def setAddCertificatesByPEM(value: String => Unit): Self = StObject.set(x, "addCertificatesByPEM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContentInfo(value: () => ContentInfo): Self = StObject.set(x, "getContentInfo", js.Any.fromFunction0(value))
+      inline def setGetContentInfo(value: () => ContentInfo): Self = StObject.set(x, "getContentInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContentInfoEncodedHex(value: () => String): Self = StObject.set(x, "getContentInfoEncodedHex", js.Any.fromFunction0(value))
+      inline def setGetContentInfoEncodedHex(value: () => String): Self = StObject.set(x, "getContentInfoEncodedHex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPEM(value: () => String): Self = StObject.set(x, "getPEM", js.Any.fromFunction0(value))
+      inline def setGetPEM(value: () => String): Self = StObject.set(x, "getPEM", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSignerInfoList(value: js.Array[SignerInfo]): Self = StObject.set(x, "signerInfoList", value.asInstanceOf[js.Any])
+      inline def setSignerInfoList(value: js.Array[SignerInfo]): Self = StObject.set(x, "signerInfoList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerInfoListVarargs(value: SignerInfo*): Self = StObject.set(x, "signerInfoList", js.Array(value :_*))
+      inline def setSignerInfoListVarargs(value: SignerInfo*): Self = StObject.set(x, "signerInfoList", js.Array(value :_*))
     }
   }
   
@@ -491,8 +471,7 @@ object cms {
   }
   object SigningCertificate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -508,11 +487,9 @@ object cms {
       __obj.asInstanceOf[SigningCertificate]
     }
     
-    @scala.inline
-    implicit class SigningCertificateMutableBuilder[Self <: SigningCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: SigningCertificate](x: Self) {
       
-      @scala.inline
-      def setSetCerts(value: js.Array[String] => Unit): Self = StObject.set(x, "setCerts", js.Any.fromFunction1(value))
+      inline def setSetCerts(value: js.Array[String] => Unit): Self = StObject.set(x, "setCerts", js.Any.fromFunction1(value))
     }
   }
   
@@ -553,8 +530,7 @@ object cms {
   }
   object SigningCertificateV2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getEncodedHex: () => String,
       getFreshValueHex: () => String,
       getLengthHexFromValue: () => String,
@@ -570,11 +546,9 @@ object cms {
       __obj.asInstanceOf[SigningCertificateV2]
     }
     
-    @scala.inline
-    implicit class SigningCertificateV2MutableBuilder[Self <: SigningCertificateV2] (val x: Self) extends AnyVal {
+    extension [Self <: SigningCertificateV2](x: Self) {
       
-      @scala.inline
-      def setSetCerts(value: (js.Array[String], String) => Unit): Self = StObject.set(x, "setCerts", js.Any.fromFunction2(value))
+      inline def setSetCerts(value: (js.Array[String], String) => Unit): Self = StObject.set(x, "setCerts", js.Any.fromFunction2(value))
     }
   }
   

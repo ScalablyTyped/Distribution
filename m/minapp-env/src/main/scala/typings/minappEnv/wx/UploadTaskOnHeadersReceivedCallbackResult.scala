@@ -11,16 +11,13 @@ trait UploadTaskOnHeadersReceivedCallbackResult extends StObject {
 }
 object UploadTaskOnHeadersReceivedCallbackResult {
   
-  @scala.inline
-  def apply(header: js.Object): UploadTaskOnHeadersReceivedCallbackResult = {
+  inline def apply(header: js.Object): UploadTaskOnHeadersReceivedCallbackResult = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadTaskOnHeadersReceivedCallbackResult]
   }
   
-  @scala.inline
-  implicit class UploadTaskOnHeadersReceivedCallbackResultMutableBuilder[Self <: UploadTaskOnHeadersReceivedCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: UploadTaskOnHeadersReceivedCallbackResult](x: Self) {
     
-    @scala.inline
-    def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

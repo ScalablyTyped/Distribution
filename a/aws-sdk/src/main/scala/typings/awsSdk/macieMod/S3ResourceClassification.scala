@@ -23,25 +23,19 @@ trait S3ResourceClassification extends StObject {
 }
 object S3ResourceClassification {
   
-  @scala.inline
-  def apply(bucketName: BucketName, classificationType: ClassificationType): S3ResourceClassification = {
+  inline def apply(bucketName: BucketName, classificationType: ClassificationType): S3ResourceClassification = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], classificationType = classificationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ResourceClassification]
   }
   
-  @scala.inline
-  implicit class S3ResourceClassificationMutableBuilder[Self <: S3ResourceClassification] (val x: Self) extends AnyVal {
+  extension [Self <: S3ResourceClassification](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationType(value: ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
+    inline def setClassificationType(value: ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

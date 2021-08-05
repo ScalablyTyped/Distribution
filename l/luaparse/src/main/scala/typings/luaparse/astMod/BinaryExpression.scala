@@ -36,8 +36,7 @@ trait BinaryExpression
 }
 object BinaryExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     left: Expression,
     operator: Plussign | `-_` | Asterisk | Percentsign | ^ | Slash | SlashSlash | Ampersand | Verticalline | Tilde | LessthansignLessthansign | GreaterthansignGreaterthansign | DotDot | TildeEqualssign | EqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign,
     right: Expression
@@ -47,18 +46,14 @@ object BinaryExpression {
     __obj.asInstanceOf[BinaryExpression]
   }
   
-  @scala.inline
-  implicit class BinaryExpressionMutableBuilder[Self <: BinaryExpression] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryExpression](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(
+    inline def setOperator(
       value: Plussign | `-_` | Asterisk | Percentsign | ^ | Slash | SlashSlash | Ampersand | Verticalline | Tilde | LessthansignLessthansign | GreaterthansignGreaterthansign | DotDot | TildeEqualssign | EqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign
     ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

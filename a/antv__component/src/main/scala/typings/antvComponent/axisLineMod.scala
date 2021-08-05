@@ -16,7 +16,7 @@ object axisLineMod {
   trait Line
     extends typings.antvComponent.baseMod.default[LineAxisCfg] {
     
-    var autoProcessOverlap: js.Any = js.native
+    /* private */ var autoProcessOverlap: js.Any = js.native
     
     /* protected */ def getAxisVector(): js.Tuple2[Double, Double] = js.native
     
@@ -24,7 +24,7 @@ object axisLineMod {
       * 获取 labelGroup 的选择长度
       * @param {IGroup}
       */
-    var getRotateLength: js.Any = js.native
+    /* private */ var getRotateLength: js.Any = js.native
     
     /* protected */ def getSideVector(offset: Double): vec2 = js.native
     

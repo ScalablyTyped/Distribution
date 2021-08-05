@@ -29,46 +29,33 @@ trait GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1SearchCatalogRequestScopeMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1SearchCatalogRequestScope](x: Self) {
     
-    @scala.inline
-    def setIncludeGcpPublicDatasets(value: Boolean): Self = StObject.set(x, "includeGcpPublicDatasets", value.asInstanceOf[js.Any])
+    inline def setIncludeGcpPublicDatasets(value: Boolean): Self = StObject.set(x, "includeGcpPublicDatasets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGcpPublicDatasetsUndefined: Self = StObject.set(x, "includeGcpPublicDatasets", js.undefined)
+    inline def setIncludeGcpPublicDatasetsUndefined: Self = StObject.set(x, "includeGcpPublicDatasets", js.undefined)
     
-    @scala.inline
-    def setIncludeOrgIds(value: js.Array[String]): Self = StObject.set(x, "includeOrgIds", value.asInstanceOf[js.Any])
+    inline def setIncludeOrgIds(value: js.Array[String]): Self = StObject.set(x, "includeOrgIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOrgIdsUndefined: Self = StObject.set(x, "includeOrgIds", js.undefined)
+    inline def setIncludeOrgIdsUndefined: Self = StObject.set(x, "includeOrgIds", js.undefined)
     
-    @scala.inline
-    def setIncludeOrgIdsVarargs(value: String*): Self = StObject.set(x, "includeOrgIds", js.Array(value :_*))
+    inline def setIncludeOrgIdsVarargs(value: String*): Self = StObject.set(x, "includeOrgIds", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeProjectIds(value: js.Array[String]): Self = StObject.set(x, "includeProjectIds", value.asInstanceOf[js.Any])
+    inline def setIncludeProjectIds(value: js.Array[String]): Self = StObject.set(x, "includeProjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeProjectIdsUndefined: Self = StObject.set(x, "includeProjectIds", js.undefined)
+    inline def setIncludeProjectIdsUndefined: Self = StObject.set(x, "includeProjectIds", js.undefined)
     
-    @scala.inline
-    def setIncludeProjectIdsVarargs(value: String*): Self = StObject.set(x, "includeProjectIds", js.Array(value :_*))
+    inline def setIncludeProjectIdsVarargs(value: String*): Self = StObject.set(x, "includeProjectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRestrictedLocations(value: js.Array[String]): Self = StObject.set(x, "restrictedLocations", value.asInstanceOf[js.Any])
+    inline def setRestrictedLocations(value: js.Array[String]): Self = StObject.set(x, "restrictedLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedLocationsUndefined: Self = StObject.set(x, "restrictedLocations", js.undefined)
+    inline def setRestrictedLocationsUndefined: Self = StObject.set(x, "restrictedLocations", js.undefined)
     
-    @scala.inline
-    def setRestrictedLocationsVarargs(value: String*): Self = StObject.set(x, "restrictedLocations", js.Array(value :_*))
+    inline def setRestrictedLocationsVarargs(value: String*): Self = StObject.set(x, "restrictedLocations", js.Array(value :_*))
   }
 }

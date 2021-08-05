@@ -13,17 +13,14 @@ object anon {
   }
   object HistogramConstr {
     
-    @scala.inline
-    def apply(histogramConstr: HistogramConstructor): HistogramConstr = {
+    inline def apply(histogramConstr: HistogramConstructor): HistogramConstr = {
       val __obj = js.Dynamic.literal(histogramConstr = histogramConstr.asInstanceOf[js.Any])
       __obj.asInstanceOf[HistogramConstr]
     }
     
-    @scala.inline
-    implicit class HistogramConstrMutableBuilder[Self <: HistogramConstr] (val x: Self) extends AnyVal {
+    extension [Self <: HistogramConstr](x: Self) {
       
-      @scala.inline
-      def setHistogramConstr(value: HistogramConstructor): Self = StObject.set(x, "histogramConstr", value.asInstanceOf[js.Any])
+      inline def setHistogramConstr(value: HistogramConstructor): Self = StObject.set(x, "histogramConstr", value.asInstanceOf[js.Any])
     }
   }
 }

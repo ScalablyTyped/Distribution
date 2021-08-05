@@ -18,28 +18,21 @@ trait LoginInformation extends StObject {
 }
 object LoginInformation {
   
-  @scala.inline
-  def apply(): LoginInformation = {
+  inline def apply(): LoginInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoginInformation]
   }
   
-  @scala.inline
-  implicit class LoginInformationMutableBuilder[Self <: LoginInformation] (val x: Self) extends AnyVal {
+  extension [Self <: LoginInformation](x: Self) {
     
-    @scala.inline
-    def setApiPassword(value: String): Self = StObject.set(x, "apiPassword", value.asInstanceOf[js.Any])
+    inline def setApiPassword(value: String): Self = StObject.set(x, "apiPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiPasswordUndefined: Self = StObject.set(x, "apiPassword", js.undefined)
+    inline def setApiPasswordUndefined: Self = StObject.set(x, "apiPassword", js.undefined)
     
-    @scala.inline
-    def setLoginAccounts(value: js.Array[LoginAccount]): Self = StObject.set(x, "loginAccounts", value.asInstanceOf[js.Any])
+    inline def setLoginAccounts(value: js.Array[LoginAccount]): Self = StObject.set(x, "loginAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginAccountsUndefined: Self = StObject.set(x, "loginAccounts", js.undefined)
+    inline def setLoginAccountsUndefined: Self = StObject.set(x, "loginAccounts", js.undefined)
     
-    @scala.inline
-    def setLoginAccountsVarargs(value: LoginAccount*): Self = StObject.set(x, "loginAccounts", js.Array(value :_*))
+    inline def setLoginAccountsVarargs(value: LoginAccount*): Self = StObject.set(x, "loginAccounts", js.Array(value :_*))
   }
 }

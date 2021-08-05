@@ -49,8 +49,7 @@ trait HeatMapLayer
 }
 object HeatMapLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => Unit,
     dispose: () => Unit,
     getVisible: () => Boolean,
@@ -64,28 +63,20 @@ object HeatMapLayer {
     __obj.asInstanceOf[HeatMapLayer]
   }
   
-  @scala.inline
-  implicit class HeatMapLayerMutableBuilder[Self <: HeatMapLayer] (val x: Self) extends AnyVal {
+  extension [Self <: HeatMapLayer](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLocations(value: js.Array[Location | Pushpin] => Unit): Self = StObject.set(x, "setLocations", js.Any.fromFunction1(value))
+    inline def setSetLocations(value: js.Array[Location | Pushpin] => Unit): Self = StObject.set(x, "setLocations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOptions(value: IHeatMapLayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: IHeatMapLayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

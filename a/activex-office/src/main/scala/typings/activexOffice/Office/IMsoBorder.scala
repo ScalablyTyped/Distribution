@@ -16,7 +16,7 @@ trait IMsoBorder extends StObject {
   
   var LineStyle: js.Any
   
-  @JSName("Office.IMsoBorder_typekey")
+  /* private */ @JSName("Office.IMsoBorder_typekey")
   var OfficeDotIMsoBorder_typekey: IMsoBorder
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait IMsoBorder extends StObject {
 }
 object IMsoBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Color: js.Any,
     ColorIndex: js.Any,
@@ -41,31 +40,22 @@ object IMsoBorder {
     __obj.asInstanceOf[IMsoBorder]
   }
   
-  @scala.inline
-  implicit class IMsoBorderMutableBuilder[Self <: IMsoBorder] (val x: Self) extends AnyVal {
+  extension [Self <: IMsoBorder](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyle(value: js.Any): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: js.Any): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotIMsoBorder_typekey(value: IMsoBorder): Self = StObject.set(x, "Office.IMsoBorder_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotIMsoBorder_typekey(value: IMsoBorder): Self = StObject.set(x, "Office.IMsoBorder_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: js.Any): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: js.Any): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
   }
 }

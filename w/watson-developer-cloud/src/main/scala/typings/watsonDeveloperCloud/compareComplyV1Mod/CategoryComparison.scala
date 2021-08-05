@@ -12,19 +12,15 @@ trait CategoryComparison extends StObject {
 }
 object CategoryComparison {
   
-  @scala.inline
-  def apply(): CategoryComparison = {
+  inline def apply(): CategoryComparison = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CategoryComparison]
   }
   
-  @scala.inline
-  implicit class CategoryComparisonMutableBuilder[Self <: CategoryComparison] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryComparison](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

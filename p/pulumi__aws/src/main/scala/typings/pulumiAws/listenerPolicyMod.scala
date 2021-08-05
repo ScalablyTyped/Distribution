@@ -56,21 +56,16 @@ object listenerPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerPolicyState): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ListenerPolicyState, opts: CustomResourceOptions): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
+    inline def get(name: String, id: Input[ID]): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
+    inline def get(name: String, id: Input[ID], state: ListenerPolicyState): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
+    inline def get(name: String, id: Input[ID], state: ListenerPolicyState, opts: CustomResourceOptions): ListenerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ListenerPolicy]
     
     /**
       * Returns true if the given object is an instance of ListenerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ Boolean]
   }
   
   trait ListenerPolicyArgs extends StObject {
@@ -92,29 +87,22 @@ object listenerPolicyMod {
   }
   object ListenerPolicyArgs {
     
-    @scala.inline
-    def apply(loadBalancerName: Input[String], loadBalancerPort: Input[Double]): ListenerPolicyArgs = {
+    inline def apply(loadBalancerName: Input[String], loadBalancerPort: Input[Double]): ListenerPolicyArgs = {
       val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any], loadBalancerPort = loadBalancerPort.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListenerPolicyArgs]
     }
     
-    @scala.inline
-    implicit class ListenerPolicyArgsMutableBuilder[Self <: ListenerPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerPort(value: Input[Double]): Self = StObject.set(x, "loadBalancerPort", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerPort(value: Input[Double]): Self = StObject.set(x, "loadBalancerPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "policyNames", value.asInstanceOf[js.Any])
+      inline def setPolicyNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "policyNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNamesUndefined: Self = StObject.set(x, "policyNames", js.undefined)
+      inline def setPolicyNamesUndefined: Self = StObject.set(x, "policyNames", js.undefined)
       
-      @scala.inline
-      def setPolicyNamesVarargs(value: Input[String]*): Self = StObject.set(x, "policyNames", js.Array(value :_*))
+      inline def setPolicyNamesVarargs(value: Input[String]*): Self = StObject.set(x, "policyNames", js.Array(value :_*))
     }
   }
   
@@ -137,35 +125,26 @@ object listenerPolicyMod {
   }
   object ListenerPolicyState {
     
-    @scala.inline
-    def apply(): ListenerPolicyState = {
+    inline def apply(): ListenerPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListenerPolicyState]
     }
     
-    @scala.inline
-    implicit class ListenerPolicyStateMutableBuilder[Self <: ListenerPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerPolicyState](x: Self) {
       
-      @scala.inline
-      def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerName(value: Input[String]): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
+      inline def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
       
-      @scala.inline
-      def setLoadBalancerPort(value: Input[Double]): Self = StObject.set(x, "loadBalancerPort", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerPort(value: Input[Double]): Self = StObject.set(x, "loadBalancerPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerPortUndefined: Self = StObject.set(x, "loadBalancerPort", js.undefined)
+      inline def setLoadBalancerPortUndefined: Self = StObject.set(x, "loadBalancerPort", js.undefined)
       
-      @scala.inline
-      def setPolicyNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "policyNames", value.asInstanceOf[js.Any])
+      inline def setPolicyNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "policyNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNamesUndefined: Self = StObject.set(x, "policyNames", js.undefined)
+      inline def setPolicyNamesUndefined: Self = StObject.set(x, "policyNames", js.undefined)
       
-      @scala.inline
-      def setPolicyNamesVarargs(value: Input[String]*): Self = StObject.set(x, "policyNames", js.Array(value :_*))
+      inline def setPolicyNamesVarargs(value: Input[String]*): Self = StObject.set(x, "policyNames", js.Array(value :_*))
     }
   }
 }

@@ -20,31 +20,23 @@ trait AzureBlobStorageData extends StObject {
 }
 object AzureBlobStorageData {
   
-  @scala.inline
-  def apply(): AzureBlobStorageData = {
+  inline def apply(): AzureBlobStorageData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AzureBlobStorageData]
   }
   
-  @scala.inline
-  implicit class AzureBlobStorageDataMutableBuilder[Self <: AzureBlobStorageData] (val x: Self) extends AnyVal {
+  extension [Self <: AzureBlobStorageData](x: Self) {
     
-    @scala.inline
-    def setAzureCredentials(value: AzureCredentials): Self = StObject.set(x, "azureCredentials", value.asInstanceOf[js.Any])
+    inline def setAzureCredentials(value: AzureCredentials): Self = StObject.set(x, "azureCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzureCredentialsUndefined: Self = StObject.set(x, "azureCredentials", js.undefined)
+    inline def setAzureCredentialsUndefined: Self = StObject.set(x, "azureCredentials", js.undefined)
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
+    inline def setStorageAccount(value: String): Self = StObject.set(x, "storageAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageAccountUndefined: Self = StObject.set(x, "storageAccount", js.undefined)
+    inline def setStorageAccountUndefined: Self = StObject.set(x, "storageAccount", js.undefined)
   }
 }

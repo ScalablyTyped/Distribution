@@ -13,16 +13,13 @@ trait StopPiiEntitiesDetectionJobRequest extends StObject {
 }
 object StopPiiEntitiesDetectionJobRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): StopPiiEntitiesDetectionJobRequest = {
+  inline def apply(JobId: JobId): StopPiiEntitiesDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopPiiEntitiesDetectionJobRequest]
   }
   
-  @scala.inline
-  implicit class StopPiiEntitiesDetectionJobRequestMutableBuilder[Self <: StopPiiEntitiesDetectionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopPiiEntitiesDetectionJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

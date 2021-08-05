@@ -32,37 +32,27 @@ trait NodeConfigStatus extends StObject {
 }
 object NodeConfigStatus {
   
-  @scala.inline
-  def apply(): NodeConfigStatus = {
+  inline def apply(): NodeConfigStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeConfigStatus]
   }
   
-  @scala.inline
-  implicit class NodeConfigStatusMutableBuilder[Self <: NodeConfigStatus] (val x: Self) extends AnyVal {
+  extension [Self <: NodeConfigStatus](x: Self) {
     
-    @scala.inline
-    def setActive(value: Input[NodeConfigSource]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Input[NodeConfigSource]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAssigned(value: Input[NodeConfigSource]): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
+    inline def setAssigned(value: Input[NodeConfigSource]): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedUndefined: Self = StObject.set(x, "assigned", js.undefined)
+    inline def setAssignedUndefined: Self = StObject.set(x, "assigned", js.undefined)
     
-    @scala.inline
-    def setError(value: Input[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Input[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setLastKnownGood(value: Input[NodeConfigSource]): Self = StObject.set(x, "lastKnownGood", value.asInstanceOf[js.Any])
+    inline def setLastKnownGood(value: Input[NodeConfigSource]): Self = StObject.set(x, "lastKnownGood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastKnownGoodUndefined: Self = StObject.set(x, "lastKnownGood", js.undefined)
+    inline def setLastKnownGoodUndefined: Self = StObject.set(x, "lastKnownGood", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait CreateManagedPrefixListResult extends StObject {
 }
 object CreateManagedPrefixListResult {
   
-  @scala.inline
-  def apply(): CreateManagedPrefixListResult = {
+  inline def apply(): CreateManagedPrefixListResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateManagedPrefixListResult]
   }
   
-  @scala.inline
-  implicit class CreateManagedPrefixListResultMutableBuilder[Self <: CreateManagedPrefixListResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateManagedPrefixListResult](x: Self) {
     
-    @scala.inline
-    def setPrefixList(value: ManagedPrefixList): Self = StObject.set(x, "PrefixList", value.asInstanceOf[js.Any])
+    inline def setPrefixList(value: ManagedPrefixList): Self = StObject.set(x, "PrefixList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListUndefined: Self = StObject.set(x, "PrefixList", js.undefined)
+    inline def setPrefixListUndefined: Self = StObject.set(x, "PrefixList", js.undefined)
   }
 }

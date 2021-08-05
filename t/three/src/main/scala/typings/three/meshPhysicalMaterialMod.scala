@@ -100,92 +100,64 @@ object meshPhysicalMaterialMod {
   }
   object MeshPhysicalMaterialParameters {
     
-    @scala.inline
-    def apply(): MeshPhysicalMaterialParameters = {
+    inline def apply(): MeshPhysicalMaterialParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MeshPhysicalMaterialParameters]
     }
     
-    @scala.inline
-    implicit class MeshPhysicalMaterialParametersMutableBuilder[Self <: MeshPhysicalMaterialParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MeshPhysicalMaterialParameters](x: Self) {
       
-      @scala.inline
-      def setClearcoat(value: Double): Self = StObject.set(x, "clearcoat", value.asInstanceOf[js.Any])
+      inline def setClearcoat(value: Double): Self = StObject.set(x, "clearcoat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearcoatMap(value: Texture): Self = StObject.set(x, "clearcoatMap", value.asInstanceOf[js.Any])
+      inline def setClearcoatMap(value: Texture): Self = StObject.set(x, "clearcoatMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearcoatMapNull: Self = StObject.set(x, "clearcoatMap", null)
+      inline def setClearcoatMapNull: Self = StObject.set(x, "clearcoatMap", null)
       
-      @scala.inline
-      def setClearcoatMapUndefined: Self = StObject.set(x, "clearcoatMap", js.undefined)
+      inline def setClearcoatMapUndefined: Self = StObject.set(x, "clearcoatMap", js.undefined)
       
-      @scala.inline
-      def setClearcoatNormalMap(value: Texture): Self = StObject.set(x, "clearcoatNormalMap", value.asInstanceOf[js.Any])
+      inline def setClearcoatNormalMap(value: Texture): Self = StObject.set(x, "clearcoatNormalMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearcoatNormalMapNull: Self = StObject.set(x, "clearcoatNormalMap", null)
+      inline def setClearcoatNormalMapNull: Self = StObject.set(x, "clearcoatNormalMap", null)
       
-      @scala.inline
-      def setClearcoatNormalMapUndefined: Self = StObject.set(x, "clearcoatNormalMap", js.undefined)
+      inline def setClearcoatNormalMapUndefined: Self = StObject.set(x, "clearcoatNormalMap", js.undefined)
       
-      @scala.inline
-      def setClearcoatNormalScale(value: Vector2): Self = StObject.set(x, "clearcoatNormalScale", value.asInstanceOf[js.Any])
+      inline def setClearcoatNormalScale(value: Vector2): Self = StObject.set(x, "clearcoatNormalScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearcoatNormalScaleUndefined: Self = StObject.set(x, "clearcoatNormalScale", js.undefined)
+      inline def setClearcoatNormalScaleUndefined: Self = StObject.set(x, "clearcoatNormalScale", js.undefined)
       
-      @scala.inline
-      def setClearcoatRoughness(value: Double): Self = StObject.set(x, "clearcoatRoughness", value.asInstanceOf[js.Any])
+      inline def setClearcoatRoughness(value: Double): Self = StObject.set(x, "clearcoatRoughness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearcoatRoughnessMap(value: Texture): Self = StObject.set(x, "clearcoatRoughnessMap", value.asInstanceOf[js.Any])
+      inline def setClearcoatRoughnessMap(value: Texture): Self = StObject.set(x, "clearcoatRoughnessMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearcoatRoughnessMapNull: Self = StObject.set(x, "clearcoatRoughnessMap", null)
+      inline def setClearcoatRoughnessMapNull: Self = StObject.set(x, "clearcoatRoughnessMap", null)
       
-      @scala.inline
-      def setClearcoatRoughnessMapUndefined: Self = StObject.set(x, "clearcoatRoughnessMap", js.undefined)
+      inline def setClearcoatRoughnessMapUndefined: Self = StObject.set(x, "clearcoatRoughnessMap", js.undefined)
       
-      @scala.inline
-      def setClearcoatRoughnessUndefined: Self = StObject.set(x, "clearcoatRoughness", js.undefined)
+      inline def setClearcoatRoughnessUndefined: Self = StObject.set(x, "clearcoatRoughness", js.undefined)
       
-      @scala.inline
-      def setClearcoatUndefined: Self = StObject.set(x, "clearcoat", js.undefined)
+      inline def setClearcoatUndefined: Self = StObject.set(x, "clearcoat", js.undefined)
       
-      @scala.inline
-      def setIor(value: Double): Self = StObject.set(x, "ior", value.asInstanceOf[js.Any])
+      inline def setIor(value: Double): Self = StObject.set(x, "ior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIorUndefined: Self = StObject.set(x, "ior", js.undefined)
+      inline def setIorUndefined: Self = StObject.set(x, "ior", js.undefined)
       
-      @scala.inline
-      def setReflectivity(value: Double): Self = StObject.set(x, "reflectivity", value.asInstanceOf[js.Any])
+      inline def setReflectivity(value: Double): Self = StObject.set(x, "reflectivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReflectivityUndefined: Self = StObject.set(x, "reflectivity", js.undefined)
+      inline def setReflectivityUndefined: Self = StObject.set(x, "reflectivity", js.undefined)
       
-      @scala.inline
-      def setSheen(value: Color): Self = StObject.set(x, "sheen", value.asInstanceOf[js.Any])
+      inline def setSheen(value: Color): Self = StObject.set(x, "sheen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheenUndefined: Self = StObject.set(x, "sheen", js.undefined)
+      inline def setSheenUndefined: Self = StObject.set(x, "sheen", js.undefined)
       
-      @scala.inline
-      def setTransmission(value: Double): Self = StObject.set(x, "transmission", value.asInstanceOf[js.Any])
+      inline def setTransmission(value: Double): Self = StObject.set(x, "transmission", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransmissionMap(value: Texture): Self = StObject.set(x, "transmissionMap", value.asInstanceOf[js.Any])
+      inline def setTransmissionMap(value: Texture): Self = StObject.set(x, "transmissionMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransmissionMapNull: Self = StObject.set(x, "transmissionMap", null)
+      inline def setTransmissionMapNull: Self = StObject.set(x, "transmissionMap", null)
       
-      @scala.inline
-      def setTransmissionMapUndefined: Self = StObject.set(x, "transmissionMap", js.undefined)
+      inline def setTransmissionMapUndefined: Self = StObject.set(x, "transmissionMap", js.undefined)
       
-      @scala.inline
-      def setTransmissionUndefined: Self = StObject.set(x, "transmission", js.undefined)
+      inline def setTransmissionUndefined: Self = StObject.set(x, "transmission", js.undefined)
     }
   }
 }

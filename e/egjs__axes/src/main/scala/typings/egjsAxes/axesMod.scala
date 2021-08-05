@@ -39,56 +39,47 @@ object axesMod {
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_ALL")
     @js.native
     def DIRECTION_ALL: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_ALL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_ALL")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_ALL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_ALL")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_DOWN")
     @js.native
     def DIRECTION_DOWN: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_DOWN_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_DOWN")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_DOWN_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_DOWN")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_HORIZONTAL")
     @js.native
     def DIRECTION_HORIZONTAL: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_HORIZONTAL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_HORIZONTAL")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_HORIZONTAL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_HORIZONTAL")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_LEFT")
     @js.native
     def DIRECTION_LEFT: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_LEFT_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_LEFT")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_LEFT_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_LEFT")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_NONE")
     @js.native
     def DIRECTION_NONE: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_NONE_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_NONE")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_NONE_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_NONE")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_RIGHT")
     @js.native
     def DIRECTION_RIGHT: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_RIGHT_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_RIGHT")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_RIGHT_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_RIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_UP")
     @js.native
     def DIRECTION_UP: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_UP_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_UP")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_UP_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_UP")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.DIRECTION_VERTICAL")
     @js.native
     def DIRECTION_VERTICAL: DIRECTION = js.native
-    @scala.inline
-    def DIRECTION_VERTICAL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_VERTICAL")(x.asInstanceOf[js.Any])
+    inline def DIRECTION_VERTICAL_=(x: DIRECTION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIRECTION_VERTICAL")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.PanInput")
     @js.native
     def PanInput: TypeofPanInput = js.native
-    @scala.inline
-    def PanInput_=(x: TypeofPanInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PanInput")(x.asInstanceOf[js.Any])
+    inline def PanInput_=(x: TypeofPanInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PanInput")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.PinchInput")
     @js.native
@@ -97,20 +88,17 @@ object axesMod {
         /* options */ js.UndefOr[PinchInputOption], 
         typings.egjsAxes.pinchInputMod.PinchInput
       ] = js.native
-    @scala.inline
-    def PinchInput_=(x: Instantiable2[/* el */ js.Any, /* options */ js.UndefOr[PinchInputOption], PinchInput]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PinchInput")(x.asInstanceOf[js.Any])
+    inline def PinchInput_=(x: Instantiable2[/* el */ js.Any, /* options */ js.UndefOr[PinchInputOption], PinchInput]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PinchInput")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.TRANSFORM")
     @js.native
     def TRANSFORM: String = js.native
-    @scala.inline
-    def TRANSFORM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSFORM")(x.asInstanceOf[js.Any])
+    inline def TRANSFORM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSFORM")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
     @JSImport("@egjs/axes/Axes", "default.WheelInput")
     @js.native
@@ -119,26 +107,25 @@ object axesMod {
         /* options */ js.UndefOr[WheelInputOption], 
         typings.egjsAxes.wheelInputMod.WheelInput
       ] = js.native
-    @scala.inline
-    def WheelInput_=(x: Instantiable2[/* el */ js.Any, /* options */ js.UndefOr[WheelInputOption], WheelInput]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelInput")(x.asInstanceOf[js.Any])
+    inline def WheelInput_=(x: Instantiable2[/* el */ js.Any, /* options */ js.UndefOr[WheelInputOption], WheelInput]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelInput")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait Axes extends ^ {
     
-    var _am: AnimationManager = js.native
+    /* private */ var _am: AnimationManager = js.native
     
-    var _axm: AxisManager = js.native
+    /* private */ var _axm: AxisManager = js.native
     
     /* private */ def _complementOptions(): js.Any = js.native
     
-    var _em: EventManager = js.native
+    /* private */ var _em: EventManager = js.native
     
-    var _inputs: js.Array[IInputType] = js.native
+    /* private */ var _inputs: js.Array[IInputType] = js.native
     
-    var _io: InputObserver = js.native
+    /* private */ var _io: InputObserver = js.native
     
-    var _itm: InterruptManager = js.native
+    /* private */ var _itm: InterruptManager = js.native
     
     var axis: StringDictionary[AxisOption] = js.native
     
@@ -180,44 +167,32 @@ object axesMod {
   }
   object AxesOption {
     
-    @scala.inline
-    def apply(): AxesOption = {
+    inline def apply(): AxesOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AxesOption]
     }
     
-    @scala.inline
-    implicit class AxesOptionMutableBuilder[Self <: AxesOption] (val x: Self) extends AnyVal {
+    extension [Self <: AxesOption](x: Self) {
       
-      @scala.inline
-      def setDeceleration(value: Double): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
+      inline def setDeceleration(value: Double): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecelerationUndefined: Self = StObject.set(x, "deceleration", js.undefined)
+      inline def setDecelerationUndefined: Self = StObject.set(x, "deceleration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: /* x */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
+      inline def setEasing(value: /* x */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setInterruptable(value: Boolean): Self = StObject.set(x, "interruptable", value.asInstanceOf[js.Any])
+      inline def setInterruptable(value: Boolean): Self = StObject.set(x, "interruptable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterruptableUndefined: Self = StObject.set(x, "interruptable", js.undefined)
+      inline def setInterruptableUndefined: Self = StObject.set(x, "interruptable", js.undefined)
       
-      @scala.inline
-      def setMaximumDuration(value: Double): Self = StObject.set(x, "maximumDuration", value.asInstanceOf[js.Any])
+      inline def setMaximumDuration(value: Double): Self = StObject.set(x, "maximumDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumDurationUndefined: Self = StObject.set(x, "maximumDuration", js.undefined)
+      inline def setMaximumDurationUndefined: Self = StObject.set(x, "maximumDuration", js.undefined)
       
-      @scala.inline
-      def setMinimumDuration(value: Double): Self = StObject.set(x, "minimumDuration", value.asInstanceOf[js.Any])
+      inline def setMinimumDuration(value: Double): Self = StObject.set(x, "minimumDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumDurationUndefined: Self = StObject.set(x, "minimumDuration", js.undefined)
+      inline def setMinimumDurationUndefined: Self = StObject.set(x, "minimumDuration", js.undefined)
     }
   }
 }

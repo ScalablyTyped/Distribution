@@ -15,22 +15,17 @@ trait GamepadButton extends StObject {
 }
 object GamepadButton {
   
-  @scala.inline
-  def apply(pressed: scala.Boolean, touched: scala.Boolean, value: Double): GamepadButton = {
+  inline def apply(pressed: scala.Boolean, touched: scala.Boolean, value: Double): GamepadButton = {
     val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadButton]
   }
   
-  @scala.inline
-  implicit class GamepadButtonMutableBuilder[Self <: GamepadButton] (val x: Self) extends AnyVal {
+  extension [Self <: GamepadButton](x: Self) {
     
-    @scala.inline
-    def setPressed(value: scala.Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+    inline def setPressed(value: scala.Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouched(value: scala.Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+    inline def setTouched(value: scala.Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

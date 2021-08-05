@@ -18,32 +18,24 @@ object typesMod {
   }
   object PageConfig {
     
-    @scala.inline
-    def apply(): PageConfig = {
+    inline def apply(): PageConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageConfig]
     }
     
-    @scala.inline
-    implicit class PageConfigMutableBuilder[Self <: PageConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PageConfig](x: Self) {
       
-      @scala.inline
-      def setAmp(value: Boolean | hybrid): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
+      inline def setAmp(value: Boolean | hybrid): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmpUndefined: Self = StObject.set(x, "amp", js.undefined)
+      inline def setAmpUndefined: Self = StObject.set(x, "amp", js.undefined)
       
-      @scala.inline
-      def setApi(value: BodyParser): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: BodyParser): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+      inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
       
-      @scala.inline
-      def setExperimentalPrerender(value: Boolean): Self = StObject.set(x, "experimentalPrerender", value.asInstanceOf[js.Any])
+      inline def setExperimentalPrerender(value: Boolean): Self = StObject.set(x, "experimentalPrerender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimentalPrerenderUndefined: Self = StObject.set(x, "experimentalPrerender", js.undefined)
+      inline def setExperimentalPrerenderUndefined: Self = StObject.set(x, "experimentalPrerender", js.undefined)
     }
   }
 }

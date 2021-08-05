@@ -12,19 +12,15 @@ trait SmartClientOptions
 }
 object SmartClientOptions {
   
-  @scala.inline
-  def apply(sandboxId: String): SmartClientOptions = {
+  inline def apply(sandboxId: String): SmartClientOptions = {
     val __obj = js.Dynamic.literal(sandboxId = sandboxId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartClientOptions]
   }
   
-  @scala.inline
-  implicit class SmartClientOptionsMutableBuilder[Self <: SmartClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SmartClientOptions](x: Self) {
     
-    @scala.inline
-    def setDeployment(value: SmartClientDeployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: SmartClientDeployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+    inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
   }
 }

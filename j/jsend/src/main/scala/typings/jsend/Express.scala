@@ -18,17 +18,14 @@ object Express {
   }
   object Response {
     
-    @scala.inline
-    def apply(jsend: jsendExpress): Response = {
+    inline def apply(jsend: jsendExpress): Response = {
       val __obj = js.Dynamic.literal(jsend = jsend.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setJsend(value: jsendExpress): Self = StObject.set(x, "jsend", value.asInstanceOf[js.Any])
+      inline def setJsend(value: jsendExpress): Self = StObject.set(x, "jsend", value.asInstanceOf[js.Any])
     }
   }
 }

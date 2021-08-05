@@ -15,8 +15,7 @@ object deprecationsMod {
   @js.native
   val DEPRECATED_OPTS: OptionReplacementsList = js.native
   
-  @scala.inline
-  def logDeprecation(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDeprecation")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logDeprecation(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDeprecation")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait OptionReplacement extends StObject {
     
@@ -30,38 +29,28 @@ object deprecationsMod {
   }
   object OptionReplacement {
     
-    @scala.inline
-    def apply(): OptionReplacement = {
+    inline def apply(): OptionReplacement = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionReplacement]
     }
     
-    @scala.inline
-    implicit class OptionReplacementMutableBuilder[Self <: OptionReplacement] (val x: Self) extends AnyVal {
+    extension [Self <: OptionReplacement](x: Self) {
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setOnlyRename(value: Boolean): Self = StObject.set(x, "onlyRename", value.asInstanceOf[js.Any])
+      inline def setOnlyRename(value: Boolean): Self = StObject.set(x, "onlyRename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyRenameUndefined: Self = StObject.set(x, "onlyRename", js.undefined)
+      inline def setOnlyRenameUndefined: Self = StObject.set(x, "onlyRename", js.undefined)
       
-      @scala.inline
-      def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+      inline def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
+      inline def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
       
-      @scala.inline
-      def setSubOption(value: String): Self = StObject.set(x, "subOption", value.asInstanceOf[js.Any])
+      inline def setSubOption(value: String): Self = StObject.set(x, "subOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubOptionUndefined: Self = StObject.set(x, "subOption", js.undefined)
+      inline def setSubOptionUndefined: Self = StObject.set(x, "subOption", js.undefined)
     }
   }
   

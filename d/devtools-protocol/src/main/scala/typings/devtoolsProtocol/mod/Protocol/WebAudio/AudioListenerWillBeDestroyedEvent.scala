@@ -12,19 +12,15 @@ trait AudioListenerWillBeDestroyedEvent extends StObject {
 }
 object AudioListenerWillBeDestroyedEvent {
   
-  @scala.inline
-  def apply(contextId: GraphObjectId, listenerId: GraphObjectId): AudioListenerWillBeDestroyedEvent = {
+  inline def apply(contextId: GraphObjectId, listenerId: GraphObjectId): AudioListenerWillBeDestroyedEvent = {
     val __obj = js.Dynamic.literal(contextId = contextId.asInstanceOf[js.Any], listenerId = listenerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioListenerWillBeDestroyedEvent]
   }
   
-  @scala.inline
-  implicit class AudioListenerWillBeDestroyedEventMutableBuilder[Self <: AudioListenerWillBeDestroyedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AudioListenerWillBeDestroyedEvent](x: Self) {
     
-    @scala.inline
-    def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerId(value: GraphObjectId): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
+    inline def setListenerId(value: GraphObjectId): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
   }
 }

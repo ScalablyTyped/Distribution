@@ -43,8 +43,7 @@ object processMod extends Shortcut {
     @JSGlobal("process")
     @js.native
     def process: Process = js.native
-    @scala.inline
-    def process_=(x: Process): Unit = js.Dynamic.global.updateDynamic("process")(x.asInstanceOf[js.Any])
+    inline def process_=(x: Process): Unit = js.Dynamic.global.updateDynamic("process")(x.asInstanceOf[js.Any])
     
     object NodeJS {
       
@@ -58,20 +57,16 @@ object processMod extends Shortcut {
       }
       object CpuUsage {
         
-        @scala.inline
-        def apply(system: Double, user: Double): CpuUsage = {
+        inline def apply(system: Double, user: Double): CpuUsage = {
           val __obj = js.Dynamic.literal(system = system.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
           __obj.asInstanceOf[CpuUsage]
         }
         
-        @scala.inline
-        implicit class CpuUsageMutableBuilder[Self <: CpuUsage] (val x: Self) extends AnyVal {
+        extension [Self <: CpuUsage](x: Self) {
           
-          @scala.inline
-          def setSystem(value: Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+          inline def setSystem(value: Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUser(value: Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+          inline def setUser(value: Double): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         }
       }
       
@@ -85,17 +80,14 @@ object processMod extends Shortcut {
       }
       object Global {
         
-        @scala.inline
-        def apply(process: Process): Global = {
+        inline def apply(process: Process): Global = {
           val __obj = js.Dynamic.literal(process = process.asInstanceOf[js.Any])
           __obj.asInstanceOf[Global]
         }
         
-        @scala.inline
-        implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+        extension [Self <: Global](x: Self) {
           
-          @scala.inline
-          def setProcess(value: Process): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+          inline def setProcess(value: Process): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
         }
       }
       
@@ -122,29 +114,22 @@ object processMod extends Shortcut {
       }
       object MemoryUsage {
         
-        @scala.inline
-        def apply(arrayBuffers: Double, external: Double, heapTotal: Double, heapUsed: Double, rss: Double): MemoryUsage = {
+        inline def apply(arrayBuffers: Double, external: Double, heapTotal: Double, heapUsed: Double, rss: Double): MemoryUsage = {
           val __obj = js.Dynamic.literal(arrayBuffers = arrayBuffers.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], heapTotal = heapTotal.asInstanceOf[js.Any], heapUsed = heapUsed.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any])
           __obj.asInstanceOf[MemoryUsage]
         }
         
-        @scala.inline
-        implicit class MemoryUsageMutableBuilder[Self <: MemoryUsage] (val x: Self) extends AnyVal {
+        extension [Self <: MemoryUsage](x: Self) {
           
-          @scala.inline
-          def setArrayBuffers(value: Double): Self = StObject.set(x, "arrayBuffers", value.asInstanceOf[js.Any])
+          inline def setArrayBuffers(value: Double): Self = StObject.set(x, "arrayBuffers", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+          inline def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeapTotal(value: Double): Self = StObject.set(x, "heapTotal", value.asInstanceOf[js.Any])
+          inline def setHeapTotal(value: Double): Self = StObject.set(x, "heapTotal", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
+          inline def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+          inline def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
         }
       }
       
@@ -164,11 +149,9 @@ object processMod extends Shortcut {
       trait MultipleResolveType extends StObject
       object MultipleResolveType {
         
-        @scala.inline
-        def reject: typings.node.nodeStrings.reject = "reject".asInstanceOf[typings.node.nodeStrings.reject]
+        inline def reject: typings.node.nodeStrings.reject = "reject".asInstanceOf[typings.node.nodeStrings.reject]
         
-        @scala.inline
-        def resolve: typings.node.nodeStrings.resolve = "resolve".asInstanceOf[typings.node.nodeStrings.resolve]
+        inline def resolve: typings.node.nodeStrings.resolve = "resolve".asInstanceOf[typings.node.nodeStrings.resolve]
       }
       
       type NewListenerListener = js.Function2[
@@ -192,35 +175,25 @@ object processMod extends Shortcut {
       trait Platform extends StObject
       object Platform {
         
-        @scala.inline
-        def aix: typings.node.nodeStrings.aix = "aix".asInstanceOf[typings.node.nodeStrings.aix]
+        inline def aix: typings.node.nodeStrings.aix = "aix".asInstanceOf[typings.node.nodeStrings.aix]
         
-        @scala.inline
-        def android: typings.node.nodeStrings.android = "android".asInstanceOf[typings.node.nodeStrings.android]
+        inline def android: typings.node.nodeStrings.android = "android".asInstanceOf[typings.node.nodeStrings.android]
         
-        @scala.inline
-        def cygwin: typings.node.nodeStrings.cygwin = "cygwin".asInstanceOf[typings.node.nodeStrings.cygwin]
+        inline def cygwin: typings.node.nodeStrings.cygwin = "cygwin".asInstanceOf[typings.node.nodeStrings.cygwin]
         
-        @scala.inline
-        def darwin: typings.node.nodeStrings.darwin = "darwin".asInstanceOf[typings.node.nodeStrings.darwin]
+        inline def darwin: typings.node.nodeStrings.darwin = "darwin".asInstanceOf[typings.node.nodeStrings.darwin]
         
-        @scala.inline
-        def freebsd: typings.node.nodeStrings.freebsd = "freebsd".asInstanceOf[typings.node.nodeStrings.freebsd]
+        inline def freebsd: typings.node.nodeStrings.freebsd = "freebsd".asInstanceOf[typings.node.nodeStrings.freebsd]
         
-        @scala.inline
-        def linux: typings.node.nodeStrings.linux = "linux".asInstanceOf[typings.node.nodeStrings.linux]
+        inline def linux: typings.node.nodeStrings.linux = "linux".asInstanceOf[typings.node.nodeStrings.linux]
         
-        @scala.inline
-        def netbsd: typings.node.nodeStrings.netbsd = "netbsd".asInstanceOf[typings.node.nodeStrings.netbsd]
+        inline def netbsd: typings.node.nodeStrings.netbsd = "netbsd".asInstanceOf[typings.node.nodeStrings.netbsd]
         
-        @scala.inline
-        def openbsd: typings.node.nodeStrings.openbsd = "openbsd".asInstanceOf[typings.node.nodeStrings.openbsd]
+        inline def openbsd: typings.node.nodeStrings.openbsd = "openbsd".asInstanceOf[typings.node.nodeStrings.openbsd]
         
-        @scala.inline
-        def sunos: typings.node.nodeStrings.sunos = "sunos".asInstanceOf[typings.node.nodeStrings.sunos]
+        inline def sunos: typings.node.nodeStrings.sunos = "sunos".asInstanceOf[typings.node.nodeStrings.sunos]
         
-        @scala.inline
-        def win32: typings.node.nodeStrings.win32 = "win32".asInstanceOf[typings.node.nodeStrings.win32]
+        inline def win32: typings.node.nodeStrings.win32 = "win32".asInstanceOf[typings.node.nodeStrings.win32]
       }
       
       @js.native
@@ -601,41 +574,30 @@ object processMod extends Shortcut {
       }
       object ProcessRelease {
         
-        @scala.inline
-        def apply(name: java.lang.String): ProcessRelease = {
+        inline def apply(name: java.lang.String): ProcessRelease = {
           val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
           __obj.asInstanceOf[ProcessRelease]
         }
         
-        @scala.inline
-        implicit class ProcessReleaseMutableBuilder[Self <: ProcessRelease] (val x: Self) extends AnyVal {
+        extension [Self <: ProcessRelease](x: Self) {
           
-          @scala.inline
-          def setHeadersUrl(value: java.lang.String): Self = StObject.set(x, "headersUrl", value.asInstanceOf[js.Any])
+          inline def setHeadersUrl(value: java.lang.String): Self = StObject.set(x, "headersUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeadersUrlUndefined: Self = StObject.set(x, "headersUrl", js.undefined)
+          inline def setHeadersUrlUndefined: Self = StObject.set(x, "headersUrl", js.undefined)
           
-          @scala.inline
-          def setLibUrl(value: java.lang.String): Self = StObject.set(x, "libUrl", value.asInstanceOf[js.Any])
+          inline def setLibUrl(value: java.lang.String): Self = StObject.set(x, "libUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLibUrlUndefined: Self = StObject.set(x, "libUrl", js.undefined)
+          inline def setLibUrlUndefined: Self = StObject.set(x, "libUrl", js.undefined)
           
-          @scala.inline
-          def setLts(value: java.lang.String): Self = StObject.set(x, "lts", value.asInstanceOf[js.Any])
+          inline def setLts(value: java.lang.String): Self = StObject.set(x, "lts", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLtsUndefined: Self = StObject.set(x, "lts", js.undefined)
+          inline def setLtsUndefined: Self = StObject.set(x, "lts", js.undefined)
           
-          @scala.inline
-          def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSourceUrl(value: java.lang.String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+          inline def setSourceUrl(value: java.lang.String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
+          inline def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
         }
       }
       
@@ -731,8 +693,7 @@ object processMod extends Shortcut {
       }
       object ProcessVersions {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           ares: java.lang.String,
           http_parser: java.lang.String,
           modules: java.lang.String,
@@ -746,32 +707,23 @@ object processMod extends Shortcut {
           __obj.asInstanceOf[ProcessVersions]
         }
         
-        @scala.inline
-        implicit class ProcessVersionsMutableBuilder[Self <: ProcessVersions] (val x: Self) extends AnyVal {
+        extension [Self <: ProcessVersions](x: Self) {
           
-          @scala.inline
-          def setAres(value: java.lang.String): Self = StObject.set(x, "ares", value.asInstanceOf[js.Any])
+          inline def setAres(value: java.lang.String): Self = StObject.set(x, "ares", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHttp_parser(value: java.lang.String): Self = StObject.set(x, "http_parser", value.asInstanceOf[js.Any])
+          inline def setHttp_parser(value: java.lang.String): Self = StObject.set(x, "http_parser", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setModules(value: java.lang.String): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+          inline def setModules(value: java.lang.String): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNode(value: java.lang.String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+          inline def setNode(value: java.lang.String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOpenssl(value: java.lang.String): Self = StObject.set(x, "openssl", value.asInstanceOf[js.Any])
+          inline def setOpenssl(value: java.lang.String): Self = StObject.set(x, "openssl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUv(value: java.lang.String): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
+          inline def setUv(value: java.lang.String): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setV8(value: java.lang.String): Self = StObject.set(x, "v8", value.asInstanceOf[js.Any])
+          inline def setV8(value: java.lang.String): Self = StObject.set(x, "v8", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setZlib(value: java.lang.String): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
+          inline def setZlib(value: java.lang.String): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
         }
       }
       
@@ -824,8 +776,7 @@ object processMod extends Shortcut {
       }
       object ResourceUsage {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           fsRead: Double,
           fsWrite: Double,
           involuntaryContextSwitches: Double,
@@ -847,56 +798,39 @@ object processMod extends Shortcut {
           __obj.asInstanceOf[ResourceUsage]
         }
         
-        @scala.inline
-        implicit class ResourceUsageMutableBuilder[Self <: ResourceUsage] (val x: Self) extends AnyVal {
+        extension [Self <: ResourceUsage](x: Self) {
           
-          @scala.inline
-          def setFsRead(value: Double): Self = StObject.set(x, "fsRead", value.asInstanceOf[js.Any])
+          inline def setFsRead(value: Double): Self = StObject.set(x, "fsRead", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFsWrite(value: Double): Self = StObject.set(x, "fsWrite", value.asInstanceOf[js.Any])
+          inline def setFsWrite(value: Double): Self = StObject.set(x, "fsWrite", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInvoluntaryContextSwitches(value: Double): Self = StObject.set(x, "involuntaryContextSwitches", value.asInstanceOf[js.Any])
+          inline def setInvoluntaryContextSwitches(value: Double): Self = StObject.set(x, "involuntaryContextSwitches", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIpcReceived(value: Double): Self = StObject.set(x, "ipcReceived", value.asInstanceOf[js.Any])
+          inline def setIpcReceived(value: Double): Self = StObject.set(x, "ipcReceived", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIpcSent(value: Double): Self = StObject.set(x, "ipcSent", value.asInstanceOf[js.Any])
+          inline def setIpcSent(value: Double): Self = StObject.set(x, "ipcSent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMajorPageFault(value: Double): Self = StObject.set(x, "majorPageFault", value.asInstanceOf[js.Any])
+          inline def setMajorPageFault(value: Double): Self = StObject.set(x, "majorPageFault", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxRSS(value: Double): Self = StObject.set(x, "maxRSS", value.asInstanceOf[js.Any])
+          inline def setMaxRSS(value: Double): Self = StObject.set(x, "maxRSS", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinorPageFault(value: Double): Self = StObject.set(x, "minorPageFault", value.asInstanceOf[js.Any])
+          inline def setMinorPageFault(value: Double): Self = StObject.set(x, "minorPageFault", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSharedMemorySize(value: Double): Self = StObject.set(x, "sharedMemorySize", value.asInstanceOf[js.Any])
+          inline def setSharedMemorySize(value: Double): Self = StObject.set(x, "sharedMemorySize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSignalsCount(value: Double): Self = StObject.set(x, "signalsCount", value.asInstanceOf[js.Any])
+          inline def setSignalsCount(value: Double): Self = StObject.set(x, "signalsCount", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSwappedOut(value: Double): Self = StObject.set(x, "swappedOut", value.asInstanceOf[js.Any])
+          inline def setSwappedOut(value: Double): Self = StObject.set(x, "swappedOut", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSystemCPUTime(value: Double): Self = StObject.set(x, "systemCPUTime", value.asInstanceOf[js.Any])
+          inline def setSystemCPUTime(value: Double): Self = StObject.set(x, "systemCPUTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUnsharedDataSize(value: Double): Self = StObject.set(x, "unsharedDataSize", value.asInstanceOf[js.Any])
+          inline def setUnsharedDataSize(value: Double): Self = StObject.set(x, "unsharedDataSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUnsharedStackSize(value: Double): Self = StObject.set(x, "unsharedStackSize", value.asInstanceOf[js.Any])
+          inline def setUnsharedStackSize(value: Double): Self = StObject.set(x, "unsharedStackSize", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUserCPUTime(value: Double): Self = StObject.set(x, "userCPUTime", value.asInstanceOf[js.Any])
+          inline def setUserCPUTime(value: Double): Self = StObject.set(x, "userCPUTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVoluntaryContextSwitches(value: Double): Self = StObject.set(x, "voluntaryContextSwitches", value.asInstanceOf[js.Any])
+          inline def setVoluntaryContextSwitches(value: Double): Self = StObject.set(x, "voluntaryContextSwitches", value.asInstanceOf[js.Any])
         }
       }
       
@@ -942,116 +876,79 @@ object processMod extends Shortcut {
       trait Signals extends StObject
       object Signals {
         
-        @scala.inline
-        def SIGABRT: typings.node.nodeStrings.SIGABRT = "SIGABRT".asInstanceOf[typings.node.nodeStrings.SIGABRT]
+        inline def SIGABRT: typings.node.nodeStrings.SIGABRT = "SIGABRT".asInstanceOf[typings.node.nodeStrings.SIGABRT]
         
-        @scala.inline
-        def SIGALRM: typings.node.nodeStrings.SIGALRM = "SIGALRM".asInstanceOf[typings.node.nodeStrings.SIGALRM]
+        inline def SIGALRM: typings.node.nodeStrings.SIGALRM = "SIGALRM".asInstanceOf[typings.node.nodeStrings.SIGALRM]
         
-        @scala.inline
-        def SIGBREAK: typings.node.nodeStrings.SIGBREAK = "SIGBREAK".asInstanceOf[typings.node.nodeStrings.SIGBREAK]
+        inline def SIGBREAK: typings.node.nodeStrings.SIGBREAK = "SIGBREAK".asInstanceOf[typings.node.nodeStrings.SIGBREAK]
         
-        @scala.inline
-        def SIGBUS: typings.node.nodeStrings.SIGBUS = "SIGBUS".asInstanceOf[typings.node.nodeStrings.SIGBUS]
+        inline def SIGBUS: typings.node.nodeStrings.SIGBUS = "SIGBUS".asInstanceOf[typings.node.nodeStrings.SIGBUS]
         
-        @scala.inline
-        def SIGCHLD: typings.node.nodeStrings.SIGCHLD = "SIGCHLD".asInstanceOf[typings.node.nodeStrings.SIGCHLD]
+        inline def SIGCHLD: typings.node.nodeStrings.SIGCHLD = "SIGCHLD".asInstanceOf[typings.node.nodeStrings.SIGCHLD]
         
-        @scala.inline
-        def SIGCONT: typings.node.nodeStrings.SIGCONT = "SIGCONT".asInstanceOf[typings.node.nodeStrings.SIGCONT]
+        inline def SIGCONT: typings.node.nodeStrings.SIGCONT = "SIGCONT".asInstanceOf[typings.node.nodeStrings.SIGCONT]
         
-        @scala.inline
-        def SIGFPE: typings.node.nodeStrings.SIGFPE = "SIGFPE".asInstanceOf[typings.node.nodeStrings.SIGFPE]
+        inline def SIGFPE: typings.node.nodeStrings.SIGFPE = "SIGFPE".asInstanceOf[typings.node.nodeStrings.SIGFPE]
         
-        @scala.inline
-        def SIGHUP: typings.node.nodeStrings.SIGHUP = "SIGHUP".asInstanceOf[typings.node.nodeStrings.SIGHUP]
+        inline def SIGHUP: typings.node.nodeStrings.SIGHUP = "SIGHUP".asInstanceOf[typings.node.nodeStrings.SIGHUP]
         
-        @scala.inline
-        def SIGILL: typings.node.nodeStrings.SIGILL = "SIGILL".asInstanceOf[typings.node.nodeStrings.SIGILL]
+        inline def SIGILL: typings.node.nodeStrings.SIGILL = "SIGILL".asInstanceOf[typings.node.nodeStrings.SIGILL]
         
-        @scala.inline
-        def SIGINFO: typings.node.nodeStrings.SIGINFO = "SIGINFO".asInstanceOf[typings.node.nodeStrings.SIGINFO]
+        inline def SIGINFO: typings.node.nodeStrings.SIGINFO = "SIGINFO".asInstanceOf[typings.node.nodeStrings.SIGINFO]
         
-        @scala.inline
-        def SIGINT: typings.node.nodeStrings.SIGINT = "SIGINT".asInstanceOf[typings.node.nodeStrings.SIGINT]
+        inline def SIGINT: typings.node.nodeStrings.SIGINT = "SIGINT".asInstanceOf[typings.node.nodeStrings.SIGINT]
         
-        @scala.inline
-        def SIGIO: typings.node.nodeStrings.SIGIO = "SIGIO".asInstanceOf[typings.node.nodeStrings.SIGIO]
+        inline def SIGIO: typings.node.nodeStrings.SIGIO = "SIGIO".asInstanceOf[typings.node.nodeStrings.SIGIO]
         
-        @scala.inline
-        def SIGIOT: typings.node.nodeStrings.SIGIOT = "SIGIOT".asInstanceOf[typings.node.nodeStrings.SIGIOT]
+        inline def SIGIOT: typings.node.nodeStrings.SIGIOT = "SIGIOT".asInstanceOf[typings.node.nodeStrings.SIGIOT]
         
-        @scala.inline
-        def SIGKILL: typings.node.nodeStrings.SIGKILL = "SIGKILL".asInstanceOf[typings.node.nodeStrings.SIGKILL]
+        inline def SIGKILL: typings.node.nodeStrings.SIGKILL = "SIGKILL".asInstanceOf[typings.node.nodeStrings.SIGKILL]
         
-        @scala.inline
-        def SIGLOST: typings.node.nodeStrings.SIGLOST = "SIGLOST".asInstanceOf[typings.node.nodeStrings.SIGLOST]
+        inline def SIGLOST: typings.node.nodeStrings.SIGLOST = "SIGLOST".asInstanceOf[typings.node.nodeStrings.SIGLOST]
         
-        @scala.inline
-        def SIGPIPE: typings.node.nodeStrings.SIGPIPE = "SIGPIPE".asInstanceOf[typings.node.nodeStrings.SIGPIPE]
+        inline def SIGPIPE: typings.node.nodeStrings.SIGPIPE = "SIGPIPE".asInstanceOf[typings.node.nodeStrings.SIGPIPE]
         
-        @scala.inline
-        def SIGPOLL: typings.node.nodeStrings.SIGPOLL = "SIGPOLL".asInstanceOf[typings.node.nodeStrings.SIGPOLL]
+        inline def SIGPOLL: typings.node.nodeStrings.SIGPOLL = "SIGPOLL".asInstanceOf[typings.node.nodeStrings.SIGPOLL]
         
-        @scala.inline
-        def SIGPROF: typings.node.nodeStrings.SIGPROF = "SIGPROF".asInstanceOf[typings.node.nodeStrings.SIGPROF]
+        inline def SIGPROF: typings.node.nodeStrings.SIGPROF = "SIGPROF".asInstanceOf[typings.node.nodeStrings.SIGPROF]
         
-        @scala.inline
-        def SIGPWR: typings.node.nodeStrings.SIGPWR = "SIGPWR".asInstanceOf[typings.node.nodeStrings.SIGPWR]
+        inline def SIGPWR: typings.node.nodeStrings.SIGPWR = "SIGPWR".asInstanceOf[typings.node.nodeStrings.SIGPWR]
         
-        @scala.inline
-        def SIGQUIT: typings.node.nodeStrings.SIGQUIT = "SIGQUIT".asInstanceOf[typings.node.nodeStrings.SIGQUIT]
+        inline def SIGQUIT: typings.node.nodeStrings.SIGQUIT = "SIGQUIT".asInstanceOf[typings.node.nodeStrings.SIGQUIT]
         
-        @scala.inline
-        def SIGSEGV: typings.node.nodeStrings.SIGSEGV = "SIGSEGV".asInstanceOf[typings.node.nodeStrings.SIGSEGV]
+        inline def SIGSEGV: typings.node.nodeStrings.SIGSEGV = "SIGSEGV".asInstanceOf[typings.node.nodeStrings.SIGSEGV]
         
-        @scala.inline
-        def SIGSTKFLT: typings.node.nodeStrings.SIGSTKFLT = "SIGSTKFLT".asInstanceOf[typings.node.nodeStrings.SIGSTKFLT]
+        inline def SIGSTKFLT: typings.node.nodeStrings.SIGSTKFLT = "SIGSTKFLT".asInstanceOf[typings.node.nodeStrings.SIGSTKFLT]
         
-        @scala.inline
-        def SIGSTOP: typings.node.nodeStrings.SIGSTOP = "SIGSTOP".asInstanceOf[typings.node.nodeStrings.SIGSTOP]
+        inline def SIGSTOP: typings.node.nodeStrings.SIGSTOP = "SIGSTOP".asInstanceOf[typings.node.nodeStrings.SIGSTOP]
         
-        @scala.inline
-        def SIGSYS: typings.node.nodeStrings.SIGSYS = "SIGSYS".asInstanceOf[typings.node.nodeStrings.SIGSYS]
+        inline def SIGSYS: typings.node.nodeStrings.SIGSYS = "SIGSYS".asInstanceOf[typings.node.nodeStrings.SIGSYS]
         
-        @scala.inline
-        def SIGTERM: typings.node.nodeStrings.SIGTERM = "SIGTERM".asInstanceOf[typings.node.nodeStrings.SIGTERM]
+        inline def SIGTERM: typings.node.nodeStrings.SIGTERM = "SIGTERM".asInstanceOf[typings.node.nodeStrings.SIGTERM]
         
-        @scala.inline
-        def SIGTRAP: typings.node.nodeStrings.SIGTRAP = "SIGTRAP".asInstanceOf[typings.node.nodeStrings.SIGTRAP]
+        inline def SIGTRAP: typings.node.nodeStrings.SIGTRAP = "SIGTRAP".asInstanceOf[typings.node.nodeStrings.SIGTRAP]
         
-        @scala.inline
-        def SIGTSTP: typings.node.nodeStrings.SIGTSTP = "SIGTSTP".asInstanceOf[typings.node.nodeStrings.SIGTSTP]
+        inline def SIGTSTP: typings.node.nodeStrings.SIGTSTP = "SIGTSTP".asInstanceOf[typings.node.nodeStrings.SIGTSTP]
         
-        @scala.inline
-        def SIGTTIN: typings.node.nodeStrings.SIGTTIN = "SIGTTIN".asInstanceOf[typings.node.nodeStrings.SIGTTIN]
+        inline def SIGTTIN: typings.node.nodeStrings.SIGTTIN = "SIGTTIN".asInstanceOf[typings.node.nodeStrings.SIGTTIN]
         
-        @scala.inline
-        def SIGTTOU: typings.node.nodeStrings.SIGTTOU = "SIGTTOU".asInstanceOf[typings.node.nodeStrings.SIGTTOU]
+        inline def SIGTTOU: typings.node.nodeStrings.SIGTTOU = "SIGTTOU".asInstanceOf[typings.node.nodeStrings.SIGTTOU]
         
-        @scala.inline
-        def SIGUNUSED: typings.node.nodeStrings.SIGUNUSED = "SIGUNUSED".asInstanceOf[typings.node.nodeStrings.SIGUNUSED]
+        inline def SIGUNUSED: typings.node.nodeStrings.SIGUNUSED = "SIGUNUSED".asInstanceOf[typings.node.nodeStrings.SIGUNUSED]
         
-        @scala.inline
-        def SIGURG: typings.node.nodeStrings.SIGURG = "SIGURG".asInstanceOf[typings.node.nodeStrings.SIGURG]
+        inline def SIGURG: typings.node.nodeStrings.SIGURG = "SIGURG".asInstanceOf[typings.node.nodeStrings.SIGURG]
         
-        @scala.inline
-        def SIGUSR1: typings.node.nodeStrings.SIGUSR1 = "SIGUSR1".asInstanceOf[typings.node.nodeStrings.SIGUSR1]
+        inline def SIGUSR1: typings.node.nodeStrings.SIGUSR1 = "SIGUSR1".asInstanceOf[typings.node.nodeStrings.SIGUSR1]
         
-        @scala.inline
-        def SIGUSR2: typings.node.nodeStrings.SIGUSR2 = "SIGUSR2".asInstanceOf[typings.node.nodeStrings.SIGUSR2]
+        inline def SIGUSR2: typings.node.nodeStrings.SIGUSR2 = "SIGUSR2".asInstanceOf[typings.node.nodeStrings.SIGUSR2]
         
-        @scala.inline
-        def SIGVTALRM: typings.node.nodeStrings.SIGVTALRM = "SIGVTALRM".asInstanceOf[typings.node.nodeStrings.SIGVTALRM]
+        inline def SIGVTALRM: typings.node.nodeStrings.SIGVTALRM = "SIGVTALRM".asInstanceOf[typings.node.nodeStrings.SIGVTALRM]
         
-        @scala.inline
-        def SIGWINCH: typings.node.nodeStrings.SIGWINCH = "SIGWINCH".asInstanceOf[typings.node.nodeStrings.SIGWINCH]
+        inline def SIGWINCH: typings.node.nodeStrings.SIGWINCH = "SIGWINCH".asInstanceOf[typings.node.nodeStrings.SIGWINCH]
         
-        @scala.inline
-        def SIGXCPU: typings.node.nodeStrings.SIGXCPU = "SIGXCPU".asInstanceOf[typings.node.nodeStrings.SIGXCPU]
+        inline def SIGXCPU: typings.node.nodeStrings.SIGXCPU = "SIGXCPU".asInstanceOf[typings.node.nodeStrings.SIGXCPU]
         
-        @scala.inline
-        def SIGXFSZ: typings.node.nodeStrings.SIGXFSZ = "SIGXFSZ".asInstanceOf[typings.node.nodeStrings.SIGXFSZ]
+        inline def SIGXFSZ: typings.node.nodeStrings.SIGXFSZ = "SIGXFSZ".asInstanceOf[typings.node.nodeStrings.SIGXFSZ]
       }
       
       type SignalsListener = js.Function1[/* signal */ Signals, Unit]

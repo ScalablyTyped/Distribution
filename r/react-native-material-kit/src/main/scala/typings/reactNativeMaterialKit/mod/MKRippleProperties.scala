@@ -30,67 +30,47 @@ trait MKRippleProperties
 }
 object MKRippleProperties {
   
-  @scala.inline
-  def apply(): MKRippleProperties = {
+  inline def apply(): MKRippleProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MKRippleProperties]
   }
   
-  @scala.inline
-  implicit class MKRipplePropertiesMutableBuilder[Self <: MKRippleProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MKRippleProperties](x: Self) {
     
-    @scala.inline
-    def setMaskBorderRadius(value: Double): Self = StObject.set(x, "maskBorderRadius", value.asInstanceOf[js.Any])
+    inline def setMaskBorderRadius(value: Double): Self = StObject.set(x, "maskBorderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskBorderRadiusInPercent(value: Double): Self = StObject.set(x, "maskBorderRadiusInPercent", value.asInstanceOf[js.Any])
+    inline def setMaskBorderRadiusInPercent(value: Double): Self = StObject.set(x, "maskBorderRadiusInPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskBorderRadiusInPercentUndefined: Self = StObject.set(x, "maskBorderRadiusInPercent", js.undefined)
+    inline def setMaskBorderRadiusInPercentUndefined: Self = StObject.set(x, "maskBorderRadiusInPercent", js.undefined)
     
-    @scala.inline
-    def setMaskBorderRadiusUndefined: Self = StObject.set(x, "maskBorderRadius", js.undefined)
+    inline def setMaskBorderRadiusUndefined: Self = StObject.set(x, "maskBorderRadius", js.undefined)
     
-    @scala.inline
-    def setMaskColor(value: String): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
+    inline def setMaskColor(value: String): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskColorUndefined: Self = StObject.set(x, "maskColor", js.undefined)
+    inline def setMaskColorUndefined: Self = StObject.set(x, "maskColor", js.undefined)
     
-    @scala.inline
-    def setMaskDuration(value: Double): Self = StObject.set(x, "maskDuration", value.asInstanceOf[js.Any])
+    inline def setMaskDuration(value: Double): Self = StObject.set(x, "maskDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskDurationUndefined: Self = StObject.set(x, "maskDuration", js.undefined)
+    inline def setMaskDurationUndefined: Self = StObject.set(x, "maskDuration", js.undefined)
     
-    @scala.inline
-    def setMaskEnabled(value: Boolean): Self = StObject.set(x, "maskEnabled", value.asInstanceOf[js.Any])
+    inline def setMaskEnabled(value: Boolean): Self = StObject.set(x, "maskEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskEnabledUndefined: Self = StObject.set(x, "maskEnabled", js.undefined)
+    inline def setMaskEnabledUndefined: Self = StObject.set(x, "maskEnabled", js.undefined)
     
-    @scala.inline
-    def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
     
-    @scala.inline
-    def setRippleDuration(value: Double): Self = StObject.set(x, "rippleDuration", value.asInstanceOf[js.Any])
+    inline def setRippleDuration(value: Double): Self = StObject.set(x, "rippleDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleDurationUndefined: Self = StObject.set(x, "rippleDuration", js.undefined)
+    inline def setRippleDurationUndefined: Self = StObject.set(x, "rippleDuration", js.undefined)
     
-    @scala.inline
-    def setRippleLocation(value: rippleLocation): Self = StObject.set(x, "rippleLocation", value.asInstanceOf[js.Any])
+    inline def setRippleLocation(value: rippleLocation): Self = StObject.set(x, "rippleLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRippleLocationUndefined: Self = StObject.set(x, "rippleLocation", js.undefined)
+    inline def setRippleLocationUndefined: Self = StObject.set(x, "rippleLocation", js.undefined)
     
-    @scala.inline
-    def setShadowAniEnabled(value: Boolean): Self = StObject.set(x, "shadowAniEnabled", value.asInstanceOf[js.Any])
+    inline def setShadowAniEnabled(value: Boolean): Self = StObject.set(x, "shadowAniEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowAniEnabledUndefined: Self = StObject.set(x, "shadowAniEnabled", js.undefined)
+    inline def setShadowAniEnabledUndefined: Self = StObject.set(x, "shadowAniEnabled", js.undefined)
   }
 }

@@ -74,50 +74,36 @@ object mod {
   }
   object IndexOptions {
     
-    @scala.inline
-    def apply(): IndexOptions = {
+    inline def apply(): IndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IndexOptions]
     }
     
-    @scala.inline
-    implicit class IndexOptionsMutableBuilder[Self <: IndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IndexOptions](x: Self) {
       
-      @scala.inline
-      def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+      inline def setGt(value: String): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
+      inline def setGtUndefined: Self = StObject.set(x, "gt", js.undefined)
       
-      @scala.inline
-      def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+      inline def setGte(value: String): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
+      inline def setGteUndefined: Self = StObject.set(x, "gte", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLt(value: String): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+      inline def setLt(value: String): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+      inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
       
-      @scala.inline
-      def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+      inline def setLte(value: String): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
+      inline def setLteUndefined: Self = StObject.set(x, "lte", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     }
   }
   
@@ -141,26 +127,20 @@ object mod {
   }
   object StreamOptions {
     
-    @scala.inline
-    def apply(): StreamOptions = {
+    inline def apply(): StreamOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StreamOptions]
     }
     
-    @scala.inline
-    implicit class StreamOptionsMutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StreamOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -174,24 +154,19 @@ object mod {
   }
   object Triple {
     
-    @scala.inline
-    def apply[TermType](`object`: TermType, predicate: TermType, subject: TermType): Triple[TermType] = {
+    inline def apply[TermType](`object`: TermType, predicate: TermType, subject: TermType): Triple[TermType] = {
       val __obj = js.Dynamic.literal(predicate = predicate.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Triple[TermType]]
     }
     
-    @scala.inline
-    implicit class TripleMutableBuilder[Self <: Triple[?], TermType] (val x: Self & Triple[TermType]) extends AnyVal {
+    extension [Self <: Triple[?], TermType](x: Self & Triple[TermType]) {
       
-      @scala.inline
-      def setObject(value: TermType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: TermType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicate(value: TermType): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+      inline def setPredicate(value: TermType): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: TermType): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: TermType): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     }
   }
   

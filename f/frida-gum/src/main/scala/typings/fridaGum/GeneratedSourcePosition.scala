@@ -18,22 +18,17 @@ trait GeneratedSourcePosition extends StObject {
 }
 object GeneratedSourcePosition {
   
-  @scala.inline
-  def apply(line: Double): GeneratedSourcePosition = {
+  inline def apply(line: Double): GeneratedSourcePosition = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneratedSourcePosition]
   }
   
-  @scala.inline
-  implicit class GeneratedSourcePositionMutableBuilder[Self <: GeneratedSourcePosition] (val x: Self) extends AnyVal {
+  extension [Self <: GeneratedSourcePosition](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

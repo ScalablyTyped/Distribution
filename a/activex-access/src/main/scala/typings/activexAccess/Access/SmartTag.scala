@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmartTag extends StObject {
   
-  @JSName("Access.SmartTag_typekey")
+  /* private */ @JSName("Access.SmartTag_typekey")
   var AccessDotSmartTag_typekey: SmartTag
   
   val Application: typings.activexAccess.Access.Application
@@ -35,8 +35,7 @@ trait SmartTag extends StObject {
 }
 object SmartTag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotSmartTag_typekey: SmartTag,
     Application: Application,
     Delete: () => Unit,
@@ -53,37 +52,26 @@ object SmartTag {
     __obj.asInstanceOf[SmartTag]
   }
   
-  @scala.inline
-  implicit class SmartTagMutableBuilder[Self <: SmartTag] (val x: Self) extends AnyVal {
+  extension [Self <: SmartTag](x: Self) {
     
-    @scala.inline
-    def setAccessDotSmartTag_typekey(value: SmartTag): Self = StObject.set(x, "Access.SmartTag_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotSmartTag_typekey(value: SmartTag): Self = StObject.set(x, "Access.SmartTag_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMissing(value: Boolean): Self = StObject.set(x, "IsMissing", value.asInstanceOf[js.Any])
+    inline def setIsMissing(value: Boolean): Self = StObject.set(x, "IsMissing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: SmartTagProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SmartTagProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
+    inline def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
+    inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
   }
 }

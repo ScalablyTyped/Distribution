@@ -10,9 +10,7 @@ object bodyLockerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
+  inline def lock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")().asInstanceOf[Unit]
   
-  @scala.inline
-  def unlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")().asInstanceOf[Unit]
+  inline def unlock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlock")().asInstanceOf[Unit]
 }

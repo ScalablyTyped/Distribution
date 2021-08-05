@@ -34,8 +34,7 @@ trait Currency extends StObject {
 }
 object Currency {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currency: String,
     description: String,
     payload: String,
@@ -48,67 +47,46 @@ object Currency {
     __obj.asInstanceOf[Currency]
   }
   
-  @scala.inline
-  implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+  extension [Self <: Currency](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFlexible(value: Boolean): Self = StObject.set(x, "isFlexible", value.asInstanceOf[js.Any])
+    inline def setIsFlexible(value: Boolean): Self = StObject.set(x, "isFlexible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFlexibleUndefined: Self = StObject.set(x, "isFlexible", js.undefined)
+    inline def setIsFlexibleUndefined: Self = StObject.set(x, "isFlexible", js.undefined)
     
-    @scala.inline
-    def setNeed(value: Email): Self = StObject.set(x, "need", value.asInstanceOf[js.Any])
+    inline def setNeed(value: Email): Self = StObject.set(x, "need", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedUndefined: Self = StObject.set(x, "need", js.undefined)
+    inline def setNeedUndefined: Self = StObject.set(x, "need", js.undefined)
     
-    @scala.inline
-    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoto(value: Url): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    inline def setPhoto(value: Url): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
-    @scala.inline
-    def setPrices(value: js.Array[js.Any]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    inline def setPrices(value: js.Array[js.Any]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricesVarargs(value: js.Any*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: js.Any*): Self = StObject.set(x, "prices", js.Array(value :_*))
     
-    @scala.inline
-    def setProviderToken(value: String): Self = StObject.set(x, "providerToken", value.asInstanceOf[js.Any])
+    inline def setProviderToken(value: String): Self = StObject.set(x, "providerToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
+    inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
-    @scala.inline
-    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
+    inline def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
+    inline def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
     
-    @scala.inline
-    def setStartParameter(value: String): Self = StObject.set(x, "startParameter", value.asInstanceOf[js.Any])
+    inline def setStartParameter(value: String): Self = StObject.set(x, "startParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

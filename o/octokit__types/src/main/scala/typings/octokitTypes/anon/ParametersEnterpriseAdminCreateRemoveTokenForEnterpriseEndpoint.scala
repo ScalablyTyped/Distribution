@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint extends St
 }
 object ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint,
     request: EnterpriseAdminCreateRemoveTokenForEnterpriseRequestOptions,
     response: OctokitResponse[EnterpriseAdminCreateRemoveTokenForEnterpriseResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminCreateRemoveTokenForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminCreateRemoveTokenForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminCreateRemoveTokenForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminCreateRemoveTokenForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

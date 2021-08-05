@@ -23,19 +23,15 @@ trait ASPxClientTreeListBatchEditNodeValidatingEventArgs
 }
 object ASPxClientTreeListBatchEditNodeValidatingEventArgs {
   
-  @scala.inline
-  def apply(nodeKey: String, validationInfo: js.Any): ASPxClientTreeListBatchEditNodeValidatingEventArgs = {
+  inline def apply(nodeKey: String, validationInfo: js.Any): ASPxClientTreeListBatchEditNodeValidatingEventArgs = {
     val __obj = js.Dynamic.literal(nodeKey = nodeKey.asInstanceOf[js.Any], validationInfo = validationInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeValidatingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListBatchEditNodeValidatingEventArgsMutableBuilder[Self <: ASPxClientTreeListBatchEditNodeValidatingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListBatchEditNodeValidatingEventArgs](x: Self) {
     
-    @scala.inline
-    def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
+    inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationInfo(value: js.Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
+    inline def setValidationInfo(value: js.Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
   }
 }

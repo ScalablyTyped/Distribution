@@ -15,8 +15,7 @@ trait ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint extend
 }
 object ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint,
     response: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]
   ): ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint = {
@@ -24,13 +23,10 @@ object ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListRepoNotificationsForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListRepoNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListRepoNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

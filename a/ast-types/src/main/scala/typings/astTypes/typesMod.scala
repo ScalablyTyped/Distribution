@@ -13,8 +13,7 @@ object typesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(_fork: Fork): Builders = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_fork.asInstanceOf[js.Any]).asInstanceOf[Builders]
+  inline def default(_fork: Fork): Builders = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_fork.asInstanceOf[js.Any]).asInstanceOf[Builders]
   
   @JSImport("ast-types/lib/types", "Def")
   @js.native
@@ -67,18 +66,15 @@ object typesMod {
   }
   object ASTNode {
     
-    @scala.inline
-    def apply(`type`: String): ASTNode = {
+    inline def apply(`type`: String): ASTNode = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ASTNode]
     }
     
-    @scala.inline
-    implicit class ASTNodeMutableBuilder[Self <: ASTNode] (val x: Self) extends AnyVal {
+    extension [Self <: ASTNode](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,33 +137,25 @@ object typesMod {
   }
   object Field {
     
-    @scala.inline
-    def apply[T](getValue: StringDictionary[js.Any] => js.Any, hidden: Boolean, name: String, `type`: Type[T]): Field[T] = {
+    inline def apply[T](getValue: StringDictionary[js.Any] => js.Any, hidden: Boolean, name: String, `type`: Type[T]): Field[T] = {
       val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction1(getValue), hidden = hidden.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Field[T]]
     }
     
-    @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field[?], T] (val x: Self & Field[T]) extends AnyVal {
+    extension [Self <: Field[?], T](x: Self & Field[T]) {
       
-      @scala.inline
-      def setDefaultFn(value: js.Function): Self = StObject.set(x, "defaultFn", value.asInstanceOf[js.Any])
+      inline def setDefaultFn(value: js.Function): Self = StObject.set(x, "defaultFn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFnUndefined: Self = StObject.set(x, "defaultFn", js.undefined)
+      inline def setDefaultFnUndefined: Self = StObject.set(x, "defaultFn", js.undefined)
       
-      @scala.inline
-      def setGetValue(value: StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -13,19 +13,15 @@ trait DescribeSuggestersResponse extends StObject {
 }
 object DescribeSuggestersResponse {
   
-  @scala.inline
-  def apply(Suggesters: SuggesterStatusList): DescribeSuggestersResponse = {
+  inline def apply(Suggesters: SuggesterStatusList): DescribeSuggestersResponse = {
     val __obj = js.Dynamic.literal(Suggesters = Suggesters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSuggestersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeSuggestersResponseMutableBuilder[Self <: DescribeSuggestersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSuggestersResponse](x: Self) {
     
-    @scala.inline
-    def setSuggesters(value: SuggesterStatusList): Self = StObject.set(x, "Suggesters", value.asInstanceOf[js.Any])
+    inline def setSuggesters(value: SuggesterStatusList): Self = StObject.set(x, "Suggesters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestersVarargs(value: SuggesterStatus*): Self = StObject.set(x, "Suggesters", js.Array(value :_*))
+    inline def setSuggestersVarargs(value: SuggesterStatus*): Self = StObject.set(x, "Suggesters", js.Array(value :_*))
   }
 }

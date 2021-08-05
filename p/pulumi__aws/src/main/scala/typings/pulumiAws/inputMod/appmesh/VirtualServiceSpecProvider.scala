@@ -19,25 +19,19 @@ trait VirtualServiceSpecProvider extends StObject {
 }
 object VirtualServiceSpecProvider {
   
-  @scala.inline
-  def apply(): VirtualServiceSpecProvider = {
+  inline def apply(): VirtualServiceSpecProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualServiceSpecProvider]
   }
   
-  @scala.inline
-  implicit class VirtualServiceSpecProviderMutableBuilder[Self <: VirtualServiceSpecProvider] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualServiceSpecProvider](x: Self) {
     
-    @scala.inline
-    def setVirtualNode(value: Input[VirtualServiceSpecProviderVirtualNode]): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
+    inline def setVirtualNode(value: Input[VirtualServiceSpecProviderVirtualNode]): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNodeUndefined: Self = StObject.set(x, "virtualNode", js.undefined)
+    inline def setVirtualNodeUndefined: Self = StObject.set(x, "virtualNode", js.undefined)
     
-    @scala.inline
-    def setVirtualRouter(value: Input[VirtualServiceSpecProviderVirtualRouter]): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
+    inline def setVirtualRouter(value: Input[VirtualServiceSpecProviderVirtualRouter]): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualRouterUndefined: Self = StObject.set(x, "virtualRouter", js.undefined)
+    inline def setVirtualRouterUndefined: Self = StObject.set(x, "virtualRouter", js.undefined)
   }
 }

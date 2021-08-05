@@ -12,8 +12,7 @@ trait AdGroupExtensions
 }
 object AdGroupExtensions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callouts: () => AdWordsSelector[Callout],
     message: () => AdWordsSelector[Message],
     mobileApps: () => AdWordsSelector[MobileApp],
@@ -26,10 +25,8 @@ object AdGroupExtensions {
     __obj.asInstanceOf[AdGroupExtensions]
   }
   
-  @scala.inline
-  implicit class AdGroupExtensionsMutableBuilder[Self <: AdGroupExtensions] (val x: Self) extends AnyVal {
+  extension [Self <: AdGroupExtensions](x: Self) {
     
-    @scala.inline
-    def setPhoneNumbers(value: () => AdWordsSelector[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction0(value))
+    inline def setPhoneNumbers(value: () => AdWordsSelector[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction0(value))
   }
 }

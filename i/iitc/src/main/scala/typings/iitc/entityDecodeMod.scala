@@ -33,7 +33,6 @@ object entityDecodeMod {
     @JSGlobal("decodeArray")
     @js.native
     def decodeArray: DecodeArray_ = js.native
-    @scala.inline
-    def decodeArray_=(x: DecodeArray_): Unit = js.Dynamic.global.updateDynamic("decodeArray")(x.asInstanceOf[js.Any])
+    inline def decodeArray_=(x: DecodeArray_): Unit = js.Dynamic.global.updateDynamic("decodeArray")(x.asInstanceOf[js.Any])
   }
 }

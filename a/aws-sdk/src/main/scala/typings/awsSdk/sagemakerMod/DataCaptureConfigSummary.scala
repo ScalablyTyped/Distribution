@@ -33,8 +33,7 @@ trait DataCaptureConfigSummary extends StObject {
 }
 object DataCaptureConfigSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaptureStatus: CaptureStatus,
     CurrentSamplingPercentage: SamplingPercentage,
     DestinationS3Uri: DestinationS3Uri,
@@ -45,22 +44,16 @@ object DataCaptureConfigSummary {
     __obj.asInstanceOf[DataCaptureConfigSummary]
   }
   
-  @scala.inline
-  implicit class DataCaptureConfigSummaryMutableBuilder[Self <: DataCaptureConfigSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DataCaptureConfigSummary](x: Self) {
     
-    @scala.inline
-    def setCaptureStatus(value: CaptureStatus): Self = StObject.set(x, "CaptureStatus", value.asInstanceOf[js.Any])
+    inline def setCaptureStatus(value: CaptureStatus): Self = StObject.set(x, "CaptureStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSamplingPercentage(value: SamplingPercentage): Self = StObject.set(x, "CurrentSamplingPercentage", value.asInstanceOf[js.Any])
+    inline def setCurrentSamplingPercentage(value: SamplingPercentage): Self = StObject.set(x, "CurrentSamplingPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DestinationS3Uri", value.asInstanceOf[js.Any])
+    inline def setDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DestinationS3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCapture(value: EnableCapture): Self = StObject.set(x, "EnableCapture", value.asInstanceOf[js.Any])
+    inline def setEnableCapture(value: EnableCapture): Self = StObject.set(x, "EnableCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
   }
 }

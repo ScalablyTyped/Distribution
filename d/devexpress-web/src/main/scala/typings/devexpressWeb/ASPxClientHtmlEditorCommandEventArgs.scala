@@ -23,19 +23,15 @@ trait ASPxClientHtmlEditorCommandEventArgs
 }
 object ASPxClientHtmlEditorCommandEventArgs {
   
-  @scala.inline
-  def apply(commandName: String, parameter: js.Any): ASPxClientHtmlEditorCommandEventArgs = {
+  inline def apply(commandName: String, parameter: js.Any): ASPxClientHtmlEditorCommandEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorCommandEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorCommandEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorCommandEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

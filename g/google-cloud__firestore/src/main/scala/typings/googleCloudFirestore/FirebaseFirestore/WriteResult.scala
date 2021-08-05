@@ -21,19 +21,15 @@ trait WriteResult extends StObject {
 }
 object WriteResult {
   
-  @scala.inline
-  def apply(isEqual: WriteResult => Boolean, writeTime: Timestamp): WriteResult = {
+  inline def apply(isEqual: WriteResult => Boolean, writeTime: Timestamp): WriteResult = {
     val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual), writeTime = writeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteResult]
   }
   
-  @scala.inline
-  implicit class WriteResultMutableBuilder[Self <: WriteResult] (val x: Self) extends AnyVal {
+  extension [Self <: WriteResult](x: Self) {
     
-    @scala.inline
-    def setIsEqual(value: WriteResult => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    inline def setIsEqual(value: WriteResult => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteTime(value: Timestamp): Self = StObject.set(x, "writeTime", value.asInstanceOf[js.Any])
+    inline def setWriteTime(value: Timestamp): Self = StObject.set(x, "writeTime", value.asInstanceOf[js.Any])
   }
 }

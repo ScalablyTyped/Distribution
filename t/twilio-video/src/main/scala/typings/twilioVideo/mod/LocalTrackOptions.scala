@@ -12,22 +12,17 @@ trait LocalTrackOptions extends StObject {
 }
 object LocalTrackOptions {
   
-  @scala.inline
-  def apply(logLevel: LogLevel | LogLevels): LocalTrackOptions = {
+  inline def apply(logLevel: LogLevel | LogLevels): LocalTrackOptions = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalTrackOptions]
   }
   
-  @scala.inline
-  implicit class LocalTrackOptionsMutableBuilder[Self <: LocalTrackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocalTrackOptions](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

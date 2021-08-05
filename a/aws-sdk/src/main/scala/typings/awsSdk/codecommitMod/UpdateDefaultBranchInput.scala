@@ -18,19 +18,15 @@ trait UpdateDefaultBranchInput extends StObject {
 }
 object UpdateDefaultBranchInput {
   
-  @scala.inline
-  def apply(defaultBranchName: BranchName, repositoryName: RepositoryName): UpdateDefaultBranchInput = {
+  inline def apply(defaultBranchName: BranchName, repositoryName: RepositoryName): UpdateDefaultBranchInput = {
     val __obj = js.Dynamic.literal(defaultBranchName = defaultBranchName.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDefaultBranchInput]
   }
   
-  @scala.inline
-  implicit class UpdateDefaultBranchInputMutableBuilder[Self <: UpdateDefaultBranchInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDefaultBranchInput](x: Self) {
     
-    @scala.inline
-    def setDefaultBranchName(value: BranchName): Self = StObject.set(x, "defaultBranchName", value.asInstanceOf[js.Any])
+    inline def setDefaultBranchName(value: BranchName): Self = StObject.set(x, "defaultBranchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

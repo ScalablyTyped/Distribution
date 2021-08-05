@@ -24,8 +24,7 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certificate: Certificate,
     errorCode: Double,
     hostname: String,
@@ -36,22 +35,16 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatedCertificate(value: Certificate): Self = StObject.set(x, "validatedCertificate", value.asInstanceOf[js.Any])
+    inline def setValidatedCertificate(value: Certificate): Self = StObject.set(x, "validatedCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationResult(value: String): Self = StObject.set(x, "verificationResult", value.asInstanceOf[js.Any])
+    inline def setVerificationResult(value: String): Self = StObject.set(x, "verificationResult", value.asInstanceOf[js.Any])
   }
 }

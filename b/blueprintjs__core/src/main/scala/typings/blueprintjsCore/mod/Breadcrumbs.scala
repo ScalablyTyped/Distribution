@@ -23,6 +23,5 @@ object Breadcrumbs {
   @JSImport("@blueprintjs/core", "Breadcrumbs.defaultProps")
   @js.native
   def defaultProps: PartialIBreadcrumbsProps = js.native
-  @scala.inline
-  def defaultProps_=(x: PartialIBreadcrumbsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: PartialIBreadcrumbsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

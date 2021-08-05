@@ -30,7 +30,7 @@ object reflectionGroupMod {
     
     var cssClasses: js.UndefOr[String] = js.native
     
-    var getAllChildrenHaveOwnDocument: js.Any = js.native
+    /* private */ var getAllChildrenHaveOwnDocument: js.Any = js.native
     
     var kind: ReflectionKind = js.native
     

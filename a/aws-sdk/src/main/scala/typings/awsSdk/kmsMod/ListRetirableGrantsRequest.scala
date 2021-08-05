@@ -23,28 +23,21 @@ trait ListRetirableGrantsRequest extends StObject {
 }
 object ListRetirableGrantsRequest {
   
-  @scala.inline
-  def apply(RetiringPrincipal: PrincipalIdType): ListRetirableGrantsRequest = {
+  inline def apply(RetiringPrincipal: PrincipalIdType): ListRetirableGrantsRequest = {
     val __obj = js.Dynamic.literal(RetiringPrincipal = RetiringPrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRetirableGrantsRequest]
   }
   
-  @scala.inline
-  implicit class ListRetirableGrantsRequestMutableBuilder[Self <: ListRetirableGrantsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListRetirableGrantsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setRetiringPrincipal(value: PrincipalIdType): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
+    inline def setRetiringPrincipal(value: PrincipalIdType): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
   }
 }

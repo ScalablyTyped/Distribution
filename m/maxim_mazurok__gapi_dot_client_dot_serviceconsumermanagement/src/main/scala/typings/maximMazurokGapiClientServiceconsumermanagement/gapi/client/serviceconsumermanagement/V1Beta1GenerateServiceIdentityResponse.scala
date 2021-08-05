@@ -11,19 +11,15 @@ trait V1Beta1GenerateServiceIdentityResponse extends StObject {
 }
 object V1Beta1GenerateServiceIdentityResponse {
   
-  @scala.inline
-  def apply(): V1Beta1GenerateServiceIdentityResponse = {
+  inline def apply(): V1Beta1GenerateServiceIdentityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[V1Beta1GenerateServiceIdentityResponse]
   }
   
-  @scala.inline
-  implicit class V1Beta1GenerateServiceIdentityResponseMutableBuilder[Self <: V1Beta1GenerateServiceIdentityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: V1Beta1GenerateServiceIdentityResponse](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: V1Beta1ServiceIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: V1Beta1ServiceIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
   }
 }

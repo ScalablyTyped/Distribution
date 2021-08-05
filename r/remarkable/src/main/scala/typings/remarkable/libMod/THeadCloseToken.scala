@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object THeadCloseToken {
   
-  @scala.inline
-  def apply(level: Double): THeadCloseToken = {
+  inline def apply(level: Double): THeadCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("thead_close")
     __obj.asInstanceOf[THeadCloseToken]
   }
   
-  @scala.inline
-  implicit class THeadCloseTokenMutableBuilder[Self <: THeadCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: THeadCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: thead_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: thead_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

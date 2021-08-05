@@ -47,10 +47,8 @@ object credentialMod {
       * @return {!admin.credential.Credential} A credential authenticated via Google
       *   Application Default Credentials that can be used to initialize an app.
       */
-    @scala.inline
-    def applicationDefault(): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")().asInstanceOf[Credential]
-    @scala.inline
-    def applicationDefault(httpAgent: Agent): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")(httpAgent.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def applicationDefault(): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")().asInstanceOf[Credential]
+    inline def applicationDefault(httpAgent: Agent): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")(httpAgent.asInstanceOf[js.Any]).asInstanceOf[Credential]
     
     /**
       * Returns a credential created from the provided service account that grants
@@ -97,14 +95,10 @@ object credentialMod {
       * @return A credential authenticated via the
       *   provided service account that can be used to initialize an app.
       */
-    @scala.inline
-    def cert(serviceAccountPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def cert(serviceAccountPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
-    @scala.inline
-    def cert(serviceAccountPathOrObject: ServiceAccount): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def cert(serviceAccountPathOrObject: ServiceAccount, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: ServiceAccount): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def cert(serviceAccountPathOrObject: ServiceAccount, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
     
     /**
       * Returns a credential created from the provided refresh token that grants
@@ -139,14 +133,10 @@ object credentialMod {
       * @return A credential authenticated via the
       *   provided service account that can be used to initialize an app.
       */
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: js.Object): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
-    @scala.inline
-    def refreshToken(refreshTokenPathOrObject: js.Object, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: js.Object): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    inline def refreshToken(refreshTokenPathOrObject: js.Object, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
     
     /**
       * Interface that provides Google OAuth2 access tokens used to authenticate
@@ -173,17 +163,14 @@ object credentialMod {
     }
     object Credential {
       
-      @scala.inline
-      def apply(getAccessToken: () => js.Promise[GoogleOAuthAccessToken]): Credential = {
+      inline def apply(getAccessToken: () => js.Promise[GoogleOAuthAccessToken]): Credential = {
         val __obj = js.Dynamic.literal(getAccessToken = js.Any.fromFunction0(getAccessToken))
         __obj.asInstanceOf[Credential]
       }
       
-      @scala.inline
-      implicit class CredentialMutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
+      extension [Self <: Credential](x: Self) {
         
-        @scala.inline
-        def setGetAccessToken(value: () => js.Promise[GoogleOAuthAccessToken]): Self = StObject.set(x, "getAccessToken", js.Any.fromFunction0(value))
+        inline def setGetAccessToken(value: () => js.Promise[GoogleOAuthAccessToken]): Self = StObject.set(x, "getAccessToken", js.Any.fromFunction0(value))
       }
     }
   }
@@ -196,20 +183,16 @@ object credentialMod {
   }
   object GoogleOAuthAccessToken {
     
-    @scala.inline
-    def apply(access_token: String, expires_in: Double): GoogleOAuthAccessToken = {
+    inline def apply(access_token: String, expires_in: Double): GoogleOAuthAccessToken = {
       val __obj = js.Dynamic.literal(access_token = access_token.asInstanceOf[js.Any], expires_in = expires_in.asInstanceOf[js.Any])
       __obj.asInstanceOf[GoogleOAuthAccessToken]
     }
     
-    @scala.inline
-    implicit class GoogleOAuthAccessTokenMutableBuilder[Self <: GoogleOAuthAccessToken] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleOAuthAccessToken](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+      inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,32 +206,24 @@ object credentialMod {
   }
   object ServiceAccount {
     
-    @scala.inline
-    def apply(): ServiceAccount = {
+    inline def apply(): ServiceAccount = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceAccount]
     }
     
-    @scala.inline
-    implicit class ServiceAccountMutableBuilder[Self <: ServiceAccount] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceAccount](x: Self) {
       
-      @scala.inline
-      def setClientEmail(value: String): Self = StObject.set(x, "clientEmail", value.asInstanceOf[js.Any])
+      inline def setClientEmail(value: String): Self = StObject.set(x, "clientEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientEmailUndefined: Self = StObject.set(x, "clientEmail", js.undefined)
+      inline def setClientEmailUndefined: Self = StObject.set(x, "clientEmail", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     }
   }
 }

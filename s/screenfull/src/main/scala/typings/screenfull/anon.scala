@@ -13,17 +13,14 @@ object anon {
   }
   object IsEnabled {
     
-    @scala.inline
-    def apply(): IsEnabled = {
+    inline def apply(): IsEnabled = {
       val __obj = js.Dynamic.literal(isEnabled = false)
       __obj.asInstanceOf[IsEnabled]
     }
     
-    @scala.inline
-    implicit class IsEnabledMutableBuilder[Self <: IsEnabled] (val x: Self) extends AnyVal {
+    extension [Self <: IsEnabled](x: Self) {
       
-      @scala.inline
-      def setIsEnabled(value: `false`): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: `false`): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     }
   }
 }

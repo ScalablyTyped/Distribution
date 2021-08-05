@@ -17,23 +17,18 @@ trait BooleanDeclarationOption
 }
 object BooleanDeclarationOption {
   
-  @scala.inline
-  def apply(help: String, name: String, `type`: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean): BooleanDeclarationOption = {
+  inline def apply(help: String, name: String, `type`: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean): BooleanDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BooleanDeclarationOption]
   }
   
-  @scala.inline
-  implicit class BooleanDeclarationOptionMutableBuilder[Self <: BooleanDeclarationOption] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanDeclarationOption](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.typedoc.optionsDeclarationMod.ParameterType.Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

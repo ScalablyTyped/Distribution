@@ -11,8 +11,7 @@ object tapAfterEnvironmentToPatchWatchingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tapAfterEnvironmentToPatchWatching(
+  inline def tapAfterEnvironmentToPatchWatching(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     state: ForkTsCheckerWebpackPluginState
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tapAfterEnvironmentToPatchWatching")(compiler.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]

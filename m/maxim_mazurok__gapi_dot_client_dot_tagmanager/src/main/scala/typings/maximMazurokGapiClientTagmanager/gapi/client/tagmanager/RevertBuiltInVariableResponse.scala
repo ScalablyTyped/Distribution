@@ -11,19 +11,15 @@ trait RevertBuiltInVariableResponse extends StObject {
 }
 object RevertBuiltInVariableResponse {
   
-  @scala.inline
-  def apply(): RevertBuiltInVariableResponse = {
+  inline def apply(): RevertBuiltInVariableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevertBuiltInVariableResponse]
   }
   
-  @scala.inline
-  implicit class RevertBuiltInVariableResponseMutableBuilder[Self <: RevertBuiltInVariableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RevertBuiltInVariableResponse](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

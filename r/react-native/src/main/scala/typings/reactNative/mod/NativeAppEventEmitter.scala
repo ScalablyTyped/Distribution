@@ -13,6 +13,5 @@ class NativeAppEventEmitter ()
      with DeviceEventEmitterStatic
 object NativeAppEventEmitter {
   
-  @scala.inline
-  def apply: RCTNativeAppEventEmitter = ^.asInstanceOf[js.Dynamic].selectDynamic("NativeAppEventEmitter").asInstanceOf[RCTNativeAppEventEmitter]
+  inline def apply: RCTNativeAppEventEmitter = ^.asInstanceOf[js.Dynamic].selectDynamic("NativeAppEventEmitter").asInstanceOf[RCTNativeAppEventEmitter]
 }

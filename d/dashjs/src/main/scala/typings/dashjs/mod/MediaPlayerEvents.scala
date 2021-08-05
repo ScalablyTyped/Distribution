@@ -164,169 +164,115 @@ trait MediaPlayerEvents extends StObject {
 }
 object MediaPlayerEvents {
   
-  @scala.inline
-  def apply(): MediaPlayerEvents = {
+  inline def apply(): MediaPlayerEvents = {
     val __obj = js.Dynamic.literal(AST_IN_FUTURE = "astInFuture", BUFFER_EMPTY = "bufferStalled", BUFFER_LEVEL_STATE_CHANGED = "bufferStateChanged", BUFFER_LOADED = "bufferLoaded", CAN_PLAY = "canPlay", CAPTION_CONTAINER_RESIZE = "captionContainerResize", CAPTION_RENDERED = "captionRendered", ERROR = "error", FRAGMENT_LOADING_ABANDONED = "fragmentLoadingAbandoned", FRAGMENT_LOADING_COMPLETED = "fragmentLoadingCompleted", FRAGMENT_LOADING_STARTED = "fragmentLoadingStarted", KEY_ADDED = "public_keyAdded", KEY_ERROR = "public_keyError", KEY_MESSAGE = "public_keyMessage", KEY_SESSION_CLOSED = "public_keySessionClosed", KEY_SESSION_CREATED = "public_keySessionCreated", KEY_SESSION_REMOVED = "public_keySessionRemoved", KEY_STATUSES_CHANGED = "public_keyStatusesChanged", KEY_SYSTEM_SELECTED = "public_keySystemSelected", LICENSE_REQUEST_COMPLETE = "public_licenseRequestComplete", LOG = "log", MANIFEST_LOADED = "manifestLoaded", METRICS_CHANGED = "metricsChanged", METRIC_ADDED = "metricAdded", METRIC_CHANGED = "metricChanged", METRIC_UPDATED = "metricUpdated", PERIOD_SWITCH_COMPLETED = "periodSwitchCompleted", PERIOD_SWITCH_STARTED = "periodSwitchStarted", PLAYBACK_ENDED = "playbackEnded", PLAYBACK_ERROR = "playbackError", PLAYBACK_METADATA_LOADED = "playbackMetaDataLoaded", PLAYBACK_NOT_ALLOWED = "playbackNotAllowed", PLAYBACK_PAUSED = "playbackPaused", PLAYBACK_PLAYING = "playbackPlaying", PLAYBACK_PROGRESS = "playbackProgress", PLAYBACK_RATE_CHANGED = "playbackRateChanged", PLAYBACK_SEEKED = "playbackSeeked", PLAYBACK_SEEKING = "playbackSeeking", PLAYBACK_STALLED = "playbackStalled", PLAYBACK_STARTED = "playbackStarted", PLAYBACK_TIME_UPDATED = "playbackTimeUpdated", PLAYBACK_WAITING = "playbackWaiting", PROTECTION_CREATED = "public_protectioncreated", PROTECTION_DESTROYED = "public_protectiondestroyed", QUALITY_CHANGE_RENDERED = "qualityChangeRendered", QUALITY_CHANGE_REQUESTED = "qualityChangeRequested", STREAM_INITIALIZED = "streamInitialized", TEXT_TRACKS_ADDED = "allTextTracksAdded", TEXT_TRACK_ADDED = "textTrackAdded", TRACK_CHANGE_RENDERED = "trackChangeRendered", TTML_PARSED = "ttmlParsed", TTML_TO_PARSE = "ttmlToParse")
     __obj.asInstanceOf[MediaPlayerEvents]
   }
   
-  @scala.inline
-  implicit class MediaPlayerEventsMutableBuilder[Self <: MediaPlayerEvents] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlayerEvents](x: Self) {
     
-    @scala.inline
-    def setAST_IN_FUTURE(value: astInFuture): Self = StObject.set(x, "AST_IN_FUTURE", value.asInstanceOf[js.Any])
+    inline def setAST_IN_FUTURE(value: astInFuture): Self = StObject.set(x, "AST_IN_FUTURE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUFFER_EMPTY(value: bufferStalled): Self = StObject.set(x, "BUFFER_EMPTY", value.asInstanceOf[js.Any])
+    inline def setBUFFER_EMPTY(value: bufferStalled): Self = StObject.set(x, "BUFFER_EMPTY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUFFER_LEVEL_STATE_CHANGED(value: bufferStateChanged): Self = StObject.set(x, "BUFFER_LEVEL_STATE_CHANGED", value.asInstanceOf[js.Any])
+    inline def setBUFFER_LEVEL_STATE_CHANGED(value: bufferStateChanged): Self = StObject.set(x, "BUFFER_LEVEL_STATE_CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUFFER_LOADED(value: bufferLoaded): Self = StObject.set(x, "BUFFER_LOADED", value.asInstanceOf[js.Any])
+    inline def setBUFFER_LOADED(value: bufferLoaded): Self = StObject.set(x, "BUFFER_LOADED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAN_PLAY(value: canPlay): Self = StObject.set(x, "CAN_PLAY", value.asInstanceOf[js.Any])
+    inline def setCAN_PLAY(value: canPlay): Self = StObject.set(x, "CAN_PLAY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_CONTAINER_RESIZE(value: captionContainerResize): Self = StObject.set(x, "CAPTION_CONTAINER_RESIZE", value.asInstanceOf[js.Any])
+    inline def setCAPTION_CONTAINER_RESIZE(value: captionContainerResize): Self = StObject.set(x, "CAPTION_CONTAINER_RESIZE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAPTION_RENDERED(value: captionRendered): Self = StObject.set(x, "CAPTION_RENDERED", value.asInstanceOf[js.Any])
+    inline def setCAPTION_RENDERED(value: captionRendered): Self = StObject.set(x, "CAPTION_RENDERED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFRAGMENT_LOADING_ABANDONED(value: fragmentLoadingAbandoned): Self = StObject.set(x, "FRAGMENT_LOADING_ABANDONED", value.asInstanceOf[js.Any])
+    inline def setFRAGMENT_LOADING_ABANDONED(value: fragmentLoadingAbandoned): Self = StObject.set(x, "FRAGMENT_LOADING_ABANDONED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFRAGMENT_LOADING_COMPLETED(value: fragmentLoadingCompleted): Self = StObject.set(x, "FRAGMENT_LOADING_COMPLETED", value.asInstanceOf[js.Any])
+    inline def setFRAGMENT_LOADING_COMPLETED(value: fragmentLoadingCompleted): Self = StObject.set(x, "FRAGMENT_LOADING_COMPLETED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFRAGMENT_LOADING_STARTED(value: fragmentLoadingStarted): Self = StObject.set(x, "FRAGMENT_LOADING_STARTED", value.asInstanceOf[js.Any])
+    inline def setFRAGMENT_LOADING_STARTED(value: fragmentLoadingStarted): Self = StObject.set(x, "FRAGMENT_LOADING_STARTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_ADDED(value: public_keyAdded): Self = StObject.set(x, "KEY_ADDED", value.asInstanceOf[js.Any])
+    inline def setKEY_ADDED(value: public_keyAdded): Self = StObject.set(x, "KEY_ADDED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_ERROR(value: public_keyError): Self = StObject.set(x, "KEY_ERROR", value.asInstanceOf[js.Any])
+    inline def setKEY_ERROR(value: public_keyError): Self = StObject.set(x, "KEY_ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_MESSAGE(value: public_keyMessage): Self = StObject.set(x, "KEY_MESSAGE", value.asInstanceOf[js.Any])
+    inline def setKEY_MESSAGE(value: public_keyMessage): Self = StObject.set(x, "KEY_MESSAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_SESSION_CLOSED(value: public_keySessionClosed): Self = StObject.set(x, "KEY_SESSION_CLOSED", value.asInstanceOf[js.Any])
+    inline def setKEY_SESSION_CLOSED(value: public_keySessionClosed): Self = StObject.set(x, "KEY_SESSION_CLOSED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_SESSION_CREATED(value: public_keySessionCreated): Self = StObject.set(x, "KEY_SESSION_CREATED", value.asInstanceOf[js.Any])
+    inline def setKEY_SESSION_CREATED(value: public_keySessionCreated): Self = StObject.set(x, "KEY_SESSION_CREATED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_SESSION_REMOVED(value: public_keySessionRemoved): Self = StObject.set(x, "KEY_SESSION_REMOVED", value.asInstanceOf[js.Any])
+    inline def setKEY_SESSION_REMOVED(value: public_keySessionRemoved): Self = StObject.set(x, "KEY_SESSION_REMOVED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_STATUSES_CHANGED(value: public_keyStatusesChanged): Self = StObject.set(x, "KEY_STATUSES_CHANGED", value.asInstanceOf[js.Any])
+    inline def setKEY_STATUSES_CHANGED(value: public_keyStatusesChanged): Self = StObject.set(x, "KEY_STATUSES_CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKEY_SYSTEM_SELECTED(value: public_keySystemSelected): Self = StObject.set(x, "KEY_SYSTEM_SELECTED", value.asInstanceOf[js.Any])
+    inline def setKEY_SYSTEM_SELECTED(value: public_keySystemSelected): Self = StObject.set(x, "KEY_SYSTEM_SELECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLICENSE_REQUEST_COMPLETE(value: public_licenseRequestComplete): Self = StObject.set(x, "LICENSE_REQUEST_COMPLETE", value.asInstanceOf[js.Any])
+    inline def setLICENSE_REQUEST_COMPLETE(value: public_licenseRequestComplete): Self = StObject.set(x, "LICENSE_REQUEST_COMPLETE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOG(value: log): Self = StObject.set(x, "LOG", value.asInstanceOf[js.Any])
+    inline def setLOG(value: log): Self = StObject.set(x, "LOG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMANIFEST_LOADED(value: manifestLoaded): Self = StObject.set(x, "MANIFEST_LOADED", value.asInstanceOf[js.Any])
+    inline def setMANIFEST_LOADED(value: manifestLoaded): Self = StObject.set(x, "MANIFEST_LOADED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMETRICS_CHANGED(value: metricsChanged): Self = StObject.set(x, "METRICS_CHANGED", value.asInstanceOf[js.Any])
+    inline def setMETRICS_CHANGED(value: metricsChanged): Self = StObject.set(x, "METRICS_CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMETRIC_ADDED(value: metricAdded): Self = StObject.set(x, "METRIC_ADDED", value.asInstanceOf[js.Any])
+    inline def setMETRIC_ADDED(value: metricAdded): Self = StObject.set(x, "METRIC_ADDED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMETRIC_CHANGED(value: metricChanged): Self = StObject.set(x, "METRIC_CHANGED", value.asInstanceOf[js.Any])
+    inline def setMETRIC_CHANGED(value: metricChanged): Self = StObject.set(x, "METRIC_CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMETRIC_UPDATED(value: metricUpdated): Self = StObject.set(x, "METRIC_UPDATED", value.asInstanceOf[js.Any])
+    inline def setMETRIC_UPDATED(value: metricUpdated): Self = StObject.set(x, "METRIC_UPDATED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPERIOD_SWITCH_COMPLETED(value: periodSwitchCompleted): Self = StObject.set(x, "PERIOD_SWITCH_COMPLETED", value.asInstanceOf[js.Any])
+    inline def setPERIOD_SWITCH_COMPLETED(value: periodSwitchCompleted): Self = StObject.set(x, "PERIOD_SWITCH_COMPLETED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPERIOD_SWITCH_STARTED(value: periodSwitchStarted): Self = StObject.set(x, "PERIOD_SWITCH_STARTED", value.asInstanceOf[js.Any])
+    inline def setPERIOD_SWITCH_STARTED(value: periodSwitchStarted): Self = StObject.set(x, "PERIOD_SWITCH_STARTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_ENDED(value: playbackEnded): Self = StObject.set(x, "PLAYBACK_ENDED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_ENDED(value: playbackEnded): Self = StObject.set(x, "PLAYBACK_ENDED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_ERROR(value: playbackError): Self = StObject.set(x, "PLAYBACK_ERROR", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_ERROR(value: playbackError): Self = StObject.set(x, "PLAYBACK_ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_METADATA_LOADED(value: playbackMetaDataLoaded): Self = StObject.set(x, "PLAYBACK_METADATA_LOADED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_METADATA_LOADED(value: playbackMetaDataLoaded): Self = StObject.set(x, "PLAYBACK_METADATA_LOADED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_NOT_ALLOWED(value: playbackNotAllowed): Self = StObject.set(x, "PLAYBACK_NOT_ALLOWED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_NOT_ALLOWED(value: playbackNotAllowed): Self = StObject.set(x, "PLAYBACK_NOT_ALLOWED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_PAUSED(value: playbackPaused): Self = StObject.set(x, "PLAYBACK_PAUSED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_PAUSED(value: playbackPaused): Self = StObject.set(x, "PLAYBACK_PAUSED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_PLAYING(value: playbackPlaying): Self = StObject.set(x, "PLAYBACK_PLAYING", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_PLAYING(value: playbackPlaying): Self = StObject.set(x, "PLAYBACK_PLAYING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_PROGRESS(value: playbackProgress): Self = StObject.set(x, "PLAYBACK_PROGRESS", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_PROGRESS(value: playbackProgress): Self = StObject.set(x, "PLAYBACK_PROGRESS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_RATE_CHANGED(value: playbackRateChanged): Self = StObject.set(x, "PLAYBACK_RATE_CHANGED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_RATE_CHANGED(value: playbackRateChanged): Self = StObject.set(x, "PLAYBACK_RATE_CHANGED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_SEEKED(value: playbackSeeked): Self = StObject.set(x, "PLAYBACK_SEEKED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_SEEKED(value: playbackSeeked): Self = StObject.set(x, "PLAYBACK_SEEKED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_SEEKING(value: playbackSeeking): Self = StObject.set(x, "PLAYBACK_SEEKING", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_SEEKING(value: playbackSeeking): Self = StObject.set(x, "PLAYBACK_SEEKING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_STALLED(value: playbackStalled): Self = StObject.set(x, "PLAYBACK_STALLED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_STALLED(value: playbackStalled): Self = StObject.set(x, "PLAYBACK_STALLED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_STARTED(value: playbackStarted): Self = StObject.set(x, "PLAYBACK_STARTED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_STARTED(value: playbackStarted): Self = StObject.set(x, "PLAYBACK_STARTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_TIME_UPDATED(value: playbackTimeUpdated): Self = StObject.set(x, "PLAYBACK_TIME_UPDATED", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_TIME_UPDATED(value: playbackTimeUpdated): Self = StObject.set(x, "PLAYBACK_TIME_UPDATED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPLAYBACK_WAITING(value: playbackWaiting): Self = StObject.set(x, "PLAYBACK_WAITING", value.asInstanceOf[js.Any])
+    inline def setPLAYBACK_WAITING(value: playbackWaiting): Self = StObject.set(x, "PLAYBACK_WAITING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPROTECTION_CREATED(value: public_protectioncreated): Self = StObject.set(x, "PROTECTION_CREATED", value.asInstanceOf[js.Any])
+    inline def setPROTECTION_CREATED(value: public_protectioncreated): Self = StObject.set(x, "PROTECTION_CREATED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPROTECTION_DESTROYED(value: public_protectiondestroyed): Self = StObject.set(x, "PROTECTION_DESTROYED", value.asInstanceOf[js.Any])
+    inline def setPROTECTION_DESTROYED(value: public_protectiondestroyed): Self = StObject.set(x, "PROTECTION_DESTROYED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUALITY_CHANGE_RENDERED(value: qualityChangeRendered): Self = StObject.set(x, "QUALITY_CHANGE_RENDERED", value.asInstanceOf[js.Any])
+    inline def setQUALITY_CHANGE_RENDERED(value: qualityChangeRendered): Self = StObject.set(x, "QUALITY_CHANGE_RENDERED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUALITY_CHANGE_REQUESTED(value: qualityChangeRequested): Self = StObject.set(x, "QUALITY_CHANGE_REQUESTED", value.asInstanceOf[js.Any])
+    inline def setQUALITY_CHANGE_REQUESTED(value: qualityChangeRequested): Self = StObject.set(x, "QUALITY_CHANGE_REQUESTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTREAM_INITIALIZED(value: streamInitialized): Self = StObject.set(x, "STREAM_INITIALIZED", value.asInstanceOf[js.Any])
+    inline def setSTREAM_INITIALIZED(value: streamInitialized): Self = StObject.set(x, "STREAM_INITIALIZED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEXT_TRACKS_ADDED(value: allTextTracksAdded): Self = StObject.set(x, "TEXT_TRACKS_ADDED", value.asInstanceOf[js.Any])
+    inline def setTEXT_TRACKS_ADDED(value: allTextTracksAdded): Self = StObject.set(x, "TEXT_TRACKS_ADDED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTEXT_TRACK_ADDED(value: textTrackAdded): Self = StObject.set(x, "TEXT_TRACK_ADDED", value.asInstanceOf[js.Any])
+    inline def setTEXT_TRACK_ADDED(value: textTrackAdded): Self = StObject.set(x, "TEXT_TRACK_ADDED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTRACK_CHANGE_RENDERED(value: trackChangeRendered): Self = StObject.set(x, "TRACK_CHANGE_RENDERED", value.asInstanceOf[js.Any])
+    inline def setTRACK_CHANGE_RENDERED(value: trackChangeRendered): Self = StObject.set(x, "TRACK_CHANGE_RENDERED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTML_PARSED(value: ttmlParsed): Self = StObject.set(x, "TTML_PARSED", value.asInstanceOf[js.Any])
+    inline def setTTML_PARSED(value: ttmlParsed): Self = StObject.set(x, "TTML_PARSED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTML_TO_PARSE(value: ttmlToParse): Self = StObject.set(x, "TTML_TO_PARSE", value.asInstanceOf[js.Any])
+    inline def setTTML_TO_PARSE(value: ttmlToParse): Self = StObject.set(x, "TTML_TO_PARSE", value.asInstanceOf[js.Any])
   }
 }

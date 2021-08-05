@@ -150,8 +150,7 @@ object mod {
   }
   object HashRingOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       compatibility: hash_ring | ketama,
       `default port`: Double,
       `max cache size`: Double,
@@ -165,23 +164,17 @@ object mod {
       __obj.asInstanceOf[HashRingOptions]
     }
     
-    @scala.inline
-    implicit class HashRingOptionsMutableBuilder[Self <: HashRingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HashRingOptions](x: Self) {
       
-      @scala.inline
-      def setCompatibility(value: hash_ring | ketama): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
+      inline def setCompatibility(value: hash_ring | ketama): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDefault port`(value: Double): Self = StObject.set(x, "default port", value.asInstanceOf[js.Any])
+      inline def `setDefault port`(value: Double): Self = StObject.set(x, "default port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMax cache size`(value: Double): Self = StObject.set(x, "max cache size", value.asInstanceOf[js.Any])
+      inline def `setMax cache size`(value: Double): Self = StObject.set(x, "max cache size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: Double): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setVnode count`(value: Double): Self = StObject.set(x, "vnode count", value.asInstanceOf[js.Any])
+      inline def `setVnode count`(value: Double): Self = StObject.set(x, "vnode count", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,20 +186,16 @@ object mod {
   }
   object ServerConfig {
     
-    @scala.inline
-    def apply(vnodes: Double, weight: Double): ServerConfig = {
+    inline def apply(vnodes: Double, weight: Double): ServerConfig = {
       val __obj = js.Dynamic.literal(vnodes = vnodes.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerConfig]
     }
     
-    @scala.inline
-    implicit class ServerConfigMutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServerConfig](x: Self) {
       
-      @scala.inline
-      def setVnodes(value: Double): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
+      inline def setVnodes(value: Double): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }
   }
   

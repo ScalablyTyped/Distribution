@@ -22,20 +22,16 @@ object textAreaBoldMod extends Shortcut {
   }
   object TextAreaBoldProps {
     
-    @scala.inline
-    def apply(): TextAreaBoldProps = {
+    inline def apply(): TextAreaBoldProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAreaBoldProps]
     }
     
-    @scala.inline
-    implicit class TextAreaBoldPropsMutableBuilder[Self <: TextAreaBoldProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaBoldProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

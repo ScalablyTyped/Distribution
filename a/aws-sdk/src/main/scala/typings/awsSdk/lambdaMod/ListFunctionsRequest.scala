@@ -28,37 +28,27 @@ trait ListFunctionsRequest extends StObject {
 }
 object ListFunctionsRequest {
   
-  @scala.inline
-  def apply(): ListFunctionsRequest = {
+  inline def apply(): ListFunctionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFunctionsRequest]
   }
   
-  @scala.inline
-  implicit class ListFunctionsRequestMutableBuilder[Self <: ListFunctionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFunctionsRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionVersion(value: FunctionVersion): Self = StObject.set(x, "FunctionVersion", value.asInstanceOf[js.Any])
+    inline def setFunctionVersion(value: FunctionVersion): Self = StObject.set(x, "FunctionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionVersionUndefined: Self = StObject.set(x, "FunctionVersion", js.undefined)
+    inline def setFunctionVersionUndefined: Self = StObject.set(x, "FunctionVersion", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMasterRegion(value: MasterRegion): Self = StObject.set(x, "MasterRegion", value.asInstanceOf[js.Any])
+    inline def setMasterRegion(value: MasterRegion): Self = StObject.set(x, "MasterRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterRegionUndefined: Self = StObject.set(x, "MasterRegion", js.undefined)
+    inline def setMasterRegionUndefined: Self = StObject.set(x, "MasterRegion", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxListItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

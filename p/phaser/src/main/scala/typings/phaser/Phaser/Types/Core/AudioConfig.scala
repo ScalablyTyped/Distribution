@@ -27,31 +27,23 @@ trait AudioConfig extends StObject {
 }
 object AudioConfig {
   
-  @scala.inline
-  def apply(): AudioConfig = {
+  inline def apply(): AudioConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioConfig]
   }
   
-  @scala.inline
-  implicit class AudioConfigMutableBuilder[Self <: AudioConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AudioConfig](x: Self) {
     
-    @scala.inline
-    def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setDisableWebAudio(value: Boolean): Self = StObject.set(x, "disableWebAudio", value.asInstanceOf[js.Any])
+    inline def setDisableWebAudio(value: Boolean): Self = StObject.set(x, "disableWebAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableWebAudioUndefined: Self = StObject.set(x, "disableWebAudio", js.undefined)
+    inline def setDisableWebAudioUndefined: Self = StObject.set(x, "disableWebAudio", js.undefined)
     
-    @scala.inline
-    def setNoAudio(value: Boolean): Self = StObject.set(x, "noAudio", value.asInstanceOf[js.Any])
+    inline def setNoAudio(value: Boolean): Self = StObject.set(x, "noAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAudioUndefined: Self = StObject.set(x, "noAudio", js.undefined)
+    inline def setNoAudioUndefined: Self = StObject.set(x, "noAudio", js.undefined)
   }
 }

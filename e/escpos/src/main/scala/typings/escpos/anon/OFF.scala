@@ -15,19 +15,15 @@ trait OFF extends StObject {
 }
 object OFF {
   
-  @scala.inline
-  def apply(): OFF = {
+  inline def apply(): OFF = {
     val __obj = js.Dynamic.literal(OFF = "\u001DEC\u0000", ON = "\u001DEC\u0001")
     __obj.asInstanceOf[OFF]
   }
   
-  @scala.inline
-  implicit class OFFMutableBuilder[Self <: OFF] (val x: Self) extends AnyVal {
+  extension [Self <: OFF](x: Self) {
     
-    @scala.inline
-    def setOFF(value: InformationseparatorthreeECNull): Self = StObject.set(x, "OFF", value.asInstanceOf[js.Any])
+    inline def setOFF(value: InformationseparatorthreeECNull): Self = StObject.set(x, "OFF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setON(value: InformationseparatorthreeECStartofheading): Self = StObject.set(x, "ON", value.asInstanceOf[js.Any])
+    inline def setON(value: InformationseparatorthreeECStartofheading): Self = StObject.set(x, "ON", value.asInstanceOf[js.Any])
   }
 }

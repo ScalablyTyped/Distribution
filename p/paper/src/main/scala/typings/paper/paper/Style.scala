@@ -131,8 +131,7 @@ trait Style extends StObject {
 }
 object Style {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dashArray: js.Array[Double],
     dashOffset: Double,
     fillRule: String,
@@ -154,82 +153,56 @@ object Style {
     __obj.asInstanceOf[Style]
   }
   
-  @scala.inline
-  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+  extension [Self <: Style](x: Self) {
     
-    @scala.inline
-    def setDashArray(value: js.Array[Double]): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
+    inline def setDashArray(value: js.Array[Double]): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value :_*))
+    inline def setDashArrayVarargs(value: Double*): Self = StObject.set(x, "dashArray", js.Array(value :_*))
     
-    @scala.inline
-    def setDashOffset(value: Double): Self = StObject.set(x, "dashOffset", value.asInstanceOf[js.Any])
+    inline def setDashOffset(value: Double): Self = StObject.set(x, "dashOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColor(value: Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorNull: Self = StObject.set(x, "fillColor", null)
+    inline def setFillColorNull: Self = StObject.set(x, "fillColor", null)
     
-    @scala.inline
-    def setFillRule(value: String): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    inline def setFillRule(value: String): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeight(value: String | Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: String | Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustification(value: String): Self = StObject.set(x, "justification", value.asInstanceOf[js.Any])
+    inline def setJustification(value: String): Self = StObject.set(x, "justification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeading(value: Double | String): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+    inline def setLeading(value: Double | String): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+    inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColor(value: Color): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    inline def setSelectedColor(value: Color): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColorNull: Self = StObject.set(x, "selectedColor", null)
+    inline def setSelectedColorNull: Self = StObject.set(x, "selectedColor", null)
     
-    @scala.inline
-    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
+    inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorNull: Self = StObject.set(x, "shadowColor", null)
+    inline def setShadowColorNull: Self = StObject.set(x, "shadowColor", null)
     
-    @scala.inline
-    def setShadowOffset(value: Point): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    inline def setShadowOffset(value: Point): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeCap(value: String): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
+    inline def setStrokeCap(value: String): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColor(value: Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorNull: Self = StObject.set(x, "strokeColor", null)
+    inline def setStrokeColorNull: Self = StObject.set(x, "strokeColor", null)
     
-    @scala.inline
-    def setStrokeJoin(value: String): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
+    inline def setStrokeJoin(value: String): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeScaling(value: Boolean): Self = StObject.set(x, "strokeScaling", value.asInstanceOf[js.Any])
+    inline def setStrokeScaling(value: Boolean): Self = StObject.set(x, "strokeScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

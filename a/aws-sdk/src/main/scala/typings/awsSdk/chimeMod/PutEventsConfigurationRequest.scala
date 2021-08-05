@@ -28,31 +28,23 @@ trait PutEventsConfigurationRequest extends StObject {
 }
 object PutEventsConfigurationRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, BotId: NonEmptyString): PutEventsConfigurationRequest = {
+  inline def apply(AccountId: NonEmptyString, BotId: NonEmptyString): PutEventsConfigurationRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BotId = BotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutEventsConfigurationRequestMutableBuilder[Self <: PutEventsConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventsConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
+    inline def setBotId(value: NonEmptyString): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaFunctionArn(value: SensitiveString): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
+    inline def setLambdaFunctionArn(value: SensitiveString): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
+    inline def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
     
-    @scala.inline
-    def setOutboundEventsHTTPSEndpoint(value: SensitiveString): Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", value.asInstanceOf[js.Any])
+    inline def setOutboundEventsHTTPSEndpoint(value: SensitiveString): Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundEventsHTTPSEndpointUndefined: Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", js.undefined)
+    inline def setOutboundEventsHTTPSEndpointUndefined: Self = StObject.set(x, "OutboundEventsHTTPSEndpoint", js.undefined)
   }
 }

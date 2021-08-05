@@ -38,8 +38,7 @@ trait CreateAccountAssignmentRequest extends StObject {
 }
 object CreateAccountAssignmentRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InstanceArn: InstanceArn,
     PermissionSetArn: PermissionSetArn,
     PrincipalId: PrincipalId,
@@ -51,25 +50,18 @@ object CreateAccountAssignmentRequest {
     __obj.asInstanceOf[CreateAccountAssignmentRequest]
   }
   
-  @scala.inline
-  implicit class CreateAccountAssignmentRequestMutableBuilder[Self <: CreateAccountAssignmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccountAssignmentRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
+    inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
+    inline def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: TargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
   }
 }

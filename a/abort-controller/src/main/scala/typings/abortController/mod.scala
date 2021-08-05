@@ -68,17 +68,14 @@ object mod {
   }
   object EventAttributes {
     
-    @scala.inline
-    def apply(onabort: js.Any): EventAttributes = {
+    inline def apply(onabort: js.Any): EventAttributes = {
       val __obj = js.Dynamic.literal(onabort = onabort.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventAttributes]
     }
     
-    @scala.inline
-    implicit class EventAttributesMutableBuilder[Self <: EventAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: EventAttributes](x: Self) {
       
-      @scala.inline
-      def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+      inline def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,17 +85,14 @@ object mod {
   }
   object Events {
     
-    @scala.inline
-    def apply(abort: js.Any): Events = {
+    inline def apply(abort: js.Any): Events = {
       val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any])
       __obj.asInstanceOf[Events]
     }
     
-    @scala.inline
-    implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+    extension [Self <: Events](x: Self) {
       
-      @scala.inline
-      def setAbort(value: js.Any): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+      inline def setAbort(value: js.Any): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     }
   }
 }

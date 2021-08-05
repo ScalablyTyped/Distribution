@@ -22,8 +22,7 @@ trait SchemaDescription
 }
 object SchemaDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fields: Record[String, SchemaFieldDescription],
     label: String,
     meta: js.Object,
@@ -35,25 +34,18 @@ object SchemaDescription {
     __obj.asInstanceOf[SchemaDescription]
   }
   
-  @scala.inline
-  implicit class SchemaDescriptionMutableBuilder[Self <: SchemaDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDescription](x: Self) {
     
-    @scala.inline
-    def setFields(value: Record[String, SchemaFieldDescription]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Record[String, SchemaFieldDescription]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTests(value: js.Array[Name]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    inline def setTests(value: js.Array[Name]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsVarargs(value: Name*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: Name*): Self = StObject.set(x, "tests", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

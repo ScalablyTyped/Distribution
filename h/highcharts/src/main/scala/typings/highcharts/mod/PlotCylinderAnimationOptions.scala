@@ -10,19 +10,15 @@ trait PlotCylinderAnimationOptions extends StObject {
 }
 object PlotCylinderAnimationOptions {
   
-  @scala.inline
-  def apply(): PlotCylinderAnimationOptions = {
+  inline def apply(): PlotCylinderAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotCylinderAnimationOptions]
   }
   
-  @scala.inline
-  implicit class PlotCylinderAnimationOptionsMutableBuilder[Self <: PlotCylinderAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotCylinderAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

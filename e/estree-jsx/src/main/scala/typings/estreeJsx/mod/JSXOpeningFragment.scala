@@ -15,17 +15,14 @@ trait JSXOpeningFragment
 }
 object JSXOpeningFragment {
   
-  @scala.inline
-  def apply(): JSXOpeningFragment = {
+  inline def apply(): JSXOpeningFragment = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXOpeningFragment")
     __obj.asInstanceOf[JSXOpeningFragment]
   }
   
-  @scala.inline
-  implicit class JSXOpeningFragmentMutableBuilder[Self <: JSXOpeningFragment] (val x: Self) extends AnyVal {
+  extension [Self <: JSXOpeningFragment](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXOpeningFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXOpeningFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

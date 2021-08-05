@@ -14,20 +14,16 @@ object anon {
   }
   object Close {
     
-    @scala.inline
-    def apply(close: String, open: String): Close = {
+    inline def apply(close: String, open: String): Close = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[Close]
     }
     
-    @scala.inline
-    implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+    extension [Self <: Close](x: Self) {
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }
   }
 }

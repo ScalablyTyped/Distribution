@@ -19,26 +19,20 @@ object Express {
   }
   object MakePartialInput {
     
-    @scala.inline
-    def apply(model: js.Any, opts: Limit, result: js.Any, search: js.Object): MakePartialInput = {
+    inline def apply(model: js.Any, opts: Limit, result: js.Any, search: js.Object): MakePartialInput = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[MakePartialInput]
     }
     
-    @scala.inline
-    implicit class MakePartialInputMutableBuilder[Self <: MakePartialInput] (val x: Self) extends AnyVal {
+    extension [Self <: MakePartialInput](x: Self) {
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpts(value: Limit): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Limit): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: js.Object): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,29 +48,22 @@ object Express {
   }
   object PartialInput {
     
-    @scala.inline
-    def apply(count: Double, data: js.Any, offset: Double): PartialInput = {
+    inline def apply(count: Double, data: js.Any, offset: Double): PartialInput = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialInput]
     }
     
-    @scala.inline
-    implicit class PartialInputMutableBuilder[Self <: PartialInput] (val x: Self) extends AnyVal {
+    extension [Self <: PartialInput](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   

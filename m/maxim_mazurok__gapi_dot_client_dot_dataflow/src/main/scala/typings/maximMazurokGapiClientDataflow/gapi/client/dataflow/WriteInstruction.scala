@@ -14,25 +14,19 @@ trait WriteInstruction extends StObject {
 }
 object WriteInstruction {
   
-  @scala.inline
-  def apply(): WriteInstruction = {
+  inline def apply(): WriteInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WriteInstruction]
   }
   
-  @scala.inline
-  implicit class WriteInstructionMutableBuilder[Self <: WriteInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: WriteInstruction](x: Self) {
     
-    @scala.inline
-    def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setSink(value: Sink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: Sink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
+    inline def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
   }
 }

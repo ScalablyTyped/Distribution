@@ -29,7 +29,6 @@ object servicesPollyMod {
     @JSImport("aws-sdk/lib/services/polly", "PollyCustomizations.Presigner")
     @js.native
     def Presigner: Instantiable1[/* options */ js.UndefOr[PresignerOptions], typings.awsSdk.presignerMod.Presigner] = js.native
-    @scala.inline
-    def Presigner_=(x: Instantiable1[/* options */ js.UndefOr[PresignerOptions], Presigner]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Presigner")(x.asInstanceOf[js.Any])
+    inline def Presigner_=(x: Instantiable1[/* options */ js.UndefOr[PresignerOptions], Presigner]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Presigner")(x.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait BlendMixin extends StObject {
 }
 object BlendMixin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blendMode: BlendMode,
     effectStyleId: String,
     effects: js.Array[Effect],
@@ -30,25 +29,18 @@ object BlendMixin {
     __obj.asInstanceOf[BlendMixin]
   }
   
-  @scala.inline
-  implicit class BlendMixinMutableBuilder[Self <: BlendMixin] (val x: Self) extends AnyVal {
+  extension [Self <: BlendMixin](x: Self) {
     
-    @scala.inline
-    def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+    inline def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectStyleId(value: String): Self = StObject.set(x, "effectStyleId", value.asInstanceOf[js.Any])
+    inline def setEffectStyleId(value: String): Self = StObject.set(x, "effectStyleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffects(value: js.Array[Effect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: js.Array[Effect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsVarargs(value: Effect*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: Effect*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
-    @scala.inline
-    def setIsMask(value: Boolean): Self = StObject.set(x, "isMask", value.asInstanceOf[js.Any])
+    inline def setIsMask(value: Boolean): Self = StObject.set(x, "isMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }
 }

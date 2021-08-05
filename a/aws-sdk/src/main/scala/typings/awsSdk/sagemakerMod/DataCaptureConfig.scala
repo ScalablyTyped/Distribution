@@ -38,8 +38,7 @@ trait DataCaptureConfig extends StObject {
 }
 object DataCaptureConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaptureOptions: CaptureOptionList,
     DestinationS3Uri: DestinationS3Uri,
     InitialSamplingPercentage: SamplingPercentage
@@ -48,37 +47,26 @@ object DataCaptureConfig {
     __obj.asInstanceOf[DataCaptureConfig]
   }
   
-  @scala.inline
-  implicit class DataCaptureConfigMutableBuilder[Self <: DataCaptureConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DataCaptureConfig](x: Self) {
     
-    @scala.inline
-    def setCaptureContentTypeHeader(value: CaptureContentTypeHeader): Self = StObject.set(x, "CaptureContentTypeHeader", value.asInstanceOf[js.Any])
+    inline def setCaptureContentTypeHeader(value: CaptureContentTypeHeader): Self = StObject.set(x, "CaptureContentTypeHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureContentTypeHeaderUndefined: Self = StObject.set(x, "CaptureContentTypeHeader", js.undefined)
+    inline def setCaptureContentTypeHeaderUndefined: Self = StObject.set(x, "CaptureContentTypeHeader", js.undefined)
     
-    @scala.inline
-    def setCaptureOptions(value: CaptureOptionList): Self = StObject.set(x, "CaptureOptions", value.asInstanceOf[js.Any])
+    inline def setCaptureOptions(value: CaptureOptionList): Self = StObject.set(x, "CaptureOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureOptionsVarargs(value: CaptureOption*): Self = StObject.set(x, "CaptureOptions", js.Array(value :_*))
+    inline def setCaptureOptionsVarargs(value: CaptureOption*): Self = StObject.set(x, "CaptureOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DestinationS3Uri", value.asInstanceOf[js.Any])
+    inline def setDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DestinationS3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCapture(value: EnableCapture): Self = StObject.set(x, "EnableCapture", value.asInstanceOf[js.Any])
+    inline def setEnableCapture(value: EnableCapture): Self = StObject.set(x, "EnableCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCaptureUndefined: Self = StObject.set(x, "EnableCapture", js.undefined)
+    inline def setEnableCaptureUndefined: Self = StObject.set(x, "EnableCapture", js.undefined)
     
-    @scala.inline
-    def setInitialSamplingPercentage(value: SamplingPercentage): Self = StObject.set(x, "InitialSamplingPercentage", value.asInstanceOf[js.Any])
+    inline def setInitialSamplingPercentage(value: SamplingPercentage): Self = StObject.set(x, "InitialSamplingPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
   }
 }

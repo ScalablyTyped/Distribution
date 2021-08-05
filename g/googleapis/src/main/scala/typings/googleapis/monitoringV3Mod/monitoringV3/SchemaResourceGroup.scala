@@ -23,25 +23,19 @@ trait SchemaResourceGroup extends StObject {
 }
 object SchemaResourceGroup {
   
-  @scala.inline
-  def apply(): SchemaResourceGroup = {
+  inline def apply(): SchemaResourceGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceGroup]
   }
   
-  @scala.inline
-  implicit class SchemaResourceGroupMutableBuilder[Self <: SchemaResourceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceGroup](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

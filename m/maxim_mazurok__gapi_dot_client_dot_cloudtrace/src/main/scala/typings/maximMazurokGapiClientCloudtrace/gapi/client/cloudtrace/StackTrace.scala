@@ -18,25 +18,19 @@ trait StackTrace extends StObject {
 }
 object StackTrace {
   
-  @scala.inline
-  def apply(): StackTrace = {
+  inline def apply(): StackTrace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackTrace]
   }
   
-  @scala.inline
-  implicit class StackTraceMutableBuilder[Self <: StackTrace] (val x: Self) extends AnyVal {
+  extension [Self <: StackTrace](x: Self) {
     
-    @scala.inline
-    def setStackFrames(value: StackFrames): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
+    inline def setStackFrames(value: StackFrames): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
+    inline def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
     
-    @scala.inline
-    def setStackTraceHashId(value: String): Self = StObject.set(x, "stackTraceHashId", value.asInstanceOf[js.Any])
+    inline def setStackTraceHashId(value: String): Self = StObject.set(x, "stackTraceHashId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTraceHashIdUndefined: Self = StObject.set(x, "stackTraceHashId", js.undefined)
+    inline def setStackTraceHashIdUndefined: Self = StObject.set(x, "stackTraceHashId", js.undefined)
   }
 }

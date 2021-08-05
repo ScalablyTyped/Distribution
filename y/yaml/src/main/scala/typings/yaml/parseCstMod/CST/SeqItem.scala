@@ -16,8 +16,7 @@ trait SeqItem
 }
 object SeqItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -30,16 +29,12 @@ object SeqItem {
     __obj.asInstanceOf[SeqItem]
   }
   
-  @scala.inline
-  implicit class SeqItemMutableBuilder[Self <: SeqItem] (val x: Self) extends AnyVal {
+  extension [Self <: SeqItem](x: Self) {
     
-    @scala.inline
-    def setNode(value: ContentNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: ContentNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeNull: Self = StObject.set(x, "node", null)
+    inline def setNodeNull: Self = StObject.set(x, "node", null)
     
-    @scala.inline
-    def setType(value: SEQ_ITEM): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SEQ_ITEM): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

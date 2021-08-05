@@ -20,49 +20,35 @@ trait FillColorArgb extends StObject {
 }
 object FillColorArgb {
   
-  @scala.inline
-  def apply(): FillColorArgb = {
+  inline def apply(): FillColorArgb = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FillColorArgb]
   }
   
-  @scala.inline
-  implicit class FillColorArgbMutableBuilder[Self <: FillColorArgb] (val x: Self) extends AnyVal {
+  extension [Self <: FillColorArgb](x: Self) {
     
-    @scala.inline
-    def setFillColorArgb(value: String): Self = StObject.set(x, "fillColorArgb", value.asInstanceOf[js.Any])
+    inline def setFillColorArgb(value: String): Self = StObject.set(x, "fillColorArgb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorArgbUndefined: Self = StObject.set(x, "fillColorArgb", js.undefined)
+    inline def setFillColorArgbUndefined: Self = StObject.set(x, "fillColorArgb", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setMaskColorArgb(value: String): Self = StObject.set(x, "maskColorArgb", value.asInstanceOf[js.Any])
+    inline def setMaskColorArgb(value: String): Self = StObject.set(x, "maskColorArgb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskColorArgbUndefined: Self = StObject.set(x, "maskColorArgb", js.undefined)
+    inline def setMaskColorArgbUndefined: Self = StObject.set(x, "maskColorArgb", js.undefined)
     
-    @scala.inline
-    def setMoreButtonText(value: String): Self = StObject.set(x, "moreButtonText", value.asInstanceOf[js.Any])
+    inline def setMoreButtonText(value: String): Self = StObject.set(x, "moreButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreButtonTextUndefined: Self = StObject.set(x, "moreButtonText", js.undefined)
+    inline def setMoreButtonTextUndefined: Self = StObject.set(x, "moreButtonText", js.undefined)
     
-    @scala.inline
-    def setMoreButtonUrl(value: String): Self = StObject.set(x, "moreButtonUrl", value.asInstanceOf[js.Any])
+    inline def setMoreButtonUrl(value: String): Self = StObject.set(x, "moreButtonUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreButtonUrlUndefined: Self = StObject.set(x, "moreButtonUrl", js.undefined)
+    inline def setMoreButtonUrlUndefined: Self = StObject.set(x, "moreButtonUrl", js.undefined)
     
-    @scala.inline
-    def setTextColorArgb(value: String): Self = StObject.set(x, "textColorArgb", value.asInstanceOf[js.Any])
+    inline def setTextColorArgb(value: String): Self = StObject.set(x, "textColorArgb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorArgbUndefined: Self = StObject.set(x, "textColorArgb", js.undefined)
+    inline def setTextColorArgbUndefined: Self = StObject.set(x, "textColorArgb", js.undefined)
   }
 }

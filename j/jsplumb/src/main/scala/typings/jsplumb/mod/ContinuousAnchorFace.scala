@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContinuousAnchorFace extends StObject
 object ContinuousAnchorFace {
   
-  @scala.inline
-  def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
+  inline def bottom: bottom_ = "bottom".asInstanceOf[bottom_]
   
-  @scala.inline
-  def left: left_ = "left".asInstanceOf[left_]
+  inline def left: left_ = "left".asInstanceOf[left_]
   
-  @scala.inline
-  def right: right_ = "right".asInstanceOf[right_]
+  inline def right: right_ = "right".asInstanceOf[right_]
   
-  @scala.inline
-  def top: top_ = "top".asInstanceOf[top_]
+  inline def top: top_ = "top".asInstanceOf[top_]
 }

@@ -20,8 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(url: String): JackRabbit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[JackRabbit]
+  inline def default(url: String): JackRabbit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[JackRabbit]
   
   object jackrabbit {
     
@@ -99,23 +98,18 @@ object mod {
     }
     object PublishOptions {
       
-      @scala.inline
-      def apply(key: String): PublishOptions = {
+      inline def apply(key: String): PublishOptions = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
         __obj.asInstanceOf[PublishOptions]
       }
       
-      @scala.inline
-      implicit class PublishOptionsMutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PublishOptions](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReply(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
+        inline def setReply(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reply", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
+        inline def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
       }
     }
     
@@ -169,41 +163,30 @@ object mod {
     }
     object QueueOptions {
       
-      @scala.inline
-      def apply(): QueueOptions = {
+      inline def apply(): QueueOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[QueueOptions]
       }
       
-      @scala.inline
-      implicit class QueueOptionsMutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
+      extension [Self <: QueueOptions](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+        inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+        inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
         
-        @scala.inline
-        def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+        inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+        inline def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
+        inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
       }
     }
   }

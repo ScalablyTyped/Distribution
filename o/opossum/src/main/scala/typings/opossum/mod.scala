@@ -34,8 +34,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def isOurError(error: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOurError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOurError(error: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOurError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Bucket extends StObject {
     
@@ -63,8 +62,7 @@ object mod {
   }
   object Bucket {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheHits: Double,
       cacheMisses: Double,
       failures: Double,
@@ -81,44 +79,31 @@ object mod {
       __obj.asInstanceOf[Bucket]
     }
     
-    @scala.inline
-    implicit class BucketMutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
+    extension [Self <: Bucket](x: Self) {
       
-      @scala.inline
-      def setCacheHits(value: Double): Self = StObject.set(x, "cacheHits", value.asInstanceOf[js.Any])
+      inline def setCacheHits(value: Double): Self = StObject.set(x, "cacheHits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheMisses(value: Double): Self = StObject.set(x, "cacheMisses", value.asInstanceOf[js.Any])
+      inline def setCacheMisses(value: Double): Self = StObject.set(x, "cacheMisses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbacks(value: Double): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
+      inline def setFallbacks(value: Double): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFires(value: Double): Self = StObject.set(x, "fires", value.asInstanceOf[js.Any])
+      inline def setFires(value: Double): Self = StObject.set(x, "fires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatencyTimes(value: js.Array[Double]): Self = StObject.set(x, "latencyTimes", value.asInstanceOf[js.Any])
+      inline def setLatencyTimes(value: js.Array[Double]): Self = StObject.set(x, "latencyTimes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatencyTimesVarargs(value: Double*): Self = StObject.set(x, "latencyTimes", js.Array(value :_*))
+      inline def setLatencyTimesVarargs(value: Double*): Self = StObject.set(x, "latencyTimes", js.Array(value :_*))
       
-      @scala.inline
-      def setPercentiles(value: NumberDictionary[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
+      inline def setPercentiles(value: NumberDictionary[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejects(value: Double): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
+      inline def setRejects(value: Double): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSemaphoreRejections(value: Double): Self = StObject.set(x, "semaphoreRejections", value.asInstanceOf[js.Any])
+      inline def setSemaphoreRejections(value: Double): Self = StObject.set(x, "semaphoreRejections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccesses(value: Double): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
+      inline def setSuccesses(value: Double): Self = StObject.set(x, "successes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeouts(value: Double): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
+      inline def setTimeouts(value: Double): Self = StObject.set(x, "timeouts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,104 +349,72 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowWarmUp(value: Boolean): Self = StObject.set(x, "allowWarmUp", value.asInstanceOf[js.Any])
+      inline def setAllowWarmUp(value: Boolean): Self = StObject.set(x, "allowWarmUp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowWarmUpUndefined: Self = StObject.set(x, "allowWarmUp", js.undefined)
+      inline def setAllowWarmUpUndefined: Self = StObject.set(x, "allowWarmUp", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
+      inline def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setErrorFilter(value: /* err */ js.Any => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
+      inline def setErrorFilter(value: /* err */ js.Any => Boolean): Self = StObject.set(x, "errorFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
+      inline def setErrorFilterUndefined: Self = StObject.set(x, "errorFilter", js.undefined)
       
-      @scala.inline
-      def setErrorThresholdPercentage(value: Double): Self = StObject.set(x, "errorThresholdPercentage", value.asInstanceOf[js.Any])
+      inline def setErrorThresholdPercentage(value: Double): Self = StObject.set(x, "errorThresholdPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorThresholdPercentageUndefined: Self = StObject.set(x, "errorThresholdPercentage", js.undefined)
+      inline def setErrorThresholdPercentageUndefined: Self = StObject.set(x, "errorThresholdPercentage", js.undefined)
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
+      inline def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFailuresUndefined: Self = StObject.set(x, "maxFailures", js.undefined)
+      inline def setMaxFailuresUndefined: Self = StObject.set(x, "maxFailures", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResetTimeout(value: Double): Self = StObject.set(x, "resetTimeout", value.asInstanceOf[js.Any])
+      inline def setResetTimeout(value: Double): Self = StObject.set(x, "resetTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetTimeoutUndefined: Self = StObject.set(x, "resetTimeout", js.undefined)
+      inline def setResetTimeoutUndefined: Self = StObject.set(x, "resetTimeout", js.undefined)
       
-      @scala.inline
-      def setRollingCountBuckets(value: Double): Self = StObject.set(x, "rollingCountBuckets", value.asInstanceOf[js.Any])
+      inline def setRollingCountBuckets(value: Double): Self = StObject.set(x, "rollingCountBuckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollingCountBucketsUndefined: Self = StObject.set(x, "rollingCountBuckets", js.undefined)
+      inline def setRollingCountBucketsUndefined: Self = StObject.set(x, "rollingCountBuckets", js.undefined)
       
-      @scala.inline
-      def setRollingCountTimeout(value: Double): Self = StObject.set(x, "rollingCountTimeout", value.asInstanceOf[js.Any])
+      inline def setRollingCountTimeout(value: Double): Self = StObject.set(x, "rollingCountTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollingCountTimeoutUndefined: Self = StObject.set(x, "rollingCountTimeout", js.undefined)
+      inline def setRollingCountTimeoutUndefined: Self = StObject.set(x, "rollingCountTimeout", js.undefined)
       
-      @scala.inline
-      def setRollingPercentilesEnabled(value: Boolean): Self = StObject.set(x, "rollingPercentilesEnabled", value.asInstanceOf[js.Any])
+      inline def setRollingPercentilesEnabled(value: Boolean): Self = StObject.set(x, "rollingPercentilesEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollingPercentilesEnabledUndefined: Self = StObject.set(x, "rollingPercentilesEnabled", js.undefined)
+      inline def setRollingPercentilesEnabledUndefined: Self = StObject.set(x, "rollingPercentilesEnabled", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setVolumeThreshold(value: Double): Self = StObject.set(x, "volumeThreshold", value.asInstanceOf[js.Any])
+      inline def setVolumeThreshold(value: Double): Self = StObject.set(x, "volumeThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeThresholdUndefined: Self = StObject.set(x, "volumeThreshold", js.undefined)
+      inline def setVolumeThresholdUndefined: Self = StObject.set(x, "volumeThreshold", js.undefined)
     }
   }
   
@@ -473,8 +426,7 @@ object mod {
   }
   object Stats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheHits: Double,
       cacheMisses: Double,
       failures: Double,
@@ -492,11 +444,9 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setLatencyMean(value: Double): Self = StObject.set(x, "latencyMean", value.asInstanceOf[js.Any])
+      inline def setLatencyMean(value: Double): Self = StObject.set(x, "latencyMean", value.asInstanceOf[js.Any])
     }
   }
   

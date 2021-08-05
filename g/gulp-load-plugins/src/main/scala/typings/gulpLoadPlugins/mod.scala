@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /** Loads in any gulp plugins and attaches them to an object, freeing you up from having to manually require each gulp plugin. */
-  @scala.inline
-  def apply[T /* <: IGulpPlugins */](): T = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[T]
-  @scala.inline
-  def apply[T /* <: IGulpPlugins */](options: IOptions): T = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T /* <: IGulpPlugins */](): T = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[T]
+  inline def apply[T /* <: IGulpPlugins */](options: IOptions): T = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("gulp-load-plugins", JSImport.Namespace)
   @js.native
@@ -44,62 +42,44 @@ object mod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setCamelize(value: Boolean): Self = StObject.set(x, "camelize", value.asInstanceOf[js.Any])
+      inline def setCamelize(value: Boolean): Self = StObject.set(x, "camelize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamelizeUndefined: Self = StObject.set(x, "camelize", js.undefined)
+      inline def setCamelizeUndefined: Self = StObject.set(x, "camelize", js.undefined)
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.Array[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
+      inline def setPatternVarargs(value: String*): Self = StObject.set(x, "pattern", js.Array(value :_*))
       
-      @scala.inline
-      def setRename(value: IPluginNameMappings): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+      inline def setRename(value: IPluginNameMappings): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+      inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       
-      @scala.inline
-      def setReplaceString(value: RegExp): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
+      inline def setReplaceString(value: RegExp): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceStringUndefined: Self = StObject.set(x, "replaceString", js.undefined)
+      inline def setReplaceStringUndefined: Self = StObject.set(x, "replaceString", js.undefined)
       
-      @scala.inline
-      def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     }
   }
   

@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ontime(sched: OntimeSchedule, job: OntimeJob): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ontime")(sched.asInstanceOf[js.Any], job.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ontime(sched: OntimeSchedule, job: OntimeJob): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ontime")(sched.asInstanceOf[js.Any], job.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type OntimeJob = js.Function1[/* ot */ OntimeReport, Unit]
   
@@ -31,20 +30,16 @@ object mod {
   }
   object OntimeReport {
     
-    @scala.inline
-    def apply(cancel: () => Unit, done: () => Unit): OntimeReport = {
+    inline def apply(cancel: () => Unit, done: () => Unit): OntimeReport = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), done = js.Any.fromFunction0(done))
       __obj.asInstanceOf[OntimeReport]
     }
     
-    @scala.inline
-    implicit class OntimeReportMutableBuilder[Self <: OntimeReport] (val x: Self) extends AnyVal {
+    extension [Self <: OntimeReport](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+      inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     }
   }
   
@@ -111,50 +106,36 @@ object mod {
   }
   object OntimeSchedule {
     
-    @scala.inline
-    def apply(cycle: String | js.Array[String]): OntimeSchedule = {
+    inline def apply(cycle: String | js.Array[String]): OntimeSchedule = {
       val __obj = js.Dynamic.literal(cycle = cycle.asInstanceOf[js.Any])
       __obj.asInstanceOf[OntimeSchedule]
     }
     
-    @scala.inline
-    implicit class OntimeScheduleMutableBuilder[Self <: OntimeSchedule] (val x: Self) extends AnyVal {
+    extension [Self <: OntimeSchedule](x: Self) {
       
-      @scala.inline
-      def setCycle(value: String | js.Array[String]): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+      inline def setCycle(value: String | js.Array[String]): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCycleVarargs(value: String*): Self = StObject.set(x, "cycle", js.Array(value :_*))
+      inline def setCycleVarargs(value: String*): Self = StObject.set(x, "cycle", js.Array(value :_*))
       
-      @scala.inline
-      def setKeepLast(value: Boolean): Self = StObject.set(x, "keepLast", value.asInstanceOf[js.Any])
+      inline def setKeepLast(value: Boolean): Self = StObject.set(x, "keepLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepLastUndefined: Self = StObject.set(x, "keepLast", js.undefined)
+      inline def setKeepLastUndefined: Self = StObject.set(x, "keepLast", js.undefined)
       
-      @scala.inline
-      def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+      inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
     }
   }
 }

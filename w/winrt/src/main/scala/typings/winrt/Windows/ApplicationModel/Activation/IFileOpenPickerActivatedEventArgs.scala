@@ -13,8 +13,7 @@ trait IFileOpenPickerActivatedEventArgs
 }
 object IFileOpenPickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fileOpenPickerUI: FileOpenPickerUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -24,10 +23,8 @@ object IFileOpenPickerActivatedEventArgs {
     __obj.asInstanceOf[IFileOpenPickerActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IFileOpenPickerActivatedEventArgsMutableBuilder[Self <: IFileOpenPickerActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IFileOpenPickerActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFileOpenPickerUI(value: FileOpenPickerUI): Self = StObject.set(x, "fileOpenPickerUI", value.asInstanceOf[js.Any])
+    inline def setFileOpenPickerUI(value: FileOpenPickerUI): Self = StObject.set(x, "fileOpenPickerUI", value.asInstanceOf[js.Any])
   }
 }

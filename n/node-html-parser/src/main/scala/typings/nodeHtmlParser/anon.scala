@@ -22,9 +22,9 @@ object anon {
   @js.native
   trait HTMLElementvalidboolean extends StObject {
     
-    var _attrs: js.Any = js.native
+    /* private */ var _attrs: js.Any = js.native
     
-    var _rawAttrs: js.Any = js.native
+    /* private */ var _rawAttrs: js.Any = js.native
     
     /**
       * Append a child node to childNodes
@@ -115,7 +115,7 @@ object anon {
       */
     def rawAttributes: RawAttributes = js.native
     
-    var rawAttrs: js.Any = js.native
+    /* private */ var rawAttrs: js.Any = js.native
     
     var rawTagName: String = js.native
     
@@ -209,32 +209,24 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
+      inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
+      inline def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
       
-      @scala.inline
-      def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
+      inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
+      inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
     }
   }
   
@@ -251,35 +243,26 @@ object anon {
   }
   object PartialOptionsnoFixfalse {
     
-    @scala.inline
-    def apply(): PartialOptionsnoFixfalse = {
+    inline def apply(): PartialOptionsnoFixfalse = {
       val __obj = js.Dynamic.literal(noFix = false)
       __obj.asInstanceOf[PartialOptionsnoFixfalse]
     }
     
-    @scala.inline
-    implicit class PartialOptionsnoFixfalseMutableBuilder[Self <: PartialOptionsnoFixfalse] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsnoFixfalse](x: Self) {
       
-      @scala.inline
-      def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
+      inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
+      inline def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
       
-      @scala.inline
-      def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
+      inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
+      inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
       
-      @scala.inline
-      def setNoFix(value: `false`): Self = StObject.set(x, "noFix", value.asInstanceOf[js.Any])
+      inline def setNoFix(value: `false`): Self = StObject.set(x, "noFix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,35 +279,26 @@ object anon {
   }
   object PartialOptionsnoFixtrue {
     
-    @scala.inline
-    def apply(): PartialOptionsnoFixtrue = {
+    inline def apply(): PartialOptionsnoFixtrue = {
       val __obj = js.Dynamic.literal(noFix = true)
       __obj.asInstanceOf[PartialOptionsnoFixtrue]
     }
     
-    @scala.inline
-    implicit class PartialOptionsnoFixtrueMutableBuilder[Self <: PartialOptionsnoFixtrue] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsnoFixtrue](x: Self) {
       
-      @scala.inline
-      def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
+      inline def setBlockTextElements(value: StringDictionary[Boolean]): Self = StObject.set(x, "blockTextElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
+      inline def setBlockTextElementsUndefined: Self = StObject.set(x, "blockTextElements", js.undefined)
       
-      @scala.inline
-      def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
+      inline def setLowerCaseTagName(value: Boolean): Self = StObject.set(x, "lowerCaseTagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
+      inline def setLowerCaseTagNameUndefined: Self = StObject.set(x, "lowerCaseTagName", js.undefined)
       
-      @scala.inline
-      def setNoFix(value: `true`): Self = StObject.set(x, "noFix", value.asInstanceOf[js.Any])
+      inline def setNoFix(value: `true`): Self = StObject.set(x, "noFix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,17 +308,14 @@ object anon {
   }
   object Valid {
     
-    @scala.inline
-    def apply(valid: Boolean): Valid = {
+    inline def apply(valid: Boolean): Valid = {
       val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[Valid]
     }
     
-    @scala.inline
-    implicit class ValidMutableBuilder[Self <: Valid] (val x: Self) extends AnyVal {
+    extension [Self <: Valid](x: Self) {
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
 }

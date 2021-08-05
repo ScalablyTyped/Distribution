@@ -93,21 +93,16 @@ object s3AccessPointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID]): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
     
     /**
       * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean]
   }
   
   trait AccessPointArgs extends StObject {
@@ -144,47 +139,34 @@ object s3AccessPointMod {
   }
   object AccessPointArgs {
     
-    @scala.inline
-    def apply(bucket: Input[String]): AccessPointArgs = {
+    inline def apply(bucket: Input[String]): AccessPointArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessPointArgs]
     }
     
-    @scala.inline
-    implicit class AccessPointArgsMutableBuilder[Self <: AccessPointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AccessPointArgs](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setPublicAccessBlockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]): Self = StObject.set(x, "publicAccessBlockConfiguration", value.asInstanceOf[js.Any])
+      inline def setPublicAccessBlockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]): Self = StObject.set(x, "publicAccessBlockConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "publicAccessBlockConfiguration", js.undefined)
+      inline def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "publicAccessBlockConfiguration", js.undefined)
       
-      @scala.inline
-      def setVpcConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]): Self = StObject.set(x, "vpcConfiguration", value.asInstanceOf[js.Any])
+      inline def setVpcConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]): Self = StObject.set(x, "vpcConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigurationUndefined: Self = StObject.set(x, "vpcConfiguration", js.undefined)
+      inline def setVpcConfigurationUndefined: Self = StObject.set(x, "vpcConfiguration", js.undefined)
     }
   }
   
@@ -243,74 +225,52 @@ object s3AccessPointMod {
   }
   object AccessPointState {
     
-    @scala.inline
-    def apply(): AccessPointState = {
+    inline def apply(): AccessPointState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessPointState]
     }
     
-    @scala.inline
-    implicit class AccessPointStateMutableBuilder[Self <: AccessPointState] (val x: Self) extends AnyVal {
+    extension [Self <: AccessPointState](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setHasPublicAccessPolicy(value: Input[Boolean]): Self = StObject.set(x, "hasPublicAccessPolicy", value.asInstanceOf[js.Any])
+      inline def setHasPublicAccessPolicy(value: Input[Boolean]): Self = StObject.set(x, "hasPublicAccessPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasPublicAccessPolicyUndefined: Self = StObject.set(x, "hasPublicAccessPolicy", js.undefined)
+      inline def setHasPublicAccessPolicyUndefined: Self = StObject.set(x, "hasPublicAccessPolicy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetworkOrigin(value: Input[String]): Self = StObject.set(x, "networkOrigin", value.asInstanceOf[js.Any])
+      inline def setNetworkOrigin(value: Input[String]): Self = StObject.set(x, "networkOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkOriginUndefined: Self = StObject.set(x, "networkOrigin", js.undefined)
+      inline def setNetworkOriginUndefined: Self = StObject.set(x, "networkOrigin", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setPublicAccessBlockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]): Self = StObject.set(x, "publicAccessBlockConfiguration", value.asInstanceOf[js.Any])
+      inline def setPublicAccessBlockConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointPublicAccessBlockConfiguration]): Self = StObject.set(x, "publicAccessBlockConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "publicAccessBlockConfiguration", js.undefined)
+      inline def setPublicAccessBlockConfigurationUndefined: Self = StObject.set(x, "publicAccessBlockConfiguration", js.undefined)
       
-      @scala.inline
-      def setVpcConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]): Self = StObject.set(x, "vpcConfiguration", value.asInstanceOf[js.Any])
+      inline def setVpcConfiguration(value: Input[typings.pulumiAws.inputMod.s3.AccessPointVpcConfiguration]): Self = StObject.set(x, "vpcConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcConfigurationUndefined: Self = StObject.set(x, "vpcConfiguration", js.undefined)
+      inline def setVpcConfigurationUndefined: Self = StObject.set(x, "vpcConfiguration", js.undefined)
     }
   }
 }

@@ -18,20 +18,16 @@ trait HttpGatewayRoute extends StObject {
 }
 object HttpGatewayRoute {
   
-  @scala.inline
-  def apply(action: HttpGatewayRouteAction, `match`: HttpGatewayRouteMatch): HttpGatewayRoute = {
+  inline def apply(action: HttpGatewayRouteAction, `match`: HttpGatewayRouteMatch): HttpGatewayRoute = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpGatewayRoute]
   }
   
-  @scala.inline
-  implicit class HttpGatewayRouteMutableBuilder[Self <: HttpGatewayRoute] (val x: Self) extends AnyVal {
+  extension [Self <: HttpGatewayRoute](x: Self) {
     
-    @scala.inline
-    def setAction(value: HttpGatewayRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: HttpGatewayRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch(value: HttpGatewayRouteMatch): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: HttpGatewayRouteMatch): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
   }
 }

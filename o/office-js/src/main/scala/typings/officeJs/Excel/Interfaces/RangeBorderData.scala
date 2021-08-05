@@ -77,47 +77,35 @@ trait RangeBorderData extends StObject {
 }
 object RangeBorderData {
   
-  @scala.inline
-  def apply(): RangeBorderData = {
+  inline def apply(): RangeBorderData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeBorderData]
   }
   
-  @scala.inline
-  implicit class RangeBorderDataMutableBuilder[Self <: RangeBorderData] (val x: Self) extends AnyVal {
+  extension [Self <: RangeBorderData](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSideIndex(
+    inline def setSideIndex(
       value: BorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight | InsideVertical | InsideHorizontal | DiagonalDown | DiagonalUp
     ): Self = StObject.set(x, "sideIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
+    inline def setSideIndexUndefined: Self = StObject.set(x, "sideIndex", js.undefined)
     
-    @scala.inline
-    def setStyle(
+    inline def setStyle(
       value: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTintAndShade(value: scala.Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    inline def setTintAndShade(value: scala.Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
     
-    @scala.inline
-    def setWeight(value: BorderWeight | Hairline | Thin | Medium | Thick): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: BorderWeight | Hairline | Thin | Medium | Thick): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

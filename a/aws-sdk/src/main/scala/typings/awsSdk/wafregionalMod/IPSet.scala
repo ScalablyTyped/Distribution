@@ -23,28 +23,21 @@ trait IPSet extends StObject {
 }
 object IPSet {
   
-  @scala.inline
-  def apply(IPSetDescriptors: IPSetDescriptors, IPSetId: ResourceId): IPSet = {
+  inline def apply(IPSetDescriptors: IPSetDescriptors, IPSetId: ResourceId): IPSet = {
     val __obj = js.Dynamic.literal(IPSetDescriptors = IPSetDescriptors.asInstanceOf[js.Any], IPSetId = IPSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPSet]
   }
   
-  @scala.inline
-  implicit class IPSetMutableBuilder[Self <: IPSet] (val x: Self) extends AnyVal {
+  extension [Self <: IPSet](x: Self) {
     
-    @scala.inline
-    def setIPSetDescriptors(value: IPSetDescriptors): Self = StObject.set(x, "IPSetDescriptors", value.asInstanceOf[js.Any])
+    inline def setIPSetDescriptors(value: IPSetDescriptors): Self = StObject.set(x, "IPSetDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetDescriptorsVarargs(value: IPSetDescriptor*): Self = StObject.set(x, "IPSetDescriptors", js.Array(value :_*))
+    inline def setIPSetDescriptorsVarargs(value: IPSetDescriptor*): Self = StObject.set(x, "IPSetDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
+    inline def setIPSetId(value: ResourceId): Self = StObject.set(x, "IPSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

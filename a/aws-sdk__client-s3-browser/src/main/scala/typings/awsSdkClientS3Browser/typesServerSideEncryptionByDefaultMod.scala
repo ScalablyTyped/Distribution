@@ -22,23 +22,18 @@ object typesServerSideEncryptionByDefaultMod {
   }
   object ServerSideEncryptionByDefault {
     
-    @scala.inline
-    def apply(SSEAlgorithm: AES256 | awsColonkms | String): ServerSideEncryptionByDefault = {
+    inline def apply(SSEAlgorithm: AES256 | awsColonkms | String): ServerSideEncryptionByDefault = {
       val __obj = js.Dynamic.literal(SSEAlgorithm = SSEAlgorithm.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerSideEncryptionByDefault]
     }
     
-    @scala.inline
-    implicit class ServerSideEncryptionByDefaultMutableBuilder[Self <: ServerSideEncryptionByDefault] (val x: Self) extends AnyVal {
+    extension [Self <: ServerSideEncryptionByDefault](x: Self) {
       
-      @scala.inline
-      def setKMSMasterKeyID(value: String): Self = StObject.set(x, "KMSMasterKeyID", value.asInstanceOf[js.Any])
+      inline def setKMSMasterKeyID(value: String): Self = StObject.set(x, "KMSMasterKeyID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMSMasterKeyIDUndefined: Self = StObject.set(x, "KMSMasterKeyID", js.undefined)
+      inline def setKMSMasterKeyIDUndefined: Self = StObject.set(x, "KMSMasterKeyID", js.undefined)
       
-      @scala.inline
-      def setSSEAlgorithm(value: AES256 | awsColonkms | String): Self = StObject.set(x, "SSEAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSSEAlgorithm(value: AES256 | awsColonkms | String): Self = StObject.set(x, "SSEAlgorithm", value.asInstanceOf[js.Any])
     }
   }
   

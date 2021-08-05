@@ -9,20 +9,17 @@ object devtoolsDetectStrings {
   
   @js.native
   sealed trait devtoolschange extends StObject
-  @scala.inline
-  def devtoolschange: devtoolschange = "devtoolschange".asInstanceOf[devtoolschange]
+  inline def devtoolschange: devtoolschange = "devtoolschange".asInstanceOf[devtoolschange]
   
   @js.native
   sealed trait horizontal
     extends StObject
        with Orientation
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait vertical
     extends StObject
        with Orientation
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

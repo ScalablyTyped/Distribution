@@ -34,11 +34,11 @@ object graphicscontextMod {
       */
     def this(context: CanvasRenderingContext2D) = this()
     
-    var _context: js.Any = js.native
+    /* private */ var _context: js.Any = js.native
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
     def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double): Unit = js.native
     def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Boolean): Unit = js.native

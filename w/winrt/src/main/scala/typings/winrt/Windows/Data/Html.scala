@@ -14,17 +14,14 @@ object Html {
   }
   object IHtmlUtilities {
     
-    @scala.inline
-    def apply(convertToText: String => String): IHtmlUtilities = {
+    inline def apply(convertToText: String => String): IHtmlUtilities = {
       val __obj = js.Dynamic.literal(convertToText = js.Any.fromFunction1(convertToText))
       __obj.asInstanceOf[IHtmlUtilities]
     }
     
-    @scala.inline
-    implicit class IHtmlUtilitiesMutableBuilder[Self <: IHtmlUtilities] (val x: Self) extends AnyVal {
+    extension [Self <: IHtmlUtilities](x: Self) {
       
-      @scala.inline
-      def setConvertToText(value: String => String): Self = StObject.set(x, "convertToText", js.Any.fromFunction1(value))
+      inline def setConvertToText(value: String => String): Self = StObject.set(x, "convertToText", js.Any.fromFunction1(value))
     }
   }
 }

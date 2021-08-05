@@ -20,25 +20,19 @@ trait TypeofPathConstraint extends StObject {
 }
 object TypeofPathConstraint {
   
-  @scala.inline
-  def apply(AFTER: Double, BEFORE: Double, NONE: Double, epsilon: Double): TypeofPathConstraint = {
+  inline def apply(AFTER: Double, BEFORE: Double, NONE: Double, epsilon: Double): TypeofPathConstraint = {
     val __obj = js.Dynamic.literal(AFTER = AFTER.asInstanceOf[js.Any], BEFORE = BEFORE.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], epsilon = epsilon.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPathConstraint]
   }
   
-  @scala.inline
-  implicit class TypeofPathConstraintMutableBuilder[Self <: TypeofPathConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPathConstraint](x: Self) {
     
-    @scala.inline
-    def setAFTER(value: Double): Self = StObject.set(x, "AFTER", value.asInstanceOf[js.Any])
+    inline def setAFTER(value: Double): Self = StObject.set(x, "AFTER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBEFORE(value: Double): Self = StObject.set(x, "BEFORE", value.asInstanceOf[js.Any])
+    inline def setBEFORE(value: Double): Self = StObject.set(x, "BEFORE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
+    inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
   }
 }

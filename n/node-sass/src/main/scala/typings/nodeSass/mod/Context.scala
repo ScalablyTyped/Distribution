@@ -15,22 +15,17 @@ trait Context
 }
 object Context {
   
-  @scala.inline
-  def apply(options: Options): Context = {
+  inline def apply(options: Options): Context = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
   
-  @scala.inline
-  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+  extension [Self <: Context](x: Self) {
     
-    @scala.inline
-    def setCallback(value: (/* err */ SassError, /* result */ Result) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* err */ SassError, /* result */ Result) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

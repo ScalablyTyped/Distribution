@@ -35,7 +35,7 @@ object libBuildMod {
   abstract class BuildCLI[T /* <: js.Object */] protected () extends StObject {
     def this(e: BuildRunnerDeps) = this()
     
-    var _resolvedProgram: js.Any = js.native
+    /* private */ var _resolvedProgram: js.Any = js.native
     
     def build(options: T): js.Promise[Unit] = js.native
     
@@ -49,7 +49,7 @@ object libBuildMod {
       */
     /* protected */ def buildEnvVars(options: T): js.Promise[ProcessEnv] = js.native
     
-    val e: BuildRunnerDeps = js.native
+    /* protected */ val e: BuildRunnerDeps = js.native
     
     /**
       * If true, the Build CLI will not prompt to be installed.
@@ -108,7 +108,7 @@ object libBuildMod {
     
     def determineEngineFromCommandLine(options: CommandLineOptions): String = js.native
     
-    val e: BuildRunnerDeps = js.native
+    /* protected */ val e: BuildRunnerDeps = js.native
     
     def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
     
@@ -148,29 +148,22 @@ object libBuildMod {
   }
   object BuildRunnerDeps {
     
-    @scala.inline
-    def apply(config: IConfig, log: ILogger, project: IProject, prompt: PromptModule, shell: IShell): BuildRunnerDeps = {
+    inline def apply(config: IConfig, log: ILogger, project: IProject, prompt: PromptModule, shell: IShell): BuildRunnerDeps = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
       __obj.asInstanceOf[BuildRunnerDeps]
     }
     
-    @scala.inline
-    implicit class BuildRunnerDepsMutableBuilder[Self <: BuildRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: BuildRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
   

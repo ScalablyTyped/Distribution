@@ -23,8 +23,7 @@ trait IIndexableContent extends StObject {
 }
 object IIndexableContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     properties: IMap[String, js.Any],
     stream: IRandomAccessStream,
@@ -34,19 +33,14 @@ object IIndexableContent {
     __obj.asInstanceOf[IIndexableContent]
   }
   
-  @scala.inline
-  implicit class IIndexableContentMutableBuilder[Self <: IIndexableContent] (val x: Self) extends AnyVal {
+  extension [Self <: IIndexableContent](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamContentType(value: String): Self = StObject.set(x, "streamContentType", value.asInstanceOf[js.Any])
+    inline def setStreamContentType(value: String): Self = StObject.set(x, "streamContentType", value.asInstanceOf[js.Any])
   }
 }

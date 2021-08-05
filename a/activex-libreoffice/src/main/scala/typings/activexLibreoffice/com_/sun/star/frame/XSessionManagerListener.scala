@@ -45,8 +45,7 @@ trait XSessionManagerListener
 }
 object XSessionManagerListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveInteraction: Boolean => Unit,
     disposing: EventObject => Unit,
@@ -60,19 +59,14 @@ object XSessionManagerListener {
     __obj.asInstanceOf[XSessionManagerListener]
   }
   
-  @scala.inline
-  implicit class XSessionManagerListenerMutableBuilder[Self <: XSessionManagerListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSessionManagerListener](x: Self) {
     
-    @scala.inline
-    def setApproveInteraction(value: Boolean => Unit): Self = StObject.set(x, "approveInteraction", js.Any.fromFunction1(value))
+    inline def setApproveInteraction(value: Boolean => Unit): Self = StObject.set(x, "approveInteraction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDoRestore(value: () => Boolean): Self = StObject.set(x, "doRestore", js.Any.fromFunction0(value))
+    inline def setDoRestore(value: () => Boolean): Self = StObject.set(x, "doRestore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoSave(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "doSave", js.Any.fromFunction2(value))
+    inline def setDoSave(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "doSave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShutdownCanceled(value: () => Unit): Self = StObject.set(x, "shutdownCanceled", js.Any.fromFunction0(value))
+    inline def setShutdownCanceled(value: () => Unit): Self = StObject.set(x, "shutdownCanceled", js.Any.fromFunction0(value))
   }
 }

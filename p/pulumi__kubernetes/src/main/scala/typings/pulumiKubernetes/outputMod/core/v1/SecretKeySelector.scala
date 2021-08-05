@@ -26,22 +26,17 @@ trait SecretKeySelector extends StObject {
 }
 object SecretKeySelector {
   
-  @scala.inline
-  def apply(key: String, name: String, optional: Boolean): SecretKeySelector = {
+  inline def apply(key: String, name: String, optional: Boolean): SecretKeySelector = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecretKeySelector]
   }
   
-  @scala.inline
-  implicit class SecretKeySelectorMutableBuilder[Self <: SecretKeySelector] (val x: Self) extends AnyVal {
+  extension [Self <: SecretKeySelector](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
   }
 }

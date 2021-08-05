@@ -23,22 +23,17 @@ trait ChannelIdKind extends StObject {
 }
 object ChannelIdKind {
   
-  @scala.inline
-  def apply(channelId: String, kind: String, videoId: String): ChannelIdKind = {
+  inline def apply(channelId: String, kind: String, videoId: String): ChannelIdKind = {
     val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelIdKind]
   }
   
-  @scala.inline
-  implicit class ChannelIdKindMutableBuilder[Self <: ChannelIdKind] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelIdKind](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

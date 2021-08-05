@@ -13,19 +13,15 @@ trait GetTableMetadataOutput extends StObject {
 }
 object GetTableMetadataOutput {
   
-  @scala.inline
-  def apply(): GetTableMetadataOutput = {
+  inline def apply(): GetTableMetadataOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTableMetadataOutput]
   }
   
-  @scala.inline
-  implicit class GetTableMetadataOutputMutableBuilder[Self <: GetTableMetadataOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTableMetadataOutput](x: Self) {
     
-    @scala.inline
-    def setTableMetadata(value: TableMetadata): Self = StObject.set(x, "TableMetadata", value.asInstanceOf[js.Any])
+    inline def setTableMetadata(value: TableMetadata): Self = StObject.set(x, "TableMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableMetadataUndefined: Self = StObject.set(x, "TableMetadata", js.undefined)
+    inline def setTableMetadataUndefined: Self = StObject.set(x, "TableMetadata", js.undefined)
   }
 }

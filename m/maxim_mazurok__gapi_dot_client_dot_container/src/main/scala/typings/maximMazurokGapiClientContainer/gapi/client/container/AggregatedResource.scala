@@ -10,16 +10,13 @@ trait AggregatedResource extends StObject {
 }
 object AggregatedResource {
   
-  @scala.inline
-  def apply(usableSubnetworks: UsableSubnetworksResource): AggregatedResource = {
+  inline def apply(usableSubnetworks: UsableSubnetworksResource): AggregatedResource = {
     val __obj = js.Dynamic.literal(usableSubnetworks = usableSubnetworks.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregatedResource]
   }
   
-  @scala.inline
-  implicit class AggregatedResourceMutableBuilder[Self <: AggregatedResource] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedResource](x: Self) {
     
-    @scala.inline
-    def setUsableSubnetworks(value: UsableSubnetworksResource): Self = StObject.set(x, "usableSubnetworks", value.asInstanceOf[js.Any])
+    inline def setUsableSubnetworks(value: UsableSubnetworksResource): Self = StObject.set(x, "usableSubnetworks", value.asInstanceOf[js.Any])
   }
 }

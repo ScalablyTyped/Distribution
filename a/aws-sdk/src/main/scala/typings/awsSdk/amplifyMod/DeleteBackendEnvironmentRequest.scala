@@ -18,19 +18,15 @@ trait DeleteBackendEnvironmentRequest extends StObject {
 }
 object DeleteBackendEnvironmentRequest {
   
-  @scala.inline
-  def apply(appId: AppId, environmentName: EnvironmentName): DeleteBackendEnvironmentRequest = {
+  inline def apply(appId: AppId, environmentName: EnvironmentName): DeleteBackendEnvironmentRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], environmentName = environmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackendEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBackendEnvironmentRequestMutableBuilder[Self <: DeleteBackendEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackendEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
   }
 }

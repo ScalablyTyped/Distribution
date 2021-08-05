@@ -23,8 +23,7 @@ object dataTableV2Mod {
     @JSImport("carbon-components/components/data-table-v2/data-table-v2", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object eventHandlers {
@@ -37,8 +36,7 @@ object dataTableV2Mod {
       @js.native
       def actionBarCancel: String = js.native
       
-      @scala.inline
-      def actionBarCancel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("action-bar-cancel")(x.asInstanceOf[js.Any])
+      inline def actionBarCancel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("action-bar-cancel")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/data-table-v2/data-table-v2", "default.eventHandlers.expand")
       @js.native
@@ -47,11 +45,9 @@ object dataTableV2Mod {
       @JSImport("carbon-components/components/data-table-v2/data-table-v2", "default.eventHandlers.expandAll")
       @js.native
       def expandAll: String = js.native
-      @scala.inline
-      def expandAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expandAll")(x.asInstanceOf[js.Any])
+      inline def expandAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expandAll")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def expand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expand")(x.asInstanceOf[js.Any])
+      inline def expand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expand")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/data-table-v2/data-table-v2", "default.eventHandlers.select")
       @js.native
@@ -61,17 +57,14 @@ object dataTableV2Mod {
       @js.native
       def selectAll: String = js.native
       
-      @scala.inline
-      def selectAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select-all")(x.asInstanceOf[js.Any])
+      inline def selectAll_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select-all")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def select_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
+      inline def select_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("select")(x.asInstanceOf[js.Any])
       
       @JSImport("carbon-components/components/data-table-v2/data-table-v2", "default.eventHandlers.sort")
       @js.native
       def sort: String = js.native
-      @scala.inline
-      def sort_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sort")(x.asInstanceOf[js.Any])
+      inline def sort_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sort")(x.asInstanceOf[js.Any])
     }
   }
 }

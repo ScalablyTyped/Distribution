@@ -24,8 +24,7 @@ trait Gestures extends StObject {
 }
 object Gestures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     descriptors: StackDescriptorMap,
     gestures: GestureValues,
     headerHeights: Record[String, Double],
@@ -36,28 +35,20 @@ object Gestures {
     __obj.asInstanceOf[Gestures]
   }
   
-  @scala.inline
-  implicit class GesturesMutableBuilder[Self <: Gestures] (val x: Self) extends AnyVal {
+  extension [Self <: Gestures](x: Self) {
     
-    @scala.inline
-    def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestures(value: GestureValues): Self = StObject.set(x, "gestures", value.asInstanceOf[js.Any])
+    inline def setGestures(value: GestureValues): Self = StObject.set(x, "gestures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderHeights(value: Record[String, Double]): Self = StObject.set(x, "headerHeights", value.asInstanceOf[js.Any])
+    inline def setHeaderHeights(value: Record[String, Double]): Self = StObject.set(x, "headerHeights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutes(value: js.Array[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
-    @scala.inline
-    def setScenes(value: js.Array[Scene[NavigationRoute[NavigationParams]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
+    inline def setScenes(value: js.Array[Scene[NavigationRoute[NavigationParams]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenesVarargs(value: Scene[NavigationRoute[NavigationParams]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
+    inline def setScenesVarargs(value: Scene[NavigationRoute[NavigationParams]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
   }
 }

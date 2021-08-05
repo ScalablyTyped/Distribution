@@ -12,25 +12,19 @@ trait ClusterOptions extends StObject {
 }
 object ClusterOptions {
   
-  @scala.inline
-  def apply(clusters: js.Array[ClusterType]): ClusterOptions = {
+  inline def apply(clusters: js.Array[ClusterType]): ClusterOptions = {
     val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]
   }
   
-  @scala.inline
-  implicit class ClusterOptionsMutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterOptions](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[ClusterType]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[ClusterType]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersVarargs(value: ClusterType*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: ClusterType*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: String): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
   }
 }

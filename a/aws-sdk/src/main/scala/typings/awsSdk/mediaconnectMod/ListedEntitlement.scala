@@ -23,25 +23,19 @@ trait ListedEntitlement extends StObject {
 }
 object ListedEntitlement {
   
-  @scala.inline
-  def apply(EntitlementArn: string, EntitlementName: string): ListedEntitlement = {
+  inline def apply(EntitlementArn: string, EntitlementName: string): ListedEntitlement = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn.asInstanceOf[js.Any], EntitlementName = EntitlementName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListedEntitlement]
   }
   
-  @scala.inline
-  implicit class ListedEntitlementMutableBuilder[Self <: ListedEntitlement] (val x: Self) extends AnyVal {
+  extension [Self <: ListedEntitlement](x: Self) {
     
-    @scala.inline
-    def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
+    inline def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTransferSubscriberFeePercentUndefined: Self = StObject.set(x, "DataTransferSubscriberFeePercent", js.undefined)
+    inline def setDataTransferSubscriberFeePercentUndefined: Self = StObject.set(x, "DataTransferSubscriberFeePercent", js.undefined)
     
-    @scala.inline
-    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
+    inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitlementName(value: string): Self = StObject.set(x, "EntitlementName", value.asInstanceOf[js.Any])
+    inline def setEntitlementName(value: string): Self = StObject.set(x, "EntitlementName", value.asInstanceOf[js.Any])
   }
 }

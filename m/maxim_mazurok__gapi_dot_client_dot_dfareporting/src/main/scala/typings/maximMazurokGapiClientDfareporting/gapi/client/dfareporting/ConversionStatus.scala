@@ -17,34 +17,25 @@ trait ConversionStatus extends StObject {
 }
 object ConversionStatus {
   
-  @scala.inline
-  def apply(): ConversionStatus = {
+  inline def apply(): ConversionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversionStatus]
   }
   
-  @scala.inline
-  implicit class ConversionStatusMutableBuilder[Self <: ConversionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ConversionStatus](x: Self) {
     
-    @scala.inline
-    def setConversion(value: Conversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
+    inline def setConversion(value: Conversion): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
+    inline def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[ConversionError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[ConversionError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: ConversionError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ConversionError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

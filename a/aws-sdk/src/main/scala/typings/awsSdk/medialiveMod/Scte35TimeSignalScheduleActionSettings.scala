@@ -13,19 +13,15 @@ trait Scte35TimeSignalScheduleActionSettings extends StObject {
 }
 object Scte35TimeSignalScheduleActionSettings {
   
-  @scala.inline
-  def apply(Scte35Descriptors: listOfScte35Descriptor): Scte35TimeSignalScheduleActionSettings = {
+  inline def apply(Scte35Descriptors: listOfScte35Descriptor): Scte35TimeSignalScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Scte35Descriptors = Scte35Descriptors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35TimeSignalScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class Scte35TimeSignalScheduleActionSettingsMutableBuilder[Self <: Scte35TimeSignalScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Scte35TimeSignalScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setScte35Descriptors(value: listOfScte35Descriptor): Self = StObject.set(x, "Scte35Descriptors", value.asInstanceOf[js.Any])
+    inline def setScte35Descriptors(value: listOfScte35Descriptor): Self = StObject.set(x, "Scte35Descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35DescriptorsVarargs(value: Scte35Descriptor*): Self = StObject.set(x, "Scte35Descriptors", js.Array(value :_*))
+    inline def setScte35DescriptorsVarargs(value: Scte35Descriptor*): Self = StObject.set(x, "Scte35Descriptors", js.Array(value :_*))
   }
 }

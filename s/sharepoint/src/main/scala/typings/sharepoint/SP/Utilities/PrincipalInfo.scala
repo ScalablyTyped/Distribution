@@ -31,8 +31,7 @@ trait PrincipalInfo
 }
 object PrincipalInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -52,34 +51,24 @@ object PrincipalInfo {
     __obj.asInstanceOf[PrincipalInfo]
   }
   
-  @scala.inline
-  implicit class PrincipalInfoMutableBuilder[Self <: PrincipalInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PrincipalInfo](x: Self) {
     
-    @scala.inline
-    def setGet_department(value: () => String): Self = StObject.set(x, "get_department", js.Any.fromFunction0(value))
+    inline def setGet_department(value: () => String): Self = StObject.set(x, "get_department", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
+    inline def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_email(value: () => String): Self = StObject.set(x, "get_email", js.Any.fromFunction0(value))
+    inline def setGet_email(value: () => String): Self = StObject.set(x, "get_email", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_jobTitle(value: () => String): Self = StObject.set(x, "get_jobTitle", js.Any.fromFunction0(value))
+    inline def setGet_jobTitle(value: () => String): Self = StObject.set(x, "get_jobTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_loginName(value: () => String): Self = StObject.set(x, "get_loginName", js.Any.fromFunction0(value))
+    inline def setGet_loginName(value: () => String): Self = StObject.set(x, "get_loginName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_mobile(value: () => String): Self = StObject.set(x, "get_mobile", js.Any.fromFunction0(value))
+    inline def setGet_mobile(value: () => String): Self = StObject.set(x, "get_mobile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_principalId(value: () => Double): Self = StObject.set(x, "get_principalId", js.Any.fromFunction0(value))
+    inline def setGet_principalId(value: () => Double): Self = StObject.set(x, "get_principalId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_principalType(value: () => PrincipalType): Self = StObject.set(x, "get_principalType", js.Any.fromFunction0(value))
+    inline def setGet_principalType(value: () => PrincipalType): Self = StObject.set(x, "get_principalType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_sIPAddress(value: () => String): Self = StObject.set(x, "get_sIPAddress", js.Any.fromFunction0(value))
+    inline def setGet_sIPAddress(value: () => String): Self = StObject.set(x, "get_sIPAddress", js.Any.fromFunction0(value))
   }
 }

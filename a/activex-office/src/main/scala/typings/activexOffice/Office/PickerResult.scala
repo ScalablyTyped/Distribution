@@ -22,7 +22,7 @@ trait PickerResult extends StObject {
   
   var ItemData: js.Any
   
-  @JSName("Office.PickerResult_typekey")
+  /* private */ @JSName("Office.PickerResult_typekey")
   var OfficeDotPickerResult_typekey: PickerResult
   
   var SIPId: String
@@ -33,8 +33,7 @@ trait PickerResult extends StObject {
 }
 object PickerResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     DisplayName: String,
@@ -52,40 +51,28 @@ object PickerResult {
     __obj.asInstanceOf[PickerResult]
   }
   
-  @scala.inline
-  implicit class PickerResultMutableBuilder[Self <: PickerResult] (val x: Self) extends AnyVal {
+  extension [Self <: PickerResult](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicateResults(value: js.Any): Self = StObject.set(x, "DuplicateResults", value.asInstanceOf[js.Any])
+    inline def setDuplicateResults(value: js.Any): Self = StObject.set(x, "DuplicateResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: PickerFields): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: PickerFields): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemData(value: js.Any): Self = StObject.set(x, "ItemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: js.Any): Self = StObject.set(x, "ItemData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotPickerResult_typekey(value: PickerResult): Self = StObject.set(x, "Office.PickerResult_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotPickerResult_typekey(value: PickerResult): Self = StObject.set(x, "Office.PickerResult_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSIPId(value: String): Self = StObject.set(x, "SIPId", value.asInstanceOf[js.Any])
+    inline def setSIPId(value: String): Self = StObject.set(x, "SIPId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubItems(value: js.Any): Self = StObject.set(x, "SubItems", value.asInstanceOf[js.Any])
+    inline def setSubItems(value: js.Any): Self = StObject.set(x, "SubItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

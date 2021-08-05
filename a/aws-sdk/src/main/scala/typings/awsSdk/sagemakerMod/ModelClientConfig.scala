@@ -18,25 +18,19 @@ trait ModelClientConfig extends StObject {
 }
 object ModelClientConfig {
   
-  @scala.inline
-  def apply(): ModelClientConfig = {
+  inline def apply(): ModelClientConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelClientConfig]
   }
   
-  @scala.inline
-  implicit class ModelClientConfigMutableBuilder[Self <: ModelClientConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ModelClientConfig](x: Self) {
     
-    @scala.inline
-    def setInvocationsMaxRetries(value: InvocationsMaxRetries): Self = StObject.set(x, "InvocationsMaxRetries", value.asInstanceOf[js.Any])
+    inline def setInvocationsMaxRetries(value: InvocationsMaxRetries): Self = StObject.set(x, "InvocationsMaxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationsMaxRetriesUndefined: Self = StObject.set(x, "InvocationsMaxRetries", js.undefined)
+    inline def setInvocationsMaxRetriesUndefined: Self = StObject.set(x, "InvocationsMaxRetries", js.undefined)
     
-    @scala.inline
-    def setInvocationsTimeoutInSeconds(value: InvocationsTimeoutInSeconds): Self = StObject.set(x, "InvocationsTimeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setInvocationsTimeoutInSeconds(value: InvocationsTimeoutInSeconds): Self = StObject.set(x, "InvocationsTimeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationsTimeoutInSecondsUndefined: Self = StObject.set(x, "InvocationsTimeoutInSeconds", js.undefined)
+    inline def setInvocationsTimeoutInSecondsUndefined: Self = StObject.set(x, "InvocationsTimeoutInSeconds", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait ParameterStringFilter extends StObject {
 }
 object ParameterStringFilter {
   
-  @scala.inline
-  def apply(Key: ParameterStringFilterKey): ParameterStringFilter = {
+  inline def apply(Key: ParameterStringFilterKey): ParameterStringFilter = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterStringFilter]
   }
   
-  @scala.inline
-  implicit class ParameterStringFilterMutableBuilder[Self <: ParameterStringFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterStringFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: ParameterStringFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ParameterStringFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOption(value: ParameterStringQueryOption): Self = StObject.set(x, "Option", value.asInstanceOf[js.Any])
+    inline def setOption(value: ParameterStringQueryOption): Self = StObject.set(x, "Option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "Option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "Option", js.undefined)
     
-    @scala.inline
-    def setValues(value: ParameterStringFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ParameterStringFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: ParameterStringFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ParameterStringFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -35,49 +35,35 @@ trait DescribeMaintenanceStartTimeOutput extends StObject {
 }
 object DescribeMaintenanceStartTimeOutput {
   
-  @scala.inline
-  def apply(): DescribeMaintenanceStartTimeOutput = {
+  inline def apply(): DescribeMaintenanceStartTimeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMaintenanceStartTimeOutput]
   }
   
-  @scala.inline
-  implicit class DescribeMaintenanceStartTimeOutputMutableBuilder[Self <: DescribeMaintenanceStartTimeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMaintenanceStartTimeOutput](x: Self) {
     
-    @scala.inline
-    def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "DayOfMonth", value.asInstanceOf[js.Any])
+    inline def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "DayOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfMonthUndefined: Self = StObject.set(x, "DayOfMonth", js.undefined)
+    inline def setDayOfMonthUndefined: Self = StObject.set(x, "DayOfMonth", js.undefined)
     
-    @scala.inline
-    def setDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "DayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "DayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "DayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "DayOfWeek", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setHourOfDay(value: HourOfDay): Self = StObject.set(x, "HourOfDay", value.asInstanceOf[js.Any])
+    inline def setHourOfDay(value: HourOfDay): Self = StObject.set(x, "HourOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourOfDayUndefined: Self = StObject.set(x, "HourOfDay", js.undefined)
+    inline def setHourOfDayUndefined: Self = StObject.set(x, "HourOfDay", js.undefined)
     
-    @scala.inline
-    def setMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "MinuteOfHour", value.asInstanceOf[js.Any])
+    inline def setMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "MinuteOfHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteOfHourUndefined: Self = StObject.set(x, "MinuteOfHour", js.undefined)
+    inline def setMinuteOfHourUndefined: Self = StObject.set(x, "MinuteOfHour", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: GatewayTimezone): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: GatewayTimezone): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

@@ -17,6 +17,5 @@ object TakeUntilStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(source: typings.wonderFrp.streamMod.Stream, otherSteam: typings.wonderFrp.streamMod.Stream): typings.wonderFrp.takeUntilStreamMod.TakeUntilStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], otherSteam.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.takeUntilStreamMod.TakeUntilStream]
+  inline def create(source: typings.wonderFrp.streamMod.Stream, otherSteam: typings.wonderFrp.streamMod.Stream): typings.wonderFrp.takeUntilStreamMod.TakeUntilStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], otherSteam.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.takeUntilStreamMod.TakeUntilStream]
 }

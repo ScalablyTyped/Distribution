@@ -13,19 +13,15 @@ trait ListResponse
 }
 object ListResponse {
   
-  @scala.inline
-  def apply(httpStatusCode: Double, invoices: js.Array[Invoice]): ListResponse = {
+  inline def apply(httpStatusCode: Double, invoices: js.Array[Invoice]): ListResponse = {
     val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any], invoices = invoices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResponse]
   }
   
-  @scala.inline
-  implicit class ListResponseMutableBuilder[Self <: ListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResponse](x: Self) {
     
-    @scala.inline
-    def setInvoices(value: js.Array[Invoice]): Self = StObject.set(x, "invoices", value.asInstanceOf[js.Any])
+    inline def setInvoices(value: js.Array[Invoice]): Self = StObject.set(x, "invoices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoicesVarargs(value: Invoice*): Self = StObject.set(x, "invoices", js.Array(value :_*))
+    inline def setInvoicesVarargs(value: Invoice*): Self = StObject.set(x, "invoices", js.Array(value :_*))
   }
 }

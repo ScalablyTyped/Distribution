@@ -15,22 +15,17 @@ trait OriginRequestPolicyHeadersConfig extends StObject {
 }
 object OriginRequestPolicyHeadersConfig {
   
-  @scala.inline
-  def apply(HeaderBehavior: OriginRequestPolicyHeaderBehavior): OriginRequestPolicyHeadersConfig = {
+  inline def apply(HeaderBehavior: OriginRequestPolicyHeaderBehavior): OriginRequestPolicyHeadersConfig = {
     val __obj = js.Dynamic.literal(HeaderBehavior = HeaderBehavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginRequestPolicyHeadersConfig]
   }
   
-  @scala.inline
-  implicit class OriginRequestPolicyHeadersConfigMutableBuilder[Self <: OriginRequestPolicyHeadersConfig] (val x: Self) extends AnyVal {
+  extension [Self <: OriginRequestPolicyHeadersConfig](x: Self) {
     
-    @scala.inline
-    def setHeaderBehavior(value: OriginRequestPolicyHeaderBehavior): Self = StObject.set(x, "HeaderBehavior", value.asInstanceOf[js.Any])
+    inline def setHeaderBehavior(value: OriginRequestPolicyHeaderBehavior): Self = StObject.set(x, "HeaderBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
   }
 }

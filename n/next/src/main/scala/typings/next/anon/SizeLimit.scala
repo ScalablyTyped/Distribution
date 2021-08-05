@@ -10,19 +10,15 @@ trait SizeLimit extends StObject {
 }
 object SizeLimit {
   
-  @scala.inline
-  def apply(): SizeLimit = {
+  inline def apply(): SizeLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeLimit]
   }
   
-  @scala.inline
-  implicit class SizeLimitMutableBuilder[Self <: SizeLimit] (val x: Self) extends AnyVal {
+  extension [Self <: SizeLimit](x: Self) {
     
-    @scala.inline
-    def setSizeLimit(value: Double | String): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+    inline def setSizeLimit(value: Double | String): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
+    inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
   }
 }

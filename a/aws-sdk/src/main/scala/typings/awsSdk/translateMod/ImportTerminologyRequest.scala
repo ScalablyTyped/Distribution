@@ -33,34 +33,25 @@ trait ImportTerminologyRequest extends StObject {
 }
 object ImportTerminologyRequest {
   
-  @scala.inline
-  def apply(MergeStrategy: MergeStrategy, Name: ResourceName, TerminologyData: TerminologyData): ImportTerminologyRequest = {
+  inline def apply(MergeStrategy: MergeStrategy, Name: ResourceName, TerminologyData: TerminologyData): ImportTerminologyRequest = {
     val __obj = js.Dynamic.literal(MergeStrategy = MergeStrategy.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TerminologyData = TerminologyData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportTerminologyRequest]
   }
   
-  @scala.inline
-  implicit class ImportTerminologyRequestMutableBuilder[Self <: ImportTerminologyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportTerminologyRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyUndefined: Self = StObject.set(x, "EncryptionKey", js.undefined)
+    inline def setEncryptionKeyUndefined: Self = StObject.set(x, "EncryptionKey", js.undefined)
     
-    @scala.inline
-    def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "MergeStrategy", value.asInstanceOf[js.Any])
+    inline def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "MergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyData(value: TerminologyData): Self = StObject.set(x, "TerminologyData", value.asInstanceOf[js.Any])
+    inline def setTerminologyData(value: TerminologyData): Self = StObject.set(x, "TerminologyData", value.asInstanceOf[js.Any])
   }
 }

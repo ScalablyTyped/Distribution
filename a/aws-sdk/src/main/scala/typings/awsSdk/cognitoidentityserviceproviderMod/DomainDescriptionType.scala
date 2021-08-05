@@ -48,61 +48,43 @@ trait DomainDescriptionType extends StObject {
 }
 object DomainDescriptionType {
   
-  @scala.inline
-  def apply(): DomainDescriptionType = {
+  inline def apply(): DomainDescriptionType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDescriptionType]
   }
   
-  @scala.inline
-  implicit class DomainDescriptionTypeMutableBuilder[Self <: DomainDescriptionType] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDescriptionType](x: Self) {
     
-    @scala.inline
-    def setAWSAccountId(value: AWSAccountIdType): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
+    inline def setAWSAccountId(value: AWSAccountIdType): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
+    inline def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
     
-    @scala.inline
-    def setCloudFrontDistribution(value: StringType): Self = StObject.set(x, "CloudFrontDistribution", value.asInstanceOf[js.Any])
+    inline def setCloudFrontDistribution(value: StringType): Self = StObject.set(x, "CloudFrontDistribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFrontDistributionUndefined: Self = StObject.set(x, "CloudFrontDistribution", js.undefined)
+    inline def setCloudFrontDistributionUndefined: Self = StObject.set(x, "CloudFrontDistribution", js.undefined)
     
-    @scala.inline
-    def setCustomDomainConfig(value: CustomDomainConfigType): Self = StObject.set(x, "CustomDomainConfig", value.asInstanceOf[js.Any])
+    inline def setCustomDomainConfig(value: CustomDomainConfigType): Self = StObject.set(x, "CustomDomainConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDomainConfigUndefined: Self = StObject.set(x, "CustomDomainConfig", js.undefined)
+    inline def setCustomDomainConfigUndefined: Self = StObject.set(x, "CustomDomainConfig", js.undefined)
     
-    @scala.inline
-    def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setS3Bucket(value: S3BucketType): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3BucketType): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DomainStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DomainStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
+    inline def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
     
-    @scala.inline
-    def setVersion(value: DomainVersionType): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: DomainVersionType): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

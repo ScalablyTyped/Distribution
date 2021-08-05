@@ -28,40 +28,29 @@ trait Provider extends StObject {
 }
 object Provider {
   
-  @scala.inline
-  def apply(): Provider = {
+  inline def apply(): Provider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Provider]
   }
   
-  @scala.inline
-  implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
+  extension [Self <: Provider](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setRegistrationState(value: String): Self = StObject.set(x, "registrationState", value.asInstanceOf[js.Any])
+    inline def setRegistrationState(value: String): Self = StObject.set(x, "registrationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationStateUndefined: Self = StObject.set(x, "registrationState", js.undefined)
+    inline def setRegistrationStateUndefined: Self = StObject.set(x, "registrationState", js.undefined)
     
-    @scala.inline
-    def setResourceTypes(value: js.Array[ProviderResourceType]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
+    inline def setResourceTypes(value: js.Array[ProviderResourceType]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
+    inline def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
-    @scala.inline
-    def setResourceTypesVarargs(value: ProviderResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ProviderResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

@@ -19,8 +19,7 @@ trait ISearchCondition extends StObject {
 }
 object ISearchCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => ISearchCondition,
     ConditionType: MFConditionType,
     Expression: IExpression,
@@ -31,22 +30,16 @@ object ISearchCondition {
     __obj.asInstanceOf[ISearchCondition]
   }
   
-  @scala.inline
-  implicit class ISearchConditionMutableBuilder[Self <: ISearchCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchCondition](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ISearchCondition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISearchCondition): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConditionType(value: MFConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: MFConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: IExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: IExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: (IExpression, MFConditionType, ITypedValue) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
+    inline def setSet(value: (IExpression, MFConditionType, ITypedValue) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTypedValue(value: ITypedValue): Self = StObject.set(x, "TypedValue", value.asInstanceOf[js.Any])
+    inline def setTypedValue(value: ITypedValue): Self = StObject.set(x, "TypedValue", value.asInstanceOf[js.Any])
   }
 }

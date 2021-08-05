@@ -17,25 +17,19 @@ trait CaOptions extends StObject {
 }
 object CaOptions {
   
-  @scala.inline
-  def apply(): CaOptions = {
+  inline def apply(): CaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaOptions]
   }
   
-  @scala.inline
-  implicit class CaOptionsMutableBuilder[Self <: CaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CaOptions](x: Self) {
     
-    @scala.inline
-    def setIsCa(value: Boolean): Self = StObject.set(x, "isCa", value.asInstanceOf[js.Any])
+    inline def setIsCa(value: Boolean): Self = StObject.set(x, "isCa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaUndefined: Self = StObject.set(x, "isCa", js.undefined)
+    inline def setIsCaUndefined: Self = StObject.set(x, "isCa", js.undefined)
     
-    @scala.inline
-    def setMaxIssuerPathLength(value: Double): Self = StObject.set(x, "maxIssuerPathLength", value.asInstanceOf[js.Any])
+    inline def setMaxIssuerPathLength(value: Double): Self = StObject.set(x, "maxIssuerPathLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIssuerPathLengthUndefined: Self = StObject.set(x, "maxIssuerPathLength", js.undefined)
+    inline def setMaxIssuerPathLengthUndefined: Self = StObject.set(x, "maxIssuerPathLength", js.undefined)
   }
 }

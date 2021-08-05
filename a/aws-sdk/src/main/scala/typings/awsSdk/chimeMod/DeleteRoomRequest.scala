@@ -18,19 +18,15 @@ trait DeleteRoomRequest extends StObject {
 }
 object DeleteRoomRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, RoomId: NonEmptyString): DeleteRoomRequest = {
+  inline def apply(AccountId: NonEmptyString, RoomId: NonEmptyString): DeleteRoomRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], RoomId = RoomId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRoomRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRoomRequestMutableBuilder[Self <: DeleteRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRoomRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
+    inline def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
   }
 }

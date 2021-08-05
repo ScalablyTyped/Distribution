@@ -58,73 +58,51 @@ trait AccessCodeFormat extends StObject {
 }
 object AccessCodeFormat {
   
-  @scala.inline
-  def apply(): AccessCodeFormat = {
+  inline def apply(): AccessCodeFormat = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessCodeFormat]
   }
   
-  @scala.inline
-  implicit class AccessCodeFormatMutableBuilder[Self <: AccessCodeFormat] (val x: Self) extends AnyVal {
+  extension [Self <: AccessCodeFormat](x: Self) {
     
-    @scala.inline
-    def setFormatRequired(value: String): Self = StObject.set(x, "formatRequired", value.asInstanceOf[js.Any])
+    inline def setFormatRequired(value: String): Self = StObject.set(x, "formatRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "formatRequiredMetadata", value.asInstanceOf[js.Any])
+    inline def setFormatRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "formatRequiredMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatRequiredMetadataUndefined: Self = StObject.set(x, "formatRequiredMetadata", js.undefined)
+    inline def setFormatRequiredMetadataUndefined: Self = StObject.set(x, "formatRequiredMetadata", js.undefined)
     
-    @scala.inline
-    def setFormatRequiredUndefined: Self = StObject.set(x, "formatRequired", js.undefined)
+    inline def setFormatRequiredUndefined: Self = StObject.set(x, "formatRequired", js.undefined)
     
-    @scala.inline
-    def setLetterRequired(value: String): Self = StObject.set(x, "letterRequired", value.asInstanceOf[js.Any])
+    inline def setLetterRequired(value: String): Self = StObject.set(x, "letterRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "letterRequiredMetadata", value.asInstanceOf[js.Any])
+    inline def setLetterRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "letterRequiredMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterRequiredMetadataUndefined: Self = StObject.set(x, "letterRequiredMetadata", js.undefined)
+    inline def setLetterRequiredMetadataUndefined: Self = StObject.set(x, "letterRequiredMetadata", js.undefined)
     
-    @scala.inline
-    def setLetterRequiredUndefined: Self = StObject.set(x, "letterRequired", js.undefined)
+    inline def setLetterRequiredUndefined: Self = StObject.set(x, "letterRequired", js.undefined)
     
-    @scala.inline
-    def setMinimumLength(value: String): Self = StObject.set(x, "minimumLength", value.asInstanceOf[js.Any])
+    inline def setMinimumLength(value: String): Self = StObject.set(x, "minimumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumLengthMetadata(value: SettingsMetadata): Self = StObject.set(x, "minimumLengthMetadata", value.asInstanceOf[js.Any])
+    inline def setMinimumLengthMetadata(value: SettingsMetadata): Self = StObject.set(x, "minimumLengthMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumLengthMetadataUndefined: Self = StObject.set(x, "minimumLengthMetadata", js.undefined)
+    inline def setMinimumLengthMetadataUndefined: Self = StObject.set(x, "minimumLengthMetadata", js.undefined)
     
-    @scala.inline
-    def setMinimumLengthUndefined: Self = StObject.set(x, "minimumLength", js.undefined)
+    inline def setMinimumLengthUndefined: Self = StObject.set(x, "minimumLength", js.undefined)
     
-    @scala.inline
-    def setNumberRequired(value: String): Self = StObject.set(x, "numberRequired", value.asInstanceOf[js.Any])
+    inline def setNumberRequired(value: String): Self = StObject.set(x, "numberRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "numberRequiredMetadata", value.asInstanceOf[js.Any])
+    inline def setNumberRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "numberRequiredMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberRequiredMetadataUndefined: Self = StObject.set(x, "numberRequiredMetadata", js.undefined)
+    inline def setNumberRequiredMetadataUndefined: Self = StObject.set(x, "numberRequiredMetadata", js.undefined)
     
-    @scala.inline
-    def setNumberRequiredUndefined: Self = StObject.set(x, "numberRequired", js.undefined)
+    inline def setNumberRequiredUndefined: Self = StObject.set(x, "numberRequired", js.undefined)
     
-    @scala.inline
-    def setSpecialCharacterRequired(value: String): Self = StObject.set(x, "specialCharacterRequired", value.asInstanceOf[js.Any])
+    inline def setSpecialCharacterRequired(value: String): Self = StObject.set(x, "specialCharacterRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialCharacterRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "specialCharacterRequiredMetadata", value.asInstanceOf[js.Any])
+    inline def setSpecialCharacterRequiredMetadata(value: SettingsMetadata): Self = StObject.set(x, "specialCharacterRequiredMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialCharacterRequiredMetadataUndefined: Self = StObject.set(x, "specialCharacterRequiredMetadata", js.undefined)
+    inline def setSpecialCharacterRequiredMetadataUndefined: Self = StObject.set(x, "specialCharacterRequiredMetadata", js.undefined)
     
-    @scala.inline
-    def setSpecialCharacterRequiredUndefined: Self = StObject.set(x, "specialCharacterRequired", js.undefined)
+    inline def setSpecialCharacterRequiredUndefined: Self = StObject.set(x, "specialCharacterRequired", js.undefined)
   }
 }

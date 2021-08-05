@@ -20,17 +20,14 @@ object typesDeleteIdentityPoolOutputMod {
   }
   object DeleteIdentityPoolOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteIdentityPoolOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteIdentityPoolOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteIdentityPoolOutput]
     }
     
-    @scala.inline
-    implicit class DeleteIdentityPoolOutputMutableBuilder[Self <: DeleteIdentityPoolOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteIdentityPoolOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

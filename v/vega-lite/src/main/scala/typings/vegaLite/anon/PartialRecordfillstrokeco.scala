@@ -32,79 +32,55 @@ trait PartialRecordfillstrokeco extends StObject {
 }
 object PartialRecordfillstrokeco {
   
-  @scala.inline
-  def apply(): PartialRecordfillstrokeco = {
+  inline def apply(): PartialRecordfillstrokeco = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRecordfillstrokeco]
   }
   
-  @scala.inline
-  implicit class PartialRecordfillstrokecoMutableBuilder[Self <: PartialRecordfillstrokeco] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRecordfillstrokeco](x: Self) {
     
-    @scala.inline
-    def setAngle(value: LegendComponent): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: LegendComponent): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setColor(value: LegendComponent): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: LegendComponent): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFill(value: LegendComponent): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: LegendComponent): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacity(value: LegendComponent): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: LegendComponent): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: LegendComponent): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: LegendComponent): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setShape(value: LegendComponent): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: LegendComponent): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSize(value: LegendComponent): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: LegendComponent): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStroke(value: LegendComponent): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: LegendComponent): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeDash(value: LegendComponent): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
+    inline def setStrokeDash(value: LegendComponent): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
+    inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
     
-    @scala.inline
-    def setStrokeOpacity(value: LegendComponent): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    inline def setStrokeOpacity(value: LegendComponent): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: LegendComponent): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: LegendComponent): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

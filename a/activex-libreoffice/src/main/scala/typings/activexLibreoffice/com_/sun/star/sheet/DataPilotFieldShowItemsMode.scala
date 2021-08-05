@@ -15,10 +15,8 @@ object DataPilotFieldShowItemsMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FROM_BOTTOM: `1` = 1.asInstanceOf[`1`]
+    inline def FROM_BOTTOM: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def FROM_TOP: `0` = 0.asInstanceOf[`0`]
+    inline def FROM_TOP: `0` = 0.asInstanceOf[`0`]
   }
 }

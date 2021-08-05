@@ -14,10 +14,10 @@ object errorMod {
        with ErrorFilter {
     def this(_settings: typings.fastGlob.settingsMod.default) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isNonFatalError: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _settings: js.Any = js.native
     
     /* CompleteClass */
@@ -26,31 +26,26 @@ object errorMod {
   
   trait ErrorFilter extends StObject {
     
-    var _isNonFatalError: js.Any
+    /* private */ var _isNonFatalError: js.Any
     
-    val _settings: js.Any
+    /* private */ val _settings: js.Any
     
     def getFilter(): ErrorFilterFunction
   }
   object ErrorFilter {
     
-    @scala.inline
-    def apply(_isNonFatalError: js.Any, _settings: js.Any, getFilter: () => ErrorFilterFunction): ErrorFilter = {
+    inline def apply(_isNonFatalError: js.Any, _settings: js.Any, getFilter: () => ErrorFilterFunction): ErrorFilter = {
       val __obj = js.Dynamic.literal(_isNonFatalError = _isNonFatalError.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], getFilter = js.Any.fromFunction0(getFilter))
       __obj.asInstanceOf[ErrorFilter]
     }
     
-    @scala.inline
-    implicit class ErrorFilterMutableBuilder[Self <: ErrorFilter] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorFilter](x: Self) {
       
-      @scala.inline
-      def setGetFilter(value: () => ErrorFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
+      inline def setGetFilter(value: () => ErrorFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_isNonFatalError(value: js.Any): Self = StObject.set(x, "_isNonFatalError", value.asInstanceOf[js.Any])
+      inline def set_isNonFatalError(value: js.Any): Self = StObject.set(x, "_isNonFatalError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     }
   }
 }

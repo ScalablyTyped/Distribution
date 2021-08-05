@@ -18,46 +18,33 @@ trait CAConfig extends StObject {
 }
 object CAConfig {
   
-  @scala.inline
-  def apply(): CAConfig = {
+  inline def apply(): CAConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CAConfig]
   }
   
-  @scala.inline
-  implicit class CAConfigMutableBuilder[Self <: CAConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CAConfig](x: Self) {
     
-    @scala.inline
-    def setExternalCAs(value: js.Array[ExternalCA]): Self = StObject.set(x, "ExternalCAs", value.asInstanceOf[js.Any])
+    inline def setExternalCAs(value: js.Array[ExternalCA]): Self = StObject.set(x, "ExternalCAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalCAsUndefined: Self = StObject.set(x, "ExternalCAs", js.undefined)
+    inline def setExternalCAsUndefined: Self = StObject.set(x, "ExternalCAs", js.undefined)
     
-    @scala.inline
-    def setExternalCAsVarargs(value: ExternalCA*): Self = StObject.set(x, "ExternalCAs", js.Array(value :_*))
+    inline def setExternalCAsVarargs(value: ExternalCA*): Self = StObject.set(x, "ExternalCAs", js.Array(value :_*))
     
-    @scala.inline
-    def setForceRotate(value: Double): Self = StObject.set(x, "ForceRotate", value.asInstanceOf[js.Any])
+    inline def setForceRotate(value: Double): Self = StObject.set(x, "ForceRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceRotateUndefined: Self = StObject.set(x, "ForceRotate", js.undefined)
+    inline def setForceRotateUndefined: Self = StObject.set(x, "ForceRotate", js.undefined)
     
-    @scala.inline
-    def setNodeCertExpiry(value: Duration): Self = StObject.set(x, "NodeCertExpiry", value.asInstanceOf[js.Any])
+    inline def setNodeCertExpiry(value: Duration): Self = StObject.set(x, "NodeCertExpiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeCertExpiryUndefined: Self = StObject.set(x, "NodeCertExpiry", js.undefined)
+    inline def setNodeCertExpiryUndefined: Self = StObject.set(x, "NodeCertExpiry", js.undefined)
     
-    @scala.inline
-    def setSigningCACert(value: String): Self = StObject.set(x, "SigningCACert", value.asInstanceOf[js.Any])
+    inline def setSigningCACert(value: String): Self = StObject.set(x, "SigningCACert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningCACertUndefined: Self = StObject.set(x, "SigningCACert", js.undefined)
+    inline def setSigningCACertUndefined: Self = StObject.set(x, "SigningCACert", js.undefined)
     
-    @scala.inline
-    def setSigningCAKey(value: String): Self = StObject.set(x, "SigningCAKey", value.asInstanceOf[js.Any])
+    inline def setSigningCAKey(value: String): Self = StObject.set(x, "SigningCAKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningCAKeyUndefined: Self = StObject.set(x, "SigningCAKey", js.undefined)
+    inline def setSigningCAKeyUndefined: Self = StObject.set(x, "SigningCAKey", js.undefined)
   }
 }

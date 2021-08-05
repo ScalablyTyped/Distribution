@@ -25,8 +25,7 @@ trait ChatConversationThreadingInfo extends StObject {
 }
 object ChatConversationThreadingInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contactId: String,
     conversationId: String,
     custom: String,
@@ -37,22 +36,16 @@ object ChatConversationThreadingInfo {
     __obj.asInstanceOf[ChatConversationThreadingInfo]
   }
   
-  @scala.inline
-  implicit class ChatConversationThreadingInfoMutableBuilder[Self <: ChatConversationThreadingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ChatConversationThreadingInfo](x: Self) {
     
-    @scala.inline
-    def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
+    inline def setConversationId(value: String): Self = StObject.set(x, "conversationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ChatConversationThreadingKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ChatConversationThreadingKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipants(value: IVector[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: IVector[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
   }
 }

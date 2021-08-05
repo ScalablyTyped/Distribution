@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuyTradeFinalStatus extends StObject
 object BuyTradeFinalStatus {
   
-  @scala.inline
-  def BLOCKED: typings.invityApi.invityApiStrings.BLOCKED = "BLOCKED".asInstanceOf[typings.invityApi.invityApiStrings.BLOCKED]
+  inline def BLOCKED: typings.invityApi.invityApiStrings.BLOCKED = "BLOCKED".asInstanceOf[typings.invityApi.invityApiStrings.BLOCKED]
   
-  @scala.inline
-  def ERROR: typings.invityApi.invityApiStrings.ERROR = "ERROR".asInstanceOf[typings.invityApi.invityApiStrings.ERROR]
+  inline def ERROR: typings.invityApi.invityApiStrings.ERROR = "ERROR".asInstanceOf[typings.invityApi.invityApiStrings.ERROR]
   
-  @scala.inline
-  def SUCCESS: typings.invityApi.invityApiStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.invityApi.invityApiStrings.SUCCESS]
+  inline def SUCCESS: typings.invityApi.invityApiStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.invityApi.invityApiStrings.SUCCESS]
 }

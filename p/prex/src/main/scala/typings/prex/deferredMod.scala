@@ -14,13 +14,13 @@ object deferredMod {
     */
   class Deferred[T] () extends StObject {
     
-    var _callback: js.Any = js.native
+    /* private */ var _callback: js.Any = js.native
     
-    var _promise: js.Any = js.native
+    /* private */ var _promise: js.Any = js.native
     
-    var _reject: js.Any = js.native
+    /* private */ var _reject: js.Any = js.native
     
-    var _resolve: js.Any = js.native
+    /* private */ var _resolve: js.Any = js.native
     
     /**
       * Gets a NodeJS-style callback that can be used to resolve or reject the promise.

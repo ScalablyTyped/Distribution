@@ -25,31 +25,23 @@ trait SchemaUserGender extends StObject {
 }
 object SchemaUserGender {
   
-  @scala.inline
-  def apply(): SchemaUserGender = {
+  inline def apply(): SchemaUserGender = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserGender]
   }
   
-  @scala.inline
-  implicit class SchemaUserGenderMutableBuilder[Self <: SchemaUserGender] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserGender](x: Self) {
     
-    @scala.inline
-    def setAddressMeAs(value: String): Self = StObject.set(x, "addressMeAs", value.asInstanceOf[js.Any])
+    inline def setAddressMeAs(value: String): Self = StObject.set(x, "addressMeAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressMeAsUndefined: Self = StObject.set(x, "addressMeAs", js.undefined)
+    inline def setAddressMeAsUndefined: Self = StObject.set(x, "addressMeAs", js.undefined)
     
-    @scala.inline
-    def setCustomGender(value: String): Self = StObject.set(x, "customGender", value.asInstanceOf[js.Any])
+    inline def setCustomGender(value: String): Self = StObject.set(x, "customGender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomGenderUndefined: Self = StObject.set(x, "customGender", js.undefined)
+    inline def setCustomGenderUndefined: Self = StObject.set(x, "customGender", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

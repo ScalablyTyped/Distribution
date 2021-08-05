@@ -11,19 +11,15 @@ trait HttpLoadBalancing extends StObject {
 }
 object HttpLoadBalancing {
   
-  @scala.inline
-  def apply(): HttpLoadBalancing = {
+  inline def apply(): HttpLoadBalancing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpLoadBalancing]
   }
   
-  @scala.inline
-  implicit class HttpLoadBalancingMutableBuilder[Self <: HttpLoadBalancing] (val x: Self) extends AnyVal {
+  extension [Self <: HttpLoadBalancing](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }
 }

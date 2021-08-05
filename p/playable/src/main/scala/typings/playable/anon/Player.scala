@@ -14,19 +14,15 @@ trait Player extends StObject {
 }
 object Player {
   
-  @scala.inline
-  def apply(player: IPlayerInstance, storyContainer: HTMLDivElement): Player = {
+  inline def apply(player: IPlayerInstance, storyContainer: HTMLDivElement): Player = {
     val __obj = js.Dynamic.literal(player = player.asInstanceOf[js.Any], storyContainer = storyContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Player]
   }
   
-  @scala.inline
-  implicit class PlayerMutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
+  extension [Self <: Player](x: Self) {
     
-    @scala.inline
-    def setPlayer(value: IPlayerInstance): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: IPlayerInstance): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryContainer(value: HTMLDivElement): Self = StObject.set(x, "storyContainer", value.asInstanceOf[js.Any])
+    inline def setStoryContainer(value: HTMLDivElement): Self = StObject.set(x, "storyContainer", value.asInstanceOf[js.Any])
   }
 }

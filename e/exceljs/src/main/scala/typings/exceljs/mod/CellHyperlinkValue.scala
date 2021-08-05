@@ -14,19 +14,15 @@ trait CellHyperlinkValue
 }
 object CellHyperlinkValue {
   
-  @scala.inline
-  def apply(hyperlink: String, text: String): CellHyperlinkValue = {
+  inline def apply(hyperlink: String, text: String): CellHyperlinkValue = {
     val __obj = js.Dynamic.literal(hyperlink = hyperlink.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellHyperlinkValue]
   }
   
-  @scala.inline
-  implicit class CellHyperlinkValueMutableBuilder[Self <: CellHyperlinkValue] (val x: Self) extends AnyVal {
+  extension [Self <: CellHyperlinkValue](x: Self) {
     
-    @scala.inline
-    def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

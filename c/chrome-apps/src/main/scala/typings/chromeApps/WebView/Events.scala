@@ -75,17 +75,13 @@ object Events {
   trait ConsoleMessageLevel extends StObject
   object ConsoleMessageLevel {
     
-    @scala.inline
-    def `-1`: typings.chromeApps.chromeAppsNumbers.`-1` = -1.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`-1`]
+    inline def `-1`: typings.chromeApps.chromeAppsNumbers.`-1` = -1.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`-1`]
     
-    @scala.inline
-    def `0`: typings.chromeApps.chromeAppsNumbers.`0` = 0.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`0`]
+    inline def `0`: typings.chromeApps.chromeAppsNumbers.`0` = 0.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.chromeApps.chromeAppsNumbers.`1` = 1.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`1`]
+    inline def `1`: typings.chromeApps.chromeAppsNumbers.`1` = 1.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.chromeApps.chromeAppsNumbers.`2` = 2.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`2`]
+    inline def `2`: typings.chromeApps.chromeAppsNumbers.`2` = 2.asInstanceOf[typings.chromeApps.chromeAppsNumbers.`2`]
   }
   
   /**
@@ -135,14 +131,11 @@ object Events {
   trait DialogMessageType extends StObject
   object DialogMessageType {
     
-    @scala.inline
-    def alert: typings.chromeApps.chromeAppsStrings.alert = "alert".asInstanceOf[typings.chromeApps.chromeAppsStrings.alert]
+    inline def alert: typings.chromeApps.chromeAppsStrings.alert = "alert".asInstanceOf[typings.chromeApps.chromeAppsStrings.alert]
     
-    @scala.inline
-    def confirm: typings.chromeApps.chromeAppsStrings.confirm = "confirm".asInstanceOf[typings.chromeApps.chromeAppsStrings.confirm]
+    inline def confirm: typings.chromeApps.chromeAppsStrings.confirm = "confirm".asInstanceOf[typings.chromeApps.chromeAppsStrings.confirm]
     
-    @scala.inline
-    def prompt: typings.chromeApps.chromeAppsStrings.prompt = "prompt".asInstanceOf[typings.chromeApps.chromeAppsStrings.prompt]
+    inline def prompt: typings.chromeApps.chromeAppsStrings.prompt = "prompt".asInstanceOf[typings.chromeApps.chromeAppsStrings.prompt]
   }
   
   /**
@@ -172,17 +165,13 @@ object Events {
   trait ExitEventReason extends StObject
   object ExitEventReason {
     
-    @scala.inline
-    def abnormal: typings.chromeApps.chromeAppsStrings.abnormal = "abnormal".asInstanceOf[typings.chromeApps.chromeAppsStrings.abnormal]
+    inline def abnormal: typings.chromeApps.chromeAppsStrings.abnormal = "abnormal".asInstanceOf[typings.chromeApps.chromeAppsStrings.abnormal]
     
-    @scala.inline
-    def crash: typings.chromeApps.chromeAppsStrings.crash = "crash".asInstanceOf[typings.chromeApps.chromeAppsStrings.crash]
+    inline def crash: typings.chromeApps.chromeAppsStrings.crash = "crash".asInstanceOf[typings.chromeApps.chromeAppsStrings.crash]
     
-    @scala.inline
-    def kill: typings.chromeApps.chromeAppsStrings.kill = "kill".asInstanceOf[typings.chromeApps.chromeAppsStrings.kill]
+    inline def kill: typings.chromeApps.chromeAppsStrings.kill = "kill".asInstanceOf[typings.chromeApps.chromeAppsStrings.kill]
     
-    @scala.inline
-    def normal: normal_ = "normal".asInstanceOf[normal_]
+    inline def normal: normal_ = "normal".asInstanceOf[normal_]
   }
   
   /**
@@ -290,29 +279,21 @@ object Events {
   trait LoadAbortReason extends StObject
   object LoadAbortReason {
     
-    @scala.inline
-    def ERR_ABORTED: typings.chromeApps.chromeAppsStrings.ERR_ABORTED = "ERR_ABORTED".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_ABORTED]
+    inline def ERR_ABORTED: typings.chromeApps.chromeAppsStrings.ERR_ABORTED = "ERR_ABORTED".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_ABORTED]
     
-    @scala.inline
-    def ERR_ADDRESS_UNREACHABLE: typings.chromeApps.chromeAppsStrings.ERR_ADDRESS_UNREACHABLE = "ERR_ADDRESS_UNREACHABLE".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_ADDRESS_UNREACHABLE]
+    inline def ERR_ADDRESS_UNREACHABLE: typings.chromeApps.chromeAppsStrings.ERR_ADDRESS_UNREACHABLE = "ERR_ADDRESS_UNREACHABLE".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_ADDRESS_UNREACHABLE]
     
-    @scala.inline
-    def ERR_BLOCKED_BY_CLIENT: typings.chromeApps.chromeAppsStrings.ERR_BLOCKED_BY_CLIENT = "ERR_BLOCKED_BY_CLIENT".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_BLOCKED_BY_CLIENT]
+    inline def ERR_BLOCKED_BY_CLIENT: typings.chromeApps.chromeAppsStrings.ERR_BLOCKED_BY_CLIENT = "ERR_BLOCKED_BY_CLIENT".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_BLOCKED_BY_CLIENT]
     
-    @scala.inline
-    def ERR_DISALLOWED_URL_SCHEME: typings.chromeApps.chromeAppsStrings.ERR_DISALLOWED_URL_SCHEME = "ERR_DISALLOWED_URL_SCHEME".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_DISALLOWED_URL_SCHEME]
+    inline def ERR_DISALLOWED_URL_SCHEME: typings.chromeApps.chromeAppsStrings.ERR_DISALLOWED_URL_SCHEME = "ERR_DISALLOWED_URL_SCHEME".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_DISALLOWED_URL_SCHEME]
     
-    @scala.inline
-    def ERR_EMPTY_RESPONSE: typings.chromeApps.chromeAppsStrings.ERR_EMPTY_RESPONSE = "ERR_EMPTY_RESPONSE".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_EMPTY_RESPONSE]
+    inline def ERR_EMPTY_RESPONSE: typings.chromeApps.chromeAppsStrings.ERR_EMPTY_RESPONSE = "ERR_EMPTY_RESPONSE".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_EMPTY_RESPONSE]
     
-    @scala.inline
-    def ERR_FILE_NOT_FOUND: typings.chromeApps.chromeAppsStrings.ERR_FILE_NOT_FOUND = "ERR_FILE_NOT_FOUND".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_FILE_NOT_FOUND]
+    inline def ERR_FILE_NOT_FOUND: typings.chromeApps.chromeAppsStrings.ERR_FILE_NOT_FOUND = "ERR_FILE_NOT_FOUND".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_FILE_NOT_FOUND]
     
-    @scala.inline
-    def ERR_INVALID_URL: typings.chromeApps.chromeAppsStrings.ERR_INVALID_URL = "ERR_INVALID_URL".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_INVALID_URL]
+    inline def ERR_INVALID_URL: typings.chromeApps.chromeAppsStrings.ERR_INVALID_URL = "ERR_INVALID_URL".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_INVALID_URL]
     
-    @scala.inline
-    def ERR_UNKNOWN_URL_SCHEME: typings.chromeApps.chromeAppsStrings.ERR_UNKNOWN_URL_SCHEME = "ERR_UNKNOWN_URL_SCHEME".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_UNKNOWN_URL_SCHEME]
+    inline def ERR_UNKNOWN_URL_SCHEME: typings.chromeApps.chromeAppsStrings.ERR_UNKNOWN_URL_SCHEME = "ERR_UNKNOWN_URL_SCHEME".asInstanceOf[typings.chromeApps.chromeAppsStrings.ERR_UNKNOWN_URL_SCHEME]
   }
   
   /**
@@ -346,23 +327,18 @@ object Events {
   }
   object LoadRedirectEvent {
     
-    @scala.inline
-    def apply(isTopLevel: Boolean, newUrl: String, oldUrl: String): LoadRedirectEvent = {
+    inline def apply(isTopLevel: Boolean, newUrl: String, oldUrl: String): LoadRedirectEvent = {
       val __obj = js.Dynamic.literal(isTopLevel = isTopLevel.asInstanceOf[js.Any], newUrl = newUrl.asInstanceOf[js.Any], oldUrl = oldUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadRedirectEvent]
     }
     
-    @scala.inline
-    implicit class LoadRedirectEventMutableBuilder[Self <: LoadRedirectEvent] (val x: Self) extends AnyVal {
+    extension [Self <: LoadRedirectEvent](x: Self) {
       
-      @scala.inline
-      def setIsTopLevel(value: Boolean): Self = StObject.set(x, "isTopLevel", value.asInstanceOf[js.Any])
+      inline def setIsTopLevel(value: Boolean): Self = StObject.set(x, "isTopLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewUrl(value: String): Self = StObject.set(x, "newUrl", value.asInstanceOf[js.Any])
+      inline def setNewUrl(value: String): Self = StObject.set(x, "newUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldUrl(value: String): Self = StObject.set(x, "oldUrl", value.asInstanceOf[js.Any])
+      inline def setOldUrl(value: String): Self = StObject.set(x, "oldUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -473,26 +449,19 @@ object Events {
   trait RequestedPermission extends StObject
   object RequestedPermission {
     
-    @scala.inline
-    def download: typings.chromeApps.chromeAppsStrings.download = "download".asInstanceOf[typings.chromeApps.chromeAppsStrings.download]
+    inline def download: typings.chromeApps.chromeAppsStrings.download = "download".asInstanceOf[typings.chromeApps.chromeAppsStrings.download]
     
-    @scala.inline
-    def filesystem: filesystem_ = "filesystem".asInstanceOf[filesystem_]
+    inline def filesystem: filesystem_ = "filesystem".asInstanceOf[filesystem_]
     
-    @scala.inline
-    def fullscreen: fullscreen_ = "fullscreen".asInstanceOf[fullscreen_]
+    inline def fullscreen: fullscreen_ = "fullscreen".asInstanceOf[fullscreen_]
     
-    @scala.inline
-    def geolocation: typings.chromeApps.chromeAppsStrings.geolocation = "geolocation".asInstanceOf[typings.chromeApps.chromeAppsStrings.geolocation]
+    inline def geolocation: typings.chromeApps.chromeAppsStrings.geolocation = "geolocation".asInstanceOf[typings.chromeApps.chromeAppsStrings.geolocation]
     
-    @scala.inline
-    def loadplugin: typings.chromeApps.chromeAppsStrings.loadplugin = "loadplugin".asInstanceOf[typings.chromeApps.chromeAppsStrings.loadplugin]
+    inline def loadplugin: typings.chromeApps.chromeAppsStrings.loadplugin = "loadplugin".asInstanceOf[typings.chromeApps.chromeAppsStrings.loadplugin]
     
-    @scala.inline
-    def media: typings.chromeApps.chromeAppsStrings.media = "media".asInstanceOf[typings.chromeApps.chromeAppsStrings.media]
+    inline def media: typings.chromeApps.chromeAppsStrings.media = "media".asInstanceOf[typings.chromeApps.chromeAppsStrings.media]
     
-    @scala.inline
-    def pointerLock: typings.chromeApps.chromeAppsStrings.pointerLock = "pointerLock".asInstanceOf[typings.chromeApps.chromeAppsStrings.pointerLock]
+    inline def pointerLock: typings.chromeApps.chromeAppsStrings.pointerLock = "pointerLock".asInstanceOf[typings.chromeApps.chromeAppsStrings.pointerLock]
   }
   
   /**
@@ -597,8 +566,7 @@ object Events {
   }
   object WebViewElementEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abort: UIEvent,
       animationcancel: AnimationEvent,
       animationend: AnimationEvent,
@@ -711,59 +679,41 @@ object Events {
       __obj.asInstanceOf[WebViewElementEventMap]
     }
     
-    @scala.inline
-    implicit class WebViewElementEventMapMutableBuilder[Self <: WebViewElementEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: WebViewElementEventMap](x: Self) {
       
-      @scala.inline
-      def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsolemessage(value: ConsoleMessageEvent): Self = StObject.set(x, "consolemessage", value.asInstanceOf[js.Any])
+      inline def setConsolemessage(value: ConsoleMessageEvent): Self = StObject.set(x, "consolemessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentload(value: ContentLoadEvent): Self = StObject.set(x, "contentload", value.asInstanceOf[js.Any])
+      inline def setContentload(value: ContentLoadEvent): Self = StObject.set(x, "contentload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialog(value: DialogEvent): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      inline def setDialog(value: DialogEvent): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit(value: ExitEvent): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: ExitEvent): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindupdate(value: FindUpdateEvent): Self = StObject.set(x, "findupdate", value.asInstanceOf[js.Any])
+      inline def setFindupdate(value: FindUpdateEvent): Self = StObject.set(x, "findupdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadabort(value: LoadAbortEvent): Self = StObject.set(x, "loadabort", value.asInstanceOf[js.Any])
+      inline def setLoadabort(value: LoadAbortEvent): Self = StObject.set(x, "loadabort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadcommit(value: LoadCommitEvent): Self = StObject.set(x, "loadcommit", value.asInstanceOf[js.Any])
+      inline def setLoadcommit(value: LoadCommitEvent): Self = StObject.set(x, "loadcommit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadredirect(value: LoadRedirectEvent): Self = StObject.set(x, "loadredirect", value.asInstanceOf[js.Any])
+      inline def setLoadredirect(value: LoadRedirectEvent): Self = StObject.set(x, "loadredirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadstart(value: LoadStartEvent): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
+      inline def setLoadstart(value: LoadStartEvent): Self = StObject.set(x, "loadstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadstop(value: LoadStopEvent): Self = StObject.set(x, "loadstop", value.asInstanceOf[js.Any])
+      inline def setLoadstop(value: LoadStopEvent): Self = StObject.set(x, "loadstop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewwindow(value: NewWindowEvent): Self = StObject.set(x, "newwindow", value.asInstanceOf[js.Any])
+      inline def setNewwindow(value: NewWindowEvent): Self = StObject.set(x, "newwindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionrequest(value: PermissionRequestEvent): Self = StObject.set(x, "permissionrequest", value.asInstanceOf[js.Any])
+      inline def setPermissionrequest(value: PermissionRequestEvent): Self = StObject.set(x, "permissionrequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsive(value: ResponsiveEvent): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: ResponsiveEvent): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizechanged(value: SizeChangedEvent): Self = StObject.set(x, "sizechanged", value.asInstanceOf[js.Any])
+      inline def setSizechanged(value: SizeChangedEvent): Self = StObject.set(x, "sizechanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnresponsive(value: UnresponsiveEvent): Self = StObject.set(x, "unresponsive", value.asInstanceOf[js.Any])
+      inline def setUnresponsive(value: UnresponsiveEvent): Self = StObject.set(x, "unresponsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomchange(value: ZoomChangeEvent): Self = StObject.set(x, "zoomchange", value.asInstanceOf[js.Any])
+      inline def setZoomchange(value: ZoomChangeEvent): Self = StObject.set(x, "zoomchange", value.asInstanceOf[js.Any])
     }
   }
   
@@ -780,26 +730,19 @@ object Events {
   trait WindowOpenDisposition extends StObject
   object WindowOpenDisposition {
     
-    @scala.inline
-    def current_tab: typings.chromeApps.chromeAppsStrings.current_tab = "current_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.current_tab]
+    inline def current_tab: typings.chromeApps.chromeAppsStrings.current_tab = "current_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.current_tab]
     
-    @scala.inline
-    def ignore: typings.chromeApps.chromeAppsStrings.ignore = "ignore".asInstanceOf[typings.chromeApps.chromeAppsStrings.ignore]
+    inline def ignore: typings.chromeApps.chromeAppsStrings.ignore = "ignore".asInstanceOf[typings.chromeApps.chromeAppsStrings.ignore]
     
-    @scala.inline
-    def new_background_tab: typings.chromeApps.chromeAppsStrings.new_background_tab = "new_background_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_background_tab]
+    inline def new_background_tab: typings.chromeApps.chromeAppsStrings.new_background_tab = "new_background_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_background_tab]
     
-    @scala.inline
-    def new_foreground_tab: typings.chromeApps.chromeAppsStrings.new_foreground_tab = "new_foreground_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_foreground_tab]
+    inline def new_foreground_tab: typings.chromeApps.chromeAppsStrings.new_foreground_tab = "new_foreground_tab".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_foreground_tab]
     
-    @scala.inline
-    def new_popup: typings.chromeApps.chromeAppsStrings.new_popup = "new_popup".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_popup]
+    inline def new_popup: typings.chromeApps.chromeAppsStrings.new_popup = "new_popup".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_popup]
     
-    @scala.inline
-    def new_window: typings.chromeApps.chromeAppsStrings.new_window = "new_window".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_window]
+    inline def new_window: typings.chromeApps.chromeAppsStrings.new_window = "new_window".asInstanceOf[typings.chromeApps.chromeAppsStrings.new_window]
     
-    @scala.inline
-    def save_to_disk: typings.chromeApps.chromeAppsStrings.save_to_disk = "save_to_disk".asInstanceOf[typings.chromeApps.chromeAppsStrings.save_to_disk]
+    inline def save_to_disk: typings.chromeApps.chromeAppsStrings.save_to_disk = "save_to_disk".asInstanceOf[typings.chromeApps.chromeAppsStrings.save_to_disk]
   }
   
   /** Fired when the page's zoom changes. */

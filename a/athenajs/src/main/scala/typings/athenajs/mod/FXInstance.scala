@@ -11,16 +11,13 @@ trait FXInstance extends StObject {
 }
 object FXInstance {
   
-  @scala.inline
-  def apply(addFX: (String, InstantiableEffect) => Unit): FXInstance = {
+  inline def apply(addFX: (String, InstantiableEffect) => Unit): FXInstance = {
     val __obj = js.Dynamic.literal(addFX = js.Any.fromFunction2(addFX))
     __obj.asInstanceOf[FXInstance]
   }
   
-  @scala.inline
-  implicit class FXInstanceMutableBuilder[Self <: FXInstance] (val x: Self) extends AnyVal {
+  extension [Self <: FXInstance](x: Self) {
     
-    @scala.inline
-    def setAddFX(value: (String, InstantiableEffect) => Unit): Self = StObject.set(x, "addFX", js.Any.fromFunction2(value))
+    inline def setAddFX(value: (String, InstantiableEffect) => Unit): Self = StObject.set(x, "addFX", js.Any.fromFunction2(value))
   }
 }

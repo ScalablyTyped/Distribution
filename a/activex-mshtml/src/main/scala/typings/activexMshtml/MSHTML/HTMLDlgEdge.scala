@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLDlgEdge extends StObject
 object HTMLDlgEdge {
   
-  @scala.inline
-  def HTMLDlgEdgeRaised: `16` = 16.asInstanceOf[`16`]
+  inline def HTMLDlgEdgeRaised: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def HTMLDlgEdgeSunken: `0` = 0.asInstanceOf[`0`]
+  inline def HTMLDlgEdgeSunken: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def HTMLDlgEdge_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def HTMLDlgEdge_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

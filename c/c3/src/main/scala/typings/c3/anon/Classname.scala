@@ -11,19 +11,15 @@ trait Classname extends StObject {
 }
 object Classname {
   
-  @scala.inline
-  def apply(): Classname = {
+  inline def apply(): Classname = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Classname]
   }
   
-  @scala.inline
-  implicit class ClassnameMutableBuilder[Self <: Classname] (val x: Self) extends AnyVal {
+  extension [Self <: Classname](x: Self) {
     
-    @scala.inline
-    def setClassname(value: String): Self = StObject.set(x, "classname", value.asInstanceOf[js.Any])
+    inline def setClassname(value: String): Self = StObject.set(x, "classname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassnameUndefined: Self = StObject.set(x, "classname", js.undefined)
+    inline def setClassnameUndefined: Self = StObject.set(x, "classname", js.undefined)
   }
 }

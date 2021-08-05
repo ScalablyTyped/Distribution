@@ -14,8 +14,7 @@ trait PermissionRequest
 }
 object PermissionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allow: () => Unit,
     defer: () => Unit,
     deny: () => Unit,
@@ -29,13 +28,10 @@ object PermissionRequest {
     __obj.asInstanceOf[PermissionRequest]
   }
   
-  @scala.inline
-  implicit class PermissionRequestMutableBuilder[Self <: PermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionRequest](x: Self) {
     
-    @scala.inline
-    def setDefer(value: () => Unit): Self = StObject.set(x, "defer", js.Any.fromFunction0(value))
+    inline def setDefer(value: () => Unit): Self = StObject.set(x, "defer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setState(value: MSWebViewPermissionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: MSWebViewPermissionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -16,31 +16,23 @@ trait InstanceTreeNode extends StObject {
 }
 object InstanceTreeNode {
   
-  @scala.inline
-  def apply(children: js.Array[InstanceTreeNode], dbId: Double, fragments: js.Array[Double], name: String): InstanceTreeNode = {
+  inline def apply(children: js.Array[InstanceTreeNode], dbId: Double, fragments: js.Array[Double], name: String): InstanceTreeNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], dbId = dbId.asInstanceOf[js.Any], fragments = fragments.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceTreeNode]
   }
   
-  @scala.inline
-  implicit class InstanceTreeNodeMutableBuilder[Self <: InstanceTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceTreeNode](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[InstanceTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[InstanceTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: InstanceTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: InstanceTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setDbId(value: Double): Self = StObject.set(x, "dbId", value.asInstanceOf[js.Any])
+    inline def setDbId(value: Double): Self = StObject.set(x, "dbId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragments(value: js.Array[Double]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+    inline def setFragments(value: js.Array[Double]): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentsVarargs(value: Double*): Self = StObject.set(x, "fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: Double*): Self = StObject.set(x, "fragments", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

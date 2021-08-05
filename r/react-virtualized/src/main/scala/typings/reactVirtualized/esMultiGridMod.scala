@@ -50,17 +50,14 @@ object esMultiGridMod {
     @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid.defaultProps")
     @js.native
     def defaultProps: ClassNameBottomRightGrid = js.native
-    @scala.inline
-    def defaultProps_=(x: ClassNameBottomRightGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ClassNameBottomRightGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MultiGridState | Null]
+    inline def getDerivedStateFromProps(nextProps: MultiGridProps, prevState: MultiGridState): MultiGridState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MultiGridState | Null]
     
     @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid.propTypes")
     @js.native
     def propTypes: ClassNameBottomLeftGrid = js.native
-    @scala.inline
-    def propTypes_=(x: ClassNameBottomLeftGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: ClassNameBottomLeftGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait MultiGridProps
@@ -93,8 +90,7 @@ object esMultiGridMod {
   }
   object MultiGridProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cellRenderer: /* props */ GridCellProps => ReactNode,
       columnCount: Double,
       columnWidth: Double | (js.Function1[/* params */ Index, Double]),
@@ -107,80 +103,55 @@ object esMultiGridMod {
       __obj.asInstanceOf[MultiGridProps]
     }
     
-    @scala.inline
-    implicit class MultiGridPropsMutableBuilder[Self <: MultiGridProps] (val x: Self) extends AnyVal {
+    extension [Self <: MultiGridProps](x: Self) {
       
-      @scala.inline
-      def setClassNameBottomLeftGrid(value: String): Self = StObject.set(x, "classNameBottomLeftGrid", value.asInstanceOf[js.Any])
+      inline def setClassNameBottomLeftGrid(value: String): Self = StObject.set(x, "classNameBottomLeftGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameBottomLeftGridUndefined: Self = StObject.set(x, "classNameBottomLeftGrid", js.undefined)
+      inline def setClassNameBottomLeftGridUndefined: Self = StObject.set(x, "classNameBottomLeftGrid", js.undefined)
       
-      @scala.inline
-      def setClassNameBottomRightGrid(value: String): Self = StObject.set(x, "classNameBottomRightGrid", value.asInstanceOf[js.Any])
+      inline def setClassNameBottomRightGrid(value: String): Self = StObject.set(x, "classNameBottomRightGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameBottomRightGridUndefined: Self = StObject.set(x, "classNameBottomRightGrid", js.undefined)
+      inline def setClassNameBottomRightGridUndefined: Self = StObject.set(x, "classNameBottomRightGrid", js.undefined)
       
-      @scala.inline
-      def setClassNameTopLeftGrid(value: String): Self = StObject.set(x, "classNameTopLeftGrid", value.asInstanceOf[js.Any])
+      inline def setClassNameTopLeftGrid(value: String): Self = StObject.set(x, "classNameTopLeftGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameTopLeftGridUndefined: Self = StObject.set(x, "classNameTopLeftGrid", js.undefined)
+      inline def setClassNameTopLeftGridUndefined: Self = StObject.set(x, "classNameTopLeftGrid", js.undefined)
       
-      @scala.inline
-      def setClassNameTopRightGrid(value: String): Self = StObject.set(x, "classNameTopRightGrid", value.asInstanceOf[js.Any])
+      inline def setClassNameTopRightGrid(value: String): Self = StObject.set(x, "classNameTopRightGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameTopRightGridUndefined: Self = StObject.set(x, "classNameTopRightGrid", js.undefined)
+      inline def setClassNameTopRightGridUndefined: Self = StObject.set(x, "classNameTopRightGrid", js.undefined)
       
-      @scala.inline
-      def setEnableFixedColumnScroll(value: Boolean): Self = StObject.set(x, "enableFixedColumnScroll", value.asInstanceOf[js.Any])
+      inline def setEnableFixedColumnScroll(value: Boolean): Self = StObject.set(x, "enableFixedColumnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableFixedColumnScrollUndefined: Self = StObject.set(x, "enableFixedColumnScroll", js.undefined)
+      inline def setEnableFixedColumnScrollUndefined: Self = StObject.set(x, "enableFixedColumnScroll", js.undefined)
       
-      @scala.inline
-      def setEnableFixedRowScroll(value: Boolean): Self = StObject.set(x, "enableFixedRowScroll", value.asInstanceOf[js.Any])
+      inline def setEnableFixedRowScroll(value: Boolean): Self = StObject.set(x, "enableFixedRowScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableFixedRowScrollUndefined: Self = StObject.set(x, "enableFixedRowScroll", js.undefined)
+      inline def setEnableFixedRowScrollUndefined: Self = StObject.set(x, "enableFixedRowScroll", js.undefined)
       
-      @scala.inline
-      def setFixedColumnCount(value: Double): Self = StObject.set(x, "fixedColumnCount", value.asInstanceOf[js.Any])
+      inline def setFixedColumnCount(value: Double): Self = StObject.set(x, "fixedColumnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedColumnCountUndefined: Self = StObject.set(x, "fixedColumnCount", js.undefined)
+      inline def setFixedColumnCountUndefined: Self = StObject.set(x, "fixedColumnCount", js.undefined)
       
-      @scala.inline
-      def setFixedRowCount(value: Double): Self = StObject.set(x, "fixedRowCount", value.asInstanceOf[js.Any])
+      inline def setFixedRowCount(value: Double): Self = StObject.set(x, "fixedRowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedRowCountUndefined: Self = StObject.set(x, "fixedRowCount", js.undefined)
+      inline def setFixedRowCountUndefined: Self = StObject.set(x, "fixedRowCount", js.undefined)
       
-      @scala.inline
-      def setStyleBottomLeftGrid(value: CSSProperties): Self = StObject.set(x, "styleBottomLeftGrid", value.asInstanceOf[js.Any])
+      inline def setStyleBottomLeftGrid(value: CSSProperties): Self = StObject.set(x, "styleBottomLeftGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleBottomLeftGridUndefined: Self = StObject.set(x, "styleBottomLeftGrid", js.undefined)
+      inline def setStyleBottomLeftGridUndefined: Self = StObject.set(x, "styleBottomLeftGrid", js.undefined)
       
-      @scala.inline
-      def setStyleBottomRightGrid(value: CSSProperties): Self = StObject.set(x, "styleBottomRightGrid", value.asInstanceOf[js.Any])
+      inline def setStyleBottomRightGrid(value: CSSProperties): Self = StObject.set(x, "styleBottomRightGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleBottomRightGridUndefined: Self = StObject.set(x, "styleBottomRightGrid", js.undefined)
+      inline def setStyleBottomRightGridUndefined: Self = StObject.set(x, "styleBottomRightGrid", js.undefined)
       
-      @scala.inline
-      def setStyleTopLeftGrid(value: CSSProperties): Self = StObject.set(x, "styleTopLeftGrid", value.asInstanceOf[js.Any])
+      inline def setStyleTopLeftGrid(value: CSSProperties): Self = StObject.set(x, "styleTopLeftGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleTopLeftGridUndefined: Self = StObject.set(x, "styleTopLeftGrid", js.undefined)
+      inline def setStyleTopLeftGridUndefined: Self = StObject.set(x, "styleTopLeftGrid", js.undefined)
       
-      @scala.inline
-      def setStyleTopRightGrid(value: CSSProperties): Self = StObject.set(x, "styleTopRightGrid", value.asInstanceOf[js.Any])
+      inline def setStyleTopRightGrid(value: CSSProperties): Self = StObject.set(x, "styleTopRightGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleTopRightGridUndefined: Self = StObject.set(x, "styleTopRightGrid", js.undefined)
+      inline def setStyleTopRightGridUndefined: Self = StObject.set(x, "styleTopRightGrid", js.undefined)
     }
   }
   
@@ -192,20 +163,16 @@ object esMultiGridMod {
   }
   object MultiGridState {
     
-    @scala.inline
-    def apply(scrollLeft: Double, scrollTop: Double): MultiGridState = {
+    inline def apply(scrollLeft: Double, scrollTop: Double): MultiGridState = {
       val __obj = js.Dynamic.literal(scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiGridState]
     }
     
-    @scala.inline
-    implicit class MultiGridStateMutableBuilder[Self <: MultiGridState] (val x: Self) extends AnyVal {
+    extension [Self <: MultiGridState](x: Self) {
       
-      @scala.inline
-      def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+      inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+      inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }
   }
 }

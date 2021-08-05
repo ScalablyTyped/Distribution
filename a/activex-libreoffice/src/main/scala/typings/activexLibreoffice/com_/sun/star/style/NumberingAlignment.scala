@@ -21,8 +21,7 @@ trait NumberingAlignment extends StObject {
 }
 object NumberingAlignment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: HorizontalAlignment,
     Insertion: Double,
     TextMarginDistance: Double,
@@ -32,19 +31,14 @@ object NumberingAlignment {
     __obj.asInstanceOf[NumberingAlignment]
   }
   
-  @scala.inline
-  implicit class NumberingAlignmentMutableBuilder[Self <: NumberingAlignment] (val x: Self) extends AnyVal {
+  extension [Self <: NumberingAlignment](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertion(value: Double): Self = StObject.set(x, "Insertion", value.asInstanceOf[js.Any])
+    inline def setInsertion(value: Double): Self = StObject.set(x, "Insertion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMarginDistance(value: Double): Self = StObject.set(x, "TextMarginDistance", value.asInstanceOf[js.Any])
+    inline def setTextMarginDistance(value: Double): Self = StObject.set(x, "TextMarginDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNumberingDistance(value: Double): Self = StObject.set(x, "TextNumberingDistance", value.asInstanceOf[js.Any])
+    inline def setTextNumberingDistance(value: Double): Self = StObject.set(x, "TextNumberingDistance", value.asInstanceOf[js.Any])
   }
 }

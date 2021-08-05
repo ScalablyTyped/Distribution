@@ -18,19 +18,15 @@ trait NewRange extends StObject {
 }
 object NewRange {
   
-  @scala.inline
-  def apply(newRange: Range, oldRange: Range): NewRange = {
+  inline def apply(newRange: Range, oldRange: Range): NewRange = {
     val __obj = js.Dynamic.literal(newRange = newRange.asInstanceOf[js.Any], oldRange = oldRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewRange]
   }
   
-  @scala.inline
-  implicit class NewRangeMutableBuilder[Self <: NewRange] (val x: Self) extends AnyVal {
+  extension [Self <: NewRange](x: Self) {
     
-    @scala.inline
-    def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
+    inline def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
+    inline def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
   }
 }

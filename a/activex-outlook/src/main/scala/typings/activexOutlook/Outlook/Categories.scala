@@ -20,7 +20,7 @@ trait Categories extends StObject {
   
   def Item(Index: js.Any): Category = js.native
   
-  @JSName("Outlook.Categories_typekey")
+  /* private */ @JSName("Outlook.Categories_typekey")
   var OutlookDotCategories_typekey: Categories = js.native
   
   val Parent: js.Any = js.native

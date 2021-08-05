@@ -20,8 +20,7 @@ trait CredentialInfo extends StObject {
 }
 object CredentialInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createDate: String,
     dateLastModified: String,
     id: Double,
@@ -33,25 +32,18 @@ object CredentialInfo {
     __obj.asInstanceOf[CredentialInfo]
   }
   
-  @scala.inline
-  implicit class CredentialInfoMutableBuilder[Self <: CredentialInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialInfo](x: Self) {
     
-    @scala.inline
-    def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateLastModified(value: String): Self = StObject.set(x, "dateLastModified", value.asInstanceOf[js.Any])
+    inline def setDateLastModified(value: String): Self = StObject.set(x, "dateLastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
   }
 }

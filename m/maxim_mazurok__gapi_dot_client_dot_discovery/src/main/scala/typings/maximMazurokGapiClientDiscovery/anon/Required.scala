@@ -11,22 +11,17 @@ trait Required extends StObject {
 }
 object Required {
   
-  @scala.inline
-  def apply(): Required = {
+  inline def apply(): Required = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Required]
   }
   
-  @scala.inline
-  implicit class RequiredMutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
+  extension [Self <: Required](x: Self) {
     
-    @scala.inline
-    def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
   }
 }

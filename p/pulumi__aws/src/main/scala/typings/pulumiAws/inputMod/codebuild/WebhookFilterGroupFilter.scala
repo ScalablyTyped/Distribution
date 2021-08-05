@@ -24,26 +24,20 @@ trait WebhookFilterGroupFilter extends StObject {
 }
 object WebhookFilterGroupFilter {
   
-  @scala.inline
-  def apply(pattern: Input[String], `type`: Input[String]): WebhookFilterGroupFilter = {
+  inline def apply(pattern: Input[String], `type`: Input[String]): WebhookFilterGroupFilter = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookFilterGroupFilter]
   }
   
-  @scala.inline
-  implicit class WebhookFilterGroupFilterMutableBuilder[Self <: WebhookFilterGroupFilter] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookFilterGroupFilter](x: Self) {
     
-    @scala.inline
-    def setExcludeMatchedPattern(value: Input[Boolean]): Self = StObject.set(x, "excludeMatchedPattern", value.asInstanceOf[js.Any])
+    inline def setExcludeMatchedPattern(value: Input[Boolean]): Self = StObject.set(x, "excludeMatchedPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeMatchedPatternUndefined: Self = StObject.set(x, "excludeMatchedPattern", js.undefined)
+    inline def setExcludeMatchedPatternUndefined: Self = StObject.set(x, "excludeMatchedPattern", js.undefined)
     
-    @scala.inline
-    def setPattern(value: Input[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: Input[String]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

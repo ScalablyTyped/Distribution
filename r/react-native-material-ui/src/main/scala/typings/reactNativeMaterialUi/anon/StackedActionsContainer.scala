@@ -11,22 +11,17 @@ trait StackedActionsContainer extends StObject {
 }
 object StackedActionsContainer {
   
-  @scala.inline
-  def apply(): StackedActionsContainer = {
+  inline def apply(): StackedActionsContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackedActionsContainer]
   }
   
-  @scala.inline
-  implicit class StackedActionsContainerMutableBuilder[Self <: StackedActionsContainer] (val x: Self) extends AnyVal {
+  extension [Self <: StackedActionsContainer](x: Self) {
     
-    @scala.inline
-    def setStackedActionsContainer(value: ViewStyle): Self = StObject.set(x, "stackedActionsContainer", value.asInstanceOf[js.Any])
+    inline def setStackedActionsContainer(value: ViewStyle): Self = StObject.set(x, "stackedActionsContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackedActionsContainerNull: Self = StObject.set(x, "stackedActionsContainer", null)
+    inline def setStackedActionsContainerNull: Self = StObject.set(x, "stackedActionsContainer", null)
     
-    @scala.inline
-    def setStackedActionsContainerUndefined: Self = StObject.set(x, "stackedActionsContainer", js.undefined)
+    inline def setStackedActionsContainerUndefined: Self = StObject.set(x, "stackedActionsContainer", js.undefined)
   }
 }

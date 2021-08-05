@@ -17,21 +17,18 @@ object opMapperSchemaMod {
     @JSImport("@tensorflow/tfjs-converter/dist/operations/op_mapper_schema", "json.definitions")
     @js.native
     def definitions: AttrParamMapper = js.native
-    @scala.inline
-    def definitions_=(x: AttrParamMapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("definitions")(x.asInstanceOf[js.Any])
+    inline def definitions_=(x: AttrParamMapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("definitions")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-converter/dist/operations/op_mapper_schema", "json.items")
     @js.native
     def items: Ref = js.native
-    @scala.inline
-    def items_=(x: Ref): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("items")(x.asInstanceOf[js.Any])
+    inline def items_=(x: Ref): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("items")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-converter/dist/operations/op_mapper_schema", "json.$schema")
     @js.native
     def schema: String = js.native
     
-    @scala.inline
-    def schema_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$schema")(x.asInstanceOf[js.Any])
+    inline def schema_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$schema")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-converter/dist/operations/op_mapper_schema", "json.type")
     @js.native

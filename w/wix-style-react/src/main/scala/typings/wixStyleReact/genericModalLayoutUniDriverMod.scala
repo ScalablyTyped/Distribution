@@ -15,8 +15,7 @@ object genericModalLayoutUniDriverMod {
   }
   object GenericModalLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object genericModalLayoutUniDriverMod {
       __obj.asInstanceOf[GenericModalLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class GenericModalLayoutUniDriverMutableBuilder[Self <: GenericModalLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: GenericModalLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setIsFullscreen(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFullscreen", js.Any.fromFunction0(value))
+      inline def setIsFullscreen(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFullscreen", js.Any.fromFunction0(value))
     }
   }
 }

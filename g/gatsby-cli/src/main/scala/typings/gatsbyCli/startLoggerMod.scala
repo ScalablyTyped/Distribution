@@ -10,6 +10,5 @@ object startLoggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def startLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLogger")().asInstanceOf[Unit]
+  inline def startLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLogger")().asInstanceOf[Unit]
 }

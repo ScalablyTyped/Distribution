@@ -14,19 +14,15 @@ trait LongRunningPathTemplateBasedRequestPrepareOptions
 }
 object LongRunningPathTemplateBasedRequestPrepareOptions {
   
-  @scala.inline
-  def apply(deserializationMapper: Mapper, method: String, pathTemplate: String, serializationMapper: Mapper): LongRunningPathTemplateBasedRequestPrepareOptions = {
+  inline def apply(deserializationMapper: Mapper, method: String, pathTemplate: String, serializationMapper: Mapper): LongRunningPathTemplateBasedRequestPrepareOptions = {
     val __obj = js.Dynamic.literal(deserializationMapper = deserializationMapper.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], pathTemplate = pathTemplate.asInstanceOf[js.Any], serializationMapper = serializationMapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[LongRunningPathTemplateBasedRequestPrepareOptions]
   }
   
-  @scala.inline
-  implicit class LongRunningPathTemplateBasedRequestPrepareOptionsMutableBuilder[Self <: LongRunningPathTemplateBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LongRunningPathTemplateBasedRequestPrepareOptions](x: Self) {
     
-    @scala.inline
-    def setDeserializationMapperForTerminalResponse(value: Mapper): Self = StObject.set(x, "deserializationMapperForTerminalResponse", value.asInstanceOf[js.Any])
+    inline def setDeserializationMapperForTerminalResponse(value: Mapper): Self = StObject.set(x, "deserializationMapperForTerminalResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeserializationMapperForTerminalResponseUndefined: Self = StObject.set(x, "deserializationMapperForTerminalResponse", js.undefined)
+    inline def setDeserializationMapperForTerminalResponseUndefined: Self = StObject.set(x, "deserializationMapperForTerminalResponse", js.undefined)
   }
 }

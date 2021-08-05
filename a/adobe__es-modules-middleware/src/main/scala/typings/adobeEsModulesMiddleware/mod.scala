@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def middleware(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[NextHandleFunction]
-  @scala.inline
-  def middleware(options: MiddlewareOptions): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  inline def middleware(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[NextHandleFunction]
+  inline def middleware(options: MiddlewareOptions): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   trait MiddlewareOptions extends StObject {
     
@@ -24,17 +22,14 @@ object mod {
   }
   object MiddlewareOptions {
     
-    @scala.inline
-    def apply(paths: StringDictionary[String]): MiddlewareOptions = {
+    inline def apply(paths: StringDictionary[String]): MiddlewareOptions = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class MiddlewareOptionsMutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setPaths(value: StringDictionary[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: StringDictionary[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,20 +46,16 @@ object mod {
     }
     object ConfigOptions {
       
-      @scala.inline
-      def apply(): ConfigOptions = {
+      inline def apply(): ConfigOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      @scala.inline
-      implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ConfigOptions](x: Self) {
         
-        @scala.inline
-        def setEsModulesMiddleware(value: MiddlewareOptions): Self = StObject.set(x, "esModulesMiddleware", value.asInstanceOf[js.Any])
+        inline def setEsModulesMiddleware(value: MiddlewareOptions): Self = StObject.set(x, "esModulesMiddleware", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEsModulesMiddlewareUndefined: Self = StObject.set(x, "esModulesMiddleware", js.undefined)
+        inline def setEsModulesMiddlewareUndefined: Self = StObject.set(x, "esModulesMiddleware", js.undefined)
       }
     }
   }

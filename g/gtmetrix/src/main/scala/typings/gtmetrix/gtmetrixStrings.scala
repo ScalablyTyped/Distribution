@@ -12,62 +12,53 @@ object gtmetrixStrings {
   sealed trait filmstrip
     extends StObject
        with BinaryResourceType
-  @scala.inline
-  def filmstrip: filmstrip = "filmstrip".asInstanceOf[filmstrip]
+  inline def filmstrip: filmstrip = "filmstrip".asInstanceOf[filmstrip]
   
   @js.native
   sealed trait har
     extends StObject
        with NonBinaryResourceType
-  @scala.inline
-  def har: har = "har".asInstanceOf[har]
+  inline def har: har = "har".asInstanceOf[har]
   
   @js.native
   sealed trait pagespeed
     extends StObject
        with NonBinaryResourceType
-  @scala.inline
-  def pagespeed: pagespeed = "pagespeed".asInstanceOf[pagespeed]
+  inline def pagespeed: pagespeed = "pagespeed".asInstanceOf[pagespeed]
   
   @js.native
   sealed trait `pagespeed-files`
     extends StObject
        with BinaryResourceType
-  @scala.inline
-  def `pagespeed-files`: `pagespeed-files` = "pagespeed-files".asInstanceOf[`pagespeed-files`]
+  inline def `pagespeed-files`: `pagespeed-files` = "pagespeed-files".asInstanceOf[`pagespeed-files`]
   
   @js.native
   sealed trait `report-pdf`
     extends StObject
        with BinaryResourceType
-  @scala.inline
-  def `report-pdf`: `report-pdf` = "report-pdf".asInstanceOf[`report-pdf`]
+  inline def `report-pdf`: `report-pdf` = "report-pdf".asInstanceOf[`report-pdf`]
   
   @js.native
   sealed trait `report-pdf-full`
     extends StObject
        with BinaryResourceType
-  @scala.inline
-  def `report-pdf-full`: `report-pdf-full` = "report-pdf-full".asInstanceOf[`report-pdf-full`]
+  inline def `report-pdf-full`: `report-pdf-full` = "report-pdf-full".asInstanceOf[`report-pdf-full`]
   
   @js.native
   sealed trait screenshot
     extends StObject
        with BinaryResourceType
-  @scala.inline
-  def screenshot: screenshot = "screenshot".asInstanceOf[screenshot]
+  inline def screenshot: screenshot = "screenshot".asInstanceOf[screenshot]
   
   @js.native
   sealed trait video
     extends StObject
        with BinaryResourceType
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
   sealed trait yslow
     extends StObject
        with NonBinaryResourceType
-  @scala.inline
-  def yslow: yslow = "yslow".asInstanceOf[yslow]
+  inline def yslow: yslow = "yslow".asInstanceOf[yslow]
 }

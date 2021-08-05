@@ -11,22 +11,17 @@ trait GoogleCloudRecommendationengineV1beta1UserEventInlineSource extends StObje
 }
 object GoogleCloudRecommendationengineV1beta1UserEventInlineSource {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1UserEventInlineSource = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1UserEventInlineSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1UserEventInlineSource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1UserEventInlineSourceMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserEventInlineSource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1UserEventInlineSource](x: Self) {
     
-    @scala.inline
-    def setUserEvents(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEvents", value.asInstanceOf[js.Any])
+    inline def setUserEvents(value: js.Array[GoogleCloudRecommendationengineV1beta1UserEvent]): Self = StObject.set(x, "userEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEventsUndefined: Self = StObject.set(x, "userEvents", js.undefined)
+    inline def setUserEventsUndefined: Self = StObject.set(x, "userEvents", js.undefined)
     
-    @scala.inline
-    def setUserEventsVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEvents", js.Array(value :_*))
+    inline def setUserEventsVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEvents", js.Array(value :_*))
   }
 }

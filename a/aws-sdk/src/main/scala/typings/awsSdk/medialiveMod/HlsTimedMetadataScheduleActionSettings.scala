@@ -13,16 +13,13 @@ trait HlsTimedMetadataScheduleActionSettings extends StObject {
 }
 object HlsTimedMetadataScheduleActionSettings {
   
-  @scala.inline
-  def apply(Id3: string): HlsTimedMetadataScheduleActionSettings = {
+  inline def apply(Id3: string): HlsTimedMetadataScheduleActionSettings = {
     val __obj = js.Dynamic.literal(Id3 = Id3.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsTimedMetadataScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class HlsTimedMetadataScheduleActionSettingsMutableBuilder[Self <: HlsTimedMetadataScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsTimedMetadataScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setId3(value: string): Self = StObject.set(x, "Id3", value.asInstanceOf[js.Any])
+    inline def setId3(value: string): Self = StObject.set(x, "Id3", value.asInstanceOf[js.Any])
   }
 }

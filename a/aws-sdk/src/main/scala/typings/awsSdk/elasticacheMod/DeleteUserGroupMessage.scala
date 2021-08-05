@@ -13,16 +13,13 @@ trait DeleteUserGroupMessage extends StObject {
 }
 object DeleteUserGroupMessage {
   
-  @scala.inline
-  def apply(UserGroupId: String): DeleteUserGroupMessage = {
+  inline def apply(UserGroupId: String): DeleteUserGroupMessage = {
     val __obj = js.Dynamic.literal(UserGroupId = UserGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserGroupMessage]
   }
   
-  @scala.inline
-  implicit class DeleteUserGroupMessageMutableBuilder[Self <: DeleteUserGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserGroupMessage](x: Self) {
     
-    @scala.inline
-    def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
+    inline def setUserGroupId(value: String): Self = StObject.set(x, "UserGroupId", value.asInstanceOf[js.Any])
   }
 }

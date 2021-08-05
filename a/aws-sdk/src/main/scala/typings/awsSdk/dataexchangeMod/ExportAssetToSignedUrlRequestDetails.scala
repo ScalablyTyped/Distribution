@@ -23,22 +23,17 @@ trait ExportAssetToSignedUrlRequestDetails extends StObject {
 }
 object ExportAssetToSignedUrlRequestDetails {
   
-  @scala.inline
-  def apply(AssetId: Id, DataSetId: Id, RevisionId: Id): ExportAssetToSignedUrlRequestDetails = {
+  inline def apply(AssetId: Id, DataSetId: Id, RevisionId: Id): ExportAssetToSignedUrlRequestDetails = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportAssetToSignedUrlRequestDetails]
   }
   
-  @scala.inline
-  implicit class ExportAssetToSignedUrlRequestDetailsMutableBuilder[Self <: ExportAssetToSignedUrlRequestDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExportAssetToSignedUrlRequestDetails](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

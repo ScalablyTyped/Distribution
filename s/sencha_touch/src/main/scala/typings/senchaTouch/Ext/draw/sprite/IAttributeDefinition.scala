@@ -85,115 +85,79 @@ trait IAttributeDefinition
 }
 object IAttributeDefinition {
   
-  @scala.inline
-  def apply(): IAttributeDefinition = {
+  inline def apply(): IAttributeDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAttributeDefinition]
   }
   
-  @scala.inline
-  implicit class IAttributeDefinitionMutableBuilder[Self <: IAttributeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IAttributeDefinition](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Any): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Any): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAnimationProcessors(value: js.Any): Self = StObject.set(x, "animationProcessors", value.asInstanceOf[js.Any])
+    inline def setAnimationProcessors(value: js.Any): Self = StObject.set(x, "animationProcessors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationProcessorsUndefined: Self = StObject.set(x, "animationProcessors", js.undefined)
+    inline def setAnimationProcessorsUndefined: Self = StObject.set(x, "animationProcessors", js.undefined)
     
-    @scala.inline
-    def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
-    @scala.inline
-    def setDirty(value: js.Any): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: js.Any): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+    inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
     
-    @scala.inline
-    def setGetAliases(value: () => js.Any): Self = StObject.set(x, "getAliases", js.Any.fromFunction0(value))
+    inline def setGetAliases(value: () => js.Any): Self = StObject.set(x, "getAliases", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAliasesUndefined: Self = StObject.set(x, "getAliases", js.undefined)
+    inline def setGetAliasesUndefined: Self = StObject.set(x, "getAliases", js.undefined)
     
-    @scala.inline
-    def setGetAnimationProcessors(value: () => js.Any): Self = StObject.set(x, "getAnimationProcessors", js.Any.fromFunction0(value))
+    inline def setGetAnimationProcessors(value: () => js.Any): Self = StObject.set(x, "getAnimationProcessors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnimationProcessorsUndefined: Self = StObject.set(x, "getAnimationProcessors", js.undefined)
+    inline def setGetAnimationProcessorsUndefined: Self = StObject.set(x, "getAnimationProcessors", js.undefined)
     
-    @scala.inline
-    def setGetDefaults(value: () => js.Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
+    inline def setGetDefaults(value: () => js.Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultsUndefined: Self = StObject.set(x, "getDefaults", js.undefined)
+    inline def setGetDefaultsUndefined: Self = StObject.set(x, "getDefaults", js.undefined)
     
-    @scala.inline
-    def setGetProcessors(value: () => js.Any): Self = StObject.set(x, "getProcessors", js.Any.fromFunction0(value))
+    inline def setGetProcessors(value: () => js.Any): Self = StObject.set(x, "getProcessors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProcessorsUndefined: Self = StObject.set(x, "getProcessors", js.undefined)
+    inline def setGetProcessorsUndefined: Self = StObject.set(x, "getProcessors", js.undefined)
     
-    @scala.inline
-    def setGetUpdaters(value: () => js.Any): Self = StObject.set(x, "getUpdaters", js.Any.fromFunction0(value))
+    inline def setGetUpdaters(value: () => js.Any): Self = StObject.set(x, "getUpdaters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpdatersUndefined: Self = StObject.set(x, "getUpdaters", js.undefined)
+    inline def setGetUpdatersUndefined: Self = StObject.set(x, "getUpdaters", js.undefined)
     
-    @scala.inline
-    def setNormalize(value: /* changes */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    inline def setNormalize(value: /* changes */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    @scala.inline
-    def setProcessors(value: js.Any): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
+    inline def setProcessors(value: js.Any): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorsUndefined: Self = StObject.set(x, "processors", js.undefined)
+    inline def setProcessorsUndefined: Self = StObject.set(x, "processors", js.undefined)
     
-    @scala.inline
-    def setSetAliases(value: /* aliases */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAliases", js.Any.fromFunction1(value))
+    inline def setSetAliases(value: /* aliases */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAliases", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAliasesUndefined: Self = StObject.set(x, "setAliases", js.undefined)
+    inline def setSetAliasesUndefined: Self = StObject.set(x, "setAliases", js.undefined)
     
-    @scala.inline
-    def setSetAnimationProcessors(value: /* animationProcessors */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimationProcessors", js.Any.fromFunction1(value))
+    inline def setSetAnimationProcessors(value: /* animationProcessors */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimationProcessors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAnimationProcessorsUndefined: Self = StObject.set(x, "setAnimationProcessors", js.undefined)
+    inline def setSetAnimationProcessorsUndefined: Self = StObject.set(x, "setAnimationProcessors", js.undefined)
     
-    @scala.inline
-    def setSetDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+    inline def setSetDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultsUndefined: Self = StObject.set(x, "setDefaults", js.undefined)
+    inline def setSetDefaultsUndefined: Self = StObject.set(x, "setDefaults", js.undefined)
     
-    @scala.inline
-    def setSetProcessors(value: /* processors */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setProcessors", js.Any.fromFunction1(value))
+    inline def setSetProcessors(value: /* processors */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setProcessors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProcessorsUndefined: Self = StObject.set(x, "setProcessors", js.undefined)
+    inline def setSetProcessorsUndefined: Self = StObject.set(x, "setProcessors", js.undefined)
     
-    @scala.inline
-    def setSetUpdaters(value: /* updaters */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUpdaters", js.Any.fromFunction1(value))
+    inline def setSetUpdaters(value: /* updaters */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUpdaters", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUpdatersUndefined: Self = StObject.set(x, "setUpdaters", js.undefined)
+    inline def setSetUpdatersUndefined: Self = StObject.set(x, "setUpdaters", js.undefined)
     
-    @scala.inline
-    def setUpdaters(value: js.Any): Self = StObject.set(x, "updaters", value.asInstanceOf[js.Any])
+    inline def setUpdaters(value: js.Any): Self = StObject.set(x, "updaters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatersUndefined: Self = StObject.set(x, "updaters", js.undefined)
+    inline def setUpdatersUndefined: Self = StObject.set(x, "updaters", js.undefined)
   }
 }

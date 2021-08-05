@@ -78,104 +78,72 @@ object geolocation {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setAllowHighAccuracy(value: Boolean): Self = StObject.set(x, "allowHighAccuracy", value.asInstanceOf[js.Any])
+      inline def setAllowHighAccuracy(value: Boolean): Self = StObject.set(x, "allowHighAccuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHighAccuracyUndefined: Self = StObject.set(x, "allowHighAccuracy", js.undefined)
+      inline def setAllowHighAccuracyUndefined: Self = StObject.set(x, "allowHighAccuracy", js.undefined)
       
-      @scala.inline
-      def setClearWatch(value: () => Unit): Self = StObject.set(x, "clearWatch", js.Any.fromFunction0(value))
+      inline def setClearWatch(value: () => Unit): Self = StObject.set(x, "clearWatch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClearWatchUndefined: Self = StObject.set(x, "clearWatch", js.undefined)
+      inline def setClearWatchUndefined: Self = StObject.set(x, "clearWatch", js.undefined)
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setGetAllowHighAccuracy(value: () => Boolean): Self = StObject.set(x, "getAllowHighAccuracy", js.Any.fromFunction0(value))
+      inline def setGetAllowHighAccuracy(value: () => Boolean): Self = StObject.set(x, "getAllowHighAccuracy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllowHighAccuracyUndefined: Self = StObject.set(x, "getAllowHighAccuracy", js.undefined)
+      inline def setGetAllowHighAccuracyUndefined: Self = StObject.set(x, "getAllowHighAccuracy", js.undefined)
       
-      @scala.inline
-      def setGetCurrentPosition(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getCurrentPosition", js.Any.fromFunction1(value))
+      inline def setGetCurrentPosition(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getCurrentPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentPositionUndefined: Self = StObject.set(x, "getCurrentPosition", js.undefined)
+      inline def setGetCurrentPositionUndefined: Self = StObject.set(x, "getCurrentPosition", js.undefined)
       
-      @scala.inline
-      def setGetFrequency(value: () => Double): Self = StObject.set(x, "getFrequency", js.Any.fromFunction0(value))
+      inline def setGetFrequency(value: () => Double): Self = StObject.set(x, "getFrequency", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFrequencyUndefined: Self = StObject.set(x, "getFrequency", js.undefined)
+      inline def setGetFrequencyUndefined: Self = StObject.set(x, "getFrequency", js.undefined)
       
-      @scala.inline
-      def setGetMaximumAge(value: () => Double): Self = StObject.set(x, "getMaximumAge", js.Any.fromFunction0(value))
+      inline def setGetMaximumAge(value: () => Double): Self = StObject.set(x, "getMaximumAge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaximumAgeUndefined: Self = StObject.set(x, "getMaximumAge", js.undefined)
+      inline def setGetMaximumAgeUndefined: Self = StObject.set(x, "getMaximumAge", js.undefined)
       
-      @scala.inline
-      def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
+      inline def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
+      inline def setGetTimeoutUndefined: Self = StObject.set(x, "getTimeout", js.undefined)
       
-      @scala.inline
-      def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
+      inline def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
+      inline def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
       
-      @scala.inline
-      def setSetAllowHighAccuracy(value: /* allowHighAccuracy */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowHighAccuracy", js.Any.fromFunction1(value))
+      inline def setSetAllowHighAccuracy(value: /* allowHighAccuracy */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowHighAccuracy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAllowHighAccuracyUndefined: Self = StObject.set(x, "setAllowHighAccuracy", js.undefined)
+      inline def setSetAllowHighAccuracyUndefined: Self = StObject.set(x, "setAllowHighAccuracy", js.undefined)
       
-      @scala.inline
-      def setSetFrequency(value: /* frequency */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFrequency", js.Any.fromFunction1(value))
+      inline def setSetFrequency(value: /* frequency */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFrequency", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFrequencyUndefined: Self = StObject.set(x, "setFrequency", js.undefined)
+      inline def setSetFrequencyUndefined: Self = StObject.set(x, "setFrequency", js.undefined)
       
-      @scala.inline
-      def setSetMaximumAge(value: /* maximumAge */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaximumAge", js.Any.fromFunction1(value))
+      inline def setSetMaximumAge(value: /* maximumAge */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaximumAge", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMaximumAgeUndefined: Self = StObject.set(x, "setMaximumAge", js.undefined)
+      inline def setSetMaximumAgeUndefined: Self = StObject.set(x, "setMaximumAge", js.undefined)
       
-      @scala.inline
-      def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+      inline def setSetTimeout(value: /* timeout */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+      inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWatchPosition(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "watchPosition", js.Any.fromFunction1(value))
+      inline def setWatchPosition(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "watchPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWatchPositionUndefined: Self = StObject.set(x, "watchPosition", js.undefined)
+      inline def setWatchPositionUndefined: Self = StObject.set(x, "watchPosition", js.undefined)
     }
   }
   
@@ -184,8 +152,7 @@ object geolocation {
        with IAbstract
   object ICordova {
     
-    @scala.inline
-    def apply(): ICordova = {
+    inline def apply(): ICordova = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICordova]
     }
@@ -196,8 +163,7 @@ object geolocation {
        with IAbstract
   object IPhoneGap {
     
-    @scala.inline
-    def apply(): IPhoneGap = {
+    inline def apply(): IPhoneGap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPhoneGap]
     }
@@ -208,8 +174,7 @@ object geolocation {
        with IAbstract
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }
@@ -220,8 +185,7 @@ object geolocation {
        with IAbstract
   object ISimulator {
     
-    @scala.inline
-    def apply(): ISimulator = {
+    inline def apply(): ISimulator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISimulator]
     }

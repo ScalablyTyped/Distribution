@@ -17,28 +17,21 @@ trait ApigatewayAuditConfig extends StObject {
 }
 object ApigatewayAuditConfig {
   
-  @scala.inline
-  def apply(): ApigatewayAuditConfig = {
+  inline def apply(): ApigatewayAuditConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayAuditConfig]
   }
   
-  @scala.inline
-  implicit class ApigatewayAuditConfigMutableBuilder[Self <: ApigatewayAuditConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayAuditConfig](x: Self) {
     
-    @scala.inline
-    def setAuditLogConfigs(value: js.Array[ApigatewayAuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
+    inline def setAuditLogConfigs(value: js.Array[ApigatewayAuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
+    inline def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
-    @scala.inline
-    def setAuditLogConfigsVarargs(value: ApigatewayAuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
+    inline def setAuditLogConfigsVarargs(value: ApigatewayAuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

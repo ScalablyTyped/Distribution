@@ -15,19 +15,15 @@ trait TypeofRating extends StObject {
 }
 object TypeofRating {
   
-  @scala.inline
-  def apply(extend: js.Object => Rating, fn: Rating): TypeofRating = {
+  inline def apply(extend: js.Object => Rating, fn: Rating): TypeofRating = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofRating]
   }
   
-  @scala.inline
-  implicit class TypeofRatingMutableBuilder[Self <: TypeofRating] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRating](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Rating): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Rating): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Rating): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Rating): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

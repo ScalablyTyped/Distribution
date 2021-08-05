@@ -12,16 +12,13 @@ trait PlayToSourceRequestedEventArgs extends StObject {
 }
 object PlayToSourceRequestedEventArgs {
   
-  @scala.inline
-  def apply(sourceRequest: PlayToSourceRequest): PlayToSourceRequestedEventArgs = {
+  inline def apply(sourceRequest: PlayToSourceRequest): PlayToSourceRequestedEventArgs = {
     val __obj = js.Dynamic.literal(sourceRequest = sourceRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToSourceRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class PlayToSourceRequestedEventArgsMutableBuilder[Self <: PlayToSourceRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PlayToSourceRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSourceRequest(value: PlayToSourceRequest): Self = StObject.set(x, "sourceRequest", value.asInstanceOf[js.Any])
+    inline def setSourceRequest(value: PlayToSourceRequest): Self = StObject.set(x, "sourceRequest", value.asInstanceOf[js.Any])
   }
 }

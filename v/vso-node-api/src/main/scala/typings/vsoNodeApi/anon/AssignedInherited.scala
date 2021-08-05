@@ -12,19 +12,15 @@ trait AssignedInherited extends StObject {
 }
 object AssignedInherited {
   
-  @scala.inline
-  def apply(assigned: scala.Double, inherited: scala.Double): AssignedInherited = {
+  inline def apply(assigned: scala.Double, inherited: scala.Double): AssignedInherited = {
     val __obj = js.Dynamic.literal(assigned = assigned.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignedInherited]
   }
   
-  @scala.inline
-  implicit class AssignedInheritedMutableBuilder[Self <: AssignedInherited] (val x: Self) extends AnyVal {
+  extension [Self <: AssignedInherited](x: Self) {
     
-    @scala.inline
-    def setAssigned(value: scala.Double): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
+    inline def setAssigned(value: scala.Double): Self = StObject.set(x, "assigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherited(value: scala.Double): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+    inline def setInherited(value: scala.Double): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ trait StringSchema
 }
 object StringSchema {
   
-  @scala.inline
-  def apply(): StringSchema = {
+  inline def apply(): StringSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringSchema]
   }
   
-  @scala.inline
-  implicit class StringSchemaMutableBuilder[Self <: StringSchema] (val x: Self) extends AnyVal {
+  extension [Self <: StringSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

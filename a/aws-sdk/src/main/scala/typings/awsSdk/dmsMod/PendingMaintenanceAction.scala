@@ -38,49 +38,35 @@ trait PendingMaintenanceAction extends StObject {
 }
 object PendingMaintenanceAction {
   
-  @scala.inline
-  def apply(): PendingMaintenanceAction = {
+  inline def apply(): PendingMaintenanceAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingMaintenanceAction]
   }
   
-  @scala.inline
-  implicit class PendingMaintenanceActionMutableBuilder[Self <: PendingMaintenanceAction] (val x: Self) extends AnyVal {
+  extension [Self <: PendingMaintenanceAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setAutoAppliedAfterDate(value: TStamp): Self = StObject.set(x, "AutoAppliedAfterDate", value.asInstanceOf[js.Any])
+    inline def setAutoAppliedAfterDate(value: TStamp): Self = StObject.set(x, "AutoAppliedAfterDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAppliedAfterDateUndefined: Self = StObject.set(x, "AutoAppliedAfterDate", js.undefined)
+    inline def setAutoAppliedAfterDateUndefined: Self = StObject.set(x, "AutoAppliedAfterDate", js.undefined)
     
-    @scala.inline
-    def setCurrentApplyDate(value: TStamp): Self = StObject.set(x, "CurrentApplyDate", value.asInstanceOf[js.Any])
+    inline def setCurrentApplyDate(value: TStamp): Self = StObject.set(x, "CurrentApplyDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplyDateUndefined: Self = StObject.set(x, "CurrentApplyDate", js.undefined)
+    inline def setCurrentApplyDateUndefined: Self = StObject.set(x, "CurrentApplyDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setForcedApplyDate(value: TStamp): Self = StObject.set(x, "ForcedApplyDate", value.asInstanceOf[js.Any])
+    inline def setForcedApplyDate(value: TStamp): Self = StObject.set(x, "ForcedApplyDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForcedApplyDateUndefined: Self = StObject.set(x, "ForcedApplyDate", js.undefined)
+    inline def setForcedApplyDateUndefined: Self = StObject.set(x, "ForcedApplyDate", js.undefined)
     
-    @scala.inline
-    def setOptInStatus(value: String): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
+    inline def setOptInStatus(value: String): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptInStatusUndefined: Self = StObject.set(x, "OptInStatus", js.undefined)
+    inline def setOptInStatusUndefined: Self = StObject.set(x, "OptInStatus", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Jpeg = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Jpeg]
+  inline def default(): Jpeg = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Jpeg]
   
   trait Jpeg extends StObject {
     
@@ -32,8 +31,7 @@ object mod {
   }
   object Jpeg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `class`: JpegClass,
       constants: MIMEJPEG,
       decoders: ImagejpegDecoderFn,
@@ -45,23 +43,17 @@ object mod {
       __obj.asInstanceOf[Jpeg]
     }
     
-    @scala.inline
-    implicit class JpegMutableBuilder[Self <: Jpeg] (val x: Self) extends AnyVal {
+    extension [Self <: Jpeg](x: Self) {
       
-      @scala.inline
-      def setClass(value: JpegClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: JpegClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstants(value: MIMEJPEG): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: MIMEJPEG): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoders(value: ImagejpegDecoderFn): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
+      inline def setDecoders(value: ImagejpegDecoderFn): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoders(value: ImagejpegEncoderFn): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
+      inline def setEncoders(value: ImagejpegEncoderFn): Self = StObject.set(x, "encoders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: Imagejpeg): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: Imagejpeg): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     }
   }
   

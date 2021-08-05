@@ -131,10 +131,10 @@ object exporter {
       endModel: js.Function1[/* modelContext */ IModel, Unit]
     ) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var beginModel: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var endModel: js.Any = js.native
     
     /**
@@ -164,13 +164,13 @@ object exporter {
     /* CompleteClass */
     override def exportPath(id: String, pathToExport: IPath, offset: IPoint, layer: String): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var fixPath: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var fixPoint: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var map: js.Any = js.native
   }
   
@@ -240,21 +240,18 @@ object exporter {
       * @returns Escaped string.
       */
     /* static member */
-    @scala.inline
-    def escapeString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def escapeString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /**
     * Convert a chain to SVG path data.
     */
-  @scala.inline
-  def chainToSVGPathData(chain: IChain, offset: IPoint): String = (^.asInstanceOf[js.Dynamic].applyDynamic("chainToSVGPathData")(chain.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def chainToSVGPathData(chain: IChain, offset: IPoint): String = (^.asInstanceOf[js.Dynamic].applyDynamic("chainToSVGPathData")(chain.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Convert a path to SVG path data.
     */
-  @scala.inline
-  def pathToSVGPathData(pathToExport: IPath, offset: IPoint, offset2: IPoint): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToSVGPathData")(pathToExport.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], offset2.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pathToSVGPathData(pathToExport: IPath, offset: IPoint, offset2: IPoint): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToSVGPathData")(pathToExport.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], offset2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Map of MakerJs unit system to SVG unit system
@@ -262,34 +259,21 @@ object exporter {
   @JSGlobal("MakerJs.exporter.svgUnit")
   @js.native
   def svgUnit: svgUnitConversion = js.native
-  @scala.inline
-  def svgUnit_=(x: svgUnitConversion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svgUnit")(x.asInstanceOf[js.Any])
+  inline def svgUnit_=(x: svgUnitConversion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svgUnit")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def toDXF(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toDXF(modelToExport: IModel, options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toDXF(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toDXF(pathToExport: IPath, options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toDXF(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toDXF(pathsToExport: js.Array[IPath], options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toDXF(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toDXF(modelToExport: IModel, options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toDXF(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toDXF(pathToExport: IPath, options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toDXF(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toDXF(pathsToExport: js.Array[IPath], options: IDXFRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDXF")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toOpenJsCad(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toOpenJsCad(modelToExport: IModel, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toOpenJsCad(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toOpenJsCad(pathToExport: IPath, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toOpenJsCad(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toOpenJsCad(pathsToExport: js.Array[IPath], options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toOpenJsCad(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toOpenJsCad(modelToExport: IModel, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toOpenJsCad(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toOpenJsCad(pathToExport: IPath, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toOpenJsCad(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toOpenJsCad(pathsToExport: js.Array[IPath], options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toOpenJsCad")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Injects drawing into a PDFKit document.
@@ -298,10 +282,8 @@ object exporter {
     * @param options Export options object.
     * @returns String of PDF file contents.
     */
-  @scala.inline
-  def toPDF(doc: PDFDocument, modelToExport: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(doc.asInstanceOf[js.Any], modelToExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def toPDF(doc: PDFDocument, modelToExport: IModel, options: IPDFRenderOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(doc.asInstanceOf[js.Any], modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toPDF(doc: PDFDocument, modelToExport: IModel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(doc.asInstanceOf[js.Any], modelToExport.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toPDF(doc: PDFDocument, modelToExport: IModel, options: IPDFRenderOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toPDF")(doc.asInstanceOf[js.Any], modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Executes a JavaScript string with the OpenJsCad engine - converts 2D to 3D.
@@ -312,23 +294,15 @@ object exporter {
     * @param options.resolution Size of facets.
     * @returns String of STL format of 3D object.
     */
-  @scala.inline
-  def toSTL(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSTL")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toSTL(modelToExport: IModel, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSTL")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toSTL(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSTL")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toSTL(modelToExport: IModel, options: IOpenJsCadOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSTL")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toSVG(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toSVG(modelToExport: IModel, options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toSVG(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toSVG(pathToExport: IPath, options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toSVG(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toSVG(pathsToExport: js.Array[IPath], options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toSVG(modelToExport: IModel): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toSVG(modelToExport: IModel, options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(modelToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toSVG(pathToExport: IPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toSVG(pathToExport: IPath, options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toSVG(pathsToExport: js.Array[IPath]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathsToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toSVG(pathsToExport: js.Array[IPath], options: ISVGRenderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(pathsToExport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Convert a model to SVG path data.
@@ -338,19 +312,14 @@ object exporter {
     * @param origin Optional reference origin.
     * @returns String of SVG path data (if byLayers is false) or an object map of path data by layer .
     */
-  @scala.inline
-  def toSVGPathData(modelToExport: IModel): IPathDataByLayerMap | String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[IPathDataByLayerMap | String]
-  @scala.inline
-  def toSVGPathData(modelToExport: IModel, byLayers: Boolean): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
-  @scala.inline
-  def toSVGPathData(modelToExport: IModel, byLayers: Boolean, origin: IPoint): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
-  @scala.inline
-  def toSVGPathData(modelToExport: IModel, byLayers: Unit, origin: IPoint): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
+  inline def toSVGPathData(modelToExport: IModel): IPathDataByLayerMap | String = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any]).asInstanceOf[IPathDataByLayerMap | String]
+  inline def toSVGPathData(modelToExport: IModel, byLayers: Boolean): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
+  inline def toSVGPathData(modelToExport: IModel, byLayers: Boolean, origin: IPoint): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
+  inline def toSVGPathData(modelToExport: IModel, byLayers: Unit, origin: IPoint): IPathDataByLayerMap | String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSVGPathData")(modelToExport.asInstanceOf[js.Any], byLayers.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[IPathDataByLayerMap | String]
   
   /**
     * Try to get the unit system from a model
     * @private
     */
-  @scala.inline
-  def tryGetModelUnits(itemToExport: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tryGetModelUnits")(itemToExport.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def tryGetModelUnits(itemToExport: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tryGetModelUnits")(itemToExport.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -19,19 +19,15 @@ trait SchemaImportDicomDataRequest extends StObject {
 }
 object SchemaImportDicomDataRequest {
   
-  @scala.inline
-  def apply(): SchemaImportDicomDataRequest = {
+  inline def apply(): SchemaImportDicomDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportDicomDataRequest]
   }
   
-  @scala.inline
-  implicit class SchemaImportDicomDataRequestMutableBuilder[Self <: SchemaImportDicomDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportDicomDataRequest](x: Self) {
     
-    @scala.inline
-    def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: SchemaInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
   }
 }

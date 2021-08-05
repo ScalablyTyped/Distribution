@@ -102,226 +102,153 @@ trait PlannerTask
 }
 object PlannerTask {
   
-  @scala.inline
-  def apply(): PlannerTask = {
+  inline def apply(): PlannerTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlannerTask]
   }
   
-  @scala.inline
-  implicit class PlannerTaskMutableBuilder[Self <: PlannerTask] (val x: Self) extends AnyVal {
+  extension [Self <: PlannerTask](x: Self) {
     
-    @scala.inline
-    def setActiveChecklistItemCount(value: NullableOption[Double]): Self = StObject.set(x, "activeChecklistItemCount", value.asInstanceOf[js.Any])
+    inline def setActiveChecklistItemCount(value: NullableOption[Double]): Self = StObject.set(x, "activeChecklistItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveChecklistItemCountNull: Self = StObject.set(x, "activeChecklistItemCount", null)
+    inline def setActiveChecklistItemCountNull: Self = StObject.set(x, "activeChecklistItemCount", null)
     
-    @scala.inline
-    def setActiveChecklistItemCountUndefined: Self = StObject.set(x, "activeChecklistItemCount", js.undefined)
+    inline def setActiveChecklistItemCountUndefined: Self = StObject.set(x, "activeChecklistItemCount", js.undefined)
     
-    @scala.inline
-    def setAppliedCategories(value: NullableOption[PlannerAppliedCategories]): Self = StObject.set(x, "appliedCategories", value.asInstanceOf[js.Any])
+    inline def setAppliedCategories(value: NullableOption[PlannerAppliedCategories]): Self = StObject.set(x, "appliedCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliedCategoriesNull: Self = StObject.set(x, "appliedCategories", null)
+    inline def setAppliedCategoriesNull: Self = StObject.set(x, "appliedCategories", null)
     
-    @scala.inline
-    def setAppliedCategoriesUndefined: Self = StObject.set(x, "appliedCategories", js.undefined)
+    inline def setAppliedCategoriesUndefined: Self = StObject.set(x, "appliedCategories", js.undefined)
     
-    @scala.inline
-    def setAssignedToTaskBoardFormat(value: NullableOption[PlannerAssignedToTaskBoardTaskFormat]): Self = StObject.set(x, "assignedToTaskBoardFormat", value.asInstanceOf[js.Any])
+    inline def setAssignedToTaskBoardFormat(value: NullableOption[PlannerAssignedToTaskBoardTaskFormat]): Self = StObject.set(x, "assignedToTaskBoardFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedToTaskBoardFormatNull: Self = StObject.set(x, "assignedToTaskBoardFormat", null)
+    inline def setAssignedToTaskBoardFormatNull: Self = StObject.set(x, "assignedToTaskBoardFormat", null)
     
-    @scala.inline
-    def setAssignedToTaskBoardFormatUndefined: Self = StObject.set(x, "assignedToTaskBoardFormat", js.undefined)
+    inline def setAssignedToTaskBoardFormatUndefined: Self = StObject.set(x, "assignedToTaskBoardFormat", js.undefined)
     
-    @scala.inline
-    def setAssigneePriority(value: NullableOption[String]): Self = StObject.set(x, "assigneePriority", value.asInstanceOf[js.Any])
+    inline def setAssigneePriority(value: NullableOption[String]): Self = StObject.set(x, "assigneePriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssigneePriorityNull: Self = StObject.set(x, "assigneePriority", null)
+    inline def setAssigneePriorityNull: Self = StObject.set(x, "assigneePriority", null)
     
-    @scala.inline
-    def setAssigneePriorityUndefined: Self = StObject.set(x, "assigneePriority", js.undefined)
+    inline def setAssigneePriorityUndefined: Self = StObject.set(x, "assigneePriority", js.undefined)
     
-    @scala.inline
-    def setAssignments(value: NullableOption[PlannerAssignments]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    inline def setAssignments(value: NullableOption[PlannerAssignments]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
     
-    @scala.inline
-    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    @scala.inline
-    def setBucketId(value: NullableOption[String]): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
+    inline def setBucketId(value: NullableOption[String]): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketIdNull: Self = StObject.set(x, "bucketId", null)
+    inline def setBucketIdNull: Self = StObject.set(x, "bucketId", null)
     
-    @scala.inline
-    def setBucketIdUndefined: Self = StObject.set(x, "bucketId", js.undefined)
+    inline def setBucketIdUndefined: Self = StObject.set(x, "bucketId", js.undefined)
     
-    @scala.inline
-    def setBucketTaskBoardFormat(value: NullableOption[PlannerBucketTaskBoardTaskFormat]): Self = StObject.set(x, "bucketTaskBoardFormat", value.asInstanceOf[js.Any])
+    inline def setBucketTaskBoardFormat(value: NullableOption[PlannerBucketTaskBoardTaskFormat]): Self = StObject.set(x, "bucketTaskBoardFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketTaskBoardFormatNull: Self = StObject.set(x, "bucketTaskBoardFormat", null)
+    inline def setBucketTaskBoardFormatNull: Self = StObject.set(x, "bucketTaskBoardFormat", null)
     
-    @scala.inline
-    def setBucketTaskBoardFormatUndefined: Self = StObject.set(x, "bucketTaskBoardFormat", js.undefined)
+    inline def setBucketTaskBoardFormatUndefined: Self = StObject.set(x, "bucketTaskBoardFormat", js.undefined)
     
-    @scala.inline
-    def setChecklistItemCount(value: NullableOption[Double]): Self = StObject.set(x, "checklistItemCount", value.asInstanceOf[js.Any])
+    inline def setChecklistItemCount(value: NullableOption[Double]): Self = StObject.set(x, "checklistItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecklistItemCountNull: Self = StObject.set(x, "checklistItemCount", null)
+    inline def setChecklistItemCountNull: Self = StObject.set(x, "checklistItemCount", null)
     
-    @scala.inline
-    def setChecklistItemCountUndefined: Self = StObject.set(x, "checklistItemCount", js.undefined)
+    inline def setChecklistItemCountUndefined: Self = StObject.set(x, "checklistItemCount", js.undefined)
     
-    @scala.inline
-    def setCompletedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "completedBy", value.asInstanceOf[js.Any])
+    inline def setCompletedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "completedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedByNull: Self = StObject.set(x, "completedBy", null)
+    inline def setCompletedByNull: Self = StObject.set(x, "completedBy", null)
     
-    @scala.inline
-    def setCompletedByUndefined: Self = StObject.set(x, "completedBy", js.undefined)
+    inline def setCompletedByUndefined: Self = StObject.set(x, "completedBy", js.undefined)
     
-    @scala.inline
-    def setCompletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
+    inline def setCompletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
+    inline def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
     
-    @scala.inline
-    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
+    inline def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
-    @scala.inline
-    def setConversationThreadId(value: NullableOption[String]): Self = StObject.set(x, "conversationThreadId", value.asInstanceOf[js.Any])
+    inline def setConversationThreadId(value: NullableOption[String]): Self = StObject.set(x, "conversationThreadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationThreadIdNull: Self = StObject.set(x, "conversationThreadId", null)
+    inline def setConversationThreadIdNull: Self = StObject.set(x, "conversationThreadId", null)
     
-    @scala.inline
-    def setConversationThreadIdUndefined: Self = StObject.set(x, "conversationThreadId", js.undefined)
+    inline def setConversationThreadIdUndefined: Self = StObject.set(x, "conversationThreadId", js.undefined)
     
-    @scala.inline
-    def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
+    inline def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setDetails(value: NullableOption[PlannerTaskDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: NullableOption[PlannerTaskDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsNull: Self = StObject.set(x, "details", null)
+    inline def setDetailsNull: Self = StObject.set(x, "details", null)
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDueDateTime(value: NullableOption[String]): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
+    inline def setDueDateTime(value: NullableOption[String]): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDateTimeNull: Self = StObject.set(x, "dueDateTime", null)
+    inline def setDueDateTimeNull: Self = StObject.set(x, "dueDateTime", null)
     
-    @scala.inline
-    def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
+    inline def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
     
-    @scala.inline
-    def setHasDescription(value: NullableOption[Boolean]): Self = StObject.set(x, "hasDescription", value.asInstanceOf[js.Any])
+    inline def setHasDescription(value: NullableOption[Boolean]): Self = StObject.set(x, "hasDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDescriptionNull: Self = StObject.set(x, "hasDescription", null)
+    inline def setHasDescriptionNull: Self = StObject.set(x, "hasDescription", null)
     
-    @scala.inline
-    def setHasDescriptionUndefined: Self = StObject.set(x, "hasDescription", js.undefined)
+    inline def setHasDescriptionUndefined: Self = StObject.set(x, "hasDescription", js.undefined)
     
-    @scala.inline
-    def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+    inline def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
+    inline def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
     
-    @scala.inline
-    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+    inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
-    @scala.inline
-    def setPercentComplete(value: NullableOption[Double]): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: NullableOption[Double]): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentCompleteNull: Self = StObject.set(x, "percentComplete", null)
+    inline def setPercentCompleteNull: Self = StObject.set(x, "percentComplete", null)
     
-    @scala.inline
-    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
+    inline def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
-    @scala.inline
-    def setPlanId(value: NullableOption[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: NullableOption[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanIdNull: Self = StObject.set(x, "planId", null)
+    inline def setPlanIdNull: Self = StObject.set(x, "planId", null)
     
-    @scala.inline
-    def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
+    inline def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
     
-    @scala.inline
-    def setPreviewType(value: NullableOption[PlannerPreviewType]): Self = StObject.set(x, "previewType", value.asInstanceOf[js.Any])
+    inline def setPreviewType(value: NullableOption[PlannerPreviewType]): Self = StObject.set(x, "previewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewTypeNull: Self = StObject.set(x, "previewType", null)
+    inline def setPreviewTypeNull: Self = StObject.set(x, "previewType", null)
     
-    @scala.inline
-    def setPreviewTypeUndefined: Self = StObject.set(x, "previewType", js.undefined)
+    inline def setPreviewTypeUndefined: Self = StObject.set(x, "previewType", js.undefined)
     
-    @scala.inline
-    def setProgressTaskBoardFormat(value: NullableOption[PlannerProgressTaskBoardTaskFormat]): Self = StObject.set(x, "progressTaskBoardFormat", value.asInstanceOf[js.Any])
+    inline def setProgressTaskBoardFormat(value: NullableOption[PlannerProgressTaskBoardTaskFormat]): Self = StObject.set(x, "progressTaskBoardFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressTaskBoardFormatNull: Self = StObject.set(x, "progressTaskBoardFormat", null)
+    inline def setProgressTaskBoardFormatNull: Self = StObject.set(x, "progressTaskBoardFormat", null)
     
-    @scala.inline
-    def setProgressTaskBoardFormatUndefined: Self = StObject.set(x, "progressTaskBoardFormat", js.undefined)
+    inline def setProgressTaskBoardFormatUndefined: Self = StObject.set(x, "progressTaskBoardFormat", js.undefined)
     
-    @scala.inline
-    def setReferenceCount(value: NullableOption[Double]): Self = StObject.set(x, "referenceCount", value.asInstanceOf[js.Any])
+    inline def setReferenceCount(value: NullableOption[Double]): Self = StObject.set(x, "referenceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceCountNull: Self = StObject.set(x, "referenceCount", null)
+    inline def setReferenceCountNull: Self = StObject.set(x, "referenceCount", null)
     
-    @scala.inline
-    def setReferenceCountUndefined: Self = StObject.set(x, "referenceCount", js.undefined)
+    inline def setReferenceCountUndefined: Self = StObject.set(x, "referenceCount", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

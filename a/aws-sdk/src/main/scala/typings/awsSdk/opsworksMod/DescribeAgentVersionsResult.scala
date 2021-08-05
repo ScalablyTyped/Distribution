@@ -13,22 +13,17 @@ trait DescribeAgentVersionsResult extends StObject {
 }
 object DescribeAgentVersionsResult {
   
-  @scala.inline
-  def apply(): DescribeAgentVersionsResult = {
+  inline def apply(): DescribeAgentVersionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAgentVersionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeAgentVersionsResultMutableBuilder[Self <: DescribeAgentVersionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAgentVersionsResult](x: Self) {
     
-    @scala.inline
-    def setAgentVersions(value: AgentVersions): Self = StObject.set(x, "AgentVersions", value.asInstanceOf[js.Any])
+    inline def setAgentVersions(value: AgentVersions): Self = StObject.set(x, "AgentVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentVersionsUndefined: Self = StObject.set(x, "AgentVersions", js.undefined)
+    inline def setAgentVersionsUndefined: Self = StObject.set(x, "AgentVersions", js.undefined)
     
-    @scala.inline
-    def setAgentVersionsVarargs(value: AgentVersion*): Self = StObject.set(x, "AgentVersions", js.Array(value :_*))
+    inline def setAgentVersionsVarargs(value: AgentVersion*): Self = StObject.set(x, "AgentVersions", js.Array(value :_*))
   }
 }

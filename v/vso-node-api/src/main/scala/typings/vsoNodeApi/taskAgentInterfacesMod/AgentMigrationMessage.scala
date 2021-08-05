@@ -10,16 +10,13 @@ trait AgentMigrationMessage extends StObject {
 }
 object AgentMigrationMessage {
   
-  @scala.inline
-  def apply(accessToken: String): AgentMigrationMessage = {
+  inline def apply(accessToken: String): AgentMigrationMessage = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentMigrationMessage]
   }
   
-  @scala.inline
-  implicit class AgentMigrationMessageMutableBuilder[Self <: AgentMigrationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AgentMigrationMessage](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
   }
 }

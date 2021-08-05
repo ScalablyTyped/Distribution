@@ -31,12 +31,8 @@ object mod {
     def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
   }
   
-  @scala.inline
-  def subscribe(event: String): typings.eventIterator.eventIteratorMod.EventIterator[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any]).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
-  @scala.inline
-  def subscribe(event: String, options: Unit, evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any], evOptions.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
-  @scala.inline
-  def subscribe(event: String, options: AddEventListenerOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
-  @scala.inline
-  def subscribe(event: String, options: AddEventListenerOptions, evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any], evOptions.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
+  inline def subscribe(event: String): typings.eventIterator.eventIteratorMod.EventIterator[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any]).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
+  inline def subscribe(event: String, options: Unit, evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any], evOptions.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
+  inline def subscribe(event: String, options: AddEventListenerOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
+  inline def subscribe(event: String, options: AddEventListenerOptions, evOptions: EventIteratorOptions): typings.eventIterator.eventIteratorMod.EventIterator[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any], evOptions.asInstanceOf[js.Any])).asInstanceOf[typings.eventIterator.eventIteratorMod.EventIterator[Event]]
 }

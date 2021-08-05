@@ -15,25 +15,19 @@ trait NewDeviceUsed extends StObject {
 }
 object NewDeviceUsed {
   
-  @scala.inline
-  def apply(newDeviceUsed: Boolean, userAttributes: StringMap): NewDeviceUsed = {
+  inline def apply(newDeviceUsed: Boolean, userAttributes: StringMap): NewDeviceUsed = {
     val __obj = js.Dynamic.literal(newDeviceUsed = newDeviceUsed.asInstanceOf[js.Any], userAttributes = userAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewDeviceUsed]
   }
   
-  @scala.inline
-  implicit class NewDeviceUsedMutableBuilder[Self <: NewDeviceUsed] (val x: Self) extends AnyVal {
+  extension [Self <: NewDeviceUsed](x: Self) {
     
-    @scala.inline
-    def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
-    @scala.inline
-    def setNewDeviceUsed(value: Boolean): Self = StObject.set(x, "newDeviceUsed", value.asInstanceOf[js.Any])
+    inline def setNewDeviceUsed(value: Boolean): Self = StObject.set(x, "newDeviceUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
   }
 }

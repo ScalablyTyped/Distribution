@@ -38,25 +38,19 @@ trait ConditionalColorScaleCriteria extends StObject {
 }
 object ConditionalColorScaleCriteria {
   
-  @scala.inline
-  def apply(maximum: ConditionalColorScaleCriterion, minimum: ConditionalColorScaleCriterion): ConditionalColorScaleCriteria = {
+  inline def apply(maximum: ConditionalColorScaleCriterion, minimum: ConditionalColorScaleCriterion): ConditionalColorScaleCriteria = {
     val __obj = js.Dynamic.literal(maximum = maximum.asInstanceOf[js.Any], minimum = minimum.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalColorScaleCriteria]
   }
   
-  @scala.inline
-  implicit class ConditionalColorScaleCriteriaMutableBuilder[Self <: ConditionalColorScaleCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalColorScaleCriteria](x: Self) {
     
-    @scala.inline
-    def setMaximum(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidpoint(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
+    inline def setMidpoint(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidpointUndefined: Self = StObject.set(x, "midpoint", js.undefined)
+    inline def setMidpointUndefined: Self = StObject.set(x, "midpoint", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
   }
 }

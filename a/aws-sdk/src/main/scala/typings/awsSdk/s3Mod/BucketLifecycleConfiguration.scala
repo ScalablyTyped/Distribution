@@ -13,19 +13,15 @@ trait BucketLifecycleConfiguration extends StObject {
 }
 object BucketLifecycleConfiguration {
   
-  @scala.inline
-  def apply(Rules: LifecycleRules): BucketLifecycleConfiguration = {
+  inline def apply(Rules: LifecycleRules): BucketLifecycleConfiguration = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLifecycleConfiguration]
   }
   
-  @scala.inline
-  implicit class BucketLifecycleConfigurationMutableBuilder[Self <: BucketLifecycleConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BucketLifecycleConfiguration](x: Self) {
     
-    @scala.inline
-    def setRules(value: LifecycleRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: LifecycleRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

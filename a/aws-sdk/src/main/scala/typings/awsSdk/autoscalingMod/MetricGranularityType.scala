@@ -13,19 +13,15 @@ trait MetricGranularityType extends StObject {
 }
 object MetricGranularityType {
   
-  @scala.inline
-  def apply(): MetricGranularityType = {
+  inline def apply(): MetricGranularityType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricGranularityType]
   }
   
-  @scala.inline
-  implicit class MetricGranularityTypeMutableBuilder[Self <: MetricGranularityType] (val x: Self) extends AnyVal {
+  extension [Self <: MetricGranularityType](x: Self) {
     
-    @scala.inline
-    def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
   }
 }

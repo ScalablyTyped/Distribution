@@ -44,8 +44,7 @@ object typesMod {
   }
   object DrawerContentComponentProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       descriptors: SceneDescriptorMap,
       drawerOpenProgress: Node,
       drawerPosition: left | right,
@@ -60,17 +59,13 @@ object typesMod {
       __obj.asInstanceOf[DrawerContentComponentProps]
     }
     
-    @scala.inline
-    implicit class DrawerContentComponentPropsMutableBuilder[Self <: DrawerContentComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerContentComponentProps](x: Self) {
       
-      @scala.inline
-      def setDescriptors(value: SceneDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+      inline def setDescriptors(value: SceneDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerOpenProgress(value: Node): Self = StObject.set(x, "drawerOpenProgress", value.asInstanceOf[js.Any])
+      inline def setDrawerOpenProgress(value: Node): Self = StObject.set(x, "drawerOpenProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigation(value: NavigationScreenProp[NavigationDrawerState, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationScreenProp[NavigationDrawerState, NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,23 +77,18 @@ object typesMod {
   }
   object DrawerIconProps {
     
-    @scala.inline
-    def apply(focused: Boolean): DrawerIconProps = {
+    inline def apply(focused: Boolean): DrawerIconProps = {
       val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawerIconProps]
     }
     
-    @scala.inline
-    implicit class DrawerIconPropsMutableBuilder[Self <: DrawerIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerIconProps](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     }
   }
   
@@ -110,23 +100,18 @@ object typesMod {
   }
   object DrawerLabelProps {
     
-    @scala.inline
-    def apply(focused: Boolean): DrawerLabelProps = {
+    inline def apply(focused: Boolean): DrawerLabelProps = {
       val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any])
       __obj.asInstanceOf[DrawerLabelProps]
     }
     
-    @scala.inline
-    implicit class DrawerLabelPropsMutableBuilder[Self <: DrawerLabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerLabelProps](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     }
   }
   
@@ -138,14 +123,11 @@ object typesMod {
   trait DrawerLockMode extends StObject
   object DrawerLockMode {
     
-    @scala.inline
-    def `locked-closed`: typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed` = "locked-closed".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`]
+    inline def `locked-closed`: typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed` = "locked-closed".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-closed`]
     
-    @scala.inline
-    def `locked-open`: typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open` = "locked-open".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`]
+    inline def `locked-open`: typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open` = "locked-open".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.`locked-open`]
     
-    @scala.inline
-    def unlocked: typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked = "unlocked".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked]
+    inline def unlocked: typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked = "unlocked".asInstanceOf[typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked]
   }
   
   trait DrawerNavigatorItemsProps extends StObject {
@@ -186,8 +168,7 @@ object typesMod {
   }
   object DrawerNavigatorItemsProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       drawerPosition: left | right,
       getLabel: Scene => ReactNode,
       items: js.Array[NavigationRoute[NavigationParams]],
@@ -199,116 +180,79 @@ object typesMod {
       __obj.asInstanceOf[DrawerNavigatorItemsProps]
     }
     
-    @scala.inline
-    implicit class DrawerNavigatorItemsPropsMutableBuilder[Self <: DrawerNavigatorItemsProps] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerNavigatorItemsProps](x: Self) {
       
-      @scala.inline
-      def setActiveBackgroundColor(value: String | ThemedColor): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setActiveBackgroundColor(value: String | ThemedColor): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveBackgroundColorUndefined: Self = StObject.set(x, "activeBackgroundColor", js.undefined)
+      inline def setActiveBackgroundColorUndefined: Self = StObject.set(x, "activeBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setActiveItemKey(value: String): Self = StObject.set(x, "activeItemKey", value.asInstanceOf[js.Any])
+      inline def setActiveItemKey(value: String): Self = StObject.set(x, "activeItemKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveItemKeyNull: Self = StObject.set(x, "activeItemKey", null)
+      inline def setActiveItemKeyNull: Self = StObject.set(x, "activeItemKey", null)
       
-      @scala.inline
-      def setActiveItemKeyUndefined: Self = StObject.set(x, "activeItemKey", js.undefined)
+      inline def setActiveItemKeyUndefined: Self = StObject.set(x, "activeItemKey", js.undefined)
       
-      @scala.inline
-      def setActiveLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "activeLabelStyle", value.asInstanceOf[js.Any])
+      inline def setActiveLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "activeLabelStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveLabelStyleNull: Self = StObject.set(x, "activeLabelStyle", null)
+      inline def setActiveLabelStyleNull: Self = StObject.set(x, "activeLabelStyle", null)
       
-      @scala.inline
-      def setActiveLabelStyleUndefined: Self = StObject.set(x, "activeLabelStyle", js.undefined)
+      inline def setActiveLabelStyleUndefined: Self = StObject.set(x, "activeLabelStyle", js.undefined)
       
-      @scala.inline
-      def setActiveTintColor(value: String | ThemedColor): Self = StObject.set(x, "activeTintColor", value.asInstanceOf[js.Any])
+      inline def setActiveTintColor(value: String | ThemedColor): Self = StObject.set(x, "activeTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTintColorUndefined: Self = StObject.set(x, "activeTintColor", js.undefined)
+      inline def setActiveTintColorUndefined: Self = StObject.set(x, "activeTintColor", js.undefined)
       
-      @scala.inline
-      def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetLabel(value: Scene => ReactNode): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
+      inline def setGetLabel(value: Scene => ReactNode): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconContainerStyle", value.asInstanceOf[js.Any])
+      inline def setIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainerStyleNull: Self = StObject.set(x, "iconContainerStyle", null)
+      inline def setIconContainerStyleNull: Self = StObject.set(x, "iconContainerStyle", null)
       
-      @scala.inline
-      def setIconContainerStyleUndefined: Self = StObject.set(x, "iconContainerStyle", js.undefined)
+      inline def setIconContainerStyleUndefined: Self = StObject.set(x, "iconContainerStyle", js.undefined)
       
-      @scala.inline
-      def setInactiveBackgroundColor(value: String | ThemedColor): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setInactiveBackgroundColor(value: String | ThemedColor): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveBackgroundColorUndefined: Self = StObject.set(x, "inactiveBackgroundColor", js.undefined)
+      inline def setInactiveBackgroundColorUndefined: Self = StObject.set(x, "inactiveBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setInactiveLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "inactiveLabelStyle", value.asInstanceOf[js.Any])
+      inline def setInactiveLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "inactiveLabelStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveLabelStyleNull: Self = StObject.set(x, "inactiveLabelStyle", null)
+      inline def setInactiveLabelStyleNull: Self = StObject.set(x, "inactiveLabelStyle", null)
       
-      @scala.inline
-      def setInactiveLabelStyleUndefined: Self = StObject.set(x, "inactiveLabelStyle", js.undefined)
+      inline def setInactiveLabelStyleUndefined: Self = StObject.set(x, "inactiveLabelStyle", js.undefined)
       
-      @scala.inline
-      def setInactiveTintColor(value: String | ThemedColor): Self = StObject.set(x, "inactiveTintColor", value.asInstanceOf[js.Any])
+      inline def setInactiveTintColor(value: String | ThemedColor): Self = StObject.set(x, "inactiveTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveTintColorUndefined: Self = StObject.set(x, "inactiveTintColor", js.undefined)
+      inline def setInactiveTintColorUndefined: Self = StObject.set(x, "inactiveTintColor", js.undefined)
       
-      @scala.inline
-      def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
+      inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
       
-      @scala.inline
-      def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemsContainerStyle", value.asInstanceOf[js.Any])
+      inline def setItemsContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "itemsContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsContainerStyleNull: Self = StObject.set(x, "itemsContainerStyle", null)
+      inline def setItemsContainerStyleNull: Self = StObject.set(x, "itemsContainerStyle", null)
       
-      @scala.inline
-      def setItemsContainerStyleUndefined: Self = StObject.set(x, "itemsContainerStyle", js.undefined)
+      inline def setItemsContainerStyleUndefined: Self = StObject.set(x, "itemsContainerStyle", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+      inline def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
+      inline def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
       
-      @scala.inline
-      def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+      inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
       
-      @scala.inline
-      def setOnItemPress(value: Focused => Unit): Self = StObject.set(x, "onItemPress", js.Any.fromFunction1(value))
+      inline def setOnItemPress(value: Focused => Unit): Self = StObject.set(x, "onItemPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderIcon(value: Scene => ReactNode): Self = StObject.set(x, "renderIcon", js.Any.fromFunction1(value))
+      inline def setRenderIcon(value: Scene => ReactNode): Self = StObject.set(x, "renderIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,122 +294,84 @@ object typesMod {
   }
   object NavigationDrawerConfig {
     
-    @scala.inline
-    def apply(): NavigationDrawerConfig = {
+    inline def apply(): NavigationDrawerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationDrawerConfig]
     }
     
-    @scala.inline
-    implicit class NavigationDrawerConfigMutableBuilder[Self <: NavigationDrawerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationDrawerConfig](x: Self) {
       
-      @scala.inline
-      def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
+      inline def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
+      inline def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
       
-      @scala.inline
-      def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
+      inline def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
+      inline def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
       
-      @scala.inline
-      def setDrawerBackgroundColor(value: ThemedColor): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setDrawerBackgroundColor(value: ThemedColor): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
+      inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setDrawerLockMode(value: DrawerLockMode): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
+      inline def setDrawerLockMode(value: DrawerLockMode): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
+      inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
       
-      @scala.inline
-      def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
+      inline def setDrawerPosition(value: left | right): Self = StObject.set(x, "drawerPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
+      inline def setDrawerPositionUndefined: Self = StObject.set(x, "drawerPosition", js.undefined)
       
-      @scala.inline
-      def setDrawerType(value: front | back | slide): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
+      inline def setDrawerType(value: front | back | slide): Self = StObject.set(x, "drawerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerTypeUndefined: Self = StObject.set(x, "drawerType", js.undefined)
+      inline def setDrawerTypeUndefined: Self = StObject.set(x, "drawerType", js.undefined)
       
-      @scala.inline
-      def setDrawerWidth(value: Double | js.Function0[Double]): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
+      inline def setDrawerWidth(value: Double | js.Function0[Double]): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerWidthFunction0(value: () => Double): Self = StObject.set(x, "drawerWidth", js.Any.fromFunction0(value))
+      inline def setDrawerWidthFunction0(value: () => Double): Self = StObject.set(x, "drawerWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
+      inline def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
       
-      @scala.inline
-      def setEdgeWidth(value: Double): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
+      inline def setEdgeWidth(value: Double): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeWidthUndefined: Self = StObject.set(x, "edgeWidth", js.undefined)
+      inline def setEdgeWidthUndefined: Self = StObject.set(x, "edgeWidth", js.undefined)
       
-      @scala.inline
-      def setHideStatusBar(value: Boolean): Self = StObject.set(x, "hideStatusBar", value.asInstanceOf[js.Any])
+      inline def setHideStatusBar(value: Boolean): Self = StObject.set(x, "hideStatusBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideStatusBarUndefined: Self = StObject.set(x, "hideStatusBar", js.undefined)
+      inline def setHideStatusBarUndefined: Self = StObject.set(x, "hideStatusBar", js.undefined)
       
-      @scala.inline
-      def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
+      inline def setKeyboardDismissMode(value: none | `on-drag`): Self = StObject.set(x, "keyboardDismissMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
+      inline def setKeyboardDismissModeUndefined: Self = StObject.set(x, "keyboardDismissMode", js.undefined)
       
-      @scala.inline
-      def setMinSwipeDistance(value: Double): Self = StObject.set(x, "minSwipeDistance", value.asInstanceOf[js.Any])
+      inline def setMinSwipeDistance(value: Double): Self = StObject.set(x, "minSwipeDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSwipeDistanceUndefined: Self = StObject.set(x, "minSwipeDistance", js.undefined)
+      inline def setMinSwipeDistanceUndefined: Self = StObject.set(x, "minSwipeDistance", js.undefined)
       
-      @scala.inline
-      def setOverlayColor(value: ThemedColor): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
+      inline def setOverlayColor(value: ThemedColor): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
+      inline def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
       
-      @scala.inline
-      def setScreenContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "screenContainerStyle", value.asInstanceOf[js.Any])
+      inline def setScreenContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "screenContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenContainerStyleNull: Self = StObject.set(x, "screenContainerStyle", null)
+      inline def setScreenContainerStyleNull: Self = StObject.set(x, "screenContainerStyle", null)
       
-      @scala.inline
-      def setScreenContainerStyleUndefined: Self = StObject.set(x, "screenContainerStyle", js.undefined)
+      inline def setScreenContainerStyleUndefined: Self = StObject.set(x, "screenContainerStyle", js.undefined)
       
-      @scala.inline
-      def setStatusBarAnimation(value: slide | none | fade): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
+      inline def setStatusBarAnimation(value: slide | none | fade): Self = StObject.set(x, "statusBarAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarAnimationUndefined: Self = StObject.set(x, "statusBarAnimation", js.undefined)
+      inline def setStatusBarAnimationUndefined: Self = StObject.set(x, "statusBarAnimation", js.undefined)
       
-      @scala.inline
-      def setSwipeDistanceThreshold(value: Double): Self = StObject.set(x, "swipeDistanceThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeDistanceThreshold(value: Double): Self = StObject.set(x, "swipeDistanceThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeDistanceThresholdUndefined: Self = StObject.set(x, "swipeDistanceThreshold", js.undefined)
+      inline def setSwipeDistanceThresholdUndefined: Self = StObject.set(x, "swipeDistanceThreshold", js.undefined)
       
-      @scala.inline
-      def setSwipeEdgeWidth(value: Double): Self = StObject.set(x, "swipeEdgeWidth", value.asInstanceOf[js.Any])
+      inline def setSwipeEdgeWidth(value: Double): Self = StObject.set(x, "swipeEdgeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeEdgeWidthUndefined: Self = StObject.set(x, "swipeEdgeWidth", js.undefined)
+      inline def setSwipeEdgeWidthUndefined: Self = StObject.set(x, "swipeEdgeWidth", js.undefined)
       
-      @scala.inline
-      def setSwipeVelocityThreshold(value: Double): Self = StObject.set(x, "swipeVelocityThreshold", value.asInstanceOf[js.Any])
+      inline def setSwipeVelocityThreshold(value: Double): Self = StObject.set(x, "swipeVelocityThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeVelocityThresholdUndefined: Self = StObject.set(x, "swipeVelocityThreshold", js.undefined)
+      inline def setSwipeVelocityThresholdUndefined: Self = StObject.set(x, "swipeVelocityThreshold", js.undefined)
     }
   }
   
@@ -481,44 +387,32 @@ object typesMod {
   }
   object NavigationDrawerOptions {
     
-    @scala.inline
-    def apply(): NavigationDrawerOptions = {
+    inline def apply(): NavigationDrawerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationDrawerOptions]
     }
     
-    @scala.inline
-    implicit class NavigationDrawerOptionsMutableBuilder[Self <: NavigationDrawerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationDrawerOptions](x: Self) {
       
-      @scala.inline
-      def setDrawerIcon(value: ReactNode | (js.Function1[/* props */ DrawerIconProps, ReactNode])): Self = StObject.set(x, "drawerIcon", value.asInstanceOf[js.Any])
+      inline def setDrawerIcon(value: ReactNode | (js.Function1[/* props */ DrawerIconProps, ReactNode])): Self = StObject.set(x, "drawerIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerIconFunction1(value: /* props */ DrawerIconProps => ReactNode): Self = StObject.set(x, "drawerIcon", js.Any.fromFunction1(value))
+      inline def setDrawerIconFunction1(value: /* props */ DrawerIconProps => ReactNode): Self = StObject.set(x, "drawerIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDrawerIconUndefined: Self = StObject.set(x, "drawerIcon", js.undefined)
+      inline def setDrawerIconUndefined: Self = StObject.set(x, "drawerIcon", js.undefined)
       
-      @scala.inline
-      def setDrawerLabel(value: ReactNode | (js.Function1[/* props */ DrawerLabelProps, ReactNode])): Self = StObject.set(x, "drawerLabel", value.asInstanceOf[js.Any])
+      inline def setDrawerLabel(value: ReactNode | (js.Function1[/* props */ DrawerLabelProps, ReactNode])): Self = StObject.set(x, "drawerLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerLabelFunction1(value: /* props */ DrawerLabelProps => ReactNode): Self = StObject.set(x, "drawerLabel", js.Any.fromFunction1(value))
+      inline def setDrawerLabelFunction1(value: /* props */ DrawerLabelProps => ReactNode): Self = StObject.set(x, "drawerLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDrawerLabelUndefined: Self = StObject.set(x, "drawerLabel", js.undefined)
+      inline def setDrawerLabelUndefined: Self = StObject.set(x, "drawerLabel", js.undefined)
       
-      @scala.inline
-      def setDrawerLockMode(value: DrawerLockMode): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
+      inline def setDrawerLockMode(value: DrawerLockMode): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
+      inline def setDrawerLockModeUndefined: Self = StObject.set(x, "drawerLockMode", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -553,50 +447,36 @@ object typesMod {
   }
   object NavigationDrawerRouterConfig {
     
-    @scala.inline
-    def apply(): NavigationDrawerRouterConfig = {
+    inline def apply(): NavigationDrawerRouterConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationDrawerRouterConfig]
     }
     
-    @scala.inline
-    implicit class NavigationDrawerRouterConfigMutableBuilder[Self <: NavigationDrawerRouterConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationDrawerRouterConfig](x: Self) {
       
-      @scala.inline
-      def setBackBehavior(value: none | initialRoute | history): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
+      inline def setBackBehavior(value: none | initialRoute | history): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
+      inline def setBackBehaviorUndefined: Self = StObject.set(x, "backBehavior", js.undefined)
       
-      @scala.inline
-      def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
+      inline def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
+      inline def setContentComponentUndefined: Self = StObject.set(x, "contentComponent", js.undefined)
       
-      @scala.inline
-      def setContentOptions(value: js.Object): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
+      inline def setContentOptions(value: js.Object): Self = StObject.set(x, "contentOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
+      inline def setContentOptionsUndefined: Self = StObject.set(x, "contentOptions", js.undefined)
       
-      @scala.inline
-      def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+      inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+      inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
-      @scala.inline
-      def setResetOnBlur(value: Boolean): Self = StObject.set(x, "resetOnBlur", value.asInstanceOf[js.Any])
+      inline def setResetOnBlur(value: Boolean): Self = StObject.set(x, "resetOnBlur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetOnBlurUndefined: Self = StObject.set(x, "resetOnBlur", js.undefined)
+      inline def setResetOnBlurUndefined: Self = StObject.set(x, "resetOnBlur", js.undefined)
       
-      @scala.inline
-      def setUnmountInactiveRoutes(value: Boolean): Self = StObject.set(x, "unmountInactiveRoutes", value.asInstanceOf[js.Any])
+      inline def setUnmountInactiveRoutes(value: Boolean): Self = StObject.set(x, "unmountInactiveRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountInactiveRoutesUndefined: Self = StObject.set(x, "unmountInactiveRoutes", js.undefined)
+      inline def setUnmountInactiveRoutesUndefined: Self = StObject.set(x, "unmountInactiveRoutes", js.undefined)
     }
   }
   
@@ -612,8 +492,7 @@ object typesMod {
   }
   object NavigationDrawerScreenProps {
     
-    @scala.inline
-    def apply[Params, ScreenProps](
+    inline def apply[Params, ScreenProps](
       navigation: NavigationDrawerProp[NavigationRoute[NavigationParams], Params],
       screenProps: ScreenProps,
       theme: SupportedThemes
@@ -622,17 +501,13 @@ object typesMod {
       __obj.asInstanceOf[NavigationDrawerScreenProps[Params, ScreenProps]]
     }
     
-    @scala.inline
-    implicit class NavigationDrawerScreenPropsMutableBuilder[Self <: NavigationDrawerScreenProps[?, ?], Params, ScreenProps] (val x: Self & (NavigationDrawerScreenProps[Params, ScreenProps])) extends AnyVal {
+    extension [Self <: NavigationDrawerScreenProps[?, ?], Params, ScreenProps](x: Self & (NavigationDrawerScreenProps[Params, ScreenProps])) {
       
-      @scala.inline
-      def setNavigation(value: NavigationDrawerProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: NavigationDrawerProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: SupportedThemes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: SupportedThemes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -644,8 +519,7 @@ object typesMod {
   }
   object NavigationDrawerState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       index: Double,
       isDrawerOpen: Boolean,
       isTransitioning: Boolean,
@@ -656,11 +530,9 @@ object typesMod {
       __obj.asInstanceOf[NavigationDrawerState]
     }
     
-    @scala.inline
-    implicit class NavigationDrawerStateMutableBuilder[Self <: NavigationDrawerState] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationDrawerState](x: Self) {
       
-      @scala.inline
-      def setIsDrawerOpen(value: Boolean): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
+      inline def setIsDrawerOpen(value: Boolean): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -676,29 +548,22 @@ object typesMod {
   }
   object Scene {
     
-    @scala.inline
-    def apply(focused: Boolean, index: Double, route: NavigationRoute[NavigationParams]): Scene = {
+    inline def apply(focused: Boolean, index: Double, route: NavigationRoute[NavigationParams]): Scene = {
       val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scene]
     }
     
-    @scala.inline
-    implicit class SceneMutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
+    extension [Self <: Scene](x: Self) {
       
-      @scala.inline
-      def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: NavigationRoute[NavigationParams]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: NavigationRoute[NavigationParams]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+      inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+      inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     }
   }
   

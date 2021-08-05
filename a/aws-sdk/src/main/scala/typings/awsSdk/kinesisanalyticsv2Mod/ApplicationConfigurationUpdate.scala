@@ -38,52 +38,37 @@ trait ApplicationConfigurationUpdate extends StObject {
 }
 object ApplicationConfigurationUpdate {
   
-  @scala.inline
-  def apply(): ApplicationConfigurationUpdate = {
+  inline def apply(): ApplicationConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationConfigurationUpdate]
   }
   
-  @scala.inline
-  implicit class ApplicationConfigurationUpdateMutableBuilder[Self <: ApplicationConfigurationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationConfigurationUpdate](x: Self) {
     
-    @scala.inline
-    def setApplicationCodeConfigurationUpdate(value: ApplicationCodeConfigurationUpdate): Self = StObject.set(x, "ApplicationCodeConfigurationUpdate", value.asInstanceOf[js.Any])
+    inline def setApplicationCodeConfigurationUpdate(value: ApplicationCodeConfigurationUpdate): Self = StObject.set(x, "ApplicationCodeConfigurationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationCodeConfigurationUpdateUndefined: Self = StObject.set(x, "ApplicationCodeConfigurationUpdate", js.undefined)
+    inline def setApplicationCodeConfigurationUpdateUndefined: Self = StObject.set(x, "ApplicationCodeConfigurationUpdate", js.undefined)
     
-    @scala.inline
-    def setApplicationSnapshotConfigurationUpdate(value: ApplicationSnapshotConfigurationUpdate): Self = StObject.set(x, "ApplicationSnapshotConfigurationUpdate", value.asInstanceOf[js.Any])
+    inline def setApplicationSnapshotConfigurationUpdate(value: ApplicationSnapshotConfigurationUpdate): Self = StObject.set(x, "ApplicationSnapshotConfigurationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationSnapshotConfigurationUpdateUndefined: Self = StObject.set(x, "ApplicationSnapshotConfigurationUpdate", js.undefined)
+    inline def setApplicationSnapshotConfigurationUpdateUndefined: Self = StObject.set(x, "ApplicationSnapshotConfigurationUpdate", js.undefined)
     
-    @scala.inline
-    def setEnvironmentPropertyUpdates(value: EnvironmentPropertyUpdates): Self = StObject.set(x, "EnvironmentPropertyUpdates", value.asInstanceOf[js.Any])
+    inline def setEnvironmentPropertyUpdates(value: EnvironmentPropertyUpdates): Self = StObject.set(x, "EnvironmentPropertyUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentPropertyUpdatesUndefined: Self = StObject.set(x, "EnvironmentPropertyUpdates", js.undefined)
+    inline def setEnvironmentPropertyUpdatesUndefined: Self = StObject.set(x, "EnvironmentPropertyUpdates", js.undefined)
     
-    @scala.inline
-    def setFlinkApplicationConfigurationUpdate(value: FlinkApplicationConfigurationUpdate): Self = StObject.set(x, "FlinkApplicationConfigurationUpdate", value.asInstanceOf[js.Any])
+    inline def setFlinkApplicationConfigurationUpdate(value: FlinkApplicationConfigurationUpdate): Self = StObject.set(x, "FlinkApplicationConfigurationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlinkApplicationConfigurationUpdateUndefined: Self = StObject.set(x, "FlinkApplicationConfigurationUpdate", js.undefined)
+    inline def setFlinkApplicationConfigurationUpdateUndefined: Self = StObject.set(x, "FlinkApplicationConfigurationUpdate", js.undefined)
     
-    @scala.inline
-    def setSqlApplicationConfigurationUpdate(value: SqlApplicationConfigurationUpdate): Self = StObject.set(x, "SqlApplicationConfigurationUpdate", value.asInstanceOf[js.Any])
+    inline def setSqlApplicationConfigurationUpdate(value: SqlApplicationConfigurationUpdate): Self = StObject.set(x, "SqlApplicationConfigurationUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlApplicationConfigurationUpdateUndefined: Self = StObject.set(x, "SqlApplicationConfigurationUpdate", js.undefined)
+    inline def setSqlApplicationConfigurationUpdateUndefined: Self = StObject.set(x, "SqlApplicationConfigurationUpdate", js.undefined)
     
-    @scala.inline
-    def setVpcConfigurationUpdates(value: VpcConfigurationUpdates): Self = StObject.set(x, "VpcConfigurationUpdates", value.asInstanceOf[js.Any])
+    inline def setVpcConfigurationUpdates(value: VpcConfigurationUpdates): Self = StObject.set(x, "VpcConfigurationUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationUpdatesUndefined: Self = StObject.set(x, "VpcConfigurationUpdates", js.undefined)
+    inline def setVpcConfigurationUpdatesUndefined: Self = StObject.set(x, "VpcConfigurationUpdates", js.undefined)
     
-    @scala.inline
-    def setVpcConfigurationUpdatesVarargs(value: VpcConfigurationUpdate*): Self = StObject.set(x, "VpcConfigurationUpdates", js.Array(value :_*))
+    inline def setVpcConfigurationUpdatesVarargs(value: VpcConfigurationUpdate*): Self = StObject.set(x, "VpcConfigurationUpdates", js.Array(value :_*))
   }
 }

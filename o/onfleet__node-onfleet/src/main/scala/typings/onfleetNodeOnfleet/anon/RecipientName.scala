@@ -16,37 +16,27 @@ trait RecipientName extends StObject {
 }
 object RecipientName {
   
-  @scala.inline
-  def apply(): RecipientName = {
+  inline def apply(): RecipientName = {
     val __obj = js.Dynamic.literal(recipientName = null, recipientNotes = null, recipientSkipSMSNotifications = null, useMerchantForProxy = null)
     __obj.asInstanceOf[RecipientName]
   }
   
-  @scala.inline
-  implicit class RecipientNameMutableBuilder[Self <: RecipientName] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientName](x: Self) {
     
-    @scala.inline
-    def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
+    inline def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientNameNull: Self = StObject.set(x, "recipientName", null)
+    inline def setRecipientNameNull: Self = StObject.set(x, "recipientName", null)
     
-    @scala.inline
-    def setRecipientNotes(value: String): Self = StObject.set(x, "recipientNotes", value.asInstanceOf[js.Any])
+    inline def setRecipientNotes(value: String): Self = StObject.set(x, "recipientNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientNotesNull: Self = StObject.set(x, "recipientNotes", null)
+    inline def setRecipientNotesNull: Self = StObject.set(x, "recipientNotes", null)
     
-    @scala.inline
-    def setRecipientSkipSMSNotifications(value: String): Self = StObject.set(x, "recipientSkipSMSNotifications", value.asInstanceOf[js.Any])
+    inline def setRecipientSkipSMSNotifications(value: String): Self = StObject.set(x, "recipientSkipSMSNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientSkipSMSNotificationsNull: Self = StObject.set(x, "recipientSkipSMSNotifications", null)
+    inline def setRecipientSkipSMSNotificationsNull: Self = StObject.set(x, "recipientSkipSMSNotifications", null)
     
-    @scala.inline
-    def setUseMerchantForProxy(value: String): Self = StObject.set(x, "useMerchantForProxy", value.asInstanceOf[js.Any])
+    inline def setUseMerchantForProxy(value: String): Self = StObject.set(x, "useMerchantForProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMerchantForProxyNull: Self = StObject.set(x, "useMerchantForProxy", null)
+    inline def setUseMerchantForProxyNull: Self = StObject.set(x, "useMerchantForProxy", null)
   }
 }

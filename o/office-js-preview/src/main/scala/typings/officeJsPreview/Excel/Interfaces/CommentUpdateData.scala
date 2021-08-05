@@ -25,25 +25,19 @@ trait CommentUpdateData extends StObject {
 }
 object CommentUpdateData {
   
-  @scala.inline
-  def apply(): CommentUpdateData = {
+  inline def apply(): CommentUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentUpdateData]
   }
   
-  @scala.inline
-  implicit class CommentUpdateDataMutableBuilder[Self <: CommentUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: CommentUpdateData](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+    inline def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
+    inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
   }
 }

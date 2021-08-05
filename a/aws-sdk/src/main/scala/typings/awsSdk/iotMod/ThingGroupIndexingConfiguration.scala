@@ -23,34 +23,25 @@ trait ThingGroupIndexingConfiguration extends StObject {
 }
 object ThingGroupIndexingConfiguration {
   
-  @scala.inline
-  def apply(thingGroupIndexingMode: ThingGroupIndexingMode): ThingGroupIndexingConfiguration = {
+  inline def apply(thingGroupIndexingMode: ThingGroupIndexingMode): ThingGroupIndexingConfiguration = {
     val __obj = js.Dynamic.literal(thingGroupIndexingMode = thingGroupIndexingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingGroupIndexingConfiguration]
   }
   
-  @scala.inline
-  implicit class ThingGroupIndexingConfigurationMutableBuilder[Self <: ThingGroupIndexingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ThingGroupIndexingConfiguration](x: Self) {
     
-    @scala.inline
-    def setCustomFields(value: Fields): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: Fields): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setCustomFieldsVarargs(value: Field*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: Field*): Self = StObject.set(x, "customFields", js.Array(value :_*))
     
-    @scala.inline
-    def setManagedFields(value: Fields): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
+    inline def setManagedFields(value: Fields): Self = StObject.set(x, "managedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedFieldsUndefined: Self = StObject.set(x, "managedFields", js.undefined)
+    inline def setManagedFieldsUndefined: Self = StObject.set(x, "managedFields", js.undefined)
     
-    @scala.inline
-    def setManagedFieldsVarargs(value: Field*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
+    inline def setManagedFieldsVarargs(value: Field*): Self = StObject.set(x, "managedFields", js.Array(value :_*))
     
-    @scala.inline
-    def setThingGroupIndexingMode(value: ThingGroupIndexingMode): Self = StObject.set(x, "thingGroupIndexingMode", value.asInstanceOf[js.Any])
+    inline def setThingGroupIndexingMode(value: ThingGroupIndexingMode): Self = StObject.set(x, "thingGroupIndexingMode", value.asInstanceOf[js.Any])
   }
 }

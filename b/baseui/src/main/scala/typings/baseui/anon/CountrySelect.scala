@@ -40,77 +40,59 @@ trait CountrySelect extends StObject {
 }
 object CountrySelect {
   
-  @scala.inline
-  def apply(): CountrySelect = {
+  inline def apply(): CountrySelect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountrySelect]
   }
   
-  @scala.inline
-  implicit class CountrySelectMutableBuilder[Self <: CountrySelect] (val x: Self) extends AnyVal {
+  extension [Self <: CountrySelect](x: Self) {
     
-    @scala.inline
-    def setCountrySelect(
+    inline def setCountrySelect(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "CountrySelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySelectDropdown(
+    inline def setCountrySelectDropdown(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "CountrySelectDropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySelectDropdownDialcodeColumn(
+    inline def setCountrySelectDropdownDialcodeColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "CountrySelectDropdownDialcodeColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySelectDropdownDialcodeColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownDialcodeColumn", js.undefined)
+    inline def setCountrySelectDropdownDialcodeColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownDialcodeColumn", js.undefined)
     
-    @scala.inline
-    def setCountrySelectDropdownFlagColumn(
+    inline def setCountrySelectDropdownFlagColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "CountrySelectDropdownFlagColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySelectDropdownFlagColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownFlagColumn", js.undefined)
+    inline def setCountrySelectDropdownFlagColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownFlagColumn", js.undefined)
     
-    @scala.inline
-    def setCountrySelectDropdownListItem(
+    inline def setCountrySelectDropdownListItem(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "CountrySelectDropdownListItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySelectDropdownListItemUndefined: Self = StObject.set(x, "CountrySelectDropdownListItem", js.undefined)
+    inline def setCountrySelectDropdownListItemUndefined: Self = StObject.set(x, "CountrySelectDropdownListItem", js.undefined)
     
-    @scala.inline
-    def setCountrySelectDropdownNameColumn(
+    inline def setCountrySelectDropdownNameColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "CountrySelectDropdownNameColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountrySelectDropdownNameColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownNameColumn", js.undefined)
+    inline def setCountrySelectDropdownNameColumnUndefined: Self = StObject.set(x, "CountrySelectDropdownNameColumn", js.undefined)
     
-    @scala.inline
-    def setCountrySelectDropdownUndefined: Self = StObject.set(x, "CountrySelectDropdown", js.undefined)
+    inline def setCountrySelectDropdownUndefined: Self = StObject.set(x, "CountrySelectDropdown", js.undefined)
     
-    @scala.inline
-    def setCountrySelectUndefined: Self = StObject.set(x, "CountrySelect", js.undefined)
+    inline def setCountrySelectUndefined: Self = StObject.set(x, "CountrySelect", js.undefined)
     
-    @scala.inline
-    def setDialCode(
+    inline def setDialCode(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "DialCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialCodeUndefined: Self = StObject.set(x, "DialCode", js.undefined)
+    inline def setDialCodeUndefined: Self = StObject.set(x, "DialCode", js.undefined)
     
-    @scala.inline
-    def setFlagContainer(
+    inline def setFlagContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
     ): Self = StObject.set(x, "FlagContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagContainerUndefined: Self = StObject.set(x, "FlagContainer", js.undefined)
+    inline def setFlagContainerUndefined: Self = StObject.set(x, "FlagContainer", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait Vidx extends StObject {
 }
 object Vidx {
   
-  @scala.inline
-  def apply(critical: Boolean, oid: String, vidx: Double): Vidx = {
+  inline def apply(critical: Boolean, oid: String, vidx: Double): Vidx = {
     val __obj = js.Dynamic.literal(critical = critical.asInstanceOf[js.Any], oid = oid.asInstanceOf[js.Any], vidx = vidx.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vidx]
   }
   
-  @scala.inline
-  implicit class VidxMutableBuilder[Self <: Vidx] (val x: Self) extends AnyVal {
+  extension [Self <: Vidx](x: Self) {
     
-    @scala.inline
-    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
+    inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVidx(value: Double): Self = StObject.set(x, "vidx", value.asInstanceOf[js.Any])
+    inline def setVidx(value: Double): Self = StObject.set(x, "vidx", value.asInstanceOf[js.Any])
   }
 }

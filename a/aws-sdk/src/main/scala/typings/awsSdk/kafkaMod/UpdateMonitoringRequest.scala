@@ -38,37 +38,27 @@ trait UpdateMonitoringRequest extends StObject {
 }
 object UpdateMonitoringRequest {
   
-  @scala.inline
-  def apply(ClusterArn: string, CurrentVersion: string): UpdateMonitoringRequest = {
+  inline def apply(ClusterArn: string, CurrentVersion: string): UpdateMonitoringRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMonitoringRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMonitoringRequestMutableBuilder[Self <: UpdateMonitoringRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMonitoringRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+    inline def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
+    inline def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
     
-    @scala.inline
-    def setLoggingInfo(value: LoggingInfo): Self = StObject.set(x, "LoggingInfo", value.asInstanceOf[js.Any])
+    inline def setLoggingInfo(value: LoggingInfo): Self = StObject.set(x, "LoggingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingInfoUndefined: Self = StObject.set(x, "LoggingInfo", js.undefined)
+    inline def setLoggingInfoUndefined: Self = StObject.set(x, "LoggingInfo", js.undefined)
     
-    @scala.inline
-    def setOpenMonitoring(value: OpenMonitoringInfo): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
+    inline def setOpenMonitoring(value: OpenMonitoringInfo): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
+    inline def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
   }
 }

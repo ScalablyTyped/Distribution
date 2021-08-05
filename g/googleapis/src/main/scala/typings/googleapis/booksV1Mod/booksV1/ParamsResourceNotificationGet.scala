@@ -35,37 +35,27 @@ trait ParamsResourceNotificationGet
 }
 object ParamsResourceNotificationGet {
   
-  @scala.inline
-  def apply(): ParamsResourceNotificationGet = {
+  inline def apply(): ParamsResourceNotificationGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceNotificationGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceNotificationGetMutableBuilder[Self <: ParamsResourceNotificationGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceNotificationGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setNotification_id(value: String): Self = StObject.set(x, "notification_id", value.asInstanceOf[js.Any])
+    inline def setNotification_id(value: String): Self = StObject.set(x, "notification_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotification_idUndefined: Self = StObject.set(x, "notification_id", js.undefined)
+    inline def setNotification_idUndefined: Self = StObject.set(x, "notification_id", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

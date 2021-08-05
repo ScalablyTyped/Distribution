@@ -15,10 +15,8 @@ object entityInfoMod {
     /**
       * given the entity detail data, returns the team the entity belongs to. Uses TEAM_* enum values.
       */
-    @scala.inline
-    def getTeam(details: PortalData): `0` | `1` | `2` = js.Dynamic.global.applyDynamic("getTeam")(details.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2`]
+    inline def getTeam(details: PortalData): `0` | `1` | `2` = js.Dynamic.global.applyDynamic("getTeam")(details.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2`]
     
-    @scala.inline
-    def teamStringToId(teamStr: String): `0` | `1` | `2` = js.Dynamic.global.applyDynamic("teamStringToId")(teamStr.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2`]
+    inline def teamStringToId(teamStr: String): `0` | `1` | `2` = js.Dynamic.global.applyDynamic("teamStringToId")(teamStr.asInstanceOf[js.Any]).asInstanceOf[`0` | `1` | `2`]
   }
 }

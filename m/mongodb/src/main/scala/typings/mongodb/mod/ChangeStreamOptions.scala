@@ -26,61 +26,43 @@ trait ChangeStreamOptions extends StObject {
 }
 object ChangeStreamOptions {
   
-  @scala.inline
-  def apply(): ChangeStreamOptions = {
+  inline def apply(): ChangeStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangeStreamOptions]
   }
   
-  @scala.inline
-  implicit class ChangeStreamOptionsMutableBuilder[Self <: ChangeStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeStreamOptions](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+    inline def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+    inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
-    @scala.inline
-    def setFullDocument(value: default_ | updateLookup): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
+    inline def setFullDocument(value: default_ | updateLookup): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
+    inline def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
     
-    @scala.inline
-    def setMaxAwaitTimeMS(value: scala.Double): Self = StObject.set(x, "maxAwaitTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxAwaitTimeMS(value: scala.Double): Self = StObject.set(x, "maxAwaitTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAwaitTimeMSUndefined: Self = StObject.set(x, "maxAwaitTimeMS", js.undefined)
+    inline def setMaxAwaitTimeMSUndefined: Self = StObject.set(x, "maxAwaitTimeMS", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setResumeAfter(value: ResumeToken): Self = StObject.set(x, "resumeAfter", value.asInstanceOf[js.Any])
+    inline def setResumeAfter(value: ResumeToken): Self = StObject.set(x, "resumeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeAfterUndefined: Self = StObject.set(x, "resumeAfter", js.undefined)
+    inline def setResumeAfterUndefined: Self = StObject.set(x, "resumeAfter", js.undefined)
     
-    @scala.inline
-    def setStartAfter(value: ResumeToken): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
+    inline def setStartAfter(value: ResumeToken): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
+    inline def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
     
-    @scala.inline
-    def setStartAtOperationTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "startAtOperationTime", value.asInstanceOf[js.Any])
+    inline def setStartAtOperationTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "startAtOperationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAtOperationTimeUndefined: Self = StObject.set(x, "startAtOperationTime", js.undefined)
+    inline def setStartAtOperationTimeUndefined: Self = StObject.set(x, "startAtOperationTime", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ object mod {
   //=> false
   ```
   */
-  @scala.inline
-  def apply(number: Double, range: Range): Boolean = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(number: Double, range: Range): Boolean = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("in-range", JSImport.Namespace)
   @js.native
@@ -43,23 +42,18 @@ object mod {
   }
   object Range {
     
-    @scala.inline
-    def apply(end: Double): Range = {
+    inline def apply(end: Double): Range = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
 }

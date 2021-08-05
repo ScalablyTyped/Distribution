@@ -41,49 +41,35 @@ trait ProcessOptions extends StObject {
 }
 object ProcessOptions {
   
-  @scala.inline
-  def apply(): ProcessOptions = {
+  inline def apply(): ProcessOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessOptions]
   }
   
-  @scala.inline
-  implicit class ProcessOptionsMutableBuilder[Self <: ProcessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessOptions](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setParser(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
+    inline def setParser(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+    inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
-    @scala.inline
-    def setStringifier(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
+    inline def setStringifier(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
+    inline def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
     
-    @scala.inline
-    def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    inline def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait NodegroupResources extends StObject {
 }
 object NodegroupResources {
   
-  @scala.inline
-  def apply(): NodegroupResources = {
+  inline def apply(): NodegroupResources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodegroupResources]
   }
   
-  @scala.inline
-  implicit class NodegroupResourcesMutableBuilder[Self <: NodegroupResources] (val x: Self) extends AnyVal {
+  extension [Self <: NodegroupResources](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroups(value: AutoScalingGroupList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroups(value: AutoScalingGroupList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
+    inline def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
-    @scala.inline
-    def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoteAccessSecurityGroup(value: String): Self = StObject.set(x, "remoteAccessSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setRemoteAccessSecurityGroup(value: String): Self = StObject.set(x, "remoteAccessSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAccessSecurityGroupUndefined: Self = StObject.set(x, "remoteAccessSecurityGroup", js.undefined)
+    inline def setRemoteAccessSecurityGroupUndefined: Self = StObject.set(x, "remoteAccessSecurityGroup", js.undefined)
   }
 }

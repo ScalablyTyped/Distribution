@@ -14,8 +14,7 @@ trait QueryType extends StObject {
 }
 object QueryType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     queryType: ModelToObject[typings.typedoc.modelsTypesReferenceMod.ReferenceType] | typings.typedoc.modelsTypesReferenceMod.ReferenceType,
     `type`: (ModelToObject[/* "query" */ String]) | (/* "query" */ String)
   ): QueryType = {
@@ -24,21 +23,16 @@ object QueryType {
     __obj.asInstanceOf[QueryType]
   }
   
-  @scala.inline
-  implicit class QueryTypeMutableBuilder[Self <: QueryType] (val x: Self) extends AnyVal {
+  extension [Self <: QueryType](x: Self) {
     
-    @scala.inline
-    def setQueryType(
+    inline def setQueryType(
       value: ModelToObject[typings.typedoc.modelsTypesReferenceMod.ReferenceType] | typings.typedoc.modelsTypesReferenceMod.ReferenceType
     ): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "queryType", js.Array(value :_*))
+    inline def setQueryTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "queryType", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "query" */ String]) | (/* "query" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "query" */ String]) | (/* "query" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

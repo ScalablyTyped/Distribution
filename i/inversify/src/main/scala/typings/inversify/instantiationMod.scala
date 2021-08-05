@@ -13,6 +13,5 @@ object instantiationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolveInstance(constr: Newable[js.Any], childRequests: js.Array[Request], resolveRequest: ResolveRequestHandler): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveInstance")(constr.asInstanceOf[js.Any], childRequests.asInstanceOf[js.Any], resolveRequest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resolveInstance(constr: Newable[js.Any], childRequests: js.Array[Request], resolveRequest: ResolveRequestHandler): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveInstance")(constr.asInstanceOf[js.Any], childRequests.asInstanceOf[js.Any], resolveRequest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

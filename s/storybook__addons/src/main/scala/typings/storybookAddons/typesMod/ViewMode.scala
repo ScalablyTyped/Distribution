@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViewMode extends StObject
 object ViewMode {
   
-  @scala.inline
-  def docs: typings.storybookAddons.storybookAddonsStrings.docs = "docs".asInstanceOf[typings.storybookAddons.storybookAddonsStrings.docs]
+  inline def docs: typings.storybookAddons.storybookAddonsStrings.docs = "docs".asInstanceOf[typings.storybookAddons.storybookAddonsStrings.docs]
   
-  @scala.inline
-  def story: typings.storybookAddons.storybookAddonsStrings.story = "story".asInstanceOf[typings.storybookAddons.storybookAddonsStrings.story]
+  inline def story: typings.storybookAddons.storybookAddonsStrings.story = "story".asInstanceOf[typings.storybookAddons.storybookAddonsStrings.story]
 }

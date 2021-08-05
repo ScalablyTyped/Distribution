@@ -12,16 +12,13 @@ trait ToneInput extends StObject {
 }
 object ToneInput {
   
-  @scala.inline
-  def apply(text: String): ToneInput = {
+  inline def apply(text: String): ToneInput = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToneInput]
   }
   
-  @scala.inline
-  implicit class ToneInputMutableBuilder[Self <: ToneInput] (val x: Self) extends AnyVal {
+  extension [Self <: ToneInput](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

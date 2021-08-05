@@ -35,37 +35,27 @@ trait LoadingOptions extends StObject {
 }
 object LoadingOptions {
   
-  @scala.inline
-  def apply(): LoadingOptions = {
+  inline def apply(): LoadingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadingOptions]
   }
   
-  @scala.inline
-  implicit class LoadingOptionsMutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadingOptions](x: Self) {
     
-    @scala.inline
-    def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
+    inline def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDurationUndefined: Self = StObject.set(x, "hideDuration", js.undefined)
+    inline def setHideDurationUndefined: Self = StObject.set(x, "hideDuration", js.undefined)
     
-    @scala.inline
-    def setLabelStyle(value: CSSObject): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    inline def setLabelStyle(value: CSSObject): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
-    @scala.inline
-    def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
+    inline def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDurationUndefined: Self = StObject.set(x, "showDuration", js.undefined)
+    inline def setShowDurationUndefined: Self = StObject.set(x, "showDuration", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

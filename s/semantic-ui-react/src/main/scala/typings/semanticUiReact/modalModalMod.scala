@@ -86,8 +86,7 @@ object modalModalMod {
        with /* key */ StringDictionary[js.Any]
   object ModalProps {
     
-    @scala.inline
-    def apply(): ModalProps = {
+    inline def apply(): ModalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalProps]
     }
@@ -185,136 +184,96 @@ object modalModalMod {
   }
   object StrictModalProps {
     
-    @scala.inline
-    def apply(): StrictModalProps = {
+    inline def apply(): StrictModalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictModalProps]
     }
     
-    @scala.inline
-    implicit class StrictModalPropsMutableBuilder[Self <: StrictModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictModalProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: SemanticShorthandItem[ModalActionsProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: SemanticShorthandItem[ModalActionsProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsFunction3(
+      inline def setActionsFunction3(
         value: (/* component */ ElementType[ModalActionsProps], ModalActionsProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "actions", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+      inline def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+      inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
       
-      @scala.inline
-      def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
+      inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
+      inline def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseIcon(value: js.Any): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: js.Any): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       
-      @scala.inline
-      def setCloseOnDimmerClick(value: Boolean): Self = StObject.set(x, "closeOnDimmerClick", value.asInstanceOf[js.Any])
+      inline def setCloseOnDimmerClick(value: Boolean): Self = StObject.set(x, "closeOnDimmerClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnDimmerClickUndefined: Self = StObject.set(x, "closeOnDimmerClick", js.undefined)
+      inline def setCloseOnDimmerClickUndefined: Self = StObject.set(x, "closeOnDimmerClick", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandItem[ModalContentProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandItem[ModalContentProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentFunction3(
+      inline def setContentFunction3(
         value: (/* component */ ElementType[ModalContentProps], ModalContentProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "content", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDimmer(value: `true` | blurring | inverted | SemanticShorthandItem[ModalDimmerProps]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
+      inline def setDimmer(value: `true` | blurring | inverted | SemanticShorthandItem[ModalDimmerProps]): Self = StObject.set(x, "dimmer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimmerFunction3(
+      inline def setDimmerFunction3(
         value: (/* component */ ElementType[ModalDimmerProps], ModalDimmerProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "dimmer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDimmerUndefined: Self = StObject.set(x, "dimmer", js.undefined)
+      inline def setDimmerUndefined: Self = StObject.set(x, "dimmer", js.undefined)
       
-      @scala.inline
-      def setHeader(value: SemanticShorthandItem[ModalHeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: SemanticShorthandItem[ModalHeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFunction3(
+      inline def setHeaderFunction3(
         value: (/* component */ ElementType[ModalHeaderProps], ModalHeaderProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "header", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setOnActionClick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
+      inline def setOnActionClick(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
+      inline def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      inline def setOnClose(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnMount(value: (/* nothing */ Null, /* data */ ModalProps) => Unit): Self = StObject.set(x, "onMount", js.Any.fromFunction2(value))
+      inline def setOnMount(value: (/* nothing */ Null, /* data */ ModalProps) => Unit): Self = StObject.set(x, "onMount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
+      inline def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
+      inline def setOnOpen(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps) => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOnUnmount(value: (/* nothing */ Null, /* data */ ModalProps) => Unit): Self = StObject.set(x, "onUnmount", js.Any.fromFunction2(value))
+      inline def setOnUnmount(value: (/* nothing */ Null, /* data */ ModalProps) => Unit): Self = StObject.set(x, "onUnmount", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
+      inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      @scala.inline
-      def setSize(value: mini | tiny | small | large | fullscreen): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: mini | tiny | small | large | fullscreen): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

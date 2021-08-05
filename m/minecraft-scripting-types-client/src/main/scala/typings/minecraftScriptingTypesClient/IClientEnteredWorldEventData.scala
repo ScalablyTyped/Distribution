@@ -17,16 +17,13 @@ trait IClientEnteredWorldEventData extends StObject {
 }
 object IClientEnteredWorldEventData {
   
-  @scala.inline
-  def apply(player: IEntity): IClientEnteredWorldEventData = {
+  inline def apply(player: IEntity): IClientEnteredWorldEventData = {
     val __obj = js.Dynamic.literal(player = player.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientEnteredWorldEventData]
   }
   
-  @scala.inline
-  implicit class IClientEnteredWorldEventDataMutableBuilder[Self <: IClientEnteredWorldEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IClientEnteredWorldEventData](x: Self) {
     
-    @scala.inline
-    def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }
 }

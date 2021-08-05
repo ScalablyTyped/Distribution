@@ -8,11 +8,9 @@ object maximMazurokGapiClientGroupsmigrationStrings {
   
   @js.native
   sealed trait groupsmigration extends StObject
-  @scala.inline
-  def groupsmigration: groupsmigration = "groupsmigration".asInstanceOf[groupsmigration]
+  inline def groupsmigration: groupsmigration = "groupsmigration".asInstanceOf[groupsmigration]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

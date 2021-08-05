@@ -36,8 +36,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ADOXDotCatalog: Catalog,
     ADOXDotColumn: Column,
     ADOXDotGroup: Group,
@@ -57,28 +56,20 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setADOXDotCatalog(value: Catalog): Self = StObject.set(x, "ADOX.Catalog", value.asInstanceOf[js.Any])
+    inline def setADOXDotCatalog(value: Catalog): Self = StObject.set(x, "ADOX.Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADOXDotColumn(value: Column): Self = StObject.set(x, "ADOX.Column", value.asInstanceOf[js.Any])
+    inline def setADOXDotColumn(value: Column): Self = StObject.set(x, "ADOX.Column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADOXDotGroup(value: Group): Self = StObject.set(x, "ADOX.Group", value.asInstanceOf[js.Any])
+    inline def setADOXDotGroup(value: Group): Self = StObject.set(x, "ADOX.Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADOXDotIndex(value: Index): Self = StObject.set(x, "ADOX.Index", value.asInstanceOf[js.Any])
+    inline def setADOXDotIndex(value: Index): Self = StObject.set(x, "ADOX.Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADOXDotKey(value: Key): Self = StObject.set(x, "ADOX.Key", value.asInstanceOf[js.Any])
+    inline def setADOXDotKey(value: Key): Self = StObject.set(x, "ADOX.Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADOXDotTable(value: Table): Self = StObject.set(x, "ADOX.Table", value.asInstanceOf[js.Any])
+    inline def setADOXDotTable(value: Table): Self = StObject.set(x, "ADOX.Table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setADOXDotUser(value: User): Self = StObject.set(x, "ADOX.User", value.asInstanceOf[js.Any])
+    inline def setADOXDotUser(value: User): Self = StObject.set(x, "ADOX.User", value.asInstanceOf[js.Any])
   }
 }

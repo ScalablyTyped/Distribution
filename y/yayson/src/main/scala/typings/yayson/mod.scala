@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Yayson = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Yayson]
-  @scala.inline
-  def apply(arg: YaysonOptions): Yayson = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Yayson]
+  inline def apply(): Yayson = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Yayson]
+  inline def apply(arg: YaysonOptions): Yayson = ^.asInstanceOf[js.Dynamic].apply(arg.asInstanceOf[js.Any]).asInstanceOf[Yayson]
   
   @JSImport("yayson", JSImport.Namespace)
   @js.native
@@ -37,20 +35,16 @@ object mod {
   }
   object JsonOptions {
     
-    @scala.inline
-    def apply(): JsonOptions = {
+    inline def apply(): JsonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonOptions]
     }
     
-    @scala.inline
-    implicit class JsonOptionsMutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsonOptions](x: Self) {
       
-      @scala.inline
-      def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     }
   }
   
@@ -82,27 +76,21 @@ object mod {
   }
   object Record {
     
-    @scala.inline
-    def apply(attributes: js.Any, id: js.Any, relationships: js.Any, `type`: String): Record = {
+    inline def apply(attributes: js.Any, id: js.Any, relationships: js.Any, `type`: String): Record = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], relationships = relationships.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Record]
     }
     
-    @scala.inline
-    implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+    extension [Self <: Record](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelationships(value: js.Any): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+      inline def setRelationships(value: js.Any): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,8 +123,7 @@ object mod {
   }
   object Yayson {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Adapter: Adapter,
       Presenter: TypeofPresenter & Instantiable0[Presenter],
       Store: Instantiable0[Store]
@@ -145,17 +132,13 @@ object mod {
       __obj.asInstanceOf[Yayson]
     }
     
-    @scala.inline
-    implicit class YaysonMutableBuilder[Self <: Yayson] (val x: Self) extends AnyVal {
+    extension [Self <: Yayson](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: Adapter): Self = StObject.set(x, "Adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: Adapter): Self = StObject.set(x, "Adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresenter(value: TypeofPresenter & Instantiable0[Presenter]): Self = StObject.set(x, "Presenter", value.asInstanceOf[js.Any])
+      inline def setPresenter(value: TypeofPresenter & Instantiable0[Presenter]): Self = StObject.set(x, "Presenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: Instantiable0[Store]): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Instantiable0[Store]): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,20 +148,16 @@ object mod {
   }
   object YaysonOptions {
     
-    @scala.inline
-    def apply(): YaysonOptions = {
+    inline def apply(): YaysonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[YaysonOptions]
     }
     
-    @scala.inline
-    implicit class YaysonOptionsMutableBuilder[Self <: YaysonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: YaysonOptions](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: default | sequelize): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: default | sequelize): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
     }
   }
 }

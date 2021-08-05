@@ -14,16 +14,13 @@ trait CompileOptions extends StObject {
 }
 object CompileOptions {
   
-  @scala.inline
-  def apply(legacy: Boolean): CompileOptions = {
+  inline def apply(legacy: Boolean): CompileOptions = {
     val __obj = js.Dynamic.literal(legacy = legacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileOptions]
   }
   
-  @scala.inline
-  implicit class CompileOptionsMutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CompileOptions](x: Self) {
     
-    @scala.inline
-    def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+    inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait `954` extends StObject {
 }
 object `954` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ReposGetContentEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ReposGetContentResponseData]
   ): `954` = {
@@ -29,13 +28,10 @@ object `954` {
     __obj.asInstanceOf[`954`]
   }
   
-  @scala.inline
-  implicit class `954MutableBuilder`[Self <: `954`] (val x: Self) extends AnyVal {
+  extension [Self <: `954`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[ReposGetContentEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[ReposGetContentEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetContentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetContentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

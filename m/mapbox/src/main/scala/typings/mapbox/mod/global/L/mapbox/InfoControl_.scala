@@ -23,8 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object InfoControl_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addInfo: String => js.Any,
     onAdd: Map_ => js.Any,
     onRemove: Map_ => js.Any,
@@ -34,19 +33,14 @@ object InfoControl_ {
     __obj.asInstanceOf[InfoControl_]
   }
   
-  @scala.inline
-  implicit class InfoControl_MutableBuilder[Self <: InfoControl_] (val x: Self) extends AnyVal {
+  extension [Self <: InfoControl_](x: Self) {
     
-    @scala.inline
-    def setAddInfo(value: String => js.Any): Self = StObject.set(x, "addInfo", js.Any.fromFunction1(value))
+    inline def setAddInfo(value: String => js.Any): Self = StObject.set(x, "addInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRemove(value: Map_ => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+    inline def setOnRemove(value: Map_ => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveInfo(value: String => js.Any): Self = StObject.set(x, "removeInfo", js.Any.fromFunction1(value))
+    inline def setRemoveInfo(value: String => js.Any): Self = StObject.set(x, "removeInfo", js.Any.fromFunction1(value))
   }
 }

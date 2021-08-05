@@ -22,20 +22,16 @@ object brightnessMod extends Shortcut {
   }
   object BrightnessProps {
     
-    @scala.inline
-    def apply(): BrightnessProps = {
+    inline def apply(): BrightnessProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrightnessProps]
     }
     
-    @scala.inline
-    implicit class BrightnessPropsMutableBuilder[Self <: BrightnessProps] (val x: Self) extends AnyVal {
+    extension [Self <: BrightnessProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

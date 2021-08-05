@@ -14,22 +14,17 @@ trait Layout extends StObject {
 }
 object Layout {
   
-  @scala.inline
-  def apply(qHyperCube: HyperCube, qInfo: NxInfo, qSelectionInfo: Selectionobject): Layout = {
+  inline def apply(qHyperCube: HyperCube, qInfo: NxInfo, qSelectionInfo: Selectionobject): Layout = {
     val __obj = js.Dynamic.literal(qHyperCube = qHyperCube.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any], qSelectionInfo = qSelectionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
   
-  @scala.inline
-  implicit class LayoutMutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
+  extension [Self <: Layout](x: Self) {
     
-    @scala.inline
-    def setQHyperCube(value: HyperCube): Self = StObject.set(x, "qHyperCube", value.asInstanceOf[js.Any])
+    inline def setQHyperCube(value: HyperCube): Self = StObject.set(x, "qHyperCube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInfo(value: NxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: NxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSelectionInfo(value: Selectionobject): Self = StObject.set(x, "qSelectionInfo", value.asInstanceOf[js.Any])
+    inline def setQSelectionInfo(value: Selectionobject): Self = StObject.set(x, "qSelectionInfo", value.asInstanceOf[js.Any])
   }
 }

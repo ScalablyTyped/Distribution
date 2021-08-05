@@ -19,8 +19,7 @@ trait DataInputStream
      with XConnectable
 object DataInputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InputStream: XInputStream,
     Predecessor: XConnectable,
     Successor: XConnectable,

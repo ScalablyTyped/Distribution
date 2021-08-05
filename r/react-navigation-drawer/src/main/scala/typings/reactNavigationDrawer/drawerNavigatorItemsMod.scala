@@ -25,14 +25,12 @@ object drawerNavigatorItemsMod {
     @JSImport("react-navigation-drawer/lib/typescript/src/views/DrawerNavigatorItems", "default.contextType")
     @js.native
     def contextType: Context[SupportedThemes] = js.native
-    @scala.inline
-    def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    inline def contextType_=(x: Context[SupportedThemes]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("react-navigation-drawer/lib/typescript/src/views/DrawerNavigatorItems", "default.defaultProps")
     @js.native
     def defaultProps: ActiveBackgroundColor = js.native
-    @scala.inline
-    def defaultProps_=(x: ActiveBackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ActiveBackgroundColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -42,12 +40,12 @@ object drawerNavigatorItemsMod {
     @JSName("context")
     var context_DrawerNavigatorItems: ContextType[Context[SupportedThemes]] = js.native
     
-    var getActiveBackgroundColor: js.Any = js.native
+    /* private */ var getActiveBackgroundColor: js.Any = js.native
     
-    var getActiveTintColor: js.Any = js.native
+    /* private */ var getActiveTintColor: js.Any = js.native
     
-    var getInactiveBackgroundColor: js.Any = js.native
+    /* private */ var getInactiveBackgroundColor: js.Any = js.native
     
-    var getInactiveTintColor: js.Any = js.native
+    /* private */ var getInactiveTintColor: js.Any = js.native
   }
 }

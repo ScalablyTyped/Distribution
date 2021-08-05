@@ -19,8 +19,7 @@ trait TableDescriptor
      with DataSettings
 object TableDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplyFilter: Boolean,
     CatalogName: String,
     Columns: XNameAccess,

@@ -28,31 +28,23 @@ trait SchemaTenantResource extends StObject {
 }
 object SchemaTenantResource {
   
-  @scala.inline
-  def apply(): SchemaTenantResource = {
+  inline def apply(): SchemaTenantResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTenantResource]
   }
   
-  @scala.inline
-  implicit class SchemaTenantResourceMutableBuilder[Self <: SchemaTenantResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTenantResource](x: Self) {
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

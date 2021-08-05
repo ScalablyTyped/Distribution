@@ -34,19 +34,15 @@ trait Typeofenterprise extends StObject {
 }
 object Typeofenterprise {
   
-  @scala.inline
-  def apply(deviceAttributes: TypeofdeviceAttributes, platformKeys: TypeofplatformKeys): Typeofenterprise = {
+  inline def apply(deviceAttributes: TypeofdeviceAttributes, platformKeys: TypeofplatformKeys): Typeofenterprise = {
     val __obj = js.Dynamic.literal(deviceAttributes = deviceAttributes.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofenterprise]
   }
   
-  @scala.inline
-  implicit class TypeofenterpriseMutableBuilder[Self <: Typeofenterprise] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofenterprise](x: Self) {
     
-    @scala.inline
-    def setDeviceAttributes(value: TypeofdeviceAttributes): Self = StObject.set(x, "deviceAttributes", value.asInstanceOf[js.Any])
+    inline def setDeviceAttributes(value: TypeofdeviceAttributes): Self = StObject.set(x, "deviceAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformKeys(value: TypeofplatformKeys): Self = StObject.set(x, "platformKeys", value.asInstanceOf[js.Any])
+    inline def setPlatformKeys(value: TypeofplatformKeys): Self = StObject.set(x, "platformKeys", value.asInstanceOf[js.Any])
   }
 }

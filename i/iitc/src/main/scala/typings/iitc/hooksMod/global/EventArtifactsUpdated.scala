@@ -12,20 +12,16 @@ trait EventArtifactsUpdated extends StObject {
 }
 object EventArtifactsUpdated {
   
-  @scala.inline
-  def apply(`new`: js.Any, old: js.Any): EventArtifactsUpdated = {
+  inline def apply(`new`: js.Any, old: js.Any): EventArtifactsUpdated = {
     val __obj = js.Dynamic.literal(old = old.asInstanceOf[js.Any])
     __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventArtifactsUpdated]
   }
   
-  @scala.inline
-  implicit class EventArtifactsUpdatedMutableBuilder[Self <: EventArtifactsUpdated] (val x: Self) extends AnyVal {
+  extension [Self <: EventArtifactsUpdated](x: Self) {
     
-    @scala.inline
-    def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
+    inline def setNew(value: js.Any): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOld(value: js.Any): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    inline def setOld(value: js.Any): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
   }
 }

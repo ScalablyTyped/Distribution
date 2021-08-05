@@ -11,19 +11,15 @@ trait AttachmentDataRef extends StObject {
 }
 object AttachmentDataRef {
   
-  @scala.inline
-  def apply(): AttachmentDataRef = {
+  inline def apply(): AttachmentDataRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentDataRef]
   }
   
-  @scala.inline
-  implicit class AttachmentDataRefMutableBuilder[Self <: AttachmentDataRef] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentDataRef](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

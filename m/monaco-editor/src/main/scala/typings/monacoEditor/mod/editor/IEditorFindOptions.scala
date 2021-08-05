@@ -33,43 +33,31 @@ trait IEditorFindOptions extends StObject {
 }
 object IEditorFindOptions {
   
-  @scala.inline
-  def apply(): IEditorFindOptions = {
+  inline def apply(): IEditorFindOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditorFindOptions]
   }
   
-  @scala.inline
-  implicit class IEditorFindOptionsMutableBuilder[Self <: IEditorFindOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorFindOptions](x: Self) {
     
-    @scala.inline
-    def setAddExtraSpaceOnTop(value: Boolean): Self = StObject.set(x, "addExtraSpaceOnTop", value.asInstanceOf[js.Any])
+    inline def setAddExtraSpaceOnTop(value: Boolean): Self = StObject.set(x, "addExtraSpaceOnTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddExtraSpaceOnTopUndefined: Self = StObject.set(x, "addExtraSpaceOnTop", js.undefined)
+    inline def setAddExtraSpaceOnTopUndefined: Self = StObject.set(x, "addExtraSpaceOnTop", js.undefined)
     
-    @scala.inline
-    def setAutoFindInSelection(value: never | always | multiline): Self = StObject.set(x, "autoFindInSelection", value.asInstanceOf[js.Any])
+    inline def setAutoFindInSelection(value: never | always | multiline): Self = StObject.set(x, "autoFindInSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFindInSelectionUndefined: Self = StObject.set(x, "autoFindInSelection", js.undefined)
+    inline def setAutoFindInSelectionUndefined: Self = StObject.set(x, "autoFindInSelection", js.undefined)
     
-    @scala.inline
-    def setCursorMoveOnType(value: Boolean): Self = StObject.set(x, "cursorMoveOnType", value.asInstanceOf[js.Any])
+    inline def setCursorMoveOnType(value: Boolean): Self = StObject.set(x, "cursorMoveOnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorMoveOnTypeUndefined: Self = StObject.set(x, "cursorMoveOnType", js.undefined)
+    inline def setCursorMoveOnTypeUndefined: Self = StObject.set(x, "cursorMoveOnType", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setSeedSearchStringFromSelection(value: Boolean): Self = StObject.set(x, "seedSearchStringFromSelection", value.asInstanceOf[js.Any])
+    inline def setSeedSearchStringFromSelection(value: Boolean): Self = StObject.set(x, "seedSearchStringFromSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedSearchStringFromSelectionUndefined: Self = StObject.set(x, "seedSearchStringFromSelection", js.undefined)
+    inline def setSeedSearchStringFromSelectionUndefined: Self = StObject.set(x, "seedSearchStringFromSelection", js.undefined)
   }
 }

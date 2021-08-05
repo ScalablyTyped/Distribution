@@ -33,40 +33,29 @@ trait Task extends StObject {
 }
 object Task {
   
-  @scala.inline
-  def apply(sourceFields: SourceFields, taskType: TaskType): Task = {
+  inline def apply(sourceFields: SourceFields, taskType: TaskType): Task = {
     val __obj = js.Dynamic.literal(sourceFields = sourceFields.asInstanceOf[js.Any], taskType = taskType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
   
-  @scala.inline
-  implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+  extension [Self <: Task](x: Self) {
     
-    @scala.inline
-    def setConnectorOperator(value: ConnectorOperator): Self = StObject.set(x, "connectorOperator", value.asInstanceOf[js.Any])
+    inline def setConnectorOperator(value: ConnectorOperator): Self = StObject.set(x, "connectorOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorOperatorUndefined: Self = StObject.set(x, "connectorOperator", js.undefined)
+    inline def setConnectorOperatorUndefined: Self = StObject.set(x, "connectorOperator", js.undefined)
     
-    @scala.inline
-    def setDestinationField(value: DestinationField): Self = StObject.set(x, "destinationField", value.asInstanceOf[js.Any])
+    inline def setDestinationField(value: DestinationField): Self = StObject.set(x, "destinationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationFieldUndefined: Self = StObject.set(x, "destinationField", js.undefined)
+    inline def setDestinationFieldUndefined: Self = StObject.set(x, "destinationField", js.undefined)
     
-    @scala.inline
-    def setSourceFields(value: SourceFields): Self = StObject.set(x, "sourceFields", value.asInstanceOf[js.Any])
+    inline def setSourceFields(value: SourceFields): Self = StObject.set(x, "sourceFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFieldsVarargs(value: String*): Self = StObject.set(x, "sourceFields", js.Array(value :_*))
+    inline def setSourceFieldsVarargs(value: String*): Self = StObject.set(x, "sourceFields", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskProperties(value: TaskPropertiesMap): Self = StObject.set(x, "taskProperties", value.asInstanceOf[js.Any])
+    inline def setTaskProperties(value: TaskPropertiesMap): Self = StObject.set(x, "taskProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskPropertiesUndefined: Self = StObject.set(x, "taskProperties", js.undefined)
+    inline def setTaskPropertiesUndefined: Self = StObject.set(x, "taskProperties", js.undefined)
     
-    @scala.inline
-    def setTaskType(value: TaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+    inline def setTaskType(value: TaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
   }
 }

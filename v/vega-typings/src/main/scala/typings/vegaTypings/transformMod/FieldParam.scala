@@ -12,16 +12,13 @@ trait FieldParam
 }
 object FieldParam {
   
-  @scala.inline
-  def apply(field: String): FieldParam = {
+  inline def apply(field: String): FieldParam = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldParam]
   }
   
-  @scala.inline
-  implicit class FieldParamMutableBuilder[Self <: FieldParam] (val x: Self) extends AnyVal {
+  extension [Self <: FieldParam](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

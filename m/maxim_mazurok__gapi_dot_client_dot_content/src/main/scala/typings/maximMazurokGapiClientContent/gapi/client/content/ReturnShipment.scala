@@ -29,58 +29,41 @@ trait ReturnShipment extends StObject {
 }
 object ReturnShipment {
   
-  @scala.inline
-  def apply(): ReturnShipment = {
+  inline def apply(): ReturnShipment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnShipment]
   }
   
-  @scala.inline
-  implicit class ReturnShipmentMutableBuilder[Self <: ReturnShipment] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnShipment](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setDeliveryDate(value: String): Self = StObject.set(x, "deliveryDate", value.asInstanceOf[js.Any])
+    inline def setDeliveryDate(value: String): Self = StObject.set(x, "deliveryDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryDateUndefined: Self = StObject.set(x, "deliveryDate", js.undefined)
+    inline def setDeliveryDateUndefined: Self = StObject.set(x, "deliveryDate", js.undefined)
     
-    @scala.inline
-    def setReturnMethodType(value: String): Self = StObject.set(x, "returnMethodType", value.asInstanceOf[js.Any])
+    inline def setReturnMethodType(value: String): Self = StObject.set(x, "returnMethodType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnMethodTypeUndefined: Self = StObject.set(x, "returnMethodType", js.undefined)
+    inline def setReturnMethodTypeUndefined: Self = StObject.set(x, "returnMethodType", js.undefined)
     
-    @scala.inline
-    def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
+    inline def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
+    inline def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
     
-    @scala.inline
-    def setShipmentTrackingInfos(value: js.Array[ShipmentTrackingInfo]): Self = StObject.set(x, "shipmentTrackingInfos", value.asInstanceOf[js.Any])
+    inline def setShipmentTrackingInfos(value: js.Array[ShipmentTrackingInfo]): Self = StObject.set(x, "shipmentTrackingInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentTrackingInfosUndefined: Self = StObject.set(x, "shipmentTrackingInfos", js.undefined)
+    inline def setShipmentTrackingInfosUndefined: Self = StObject.set(x, "shipmentTrackingInfos", js.undefined)
     
-    @scala.inline
-    def setShipmentTrackingInfosVarargs(value: ShipmentTrackingInfo*): Self = StObject.set(x, "shipmentTrackingInfos", js.Array(value :_*))
+    inline def setShipmentTrackingInfosVarargs(value: ShipmentTrackingInfo*): Self = StObject.set(x, "shipmentTrackingInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setShippingDate(value: String): Self = StObject.set(x, "shippingDate", value.asInstanceOf[js.Any])
+    inline def setShippingDate(value: String): Self = StObject.set(x, "shippingDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingDateUndefined: Self = StObject.set(x, "shippingDate", js.undefined)
+    inline def setShippingDateUndefined: Self = StObject.set(x, "shippingDate", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

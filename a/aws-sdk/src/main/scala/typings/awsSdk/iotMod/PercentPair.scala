@@ -18,25 +18,19 @@ trait PercentPair extends StObject {
 }
 object PercentPair {
   
-  @scala.inline
-  def apply(): PercentPair = {
+  inline def apply(): PercentPair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PercentPair]
   }
   
-  @scala.inline
-  implicit class PercentPairMutableBuilder[Self <: PercentPair] (val x: Self) extends AnyVal {
+  extension [Self <: PercentPair](x: Self) {
     
-    @scala.inline
-    def setPercent(value: Percent): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Percent): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
-    @scala.inline
-    def setValue(value: PercentValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: PercentValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

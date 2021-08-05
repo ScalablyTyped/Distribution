@@ -14,8 +14,7 @@ trait ICameraSettingsActivatedEventArgs
 }
 object ICameraSettingsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,
@@ -26,13 +25,10 @@ object ICameraSettingsActivatedEventArgs {
     __obj.asInstanceOf[ICameraSettingsActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ICameraSettingsActivatedEventArgsMutableBuilder[Self <: ICameraSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ICameraSettingsActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setVideoDeviceController(value: js.Any): Self = StObject.set(x, "videoDeviceController", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceController(value: js.Any): Self = StObject.set(x, "videoDeviceController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoDeviceExtension(value: js.Any): Self = StObject.set(x, "videoDeviceExtension", value.asInstanceOf[js.Any])
+    inline def setVideoDeviceExtension(value: js.Any): Self = StObject.set(x, "videoDeviceExtension", value.asInstanceOf[js.Any])
   }
 }

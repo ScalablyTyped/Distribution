@@ -13,19 +13,15 @@ trait DecodeAuthorizationMessageResponse extends StObject {
 }
 object DecodeAuthorizationMessageResponse {
   
-  @scala.inline
-  def apply(): DecodeAuthorizationMessageResponse = {
+  inline def apply(): DecodeAuthorizationMessageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DecodeAuthorizationMessageResponse]
   }
   
-  @scala.inline
-  implicit class DecodeAuthorizationMessageResponseMutableBuilder[Self <: DecodeAuthorizationMessageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DecodeAuthorizationMessageResponse](x: Self) {
     
-    @scala.inline
-    def setDecodedMessage(value: decodedMessageType): Self = StObject.set(x, "DecodedMessage", value.asInstanceOf[js.Any])
+    inline def setDecodedMessage(value: decodedMessageType): Self = StObject.set(x, "DecodedMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecodedMessageUndefined: Self = StObject.set(x, "DecodedMessage", js.undefined)
+    inline def setDecodedMessageUndefined: Self = StObject.set(x, "DecodedMessage", js.undefined)
   }
 }

@@ -14,20 +14,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setMode(value: DecoderMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: DecoderMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
@@ -37,20 +33,16 @@ object anon {
   }
   object Mode {
     
-    @scala.inline
-    def apply(): Mode = {
+    inline def apply(): Mode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mode]
     }
     
-    @scala.inline
-    implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+    extension [Self <: Mode](x: Self) {
       
-      @scala.inline
-      def setMode(value: EncoderMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: EncoderMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
 }

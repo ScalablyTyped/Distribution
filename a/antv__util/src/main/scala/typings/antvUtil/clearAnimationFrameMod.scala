@@ -10,6 +10,5 @@ object clearAnimationFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(handler: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(handler: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -33,8 +33,7 @@ trait CreateAppInstanceUserRequest extends StObject {
 }
 object CreateAppInstanceUserRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AppInstanceArn: ChimeArn,
     AppInstanceUserId: UserId,
     ClientRequestToken: ClientRequestToken,
@@ -44,25 +43,18 @@ object CreateAppInstanceUserRequest {
     __obj.asInstanceOf[CreateAppInstanceUserRequest]
   }
   
-  @scala.inline
-  implicit class CreateAppInstanceUserRequestMutableBuilder[Self <: CreateAppInstanceUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAppInstanceUserRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceUserId(value: UserId): Self = StObject.set(x, "AppInstanceUserId", value.asInstanceOf[js.Any])
+    inline def setAppInstanceUserId(value: UserId): Self = StObject.set(x, "AppInstanceUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: UserName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: UserName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

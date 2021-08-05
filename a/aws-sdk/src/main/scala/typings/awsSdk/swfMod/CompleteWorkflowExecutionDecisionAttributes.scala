@@ -13,19 +13,15 @@ trait CompleteWorkflowExecutionDecisionAttributes extends StObject {
 }
 object CompleteWorkflowExecutionDecisionAttributes {
   
-  @scala.inline
-  def apply(): CompleteWorkflowExecutionDecisionAttributes = {
+  inline def apply(): CompleteWorkflowExecutionDecisionAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompleteWorkflowExecutionDecisionAttributes]
   }
   
-  @scala.inline
-  implicit class CompleteWorkflowExecutionDecisionAttributesMutableBuilder[Self <: CompleteWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteWorkflowExecutionDecisionAttributes](x: Self) {
     
-    @scala.inline
-    def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

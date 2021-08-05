@@ -53,28 +53,19 @@ object mod {
     val source: String = js.native
   }
   
-  @scala.inline
-  def asIsbn10(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn10")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def asIsbn10(isbn: String, hyphenate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn10")(isbn.asInstanceOf[js.Any], hyphenate.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def asIsbn10(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn10")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def asIsbn10(isbn: String, hyphenate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn10")(isbn.asInstanceOf[js.Any], hyphenate.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def asIsbn13(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn13")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def asIsbn13(isbn: String, hyphenate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn13")(isbn.asInstanceOf[js.Any], hyphenate.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def asIsbn13(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn13")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def asIsbn13(isbn: String, hyphenate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("asIsbn13")(isbn.asInstanceOf[js.Any], hyphenate.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def hyphenate(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenate")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def hyphenate(isbn: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenate")(isbn.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isValid(isbn: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(isbn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isValid(isbn: String, groups: IGroups): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(isbn.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValid(isbn: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(isbn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(isbn: String, groups: IGroups): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(isbn.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parse(isbn: String): ISBN | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any]).asInstanceOf[ISBN | Null]
-  @scala.inline
-  def parse(isbn: String, groups: IGroups): ISBN | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[ISBN | Null]
+  inline def parse(isbn: String): ISBN | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any]).asInstanceOf[ISBN | Null]
+  inline def parse(isbn: String, groups: IGroups): ISBN | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(isbn.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[ISBN | Null]
   
   type IGroups = js.Any
 }

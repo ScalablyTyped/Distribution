@@ -12,25 +12,19 @@ trait ChartSeriesItemStack extends StObject {
 }
 object ChartSeriesItemStack {
   
-  @scala.inline
-  def apply(): ChartSeriesItemStack = {
+  inline def apply(): ChartSeriesItemStack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSeriesItemStack]
   }
   
-  @scala.inline
-  implicit class ChartSeriesItemStackMutableBuilder[Self <: ChartSeriesItemStack] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesItemStack](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

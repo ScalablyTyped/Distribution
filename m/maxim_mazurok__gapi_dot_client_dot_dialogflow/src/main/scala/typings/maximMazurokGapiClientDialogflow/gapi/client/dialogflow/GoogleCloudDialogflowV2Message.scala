@@ -29,55 +29,39 @@ trait GoogleCloudDialogflowV2Message extends StObject {
 }
 object GoogleCloudDialogflowV2Message {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2Message = {
+  inline def apply(): GoogleCloudDialogflowV2Message = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2Message]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2MessageMutableBuilder[Self <: GoogleCloudDialogflowV2Message] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2Message](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setMessageAnnotation(value: GoogleCloudDialogflowV2MessageAnnotation): Self = StObject.set(x, "messageAnnotation", value.asInstanceOf[js.Any])
+    inline def setMessageAnnotation(value: GoogleCloudDialogflowV2MessageAnnotation): Self = StObject.set(x, "messageAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageAnnotationUndefined: Self = StObject.set(x, "messageAnnotation", js.undefined)
+    inline def setMessageAnnotationUndefined: Self = StObject.set(x, "messageAnnotation", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParticipant(value: String): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
+    inline def setParticipant(value: String): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRole(value: String): Self = StObject.set(x, "participantRole", value.asInstanceOf[js.Any])
+    inline def setParticipantRole(value: String): Self = StObject.set(x, "participantRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRoleUndefined: Self = StObject.set(x, "participantRole", js.undefined)
+    inline def setParticipantRoleUndefined: Self = StObject.set(x, "participantRole", js.undefined)
     
-    @scala.inline
-    def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
+    inline def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
   }
 }

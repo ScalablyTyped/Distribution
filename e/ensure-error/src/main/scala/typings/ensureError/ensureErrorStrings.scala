@@ -8,6 +8,5 @@ object ensureErrorStrings {
   
   @js.native
   sealed trait NonError extends StObject
-  @scala.inline
-  def NonError: NonError = "NonError".asInstanceOf[NonError]
+  inline def NonError: NonError = "NonError".asInstanceOf[NonError]
 }

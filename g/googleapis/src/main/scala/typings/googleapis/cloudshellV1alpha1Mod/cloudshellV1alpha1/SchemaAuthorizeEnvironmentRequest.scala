@@ -27,31 +27,23 @@ trait SchemaAuthorizeEnvironmentRequest extends StObject {
 }
 object SchemaAuthorizeEnvironmentRequest {
   
-  @scala.inline
-  def apply(): SchemaAuthorizeEnvironmentRequest = {
+  inline def apply(): SchemaAuthorizeEnvironmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthorizeEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAuthorizeEnvironmentRequestMutableBuilder[Self <: SchemaAuthorizeEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthorizeEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
   }
 }

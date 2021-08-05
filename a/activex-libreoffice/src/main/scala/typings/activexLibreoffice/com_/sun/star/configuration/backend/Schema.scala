@@ -27,8 +27,7 @@ trait Schema
 }
 object Schema {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     URL: String,
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
@@ -41,10 +40,8 @@ object Schema {
     __obj.asInstanceOf[Schema]
   }
   
-  @scala.inline
-  implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+  extension [Self <: Schema](x: Self) {
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

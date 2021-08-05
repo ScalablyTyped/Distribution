@@ -18,26 +18,20 @@ object localeMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(): Locale = {
+    inline def apply(): Locale = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setNumber(value: NumberLocale): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: NumberLocale): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setTime(value: TimeLocale): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: TimeLocale): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
   
@@ -85,53 +79,38 @@ object localeMod {
   }
   object NumberLocale {
     
-    @scala.inline
-    def apply(currency: Vector2[String], decimal: String, grouping: js.Array[Double], thousands: String): NumberLocale = {
+    inline def apply(currency: Vector2[String], decimal: String, grouping: js.Array[Double], thousands: String): NumberLocale = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], grouping = grouping.asInstanceOf[js.Any], thousands = thousands.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberLocale]
     }
     
-    @scala.inline
-    implicit class NumberLocaleMutableBuilder[Self <: NumberLocale] (val x: Self) extends AnyVal {
+    extension [Self <: NumberLocale](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: Vector2[String]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: Vector2[String]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+      inline def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+      inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
       
-      @scala.inline
-      def setMinus(value: String): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
+      inline def setMinus(value: String): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinusUndefined: Self = StObject.set(x, "minus", js.undefined)
+      inline def setMinusUndefined: Self = StObject.set(x, "minus", js.undefined)
       
-      @scala.inline
-      def setNan(value: String): Self = StObject.set(x, "nan", value.asInstanceOf[js.Any])
+      inline def setNan(value: String): Self = StObject.set(x, "nan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNanUndefined: Self = StObject.set(x, "nan", js.undefined)
+      inline def setNanUndefined: Self = StObject.set(x, "nan", js.undefined)
       
-      @scala.inline
-      def setNumerals(value: Vector10[String]): Self = StObject.set(x, "numerals", value.asInstanceOf[js.Any])
+      inline def setNumerals(value: Vector10[String]): Self = StObject.set(x, "numerals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
+      inline def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
       
-      @scala.inline
-      def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      @scala.inline
-      def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
+      inline def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,8 +158,7 @@ object localeMod {
   }
   object TimeLocale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: String,
       dateTime: String,
       days: Vector7[String],
@@ -194,32 +172,23 @@ object localeMod {
       __obj.asInstanceOf[TimeLocale]
     }
     
-    @scala.inline
-    implicit class TimeLocaleMutableBuilder[Self <: TimeLocale] (val x: Self) extends AnyVal {
+    extension [Self <: TimeLocale](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+      inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDays(value: Vector7[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: Vector7[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: Vector12[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: Vector12[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriods(value: Vector2[String]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+      inline def setPeriods(value: Vector2[String]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDays(value: Vector7[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
+      inline def setShortDays(value: Vector7[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonths(value: Vector12[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
+      inline def setShortMonths(value: Vector12[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

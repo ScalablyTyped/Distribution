@@ -12,19 +12,15 @@ trait OldIndex extends StObject {
 }
 object OldIndex {
   
-  @scala.inline
-  def apply(newIndex: Double, oldIndex: Double): OldIndex = {
+  inline def apply(newIndex: Double, oldIndex: Double): OldIndex = {
     val __obj = js.Dynamic.literal(newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[OldIndex]
   }
   
-  @scala.inline
-  implicit class OldIndexMutableBuilder[Self <: OldIndex] (val x: Self) extends AnyVal {
+  extension [Self <: OldIndex](x: Self) {
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -15,6 +15,6 @@ object enumMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Converter) = this()
     
-    var convertMember: js.Any = js.native
+    /* private */ var convertMember: js.Any = js.native
   }
 }

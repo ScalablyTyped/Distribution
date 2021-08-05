@@ -5,27 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def default(): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
-@scala.inline
-def default(input: typings.styledSystemCss.mod.SystemStyleObject): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
+inline def default(): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
+inline def default(input: typings.styledSystemCss.mod.SystemStyleObject): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
 
-@scala.inline
-def css(): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")().asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
-@scala.inline
-def css(input: typings.styledSystemCss.mod.SystemStyleObject): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")(input.asInstanceOf[js.Any]).asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
+inline def css(): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")().asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
+inline def css(input: typings.styledSystemCss.mod.SystemStyleObject): typings.styledSystemCss.mod.CssFunctionReturnType = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("css")(input.asInstanceOf[js.Any]).asInstanceOf[typings.styledSystemCss.mod.CssFunctionReturnType]
 
-@scala.inline
-def get(`object`: js.Object, key: java.lang.String): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-@scala.inline
-def get(`object`: js.Object, key: java.lang.String, defaultValue: js.Any): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-@scala.inline
-def get(`object`: js.Object, key: js.Array[java.lang.String]): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-@scala.inline
-def get(`object`: js.Object, key: js.Array[java.lang.String], defaultValue: js.Any): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def get(`object`: js.Object, key: java.lang.String): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def get(`object`: js.Object, key: java.lang.String, defaultValue: js.Any): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def get(`object`: js.Object, key: js.Array[java.lang.String]): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def get(`object`: js.Object, key: js.Array[java.lang.String], defaultValue: js.Any): js.Any = (typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 
-@scala.inline
-def responsive(styles: js.Object): js.Function1[/* theme */ js.Object, js.Array[js.Any]] = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("responsive")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* theme */ js.Object, js.Array[js.Any]]]
+inline def responsive(styles: js.Object): js.Function1[/* theme */ js.Object, js.Array[js.Any]] = typings.styledSystemCss.mod.^.asInstanceOf[js.Dynamic].applyDynamic("responsive")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* theme */ js.Object, js.Array[js.Any]]]
 
 type CSSInterpolation = js.UndefOr[scala.Double | java.lang.String | typings.styledSystemCss.mod.CSSObject]
 

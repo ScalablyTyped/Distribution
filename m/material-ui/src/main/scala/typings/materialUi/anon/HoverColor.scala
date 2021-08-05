@@ -20,49 +20,35 @@ trait HoverColor extends StObject {
 }
 object HoverColor {
   
-  @scala.inline
-  def apply(): HoverColor = {
+  inline def apply(): HoverColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HoverColor]
   }
   
-  @scala.inline
-  implicit class HoverColorMutableBuilder[Self <: HoverColor] (val x: Self) extends AnyVal {
+  extension [Self <: HoverColor](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
+    inline def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
+    inline def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
     
-    @scala.inline
-    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
+    inline def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
     
-    @scala.inline
-    def setStripeColor(value: String): Self = StObject.set(x, "stripeColor", value.asInstanceOf[js.Any])
+    inline def setStripeColor(value: String): Self = StObject.set(x, "stripeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripeColorUndefined: Self = StObject.set(x, "stripeColor", js.undefined)
+    inline def setStripeColorUndefined: Self = StObject.set(x, "stripeColor", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Resolver protected () extends StObject {
   def this(bindings: BindingTable) = this()
   
-  var bindings: js.Any = js.native
+  /* private */ var bindings: js.Any = js.native
   
   def createNavigator(node: Node2[SyntaxKind]): js.UndefOr[NodeNavigator] = js.native
   

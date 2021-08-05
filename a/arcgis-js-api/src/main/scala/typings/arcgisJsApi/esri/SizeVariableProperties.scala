@@ -117,90 +117,63 @@ trait SizeVariableProperties
 }
 object SizeVariableProperties {
   
-  @scala.inline
-  def apply(): SizeVariableProperties = {
+  inline def apply(): SizeVariableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeVariableProperties]
   }
   
-  @scala.inline
-  implicit class SizeVariablePropertiesMutableBuilder[Self <: SizeVariableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SizeVariableProperties](x: Self) {
     
-    @scala.inline
-    def setAxis(value: width | depth | height | `width-and-depth` | all): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: width | depth | height | `width-and-depth` | all): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setMaxDataValue(value: Double): Self = StObject.set(x, "maxDataValue", value.asInstanceOf[js.Any])
+    inline def setMaxDataValue(value: Double): Self = StObject.set(x, "maxDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDataValueUndefined: Self = StObject.set(x, "maxDataValue", js.undefined)
+    inline def setMaxDataValueUndefined: Self = StObject.set(x, "maxDataValue", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double | ScaleDependentStops | String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double | ScaleDependentStops | String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setMinDataValue(value: Double): Self = StObject.set(x, "minDataValue", value.asInstanceOf[js.Any])
+    inline def setMinDataValue(value: Double): Self = StObject.set(x, "minDataValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDataValueUndefined: Self = StObject.set(x, "minDataValue", js.undefined)
+    inline def setMinDataValueUndefined: Self = StObject.set(x, "minDataValue", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: Double | ScaleDependentStops | String): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double | ScaleDependentStops | String): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
-    @scala.inline
-    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[SizeStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[SizeStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUseSymbolValue(value: Boolean): Self = StObject.set(x, "useSymbolValue", value.asInstanceOf[js.Any])
+    inline def setUseSymbolValue(value: Boolean): Self = StObject.set(x, "useSymbolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSymbolValueUndefined: Self = StObject.set(x, "useSymbolValue", js.undefined)
+    inline def setUseSymbolValueUndefined: Self = StObject.set(x, "useSymbolValue", js.undefined)
     
-    @scala.inline
-    def setValueRepresentation(value: radius | diameter | area | width | distance): Self = StObject.set(x, "valueRepresentation", value.asInstanceOf[js.Any])
+    inline def setValueRepresentation(value: radius | diameter | area | width | distance): Self = StObject.set(x, "valueRepresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRepresentationUndefined: Self = StObject.set(x, "valueRepresentation", js.undefined)
+    inline def setValueRepresentationUndefined: Self = StObject.set(x, "valueRepresentation", js.undefined)
     
-    @scala.inline
-    def setValueUnit(
+    inline def setValueUnit(
       value: unknown | inches | feet_ | yards | miles_ | `nautical-miles` | millimeters | centimeters | decimeters | meters_ | kilometers_ | `decimal-degrees`
     ): Self = StObject.set(x, "valueUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUnitUndefined: Self = StObject.set(x, "valueUnit", js.undefined)
+    inline def setValueUnitUndefined: Self = StObject.set(x, "valueUnit", js.undefined)
   }
 }

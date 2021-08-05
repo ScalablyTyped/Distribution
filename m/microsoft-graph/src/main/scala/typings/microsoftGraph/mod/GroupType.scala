@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GroupType extends StObject
 object GroupType {
   
-  @scala.inline
-  def azureAD: typings.microsoftGraph.microsoftGraphStrings.azureAD = "azureAD".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.azureAD]
+  inline def azureAD: typings.microsoftGraph.microsoftGraphStrings.azureAD = "azureAD".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.azureAD]
   
-  @scala.inline
-  def unifiedGroups: typings.microsoftGraph.microsoftGraphStrings.unifiedGroups = "unifiedGroups".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unifiedGroups]
+  inline def unifiedGroups: typings.microsoftGraph.microsoftGraphStrings.unifiedGroups = "unifiedGroups".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unifiedGroups]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

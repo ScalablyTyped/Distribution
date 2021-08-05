@@ -23,31 +23,23 @@ trait QueueTransition extends StObject {
 }
 object QueueTransition {
   
-  @scala.inline
-  def apply(): QueueTransition = {
+  inline def apply(): QueueTransition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueueTransition]
   }
   
-  @scala.inline
-  implicit class QueueTransitionMutableBuilder[Self <: QueueTransition] (val x: Self) extends AnyVal {
+  extension [Self <: QueueTransition](x: Self) {
     
-    @scala.inline
-    def setDestinationQueue(value: string): Self = StObject.set(x, "DestinationQueue", value.asInstanceOf[js.Any])
+    inline def setDestinationQueue(value: string): Self = StObject.set(x, "DestinationQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationQueueUndefined: Self = StObject.set(x, "DestinationQueue", js.undefined)
+    inline def setDestinationQueueUndefined: Self = StObject.set(x, "DestinationQueue", js.undefined)
     
-    @scala.inline
-    def setSourceQueue(value: string): Self = StObject.set(x, "SourceQueue", value.asInstanceOf[js.Any])
+    inline def setSourceQueue(value: string): Self = StObject.set(x, "SourceQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceQueueUndefined: Self = StObject.set(x, "SourceQueue", js.undefined)
+    inline def setSourceQueueUndefined: Self = StObject.set(x, "SourceQueue", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: timestampUnix): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: timestampUnix): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

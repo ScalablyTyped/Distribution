@@ -15,19 +15,15 @@ trait TypeofDiagram extends StObject {
 }
 object TypeofDiagram {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Diagram): TypeofDiagram = {
+  inline def apply(Locale: js.Any, fn: Diagram): TypeofDiagram = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDiagram]
   }
   
-  @scala.inline
-  implicit class TypeofDiagramMutableBuilder[Self <: TypeofDiagram] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDiagram](x: Self) {
     
-    @scala.inline
-    def setFn(value: Diagram): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Diagram): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

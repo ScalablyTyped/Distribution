@@ -81,102 +81,72 @@ object mod extends Shortcut {
   }
   object DragulaOptions {
     
-    @scala.inline
-    def apply(): DragulaOptions = {
+    inline def apply(): DragulaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DragulaOptions]
     }
     
-    @scala.inline
-    implicit class DragulaOptionsMutableBuilder[Self <: DragulaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DragulaOptions](x: Self) {
       
-      @scala.inline
-      def setAccepts(
+      inline def setAccepts(
         value: (/* el */ js.UndefOr[Element], /* target */ js.UndefOr[Element], /* source */ js.UndefOr[Element], /* sibling */ js.UndefOr[Element]) => Boolean
       ): Self = StObject.set(x, "accepts", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
+      inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
       
-      @scala.inline
-      def setContainers(value: js.Array[Element]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+      inline def setContainers(value: js.Array[Element]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+      inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
       
-      @scala.inline
-      def setContainersVarargs(value: Element*): Self = StObject.set(x, "containers", js.Array(value :_*))
+      inline def setContainersVarargs(value: Element*): Self = StObject.set(x, "containers", js.Array(value :_*))
       
-      @scala.inline
-      def setCopy(value: (js.Function2[/* el */ Element, /* source */ Element, Boolean]) | Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: (js.Function2[/* el */ Element, /* source */ Element, Boolean]) | Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyFunction2(value: (/* el */ Element, /* source */ Element) => Boolean): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
+      inline def setCopyFunction2(value: (/* el */ Element, /* source */ Element) => Boolean): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCopySortSource(value: Boolean): Self = StObject.set(x, "copySortSource", value.asInstanceOf[js.Any])
+      inline def setCopySortSource(value: Boolean): Self = StObject.set(x, "copySortSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopySortSourceUndefined: Self = StObject.set(x, "copySortSource", js.undefined)
+      inline def setCopySortSourceUndefined: Self = StObject.set(x, "copySortSource", js.undefined)
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Boolean | Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Boolean | Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setIgnoreInputTextSelection(value: Boolean): Self = StObject.set(x, "ignoreInputTextSelection", value.asInstanceOf[js.Any])
+      inline def setIgnoreInputTextSelection(value: Boolean): Self = StObject.set(x, "ignoreInputTextSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreInputTextSelectionUndefined: Self = StObject.set(x, "ignoreInputTextSelection", js.undefined)
+      inline def setIgnoreInputTextSelectionUndefined: Self = StObject.set(x, "ignoreInputTextSelection", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: (/* el */ js.UndefOr[Element], /* target */ js.UndefOr[Element]) => Boolean): Self = StObject.set(x, "invalid", js.Any.fromFunction2(value))
+      inline def setInvalid(value: (/* el */ js.UndefOr[Element], /* target */ js.UndefOr[Element]) => Boolean): Self = StObject.set(x, "invalid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setIsContainer(value: /* el */ js.UndefOr[Element] => Boolean): Self = StObject.set(x, "isContainer", js.Any.fromFunction1(value))
+      inline def setIsContainer(value: /* el */ js.UndefOr[Element] => Boolean): Self = StObject.set(x, "isContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsContainerUndefined: Self = StObject.set(x, "isContainer", js.undefined)
+      inline def setIsContainerUndefined: Self = StObject.set(x, "isContainer", js.undefined)
       
-      @scala.inline
-      def setMirrorContainer(value: Element): Self = StObject.set(x, "mirrorContainer", value.asInstanceOf[js.Any])
+      inline def setMirrorContainer(value: Element): Self = StObject.set(x, "mirrorContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirrorContainerUndefined: Self = StObject.set(x, "mirrorContainer", js.undefined)
+      inline def setMirrorContainerUndefined: Self = StObject.set(x, "mirrorContainer", js.undefined)
       
-      @scala.inline
-      def setMoves(
+      inline def setMoves(
         value: (/* el */ js.UndefOr[Element], /* container */ js.UndefOr[Element], /* handle */ js.UndefOr[Element], /* sibling */ js.UndefOr[Element]) => Boolean
       ): Self = StObject.set(x, "moves", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setMovesUndefined: Self = StObject.set(x, "moves", js.undefined)
+      inline def setMovesUndefined: Self = StObject.set(x, "moves", js.undefined)
       
-      @scala.inline
-      def setRemoveOnSpill(value: Boolean): Self = StObject.set(x, "removeOnSpill", value.asInstanceOf[js.Any])
+      inline def setRemoveOnSpill(value: Boolean): Self = StObject.set(x, "removeOnSpill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOnSpillUndefined: Self = StObject.set(x, "removeOnSpill", js.undefined)
+      inline def setRemoveOnSpillUndefined: Self = StObject.set(x, "removeOnSpill", js.undefined)
       
-      @scala.inline
-      def setRevertOnSpill(value: Boolean): Self = StObject.set(x, "revertOnSpill", value.asInstanceOf[js.Any])
+      inline def setRevertOnSpill(value: Boolean): Self = StObject.set(x, "revertOnSpill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevertOnSpillUndefined: Self = StObject.set(x, "revertOnSpill", js.undefined)
+      inline def setRevertOnSpillUndefined: Self = StObject.set(x, "revertOnSpill", js.undefined)
     }
   }
   

@@ -14,22 +14,17 @@ trait IChangesObject[T] extends StObject {
 }
 object IChangesObject {
   
-  @scala.inline
-  def apply[T](currentValue: T, isFirstChange: () => Boolean, previousValue: T): IChangesObject[T] = {
+  inline def apply[T](currentValue: T, isFirstChange: () => Boolean, previousValue: T): IChangesObject[T] = {
     val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any], isFirstChange = js.Any.fromFunction0(isFirstChange), previousValue = previousValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IChangesObject[T]]
   }
   
-  @scala.inline
-  implicit class IChangesObjectMutableBuilder[Self <: IChangesObject[?], T] (val x: Self & IChangesObject[T]) extends AnyVal {
+  extension [Self <: IChangesObject[?], T](x: Self & IChangesObject[T]) {
     
-    @scala.inline
-    def setCurrentValue(value: T): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+    inline def setCurrentValue(value: T): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFirstChange(value: () => Boolean): Self = StObject.set(x, "isFirstChange", js.Any.fromFunction0(value))
+    inline def setIsFirstChange(value: () => Boolean): Self = StObject.set(x, "isFirstChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreviousValue(value: T): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+    inline def setPreviousValue(value: T): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
   }
 }

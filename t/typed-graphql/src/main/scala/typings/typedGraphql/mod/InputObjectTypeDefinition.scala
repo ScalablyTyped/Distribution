@@ -19,31 +19,23 @@ trait InputObjectTypeDefinition
 }
 object InputObjectTypeDefinition {
   
-  @scala.inline
-  def apply(fields: js.Array[InputValueDefinition], kind: String, name: Name): InputObjectTypeDefinition = {
+  inline def apply(fields: js.Array[InputValueDefinition], kind: String, name: Name): InputObjectTypeDefinition = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputObjectTypeDefinition]
   }
   
-  @scala.inline
-  implicit class InputObjectTypeDefinitionMutableBuilder[Self <: InputObjectTypeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: InputObjectTypeDefinition](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[InputValueDefinition]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[InputValueDefinition]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: InputValueDefinition*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: InputValueDefinition*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

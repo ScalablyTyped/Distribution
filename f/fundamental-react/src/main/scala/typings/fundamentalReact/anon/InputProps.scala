@@ -15,31 +15,23 @@ trait InputProps extends StObject {
 }
 object InputProps {
   
-  @scala.inline
-  def apply(): InputProps = {
+  inline def apply(): InputProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputProps]
   }
   
-  @scala.inline
-  implicit class InputPropsMutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
+  extension [Self <: InputProps](x: Self) {
     
-    @scala.inline
-    def setInputProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    inline def setInputProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+    inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

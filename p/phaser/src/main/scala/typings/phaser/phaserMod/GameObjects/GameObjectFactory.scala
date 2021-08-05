@@ -38,8 +38,7 @@ object GameObjectFactory {
     * @param factoryFunction The constructor function to be called when you invoke to the Phaser.Scene.add method.
     */
   /* static member */
-  @scala.inline
-  def register(factoryType: String, factoryFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(factoryType.asInstanceOf[js.Any], factoryFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(factoryType: String, factoryFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(factoryType.asInstanceOf[js.Any], factoryFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Static method called directly by the Game Object factory functions.
@@ -48,6 +47,5 @@ object GameObjectFactory {
     * @param factoryType The key of the factory that you want to remove from the GameObjectFactory.
     */
   /* static member */
-  @scala.inline
-  def remove(factoryType: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(factoryType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(factoryType: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(factoryType.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

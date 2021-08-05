@@ -13,17 +13,14 @@ object anon {
   }
   object TypeofimportedActions {
     
-    @scala.inline
-    def apply(setIsMatching: Record[String, Boolean] => Unit): TypeofimportedActions = {
+    inline def apply(setIsMatching: Record[String, Boolean] => Unit): TypeofimportedActions = {
       val __obj = js.Dynamic.literal(setIsMatching = js.Any.fromFunction1(setIsMatching))
       __obj.asInstanceOf[TypeofimportedActions]
     }
     
-    @scala.inline
-    implicit class TypeofimportedActionsMutableBuilder[Self <: TypeofimportedActions] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofimportedActions](x: Self) {
       
-      @scala.inline
-      def setSetIsMatching(value: Record[String, Boolean] => Unit): Self = StObject.set(x, "setIsMatching", js.Any.fromFunction1(value))
+      inline def setSetIsMatching(value: Record[String, Boolean] => Unit): Self = StObject.set(x, "setIsMatching", js.Any.fromFunction1(value))
     }
   }
   
@@ -33,17 +30,14 @@ object anon {
   }
   object TypeofimportedSelectors {
     
-    @scala.inline
-    def apply(isViewportMatch: String => Boolean): TypeofimportedSelectors = {
+    inline def apply(isViewportMatch: String => Boolean): TypeofimportedSelectors = {
       val __obj = js.Dynamic.literal(isViewportMatch = js.Any.fromFunction1(isViewportMatch))
       __obj.asInstanceOf[TypeofimportedSelectors]
     }
     
-    @scala.inline
-    implicit class TypeofimportedSelectorsMutableBuilder[Self <: TypeofimportedSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofimportedSelectors](x: Self) {
       
-      @scala.inline
-      def setIsViewportMatch(value: String => Boolean): Self = StObject.set(x, "isViewportMatch", js.Any.fromFunction1(value))
+      inline def setIsViewportMatch(value: String => Boolean): Self = StObject.set(x, "isViewportMatch", js.Any.fromFunction1(value))
     }
   }
 }

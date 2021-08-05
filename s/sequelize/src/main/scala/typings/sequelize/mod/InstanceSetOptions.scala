@@ -21,25 +21,19 @@ trait InstanceSetOptions extends StObject {
 }
 object InstanceSetOptions {
   
-  @scala.inline
-  def apply(): InstanceSetOptions = {
+  inline def apply(): InstanceSetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceSetOptions]
   }
   
-  @scala.inline
-  implicit class InstanceSetOptionsMutableBuilder[Self <: InstanceSetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceSetOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
   }
 }

@@ -27,8 +27,7 @@ trait CustomResourceConversion extends StObject {
 }
 object CustomResourceConversion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     conversionReviewVersions: js.Array[String],
     strategy: String,
     webhookClientConfig: WebhookClientConfig
@@ -37,19 +36,14 @@ object CustomResourceConversion {
     __obj.asInstanceOf[CustomResourceConversion]
   }
   
-  @scala.inline
-  implicit class CustomResourceConversionMutableBuilder[Self <: CustomResourceConversion] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceConversion](x: Self) {
     
-    @scala.inline
-    def setConversionReviewVersions(value: js.Array[String]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
+    inline def setConversionReviewVersions(value: js.Array[String]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionReviewVersionsVarargs(value: String*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
+    inline def setConversionReviewVersionsVarargs(value: String*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookClientConfig(value: WebhookClientConfig): Self = StObject.set(x, "webhookClientConfig", value.asInstanceOf[js.Any])
+    inline def setWebhookClientConfig(value: WebhookClientConfig): Self = StObject.set(x, "webhookClientConfig", value.asInstanceOf[js.Any])
   }
 }

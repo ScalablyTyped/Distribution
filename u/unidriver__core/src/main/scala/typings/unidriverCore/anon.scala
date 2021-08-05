@@ -16,23 +16,18 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: String, key: String, keyCode: Double): Code = {
+    inline def apply(code: String, key: String, keyCode: Double): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,20 +39,16 @@ object anon {
   }
   object CodeKey {
     
-    @scala.inline
-    def apply(code: String, key: String): CodeKey = {
+    inline def apply(code: String, key: String): CodeKey = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeKey]
     }
     
-    @scala.inline
-    implicit class CodeKeyMutableBuilder[Self <: CodeKey] (val x: Self) extends AnyVal {
+    extension [Self <: CodeKey](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,26 +64,20 @@ object anon {
   }
   object CodeKeyKeyCode {
     
-    @scala.inline
-    def apply(code: String, key: String, keyCode: Double, location: Double): CodeKeyKeyCode = {
+    inline def apply(code: String, key: String, keyCode: Double, location: Double): CodeKeyKeyCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeKeyKeyCode]
     }
     
-    @scala.inline
-    implicit class CodeKeyKeyCodeMutableBuilder[Self <: CodeKeyKeyCode] (val x: Self) extends AnyVal {
+    extension [Self <: CodeKeyKeyCode](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,20 +89,16 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(key: String, keyCode: Double): Key = {
+    inline def apply(key: String, keyCode: Double): Key = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,23 +112,18 @@ object anon {
   }
   object KeyCode {
     
-    @scala.inline
-    def apply(code: String, key: String, keyCode: Double): KeyCode = {
+    inline def apply(code: String, key: String, keyCode: Double): KeyCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyCode]
     }
     
-    @scala.inline
-    implicit class KeyCodeMutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
+    extension [Self <: KeyCode](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,26 +139,20 @@ object anon {
   }
   object KeyCodeLocation {
     
-    @scala.inline
-    def apply(code: String, key: String, keyCode: Double, location: Double): KeyCodeLocation = {
+    inline def apply(code: String, key: String, keyCode: Double, location: Double): KeyCodeLocation = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyCodeLocation]
     }
     
-    @scala.inline
-    implicit class KeyCodeLocationMutableBuilder[Self <: KeyCodeLocation] (val x: Self) extends AnyVal {
+    extension [Self <: KeyCodeLocation](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,26 +168,20 @@ object anon {
   }
   object KeyCodeShiftKey {
     
-    @scala.inline
-    def apply(code: String, key: String, keyCode: Double, shiftKey: String): KeyCodeShiftKey = {
+    inline def apply(code: String, key: String, keyCode: Double, shiftKey: String): KeyCodeShiftKey = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyCodeShiftKey]
     }
     
-    @scala.inline
-    implicit class KeyCodeShiftKeyMutableBuilder[Self <: KeyCodeShiftKey] (val x: Self) extends AnyVal {
+    extension [Self <: KeyCodeShiftKey](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,26 +197,20 @@ object anon {
   }
   object KeyKeyCode {
     
-    @scala.inline
-    def apply(code: String, key: String, keyCode: Double, text: String): KeyKeyCode = {
+    inline def apply(code: String, key: String, keyCode: Double, text: String): KeyKeyCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyKeyCode]
     }
     
-    @scala.inline
-    implicit class KeyKeyCodeMutableBuilder[Self <: KeyKeyCode] (val x: Self) extends AnyVal {
+    extension [Self <: KeyKeyCode](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,20 +222,16 @@ object anon {
   }
   object KeyString {
     
-    @scala.inline
-    def apply(key: String, keyCode: Double): KeyString = {
+    inline def apply(key: String, keyCode: Double): KeyString = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyString]
     }
     
-    @scala.inline
-    implicit class KeyStringMutableBuilder[Self <: KeyString] (val x: Self) extends AnyVal {
+    extension [Self <: KeyString](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,8 +251,7 @@ object anon {
   }
   object Location {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       key: String,
       keyCode: Double,
@@ -310,26 +263,19 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyCode(value: Double): Self = StObject.set(x, "shiftKeyCode", value.asInstanceOf[js.Any])
+      inline def setShiftKeyCode(value: Double): Self = StObject.set(x, "shiftKeyCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -349,8 +295,7 @@ object anon {
   }
   object ShiftKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       key: String,
       keyCode: Double,
@@ -362,26 +307,19 @@ object anon {
       __obj.asInstanceOf[ShiftKey]
     }
     
-    @scala.inline
-    implicit class ShiftKeyMutableBuilder[Self <: ShiftKey] (val x: Self) extends AnyVal {
+    extension [Self <: ShiftKey](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: String): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyCode(value: Double): Self = StObject.set(x, "shiftKeyCode", value.asInstanceOf[js.Any])
+      inline def setShiftKeyCode(value: Double): Self = StObject.set(x, "shiftKeyCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -399,29 +337,22 @@ object anon {
   }
   object Text {
     
-    @scala.inline
-    def apply(code: String, key: String, keyCode: Double, location: Double, text: String): Text = {
+    inline def apply(code: String, key: String, keyCode: Double, location: Double, text: String): Text = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -883,7 +814,7 @@ object anon {
     @JSName("-")
     var _dash: CodeKeyKeyCode = js.native
     
-    @JSName("")
+    /* private */ @JSName("")
     var _empty: Code = js.native
     
     @JSName("_")

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLFieldSetElement")
 @js.native
-class HTMLFieldSetElement protected ()
+/* private */ class HTMLFieldSetElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLFieldSetElement

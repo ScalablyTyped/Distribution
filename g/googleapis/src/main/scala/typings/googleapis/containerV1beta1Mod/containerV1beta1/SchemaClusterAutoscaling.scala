@@ -24,28 +24,21 @@ trait SchemaClusterAutoscaling extends StObject {
 }
 object SchemaClusterAutoscaling {
   
-  @scala.inline
-  def apply(): SchemaClusterAutoscaling = {
+  inline def apply(): SchemaClusterAutoscaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClusterAutoscaling]
   }
   
-  @scala.inline
-  implicit class SchemaClusterAutoscalingMutableBuilder[Self <: SchemaClusterAutoscaling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClusterAutoscaling](x: Self) {
     
-    @scala.inline
-    def setEnableNodeAutoprovisioning(value: Boolean): Self = StObject.set(x, "enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
+    inline def setEnableNodeAutoprovisioning(value: Boolean): Self = StObject.set(x, "enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableNodeAutoprovisioningUndefined: Self = StObject.set(x, "enableNodeAutoprovisioning", js.undefined)
+    inline def setEnableNodeAutoprovisioningUndefined: Self = StObject.set(x, "enableNodeAutoprovisioning", js.undefined)
     
-    @scala.inline
-    def setResourceLimits(value: js.Array[SchemaResourceLimit]): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
+    inline def setResourceLimits(value: js.Array[SchemaResourceLimit]): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
+    inline def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
     
-    @scala.inline
-    def setResourceLimitsVarargs(value: SchemaResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value :_*))
+    inline def setResourceLimitsVarargs(value: SchemaResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value :_*))
   }
 }

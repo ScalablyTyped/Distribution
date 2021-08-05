@@ -60,49 +60,35 @@ trait DatetimeFormatInfoLoadOptions extends StObject {
 }
 object DatetimeFormatInfoLoadOptions {
   
-  @scala.inline
-  def apply(): DatetimeFormatInfoLoadOptions = {
+  inline def apply(): DatetimeFormatInfoLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatetimeFormatInfoLoadOptions]
   }
   
-  @scala.inline
-  implicit class DatetimeFormatInfoLoadOptionsMutableBuilder[Self <: DatetimeFormatInfoLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DatetimeFormatInfoLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setDateSeparator(value: Boolean): Self = StObject.set(x, "dateSeparator", value.asInstanceOf[js.Any])
+    inline def setDateSeparator(value: Boolean): Self = StObject.set(x, "dateSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateSeparatorUndefined: Self = StObject.set(x, "dateSeparator", js.undefined)
+    inline def setDateSeparatorUndefined: Self = StObject.set(x, "dateSeparator", js.undefined)
     
-    @scala.inline
-    def setLongDatePattern(value: Boolean): Self = StObject.set(x, "longDatePattern", value.asInstanceOf[js.Any])
+    inline def setLongDatePattern(value: Boolean): Self = StObject.set(x, "longDatePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongDatePatternUndefined: Self = StObject.set(x, "longDatePattern", js.undefined)
+    inline def setLongDatePatternUndefined: Self = StObject.set(x, "longDatePattern", js.undefined)
     
-    @scala.inline
-    def setLongTimePattern(value: Boolean): Self = StObject.set(x, "longTimePattern", value.asInstanceOf[js.Any])
+    inline def setLongTimePattern(value: Boolean): Self = StObject.set(x, "longTimePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongTimePatternUndefined: Self = StObject.set(x, "longTimePattern", js.undefined)
+    inline def setLongTimePatternUndefined: Self = StObject.set(x, "longTimePattern", js.undefined)
     
-    @scala.inline
-    def setShortDatePattern(value: Boolean): Self = StObject.set(x, "shortDatePattern", value.asInstanceOf[js.Any])
+    inline def setShortDatePattern(value: Boolean): Self = StObject.set(x, "shortDatePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDatePatternUndefined: Self = StObject.set(x, "shortDatePattern", js.undefined)
+    inline def setShortDatePatternUndefined: Self = StObject.set(x, "shortDatePattern", js.undefined)
     
-    @scala.inline
-    def setTimeSeparator(value: Boolean): Self = StObject.set(x, "timeSeparator", value.asInstanceOf[js.Any])
+    inline def setTimeSeparator(value: Boolean): Self = StObject.set(x, "timeSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeparatorUndefined: Self = StObject.set(x, "timeSeparator", js.undefined)
+    inline def setTimeSeparatorUndefined: Self = StObject.set(x, "timeSeparator", js.undefined)
   }
 }

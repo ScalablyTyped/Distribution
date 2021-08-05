@@ -10,19 +10,15 @@ trait SparseToDenseAttrs extends StObject {
 }
 object SparseToDenseAttrs {
   
-  @scala.inline
-  def apply(outputShape: js.Array[Double]): SparseToDenseAttrs = {
+  inline def apply(outputShape: js.Array[Double]): SparseToDenseAttrs = {
     val __obj = js.Dynamic.literal(outputShape = outputShape.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparseToDenseAttrs]
   }
   
-  @scala.inline
-  implicit class SparseToDenseAttrsMutableBuilder[Self <: SparseToDenseAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: SparseToDenseAttrs](x: Self) {
     
-    @scala.inline
-    def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
+    inline def setOutputShape(value: js.Array[Double]): Self = StObject.set(x, "outputShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
+    inline def setOutputShapeVarargs(value: Double*): Self = StObject.set(x, "outputShape", js.Array(value :_*))
   }
 }

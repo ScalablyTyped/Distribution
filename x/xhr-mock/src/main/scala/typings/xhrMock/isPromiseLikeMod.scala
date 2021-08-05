@@ -10,6 +10,5 @@ object isPromiseLikeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPromiseLike(arg: js.Any): /* is std.Promise<xhr-mock.xhr-mock/lib/MockResponse.default | undefined> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseLike")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<xhr-mock.xhr-mock/lib/MockResponse.default | undefined> */ Boolean]
+  inline def isPromiseLike(arg: js.Any): /* is std.Promise<xhr-mock.xhr-mock/lib/MockResponse.default | undefined> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseLike")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<xhr-mock.xhr-mock/lib/MockResponse.default | undefined> */ Boolean]
 }

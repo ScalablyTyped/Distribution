@@ -73,12 +73,12 @@ object maybeMod {
     /* CompleteClass */
     override def of[U](t: U): Monad[U] = js.native
     
-    var `type`: js.Any = js.native
+    /* private */ var `type`: js.Any = js.native
     
     /* CompleteClass */
     override def unit[U](t: U): Monad[U] = js.native
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
     
     def valueOr[U /* <: T */](defaultValue: U): T | U = js.native
     
@@ -94,32 +94,23 @@ object maybeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def all(t: StringDictionary[Maybe_[js.Any]]): Maybe_[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[js.Any]]]
+    inline def all(t: StringDictionary[Maybe_[js.Any]]): Maybe_[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[js.Any]]]
     
-    @scala.inline
-    def isJust[T](t: Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJust")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isJust[T](t: Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJust")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isNothing[T](t: Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNothing")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNothing[T](t: Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNothing")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def just[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
+    inline def just[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
     
-    @scala.inline
-    def maybe[T](): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")().asInstanceOf[Maybe_[T]]
-    @scala.inline
-    def maybe[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
+    inline def maybe[T](): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")().asInstanceOf[Maybe_[T]]
+    inline def maybe[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
     
-    @scala.inline
-    def nothing[T](): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nothing")().asInstanceOf[Maybe_[T]]
+    inline def nothing[T](): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nothing")().asInstanceOf[Maybe_[T]]
     
-    @scala.inline
-    def sequence[T](t: StringDictionary[Maybe_[T]]): Maybe_[StringDictionary[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[T]]]
+    inline def sequence[T](t: StringDictionary[Maybe_[T]]): Maybe_[StringDictionary[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[T]]]
   }
   
-  @scala.inline
-  def maybe[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
+  inline def maybe[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
   
   trait MaybePatterns[T, U] extends StObject {
     
@@ -129,20 +120,16 @@ object maybeMod {
   }
   object MaybePatterns {
     
-    @scala.inline
-    def apply[T, U](just: T => U, nothing: () => U): MaybePatterns[T, U] = {
+    inline def apply[T, U](just: T => U, nothing: () => U): MaybePatterns[T, U] = {
       val __obj = js.Dynamic.literal(just = js.Any.fromFunction1(just), nothing = js.Any.fromFunction0(nothing))
       __obj.asInstanceOf[MaybePatterns[T, U]]
     }
     
-    @scala.inline
-    implicit class MaybePatternsMutableBuilder[Self <: MaybePatterns[?, ?], T, U] (val x: Self & (MaybePatterns[T, U])) extends AnyVal {
+    extension [Self <: MaybePatterns[?, ?], T, U](x: Self & (MaybePatterns[T, U])) {
       
-      @scala.inline
-      def setJust(value: T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))
+      inline def setJust(value: T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNothing(value: () => U): Self = StObject.set(x, "nothing", js.Any.fromFunction0(value))
+      inline def setNothing(value: () => U): Self = StObject.set(x, "nothing", js.Any.fromFunction0(value))
     }
   }
   
@@ -155,26 +142,20 @@ object maybeMod {
   }
   object OptionalMaybePatterns {
     
-    @scala.inline
-    def apply[T, U](): OptionalMaybePatterns[T, U] = {
+    inline def apply[T, U](): OptionalMaybePatterns[T, U] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalMaybePatterns[T, U]]
     }
     
-    @scala.inline
-    implicit class OptionalMaybePatternsMutableBuilder[Self <: OptionalMaybePatterns[?, ?], T, U] (val x: Self & (OptionalMaybePatterns[T, U])) extends AnyVal {
+    extension [Self <: OptionalMaybePatterns[?, ?], T, U](x: Self & (OptionalMaybePatterns[T, U])) {
       
-      @scala.inline
-      def setJust(value: /* t */ T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))
+      inline def setJust(value: /* t */ T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setJustUndefined: Self = StObject.set(x, "just", js.undefined)
+      inline def setJustUndefined: Self = StObject.set(x, "just", js.undefined)
       
-      @scala.inline
-      def setNothing(value: () => U): Self = StObject.set(x, "nothing", js.Any.fromFunction0(value))
+      inline def setNothing(value: () => U): Self = StObject.set(x, "nothing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNothingUndefined: Self = StObject.set(x, "nothing", js.undefined)
+      inline def setNothingUndefined: Self = StObject.set(x, "nothing", js.undefined)
     }
   }
 }

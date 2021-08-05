@@ -12,8 +12,7 @@ object launcherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(capabilities: ExtendedCapabilities): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(capabilities.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Browser]]
+  inline def default(capabilities: ExtendedCapabilities): js.Promise[Browser] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(capabilities.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Browser]]
   
   trait DevToolsOptions extends StObject {
     
@@ -25,35 +24,26 @@ object launcherMod {
   }
   object DevToolsOptions {
     
-    @scala.inline
-    def apply(): DevToolsOptions = {
+    inline def apply(): DevToolsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DevToolsOptions]
     }
     
-    @scala.inline
-    implicit class DevToolsOptionsMutableBuilder[Self <: DevToolsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DevToolsOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultViewport(value: HeightWidth): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
+      inline def setDefaultViewport(value: HeightWidth): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultViewportUndefined: Self = StObject.set(x, "defaultViewport", js.undefined)
+      inline def setDefaultViewportUndefined: Self = StObject.set(x, "defaultViewport", js.undefined)
       
-      @scala.inline
-      def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+      inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
+      inline def setHeadlessUndefined: Self = StObject.set(x, "headless", js.undefined)
       
-      @scala.inline
-      def setIgnoreDefaultArgs(value: js.Array[String] | Boolean): Self = StObject.set(x, "ignoreDefaultArgs", value.asInstanceOf[js.Any])
+      inline def setIgnoreDefaultArgs(value: js.Array[String] | Boolean): Self = StObject.set(x, "ignoreDefaultArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDefaultArgsUndefined: Self = StObject.set(x, "ignoreDefaultArgs", js.undefined)
+      inline def setIgnoreDefaultArgsUndefined: Self = StObject.set(x, "ignoreDefaultArgs", js.undefined)
       
-      @scala.inline
-      def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
+      inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
     }
   }
   
@@ -65,20 +55,16 @@ object launcherMod {
   }
   object ExtendedCapabilities {
     
-    @scala.inline
-    def apply(): ExtendedCapabilities = {
+    inline def apply(): ExtendedCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtendedCapabilities]
     }
     
-    @scala.inline
-    implicit class ExtendedCapabilitiesMutableBuilder[Self <: ExtendedCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: ExtendedCapabilities](x: Self) {
       
-      @scala.inline
-      def setWdioColondevtoolsOptions(value: DevToolsOptions): Self = StObject.set(x, "wdio:devtoolsOptions", value.asInstanceOf[js.Any])
+      inline def setWdioColondevtoolsOptions(value: DevToolsOptions): Self = StObject.set(x, "wdio:devtoolsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWdioColondevtoolsOptionsUndefined: Self = StObject.set(x, "wdio:devtoolsOptions", js.undefined)
+      inline def setWdioColondevtoolsOptionsUndefined: Self = StObject.set(x, "wdio:devtoolsOptions", js.undefined)
     }
   }
 }

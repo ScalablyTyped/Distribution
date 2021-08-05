@@ -18,37 +18,27 @@ trait SectionListScrollParams extends StObject {
 }
 object SectionListScrollParams {
   
-  @scala.inline
-  def apply(itemIndex: Double, sectionIndex: Double): SectionListScrollParams = {
+  inline def apply(itemIndex: Double, sectionIndex: Double): SectionListScrollParams = {
     val __obj = js.Dynamic.literal(itemIndex = itemIndex.asInstanceOf[js.Any], sectionIndex = sectionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionListScrollParams]
   }
   
-  @scala.inline
-  implicit class SectionListScrollParamsMutableBuilder[Self <: SectionListScrollParams] (val x: Self) extends AnyVal {
+  extension [Self <: SectionListScrollParams](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
+    inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionIndex(value: Double): Self = StObject.set(x, "sectionIndex", value.asInstanceOf[js.Any])
+    inline def setSectionIndex(value: Double): Self = StObject.set(x, "sectionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewOffset(value: Double): Self = StObject.set(x, "viewOffset", value.asInstanceOf[js.Any])
+    inline def setViewOffset(value: Double): Self = StObject.set(x, "viewOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewOffsetUndefined: Self = StObject.set(x, "viewOffset", js.undefined)
+    inline def setViewOffsetUndefined: Self = StObject.set(x, "viewOffset", js.undefined)
     
-    @scala.inline
-    def setViewPosition(value: Double): Self = StObject.set(x, "viewPosition", value.asInstanceOf[js.Any])
+    inline def setViewPosition(value: Double): Self = StObject.set(x, "viewPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPositionUndefined: Self = StObject.set(x, "viewPosition", js.undefined)
+    inline def setViewPositionUndefined: Self = StObject.set(x, "viewPosition", js.undefined)
   }
 }

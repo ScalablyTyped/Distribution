@@ -25,34 +25,25 @@ trait SchemaListThreadsResponse extends StObject {
 }
 object SchemaListThreadsResponse {
   
-  @scala.inline
-  def apply(): SchemaListThreadsResponse = {
+  inline def apply(): SchemaListThreadsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListThreadsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListThreadsResponseMutableBuilder[Self <: SchemaListThreadsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListThreadsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
+    inline def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
+    inline def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
     
-    @scala.inline
-    def setThreads(value: js.Array[SchemaThread]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+    inline def setThreads(value: js.Array[SchemaThread]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+    inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
-    @scala.inline
-    def setThreadsVarargs(value: SchemaThread*): Self = StObject.set(x, "threads", js.Array(value :_*))
+    inline def setThreadsVarargs(value: SchemaThread*): Self = StObject.set(x, "threads", js.Array(value :_*))
   }
 }

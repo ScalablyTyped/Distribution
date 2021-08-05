@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlRangeValueDataType extends StObject
 object XlRangeValueDataType {
   
-  @scala.inline
-  def xlRangeValueDefault: `10` = 10.asInstanceOf[`10`]
+  inline def xlRangeValueDefault: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def xlRangeValueMSPersistXML: `12` = 12.asInstanceOf[`12`]
+  inline def xlRangeValueMSPersistXML: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def xlRangeValueXMLSpreadsheet: `11` = 11.asInstanceOf[`11`]
+  inline def xlRangeValueXMLSpreadsheet: `11` = 11.asInstanceOf[`11`]
 }

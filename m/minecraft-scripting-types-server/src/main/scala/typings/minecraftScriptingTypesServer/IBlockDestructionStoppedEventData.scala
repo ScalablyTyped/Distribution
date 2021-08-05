@@ -28,22 +28,17 @@ trait IBlockDestructionStoppedEventData extends StObject {
 }
 object IBlockDestructionStoppedEventData {
   
-  @scala.inline
-  def apply(block_position: VectorXYZ, destruction_progress: Double, player: IEntity): IBlockDestructionStoppedEventData = {
+  inline def apply(block_position: VectorXYZ, destruction_progress: Double, player: IEntity): IBlockDestructionStoppedEventData = {
     val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], destruction_progress = destruction_progress.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlockDestructionStoppedEventData]
   }
   
-  @scala.inline
-  implicit class IBlockDestructionStoppedEventDataMutableBuilder[Self <: IBlockDestructionStoppedEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IBlockDestructionStoppedEventData](x: Self) {
     
-    @scala.inline
-    def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
+    inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestruction_progress(value: Double): Self = StObject.set(x, "destruction_progress", value.asInstanceOf[js.Any])
+    inline def setDestruction_progress(value: Double): Self = StObject.set(x, "destruction_progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }
 }

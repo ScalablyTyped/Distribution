@@ -14,8 +14,7 @@ object mod {
   @JSImport("base64url", JSImport.Default)
   @js.native
   def default: Base64Url = js.native
-  @scala.inline
-  def default_=(x: Base64Url): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Base64Url): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Base64Url extends StObject {

@@ -14,22 +14,17 @@ trait EntityByKeyResult extends StObject {
 }
 object EntityByKeyResult {
   
-  @scala.inline
-  def apply(entity: Entity, entityKey: EntityKey, fromCache: Boolean): EntityByKeyResult = {
+  inline def apply(entity: Entity, entityKey: EntityKey, fromCache: Boolean): EntityByKeyResult = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], entityKey = entityKey.asInstanceOf[js.Any], fromCache = fromCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityByKeyResult]
   }
   
-  @scala.inline
-  implicit class EntityByKeyResultMutableBuilder[Self <: EntityByKeyResult] (val x: Self) extends AnyVal {
+  extension [Self <: EntityByKeyResult](x: Self) {
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityKey(value: EntityKey): Self = StObject.set(x, "entityKey", value.asInstanceOf[js.Any])
+    inline def setEntityKey(value: EntityKey): Self = StObject.set(x, "entityKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+    inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
   }
 }

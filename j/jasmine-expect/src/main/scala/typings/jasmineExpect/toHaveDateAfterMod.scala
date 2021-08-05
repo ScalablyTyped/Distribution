@@ -28,19 +28,16 @@ object toHaveDateAfterMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](
+        inline def apply[T](
           toHaveDateAfter: (/* key */ String, /* otherDate */ Date, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
         ): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveDateAfter = js.Any.fromFunction3(toHaveDateAfter))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveDateAfter(
+          inline def setToHaveDateAfter(
             value: (/* key */ String, /* otherDate */ Date, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean
           ): Self = StObject.set(x, "toHaveDateAfter", js.Any.fromFunction3(value))
         }

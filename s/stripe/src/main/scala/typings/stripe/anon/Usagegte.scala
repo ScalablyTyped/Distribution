@@ -13,16 +13,13 @@ trait Usagegte extends StObject {
 }
 object Usagegte {
   
-  @scala.inline
-  def apply(usage_gte: Double): Usagegte = {
+  inline def apply(usage_gte: Double): Usagegte = {
     val __obj = js.Dynamic.literal(usage_gte = usage_gte.asInstanceOf[js.Any])
     __obj.asInstanceOf[Usagegte]
   }
   
-  @scala.inline
-  implicit class UsagegteMutableBuilder[Self <: Usagegte] (val x: Self) extends AnyVal {
+  extension [Self <: Usagegte](x: Self) {
     
-    @scala.inline
-    def setUsage_gte(value: Double): Self = StObject.set(x, "usage_gte", value.asInstanceOf[js.Any])
+    inline def setUsage_gte(value: Double): Self = StObject.set(x, "usage_gte", value.asInstanceOf[js.Any])
   }
 }

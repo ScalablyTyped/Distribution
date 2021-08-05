@@ -22,31 +22,23 @@ trait ActivitySetRepoSubscriptionEndpoint extends StObject {
 }
 object ActivitySetRepoSubscriptionEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ActivitySetRepoSubscriptionEndpoint = {
+  inline def apply(owner: String, repo: String): ActivitySetRepoSubscriptionEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySetRepoSubscriptionEndpoint]
   }
   
-  @scala.inline
-  implicit class ActivitySetRepoSubscriptionEndpointMutableBuilder[Self <: ActivitySetRepoSubscriptionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySetRepoSubscriptionEndpoint](x: Self) {
     
-    @scala.inline
-    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+    inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+    inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
+    inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedUndefined: Self = StObject.set(x, "subscribed", js.undefined)
+    inline def setSubscribedUndefined: Self = StObject.set(x, "subscribed", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ object anon {
   }
   object PickStoragegetItemsetItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getItem: /* key */ String => String | Null,
       setItem: (/* key */ String, /* value */ String) => Unit
     ): PickStoragegetItemsetItem = {
@@ -34,14 +33,11 @@ object anon {
       __obj.asInstanceOf[PickStoragegetItemsetItem]
     }
     
-    @scala.inline
-    implicit class PickStoragegetItemsetItemMutableBuilder[Self <: PickStoragegetItemsetItem] (val x: Self) extends AnyVal {
+    extension [Self <: PickStoragegetItemsetItem](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: /* key */ String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: /* key */ String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (/* key */ String, /* value */ String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (/* key */ String, /* value */ String) => Unit): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
     }
   }
 }

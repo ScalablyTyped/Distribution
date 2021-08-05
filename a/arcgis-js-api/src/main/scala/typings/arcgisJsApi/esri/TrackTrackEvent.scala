@@ -10,16 +10,13 @@ trait TrackTrackEvent extends StObject {
 }
 object TrackTrackEvent {
   
-  @scala.inline
-  def apply(position: js.Any): TrackTrackEvent = {
+  inline def apply(position: js.Any): TrackTrackEvent = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackTrackEvent]
   }
   
-  @scala.inline
-  implicit class TrackTrackEventMutableBuilder[Self <: TrackTrackEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TrackTrackEvent](x: Self) {
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait StopRequest extends StObject {
 }
 object StopRequest {
   
-  @scala.inline
-  def apply(customData: js.Object): StopRequest = {
+  inline def apply(customData: js.Object): StopRequest = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRequest]
   }
   
-  @scala.inline
-  implicit class StopRequestMutableBuilder[Self <: StopRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopRequest](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }
 }

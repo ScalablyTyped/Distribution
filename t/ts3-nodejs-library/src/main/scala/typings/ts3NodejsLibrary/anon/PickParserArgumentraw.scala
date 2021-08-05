@@ -11,16 +11,13 @@ trait PickParserArgumentraw extends StObject {
 }
 object PickParserArgumentraw {
   
-  @scala.inline
-  def apply(raw: String): PickParserArgumentraw = {
+  inline def apply(raw: String): PickParserArgumentraw = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickParserArgumentraw]
   }
   
-  @scala.inline
-  implicit class PickParserArgumentrawMutableBuilder[Self <: PickParserArgumentraw] (val x: Self) extends AnyVal {
+  extension [Self <: PickParserArgumentraw](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
   }
 }

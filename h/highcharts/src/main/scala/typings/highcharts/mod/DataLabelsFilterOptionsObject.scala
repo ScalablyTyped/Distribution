@@ -26,31 +26,23 @@ trait DataLabelsFilterOptionsObject extends StObject {
 }
 object DataLabelsFilterOptionsObject {
   
-  @scala.inline
-  def apply(): DataLabelsFilterOptionsObject = {
+  inline def apply(): DataLabelsFilterOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataLabelsFilterOptionsObject]
   }
   
-  @scala.inline
-  implicit class DataLabelsFilterOptionsObjectMutableBuilder[Self <: DataLabelsFilterOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataLabelsFilterOptionsObject](x: Self) {
     
-    @scala.inline
-    def setOperator(value: OptionsOperatorValue): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: OptionsOperatorValue): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

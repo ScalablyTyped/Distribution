@@ -13,19 +13,15 @@ trait PutLifecycleEventHookExecutionStatusOutput extends StObject {
 }
 object PutLifecycleEventHookExecutionStatusOutput {
   
-  @scala.inline
-  def apply(): PutLifecycleEventHookExecutionStatusOutput = {
+  inline def apply(): PutLifecycleEventHookExecutionStatusOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutLifecycleEventHookExecutionStatusOutput]
   }
   
-  @scala.inline
-  implicit class PutLifecycleEventHookExecutionStatusOutputMutableBuilder[Self <: PutLifecycleEventHookExecutionStatusOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutLifecycleEventHookExecutionStatusOutput](x: Self) {
     
-    @scala.inline
-    def setLifecycleEventHookExecutionId(value: LifecycleEventHookExecutionId): Self = StObject.set(x, "lifecycleEventHookExecutionId", value.asInstanceOf[js.Any])
+    inline def setLifecycleEventHookExecutionId(value: LifecycleEventHookExecutionId): Self = StObject.set(x, "lifecycleEventHookExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleEventHookExecutionIdUndefined: Self = StObject.set(x, "lifecycleEventHookExecutionId", js.undefined)
+    inline def setLifecycleEventHookExecutionIdUndefined: Self = StObject.set(x, "lifecycleEventHookExecutionId", js.undefined)
   }
 }

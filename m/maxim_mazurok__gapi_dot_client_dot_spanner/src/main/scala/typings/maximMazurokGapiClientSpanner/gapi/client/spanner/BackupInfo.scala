@@ -17,31 +17,23 @@ trait BackupInfo extends StObject {
 }
 object BackupInfo {
   
-  @scala.inline
-  def apply(): BackupInfo = {
+  inline def apply(): BackupInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupInfo]
   }
   
-  @scala.inline
-  implicit class BackupInfoMutableBuilder[Self <: BackupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BackupInfo](x: Self) {
     
-    @scala.inline
-    def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
+    inline def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setSourceDatabase(value: String): Self = StObject.set(x, "sourceDatabase", value.asInstanceOf[js.Any])
+    inline def setSourceDatabase(value: String): Self = StObject.set(x, "sourceDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDatabaseUndefined: Self = StObject.set(x, "sourceDatabase", js.undefined)
+    inline def setSourceDatabaseUndefined: Self = StObject.set(x, "sourceDatabase", js.undefined)
   }
 }

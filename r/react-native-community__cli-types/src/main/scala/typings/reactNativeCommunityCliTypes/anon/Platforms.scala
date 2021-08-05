@@ -12,19 +12,15 @@ trait Platforms extends StObject {
 }
 object Platforms {
   
-  @scala.inline
-  def apply(platforms: AndroidIos, root: String): Platforms = {
+  inline def apply(platforms: AndroidIos, root: String): Platforms = {
     val __obj = js.Dynamic.literal(platforms = platforms.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[Platforms]
   }
   
-  @scala.inline
-  implicit class PlatformsMutableBuilder[Self <: Platforms] (val x: Self) extends AnyVal {
+  extension [Self <: Platforms](x: Self) {
     
-    @scala.inline
-    def setPlatforms(value: AndroidIos): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+    inline def setPlatforms(value: AndroidIos): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

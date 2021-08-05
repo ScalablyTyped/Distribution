@@ -13,14 +13,10 @@ object getSecurityGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSecurityGroup(): js.Promise[GetSecurityGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")().asInstanceOf[js.Promise[GetSecurityGroupResult]]
-  @scala.inline
-  def getSecurityGroup(args: Unit, opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupResult]]
-  @scala.inline
-  def getSecurityGroup(args: GetSecurityGroupArgs): js.Promise[GetSecurityGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecurityGroupResult]]
-  @scala.inline
-  def getSecurityGroup(args: GetSecurityGroupArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  inline def getSecurityGroup(): js.Promise[GetSecurityGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")().asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  inline def getSecurityGroup(args: Unit, opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  inline def getSecurityGroup(args: GetSecurityGroupArgs): js.Promise[GetSecurityGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecurityGroupResult]]
+  inline def getSecurityGroup(args: GetSecurityGroupArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupResult]]
   
   trait GetSecurityGroupArgs extends StObject {
     
@@ -53,47 +49,34 @@ object getSecurityGroupMod {
   }
   object GetSecurityGroupArgs {
     
-    @scala.inline
-    def apply(): GetSecurityGroupArgs = {
+    inline def apply(): GetSecurityGroupArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetSecurityGroupArgs]
     }
     
-    @scala.inline
-    implicit class GetSecurityGroupArgsMutableBuilder[Self <: GetSecurityGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecurityGroupArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetSecurityGroupFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetSecurityGroupFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetSecurityGroupFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetSecurityGroupFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
   
@@ -121,8 +104,7 @@ object getSecurityGroupMod {
   }
   object GetSecurityGroupResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       description: String,
       id: String,
@@ -134,35 +116,25 @@ object getSecurityGroupMod {
       __obj.asInstanceOf[GetSecurityGroupResult]
     }
     
-    @scala.inline
-    implicit class GetSecurityGroupResultMutableBuilder[Self <: GetSecurityGroupResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecurityGroupResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetSecurityGroupFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetSecurityGroupFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,8 +28,7 @@ trait ZoombarProviderDataChart extends StObject {
 }
 object ZoombarProviderDataChart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clean: () => Unit,
     cleanOptsForZoom: js.Object => Unit,
     createClone: (js.Object, js.Object) => Unit,
@@ -45,37 +44,26 @@ object ZoombarProviderDataChart {
     __obj.asInstanceOf[ZoombarProviderDataChart]
   }
   
-  @scala.inline
-  implicit class ZoombarProviderDataChartMutableBuilder[Self <: ZoombarProviderDataChart] (val x: Self) extends AnyVal {
+  extension [Self <: ZoombarProviderDataChart](x: Self) {
     
-    @scala.inline
-    def setClean(value: () => Unit): Self = StObject.set(x, "clean", js.Any.fromFunction0(value))
+    inline def setClean(value: () => Unit): Self = StObject.set(x, "clean", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCleanOptsForZoom(value: js.Object => Unit): Self = StObject.set(x, "cleanOptsForZoom", js.Any.fromFunction1(value))
+    inline def setCleanOptsForZoom(value: js.Object => Unit): Self = StObject.set(x, "cleanOptsForZoom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateClone(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "createClone", js.Any.fromFunction2(value))
+    inline def setCreateClone(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "createClone", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBaseOpts(value: js.Object => Unit): Self = StObject.set(x, "getBaseOpts", js.Any.fromFunction1(value))
+    inline def setGetBaseOpts(value: js.Object => Unit): Self = StObject.set(x, "getBaseOpts", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSize(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
+    inline def setSetSize(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSyncMinWidth(value: js.Object => Unit): Self = StObject.set(x, "syncMinWidth", js.Any.fromFunction1(value))
+    inline def setSyncMinWidth(value: js.Object => Unit): Self = StObject.set(x, "syncMinWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTargetObject(value: js.Object => Unit): Self = StObject.set(x, "targetObject", js.Any.fromFunction1(value))
+    inline def setTargetObject(value: js.Object => Unit): Self = StObject.set(x, "targetObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTargetWidth(value: () => Unit): Self = StObject.set(x, "targetWidth", js.Any.fromFunction0(value))
+    inline def setTargetWidth(value: () => Unit): Self = StObject.set(x, "targetWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWidgetName(value: () => Unit): Self = StObject.set(x, "widgetName", js.Any.fromFunction0(value))
+    inline def setWidgetName(value: () => Unit): Self = StObject.set(x, "widgetName", js.Any.fromFunction0(value))
   }
 }

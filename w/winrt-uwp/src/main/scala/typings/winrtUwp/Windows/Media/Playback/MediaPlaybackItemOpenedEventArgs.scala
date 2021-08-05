@@ -12,16 +12,13 @@ trait MediaPlaybackItemOpenedEventArgs extends StObject {
 }
 object MediaPlaybackItemOpenedEventArgs {
   
-  @scala.inline
-  def apply(item: MediaPlaybackItem): MediaPlaybackItemOpenedEventArgs = {
+  inline def apply(item: MediaPlaybackItem): MediaPlaybackItemOpenedEventArgs = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlaybackItemOpenedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaPlaybackItemOpenedEventArgsMutableBuilder[Self <: MediaPlaybackItemOpenedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlaybackItemOpenedEventArgs](x: Self) {
     
-    @scala.inline
-    def setItem(value: MediaPlaybackItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: MediaPlaybackItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

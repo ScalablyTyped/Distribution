@@ -19,11 +19,11 @@ object autoWidthCalculatorMod {
     
     def getPreferredWidthForColumn(column: Column): Double = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
-    var headerRootComp: js.Any = js.native
+    /* private */ var headerRootComp: js.Any = js.native
     
     /* private */ def putRowCellsIntoDummyContainer(column: js.Any, eDummyContainer: js.Any): js.Any = js.native
     
@@ -31,6 +31,6 @@ object autoWidthCalculatorMod {
     
     def registerHeaderRootComp(headerRootComp: HeaderRootComp): Unit = js.native
     
-    var rowRenderer: js.Any = js.native
+    /* private */ var rowRenderer: js.Any = js.native
   }
 }

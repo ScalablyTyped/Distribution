@@ -11,16 +11,13 @@ trait PickImplinitialCheck extends StObject {
 }
 object PickImplinitialCheck {
   
-  @scala.inline
-  def apply(initialCheck: Boolean): PickImplinitialCheck = {
+  inline def apply(initialCheck: Boolean): PickImplinitialCheck = {
     val __obj = js.Dynamic.literal(initialCheck = initialCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinitialCheck]
   }
   
-  @scala.inline
-  implicit class PickImplinitialCheckMutableBuilder[Self <: PickImplinitialCheck] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplinitialCheck](x: Self) {
     
-    @scala.inline
-    def setInitialCheck(value: Boolean): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
+    inline def setInitialCheck(value: Boolean): Self = StObject.set(x, "initialCheck", value.asInstanceOf[js.Any])
   }
 }

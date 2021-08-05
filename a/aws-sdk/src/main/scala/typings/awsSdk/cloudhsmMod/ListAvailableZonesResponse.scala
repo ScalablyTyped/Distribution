@@ -13,22 +13,17 @@ trait ListAvailableZonesResponse extends StObject {
 }
 object ListAvailableZonesResponse {
   
-  @scala.inline
-  def apply(): ListAvailableZonesResponse = {
+  inline def apply(): ListAvailableZonesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAvailableZonesResponse]
   }
   
-  @scala.inline
-  implicit class ListAvailableZonesResponseMutableBuilder[Self <: ListAvailableZonesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAvailableZonesResponse](x: Self) {
     
-    @scala.inline
-    def setAZList(value: AZList): Self = StObject.set(x, "AZList", value.asInstanceOf[js.Any])
+    inline def setAZList(value: AZList): Self = StObject.set(x, "AZList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAZListUndefined: Self = StObject.set(x, "AZList", js.undefined)
+    inline def setAZListUndefined: Self = StObject.set(x, "AZList", js.undefined)
     
-    @scala.inline
-    def setAZListVarargs(value: AZ*): Self = StObject.set(x, "AZList", js.Array(value :_*))
+    inline def setAZListVarargs(value: AZ*): Self = StObject.set(x, "AZList", js.Array(value :_*))
   }
 }

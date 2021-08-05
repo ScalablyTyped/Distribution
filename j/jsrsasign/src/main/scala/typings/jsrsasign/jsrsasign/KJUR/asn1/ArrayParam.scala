@@ -10,19 +10,15 @@ trait ArrayParam[T] extends StObject {
 }
 object ArrayParam {
   
-  @scala.inline
-  def apply[T](array: js.Array[T]): ArrayParam[T] = {
+  inline def apply[T](array: js.Array[T]): ArrayParam[T] = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayParam[T]]
   }
   
-  @scala.inline
-  implicit class ArrayParamMutableBuilder[Self <: ArrayParam[?], T] (val x: Self & ArrayParam[T]) extends AnyVal {
+  extension [Self <: ArrayParam[?], T](x: Self & ArrayParam[T]) {
     
-    @scala.inline
-    def setArray(value: js.Array[T]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: js.Array[T]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayVarargs(value: T*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: T*): Self = StObject.set(x, "array", js.Array(value :_*))
   }
 }

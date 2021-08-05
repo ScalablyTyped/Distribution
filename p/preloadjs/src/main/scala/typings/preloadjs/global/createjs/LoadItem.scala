@@ -60,11 +60,8 @@ object LoadItem {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(value: String): js.Object | typings.preloadjs.createjs.LoadItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object | typings.preloadjs.createjs.LoadItem]
-  @scala.inline
-  def create(value: js.Object): js.Object | typings.preloadjs.createjs.LoadItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object | typings.preloadjs.createjs.LoadItem]
+  inline def create(value: String): js.Object | typings.preloadjs.createjs.LoadItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object | typings.preloadjs.createjs.LoadItem]
+  inline def create(value: js.Object): js.Object | typings.preloadjs.createjs.LoadItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object | typings.preloadjs.createjs.LoadItem]
   // methods
-  @scala.inline
-  def create(value: typings.preloadjs.createjs.LoadItem): js.Object | typings.preloadjs.createjs.LoadItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object | typings.preloadjs.createjs.LoadItem]
+  inline def create(value: typings.preloadjs.createjs.LoadItem): js.Object | typings.preloadjs.createjs.LoadItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object | typings.preloadjs.createjs.LoadItem]
 }

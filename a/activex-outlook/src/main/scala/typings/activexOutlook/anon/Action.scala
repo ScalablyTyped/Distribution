@@ -14,22 +14,17 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(Action: js.Any, Cancel: Boolean, Response: js.Any): Action = {
+  inline def apply(Action: js.Any, Cancel: Boolean, Response: js.Any): Action = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Cancel = Cancel.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: js.Any): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: js.Any): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
   }
 }

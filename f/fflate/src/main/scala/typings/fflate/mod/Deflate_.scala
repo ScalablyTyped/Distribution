@@ -17,9 +17,9 @@ class Deflate_ () extends StObject {
   def this(opts: DeflateOptions) = this()
   def this(opts: DeflateOptions, cb: FlateStreamHandler) = this()
   
-  var d: js.Any = js.native
+  /* private */ var d: js.Any = js.native
   
-  var o: js.Any = js.native
+  /* private */ var o: js.Any = js.native
   
   /**
     * The handler to call whenever data is available
@@ -31,7 +31,7 @@ class Deflate_ () extends StObject {
   @JSName("ondata")
   var ondata_Original: FlateStreamHandler = js.native
   
-  var p: js.Any = js.native
+  /* private */ var p: js.Any = js.native
   
   /**
     * Pushes a chunk to be deflated

@@ -14,19 +14,15 @@ trait ImportDicomDataRequest extends StObject {
 }
 object ImportDicomDataRequest {
   
-  @scala.inline
-  def apply(): ImportDicomDataRequest = {
+  inline def apply(): ImportDicomDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportDicomDataRequest]
   }
   
-  @scala.inline
-  implicit class ImportDicomDataRequestMutableBuilder[Self <: ImportDicomDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ImportDicomDataRequest](x: Self) {
     
-    @scala.inline
-    def setGcsSource(value: GoogleCloudHealthcareV1DicomGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: GoogleCloudHealthcareV1DicomGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
+    inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }
 }

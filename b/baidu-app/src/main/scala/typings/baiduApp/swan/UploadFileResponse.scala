@@ -13,19 +13,15 @@ trait UploadFileResponse extends StObject {
 }
 object UploadFileResponse {
   
-  @scala.inline
-  def apply(data: String, statusCode: Double): UploadFileResponse = {
+  inline def apply(data: String, statusCode: Double): UploadFileResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileResponse]
   }
   
-  @scala.inline
-  implicit class UploadFileResponseMutableBuilder[Self <: UploadFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFileResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

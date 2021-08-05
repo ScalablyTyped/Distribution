@@ -20,23 +20,18 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: String | (js.Function1[/* label */ String, String]), validator: Boolean): Message = {
+    inline def apply(message: String | (js.Function1[/* label */ String, String]), validator: Boolean): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String | (js.Function1[/* label */ String, String])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | (js.Function1[/* label */ String, String])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFunction1(value: /* label */ String => String): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+      inline def setMessageFunction1(value: /* label */ String => String): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidator(value: Boolean): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: Boolean): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
   }
 }

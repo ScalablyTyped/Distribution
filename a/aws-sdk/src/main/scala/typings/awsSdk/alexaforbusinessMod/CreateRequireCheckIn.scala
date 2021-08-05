@@ -18,19 +18,15 @@ trait CreateRequireCheckIn extends StObject {
 }
 object CreateRequireCheckIn {
   
-  @scala.inline
-  def apply(Enabled: Boolean, ReleaseAfterMinutes: Minutes): CreateRequireCheckIn = {
+  inline def apply(Enabled: Boolean, ReleaseAfterMinutes: Minutes): CreateRequireCheckIn = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], ReleaseAfterMinutes = ReleaseAfterMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRequireCheckIn]
   }
   
-  @scala.inline
-  implicit class CreateRequireCheckInMutableBuilder[Self <: CreateRequireCheckIn] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRequireCheckIn](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseAfterMinutes(value: Minutes): Self = StObject.set(x, "ReleaseAfterMinutes", value.asInstanceOf[js.Any])
+    inline def setReleaseAfterMinutes(value: Minutes): Self = StObject.set(x, "ReleaseAfterMinutes", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait IKeyStorageProviderNamesStatics extends StObject {
 }
 object IKeyStorageProviderNamesStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     platformKeyStorageProvider: String,
     smartcardKeyStorageProvider: String,
     softwareKeyStorageProvider: String
@@ -24,16 +23,12 @@ object IKeyStorageProviderNamesStatics {
     __obj.asInstanceOf[IKeyStorageProviderNamesStatics]
   }
   
-  @scala.inline
-  implicit class IKeyStorageProviderNamesStaticsMutableBuilder[Self <: IKeyStorageProviderNamesStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyStorageProviderNamesStatics](x: Self) {
     
-    @scala.inline
-    def setPlatformKeyStorageProvider(value: String): Self = StObject.set(x, "platformKeyStorageProvider", value.asInstanceOf[js.Any])
+    inline def setPlatformKeyStorageProvider(value: String): Self = StObject.set(x, "platformKeyStorageProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartcardKeyStorageProvider(value: String): Self = StObject.set(x, "smartcardKeyStorageProvider", value.asInstanceOf[js.Any])
+    inline def setSmartcardKeyStorageProvider(value: String): Self = StObject.set(x, "smartcardKeyStorageProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareKeyStorageProvider(value: String): Self = StObject.set(x, "softwareKeyStorageProvider", value.asInstanceOf[js.Any])
+    inline def setSoftwareKeyStorageProvider(value: String): Self = StObject.set(x, "softwareKeyStorageProvider", value.asInstanceOf[js.Any])
   }
 }

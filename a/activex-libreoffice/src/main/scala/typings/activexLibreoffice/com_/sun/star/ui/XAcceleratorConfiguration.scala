@@ -125,8 +125,7 @@ trait XAcceleratorConfiguration
 }
 object XAcceleratorConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllKeyEvents: SafeArray[KeyEvent],
     acquire: () => Unit,
     addConfigurationListener: XUIConfigurationListener => Unit,
@@ -152,31 +151,22 @@ object XAcceleratorConfiguration {
     __obj.asInstanceOf[XAcceleratorConfiguration]
   }
   
-  @scala.inline
-  implicit class XAcceleratorConfigurationMutableBuilder[Self <: XAcceleratorConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: XAcceleratorConfiguration](x: Self) {
     
-    @scala.inline
-    def setAllKeyEvents(value: SafeArray[KeyEvent]): Self = StObject.set(x, "AllKeyEvents", value.asInstanceOf[js.Any])
+    inline def setAllKeyEvents(value: SafeArray[KeyEvent]): Self = StObject.set(x, "AllKeyEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllKeyEvents(value: () => SafeArray[KeyEvent]): Self = StObject.set(x, "getAllKeyEvents", js.Any.fromFunction0(value))
+    inline def setGetAllKeyEvents(value: () => SafeArray[KeyEvent]): Self = StObject.set(x, "getAllKeyEvents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCommandByKeyEvent(value: KeyEvent => String): Self = StObject.set(x, "getCommandByKeyEvent", js.Any.fromFunction1(value))
+    inline def setGetCommandByKeyEvent(value: KeyEvent => String): Self = StObject.set(x, "getCommandByKeyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetKeyEventsByCommand(value: String => SafeArray[KeyEvent]): Self = StObject.set(x, "getKeyEventsByCommand", js.Any.fromFunction1(value))
+    inline def setGetKeyEventsByCommand(value: String => SafeArray[KeyEvent]): Self = StObject.set(x, "getKeyEventsByCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPreferredKeyEventsForCommandList(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPreferredKeyEventsForCommandList", js.Any.fromFunction1(value))
+    inline def setGetPreferredKeyEventsForCommandList(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPreferredKeyEventsForCommandList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveCommandFromAllKeyEvents(value: String => Unit): Self = StObject.set(x, "removeCommandFromAllKeyEvents", js.Any.fromFunction1(value))
+    inline def setRemoveCommandFromAllKeyEvents(value: String => Unit): Self = StObject.set(x, "removeCommandFromAllKeyEvents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveKeyEvent(value: KeyEvent => Unit): Self = StObject.set(x, "removeKeyEvent", js.Any.fromFunction1(value))
+    inline def setRemoveKeyEvent(value: KeyEvent => Unit): Self = StObject.set(x, "removeKeyEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetKeyEvent(value: (KeyEvent, String) => Unit): Self = StObject.set(x, "setKeyEvent", js.Any.fromFunction2(value))
+    inline def setSetKeyEvent(value: (KeyEvent, String) => Unit): Self = StObject.set(x, "setKeyEvent", js.Any.fromFunction2(value))
   }
 }

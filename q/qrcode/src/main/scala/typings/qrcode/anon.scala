@@ -23,26 +23,20 @@ object anon {
   }
   object Dark {
     
-    @scala.inline
-    def apply(): Dark = {
+    inline def apply(): Dark = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dark]
     }
     
-    @scala.inline
-    implicit class DarkMutableBuilder[Self <: Dark] (val x: Self) extends AnyVal {
+    extension [Self <: Dark](x: Self) {
       
-      @scala.inline
-      def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+      inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+      inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
       
-      @scala.inline
-      def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+      inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     }
   }
   
@@ -62,26 +56,20 @@ object anon {
   }
   object DeflateLevel {
     
-    @scala.inline
-    def apply(): DeflateLevel = {
+    inline def apply(): DeflateLevel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeflateLevel]
     }
     
-    @scala.inline
-    implicit class DeflateLevelMutableBuilder[Self <: DeflateLevel] (val x: Self) extends AnyVal {
+    extension [Self <: DeflateLevel](x: Self) {
       
-      @scala.inline
-      def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
+      inline def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
+      inline def setDeflateLevelUndefined: Self = StObject.set(x, "deflateLevel", js.undefined)
       
-      @scala.inline
-      def setDeflateStrategy(value: Double): Self = StObject.set(x, "deflateStrategy", value.asInstanceOf[js.Any])
+      inline def setDeflateStrategy(value: Double): Self = StObject.set(x, "deflateStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeflateStrategyUndefined: Self = StObject.set(x, "deflateStrategy", js.undefined)
+      inline def setDeflateStrategyUndefined: Self = StObject.set(x, "deflateStrategy", js.undefined)
     }
   }
   
@@ -95,20 +83,16 @@ object anon {
   }
   object Quality {
     
-    @scala.inline
-    def apply(): Quality = {
+    inline def apply(): Quality = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Quality]
     }
     
-    @scala.inline
-    implicit class QualityMutableBuilder[Self <: Quality] (val x: Self) extends AnyVal {
+    extension [Self <: Quality](x: Self) {
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
 }

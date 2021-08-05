@@ -11,19 +11,15 @@ trait CloudPubsubTopic extends StObject {
 }
 object CloudPubsubTopic {
   
-  @scala.inline
-  def apply(): CloudPubsubTopic = {
+  inline def apply(): CloudPubsubTopic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudPubsubTopic]
   }
   
-  @scala.inline
-  implicit class CloudPubsubTopicMutableBuilder[Self <: CloudPubsubTopic] (val x: Self) extends AnyVal {
+  extension [Self <: CloudPubsubTopic](x: Self) {
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

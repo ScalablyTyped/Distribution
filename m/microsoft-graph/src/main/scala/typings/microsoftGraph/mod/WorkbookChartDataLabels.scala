@@ -40,94 +40,65 @@ trait WorkbookChartDataLabels
 }
 object WorkbookChartDataLabels {
   
-  @scala.inline
-  def apply(): WorkbookChartDataLabels = {
+  inline def apply(): WorkbookChartDataLabels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookChartDataLabels]
   }
   
-  @scala.inline
-  implicit class WorkbookChartDataLabelsMutableBuilder[Self <: WorkbookChartDataLabels] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookChartDataLabels](x: Self) {
     
-    @scala.inline
-    def setFormat(value: NullableOption[WorkbookChartDataLabelFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: NullableOption[WorkbookChartDataLabelFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatNull: Self = StObject.set(x, "format", null)
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setPosition(value: NullableOption[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: NullableOption[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: NullableOption[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: NullableOption[String]): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorNull: Self = StObject.set(x, "separator", null)
+    inline def setSeparatorNull: Self = StObject.set(x, "separator", null)
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setShowBubbleSize(value: NullableOption[Boolean]): Self = StObject.set(x, "showBubbleSize", value.asInstanceOf[js.Any])
+    inline def setShowBubbleSize(value: NullableOption[Boolean]): Self = StObject.set(x, "showBubbleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBubbleSizeNull: Self = StObject.set(x, "showBubbleSize", null)
+    inline def setShowBubbleSizeNull: Self = StObject.set(x, "showBubbleSize", null)
     
-    @scala.inline
-    def setShowBubbleSizeUndefined: Self = StObject.set(x, "showBubbleSize", js.undefined)
+    inline def setShowBubbleSizeUndefined: Self = StObject.set(x, "showBubbleSize", js.undefined)
     
-    @scala.inline
-    def setShowCategoryName(value: NullableOption[Boolean]): Self = StObject.set(x, "showCategoryName", value.asInstanceOf[js.Any])
+    inline def setShowCategoryName(value: NullableOption[Boolean]): Self = StObject.set(x, "showCategoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCategoryNameNull: Self = StObject.set(x, "showCategoryName", null)
+    inline def setShowCategoryNameNull: Self = StObject.set(x, "showCategoryName", null)
     
-    @scala.inline
-    def setShowCategoryNameUndefined: Self = StObject.set(x, "showCategoryName", js.undefined)
+    inline def setShowCategoryNameUndefined: Self = StObject.set(x, "showCategoryName", js.undefined)
     
-    @scala.inline
-    def setShowLegendKey(value: NullableOption[Boolean]): Self = StObject.set(x, "showLegendKey", value.asInstanceOf[js.Any])
+    inline def setShowLegendKey(value: NullableOption[Boolean]): Self = StObject.set(x, "showLegendKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLegendKeyNull: Self = StObject.set(x, "showLegendKey", null)
+    inline def setShowLegendKeyNull: Self = StObject.set(x, "showLegendKey", null)
     
-    @scala.inline
-    def setShowLegendKeyUndefined: Self = StObject.set(x, "showLegendKey", js.undefined)
+    inline def setShowLegendKeyUndefined: Self = StObject.set(x, "showLegendKey", js.undefined)
     
-    @scala.inline
-    def setShowPercentage(value: NullableOption[Boolean]): Self = StObject.set(x, "showPercentage", value.asInstanceOf[js.Any])
+    inline def setShowPercentage(value: NullableOption[Boolean]): Self = StObject.set(x, "showPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPercentageNull: Self = StObject.set(x, "showPercentage", null)
+    inline def setShowPercentageNull: Self = StObject.set(x, "showPercentage", null)
     
-    @scala.inline
-    def setShowPercentageUndefined: Self = StObject.set(x, "showPercentage", js.undefined)
+    inline def setShowPercentageUndefined: Self = StObject.set(x, "showPercentage", js.undefined)
     
-    @scala.inline
-    def setShowSeriesName(value: NullableOption[Boolean]): Self = StObject.set(x, "showSeriesName", value.asInstanceOf[js.Any])
+    inline def setShowSeriesName(value: NullableOption[Boolean]): Self = StObject.set(x, "showSeriesName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSeriesNameNull: Self = StObject.set(x, "showSeriesName", null)
+    inline def setShowSeriesNameNull: Self = StObject.set(x, "showSeriesName", null)
     
-    @scala.inline
-    def setShowSeriesNameUndefined: Self = StObject.set(x, "showSeriesName", js.undefined)
+    inline def setShowSeriesNameUndefined: Self = StObject.set(x, "showSeriesName", js.undefined)
     
-    @scala.inline
-    def setShowValue(value: NullableOption[Boolean]): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: NullableOption[Boolean]): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValueNull: Self = StObject.set(x, "showValue", null)
+    inline def setShowValueNull: Self = StObject.set(x, "showValue", null)
     
-    @scala.inline
-    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
+    inline def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
   }
 }

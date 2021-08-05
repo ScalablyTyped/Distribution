@@ -12,19 +12,15 @@ trait RedshiftDatabase extends StObject {
 }
 object RedshiftDatabase {
   
-  @scala.inline
-  def apply(ClusterIdentifier: RedshiftClusterIdentifier, DatabaseName: RedshiftDatabaseName): RedshiftDatabase = {
+  inline def apply(ClusterIdentifier: RedshiftClusterIdentifier, DatabaseName: RedshiftDatabaseName): RedshiftDatabase = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftDatabase]
   }
   
-  @scala.inline
-  implicit class RedshiftDatabaseMutableBuilder[Self <: RedshiftDatabase] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftDatabase](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: RedshiftClusterIdentifier): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: RedshiftClusterIdentifier): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseName(value: RedshiftDatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: RedshiftDatabaseName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
   }
 }

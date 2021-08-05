@@ -20,16 +20,13 @@ trait ErrorEvent
 }
 object ErrorEvent {
   
-  @scala.inline
-  def apply(Reason: js.Any, Source: XInterface): ErrorEvent = {
+  inline def apply(Reason: js.Any, Source: XInterface): ErrorEvent = {
     val __obj = js.Dynamic.literal(Reason = Reason.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEvent]
   }
   
-  @scala.inline
-  implicit class ErrorEventMutableBuilder[Self <: ErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorEvent](x: Self) {
     
-    @scala.inline
-    def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

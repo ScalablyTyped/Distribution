@@ -13,19 +13,15 @@ trait GetFindingResponse extends StObject {
 }
 object GetFindingResponse {
   
-  @scala.inline
-  def apply(): GetFindingResponse = {
+  inline def apply(): GetFindingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFindingResponse]
   }
   
-  @scala.inline
-  implicit class GetFindingResponseMutableBuilder[Self <: GetFindingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingResponse](x: Self) {
     
-    @scala.inline
-    def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
+    inline def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
+    inline def setFindingUndefined: Self = StObject.set(x, "finding", js.undefined)
   }
 }

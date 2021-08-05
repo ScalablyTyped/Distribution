@@ -20,34 +20,25 @@ trait GoogleAnalyticsAdminV1alphaUserLink extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaUserLink {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaUserLink = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaUserLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaUserLink]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaUserLinkMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaUserLink] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaUserLink](x: Self) {
     
-    @scala.inline
-    def setDirectRoles(value: js.Array[String]): Self = StObject.set(x, "directRoles", value.asInstanceOf[js.Any])
+    inline def setDirectRoles(value: js.Array[String]): Self = StObject.set(x, "directRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectRolesUndefined: Self = StObject.set(x, "directRoles", js.undefined)
+    inline def setDirectRolesUndefined: Self = StObject.set(x, "directRoles", js.undefined)
     
-    @scala.inline
-    def setDirectRolesVarargs(value: String*): Self = StObject.set(x, "directRoles", js.Array(value :_*))
+    inline def setDirectRolesVarargs(value: String*): Self = StObject.set(x, "directRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

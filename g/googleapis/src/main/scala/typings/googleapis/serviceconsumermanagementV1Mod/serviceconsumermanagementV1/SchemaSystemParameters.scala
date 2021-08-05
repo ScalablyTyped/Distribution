@@ -31,22 +31,17 @@ trait SchemaSystemParameters extends StObject {
 }
 object SchemaSystemParameters {
   
-  @scala.inline
-  def apply(): SchemaSystemParameters = {
+  inline def apply(): SchemaSystemParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSystemParameters]
   }
   
-  @scala.inline
-  implicit class SchemaSystemParametersMutableBuilder[Self <: SchemaSystemParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSystemParameters](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[SchemaSystemParameterRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SchemaSystemParameterRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SchemaSystemParameterRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaSystemParameterRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

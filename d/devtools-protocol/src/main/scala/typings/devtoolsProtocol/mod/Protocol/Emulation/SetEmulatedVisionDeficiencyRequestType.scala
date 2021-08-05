@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetEmulatedVisionDeficiencyRequestType extends StObject
 object SetEmulatedVisionDeficiencyRequestType {
   
-  @scala.inline
-  def Achromatopsia: achromatopsia = "achromatopsia".asInstanceOf[achromatopsia]
+  inline def Achromatopsia: achromatopsia = "achromatopsia".asInstanceOf[achromatopsia]
   
-  @scala.inline
-  def BlurredVision: blurredVision = "blurredVision".asInstanceOf[blurredVision]
+  inline def BlurredVision: blurredVision = "blurredVision".asInstanceOf[blurredVision]
   
-  @scala.inline
-  def Deuteranopia: deuteranopia = "deuteranopia".asInstanceOf[deuteranopia]
+  inline def Deuteranopia: deuteranopia = "deuteranopia".asInstanceOf[deuteranopia]
   
-  @scala.inline
-  def None: none_ = "none".asInstanceOf[none_]
+  inline def None: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def Protanopia: protanopia = "protanopia".asInstanceOf[protanopia]
+  inline def Protanopia: protanopia = "protanopia".asInstanceOf[protanopia]
   
-  @scala.inline
-  def Tritanopia: tritanopia = "tritanopia".asInstanceOf[tritanopia]
+  inline def Tritanopia: tritanopia = "tritanopia".asInstanceOf[tritanopia]
 }

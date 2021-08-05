@@ -18,8 +18,7 @@ object avgPool3dBackpropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def avgPool3dBackprop[T /* <: Tensor4D | Tensor5D */](
+  inline def avgPool3dBackprop[T /* <: Tensor4D | Tensor5D */](
     dy: T | TensorLike,
     input: T | TensorLike,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,

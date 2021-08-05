@@ -21,7 +21,7 @@ object mod {
     
     def addPeerListener(eventName: String, listener: Listener): Unit = js.native
     
-    var data: js.Any = js.native
+    /* private */ var data: js.Any = js.native
     
     def emit(
       eventName: String,
@@ -30,9 +30,9 @@ object mod {
     
     def eventNames(): js.Array[String] = js.native
     
-    var events: js.Any = js.native
+    /* private */ var events: js.Any = js.native
     
-    var handleEvent: js.Any = js.native
+    /* private */ var handleEvent: js.Any = js.native
     
     def hasTransport: Boolean = js.native
     
@@ -50,16 +50,16 @@ object mod {
     
     def once(eventName: String, listener: Listener): Unit = js.native
     
-    var onceListener: js.Any = js.native
+    /* private */ var onceListener: js.Any = js.native
     
     def removeAllListeners(): Unit = js.native
     def removeAllListeners(eventName: String): Unit = js.native
     
     def removeListener(eventName: String, listener: Listener): Unit = js.native
     
-    var sender: js.Any = js.native
+    /* private */ var sender: js.Any = js.native
     
-    val transport: js.Any = js.native
+    /* private */ val transport: js.Any = js.native
   }
   
   trait ChannelArgs extends StObject {
@@ -70,26 +70,20 @@ object mod {
   }
   object ChannelArgs {
     
-    @scala.inline
-    def apply(): ChannelArgs = {
+    inline def apply(): ChannelArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChannelArgs]
     }
     
-    @scala.inline
-    implicit class ChannelArgsMutableBuilder[Self <: ChannelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelArgs](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setTransport(value: ChannelTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: ChannelTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   
@@ -103,27 +97,21 @@ object mod {
   }
   object ChannelEvent {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any], from: String, `type`: String): ChannelEvent = {
+    inline def apply(args: js.Array[js.Any], from: String, `type`: String): ChannelEvent = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelEvent]
     }
     
-    @scala.inline
-    implicit class ChannelEventMutableBuilder[Self <: ChannelEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelEvent](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

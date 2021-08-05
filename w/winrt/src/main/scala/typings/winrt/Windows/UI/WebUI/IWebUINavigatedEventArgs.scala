@@ -10,16 +10,13 @@ trait IWebUINavigatedEventArgs extends StObject {
 }
 object IWebUINavigatedEventArgs {
   
-  @scala.inline
-  def apply(navigatedOperation: WebUINavigatedOperation): IWebUINavigatedEventArgs = {
+  inline def apply(navigatedOperation: WebUINavigatedOperation): IWebUINavigatedEventArgs = {
     val __obj = js.Dynamic.literal(navigatedOperation = navigatedOperation.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebUINavigatedEventArgs]
   }
   
-  @scala.inline
-  implicit class IWebUINavigatedEventArgsMutableBuilder[Self <: IWebUINavigatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IWebUINavigatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setNavigatedOperation(value: WebUINavigatedOperation): Self = StObject.set(x, "navigatedOperation", value.asInstanceOf[js.Any])
+    inline def setNavigatedOperation(value: WebUINavigatedOperation): Self = StObject.set(x, "navigatedOperation", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait S3ObjectLockLegalHold extends StObject {
 }
 object S3ObjectLockLegalHold {
   
-  @scala.inline
-  def apply(Status: S3ObjectLockLegalHoldStatus): S3ObjectLockLegalHold = {
+  inline def apply(Status: S3ObjectLockLegalHoldStatus): S3ObjectLockLegalHold = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ObjectLockLegalHold]
   }
   
-  @scala.inline
-  implicit class S3ObjectLockLegalHoldMutableBuilder[Self <: S3ObjectLockLegalHold] (val x: Self) extends AnyVal {
+  extension [Self <: S3ObjectLockLegalHold](x: Self) {
     
-    @scala.inline
-    def setStatus(value: S3ObjectLockLegalHoldStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: S3ObjectLockLegalHoldStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

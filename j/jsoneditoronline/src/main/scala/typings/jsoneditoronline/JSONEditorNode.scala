@@ -74,8 +74,7 @@ trait JSONEditorNode extends StObject {
 }
 object JSONEditorNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: JSONEditorNode => Unit,
     blur: () => Unit,
     changeType: String => Unit,
@@ -113,106 +112,72 @@ object JSONEditorNode {
     __obj.asInstanceOf[JSONEditorNode]
   }
   
-  @scala.inline
-  implicit class JSONEditorNodeMutableBuilder[Self <: JSONEditorNode] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorNode](x: Self) {
     
-    @scala.inline
-    def setAppendChild(value: JSONEditorNode => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: JSONEditorNode => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+    inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeType(value: String => Unit): Self = StObject.set(x, "changeType", js.Any.fromFunction1(value))
+    inline def setChangeType(value: String => Unit): Self = StObject.set(x, "changeType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearDom(value: () => Unit): Self = StObject.set(x, "clearDom", js.Any.fromFunction0(value))
+    inline def setClearDom(value: () => Unit): Self = StObject.set(x, "clearDom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCollapse(value: Boolean => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
+    inline def setCollapse(value: Boolean => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsNode(value: JSONEditorNode => Boolean): Self = StObject.set(x, "containsNode", js.Any.fromFunction1(value))
+    inline def setContainsNode(value: JSONEditorNode => Boolean): Self = StObject.set(x, "containsNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpand(value: Boolean => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: Boolean => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAppend(value: () => HTMLElement): Self = StObject.set(x, "getAppend", js.Any.fromFunction0(value))
+    inline def setGetAppend(value: () => HTMLElement): Self = StObject.set(x, "getAppend", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDom(value: () => HTMLElement): Self = StObject.set(x, "getDom", js.Any.fromFunction0(value))
+    inline def setGetDom(value: () => HTMLElement): Self = StObject.set(x, "getDom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+    inline def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLevel(value: () => Double): Self = StObject.set(x, "getLevel", js.Any.fromFunction0(value))
+    inline def setGetLevel(value: () => Double): Self = StObject.set(x, "getLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParent(value: () => JSONEditorNode): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => JSONEditorNode): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideChilds(value: () => Unit): Self = StObject.set(x, "hideChilds", js.Any.fromFunction0(value))
+    inline def setHideChilds(value: () => Unit): Self = StObject.set(x, "hideChilds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertBefore(value: (JSONEditorNode, JSONEditorNode) => Unit): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+    inline def setInsertBefore(value: (JSONEditorNode, JSONEditorNode) => Unit): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveBefore(value: (JSONEditorNode, JSONEditorNode) => Unit): Self = StObject.set(x, "moveBefore", js.Any.fromFunction2(value))
+    inline def setMoveBefore(value: (JSONEditorNode, JSONEditorNode) => Unit): Self = StObject.set(x, "moveBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMoveTo(value: (JSONEditorNode, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
+    inline def setMoveTo(value: (JSONEditorNode, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnEvent(value: Event => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
+    inline def setOnEvent(value: Event => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveChild(value: JSONEditorNode => JSONEditorNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: JSONEditorNode => JSONEditorNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollTo(value: () => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction0(value))
+    inline def setScrollTo(value: () => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSearch(value: String => js.Array[JSONEditorNode]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: String => js.Array[JSONEditorNode]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetField(value: (String, Boolean) => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction2(value))
+    inline def setSetField(value: (String, Boolean) => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetHighlight(value: Boolean => Unit): Self = StObject.set(x, "setHighlight", js.Any.fromFunction1(value))
+    inline def setSetHighlight(value: Boolean => Unit): Self = StObject.set(x, "setHighlight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParent(value: JSONEditorNode => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+    inline def setSetParent(value: JSONEditorNode => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowChilds(value: () => Unit): Self = StObject.set(x, "showChilds", js.Any.fromFunction0(value))
+    inline def setShowChilds(value: () => Unit): Self = StObject.set(x, "showChilds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTypes(value: js.Array[JSONEditorNodeType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[JSONEditorNodeType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: JSONEditorNodeType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: JSONEditorNodeType*): Self = StObject.set(x, "types", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateDom(value: () => Unit): Self = StObject.set(x, "updateDom", js.Any.fromFunction0(value))
+    inline def setUpdateDom(value: () => Unit): Self = StObject.set(x, "updateDom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateField(value: String => Unit): Self = StObject.set(x, "updateField", js.Any.fromFunction1(value))
+    inline def setUpdateField(value: String => Unit): Self = StObject.set(x, "updateField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateValue(value: js.Any => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
+    inline def setUpdateValue(value: js.Any => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
   }
 }

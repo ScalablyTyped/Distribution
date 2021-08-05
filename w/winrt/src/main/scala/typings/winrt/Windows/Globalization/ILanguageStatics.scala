@@ -12,19 +12,15 @@ trait ILanguageStatics extends StObject {
 }
 object ILanguageStatics {
   
-  @scala.inline
-  def apply(currentInputMethodLanguageTag: String, isWellFormed: String => Boolean): ILanguageStatics = {
+  inline def apply(currentInputMethodLanguageTag: String, isWellFormed: String => Boolean): ILanguageStatics = {
     val __obj = js.Dynamic.literal(currentInputMethodLanguageTag = currentInputMethodLanguageTag.asInstanceOf[js.Any], isWellFormed = js.Any.fromFunction1(isWellFormed))
     __obj.asInstanceOf[ILanguageStatics]
   }
   
-  @scala.inline
-  implicit class ILanguageStaticsMutableBuilder[Self <: ILanguageStatics] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageStatics](x: Self) {
     
-    @scala.inline
-    def setCurrentInputMethodLanguageTag(value: String): Self = StObject.set(x, "currentInputMethodLanguageTag", value.asInstanceOf[js.Any])
+    inline def setCurrentInputMethodLanguageTag(value: String): Self = StObject.set(x, "currentInputMethodLanguageTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWellFormed(value: String => Boolean): Self = StObject.set(x, "isWellFormed", js.Any.fromFunction1(value))
+    inline def setIsWellFormed(value: String => Boolean): Self = StObject.set(x, "isWellFormed", js.Any.fromFunction1(value))
   }
 }

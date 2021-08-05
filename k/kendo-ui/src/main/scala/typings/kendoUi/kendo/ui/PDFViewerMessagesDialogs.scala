@@ -16,37 +16,27 @@ trait PDFViewerMessagesDialogs extends StObject {
 }
 object PDFViewerMessagesDialogs {
   
-  @scala.inline
-  def apply(): PDFViewerMessagesDialogs = {
+  inline def apply(): PDFViewerMessagesDialogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PDFViewerMessagesDialogs]
   }
   
-  @scala.inline
-  implicit class PDFViewerMessagesDialogsMutableBuilder[Self <: PDFViewerMessagesDialogs] (val x: Self) extends AnyVal {
+  extension [Self <: PDFViewerMessagesDialogs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setExportAsDialog(value: PDFViewerMessagesDialogsExportAsDialog): Self = StObject.set(x, "exportAsDialog", value.asInstanceOf[js.Any])
+    inline def setExportAsDialog(value: PDFViewerMessagesDialogsExportAsDialog): Self = StObject.set(x, "exportAsDialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportAsDialogUndefined: Self = StObject.set(x, "exportAsDialog", js.undefined)
+    inline def setExportAsDialogUndefined: Self = StObject.set(x, "exportAsDialog", js.undefined)
     
-    @scala.inline
-    def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
+    inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
+    inline def setOkTextUndefined: Self = StObject.set(x, "okText", js.undefined)
     
-    @scala.inline
-    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait Attrs extends StObject {
 }
 object Attrs {
   
-  @scala.inline
-  def apply(attrs: Items, category: Ref, customExecutor: Ref, inputs: Items, tfOpName: Type): Attrs = {
+  inline def apply(attrs: Items, category: Ref, customExecutor: Ref, inputs: Items, tfOpName: Type): Attrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], customExecutor = customExecutor.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], tfOpName = tfOpName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attrs]
   }
   
-  @scala.inline
-  implicit class AttrsMutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
+  extension [Self <: Attrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: Items): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: Items): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: Ref): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Ref): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomExecutor(value: Ref): Self = StObject.set(x, "customExecutor", value.asInstanceOf[js.Any])
+    inline def setCustomExecutor(value: Ref): Self = StObject.set(x, "customExecutor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: Items): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: Items): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfOpName(value: Type): Self = StObject.set(x, "tfOpName", value.asInstanceOf[js.Any])
+    inline def setTfOpName(value: Type): Self = StObject.set(x, "tfOpName", value.asInstanceOf[js.Any])
   }
 }

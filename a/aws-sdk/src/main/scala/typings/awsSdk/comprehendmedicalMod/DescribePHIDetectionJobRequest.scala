@@ -13,16 +13,13 @@ trait DescribePHIDetectionJobRequest extends StObject {
 }
 object DescribePHIDetectionJobRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): DescribePHIDetectionJobRequest = {
+  inline def apply(JobId: JobId): DescribePHIDetectionJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePHIDetectionJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribePHIDetectionJobRequestMutableBuilder[Self <: DescribePHIDetectionJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePHIDetectionJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

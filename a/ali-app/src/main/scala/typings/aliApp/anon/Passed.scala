@@ -16,25 +16,19 @@ trait Passed extends StObject {
 }
 object Passed {
   
-  @scala.inline
-  def apply(passed: String, token: String): Passed = {
+  inline def apply(passed: String, token: String): Passed = {
     val __obj = js.Dynamic.literal(passed = passed.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Passed]
   }
   
-  @scala.inline
-  implicit class PassedMutableBuilder[Self <: Passed] (val x: Self) extends AnyVal {
+  extension [Self <: Passed](x: Self) {
     
-    @scala.inline
-    def setPassed(value: String): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+    inline def setPassed(value: String): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

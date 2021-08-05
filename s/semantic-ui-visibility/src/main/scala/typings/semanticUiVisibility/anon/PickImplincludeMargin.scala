@@ -11,16 +11,13 @@ trait PickImplincludeMargin extends StObject {
 }
 object PickImplincludeMargin {
   
-  @scala.inline
-  def apply(includeMargin: Boolean): PickImplincludeMargin = {
+  inline def apply(includeMargin: Boolean): PickImplincludeMargin = {
     val __obj = js.Dynamic.literal(includeMargin = includeMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplincludeMargin]
   }
   
-  @scala.inline
-  implicit class PickImplincludeMarginMutableBuilder[Self <: PickImplincludeMargin] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplincludeMargin](x: Self) {
     
-    @scala.inline
-    def setIncludeMargin(value: Boolean): Self = StObject.set(x, "includeMargin", value.asInstanceOf[js.Any])
+    inline def setIncludeMargin(value: Boolean): Self = StObject.set(x, "includeMargin", value.asInstanceOf[js.Any])
   }
 }

@@ -16,8 +16,7 @@ object validationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validation(yargs: YargsInstance, usage: UsageInstance, y18n: Y18N): ValidationInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("validation")(yargs.asInstanceOf[js.Any], usage.asInstanceOf[js.Any], y18n.asInstanceOf[js.Any])).asInstanceOf[ValidationInstance]
+  inline def validation(yargs: YargsInstance, usage: UsageInstance, y18n: Y18N): ValidationInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("validation")(yargs.asInstanceOf[js.Any], usage.asInstanceOf[js.Any], y18n.asInstanceOf[js.Any])).asInstanceOf[ValidationInstance]
   
   trait CustomCheck extends StObject {
     
@@ -27,20 +26,16 @@ object validationMod {
   }
   object CustomCheck {
     
-    @scala.inline
-    def apply(func: (Arguments, StringDictionary[js.Array[String]]) => js.Any, global: Boolean): CustomCheck = {
+    inline def apply(func: (Arguments, StringDictionary[js.Array[String]]) => js.Any, global: Boolean): CustomCheck = {
       val __obj = js.Dynamic.literal(func = js.Any.fromFunction2(func), global = global.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomCheck]
     }
     
-    @scala.inline
-    implicit class CustomCheckMutableBuilder[Self <: CustomCheck] (val x: Self) extends AnyVal {
+    extension [Self <: CustomCheck](x: Self) {
       
-      @scala.inline
-      def setFunc(value: (Arguments, StringDictionary[js.Array[String]]) => js.Any): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
+      inline def setFunc(value: (Arguments, StringDictionary[js.Array[String]]) => js.Any): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }
   }
   

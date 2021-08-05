@@ -23,25 +23,19 @@ trait DocumentReferenceContextRelated
 }
 object DocumentReferenceContextRelated {
   
-  @scala.inline
-  def apply(): DocumentReferenceContextRelated = {
+  inline def apply(): DocumentReferenceContextRelated = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentReferenceContextRelated]
   }
   
-  @scala.inline
-  implicit class DocumentReferenceContextRelatedMutableBuilder[Self <: DocumentReferenceContextRelated] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentReferenceContextRelated](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Reference): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

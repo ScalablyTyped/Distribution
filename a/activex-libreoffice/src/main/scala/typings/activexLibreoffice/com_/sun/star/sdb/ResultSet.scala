@@ -30,8 +30,7 @@ trait ResultSet
      with XColumnsSupplier
 object ResultSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: js.Any,
     CanUpdateInsertedRows: Boolean,
     Columns: XNameAccess,

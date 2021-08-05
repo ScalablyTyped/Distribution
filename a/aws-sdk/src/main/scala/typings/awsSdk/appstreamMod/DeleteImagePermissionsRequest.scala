@@ -18,19 +18,15 @@ trait DeleteImagePermissionsRequest extends StObject {
 }
 object DeleteImagePermissionsRequest {
   
-  @scala.inline
-  def apply(Name: Name, SharedAccountId: AwsAccountId): DeleteImagePermissionsRequest = {
+  inline def apply(Name: Name, SharedAccountId: AwsAccountId): DeleteImagePermissionsRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SharedAccountId = SharedAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteImagePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteImagePermissionsRequestMutableBuilder[Self <: DeleteImagePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteImagePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccountId(value: AwsAccountId): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
+    inline def setSharedAccountId(value: AwsAccountId): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
   }
 }

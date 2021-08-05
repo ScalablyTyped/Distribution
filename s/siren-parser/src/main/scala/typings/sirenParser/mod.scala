@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(entity: String): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(entity.asInstanceOf[js.Any]).asInstanceOf[Entity]
-  @scala.inline
-  def default(entity: js.Object): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(entity.asInstanceOf[js.Any]).asInstanceOf[Entity]
+  inline def default(entity: String): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(entity.asInstanceOf[js.Any]).asInstanceOf[Entity]
+  inline def default(entity: js.Object): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(entity.asInstanceOf[js.Any]).asInstanceOf[Entity]
   
   @JSImport("siren-parser", "FieldType")
   @js.native
@@ -76,10 +74,8 @@ object mod {
           @js.native
           val ^ : js.Any = js.native
           
-          @scala.inline
-          def Parse(siren: String): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(siren.asInstanceOf[js.Any]).asInstanceOf[Entity]
-          @scala.inline
-          def Parse(siren: js.Object): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(siren.asInstanceOf[js.Any]).asInstanceOf[Entity]
+          inline def Parse(siren: String): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(siren.asInstanceOf[js.Any]).asInstanceOf[Entity]
+          inline def Parse(siren: js.Object): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(siren.asInstanceOf[js.Any]).asInstanceOf[Entity]
         }
       }
     }

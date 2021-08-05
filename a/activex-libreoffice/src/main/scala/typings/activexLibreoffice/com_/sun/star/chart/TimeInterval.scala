@@ -22,19 +22,15 @@ trait TimeInterval extends StObject {
 }
 object TimeInterval {
   
-  @scala.inline
-  def apply(Number: Double, TimeUnit: Double): TimeInterval = {
+  inline def apply(Number: Double, TimeUnit: Double): TimeInterval = {
     val __obj = js.Dynamic.literal(Number = Number.asInstanceOf[js.Any], TimeUnit = TimeUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeInterval]
   }
   
-  @scala.inline
-  implicit class TimeIntervalMutableBuilder[Self <: TimeInterval] (val x: Self) extends AnyVal {
+  extension [Self <: TimeInterval](x: Self) {
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnit(value: Double): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: Double): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
   }
 }

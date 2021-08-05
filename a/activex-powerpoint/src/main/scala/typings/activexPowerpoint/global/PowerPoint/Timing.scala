@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Timing")
 @js.native
-class Timing protected ()
+/* private */ class Timing ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Timing {
   
@@ -37,7 +37,7 @@ class Timing protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Timing_typekey")
   var PowerPointDotTiming_typekey: typings.activexPowerpoint.PowerPoint.Timing = js.native
   

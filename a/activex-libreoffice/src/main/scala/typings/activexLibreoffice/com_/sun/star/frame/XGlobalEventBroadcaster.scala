@@ -28,8 +28,7 @@ trait XGlobalEventBroadcaster
      with XDocumentEventListener
 object XGlobalEventBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     Events: XNameReplace,
     acquire: () => Unit,

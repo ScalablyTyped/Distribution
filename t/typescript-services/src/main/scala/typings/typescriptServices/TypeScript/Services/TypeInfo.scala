@@ -21,8 +21,7 @@ trait TypeInfo extends StObject {
 }
 object TypeInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     docComment: String,
     fullSymbolName: String,
     kind: String,
@@ -34,25 +33,18 @@ object TypeInfo {
     __obj.asInstanceOf[TypeInfo]
   }
   
-  @scala.inline
-  implicit class TypeInfoMutableBuilder[Self <: TypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TypeInfo](x: Self) {
     
-    @scala.inline
-    def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
+    inline def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullSymbolName(value: String): Self = StObject.set(x, "fullSymbolName", value.asInstanceOf[js.Any])
+    inline def setFullSymbolName(value: String): Self = StObject.set(x, "fullSymbolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
+    inline def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberName(value: MemberName): Self = StObject.set(x, "memberName", value.asInstanceOf[js.Any])
+    inline def setMemberName(value: MemberName): Self = StObject.set(x, "memberName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
+    inline def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
   }
 }

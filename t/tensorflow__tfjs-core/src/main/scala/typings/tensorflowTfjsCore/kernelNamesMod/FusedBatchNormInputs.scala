@@ -19,43 +19,31 @@ trait FusedBatchNormInputs extends StObject {
 }
 object FusedBatchNormInputs {
   
-  @scala.inline
-  def apply(): FusedBatchNormInputs = {
+  inline def apply(): FusedBatchNormInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FusedBatchNormInputs]
   }
   
-  @scala.inline
-  implicit class FusedBatchNormInputsMutableBuilder[Self <: FusedBatchNormInputs] (val x: Self) extends AnyVal {
+  extension [Self <: FusedBatchNormInputs](x: Self) {
     
-    @scala.inline
-    def setMean(value: js.Any): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: js.Any): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
+    inline def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
-    @scala.inline
-    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setScale(value: js.Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: js.Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setVariance(value: js.Any): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: js.Any): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

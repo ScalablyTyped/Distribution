@@ -27,13 +27,13 @@ object valueAccessorMod {
     
     def _handleBlurEvent(el: js.Any): Unit = js.native
     
-    var el: ElementRef[js.Any] = js.native
+    /* protected */ var el: ElementRef[js.Any] = js.native
     
     def handleChangeEvent(el: HTMLElement, value: js.Any): Unit = js.native
     
-    var injector: Injector = js.native
+    /* protected */ var injector: Injector = js.native
     
-    var lastValue: js.Any = js.native
+    /* protected */ var lastValue: js.Any = js.native
     
     /**
       * A callback method that is invoked immediately after
@@ -51,9 +51,9 @@ object valueAccessorMod {
     /* CompleteClass */
     override def ngOnDestroy(): Unit = js.native
     
-    var onChange: js.Any = js.native
+    /* private */ var onChange: js.Any = js.native
     
-    var onTouched: js.Any = js.native
+    /* private */ var onTouched: js.Any = js.native
     
     /**
       * @description
@@ -130,7 +130,7 @@ object valueAccessorMod {
     @JSName("setDisabledState")
     def setDisabledState_MValueAccessor(isDisabled: Boolean): Unit = js.native
     
-    var statusChanges: js.Any = js.native
+    /* private */ var statusChanges: js.Any = js.native
     
     /**
       * @description
@@ -156,6 +156,5 @@ object valueAccessorMod {
     override def writeValue(obj: js.Any): Unit = js.native
   }
   
-  @scala.inline
-  def setIonicClasses(element: ElementRef[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIonicClasses")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setIonicClasses(element: ElementRef[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIonicClasses")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

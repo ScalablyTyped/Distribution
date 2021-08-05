@@ -13,19 +13,15 @@ trait DisplayCategoryOptions
 }
 object DisplayCategoryOptions {
   
-  @scala.inline
-  def apply(): DisplayCategoryOptions = {
+  inline def apply(): DisplayCategoryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisplayCategoryOptions]
   }
   
-  @scala.inline
-  implicit class DisplayCategoryOptionsMutableBuilder[Self <: DisplayCategoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayCategoryOptions](x: Self) {
     
-    @scala.inline
-    def setLocalize(value: Boolean): Self = StObject.set(x, "localize", value.asInstanceOf[js.Any])
+    inline def setLocalize(value: Boolean): Self = StObject.set(x, "localize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizeUndefined: Self = StObject.set(x, "localize", js.undefined)
+    inline def setLocalizeUndefined: Self = StObject.set(x, "localize", js.undefined)
   }
 }

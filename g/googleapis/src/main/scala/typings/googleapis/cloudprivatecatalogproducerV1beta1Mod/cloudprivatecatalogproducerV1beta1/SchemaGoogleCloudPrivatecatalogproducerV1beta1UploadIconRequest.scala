@@ -16,19 +16,15 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest extends St
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest = {
+  inline def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequestMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1UploadIconRequest](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
   }
 }

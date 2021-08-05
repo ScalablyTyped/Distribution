@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(cb: js.Function2[/* error */ Error | Null, /* os */ Os, Unit]): String = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(cb: js.Function2[/* error */ Error | Null, /* os */ Os, Unit]): String = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("getos", JSImport.Namespace)
   @js.native
@@ -37,29 +36,22 @@ object mod {
   }
   object LinuxOs {
     
-    @scala.inline
-    def apply(dist: String, release: String): LinuxOs = {
+    inline def apply(dist: String, release: String): LinuxOs = {
       val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = "linux", release = release.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinuxOs]
     }
     
-    @scala.inline
-    implicit class LinuxOsMutableBuilder[Self <: LinuxOs] (val x: Self) extends AnyVal {
+    extension [Self <: LinuxOs](x: Self) {
       
-      @scala.inline
-      def setCodename(value: String): Self = StObject.set(x, "codename", value.asInstanceOf[js.Any])
+      inline def setCodename(value: String): Self = StObject.set(x, "codename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodenameUndefined: Self = StObject.set(x, "codename", js.undefined)
+      inline def setCodenameUndefined: Self = StObject.set(x, "codename", js.undefined)
       
-      @scala.inline
-      def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
+      inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: linux): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: linux): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,14 +62,12 @@ object mod {
   trait Os extends StObject
   object Os {
     
-    @scala.inline
-    def LinuxOs(dist: String, release: String): typings.getos.mod.LinuxOs = {
+    inline def LinuxOs(dist: String, release: String): typings.getos.mod.LinuxOs = {
       val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = "linux", release = release.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.getos.mod.LinuxOs]
     }
     
-    @scala.inline
-    def OtherOs(os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): typings.getos.mod.OtherOs = {
+    inline def OtherOs(os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): typings.getos.mod.OtherOs = {
       val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.getos.mod.OtherOs]
     }
@@ -91,17 +81,14 @@ object mod {
   }
   object OtherOs {
     
-    @scala.inline
-    def apply(os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): OtherOs = {
+    inline def apply(os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): OtherOs = {
       val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
       __obj.asInstanceOf[OtherOs]
     }
     
-    @scala.inline
-    implicit class OtherOsMutableBuilder[Self <: OtherOs] (val x: Self) extends AnyVal {
+    extension [Self <: OtherOs](x: Self) {
       
-      @scala.inline
-      def setOs(value: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     }
   }
 }

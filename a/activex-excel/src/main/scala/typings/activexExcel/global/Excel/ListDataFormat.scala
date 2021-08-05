@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ListDataFormat")
 @js.native
-class ListDataFormat protected ()
+/* private */ class ListDataFormat ()
   extends StObject
      with typings.activexExcel.Excel.ListDataFormat {
   
@@ -31,7 +31,7 @@ class ListDataFormat protected ()
   /* CompleteClass */
   override val DefaultValue: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.ListDataFormat_typekey")
   var ExcelDotListDataFormat_typekey: typings.activexExcel.Excel.ListDataFormat = js.native
   

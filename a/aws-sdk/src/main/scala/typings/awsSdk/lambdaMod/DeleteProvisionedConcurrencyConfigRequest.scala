@@ -18,19 +18,15 @@ trait DeleteProvisionedConcurrencyConfigRequest extends StObject {
 }
 object DeleteProvisionedConcurrencyConfigRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName, Qualifier: Qualifier): DeleteProvisionedConcurrencyConfigRequest = {
+  inline def apply(FunctionName: FunctionName, Qualifier: Qualifier): DeleteProvisionedConcurrencyConfigRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], Qualifier = Qualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProvisionedConcurrencyConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProvisionedConcurrencyConfigRequestMutableBuilder[Self <: DeleteProvisionedConcurrencyConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProvisionedConcurrencyConfigRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: Qualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
   }
 }

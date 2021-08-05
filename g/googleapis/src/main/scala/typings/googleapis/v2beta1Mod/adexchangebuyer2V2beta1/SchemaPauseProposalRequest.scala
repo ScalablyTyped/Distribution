@@ -18,19 +18,15 @@ trait SchemaPauseProposalRequest extends StObject {
 }
 object SchemaPauseProposalRequest {
   
-  @scala.inline
-  def apply(): SchemaPauseProposalRequest = {
+  inline def apply(): SchemaPauseProposalRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPauseProposalRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPauseProposalRequestMutableBuilder[Self <: SchemaPauseProposalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPauseProposalRequest](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

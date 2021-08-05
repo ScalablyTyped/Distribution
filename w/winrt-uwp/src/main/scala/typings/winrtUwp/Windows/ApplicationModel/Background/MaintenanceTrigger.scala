@@ -15,19 +15,15 @@ trait MaintenanceTrigger extends StObject {
 }
 object MaintenanceTrigger {
   
-  @scala.inline
-  def apply(freshnessTime: Double, oneShot: Boolean): MaintenanceTrigger = {
+  inline def apply(freshnessTime: Double, oneShot: Boolean): MaintenanceTrigger = {
     val __obj = js.Dynamic.literal(freshnessTime = freshnessTime.asInstanceOf[js.Any], oneShot = oneShot.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceTrigger]
   }
   
-  @scala.inline
-  implicit class MaintenanceTriggerMutableBuilder[Self <: MaintenanceTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceTrigger](x: Self) {
     
-    @scala.inline
-    def setFreshnessTime(value: Double): Self = StObject.set(x, "freshnessTime", value.asInstanceOf[js.Any])
+    inline def setFreshnessTime(value: Double): Self = StObject.set(x, "freshnessTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
+    inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
   }
 }

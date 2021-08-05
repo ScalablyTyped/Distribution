@@ -18,19 +18,15 @@ trait Http2Client
 }
 object Http2Client {
   
-  @scala.inline
-  def apply(): Http2Client = {
+  inline def apply(): Http2Client = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Http2Client]
   }
   
-  @scala.inline
-  implicit class Http2ClientMutableBuilder[Self <: Http2Client] (val x: Self) extends AnyVal {
+  extension [Self <: Http2Client](x: Self) {
     
-    @scala.inline
-    def setSplitByDomain(value: Boolean): Self = StObject.set(x, "splitByDomain", value.asInstanceOf[js.Any])
+    inline def setSplitByDomain(value: Boolean): Self = StObject.set(x, "splitByDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitByDomainUndefined: Self = StObject.set(x, "splitByDomain", js.undefined)
+    inline def setSplitByDomainUndefined: Self = StObject.set(x, "splitByDomain", js.undefined)
   }
 }

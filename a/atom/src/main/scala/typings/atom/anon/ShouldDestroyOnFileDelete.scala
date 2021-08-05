@@ -17,25 +17,19 @@ trait ShouldDestroyOnFileDelete extends StObject {
 }
 object ShouldDestroyOnFileDelete {
   
-  @scala.inline
-  def apply(): ShouldDestroyOnFileDelete = {
+  inline def apply(): ShouldDestroyOnFileDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShouldDestroyOnFileDelete]
   }
   
-  @scala.inline
-  implicit class ShouldDestroyOnFileDeleteMutableBuilder[Self <: ShouldDestroyOnFileDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ShouldDestroyOnFileDelete](x: Self) {
     
-    @scala.inline
-    def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
+    inline def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
+    inline def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

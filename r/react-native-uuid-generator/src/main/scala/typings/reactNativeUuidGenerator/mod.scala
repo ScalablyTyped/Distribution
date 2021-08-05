@@ -12,9 +12,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getRandomUUID(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomUUID")().asInstanceOf[js.Promise[String]]
-    @scala.inline
-    def getRandomUUID(callback: js.Function1[/* uuid */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomUUID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getRandomUUID(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomUUID")().asInstanceOf[js.Promise[String]]
+    inline def getRandomUUID(callback: js.Function1[/* uuid */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomUUID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

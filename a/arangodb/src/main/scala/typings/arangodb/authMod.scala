@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object authMod {
   
-  @scala.inline
-  def apply(): Authenticator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Authenticator]
-  @scala.inline
-  def apply(options: AuthOptions): Authenticator = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
+  inline def apply(): Authenticator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Authenticator]
+  inline def apply(options: AuthOptions): Authenticator = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Authenticator]
   
   @JSImport("@arangodb/foxx/auth", JSImport.Namespace)
   @js.native
@@ -26,23 +24,18 @@ object authMod {
   }
   object AuthData {
     
-    @scala.inline
-    def apply(hash: String, method: String, salt: String): AuthData = {
+    inline def apply(hash: String, method: String, salt: String): AuthData = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthData]
     }
     
-    @scala.inline
-    implicit class AuthDataMutableBuilder[Self <: AuthData] (val x: Self) extends AnyVal {
+    extension [Self <: AuthData](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,26 +47,20 @@ object authMod {
   }
   object AuthOptions {
     
-    @scala.inline
-    def apply(): AuthOptions = {
+    inline def apply(): AuthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthOptions]
     }
     
-    @scala.inline
-    implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthOptions](x: Self) {
       
-      @scala.inline
-      def setMethod(value: HashAlgorithm): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HashAlgorithm): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
+      inline def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltLengthUndefined: Self = StObject.set(x, "saltLength", js.undefined)
+      inline def setSaltLengthUndefined: Self = StObject.set(x, "saltLength", js.undefined)
     }
   }
   

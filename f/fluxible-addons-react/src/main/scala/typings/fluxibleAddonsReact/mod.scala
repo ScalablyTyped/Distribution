@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connectToStores(
+  inline def connectToStores(
     Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
@@ -32,8 +31,7 @@ object mod {
     /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
     Component[js.Object, js.Object, js.Object]
   ])]
-  @scala.inline
-  def connectToStores(
+  inline def connectToStores(
     Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
@@ -51,8 +49,7 @@ object mod {
     Component[js.Object, js.Object, js.Object]
   ])]
   
-  @scala.inline
-  def provideContext(
+  inline def provideContext(
     Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
@@ -64,8 +61,7 @@ object mod {
     /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
     Component[js.Object, js.Object, js.Object]
   ])]
-  @scala.inline
-  def provideContext(
+  inline def provideContext(
     Component: TypeofComponent & (Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]

@@ -30,46 +30,33 @@ trait Network extends StObject {
 }
 object Network {
   
-  @scala.inline
-  def apply(): Network = {
+  inline def apply(): Network = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Network]
   }
   
-  @scala.inline
-  implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+  extension [Self <: Network](x: Self) {
     
-    @scala.inline
-    def setForwardedPorts(value: js.Array[String]): Self = StObject.set(x, "forwardedPorts", value.asInstanceOf[js.Any])
+    inline def setForwardedPorts(value: js.Array[String]): Self = StObject.set(x, "forwardedPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedPortsUndefined: Self = StObject.set(x, "forwardedPorts", js.undefined)
+    inline def setForwardedPortsUndefined: Self = StObject.set(x, "forwardedPorts", js.undefined)
     
-    @scala.inline
-    def setForwardedPortsVarargs(value: String*): Self = StObject.set(x, "forwardedPorts", js.Array(value :_*))
+    inline def setForwardedPortsVarargs(value: String*): Self = StObject.set(x, "forwardedPorts", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceTag(value: String): Self = StObject.set(x, "instanceTag", value.asInstanceOf[js.Any])
+    inline def setInstanceTag(value: String): Self = StObject.set(x, "instanceTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTagUndefined: Self = StObject.set(x, "instanceTag", js.undefined)
+    inline def setInstanceTagUndefined: Self = StObject.set(x, "instanceTag", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSessionAffinity(value: Boolean): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
+    inline def setSessionAffinity(value: Boolean): Self = StObject.set(x, "sessionAffinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAffinityUndefined: Self = StObject.set(x, "sessionAffinity", js.undefined)
+    inline def setSessionAffinityUndefined: Self = StObject.set(x, "sessionAffinity", js.undefined)
     
-    @scala.inline
-    def setSubnetworkName(value: String): Self = StObject.set(x, "subnetworkName", value.asInstanceOf[js.Any])
+    inline def setSubnetworkName(value: String): Self = StObject.set(x, "subnetworkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkNameUndefined: Self = StObject.set(x, "subnetworkName", js.undefined)
+    inline def setSubnetworkNameUndefined: Self = StObject.set(x, "subnetworkName", js.undefined)
   }
 }

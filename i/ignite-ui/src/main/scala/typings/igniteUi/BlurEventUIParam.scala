@@ -13,19 +13,15 @@ trait BlurEventUIParam extends StObject {
 }
 object BlurEventUIParam {
   
-  @scala.inline
-  def apply(): BlurEventUIParam = {
+  inline def apply(): BlurEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlurEventUIParam]
   }
   
-  @scala.inline
-  implicit class BlurEventUIParamMutableBuilder[Self <: BlurEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: BlurEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

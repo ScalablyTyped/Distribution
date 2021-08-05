@@ -15,28 +15,21 @@ trait EnhancedTextBackgroundCfg extends StObject {
 }
 object EnhancedTextBackgroundCfg {
   
-  @scala.inline
-  def apply(): EnhancedTextBackgroundCfg = {
+  inline def apply(): EnhancedTextBackgroundCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnhancedTextBackgroundCfg]
   }
   
-  @scala.inline
-  implicit class EnhancedTextBackgroundCfgMutableBuilder[Self <: EnhancedTextBackgroundCfg] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedTextBackgroundCfg](x: Self) {
     
-    @scala.inline
-    def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ object rvmMod {
   }
   object RVMInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       action: String,
       appLogDirectory: String,
       path: String,
@@ -37,26 +36,19 @@ object rvmMod {
       __obj.asInstanceOf[RVMInfo]
     }
     
-    @scala.inline
-    implicit class RVMInfoMutableBuilder[Self <: RVMInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RVMInfo](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppLogDirectory(value: String): Self = StObject.set(x, "appLogDirectory", value.asInstanceOf[js.Any])
+      inline def setAppLogDirectory(value: String): Self = StObject.set(x, "appLogDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStart-time`(value: String): Self = StObject.set(x, "start-time", value.asInstanceOf[js.Any])
+      inline def `setStart-time`(value: String): Self = StObject.set(x, "start-time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setWorking-dir`(value: String): Self = StObject.set(x, "working-dir", value.asInstanceOf[js.Any])
+      inline def `setWorking-dir`(value: String): Self = StObject.set(x, "working-dir", value.asInstanceOf[js.Any])
     }
   }
 }

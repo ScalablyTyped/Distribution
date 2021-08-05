@@ -24,44 +24,32 @@ object anon {
   }
   object PartialContextOptions {
     
-    @scala.inline
-    def apply(): PartialContextOptions = {
+    inline def apply(): PartialContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialContextOptions]
     }
     
-    @scala.inline
-    implicit class PartialContextOptionsMutableBuilder[Self <: PartialContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialContextOptions](x: Self) {
       
-      @scala.inline
-      def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
+      inline def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoverageMapUndefined: Self = StObject.set(x, "coverageMap", js.undefined)
+      inline def setCoverageMapUndefined: Self = StObject.set(x, "coverageMap", js.undefined)
       
-      @scala.inline
-      def setDefaultSummarizer(value: Summarizers): Self = StObject.set(x, "defaultSummarizer", value.asInstanceOf[js.Any])
+      inline def setDefaultSummarizer(value: Summarizers): Self = StObject.set(x, "defaultSummarizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSummarizerUndefined: Self = StObject.set(x, "defaultSummarizer", js.undefined)
+      inline def setDefaultSummarizerUndefined: Self = StObject.set(x, "defaultSummarizer", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setSourceFinder(value: /* filepath */ String => String): Self = StObject.set(x, "sourceFinder", js.Any.fromFunction1(value))
+      inline def setSourceFinder(value: /* filepath */ String => String): Self = StObject.set(x, "sourceFinder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourceFinderUndefined: Self = StObject.set(x, "sourceFinder", js.undefined)
+      inline def setSourceFinderUndefined: Self = StObject.set(x, "sourceFinder", js.undefined)
       
-      @scala.inline
-      def setWatermarks(value: PartialWatermarks): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
+      inline def setWatermarks(value: PartialWatermarks): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
+      inline def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
     }
   }
   
@@ -72,20 +60,16 @@ object anon {
   }
   object PartialReportBaseOptions {
     
-    @scala.inline
-    def apply(): PartialReportBaseOptions = {
+    inline def apply(): PartialReportBaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialReportBaseOptions]
     }
     
-    @scala.inline
-    implicit class PartialReportBaseOptionsMutableBuilder[Self <: PartialReportBaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialReportBaseOptions](x: Self) {
       
-      @scala.inline
-      def setSummarizer(value: Summarizers): Self = StObject.set(x, "summarizer", value.asInstanceOf[js.Any])
+      inline def setSummarizer(value: Summarizers): Self = StObject.set(x, "summarizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummarizerUndefined: Self = StObject.set(x, "summarizer", js.undefined)
+      inline def setSummarizerUndefined: Self = StObject.set(x, "summarizer", js.undefined)
     }
   }
   
@@ -102,38 +86,28 @@ object anon {
   }
   object PartialWatermarks {
     
-    @scala.inline
-    def apply(): PartialWatermarks = {
+    inline def apply(): PartialWatermarks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialWatermarks]
     }
     
-    @scala.inline
-    implicit class PartialWatermarksMutableBuilder[Self <: PartialWatermarks] (val x: Self) extends AnyVal {
+    extension [Self <: PartialWatermarks](x: Self) {
       
-      @scala.inline
-      def setBranches(value: Watermark): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: Watermark): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      @scala.inline
-      def setFunctions(value: Watermark): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: Watermark): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      @scala.inline
-      def setLines(value: Watermark): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Watermark): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+      inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
       
-      @scala.inline
-      def setStatements(value: Watermark): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: Watermark): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+      inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     }
   }
 }

@@ -56,73 +56,52 @@ trait CIMPictureMarker
 }
 object CIMPictureMarker {
   
-  @scala.inline
-  def apply(): CIMPictureMarker = {
+  inline def apply(): CIMPictureMarker = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMPictureMarker")
     __obj.asInstanceOf[CIMPictureMarker]
   }
   
-  @scala.inline
-  implicit class CIMPictureMarkerMutableBuilder[Self <: CIMPictureMarker] (val x: Self) extends AnyVal {
+  extension [Self <: CIMPictureMarker](x: Self) {
     
-    @scala.inline
-    def setColorSubstitutions(value: js.Array[CIMColorSubstitution]): Self = StObject.set(x, "colorSubstitutions", value.asInstanceOf[js.Any])
+    inline def setColorSubstitutions(value: js.Array[CIMColorSubstitution]): Self = StObject.set(x, "colorSubstitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSubstitutionsUndefined: Self = StObject.set(x, "colorSubstitutions", js.undefined)
+    inline def setColorSubstitutionsUndefined: Self = StObject.set(x, "colorSubstitutions", js.undefined)
     
-    @scala.inline
-    def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value :_*))
+    inline def setColorSubstitutionsVarargs(value: CIMColorSubstitution*): Self = StObject.set(x, "colorSubstitutions", js.Array(value :_*))
     
-    @scala.inline
-    def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
+    inline def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth3DUndefined: Self = StObject.set(x, "depth3D", js.undefined)
+    inline def setDepth3DUndefined: Self = StObject.set(x, "depth3D", js.undefined)
     
-    @scala.inline
-    def setInvertBackfaceTexture(value: Boolean): Self = StObject.set(x, "invertBackfaceTexture", value.asInstanceOf[js.Any])
+    inline def setInvertBackfaceTexture(value: Boolean): Self = StObject.set(x, "invertBackfaceTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertBackfaceTextureUndefined: Self = StObject.set(x, "invertBackfaceTexture", js.undefined)
+    inline def setInvertBackfaceTextureUndefined: Self = StObject.set(x, "invertBackfaceTexture", js.undefined)
     
-    @scala.inline
-    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
-    @scala.inline
-    def setTextureFilter(
+    inline def setTextureFilter(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
     ): Self = StObject.set(x, "textureFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextureFilterUndefined: Self = StObject.set(x, "textureFilter", js.undefined)
+    inline def setTextureFilterUndefined: Self = StObject.set(x, "textureFilter", js.undefined)
     
-    @scala.inline
-    def setTintColor(value: js.Array[Double]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    inline def setTintColor(value: js.Array[Double]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
-    @scala.inline
-    def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
+    inline def setTintColorVarargs(value: Double*): Self = StObject.set(x, "tintColor", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureMarker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureMarker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setVerticalOrientation3D(value: Boolean): Self = StObject.set(x, "verticalOrientation3D", value.asInstanceOf[js.Any])
+    inline def setVerticalOrientation3D(value: Boolean): Self = StObject.set(x, "verticalOrientation3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOrientation3DUndefined: Self = StObject.set(x, "verticalOrientation3D", js.undefined)
+    inline def setVerticalOrientation3DUndefined: Self = StObject.set(x, "verticalOrientation3D", js.undefined)
   }
 }

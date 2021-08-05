@@ -28,22 +28,17 @@ trait IGenericVariableLayout
 }
 object IGenericVariableLayout {
   
-  @scala.inline
-  def apply(qInfo: INxInfo, qIsScriptCreated: Boolean, qMeta: INxMeta, qNum: Double, qText: String): IGenericVariableLayout = {
+  inline def apply(qInfo: INxInfo, qIsScriptCreated: Boolean, qMeta: INxMeta, qNum: Double, qText: String): IGenericVariableLayout = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qIsScriptCreated = qIsScriptCreated.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any], qNum = qNum.asInstanceOf[js.Any], qText = qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericVariableLayout]
   }
   
-  @scala.inline
-  implicit class IGenericVariableLayoutMutableBuilder[Self <: IGenericVariableLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericVariableLayout](x: Self) {
     
-    @scala.inline
-    def setQIsScriptCreated(value: Boolean): Self = StObject.set(x, "qIsScriptCreated", value.asInstanceOf[js.Any])
+    inline def setQIsScriptCreated(value: Boolean): Self = StObject.set(x, "qIsScriptCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }
 }

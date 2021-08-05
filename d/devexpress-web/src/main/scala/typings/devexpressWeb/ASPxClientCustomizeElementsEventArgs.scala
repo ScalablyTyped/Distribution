@@ -24,22 +24,17 @@ trait ASPxClientCustomizeElementsEventArgs
 }
 object ASPxClientCustomizeElementsEventArgs {
   
-  @scala.inline
-  def apply(Elements: js.Array[ASPxReportUIElement], GetById: String => js.Array[ASPxReportUIElement]): ASPxClientCustomizeElementsEventArgs = {
+  inline def apply(Elements: js.Array[ASPxReportUIElement], GetById: String => js.Array[ASPxReportUIElement]): ASPxClientCustomizeElementsEventArgs = {
     val __obj = js.Dynamic.literal(Elements = Elements.asInstanceOf[js.Any], GetById = js.Any.fromFunction1(GetById))
     __obj.asInstanceOf[ASPxClientCustomizeElementsEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCustomizeElementsEventArgsMutableBuilder[Self <: ASPxClientCustomizeElementsEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCustomizeElementsEventArgs](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[ASPxReportUIElement]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[ASPxReportUIElement]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsVarargs(value: ASPxReportUIElement*): Self = StObject.set(x, "Elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ASPxReportUIElement*): Self = StObject.set(x, "Elements", js.Array(value :_*))
     
-    @scala.inline
-    def setGetById(value: String => js.Array[ASPxReportUIElement]): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
+    inline def setGetById(value: String => js.Array[ASPxReportUIElement]): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
   }
 }

@@ -13,19 +13,15 @@ trait GetFileOptions
 }
 object GetFileOptions {
   
-  @scala.inline
-  def apply(): GetFileOptions = {
+  inline def apply(): GetFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFileOptions]
   }
   
-  @scala.inline
-  implicit class GetFileOptionsMutableBuilder[Self <: GetFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

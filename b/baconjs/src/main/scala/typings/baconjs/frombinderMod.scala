@@ -14,10 +14,8 @@ object frombinderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](binder: Binder[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(binder.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](binder: Binder[V], eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(binder.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def default[V](binder: Binder[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(binder.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def default[V](binder: Binder[V], eventTransformer: EventTransformer[V]): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(binder.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
   
   type Binder[V] = js.Function1[/* sink */ FlexibleSink[V], Unsub]
   

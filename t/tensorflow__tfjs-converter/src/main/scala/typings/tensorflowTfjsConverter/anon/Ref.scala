@@ -11,16 +11,13 @@ trait Ref extends StObject {
 }
 object Ref {
   
-  @scala.inline
-  def apply($ref: String): Ref = {
+  inline def apply($ref: String): Ref = {
     val __obj = js.Dynamic.literal($ref = $ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ref]
   }
   
-  @scala.inline
-  implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+  extension [Self <: Ref](x: Self) {
     
-    @scala.inline
-    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
   }
 }

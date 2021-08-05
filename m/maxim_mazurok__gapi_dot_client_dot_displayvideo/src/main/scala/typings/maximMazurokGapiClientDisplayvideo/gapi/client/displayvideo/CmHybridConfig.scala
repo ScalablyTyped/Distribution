@@ -32,52 +32,37 @@ trait CmHybridConfig extends StObject {
 }
 object CmHybridConfig {
   
-  @scala.inline
-  def apply(): CmHybridConfig = {
+  inline def apply(): CmHybridConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CmHybridConfig]
   }
   
-  @scala.inline
-  implicit class CmHybridConfigMutableBuilder[Self <: CmHybridConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CmHybridConfig](x: Self) {
     
-    @scala.inline
-    def setCmAccountId(value: String): Self = StObject.set(x, "cmAccountId", value.asInstanceOf[js.Any])
+    inline def setCmAccountId(value: String): Self = StObject.set(x, "cmAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmAccountIdUndefined: Self = StObject.set(x, "cmAccountId", js.undefined)
+    inline def setCmAccountIdUndefined: Self = StObject.set(x, "cmAccountId", js.undefined)
     
-    @scala.inline
-    def setCmFloodlightConfigId(value: String): Self = StObject.set(x, "cmFloodlightConfigId", value.asInstanceOf[js.Any])
+    inline def setCmFloodlightConfigId(value: String): Self = StObject.set(x, "cmFloodlightConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmFloodlightConfigIdUndefined: Self = StObject.set(x, "cmFloodlightConfigId", js.undefined)
+    inline def setCmFloodlightConfigIdUndefined: Self = StObject.set(x, "cmFloodlightConfigId", js.undefined)
     
-    @scala.inline
-    def setCmFloodlightLinkingAuthorized(value: Boolean): Self = StObject.set(x, "cmFloodlightLinkingAuthorized", value.asInstanceOf[js.Any])
+    inline def setCmFloodlightLinkingAuthorized(value: Boolean): Self = StObject.set(x, "cmFloodlightLinkingAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmFloodlightLinkingAuthorizedUndefined: Self = StObject.set(x, "cmFloodlightLinkingAuthorized", js.undefined)
+    inline def setCmFloodlightLinkingAuthorizedUndefined: Self = StObject.set(x, "cmFloodlightLinkingAuthorized", js.undefined)
     
-    @scala.inline
-    def setCmSyncableSiteIds(value: js.Array[String]): Self = StObject.set(x, "cmSyncableSiteIds", value.asInstanceOf[js.Any])
+    inline def setCmSyncableSiteIds(value: js.Array[String]): Self = StObject.set(x, "cmSyncableSiteIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmSyncableSiteIdsUndefined: Self = StObject.set(x, "cmSyncableSiteIds", js.undefined)
+    inline def setCmSyncableSiteIdsUndefined: Self = StObject.set(x, "cmSyncableSiteIds", js.undefined)
     
-    @scala.inline
-    def setCmSyncableSiteIdsVarargs(value: String*): Self = StObject.set(x, "cmSyncableSiteIds", js.Array(value :_*))
+    inline def setCmSyncableSiteIdsVarargs(value: String*): Self = StObject.set(x, "cmSyncableSiteIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDv360ToCmCostReportingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
+    inline def setDv360ToCmCostReportingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDv360ToCmCostReportingEnabledUndefined: Self = StObject.set(x, "dv360ToCmCostReportingEnabled", js.undefined)
+    inline def setDv360ToCmCostReportingEnabledUndefined: Self = StObject.set(x, "dv360ToCmCostReportingEnabled", js.undefined)
     
-    @scala.inline
-    def setDv360ToCmDataSharingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmDataSharingEnabled", value.asInstanceOf[js.Any])
+    inline def setDv360ToCmDataSharingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmDataSharingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDv360ToCmDataSharingEnabledUndefined: Self = StObject.set(x, "dv360ToCmDataSharingEnabled", js.undefined)
+    inline def setDv360ToCmDataSharingEnabledUndefined: Self = StObject.set(x, "dv360ToCmDataSharingEnabled", js.undefined)
   }
 }

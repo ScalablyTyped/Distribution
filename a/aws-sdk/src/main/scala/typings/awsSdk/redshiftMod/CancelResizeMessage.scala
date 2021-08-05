@@ -13,16 +13,13 @@ trait CancelResizeMessage extends StObject {
 }
 object CancelResizeMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): CancelResizeMessage = {
+  inline def apply(ClusterIdentifier: String): CancelResizeMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelResizeMessage]
   }
   
-  @scala.inline
-  implicit class CancelResizeMessageMutableBuilder[Self <: CancelResizeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CancelResizeMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

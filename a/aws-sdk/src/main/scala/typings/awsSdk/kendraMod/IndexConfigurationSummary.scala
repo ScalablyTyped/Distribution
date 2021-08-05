@@ -38,40 +38,29 @@ trait IndexConfigurationSummary extends StObject {
 }
 object IndexConfigurationSummary {
   
-  @scala.inline
-  def apply(CreatedAt: Timestamp, Status: IndexStatus, UpdatedAt: Timestamp): IndexConfigurationSummary = {
+  inline def apply(CreatedAt: Timestamp, Status: IndexStatus, UpdatedAt: Timestamp): IndexConfigurationSummary = {
     val __obj = js.Dynamic.literal(CreatedAt = CreatedAt.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexConfigurationSummary]
   }
   
-  @scala.inline
-  implicit class IndexConfigurationSummaryMutableBuilder[Self <: IndexConfigurationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: IndexConfigurationSummary](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdition(value: IndexEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
+    inline def setEdition(value: IndexEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
+    inline def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
-    @scala.inline
-    def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: IndexName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: IndexName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: IndexStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: IndexStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

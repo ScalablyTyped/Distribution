@@ -17,22 +17,17 @@ trait DefaultUIProperties
 }
 object DefaultUIProperties {
   
-  @scala.inline
-  def apply(): DefaultUIProperties = {
+  inline def apply(): DefaultUIProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultUIProperties]
   }
   
-  @scala.inline
-  implicit class DefaultUIPropertiesMutableBuilder[Self <: DefaultUIProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultUIProperties](x: Self) {
     
-    @scala.inline
-    def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    @scala.inline
-    def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
   }
 }

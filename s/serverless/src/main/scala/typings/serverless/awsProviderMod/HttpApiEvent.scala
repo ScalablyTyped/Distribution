@@ -14,25 +14,19 @@ trait HttpApiEvent extends StObject {
 }
 object HttpApiEvent {
   
-  @scala.inline
-  def apply(method: String, path: String): HttpApiEvent = {
+  inline def apply(method: String, path: String): HttpApiEvent = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpApiEvent]
   }
   
-  @scala.inline
-  implicit class HttpApiEventMutableBuilder[Self <: HttpApiEvent] (val x: Self) extends AnyVal {
+  extension [Self <: HttpApiEvent](x: Self) {
     
-    @scala.inline
-    def setAuthorizer(value: NamedHttpApiEventAuthorizer | IdRefHttpApiEventAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
+    inline def setAuthorizer(value: NamedHttpApiEventAuthorizer | IdRefHttpApiEventAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
+    inline def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

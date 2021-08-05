@@ -20,20 +20,16 @@ trait BufferEvent
 }
 object BufferEvent {
   
-  @scala.inline
-  def apply(mediaType: video | audio | fragmentedText, `type`: bufferStalled | bufferLoaded): BufferEvent = {
+  inline def apply(mediaType: video | audio | fragmentedText, `type`: bufferStalled | bufferLoaded): BufferEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferEvent]
   }
   
-  @scala.inline
-  implicit class BufferEventMutableBuilder[Self <: BufferEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BufferEvent](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: bufferStalled | bufferLoaded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bufferStalled | bufferLoaded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

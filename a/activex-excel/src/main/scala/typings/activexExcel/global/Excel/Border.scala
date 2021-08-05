@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Border")
 @js.native
-class Border protected ()
+/* private */ class Border ()
   extends StObject
      with typings.activexExcel.Excel.Border {
   
@@ -27,7 +27,7 @@ class Border protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Border_typekey")
   var ExcelDotBorder_typekey: typings.activexExcel.Excel.Border = js.native
   

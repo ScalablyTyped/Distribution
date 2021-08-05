@@ -136,175 +136,119 @@ trait ISurface
 }
 object ISurface {
   
-  @scala.inline
-  def apply(): ISurface = {
+  inline def apply(): ISurface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISurface]
   }
   
-  @scala.inline
-  implicit class ISurfaceMutableBuilder[Self <: ISurface] (val x: Self) extends AnyVal {
+  extension [Self <: ISurface](x: Self) {
     
-    @scala.inline
-    def setAdd(value: () => Unit): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
+    inline def setAdd(value: () => Unit): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setDevicePixelRatio(value: js.Any): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
+    inline def setDevicePixelRatio(value: js.Any): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicePixelRatioUndefined: Self = StObject.set(x, "devicePixelRatio", js.undefined)
+    inline def setDevicePixelRatioUndefined: Self = StObject.set(x, "devicePixelRatio", js.undefined)
     
-    @scala.inline
-    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+    inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+    inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
     
-    @scala.inline
-    def setGetBBox(value: (/* sprite */ js.UndefOr[ISprite], /* isWithoutTransform */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction2(value))
+    inline def setGetBBox(value: (/* sprite */ js.UndefOr[ISprite], /* isWithoutTransform */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getBBox", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
+    inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
-    @scala.inline
-    def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
+    inline def setGetBackground(value: () => js.Any): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
+    inline def setGetBackgroundUndefined: Self = StObject.set(x, "getBackground", js.undefined)
     
-    @scala.inline
-    def setGetDirty(value: () => Boolean): Self = StObject.set(x, "getDirty", js.Any.fromFunction0(value))
+    inline def setGetDirty(value: () => Boolean): Self = StObject.set(x, "getDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDirtyUndefined: Self = StObject.set(x, "getDirty", js.undefined)
+    inline def setGetDirtyUndefined: Self = StObject.set(x, "getDirty", js.undefined)
     
-    @scala.inline
-    def setGetGroup(value: /* id */ js.UndefOr[String] => IGroup): Self = StObject.set(x, "getGroup", js.Any.fromFunction1(value))
+    inline def setGetGroup(value: /* id */ js.UndefOr[String] => IGroup): Self = StObject.set(x, "getGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetGroupUndefined: Self = StObject.set(x, "getGroup", js.undefined)
+    inline def setGetGroupUndefined: Self = StObject.set(x, "getGroup", js.undefined)
     
-    @scala.inline
-    def setGetGroups(value: () => Array): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
+    inline def setGetGroups(value: () => Array): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGroupsUndefined: Self = StObject.set(x, "getGroups", js.undefined)
+    inline def setGetGroupsUndefined: Self = StObject.set(x, "getGroups", js.undefined)
     
-    @scala.inline
-    def setGetItems(value: () => IGroup): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+    inline def setGetItems(value: () => IGroup): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
+    inline def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
-    @scala.inline
-    def setGetRegion(value: () => Array): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
+    inline def setGetRegion(value: () => Array): Self = StObject.set(x, "getRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
+    inline def setGetRegionUndefined: Self = StObject.set(x, "getRegion", js.undefined)
     
-    @scala.inline
-    def setGroups(value: Array): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Array): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setItems(value: IGroup): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IGroup): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setOnAdd(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
-    @scala.inline
-    def setRegion(value: Array): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Array): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setRemove(value: (/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+    inline def setRemove(value: (/* sprite */ js.UndefOr[ISprite], /* destroySprite */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
+    inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
+    inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setRenderFrame(value: () => Unit): Self = StObject.set(x, "renderFrame", js.Any.fromFunction0(value))
+    inline def setRenderFrame(value: () => Unit): Self = StObject.set(x, "renderFrame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
+    inline def setRenderFrameUndefined: Self = StObject.set(x, "renderFrame", js.undefined)
     
-    @scala.inline
-    def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
+    inline def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
+    inline def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
     
-    @scala.inline
-    def setResetTransform(value: () => Unit): Self = StObject.set(x, "resetTransform", js.Any.fromFunction0(value))
+    inline def setResetTransform(value: () => Unit): Self = StObject.set(x, "resetTransform", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetTransformUndefined: Self = StObject.set(x, "resetTransform", js.undefined)
+    inline def setResetTransformUndefined: Self = StObject.set(x, "resetTransform", js.undefined)
     
-    @scala.inline
-    def setRoundPixel(value: /* num */ js.UndefOr[Double] => Double): Self = StObject.set(x, "roundPixel", js.Any.fromFunction1(value))
+    inline def setRoundPixel(value: /* num */ js.UndefOr[Double] => Double): Self = StObject.set(x, "roundPixel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundPixelUndefined: Self = StObject.set(x, "roundPixel", js.undefined)
+    inline def setRoundPixelUndefined: Self = StObject.set(x, "roundPixel", js.undefined)
     
-    @scala.inline
-    def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
+    inline def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBackground", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
+    inline def setSetBackgroundUndefined: Self = StObject.set(x, "setBackground", js.undefined)
     
-    @scala.inline
-    def setSetGroups(value: /* groups */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setGroups", js.Any.fromFunction1(value))
+    inline def setSetGroups(value: /* groups */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setGroups", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroupsUndefined: Self = StObject.set(x, "setGroups", js.undefined)
+    inline def setSetGroupsUndefined: Self = StObject.set(x, "setGroups", js.undefined)
     
-    @scala.inline
-    def setSetItems(value: /* items */ js.UndefOr[IGroup] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
+    inline def setSetItems(value: /* items */ js.UndefOr[IGroup] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
+    inline def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
     
-    @scala.inline
-    def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
+    inline def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRegion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
+    inline def setSetRegionUndefined: Self = StObject.set(x, "setRegion", js.undefined)
     
-    @scala.inline
-    def setWaitFor(value: /* surface */ js.UndefOr[ISurface] => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
+    inline def setWaitFor(value: /* surface */ js.UndefOr[ISurface] => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
+    inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
   }
 }

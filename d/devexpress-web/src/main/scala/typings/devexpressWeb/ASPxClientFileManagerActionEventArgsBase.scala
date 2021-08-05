@@ -28,22 +28,17 @@ trait ASPxClientFileManagerActionEventArgsBase
 }
 object ASPxClientFileManagerActionEventArgsBase {
   
-  @scala.inline
-  def apply(fullName: String, isFolder: Boolean, name: String): ASPxClientFileManagerActionEventArgsBase = {
+  inline def apply(fullName: String, isFolder: Boolean, name: String): ASPxClientFileManagerActionEventArgsBase = {
     val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], isFolder = isFolder.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerActionEventArgsBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerActionEventArgsBaseMutableBuilder[Self <: ASPxClientFileManagerActionEventArgsBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerActionEventArgsBase](x: Self) {
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
+    inline def setIsFolder(value: Boolean): Self = StObject.set(x, "isFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

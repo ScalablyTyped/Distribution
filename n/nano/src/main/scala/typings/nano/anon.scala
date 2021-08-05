@@ -25,23 +25,18 @@ object anon {
   }
   object Active {
     
-    @scala.inline
-    def apply(active: Double, external: Double, file: Double): Active = {
+    inline def apply(active: Double, external: Double, file: Double): Active = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[Active]
     }
     
-    @scala.inline
-    implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+    extension [Self <: Active](x: Self) {
       
-      @scala.inline
-      def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      inline def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: Double): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,35 +67,26 @@ object anon {
   }
   object Doc {
     
-    @scala.inline
-    def apply[V](fields: js.Object, id: String, key: String, order: js.Array[Double]): Doc[V] = {
+    inline def apply[V](fields: js.Object, id: String, key: String, order: js.Array[Double]): Doc[V] = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
       __obj.asInstanceOf[Doc[V]]
     }
     
-    @scala.inline
-    implicit class DocMutableBuilder[Self <: Doc[?], V] (val x: Self & Doc[V]) extends AnyVal {
+    extension [Self <: Doc[?], V](x: Self & Doc[V]) {
       
-      @scala.inline
-      def setDoc(value: V): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: V): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+      inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: js.Array[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: js.Array[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
     }
   }
   
@@ -112,20 +98,16 @@ object anon {
   }
   object External {
     
-    @scala.inline
-    def apply(active: Double, external: Double): External = {
+    inline def apply(active: Double, external: Double): External = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any])
       __obj.asInstanceOf[External]
     }
     
-    @scala.inline
-    implicit class ExternalMutableBuilder[Self <: External] (val x: Self) extends AnyVal {
+    extension [Self <: External](x: Self) {
       
-      @scala.inline
-      def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+      inline def setExternal(value: Double): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,26 +121,20 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(fields: js.Array[SortOrder]): Fields = {
+    inline def apply(fields: js.Array[SortOrder]): Fields = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: js.Array[SortOrder]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[SortOrder]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: SortOrder*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: SortOrder*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setPartial_filter_selector(value: MangoSelector): Self = StObject.set(x, "partial_filter_selector", value.asInstanceOf[js.Any])
+      inline def setPartial_filter_selector(value: MangoSelector): Self = StObject.set(x, "partial_filter_selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartial_filter_selectorUndefined: Self = StObject.set(x, "partial_filter_selector", js.undefined)
+      inline def setPartial_filter_selectorUndefined: Self = StObject.set(x, "partial_filter_selector", js.undefined)
     }
   }
   
@@ -174,29 +150,22 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply[V, D](id: String, key: String, value: V): Id[V, D] = {
+    inline def apply[V, D](id: String, key: String, value: V): Id[V, D] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id[V, D]]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id[?, ?], V, D] (val x: Self & (Id[V, D])) extends AnyVal {
+    extension [Self <: Id[?, ?], V, D](x: Self & (Id[V, D])) {
       
-      @scala.inline
-      def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
+      inline def setDocUndefined: Self = StObject.set(x, "doc", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,20 +177,16 @@ object anon {
   }
   object IdRev {
     
-    @scala.inline
-    def apply(_id: String, _rev: String): IdRev = {
+    inline def apply(_id: String, _rev: String): IdRev = {
       val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _rev = _rev.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdRev]
     }
     
-    @scala.inline
-    implicit class IdRevMutableBuilder[Self <: IdRev] (val x: Self) extends AnyVal {
+    extension [Self <: IdRev](x: Self) {
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
+      inline def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,17 +196,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String): Name = {
+    inline def apply(name: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,17 +213,14 @@ object anon {
   }
   object Rev {
     
-    @scala.inline
-    def apply(rev: String): Rev = {
+    inline def apply(rev: String): Rev = {
       val __obj = js.Dynamic.literal(rev = rev.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rev]
     }
     
-    @scala.inline
-    implicit class RevMutableBuilder[Self <: Rev] (val x: Self) extends AnyVal {
+    extension [Self <: Rev](x: Self) {
       
-      @scala.inline
-      def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait PhononPageEventObject extends StObject {
 }
 object PhononPageEventObject {
   
-  @scala.inline
-  def apply(addEvent: (String, js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]) => Unit): PhononPageEventObject = {
+  inline def apply(addEvent: (String, js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]) => Unit): PhononPageEventObject = {
     val __obj = js.Dynamic.literal(addEvent = js.Any.fromFunction2(addEvent))
     __obj.asInstanceOf[PhononPageEventObject]
   }
   
-  @scala.inline
-  implicit class PhononPageEventObjectMutableBuilder[Self <: PhononPageEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PhononPageEventObject](x: Self) {
     
-    @scala.inline
-    def setAddEvent(value: (String, js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "addEvent", js.Any.fromFunction2(value))
+    inline def setAddEvent(value: (String, js.Function1[/* parameter */ js.UndefOr[js.Any], Unit]) => Unit): Self = StObject.set(x, "addEvent", js.Any.fromFunction2(value))
   }
 }

@@ -10,16 +10,13 @@ trait Jwt extends StObject {
 }
 object Jwt {
   
-  @scala.inline
-  def apply(jwt: Claims): Jwt = {
+  inline def apply(jwt: Claims): Jwt = {
     val __obj = js.Dynamic.literal(jwt = jwt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Jwt]
   }
   
-  @scala.inline
-  implicit class JwtMutableBuilder[Self <: Jwt] (val x: Self) extends AnyVal {
+  extension [Self <: Jwt](x: Self) {
     
-    @scala.inline
-    def setJwt(value: Claims): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
+    inline def setJwt(value: Claims): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait UpdateGlobalSettingsInput extends StObject {
 }
 object UpdateGlobalSettingsInput {
   
-  @scala.inline
-  def apply(): UpdateGlobalSettingsInput = {
+  inline def apply(): UpdateGlobalSettingsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGlobalSettingsInput]
   }
   
-  @scala.inline
-  implicit class UpdateGlobalSettingsInputMutableBuilder[Self <: UpdateGlobalSettingsInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGlobalSettingsInput](x: Self) {
     
-    @scala.inline
-    def setGlobalSettings(value: GlobalSettings): Self = StObject.set(x, "GlobalSettings", value.asInstanceOf[js.Any])
+    inline def setGlobalSettings(value: GlobalSettings): Self = StObject.set(x, "GlobalSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalSettingsUndefined: Self = StObject.set(x, "GlobalSettings", js.undefined)
+    inline def setGlobalSettingsUndefined: Self = StObject.set(x, "GlobalSettings", js.undefined)
   }
 }

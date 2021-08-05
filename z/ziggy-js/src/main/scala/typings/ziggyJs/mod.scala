@@ -21,22 +21,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(name: String): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[Router]
-  @scala.inline
-  def default(name: String, params: Unit, absolute: Boolean): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def default(name: String, params: Unit, absolute: Boolean, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def default(name: String, params: Unit, absolute: Unit, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def default(name: String, params: InputParams): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def default(name: String, params: InputParams, absolute: Boolean): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def default(name: String, params: InputParams, absolute: Boolean, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
-  @scala.inline
-  def default(name: String, params: InputParams, absolute: Unit, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def default(name: String): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[Router]
+  inline def default(name: String, params: Unit, absolute: Boolean): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def default(name: String, params: Unit, absolute: Boolean, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def default(name: String, params: Unit, absolute: Unit, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def default(name: String, params: InputParams): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def default(name: String, params: InputParams, absolute: Boolean): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def default(name: String, params: InputParams, absolute: Boolean, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def default(name: String, params: InputParams, absolute: Unit, customZiggy: Config): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any], absolute.asInstanceOf[js.Any], customZiggy.asInstanceOf[js.Any])).asInstanceOf[Router]
   
   @JSImport("ziggy-js", "Router")
   @js.native
@@ -88,8 +80,7 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       baseDomain: String,
       baseProtocol: http | https,
       baseUrl: String,
@@ -100,32 +91,23 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setBaseDomain(value: String): Self = StObject.set(x, "baseDomain", value.asInstanceOf[js.Any])
+      inline def setBaseDomain(value: String): Self = StObject.set(x, "baseDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePort(value: Double): Self = StObject.set(x, "basePort", value.asInstanceOf[js.Any])
+      inline def setBasePort(value: Double): Self = StObject.set(x, "basePort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePortNull: Self = StObject.set(x, "basePort", null)
+      inline def setBasePortNull: Self = StObject.set(x, "basePort", null)
       
-      @scala.inline
-      def setBasePortUndefined: Self = StObject.set(x, "basePort", js.undefined)
+      inline def setBasePortUndefined: Self = StObject.set(x, "basePort", js.undefined)
       
-      @scala.inline
-      def setBaseProtocol(value: http | https): Self = StObject.set(x, "baseProtocol", value.asInstanceOf[js.Any])
+      inline def setBaseProtocol(value: http | https): Self = StObject.set(x, "baseProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultParameters(value: StringDictionary[String | Double]): Self = StObject.set(x, "defaultParameters", value.asInstanceOf[js.Any])
+      inline def setDefaultParameters(value: StringDictionary[String | Double]): Self = StObject.set(x, "defaultParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedRoutes(value: StringDictionary[Route]): Self = StObject.set(x, "namedRoutes", value.asInstanceOf[js.Any])
+      inline def setNamedRoutes(value: StringDictionary[Route]): Self = StObject.set(x, "namedRoutes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,32 +129,24 @@ object mod {
   }
   object Route {
     
-    @scala.inline
-    def apply(methods: js.Array[GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE], uri: String): Route = {
+    inline def apply(methods: js.Array[GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE], uri: String): Route = {
       val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Route]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+    extension [Self <: Route](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNull: Self = StObject.set(x, "domain", null)
+      inline def setDomainNull: Self = StObject.set(x, "domain", null)
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setMethods(value: js.Array[GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: (GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE)*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: (GET | HEAD | POST | PATCH | PUT | OPTIONS | DELETE)*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

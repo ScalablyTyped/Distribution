@@ -18,25 +18,19 @@ trait AttributeDimension extends StObject {
 }
 object AttributeDimension {
   
-  @scala.inline
-  def apply(Values: ListOfString): AttributeDimension = {
+  inline def apply(Values: ListOfString): AttributeDimension = {
     val __obj = js.Dynamic.literal(Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeDimension]
   }
   
-  @scala.inline
-  implicit class AttributeDimensionMutableBuilder[Self <: AttributeDimension] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeDimension](x: Self) {
     
-    @scala.inline
-    def setAttributeType(value: AttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+    inline def setAttributeType(value: AttributeType): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
+    inline def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
     
-    @scala.inline
-    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: string*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: string*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

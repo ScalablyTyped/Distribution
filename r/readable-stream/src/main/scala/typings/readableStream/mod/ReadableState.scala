@@ -52,8 +52,7 @@ trait ReadableState extends StObject {
 }
 object ReadableState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     awaitDrain: Double,
     buffer: BufferList[js.Any],
     defaultEncoding: BufferEncoding,
@@ -78,76 +77,52 @@ object ReadableState {
     __obj.asInstanceOf[ReadableState]
   }
   
-  @scala.inline
-  implicit class ReadableStateMutableBuilder[Self <: ReadableState] (val x: Self) extends AnyVal {
+  extension [Self <: ReadableState](x: Self) {
     
-    @scala.inline
-    def setAwaitDrain(value: Double): Self = StObject.set(x, "awaitDrain", value.asInstanceOf[js.Any])
+    inline def setAwaitDrain(value: Double): Self = StObject.set(x, "awaitDrain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuffer(value: BufferList[js.Any]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: BufferList[js.Any]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoder(value: StringDecoder): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
+    inline def setDecoder(value: StringDecoder): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoderNull: Self = StObject.set(x, "decoder", null)
+    inline def setDecoderNull: Self = StObject.set(x, "decoder", null)
     
-    @scala.inline
-    def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+    inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+    inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmittedReadable(value: Boolean): Self = StObject.set(x, "emittedReadable", value.asInstanceOf[js.Any])
+    inline def setEmittedReadable(value: Boolean): Self = StObject.set(x, "emittedReadable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingNull: Self = StObject.set(x, "encoding", null)
+    inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
-    @scala.inline
-    def setEndEmitted(value: Boolean): Self = StObject.set(x, "endEmitted", value.asInstanceOf[js.Any])
+    inline def setEndEmitted(value: Boolean): Self = StObject.set(x, "endEmitted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
+    inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowing(value: js.Any): Self = StObject.set(x, "flowing", value.asInstanceOf[js.Any])
+    inline def setFlowing(value: js.Any): Self = StObject.set(x, "flowing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedReadable(value: Boolean): Self = StObject.set(x, "needReadable", value.asInstanceOf[js.Any])
+    inline def setNeedReadable(value: Boolean): Self = StObject.set(x, "needReadable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+    inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipes(value: js.Any): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
+    inline def setPipes(value: js.Any): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipesCount(value: Double): Self = StObject.set(x, "pipesCount", value.asInstanceOf[js.Any])
+    inline def setPipesCount(value: Double): Self = StObject.set(x, "pipesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadableListening(value: Boolean): Self = StObject.set(x, "readableListening", value.asInstanceOf[js.Any])
+    inline def setReadableListening(value: Boolean): Self = StObject.set(x, "readableListening", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReading(value: Boolean): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: Boolean): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadingMore(value: Boolean): Self = StObject.set(x, "readingMore", value.asInstanceOf[js.Any])
+    inline def setReadingMore(value: Boolean): Self = StObject.set(x, "readingMore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeScheduled(value: Boolean): Self = StObject.set(x, "resumeScheduled", value.asInstanceOf[js.Any])
+    inline def setResumeScheduled(value: Boolean): Self = StObject.set(x, "resumeScheduled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
   }
 }

@@ -26,35 +26,26 @@ object anon {
   }
   object Chars {
     
-    @scala.inline
-    def apply(): Chars = {
+    inline def apply(): Chars = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Chars]
     }
     
-    @scala.inline
-    implicit class CharsMutableBuilder[Self <: Chars] (val x: Self) extends AnyVal {
+    extension [Self <: Chars](x: Self) {
       
-      @scala.inline
-      def setChars(value: js.Array[String]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: js.Array[String]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
+      inline def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
       
-      @scala.inline
-      def setCharsVarargs(value: String*): Self = StObject.set(x, "chars", js.Array(value :_*))
+      inline def setCharsVarargs(value: String*): Self = StObject.set(x, "chars", js.Array(value :_*))
       
-      @scala.inline
-      def setEllipse(value: String): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+      inline def setEllipse(value: String): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
+      inline def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
     }
   }
 }

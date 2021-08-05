@@ -27,34 +27,26 @@ trait CIMLineCallout
 }
 object CIMLineCallout {
   
-  @scala.inline
-  def apply(`type`: String): CIMLineCallout = {
+  inline def apply(`type`: String): CIMLineCallout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMLineCallout]
   }
   
-  @scala.inline
-  implicit class CIMLineCalloutMutableBuilder[Self <: CIMLineCallout] (val x: Self) extends AnyVal {
+  extension [Self <: CIMLineCallout](x: Self) {
     
-    @scala.inline
-    def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    @scala.inline
-    def setLeaderLineSymbol(value: CIMLineSymbol): Self = StObject.set(x, "leaderLineSymbol", value.asInstanceOf[js.Any])
+    inline def setLeaderLineSymbol(value: CIMLineSymbol): Self = StObject.set(x, "leaderLineSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderLineSymbolUndefined: Self = StObject.set(x, "leaderLineSymbol", js.undefined)
+    inline def setLeaderLineSymbolUndefined: Self = StObject.set(x, "leaderLineSymbol", js.undefined)
     
-    @scala.inline
-    def setLineStyle(
+    inline def setLineStyle(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LeaderLineStyle * / any */ String
     ): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

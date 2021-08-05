@@ -32,8 +32,7 @@ trait WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraint
 }
 object WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comparisonOperator: String,
     size: Double,
     textTransformations: js.Array[
@@ -44,32 +43,25 @@ object WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstrain
     __obj.asInstanceOf[WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatementMutableBuilder[Self <: WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatement](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: String): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: String): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatch(
+    inline def setFieldToMatch(
       value: WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatementFieldToMatch
     ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: js.Array[
           WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(
+    inline def setTextTransformationsVarargs(
       value: WebAclRuleStatementOrStatementStatementAndStatementStatementSizeConstraintStatementTextTransformation*
     ): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }

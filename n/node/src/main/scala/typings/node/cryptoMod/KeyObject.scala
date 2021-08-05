@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("crypto", "KeyObject")
 @js.native
-class KeyObject protected ()
+/* private */ class KeyObject ()
   extends StObject
      with _KeyLike {
   

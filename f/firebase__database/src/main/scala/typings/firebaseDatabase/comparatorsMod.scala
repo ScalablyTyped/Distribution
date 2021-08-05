@@ -11,9 +11,7 @@ object comparatorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def NAME_COMPARATOR(left: String, right: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("NAME_COMPARATOR")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def NAME_COMPARATOR(left: String, right: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("NAME_COMPARATOR")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def NAME_ONLY_COMPARATOR(left: NamedNode, right: NamedNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("NAME_ONLY_COMPARATOR")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def NAME_ONLY_COMPARATOR(left: NamedNode, right: NamedNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("NAME_ONLY_COMPARATOR")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -31,8 +31,7 @@ object mod {
   }
   object KeenTracking {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       recordEvent: (String, js.Object) => js.Promise[Created],
       recordEvents: StringDictionary[js.Array[js.Object]] => js.Promise[StringDictionary[js.Array[Boolean]]]
     ): KeenTracking = {
@@ -40,14 +39,11 @@ object mod {
       __obj.asInstanceOf[KeenTracking]
     }
     
-    @scala.inline
-    implicit class KeenTrackingMutableBuilder[Self <: KeenTracking] (val x: Self) extends AnyVal {
+    extension [Self <: KeenTracking](x: Self) {
       
-      @scala.inline
-      def setRecordEvent(value: (String, js.Object) => js.Promise[Created]): Self = StObject.set(x, "recordEvent", js.Any.fromFunction2(value))
+      inline def setRecordEvent(value: (String, js.Object) => js.Promise[Created]): Self = StObject.set(x, "recordEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRecordEvents(value: StringDictionary[js.Array[js.Object]] => js.Promise[StringDictionary[js.Array[Boolean]]]): Self = StObject.set(x, "recordEvents", js.Any.fromFunction1(value))
+      inline def setRecordEvents(value: StringDictionary[js.Array[js.Object]] => js.Promise[StringDictionary[js.Array[Boolean]]]): Self = StObject.set(x, "recordEvents", js.Any.fromFunction1(value))
     }
   }
 }

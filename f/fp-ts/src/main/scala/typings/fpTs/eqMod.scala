@@ -24,8 +24,7 @@ object eqMod {
   val URI: /* "Eq" */ String = js.native
   type URI = /* "Eq" */ String
   
-  @scala.inline
-  def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Eq[A], Eq[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Eq[A], Eq[B]]]
+  inline def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Eq[A], Eq[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Eq[A], Eq[B]]]
   
   @JSImport("fp-ts/lib/Eq", "eqBoolean")
   @js.native
@@ -51,21 +50,17 @@ object eqMod {
   @js.native
   val eq_ : Contravariant1[typings.fpTs.eqMod.URI] = js.native
   
-  @scala.inline
-  def fromEquals[A](equals: js.Function2[/* x */ A, /* y */ A, Boolean]): Eq[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEquals")(equals.asInstanceOf[js.Any]).asInstanceOf[Eq[A]]
+  inline def fromEquals[A](equals: js.Function2[/* x */ A, /* y */ A, Boolean]): Eq[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEquals")(equals.asInstanceOf[js.Any]).asInstanceOf[Eq[A]]
   
-  @scala.inline
-  def getMonoid[A](): Monoid[Eq[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")().asInstanceOf[Monoid[Eq[A]]]
+  inline def getMonoid[A](): Monoid[Eq[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")().asInstanceOf[Monoid[Eq[A]]]
   
-  @scala.inline
-  def getStructEq[O /* <: ReadonlyRecord_[String, js.Any] */](
+  inline def getStructEq[O /* <: ReadonlyRecord_[String, js.Any] */](
     eqs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Eq.Eq<O[K]>}
     */ typings.fpTs.fpTsStrings.getStructEq & TopLevel[O]
   ): Eq[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStructEq")(eqs.asInstanceOf[js.Any]).asInstanceOf[Eq[O]]
   
-  @scala.inline
-  def getTupleEq[T /* <: js.Array[Eq[js.Any]] */](
+  inline def getTupleEq[T /* <: js.Array[Eq[js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param eqs because its type T is not an array type */ eqs: T
   ): Eq[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -77,8 +72,7 @@ object eqMod {
     */ typings.fpTs.fpTsStrings.getTupleEq & TopLevel[T]
   ]]
   
-  @scala.inline
-  def strictEqual[A](a: A, b: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def strictEqual[A](a: A, b: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait Eq[A] extends StObject {
     
@@ -86,18 +80,15 @@ object eqMod {
   }
   object Eq {
     
-    @scala.inline
-    def apply[A](equals_ : (A, A) => Boolean): Eq[A] = {
+    inline def apply[A](equals_ : (A, A) => Boolean): Eq[A] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("equals")(js.Any.fromFunction2(equals_))
       __obj.asInstanceOf[Eq[A]]
     }
     
-    @scala.inline
-    implicit class EqMutableBuilder[Self <: Eq[?], A] (val x: Self & Eq[A]) extends AnyVal {
+    extension [Self <: Eq[?], A](x: Self & Eq[A]) {
       
-      @scala.inline
-      def setEquals_(value: (A, A) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (A, A) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     }
   }
   

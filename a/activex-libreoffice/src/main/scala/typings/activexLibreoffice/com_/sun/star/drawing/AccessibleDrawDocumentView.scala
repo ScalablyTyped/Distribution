@@ -38,8 +38,7 @@ trait AccessibleDrawDocumentView
      with XAccessibleComponent
 object AccessibleDrawDocumentView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleContext: XAccessibleContext,
     AccessibleDescription: String,

@@ -13,16 +13,13 @@ trait DeleteDeploymentStrategyRequest extends StObject {
 }
 object DeleteDeploymentStrategyRequest {
   
-  @scala.inline
-  def apply(DeploymentStrategyId: DeploymentStrategyId): DeleteDeploymentStrategyRequest = {
+  inline def apply(DeploymentStrategyId: DeploymentStrategyId): DeleteDeploymentStrategyRequest = {
     val __obj = js.Dynamic.literal(DeploymentStrategyId = DeploymentStrategyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeploymentStrategyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDeploymentStrategyRequestMutableBuilder[Self <: DeleteDeploymentStrategyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeploymentStrategyRequest](x: Self) {
     
-    @scala.inline
-    def setDeploymentStrategyId(value: DeploymentStrategyId): Self = StObject.set(x, "DeploymentStrategyId", value.asInstanceOf[js.Any])
+    inline def setDeploymentStrategyId(value: DeploymentStrategyId): Self = StObject.set(x, "DeploymentStrategyId", value.asInstanceOf[js.Any])
   }
 }

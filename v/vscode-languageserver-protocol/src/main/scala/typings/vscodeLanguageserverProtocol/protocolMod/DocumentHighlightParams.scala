@@ -13,8 +13,7 @@ trait DocumentHighlightParams
      with PartialResultParams
 object DocumentHighlightParams {
   
-  @scala.inline
-  def apply(position: Position, textDocument: TextDocumentIdentifier): DocumentHighlightParams = {
+  inline def apply(position: Position, textDocument: TextDocumentIdentifier): DocumentHighlightParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentHighlightParams]
   }

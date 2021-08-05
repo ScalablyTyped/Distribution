@@ -23,8 +23,7 @@ trait Placeholder_
 }
 object Placeholder_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expectedNode: Identifier | StringLiteral | typings.babelTypes.babelTypesStrings.Expression | typings.babelTypes.babelTypesStrings.Statement | typings.babelTypes.babelTypesStrings.Declaration | BlockStatement | ClassBody | typings.babelTypes.babelTypesStrings.Pattern,
     name: Identifier_
   ): Placeholder_ = {
@@ -33,18 +32,14 @@ object Placeholder_ {
     __obj.asInstanceOf[Placeholder_]
   }
   
-  @scala.inline
-  implicit class Placeholder_MutableBuilder[Self <: Placeholder_] (val x: Self) extends AnyVal {
+  extension [Self <: Placeholder_](x: Self) {
     
-    @scala.inline
-    def setExpectedNode(
+    inline def setExpectedNode(
       value: Identifier | StringLiteral | typings.babelTypes.babelTypesStrings.Expression | typings.babelTypes.babelTypesStrings.Statement | typings.babelTypes.babelTypesStrings.Declaration | BlockStatement | ClassBody | typings.babelTypes.babelTypesStrings.Pattern
     ): Self = StObject.set(x, "expectedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Identifier_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Identifier_): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Placeholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Placeholder): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

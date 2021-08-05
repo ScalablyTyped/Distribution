@@ -36,8 +36,7 @@ object mod {
     var stores: js.Array[TOfStore] = js.native
   }
   
-  @scala.inline
-  def ListenerMixin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListenerMixin")().asInstanceOf[js.Any]
+  inline def ListenerMixin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListenerMixin")().asInstanceOf[js.Any]
   
   @JSImport("reflux", "PureComponent")
   @js.native
@@ -91,36 +90,24 @@ object mod {
     def validateListening(listenable: Listenable): String = js.native
   }
   
-  @scala.inline
-  def connect(store: Store): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def connect(store: Store, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(store.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(store: Store): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connect(store: Store, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(store.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createAction(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[js.Any]
-  @scala.inline
-  def createAction(definition: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def createAction(definition: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def createAction(definition: ActionDefinition): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createAction(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")().asInstanceOf[js.Any]
+  inline def createAction(definition: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createAction(definition: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createAction(definition: ActionDefinition): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createAction")(definition.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def createActions(definitions: js.Array[ActionDefinition | String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def createActions(definitions: ActionObjectDefinition): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createActions(definitions: js.Array[ActionDefinition | String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createActions(definitions: ActionObjectDefinition): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createActions")(definitions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def createStore(definition: StoreDefinition): Store = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(definition.asInstanceOf[js.Any]).asInstanceOf[Store]
+  inline def createStore(definition: StoreDefinition): Store = ^.asInstanceOf[js.Dynamic].applyDynamic("createStore")(definition.asInstanceOf[js.Any]).asInstanceOf[Store]
   
-  @scala.inline
-  def initStore(typeOfStore: Instantiable0[Store]): Store = ^.asInstanceOf[js.Dynamic].applyDynamic("initStore")(typeOfStore.asInstanceOf[js.Any]).asInstanceOf[Store]
+  inline def initStore(typeOfStore: Instantiable0[Store]): Store = ^.asInstanceOf[js.Dynamic].applyDynamic("initStore")(typeOfStore.asInstanceOf[js.Any]).asInstanceOf[Store]
   
-  @scala.inline
-  def listenTo(store: Store, handler: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenTo")(store.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def listenTo(store: Store, handler: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenTo")(store.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setState(state: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setState(state: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setState")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ActionDefinition
     extends StObject
@@ -130,20 +117,16 @@ object mod {
   }
   object ActionDefinition {
     
-    @scala.inline
-    def apply(): ActionDefinition = {
+    inline def apply(): ActionDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActionDefinition]
     }
     
-    @scala.inline
-    implicit class ActionDefinitionMutableBuilder[Self <: ActionDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ActionDefinition](x: Self) {
       
-      @scala.inline
-      def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+      inline def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+      inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     }
   }
   
@@ -163,47 +146,34 @@ object mod {
   }
   object ActionParameters {
     
-    @scala.inline
-    def apply(): ActionParameters = {
+    inline def apply(): ActionParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActionParameters]
     }
     
-    @scala.inline
-    implicit class ActionParametersMutableBuilder[Self <: ActionParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ActionParameters](x: Self) {
       
-      @scala.inline
-      def setAsyncResult(value: Boolean): Self = StObject.set(x, "asyncResult", value.asInstanceOf[js.Any])
+      inline def setAsyncResult(value: Boolean): Self = StObject.set(x, "asyncResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncResultUndefined: Self = StObject.set(x, "asyncResult", js.undefined)
+      inline def setAsyncResultUndefined: Self = StObject.set(x, "asyncResult", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setPreEmit(value: /* repeated */ js.Any => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "preEmit", js.Any.fromFunction1(value))
+      inline def setPreEmit(value: /* repeated */ js.Any => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "preEmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreEmitUndefined: Self = StObject.set(x, "preEmit", js.undefined)
+      inline def setPreEmitUndefined: Self = StObject.set(x, "preEmit", js.undefined)
       
-      @scala.inline
-      def setShouldEmit(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "shouldEmit", js.Any.fromFunction1(value))
+      inline def setShouldEmit(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "shouldEmit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldEmitUndefined: Self = StObject.set(x, "shouldEmit", js.undefined)
+      inline def setShouldEmitUndefined: Self = StObject.set(x, "shouldEmit", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   
@@ -225,17 +195,14 @@ object mod {
   }
   object Listenable {
     
-    @scala.inline
-    def apply(listen: ListenFn): Listenable = {
+    inline def apply(listen: ListenFn): Listenable = {
       val __obj = js.Dynamic.literal(listen = listen.asInstanceOf[js.Any])
       __obj.asInstanceOf[Listenable]
     }
     
-    @scala.inline
-    implicit class ListenableMutableBuilder[Self <: Listenable] (val x: Self) extends AnyVal {
+    extension [Self <: Listenable](x: Self) {
       
-      @scala.inline
-      def setListen(value: ListenFn): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+      inline def setListen(value: ListenFn): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -251,35 +218,26 @@ object mod {
   }
   object StoreDefinition {
     
-    @scala.inline
-    def apply(): StoreDefinition = {
+    inline def apply(): StoreDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoreDefinition]
     }
     
-    @scala.inline
-    implicit class StoreDefinitionMutableBuilder[Self <: StoreDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: StoreDefinition](x: Self) {
       
-      @scala.inline
-      def setGetInitialState(value: js.Function): Self = StObject.set(x, "getInitialState", value.asInstanceOf[js.Any])
+      inline def setGetInitialState(value: js.Function): Self = StObject.set(x, "getInitialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetInitialStateUndefined: Self = StObject.set(x, "getInitialState", js.undefined)
+      inline def setGetInitialStateUndefined: Self = StObject.set(x, "getInitialState", js.undefined)
       
-      @scala.inline
-      def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setListenables(value: js.Array[js.Any]): Self = StObject.set(x, "listenables", value.asInstanceOf[js.Any])
+      inline def setListenables(value: js.Array[js.Any]): Self = StObject.set(x, "listenables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenablesUndefined: Self = StObject.set(x, "listenables", js.undefined)
+      inline def setListenablesUndefined: Self = StObject.set(x, "listenables", js.undefined)
       
-      @scala.inline
-      def setListenablesVarargs(value: js.Any*): Self = StObject.set(x, "listenables", js.Array(value :_*))
+      inline def setListenablesVarargs(value: js.Any*): Self = StObject.set(x, "listenables", js.Array(value :_*))
     }
   }
   
@@ -291,20 +249,16 @@ object mod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(listenable: Listenable, stop: js.Function): Subscription = {
+    inline def apply(listenable: Listenable, stop: js.Function): Subscription = {
       val __obj = js.Dynamic.literal(listenable = listenable.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setListenable(value: Listenable): Self = StObject.set(x, "listenable", value.asInstanceOf[js.Any])
+      inline def setListenable(value: Listenable): Self = StObject.set(x, "listenable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: js.Function): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+      inline def setStop(value: js.Function): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,8 +22,7 @@ object commitMutationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def commitMutation[TOperation /* <: MutationParameters */](
+  inline def commitMutation[TOperation /* <: MutationParameters */](
     environment: Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
@@ -71,8 +70,7 @@ object commitMutationMod {
   }
   object MutationConfig {
     
-    @scala.inline
-    def apply[TOperation /* <: MutationParameters */](
+    inline def apply[TOperation /* <: MutationParameters */](
       mutation: GraphQLTaggedNode,
       variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
     ): MutationConfig[TOperation] = {
@@ -80,101 +78,73 @@ object commitMutationMod {
       __obj.asInstanceOf[MutationConfig[TOperation]]
     }
     
-    @scala.inline
-    implicit class MutationConfigMutableBuilder[Self <: MutationConfig[?], TOperation /* <: MutationParameters */] (val x: Self & MutationConfig[TOperation]) extends AnyVal {
+    extension [Self <: MutationConfig[?], TOperation /* <: MutationParameters */](x: Self & MutationConfig[TOperation]) {
       
-      @scala.inline
-      def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
+      inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
+      inline def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
       
-      @scala.inline
-      def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
+      inline def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
+      inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
       
-      @scala.inline
-      def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
+      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
       
-      @scala.inline
-      def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
+      inline def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
+      inline def setMutationFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "mutation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCompleted(
+      inline def setOnCompleted(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ /* response */ js.Any, /* errors */ js.UndefOr[js.Array[PayloadError] | Null]) => Unit
       ): Self = StObject.set(x, "onCompleted", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCompletedNull: Self = StObject.set(x, "onCompleted", null)
+      inline def setOnCompletedNull: Self = StObject.set(x, "onCompleted", null)
       
-      @scala.inline
-      def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
+      inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorNull: Self = StObject.set(x, "onError", null)
+      inline def setOnErrorNull: Self = StObject.set(x, "onError", null)
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnUnsubscribe(value: () => js.UndefOr[Unit | Null]): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction0(value))
+      inline def setOnUnsubscribe(value: () => js.UndefOr[Unit | Null]): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnsubscribeUndefined: Self = StObject.set(x, "onUnsubscribe", js.undefined)
+      inline def setOnUnsubscribeUndefined: Self = StObject.set(x, "onUnsubscribe", js.undefined)
       
-      @scala.inline
-      def setOptimisticResponse(
+      inline def setOptimisticResponse(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
       ): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimisticResponseUndefined: Self = StObject.set(x, "optimisticResponse", js.undefined)
+      inline def setOptimisticResponseUndefined: Self = StObject.set(x, "optimisticResponse", js.undefined)
       
-      @scala.inline
-      def setOptimisticUpdater(
+      inline def setOptimisticUpdater(
         value: (/* store */ RecordSourceSelectorProxy[
               /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
             ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit
       ): Self = StObject.set(x, "optimisticUpdater", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptimisticUpdaterNull: Self = StObject.set(x, "optimisticUpdater", null)
+      inline def setOptimisticUpdaterNull: Self = StObject.set(x, "optimisticUpdater", null)
       
-      @scala.inline
-      def setOptimisticUpdaterUndefined: Self = StObject.set(x, "optimisticUpdater", js.undefined)
+      inline def setOptimisticUpdaterUndefined: Self = StObject.set(x, "optimisticUpdater", js.undefined)
       
-      @scala.inline
-      def setUpdater(
+      inline def setUpdater(
         value: (/* store */ RecordSourceSelectorProxy[
               /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
             ], /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) => Unit
       ): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdaterNull: Self = StObject.set(x, "updater", null)
+      inline def setUpdaterNull: Self = StObject.set(x, "updater", null)
       
-      @scala.inline
-      def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+      inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
       
-      @scala.inline
-      def setUploadables(value: UploadableMap): Self = StObject.set(x, "uploadables", value.asInstanceOf[js.Any])
+      inline def setUploadables(value: UploadableMap): Self = StObject.set(x, "uploadables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadablesNull: Self = StObject.set(x, "uploadables", null)
+      inline def setUploadablesNull: Self = StObject.set(x, "uploadables", null)
       
-      @scala.inline
-      def setUploadablesUndefined: Self = StObject.set(x, "uploadables", js.undefined)
+      inline def setUploadablesUndefined: Self = StObject.set(x, "uploadables", js.undefined)
       
-      @scala.inline
-      def setVariables(
+      inline def setVariables(
         value: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
       ): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
@@ -186,20 +156,16 @@ object commitMutationMod {
   }
   object MutationParameters {
     
-    @scala.inline
-    def apply(): MutationParameters = {
+    inline def apply(): MutationParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MutationParameters]
     }
     
-    @scala.inline
-    implicit class MutationParametersMutableBuilder[Self <: MutationParameters] (val x: Self) extends AnyVal {
+    extension [Self <: MutationParameters](x: Self) {
       
-      @scala.inline
-      def setRawResponse(value: js.Object): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
+      inline def setRawResponse(value: js.Object): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawResponseUndefined: Self = StObject.set(x, "rawResponse", js.undefined)
+      inline def setRawResponseUndefined: Self = StObject.set(x, "rawResponse", js.undefined)
     }
   }
 }

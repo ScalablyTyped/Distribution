@@ -14,17 +14,14 @@ object vueMod {
   }
   object Vue {
     
-    @scala.inline
-    def apply($store: Store[js.Any]): Vue = {
+    inline def apply($store: Store[js.Any]): Vue = {
       val __obj = js.Dynamic.literal($store = $store.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vue]
     }
     
-    @scala.inline
-    implicit class VueMutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
+    extension [Self <: Vue](x: Self) {
       
-      @scala.inline
-      def set$store(value: Store[js.Any]): Self = StObject.set(x, "$store", value.asInstanceOf[js.Any])
+      inline def set$store(value: Store[js.Any]): Self = StObject.set(x, "$store", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait ClientConnectOptions extends StObject {
 }
 object ClientConnectOptions {
   
-  @scala.inline
-  def apply(): ClientConnectOptions = {
+  inline def apply(): ClientConnectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientConnectOptions]
   }
   
-  @scala.inline
-  implicit class ClientConnectOptionsMutableBuilder[Self <: ClientConnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientConnectOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
+    inline def setLambdaFunctionArn(value: String): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
+    inline def setLambdaFunctionArnUndefined: Self = StObject.set(x, "LambdaFunctionArn", js.undefined)
   }
 }

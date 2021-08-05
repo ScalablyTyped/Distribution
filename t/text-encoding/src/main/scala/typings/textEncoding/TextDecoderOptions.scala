@@ -10,19 +10,15 @@ trait TextDecoderOptions extends StObject {
 }
 object TextDecoderOptions {
   
-  @scala.inline
-  def apply(): TextDecoderOptions = {
+  inline def apply(): TextDecoderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextDecoderOptions]
   }
   
-  @scala.inline
-  implicit class TextDecoderOptionsMutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextDecoderOptions](x: Self) {
     
-    @scala.inline
-    def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
   }
 }

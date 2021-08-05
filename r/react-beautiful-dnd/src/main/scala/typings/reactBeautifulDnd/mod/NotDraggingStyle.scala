@@ -13,25 +13,19 @@ trait NotDraggingStyle extends StObject {
 }
 object NotDraggingStyle {
   
-  @scala.inline
-  def apply(): NotDraggingStyle = {
+  inline def apply(): NotDraggingStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotDraggingStyle]
   }
   
-  @scala.inline
-  implicit class NotDraggingStyleMutableBuilder[Self <: NotDraggingStyle] (val x: Self) extends AnyVal {
+  extension [Self <: NotDraggingStyle](x: Self) {
     
-    @scala.inline
-    def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setTransition(value: none): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: none): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

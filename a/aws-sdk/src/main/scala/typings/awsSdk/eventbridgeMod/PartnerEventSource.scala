@@ -18,25 +18,19 @@ trait PartnerEventSource extends StObject {
 }
 object PartnerEventSource {
   
-  @scala.inline
-  def apply(): PartnerEventSource = {
+  inline def apply(): PartnerEventSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartnerEventSource]
   }
   
-  @scala.inline
-  implicit class PartnerEventSourceMutableBuilder[Self <: PartnerEventSource] (val x: Self) extends AnyVal {
+  extension [Self <: PartnerEventSource](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

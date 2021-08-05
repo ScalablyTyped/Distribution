@@ -10,16 +10,13 @@ trait UpdateScalingParametersResponse extends StObject {
 }
 object UpdateScalingParametersResponse {
   
-  @scala.inline
-  def apply(ScalingParameters: ScalingParametersStatus): UpdateScalingParametersResponse = {
+  inline def apply(ScalingParameters: ScalingParametersStatus): UpdateScalingParametersResponse = {
     val __obj = js.Dynamic.literal(ScalingParameters = ScalingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateScalingParametersResponse]
   }
   
-  @scala.inline
-  implicit class UpdateScalingParametersResponseMutableBuilder[Self <: UpdateScalingParametersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateScalingParametersResponse](x: Self) {
     
-    @scala.inline
-    def setScalingParameters(value: ScalingParametersStatus): Self = StObject.set(x, "ScalingParameters", value.asInstanceOf[js.Any])
+    inline def setScalingParameters(value: ScalingParametersStatus): Self = StObject.set(x, "ScalingParameters", value.asInstanceOf[js.Any])
   }
 }

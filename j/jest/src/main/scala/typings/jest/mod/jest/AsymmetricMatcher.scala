@@ -10,16 +10,13 @@ trait AsymmetricMatcher extends StObject {
 }
 object AsymmetricMatcher {
   
-  @scala.inline
-  def apply(asymmetricMatch: js.Any => Boolean): AsymmetricMatcher = {
+  inline def apply(asymmetricMatch: js.Any => Boolean): AsymmetricMatcher = {
     val __obj = js.Dynamic.literal(asymmetricMatch = js.Any.fromFunction1(asymmetricMatch))
     __obj.asInstanceOf[AsymmetricMatcher]
   }
   
-  @scala.inline
-  implicit class AsymmetricMatcherMutableBuilder[Self <: AsymmetricMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: AsymmetricMatcher](x: Self) {
     
-    @scala.inline
-    def setAsymmetricMatch(value: js.Any => Boolean): Self = StObject.set(x, "asymmetricMatch", js.Any.fromFunction1(value))
+    inline def setAsymmetricMatch(value: js.Any => Boolean): Self = StObject.set(x, "asymmetricMatch", js.Any.fromFunction1(value))
   }
 }

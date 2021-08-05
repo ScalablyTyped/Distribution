@@ -79,8 +79,7 @@ trait IgSplitterMethods extends StObject {
 }
 object IgSplitterMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeGlobalLanguage: () => Unit,
     changeGlobalRegional: () => Unit,
     changeLocale: js.Object => Unit,
@@ -98,43 +97,30 @@ object IgSplitterMethods {
     __obj.asInstanceOf[IgSplitterMethods]
   }
   
-  @scala.inline
-  implicit class IgSplitterMethodsMutableBuilder[Self <: IgSplitterMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgSplitterMethods](x: Self) {
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
+    inline def setChangeLocale(value: js.Object => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCollapseAt(value: js.Object => Unit): Self = StObject.set(x, "collapseAt", js.Any.fromFunction1(value))
+    inline def setCollapseAt(value: js.Object => Unit): Self = StObject.set(x, "collapseAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandAt(value: js.Object => Unit): Self = StObject.set(x, "expandAt", js.Any.fromFunction1(value))
+    inline def setExpandAt(value: js.Object => Unit): Self = StObject.set(x, "expandAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirstPanel(value: () => js.Object): Self = StObject.set(x, "firstPanel", js.Any.fromFunction0(value))
+    inline def setFirstPanel(value: () => js.Object): Self = StObject.set(x, "firstPanel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshLayout(value: () => Unit): Self = StObject.set(x, "refreshLayout", js.Any.fromFunction0(value))
+    inline def setRefreshLayout(value: () => Unit): Self = StObject.set(x, "refreshLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSecondPanel(value: () => js.Object): Self = StObject.set(x, "secondPanel", js.Any.fromFunction0(value))
+    inline def setSecondPanel(value: () => js.Object): Self = StObject.set(x, "secondPanel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFirstPanelSize(value: js.Object => Unit): Self = StObject.set(x, "setFirstPanelSize", js.Any.fromFunction1(value))
+    inline def setSetFirstPanelSize(value: js.Object => Unit): Self = StObject.set(x, "setFirstPanelSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSecondPanelSize(value: js.Object => Unit): Self = StObject.set(x, "setSecondPanelSize", js.Any.fromFunction1(value))
+    inline def setSetSecondPanelSize(value: js.Object => Unit): Self = StObject.set(x, "setSecondPanelSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWidget(value: () => js.Object): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
+    inline def setWidget(value: () => js.Object): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

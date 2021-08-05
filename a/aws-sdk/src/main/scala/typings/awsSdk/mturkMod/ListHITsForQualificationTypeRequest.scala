@@ -23,28 +23,21 @@ trait ListHITsForQualificationTypeRequest extends StObject {
 }
 object ListHITsForQualificationTypeRequest {
   
-  @scala.inline
-  def apply(QualificationTypeId: EntityId): ListHITsForQualificationTypeRequest = {
+  inline def apply(QualificationTypeId: EntityId): ListHITsForQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHITsForQualificationTypeRequest]
   }
   
-  @scala.inline
-  implicit class ListHITsForQualificationTypeRequestMutableBuilder[Self <: ListHITsForQualificationTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListHITsForQualificationTypeRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
   }
 }

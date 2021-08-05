@@ -48,43 +48,31 @@ trait ParamsResourceBackendbucketsDeletesignedurlkey
 }
 object ParamsResourceBackendbucketsDeletesignedurlkey {
   
-  @scala.inline
-  def apply(): ParamsResourceBackendbucketsDeletesignedurlkey = {
+  inline def apply(): ParamsResourceBackendbucketsDeletesignedurlkey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBackendbucketsDeletesignedurlkey]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBackendbucketsDeletesignedurlkeyMutableBuilder[Self <: ParamsResourceBackendbucketsDeletesignedurlkey] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBackendbucketsDeletesignedurlkey](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBackendBucket(value: String): Self = StObject.set(x, "backendBucket", value.asInstanceOf[js.Any])
+    inline def setBackendBucket(value: String): Self = StObject.set(x, "backendBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendBucketUndefined: Self = StObject.set(x, "backendBucket", js.undefined)
+    inline def setBackendBucketUndefined: Self = StObject.set(x, "backendBucket", js.undefined)
     
-    @scala.inline
-    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
+    inline def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

@@ -19,14 +19,10 @@ object mod {
     * @param {Object} opts optional "options" object
     * @return {Function} async resolver function
     */
-  @scala.inline
-  def apply(_str: String): FnCall = ^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any]).asInstanceOf[FnCall]
-  @scala.inline
-  def apply(_str: String, _opts: PacResolverOptions): FnCall = (^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any], _opts.asInstanceOf[js.Any])).asInstanceOf[FnCall]
-  @scala.inline
-  def apply(_str: Buffer): FnCall = ^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any]).asInstanceOf[FnCall]
-  @scala.inline
-  def apply(_str: Buffer, _opts: PacResolverOptions): FnCall = (^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any], _opts.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def apply(_str: String): FnCall = ^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  inline def apply(_str: String, _opts: PacResolverOptions): FnCall = (^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any], _opts.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def apply(_str: Buffer): FnCall = ^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any]).asInstanceOf[FnCall]
+  inline def apply(_str: Buffer, _opts: PacResolverOptions): FnCall = (^.asInstanceOf[js.Dynamic].apply(_str.asInstanceOf[js.Any], _opts.asInstanceOf[js.Any])).asInstanceOf[FnCall]
   
   @JSImport("pac-resolver", JSImport.Namespace)
   @js.native
@@ -68,98 +64,67 @@ object mod {
   trait Day extends StObject
   object Day {
     
-    @scala.inline
-    def `1`: typings.pacResolver.pacResolverNumbers.`1` = 1.asInstanceOf[typings.pacResolver.pacResolverNumbers.`1`]
+    inline def `1`: typings.pacResolver.pacResolverNumbers.`1` = 1.asInstanceOf[typings.pacResolver.pacResolverNumbers.`1`]
     
-    @scala.inline
-    def `10`: typings.pacResolver.pacResolverNumbers.`10` = 10.asInstanceOf[typings.pacResolver.pacResolverNumbers.`10`]
+    inline def `10`: typings.pacResolver.pacResolverNumbers.`10` = 10.asInstanceOf[typings.pacResolver.pacResolverNumbers.`10`]
     
-    @scala.inline
-    def `11`: typings.pacResolver.pacResolverNumbers.`11` = 11.asInstanceOf[typings.pacResolver.pacResolverNumbers.`11`]
+    inline def `11`: typings.pacResolver.pacResolverNumbers.`11` = 11.asInstanceOf[typings.pacResolver.pacResolverNumbers.`11`]
     
-    @scala.inline
-    def `12`: typings.pacResolver.pacResolverNumbers.`12` = 12.asInstanceOf[typings.pacResolver.pacResolverNumbers.`12`]
+    inline def `12`: typings.pacResolver.pacResolverNumbers.`12` = 12.asInstanceOf[typings.pacResolver.pacResolverNumbers.`12`]
     
-    @scala.inline
-    def `13`: typings.pacResolver.pacResolverNumbers.`13` = 13.asInstanceOf[typings.pacResolver.pacResolverNumbers.`13`]
+    inline def `13`: typings.pacResolver.pacResolverNumbers.`13` = 13.asInstanceOf[typings.pacResolver.pacResolverNumbers.`13`]
     
-    @scala.inline
-    def `14`: typings.pacResolver.pacResolverNumbers.`14` = 14.asInstanceOf[typings.pacResolver.pacResolverNumbers.`14`]
+    inline def `14`: typings.pacResolver.pacResolverNumbers.`14` = 14.asInstanceOf[typings.pacResolver.pacResolverNumbers.`14`]
     
-    @scala.inline
-    def `15`: typings.pacResolver.pacResolverNumbers.`15` = 15.asInstanceOf[typings.pacResolver.pacResolverNumbers.`15`]
+    inline def `15`: typings.pacResolver.pacResolverNumbers.`15` = 15.asInstanceOf[typings.pacResolver.pacResolverNumbers.`15`]
     
-    @scala.inline
-    def `16`: typings.pacResolver.pacResolverNumbers.`16` = 16.asInstanceOf[typings.pacResolver.pacResolverNumbers.`16`]
+    inline def `16`: typings.pacResolver.pacResolverNumbers.`16` = 16.asInstanceOf[typings.pacResolver.pacResolverNumbers.`16`]
     
-    @scala.inline
-    def `17`: typings.pacResolver.pacResolverNumbers.`17` = 17.asInstanceOf[typings.pacResolver.pacResolverNumbers.`17`]
+    inline def `17`: typings.pacResolver.pacResolverNumbers.`17` = 17.asInstanceOf[typings.pacResolver.pacResolverNumbers.`17`]
     
-    @scala.inline
-    def `18`: typings.pacResolver.pacResolverNumbers.`18` = 18.asInstanceOf[typings.pacResolver.pacResolverNumbers.`18`]
+    inline def `18`: typings.pacResolver.pacResolverNumbers.`18` = 18.asInstanceOf[typings.pacResolver.pacResolverNumbers.`18`]
     
-    @scala.inline
-    def `19`: typings.pacResolver.pacResolverNumbers.`19` = 19.asInstanceOf[typings.pacResolver.pacResolverNumbers.`19`]
+    inline def `19`: typings.pacResolver.pacResolverNumbers.`19` = 19.asInstanceOf[typings.pacResolver.pacResolverNumbers.`19`]
     
-    @scala.inline
-    def `2`: typings.pacResolver.pacResolverNumbers.`2` = 2.asInstanceOf[typings.pacResolver.pacResolverNumbers.`2`]
+    inline def `2`: typings.pacResolver.pacResolverNumbers.`2` = 2.asInstanceOf[typings.pacResolver.pacResolverNumbers.`2`]
     
-    @scala.inline
-    def `20`: typings.pacResolver.pacResolverNumbers.`20` = 20.asInstanceOf[typings.pacResolver.pacResolverNumbers.`20`]
+    inline def `20`: typings.pacResolver.pacResolverNumbers.`20` = 20.asInstanceOf[typings.pacResolver.pacResolverNumbers.`20`]
     
-    @scala.inline
-    def `21`: typings.pacResolver.pacResolverNumbers.`21` = 21.asInstanceOf[typings.pacResolver.pacResolverNumbers.`21`]
+    inline def `21`: typings.pacResolver.pacResolverNumbers.`21` = 21.asInstanceOf[typings.pacResolver.pacResolverNumbers.`21`]
     
-    @scala.inline
-    def `22`: typings.pacResolver.pacResolverNumbers.`22` = 22.asInstanceOf[typings.pacResolver.pacResolverNumbers.`22`]
+    inline def `22`: typings.pacResolver.pacResolverNumbers.`22` = 22.asInstanceOf[typings.pacResolver.pacResolverNumbers.`22`]
     
-    @scala.inline
-    def `23`: typings.pacResolver.pacResolverNumbers.`23` = 23.asInstanceOf[typings.pacResolver.pacResolverNumbers.`23`]
+    inline def `23`: typings.pacResolver.pacResolverNumbers.`23` = 23.asInstanceOf[typings.pacResolver.pacResolverNumbers.`23`]
     
-    @scala.inline
-    def `24`: typings.pacResolver.pacResolverNumbers.`24` = 24.asInstanceOf[typings.pacResolver.pacResolverNumbers.`24`]
+    inline def `24`: typings.pacResolver.pacResolverNumbers.`24` = 24.asInstanceOf[typings.pacResolver.pacResolverNumbers.`24`]
     
-    @scala.inline
-    def `25`: typings.pacResolver.pacResolverNumbers.`25` = 25.asInstanceOf[typings.pacResolver.pacResolverNumbers.`25`]
+    inline def `25`: typings.pacResolver.pacResolverNumbers.`25` = 25.asInstanceOf[typings.pacResolver.pacResolverNumbers.`25`]
     
-    @scala.inline
-    def `26`: typings.pacResolver.pacResolverNumbers.`26` = 26.asInstanceOf[typings.pacResolver.pacResolverNumbers.`26`]
+    inline def `26`: typings.pacResolver.pacResolverNumbers.`26` = 26.asInstanceOf[typings.pacResolver.pacResolverNumbers.`26`]
     
-    @scala.inline
-    def `27`: typings.pacResolver.pacResolverNumbers.`27` = 27.asInstanceOf[typings.pacResolver.pacResolverNumbers.`27`]
+    inline def `27`: typings.pacResolver.pacResolverNumbers.`27` = 27.asInstanceOf[typings.pacResolver.pacResolverNumbers.`27`]
     
-    @scala.inline
-    def `28`: typings.pacResolver.pacResolverNumbers.`28` = 28.asInstanceOf[typings.pacResolver.pacResolverNumbers.`28`]
+    inline def `28`: typings.pacResolver.pacResolverNumbers.`28` = 28.asInstanceOf[typings.pacResolver.pacResolverNumbers.`28`]
     
-    @scala.inline
-    def `29`: typings.pacResolver.pacResolverNumbers.`29` = 29.asInstanceOf[typings.pacResolver.pacResolverNumbers.`29`]
+    inline def `29`: typings.pacResolver.pacResolverNumbers.`29` = 29.asInstanceOf[typings.pacResolver.pacResolverNumbers.`29`]
     
-    @scala.inline
-    def `3`: typings.pacResolver.pacResolverNumbers.`3` = 3.asInstanceOf[typings.pacResolver.pacResolverNumbers.`3`]
+    inline def `3`: typings.pacResolver.pacResolverNumbers.`3` = 3.asInstanceOf[typings.pacResolver.pacResolverNumbers.`3`]
     
-    @scala.inline
-    def `30`: typings.pacResolver.pacResolverNumbers.`30` = 30.asInstanceOf[typings.pacResolver.pacResolverNumbers.`30`]
+    inline def `30`: typings.pacResolver.pacResolverNumbers.`30` = 30.asInstanceOf[typings.pacResolver.pacResolverNumbers.`30`]
     
-    @scala.inline
-    def `31`: typings.pacResolver.pacResolverNumbers.`31` = 31.asInstanceOf[typings.pacResolver.pacResolverNumbers.`31`]
+    inline def `31`: typings.pacResolver.pacResolverNumbers.`31` = 31.asInstanceOf[typings.pacResolver.pacResolverNumbers.`31`]
     
-    @scala.inline
-    def `4`: typings.pacResolver.pacResolverNumbers.`4` = 4.asInstanceOf[typings.pacResolver.pacResolverNumbers.`4`]
+    inline def `4`: typings.pacResolver.pacResolverNumbers.`4` = 4.asInstanceOf[typings.pacResolver.pacResolverNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.pacResolver.pacResolverNumbers.`5` = 5.asInstanceOf[typings.pacResolver.pacResolverNumbers.`5`]
+    inline def `5`: typings.pacResolver.pacResolverNumbers.`5` = 5.asInstanceOf[typings.pacResolver.pacResolverNumbers.`5`]
     
-    @scala.inline
-    def `6`: typings.pacResolver.pacResolverNumbers.`6` = 6.asInstanceOf[typings.pacResolver.pacResolverNumbers.`6`]
+    inline def `6`: typings.pacResolver.pacResolverNumbers.`6` = 6.asInstanceOf[typings.pacResolver.pacResolverNumbers.`6`]
     
-    @scala.inline
-    def `7`: typings.pacResolver.pacResolverNumbers.`7` = 7.asInstanceOf[typings.pacResolver.pacResolverNumbers.`7`]
+    inline def `7`: typings.pacResolver.pacResolverNumbers.`7` = 7.asInstanceOf[typings.pacResolver.pacResolverNumbers.`7`]
     
-    @scala.inline
-    def `8`: typings.pacResolver.pacResolverNumbers.`8` = 8.asInstanceOf[typings.pacResolver.pacResolverNumbers.`8`]
+    inline def `8`: typings.pacResolver.pacResolverNumbers.`8` = 8.asInstanceOf[typings.pacResolver.pacResolverNumbers.`8`]
     
-    @scala.inline
-    def `9`: typings.pacResolver.pacResolverNumbers.`9` = 9.asInstanceOf[typings.pacResolver.pacResolverNumbers.`9`]
+    inline def `9`: typings.pacResolver.pacResolverNumbers.`9` = 9.asInstanceOf[typings.pacResolver.pacResolverNumbers.`9`]
   }
   
   type FindProxyForURL = ReturnType[
@@ -199,77 +164,53 @@ object mod {
   trait Hour extends StObject
   object Hour {
     
-    @scala.inline
-    def `0`: typings.pacResolver.pacResolverNumbers.`0` = 0.asInstanceOf[typings.pacResolver.pacResolverNumbers.`0`]
+    inline def `0`: typings.pacResolver.pacResolverNumbers.`0` = 0.asInstanceOf[typings.pacResolver.pacResolverNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.pacResolver.pacResolverNumbers.`1` = 1.asInstanceOf[typings.pacResolver.pacResolverNumbers.`1`]
+    inline def `1`: typings.pacResolver.pacResolverNumbers.`1` = 1.asInstanceOf[typings.pacResolver.pacResolverNumbers.`1`]
     
-    @scala.inline
-    def `10`: typings.pacResolver.pacResolverNumbers.`10` = 10.asInstanceOf[typings.pacResolver.pacResolverNumbers.`10`]
+    inline def `10`: typings.pacResolver.pacResolverNumbers.`10` = 10.asInstanceOf[typings.pacResolver.pacResolverNumbers.`10`]
     
-    @scala.inline
-    def `11`: typings.pacResolver.pacResolverNumbers.`11` = 11.asInstanceOf[typings.pacResolver.pacResolverNumbers.`11`]
+    inline def `11`: typings.pacResolver.pacResolverNumbers.`11` = 11.asInstanceOf[typings.pacResolver.pacResolverNumbers.`11`]
     
-    @scala.inline
-    def `12`: typings.pacResolver.pacResolverNumbers.`12` = 12.asInstanceOf[typings.pacResolver.pacResolverNumbers.`12`]
+    inline def `12`: typings.pacResolver.pacResolverNumbers.`12` = 12.asInstanceOf[typings.pacResolver.pacResolverNumbers.`12`]
     
-    @scala.inline
-    def `13`: typings.pacResolver.pacResolverNumbers.`13` = 13.asInstanceOf[typings.pacResolver.pacResolverNumbers.`13`]
+    inline def `13`: typings.pacResolver.pacResolverNumbers.`13` = 13.asInstanceOf[typings.pacResolver.pacResolverNumbers.`13`]
     
-    @scala.inline
-    def `14`: typings.pacResolver.pacResolverNumbers.`14` = 14.asInstanceOf[typings.pacResolver.pacResolverNumbers.`14`]
+    inline def `14`: typings.pacResolver.pacResolverNumbers.`14` = 14.asInstanceOf[typings.pacResolver.pacResolverNumbers.`14`]
     
-    @scala.inline
-    def `15`: typings.pacResolver.pacResolverNumbers.`15` = 15.asInstanceOf[typings.pacResolver.pacResolverNumbers.`15`]
+    inline def `15`: typings.pacResolver.pacResolverNumbers.`15` = 15.asInstanceOf[typings.pacResolver.pacResolverNumbers.`15`]
     
-    @scala.inline
-    def `16`: typings.pacResolver.pacResolverNumbers.`16` = 16.asInstanceOf[typings.pacResolver.pacResolverNumbers.`16`]
+    inline def `16`: typings.pacResolver.pacResolverNumbers.`16` = 16.asInstanceOf[typings.pacResolver.pacResolverNumbers.`16`]
     
-    @scala.inline
-    def `17`: typings.pacResolver.pacResolverNumbers.`17` = 17.asInstanceOf[typings.pacResolver.pacResolverNumbers.`17`]
+    inline def `17`: typings.pacResolver.pacResolverNumbers.`17` = 17.asInstanceOf[typings.pacResolver.pacResolverNumbers.`17`]
     
-    @scala.inline
-    def `18`: typings.pacResolver.pacResolverNumbers.`18` = 18.asInstanceOf[typings.pacResolver.pacResolverNumbers.`18`]
+    inline def `18`: typings.pacResolver.pacResolverNumbers.`18` = 18.asInstanceOf[typings.pacResolver.pacResolverNumbers.`18`]
     
-    @scala.inline
-    def `19`: typings.pacResolver.pacResolverNumbers.`19` = 19.asInstanceOf[typings.pacResolver.pacResolverNumbers.`19`]
+    inline def `19`: typings.pacResolver.pacResolverNumbers.`19` = 19.asInstanceOf[typings.pacResolver.pacResolverNumbers.`19`]
     
-    @scala.inline
-    def `2`: typings.pacResolver.pacResolverNumbers.`2` = 2.asInstanceOf[typings.pacResolver.pacResolverNumbers.`2`]
+    inline def `2`: typings.pacResolver.pacResolverNumbers.`2` = 2.asInstanceOf[typings.pacResolver.pacResolverNumbers.`2`]
     
-    @scala.inline
-    def `20`: typings.pacResolver.pacResolverNumbers.`20` = 20.asInstanceOf[typings.pacResolver.pacResolverNumbers.`20`]
+    inline def `20`: typings.pacResolver.pacResolverNumbers.`20` = 20.asInstanceOf[typings.pacResolver.pacResolverNumbers.`20`]
     
-    @scala.inline
-    def `21`: typings.pacResolver.pacResolverNumbers.`21` = 21.asInstanceOf[typings.pacResolver.pacResolverNumbers.`21`]
+    inline def `21`: typings.pacResolver.pacResolverNumbers.`21` = 21.asInstanceOf[typings.pacResolver.pacResolverNumbers.`21`]
     
-    @scala.inline
-    def `22`: typings.pacResolver.pacResolverNumbers.`22` = 22.asInstanceOf[typings.pacResolver.pacResolverNumbers.`22`]
+    inline def `22`: typings.pacResolver.pacResolverNumbers.`22` = 22.asInstanceOf[typings.pacResolver.pacResolverNumbers.`22`]
     
-    @scala.inline
-    def `23`: typings.pacResolver.pacResolverNumbers.`23` = 23.asInstanceOf[typings.pacResolver.pacResolverNumbers.`23`]
+    inline def `23`: typings.pacResolver.pacResolverNumbers.`23` = 23.asInstanceOf[typings.pacResolver.pacResolverNumbers.`23`]
     
-    @scala.inline
-    def `3`: typings.pacResolver.pacResolverNumbers.`3` = 3.asInstanceOf[typings.pacResolver.pacResolverNumbers.`3`]
+    inline def `3`: typings.pacResolver.pacResolverNumbers.`3` = 3.asInstanceOf[typings.pacResolver.pacResolverNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.pacResolver.pacResolverNumbers.`4` = 4.asInstanceOf[typings.pacResolver.pacResolverNumbers.`4`]
+    inline def `4`: typings.pacResolver.pacResolverNumbers.`4` = 4.asInstanceOf[typings.pacResolver.pacResolverNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.pacResolver.pacResolverNumbers.`5` = 5.asInstanceOf[typings.pacResolver.pacResolverNumbers.`5`]
+    inline def `5`: typings.pacResolver.pacResolverNumbers.`5` = 5.asInstanceOf[typings.pacResolver.pacResolverNumbers.`5`]
     
-    @scala.inline
-    def `6`: typings.pacResolver.pacResolverNumbers.`6` = 6.asInstanceOf[typings.pacResolver.pacResolverNumbers.`6`]
+    inline def `6`: typings.pacResolver.pacResolverNumbers.`6` = 6.asInstanceOf[typings.pacResolver.pacResolverNumbers.`6`]
     
-    @scala.inline
-    def `7`: typings.pacResolver.pacResolverNumbers.`7` = 7.asInstanceOf[typings.pacResolver.pacResolverNumbers.`7`]
+    inline def `7`: typings.pacResolver.pacResolverNumbers.`7` = 7.asInstanceOf[typings.pacResolver.pacResolverNumbers.`7`]
     
-    @scala.inline
-    def `8`: typings.pacResolver.pacResolverNumbers.`8` = 8.asInstanceOf[typings.pacResolver.pacResolverNumbers.`8`]
+    inline def `8`: typings.pacResolver.pacResolverNumbers.`8` = 8.asInstanceOf[typings.pacResolver.pacResolverNumbers.`8`]
     
-    @scala.inline
-    def `9`: typings.pacResolver.pacResolverNumbers.`9` = 9.asInstanceOf[typings.pacResolver.pacResolverNumbers.`9`]
+    inline def `9`: typings.pacResolver.pacResolverNumbers.`9` = 9.asInstanceOf[typings.pacResolver.pacResolverNumbers.`9`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -289,41 +230,29 @@ object mod {
   trait Month extends StObject
   object Month {
     
-    @scala.inline
-    def APR: typings.pacResolver.pacResolverStrings.APR = "APR".asInstanceOf[typings.pacResolver.pacResolverStrings.APR]
+    inline def APR: typings.pacResolver.pacResolverStrings.APR = "APR".asInstanceOf[typings.pacResolver.pacResolverStrings.APR]
     
-    @scala.inline
-    def AUG: typings.pacResolver.pacResolverStrings.AUG = "AUG".asInstanceOf[typings.pacResolver.pacResolverStrings.AUG]
+    inline def AUG: typings.pacResolver.pacResolverStrings.AUG = "AUG".asInstanceOf[typings.pacResolver.pacResolverStrings.AUG]
     
-    @scala.inline
-    def DEC: typings.pacResolver.pacResolverStrings.DEC = "DEC".asInstanceOf[typings.pacResolver.pacResolverStrings.DEC]
+    inline def DEC: typings.pacResolver.pacResolverStrings.DEC = "DEC".asInstanceOf[typings.pacResolver.pacResolverStrings.DEC]
     
-    @scala.inline
-    def FEB: typings.pacResolver.pacResolverStrings.FEB = "FEB".asInstanceOf[typings.pacResolver.pacResolverStrings.FEB]
+    inline def FEB: typings.pacResolver.pacResolverStrings.FEB = "FEB".asInstanceOf[typings.pacResolver.pacResolverStrings.FEB]
     
-    @scala.inline
-    def JAN: typings.pacResolver.pacResolverStrings.JAN = "JAN".asInstanceOf[typings.pacResolver.pacResolverStrings.JAN]
+    inline def JAN: typings.pacResolver.pacResolverStrings.JAN = "JAN".asInstanceOf[typings.pacResolver.pacResolverStrings.JAN]
     
-    @scala.inline
-    def JUL: typings.pacResolver.pacResolverStrings.JUL = "JUL".asInstanceOf[typings.pacResolver.pacResolverStrings.JUL]
+    inline def JUL: typings.pacResolver.pacResolverStrings.JUL = "JUL".asInstanceOf[typings.pacResolver.pacResolverStrings.JUL]
     
-    @scala.inline
-    def JUN: typings.pacResolver.pacResolverStrings.JUN = "JUN".asInstanceOf[typings.pacResolver.pacResolverStrings.JUN]
+    inline def JUN: typings.pacResolver.pacResolverStrings.JUN = "JUN".asInstanceOf[typings.pacResolver.pacResolverStrings.JUN]
     
-    @scala.inline
-    def MAR: typings.pacResolver.pacResolverStrings.MAR = "MAR".asInstanceOf[typings.pacResolver.pacResolverStrings.MAR]
+    inline def MAR: typings.pacResolver.pacResolverStrings.MAR = "MAR".asInstanceOf[typings.pacResolver.pacResolverStrings.MAR]
     
-    @scala.inline
-    def MAY: typings.pacResolver.pacResolverStrings.MAY = "MAY".asInstanceOf[typings.pacResolver.pacResolverStrings.MAY]
+    inline def MAY: typings.pacResolver.pacResolverStrings.MAY = "MAY".asInstanceOf[typings.pacResolver.pacResolverStrings.MAY]
     
-    @scala.inline
-    def NOV: typings.pacResolver.pacResolverStrings.NOV = "NOV".asInstanceOf[typings.pacResolver.pacResolverStrings.NOV]
+    inline def NOV: typings.pacResolver.pacResolverStrings.NOV = "NOV".asInstanceOf[typings.pacResolver.pacResolverStrings.NOV]
     
-    @scala.inline
-    def OCT: typings.pacResolver.pacResolverStrings.OCT = "OCT".asInstanceOf[typings.pacResolver.pacResolverStrings.OCT]
+    inline def OCT: typings.pacResolver.pacResolverStrings.OCT = "OCT".asInstanceOf[typings.pacResolver.pacResolverStrings.OCT]
     
-    @scala.inline
-    def SEP: typings.pacResolver.pacResolverStrings.SEP = "SEP".asInstanceOf[typings.pacResolver.pacResolverStrings.SEP]
+    inline def SEP: typings.pacResolver.pacResolverStrings.SEP = "SEP".asInstanceOf[typings.pacResolver.pacResolverStrings.SEP]
   }
   
   type PacResolverOptions = CompileOptions
@@ -340,26 +269,19 @@ object mod {
   trait Weekday extends StObject
   object Weekday {
     
-    @scala.inline
-    def FRI: typings.pacResolver.pacResolverStrings.FRI = "FRI".asInstanceOf[typings.pacResolver.pacResolverStrings.FRI]
+    inline def FRI: typings.pacResolver.pacResolverStrings.FRI = "FRI".asInstanceOf[typings.pacResolver.pacResolverStrings.FRI]
     
-    @scala.inline
-    def MON: typings.pacResolver.pacResolverStrings.MON = "MON".asInstanceOf[typings.pacResolver.pacResolverStrings.MON]
+    inline def MON: typings.pacResolver.pacResolverStrings.MON = "MON".asInstanceOf[typings.pacResolver.pacResolverStrings.MON]
     
-    @scala.inline
-    def SAT: typings.pacResolver.pacResolverStrings.SAT = "SAT".asInstanceOf[typings.pacResolver.pacResolverStrings.SAT]
+    inline def SAT: typings.pacResolver.pacResolverStrings.SAT = "SAT".asInstanceOf[typings.pacResolver.pacResolverStrings.SAT]
     
-    @scala.inline
-    def SUN: typings.pacResolver.pacResolverStrings.SUN = "SUN".asInstanceOf[typings.pacResolver.pacResolverStrings.SUN]
+    inline def SUN: typings.pacResolver.pacResolverStrings.SUN = "SUN".asInstanceOf[typings.pacResolver.pacResolverStrings.SUN]
     
-    @scala.inline
-    def THU: typings.pacResolver.pacResolverStrings.THU = "THU".asInstanceOf[typings.pacResolver.pacResolverStrings.THU]
+    inline def THU: typings.pacResolver.pacResolverStrings.THU = "THU".asInstanceOf[typings.pacResolver.pacResolverStrings.THU]
     
-    @scala.inline
-    def TUE: typings.pacResolver.pacResolverStrings.TUE = "TUE".asInstanceOf[typings.pacResolver.pacResolverStrings.TUE]
+    inline def TUE: typings.pacResolver.pacResolverStrings.TUE = "TUE".asInstanceOf[typings.pacResolver.pacResolverStrings.TUE]
     
-    @scala.inline
-    def WED: typings.pacResolver.pacResolverStrings.WED = "WED".asInstanceOf[typings.pacResolver.pacResolverStrings.WED]
+    inline def WED: typings.pacResolver.pacResolverStrings.WED = "WED".asInstanceOf[typings.pacResolver.pacResolverStrings.WED]
   }
   
   /* Inlined std.Readonly<node.vm.Context> */

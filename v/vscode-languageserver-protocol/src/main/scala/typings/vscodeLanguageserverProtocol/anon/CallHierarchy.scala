@@ -15,19 +15,15 @@ trait CallHierarchy extends StObject {
 }
 object CallHierarchy {
   
-  @scala.inline
-  def apply(): CallHierarchy = {
+  inline def apply(): CallHierarchy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallHierarchy]
   }
   
-  @scala.inline
-  implicit class CallHierarchyMutableBuilder[Self <: CallHierarchy] (val x: Self) extends AnyVal {
+  extension [Self <: CallHierarchy](x: Self) {
     
-    @scala.inline
-    def setCallHierarchy(value: DynamicRegistration): Self = StObject.set(x, "callHierarchy", value.asInstanceOf[js.Any])
+    inline def setCallHierarchy(value: DynamicRegistration): Self = StObject.set(x, "callHierarchy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallHierarchyUndefined: Self = StObject.set(x, "callHierarchy", js.undefined)
+    inline def setCallHierarchyUndefined: Self = StObject.set(x, "callHierarchy", js.undefined)
   }
 }

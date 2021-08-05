@@ -12,17 +12,13 @@ object firebaseDependenciesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
-  @scala.inline
-  def getFakeApp(
+  inline def getFakeApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[FirebaseApp]
+  inline def getFakeApp(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseOptions */ js.Any
   ): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(options.asInstanceOf[js.Any]).asInstanceOf[FirebaseApp]
   
-  @scala.inline
-  def getFakeFirebaseDependencies(): FirebaseInternalDependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeFirebaseDependencies")().asInstanceOf[FirebaseInternalDependencies]
-  @scala.inline
-  def getFakeFirebaseDependencies(
+  inline def getFakeFirebaseDependencies(): FirebaseInternalDependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeFirebaseDependencies")().asInstanceOf[FirebaseInternalDependencies]
+  inline def getFakeFirebaseDependencies(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseOptions */ js.Any
   ): FirebaseInternalDependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeFirebaseDependencies")(options.asInstanceOf[js.Any]).asInstanceOf[FirebaseInternalDependencies]
 }

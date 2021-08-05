@@ -37,27 +37,21 @@ trait ParameterValueProperties extends StObject {
 }
 object ParameterValueProperties {
   
-  @scala.inline
-  def apply(): ParameterValueProperties = {
+  inline def apply(): ParameterValueProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterValueProperties]
   }
   
-  @scala.inline
-  implicit class ParameterValuePropertiesMutableBuilder[Self <: ParameterValueProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterValueProperties](x: Self) {
     
-    @scala.inline
-    def setDataType(
+    inline def setDataType(
       value: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string | `multi-value`
     ): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

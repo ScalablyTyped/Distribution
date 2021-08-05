@@ -13,19 +13,15 @@ trait CORSConfiguration extends StObject {
 }
 object CORSConfiguration {
   
-  @scala.inline
-  def apply(CORSRules: CORSRules): CORSConfiguration = {
+  inline def apply(CORSRules: CORSRules): CORSConfiguration = {
     val __obj = js.Dynamic.literal(CORSRules = CORSRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[CORSConfiguration]
   }
   
-  @scala.inline
-  implicit class CORSConfigurationMutableBuilder[Self <: CORSConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CORSConfiguration](x: Self) {
     
-    @scala.inline
-    def setCORSRules(value: CORSRules): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
+    inline def setCORSRules(value: CORSRules): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
+    inline def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
   }
 }

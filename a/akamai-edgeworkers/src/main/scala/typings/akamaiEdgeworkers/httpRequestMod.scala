@@ -26,10 +26,8 @@ object httpRequestMod {
     *  - `body` The request payload.
     *  - `timeout` The request timeout, in milliseconds.
     */
-  @scala.inline
-  def httpRequest(url: String): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
-  @scala.inline
-  def httpRequest(url: String, options: Headers): js.Promise[HttpResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpResponse]]
+  inline def httpRequest(url: String): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
+  inline def httpRequest(url: String, options: Headers): js.Promise[HttpResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpResponse]]
   
   /**
     * Describes the result of a `httpRequest()`.
@@ -64,8 +62,7 @@ object httpRequestMod {
   }
   object HttpResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: ReadableStream[js.Any],
       getHeader: String => js.Array[String] | Null,
       json: () => js.Promise[js.Any],
@@ -77,23 +74,17 @@ object httpRequestMod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    @scala.inline
-    implicit class HttpResponseMutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
+    extension [Self <: HttpResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: ReadableStream[js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream[js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
 }

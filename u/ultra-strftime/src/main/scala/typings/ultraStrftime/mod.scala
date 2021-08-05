@@ -7,72 +7,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(fmt: String): String = ^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String): String = ^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("ultra-strftime", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def localizedStrftime(locale: Locale): StrftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("localizedStrftime")(locale.asInstanceOf[js.Any]).asInstanceOf[StrftimeFunction]
+  inline def localizedStrftime(locale: Locale): StrftimeFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("localizedStrftime")(locale.asInstanceOf[js.Any]).asInstanceOf[StrftimeFunction]
   
-  @scala.inline
-  def strftime(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftime(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def strftime(fmt: String, d: Unit, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: Unit, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: Date, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, d: Date, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, locale: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftime(fmt: String, locale: Locale, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftime")(fmt.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def strftimeTZ(fmt: String, d: Date, locale: Locale, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftimeTZ(fmt: String, d: Date, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeTZ(fmt: String, d: Date, locale: Locale, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeTZ(fmt: String, d: Date, timezone: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeTZ")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], timezone.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def strftimeUTC(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def strftimeUTC(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftimeUTC(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def strftimeUTC(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeUTC(fmt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def strftimeUTC(fmt: String, d: Unit, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeUTC(fmt: String, d: Date): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def strftimeUTC(fmt: String, d: Date, locale: Locale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("strftimeUTC")(fmt.asInstanceOf[js.Any], d.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Locale extends StObject {
     
@@ -96,8 +67,7 @@ object mod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AM: String,
       PM: String,
       am: String,
@@ -112,41 +82,29 @@ object mod {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setAM(value: String): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
+      inline def setAM(value: String): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
       
-      @scala.inline
-      def setFormats(value: LocaleFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: LocaleFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
       
-      @scala.inline
-      def setPM(value: String): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
+      inline def setPM(value: String): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
+      inline def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
       
-      @scala.inline
-      def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
+      inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
     }
   }
   
@@ -181,35 +139,26 @@ object mod {
   }
   object LocaleFormats {
     
-    @scala.inline
-    def apply(D: String, F: String, R: String, T: String, X: String, c: String, r: String, v: String, x: String): LocaleFormats = {
+    inline def apply(D: String, F: String, R: String, T: String, X: String, c: String, r: String, v: String, x: String): LocaleFormats = {
       val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], F = F.asInstanceOf[js.Any], R = R.asInstanceOf[js.Any], T = T.asInstanceOf[js.Any], X = X.asInstanceOf[js.Any], c = c.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocaleFormats]
     }
     
-    @scala.inline
-    implicit class LocaleFormatsMutableBuilder[Self <: LocaleFormats] (val x: Self) extends AnyVal {
+    extension [Self <: LocaleFormats](x: Self) {
       
-      @scala.inline
-      def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+      inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      inline def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
+      inline def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: String): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
+      inline def setR(value: String): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: String): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
+      inline def setT(value: String): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,26 +170,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setTimezone(value: String | Double): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String | Double): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
     }
   }
   

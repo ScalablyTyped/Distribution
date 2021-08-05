@@ -35,46 +35,33 @@ trait SchemaPollingOptions extends StObject {
 }
 object SchemaPollingOptions {
   
-  @scala.inline
-  def apply(): SchemaPollingOptions = {
+  inline def apply(): SchemaPollingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPollingOptions]
   }
   
-  @scala.inline
-  implicit class SchemaPollingOptionsMutableBuilder[Self <: SchemaPollingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPollingOptions](x: Self) {
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[SchemaDiagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: SchemaDiagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setFailCondition(value: String): Self = StObject.set(x, "failCondition", value.asInstanceOf[js.Any])
+    inline def setFailCondition(value: String): Self = StObject.set(x, "failCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailConditionUndefined: Self = StObject.set(x, "failCondition", js.undefined)
+    inline def setFailConditionUndefined: Self = StObject.set(x, "failCondition", js.undefined)
     
-    @scala.inline
-    def setFinishCondition(value: String): Self = StObject.set(x, "finishCondition", value.asInstanceOf[js.Any])
+    inline def setFinishCondition(value: String): Self = StObject.set(x, "finishCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishConditionUndefined: Self = StObject.set(x, "finishCondition", js.undefined)
+    inline def setFinishConditionUndefined: Self = StObject.set(x, "finishCondition", js.undefined)
     
-    @scala.inline
-    def setPollingLink(value: String): Self = StObject.set(x, "pollingLink", value.asInstanceOf[js.Any])
+    inline def setPollingLink(value: String): Self = StObject.set(x, "pollingLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingLinkUndefined: Self = StObject.set(x, "pollingLink", js.undefined)
+    inline def setPollingLinkUndefined: Self = StObject.set(x, "pollingLink", js.undefined)
     
-    @scala.inline
-    def setTargetLink(value: String): Self = StObject.set(x, "targetLink", value.asInstanceOf[js.Any])
+    inline def setTargetLink(value: String): Self = StObject.set(x, "targetLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLinkUndefined: Self = StObject.set(x, "targetLink", js.undefined)
+    inline def setTargetLinkUndefined: Self = StObject.set(x, "targetLink", js.undefined)
   }
 }

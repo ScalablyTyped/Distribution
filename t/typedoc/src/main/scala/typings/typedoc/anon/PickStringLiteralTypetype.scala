@@ -13,20 +13,16 @@ trait PickStringLiteralTypetype extends StObject {
 }
 object PickStringLiteralTypetype {
   
-  @scala.inline
-  def apply(`type`: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String)): PickStringLiteralTypetype = {
+  inline def apply(`type`: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String)): PickStringLiteralTypetype = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickStringLiteralTypetype]
   }
   
-  @scala.inline
-  implicit class PickStringLiteralTypetypeMutableBuilder[Self <: PickStringLiteralTypetype] (val x: Self) extends AnyVal {
+  extension [Self <: PickStringLiteralTypetype](x: Self) {
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

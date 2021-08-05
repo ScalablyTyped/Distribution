@@ -23,8 +23,7 @@ object global {
       * @returns A Promise, resolved successfully with no value on success,
       * rejected with no value on failure.
       */
-    @scala.inline
-    def deleteValue(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def deleteValue(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     // Resources
     /**
@@ -36,8 +35,7 @@ object global {
       * Treat the result as opaque string. It will work where you need a URL
       * (for a `<link>` or `<style>` for CSS, for an `<img>` tag, or similar).
       */
-    @scala.inline
-    def getResourceUrl(resourceName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(resourceName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def getResourceUrl(resourceName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(resourceName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
     /**
       * Retrieves a value that was set with `GM.setValue`
@@ -59,10 +57,8 @@ object global {
       * // For structured data used `JSON.stringify()` to place an object into storage and then `JSON.parse()` to convert it back
       * const storedObject = JSON.parse(await GM.getValue('foo', '{}'));
       */
-    @scala.inline
-    def getValue[TValue](name: String): js.Promise[js.UndefOr[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[TValue]]]
-    @scala.inline
-    def getValue[TValue](name: String, defaultValue: TValue): js.Promise[js.UndefOr[TValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[TValue]]]
+    inline def getValue[TValue](name: String): js.Promise[js.UndefOr[TValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[TValue]]]
+    inline def getValue[TValue](name: String, defaultValue: TValue): js.Promise[js.UndefOr[TValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[TValue]]]
     
     // Headers
     /**
@@ -72,8 +68,7 @@ object global {
     @JSGlobal("GM.info")
     @js.native
     def info: Script = js.native
-    @scala.inline
-    def info_=(x: Script): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
+    inline def info_=(x: Script): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
     
     /**
       * Retrieves an array of preference names that this script has stored
@@ -81,8 +76,7 @@ object global {
       * @returns A Promise, rejected in case of error and otherwise resolved with
       * an string[] for previously set values
       */
-    @scala.inline
-    def listValues(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listValues")().asInstanceOf[js.Promise[js.Array[String]]]
+    inline def listValues(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listValues")().asInstanceOf[js.Promise[js.Array[String]]]
     
     // Other
     /**
@@ -96,14 +90,10 @@ object global {
       * @param onClick Callback, triggered when the notification's button is
       * clicked.
       */
-    @scala.inline
-    def notification(text: String, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def notification(text: String, title: String, image: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def notification(text: String, title: String, image: String, onClick: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def notification(text: String, title: String, image: Unit, onClick: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def notification(text: String, title: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def notification(text: String, title: String, image: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def notification(text: String, title: String, image: String, onClick: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def notification(text: String, title: String, image: Unit, onClick: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Opens the specified URL in a new tab.
@@ -112,17 +102,14 @@ object global {
       * @param openInBackground Force tab to/to not open in a background tab.
       * Default (unspecified) behavior honors Firefox configuration.
       */
-    @scala.inline
-    def openInTab(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def openInTab(url: String, openInBackground: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any], openInBackground.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def openInTab(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openInTab(url: String, openInBackground: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any], openInBackground.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the current contents of the operating system's clipboard
       * @see {@link https://wiki.greasespot.net/GM.setClipboard}
       */
-    @scala.inline
-    def setClipboard(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClipboard")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setClipboard(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClipboard")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // Values
     /**
@@ -137,16 +124,14 @@ object global {
       * @returns A Promise, resolved successfully with no value on success,
       * rejected with no value on failure
       */
-    @scala.inline
-    def setValue(name: String, value: Value): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setValue(name: String, value: Value): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     /**
       * Performs a similar function to the standard XMLHttpRequest object, but
       * allows these requests to cross the [same origin policy]{@link https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy} boundaries.
       * @see {@link https://wiki.greasespot.net/GM.xmlHttpRequest}
       */
-    @scala.inline
-    def xmlHttpRequest(details: Request[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHttpRequest")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def xmlHttpRequest(details: Request[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHttpRequest")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -156,6 +141,5 @@ object global {
   @JSGlobal("unsafeWindow")
   @js.native
   def unsafeWindow: Window = js.native
-  @scala.inline
-  def unsafeWindow_=(x: Window): Unit = js.Dynamic.global.updateDynamic("unsafeWindow")(x.asInstanceOf[js.Any])
+  inline def unsafeWindow_=(x: Window): Unit = js.Dynamic.global.updateDynamic("unsafeWindow")(x.asInstanceOf[js.Any])
 }

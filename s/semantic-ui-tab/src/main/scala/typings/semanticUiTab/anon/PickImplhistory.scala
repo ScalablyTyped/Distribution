@@ -11,16 +11,13 @@ trait PickImplhistory extends StObject {
 }
 object PickImplhistory {
   
-  @scala.inline
-  def apply(history: Boolean): PickImplhistory = {
+  inline def apply(history: Boolean): PickImplhistory = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhistory]
   }
   
-  @scala.inline
-  implicit class PickImplhistoryMutableBuilder[Self <: PickImplhistory] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplhistory](x: Self) {
     
-    @scala.inline
-    def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait PEventDocReturnEventObject extends StObject {
 }
 object PEventDocReturnEventObject {
   
-  @scala.inline
-  def apply(pEvent: DocReturnEventObject): PEventDocReturnEventObject = {
+  inline def apply(pEvent: DocReturnEventObject): PEventDocReturnEventObject = {
     val __obj = js.Dynamic.literal(pEvent = pEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PEventDocReturnEventObject]
   }
   
-  @scala.inline
-  implicit class PEventDocReturnEventObjectMutableBuilder[Self <: PEventDocReturnEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PEventDocReturnEventObject](x: Self) {
     
-    @scala.inline
-    def setPEvent(value: DocReturnEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
+    inline def setPEvent(value: DocReturnEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }
 }

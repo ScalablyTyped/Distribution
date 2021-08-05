@@ -46,8 +46,7 @@ object mdns {
     * @since Chrome 45.
     * @param callback Callback invoked after ForceDiscovery() has started.
     */
-  @scala.inline
-  def forceDiscovery(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceDiscovery")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def forceDiscovery(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceDiscovery")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Event fired to inform clients of the current complete

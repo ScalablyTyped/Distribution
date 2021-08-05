@@ -13,22 +13,17 @@ trait BucketInfo extends StObject {
 }
 object BucketInfo {
   
-  @scala.inline
-  def apply(): BucketInfo = {
+  inline def apply(): BucketInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketInfo]
   }
   
-  @scala.inline
-  implicit class BucketInfoMutableBuilder[Self <: BucketInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BucketInfo](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: BucketList): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: BucketList): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
   }
 }

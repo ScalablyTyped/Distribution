@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1CreateDatasetRequest extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1CreateDatasetRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1CreateDatasetRequest = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1CreateDatasetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1CreateDatasetRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1CreateDatasetRequestMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1CreateDatasetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1CreateDatasetRequest](x: Self) {
     
-    @scala.inline
-    def setDataset(value: GoogleCloudDatalabelingV1beta1Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: GoogleCloudDatalabelingV1beta1Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
   }
 }

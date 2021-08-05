@@ -23,52 +23,37 @@ trait IServiceOptions extends StObject {
 }
 object IServiceOptions {
   
-  @scala.inline
-  def apply(): IServiceOptions = {
+  inline def apply(): IServiceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IServiceOptions]
   }
   
-  @scala.inline
-  implicit class IServiceOptionsMutableBuilder[Self <: IServiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IServiceOptions](x: Self) {
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
+    inline def setDeprecatedNull: Self = StObject.set(x, "deprecated", null)
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDotgoogleDotapiDotdefaultHost(value: String): Self = StObject.set(x, ".google.api.defaultHost", value.asInstanceOf[js.Any])
+    inline def setDotgoogleDotapiDotdefaultHost(value: String): Self = StObject.set(x, ".google.api.defaultHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotgoogleDotapiDotdefaultHostNull: Self = StObject.set(x, ".google.api.defaultHost", null)
+    inline def setDotgoogleDotapiDotdefaultHostNull: Self = StObject.set(x, ".google.api.defaultHost", null)
     
-    @scala.inline
-    def setDotgoogleDotapiDotdefaultHostUndefined: Self = StObject.set(x, ".google.api.defaultHost", js.undefined)
+    inline def setDotgoogleDotapiDotdefaultHostUndefined: Self = StObject.set(x, ".google.api.defaultHost", js.undefined)
     
-    @scala.inline
-    def setDotgoogleDotapiDotoauthScopes(value: String): Self = StObject.set(x, ".google.api.oauthScopes", value.asInstanceOf[js.Any])
+    inline def setDotgoogleDotapiDotoauthScopes(value: String): Self = StObject.set(x, ".google.api.oauthScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotgoogleDotapiDotoauthScopesNull: Self = StObject.set(x, ".google.api.oauthScopes", null)
+    inline def setDotgoogleDotapiDotoauthScopesNull: Self = StObject.set(x, ".google.api.oauthScopes", null)
     
-    @scala.inline
-    def setDotgoogleDotapiDotoauthScopesUndefined: Self = StObject.set(x, ".google.api.oauthScopes", js.undefined)
+    inline def setDotgoogleDotapiDotoauthScopesUndefined: Self = StObject.set(x, ".google.api.oauthScopes", js.undefined)
     
-    @scala.inline
-    def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
+    inline def setUninterpretedOption(value: js.Array[IUninterpretedOption]): Self = StObject.set(x, "uninterpretedOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
+    inline def setUninterpretedOptionNull: Self = StObject.set(x, "uninterpretedOption", null)
     
-    @scala.inline
-    def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
+    inline def setUninterpretedOptionUndefined: Self = StObject.set(x, "uninterpretedOption", js.undefined)
     
-    @scala.inline
-    def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
+    inline def setUninterpretedOptionVarargs(value: IUninterpretedOption*): Self = StObject.set(x, "uninterpretedOption", js.Array(value :_*))
   }
 }

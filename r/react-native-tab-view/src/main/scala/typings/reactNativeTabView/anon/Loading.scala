@@ -10,16 +10,13 @@ trait Loading extends StObject {
 }
 object Loading {
   
-  @scala.inline
-  def apply(loading: Boolean): Loading = {
+  inline def apply(loading: Boolean): Loading = {
     val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
     __obj.asInstanceOf[Loading]
   }
   
-  @scala.inline
-  implicit class LoadingMutableBuilder[Self <: Loading] (val x: Self) extends AnyVal {
+  extension [Self <: Loading](x: Self) {
     
-    @scala.inline
-    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
   }
 }

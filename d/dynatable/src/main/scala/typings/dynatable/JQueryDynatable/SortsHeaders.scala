@@ -100,8 +100,7 @@ trait SortsHeaders extends StObject {
 }
 object SortsHeaders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendArrowDown: JQuery => Unit,
     appendArrowUp: JQuery => Unit,
     attach: () => Unit,
@@ -121,49 +120,34 @@ object SortsHeaders {
     __obj.asInstanceOf[SortsHeaders]
   }
   
-  @scala.inline
-  implicit class SortsHeadersMutableBuilder[Self <: SortsHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: SortsHeaders](x: Self) {
     
-    @scala.inline
-    def setAppendArrowDown(value: JQuery => Unit): Self = StObject.set(x, "appendArrowDown", js.Any.fromFunction1(value))
+    inline def setAppendArrowDown(value: JQuery => Unit): Self = StObject.set(x, "appendArrowDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendArrowUp(value: JQuery => Unit): Self = StObject.set(x, "appendArrowUp", js.Any.fromFunction1(value))
+    inline def setAppendArrowUp(value: JQuery => Unit): Self = StObject.set(x, "appendArrowUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
+    inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAttachOne(value: Element => Unit): Self = StObject.set(x, "attachOne", js.Any.fromFunction1(value))
+    inline def setAttachOne(value: Element => Unit): Self = StObject.set(x, "attachOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreate(value: Element => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Element => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
+    inline def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
+    inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAllArrows(value: () => Unit): Self = StObject.set(x, "removeAllArrows", js.Any.fromFunction0(value))
+    inline def setRemoveAllArrows(value: () => Unit): Self = StObject.set(x, "removeAllArrows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveArrow(value: JQuery => Unit): Self = StObject.set(x, "removeArrow", js.Any.fromFunction1(value))
+    inline def setRemoveArrow(value: JQuery => Unit): Self = StObject.set(x, "removeArrow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveOne(value: Element => Unit): Self = StObject.set(x, "removeOne", js.Any.fromFunction1(value))
+    inline def setRemoveOne(value: Element => Unit): Self = StObject.set(x, "removeOne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortedByColumn(value: (JQuery, Column) => Boolean): Self = StObject.set(x, "sortedByColumn", js.Any.fromFunction2(value))
+    inline def setSortedByColumn(value: (JQuery, Column) => Boolean): Self = StObject.set(x, "sortedByColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSortedByColumnValue(value: Column => Double): Self = StObject.set(x, "sortedByColumnValue", js.Any.fromFunction1(value))
+    inline def setSortedByColumnValue(value: Column => Double): Self = StObject.set(x, "sortedByColumnValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleSort(value: (Event, JQuery, Column) => Unit): Self = StObject.set(x, "toggleSort", js.Any.fromFunction3(value))
+    inline def setToggleSort(value: (Event, JQuery, Column) => Unit): Self = StObject.set(x, "toggleSort", js.Any.fromFunction3(value))
   }
 }

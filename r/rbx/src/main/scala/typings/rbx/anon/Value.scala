@@ -15,16 +15,13 @@ trait Value extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply(value: block | flex | `inline` | `inline-block` | `inline-flex`): Value = {
+  inline def apply(value: block | flex | `inline` | `inline-block` | `inline-flex`): Value = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setValue(value: block | flex | `inline` | `inline-block` | `inline-flex`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: block | flex | `inline` | `inline-block` | `inline-flex`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

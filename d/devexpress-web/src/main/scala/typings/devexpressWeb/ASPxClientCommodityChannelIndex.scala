@@ -18,8 +18,7 @@ trait ASPxClientCommodityChannelIndex
 }
 object ASPxClientCommodityChannelIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -31,10 +30,8 @@ object ASPxClientCommodityChannelIndex {
     __obj.asInstanceOf[ASPxClientCommodityChannelIndex]
   }
   
-  @scala.inline
-  implicit class ASPxClientCommodityChannelIndexMutableBuilder[Self <: ASPxClientCommodityChannelIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCommodityChannelIndex](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }
 }

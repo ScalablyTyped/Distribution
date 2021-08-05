@@ -39,6 +39,5 @@ object InvertedIndex {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def load(serialisedData: SerialisedInvertedIndex): InvertedIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[InvertedIndex]
+  inline def load(serialisedData: SerialisedInvertedIndex): InvertedIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[InvertedIndex]
 }

@@ -20,8 +20,7 @@ trait IBitmapTransform extends StObject {
 }
 object IBitmapTransform {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: BitmapBounds,
     flip: BitmapFlip,
     interpolationMode: BitmapInterpolationMode,
@@ -33,25 +32,18 @@ object IBitmapTransform {
     __obj.asInstanceOf[IBitmapTransform]
   }
   
-  @scala.inline
-  implicit class IBitmapTransformMutableBuilder[Self <: IBitmapTransform] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapTransform](x: Self) {
     
-    @scala.inline
-    def setBounds(value: BitmapBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: BitmapBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlip(value: BitmapFlip): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+    inline def setFlip(value: BitmapFlip): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationMode(value: BitmapInterpolationMode): Self = StObject.set(x, "interpolationMode", value.asInstanceOf[js.Any])
+    inline def setInterpolationMode(value: BitmapInterpolationMode): Self = StObject.set(x, "interpolationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: BitmapRotation): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: BitmapRotation): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaledHeight(value: Double): Self = StObject.set(x, "scaledHeight", value.asInstanceOf[js.Any])
+    inline def setScaledHeight(value: Double): Self = StObject.set(x, "scaledHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaledWidth(value: Double): Self = StObject.set(x, "scaledWidth", value.asInstanceOf[js.Any])
+    inline def setScaledWidth(value: Double): Self = StObject.set(x, "scaledWidth", value.asInstanceOf[js.Any])
   }
 }

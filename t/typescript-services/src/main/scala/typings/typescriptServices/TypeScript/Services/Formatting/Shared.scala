@@ -15,20 +15,16 @@ object Shared {
   }
   object ITokenAccess {
     
-    @scala.inline
-    def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind]): ITokenAccess = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind]): ITokenAccess = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens))
       __obj.asInstanceOf[ITokenAccess]
     }
     
-    @scala.inline
-    implicit class ITokenAccessMutableBuilder[Self <: ITokenAccess] (val x: Self) extends AnyVal {
+    extension [Self <: ITokenAccess](x: Self) {
       
-      @scala.inline
-      def setContains(value: SyntaxKind => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
+      inline def setContains(value: SyntaxKind => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTokens(value: () => js.Array[SyntaxKind]): Self = StObject.set(x, "GetTokens", js.Any.fromFunction0(value))
+      inline def setGetTokens(value: () => js.Array[SyntaxKind]): Self = StObject.set(x, "GetTokens", js.Any.fromFunction0(value))
     }
   }
   
@@ -37,8 +33,7 @@ object Shared {
        with ITokenAccess
   object TokenAllAccess {
     
-    @scala.inline
-    def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind]): TokenAllAccess = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind]): TokenAllAccess = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens))
       __obj.asInstanceOf[TokenAllAccess]
     }
@@ -54,23 +49,18 @@ object Shared {
   }
   object TokenRange {
     
-    @scala.inline
-    def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokenAccess: ITokenAccess): TokenRange = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokenAccess: ITokenAccess): TokenRange = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens), tokenAccess = tokenAccess.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenRange]
     }
     
-    @scala.inline
-    implicit class TokenRangeMutableBuilder[Self <: TokenRange] (val x: Self) extends AnyVal {
+    extension [Self <: TokenRange](x: Self) {
       
-      @scala.inline
-      def setContains(value: SyntaxKind => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
+      inline def setContains(value: SyntaxKind => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTokens(value: () => js.Array[SyntaxKind]): Self = StObject.set(x, "GetTokens", js.Any.fromFunction0(value))
+      inline def setGetTokens(value: () => js.Array[SyntaxKind]): Self = StObject.set(x, "GetTokens", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTokenAccess(value: ITokenAccess): Self = StObject.set(x, "tokenAccess", value.asInstanceOf[js.Any])
+      inline def setTokenAccess(value: ITokenAccess): Self = StObject.set(x, "tokenAccess", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,21 +68,18 @@ object Shared {
     extends StObject
        with ITokenAccess {
     
-    var tokens: js.Any
+    /* private */ var tokens: js.Any
   }
   object TokenRangeAccess {
     
-    @scala.inline
-    def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: js.Any): TokenRangeAccess = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: js.Any): TokenRangeAccess = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens), tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenRangeAccess]
     }
     
-    @scala.inline
-    implicit class TokenRangeAccessMutableBuilder[Self <: TokenRangeAccess] (val x: Self) extends AnyVal {
+    extension [Self <: TokenRangeAccess](x: Self) {
       
-      @scala.inline
-      def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,17 +91,14 @@ object Shared {
   }
   object TokenSingleValueAccess {
     
-    @scala.inline
-    def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], token: SyntaxKind): TokenSingleValueAccess = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], token: SyntaxKind): TokenSingleValueAccess = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens), token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenSingleValueAccess]
     }
     
-    @scala.inline
-    implicit class TokenSingleValueAccessMutableBuilder[Self <: TokenSingleValueAccess] (val x: Self) extends AnyVal {
+    extension [Self <: TokenSingleValueAccess](x: Self) {
       
-      @scala.inline
-      def setToken(value: SyntaxKind): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: SyntaxKind): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,21 +106,18 @@ object Shared {
     extends StObject
        with ITokenAccess {
     
-    var tokens: js.Any
+    /* private */ var tokens: js.Any
   }
   object TokenValuesAccess {
     
-    @scala.inline
-    def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: js.Any): TokenValuesAccess = {
+    inline def apply(Contains: SyntaxKind => Boolean, GetTokens: () => js.Array[SyntaxKind], tokens: js.Any): TokenValuesAccess = {
       val __obj = js.Dynamic.literal(Contains = js.Any.fromFunction1(Contains), GetTokens = js.Any.fromFunction0(GetTokens), tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenValuesAccess]
     }
     
-    @scala.inline
-    implicit class TokenValuesAccessMutableBuilder[Self <: TokenValuesAccess] (val x: Self) extends AnyVal {
+    extension [Self <: TokenValuesAccess](x: Self) {
       
-      @scala.inline
-      def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+      inline def setTokens(value: js.Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
   }
 }

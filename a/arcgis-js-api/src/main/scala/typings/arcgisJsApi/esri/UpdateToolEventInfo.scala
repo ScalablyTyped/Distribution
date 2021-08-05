@@ -28,8 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateToolEventInfo extends StObject
 object UpdateToolEventInfo {
   
-  @scala.inline
-  def MoveEventInfo(
+  inline def MoveEventInfo(
     constructor: js.Function,
     dx: Double,
     dy: Double,
@@ -43,8 +42,7 @@ object UpdateToolEventInfo {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.MoveEventInfo]
   }
   
-  @scala.inline
-  def ReshapeEventInfo(
+  inline def ReshapeEventInfo(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -55,8 +53,7 @@ object UpdateToolEventInfo {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ReshapeEventInfo]
   }
   
-  @scala.inline
-  def RotateEventInfo(
+  inline def RotateEventInfo(
     angle: Double,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -68,8 +65,7 @@ object UpdateToolEventInfo {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.RotateEventInfo]
   }
   
-  @scala.inline
-  def ScaleEventInfo(
+  inline def ScaleEventInfo(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -82,8 +78,7 @@ object UpdateToolEventInfo {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.ScaleEventInfo]
   }
   
-  @scala.inline
-  def VertexAddEventInfo(
+  inline def VertexAddEventInfo(
     added: js.Array[Graphic],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -95,8 +90,7 @@ object UpdateToolEventInfo {
     __obj.asInstanceOf[typings.arcgisJsApi.esri.VertexAddEventInfo]
   }
   
-  @scala.inline
-  def VertexRemoveEventInfo(
+  inline def VertexRemoveEventInfo(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,

@@ -38,49 +38,35 @@ trait ProductionVariantSummary extends StObject {
 }
 object ProductionVariantSummary {
   
-  @scala.inline
-  def apply(VariantName: VariantName): ProductionVariantSummary = {
+  inline def apply(VariantName: VariantName): ProductionVariantSummary = {
     val __obj = js.Dynamic.literal(VariantName = VariantName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductionVariantSummary]
   }
   
-  @scala.inline
-  implicit class ProductionVariantSummaryMutableBuilder[Self <: ProductionVariantSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ProductionVariantSummary](x: Self) {
     
-    @scala.inline
-    def setCurrentInstanceCount(value: TaskCount): Self = StObject.set(x, "CurrentInstanceCount", value.asInstanceOf[js.Any])
+    inline def setCurrentInstanceCount(value: TaskCount): Self = StObject.set(x, "CurrentInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentInstanceCountUndefined: Self = StObject.set(x, "CurrentInstanceCount", js.undefined)
+    inline def setCurrentInstanceCountUndefined: Self = StObject.set(x, "CurrentInstanceCount", js.undefined)
     
-    @scala.inline
-    def setCurrentWeight(value: VariantWeight): Self = StObject.set(x, "CurrentWeight", value.asInstanceOf[js.Any])
+    inline def setCurrentWeight(value: VariantWeight): Self = StObject.set(x, "CurrentWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentWeightUndefined: Self = StObject.set(x, "CurrentWeight", js.undefined)
+    inline def setCurrentWeightUndefined: Self = StObject.set(x, "CurrentWeight", js.undefined)
     
-    @scala.inline
-    def setDeployedImages(value: DeployedImages): Self = StObject.set(x, "DeployedImages", value.asInstanceOf[js.Any])
+    inline def setDeployedImages(value: DeployedImages): Self = StObject.set(x, "DeployedImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedImagesUndefined: Self = StObject.set(x, "DeployedImages", js.undefined)
+    inline def setDeployedImagesUndefined: Self = StObject.set(x, "DeployedImages", js.undefined)
     
-    @scala.inline
-    def setDeployedImagesVarargs(value: DeployedImage*): Self = StObject.set(x, "DeployedImages", js.Array(value :_*))
+    inline def setDeployedImagesVarargs(value: DeployedImage*): Self = StObject.set(x, "DeployedImages", js.Array(value :_*))
     
-    @scala.inline
-    def setDesiredInstanceCount(value: TaskCount): Self = StObject.set(x, "DesiredInstanceCount", value.asInstanceOf[js.Any])
+    inline def setDesiredInstanceCount(value: TaskCount): Self = StObject.set(x, "DesiredInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredInstanceCountUndefined: Self = StObject.set(x, "DesiredInstanceCount", js.undefined)
+    inline def setDesiredInstanceCountUndefined: Self = StObject.set(x, "DesiredInstanceCount", js.undefined)
     
-    @scala.inline
-    def setDesiredWeight(value: VariantWeight): Self = StObject.set(x, "DesiredWeight", value.asInstanceOf[js.Any])
+    inline def setDesiredWeight(value: VariantWeight): Self = StObject.set(x, "DesiredWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredWeightUndefined: Self = StObject.set(x, "DesiredWeight", js.undefined)
+    inline def setDesiredWeightUndefined: Self = StObject.set(x, "DesiredWeight", js.undefined)
     
-    @scala.inline
-    def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
+    inline def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
   }
 }

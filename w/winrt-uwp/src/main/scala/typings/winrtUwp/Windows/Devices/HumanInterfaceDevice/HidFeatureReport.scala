@@ -46,8 +46,7 @@ trait HidFeatureReport extends StObject {
 }
 object HidFeatureReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: IBuffer,
     getBooleanControl: (Double, Double) => HidBooleanControl,
     getBooleanControlByDescription: HidBooleanControlDescription => HidBooleanControl,
@@ -59,25 +58,18 @@ object HidFeatureReport {
     __obj.asInstanceOf[HidFeatureReport]
   }
   
-  @scala.inline
-  implicit class HidFeatureReportMutableBuilder[Self <: HidFeatureReport] (val x: Self) extends AnyVal {
+  extension [Self <: HidFeatureReport](x: Self) {
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBooleanControl(value: (Double, Double) => HidBooleanControl): Self = StObject.set(x, "getBooleanControl", js.Any.fromFunction2(value))
+    inline def setGetBooleanControl(value: (Double, Double) => HidBooleanControl): Self = StObject.set(x, "getBooleanControl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = StObject.set(x, "getBooleanControlByDescription", js.Any.fromFunction1(value))
+    inline def setGetBooleanControlByDescription(value: HidBooleanControlDescription => HidBooleanControl): Self = StObject.set(x, "getBooleanControlByDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumericControl(value: (Double, Double) => HidNumericControl): Self = StObject.set(x, "getNumericControl", js.Any.fromFunction2(value))
+    inline def setGetNumericControl(value: (Double, Double) => HidNumericControl): Self = StObject.set(x, "getNumericControl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = StObject.set(x, "getNumericControlByDescription", js.Any.fromFunction1(value))
+    inline def setGetNumericControlByDescription(value: HidNumericControlDescription => HidNumericControl): Self = StObject.set(x, "getNumericControlByDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

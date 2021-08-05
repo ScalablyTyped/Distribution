@@ -76,8 +76,7 @@ trait Add extends StObject {
 }
 object Add {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, /* repeated */ String) => Unit,
     clear: () => Unit,
     delete: String => Unit,
@@ -88,22 +87,16 @@ object Add {
     __obj.asInstanceOf[Add]
   }
   
-  @scala.inline
-  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
+  extension [Self <: Add](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, /* repeated */ String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, /* repeated */ String) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: String => AudioTrack | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => AudioTrack | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
   }
 }

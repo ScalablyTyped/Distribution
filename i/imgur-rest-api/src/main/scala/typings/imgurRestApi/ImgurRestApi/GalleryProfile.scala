@@ -16,8 +16,7 @@ trait GalleryProfile extends StObject {
 }
 object GalleryProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     total_gallery_comments: Double,
     total_gallery_favorites: Double,
     total_gallery_submissions: Double,
@@ -27,22 +26,16 @@ object GalleryProfile {
     __obj.asInstanceOf[GalleryProfile]
   }
   
-  @scala.inline
-  implicit class GalleryProfileMutableBuilder[Self <: GalleryProfile] (val x: Self) extends AnyVal {
+  extension [Self <: GalleryProfile](x: Self) {
     
-    @scala.inline
-    def setTotal_gallery_comments(value: Double): Self = StObject.set(x, "total_gallery_comments", value.asInstanceOf[js.Any])
+    inline def setTotal_gallery_comments(value: Double): Self = StObject.set(x, "total_gallery_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_gallery_favorites(value: Double): Self = StObject.set(x, "total_gallery_favorites", value.asInstanceOf[js.Any])
+    inline def setTotal_gallery_favorites(value: Double): Self = StObject.set(x, "total_gallery_favorites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_gallery_submissions(value: Double): Self = StObject.set(x, "total_gallery_submissions", value.asInstanceOf[js.Any])
+    inline def setTotal_gallery_submissions(value: Double): Self = StObject.set(x, "total_gallery_submissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrophies(value: js.Array[Trophy]): Self = StObject.set(x, "trophies", value.asInstanceOf[js.Any])
+    inline def setTrophies(value: js.Array[Trophy]): Self = StObject.set(x, "trophies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrophiesVarargs(value: Trophy*): Self = StObject.set(x, "trophies", js.Array(value :_*))
+    inline def setTrophiesVarargs(value: Trophy*): Self = StObject.set(x, "trophies", js.Array(value :_*))
   }
 }

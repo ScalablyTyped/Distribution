@@ -15,8 +15,7 @@ object Validators {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn | Null]
+  inline def compose(validators: js.Array[js.UndefOr[ValidatorFn | Null]]): ValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn | Null]
   /**
     * @description
     * Compose multiple validators into a single function that returns the union
@@ -28,8 +27,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def compose(validators: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def compose(validators: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(validators.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   /**
     * @description
@@ -42,8 +40,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def composeAsync(validators: js.Array[AsyncValidatorFn | Null]): AsyncValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("composeAsync")(validators.asInstanceOf[js.Any]).asInstanceOf[AsyncValidatorFn | Null]
+  inline def composeAsync(validators: js.Array[AsyncValidatorFn | Null]): AsyncValidatorFn | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("composeAsync")(validators.asInstanceOf[js.Any]).asInstanceOf[AsyncValidatorFn | Null]
   
   /**
     * @description
@@ -81,8 +78,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def email(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def email(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -105,8 +101,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def max(max: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(max.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def max(max: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(max.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -135,8 +130,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def maxLength(maxLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(maxLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def maxLength(maxLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(maxLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -159,8 +153,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def min(min: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(min.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def min(min: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(min.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -192,8 +185,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def minLength(minLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(minLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def minLength(minLength: Double): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(minLength.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -202,8 +194,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def nullValidator(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullValidator")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def nullValidator(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullValidator")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -254,10 +245,8 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def pattern(pattern: String): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
-  @scala.inline
-  def pattern(pattern: RegExp): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def pattern(pattern: String): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
+  inline def pattern(pattern: RegExp): ValidatorFn = ^.asInstanceOf[js.Dynamic].applyDynamic("pattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[ValidatorFn]
   
   /**
     * @description
@@ -279,8 +268,7 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def required(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def required(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
   
   /**
     * @description
@@ -303,6 +291,5 @@ object Validators {
     * @see `updateValueAndValidity()`
     *
     */
-  @scala.inline
-  def requiredTrue(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredTrue")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
+  inline def requiredTrue(control: AbstractControl): ValidationErrors | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("requiredTrue")(control.asInstanceOf[js.Any]).asInstanceOf[ValidationErrors | Null]
 }

@@ -13,8 +13,7 @@ object collectAlgorithmDiagnosticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def collectAlgorithmDiagnostics(
+  inline def collectAlgorithmDiagnostics(
     report: js.Function1[/* e */ Warning, Unit],
     spec: Spec,
     mainSource: String,

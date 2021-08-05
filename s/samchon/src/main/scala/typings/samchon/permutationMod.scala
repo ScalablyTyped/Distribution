@@ -37,7 +37,7 @@ object permutationMod {
     /**
       * @hidden
       */
-    var n_ : js.Any = js.native
+    /* private */ var n_ : js.Any = js.native
     
     /**
       * Get R, number of elements for each case.
@@ -47,7 +47,7 @@ object permutationMod {
     /**
       * @hidden
       */
-    var r_ : js.Any = js.native
+    /* private */ var r_ : js.Any = js.native
     
     /**
       * Get size of all cases.
@@ -60,6 +60,6 @@ object permutationMod {
     /**
       * @hidden
       */
-    var size_ : js.Any = js.native
+    /* private */ var size_ : js.Any = js.native
   }
 }

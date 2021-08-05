@@ -13,19 +13,15 @@ trait ValueHolder extends StObject {
 }
 object ValueHolder {
   
-  @scala.inline
-  def apply(): ValueHolder = {
+  inline def apply(): ValueHolder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueHolder]
   }
   
-  @scala.inline
-  implicit class ValueHolderMutableBuilder[Self <: ValueHolder] (val x: Self) extends AnyVal {
+  extension [Self <: ValueHolder](x: Self) {
     
-    @scala.inline
-    def setIonText(value: IonText): Self = StObject.set(x, "IonText", value.asInstanceOf[js.Any])
+    inline def setIonText(value: IonText): Self = StObject.set(x, "IonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIonTextUndefined: Self = StObject.set(x, "IonText", js.undefined)
+    inline def setIonTextUndefined: Self = StObject.set(x, "IonText", js.undefined)
   }
 }

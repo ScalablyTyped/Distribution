@@ -11,19 +11,15 @@ trait GoogleCloudVideointelligenceV1FaceSegment extends StObject {
 }
 object GoogleCloudVideointelligenceV1FaceSegment {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1FaceSegment = {
+  inline def apply(): GoogleCloudVideointelligenceV1FaceSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1FaceSegment]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1FaceSegmentMutableBuilder[Self <: GoogleCloudVideointelligenceV1FaceSegment] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1FaceSegment](x: Self) {
     
-    @scala.inline
-    def setSegment(value: GoogleCloudVideointelligenceV1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: GoogleCloudVideointelligenceV1VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

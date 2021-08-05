@@ -35,43 +35,31 @@ trait KeyboardEvent extends StObject {
 }
 object KeyboardEvent {
   
-  @scala.inline
-  def apply(): KeyboardEvent = {
+  inline def apply(): KeyboardEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardEvent]
   }
   
-  @scala.inline
-  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardEvent](x: Self) {
     
-    @scala.inline
-    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+    inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
     
-    @scala.inline
-    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+    inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
     
-    @scala.inline
-    def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+    inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+    inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
     
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+    inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
     
-    @scala.inline
-    def setTriggeredByAccelerator(value: Boolean): Self = StObject.set(x, "triggeredByAccelerator", value.asInstanceOf[js.Any])
+    inline def setTriggeredByAccelerator(value: Boolean): Self = StObject.set(x, "triggeredByAccelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggeredByAcceleratorUndefined: Self = StObject.set(x, "triggeredByAccelerator", js.undefined)
+    inline def setTriggeredByAcceleratorUndefined: Self = StObject.set(x, "triggeredByAccelerator", js.undefined)
   }
 }

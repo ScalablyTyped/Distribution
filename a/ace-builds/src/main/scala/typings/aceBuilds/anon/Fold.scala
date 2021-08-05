@@ -12,19 +12,15 @@ trait Fold extends StObject {
 }
 object Fold {
   
-  @scala.inline
-  def apply(fold: typings.aceBuilds.mod.Ace.Fold, kind: String): Fold = {
+  inline def apply(fold: typings.aceBuilds.mod.Ace.Fold, kind: String): Fold = {
     val __obj = js.Dynamic.literal(fold = fold.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fold]
   }
   
-  @scala.inline
-  implicit class FoldMutableBuilder[Self <: Fold] (val x: Self) extends AnyVal {
+  extension [Self <: Fold](x: Self) {
     
-    @scala.inline
-    def setFold(value: typings.aceBuilds.mod.Ace.Fold): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
+    inline def setFold(value: typings.aceBuilds.mod.Ace.Fold): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

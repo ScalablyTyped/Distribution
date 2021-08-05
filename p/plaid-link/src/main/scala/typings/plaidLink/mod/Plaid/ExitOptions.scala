@@ -10,16 +10,13 @@ trait ExitOptions extends StObject {
 }
 object ExitOptions {
   
-  @scala.inline
-  def apply(force: Boolean): ExitOptions = {
+  inline def apply(force: Boolean): ExitOptions = {
     val __obj = js.Dynamic.literal(force = force.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExitOptions]
   }
   
-  @scala.inline
-  implicit class ExitOptionsMutableBuilder[Self <: ExitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExitOptions](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
   }
 }

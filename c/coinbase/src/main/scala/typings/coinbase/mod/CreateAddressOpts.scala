@@ -13,19 +13,15 @@ trait CreateAddressOpts extends StObject {
 }
 object CreateAddressOpts {
   
-  @scala.inline
-  def apply(): CreateAddressOpts = {
+  inline def apply(): CreateAddressOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAddressOpts]
   }
   
-  @scala.inline
-  implicit class CreateAddressOptsMutableBuilder[Self <: CreateAddressOpts] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAddressOpts](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

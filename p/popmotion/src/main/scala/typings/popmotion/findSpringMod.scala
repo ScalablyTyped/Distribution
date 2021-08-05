@@ -12,11 +12,9 @@ object findSpringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calcAngularFreq(undampedFreq: Double, dampingRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcAngularFreq")(undampedFreq.asInstanceOf[js.Any], dampingRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def calcAngularFreq(undampedFreq: Double, dampingRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcAngularFreq")(undampedFreq.asInstanceOf[js.Any], dampingRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def findSpring(hasDurationBounceVelocityMass: SpringOptions): Damping = ^.asInstanceOf[js.Dynamic].applyDynamic("findSpring")(hasDurationBounceVelocityMass.asInstanceOf[js.Any]).asInstanceOf[Damping]
+  inline def findSpring(hasDurationBounceVelocityMass: SpringOptions): Damping = ^.asInstanceOf[js.Dynamic].applyDynamic("findSpring")(hasDurationBounceVelocityMass.asInstanceOf[js.Any]).asInstanceOf[Damping]
   
   @JSImport("popmotion/lib/animations/utils/find-spring", "maxDamping")
   @js.native

@@ -23,25 +23,19 @@ trait AdminConfirmSignUpRequest extends StObject {
 }
 object AdminConfirmSignUpRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminConfirmSignUpRequest = {
+  inline def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminConfirmSignUpRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminConfirmSignUpRequest]
   }
   
-  @scala.inline
-  implicit class AdminConfirmSignUpRequestMutableBuilder[Self <: AdminConfirmSignUpRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminConfirmSignUpRequest](x: Self) {
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

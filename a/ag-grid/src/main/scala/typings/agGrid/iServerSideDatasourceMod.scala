@@ -16,23 +16,18 @@ object iServerSideDatasourceMod {
   }
   object IServerSideDatasource {
     
-    @scala.inline
-    def apply(getRows: IServerSideGetRowsParams => Unit): IServerSideDatasource = {
+    inline def apply(getRows: IServerSideGetRowsParams => Unit): IServerSideDatasource = {
       val __obj = js.Dynamic.literal(getRows = js.Any.fromFunction1(getRows))
       __obj.asInstanceOf[IServerSideDatasource]
     }
     
-    @scala.inline
-    implicit class IServerSideDatasourceMutableBuilder[Self <: IServerSideDatasource] (val x: Self) extends AnyVal {
+    extension [Self <: IServerSideDatasource](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setGetRows(value: IServerSideGetRowsParams => Unit): Self = StObject.set(x, "getRows", js.Any.fromFunction1(value))
+      inline def setGetRows(value: IServerSideGetRowsParams => Unit): Self = StObject.set(x, "getRows", js.Any.fromFunction1(value))
     }
   }
   
@@ -48,8 +43,7 @@ object iServerSideDatasourceMod {
   }
   object IServerSideGetRowsParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       failCallback: () => Unit,
       parentNode: RowNode,
       request: IServerSideGetRowsRequest,
@@ -59,20 +53,15 @@ object iServerSideDatasourceMod {
       __obj.asInstanceOf[IServerSideGetRowsParams]
     }
     
-    @scala.inline
-    implicit class IServerSideGetRowsParamsMutableBuilder[Self <: IServerSideGetRowsParams] (val x: Self) extends AnyVal {
+    extension [Self <: IServerSideGetRowsParams](x: Self) {
       
-      @scala.inline
-      def setFailCallback(value: () => Unit): Self = StObject.set(x, "failCallback", js.Any.fromFunction0(value))
+      inline def setFailCallback(value: () => Unit): Self = StObject.set(x, "failCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParentNode(value: RowNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+      inline def setParentNode(value: RowNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: IServerSideGetRowsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: IServerSideGetRowsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessCallback(value: (js.Array[js.Any], Double) => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction2(value))
+      inline def setSuccessCallback(value: (js.Array[js.Any], Double) => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction2(value))
     }
   }
   
@@ -98,8 +87,7 @@ object iServerSideDatasourceMod {
   }
   object IServerSideGetRowsRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endRow: Double,
       filterModel: js.Any,
       groupKeys: js.Array[String],
@@ -114,47 +102,33 @@ object iServerSideDatasourceMod {
       __obj.asInstanceOf[IServerSideGetRowsRequest]
     }
     
-    @scala.inline
-    implicit class IServerSideGetRowsRequestMutableBuilder[Self <: IServerSideGetRowsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IServerSideGetRowsRequest](x: Self) {
       
-      @scala.inline
-      def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
+      inline def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterModel(value: js.Any): Self = StObject.set(x, "filterModel", value.asInstanceOf[js.Any])
+      inline def setFilterModel(value: js.Any): Self = StObject.set(x, "filterModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupKeys(value: js.Array[String]): Self = StObject.set(x, "groupKeys", value.asInstanceOf[js.Any])
+      inline def setGroupKeys(value: js.Array[String]): Self = StObject.set(x, "groupKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupKeysVarargs(value: String*): Self = StObject.set(x, "groupKeys", js.Array(value :_*))
+      inline def setGroupKeysVarargs(value: String*): Self = StObject.set(x, "groupKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setPivotCols(value: js.Array[ColumnVO]): Self = StObject.set(x, "pivotCols", value.asInstanceOf[js.Any])
+      inline def setPivotCols(value: js.Array[ColumnVO]): Self = StObject.set(x, "pivotCols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPivotColsVarargs(value: ColumnVO*): Self = StObject.set(x, "pivotCols", js.Array(value :_*))
+      inline def setPivotColsVarargs(value: ColumnVO*): Self = StObject.set(x, "pivotCols", js.Array(value :_*))
       
-      @scala.inline
-      def setPivotMode(value: Boolean): Self = StObject.set(x, "pivotMode", value.asInstanceOf[js.Any])
+      inline def setPivotMode(value: Boolean): Self = StObject.set(x, "pivotMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowGroupCols(value: js.Array[ColumnVO]): Self = StObject.set(x, "rowGroupCols", value.asInstanceOf[js.Any])
+      inline def setRowGroupCols(value: js.Array[ColumnVO]): Self = StObject.set(x, "rowGroupCols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowGroupColsVarargs(value: ColumnVO*): Self = StObject.set(x, "rowGroupCols", js.Array(value :_*))
+      inline def setRowGroupColsVarargs(value: ColumnVO*): Self = StObject.set(x, "rowGroupCols", js.Array(value :_*))
       
-      @scala.inline
-      def setSortModel(value: js.Any): Self = StObject.set(x, "sortModel", value.asInstanceOf[js.Any])
+      inline def setSortModel(value: js.Any): Self = StObject.set(x, "sortModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+      inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueCols(value: js.Array[ColumnVO]): Self = StObject.set(x, "valueCols", value.asInstanceOf[js.Any])
+      inline def setValueCols(value: js.Array[ColumnVO]): Self = StObject.set(x, "valueCols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueColsVarargs(value: ColumnVO*): Self = StObject.set(x, "valueCols", js.Array(value :_*))
+      inline def setValueColsVarargs(value: ColumnVO*): Self = StObject.set(x, "valueCols", js.Array(value :_*))
     }
   }
 }

@@ -11,15 +11,15 @@ object filterServiceMod {
   @js.native
   class FilterService () extends StObject {
     
-    var doingTreeData: js.Any = js.native
+    /* private */ var doingTreeData: js.Any = js.native
     
     def filter(rowNode: RowNode, filterActive: Boolean): Unit = js.native
     
     def filterAccordingToColumnState(rowNode: RowNode): Unit = js.native
     
-    var filterManager: js.Any = js.native
+    /* private */ var filterManager: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     

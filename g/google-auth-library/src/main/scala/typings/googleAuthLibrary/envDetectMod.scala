@@ -50,9 +50,7 @@ object envDetectMod {
     /* "NONE" */ val NONE: typings.googleAuthLibrary.envDetectMod.GCPEnv.NONE & String = js.native
   }
   
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getEnv(): js.Promise[GCPEnv] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[js.Promise[GCPEnv]]
+  inline def getEnv(): js.Promise[GCPEnv] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[js.Promise[GCPEnv]]
 }

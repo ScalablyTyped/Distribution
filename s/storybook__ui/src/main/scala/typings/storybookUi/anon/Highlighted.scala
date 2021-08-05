@@ -10,16 +10,13 @@ trait Highlighted extends StObject {
 }
 object Highlighted {
   
-  @scala.inline
-  def apply(highlighted: Boolean): Highlighted = {
+  inline def apply(highlighted: Boolean): Highlighted = {
     val __obj = js.Dynamic.literal(highlighted = highlighted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Highlighted]
   }
   
-  @scala.inline
-  implicit class HighlightedMutableBuilder[Self <: Highlighted] (val x: Self) extends AnyVal {
+  extension [Self <: Highlighted](x: Self) {
     
-    @scala.inline
-    def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+    inline def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
   }
 }

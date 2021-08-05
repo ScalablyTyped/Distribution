@@ -32,8 +32,7 @@ trait XScaling
 }
 object XScaling {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InverseScaling: XScaling,
     acquire: () => Unit,
     doScaling: Double => Double,
@@ -45,16 +44,12 @@ object XScaling {
     __obj.asInstanceOf[XScaling]
   }
   
-  @scala.inline
-  implicit class XScalingMutableBuilder[Self <: XScaling] (val x: Self) extends AnyVal {
+  extension [Self <: XScaling](x: Self) {
     
-    @scala.inline
-    def setDoScaling(value: Double => Double): Self = StObject.set(x, "doScaling", js.Any.fromFunction1(value))
+    inline def setDoScaling(value: Double => Double): Self = StObject.set(x, "doScaling", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInverseScaling(value: () => XScaling): Self = StObject.set(x, "getInverseScaling", js.Any.fromFunction0(value))
+    inline def setGetInverseScaling(value: () => XScaling): Self = StObject.set(x, "getInverseScaling", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInverseScaling(value: XScaling): Self = StObject.set(x, "InverseScaling", value.asInstanceOf[js.Any])
+    inline def setInverseScaling(value: XScaling): Self = StObject.set(x, "InverseScaling", value.asInstanceOf[js.Any])
   }
 }

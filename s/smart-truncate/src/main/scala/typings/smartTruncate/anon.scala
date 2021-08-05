@@ -14,26 +14,20 @@ object anon {
   }
   object Mark {
     
-    @scala.inline
-    def apply(): Mark = {
+    inline def apply(): Mark = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mark]
     }
     
-    @scala.inline
-    implicit class MarkMutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
+    extension [Self <: Mark](x: Self) {
       
-      @scala.inline
-      def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
 }

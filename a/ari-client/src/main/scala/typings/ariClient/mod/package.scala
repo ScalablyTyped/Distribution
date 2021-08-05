@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def connect(baseUrl: java.lang.String, user: java.lang.String, pass: java.lang.String): js.Promise[typings.ariClient.mod.Client] = (typings.ariClient.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ariClient.mod.Client]]
-@scala.inline
-def connect(
+inline def connect(baseUrl: java.lang.String, user: java.lang.String, pass: java.lang.String): js.Promise[typings.ariClient.mod.Client] = (typings.ariClient.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ariClient.mod.Client]]
+inline def connect(
   baseUrl: java.lang.String,
   user: java.lang.String,
   pass: java.lang.String,

@@ -41,8 +41,7 @@ trait FilterableComposition[F, G]
 }
 object FilterableComposition {
   
-  @scala.inline
-  def apply[F, G](
+  inline def apply[F, G](
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, Option<A>>> */ js.Any => js.Any,
     filter: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, Predicate[js.Any]) => js.Any,
     filterMap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function1[js.Any, Option_[js.Any]]) => js.Any,
@@ -64,29 +63,24 @@ object FilterableComposition {
     __obj.asInstanceOf[FilterableComposition[F, G]]
   }
   
-  @scala.inline
-  implicit class FilterableCompositionMutableBuilder[Self <: FilterableComposition[?, ?], F, G] (val x: Self & (FilterableComposition[F, G])) extends AnyVal {
+  extension [Self <: FilterableComposition[?, ?], F, G](x: Self & (FilterableComposition[F, G])) {
     
-    @scala.inline
-    def setFilter(
+    inline def setFilter(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, Predicate[js.Any]) => js.Any
     ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFilterMap(
+    inline def setFilterMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function1[js.Any, Option_[js.Any]]) => js.Any
     ): Self = StObject.set(x, "filterMap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPartition(
+    inline def setPartition(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, Predicate[js.Any]) => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any
         ]
     ): Self = StObject.set(x, "partition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPartitionMap(
+    inline def setPartitionMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function1[js.Any, Either_[js.Any, js.Any]]) => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, B>> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, C>> */ js.Any

@@ -18,8 +18,7 @@ trait TypeofttsEngine extends StObject {
 }
 object TypeofttsEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onPause: Event[js.Function0[Unit]],
     onResume: Event[js.Function0[Unit]],
     onSpeak: TtsEngineSpeakEvent,
@@ -29,19 +28,14 @@ object TypeofttsEngine {
     __obj.asInstanceOf[TypeofttsEngine]
   }
   
-  @scala.inline
-  implicit class TypeofttsEngineMutableBuilder[Self <: TypeofttsEngine] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofttsEngine](x: Self) {
     
-    @scala.inline
-    def setOnPause(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
+    inline def setOnPause(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnResume(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onResume", value.asInstanceOf[js.Any])
+    inline def setOnResume(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onResume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSpeak(value: TtsEngineSpeakEvent): Self = StObject.set(x, "onSpeak", value.asInstanceOf[js.Any])
+    inline def setOnSpeak(value: TtsEngineSpeakEvent): Self = StObject.set(x, "onSpeak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnStop(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
+    inline def setOnStop(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onStop", value.asInstanceOf[js.Any])
   }
 }

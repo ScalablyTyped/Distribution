@@ -19,8 +19,7 @@ trait DotDensityRendererLegendOptions
 }
 object DotDensityRendererLegendOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object DotDensityRendererLegendOptions {
     __obj.asInstanceOf[DotDensityRendererLegendOptions]
   }
   
-  @scala.inline
-  implicit class DotDensityRendererLegendOptionsMutableBuilder[Self <: DotDensityRendererLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DotDensityRendererLegendOptions](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

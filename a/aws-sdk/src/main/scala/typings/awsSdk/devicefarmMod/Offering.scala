@@ -33,46 +33,33 @@ trait Offering extends StObject {
 }
 object Offering {
   
-  @scala.inline
-  def apply(): Offering = {
+  inline def apply(): Offering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Offering]
   }
   
-  @scala.inline
-  implicit class OfferingMutableBuilder[Self <: Offering] (val x: Self) extends AnyVal {
+  extension [Self <: Offering](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: OfferingIdentifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: OfferingIdentifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: DevicePlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: DevicePlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setRecurringCharges(value: RecurringCharges): Self = StObject.set(x, "recurringCharges", value.asInstanceOf[js.Any])
+    inline def setRecurringCharges(value: RecurringCharges): Self = StObject.set(x, "recurringCharges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurringChargesUndefined: Self = StObject.set(x, "recurringCharges", js.undefined)
+    inline def setRecurringChargesUndefined: Self = StObject.set(x, "recurringCharges", js.undefined)
     
-    @scala.inline
-    def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "recurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "recurringCharges", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: OfferingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OfferingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

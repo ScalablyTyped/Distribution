@@ -15,19 +15,15 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(activity: KoLiteActivity, activityEx: Boolean => JQuery): JQuery = {
+  inline def apply(activity: KoLiteActivity, activityEx: Boolean => JQuery): JQuery = {
     val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any], activityEx = js.Any.fromFunction1(activityEx))
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setActivity(value: KoLiteActivity): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: KoLiteActivity): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityEx(value: Boolean => JQuery): Self = StObject.set(x, "activityEx", js.Any.fromFunction1(value))
+    inline def setActivityEx(value: Boolean => JQuery): Self = StObject.set(x, "activityEx", js.Any.fromFunction1(value))
   }
 }

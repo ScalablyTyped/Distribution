@@ -12,10 +12,8 @@ object getRegexPatternSetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRegexPatternSet(args: GetRegexPatternSetArgs): js.Promise[GetRegexPatternSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegexPatternSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegexPatternSetResult]]
-  @scala.inline
-  def getRegexPatternSet(args: GetRegexPatternSetArgs, opts: InvokeOptions): js.Promise[GetRegexPatternSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegexPatternSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegexPatternSetResult]]
+  inline def getRegexPatternSet(args: GetRegexPatternSetArgs): js.Promise[GetRegexPatternSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRegexPatternSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRegexPatternSetResult]]
+  inline def getRegexPatternSet(args: GetRegexPatternSetArgs, opts: InvokeOptions): js.Promise[GetRegexPatternSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRegexPatternSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRegexPatternSetResult]]
   
   trait GetRegexPatternSetArgs extends StObject {
     
@@ -31,20 +29,16 @@ object getRegexPatternSetMod {
   }
   object GetRegexPatternSetArgs {
     
-    @scala.inline
-    def apply(name: String, scope: String): GetRegexPatternSetArgs = {
+    inline def apply(name: String, scope: String): GetRegexPatternSetArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetRegexPatternSetArgs]
     }
     
-    @scala.inline
-    implicit class GetRegexPatternSetArgsMutableBuilder[Self <: GetRegexPatternSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetRegexPatternSetArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,8 +70,7 @@ object getRegexPatternSetMod {
   }
   object GetRegexPatternSetResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       description: String,
       id: String,
@@ -89,29 +82,21 @@ object getRegexPatternSetMod {
       __obj.asInstanceOf[GetRegexPatternSetResult]
     }
     
-    @scala.inline
-    implicit class GetRegexPatternSetResultMutableBuilder[Self <: GetRegexPatternSetResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetRegexPatternSetResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularExpressions(value: js.Array[GetRegexPatternSetRegularExpression]): Self = StObject.set(x, "regularExpressions", value.asInstanceOf[js.Any])
+      inline def setRegularExpressions(value: js.Array[GetRegexPatternSetRegularExpression]): Self = StObject.set(x, "regularExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularExpressionsVarargs(value: GetRegexPatternSetRegularExpression*): Self = StObject.set(x, "regularExpressions", js.Array(value :_*))
+      inline def setRegularExpressionsVarargs(value: GetRegexPatternSetRegularExpression*): Self = StObject.set(x, "regularExpressions", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
 }

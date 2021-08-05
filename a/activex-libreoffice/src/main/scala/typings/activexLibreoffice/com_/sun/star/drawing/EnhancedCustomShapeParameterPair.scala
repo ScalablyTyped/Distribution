@@ -13,19 +13,15 @@ trait EnhancedCustomShapeParameterPair extends StObject {
 }
 object EnhancedCustomShapeParameterPair {
   
-  @scala.inline
-  def apply(First: EnhancedCustomShapeParameter, Second: EnhancedCustomShapeParameter): EnhancedCustomShapeParameterPair = {
+  inline def apply(First: EnhancedCustomShapeParameter, Second: EnhancedCustomShapeParameter): EnhancedCustomShapeParameterPair = {
     val __obj = js.Dynamic.literal(First = First.asInstanceOf[js.Any], Second = Second.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnhancedCustomShapeParameterPair]
   }
   
-  @scala.inline
-  implicit class EnhancedCustomShapeParameterPairMutableBuilder[Self <: EnhancedCustomShapeParameterPair] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedCustomShapeParameterPair](x: Self) {
     
-    @scala.inline
-    def setFirst(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
+    inline def setFirst(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
   }
 }

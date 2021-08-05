@@ -17,8 +17,7 @@ trait ChangeEventOther[TSchema /* <: StringDictionary[js.Any] */]
 }
 object ChangeEventOther {
   
-  @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](
+  inline def apply[TSchema /* <: StringDictionary[js.Any] */](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     ns: Coll,
@@ -28,10 +27,8 @@ object ChangeEventOther {
     __obj.asInstanceOf[ChangeEventOther[TSchema]]
   }
   
-  @scala.inline
-  implicit class ChangeEventOtherMutableBuilder[Self <: ChangeEventOther[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventOther[TSchema]) extends AnyVal {
+  extension [Self <: ChangeEventOther[?], TSchema /* <: StringDictionary[js.Any] */](x: Self & ChangeEventOther[TSchema]) {
     
-    @scala.inline
-    def setOperationType(value: drop | dropDatabase): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: drop | dropDatabase): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }
 }

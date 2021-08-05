@@ -23,28 +23,21 @@ trait AutomaticFacetFilter extends StObject {
 }
 object AutomaticFacetFilter {
   
-  @scala.inline
-  def apply(facet: String): AutomaticFacetFilter = {
+  inline def apply(facet: String): AutomaticFacetFilter = {
     val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomaticFacetFilter]
   }
   
-  @scala.inline
-  implicit class AutomaticFacetFilterMutableBuilder[Self <: AutomaticFacetFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticFacetFilter](x: Self) {
     
-    @scala.inline
-    def setDisjunctive(value: Boolean): Self = StObject.set(x, "disjunctive", value.asInstanceOf[js.Any])
+    inline def setDisjunctive(value: Boolean): Self = StObject.set(x, "disjunctive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisjunctiveUndefined: Self = StObject.set(x, "disjunctive", js.undefined)
+    inline def setDisjunctiveUndefined: Self = StObject.set(x, "disjunctive", js.undefined)
     
-    @scala.inline
-    def setFacet(value: String): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
+    inline def setFacet(value: String): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

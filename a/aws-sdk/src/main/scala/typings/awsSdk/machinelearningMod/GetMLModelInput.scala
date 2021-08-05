@@ -18,22 +18,17 @@ trait GetMLModelInput extends StObject {
 }
 object GetMLModelInput {
   
-  @scala.inline
-  def apply(MLModelId: EntityId): GetMLModelInput = {
+  inline def apply(MLModelId: EntityId): GetMLModelInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMLModelInput]
   }
   
-  @scala.inline
-  implicit class GetMLModelInputMutableBuilder[Self <: GetMLModelInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMLModelInput](x: Self) {
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbose(value: Verbose): Self = StObject.set(x, "Verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Verbose): Self = StObject.set(x, "Verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "Verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "Verbose", js.undefined)
   }
 }

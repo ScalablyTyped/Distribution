@@ -12,19 +12,15 @@ trait MultiSelectFilteringEvent
 }
 object MultiSelectFilteringEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: MultiSelect): MultiSelectFilteringEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: MultiSelect): MultiSelectFilteringEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelectFilteringEvent]
   }
   
-  @scala.inline
-  implicit class MultiSelectFilteringEventMutableBuilder[Self <: MultiSelectFilteringEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MultiSelectFilteringEvent](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

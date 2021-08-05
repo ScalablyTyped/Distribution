@@ -13,19 +13,15 @@ trait ModifyTrafficMirrorFilterRuleResult extends StObject {
 }
 object ModifyTrafficMirrorFilterRuleResult {
   
-  @scala.inline
-  def apply(): ModifyTrafficMirrorFilterRuleResult = {
+  inline def apply(): ModifyTrafficMirrorFilterRuleResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyTrafficMirrorFilterRuleResult]
   }
   
-  @scala.inline
-  implicit class ModifyTrafficMirrorFilterRuleResultMutableBuilder[Self <: ModifyTrafficMirrorFilterRuleResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTrafficMirrorFilterRuleResult](x: Self) {
     
-    @scala.inline
-    def setTrafficMirrorFilterRule(value: TrafficMirrorFilterRule): Self = StObject.set(x, "TrafficMirrorFilterRule", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorFilterRule(value: TrafficMirrorFilterRule): Self = StObject.set(x, "TrafficMirrorFilterRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficMirrorFilterRuleUndefined: Self = StObject.set(x, "TrafficMirrorFilterRule", js.undefined)
+    inline def setTrafficMirrorFilterRuleUndefined: Self = StObject.set(x, "TrafficMirrorFilterRule", js.undefined)
   }
 }

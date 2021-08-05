@@ -19,32 +19,24 @@ object typesMod {
   }
   object ArgType {
     
-    @scala.inline
-    def apply(): ArgType = {
+    inline def apply(): ArgType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArgType]
     }
     
-    @scala.inline
-    implicit class ArgTypeMutableBuilder[Self <: ArgType] (val x: Self) extends AnyVal {
+    extension [Self <: ArgType](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -60,23 +52,18 @@ object typesMod {
   }
   object JsDocParam {
     
-    @scala.inline
-    def apply(name: String): JsDocParam = {
+    inline def apply(name: String): JsDocParam = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsDocParam]
     }
     
-    @scala.inline
-    implicit class JsDocParamMutableBuilder[Self <: JsDocParam] (val x: Self) extends AnyVal {
+    extension [Self <: JsDocParam](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,20 +73,16 @@ object typesMod {
   }
   object JsDocReturns {
     
-    @scala.inline
-    def apply(): JsDocReturns = {
+    inline def apply(): JsDocReturns = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsDocReturns]
     }
     
-    @scala.inline
-    implicit class JsDocReturnsMutableBuilder[Self <: JsDocReturns] (val x: Self) extends AnyVal {
+    extension [Self <: JsDocReturns](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     }
   }
   
@@ -111,29 +94,22 @@ object typesMod {
   }
   object JsDocTags {
     
-    @scala.inline
-    def apply(): JsDocTags = {
+    inline def apply(): JsDocTags = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsDocTags]
     }
     
-    @scala.inline
-    implicit class JsDocTagsMutableBuilder[Self <: JsDocTags] (val x: Self) extends AnyVal {
+    extension [Self <: JsDocTags](x: Self) {
       
-      @scala.inline
-      def setParams(value: js.Array[JsDocParam]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[JsDocParam]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParamsVarargs(value: JsDocParam*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: JsDocParam*): Self = StObject.set(x, "params", js.Array(value :_*))
       
-      @scala.inline
-      def setReturns(value: JsDocReturns): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+      inline def setReturns(value: JsDocReturns): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
+      inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     }
   }
   
@@ -149,29 +125,22 @@ object typesMod {
   }
   object PropSummaryValue {
     
-    @scala.inline
-    def apply(summary: String): PropSummaryValue = {
+    inline def apply(summary: String): PropSummaryValue = {
       val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropSummaryValue]
     }
     
-    @scala.inline
-    implicit class PropSummaryValueMutableBuilder[Self <: PropSummaryValue] (val x: Self) extends AnyVal {
+    extension [Self <: PropSummaryValue](x: Self) {
       
-      @scala.inline
-      def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,36 +158,27 @@ object typesMod {
   }
   object TableAnnotation {
     
-    @scala.inline
-    def apply(`type`: PropType): TableAnnotation = {
+    inline def apply(`type`: PropType): TableAnnotation = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableAnnotation]
     }
     
-    @scala.inline
-    implicit class TableAnnotationMutableBuilder[Self <: TableAnnotation] (val x: Self) extends AnyVal {
+    extension [Self <: TableAnnotation](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: PropDefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: PropDefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setJsDocTags(value: JsDocTags): Self = StObject.set(x, "jsDocTags", value.asInstanceOf[js.Any])
+      inline def setJsDocTags(value: JsDocTags): Self = StObject.set(x, "jsDocTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsDocTagsUndefined: Self = StObject.set(x, "jsDocTags", js.undefined)
+      inline def setJsDocTagsUndefined: Self = StObject.set(x, "jsDocTags", js.undefined)
       
-      @scala.inline
-      def setType(value: PropType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PropType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

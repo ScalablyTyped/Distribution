@@ -11,27 +11,23 @@ object issueParserStrings {
   sealed trait bitbucket
     extends StObject
        with Options
-  @scala.inline
-  def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
+  inline def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
   
   @js.native
   sealed trait github
     extends StObject
        with Options
-  @scala.inline
-  def github: github = "github".asInstanceOf[github]
+  inline def github: github = "github".asInstanceOf[github]
   
   @js.native
   sealed trait gitlab
     extends StObject
        with Options
-  @scala.inline
-  def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
+  inline def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
   
   @js.native
   sealed trait waffle
     extends StObject
        with Options
-  @scala.inline
-  def waffle: waffle = "waffle".asInstanceOf[waffle]
+  inline def waffle: waffle = "waffle".asInstanceOf[waffle]
 }

@@ -18,25 +18,19 @@ trait CreateConnectionAliasRequest extends StObject {
 }
 object CreateConnectionAliasRequest {
   
-  @scala.inline
-  def apply(ConnectionString: ConnectionString): CreateConnectionAliasRequest = {
+  inline def apply(ConnectionString: ConnectionString): CreateConnectionAliasRequest = {
     val __obj = js.Dynamic.literal(ConnectionString = ConnectionString.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConnectionAliasRequest]
   }
   
-  @scala.inline
-  implicit class CreateConnectionAliasRequestMutableBuilder[Self <: CreateConnectionAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConnectionAliasRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionString(value: ConnectionString): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
+    inline def setConnectionString(value: ConnectionString): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

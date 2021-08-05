@@ -14,31 +14,23 @@ trait StockChartNavigatorSeriesItemHighlightLine extends StObject {
 }
 object StockChartNavigatorSeriesItemHighlightLine {
   
-  @scala.inline
-  def apply(): StockChartNavigatorSeriesItemHighlightLine = {
+  inline def apply(): StockChartNavigatorSeriesItemHighlightLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartNavigatorSeriesItemHighlightLine]
   }
   
-  @scala.inline
-  implicit class StockChartNavigatorSeriesItemHighlightLineMutableBuilder[Self <: StockChartNavigatorSeriesItemHighlightLine] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartNavigatorSeriesItemHighlightLine](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

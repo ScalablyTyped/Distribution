@@ -14,28 +14,21 @@ trait ResolvedProjectReference extends StObject {
 }
 object ResolvedProjectReference {
   
-  @scala.inline
-  def apply(commandLine: ParsedCommandLine, sourceFile: SourceFile): ResolvedProjectReference = {
+  inline def apply(commandLine: ParsedCommandLine, sourceFile: SourceFile): ResolvedProjectReference = {
     val __obj = js.Dynamic.literal(commandLine = commandLine.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedProjectReference]
   }
   
-  @scala.inline
-  implicit class ResolvedProjectReferenceMutableBuilder[Self <: ResolvedProjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedProjectReference](x: Self) {
     
-    @scala.inline
-    def setCommandLine(value: ParsedCommandLine): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
+    inline def setCommandLine(value: ParsedCommandLine): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferences(value: js.Array[js.UndefOr[ResolvedProjectReference]]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: js.Array[js.UndefOr[ResolvedProjectReference]]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
     
-    @scala.inline
-    def setReferencesVarargs(value: js.UndefOr[ResolvedProjectReference]*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: js.UndefOr[ResolvedProjectReference]*): Self = StObject.set(x, "references", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceFile(value: SourceFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    inline def setSourceFile(value: SourceFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
   }
 }

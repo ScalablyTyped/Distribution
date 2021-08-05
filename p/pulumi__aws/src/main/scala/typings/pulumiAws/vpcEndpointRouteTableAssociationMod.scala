@@ -50,14 +50,10 @@ object vpcEndpointRouteTableAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointRouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointRouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcEndpointRouteTableAssociationState): VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointRouteTableAssociation]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointRouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointRouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: VpcEndpointRouteTableAssociationState): VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointRouteTableAssociation]
+    inline def get(
       name: String,
       id: Input[ID],
       state: VpcEndpointRouteTableAssociationState,
@@ -68,8 +64,7 @@ object vpcEndpointRouteTableAssociationMod {
       * Returns true if the given object is an instance of VpcEndpointRouteTableAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean]
   }
   
   trait VpcEndpointRouteTableAssociationArgs extends StObject {
@@ -86,20 +81,16 @@ object vpcEndpointRouteTableAssociationMod {
   }
   object VpcEndpointRouteTableAssociationArgs {
     
-    @scala.inline
-    def apply(routeTableId: Input[String], vpcEndpointId: Input[String]): VpcEndpointRouteTableAssociationArgs = {
+    inline def apply(routeTableId: Input[String], vpcEndpointId: Input[String]): VpcEndpointRouteTableAssociationArgs = {
       val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], vpcEndpointId = vpcEndpointId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpcEndpointRouteTableAssociationArgs]
     }
     
-    @scala.inline
-    implicit class VpcEndpointRouteTableAssociationArgsMutableBuilder[Self <: VpcEndpointRouteTableAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcEndpointRouteTableAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
+      inline def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,26 +108,20 @@ object vpcEndpointRouteTableAssociationMod {
   }
   object VpcEndpointRouteTableAssociationState {
     
-    @scala.inline
-    def apply(): VpcEndpointRouteTableAssociationState = {
+    inline def apply(): VpcEndpointRouteTableAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcEndpointRouteTableAssociationState]
     }
     
-    @scala.inline
-    implicit class VpcEndpointRouteTableAssociationStateMutableBuilder[Self <: VpcEndpointRouteTableAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcEndpointRouteTableAssociationState](x: Self) {
       
-      @scala.inline
-      def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
+      inline def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteTableIdUndefined: Self = StObject.set(x, "routeTableId", js.undefined)
+      inline def setRouteTableIdUndefined: Self = StObject.set(x, "routeTableId", js.undefined)
       
-      @scala.inline
-      def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
+      inline def setVpcEndpointId(value: Input[String]): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
+      inline def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
     }
   }
 }

@@ -12,25 +12,19 @@ trait Address extends StObject {
 }
 object Address {
   
-  @scala.inline
-  def apply(): Address = {
+  inline def apply(): Address = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Address]
   }
   
-  @scala.inline
-  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+  extension [Self <: Address](x: Self) {
     
-    @scala.inline
-    def setPipe(value: Pipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
+    inline def setPipe(value: Pipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
+    inline def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
     
-    @scala.inline
-    def setSocketAddress(value: SocketAddress): Self = StObject.set(x, "socketAddress", value.asInstanceOf[js.Any])
+    inline def setSocketAddress(value: SocketAddress): Self = StObject.set(x, "socketAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketAddressUndefined: Self = StObject.set(x, "socketAddress", js.undefined)
+    inline def setSocketAddressUndefined: Self = StObject.set(x, "socketAddress", js.undefined)
   }
 }

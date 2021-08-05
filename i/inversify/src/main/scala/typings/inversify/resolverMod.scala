@@ -11,6 +11,5 @@ object resolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resolve[T](context: Context): T = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(context.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def resolve[T](context: Context): T = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(context.asInstanceOf[js.Any]).asInstanceOf[T]
 }

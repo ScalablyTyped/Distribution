@@ -11,19 +11,15 @@ trait UserRewardedContentTargetingOptionDetails extends StObject {
 }
 object UserRewardedContentTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): UserRewardedContentTargetingOptionDetails = {
+  inline def apply(): UserRewardedContentTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserRewardedContentTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class UserRewardedContentTargetingOptionDetailsMutableBuilder[Self <: UserRewardedContentTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: UserRewardedContentTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setUserRewardedContent(value: String): Self = StObject.set(x, "userRewardedContent", value.asInstanceOf[js.Any])
+    inline def setUserRewardedContent(value: String): Self = StObject.set(x, "userRewardedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRewardedContentUndefined: Self = StObject.set(x, "userRewardedContent", js.undefined)
+    inline def setUserRewardedContentUndefined: Self = StObject.set(x, "userRewardedContent", js.undefined)
   }
 }

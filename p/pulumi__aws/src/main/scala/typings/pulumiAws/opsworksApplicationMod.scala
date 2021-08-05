@@ -128,21 +128,16 @@ object opsworksApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
+    inline def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ Boolean]
   }
   
   trait ApplicationArgs extends StObject {
@@ -238,123 +233,85 @@ object opsworksApplicationMod {
   }
   object ApplicationArgs {
     
-    @scala.inline
-    def apply(stackId: Input[String], `type`: Input[String]): ApplicationArgs = {
+    inline def apply(stackId: Input[String], `type`: Input[String]): ApplicationArgs = {
       val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicationArgs]
     }
     
-    @scala.inline
-    implicit class ApplicationArgsMutableBuilder[Self <: ApplicationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationArgs](x: Self) {
       
-      @scala.inline
-      def setAppSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]): Self = StObject.set(x, "appSources", value.asInstanceOf[js.Any])
+      inline def setAppSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]): Self = StObject.set(x, "appSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppSourcesUndefined: Self = StObject.set(x, "appSources", js.undefined)
+      inline def setAppSourcesUndefined: Self = StObject.set(x, "appSources", js.undefined)
       
-      @scala.inline
-      def setAppSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]*): Self = StObject.set(x, "appSources", js.Array(value :_*))
+      inline def setAppSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]*): Self = StObject.set(x, "appSources", js.Array(value :_*))
       
-      @scala.inline
-      def setAutoBundleOnDeploy(value: Input[String]): Self = StObject.set(x, "autoBundleOnDeploy", value.asInstanceOf[js.Any])
+      inline def setAutoBundleOnDeploy(value: Input[String]): Self = StObject.set(x, "autoBundleOnDeploy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoBundleOnDeployUndefined: Self = StObject.set(x, "autoBundleOnDeploy", js.undefined)
+      inline def setAutoBundleOnDeployUndefined: Self = StObject.set(x, "autoBundleOnDeploy", js.undefined)
       
-      @scala.inline
-      def setAwsFlowRubySettings(value: Input[String]): Self = StObject.set(x, "awsFlowRubySettings", value.asInstanceOf[js.Any])
+      inline def setAwsFlowRubySettings(value: Input[String]): Self = StObject.set(x, "awsFlowRubySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsFlowRubySettingsUndefined: Self = StObject.set(x, "awsFlowRubySettings", js.undefined)
+      inline def setAwsFlowRubySettingsUndefined: Self = StObject.set(x, "awsFlowRubySettings", js.undefined)
       
-      @scala.inline
-      def setDataSourceArn(value: Input[String]): Self = StObject.set(x, "dataSourceArn", value.asInstanceOf[js.Any])
+      inline def setDataSourceArn(value: Input[String]): Self = StObject.set(x, "dataSourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceArnUndefined: Self = StObject.set(x, "dataSourceArn", js.undefined)
+      inline def setDataSourceArnUndefined: Self = StObject.set(x, "dataSourceArn", js.undefined)
       
-      @scala.inline
-      def setDataSourceDatabaseName(value: Input[String]): Self = StObject.set(x, "dataSourceDatabaseName", value.asInstanceOf[js.Any])
+      inline def setDataSourceDatabaseName(value: Input[String]): Self = StObject.set(x, "dataSourceDatabaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceDatabaseNameUndefined: Self = StObject.set(x, "dataSourceDatabaseName", js.undefined)
+      inline def setDataSourceDatabaseNameUndefined: Self = StObject.set(x, "dataSourceDatabaseName", js.undefined)
       
-      @scala.inline
-      def setDataSourceType(value: Input[String]): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
+      inline def setDataSourceType(value: Input[String]): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
+      inline def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDocumentRoot(value: Input[String]): Self = StObject.set(x, "documentRoot", value.asInstanceOf[js.Any])
+      inline def setDocumentRoot(value: Input[String]): Self = StObject.set(x, "documentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentRootUndefined: Self = StObject.set(x, "documentRoot", js.undefined)
+      inline def setDocumentRootUndefined: Self = StObject.set(x, "documentRoot", js.undefined)
       
-      @scala.inline
-      def setDomains(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+      inline def setDomains(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+      inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
       
-      @scala.inline
-      def setDomainsVarargs(value: Input[String]*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: Input[String]*): Self = StObject.set(x, "domains", js.Array(value :_*))
       
-      @scala.inline
-      def setEnableSsl(value: Input[Boolean]): Self = StObject.set(x, "enableSsl", value.asInstanceOf[js.Any])
+      inline def setEnableSsl(value: Input[Boolean]): Self = StObject.set(x, "enableSsl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSslUndefined: Self = StObject.set(x, "enableSsl", js.undefined)
+      inline def setEnableSslUndefined: Self = StObject.set(x, "enableSsl", js.undefined)
       
-      @scala.inline
-      def setEnvironments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]]]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+      inline def setEnvironments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]]]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
+      inline def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
       
-      @scala.inline
-      def setEnvironmentsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]*): Self = StObject.set(x, "environments", js.Array(value :_*))
+      inline def setEnvironmentsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]*): Self = StObject.set(x, "environments", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRailsEnv(value: Input[String]): Self = StObject.set(x, "railsEnv", value.asInstanceOf[js.Any])
+      inline def setRailsEnv(value: Input[String]): Self = StObject.set(x, "railsEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRailsEnvUndefined: Self = StObject.set(x, "railsEnv", js.undefined)
+      inline def setRailsEnvUndefined: Self = StObject.set(x, "railsEnv", js.undefined)
       
-      @scala.inline
-      def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+      inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
-      @scala.inline
-      def setSslConfigurations(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]]]): Self = StObject.set(x, "sslConfigurations", value.asInstanceOf[js.Any])
+      inline def setSslConfigurations(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]]]): Self = StObject.set(x, "sslConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslConfigurationsUndefined: Self = StObject.set(x, "sslConfigurations", js.undefined)
+      inline def setSslConfigurationsUndefined: Self = StObject.set(x, "sslConfigurations", js.undefined)
       
-      @scala.inline
-      def setSslConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]*): Self = StObject.set(x, "sslConfigurations", js.Array(value :_*))
+      inline def setSslConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]*): Self = StObject.set(x, "sslConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -451,128 +408,88 @@ object opsworksApplicationMod {
   }
   object ApplicationState {
     
-    @scala.inline
-    def apply(): ApplicationState = {
+    inline def apply(): ApplicationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApplicationState]
     }
     
-    @scala.inline
-    implicit class ApplicationStateMutableBuilder[Self <: ApplicationState] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationState](x: Self) {
       
-      @scala.inline
-      def setAppSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]): Self = StObject.set(x, "appSources", value.asInstanceOf[js.Any])
+      inline def setAppSources(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]): Self = StObject.set(x, "appSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppSourcesUndefined: Self = StObject.set(x, "appSources", js.undefined)
+      inline def setAppSourcesUndefined: Self = StObject.set(x, "appSources", js.undefined)
       
-      @scala.inline
-      def setAppSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]*): Self = StObject.set(x, "appSources", js.Array(value :_*))
+      inline def setAppSourcesVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]*): Self = StObject.set(x, "appSources", js.Array(value :_*))
       
-      @scala.inline
-      def setAutoBundleOnDeploy(value: Input[String]): Self = StObject.set(x, "autoBundleOnDeploy", value.asInstanceOf[js.Any])
+      inline def setAutoBundleOnDeploy(value: Input[String]): Self = StObject.set(x, "autoBundleOnDeploy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoBundleOnDeployUndefined: Self = StObject.set(x, "autoBundleOnDeploy", js.undefined)
+      inline def setAutoBundleOnDeployUndefined: Self = StObject.set(x, "autoBundleOnDeploy", js.undefined)
       
-      @scala.inline
-      def setAwsFlowRubySettings(value: Input[String]): Self = StObject.set(x, "awsFlowRubySettings", value.asInstanceOf[js.Any])
+      inline def setAwsFlowRubySettings(value: Input[String]): Self = StObject.set(x, "awsFlowRubySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsFlowRubySettingsUndefined: Self = StObject.set(x, "awsFlowRubySettings", js.undefined)
+      inline def setAwsFlowRubySettingsUndefined: Self = StObject.set(x, "awsFlowRubySettings", js.undefined)
       
-      @scala.inline
-      def setDataSourceArn(value: Input[String]): Self = StObject.set(x, "dataSourceArn", value.asInstanceOf[js.Any])
+      inline def setDataSourceArn(value: Input[String]): Self = StObject.set(x, "dataSourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceArnUndefined: Self = StObject.set(x, "dataSourceArn", js.undefined)
+      inline def setDataSourceArnUndefined: Self = StObject.set(x, "dataSourceArn", js.undefined)
       
-      @scala.inline
-      def setDataSourceDatabaseName(value: Input[String]): Self = StObject.set(x, "dataSourceDatabaseName", value.asInstanceOf[js.Any])
+      inline def setDataSourceDatabaseName(value: Input[String]): Self = StObject.set(x, "dataSourceDatabaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceDatabaseNameUndefined: Self = StObject.set(x, "dataSourceDatabaseName", js.undefined)
+      inline def setDataSourceDatabaseNameUndefined: Self = StObject.set(x, "dataSourceDatabaseName", js.undefined)
       
-      @scala.inline
-      def setDataSourceType(value: Input[String]): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
+      inline def setDataSourceType(value: Input[String]): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
+      inline def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDocumentRoot(value: Input[String]): Self = StObject.set(x, "documentRoot", value.asInstanceOf[js.Any])
+      inline def setDocumentRoot(value: Input[String]): Self = StObject.set(x, "documentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentRootUndefined: Self = StObject.set(x, "documentRoot", js.undefined)
+      inline def setDocumentRootUndefined: Self = StObject.set(x, "documentRoot", js.undefined)
       
-      @scala.inline
-      def setDomains(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+      inline def setDomains(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+      inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
       
-      @scala.inline
-      def setDomainsVarargs(value: Input[String]*): Self = StObject.set(x, "domains", js.Array(value :_*))
+      inline def setDomainsVarargs(value: Input[String]*): Self = StObject.set(x, "domains", js.Array(value :_*))
       
-      @scala.inline
-      def setEnableSsl(value: Input[Boolean]): Self = StObject.set(x, "enableSsl", value.asInstanceOf[js.Any])
+      inline def setEnableSsl(value: Input[Boolean]): Self = StObject.set(x, "enableSsl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSslUndefined: Self = StObject.set(x, "enableSsl", js.undefined)
+      inline def setEnableSslUndefined: Self = StObject.set(x, "enableSsl", js.undefined)
       
-      @scala.inline
-      def setEnvironments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]]]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
+      inline def setEnvironments(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]]]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
+      inline def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
       
-      @scala.inline
-      def setEnvironmentsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]*): Self = StObject.set(x, "environments", js.Array(value :_*))
+      inline def setEnvironmentsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]*): Self = StObject.set(x, "environments", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRailsEnv(value: Input[String]): Self = StObject.set(x, "railsEnv", value.asInstanceOf[js.Any])
+      inline def setRailsEnv(value: Input[String]): Self = StObject.set(x, "railsEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRailsEnvUndefined: Self = StObject.set(x, "railsEnv", js.undefined)
+      inline def setRailsEnvUndefined: Self = StObject.set(x, "railsEnv", js.undefined)
       
-      @scala.inline
-      def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
+      inline def setShortName(value: Input[String]): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
+      inline def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
-      @scala.inline
-      def setSslConfigurations(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]]]): Self = StObject.set(x, "sslConfigurations", value.asInstanceOf[js.Any])
+      inline def setSslConfigurations(value: Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]]]): Self = StObject.set(x, "sslConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSslConfigurationsUndefined: Self = StObject.set(x, "sslConfigurations", js.undefined)
+      inline def setSslConfigurationsUndefined: Self = StObject.set(x, "sslConfigurations", js.undefined)
       
-      @scala.inline
-      def setSslConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]*): Self = StObject.set(x, "sslConfigurations", js.Array(value :_*))
+      inline def setSslConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]*): Self = StObject.set(x, "sslConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
+      inline def setStackId(value: Input[String]): Self = StObject.set(x, "stackId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
+      inline def setStackIdUndefined: Self = StObject.set(x, "stackId", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

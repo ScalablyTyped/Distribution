@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdVerticalAlignment extends StObject
 object WdVerticalAlignment {
   
-  @scala.inline
-  def wdAlignVerticalBottom: `3` = 3.asInstanceOf[`3`]
+  inline def wdAlignVerticalBottom: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdAlignVerticalCenter: `1` = 1.asInstanceOf[`1`]
+  inline def wdAlignVerticalCenter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdAlignVerticalJustify: `2` = 2.asInstanceOf[`2`]
+  inline def wdAlignVerticalJustify: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdAlignVerticalTop: `0` = 0.asInstanceOf[`0`]
+  inline def wdAlignVerticalTop: `0` = 0.asInstanceOf[`0`]
 }

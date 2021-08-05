@@ -38,43 +38,31 @@ trait InitiateAuthRequest extends StObject {
 }
 object InitiateAuthRequest {
   
-  @scala.inline
-  def apply(AuthFlow: AuthFlowType, ClientId: ClientIdType): InitiateAuthRequest = {
+  inline def apply(AuthFlow: AuthFlowType, ClientId: ClientIdType): InitiateAuthRequest = {
     val __obj = js.Dynamic.literal(AuthFlow = AuthFlow.asInstanceOf[js.Any], ClientId = ClientId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateAuthRequest]
   }
   
-  @scala.inline
-  implicit class InitiateAuthRequestMutableBuilder[Self <: InitiateAuthRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InitiateAuthRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
+    inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
+    inline def setAnalyticsMetadataUndefined: Self = StObject.set(x, "AnalyticsMetadata", js.undefined)
     
-    @scala.inline
-    def setAuthFlow(value: AuthFlowType): Self = StObject.set(x, "AuthFlow", value.asInstanceOf[js.Any])
+    inline def setAuthFlow(value: AuthFlowType): Self = StObject.set(x, "AuthFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthParameters(value: AuthParametersType): Self = StObject.set(x, "AuthParameters", value.asInstanceOf[js.Any])
+    inline def setAuthParameters(value: AuthParametersType): Self = StObject.set(x, "AuthParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthParametersUndefined: Self = StObject.set(x, "AuthParameters", js.undefined)
+    inline def setAuthParametersUndefined: Self = StObject.set(x, "AuthParameters", js.undefined)
     
-    @scala.inline
-    def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
-    @scala.inline
-    def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
+    inline def setUserContextData(value: UserContextDataType): Self = StObject.set(x, "UserContextData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
+    inline def setUserContextDataUndefined: Self = StObject.set(x, "UserContextData", js.undefined)
   }
 }

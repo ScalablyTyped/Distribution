@@ -23,11 +23,11 @@ object alertMod {
     def this(props: IAlertProps) = this()
     def this(props: IAlertProps, context: js.Any) = this()
     
-    var handleCancel: js.Any = js.native
+    /* private */ var handleCancel: js.Any = js.native
     
-    var handleConfirm: js.Any = js.native
+    /* private */ var handleConfirm: js.Any = js.native
     
-    var internalHandleCallbacks: js.Any = js.native
+    /* private */ var internalHandleCallbacks: js.Any = js.native
   }
   /* static members */
   object Alert {
@@ -39,14 +39,12 @@ object alertMod {
     @JSImport("@blueprintjs/core/lib/esm/components/alert/alert", "Alert.defaultProps")
     @js.native
     def defaultProps: IAlertProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IAlertProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IAlertProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/alert/alert", "Alert.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IAlertProps
@@ -148,92 +146,64 @@ object alertMod {
   }
   object IAlertProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean): IAlertProps = {
+    inline def apply(isOpen: Boolean): IAlertProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAlertProps]
     }
     
-    @scala.inline
-    implicit class IAlertPropsMutableBuilder[Self <: IAlertProps] (val x: Self) extends AnyVal {
+    extension [Self <: IAlertProps](x: Self) {
       
-      @scala.inline
-      def setCanEscapeKeyCancel(value: Boolean): Self = StObject.set(x, "canEscapeKeyCancel", value.asInstanceOf[js.Any])
+      inline def setCanEscapeKeyCancel(value: Boolean): Self = StObject.set(x, "canEscapeKeyCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanEscapeKeyCancelUndefined: Self = StObject.set(x, "canEscapeKeyCancel", js.undefined)
+      inline def setCanEscapeKeyCancelUndefined: Self = StObject.set(x, "canEscapeKeyCancel", js.undefined)
       
-      @scala.inline
-      def setCanOutsideClickCancel(value: Boolean): Self = StObject.set(x, "canOutsideClickCancel", value.asInstanceOf[js.Any])
+      inline def setCanOutsideClickCancel(value: Boolean): Self = StObject.set(x, "canOutsideClickCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanOutsideClickCancelUndefined: Self = StObject.set(x, "canOutsideClickCancel", js.undefined)
+      inline def setCanOutsideClickCancelUndefined: Self = StObject.set(x, "canOutsideClickCancel", js.undefined)
       
-      @scala.inline
-      def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
+      inline def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
+      inline def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
       
-      @scala.inline
-      def setConfirmButtonText(value: String): Self = StObject.set(x, "confirmButtonText", value.asInstanceOf[js.Any])
+      inline def setConfirmButtonText(value: String): Self = StObject.set(x, "confirmButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmButtonTextUndefined: Self = StObject.set(x, "confirmButtonText", js.undefined)
+      inline def setConfirmButtonTextUndefined: Self = StObject.set(x, "confirmButtonText", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+      inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCancel(value: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: (/* confirmed */ Boolean, /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
+      inline def setOnClose(value: (/* confirmed */ Boolean, /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnConfirm(value: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
+      inline def setOnConfirm(value: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+      inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
-      @scala.inline
-      def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
+      inline def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
+      inline def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     }
   }
 }

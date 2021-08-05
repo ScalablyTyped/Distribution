@@ -20,7 +20,7 @@ object baseMod {
   @js.native
   trait Scale extends StObject {
     
-    var __cfg__ : ScaleConfig = js.native
+    /* protected */ var __cfg__ : ScaleConfig = js.native
     
     var alias: js.UndefOr[String] = js.native
     

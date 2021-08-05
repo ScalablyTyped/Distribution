@@ -11,10 +11,8 @@ object createBrowserHistoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[History[S]]
-  @scala.inline
-  def default[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
+  inline def default[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[History[S]]
+  inline def default[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
   
   trait BrowserHistoryBuildOptions extends StObject {
     
@@ -30,38 +28,28 @@ object createBrowserHistoryMod {
   }
   object BrowserHistoryBuildOptions {
     
-    @scala.inline
-    def apply(): BrowserHistoryBuildOptions = {
+    inline def apply(): BrowserHistoryBuildOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserHistoryBuildOptions]
     }
     
-    @scala.inline
-    implicit class BrowserHistoryBuildOptionsMutableBuilder[Self <: BrowserHistoryBuildOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserHistoryBuildOptions](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
+      inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+      inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
       
-      @scala.inline
-      def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+      inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
     }
   }
 }

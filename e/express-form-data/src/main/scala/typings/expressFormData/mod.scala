@@ -12,19 +12,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def format(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[NextHandleFunction]
+  inline def format(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[NextHandleFunction]
   
-  @scala.inline
-  def parse(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[NextHandleFunction]
-  @scala.inline
-  def parse(options: FormDataOptions): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  inline def parse(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[NextHandleFunction]
+  inline def parse(options: FormDataOptions): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
-  @scala.inline
-  def stream(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[NextHandleFunction]
+  inline def stream(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[NextHandleFunction]
   
-  @scala.inline
-  def union(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("union")().asInstanceOf[NextHandleFunction]
+  inline def union(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("union")().asInstanceOf[NextHandleFunction]
   
   trait FormDataOptions
     extends StObject
@@ -34,20 +29,16 @@ object mod {
   }
   object FormDataOptions {
     
-    @scala.inline
-    def apply(): FormDataOptions = {
+    inline def apply(): FormDataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormDataOptions]
     }
     
-    @scala.inline
-    implicit class FormDataOptionsMutableBuilder[Self <: FormDataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormDataOptions](x: Self) {
       
-      @scala.inline
-      def setAutoClean(value: Boolean): Self = StObject.set(x, "autoClean", value.asInstanceOf[js.Any])
+      inline def setAutoClean(value: Boolean): Self = StObject.set(x, "autoClean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCleanUndefined: Self = StObject.set(x, "autoClean", js.undefined)
+      inline def setAutoCleanUndefined: Self = StObject.set(x, "autoClean", js.undefined)
     }
   }
 }

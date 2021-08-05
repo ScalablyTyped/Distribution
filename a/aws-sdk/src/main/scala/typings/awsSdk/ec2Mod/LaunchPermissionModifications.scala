@@ -18,31 +18,23 @@ trait LaunchPermissionModifications extends StObject {
 }
 object LaunchPermissionModifications {
   
-  @scala.inline
-  def apply(): LaunchPermissionModifications = {
+  inline def apply(): LaunchPermissionModifications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchPermissionModifications]
   }
   
-  @scala.inline
-  implicit class LaunchPermissionModificationsMutableBuilder[Self <: LaunchPermissionModifications] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchPermissionModifications](x: Self) {
     
-    @scala.inline
-    def setAdd(value: LaunchPermissionList): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: LaunchPermissionList): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "Add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "Add", js.undefined)
     
-    @scala.inline
-    def setAddVarargs(value: LaunchPermission*): Self = StObject.set(x, "Add", js.Array(value :_*))
+    inline def setAddVarargs(value: LaunchPermission*): Self = StObject.set(x, "Add", js.Array(value :_*))
     
-    @scala.inline
-    def setRemove(value: LaunchPermissionList): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: LaunchPermissionList): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "Remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "Remove", js.undefined)
     
-    @scala.inline
-    def setRemoveVarargs(value: LaunchPermission*): Self = StObject.set(x, "Remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: LaunchPermission*): Self = StObject.set(x, "Remove", js.Array(value :_*))
   }
 }

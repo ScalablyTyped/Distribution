@@ -18,8 +18,7 @@ trait ViewDetached[Topic, Type]
 }
 object ViewDetached {
   
-  @scala.inline
-  def apply[Topic, Type](
+  inline def apply[Topic, Type](
     name: String,
     previousTarget: Identity,
     target: Identity,
@@ -33,16 +32,12 @@ object ViewDetached {
     __obj.asInstanceOf[ViewDetached[Topic, Type]]
   }
   
-  @scala.inline
-  implicit class ViewDetachedMutableBuilder[Self <: ViewDetached[?, ?], Topic, Type] (val x: Self & (ViewDetached[Topic, Type])) extends AnyVal {
+  extension [Self <: ViewDetached[?, ?], Topic, Type](x: Self & (ViewDetached[Topic, Type])) {
     
-    @scala.inline
-    def setPreviousTarget(value: Identity): Self = StObject.set(x, "previousTarget", value.asInstanceOf[js.Any])
+    inline def setPreviousTarget(value: Identity): Self = StObject.set(x, "previousTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewIdentity(value: Identity): Self = StObject.set(x, "viewIdentity", value.asInstanceOf[js.Any])
+    inline def setViewIdentity(value: Identity): Self = StObject.set(x, "viewIdentity", value.asInstanceOf[js.Any])
   }
 }

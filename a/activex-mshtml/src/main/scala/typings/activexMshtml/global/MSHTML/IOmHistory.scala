@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IOmHistory")
 @js.native
-class IOmHistory protected ()
+/* private */ class IOmHistory ()
   extends StObject
      with typings.activexMshtml.MSHTML.IOmHistory

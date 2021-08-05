@@ -13,16 +13,13 @@ trait OlapResultTuple extends StObject {
 }
 object OlapResultTuple {
   
-  @scala.inline
-  def apply(members: () => js.Array[js.Any]): OlapResultTuple = {
+  inline def apply(members: () => js.Array[js.Any]): OlapResultTuple = {
     val __obj = js.Dynamic.literal(members = js.Any.fromFunction0(members))
     __obj.asInstanceOf[OlapResultTuple]
   }
   
-  @scala.inline
-  implicit class OlapResultTupleMutableBuilder[Self <: OlapResultTuple] (val x: Self) extends AnyVal {
+  extension [Self <: OlapResultTuple](x: Self) {
     
-    @scala.inline
-    def setMembers(value: () => js.Array[js.Any]): Self = StObject.set(x, "members", js.Any.fromFunction0(value))
+    inline def setMembers(value: () => js.Array[js.Any]): Self = StObject.set(x, "members", js.Any.fromFunction0(value))
   }
 }

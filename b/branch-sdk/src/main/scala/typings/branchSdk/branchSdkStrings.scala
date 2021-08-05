@@ -8,6 +8,5 @@ object branchSdkStrings {
   
   @js.native
   sealed trait purchase extends StObject
-  @scala.inline
-  def purchase: purchase = "purchase".asInstanceOf[purchase]
+  inline def purchase: purchase = "purchase".asInstanceOf[purchase]
 }

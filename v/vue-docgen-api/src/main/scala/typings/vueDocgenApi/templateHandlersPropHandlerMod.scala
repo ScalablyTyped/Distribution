@@ -12,8 +12,7 @@ object templateHandlersPropHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
     templateAst: TemplateChildNode,
     siblings: js.Array[TemplateChildNode],

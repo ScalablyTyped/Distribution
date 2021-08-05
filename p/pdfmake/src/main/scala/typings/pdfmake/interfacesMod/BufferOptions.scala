@@ -19,43 +19,31 @@ trait BufferOptions extends StObject {
 }
 object BufferOptions {
   
-  @scala.inline
-  def apply(): BufferOptions = {
+  inline def apply(): BufferOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BufferOptions]
   }
   
-  @scala.inline
-  implicit class BufferOptionsMutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BufferOptions](x: Self) {
     
-    @scala.inline
-    def setAutoPrint(value: Boolean): Self = StObject.set(x, "autoPrint", value.asInstanceOf[js.Any])
+    inline def setAutoPrint(value: Boolean): Self = StObject.set(x, "autoPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPrintUndefined: Self = StObject.set(x, "autoPrint", js.undefined)
+    inline def setAutoPrintUndefined: Self = StObject.set(x, "autoPrint", js.undefined)
     
-    @scala.inline
-    def setBufferPages(value: Boolean): Self = StObject.set(x, "bufferPages", value.asInstanceOf[js.Any])
+    inline def setBufferPages(value: Boolean): Self = StObject.set(x, "bufferPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferPagesUndefined: Self = StObject.set(x, "bufferPages", js.undefined)
+    inline def setBufferPagesUndefined: Self = StObject.set(x, "bufferPages", js.undefined)
     
-    @scala.inline
-    def setFontLayoutCache(value: Boolean): Self = StObject.set(x, "fontLayoutCache", value.asInstanceOf[js.Any])
+    inline def setFontLayoutCache(value: Boolean): Self = StObject.set(x, "fontLayoutCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontLayoutCacheUndefined: Self = StObject.set(x, "fontLayoutCache", js.undefined)
+    inline def setFontLayoutCacheUndefined: Self = StObject.set(x, "fontLayoutCache", js.undefined)
     
-    @scala.inline
-    def setProgressCallback(value: /* progress */ Double => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction1(value))
+    inline def setProgressCallback(value: /* progress */ Double => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
+    inline def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
     
-    @scala.inline
-    def setTableLayouts(value: StringDictionary[CustomTableLayout]): Self = StObject.set(x, "tableLayouts", value.asInstanceOf[js.Any])
+    inline def setTableLayouts(value: StringDictionary[CustomTableLayout]): Self = StObject.set(x, "tableLayouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableLayoutsUndefined: Self = StObject.set(x, "tableLayouts", js.undefined)
+    inline def setTableLayoutsUndefined: Self = StObject.set(x, "tableLayouts", js.undefined)
   }
 }

@@ -35,28 +35,21 @@ trait Own extends StObject {
 }
 object Own {
   
-  @scala.inline
-  def apply(contain: Include, contains: Include, include: Include, includes: Include, property: Property): Own = {
+  inline def apply(contain: Include, contains: Include, include: Include, includes: Include, property: Property): Own = {
     val __obj = js.Dynamic.literal(contain = contain.asInstanceOf[js.Any], contains = contains.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Own]
   }
   
-  @scala.inline
-  implicit class OwnMutableBuilder[Self <: Own] (val x: Self) extends AnyVal {
+  extension [Self <: Own](x: Self) {
     
-    @scala.inline
-    def setContain(value: Include): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+    inline def setContain(value: Include): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains(value: Include): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: Include): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludes(value: Include): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: Include): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Property): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Property): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait XmlDomImplementation
      with IXmlDomImplementation
 object XmlDomImplementation {
   
-  @scala.inline
-  def apply(hasFeature: (String, js.Any) => Boolean): XmlDomImplementation = {
+  inline def apply(hasFeature: (String, js.Any) => Boolean): XmlDomImplementation = {
     val __obj = js.Dynamic.literal(hasFeature = js.Any.fromFunction2(hasFeature))
     __obj.asInstanceOf[XmlDomImplementation]
   }

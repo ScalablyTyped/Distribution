@@ -33,43 +33,31 @@ trait InputLossBehavior extends StObject {
 }
 object InputLossBehavior {
   
-  @scala.inline
-  def apply(): InputLossBehavior = {
+  inline def apply(): InputLossBehavior = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputLossBehavior]
   }
   
-  @scala.inline
-  implicit class InputLossBehaviorMutableBuilder[Self <: InputLossBehavior] (val x: Self) extends AnyVal {
+  extension [Self <: InputLossBehavior](x: Self) {
     
-    @scala.inline
-    def setBlackFrameMsec(value: integerMin0Max1000000): Self = StObject.set(x, "BlackFrameMsec", value.asInstanceOf[js.Any])
+    inline def setBlackFrameMsec(value: integerMin0Max1000000): Self = StObject.set(x, "BlackFrameMsec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlackFrameMsecUndefined: Self = StObject.set(x, "BlackFrameMsec", js.undefined)
+    inline def setBlackFrameMsecUndefined: Self = StObject.set(x, "BlackFrameMsec", js.undefined)
     
-    @scala.inline
-    def setInputLossImageColor(value: stringMin6Max6): Self = StObject.set(x, "InputLossImageColor", value.asInstanceOf[js.Any])
+    inline def setInputLossImageColor(value: stringMin6Max6): Self = StObject.set(x, "InputLossImageColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossImageColorUndefined: Self = StObject.set(x, "InputLossImageColor", js.undefined)
+    inline def setInputLossImageColorUndefined: Self = StObject.set(x, "InputLossImageColor", js.undefined)
     
-    @scala.inline
-    def setInputLossImageSlate(value: InputLocation): Self = StObject.set(x, "InputLossImageSlate", value.asInstanceOf[js.Any])
+    inline def setInputLossImageSlate(value: InputLocation): Self = StObject.set(x, "InputLossImageSlate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossImageSlateUndefined: Self = StObject.set(x, "InputLossImageSlate", js.undefined)
+    inline def setInputLossImageSlateUndefined: Self = StObject.set(x, "InputLossImageSlate", js.undefined)
     
-    @scala.inline
-    def setInputLossImageType(value: InputLossImageType): Self = StObject.set(x, "InputLossImageType", value.asInstanceOf[js.Any])
+    inline def setInputLossImageType(value: InputLossImageType): Self = StObject.set(x, "InputLossImageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLossImageTypeUndefined: Self = StObject.set(x, "InputLossImageType", js.undefined)
+    inline def setInputLossImageTypeUndefined: Self = StObject.set(x, "InputLossImageType", js.undefined)
     
-    @scala.inline
-    def setRepeatFrameMsec(value: integerMin0Max1000000): Self = StObject.set(x, "RepeatFrameMsec", value.asInstanceOf[js.Any])
+    inline def setRepeatFrameMsec(value: integerMin0Max1000000): Self = StObject.set(x, "RepeatFrameMsec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatFrameMsecUndefined: Self = StObject.set(x, "RepeatFrameMsec", js.undefined)
+    inline def setRepeatFrameMsecUndefined: Self = StObject.set(x, "RepeatFrameMsec", js.undefined)
   }
 }

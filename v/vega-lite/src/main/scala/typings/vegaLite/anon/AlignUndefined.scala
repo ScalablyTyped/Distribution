@@ -10,16 +10,13 @@ trait AlignUndefined extends StObject {
 }
 object AlignUndefined {
   
-  @scala.inline
-  def apply(align: Unit): AlignUndefined = {
+  inline def apply(align: Unit): AlignUndefined = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignUndefined]
   }
   
-  @scala.inline
-  implicit class AlignUndefinedMutableBuilder[Self <: AlignUndefined] (val x: Self) extends AnyVal {
+  extension [Self <: AlignUndefined](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Unit): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Unit): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
   }
 }

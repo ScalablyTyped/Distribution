@@ -206,8 +206,7 @@ trait XUpdateHandler
 }
 object XUpdateHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addOrReplaceNode: (String, Double) => Unit,
     addOrReplaceNodeFromTemplate: (String, Double, TemplateIdentifier) => Unit,
@@ -233,58 +232,40 @@ object XUpdateHandler {
     __obj.asInstanceOf[XUpdateHandler]
   }
   
-  @scala.inline
-  implicit class XUpdateHandlerMutableBuilder[Self <: XUpdateHandler] (val x: Self) extends AnyVal {
+  extension [Self <: XUpdateHandler](x: Self) {
     
-    @scala.inline
-    def setAddOrReplaceNode(value: (String, Double) => Unit): Self = StObject.set(x, "addOrReplaceNode", js.Any.fromFunction2(value))
+    inline def setAddOrReplaceNode(value: (String, Double) => Unit): Self = StObject.set(x, "addOrReplaceNode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddOrReplaceNodeFromTemplate(value: (String, Double, TemplateIdentifier) => Unit): Self = StObject.set(x, "addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
+    inline def setAddOrReplaceNodeFromTemplate(value: (String, Double, TemplateIdentifier) => Unit): Self = StObject.set(x, "addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddOrReplaceProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addOrReplaceProperty", js.Any.fromFunction3(value))
+    inline def setAddOrReplaceProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addOrReplaceProperty", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAddOrReplacePropertyWithValue(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addOrReplacePropertyWithValue", js.Any.fromFunction3(value))
+    inline def setAddOrReplacePropertyWithValue(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addOrReplacePropertyWithValue", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
+    inline def setEndNode(value: () => Unit): Self = StObject.set(x, "endNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndProperty(value: () => Unit): Self = StObject.set(x, "endProperty", js.Any.fromFunction0(value))
+    inline def setEndProperty(value: () => Unit): Self = StObject.set(x, "endProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
+    inline def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModifyNode(value: (String, Double, Double, Boolean) => Unit): Self = StObject.set(x, "modifyNode", js.Any.fromFunction4(value))
+    inline def setModifyNode(value: (String, Double, Double, Boolean) => Unit): Self = StObject.set(x, "modifyNode", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setModifyProperty(value: (String, Double, Double, `type`) => Unit): Self = StObject.set(x, "modifyProperty", js.Any.fromFunction4(value))
+    inline def setModifyProperty(value: (String, Double, Double, `type`) => Unit): Self = StObject.set(x, "modifyProperty", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRemoveNode(value: String => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
+    inline def setRemoveNode(value: String => Unit): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveProperty(value: String => Unit): Self = StObject.set(x, "removeProperty", js.Any.fromFunction1(value))
+    inline def setRemoveProperty(value: String => Unit): Self = StObject.set(x, "removeProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetProperty(value: String => Unit): Self = StObject.set(x, "resetProperty", js.Any.fromFunction1(value))
+    inline def setResetProperty(value: String => Unit): Self = StObject.set(x, "resetProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetPropertyValue(value: () => Unit): Self = StObject.set(x, "resetPropertyValue", js.Any.fromFunction0(value))
+    inline def setResetPropertyValue(value: () => Unit): Self = StObject.set(x, "resetPropertyValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetPropertyValueForLocale(value: String => Unit): Self = StObject.set(x, "resetPropertyValueForLocale", js.Any.fromFunction1(value))
+    inline def setResetPropertyValueForLocale(value: String => Unit): Self = StObject.set(x, "resetPropertyValueForLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyValue(value: js.Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
+    inline def setSetPropertyValue(value: js.Any => Unit): Self = StObject.set(x, "setPropertyValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
+    inline def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = StObject.set(x, "setPropertyValueForLocale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartUpdate(value: () => Unit): Self = StObject.set(x, "startUpdate", js.Any.fromFunction0(value))
+    inline def setStartUpdate(value: () => Unit): Self = StObject.set(x, "startUpdate", js.Any.fromFunction0(value))
   }
 }

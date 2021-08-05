@@ -34,37 +34,27 @@ trait SchemaModification extends StObject {
 }
 object SchemaModification {
   
-  @scala.inline
-  def apply(): SchemaModification = {
+  inline def apply(): SchemaModification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModification]
   }
   
-  @scala.inline
-  implicit class SchemaModificationMutableBuilder[Self <: SchemaModification] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModification](x: Self) {
     
-    @scala.inline
-    def setCreate(value: SchemaColumnFamily): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: SchemaColumnFamily): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: SchemaColumnFamily): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: SchemaColumnFamily): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

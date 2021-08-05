@@ -11,16 +11,13 @@ trait MessageCountsResponse extends StObject {
 }
 object MessageCountsResponse {
   
-  @scala.inline
-  def apply(channels: StringDictionary[Double]): MessageCountsResponse = {
+  inline def apply(channels: StringDictionary[Double]): MessageCountsResponse = {
     val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageCountsResponse]
   }
   
-  @scala.inline
-  implicit class MessageCountsResponseMutableBuilder[Self <: MessageCountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MessageCountsResponse](x: Self) {
     
-    @scala.inline
-    def setChannels(value: StringDictionary[Double]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: StringDictionary[Double]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
   }
 }

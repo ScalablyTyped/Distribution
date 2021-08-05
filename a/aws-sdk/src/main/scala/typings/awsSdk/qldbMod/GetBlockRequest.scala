@@ -23,25 +23,19 @@ trait GetBlockRequest extends StObject {
 }
 object GetBlockRequest {
   
-  @scala.inline
-  def apply(BlockAddress: ValueHolder, Name: LedgerName): GetBlockRequest = {
+  inline def apply(BlockAddress: ValueHolder, Name: LedgerName): GetBlockRequest = {
     val __obj = js.Dynamic.literal(BlockAddress = BlockAddress.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBlockRequest]
   }
   
-  @scala.inline
-  implicit class GetBlockRequestMutableBuilder[Self <: GetBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlockRequest](x: Self) {
     
-    @scala.inline
-    def setBlockAddress(value: ValueHolder): Self = StObject.set(x, "BlockAddress", value.asInstanceOf[js.Any])
+    inline def setBlockAddress(value: ValueHolder): Self = StObject.set(x, "BlockAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestTipAddress(value: ValueHolder): Self = StObject.set(x, "DigestTipAddress", value.asInstanceOf[js.Any])
+    inline def setDigestTipAddress(value: ValueHolder): Self = StObject.set(x, "DigestTipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestTipAddressUndefined: Self = StObject.set(x, "DigestTipAddress", js.undefined)
+    inline def setDigestTipAddressUndefined: Self = StObject.set(x, "DigestTipAddress", js.undefined)
     
-    @scala.inline
-    def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait SendProjectSessionActionResponse extends StObject {
 }
 object SendProjectSessionActionResponse {
   
-  @scala.inline
-  def apply(Name: ProjectName): SendProjectSessionActionResponse = {
+  inline def apply(Name: ProjectName): SendProjectSessionActionResponse = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendProjectSessionActionResponse]
   }
   
-  @scala.inline
-  implicit class SendProjectSessionActionResponseMutableBuilder[Self <: SendProjectSessionActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendProjectSessionActionResponse](x: Self) {
     
-    @scala.inline
-    def setActionId(value: ActionId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: ActionId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
-    @scala.inline
-    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Result): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Result): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
   }
 }

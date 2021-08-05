@@ -26,8 +26,7 @@ object signedXmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SelectRootNamespaces(node: Element): AssocArray[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectRootNamespaces")(node.asInstanceOf[js.Any]).asInstanceOf[AssocArray[String]]
+  inline def SelectRootNamespaces(node: Element): AssocArray[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectRootNamespaces")(node.asInstanceOf[js.Any]).asInstanceOf[AssocArray[String]]
   
   @JSImport("xmldsigjs/build/types/signed_xml", "SignedXml")
   @js.native
@@ -110,9 +109,9 @@ object signedXmlMod {
     
     def XmlSignature: Signature = js.native
     
-    var document: js.UndefOr[Document] = js.native
+    /* protected */ var document: js.UndefOr[Document] = js.native
     
-    var signature: Signature = js.native
+    /* protected */ var signature: Signature = js.native
   }
   
   trait OptionsSign extends StObject {
@@ -149,44 +148,32 @@ object signedXmlMod {
   }
   object OptionsSign {
     
-    @scala.inline
-    def apply(): OptionsSign = {
+    inline def apply(): OptionsSign = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsSign]
     }
     
-    @scala.inline
-    implicit class OptionsSignMutableBuilder[Self <: OptionsSign] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsSign](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setKeyValue(value: CryptoKey): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
+      inline def setKeyValue(value: CryptoKey): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
+      inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
       
-      @scala.inline
-      def setReferences(value: js.Array[OptionsSignReference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[OptionsSignReference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+      inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      @scala.inline
-      def setReferencesVarargs(value: OptionsSignReference*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: OptionsSignReference*): Self = StObject.set(x, "references", js.Array(value :_*))
       
-      @scala.inline
-      def setX509(value: js.Array[String]): Self = StObject.set(x, "x509", value.asInstanceOf[js.Any])
+      inline def setX509(value: js.Array[String]): Self = StObject.set(x, "x509", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX509Undefined: Self = StObject.set(x, "x509", js.undefined)
+      inline def setX509Undefined: Self = StObject.set(x, "x509", js.undefined)
       
-      @scala.inline
-      def setX509Varargs(value: String*): Self = StObject.set(x, "x509", js.Array(value :_*))
+      inline def setX509Varargs(value: String*): Self = StObject.set(x, "x509", js.Array(value :_*))
     }
   }
   
@@ -222,44 +209,32 @@ object signedXmlMod {
   }
   object OptionsSignReference {
     
-    @scala.inline
-    def apply(hash: AlgorithmIdentifier): OptionsSignReference = {
+    inline def apply(hash: AlgorithmIdentifier): OptionsSignReference = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsSignReference]
     }
     
-    @scala.inline
-    implicit class OptionsSignReferenceMutableBuilder[Self <: OptionsSignReference] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsSignReference](x: Self) {
       
-      @scala.inline
-      def setHash(value: AlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: AlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTransforms(value: js.Array[OptionsSignTransform]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
+      inline def setTransforms(value: js.Array[OptionsSignTransform]): Self = StObject.set(x, "transforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
+      inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
       
-      @scala.inline
-      def setTransformsVarargs(value: OptionsSignTransform*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+      inline def setTransformsVarargs(value: OptionsSignTransform*): Self = StObject.set(x, "transforms", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
   
@@ -274,22 +249,16 @@ object signedXmlMod {
   trait OptionsSignTransform extends StObject
   object OptionsSignTransform {
     
-    @scala.inline
-    def base64: typings.xmldsigjs.xmldsigjsStrings.base64 = "base64".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.base64]
+    inline def base64: typings.xmldsigjs.xmldsigjsStrings.base64 = "base64".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.base64]
     
-    @scala.inline
-    def c14n: typings.xmldsigjs.xmldsigjsStrings.c14n = "c14n".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.c14n]
+    inline def c14n: typings.xmldsigjs.xmldsigjsStrings.c14n = "c14n".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.c14n]
     
-    @scala.inline
-    def `c14n-com`: typings.xmldsigjs.xmldsigjsStrings.`c14n-com` = "c14n-com".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`c14n-com`]
+    inline def `c14n-com`: typings.xmldsigjs.xmldsigjsStrings.`c14n-com` = "c14n-com".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`c14n-com`]
     
-    @scala.inline
-    def enveloped: typings.xmldsigjs.xmldsigjsStrings.enveloped = "enveloped".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.enveloped]
+    inline def enveloped: typings.xmldsigjs.xmldsigjsStrings.enveloped = "enveloped".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.enveloped]
     
-    @scala.inline
-    def `exc-c14n`: typings.xmldsigjs.xmldsigjsStrings.`exc-c14n` = "exc-c14n".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`exc-c14n`]
+    inline def `exc-c14n`: typings.xmldsigjs.xmldsigjsStrings.`exc-c14n` = "exc-c14n".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`exc-c14n`]
     
-    @scala.inline
-    def `exc-c14n-com`: typings.xmldsigjs.xmldsigjsStrings.`exc-c14n-com` = "exc-c14n-com".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`exc-c14n-com`]
+    inline def `exc-c14n-com`: typings.xmldsigjs.xmldsigjsStrings.`exc-c14n-com` = "exc-c14n-com".asInstanceOf[typings.xmldsigjs.xmldsigjsStrings.`exc-c14n-com`]
   }
 }

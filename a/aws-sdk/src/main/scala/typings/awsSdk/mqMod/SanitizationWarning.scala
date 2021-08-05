@@ -23,31 +23,23 @@ trait SanitizationWarning extends StObject {
 }
 object SanitizationWarning {
   
-  @scala.inline
-  def apply(): SanitizationWarning = {
+  inline def apply(): SanitizationWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SanitizationWarning]
   }
   
-  @scala.inline
-  implicit class SanitizationWarningMutableBuilder[Self <: SanitizationWarning] (val x: Self) extends AnyVal {
+  extension [Self <: SanitizationWarning](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: string): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: string): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setElementName(value: string): Self = StObject.set(x, "ElementName", value.asInstanceOf[js.Any])
+    inline def setElementName(value: string): Self = StObject.set(x, "ElementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementNameUndefined: Self = StObject.set(x, "ElementName", js.undefined)
+    inline def setElementNameUndefined: Self = StObject.set(x, "ElementName", js.undefined)
     
-    @scala.inline
-    def setReason(value: SanitizationWarningReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: SanitizationWarningReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
   }
 }

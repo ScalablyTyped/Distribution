@@ -29,31 +29,23 @@ trait CreateCalendarObjectOptions extends StObject {
 }
 object CreateCalendarObjectOptions {
   
-  @scala.inline
-  def apply(data: String, filename: String): CreateCalendarObjectOptions = {
+  inline def apply(data: String, filename: String): CreateCalendarObjectOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCalendarObjectOptions]
   }
   
-  @scala.inline
-  implicit class CreateCalendarObjectOptionsMutableBuilder[Self <: CreateCalendarObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCalendarObjectOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
-    @scala.inline
-    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

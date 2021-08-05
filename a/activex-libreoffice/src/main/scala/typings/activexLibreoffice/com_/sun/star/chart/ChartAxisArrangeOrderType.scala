@@ -25,18 +25,14 @@ object ChartAxisArrangeOrderType {
     *
     * when arranged side by side, they are staggered.</p>
     */
-  @scala.inline
-  def AUTO: `0` = 0.asInstanceOf[`0`]
+  inline def AUTO: `0` = 0.asInstanceOf[`0`]
   
   /** The descriptions are arranged side by side. */
-  @scala.inline
-  def SIDE_BY_SIDE: `1` = 1.asInstanceOf[`1`]
+  inline def SIDE_BY_SIDE: `1` = 1.asInstanceOf[`1`]
   
   /** The descriptions are alternately put on two lines with the even values out of the normal line. */
-  @scala.inline
-  def STAGGER_EVEN: `2` = 2.asInstanceOf[`2`]
+  inline def STAGGER_EVEN: `2` = 2.asInstanceOf[`2`]
   
   /** The descriptions are alternately put on two lines with the odd values out of the normal line. */
-  @scala.inline
-  def STAGGER_ODD: `3` = 3.asInstanceOf[`3`]
+  inline def STAGGER_ODD: `3` = 3.asInstanceOf[`3`]
 }

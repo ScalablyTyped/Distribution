@@ -7,13 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object keysMod {
   
-  @scala.inline
-  def apply(obj: js.Array[js.Any]): Source[String] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Source[String]]
+  inline def apply(obj: js.Array[js.Any]): Source[String] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Source[String]]
   /**
     * Stream the key names from an object (or array).
     */
-  @scala.inline
-  def apply(obj: js.Object): Source[String] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Source[String]]
+  inline def apply(obj: js.Object): Source[String] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Source[String]]
   
   @JSImport("pull-stream/sources/keys", JSImport.Namespace)
   @js.native

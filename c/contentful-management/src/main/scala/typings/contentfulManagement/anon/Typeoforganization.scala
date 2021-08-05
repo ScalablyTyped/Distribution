@@ -17,8 +17,7 @@ trait Typeoforganization extends StObject {
 }
 object Typeoforganization {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapOrganization: (AxiosInstance, OrganizationProp) => Organization,
     wrapOrganizationCollection: (AxiosInstance, CollectionProp[OrganizationProp]) => Collection[Organization, OrganizationProp]
   ): Typeoforganization = {
@@ -26,14 +25,11 @@ object Typeoforganization {
     __obj.asInstanceOf[Typeoforganization]
   }
   
-  @scala.inline
-  implicit class TypeoforganizationMutableBuilder[Self <: Typeoforganization] (val x: Self) extends AnyVal {
+  extension [Self <: Typeoforganization](x: Self) {
     
-    @scala.inline
-    def setWrapOrganization(value: (AxiosInstance, OrganizationProp) => Organization): Self = StObject.set(x, "wrapOrganization", js.Any.fromFunction2(value))
+    inline def setWrapOrganization(value: (AxiosInstance, OrganizationProp) => Organization): Self = StObject.set(x, "wrapOrganization", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapOrganizationCollection(
+    inline def setWrapOrganizationCollection(
       value: (AxiosInstance, CollectionProp[OrganizationProp]) => Collection[Organization, OrganizationProp]
     ): Self = StObject.set(x, "wrapOrganizationCollection", js.Any.fromFunction2(value))
   }

@@ -15,20 +15,16 @@ trait UuidHeaderValue
 }
 object UuidHeaderValue {
   
-  @scala.inline
-  def apply(value: String): UuidHeaderValue = {
+  inline def apply(value: String): UuidHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("uuid")
     __obj.asInstanceOf[UuidHeaderValue]
   }
   
-  @scala.inline
-  implicit class UuidHeaderValueMutableBuilder[Self <: UuidHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: UuidHeaderValue](x: Self) {
     
-    @scala.inline
-    def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: uuid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -41,8 +41,6 @@ object IonResource {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromAssetId(assetId: String): js.Promise[IonResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAssetId")(assetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IonResource]]
-  @scala.inline
-  def fromAssetId(assetId: String, options: AccessToken): js.Promise[IonResource] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAssetId")(assetId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IonResource]]
+  inline def fromAssetId(assetId: String): js.Promise[IonResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAssetId")(assetId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IonResource]]
+  inline def fromAssetId(assetId: String, options: AccessToken): js.Promise[IonResource] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAssetId")(assetId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IonResource]]
 }

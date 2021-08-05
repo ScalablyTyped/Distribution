@@ -23,31 +23,23 @@ trait CreatePublicKeyResult extends StObject {
 }
 object CreatePublicKeyResult {
   
-  @scala.inline
-  def apply(): CreatePublicKeyResult = {
+  inline def apply(): CreatePublicKeyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePublicKeyResult]
   }
   
-  @scala.inline
-  implicit class CreatePublicKeyResultMutableBuilder[Self <: CreatePublicKeyResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePublicKeyResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: PublicKey): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PublicKey): Self = StObject.set(x, "PublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "PublicKey", js.undefined)
   }
 }

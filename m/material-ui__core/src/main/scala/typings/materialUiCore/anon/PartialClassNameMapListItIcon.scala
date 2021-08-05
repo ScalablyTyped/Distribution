@@ -13,25 +13,19 @@ trait PartialClassNameMapListItIcon extends StObject {
 }
 object PartialClassNameMapListItIcon {
   
-  @scala.inline
-  def apply(): PartialClassNameMapListItIcon = {
+  inline def apply(): PartialClassNameMapListItIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapListItIcon]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapListItIconMutableBuilder[Self <: PartialClassNameMapListItIcon] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapListItIcon](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

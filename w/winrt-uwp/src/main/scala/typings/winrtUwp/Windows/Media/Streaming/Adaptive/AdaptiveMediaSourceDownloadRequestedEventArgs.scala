@@ -31,8 +31,7 @@ trait AdaptiveMediaSourceDownloadRequestedEventArgs extends StObject {
 }
 object AdaptiveMediaSourceDownloadRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDeferral: () => AdaptiveMediaSourceDownloadRequestedDeferral,
     resourceByteRangeLength: Double,
     resourceByteRangeOffset: Double,
@@ -44,25 +43,18 @@ object AdaptiveMediaSourceDownloadRequestedEventArgs {
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourceDownloadRequestedEventArgsMutableBuilder[Self <: AdaptiveMediaSourceDownloadRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourceDownloadRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => AdaptiveMediaSourceDownloadRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => AdaptiveMediaSourceDownloadRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResourceByteRangeLength(value: Double): Self = StObject.set(x, "resourceByteRangeLength", value.asInstanceOf[js.Any])
+    inline def setResourceByteRangeLength(value: Double): Self = StObject.set(x, "resourceByteRangeLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceByteRangeOffset(value: Double): Self = StObject.set(x, "resourceByteRangeOffset", value.asInstanceOf[js.Any])
+    inline def setResourceByteRangeOffset(value: Double): Self = StObject.set(x, "resourceByteRangeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: AdaptiveMediaSourceResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: AdaptiveMediaSourceResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: AdaptiveMediaSourceDownloadResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: AdaptiveMediaSourceDownloadResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

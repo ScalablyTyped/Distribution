@@ -19,16 +19,13 @@ trait XCloseable
 }
 object XCloseable {
   
-  @scala.inline
-  def apply(acquire: () => Unit, close: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XCloseable = {
+  inline def apply(acquire: () => Unit, close: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XCloseable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), close = js.Any.fromFunction0(close), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCloseable]
   }
   
-  @scala.inline
-  implicit class XCloseableMutableBuilder[Self <: XCloseable] (val x: Self) extends AnyVal {
+  extension [Self <: XCloseable](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

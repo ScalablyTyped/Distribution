@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessRole extends StObject
 object AccessRole {
   
-  @scala.inline
-  def freeBusyReader: typings.gapiCalendar.gapiCalendarStrings.freeBusyReader = "freeBusyReader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.freeBusyReader]
+  inline def freeBusyReader: typings.gapiCalendar.gapiCalendarStrings.freeBusyReader = "freeBusyReader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.freeBusyReader]
   
-  @scala.inline
-  def none: typings.gapiCalendar.gapiCalendarStrings.none = "none".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.none]
+  inline def none: typings.gapiCalendar.gapiCalendarStrings.none = "none".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.none]
   
-  @scala.inline
-  def owner: typings.gapiCalendar.gapiCalendarStrings.owner = "owner".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.owner]
+  inline def owner: typings.gapiCalendar.gapiCalendarStrings.owner = "owner".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.owner]
   
-  @scala.inline
-  def reader: typings.gapiCalendar.gapiCalendarStrings.reader = "reader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.reader]
+  inline def reader: typings.gapiCalendar.gapiCalendarStrings.reader = "reader".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.reader]
   
-  @scala.inline
-  def writer: typings.gapiCalendar.gapiCalendarStrings.writer = "writer".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.writer]
+  inline def writer: typings.gapiCalendar.gapiCalendarStrings.writer = "writer".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.writer]
 }

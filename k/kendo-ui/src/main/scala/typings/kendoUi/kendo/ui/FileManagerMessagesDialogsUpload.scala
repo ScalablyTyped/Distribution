@@ -14,31 +14,23 @@ trait FileManagerMessagesDialogsUpload extends StObject {
 }
 object FileManagerMessagesDialogsUpload {
   
-  @scala.inline
-  def apply(): FileManagerMessagesDialogsUpload = {
+  inline def apply(): FileManagerMessagesDialogsUpload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileManagerMessagesDialogsUpload]
   }
   
-  @scala.inline
-  implicit class FileManagerMessagesDialogsUploadMutableBuilder[Self <: FileManagerMessagesDialogsUpload] (val x: Self) extends AnyVal {
+  extension [Self <: FileManagerMessagesDialogsUpload](x: Self) {
     
-    @scala.inline
-    def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

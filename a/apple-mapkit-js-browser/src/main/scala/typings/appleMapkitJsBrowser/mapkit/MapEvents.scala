@@ -48,8 +48,7 @@ trait MapEvents[T] extends StObject {
 }
 object MapEvents {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     deselect: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation,
     `double-tap`: EventBase[T],
     `drag-end`: EventBase[T] & AnnotationAnnotation,
@@ -86,58 +85,40 @@ object MapEvents {
     __obj.asInstanceOf[MapEvents[T]]
   }
   
-  @scala.inline
-  implicit class MapEventsMutableBuilder[Self <: MapEvents[?], T] (val x: Self & MapEvents[T]) extends AnyVal {
+  extension [Self <: MapEvents[?], T](x: Self & MapEvents[T]) {
     
-    @scala.inline
-    def setDeselect(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation): Self = StObject.set(x, "deselect", value.asInstanceOf[js.Any])
+    inline def setDeselect(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation): Self = StObject.set(x, "deselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDouble-tap`(value: EventBase[T]): Self = StObject.set(x, "double-tap", value.asInstanceOf[js.Any])
+    inline def `setDouble-tap`(value: EventBase[T]): Self = StObject.set(x, "double-tap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDrag-end`(value: EventBase[T] & AnnotationAnnotation): Self = StObject.set(x, "drag-end", value.asInstanceOf[js.Any])
+    inline def `setDrag-end`(value: EventBase[T] & AnnotationAnnotation): Self = StObject.set(x, "drag-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDrag-start`(value: EventBase[T] & AnnotationAnnotation): Self = StObject.set(x, "drag-start", value.asInstanceOf[js.Any])
+    inline def `setDrag-start`(value: EventBase[T] & AnnotationAnnotation): Self = StObject.set(x, "drag-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragging(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Coordinate): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+    inline def setDragging(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Coordinate): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLong-press`(value: EventBase[T]): Self = StObject.set(x, "long-press", value.asInstanceOf[js.Any])
+    inline def `setLong-press`(value: EventBase[T]): Self = StObject.set(x, "long-press", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMap-type-change`(value: EventBase[T]): Self = StObject.set(x, "map-type-change", value.asInstanceOf[js.Any])
+    inline def `setMap-type-change`(value: EventBase[T]): Self = StObject.set(x, "map-type-change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRegion-change-end`(value: EventBase[T]): Self = StObject.set(x, "region-change-end", value.asInstanceOf[js.Any])
+    inline def `setRegion-change-end`(value: EventBase[T]): Self = StObject.set(x, "region-change-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRegion-change-start`(value: EventBase[T]): Self = StObject.set(x, "region-change-start", value.asInstanceOf[js.Any])
+    inline def `setRegion-change-start`(value: EventBase[T]): Self = StObject.set(x, "region-change-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-end`(value: EventBase[T]): Self = StObject.set(x, "scroll-end", value.asInstanceOf[js.Any])
+    inline def `setScroll-end`(value: EventBase[T]): Self = StObject.set(x, "scroll-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setScroll-start`(value: EventBase[T]): Self = StObject.set(x, "scroll-start", value.asInstanceOf[js.Any])
+    inline def `setScroll-start`(value: EventBase[T]): Self = StObject.set(x, "scroll-start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSingle-tap`(value: EventBase[T]): Self = StObject.set(x, "single-tap", value.asInstanceOf[js.Any])
+    inline def `setSingle-tap`(value: EventBase[T]): Self = StObject.set(x, "single-tap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-location-change`(value: EventBase[T] & Timestamp): Self = StObject.set(x, "user-location-change", value.asInstanceOf[js.Any])
+    inline def `setUser-location-change`(value: EventBase[T] & Timestamp): Self = StObject.set(x, "user-location-change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUser-location-error`(value: EventBase[T] & Code): Self = StObject.set(x, "user-location-error", value.asInstanceOf[js.Any])
+    inline def `setUser-location-error`(value: EventBase[T] & Code): Self = StObject.set(x, "user-location-error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZoom-end`(value: EventBase[T]): Self = StObject.set(x, "zoom-end", value.asInstanceOf[js.Any])
+    inline def `setZoom-end`(value: EventBase[T]): Self = StObject.set(x, "zoom-end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZoom-start`(value: EventBase[T]): Self = StObject.set(x, "zoom-start", value.asInstanceOf[js.Any])
+    inline def `setZoom-start`(value: EventBase[T]): Self = StObject.set(x, "zoom-start", value.asInstanceOf[js.Any])
   }
 }

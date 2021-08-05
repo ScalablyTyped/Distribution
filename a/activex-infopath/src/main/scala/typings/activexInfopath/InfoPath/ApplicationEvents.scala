@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ApplicationEvents extends StObject {
   
-  @JSName("InfoPath.ApplicationEvents_typekey")
+  /* private */ @JSName("InfoPath.ApplicationEvents_typekey")
   var InfoPathDotApplicationEvents_typekey: ApplicationEvents
 }
 object ApplicationEvents {
   
-  @scala.inline
-  def apply(InfoPathDotApplicationEvents_typekey: ApplicationEvents): ApplicationEvents = {
+  inline def apply(InfoPathDotApplicationEvents_typekey: ApplicationEvents): ApplicationEvents = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("InfoPath.ApplicationEvents_typekey")(InfoPathDotApplicationEvents_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationEvents]
   }
   
-  @scala.inline
-  implicit class ApplicationEventsMutableBuilder[Self <: ApplicationEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationEvents](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotApplicationEvents_typekey(value: ApplicationEvents): Self = StObject.set(x, "InfoPath.ApplicationEvents_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotApplicationEvents_typekey(value: ApplicationEvents): Self = StObject.set(x, "InfoPath.ApplicationEvents_typekey", value.asInstanceOf[js.Any])
   }
 }

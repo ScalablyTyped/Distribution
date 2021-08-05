@@ -16,34 +16,25 @@ trait RoomList
 }
 object RoomList {
   
-  @scala.inline
-  def apply(): RoomList = {
+  inline def apply(): RoomList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoomList]
   }
   
-  @scala.inline
-  implicit class RoomListMutableBuilder[Self <: RoomList] (val x: Self) extends AnyVal {
+  extension [Self <: RoomList](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
+    inline def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setRooms(value: NullableOption[js.Array[Room]]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+    inline def setRooms(value: NullableOption[js.Array[Room]]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomsNull: Self = StObject.set(x, "rooms", null)
+    inline def setRoomsNull: Self = StObject.set(x, "rooms", null)
     
-    @scala.inline
-    def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
+    inline def setRoomsUndefined: Self = StObject.set(x, "rooms", js.undefined)
     
-    @scala.inline
-    def setRoomsVarargs(value: Room*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+    inline def setRoomsVarargs(value: Room*): Self = StObject.set(x, "rooms", js.Array(value :_*))
   }
 }

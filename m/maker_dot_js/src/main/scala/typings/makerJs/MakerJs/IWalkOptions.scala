@@ -17,31 +17,23 @@ trait IWalkOptions extends StObject {
 }
 object IWalkOptions {
   
-  @scala.inline
-  def apply(): IWalkOptions = {
+  inline def apply(): IWalkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWalkOptions]
   }
   
-  @scala.inline
-  implicit class IWalkOptionsMutableBuilder[Self <: IWalkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IWalkOptions](x: Self) {
     
-    @scala.inline
-    def setAfterChildWalk(value: /* context */ IWalkModel => Unit): Self = StObject.set(x, "afterChildWalk", js.Any.fromFunction1(value))
+    inline def setAfterChildWalk(value: /* context */ IWalkModel => Unit): Self = StObject.set(x, "afterChildWalk", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterChildWalkUndefined: Self = StObject.set(x, "afterChildWalk", js.undefined)
+    inline def setAfterChildWalkUndefined: Self = StObject.set(x, "afterChildWalk", js.undefined)
     
-    @scala.inline
-    def setBeforeChildWalk(value: /* context */ IWalkModel => Boolean): Self = StObject.set(x, "beforeChildWalk", js.Any.fromFunction1(value))
+    inline def setBeforeChildWalk(value: /* context */ IWalkModel => Boolean): Self = StObject.set(x, "beforeChildWalk", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeChildWalkUndefined: Self = StObject.set(x, "beforeChildWalk", js.undefined)
+    inline def setBeforeChildWalkUndefined: Self = StObject.set(x, "beforeChildWalk", js.undefined)
     
-    @scala.inline
-    def setOnPath(value: /* context */ IWalkPath => Unit): Self = StObject.set(x, "onPath", js.Any.fromFunction1(value))
+    inline def setOnPath(value: /* context */ IWalkPath => Unit): Self = StObject.set(x, "onPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPathUndefined: Self = StObject.set(x, "onPath", js.undefined)
+    inline def setOnPathUndefined: Self = StObject.set(x, "onPath", js.undefined)
   }
 }

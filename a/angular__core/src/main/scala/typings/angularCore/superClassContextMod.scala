@@ -13,6 +13,5 @@ object superClassContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def updateSuperClassAbstractMembersContext(baseClass: ClassDeclaration, context: FunctionContext, classMetadataMap: ClassMetadataMap): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSuperClassAbstractMembersContext")(baseClass.asInstanceOf[js.Any], context.asInstanceOf[js.Any], classMetadataMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateSuperClassAbstractMembersContext(baseClass: ClassDeclaration, context: FunctionContext, classMetadataMap: ClassMetadataMap): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSuperClassAbstractMembersContext")(baseClass.asInstanceOf[js.Any], context.asInstanceOf[js.Any], classMetadataMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

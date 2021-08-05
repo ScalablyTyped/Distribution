@@ -61,67 +61,47 @@ trait MetricThreshold extends StObject {
 }
 object MetricThreshold {
   
-  @scala.inline
-  def apply(): MetricThreshold = {
+  inline def apply(): MetricThreshold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricThreshold]
   }
   
-  @scala.inline
-  implicit class MetricThresholdMutableBuilder[Self <: MetricThreshold] (val x: Self) extends AnyVal {
+  extension [Self <: MetricThreshold](x: Self) {
     
-    @scala.inline
-    def setAggregations(value: js.Array[Aggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
+    inline def setAggregations(value: js.Array[Aggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
+    inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     
-    @scala.inline
-    def setAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
+    inline def setAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
     
-    @scala.inline
-    def setComparison(value: String): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
+    inline def setComparison(value: String): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonUndefined: Self = StObject.set(x, "comparison", js.undefined)
+    inline def setComparisonUndefined: Self = StObject.set(x, "comparison", js.undefined)
     
-    @scala.inline
-    def setDenominatorAggregations(value: js.Array[Aggregation]): Self = StObject.set(x, "denominatorAggregations", value.asInstanceOf[js.Any])
+    inline def setDenominatorAggregations(value: js.Array[Aggregation]): Self = StObject.set(x, "denominatorAggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenominatorAggregationsUndefined: Self = StObject.set(x, "denominatorAggregations", js.undefined)
+    inline def setDenominatorAggregationsUndefined: Self = StObject.set(x, "denominatorAggregations", js.undefined)
     
-    @scala.inline
-    def setDenominatorAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "denominatorAggregations", js.Array(value :_*))
+    inline def setDenominatorAggregationsVarargs(value: Aggregation*): Self = StObject.set(x, "denominatorAggregations", js.Array(value :_*))
     
-    @scala.inline
-    def setDenominatorFilter(value: String): Self = StObject.set(x, "denominatorFilter", value.asInstanceOf[js.Any])
+    inline def setDenominatorFilter(value: String): Self = StObject.set(x, "denominatorFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenominatorFilterUndefined: Self = StObject.set(x, "denominatorFilter", js.undefined)
+    inline def setDenominatorFilterUndefined: Self = StObject.set(x, "denominatorFilter", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setThresholdValue(value: Double): Self = StObject.set(x, "thresholdValue", value.asInstanceOf[js.Any])
+    inline def setThresholdValue(value: Double): Self = StObject.set(x, "thresholdValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdValueUndefined: Self = StObject.set(x, "thresholdValue", js.undefined)
+    inline def setThresholdValueUndefined: Self = StObject.set(x, "thresholdValue", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

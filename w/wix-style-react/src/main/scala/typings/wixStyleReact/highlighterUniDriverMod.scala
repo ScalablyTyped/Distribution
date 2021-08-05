@@ -17,8 +17,7 @@ object highlighterUniDriverMod {
   }
   object HighlighterUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object highlighterUniDriverMod {
       __obj.asInstanceOf[HighlighterUniDriver]
     }
     
-    @scala.inline
-    implicit class HighlighterUniDriverMutableBuilder[Self <: HighlighterUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: HighlighterUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHtml(value: () => js.Promise[String]): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
+      inline def setHtml(value: () => js.Promise[String]): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
     }
   }
 }

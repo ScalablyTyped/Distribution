@@ -29,55 +29,39 @@ trait EmailLinkSigninResponse extends StObject {
 }
 object EmailLinkSigninResponse {
   
-  @scala.inline
-  def apply(): EmailLinkSigninResponse = {
+  inline def apply(): EmailLinkSigninResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmailLinkSigninResponse]
   }
   
-  @scala.inline
-  implicit class EmailLinkSigninResponseMutableBuilder[Self <: EmailLinkSigninResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EmailLinkSigninResponse](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+    inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+    inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
     
-    @scala.inline
-    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
+    inline def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
-    @scala.inline
-    def setIsNewUser(value: Boolean): Self = StObject.set(x, "isNewUser", value.asInstanceOf[js.Any])
+    inline def setIsNewUser(value: Boolean): Self = StObject.set(x, "isNewUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNewUserUndefined: Self = StObject.set(x, "isNewUser", js.undefined)
+    inline def setIsNewUserUndefined: Self = StObject.set(x, "isNewUser", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
+    inline def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
   }
 }

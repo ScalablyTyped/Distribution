@@ -22,11 +22,9 @@ object mod extends Shortcut {
   trait EventName extends StObject
   object EventName {
     
-    @scala.inline
-    def change: typings.screenfull.screenfullStrings.change = "change".asInstanceOf[typings.screenfull.screenfullStrings.change]
+    inline def change: typings.screenfull.screenfullStrings.change = "change".asInstanceOf[typings.screenfull.screenfullStrings.change]
     
-    @scala.inline
-    def error: typings.screenfull.screenfullStrings.error = "error".asInstanceOf[typings.screenfull.screenfullStrings.error]
+    inline def error: typings.screenfull.screenfullStrings.error = "error".asInstanceOf[typings.screenfull.screenfullStrings.error]
   }
   
   trait RawEventNames extends StObject {
@@ -45,8 +43,7 @@ object mod extends Shortcut {
   }
   object RawEventNames {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exitFullscreen: String,
       fullscreenElement: String,
       fullscreenEnabled: String,
@@ -58,26 +55,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RawEventNames]
     }
     
-    @scala.inline
-    implicit class RawEventNamesMutableBuilder[Self <: RawEventNames] (val x: Self) extends AnyVal {
+    extension [Self <: RawEventNames](x: Self) {
       
-      @scala.inline
-      def setExitFullscreen(value: String): Self = StObject.set(x, "exitFullscreen", value.asInstanceOf[js.Any])
+      inline def setExitFullscreen(value: String): Self = StObject.set(x, "exitFullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenElement(value: String): Self = StObject.set(x, "fullscreenElement", value.asInstanceOf[js.Any])
+      inline def setFullscreenElement(value: String): Self = StObject.set(x, "fullscreenElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenEnabled(value: String): Self = StObject.set(x, "fullscreenEnabled", value.asInstanceOf[js.Any])
+      inline def setFullscreenEnabled(value: String): Self = StObject.set(x, "fullscreenEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenchange(value: String): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
+      inline def setFullscreenchange(value: String): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenerror(value: String): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
+      inline def setFullscreenerror(value: String): Self = StObject.set(x, "fullscreenerror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestFullscreen(value: String): Self = StObject.set(x, "requestFullscreen", value.asInstanceOf[js.Any])
+      inline def setRequestFullscreen(value: String): Self = StObject.set(x, "requestFullscreen", value.asInstanceOf[js.Any])
     }
   }
   

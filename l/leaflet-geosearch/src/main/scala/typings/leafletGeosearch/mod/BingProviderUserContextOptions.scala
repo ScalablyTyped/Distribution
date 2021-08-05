@@ -22,55 +22,39 @@ trait BingProviderUserContextOptions extends StObject {
 }
 object BingProviderUserContextOptions {
   
-  @scala.inline
-  def apply(): BingProviderUserContextOptions = {
+  inline def apply(): BingProviderUserContextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BingProviderUserContextOptions]
   }
   
-  @scala.inline
-  implicit class BingProviderUserContextOptionsMutableBuilder[Self <: BingProviderUserContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BingProviderUserContextOptions](x: Self) {
     
-    @scala.inline
-    def setUl(value: String): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+    inline def setUl(value: String): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
+    inline def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
     
-    @scala.inline
-    def setUmv(value: String): Self = StObject.set(x, "umv", value.asInstanceOf[js.Any])
+    inline def setUmv(value: String): Self = StObject.set(x, "umv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUmvUndefined: Self = StObject.set(x, "umv", js.undefined)
+    inline def setUmvUndefined: Self = StObject.set(x, "umv", js.undefined)
     
-    @scala.inline
-    def setUr(value: String): Self = StObject.set(x, "ur", value.asInstanceOf[js.Any])
+    inline def setUr(value: String): Self = StObject.set(x, "ur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrUndefined: Self = StObject.set(x, "ur", js.undefined)
+    inline def setUrUndefined: Self = StObject.set(x, "ur", js.undefined)
     
-    @scala.inline
-    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
+    inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
+    inline def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
     
-    @scala.inline
-    def setUserLocation(value: String): Self = StObject.set(x, "userLocation", value.asInstanceOf[js.Any])
+    inline def setUserLocation(value: String): Self = StObject.set(x, "userLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLocationUndefined: Self = StObject.set(x, "userLocation", js.undefined)
+    inline def setUserLocationUndefined: Self = StObject.set(x, "userLocation", js.undefined)
     
-    @scala.inline
-    def setUserMapView(value: String): Self = StObject.set(x, "userMapView", value.asInstanceOf[js.Any])
+    inline def setUserMapView(value: String): Self = StObject.set(x, "userMapView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserMapViewUndefined: Self = StObject.set(x, "userMapView", js.undefined)
+    inline def setUserMapViewUndefined: Self = StObject.set(x, "userMapView", js.undefined)
     
-    @scala.inline
-    def setUserRegion(value: String): Self = StObject.set(x, "userRegion", value.asInstanceOf[js.Any])
+    inline def setUserRegion(value: String): Self = StObject.set(x, "userRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRegionUndefined: Self = StObject.set(x, "userRegion", js.undefined)
+    inline def setUserRegionUndefined: Self = StObject.set(x, "userRegion", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait StatSerialized extends StObject {
 }
 object StatSerialized {
   
-  @scala.inline
-  def apply(data: Attributes): StatSerialized = {
+  inline def apply(data: Attributes): StatSerialized = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatSerialized]
   }
   
-  @scala.inline
-  implicit class StatSerializedMutableBuilder[Self <: StatSerialized] (val x: Self) extends AnyVal {
+  extension [Self <: StatSerialized](x: Self) {
     
-    @scala.inline
-    def setData(value: Attributes): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Attributes): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

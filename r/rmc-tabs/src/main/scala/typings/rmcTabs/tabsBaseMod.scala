@@ -92,7 +92,7 @@ object tabsBaseMod {
     def goToTab(index: Double, force: Unit, newState: js.Any, props: P): Boolean = js.native
     def goToTab(index: Double, force: Unit, newState: Unit, props: P): Boolean = js.native
     
-    var instanceId: Double = js.native
+    /* protected */ var instanceId: Double = js.native
     
     def isTabVertical(): Boolean = js.native
     @JSName("isTabVertical")
@@ -101,15 +101,15 @@ object tabsBaseMod {
     def isTabVertical_vertical(direction: vertical): Boolean = js.native
     
     /** compatible for different between react and preact in `setState`. */
-    var nextCurrentTab: js.Any = js.native
+    /* private */ var nextCurrentTab: js.Any = js.native
     
-    var prevCurrentTab: Double = js.native
+    /* protected */ var prevCurrentTab: Double = js.native
     
     def renderTabBar(tabBarProps: js.Any, DefaultTabBar: ComponentClass[js.Object, ComponentState]): js.UndefOr[js.Object | Null] = js.native
     
     def shouldRenderTab(idx: Double): Boolean = js.native
     
-    var tabCache: NumberDictionary[ReactNode] = js.native
+    /* protected */ var tabCache: NumberDictionary[ReactNode] = js.native
     
     def tabClickGoToTab(index: Double): Unit = js.native
   }
@@ -123,7 +123,6 @@ object tabsBaseMod {
     @JSImport("rmc-tabs/lib/Tabs.base", "Tabs.defaultProps")
     @js.native
     def defaultProps: PropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "TemporalQueries")
 @js.native
-class TemporalQueries protected () extends StObject
+/* private */ class TemporalQueries () extends StObject
 object TemporalQueries {
   
   @JSImport("js-joda", "TemporalQueries")
@@ -14,30 +14,23 @@ object TemporalQueries {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def chronology(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("chronology")().asInstanceOf[TemporalQuery]
+  inline def chronology(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("chronology")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @scala.inline
-  def localDate(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("localDate")().asInstanceOf[TemporalQuery]
+  inline def localDate(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("localDate")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @scala.inline
-  def localTime(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("localTime")().asInstanceOf[TemporalQuery]
+  inline def localTime(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("localTime")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @scala.inline
-  def offset(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[TemporalQuery]
+  inline def offset(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @scala.inline
-  def precision(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("precision")().asInstanceOf[TemporalQuery]
+  inline def precision(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("precision")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @scala.inline
-  def zone(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")().asInstanceOf[TemporalQuery]
+  inline def zone(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @scala.inline
-  def zoneId(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("zoneId")().asInstanceOf[TemporalQuery]
+  inline def zoneId(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("zoneId")().asInstanceOf[TemporalQuery]
 }

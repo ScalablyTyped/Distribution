@@ -12,16 +12,10 @@ object weekdayRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(wd1: Weekday): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def default(wd1: Weekday, wd2: Unit, gmt: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(wd1: Weekday, wd2: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(wd1: Weekday, wd2: GMT, gmt: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(wd1: Weekday, wd2: Weekday): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(wd1: Weekday, wd2: Weekday, gmt: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(wd1: Weekday): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(wd1: Weekday, wd2: Unit, gmt: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(wd1: Weekday, wd2: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(wd1: Weekday, wd2: GMT, gmt: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(wd1: Weekday, wd2: Weekday): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(wd1: Weekday, wd2: Weekday, gmt: GMT): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(wd1.asInstanceOf[js.Any], wd2.asInstanceOf[js.Any], gmt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -25,8 +25,7 @@ trait TypeofObjectType extends StObject {
 }
 object TypeofObjectType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultProps: ObjectTypeProps[js.Any],
     deserialize: /* value */ String => js.Any,
     getDerivedStateFromProps: (ObjectTypeProps[js.Any], ObjectTypeState[js.Any]) => ObjectTypeState[js.Any] | Null,
@@ -37,22 +36,16 @@ object TypeofObjectType {
     __obj.asInstanceOf[TypeofObjectType]
   }
   
-  @scala.inline
-  implicit class TypeofObjectTypeMutableBuilder[Self <: TypeofObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofObjectType](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: ObjectTypeProps[js.Any]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: ObjectTypeProps[js.Any]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeserialize(value: /* value */ String => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+    inline def setDeserialize(value: /* value */ String => js.Any): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDerivedStateFromProps(value: (ObjectTypeProps[js.Any], ObjectTypeState[js.Any]) => ObjectTypeState[js.Any] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
+    inline def setGetDerivedStateFromProps(value: (ObjectTypeProps[js.Any], ObjectTypeState[js.Any]) => ObjectTypeState[js.Any] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPropTypes(value: OnChangeValidator): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    inline def setPropTypes(value: OnChangeValidator): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialize(value: /* object */ js.Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: /* object */ js.Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }
 }

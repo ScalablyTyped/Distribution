@@ -23,19 +23,15 @@ trait ControlCommand extends StObject {
 }
 object ControlCommand {
   
-  @scala.inline
-  def apply(Arguments: SafeArray[NamedValue], Command: String): ControlCommand = {
+  inline def apply(Arguments: SafeArray[NamedValue], Command: String): ControlCommand = {
     val __obj = js.Dynamic.literal(Arguments = Arguments.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlCommand]
   }
   
-  @scala.inline
-  implicit class ControlCommandMutableBuilder[Self <: ControlCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ControlCommand](x: Self) {
     
-    @scala.inline
-    def setArguments(value: SafeArray[NamedValue]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: SafeArray[NamedValue]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
   }
 }

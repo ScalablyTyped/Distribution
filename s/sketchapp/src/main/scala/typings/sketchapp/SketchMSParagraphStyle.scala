@@ -15,22 +15,17 @@ trait SketchMSParagraphStyle extends StObject {
 }
 object SketchMSParagraphStyle {
   
-  @scala.inline
-  def apply(alignment: Double, allowsDefaultTighteningForTruncation: Double): SketchMSParagraphStyle = {
+  inline def apply(alignment: Double, allowsDefaultTighteningForTruncation: Double): SketchMSParagraphStyle = {
     val __obj = js.Dynamic.literal(_class = "paragraphStyle", alignment = alignment.asInstanceOf[js.Any], allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSParagraphStyle]
   }
   
-  @scala.inline
-  implicit class SketchMSParagraphStyleMutableBuilder[Self <: SketchMSParagraphStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSParagraphStyle](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: Double): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowsDefaultTighteningForTruncation(value: Double): Self = StObject.set(x, "allowsDefaultTighteningForTruncation", value.asInstanceOf[js.Any])
+    inline def setAllowsDefaultTighteningForTruncation(value: Double): Self = StObject.set(x, "allowsDefaultTighteningForTruncation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: paragraphStyle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: paragraphStyle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

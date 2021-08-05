@@ -50,22 +50,19 @@ object LinkingTool {
   @JSImport("go", "LinkingTool.BackwardsOnly")
   @js.native
   def BackwardsOnly: EnumValue = js.native
-  @scala.inline
-  def BackwardsOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BackwardsOnly")(x.asInstanceOf[js.Any])
+  inline def BackwardsOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BackwardsOnly")(x.asInstanceOf[js.Any])
   
   /**This value for LinkingTool.direction indicates that users may draw new links in either direction.*/
   /* static member */
   @JSImport("go", "LinkingTool.Either")
   @js.native
   def Either: EnumValue = js.native
-  @scala.inline
-  def Either_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Either")(x.asInstanceOf[js.Any])
+  inline def Either_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Either")(x.asInstanceOf[js.Any])
   
   /**This value for LinkingTool.direction indicates that users may draw new links forwards only.*/
   /* static member */
   @JSImport("go", "LinkingTool.ForwardsOnly")
   @js.native
   def ForwardsOnly: EnumValue = js.native
-  @scala.inline
-  def ForwardsOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForwardsOnly")(x.asInstanceOf[js.Any])
+  inline def ForwardsOnly_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ForwardsOnly")(x.asInstanceOf[js.Any])
 }

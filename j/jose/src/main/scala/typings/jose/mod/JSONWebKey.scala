@@ -13,26 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSONWebKey extends StObject
 object JSONWebKey {
   
-  @scala.inline
-  def JWKECKey(crv: ECCurve, x: String, y: String): typings.jose.mod.JWKECKey = {
+  inline def JWKECKey(crv: ECCurve, x: String, y: String): typings.jose.mod.JWKECKey = {
     val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = "EC", x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.jose.mod.JWKECKey]
   }
   
-  @scala.inline
-  def JWKOKPKey(crv: OKPCurve, x: String): typings.jose.mod.JWKOKPKey = {
+  inline def JWKOKPKey(crv: OKPCurve, x: String): typings.jose.mod.JWKOKPKey = {
     val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = "OKP", x = x.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.jose.mod.JWKOKPKey]
   }
   
-  @scala.inline
-  def JWKOctKey(): typings.jose.mod.JWKOctKey = {
+  inline def JWKOctKey(): typings.jose.mod.JWKOctKey = {
     val __obj = js.Dynamic.literal(kty = "oct")
     __obj.asInstanceOf[typings.jose.mod.JWKOctKey]
   }
   
-  @scala.inline
-  def JWKRSAKey(e: String, n: String): typings.jose.mod.JWKRSAKey = {
+  inline def JWKRSAKey(e: String, n: String): typings.jose.mod.JWKRSAKey = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = "RSA", n = n.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.jose.mod.JWKRSAKey]
   }

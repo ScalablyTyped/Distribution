@@ -36,8 +36,7 @@ trait GameQuery extends StObject {
 }
 object GameQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ANIMATION_CALLBACK: Double,
     ANIMATION_HORIZONTAL: Double,
     ANIMATION_MULTI: Double,
@@ -57,52 +56,36 @@ object GameQuery {
     __obj.asInstanceOf[GameQuery]
   }
   
-  @scala.inline
-  implicit class GameQueryMutableBuilder[Self <: GameQuery] (val x: Self) extends AnyVal {
+  extension [Self <: GameQuery](x: Self) {
     
-    @scala.inline
-    def setANIMATION_CALLBACK(value: Double): Self = StObject.set(x, "ANIMATION_CALLBACK", value.asInstanceOf[js.Any])
+    inline def setANIMATION_CALLBACK(value: Double): Self = StObject.set(x, "ANIMATION_CALLBACK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANIMATION_HORIZONTAL(value: Double): Self = StObject.set(x, "ANIMATION_HORIZONTAL", value.asInstanceOf[js.Any])
+    inline def setANIMATION_HORIZONTAL(value: Double): Self = StObject.set(x, "ANIMATION_HORIZONTAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANIMATION_MULTI(value: Double): Self = StObject.set(x, "ANIMATION_MULTI", value.asInstanceOf[js.Any])
+    inline def setANIMATION_MULTI(value: Double): Self = StObject.set(x, "ANIMATION_MULTI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANIMATION_ONCE(value: Double): Self = StObject.set(x, "ANIMATION_ONCE", value.asInstanceOf[js.Any])
+    inline def setANIMATION_ONCE(value: Double): Self = StObject.set(x, "ANIMATION_ONCE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANIMATION_PINGPONG(value: Double): Self = StObject.set(x, "ANIMATION_PINGPONG", value.asInstanceOf[js.Any])
+    inline def setANIMATION_PINGPONG(value: Double): Self = StObject.set(x, "ANIMATION_PINGPONG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANIMATION_VERTICAL(value: Double): Self = StObject.set(x, "ANIMATION_VERTICAL", value.asInstanceOf[js.Any])
+    inline def setANIMATION_VERTICAL(value: Double): Self = StObject.set(x, "ANIMATION_VERTICAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimation(value: Animation): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Animation): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupCssClass(value: String): Self = StObject.set(x, "groupCssClass", value.asInstanceOf[js.Any])
+    inline def setGroupCssClass(value: String): Self = StObject.set(x, "groupCssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTracker(value: js.Array[Boolean]): Self = StObject.set(x, "keyTracker", value.asInstanceOf[js.Any])
+    inline def setKeyTracker(value: js.Array[Boolean]): Self = StObject.set(x, "keyTracker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyTrackerVarargs(value: Boolean*): Self = StObject.set(x, "keyTracker", js.Array(value :_*))
+    inline def setKeyTrackerVarargs(value: Boolean*): Self = StObject.set(x, "keyTracker", js.Array(value :_*))
     
-    @scala.inline
-    def setSpriteCssClass(value: String): Self = StObject.set(x, "spriteCssClass", value.asInstanceOf[js.Any])
+    inline def setSpriteCssClass(value: String): Self = StObject.set(x, "spriteCssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileCssClass(value: String): Self = StObject.set(x, "tileCssClass", value.asInstanceOf[js.Any])
+    inline def setTileCssClass(value: String): Self = StObject.set(x, "tileCssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileIdPrefix(value: String): Self = StObject.set(x, "tileIdPrefix", value.asInstanceOf[js.Any])
+    inline def setTileIdPrefix(value: String): Self = StObject.set(x, "tileIdPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileTypePrefix(value: String): Self = StObject.set(x, "tileTypePrefix", value.asInstanceOf[js.Any])
+    inline def setTileTypePrefix(value: String): Self = StObject.set(x, "tileTypePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilemapCssClass(value: String): Self = StObject.set(x, "tilemapCssClass", value.asInstanceOf[js.Any])
+    inline def setTilemapCssClass(value: String): Self = StObject.set(x, "tilemapCssClass", value.asInstanceOf[js.Any])
   }
 }

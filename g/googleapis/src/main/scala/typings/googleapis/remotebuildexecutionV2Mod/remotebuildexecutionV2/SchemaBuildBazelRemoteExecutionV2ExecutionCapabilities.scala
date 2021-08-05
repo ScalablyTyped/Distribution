@@ -26,31 +26,23 @@ trait SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ExecutionCapabilitiesMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities](x: Self) {
     
-    @scala.inline
-    def setDigestFunction(value: String): Self = StObject.set(x, "digestFunction", value.asInstanceOf[js.Any])
+    inline def setDigestFunction(value: String): Self = StObject.set(x, "digestFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestFunctionUndefined: Self = StObject.set(x, "digestFunction", js.undefined)
+    inline def setDigestFunctionUndefined: Self = StObject.set(x, "digestFunction", js.undefined)
     
-    @scala.inline
-    def setExecEnabled(value: Boolean): Self = StObject.set(x, "execEnabled", value.asInstanceOf[js.Any])
+    inline def setExecEnabled(value: Boolean): Self = StObject.set(x, "execEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecEnabledUndefined: Self = StObject.set(x, "execEnabled", js.undefined)
+    inline def setExecEnabledUndefined: Self = StObject.set(x, "execEnabled", js.undefined)
     
-    @scala.inline
-    def setExecutionPriorityCapabilities(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilities): Self = StObject.set(x, "executionPriorityCapabilities", value.asInstanceOf[js.Any])
+    inline def setExecutionPriorityCapabilities(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilities): Self = StObject.set(x, "executionPriorityCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionPriorityCapabilitiesUndefined: Self = StObject.set(x, "executionPriorityCapabilities", js.undefined)
+    inline def setExecutionPriorityCapabilitiesUndefined: Self = StObject.set(x, "executionPriorityCapabilities", js.undefined)
   }
 }

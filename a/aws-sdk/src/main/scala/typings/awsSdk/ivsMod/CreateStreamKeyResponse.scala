@@ -13,19 +13,15 @@ trait CreateStreamKeyResponse extends StObject {
 }
 object CreateStreamKeyResponse {
   
-  @scala.inline
-  def apply(): CreateStreamKeyResponse = {
+  inline def apply(): CreateStreamKeyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStreamKeyResponse]
   }
   
-  @scala.inline
-  implicit class CreateStreamKeyResponseMutableBuilder[Self <: CreateStreamKeyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamKeyResponse](x: Self) {
     
-    @scala.inline
-    def setStreamKey(value: StreamKey): Self = StObject.set(x, "streamKey", value.asInstanceOf[js.Any])
+    inline def setStreamKey(value: StreamKey): Self = StObject.set(x, "streamKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamKeyUndefined: Self = StObject.set(x, "streamKey", js.undefined)
+    inline def setStreamKeyUndefined: Self = StObject.set(x, "streamKey", js.undefined)
   }
 }

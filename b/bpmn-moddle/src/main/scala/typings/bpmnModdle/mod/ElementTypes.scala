@@ -497,8 +497,7 @@ trait ElementTypes extends StObject {
 }
 object ElementTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     biocColonColoredEdge: ColoredEdge,
     biocColonColoredShape: ColoredShape,
     bpmnColonActivity: Activity,
@@ -830,496 +829,332 @@ object ElementTypes {
     __obj.asInstanceOf[ElementTypes]
   }
   
-  @scala.inline
-  implicit class ElementTypesMutableBuilder[Self <: ElementTypes] (val x: Self) extends AnyVal {
+  extension [Self <: ElementTypes](x: Self) {
     
-    @scala.inline
-    def setBiocColonColoredEdge(value: ColoredEdge): Self = StObject.set(x, "bioc:ColoredEdge", value.asInstanceOf[js.Any])
+    inline def setBiocColonColoredEdge(value: ColoredEdge): Self = StObject.set(x, "bioc:ColoredEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBiocColonColoredShape(value: ColoredShape): Self = StObject.set(x, "bioc:ColoredShape", value.asInstanceOf[js.Any])
+    inline def setBiocColonColoredShape(value: ColoredShape): Self = StObject.set(x, "bioc:ColoredShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonActivity(value: Activity): Self = StObject.set(x, "bpmn:Activity", value.asInstanceOf[js.Any])
+    inline def setBpmnColonActivity(value: Activity): Self = StObject.set(x, "bpmn:Activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonAdHocSubProcess(value: AdHocSubProcess): Self = StObject.set(x, "bpmn:AdHocSubProcess", value.asInstanceOf[js.Any])
+    inline def setBpmnColonAdHocSubProcess(value: AdHocSubProcess): Self = StObject.set(x, "bpmn:AdHocSubProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonArtifact(value: Artifact): Self = StObject.set(x, "bpmn:Artifact", value.asInstanceOf[js.Any])
+    inline def setBpmnColonArtifact(value: Artifact): Self = StObject.set(x, "bpmn:Artifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonAssignment(value: Assignment): Self = StObject.set(x, "bpmn:Assignment", value.asInstanceOf[js.Any])
+    inline def setBpmnColonAssignment(value: Assignment): Self = StObject.set(x, "bpmn:Assignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonAssociation(value: Association): Self = StObject.set(x, "bpmn:Association", value.asInstanceOf[js.Any])
+    inline def setBpmnColonAssociation(value: Association): Self = StObject.set(x, "bpmn:Association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonAuditing(value: Auditing): Self = StObject.set(x, "bpmn:Auditing", value.asInstanceOf[js.Any])
+    inline def setBpmnColonAuditing(value: Auditing): Self = StObject.set(x, "bpmn:Auditing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonBaseElement(value: BaseElement): Self = StObject.set(x, "bpmn:BaseElement", value.asInstanceOf[js.Any])
+    inline def setBpmnColonBaseElement(value: BaseElement): Self = StObject.set(x, "bpmn:BaseElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonBoundaryEvent(value: BoundaryEvent): Self = StObject.set(x, "bpmn:BoundaryEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonBoundaryEvent(value: BoundaryEvent): Self = StObject.set(x, "bpmn:BoundaryEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonBusinessRuleTask(value: BusinessRuleTask): Self = StObject.set(x, "bpmn:BusinessRuleTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonBusinessRuleTask(value: BusinessRuleTask): Self = StObject.set(x, "bpmn:BusinessRuleTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCallActivity(value: CallActivity): Self = StObject.set(x, "bpmn:CallActivity", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCallActivity(value: CallActivity): Self = StObject.set(x, "bpmn:CallActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCallChoreography(value: CallChoreography): Self = StObject.set(x, "bpmn:CallChoreography", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCallChoreography(value: CallChoreography): Self = StObject.set(x, "bpmn:CallChoreography", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCallConversation(value: CallConversation): Self = StObject.set(x, "bpmn:CallConversation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCallConversation(value: CallConversation): Self = StObject.set(x, "bpmn:CallConversation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCallableElement(value: CallableElement): Self = StObject.set(x, "bpmn:CallableElement", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCallableElement(value: CallableElement): Self = StObject.set(x, "bpmn:CallableElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCancelEventDefinition(value: CancelEventDefinition): Self = StObject.set(x, "bpmn:CancelEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCancelEventDefinition(value: CancelEventDefinition): Self = StObject.set(x, "bpmn:CancelEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCatchEvent(value: CatchEvent): Self = StObject.set(x, "bpmn:CatchEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCatchEvent(value: CatchEvent): Self = StObject.set(x, "bpmn:CatchEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCategory(value: Category): Self = StObject.set(x, "bpmn:Category", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCategory(value: Category): Self = StObject.set(x, "bpmn:Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCategoryValue(value: CategoryValue): Self = StObject.set(x, "bpmn:CategoryValue", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCategoryValue(value: CategoryValue): Self = StObject.set(x, "bpmn:CategoryValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonChoreography(value: Choreography): Self = StObject.set(x, "bpmn:Choreography", value.asInstanceOf[js.Any])
+    inline def setBpmnColonChoreography(value: Choreography): Self = StObject.set(x, "bpmn:Choreography", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonChoreographyActivity(value: ChoreographyActivity): Self = StObject.set(x, "bpmn:ChoreographyActivity", value.asInstanceOf[js.Any])
+    inline def setBpmnColonChoreographyActivity(value: ChoreographyActivity): Self = StObject.set(x, "bpmn:ChoreographyActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonChoreographyTask(value: ChoreographyTask): Self = StObject.set(x, "bpmn:ChoreographyTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonChoreographyTask(value: ChoreographyTask): Self = StObject.set(x, "bpmn:ChoreographyTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCollaboration(value: Collaboration): Self = StObject.set(x, "bpmn:Collaboration", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCollaboration(value: Collaboration): Self = StObject.set(x, "bpmn:Collaboration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCompensateEventDefinition(value: CompensateEventDefinition): Self = StObject.set(x, "bpmn:CompensateEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCompensateEventDefinition(value: CompensateEventDefinition): Self = StObject.set(x, "bpmn:CompensateEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonComplexBehaviorDefinition(value: ComplexBehaviorDefinition): Self = StObject.set(x, "bpmn:ComplexBehaviorDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonComplexBehaviorDefinition(value: ComplexBehaviorDefinition): Self = StObject.set(x, "bpmn:ComplexBehaviorDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonComplexGateway(value: ComplexGateway): Self = StObject.set(x, "bpmn:ComplexGateway", value.asInstanceOf[js.Any])
+    inline def setBpmnColonComplexGateway(value: ComplexGateway): Self = StObject.set(x, "bpmn:ComplexGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonConditionalEventDefinition(value: ConditionalEventDefinition): Self = StObject.set(x, "bpmn:ConditionalEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonConditionalEventDefinition(value: ConditionalEventDefinition): Self = StObject.set(x, "bpmn:ConditionalEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonConversation(value: Conversation): Self = StObject.set(x, "bpmn:Conversation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonConversation(value: Conversation): Self = StObject.set(x, "bpmn:Conversation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonConversationAssociation(value: ConversationAssociation): Self = StObject.set(x, "bpmn:ConversationAssociation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonConversationAssociation(value: ConversationAssociation): Self = StObject.set(x, "bpmn:ConversationAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonConversationLink(value: ConversationLink): Self = StObject.set(x, "bpmn:ConversationLink", value.asInstanceOf[js.Any])
+    inline def setBpmnColonConversationLink(value: ConversationLink): Self = StObject.set(x, "bpmn:ConversationLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonConversationNode(value: ConversationNode): Self = StObject.set(x, "bpmn:ConversationNode", value.asInstanceOf[js.Any])
+    inline def setBpmnColonConversationNode(value: ConversationNode): Self = StObject.set(x, "bpmn:ConversationNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCorrelationKey(value: CorrelationKey): Self = StObject.set(x, "bpmn:CorrelationKey", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCorrelationKey(value: CorrelationKey): Self = StObject.set(x, "bpmn:CorrelationKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCorrelationProperty(value: CorrelationProperty): Self = StObject.set(x, "bpmn:CorrelationProperty", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCorrelationProperty(value: CorrelationProperty): Self = StObject.set(x, "bpmn:CorrelationProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCorrelationPropertyBinding(value: CorrelationPropertyBinding): Self = StObject.set(x, "bpmn:CorrelationPropertyBinding", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCorrelationPropertyBinding(value: CorrelationPropertyBinding): Self = StObject.set(x, "bpmn:CorrelationPropertyBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCorrelationPropertyRetrievalExpression(value: CorrelationPropertyRetrievalExpression): Self = StObject.set(x, "bpmn:CorrelationPropertyRetrievalExpression", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCorrelationPropertyRetrievalExpression(value: CorrelationPropertyRetrievalExpression): Self = StObject.set(x, "bpmn:CorrelationPropertyRetrievalExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonCorrelationSubscription(value: CorrelationSubscription): Self = StObject.set(x, "bpmn:CorrelationSubscription", value.asInstanceOf[js.Any])
+    inline def setBpmnColonCorrelationSubscription(value: CorrelationSubscription): Self = StObject.set(x, "bpmn:CorrelationSubscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataAssociation(value: DataAssociation): Self = StObject.set(x, "bpmn:DataAssociation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataAssociation(value: DataAssociation): Self = StObject.set(x, "bpmn:DataAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataInput(value: DataInput): Self = StObject.set(x, "bpmn:DataInput", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataInput(value: DataInput): Self = StObject.set(x, "bpmn:DataInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataInputAssociation(value: DataInputAssociation): Self = StObject.set(x, "bpmn:DataInputAssociation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataInputAssociation(value: DataInputAssociation): Self = StObject.set(x, "bpmn:DataInputAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataObject(value: DataObject): Self = StObject.set(x, "bpmn:DataObject", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataObject(value: DataObject): Self = StObject.set(x, "bpmn:DataObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataObjectReference(value: DataObjectReference): Self = StObject.set(x, "bpmn:DataObjectReference", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataObjectReference(value: DataObjectReference): Self = StObject.set(x, "bpmn:DataObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataOutput(value: DataOutput): Self = StObject.set(x, "bpmn:DataOutput", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataOutput(value: DataOutput): Self = StObject.set(x, "bpmn:DataOutput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataOutputAssociation(value: DataOutputAssociation): Self = StObject.set(x, "bpmn:DataOutputAssociation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataOutputAssociation(value: DataOutputAssociation): Self = StObject.set(x, "bpmn:DataOutputAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataState(value: DataState): Self = StObject.set(x, "bpmn:DataState", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataState(value: DataState): Self = StObject.set(x, "bpmn:DataState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataStore(value: DataStore): Self = StObject.set(x, "bpmn:DataStore", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataStore(value: DataStore): Self = StObject.set(x, "bpmn:DataStore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDataStoreReference(value: DataStoreReference): Self = StObject.set(x, "bpmn:DataStoreReference", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDataStoreReference(value: DataStoreReference): Self = StObject.set(x, "bpmn:DataStoreReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDefinitions(value: Definitions): Self = StObject.set(x, "bpmn:Definitions", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDefinitions(value: Definitions): Self = StObject.set(x, "bpmn:Definitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonDocumentation(value: Documentation): Self = StObject.set(x, "bpmn:Documentation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonDocumentation(value: Documentation): Self = StObject.set(x, "bpmn:Documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonEndEvent(value: EndEvent): Self = StObject.set(x, "bpmn:EndEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonEndEvent(value: EndEvent): Self = StObject.set(x, "bpmn:EndEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonEndPoint(value: EndPoint): Self = StObject.set(x, "bpmn:EndPoint", value.asInstanceOf[js.Any])
+    inline def setBpmnColonEndPoint(value: EndPoint): Self = StObject.set(x, "bpmn:EndPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonError(value: ErrorElement): Self = StObject.set(x, "bpmn:Error", value.asInstanceOf[js.Any])
+    inline def setBpmnColonError(value: ErrorElement): Self = StObject.set(x, "bpmn:Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonErrorEventDefinition(value: ErrorEventDefinition): Self = StObject.set(x, "bpmn:ErrorEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonErrorEventDefinition(value: ErrorEventDefinition): Self = StObject.set(x, "bpmn:ErrorEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonEscalation(value: Escalation): Self = StObject.set(x, "bpmn:Escalation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonEscalation(value: Escalation): Self = StObject.set(x, "bpmn:Escalation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonEscalationEventDefinition(value: EscalationEventDefinition): Self = StObject.set(x, "bpmn:EscalationEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonEscalationEventDefinition(value: EscalationEventDefinition): Self = StObject.set(x, "bpmn:EscalationEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonEvent(value: Event): Self = StObject.set(x, "bpmn:Event", value.asInstanceOf[js.Any])
+    inline def setBpmnColonEvent(value: Event): Self = StObject.set(x, "bpmn:Event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonEventBasedGateway(value: EventBasedGateway): Self = StObject.set(x, "bpmn:EventBasedGateway", value.asInstanceOf[js.Any])
+    inline def setBpmnColonEventBasedGateway(value: EventBasedGateway): Self = StObject.set(x, "bpmn:EventBasedGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonEventDefinition(value: EventDefinition): Self = StObject.set(x, "bpmn:EventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonEventDefinition(value: EventDefinition): Self = StObject.set(x, "bpmn:EventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonExclusiveGateway(value: ExclusiveGateway): Self = StObject.set(x, "bpmn:ExclusiveGateway", value.asInstanceOf[js.Any])
+    inline def setBpmnColonExclusiveGateway(value: ExclusiveGateway): Self = StObject.set(x, "bpmn:ExclusiveGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonExpression(value: Expression): Self = StObject.set(x, "bpmn:Expression", value.asInstanceOf[js.Any])
+    inline def setBpmnColonExpression(value: Expression): Self = StObject.set(x, "bpmn:Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonExtension(value: Extension): Self = StObject.set(x, "bpmn:Extension", value.asInstanceOf[js.Any])
+    inline def setBpmnColonExtension(value: Extension): Self = StObject.set(x, "bpmn:Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonExtensionAttributeDefinition(value: ExtensionAttributeDefinition): Self = StObject.set(x, "bpmn:ExtensionAttributeDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonExtensionAttributeDefinition(value: ExtensionAttributeDefinition): Self = StObject.set(x, "bpmn:ExtensionAttributeDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonExtensionDefinition(value: ExtensionDefinition): Self = StObject.set(x, "bpmn:ExtensionDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonExtensionDefinition(value: ExtensionDefinition): Self = StObject.set(x, "bpmn:ExtensionDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonExtensionElements(value: ExtensionElements): Self = StObject.set(x, "bpmn:ExtensionElements", value.asInstanceOf[js.Any])
+    inline def setBpmnColonExtensionElements(value: ExtensionElements): Self = StObject.set(x, "bpmn:ExtensionElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonFlowElement(value: FlowElement): Self = StObject.set(x, "bpmn:FlowElement", value.asInstanceOf[js.Any])
+    inline def setBpmnColonFlowElement(value: FlowElement): Self = StObject.set(x, "bpmn:FlowElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonFlowElementsContainer(value: FlowElementsContainer): Self = StObject.set(x, "bpmn:FlowElementsContainer", value.asInstanceOf[js.Any])
+    inline def setBpmnColonFlowElementsContainer(value: FlowElementsContainer): Self = StObject.set(x, "bpmn:FlowElementsContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonFlowNode(value: FlowNode): Self = StObject.set(x, "bpmn:FlowNode", value.asInstanceOf[js.Any])
+    inline def setBpmnColonFlowNode(value: FlowNode): Self = StObject.set(x, "bpmn:FlowNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonFormalExpression(value: FormalExpression): Self = StObject.set(x, "bpmn:FormalExpression", value.asInstanceOf[js.Any])
+    inline def setBpmnColonFormalExpression(value: FormalExpression): Self = StObject.set(x, "bpmn:FormalExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGateway(value: Gateway): Self = StObject.set(x, "bpmn:Gateway", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGateway(value: Gateway): Self = StObject.set(x, "bpmn:Gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGlobalBusinessRuleTask(value: GlobalBusinessRuleTask): Self = StObject.set(x, "bpmn:GlobalBusinessRuleTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGlobalBusinessRuleTask(value: GlobalBusinessRuleTask): Self = StObject.set(x, "bpmn:GlobalBusinessRuleTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGlobalChoreographyTask(value: GlobalChoreographyTask): Self = StObject.set(x, "bpmn:GlobalChoreographyTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGlobalChoreographyTask(value: GlobalChoreographyTask): Self = StObject.set(x, "bpmn:GlobalChoreographyTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGlobalConversation(value: GlobalConversation): Self = StObject.set(x, "bpmn:GlobalConversation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGlobalConversation(value: GlobalConversation): Self = StObject.set(x, "bpmn:GlobalConversation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGlobalManualTask(value: GlobalManualTask): Self = StObject.set(x, "bpmn:GlobalManualTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGlobalManualTask(value: GlobalManualTask): Self = StObject.set(x, "bpmn:GlobalManualTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGlobalScriptTask(value: GlobalScriptTask): Self = StObject.set(x, "bpmn:GlobalScriptTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGlobalScriptTask(value: GlobalScriptTask): Self = StObject.set(x, "bpmn:GlobalScriptTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGlobalTask(value: GlobalTask): Self = StObject.set(x, "bpmn:GlobalTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGlobalTask(value: GlobalTask): Self = StObject.set(x, "bpmn:GlobalTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGlobalUserTask(value: GlobalUserTask): Self = StObject.set(x, "bpmn:GlobalUserTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGlobalUserTask(value: GlobalUserTask): Self = StObject.set(x, "bpmn:GlobalUserTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonGroup(value: Group): Self = StObject.set(x, "bpmn:Group", value.asInstanceOf[js.Any])
+    inline def setBpmnColonGroup(value: Group): Self = StObject.set(x, "bpmn:Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonHumanPerformer(value: HumanPerformer): Self = StObject.set(x, "bpmn:HumanPerformer", value.asInstanceOf[js.Any])
+    inline def setBpmnColonHumanPerformer(value: HumanPerformer): Self = StObject.set(x, "bpmn:HumanPerformer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonImplicitThrowEvent(value: ImplicitThrowEvent): Self = StObject.set(x, "bpmn:ImplicitThrowEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonImplicitThrowEvent(value: ImplicitThrowEvent): Self = StObject.set(x, "bpmn:ImplicitThrowEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonImport(value: Import): Self = StObject.set(x, "bpmn:Import", value.asInstanceOf[js.Any])
+    inline def setBpmnColonImport(value: Import): Self = StObject.set(x, "bpmn:Import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonInclusiveGateway(value: InclusiveGateway): Self = StObject.set(x, "bpmn:InclusiveGateway", value.asInstanceOf[js.Any])
+    inline def setBpmnColonInclusiveGateway(value: InclusiveGateway): Self = StObject.set(x, "bpmn:InclusiveGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonInputOutputBinding(value: InputOutputBinding): Self = StObject.set(x, "bpmn:InputOutputBinding", value.asInstanceOf[js.Any])
+    inline def setBpmnColonInputOutputBinding(value: InputOutputBinding): Self = StObject.set(x, "bpmn:InputOutputBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonInputOutputSpecification(value: InputOutputSpecification): Self = StObject.set(x, "bpmn:InputOutputSpecification", value.asInstanceOf[js.Any])
+    inline def setBpmnColonInputOutputSpecification(value: InputOutputSpecification): Self = StObject.set(x, "bpmn:InputOutputSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonInputSet(value: InputSet): Self = StObject.set(x, "bpmn:InputSet", value.asInstanceOf[js.Any])
+    inline def setBpmnColonInputSet(value: InputSet): Self = StObject.set(x, "bpmn:InputSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonInteractionNode(value: InteractionNode): Self = StObject.set(x, "bpmn:InteractionNode", value.asInstanceOf[js.Any])
+    inline def setBpmnColonInteractionNode(value: InteractionNode): Self = StObject.set(x, "bpmn:InteractionNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonInterface(value: Interface): Self = StObject.set(x, "bpmn:Interface", value.asInstanceOf[js.Any])
+    inline def setBpmnColonInterface(value: Interface): Self = StObject.set(x, "bpmn:Interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonIntermediateCatchEvent(value: IntermediateCatchEvent): Self = StObject.set(x, "bpmn:IntermediateCatchEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonIntermediateCatchEvent(value: IntermediateCatchEvent): Self = StObject.set(x, "bpmn:IntermediateCatchEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonIntermediateThrowEvent(value: IntermediateThrowEvent): Self = StObject.set(x, "bpmn:IntermediateThrowEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonIntermediateThrowEvent(value: IntermediateThrowEvent): Self = StObject.set(x, "bpmn:IntermediateThrowEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonItemAwareElement(value: ItemAwareElement): Self = StObject.set(x, "bpmn:ItemAwareElement", value.asInstanceOf[js.Any])
+    inline def setBpmnColonItemAwareElement(value: ItemAwareElement): Self = StObject.set(x, "bpmn:ItemAwareElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonItemDefinition(value: ItemDefinition): Self = StObject.set(x, "bpmn:ItemDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonItemDefinition(value: ItemDefinition): Self = StObject.set(x, "bpmn:ItemDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonLane(value: Lane): Self = StObject.set(x, "bpmn:Lane", value.asInstanceOf[js.Any])
+    inline def setBpmnColonLane(value: Lane): Self = StObject.set(x, "bpmn:Lane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonLaneSet(value: LaneSet): Self = StObject.set(x, "bpmn:LaneSet", value.asInstanceOf[js.Any])
+    inline def setBpmnColonLaneSet(value: LaneSet): Self = StObject.set(x, "bpmn:LaneSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonLinkEventDefinition(value: LinkEventDefinition): Self = StObject.set(x, "bpmn:LinkEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonLinkEventDefinition(value: LinkEventDefinition): Self = StObject.set(x, "bpmn:LinkEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonLoopCharacteristics(value: LoopCharacteristics): Self = StObject.set(x, "bpmn:LoopCharacteristics", value.asInstanceOf[js.Any])
+    inline def setBpmnColonLoopCharacteristics(value: LoopCharacteristics): Self = StObject.set(x, "bpmn:LoopCharacteristics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonManualTask(value: ManualTask): Self = StObject.set(x, "bpmn:ManualTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonManualTask(value: ManualTask): Self = StObject.set(x, "bpmn:ManualTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonMessage(value: Message): Self = StObject.set(x, "bpmn:Message", value.asInstanceOf[js.Any])
+    inline def setBpmnColonMessage(value: Message): Self = StObject.set(x, "bpmn:Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonMessageEventDefinition(value: MessageEventDefinition): Self = StObject.set(x, "bpmn:MessageEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonMessageEventDefinition(value: MessageEventDefinition): Self = StObject.set(x, "bpmn:MessageEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonMessageFlow(value: MessageFlow): Self = StObject.set(x, "bpmn:MessageFlow", value.asInstanceOf[js.Any])
+    inline def setBpmnColonMessageFlow(value: MessageFlow): Self = StObject.set(x, "bpmn:MessageFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonMessageFlowAssociation(value: MessageFlowAssociation): Self = StObject.set(x, "bpmn:MessageFlowAssociation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonMessageFlowAssociation(value: MessageFlowAssociation): Self = StObject.set(x, "bpmn:MessageFlowAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonMonitoring(value: Monitoring): Self = StObject.set(x, "bpmn:Monitoring", value.asInstanceOf[js.Any])
+    inline def setBpmnColonMonitoring(value: Monitoring): Self = StObject.set(x, "bpmn:Monitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonMultiInstanceLoopCharacteristics(value: MultiInstanceLoopCharacteristics): Self = StObject.set(x, "bpmn:MultiInstanceLoopCharacteristics", value.asInstanceOf[js.Any])
+    inline def setBpmnColonMultiInstanceLoopCharacteristics(value: MultiInstanceLoopCharacteristics): Self = StObject.set(x, "bpmn:MultiInstanceLoopCharacteristics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonOperation(value: Operation): Self = StObject.set(x, "bpmn:Operation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonOperation(value: Operation): Self = StObject.set(x, "bpmn:Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonOutputSet(value: OutputSet): Self = StObject.set(x, "bpmn:OutputSet", value.asInstanceOf[js.Any])
+    inline def setBpmnColonOutputSet(value: OutputSet): Self = StObject.set(x, "bpmn:OutputSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonParallelGateway(value: ParallelGateway): Self = StObject.set(x, "bpmn:ParallelGateway", value.asInstanceOf[js.Any])
+    inline def setBpmnColonParallelGateway(value: ParallelGateway): Self = StObject.set(x, "bpmn:ParallelGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonParticipant(value: Participant): Self = StObject.set(x, "bpmn:Participant", value.asInstanceOf[js.Any])
+    inline def setBpmnColonParticipant(value: Participant): Self = StObject.set(x, "bpmn:Participant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonParticipantAssociation(value: ParticipantAssociation): Self = StObject.set(x, "bpmn:ParticipantAssociation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonParticipantAssociation(value: ParticipantAssociation): Self = StObject.set(x, "bpmn:ParticipantAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonParticipantMultiplicity(value: ParticipantMultiplicity): Self = StObject.set(x, "bpmn:ParticipantMultiplicity", value.asInstanceOf[js.Any])
+    inline def setBpmnColonParticipantMultiplicity(value: ParticipantMultiplicity): Self = StObject.set(x, "bpmn:ParticipantMultiplicity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonPartnerEntity(value: PartnerEntity): Self = StObject.set(x, "bpmn:PartnerEntity", value.asInstanceOf[js.Any])
+    inline def setBpmnColonPartnerEntity(value: PartnerEntity): Self = StObject.set(x, "bpmn:PartnerEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonPartnerRole(value: PartnerRole): Self = StObject.set(x, "bpmn:PartnerRole", value.asInstanceOf[js.Any])
+    inline def setBpmnColonPartnerRole(value: PartnerRole): Self = StObject.set(x, "bpmn:PartnerRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonPerformer(value: Performer): Self = StObject.set(x, "bpmn:Performer", value.asInstanceOf[js.Any])
+    inline def setBpmnColonPerformer(value: Performer): Self = StObject.set(x, "bpmn:Performer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonPotentialOwner(value: PotentialOwner): Self = StObject.set(x, "bpmn:PotentialOwner", value.asInstanceOf[js.Any])
+    inline def setBpmnColonPotentialOwner(value: PotentialOwner): Self = StObject.set(x, "bpmn:PotentialOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonProcess(value: Process): Self = StObject.set(x, "bpmn:Process", value.asInstanceOf[js.Any])
+    inline def setBpmnColonProcess(value: Process): Self = StObject.set(x, "bpmn:Process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonProperty(value: Property): Self = StObject.set(x, "bpmn:Property", value.asInstanceOf[js.Any])
+    inline def setBpmnColonProperty(value: Property): Self = StObject.set(x, "bpmn:Property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonReceiveTask(value: ReceiveTask): Self = StObject.set(x, "bpmn:ReceiveTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonReceiveTask(value: ReceiveTask): Self = StObject.set(x, "bpmn:ReceiveTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonRelationship(value: Relationship): Self = StObject.set(x, "bpmn:Relationship", value.asInstanceOf[js.Any])
+    inline def setBpmnColonRelationship(value: Relationship): Self = StObject.set(x, "bpmn:Relationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonRendering(value: Rendering): Self = StObject.set(x, "bpmn:Rendering", value.asInstanceOf[js.Any])
+    inline def setBpmnColonRendering(value: Rendering): Self = StObject.set(x, "bpmn:Rendering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonResource(value: Resource): Self = StObject.set(x, "bpmn:Resource", value.asInstanceOf[js.Any])
+    inline def setBpmnColonResource(value: Resource): Self = StObject.set(x, "bpmn:Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonResourceAssignmentExpression(value: ResourceAssignmentExpression): Self = StObject.set(x, "bpmn:ResourceAssignmentExpression", value.asInstanceOf[js.Any])
+    inline def setBpmnColonResourceAssignmentExpression(value: ResourceAssignmentExpression): Self = StObject.set(x, "bpmn:ResourceAssignmentExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonResourceParameter(value: ResourceParameter): Self = StObject.set(x, "bpmn:ResourceParameter", value.asInstanceOf[js.Any])
+    inline def setBpmnColonResourceParameter(value: ResourceParameter): Self = StObject.set(x, "bpmn:ResourceParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonResourceParameterBinding(value: ResourceParameterBinding): Self = StObject.set(x, "bpmn:ResourceParameterBinding", value.asInstanceOf[js.Any])
+    inline def setBpmnColonResourceParameterBinding(value: ResourceParameterBinding): Self = StObject.set(x, "bpmn:ResourceParameterBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonResourceRole(value: ResourceRole): Self = StObject.set(x, "bpmn:ResourceRole", value.asInstanceOf[js.Any])
+    inline def setBpmnColonResourceRole(value: ResourceRole): Self = StObject.set(x, "bpmn:ResourceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonRootElement(value: RootElement): Self = StObject.set(x, "bpmn:RootElement", value.asInstanceOf[js.Any])
+    inline def setBpmnColonRootElement(value: RootElement): Self = StObject.set(x, "bpmn:RootElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonScriptTask(value: ScriptTask): Self = StObject.set(x, "bpmn:ScriptTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonScriptTask(value: ScriptTask): Self = StObject.set(x, "bpmn:ScriptTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonSendTask(value: SendTask): Self = StObject.set(x, "bpmn:SendTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonSendTask(value: SendTask): Self = StObject.set(x, "bpmn:SendTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonSequenceFlow(value: SequenceFlow): Self = StObject.set(x, "bpmn:SequenceFlow", value.asInstanceOf[js.Any])
+    inline def setBpmnColonSequenceFlow(value: SequenceFlow): Self = StObject.set(x, "bpmn:SequenceFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonServiceTask(value: ServiceTask): Self = StObject.set(x, "bpmn:ServiceTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonServiceTask(value: ServiceTask): Self = StObject.set(x, "bpmn:ServiceTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonSignal(value: Signal): Self = StObject.set(x, "bpmn:Signal", value.asInstanceOf[js.Any])
+    inline def setBpmnColonSignal(value: Signal): Self = StObject.set(x, "bpmn:Signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonSignalEventDefinition(value: SignalEventDefinition): Self = StObject.set(x, "bpmn:SignalEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonSignalEventDefinition(value: SignalEventDefinition): Self = StObject.set(x, "bpmn:SignalEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonStandardLoopCharacteristics(value: StandardLoopCharacteristics): Self = StObject.set(x, "bpmn:StandardLoopCharacteristics", value.asInstanceOf[js.Any])
+    inline def setBpmnColonStandardLoopCharacteristics(value: StandardLoopCharacteristics): Self = StObject.set(x, "bpmn:StandardLoopCharacteristics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonStartEvent(value: StartEvent): Self = StObject.set(x, "bpmn:StartEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonStartEvent(value: StartEvent): Self = StObject.set(x, "bpmn:StartEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonSubChoreography(value: SubChoreography): Self = StObject.set(x, "bpmn:SubChoreography", value.asInstanceOf[js.Any])
+    inline def setBpmnColonSubChoreography(value: SubChoreography): Self = StObject.set(x, "bpmn:SubChoreography", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonSubConversation(value: SubConversation): Self = StObject.set(x, "bpmn:SubConversation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonSubConversation(value: SubConversation): Self = StObject.set(x, "bpmn:SubConversation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonSubProcess(value: SubProcess): Self = StObject.set(x, "bpmn:SubProcess", value.asInstanceOf[js.Any])
+    inline def setBpmnColonSubProcess(value: SubProcess): Self = StObject.set(x, "bpmn:SubProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonTask(value: Task): Self = StObject.set(x, "bpmn:Task", value.asInstanceOf[js.Any])
+    inline def setBpmnColonTask(value: Task): Self = StObject.set(x, "bpmn:Task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonTerminateEventDefinition(value: TerminateEventDefinition): Self = StObject.set(x, "bpmn:TerminateEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonTerminateEventDefinition(value: TerminateEventDefinition): Self = StObject.set(x, "bpmn:TerminateEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonTextAnnotation(value: TextAnnotation): Self = StObject.set(x, "bpmn:TextAnnotation", value.asInstanceOf[js.Any])
+    inline def setBpmnColonTextAnnotation(value: TextAnnotation): Self = StObject.set(x, "bpmn:TextAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonThrowEvent(value: ThrowEvent): Self = StObject.set(x, "bpmn:ThrowEvent", value.asInstanceOf[js.Any])
+    inline def setBpmnColonThrowEvent(value: ThrowEvent): Self = StObject.set(x, "bpmn:ThrowEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonTimerEventDefinition(value: TimerEventDefinition): Self = StObject.set(x, "bpmn:TimerEventDefinition", value.asInstanceOf[js.Any])
+    inline def setBpmnColonTimerEventDefinition(value: TimerEventDefinition): Self = StObject.set(x, "bpmn:TimerEventDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonTransaction(value: Transaction): Self = StObject.set(x, "bpmn:Transaction", value.asInstanceOf[js.Any])
+    inline def setBpmnColonTransaction(value: Transaction): Self = StObject.set(x, "bpmn:Transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmnColonUserTask(value: UserTask): Self = StObject.set(x, "bpmn:UserTask", value.asInstanceOf[js.Any])
+    inline def setBpmnColonUserTask(value: UserTask): Self = StObject.set(x, "bpmn:UserTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmndiColonBPMNDiagram(value: BPMNDiagram): Self = StObject.set(x, "bpmndi:BPMNDiagram", value.asInstanceOf[js.Any])
+    inline def setBpmndiColonBPMNDiagram(value: BPMNDiagram): Self = StObject.set(x, "bpmndi:BPMNDiagram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmndiColonBPMNEdge(value: BPMNEdge): Self = StObject.set(x, "bpmndi:BPMNEdge", value.asInstanceOf[js.Any])
+    inline def setBpmndiColonBPMNEdge(value: BPMNEdge): Self = StObject.set(x, "bpmndi:BPMNEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmndiColonBPMNLabel(value: BPMNLabel): Self = StObject.set(x, "bpmndi:BPMNLabel", value.asInstanceOf[js.Any])
+    inline def setBpmndiColonBPMNLabel(value: BPMNLabel): Self = StObject.set(x, "bpmndi:BPMNLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmndiColonBPMNLabelStyle(value: BPMNLabelStyle): Self = StObject.set(x, "bpmndi:BPMNLabelStyle", value.asInstanceOf[js.Any])
+    inline def setBpmndiColonBPMNLabelStyle(value: BPMNLabelStyle): Self = StObject.set(x, "bpmndi:BPMNLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmndiColonBPMNPlane(value: BPMNPlane): Self = StObject.set(x, "bpmndi:BPMNPlane", value.asInstanceOf[js.Any])
+    inline def setBpmndiColonBPMNPlane(value: BPMNPlane): Self = StObject.set(x, "bpmndi:BPMNPlane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBpmndiColonBPMNShape(value: BPMNShape): Self = StObject.set(x, "bpmndi:BPMNShape", value.asInstanceOf[js.Any])
+    inline def setBpmndiColonBPMNShape(value: BPMNShape): Self = StObject.set(x, "bpmndi:BPMNShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcColonBounds(value: Bounds): Self = StObject.set(x, "dc:Bounds", value.asInstanceOf[js.Any])
+    inline def setDcColonBounds(value: Bounds): Self = StObject.set(x, "dc:Bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcColonFont(value: Font): Self = StObject.set(x, "dc:Font", value.asInstanceOf[js.Any])
+    inline def setDcColonFont(value: Font): Self = StObject.set(x, "dc:Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcColonPoint(value: Point): Self = StObject.set(x, "dc:Point", value.asInstanceOf[js.Any])
+    inline def setDcColonPoint(value: Point): Self = StObject.set(x, "dc:Point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcColonReal(value: js.Any): Self = StObject.set(x, "dc:Real", value.asInstanceOf[js.Any])
+    inline def setDcColonReal(value: js.Any): Self = StObject.set(x, "dc:Real", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcColonboolean(value: Boolean): Self = StObject.set(x, "dc:boolean", value.asInstanceOf[js.Any])
+    inline def setDcColonboolean(value: Boolean): Self = StObject.set(x, "dc:boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcColonnumber(value: Double): Self = StObject.set(x, "dc:number", value.asInstanceOf[js.Any])
+    inline def setDcColonnumber(value: Double): Self = StObject.set(x, "dc:number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcColonstring(value: String): Self = StObject.set(x, "dc:string", value.asInstanceOf[js.Any])
+    inline def setDcColonstring(value: String): Self = StObject.set(x, "dc:string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonDiagram(value: Diagram): Self = StObject.set(x, "di:Diagram", value.asInstanceOf[js.Any])
+    inline def setDiColonDiagram(value: Diagram): Self = StObject.set(x, "di:Diagram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonDiagramElement(value: DiagramElement): Self = StObject.set(x, "di:DiagramElement", value.asInstanceOf[js.Any])
+    inline def setDiColonDiagramElement(value: DiagramElement): Self = StObject.set(x, "di:DiagramElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonEdge(value: Edge): Self = StObject.set(x, "di:Edge", value.asInstanceOf[js.Any])
+    inline def setDiColonEdge(value: Edge): Self = StObject.set(x, "di:Edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonExtension(value: Extension): Self = StObject.set(x, "di:Extension", value.asInstanceOf[js.Any])
+    inline def setDiColonExtension(value: Extension): Self = StObject.set(x, "di:Extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonLabel(value: Label): Self = StObject.set(x, "di:Label", value.asInstanceOf[js.Any])
+    inline def setDiColonLabel(value: Label): Self = StObject.set(x, "di:Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonLabeledEdge(value: LabeledEdge): Self = StObject.set(x, "di:LabeledEdge", value.asInstanceOf[js.Any])
+    inline def setDiColonLabeledEdge(value: LabeledEdge): Self = StObject.set(x, "di:LabeledEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonLabeledShape(value: LabeledShape): Self = StObject.set(x, "di:LabeledShape", value.asInstanceOf[js.Any])
+    inline def setDiColonLabeledShape(value: LabeledShape): Self = StObject.set(x, "di:LabeledShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonNode(value: Node): Self = StObject.set(x, "di:Node", value.asInstanceOf[js.Any])
+    inline def setDiColonNode(value: Node): Self = StObject.set(x, "di:Node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonPlane(value: Plane): Self = StObject.set(x, "di:Plane", value.asInstanceOf[js.Any])
+    inline def setDiColonPlane(value: Plane): Self = StObject.set(x, "di:Plane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonShape(value: Shape): Self = StObject.set(x, "di:Shape", value.asInstanceOf[js.Any])
+    inline def setDiColonShape(value: Shape): Self = StObject.set(x, "di:Shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiColonStyle(value: Style): Self = StObject.set(x, "di:Style", value.asInstanceOf[js.Any])
+    inline def setDiColonStyle(value: Style): Self = StObject.set(x, "di:Style", value.asInstanceOf[js.Any])
   }
 }

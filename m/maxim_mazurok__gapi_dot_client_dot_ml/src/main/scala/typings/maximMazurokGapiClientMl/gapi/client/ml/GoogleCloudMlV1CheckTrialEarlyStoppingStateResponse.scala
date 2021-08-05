@@ -17,31 +17,23 @@ trait GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse extends StObject {
 }
 object GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse = {
+  inline def apply(): GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1CheckTrialEarlyStoppingStateResponseMutableBuilder[Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1CheckTrialEarlyStoppingStateResponse](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setShouldStop(value: Boolean): Self = StObject.set(x, "shouldStop", value.asInstanceOf[js.Any])
+    inline def setShouldStop(value: Boolean): Self = StObject.set(x, "shouldStop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldStopUndefined: Self = StObject.set(x, "shouldStop", js.undefined)
+    inline def setShouldStopUndefined: Self = StObject.set(x, "shouldStop", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

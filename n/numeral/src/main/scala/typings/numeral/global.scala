@@ -9,6 +9,5 @@ object global {
   @JSGlobal("numeral")
   @js.native
   def numeral: Numeral = js.native
-  @scala.inline
-  def numeral_=(x: Numeral): Unit = js.Dynamic.global.updateDynamic("numeral")(x.asInstanceOf[js.Any])
+  inline def numeral_=(x: Numeral): Unit = js.Dynamic.global.updateDynamic("numeral")(x.asInstanceOf[js.Any])
 }

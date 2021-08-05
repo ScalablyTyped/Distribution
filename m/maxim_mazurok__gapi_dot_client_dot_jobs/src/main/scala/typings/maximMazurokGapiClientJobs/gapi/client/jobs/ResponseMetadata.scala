@@ -11,19 +11,15 @@ trait ResponseMetadata extends StObject {
 }
 object ResponseMetadata {
   
-  @scala.inline
-  def apply(): ResponseMetadata = {
+  inline def apply(): ResponseMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseMetadata]
   }
   
-  @scala.inline
-  implicit class ResponseMetadataMutableBuilder[Self <: ResponseMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseMetadata](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

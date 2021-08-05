@@ -19,16 +19,12 @@ object ScriptType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ASIAN: `2` = 2.asInstanceOf[`2`]
+    inline def ASIAN: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def COMPLEX: `3` = 3.asInstanceOf[`3`]
+    inline def COMPLEX: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def LATIN: `1` = 1.asInstanceOf[`1`]
+    inline def LATIN: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def WEAK: `4` = 4.asInstanceOf[`4`]
+    inline def WEAK: `4` = 4.asInstanceOf[`4`]
   }
 }

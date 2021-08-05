@@ -27,36 +27,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PausedEventReason extends StObject
 object PausedEventReason {
   
-  @scala.inline
-  def Ambiguous: ambiguous = "ambiguous".asInstanceOf[ambiguous]
+  inline def Ambiguous: ambiguous = "ambiguous".asInstanceOf[ambiguous]
   
-  @scala.inline
-  def Assert: assert = "assert".asInstanceOf[assert]
+  inline def Assert: assert = "assert".asInstanceOf[assert]
   
-  @scala.inline
-  def DOM: typings.devtoolsProtocol.devtoolsProtocolStrings.DOM = "DOM".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DOM]
+  inline def DOM: typings.devtoolsProtocol.devtoolsProtocolStrings.DOM = "DOM".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DOM]
   
-  @scala.inline
-  def DebugCommand: debugCommand = "debugCommand".asInstanceOf[debugCommand]
+  inline def DebugCommand: debugCommand = "debugCommand".asInstanceOf[debugCommand]
   
-  @scala.inline
-  def EventListener: typings.devtoolsProtocol.devtoolsProtocolStrings.EventListener = "EventListener".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.EventListener]
+  inline def EventListener: typings.devtoolsProtocol.devtoolsProtocolStrings.EventListener = "EventListener".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.EventListener]
   
-  @scala.inline
-  def Exception: exception = "exception".asInstanceOf[exception]
+  inline def Exception: exception = "exception".asInstanceOf[exception]
   
-  @scala.inline
-  def Instrumentation: instrumentation = "instrumentation".asInstanceOf[instrumentation]
+  inline def Instrumentation: instrumentation = "instrumentation".asInstanceOf[instrumentation]
   
-  @scala.inline
-  def OOM: typings.devtoolsProtocol.devtoolsProtocolStrings.OOM = "OOM".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.OOM]
+  inline def OOM: typings.devtoolsProtocol.devtoolsProtocolStrings.OOM = "OOM".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.OOM]
   
-  @scala.inline
-  def Other: other_ = "other".asInstanceOf[other_]
+  inline def Other: other_ = "other".asInstanceOf[other_]
   
-  @scala.inline
-  def PromiseRejection: promiseRejection = "promiseRejection".asInstanceOf[promiseRejection]
+  inline def PromiseRejection: promiseRejection = "promiseRejection".asInstanceOf[promiseRejection]
   
-  @scala.inline
-  def XHR: typings.devtoolsProtocol.devtoolsProtocolStrings.XHR = "XHR".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.XHR]
+  inline def XHR: typings.devtoolsProtocol.devtoolsProtocolStrings.XHR = "XHR".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.XHR]
 }

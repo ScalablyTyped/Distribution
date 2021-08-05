@@ -17,13 +17,13 @@ object suggestionsCoreMod {
     extends Component[ISuggestionsCoreProps[T], js.Object, js.Any] {
     def this(suggestionsProps: ISuggestionsCoreProps[T]) = this()
     
-    var SuggestionsItemOfProperType: js.Any = js.native
+    /* private */ var SuggestionsItemOfProperType: js.Any = js.native
     
-    var _onClickTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onClickTypedSuggestionsItem: js.Any = js.native
     
-    var _onRemoveTypedSuggestionsItem: js.Any = js.native
+    /* private */ var _onRemoveTypedSuggestionsItem: js.Any = js.native
     
-    var _selectedElement: RefObject[HTMLDivElement] = js.native
+    /* protected */ var _selectedElement: RefObject[HTMLDivElement] = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MSuggestionsCore(): Unit = js.native

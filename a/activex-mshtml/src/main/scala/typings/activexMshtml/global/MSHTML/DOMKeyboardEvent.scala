@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMKeyboardEvent")
 @js.native
-class DOMKeyboardEvent protected ()
+/* private */ class DOMKeyboardEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMKeyboardEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMKeyboardEvent_typekey")
   var MSHTMLDotDOMKeyboardEvent_typekey: typings.activexMshtml.MSHTML.DOMKeyboardEvent = js.native
   

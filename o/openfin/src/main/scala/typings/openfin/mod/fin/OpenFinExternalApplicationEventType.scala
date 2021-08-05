@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenFinExternalApplicationEventType extends StObject
 object OpenFinExternalApplicationEventType {
   
-  @scala.inline
-  def connected: typings.openfin.openfinStrings.connected = "connected".asInstanceOf[typings.openfin.openfinStrings.connected]
+  inline def connected: typings.openfin.openfinStrings.connected = "connected".asInstanceOf[typings.openfin.openfinStrings.connected]
   
-  @scala.inline
-  def disconnected: typings.openfin.openfinStrings.disconnected = "disconnected".asInstanceOf[typings.openfin.openfinStrings.disconnected]
+  inline def disconnected: typings.openfin.openfinStrings.disconnected = "disconnected".asInstanceOf[typings.openfin.openfinStrings.disconnected]
 }

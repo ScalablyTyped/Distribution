@@ -16,25 +16,19 @@ trait ISelectionData extends StObject {
 }
 object ISelectionData {
   
-  @scala.inline
-  def apply(endColumn: Double, endLine: Double, startColumn: Double, startLine: Double): ISelectionData = {
+  inline def apply(endColumn: Double, endLine: Double, startColumn: Double, startLine: Double): ISelectionData = {
     val __obj = js.Dynamic.literal(endColumn = endColumn.asInstanceOf[js.Any], endLine = endLine.asInstanceOf[js.Any], startColumn = startColumn.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISelectionData]
   }
   
-  @scala.inline
-  implicit class ISelectionDataMutableBuilder[Self <: ISelectionData] (val x: Self) extends AnyVal {
+  extension [Self <: ISelectionData](x: Self) {
     
-    @scala.inline
-    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
   }
 }

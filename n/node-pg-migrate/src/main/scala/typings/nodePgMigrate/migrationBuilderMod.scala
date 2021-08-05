@@ -90,13 +90,13 @@ object migrationBuilderMod {
     def this(db: DB, typeShorthands: Unit, shouldDecamelize: Boolean, logger: Logger) = this()
     def this(db: DB, typeShorthands: ColumnDefinitions, shouldDecamelize: Boolean, logger: Logger) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _REVERSE_MODE: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _steps: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _useTransaction: js.Any = js.native
     
     /* CompleteClass */
@@ -510,11 +510,11 @@ object migrationBuilderMod {
     extends StObject
        with MigrationBuilder {
     
-    var _REVERSE_MODE: js.Any
+    /* private */ var _REVERSE_MODE: js.Any
     
-    var _steps: js.Any
+    /* private */ var _steps: js.Any
     
-    var _useTransaction: js.Any
+    /* private */ var _useTransaction: js.Any
     
     def enableReverseMode(): this.type
     
@@ -526,8 +526,7 @@ object migrationBuilderMod {
   }
   object MigrationBuilderImpl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _REVERSE_MODE: js.Any,
       _steps: js.Any,
       _useTransaction: js.Any,
@@ -620,29 +619,21 @@ object migrationBuilderMod {
       __obj.asInstanceOf[MigrationBuilderImpl]
     }
     
-    @scala.inline
-    implicit class MigrationBuilderImplMutableBuilder[Self <: MigrationBuilderImpl] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationBuilderImpl](x: Self) {
       
-      @scala.inline
-      def setEnableReverseMode(value: () => MigrationBuilderImpl): Self = StObject.set(x, "enableReverseMode", js.Any.fromFunction0(value))
+      inline def setEnableReverseMode(value: () => MigrationBuilderImpl): Self = StObject.set(x, "enableReverseMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSql(value: () => String): Self = StObject.set(x, "getSql", js.Any.fromFunction0(value))
+      inline def setGetSql(value: () => String): Self = StObject.set(x, "getSql", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSqlSteps(value: () => js.Array[String]): Self = StObject.set(x, "getSqlSteps", js.Any.fromFunction0(value))
+      inline def setGetSqlSteps(value: () => js.Array[String]): Self = StObject.set(x, "getSqlSteps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUsingTransaction(value: () => Boolean): Self = StObject.set(x, "isUsingTransaction", js.Any.fromFunction0(value))
+      inline def setIsUsingTransaction(value: () => Boolean): Self = StObject.set(x, "isUsingTransaction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_REVERSE_MODE(value: js.Any): Self = StObject.set(x, "_REVERSE_MODE", value.asInstanceOf[js.Any])
+      inline def set_REVERSE_MODE(value: js.Any): Self = StObject.set(x, "_REVERSE_MODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_steps(value: js.Any): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
+      inline def set_steps(value: js.Any): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_useTransaction(value: js.Any): Self = StObject.set(x, "_useTransaction", value.asInstanceOf[js.Any])
+      inline def set_useTransaction(value: js.Any): Self = StObject.set(x, "_useTransaction", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait Matcher extends StObject {
 }
 object Matcher {
   
-  @scala.inline
-  def apply(): Matcher = {
+  inline def apply(): Matcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Matcher]
   }
   
-  @scala.inline
-  implicit class MatcherMutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
+  extension [Self <: Matcher](x: Self) {
     
-    @scala.inline
-    def setGrpcCode(value: GrpcCode): Self = StObject.set(x, "GrpcCode", value.asInstanceOf[js.Any])
+    inline def setGrpcCode(value: GrpcCode): Self = StObject.set(x, "GrpcCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrpcCodeUndefined: Self = StObject.set(x, "GrpcCode", js.undefined)
+    inline def setGrpcCodeUndefined: Self = StObject.set(x, "GrpcCode", js.undefined)
     
-    @scala.inline
-    def setHttpCode(value: HttpCode): Self = StObject.set(x, "HttpCode", value.asInstanceOf[js.Any])
+    inline def setHttpCode(value: HttpCode): Self = StObject.set(x, "HttpCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpCodeUndefined: Self = StObject.set(x, "HttpCode", js.undefined)
+    inline def setHttpCodeUndefined: Self = StObject.set(x, "HttpCode", js.undefined)
   }
 }

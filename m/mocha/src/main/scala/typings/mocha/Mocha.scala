@@ -50,11 +50,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Mocha extends StObject {
   
-  var _growl: js.Any = js.native
+  /* private */ var _growl: js.Any = js.native
   
-  var _reporter: js.Any = js.native
+  /* private */ var _reporter: js.Any = js.native
   
-  var _ui: js.Any = js.native
+  /* private */ var _ui: js.Any = js.native
   
   /**
     * Add test `file`.
@@ -312,7 +312,7 @@ object Mocha {
     extends StObject
        with /* key */ StringDictionary[js.Any] {
     
-    var _runnable: js.Any = js.native
+    /* private */ var _runnable: js.Any = js.native
     
     var currentTest: js.UndefOr[Test] = js.native
     
@@ -429,7 +429,7 @@ object Mocha {
     extends StObject
        with Runnable {
     
-    var _error: js.Any = js.native
+    /* private */ var _error: js.Any = js.native
     
     // added by Runner
     /**
@@ -1285,8 +1285,7 @@ object Mocha {
   }
   object MochaGlobals {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       after: HookFunction,
       afterEach: HookFunction,
       before: HookFunction,
@@ -1311,65 +1310,45 @@ object Mocha {
       __obj.asInstanceOf[MochaGlobals]
     }
     
-    @scala.inline
-    implicit class MochaGlobalsMutableBuilder[Self <: MochaGlobals] (val x: Self) extends AnyVal {
+    extension [Self <: MochaGlobals](x: Self) {
       
-      @scala.inline
-      def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+      inline def setAfterEach(value: HookFunction): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: HookFunction): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      inline def setBeforeEach(value: HookFunction): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: SuiteFunction): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: SuiteFunction): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+      inline def setIt(value: TestFunction): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+      inline def setSetup(value: HookFunction): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
+      inline def setSpecify(value: TestFunction): Self = StObject.set(x, "specify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      inline def setSuite(value: SuiteFunction): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
+      inline def setSuiteSetup(value: HookFunction): Self = StObject.set(x, "suiteSetup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
+      inline def setSuiteTeardown(value: HookFunction): Self = StObject.set(x, "suiteTeardown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
+      inline def setTeardown(value: HookFunction): Self = StObject.set(x, "teardown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: TestFunction): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXcontext(value: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit): Self = StObject.set(x, "xcontext", js.Any.fromFunction2(value))
+      inline def setXcontext(value: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit): Self = StObject.set(x, "xcontext", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setXdescribe(value: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit): Self = StObject.set(x, "xdescribe", js.Any.fromFunction2(value))
+      inline def setXdescribe(value: (/* title */ String, /* fn */ js.ThisFunction0[/* this */ Suite, Unit]) => Suite | Unit): Self = StObject.set(x, "xdescribe", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
+      inline def setXit(value: PendingTestFunction): Self = StObject.set(x, "xit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
+      inline def setXspecify(value: PendingTestFunction): Self = StObject.set(x, "xspecify", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1381,23 +1360,18 @@ object Mocha {
   }
   object MochaInstanceOptions {
     
-    @scala.inline
-    def apply(): MochaInstanceOptions = {
+    inline def apply(): MochaInstanceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MochaInstanceOptions]
     }
     
-    @scala.inline
-    implicit class MochaInstanceOptionsMutableBuilder[Self <: MochaInstanceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MochaInstanceOptions](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
     }
   }
   
@@ -1479,167 +1453,114 @@ object Mocha {
   }
   object MochaOptions {
     
-    @scala.inline
-    def apply(): MochaOptions = {
+    inline def apply(): MochaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MochaOptions]
     }
     
-    @scala.inline
-    implicit class MochaOptionsMutableBuilder[Self <: MochaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MochaOptions](x: Self) {
       
-      @scala.inline
-      def setAllowUncaught(value: Boolean): Self = StObject.set(x, "allowUncaught", value.asInstanceOf[js.Any])
+      inline def setAllowUncaught(value: Boolean): Self = StObject.set(x, "allowUncaught", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowUncaughtUndefined: Self = StObject.set(x, "allowUncaught", js.undefined)
+      inline def setAllowUncaughtUndefined: Self = StObject.set(x, "allowUncaught", js.undefined)
       
-      @scala.inline
-      def setAsyncOnly(value: Boolean): Self = StObject.set(x, "asyncOnly", value.asInstanceOf[js.Any])
+      inline def setAsyncOnly(value: Boolean): Self = StObject.set(x, "asyncOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncOnlyUndefined: Self = StObject.set(x, "asyncOnly", js.undefined)
+      inline def setAsyncOnlyUndefined: Self = StObject.set(x, "asyncOnly", js.undefined)
       
-      @scala.inline
-      def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+      inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+      inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
       
-      @scala.inline
-      def setCheckLeaks(value: Boolean): Self = StObject.set(x, "checkLeaks", value.asInstanceOf[js.Any])
+      inline def setCheckLeaks(value: Boolean): Self = StObject.set(x, "checkLeaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckLeaksUndefined: Self = StObject.set(x, "checkLeaks", js.undefined)
+      inline def setCheckLeaksUndefined: Self = StObject.set(x, "checkLeaks", js.undefined)
       
-      @scala.inline
-      def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setForbidOnly(value: Boolean): Self = StObject.set(x, "forbidOnly", value.asInstanceOf[js.Any])
+      inline def setForbidOnly(value: Boolean): Self = StObject.set(x, "forbidOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbidOnlyUndefined: Self = StObject.set(x, "forbidOnly", js.undefined)
+      inline def setForbidOnlyUndefined: Self = StObject.set(x, "forbidOnly", js.undefined)
       
-      @scala.inline
-      def setForbidPending(value: Boolean): Self = StObject.set(x, "forbidPending", value.asInstanceOf[js.Any])
+      inline def setForbidPending(value: Boolean): Self = StObject.set(x, "forbidPending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbidPendingUndefined: Self = StObject.set(x, "forbidPending", js.undefined)
+      inline def setForbidPendingUndefined: Self = StObject.set(x, "forbidPending", js.undefined)
       
-      @scala.inline
-      def setFullStackTrace(value: Boolean): Self = StObject.set(x, "fullStackTrace", value.asInstanceOf[js.Any])
+      inline def setFullStackTrace(value: Boolean): Self = StObject.set(x, "fullStackTrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullStackTraceUndefined: Self = StObject.set(x, "fullStackTrace", js.undefined)
+      inline def setFullStackTraceUndefined: Self = StObject.set(x, "fullStackTrace", js.undefined)
       
-      @scala.inline
-      def setFullTrace(value: Boolean): Self = StObject.set(x, "fullTrace", value.asInstanceOf[js.Any])
+      inline def setFullTrace(value: Boolean): Self = StObject.set(x, "fullTrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullTraceUndefined: Self = StObject.set(x, "fullTrace", js.undefined)
+      inline def setFullTraceUndefined: Self = StObject.set(x, "fullTrace", js.undefined)
       
-      @scala.inline
-      def setGlobals(value: js.Array[String]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: js.Array[String]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+      inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      @scala.inline
-      def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value :_*))
+      inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value :_*))
       
-      @scala.inline
-      def setGrep(value: String | RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+      inline def setGrep(value: String | RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
+      inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
       
-      @scala.inline
-      def setGrowl(value: Boolean): Self = StObject.set(x, "growl", value.asInstanceOf[js.Any])
+      inline def setGrowl(value: Boolean): Self = StObject.set(x, "growl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowlUndefined: Self = StObject.set(x, "growl", js.undefined)
+      inline def setGrowlUndefined: Self = StObject.set(x, "growl", js.undefined)
       
-      @scala.inline
-      def setHideDiff(value: Boolean): Self = StObject.set(x, "hideDiff", value.asInstanceOf[js.Any])
+      inline def setHideDiff(value: Boolean): Self = StObject.set(x, "hideDiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDiffUndefined: Self = StObject.set(x, "hideDiff", js.undefined)
+      inline def setHideDiffUndefined: Self = StObject.set(x, "hideDiff", js.undefined)
       
-      @scala.inline
-      def setInlineDiffs(value: Boolean): Self = StObject.set(x, "inlineDiffs", value.asInstanceOf[js.Any])
+      inline def setInlineDiffs(value: Boolean): Self = StObject.set(x, "inlineDiffs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineDiffsUndefined: Self = StObject.set(x, "inlineDiffs", js.undefined)
+      inline def setInlineDiffsUndefined: Self = StObject.set(x, "inlineDiffs", js.undefined)
       
-      @scala.inline
-      def setJobs(value: Double): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+      inline def setJobs(value: Double): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
+      inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
       
-      @scala.inline
-      def setNoHighlighting(value: Boolean): Self = StObject.set(x, "noHighlighting", value.asInstanceOf[js.Any])
+      inline def setNoHighlighting(value: Boolean): Self = StObject.set(x, "noHighlighting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoHighlightingUndefined: Self = StObject.set(x, "noHighlighting", js.undefined)
+      inline def setNoHighlightingUndefined: Self = StObject.set(x, "noHighlighting", js.undefined)
       
-      @scala.inline
-      def setParallel(value: Boolean): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Boolean): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setReporter(value: String | ReporterConstructor): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: String | ReporterConstructor): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporterOptions(value: js.Any): Self = StObject.set(x, "reporterOptions", value.asInstanceOf[js.Any])
+      inline def setReporterOptions(value: js.Any): Self = StObject.set(x, "reporterOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporterOptionsUndefined: Self = StObject.set(x, "reporterOptions", js.undefined)
+      inline def setReporterOptionsUndefined: Self = StObject.set(x, "reporterOptions", js.undefined)
       
-      @scala.inline
-      def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      @scala.inline
-      def setRootHooks(value: RootHookObject): Self = StObject.set(x, "rootHooks", value.asInstanceOf[js.Any])
+      inline def setRootHooks(value: RootHookObject): Self = StObject.set(x, "rootHooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootHooksUndefined: Self = StObject.set(x, "rootHooks", js.undefined)
+      inline def setRootHooksUndefined: Self = StObject.set(x, "rootHooks", js.undefined)
       
-      @scala.inline
-      def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+      inline def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
+      inline def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double | String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUi(value: Interface): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: Interface): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+      inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
     }
   }
   
@@ -1763,50 +1684,36 @@ object Mocha {
   }
   object RootHookObject {
     
-    @scala.inline
-    def apply(): RootHookObject = {
+    inline def apply(): RootHookObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RootHookObject]
     }
     
-    @scala.inline
-    implicit class RootHookObjectMutableBuilder[Self <: RootHookObject] (val x: Self) extends AnyVal {
+    extension [Self <: RootHookObject](x: Self) {
       
-      @scala.inline
-      def setAfterAll(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "afterAll", value.asInstanceOf[js.Any])
+      inline def setAfterAll(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "afterAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterAllUndefined: Self = StObject.set(x, "afterAll", js.undefined)
+      inline def setAfterAllUndefined: Self = StObject.set(x, "afterAll", js.undefined)
       
-      @scala.inline
-      def setAfterAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterAll", js.Array(value :_*))
+      inline def setAfterAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterAll", js.Array(value :_*))
       
-      @scala.inline
-      def setAfterEach(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
+      inline def setAfterEach(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
+      inline def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
       
-      @scala.inline
-      def setAfterEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterEach", js.Array(value :_*))
+      inline def setAfterEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterEach", js.Array(value :_*))
       
-      @scala.inline
-      def setBeforeAll(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "beforeAll", value.asInstanceOf[js.Any])
+      inline def setBeforeAll(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "beforeAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeAllUndefined: Self = StObject.set(x, "beforeAll", js.undefined)
+      inline def setBeforeAllUndefined: Self = StObject.set(x, "beforeAll", js.undefined)
       
-      @scala.inline
-      def setBeforeAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeAll", js.Array(value :_*))
+      inline def setBeforeAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeAll", js.Array(value :_*))
       
-      @scala.inline
-      def setBeforeEach(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
+      inline def setBeforeEach(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
+      inline def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
       
-      @scala.inline
-      def setBeforeEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeEach", js.Array(value :_*))
+      inline def setBeforeEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeEach", js.Array(value :_*))
     }
   }
   
@@ -1823,15 +1730,15 @@ object Mocha {
     extends StObject
        with EventEmitter {
     
-    var _currentRetry: js.Any = js.native
+    /* private */ var _currentRetry: js.Any = js.native
     
-    var _retries: js.Any = js.native
+    /* private */ var _retries: js.Any = js.native
     
-    var _slow: js.Any = js.native
+    /* private */ var _slow: js.Any = js.native
     
-    var _timeout: js.Any = js.native
+    /* private */ var _timeout: js.Any = js.native
     
-    var _timeoutError: js.Any = js.native
+    /* private */ var _timeoutError: js.Any = js.native
     
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("addListener")
@@ -2054,13 +1961,13 @@ object Mocha {
     extends StObject
        with EventEmitter {
     
-    var _abort: js.Any = js.native
+    /* private */ var _abort: js.Any = js.native
     
-    var _defaultGrep: js.Any = js.native
+    /* private */ var _defaultGrep: js.Any = js.native
     
-    var _delay: js.Any = js.native
+    /* private */ var _delay: js.Any = js.native
     
-    var _globals: js.Any = js.native
+    /* private */ var _globals: js.Any = js.native
     
     /**
       * Cleanly abort execution.
@@ -2233,7 +2140,7 @@ object Mocha {
       fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], Unit]
     ): Unit = js.native
     
-    var hookErr: js.Any = js.native
+    /* private */ var hookErr: js.Any = js.native
     
     /**
       * Run hooks from the top level down.
@@ -2257,9 +2164,9 @@ object Mocha {
       fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], Unit]
     ): Unit = js.native
     
-    var next: js.Any = js.native
+    /* private */ var next: js.Any = js.native
     
-    var nextSuite: js.Any = js.native
+    /* private */ var nextSuite: js.Any = js.native
     
     def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("on")
@@ -2372,7 +2279,7 @@ object Mocha {
     @JSName("prependOnceListener")
     def prependOnceListener_waiting(event: waiting, listener: js.Function1[/* rootSuite */ Suite, Unit]): this.type = js.native
     
-    var prevGlobalsLength: js.Any = js.native
+    /* private */ var prevGlobalsLength: js.Any = js.native
     
     def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("removeListener")
@@ -2479,56 +2386,40 @@ object Mocha {
   }
   object RunnerConstants {
     
-    @scala.inline
-    def apply(): RunnerConstants = {
+    inline def apply(): RunnerConstants = {
       val __obj = js.Dynamic.literal(EVENT_DELAY_BEGIN = "waiting", EVENT_DELAY_END = "ready", EVENT_HOOK_BEGIN = "hook", EVENT_HOOK_END = "hook end", EVENT_RUN_BEGIN = "start", EVENT_RUN_END = "end", EVENT_SUITE_BEGIN = "suite", EVENT_SUITE_END = "suite end", EVENT_TEST_BEGIN = "test", EVENT_TEST_END = "test end", EVENT_TEST_FAIL = "fail", EVENT_TEST_PASS = "pass", EVENT_TEST_PENDING = "pending", EVENT_TEST_RETRY = "retry")
       __obj.asInstanceOf[RunnerConstants]
     }
     
-    @scala.inline
-    implicit class RunnerConstantsMutableBuilder[Self <: RunnerConstants] (val x: Self) extends AnyVal {
+    extension [Self <: RunnerConstants](x: Self) {
       
-      @scala.inline
-      def setEVENT_DELAY_BEGIN(value: waiting): Self = StObject.set(x, "EVENT_DELAY_BEGIN", value.asInstanceOf[js.Any])
+      inline def setEVENT_DELAY_BEGIN(value: waiting): Self = StObject.set(x, "EVENT_DELAY_BEGIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_DELAY_END(value: ready): Self = StObject.set(x, "EVENT_DELAY_END", value.asInstanceOf[js.Any])
+      inline def setEVENT_DELAY_END(value: ready): Self = StObject.set(x, "EVENT_DELAY_END", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_HOOK_BEGIN(value: hook): Self = StObject.set(x, "EVENT_HOOK_BEGIN", value.asInstanceOf[js.Any])
+      inline def setEVENT_HOOK_BEGIN(value: hook): Self = StObject.set(x, "EVENT_HOOK_BEGIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_HOOK_END(value: `hook end`): Self = StObject.set(x, "EVENT_HOOK_END", value.asInstanceOf[js.Any])
+      inline def setEVENT_HOOK_END(value: `hook end`): Self = StObject.set(x, "EVENT_HOOK_END", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_RUN_BEGIN(value: start): Self = StObject.set(x, "EVENT_RUN_BEGIN", value.asInstanceOf[js.Any])
+      inline def setEVENT_RUN_BEGIN(value: start): Self = StObject.set(x, "EVENT_RUN_BEGIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_RUN_END(value: end): Self = StObject.set(x, "EVENT_RUN_END", value.asInstanceOf[js.Any])
+      inline def setEVENT_RUN_END(value: end): Self = StObject.set(x, "EVENT_RUN_END", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_BEGIN(value: suite): Self = StObject.set(x, "EVENT_SUITE_BEGIN", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_BEGIN(value: suite): Self = StObject.set(x, "EVENT_SUITE_BEGIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_END(value: `suite end`): Self = StObject.set(x, "EVENT_SUITE_END", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_END(value: `suite end`): Self = StObject.set(x, "EVENT_SUITE_END", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_TEST_BEGIN(value: test): Self = StObject.set(x, "EVENT_TEST_BEGIN", value.asInstanceOf[js.Any])
+      inline def setEVENT_TEST_BEGIN(value: test): Self = StObject.set(x, "EVENT_TEST_BEGIN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_TEST_END(value: `test end`): Self = StObject.set(x, "EVENT_TEST_END", value.asInstanceOf[js.Any])
+      inline def setEVENT_TEST_END(value: `test end`): Self = StObject.set(x, "EVENT_TEST_END", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_TEST_FAIL(value: fail): Self = StObject.set(x, "EVENT_TEST_FAIL", value.asInstanceOf[js.Any])
+      inline def setEVENT_TEST_FAIL(value: fail): Self = StObject.set(x, "EVENT_TEST_FAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_TEST_PASS(value: pass): Self = StObject.set(x, "EVENT_TEST_PASS", value.asInstanceOf[js.Any])
+      inline def setEVENT_TEST_PASS(value: pass): Self = StObject.set(x, "EVENT_TEST_PASS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_TEST_PENDING(value: pending): Self = StObject.set(x, "EVENT_TEST_PENDING", value.asInstanceOf[js.Any])
+      inline def setEVENT_TEST_PENDING(value: pending): Self = StObject.set(x, "EVENT_TEST_PENDING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_TEST_RETRY(value: retry): Self = StObject.set(x, "EVENT_TEST_RETRY", value.asInstanceOf[js.Any])
+      inline def setEVENT_TEST_RETRY(value: retry): Self = StObject.set(x, "EVENT_TEST_RETRY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2555,47 +2446,34 @@ object Mocha {
   }
   object Stats {
     
-    @scala.inline
-    def apply(failures: Double, passes: Double, pending: Double, suites: Double, tests: Double): Stats = {
+    inline def apply(failures: Double, passes: Double, pending: Double, suites: Double, tests: Double): Stats = {
       val __obj = js.Dynamic.literal(failures = failures.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], suites = suites.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+      inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasses(value: Double): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
+      inline def setPasses(value: Double): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setSuites(value: Double): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
+      inline def setSuites(value: Double): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTests(value: Double): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+      inline def setTests(value: Double): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2630,15 +2508,15 @@ object Mocha {
     extends StObject
        with EventEmitter {
     
-    var _afterAll: js.Any = js.native
+    /* private */ var _afterAll: js.Any = js.native
     
-    var _afterEach: js.Any = js.native
+    /* private */ var _afterEach: js.Any = js.native
     
-    var _bail: js.Any = js.native
+    /* private */ var _bail: js.Any = js.native
     
-    var _beforeAll: js.Any = js.native
+    /* private */ var _beforeAll: js.Any = js.native
     
-    var _beforeEach: js.Any = js.native
+    /* private */ var _beforeEach: js.Any = js.native
     
     /**
       * Generic hook-creator.
@@ -2647,15 +2525,15 @@ object Mocha {
     /* protected */ def _createHook(title: String, fn: AsyncFunc): Hook = js.native
     /* protected */ def _createHook(title: String, fn: Func): Hook = js.native
     
-    var _onlySuites: js.Any = js.native
+    /* private */ var _onlySuites: js.Any = js.native
     
-    var _onlyTests: js.Any = js.native
+    /* private */ var _onlyTests: js.Any = js.native
     
-    var _retries: js.Any = js.native
+    /* private */ var _retries: js.Any = js.native
     
-    var _slow: js.Any = js.native
+    /* private */ var _slow: js.Any = js.native
     
-    var _timeout: js.Any = js.native
+    /* private */ var _timeout: js.Any = js.native
     
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("addListener")
@@ -3106,56 +2984,40 @@ object Mocha {
   }
   object SuiteConstants {
     
-    @scala.inline
-    def apply(): SuiteConstants = {
+    inline def apply(): SuiteConstants = {
       val __obj = js.Dynamic.literal(EVENT_FILE_POST_REQUIRE = "post-require", EVENT_FILE_PRE_REQUIRE = "pre-require", EVENT_FILE_REQUIRE = "require", EVENT_ROOT_SUITE_RUN = "run", EVENT_SUITE_ADD_HOOK_AFTER_ALL = "afterAll", EVENT_SUITE_ADD_HOOK_AFTER_EACH = "afterEach", EVENT_SUITE_ADD_HOOK_BEFORE_ALL = "beforeAll", EVENT_SUITE_ADD_HOOK_BEFORE_EACH = "beforeEach", EVENT_SUITE_ADD_SUITE = "suite", EVENT_SUITE_ADD_TEST = "test", HOOK_TYPE_AFTER_ALL = "afterAll", HOOK_TYPE_AFTER_EACH = "afterEach", HOOK_TYPE_BEFORE_ALL = "beforeAll", HOOK_TYPE_BEFORE_EACH = "beforeEach")
       __obj.asInstanceOf[SuiteConstants]
     }
     
-    @scala.inline
-    implicit class SuiteConstantsMutableBuilder[Self <: SuiteConstants] (val x: Self) extends AnyVal {
+    extension [Self <: SuiteConstants](x: Self) {
       
-      @scala.inline
-      def setEVENT_FILE_POST_REQUIRE(value: `post-require`): Self = StObject.set(x, "EVENT_FILE_POST_REQUIRE", value.asInstanceOf[js.Any])
+      inline def setEVENT_FILE_POST_REQUIRE(value: `post-require`): Self = StObject.set(x, "EVENT_FILE_POST_REQUIRE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_FILE_PRE_REQUIRE(value: `pre-require`): Self = StObject.set(x, "EVENT_FILE_PRE_REQUIRE", value.asInstanceOf[js.Any])
+      inline def setEVENT_FILE_PRE_REQUIRE(value: `pre-require`): Self = StObject.set(x, "EVENT_FILE_PRE_REQUIRE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_FILE_REQUIRE(value: require): Self = StObject.set(x, "EVENT_FILE_REQUIRE", value.asInstanceOf[js.Any])
+      inline def setEVENT_FILE_REQUIRE(value: require): Self = StObject.set(x, "EVENT_FILE_REQUIRE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_ROOT_SUITE_RUN(value: run): Self = StObject.set(x, "EVENT_ROOT_SUITE_RUN", value.asInstanceOf[js.Any])
+      inline def setEVENT_ROOT_SUITE_RUN(value: run): Self = StObject.set(x, "EVENT_ROOT_SUITE_RUN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_ADD_HOOK_AFTER_ALL(value: afterAll): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_AFTER_ALL", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_ADD_HOOK_AFTER_ALL(value: afterAll): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_AFTER_ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_ADD_HOOK_AFTER_EACH(value: afterEach): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_AFTER_EACH", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_ADD_HOOK_AFTER_EACH(value: afterEach): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_AFTER_EACH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_ADD_HOOK_BEFORE_ALL(value: beforeAll): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_BEFORE_ALL", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_ADD_HOOK_BEFORE_ALL(value: beforeAll): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_BEFORE_ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_ADD_HOOK_BEFORE_EACH(value: beforeEach): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_BEFORE_EACH", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_ADD_HOOK_BEFORE_EACH(value: beforeEach): Self = StObject.set(x, "EVENT_SUITE_ADD_HOOK_BEFORE_EACH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_ADD_SUITE(value: suite): Self = StObject.set(x, "EVENT_SUITE_ADD_SUITE", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_ADD_SUITE(value: suite): Self = StObject.set(x, "EVENT_SUITE_ADD_SUITE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEVENT_SUITE_ADD_TEST(value: test): Self = StObject.set(x, "EVENT_SUITE_ADD_TEST", value.asInstanceOf[js.Any])
+      inline def setEVENT_SUITE_ADD_TEST(value: test): Self = StObject.set(x, "EVENT_SUITE_ADD_TEST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOOK_TYPE_AFTER_ALL(value: afterAll): Self = StObject.set(x, "HOOK_TYPE_AFTER_ALL", value.asInstanceOf[js.Any])
+      inline def setHOOK_TYPE_AFTER_ALL(value: afterAll): Self = StObject.set(x, "HOOK_TYPE_AFTER_ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOOK_TYPE_AFTER_EACH(value: afterEach): Self = StObject.set(x, "HOOK_TYPE_AFTER_EACH", value.asInstanceOf[js.Any])
+      inline def setHOOK_TYPE_AFTER_EACH(value: afterEach): Self = StObject.set(x, "HOOK_TYPE_AFTER_EACH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOOK_TYPE_BEFORE_ALL(value: beforeAll): Self = StObject.set(x, "HOOK_TYPE_BEFORE_ALL", value.asInstanceOf[js.Any])
+      inline def setHOOK_TYPE_BEFORE_ALL(value: beforeAll): Self = StObject.set(x, "HOOK_TYPE_BEFORE_ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOOK_TYPE_BEFORE_EACH(value: beforeEach): Self = StObject.set(x, "HOOK_TYPE_BEFORE_EACH", value.asInstanceOf[js.Any])
+      inline def setHOOK_TYPE_BEFORE_EACH(value: beforeEach): Self = StObject.set(x, "HOOK_TYPE_BEFORE_EACH", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3419,37 +3281,28 @@ object Mocha {
     }
     object Base_ {
       
-      @scala.inline
-      def apply(epilogue: () => Unit, failures: js.Array[Test], runner: Runner, stats: Stats): Base_ = {
+      inline def apply(epilogue: () => Unit, failures: js.Array[Test], runner: Runner, stats: Stats): Base_ = {
         val __obj = js.Dynamic.literal(epilogue = js.Any.fromFunction0(epilogue), failures = failures.asInstanceOf[js.Any], runner = runner.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
         __obj.asInstanceOf[Base_]
       }
       
-      @scala.inline
-      implicit class Base_MutableBuilder[Self <: Base_] (val x: Self) extends AnyVal {
+      extension [Self <: Base_](x: Self) {
         
-        @scala.inline
-        def setDone(
+        inline def setDone(
           value: (/* failures */ Double, /* fn */ js.UndefOr[js.Function1[/* failures */ Double, Unit]]) => Unit
         ): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+        inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
         
-        @scala.inline
-        def setEpilogue(value: () => Unit): Self = StObject.set(x, "epilogue", js.Any.fromFunction0(value))
+        inline def setEpilogue(value: () => Unit): Self = StObject.set(x, "epilogue", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setFailures(value: js.Array[Test]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+        inline def setFailures(value: js.Array[Test]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFailuresVarargs(value: Test*): Self = StObject.set(x, "failures", js.Array(value :_*))
+        inline def setFailuresVarargs(value: Test*): Self = StObject.set(x, "failures", js.Array(value :_*))
         
-        @scala.inline
-        def setRunner(value: Runner): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
+        inline def setRunner(value: Runner): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+        inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       }
       
       /**
@@ -3512,8 +3365,7 @@ object Mocha {
       }
       object ColorMap {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           `bright fail`: Double,
           `bright pass`: Double,
           `bright yellow`: Double,
@@ -3552,77 +3404,53 @@ object Mocha {
           __obj.asInstanceOf[ColorMap]
         }
         
-        @scala.inline
-        implicit class ColorMapMutableBuilder[Self <: ColorMap] (val x: Self) extends AnyVal {
+        extension [Self <: ColorMap](x: Self) {
           
-          @scala.inline
-          def `setBright fail`(value: Double): Self = StObject.set(x, "bright fail", value.asInstanceOf[js.Any])
+          inline def `setBright fail`(value: Double): Self = StObject.set(x, "bright fail", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setBright pass`(value: Double): Self = StObject.set(x, "bright pass", value.asInstanceOf[js.Any])
+          inline def `setBright pass`(value: Double): Self = StObject.set(x, "bright pass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setBright yellow`(value: Double): Self = StObject.set(x, "bright yellow", value.asInstanceOf[js.Any])
+          inline def `setBright yellow`(value: Double): Self = StObject.set(x, "bright yellow", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCheckmark(value: Double): Self = StObject.set(x, "checkmark", value.asInstanceOf[js.Any])
+          inline def setCheckmark(value: Double): Self = StObject.set(x, "checkmark", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setDiff added`(value: Double): Self = StObject.set(x, "diff added", value.asInstanceOf[js.Any])
+          inline def `setDiff added`(value: Double): Self = StObject.set(x, "diff added", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setDiff gutter`(value: Double): Self = StObject.set(x, "diff gutter", value.asInstanceOf[js.Any])
+          inline def `setDiff gutter`(value: Double): Self = StObject.set(x, "diff gutter", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setDiff removed`(value: Double): Self = StObject.set(x, "diff removed", value.asInstanceOf[js.Any])
+          inline def `setDiff removed`(value: Double): Self = StObject.set(x, "diff removed", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setError message`(value: Double): Self = StObject.set(x, "error message", value.asInstanceOf[js.Any])
+          inline def `setError message`(value: Double): Self = StObject.set(x, "error message", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setError stack`(value: Double): Self = StObject.set(x, "error stack", value.asInstanceOf[js.Any])
+          inline def `setError stack`(value: Double): Self = StObject.set(x, "error stack", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setError title`(value: Double): Self = StObject.set(x, "error title", value.asInstanceOf[js.Any])
+          inline def `setError title`(value: Double): Self = StObject.set(x, "error title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFail(value: Double): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+          inline def setFail(value: Double): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
+          inline def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+          inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLight(value: Double): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+          inline def setLight(value: Double): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+          inline def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPass(value: Double): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+          inline def setPass(value: Double): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+          inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPlane(value: Double): Self = StObject.set(x, "plane", value.asInstanceOf[js.Any])
+          inline def setPlane(value: Double): Self = StObject.set(x, "plane", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def `setPlane crash`(value: Double): Self = StObject.set(x, "plane crash", value.asInstanceOf[js.Any])
+          inline def `setPlane crash`(value: Double): Self = StObject.set(x, "plane crash", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+          inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRunway(value: Double): Self = StObject.set(x, "runway", value.asInstanceOf[js.Any])
+          inline def setRunway(value: Double): Self = StObject.set(x, "runway", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+          inline def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSuite(value: Double): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+          inline def setSuite(value: Double): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3647,29 +3475,22 @@ object Mocha {
       }
       object SymbolMap {
         
-        @scala.inline
-        def apply(bang: String, comma: String, dot: String, err: String, ok: String): SymbolMap = {
+        inline def apply(bang: String, comma: String, dot: String, err: String, ok: String): SymbolMap = {
           val __obj = js.Dynamic.literal(bang = bang.asInstanceOf[js.Any], comma = comma.asInstanceOf[js.Any], dot = dot.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
           __obj.asInstanceOf[SymbolMap]
         }
         
-        @scala.inline
-        implicit class SymbolMapMutableBuilder[Self <: SymbolMap] (val x: Self) extends AnyVal {
+        extension [Self <: SymbolMap](x: Self) {
           
-          @scala.inline
-          def setBang(value: String): Self = StObject.set(x, "bang", value.asInstanceOf[js.Any])
+          inline def setBang(value: String): Self = StObject.set(x, "bang", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setComma(value: String): Self = StObject.set(x, "comma", value.asInstanceOf[js.Any])
+          inline def setComma(value: String): Self = StObject.set(x, "comma", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDot(value: String): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+          inline def setDot(value: String): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+          inline def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+          inline def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3729,8 +3550,7 @@ object Mocha {
     }
     object HTML_ {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addCodeToggle: (HTMLLIElement, String) => Unit,
         epilogue: () => Unit,
         failures: js.Array[Test],
@@ -3743,17 +3563,13 @@ object Mocha {
         __obj.asInstanceOf[HTML_]
       }
       
-      @scala.inline
-      implicit class HTML_MutableBuilder[Self <: HTML_] (val x: Self) extends AnyVal {
+      extension [Self <: HTML_](x: Self) {
         
-        @scala.inline
-        def setAddCodeToggle(value: (HTMLLIElement, String) => Unit): Self = StObject.set(x, "addCodeToggle", js.Any.fromFunction2(value))
+        inline def setAddCodeToggle(value: (HTMLLIElement, String) => Unit): Self = StObject.set(x, "addCodeToggle", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSuiteURL(value: Suite => String): Self = StObject.set(x, "suiteURL", js.Any.fromFunction1(value))
+        inline def setSuiteURL(value: Suite => String): Self = StObject.set(x, "suiteURL", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTestURL(value: Test => String): Self = StObject.set(x, "testURL", js.Any.fromFunction1(value))
+        inline def setTestURL(value: Test => String): Self = StObject.set(x, "testURL", js.Any.fromFunction1(value))
       }
     }
     
@@ -3808,44 +3624,43 @@ object Mocha {
       extends StObject
          with Base_ {
       
-      var appendRainbow: js.Any
+      /* private */ var appendRainbow: js.Any
       
-      var colorIndex: js.Any
+      /* private */ var colorIndex: js.Any
       
-      var cursorDown: js.Any
+      /* private */ var cursorDown: js.Any
       
-      var cursorUp: js.Any
+      /* private */ var cursorUp: js.Any
       
-      var draw: js.Any
+      /* private */ var draw: js.Any
       
-      var drawNyanCat: js.Any
+      /* private */ var drawNyanCat: js.Any
       
-      var drawRainbow: js.Any
+      /* private */ var drawRainbow: js.Any
       
-      var drawScoreboard: js.Any
+      /* private */ var drawScoreboard: js.Any
       
-      var face: js.Any
+      /* private */ var face: js.Any
       
-      var generateColors: js.Any
+      /* private */ var generateColors: js.Any
       
-      var numberOfLines: js.Any
+      /* private */ var numberOfLines: js.Any
       
-      var rainbowColors: js.Any
+      /* private */ var rainbowColors: js.Any
       
-      var rainbowify: js.Any
+      /* private */ var rainbowify: js.Any
       
-      var scoreboardWidth: js.Any
+      /* private */ var scoreboardWidth: js.Any
       
-      var tick: js.Any
+      /* private */ var tick: js.Any
       
-      var trajectories: js.Any
+      /* private */ var trajectories: js.Any
       
-      var trajectoryWidthMax: js.Any
+      /* private */ var trajectoryWidthMax: js.Any
     }
     object Nyan_ {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         appendRainbow: js.Any,
         colorIndex: js.Any,
         cursorDown: js.Any,
@@ -3872,59 +3687,41 @@ object Mocha {
         __obj.asInstanceOf[Nyan_]
       }
       
-      @scala.inline
-      implicit class Nyan_MutableBuilder[Self <: Nyan_] (val x: Self) extends AnyVal {
+      extension [Self <: Nyan_](x: Self) {
         
-        @scala.inline
-        def setAppendRainbow(value: js.Any): Self = StObject.set(x, "appendRainbow", value.asInstanceOf[js.Any])
+        inline def setAppendRainbow(value: js.Any): Self = StObject.set(x, "appendRainbow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorIndex(value: js.Any): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
+        inline def setColorIndex(value: js.Any): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorDown(value: js.Any): Self = StObject.set(x, "cursorDown", value.asInstanceOf[js.Any])
+        inline def setCursorDown(value: js.Any): Self = StObject.set(x, "cursorDown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorUp(value: js.Any): Self = StObject.set(x, "cursorUp", value.asInstanceOf[js.Any])
+        inline def setCursorUp(value: js.Any): Self = StObject.set(x, "cursorUp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDraw(value: js.Any): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
+        inline def setDraw(value: js.Any): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDrawNyanCat(value: js.Any): Self = StObject.set(x, "drawNyanCat", value.asInstanceOf[js.Any])
+        inline def setDrawNyanCat(value: js.Any): Self = StObject.set(x, "drawNyanCat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDrawRainbow(value: js.Any): Self = StObject.set(x, "drawRainbow", value.asInstanceOf[js.Any])
+        inline def setDrawRainbow(value: js.Any): Self = StObject.set(x, "drawRainbow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDrawScoreboard(value: js.Any): Self = StObject.set(x, "drawScoreboard", value.asInstanceOf[js.Any])
+        inline def setDrawScoreboard(value: js.Any): Self = StObject.set(x, "drawScoreboard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFace(value: js.Any): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+        inline def setFace(value: js.Any): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGenerateColors(value: js.Any): Self = StObject.set(x, "generateColors", value.asInstanceOf[js.Any])
+        inline def setGenerateColors(value: js.Any): Self = StObject.set(x, "generateColors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumberOfLines(value: js.Any): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+        inline def setNumberOfLines(value: js.Any): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRainbowColors(value: js.Any): Self = StObject.set(x, "rainbowColors", value.asInstanceOf[js.Any])
+        inline def setRainbowColors(value: js.Any): Self = StObject.set(x, "rainbowColors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRainbowify(value: js.Any): Self = StObject.set(x, "rainbowify", value.asInstanceOf[js.Any])
+        inline def setRainbowify(value: js.Any): Self = StObject.set(x, "rainbowify", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScoreboardWidth(value: js.Any): Self = StObject.set(x, "scoreboardWidth", value.asInstanceOf[js.Any])
+        inline def setScoreboardWidth(value: js.Any): Self = StObject.set(x, "scoreboardWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTick(value: js.Any): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+        inline def setTick(value: js.Any): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrajectories(value: js.Any): Self = StObject.set(x, "trajectories", value.asInstanceOf[js.Any])
+        inline def setTrajectories(value: js.Any): Self = StObject.set(x, "trajectories", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrajectoryWidthMax(value: js.Any): Self = StObject.set(x, "trajectoryWidthMax", value.asInstanceOf[js.Any])
+        inline def setTrajectoryWidthMax(value: js.Any): Self = StObject.set(x, "trajectoryWidthMax", value.asInstanceOf[js.Any])
       }
     }
     
@@ -3935,8 +3732,7 @@ object Mocha {
            with typings.mocha.Mocha.MochaOptions
       object MochaOptions {
         
-        @scala.inline
-        def apply(): typings.mocha.Mocha.reporters.Progress_.MochaOptions = {
+        inline def apply(): typings.mocha.Mocha.reporters.Progress_.MochaOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.mocha.Mocha.reporters.Progress_.MochaOptions]
         }
@@ -3956,44 +3752,32 @@ object Mocha {
       }
       object ReporterOptions {
         
-        @scala.inline
-        def apply(): ReporterOptions = {
+        inline def apply(): ReporterOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ReporterOptions]
         }
         
-        @scala.inline
-        implicit class ReporterOptionsMutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
+        extension [Self <: ReporterOptions](x: Self) {
           
-          @scala.inline
-          def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+          inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+          inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
           
-          @scala.inline
-          def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+          inline def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+          inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
           
-          @scala.inline
-          def setIncomplete(value: String): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
+          inline def setIncomplete(value: String): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIncompleteUndefined: Self = StObject.set(x, "incomplete", js.undefined)
+          inline def setIncompleteUndefined: Self = StObject.set(x, "incomplete", js.undefined)
           
-          @scala.inline
-          def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+          inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+          inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
           
-          @scala.inline
-          def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+          inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+          inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
         }
       }
     }
@@ -4051,8 +3835,7 @@ object Mocha {
     }
     object XUnit_ {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         done: (Double, js.Function1[/* failures */ Double, Unit]) => Unit,
         epilogue: () => Unit,
         failures: js.Array[Test],
@@ -4070,8 +3853,7 @@ object Mocha {
            with typings.mocha.Mocha.MochaOptions
       object MochaOptions {
         
-        @scala.inline
-        def apply(): typings.mocha.Mocha.reporters.XUnit_.MochaOptions = {
+        inline def apply(): typings.mocha.Mocha.reporters.XUnit_.MochaOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.mocha.Mocha.reporters.XUnit_.MochaOptions]
         }
@@ -4085,40 +3867,30 @@ object Mocha {
       }
       object ReporterOptions {
         
-        @scala.inline
-        def apply(): ReporterOptions = {
+        inline def apply(): ReporterOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ReporterOptions]
         }
         
-        @scala.inline
-        implicit class ReporterOptionsMutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
+        extension [Self <: ReporterOptions](x: Self) {
           
-          @scala.inline
-          def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+          inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+          inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
           
-          @scala.inline
-          def setSuiteName(value: String): Self = StObject.set(x, "suiteName", value.asInstanceOf[js.Any])
+          inline def setSuiteName(value: String): Self = StObject.set(x, "suiteName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSuiteNameUndefined: Self = StObject.set(x, "suiteName", js.undefined)
+          inline def setSuiteNameUndefined: Self = StObject.set(x, "suiteName", js.undefined)
         }
       }
       
-      @scala.inline
-      implicit class XUnit_MutableBuilder[Self <: XUnit_] (val x: Self) extends AnyVal {
+      extension [Self <: XUnit_](x: Self) {
         
-        @scala.inline
-        def setDone(value: (Double, js.Function1[/* failures */ Double, Unit]) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
+        inline def setDone(value: (Double, js.Function1[/* failures */ Double, Unit]) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setTest(value: Test => Unit): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+        inline def setTest(value: Test => Unit): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+        inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       }
     }
     

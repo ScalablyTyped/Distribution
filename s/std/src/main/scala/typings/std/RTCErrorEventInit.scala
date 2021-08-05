@@ -12,16 +12,13 @@ trait RTCErrorEventInit
 }
 object RTCErrorEventInit {
   
-  @scala.inline
-  def apply(error: RTCError): RTCErrorEventInit = {
+  inline def apply(error: RTCError): RTCErrorEventInit = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCErrorEventInit]
   }
   
-  @scala.inline
-  implicit class RTCErrorEventInitMutableBuilder[Self <: RTCErrorEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: RTCErrorEventInit](x: Self) {
     
-    @scala.inline
-    def setError(value: RTCError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: RTCError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

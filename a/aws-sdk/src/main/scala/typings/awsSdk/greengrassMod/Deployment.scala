@@ -33,43 +33,31 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(): Deployment = {
+  inline def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setDeploymentArn(value: string): Self = StObject.set(x, "DeploymentArn", value.asInstanceOf[js.Any])
+    inline def setDeploymentArn(value: string): Self = StObject.set(x, "DeploymentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentArnUndefined: Self = StObject.set(x, "DeploymentArn", js.undefined)
+    inline def setDeploymentArnUndefined: Self = StObject.set(x, "DeploymentArn", js.undefined)
     
-    @scala.inline
-    def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
-    @scala.inline
-    def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
+    inline def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
+    inline def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
     
-    @scala.inline
-    def setGroupArn(value: string): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
+    inline def setGroupArn(value: string): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupArnUndefined: Self = StObject.set(x, "GroupArn", js.undefined)
+    inline def setGroupArnUndefined: Self = StObject.set(x, "GroupArn", js.undefined)
   }
 }

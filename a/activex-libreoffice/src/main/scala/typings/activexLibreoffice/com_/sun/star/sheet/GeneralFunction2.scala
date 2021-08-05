@@ -39,46 +39,32 @@ object GeneralFunction2 {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AUTO: `1` = 1.asInstanceOf[`1`]
+    inline def AUTO: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def AVERAGE: `4` = 4.asInstanceOf[`4`]
+    inline def AVERAGE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def COUNT: `3` = 3.asInstanceOf[`3`]
+    inline def COUNT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def COUNTNUMS: `8` = 8.asInstanceOf[`8`]
+    inline def COUNTNUMS: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def MAX: `5` = 5.asInstanceOf[`5`]
+    inline def MAX: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MEDIAN: `13` = 13.asInstanceOf[`13`]
+    inline def MEDIAN: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def MIN: `6` = 6.asInstanceOf[`6`]
+    inline def MIN: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PRODUCT: `7` = 7.asInstanceOf[`7`]
+    inline def PRODUCT: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def STDEV: `9` = 9.asInstanceOf[`9`]
+    inline def STDEV: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def STDEVP: `10` = 10.asInstanceOf[`10`]
+    inline def STDEVP: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def SUM: `2` = 2.asInstanceOf[`2`]
+    inline def SUM: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def VAR: `11` = 11.asInstanceOf[`11`]
+    inline def VAR: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def VARP: `12` = 12.asInstanceOf[`12`]
+    inline def VARP: `12` = 12.asInstanceOf[`12`]
   }
 }

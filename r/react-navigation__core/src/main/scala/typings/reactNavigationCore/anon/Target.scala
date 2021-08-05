@@ -15,23 +15,18 @@ trait Target[EventName /* <: String */] extends StObject {
 }
 object Target {
   
-  @scala.inline
-  def apply[EventName /* <: String */](`type`: EventName): Target[EventName] = {
+  inline def apply[EventName /* <: String */](`type`: EventName): Target[EventName] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Target[EventName]]
   }
   
-  @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target[?], EventName /* <: String */] (val x: Self & Target[EventName]) extends AnyVal {
+  extension [Self <: Target[?], EventName /* <: String */](x: Self & Target[EventName]) {
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: EventName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

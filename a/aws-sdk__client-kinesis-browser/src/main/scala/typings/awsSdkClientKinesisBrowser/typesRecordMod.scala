@@ -41,35 +41,26 @@ object typesRecordMod {
   }
   object Record {
     
-    @scala.inline
-    def apply(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String, SequenceNumber: String): Record = {
+    inline def apply(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String, SequenceNumber: String): Record = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[Record]
     }
     
-    @scala.inline
-    implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+    extension [Self <: Record](x: Self) {
       
-      @scala.inline
-      def setApproximateArrivalTimestamp(value: Date | String | Double): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
+      inline def setApproximateArrivalTimestamp(value: Date | String | Double): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApproximateArrivalTimestampUndefined: Self = StObject.set(x, "ApproximateArrivalTimestamp", js.undefined)
+      inline def setApproximateArrivalTimestampUndefined: Self = StObject.set(x, "ApproximateArrivalTimestamp", js.undefined)
       
-      @scala.inline
-      def setData(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+      inline def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+      inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
       
-      @scala.inline
-      def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
+      inline def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,23 +82,18 @@ object typesRecordMod {
   }
   object UnmarshalledRecord {
     
-    @scala.inline
-    def apply(Data: Uint8Array, PartitionKey: String, SequenceNumber: String): UnmarshalledRecord = {
+    inline def apply(Data: Uint8Array, PartitionKey: String, SequenceNumber: String): UnmarshalledRecord = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledRecord]
     }
     
-    @scala.inline
-    implicit class UnmarshalledRecordMutableBuilder[Self <: UnmarshalledRecord] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledRecord](x: Self) {
       
-      @scala.inline
-      def setApproximateArrivalTimestamp(value: Date): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
+      inline def setApproximateArrivalTimestamp(value: Date): Self = StObject.set(x, "ApproximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApproximateArrivalTimestampUndefined: Self = StObject.set(x, "ApproximateArrivalTimestamp", js.undefined)
+      inline def setApproximateArrivalTimestampUndefined: Self = StObject.set(x, "ApproximateArrivalTimestamp", js.undefined)
       
-      @scala.inline
-      def setData(value: Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }
   }
 }

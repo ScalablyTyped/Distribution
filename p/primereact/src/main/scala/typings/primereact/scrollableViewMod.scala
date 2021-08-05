@@ -45,80 +45,56 @@ object scrollableViewMod {
   }
   object ScrollableViewProps {
     
-    @scala.inline
-    def apply(): ScrollableViewProps = {
+    inline def apply(): ScrollableViewProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollableViewProps]
     }
     
-    @scala.inline
-    implicit class ScrollableViewPropsMutableBuilder[Self <: ScrollableViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollableViewProps](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
+      inline def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrozenBody(value: js.Any): Self = StObject.set(x, "frozenBody", value.asInstanceOf[js.Any])
+      inline def setFrozenBody(value: js.Any): Self = StObject.set(x, "frozenBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrozenBodyUndefined: Self = StObject.set(x, "frozenBody", js.undefined)
+      inline def setFrozenBodyUndefined: Self = StObject.set(x, "frozenBody", js.undefined)
       
-      @scala.inline
-      def setFrozenUndefined: Self = StObject.set(x, "frozen", js.undefined)
+      inline def setFrozenUndefined: Self = StObject.set(x, "frozen", js.undefined)
       
-      @scala.inline
-      def setFrozenWidth(value: String): Self = StObject.set(x, "frozenWidth", value.asInstanceOf[js.Any])
+      inline def setFrozenWidth(value: String): Self = StObject.set(x, "frozenWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrozenWidthUndefined: Self = StObject.set(x, "frozenWidth", js.undefined)
+      inline def setFrozenWidthUndefined: Self = StObject.set(x, "frozenWidth", js.undefined)
       
-      @scala.inline
-      def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setOnVirtualScroll(value: /* page */ Double => Unit): Self = StObject.set(x, "onVirtualScroll", js.Any.fromFunction1(value))
+      inline def setOnVirtualScroll(value: /* page */ Double => Unit): Self = StObject.set(x, "onVirtualScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVirtualScrollUndefined: Self = StObject.set(x, "onVirtualScroll", js.undefined)
+      inline def setOnVirtualScrollUndefined: Self = StObject.set(x, "onVirtualScroll", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setTotalRcords(value: Double): Self = StObject.set(x, "totalRcords", value.asInstanceOf[js.Any])
+      inline def setTotalRcords(value: Double): Self = StObject.set(x, "totalRcords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalRcordsUndefined: Self = StObject.set(x, "totalRcords", js.undefined)
+      inline def setTotalRcordsUndefined: Self = StObject.set(x, "totalRcords", js.undefined)
       
-      @scala.inline
-      def setUnfrozenWidth(value: String): Self = StObject.set(x, "unfrozenWidth", value.asInstanceOf[js.Any])
+      inline def setUnfrozenWidth(value: String): Self = StObject.set(x, "unfrozenWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnfrozenWidthUndefined: Self = StObject.set(x, "unfrozenWidth", js.undefined)
+      inline def setUnfrozenWidthUndefined: Self = StObject.set(x, "unfrozenWidth", js.undefined)
       
-      @scala.inline
-      def setVirtualScroll(value: Boolean): Self = StObject.set(x, "virtualScroll", value.asInstanceOf[js.Any])
+      inline def setVirtualScroll(value: Boolean): Self = StObject.set(x, "virtualScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualScrollUndefined: Self = StObject.set(x, "virtualScroll", js.undefined)
+      inline def setVirtualScrollUndefined: Self = StObject.set(x, "virtualScroll", js.undefined)
     }
   }
 }

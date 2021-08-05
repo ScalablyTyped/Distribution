@@ -24,49 +24,35 @@ trait TypeaheadContainerProps[T /* <: TypeaheadModel */] extends StObject {
 }
 object TypeaheadContainerProps {
   
-  @scala.inline
-  def apply[T /* <: TypeaheadModel */](isFocused: Boolean, selected: js.Array[T], showMenu: Boolean, shownResults: Double, text: String): TypeaheadContainerProps[T] = {
+  inline def apply[T /* <: TypeaheadModel */](isFocused: Boolean, selected: js.Array[T], showMenu: Boolean, shownResults: Double, text: String): TypeaheadContainerProps[T] = {
     val __obj = js.Dynamic.literal(isFocused = isFocused.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], showMenu = showMenu.asInstanceOf[js.Any], shownResults = shownResults.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], activeIndex = null, activeItem = null, initialItem = null)
     __obj.asInstanceOf[TypeaheadContainerProps[T]]
   }
   
-  @scala.inline
-  implicit class TypeaheadContainerPropsMutableBuilder[Self <: TypeaheadContainerProps[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadContainerProps[T]) extends AnyVal {
+  extension [Self <: TypeaheadContainerProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadContainerProps[T]) {
     
-    @scala.inline
-    def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveIndexNull: Self = StObject.set(x, "activeIndex", null)
+    inline def setActiveIndexNull: Self = StObject.set(x, "activeIndex", null)
     
-    @scala.inline
-    def setActiveItem(value: T): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
+    inline def setActiveItem(value: T): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveItemNull: Self = StObject.set(x, "activeItem", null)
+    inline def setActiveItemNull: Self = StObject.set(x, "activeItem", null)
     
-    @scala.inline
-    def setInitialItem(value: T): Self = StObject.set(x, "initialItem", value.asInstanceOf[js.Any])
+    inline def setInitialItem(value: T): Self = StObject.set(x, "initialItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialItemNull: Self = StObject.set(x, "initialItem", null)
+    inline def setInitialItemNull: Self = StObject.set(x, "initialItem", null)
     
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+    inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: js.Array[T]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Array[T]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value :_*))
     
-    @scala.inline
-    def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
+    inline def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShownResults(value: Double): Self = StObject.set(x, "shownResults", value.asInstanceOf[js.Any])
+    inline def setShownResults(value: Double): Self = StObject.set(x, "shownResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

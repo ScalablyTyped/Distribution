@@ -8,11 +8,9 @@ object angularWebsocketStrings {
   
   @js.native
   sealed trait arraybuffer extends StObject
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
   sealed trait blob extends StObject
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
+  inline def blob: blob = "blob".asInstanceOf[blob]
 }

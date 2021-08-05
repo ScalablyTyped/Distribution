@@ -12,31 +12,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hubConnection(): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")().asInstanceOf[Connection]
-  @scala.inline
-  def hubConnection(url: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any]).asInstanceOf[Connection]
-  @scala.inline
-  def hubConnection(url: String, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
-  @scala.inline
-  def hubConnection(url: Unit, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def hubConnection(): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")().asInstanceOf[Connection]
+  inline def hubConnection(url: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  inline def hubConnection(url: String, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def hubConnection(url: Unit, options: Options): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("hubConnection")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
-  @scala.inline
-  def signalR(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")().asInstanceOf[js.Any]
-  @scala.inline
-  def signalR(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def signalR(url: String, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def signalR(url: String, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def signalR(url: String, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def signalR(url: Unit, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def signalR(url: Unit, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def signalR(url: Unit, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def signalR(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")().asInstanceOf[js.Any]
+  inline def signalR(url: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def signalR(url: String, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def signalR(url: String, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def signalR(url: String, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def signalR(url: Unit, qs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def signalR(url: Unit, qs: js.Any, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def signalR(url: Unit, qs: Unit, logging: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("signalR")(url.asInstanceOf[js.Any], qs.asInstanceOf[js.Any], logging.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait Connection extends StObject {
@@ -80,32 +68,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      @scala.inline
-      def setQs(value: String): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+      inline def setQs(value: String): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
+      inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
       
-      @scala.inline
-      def setUseDefaultPath(value: Boolean): Self = StObject.set(x, "useDefaultPath", value.asInstanceOf[js.Any])
+      inline def setUseDefaultPath(value: Boolean): Self = StObject.set(x, "useDefaultPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDefaultPathUndefined: Self = StObject.set(x, "useDefaultPath", js.undefined)
+      inline def setUseDefaultPathUndefined: Self = StObject.set(x, "useDefaultPath", js.undefined)
     }
   }
   

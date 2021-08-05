@@ -13,22 +13,17 @@ trait PowerFormsFormDataResponse extends StObject {
 }
 object PowerFormsFormDataResponse {
   
-  @scala.inline
-  def apply(): PowerFormsFormDataResponse = {
+  inline def apply(): PowerFormsFormDataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PowerFormsFormDataResponse]
   }
   
-  @scala.inline
-  implicit class PowerFormsFormDataResponseMutableBuilder[Self <: PowerFormsFormDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PowerFormsFormDataResponse](x: Self) {
     
-    @scala.inline
-    def setEnvelopes(value: js.Array[PowerFormFormDataEnvelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
+    inline def setEnvelopes(value: js.Array[PowerFormFormDataEnvelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
+    inline def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
-    @scala.inline
-    def setEnvelopesVarargs(value: PowerFormFormDataEnvelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
+    inline def setEnvelopesVarargs(value: PowerFormFormDataEnvelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
   }
 }

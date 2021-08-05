@@ -13,22 +13,17 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(acls: js.Array[ACL], http: Path): Settings = {
+  inline def apply(acls: js.Array[ACL], http: Path): Settings = {
     val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
+    inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
+    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
     
-    @scala.inline
-    def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

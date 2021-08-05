@@ -18,22 +18,17 @@ trait DeleteAutoScalingGroupType extends StObject {
 }
 object DeleteAutoScalingGroupType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName): DeleteAutoScalingGroupType = {
+  inline def apply(AutoScalingGroupName: ResourceName): DeleteAutoScalingGroupType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAutoScalingGroupType]
   }
   
-  @scala.inline
-  implicit class DeleteAutoScalingGroupTypeMutableBuilder[Self <: DeleteAutoScalingGroupType] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAutoScalingGroupType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDelete(value: ForceDelete): Self = StObject.set(x, "ForceDelete", value.asInstanceOf[js.Any])
+    inline def setForceDelete(value: ForceDelete): Self = StObject.set(x, "ForceDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteUndefined: Self = StObject.set(x, "ForceDelete", js.undefined)
+    inline def setForceDeleteUndefined: Self = StObject.set(x, "ForceDelete", js.undefined)
   }
 }

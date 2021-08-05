@@ -11,19 +11,15 @@ trait ReverseInputs extends StObject {
 }
 object ReverseInputs {
   
-  @scala.inline
-  def apply(): ReverseInputs = {
+  inline def apply(): ReverseInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReverseInputs]
   }
   
-  @scala.inline
-  implicit class ReverseInputsMutableBuilder[Self <: ReverseInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ReverseInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

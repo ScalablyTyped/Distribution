@@ -10,6 +10,5 @@ object uniqueByMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](arr: js.Array[T], fn: js.Function1[/* arg0 */ T, js.Any]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def default[T](arr: js.Array[T], fn: js.Function1[/* arg0 */ T, js.Any]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

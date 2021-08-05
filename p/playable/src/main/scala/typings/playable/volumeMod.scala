@@ -18,70 +18,70 @@ object volumeMod {
        with VolumeControl {
     def this(hasEngineEventEmitterTextMapTooltipServiceTheme: TooltipService) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindCallbacks: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _broadcastDragEnd: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _broadcastDragStart: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _buttonInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _changeVolumeLevel: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _destroyInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getVolumeLevelFromInput: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getVolumeLevelFromWheel: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _inputInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _setMuteState: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _setVolumeLevel: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _textMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _theme: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _toggleMuteState: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _tooltipService: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateSoundState: js.Any = js.native
     
     /* CompleteClass */
@@ -112,69 +112,66 @@ object volumeMod {
     @JSImport("playable/dist/src/modules/ui/controls/volume/volume", "default.View")
     @js.native
     def View: Instantiable1[/* config */ IVolumeViewConfig, typings.playable.volumeViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ IVolumeViewConfig, typings.playable.volumeViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ IVolumeViewConfig, typings.playable.volumeViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/volume/volume", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/volume/volume", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait VolumeControl
     extends StObject
        with IVolumeControl {
     
-    var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _broadcastDragEnd: js.Any
+    /* private */ var _broadcastDragEnd: js.Any
     
-    var _broadcastDragStart: js.Any
+    /* private */ var _broadcastDragStart: js.Any
     
-    var _buttonInterceptor: js.Any
+    /* private */ var _buttonInterceptor: js.Any
     
-    var _changeVolumeLevel: js.Any
+    /* private */ var _changeVolumeLevel: js.Any
     
-    var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _getVolumeLevelFromInput: js.Any
+    /* private */ var _getVolumeLevelFromInput: js.Any
     
-    var _getVolumeLevelFromWheel: js.Any
+    /* private */ var _getVolumeLevelFromWheel: js.Any
     
-    var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _inputInterceptor: js.Any
+    /* private */ var _inputInterceptor: js.Any
     
-    var _setMuteState: js.Any
+    /* private */ var _setMuteState: js.Any
     
-    var _setVolumeLevel: js.Any
+    /* private */ var _setVolumeLevel: js.Any
     
-    var _textMap: js.Any
+    /* private */ var _textMap: js.Any
     
-    var _theme: js.Any
+    /* private */ var _theme: js.Any
     
-    var _toggleMuteState: js.Any
+    /* private */ var _toggleMuteState: js.Any
     
-    var _tooltipService: js.Any
+    /* private */ var _tooltipService: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
-    var _updateSoundState: js.Any
+    /* private */ var _updateSoundState: js.Any
     
     var isHidden: Boolean
     
@@ -182,8 +179,7 @@ object volumeMod {
   }
   object VolumeControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindCallbacks: js.Any,
       _bindEvents: js.Any,
       _broadcastDragEnd: js.Any,
@@ -217,80 +213,55 @@ object volumeMod {
       __obj.asInstanceOf[VolumeControl]
     }
     
-    @scala.inline
-    implicit class VolumeControlMutableBuilder[Self <: VolumeControl] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeControl](x: Self) {
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: typings.playable.volumeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.volumeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_broadcastDragEnd(value: js.Any): Self = StObject.set(x, "_broadcastDragEnd", value.asInstanceOf[js.Any])
+      inline def set_broadcastDragEnd(value: js.Any): Self = StObject.set(x, "_broadcastDragEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_broadcastDragStart(value: js.Any): Self = StObject.set(x, "_broadcastDragStart", value.asInstanceOf[js.Any])
+      inline def set_broadcastDragStart(value: js.Any): Self = StObject.set(x, "_broadcastDragStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_buttonInterceptor(value: js.Any): Self = StObject.set(x, "_buttonInterceptor", value.asInstanceOf[js.Any])
+      inline def set_buttonInterceptor(value: js.Any): Self = StObject.set(x, "_buttonInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_changeVolumeLevel(value: js.Any): Self = StObject.set(x, "_changeVolumeLevel", value.asInstanceOf[js.Any])
+      inline def set_changeVolumeLevel(value: js.Any): Self = StObject.set(x, "_changeVolumeLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getVolumeLevelFromInput(value: js.Any): Self = StObject.set(x, "_getVolumeLevelFromInput", value.asInstanceOf[js.Any])
+      inline def set_getVolumeLevelFromInput(value: js.Any): Self = StObject.set(x, "_getVolumeLevelFromInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getVolumeLevelFromWheel(value: js.Any): Self = StObject.set(x, "_getVolumeLevelFromWheel", value.asInstanceOf[js.Any])
+      inline def set_getVolumeLevelFromWheel(value: js.Any): Self = StObject.set(x, "_getVolumeLevelFromWheel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_inputInterceptor(value: js.Any): Self = StObject.set(x, "_inputInterceptor", value.asInstanceOf[js.Any])
+      inline def set_inputInterceptor(value: js.Any): Self = StObject.set(x, "_inputInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_setMuteState(value: js.Any): Self = StObject.set(x, "_setMuteState", value.asInstanceOf[js.Any])
+      inline def set_setMuteState(value: js.Any): Self = StObject.set(x, "_setMuteState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_setVolumeLevel(value: js.Any): Self = StObject.set(x, "_setVolumeLevel", value.asInstanceOf[js.Any])
+      inline def set_setVolumeLevel(value: js.Any): Self = StObject.set(x, "_setVolumeLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
+      inline def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_toggleMuteState(value: js.Any): Self = StObject.set(x, "_toggleMuteState", value.asInstanceOf[js.Any])
+      inline def set_toggleMuteState(value: js.Any): Self = StObject.set(x, "_toggleMuteState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_tooltipService(value: js.Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
+      inline def set_tooltipService(value: js.Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateSoundState(value: js.Any): Self = StObject.set(x, "_updateSoundState", value.asInstanceOf[js.Any])
+      inline def set_updateSoundState(value: js.Any): Self = StObject.set(x, "_updateSoundState", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,19 +16,15 @@ trait StackedRNNCellsArgs
 }
 object StackedRNNCellsArgs {
   
-  @scala.inline
-  def apply(cells: js.Array[RNNCell]): StackedRNNCellsArgs = {
+  inline def apply(cells: js.Array[RNNCell]): StackedRNNCellsArgs = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackedRNNCellsArgs]
   }
   
-  @scala.inline
-  implicit class StackedRNNCellsArgsMutableBuilder[Self <: StackedRNNCellsArgs] (val x: Self) extends AnyVal {
+  extension [Self <: StackedRNNCellsArgs](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[RNNCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[RNNCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsVarargs(value: RNNCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: RNNCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
   }
 }

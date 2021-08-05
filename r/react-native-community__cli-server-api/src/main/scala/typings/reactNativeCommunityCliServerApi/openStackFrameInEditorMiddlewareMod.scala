@@ -11,8 +11,7 @@ object openStackFrameInEditorMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: Options): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def default(options: Options): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
   trait Options extends StObject {
     
@@ -20,20 +19,16 @@ object openStackFrameInEditorMiddlewareMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(watchFolders: js.Array[String]): Options = {
+    inline def apply(watchFolders: js.Array[String]): Options = {
       val __obj = js.Dynamic.literal(watchFolders = watchFolders.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setWatchFolders(value: js.Array[String]): Self = StObject.set(x, "watchFolders", value.asInstanceOf[js.Any])
+      inline def setWatchFolders(value: js.Array[String]): Self = StObject.set(x, "watchFolders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatchFoldersVarargs(value: String*): Self = StObject.set(x, "watchFolders", js.Array(value :_*))
+      inline def setWatchFoldersVarargs(value: String*): Self = StObject.set(x, "watchFolders", js.Array(value :_*))
     }
   }
 }

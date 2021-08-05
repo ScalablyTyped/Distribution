@@ -87,70 +87,49 @@ trait ICompositeDefinition extends StObject {
 }
 object ICompositeDefinition {
   
-  @scala.inline
-  def apply(): ICompositeDefinition = {
+  inline def apply(): ICompositeDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICompositeDefinition]
   }
   
-  @scala.inline
-  implicit class ICompositeDefinitionMutableBuilder[Self <: ICompositeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ICompositeDefinition](x: Self) {
     
-    @scala.inline
-    def setBodies(value: js.Array[Body]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
+    inline def setBodies(value: js.Array[Body]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
+    inline def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
     
-    @scala.inline
-    def setBodiesVarargs(value: Body*): Self = StObject.set(x, "bodies", js.Array(value :_*))
+    inline def setBodiesVarargs(value: Body*): Self = StObject.set(x, "bodies", js.Array(value :_*))
     
-    @scala.inline
-    def setComposites(value: js.Array[Composite]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
+    inline def setComposites(value: js.Array[Composite]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompositesUndefined: Self = StObject.set(x, "composites", js.undefined)
+    inline def setCompositesUndefined: Self = StObject.set(x, "composites", js.undefined)
     
-    @scala.inline
-    def setCompositesVarargs(value: Composite*): Self = StObject.set(x, "composites", js.Array(value :_*))
+    inline def setCompositesVarargs(value: Composite*): Self = StObject.set(x, "composites", js.Array(value :_*))
     
-    @scala.inline
-    def setConstraints(value: js.Array[Constraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: js.Array[Constraint]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+    inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    @scala.inline
-    def setConstraintsVarargs(value: Constraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: Constraint*): Self = StObject.set(x, "constraints", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsModified(value: Boolean): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
+    inline def setIsModified(value: Boolean): Self = StObject.set(x, "isModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsModifiedUndefined: Self = StObject.set(x, "isModified", js.undefined)
+    inline def setIsModifiedUndefined: Self = StObject.set(x, "isModified", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setParent(value: Composite): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Composite): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

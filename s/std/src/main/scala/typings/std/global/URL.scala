@@ -59,9 +59,7 @@ object URL {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createObjectURL(`object`: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(`object`.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def createObjectURL(`object`: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(`object`.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
-  @scala.inline
-  def revokeObjectURL(url: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def revokeObjectURL(url: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

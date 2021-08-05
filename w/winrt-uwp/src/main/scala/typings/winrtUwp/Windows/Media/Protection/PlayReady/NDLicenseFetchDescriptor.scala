@@ -18,22 +18,17 @@ trait NDLicenseFetchDescriptor extends StObject {
 }
 object NDLicenseFetchDescriptor {
   
-  @scala.inline
-  def apply(contentID: Double, contentIDType: NDContentIDType, licenseFetchChallengeCustomData: INDCustomData): NDLicenseFetchDescriptor = {
+  inline def apply(contentID: Double, contentIDType: NDContentIDType, licenseFetchChallengeCustomData: INDCustomData): NDLicenseFetchDescriptor = {
     val __obj = js.Dynamic.literal(contentID = contentID.asInstanceOf[js.Any], contentIDType = contentIDType.asInstanceOf[js.Any], licenseFetchChallengeCustomData = licenseFetchChallengeCustomData.asInstanceOf[js.Any])
     __obj.asInstanceOf[NDLicenseFetchDescriptor]
   }
   
-  @scala.inline
-  implicit class NDLicenseFetchDescriptorMutableBuilder[Self <: NDLicenseFetchDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: NDLicenseFetchDescriptor](x: Self) {
     
-    @scala.inline
-    def setContentID(value: Double): Self = StObject.set(x, "contentID", value.asInstanceOf[js.Any])
+    inline def setContentID(value: Double): Self = StObject.set(x, "contentID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentIDType(value: NDContentIDType): Self = StObject.set(x, "contentIDType", value.asInstanceOf[js.Any])
+    inline def setContentIDType(value: NDContentIDType): Self = StObject.set(x, "contentIDType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseFetchChallengeCustomData(value: INDCustomData): Self = StObject.set(x, "licenseFetchChallengeCustomData", value.asInstanceOf[js.Any])
+    inline def setLicenseFetchChallengeCustomData(value: INDCustomData): Self = StObject.set(x, "licenseFetchChallengeCustomData", value.asInstanceOf[js.Any])
   }
 }

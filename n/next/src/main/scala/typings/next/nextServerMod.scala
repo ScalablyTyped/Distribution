@@ -50,8 +50,7 @@ object nextServerMod {
   }
   object DynamicRouteItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `match`: ReturnType[
           js.Function1[
             /* routeRegex */ ReturnType[
@@ -70,11 +69,9 @@ object nextServerMod {
       __obj.asInstanceOf[DynamicRouteItem]
     }
     
-    @scala.inline
-    implicit class DynamicRouteItemMutableBuilder[Self <: DynamicRouteItem] (val x: Self) extends AnyVal {
+    extension [Self <: DynamicRouteItem](x: Self) {
       
-      @scala.inline
-      def setMatch(
+      inline def setMatch(
         value: ReturnType[
               js.Function1[
                 /* routeRegex */ ReturnType[
@@ -88,8 +85,7 @@ object nextServerMod {
             ]
       ): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,33 +96,33 @@ object nextServerMod {
     
     /* protected */ def _beforeCatchAllRender(_req: IncomingMessage, _res: ServerResponse, _params: Params, _parsedUrl: UrlWithParsedQuery): js.Promise[Boolean] = js.native
     
-    var _cachedPreviewManifest: js.Any = js.native
+    /* private */ var _cachedPreviewManifest: js.Any = js.native
     
     /* protected */ def _isLikeServerless: Boolean = js.native
     
-    var _validFilesystemPathSet: js.Any = js.native
+    /* private */ var _validFilesystemPathSet: js.Any = js.native
     
     var buildId: String = js.native
     
     /* protected */ def close(): js.Promise[Unit] = js.native
     
-    var compression: js.Any = js.native
+    /* private */ var compression: js.Any = js.native
     
     /* protected */ def currentPhase(): String = js.native
     
-    var customErrorNo404Warn: js.Any = js.native
+    /* private */ var customErrorNo404Warn: js.Any = js.native
     
-    var customRoutes: CustomRoutes = js.native
+    /* protected */ var customRoutes: CustomRoutes = js.native
     
     var dir: String = js.native
     
     var distDir: String = js.native
     
-    var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.native
+    /* protected */ var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.native
     
     /* protected */ def ensureApiPage(_pathname: String): js.Promise[Unit] = js.native
     
-    var findPageComponents: js.Any = js.native
+    /* private */ var findPageComponents: js.Any = js.native
     
     /* protected */ def generatePublicRoutes(): js.Array[Route_] = js.native
     
@@ -136,9 +132,9 @@ object nextServerMod {
     
     /* protected */ def getDynamicRoutes(): js.Array[DynamicRouteItem] = js.native
     
-    var getFilesystemPaths: js.Any = js.native
+    /* private */ var getFilesystemPaths: js.Any = js.native
     
-    var getPagePath: js.Any = js.native
+    /* private */ var getPagePath: js.Any = js.native
     
     /* protected */ def getPrerenderManifest(): PrerenderManifest = js.native
     
@@ -159,17 +155,17 @@ object nextServerMod {
       * @param res http response
       * @param pathname path of request
       */
-    var handleApiRequest: js.Any = js.native
+    /* private */ var handleApiRequest: js.Any = js.native
     
-    var handleCompression: js.Any = js.native
+    /* private */ var handleCompression: js.Any = js.native
     
-    var handleRequest: js.Any = js.native
+    /* private */ var handleRequest: js.Any = js.native
     
     /* protected */ def hasPage(pathname: String): js.Promise[Boolean] = js.native
     
     var hasStaticDir: Boolean = js.native
     
-    var incrementalCache: js.Any = js.native
+    /* private */ var incrementalCache: js.Any = js.native
     
     /* protected */ def isServeableUrl(untrustedFileUrl: String): Boolean = js.native
     
@@ -177,7 +173,7 @@ object nextServerMod {
     
     var nextConfig: NextConfig = js.native
     
-    var onErrorMiddleware: js.Any = js.native
+    /* private */ var onErrorMiddleware: js.Any = js.native
     
     var pagesDir: js.UndefOr[String] = js.native
     
@@ -260,7 +256,7 @@ object nextServerMod {
     def renderToHTML(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[String | Null] = js.native
     def renderToHTML(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[String | Null] = js.native
     
-    var renderToHTMLWithComponents: js.Any = js.native
+    /* private */ var renderToHTMLWithComponents: js.Any = js.native
     
     var router: typings.next.serverRouterMod.default = js.native
     
@@ -302,44 +298,32 @@ object nextServerMod {
   }
   object ServerConstructor {
     
-    @scala.inline
-    def apply(): ServerConstructor = {
+    inline def apply(): ServerConstructor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerConstructor]
     }
     
-    @scala.inline
-    implicit class ServerConstructorMutableBuilder[Self <: ServerConstructor] (val x: Self) extends AnyVal {
+    extension [Self <: ServerConstructor](x: Self) {
       
-      @scala.inline
-      def setConf(value: NextConfig): Self = StObject.set(x, "conf", value.asInstanceOf[js.Any])
+      inline def setConf(value: NextConfig): Self = StObject.set(x, "conf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfUndefined: Self = StObject.set(x, "conf", js.undefined)
+      inline def setConfUndefined: Self = StObject.set(x, "conf", js.undefined)
       
-      @scala.inline
-      def setCustomServer(value: Boolean): Self = StObject.set(x, "customServer", value.asInstanceOf[js.Any])
+      inline def setCustomServer(value: Boolean): Self = StObject.set(x, "customServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomServerUndefined: Self = StObject.set(x, "customServer", js.undefined)
+      inline def setCustomServerUndefined: Self = StObject.set(x, "customServer", js.undefined)
       
-      @scala.inline
-      def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
+      inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     }
   }
 }

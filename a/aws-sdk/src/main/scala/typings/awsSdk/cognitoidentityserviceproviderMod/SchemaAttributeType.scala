@@ -43,55 +43,39 @@ trait SchemaAttributeType extends StObject {
 }
 object SchemaAttributeType {
   
-  @scala.inline
-  def apply(): SchemaAttributeType = {
+  inline def apply(): SchemaAttributeType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAttributeType]
   }
   
-  @scala.inline
-  implicit class SchemaAttributeTypeMutableBuilder[Self <: SchemaAttributeType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAttributeType](x: Self) {
     
-    @scala.inline
-    def setAttributeDataType(value: AttributeDataType): Self = StObject.set(x, "AttributeDataType", value.asInstanceOf[js.Any])
+    inline def setAttributeDataType(value: AttributeDataType): Self = StObject.set(x, "AttributeDataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeDataTypeUndefined: Self = StObject.set(x, "AttributeDataType", js.undefined)
+    inline def setAttributeDataTypeUndefined: Self = StObject.set(x, "AttributeDataType", js.undefined)
     
-    @scala.inline
-    def setDeveloperOnlyAttribute(value: BooleanType): Self = StObject.set(x, "DeveloperOnlyAttribute", value.asInstanceOf[js.Any])
+    inline def setDeveloperOnlyAttribute(value: BooleanType): Self = StObject.set(x, "DeveloperOnlyAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperOnlyAttributeUndefined: Self = StObject.set(x, "DeveloperOnlyAttribute", js.undefined)
+    inline def setDeveloperOnlyAttributeUndefined: Self = StObject.set(x, "DeveloperOnlyAttribute", js.undefined)
     
-    @scala.inline
-    def setMutable(value: BooleanType): Self = StObject.set(x, "Mutable", value.asInstanceOf[js.Any])
+    inline def setMutable(value: BooleanType): Self = StObject.set(x, "Mutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutableUndefined: Self = StObject.set(x, "Mutable", js.undefined)
+    inline def setMutableUndefined: Self = StObject.set(x, "Mutable", js.undefined)
     
-    @scala.inline
-    def setName(value: CustomAttributeNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CustomAttributeNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNumberAttributeConstraints(value: NumberAttributeConstraintsType): Self = StObject.set(x, "NumberAttributeConstraints", value.asInstanceOf[js.Any])
+    inline def setNumberAttributeConstraints(value: NumberAttributeConstraintsType): Self = StObject.set(x, "NumberAttributeConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberAttributeConstraintsUndefined: Self = StObject.set(x, "NumberAttributeConstraints", js.undefined)
+    inline def setNumberAttributeConstraintsUndefined: Self = StObject.set(x, "NumberAttributeConstraints", js.undefined)
     
-    @scala.inline
-    def setRequired(value: BooleanType): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: BooleanType): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "Required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "Required", js.undefined)
     
-    @scala.inline
-    def setStringAttributeConstraints(value: StringAttributeConstraintsType): Self = StObject.set(x, "StringAttributeConstraints", value.asInstanceOf[js.Any])
+    inline def setStringAttributeConstraints(value: StringAttributeConstraintsType): Self = StObject.set(x, "StringAttributeConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringAttributeConstraintsUndefined: Self = StObject.set(x, "StringAttributeConstraints", js.undefined)
+    inline def setStringAttributeConstraintsUndefined: Self = StObject.set(x, "StringAttributeConstraints", js.undefined)
   }
 }

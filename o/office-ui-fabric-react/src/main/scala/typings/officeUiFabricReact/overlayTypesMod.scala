@@ -51,56 +51,40 @@ object overlayTypesMod {
   }
   object IOverlayProps {
     
-    @scala.inline
-    def apply(): IOverlayProps = {
+    inline def apply(): IOverlayProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverlayProps]
     }
     
-    @scala.inline
-    implicit class IOverlayPropsMutableBuilder[Self <: IOverlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayProps](x: Self) {
       
-      @scala.inline
-      def setAllowTouchBodyScroll(value: Boolean): Self = StObject.set(x, "allowTouchBodyScroll", value.asInstanceOf[js.Any])
+      inline def setAllowTouchBodyScroll(value: Boolean): Self = StObject.set(x, "allowTouchBodyScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTouchBodyScrollUndefined: Self = StObject.set(x, "allowTouchBodyScroll", js.undefined)
+      inline def setAllowTouchBodyScrollUndefined: Self = StObject.set(x, "allowTouchBodyScroll", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IOverlay]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IOverlay]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IOverlay | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IOverlay | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setIsDarkThemed(value: Boolean): Self = StObject.set(x, "isDarkThemed", value.asInstanceOf[js.Any])
+      inline def setIsDarkThemed(value: Boolean): Self = StObject.set(x, "isDarkThemed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDarkThemedUndefined: Self = StObject.set(x, "isDarkThemed", js.undefined)
+      inline def setIsDarkThemedUndefined: Self = StObject.set(x, "isDarkThemed", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IOverlayStyleProps, IOverlayStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IOverlayStyleProps, IOverlayStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IOverlayStyleProps => DeepPartial[IOverlayStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IOverlayStyleProps => DeepPartial[IOverlayStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -128,35 +112,26 @@ object overlayTypesMod {
   }
   object IOverlayStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IOverlayStyleProps = {
+    inline def apply(theme: ITheme): IOverlayStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOverlayStyleProps]
     }
     
-    @scala.inline
-    implicit class IOverlayStylePropsMutableBuilder[Self <: IOverlayStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsDark(value: Boolean): Self = StObject.set(x, "isDark", value.asInstanceOf[js.Any])
+      inline def setIsDark(value: Boolean): Self = StObject.set(x, "isDark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDarkUndefined: Self = StObject.set(x, "isDark", js.undefined)
+      inline def setIsDarkUndefined: Self = StObject.set(x, "isDark", js.undefined)
       
-      @scala.inline
-      def setIsNone(value: Boolean): Self = StObject.set(x, "isNone", value.asInstanceOf[js.Any])
+      inline def setIsNone(value: Boolean): Self = StObject.set(x, "isNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNoneUndefined: Self = StObject.set(x, "isNone", js.undefined)
+      inline def setIsNoneUndefined: Self = StObject.set(x, "isNone", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,23 +144,18 @@ object overlayTypesMod {
   }
   object IOverlayStyles {
     
-    @scala.inline
-    def apply(): IOverlayStyles = {
+    inline def apply(): IOverlayStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOverlayStyles]
     }
     
-    @scala.inline
-    implicit class IOverlayStylesMutableBuilder[Self <: IOverlayStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IOverlayStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

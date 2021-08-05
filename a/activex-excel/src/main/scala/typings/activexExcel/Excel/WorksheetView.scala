@@ -22,7 +22,7 @@ trait WorksheetView
   
   var DisplayZeros: Boolean
   
-  @JSName("Excel.WorksheetView_typekey")
+  /* private */ @JSName("Excel.WorksheetView_typekey")
   var ExcelDotWorksheetView_typekey: WorksheetView
   
   val Parent: js.Any
@@ -31,8 +31,7 @@ trait WorksheetView
 }
 object WorksheetView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     DisplayFormulas: Boolean,
@@ -49,37 +48,26 @@ object WorksheetView {
     __obj.asInstanceOf[WorksheetView]
   }
   
-  @scala.inline
-  implicit class WorksheetViewMutableBuilder[Self <: WorksheetView] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetView](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFormulas(value: Boolean): Self = StObject.set(x, "DisplayFormulas", value.asInstanceOf[js.Any])
+    inline def setDisplayFormulas(value: Boolean): Self = StObject.set(x, "DisplayFormulas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayGridlines(value: Boolean): Self = StObject.set(x, "DisplayGridlines", value.asInstanceOf[js.Any])
+    inline def setDisplayGridlines(value: Boolean): Self = StObject.set(x, "DisplayGridlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayHeadings(value: Boolean): Self = StObject.set(x, "DisplayHeadings", value.asInstanceOf[js.Any])
+    inline def setDisplayHeadings(value: Boolean): Self = StObject.set(x, "DisplayHeadings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOutline(value: Boolean): Self = StObject.set(x, "DisplayOutline", value.asInstanceOf[js.Any])
+    inline def setDisplayOutline(value: Boolean): Self = StObject.set(x, "DisplayOutline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayZeros(value: Boolean): Self = StObject.set(x, "DisplayZeros", value.asInstanceOf[js.Any])
+    inline def setDisplayZeros(value: Boolean): Self = StObject.set(x, "DisplayZeros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotWorksheetView_typekey(value: WorksheetView): Self = StObject.set(x, "Excel.WorksheetView_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotWorksheetView_typekey(value: WorksheetView): Self = StObject.set(x, "Excel.WorksheetView_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheet(value: Worksheet): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Worksheet): Self = StObject.set(x, "Sheet", value.asInstanceOf[js.Any])
   }
 }

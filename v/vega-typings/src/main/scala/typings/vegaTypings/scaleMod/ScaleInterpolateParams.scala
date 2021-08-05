@@ -18,23 +18,18 @@ trait ScaleInterpolateParams
 }
 object ScaleInterpolateParams {
   
-  @scala.inline
-  def apply(`type`: rgb | cubehelix | `cubehelix-long` | SignalRef): ScaleInterpolateParams = {
+  inline def apply(`type`: rgb | cubehelix | `cubehelix-long` | SignalRef): ScaleInterpolateParams = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleInterpolateParams]
   }
   
-  @scala.inline
-  implicit class ScaleInterpolateParamsMutableBuilder[Self <: ScaleInterpolateParams] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleInterpolateParams](x: Self) {
     
-    @scala.inline
-    def setGamma(value: Double | SignalRef): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double | SignalRef): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
+    inline def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
     
-    @scala.inline
-    def setType(value: rgb | cubehelix | `cubehelix-long` | SignalRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rgb | cubehelix | `cubehelix-long` | SignalRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

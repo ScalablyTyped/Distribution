@@ -44,14 +44,14 @@ object fabMod {
     
     var el: HTMLElement = js.native
     
-    var getFab: js.Any = js.native
+    /* private */ var getFab: js.Any = js.native
     
     /**
       * Where to align the fab horizontally in the viewport.
       */
     var horizontal: js.UndefOr[start | end | center] = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
     @JSName("render")
     def render_MFab(): js.Any = js.native

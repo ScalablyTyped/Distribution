@@ -78,7 +78,6 @@ object servicesS3Mod {
     @JSImport("aws-sdk/lib/services/s3", "S3Customizations.ManagedUpload")
     @js.native
     def ManagedUpload: TypeofManagedUpload = js.native
-    @scala.inline
-    def ManagedUpload_=(x: TypeofManagedUpload): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ManagedUpload")(x.asInstanceOf[js.Any])
+    inline def ManagedUpload_=(x: TypeofManagedUpload): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ManagedUpload")(x.asInstanceOf[js.Any])
   }
 }

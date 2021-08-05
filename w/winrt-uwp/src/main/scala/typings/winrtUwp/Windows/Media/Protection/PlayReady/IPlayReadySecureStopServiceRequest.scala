@@ -30,8 +30,7 @@ trait IPlayReadySecureStopServiceRequest
 }
 object IPlayReadySecureStopServiceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginServiceRequest: () => IAsyncAction,
     challengeCustomData: String,
     generateManualEnablingChallenge: () => PlayReadySoapMessage,
@@ -52,22 +51,16 @@ object IPlayReadySecureStopServiceRequest {
     __obj.asInstanceOf[IPlayReadySecureStopServiceRequest]
   }
   
-  @scala.inline
-  implicit class IPlayReadySecureStopServiceRequestMutableBuilder[Self <: IPlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayReadySecureStopServiceRequest](x: Self) {
     
-    @scala.inline
-    def setPublisherCertificate(value: Double): Self = StObject.set(x, "publisherCertificate", value.asInstanceOf[js.Any])
+    inline def setPublisherCertificate(value: Double): Self = StObject.set(x, "publisherCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionID(value: String): Self = StObject.set(x, "sessionID", value.asInstanceOf[js.Any])
+    inline def setSessionID(value: String): Self = StObject.set(x, "sessionID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTime(value: Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait PayRequest extends StObject {
 }
 object PayRequest {
   
-  @scala.inline
-  def apply(amount: Currency, date: String, method: String): PayRequest = {
+  inline def apply(amount: Currency, date: String, method: String): PayRequest = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayRequest]
   }
   
-  @scala.inline
-  implicit class PayRequestMutableBuilder[Self <: PayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PayRequest](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

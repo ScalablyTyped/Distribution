@@ -18,19 +18,15 @@ trait AssociateApprovedOriginRequest extends StObject {
 }
 object AssociateApprovedOriginRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, Origin: Origin): AssociateApprovedOriginRequest = {
+  inline def apply(InstanceId: InstanceId, Origin: Origin): AssociateApprovedOriginRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], Origin = Origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateApprovedOriginRequest]
   }
   
-  @scala.inline
-  implicit class AssociateApprovedOriginRequestMutableBuilder[Self <: AssociateApprovedOriginRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateApprovedOriginRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: Origin): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Origin): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
   }
 }

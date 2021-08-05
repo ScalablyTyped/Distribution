@@ -13,6 +13,5 @@ class ArchiveTimeStamp ()
   extends typings.xadesjs.xmlMod.ArchiveTimeStamp
 object ArchiveTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.ArchiveTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("ArchiveTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ArchiveTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.ArchiveTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("ArchiveTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ArchiveTimeStamp]]
 }

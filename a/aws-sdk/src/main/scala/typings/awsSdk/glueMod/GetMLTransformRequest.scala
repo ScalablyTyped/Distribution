@@ -13,16 +13,13 @@ trait GetMLTransformRequest extends StObject {
 }
 object GetMLTransformRequest {
   
-  @scala.inline
-  def apply(TransformId: HashString): GetMLTransformRequest = {
+  inline def apply(TransformId: HashString): GetMLTransformRequest = {
     val __obj = js.Dynamic.literal(TransformId = TransformId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMLTransformRequest]
   }
   
-  @scala.inline
-  implicit class GetMLTransformRequestMutableBuilder[Self <: GetMLTransformRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetMLTransformRequest](x: Self) {
     
-    @scala.inline
-    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
+    inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }
 }

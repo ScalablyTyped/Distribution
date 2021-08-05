@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DateAttributeFormat extends StObject
 object DateAttributeFormat {
   
-  @scala.inline
-  def Date: date = "date".asInstanceOf[date]
+  inline def Date: date = "date".asInstanceOf[date]
   
-  @scala.inline
-  def DateTime: datetime = "datetime".asInstanceOf[datetime]
+  inline def DateTime: datetime = "datetime".asInstanceOf[datetime]
 }

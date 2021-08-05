@@ -14,7 +14,7 @@ trait ColorFormat extends StObject {
   
   var ObjectThemeColor: MsoThemeColorIndex
   
-  @JSName("Office.ColorFormat_typekey")
+  /* private */ @JSName("Office.ColorFormat_typekey")
   var OfficeDotColorFormat_typekey: ColorFormat
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait ColorFormat extends StObject {
 }
 object ColorFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Brightness: Double,
     Creator: Double,
@@ -47,37 +46,26 @@ object ColorFormat {
     __obj.asInstanceOf[ColorFormat]
   }
   
-  @scala.inline
-  implicit class ColorFormatMutableBuilder[Self <: ColorFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ColorFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrightness(value: Double): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Double): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectThemeColor(value: MsoThemeColorIndex): Self = StObject.set(x, "ObjectThemeColor", value.asInstanceOf[js.Any])
+    inline def setObjectThemeColor(value: MsoThemeColorIndex): Self = StObject.set(x, "ObjectThemeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotColorFormat_typekey(value: ColorFormat): Self = StObject.set(x, "Office.ColorFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotColorFormat_typekey(value: ColorFormat): Self = StObject.set(x, "Office.ColorFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
+    inline def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeColor(value: Double): Self = StObject.set(x, "SchemeColor", value.asInstanceOf[js.Any])
+    inline def setSchemeColor(value: Double): Self = StObject.set(x, "SchemeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoColorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoColorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -21,8 +21,7 @@ trait BucketEvent[T]
 }
 object BucketEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     error: (Error, Change[T]) => Unit,
     index: ChangeVersion => Unit,
     indexing: () => Unit,
@@ -33,22 +32,16 @@ object BucketEvent {
     __obj.asInstanceOf[BucketEvent[T]]
   }
   
-  @scala.inline
-  implicit class BucketEventMutableBuilder[Self <: BucketEvent[?], T] (val x: Self & BucketEvent[T]) extends AnyVal {
+  extension [Self <: BucketEvent[?], T](x: Self & BucketEvent[T]) {
     
-    @scala.inline
-    def setError(value: (Error, Change[T]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (Error, Change[T]) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIndex(value: ChangeVersion => Unit): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
+    inline def setIndex(value: ChangeVersion => Unit): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexing(value: () => Unit): Self = StObject.set(x, "indexing", js.Any.fromFunction0(value))
+    inline def setIndexing(value: () => Unit): Self = StObject.set(x, "indexing", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: EntityId => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: EntityId => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: (EntityId, T, RemoteInfo[T]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (EntityId, T, RemoteInfo[T]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

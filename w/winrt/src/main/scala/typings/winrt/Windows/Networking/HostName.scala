@@ -10,8 +10,7 @@ trait HostName
      with IHostName
 object HostName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canonicalName: String,
     displayName: String,
     iPInformation: IPInformation,

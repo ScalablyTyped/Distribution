@@ -35,42 +35,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPictureConvertorType extends StObject
 object XlPictureConvertorType {
   
-  @scala.inline
-  def xlBMP: `1` = 1.asInstanceOf[`1`]
+  inline def xlBMP: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlCGM: `7` = 7.asInstanceOf[`7`]
+  inline def xlCGM: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlDRW: `4` = 4.asInstanceOf[`4`]
+  inline def xlDRW: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlDXF: `5` = 5.asInstanceOf[`5`]
+  inline def xlDXF: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlEPS: `8` = 8.asInstanceOf[`8`]
+  inline def xlEPS: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlHGL: `6` = 6.asInstanceOf[`6`]
+  inline def xlHGL: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlPCT: `13` = 13.asInstanceOf[`13`]
+  inline def xlPCT: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def xlPCX: `10` = 10.asInstanceOf[`10`]
+  inline def xlPCX: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def xlPIC: `11` = 11.asInstanceOf[`11`]
+  inline def xlPIC: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def xlPLT: `12` = 12.asInstanceOf[`12`]
+  inline def xlPLT: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def xlTIF: `9` = 9.asInstanceOf[`9`]
+  inline def xlTIF: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def xlWMF: `2` = 2.asInstanceOf[`2`]
+  inline def xlWMF: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlWPG: `3` = 3.asInstanceOf[`3`]
+  inline def xlWPG: `3` = 3.asInstanceOf[`3`]
 }

@@ -16,8 +16,7 @@ object mod {
     * @param id Identifier to resolve
     * @param callback
     */
-  @scala.inline
-  def apply(id: String, cb: resolveCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(id: String, cb: resolveCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
     *
@@ -25,8 +24,7 @@ object mod {
     * @param options Options to use for resolving, optional.
     * @param callback
     */
-  @scala.inline
-  def apply(id: String, opts: AsyncOpts, cb: resolveCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(id: String, opts: AsyncOpts, cb: resolveCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("resolve", JSImport.Namespace)
   @js.native
@@ -35,14 +33,12 @@ object mod {
   @JSImport("resolve", "isCore")
   @js.native
   def isCore: js.Function1[/* id */ String, js.UndefOr[Boolean]] = js.native
-  @scala.inline
-  def isCore_=(x: js.Function1[/* id */ String, js.UndefOr[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isCore")(x.asInstanceOf[js.Any])
+  inline def isCore_=(x: js.Function1[/* id */ String, js.UndefOr[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isCore")(x.asInstanceOf[js.Any])
   
   @JSImport("resolve", "sync")
   @js.native
   def sync: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String] = js.native
-  @scala.inline
-  def sync_=(x: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
+  inline def sync_=(x: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   
   trait AsyncOpts
     extends StObject
@@ -62,38 +58,28 @@ object mod {
   }
   object AsyncOpts {
     
-    @scala.inline
-    def apply(): AsyncOpts = {
+    inline def apply(): AsyncOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsyncOpts]
     }
     
-    @scala.inline
-    implicit class AsyncOptsMutableBuilder[Self <: AsyncOpts] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncOpts](x: Self) {
       
-      @scala.inline
-      def setIsDirectory(value: (/* directory */ String, /* cb */ existsCallback) => Unit): Self = StObject.set(x, "isDirectory", js.Any.fromFunction2(value))
+      inline def setIsDirectory(value: (/* directory */ String, /* cb */ existsCallback) => Unit): Self = StObject.set(x, "isDirectory", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+      inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
       
-      @scala.inline
-      def setIsFile(value: (/* file */ String, /* cb */ existsCallback) => Unit): Self = StObject.set(x, "isFile", js.Any.fromFunction2(value))
+      inline def setIsFile(value: (/* file */ String, /* cb */ existsCallback) => Unit): Self = StObject.set(x, "isFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
+      inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
       
-      @scala.inline
-      def setReadFile(value: (/* file */ String, /* cb */ readFileCallback) => Unit): Self = StObject.set(x, "readFile", js.Any.fromFunction2(value))
+      inline def setReadFile(value: (/* file */ String, /* cb */ readFileCallback) => Unit): Self = StObject.set(x, "readFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
+      inline def setReadFileUndefined: Self = StObject.set(x, "readFile", js.undefined)
       
-      @scala.inline
-      def setRealpath(value: (/* file */ String, /* cb */ realpathCallback) => Unit): Self = StObject.set(x, "realpath", js.Any.fromFunction2(value))
+      inline def setRealpath(value: (/* file */ String, /* cb */ realpathCallback) => Unit): Self = StObject.set(x, "realpath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
+      inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
     }
   }
   
@@ -145,79 +131,56 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(): Opts = {
+    inline def apply(): Opts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
+      inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setModuleDirectory(value: String | js.Array[String]): Self = StObject.set(x, "moduleDirectory", value.asInstanceOf[js.Any])
+      inline def setModuleDirectory(value: String | js.Array[String]): Self = StObject.set(x, "moduleDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleDirectoryUndefined: Self = StObject.set(x, "moduleDirectory", js.undefined)
+      inline def setModuleDirectoryUndefined: Self = StObject.set(x, "moduleDirectory", js.undefined)
       
-      @scala.inline
-      def setModuleDirectoryVarargs(value: String*): Self = StObject.set(x, "moduleDirectory", js.Array(value :_*))
+      inline def setModuleDirectoryVarargs(value: String*): Self = StObject.set(x, "moduleDirectory", js.Array(value :_*))
       
-      @scala.inline
-      def setPackageFilter(value: (/* pkg */ js.Any, /* pkgfile */ String) => js.Any): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
+      inline def setPackageFilter(value: (/* pkg */ js.Any, /* pkgfile */ String) => js.Any): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
+      inline def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
       
-      @scala.inline
-      def setPackageIterator(
+      inline def setPackageIterator(
         value: (/* request */ String, /* start */ String, /* getPackageCandidates */ js.Function0[js.Array[String]], Opts) => js.Array[String]
       ): Self = StObject.set(x, "packageIterator", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setPackageIteratorUndefined: Self = StObject.set(x, "packageIterator", js.undefined)
+      inline def setPackageIteratorUndefined: Self = StObject.set(x, "packageIterator", js.undefined)
       
-      @scala.inline
-      def setPathFilter(value: (/* pkg */ js.Any, /* path */ String, /* relativePath */ String) => String): Self = StObject.set(x, "pathFilter", js.Any.fromFunction3(value))
+      inline def setPathFilter(value: (/* pkg */ js.Any, /* path */ String, /* relativePath */ String) => String): Self = StObject.set(x, "pathFilter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPathFilterUndefined: Self = StObject.set(x, "pathFilter", js.undefined)
+      inline def setPathFilterUndefined: Self = StObject.set(x, "pathFilter", js.undefined)
       
-      @scala.inline
-      def setPaths(value: String | js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: String | js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
+      inline def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
+      inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
       
-      @scala.inline
-      def set_package(value: js.Any): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: js.Any): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     }
   }
   
@@ -231,20 +194,16 @@ object mod {
   }
   object PackageMeta {
     
-    @scala.inline
-    def apply(name: String, version: String): PackageMeta = {
+    inline def apply(name: String, version: String): PackageMeta = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PackageMeta]
     }
     
-    @scala.inline
-    implicit class PackageMetaMutableBuilder[Self <: PackageMeta] (val x: Self) extends AnyVal {
+    extension [Self <: PackageMeta](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,38 +225,28 @@ object mod {
   }
   object SyncOpts {
     
-    @scala.inline
-    def apply(): SyncOpts = {
+    inline def apply(): SyncOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyncOpts]
     }
     
-    @scala.inline
-    implicit class SyncOptsMutableBuilder[Self <: SyncOpts] (val x: Self) extends AnyVal {
+    extension [Self <: SyncOpts](x: Self) {
       
-      @scala.inline
-      def setIsDirectory(value: /* directory */ String => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction1(value))
+      inline def setIsDirectory(value: /* directory */ String => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+      inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
       
-      @scala.inline
-      def setIsFile(value: /* file */ String => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction1(value))
+      inline def setIsFile(value: /* file */ String => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
+      inline def setIsFileUndefined: Self = StObject.set(x, "isFile", js.undefined)
       
-      @scala.inline
-      def setReadFileSync(value: (/* file */ String, /* encoding */ BufferEncoding) => String | Buffer): Self = StObject.set(x, "readFileSync", js.Any.fromFunction2(value))
+      inline def setReadFileSync(value: (/* file */ String, /* encoding */ BufferEncoding) => String | Buffer): Self = StObject.set(x, "readFileSync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
+      inline def setReadFileSyncUndefined: Self = StObject.set(x, "readFileSync", js.undefined)
       
-      @scala.inline
-      def setRealpathSync(value: /* file */ String => String): Self = StObject.set(x, "realpathSync", js.Any.fromFunction1(value))
+      inline def setRealpathSync(value: /* file */ String => String): Self = StObject.set(x, "realpathSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRealpathSyncUndefined: Self = StObject.set(x, "realpathSync", js.undefined)
+      inline def setRealpathSyncUndefined: Self = StObject.set(x, "realpathSync", js.undefined)
     }
   }
   

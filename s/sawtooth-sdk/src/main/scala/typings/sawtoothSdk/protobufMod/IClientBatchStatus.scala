@@ -19,43 +19,31 @@ trait IClientBatchStatus extends StObject {
 }
 object IClientBatchStatus {
   
-  @scala.inline
-  def apply(): IClientBatchStatus = {
+  inline def apply(): IClientBatchStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientBatchStatus]
   }
   
-  @scala.inline
-  implicit class IClientBatchStatusMutableBuilder[Self <: IClientBatchStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IClientBatchStatus](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdNull: Self = StObject.set(x, "batchId", null)
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setInvalidTransactions(value: js.Array[IInvalidTransaction]): Self = StObject.set(x, "invalidTransactions", value.asInstanceOf[js.Any])
+    inline def setInvalidTransactions(value: js.Array[IInvalidTransaction]): Self = StObject.set(x, "invalidTransactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidTransactionsNull: Self = StObject.set(x, "invalidTransactions", null)
+    inline def setInvalidTransactionsNull: Self = StObject.set(x, "invalidTransactions", null)
     
-    @scala.inline
-    def setInvalidTransactionsUndefined: Self = StObject.set(x, "invalidTransactions", js.undefined)
+    inline def setInvalidTransactionsUndefined: Self = StObject.set(x, "invalidTransactions", js.undefined)
     
-    @scala.inline
-    def setInvalidTransactionsVarargs(value: IInvalidTransaction*): Self = StObject.set(x, "invalidTransactions", js.Array(value :_*))
+    inline def setInvalidTransactionsVarargs(value: IInvalidTransaction*): Self = StObject.set(x, "invalidTransactions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

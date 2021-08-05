@@ -14,19 +14,15 @@ trait WorkDoneProgressParams extends StObject {
 }
 object WorkDoneProgressParams {
   
-  @scala.inline
-  def apply(): WorkDoneProgressParams = {
+  inline def apply(): WorkDoneProgressParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkDoneProgressParams]
   }
   
-  @scala.inline
-  implicit class WorkDoneProgressParamsMutableBuilder[Self <: WorkDoneProgressParams] (val x: Self) extends AnyVal {
+  extension [Self <: WorkDoneProgressParams](x: Self) {
     
-    @scala.inline
-    def setWorkDoneToken(value: ProgressToken): Self = StObject.set(x, "workDoneToken", value.asInstanceOf[js.Any])
+    inline def setWorkDoneToken(value: ProgressToken): Self = StObject.set(x, "workDoneToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkDoneTokenUndefined: Self = StObject.set(x, "workDoneToken", js.undefined)
+    inline def setWorkDoneTokenUndefined: Self = StObject.set(x, "workDoneToken", js.undefined)
   }
 }

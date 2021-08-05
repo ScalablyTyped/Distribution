@@ -22,9 +22,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createPath[T /* <: Record[String, js.Any] */](path: String): typings.pathParser.pathMod.Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.pathParser.pathMod.Path[T]]
-    @scala.inline
-    def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): typings.pathParser.pathMod.Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pathParser.pathMod.Path[T]]
+    inline def createPath[T /* <: Record[String, js.Any] */](path: String): typings.pathParser.pathMod.Path[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.pathParser.pathMod.Path[T]]
+    inline def createPath[T /* <: Record[String, js.Any] */](path: String, options: PathOptions): typings.pathParser.pathMod.Path[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.pathParser.pathMod.Path[T]]
   }
 }

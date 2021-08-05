@@ -20,25 +20,19 @@ trait TypeofPathConstraintPosit extends StObject {
 }
 object TypeofPathConstraintPosit {
   
-  @scala.inline
-  def apply(ENTRIES: Double, PREV_TIME: Double, PREV_VALUE: Double, VALUE: Double): TypeofPathConstraintPosit = {
+  inline def apply(ENTRIES: Double, PREV_TIME: Double, PREV_VALUE: Double, VALUE: Double): TypeofPathConstraintPosit = {
     val __obj = js.Dynamic.literal(ENTRIES = ENTRIES.asInstanceOf[js.Any], PREV_TIME = PREV_TIME.asInstanceOf[js.Any], PREV_VALUE = PREV_VALUE.asInstanceOf[js.Any], VALUE = VALUE.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPathConstraintPosit]
   }
   
-  @scala.inline
-  implicit class TypeofPathConstraintPositMutableBuilder[Self <: TypeofPathConstraintPosit] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPathConstraintPosit](x: Self) {
     
-    @scala.inline
-    def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
+    inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
+    inline def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_VALUE(value: Double): Self = StObject.set(x, "PREV_VALUE", value.asInstanceOf[js.Any])
+    inline def setPREV_VALUE(value: Double): Self = StObject.set(x, "PREV_VALUE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVALUE(value: Double): Self = StObject.set(x, "VALUE", value.asInstanceOf[js.Any])
+    inline def setVALUE(value: Double): Self = StObject.set(x, "VALUE", value.asInstanceOf[js.Any])
   }
 }

@@ -16,16 +16,11 @@ object CorridorGeometry {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createGeometry(corridorGeometry: CorridorGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(corridorGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def createGeometry(corridorGeometry: CorridorGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(corridorGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
   /* static member */
-  @scala.inline
-  def unpack(array: js.Array[Double]): CorridorGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CorridorGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorGeometry): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Unit, result: CorridorGeometry): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
+  inline def unpack(array: js.Array[Double]): CorridorGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CorridorGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorGeometry): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: CorridorGeometry): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
 }

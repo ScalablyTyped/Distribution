@@ -37,8 +37,7 @@ trait XPrimitive3D
 }
 object XPrimitive3D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDecomposition: SeqEquiv[PropertyValue] => SafeArray[XPrimitive3D],
     getRange: SeqEquiv[PropertyValue] => RealRectangle3D,
@@ -49,13 +48,10 @@ object XPrimitive3D {
     __obj.asInstanceOf[XPrimitive3D]
   }
   
-  @scala.inline
-  implicit class XPrimitive3DMutableBuilder[Self <: XPrimitive3D] (val x: Self) extends AnyVal {
+  extension [Self <: XPrimitive3D](x: Self) {
     
-    @scala.inline
-    def setGetDecomposition(value: SeqEquiv[PropertyValue] => SafeArray[XPrimitive3D]): Self = StObject.set(x, "getDecomposition", js.Any.fromFunction1(value))
+    inline def setGetDecomposition(value: SeqEquiv[PropertyValue] => SafeArray[XPrimitive3D]): Self = StObject.set(x, "getDecomposition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRange(value: SeqEquiv[PropertyValue] => RealRectangle3D): Self = StObject.set(x, "getRange", js.Any.fromFunction1(value))
+    inline def setGetRange(value: SeqEquiv[PropertyValue] => RealRectangle3D): Self = StObject.set(x, "getRange", js.Any.fromFunction1(value))
   }
 }

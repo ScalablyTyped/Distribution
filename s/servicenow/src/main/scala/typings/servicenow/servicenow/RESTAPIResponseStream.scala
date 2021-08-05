@@ -12,19 +12,15 @@ trait RESTAPIResponseStream extends StObject {
 }
 object RESTAPIResponseStream {
   
-  @scala.inline
-  def apply(writeStream: js.Object => Unit, writeString: String => Unit): RESTAPIResponseStream = {
+  inline def apply(writeStream: js.Object => Unit, writeString: String => Unit): RESTAPIResponseStream = {
     val __obj = js.Dynamic.literal(writeStream = js.Any.fromFunction1(writeStream), writeString = js.Any.fromFunction1(writeString))
     __obj.asInstanceOf[RESTAPIResponseStream]
   }
   
-  @scala.inline
-  implicit class RESTAPIResponseStreamMutableBuilder[Self <: RESTAPIResponseStream] (val x: Self) extends AnyVal {
+  extension [Self <: RESTAPIResponseStream](x: Self) {
     
-    @scala.inline
-    def setWriteStream(value: js.Object => Unit): Self = StObject.set(x, "writeStream", js.Any.fromFunction1(value))
+    inline def setWriteStream(value: js.Object => Unit): Self = StObject.set(x, "writeStream", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
+    inline def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
   }
 }

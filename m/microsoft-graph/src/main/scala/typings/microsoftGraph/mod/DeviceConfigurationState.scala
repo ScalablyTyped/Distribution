@@ -27,58 +27,41 @@ trait DeviceConfigurationState
 }
 object DeviceConfigurationState {
   
-  @scala.inline
-  def apply(): DeviceConfigurationState = {
+  inline def apply(): DeviceConfigurationState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceConfigurationState]
   }
   
-  @scala.inline
-  implicit class DeviceConfigurationStateMutableBuilder[Self <: DeviceConfigurationState] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConfigurationState](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setPlatformType(value: PolicyPlatformType): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
+    inline def setPlatformType(value: PolicyPlatformType): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
+    inline def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
-    @scala.inline
-    def setSettingCount(value: Double): Self = StObject.set(x, "settingCount", value.asInstanceOf[js.Any])
+    inline def setSettingCount(value: Double): Self = StObject.set(x, "settingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingCountUndefined: Self = StObject.set(x, "settingCount", js.undefined)
+    inline def setSettingCountUndefined: Self = StObject.set(x, "settingCount", js.undefined)
     
-    @scala.inline
-    def setSettingStates(value: NullableOption[js.Array[DeviceConfigurationSettingState]]): Self = StObject.set(x, "settingStates", value.asInstanceOf[js.Any])
+    inline def setSettingStates(value: NullableOption[js.Array[DeviceConfigurationSettingState]]): Self = StObject.set(x, "settingStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingStatesNull: Self = StObject.set(x, "settingStates", null)
+    inline def setSettingStatesNull: Self = StObject.set(x, "settingStates", null)
     
-    @scala.inline
-    def setSettingStatesUndefined: Self = StObject.set(x, "settingStates", js.undefined)
+    inline def setSettingStatesUndefined: Self = StObject.set(x, "settingStates", js.undefined)
     
-    @scala.inline
-    def setSettingStatesVarargs(value: DeviceConfigurationSettingState*): Self = StObject.set(x, "settingStates", js.Array(value :_*))
+    inline def setSettingStatesVarargs(value: DeviceConfigurationSettingState*): Self = StObject.set(x, "settingStates", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: ComplianceStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ComplianceStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

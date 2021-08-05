@@ -22,16 +22,13 @@ trait XSAXSerializable extends StObject {
 }
 object XSAXSerializable {
   
-  @scala.inline
-  def apply(serialize: (XDocumentHandler, SeqEquiv[StringPair]) => Unit): XSAXSerializable = {
+  inline def apply(serialize: (XDocumentHandler, SeqEquiv[StringPair]) => Unit): XSAXSerializable = {
     val __obj = js.Dynamic.literal(serialize = js.Any.fromFunction2(serialize))
     __obj.asInstanceOf[XSAXSerializable]
   }
   
-  @scala.inline
-  implicit class XSAXSerializableMutableBuilder[Self <: XSAXSerializable] (val x: Self) extends AnyVal {
+  extension [Self <: XSAXSerializable](x: Self) {
     
-    @scala.inline
-    def setSerialize(value: (XDocumentHandler, SeqEquiv[StringPair]) => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
+    inline def setSerialize(value: (XDocumentHandler, SeqEquiv[StringPair]) => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
   }
 }

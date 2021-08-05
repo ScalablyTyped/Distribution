@@ -10,12 +10,9 @@ object constantMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatArgs(scope: js.Any, actions: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatArgs")(scope.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def formatArgs(scope: js.Any, actions: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatArgs")(scope.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def touchAction(actions: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("touchAction")(actions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def touchAction(actions: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("touchAction")(actions.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def validateParameters(params: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateParameters")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateParameters(params: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateParameters")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

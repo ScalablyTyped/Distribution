@@ -16,25 +16,19 @@ trait VideoNote
 }
 object VideoNote {
   
-  @scala.inline
-  def apply(duration: Double, file_id: String, length: Double): VideoNote = {
+  inline def apply(duration: Double, file_id: String, length: Double): VideoNote = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], file_id = file_id.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoNote]
   }
   
-  @scala.inline
-  implicit class VideoNoteMutableBuilder[Self <: VideoNote] (val x: Self) extends AnyVal {
+  extension [Self <: VideoNote](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumb(value: PhotoSize): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: PhotoSize): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+    inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
   }
 }

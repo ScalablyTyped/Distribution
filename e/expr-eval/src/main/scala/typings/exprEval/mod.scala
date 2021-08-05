@@ -32,13 +32,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def evaluate(expression: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def evaluate(expression: String, values: Value): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def evaluate(expression: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def evaluate(expression: String, values: Value): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def parse(expression: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(expression.asInstanceOf[js.Any]).asInstanceOf[Expression]
+    inline def parse(expression: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(expression.asInstanceOf[js.Any]).asInstanceOf[Expression]
   }
   
   @js.native
@@ -72,26 +69,20 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setAllowMemberAccess(value: Boolean): Self = StObject.set(x, "allowMemberAccess", value.asInstanceOf[js.Any])
+      inline def setAllowMemberAccess(value: Boolean): Self = StObject.set(x, "allowMemberAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMemberAccessUndefined: Self = StObject.set(x, "allowMemberAccess", js.undefined)
+      inline def setAllowMemberAccessUndefined: Self = StObject.set(x, "allowMemberAccess", js.undefined)
       
-      @scala.inline
-      def setOperators(value: Abs): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+      inline def setOperators(value: Abs): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
+      inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
     }
   }
   

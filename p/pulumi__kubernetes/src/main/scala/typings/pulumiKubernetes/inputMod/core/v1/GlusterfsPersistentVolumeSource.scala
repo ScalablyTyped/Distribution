@@ -32,31 +32,23 @@ trait GlusterfsPersistentVolumeSource extends StObject {
 }
 object GlusterfsPersistentVolumeSource {
   
-  @scala.inline
-  def apply(endpoints: Input[String], path: Input[String]): GlusterfsPersistentVolumeSource = {
+  inline def apply(endpoints: Input[String], path: Input[String]): GlusterfsPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlusterfsPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class GlusterfsPersistentVolumeSourceMutableBuilder[Self <: GlusterfsPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: GlusterfsPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setEndpoints(value: Input[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: Input[String]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsNamespace(value: Input[String]): Self = StObject.set(x, "endpointsNamespace", value.asInstanceOf[js.Any])
+    inline def setEndpointsNamespace(value: Input[String]): Self = StObject.set(x, "endpointsNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsNamespaceUndefined: Self = StObject.set(x, "endpointsNamespace", js.undefined)
+    inline def setEndpointsNamespaceUndefined: Self = StObject.set(x, "endpointsNamespace", js.undefined)
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

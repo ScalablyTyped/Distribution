@@ -28,37 +28,27 @@ trait ContinueUpdateRollbackInput extends StObject {
 }
 object ContinueUpdateRollbackInput {
   
-  @scala.inline
-  def apply(StackName: StackNameOrId): ContinueUpdateRollbackInput = {
+  inline def apply(StackName: StackNameOrId): ContinueUpdateRollbackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinueUpdateRollbackInput]
   }
   
-  @scala.inline
-  implicit class ContinueUpdateRollbackInputMutableBuilder[Self <: ContinueUpdateRollbackInput] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueUpdateRollbackInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setResourcesToSkip(value: ResourcesToSkip): Self = StObject.set(x, "ResourcesToSkip", value.asInstanceOf[js.Any])
+    inline def setResourcesToSkip(value: ResourcesToSkip): Self = StObject.set(x, "ResourcesToSkip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesToSkipUndefined: Self = StObject.set(x, "ResourcesToSkip", js.undefined)
+    inline def setResourcesToSkipUndefined: Self = StObject.set(x, "ResourcesToSkip", js.undefined)
     
-    @scala.inline
-    def setResourcesToSkipVarargs(value: ResourceToSkip*): Self = StObject.set(x, "ResourcesToSkip", js.Array(value :_*))
+    inline def setResourcesToSkipVarargs(value: ResourceToSkip*): Self = StObject.set(x, "ResourcesToSkip", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleARN(value: RoleARN_): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN_): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetContactRequest extends StObject {
 }
 object GetContactRequest {
   
-  @scala.inline
-  def apply(ContactArn: Arn): GetContactRequest = {
+  inline def apply(ContactArn: Arn): GetContactRequest = {
     val __obj = js.Dynamic.literal(ContactArn = ContactArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContactRequest]
   }
   
-  @scala.inline
-  implicit class GetContactRequestMutableBuilder[Self <: GetContactRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetContactRequest](x: Self) {
     
-    @scala.inline
-    def setContactArn(value: Arn): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
+    inline def setContactArn(value: Arn): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
   }
 }

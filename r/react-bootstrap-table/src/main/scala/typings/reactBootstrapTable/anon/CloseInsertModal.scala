@@ -38,8 +38,7 @@ trait CloseInsertModal extends StObject {
 }
 object CloseInsertModal {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeInsertModal: () => Unit,
     dropRow: () => Unit,
     exportCSV: () => Unit,
@@ -51,25 +50,18 @@ object CloseInsertModal {
     __obj.asInstanceOf[CloseInsertModal]
   }
   
-  @scala.inline
-  implicit class CloseInsertModalMutableBuilder[Self <: CloseInsertModal] (val x: Self) extends AnyVal {
+  extension [Self <: CloseInsertModal](x: Self) {
     
-    @scala.inline
-    def setCloseInsertModal(value: () => Unit): Self = StObject.set(x, "closeInsertModal", js.Any.fromFunction0(value))
+    inline def setCloseInsertModal(value: () => Unit): Self = StObject.set(x, "closeInsertModal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDropRow(value: () => Unit): Self = StObject.set(x, "dropRow", js.Any.fromFunction0(value))
+    inline def setDropRow(value: () => Unit): Self = StObject.set(x, "dropRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportCSV(value: () => Unit): Self = StObject.set(x, "exportCSV", js.Any.fromFunction0(value))
+    inline def setExportCSV(value: () => Unit): Self = StObject.set(x, "exportCSV", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenInsertModal(value: () => Unit): Self = StObject.set(x, "openInsertModal", js.Any.fromFunction0(value))
+    inline def setOpenInsertModal(value: () => Unit): Self = StObject.set(x, "openInsertModal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSearch(value: () => Unit): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
+    inline def setSearch(value: () => Unit): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowOnlyToogle(value: () => Unit): Self = StObject.set(x, "showOnlyToogle", js.Any.fromFunction0(value))
+    inline def setShowOnlyToogle(value: () => Unit): Self = StObject.set(x, "showOnlyToogle", js.Any.fromFunction0(value))
   }
 }

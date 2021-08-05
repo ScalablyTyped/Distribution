@@ -18,43 +18,31 @@ trait FreeSocketKeepAliveTimeout extends StObject {
 }
 object FreeSocketKeepAliveTimeout {
   
-  @scala.inline
-  def apply(): FreeSocketKeepAliveTimeout = {
+  inline def apply(): FreeSocketKeepAliveTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FreeSocketKeepAliveTimeout]
   }
   
-  @scala.inline
-  implicit class FreeSocketKeepAliveTimeoutMutableBuilder[Self <: FreeSocketKeepAliveTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: FreeSocketKeepAliveTimeout](x: Self) {
     
-    @scala.inline
-    def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
+    inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
+    inline def setFreeSocketKeepAliveTimeoutUndefined: Self = StObject.set(x, "freeSocketKeepAliveTimeout", js.undefined)
     
-    @scala.inline
-    def setKeepAliveMsecs(value: Double): Self = StObject.set(x, "keepAliveMsecs", value.asInstanceOf[js.Any])
+    inline def setKeepAliveMsecs(value: Double): Self = StObject.set(x, "keepAliveMsecs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepAliveMsecsUndefined: Self = StObject.set(x, "keepAliveMsecs", js.undefined)
+    inline def setKeepAliveMsecsUndefined: Self = StObject.set(x, "keepAliveMsecs", js.undefined)
     
-    @scala.inline
-    def setMaxFreeSockets(value: Double): Self = StObject.set(x, "maxFreeSockets", value.asInstanceOf[js.Any])
+    inline def setMaxFreeSockets(value: Double): Self = StObject.set(x, "maxFreeSockets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFreeSocketsUndefined: Self = StObject.set(x, "maxFreeSockets", js.undefined)
+    inline def setMaxFreeSocketsUndefined: Self = StObject.set(x, "maxFreeSockets", js.undefined)
     
-    @scala.inline
-    def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
+    inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
+    inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

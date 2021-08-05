@@ -19,16 +19,12 @@ object libUtilitiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */](Structs: js.Tuple2[InferObjectStruct[A], InferObjectStruct[B]]): InferObjectStruct[Assign[A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[A, B]]]
-  @scala.inline
-  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */](Structs: js.Tuple3[InferObjectStruct[A], InferObjectStruct[B], InferObjectStruct[C]]): InferObjectStruct[Assign[Assign[A, B], C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[Assign[A, B], C]]]
-  @scala.inline
-  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */](
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */](Structs: js.Tuple2[InferObjectStruct[A], InferObjectStruct[B]]): InferObjectStruct[Assign[A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[A, B]]]
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */](Structs: js.Tuple3[InferObjectStruct[A], InferObjectStruct[B], InferObjectStruct[C]]): InferObjectStruct[Assign[Assign[A, B], C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[Assign[A, B], C]]]
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */](
     Structs: js.Tuple4[InferObjectStruct[A], InferObjectStruct[B], InferObjectStruct[C], InferObjectStruct[D]]
   ): InferObjectStruct[Assign[Assign[Assign[A, B], C], D]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[Assign[Assign[A, B], C], D]]]
-  @scala.inline
-  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */, E /* <: ObjectSchema */](
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */, E /* <: ObjectSchema */](
     Structs: js.Tuple5[
       InferObjectStruct[A], 
       InferObjectStruct[B], 
@@ -38,17 +34,13 @@ object libUtilitiesMod {
     ]
   ): InferObjectStruct[Assign[Assign[Assign[Assign[A, B], C], D], E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[Assign[Assign[Assign[A, B], C], D], E]]]
   
-  @scala.inline
-  def dynamic[T](fn: js.Function2[/* value */ js.Any, /* ctx */ StructContext, Struct[T, js.Any]]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
+  inline def dynamic[T](fn: js.Function2[/* value */ js.Any, /* ctx */ StructContext, Struct[T, js.Any]]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def `lazy`[T](fn: js.Function0[Struct[T, js.Any]]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
+  inline def `lazy`[T](fn: js.Function0[Struct[T, js.Any]]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @scala.inline
-  def omit[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Omit[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[InferObjectStruct[Omit[S, K]]]
+  inline def omit[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Omit[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[InferObjectStruct[Omit[S, K]]]
   
-  @scala.inline
-  def partial[S /* <: ObjectSchema */](struct: S): InferObjectStruct[
+  inline def partial[S /* <: ObjectSchema */](struct: S): InferObjectStruct[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: superstruct.superstruct/lib/struct.Struct<superstruct.superstruct/lib/struct.StructType<S[K]> | undefined, any>}
     */ typings.superstruct.superstructStrings.partial & TopLevel[S]
@@ -57,8 +49,7 @@ object libUtilitiesMod {
   {[ K in keyof S ]: superstruct.superstruct/lib/struct.Struct<superstruct.superstruct/lib/struct.StructType<S[K]> | undefined, any>}
     */ typings.superstruct.superstructStrings.partial & TopLevel[S]
   ]]
-  @scala.inline
-  def partial[S /* <: ObjectSchema */](struct: InferObjectStruct[S]): InferObjectStruct[
+  inline def partial[S /* <: ObjectSchema */](struct: InferObjectStruct[S]): InferObjectStruct[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: superstruct.superstruct/lib/struct.Struct<superstruct.superstruct/lib/struct.StructType<S[K]> | undefined, any>}
     */ typings.superstruct.superstructStrings.partial & TopLevel[S]
@@ -68,11 +59,9 @@ object libUtilitiesMod {
     */ typings.superstruct.superstructStrings.partial & TopLevel[S]
   ]]
   
-  @scala.inline
-  def pick[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Pick[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[InferObjectStruct[Pick[S, K]]]
+  inline def pick[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Pick[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[InferObjectStruct[Pick[S, K]]]
   
-  @scala.inline
-  def struct[T](
+  inline def struct[T](
     name: String,
     validator: js.Function2[/* value */ js.Any, /* context */ StructContext, StructResult]
   ): Struct[T, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Struct[T, Null]]

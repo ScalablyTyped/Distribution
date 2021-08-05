@@ -11,16 +11,13 @@ trait PickImplnonNumeric extends StObject {
 }
 object PickImplnonNumeric {
   
-  @scala.inline
-  def apply(nonNumeric: String): PickImplnonNumeric = {
+  inline def apply(nonNumeric: String): PickImplnonNumeric = {
     val __obj = js.Dynamic.literal(nonNumeric = nonNumeric.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnonNumeric]
   }
   
-  @scala.inline
-  implicit class PickImplnonNumericMutableBuilder[Self <: PickImplnonNumeric] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnonNumeric](x: Self) {
     
-    @scala.inline
-    def setNonNumeric(value: String): Self = StObject.set(x, "nonNumeric", value.asInstanceOf[js.Any])
+    inline def setNonNumeric(value: String): Self = StObject.set(x, "nonNumeric", value.asInstanceOf[js.Any])
   }
 }

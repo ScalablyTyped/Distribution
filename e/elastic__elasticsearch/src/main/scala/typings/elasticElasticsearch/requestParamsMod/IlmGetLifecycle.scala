@@ -12,19 +12,15 @@ trait IlmGetLifecycle
 }
 object IlmGetLifecycle {
   
-  @scala.inline
-  def apply(): IlmGetLifecycle = {
+  inline def apply(): IlmGetLifecycle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IlmGetLifecycle]
   }
   
-  @scala.inline
-  implicit class IlmGetLifecycleMutableBuilder[Self <: IlmGetLifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: IlmGetLifecycle](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

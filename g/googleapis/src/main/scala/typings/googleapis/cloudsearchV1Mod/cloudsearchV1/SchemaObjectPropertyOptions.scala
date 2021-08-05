@@ -19,22 +19,17 @@ trait SchemaObjectPropertyOptions extends StObject {
 }
 object SchemaObjectPropertyOptions {
   
-  @scala.inline
-  def apply(): SchemaObjectPropertyOptions = {
+  inline def apply(): SchemaObjectPropertyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaObjectPropertyOptions]
   }
   
-  @scala.inline
-  implicit class SchemaObjectPropertyOptionsMutableBuilder[Self <: SchemaObjectPropertyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaObjectPropertyOptions](x: Self) {
     
-    @scala.inline
-    def setSubobjectProperties(value: js.Array[SchemaPropertyDefinition]): Self = StObject.set(x, "subobjectProperties", value.asInstanceOf[js.Any])
+    inline def setSubobjectProperties(value: js.Array[SchemaPropertyDefinition]): Self = StObject.set(x, "subobjectProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubobjectPropertiesUndefined: Self = StObject.set(x, "subobjectProperties", js.undefined)
+    inline def setSubobjectPropertiesUndefined: Self = StObject.set(x, "subobjectProperties", js.undefined)
     
-    @scala.inline
-    def setSubobjectPropertiesVarargs(value: SchemaPropertyDefinition*): Self = StObject.set(x, "subobjectProperties", js.Array(value :_*))
+    inline def setSubobjectPropertiesVarargs(value: SchemaPropertyDefinition*): Self = StObject.set(x, "subobjectProperties", js.Array(value :_*))
   }
 }

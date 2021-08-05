@@ -23,25 +23,19 @@ trait SchemaKeyValue extends StObject {
 }
 object SchemaKeyValue {
   
-  @scala.inline
-  def apply(): SchemaKeyValue = {
+  inline def apply(): SchemaKeyValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaKeyValue]
   }
   
-  @scala.inline
-  implicit class SchemaKeyValueMutableBuilder[Self <: SchemaKeyValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaKeyValue](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

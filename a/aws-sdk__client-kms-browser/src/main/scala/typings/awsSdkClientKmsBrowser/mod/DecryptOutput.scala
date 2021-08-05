@@ -10,8 +10,7 @@ trait DecryptOutput
      with typings.awsSdkClientKmsBrowser.typesDecryptOutputMod.DecryptOutput
 object DecryptOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DecryptOutput = {
+  inline def apply($metadata: ResponseMetadata): DecryptOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptOutput]
   }

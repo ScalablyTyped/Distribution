@@ -38,49 +38,35 @@ trait OnErrorEventUIParam extends StObject {
 }
 object OnErrorEventUIParam {
   
-  @scala.inline
-  def apply(): OnErrorEventUIParam = {
+  inline def apply(): OnErrorEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnErrorEventUIParam]
   }
   
-  @scala.inline
-  implicit class OnErrorEventUIParamMutableBuilder[Self <: OnErrorEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: OnErrorEventUIParam](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
+    inline def setErrorTypeUndefined: Self = StObject.set(x, "errorType", js.undefined)
     
-    @scala.inline
-    def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setServerMessage(value: String): Self = StObject.set(x, "serverMessage", value.asInstanceOf[js.Any])
+    inline def setServerMessage(value: String): Self = StObject.set(x, "serverMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerMessageUndefined: Self = StObject.set(x, "serverMessage", js.undefined)
+    inline def setServerMessageUndefined: Self = StObject.set(x, "serverMessage", js.undefined)
   }
 }

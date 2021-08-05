@@ -24,8 +24,7 @@ trait XSet
 }
 object XSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     acquire: () => Unit,
     createEnumeration: () => XEnumeration,
@@ -41,16 +40,12 @@ object XSet {
     __obj.asInstanceOf[XSet]
   }
   
-  @scala.inline
-  implicit class XSetMutableBuilder[Self <: XSet] (val x: Self) extends AnyVal {
+  extension [Self <: XSet](x: Self) {
     
-    @scala.inline
-    def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsert(value: js.Any => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: js.Any => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

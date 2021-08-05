@@ -17,20 +17,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setNotifyReporter(value: NotifyReporterOptions): Self = StObject.set(x, "notifyReporter", value.asInstanceOf[js.Any])
+      inline def setNotifyReporter(value: NotifyReporterOptions): Self = StObject.set(x, "notifyReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifyReporterUndefined: Self = StObject.set(x, "notifyReporter", js.undefined)
+      inline def setNotifyReporterUndefined: Self = StObject.set(x, "notifyReporter", js.undefined)
     }
   }
   
@@ -56,32 +52,24 @@ object mod {
   }
   object NotifyReporterOptions {
     
-    @scala.inline
-    def apply(): NotifyReporterOptions = {
+    inline def apply(): NotifyReporterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotifyReporterOptions]
     }
     
-    @scala.inline
-    implicit class NotifyReporterOptionsMutableBuilder[Self <: NotifyReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NotifyReporterOptions](x: Self) {
       
-      @scala.inline
-      def setReportBackToSuccess(value: Boolean): Self = StObject.set(x, "reportBackToSuccess", value.asInstanceOf[js.Any])
+      inline def setReportBackToSuccess(value: Boolean): Self = StObject.set(x, "reportBackToSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportBackToSuccessUndefined: Self = StObject.set(x, "reportBackToSuccess", js.undefined)
+      inline def setReportBackToSuccessUndefined: Self = StObject.set(x, "reportBackToSuccess", js.undefined)
       
-      @scala.inline
-      def setReportEachFailure(value: Boolean): Self = StObject.set(x, "reportEachFailure", value.asInstanceOf[js.Any])
+      inline def setReportEachFailure(value: Boolean): Self = StObject.set(x, "reportEachFailure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportEachFailureUndefined: Self = StObject.set(x, "reportEachFailure", js.undefined)
+      inline def setReportEachFailureUndefined: Self = StObject.set(x, "reportEachFailure", js.undefined)
       
-      @scala.inline
-      def setReportSuccess(value: Boolean): Self = StObject.set(x, "reportSuccess", value.asInstanceOf[js.Any])
+      inline def setReportSuccess(value: Boolean): Self = StObject.set(x, "reportSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportSuccessUndefined: Self = StObject.set(x, "reportSuccess", js.undefined)
+      inline def setReportSuccessUndefined: Self = StObject.set(x, "reportSuccess", js.undefined)
     }
   }
 }

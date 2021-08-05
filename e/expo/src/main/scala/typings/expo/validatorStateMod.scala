@@ -10,9 +10,7 @@ object validatorStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setShouldThrowAnErrorOutsideOfExpo(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setShouldThrowAnErrorOutsideOfExpo")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setShouldThrowAnErrorOutsideOfExpo(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setShouldThrowAnErrorOutsideOfExpo")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def shouldThrowAnErrorOutsideOfExpo(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldThrowAnErrorOutsideOfExpo")().asInstanceOf[Boolean]
+  inline def shouldThrowAnErrorOutsideOfExpo(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldThrowAnErrorOutsideOfExpo")().asInstanceOf[Boolean]
 }

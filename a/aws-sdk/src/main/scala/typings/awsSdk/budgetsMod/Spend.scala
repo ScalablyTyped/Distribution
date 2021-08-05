@@ -18,19 +18,15 @@ trait Spend extends StObject {
 }
 object Spend {
   
-  @scala.inline
-  def apply(Amount: NumericValue, Unit: UnitValue): Spend = {
+  inline def apply(Amount: NumericValue, Unit: UnitValue): Spend = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Unit = Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spend]
   }
   
-  @scala.inline
-  implicit class SpendMutableBuilder[Self <: Spend] (val x: Self) extends AnyVal {
+  extension [Self <: Spend](x: Self) {
     
-    @scala.inline
-    def setAmount(value: NumericValue): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: NumericValue): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: UnitValue): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: UnitValue): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
   }
 }

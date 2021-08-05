@@ -24,22 +24,17 @@ trait XSidebarPanel extends StObject {
 }
 object XSidebarPanel {
   
-  @scala.inline
-  def apply(MinimalWidth: Double, getHeightForWidth: Double => LayoutSize, getMinimalWidth: () => Double): XSidebarPanel = {
+  inline def apply(MinimalWidth: Double, getHeightForWidth: Double => LayoutSize, getMinimalWidth: () => Double): XSidebarPanel = {
     val __obj = js.Dynamic.literal(MinimalWidth = MinimalWidth.asInstanceOf[js.Any], getHeightForWidth = js.Any.fromFunction1(getHeightForWidth), getMinimalWidth = js.Any.fromFunction0(getMinimalWidth))
     __obj.asInstanceOf[XSidebarPanel]
   }
   
-  @scala.inline
-  implicit class XSidebarPanelMutableBuilder[Self <: XSidebarPanel] (val x: Self) extends AnyVal {
+  extension [Self <: XSidebarPanel](x: Self) {
     
-    @scala.inline
-    def setGetHeightForWidth(value: Double => LayoutSize): Self = StObject.set(x, "getHeightForWidth", js.Any.fromFunction1(value))
+    inline def setGetHeightForWidth(value: Double => LayoutSize): Self = StObject.set(x, "getHeightForWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMinimalWidth(value: () => Double): Self = StObject.set(x, "getMinimalWidth", js.Any.fromFunction0(value))
+    inline def setGetMinimalWidth(value: () => Double): Self = StObject.set(x, "getMinimalWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinimalWidth(value: Double): Self = StObject.set(x, "MinimalWidth", value.asInstanceOf[js.Any])
+    inline def setMinimalWidth(value: Double): Self = StObject.set(x, "MinimalWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait RequestDataResponse extends StObject {
 }
 object RequestDataResponse {
   
-  @scala.inline
-  def apply(hasMore: Boolean, objectStoreDataEntries: js.Array[DataEntry]): RequestDataResponse = {
+  inline def apply(hasMore: Boolean, objectStoreDataEntries: js.Array[DataEntry]): RequestDataResponse = {
     val __obj = js.Dynamic.literal(hasMore = hasMore.asInstanceOf[js.Any], objectStoreDataEntries = objectStoreDataEntries.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDataResponse]
   }
   
-  @scala.inline
-  implicit class RequestDataResponseMutableBuilder[Self <: RequestDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RequestDataResponse](x: Self) {
     
-    @scala.inline
-    def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+    inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectStoreDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "objectStoreDataEntries", value.asInstanceOf[js.Any])
+    inline def setObjectStoreDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "objectStoreDataEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectStoreDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "objectStoreDataEntries", js.Array(value :_*))
+    inline def setObjectStoreDataEntriesVarargs(value: DataEntry*): Self = StObject.set(x, "objectStoreDataEntries", js.Array(value :_*))
   }
 }

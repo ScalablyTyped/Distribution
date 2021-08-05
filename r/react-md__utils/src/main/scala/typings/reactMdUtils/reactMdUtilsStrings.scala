@@ -21,251 +21,214 @@ object reactMdUtilsStrings {
   sealed trait AAA
     extends StObject
        with ContrastRatioCompliance
-  @scala.inline
-  def AAA: AAA = "AAA".asInstanceOf[AAA]
+  inline def AAA: AAA = "AAA".asInstanceOf[AAA]
   
   @js.native
   sealed trait above
     extends StObject
        with SimplePosition
        with VerticalPosition
-  @scala.inline
-  def above: above = "above".asInstanceOf[above]
+  inline def above: above = "above".asInstanceOf[above]
   
   @js.native
   sealed trait absolute extends StObject
-  @scala.inline
-  def absolute: absolute = "absolute".asInstanceOf[absolute]
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
   sealed trait `aria-label` extends StObject
-  @scala.inline
-  def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
+  inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
   
   @js.native
   sealed trait `aria-labelledby` extends StObject
-  @scala.inline
-  def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
+  inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
   
   @js.native
   sealed trait auto
     extends StObject
        with PositionWidth
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait below
     extends StObject
        with SimplePosition
        with VerticalPosition
-  @scala.inline
-  def below: below = "below".asInstanceOf[below]
+  inline def below: below = "below".asInstanceOf[below]
   
   @js.native
   sealed trait bottom
     extends StObject
        with VerticalPosition
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait cancel
     extends StObject
        with TouchTypes
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait center
     extends StObject
        with HorizontalPosition
        with VerticalPosition
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait decrement
     extends StObject
        with FocusType
-  @scala.inline
-  def decrement: decrement = "decrement".asInstanceOf[decrement]
+  inline def decrement: decrement = "decrement".asInstanceOf[decrement]
   
   @js.native
   sealed trait end
     extends StObject
        with TouchTypes
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait equal
     extends StObject
        with PositionWidth
-  @scala.inline
-  def equal: equal = "equal".asInstanceOf[equal]
+  inline def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
   sealed trait first
     extends StObject
        with FocusType
        with _Focus
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait fixed extends StObject
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
   sealed trait height
     extends StObject
        with SizingType
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
+  inline def height: height = "height".asInstanceOf[height]
   
   @js.native
   sealed trait increment
     extends StObject
        with FocusType
-  @scala.inline
-  def increment: increment = "increment".asInstanceOf[increment]
+  inline def increment: increment = "increment".asInstanceOf[increment]
   
   @js.native
   sealed trait `inner-left`
     extends StObject
        with HorizontalPosition
-  @scala.inline
-  def `inner-left`: `inner-left` = "inner-left".asInstanceOf[`inner-left`]
+  inline def `inner-left`: `inner-left` = "inner-left".asInstanceOf[`inner-left`]
   
   @js.native
   sealed trait `inner-right`
     extends StObject
        with HorizontalPosition
-  @scala.inline
-  def `inner-right`: `inner-right` = "inner-right".asInstanceOf[`inner-right`]
+  inline def `inner-right`: `inner-right` = "inner-right".asInstanceOf[`inner-right`]
   
   @js.native
   sealed trait keyboard
     extends StObject
        with UserInteractionMode
-  @scala.inline
-  def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
+  inline def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   
   @js.native
   sealed trait large
     extends StObject
        with ContrastRatioCompliance
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait last
     extends StObject
        with FocusType
        with _Focus
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait left
     extends StObject
        with HorizontalPosition
        with SimplePosition
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait ltr
     extends StObject
        with WritingDirection
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait max extends StObject
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
+  inline def max: max = "max".asInstanceOf[max]
   
   @js.native
   sealed trait `max-content` extends StObject
-  @scala.inline
-  def `max-content`: `max-content` = "max-content".asInstanceOf[`max-content`]
+  inline def `max-content`: `max-content` = "max-content".asInstanceOf[`max-content`]
   
   @js.native
   sealed trait min
     extends StObject
        with PositionWidth
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
+  inline def min: min = "min".asInstanceOf[min]
   
   @js.native
   sealed trait `min-content` extends StObject
-  @scala.inline
-  def `min-content`: `min-content` = "min-content".asInstanceOf[`min-content`]
+  inline def `min-content`: `min-content` = "min-content".asInstanceOf[`min-content`]
   
   @js.native
   sealed trait mouse
     extends StObject
        with UserInteractionMode
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
   sealed trait move
     extends StObject
        with TouchTypes
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait normal
     extends StObject
        with ContrastRatioCompliance
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait right
     extends StObject
        with HorizontalPosition
        with SimplePosition
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait rtl
     extends StObject
        with WritingDirection
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait start
     extends StObject
        with TouchTypes
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait top
     extends StObject
        with VerticalPosition
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait touch
     extends StObject
        with UserInteractionMode
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
+  inline def touch: touch = "touch".asInstanceOf[touch]
   
   @js.native
   sealed trait width
     extends StObject
        with SizingType
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
+  inline def width: width = "width".asInstanceOf[width]
 }

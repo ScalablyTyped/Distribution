@@ -11,6 +11,5 @@ object eventSubscriberMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def EventSubscriber(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EventSubscriber")().asInstanceOf[ClassDecorator]
+  inline def EventSubscriber(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("EventSubscriber")().asInstanceOf[ClassDecorator]
 }

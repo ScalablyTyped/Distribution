@@ -63,8 +63,7 @@ trait PropertyHierarchy
 }
 object PropertyHierarchy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
@@ -92,19 +91,14 @@ object PropertyHierarchy {
     __obj.asInstanceOf[PropertyHierarchy]
   }
   
-  @scala.inline
-  implicit class PropertyHierarchyMutableBuilder[Self <: PropertyHierarchy] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyHierarchy](x: Self) {
     
-    @scala.inline
-    def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHierarchicalPropertySetInfo(value: XHierarchicalPropertySetInfo): Self = StObject.set(x, "HierarchicalPropertySetInfo", value.asInstanceOf[js.Any])
+    inline def setHierarchicalPropertySetInfo(value: XHierarchicalPropertySetInfo): Self = StObject.set(x, "HierarchicalPropertySetInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
+    inline def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
   }
 }

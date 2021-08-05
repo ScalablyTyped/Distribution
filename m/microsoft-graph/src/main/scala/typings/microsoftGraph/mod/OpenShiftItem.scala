@@ -13,19 +13,15 @@ trait OpenShiftItem
 }
 object OpenShiftItem {
   
-  @scala.inline
-  def apply(): OpenShiftItem = {
+  inline def apply(): OpenShiftItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenShiftItem]
   }
   
-  @scala.inline
-  implicit class OpenShiftItemMutableBuilder[Self <: OpenShiftItem] (val x: Self) extends AnyVal {
+  extension [Self <: OpenShiftItem](x: Self) {
     
-    @scala.inline
-    def setOpenSlotCount(value: Double): Self = StObject.set(x, "openSlotCount", value.asInstanceOf[js.Any])
+    inline def setOpenSlotCount(value: Double): Self = StObject.set(x, "openSlotCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenSlotCountUndefined: Self = StObject.set(x, "openSlotCount", js.undefined)
+    inline def setOpenSlotCountUndefined: Self = StObject.set(x, "openSlotCount", js.undefined)
   }
 }

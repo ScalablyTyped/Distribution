@@ -35,26 +35,20 @@ object mod {
   }
   object BeanstalkdHandleBackoff {
     
-    @scala.inline
-    def apply(): BeanstalkdHandleBackoff = {
+    inline def apply(): BeanstalkdHandleBackoff = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeanstalkdHandleBackoff]
     }
     
-    @scala.inline
-    implicit class BeanstalkdHandleBackoffMutableBuilder[Self <: BeanstalkdHandleBackoff] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdHandleBackoff](x: Self) {
       
-      @scala.inline
-      def setExponential(value: Double): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
+      inline def setExponential(value: Double): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExponentialUndefined: Self = StObject.set(x, "exponential", js.undefined)
+      inline def setExponentialUndefined: Self = StObject.set(x, "exponential", js.undefined)
       
-      @scala.inline
-      def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     }
   }
   
@@ -71,32 +65,24 @@ object mod {
   }
   object BeanstalkdHandleOptions {
     
-    @scala.inline
-    def apply(): BeanstalkdHandleOptions = {
+    inline def apply(): BeanstalkdHandleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeanstalkdHandleOptions]
     }
     
-    @scala.inline
-    implicit class BeanstalkdHandleOptionsMutableBuilder[Self <: BeanstalkdHandleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdHandleOptions](x: Self) {
       
-      @scala.inline
-      def setBackoff(value: BeanstalkdHandleBackoff): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
+      inline def setBackoff(value: BeanstalkdHandleBackoff): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
+      inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
       
-      @scala.inline
-      def setTries(value: Double): Self = StObject.set(x, "tries", value.asInstanceOf[js.Any])
+      inline def setTries(value: Double): Self = StObject.set(x, "tries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriesUndefined: Self = StObject.set(x, "tries", js.undefined)
+      inline def setTriesUndefined: Self = StObject.set(x, "tries", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -113,32 +99,24 @@ object mod {
   }
   object BeanstalkdSpawnOptions {
     
-    @scala.inline
-    def apply(): BeanstalkdSpawnOptions = {
+    inline def apply(): BeanstalkdSpawnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BeanstalkdSpawnOptions]
     }
     
-    @scala.inline
-    implicit class BeanstalkdSpawnOptionsMutableBuilder[Self <: BeanstalkdSpawnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BeanstalkdSpawnOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

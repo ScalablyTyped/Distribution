@@ -15,8 +15,7 @@ object consolePubMod {
   @js.native
   val console: IModulePatcher = js.native
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   trait IConsoleData extends StObject {
     
@@ -26,23 +25,18 @@ object consolePubMod {
   }
   object IConsoleData {
     
-    @scala.inline
-    def apply(message: String): IConsoleData = {
+    inline def apply(message: String): IConsoleData = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[IConsoleData]
     }
     
-    @scala.inline
-    implicit class IConsoleDataMutableBuilder[Self <: IConsoleData] (val x: Self) extends AnyVal {
+    extension [Self <: IConsoleData](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     }
   }
 }

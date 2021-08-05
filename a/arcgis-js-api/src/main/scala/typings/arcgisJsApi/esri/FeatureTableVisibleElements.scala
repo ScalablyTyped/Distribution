@@ -33,8 +33,7 @@ trait FeatureTableVisibleElements
 }
 object FeatureTableVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object FeatureTableVisibleElements {
     __obj.asInstanceOf[FeatureTableVisibleElements]
   }
   
-  @scala.inline
-  implicit class FeatureTableVisibleElementsMutableBuilder[Self <: FeatureTableVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureTableVisibleElements](x: Self) {
     
-    @scala.inline
-    def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItems(value: VisibleElementsMenuItems): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+    inline def setMenuItems(value: VisibleElementsMenuItems): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
+    inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
   }
 }

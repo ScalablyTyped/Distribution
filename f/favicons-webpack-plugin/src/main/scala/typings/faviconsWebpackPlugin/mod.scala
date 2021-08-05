@@ -81,8 +81,7 @@ object mod {
   }
   object FaviconsWebpackPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: js.Any => Unit,
       generateFaviconsLight: (js.Any, js.Any) => js.Promise[js.Any],
       generateFaviconsWebapp: (js.Any, js.Any) => js.Promise[js.Any],
@@ -93,23 +92,17 @@ object mod {
       __obj.asInstanceOf[FaviconsWebpackPlugin]
     }
     
-    @scala.inline
-    implicit class FaviconsWebpackPluginMutableBuilder[Self <: FaviconsWebpackPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: FaviconsWebpackPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenerateFaviconsLight(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "generateFaviconsLight", js.Any.fromFunction2(value))
+      inline def setGenerateFaviconsLight(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "generateFaviconsLight", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateFaviconsWebapp(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "generateFaviconsWebapp", js.Any.fromFunction2(value))
+      inline def setGenerateFaviconsWebapp(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "generateFaviconsWebapp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetCurrentCompilationMode(value: js.Any => light | webapp): Self = StObject.set(x, "getCurrentCompilationMode", js.Any.fromFunction1(value))
+      inline def setGetCurrentCompilationMode(value: js.Any => light | webapp): Self = StObject.set(x, "getCurrentCompilationMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: FaviconWebpackPlugionInternalOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: FaviconWebpackPlugionInternalOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

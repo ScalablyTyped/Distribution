@@ -33,43 +33,31 @@ trait CreateClusterRequest extends StObject {
 }
 object CreateClusterRequest {
   
-  @scala.inline
-  def apply(HsmType: HsmType, SubnetIds: SubnetIds): CreateClusterRequest = {
+  inline def apply(HsmType: HsmType, SubnetIds: SubnetIds): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(HsmType = HsmType.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
   
-  @scala.inline
-  implicit class CreateClusterRequestMutableBuilder[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterRequest](x: Self) {
     
-    @scala.inline
-    def setBackupRetentionPolicy(value: BackupRetentionPolicy): Self = StObject.set(x, "BackupRetentionPolicy", value.asInstanceOf[js.Any])
+    inline def setBackupRetentionPolicy(value: BackupRetentionPolicy): Self = StObject.set(x, "BackupRetentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupRetentionPolicyUndefined: Self = StObject.set(x, "BackupRetentionPolicy", js.undefined)
+    inline def setBackupRetentionPolicyUndefined: Self = StObject.set(x, "BackupRetentionPolicy", js.undefined)
     
-    @scala.inline
-    def setHsmType(value: HsmType): Self = StObject.set(x, "HsmType", value.asInstanceOf[js.Any])
+    inline def setHsmType(value: HsmType): Self = StObject.set(x, "HsmType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupId(value: BackupId): Self = StObject.set(x, "SourceBackupId", value.asInstanceOf[js.Any])
+    inline def setSourceBackupId(value: BackupId): Self = StObject.set(x, "SourceBackupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupIdUndefined: Self = StObject.set(x, "SourceBackupId", js.undefined)
+    inline def setSourceBackupIdUndefined: Self = StObject.set(x, "SourceBackupId", js.undefined)
     
-    @scala.inline
-    def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
+    inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
   }
 }

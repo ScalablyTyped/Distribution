@@ -10,16 +10,13 @@ trait ReleaseTriggerBase extends StObject {
 }
 object ReleaseTriggerBase {
   
-  @scala.inline
-  def apply(triggerType: ReleaseTriggerType): ReleaseTriggerBase = {
+  inline def apply(triggerType: ReleaseTriggerType): ReleaseTriggerBase = {
     val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseTriggerBase]
   }
   
-  @scala.inline
-  implicit class ReleaseTriggerBaseMutableBuilder[Self <: ReleaseTriggerBase] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseTriggerBase](x: Self) {
     
-    @scala.inline
-    def setTriggerType(value: ReleaseTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: ReleaseTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

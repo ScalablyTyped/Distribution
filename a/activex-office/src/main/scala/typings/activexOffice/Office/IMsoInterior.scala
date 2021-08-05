@@ -16,7 +16,7 @@ trait IMsoInterior extends StObject {
   
   var InvertIfNegative: js.Any
   
-  @JSName("Office.IMsoInterior_typekey")
+  /* private */ @JSName("Office.IMsoInterior_typekey")
   var OfficeDotIMsoInterior_typekey: IMsoInterior
   
   val Parent: js.Any
@@ -29,8 +29,7 @@ trait IMsoInterior extends StObject {
 }
 object IMsoInterior {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Color: js.Any,
     ColorIndex: js.Any,
@@ -47,37 +46,26 @@ object IMsoInterior {
     __obj.asInstanceOf[IMsoInterior]
   }
   
-  @scala.inline
-  implicit class IMsoInteriorMutableBuilder[Self <: IMsoInterior] (val x: Self) extends AnyVal {
+  extension [Self <: IMsoInterior](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertIfNegative(value: js.Any): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
+    inline def setInvertIfNegative(value: js.Any): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotIMsoInterior_typekey(value: IMsoInterior): Self = StObject.set(x, "Office.IMsoInterior_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotIMsoInterior_typekey(value: IMsoInterior): Self = StObject.set(x, "Office.IMsoInterior_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternColor(value: js.Any): Self = StObject.set(x, "PatternColor", value.asInstanceOf[js.Any])
+    inline def setPatternColor(value: js.Any): Self = StObject.set(x, "PatternColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternColorIndex(value: js.Any): Self = StObject.set(x, "PatternColorIndex", value.asInstanceOf[js.Any])
+    inline def setPatternColorIndex(value: js.Any): Self = StObject.set(x, "PatternColorIndex", value.asInstanceOf[js.Any])
   }
 }

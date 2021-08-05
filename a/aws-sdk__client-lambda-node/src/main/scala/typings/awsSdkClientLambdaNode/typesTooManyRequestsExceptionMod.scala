@@ -77,17 +77,14 @@ object typesTooManyRequestsExceptionMod {
   }
   object TooManyRequestsException {
     
-    @scala.inline
-    def apply(): TooManyRequestsException = {
+    inline def apply(): TooManyRequestsException = {
       val __obj = js.Dynamic.literal(name = "TooManyRequestsException")
       __obj.asInstanceOf[TooManyRequestsException]
     }
     
-    @scala.inline
-    implicit class TooManyRequestsExceptionMutableBuilder[Self <: TooManyRequestsException] (val x: Self) extends AnyVal {
+    extension [Self <: TooManyRequestsException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.TooManyRequestsException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.TooManyRequestsException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,40 +114,30 @@ object typesTooManyRequestsExceptionMod {
   }
   object TooManyRequestsExceptionDetails {
     
-    @scala.inline
-    def apply(): TooManyRequestsExceptionDetails = {
+    inline def apply(): TooManyRequestsExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TooManyRequestsExceptionDetails]
     }
     
-    @scala.inline
-    implicit class TooManyRequestsExceptionDetailsMutableBuilder[Self <: TooManyRequestsExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TooManyRequestsExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setReason(
+      inline def setReason(
         value: ConcurrentInvocationLimitExceeded | FunctionInvocationRateLimitExceeded | ReservedFunctionConcurrentInvocationLimitExceeded | ReservedFunctionInvocationRateLimitExceeded | CallerRateLimitExceeded | String
       ): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
       
-      @scala.inline
-      def setRetryAfterSeconds(value: String): Self = StObject.set(x, "retryAfterSeconds", value.asInstanceOf[js.Any])
+      inline def setRetryAfterSeconds(value: String): Self = StObject.set(x, "retryAfterSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryAfterSecondsUndefined: Self = StObject.set(x, "retryAfterSeconds", js.undefined)
+      inline def setRetryAfterSecondsUndefined: Self = StObject.set(x, "retryAfterSeconds", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

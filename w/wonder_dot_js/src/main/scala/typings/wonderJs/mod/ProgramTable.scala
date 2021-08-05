@@ -15,24 +15,18 @@ object ProgramTable {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addProgram(key: String, program: typings.wonderJs.programMod.Program): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addProgram")(key.asInstanceOf[js.Any], program.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addProgram(key: String, program: typings.wonderJs.programMod.Program): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addProgram")(key.asInstanceOf[js.Any], program.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
+  inline def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
   
-  @scala.inline
-  def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
+  inline def dispose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getProgram(key: String): typings.wonderJs.programMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("getProgram")(key.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.programMod.Program]
+  inline def getProgram(key: String): typings.wonderJs.programMod.Program = ^.asInstanceOf[js.Dynamic].applyDynamic("getProgram")(key.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.programMod.Program]
   
-  @scala.inline
-  def hasProgram(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasProgram")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasProgram(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasProgram")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("wonder.js/dist/es2015", "ProgramTable.lastUsedProgram")
   @js.native
   def lastUsedProgram: typings.wonderJs.programMod.Program = js.native
-  @scala.inline
-  def lastUsedProgram_=(x: typings.wonderJs.programMod.Program): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastUsedProgram")(x.asInstanceOf[js.Any])
+  inline def lastUsedProgram_=(x: typings.wonderJs.programMod.Program): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastUsedProgram")(x.asInstanceOf[js.Any])
 }

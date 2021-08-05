@@ -24,8 +24,7 @@ trait ISmsMessageBase extends StObject {
 }
 object ISmsMessageBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cellularClass: CellularClass,
     deviceId: String,
     messageClass: SmsMessageClass,
@@ -36,22 +35,16 @@ object ISmsMessageBase {
     __obj.asInstanceOf[ISmsMessageBase]
   }
   
-  @scala.inline
-  implicit class ISmsMessageBaseMutableBuilder[Self <: ISmsMessageBase] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsMessageBase](x: Self) {
     
-    @scala.inline
-    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
+    inline def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+    inline def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
+    inline def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,19 +17,15 @@ trait ServiceStatus extends StObject {
 }
 object ServiceStatus {
   
-  @scala.inline
-  def apply(): ServiceStatus = {
+  inline def apply(): ServiceStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceStatus]
   }
   
-  @scala.inline
-  implicit class ServiceStatusMutableBuilder[Self <: ServiceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceStatus](x: Self) {
     
-    @scala.inline
-    def setLoadBalancer(value: Input[LoadBalancerStatus]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+    inline def setLoadBalancer(value: Input[LoadBalancerStatus]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
+    inline def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
   }
 }

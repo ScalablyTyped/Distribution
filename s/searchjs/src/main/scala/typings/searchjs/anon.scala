@@ -28,8 +28,7 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       end: Boolean,
       joinAnd: String,
       negator: Boolean,
@@ -44,35 +43,25 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoinAnd(value: String): Self = StObject.set(x, "joinAnd", value.asInstanceOf[js.Any])
+      inline def setJoinAnd(value: String): Self = StObject.set(x, "joinAnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNegator(value: Boolean): Self = StObject.set(x, "negator", value.asInstanceOf[js.Any])
+      inline def setNegator(value: Boolean): Self = StObject.set(x, "negator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertySearch(value: Boolean): Self = StObject.set(x, "propertySearch", value.asInstanceOf[js.Any])
+      inline def setPropertySearch(value: Boolean): Self = StObject.set(x, "propertySearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertySearchDepth(value: Double): Self = StObject.set(x, "propertySearchDepth", value.asInstanceOf[js.Any])
+      inline def setPropertySearchDepth(value: Double): Self = StObject.set(x, "propertySearchDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWord(value: Boolean): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      inline def setWord(value: Boolean): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     }
   }
 }

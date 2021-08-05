@@ -11,6 +11,5 @@ object emojiRegexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[RegExp]
+  inline def default(): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[RegExp]
 }

@@ -11,6 +11,5 @@ object useThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Theme]
+  inline def default(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Theme]
 }

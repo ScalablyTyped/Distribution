@@ -17,8 +17,7 @@ object logSerializationMod {
     @JSImport("expo/build/logs/LogSerialization", "default.serializeLogDataAsync")
     @js.native
     def serializeLogDataAsync: js.Function2[/* data */ js.Array[js.Any], /* level */ LogLevel, js.Promise[SerializedData]] = js.native
-    @scala.inline
-    def serializeLogDataAsync_=(x: js.Function2[/* data */ js.Array[js.Any], /* level */ LogLevel, js.Promise[SerializedData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializeLogDataAsync")(x.asInstanceOf[js.Any])
+    inline def serializeLogDataAsync_=(x: js.Function2[/* data */ js.Array[js.Any], /* level */ LogLevel, js.Promise[SerializedData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializeLogDataAsync")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("expo/build/logs/LogSerialization", "EXPO_CONSOLE_METHOD_NAME")
@@ -33,23 +32,18 @@ object logSerializationMod {
   }
   object SerializedData {
     
-    @scala.inline
-    def apply(body: js.Array[LogData], includesStack: Boolean): SerializedData = {
+    inline def apply(body: js.Array[LogData], includesStack: Boolean): SerializedData = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], includesStack = includesStack.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedData]
     }
     
-    @scala.inline
-    implicit class SerializedDataMutableBuilder[Self <: SerializedData] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedData](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Array[LogData]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Array[LogData]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyVarargs(value: LogData*): Self = StObject.set(x, "body", js.Array(value :_*))
+      inline def setBodyVarargs(value: LogData*): Self = StObject.set(x, "body", js.Array(value :_*))
       
-      @scala.inline
-      def setIncludesStack(value: Boolean): Self = StObject.set(x, "includesStack", value.asInstanceOf[js.Any])
+      inline def setIncludesStack(value: Boolean): Self = StObject.set(x, "includesStack", value.asInstanceOf[js.Any])
     }
   }
 }

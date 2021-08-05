@@ -21,25 +21,19 @@ trait SchemaSource extends StObject {
 }
 object SchemaSource {
   
-  @scala.inline
-  def apply(): SchemaSource = {
+  inline def apply(): SchemaSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSource]
   }
   
-  @scala.inline
-  implicit class SchemaSourceMutableBuilder[Self <: SchemaSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSource](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPredefinedSource(value: String): Self = StObject.set(x, "predefinedSource", value.asInstanceOf[js.Any])
+    inline def setPredefinedSource(value: String): Self = StObject.set(x, "predefinedSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedSourceUndefined: Self = StObject.set(x, "predefinedSource", js.undefined)
+    inline def setPredefinedSourceUndefined: Self = StObject.set(x, "predefinedSource", js.undefined)
   }
 }

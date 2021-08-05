@@ -23,34 +23,25 @@ trait UpdateLicenseSpecificationsForResourceRequest extends StObject {
 }
 object UpdateLicenseSpecificationsForResourceRequest {
   
-  @scala.inline
-  def apply(ResourceArn: String): UpdateLicenseSpecificationsForResourceRequest = {
+  inline def apply(ResourceArn: String): UpdateLicenseSpecificationsForResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLicenseSpecificationsForResourceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateLicenseSpecificationsForResourceRequestMutableBuilder[Self <: UpdateLicenseSpecificationsForResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateLicenseSpecificationsForResourceRequest](x: Self) {
     
-    @scala.inline
-    def setAddLicenseSpecifications(value: LicenseSpecifications): Self = StObject.set(x, "AddLicenseSpecifications", value.asInstanceOf[js.Any])
+    inline def setAddLicenseSpecifications(value: LicenseSpecifications): Self = StObject.set(x, "AddLicenseSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddLicenseSpecificationsUndefined: Self = StObject.set(x, "AddLicenseSpecifications", js.undefined)
+    inline def setAddLicenseSpecificationsUndefined: Self = StObject.set(x, "AddLicenseSpecifications", js.undefined)
     
-    @scala.inline
-    def setAddLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "AddLicenseSpecifications", js.Array(value :_*))
+    inline def setAddLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "AddLicenseSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoveLicenseSpecifications(value: LicenseSpecifications): Self = StObject.set(x, "RemoveLicenseSpecifications", value.asInstanceOf[js.Any])
+    inline def setRemoveLicenseSpecifications(value: LicenseSpecifications): Self = StObject.set(x, "RemoveLicenseSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveLicenseSpecificationsUndefined: Self = StObject.set(x, "RemoveLicenseSpecifications", js.undefined)
+    inline def setRemoveLicenseSpecificationsUndefined: Self = StObject.set(x, "RemoveLicenseSpecifications", js.undefined)
     
-    @scala.inline
-    def setRemoveLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "RemoveLicenseSpecifications", js.Array(value :_*))
+    inline def setRemoveLicenseSpecificationsVarargs(value: LicenseSpecification*): Self = StObject.set(x, "RemoveLicenseSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait DescribeVolumeAttributeResult extends StObject {
 }
 object DescribeVolumeAttributeResult {
   
-  @scala.inline
-  def apply(): DescribeVolumeAttributeResult = {
+  inline def apply(): DescribeVolumeAttributeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVolumeAttributeResult]
   }
   
-  @scala.inline
-  implicit class DescribeVolumeAttributeResultMutableBuilder[Self <: DescribeVolumeAttributeResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVolumeAttributeResult](x: Self) {
     
-    @scala.inline
-    def setAutoEnableIO(value: AttributeBooleanValue): Self = StObject.set(x, "AutoEnableIO", value.asInstanceOf[js.Any])
+    inline def setAutoEnableIO(value: AttributeBooleanValue): Self = StObject.set(x, "AutoEnableIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoEnableIOUndefined: Self = StObject.set(x, "AutoEnableIO", js.undefined)
+    inline def setAutoEnableIOUndefined: Self = StObject.set(x, "AutoEnableIO", js.undefined)
     
-    @scala.inline
-    def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
+    inline def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
+    inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    @scala.inline
-    def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
   }
 }

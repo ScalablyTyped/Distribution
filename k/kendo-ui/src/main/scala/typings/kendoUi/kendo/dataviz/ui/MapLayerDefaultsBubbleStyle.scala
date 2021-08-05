@@ -12,25 +12,19 @@ trait MapLayerDefaultsBubbleStyle extends StObject {
 }
 object MapLayerDefaultsBubbleStyle {
   
-  @scala.inline
-  def apply(): MapLayerDefaultsBubbleStyle = {
+  inline def apply(): MapLayerDefaultsBubbleStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerDefaultsBubbleStyle]
   }
   
-  @scala.inline
-  implicit class MapLayerDefaultsBubbleStyleMutableBuilder[Self <: MapLayerDefaultsBubbleStyle] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerDefaultsBubbleStyle](x: Self) {
     
-    @scala.inline
-    def setFill(value: MapLayerDefaultsBubbleStyleFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: MapLayerDefaultsBubbleStyleFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: MapLayerDefaultsBubbleStyleStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: MapLayerDefaultsBubbleStyleStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

@@ -17,10 +17,8 @@ object enumMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def forEach(enumObject: Record[String, js.Any], callback: js.Function1[/* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(enumObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forEach(enumObject: Record[String, js.Any], callback: js.Function1[/* value */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(enumObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def isAnyOf(value: Double, params: Double*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAnyOf")(value.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isAnyOf(value: Double, params: Double*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAnyOf")(value.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

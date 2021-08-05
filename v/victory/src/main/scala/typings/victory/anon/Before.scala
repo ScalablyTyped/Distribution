@@ -13,25 +13,19 @@ trait Before extends StObject {
 }
 object Before {
   
-  @scala.inline
-  def apply(): Before = {
+  inline def apply(): Before = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Before]
   }
   
-  @scala.inline
-  implicit class BeforeMutableBuilder[Self <: Before] (val x: Self) extends AnyVal {
+  extension [Self <: Before](x: Self) {
     
-    @scala.inline
-    def setBefore(value: /* datum */ js.Any => AnimationStyle): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* datum */ js.Any => AnimationStyle): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

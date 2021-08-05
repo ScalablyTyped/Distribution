@@ -21,26 +21,20 @@ trait TSNamedTupleMember_
 }
 object TSNamedTupleMember_ {
   
-  @scala.inline
-  def apply(elementType: TSType, label: Identifier_, optional: Boolean): TSNamedTupleMember_ = {
+  inline def apply(elementType: TSType, label: Identifier_, optional: Boolean): TSNamedTupleMember_ = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSNamedTupleMember")
     __obj.asInstanceOf[TSNamedTupleMember_]
   }
   
-  @scala.inline
-  implicit class TSNamedTupleMember_MutableBuilder[Self <: TSNamedTupleMember_] (val x: Self) extends AnyVal {
+  extension [Self <: TSNamedTupleMember_](x: Self) {
     
-    @scala.inline
-    def setElementType(value: TSType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: TSType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSNamedTupleMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSNamedTupleMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

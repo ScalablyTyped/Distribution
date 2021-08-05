@@ -36,44 +36,32 @@ object storageConfigurationMod {
   }
   object StorageConfiguration {
     
-    @scala.inline
-    def apply(): StorageConfiguration = {
+    inline def apply(): StorageConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StorageConfiguration]
     }
     
-    @scala.inline
-    implicit class StorageConfigurationMutableBuilder[Self <: StorageConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: StorageConfiguration](x: Self) {
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setStorageType(value: StorageType): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
+      inline def setStorageType(value: StorageType): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageTypeUndefined: Self = StObject.set(x, "storageType", js.undefined)
+      inline def setStorageTypeUndefined: Self = StObject.set(x, "storageType", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait CampaignConfig extends StObject {
 }
 object CampaignConfig {
   
-  @scala.inline
-  def apply(): CampaignConfig = {
+  inline def apply(): CampaignConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CampaignConfig]
   }
   
-  @scala.inline
-  implicit class CampaignConfigMutableBuilder[Self <: CampaignConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignConfig](x: Self) {
     
-    @scala.inline
-    def setItemExplorationConfig(value: HyperParameters): Self = StObject.set(x, "itemExplorationConfig", value.asInstanceOf[js.Any])
+    inline def setItemExplorationConfig(value: HyperParameters): Self = StObject.set(x, "itemExplorationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemExplorationConfigUndefined: Self = StObject.set(x, "itemExplorationConfig", js.undefined)
+    inline def setItemExplorationConfigUndefined: Self = StObject.set(x, "itemExplorationConfig", js.undefined)
   }
 }

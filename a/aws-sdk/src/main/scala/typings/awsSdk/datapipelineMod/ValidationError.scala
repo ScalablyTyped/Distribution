@@ -18,28 +18,21 @@ trait ValidationError extends StObject {
 }
 object ValidationError {
   
-  @scala.inline
-  def apply(): ValidationError = {
+  inline def apply(): ValidationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationError]
   }
   
-  @scala.inline
-  implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationError](x: Self) {
     
-    @scala.inline
-    def setErrors(value: validationMessages): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: validationMessages): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: validationMessage*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: validationMessage*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

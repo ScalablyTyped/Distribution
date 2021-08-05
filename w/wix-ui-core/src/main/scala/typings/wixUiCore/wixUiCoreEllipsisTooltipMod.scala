@@ -29,7 +29,6 @@ object wixUiCoreEllipsisTooltipMod {
     @JSImport("wix-ui-core/ellipsis-tooltip", "EllipsisTooltip.defaultProps")
     @js.native
     def defaultProps: ShowTooltip = js.native
-    @scala.inline
-    def defaultProps_=(x: ShowTooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ShowTooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

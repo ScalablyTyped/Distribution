@@ -25,11 +25,11 @@ object swControllerMod {
     @JSName("app")
     def app_MSwController: typings.firebaseMessaging.mod.FirebaseApp = js.native
     
-    var bgMessageHandler: js.Any = js.native
+    /* private */ var bgMessageHandler: js.Any = js.native
     
-    val firebaseDependencies: js.Any = js.native
+    /* private */ val firebaseDependencies: js.Any = js.native
     
-    var isOnBackgroundMessageUsed: js.Any = js.native
+    /* private */ var isOnBackgroundMessageUsed: js.Any = js.native
     
     def onMessage(): Unsubscribe = js.native
     
@@ -53,7 +53,7 @@ object swControllerMod {
     
     def useServiceWorker(): Unit = js.native
     
-    var vapidKey: js.Any = js.native
+    /* private */ var vapidKey: js.Any = js.native
   }
   
   type BgMessageHandler = js.Function1[/* payload */ MessagePayload, js.Any]

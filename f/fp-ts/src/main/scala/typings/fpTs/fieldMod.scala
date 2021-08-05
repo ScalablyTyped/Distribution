@@ -16,11 +16,9 @@ object fieldMod {
   @js.native
   val fieldNumber: Field[Double] = js.native
   
-  @scala.inline
-  def gcd[A](E: Eq[A], field: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(E.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
+  inline def gcd[A](E: Eq[A], field: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(E.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
   
-  @scala.inline
-  def lcm[A](E: Eq[A], F: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("lcm")(E.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
+  inline def lcm[A](E: Eq[A], F: Field[A]): js.Function2[/* x */ A, /* y */ A, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("lcm")(E.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* x */ A, /* y */ A, A]]
   
   trait Field[A]
     extends StObject
@@ -34,8 +32,7 @@ object fieldMod {
   }
   object Field {
     
-    @scala.inline
-    def apply[A](
+    inline def apply[A](
       add: (A, A) => A,
       degree: A => Double,
       div: (A, A) => A,
@@ -49,17 +46,13 @@ object fieldMod {
       __obj.asInstanceOf[Field[A]]
     }
     
-    @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field[?], A] (val x: Self & Field[A]) extends AnyVal {
+    extension [Self <: Field[?], A](x: Self & Field[A]) {
       
-      @scala.inline
-      def setDegree(value: A => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
+      inline def setDegree(value: A => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDiv(value: (A, A) => A): Self = StObject.set(x, "div", js.Any.fromFunction2(value))
+      inline def setDiv(value: (A, A) => A): Self = StObject.set(x, "div", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMod(value: (A, A) => A): Self = StObject.set(x, "mod", js.Any.fromFunction2(value))
+      inline def setMod(value: (A, A) => A): Self = StObject.set(x, "mod", js.Any.fromFunction2(value))
     }
   }
 }

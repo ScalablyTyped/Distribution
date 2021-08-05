@@ -14,22 +14,17 @@ trait Rules extends StObject {
 }
 object Rules {
   
-  @scala.inline
-  def apply(res: NormalSuccessResponse, rules: js.Array[LifecycleRule]): Rules = {
+  inline def apply(res: NormalSuccessResponse, rules: js.Array[LifecycleRule]): Rules = {
     val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules]
   }
   
-  @scala.inline
-  implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+  extension [Self <: Rules](x: Self) {
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: js.Array[LifecycleRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[LifecycleRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: LifecycleRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

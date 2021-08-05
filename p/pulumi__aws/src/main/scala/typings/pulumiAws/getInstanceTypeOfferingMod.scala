@@ -12,14 +12,10 @@ object getInstanceTypeOfferingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInstanceTypeOffering(): js.Promise[GetInstanceTypeOfferingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")().asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
-  @scala.inline
-  def getInstanceTypeOffering(args: Unit, opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
-  @scala.inline
-  def getInstanceTypeOffering(args: GetInstanceTypeOfferingArgs): js.Promise[GetInstanceTypeOfferingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
-  @scala.inline
-  def getInstanceTypeOffering(args: GetInstanceTypeOfferingArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
+  inline def getInstanceTypeOffering(): js.Promise[GetInstanceTypeOfferingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")().asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
+  inline def getInstanceTypeOffering(args: Unit, opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
+  inline def getInstanceTypeOffering(args: GetInstanceTypeOfferingArgs): js.Promise[GetInstanceTypeOfferingResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
+  inline def getInstanceTypeOffering(args: GetInstanceTypeOfferingArgs, opts: InvokeOptions): js.Promise[GetInstanceTypeOfferingResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOffering")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceTypeOfferingResult]]
   
   trait GetInstanceTypeOfferingArgs extends StObject {
     
@@ -40,38 +36,28 @@ object getInstanceTypeOfferingMod {
   }
   object GetInstanceTypeOfferingArgs {
     
-    @scala.inline
-    def apply(): GetInstanceTypeOfferingArgs = {
+    inline def apply(): GetInstanceTypeOfferingArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetInstanceTypeOfferingArgs]
     }
     
-    @scala.inline
-    implicit class GetInstanceTypeOfferingArgsMutableBuilder[Self <: GetInstanceTypeOfferingArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstanceTypeOfferingArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetInstanceTypeOfferingFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetInstanceTypeOfferingFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetInstanceTypeOfferingFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetInstanceTypeOfferingFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+      inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+      inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
       
-      @scala.inline
-      def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
+      inline def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
+      inline def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
       
-      @scala.inline
-      def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
+      inline def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
     }
   }
   
@@ -95,44 +81,32 @@ object getInstanceTypeOfferingMod {
   }
   object GetInstanceTypeOfferingResult {
     
-    @scala.inline
-    def apply(id: String, instanceType: String): GetInstanceTypeOfferingResult = {
+    inline def apply(id: String, instanceType: String): GetInstanceTypeOfferingResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetInstanceTypeOfferingResult]
     }
     
-    @scala.inline
-    implicit class GetInstanceTypeOfferingResultMutableBuilder[Self <: GetInstanceTypeOfferingResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstanceTypeOfferingResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeOfferingFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetInstanceTypeOfferingFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeOfferingFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetInstanceTypeOfferingFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+      inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+      inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
       
-      @scala.inline
-      def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
+      inline def setPreferredInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "preferredInstanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
+      inline def setPreferredInstanceTypesUndefined: Self = StObject.set(x, "preferredInstanceTypes", js.undefined)
       
-      @scala.inline
-      def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
+      inline def setPreferredInstanceTypesVarargs(value: String*): Self = StObject.set(x, "preferredInstanceTypes", js.Array(value :_*))
     }
   }
 }

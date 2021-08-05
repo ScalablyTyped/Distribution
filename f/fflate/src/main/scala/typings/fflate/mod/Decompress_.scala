@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Decompress_ () extends StObject {
   def this(cb: FlateStreamHandler) = this()
   
-  var G: js.Any = js.native
+  /* private */ var G: js.Any = js.native
   
-  var I: js.Any = js.native
+  /* private */ var I: js.Any = js.native
   
-  var Z: js.Any = js.native
+  /* private */ var Z: js.Any = js.native
   
   /**
     * The handler to call whenever data is available
@@ -30,7 +30,7 @@ class Decompress_ () extends StObject {
   @JSName("ondata")
   var ondata_Original: FlateStreamHandler = js.native
   
-  var p: js.Any = js.native
+  /* private */ var p: js.Any = js.native
   
   /**
     * Pushes a chunk to be decompressed
@@ -40,5 +40,5 @@ class Decompress_ () extends StObject {
   def push(chunk: Uint8Array): Unit = js.native
   def push(chunk: Uint8Array, `final`: Boolean): Unit = js.native
   
-  var s: js.Any = js.native
+  /* private */ var s: js.Any = js.native
 }

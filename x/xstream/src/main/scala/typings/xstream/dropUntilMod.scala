@@ -13,8 +13,7 @@ object dropUntilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](other: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(other.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
+  inline def default[T](other: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(other.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
   
   @JSImport("xstream/extra/dropUntil", "DropUntilOperator")
   @js.native
@@ -46,9 +45,9 @@ object dropUntilMod {
     
     var o: Stream[js.Any] = js.native
     
-    var oil: js.Any = js.native
+    /* private */ var oil: js.Any = js.native
     
-    var on: js.Any = js.native
+    /* private */ var on: js.Any = js.native
     
     /* CompleteClass */
     var out: Stream[T] = js.native

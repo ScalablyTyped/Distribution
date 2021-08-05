@@ -13,19 +13,15 @@ trait CreateBGPPeerResponse extends StObject {
 }
 object CreateBGPPeerResponse {
   
-  @scala.inline
-  def apply(): CreateBGPPeerResponse = {
+  inline def apply(): CreateBGPPeerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBGPPeerResponse]
   }
   
-  @scala.inline
-  implicit class CreateBGPPeerResponseMutableBuilder[Self <: CreateBGPPeerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBGPPeerResponse](x: Self) {
     
-    @scala.inline
-    def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
+    inline def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceUndefined: Self = StObject.set(x, "virtualInterface", js.undefined)
+    inline def setVirtualInterfaceUndefined: Self = StObject.set(x, "virtualInterface", js.undefined)
   }
 }

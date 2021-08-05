@@ -13,22 +13,17 @@ trait SchemaListScreenshotClustersResponse extends StObject {
 }
 object SchemaListScreenshotClustersResponse {
   
-  @scala.inline
-  def apply(): SchemaListScreenshotClustersResponse = {
+  inline def apply(): SchemaListScreenshotClustersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListScreenshotClustersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListScreenshotClustersResponseMutableBuilder[Self <: SchemaListScreenshotClustersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListScreenshotClustersResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[SchemaScreenshotCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[SchemaScreenshotCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: SchemaScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: SchemaScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
   }
 }

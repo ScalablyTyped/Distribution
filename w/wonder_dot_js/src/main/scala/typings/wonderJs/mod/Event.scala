@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class Event protected ()
   extends typings.wonderJs.eventMod.Event {
-  protected def this(eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
+  /* protected */ def this(eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
 }

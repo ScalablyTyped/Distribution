@@ -35,31 +35,23 @@ trait RangeAreasUpdateData extends StObject {
 }
 object RangeAreasUpdateData {
   
-  @scala.inline
-  def apply(): RangeAreasUpdateData = {
+  inline def apply(): RangeAreasUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeAreasUpdateData]
   }
   
-  @scala.inline
-  implicit class RangeAreasUpdateDataMutableBuilder[Self <: RangeAreasUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: RangeAreasUpdateData](x: Self) {
     
-    @scala.inline
-    def setDataValidation(value: DataValidationUpdateData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
+    inline def setDataValidation(value: DataValidationUpdateData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
+    inline def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
     
-    @scala.inline
-    def setFormat(value: RangeFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: RangeFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

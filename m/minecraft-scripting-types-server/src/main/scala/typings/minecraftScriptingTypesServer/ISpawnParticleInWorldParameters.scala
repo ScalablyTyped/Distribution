@@ -30,22 +30,17 @@ trait ISpawnParticleInWorldParameters extends StObject {
 }
 object ISpawnParticleInWorldParameters {
   
-  @scala.inline
-  def apply(dimension: String, effect: ParticleEffect, position: VectorArray): ISpawnParticleInWorldParameters = {
+  inline def apply(dimension: String, effect: ParticleEffect, position: VectorArray): ISpawnParticleInWorldParameters = {
     val __obj = js.Dynamic.literal(dimension = dimension.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpawnParticleInWorldParameters]
   }
   
-  @scala.inline
-  implicit class ISpawnParticleInWorldParametersMutableBuilder[Self <: ISpawnParticleInWorldParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ISpawnParticleInWorldParameters](x: Self) {
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffect(value: ParticleEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: ParticleEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: VectorArray): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: VectorArray): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

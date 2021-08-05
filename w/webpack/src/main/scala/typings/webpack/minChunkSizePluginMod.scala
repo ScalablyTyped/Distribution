@@ -15,17 +15,14 @@ object minChunkSizePluginMod {
   }
   object MinChunkSizePluginOptions {
     
-    @scala.inline
-    def apply(minChunkSize: Double): MinChunkSizePluginOptions = {
+    inline def apply(minChunkSize: Double): MinChunkSizePluginOptions = {
       val __obj = js.Dynamic.literal(minChunkSize = minChunkSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[MinChunkSizePluginOptions]
     }
     
-    @scala.inline
-    implicit class MinChunkSizePluginOptionsMutableBuilder[Self <: MinChunkSizePluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MinChunkSizePluginOptions](x: Self) {
       
-      @scala.inline
-      def setMinChunkSize(value: Double): Self = StObject.set(x, "minChunkSize", value.asInstanceOf[js.Any])
+      inline def setMinChunkSize(value: Double): Self = StObject.set(x, "minChunkSize", value.asInstanceOf[js.Any])
     }
   }
 }

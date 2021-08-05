@@ -18,25 +18,19 @@ trait ILostContext[C /* <: IClient */] extends StObject {
 }
 object ILostContext {
   
-  @scala.inline
-  def apply[C /* <: IClient */](client: C, cn: String, dc: js.Any, start: Date): ILostContext[C] = {
+  inline def apply[C /* <: IClient */](client: C, cn: String, dc: js.Any, start: Date): ILostContext[C] = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], cn = cn.asInstanceOf[js.Any], dc = dc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILostContext[C]]
   }
   
-  @scala.inline
-  implicit class ILostContextMutableBuilder[Self <: ILostContext[?], C /* <: IClient */] (val x: Self & ILostContext[C]) extends AnyVal {
+  extension [Self <: ILostContext[?], C /* <: IClient */](x: Self & ILostContext[C]) {
     
-    @scala.inline
-    def setClient(value: C): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: C): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCn(value: String): Self = StObject.set(x, "cn", value.asInstanceOf[js.Any])
+    inline def setCn(value: String): Self = StObject.set(x, "cn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDc(value: js.Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
+    inline def setDc(value: js.Any): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

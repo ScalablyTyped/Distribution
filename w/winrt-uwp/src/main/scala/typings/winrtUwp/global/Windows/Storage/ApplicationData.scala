@@ -23,8 +23,7 @@ object ApplicationData {
   @JSGlobal("Windows.Storage.ApplicationData.current")
   @js.native
   def current: typings.winrtUwp.Windows.Storage.ApplicationData = js.native
-  @scala.inline
-  def current_=(x: typings.winrtUwp.Windows.Storage.ApplicationData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+  inline def current_=(x: typings.winrtUwp.Windows.Storage.ApplicationData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
   
   /**
     * Static method that returns the ApplicationData for a User .
@@ -32,6 +31,5 @@ object ApplicationData {
     * @return When this method completes, it returns the requested ApplicationData object.
     */
   /* static member */
-  @scala.inline
-  def getForUserAsync(user: User): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.ApplicationData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getForUserAsync")(user.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.ApplicationData]]
+  inline def getForUserAsync(user: User): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.ApplicationData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getForUserAsync")(user.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.ApplicationData]]
 }

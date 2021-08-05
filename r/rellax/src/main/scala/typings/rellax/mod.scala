@@ -112,8 +112,7 @@ object mod extends Shortcut {
   }
   object RellaxInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       elms: NodeListOf[Element] | js.Array[Element],
       options: RellaxOptions,
@@ -123,23 +122,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RellaxInstance]
     }
     
-    @scala.inline
-    implicit class RellaxInstanceMutableBuilder[Self <: RellaxInstance] (val x: Self) extends AnyVal {
+    extension [Self <: RellaxInstance](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElms(value: NodeListOf[Element] | js.Array[Element]): Self = StObject.set(x, "elms", value.asInstanceOf[js.Any])
+      inline def setElms(value: NodeListOf[Element] | js.Array[Element]): Self = StObject.set(x, "elms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElmsVarargs(value: Element*): Self = StObject.set(x, "elms", js.Array(value :_*))
+      inline def setElmsVarargs(value: Element*): Self = StObject.set(x, "elms", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: RellaxOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RellaxOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     }
   }
   
@@ -193,68 +186,48 @@ object mod extends Shortcut {
   }
   object RellaxOptions {
     
-    @scala.inline
-    def apply(): RellaxOptions = {
+    inline def apply(): RellaxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RellaxOptions]
     }
     
-    @scala.inline
-    implicit class RellaxOptionsMutableBuilder[Self <: RellaxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RellaxOptions](x: Self) {
       
-      @scala.inline
-      def setBreakpoints(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+      inline def setBreakpoints(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+      inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* positions */ X => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* positions */ X => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+      inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
-      @scala.inline
-      def setRelativeToWrapper(value: Boolean): Self = StObject.set(x, "relativeToWrapper", value.asInstanceOf[js.Any])
+      inline def setRelativeToWrapper(value: Boolean): Self = StObject.set(x, "relativeToWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeToWrapperUndefined: Self = StObject.set(x, "relativeToWrapper", js.undefined)
+      inline def setRelativeToWrapperUndefined: Self = StObject.set(x, "relativeToWrapper", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
-      @scala.inline
-      def setWrapper(value: String | HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: String | HTMLElement): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   

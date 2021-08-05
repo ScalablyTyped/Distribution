@@ -40,50 +40,43 @@ object scheduledeventsMod {
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.IntervalType.Day")
       @js.native
       def Day: IntervalType = js.native
-      @scala.inline
-      def Day_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Day")(x.asInstanceOf[js.Any])
+      inline def Day_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Day")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.IntervalType.Hour")
       @js.native
       def Hour: IntervalType = js.native
-      @scala.inline
-      def Hour_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hour")(x.asInstanceOf[js.Any])
+      inline def Hour_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Hour")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.IntervalType.Minute")
       @js.native
       def Minute: IntervalType = js.native
-      @scala.inline
-      def Minute_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minute")(x.asInstanceOf[js.Any])
+      inline def Minute_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Minute")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.IntervalType.Month")
       @js.native
       def Month: IntervalType = js.native
-      @scala.inline
-      def Month_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
+      inline def Month_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Month")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.IntervalType.Second")
       @js.native
       def Second: IntervalType = js.native
-      @scala.inline
-      def Second_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Second")(x.asInstanceOf[js.Any])
+      inline def Second_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Second")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.IntervalType.Week")
       @js.native
       def Week: IntervalType = js.native
-      @scala.inline
-      def Week_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
+      inline def Week_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Week")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.IntervalType.Year")
       @js.native
       def Year: IntervalType = js.native
-      @scala.inline
-      def Year_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
+      inline def Year_=(x: IntervalType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Year")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -145,22 +138,19 @@ object scheduledeventsMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IFolderBase): ScheduledEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ScheduledEvent]
+      inline def createIn(container: IFolderBase): ScheduledEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ScheduledEvent]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.ScheduledEvent.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.ScheduledEvent.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.TimeZoneEnum")
@@ -178,15 +168,13 @@ object scheduledeventsMod {
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.TimeZoneEnum.Server")
       @js.native
       def Server: TimeZoneEnum = js.native
-      @scala.inline
-      def Server_=(x: TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
+      inline def Server_=(x: TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/scheduledevents", "scheduledevents.TimeZoneEnum.UTC")
       @js.native
       def UTC: TimeZoneEnum = js.native
-      @scala.inline
-      def UTC_=(x: TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UTC")(x.asInstanceOf[js.Any])
+      inline def UTC_=(x: TimeZoneEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UTC")(x.asInstanceOf[js.Any])
     }
     
     /**

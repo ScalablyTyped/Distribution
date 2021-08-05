@@ -27,29 +27,22 @@ object typesReplicaGlobalSecondaryIndexSettingsUpdateMod {
   }
   object ReplicaGlobalSecondaryIndexSettingsUpdate {
     
-    @scala.inline
-    def apply(IndexName: String): ReplicaGlobalSecondaryIndexSettingsUpdate = {
+    inline def apply(IndexName: String): ReplicaGlobalSecondaryIndexSettingsUpdate = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class ReplicaGlobalSecondaryIndexSettingsUpdateMutableBuilder[Self <: ReplicaGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicaGlobalSecondaryIndexSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityAutoScalingSettingsUpdate(value: AutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
       
-      @scala.inline
-      def setProvisionedReadCapacityUnits(value: Double): Self = StObject.set(x, "ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityUnits(value: Double): Self = StObject.set(x, "ProvisionedReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityUnits", js.undefined)
+      inline def setProvisionedReadCapacityUnitsUndefined: Self = StObject.set(x, "ProvisionedReadCapacityUnits", js.undefined)
     }
   }
   
@@ -65,20 +58,16 @@ object typesReplicaGlobalSecondaryIndexSettingsUpdateMod {
   }
   object UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate {
     
-    @scala.inline
-    def apply(IndexName: String): UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate = {
+    inline def apply(IndexName: String): UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate = {
       val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate]
     }
     
-    @scala.inline
-    implicit class UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdateMutableBuilder[Self <: UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate](x: Self) {
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUpdate(value: UnmarshalledAutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
+      inline def setProvisionedReadCapacityAutoScalingSettingsUpdate(value: UnmarshalledAutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
+      inline def setProvisionedReadCapacityAutoScalingSettingsUpdateUndefined: Self = StObject.set(x, "ProvisionedReadCapacityAutoScalingSettingsUpdate", js.undefined)
     }
   }
 }

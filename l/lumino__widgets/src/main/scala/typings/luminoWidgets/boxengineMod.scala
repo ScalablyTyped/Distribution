@@ -30,8 +30,7 @@ object boxengineMod {
       * This is useful when implementing box layouts where the boundaries
       * between the sizers are interactively adjustable by the user.
       */
-    @scala.inline
-    def adjust(sizers: ArrayLike[BoxSizer], index: Double, delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("adjust")(sizers.asInstanceOf[js.Any], index.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def adjust(sizers: ArrayLike[BoxSizer], index: Double, delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("adjust")(sizers.asInstanceOf[js.Any], index.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Calculate the optimal layout sizes for a sequence of box sizers.
@@ -95,8 +94,7 @@ object boxengineMod {
       * have no effect on the new output. It is therefore not necessary to
       * create new sizer objects on each resize event.
       */
-    @scala.inline
-    def calc(sizers: ArrayLike[BoxSizer], space: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calc")(sizers.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def calc(sizers: ArrayLike[BoxSizer], space: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calc")(sizers.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("@lumino/widgets/types/boxengine", "BoxSizer")

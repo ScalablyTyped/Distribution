@@ -22,20 +22,16 @@ object linkedInSmallMod extends Shortcut {
   }
   object LinkedInSmallProps {
     
-    @scala.inline
-    def apply(): LinkedInSmallProps = {
+    inline def apply(): LinkedInSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkedInSmallProps]
     }
     
-    @scala.inline
-    implicit class LinkedInSmallPropsMutableBuilder[Self <: LinkedInSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkedInSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

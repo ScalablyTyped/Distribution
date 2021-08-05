@@ -27,25 +27,19 @@ trait SchemaAggregateBy extends StObject {
 }
 object SchemaAggregateBy {
   
-  @scala.inline
-  def apply(): SchemaAggregateBy = {
+  inline def apply(): SchemaAggregateBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAggregateBy]
   }
   
-  @scala.inline
-  implicit class SchemaAggregateByMutableBuilder[Self <: SchemaAggregateBy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAggregateBy](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
     
-    @scala.inline
-    def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
+    inline def setDataTypeName(value: String): Self = StObject.set(x, "dataTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
+    inline def setDataTypeNameUndefined: Self = StObject.set(x, "dataTypeName", js.undefined)
   }
 }

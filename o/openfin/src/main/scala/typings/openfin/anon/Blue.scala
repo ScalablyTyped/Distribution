@@ -14,22 +14,17 @@ trait Blue extends StObject {
 }
 object Blue {
   
-  @scala.inline
-  def apply(blue: Double, green: Double, red: Double): Blue = {
+  inline def apply(blue: Double, green: Double, red: Double): Blue = {
     val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
     __obj.asInstanceOf[Blue]
   }
   
-  @scala.inline
-  implicit class BlueMutableBuilder[Self <: Blue] (val x: Self) extends AnyVal {
+  extension [Self <: Blue](x: Self) {
     
-    @scala.inline
-    def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
   }
 }

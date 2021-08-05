@@ -29,67 +29,47 @@ trait IndicesForcemergeParams
 }
 object IndicesForcemergeParams {
   
-  @scala.inline
-  def apply(index: NameList): IndicesForcemergeParams = {
+  inline def apply(index: NameList): IndicesForcemergeParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesForcemergeParams]
   }
   
-  @scala.inline
-  implicit class IndicesForcemergeParamsMutableBuilder[Self <: IndicesForcemergeParams] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesForcemergeParams](x: Self) {
     
-    @scala.inline
-    def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
+    inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
+    inline def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
     
-    @scala.inline
-    def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
+    inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
+    inline def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
     
-    @scala.inline
-    def setFlush(value: Boolean): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
+    inline def setFlush(value: Boolean): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+    inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
-    @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
-    @scala.inline
-    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxNumSegments(value: Double): Self = StObject.set(x, "maxNumSegments", value.asInstanceOf[js.Any])
+    inline def setMaxNumSegments(value: Double): Self = StObject.set(x, "maxNumSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumSegmentsUndefined: Self = StObject.set(x, "maxNumSegments", js.undefined)
+    inline def setMaxNumSegmentsUndefined: Self = StObject.set(x, "maxNumSegments", js.undefined)
     
-    @scala.inline
-    def setOnlyExpungeDeletes(value: Boolean): Self = StObject.set(x, "onlyExpungeDeletes", value.asInstanceOf[js.Any])
+    inline def setOnlyExpungeDeletes(value: Boolean): Self = StObject.set(x, "onlyExpungeDeletes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyExpungeDeletesUndefined: Self = StObject.set(x, "onlyExpungeDeletes", js.undefined)
+    inline def setOnlyExpungeDeletesUndefined: Self = StObject.set(x, "onlyExpungeDeletes", js.undefined)
     
-    @scala.inline
-    def setOperationThreading(value: js.Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
+    inline def setOperationThreading(value: js.Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationThreadingUndefined: Self = StObject.set(x, "operationThreading", js.undefined)
+    inline def setOperationThreadingUndefined: Self = StObject.set(x, "operationThreading", js.undefined)
     
-    @scala.inline
-    def setWaitForMerge(value: Boolean): Self = StObject.set(x, "waitForMerge", value.asInstanceOf[js.Any])
+    inline def setWaitForMerge(value: Boolean): Self = StObject.set(x, "waitForMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForMergeUndefined: Self = StObject.set(x, "waitForMerge", js.undefined)
+    inline def setWaitForMergeUndefined: Self = StObject.set(x, "waitForMerge", js.undefined)
   }
 }

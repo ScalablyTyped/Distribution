@@ -24,23 +24,18 @@ object constructorExclusionMod {
   }
   object IConstructorExclusionDescriptor {
     
-    @scala.inline
-    def apply(): IConstructorExclusionDescriptor = {
+    inline def apply(): IConstructorExclusionDescriptor = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IConstructorExclusionDescriptor]
     }
     
-    @scala.inline
-    implicit class IConstructorExclusionDescriptorMutableBuilder[Self <: IConstructorExclusionDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: IConstructorExclusionDescriptor](x: Self) {
       
-      @scala.inline
-      def setPrivacies(value: js.Array[Privacy]): Self = StObject.set(x, "privacies", value.asInstanceOf[js.Any])
+      inline def setPrivacies(value: js.Array[Privacy]): Self = StObject.set(x, "privacies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivaciesUndefined: Self = StObject.set(x, "privacies", js.undefined)
+      inline def setPrivaciesUndefined: Self = StObject.set(x, "privacies", js.undefined)
       
-      @scala.inline
-      def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value :_*))
+      inline def setPrivaciesVarargs(value: Privacy*): Self = StObject.set(x, "privacies", js.Array(value :_*))
     }
   }
 }

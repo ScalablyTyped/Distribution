@@ -13,19 +13,15 @@ trait ColorProps extends StObject {
 }
 object ColorProps {
   
-  @scala.inline
-  def apply(): ColorProps = {
+  inline def apply(): ColorProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorProps]
   }
   
-  @scala.inline
-  implicit class ColorPropsMutableBuilder[Self <: ColorProps] (val x: Self) extends AnyVal {
+  extension [Self <: ColorProps](x: Self) {
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

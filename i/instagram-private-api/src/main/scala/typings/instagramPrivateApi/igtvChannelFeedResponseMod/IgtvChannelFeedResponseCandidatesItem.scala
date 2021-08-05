@@ -14,22 +14,17 @@ trait IgtvChannelFeedResponseCandidatesItem extends StObject {
 }
 object IgtvChannelFeedResponseCandidatesItem {
   
-  @scala.inline
-  def apply(height: Double, url: String, width: Double): IgtvChannelFeedResponseCandidatesItem = {
+  inline def apply(height: Double, url: String, width: Double): IgtvChannelFeedResponseCandidatesItem = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvChannelFeedResponseCandidatesItem]
   }
   
-  @scala.inline
-  implicit class IgtvChannelFeedResponseCandidatesItemMutableBuilder[Self <: IgtvChannelFeedResponseCandidatesItem] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvChannelFeedResponseCandidatesItem](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

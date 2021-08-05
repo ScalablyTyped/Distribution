@@ -28,43 +28,31 @@ trait OnPremisesConditionalAccessSettings
 }
 object OnPremisesConditionalAccessSettings {
   
-  @scala.inline
-  def apply(): OnPremisesConditionalAccessSettings = {
+  inline def apply(): OnPremisesConditionalAccessSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnPremisesConditionalAccessSettings]
   }
   
-  @scala.inline
-  implicit class OnPremisesConditionalAccessSettingsMutableBuilder[Self <: OnPremisesConditionalAccessSettings] (val x: Self) extends AnyVal {
+  extension [Self <: OnPremisesConditionalAccessSettings](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setExcludedGroups(value: js.Array[String]): Self = StObject.set(x, "excludedGroups", value.asInstanceOf[js.Any])
+    inline def setExcludedGroups(value: js.Array[String]): Self = StObject.set(x, "excludedGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedGroupsUndefined: Self = StObject.set(x, "excludedGroups", js.undefined)
+    inline def setExcludedGroupsUndefined: Self = StObject.set(x, "excludedGroups", js.undefined)
     
-    @scala.inline
-    def setExcludedGroupsVarargs(value: String*): Self = StObject.set(x, "excludedGroups", js.Array(value :_*))
+    inline def setExcludedGroupsVarargs(value: String*): Self = StObject.set(x, "excludedGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedGroups(value: js.Array[String]): Self = StObject.set(x, "includedGroups", value.asInstanceOf[js.Any])
+    inline def setIncludedGroups(value: js.Array[String]): Self = StObject.set(x, "includedGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedGroupsUndefined: Self = StObject.set(x, "includedGroups", js.undefined)
+    inline def setIncludedGroupsUndefined: Self = StObject.set(x, "includedGroups", js.undefined)
     
-    @scala.inline
-    def setIncludedGroupsVarargs(value: String*): Self = StObject.set(x, "includedGroups", js.Array(value :_*))
+    inline def setIncludedGroupsVarargs(value: String*): Self = StObject.set(x, "includedGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setOverrideDefaultRule(value: Boolean): Self = StObject.set(x, "overrideDefaultRule", value.asInstanceOf[js.Any])
+    inline def setOverrideDefaultRule(value: Boolean): Self = StObject.set(x, "overrideDefaultRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideDefaultRuleUndefined: Self = StObject.set(x, "overrideDefaultRule", js.undefined)
+    inline def setOverrideDefaultRuleUndefined: Self = StObject.set(x, "overrideDefaultRule", js.undefined)
   }
 }

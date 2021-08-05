@@ -11,19 +11,16 @@ trait CanLoad extends StObject {
 }
 object CanLoad {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canLoad: (Route, js.Array[UrlSegment]) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
   ): CanLoad = {
     val __obj = js.Dynamic.literal(canLoad = js.Any.fromFunction2(canLoad))
     __obj.asInstanceOf[CanLoad]
   }
   
-  @scala.inline
-  implicit class CanLoadMutableBuilder[Self <: CanLoad] (val x: Self) extends AnyVal {
+  extension [Self <: CanLoad](x: Self) {
     
-    @scala.inline
-    def setCanLoad(
+    inline def setCanLoad(
       value: (Route, js.Array[UrlSegment]) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
     ): Self = StObject.set(x, "canLoad", js.Any.fromFunction2(value))
   }

@@ -18,25 +18,19 @@ trait FindingAction extends StObject {
 }
 object FindingAction {
   
-  @scala.inline
-  def apply(): FindingAction = {
+  inline def apply(): FindingAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindingAction]
   }
   
-  @scala.inline
-  implicit class FindingActionMutableBuilder[Self <: FindingAction] (val x: Self) extends AnyVal {
+  extension [Self <: FindingAction](x: Self) {
     
-    @scala.inline
-    def setActionType(value: FindingActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: FindingActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
-    @scala.inline
-    def setApiCallDetails(value: ApiCallDetails): Self = StObject.set(x, "apiCallDetails", value.asInstanceOf[js.Any])
+    inline def setApiCallDetails(value: ApiCallDetails): Self = StObject.set(x, "apiCallDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiCallDetailsUndefined: Self = StObject.set(x, "apiCallDetails", js.undefined)
+    inline def setApiCallDetailsUndefined: Self = StObject.set(x, "apiCallDetails", js.undefined)
   }
 }

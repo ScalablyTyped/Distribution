@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFolderDefType extends StObject
 object MFFolderDefType {
   
-  @scala.inline
-  def AnyFolder: `1` = 1.asInstanceOf[`1`]
+  inline def AnyFolder: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def PropertyFolder: `3` = 3.asInstanceOf[`3`]
+  inline def PropertyFolder: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def SearchFolder: `5` = 5.asInstanceOf[`5`]
+  inline def SearchFolder: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def TraditionalFolder: `4` = 4.asInstanceOf[`4`]
+  inline def TraditionalFolder: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Unknown: `0` = 0.asInstanceOf[`0`]
+  inline def Unknown: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def ViewFolder: `2` = 2.asInstanceOf[`2`]
+  inline def ViewFolder: `2` = 2.asInstanceOf[`2`]
 }

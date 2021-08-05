@@ -43,40 +43,29 @@ trait ValueSetComposeIncludeFilter
 }
 object ValueSetComposeIncludeFilter {
   
-  @scala.inline
-  def apply(op: code, property: code, value: code): ValueSetComposeIncludeFilter = {
+  inline def apply(op: code, property: code, value: code): ValueSetComposeIncludeFilter = {
     val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSetComposeIncludeFilter]
   }
   
-  @scala.inline
-  implicit class ValueSetComposeIncludeFilterMutableBuilder[Self <: ValueSetComposeIncludeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSetComposeIncludeFilter](x: Self) {
     
-    @scala.inline
-    def setOp(value: code): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: code): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: code): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: code): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: code): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: code): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_op(value: Element): Self = StObject.set(x, "_op", value.asInstanceOf[js.Any])
+    inline def set_op(value: Element): Self = StObject.set(x, "_op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_opUndefined: Self = StObject.set(x, "_op", js.undefined)
+    inline def set_opUndefined: Self = StObject.set(x, "_op", js.undefined)
     
-    @scala.inline
-    def set_property(value: Element): Self = StObject.set(x, "_property", value.asInstanceOf[js.Any])
+    inline def set_property(value: Element): Self = StObject.set(x, "_property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_propertyUndefined: Self = StObject.set(x, "_property", js.undefined)
+    inline def set_propertyUndefined: Self = StObject.set(x, "_property", js.undefined)
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

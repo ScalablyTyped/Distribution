@@ -12,25 +12,19 @@ trait Vpc extends StObject {
 }
 object Vpc {
   
-  @scala.inline
-  def apply(securityGroupIds: js.Array[String], subnetIds: js.Array[String] | String): Vpc = {
+  inline def apply(securityGroupIds: js.Array[String], subnetIds: js.Array[String] | String): Vpc = {
     val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vpc]
   }
   
-  @scala.inline
-  implicit class VpcMutableBuilder[Self <: Vpc] (val x: Self) extends AnyVal {
+  extension [Self <: Vpc](x: Self) {
     
-    @scala.inline
-    def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetIds(value: js.Array[String] | String): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: js.Array[String] | String): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
   }
 }

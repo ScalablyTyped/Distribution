@@ -26,37 +26,27 @@ trait SchemaAndroidDeviceCatalog extends StObject {
 }
 object SchemaAndroidDeviceCatalog {
   
-  @scala.inline
-  def apply(): SchemaAndroidDeviceCatalog = {
+  inline def apply(): SchemaAndroidDeviceCatalog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAndroidDeviceCatalog]
   }
   
-  @scala.inline
-  implicit class SchemaAndroidDeviceCatalogMutableBuilder[Self <: SchemaAndroidDeviceCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAndroidDeviceCatalog](x: Self) {
     
-    @scala.inline
-    def setModels(value: js.Array[SchemaAndroidModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: js.Array[SchemaAndroidModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    @scala.inline
-    def setModelsVarargs(value: SchemaAndroidModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: SchemaAndroidModel*): Self = StObject.set(x, "models", js.Array(value :_*))
     
-    @scala.inline
-    def setRuntimeConfiguration(value: SchemaAndroidRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
+    inline def setRuntimeConfiguration(value: SchemaAndroidRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
+    inline def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
     
-    @scala.inline
-    def setVersions(value: js.Array[SchemaAndroidVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[SchemaAndroidVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: SchemaAndroidVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SchemaAndroidVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

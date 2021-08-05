@@ -13,25 +13,20 @@ object rendererVectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultOrder(feature1: FeatureLike, feature2: FeatureLike): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrder")(feature1.asInstanceOf[js.Any], feature2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def defaultOrder(feature1: FeatureLike, feature2: FeatureLike): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrder")(feature1.asInstanceOf[js.Any], feature2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getSquaredTolerance(resolution: Double, pixelRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSquaredTolerance")(resolution.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getSquaredTolerance(resolution: Double, pixelRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getSquaredTolerance")(resolution.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getTolerance(resolution: Double, pixelRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTolerance")(resolution.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getTolerance(resolution: Double, pixelRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTolerance")(resolution.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def renderFeature[T](
+  inline def renderFeature[T](
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
     listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def renderFeature[T](
+  inline def renderFeature[T](
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,

@@ -122,8 +122,7 @@ object ApiClient {
   @JSImport("docusign-esign", "ApiClient.CollectionFormatEnum")
   @js.native
   def CollectionFormatEnum: CSV = js.native
-  @scala.inline
-  def CollectionFormatEnum_=(x: CSV): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CollectionFormatEnum")(x.asInstanceOf[js.Any])
+  inline def CollectionFormatEnum_=(x: CSV): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CollectionFormatEnum")(x.asInstanceOf[js.Any])
   
   object OAuth {
     
@@ -136,20 +135,17 @@ object ApiClient {
       @JSImport("docusign-esign", "ApiClient.OAuth.BasePath.DEMO")
       @js.native
       def DEMO: String = js.native
-      @scala.inline
-      def DEMO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEMO")(x.asInstanceOf[js.Any])
+      inline def DEMO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEMO")(x.asInstanceOf[js.Any])
       
       @JSImport("docusign-esign", "ApiClient.OAuth.BasePath.PRODUCTION")
       @js.native
       def PRODUCTION: String = js.native
-      @scala.inline
-      def PRODUCTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRODUCTION")(x.asInstanceOf[js.Any])
+      inline def PRODUCTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRODUCTION")(x.asInstanceOf[js.Any])
       
       @JSImport("docusign-esign", "ApiClient.OAuth.BasePath.STAGE")
       @js.native
       def STAGE: String = js.native
-      @scala.inline
-      def STAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STAGE")(x.asInstanceOf[js.Any])
+      inline def STAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STAGE")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("docusign-esign", "ApiClient.OAuth.OAuthToken")
@@ -168,14 +164,12 @@ object ApiClient {
       @JSImport("docusign-esign", "ApiClient.OAuth.ResponseType.CODE")
       @js.native
       def CODE: String = js.native
-      @scala.inline
-      def CODE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
+      inline def CODE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CODE")(x.asInstanceOf[js.Any])
       
       @JSImport("docusign-esign", "ApiClient.OAuth.ResponseType.TOKEN")
       @js.native
       def TOKEN: String = js.native
-      @scala.inline
-      def TOKEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOKEN")(x.asInstanceOf[js.Any])
+      inline def TOKEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOKEN")(x.asInstanceOf[js.Any])
     }
     
     object Scope {
@@ -187,20 +181,17 @@ object ApiClient {
       @JSImport("docusign-esign", "ApiClient.OAuth.Scope.EXTENDED")
       @js.native
       def EXTENDED: String = js.native
-      @scala.inline
-      def EXTENDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXTENDED")(x.asInstanceOf[js.Any])
+      inline def EXTENDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXTENDED")(x.asInstanceOf[js.Any])
       
       @JSImport("docusign-esign", "ApiClient.OAuth.Scope.IMPERSONATION")
       @js.native
       def IMPERSONATION: String = js.native
-      @scala.inline
-      def IMPERSONATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPERSONATION")(x.asInstanceOf[js.Any])
+      inline def IMPERSONATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMPERSONATION")(x.asInstanceOf[js.Any])
       
       @JSImport("docusign-esign", "ApiClient.OAuth.Scope.SIGNATURE")
       @js.native
       def SIGNATURE: String = js.native
-      @scala.inline
-      def SIGNATURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGNATURE")(x.asInstanceOf[js.Any])
+      inline def SIGNATURE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIGNATURE")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("docusign-esign", "ApiClient.OAuth.UserInfo")
@@ -214,15 +205,11 @@ object ApiClient {
   @JSImport("docusign-esign", "ApiClient.RestApi")
   @js.native
   def RestApi: BasePathDEMO = js.native
-  @scala.inline
-  def RestApi_=(x: BasePathDEMO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestApi")(x.asInstanceOf[js.Any])
+  inline def RestApi_=(x: BasePathDEMO): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestApi")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def constructFromObject(data: js.Any, obj: js.Any, itemType: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructFromObject")(data.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], itemType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def constructFromObject(data: js.Any, obj: js.Any, itemType: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructFromObject")(data.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], itemType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def convertToType(data: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToType")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def convertToType(data: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToType")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
 }

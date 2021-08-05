@@ -16,19 +16,15 @@ trait SchemaAccount extends StObject {
 }
 object SchemaAccount {
   
-  @scala.inline
-  def apply(): SchemaAccount = {
+  inline def apply(): SchemaAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccount]
   }
   
-  @scala.inline
-  implicit class SchemaAccountMutableBuilder[Self <: SchemaAccount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccount](x: Self) {
     
-    @scala.inline
-    def setGoogleAuto(value: SchemaGoogleAuto): Self = StObject.set(x, "googleAuto", value.asInstanceOf[js.Any])
+    inline def setGoogleAuto(value: SchemaGoogleAuto): Self = StObject.set(x, "googleAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAutoUndefined: Self = StObject.set(x, "googleAuto", js.undefined)
+    inline def setGoogleAutoUndefined: Self = StObject.set(x, "googleAuto", js.undefined)
   }
 }

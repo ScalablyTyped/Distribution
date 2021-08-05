@@ -13,16 +13,13 @@ trait DeleteEventTrackerRequest extends StObject {
 }
 object DeleteEventTrackerRequest {
   
-  @scala.inline
-  def apply(eventTrackerArn: Arn): DeleteEventTrackerRequest = {
+  inline def apply(eventTrackerArn: Arn): DeleteEventTrackerRequest = {
     val __obj = js.Dynamic.literal(eventTrackerArn = eventTrackerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventTrackerRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEventTrackerRequestMutableBuilder[Self <: DeleteEventTrackerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventTrackerRequest](x: Self) {
     
-    @scala.inline
-    def setEventTrackerArn(value: Arn): Self = StObject.set(x, "eventTrackerArn", value.asInstanceOf[js.Any])
+    inline def setEventTrackerArn(value: Arn): Self = StObject.set(x, "eventTrackerArn", value.asInstanceOf[js.Any])
   }
 }

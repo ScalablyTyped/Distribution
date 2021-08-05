@@ -17,31 +17,23 @@ trait ResponseStatus extends StObject {
 }
 object ResponseStatus {
   
-  @scala.inline
-  def apply(): ResponseStatus = {
+  inline def apply(): ResponseStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseStatus]
   }
   
-  @scala.inline
-  implicit class ResponseStatusMutableBuilder[Self <: ResponseStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseStatus](x: Self) {
     
-    @scala.inline
-    def setResponse(value: NullableOption[ResponseType]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: NullableOption[ResponseType]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseNull: Self = StObject.set(x, "response", null)
+    inline def setResponseNull: Self = StObject.set(x, "response", null)
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setTime(value: NullableOption[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: NullableOption[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeNull: Self = StObject.set(x, "time", null)
+    inline def setTimeNull: Self = StObject.set(x, "time", null)
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

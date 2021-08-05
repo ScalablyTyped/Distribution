@@ -43,58 +43,41 @@ trait GetImportResponse extends StObject {
 }
 object GetImportResponse {
   
-  @scala.inline
-  def apply(): GetImportResponse = {
+  inline def apply(): GetImportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetImportResponse]
   }
   
-  @scala.inline
-  implicit class GetImportResponseMutableBuilder[Self <: GetImportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetImportResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: StringList): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: StringList): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setFailureReasonVarargs(value: String*): Self = StObject.set(x, "failureReason", js.Array(value :_*))
+    inline def setFailureReasonVarargs(value: String*): Self = StObject.set(x, "failureReason", js.Array(value :_*))
     
-    @scala.inline
-    def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
+    inline def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportIdUndefined: Self = StObject.set(x, "importId", js.undefined)
+    inline def setImportIdUndefined: Self = StObject.set(x, "importId", js.undefined)
     
-    @scala.inline
-    def setImportStatus(value: ImportStatus): Self = StObject.set(x, "importStatus", value.asInstanceOf[js.Any])
+    inline def setImportStatus(value: ImportStatus): Self = StObject.set(x, "importStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportStatusUndefined: Self = StObject.set(x, "importStatus", js.undefined)
+    inline def setImportStatusUndefined: Self = StObject.set(x, "importStatus", js.undefined)
     
-    @scala.inline
-    def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
+    inline def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
+    inline def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

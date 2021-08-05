@@ -10,16 +10,13 @@ trait RelayContext extends StObject {
 }
 object RelayContext {
   
-  @scala.inline
-  def apply(environment: Environment): RelayContext = {
+  inline def apply(environment: Environment): RelayContext = {
     val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelayContext]
   }
   
-  @scala.inline
-  implicit class RelayContextMutableBuilder[Self <: RelayContext] (val x: Self) extends AnyVal {
+  extension [Self <: RelayContext](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
   }
 }

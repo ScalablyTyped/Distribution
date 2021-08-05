@@ -12,19 +12,15 @@ trait ClosePointInTime[T]
 }
 object ClosePointInTime {
   
-  @scala.inline
-  def apply[T](): ClosePointInTime[T] = {
+  inline def apply[T](): ClosePointInTime[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClosePointInTime[T]]
   }
   
-  @scala.inline
-  implicit class ClosePointInTimeMutableBuilder[Self <: ClosePointInTime[?], T] (val x: Self & ClosePointInTime[T]) extends AnyVal {
+  extension [Self <: ClosePointInTime[?], T](x: Self & ClosePointInTime[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
   }
 }

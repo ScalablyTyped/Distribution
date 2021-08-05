@@ -24,8 +24,7 @@ trait SketchViewModelRedoEvent extends StObject {
 }
 object SketchViewModelRedoEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     graphics: js.Array[Graphic],
     tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape
   ): SketchViewModelRedoEvent = {
@@ -34,19 +33,14 @@ object SketchViewModelRedoEvent {
     __obj.asInstanceOf[SketchViewModelRedoEvent]
   }
   
-  @scala.inline
-  implicit class SketchViewModelRedoEventMutableBuilder[Self <: SketchViewModelRedoEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SketchViewModelRedoEvent](x: Self) {
     
-    @scala.inline
-    def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
+    inline def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
-    @scala.inline
-    def setTool(value: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: redo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: redo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

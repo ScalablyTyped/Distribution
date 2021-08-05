@@ -24,8 +24,7 @@ trait DirectionalLength extends StObject {
 }
 object DirectionalLength {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directionalLength: Double,
     hemiLength: Double,
     numDirectionalShadows: Double,
@@ -39,31 +38,22 @@ object DirectionalLength {
     __obj.asInstanceOf[DirectionalLength]
   }
   
-  @scala.inline
-  implicit class DirectionalLengthMutableBuilder[Self <: DirectionalLength] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionalLength](x: Self) {
     
-    @scala.inline
-    def setDirectionalLength(value: Double): Self = StObject.set(x, "directionalLength", value.asInstanceOf[js.Any])
+    inline def setDirectionalLength(value: Double): Self = StObject.set(x, "directionalLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHemiLength(value: Double): Self = StObject.set(x, "hemiLength", value.asInstanceOf[js.Any])
+    inline def setHemiLength(value: Double): Self = StObject.set(x, "hemiLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumDirectionalShadows(value: Double): Self = StObject.set(x, "numDirectionalShadows", value.asInstanceOf[js.Any])
+    inline def setNumDirectionalShadows(value: Double): Self = StObject.set(x, "numDirectionalShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumPointShadows(value: Double): Self = StObject.set(x, "numPointShadows", value.asInstanceOf[js.Any])
+    inline def setNumPointShadows(value: Double): Self = StObject.set(x, "numPointShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumSpotShadows(value: Double): Self = StObject.set(x, "numSpotShadows", value.asInstanceOf[js.Any])
+    inline def setNumSpotShadows(value: Double): Self = StObject.set(x, "numSpotShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointLength(value: Double): Self = StObject.set(x, "pointLength", value.asInstanceOf[js.Any])
+    inline def setPointLength(value: Double): Self = StObject.set(x, "pointLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectAreaLength(value: Double): Self = StObject.set(x, "rectAreaLength", value.asInstanceOf[js.Any])
+    inline def setRectAreaLength(value: Double): Self = StObject.set(x, "rectAreaLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotLength(value: Double): Self = StObject.set(x, "spotLength", value.asInstanceOf[js.Any])
+    inline def setSpotLength(value: Double): Self = StObject.set(x, "spotLength", value.asInstanceOf[js.Any])
   }
 }

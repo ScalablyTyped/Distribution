@@ -13,16 +13,13 @@ trait BucketObjectLockConfigurationRule extends StObject {
 }
 object BucketObjectLockConfigurationRule {
   
-  @scala.inline
-  def apply(defaultRetention: BucketObjectLockConfigurationRuleDefaultRetention): BucketObjectLockConfigurationRule = {
+  inline def apply(defaultRetention: BucketObjectLockConfigurationRuleDefaultRetention): BucketObjectLockConfigurationRule = {
     val __obj = js.Dynamic.literal(defaultRetention = defaultRetention.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketObjectLockConfigurationRule]
   }
   
-  @scala.inline
-  implicit class BucketObjectLockConfigurationRuleMutableBuilder[Self <: BucketObjectLockConfigurationRule] (val x: Self) extends AnyVal {
+  extension [Self <: BucketObjectLockConfigurationRule](x: Self) {
     
-    @scala.inline
-    def setDefaultRetention(value: BucketObjectLockConfigurationRuleDefaultRetention): Self = StObject.set(x, "defaultRetention", value.asInstanceOf[js.Any])
+    inline def setDefaultRetention(value: BucketObjectLockConfigurationRuleDefaultRetention): Self = StObject.set(x, "defaultRetention", value.asInstanceOf[js.Any])
   }
 }

@@ -130,8 +130,7 @@ object helperMod {
     /* 35633 */ val VERTEX_SHADER: typings.ol.helperMod.ShaderType.VERTEX_SHADER & Double = js.native
   }
   
-  @scala.inline
-  def computeAttributesStride(attributes: js.Array[AttributeDescription]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAttributesStride")(attributes.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computeAttributesStride(attributes: js.Array[AttributeDescription]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAttributesStride")(attributes.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   trait AttributeDescription extends StObject {
     
@@ -143,26 +142,20 @@ object helperMod {
   }
   object AttributeDescription {
     
-    @scala.inline
-    def apply(name: String, size: Double): AttributeDescription = {
+    inline def apply(name: String, size: Double): AttributeDescription = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeDescription]
     }
     
-    @scala.inline
-    implicit class AttributeDescriptionMutableBuilder[Self <: AttributeDescription] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeDescription](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: AttributeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AttributeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -174,20 +167,16 @@ object helperMod {
   }
   object BufferCacheEntry {
     
-    @scala.inline
-    def apply(buffer: typings.ol.bufferMod.default, webGlBuffer: WebGLBuffer): BufferCacheEntry = {
+    inline def apply(buffer: typings.ol.bufferMod.default, webGlBuffer: WebGLBuffer): BufferCacheEntry = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], webGlBuffer = webGlBuffer.asInstanceOf[js.Any])
       __obj.asInstanceOf[BufferCacheEntry]
     }
     
-    @scala.inline
-    implicit class BufferCacheEntryMutableBuilder[Self <: BufferCacheEntry] (val x: Self) extends AnyVal {
+    extension [Self <: BufferCacheEntry](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: typings.ol.bufferMod.default): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: typings.ol.bufferMod.default): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebGlBuffer(value: WebGLBuffer): Self = StObject.set(x, "webGlBuffer", value.asInstanceOf[js.Any])
+      inline def setWebGlBuffer(value: WebGLBuffer): Self = StObject.set(x, "webGlBuffer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,29 +188,22 @@ object helperMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
+      inline def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
+      inline def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
       
-      @scala.inline
-      def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
+      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
     }
   }
   
@@ -237,38 +219,28 @@ object helperMod {
   }
   object PostProcessesOptions {
     
-    @scala.inline
-    def apply(): PostProcessesOptions = {
+    inline def apply(): PostProcessesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PostProcessesOptions]
     }
     
-    @scala.inline
-    implicit class PostProcessesOptionsMutableBuilder[Self <: PostProcessesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostProcessesOptions](x: Self) {
       
-      @scala.inline
-      def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
+      inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
+      inline def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
       
-      @scala.inline
-      def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
+      inline def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
+      inline def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+      inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      @scala.inline
-      def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
+      inline def setVertexShader(value: String): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
+      inline def setVertexShaderUndefined: Self = StObject.set(x, "vertexShader", js.undefined)
     }
   }
   

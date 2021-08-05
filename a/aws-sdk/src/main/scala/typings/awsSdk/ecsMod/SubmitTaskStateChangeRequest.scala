@@ -53,73 +53,51 @@ trait SubmitTaskStateChangeRequest extends StObject {
 }
 object SubmitTaskStateChangeRequest {
   
-  @scala.inline
-  def apply(): SubmitTaskStateChangeRequest = {
+  inline def apply(): SubmitTaskStateChangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubmitTaskStateChangeRequest]
   }
   
-  @scala.inline
-  implicit class SubmitTaskStateChangeRequestMutableBuilder[Self <: SubmitTaskStateChangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitTaskStateChangeRequest](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: AttachmentStateChanges): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: AttachmentStateChanges): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: AttachmentStateChange*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: AttachmentStateChange*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainers(value: ContainerStateChanges): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: ContainerStateChanges): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setContainersVarargs(value: ContainerStateChange*): Self = StObject.set(x, "containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: ContainerStateChange*): Self = StObject.set(x, "containers", js.Array(value :_*))
     
-    @scala.inline
-    def setExecutionStoppedAt(value: Timestamp): Self = StObject.set(x, "executionStoppedAt", value.asInstanceOf[js.Any])
+    inline def setExecutionStoppedAt(value: Timestamp): Self = StObject.set(x, "executionStoppedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStoppedAtUndefined: Self = StObject.set(x, "executionStoppedAt", js.undefined)
+    inline def setExecutionStoppedAtUndefined: Self = StObject.set(x, "executionStoppedAt", js.undefined)
     
-    @scala.inline
-    def setPullStartedAt(value: Timestamp): Self = StObject.set(x, "pullStartedAt", value.asInstanceOf[js.Any])
+    inline def setPullStartedAt(value: Timestamp): Self = StObject.set(x, "pullStartedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullStartedAtUndefined: Self = StObject.set(x, "pullStartedAt", js.undefined)
+    inline def setPullStartedAtUndefined: Self = StObject.set(x, "pullStartedAt", js.undefined)
     
-    @scala.inline
-    def setPullStoppedAt(value: Timestamp): Self = StObject.set(x, "pullStoppedAt", value.asInstanceOf[js.Any])
+    inline def setPullStoppedAt(value: Timestamp): Self = StObject.set(x, "pullStoppedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullStoppedAtUndefined: Self = StObject.set(x, "pullStoppedAt", js.undefined)
+    inline def setPullStoppedAtUndefined: Self = StObject.set(x, "pullStoppedAt", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

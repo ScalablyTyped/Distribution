@@ -24,28 +24,21 @@ trait CrawlerDynamodbTarget extends StObject {
 }
 object CrawlerDynamodbTarget {
   
-  @scala.inline
-  def apply(path: Input[String]): CrawlerDynamodbTarget = {
+  inline def apply(path: Input[String]): CrawlerDynamodbTarget = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerDynamodbTarget]
   }
   
-  @scala.inline
-  implicit class CrawlerDynamodbTargetMutableBuilder[Self <: CrawlerDynamodbTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CrawlerDynamodbTarget](x: Self) {
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanAll(value: Input[Boolean]): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
+    inline def setScanAll(value: Input[Boolean]): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
+    inline def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
     
-    @scala.inline
-    def setScanRate(value: Input[Double]): Self = StObject.set(x, "scanRate", value.asInstanceOf[js.Any])
+    inline def setScanRate(value: Input[Double]): Self = StObject.set(x, "scanRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanRateUndefined: Self = StObject.set(x, "scanRate", js.undefined)
+    inline def setScanRateUndefined: Self = StObject.set(x, "scanRate", js.undefined)
   }
 }

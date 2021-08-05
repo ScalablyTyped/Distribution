@@ -16,22 +16,17 @@ trait CompressVideoSuccessCallbackResult extends StObject {
 }
 object CompressVideoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, size: String, tempFilePath: String): CompressVideoSuccessCallbackResult = {
+  inline def apply(errMsg: String, size: String, tempFilePath: String): CompressVideoSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tempFilePath = tempFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompressVideoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class CompressVideoSuccessCallbackResultMutableBuilder[Self <: CompressVideoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CompressVideoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
   }
 }

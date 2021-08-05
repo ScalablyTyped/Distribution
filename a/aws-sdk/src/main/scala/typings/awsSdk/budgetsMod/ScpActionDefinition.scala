@@ -18,22 +18,17 @@ trait ScpActionDefinition extends StObject {
 }
 object ScpActionDefinition {
   
-  @scala.inline
-  def apply(PolicyId: PolicyId, TargetIds: TargetIds): ScpActionDefinition = {
+  inline def apply(PolicyId: PolicyId, TargetIds: TargetIds): ScpActionDefinition = {
     val __obj = js.Dynamic.literal(PolicyId = PolicyId.asInstanceOf[js.Any], TargetIds = TargetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScpActionDefinition]
   }
   
-  @scala.inline
-  implicit class ScpActionDefinitionMutableBuilder[Self <: ScpActionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ScpActionDefinition](x: Self) {
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIds(value: TargetIds): Self = StObject.set(x, "TargetIds", value.asInstanceOf[js.Any])
+    inline def setTargetIds(value: TargetIds): Self = StObject.set(x, "TargetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "TargetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "TargetIds", js.Array(value :_*))
   }
 }

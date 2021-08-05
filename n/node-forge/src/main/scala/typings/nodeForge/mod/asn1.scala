@@ -182,28 +182,19 @@ object asn1 {
     /* 12 */ val UTF8: typings.nodeForge.mod.asn1.Type.UTF8 & Double = js.native
   }
   
-  @scala.inline
-  def create(tagClass: Class, `type`: Type, constructed: Boolean, value: js.Array[Asn1]): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagClass.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], constructed.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def create(tagClass: Class, `type`: Type, constructed: Boolean, value: Bytes): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagClass.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], constructed.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def create(tagClass: Class, `type`: Type, constructed: Boolean, value: js.Array[Asn1]): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagClass.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], constructed.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def create(tagClass: Class, `type`: Type, constructed: Boolean, value: Bytes): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagClass.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], constructed.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Asn1]
   
-  @scala.inline
-  def derToOid(der: ByteStringBuffer): OID = ^.asInstanceOf[js.Dynamic].applyDynamic("derToOid")(der.asInstanceOf[js.Any]).asInstanceOf[OID]
+  inline def derToOid(der: ByteStringBuffer): OID = ^.asInstanceOf[js.Dynamic].applyDynamic("derToOid")(der.asInstanceOf[js.Any]).asInstanceOf[OID]
   
-  @scala.inline
-  def fromDer(bytes: Bytes): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any]).asInstanceOf[Asn1]
-  @scala.inline
-  def fromDer(bytes: Bytes, strict: Boolean): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Asn1]
-  @scala.inline
-  def fromDer(bytes: ByteBuffer): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any]).asInstanceOf[Asn1]
-  @scala.inline
-  def fromDer(bytes: ByteBuffer, strict: Boolean): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def fromDer(bytes: Bytes): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any]).asInstanceOf[Asn1]
+  inline def fromDer(bytes: Bytes, strict: Boolean): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Asn1]
+  inline def fromDer(bytes: ByteBuffer): Asn1 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any]).asInstanceOf[Asn1]
+  inline def fromDer(bytes: ByteBuffer, strict: Boolean): Asn1 = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDer")(bytes.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Asn1]
   
-  @scala.inline
-  def oidToDer(oid: OID): ByteStringBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("oidToDer")(oid.asInstanceOf[js.Any]).asInstanceOf[ByteStringBuffer]
+  inline def oidToDer(oid: OID): ByteStringBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("oidToDer")(oid.asInstanceOf[js.Any]).asInstanceOf[ByteStringBuffer]
   
-  @scala.inline
-  def toDer(obj: Asn1): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toDer")(obj.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  inline def toDer(obj: Asn1): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toDer")(obj.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
   
   trait Asn1 extends StObject {
     
@@ -219,8 +210,7 @@ object asn1 {
   }
   object Asn1 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       composed: Boolean,
       constructed: Boolean,
       tagClass: Class,
@@ -232,26 +222,19 @@ object asn1 {
       __obj.asInstanceOf[Asn1]
     }
     
-    @scala.inline
-    implicit class Asn1MutableBuilder[Self <: Asn1] (val x: Self) extends AnyVal {
+    extension [Self <: Asn1](x: Self) {
       
-      @scala.inline
-      def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+      inline def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructed(value: Boolean): Self = StObject.set(x, "constructed", value.asInstanceOf[js.Any])
+      inline def setConstructed(value: Boolean): Self = StObject.set(x, "constructed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagClass(value: Class): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
+      inline def setTagClass(value: Class): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Bytes | js.Array[Asn1]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Bytes | js.Array[Asn1]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: Asn1*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Asn1*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
 }

@@ -29,31 +29,23 @@ trait IgHierarchicalGridColumnLayout
 }
 object IgHierarchicalGridColumnLayout {
   
-  @scala.inline
-  def apply(): IgHierarchicalGridColumnLayout = {
+  inline def apply(): IgHierarchicalGridColumnLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgHierarchicalGridColumnLayout]
   }
   
-  @scala.inline
-  implicit class IgHierarchicalGridColumnLayoutMutableBuilder[Self <: IgHierarchicalGridColumnLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IgHierarchicalGridColumnLayout](x: Self) {
     
-    @scala.inline
-    def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
+    inline def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
+    inline def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+    inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
   }
 }

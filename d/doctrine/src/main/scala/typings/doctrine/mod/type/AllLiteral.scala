@@ -13,17 +13,14 @@ trait AllLiteral
 }
 object AllLiteral {
   
-  @scala.inline
-  def apply(): AllLiteral = {
+  inline def apply(): AllLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AllLiteral")
     __obj.asInstanceOf[AllLiteral]
   }
   
-  @scala.inline
-  implicit class AllLiteralMutableBuilder[Self <: AllLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: AllLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.AllLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.AllLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

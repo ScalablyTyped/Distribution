@@ -13,19 +13,15 @@ trait HttpMessage extends StObject {
 }
 object HttpMessage {
   
-  @scala.inline
-  def apply(): HttpMessage = {
+  inline def apply(): HttpMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpMessage]
   }
   
-  @scala.inline
-  implicit class HttpMessageMutableBuilder[Self <: HttpMessage] (val x: Self) extends AnyVal {
+  extension [Self <: HttpMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

@@ -20,25 +20,19 @@ trait IssuesListCommentsForRepoRequestOptions extends StObject {
 }
 object IssuesListCommentsForRepoRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesListCommentsForRepoRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesListCommentsForRepoRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/issues/comments")
     __obj.asInstanceOf[IssuesListCommentsForRepoRequestOptions]
   }
   
-  @scala.inline
-  implicit class IssuesListCommentsForRepoRequestOptionsMutableBuilder[Self <: IssuesListCommentsForRepoRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesListCommentsForRepoRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

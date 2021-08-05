@@ -8,6 +8,5 @@ object lambdaWrapperStrings {
   
   @js.native
   sealed trait wrap extends StObject
-  @scala.inline
-  def wrap: wrap = "wrap".asInstanceOf[wrap]
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
 }

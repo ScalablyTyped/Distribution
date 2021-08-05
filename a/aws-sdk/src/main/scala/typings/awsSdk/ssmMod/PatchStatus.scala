@@ -23,31 +23,23 @@ trait PatchStatus extends StObject {
 }
 object PatchStatus {
   
-  @scala.inline
-  def apply(): PatchStatus = {
+  inline def apply(): PatchStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchStatus]
   }
   
-  @scala.inline
-  implicit class PatchStatusMutableBuilder[Self <: PatchStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PatchStatus](x: Self) {
     
-    @scala.inline
-    def setApprovalDate(value: DateTime): Self = StObject.set(x, "ApprovalDate", value.asInstanceOf[js.Any])
+    inline def setApprovalDate(value: DateTime): Self = StObject.set(x, "ApprovalDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalDateUndefined: Self = StObject.set(x, "ApprovalDate", js.undefined)
+    inline def setApprovalDateUndefined: Self = StObject.set(x, "ApprovalDate", js.undefined)
     
-    @scala.inline
-    def setComplianceLevel(value: PatchComplianceLevel): Self = StObject.set(x, "ComplianceLevel", value.asInstanceOf[js.Any])
+    inline def setComplianceLevel(value: PatchComplianceLevel): Self = StObject.set(x, "ComplianceLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceLevelUndefined: Self = StObject.set(x, "ComplianceLevel", js.undefined)
+    inline def setComplianceLevelUndefined: Self = StObject.set(x, "ComplianceLevel", js.undefined)
     
-    @scala.inline
-    def setDeploymentStatus(value: PatchDeploymentStatus): Self = StObject.set(x, "DeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setDeploymentStatus(value: PatchDeploymentStatus): Self = StObject.set(x, "DeploymentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentStatusUndefined: Self = StObject.set(x, "DeploymentStatus", js.undefined)
+    inline def setDeploymentStatusUndefined: Self = StObject.set(x, "DeploymentStatus", js.undefined)
   }
 }

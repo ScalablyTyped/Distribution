@@ -10,16 +10,13 @@ trait HorizontalLineProps extends StObject {
 }
 object HorizontalLineProps {
   
-  @scala.inline
-  def apply(stroke: String): HorizontalLineProps = {
+  inline def apply(stroke: String): HorizontalLineProps = {
     val __obj = js.Dynamic.literal(stroke = stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[HorizontalLineProps]
   }
   
-  @scala.inline
-  implicit class HorizontalLinePropsMutableBuilder[Self <: HorizontalLineProps] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalLineProps](x: Self) {
     
-    @scala.inline
-    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
   }
 }

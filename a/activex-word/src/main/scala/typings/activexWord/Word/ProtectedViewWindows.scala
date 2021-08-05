@@ -82,6 +82,6 @@ trait ProtectedViewWindows extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.ProtectedViewWindows_typekey")
+  /* private */ @JSName("Word.ProtectedViewWindows_typekey")
   var WordDotProtectedViewWindows_typekey: ProtectedViewWindows = js.native
 }

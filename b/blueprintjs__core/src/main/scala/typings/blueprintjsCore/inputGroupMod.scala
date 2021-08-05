@@ -29,17 +29,17 @@ object inputGroupMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MInputGroup(prevProps: IInputGroupProps & HTMLInputProps): Unit = js.native
     
-    var leftElement: js.Any = js.native
+    /* private */ var leftElement: js.Any = js.native
     
-    var maybeRenderLeftElement: js.Any = js.native
+    /* private */ var maybeRenderLeftElement: js.Any = js.native
     
-    var maybeRenderRightElement: js.Any = js.native
+    /* private */ var maybeRenderRightElement: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var rightElement: js.Any = js.native
+    /* private */ var rightElement: js.Any = js.native
     
-    var updateInputWidth: js.Any = js.native
+    /* private */ var updateInputWidth: js.Any = js.native
   }
   /* static members */
   object InputGroup {
@@ -51,8 +51,7 @@ object inputGroupMod {
     @JSImport("@blueprintjs/core/lib/esm/components/forms/inputGroup", "InputGroup.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IInputGroupProps
@@ -123,92 +122,64 @@ object inputGroupMod {
   }
   object IInputGroupProps {
     
-    @scala.inline
-    def apply(): IInputGroupProps = {
+    inline def apply(): IInputGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInputGroupProps]
     }
     
-    @scala.inline
-    implicit class IInputGroupPropsMutableBuilder[Self <: IInputGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IInputGroupProps](x: Self) {
       
-      @scala.inline
-      def setAsyncControl(value: Boolean): Self = StObject.set(x, "asyncControl", value.asInstanceOf[js.Any])
+      inline def setAsyncControl(value: Boolean): Self = StObject.set(x, "asyncControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncControlUndefined: Self = StObject.set(x, "asyncControl", js.undefined)
+      inline def setAsyncControlUndefined: Self = StObject.set(x, "asyncControl", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: IRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: IRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRefFunction1(value: /* ref */ HTMLInputElement | Null => js.Any): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* ref */ HTMLInputElement | Null => js.Any): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      @scala.inline
-      def setLeftElement(value: Element): Self = StObject.set(x, "leftElement", value.asInstanceOf[js.Any])
+      inline def setLeftElement(value: Element): Self = StObject.set(x, "leftElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftElementUndefined: Self = StObject.set(x, "leftElement", js.undefined)
+      inline def setLeftElementUndefined: Self = StObject.set(x, "leftElement", js.undefined)
       
-      @scala.inline
-      def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+      inline def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
+      inline def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
       
-      @scala.inline
-      def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
+      inline def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
+      inline def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
+      inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -220,26 +191,20 @@ object inputGroupMod {
   }
   object IInputGroupState {
     
-    @scala.inline
-    def apply(): IInputGroupState = {
+    inline def apply(): IInputGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IInputGroupState]
     }
     
-    @scala.inline
-    implicit class IInputGroupStateMutableBuilder[Self <: IInputGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: IInputGroupState](x: Self) {
       
-      @scala.inline
-      def setLeftElementWidth(value: Double): Self = StObject.set(x, "leftElementWidth", value.asInstanceOf[js.Any])
+      inline def setLeftElementWidth(value: Double): Self = StObject.set(x, "leftElementWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftElementWidthUndefined: Self = StObject.set(x, "leftElementWidth", js.undefined)
+      inline def setLeftElementWidthUndefined: Self = StObject.set(x, "leftElementWidth", js.undefined)
       
-      @scala.inline
-      def setRightElementWidth(value: Double): Self = StObject.set(x, "rightElementWidth", value.asInstanceOf[js.Any])
+      inline def setRightElementWidth(value: Double): Self = StObject.set(x, "rightElementWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightElementWidthUndefined: Self = StObject.set(x, "rightElementWidth", js.undefined)
+      inline def setRightElementWidthUndefined: Self = StObject.set(x, "rightElementWidth", js.undefined)
     }
   }
 }

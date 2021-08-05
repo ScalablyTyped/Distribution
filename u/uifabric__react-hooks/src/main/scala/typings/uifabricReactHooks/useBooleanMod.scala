@@ -10,8 +10,7 @@ object useBooleanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useBoolean(initialState: Boolean): js.Tuple2[Boolean, IUseBooleanCallbacks] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBoolean")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, IUseBooleanCallbacks]]
+  inline def useBoolean(initialState: Boolean): js.Tuple2[Boolean, IUseBooleanCallbacks] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBoolean")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, IUseBooleanCallbacks]]
   
   trait IUseBooleanCallbacks extends StObject {
     
@@ -26,23 +25,18 @@ object useBooleanMod {
   }
   object IUseBooleanCallbacks {
     
-    @scala.inline
-    def apply(setFalse: () => Unit, setTrue: () => Unit, toggle: () => Unit): IUseBooleanCallbacks = {
+    inline def apply(setFalse: () => Unit, setTrue: () => Unit, toggle: () => Unit): IUseBooleanCallbacks = {
       val __obj = js.Dynamic.literal(setFalse = js.Any.fromFunction0(setFalse), setTrue = js.Any.fromFunction0(setTrue), toggle = js.Any.fromFunction0(toggle))
       __obj.asInstanceOf[IUseBooleanCallbacks]
     }
     
-    @scala.inline
-    implicit class IUseBooleanCallbacksMutableBuilder[Self <: IUseBooleanCallbacks] (val x: Self) extends AnyVal {
+    extension [Self <: IUseBooleanCallbacks](x: Self) {
       
-      @scala.inline
-      def setSetFalse(value: () => Unit): Self = StObject.set(x, "setFalse", js.Any.fromFunction0(value))
+      inline def setSetFalse(value: () => Unit): Self = StObject.set(x, "setFalse", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetTrue(value: () => Unit): Self = StObject.set(x, "setTrue", js.Any.fromFunction0(value))
+      inline def setSetTrue(value: () => Unit): Self = StObject.set(x, "setTrue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
   }
 }

@@ -36,8 +36,7 @@ trait StructureExtension
 }
 object StructureExtension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => ScreepsReturnCode,
     effects: js.Array[RoomObjectEffect],
     energy: Double,
@@ -57,16 +56,12 @@ object StructureExtension {
     __obj.asInstanceOf[StructureExtension]
   }
   
-  @scala.inline
-  implicit class StructureExtensionMutableBuilder[Self <: StructureExtension] (val x: Self) extends AnyVal {
+  extension [Self <: StructureExtension](x: Self) {
     
-    @scala.inline
-    def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+    inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
+    inline def setEnergyCapacity(value: Double): Self = StObject.set(x, "energyCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: StoreRESOURCEENERGYfalse): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: StoreRESOURCEENERGYfalse): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait EventEmitterTextMap extends StObject {
 }
 object EventEmitterTextMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     engine: IPlaybackEngine,
     eventEmitter: IEventEmitter,
     textMap: ITextMap,
@@ -31,19 +30,14 @@ object EventEmitterTextMap {
     __obj.asInstanceOf[EventEmitterTextMap]
   }
   
-  @scala.inline
-  implicit class EventEmitterTextMapMutableBuilder[Self <: EventEmitterTextMap] (val x: Self) extends AnyVal {
+  extension [Self <: EventEmitterTextMap](x: Self) {
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+    inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

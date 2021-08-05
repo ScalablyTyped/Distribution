@@ -10,16 +10,13 @@ trait PublicKeyCredentialEntity extends StObject {
 }
 object PublicKeyCredentialEntity {
   
-  @scala.inline
-  def apply(name: java.lang.String): PublicKeyCredentialEntity = {
+  inline def apply(name: java.lang.String): PublicKeyCredentialEntity = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyCredentialEntity]
   }
   
-  @scala.inline
-  implicit class PublicKeyCredentialEntityMutableBuilder[Self <: PublicKeyCredentialEntity] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyCredentialEntity](x: Self) {
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

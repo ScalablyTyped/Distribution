@@ -23,31 +23,23 @@ trait GetEffectivePoliciesRequest extends StObject {
 }
 object GetEffectivePoliciesRequest {
   
-  @scala.inline
-  def apply(): GetEffectivePoliciesRequest = {
+  inline def apply(): GetEffectivePoliciesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEffectivePoliciesRequest]
   }
   
-  @scala.inline
-  implicit class GetEffectivePoliciesRequestMutableBuilder[Self <: GetEffectivePoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEffectivePoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoIdentityPoolIdUndefined: Self = StObject.set(x, "cognitoIdentityPoolId", js.undefined)
+    inline def setCognitoIdentityPoolIdUndefined: Self = StObject.set(x, "cognitoIdentityPoolId", js.undefined)
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
+    inline def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
   }
 }

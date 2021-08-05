@@ -24,8 +24,7 @@ object anon {
   }
   object Col {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       col: Double,
       line: Double,
       pos: Double,
@@ -37,23 +36,17 @@ object anon {
       __obj.asInstanceOf[Col]
     }
     
-    @scala.inline
-    implicit class ColMutableBuilder[Self <: Col] (val x: Self) extends AnyVal {
+    extension [Self <: Col](x: Self) {
       
-      @scala.inline
-      def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: comment1 | comment2 | comment3 | comment4): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: comment1 | comment2 | comment3 | comment4): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

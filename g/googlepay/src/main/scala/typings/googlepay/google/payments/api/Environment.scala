@@ -23,9 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Environment extends StObject
 object Environment {
   
-  @scala.inline
-  def PRODUCTION: typings.googlepay.googlepayStrings.PRODUCTION = "PRODUCTION".asInstanceOf[typings.googlepay.googlepayStrings.PRODUCTION]
+  inline def PRODUCTION: typings.googlepay.googlepayStrings.PRODUCTION = "PRODUCTION".asInstanceOf[typings.googlepay.googlepayStrings.PRODUCTION]
   
-  @scala.inline
-  def TEST: typings.googlepay.googlepayStrings.TEST = "TEST".asInstanceOf[typings.googlepay.googlepayStrings.TEST]
+  inline def TEST: typings.googlepay.googlepayStrings.TEST = "TEST".asInstanceOf[typings.googlepay.googlepayStrings.TEST]
 }

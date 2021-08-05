@@ -57,8 +57,7 @@ trait XContent
 }
 object XContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     Identifier: XContentIdentifier,
     acquire: () => Unit,
@@ -73,25 +72,18 @@ object XContent {
     __obj.asInstanceOf[XContent]
   }
   
-  @scala.inline
-  implicit class XContentMutableBuilder[Self <: XContent] (val x: Self) extends AnyVal {
+  extension [Self <: XContent](x: Self) {
     
-    @scala.inline
-    def setAddContentEventListener(value: XContentEventListener => Unit): Self = StObject.set(x, "addContentEventListener", js.Any.fromFunction1(value))
+    inline def setAddContentEventListener(value: XContentEventListener => Unit): Self = StObject.set(x, "addContentEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
+    inline def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIdentifier(value: () => XContentIdentifier): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
+    inline def setGetIdentifier(value: () => XContentIdentifier): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIdentifier(value: XContentIdentifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: XContentIdentifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveContentEventListener(value: XContentEventListener => Unit): Self = StObject.set(x, "removeContentEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveContentEventListener(value: XContentEventListener => Unit): Self = StObject.set(x, "removeContentEventListener", js.Any.fromFunction1(value))
   }
 }

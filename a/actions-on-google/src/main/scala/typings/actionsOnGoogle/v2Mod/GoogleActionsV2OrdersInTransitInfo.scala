@@ -13,19 +13,15 @@ trait GoogleActionsV2OrdersInTransitInfo extends StObject {
 }
 object GoogleActionsV2OrdersInTransitInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersInTransitInfo = {
+  inline def apply(): GoogleActionsV2OrdersInTransitInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersInTransitInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersInTransitInfoMutableBuilder[Self <: GoogleActionsV2OrdersInTransitInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersInTransitInfo](x: Self) {
     
-    @scala.inline
-    def setUpdatedTime(value: String): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
+    inline def setUpdatedTime(value: String): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedTimeUndefined: Self = StObject.set(x, "updatedTime", js.undefined)
+    inline def setUpdatedTimeUndefined: Self = StObject.set(x, "updatedTime", js.undefined)
   }
 }

@@ -468,8 +468,7 @@ trait SystemInfoDeviceCapability extends StObject {
 }
 object SystemInfoDeviceCapability {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accelerometer: Boolean,
     accelerometerWakeup: Boolean,
     autoRotation: Boolean,
@@ -543,211 +542,142 @@ object SystemInfoDeviceCapability {
     __obj.asInstanceOf[SystemInfoDeviceCapability]
   }
   
-  @scala.inline
-  implicit class SystemInfoDeviceCapabilityMutableBuilder[Self <: SystemInfoDeviceCapability] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoDeviceCapability](x: Self) {
     
-    @scala.inline
-    def setAccelerometer(value: Boolean): Self = StObject.set(x, "accelerometer", value.asInstanceOf[js.Any])
+    inline def setAccelerometer(value: Boolean): Self = StObject.set(x, "accelerometer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccelerometerWakeup(value: Boolean): Self = StObject.set(x, "accelerometerWakeup", value.asInstanceOf[js.Any])
+    inline def setAccelerometerWakeup(value: Boolean): Self = StObject.set(x, "accelerometerWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRotation(value: Boolean): Self = StObject.set(x, "autoRotation", value.asInstanceOf[js.Any])
+    inline def setAutoRotation(value: Boolean): Self = StObject.set(x, "autoRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarometer(value: Boolean): Self = StObject.set(x, "barometer", value.asInstanceOf[js.Any])
+    inline def setBarometer(value: Boolean): Self = StObject.set(x, "barometer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarometerWakeup(value: Boolean): Self = StObject.set(x, "barometerWakeup", value.asInstanceOf[js.Any])
+    inline def setBarometerWakeup(value: Boolean): Self = StObject.set(x, "barometerWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluetooth(value: Boolean): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
+    inline def setBluetooth(value: Boolean): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: Boolean): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraBack(value: Boolean): Self = StObject.set(x, "cameraBack", value.asInstanceOf[js.Any])
+    inline def setCameraBack(value: Boolean): Self = StObject.set(x, "cameraBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraBackFlash(value: Boolean): Self = StObject.set(x, "cameraBackFlash", value.asInstanceOf[js.Any])
+    inline def setCameraBackFlash(value: Boolean): Self = StObject.set(x, "cameraBackFlash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraFront(value: Boolean): Self = StObject.set(x, "cameraFront", value.asInstanceOf[js.Any])
+    inline def setCameraFront(value: Boolean): Self = StObject.set(x, "cameraFront", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraFrontFlash(value: Boolean): Self = StObject.set(x, "cameraFrontFlash", value.asInstanceOf[js.Any])
+    inline def setCameraFrontFlash(value: Boolean): Self = StObject.set(x, "cameraFrontFlash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataEncryption(value: Boolean): Self = StObject.set(x, "dataEncryption", value.asInstanceOf[js.Any])
+    inline def setDataEncryption(value: Boolean): Self = StObject.set(x, "dataEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuid(value: String): Self = StObject.set(x, "duid", value.asInstanceOf[js.Any])
+    inline def setDuid(value: String): Self = StObject.set(x, "duid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFmRadio(value: Boolean): Self = StObject.set(x, "fmRadio", value.asInstanceOf[js.Any])
+    inline def setFmRadio(value: Boolean): Self = StObject.set(x, "fmRadio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicsAcceleration(value: Boolean): Self = StObject.set(x, "graphicsAcceleration", value.asInstanceOf[js.Any])
+    inline def setGraphicsAcceleration(value: Boolean): Self = StObject.set(x, "graphicsAcceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGyroscope(value: Boolean): Self = StObject.set(x, "gyroscope", value.asInstanceOf[js.Any])
+    inline def setGyroscope(value: Boolean): Self = StObject.set(x, "gyroscope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGyroscopeWakeup(value: Boolean): Self = StObject.set(x, "gyroscopeWakeup", value.asInstanceOf[js.Any])
+    inline def setGyroscopeWakeup(value: Boolean): Self = StObject.set(x, "gyroscopeWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputKeyboard(value: Boolean): Self = StObject.set(x, "inputKeyboard", value.asInstanceOf[js.Any])
+    inline def setInputKeyboard(value: Boolean): Self = StObject.set(x, "inputKeyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputKeyboardLayout(value: Boolean): Self = StObject.set(x, "inputKeyboardLayout", value.asInstanceOf[js.Any])
+    inline def setInputKeyboardLayout(value: Boolean): Self = StObject.set(x, "inputKeyboardLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationGps(value: Boolean): Self = StObject.set(x, "locationGps", value.asInstanceOf[js.Any])
+    inline def setLocationGps(value: Boolean): Self = StObject.set(x, "locationGps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationWps(value: Boolean): Self = StObject.set(x, "locationWps", value.asInstanceOf[js.Any])
+    inline def setLocationWps(value: Boolean): Self = StObject.set(x, "locationWps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnetometer(value: Boolean): Self = StObject.set(x, "magnetometer", value.asInstanceOf[js.Any])
+    inline def setMagnetometer(value: Boolean): Self = StObject.set(x, "magnetometer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagnetometerWakeup(value: Boolean): Self = StObject.set(x, "magnetometerWakeup", value.asInstanceOf[js.Any])
+    inline def setMagnetometerWakeup(value: Boolean): Self = StObject.set(x, "magnetometerWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrophone(value: Boolean): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
+    inline def setMicrophone(value: Boolean): Self = StObject.set(x, "microphone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiTouchCount(value: Double): Self = StObject.set(x, "multiTouchCount", value.asInstanceOf[js.Any])
+    inline def setMultiTouchCount(value: Double): Self = StObject.set(x, "multiTouchCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeApiVersion(value: String): Self = StObject.set(x, "nativeApiVersion", value.asInstanceOf[js.Any])
+    inline def setNativeApiVersion(value: String): Self = StObject.set(x, "nativeApiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeOspCompatible(value: Boolean): Self = StObject.set(x, "nativeOspCompatible", value.asInstanceOf[js.Any])
+    inline def setNativeOspCompatible(value: Boolean): Self = StObject.set(x, "nativeOspCompatible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfc(value: Boolean): Self = StObject.set(x, "nfc", value.asInstanceOf[js.Any])
+    inline def setNfc(value: Boolean): Self = StObject.set(x, "nfc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNfcReservedPush(value: Boolean): Self = StObject.set(x, "nfcReservedPush", value.asInstanceOf[js.Any])
+    inline def setNfcReservedPush(value: Boolean): Self = StObject.set(x, "nfcReservedPush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpengles(value: Boolean): Self = StObject.set(x, "opengles", value.asInstanceOf[js.Any])
+    inline def setOpengles(value: Boolean): Self = StObject.set(x, "opengles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenglesVersion1_1(value: Boolean): Self = StObject.set(x, "openglesVersion1_1", value.asInstanceOf[js.Any])
+    inline def setOpenglesVersion1_1(value: Boolean): Self = StObject.set(x, "openglesVersion1_1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenglesVersion2_0(value: Boolean): Self = StObject.set(x, "openglesVersion2_0", value.asInstanceOf[js.Any])
+    inline def setOpenglesVersion2_0(value: Boolean): Self = StObject.set(x, "openglesVersion2_0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenglestextureFormat(value: String): Self = StObject.set(x, "openglestextureFormat", value.asInstanceOf[js.Any])
+    inline def setOpenglestextureFormat(value: String): Self = StObject.set(x, "openglestextureFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotometer(value: Boolean): Self = StObject.set(x, "photometer", value.asInstanceOf[js.Any])
+    inline def setPhotometer(value: Boolean): Self = StObject.set(x, "photometer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotometerWakeup(value: Boolean): Self = StObject.set(x, "photometerWakeup", value.asInstanceOf[js.Any])
+    inline def setPhotometerWakeup(value: Boolean): Self = StObject.set(x, "photometerWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformCoreCpuArch(value: String): Self = StObject.set(x, "platformCoreCpuArch", value.asInstanceOf[js.Any])
+    inline def setPlatformCoreCpuArch(value: String): Self = StObject.set(x, "platformCoreCpuArch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformCoreFpuArch(value: String): Self = StObject.set(x, "platformCoreFpuArch", value.asInstanceOf[js.Any])
+    inline def setPlatformCoreFpuArch(value: String): Self = StObject.set(x, "platformCoreFpuArch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
+    inline def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+    inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: SystemInfoProfile | MOBILE_FULL | MOBILE_WEB | MOBILE | WEARABLE | TV): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: SystemInfoProfile | MOBILE_FULL | MOBILE_WEB | MOBILE | WEARABLE | TV): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximity(value: Boolean): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
+    inline def setProximity(value: Boolean): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProximityWakeup(value: Boolean): Self = StObject.set(x, "proximityWakeup", value.asInstanceOf[js.Any])
+    inline def setProximityWakeup(value: Boolean): Self = StObject.set(x, "proximityWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenOutputHdmi(value: Boolean): Self = StObject.set(x, "screenOutputHdmi", value.asInstanceOf[js.Any])
+    inline def setScreenOutputHdmi(value: Boolean): Self = StObject.set(x, "screenOutputHdmi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenOutputRca(value: Boolean): Self = StObject.set(x, "screenOutputRca", value.asInstanceOf[js.Any])
+    inline def setScreenOutputRca(value: Boolean): Self = StObject.set(x, "screenOutputRca", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSize480_800(value: Boolean): Self = StObject.set(x, "screenSize480_800", value.asInstanceOf[js.Any])
+    inline def setScreenSize480_800(value: Boolean): Self = StObject.set(x, "screenSize480_800", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSize720_1280(value: Boolean): Self = StObject.set(x, "screenSize720_1280", value.asInstanceOf[js.Any])
+    inline def setScreenSize720_1280(value: Boolean): Self = StObject.set(x, "screenSize720_1280", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSizeNormal(value: Boolean): Self = StObject.set(x, "screenSizeNormal", value.asInstanceOf[js.Any])
+    inline def setScreenSizeNormal(value: Boolean): Self = StObject.set(x, "screenSizeNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecureElement(value: Boolean): Self = StObject.set(x, "secureElement", value.asInstanceOf[js.Any])
+    inline def setSecureElement(value: Boolean): Self = StObject.set(x, "secureElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellAppWidget(value: Boolean): Self = StObject.set(x, "shellAppWidget", value.asInstanceOf[js.Any])
+    inline def setShellAppWidget(value: Boolean): Self = StObject.set(x, "shellAppWidget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipVoip(value: Boolean): Self = StObject.set(x, "sipVoip", value.asInstanceOf[js.Any])
+    inline def setSipVoip(value: Boolean): Self = StObject.set(x, "sipVoip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechRecognition(value: Boolean): Self = StObject.set(x, "speechRecognition", value.asInstanceOf[js.Any])
+    inline def setSpeechRecognition(value: Boolean): Self = StObject.set(x, "speechRecognition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechSynthesis(value: Boolean): Self = StObject.set(x, "speechSynthesis", value.asInstanceOf[js.Any])
+    inline def setSpeechSynthesis(value: Boolean): Self = StObject.set(x, "speechSynthesis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelephony(value: Boolean): Self = StObject.set(x, "telephony", value.asInstanceOf[js.Any])
+    inline def setTelephony(value: Boolean): Self = StObject.set(x, "telephony", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelephonyMms(value: Boolean): Self = StObject.set(x, "telephonyMms", value.asInstanceOf[js.Any])
+    inline def setTelephonyMms(value: Boolean): Self = StObject.set(x, "telephonyMms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelephonySms(value: Boolean): Self = StObject.set(x, "telephonySms", value.asInstanceOf[js.Any])
+    inline def setTelephonySms(value: Boolean): Self = StObject.set(x, "telephonySms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltmeter(value: Boolean): Self = StObject.set(x, "tiltmeter", value.asInstanceOf[js.Any])
+    inline def setTiltmeter(value: Boolean): Self = StObject.set(x, "tiltmeter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiltmeterWakeup(value: Boolean): Self = StObject.set(x, "tiltmeterWakeup", value.asInstanceOf[js.Any])
+    inline def setTiltmeterWakeup(value: Boolean): Self = StObject.set(x, "tiltmeterWakeup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsbAccessory(value: Boolean): Self = StObject.set(x, "usbAccessory", value.asInstanceOf[js.Any])
+    inline def setUsbAccessory(value: Boolean): Self = StObject.set(x, "usbAccessory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsbHost(value: Boolean): Self = StObject.set(x, "usbHost", value.asInstanceOf[js.Any])
+    inline def setUsbHost(value: Boolean): Self = StObject.set(x, "usbHost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisionFaceRecognition(value: Boolean): Self = StObject.set(x, "visionFaceRecognition", value.asInstanceOf[js.Any])
+    inline def setVisionFaceRecognition(value: Boolean): Self = StObject.set(x, "visionFaceRecognition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisionImageRecognition(value: Boolean): Self = StObject.set(x, "visionImageRecognition", value.asInstanceOf[js.Any])
+    inline def setVisionImageRecognition(value: Boolean): Self = StObject.set(x, "visionImageRecognition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisionQrcodeGeneration(value: Boolean): Self = StObject.set(x, "visionQrcodeGeneration", value.asInstanceOf[js.Any])
+    inline def setVisionQrcodeGeneration(value: Boolean): Self = StObject.set(x, "visionQrcodeGeneration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisionQrcodeRecognition(value: Boolean): Self = StObject.set(x, "visionQrcodeRecognition", value.asInstanceOf[js.Any])
+    inline def setVisionQrcodeRecognition(value: Boolean): Self = StObject.set(x, "visionQrcodeRecognition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebApiVersion(value: String): Self = StObject.set(x, "webApiVersion", value.asInstanceOf[js.Any])
+    inline def setWebApiVersion(value: String): Self = StObject.set(x, "webApiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifi(value: Boolean): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
+    inline def setWifi(value: Boolean): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiDirect(value: Boolean): Self = StObject.set(x, "wifiDirect", value.asInstanceOf[js.Any])
+    inline def setWifiDirect(value: Boolean): Self = StObject.set(x, "wifiDirect", value.asInstanceOf[js.Any])
   }
 }

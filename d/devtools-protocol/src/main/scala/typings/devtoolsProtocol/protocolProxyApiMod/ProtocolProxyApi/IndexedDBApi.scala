@@ -64,8 +64,7 @@ trait IndexedDBApi extends StObject {
 }
 object IndexedDBApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearObjectStore: ClearObjectStoreRequest => js.Promise[Unit],
     deleteDatabase: DeleteDatabaseRequest => js.Promise[Unit],
     deleteObjectStoreEntries: DeleteObjectStoreEntriesRequest => js.Promise[Unit],
@@ -80,34 +79,24 @@ object IndexedDBApi {
     __obj.asInstanceOf[IndexedDBApi]
   }
   
-  @scala.inline
-  implicit class IndexedDBApiMutableBuilder[Self <: IndexedDBApi] (val x: Self) extends AnyVal {
+  extension [Self <: IndexedDBApi](x: Self) {
     
-    @scala.inline
-    def setClearObjectStore(value: ClearObjectStoreRequest => js.Promise[Unit]): Self = StObject.set(x, "clearObjectStore", js.Any.fromFunction1(value))
+    inline def setClearObjectStore(value: ClearObjectStoreRequest => js.Promise[Unit]): Self = StObject.set(x, "clearObjectStore", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteDatabase(value: DeleteDatabaseRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction1(value))
+    inline def setDeleteDatabase(value: DeleteDatabaseRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteObjectStoreEntries(value: DeleteObjectStoreEntriesRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteObjectStoreEntries", js.Any.fromFunction1(value))
+    inline def setDeleteObjectStoreEntries(value: DeleteObjectStoreEntriesRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteObjectStoreEntries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMetadata(value: GetMetadataRequest => js.Promise[GetMetadataResponse]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
+    inline def setGetMetadata(value: GetMetadataRequest => js.Promise[GetMetadataResponse]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestData(value: RequestDataRequest => js.Promise[RequestDataResponse]): Self = StObject.set(x, "requestData", js.Any.fromFunction1(value))
+    inline def setRequestData(value: RequestDataRequest => js.Promise[RequestDataResponse]): Self = StObject.set(x, "requestData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestDatabase(value: RequestDatabaseRequest => js.Promise[RequestDatabaseResponse]): Self = StObject.set(x, "requestDatabase", js.Any.fromFunction1(value))
+    inline def setRequestDatabase(value: RequestDatabaseRequest => js.Promise[RequestDatabaseResponse]): Self = StObject.set(x, "requestDatabase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestDatabaseNames(value: RequestDatabaseNamesRequest => js.Promise[RequestDatabaseNamesResponse]): Self = StObject.set(x, "requestDatabaseNames", js.Any.fromFunction1(value))
+    inline def setRequestDatabaseNames(value: RequestDatabaseNamesRequest => js.Promise[RequestDatabaseNamesResponse]): Self = StObject.set(x, "requestDatabaseNames", js.Any.fromFunction1(value))
   }
 }

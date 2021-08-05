@@ -435,455 +435,315 @@ trait INodeInterface
 }
 object INodeInterface {
   
-  @scala.inline
-  def apply(): INodeInterface = {
+  inline def apply(): INodeInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INodeInterface]
   }
   
-  @scala.inline
-  implicit class INodeInterfaceMutableBuilder[Self <: INodeInterface] (val x: Self) extends AnyVal {
+  extension [Self <: INodeInterface](x: Self) {
     
-    @scala.inline
-    def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
+    inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDragUndefined: Self = StObject.set(x, "allowDrag", js.undefined)
+    inline def setAllowDragUndefined: Self = StObject.set(x, "allowDrag", js.undefined)
     
-    @scala.inline
-    def setAllowDrop(value: Boolean): Self = StObject.set(x, "allowDrop", value.asInstanceOf[js.Any])
+    inline def setAllowDrop(value: Boolean): Self = StObject.set(x, "allowDrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDropUndefined: Self = StObject.set(x, "allowDrop", js.undefined)
+    inline def setAllowDropUndefined: Self = StObject.set(x, "allowDrop", js.undefined)
     
-    @scala.inline
-    def setAppendChild(
+    inline def setAppendChild(
       value: (/* node */ js.UndefOr[js.Any], /* suppressEvents */ js.UndefOr[Boolean], /* commit */ js.UndefOr[Boolean]) => INodeInterface
     ): Self = StObject.set(x, "appendChild", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
+    inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
-    @scala.inline
-    def setBubble(
+    inline def setBubble(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "bubble", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
+    inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
-    @scala.inline
-    def setCascadeBy(
+    inline def setCascadeBy(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "cascadeBy", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCascadeByUndefined: Self = StObject.set(x, "cascadeBy", js.undefined)
+    inline def setCascadeByUndefined: Self = StObject.set(x, "cascadeBy", js.undefined)
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setChildNodes(value: Array): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+    inline def setChildNodes(value: Array): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodesUndefined: Self = StObject.set(x, "childNodes", js.undefined)
+    inline def setChildNodesUndefined: Self = StObject.set(x, "childNodes", js.undefined)
     
-    @scala.inline
-    def setChildren(value: Array): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Array): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
+    inline def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
+    inline def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
     
-    @scala.inline
-    def setCollapse(
+    inline def setCollapse(
       value: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "collapse", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCollapseChildren(
+    inline def setCollapseChildren(
       value: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "collapseChildren", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCollapseChildrenUndefined: Self = StObject.set(x, "collapseChildren", js.undefined)
+    inline def setCollapseChildrenUndefined: Self = StObject.set(x, "collapseChildren", js.undefined)
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setContains(value: /* node */ js.UndefOr[INodeInterface] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: /* node */ js.UndefOr[INodeInterface] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+    inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    @scala.inline
-    def setCopy(value: (/* id */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean]) => INodeInterface): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
+    inline def setCopy(value: (/* id */ js.UndefOr[String], /* deep */ js.UndefOr[Boolean]) => INodeInterface): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+    inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    @scala.inline
-    def setCreateNode(value: /* node */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "createNode", js.Any.fromFunction1(value))
+    inline def setCreateNode(value: /* node */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "createNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
+    inline def setCreateNodeUndefined: Self = StObject.set(x, "createNode", js.undefined)
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: /* silent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: /* silent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setEachChild(
+    inline def setEachChild(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "eachChild", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEachChildUndefined: Self = StObject.set(x, "eachChild", js.undefined)
+    inline def setEachChildUndefined: Self = StObject.set(x, "eachChild", js.undefined)
     
-    @scala.inline
-    def setExpand(
+    inline def setExpand(
       value: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExpandChildren(
+    inline def setExpandChildren(
       value: (/* recursive */ js.UndefOr[Boolean], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "expandChildren", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExpandChildrenUndefined: Self = StObject.set(x, "expandChildren", js.undefined)
+    inline def setExpandChildrenUndefined: Self = StObject.set(x, "expandChildren", js.undefined)
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+    inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+    inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setFindChild(
+    inline def setFindChild(
       value: (/* attribute */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
     ): Self = StObject.set(x, "findChild", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFindChildBy(
+    inline def setFindChildBy(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
     ): Self = StObject.set(x, "findChildBy", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFindChildByUndefined: Self = StObject.set(x, "findChildBy", js.undefined)
+    inline def setFindChildByUndefined: Self = StObject.set(x, "findChildBy", js.undefined)
     
-    @scala.inline
-    def setFindChildUndefined: Self = StObject.set(x, "findChild", js.undefined)
+    inline def setFindChildUndefined: Self = StObject.set(x, "findChild", js.undefined)
     
-    @scala.inline
-    def setFirstChild(value: INodeInterface): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+    inline def setFirstChild(value: INodeInterface): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstChildUndefined: Self = StObject.set(x, "firstChild", js.undefined)
+    inline def setFirstChildUndefined: Self = StObject.set(x, "firstChild", js.undefined)
     
-    @scala.inline
-    def setGetChildAt(value: /* index */ js.UndefOr[Double] => INodeInterface): Self = StObject.set(x, "getChildAt", js.Any.fromFunction1(value))
+    inline def setGetChildAt(value: /* index */ js.UndefOr[Double] => INodeInterface): Self = StObject.set(x, "getChildAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChildAtUndefined: Self = StObject.set(x, "getChildAt", js.undefined)
+    inline def setGetChildAtUndefined: Self = StObject.set(x, "getChildAt", js.undefined)
     
-    @scala.inline
-    def setGetDepth(value: () => Double): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
+    inline def setGetDepth(value: () => Double): Self = StObject.set(x, "getDepth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDepthUndefined: Self = StObject.set(x, "getDepth", js.undefined)
+    inline def setGetDepthUndefined: Self = StObject.set(x, "getDepth", js.undefined)
     
-    @scala.inline
-    def setGetOwnerTree(value: () => IPanel): Self = StObject.set(x, "getOwnerTree", js.Any.fromFunction0(value))
+    inline def setGetOwnerTree(value: () => IPanel): Self = StObject.set(x, "getOwnerTree", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerTreeUndefined: Self = StObject.set(x, "getOwnerTree", js.undefined)
+    inline def setGetOwnerTreeUndefined: Self = StObject.set(x, "getOwnerTree", js.undefined)
     
-    @scala.inline
-    def setGetPath(value: (/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String]) => String): Self = StObject.set(x, "getPath", js.Any.fromFunction2(value))
+    inline def setGetPath(value: (/* field */ js.UndefOr[String], /* separator */ js.UndefOr[String]) => String): Self = StObject.set(x, "getPath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetPathUndefined: Self = StObject.set(x, "getPath", js.undefined)
+    inline def setGetPathUndefined: Self = StObject.set(x, "getPath", js.undefined)
     
-    @scala.inline
-    def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
+    inline def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasChildNodesUndefined: Self = StObject.set(x, "hasChildNodes", js.undefined)
+    inline def setHasChildNodesUndefined: Self = StObject.set(x, "hasChildNodes", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefTarget(value: String): Self = StObject.set(x, "hrefTarget", value.asInstanceOf[js.Any])
+    inline def setHrefTarget(value: String): Self = StObject.set(x, "hrefTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefTargetUndefined: Self = StObject.set(x, "hrefTarget", js.undefined)
+    inline def setHrefTargetUndefined: Self = StObject.set(x, "hrefTarget", js.undefined)
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconCls(value: String): Self = StObject.set(x, "iconCls", value.asInstanceOf[js.Any])
+    inline def setIconCls(value: String): Self = StObject.set(x, "iconCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClsUndefined: Self = StObject.set(x, "iconCls", js.undefined)
+    inline def setIconClsUndefined: Self = StObject.set(x, "iconCls", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexOf(value: /* node */ js.UndefOr[INodeInterface] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* node */ js.UndefOr[INodeInterface] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexOfId(value: /* id */ js.UndefOr[String] => Double): Self = StObject.set(x, "indexOfId", js.Any.fromFunction1(value))
+    inline def setIndexOfId(value: /* id */ js.UndefOr[String] => Double): Self = StObject.set(x, "indexOfId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndexOfIdUndefined: Self = StObject.set(x, "indexOfId", js.undefined)
+    inline def setIndexOfIdUndefined: Self = StObject.set(x, "indexOfId", js.undefined)
     
-    @scala.inline
-    def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
+    inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setInsertBefore(
+    inline def setInsertBefore(
       value: (/* node */ js.UndefOr[INodeInterface], /* refNode */ js.UndefOr[INodeInterface]) => INodeInterface
     ): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+    inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
-    @scala.inline
-    def setInsertChild(value: (/* index */ js.UndefOr[Double], /* node */ js.UndefOr[INodeInterface]) => INodeInterface): Self = StObject.set(x, "insertChild", js.Any.fromFunction2(value))
+    inline def setInsertChild(value: (/* index */ js.UndefOr[Double], /* node */ js.UndefOr[INodeInterface]) => INodeInterface): Self = StObject.set(x, "insertChild", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertChildUndefined: Self = StObject.set(x, "insertChild", js.undefined)
+    inline def setInsertChildUndefined: Self = StObject.set(x, "insertChild", js.undefined)
     
-    @scala.inline
-    def setIsAncestor(value: /* node */ js.UndefOr[INodeInterface] => Boolean): Self = StObject.set(x, "isAncestor", js.Any.fromFunction1(value))
+    inline def setIsAncestor(value: /* node */ js.UndefOr[INodeInterface] => Boolean): Self = StObject.set(x, "isAncestor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAncestorUndefined: Self = StObject.set(x, "isAncestor", js.undefined)
+    inline def setIsAncestorUndefined: Self = StObject.set(x, "isAncestor", js.undefined)
     
-    @scala.inline
-    def setIsExpandable(value: () => Boolean): Self = StObject.set(x, "isExpandable", js.Any.fromFunction0(value))
+    inline def setIsExpandable(value: () => Boolean): Self = StObject.set(x, "isExpandable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExpandableUndefined: Self = StObject.set(x, "isExpandable", js.undefined)
+    inline def setIsExpandableUndefined: Self = StObject.set(x, "isExpandable", js.undefined)
     
-    @scala.inline
-    def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
+    inline def setIsExpanded(value: () => Boolean): Self = StObject.set(x, "isExpanded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+    inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     
-    @scala.inline
-    def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
+    inline def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFirstUndefined: Self = StObject.set(x, "isFirst", js.undefined)
+    inline def setIsFirstUndefined: Self = StObject.set(x, "isFirst", js.undefined)
     
-    @scala.inline
-    def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
+    inline def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLastUndefined: Self = StObject.set(x, "isLast", js.undefined)
+    inline def setIsLastUndefined: Self = StObject.set(x, "isLast", js.undefined)
     
-    @scala.inline
-    def setIsLeaf(value: () => Boolean): Self = StObject.set(x, "isLeaf", js.Any.fromFunction0(value))
+    inline def setIsLeaf(value: () => Boolean): Self = StObject.set(x, "isLeaf", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
+    inline def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
     
-    @scala.inline
-    def setIsLoaded(value: () => Boolean): Self = StObject.set(x, "isLoaded", js.Any.fromFunction0(value))
+    inline def setIsLoaded(value: () => Boolean): Self = StObject.set(x, "isLoaded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLoadedUndefined: Self = StObject.set(x, "isLoaded", js.undefined)
+    inline def setIsLoadedUndefined: Self = StObject.set(x, "isLoaded", js.undefined)
     
-    @scala.inline
-    def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+    inline def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+    inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
-    @scala.inline
-    def setIsNode(value: Boolean): Self = StObject.set(x, "isNode", value.asInstanceOf[js.Any])
+    inline def setIsNode(value: Boolean): Self = StObject.set(x, "isNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNodeUndefined: Self = StObject.set(x, "isNode", js.undefined)
+    inline def setIsNodeUndefined: Self = StObject.set(x, "isNode", js.undefined)
     
-    @scala.inline
-    def setIsRoot(value: () => Boolean): Self = StObject.set(x, "isRoot", js.Any.fromFunction0(value))
+    inline def setIsRoot(value: () => Boolean): Self = StObject.set(x, "isRoot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
+    inline def setIsRootUndefined: Self = StObject.set(x, "isRoot", js.undefined)
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+    inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
-    @scala.inline
-    def setLastChild(value: INodeInterface): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+    inline def setLastChild(value: INodeInterface): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastChildUndefined: Self = StObject.set(x, "lastChild", js.undefined)
+    inline def setLastChildUndefined: Self = StObject.set(x, "lastChild", js.undefined)
     
-    @scala.inline
-    def setLeaf(value: Boolean): Self = StObject.set(x, "leaf", value.asInstanceOf[js.Any])
+    inline def setLeaf(value: Boolean): Self = StObject.set(x, "leaf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeafUndefined: Self = StObject.set(x, "leaf", js.undefined)
+    inline def setLeafUndefined: Self = StObject.set(x, "leaf", js.undefined)
     
-    @scala.inline
-    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setNextSibling(value: INodeInterface): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
+    inline def setNextSibling(value: INodeInterface): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSiblingUndefined: Self = StObject.set(x, "nextSibling", js.undefined)
+    inline def setNextSiblingUndefined: Self = StObject.set(x, "nextSibling", js.undefined)
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setParentNode(value: INodeInterface): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: INodeInterface): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+    inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
-    @scala.inline
-    def setPreviousSibling(value: INodeInterface): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
+    inline def setPreviousSibling(value: INodeInterface): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSiblingUndefined: Self = StObject.set(x, "previousSibling", js.undefined)
+    inline def setPreviousSiblingUndefined: Self = StObject.set(x, "previousSibling", js.undefined)
     
-    @scala.inline
-    def setQshowDelay(value: Double): Self = StObject.set(x, "qshowDelay", value.asInstanceOf[js.Any])
+    inline def setQshowDelay(value: Double): Self = StObject.set(x, "qshowDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQshowDelayUndefined: Self = StObject.set(x, "qshowDelay", js.undefined)
+    inline def setQshowDelayUndefined: Self = StObject.set(x, "qshowDelay", js.undefined)
     
-    @scala.inline
-    def setQtip(value: String): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
+    inline def setQtip(value: String): Self = StObject.set(x, "qtip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQtipUndefined: Self = StObject.set(x, "qtip", js.undefined)
+    inline def setQtipUndefined: Self = StObject.set(x, "qtip", js.undefined)
     
-    @scala.inline
-    def setQtitle(value: String): Self = StObject.set(x, "qtitle", value.asInstanceOf[js.Any])
+    inline def setQtitle(value: String): Self = StObject.set(x, "qtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQtitleUndefined: Self = StObject.set(x, "qtitle", js.undefined)
+    inline def setQtitleUndefined: Self = StObject.set(x, "qtitle", js.undefined)
     
-    @scala.inline
-    def setRemove(value: /* destroy */ js.UndefOr[Boolean] => INodeInterface): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* destroy */ js.UndefOr[Boolean] => INodeInterface): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAll(value: /* destroy */ js.UndefOr[Boolean] => INodeInterface): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
+    inline def setRemoveAll(value: /* destroy */ js.UndefOr[Boolean] => INodeInterface): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
+    inline def setRemoveAllUndefined: Self = StObject.set(x, "removeAll", js.undefined)
     
-    @scala.inline
-    def setRemoveChild(
+    inline def setRemoveChild(
       value: (/* node */ js.UndefOr[INodeInterface], /* destroy */ js.UndefOr[Boolean]) => INodeInterface
     ): Self = StObject.set(x, "removeChild", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveChildUndefined: Self = StObject.set(x, "removeChild", js.undefined)
+    inline def setRemoveChildUndefined: Self = StObject.set(x, "removeChild", js.undefined)
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setReplaceChild(
+    inline def setReplaceChild(
       value: (/* newChild */ js.UndefOr[INodeInterface], /* oldChild */ js.UndefOr[INodeInterface]) => INodeInterface
     ): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReplaceChildUndefined: Self = StObject.set(x, "replaceChild", js.undefined)
+    inline def setReplaceChildUndefined: Self = StObject.set(x, "replaceChild", js.undefined)
     
-    @scala.inline
-    def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSerialize(value: () => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+    inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     
-    @scala.inline
-    def setSort(
+    inline def setSort(
       value: (/* fn */ js.UndefOr[js.Any], /* recursive */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "sort", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setUpdateInfo(value: (/* commit */ js.UndefOr[Boolean], /* info */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateInfo", js.Any.fromFunction2(value))
+    inline def setUpdateInfo(value: (/* commit */ js.UndefOr[Boolean], /* info */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateInfoUndefined: Self = StObject.set(x, "updateInfo", js.undefined)
+    inline def setUpdateInfoUndefined: Self = StObject.set(x, "updateInfo", js.undefined)
   }
 }

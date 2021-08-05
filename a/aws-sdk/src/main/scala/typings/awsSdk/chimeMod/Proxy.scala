@@ -28,40 +28,29 @@ trait Proxy extends StObject {
 }
 object Proxy {
   
-  @scala.inline
-  def apply(): Proxy = {
+  inline def apply(): Proxy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Proxy]
   }
   
-  @scala.inline
-  implicit class ProxyMutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
+  extension [Self <: Proxy](x: Self) {
     
-    @scala.inline
-    def setDefaultSessionExpiryMinutes(value: Integer): Self = StObject.set(x, "DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
+    inline def setDefaultSessionExpiryMinutes(value: Integer): Self = StObject.set(x, "DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSessionExpiryMinutesUndefined: Self = StObject.set(x, "DefaultSessionExpiryMinutes", js.undefined)
+    inline def setDefaultSessionExpiryMinutesUndefined: Self = StObject.set(x, "DefaultSessionExpiryMinutes", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setFallBackPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FallBackPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setFallBackPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FallBackPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallBackPhoneNumberUndefined: Self = StObject.set(x, "FallBackPhoneNumber", js.undefined)
+    inline def setFallBackPhoneNumberUndefined: Self = StObject.set(x, "FallBackPhoneNumber", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberCountries(value: StringList): Self = StObject.set(x, "PhoneNumberCountries", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberCountries(value: StringList): Self = StObject.set(x, "PhoneNumberCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberCountriesUndefined: Self = StObject.set(x, "PhoneNumberCountries", js.undefined)
+    inline def setPhoneNumberCountriesUndefined: Self = StObject.set(x, "PhoneNumberCountries", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberCountriesVarargs(value: String*): Self = StObject.set(x, "PhoneNumberCountries", js.Array(value :_*))
+    inline def setPhoneNumberCountriesVarargs(value: String*): Self = StObject.set(x, "PhoneNumberCountries", js.Array(value :_*))
   }
 }

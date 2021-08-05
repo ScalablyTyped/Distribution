@@ -40,65 +40,47 @@ trait PersistenceOptions extends StObject {
 }
 object PersistenceOptions {
   
-  @scala.inline
-  def apply(): PersistenceOptions = {
+  inline def apply(): PersistenceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistenceOptions]
   }
   
-  @scala.inline
-  implicit class PersistenceOptionsMutableBuilder[Self <: PersistenceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PersistenceOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeSend(value: /* jqxhr */ JQueryXHR => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    inline def setBeforeSend(value: /* jqxhr */ JQueryXHR => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEmulateHTTP(value: Boolean): Self = StObject.set(x, "emulateHTTP", value.asInstanceOf[js.Any])
+    inline def setEmulateHTTP(value: Boolean): Self = StObject.set(x, "emulateHTTP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmulateHTTPUndefined: Self = StObject.set(x, "emulateHTTP", js.undefined)
+    inline def setEmulateHTTPUndefined: Self = StObject.set(x, "emulateHTTP", js.undefined)
     
-    @scala.inline
-    def setEmulateJSON(value: Boolean): Self = StObject.set(x, "emulateJSON", value.asInstanceOf[js.Any])
+    inline def setEmulateJSON(value: Boolean): Self = StObject.set(x, "emulateJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmulateJSONUndefined: Self = StObject.set(x, "emulateJSON", js.undefined)
+    inline def setEmulateJSONUndefined: Self = StObject.set(x, "emulateJSON", js.undefined)
     
-    @scala.inline
-    def setError(
+    inline def setError(
       value: (/* modelOrCollection */ js.UndefOr[js.Any], /* jqxhr */ js.UndefOr[JQueryXHR], /* options */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setSuccess(
+    inline def setSuccess(
       value: (/* modelOrCollection */ js.UndefOr[js.Any], /* response */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

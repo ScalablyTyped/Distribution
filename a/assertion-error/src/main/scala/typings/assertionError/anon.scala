@@ -12,17 +12,14 @@ object anon {
   }
   object ShowDiff {
     
-    @scala.inline
-    def apply(showDiff: Boolean): ShowDiff = {
+    inline def apply(showDiff: Boolean): ShowDiff = {
       val __obj = js.Dynamic.literal(showDiff = showDiff.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShowDiff]
     }
     
-    @scala.inline
-    implicit class ShowDiffMutableBuilder[Self <: ShowDiff] (val x: Self) extends AnyVal {
+    extension [Self <: ShowDiff](x: Self) {
       
-      @scala.inline
-      def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
+      inline def setShowDiff(value: Boolean): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,6 +10,5 @@ object calcElapsedTimeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calcElapsedTime(startTime: js.Tuple2[Double, Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calcElapsedTime")(startTime.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def calcElapsedTime(startTime: js.Tuple2[Double, Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calcElapsedTime")(startTime.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -13,19 +13,15 @@ trait ConfirmPublicVirtualInterfaceResponse extends StObject {
 }
 object ConfirmPublicVirtualInterfaceResponse {
   
-  @scala.inline
-  def apply(): ConfirmPublicVirtualInterfaceResponse = {
+  inline def apply(): ConfirmPublicVirtualInterfaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmPublicVirtualInterfaceResponse]
   }
   
-  @scala.inline
-  implicit class ConfirmPublicVirtualInterfaceResponseMutableBuilder[Self <: ConfirmPublicVirtualInterfaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmPublicVirtualInterfaceResponse](x: Self) {
     
-    @scala.inline
-    def setVirtualInterfaceState(value: VirtualInterfaceState): Self = StObject.set(x, "virtualInterfaceState", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceState(value: VirtualInterfaceState): Self = StObject.set(x, "virtualInterfaceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceStateUndefined: Self = StObject.set(x, "virtualInterfaceState", js.undefined)
+    inline def setVirtualInterfaceStateUndefined: Self = StObject.set(x, "virtualInterfaceState", js.undefined)
   }
 }

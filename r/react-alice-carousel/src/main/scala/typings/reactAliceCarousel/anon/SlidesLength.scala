@@ -12,19 +12,15 @@ trait SlidesLength extends StObject {
 }
 object SlidesLength {
   
-  @scala.inline
-  def apply(activeIndex: js.Any, slidesLength: js.Any): SlidesLength = {
+  inline def apply(activeIndex: js.Any, slidesLength: js.Any): SlidesLength = {
     val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], slidesLength = slidesLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlidesLength]
   }
   
-  @scala.inline
-  implicit class SlidesLengthMutableBuilder[Self <: SlidesLength] (val x: Self) extends AnyVal {
+  extension [Self <: SlidesLength](x: Self) {
     
-    @scala.inline
-    def setActiveIndex(value: js.Any): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    inline def setActiveIndex(value: js.Any): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlidesLength(value: js.Any): Self = StObject.set(x, "slidesLength", value.asInstanceOf[js.Any])
+    inline def setSlidesLength(value: js.Any): Self = StObject.set(x, "slidesLength", value.asInstanceOf[js.Any])
   }
 }

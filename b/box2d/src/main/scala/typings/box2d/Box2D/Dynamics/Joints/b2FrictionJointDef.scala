@@ -40,8 +40,7 @@ trait b2FrictionJointDef
 }
 object b2FrictionJointDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Initialize: (b2Body, b2Body, b2Vec2) => Unit,
     bodyA: b2Body,
     bodyB: b2Body,
@@ -58,22 +57,16 @@ object b2FrictionJointDef {
     __obj.asInstanceOf[b2FrictionJointDef]
   }
   
-  @scala.inline
-  implicit class b2FrictionJointDefMutableBuilder[Self <: b2FrictionJointDef] (val x: Self) extends AnyVal {
+  extension [Self <: b2FrictionJointDef](x: Self) {
     
-    @scala.inline
-    def setInitialize(value: (b2Body, b2Body, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction3(value))
+    inline def setInitialize(value: (b2Body, b2Body, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorA(value: b2Vec2): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorB(value: b2Vec2): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTorque(value: Double): Self = StObject.set(x, "maxTorque", value.asInstanceOf[js.Any])
+    inline def setMaxTorque(value: Double): Self = StObject.set(x, "maxTorque", value.asInstanceOf[js.Any])
   }
 }

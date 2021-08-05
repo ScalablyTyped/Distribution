@@ -13,19 +13,15 @@ trait Sizefactor extends StObject {
 }
 object Sizefactor {
   
-  @scala.inline
-  def apply(): Sizefactor = {
+  inline def apply(): Sizefactor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sizefactor]
   }
   
-  @scala.inline
-  implicit class SizefactorMutableBuilder[Self <: Sizefactor] (val x: Self) extends AnyVal {
+  extension [Self <: Sizefactor](x: Self) {
     
-    @scala.inline
-    def `setSize-factor`(value: Double): Self = StObject.set(x, "size-factor", value.asInstanceOf[js.Any])
+    inline def `setSize-factor`(value: Double): Self = StObject.set(x, "size-factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSize-factorUndefined`: Self = StObject.set(x, "size-factor", js.undefined)
+    inline def `setSize-factorUndefined`: Self = StObject.set(x, "size-factor", js.undefined)
   }
 }

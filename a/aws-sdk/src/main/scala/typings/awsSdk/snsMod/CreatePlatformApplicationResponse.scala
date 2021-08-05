@@ -13,19 +13,15 @@ trait CreatePlatformApplicationResponse extends StObject {
 }
 object CreatePlatformApplicationResponse {
   
-  @scala.inline
-  def apply(): CreatePlatformApplicationResponse = {
+  inline def apply(): CreatePlatformApplicationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePlatformApplicationResponse]
   }
   
-  @scala.inline
-  implicit class CreatePlatformApplicationResponseMutableBuilder[Self <: CreatePlatformApplicationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlatformApplicationResponse](x: Self) {
     
-    @scala.inline
-    def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
+    inline def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformApplicationArnUndefined: Self = StObject.set(x, "PlatformApplicationArn", js.undefined)
+    inline def setPlatformApplicationArnUndefined: Self = StObject.set(x, "PlatformApplicationArn", js.undefined)
   }
 }

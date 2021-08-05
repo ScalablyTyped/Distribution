@@ -11,22 +11,17 @@ trait StructuredDataObject extends StObject {
 }
 object StructuredDataObject {
   
-  @scala.inline
-  def apply(): StructuredDataObject = {
+  inline def apply(): StructuredDataObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructuredDataObject]
   }
   
-  @scala.inline
-  implicit class StructuredDataObjectMutableBuilder[Self <: StructuredDataObject] (val x: Self) extends AnyVal {
+  extension [Self <: StructuredDataObject](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[NamedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[NamedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: NamedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: NamedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

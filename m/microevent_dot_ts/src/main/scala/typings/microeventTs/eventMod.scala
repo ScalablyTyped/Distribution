@@ -19,15 +19,15 @@ object eventMod {
     extends StObject
        with EventInterface[EventPayload] {
     
-    var _contexts: js.Any = js.native
+    /* private */ var _contexts: js.Any = js.native
     
-    var _createDispatcher: js.Any = js.native
+    /* private */ var _createDispatcher: js.Any = js.native
     
-    var _getHandlerIndex: js.Any = js.native
+    /* private */ var _getHandlerIndex: js.Any = js.native
     
-    var _handlers: js.Any = js.native
+    /* private */ var _handlers: js.Any = js.native
     
-    var _updateHasHandlers: js.Any = js.native
+    /* private */ var _updateHasHandlers: js.Any = js.native
     
     def dispatch(payload: EventPayload): Unit = js.native
     

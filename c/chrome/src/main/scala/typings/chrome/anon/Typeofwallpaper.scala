@@ -11,16 +11,13 @@ trait Typeofwallpaper extends StObject {
 }
 object Typeofwallpaper {
   
-  @scala.inline
-  def apply(setWallpaper: (WallpaperDetails, js.Function1[/* thumbnail */ js.Any, Unit]) => Unit): Typeofwallpaper = {
+  inline def apply(setWallpaper: (WallpaperDetails, js.Function1[/* thumbnail */ js.Any, Unit]) => Unit): Typeofwallpaper = {
     val __obj = js.Dynamic.literal(setWallpaper = js.Any.fromFunction2(setWallpaper))
     __obj.asInstanceOf[Typeofwallpaper]
   }
   
-  @scala.inline
-  implicit class TypeofwallpaperMutableBuilder[Self <: Typeofwallpaper] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofwallpaper](x: Self) {
     
-    @scala.inline
-    def setSetWallpaper(value: (WallpaperDetails, js.Function1[/* thumbnail */ js.Any, Unit]) => Unit): Self = StObject.set(x, "setWallpaper", js.Any.fromFunction2(value))
+    inline def setSetWallpaper(value: (WallpaperDetails, js.Function1[/* thumbnail */ js.Any, Unit]) => Unit): Self = StObject.set(x, "setWallpaper", js.Any.fromFunction2(value))
   }
 }

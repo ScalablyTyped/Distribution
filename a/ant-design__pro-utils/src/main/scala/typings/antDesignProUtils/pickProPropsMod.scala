@@ -10,6 +10,5 @@ object pickProPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def default(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

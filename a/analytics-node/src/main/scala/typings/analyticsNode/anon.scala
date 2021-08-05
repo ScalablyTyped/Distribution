@@ -19,23 +19,18 @@ object anon {
   }
   object AnonymousId {
     
-    @scala.inline
-    def apply(anonymousId: String | Double): AnonymousId = {
+    inline def apply(anonymousId: String | Double): AnonymousId = {
       val __obj = js.Dynamic.literal(anonymousId = anonymousId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnonymousId]
     }
     
-    @scala.inline
-    implicit class AnonymousIdMutableBuilder[Self <: AnonymousId] (val x: Self) extends AnyVal {
+    extension [Self <: AnonymousId](x: Self) {
       
-      @scala.inline
-      def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
+      inline def setAnonymousId(value: String | Double): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
@@ -55,50 +50,36 @@ object anon {
   }
   object Category {
     
-    @scala.inline
-    def apply(): Category = {
+    inline def apply(): Category = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Category]
     }
     
-    @scala.inline
-    implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+    extension [Self <: Category](x: Self) {
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
   
@@ -116,36 +97,27 @@ object anon {
   }
   object Context {
     
-    @scala.inline
-    def apply(_metadata: NodeVersion, context: Dictkey, `type`: String): Context = {
+    inline def apply(_metadata: NodeVersion, context: Dictkey, `type`: String): Context = {
       val __obj = js.Dynamic.literal(_metadata = _metadata.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setContext(value: Dictkey): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Dictkey): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+      inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_metadata(value: NodeVersion): Self = StObject.set(x, "_metadata", value.asInstanceOf[js.Any])
+      inline def set_metadata(value: NodeVersion): Self = StObject.set(x, "_metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,17 +129,14 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(library: Name): Dictkey = {
+    inline def apply(library: Name): Dictkey = {
       val __obj = js.Dynamic.literal(library = library.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setLibrary(value: Name): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+      inline def setLibrary(value: Name): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,44 +154,32 @@ object anon {
   }
   object Enable {
     
-    @scala.inline
-    def apply(): Enable = {
+    inline def apply(): Enable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Enable]
     }
     
-    @scala.inline
-    implicit class EnableMutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
+    extension [Self <: Enable](x: Self) {
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setFlushAt(value: Double): Self = StObject.set(x, "flushAt", value.asInstanceOf[js.Any])
+      inline def setFlushAt(value: Double): Self = StObject.set(x, "flushAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushAtUndefined: Self = StObject.set(x, "flushAt", js.undefined)
+      inline def setFlushAtUndefined: Self = StObject.set(x, "flushAt", js.undefined)
       
-      @scala.inline
-      def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
+      inline def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
+      inline def setFlushIntervalUndefined: Self = StObject.set(x, "flushInterval", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double | String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -240,41 +197,30 @@ object anon {
   }
   object Event {
     
-    @scala.inline
-    def apply(event: String): Event = {
+    inline def apply(event: String): Event = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
   
@@ -292,41 +238,30 @@ object anon {
   }
   object GroupId {
     
-    @scala.inline
-    def apply(groupId: String | Double): GroupId = {
+    inline def apply(groupId: String | Double): GroupId = {
       val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GroupId]
     }
     
-    @scala.inline
-    implicit class GroupIdMutableBuilder[Self <: GroupId] (val x: Self) extends AnyVal {
+    extension [Self <: GroupId](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+      inline def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setTraits(value: js.Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
+      inline def setTraits(value: js.Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+      inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
     }
   }
   
@@ -342,38 +277,28 @@ object anon {
   }
   object Integrations {
     
-    @scala.inline
-    def apply(): Integrations = {
+    inline def apply(): Integrations = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Integrations]
     }
     
-    @scala.inline
-    implicit class IntegrationsMutableBuilder[Self <: Integrations] (val x: Self) extends AnyVal {
+    extension [Self <: Integrations](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setTraits(value: js.Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
+      inline def setTraits(value: js.Any): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
+      inline def setTraitsUndefined: Self = StObject.set(x, "traits", js.undefined)
     }
   }
   
@@ -385,20 +310,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, version: String): Name = {
+    inline def apply(name: String, version: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -410,17 +331,14 @@ object anon {
   }
   object NodeVersion {
     
-    @scala.inline
-    def apply(nodeVersion: String): NodeVersion = {
+    inline def apply(nodeVersion: String): NodeVersion = {
       val __obj = js.Dynamic.literal(nodeVersion = nodeVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeVersion]
     }
     
-    @scala.inline
-    implicit class NodeVersionMutableBuilder[Self <: NodeVersion] (val x: Self) extends AnyVal {
+    extension [Self <: NodeVersion](x: Self) {
       
-      @scala.inline
-      def setNodeVersion(value: String): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
+      inline def setNodeVersion(value: String): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -432,23 +350,18 @@ object anon {
   }
   object PreviousId {
     
-    @scala.inline
-    def apply(previousId: String | Double): PreviousId = {
+    inline def apply(previousId: String | Double): PreviousId = {
       val __obj = js.Dynamic.literal(previousId = previousId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviousId]
     }
     
-    @scala.inline
-    implicit class PreviousIdMutableBuilder[Self <: PreviousId] (val x: Self) extends AnyVal {
+    extension [Self <: PreviousId](x: Self) {
       
-      @scala.inline
-      def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: typings.analyticsNode.mod.AnalyticsNode.Integrations): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
       
-      @scala.inline
-      def setPreviousId(value: String | Double): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
+      inline def setPreviousId(value: String | Double): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -460,17 +373,14 @@ object anon {
   }
   object UserId {
     
-    @scala.inline
-    def apply(userId: String | Double): UserId = {
+    inline def apply(userId: String | Double): UserId = {
       val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserId]
     }
     
-    @scala.inline
-    implicit class UserIdMutableBuilder[Self <: UserId] (val x: Self) extends AnyVal {
+    extension [Self <: UserId](x: Self) {
       
-      @scala.inline
-      def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String | Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
 }

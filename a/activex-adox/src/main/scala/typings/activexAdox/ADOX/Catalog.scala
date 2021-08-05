@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Catalog extends StObject {
   
-  @JSName("ADOX.Catalog_typekey")
+  /* private */ @JSName("ADOX.Catalog_typekey")
   var ADOXDotCatalog_typekey: Catalog = js.native
   
   /** Can be set to a Connection object or a string. Returns the active Connection object, or `null` */

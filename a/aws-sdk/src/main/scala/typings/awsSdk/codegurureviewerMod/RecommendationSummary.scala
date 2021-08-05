@@ -33,43 +33,31 @@ trait RecommendationSummary extends StObject {
 }
 object RecommendationSummary {
   
-  @scala.inline
-  def apply(): RecommendationSummary = {
+  inline def apply(): RecommendationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecommendationSummary]
   }
   
-  @scala.inline
-  implicit class RecommendationSummaryMutableBuilder[Self <: RecommendationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendationSummary](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Text): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Text): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEndLine(value: LineNumber): Self = StObject.set(x, "EndLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: LineNumber): Self = StObject.set(x, "EndLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLineUndefined: Self = StObject.set(x, "EndLine", js.undefined)
+    inline def setEndLineUndefined: Self = StObject.set(x, "EndLine", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: FilePath): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: FilePath): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "FilePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "FilePath", js.undefined)
     
-    @scala.inline
-    def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
+    inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
+    inline def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
     
-    @scala.inline
-    def setStartLine(value: LineNumber): Self = StObject.set(x, "StartLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: LineNumber): Self = StObject.set(x, "StartLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLineUndefined: Self = StObject.set(x, "StartLine", js.undefined)
+    inline def setStartLineUndefined: Self = StObject.set(x, "StartLine", js.undefined)
   }
 }

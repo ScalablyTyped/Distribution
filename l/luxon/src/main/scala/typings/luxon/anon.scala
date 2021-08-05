@@ -12,20 +12,16 @@ object anon {
   }
   object IncludeConfig {
     
-    @scala.inline
-    def apply(): IncludeConfig = {
+    inline def apply(): IncludeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IncludeConfig]
     }
     
-    @scala.inline
-    implicit class IncludeConfigMutableBuilder[Self <: IncludeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IncludeConfig](x: Self) {
       
-      @scala.inline
-      def setIncludeConfig(value: Boolean): Self = StObject.set(x, "includeConfig", value.asInstanceOf[js.Any])
+      inline def setIncludeConfig(value: Boolean): Self = StObject.set(x, "includeConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeConfigUndefined: Self = StObject.set(x, "includeConfig", js.undefined)
+      inline def setIncludeConfigUndefined: Self = StObject.set(x, "includeConfig", js.undefined)
     }
   }
   
@@ -37,21 +33,17 @@ object anon {
   }
   object Literal {
     
-    @scala.inline
-    def apply(literal: Boolean, `val`: String): Literal = {
+    inline def apply(literal: Boolean, `val`: String): Literal = {
       val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Literal]
     }
     
-    @scala.inline
-    implicit class LiteralMutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
+    extension [Self <: Literal](x: Self) {
       
-      @scala.inline
-      def setLiteral(value: Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +53,16 @@ object anon {
   }
   object Separator {
     
-    @scala.inline
-    def apply(): Separator = {
+    inline def apply(): Separator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Separator]
     }
     
-    @scala.inline
-    implicit class SeparatorMutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
+    extension [Self <: Separator](x: Self) {
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
 }

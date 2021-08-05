@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFAssignmentType extends StObject
 object MFAssignmentType {
   
-  @scala.inline
-  def Approval: `1` = 1.asInstanceOf[`1`]
+  inline def Approval: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Task: `0` = 0.asInstanceOf[`0`]
+  inline def Task: `0` = 0.asInstanceOf[`0`]
 }

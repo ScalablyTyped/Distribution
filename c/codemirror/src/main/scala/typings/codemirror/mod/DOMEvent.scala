@@ -24,48 +24,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DOMEvent extends StObject
 object DOMEvent {
   
-  @scala.inline
-  def contextmenu: typings.codemirror.codemirrorStrings.contextmenu = "contextmenu".asInstanceOf[typings.codemirror.codemirrorStrings.contextmenu]
+  inline def contextmenu: typings.codemirror.codemirrorStrings.contextmenu = "contextmenu".asInstanceOf[typings.codemirror.codemirrorStrings.contextmenu]
   
-  @scala.inline
-  def copy: typings.codemirror.codemirrorStrings.copy = "copy".asInstanceOf[typings.codemirror.codemirrorStrings.copy]
+  inline def copy: typings.codemirror.codemirrorStrings.copy = "copy".asInstanceOf[typings.codemirror.codemirrorStrings.copy]
   
-  @scala.inline
-  def cut: typings.codemirror.codemirrorStrings.cut = "cut".asInstanceOf[typings.codemirror.codemirrorStrings.cut]
+  inline def cut: typings.codemirror.codemirrorStrings.cut = "cut".asInstanceOf[typings.codemirror.codemirrorStrings.cut]
   
-  @scala.inline
-  def dblclick: typings.codemirror.codemirrorStrings.dblclick = "dblclick".asInstanceOf[typings.codemirror.codemirrorStrings.dblclick]
+  inline def dblclick: typings.codemirror.codemirrorStrings.dblclick = "dblclick".asInstanceOf[typings.codemirror.codemirrorStrings.dblclick]
   
-  @scala.inline
-  def dragenter: typings.codemirror.codemirrorStrings.dragenter = "dragenter".asInstanceOf[typings.codemirror.codemirrorStrings.dragenter]
+  inline def dragenter: typings.codemirror.codemirrorStrings.dragenter = "dragenter".asInstanceOf[typings.codemirror.codemirrorStrings.dragenter]
   
-  @scala.inline
-  def dragleave: typings.codemirror.codemirrorStrings.dragleave = "dragleave".asInstanceOf[typings.codemirror.codemirrorStrings.dragleave]
+  inline def dragleave: typings.codemirror.codemirrorStrings.dragleave = "dragleave".asInstanceOf[typings.codemirror.codemirrorStrings.dragleave]
   
-  @scala.inline
-  def dragover: typings.codemirror.codemirrorStrings.dragover = "dragover".asInstanceOf[typings.codemirror.codemirrorStrings.dragover]
+  inline def dragover: typings.codemirror.codemirrorStrings.dragover = "dragover".asInstanceOf[typings.codemirror.codemirrorStrings.dragover]
   
-  @scala.inline
-  def dragstart: typings.codemirror.codemirrorStrings.dragstart = "dragstart".asInstanceOf[typings.codemirror.codemirrorStrings.dragstart]
+  inline def dragstart: typings.codemirror.codemirrorStrings.dragstart = "dragstart".asInstanceOf[typings.codemirror.codemirrorStrings.dragstart]
   
-  @scala.inline
-  def drop: typings.codemirror.codemirrorStrings.drop = "drop".asInstanceOf[typings.codemirror.codemirrorStrings.drop]
+  inline def drop: typings.codemirror.codemirrorStrings.drop = "drop".asInstanceOf[typings.codemirror.codemirrorStrings.drop]
   
-  @scala.inline
-  def keydown: typings.codemirror.codemirrorStrings.keydown = "keydown".asInstanceOf[typings.codemirror.codemirrorStrings.keydown]
+  inline def keydown: typings.codemirror.codemirrorStrings.keydown = "keydown".asInstanceOf[typings.codemirror.codemirrorStrings.keydown]
   
-  @scala.inline
-  def keypress: typings.codemirror.codemirrorStrings.keypress = "keypress".asInstanceOf[typings.codemirror.codemirrorStrings.keypress]
+  inline def keypress: typings.codemirror.codemirrorStrings.keypress = "keypress".asInstanceOf[typings.codemirror.codemirrorStrings.keypress]
   
-  @scala.inline
-  def keyup: typings.codemirror.codemirrorStrings.keyup = "keyup".asInstanceOf[typings.codemirror.codemirrorStrings.keyup]
+  inline def keyup: typings.codemirror.codemirrorStrings.keyup = "keyup".asInstanceOf[typings.codemirror.codemirrorStrings.keyup]
   
-  @scala.inline
-  def mousedown: typings.codemirror.codemirrorStrings.mousedown = "mousedown".asInstanceOf[typings.codemirror.codemirrorStrings.mousedown]
+  inline def mousedown: typings.codemirror.codemirrorStrings.mousedown = "mousedown".asInstanceOf[typings.codemirror.codemirrorStrings.mousedown]
   
-  @scala.inline
-  def paste: typings.codemirror.codemirrorStrings.paste = "paste".asInstanceOf[typings.codemirror.codemirrorStrings.paste]
+  inline def paste: typings.codemirror.codemirrorStrings.paste = "paste".asInstanceOf[typings.codemirror.codemirrorStrings.paste]
   
-  @scala.inline
-  def touchstart: typings.codemirror.codemirrorStrings.touchstart = "touchstart".asInstanceOf[typings.codemirror.codemirrorStrings.touchstart]
+  inline def touchstart: typings.codemirror.codemirrorStrings.touchstart = "touchstart".asInstanceOf[typings.codemirror.codemirrorStrings.touchstart]
 }

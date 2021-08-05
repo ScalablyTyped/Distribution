@@ -25,10 +25,8 @@ object httpsProxyMod {
       * @param defaultHandler The default handler for incoming requests. The default handler return 404.
       * @return A promise that when resolved will return the proxy server.
       */
-    @scala.inline
-    def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions, defaultHandler: RequestHandler): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any], defaultHandler.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServer(sslOptions: js.Any, targetHost: String, options: ServerOptions, defaultHandler: RequestHandler): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], options.asInstanceOf[js.Any], defaultHandler.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     
     /**
       * Creates a local server running express with a proxy to allow forwarding call to a target host.
@@ -39,10 +37,8 @@ object httpsProxyMod {
       * @param proxOptions The proxy options.
       * @return A promise that when resolved will return the proxy server.
       */
-    @scala.inline
-    def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
-    @scala.inline
-    def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions, proxOptions: ProxyOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any], proxOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
+    inline def createServerWithProxy(sslOptions: js.Any, targetHost: String, serverOptions: ServerOptions, proxOptions: ProxyOptions): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerWithProxy")(sslOptions.asInstanceOf[js.Any], targetHost.asInstanceOf[js.Any], serverOptions.asInstanceOf[js.Any], proxOptions.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     
     /**
       * The local express server interface.
@@ -88,38 +84,28 @@ object httpsProxyMod {
     }
     object ProxyOptions {
       
-      @scala.inline
-      def apply(): ProxyOptions = {
+      inline def apply(): ProxyOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ProxyOptions]
       }
       
-      @scala.inline
-      implicit class ProxyOptionsMutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ProxyOptions](x: Self) {
         
-        @scala.inline
-        def setCloseCallback(value: (/* res */ js.Any, /* socket */ js.Any, /* head */ js.Any) => js.Object): Self = StObject.set(x, "closeCallback", js.Any.fromFunction3(value))
+        inline def setCloseCallback(value: (/* res */ js.Any, /* socket */ js.Any, /* head */ js.Any) => js.Object): Self = StObject.set(x, "closeCallback", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setCloseCallbackUndefined: Self = StObject.set(x, "closeCallback", js.undefined)
+        inline def setCloseCallbackUndefined: Self = StObject.set(x, "closeCallback", js.undefined)
         
-        @scala.inline
-        def setErrorCallback(value: (/* err */ js.Any, /* req */ js.Any, /* res */ js.Any) => js.Object): Self = StObject.set(x, "errorCallback", js.Any.fromFunction3(value))
+        inline def setErrorCallback(value: (/* err */ js.Any, /* req */ js.Any, /* res */ js.Any) => js.Object): Self = StObject.set(x, "errorCallback", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
+        inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
         
-        @scala.inline
-        def setOpenCallback(value: /* proxySocket */ js.Any => js.Object): Self = StObject.set(x, "openCallback", js.Any.fromFunction1(value))
+        inline def setOpenCallback(value: /* proxySocket */ js.Any => js.Object): Self = StObject.set(x, "openCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOpenCallbackUndefined: Self = StObject.set(x, "openCallback", js.undefined)
+        inline def setOpenCallbackUndefined: Self = StObject.set(x, "openCallback", js.undefined)
         
-        @scala.inline
-        def setResponseCallback(value: (/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any) => js.Object): Self = StObject.set(x, "responseCallback", js.Any.fromFunction3(value))
+        inline def setResponseCallback(value: (/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any) => js.Object): Self = StObject.set(x, "responseCallback", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setResponseCallbackUndefined: Self = StObject.set(x, "responseCallback", js.undefined)
+        inline def setResponseCallbackUndefined: Self = StObject.set(x, "responseCallback", js.undefined)
       }
     }
     
@@ -160,32 +146,24 @@ object httpsProxyMod {
     }
     object ProxyServer {
       
-      @scala.inline
-      def apply(app: ExpressServer, initializeDefaultRoutes: () => Unit, patchAddress: String, server: Server): ProxyServer = {
+      inline def apply(app: ExpressServer, initializeDefaultRoutes: () => Unit, patchAddress: String, server: Server): ProxyServer = {
         val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], initializeDefaultRoutes = js.Any.fromFunction0(initializeDefaultRoutes), patchAddress = patchAddress.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProxyServer]
       }
       
-      @scala.inline
-      implicit class ProxyServerMutableBuilder[Self <: ProxyServer] (val x: Self) extends AnyVal {
+      extension [Self <: ProxyServer](x: Self) {
         
-        @scala.inline
-        def setApp(value: ExpressServer): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+        inline def setApp(value: ExpressServer): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitializeDefaultRoutes(value: () => Unit): Self = StObject.set(x, "initializeDefaultRoutes", js.Any.fromFunction0(value))
+        inline def setInitializeDefaultRoutes(value: () => Unit): Self = StObject.set(x, "initializeDefaultRoutes", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setPatchAddress(value: String): Self = StObject.set(x, "patchAddress", value.asInstanceOf[js.Any])
+        inline def setPatchAddress(value: String): Self = StObject.set(x, "patchAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+        inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+        inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
         
-        @scala.inline
-        def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+        inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       }
     }
     
@@ -206,23 +184,18 @@ object httpsProxyMod {
     }
     object ServerOptions {
       
-      @scala.inline
-      def apply(serverPort: Double): ServerOptions = {
+      inline def apply(serverPort: Double): ServerOptions = {
         val __obj = js.Dynamic.literal(serverPort = serverPort.asInstanceOf[js.Any])
         __obj.asInstanceOf[ServerOptions]
       }
       
-      @scala.inline
-      implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ServerOptions](x: Self) {
         
-        @scala.inline
-        def setServerCallback(value: () => js.Object): Self = StObject.set(x, "serverCallback", js.Any.fromFunction0(value))
+        inline def setServerCallback(value: () => js.Object): Self = StObject.set(x, "serverCallback", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setServerCallbackUndefined: Self = StObject.set(x, "serverCallback", js.undefined)
+        inline def setServerCallbackUndefined: Self = StObject.set(x, "serverCallback", js.undefined)
         
-        @scala.inline
-        def setServerPort(value: Double): Self = StObject.set(x, "serverPort", value.asInstanceOf[js.Any])
+        inline def setServerPort(value: Double): Self = StObject.set(x, "serverPort", value.asInstanceOf[js.Any])
       }
     }
   }

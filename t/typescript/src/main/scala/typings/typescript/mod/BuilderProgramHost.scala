@@ -24,30 +24,23 @@ trait BuilderProgramHost extends StObject {
 }
 object BuilderProgramHost {
   
-  @scala.inline
-  def apply(useCaseSensitiveFileNames: () => Boolean): BuilderProgramHost = {
+  inline def apply(useCaseSensitiveFileNames: () => Boolean): BuilderProgramHost = {
     val __obj = js.Dynamic.literal(useCaseSensitiveFileNames = js.Any.fromFunction0(useCaseSensitiveFileNames))
     __obj.asInstanceOf[BuilderProgramHost]
   }
   
-  @scala.inline
-  implicit class BuilderProgramHostMutableBuilder[Self <: BuilderProgramHost] (val x: Self) extends AnyVal {
+  extension [Self <: BuilderProgramHost](x: Self) {
     
-    @scala.inline
-    def setCreateHash(value: /* data */ java.lang.String => java.lang.String): Self = StObject.set(x, "createHash", js.Any.fromFunction1(value))
+    inline def setCreateHash(value: /* data */ java.lang.String => java.lang.String): Self = StObject.set(x, "createHash", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateHashUndefined: Self = StObject.set(x, "createHash", js.undefined)
+    inline def setCreateHashUndefined: Self = StObject.set(x, "createHash", js.undefined)
     
-    @scala.inline
-    def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
+    inline def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteFile(
+    inline def setWriteFile(
       value: (/* fileName */ java.lang.String, /* data */ java.lang.String, /* writeByteOrderMark */ Boolean, /* onError */ js.UndefOr[js.Function1[/* message */ java.lang.String, Unit]], /* sourceFiles */ js.UndefOr[js.Array[SourceFile]]) => Unit
     ): Self = StObject.set(x, "writeFile", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
+    inline def setWriteFileUndefined: Self = StObject.set(x, "writeFile", js.undefined)
   }
 }

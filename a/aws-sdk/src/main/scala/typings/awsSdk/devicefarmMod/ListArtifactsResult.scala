@@ -18,28 +18,21 @@ trait ListArtifactsResult extends StObject {
 }
 object ListArtifactsResult {
   
-  @scala.inline
-  def apply(): ListArtifactsResult = {
+  inline def apply(): ListArtifactsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListArtifactsResult]
   }
   
-  @scala.inline
-  implicit class ListArtifactsResultMutableBuilder[Self <: ListArtifactsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListArtifactsResult](x: Self) {
     
-    @scala.inline
-    def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
+    inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
-    @scala.inline
-    def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

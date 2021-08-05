@@ -17,31 +17,23 @@ trait EthernetProperties[M /* <: ManagedObject */] extends StObject {
 }
 object EthernetProperties {
   
-  @scala.inline
-  def apply[M /* <: ManagedObject */](): EthernetProperties[M] = {
+  inline def apply[M /* <: ManagedObject */](): EthernetProperties[M] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EthernetProperties[M]]
   }
   
-  @scala.inline
-  implicit class EthernetPropertiesMutableBuilder[Self <: EthernetProperties[?], M /* <: ManagedObject */] (val x: Self & EthernetProperties[M]) extends AnyVal {
+  extension [Self <: EthernetProperties[?], M /* <: ManagedObject */](x: Self & EthernetProperties[M]) {
     
-    @scala.inline
-    def setAuthentication(value: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType]): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationUndefined: Self = StObject.set(x, "Authentication", js.undefined)
+    inline def setAuthenticationUndefined: Self = StObject.set(x, "Authentication", js.undefined)
     
-    @scala.inline
-    def setAutoConnect(value: Boolean | ManagedBoolean): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
+    inline def setAutoConnect(value: Boolean | ManagedBoolean): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
+    inline def setAutoConnectUndefined: Self = StObject.set(x, "AutoConnect", js.undefined)
     
-    @scala.inline
-    def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
+    inline def setEAP(value: EAPProperties): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
+    inline def setEAPUndefined: Self = StObject.set(x, "EAP", js.undefined)
   }
 }

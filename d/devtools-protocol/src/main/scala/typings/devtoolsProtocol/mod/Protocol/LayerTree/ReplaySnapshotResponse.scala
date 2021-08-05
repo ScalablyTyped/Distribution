@@ -13,16 +13,13 @@ trait ReplaySnapshotResponse extends StObject {
 }
 object ReplaySnapshotResponse {
   
-  @scala.inline
-  def apply(dataURL: String): ReplaySnapshotResponse = {
+  inline def apply(dataURL: String): ReplaySnapshotResponse = {
     val __obj = js.Dynamic.literal(dataURL = dataURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaySnapshotResponse]
   }
   
-  @scala.inline
-  implicit class ReplaySnapshotResponseMutableBuilder[Self <: ReplaySnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaySnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setDataURL(value: String): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
+    inline def setDataURL(value: String): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
   }
 }

@@ -81,17 +81,17 @@ object templateParserMod {
       transforms: js.Array[TemplateAstVisitor]
     ) = this()
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _console: js.Any = js.native
+    /* private */ var _console: js.Any = js.native
     
-    var _exprParser: js.Any = js.native
+    /* private */ var _exprParser: js.Any = js.native
     
-    var _htmlParser: js.Any = js.native
+    /* private */ var _htmlParser: js.Any = js.native
     
-    var _reflector: js.Any = js.native
+    /* private */ var _reflector: js.Any = js.native
     
-    var _schemaRegistry: js.Any = js.native
+    /* private */ var _schemaRegistry: js.Any = js.native
     
     def expandHtml(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = js.native
     def expandHtml(htmlAstWithErrors: ParseTreeResult, forced: Boolean): ParseTreeResult = js.native
@@ -149,15 +149,11 @@ object templateParserMod {
     ): TemplateParseResult = js.native
   }
   
-  @scala.inline
-  def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementCssSelector")(elementName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[CssSelector]
+  inline def createElementCssSelector(elementName: String, attributes: js.Array[js.Tuple2[String, String]]): CssSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createElementCssSelector")(elementName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[CssSelector]
   
-  @scala.inline
-  def isEmptyExpression(ast: AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyExpression")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmptyExpression(ast: AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyExpression")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSummaryDuplicates")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def removeSummaryDuplicates[T /* <: TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSummaryDuplicates")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def splitClasses(classAttrValue: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitClasses")(classAttrValue.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def splitClasses(classAttrValue: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitClasses")(classAttrValue.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

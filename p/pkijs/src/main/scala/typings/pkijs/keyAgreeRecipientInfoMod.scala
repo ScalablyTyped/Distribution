@@ -50,16 +50,12 @@ object keyAgreeRecipientInfoMod {
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @scala.inline
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait KeyAgreeRecipientInfo extends StObject {
@@ -84,8 +80,7 @@ object keyAgreeRecipientInfoMod {
   }
   object KeyAgreeRecipientInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromSchema: js.Any => Unit,
       keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default,
       originator: typings.pkijs.originatorIdentifierOrKeyMod.default,
@@ -99,38 +94,27 @@ object keyAgreeRecipientInfoMod {
       __obj.asInstanceOf[KeyAgreeRecipientInfo]
     }
     
-    @scala.inline
-    implicit class KeyAgreeRecipientInfoMutableBuilder[Self <: KeyAgreeRecipientInfo] (val x: Self) extends AnyVal {
+    extension [Self <: KeyAgreeRecipientInfo](x: Self) {
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyEncryptionAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "keyEncryptionAlgorithm", value.asInstanceOf[js.Any])
+      inline def setKeyEncryptionAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "keyEncryptionAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginator(value: typings.pkijs.originatorIdentifierOrKeyMod.default): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+      inline def setOriginator(value: typings.pkijs.originatorIdentifierOrKeyMod.default): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientCertificate(value: typings.pkijs.certificateMod.default): Self = StObject.set(x, "recipientCertificate", value.asInstanceOf[js.Any])
+      inline def setRecipientCertificate(value: typings.pkijs.certificateMod.default): Self = StObject.set(x, "recipientCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecipientEncryptedKeys(value: typings.pkijs.recipientEncryptedKeysMod.default): Self = StObject.set(x, "recipientEncryptedKeys", value.asInstanceOf[js.Any])
+      inline def setRecipientEncryptedKeys(value: typings.pkijs.recipientEncryptedKeysMod.default): Self = StObject.set(x, "recipientEncryptedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUkm(value: OctetString): Self = StObject.set(x, "ukm", value.asInstanceOf[js.Any])
+      inline def setUkm(value: OctetString): Self = StObject.set(x, "ukm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUkmUndefined: Self = StObject.set(x, "ukm", js.undefined)
+      inline def setUkmUndefined: Self = StObject.set(x, "ukm", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

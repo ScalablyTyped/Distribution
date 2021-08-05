@@ -79,8 +79,7 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCList]
+    inline def attachTo(root: Element): MDCList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCList]
   }
   
   type MDCListFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCListFoundation], MDCList]

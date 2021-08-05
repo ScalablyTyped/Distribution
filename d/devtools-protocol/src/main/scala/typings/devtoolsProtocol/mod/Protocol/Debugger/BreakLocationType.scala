@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BreakLocationType extends StObject
 object BreakLocationType {
   
-  @scala.inline
-  def Call: call = "call".asInstanceOf[call]
+  inline def Call: call = "call".asInstanceOf[call]
   
-  @scala.inline
-  def DebuggerStatement: debuggerStatement = "debuggerStatement".asInstanceOf[debuggerStatement]
+  inline def DebuggerStatement: debuggerStatement = "debuggerStatement".asInstanceOf[debuggerStatement]
   
-  @scala.inline
-  def Return: `return` = "return".asInstanceOf[`return`]
+  inline def Return: `return` = "return".asInstanceOf[`return`]
 }

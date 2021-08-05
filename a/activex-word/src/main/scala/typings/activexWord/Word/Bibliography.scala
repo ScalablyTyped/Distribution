@@ -18,13 +18,12 @@ trait Bibliography extends StObject {
   
   val Sources: typings.activexWord.Word.Sources
   
-  @JSName("Word.Bibliography_typekey")
+  /* private */ @JSName("Word.Bibliography_typekey")
   var WordDotBibliography_typekey: Bibliography
 }
 object Bibliography {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BibliographyStyle: String,
     Creator: Double,
@@ -38,28 +37,20 @@ object Bibliography {
     __obj.asInstanceOf[Bibliography]
   }
   
-  @scala.inline
-  implicit class BibliographyMutableBuilder[Self <: Bibliography] (val x: Self) extends AnyVal {
+  extension [Self <: Bibliography](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBibliographyStyle(value: String): Self = StObject.set(x, "BibliographyStyle", value.asInstanceOf[js.Any])
+    inline def setBibliographyStyle(value: String): Self = StObject.set(x, "BibliographyStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateUniqueTag(value: () => String): Self = StObject.set(x, "GenerateUniqueTag", js.Any.fromFunction0(value))
+    inline def setGenerateUniqueTag(value: () => String): Self = StObject.set(x, "GenerateUniqueTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSources(value: Sources): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: Sources): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotBibliography_typekey(value: Bibliography): Self = StObject.set(x, "Word.Bibliography_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotBibliography_typekey(value: Bibliography): Self = StObject.set(x, "Word.Bibliography_typekey", value.asInstanceOf[js.Any])
   }
 }

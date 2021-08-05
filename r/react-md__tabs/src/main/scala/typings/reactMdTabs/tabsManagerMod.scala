@@ -14,13 +14,11 @@ object tabsManagerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TabsManager(
+  inline def TabsManager(
     hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren: TabsManagerProps
   ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TabsManager")(hasTabsIdDefaultActiveIndexPropActiveIndexOnActiveIndexChangeTabsStackedIconAfterChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def useTabs(): InitializedTabsManagerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabs")().asInstanceOf[InitializedTabsManagerContext]
+  inline def useTabs(): InitializedTabsManagerContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabs")().asInstanceOf[InitializedTabsManagerContext]
   
   /* Inlined @react-md/tabs.@react-md/tabs/types/types.TabConfig & std.Required<std.Pick<@react-md/tabs.@react-md/tabs/types/types.TabConfig, 'id'>> */
   trait InitializedTabConfig extends StObject {
@@ -86,71 +84,50 @@ object tabsManagerMod {
   }
   object InitializedTabConfig {
     
-    @scala.inline
-    def apply(id: js.UndefOr[String] & String): InitializedTabConfig = {
+    inline def apply(id: js.UndefOr[String] & String): InitializedTabConfig = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitializedTabConfig]
     }
     
-    @scala.inline
-    implicit class InitializedTabConfigMutableBuilder[Self <: InitializedTabConfig] (val x: Self) extends AnyVal {
+    extension [Self <: InitializedTabConfig](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
+      inline def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
+      inline def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.UndefOr[String] & String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -167,8 +144,7 @@ object tabsManagerMod {
   }
   object InitializedTabsManagerContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeIndex: Double,
       onActiveIndexChange: /* activeIndex */ Double => Unit,
       tabs: js.Array[InitializedTabConfig],
@@ -178,23 +154,17 @@ object tabsManagerMod {
       __obj.asInstanceOf[InitializedTabsManagerContext]
     }
     
-    @scala.inline
-    implicit class InitializedTabsManagerContextMutableBuilder[Self <: InitializedTabsManagerContext] (val x: Self) extends AnyVal {
+    extension [Self <: InitializedTabsManagerContext](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnActiveIndexChange(value: /* activeIndex */ Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
+      inline def setOnActiveIndexChange(value: /* activeIndex */ Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTabs(value: js.Array[InitializedTabConfig]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[InitializedTabConfig]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
+      inline def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
   
@@ -231,8 +201,7 @@ object tabsManagerMod {
   }
   object TabsManagerContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeIndex: Double,
       onActiveIndexChange: Double => Unit,
       tabs: js.Array[InitializedTabConfig],
@@ -242,23 +211,17 @@ object tabsManagerMod {
       __obj.asInstanceOf[TabsManagerContext]
     }
     
-    @scala.inline
-    implicit class TabsManagerContextMutableBuilder[Self <: TabsManagerContext] (val x: Self) extends AnyVal {
+    extension [Self <: TabsManagerContext](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnActiveIndexChange(value: Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
+      inline def setOnActiveIndexChange(value: Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTabs(value: js.Array[InitializedTabConfig]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[InitializedTabConfig]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
+      inline def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: InitializedTabConfig*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
   
@@ -325,59 +288,42 @@ object tabsManagerMod {
   }
   object TabsManagerProps {
     
-    @scala.inline
-    def apply(tabs: js.Array[TabConfig | ReactElement | String], tabsId: String): TabsManagerProps = {
+    inline def apply(tabs: js.Array[TabConfig | ReactElement | String], tabsId: String): TabsManagerProps = {
       val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any], tabsId = tabsId.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabsManagerProps]
     }
     
-    @scala.inline
-    implicit class TabsManagerPropsMutableBuilder[Self <: TabsManagerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsManagerProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+      inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveIndex(value: Double): Self = StObject.set(x, "defaultActiveIndex", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveIndex(value: Double): Self = StObject.set(x, "defaultActiveIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActiveIndexUndefined: Self = StObject.set(x, "defaultActiveIndex", js.undefined)
+      inline def setDefaultActiveIndexUndefined: Self = StObject.set(x, "defaultActiveIndex", js.undefined)
       
-      @scala.inline
-      def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
+      inline def setIconAfter(value: Boolean): Self = StObject.set(x, "iconAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
+      inline def setIconAfterUndefined: Self = StObject.set(x, "iconAfter", js.undefined)
       
-      @scala.inline
-      def setOnActiveIndexChange(value: /* activeIndex */ Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
+      inline def setOnActiveIndexChange(value: /* activeIndex */ Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnActiveIndexChangeUndefined: Self = StObject.set(x, "onActiveIndexChange", js.undefined)
+      inline def setOnActiveIndexChangeUndefined: Self = StObject.set(x, "onActiveIndexChange", js.undefined)
       
-      @scala.inline
-      def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
       
-      @scala.inline
-      def setTabs(value: js.Array[TabConfig | ReactElement | String]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[TabConfig | ReactElement | String]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
+      inline def setTabsId(value: String): Self = StObject.set(x, "tabsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: (TabConfig | ReactElement | String)*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: (TabConfig | ReactElement | String)*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
 }

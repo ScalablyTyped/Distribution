@@ -47,79 +47,55 @@ trait CreateTransmission extends StObject {
 }
 object CreateTransmission {
   
-  @scala.inline
-  def apply(content: InlineContent | Templateid | Emailrfc822): CreateTransmission = {
+  inline def apply(content: InlineContent | Templateid | Emailrfc822): CreateTransmission = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransmission]
   }
   
-  @scala.inline
-  implicit class CreateTransmissionMutableBuilder[Self <: CreateTransmission] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTransmission](x: Self) {
     
-    @scala.inline
-    def setBcc(value: js.Array[Recipient]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+    inline def setBcc(value: js.Array[Recipient]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
+    inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
     
-    @scala.inline
-    def setBccVarargs(value: Recipient*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+    inline def setBccVarargs(value: Recipient*): Self = StObject.set(x, "bcc", js.Array(value :_*))
     
-    @scala.inline
-    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
+    inline def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaign_idUndefined: Self = StObject.set(x, "campaign_id", js.undefined)
+    inline def setCampaign_idUndefined: Self = StObject.set(x, "campaign_id", js.undefined)
     
-    @scala.inline
-    def setCc(value: js.Array[Recipient]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: js.Array[Recipient]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
+    inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
     
-    @scala.inline
-    def setCcVarargs(value: Recipient*): Self = StObject.set(x, "cc", js.Array(value :_*))
+    inline def setCcVarargs(value: Recipient*): Self = StObject.set(x, "cc", js.Array(value :_*))
     
-    @scala.inline
-    def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setOptions(value: TransmissionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TransmissionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRecipients(value: js.Array[Recipient] | Listid): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    inline def setRecipients(value: js.Array[Recipient] | Listid): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+    inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    @scala.inline
-    def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
-    @scala.inline
-    def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
+    inline def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
+    inline def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
     
-    @scala.inline
-    def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    inline def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
+    inline def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ trait XTitle
 }
 object XTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Title: String,
     acquire: () => Unit,
     getTitle: () => String,
@@ -44,16 +43,12 @@ object XTitle {
     __obj.asInstanceOf[XTitle]
   }
   
-  @scala.inline
-  implicit class XTitleMutableBuilder[Self <: XTitle] (val x: Self) extends AnyVal {
+  extension [Self <: XTitle](x: Self) {
     
-    @scala.inline
-    def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

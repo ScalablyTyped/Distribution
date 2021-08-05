@@ -18,22 +18,17 @@ trait GetObjectRequest extends StObject {
 }
 object GetObjectRequest {
   
-  @scala.inline
-  def apply(Path: PathNaming): GetObjectRequest = {
+  inline def apply(Path: PathNaming): GetObjectRequest = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectRequest]
   }
   
-  @scala.inline
-  implicit class GetObjectRequestMutableBuilder[Self <: GetObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectRequest](x: Self) {
     
-    @scala.inline
-    def setPath(value: PathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: PathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: RangePattern): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: RangePattern): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
   }
 }

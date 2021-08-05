@@ -18,19 +18,15 @@ trait ProjectReference extends StObject {
 }
 object ProjectReference {
   
-  @scala.inline
-  def apply(id: String, name: String): ProjectReference = {
+  inline def apply(id: String, name: String): ProjectReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectReference]
   }
   
-  @scala.inline
-  implicit class ProjectReferenceMutableBuilder[Self <: ProjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectReference](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

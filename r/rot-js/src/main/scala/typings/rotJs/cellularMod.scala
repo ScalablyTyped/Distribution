@@ -112,29 +112,22 @@ object cellularMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(born: js.Array[Double], survive: js.Array[Double], topology: `4` | `6` | `8`): Options = {
+    inline def apply(born: js.Array[Double], survive: js.Array[Double], topology: `4` | `6` | `8`): Options = {
       val __obj = js.Dynamic.literal(born = born.asInstanceOf[js.Any], survive = survive.asInstanceOf[js.Any], topology = topology.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBorn(value: js.Array[Double]): Self = StObject.set(x, "born", value.asInstanceOf[js.Any])
+      inline def setBorn(value: js.Array[Double]): Self = StObject.set(x, "born", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value :_*))
+      inline def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value :_*))
       
-      @scala.inline
-      def setSurvive(value: js.Array[Double]): Self = StObject.set(x, "survive", value.asInstanceOf[js.Any])
+      inline def setSurvive(value: js.Array[Double]): Self = StObject.set(x, "survive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value :_*))
+      inline def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value :_*))
       
-      @scala.inline
-      def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+      inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
     }
   }
   

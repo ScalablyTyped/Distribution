@@ -14,13 +14,12 @@ trait Zooms extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.Zooms_typekey")
+  /* private */ @JSName("Word.Zooms_typekey")
   var WordDotZooms_typekey: Zooms
 }
 object Zooms {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Item: WdViewType => Zoom,
@@ -32,22 +31,16 @@ object Zooms {
     __obj.asInstanceOf[Zooms]
   }
   
-  @scala.inline
-  implicit class ZoomsMutableBuilder[Self <: Zooms] (val x: Self) extends AnyVal {
+  extension [Self <: Zooms](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: WdViewType => Zoom): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: WdViewType => Zoom): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotZooms_typekey(value: Zooms): Self = StObject.set(x, "Word.Zooms_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotZooms_typekey(value: Zooms): Self = StObject.set(x, "Word.Zooms_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("firebase", "default.firestore.DocumentSnapshot")
 @js.native
-class DocumentSnapshot[T] protected () extends StObject {
+/* protected */ class DocumentSnapshot[T] () extends StObject {
   
   /**
     * Retrieves all fields in the document as an Object. Returns 'undefined' if

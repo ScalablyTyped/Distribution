@@ -43,55 +43,39 @@ trait HlsAkamaiSettings extends StObject {
 }
 object HlsAkamaiSettings {
   
-  @scala.inline
-  def apply(): HlsAkamaiSettings = {
+  inline def apply(): HlsAkamaiSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsAkamaiSettings]
   }
   
-  @scala.inline
-  implicit class HlsAkamaiSettingsMutableBuilder[Self <: HlsAkamaiSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsAkamaiSettings](x: Self) {
     
-    @scala.inline
-    def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
+    inline def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
+    inline def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
     
-    @scala.inline
-    def setFilecacheDuration(value: integerMin0Max600): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
+    inline def setFilecacheDuration(value: integerMin0Max600): Self = StObject.set(x, "FilecacheDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
+    inline def setFilecacheDurationUndefined: Self = StObject.set(x, "FilecacheDuration", js.undefined)
     
-    @scala.inline
-    def setHttpTransferMode(value: HlsAkamaiHttpTransferMode): Self = StObject.set(x, "HttpTransferMode", value.asInstanceOf[js.Any])
+    inline def setHttpTransferMode(value: HlsAkamaiHttpTransferMode): Self = StObject.set(x, "HttpTransferMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpTransferModeUndefined: Self = StObject.set(x, "HttpTransferMode", js.undefined)
+    inline def setHttpTransferModeUndefined: Self = StObject.set(x, "HttpTransferMode", js.undefined)
     
-    @scala.inline
-    def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
+    inline def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
+    inline def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
     
-    @scala.inline
-    def setRestartDelay(value: integerMin0Max15): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
+    inline def setRestartDelay(value: integerMin0Max15): Self = StObject.set(x, "RestartDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
+    inline def setRestartDelayUndefined: Self = StObject.set(x, "RestartDelay", js.undefined)
     
-    @scala.inline
-    def setSalt(value: string): Self = StObject.set(x, "Salt", value.asInstanceOf[js.Any])
+    inline def setSalt(value: string): Self = StObject.set(x, "Salt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltUndefined: Self = StObject.set(x, "Salt", js.undefined)
+    inline def setSaltUndefined: Self = StObject.set(x, "Salt", js.undefined)
     
-    @scala.inline
-    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

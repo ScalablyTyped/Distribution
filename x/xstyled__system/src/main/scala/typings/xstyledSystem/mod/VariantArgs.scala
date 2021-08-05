@@ -16,37 +16,27 @@ trait VariantArgs extends StObject {
 }
 object VariantArgs {
   
-  @scala.inline
-  def apply(): VariantArgs = {
+  inline def apply(): VariantArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VariantArgs]
   }
   
-  @scala.inline
-  implicit class VariantArgsMutableBuilder[Self <: VariantArgs] (val x: Self) extends AnyVal {
+  extension [Self <: VariantArgs](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String | Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String | Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+    inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
     
-    @scala.inline
-    def setVariants(value: js.Object): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Object): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
   }
 }

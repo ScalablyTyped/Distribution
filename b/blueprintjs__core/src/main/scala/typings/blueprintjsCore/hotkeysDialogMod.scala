@@ -13,20 +13,15 @@ object hotkeysDialogMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hideHotkeysDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialog")().asInstanceOf[Unit]
+  inline def hideHotkeysDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialog")().asInstanceOf[Unit]
   
-  @scala.inline
-  def hideHotkeysDialogAfterDelay(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialogAfterDelay")().asInstanceOf[Unit]
+  inline def hideHotkeysDialogAfterDelay(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideHotkeysDialogAfterDelay")().asInstanceOf[Unit]
   
-  @scala.inline
-  def isHotkeysDialogShowing(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHotkeysDialogShowing")().asInstanceOf[Boolean]
+  inline def isHotkeysDialogShowing(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHotkeysDialogShowing")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def setHotkeysDialogProps(props: PartialIHotkeysDialogProp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHotkeysDialogProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHotkeysDialogProps(props: PartialIHotkeysDialogProp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHotkeysDialogProps")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def showHotkeysDialog(hotkeys: js.Array[IHotkeyProps]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showHotkeysDialog")(hotkeys.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def showHotkeysDialog(hotkeys: js.Array[IHotkeyProps]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showHotkeysDialog")(hotkeys.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait IHotkeysDialogProps
     extends StObject
@@ -40,20 +35,16 @@ object hotkeysDialogMod {
   }
   object IHotkeysDialogProps {
     
-    @scala.inline
-    def apply(isOpen: Boolean): IHotkeysDialogProps = {
+    inline def apply(isOpen: Boolean): IHotkeysDialogProps = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHotkeysDialogProps]
     }
     
-    @scala.inline
-    implicit class IHotkeysDialogPropsMutableBuilder[Self <: IHotkeysDialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: IHotkeysDialogProps](x: Self) {
       
-      @scala.inline
-      def setGlobalHotkeysGroup(value: String): Self = StObject.set(x, "globalHotkeysGroup", value.asInstanceOf[js.Any])
+      inline def setGlobalHotkeysGroup(value: String): Self = StObject.set(x, "globalHotkeysGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalHotkeysGroupUndefined: Self = StObject.set(x, "globalHotkeysGroup", js.undefined)
+      inline def setGlobalHotkeysGroupUndefined: Self = StObject.set(x, "globalHotkeysGroup", js.undefined)
     }
   }
 }

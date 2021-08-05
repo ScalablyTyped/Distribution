@@ -33,8 +33,7 @@ object libModalMod extends Shortcut {
     @JSImport("office-ui-fabric-react/lib/Modal", "ModalBase.defaultProps")
     @js.native
     def defaultProps: IModalProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IModalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IModalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type _To = FunctionComponent[IModalProps]

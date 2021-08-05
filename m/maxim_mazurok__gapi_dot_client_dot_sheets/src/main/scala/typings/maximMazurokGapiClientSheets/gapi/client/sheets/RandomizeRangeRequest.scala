@@ -11,19 +11,15 @@ trait RandomizeRangeRequest extends StObject {
 }
 object RandomizeRangeRequest {
   
-  @scala.inline
-  def apply(): RandomizeRangeRequest = {
+  inline def apply(): RandomizeRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RandomizeRangeRequest]
   }
   
-  @scala.inline
-  implicit class RandomizeRangeRequestMutableBuilder[Self <: RandomizeRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RandomizeRangeRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait CreateResolverQueryLogConfigRequest extends StObject {
 }
 object CreateResolverQueryLogConfigRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreatorRequestId: CreatorRequestId,
     DestinationArn: DestinationArn,
     Name: ResolverQueryLogConfigName
@@ -38,25 +37,18 @@ object CreateResolverQueryLogConfigRequest {
     __obj.asInstanceOf[CreateResolverQueryLogConfigRequest]
   }
   
-  @scala.inline
-  implicit class CreateResolverQueryLogConfigRequestMutableBuilder[Self <: CreateResolverQueryLogConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResolverQueryLogConfigRequest](x: Self) {
     
-    @scala.inline
-    def setCreatorRequestId(value: CreatorRequestId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: CreatorRequestId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
+    inline def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResolverQueryLogConfigName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResolverQueryLogConfigName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

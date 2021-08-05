@@ -28,37 +28,27 @@ trait EquipmentDetection extends StObject {
 }
 object EquipmentDetection {
   
-  @scala.inline
-  def apply(): EquipmentDetection = {
+  inline def apply(): EquipmentDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EquipmentDetection]
   }
   
-  @scala.inline
-  implicit class EquipmentDetectionMutableBuilder[Self <: EquipmentDetection] (val x: Self) extends AnyVal {
+  extension [Self <: EquipmentDetection](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setCoversBodyPart(value: CoversBodyPart): Self = StObject.set(x, "CoversBodyPart", value.asInstanceOf[js.Any])
+    inline def setCoversBodyPart(value: CoversBodyPart): Self = StObject.set(x, "CoversBodyPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoversBodyPartUndefined: Self = StObject.set(x, "CoversBodyPart", js.undefined)
+    inline def setCoversBodyPartUndefined: Self = StObject.set(x, "CoversBodyPart", js.undefined)
     
-    @scala.inline
-    def setType(value: ProtectiveEquipmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ProtectiveEquipmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -69,8 +69,7 @@ trait CustomQueryParams extends StObject {
 }
 object CustomQueryParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customQueryParams: QueryParams,
     dismissedVersionNotification: String,
     globals: Args,
@@ -97,88 +96,60 @@ object CustomQueryParams {
     __obj.asInstanceOf[CustomQueryParams]
   }
   
-  @scala.inline
-  implicit class CustomQueryParamsMutableBuilder[Self <: CustomQueryParams] (val x: Self) extends AnyVal {
+  extension [Self <: CustomQueryParams](x: Self) {
     
-    @scala.inline
-    def setCustomQueryParams(value: QueryParams): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
+    inline def setCustomQueryParams(value: QueryParams): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissedVersionNotification(value: String): Self = StObject.set(x, "dismissedVersionNotification", value.asInstanceOf[js.Any])
+    inline def setDismissedVersionNotification(value: String): Self = StObject.set(x, "dismissedVersionNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastVersionCheck(value: Double): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
+    inline def setLastVersionCheck(value: Double): Self = StObject.set(x, "lastVersionCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: WindowLocation[js.Object]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[js.Object]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
+    inline def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+    inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
-    @scala.inline
-    def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+    inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefs(value: Record[String, ComposedRef]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+    inline def setRefs(value: Record[String, ComposedRef]): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseNotesViewed(value: js.Array[String]): Self = StObject.set(x, "releaseNotesViewed", value.asInstanceOf[js.Any])
+    inline def setReleaseNotesViewed(value: js.Array[String]): Self = StObject.set(x, "releaseNotesViewed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value :_*))
+    inline def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
+    inline def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+    inline def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
+    inline def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoriesFailed(value: typings.std.Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
+    inline def setStoriesFailed(value: typings.std.Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoriesFailedUndefined: Self = StObject.set(x, "storiesFailed", js.undefined)
+    inline def setStoriesFailedUndefined: Self = StObject.set(x, "storiesFailed", js.undefined)
     
-    @scala.inline
-    def setStoriesHash(value: StoriesHash): Self = StObject.set(x, "storiesHash", value.asInstanceOf[js.Any])
+    inline def setStoriesHash(value: StoriesHash): Self = StObject.set(x, "storiesHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+    inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: ThemeVars): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: UI): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersions(value: Versions & UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: Versions & UnknownEntries): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

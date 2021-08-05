@@ -18,22 +18,17 @@ trait DeleteFpgaImageRequest extends StObject {
 }
 object DeleteFpgaImageRequest {
   
-  @scala.inline
-  def apply(FpgaImageId: FpgaImageId): DeleteFpgaImageRequest = {
+  inline def apply(FpgaImageId: FpgaImageId): DeleteFpgaImageRequest = {
     val __obj = js.Dynamic.literal(FpgaImageId = FpgaImageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFpgaImageRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFpgaImageRequestMutableBuilder[Self <: DeleteFpgaImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFpgaImageRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFpgaImageId(value: FpgaImageId): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
+    inline def setFpgaImageId(value: FpgaImageId): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait UpdateKeyGroupRequest extends StObject {
 }
 object UpdateKeyGroupRequest {
   
-  @scala.inline
-  def apply(Id: String, KeyGroupConfig: KeyGroupConfig): UpdateKeyGroupRequest = {
+  inline def apply(Id: String, KeyGroupConfig: KeyGroupConfig): UpdateKeyGroupRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], KeyGroupConfig = KeyGroupConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateKeyGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateKeyGroupRequestMutableBuilder[Self <: UpdateKeyGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateKeyGroupRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
     
-    @scala.inline
-    def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
+    inline def setKeyGroupConfig(value: KeyGroupConfig): Self = StObject.set(x, "KeyGroupConfig", value.asInstanceOf[js.Any])
   }
 }

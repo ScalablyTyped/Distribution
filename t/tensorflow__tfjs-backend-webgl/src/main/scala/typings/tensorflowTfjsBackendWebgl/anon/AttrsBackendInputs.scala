@@ -18,25 +18,19 @@ trait AttrsBackendInputs extends StObject {
 }
 object AttrsBackendInputs {
   
-  @scala.inline
-  def apply(attrs: ConcatAttrs, backend: MathBackendWebGL, inputs: ConcatInputs): AttrsBackendInputs = {
+  inline def apply(attrs: ConcatAttrs, backend: MathBackendWebGL, inputs: ConcatInputs): AttrsBackendInputs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsBackendInputs]
   }
   
-  @scala.inline
-  implicit class AttrsBackendInputsMutableBuilder[Self <: AttrsBackendInputs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsBackendInputs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: ConcatAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: ConcatAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: ConcatInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: ConcatInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: TensorInfo*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: TensorInfo*): Self = StObject.set(x, "inputs", js.Array(value :_*))
   }
 }

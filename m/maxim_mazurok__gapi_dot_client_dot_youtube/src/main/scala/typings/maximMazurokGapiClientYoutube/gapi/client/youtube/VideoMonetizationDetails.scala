@@ -11,19 +11,15 @@ trait VideoMonetizationDetails extends StObject {
 }
 object VideoMonetizationDetails {
   
-  @scala.inline
-  def apply(): VideoMonetizationDetails = {
+  inline def apply(): VideoMonetizationDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoMonetizationDetails]
   }
   
-  @scala.inline
-  implicit class VideoMonetizationDetailsMutableBuilder[Self <: VideoMonetizationDetails] (val x: Self) extends AnyVal {
+  extension [Self <: VideoMonetizationDetails](x: Self) {
     
-    @scala.inline
-    def setAccess(value: AccessPolicy): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: AccessPolicy): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
   }
 }

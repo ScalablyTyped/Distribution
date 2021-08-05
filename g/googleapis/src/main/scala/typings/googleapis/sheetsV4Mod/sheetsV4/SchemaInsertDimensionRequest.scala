@@ -31,25 +31,19 @@ trait SchemaInsertDimensionRequest extends StObject {
 }
 object SchemaInsertDimensionRequest {
   
-  @scala.inline
-  def apply(): SchemaInsertDimensionRequest = {
+  inline def apply(): SchemaInsertDimensionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInsertDimensionRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInsertDimensionRequestMutableBuilder[Self <: SchemaInsertDimensionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInsertDimensionRequest](x: Self) {
     
-    @scala.inline
-    def setInheritFromBefore(value: Boolean): Self = StObject.set(x, "inheritFromBefore", value.asInstanceOf[js.Any])
+    inline def setInheritFromBefore(value: Boolean): Self = StObject.set(x, "inheritFromBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritFromBeforeUndefined: Self = StObject.set(x, "inheritFromBefore", js.undefined)
+    inline def setInheritFromBeforeUndefined: Self = StObject.set(x, "inheritFromBefore", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaDimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

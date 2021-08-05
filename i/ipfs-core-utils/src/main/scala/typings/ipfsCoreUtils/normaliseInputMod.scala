@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object normaliseInputMod {
   
-  @scala.inline
-  def apply(input: Source): AsyncIterable[Entry[AsyncIterable[Uint8Array]]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Entry[AsyncIterable[Uint8Array]]]]
+  inline def apply(input: Source): AsyncIterable[Entry[AsyncIterable[Uint8Array]]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Entry[AsyncIterable[Uint8Array]]]]
   
   @JSImport("ipfs-core-utils/dist/src/files/normalise-input", JSImport.Namespace)
   @js.native

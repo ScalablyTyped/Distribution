@@ -9,8 +9,7 @@ trait IDirectStore
      with IStore
 object IDirectStore {
   
-  @scala.inline
-  def apply(): IDirectStore = {
+  inline def apply(): IDirectStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDirectStore]
   }

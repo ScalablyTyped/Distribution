@@ -10,16 +10,13 @@ trait Inertia extends StObject {
 }
 object Inertia {
   
-  @scala.inline
-  def apply(inertia: Boolean): Inertia = {
+  inline def apply(inertia: Boolean): Inertia = {
     val __obj = js.Dynamic.literal(inertia = inertia.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inertia]
   }
   
-  @scala.inline
-  implicit class InertiaMutableBuilder[Self <: Inertia] (val x: Self) extends AnyVal {
+  extension [Self <: Inertia](x: Self) {
     
-    @scala.inline
-    def setInertia(value: Boolean): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
+    inline def setInertia(value: Boolean): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
   }
 }

@@ -58,70 +58,49 @@ trait SchemaCompositeType extends StObject {
 }
 object SchemaCompositeType {
   
-  @scala.inline
-  def apply(): SchemaCompositeType = {
+  inline def apply(): SchemaCompositeType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompositeType]
   }
   
-  @scala.inline
-  implicit class SchemaCompositeTypeMutableBuilder[Self <: SchemaCompositeType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompositeType](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
+    inline def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
+    inline def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[SchemaCompositeTypeLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[SchemaCompositeTypeLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: SchemaCompositeTypeLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: SchemaCompositeTypeLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTemplateContents(value: SchemaTemplateContents): Self = StObject.set(x, "templateContents", value.asInstanceOf[js.Any])
+    inline def setTemplateContents(value: SchemaTemplateContents): Self = StObject.set(x, "templateContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateContentsUndefined: Self = StObject.set(x, "templateContents", js.undefined)
+    inline def setTemplateContentsUndefined: Self = StObject.set(x, "templateContents", js.undefined)
   }
 }

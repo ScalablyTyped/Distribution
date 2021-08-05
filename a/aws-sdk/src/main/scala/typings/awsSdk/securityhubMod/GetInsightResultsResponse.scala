@@ -13,16 +13,13 @@ trait GetInsightResultsResponse extends StObject {
 }
 object GetInsightResultsResponse {
   
-  @scala.inline
-  def apply(InsightResults: InsightResults): GetInsightResultsResponse = {
+  inline def apply(InsightResults: InsightResults): GetInsightResultsResponse = {
     val __obj = js.Dynamic.literal(InsightResults = InsightResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightResultsResponse]
   }
   
-  @scala.inline
-  implicit class GetInsightResultsResponseMutableBuilder[Self <: GetInsightResultsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightResultsResponse](x: Self) {
     
-    @scala.inline
-    def setInsightResults(value: InsightResults): Self = StObject.set(x, "InsightResults", value.asInstanceOf[js.Any])
+    inline def setInsightResults(value: InsightResults): Self = StObject.set(x, "InsightResults", value.asInstanceOf[js.Any])
   }
 }

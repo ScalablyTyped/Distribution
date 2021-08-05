@@ -15,31 +15,23 @@ trait AccordionEvents extends StObject {
 }
 object AccordionEvents {
   
-  @scala.inline
-  def apply(): AccordionEvents = {
+  inline def apply(): AccordionEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccordionEvents]
   }
   
-  @scala.inline
-  implicit class AccordionEventsMutableBuilder[Self <: AccordionEvents] (val x: Self) extends AnyVal {
+  extension [Self <: AccordionEvents](x: Self) {
     
-    @scala.inline
-    def setActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
+    inline def setActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
     
-    @scala.inline
-    def setBeforeActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
+    inline def setBeforeActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
+    inline def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
     
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TableStyle")
 @js.native
-class TableStyle protected ()
+/* private */ class TableStyle ()
   extends StObject
      with typings.activexWord.Word.TableStyle {
   
@@ -67,7 +67,7 @@ class TableStyle protected ()
   /* CompleteClass */
   var TopPadding: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TableStyle_typekey")
   var WordDotTableStyle_typekey: typings.activexWord.Word.TableStyle = js.native
 }

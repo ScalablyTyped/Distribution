@@ -18,25 +18,19 @@ trait RulePriorityPair extends StObject {
 }
 object RulePriorityPair {
   
-  @scala.inline
-  def apply(): RulePriorityPair = {
+  inline def apply(): RulePriorityPair = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RulePriorityPair]
   }
   
-  @scala.inline
-  implicit class RulePriorityPairMutableBuilder[Self <: RulePriorityPair] (val x: Self) extends AnyVal {
+  extension [Self <: RulePriorityPair](x: Self) {
     
-    @scala.inline
-    def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
+    inline def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleArnUndefined: Self = StObject.set(x, "RuleArn", js.undefined)
+    inline def setRuleArnUndefined: Self = StObject.set(x, "RuleArn", js.undefined)
   }
 }

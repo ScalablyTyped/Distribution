@@ -13,16 +13,13 @@ trait RenewCertificateRequest extends StObject {
 }
 object RenewCertificateRequest {
   
-  @scala.inline
-  def apply(CertificateArn: Arn): RenewCertificateRequest = {
+  inline def apply(CertificateArn: Arn): RenewCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewCertificateRequest]
   }
   
-  @scala.inline
-  implicit class RenewCertificateRequestMutableBuilder[Self <: RenewCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RenewCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
   }
 }

@@ -43,55 +43,39 @@ trait GetResourceShareAssociationsRequest extends StObject {
 }
 object GetResourceShareAssociationsRequest {
   
-  @scala.inline
-  def apply(associationType: ResourceShareAssociationType): GetResourceShareAssociationsRequest = {
+  inline def apply(associationType: ResourceShareAssociationType): GetResourceShareAssociationsRequest = {
     val __obj = js.Dynamic.literal(associationType = associationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceShareAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceShareAssociationsRequestMutableBuilder[Self <: GetResourceShareAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceShareAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setAssociationStatus(value: ResourceShareAssociationStatus): Self = StObject.set(x, "associationStatus", value.asInstanceOf[js.Any])
+    inline def setAssociationStatus(value: ResourceShareAssociationStatus): Self = StObject.set(x, "associationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationStatusUndefined: Self = StObject.set(x, "associationStatus", js.undefined)
+    inline def setAssociationStatusUndefined: Self = StObject.set(x, "associationStatus", js.undefined)
     
-    @scala.inline
-    def setAssociationType(value: ResourceShareAssociationType): Self = StObject.set(x, "associationType", value.asInstanceOf[js.Any])
+    inline def setAssociationType(value: ResourceShareAssociationType): Self = StObject.set(x, "associationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     
-    @scala.inline
-    def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
+    inline def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
+    inline def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
     
-    @scala.inline
-    def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
+    inline def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
   }
 }

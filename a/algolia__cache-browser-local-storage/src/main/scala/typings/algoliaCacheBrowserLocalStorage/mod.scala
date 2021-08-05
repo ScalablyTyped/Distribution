@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createBrowserLocalStorageCache(options: BrowserLocalStorageOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserLocalStorageCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  inline def createBrowserLocalStorageCache(options: BrowserLocalStorageOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserLocalStorageCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
   
   trait BrowserLocalStorageOptions extends StObject {
     
@@ -29,23 +28,18 @@ object mod {
   }
   object BrowserLocalStorageOptions {
     
-    @scala.inline
-    def apply(key: String): BrowserLocalStorageOptions = {
+    inline def apply(key: String): BrowserLocalStorageOptions = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrowserLocalStorageOptions]
     }
     
-    @scala.inline
-    implicit class BrowserLocalStorageOptionsMutableBuilder[Self <: BrowserLocalStorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserLocalStorageOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorage(value: Storage): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      inline def setLocalStorage(value: Storage): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
     }
   }
 }

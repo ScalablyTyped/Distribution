@@ -44,8 +44,7 @@ trait AgentJobScheduleInfo extends StObject {
 }
 object AgentJobScheduleInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeEndDate: String,
     activeEndTimeOfDay: String,
     activeStartDate: String,
@@ -69,61 +68,42 @@ object AgentJobScheduleInfo {
     __obj.asInstanceOf[AgentJobScheduleInfo]
   }
   
-  @scala.inline
-  implicit class AgentJobScheduleInfoMutableBuilder[Self <: AgentJobScheduleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AgentJobScheduleInfo](x: Self) {
     
-    @scala.inline
-    def setActiveEndDate(value: String): Self = StObject.set(x, "activeEndDate", value.asInstanceOf[js.Any])
+    inline def setActiveEndDate(value: String): Self = StObject.set(x, "activeEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveEndTimeOfDay(value: String): Self = StObject.set(x, "activeEndTimeOfDay", value.asInstanceOf[js.Any])
+    inline def setActiveEndTimeOfDay(value: String): Self = StObject.set(x, "activeEndTimeOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveStartDate(value: String): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+    inline def setActiveStartDate(value: String): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveStartTimeOfDay(value: String): Self = StObject.set(x, "activeStartTimeOfDay", value.asInstanceOf[js.Any])
+    inline def setActiveStartTimeOfDay(value: String): Self = StObject.set(x, "activeStartTimeOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyInterval(value: Double): Self = StObject.set(x, "frequencyInterval", value.asInstanceOf[js.Any])
+    inline def setFrequencyInterval(value: Double): Self = StObject.set(x, "frequencyInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyRecurrenceFactor(value: Double): Self = StObject.set(x, "frequencyRecurrenceFactor", value.asInstanceOf[js.Any])
+    inline def setFrequencyRecurrenceFactor(value: Double): Self = StObject.set(x, "frequencyRecurrenceFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyRelativeIntervals(value: FrequencyRelativeIntervals): Self = StObject.set(x, "frequencyRelativeIntervals", value.asInstanceOf[js.Any])
+    inline def setFrequencyRelativeIntervals(value: FrequencyRelativeIntervals): Self = StObject.set(x, "frequencyRelativeIntervals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencySubDayInterval(value: Double): Self = StObject.set(x, "frequencySubDayInterval", value.asInstanceOf[js.Any])
+    inline def setFrequencySubDayInterval(value: Double): Self = StObject.set(x, "frequencySubDayInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencySubDayTypes(value: FrequencySubDayTypes): Self = StObject.set(x, "frequencySubDayTypes", value.asInstanceOf[js.Any])
+    inline def setFrequencySubDayTypes(value: FrequencySubDayTypes): Self = StObject.set(x, "frequencySubDayTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyTypes(value: FrequencyTypes): Self = StObject.set(x, "frequencyTypes", value.asInstanceOf[js.Any])
+    inline def setFrequencyTypes(value: FrequencyTypes): Self = StObject.set(x, "frequencyTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCount(value: Double): Self = StObject.set(x, "jobCount", value.asInstanceOf[js.Any])
+    inline def setJobCount(value: Double): Self = StObject.set(x, "jobCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUid(value: String): Self = StObject.set(x, "scheduleUid", value.asInstanceOf[js.Any])
+    inline def setScheduleUid(value: String): Self = StObject.set(x, "scheduleUid", value.asInstanceOf[js.Any])
   }
 }

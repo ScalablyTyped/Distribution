@@ -15,22 +15,17 @@ trait GooglePrivacyDlpV2ExcludeInfoTypes extends StObject {
 }
 object GooglePrivacyDlpV2ExcludeInfoTypes {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ExcludeInfoTypes = {
+  inline def apply(): GooglePrivacyDlpV2ExcludeInfoTypes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ExcludeInfoTypes]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ExcludeInfoTypesMutableBuilder[Self <: GooglePrivacyDlpV2ExcludeInfoTypes] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ExcludeInfoTypes](x: Self) {
     
-    @scala.inline
-    def setInfoTypes(value: js.Array[GooglePrivacyDlpV2InfoType]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
+    inline def setInfoTypes(value: js.Array[GooglePrivacyDlpV2InfoType]): Self = StObject.set(x, "infoTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
+    inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    @scala.inline
-    def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
   }
 }

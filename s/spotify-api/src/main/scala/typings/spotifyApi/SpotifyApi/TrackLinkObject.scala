@@ -23,29 +23,22 @@ trait TrackLinkObject extends StObject {
 }
 object TrackLinkObject {
   
-  @scala.inline
-  def apply(external_urls: ExternalUrlObject, href: String, id: String, uri: String): TrackLinkObject = {
+  inline def apply(external_urls: ExternalUrlObject, href: String, id: String, uri: String): TrackLinkObject = {
     val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("track")
     __obj.asInstanceOf[TrackLinkObject]
   }
   
-  @scala.inline
-  implicit class TrackLinkObjectMutableBuilder[Self <: TrackLinkObject] (val x: Self) extends AnyVal {
+  extension [Self <: TrackLinkObject](x: Self) {
     
-    @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
+    inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: track): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: track): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

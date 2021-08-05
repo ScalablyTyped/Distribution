@@ -28,37 +28,27 @@ trait SavingsPlansUtilization extends StObject {
 }
 object SavingsPlansUtilization {
   
-  @scala.inline
-  def apply(): SavingsPlansUtilization = {
+  inline def apply(): SavingsPlansUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansUtilization]
   }
   
-  @scala.inline
-  implicit class SavingsPlansUtilizationMutableBuilder[Self <: SavingsPlansUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansUtilization](x: Self) {
     
-    @scala.inline
-    def setTotalCommitment(value: GenericString): Self = StObject.set(x, "TotalCommitment", value.asInstanceOf[js.Any])
+    inline def setTotalCommitment(value: GenericString): Self = StObject.set(x, "TotalCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCommitmentUndefined: Self = StObject.set(x, "TotalCommitment", js.undefined)
+    inline def setTotalCommitmentUndefined: Self = StObject.set(x, "TotalCommitment", js.undefined)
     
-    @scala.inline
-    def setUnusedCommitment(value: GenericString): Self = StObject.set(x, "UnusedCommitment", value.asInstanceOf[js.Any])
+    inline def setUnusedCommitment(value: GenericString): Self = StObject.set(x, "UnusedCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnusedCommitmentUndefined: Self = StObject.set(x, "UnusedCommitment", js.undefined)
+    inline def setUnusedCommitmentUndefined: Self = StObject.set(x, "UnusedCommitment", js.undefined)
     
-    @scala.inline
-    def setUsedCommitment(value: GenericString): Self = StObject.set(x, "UsedCommitment", value.asInstanceOf[js.Any])
+    inline def setUsedCommitment(value: GenericString): Self = StObject.set(x, "UsedCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedCommitmentUndefined: Self = StObject.set(x, "UsedCommitment", js.undefined)
+    inline def setUsedCommitmentUndefined: Self = StObject.set(x, "UsedCommitment", js.undefined)
     
-    @scala.inline
-    def setUtilizationPercentage(value: GenericString): Self = StObject.set(x, "UtilizationPercentage", value.asInstanceOf[js.Any])
+    inline def setUtilizationPercentage(value: GenericString): Self = StObject.set(x, "UtilizationPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilizationPercentageUndefined: Self = StObject.set(x, "UtilizationPercentage", js.undefined)
+    inline def setUtilizationPercentageUndefined: Self = StObject.set(x, "UtilizationPercentage", js.undefined)
   }
 }

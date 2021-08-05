@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenOrClosed extends StObject
 object OpenOrClosed {
   
-  @scala.inline
-  def closed: typings.wordpressApiFetch.wordpressApiFetchStrings.closed = "closed".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.closed]
+  inline def closed: typings.wordpressApiFetch.wordpressApiFetchStrings.closed = "closed".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.closed]
   
-  @scala.inline
-  def open: typings.wordpressApiFetch.wordpressApiFetchStrings.open = "open".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.open]
+  inline def open: typings.wordpressApiFetch.wordpressApiFetchStrings.open = "open".asInstanceOf[typings.wordpressApiFetch.wordpressApiFetchStrings.open]
 }

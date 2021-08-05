@@ -17,31 +17,23 @@ trait GoogleCloudMlV1CompleteTrialRequest extends StObject {
 }
 object GoogleCloudMlV1CompleteTrialRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1CompleteTrialRequest = {
+  inline def apply(): GoogleCloudMlV1CompleteTrialRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1CompleteTrialRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1CompleteTrialRequestMutableBuilder[Self <: GoogleCloudMlV1CompleteTrialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1CompleteTrialRequest](x: Self) {
     
-    @scala.inline
-    def setFinalMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "finalMeasurement", value.asInstanceOf[js.Any])
+    inline def setFinalMeasurement(value: GoogleCloudMlV1Measurement): Self = StObject.set(x, "finalMeasurement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalMeasurementUndefined: Self = StObject.set(x, "finalMeasurement", js.undefined)
+    inline def setFinalMeasurementUndefined: Self = StObject.set(x, "finalMeasurement", js.undefined)
     
-    @scala.inline
-    def setInfeasibleReason(value: String): Self = StObject.set(x, "infeasibleReason", value.asInstanceOf[js.Any])
+    inline def setInfeasibleReason(value: String): Self = StObject.set(x, "infeasibleReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfeasibleReasonUndefined: Self = StObject.set(x, "infeasibleReason", js.undefined)
+    inline def setInfeasibleReasonUndefined: Self = StObject.set(x, "infeasibleReason", js.undefined)
     
-    @scala.inline
-    def setTrialInfeasible(value: Boolean): Self = StObject.set(x, "trialInfeasible", value.asInstanceOf[js.Any])
+    inline def setTrialInfeasible(value: Boolean): Self = StObject.set(x, "trialInfeasible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrialInfeasibleUndefined: Self = StObject.set(x, "trialInfeasible", js.undefined)
+    inline def setTrialInfeasibleUndefined: Self = StObject.set(x, "trialInfeasible", js.undefined)
   }
 }

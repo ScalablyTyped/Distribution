@@ -11,19 +11,15 @@ trait GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest extends StObjec
 }
 object GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequestMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest](x: Self) {
     
-    @scala.inline
-    def setNewTagTemplateFieldId(value: String): Self = StObject.set(x, "newTagTemplateFieldId", value.asInstanceOf[js.Any])
+    inline def setNewTagTemplateFieldId(value: String): Self = StObject.set(x, "newTagTemplateFieldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTagTemplateFieldIdUndefined: Self = StObject.set(x, "newTagTemplateFieldId", js.undefined)
+    inline def setNewTagTemplateFieldIdUndefined: Self = StObject.set(x, "newTagTemplateFieldId", js.undefined)
   }
 }

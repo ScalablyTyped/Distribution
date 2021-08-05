@@ -11,10 +11,8 @@ object mod {
     * Strip Markdown formatting from text
     * @param markdown Markdown text
     */
-  @scala.inline
-  def apply(markdown: String): String = ^.asInstanceOf[js.Dynamic].apply(markdown.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(markdown: String, options: Gfm): String = (^.asInstanceOf[js.Dynamic].apply(markdown.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(markdown: String): String = ^.asInstanceOf[js.Dynamic].apply(markdown.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(markdown: String, options: Gfm): String = (^.asInstanceOf[js.Dynamic].apply(markdown.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("remove-markdown", JSImport.Namespace)
   @js.native

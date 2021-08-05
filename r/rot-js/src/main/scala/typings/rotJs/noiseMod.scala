@@ -26,7 +26,6 @@ object noiseMod {
     @JSImport("rot-js/lib/noise", "default.Simplex")
     @js.native
     def Simplex: Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.simplexMod.default] = js.native
-    @scala.inline
-    def Simplex_=(x: Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.simplexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simplex")(x.asInstanceOf[js.Any])
+    inline def Simplex_=(x: Instantiable1[/* gradients */ js.UndefOr[Double], typings.rotJs.simplexMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Simplex")(x.asInstanceOf[js.Any])
   }
 }

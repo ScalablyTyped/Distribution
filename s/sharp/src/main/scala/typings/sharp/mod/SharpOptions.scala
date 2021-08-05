@@ -47,73 +47,51 @@ trait SharpOptions extends StObject {
 }
 object SharpOptions {
   
-  @scala.inline
-  def apply(): SharpOptions = {
+  inline def apply(): SharpOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharpOptions]
   }
   
-  @scala.inline
-  implicit class SharpOptionsMutableBuilder[Self <: SharpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SharpOptions](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setCreate(value: Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Create): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
-    @scala.inline
-    def setFailOnError(value: Boolean): Self = StObject.set(x, "failOnError", value.asInstanceOf[js.Any])
+    inline def setFailOnError(value: Boolean): Self = StObject.set(x, "failOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnErrorUndefined: Self = StObject.set(x, "failOnError", js.undefined)
+    inline def setFailOnErrorUndefined: Self = StObject.set(x, "failOnError", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setLimitInputPixels(value: Double | Boolean): Self = StObject.set(x, "limitInputPixels", value.asInstanceOf[js.Any])
+    inline def setLimitInputPixels(value: Double | Boolean): Self = StObject.set(x, "limitInputPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitInputPixelsUndefined: Self = StObject.set(x, "limitInputPixels", js.undefined)
+    inline def setLimitInputPixelsUndefined: Self = StObject.set(x, "limitInputPixels", js.undefined)
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setRaw(value: Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setSequentialRead(value: Boolean): Self = StObject.set(x, "sequentialRead", value.asInstanceOf[js.Any])
+    inline def setSequentialRead(value: Boolean): Self = StObject.set(x, "sequentialRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequentialReadUndefined: Self = StObject.set(x, "sequentialRead", js.undefined)
+    inline def setSequentialReadUndefined: Self = StObject.set(x, "sequentialRead", js.undefined)
   }
 }

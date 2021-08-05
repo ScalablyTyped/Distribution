@@ -19,40 +19,29 @@ trait OmitUsePopperOptionsplace extends StObject {
 }
 object OmitUsePopperOptionsplace {
   
-  @scala.inline
-  def apply(): OmitUsePopperOptionsplace = {
+  inline def apply(): OmitUsePopperOptionsplace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmitUsePopperOptionsplace]
   }
   
-  @scala.inline
-  implicit class OmitUsePopperOptionsplaceMutableBuilder[Self <: OmitUsePopperOptionsplace] (val x: Self) extends AnyVal {
+  extension [Self <: OmitUsePopperOptionsplace](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    @scala.inline
-    def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
+    inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
+    inline def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
     
-    @scala.inline
-    def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

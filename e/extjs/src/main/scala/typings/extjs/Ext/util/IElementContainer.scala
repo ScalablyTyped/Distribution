@@ -19,25 +19,19 @@ trait IElementContainer
 }
 object IElementContainer {
   
-  @scala.inline
-  def apply(): IElementContainer = {
+  inline def apply(): IElementContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IElementContainer]
   }
   
-  @scala.inline
-  implicit class IElementContainerMutableBuilder[Self <: IElementContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IElementContainer](x: Self) {
     
-    @scala.inline
-    def setAddChildEls(value: () => Unit): Self = StObject.set(x, "addChildEls", js.Any.fromFunction0(value))
+    inline def setAddChildEls(value: () => Unit): Self = StObject.set(x, "addChildEls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddChildElsUndefined: Self = StObject.set(x, "addChildEls", js.undefined)
+    inline def setAddChildElsUndefined: Self = StObject.set(x, "addChildEls", js.undefined)
     
-    @scala.inline
-    def setRemoveChildEls(value: /* testFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeChildEls", js.Any.fromFunction1(value))
+    inline def setRemoveChildEls(value: /* testFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeChildEls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveChildElsUndefined: Self = StObject.set(x, "removeChildEls", js.undefined)
+    inline def setRemoveChildElsUndefined: Self = StObject.set(x, "removeChildEls", js.undefined)
   }
 }

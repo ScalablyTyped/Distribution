@@ -19,40 +19,29 @@ trait ICreateSnapshotRequest extends StObject {
 }
 object ICreateSnapshotRequest {
   
-  @scala.inline
-  def apply(): ICreateSnapshotRequest = {
+  inline def apply(): ICreateSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICreateSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class ICreateSnapshotRequestMutableBuilder[Self <: ICreateSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsNull: Self = StObject.set(x, "labels", null)
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    inline def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

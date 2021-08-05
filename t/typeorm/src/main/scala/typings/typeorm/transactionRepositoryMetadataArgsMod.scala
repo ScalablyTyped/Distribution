@@ -35,32 +35,24 @@ object transactionRepositoryMetadataArgsMod {
   }
   object TransactionRepositoryMetadataArgs {
     
-    @scala.inline
-    def apply(index: Double, methodName: String, repositoryType: js.Function, target: js.Function): TransactionRepositoryMetadataArgs = {
+    inline def apply(index: Double, methodName: String, repositoryType: js.Function, target: js.Function): TransactionRepositoryMetadataArgs = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], repositoryType = repositoryType.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionRepositoryMetadataArgs]
     }
     
-    @scala.inline
-    implicit class TransactionRepositoryMetadataArgsMutableBuilder[Self <: TransactionRepositoryMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionRepositoryMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setEntityType(value: js.Function): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+      inline def setEntityType(value: js.Function): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
+      inline def setEntityTypeUndefined: Self = StObject.set(x, "entityType", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryType(value: js.Function): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
+      inline def setRepositoryType(value: js.Function): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

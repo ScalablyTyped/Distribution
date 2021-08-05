@@ -16,19 +16,15 @@ trait Printing3DComponentWithMatrix extends StObject {
 }
 object Printing3DComponentWithMatrix {
   
-  @scala.inline
-  def apply(component: Printing3DComponent, matrix: Matrix4x4): Printing3DComponentWithMatrix = {
+  inline def apply(component: Printing3DComponent, matrix: Matrix4x4): Printing3DComponentWithMatrix = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], matrix = matrix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Printing3DComponentWithMatrix]
   }
   
-  @scala.inline
-  implicit class Printing3DComponentWithMatrixMutableBuilder[Self <: Printing3DComponentWithMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DComponentWithMatrix](x: Self) {
     
-    @scala.inline
-    def setComponent(value: Printing3DComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Printing3DComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix(value: Matrix4x4): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: Matrix4x4): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
   }
 }

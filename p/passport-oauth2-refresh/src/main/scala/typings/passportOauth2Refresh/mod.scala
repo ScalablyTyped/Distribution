@@ -12,20 +12,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def has(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def has(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def requestNewAccessToken(name: String, refreshToken: String, done: oauth2tokenCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requestNewAccessToken")(name.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def requestNewAccessToken(name: String, refreshToken: String, params: js.Any, done: oauth2tokenCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requestNewAccessToken")(name.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], params.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def requestNewAccessToken(name: String, refreshToken: String, done: oauth2tokenCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requestNewAccessToken")(name.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def requestNewAccessToken(name: String, refreshToken: String, params: js.Any, done: oauth2tokenCallback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requestNewAccessToken")(name.asInstanceOf[js.Any], refreshToken.asInstanceOf[js.Any], params.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def use(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def use(name: String, strategy: Strategy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def use(name: Strategy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def use(name: Strategy, strategy: Strategy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def use(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def use(name: String, strategy: Strategy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def use(name: Strategy): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def use(name: Strategy, strategy: Strategy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

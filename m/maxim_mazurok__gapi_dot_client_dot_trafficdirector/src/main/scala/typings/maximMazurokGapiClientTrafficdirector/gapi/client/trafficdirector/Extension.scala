@@ -29,43 +29,31 @@ trait Extension extends StObject {
 }
 object Extension {
   
-  @scala.inline
-  def apply(): Extension = {
+  inline def apply(): Extension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Extension]
   }
   
-  @scala.inline
-  implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
+  extension [Self <: Extension](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTypeDescriptor(value: String): Self = StObject.set(x, "typeDescriptor", value.asInstanceOf[js.Any])
+    inline def setTypeDescriptor(value: String): Self = StObject.set(x, "typeDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeDescriptorUndefined: Self = StObject.set(x, "typeDescriptor", js.undefined)
+    inline def setTypeDescriptorUndefined: Self = StObject.set(x, "typeDescriptor", js.undefined)
     
-    @scala.inline
-    def setVersion(value: BuildVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: BuildVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

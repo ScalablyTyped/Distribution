@@ -31,32 +31,24 @@ object typesUpdateGlobalTableSettingsOutputMod {
   }
   object UpdateGlobalTableSettingsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateGlobalTableSettingsOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateGlobalTableSettingsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateGlobalTableSettingsOutput]
     }
     
-    @scala.inline
-    implicit class UpdateGlobalTableSettingsOutputMutableBuilder[Self <: UpdateGlobalTableSettingsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateGlobalTableSettingsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+      inline def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
+      inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      @scala.inline
-      def setReplicaSettings(value: js.Array[UnmarshalledReplicaSettingsDescription]): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
+      inline def setReplicaSettings(value: js.Array[UnmarshalledReplicaSettingsDescription]): Self = StObject.set(x, "ReplicaSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
+      inline def setReplicaSettingsUndefined: Self = StObject.set(x, "ReplicaSettings", js.undefined)
       
-      @scala.inline
-      def setReplicaSettingsVarargs(value: UnmarshalledReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
+      inline def setReplicaSettingsVarargs(value: UnmarshalledReplicaSettingsDescription*): Self = StObject.set(x, "ReplicaSettings", js.Array(value :_*))
     }
   }
 }

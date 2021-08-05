@@ -12,22 +12,17 @@ trait QueryExecuteCompleteNotificationResult extends StObject {
 }
 object QueryExecuteCompleteNotificationResult {
   
-  @scala.inline
-  def apply(batchSummaries: js.Array[BatchSummary], ownerUri: String): QueryExecuteCompleteNotificationResult = {
+  inline def apply(batchSummaries: js.Array[BatchSummary], ownerUri: String): QueryExecuteCompleteNotificationResult = {
     val __obj = js.Dynamic.literal(batchSummaries = batchSummaries.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryExecuteCompleteNotificationResult]
   }
   
-  @scala.inline
-  implicit class QueryExecuteCompleteNotificationResultMutableBuilder[Self <: QueryExecuteCompleteNotificationResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExecuteCompleteNotificationResult](x: Self) {
     
-    @scala.inline
-    def setBatchSummaries(value: js.Array[BatchSummary]): Self = StObject.set(x, "batchSummaries", value.asInstanceOf[js.Any])
+    inline def setBatchSummaries(value: js.Array[BatchSummary]): Self = StObject.set(x, "batchSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSummariesVarargs(value: BatchSummary*): Self = StObject.set(x, "batchSummaries", js.Array(value :_*))
+    inline def setBatchSummariesVarargs(value: BatchSummary*): Self = StObject.set(x, "batchSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }
 }

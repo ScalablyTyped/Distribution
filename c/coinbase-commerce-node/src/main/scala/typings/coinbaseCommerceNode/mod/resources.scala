@@ -133,37 +133,29 @@ object resources {
       * Fetch all charges.
       */
     /* static member */
-    @scala.inline
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Charge]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Charge]]]
-    @scala.inline
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Charge]]): js.Promise[js.Array[Charge]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Charge]]]
+    inline def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Charge]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Charge]]]
+    inline def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Charge]]): js.Promise[js.Array[Charge]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Charge]]]
     
     /**
       * Create a charge.
       */
     /* static member */
-    @scala.inline
-    def create(chargeData: CreateCharge): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
-    @scala.inline
-    def create(chargeData: CreateCharge, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
+    inline def create(chargeData: CreateCharge): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
+    inline def create(chargeData: CreateCharge, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(chargeData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
     
     /**
       * List charges.
       */
     /* static member */
-    @scala.inline
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
-    @scala.inline
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Charge]): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Charge]): js.Promise[js.Tuple2[js.Array[Charge], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Charge], Pagination]]]
     
     /**
       * Retrieve a charge by ID.
       */
     /* static member */
-    @scala.inline
-    def retrieve(chargeId: String): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
-    @scala.inline
-    def retrieve(chargeId: String, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
+    inline def retrieve(chargeId: String): js.Promise[Charge] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Charge]]
+    inline def retrieve(chargeId: String, callback: Callback[Charge]): js.Promise[Charge] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(chargeId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Charge]]
   }
   
   /**
@@ -226,55 +218,43 @@ object resources {
       * Fetch all checkouts.
       */
     /* static member */
-    @scala.inline
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Checkout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Checkout]]]
-    @scala.inline
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Checkout]]): js.Promise[js.Array[Checkout]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Checkout]]]
+    inline def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Checkout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Checkout]]]
+    inline def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Checkout]]): js.Promise[js.Array[Checkout]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Checkout]]]
     
     /**
       * Create a checkout.
       */
     /* static member */
-    @scala.inline
-    def create(checkoutData: CreateCheckout): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
-    @scala.inline
-    def create(checkoutData: CreateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    inline def create(checkoutData: CreateCheckout): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    inline def create(checkoutData: CreateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(checkoutData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
     
     /**
       * Delete a checkout by ID.
       */
     /* static member */
-    @scala.inline
-    def deleteById(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
-    @scala.inline
-    def deleteById(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    inline def deleteById(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    inline def deleteById(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteById")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
     
     /**
       * List checkouts.
       */
     /* static member */
-    @scala.inline
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
-    @scala.inline
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Checkout]): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Checkout]): js.Promise[js.Tuple2[js.Array[Checkout], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Checkout], Pagination]]]
     
     /**
       * Retrieve a checkout by ID.
       */
     /* static member */
-    @scala.inline
-    def retrieve(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
-    @scala.inline
-    def retrieve(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    inline def retrieve(checkoutId: String): js.Promise[Checkout] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Checkout]]
+    inline def retrieve(checkoutId: String, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(checkoutId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
     
     /**
       * Update a checkout by ID.
       */
     /* static member */
-    @scala.inline
-    def updateById(checkoutId: String, update: UpdateCheckout): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
-    @scala.inline
-    def updateById(checkoutId: String, update: UpdateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    inline def updateById(checkoutId: String, update: UpdateCheckout): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
+    inline def updateById(checkoutId: String, update: UpdateCheckout, callback: Callback[Checkout]): js.Promise[Checkout] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateById")(checkoutId.asInstanceOf[js.Any], update.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Checkout]]
   }
   
   /**
@@ -342,28 +322,22 @@ object resources {
       * Fetch all events.
       */
     /* static member */
-    @scala.inline
-    def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Event]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Event]]]
-    @scala.inline
-    def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Event]]): js.Promise[js.Array[Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Event]]]
+    inline def all(paginationOptions: PaginationRequest): js.Promise[js.Array[Event]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Event]]]
+    inline def all(paginationOptions: PaginationRequest, callback: Callback[js.Array[Event]]): js.Promise[js.Array[Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Event]]]
     
     /**
       * List events.
       */
     /* static member */
-    @scala.inline
-    def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
-    @scala.inline
-    def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Event]): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
+    inline def list(paginationOptions: PaginationRequest, callback: PaginationCallback[Event]): js.Promise[js.Tuple2[js.Array[Event], Pagination]] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(paginationOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Tuple2[js.Array[Event], Pagination]]]
     
     /**
       * Retrieve a event by ID.
       */
     /* static member */
-    @scala.inline
-    def retrieve(eventId: String): js.Promise[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Event]]
-    @scala.inline
-    def retrieve(eventId: String, callback: Callback[Event]): js.Promise[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Event]]
+    inline def retrieve(eventId: String): js.Promise[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Event]]
+    inline def retrieve(eventId: String, callback: Callback[Event]): js.Promise[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(eventId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Event]]
   }
   
   /**

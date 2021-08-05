@@ -41,55 +41,39 @@ trait LookupOptions extends StObject {
 }
 object LookupOptions {
   
-  @scala.inline
-  def apply(): LookupOptions = {
+  inline def apply(): LookupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookupOptions]
   }
   
-  @scala.inline
-  implicit class LookupOptionsMutableBuilder[Self <: LookupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LookupOptions](x: Self) {
     
-    @scala.inline
-    def setAllowMultiSelect(value: Boolean): Self = StObject.set(x, "allowMultiSelect", value.asInstanceOf[js.Any])
+    inline def setAllowMultiSelect(value: Boolean): Self = StObject.set(x, "allowMultiSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMultiSelectUndefined: Self = StObject.set(x, "allowMultiSelect", js.undefined)
+    inline def setAllowMultiSelectUndefined: Self = StObject.set(x, "allowMultiSelect", js.undefined)
     
-    @scala.inline
-    def setDefaultEntityType(value: String): Self = StObject.set(x, "defaultEntityType", value.asInstanceOf[js.Any])
+    inline def setDefaultEntityType(value: String): Self = StObject.set(x, "defaultEntityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEntityTypeUndefined: Self = StObject.set(x, "defaultEntityType", js.undefined)
+    inline def setDefaultEntityTypeUndefined: Self = StObject.set(x, "defaultEntityType", js.undefined)
     
-    @scala.inline
-    def setDefaultViewId(value: String): Self = StObject.set(x, "defaultViewId", value.asInstanceOf[js.Any])
+    inline def setDefaultViewId(value: String): Self = StObject.set(x, "defaultViewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultViewIdUndefined: Self = StObject.set(x, "defaultViewId", js.undefined)
+    inline def setDefaultViewIdUndefined: Self = StObject.set(x, "defaultViewId", js.undefined)
     
-    @scala.inline
-    def setEntityTypes(value: js.Array[String]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
+    inline def setEntityTypes(value: js.Array[String]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
+    inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    @scala.inline
-    def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setShowBarcodeScanner(value: Boolean): Self = StObject.set(x, "showBarcodeScanner", value.asInstanceOf[js.Any])
+    inline def setShowBarcodeScanner(value: Boolean): Self = StObject.set(x, "showBarcodeScanner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBarcodeScannerUndefined: Self = StObject.set(x, "showBarcodeScanner", js.undefined)
+    inline def setShowBarcodeScannerUndefined: Self = StObject.set(x, "showBarcodeScanner", js.undefined)
     
-    @scala.inline
-    def setViewIds(value: js.Array[String]): Self = StObject.set(x, "viewIds", value.asInstanceOf[js.Any])
+    inline def setViewIds(value: js.Array[String]): Self = StObject.set(x, "viewIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewIdsUndefined: Self = StObject.set(x, "viewIds", js.undefined)
+    inline def setViewIdsUndefined: Self = StObject.set(x, "viewIds", js.undefined)
     
-    @scala.inline
-    def setViewIdsVarargs(value: String*): Self = StObject.set(x, "viewIds", js.Array(value :_*))
+    inline def setViewIdsVarargs(value: String*): Self = StObject.set(x, "viewIds", js.Array(value :_*))
   }
 }

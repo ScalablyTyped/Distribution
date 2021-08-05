@@ -29,31 +29,23 @@ trait ParamsResourceUserprofilesGuardianinvitationsGet
 }
 object ParamsResourceUserprofilesGuardianinvitationsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceUserprofilesGuardianinvitationsGet = {
+  inline def apply(): ParamsResourceUserprofilesGuardianinvitationsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUserprofilesGuardianinvitationsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUserprofilesGuardianinvitationsGetMutableBuilder[Self <: ParamsResourceUserprofilesGuardianinvitationsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUserprofilesGuardianinvitationsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
     
-    @scala.inline
-    def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
+    inline def setStudentId(value: String): Self = StObject.set(x, "studentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
+    inline def setStudentIdUndefined: Self = StObject.set(x, "studentId", js.undefined)
   }
 }

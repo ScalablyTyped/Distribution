@@ -20,8 +20,7 @@ object TestStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     messages: js.Array[typings.wonderFrp.recordMod.Record],
     scheduler: typings.wonderFrp.testSchedulerMod.TestScheduler
   ): typings.wonderFrp.testStreamMod.TestStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(messages.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.testStreamMod.TestStream]

@@ -12,8 +12,7 @@ object precompilesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPrecompile(address: String): PrecompileFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrecompile")(address.asInstanceOf[js.Any]).asInstanceOf[PrecompileFunc]
+  inline def getPrecompile(address: String): PrecompileFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrecompile")(address.asInstanceOf[js.Any]).asInstanceOf[PrecompileFunc]
   
   @JSImport("ethereumjs-vm/dist/evm/precompiles", "precompiles")
   @js.native

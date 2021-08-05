@@ -18,34 +18,25 @@ trait Department extends StObject {
 }
 object Department {
   
-  @scala.inline
-  def apply(email: String, message: String, name: String): Department = {
+  inline def apply(email: String, message: String, name: String): Department = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Department]
   }
   
-  @scala.inline
-  implicit class DepartmentMutableBuilder[Self <: Department] (val x: Self) extends AnyVal {
+  extension [Self <: Department](x: Self) {
     
-    @scala.inline
-    def setDepartment(value: Double): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
+    inline def setDepartment(value: Double): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
+    inline def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
   }
 }

@@ -31,8 +31,7 @@ trait CreateReportOptions extends StObject {
 }
 object CreateReportOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additionalJsContext: js.Object,
     cmdDelimiter: js.Tuple2[String, String],
     failFast: Boolean,
@@ -46,43 +45,30 @@ object CreateReportOptions {
     __obj.asInstanceOf[CreateReportOptions]
   }
   
-  @scala.inline
-  implicit class CreateReportOptionsMutableBuilder[Self <: CreateReportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReportOptions](x: Self) {
     
-    @scala.inline
-    def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
+    inline def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmdDelimiter(value: js.Tuple2[String, String]): Self = StObject.set(x, "cmdDelimiter", value.asInstanceOf[js.Any])
+    inline def setCmdDelimiter(value: js.Tuple2[String, String]): Self = StObject.set(x, "cmdDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+    inline def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorHandlerNull: Self = StObject.set(x, "errorHandler", null)
+    inline def setErrorHandlerNull: Self = StObject.set(x, "errorHandler", null)
     
-    @scala.inline
-    def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
+    inline def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixSmartQuotes(value: Boolean): Self = StObject.set(x, "fixSmartQuotes", value.asInstanceOf[js.Any])
+    inline def setFixSmartQuotes(value: Boolean): Self = StObject.set(x, "fixSmartQuotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
+    inline def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSandbox(value: Boolean): Self = StObject.set(x, "noSandbox", value.asInstanceOf[js.Any])
+    inline def setNoSandbox(value: Boolean): Self = StObject.set(x, "noSandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessLineBreaks(value: Boolean): Self = StObject.set(x, "processLineBreaks", value.asInstanceOf[js.Any])
+    inline def setProcessLineBreaks(value: Boolean): Self = StObject.set(x, "processLineBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectNullish(value: Boolean): Self = StObject.set(x, "rejectNullish", value.asInstanceOf[js.Any])
+    inline def setRejectNullish(value: Boolean): Self = StObject.set(x, "rejectNullish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunJs(value: /* o */ Ctx => ModifiedSandbox): Self = StObject.set(x, "runJs", js.Any.fromFunction1(value))
+    inline def setRunJs(value: /* o */ Ctx => ModifiedSandbox): Self = StObject.set(x, "runJs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRunJsUndefined: Self = StObject.set(x, "runJs", js.undefined)
+    inline def setRunJsUndefined: Self = StObject.set(x, "runJs", js.undefined)
   }
 }

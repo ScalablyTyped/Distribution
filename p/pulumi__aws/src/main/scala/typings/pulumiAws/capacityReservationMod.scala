@@ -104,21 +104,16 @@ object capacityReservationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CapacityReservationState): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: CapacityReservationState, opts: CustomResourceOptions): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
+    inline def get(name: String, id: Input[ID]): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
+    inline def get(name: String, id: Input[ID], state: CapacityReservationState): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
+    inline def get(name: String, id: Input[ID], state: CapacityReservationState, opts: CustomResourceOptions): CapacityReservation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CapacityReservation]
     
     /**
       * Returns true if the given object is an instance of CapacityReservation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ Boolean]
   }
   
   trait CapacityReservationArgs extends StObject {
@@ -180,8 +175,7 @@ object capacityReservationMod {
   }
   object CapacityReservationArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       availabilityZone: Input[String],
       instanceCount: Input[Double],
       instancePlatform: Input[InstancePlatform],
@@ -191,62 +185,43 @@ object capacityReservationMod {
       __obj.asInstanceOf[CapacityReservationArgs]
     }
     
-    @scala.inline
-    implicit class CapacityReservationArgsMutableBuilder[Self <: CapacityReservationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CapacityReservationArgs](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptimized(value: Input[Boolean]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
+      inline def setEbsOptimized(value: Input[Boolean]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
+      inline def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateType(value: Input[String]): Self = StObject.set(x, "endDateType", value.asInstanceOf[js.Any])
+      inline def setEndDateType(value: Input[String]): Self = StObject.set(x, "endDateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateTypeUndefined: Self = StObject.set(x, "endDateType", js.undefined)
+      inline def setEndDateTypeUndefined: Self = StObject.set(x, "endDateType", js.undefined)
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setEphemeralStorage(value: Input[Boolean]): Self = StObject.set(x, "ephemeralStorage", value.asInstanceOf[js.Any])
+      inline def setEphemeralStorage(value: Input[Boolean]): Self = StObject.set(x, "ephemeralStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralStorageUndefined: Self = StObject.set(x, "ephemeralStorage", js.undefined)
+      inline def setEphemeralStorageUndefined: Self = StObject.set(x, "ephemeralStorage", js.undefined)
       
-      @scala.inline
-      def setInstanceCount(value: Input[Double]): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
+      inline def setInstanceCount(value: Input[Double]): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceMatchCriteria(value: Input[String]): Self = StObject.set(x, "instanceMatchCriteria", value.asInstanceOf[js.Any])
+      inline def setInstanceMatchCriteria(value: Input[String]): Self = StObject.set(x, "instanceMatchCriteria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceMatchCriteriaUndefined: Self = StObject.set(x, "instanceMatchCriteria", js.undefined)
+      inline def setInstanceMatchCriteriaUndefined: Self = StObject.set(x, "instanceMatchCriteria", js.undefined)
       
-      @scala.inline
-      def setInstancePlatform(value: Input[InstancePlatform]): Self = StObject.set(x, "instancePlatform", value.asInstanceOf[js.Any])
+      inline def setInstancePlatform(value: Input[InstancePlatform]): Self = StObject.set(x, "instancePlatform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceType(value: Input[InstanceType]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: Input[InstanceType]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTenancy(value: Input[Tenancy]): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
+      inline def setTenancy(value: Input[Tenancy]): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenancyUndefined: Self = StObject.set(x, "tenancy", js.undefined)
+      inline def setTenancyUndefined: Self = StObject.set(x, "tenancy", js.undefined)
     }
   }
   
@@ -314,86 +289,60 @@ object capacityReservationMod {
   }
   object CapacityReservationState {
     
-    @scala.inline
-    def apply(): CapacityReservationState = {
+    inline def apply(): CapacityReservationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CapacityReservationState]
     }
     
-    @scala.inline
-    implicit class CapacityReservationStateMutableBuilder[Self <: CapacityReservationState] (val x: Self) extends AnyVal {
+    extension [Self <: CapacityReservationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setEbsOptimized(value: Input[Boolean]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
+      inline def setEbsOptimized(value: Input[Boolean]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
+      inline def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
       
-      @scala.inline
-      def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: Input[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateType(value: Input[String]): Self = StObject.set(x, "endDateType", value.asInstanceOf[js.Any])
+      inline def setEndDateType(value: Input[String]): Self = StObject.set(x, "endDateType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndDateTypeUndefined: Self = StObject.set(x, "endDateType", js.undefined)
+      inline def setEndDateTypeUndefined: Self = StObject.set(x, "endDateType", js.undefined)
       
-      @scala.inline
-      def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+      inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      @scala.inline
-      def setEphemeralStorage(value: Input[Boolean]): Self = StObject.set(x, "ephemeralStorage", value.asInstanceOf[js.Any])
+      inline def setEphemeralStorage(value: Input[Boolean]): Self = StObject.set(x, "ephemeralStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEphemeralStorageUndefined: Self = StObject.set(x, "ephemeralStorage", js.undefined)
+      inline def setEphemeralStorageUndefined: Self = StObject.set(x, "ephemeralStorage", js.undefined)
       
-      @scala.inline
-      def setInstanceCount(value: Input[Double]): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
+      inline def setInstanceCount(value: Input[Double]): Self = StObject.set(x, "instanceCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
+      inline def setInstanceCountUndefined: Self = StObject.set(x, "instanceCount", js.undefined)
       
-      @scala.inline
-      def setInstanceMatchCriteria(value: Input[String]): Self = StObject.set(x, "instanceMatchCriteria", value.asInstanceOf[js.Any])
+      inline def setInstanceMatchCriteria(value: Input[String]): Self = StObject.set(x, "instanceMatchCriteria", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceMatchCriteriaUndefined: Self = StObject.set(x, "instanceMatchCriteria", js.undefined)
+      inline def setInstanceMatchCriteriaUndefined: Self = StObject.set(x, "instanceMatchCriteria", js.undefined)
       
-      @scala.inline
-      def setInstancePlatform(value: Input[InstancePlatform]): Self = StObject.set(x, "instancePlatform", value.asInstanceOf[js.Any])
+      inline def setInstancePlatform(value: Input[InstancePlatform]): Self = StObject.set(x, "instancePlatform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancePlatformUndefined: Self = StObject.set(x, "instancePlatform", js.undefined)
+      inline def setInstancePlatformUndefined: Self = StObject.set(x, "instancePlatform", js.undefined)
       
-      @scala.inline
-      def setInstanceType(value: Input[InstanceType]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: Input[InstanceType]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTenancy(value: Input[Tenancy]): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
+      inline def setTenancy(value: Input[Tenancy]): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenancyUndefined: Self = StObject.set(x, "tenancy", js.undefined)
+      inline def setTenancyUndefined: Self = StObject.set(x, "tenancy", js.undefined)
     }
   }
 }

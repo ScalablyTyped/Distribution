@@ -23,28 +23,21 @@ trait ActiveTrustedSigners extends StObject {
 }
 object ActiveTrustedSigners {
   
-  @scala.inline
-  def apply(Enabled: Boolean, Quantity: integer): ActiveTrustedSigners = {
+  inline def apply(Enabled: Boolean, Quantity: integer): ActiveTrustedSigners = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveTrustedSigners]
   }
   
-  @scala.inline
-  implicit class ActiveTrustedSignersMutableBuilder[Self <: ActiveTrustedSigners] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveTrustedSigners](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: SignerList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: SignerList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: _Signer*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: _Signer*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

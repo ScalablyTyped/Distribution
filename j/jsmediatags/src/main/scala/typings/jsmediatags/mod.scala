@@ -35,26 +35,19 @@ object mod {
     @js.native
     val ^ : Config = js.native
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAddFileReader(value: TypeofMediaFileReader => Config): Self = StObject.set(x, "addFileReader", js.Any.fromFunction1(value))
+      inline def setAddFileReader(value: TypeofMediaFileReader => Config): Self = StObject.set(x, "addFileReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddTagReader(value: TypeofMediaTagReader => Config): Self = StObject.set(x, "addTagReader", js.Any.fromFunction1(value))
+      inline def setAddTagReader(value: TypeofMediaTagReader => Config): Self = StObject.set(x, "addTagReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEXPERIMENTAL_avoidHeadRequests(value: () => Unit): Self = StObject.set(x, "EXPERIMENTAL_avoidHeadRequests", js.Any.fromFunction0(value))
+      inline def setEXPERIMENTAL_avoidHeadRequests(value: () => Unit): Self = StObject.set(x, "EXPERIMENTAL_avoidHeadRequests", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveTagReader(value: TypeofMediaTagReader => Config): Self = StObject.set(x, "removeTagReader", js.Any.fromFunction1(value))
+      inline def setRemoveTagReader(value: TypeofMediaTagReader => Config): Self = StObject.set(x, "removeTagReader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDisallowedXhrHeaders(value: js.Array[String] => Unit): Self = StObject.set(x, "setDisallowedXhrHeaders", js.Any.fromFunction1(value))
+      inline def setSetDisallowedXhrHeaders(value: js.Array[String] => Unit): Self = StObject.set(x, "setDisallowedXhrHeaders", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetXhrTimeoutInSec(value: Double => Unit): Self = StObject.set(x, "setXhrTimeoutInSec", js.Any.fromFunction1(value))
+      inline def setSetXhrTimeoutInSec(value: Double => Unit): Self = StObject.set(x, "setXhrTimeoutInSec", js.Any.fromFunction1(value))
     }
   }
   
@@ -90,6 +83,5 @@ object mod {
     def setTagsToRead(tagsToRead: js.Array[String]): Reader = js.native
   }
   
-  @scala.inline
-  def read(location: js.Any, callbacks: CallbackType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(location.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def read(location: js.Any, callbacks: CallbackType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(location.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

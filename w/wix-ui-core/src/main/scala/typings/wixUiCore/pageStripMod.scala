@@ -37,24 +37,24 @@ object pageStripMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MPageStrip(): Unit = js.native
     
-    var forceRepaintInMsEdge: js.Any = js.native
+    /* private */ var forceRepaintInMsEdge: js.Any = js.native
     
-    var getLayout: js.Any = js.native
+    /* private */ var getLayout: js.Any = js.native
     
-    var isResponsive: js.Any = js.native
+    /* private */ var isResponsive: js.Any = js.native
     
-    var renderLayout: js.Any = js.native
+    /* private */ var renderLayout: js.Any = js.native
     
-    var responsiveLayoutIsFresh: js.Any = js.native
+    /* private */ var responsiveLayoutIsFresh: js.Any = js.native
     
-    var rootNode: js.Any = js.native
+    /* private */ var rootNode: js.Any = js.native
     
     @JSName("state")
     var state_PageStrip: ResponsiveLayout = js.native
     
-    var unmounted: js.Any = js.native
+    /* private */ var unmounted: js.Any = js.native
     
-    var updateLayoutIfNeeded: js.Any = js.native
+    /* private */ var updateLayoutIfNeeded: js.Any = js.native
   }
   
   trait PageStripProps extends StObject {
@@ -89,8 +89,7 @@ object pageStripMod {
   }
   object PageStripProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentPage: Double,
       disabled: Boolean,
       maxPagesToShow: Double,
@@ -106,62 +105,43 @@ object pageStripMod {
       __obj.asInstanceOf[PageStripProps]
     }
     
-    @scala.inline
-    implicit class PageStripPropsMutableBuilder[Self <: PageStripProps] (val x: Self) extends AnyVal {
+    extension [Self <: PageStripProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapLabel(value: ReactNode): Self = StObject.set(x, "gapLabel", value.asInstanceOf[js.Any])
+      inline def setGapLabel(value: ReactNode): Self = StObject.set(x, "gapLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGapLabelUndefined: Self = StObject.set(x, "gapLabel", js.undefined)
+      inline def setGapLabelUndefined: Self = StObject.set(x, "gapLabel", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMaxPagesToShow(value: Double): Self = StObject.set(x, "maxPagesToShow", value.asInstanceOf[js.Any])
+      inline def setMaxPagesToShow(value: Double): Self = StObject.set(x, "maxPagesToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPageClick(value: (MouseEvent[Element, NativeMouseEvent], Double) => Unit): Self = StObject.set(x, "onPageClick", js.Any.fromFunction2(value))
+      inline def setOnPageClick(value: (MouseEvent[Element, NativeMouseEvent], Double) => Unit): Self = StObject.set(x, "onPageClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPageKeyDown(value: (KeyboardEvent[Element], Double) => Unit): Self = StObject.set(x, "onPageKeyDown", js.Any.fromFunction2(value))
+      inline def setOnPageKeyDown(value: (KeyboardEvent[Element], Double) => Unit): Self = StObject.set(x, "onPageKeyDown", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPageUrl(value: /* pageNumber */ Double => String): Self = StObject.set(x, "pageUrl", js.Any.fromFunction1(value))
+      inline def setPageUrl(value: /* pageNumber */ Double => String): Self = StObject.set(x, "pageUrl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
+      inline def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
       
-      @scala.inline
-      def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFirstPage(value: Boolean): Self = StObject.set(x, "showFirstPage", value.asInstanceOf[js.Any])
+      inline def setShowFirstPage(value: Boolean): Self = StObject.set(x, "showFirstPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLastPage(value: Boolean): Self = StObject.set(x, "showLastPage", value.asInstanceOf[js.Any])
+      inline def setShowLastPage(value: Boolean): Self = StObject.set(x, "showLastPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateResponsiveLayout(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "updateResponsiveLayout", js.Any.fromFunction1(value))
+      inline def setUpdateResponsiveLayout(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "updateResponsiveLayout", js.Any.fromFunction1(value))
     }
   }
   
@@ -171,23 +151,18 @@ object pageStripMod {
   }
   object PageStripState {
     
-    @scala.inline
-    def apply(): PageStripState = {
+    inline def apply(): PageStripState = {
       val __obj = js.Dynamic.literal(responsiveLayout = null)
       __obj.asInstanceOf[PageStripState]
     }
     
-    @scala.inline
-    implicit class PageStripStateMutableBuilder[Self <: PageStripState] (val x: Self) extends AnyVal {
+    extension [Self <: PageStripState](x: Self) {
       
-      @scala.inline
-      def setResponsiveLayout(value: PageStripLayout): Self = StObject.set(x, "responsiveLayout", value.asInstanceOf[js.Any])
+      inline def setResponsiveLayout(value: PageStripLayout): Self = StObject.set(x, "responsiveLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveLayoutNull: Self = StObject.set(x, "responsiveLayout", null)
+      inline def setResponsiveLayoutNull: Self = StObject.set(x, "responsiveLayout", null)
       
-      @scala.inline
-      def setResponsiveLayoutVarargs(value: Double*): Self = StObject.set(x, "responsiveLayout", js.Array(value :_*))
+      inline def setResponsiveLayoutVarargs(value: Double*): Self = StObject.set(x, "responsiveLayout", js.Array(value :_*))
     }
   }
 }

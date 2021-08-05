@@ -18,16 +18,13 @@ trait ASPxClientDockPanelProcessingModeCancelEventArgs
 }
 object ASPxClientDockPanelProcessingModeCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, processOnServer: Boolean, zone: ASPxClientDockZone): ASPxClientDockPanelProcessingModeCancelEventArgs = {
+  inline def apply(cancel: Boolean, processOnServer: Boolean, zone: ASPxClientDockZone): ASPxClientDockPanelProcessingModeCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDockPanelProcessingModeCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDockPanelProcessingModeCancelEventArgsMutableBuilder[Self <: ASPxClientDockPanelProcessingModeCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDockPanelProcessingModeCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setZone(value: ASPxClientDockZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: ASPxClientDockZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

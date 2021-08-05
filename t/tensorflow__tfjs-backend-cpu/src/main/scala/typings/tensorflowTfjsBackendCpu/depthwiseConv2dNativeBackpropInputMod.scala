@@ -13,8 +13,7 @@ object depthwiseConv2dNativeBackpropInputMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def depthwiseConv2dNativeBackpropInput(args: AttrsDepthwiseConv2dNativeBackpropInputAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2dNativeBackpropInput")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def depthwiseConv2dNativeBackpropInput(args: AttrsDepthwiseConv2dNativeBackpropInputAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2dNativeBackpropInput")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/DepthwiseConv2dNativeBackpropInput", "depthwiseConv2dNativeBackpropInputConfig")
   @js.native

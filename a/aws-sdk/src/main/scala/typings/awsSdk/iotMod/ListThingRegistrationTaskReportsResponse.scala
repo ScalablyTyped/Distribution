@@ -23,34 +23,25 @@ trait ListThingRegistrationTaskReportsResponse extends StObject {
 }
 object ListThingRegistrationTaskReportsResponse {
   
-  @scala.inline
-  def apply(): ListThingRegistrationTaskReportsResponse = {
+  inline def apply(): ListThingRegistrationTaskReportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListThingRegistrationTaskReportsResponse]
   }
   
-  @scala.inline
-  implicit class ListThingRegistrationTaskReportsResponseMutableBuilder[Self <: ListThingRegistrationTaskReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListThingRegistrationTaskReportsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
+    inline def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
     
-    @scala.inline
-    def setResourceLinks(value: S3FileUrlList): Self = StObject.set(x, "resourceLinks", value.asInstanceOf[js.Any])
+    inline def setResourceLinks(value: S3FileUrlList): Self = StObject.set(x, "resourceLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLinksUndefined: Self = StObject.set(x, "resourceLinks", js.undefined)
+    inline def setResourceLinksUndefined: Self = StObject.set(x, "resourceLinks", js.undefined)
     
-    @scala.inline
-    def setResourceLinksVarargs(value: S3FileUrl*): Self = StObject.set(x, "resourceLinks", js.Array(value :_*))
+    inline def setResourceLinksVarargs(value: S3FileUrl*): Self = StObject.set(x, "resourceLinks", js.Array(value :_*))
   }
 }

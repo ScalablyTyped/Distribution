@@ -17,22 +17,17 @@ trait OptionMetadata extends StObject {
 }
 object OptionMetadata {
   
-  @scala.inline
-  def apply(Color: String, Label: String, Value: Double): OptionMetadata = {
+  inline def apply(Color: String, Label: String, Value: Double): OptionMetadata = {
     val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionMetadata]
   }
   
-  @scala.inline
-  implicit class OptionMetadataMutableBuilder[Self <: OptionMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: OptionMetadata](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

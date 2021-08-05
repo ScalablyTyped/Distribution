@@ -17,22 +17,17 @@ trait RenderMonthElement
 }
 object RenderMonthElement {
   
-  @scala.inline
-  def apply(): RenderMonthElement = {
+  inline def apply(): RenderMonthElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderMonthElement]
   }
   
-  @scala.inline
-  implicit class RenderMonthElementMutableBuilder[Self <: RenderMonthElement] (val x: Self) extends AnyVal {
+  extension [Self <: RenderMonthElement](x: Self) {
     
-    @scala.inline
-    def setRenderMonthText(value: /* month */ Moment => ReactNode): Self = StObject.set(x, "renderMonthText", js.Any.fromFunction1(value))
+    inline def setRenderMonthText(value: /* month */ Moment => ReactNode): Self = StObject.set(x, "renderMonthText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderMonthTextNull: Self = StObject.set(x, "renderMonthText", null)
+    inline def setRenderMonthTextNull: Self = StObject.set(x, "renderMonthText", null)
     
-    @scala.inline
-    def setRenderMonthTextUndefined: Self = StObject.set(x, "renderMonthText", js.undefined)
+    inline def setRenderMonthTextUndefined: Self = StObject.set(x, "renderMonthText", js.undefined)
   }
 }

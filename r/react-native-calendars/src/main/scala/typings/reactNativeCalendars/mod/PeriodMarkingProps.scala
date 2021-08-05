@@ -16,19 +16,15 @@ trait PeriodMarkingProps
 }
 object PeriodMarkingProps {
   
-  @scala.inline
-  def apply(markedDates: StringDictionary[PeriodMarking]): PeriodMarkingProps = {
+  inline def apply(markedDates: StringDictionary[PeriodMarking]): PeriodMarkingProps = {
     val __obj = js.Dynamic.literal(markedDates = markedDates.asInstanceOf[js.Any], markingType = "period")
     __obj.asInstanceOf[PeriodMarkingProps]
   }
   
-  @scala.inline
-  implicit class PeriodMarkingPropsMutableBuilder[Self <: PeriodMarkingProps] (val x: Self) extends AnyVal {
+  extension [Self <: PeriodMarkingProps](x: Self) {
     
-    @scala.inline
-    def setMarkedDates(value: StringDictionary[PeriodMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
+    inline def setMarkedDates(value: StringDictionary[PeriodMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkingType(value: period): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
+    inline def setMarkingType(value: period): Self = StObject.set(x, "markingType", value.asInstanceOf[js.Any])
   }
 }

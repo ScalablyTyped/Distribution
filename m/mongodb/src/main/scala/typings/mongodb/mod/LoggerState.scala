@@ -18,29 +18,22 @@ trait LoggerState extends StObject {
 }
 object LoggerState {
   
-  @scala.inline
-  def apply(className: String, date: scala.Double, message: String, pid: scala.Double, `type`: String): LoggerState = {
+  inline def apply(className: String, date: scala.Double, message: String, pid: scala.Double, `type`: String): LoggerState = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerState]
   }
   
-  @scala.inline
-  implicit class LoggerStateMutableBuilder[Self <: LoggerState] (val x: Self) extends AnyVal {
+  extension [Self <: LoggerState](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: scala.Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: scala.Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: scala.Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: scala.Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

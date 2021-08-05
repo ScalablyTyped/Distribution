@@ -15,8 +15,7 @@ trait MediaKeySystemAccess extends StObject {
 }
 object MediaKeySystemAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createMediaKeys: () => js.Promise[MediaKeys],
     getConfiguration: () => MediaKeySystemConfiguration,
     keySystem: java.lang.String
@@ -25,16 +24,12 @@ object MediaKeySystemAccess {
     __obj.asInstanceOf[MediaKeySystemAccess]
   }
   
-  @scala.inline
-  implicit class MediaKeySystemAccessMutableBuilder[Self <: MediaKeySystemAccess] (val x: Self) extends AnyVal {
+  extension [Self <: MediaKeySystemAccess](x: Self) {
     
-    @scala.inline
-    def setCreateMediaKeys(value: () => js.Promise[MediaKeys]): Self = StObject.set(x, "createMediaKeys", js.Any.fromFunction0(value))
+    inline def setCreateMediaKeys(value: () => js.Promise[MediaKeys]): Self = StObject.set(x, "createMediaKeys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetConfiguration(value: () => MediaKeySystemConfiguration): Self = StObject.set(x, "getConfiguration", js.Any.fromFunction0(value))
+    inline def setGetConfiguration(value: () => MediaKeySystemConfiguration): Self = StObject.set(x, "getConfiguration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeySystem(value: java.lang.String): Self = StObject.set(x, "keySystem", value.asInstanceOf[js.Any])
+    inline def setKeySystem(value: java.lang.String): Self = StObject.set(x, "keySystem", value.asInstanceOf[js.Any])
   }
 }

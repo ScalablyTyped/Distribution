@@ -13,19 +13,16 @@ trait FunctorComposition11[F /* <: /* import warning: transforms.QualifyReferenc
 }
 object FunctorComposition11 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
   ): FunctorComposition11[F, G] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
     __obj.asInstanceOf[FunctorComposition11[F, G]]
   }
   
-  @scala.inline
-  implicit class FunctorComposition11MutableBuilder[Self <: FunctorComposition11[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & (FunctorComposition11[F, G])) extends AnyVal {
+  extension [Self <: FunctorComposition11[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & (FunctorComposition11[F, G])) {
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
   }

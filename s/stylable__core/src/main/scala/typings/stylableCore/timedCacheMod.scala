@@ -11,8 +11,7 @@ object timedCacheMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def timedCache[T /* <: js.Function1[/* repeated */ String, String] */](fn: T, hasTimeoutUseTimerCreateKey: TimedCacheOptions): Cache[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timedCache")(fn.asInstanceOf[js.Any], hasTimeoutUseTimerCreateKey.asInstanceOf[js.Any])).asInstanceOf[Cache[T]]
+  inline def timedCache[T /* <: js.Function1[/* repeated */ String, String] */](fn: T, hasTimeoutUseTimerCreateKey: TimedCacheOptions): Cache[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("timedCache")(fn.asInstanceOf[js.Any], hasTimeoutUseTimerCreateKey.asInstanceOf[js.Any])).asInstanceOf[Cache[T]]
   
   trait TimedCacheOptions extends StObject {
     
@@ -24,23 +23,18 @@ object timedCacheMod {
   }
   object TimedCacheOptions {
     
-    @scala.inline
-    def apply(createKey: js.Array[String] => String, timeout: Double, useTimer: Boolean): TimedCacheOptions = {
+    inline def apply(createKey: js.Array[String] => String, timeout: Double, useTimer: Boolean): TimedCacheOptions = {
       val __obj = js.Dynamic.literal(createKey = js.Any.fromFunction1(createKey), timeout = timeout.asInstanceOf[js.Any], useTimer = useTimer.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimedCacheOptions]
     }
     
-    @scala.inline
-    implicit class TimedCacheOptionsMutableBuilder[Self <: TimedCacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TimedCacheOptions](x: Self) {
       
-      @scala.inline
-      def setCreateKey(value: js.Array[String] => String): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
+      inline def setCreateKey(value: js.Array[String] => String): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTimer(value: Boolean): Self = StObject.set(x, "useTimer", value.asInstanceOf[js.Any])
+      inline def setUseTimer(value: Boolean): Self = StObject.set(x, "useTimer", value.asInstanceOf[js.Any])
     }
   }
 }

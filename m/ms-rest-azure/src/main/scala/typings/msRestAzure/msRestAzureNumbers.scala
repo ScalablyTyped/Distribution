@@ -8,6 +8,5 @@ object msRestAzureNumbers {
   
   @js.native
   sealed trait `50342` extends StObject
-  @scala.inline
-  def `50342`: `50342` = 50342.asInstanceOf[`50342`]
+  inline def `50342`: `50342` = 50342.asInstanceOf[`50342`]
 }

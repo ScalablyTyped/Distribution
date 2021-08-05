@@ -17,31 +17,23 @@ trait ApproximateSplitRequest extends StObject {
 }
 object ApproximateSplitRequest {
   
-  @scala.inline
-  def apply(): ApproximateSplitRequest = {
+  inline def apply(): ApproximateSplitRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApproximateSplitRequest]
   }
   
-  @scala.inline
-  implicit class ApproximateSplitRequestMutableBuilder[Self <: ApproximateSplitRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApproximateSplitRequest](x: Self) {
     
-    @scala.inline
-    def setFractionConsumed(value: Double): Self = StObject.set(x, "fractionConsumed", value.asInstanceOf[js.Any])
+    inline def setFractionConsumed(value: Double): Self = StObject.set(x, "fractionConsumed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFractionConsumedUndefined: Self = StObject.set(x, "fractionConsumed", js.undefined)
+    inline def setFractionConsumedUndefined: Self = StObject.set(x, "fractionConsumed", js.undefined)
     
-    @scala.inline
-    def setFractionOfRemainder(value: Double): Self = StObject.set(x, "fractionOfRemainder", value.asInstanceOf[js.Any])
+    inline def setFractionOfRemainder(value: Double): Self = StObject.set(x, "fractionOfRemainder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFractionOfRemainderUndefined: Self = StObject.set(x, "fractionOfRemainder", js.undefined)
+    inline def setFractionOfRemainderUndefined: Self = StObject.set(x, "fractionOfRemainder", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

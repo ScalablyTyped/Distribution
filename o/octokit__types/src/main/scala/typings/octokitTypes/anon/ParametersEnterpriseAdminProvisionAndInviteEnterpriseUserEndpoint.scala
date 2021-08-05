@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint extends 
 }
 object ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint,
     request: EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions,
     response: OctokitResponse[EnterpriseAdminProvisionAndInviteEnterpriseUserResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpointMutableBuilder[Self <: ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminProvisionAndInviteEnterpriseUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminProvisionAndInviteEnterpriseUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminProvisionAndInviteEnterpriseUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

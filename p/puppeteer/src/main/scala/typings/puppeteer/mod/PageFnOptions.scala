@@ -14,19 +14,15 @@ trait PageFnOptions
 }
 object PageFnOptions {
   
-  @scala.inline
-  def apply(): PageFnOptions = {
+  inline def apply(): PageFnOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageFnOptions]
   }
   
-  @scala.inline
-  implicit class PageFnOptionsMutableBuilder[Self <: PageFnOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageFnOptions](x: Self) {
     
-    @scala.inline
-    def setPolling(value: raf | mutation | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+    inline def setPolling(value: raf | mutation | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
+    inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
   }
 }

@@ -34,8 +34,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Widget")
 @js.native
-class Widget protected () extends NativeObject {
-  protected def this(properties: Properties[Widget, OmitWidgetset]) = this()
+/* protected */ class Widget () extends NativeObject {
+  /* protected */ def this(properties: Properties[Widget, OmitWidgetset]) = this()
   
   /**
     * Sets the parent of the widget. If an index is given the widget will be inserted at that position.

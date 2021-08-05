@@ -13,16 +13,13 @@ trait PluginPrefixIds
 }
 object PluginPrefixIds {
   
-  @scala.inline
-  def apply(prefixIds: Boolean | js.Object): PluginPrefixIds = {
+  inline def apply(prefixIds: Boolean | js.Object): PluginPrefixIds = {
     val __obj = js.Dynamic.literal(prefixIds = prefixIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginPrefixIds]
   }
   
-  @scala.inline
-  implicit class PluginPrefixIdsMutableBuilder[Self <: PluginPrefixIds] (val x: Self) extends AnyVal {
+  extension [Self <: PluginPrefixIds](x: Self) {
     
-    @scala.inline
-    def setPrefixIds(value: Boolean | js.Object): Self = StObject.set(x, "prefixIds", value.asInstanceOf[js.Any])
+    inline def setPrefixIds(value: Boolean | js.Object): Self = StObject.set(x, "prefixIds", value.asInstanceOf[js.Any])
   }
 }

@@ -15,13 +15,10 @@ object configLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def configLoader(hasCwdExplicitParamsTsConfigLoader: ConfigLoaderParams): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("configLoader")(hasCwdExplicitParamsTsConfigLoader.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
+  inline def configLoader(hasCwdExplicitParamsTsConfigLoader: ConfigLoaderParams): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("configLoader")(hasCwdExplicitParamsTsConfigLoader.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
   
-  @scala.inline
-  def loadConfig(): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")().asInstanceOf[ConfigLoaderResult]
-  @scala.inline
-  def loadConfig(cwd: String): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(cwd.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
+  inline def loadConfig(): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")().asInstanceOf[ConfigLoaderResult]
+  inline def loadConfig(cwd: String): ConfigLoaderResult = ^.asInstanceOf[js.Dynamic].applyDynamic("loadConfig")(cwd.asInstanceOf[js.Any]).asInstanceOf[ConfigLoaderResult]
   
   trait ConfigLoaderFailResult
     extends StObject
@@ -33,20 +30,16 @@ object configLoaderMod {
   }
   object ConfigLoaderFailResult {
     
-    @scala.inline
-    def apply(message: String): ConfigLoaderFailResult = {
+    inline def apply(message: String): ConfigLoaderFailResult = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultType = "failed")
       __obj.asInstanceOf[ConfigLoaderFailResult]
     }
     
-    @scala.inline
-    implicit class ConfigLoaderFailResultMutableBuilder[Self <: ConfigLoaderFailResult] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigLoaderFailResult](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultType(value: failed): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+      inline def setResultType(value: failed): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,29 +53,22 @@ object configLoaderMod {
   }
   object ConfigLoaderParams {
     
-    @scala.inline
-    def apply(cwd: String): ConfigLoaderParams = {
+    inline def apply(cwd: String): ConfigLoaderParams = {
       val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigLoaderParams]
     }
     
-    @scala.inline
-    implicit class ConfigLoaderParamsMutableBuilder[Self <: ConfigLoaderParams] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigLoaderParams](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitParams(value: ExplicitParams): Self = StObject.set(x, "explicitParams", value.asInstanceOf[js.Any])
+      inline def setExplicitParams(value: ExplicitParams): Self = StObject.set(x, "explicitParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExplicitParamsUndefined: Self = StObject.set(x, "explicitParams", js.undefined)
+      inline def setExplicitParamsUndefined: Self = StObject.set(x, "explicitParams", js.undefined)
       
-      @scala.inline
-      def setTsConfigLoader(value: /* params */ TsConfigLoaderParams => TsConfigLoaderResult): Self = StObject.set(x, "tsConfigLoader", js.Any.fromFunction1(value))
+      inline def setTsConfigLoader(value: /* params */ TsConfigLoaderParams => TsConfigLoaderResult): Self = StObject.set(x, "tsConfigLoader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTsConfigLoaderUndefined: Self = StObject.set(x, "tsConfigLoader", js.undefined)
+      inline def setTsConfigLoaderUndefined: Self = StObject.set(x, "tsConfigLoader", js.undefined)
     }
   }
   
@@ -93,14 +79,12 @@ object configLoaderMod {
   trait ConfigLoaderResult extends StObject
   object ConfigLoaderResult {
     
-    @scala.inline
-    def ConfigLoaderFailResult(message: String): typings.tsconfigPaths.configLoaderMod.ConfigLoaderFailResult = {
+    inline def ConfigLoaderFailResult(message: String): typings.tsconfigPaths.configLoaderMod.ConfigLoaderFailResult = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], resultType = "failed")
       __obj.asInstanceOf[typings.tsconfigPaths.configLoaderMod.ConfigLoaderFailResult]
     }
     
-    @scala.inline
-    def ConfigLoaderSuccessResult(
+    inline def ConfigLoaderSuccessResult(
       absoluteBaseUrl: String,
       baseUrl: String,
       configFileAbsolutePath: String,
@@ -131,8 +115,7 @@ object configLoaderMod {
   }
   object ConfigLoaderSuccessResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       absoluteBaseUrl: String,
       baseUrl: String,
       configFileAbsolutePath: String,
@@ -142,38 +125,27 @@ object configLoaderMod {
       __obj.asInstanceOf[ConfigLoaderSuccessResult]
     }
     
-    @scala.inline
-    implicit class ConfigLoaderSuccessResultMutableBuilder[Self <: ConfigLoaderSuccessResult] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigLoaderSuccessResult](x: Self) {
       
-      @scala.inline
-      def setAbsoluteBaseUrl(value: String): Self = StObject.set(x, "absoluteBaseUrl", value.asInstanceOf[js.Any])
+      inline def setAbsoluteBaseUrl(value: String): Self = StObject.set(x, "absoluteBaseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddMatchAll(value: Boolean): Self = StObject.set(x, "addMatchAll", value.asInstanceOf[js.Any])
+      inline def setAddMatchAll(value: Boolean): Self = StObject.set(x, "addMatchAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddMatchAllUndefined: Self = StObject.set(x, "addMatchAll", js.undefined)
+      inline def setAddMatchAllUndefined: Self = StObject.set(x, "addMatchAll", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFileAbsolutePath(value: String): Self = StObject.set(x, "configFileAbsolutePath", value.asInstanceOf[js.Any])
+      inline def setConfigFileAbsolutePath(value: String): Self = StObject.set(x, "configFileAbsolutePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+      inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
+      inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      @scala.inline
-      def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
       
-      @scala.inline
-      def setPaths(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultType(value: success): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+      inline def setResultType(value: success): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,35 +161,26 @@ object configLoaderMod {
   }
   object ExplicitParams {
     
-    @scala.inline
-    def apply(baseUrl: String, paths: StringDictionary[js.Array[String]]): ExplicitParams = {
+    inline def apply(baseUrl: String, paths: StringDictionary[js.Array[String]]): ExplicitParams = {
       val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExplicitParams]
     }
     
-    @scala.inline
-    implicit class ExplicitParamsMutableBuilder[Self <: ExplicitParams] (val x: Self) extends AnyVal {
+    extension [Self <: ExplicitParams](x: Self) {
       
-      @scala.inline
-      def setAddMatchAll(value: Boolean): Self = StObject.set(x, "addMatchAll", value.asInstanceOf[js.Any])
+      inline def setAddMatchAll(value: Boolean): Self = StObject.set(x, "addMatchAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddMatchAllUndefined: Self = StObject.set(x, "addMatchAll", js.undefined)
+      inline def setAddMatchAllUndefined: Self = StObject.set(x, "addMatchAll", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+      inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
+      inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      @scala.inline
-      def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
       
-      @scala.inline
-      def setPaths(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     }
   }
   

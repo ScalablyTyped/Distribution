@@ -17,8 +17,7 @@ trait JobCompletedEvent
 }
 object JobCompletedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     jobId: String,
     name: String,
     outputVariables: StringDictionary[VariableValue],
@@ -29,16 +28,12 @@ object JobCompletedEvent {
     __obj.asInstanceOf[JobCompletedEvent]
   }
   
-  @scala.inline
-  implicit class JobCompletedEventMutableBuilder[Self <: JobCompletedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: JobCompletedEvent](x: Self) {
     
-    @scala.inline
-    def setOutputVariables(value: StringDictionary[VariableValue]): Self = StObject.set(x, "outputVariables", value.asInstanceOf[js.Any])
+    inline def setOutputVariables(value: StringDictionary[VariableValue]): Self = StObject.set(x, "outputVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: TaskResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

@@ -26,19 +26,15 @@ trait JoinVoIPChatError extends StObject {
 }
 object JoinVoIPChatError {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): JoinVoIPChatError = {
+  inline def apply(errCode: Double, errMsg: String): JoinVoIPChatError = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinVoIPChatError]
   }
   
-  @scala.inline
-  implicit class JoinVoIPChatErrorMutableBuilder[Self <: JoinVoIPChatError] (val x: Self) extends AnyVal {
+  extension [Self <: JoinVoIPChatError](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

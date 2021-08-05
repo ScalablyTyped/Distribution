@@ -13,16 +13,13 @@ trait DeleteChannelRequest extends StObject {
 }
 object DeleteChannelRequest {
   
-  @scala.inline
-  def apply(ChannelId: string): DeleteChannelRequest = {
+  inline def apply(ChannelId: string): DeleteChannelRequest = {
     val __obj = js.Dynamic.literal(ChannelId = ChannelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteChannelRequest]
   }
   
-  @scala.inline
-  implicit class DeleteChannelRequestMutableBuilder[Self <: DeleteChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteChannelRequest](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
   }
 }

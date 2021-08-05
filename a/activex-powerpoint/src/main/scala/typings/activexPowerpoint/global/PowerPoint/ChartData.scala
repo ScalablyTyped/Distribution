@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartData")
 @js.native
-class ChartData protected ()
+/* private */ class ChartData ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartData {
   
@@ -19,7 +19,7 @@ class ChartData protected ()
   /* CompleteClass */
   override val IsLinked: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartData_typekey")
   var PowerPointDotChartData_typekey: typings.activexPowerpoint.PowerPoint.ChartData = js.native
   

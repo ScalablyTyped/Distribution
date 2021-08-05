@@ -15,8 +15,7 @@ object useMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     getRcNotificationInstance: js.Function2[/* args */ ArgsProps, /* callback */ js.Function1[/* info */ Instance, Unit], Unit],
     getRCNoticeProps: js.Function2[/* args */ ArgsProps, /* prefixCls */ String, NoticeContent]
   ): js.Function0[js.Tuple2[MessageInstance, ReactElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getRcNotificationInstance.asInstanceOf[js.Any], getRCNoticeProps.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Tuple2[MessageInstance, ReactElement]]]

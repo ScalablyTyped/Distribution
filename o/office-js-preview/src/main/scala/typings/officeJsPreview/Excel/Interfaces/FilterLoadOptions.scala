@@ -28,25 +28,19 @@ trait FilterLoadOptions extends StObject {
 }
 object FilterLoadOptions {
   
-  @scala.inline
-  def apply(): FilterLoadOptions = {
+  inline def apply(): FilterLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterLoadOptions]
   }
   
-  @scala.inline
-  implicit class FilterLoadOptionsMutableBuilder[Self <: FilterLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilterLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: Boolean): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
   }
 }

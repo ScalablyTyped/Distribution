@@ -28,7 +28,7 @@ object computeclientMod {
     
     var scopes: js.Array[String] = js.native
     
-    var serviceAccountEmail: js.Any = js.native
+    /* private */ var serviceAccountEmail: js.Any = js.native
     
     /* protected */ def wrapError(e: GaxiosError[js.Any]): Unit = js.native
   }
@@ -52,29 +52,22 @@ object computeclientMod {
   }
   object ComputeOptions {
     
-    @scala.inline
-    def apply(): ComputeOptions = {
+    inline def apply(): ComputeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComputeOptions]
     }
     
-    @scala.inline
-    implicit class ComputeOptionsMutableBuilder[Self <: ComputeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComputeOptions](x: Self) {
       
-      @scala.inline
-      def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+      inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+      inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
     }
   }
 }

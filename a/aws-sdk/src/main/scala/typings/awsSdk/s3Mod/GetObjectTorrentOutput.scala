@@ -15,25 +15,19 @@ trait GetObjectTorrentOutput extends StObject {
 }
 object GetObjectTorrentOutput {
   
-  @scala.inline
-  def apply(): GetObjectTorrentOutput = {
+  inline def apply(): GetObjectTorrentOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectTorrentOutput]
   }
   
-  @scala.inline
-  implicit class GetObjectTorrentOutputMutableBuilder[Self <: GetObjectTorrentOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectTorrentOutput](x: Self) {
     
-    @scala.inline
-    def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+    inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+    inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

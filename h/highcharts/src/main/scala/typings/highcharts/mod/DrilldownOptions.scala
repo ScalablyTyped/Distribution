@@ -70,52 +70,37 @@ trait DrilldownOptions extends StObject {
 }
 object DrilldownOptions {
   
-  @scala.inline
-  def apply(): DrilldownOptions = {
+  inline def apply(): DrilldownOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrilldownOptions]
   }
   
-  @scala.inline
-  implicit class DrilldownOptionsMutableBuilder[Self <: DrilldownOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DrilldownOptions](x: Self) {
     
-    @scala.inline
-    def setActiveAxisLabelStyle(value: CSSObject): Self = StObject.set(x, "activeAxisLabelStyle", value.asInstanceOf[js.Any])
+    inline def setActiveAxisLabelStyle(value: CSSObject): Self = StObject.set(x, "activeAxisLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveAxisLabelStyleUndefined: Self = StObject.set(x, "activeAxisLabelStyle", js.undefined)
+    inline def setActiveAxisLabelStyleUndefined: Self = StObject.set(x, "activeAxisLabelStyle", js.undefined)
     
-    @scala.inline
-    def setActiveDataLabelStyle(value: CSSObject | DrilldownActiveDataLabelStyleOptions): Self = StObject.set(x, "activeDataLabelStyle", value.asInstanceOf[js.Any])
+    inline def setActiveDataLabelStyle(value: CSSObject | DrilldownActiveDataLabelStyleOptions): Self = StObject.set(x, "activeDataLabelStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDataLabelStyleUndefined: Self = StObject.set(x, "activeDataLabelStyle", js.undefined)
+    inline def setActiveDataLabelStyleUndefined: Self = StObject.set(x, "activeDataLabelStyle", js.undefined)
     
-    @scala.inline
-    def setAllowPointDrilldown(value: Boolean): Self = StObject.set(x, "allowPointDrilldown", value.asInstanceOf[js.Any])
+    inline def setAllowPointDrilldown(value: Boolean): Self = StObject.set(x, "allowPointDrilldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPointDrilldownUndefined: Self = StObject.set(x, "allowPointDrilldown", js.undefined)
+    inline def setAllowPointDrilldownUndefined: Self = StObject.set(x, "allowPointDrilldown", js.undefined)
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setDrillUpButton(value: DrilldownDrillUpButtonOptions): Self = StObject.set(x, "drillUpButton", value.asInstanceOf[js.Any])
+    inline def setDrillUpButton(value: DrilldownDrillUpButtonOptions): Self = StObject.set(x, "drillUpButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillUpButtonUndefined: Self = StObject.set(x, "drillUpButton", js.undefined)
+    inline def setDrillUpButtonUndefined: Self = StObject.set(x, "drillUpButton", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Array[SeriesOptionsType]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[SeriesOptionsType]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: SeriesOptionsType*): Self = StObject.set(x, "series", js.Array(value :_*))
   }
 }

@@ -19,25 +19,19 @@ trait NumeralJSLocale extends StObject {
 }
 object NumeralJSLocale {
   
-  @scala.inline
-  def apply(abbreviations: Billion, currency: Symbol, delimiters: Decimal, ordinal: Double => String): NumeralJSLocale = {
+  inline def apply(abbreviations: Billion, currency: Symbol, delimiters: Decimal, ordinal: Double => String): NumeralJSLocale = {
     val __obj = js.Dynamic.literal(abbreviations = abbreviations.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], delimiters = delimiters.asInstanceOf[js.Any], ordinal = js.Any.fromFunction1(ordinal))
     __obj.asInstanceOf[NumeralJSLocale]
   }
   
-  @scala.inline
-  implicit class NumeralJSLocaleMutableBuilder[Self <: NumeralJSLocale] (val x: Self) extends AnyVal {
+  extension [Self <: NumeralJSLocale](x: Self) {
     
-    @scala.inline
-    def setAbbreviations(value: Billion): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
+    inline def setAbbreviations(value: Billion): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: Symbol): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: Symbol): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiters(value: Decimal): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+    inline def setDelimiters(value: Decimal): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinal(value: Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
+    inline def setOrdinal(value: Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
   }
 }

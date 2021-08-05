@@ -10,16 +10,13 @@ trait TypeofdefaultProps extends StObject {
 }
 object TypeofdefaultProps {
   
-  @scala.inline
-  def apply(disabled: Boolean): TypeofdefaultProps = {
+  inline def apply(disabled: Boolean): TypeofdefaultProps = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofdefaultProps]
   }
   
-  @scala.inline
-  implicit class TypeofdefaultPropsMutableBuilder[Self <: TypeofdefaultProps] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofdefaultProps](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
   }
 }

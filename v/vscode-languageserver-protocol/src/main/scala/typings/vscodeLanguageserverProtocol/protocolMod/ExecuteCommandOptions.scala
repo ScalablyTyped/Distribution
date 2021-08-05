@@ -15,19 +15,15 @@ trait ExecuteCommandOptions
 }
 object ExecuteCommandOptions {
   
-  @scala.inline
-  def apply(commands: js.Array[String]): ExecuteCommandOptions = {
+  inline def apply(commands: js.Array[String]): ExecuteCommandOptions = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteCommandOptions]
   }
   
-  @scala.inline
-  implicit class ExecuteCommandOptionsMutableBuilder[Self <: ExecuteCommandOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteCommandOptions](x: Self) {
     
-    @scala.inline
-    def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
   }
 }

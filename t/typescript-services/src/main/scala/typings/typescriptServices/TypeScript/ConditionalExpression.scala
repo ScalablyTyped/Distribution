@@ -18,8 +18,7 @@ trait ConditionalExpression
 }
 object ConditionalExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -48,19 +47,14 @@ object ConditionalExpression {
     __obj.asInstanceOf[ConditionalExpression]
   }
   
-  @scala.inline
-  implicit class ConditionalExpressionMutableBuilder[Self <: ConditionalExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalExpression](x: Self) {
     
-    @scala.inline
-    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (ConditionalExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ConditionalExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWhenFalse(value: AST): Self = StObject.set(x, "whenFalse", value.asInstanceOf[js.Any])
+    inline def setWhenFalse(value: AST): Self = StObject.set(x, "whenFalse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenTrue(value: AST): Self = StObject.set(x, "whenTrue", value.asInstanceOf[js.Any])
+    inline def setWhenTrue(value: AST): Self = StObject.set(x, "whenTrue", value.asInstanceOf[js.Any])
   }
 }

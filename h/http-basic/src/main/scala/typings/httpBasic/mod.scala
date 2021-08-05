@@ -16,22 +16,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(method: HttpVerb, url: String, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
-  @scala.inline
-  def default(method: HttpVerb, url: String, options: Null, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
-  @scala.inline
-  def default(method: HttpVerb, url: String, options: Unit, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
-  @scala.inline
-  def default(method: HttpVerb, url: String, options: Options, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
-  @scala.inline
-  def default(method: HttpVerb, url: URL_, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
-  @scala.inline
-  def default(method: HttpVerb, url: URL_, options: Null, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
-  @scala.inline
-  def default(method: HttpVerb, url: URL_, options: Unit, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
-  @scala.inline
-  def default(method: HttpVerb, url: URL_, options: Options, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: String, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: String, options: Null, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: String, options: Unit, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: String, options: Options, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: URL_, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: URL_, options: Null, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: URL_, options: Unit, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
+  inline def default(method: HttpVerb, url: URL_, options: Options, callback: Callback): Unit | WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit | WritableStream]
   
   /**
     * A response from a web request

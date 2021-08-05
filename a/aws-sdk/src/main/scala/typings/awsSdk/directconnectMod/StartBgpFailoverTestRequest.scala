@@ -23,31 +23,23 @@ trait StartBgpFailoverTestRequest extends StObject {
 }
 object StartBgpFailoverTestRequest {
   
-  @scala.inline
-  def apply(virtualInterfaceId: VirtualInterfaceId): StartBgpFailoverTestRequest = {
+  inline def apply(virtualInterfaceId: VirtualInterfaceId): StartBgpFailoverTestRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartBgpFailoverTestRequest]
   }
   
-  @scala.inline
-  implicit class StartBgpFailoverTestRequestMutableBuilder[Self <: StartBgpFailoverTestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartBgpFailoverTestRequest](x: Self) {
     
-    @scala.inline
-    def setBgpPeers(value: BGPPeerIdList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
+    inline def setBgpPeers(value: BGPPeerIdList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
+    inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    @scala.inline
-    def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
     
-    @scala.inline
-    def setTestDurationInMinutes(value: TestDuration): Self = StObject.set(x, "testDurationInMinutes", value.asInstanceOf[js.Any])
+    inline def setTestDurationInMinutes(value: TestDuration): Self = StObject.set(x, "testDurationInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestDurationInMinutesUndefined: Self = StObject.set(x, "testDurationInMinutes", js.undefined)
+    inline def setTestDurationInMinutesUndefined: Self = StObject.set(x, "testDurationInMinutes", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }
 }

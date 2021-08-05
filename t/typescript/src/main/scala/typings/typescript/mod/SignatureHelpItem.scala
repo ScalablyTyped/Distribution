@@ -29,8 +29,7 @@ trait SignatureHelpItem extends StObject {
 }
 object SignatureHelpItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     documentation: js.Array[SymbolDisplayPart],
     isVariadic: Boolean,
     parameters: js.Array[SignatureHelpParameter],
@@ -43,46 +42,32 @@ object SignatureHelpItem {
     __obj.asInstanceOf[SignatureHelpItem]
   }
   
-  @scala.inline
-  implicit class SignatureHelpItemMutableBuilder[Self <: SignatureHelpItem] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpItem](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "documentation", js.Array(value :_*))
     
-    @scala.inline
-    def setIsVariadic(value: Boolean): Self = StObject.set(x, "isVariadic", value.asInstanceOf[js.Any])
+    inline def setIsVariadic(value: Boolean): Self = StObject.set(x, "isVariadic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: js.Array[SignatureHelpParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[SignatureHelpParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: SignatureHelpParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SignatureHelpParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setPrefixDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "prefixDisplayParts", value.asInstanceOf[js.Any])
+    inline def setPrefixDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "prefixDisplayParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "prefixDisplayParts", js.Array(value :_*))
+    inline def setPrefixDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "prefixDisplayParts", js.Array(value :_*))
     
-    @scala.inline
-    def setSeparatorDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "separatorDisplayParts", value.asInstanceOf[js.Any])
+    inline def setSeparatorDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "separatorDisplayParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "separatorDisplayParts", js.Array(value :_*))
+    inline def setSeparatorDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "separatorDisplayParts", js.Array(value :_*))
     
-    @scala.inline
-    def setSuffixDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "suffixDisplayParts", value.asInstanceOf[js.Any])
+    inline def setSuffixDisplayParts(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "suffixDisplayParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "suffixDisplayParts", js.Array(value :_*))
+    inline def setSuffixDisplayPartsVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "suffixDisplayParts", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: js.Array[JSDocTagInfo]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[JSDocTagInfo]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: JSDocTagInfo*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: JSDocTagInfo*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

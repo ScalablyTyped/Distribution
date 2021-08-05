@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSharingMsgType extends StObject
 object OlSharingMsgType {
   
-  @scala.inline
-  def olSharingMsgTypeInvite: `2` = 2.asInstanceOf[`2`]
+  inline def olSharingMsgTypeInvite: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olSharingMsgTypeInviteAndRequest: `3` = 3.asInstanceOf[`3`]
+  inline def olSharingMsgTypeInviteAndRequest: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olSharingMsgTypeRequest: `1` = 1.asInstanceOf[`1`]
+  inline def olSharingMsgTypeRequest: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olSharingMsgTypeResponseAllow: `4` = 4.asInstanceOf[`4`]
+  inline def olSharingMsgTypeResponseAllow: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olSharingMsgTypeResponseDeny: `5` = 5.asInstanceOf[`5`]
+  inline def olSharingMsgTypeResponseDeny: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olSharingMsgTypeUnknown: `0` = 0.asInstanceOf[`0`]
+  inline def olSharingMsgTypeUnknown: `0` = 0.asInstanceOf[`0`]
 }

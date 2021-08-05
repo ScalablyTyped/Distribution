@@ -19,19 +19,15 @@ trait SendInfo extends StObject {
 }
 object SendInfo {
   
-  @scala.inline
-  def apply(ProtocolType: String, Value: String): SendInfo = {
+  inline def apply(ProtocolType: String, Value: String): SendInfo = {
     val __obj = js.Dynamic.literal(ProtocolType = ProtocolType.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendInfo]
   }
   
-  @scala.inline
-  implicit class SendInfoMutableBuilder[Self <: SendInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SendInfo](x: Self) {
     
-    @scala.inline
-    def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
+    inline def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

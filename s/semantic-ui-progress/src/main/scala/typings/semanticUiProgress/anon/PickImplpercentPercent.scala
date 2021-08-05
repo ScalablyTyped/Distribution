@@ -11,16 +11,13 @@ trait PickImplpercentPercent extends StObject {
 }
 object PickImplpercentPercent {
   
-  @scala.inline
-  def apply(percent: String): PickImplpercentPercent = {
+  inline def apply(percent: String): PickImplpercentPercent = {
     val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplpercentPercent]
   }
   
-  @scala.inline
-  implicit class PickImplpercentPercentMutableBuilder[Self <: PickImplpercentPercent] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplpercentPercent](x: Self) {
     
-    @scala.inline
-    def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
   }
 }

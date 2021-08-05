@@ -43,8 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object FeatureLayer_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFilter: () => FilterFunction,
     getGeoJSON: () => js.Any,
     loadID: String => js.Any,
@@ -56,25 +55,18 @@ object FeatureLayer_ {
     __obj.asInstanceOf[FeatureLayer_]
   }
   
-  @scala.inline
-  implicit class FeatureLayer_MutableBuilder[Self <: FeatureLayer_] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayer_](x: Self) {
     
-    @scala.inline
-    def setGetFilter(value: () => FilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
+    inline def setGetFilter(value: () => FilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGeoJSON(value: () => js.Any): Self = StObject.set(x, "getGeoJSON", js.Any.fromFunction0(value))
+    inline def setGetGeoJSON(value: () => js.Any): Self = StObject.set(x, "getGeoJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadID(value: String => js.Any): Self = StObject.set(x, "loadID", js.Any.fromFunction1(value))
+    inline def setLoadID(value: String => js.Any): Self = StObject.set(x, "loadID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadURL(value: String => js.Any): Self = StObject.set(x, "loadURL", js.Any.fromFunction1(value))
+    inline def setLoadURL(value: String => js.Any): Self = StObject.set(x, "loadURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilter(value: FilterFunction => js.Any): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
+    inline def setSetFilter(value: FilterFunction => js.Any): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGeoJSON(value: js.Any => FeatureLayer_): Self = StObject.set(x, "setGeoJSON", js.Any.fromFunction1(value))
+    inline def setSetGeoJSON(value: js.Any => FeatureLayer_): Self = StObject.set(x, "setGeoJSON", js.Any.fromFunction1(value))
   }
 }

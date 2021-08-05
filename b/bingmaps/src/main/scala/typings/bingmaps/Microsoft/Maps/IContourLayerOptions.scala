@@ -23,37 +23,27 @@ trait IContourLayerOptions extends StObject {
 }
 object IContourLayerOptions {
   
-  @scala.inline
-  def apply(): IContourLayerOptions = {
+  inline def apply(): IContourLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IContourLayerOptions]
   }
   
-  @scala.inline
-  implicit class IContourLayerOptionsMutableBuilder[Self <: IContourLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IContourLayerOptions](x: Self) {
     
-    @scala.inline
-    def setColorCallback(value: /* contourValue */ Double | String => String | Color): Self = StObject.set(x, "colorCallback", js.Any.fromFunction1(value))
+    inline def setColorCallback(value: /* contourValue */ Double | String => String | Color): Self = StObject.set(x, "colorCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setColorCallbackUndefined: Self = StObject.set(x, "colorCallback", js.undefined)
+    inline def setColorCallbackUndefined: Self = StObject.set(x, "colorCallback", js.undefined)
     
-    @scala.inline
-    def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+    inline def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+    inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait PingData extends StObject {
 }
 object PingData {
   
-  @scala.inline
-  def apply(jitter: Double, latency: Double): PingData = {
+  inline def apply(jitter: Double, latency: Double): PingData = {
     val __obj = js.Dynamic.literal(jitter = jitter.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any])
     __obj.asInstanceOf[PingData]
   }
   
-  @scala.inline
-  implicit class PingDataMutableBuilder[Self <: PingData] (val x: Self) extends AnyVal {
+  extension [Self <: PingData](x: Self) {
     
-    @scala.inline
-    def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+    inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
   }
 }

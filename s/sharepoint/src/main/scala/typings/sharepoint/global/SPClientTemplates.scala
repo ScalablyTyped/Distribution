@@ -201,12 +201,10 @@ object SPClientTemplates {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def GetTemplates(renderCtx: RenderContext): Templates = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTemplates")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[Templates]
+    inline def GetTemplates(renderCtx: RenderContext): Templates = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTemplates")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[Templates]
     
     /* static member */
-    @scala.inline
-    def RegisterTemplateOverrides(renderCtx: TemplateOverridesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterTemplateOverrides")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def RegisterTemplateOverrides(renderCtx: TemplateOverridesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterTemplateOverrides")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("SPClientTemplates.UrlFormatType")
@@ -246,95 +244,75 @@ object SPClientTemplates {
     
     /** Represents lookup values array in some strange format */
     /* static member */
-    @scala.inline
-    def BuildLookupValuesAsString(choiceArray: js.Array[ClientLookupValue], isMultiLookup: Boolean, setGroupDesc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildLookupValuesAsString")(choiceArray.asInstanceOf[js.Any], isMultiLookup.asInstanceOf[js.Any], setGroupDesc.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def BuildLookupValuesAsString(choiceArray: js.Array[ClientLookupValue], isMultiLookup: Boolean, setGroupDesc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildLookupValuesAsString")(choiceArray.asInstanceOf[js.Any], isMultiLookup.asInstanceOf[js.Any], setGroupDesc.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def ChoiceFormatTypeToString(fileSystemObjectType: ChoiceFormatType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ChoiceFormatTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ChoiceFormatTypeToString(fileSystemObjectType: ChoiceFormatType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ChoiceFormatTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def ComputeRegisterTypeInfo(renderCtx: TemplateOverridesOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ComputeRegisterTypeInfo")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ComputeRegisterTypeInfo(renderCtx: TemplateOverridesOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ComputeRegisterTypeInfo")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def ControlModeToString(mode: ClientControlMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ControlModeToString")(mode.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ControlModeToString(mode: ClientControlMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ControlModeToString")(mode.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def FileSystemObjectTypeToString(fileSystemObjectType: FileSystemObjectType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FileSystemObjectTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FileSystemObjectTypeToString(fileSystemObjectType: FileSystemObjectType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FileSystemObjectTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def GetControlOptions(control: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetControlOptions")(control.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def GetControlOptions(control: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetControlOptions")(control.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /* static member */
-    @scala.inline
-    def GetFormContextForCurrentField(context: RenderContextForm): typings.sharepoint.SPClientTemplates.ClientFormContext = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFormContextForCurrentField")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientTemplates.ClientFormContext]
+    inline def GetFormContextForCurrentField(context: RenderContextForm): typings.sharepoint.SPClientTemplates.ClientFormContext = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFormContextForCurrentField")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientTemplates.ClientFormContext]
     
     /* static member */
-    @scala.inline
-    def GetPropertiesFromPageContextInfo(context: RenderContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPropertiesFromPageContextInfo")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def GetPropertiesFromPageContextInfo(context: RenderContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetPropertiesFromPageContextInfo")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Creates SP.ClientContext based on the specified Web URL. If the SP.Runtime.js script is not loaded, returns null */
     /* static member */
-    @scala.inline
-    def InitContext(webUrl: String): ClientContext = ^.asInstanceOf[js.Dynamic].applyDynamic("InitContext")(webUrl.asInstanceOf[js.Any]).asInstanceOf[ClientContext]
+    inline def InitContext(webUrl: String): ClientContext = ^.asInstanceOf[js.Dynamic].applyDynamic("InitContext")(webUrl.asInstanceOf[js.Any]).asInstanceOf[ClientContext]
     
     /* static member */
-    @scala.inline
-    def IsValidControlMode(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValidControlMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def IsValidControlMode(mode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValidControlMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def ParseLookupValue(valueStr: String): ClientLookupValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseLookupValue")(valueStr.asInstanceOf[js.Any]).asInstanceOf[ClientLookupValue]
+    inline def ParseLookupValue(valueStr: String): ClientLookupValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseLookupValue")(valueStr.asInstanceOf[js.Any]).asInstanceOf[ClientLookupValue]
     
     /* static member */
-    @scala.inline
-    def ParseMultiLookupValues(valueStr: String): js.Array[ClientLookupValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiLookupValues")(valueStr.asInstanceOf[js.Any]).asInstanceOf[js.Array[ClientLookupValue]]
+    inline def ParseMultiLookupValues(valueStr: String): js.Array[ClientLookupValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseMultiLookupValues")(valueStr.asInstanceOf[js.Any]).asInstanceOf[js.Array[ClientLookupValue]]
     
     /* static member */
-    @scala.inline
-    def ParseURLValue(value: String): ClientUrlValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseURLValue")(value.asInstanceOf[js.Any]).asInstanceOf[ClientUrlValue]
+    inline def ParseURLValue(value: String): ClientUrlValue = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseURLValue")(value.asInstanceOf[js.Any]).asInstanceOf[ClientUrlValue]
     
     /** Replaces tokens "~site/", "~sitecollection/", "~sitecollectionmasterpagegallery", "{lcid}", "{locale}" and "{siteclienttag}" with appropriate context values */
     /* static member */
-    @scala.inline
-    def ReplaceUrlTokens(tokenUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ReplaceUrlTokens")(tokenUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ReplaceUrlTokens(tokenUrl: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ReplaceUrlTokens")(tokenUrl.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def RichTextModeToString(fileSystemObjectType: RichTextMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RichTextModeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def RichTextModeToString(fileSystemObjectType: RichTextMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RichTextModeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Removes leading and trailing spaces */
     /* static member */
-    @scala.inline
-    def Trim(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Trim")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def Trim(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Trim")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def TryParseInitialUserValue(userStr: String): js.Array[ClientUserValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("TryParseInitialUserValue")(userStr.asInstanceOf[js.Any]).asInstanceOf[js.Array[ClientUserValue]]
+    inline def TryParseInitialUserValue(userStr: String): js.Array[ClientUserValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("TryParseInitialUserValue")(userStr.asInstanceOf[js.Any]).asInstanceOf[js.Array[ClientUserValue]]
     
     /** Tries to resolve user names from string. Pushes either ClientUserValue (if resolved successfully) or original string (if not) to the resulting array. */
     /* static member */
-    @scala.inline
-    def TryParseUserControlValue(userStr: String, separator: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseUserControlValue")(userStr.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def TryParseUserControlValue(userStr: String, separator: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseUserControlValue")(userStr.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /** Returns ";#" */
     /* static member */
     @JSGlobal("SPClientTemplates.Utility.UserLookupDelimitString")
     @js.native
     def UserLookupDelimitString: String = js.native
-    @scala.inline
-    def UserLookupDelimitString_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserLookupDelimitString")(x.asInstanceOf[js.Any])
+    inline def UserLookupDelimitString_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserLookupDelimitString")(x.asInstanceOf[js.Any])
     
     /** Returns ";#" */
     /* static member */
     @JSGlobal("SPClientTemplates.Utility.UserMultiValueDelimitString")
     @js.native
     def UserMultiValueDelimitString: String = js.native
-    @scala.inline
-    def UserMultiValueDelimitString_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserMultiValueDelimitString")(x.asInstanceOf[js.Any])
+    inline def UserMultiValueDelimitString_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserMultiValueDelimitString")(x.asInstanceOf[js.Any])
   }
 }

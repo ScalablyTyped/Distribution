@@ -10,6 +10,5 @@ object subtractFromMeanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(mean: Double, n: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean.asInstanceOf[js.Any], n.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(mean: Double, n: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean.asInstanceOf[js.Any], n.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

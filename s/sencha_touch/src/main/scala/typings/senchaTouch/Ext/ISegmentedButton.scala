@@ -106,135 +106,93 @@ trait ISegmentedButton
 }
 object ISegmentedButton {
   
-  @scala.inline
-  def apply(): ISegmentedButton = {
+  inline def apply(): ISegmentedButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISegmentedButton]
   }
   
-  @scala.inline
-  implicit class ISegmentedButtonMutableBuilder[Self <: ISegmentedButton] (val x: Self) extends AnyVal {
+  extension [Self <: ISegmentedButton](x: Self) {
     
-    @scala.inline
-    def setAllowDepress(value: Boolean): Self = StObject.set(x, "allowDepress", value.asInstanceOf[js.Any])
+    inline def setAllowDepress(value: Boolean): Self = StObject.set(x, "allowDepress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDepressUndefined: Self = StObject.set(x, "allowDepress", js.undefined)
+    inline def setAllowDepressUndefined: Self = StObject.set(x, "allowDepress", js.undefined)
     
-    @scala.inline
-    def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
+    inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
+    inline def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
     
-    @scala.inline
-    def setAllowToggle(value: Boolean): Self = StObject.set(x, "allowToggle", value.asInstanceOf[js.Any])
+    inline def setAllowToggle(value: Boolean): Self = StObject.set(x, "allowToggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowToggleUndefined: Self = StObject.set(x, "allowToggle", js.undefined)
+    inline def setAllowToggleUndefined: Self = StObject.set(x, "allowToggle", js.undefined)
     
-    @scala.inline
-    def setApplyItems(value: () => Unit): Self = StObject.set(x, "applyItems", js.Any.fromFunction0(value))
+    inline def setApplyItems(value: () => Unit): Self = StObject.set(x, "applyItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplyItemsUndefined: Self = StObject.set(x, "applyItems", js.undefined)
+    inline def setApplyItemsUndefined: Self = StObject.set(x, "applyItems", js.undefined)
     
-    @scala.inline
-    def setGetAllowDepress(value: () => Boolean): Self = StObject.set(x, "getAllowDepress", js.Any.fromFunction0(value))
+    inline def setGetAllowDepress(value: () => Boolean): Self = StObject.set(x, "getAllowDepress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllowDepressUndefined: Self = StObject.set(x, "getAllowDepress", js.undefined)
+    inline def setGetAllowDepressUndefined: Self = StObject.set(x, "getAllowDepress", js.undefined)
     
-    @scala.inline
-    def setGetAllowMultiple(value: () => Boolean): Self = StObject.set(x, "getAllowMultiple", js.Any.fromFunction0(value))
+    inline def setGetAllowMultiple(value: () => Boolean): Self = StObject.set(x, "getAllowMultiple", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllowMultipleUndefined: Self = StObject.set(x, "getAllowMultiple", js.undefined)
+    inline def setGetAllowMultipleUndefined: Self = StObject.set(x, "getAllowMultiple", js.undefined)
     
-    @scala.inline
-    def setGetAllowToggle(value: () => Boolean): Self = StObject.set(x, "getAllowToggle", js.Any.fromFunction0(value))
+    inline def setGetAllowToggle(value: () => Boolean): Self = StObject.set(x, "getAllowToggle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllowToggleUndefined: Self = StObject.set(x, "getAllowToggle", js.undefined)
+    inline def setGetAllowToggleUndefined: Self = StObject.set(x, "getAllowToggle", js.undefined)
     
-    @scala.inline
-    def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+    inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
-    @scala.inline
-    def setGetPressed(value: () => Unit): Self = StObject.set(x, "getPressed", js.Any.fromFunction0(value))
+    inline def setGetPressed(value: () => Unit): Self = StObject.set(x, "getPressed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPressedButtons(value: () => Array): Self = StObject.set(x, "getPressedButtons", js.Any.fromFunction0(value))
+    inline def setGetPressedButtons(value: () => Array): Self = StObject.set(x, "getPressedButtons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPressedButtonsUndefined: Self = StObject.set(x, "getPressedButtons", js.undefined)
+    inline def setGetPressedButtonsUndefined: Self = StObject.set(x, "getPressedButtons", js.undefined)
     
-    @scala.inline
-    def setGetPressedCls(value: () => java.lang.String): Self = StObject.set(x, "getPressedCls", js.Any.fromFunction0(value))
+    inline def setGetPressedCls(value: () => java.lang.String): Self = StObject.set(x, "getPressedCls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPressedClsUndefined: Self = StObject.set(x, "getPressedCls", js.undefined)
+    inline def setGetPressedClsUndefined: Self = StObject.set(x, "getPressedCls", js.undefined)
     
-    @scala.inline
-    def setGetPressedUndefined: Self = StObject.set(x, "getPressed", js.undefined)
+    inline def setGetPressedUndefined: Self = StObject.set(x, "getPressed", js.undefined)
     
-    @scala.inline
-    def setIsPressed(value: /* button */ js.UndefOr[IButton] => Boolean): Self = StObject.set(x, "isPressed", js.Any.fromFunction1(value))
+    inline def setIsPressed(value: /* button */ js.UndefOr[IButton] => Boolean): Self = StObject.set(x, "isPressed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsPressedUndefined: Self = StObject.set(x, "isPressed", js.undefined)
+    inline def setIsPressedUndefined: Self = StObject.set(x, "isPressed", js.undefined)
     
-    @scala.inline
-    def setPressedButtons(value: Array): Self = StObject.set(x, "pressedButtons", value.asInstanceOf[js.Any])
+    inline def setPressedButtons(value: Array): Self = StObject.set(x, "pressedButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPressedButtonsUndefined: Self = StObject.set(x, "pressedButtons", js.undefined)
+    inline def setPressedButtonsUndefined: Self = StObject.set(x, "pressedButtons", js.undefined)
     
-    @scala.inline
-    def setPressedCls(value: java.lang.String): Self = StObject.set(x, "pressedCls", value.asInstanceOf[js.Any])
+    inline def setPressedCls(value: java.lang.String): Self = StObject.set(x, "pressedCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPressedClsUndefined: Self = StObject.set(x, "pressedCls", js.undefined)
+    inline def setPressedClsUndefined: Self = StObject.set(x, "pressedCls", js.undefined)
     
-    @scala.inline
-    def setSetAllowDepress(value: /* allowDepress */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowDepress", js.Any.fromFunction1(value))
+    inline def setSetAllowDepress(value: /* allowDepress */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowDepress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAllowDepressUndefined: Self = StObject.set(x, "setAllowDepress", js.undefined)
+    inline def setSetAllowDepressUndefined: Self = StObject.set(x, "setAllowDepress", js.undefined)
     
-    @scala.inline
-    def setSetAllowMultiple(value: /* allowMultiple */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowMultiple", js.Any.fromFunction1(value))
+    inline def setSetAllowMultiple(value: /* allowMultiple */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowMultiple", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAllowMultipleUndefined: Self = StObject.set(x, "setAllowMultiple", js.undefined)
+    inline def setSetAllowMultipleUndefined: Self = StObject.set(x, "setAllowMultiple", js.undefined)
     
-    @scala.inline
-    def setSetAllowToggle(value: /* allowToggle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowToggle", js.Any.fromFunction1(value))
+    inline def setSetAllowToggle(value: /* allowToggle */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowToggle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAllowToggleUndefined: Self = StObject.set(x, "setAllowToggle", js.undefined)
+    inline def setSetAllowToggleUndefined: Self = StObject.set(x, "setAllowToggle", js.undefined)
     
-    @scala.inline
-    def setSetPressed(
+    inline def setSetPressed(
       value: (/* button */ js.UndefOr[js.Any], /* pressed */ js.UndefOr[Boolean], /* suppressEvents */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "setPressed", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPressedButtons(value: /* pressedButtons */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setPressedButtons", js.Any.fromFunction1(value))
+    inline def setSetPressedButtons(value: /* pressedButtons */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setPressedButtons", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPressedButtonsUndefined: Self = StObject.set(x, "setPressedButtons", js.undefined)
+    inline def setSetPressedButtonsUndefined: Self = StObject.set(x, "setPressedButtons", js.undefined)
     
-    @scala.inline
-    def setSetPressedCls(value: /* pressedCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setPressedCls", js.Any.fromFunction1(value))
+    inline def setSetPressedCls(value: /* pressedCls */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setPressedCls", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPressedClsUndefined: Self = StObject.set(x, "setPressedCls", js.undefined)
+    inline def setSetPressedClsUndefined: Self = StObject.set(x, "setPressedCls", js.undefined)
     
-    @scala.inline
-    def setSetPressedUndefined: Self = StObject.set(x, "setPressed", js.undefined)
+    inline def setSetPressedUndefined: Self = StObject.set(x, "setPressed", js.undefined)
   }
 }

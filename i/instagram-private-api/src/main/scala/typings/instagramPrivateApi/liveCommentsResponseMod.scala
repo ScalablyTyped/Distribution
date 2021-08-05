@@ -36,8 +36,7 @@ object liveCommentsResponseMod {
   }
   object LiveCommentsResponseCommentsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bit_flags: Double,
       content_type: String,
       created_at: Double,
@@ -57,47 +56,33 @@ object liveCommentsResponseMod {
       __obj.asInstanceOf[LiveCommentsResponseCommentsItem]
     }
     
-    @scala.inline
-    implicit class LiveCommentsResponseCommentsItemMutableBuilder[Self <: LiveCommentsResponseCommentsItem] (val x: Self) extends AnyVal {
+    extension [Self <: LiveCommentsResponseCommentsItem](x: Self) {
       
-      @scala.inline
-      def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
+      inline def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+      inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
+      inline def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
+      inline def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInline_composer_display_condition(value: String): Self = StObject.set(x, "inline_composer_display_condition", value.asInstanceOf[js.Any])
+      inline def setInline_composer_display_condition(value: String): Self = StObject.set(x, "inline_composer_display_condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
+      inline def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: LiveCommentsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: LiveCommentsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,8 +118,7 @@ object liveCommentsResponseMod {
   }
   object LiveCommentsResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       can_view_more_preview_comments: Boolean,
       caption: Null,
       caption_is_edited: Boolean,
@@ -154,56 +138,39 @@ object liveCommentsResponseMod {
       __obj.asInstanceOf[LiveCommentsResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LiveCommentsResponseRootObjectMutableBuilder[Self <: LiveCommentsResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LiveCommentsResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
+      inline def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: Null): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
+      inline def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+      inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
+      inline def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_muted(value: Double): Self = StObject.set(x, "comment_muted", value.asInstanceOf[js.Any])
+      inline def setComment_muted(value: Double): Self = StObject.set(x, "comment_muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComments(value: js.Array[LiveCommentsResponseCommentsItem]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: js.Array[LiveCommentsResponseCommentsItem]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentsVarargs(value: LiveCommentsResponseCommentsItem*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: LiveCommentsResponseCommentsItem*): Self = StObject.set(x, "comments", js.Array(value :_*))
       
-      @scala.inline
-      def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_more_headload_comments(value: Boolean): Self = StObject.set(x, "has_more_headload_comments", value.asInstanceOf[js.Any])
+      inline def setHas_more_headload_comments(value: Boolean): Self = StObject.set(x, "has_more_headload_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_first_fetch(value: String): Self = StObject.set(x, "is_first_fetch", value.asInstanceOf[js.Any])
+      inline def setIs_first_fetch(value: String): Self = StObject.set(x, "is_first_fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLive_seconds_per_comment(value: Double): Self = StObject.set(x, "live_seconds_per_comment", value.asInstanceOf[js.Any])
+      inline def setLive_seconds_per_comment(value: Double): Self = StObject.set(x, "live_seconds_per_comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_header_display(value: String): Self = StObject.set(x, "media_header_display", value.asInstanceOf[js.Any])
+      inline def setMedia_header_display(value: String): Self = StObject.set(x, "media_header_display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystem_comments(value: js.Array[LiveCommentsResponseSystemCommentsItem]): Self = StObject.set(x, "system_comments", value.asInstanceOf[js.Any])
+      inline def setSystem_comments(value: js.Array[LiveCommentsResponseSystemCommentsItem]): Self = StObject.set(x, "system_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystem_commentsVarargs(value: LiveCommentsResponseSystemCommentsItem*): Self = StObject.set(x, "system_comments", js.Array(value :_*))
+      inline def setSystem_commentsVarargs(value: LiveCommentsResponseSystemCommentsItem*): Self = StObject.set(x, "system_comments", js.Array(value :_*))
     }
   }
   
@@ -221,29 +188,22 @@ object liveCommentsResponseMod {
   }
   object LiveCommentsResponseSystemCommentsItem {
     
-    @scala.inline
-    def apply(created_at: Double, pk: String, text: String, user: LiveCommentsResponseUser, user_count: Double): LiveCommentsResponseSystemCommentsItem = {
+    inline def apply(created_at: Double, pk: String, text: String, user: LiveCommentsResponseUser, user_count: Double): LiveCommentsResponseSystemCommentsItem = {
       val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], user_count = user_count.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiveCommentsResponseSystemCommentsItem]
     }
     
-    @scala.inline
-    implicit class LiveCommentsResponseSystemCommentsItemMutableBuilder[Self <: LiveCommentsResponseSystemCommentsItem] (val x: Self) extends AnyVal {
+    extension [Self <: LiveCommentsResponseSystemCommentsItem](x: Self) {
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: LiveCommentsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: LiveCommentsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_count(value: Double): Self = StObject.set(x, "user_count", value.asInstanceOf[js.Any])
+      inline def setUser_count(value: Double): Self = StObject.set(x, "user_count", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,8 +227,7 @@ object liveCommentsResponseMod {
   }
   object LiveCommentsResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       full_name: String,
       is_private: Boolean,
       is_verified: Boolean,
@@ -281,35 +240,25 @@ object liveCommentsResponseMod {
       __obj.asInstanceOf[LiveCommentsResponseUser]
     }
     
-    @scala.inline
-    implicit class LiveCommentsResponseUserMutableBuilder[Self <: LiveCommentsResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: LiveCommentsResponseUser](x: Self) {
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLive_with_eligibility(value: String): Self = StObject.set(x, "live_with_eligibility", value.asInstanceOf[js.Any])
+      inline def setLive_with_eligibility(value: String): Self = StObject.set(x, "live_with_eligibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLive_with_eligibilityUndefined: Self = StObject.set(x, "live_with_eligibility", js.undefined)
+      inline def setLive_with_eligibilityUndefined: Self = StObject.set(x, "live_with_eligibility", js.undefined)
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

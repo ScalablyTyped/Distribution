@@ -16,17 +16,14 @@ trait GenericMarkDef[M] extends StObject {
 }
 object GenericMarkDef {
   
-  @scala.inline
-  def apply[M](`type`: M): GenericMarkDef[M] = {
+  inline def apply[M](`type`: M): GenericMarkDef[M] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericMarkDef[M]]
   }
   
-  @scala.inline
-  implicit class GenericMarkDefMutableBuilder[Self <: GenericMarkDef[?], M] (val x: Self & GenericMarkDef[M]) extends AnyVal {
+  extension [Self <: GenericMarkDef[?], M](x: Self & GenericMarkDef[M]) {
     
-    @scala.inline
-    def setType(value: M): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: M): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

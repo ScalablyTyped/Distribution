@@ -17,19 +17,15 @@ trait Extension
 }
 object Extension {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, definition: ExtensionDefinition, mustUnderstand: Boolean): Extension = {
+  inline def apply($parent: TypeDerived, $type: ElementType, definition: ExtensionDefinition, mustUnderstand: Boolean): Extension = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], mustUnderstand = mustUnderstand.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extension]
   }
   
-  @scala.inline
-  implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
+  extension [Self <: Extension](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: ExtensionDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: ExtensionDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustUnderstand(value: Boolean): Self = StObject.set(x, "mustUnderstand", value.asInstanceOf[js.Any])
+    inline def setMustUnderstand(value: Boolean): Self = StObject.set(x, "mustUnderstand", value.asInstanceOf[js.Any])
   }
 }

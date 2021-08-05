@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenFileOptions extends StObject
 object OpenFileOptions {
   
-  @scala.inline
-  def Open: `1` = 1.asInstanceOf[`1`]
+  inline def Open: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Save: `2` = 2.asInstanceOf[`2`]
+  inline def Save: `2` = 2.asInstanceOf[`2`]
 }

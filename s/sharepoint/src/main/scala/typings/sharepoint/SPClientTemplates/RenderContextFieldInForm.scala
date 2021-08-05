@@ -21,8 +21,7 @@ trait RenderContextFieldInForm
 }
 object RenderContextFieldInForm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentFieldSchema: FieldSchemaInForm,
     CurrentFieldValue: js.Any,
     CurrentGroup: Group,
@@ -39,25 +38,18 @@ object RenderContextFieldInForm {
     __obj.asInstanceOf[RenderContextFieldInForm]
   }
   
-  @scala.inline
-  implicit class RenderContextFieldInFormMutableBuilder[Self <: RenderContextFieldInForm] (val x: Self) extends AnyVal {
+  extension [Self <: RenderContextFieldInForm](x: Self) {
     
-    @scala.inline
-    def setCurrentFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
+    inline def setCurrentFieldSchema(value: FieldSchemaInForm): Self = StObject.set(x, "CurrentFieldSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
+    inline def setCurrentFieldValue(value: js.Any): Self = StObject.set(x, "CurrentFieldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentGroup(value: Group): Self = StObject.set(x, "CurrentGroup", value.asInstanceOf[js.Any])
+    inline def setCurrentGroup(value: Group): Self = StObject.set(x, "CurrentGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentGroupIdx(value: Double): Self = StObject.set(x, "CurrentGroupIdx", value.asInstanceOf[js.Any])
+    inline def setCurrentGroupIdx(value: Double): Self = StObject.set(x, "CurrentGroupIdx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentItems(value: js.Array[Item]): Self = StObject.set(x, "CurrentItems", value.asInstanceOf[js.Any])
+    inline def setCurrentItems(value: js.Array[Item]): Self = StObject.set(x, "CurrentItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentItemsVarargs(value: Item*): Self = StObject.set(x, "CurrentItems", js.Array(value :_*))
+    inline def setCurrentItemsVarargs(value: Item*): Self = StObject.set(x, "CurrentItems", js.Array(value :_*))
   }
 }

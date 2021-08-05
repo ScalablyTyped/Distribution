@@ -10,19 +10,15 @@ trait WebsocketLogs extends StObject {
 }
 object WebsocketLogs {
   
-  @scala.inline
-  def apply(): WebsocketLogs = {
+  inline def apply(): WebsocketLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebsocketLogs]
   }
   
-  @scala.inline
-  implicit class WebsocketLogsMutableBuilder[Self <: WebsocketLogs] (val x: Self) extends AnyVal {
+  extension [Self <: WebsocketLogs](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

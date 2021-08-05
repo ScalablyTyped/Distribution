@@ -15,20 +15,16 @@ object ieventdataMod {
   }
   object IEventData {
     
-    @scala.inline
-    def apply(preventDefault: () => Unit, returnValue: Boolean): IEventData = {
+    inline def apply(preventDefault: () => Unit, returnValue: Boolean): IEventData = {
       val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEventData]
     }
     
-    @scala.inline
-    implicit class IEventDataMutableBuilder[Self <: IEventData] (val x: Self) extends AnyVal {
+    extension [Self <: IEventData](x: Self) {
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+      inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,8 +44,7 @@ object ieventdataMod {
   }
   object IKeyboardEventData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Double,
       ctrlKey: Double,
       keyCode: Double,
@@ -62,23 +57,17 @@ object ieventdataMod {
       __obj.asInstanceOf[IKeyboardEventData]
     }
     
-    @scala.inline
-    implicit class IKeyboardEventDataMutableBuilder[Self <: IKeyboardEventData] (val x: Self) extends AnyVal {
+    extension [Self <: IKeyboardEventData](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Double): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Double): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Double): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Double): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Double): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Double): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Double): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Double): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,8 +107,7 @@ object ieventdataMod {
   }
   object IMouseEventData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       button: Double,
       clientX: Double,
       clientY: Double,
@@ -134,77 +122,53 @@ object ieventdataMod {
       __obj.asInstanceOf[IMouseEventData]
     }
     
-    @scala.inline
-    implicit class IMouseEventDataMutableBuilder[Self <: IMouseEventData] (val x: Self) extends AnyVal {
+    extension [Self <: IMouseEventData](x: Self) {
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
+      inline def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
+      inline def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
       
-      @scala.inline
-      def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
+      inline def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
+      inline def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
       
-      @scala.inline
-      def setMozMovementX(value: Double): Self = StObject.set(x, "mozMovementX", value.asInstanceOf[js.Any])
+      inline def setMozMovementX(value: Double): Self = StObject.set(x, "mozMovementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMozMovementXUndefined: Self = StObject.set(x, "mozMovementX", js.undefined)
+      inline def setMozMovementXUndefined: Self = StObject.set(x, "mozMovementX", js.undefined)
       
-      @scala.inline
-      def setMozMovementY(value: Double): Self = StObject.set(x, "mozMovementY", value.asInstanceOf[js.Any])
+      inline def setMozMovementY(value: Double): Self = StObject.set(x, "mozMovementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMozMovementYUndefined: Self = StObject.set(x, "mozMovementY", js.undefined)
+      inline def setMozMovementYUndefined: Self = StObject.set(x, "mozMovementY", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitMovementX(value: Double): Self = StObject.set(x, "webkitMovementX", value.asInstanceOf[js.Any])
+      inline def setWebkitMovementX(value: Double): Self = StObject.set(x, "webkitMovementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitMovementXUndefined: Self = StObject.set(x, "webkitMovementX", js.undefined)
+      inline def setWebkitMovementXUndefined: Self = StObject.set(x, "webkitMovementX", js.undefined)
       
-      @scala.inline
-      def setWebkitMovementY(value: Double): Self = StObject.set(x, "webkitMovementY", value.asInstanceOf[js.Any])
+      inline def setWebkitMovementY(value: Double): Self = StObject.set(x, "webkitMovementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitMovementYUndefined: Self = StObject.set(x, "webkitMovementY", js.undefined)
+      inline def setWebkitMovementYUndefined: Self = StObject.set(x, "webkitMovementY", js.undefined)
       
-      @scala.inline
-      def setWheelDelta(value: Double): Self = StObject.set(x, "wheelDelta", value.asInstanceOf[js.Any])
+      inline def setWheelDelta(value: Double): Self = StObject.set(x, "wheelDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelDeltaUndefined: Self = StObject.set(x, "wheelDelta", js.undefined)
+      inline def setWheelDeltaUndefined: Self = StObject.set(x, "wheelDelta", js.undefined)
     }
   }
   
@@ -244,8 +208,7 @@ object ieventdataMod {
   }
   object IPointEventData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientX: Double,
       clientY: Double,
       pageX: Double,
@@ -258,83 +221,57 @@ object ieventdataMod {
       __obj.asInstanceOf[IPointEventData]
     }
     
-    @scala.inline
-    implicit class IPointEventDataMutableBuilder[Self <: IPointEventData] (val x: Self) extends AnyVal {
+    extension [Self <: IPointEventData](x: Self) {
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTargetNull: Self = StObject.set(x, "currentTarget", null)
+      inline def setCurrentTargetNull: Self = StObject.set(x, "currentTarget", null)
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
+      inline def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
+      inline def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
       
-      @scala.inline
-      def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
+      inline def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
+      inline def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
       
-      @scala.inline
-      def setMozMovementX(value: Double): Self = StObject.set(x, "mozMovementX", value.asInstanceOf[js.Any])
+      inline def setMozMovementX(value: Double): Self = StObject.set(x, "mozMovementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMozMovementXUndefined: Self = StObject.set(x, "mozMovementX", js.undefined)
+      inline def setMozMovementXUndefined: Self = StObject.set(x, "mozMovementX", js.undefined)
       
-      @scala.inline
-      def setMozMovementY(value: Double): Self = StObject.set(x, "mozMovementY", value.asInstanceOf[js.Any])
+      inline def setMozMovementY(value: Double): Self = StObject.set(x, "mozMovementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMozMovementYUndefined: Self = StObject.set(x, "mozMovementY", js.undefined)
+      inline def setMozMovementYUndefined: Self = StObject.set(x, "mozMovementY", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitMovementX(value: Double): Self = StObject.set(x, "webkitMovementX", value.asInstanceOf[js.Any])
+      inline def setWebkitMovementX(value: Double): Self = StObject.set(x, "webkitMovementX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitMovementXUndefined: Self = StObject.set(x, "webkitMovementX", js.undefined)
+      inline def setWebkitMovementXUndefined: Self = StObject.set(x, "webkitMovementX", js.undefined)
       
-      @scala.inline
-      def setWebkitMovementY(value: Double): Self = StObject.set(x, "webkitMovementY", value.asInstanceOf[js.Any])
+      inline def setWebkitMovementY(value: Double): Self = StObject.set(x, "webkitMovementY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebkitMovementYUndefined: Self = StObject.set(x, "webkitMovementY", js.undefined)
+      inline def setWebkitMovementYUndefined: Self = StObject.set(x, "webkitMovementY", js.undefined)
       
-      @scala.inline
-      def setWheelDelta(value: Double): Self = StObject.set(x, "wheelDelta", value.asInstanceOf[js.Any])
+      inline def setWheelDelta(value: Double): Self = StObject.set(x, "wheelDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelDeltaUndefined: Self = StObject.set(x, "wheelDelta", js.undefined)
+      inline def setWheelDeltaUndefined: Self = StObject.set(x, "wheelDelta", js.undefined)
     }
   }
   
@@ -366,8 +303,7 @@ object ieventdataMod {
   }
   object ITouchData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientX: Double,
       clientY: Double,
       force: Double,
@@ -385,44 +321,31 @@ object ieventdataMod {
       __obj.asInstanceOf[ITouchData]
     }
     
-    @scala.inline
-    implicit class ITouchDataMutableBuilder[Self <: ITouchData] (val x: Self) extends AnyVal {
+    extension [Self <: ITouchData](x: Self) {
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
+      inline def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
+      inline def setRadiusY(value: Double): Self = StObject.set(x, "radiusY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+      inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -442,8 +365,7 @@ object ieventdataMod {
   }
   object ITouchEventData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changedTouches: js.Array[ITouchData],
       preventDefault: () => Unit,
       returnValue: Boolean,
@@ -455,35 +377,25 @@ object ieventdataMod {
       __obj.asInstanceOf[ITouchEventData]
     }
     
-    @scala.inline
-    implicit class ITouchEventDataMutableBuilder[Self <: ITouchEventData] (val x: Self) extends AnyVal {
+    extension [Self <: ITouchEventData](x: Self) {
       
-      @scala.inline
-      def setChangedTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+      inline def setChangedTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTargetNull: Self = StObject.set(x, "currentTarget", null)
+      inline def setCurrentTargetNull: Self = StObject.set(x, "currentTarget", null)
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "targetTouches", js.Array(value :_*))
+      inline def setTargetTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "targetTouches", js.Array(value :_*))
       
-      @scala.inline
-      def setTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "touches", js.Array(value :_*))
+      inline def setTouchesVarargs(value: ITouchData*): Self = StObject.set(x, "touches", js.Array(value :_*))
     }
   }
 }

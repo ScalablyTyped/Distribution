@@ -18,40 +18,29 @@ trait Classes extends StObject {
 }
 object Classes {
   
-  @scala.inline
-  def apply(): Classes = {
+  inline def apply(): Classes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Classes]
   }
   
-  @scala.inline
-  implicit class ClassesMutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
+  extension [Self <: Classes](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[String | RegExp | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[String | RegExp | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setClasses(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setClassesVarargs(value: (String | RegExp)*): Self = StObject.set(x, "classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: (String | RegExp)*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String | RegExp): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | RegExp): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStyles(value: StringDictionary[String | RegExp]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[String | RegExp]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

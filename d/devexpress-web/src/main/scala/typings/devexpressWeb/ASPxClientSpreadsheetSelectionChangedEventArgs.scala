@@ -18,16 +18,13 @@ trait ASPxClientSpreadsheetSelectionChangedEventArgs
 }
 object ASPxClientSpreadsheetSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(selection: ASPxClientSpreadsheetSelection): ASPxClientSpreadsheetSelectionChangedEventArgs = {
+  inline def apply(selection: ASPxClientSpreadsheetSelection): ASPxClientSpreadsheetSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSpreadsheetSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetSelectionChangedEventArgsMutableBuilder[Self <: ASPxClientSpreadsheetSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSelection(value: ASPxClientSpreadsheetSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: ASPxClientSpreadsheetSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

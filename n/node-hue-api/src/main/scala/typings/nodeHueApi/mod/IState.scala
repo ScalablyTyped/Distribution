@@ -17,8 +17,7 @@ trait IState extends StObject {
 }
 object IState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     config: IBridgeConfig,
     groups: StringDictionary[ILightGroup],
     lights: StringDictionary[ILight],
@@ -28,19 +27,14 @@ object IState {
     __obj.asInstanceOf[IState]
   }
   
-  @scala.inline
-  implicit class IStateMutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
+  extension [Self <: IState](x: Self) {
     
-    @scala.inline
-    def setConfig(value: IBridgeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: IBridgeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: StringDictionary[ILightGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: StringDictionary[ILightGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights(value: StringDictionary[ILight]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
+    inline def setLights(value: StringDictionary[ILight]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedules(value: StringDictionary[ISchedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
+    inline def setSchedules(value: StringDictionary[ISchedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
   }
 }

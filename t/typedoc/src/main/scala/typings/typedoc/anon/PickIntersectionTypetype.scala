@@ -13,20 +13,16 @@ trait PickIntersectionTypetype extends StObject {
 }
 object PickIntersectionTypetype {
   
-  @scala.inline
-  def apply(`type`: ModelToObject[String] | String): PickIntersectionTypetype = {
+  inline def apply(`type`: ModelToObject[String] | String): PickIntersectionTypetype = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickIntersectionTypetype]
   }
   
-  @scala.inline
-  implicit class PickIntersectionTypetypeMutableBuilder[Self <: PickIntersectionTypetype] (val x: Self) extends AnyVal {
+  extension [Self <: PickIntersectionTypetype](x: Self) {
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

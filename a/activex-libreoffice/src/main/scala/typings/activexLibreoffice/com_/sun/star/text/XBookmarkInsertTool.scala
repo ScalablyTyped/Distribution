@@ -19,8 +19,7 @@ trait XBookmarkInsertTool
 }
 object XBookmarkInsertTool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     insertNewBookmark: (XTextRange, String) => XTextContent,
     queryInterface: `type` => js.Any,
@@ -30,10 +29,8 @@ object XBookmarkInsertTool {
     __obj.asInstanceOf[XBookmarkInsertTool]
   }
   
-  @scala.inline
-  implicit class XBookmarkInsertToolMutableBuilder[Self <: XBookmarkInsertTool] (val x: Self) extends AnyVal {
+  extension [Self <: XBookmarkInsertTool](x: Self) {
     
-    @scala.inline
-    def setInsertNewBookmark(value: (XTextRange, String) => XTextContent): Self = StObject.set(x, "insertNewBookmark", js.Any.fromFunction2(value))
+    inline def setInsertNewBookmark(value: (XTextRange, String) => XTextContent): Self = StObject.set(x, "insertNewBookmark", js.Any.fromFunction2(value))
   }
 }

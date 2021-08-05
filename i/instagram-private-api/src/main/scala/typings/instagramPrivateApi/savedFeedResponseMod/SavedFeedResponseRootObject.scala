@@ -20,8 +20,7 @@ trait SavedFeedResponseRootObject extends StObject {
 }
 object SavedFeedResponseRootObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auto_load_more_enabled: Boolean,
     items: js.Array[SavedFeedResponseItemsItem],
     more_available: Boolean,
@@ -33,28 +32,20 @@ object SavedFeedResponseRootObject {
     __obj.asInstanceOf[SavedFeedResponseRootObject]
   }
   
-  @scala.inline
-  implicit class SavedFeedResponseRootObjectMutableBuilder[Self <: SavedFeedResponseRootObject] (val x: Self) extends AnyVal {
+  extension [Self <: SavedFeedResponseRootObject](x: Self) {
     
-    @scala.inline
-    def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
+    inline def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[SavedFeedResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SavedFeedResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: SavedFeedResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SavedFeedResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+    inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
+    inline def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

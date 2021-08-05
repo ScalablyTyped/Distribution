@@ -20,37 +20,27 @@ trait ChartData extends StObject {
 }
 object ChartData {
   
-  @scala.inline
-  def apply(): ChartData = {
+  inline def apply(): ChartData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartData]
   }
   
-  @scala.inline
-  implicit class ChartDataMutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartData](x: Self) {
     
-    @scala.inline
-    def setAggregateType(value: String): Self = StObject.set(x, "aggregateType", value.asInstanceOf[js.Any])
+    inline def setAggregateType(value: String): Self = StObject.set(x, "aggregateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateTypeUndefined: Self = StObject.set(x, "aggregateType", js.undefined)
+    inline def setAggregateTypeUndefined: Self = StObject.set(x, "aggregateType", js.undefined)
     
-    @scala.inline
-    def setColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "columnReference", value.asInstanceOf[js.Any])
+    inline def setColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "columnReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnReferenceUndefined: Self = StObject.set(x, "columnReference", js.undefined)
+    inline def setColumnReferenceUndefined: Self = StObject.set(x, "columnReference", js.undefined)
     
-    @scala.inline
-    def setGroupRule(value: ChartGroupRule): Self = StObject.set(x, "groupRule", value.asInstanceOf[js.Any])
+    inline def setGroupRule(value: ChartGroupRule): Self = StObject.set(x, "groupRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupRuleUndefined: Self = StObject.set(x, "groupRule", js.undefined)
+    inline def setGroupRuleUndefined: Self = StObject.set(x, "groupRule", js.undefined)
     
-    @scala.inline
-    def setSourceRange(value: ChartSourceRange): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
+    inline def setSourceRange(value: ChartSourceRange): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
+    inline def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
   }
 }

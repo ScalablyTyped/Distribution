@@ -23,26 +23,20 @@ object typesMod {
   }
   object BufferConfig {
     
-    @scala.inline
-    def apply(): BufferConfig = {
+    inline def apply(): BufferConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BufferConfig]
     }
     
-    @scala.inline
-    implicit class BufferConfigMutableBuilder[Self <: BufferConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BufferConfig](x: Self) {
       
-      @scala.inline
-      def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setBufferTimeout(value: Double): Self = StObject.set(x, "bufferTimeout", value.asInstanceOf[js.Any])
+      inline def setBufferTimeout(value: Double): Self = StObject.set(x, "bufferTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferTimeoutUndefined: Self = StObject.set(x, "bufferTimeout", js.undefined)
+      inline def setBufferTimeoutUndefined: Self = StObject.set(x, "bufferTimeout", js.undefined)
     }
   }
   
@@ -56,32 +50,24 @@ object typesMod {
   }
   object SDKRegistrationConfig {
     
-    @scala.inline
-    def apply(): SDKRegistrationConfig = {
+    inline def apply(): SDKRegistrationConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SDKRegistrationConfig]
     }
     
-    @scala.inline
-    implicit class SDKRegistrationConfigMutableBuilder[Self <: SDKRegistrationConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SDKRegistrationConfig](x: Self) {
       
-      @scala.inline
-      def setContextManager(value: ContextManager): Self = StObject.set(x, "contextManager", value.asInstanceOf[js.Any])
+      inline def setContextManager(value: ContextManager): Self = StObject.set(x, "contextManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextManagerNull: Self = StObject.set(x, "contextManager", null)
+      inline def setContextManagerNull: Self = StObject.set(x, "contextManager", null)
       
-      @scala.inline
-      def setContextManagerUndefined: Self = StObject.set(x, "contextManager", js.undefined)
+      inline def setContextManagerUndefined: Self = StObject.set(x, "contextManager", js.undefined)
       
-      @scala.inline
-      def setPropagator(value: TextMapPropagator): Self = StObject.set(x, "propagator", value.asInstanceOf[js.Any])
+      inline def setPropagator(value: TextMapPropagator): Self = StObject.set(x, "propagator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropagatorNull: Self = StObject.set(x, "propagator", null)
+      inline def setPropagatorNull: Self = StObject.set(x, "propagator", null)
       
-      @scala.inline
-      def setPropagatorUndefined: Self = StObject.set(x, "propagator", js.undefined)
+      inline def setPropagatorUndefined: Self = StObject.set(x, "propagator", js.undefined)
     }
   }
   
@@ -98,32 +84,24 @@ object typesMod {
   }
   object TraceParams {
     
-    @scala.inline
-    def apply(): TraceParams = {
+    inline def apply(): TraceParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraceParams]
     }
     
-    @scala.inline
-    implicit class TraceParamsMutableBuilder[Self <: TraceParams] (val x: Self) extends AnyVal {
+    extension [Self <: TraceParams](x: Self) {
       
-      @scala.inline
-      def setNumberOfAttributesPerSpan(value: Double): Self = StObject.set(x, "numberOfAttributesPerSpan", value.asInstanceOf[js.Any])
+      inline def setNumberOfAttributesPerSpan(value: Double): Self = StObject.set(x, "numberOfAttributesPerSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfAttributesPerSpanUndefined: Self = StObject.set(x, "numberOfAttributesPerSpan", js.undefined)
+      inline def setNumberOfAttributesPerSpanUndefined: Self = StObject.set(x, "numberOfAttributesPerSpan", js.undefined)
       
-      @scala.inline
-      def setNumberOfEventsPerSpan(value: Double): Self = StObject.set(x, "numberOfEventsPerSpan", value.asInstanceOf[js.Any])
+      inline def setNumberOfEventsPerSpan(value: Double): Self = StObject.set(x, "numberOfEventsPerSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfEventsPerSpanUndefined: Self = StObject.set(x, "numberOfEventsPerSpan", js.undefined)
+      inline def setNumberOfEventsPerSpanUndefined: Self = StObject.set(x, "numberOfEventsPerSpan", js.undefined)
       
-      @scala.inline
-      def setNumberOfLinksPerSpan(value: Double): Self = StObject.set(x, "numberOfLinksPerSpan", value.asInstanceOf[js.Any])
+      inline def setNumberOfLinksPerSpan(value: Double): Self = StObject.set(x, "numberOfLinksPerSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfLinksPerSpanUndefined: Self = StObject.set(x, "numberOfLinksPerSpan", js.undefined)
+      inline def setNumberOfLinksPerSpanUndefined: Self = StObject.set(x, "numberOfLinksPerSpan", js.undefined)
     }
   }
   
@@ -159,56 +137,40 @@ object typesMod {
   }
   object TracerConfig {
     
-    @scala.inline
-    def apply(): TracerConfig = {
+    inline def apply(): TracerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TracerConfig]
     }
     
-    @scala.inline
-    implicit class TracerConfigMutableBuilder[Self <: TracerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TracerConfig](x: Self) {
       
-      @scala.inline
-      def setGracefulShutdown(value: Boolean): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
+      inline def setGracefulShutdown(value: Boolean): Self = StObject.set(x, "gracefulShutdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGracefulShutdownUndefined: Self = StObject.set(x, "gracefulShutdown", js.undefined)
+      inline def setGracefulShutdownUndefined: Self = StObject.set(x, "gracefulShutdown", js.undefined)
       
-      @scala.inline
-      def setIdGenerator(value: IdGenerator): Self = StObject.set(x, "idGenerator", value.asInstanceOf[js.Any])
+      inline def setIdGenerator(value: IdGenerator): Self = StObject.set(x, "idGenerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdGeneratorUndefined: Self = StObject.set(x, "idGenerator", js.undefined)
+      inline def setIdGeneratorUndefined: Self = StObject.set(x, "idGenerator", js.undefined)
       
-      @scala.inline
-      def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+      inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      @scala.inline
-      def setSampler(value: Sampler): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+      inline def setSampler(value: Sampler): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
+      inline def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
       
-      @scala.inline
-      def setTraceParams(value: TraceParams): Self = StObject.set(x, "traceParams", value.asInstanceOf[js.Any])
+      inline def setTraceParams(value: TraceParams): Self = StObject.set(x, "traceParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceParamsUndefined: Self = StObject.set(x, "traceParams", js.undefined)
+      inline def setTraceParamsUndefined: Self = StObject.set(x, "traceParams", js.undefined)
     }
   }
 }

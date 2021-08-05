@@ -10,16 +10,13 @@ trait MultiVarsWriteResult extends StObject {
 }
 object MultiVarsWriteResult {
   
-  @scala.inline
-  def apply(Result: Double): MultiVarsWriteResult = {
+  inline def apply(Result: Double): MultiVarsWriteResult = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarsWriteResult]
   }
   
-  @scala.inline
-  implicit class MultiVarsWriteResultMutableBuilder[Self <: MultiVarsWriteResult] (val x: Self) extends AnyVal {
+  extension [Self <: MultiVarsWriteResult](x: Self) {
     
-    @scala.inline
-    def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

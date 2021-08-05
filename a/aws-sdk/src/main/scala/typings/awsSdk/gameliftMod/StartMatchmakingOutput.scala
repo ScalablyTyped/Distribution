@@ -13,19 +13,15 @@ trait StartMatchmakingOutput extends StObject {
 }
 object StartMatchmakingOutput {
   
-  @scala.inline
-  def apply(): StartMatchmakingOutput = {
+  inline def apply(): StartMatchmakingOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartMatchmakingOutput]
   }
   
-  @scala.inline
-  implicit class StartMatchmakingOutputMutableBuilder[Self <: StartMatchmakingOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StartMatchmakingOutput](x: Self) {
     
-    @scala.inline
-    def setMatchmakingTicket(value: MatchmakingTicket): Self = StObject.set(x, "MatchmakingTicket", value.asInstanceOf[js.Any])
+    inline def setMatchmakingTicket(value: MatchmakingTicket): Self = StObject.set(x, "MatchmakingTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchmakingTicketUndefined: Self = StObject.set(x, "MatchmakingTicket", js.undefined)
+    inline def setMatchmakingTicketUndefined: Self = StObject.set(x, "MatchmakingTicket", js.undefined)
   }
 }

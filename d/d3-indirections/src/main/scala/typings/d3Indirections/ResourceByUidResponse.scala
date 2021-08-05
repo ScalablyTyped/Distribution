@@ -16,16 +16,13 @@ trait ResourceByUidResponse[T /* <: ResourceType */]
 }
 object ResourceByUidResponse {
   
-  @scala.inline
-  def apply[T /* <: ResourceType */](result: Resource[T]): ResourceByUidResponse[T] = {
+  inline def apply[T /* <: ResourceType */](result: Resource[T]): ResourceByUidResponse[T] = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceByUidResponse[T]]
   }
   
-  @scala.inline
-  implicit class ResourceByUidResponseMutableBuilder[Self <: ResourceByUidResponse[?], T /* <: ResourceType */] (val x: Self & ResourceByUidResponse[T]) extends AnyVal {
+  extension [Self <: ResourceByUidResponse[?], T /* <: ResourceType */](x: Self & ResourceByUidResponse[T]) {
     
-    @scala.inline
-    def setResult(value: Resource[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Resource[T]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

@@ -17,12 +17,10 @@ object typeScriptReporterConfigurationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTypeScriptReporterConfiguration(
+  inline def createTypeScriptReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): TypeScriptReporterConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporterConfiguration")(compiler.asInstanceOf[js.Any]).asInstanceOf[TypeScriptReporterConfiguration]
-  @scala.inline
-  def createTypeScriptReporterConfiguration(
+  inline def createTypeScriptReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     options: TypeScriptReporterOptions
   ): TypeScriptReporterConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporterConfiguration")(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TypeScriptReporterConfiguration]
@@ -53,8 +51,7 @@ object typeScriptReporterConfigurationMod {
   }
   object TypeScriptReporterConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       build: Boolean,
       configFile: String,
       configOverwrite: TypeScriptConfigurationOverwrite,
@@ -71,41 +68,29 @@ object typeScriptReporterConfigurationMod {
       __obj.asInstanceOf[TypeScriptReporterConfiguration]
     }
     
-    @scala.inline
-    implicit class TypeScriptReporterConfigurationMutableBuilder[Self <: TypeScriptReporterConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: TypeScriptReporterConfiguration](x: Self) {
       
-      @scala.inline
-      def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+      inline def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigOverwrite(value: TypeScriptConfigurationOverwrite): Self = StObject.set(x, "configOverwrite", value.asInstanceOf[js.Any])
+      inline def setConfigOverwrite(value: TypeScriptConfigurationOverwrite): Self = StObject.set(x, "configOverwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagnosticOptions(value: TypeScriptDiagnosticsOptions): Self = StObject.set(x, "diagnosticOptions", value.asInstanceOf[js.Any])
+      inline def setDiagnosticOptions(value: TypeScriptDiagnosticsOptions): Self = StObject.set(x, "diagnosticOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensions(value: Vue): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: Vue): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
+      inline def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: readonly | `write-tsbuildinfo` | `write-references`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: readonly | `write-tsbuildinfo` | `write-references`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypescriptPath(value: String): Self = StObject.set(x, "typescriptPath", value.asInstanceOf[js.Any])
+      inline def setTypescriptPath(value: String): Self = StObject.set(x, "typescriptPath", value.asInstanceOf[js.Any])
     }
   }
 }

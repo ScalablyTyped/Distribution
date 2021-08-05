@@ -25,31 +25,23 @@ trait UpdateSmsTemplateRequest extends StObject {
 }
 object UpdateSmsTemplateRequest {
   
-  @scala.inline
-  def apply(SMSTemplateRequest: SMSTemplateRequest, TemplateName: string): UpdateSmsTemplateRequest = {
+  inline def apply(SMSTemplateRequest: SMSTemplateRequest, TemplateName: string): UpdateSmsTemplateRequest = {
     val __obj = js.Dynamic.literal(SMSTemplateRequest = SMSTemplateRequest.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSmsTemplateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSmsTemplateRequestMutableBuilder[Self <: UpdateSmsTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSmsTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setCreateNewVersion(value: boolean): Self = StObject.set(x, "CreateNewVersion", value.asInstanceOf[js.Any])
+    inline def setCreateNewVersion(value: boolean): Self = StObject.set(x, "CreateNewVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateNewVersionUndefined: Self = StObject.set(x, "CreateNewVersion", js.undefined)
+    inline def setCreateNewVersionUndefined: Self = StObject.set(x, "CreateNewVersion", js.undefined)
     
-    @scala.inline
-    def setSMSTemplateRequest(value: SMSTemplateRequest): Self = StObject.set(x, "SMSTemplateRequest", value.asInstanceOf[js.Any])
+    inline def setSMSTemplateRequest(value: SMSTemplateRequest): Self = StObject.set(x, "SMSTemplateRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: string): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

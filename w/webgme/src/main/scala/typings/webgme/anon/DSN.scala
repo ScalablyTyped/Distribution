@@ -14,25 +14,19 @@ trait DSN extends StObject {
 }
 object DSN {
   
-  @scala.inline
-  def apply(DSN: String, enable: Boolean): DSN = {
+  inline def apply(DSN: String, enable: Boolean): DSN = {
     val __obj = js.Dynamic.literal(DSN = DSN.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any], ravenOptions = null)
     __obj.asInstanceOf[DSN]
   }
   
-  @scala.inline
-  implicit class DSNMutableBuilder[Self <: DSN] (val x: Self) extends AnyVal {
+  extension [Self <: DSN](x: Self) {
     
-    @scala.inline
-    def setDSN(value: String): Self = StObject.set(x, "DSN", value.asInstanceOf[js.Any])
+    inline def setDSN(value: String): Self = StObject.set(x, "DSN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRavenOptions(value: String): Self = StObject.set(x, "ravenOptions", value.asInstanceOf[js.Any])
+    inline def setRavenOptions(value: String): Self = StObject.set(x, "ravenOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRavenOptionsNull: Self = StObject.set(x, "ravenOptions", null)
+    inline def setRavenOptionsNull: Self = StObject.set(x, "ravenOptions", null)
   }
 }

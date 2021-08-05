@@ -23,34 +23,25 @@ trait RowSelectionChangedEventUIParam extends StObject {
 }
 object RowSelectionChangedEventUIParam {
   
-  @scala.inline
-  def apply(): RowSelectionChangedEventUIParam = {
+  inline def apply(): RowSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowSelectionChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class RowSelectionChangedEventUIParamMutableBuilder[Self <: RowSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: RowSelectionChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setSelectedRows(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+    inline def setSelectedRows(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
+    inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
-    @scala.inline
-    def setSelectedRowsVarargs(value: js.Any*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
+    inline def setSelectedRowsVarargs(value: js.Any*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
   }
 }

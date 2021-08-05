@@ -14,25 +14,19 @@ trait DriverOptions extends StObject {
 }
 object DriverOptions {
   
-  @scala.inline
-  def apply(): DriverOptions = {
+  inline def apply(): DriverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DriverOptions]
   }
   
-  @scala.inline
-  implicit class DriverOptionsMutableBuilder[Self <: DriverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DriverOptions](x: Self) {
     
-    @scala.inline
-    def setConnection(value: Client | ClientOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Client | ClientOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
   }
 }

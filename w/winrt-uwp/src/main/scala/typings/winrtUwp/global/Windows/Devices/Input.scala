@@ -71,8 +71,7 @@ object Input {
       * @return The mouse device.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.Devices.Input.MouseDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Devices.Input.MouseDevice]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.Devices.Input.MouseDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Devices.Input.MouseDevice]
   }
   
   /** Contains event data for the MouseMoved event. */
@@ -134,16 +133,14 @@ object Input {
       * @return The PointerDevice object that represents the associated pointer device.
       */
     /* static member */
-    @scala.inline
-    def getPointerDevice(pointerId: Double): typings.winrtUwp.Windows.Devices.Input.PointerDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevice")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Input.PointerDevice]
+    inline def getPointerDevice(pointerId: Double): typings.winrtUwp.Windows.Devices.Input.PointerDevice = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevice")(pointerId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Devices.Input.PointerDevice]
     
     /**
       * Gets information about the pointer devices attached to the system.
       * @return The collection of PointerDevice objects that represent the pointer devices attached to the system.
       */
     /* static member */
-    @scala.inline
-    def getPointerDevices(): IVectorView[typings.winrtUwp.Windows.Devices.Input.PointerDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevices")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Devices.Input.PointerDevice]]
+    inline def getPointerDevices(): IVectorView[typings.winrtUwp.Windows.Devices.Input.PointerDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerDevices")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Devices.Input.PointerDevice]]
   }
   
   /** Enumerates pointer device types. */

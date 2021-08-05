@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathScrSubSup")
 @js.native
-class OMathScrSubSup protected ()
+/* private */ class OMathScrSubSup ()
   extends StObject
      with typings.activexWord.Word.OMathScrSubSup {
   
@@ -40,7 +40,7 @@ class OMathScrSubSup protected ()
   /* CompleteClass */
   override def ToScrPre(): typings.activexWord.Word.OMathFunction = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathScrSubSup_typekey")
   var WordDotOMathScrSubSup_typekey: typings.activexWord.Word.OMathScrSubSup = js.native
 }

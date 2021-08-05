@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ConnectorFormat")
 @js.native
-class ConnectorFormat protected ()
+/* private */ class ConnectorFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ConnectorFormat {
   
@@ -51,7 +51,7 @@ class ConnectorFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ConnectorFormat_typekey")
   var PowerPointDotConnectorFormat_typekey: typings.activexPowerpoint.PowerPoint.ConnectorFormat = js.native
   

@@ -18,28 +18,21 @@ trait DescribeComputeEnvironmentsResponse extends StObject {
 }
 object DescribeComputeEnvironmentsResponse {
   
-  @scala.inline
-  def apply(): DescribeComputeEnvironmentsResponse = {
+  inline def apply(): DescribeComputeEnvironmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeComputeEnvironmentsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeComputeEnvironmentsResponseMutableBuilder[Self <: DescribeComputeEnvironmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComputeEnvironmentsResponse](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironments(value: ComputeEnvironmentDetailList): Self = StObject.set(x, "computeEnvironments", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironments(value: ComputeEnvironmentDetailList): Self = StObject.set(x, "computeEnvironments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeEnvironmentsUndefined: Self = StObject.set(x, "computeEnvironments", js.undefined)
+    inline def setComputeEnvironmentsUndefined: Self = StObject.set(x, "computeEnvironments", js.undefined)
     
-    @scala.inline
-    def setComputeEnvironmentsVarargs(value: ComputeEnvironmentDetail*): Self = StObject.set(x, "computeEnvironments", js.Array(value :_*))
+    inline def setComputeEnvironmentsVarargs(value: ComputeEnvironmentDetail*): Self = StObject.set(x, "computeEnvironments", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

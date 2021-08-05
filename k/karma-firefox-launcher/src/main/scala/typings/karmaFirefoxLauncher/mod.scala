@@ -22,29 +22,22 @@ object mod {
   }
   object CustomLauncher {
     
-    @scala.inline
-    def apply(): CustomLauncher = {
+    inline def apply(): CustomLauncher = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomLauncher]
     }
     
-    @scala.inline
-    implicit class CustomLauncherMutableBuilder[Self <: CustomLauncher] (val x: Self) extends AnyVal {
+    extension [Self <: CustomLauncher](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefs(value: StringDictionary[js.Any]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+      inline def setPrefs(value: StringDictionary[js.Any]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
+      inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     }
   }
 }

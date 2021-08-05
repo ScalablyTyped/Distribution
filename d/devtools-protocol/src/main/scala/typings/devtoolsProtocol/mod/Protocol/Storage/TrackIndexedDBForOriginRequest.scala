@@ -13,16 +13,13 @@ trait TrackIndexedDBForOriginRequest extends StObject {
 }
 object TrackIndexedDBForOriginRequest {
   
-  @scala.inline
-  def apply(origin: String): TrackIndexedDBForOriginRequest = {
+  inline def apply(origin: String): TrackIndexedDBForOriginRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackIndexedDBForOriginRequest]
   }
   
-  @scala.inline
-  implicit class TrackIndexedDBForOriginRequestMutableBuilder[Self <: TrackIndexedDBForOriginRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TrackIndexedDBForOriginRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

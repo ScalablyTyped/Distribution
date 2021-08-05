@@ -18,20 +18,16 @@ object cloudfrontRequestMod {
   }
   object CloudFrontRequestEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[Cf]): CloudFrontRequestEvent = {
+    inline def apply(Records: js.Array[Cf]): CloudFrontRequestEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudFrontRequestEvent]
     }
     
-    @scala.inline
-    implicit class CloudFrontRequestEventMutableBuilder[Self <: CloudFrontRequestEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudFrontRequestEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[Cf]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[Cf]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: Cf*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Cf*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -48,14 +44,12 @@ object cloudfrontRequestMod {
   trait _CloudFrontRequestResult extends StObject
   object _CloudFrontRequestResult {
     
-    @scala.inline
-    def CloudFrontRequest(clientIp: String, headers: CloudFrontHeaders, method: String, querystring: String, uri: String): typings.awsLambda.cloudfrontMod.CloudFrontRequest = {
+    inline def CloudFrontRequest(clientIp: String, headers: CloudFrontHeaders, method: String, querystring: String, uri: String): typings.awsLambda.cloudfrontMod.CloudFrontRequest = {
       val __obj = js.Dynamic.literal(clientIp = clientIp.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], querystring = querystring.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsLambda.cloudfrontMod.CloudFrontRequest]
     }
     
-    @scala.inline
-    def CloudFrontResultResponse(status: String): typings.awsLambda.cloudfrontMod.CloudFrontResultResponse = {
+    inline def CloudFrontResultResponse(status: String): typings.awsLambda.cloudfrontMod.CloudFrontResultResponse = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsLambda.cloudfrontMod.CloudFrontResultResponse]
     }

@@ -10,16 +10,13 @@ trait Plain extends StObject {
 }
 object Plain {
   
-  @scala.inline
-  def apply(plain: String): Plain = {
+  inline def apply(plain: String): Plain = {
     val __obj = js.Dynamic.literal(plain = plain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plain]
   }
   
-  @scala.inline
-  implicit class PlainMutableBuilder[Self <: Plain] (val x: Self) extends AnyVal {
+  extension [Self <: Plain](x: Self) {
     
-    @scala.inline
-    def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+    inline def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
   }
 }

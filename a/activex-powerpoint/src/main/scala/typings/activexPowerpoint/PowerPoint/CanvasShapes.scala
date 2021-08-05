@@ -93,7 +93,7 @@ trait CanvasShapes extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.CanvasShapes_typekey")
+  /* private */ @JSName("PowerPoint.CanvasShapes_typekey")
   var PowerPointDotCanvasShapes_typekey: CanvasShapes = js.native
   
   def Range(Index: js.Any): ShapeRange = js.native

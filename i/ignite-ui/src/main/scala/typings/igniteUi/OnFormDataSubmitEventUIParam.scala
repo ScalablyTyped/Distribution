@@ -33,43 +33,31 @@ trait OnFormDataSubmitEventUIParam extends StObject {
 }
 object OnFormDataSubmitEventUIParam {
   
-  @scala.inline
-  def apply(): OnFormDataSubmitEventUIParam = {
+  inline def apply(): OnFormDataSubmitEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnFormDataSubmitEventUIParam]
   }
   
-  @scala.inline
-  implicit class OnFormDataSubmitEventUIParamMutableBuilder[Self <: OnFormDataSubmitEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: OnFormDataSubmitEventUIParam](x: Self) {
     
-    @scala.inline
-    def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setFileInfo(value: js.Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
+    inline def setFileInfo(value: js.Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInfoUndefined: Self = StObject.set(x, "fileInfo", js.undefined)
+    inline def setFileInfoUndefined: Self = StObject.set(x, "fileInfo", js.undefined)
     
-    @scala.inline
-    def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

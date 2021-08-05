@@ -21,22 +21,17 @@ trait CustomPreview extends StObject {
 }
 object CustomPreview {
   
-  @scala.inline
-  def apply(header: String): CustomPreview = {
+  inline def apply(header: String): CustomPreview = {
     val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPreview]
   }
   
-  @scala.inline
-  implicit class CustomPreviewMutableBuilder[Self <: CustomPreview] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPreview](x: Self) {
     
-    @scala.inline
-    def setBodyGetterId(value: RemoteObjectId): Self = StObject.set(x, "bodyGetterId", value.asInstanceOf[js.Any])
+    inline def setBodyGetterId(value: RemoteObjectId): Self = StObject.set(x, "bodyGetterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyGetterIdUndefined: Self = StObject.set(x, "bodyGetterId", js.undefined)
+    inline def setBodyGetterIdUndefined: Self = StObject.set(x, "bodyGetterId", js.undefined)
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }
 }

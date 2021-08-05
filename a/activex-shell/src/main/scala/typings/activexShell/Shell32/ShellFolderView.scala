@@ -47,7 +47,7 @@ trait ShellFolderView extends StObject {
   /** The collection of Selected Items in folder */
   def SelectedItems(): FolderItems3 = js.native
   
-  @JSName("Shell32.ShellFolderView_typekey")
+  /* private */ @JSName("Shell32.ShellFolderView_typekey")
   var Shell32DotShellFolderView_typekey: ShellFolderView = js.native
   
   /** Get Sorting Columns */

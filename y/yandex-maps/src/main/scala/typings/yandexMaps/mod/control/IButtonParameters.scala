@@ -17,31 +17,23 @@ trait IButtonParameters extends StObject {
 }
 object IButtonParameters {
   
-  @scala.inline
-  def apply(): IButtonParameters = {
+  inline def apply(): IButtonParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IButtonParameters]
   }
   
-  @scala.inline
-  implicit class IButtonParametersMutableBuilder[Self <: IButtonParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IButtonParameters](x: Self) {
     
-    @scala.inline
-    def setData(value: Content): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Content): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOptions(value: IBaseButtonParametersOpti): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IBaseButtonParametersOpti): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setState(value: Enabled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Enabled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -70,21 +70,16 @@ object efsLocationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EfsLocationState): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EfsLocationState, opts: CustomResourceOptions): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
+    inline def get(name: String, id: Input[ID]): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
+    inline def get(name: String, id: Input[ID], state: EfsLocationState): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
+    inline def get(name: String, id: Input[ID], state: EfsLocationState, opts: CustomResourceOptions): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
     
     /**
       * Returns true if the given object is an instance of EfsLocation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean]
   }
   
   trait EfsLocationArgs extends StObject {
@@ -111,26 +106,19 @@ object efsLocationMod {
   }
   object EfsLocationArgs {
     
-    @scala.inline
-    implicit class EfsLocationArgsMutableBuilder[Self <: EfsLocationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EfsLocationArgs](x: Self) {
       
-      @scala.inline
-      def setEc2Config(value: Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config]): Self = StObject.set(x, "ec2Config", value.asInstanceOf[js.Any])
+      inline def setEc2Config(value: Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config]): Self = StObject.set(x, "ec2Config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEfsFileSystemArn(value: Input[ARN]): Self = StObject.set(x, "efsFileSystemArn", value.asInstanceOf[js.Any])
+      inline def setEfsFileSystemArn(value: Input[ARN]): Self = StObject.set(x, "efsFileSystemArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
+      inline def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -165,50 +153,36 @@ object efsLocationMod {
   }
   object EfsLocationState {
     
-    @scala.inline
-    def apply(): EfsLocationState = {
+    inline def apply(): EfsLocationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EfsLocationState]
     }
     
-    @scala.inline
-    implicit class EfsLocationStateMutableBuilder[Self <: EfsLocationState] (val x: Self) extends AnyVal {
+    extension [Self <: EfsLocationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEc2Config(value: Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config]): Self = StObject.set(x, "ec2Config", value.asInstanceOf[js.Any])
+      inline def setEc2Config(value: Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config]): Self = StObject.set(x, "ec2Config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2ConfigUndefined: Self = StObject.set(x, "ec2Config", js.undefined)
+      inline def setEc2ConfigUndefined: Self = StObject.set(x, "ec2Config", js.undefined)
       
-      @scala.inline
-      def setEfsFileSystemArn(value: Input[ARN]): Self = StObject.set(x, "efsFileSystemArn", value.asInstanceOf[js.Any])
+      inline def setEfsFileSystemArn(value: Input[ARN]): Self = StObject.set(x, "efsFileSystemArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEfsFileSystemArnUndefined: Self = StObject.set(x, "efsFileSystemArn", js.undefined)
+      inline def setEfsFileSystemArnUndefined: Self = StObject.set(x, "efsFileSystemArn", js.undefined)
       
-      @scala.inline
-      def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
+      inline def setSubdirectory(value: Input[String]): Self = StObject.set(x, "subdirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
+      inline def setSubdirectoryUndefined: Self = StObject.set(x, "subdirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
 }

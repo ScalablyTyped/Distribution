@@ -13,19 +13,15 @@ trait F4vSettings extends StObject {
 }
 object F4vSettings {
   
-  @scala.inline
-  def apply(): F4vSettings = {
+  inline def apply(): F4vSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[F4vSettings]
   }
   
-  @scala.inline
-  implicit class F4vSettingsMutableBuilder[Self <: F4vSettings] (val x: Self) extends AnyVal {
+  extension [Self <: F4vSettings](x: Self) {
     
-    @scala.inline
-    def setMoovPlacement(value: F4vMoovPlacement): Self = StObject.set(x, "MoovPlacement", value.asInstanceOf[js.Any])
+    inline def setMoovPlacement(value: F4vMoovPlacement): Self = StObject.set(x, "MoovPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoovPlacementUndefined: Self = StObject.set(x, "MoovPlacement", js.undefined)
+    inline def setMoovPlacementUndefined: Self = StObject.set(x, "MoovPlacement", js.undefined)
   }
 }

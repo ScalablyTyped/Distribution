@@ -13,16 +13,13 @@ trait DeleteTapePoolInput extends StObject {
 }
 object DeleteTapePoolInput {
   
-  @scala.inline
-  def apply(PoolARN: PoolARN): DeleteTapePoolInput = {
+  inline def apply(PoolARN: PoolARN): DeleteTapePoolInput = {
     val __obj = js.Dynamic.literal(PoolARN = PoolARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTapePoolInput]
   }
   
-  @scala.inline
-  implicit class DeleteTapePoolInputMutableBuilder[Self <: DeleteTapePoolInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTapePoolInput](x: Self) {
     
-    @scala.inline
-    def setPoolARN(value: PoolARN): Self = StObject.set(x, "PoolARN", value.asInstanceOf[js.Any])
+    inline def setPoolARN(value: PoolARN): Self = StObject.set(x, "PoolARN", value.asInstanceOf[js.Any])
   }
 }

@@ -20,34 +20,25 @@ trait ListTapesInput extends StObject {
 }
 object ListTapesInput {
   
-  @scala.inline
-  def apply(): ListTapesInput = {
+  inline def apply(): ListTapesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTapesInput]
   }
   
-  @scala.inline
-  implicit class ListTapesInputMutableBuilder[Self <: ListTapesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTapesInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTapeARNs(value: TapeARNs): Self = StObject.set(x, "TapeARNs", value.asInstanceOf[js.Any])
+    inline def setTapeARNs(value: TapeARNs): Self = StObject.set(x, "TapeARNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeARNsUndefined: Self = StObject.set(x, "TapeARNs", js.undefined)
+    inline def setTapeARNsUndefined: Self = StObject.set(x, "TapeARNs", js.undefined)
     
-    @scala.inline
-    def setTapeARNsVarargs(value: TapeARN*): Self = StObject.set(x, "TapeARNs", js.Array(value :_*))
+    inline def setTapeARNsVarargs(value: TapeARN*): Self = StObject.set(x, "TapeARNs", js.Array(value :_*))
   }
 }

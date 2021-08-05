@@ -13,16 +13,15 @@ trait LanguageServiceShim
   
   def forwardJSONCall(actionDescription: String, action: js.Function0[js.Any]): String
   
-  var host: js.Any
+  /* private */ var host: js.Any
   
-  var logger: js.Any
+  /* private */ var logger: js.Any
   
   /* private */ def realizeDiagnosticWithFileName(diagnostic: js.Any): js.Any
 }
 object LanguageServiceShim {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _navigateToItemsToString: js.Any => js.Any,
     cleanupSemanticCache: () => Unit,
     dispose: js.Any => Unit,
@@ -61,22 +60,16 @@ object LanguageServiceShim {
     __obj.asInstanceOf[LanguageServiceShim]
   }
   
-  @scala.inline
-  implicit class LanguageServiceShimMutableBuilder[Self <: LanguageServiceShim] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageServiceShim](x: Self) {
     
-    @scala.inline
-    def setForwardJSONCall(value: (String, js.Function0[js.Any]) => String): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
+    inline def setForwardJSONCall(value: (String, js.Function0[js.Any]) => String): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealizeDiagnosticWithFileName(value: js.Any => js.Any): Self = StObject.set(x, "realizeDiagnosticWithFileName", js.Any.fromFunction1(value))
+    inline def setRealizeDiagnosticWithFileName(value: js.Any => js.Any): Self = StObject.set(x, "realizeDiagnosticWithFileName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_navigateToItemsToString(value: js.Any => js.Any): Self = StObject.set(x, "_navigateToItemsToString", js.Any.fromFunction1(value))
+    inline def set_navigateToItemsToString(value: js.Any => js.Any): Self = StObject.set(x, "_navigateToItemsToString", js.Any.fromFunction1(value))
   }
 }

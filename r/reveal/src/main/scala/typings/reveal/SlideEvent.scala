@@ -18,31 +18,23 @@ trait SlideEvent extends StObject {
 }
 object SlideEvent {
   
-  @scala.inline
-  def apply(currentSlide: Element, indexh: Double): SlideEvent = {
+  inline def apply(currentSlide: Element, indexh: Double): SlideEvent = {
     val __obj = js.Dynamic.literal(currentSlide = currentSlide.asInstanceOf[js.Any], indexh = indexh.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideEvent]
   }
   
-  @scala.inline
-  implicit class SlideEventMutableBuilder[Self <: SlideEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SlideEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentSlide(value: Element): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
+    inline def setCurrentSlide(value: Element): Self = StObject.set(x, "currentSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexh(value: Double): Self = StObject.set(x, "indexh", value.asInstanceOf[js.Any])
+    inline def setIndexh(value: Double): Self = StObject.set(x, "indexh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexv(value: Double): Self = StObject.set(x, "indexv", value.asInstanceOf[js.Any])
+    inline def setIndexv(value: Double): Self = StObject.set(x, "indexv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexvUndefined: Self = StObject.set(x, "indexv", js.undefined)
+    inline def setIndexvUndefined: Self = StObject.set(x, "indexv", js.undefined)
     
-    @scala.inline
-    def setPreviousSlide(value: Element): Self = StObject.set(x, "previousSlide", value.asInstanceOf[js.Any])
+    inline def setPreviousSlide(value: Element): Self = StObject.set(x, "previousSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSlideUndefined: Self = StObject.set(x, "previousSlide", js.undefined)
+    inline def setPreviousSlideUndefined: Self = StObject.set(x, "previousSlide", js.undefined)
   }
 }

@@ -43,8 +43,7 @@ object global {
         * @param name The color name.
         */
       /* static member */
-      @scala.inline
-      def getColor(name: String): ColorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(name.asInstanceOf[js.Any]).asInstanceOf[ColorFunction]
+      inline def getColor(name: String): ColorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(name.asInstanceOf[js.Any]).asInstanceOf[ColorFunction]
       
       /**
         * Registers a color as known color.
@@ -53,8 +52,7 @@ object global {
         *        the desired color.
         */
       /* static member */
-      @scala.inline
-      def registerColor(name: String, predicate: ColorFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerColor")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def registerColor(name: String, predicate: ColorFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerColor")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /**
@@ -108,10 +106,8 @@ object global {
       def this(tracker: typings.tracking.tracking.Tracker) = this()
     }
     
-    @scala.inline
-    def track(element: String, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
-    @scala.inline
-    def track(element: String, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
+    inline def track(element: String, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
+    inline def track(element: String, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
     /**
       * Tracks a canvas, image or video element based on the specified `tracker`
       * instance. This method extract the pixel information of the input element
@@ -123,9 +119,7 @@ object global {
       * @param tracker Tracker instance used to track the element.
       * @param options Optional tracker configuration.
       */
-    @scala.inline
-    def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
-    @scala.inline
-    def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
+    inline def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
+    inline def track(element: HTMLElement, tracker: typings.tracking.tracking.Tracker, options: Audio): typings.tracking.tracking.TrackerTask = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(element.asInstanceOf[js.Any], tracker.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.tracking.tracking.TrackerTask]
   }
 }

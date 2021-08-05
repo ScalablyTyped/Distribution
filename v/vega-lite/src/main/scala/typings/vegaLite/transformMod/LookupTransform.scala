@@ -41,34 +41,25 @@ trait LookupTransform
 }
 object LookupTransform {
   
-  @scala.inline
-  def apply(from: LookupData | LookupSelection, lookup: String): LookupTransform = {
+  inline def apply(from: LookupData | LookupSelection, lookup: String): LookupTransform = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], lookup = lookup.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupTransform]
   }
   
-  @scala.inline
-  implicit class LookupTransformMutableBuilder[Self <: LookupTransform] (val x: Self) extends AnyVal {
+  extension [Self <: LookupTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: FieldName | js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: FieldName | js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setFrom(value: LookupData | LookupSelection): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: LookupData | LookupSelection): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookup(value: String): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+    inline def setLookup(value: String): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
   }
 }

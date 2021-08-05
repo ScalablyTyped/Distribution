@@ -17,34 +17,25 @@ trait PartialShallowOptions extends StObject {
 }
 object PartialShallowOptions {
   
-  @scala.inline
-  def apply(): PartialShallowOptions = {
+  inline def apply(): PartialShallowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialShallowOptions]
   }
   
-  @scala.inline
-  implicit class PartialShallowOptionsMutableBuilder[Self <: PartialShallowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialShallowOptions](x: Self) {
     
-    @scala.inline
-    def setDive(value: Boolean): Self = StObject.set(x, "dive", value.asInstanceOf[js.Any])
+    inline def setDive(value: Boolean): Self = StObject.set(x, "dive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiveUndefined: Self = StObject.set(x, "dive", js.undefined)
+    inline def setDiveUndefined: Self = StObject.set(x, "dive", js.undefined)
     
-    @scala.inline
-    def setShallow(value: Fn2): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+    inline def setShallow(value: Fn2): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
+    inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
     
-    @scala.inline
-    def setUntilSelector(value: EnzymeSelector): Self = StObject.set(x, "untilSelector", value.asInstanceOf[js.Any])
+    inline def setUntilSelector(value: EnzymeSelector): Self = StObject.set(x, "untilSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUntilSelectorFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = StObject.set(x, "untilSelector", js.Any.fromFunction2(value))
+    inline def setUntilSelectorFunction2(value: (js.Any, /* context */ js.UndefOr[js.Any]) => Element | Null): Self = StObject.set(x, "untilSelector", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUntilSelectorUndefined: Self = StObject.set(x, "untilSelector", js.undefined)
+    inline def setUntilSelectorUndefined: Self = StObject.set(x, "untilSelector", js.undefined)
   }
 }

@@ -20,41 +20,41 @@ object focustrackerMod {
     extends StObject
        with IDisposable {
     
-    var _activeChanged: js.Any = js.native
+    /* private */ var _activeChanged: js.Any = js.native
     
-    var _activeWidget: js.Any = js.native
+    /* private */ var _activeWidget: js.Any = js.native
     
-    var _counter: js.Any = js.native
+    /* private */ var _counter: js.Any = js.native
     
-    var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: js.Any = js.native
     
-    var _currentWidget: js.Any = js.native
+    /* private */ var _currentWidget: js.Any = js.native
     
     /**
       * Handle the `'blur'` event for a tracked widget.
       */
-    var _evtBlur: js.Any = js.native
+    /* private */ var _evtBlur: js.Any = js.native
     
     /**
       * Handle the `'focus'` event for a tracked widget.
       */
-    var _evtFocus: js.Any = js.native
+    /* private */ var _evtFocus: js.Any = js.native
     
-    var _nodes: js.Any = js.native
+    /* private */ var _nodes: js.Any = js.native
     
-    var _numbers: js.Any = js.native
+    /* private */ var _numbers: js.Any = js.native
     
     /**
       * Handle the `disposed` signal for a tracked widget.
       */
-    var _onWidgetDisposed: js.Any = js.native
+    /* private */ var _onWidgetDisposed: js.Any = js.native
     
     /**
       * Set the current and active widgets for the tracker.
       */
-    var _setWidgets: js.Any = js.native
+    /* private */ var _setWidgets: js.Any = js.native
     
-    var _widgets: js.Any = js.native
+    /* private */ var _widgets: js.Any = js.native
     
     /**
       * A signal emitted when the active widget has changed.
@@ -211,26 +211,20 @@ object focustrackerMod {
     }
     object IChangedArgs {
       
-      @scala.inline
-      def apply[T /* <: Widget */](): IChangedArgs[T] = {
+      inline def apply[T /* <: Widget */](): IChangedArgs[T] = {
         val __obj = js.Dynamic.literal(newValue = null, oldValue = null)
         __obj.asInstanceOf[IChangedArgs[T]]
       }
       
-      @scala.inline
-      implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs[?], T /* <: Widget */] (val x: Self & IChangedArgs[T]) extends AnyVal {
+      extension [Self <: IChangedArgs[?], T /* <: Widget */](x: Self & IChangedArgs[T]) {
         
-        @scala.inline
-        def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+        inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNewValueNull: Self = StObject.set(x, "newValue", null)
+        inline def setNewValueNull: Self = StObject.set(x, "newValue", null)
         
-        @scala.inline
-        def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+        inline def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldValueNull: Self = StObject.set(x, "oldValue", null)
+        inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
       }
     }
   }

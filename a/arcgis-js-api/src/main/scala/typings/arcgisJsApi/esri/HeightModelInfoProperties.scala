@@ -49,33 +49,25 @@ trait HeightModelInfoProperties extends StObject {
 }
 object HeightModelInfoProperties {
   
-  @scala.inline
-  def apply(): HeightModelInfoProperties = {
+  inline def apply(): HeightModelInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeightModelInfoProperties]
   }
   
-  @scala.inline
-  implicit class HeightModelInfoPropertiesMutableBuilder[Self <: HeightModelInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HeightModelInfoProperties](x: Self) {
     
-    @scala.inline
-    def setHeightModel(value: `gravity-related-height` | ellipsoidal): Self = StObject.set(x, "heightModel", value.asInstanceOf[js.Any])
+    inline def setHeightModel(value: `gravity-related-height` | ellipsoidal): Self = StObject.set(x, "heightModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightModelUndefined: Self = StObject.set(x, "heightModel", js.undefined)
+    inline def setHeightModelUndefined: Self = StObject.set(x, "heightModel", js.undefined)
     
-    @scala.inline
-    def setHeightUnit(
+    inline def setHeightUnit(
       value: meters_ | feet_ | `us-feet` | `clarke-feet` | `clarke-yards` | `clarke-links` | `sears-yards` | `sears-feet` | `sears-chains` | `benoit-1895-b-chains` | `indian-yards` | `indian-1937-yards` | `gold-coast-feet` | `sears-1922-truncated-chains` | `50-kilometers` | `150-kilometers`
     ): Self = StObject.set(x, "heightUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUnitUndefined: Self = StObject.set(x, "heightUnit", js.undefined)
+    inline def setHeightUnitUndefined: Self = StObject.set(x, "heightUnit", js.undefined)
     
-    @scala.inline
-    def setVertCRS(value: String): Self = StObject.set(x, "vertCRS", value.asInstanceOf[js.Any])
+    inline def setVertCRS(value: String): Self = StObject.set(x, "vertCRS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertCRSUndefined: Self = StObject.set(x, "vertCRS", js.undefined)
+    inline def setVertCRSUndefined: Self = StObject.set(x, "vertCRS", js.undefined)
   }
 }

@@ -104,103 +104,71 @@ trait OptionsBottomTabs extends StObject {
 }
 object OptionsBottomTabs {
   
-  @scala.inline
-  def apply(): OptionsBottomTabs = {
+  inline def apply(): OptionsBottomTabs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsBottomTabs]
   }
   
-  @scala.inline
-  implicit class OptionsBottomTabsMutableBuilder[Self <: OptionsBottomTabs] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsBottomTabs](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBarStyle(value: default | black): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: default | black): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    @scala.inline
-    def setCurrentTabId(value: String): Self = StObject.set(x, "currentTabId", value.asInstanceOf[js.Any])
+    inline def setCurrentTabId(value: String): Self = StObject.set(x, "currentTabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTabIdUndefined: Self = StObject.set(x, "currentTabId", js.undefined)
+    inline def setCurrentTabIdUndefined: Self = StObject.set(x, "currentTabId", js.undefined)
     
-    @scala.inline
-    def setCurrentTabIndex(value: Double): Self = StObject.set(x, "currentTabIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentTabIndex(value: Double): Self = StObject.set(x, "currentTabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTabIndexUndefined: Self = StObject.set(x, "currentTabIndex", js.undefined)
+    inline def setCurrentTabIndexUndefined: Self = StObject.set(x, "currentTabIndex", js.undefined)
     
-    @scala.inline
-    def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
+    inline def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
+    inline def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
     
-    @scala.inline
-    def setElevation(value: AndroidDensityNumber): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setElevation(value: AndroidDensityNumber): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
+    inline def setElevationUndefined: Self = StObject.set(x, "elevation", js.undefined)
     
-    @scala.inline
-    def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
+    inline def setHideOnScroll(value: Boolean): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
+    inline def setHideOnScrollUndefined: Self = StObject.set(x, "hideOnScroll", js.undefined)
     
-    @scala.inline
-    def setHideShadow(value: Boolean): Self = StObject.set(x, "hideShadow", value.asInstanceOf[js.Any])
+    inline def setHideShadow(value: Boolean): Self = StObject.set(x, "hideShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideShadowUndefined: Self = StObject.set(x, "hideShadow", js.undefined)
+    inline def setHideShadowUndefined: Self = StObject.set(x, "hideShadow", js.undefined)
     
-    @scala.inline
-    def setPreferLargeIcons(value: Boolean): Self = StObject.set(x, "preferLargeIcons", value.asInstanceOf[js.Any])
+    inline def setPreferLargeIcons(value: Boolean): Self = StObject.set(x, "preferLargeIcons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferLargeIconsUndefined: Self = StObject.set(x, "preferLargeIcons", js.undefined)
+    inline def setPreferLargeIconsUndefined: Self = StObject.set(x, "preferLargeIcons", js.undefined)
     
-    @scala.inline
-    def setTabsAttachMode(value: together | afterInitialTab | onSwitchToTab): Self = StObject.set(x, "tabsAttachMode", value.asInstanceOf[js.Any])
+    inline def setTabsAttachMode(value: together | afterInitialTab | onSwitchToTab): Self = StObject.set(x, "tabsAttachMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsAttachModeUndefined: Self = StObject.set(x, "tabsAttachMode", js.undefined)
+    inline def setTabsAttachModeUndefined: Self = StObject.set(x, "tabsAttachMode", js.undefined)
     
-    @scala.inline
-    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
-    @scala.inline
-    def setTitleDisplayMode(value: alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce): Self = StObject.set(x, "titleDisplayMode", value.asInstanceOf[js.Any])
+    inline def setTitleDisplayMode(value: alwaysShow | showWhenActive | alwaysHide | showWhenActiveForce): Self = StObject.set(x, "titleDisplayMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleDisplayModeUndefined: Self = StObject.set(x, "titleDisplayMode", js.undefined)
+    inline def setTitleDisplayModeUndefined: Self = StObject.set(x, "titleDisplayMode", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

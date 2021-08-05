@@ -14,13 +14,10 @@ object columnFilterMod {
   trait ColumnFilter extends StObject
   object ColumnFilter {
     
-    @scala.inline
-    def default: typings.tablesorter.tablesorterStrings.default = "default".asInstanceOf[typings.tablesorter.tablesorterStrings.default]
+    inline def default: typings.tablesorter.tablesorterStrings.default = "default".asInstanceOf[typings.tablesorter.tablesorterStrings.default]
     
-    @scala.inline
-    def `false`: typings.tablesorter.tablesorterStrings.`false` = "false".asInstanceOf[typings.tablesorter.tablesorterStrings.`false`]
+    inline def `false`: typings.tablesorter.tablesorterStrings.`false` = "false".asInstanceOf[typings.tablesorter.tablesorterStrings.`false`]
     
-    @scala.inline
-    def parsed: typings.tablesorter.tablesorterStrings.parsed = "parsed".asInstanceOf[typings.tablesorter.tablesorterStrings.parsed]
+    inline def parsed: typings.tablesorter.tablesorterStrings.parsed = "parsed".asInstanceOf[typings.tablesorter.tablesorterStrings.parsed]
   }
 }

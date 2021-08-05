@@ -19,7 +19,7 @@ object ngComponentTemplateMod {
     
     var typeChecker: TypeChecker = js.native
     
-    var visitClassDeclaration: js.Any = js.native
+    /* private */ var visitClassDeclaration: js.Any = js.native
     
     def visitNode(node: Node): Unit = js.native
   }
@@ -50,8 +50,7 @@ object ngComponentTemplateMod {
   }
   object ResolvedTemplate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: ClassDeclaration,
       content: String,
       filePath: String,
@@ -64,26 +63,19 @@ object ngComponentTemplateMod {
       __obj.asInstanceOf[ResolvedTemplate]
     }
     
-    @scala.inline
-    implicit class ResolvedTemplateMutableBuilder[Self <: ResolvedTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedTemplate](x: Self) {
       
-      @scala.inline
-      def setContainer(value: ClassDeclaration): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ClassDeclaration): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCharacterAndLineOfPosition(value: Double => Character): Self = StObject.set(x, "getCharacterAndLineOfPosition", js.Any.fromFunction1(value))
+      inline def setGetCharacterAndLineOfPosition(value: Double => Character): Self = StObject.set(x, "getCharacterAndLineOfPosition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -72,8 +72,7 @@ object mod {
          with CodecOptions
     object BatchOptions {
       
-      @scala.inline
-      def apply(): BatchOptions = {
+      inline def apply(): BatchOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BatchOptions]
       }
@@ -110,8 +109,7 @@ object mod {
          with CodecOptions
     object DelOptions {
       
-      @scala.inline
-      def apply(): DelOptions = {
+      inline def apply(): DelOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DelOptions]
       }
@@ -123,8 +121,7 @@ object mod {
          with CodecOptions
     object GetOptions {
       
-      @scala.inline
-      def apply(): GetOptions = {
+      inline def apply(): GetOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[GetOptions]
       }
@@ -136,8 +133,7 @@ object mod {
          with CodecOptions
     object IteratorOptions {
       
-      @scala.inline
-      def apply(): IteratorOptions = {
+      inline def apply(): IteratorOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IteratorOptions]
       }
@@ -149,8 +145,7 @@ object mod {
          with CodecOptions
     object PutOptions {
       
-      @scala.inline
-      def apply(): PutOptions = {
+      inline def apply(): PutOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PutOptions]
       }

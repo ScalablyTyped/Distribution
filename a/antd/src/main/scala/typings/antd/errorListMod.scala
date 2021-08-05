@@ -12,8 +12,7 @@ object errorListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasErrorsHelpOnDomErrorVisibleChange: ErrorListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasErrorsHelpOnDomErrorVisibleChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasErrorsHelpOnDomErrorVisibleChange: ErrorListProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasErrorsHelpOnDomErrorVisibleChange.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait ErrorListProps extends StObject {
     
@@ -27,35 +26,26 @@ object errorListMod {
   }
   object ErrorListProps {
     
-    @scala.inline
-    def apply(): ErrorListProps = {
+    inline def apply(): ErrorListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorListProps]
     }
     
-    @scala.inline
-    implicit class ErrorListPropsMutableBuilder[Self <: ErrorListProps] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorListProps](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[ReactNode]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[ReactNode]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setErrorsVarargs(value: ReactNode*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ReactNode*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setHelp(value: ReactNode): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: ReactNode): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
-      @scala.inline
-      def setOnDomErrorVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onDomErrorVisibleChange", js.Any.fromFunction1(value))
+      inline def setOnDomErrorVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onDomErrorVisibleChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDomErrorVisibleChangeUndefined: Self = StObject.set(x, "onDomErrorVisibleChange", js.undefined)
+      inline def setOnDomErrorVisibleChangeUndefined: Self = StObject.set(x, "onDomErrorVisibleChange", js.undefined)
     }
   }
 }

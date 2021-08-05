@@ -37,26 +37,19 @@ object mod {
   trait DefaultImage extends StObject
   object DefaultImage {
     
-    @scala.inline
-    def `404`: typings.reactGravatar.reactGravatarStrings.`404` = "404".asInstanceOf[typings.reactGravatar.reactGravatarStrings.`404`]
+    inline def `404`: typings.reactGravatar.reactGravatarStrings.`404` = "404".asInstanceOf[typings.reactGravatar.reactGravatarStrings.`404`]
     
-    @scala.inline
-    def blank: typings.reactGravatar.reactGravatarStrings.blank = "blank".asInstanceOf[typings.reactGravatar.reactGravatarStrings.blank]
+    inline def blank: typings.reactGravatar.reactGravatarStrings.blank = "blank".asInstanceOf[typings.reactGravatar.reactGravatarStrings.blank]
     
-    @scala.inline
-    def identicon: typings.reactGravatar.reactGravatarStrings.identicon = "identicon".asInstanceOf[typings.reactGravatar.reactGravatarStrings.identicon]
+    inline def identicon: typings.reactGravatar.reactGravatarStrings.identicon = "identicon".asInstanceOf[typings.reactGravatar.reactGravatarStrings.identicon]
     
-    @scala.inline
-    def mm: typings.reactGravatar.reactGravatarStrings.mm = "mm".asInstanceOf[typings.reactGravatar.reactGravatarStrings.mm]
+    inline def mm: typings.reactGravatar.reactGravatarStrings.mm = "mm".asInstanceOf[typings.reactGravatar.reactGravatarStrings.mm]
     
-    @scala.inline
-    def monsterid: typings.reactGravatar.reactGravatarStrings.monsterid = "monsterid".asInstanceOf[typings.reactGravatar.reactGravatarStrings.monsterid]
+    inline def monsterid: typings.reactGravatar.reactGravatarStrings.monsterid = "monsterid".asInstanceOf[typings.reactGravatar.reactGravatarStrings.monsterid]
     
-    @scala.inline
-    def retro: typings.reactGravatar.reactGravatarStrings.retro = "retro".asInstanceOf[typings.reactGravatar.reactGravatarStrings.retro]
+    inline def retro: typings.reactGravatar.reactGravatarStrings.retro = "retro".asInstanceOf[typings.reactGravatar.reactGravatarStrings.retro]
     
-    @scala.inline
-    def wavatar: typings.reactGravatar.reactGravatarStrings.wavatar = "wavatar".asInstanceOf[typings.reactGravatar.reactGravatarStrings.wavatar]
+    inline def wavatar: typings.reactGravatar.reactGravatarStrings.wavatar = "wavatar".asInstanceOf[typings.reactGravatar.reactGravatarStrings.wavatar]
   }
   
   /**
@@ -124,62 +117,44 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefault(value: DefaultImage): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: DefaultImage): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
+      inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
+      inline def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setRating(value: Rating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: Rating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+      inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -192,16 +167,12 @@ object mod {
   trait Rating extends StObject
   object Rating {
     
-    @scala.inline
-    def g: typings.reactGravatar.reactGravatarStrings.g = "g".asInstanceOf[typings.reactGravatar.reactGravatarStrings.g]
+    inline def g: typings.reactGravatar.reactGravatarStrings.g = "g".asInstanceOf[typings.reactGravatar.reactGravatarStrings.g]
     
-    @scala.inline
-    def pg: typings.reactGravatar.reactGravatarStrings.pg = "pg".asInstanceOf[typings.reactGravatar.reactGravatarStrings.pg]
+    inline def pg: typings.reactGravatar.reactGravatarStrings.pg = "pg".asInstanceOf[typings.reactGravatar.reactGravatarStrings.pg]
     
-    @scala.inline
-    def r: typings.reactGravatar.reactGravatarStrings.r = "r".asInstanceOf[typings.reactGravatar.reactGravatarStrings.r]
+    inline def r: typings.reactGravatar.reactGravatarStrings.r = "r".asInstanceOf[typings.reactGravatar.reactGravatarStrings.r]
     
-    @scala.inline
-    def x: typings.reactGravatar.reactGravatarStrings.x = "x".asInstanceOf[typings.reactGravatar.reactGravatarStrings.x]
+    inline def x: typings.reactGravatar.reactGravatarStrings.x = "x".asInstanceOf[typings.reactGravatar.reactGravatarStrings.x]
   }
 }

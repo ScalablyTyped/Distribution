@@ -39,8 +39,7 @@ trait CertificatePrincipal extends StObject {
 }
 object CertificatePrincipal {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commonName: String,
     country: String,
     locality: String,
@@ -52,31 +51,22 @@ object CertificatePrincipal {
     __obj.asInstanceOf[CertificatePrincipal]
   }
   
-  @scala.inline
-  implicit class CertificatePrincipalMutableBuilder[Self <: CertificatePrincipal] (val x: Self) extends AnyVal {
+  extension [Self <: CertificatePrincipal](x: Self) {
     
-    @scala.inline
-    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+    inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUnits(value: js.Array[String]): Self = StObject.set(x, "organizationUnits", value.asInstanceOf[js.Any])
+    inline def setOrganizationUnits(value: js.Array[String]): Self = StObject.set(x, "organizationUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationUnitsVarargs(value: String*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
+    inline def setOrganizationUnitsVarargs(value: String*): Self = StObject.set(x, "organizationUnits", js.Array(value :_*))
     
-    @scala.inline
-    def setOrganizations(value: js.Array[String]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+    inline def setOrganizations(value: js.Array[String]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationsVarargs(value: String*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+    inline def setOrganizationsVarargs(value: String*): Self = StObject.set(x, "organizations", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

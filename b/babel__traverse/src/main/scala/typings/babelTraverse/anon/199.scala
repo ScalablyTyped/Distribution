@@ -11,17 +11,14 @@ trait `199` extends StObject {
 }
 object `199` {
   
-  @scala.inline
-  def apply(): `199` = {
+  inline def apply(): `199` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ParenthesizedExpression")
     __obj.asInstanceOf[`199`]
   }
   
-  @scala.inline
-  implicit class `199MutableBuilder`[Self <: `199`] (val x: Self) extends AnyVal {
+  extension [Self <: `199`](x: Self) {
     
-    @scala.inline
-    def setType(value: ParenthesizedExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ParenthesizedExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

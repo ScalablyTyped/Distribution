@@ -17,12 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @returns the Component instance or a Promise in case of asynchronous loading
   */
 //  Creates a new instance of a Component or returns the instance of an existing Component.
-@scala.inline
-def component(vConfig: java.lang.String): typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("component")(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any]]
-@scala.inline
-def component(vConfig: js.Any): typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("component")(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any]]
-@scala.inline
-def component(vConfig: typings.openui5.sap.ui.ComponentConfig): typings.jquery.JQueryPromise[typings.openui5.sap.ui.core.Component] | typings.openui5.sap.ui.core.Component = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("component")(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.jquery.JQueryPromise[typings.openui5.sap.ui.core.Component] | typings.openui5.sap.ui.core.Component]
+inline def component(vConfig: java.lang.String): typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("component")(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any]]
+inline def component(vConfig: js.Any): typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("component")(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Component | typings.jquery.JQueryPromise[js.Any]]
+inline def component(vConfig: typings.openui5.sap.ui.ComponentConfig): typings.jquery.JQueryPromise[typings.openui5.sap.ui.core.Component] | typings.openui5.sap.ui.core.Component = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("component")(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.jquery.JQueryPromise[typings.openui5.sap.ui.core.Component] | typings.openui5.sap.ui.core.Component]
 
 /**
   * Defines a controller class or creates an instance of an already defined controller class.When a name
@@ -35,118 +32,97 @@ def component(vConfig: typings.openui5.sap.ui.ComponentConfig): typings.jquery.J
   * @param oControllerImpl An object literal defining the methods and properties of the controller
   * @returns void or the new controller instance, depending on the use case
   */
-@scala.inline
-def controller(sName: java.lang.String): scala.Unit | typings.openui5.sap.ui.core.mvc.Controller = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("controller")(sName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit | typings.openui5.sap.ui.core.mvc.Controller]
-@scala.inline
-def controller(sName: java.lang.String, oControllerImpl: js.Any): scala.Unit | typings.openui5.sap.ui.core.mvc.Controller = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("controller")(sName.asInstanceOf[js.Any], oControllerImpl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit | typings.openui5.sap.ui.core.mvc.Controller]
+inline def controller(sName: java.lang.String): scala.Unit | typings.openui5.sap.ui.core.mvc.Controller = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("controller")(sName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit | typings.openui5.sap.ui.core.mvc.Controller]
+inline def controller(sName: java.lang.String, oControllerImpl: js.Any): scala.Unit | typings.openui5.sap.ui.core.mvc.Controller = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("controller")(sName.asInstanceOf[js.Any], oControllerImpl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit | typings.openui5.sap.ui.core.mvc.Controller]
 
-@scala.inline
-def define(aDependencies: js.Any, vFactory: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("define")(aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def define(sModuleName: java.lang.String, aDependencies: js.Any, vFactory: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def define(aDependencies: js.Any, vFactory: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("define")(aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def define(sModuleName: java.lang.String, aDependencies: js.Any, vFactory: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("define")(sModuleName.asInstanceOf[js.Any], aDependencies.asInstanceOf[js.Any], vFactory.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 //  Defines a Javascript module with its name, its dependencies and a module value or factory.
-@scala.inline
-def define(vFactory: js.Any): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("define")(vFactory.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def define(vFactory: js.Any): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("define")(vFactory.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 //  Creates 0.
-@scala.inline
-def extensionpoint(oContainer: js.Any, sExtName: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(oContainer: js.Any, sExtName: java.lang.String, fnCreateDefaultContent: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(oContainer: js.Any, sExtName: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def extensionpoint(oContainer: js.Any, sExtName: java.lang.String, fnCreateDefaultContent: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def extensionpoint(
   oContainer: js.Any,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: js.Any
 ): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: js.Any,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: js.Any,
   sAggregationName: java.lang.String
 ): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: js.Any,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: scala.Unit,
   sAggregationName: java.lang.String
 ): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: js.Any,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
   oTargetControl: js.Any
 ): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: js.Any,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
   oTargetControl: js.Any,
   sAggregationName: java.lang.String
 ): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: js.Any,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
   oTargetControl: scala.Unit,
   sAggregationName: java.lang.String
 ): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def extensionpoint(oContainer: typings.openui5.sap.ui.core.Fragment, sExtName: java.lang.String): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(oContainer: typings.openui5.sap.ui.core.Fragment, sExtName: java.lang.String): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.Fragment,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.Fragment,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: scala.Unit,
   sAggregationName: java.lang.String
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.Fragment,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: typings.openui5.sap.ui.core.Control
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.Fragment,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: typings.openui5.sap.ui.core.Control,
   sAggregationName: java.lang.String
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.Fragment,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
   oTargetControl: scala.Unit,
   sAggregationName: java.lang.String
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.Fragment,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
   oTargetControl: typings.openui5.sap.ui.core.Control
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.Fragment,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
@@ -174,54 +150,46 @@ def extensionpoint(
   * ignored.
   * @returns an array with 0..n controls created from an ExtensionPoint
   */
-@scala.inline
-def extensionpoint(oContainer: typings.openui5.sap.ui.core.mvc.View, sExtName: java.lang.String): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(oContainer: typings.openui5.sap.ui.core.mvc.View, sExtName: java.lang.String): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.mvc.View,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.mvc.View,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: scala.Unit,
   sAggregationName: java.lang.String
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.mvc.View,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: typings.openui5.sap.ui.core.Control
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.mvc.View,
   sExtName: java.lang.String,
   fnCreateDefaultContent: js.Any,
   oTargetControl: typings.openui5.sap.ui.core.Control,
   sAggregationName: java.lang.String
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.mvc.View,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
   oTargetControl: scala.Unit,
   sAggregationName: java.lang.String
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any], sAggregationName.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.mvc.View,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
   oTargetControl: typings.openui5.sap.ui.core.Control
 ): js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("extensionpoint")(oContainer.asInstanceOf[js.Any], sExtName.asInstanceOf[js.Any], fnCreateDefaultContent.asInstanceOf[js.Any], oTargetControl.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def extensionpoint(
+inline def extensionpoint(
   oContainer: typings.openui5.sap.ui.core.mvc.View,
   sExtName: java.lang.String,
   fnCreateDefaultContent: scala.Unit,
@@ -258,29 +226,23 @@ def extensionpoint(
   * implemented in the Controller.
   * @returns the root Control(s) of the Fragment content
   */
-@scala.inline
-def fragment(sName: java.lang.String, sType: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(sName.asInstanceOf[js.Any], sType.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def fragment(sName: java.lang.String, sType: java.lang.String, oController: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(sName.asInstanceOf[js.Any], sType.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def fragment(
+inline def fragment(sName: java.lang.String, sType: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(sName.asInstanceOf[js.Any], sType.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def fragment(sName: java.lang.String, sType: java.lang.String, oController: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(sName.asInstanceOf[js.Any], sType.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fragment(
   sName: java.lang.String,
   sType: java.lang.String,
   oController: typings.openui5.sap.ui.core.mvc.Controller
 ): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(sName.asInstanceOf[js.Any], sType.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
 
 //  Instantiate a Fragment - this method loads the Fragment content, instantiates it, and returns this content.
-@scala.inline
-def fragment_Unit(sName: java.lang.String, sType: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(sName.asInstanceOf[js.Any], sType.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def fragment_Unit(sName: java.lang.String, sType: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("fragment")(sName.asInstanceOf[js.Any], sType.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 //  Retrieve the SAPUI5 Core instance for the current window.
 //  and returns it or if a library name is specified then the version info of the individual library will be returned.
-@scala.inline
-def getCore(): typings.openui5.sap.ui.core.Core = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getCore")().asInstanceOf[typings.openui5.sap.ui.core.Core]
+inline def getCore(): typings.openui5.sap.ui.core.Core = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getCore")().asInstanceOf[typings.openui5.sap.ui.core.Core]
 
 // Loads the version info file (resources/sap-ui-version.json):void;
-@scala.inline
-def getVersionInfo(): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")().asInstanceOf[scala.Unit]
+inline def getVersionInfo(): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")().asInstanceOf[scala.Unit]
 /**
   * Loads the version info file (resources/sap-ui-version.json) and returnsit or if a library name is
   * specified then the version info of the individuallibrary will be returned.In case of the version
@@ -290,13 +252,10 @@ def getVersionInfo(): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[
   * undefined (if library is not listed or there was an error and "failOnError" is set to "false")      
   *                             or a Promise which resolves with one of them
   */
-@scala.inline
-def getVersionInfo(mOptions: java.lang.String): js.Any | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Any | typings.jquery.JQueryPromise[js.Any]]
-@scala.inline
-def getVersionInfo(mOptions: js.Any): js.Any | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Any | typings.jquery.JQueryPromise[js.Any]]
+inline def getVersionInfo(mOptions: java.lang.String): js.Any | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Any | typings.jquery.JQueryPromise[js.Any]]
+inline def getVersionInfo(mOptions: js.Any): js.Any | typings.jquery.JQueryPromise[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Any | typings.jquery.JQueryPromise[js.Any]]
 
-@scala.inline
-def getVersionInfo_Unit(sLibName: java.lang.String): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")(sLibName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def getVersionInfo_Unit(sLibName: java.lang.String): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("getVersionInfo")(sLibName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 /**
   * Instantiates an HTML-based Fragment.To instantiate a Fragment, call this method as:  
@@ -318,28 +277,20 @@ def getVersionInfo_Unit(sLibName: java.lang.String): scala.Unit = typings.openui
   * @param oController a Controller to be used for event handlers in the Fragment
   * @returns the root Control(s) of the created Fragment instance
   */
-@scala.inline
-def htmlfragment(sId: java.lang.String, vFragment: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def htmlfragment(
+inline def htmlfragment(sId: java.lang.String, vFragment: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def htmlfragment(
   sId: java.lang.String,
   vFragment: java.lang.String,
   oController: typings.openui5.sap.ui.core.mvc.Controller
 ): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def htmlfragment(sId: java.lang.String, vFragment: js.Any): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def htmlfragment(sId: java.lang.String, vFragment: js.Any, oController: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def htmlfragment(sId: java.lang.String, vFragment: js.Any, oController: typings.openui5.sap.ui.core.mvc.Controller): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def htmlfragment(sId: java.lang.String, vFragment: js.Any): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def htmlfragment(sId: java.lang.String, vFragment: js.Any, oController: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def htmlfragment(sId: java.lang.String, vFragment: js.Any, oController: typings.openui5.sap.ui.core.mvc.Controller): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
 //  Instantiates an HTML-based Fragment.
-@scala.inline
-def htmlfragment(vFragment: js.Any): typings.openui5.sap.ui.core.Fragment = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(vFragment.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
-@scala.inline
-def htmlfragment(vFragment: js.Any, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def htmlfragment(vFragment: js.Any): typings.openui5.sap.ui.core.Fragment = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(vFragment.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def htmlfragment(vFragment: js.Any, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
 
-@scala.inline
-def htmlfragment_Unit(sId: java.lang.String, vFragment: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def htmlfragment_Unit(sId: java.lang.String, vFragment: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 /**
   * Defines or creates an instance of a declarative HTML view.The behavior of this method depends on the
@@ -353,20 +304,15 @@ def htmlfragment_Unit(sId: java.lang.String, vFragment: js.Any): scala.Unit = (t
   * @param vView name or implementation of the view.
   * @returns the created HTMLView instance in the creation case, otherwise undefined
   */
-@scala.inline
-def htmlview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.HTMLView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView | js.Any]
-@scala.inline
-def htmlview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.HTMLView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView]
+inline def htmlview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.HTMLView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView | js.Any]
+inline def htmlview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.HTMLView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView]
 //  Defines or creates an instance of a declarative HTML view.
-@scala.inline
-def htmlview(vView: js.Any): typings.openui5.sap.ui.core.mvc.HTMLView = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView]
+inline def htmlview(vView: js.Any): typings.openui5.sap.ui.core.mvc.HTMLView = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView]
 
-@scala.inline
-def htmlview_Union(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.HTMLView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView | js.Any]
+inline def htmlview_Union(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.HTMLView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.HTMLView | js.Any]
 
 //  Defines OR instantiates an HTML-based Fragment.
-@scala.inline
-def jsfragment(sFragmentName: java.lang.String): typings.openui5.sap.ui.core.Fragment = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sFragmentName.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def jsfragment(sFragmentName: java.lang.String): typings.openui5.sap.ui.core.Fragment = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sFragmentName.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
 /**
   * Defines OR instantiates an HTML-based Fragment.To define a JS Fragment, call this method as:  
   * sap.ui.jsfragment(sName, oFragmentDefinition)Where:- "sName" is the name by which this fragment can
@@ -390,29 +336,22 @@ def jsfragment(sFragmentName: java.lang.String): typings.openui5.sap.ui.core.Fra
   * @param oController a Controller to be used for event handlers in the Fragment
   * @returns the root Control(s) of the created Fragment instance
   */
-@scala.inline
-def jsfragment(sId: java.lang.String, sFragmentName: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def jsfragment(sId: java.lang.String, sFragmentName: java.lang.String, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
-@scala.inline
-def jsfragment(
+inline def jsfragment(sId: java.lang.String, sFragmentName: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def jsfragment(sId: java.lang.String, sFragmentName: java.lang.String, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def jsfragment(
   sId: java.lang.String,
   sFragmentName: java.lang.String,
   oController: typings.openui5.sap.ui.core.mvc.Controller
 ): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def jsfragment(sId: java.lang.String, sFragmentName: js.Any): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def jsfragment(
+inline def jsfragment(sId: java.lang.String, sFragmentName: js.Any): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def jsfragment(
   sId: java.lang.String,
   sFragmentName: js.Any,
   oController: typings.openui5.sap.ui.core.mvc.Controller
 ): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
 
-@scala.inline
-def jsfragment_Fragment(sFragmentName: java.lang.String, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sFragmentName.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
-@scala.inline
-def jsfragment_Fragment(sId: java.lang.String, sFragmentName: java.lang.String): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def jsfragment_Fragment(sFragmentName: java.lang.String, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sFragmentName.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def jsfragment_Fragment(sId: java.lang.String, sFragmentName: java.lang.String): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsfragment")(sId.asInstanceOf[js.Any], sFragmentName.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
 
 /**
   * Creates a JSON view of the given name and id.The <code>viewName</code> must either correspond to a
@@ -427,16 +366,12 @@ def jsfragment_Fragment(sId: java.lang.String, sFragmentName: java.lang.String):
   * @param vView name of a view resource or view configuration as described above.
   * @returns the created JSONView instance
   */
-@scala.inline
-def jsonview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.JSONView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSONView]
-@scala.inline
-def jsonview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.JSONView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSONView]
+inline def jsonview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.JSONView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSONView]
+inline def jsonview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.JSONView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSONView]
 //  Creates a JSON view of the given name and id.
-@scala.inline
-def jsonview(vView: js.Any): typings.openui5.sap.ui.core.mvc.View = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
+inline def jsonview(vView: js.Any): typings.openui5.sap.ui.core.mvc.View = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
 
-@scala.inline
-def jsonview_View(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
+inline def jsonview_View(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsonview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
 
 /**
   * Defines or creates an instance of a JavaScript view.The behavior of this method depends on the
@@ -455,34 +390,23 @@ def jsonview_View(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.
   * instantiation, ignored for everything else)
   * @returns the created JSView instance in the creation case, otherwise undefined
   */
-@scala.inline
-def jsview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
-@scala.inline
-def jsview(sId: java.lang.String, vView: java.lang.String, bAsync: scala.Boolean): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], bAsync.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
-@scala.inline
-def jsview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.JSView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView]
-@scala.inline
-def jsview(sId: java.lang.String, vView: js.Any, bAsync: scala.Boolean): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], bAsync.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
+inline def jsview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
+inline def jsview(sId: java.lang.String, vView: java.lang.String, bAsync: scala.Boolean): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], bAsync.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
+inline def jsview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.JSView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView]
+inline def jsview(sId: java.lang.String, vView: js.Any, bAsync: scala.Boolean): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], bAsync.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
 //  Defines or creates an instance of a JavaScript view.
-@scala.inline
-def jsview(vView: js.Any): typings.openui5.sap.ui.core.mvc.JSView = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView]
+inline def jsview(vView: js.Any): typings.openui5.sap.ui.core.mvc.JSView = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView]
 
-@scala.inline
-def jsview_Union(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
+inline def jsview_Union(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.JSView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("jsview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.JSView | js.Any]
 
 //  Creates a lazy loading stub for a given class sClassName.
-@scala.inline
-def lazyRequire(sClassName: java.lang.String): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def lazyRequire(sClassName: java.lang.String, sMethods: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any], sMethods.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def lazyRequire(sClassName: java.lang.String, sMethods: java.lang.String, sModuleName: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any], sMethods.asInstanceOf[js.Any], sModuleName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def lazyRequire(sClassName: java.lang.String, sMethods: scala.Unit, sModuleName: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any], sMethods.asInstanceOf[js.Any], sModuleName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lazyRequire(sClassName: java.lang.String): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def lazyRequire(sClassName: java.lang.String, sMethods: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any], sMethods.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lazyRequire(sClassName: java.lang.String, sMethods: java.lang.String, sModuleName: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any], sMethods.asInstanceOf[js.Any], sModuleName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def lazyRequire(sClassName: java.lang.String, sMethods: scala.Unit, sModuleName: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("lazyRequire")(sClassName.asInstanceOf[js.Any], sMethods.asInstanceOf[js.Any], sModuleName.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 //  Redirects access to resources that are part of the given namespace to a location relative to the assumed application root folder.
-@scala.inline
-def localResources(sNamespace: java.lang.String): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("localResources")(sNamespace.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def localResources(sNamespace: java.lang.String): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("localResources")(sNamespace.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
 /**
   * Redirects access to resources that are part of the given namespace to a locationrelative to the
@@ -505,8 +429,7 @@ def localResources(sNamespace: java.lang.String): js.Any = typings.openui5.globa
   * @param sNamespace Namespace prefix for which to load resources relative to the application root
   * folder
   */
-@scala.inline
-def localResources_Unit(sNamespace: java.lang.String): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("localResources")(sNamespace.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def localResources_Unit(sNamespace: java.lang.String): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("localResources")(sNamespace.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 /**
   * Ensures that a given a namespace or hierarchy of nested namespaces exists in thecurrent
@@ -514,8 +437,7 @@ def localResources_Unit(sNamespace: java.lang.String): scala.Unit = typings.open
   * @param sNamespace undefined
   * @returns the innermost namespace of the hierarchy
   */
-@scala.inline
-def namespace(sNamespace: java.lang.String): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("namespace")(sNamespace.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def namespace(sNamespace: java.lang.String): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("namespace")(sNamespace.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
 /**
   * Resolves one or more module dependencies.<b>Synchronous Retrieval of a Single Module Value</b>When
@@ -540,19 +462,13 @@ def namespace(sNamespace: java.lang.String): js.Any = typings.openui5.global.sap
   * @param fnCallback callback function to execute after resolving an array of dependencies
   * @returns a single module value or undefined
   */
-@scala.inline
-def require(vDependencies: java.lang.String): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-@scala.inline
-def require(vDependencies: java.lang.String, fnCallback: js.Any): js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def require(vDependencies: java.lang.String): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def require(vDependencies: java.lang.String, fnCallback: js.Any): js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 //  Resolves one or more module dependencies.
-@scala.inline
-def require(vDependencies: js.Any): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def require(vDependencies: js.Any, fnCallback: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def require(vDependencies: js.Array[java.lang.String]): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-@scala.inline
-def require(vDependencies: js.Array[java.lang.String], fnCallback: js.Any): js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def require(vDependencies: js.Any): scala.Unit = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def require(vDependencies: js.Any, fnCallback: js.Any): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def require(vDependencies: js.Array[java.lang.String]): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def require(vDependencies: js.Array[java.lang.String], fnCallback: js.Any): js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("require")(vDependencies.asInstanceOf[js.Any], fnCallback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 
 /**
   * Returns the URL of a resource that belongs to the given library and has the given relative location
@@ -567,12 +483,10 @@ def require(vDependencies: js.Array[java.lang.String], fnCallback: js.Any): js.A
   * "themes/my_theme/img/mypic.png"
   * @returns the URL of the requested resource
   */
-@scala.inline
-def resource(sLibraryName: java.lang.String, sResourcePath: java.lang.String): java.lang.String = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("resource")(sLibraryName.asInstanceOf[js.Any], sResourcePath.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def resource(sLibraryName: java.lang.String, sResourcePath: java.lang.String): java.lang.String = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("resource")(sLibraryName.asInstanceOf[js.Any], sResourcePath.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
 
 //  Returns the URL of a resource that belongs to the given library and has the given relative location within the library.
-@scala.inline
-def resource_Unit(sLibraryName: java.lang.String, sResourcePath: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("resource")(sLibraryName.asInstanceOf[js.Any], sResourcePath.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def resource_Unit(sLibraryName: java.lang.String, sResourcePath: java.lang.String): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("resource")(sLibraryName.asInstanceOf[js.Any], sResourcePath.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 /**
   * Displays the control tree with the given root inside the area of the givenDOM reference (or inside
@@ -585,22 +499,15 @@ def resource_Unit(sLibraryName: java.lang.String, sResourcePath: java.lang.Strin
   * @param oDomRef a DOM Element or Id String of the UIArea
   * @param oControl the Control that should be added to the <code>UIArea</code>.
   */
-@scala.inline
-def setRoot(oDomRef: java.lang.String, oControl: typings.openui5.sap.ui.base.Interface): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def setRoot(oDomRef: java.lang.String, oControl: typings.openui5.sap.ui.core.Control): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def setRoot(oDomRef: typings.openui5.sap.ui.core.Control, oControl: typings.openui5.sap.ui.base.Interface): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def setRoot(oDomRef: typings.openui5.sap.ui.core.Control, oControl: typings.openui5.sap.ui.core.Control): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def setRoot(oDomRef: typings.openui5.sap.ui.core.Element, oControl: typings.openui5.sap.ui.base.Interface): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def setRoot(oDomRef: typings.openui5.sap.ui.core.Element, oControl: typings.openui5.sap.ui.core.Control): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setRoot(oDomRef: java.lang.String, oControl: typings.openui5.sap.ui.base.Interface): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setRoot(oDomRef: java.lang.String, oControl: typings.openui5.sap.ui.core.Control): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setRoot(oDomRef: typings.openui5.sap.ui.core.Control, oControl: typings.openui5.sap.ui.base.Interface): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setRoot(oDomRef: typings.openui5.sap.ui.core.Control, oControl: typings.openui5.sap.ui.core.Control): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setRoot(oDomRef: typings.openui5.sap.ui.core.Element, oControl: typings.openui5.sap.ui.base.Interface): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def setRoot(oDomRef: typings.openui5.sap.ui.core.Element, oControl: typings.openui5.sap.ui.core.Control): scala.Unit = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("setRoot")(oDomRef.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 //  Creates a Template for the given id, dom reference or a configuration object.
-@scala.inline
-def template(): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")().asInstanceOf[js.Any]
+inline def template(): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")().asInstanceOf[js.Any]
 /**
   * Creates a Template for the given id, dom reference or a configuration object.If no parameter is
   * defined this function makes a lookup of DOM elementswhich are specifying a type attribute. If the
@@ -628,13 +535,10 @@ def template(): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic
   * @returns the created Template instance        or in case of usage without parametes any array of
   * templates is returned
   */
-@scala.inline
-def template(oTemplate: java.lang.String): js.Any | js.Array[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")(oTemplate.asInstanceOf[js.Any]).asInstanceOf[js.Any | js.Array[js.Any]]
-@scala.inline
-def template(oTemplate: js.Any): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")(oTemplate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def template(oTemplate: java.lang.String): js.Any | js.Array[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")(oTemplate.asInstanceOf[js.Any]).asInstanceOf[js.Any | js.Array[js.Any]]
+inline def template(oTemplate: js.Any): js.Any = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")(oTemplate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 
-@scala.inline
-def template_Union(oTemplate: js.Any): js.Any | js.Array[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")(oTemplate.asInstanceOf[js.Any]).asInstanceOf[js.Any | js.Array[js.Any]]
+inline def template_Union(oTemplate: js.Any): js.Any | js.Array[js.Any] = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("template")(oTemplate.asInstanceOf[js.Any]).asInstanceOf[js.Any | js.Array[js.Any]]
 
 /**
   * Defines or creates an instance of a template view.The behavior of this method depends on the
@@ -649,16 +553,12 @@ def template_Union(oTemplate: js.Any): js.Any | js.Array[js.Any] = typings.openu
   * @param vView name or implementation of the view.
   * @returns the created TemplateView instance in the creation case, otherwise undefined
   */
-@scala.inline
-def templateview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.TemplateView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView | js.Any]
-@scala.inline
-def templateview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.TemplateView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView | js.Any]
+inline def templateview(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.TemplateView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView | js.Any]
+inline def templateview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.TemplateView | js.Any = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView | js.Any]
 //  Defines or creates an instance of a template view.
-@scala.inline
-def templateview(vView: js.Any): typings.openui5.sap.ui.core.mvc.TemplateView = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView]
+inline def templateview(vView: js.Any): typings.openui5.sap.ui.core.mvc.TemplateView = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView]
 
-@scala.inline
-def templateview_TemplateView(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.TemplateView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView]
+inline def templateview_TemplateView(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.TemplateView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.TemplateView]
 
 //  Creates a view of the given type, name and with the given id.
 /**
@@ -694,12 +594,9 @@ def templateview_TemplateView(sId: java.lang.String, vView: js.Any): typings.ope
   * @param vView the view name or view configuration object
   * @returns the created View instance
   */
-@scala.inline
-def view(sId: java.lang.String): typings.openui5.sap.ui.core.mvc.View = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("view")(sId.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
-@scala.inline
-def view(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("view")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
-@scala.inline
-def view(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("view")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
+inline def view(sId: java.lang.String): typings.openui5.sap.ui.core.mvc.View = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("view")(sId.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
+inline def view(sId: java.lang.String, vView: java.lang.String): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("view")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
+inline def view(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("view")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
 
 /**
   * Instantiates an XML-based Fragment.To instantiate a Fragment, call this method as:  
@@ -721,28 +618,20 @@ def view(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.
   * @param oController a Controller to be used for event handlers in the Fragment
   * @returns the root Control(s) of the created Fragment instance
   */
-@scala.inline
-def xmlfragment(sId: java.lang.String, vFragment: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def xmlfragment(
+inline def xmlfragment(sId: java.lang.String, vFragment: java.lang.String): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def xmlfragment(
   sId: java.lang.String,
   vFragment: java.lang.String,
   oController: typings.openui5.sap.ui.core.mvc.Controller
 ): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def xmlfragment(sId: java.lang.String, vFragment: js.Any): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
-@scala.inline
-def xmlfragment(sId: java.lang.String, vFragment: js.Any, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
-@scala.inline
-def xmlfragment(sId: java.lang.String, vFragment: js.Any, oController: typings.openui5.sap.ui.core.mvc.Controller): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def xmlfragment(sId: java.lang.String, vFragment: js.Any): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
+inline def xmlfragment(sId: java.lang.String, vFragment: js.Any, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def xmlfragment(sId: java.lang.String, vFragment: js.Any, oController: typings.openui5.sap.ui.core.mvc.Controller): typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control] = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Control | js.Array[typings.openui5.sap.ui.core.Control]]
 //  Instantiates an XML-based Fragment.
-@scala.inline
-def xmlfragment(vFragment: js.Any): typings.openui5.sap.ui.core.Fragment = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(vFragment.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
-@scala.inline
-def xmlfragment(vFragment: js.Any, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def xmlfragment(vFragment: js.Any): typings.openui5.sap.ui.core.Fragment = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(vFragment.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def xmlfragment(vFragment: js.Any, oController: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(vFragment.asInstanceOf[js.Any], oController.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
 
-@scala.inline
-def xmlfragment_Fragment(sId: java.lang.String, vFragment: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
+inline def xmlfragment_Fragment(sId: java.lang.String, vFragment: js.Any): typings.openui5.sap.ui.core.Fragment = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlfragment")(sId.asInstanceOf[js.Any], vFragment.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.Fragment]
 
 /**
   * Instantiates an XMLView of the given name and with the given ID.The <code>viewName</code> must
@@ -764,12 +653,8 @@ def xmlfragment_Fragment(sId: java.lang.String, vFragment: js.Any): typings.open
   * @param  undefined
   * @returns the created XMLView instance
   */
-@scala.inline
-def xmlview(sId: java.lang.String, vView: java.lang.String, param: js.Any): typings.openui5.sap.ui.core.mvc.XMLView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.XMLView]
-@scala.inline
-def xmlview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
-@scala.inline
-def xmlview(sId: java.lang.String, vView: js.Any, param: js.Any): typings.openui5.sap.ui.core.mvc.XMLView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.XMLView]
+inline def xmlview(sId: java.lang.String, vView: java.lang.String, param: js.Any): typings.openui5.sap.ui.core.mvc.XMLView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.XMLView]
+inline def xmlview(sId: java.lang.String, vView: js.Any): typings.openui5.sap.ui.core.mvc.View = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
+inline def xmlview(sId: java.lang.String, vView: js.Any, param: js.Any): typings.openui5.sap.ui.core.mvc.XMLView = (typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sap.ui.core.mvc.XMLView]
 //  Instantiates an XMLView of the given name and with the given id.
-@scala.inline
-def xmlview(vView: js.Any): typings.openui5.sap.ui.core.mvc.View = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]
+inline def xmlview(vView: js.Any): typings.openui5.sap.ui.core.mvc.View = typings.openui5.global.sap.ui.^.asInstanceOf[js.Dynamic].applyDynamic("xmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sap.ui.core.mvc.View]

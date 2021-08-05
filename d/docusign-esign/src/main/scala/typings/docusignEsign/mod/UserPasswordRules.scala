@@ -20,25 +20,19 @@ trait UserPasswordRules extends StObject {
 }
 object UserPasswordRules {
   
-  @scala.inline
-  def apply(): UserPasswordRules = {
+  inline def apply(): UserPasswordRules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPasswordRules]
   }
   
-  @scala.inline
-  implicit class UserPasswordRulesMutableBuilder[Self <: UserPasswordRules] (val x: Self) extends AnyVal {
+  extension [Self <: UserPasswordRules](x: Self) {
     
-    @scala.inline
-    def setPasswordRules(value: AccountPasswordRules): Self = StObject.set(x, "passwordRules", value.asInstanceOf[js.Any])
+    inline def setPasswordRules(value: AccountPasswordRules): Self = StObject.set(x, "passwordRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRulesUndefined: Self = StObject.set(x, "passwordRules", js.undefined)
+    inline def setPasswordRulesUndefined: Self = StObject.set(x, "passwordRules", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

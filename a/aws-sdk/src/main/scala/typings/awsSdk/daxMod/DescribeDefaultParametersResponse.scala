@@ -18,28 +18,21 @@ trait DescribeDefaultParametersResponse extends StObject {
 }
 object DescribeDefaultParametersResponse {
   
-  @scala.inline
-  def apply(): DescribeDefaultParametersResponse = {
+  inline def apply(): DescribeDefaultParametersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDefaultParametersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDefaultParametersResponseMutableBuilder[Self <: DescribeDefaultParametersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDefaultParametersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParameters(value: ParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
   }
 }

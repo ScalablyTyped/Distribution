@@ -12,8 +12,7 @@ trait PointerEventArgs
      with IPointerEventArgs
 object PointerEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentPoint: PointerPoint,
     getIntermediatePoints: () => IVector[PointerPoint],
     handled: Boolean,

@@ -43,64 +43,45 @@ trait NetworkAcl extends StObject {
 }
 object NetworkAcl {
   
-  @scala.inline
-  def apply(): NetworkAcl = {
+  inline def apply(): NetworkAcl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkAcl]
   }
   
-  @scala.inline
-  implicit class NetworkAclMutableBuilder[Self <: NetworkAcl] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkAcl](x: Self) {
     
-    @scala.inline
-    def setAssociations(value: NetworkAclAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
+    inline def setAssociations(value: NetworkAclAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
+    inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    @scala.inline
-    def setAssociationsVarargs(value: NetworkAclAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: NetworkAclAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
     
-    @scala.inline
-    def setEntries(value: NetworkAclEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: NetworkAclEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: NetworkAclEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: NetworkAclEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
-    @scala.inline
-    def setNetworkAclId(value: String): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
+    inline def setNetworkAclId(value: String): Self = StObject.set(x, "NetworkAclId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAclIdUndefined: Self = StObject.set(x, "NetworkAclId", js.undefined)
+    inline def setNetworkAclIdUndefined: Self = StObject.set(x, "NetworkAclId", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ object mod {
   
   object paginateRest {
     
-    @scala.inline
-    def apply(octokit: Octokit): Paginate = ^.asInstanceOf[js.Dynamic].apply(octokit.asInstanceOf[js.Any]).asInstanceOf[Paginate]
+    inline def apply(octokit: Octokit): Paginate = ^.asInstanceOf[js.Dynamic].apply(octokit.asInstanceOf[js.Any]).asInstanceOf[Paginate]
     
     @JSImport("@octokit/plugin-paginate-rest", "paginateRest")
     @js.native
@@ -25,7 +24,6 @@ object mod {
     @JSImport("@octokit/plugin-paginate-rest", "paginateRest.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
 }

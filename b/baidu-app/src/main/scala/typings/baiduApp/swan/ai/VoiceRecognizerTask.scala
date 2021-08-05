@@ -29,8 +29,7 @@ trait VoiceRecognizerTask extends StObject {
 }
 object VoiceRecognizerTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => Unit,
     onError: js.Function1[/* res */ VoiceErrorResponse, Unit] => Unit,
     onFinish: js.Function1[/* res */ DataResponse, Unit] => Unit,
@@ -43,28 +42,20 @@ object VoiceRecognizerTask {
     __obj.asInstanceOf[VoiceRecognizerTask]
   }
   
-  @scala.inline
-  implicit class VoiceRecognizerTaskMutableBuilder[Self <: VoiceRecognizerTask] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceRecognizerTask](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnError(value: js.Function1[/* res */ VoiceErrorResponse, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: js.Function1[/* res */ VoiceErrorResponse, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFinish(value: js.Function1[/* res */ DataResponse, Unit] => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
+    inline def setOnFinish(value: js.Function1[/* res */ DataResponse, Unit] => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRecognize(value: js.Function1[/* res */ VoiceRecognizeResponse, Unit] => Unit): Self = StObject.set(x, "onRecognize", js.Any.fromFunction1(value))
+    inline def setOnRecognize(value: js.Function1[/* res */ VoiceRecognizeResponse, Unit] => Unit): Self = StObject.set(x, "onRecognize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnStart(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+    inline def setOnStart(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: VoiceRecognizerStart => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: VoiceRecognizerStart => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

@@ -28,8 +28,7 @@ trait NavigateToItem extends StObject {
 }
 object NavigateToItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additionalSpans: js.Array[SpanInfo],
     containerKind: String,
     containerName: String,
@@ -45,40 +44,28 @@ object NavigateToItem {
     __obj.asInstanceOf[NavigateToItem]
   }
   
-  @scala.inline
-  implicit class NavigateToItemMutableBuilder[Self <: NavigateToItem] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateToItem](x: Self) {
     
-    @scala.inline
-    def setAdditionalSpans(value: js.Array[SpanInfo]): Self = StObject.set(x, "additionalSpans", value.asInstanceOf[js.Any])
+    inline def setAdditionalSpans(value: js.Array[SpanInfo]): Self = StObject.set(x, "additionalSpans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalSpansVarargs(value: SpanInfo*): Self = StObject.set(x, "additionalSpans", js.Array(value :_*))
+    inline def setAdditionalSpansVarargs(value: SpanInfo*): Self = StObject.set(x, "additionalSpans", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerKind(value: String): Self = StObject.set(x, "containerKind", value.asInstanceOf[js.Any])
+    inline def setContainerKind(value: String): Self = StObject.set(x, "containerKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindModifiers(value: String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
+    inline def setKindModifiers(value: String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
+    inline def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchKind(value: String): Self = StObject.set(x, "matchKind", value.asInstanceOf[js.Any])
+    inline def setMatchKind(value: String): Self = StObject.set(x, "matchKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
+    inline def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

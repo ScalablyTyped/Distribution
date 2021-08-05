@@ -18,19 +18,15 @@ trait UpdateRadiusRequest extends StObject {
 }
 object UpdateRadiusRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, RadiusSettings: RadiusSettings): UpdateRadiusRequest = {
+  inline def apply(DirectoryId: DirectoryId, RadiusSettings: RadiusSettings): UpdateRadiusRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], RadiusSettings = RadiusSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRadiusRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRadiusRequestMutableBuilder[Self <: UpdateRadiusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRadiusRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusSettings(value: RadiusSettings): Self = StObject.set(x, "RadiusSettings", value.asInstanceOf[js.Any])
+    inline def setRadiusSettings(value: RadiusSettings): Self = StObject.set(x, "RadiusSettings", value.asInstanceOf[js.Any])
   }
 }

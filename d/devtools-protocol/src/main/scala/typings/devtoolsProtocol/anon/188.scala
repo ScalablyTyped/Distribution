@@ -13,22 +13,17 @@ trait `188` extends StObject {
 }
 object `188` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[UntrackCacheStorageForOriginRequest], returnType: Unit): `188` = {
+  inline def apply(paramsType: js.Array[UntrackCacheStorageForOriginRequest], returnType: Unit): `188` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`188`]
   }
   
-  @scala.inline
-  implicit class `188MutableBuilder`[Self <: `188`] (val x: Self) extends AnyVal {
+  extension [Self <: `188`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[UntrackCacheStorageForOriginRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[UntrackCacheStorageForOriginRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: UntrackCacheStorageForOriginRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: UntrackCacheStorageForOriginRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

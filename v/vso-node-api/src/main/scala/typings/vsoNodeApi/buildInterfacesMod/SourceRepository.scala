@@ -41,8 +41,7 @@ trait SourceRepository extends StObject {
 }
 object SourceRepository {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultBranch: String,
     fullName: String,
     id: String,
@@ -55,28 +54,20 @@ object SourceRepository {
     __obj.asInstanceOf[SourceRepository]
   }
   
-  @scala.inline
-  implicit class SourceRepositoryMutableBuilder[Self <: SourceRepository] (val x: Self) extends AnyVal {
+  extension [Self <: SourceRepository](x: Self) {
     
-    @scala.inline
-    def setDefaultBranch(value: String): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
+    inline def setDefaultBranch(value: String): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProviderName(value: String): Self = StObject.set(x, "sourceProviderName", value.asInstanceOf[js.Any])
+    inline def setSourceProviderName(value: String): Self = StObject.set(x, "sourceProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

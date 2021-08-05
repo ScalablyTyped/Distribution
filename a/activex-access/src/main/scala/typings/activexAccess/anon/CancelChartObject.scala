@@ -14,22 +14,17 @@ trait CancelChartObject extends StObject {
 }
 object CancelChartObject {
   
-  @scala.inline
-  def apply(Cancel: js.Any, chartObject: js.Any, drawObject: js.Any): CancelChartObject = {
+  inline def apply(Cancel: js.Any, chartObject: js.Any, drawObject: js.Any): CancelChartObject = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], chartObject = chartObject.asInstanceOf[js.Any], drawObject = drawObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelChartObject]
   }
   
-  @scala.inline
-  implicit class CancelChartObjectMutableBuilder[Self <: CancelChartObject] (val x: Self) extends AnyVal {
+  extension [Self <: CancelChartObject](x: Self) {
     
-    @scala.inline
-    def setCancel(value: js.Any): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: js.Any): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartObject(value: js.Any): Self = StObject.set(x, "chartObject", value.asInstanceOf[js.Any])
+    inline def setChartObject(value: js.Any): Self = StObject.set(x, "chartObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawObject(value: js.Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
+    inline def setDrawObject(value: js.Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait BackgroundUploadProgress extends StObject {
 }
 object BackgroundUploadProgress {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bytesReceived: Double,
     bytesSent: Double,
     hasResponseChanged: Boolean,
@@ -36,28 +35,20 @@ object BackgroundUploadProgress {
     __obj.asInstanceOf[BackgroundUploadProgress]
   }
   
-  @scala.inline
-  implicit class BackgroundUploadProgressMutableBuilder[Self <: BackgroundUploadProgress] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundUploadProgress](x: Self) {
     
-    @scala.inline
-    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
+    inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasResponseChanged(value: Boolean): Self = StObject.set(x, "hasResponseChanged", value.asInstanceOf[js.Any])
+    inline def setHasResponseChanged(value: Boolean): Self = StObject.set(x, "hasResponseChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasRestarted(value: Boolean): Self = StObject.set(x, "hasRestarted", value.asInstanceOf[js.Any])
+    inline def setHasRestarted(value: Boolean): Self = StObject.set(x, "hasRestarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: BackgroundTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BackgroundTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesToReceive(value: Double): Self = StObject.set(x, "totalBytesToReceive", value.asInstanceOf[js.Any])
+    inline def setTotalBytesToReceive(value: Double): Self = StObject.set(x, "totalBytesToReceive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesToSend(value: Double): Self = StObject.set(x, "totalBytesToSend", value.asInstanceOf[js.Any])
+    inline def setTotalBytesToSend(value: Double): Self = StObject.set(x, "totalBytesToSend", value.asInstanceOf[js.Any])
   }
 }

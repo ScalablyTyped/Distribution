@@ -33,43 +33,31 @@ trait FleetUtilization extends StObject {
 }
 object FleetUtilization {
   
-  @scala.inline
-  def apply(): FleetUtilization = {
+  inline def apply(): FleetUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetUtilization]
   }
   
-  @scala.inline
-  implicit class FleetUtilizationMutableBuilder[Self <: FleetUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: FleetUtilization](x: Self) {
     
-    @scala.inline
-    def setActiveGameSessionCount(value: WholeNumber): Self = StObject.set(x, "ActiveGameSessionCount", value.asInstanceOf[js.Any])
+    inline def setActiveGameSessionCount(value: WholeNumber): Self = StObject.set(x, "ActiveGameSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveGameSessionCountUndefined: Self = StObject.set(x, "ActiveGameSessionCount", js.undefined)
+    inline def setActiveGameSessionCountUndefined: Self = StObject.set(x, "ActiveGameSessionCount", js.undefined)
     
-    @scala.inline
-    def setActiveServerProcessCount(value: WholeNumber): Self = StObject.set(x, "ActiveServerProcessCount", value.asInstanceOf[js.Any])
+    inline def setActiveServerProcessCount(value: WholeNumber): Self = StObject.set(x, "ActiveServerProcessCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveServerProcessCountUndefined: Self = StObject.set(x, "ActiveServerProcessCount", js.undefined)
+    inline def setActiveServerProcessCountUndefined: Self = StObject.set(x, "ActiveServerProcessCount", js.undefined)
     
-    @scala.inline
-    def setCurrentPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "CurrentPlayerSessionCount", value.asInstanceOf[js.Any])
+    inline def setCurrentPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "CurrentPlayerSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPlayerSessionCountUndefined: Self = StObject.set(x, "CurrentPlayerSessionCount", js.undefined)
+    inline def setCurrentPlayerSessionCountUndefined: Self = StObject.set(x, "CurrentPlayerSessionCount", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    inline def setMaximumPlayerSessionCount(value: WholeNumber): Self = StObject.set(x, "MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPlayerSessionCountUndefined: Self = StObject.set(x, "MaximumPlayerSessionCount", js.undefined)
+    inline def setMaximumPlayerSessionCountUndefined: Self = StObject.set(x, "MaximumPlayerSessionCount", js.undefined)
   }
 }

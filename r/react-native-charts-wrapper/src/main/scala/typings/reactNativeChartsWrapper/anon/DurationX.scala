@@ -17,37 +17,27 @@ trait DurationX extends StObject {
 }
 object DurationX {
   
-  @scala.inline
-  def apply(): DurationX = {
+  inline def apply(): DurationX = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DurationX]
   }
   
-  @scala.inline
-  implicit class DurationXMutableBuilder[Self <: DurationX] (val x: Self) extends AnyVal {
+  extension [Self <: DurationX](x: Self) {
     
-    @scala.inline
-    def setDurationX(value: Double): Self = StObject.set(x, "durationX", value.asInstanceOf[js.Any])
+    inline def setDurationX(value: Double): Self = StObject.set(x, "durationX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationXUndefined: Self = StObject.set(x, "durationX", js.undefined)
+    inline def setDurationXUndefined: Self = StObject.set(x, "durationX", js.undefined)
     
-    @scala.inline
-    def setDurationY(value: Double): Self = StObject.set(x, "durationY", value.asInstanceOf[js.Any])
+    inline def setDurationY(value: Double): Self = StObject.set(x, "durationY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationYUndefined: Self = StObject.set(x, "durationY", js.undefined)
+    inline def setDurationYUndefined: Self = StObject.set(x, "durationY", js.undefined)
     
-    @scala.inline
-    def setEasingX(value: EasingType): Self = StObject.set(x, "easingX", value.asInstanceOf[js.Any])
+    inline def setEasingX(value: EasingType): Self = StObject.set(x, "easingX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingXUndefined: Self = StObject.set(x, "easingX", js.undefined)
+    inline def setEasingXUndefined: Self = StObject.set(x, "easingX", js.undefined)
     
-    @scala.inline
-    def setEasingY(value: EasingType): Self = StObject.set(x, "easingY", value.asInstanceOf[js.Any])
+    inline def setEasingY(value: EasingType): Self = StObject.set(x, "easingY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingYUndefined: Self = StObject.set(x, "easingY", js.undefined)
+    inline def setEasingYUndefined: Self = StObject.set(x, "easingY", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait CursorResource extends StObject {
 }
 object CursorResource {
   
-  @scala.inline
-  def apply(projects: ProjectsResource): CursorResource = {
+  inline def apply(projects: ProjectsResource): CursorResource = {
     val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorResource]
   }
   
-  @scala.inline
-  implicit class CursorResourceMutableBuilder[Self <: CursorResource] (val x: Self) extends AnyVal {
+  extension [Self <: CursorResource](x: Self) {
     
-    @scala.inline
-    def setProjects(value: ProjectsResource): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: ProjectsResource): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
   }
 }

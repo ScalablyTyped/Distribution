@@ -23,8 +23,7 @@ trait IModStatFieldExpression extends StObject {
 }
 object IModStatFieldExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsApproved: () => IExpression,
     IsPending: () => IExpression,
     IsRejected: () => IExpression,
@@ -35,22 +34,16 @@ object IModStatFieldExpression {
     __obj.asInstanceOf[IModStatFieldExpression]
   }
   
-  @scala.inline
-  implicit class IModStatFieldExpressionMutableBuilder[Self <: IModStatFieldExpression] (val x: Self) extends AnyVal {
+  extension [Self <: IModStatFieldExpression](x: Self) {
     
-    @scala.inline
-    def setIsApproved(value: () => IExpression): Self = StObject.set(x, "IsApproved", js.Any.fromFunction0(value))
+    inline def setIsApproved(value: () => IExpression): Self = StObject.set(x, "IsApproved", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsPending(value: () => IExpression): Self = StObject.set(x, "IsPending", js.Any.fromFunction0(value))
+    inline def setIsPending(value: () => IExpression): Self = StObject.set(x, "IsPending", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRejected(value: () => IExpression): Self = StObject.set(x, "IsRejected", js.Any.fromFunction0(value))
+    inline def setIsRejected(value: () => IExpression): Self = StObject.set(x, "IsRejected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModStatId(value: () => INumberFieldExpression): Self = StObject.set(x, "ModStatId", js.Any.fromFunction0(value))
+    inline def setModStatId(value: () => INumberFieldExpression): Self = StObject.set(x, "ModStatId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
+    inline def setValueAsText(value: () => ITextFieldExpression): Self = StObject.set(x, "ValueAsText", js.Any.fromFunction0(value))
   }
 }

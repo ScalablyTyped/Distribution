@@ -16,29 +16,22 @@ object anon {
   }
   object Boolean {
     
-    @scala.inline
-    def apply(key: String): Boolean = {
+    inline def apply(key: String): Boolean = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Boolean]
     }
     
-    @scala.inline
-    implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
+    extension [Self <: Boolean](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: scala.Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: scala.Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: scala.Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: scala.Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     }
   }
   
@@ -77,104 +70,72 @@ object anon {
   }
   object PartialConfiguration {
     
-    @scala.inline
-    def apply(): PartialConfiguration = {
+    inline def apply(): PartialConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialConfiguration]
     }
     
-    @scala.inline
-    implicit class PartialConfigurationMutableBuilder[Self <: PartialConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PartialConfiguration](x: Self) {
       
-      @scala.inline
-      def `setBoolean-negation`(value: scala.Boolean): Self = StObject.set(x, "boolean-negation", value.asInstanceOf[js.Any])
+      inline def `setBoolean-negation`(value: scala.Boolean): Self = StObject.set(x, "boolean-negation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBoolean-negationUndefined`: Self = StObject.set(x, "boolean-negation", js.undefined)
+      inline def `setBoolean-negationUndefined`: Self = StObject.set(x, "boolean-negation", js.undefined)
       
-      @scala.inline
-      def `setCamel-case-expansion`(value: scala.Boolean): Self = StObject.set(x, "camel-case-expansion", value.asInstanceOf[js.Any])
+      inline def `setCamel-case-expansion`(value: scala.Boolean): Self = StObject.set(x, "camel-case-expansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCamel-case-expansionUndefined`: Self = StObject.set(x, "camel-case-expansion", js.undefined)
+      inline def `setCamel-case-expansionUndefined`: Self = StObject.set(x, "camel-case-expansion", js.undefined)
       
-      @scala.inline
-      def `setCombine-arrays`(value: scala.Boolean): Self = StObject.set(x, "combine-arrays", value.asInstanceOf[js.Any])
+      inline def `setCombine-arrays`(value: scala.Boolean): Self = StObject.set(x, "combine-arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setCombine-arraysUndefined`: Self = StObject.set(x, "combine-arrays", js.undefined)
+      inline def `setCombine-arraysUndefined`: Self = StObject.set(x, "combine-arrays", js.undefined)
       
-      @scala.inline
-      def `setDot-notation`(value: scala.Boolean): Self = StObject.set(x, "dot-notation", value.asInstanceOf[js.Any])
+      inline def `setDot-notation`(value: scala.Boolean): Self = StObject.set(x, "dot-notation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDot-notationUndefined`: Self = StObject.set(x, "dot-notation", js.undefined)
+      inline def `setDot-notationUndefined`: Self = StObject.set(x, "dot-notation", js.undefined)
       
-      @scala.inline
-      def `setDuplicate-arguments-array`(value: scala.Boolean): Self = StObject.set(x, "duplicate-arguments-array", value.asInstanceOf[js.Any])
+      inline def `setDuplicate-arguments-array`(value: scala.Boolean): Self = StObject.set(x, "duplicate-arguments-array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDuplicate-arguments-arrayUndefined`: Self = StObject.set(x, "duplicate-arguments-array", js.undefined)
+      inline def `setDuplicate-arguments-arrayUndefined`: Self = StObject.set(x, "duplicate-arguments-array", js.undefined)
       
-      @scala.inline
-      def `setFlatten-duplicate-arrays`(value: scala.Boolean): Self = StObject.set(x, "flatten-duplicate-arrays", value.asInstanceOf[js.Any])
+      inline def `setFlatten-duplicate-arrays`(value: scala.Boolean): Self = StObject.set(x, "flatten-duplicate-arrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFlatten-duplicate-arraysUndefined`: Self = StObject.set(x, "flatten-duplicate-arrays", js.undefined)
+      inline def `setFlatten-duplicate-arraysUndefined`: Self = StObject.set(x, "flatten-duplicate-arrays", js.undefined)
       
-      @scala.inline
-      def `setHalt-at-non-option`(value: scala.Boolean): Self = StObject.set(x, "halt-at-non-option", value.asInstanceOf[js.Any])
+      inline def `setHalt-at-non-option`(value: scala.Boolean): Self = StObject.set(x, "halt-at-non-option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHalt-at-non-optionUndefined`: Self = StObject.set(x, "halt-at-non-option", js.undefined)
+      inline def `setHalt-at-non-optionUndefined`: Self = StObject.set(x, "halt-at-non-option", js.undefined)
       
-      @scala.inline
-      def `setNegation-prefix`(value: String): Self = StObject.set(x, "negation-prefix", value.asInstanceOf[js.Any])
+      inline def `setNegation-prefix`(value: String): Self = StObject.set(x, "negation-prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setNegation-prefixUndefined`: Self = StObject.set(x, "negation-prefix", js.undefined)
+      inline def `setNegation-prefixUndefined`: Self = StObject.set(x, "negation-prefix", js.undefined)
       
-      @scala.inline
-      def `setParse-numbers`(value: scala.Boolean): Self = StObject.set(x, "parse-numbers", value.asInstanceOf[js.Any])
+      inline def `setParse-numbers`(value: scala.Boolean): Self = StObject.set(x, "parse-numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setParse-numbersUndefined`: Self = StObject.set(x, "parse-numbers", js.undefined)
+      inline def `setParse-numbersUndefined`: Self = StObject.set(x, "parse-numbers", js.undefined)
       
-      @scala.inline
-      def `setPopulate--`(value: scala.Boolean): Self = StObject.set(x, "populate--", value.asInstanceOf[js.Any])
+      inline def `setPopulate--`(value: scala.Boolean): Self = StObject.set(x, "populate--", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setPopulate--Undefined`: Self = StObject.set(x, "populate--", js.undefined)
+      inline def `setPopulate--Undefined`: Self = StObject.set(x, "populate--", js.undefined)
       
-      @scala.inline
-      def `setSet-placeholder-key`(value: scala.Boolean): Self = StObject.set(x, "set-placeholder-key", value.asInstanceOf[js.Any])
+      inline def `setSet-placeholder-key`(value: scala.Boolean): Self = StObject.set(x, "set-placeholder-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setSet-placeholder-keyUndefined`: Self = StObject.set(x, "set-placeholder-key", js.undefined)
+      inline def `setSet-placeholder-keyUndefined`: Self = StObject.set(x, "set-placeholder-key", js.undefined)
       
-      @scala.inline
-      def `setShort-option-groups`(value: scala.Boolean): Self = StObject.set(x, "short-option-groups", value.asInstanceOf[js.Any])
+      inline def `setShort-option-groups`(value: scala.Boolean): Self = StObject.set(x, "short-option-groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShort-option-groupsUndefined`: Self = StObject.set(x, "short-option-groups", js.undefined)
+      inline def `setShort-option-groupsUndefined`: Self = StObject.set(x, "short-option-groups", js.undefined)
       
-      @scala.inline
-      def `setStrip-aliased`(value: scala.Boolean): Self = StObject.set(x, "strip-aliased", value.asInstanceOf[js.Any])
+      inline def `setStrip-aliased`(value: scala.Boolean): Self = StObject.set(x, "strip-aliased", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStrip-aliasedUndefined`: Self = StObject.set(x, "strip-aliased", js.undefined)
+      inline def `setStrip-aliasedUndefined`: Self = StObject.set(x, "strip-aliased", js.undefined)
       
-      @scala.inline
-      def `setStrip-dashed`(value: scala.Boolean): Self = StObject.set(x, "strip-dashed", value.asInstanceOf[js.Any])
+      inline def `setStrip-dashed`(value: scala.Boolean): Self = StObject.set(x, "strip-dashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setStrip-dashedUndefined`: Self = StObject.set(x, "strip-dashed", js.undefined)
+      inline def `setStrip-dashedUndefined`: Self = StObject.set(x, "strip-dashed", js.undefined)
       
-      @scala.inline
-      def `setUnknown-options-as-args`(value: scala.Boolean): Self = StObject.set(x, "unknown-options-as-args", value.asInstanceOf[js.Any])
+      inline def `setUnknown-options-as-args`(value: scala.Boolean): Self = StObject.set(x, "unknown-options-as-args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUnknown-options-as-argsUndefined`: Self = StObject.set(x, "unknown-options-as-args", js.undefined)
+      inline def `setUnknown-options-as-argsUndefined`: Self = StObject.set(x, "unknown-options-as-args", js.undefined)
     }
   }
 }

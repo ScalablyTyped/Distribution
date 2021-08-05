@@ -28,34 +28,25 @@ trait GetBackgroundColorsResponse extends StObject {
 }
 object GetBackgroundColorsResponse {
   
-  @scala.inline
-  def apply(): GetBackgroundColorsResponse = {
+  inline def apply(): GetBackgroundColorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBackgroundColorsResponse]
   }
   
-  @scala.inline
-  implicit class GetBackgroundColorsResponseMutableBuilder[Self <: GetBackgroundColorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackgroundColorsResponse](x: Self) {
     
-    @scala.inline
-    def setBackgroundColors(value: js.Array[String]): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
+    inline def setBackgroundColors(value: js.Array[String]): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorsUndefined: Self = StObject.set(x, "backgroundColors", js.undefined)
+    inline def setBackgroundColorsUndefined: Self = StObject.set(x, "backgroundColors", js.undefined)
     
-    @scala.inline
-    def setBackgroundColorsVarargs(value: String*): Self = StObject.set(x, "backgroundColors", js.Array(value :_*))
+    inline def setBackgroundColorsVarargs(value: String*): Self = StObject.set(x, "backgroundColors", js.Array(value :_*))
     
-    @scala.inline
-    def setComputedFontSize(value: String): Self = StObject.set(x, "computedFontSize", value.asInstanceOf[js.Any])
+    inline def setComputedFontSize(value: String): Self = StObject.set(x, "computedFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedFontSizeUndefined: Self = StObject.set(x, "computedFontSize", js.undefined)
+    inline def setComputedFontSizeUndefined: Self = StObject.set(x, "computedFontSize", js.undefined)
     
-    @scala.inline
-    def setComputedFontWeight(value: String): Self = StObject.set(x, "computedFontWeight", value.asInstanceOf[js.Any])
+    inline def setComputedFontWeight(value: String): Self = StObject.set(x, "computedFontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedFontWeightUndefined: Self = StObject.set(x, "computedFontWeight", js.undefined)
+    inline def setComputedFontWeightUndefined: Self = StObject.set(x, "computedFontWeight", js.undefined)
   }
 }

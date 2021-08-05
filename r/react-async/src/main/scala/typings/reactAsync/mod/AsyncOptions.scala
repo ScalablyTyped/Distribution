@@ -49,85 +49,61 @@ trait AsyncOptions[T]
 }
 object AsyncOptions {
   
-  @scala.inline
-  def apply[T](): AsyncOptions[T] = {
+  inline def apply[T](): AsyncOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncOptions[T]]
   }
   
-  @scala.inline
-  implicit class AsyncOptionsMutableBuilder[Self <: AsyncOptions[?], T] (val x: Self & AsyncOptions[T]) extends AnyVal {
+  extension [Self <: AsyncOptions[?], T](x: Self & AsyncOptions[T]) {
     
-    @scala.inline
-    def setDebugLabel(value: String): Self = StObject.set(x, "debugLabel", value.asInstanceOf[js.Any])
+    inline def setDebugLabel(value: String): Self = StObject.set(x, "debugLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugLabelUndefined: Self = StObject.set(x, "debugLabel", js.undefined)
+    inline def setDebugLabelUndefined: Self = StObject.set(x, "debugLabel", js.undefined)
     
-    @scala.inline
-    def setDeferFn(
+    inline def setDeferFn(
       value: (/* args */ js.Array[js.Any], /* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]
     ): Self = StObject.set(x, "deferFn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDeferFnUndefined: Self = StObject.set(x, "deferFn", js.undefined)
+    inline def setDeferFnUndefined: Self = StObject.set(x, "deferFn", js.undefined)
     
-    @scala.inline
-    def setDispatcher(
+    inline def setDispatcher(
       value: (/* action */ AsyncAction[T], /* internalDispatch */ js.Function1[/* action */ AsyncAction[T], Unit], /* props */ AsyncProps[T]) => Unit
     ): Self = StObject.set(x, "dispatcher", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
+    inline def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
     
-    @scala.inline
-    def setInitialValue(value: T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: T): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+    inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
-    @scala.inline
-    def setOnReject(value: /* error */ Error => Unit): Self = StObject.set(x, "onReject", js.Any.fromFunction1(value))
+    inline def setOnReject(value: /* error */ Error => Unit): Self = StObject.set(x, "onReject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRejectUndefined: Self = StObject.set(x, "onReject", js.undefined)
+    inline def setOnRejectUndefined: Self = StObject.set(x, "onReject", js.undefined)
     
-    @scala.inline
-    def setOnResolve(value: /* data */ T => Unit): Self = StObject.set(x, "onResolve", js.Any.fromFunction1(value))
+    inline def setOnResolve(value: /* data */ T => Unit): Self = StObject.set(x, "onResolve", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnResolveUndefined: Self = StObject.set(x, "onResolve", js.undefined)
+    inline def setOnResolveUndefined: Self = StObject.set(x, "onResolve", js.undefined)
     
-    @scala.inline
-    def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseFn(value: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]): Self = StObject.set(x, "promiseFn", js.Any.fromFunction2(value))
+    inline def setPromiseFn(value: (/* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]): Self = StObject.set(x, "promiseFn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPromiseFnUndefined: Self = StObject.set(x, "promiseFn", js.undefined)
+    inline def setPromiseFnUndefined: Self = StObject.set(x, "promiseFn", js.undefined)
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
-    @scala.inline
-    def setReducer(
+    inline def setReducer(
       value: (/* state */ ReducerAsyncState[T], /* action */ AsyncAction[T], /* internalReducer */ js.Function2[/* state */ ReducerAsyncState[T], /* action */ AsyncAction[T], ReducerAsyncState[T]]) => AsyncState[T, AbstractState[T]]
     ): Self = StObject.set(x, "reducer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
+    inline def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
     
-    @scala.inline
-    def setWatch(value: js.Any): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: js.Any): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchFn(value: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => js.Any): Self = StObject.set(x, "watchFn", js.Any.fromFunction2(value))
+    inline def setWatchFn(value: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => js.Any): Self = StObject.set(x, "watchFn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWatchFnUndefined: Self = StObject.set(x, "watchFn", js.undefined)
+    inline def setWatchFnUndefined: Self = StObject.set(x, "watchFn", js.undefined)
     
-    @scala.inline
-    def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
   }
 }

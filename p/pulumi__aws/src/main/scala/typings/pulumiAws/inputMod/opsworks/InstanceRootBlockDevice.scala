@@ -17,37 +17,27 @@ trait InstanceRootBlockDevice extends StObject {
 }
 object InstanceRootBlockDevice {
   
-  @scala.inline
-  def apply(): InstanceRootBlockDevice = {
+  inline def apply(): InstanceRootBlockDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceRootBlockDevice]
   }
   
-  @scala.inline
-  implicit class InstanceRootBlockDeviceMutableBuilder[Self <: InstanceRootBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceRootBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDeleteOnTermination(value: Input[Boolean]): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Input[Boolean]): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Input[Double]): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
-    @scala.inline
-    def setVolumeSize(value: Input[Double]): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: Input[Double]): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeUndefined: Self = StObject.set(x, "volumeSize", js.undefined)
+    inline def setVolumeSizeUndefined: Self = StObject.set(x, "volumeSize", js.undefined)
     
-    @scala.inline
-    def setVolumeType(value: Input[String]): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: Input[String]): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeTypeUndefined: Self = StObject.set(x, "volumeType", js.undefined)
+    inline def setVolumeTypeUndefined: Self = StObject.set(x, "volumeType", js.undefined)
   }
 }

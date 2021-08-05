@@ -11,8 +11,7 @@ object scriptsExecuteAsyncScriptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     _underscore: Element,
     script: String,
     scriptTimeout: Double,

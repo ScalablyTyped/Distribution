@@ -37,8 +37,7 @@ trait DataSourceSpecBuilder extends StObject {
 }
 object DataSourceSpecBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBigQuery: () => BigQueryDataSourceSpecBuilder,
     build: () => DataSourceSpec,
     copy: () => DataSourceSpecBuilder,
@@ -52,31 +51,22 @@ object DataSourceSpecBuilder {
     __obj.asInstanceOf[DataSourceSpecBuilder]
   }
   
-  @scala.inline
-  implicit class DataSourceSpecBuilderMutableBuilder[Self <: DataSourceSpecBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSpecBuilder](x: Self) {
     
-    @scala.inline
-    def setAsBigQuery(value: () => BigQueryDataSourceSpecBuilder): Self = StObject.set(x, "asBigQuery", js.Any.fromFunction0(value))
+    inline def setAsBigQuery(value: () => BigQueryDataSourceSpecBuilder): Self = StObject.set(x, "asBigQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuild(value: () => DataSourceSpec): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => DataSourceSpec): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopy(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => js.Array[DataSourceParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => js.Array[DataSourceParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => DataSourceType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => DataSourceType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAllParameters(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "removeAllParameters", js.Any.fromFunction0(value))
+    inline def setRemoveAllParameters(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "removeAllParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveParameter(value: String => DataSourceSpecBuilder): Self = StObject.set(x, "removeParameter", js.Any.fromFunction1(value))
+    inline def setRemoveParameter(value: String => DataSourceSpecBuilder): Self = StObject.set(x, "removeParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParameterFromCell(value: (String, String) => DataSourceSpecBuilder): Self = StObject.set(x, "setParameterFromCell", js.Any.fromFunction2(value))
+    inline def setSetParameterFromCell(value: (String, String) => DataSourceSpecBuilder): Self = StObject.set(x, "setParameterFromCell", js.Any.fromFunction2(value))
   }
 }

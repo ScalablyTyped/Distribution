@@ -15,8 +15,7 @@ object connectionInterfaceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def get(): CLIENTMUTATIONID = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[CLIENTMUTATIONID]
+    inline def get(): CLIENTMUTATIONID = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[CLIENTMUTATIONID]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -28,20 +27,16 @@ object connectionInterfaceMod {
   }
   object EdgeRecord {
     
-    @scala.inline
-    def apply(cursor: js.Any, node: Record[DataID, js.Any]): EdgeRecord = {
+    inline def apply(cursor: js.Any, node: Record[DataID, js.Any]): EdgeRecord = {
       val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeRecord]
     }
     
-    @scala.inline
-    implicit class EdgeRecordMutableBuilder[Self <: EdgeRecord] (val x: Self) extends AnyVal {
+    extension [Self <: EdgeRecord](x: Self) {
       
-      @scala.inline
-      def setCursor(value: js.Any): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: js.Any): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Record[DataID, js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Record[DataID, js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,38 +52,28 @@ object connectionInterfaceMod {
   }
   object PageInfo {
     
-    @scala.inline
-    def apply(hasNextPage: Boolean, hasPreviousPage: Boolean): PageInfo = {
+    inline def apply(hasNextPage: Boolean, hasPreviousPage: Boolean): PageInfo = {
       val __obj = js.Dynamic.literal(hasNextPage = hasNextPage.asInstanceOf[js.Any], hasPreviousPage = hasPreviousPage.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageInfo]
     }
     
-    @scala.inline
-    implicit class PageInfoMutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PageInfo](x: Self) {
       
-      @scala.inline
-      def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
+      inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndCursorNull: Self = StObject.set(x, "endCursor", null)
+      inline def setEndCursorNull: Self = StObject.set(x, "endCursor", null)
       
-      @scala.inline
-      def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
+      inline def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
       
-      @scala.inline
-      def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
+      inline def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasPreviousPage(value: Boolean): Self = StObject.set(x, "hasPreviousPage", value.asInstanceOf[js.Any])
+      inline def setHasPreviousPage(value: Boolean): Self = StObject.set(x, "hasPreviousPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCursor(value: String): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
+      inline def setStartCursor(value: String): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCursorNull: Self = StObject.set(x, "startCursor", null)
+      inline def setStartCursorNull: Self = StObject.set(x, "startCursor", null)
       
-      @scala.inline
-      def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
+      inline def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
     }
   }
 }

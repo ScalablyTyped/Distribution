@@ -10,19 +10,15 @@ trait SendBulkEmailResponse extends StObject {
 }
 object SendBulkEmailResponse {
   
-  @scala.inline
-  def apply(BulkEmailEntryResults: BulkEmailEntryResultList): SendBulkEmailResponse = {
+  inline def apply(BulkEmailEntryResults: BulkEmailEntryResultList): SendBulkEmailResponse = {
     val __obj = js.Dynamic.literal(BulkEmailEntryResults = BulkEmailEntryResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendBulkEmailResponse]
   }
   
-  @scala.inline
-  implicit class SendBulkEmailResponseMutableBuilder[Self <: SendBulkEmailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendBulkEmailResponse](x: Self) {
     
-    @scala.inline
-    def setBulkEmailEntryResults(value: BulkEmailEntryResultList): Self = StObject.set(x, "BulkEmailEntryResults", value.asInstanceOf[js.Any])
+    inline def setBulkEmailEntryResults(value: BulkEmailEntryResultList): Self = StObject.set(x, "BulkEmailEntryResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkEmailEntryResultsVarargs(value: BulkEmailEntryResult*): Self = StObject.set(x, "BulkEmailEntryResults", js.Array(value :_*))
+    inline def setBulkEmailEntryResultsVarargs(value: BulkEmailEntryResult*): Self = StObject.set(x, "BulkEmailEntryResults", js.Array(value :_*))
   }
 }

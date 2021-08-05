@@ -30,26 +30,20 @@ object listGroupItemHeadingMod {
   }
   object ListGroupItemHeadingProps {
     
-    @scala.inline
-    def apply(): ListGroupItemHeadingProps = {
+    inline def apply(): ListGroupItemHeadingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListGroupItemHeadingProps]
     }
     
-    @scala.inline
-    implicit class ListGroupItemHeadingPropsMutableBuilder[Self <: ListGroupItemHeadingProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListGroupItemHeadingProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

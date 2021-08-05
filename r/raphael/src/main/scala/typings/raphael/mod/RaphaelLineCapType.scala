@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RaphaelLineCapType extends StObject
 object RaphaelLineCapType {
   
-  @scala.inline
-  def butt: typings.raphael.raphaelStrings.butt = "butt".asInstanceOf[typings.raphael.raphaelStrings.butt]
+  inline def butt: typings.raphael.raphaelStrings.butt = "butt".asInstanceOf[typings.raphael.raphaelStrings.butt]
   
-  @scala.inline
-  def round: typings.raphael.raphaelStrings.round = "round".asInstanceOf[typings.raphael.raphaelStrings.round]
+  inline def round: typings.raphael.raphaelStrings.round = "round".asInstanceOf[typings.raphael.raphaelStrings.round]
   
-  @scala.inline
-  def square: typings.raphael.raphaelStrings.square = "square".asInstanceOf[typings.raphael.raphaelStrings.square]
+  inline def square: typings.raphael.raphaelStrings.square = "square".asInstanceOf[typings.raphael.raphaelStrings.square]
 }

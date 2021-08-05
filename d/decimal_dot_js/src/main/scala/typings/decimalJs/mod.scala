@@ -81,154 +81,112 @@ object mod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @scala.inline
-    def abs(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def abs(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def acos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def acos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def acosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def acosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def add(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def add(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def asin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def asin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def asinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def asinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def atan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def atan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def atan2(y: Value, x: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(y.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def atan2(y: Value, x: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(y.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def atanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def atanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def cbrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def cbrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def ceil(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def ceil(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    @scala.inline
-    def config(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def config(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    @scala.inline
-    def cos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def cos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def cosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def cosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.crypto")
     @js.native
     val crypto: Boolean = js.native
     
-    @scala.inline
-    def div(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def div(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def exp(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def exp(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def floor(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def floor(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ln(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def ln(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def log(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
-    @scala.inline
-    def log(n: Value, base: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log(n: Value, base: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def log10(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log10(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def log2(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log2(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.maxE")
     @js.native
     val maxE: Double = js.native
     
-    @scala.inline
-    def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.minE")
     @js.native
     val minE: Double = js.native
     
-    @scala.inline
-    def mod(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def mod(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.modulo")
     @js.native
     val modulo: Modulo = js.native
     
-    @scala.inline
-    def mul(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def mul(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def noConflict(): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Constructor]
+    inline def noConflict(): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Constructor]
     
     // Browser only
-    @scala.inline
-    def pow(base: Value, exponent: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def pow(base: Value, exponent: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.precision")
     @js.native
     val precision: Double = js.native
     
-    @scala.inline
-    def random(): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.decimalJs.mod.Decimal]
-    @scala.inline
-    def random(significantDigits: Double): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(significantDigits.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def random(): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def random(significantDigits: Double): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(significantDigits.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def round(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def round(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.rounding")
     @js.native
     val rounding: Rounding = js.native
     
-    @scala.inline
-    def set(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def set(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    @scala.inline
-    def sign(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sign(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sqrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sqrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sub(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sub(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def tan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def tan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def tanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def tanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "default.toExpNeg")
     @js.native
@@ -238,8 +196,7 @@ object mod {
     @js.native
     val toExpPos: Double = js.native
     
-    @scala.inline
-    def trunc(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def trunc(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
   }
   
   @JSImport("decimal.js", "Decimal")
@@ -369,7 +326,7 @@ object mod {
     
     def mul(n: Value): Decimal = js.native
     
-    val name: String = js.native
+    /* private */ val name: String = js.native
     
     def naturalExponential(): Decimal = js.native
     
@@ -528,154 +485,112 @@ object mod {
     @js.native
     val ROUND_UP: `0` = js.native
     
-    @scala.inline
-    def abs(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def abs(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def acos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def acos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def acosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def acosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def add(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def add(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def asin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def asin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def asinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def asinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def atan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def atan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def atan2(y: Value, x: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(y.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def atan2(y: Value, x: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(y.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def atanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def atanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def cbrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def cbrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def ceil(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def ceil(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def clone(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    @scala.inline
-    def config(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def config(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    @scala.inline
-    def cos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def cos(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def cosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def cosh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.crypto")
     @js.native
     val crypto: Boolean = js.native
     
-    @scala.inline
-    def div(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def div(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def exp(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def exp(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def floor(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def floor(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def hypot(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDecimal(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def ln(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def ln(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("ln")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def log(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
-    @scala.inline
-    def log(n: Value, base: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log(n: Value, base: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(n.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def log10(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log10(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def log2(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def log2(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def max(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.maxE")
     @js.native
     val maxE: Double = js.native
     
-    @scala.inline
-    def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def min(n: Value*): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.minE")
     @js.native
     val minE: Double = js.native
     
-    @scala.inline
-    def mod(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def mod(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.modulo")
     @js.native
     val modulo: Modulo = js.native
     
-    @scala.inline
-    def mul(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def mul(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def noConflict(): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Constructor]
+    inline def noConflict(): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Constructor]
     
     // Browser only
-    @scala.inline
-    def pow(base: Value, exponent: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def pow(base: Value, exponent: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exponent.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.precision")
     @js.native
     val precision: Double = js.native
     
-    @scala.inline
-    def random(): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.decimalJs.mod.Decimal]
-    @scala.inline
-    def random(significantDigits: Double): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(significantDigits.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def random(): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def random(significantDigits: Double): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(significantDigits.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def round(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def round(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.rounding")
     @js.native
     val rounding: Rounding = js.native
     
-    @scala.inline
-    def set(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
+    inline def set(`object`: Config): Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any]).asInstanceOf[Constructor]
     
-    @scala.inline
-    def sign(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sign(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sin(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sinh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sqrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sqrt(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def sub(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def sub(x: Value, y: Value): typings.decimalJs.mod.Decimal = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def tan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def tan(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
-    @scala.inline
-    def tanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def tanh(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     @JSImport("decimal.js", "Decimal.toExpNeg")
     @js.native
@@ -685,8 +600,7 @@ object mod {
     @js.native
     val toExpPos: Double = js.native
     
-    @scala.inline
-    def trunc(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
+    inline def trunc(n: Value): typings.decimalJs.mod.Decimal = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(n.asInstanceOf[js.Any]).asInstanceOf[typings.decimalJs.mod.Decimal]
     
     trait Config extends StObject {
       
@@ -710,68 +624,48 @@ object mod {
     }
     object Config {
       
-      @scala.inline
-      def apply(): Config = {
+      inline def apply(): Config = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Config]
       }
       
-      @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+      extension [Self <: Config](x: Self) {
         
-        @scala.inline
-        def setCrypto(value: Boolean): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
+        inline def setCrypto(value: Boolean): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCryptoUndefined: Self = StObject.set(x, "crypto", js.undefined)
+        inline def setCryptoUndefined: Self = StObject.set(x, "crypto", js.undefined)
         
-        @scala.inline
-        def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+        inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+        inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
         
-        @scala.inline
-        def setMaxE(value: Double): Self = StObject.set(x, "maxE", value.asInstanceOf[js.Any])
+        inline def setMaxE(value: Double): Self = StObject.set(x, "maxE", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxEUndefined: Self = StObject.set(x, "maxE", js.undefined)
+        inline def setMaxEUndefined: Self = StObject.set(x, "maxE", js.undefined)
         
-        @scala.inline
-        def setMinE(value: Double): Self = StObject.set(x, "minE", value.asInstanceOf[js.Any])
+        inline def setMinE(value: Double): Self = StObject.set(x, "minE", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinEUndefined: Self = StObject.set(x, "minE", js.undefined)
+        inline def setMinEUndefined: Self = StObject.set(x, "minE", js.undefined)
         
-        @scala.inline
-        def setModulo(value: Modulo): Self = StObject.set(x, "modulo", value.asInstanceOf[js.Any])
+        inline def setModulo(value: Modulo): Self = StObject.set(x, "modulo", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModuloUndefined: Self = StObject.set(x, "modulo", js.undefined)
+        inline def setModuloUndefined: Self = StObject.set(x, "modulo", js.undefined)
         
-        @scala.inline
-        def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+        inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+        inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
         
-        @scala.inline
-        def setRounding(value: Rounding): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+        inline def setRounding(value: Rounding): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
+        inline def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
         
-        @scala.inline
-        def setToExpNeg(value: Double): Self = StObject.set(x, "toExpNeg", value.asInstanceOf[js.Any])
+        inline def setToExpNeg(value: Double): Self = StObject.set(x, "toExpNeg", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToExpNegUndefined: Self = StObject.set(x, "toExpNeg", js.undefined)
+        inline def setToExpNegUndefined: Self = StObject.set(x, "toExpNeg", js.undefined)
         
-        @scala.inline
-        def setToExpPos(value: Double): Self = StObject.set(x, "toExpPos", value.asInstanceOf[js.Any])
+        inline def setToExpPos(value: Double): Self = StObject.set(x, "toExpPos", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToExpPosUndefined: Self = StObject.set(x, "toExpPos", js.undefined)
+        inline def setToExpPosUndefined: Self = StObject.set(x, "toExpPos", js.undefined)
       }
     }
     
@@ -923,35 +817,25 @@ object mod {
     trait Modulo extends StObject
     object Modulo {
       
-      @scala.inline
-      def `0`: typings.decimalJs.decimalJsNumbers.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsNumbers.`0`]
+      inline def `0`: typings.decimalJs.decimalJsNumbers.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.decimalJs.decimalJsNumbers.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsNumbers.`1`]
+      inline def `1`: typings.decimalJs.decimalJsNumbers.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsNumbers.`1`]
       
-      @scala.inline
-      def `2`: typings.decimalJs.decimalJsNumbers.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsNumbers.`2`]
+      inline def `2`: typings.decimalJs.decimalJsNumbers.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsNumbers.`2`]
       
-      @scala.inline
-      def `3`: typings.decimalJs.decimalJsNumbers.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsNumbers.`3`]
+      inline def `3`: typings.decimalJs.decimalJsNumbers.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsNumbers.`3`]
       
-      @scala.inline
-      def `4`: typings.decimalJs.decimalJsNumbers.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsNumbers.`4`]
+      inline def `4`: typings.decimalJs.decimalJsNumbers.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsNumbers.`4`]
       
-      @scala.inline
-      def `5`: typings.decimalJs.decimalJsNumbers.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsNumbers.`5`]
+      inline def `5`: typings.decimalJs.decimalJsNumbers.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsNumbers.`5`]
       
-      @scala.inline
-      def `6`: typings.decimalJs.decimalJsNumbers.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsNumbers.`6`]
+      inline def `6`: typings.decimalJs.decimalJsNumbers.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsNumbers.`6`]
       
-      @scala.inline
-      def `7`: typings.decimalJs.decimalJsNumbers.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsNumbers.`7`]
+      inline def `7`: typings.decimalJs.decimalJsNumbers.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsNumbers.`7`]
       
-      @scala.inline
-      def `8`: typings.decimalJs.decimalJsNumbers.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsNumbers.`8`]
+      inline def `8`: typings.decimalJs.decimalJsNumbers.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsNumbers.`8`]
       
-      @scala.inline
-      def `9`: typings.decimalJs.decimalJsNumbers.`9` = 9.asInstanceOf[typings.decimalJs.decimalJsNumbers.`9`]
+      inline def `9`: typings.decimalJs.decimalJsNumbers.`9` = 9.asInstanceOf[typings.decimalJs.decimalJsNumbers.`9`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -968,32 +852,23 @@ object mod {
     trait Rounding extends StObject
     object Rounding {
       
-      @scala.inline
-      def `0`: typings.decimalJs.decimalJsNumbers.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsNumbers.`0`]
+      inline def `0`: typings.decimalJs.decimalJsNumbers.`0` = 0.asInstanceOf[typings.decimalJs.decimalJsNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.decimalJs.decimalJsNumbers.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsNumbers.`1`]
+      inline def `1`: typings.decimalJs.decimalJsNumbers.`1` = 1.asInstanceOf[typings.decimalJs.decimalJsNumbers.`1`]
       
-      @scala.inline
-      def `2`: typings.decimalJs.decimalJsNumbers.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsNumbers.`2`]
+      inline def `2`: typings.decimalJs.decimalJsNumbers.`2` = 2.asInstanceOf[typings.decimalJs.decimalJsNumbers.`2`]
       
-      @scala.inline
-      def `3`: typings.decimalJs.decimalJsNumbers.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsNumbers.`3`]
+      inline def `3`: typings.decimalJs.decimalJsNumbers.`3` = 3.asInstanceOf[typings.decimalJs.decimalJsNumbers.`3`]
       
-      @scala.inline
-      def `4`: typings.decimalJs.decimalJsNumbers.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsNumbers.`4`]
+      inline def `4`: typings.decimalJs.decimalJsNumbers.`4` = 4.asInstanceOf[typings.decimalJs.decimalJsNumbers.`4`]
       
-      @scala.inline
-      def `5`: typings.decimalJs.decimalJsNumbers.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsNumbers.`5`]
+      inline def `5`: typings.decimalJs.decimalJsNumbers.`5` = 5.asInstanceOf[typings.decimalJs.decimalJsNumbers.`5`]
       
-      @scala.inline
-      def `6`: typings.decimalJs.decimalJsNumbers.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsNumbers.`6`]
+      inline def `6`: typings.decimalJs.decimalJsNumbers.`6` = 6.asInstanceOf[typings.decimalJs.decimalJsNumbers.`6`]
       
-      @scala.inline
-      def `7`: typings.decimalJs.decimalJsNumbers.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsNumbers.`7`]
+      inline def `7`: typings.decimalJs.decimalJsNumbers.`7` = 7.asInstanceOf[typings.decimalJs.decimalJsNumbers.`7`]
       
-      @scala.inline
-      def `8`: typings.decimalJs.decimalJsNumbers.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsNumbers.`8`]
+      inline def `8`: typings.decimalJs.decimalJsNumbers.`8` = 8.asInstanceOf[typings.decimalJs.decimalJsNumbers.`8`]
     }
     
     type Value = String | Double | typings.decimalJs.mod.Decimal

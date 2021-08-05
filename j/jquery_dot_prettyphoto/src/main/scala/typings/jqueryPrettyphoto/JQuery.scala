@@ -22,16 +22,13 @@ trait JQuery extends StObject {
 }
 object JQuery {
   
-  @scala.inline
-  def apply(prettyPhoto: moduleJQuery): JQuery = {
+  inline def apply(prettyPhoto: moduleJQuery): JQuery = {
     val __obj = js.Dynamic.literal(prettyPhoto = prettyPhoto.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuery]
   }
   
-  @scala.inline
-  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+  extension [Self <: JQuery](x: Self) {
     
-    @scala.inline
-    def setPrettyPhoto(value: moduleJQuery): Self = StObject.set(x, "prettyPhoto", value.asInstanceOf[js.Any])
+    inline def setPrettyPhoto(value: moduleJQuery): Self = StObject.set(x, "prettyPhoto", value.asInstanceOf[js.Any])
   }
 }

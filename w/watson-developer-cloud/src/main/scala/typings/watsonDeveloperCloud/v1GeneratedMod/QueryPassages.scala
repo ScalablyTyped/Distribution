@@ -27,49 +27,35 @@ trait QueryPassages extends StObject {
 }
 object QueryPassages {
   
-  @scala.inline
-  def apply(): QueryPassages = {
+  inline def apply(): QueryPassages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryPassages]
   }
   
-  @scala.inline
-  implicit class QueryPassagesMutableBuilder[Self <: QueryPassages] (val x: Self) extends AnyVal {
+  extension [Self <: QueryPassages](x: Self) {
     
-    @scala.inline
-    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
+    inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
+    inline def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
-    @scala.inline
-    def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
+    inline def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
+    inline def setEnd_offsetUndefined: Self = StObject.set(x, "end_offset", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setPassage_score(value: Double): Self = StObject.set(x, "passage_score", value.asInstanceOf[js.Any])
+    inline def setPassage_score(value: Double): Self = StObject.set(x, "passage_score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassage_scoreUndefined: Self = StObject.set(x, "passage_score", js.undefined)
+    inline def setPassage_scoreUndefined: Self = StObject.set(x, "passage_score", js.undefined)
     
-    @scala.inline
-    def setPassage_text(value: String): Self = StObject.set(x, "passage_text", value.asInstanceOf[js.Any])
+    inline def setPassage_text(value: String): Self = StObject.set(x, "passage_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassage_textUndefined: Self = StObject.set(x, "passage_text", js.undefined)
+    inline def setPassage_textUndefined: Self = StObject.set(x, "passage_text", js.undefined)
     
-    @scala.inline
-    def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
+    inline def setStart_offset(value: Double): Self = StObject.set(x, "start_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
+    inline def setStart_offsetUndefined: Self = StObject.set(x, "start_offset", js.undefined)
   }
 }

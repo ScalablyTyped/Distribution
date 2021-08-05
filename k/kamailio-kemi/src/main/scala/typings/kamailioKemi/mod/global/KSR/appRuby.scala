@@ -10,15 +10,11 @@ object appRuby {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def run(func: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def run(func: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(func.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def runP1(func: String, p1: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run_p1")(func.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def runP1(func: String, p1: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run_p1")(func.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def runP2(func: String, p1: String, p2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run_p2")(func.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def runP2(func: String, p1: String, p2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run_p2")(func.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def runP3(func: String, p1: String, p2: String, p3: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run_p3")(func.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def runP3(func: String, p1: String, p2: String, p3: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run_p3")(func.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

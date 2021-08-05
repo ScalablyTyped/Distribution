@@ -18,22 +18,17 @@ trait DisassociateMembersRequest extends StObject {
 }
 object DisassociateMembersRequest {
   
-  @scala.inline
-  def apply(AccountIds: AccountIds, DetectorId: DetectorId): DisassociateMembersRequest = {
+  inline def apply(AccountIds: AccountIds, DetectorId: DetectorId): DisassociateMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateMembersRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateMembersRequestMutableBuilder[Self <: DisassociateMembersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateMembersRequest](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

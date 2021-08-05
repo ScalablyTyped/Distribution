@@ -81,58 +81,41 @@ trait IRenderDefinition extends StObject {
 }
 object IRenderDefinition {
   
-  @scala.inline
-  def apply(engine: Engine): IRenderDefinition = {
+  inline def apply(engine: Engine): IRenderDefinition = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderDefinition]
   }
   
-  @scala.inline
-  implicit class IRenderDefinitionMutableBuilder[Self <: IRenderDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IRenderDefinition](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+    inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
-    @scala.inline
-    def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setEngine(value: Engine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: Engine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: IRendererOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IRendererOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setTextures(value: js.Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: js.Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexturesUndefined: Self = StObject.set(x, "textures", js.undefined)
+    inline def setTexturesUndefined: Self = StObject.set(x, "textures", js.undefined)
   }
 }

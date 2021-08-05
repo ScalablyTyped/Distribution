@@ -25,23 +25,18 @@ object typesPutRepositoryTriggersOutputMod {
   }
   object PutRepositoryTriggersOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutRepositoryTriggersOutput = {
+    inline def apply($metadata: ResponseMetadata): PutRepositoryTriggersOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRepositoryTriggersOutput]
     }
     
-    @scala.inline
-    implicit class PutRepositoryTriggersOutputMutableBuilder[Self <: PutRepositoryTriggersOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutRepositoryTriggersOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+      inline def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
+      inline def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
     }
   }
 }

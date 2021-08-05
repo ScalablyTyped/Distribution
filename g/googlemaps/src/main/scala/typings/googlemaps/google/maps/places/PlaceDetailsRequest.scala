@@ -14,31 +14,23 @@ trait PlaceDetailsRequest extends StObject {
 }
 object PlaceDetailsRequest {
   
-  @scala.inline
-  def apply(placeId: String): PlaceDetailsRequest = {
+  inline def apply(placeId: String): PlaceDetailsRequest = {
     val __obj = js.Dynamic.literal(placeId = placeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceDetailsRequest]
   }
   
-  @scala.inline
-  implicit class PlaceDetailsRequestMutableBuilder[Self <: PlaceDetailsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceDetailsRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionToken(value: AutocompleteSessionToken): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+    inline def setSessionToken(value: AutocompleteSessionToken): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+    inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
   }
 }

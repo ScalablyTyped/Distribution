@@ -13,16 +13,13 @@ trait DeleteScheduledAuditRequest extends StObject {
 }
 object DeleteScheduledAuditRequest {
   
-  @scala.inline
-  def apply(scheduledAuditName: ScheduledAuditName): DeleteScheduledAuditRequest = {
+  inline def apply(scheduledAuditName: ScheduledAuditName): DeleteScheduledAuditRequest = {
     val __obj = js.Dynamic.literal(scheduledAuditName = scheduledAuditName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScheduledAuditRequest]
   }
   
-  @scala.inline
-  implicit class DeleteScheduledAuditRequestMutableBuilder[Self <: DeleteScheduledAuditRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScheduledAuditRequest](x: Self) {
     
-    @scala.inline
-    def setScheduledAuditName(value: ScheduledAuditName): Self = StObject.set(x, "scheduledAuditName", value.asInstanceOf[js.Any])
+    inline def setScheduledAuditName(value: ScheduledAuditName): Self = StObject.set(x, "scheduledAuditName", value.asInstanceOf[js.Any])
   }
 }

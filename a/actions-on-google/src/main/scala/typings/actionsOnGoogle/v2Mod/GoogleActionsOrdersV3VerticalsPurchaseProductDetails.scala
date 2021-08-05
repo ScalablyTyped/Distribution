@@ -40,43 +40,31 @@ trait GoogleActionsOrdersV3VerticalsPurchaseProductDetails extends StObject {
 }
 object GoogleActionsOrdersV3VerticalsPurchaseProductDetails {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsPurchaseProductDetails = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsPurchaseProductDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchaseProductDetails]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchaseProductDetailsMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchaseProductDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsPurchaseProductDetails](x: Self) {
     
-    @scala.inline
-    def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
+    inline def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGtinUndefined: Self = StObject.set(x, "gtin", js.undefined)
+    inline def setGtinUndefined: Self = StObject.set(x, "gtin", js.undefined)
     
-    @scala.inline
-    def setPlu(value: String): Self = StObject.set(x, "plu", value.asInstanceOf[js.Any])
+    inline def setPlu(value: String): Self = StObject.set(x, "plu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluUndefined: Self = StObject.set(x, "plu", js.undefined)
+    inline def setPluUndefined: Self = StObject.set(x, "plu", js.undefined)
     
-    @scala.inline
-    def setProductAttributes(value: ApiClientObjectMap[String]): Self = StObject.set(x, "productAttributes", value.asInstanceOf[js.Any])
+    inline def setProductAttributes(value: ApiClientObjectMap[String]): Self = StObject.set(x, "productAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductAttributesUndefined: Self = StObject.set(x, "productAttributes", js.undefined)
+    inline def setProductAttributesUndefined: Self = StObject.set(x, "productAttributes", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
+    inline def setProductType(value: String): Self = StObject.set(x, "productType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductTypeUndefined: Self = StObject.set(x, "productType", js.undefined)
+    inline def setProductTypeUndefined: Self = StObject.set(x, "productType", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ trait GetItemOutput
      with typings.awsSdkClientDynamodbNode.typesGetItemOutputMod.GetItemOutput
 object GetItemOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetItemOutput = {
+  inline def apply($metadata: ResponseMetadata): GetItemOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemOutput]
   }

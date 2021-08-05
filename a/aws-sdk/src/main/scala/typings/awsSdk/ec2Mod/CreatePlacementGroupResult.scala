@@ -10,19 +10,15 @@ trait CreatePlacementGroupResult extends StObject {
 }
 object CreatePlacementGroupResult {
   
-  @scala.inline
-  def apply(): CreatePlacementGroupResult = {
+  inline def apply(): CreatePlacementGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePlacementGroupResult]
   }
   
-  @scala.inline
-  implicit class CreatePlacementGroupResultMutableBuilder[Self <: CreatePlacementGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlacementGroupResult](x: Self) {
     
-    @scala.inline
-    def setPlacementGroup(value: PlacementGroup): Self = StObject.set(x, "PlacementGroup", value.asInstanceOf[js.Any])
+    inline def setPlacementGroup(value: PlacementGroup): Self = StObject.set(x, "PlacementGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementGroupUndefined: Self = StObject.set(x, "PlacementGroup", js.undefined)
+    inline def setPlacementGroupUndefined: Self = StObject.set(x, "PlacementGroup", js.undefined)
   }
 }

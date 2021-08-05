@@ -18,25 +18,19 @@ trait CreatePlatformVersionResult extends StObject {
 }
 object CreatePlatformVersionResult {
   
-  @scala.inline
-  def apply(): CreatePlatformVersionResult = {
+  inline def apply(): CreatePlatformVersionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePlatformVersionResult]
   }
   
-  @scala.inline
-  implicit class CreatePlatformVersionResultMutableBuilder[Self <: CreatePlatformVersionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlatformVersionResult](x: Self) {
     
-    @scala.inline
-    def setBuilder(value: Builder): Self = StObject.set(x, "Builder", value.asInstanceOf[js.Any])
+    inline def setBuilder(value: Builder): Self = StObject.set(x, "Builder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuilderUndefined: Self = StObject.set(x, "Builder", js.undefined)
+    inline def setBuilderUndefined: Self = StObject.set(x, "Builder", js.undefined)
     
-    @scala.inline
-    def setPlatformSummary(value: PlatformSummary): Self = StObject.set(x, "PlatformSummary", value.asInstanceOf[js.Any])
+    inline def setPlatformSummary(value: PlatformSummary): Self = StObject.set(x, "PlatformSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformSummaryUndefined: Self = StObject.set(x, "PlatformSummary", js.undefined)
+    inline def setPlatformSummaryUndefined: Self = StObject.set(x, "PlatformSummary", js.undefined)
   }
 }

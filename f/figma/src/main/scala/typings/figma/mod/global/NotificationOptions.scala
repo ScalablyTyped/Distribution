@@ -10,19 +10,15 @@ trait NotificationOptions extends StObject {
 }
 object NotificationOptions {
   
-  @scala.inline
-  def apply(): NotificationOptions = {
+  inline def apply(): NotificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationOptions]
   }
   
-  @scala.inline
-  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationOptions](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

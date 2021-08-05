@@ -25,44 +25,32 @@ trait TransformBlock[T /* <: Record[String, js.Any] */]
 }
 object TransformBlock {
   
-  @scala.inline
-  def apply[T /* <: Record[String, js.Any] */](blocks: js.Array[String], transform: T => BlockInstance[Partial[T]]): TransformBlock[T] = {
+  inline def apply[T /* <: Record[String, js.Any] */](blocks: js.Array[String], transform: T => BlockInstance[Partial[T]]): TransformBlock[T] = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
     __obj.updateDynamic("type")("block")
     __obj.asInstanceOf[TransformBlock[T]]
   }
   
-  @scala.inline
-  implicit class TransformBlockMutableBuilder[Self <: TransformBlock[?], T /* <: Record[String, js.Any] */] (val x: Self & TransformBlock[T]) extends AnyVal {
+  extension [Self <: TransformBlock[?], T /* <: Record[String, js.Any] */](x: Self & TransformBlock[T]) {
     
-    @scala.inline
-    def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setIsMatch(value: /* attributes */ T => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
+    inline def setIsMatch(value: /* attributes */ T => Boolean): Self = StObject.set(x, "isMatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMatchUndefined: Self = StObject.set(x, "isMatch", js.undefined)
+    inline def setIsMatchUndefined: Self = StObject.set(x, "isMatch", js.undefined)
     
-    @scala.inline
-    def setIsMultiBlock(value: Boolean): Self = StObject.set(x, "isMultiBlock", value.asInstanceOf[js.Any])
+    inline def setIsMultiBlock(value: Boolean): Self = StObject.set(x, "isMultiBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMultiBlockUndefined: Self = StObject.set(x, "isMultiBlock", js.undefined)
+    inline def setIsMultiBlockUndefined: Self = StObject.set(x, "isMultiBlock", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setTransform(value: T => BlockInstance[Partial[T]]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: T => BlockInstance[Partial[T]]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: block_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: block_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

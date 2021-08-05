@@ -10,16 +10,13 @@ trait FilesAny extends StObject {
 }
 object FilesAny {
   
-  @scala.inline
-  def apply(files: js.Any): FilesAny = {
+  inline def apply(files: js.Any): FilesAny = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilesAny]
   }
   
-  @scala.inline
-  implicit class FilesAnyMutableBuilder[Self <: FilesAny] (val x: Self) extends AnyVal {
+  extension [Self <: FilesAny](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
   }
 }

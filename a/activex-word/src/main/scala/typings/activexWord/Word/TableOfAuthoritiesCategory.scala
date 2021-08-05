@@ -16,13 +16,12 @@ trait TableOfAuthoritiesCategory extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.TableOfAuthoritiesCategory_typekey")
+  /* private */ @JSName("Word.TableOfAuthoritiesCategory_typekey")
   var WordDotTableOfAuthoritiesCategory_typekey: TableOfAuthoritiesCategory
 }
 object TableOfAuthoritiesCategory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Index: Double,
@@ -35,25 +34,18 @@ object TableOfAuthoritiesCategory {
     __obj.asInstanceOf[TableOfAuthoritiesCategory]
   }
   
-  @scala.inline
-  implicit class TableOfAuthoritiesCategoryMutableBuilder[Self <: TableOfAuthoritiesCategory] (val x: Self) extends AnyVal {
+  extension [Self <: TableOfAuthoritiesCategory](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotTableOfAuthoritiesCategory_typekey(value: TableOfAuthoritiesCategory): Self = StObject.set(x, "Word.TableOfAuthoritiesCategory_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotTableOfAuthoritiesCategory_typekey(value: TableOfAuthoritiesCategory): Self = StObject.set(x, "Word.TableOfAuthoritiesCategory_typekey", value.asInstanceOf[js.Any])
   }
 }

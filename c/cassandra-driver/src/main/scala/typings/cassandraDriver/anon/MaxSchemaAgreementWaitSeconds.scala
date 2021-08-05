@@ -16,37 +16,27 @@ trait MaxSchemaAgreementWaitSeconds extends StObject {
 }
 object MaxSchemaAgreementWaitSeconds {
   
-  @scala.inline
-  def apply(): MaxSchemaAgreementWaitSeconds = {
+  inline def apply(): MaxSchemaAgreementWaitSeconds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxSchemaAgreementWaitSeconds]
   }
   
-  @scala.inline
-  implicit class MaxSchemaAgreementWaitSecondsMutableBuilder[Self <: MaxSchemaAgreementWaitSeconds] (val x: Self) extends AnyVal {
+  extension [Self <: MaxSchemaAgreementWaitSeconds](x: Self) {
     
-    @scala.inline
-    def setMaxSchemaAgreementWaitSeconds(value: Double): Self = StObject.set(x, "maxSchemaAgreementWaitSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxSchemaAgreementWaitSeconds(value: Double): Self = StObject.set(x, "maxSchemaAgreementWaitSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSchemaAgreementWaitSecondsUndefined: Self = StObject.set(x, "maxSchemaAgreementWaitSeconds", js.undefined)
+    inline def setMaxSchemaAgreementWaitSecondsUndefined: Self = StObject.set(x, "maxSchemaAgreementWaitSeconds", js.undefined)
     
-    @scala.inline
-    def setMaxVersion(value: Double): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+    inline def setMaxVersion(value: Double): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
+    inline def setMaxVersionUndefined: Self = StObject.set(x, "maxVersion", js.undefined)
     
-    @scala.inline
-    def setNoCompact(value: Boolean): Self = StObject.set(x, "noCompact", value.asInstanceOf[js.Any])
+    inline def setNoCompact(value: Boolean): Self = StObject.set(x, "noCompact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCompactUndefined: Self = StObject.set(x, "noCompact", js.undefined)
+    inline def setNoCompactUndefined: Self = StObject.set(x, "noCompact", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

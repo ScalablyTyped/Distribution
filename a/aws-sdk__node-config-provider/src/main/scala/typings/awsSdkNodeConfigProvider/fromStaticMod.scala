@@ -11,8 +11,7 @@ object fromStaticMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromStatic[T](defaultValue: FromStaticConfig[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStatic")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
+  inline def fromStatic[T](defaultValue: FromStaticConfig[T]): Provider[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStatic")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Provider[T]]
   
   type FromStaticConfig[T] = T | js.Function0[T]
 }

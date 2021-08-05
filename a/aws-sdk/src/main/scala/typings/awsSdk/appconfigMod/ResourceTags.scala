@@ -13,19 +13,15 @@ trait ResourceTags extends StObject {
 }
 object ResourceTags {
   
-  @scala.inline
-  def apply(): ResourceTags = {
+  inline def apply(): ResourceTags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceTags]
   }
   
-  @scala.inline
-  implicit class ResourceTagsMutableBuilder[Self <: ResourceTags] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceTags](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

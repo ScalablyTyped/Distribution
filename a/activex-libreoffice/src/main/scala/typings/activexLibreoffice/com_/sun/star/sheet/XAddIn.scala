@@ -107,8 +107,7 @@ trait XAddIn
 }
 object XAddIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locale: Locale,
     acquire: () => Unit,
     getArgumentDescription: (String, Double) => String,
@@ -127,28 +126,20 @@ object XAddIn {
     __obj.asInstanceOf[XAddIn]
   }
   
-  @scala.inline
-  implicit class XAddInMutableBuilder[Self <: XAddIn] (val x: Self) extends AnyVal {
+  extension [Self <: XAddIn](x: Self) {
     
-    @scala.inline
-    def setGetArgumentDescription(value: (String, Double) => String): Self = StObject.set(x, "getArgumentDescription", js.Any.fromFunction2(value))
+    inline def setGetArgumentDescription(value: (String, Double) => String): Self = StObject.set(x, "getArgumentDescription", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDisplayArgumentName(value: (String, Double) => String): Self = StObject.set(x, "getDisplayArgumentName", js.Any.fromFunction2(value))
+    inline def setGetDisplayArgumentName(value: (String, Double) => String): Self = StObject.set(x, "getDisplayArgumentName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDisplayCategoryName(value: String => String): Self = StObject.set(x, "getDisplayCategoryName", js.Any.fromFunction1(value))
+    inline def setGetDisplayCategoryName(value: String => String): Self = StObject.set(x, "getDisplayCategoryName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDisplayFunctionName(value: String => String): Self = StObject.set(x, "getDisplayFunctionName", js.Any.fromFunction1(value))
+    inline def setGetDisplayFunctionName(value: String => String): Self = StObject.set(x, "getDisplayFunctionName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFunctionDescription(value: String => String): Self = StObject.set(x, "getFunctionDescription", js.Any.fromFunction1(value))
+    inline def setGetFunctionDescription(value: String => String): Self = StObject.set(x, "getFunctionDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProgrammaticCategoryName(value: String => String): Self = StObject.set(x, "getProgrammaticCategoryName", js.Any.fromFunction1(value))
+    inline def setGetProgrammaticCategoryName(value: String => String): Self = StObject.set(x, "getProgrammaticCategoryName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProgrammaticFuntionName(value: String => String): Self = StObject.set(x, "getProgrammaticFuntionName", js.Any.fromFunction1(value))
+    inline def setGetProgrammaticFuntionName(value: String => String): Self = StObject.set(x, "getProgrammaticFuntionName", js.Any.fromFunction1(value))
   }
 }

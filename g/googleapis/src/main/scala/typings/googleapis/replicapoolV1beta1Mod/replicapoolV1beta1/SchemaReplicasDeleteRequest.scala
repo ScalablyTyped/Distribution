@@ -16,19 +16,15 @@ trait SchemaReplicasDeleteRequest extends StObject {
 }
 object SchemaReplicasDeleteRequest {
   
-  @scala.inline
-  def apply(): SchemaReplicasDeleteRequest = {
+  inline def apply(): SchemaReplicasDeleteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplicasDeleteRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReplicasDeleteRequestMutableBuilder[Self <: SchemaReplicasDeleteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplicasDeleteRequest](x: Self) {
     
-    @scala.inline
-    def setAbandonInstance(value: Boolean): Self = StObject.set(x, "abandonInstance", value.asInstanceOf[js.Any])
+    inline def setAbandonInstance(value: Boolean): Self = StObject.set(x, "abandonInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbandonInstanceUndefined: Self = StObject.set(x, "abandonInstance", js.undefined)
+    inline def setAbandonInstanceUndefined: Self = StObject.set(x, "abandonInstance", js.undefined)
   }
 }

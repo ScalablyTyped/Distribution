@@ -20,8 +20,7 @@ trait ISourceObjectFiles extends StObject {
 }
 object ISourceObjectFiles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, ISourceObjectFile) => Unit,
     AddEmptyFile: (String, String) => ISourceObjectFile,
     AddFile: (String, String, String) => ISourceObjectFile,
@@ -33,25 +32,18 @@ object ISourceObjectFiles {
     __obj.asInstanceOf[ISourceObjectFiles]
   }
   
-  @scala.inline
-  implicit class ISourceObjectFilesMutableBuilder[Self <: ISourceObjectFiles] (val x: Self) extends AnyVal {
+  extension [Self <: ISourceObjectFiles](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, ISourceObjectFile) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, ISourceObjectFile) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddEmptyFile(value: (String, String) => ISourceObjectFile): Self = StObject.set(x, "AddEmptyFile", js.Any.fromFunction2(value))
+    inline def setAddEmptyFile(value: (String, String) => ISourceObjectFile): Self = StObject.set(x, "AddEmptyFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddFile(value: (String, String, String) => ISourceObjectFile): Self = StObject.set(x, "AddFile", js.Any.fromFunction3(value))
+    inline def setAddFile(value: (String, String, String) => ISourceObjectFile): Self = StObject.set(x, "AddFile", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => ISourceObjectFile): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => ISourceObjectFile): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

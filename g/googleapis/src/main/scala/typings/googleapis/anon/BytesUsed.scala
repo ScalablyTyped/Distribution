@@ -12,25 +12,19 @@ trait BytesUsed extends StObject {
 }
 object BytesUsed {
   
-  @scala.inline
-  def apply(): BytesUsed = {
+  inline def apply(): BytesUsed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BytesUsed]
   }
   
-  @scala.inline
-  implicit class BytesUsedMutableBuilder[Self <: BytesUsed] (val x: Self) extends AnyVal {
+  extension [Self <: BytesUsed](x: Self) {
     
-    @scala.inline
-    def setBytesUsed(value: String): Self = StObject.set(x, "bytesUsed", value.asInstanceOf[js.Any])
+    inline def setBytesUsed(value: String): Self = StObject.set(x, "bytesUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUsedUndefined: Self = StObject.set(x, "bytesUsed", js.undefined)
+    inline def setBytesUsedUndefined: Self = StObject.set(x, "bytesUsed", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

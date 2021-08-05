@@ -27,8 +27,7 @@ object mod {
   @js.native
   val track: Track_[js.Any, js.Any, js.Any] = js.native
   
-  @scala.inline
-  def useTracking[P](): TrackingProp[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTracking")().asInstanceOf[TrackingProp[P]]
+  inline def useTracking[P](): TrackingProp[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTracking")().asInstanceOf[TrackingProp[P]]
   
   // Duplicated from ES6 lib to remove the `void` typing, otherwise `track` can’t be used as a HOC function that passes
   // through a JSX component that be used without casting.
@@ -99,35 +98,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](): Options[T] = {
+    inline def apply[T](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setDispatch(value: /* data */ T => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* data */ T => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDispatchOnMount(value: Boolean | (js.Function1[/* contextData */ T, T])): Self = StObject.set(x, "dispatchOnMount", value.asInstanceOf[js.Any])
+      inline def setDispatchOnMount(value: Boolean | (js.Function1[/* contextData */ T, T])): Self = StObject.set(x, "dispatchOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispatchOnMountFunction1(value: /* contextData */ T => T): Self = StObject.set(x, "dispatchOnMount", js.Any.fromFunction1(value))
+      inline def setDispatchOnMountFunction1(value: /* contextData */ T => T): Self = StObject.set(x, "dispatchOnMount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDispatchOnMountUndefined: Self = StObject.set(x, "dispatchOnMount", js.undefined)
+      inline def setDispatchOnMountUndefined: Self = StObject.set(x, "dispatchOnMount", js.undefined)
       
-      @scala.inline
-      def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
+      inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      @scala.inline
-      def setProcess(value: /* ownTrackingData */ T => T | Falsy): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+      inline def setProcess(value: /* ownTrackingData */ T => T | Falsy): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+      inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     }
   }
   
@@ -158,20 +148,16 @@ object mod {
   }
   object TrackingProp {
     
-    @scala.inline
-    def apply[P](getTrackingData: () => js.Object, trackEvent: Partial[P] => Unit): TrackingProp[P] = {
+    inline def apply[P](getTrackingData: () => js.Object, trackEvent: Partial[P] => Unit): TrackingProp[P] = {
       val __obj = js.Dynamic.literal(getTrackingData = js.Any.fromFunction0(getTrackingData), trackEvent = js.Any.fromFunction1(trackEvent))
       __obj.asInstanceOf[TrackingProp[P]]
     }
     
-    @scala.inline
-    implicit class TrackingPropMutableBuilder[Self <: TrackingProp[?], P] (val x: Self & TrackingProp[P]) extends AnyVal {
+    extension [Self <: TrackingProp[?], P](x: Self & TrackingProp[P]) {
       
-      @scala.inline
-      def setGetTrackingData(value: () => js.Object): Self = StObject.set(x, "getTrackingData", js.Any.fromFunction0(value))
+      inline def setGetTrackingData(value: () => js.Object): Self = StObject.set(x, "getTrackingData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrackEvent(value: Partial[P] => Unit): Self = StObject.set(x, "trackEvent", js.Any.fromFunction1(value))
+      inline def setTrackEvent(value: Partial[P] => Unit): Self = StObject.set(x, "trackEvent", js.Any.fromFunction1(value))
     }
   }
   

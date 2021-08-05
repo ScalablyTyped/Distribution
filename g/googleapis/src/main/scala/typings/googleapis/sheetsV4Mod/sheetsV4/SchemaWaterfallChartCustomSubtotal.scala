@@ -34,31 +34,23 @@ trait SchemaWaterfallChartCustomSubtotal extends StObject {
 }
 object SchemaWaterfallChartCustomSubtotal {
   
-  @scala.inline
-  def apply(): SchemaWaterfallChartCustomSubtotal = {
+  inline def apply(): SchemaWaterfallChartCustomSubtotal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWaterfallChartCustomSubtotal]
   }
   
-  @scala.inline
-  implicit class SchemaWaterfallChartCustomSubtotalMutableBuilder[Self <: SchemaWaterfallChartCustomSubtotal] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWaterfallChartCustomSubtotal](x: Self) {
     
-    @scala.inline
-    def setDataIsSubtotal(value: Boolean): Self = StObject.set(x, "dataIsSubtotal", value.asInstanceOf[js.Any])
+    inline def setDataIsSubtotal(value: Boolean): Self = StObject.set(x, "dataIsSubtotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataIsSubtotalUndefined: Self = StObject.set(x, "dataIsSubtotal", js.undefined)
+    inline def setDataIsSubtotalUndefined: Self = StObject.set(x, "dataIsSubtotal", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setSubtotalIndex(value: Double): Self = StObject.set(x, "subtotalIndex", value.asInstanceOf[js.Any])
+    inline def setSubtotalIndex(value: Double): Self = StObject.set(x, "subtotalIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotalIndexUndefined: Self = StObject.set(x, "subtotalIndex", js.undefined)
+    inline def setSubtotalIndexUndefined: Self = StObject.set(x, "subtotalIndex", js.undefined)
   }
 }

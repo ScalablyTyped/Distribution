@@ -13,16 +13,13 @@ trait TapIndex extends StObject {
 }
 object TapIndex {
   
-  @scala.inline
-  def apply(tapIndex: Double): TapIndex = {
+  inline def apply(tapIndex: Double): TapIndex = {
     val __obj = js.Dynamic.literal(tapIndex = tapIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapIndex]
   }
   
-  @scala.inline
-  implicit class TapIndexMutableBuilder[Self <: TapIndex] (val x: Self) extends AnyVal {
+  extension [Self <: TapIndex](x: Self) {
     
-    @scala.inline
-    def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
+    inline def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait EnabledModule extends StObject {
 }
 object EnabledModule {
   
-  @scala.inline
-  def apply(enabled: Boolean, module: String): EnabledModule = {
+  inline def apply(enabled: Boolean, module: String): EnabledModule = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnabledModule]
   }
   
-  @scala.inline
-  implicit class EnabledModuleMutableBuilder[Self <: EnabledModule] (val x: Self) extends AnyVal {
+  extension [Self <: EnabledModule](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

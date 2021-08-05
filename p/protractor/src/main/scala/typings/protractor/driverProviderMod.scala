@@ -14,7 +14,7 @@ object driverProviderMod {
   abstract class DriverProvider protected () extends StObject {
     def this(config: Config) = this()
     
-    var bpRunner: js.Any = js.native
+    /* private */ var bpRunner: js.Any = js.native
     
     var config_ : Config = js.native
     
@@ -84,7 +84,6 @@ object driverProviderMod {
       *
       * @param drivers {webdriver.WebDriver[]} The webdriver instances
       */
-    @scala.inline
-    def quitDrivers(provider: DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("quitDrivers")(provider.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+    inline def quitDrivers(provider: DriverProvider, drivers: js.Array[WebDriver]): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("quitDrivers")(provider.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   }
 }

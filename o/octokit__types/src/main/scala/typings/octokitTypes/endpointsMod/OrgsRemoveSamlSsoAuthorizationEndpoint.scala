@@ -13,20 +13,16 @@ trait OrgsRemoveSamlSsoAuthorizationEndpoint extends StObject {
 }
 object OrgsRemoveSamlSsoAuthorizationEndpoint {
   
-  @scala.inline
-  def apply(credential_id: Double, org_ : String): OrgsRemoveSamlSsoAuthorizationEndpoint = {
+  inline def apply(credential_id: Double, org_ : String): OrgsRemoveSamlSsoAuthorizationEndpoint = {
     val __obj = js.Dynamic.literal(credential_id = credential_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsRemoveSamlSsoAuthorizationEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsRemoveSamlSsoAuthorizationEndpointMutableBuilder[Self <: OrgsRemoveSamlSsoAuthorizationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsRemoveSamlSsoAuthorizationEndpoint](x: Self) {
     
-    @scala.inline
-    def setCredential_id(value: Double): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
+    inline def setCredential_id(value: Double): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

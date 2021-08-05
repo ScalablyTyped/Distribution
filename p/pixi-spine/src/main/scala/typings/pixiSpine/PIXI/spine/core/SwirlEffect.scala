@@ -16,14 +16,13 @@ trait SwirlEffect
   
   var radius: Double
   
-  var worldX: js.Any
+  /* private */ var worldX: js.Any
   
-  var worldY: js.Any
+  /* private */ var worldY: js.Any
 }
 object SwirlEffect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angle: Double,
     begin: Skeleton => Unit,
     centerX: Double,
@@ -38,25 +37,18 @@ object SwirlEffect {
     __obj.asInstanceOf[SwirlEffect]
   }
   
-  @scala.inline
-  implicit class SwirlEffectMutableBuilder[Self <: SwirlEffect] (val x: Self) extends AnyVal {
+  extension [Self <: SwirlEffect](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+    inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+    inline def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldX(value: js.Any): Self = StObject.set(x, "worldX", value.asInstanceOf[js.Any])
+    inline def setWorldX(value: js.Any): Self = StObject.set(x, "worldX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldY(value: js.Any): Self = StObject.set(x, "worldY", value.asInstanceOf[js.Any])
+    inline def setWorldY(value: js.Any): Self = StObject.set(x, "worldY", value.asInstanceOf[js.Any])
   }
 }

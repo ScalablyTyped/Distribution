@@ -51,13 +51,11 @@ object Issuer {
     * performs both openid-configuration and oauth-authorization-server requests.
     * @param issuer Issuer Identifier or metadata URL
     */
-  @scala.inline
-  def discover(issuer: String): js.Promise[Issuer[Client]] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")(issuer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Issuer[Client]]]
+  inline def discover(issuer: String): js.Promise[Issuer[Client]] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")(issuer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Issuer[Client]]]
   
   /**
     * Performs OpenID Provider Issuer Discovery based on End-User input.
     * @param input EMAIL, URL, Hostname and Port, acct or syntax input
     */
-  @scala.inline
-  def webfinger(input: String): js.Promise[Issuer[Client]] = ^.asInstanceOf[js.Dynamic].applyDynamic("webfinger")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Issuer[Client]]]
+  inline def webfinger(input: String): js.Promise[Issuer[Client]] = ^.asInstanceOf[js.Dynamic].applyDynamic("webfinger")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Issuer[Client]]]
 }

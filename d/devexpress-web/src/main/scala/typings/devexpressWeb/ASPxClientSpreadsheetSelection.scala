@@ -41,8 +41,7 @@ trait ASPxClientSpreadsheetSelection extends StObject {
 }
 object ASPxClientSpreadsheetSelection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeCellColumnIndex: Double,
     activeCellRowIndex: Double,
     bottomRowIndex: Double,
@@ -54,25 +53,18 @@ object ASPxClientSpreadsheetSelection {
     __obj.asInstanceOf[ASPxClientSpreadsheetSelection]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetSelectionMutableBuilder[Self <: ASPxClientSpreadsheetSelection] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetSelection](x: Self) {
     
-    @scala.inline
-    def setActiveCellColumnIndex(value: Double): Self = StObject.set(x, "activeCellColumnIndex", value.asInstanceOf[js.Any])
+    inline def setActiveCellColumnIndex(value: Double): Self = StObject.set(x, "activeCellColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveCellRowIndex(value: Double): Self = StObject.set(x, "activeCellRowIndex", value.asInstanceOf[js.Any])
+    inline def setActiveCellRowIndex(value: Double): Self = StObject.set(x, "activeCellRowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomRowIndex(value: Double): Self = StObject.set(x, "bottomRowIndex", value.asInstanceOf[js.Any])
+    inline def setBottomRowIndex(value: Double): Self = StObject.set(x, "bottomRowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftColumnIndex(value: Double): Self = StObject.set(x, "leftColumnIndex", value.asInstanceOf[js.Any])
+    inline def setLeftColumnIndex(value: Double): Self = StObject.set(x, "leftColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightColumnIndex(value: Double): Self = StObject.set(x, "rightColumnIndex", value.asInstanceOf[js.Any])
+    inline def setRightColumnIndex(value: Double): Self = StObject.set(x, "rightColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopRowIndex(value: Double): Self = StObject.set(x, "topRowIndex", value.asInstanceOf[js.Any])
+    inline def setTopRowIndex(value: Double): Self = StObject.set(x, "topRowIndex", value.asInstanceOf[js.Any])
   }
 }

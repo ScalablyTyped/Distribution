@@ -14,34 +14,25 @@ trait AccountUpdateRequest extends StObject {
 }
 object AccountUpdateRequest {
   
-  @scala.inline
-  def apply(): AccountUpdateRequest = {
+  inline def apply(): AccountUpdateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountUpdateRequest]
   }
   
-  @scala.inline
-  implicit class AccountUpdateRequestMutableBuilder[Self <: AccountUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AccountUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setContact(value: js.Array[String]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Array[String]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    @scala.inline
-    def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value :_*))
+    inline def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTermsOfServiceAgreed(value: Boolean): Self = StObject.set(x, "termsOfServiceAgreed", value.asInstanceOf[js.Any])
+    inline def setTermsOfServiceAgreed(value: Boolean): Self = StObject.set(x, "termsOfServiceAgreed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsOfServiceAgreedUndefined: Self = StObject.set(x, "termsOfServiceAgreed", js.undefined)
+    inline def setTermsOfServiceAgreedUndefined: Self = StObject.set(x, "termsOfServiceAgreed", js.undefined)
   }
 }

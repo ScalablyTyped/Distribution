@@ -34,22 +34,17 @@ trait AdInstance extends StObject {
 }
 object AdInstance {
   
-  @scala.inline
-  def apply(getPlacementID: () => String, loadAsync: () => js.Promise[Unit], showAsync: () => js.Promise[Unit]): AdInstance = {
+  inline def apply(getPlacementID: () => String, loadAsync: () => js.Promise[Unit], showAsync: () => js.Promise[Unit]): AdInstance = {
     val __obj = js.Dynamic.literal(getPlacementID = js.Any.fromFunction0(getPlacementID), loadAsync = js.Any.fromFunction0(loadAsync), showAsync = js.Any.fromFunction0(showAsync))
     __obj.asInstanceOf[AdInstance]
   }
   
-  @scala.inline
-  implicit class AdInstanceMutableBuilder[Self <: AdInstance] (val x: Self) extends AnyVal {
+  extension [Self <: AdInstance](x: Self) {
     
-    @scala.inline
-    def setGetPlacementID(value: () => String): Self = StObject.set(x, "getPlacementID", js.Any.fromFunction0(value))
+    inline def setGetPlacementID(value: () => String): Self = StObject.set(x, "getPlacementID", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadAsync(value: () => js.Promise[Unit]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
+    inline def setLoadAsync(value: () => js.Promise[Unit]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowAsync(value: () => js.Promise[Unit]): Self = StObject.set(x, "showAsync", js.Any.fromFunction0(value))
+    inline def setShowAsync(value: () => js.Promise[Unit]): Self = StObject.set(x, "showAsync", js.Any.fromFunction0(value))
   }
 }

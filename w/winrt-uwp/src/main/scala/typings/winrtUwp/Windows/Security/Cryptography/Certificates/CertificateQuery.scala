@@ -34,8 +34,7 @@ trait CertificateQuery extends StObject {
 }
 object CertificateQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enhancedKeyUsages: IVector[String],
     friendlyName: String,
     hardwareOnly: Boolean,
@@ -49,31 +48,22 @@ object CertificateQuery {
     __obj.asInstanceOf[CertificateQuery]
   }
   
-  @scala.inline
-  implicit class CertificateQueryMutableBuilder[Self <: CertificateQuery] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateQuery](x: Self) {
     
-    @scala.inline
-    def setEnhancedKeyUsages(value: IVector[String]): Self = StObject.set(x, "enhancedKeyUsages", value.asInstanceOf[js.Any])
+    inline def setEnhancedKeyUsages(value: IVector[String]): Self = StObject.set(x, "enhancedKeyUsages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardwareOnly(value: Boolean): Self = StObject.set(x, "hardwareOnly", value.asInstanceOf[js.Any])
+    inline def setHardwareOnly(value: Boolean): Self = StObject.set(x, "hardwareOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDuplicates(value: Boolean): Self = StObject.set(x, "includeDuplicates", value.asInstanceOf[js.Any])
+    inline def setIncludeDuplicates(value: Boolean): Self = StObject.set(x, "includeDuplicates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeExpiredCertificates(value: Boolean): Self = StObject.set(x, "includeExpiredCertificates", value.asInstanceOf[js.Any])
+    inline def setIncludeExpiredCertificates(value: Boolean): Self = StObject.set(x, "includeExpiredCertificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
+    inline def setIssuerName(value: String): Self = StObject.set(x, "issuerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+    inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbprint(value: Double): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
+    inline def setThumbprint(value: Double): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait IDesignModeStatics extends StObject {
 }
 object IDesignModeStatics {
   
-  @scala.inline
-  def apply(designModeEnabled: Boolean): IDesignModeStatics = {
+  inline def apply(designModeEnabled: Boolean): IDesignModeStatics = {
     val __obj = js.Dynamic.literal(designModeEnabled = designModeEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDesignModeStatics]
   }
   
-  @scala.inline
-  implicit class IDesignModeStaticsMutableBuilder[Self <: IDesignModeStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IDesignModeStatics](x: Self) {
     
-    @scala.inline
-    def setDesignModeEnabled(value: Boolean): Self = StObject.set(x, "designModeEnabled", value.asInstanceOf[js.Any])
+    inline def setDesignModeEnabled(value: Boolean): Self = StObject.set(x, "designModeEnabled", value.asInstanceOf[js.Any])
   }
 }

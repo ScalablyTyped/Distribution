@@ -83,126 +83,93 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1Instance extends StObject {
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
   
-  @scala.inline
-  def apply(): GoogleCloudSaasacceleratorManagementProvidersV1Instance = {
+  inline def apply(): GoogleCloudSaasacceleratorManagementProvidersV1Instance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1Instance]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1InstanceMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1Instance] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1Instance](x: Self) {
     
-    @scala.inline
-    def setConsumerDefinedName(value: String): Self = StObject.set(x, "consumerDefinedName", value.asInstanceOf[js.Any])
+    inline def setConsumerDefinedName(value: String): Self = StObject.set(x, "consumerDefinedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerDefinedNameUndefined: Self = StObject.set(x, "consumerDefinedName", js.undefined)
+    inline def setConsumerDefinedNameUndefined: Self = StObject.set(x, "consumerDefinedName", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMaintenancePolicyNames(
+    inline def setMaintenancePolicyNames(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "maintenancePolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenancePolicyNamesUndefined: Self = StObject.set(x, "maintenancePolicyNames", js.undefined)
+    inline def setMaintenancePolicyNamesUndefined: Self = StObject.set(x, "maintenancePolicyNames", js.undefined)
     
-    @scala.inline
-    def setMaintenanceSchedules(
+    inline def setMaintenanceSchedules(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule}
       */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "maintenanceSchedules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceSchedulesUndefined: Self = StObject.set(x, "maintenanceSchedules", js.undefined)
+    inline def setMaintenanceSchedulesUndefined: Self = StObject.set(x, "maintenanceSchedules", js.undefined)
     
-    @scala.inline
-    def setMaintenanceSettings(value: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings): Self = StObject.set(x, "maintenanceSettings", value.asInstanceOf[js.Any])
+    inline def setMaintenanceSettings(value: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings): Self = StObject.set(x, "maintenanceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceSettingsUndefined: Self = StObject.set(x, "maintenanceSettings", js.undefined)
+    inline def setMaintenanceSettingsUndefined: Self = StObject.set(x, "maintenanceSettings", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProducerMetadata(
+    inline def setProducerMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "producerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerMetadataUndefined: Self = StObject.set(x, "producerMetadata", js.undefined)
+    inline def setProducerMetadataUndefined: Self = StObject.set(x, "producerMetadata", js.undefined)
     
-    @scala.inline
-    def setProvisionedResources(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource]): Self = StObject.set(x, "provisionedResources", value.asInstanceOf[js.Any])
+    inline def setProvisionedResources(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource]): Self = StObject.set(x, "provisionedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedResourcesUndefined: Self = StObject.set(x, "provisionedResources", js.undefined)
+    inline def setProvisionedResourcesUndefined: Self = StObject.set(x, "provisionedResources", js.undefined)
     
-    @scala.inline
-    def setProvisionedResourcesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource*): Self = StObject.set(x, "provisionedResources", js.Array(value :_*))
+    inline def setProvisionedResourcesVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource*): Self = StObject.set(x, "provisionedResources", js.Array(value :_*))
     
-    @scala.inline
-    def setSlmInstanceTemplate(value: String): Self = StObject.set(x, "slmInstanceTemplate", value.asInstanceOf[js.Any])
+    inline def setSlmInstanceTemplate(value: String): Self = StObject.set(x, "slmInstanceTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlmInstanceTemplateUndefined: Self = StObject.set(x, "slmInstanceTemplate", js.undefined)
+    inline def setSlmInstanceTemplateUndefined: Self = StObject.set(x, "slmInstanceTemplate", js.undefined)
     
-    @scala.inline
-    def setSloMetadata(value: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata): Self = StObject.set(x, "sloMetadata", value.asInstanceOf[js.Any])
+    inline def setSloMetadata(value: GoogleCloudSaasacceleratorManagementProvidersV1SloMetadata): Self = StObject.set(x, "sloMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSloMetadataUndefined: Self = StObject.set(x, "sloMetadata", js.undefined)
+    inline def setSloMetadataUndefined: Self = StObject.set(x, "sloMetadata", js.undefined)
     
-    @scala.inline
-    def setSoftwareVersions(
+    inline def setSoftwareVersions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "softwareVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareVersionsUndefined: Self = StObject.set(x, "softwareVersions", js.undefined)
+    inline def setSoftwareVersionsUndefined: Self = StObject.set(x, "softwareVersions", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTenantProjectId(value: String): Self = StObject.set(x, "tenantProjectId", value.asInstanceOf[js.Any])
+    inline def setTenantProjectId(value: String): Self = StObject.set(x, "tenantProjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantProjectIdUndefined: Self = StObject.set(x, "tenantProjectId", js.undefined)
+    inline def setTenantProjectIdUndefined: Self = StObject.set(x, "tenantProjectId", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait SendActionObject[TContext, TEvent /* <: EventObject */, TSentEvent /* <: E
 }
 object SendActionObject {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](
     _event: typings.xstate.typesMod.SCXML.Event[TSentEvent],
     event: TSentEvent,
     id: String | Double,
@@ -34,25 +33,18 @@ object SendActionObject {
     __obj.asInstanceOf[SendActionObject[TContext, TEvent, TSentEvent]]
   }
   
-  @scala.inline
-  implicit class SendActionObjectMutableBuilder[Self <: SendActionObject[?, ?, ?], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */] (val x: Self & (SendActionObject[TContext, TEvent, TSentEvent])) extends AnyVal {
+  extension [Self <: SendActionObject[?, ?, ?], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](x: Self & (SendActionObject[TContext, TEvent, TSentEvent])) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setEvent(value: TSentEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TSentEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String | Double | (Actor[js.Any, AnyEventObject])): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String | Double | (Actor[js.Any, AnyEventObject])): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    @scala.inline
-    def set_event(value: typings.xstate.typesMod.SCXML.Event[TSentEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
+    inline def set_event(value: typings.xstate.typesMod.SCXML.Event[TSentEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
   }
 }

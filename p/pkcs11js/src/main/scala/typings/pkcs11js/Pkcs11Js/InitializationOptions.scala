@@ -22,25 +22,19 @@ trait InitializationOptions extends StObject {
 }
 object InitializationOptions {
   
-  @scala.inline
-  def apply(): InitializationOptions = {
+  inline def apply(): InitializationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitializationOptions]
   }
   
-  @scala.inline
-  implicit class InitializationOptionsMutableBuilder[Self <: InitializationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitializationOptions](x: Self) {
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setLibraryParameters(value: String): Self = StObject.set(x, "libraryParameters", value.asInstanceOf[js.Any])
+    inline def setLibraryParameters(value: String): Self = StObject.set(x, "libraryParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibraryParametersUndefined: Self = StObject.set(x, "libraryParameters", js.undefined)
+    inline def setLibraryParametersUndefined: Self = StObject.set(x, "libraryParameters", js.undefined)
   }
 }

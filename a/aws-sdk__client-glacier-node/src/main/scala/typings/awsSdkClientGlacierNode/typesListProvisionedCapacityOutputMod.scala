@@ -26,26 +26,20 @@ object typesListProvisionedCapacityOutputMod {
   }
   object ListProvisionedCapacityOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListProvisionedCapacityOutput = {
+    inline def apply($metadata: ResponseMetadata): ListProvisionedCapacityOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListProvisionedCapacityOutput]
     }
     
-    @scala.inline
-    implicit class ListProvisionedCapacityOutputMutableBuilder[Self <: ListProvisionedCapacityOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListProvisionedCapacityOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedCapacityList(value: js.Array[UnmarshalledProvisionedCapacityDescription]): Self = StObject.set(x, "ProvisionedCapacityList", value.asInstanceOf[js.Any])
+      inline def setProvisionedCapacityList(value: js.Array[UnmarshalledProvisionedCapacityDescription]): Self = StObject.set(x, "ProvisionedCapacityList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedCapacityListUndefined: Self = StObject.set(x, "ProvisionedCapacityList", js.undefined)
+      inline def setProvisionedCapacityListUndefined: Self = StObject.set(x, "ProvisionedCapacityList", js.undefined)
       
-      @scala.inline
-      def setProvisionedCapacityListVarargs(value: UnmarshalledProvisionedCapacityDescription*): Self = StObject.set(x, "ProvisionedCapacityList", js.Array(value :_*))
+      inline def setProvisionedCapacityListVarargs(value: UnmarshalledProvisionedCapacityDescription*): Self = StObject.set(x, "ProvisionedCapacityList", js.Array(value :_*))
     }
   }
 }

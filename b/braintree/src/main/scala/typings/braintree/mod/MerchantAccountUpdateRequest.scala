@@ -18,8 +18,7 @@ trait MerchantAccountUpdateRequest extends StObject {
 }
 object MerchantAccountUpdateRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     funding: MerchantFunding,
     id: String,
     individual: MerchantIndividualRequest,
@@ -29,25 +28,18 @@ object MerchantAccountUpdateRequest {
     __obj.asInstanceOf[MerchantAccountUpdateRequest]
   }
   
-  @scala.inline
-  implicit class MerchantAccountUpdateRequestMutableBuilder[Self <: MerchantAccountUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MerchantAccountUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setBusiness(value: MerchantBusinessRequest): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+    inline def setBusiness(value: MerchantBusinessRequest): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessUndefined: Self = StObject.set(x, "business", js.undefined)
+    inline def setBusinessUndefined: Self = StObject.set(x, "business", js.undefined)
     
-    @scala.inline
-    def setFunding(value: MerchantFunding): Self = StObject.set(x, "funding", value.asInstanceOf[js.Any])
+    inline def setFunding(value: MerchantFunding): Self = StObject.set(x, "funding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividual(value: MerchantIndividualRequest): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
+    inline def setIndividual(value: MerchantIndividualRequest): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterMerchantAccountId(value: String): Self = StObject.set(x, "masterMerchantAccountId", value.asInstanceOf[js.Any])
+    inline def setMasterMerchantAccountId(value: String): Self = StObject.set(x, "masterMerchantAccountId", value.asInstanceOf[js.Any])
   }
 }

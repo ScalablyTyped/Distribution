@@ -20,20 +20,20 @@ object colorPickerGridCellBaseMod {
       */
     def this(props: IColorPickerGridCellProps, context: js.Any) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
     /**
       * Validate if the cell's color is white or not to apply whiteCell style
       * @param inputColor - The color of the current cell
       * @returns - Whether the cell's color is white or not.
       */
-    var _isWhiteCell: js.Any = js.native
+    /* private */ var _isWhiteCell: js.Any = js.native
     
     /**
       * Render the core of a color cell
       * @returns - Element representing the core of the item
       */
-    var _onRenderColorOption: js.Any = js.native
+    /* private */ var _onRenderColorOption: js.Any = js.native
   }
   /* static members */
   object ColorPickerGridCellBase {
@@ -45,7 +45,6 @@ object colorPickerGridCellBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker/ColorPickerGridCell.base", "ColorPickerGridCellBase.defaultProps")
     @js.native
     def defaultProps: PartialIColorPickerGridCe = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIColorPickerGridCe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIColorPickerGridCe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

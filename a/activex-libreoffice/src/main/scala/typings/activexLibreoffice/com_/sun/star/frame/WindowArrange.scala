@@ -23,22 +23,16 @@ object WindowArrange {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CASCADE: `4` = 4.asInstanceOf[`4`]
+    inline def CASCADE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def HORIZONTAL: `3` = 3.asInstanceOf[`3`]
+    inline def HORIZONTAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def MAXIMIZE: `5` = 5.asInstanceOf[`5`]
+    inline def MAXIMIZE: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MINIMIZE: `6` = 6.asInstanceOf[`6`]
+    inline def MINIMIZE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def TILE: `1` = 1.asInstanceOf[`1`]
+    inline def TILE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def VERTICAL: `2` = 2.asInstanceOf[`2`]
+    inline def VERTICAL: `2` = 2.asInstanceOf[`2`]
   }
 }

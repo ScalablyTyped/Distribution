@@ -17,19 +17,15 @@ trait HandleCardSetupOptionsWithoutElementsOptions
 }
 object HandleCardSetupOptionsWithoutElementsOptions {
   
-  @scala.inline
-  def apply(): HandleCardSetupOptionsWithoutElementsOptions = {
+  inline def apply(): HandleCardSetupOptionsWithoutElementsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HandleCardSetupOptionsWithoutElementsOptions]
   }
   
-  @scala.inline
-  implicit class HandleCardSetupOptionsWithoutElementsOptionsMutableBuilder[Self <: HandleCardSetupOptionsWithoutElementsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HandleCardSetupOptionsWithoutElementsOptions](x: Self) {
     
-    @scala.inline
-    def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
   }
 }

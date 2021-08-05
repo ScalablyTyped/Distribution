@@ -20,49 +20,35 @@ trait ControlScore extends StObject {
 }
 object ControlScore {
   
-  @scala.inline
-  def apply(): ControlScore = {
+  inline def apply(): ControlScore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControlScore]
   }
   
-  @scala.inline
-  implicit class ControlScoreMutableBuilder[Self <: ControlScore] (val x: Self) extends AnyVal {
+  extension [Self <: ControlScore](x: Self) {
     
-    @scala.inline
-    def setControlCategory(value: NullableOption[String]): Self = StObject.set(x, "controlCategory", value.asInstanceOf[js.Any])
+    inline def setControlCategory(value: NullableOption[String]): Self = StObject.set(x, "controlCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlCategoryNull: Self = StObject.set(x, "controlCategory", null)
+    inline def setControlCategoryNull: Self = StObject.set(x, "controlCategory", null)
     
-    @scala.inline
-    def setControlCategoryUndefined: Self = StObject.set(x, "controlCategory", js.undefined)
+    inline def setControlCategoryUndefined: Self = StObject.set(x, "controlCategory", js.undefined)
     
-    @scala.inline
-    def setControlName(value: NullableOption[String]): Self = StObject.set(x, "controlName", value.asInstanceOf[js.Any])
+    inline def setControlName(value: NullableOption[String]): Self = StObject.set(x, "controlName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlNameNull: Self = StObject.set(x, "controlName", null)
+    inline def setControlNameNull: Self = StObject.set(x, "controlName", null)
     
-    @scala.inline
-    def setControlNameUndefined: Self = StObject.set(x, "controlName", js.undefined)
+    inline def setControlNameUndefined: Self = StObject.set(x, "controlName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setScore(value: NullableOption[Double]): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: NullableOption[Double]): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreNull: Self = StObject.set(x, "score", null)
+    inline def setScoreNull: Self = StObject.set(x, "score", null)
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

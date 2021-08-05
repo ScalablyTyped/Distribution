@@ -16,8 +16,7 @@ trait UnoControlProgressBar
      with XProgressBar
 object UnoControlProgressBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

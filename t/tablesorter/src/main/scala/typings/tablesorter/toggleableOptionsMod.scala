@@ -20,26 +20,20 @@ object toggleableOptionsMod {
   }
   object ToggleableOptions {
     
-    @scala.inline
-    def apply(): ToggleableOptions = {
+    inline def apply(): ToggleableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleableOptions]
     }
     
-    @scala.inline
-    implicit class ToggleableOptionsMutableBuilder[Self <: ToggleableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleableOptions](x: Self) {
       
-      @scala.inline
-      def setAddToggle(value: Boolean): Self = StObject.set(x, "addToggle", value.asInstanceOf[js.Any])
+      inline def setAddToggle(value: Boolean): Self = StObject.set(x, "addToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddToggleUndefined: Self = StObject.set(x, "addToggle", js.undefined)
+      inline def setAddToggleUndefined: Self = StObject.set(x, "addToggle", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     }
   }
 }

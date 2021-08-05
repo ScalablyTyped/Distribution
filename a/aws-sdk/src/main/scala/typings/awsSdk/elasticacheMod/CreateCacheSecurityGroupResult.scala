@@ -10,19 +10,15 @@ trait CreateCacheSecurityGroupResult extends StObject {
 }
 object CreateCacheSecurityGroupResult {
   
-  @scala.inline
-  def apply(): CreateCacheSecurityGroupResult = {
+  inline def apply(): CreateCacheSecurityGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCacheSecurityGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateCacheSecurityGroupResultMutableBuilder[Self <: CreateCacheSecurityGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCacheSecurityGroupResult](x: Self) {
     
-    @scala.inline
-    def setCacheSecurityGroup(value: CacheSecurityGroup): Self = StObject.set(x, "CacheSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setCacheSecurityGroup(value: CacheSecurityGroup): Self = StObject.set(x, "CacheSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSecurityGroupUndefined: Self = StObject.set(x, "CacheSecurityGroup", js.undefined)
+    inline def setCacheSecurityGroupUndefined: Self = StObject.set(x, "CacheSecurityGroup", js.undefined)
   }
 }

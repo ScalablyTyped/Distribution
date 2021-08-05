@@ -10,19 +10,15 @@ trait Utf8StringParams extends StObject {
 }
 object Utf8StringParams {
   
-  @scala.inline
-  def apply(): Utf8StringParams = {
+  inline def apply(): Utf8StringParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Utf8StringParams]
   }
   
-  @scala.inline
-  implicit class Utf8StringParamsMutableBuilder[Self <: Utf8StringParams] (val x: Self) extends AnyVal {
+  extension [Self <: Utf8StringParams](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

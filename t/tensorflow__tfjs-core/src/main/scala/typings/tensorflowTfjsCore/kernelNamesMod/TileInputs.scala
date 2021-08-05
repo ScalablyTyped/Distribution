@@ -11,19 +11,15 @@ trait TileInputs extends StObject {
 }
 object TileInputs {
   
-  @scala.inline
-  def apply(): TileInputs = {
+  inline def apply(): TileInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileInputs]
   }
   
-  @scala.inline
-  implicit class TileInputsMutableBuilder[Self <: TileInputs] (val x: Self) extends AnyVal {
+  extension [Self <: TileInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

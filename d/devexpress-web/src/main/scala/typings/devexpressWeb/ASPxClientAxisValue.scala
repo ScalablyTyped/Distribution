@@ -34,8 +34,7 @@ trait ASPxClientAxisValue extends StObject {
 }
 object ASPxClientAxisValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dateTimeValue: Date,
     numericalValue: Double,
     qualitativeValue: String,
@@ -46,22 +45,16 @@ object ASPxClientAxisValue {
     __obj.asInstanceOf[ASPxClientAxisValue]
   }
   
-  @scala.inline
-  implicit class ASPxClientAxisValueMutableBuilder[Self <: ASPxClientAxisValue] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAxisValue](x: Self) {
     
-    @scala.inline
-    def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
+    inline def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
+    inline def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualitativeValue(value: String): Self = StObject.set(x, "qualitativeValue", value.asInstanceOf[js.Any])
+    inline def setQualitativeValue(value: String): Self = StObject.set(x, "qualitativeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
+    inline def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
   }
 }

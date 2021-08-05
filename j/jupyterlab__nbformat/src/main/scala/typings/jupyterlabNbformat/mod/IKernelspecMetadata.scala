@@ -15,19 +15,15 @@ trait IKernelspecMetadata
 }
 object IKernelspecMetadata {
   
-  @scala.inline
-  def apply(display_name: String, name: String): IKernelspecMetadata = {
+  inline def apply(display_name: String, name: String): IKernelspecMetadata = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKernelspecMetadata]
   }
   
-  @scala.inline
-  implicit class IKernelspecMetadataMutableBuilder[Self <: IKernelspecMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IKernelspecMetadata](x: Self) {
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

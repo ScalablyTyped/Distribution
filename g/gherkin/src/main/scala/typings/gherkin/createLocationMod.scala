@@ -12,6 +12,5 @@ object createLocationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Line): ILocation = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ILocation]
+  inline def default(props: Line): ILocation = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ILocation]
 }

@@ -13,22 +13,22 @@ object bucketMod {
     
     def addToBucket(value: Double, index: Double): Unit = js.native
     
-    var bucketValue: js.Any = js.native
+    /* private */ var bucketValue: js.Any = js.native
     
-    var entryIndex: js.Any = js.native
+    /* private */ var entryIndex: js.Any = js.native
     
-    var exitIndex: js.Any = js.native
+    /* private */ var exitIndex: js.Any = js.native
     
     def getUniqueIndices(): js.Array[Double] = js.native
     
     def isInBucket(value: Double): Boolean = js.native
     
-    var maxIndex: js.Any = js.native
+    /* private */ var maxIndex: js.Any = js.native
     
-    var maxValue: js.Any = js.native
+    /* private */ var maxValue: js.Any = js.native
     
-    var minIndex: js.Any = js.native
+    /* private */ var minIndex: js.Any = js.native
     
-    var minValue: js.Any = js.native
+    /* private */ var minValue: js.Any = js.native
   }
 }

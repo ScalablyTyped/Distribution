@@ -61,14 +61,10 @@ object hostedTransitVirtualInterfaceAcceptorMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceAcceptorState): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
+    inline def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceAcceptorState): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
+    inline def get(
       name: String,
       id: Input[ID],
       state: HostedTransitVirtualInterfaceAcceptorState,
@@ -79,8 +75,7 @@ object hostedTransitVirtualInterfaceAcceptorMod {
       * Returns true if the given object is an instance of HostedTransitVirtualInterfaceAcceptor.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean]
   }
   
   trait HostedTransitVirtualInterfaceAcceptorArgs extends StObject {
@@ -102,26 +97,20 @@ object hostedTransitVirtualInterfaceAcceptorMod {
   }
   object HostedTransitVirtualInterfaceAcceptorArgs {
     
-    @scala.inline
-    def apply(dxGatewayId: Input[String], virtualInterfaceId: Input[String]): HostedTransitVirtualInterfaceAcceptorArgs = {
+    inline def apply(dxGatewayId: Input[String], virtualInterfaceId: Input[String]): HostedTransitVirtualInterfaceAcceptorArgs = {
       val __obj = js.Dynamic.literal(dxGatewayId = dxGatewayId.asInstanceOf[js.Any], virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedTransitVirtualInterfaceAcceptorArgs]
     }
     
-    @scala.inline
-    implicit class HostedTransitVirtualInterfaceAcceptorArgsMutableBuilder[Self <: HostedTransitVirtualInterfaceAcceptorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HostedTransitVirtualInterfaceAcceptorArgs](x: Self) {
       
-      @scala.inline
-      def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+      inline def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,38 +138,28 @@ object hostedTransitVirtualInterfaceAcceptorMod {
   }
   object HostedTransitVirtualInterfaceAcceptorState {
     
-    @scala.inline
-    def apply(): HostedTransitVirtualInterfaceAcceptorState = {
+    inline def apply(): HostedTransitVirtualInterfaceAcceptorState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HostedTransitVirtualInterfaceAcceptorState]
     }
     
-    @scala.inline
-    implicit class HostedTransitVirtualInterfaceAcceptorStateMutableBuilder[Self <: HostedTransitVirtualInterfaceAcceptorState] (val x: Self) extends AnyVal {
+    extension [Self <: HostedTransitVirtualInterfaceAcceptorState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayId(value: Input[String]): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
+      inline def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+      inline def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
+      inline def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
     }
   }
 }

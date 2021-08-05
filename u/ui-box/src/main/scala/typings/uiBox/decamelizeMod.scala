@@ -10,6 +10,5 @@ object decamelizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

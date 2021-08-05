@@ -26,9 +26,9 @@ object mod {
       * @param length Number of bytes to read
       * @returns {any}
       */
-    var _read: js.Any = js.native
+    /* private */ var _read: js.Any = js.native
     
-    var endOfStream: js.Any = js.native
+    /* private */ var endOfStream: js.Any = js.native
     
     /**
       * Read ahead (peek) from stream. Subsequent read or peeks will return the same data
@@ -44,7 +44,7 @@ object mod {
       * Store peeked data
       * @type {Array}
       */
-    var peekQueue: js.Any = js.native
+    /* private */ var peekQueue: js.Any = js.native
     
     /**
       * Read chunk from stream
@@ -56,15 +56,15 @@ object mod {
     def read(buffer: Buffer, offset: Double, length: Double): js.Promise[Double] = js.native
     def read(buffer: Uint8Array, offset: Double, length: Double): js.Promise[Double] = js.native
     
-    var reject: js.Any = js.native
+    /* private */ var reject: js.Any = js.native
     
     /**
       * Deferred read request
       */
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
     
-    var s: js.Any = js.native
+    /* private */ var s: js.Any = js.native
     
-    var tryRead: js.Any = js.native
+    /* private */ var tryRead: js.Any = js.native
   }
 }

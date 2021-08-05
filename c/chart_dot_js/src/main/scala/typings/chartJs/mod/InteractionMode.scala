@@ -19,30 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InteractionMode extends StObject
 object InteractionMode {
   
-  @scala.inline
-  def dataset: typings.chartJs.chartJsStrings.dataset = "dataset".asInstanceOf[typings.chartJs.chartJsStrings.dataset]
+  inline def dataset: typings.chartJs.chartJsStrings.dataset = "dataset".asInstanceOf[typings.chartJs.chartJsStrings.dataset]
   
-  @scala.inline
-  def index: typings.chartJs.chartJsStrings.index = "index".asInstanceOf[typings.chartJs.chartJsStrings.index]
+  inline def index: typings.chartJs.chartJsStrings.index = "index".asInstanceOf[typings.chartJs.chartJsStrings.index]
   
-  @scala.inline
-  def label: typings.chartJs.chartJsStrings.label = "label".asInstanceOf[typings.chartJs.chartJsStrings.label]
+  inline def label: typings.chartJs.chartJsStrings.label = "label".asInstanceOf[typings.chartJs.chartJsStrings.label]
   
-  @scala.inline
-  def nearest: typings.chartJs.chartJsStrings.nearest = "nearest".asInstanceOf[typings.chartJs.chartJsStrings.nearest]
+  inline def nearest: typings.chartJs.chartJsStrings.nearest = "nearest".asInstanceOf[typings.chartJs.chartJsStrings.nearest]
   
-  @scala.inline
-  def point: typings.chartJs.chartJsStrings.point = "point".asInstanceOf[typings.chartJs.chartJsStrings.point]
+  inline def point: typings.chartJs.chartJsStrings.point = "point".asInstanceOf[typings.chartJs.chartJsStrings.point]
   
-  @scala.inline
-  def single: typings.chartJs.chartJsStrings.single = "single".asInstanceOf[typings.chartJs.chartJsStrings.single]
+  inline def single: typings.chartJs.chartJsStrings.single = "single".asInstanceOf[typings.chartJs.chartJsStrings.single]
   
-  @scala.inline
-  def x: typings.chartJs.chartJsStrings.x = "x".asInstanceOf[typings.chartJs.chartJsStrings.x]
+  inline def x: typings.chartJs.chartJsStrings.x = "x".asInstanceOf[typings.chartJs.chartJsStrings.x]
   
-  @scala.inline
-  def `x-axis`: typings.chartJs.chartJsStrings.`x-axis` = "x-axis".asInstanceOf[typings.chartJs.chartJsStrings.`x-axis`]
+  inline def `x-axis`: typings.chartJs.chartJsStrings.`x-axis` = "x-axis".asInstanceOf[typings.chartJs.chartJsStrings.`x-axis`]
   
-  @scala.inline
-  def y: typings.chartJs.chartJsStrings.y = "y".asInstanceOf[typings.chartJs.chartJsStrings.y]
+  inline def y: typings.chartJs.chartJsStrings.y = "y".asInstanceOf[typings.chartJs.chartJsStrings.y]
 }

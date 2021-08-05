@@ -22,32 +22,24 @@ object footnoteMod {
   }
   object FootnoteProps {
     
-    @scala.inline
-    def apply(): FootnoteProps = {
+    inline def apply(): FootnoteProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FootnoteProps]
     }
     
-    @scala.inline
-    implicit class FootnotePropsMutableBuilder[Self <: FootnoteProps] (val x: Self) extends AnyVal {
+    extension [Self <: FootnoteProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFootnote(value: ReactNode): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
+      inline def setFootnote(value: ReactNode): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFootnoteUndefined: Self = StObject.set(x, "footnote", js.undefined)
+      inline def setFootnoteUndefined: Self = StObject.set(x, "footnote", js.undefined)
     }
   }
 }

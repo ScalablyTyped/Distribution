@@ -10,8 +10,7 @@ trait BitmapCodecInformation
      with IBitmapCodecInformation
 object BitmapCodecInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codecId: String,
     fileExtensions: IVectorView[String],
     friendlyName: String,

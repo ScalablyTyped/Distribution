@@ -12,28 +12,21 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(): Result = {
+  inline def apply(): Result = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setDetails(value: js.Array[Args]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[Args]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: Args*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: Args*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: Args): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Args): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

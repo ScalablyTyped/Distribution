@@ -117,8 +117,7 @@ object RangeNavigator {
   @JSGlobal("ej.datavisualization.RangeNavigator.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.RangeNavigator.Position")
   @js.native
@@ -184,6 +183,5 @@ object RangeNavigator {
   @JSGlobal("ej.datavisualization.RangeNavigator.fn")
   @js.native
   def fn: typings.ejWebAll.ej.datavisualization.RangeNavigator = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.datavisualization.RangeNavigator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.datavisualization.RangeNavigator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

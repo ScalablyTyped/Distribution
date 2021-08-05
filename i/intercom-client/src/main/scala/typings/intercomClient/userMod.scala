@@ -27,24 +27,19 @@ object userMod {
   }
   object Avatar {
     
-    @scala.inline
-    def apply(): Avatar = {
+    inline def apply(): Avatar = {
       val __obj = js.Dynamic.literal(image_url = null)
       __obj.updateDynamic("type")("avatar")
       __obj.asInstanceOf[Avatar]
     }
     
-    @scala.inline
-    implicit class AvatarMutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
+    extension [Self <: Avatar](x: Self) {
       
-      @scala.inline
-      def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
+      inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_urlNull: Self = StObject.set(x, "image_url", null)
+      inline def setImage_urlNull: Self = StObject.set(x, "image_url", null)
       
-      @scala.inline
-      def setType(value: avatar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: avatar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,8 +85,7 @@ object userMod {
   }
   object BaseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anonymous: Boolean,
       avatar: Avatar,
       created_at: Double,
@@ -107,95 +101,65 @@ object userMod {
       __obj.asInstanceOf[BaseUser]
     }
     
-    @scala.inline
-    implicit class BaseUserMutableBuilder[Self <: BaseUser] (val x: Self) extends AnyVal {
+    extension [Self <: BaseUser](x: Self) {
       
-      @scala.inline
-      def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+      inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
+      inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
+      inline def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
       
-      @scala.inline
-      def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+      inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+      inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailNull: Self = StObject.set(x, "email", null)
+      inline def setEmailNull: Self = StObject.set(x, "email", null)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_request_at(value: Double): Self = StObject.set(x, "last_request_at", value.asInstanceOf[js.Any])
+      inline def setLast_request_at(value: Double): Self = StObject.set(x, "last_request_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_request_atNull: Self = StObject.set(x, "last_request_at", null)
+      inline def setLast_request_atNull: Self = StObject.set(x, "last_request_at", null)
       
-      @scala.inline
-      def setLast_seen_ip(value: String): Self = StObject.set(x, "last_seen_ip", value.asInstanceOf[js.Any])
+      inline def setLast_seen_ip(value: String): Self = StObject.set(x, "last_seen_ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_seen_ipNull: Self = StObject.set(x, "last_seen_ip", null)
+      inline def setLast_seen_ipNull: Self = StObject.set(x, "last_seen_ip", null)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneNull: Self = StObject.set(x, "phone", null)
+      inline def setPhoneNull: Self = StObject.set(x, "phone", null)
       
-      @scala.inline
-      def setPseudonym(value: String): Self = StObject.set(x, "pseudonym", value.asInstanceOf[js.Any])
+      inline def setPseudonym(value: String): Self = StObject.set(x, "pseudonym", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPseudonymNull: Self = StObject.set(x, "pseudonym", null)
+      inline def setPseudonymNull: Self = StObject.set(x, "pseudonym", null)
       
-      @scala.inline
-      def setSession_count(value: Double): Self = StObject.set(x, "session_count", value.asInstanceOf[js.Any])
+      inline def setSession_count(value: Double): Self = StObject.set(x, "session_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigned_up_at(value: Double): Self = StObject.set(x, "signed_up_at", value.asInstanceOf[js.Any])
+      inline def setSigned_up_at(value: Double): Self = StObject.set(x, "signed_up_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigned_up_atNull: Self = StObject.set(x, "signed_up_at", null)
+      inline def setSigned_up_atNull: Self = StObject.set(x, "signed_up_at", null)
       
-      @scala.inline
-      def setType(value: user | contact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: user | contact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribed_from_emails(value: Boolean): Self = StObject.set(x, "unsubscribed_from_emails", value.asInstanceOf[js.Any])
+      inline def setUnsubscribed_from_emails(value: Boolean): Self = StObject.set(x, "unsubscribed_from_emails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated_at(value: Double): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: Double): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_agent_data(value: String): Self = StObject.set(x, "user_agent_data", value.asInstanceOf[js.Any])
+      inline def setUser_agent_data(value: String): Self = StObject.set(x, "user_agent_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_agent_dataNull: Self = StObject.set(x, "user_agent_data", null)
+      inline def setUser_agent_dataNull: Self = StObject.set(x, "user_agent_data", null)
       
-      @scala.inline
-      def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_idNull: Self = StObject.set(x, "user_id", null)
+      inline def setUser_idNull: Self = StObject.set(x, "user_id", null)
     }
   }
   
@@ -207,8 +171,7 @@ object userMod {
   }
   object CreateUpdateUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anonymous: Boolean,
       avatar: Avatar,
       companies: js.Array[PartialCompanyremoveboole],
@@ -225,14 +188,11 @@ object userMod {
       __obj.asInstanceOf[CreateUpdateUser]
     }
     
-    @scala.inline
-    implicit class CreateUpdateUserMutableBuilder[Self <: CreateUpdateUser] (val x: Self) extends AnyVal {
+    extension [Self <: CreateUpdateUser](x: Self) {
       
-      @scala.inline
-      def setCompanies(value: js.Array[PartialCompanyremoveboole]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
+      inline def setCompanies(value: js.Array[PartialCompanyremoveboole]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value :_*))
+      inline def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value :_*))
     }
   }
   
@@ -248,30 +208,23 @@ object userMod {
   }
   object List {
     
-    @scala.inline
-    def apply(pages: Next, total_count: Double, users: js.Array[User]): List = {
+    inline def apply(pages: Next, total_count: Double, users: js.Array[User]): List = {
       val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("user.list")
       __obj.asInstanceOf[List]
     }
     
-    @scala.inline
-    implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+    extension [Self <: List](x: Self) {
       
-      @scala.inline
-      def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+      inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: userDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: userDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[User]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[User]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
   
@@ -299,72 +252,51 @@ object userMod {
   }
   object LocationData {
     
-    @scala.inline
-    def apply(): LocationData = {
+    inline def apply(): LocationData = {
       val __obj = js.Dynamic.literal(city_name = null, continent_code = null, country_code = null, country_name = null, latitude = null, longitude = null, postal_code = null, region_name = null, timezone = null)
       __obj.updateDynamic("type")("location_data")
       __obj.asInstanceOf[LocationData]
     }
     
-    @scala.inline
-    implicit class LocationDataMutableBuilder[Self <: LocationData] (val x: Self) extends AnyVal {
+    extension [Self <: LocationData](x: Self) {
       
-      @scala.inline
-      def setCity_name(value: String): Self = StObject.set(x, "city_name", value.asInstanceOf[js.Any])
+      inline def setCity_name(value: String): Self = StObject.set(x, "city_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity_nameNull: Self = StObject.set(x, "city_name", null)
+      inline def setCity_nameNull: Self = StObject.set(x, "city_name", null)
       
-      @scala.inline
-      def setContinent_code(value: String): Self = StObject.set(x, "continent_code", value.asInstanceOf[js.Any])
+      inline def setContinent_code(value: String): Self = StObject.set(x, "continent_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinent_codeNull: Self = StObject.set(x, "continent_code", null)
+      inline def setContinent_codeNull: Self = StObject.set(x, "continent_code", null)
       
-      @scala.inline
-      def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+      inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_codeNull: Self = StObject.set(x, "country_code", null)
+      inline def setCountry_codeNull: Self = StObject.set(x, "country_code", null)
       
-      @scala.inline
-      def setCountry_name(value: String): Self = StObject.set(x, "country_name", value.asInstanceOf[js.Any])
+      inline def setCountry_name(value: String): Self = StObject.set(x, "country_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_nameNull: Self = StObject.set(x, "country_name", null)
+      inline def setCountry_nameNull: Self = StObject.set(x, "country_name", null)
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitudeNull: Self = StObject.set(x, "latitude", null)
+      inline def setLatitudeNull: Self = StObject.set(x, "latitude", null)
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitudeNull: Self = StObject.set(x, "longitude", null)
+      inline def setLongitudeNull: Self = StObject.set(x, "longitude", null)
       
-      @scala.inline
-      def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
+      inline def setPostal_code(value: String): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostal_codeNull: Self = StObject.set(x, "postal_code", null)
+      inline def setPostal_codeNull: Self = StObject.set(x, "postal_code", null)
       
-      @scala.inline
-      def setRegion_name(value: String): Self = StObject.set(x, "region_name", value.asInstanceOf[js.Any])
+      inline def setRegion_name(value: String): Self = StObject.set(x, "region_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion_nameNull: Self = StObject.set(x, "region_name", null)
+      inline def setRegion_nameNull: Self = StObject.set(x, "region_name", null)
       
-      @scala.inline
-      def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimezoneNull: Self = StObject.set(x, "timezone", null)
+      inline def setTimezoneNull: Self = StObject.set(x, "timezone", null)
       
-      @scala.inline
-      def setType(value: location_data): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: location_data): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -374,17 +306,14 @@ object userMod {
   }
   object Segment {
     
-    @scala.inline
-    def apply(id: String): Segment = {
+    inline def apply(id: String): Segment = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Segment]
     }
     
-    @scala.inline
-    implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
+    extension [Self <: Segment](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,35 +329,26 @@ object userMod {
   }
   object SocialProfile {
     
-    @scala.inline
-    def apply(): SocialProfile = {
+    inline def apply(): SocialProfile = {
       val __obj = js.Dynamic.literal(name = "Twitter", id = null, url = null, username = null)
       __obj.asInstanceOf[SocialProfile]
     }
     
-    @scala.inline
-    implicit class SocialProfileMutableBuilder[Self <: SocialProfile] (val x: Self) extends AnyVal {
+    extension [Self <: SocialProfile](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setName(value: Twitter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Twitter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlNull: Self = StObject.set(x, "url", null)
+      inline def setUrlNull: Self = StObject.set(x, "url", null)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameNull: Self = StObject.set(x, "username", null)
+      inline def setUsernameNull: Self = StObject.set(x, "username", null)
     }
   }
   
@@ -438,17 +358,14 @@ object userMod {
   }
   object Tag {
     
-    @scala.inline
-    def apply(id: String): Tag = {
+    inline def apply(id: String): Tag = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -468,8 +385,7 @@ object userMod {
   }
   object User {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anonymous: Boolean,
       avatar: Avatar,
       companies: Companies,
@@ -490,23 +406,17 @@ object userMod {
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setCompanies(value: Companies): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
+      inline def setCompanies(value: Companies): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation_data(value: LocationData | js.Object): Self = StObject.set(x, "location_data", value.asInstanceOf[js.Any])
+      inline def setLocation_data(value: LocationData | js.Object): Self = StObject.set(x, "location_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegments(value: Segments): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+      inline def setSegments(value: Segments): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocial_profiles(value: Socialprofiles): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
+      inline def setSocial_profiles(value: Socialprofiles): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,17 +428,14 @@ object userMod {
   }
   object UserEmailIdentifier {
     
-    @scala.inline
-    def apply(email: String): UserEmailIdentifier = {
+    inline def apply(email: String): UserEmailIdentifier = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserEmailIdentifier]
     }
     
-    @scala.inline
-    implicit class UserEmailIdentifierMutableBuilder[Self <: UserEmailIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: UserEmailIdentifier](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
   }
   
@@ -541,14 +448,12 @@ object userMod {
        with UserIdentifier
   object UserIdIdentifier {
     
-    @scala.inline
-    def Id(id: String): typings.intercomClient.anon.Id = {
+    inline def Id(id: String): typings.intercomClient.anon.Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.intercomClient.anon.Id]
     }
     
-    @scala.inline
-    def Userid(user_id: String): typings.intercomClient.anon.Userid = {
+    inline def Userid(user_id: String): typings.intercomClient.anon.Userid = {
       val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.intercomClient.anon.Userid]
     }
@@ -561,20 +466,17 @@ object userMod {
   trait UserIdentifier extends StObject
   object UserIdentifier {
     
-    @scala.inline
-    def Id(id: String): typings.intercomClient.anon.Id = {
+    inline def Id(id: String): typings.intercomClient.anon.Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.intercomClient.anon.Id]
     }
     
-    @scala.inline
-    def UserEmailIdentifier(email: String): typings.intercomClient.userMod.UserEmailIdentifier = {
+    inline def UserEmailIdentifier(email: String): typings.intercomClient.userMod.UserEmailIdentifier = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.intercomClient.userMod.UserEmailIdentifier]
     }
     
-    @scala.inline
-    def Userid(user_id: String): typings.intercomClient.anon.Userid = {
+    inline def Userid(user_id: String): typings.intercomClient.anon.Userid = {
       val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.intercomClient.anon.Userid]
     }

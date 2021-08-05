@@ -17,8 +17,7 @@ trait MaxMin extends StObject {
 }
 object MaxMin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     max: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in c3.c3.AxisName ]: number}
     */ typings.c3.c3Strings.MaxMin & TopLevel[js.Any],
@@ -30,18 +29,15 @@ object MaxMin {
     __obj.asInstanceOf[MaxMin]
   }
   
-  @scala.inline
-  implicit class MaxMinMutableBuilder[Self <: MaxMin] (val x: Self) extends AnyVal {
+  extension [Self <: MaxMin](x: Self) {
     
-    @scala.inline
-    def setMax(
+    inline def setMax(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]: number}
       */ typings.c3.c3Strings.MaxMin & TopLevel[js.Any]
     ): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(
+    inline def setMin(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]: number}
       */ typings.c3.c3Strings.MaxMin & TopLevel[js.Any]

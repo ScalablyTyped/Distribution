@@ -49,8 +49,7 @@ trait XToolkit
 }
 object XToolkit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DesktopWindow: XWindowPeer,
     WorkArea: Rectangle,
     acquire: () => Unit,
@@ -67,31 +66,22 @@ object XToolkit {
     __obj.asInstanceOf[XToolkit]
   }
   
-  @scala.inline
-  implicit class XToolkitMutableBuilder[Self <: XToolkit] (val x: Self) extends AnyVal {
+  extension [Self <: XToolkit](x: Self) {
     
-    @scala.inline
-    def setCreateRegion(value: () => XRegion): Self = StObject.set(x, "createRegion", js.Any.fromFunction0(value))
+    inline def setCreateRegion(value: () => XRegion): Self = StObject.set(x, "createRegion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateScreenCompatibleDevice(value: (Double, Double) => XDevice): Self = StObject.set(x, "createScreenCompatibleDevice", js.Any.fromFunction2(value))
+    inline def setCreateScreenCompatibleDevice(value: (Double, Double) => XDevice): Self = StObject.set(x, "createScreenCompatibleDevice", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateWindow(value: WindowDescriptor => XWindowPeer): Self = StObject.set(x, "createWindow", js.Any.fromFunction1(value))
+    inline def setCreateWindow(value: WindowDescriptor => XWindowPeer): Self = StObject.set(x, "createWindow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWindows(value: SeqEquiv[WindowDescriptor] => SafeArray[XWindowPeer]): Self = StObject.set(x, "createWindows", js.Any.fromFunction1(value))
+    inline def setCreateWindows(value: SeqEquiv[WindowDescriptor] => SafeArray[XWindowPeer]): Self = StObject.set(x, "createWindows", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDesktopWindow(value: XWindowPeer): Self = StObject.set(x, "DesktopWindow", value.asInstanceOf[js.Any])
+    inline def setDesktopWindow(value: XWindowPeer): Self = StObject.set(x, "DesktopWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDesktopWindow(value: () => XWindowPeer): Self = StObject.set(x, "getDesktopWindow", js.Any.fromFunction0(value))
+    inline def setGetDesktopWindow(value: () => XWindowPeer): Self = StObject.set(x, "getDesktopWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorkArea(value: () => Rectangle): Self = StObject.set(x, "getWorkArea", js.Any.fromFunction0(value))
+    inline def setGetWorkArea(value: () => Rectangle): Self = StObject.set(x, "getWorkArea", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWorkArea(value: Rectangle): Self = StObject.set(x, "WorkArea", value.asInstanceOf[js.Any])
+    inline def setWorkArea(value: Rectangle): Self = StObject.set(x, "WorkArea", value.asInstanceOf[js.Any])
   }
 }

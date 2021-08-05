@@ -53,58 +53,41 @@ trait Bg extends StObject {
 }
 object Bg {
   
-  @scala.inline
-  def apply(): Bg = {
+  inline def apply(): Bg = {
     val __obj = js.Dynamic.literal(bg = "background", m = "margin", mb = "marginBottom", ml = "marginLeft", mr = "marginRight", mt = "marginTop", mx = "marginX", my = "marginY", p = "padding", pb = "paddingBottom", pl = "paddingLeft", pr = "paddingRight", pt = "paddingTop", px = "paddingX", py = "paddingY")
     __obj.asInstanceOf[Bg]
   }
   
-  @scala.inline
-  implicit class BgMutableBuilder[Self <: Bg] (val x: Self) extends AnyVal {
+  extension [Self <: Bg](x: Self) {
     
-    @scala.inline
-    def setBg(value: background): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+    inline def setBg(value: background): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM(value: margin): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: margin): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMb(value: marginBottom): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+    inline def setMb(value: marginBottom): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMl(value: marginLeft): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+    inline def setMl(value: marginLeft): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMr(value: marginRight): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+    inline def setMr(value: marginRight): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMt(value: marginTop): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+    inline def setMt(value: marginTop): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMx(value: marginX): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+    inline def setMx(value: marginX): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMy(value: marginY): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    inline def setMy(value: marginY): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: padding): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: padding): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPb(value: paddingBottom): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
+    inline def setPb(value: paddingBottom): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPl(value: paddingLeft): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+    inline def setPl(value: paddingLeft): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPr(value: paddingRight): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+    inline def setPr(value: paddingRight): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPt(value: paddingTop): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    inline def setPt(value: paddingTop): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPx(value: paddingX): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+    inline def setPx(value: paddingX): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPy(value: paddingY): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+    inline def setPy(value: paddingY): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
   }
 }

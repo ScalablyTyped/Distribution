@@ -23,31 +23,23 @@ trait DeviceEvent extends StObject {
 }
 object DeviceEvent {
   
-  @scala.inline
-  def apply(): DeviceEvent = {
+  inline def apply(): DeviceEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceEvent]
   }
   
-  @scala.inline
-  implicit class DeviceEventMutableBuilder[Self <: DeviceEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceEvent](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: DeviceEventTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: DeviceEventTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setType(value: DeviceEventType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeviceEventType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: DeviceEventValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DeviceEventValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

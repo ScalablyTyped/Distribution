@@ -21,22 +21,17 @@ trait PluginNameVersion extends StObject {
 }
 object PluginNameVersion {
   
-  @scala.inline
-  def apply(name: String): PluginNameVersion = {
+  inline def apply(name: String): PluginNameVersion = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginNameVersion]
   }
   
-  @scala.inline
-  implicit class PluginNameVersionMutableBuilder[Self <: PluginNameVersion] (val x: Self) extends AnyVal {
+  extension [Self <: PluginNameVersion](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

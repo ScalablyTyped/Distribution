@@ -8,11 +8,9 @@ object rosieStrings {
   
   @js.native
   sealed trait IFactory extends StObject
-  @scala.inline
-  def IFactory: IFactory = "IFactory".asInstanceOf[IFactory]
+  inline def IFactory: IFactory = "IFactory".asInstanceOf[IFactory]
   
   @js.native
   sealed trait IFactoryStatic extends StObject
-  @scala.inline
-  def IFactoryStatic: IFactoryStatic = "IFactoryStatic".asInstanceOf[IFactoryStatic]
+  inline def IFactoryStatic: IFactoryStatic = "IFactoryStatic".asInstanceOf[IFactoryStatic]
 }

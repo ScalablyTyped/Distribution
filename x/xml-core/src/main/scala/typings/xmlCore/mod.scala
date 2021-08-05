@@ -48,17 +48,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Base64Padding(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Padding")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def Base64Padding(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64Padding")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def FromBase64(base64Text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64")(base64Text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromBase64(base64Text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64")(base64Text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def FromBase64Url(base64url: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64Url")(base64url.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromBase64Url(base64url: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBase64Url")(base64url.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def FromBinary(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBinary")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromBinary(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromBinary")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
     /**
       * Converts Date to string
@@ -69,8 +65,7 @@ object mod {
       *
       * @memberOf Convert
       */
-    @scala.inline
-    def FromDateTime(dateTime: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FromDateTime(dateTime: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FromDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Converts HEX string to buffer
@@ -81,25 +76,18 @@ object mod {
       *
       * @memberOf Convert
       */
-    @scala.inline
-    def FromHex(hexString: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHex")(hexString.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromHex(hexString: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromHex")(hexString.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def FromString(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    @scala.inline
-    def FromString(str: String, enc: XmlBufferEncoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def FromString(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromString(str: String, enc: XmlBufferEncoding): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("FromString")(str.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def FromUtf8String(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromUtf8String")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def FromUtf8String(text: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("FromUtf8String")(text.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def ToBase64(buf: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToBase64(buf: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ToBase64Url(data: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToBase64Url(data: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBase64Url")(data.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ToBinary(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBinary")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToBinary(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToBinary")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Converts string to Date
@@ -110,24 +98,19 @@ object mod {
       *
       * @memberOf Convert
       */
-    @scala.inline
-    def ToDateTime(dateTime: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[Date]
+    inline def ToDateTime(dateTime: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("ToDateTime")(dateTime.asInstanceOf[js.Any]).asInstanceOf[Date]
     
     /**
       * Converts buffer to HEX string
       * @param  {BufferSource} buffer Incoming buffer
       * @returns string
       */
-    @scala.inline
-    def ToHex(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToHex(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToHex")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def ToString(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ToString(buffer: BufferSource): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ToString")(buffer.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def ToUtf8String(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToUtf8String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ToUtf8String(buffer: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ToUtf8String")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("xml-core", "DEFAULT_NAMESPACE_URI")
@@ -145,21 +128,17 @@ object mod {
     def this(items: js.Array[XmlNamespace]) = this()
   }
   
-  @scala.inline
-  def Parse(xmlString: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(xmlString.asInstanceOf[js.Any]).asInstanceOf[Document]
+  inline def Parse(xmlString: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(xmlString.asInstanceOf[js.Any]).asInstanceOf[Document]
   
   @JSImport("xml-core", "Select")
   @js.native
   val Select: SelectNodes = js.native
   
-  @scala.inline
-  def SelectNamespaces(node: Element): AssocArray[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectNamespaces")(node.asInstanceOf[js.Any]).asInstanceOf[AssocArray[String]]
+  inline def SelectNamespaces(node: Element): AssocArray[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectNamespaces")(node.asInstanceOf[js.Any]).asInstanceOf[AssocArray[String]]
   
-  @scala.inline
-  def SelectSingleNode(node: Node, path: String): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("SelectSingleNode")(node.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+  inline def SelectSingleNode(node: Node, path: String): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("SelectSingleNode")(node.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
   
-  @scala.inline
-  def Stringify(target: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Stringify")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def Stringify(target: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Stringify")(target.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("xml-core", "XE")
   @js.native
@@ -207,10 +186,8 @@ object mod {
     /* 18 */ val XML_EXCEPTION: typings.xmlCore.errorMod.XE.XML_EXCEPTION & Double = js.native
   }
   
-  @scala.inline
-  def XmlAttribute[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlAttribute")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
-  @scala.inline
-  def XmlAttribute[T](params: XmlAttributeType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlAttribute")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  inline def XmlAttribute[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlAttribute")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  inline def XmlAttribute[T](params: XmlAttributeType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlAttribute")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
   @JSImport("xml-core", "XmlBase64Converter")
   @js.native
@@ -220,10 +197,8 @@ object mod {
   @js.native
   val XmlBooleanConverter: IConverter[Boolean] = js.native
   
-  @scala.inline
-  def XmlChildElement[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlChildElement")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit]]
-  @scala.inline
-  def XmlChildElement[T](params: XmlChildElementType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlChildElement")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def XmlChildElement[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlChildElement")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit]]
+  inline def XmlChildElement[T](params: XmlChildElementType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlChildElement")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit]]
   
   @JSImport("xml-core", "XmlCollection")
   @js.native
@@ -241,17 +216,13 @@ object mod {
     @JSImport("xml-core", "XmlCollection.parser")
     @js.native
     def parser: js.Any = js.native
-    @scala.inline
-    def parser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
+    inline def parser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def XmlContent[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlContent")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
-  @scala.inline
-  def XmlContent[T](params: XmlContentType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlContent")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  inline def XmlContent[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlContent")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  inline def XmlContent[T](params: XmlContentType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlContent")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  @scala.inline
-  def XmlElement(params: XmlElementType): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlElement")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
+  inline def XmlElement(params: XmlElementType): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("XmlElement")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
   
   @JSImport("xml-core", "XmlError")
   @js.native
@@ -328,107 +299,71 @@ object mod {
       * @param  {string} prefix
       * @returns Document
       */
-    @scala.inline
-    def CreateDocument(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")().asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any]).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: String, namespaceUri: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: String, namespaceUri: String, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: String, namespaceUri: Unit, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: Unit, namespaceUri: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: Unit, namespaceUri: String, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: Unit, namespaceUri: Null, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
-    @scala.inline
-    def CreateDocument(root: Unit, namespaceUri: Unit, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")().asInstanceOf[Document]
+    inline def CreateDocument(root: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any]).asInstanceOf[Document]
+    inline def CreateDocument(root: String, namespaceUri: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(root: String, namespaceUri: String, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(root: String, namespaceUri: Unit, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(root: Unit, namespaceUri: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(root: Unit, namespaceUri: String, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(root: Unit, namespaceUri: Null, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
+    inline def CreateDocument(root: Unit, namespaceUri: Unit, prefix: String): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateDocument")(root.asInstanceOf[js.Any], namespaceUri.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Document]
     
-    @scala.inline
-    def GetAttribute(element: Element, attrName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-    @scala.inline
-    def GetAttribute(element: Element, attrName: String, defaultValue: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-    @scala.inline
-    def GetAttribute(element: Element, attrName: String, defaultValue: String, required: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-    @scala.inline
-    def GetAttribute(element: Element, attrName: String, defaultValue: Null, required: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+    inline def GetAttribute(element: Element, attrName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+    inline def GetAttribute(element: Element, attrName: String, defaultValue: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+    inline def GetAttribute(element: Element, attrName: String, defaultValue: String, required: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+    inline def GetAttribute(element: Element, attrName: String, defaultValue: Null, required: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAttribute")(element.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     
-    @scala.inline
-    def GetChild(node: Element, localName: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
-    @scala.inline
-    def GetChild(node: Element, localName: String, nameSpace: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
-    @scala.inline
-    def GetChild(node: Element, localName: String, nameSpace: String, required: Boolean): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
-    @scala.inline
-    def GetChild(node: Element, localName: String, nameSpace: Unit, required: Boolean): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetChild(node: Element, localName: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetChild(node: Element, localName: String, nameSpace: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetChild(node: Element, localName: String, nameSpace: String, required: Boolean): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetChild(node: Element, localName: String, nameSpace: Unit, required: Boolean): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     
-    @scala.inline
-    def GetChildren(node: Node, localName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChildren")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
-    @scala.inline
-    def GetChildren(node: Node, localName: String, nameSpace: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChildren")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+    inline def GetChildren(node: Node, localName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChildren")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+    inline def GetChildren(node: Node, localName: String, nameSpace: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetChildren")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
     
-    @scala.inline
-    def GetElement(element: Element, name: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Element]
-    @scala.inline
-    def GetElement(element: Element, name: String, required: Boolean): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def GetElement(element: Element, name: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Element]
+    inline def GetElement(element: Element, name: String, required: Boolean): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[Element]
     
-    @scala.inline
-    def GetElementById(element: Document, idValue: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElementById")(element.asInstanceOf[js.Any], idValue.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
-    @scala.inline
-    def GetElementById(element: Element, idValue: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElementById")(element.asInstanceOf[js.Any], idValue.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetElementById(element: Document, idValue: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElementById")(element.asInstanceOf[js.Any], idValue.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetElementById(element: Element, idValue: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetElementById")(element.asInstanceOf[js.Any], idValue.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     
-    @scala.inline
-    def GetFirstChild(node: Node, localName: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
-    @scala.inline
-    def GetFirstChild(node: Node, localName: String, nameSpace: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetFirstChild(node: Node, localName: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def GetFirstChild(node: Node, localName: String, nameSpace: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstChild")(node.asInstanceOf[js.Any], localName.asInstanceOf[js.Any], nameSpace.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     
-    @scala.inline
-    def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
-    @scala.inline
-    def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: Element): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: Element): T = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadXml")(param.asInstanceOf[js.Any]).asInstanceOf[T]
     
     @JSImport("xml-core", "XmlObject.attributes")
     @js.native
     def attributes: AssocArray[XmlAttributeType[js.Any]] = js.native
-    @scala.inline
-    def attributes_=(x: AssocArray[XmlAttributeType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
+    inline def attributes_=(x: AssocArray[XmlAttributeType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core", "XmlObject.elements")
     @js.native
     def elements: AssocArray[XmlChildElementType[js.Any]] = js.native
-    @scala.inline
-    def elements_=(x: AssocArray[XmlChildElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
+    inline def elements_=(x: AssocArray[XmlChildElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core", "XmlObject.localName")
     @js.native
     def localName: String = js.native
-    @scala.inline
-    def localName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localName")(x.asInstanceOf[js.Any])
+    inline def localName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localName")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core", "XmlObject.namespaceURI")
     @js.native
     def namespaceURI: String | Null = js.native
-    @scala.inline
-    def namespaceURI_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("namespaceURI")(x.asInstanceOf[js.Any])
+    inline def namespaceURI_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("namespaceURI")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core", "XmlObject.prefix")
     @js.native
     def prefix: String | Null = js.native
-    @scala.inline
-    def prefix_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
+    inline def prefix_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def assign(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def assign(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isDocument(obj: js.Any): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
+  inline def isDocument(obj: js.Any): /* is std.Document */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDocument")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Document */ Boolean]
   
-  @scala.inline
-  def isElement(obj: js.Any): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
+  inline def isElement(obj: js.Any): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
 }

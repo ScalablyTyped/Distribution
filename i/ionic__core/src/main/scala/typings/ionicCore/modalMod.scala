@@ -54,24 +54,24 @@ object modalMod {
     @JSName("el")
     var el_Modal: HTMLIonModalElement = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
-    var gestureAnimationDismissing: js.Any = js.native
+    /* private */ var gestureAnimationDismissing: js.Any = js.native
     
-    var initSwipeToClose: js.Any = js.native
+    /* private */ var initSwipeToClose: js.Any = js.native
     
     var lastFocus: js.UndefOr[HTMLElement] = js.native
     
-    var onBackdropTap: js.Any = js.native
+    /* private */ var onBackdropTap: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the modal did dismiss.
       */
     def onDidDismiss[T](): js.Promise[OverlayEventDetail[T]] = js.native
     
-    var onDismiss: js.Any = js.native
+    /* private */ var onDismiss: js.Any = js.native
     
-    var onLifecycle: js.Any = js.native
+    /* private */ var onLifecycle: js.Any = js.native
     
     /**
       * Returns a promise that resolves when the modal will dismiss.
@@ -99,6 +99,6 @@ object modalMod {
     
     def swipeToCloseChanged(enable: Boolean): Unit = js.native
     
-    var usersElement: js.Any = js.native
+    /* private */ var usersElement: js.Any = js.native
   }
 }

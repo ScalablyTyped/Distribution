@@ -16,10 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Result]
-  @scala.inline
-  def default(hasDebounceScrollPolyfill: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDebounceScrollPolyfill.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def default(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Result]
+  inline def default(hasDebounceScrollPolyfill: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDebounceScrollPolyfill.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   type HTMLOrSVGElement = HTMLElement | SVGElement
   
@@ -33,32 +31,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDebounce(value: Double | Resize): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+      inline def setDebounce(value: Double | Resize): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
+      inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
       
-      @scala.inline
-      def setPolyfill(value: Instantiable): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
+      inline def setPolyfill(value: Instantiable): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolyfillUndefined: Self = StObject.set(x, "polyfill", js.undefined)
+      inline def setPolyfillUndefined: Self = StObject.set(x, "polyfill", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     }
   }
   
@@ -84,8 +74,7 @@ object mod {
   }
   object RectReadOnly {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bottom: Double,
       height: Double,
       left: Double,
@@ -99,32 +88,23 @@ object mod {
       __obj.asInstanceOf[RectReadOnly]
     }
     
-    @scala.inline
-    implicit class RectReadOnlyMutableBuilder[Self <: RectReadOnly] (val x: Self) extends AnyVal {
+    extension [Self <: RectReadOnly](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

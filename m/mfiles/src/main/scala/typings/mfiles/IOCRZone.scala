@@ -38,8 +38,7 @@ trait IOCRZone extends StObject {
 }
 object IOCRZone {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Barcode: Boolean,
     ClearOCROptions: () => Unit,
     Clone: () => IOCRZone,
@@ -59,49 +58,34 @@ object IOCRZone {
     __obj.asInstanceOf[IOCRZone]
   }
   
-  @scala.inline
-  implicit class IOCRZoneMutableBuilder[Self <: IOCRZone] (val x: Self) extends AnyVal {
+  extension [Self <: IOCRZone](x: Self) {
     
-    @scala.inline
-    def setBarcode(value: Boolean): Self = StObject.set(x, "Barcode", value.asInstanceOf[js.Any])
+    inline def setBarcode(value: Boolean): Self = StObject.set(x, "Barcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearOCROptions(value: () => Unit): Self = StObject.set(x, "ClearOCROptions", js.Any.fromFunction0(value))
+    inline def setClearOCROptions(value: () => Unit): Self = StObject.set(x, "ClearOCROptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone(value: () => IOCRZone): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IOCRZone): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: MFDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUnit(value: MFOCRDimensionUnit): Self = StObject.set(x, "DimensionUnit", value.asInstanceOf[js.Any])
+    inline def setDimensionUnit(value: MFOCRDimensionUnit): Self = StObject.set(x, "DimensionUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasOCROptions(value: Boolean): Self = StObject.set(x, "HasOCROptions", value.asInstanceOf[js.Any])
+    inline def setHasOCROptions(value: Boolean): Self = StObject.set(x, "HasOCROptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOCROptions(value: IOCROptions): Self = StObject.set(x, "OCROptions", value.asInstanceOf[js.Any])
+    inline def setOCROptions(value: IOCROptions): Self = StObject.set(x, "OCROptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetOCROptions(value: IOCROptions => Unit): Self = StObject.set(x, "SetOCROptions", js.Any.fromFunction1(value))
+    inline def setSetOCROptions(value: IOCROptions => Unit): Self = StObject.set(x, "SetOCROptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

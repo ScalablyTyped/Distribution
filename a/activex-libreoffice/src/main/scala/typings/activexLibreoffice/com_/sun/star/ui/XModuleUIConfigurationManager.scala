@@ -37,8 +37,7 @@ trait XModuleUIConfigurationManager
 }
 object XModuleUIConfigurationManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getDefaultSettings: String => XIndexAccess,
     isDefaultSettings: String => Boolean,
@@ -49,13 +48,10 @@ object XModuleUIConfigurationManager {
     __obj.asInstanceOf[XModuleUIConfigurationManager]
   }
   
-  @scala.inline
-  implicit class XModuleUIConfigurationManagerMutableBuilder[Self <: XModuleUIConfigurationManager] (val x: Self) extends AnyVal {
+  extension [Self <: XModuleUIConfigurationManager](x: Self) {
     
-    @scala.inline
-    def setGetDefaultSettings(value: String => XIndexAccess): Self = StObject.set(x, "getDefaultSettings", js.Any.fromFunction1(value))
+    inline def setGetDefaultSettings(value: String => XIndexAccess): Self = StObject.set(x, "getDefaultSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDefaultSettings(value: String => Boolean): Self = StObject.set(x, "isDefaultSettings", js.Any.fromFunction1(value))
+    inline def setIsDefaultSettings(value: String => Boolean): Self = StObject.set(x, "isDefaultSettings", js.Any.fromFunction1(value))
   }
 }

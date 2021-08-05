@@ -11,6 +11,5 @@ object ethereumCryptographySha256Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sha256(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def sha256(msg: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sha256")(msg.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

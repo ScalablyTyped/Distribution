@@ -42,55 +42,39 @@ trait SchemaPathToConversionReportCompatibleFields extends StObject {
 }
 object SchemaPathToConversionReportCompatibleFields {
   
-  @scala.inline
-  def apply(): SchemaPathToConversionReportCompatibleFields = {
+  inline def apply(): SchemaPathToConversionReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPathToConversionReportCompatibleFields]
   }
   
-  @scala.inline
-  implicit class SchemaPathToConversionReportCompatibleFieldsMutableBuilder[Self <: SchemaPathToConversionReportCompatibleFields] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPathToConversionReportCompatibleFields](x: Self) {
     
-    @scala.inline
-    def setConversionDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
+    inline def setConversionDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
+    inline def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
     
-    @scala.inline
-    def setConversionDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
+    inline def setConversionDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setCustomFloodlightVariables(value: js.Array[SchemaDimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
+    inline def setCustomFloodlightVariables(value: js.Array[SchemaDimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
+    inline def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
     
-    @scala.inline
-    def setCustomFloodlightVariablesVarargs(value: SchemaDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
+    inline def setCustomFloodlightVariablesVarargs(value: SchemaDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[SchemaMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[SchemaMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: SchemaMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: SchemaMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setPerInteractionDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
+    inline def setPerInteractionDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
+    inline def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
     
-    @scala.inline
-    def setPerInteractionDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
+    inline def setPerInteractionDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
   }
 }

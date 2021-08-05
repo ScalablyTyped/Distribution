@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def implement[P /* <: js.Thenable[js.Any] */](implementation: PromiseImplementation[P]): Run_[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(implementation.asInstanceOf[js.Any]).asInstanceOf[Run_[P]]
+  inline def implement[P /* <: js.Thenable[js.Any] */](implementation: PromiseImplementation[P]): Run_[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(implementation.asInstanceOf[js.Any]).asInstanceOf[Run_[P]]
   
   @JSImport("promise-dag", "run")
   @js.native
@@ -28,23 +27,18 @@ object mod {
   }
   object PromiseImplementation {
     
-    @scala.inline
-    def apply[P /* <: js.Thenable[js.Any] */](all: js.Array[js.Any] => P, reject: js.Any => P, resolve: js.Any => P): PromiseImplementation[P] = {
+    inline def apply[P /* <: js.Thenable[js.Any] */](all: js.Array[js.Any] => P, reject: js.Any => P, resolve: js.Any => P): PromiseImplementation[P] = {
       val __obj = js.Dynamic.literal(all = js.Any.fromFunction1(all), reject = js.Any.fromFunction1(reject), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[PromiseImplementation[P]]
     }
     
-    @scala.inline
-    implicit class PromiseImplementationMutableBuilder[Self <: PromiseImplementation[?], P /* <: js.Thenable[js.Any] */] (val x: Self & PromiseImplementation[P]) extends AnyVal {
+    extension [Self <: PromiseImplementation[?], P /* <: js.Thenable[js.Any] */](x: Self & PromiseImplementation[P]) {
       
-      @scala.inline
-      def setAll(value: js.Array[js.Any] => P): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
+      inline def setAll(value: js.Array[js.Any] => P): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReject(value: js.Any => P): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: js.Any => P): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: js.Any => P): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: js.Any => P): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   

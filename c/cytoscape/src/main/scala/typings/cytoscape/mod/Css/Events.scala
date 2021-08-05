@@ -27,8 +27,7 @@ trait Events[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject
 }
 object Events {
   
-  @scala.inline
-  def apply[SingularType /* <: NodeSingular | EdgeSingular */](
+  inline def apply[SingularType /* <: NodeSingular | EdgeSingular */](
     events: PropertyValue[SingularType, yes | no],
     `text-events`: PropertyValue[SingularType, yes | no]
   ): Events[SingularType] = {
@@ -37,19 +36,14 @@ object Events {
     __obj.asInstanceOf[Events[SingularType]]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events[?], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self & Events[SingularType]) extends AnyVal {
+  extension [Self <: Events[?], SingularType /* <: NodeSingular | EdgeSingular */](x: Self & Events[SingularType]) {
     
-    @scala.inline
-    def setEvents(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsFunction1(value: SingularType => yes | no): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
+    inline def setEventsFunction1(value: SingularType => yes | no): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setText-events`(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "text-events", value.asInstanceOf[js.Any])
+    inline def `setText-events`(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "text-events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setText-eventsFunction1`(value: SingularType => yes | no): Self = StObject.set(x, "text-events", js.Any.fromFunction1(value))
+    inline def `setText-eventsFunction1`(value: SingularType => yes | no): Self = StObject.set(x, "text-events", js.Any.fromFunction1(value))
   }
 }

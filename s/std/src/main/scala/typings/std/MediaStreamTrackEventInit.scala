@@ -12,16 +12,13 @@ trait MediaStreamTrackEventInit
 }
 object MediaStreamTrackEventInit {
   
-  @scala.inline
-  def apply(track: MediaStreamTrack): MediaStreamTrackEventInit = {
+  inline def apply(track: MediaStreamTrack): MediaStreamTrackEventInit = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrackEventInit]
   }
   
-  @scala.inline
-  implicit class MediaStreamTrackEventInitMutableBuilder[Self <: MediaStreamTrackEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamTrackEventInit](x: Self) {
     
-    @scala.inline
-    def setTrack(value: MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

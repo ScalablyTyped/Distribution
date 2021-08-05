@@ -13,20 +13,16 @@ object anon {
   }
   object PickWaitOptionstimeout {
     
-    @scala.inline
-    def apply(): PickWaitOptionstimeout = {
+    inline def apply(): PickWaitOptionstimeout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickWaitOptionstimeout]
     }
     
-    @scala.inline
-    implicit class PickWaitOptionstimeoutMutableBuilder[Self <: PickWaitOptionstimeout] (val x: Self) extends AnyVal {
+    extension [Self <: PickWaitOptionstimeout](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -39,26 +35,20 @@ object anon {
   }
   object PickWaitOptionstimeoutsup {
     
-    @scala.inline
-    def apply(): PickWaitOptionstimeoutsup = {
+    inline def apply(): PickWaitOptionstimeoutsup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickWaitOptionstimeoutsup]
     }
     
-    @scala.inline
-    implicit class PickWaitOptionstimeoutsupMutableBuilder[Self <: PickWaitOptionstimeoutsup] (val x: Self) extends AnyVal {
+    extension [Self <: PickWaitOptionstimeoutsup](x: Self) {
       
-      @scala.inline
-      def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
+      inline def setSuppressErrors(value: Boolean): Self = StObject.set(x, "suppressErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
+      inline def setSuppressErrorsUndefined: Self = StObject.set(x, "suppressErrors", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

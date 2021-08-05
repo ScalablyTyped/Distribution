@@ -36,8 +36,7 @@ trait XmlWriter extends StObject {
 }
 object XmlWriter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     writeAttributeString: (String, String) => Unit,
     writeElementString: (String, String) => Unit,
@@ -52,34 +51,24 @@ object XmlWriter {
     __obj.asInstanceOf[XmlWriter]
   }
   
-  @scala.inline
-  implicit class XmlWriterMutableBuilder[Self <: XmlWriter] (val x: Self) extends AnyVal {
+  extension [Self <: XmlWriter](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteAttributeString(value: (String, String) => Unit): Self = StObject.set(x, "writeAttributeString", js.Any.fromFunction2(value))
+    inline def setWriteAttributeString(value: (String, String) => Unit): Self = StObject.set(x, "writeAttributeString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWriteElementString(value: (String, String) => Unit): Self = StObject.set(x, "writeElementString", js.Any.fromFunction2(value))
+    inline def setWriteElementString(value: (String, String) => Unit): Self = StObject.set(x, "writeElementString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWriteEndAttribute(value: () => Unit): Self = StObject.set(x, "writeEndAttribute", js.Any.fromFunction0(value))
+    inline def setWriteEndAttribute(value: () => Unit): Self = StObject.set(x, "writeEndAttribute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteEndElement(value: () => Unit): Self = StObject.set(x, "writeEndElement", js.Any.fromFunction0(value))
+    inline def setWriteEndElement(value: () => Unit): Self = StObject.set(x, "writeEndElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWriteRaw(value: String => Unit): Self = StObject.set(x, "writeRaw", js.Any.fromFunction1(value))
+    inline def setWriteRaw(value: String => Unit): Self = StObject.set(x, "writeRaw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteStartAttribute(value: String => Unit): Self = StObject.set(x, "writeStartAttribute", js.Any.fromFunction1(value))
+    inline def setWriteStartAttribute(value: String => Unit): Self = StObject.set(x, "writeStartAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteStartElement(value: String => Unit): Self = StObject.set(x, "writeStartElement", js.Any.fromFunction1(value))
+    inline def setWriteStartElement(value: String => Unit): Self = StObject.set(x, "writeStartElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
+    inline def setWriteString(value: String => Unit): Self = StObject.set(x, "writeString", js.Any.fromFunction1(value))
   }
 }

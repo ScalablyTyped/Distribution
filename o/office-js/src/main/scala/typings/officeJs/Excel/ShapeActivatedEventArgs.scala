@@ -39,23 +39,18 @@ trait ShapeActivatedEventArgs extends StObject {
 }
 object ShapeActivatedEventArgs {
   
-  @scala.inline
-  def apply(shapeId: String, worksheetId: String): ShapeActivatedEventArgs = {
+  inline def apply(shapeId: String, worksheetId: String): ShapeActivatedEventArgs = {
     val __obj = js.Dynamic.literal(shapeId = shapeId.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ShapeActivated")
     __obj.asInstanceOf[ShapeActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ShapeActivatedEventArgsMutableBuilder[Self <: ShapeActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setShapeId(value: String): Self = StObject.set(x, "shapeId", value.asInstanceOf[js.Any])
+    inline def setShapeId(value: String): Self = StObject.set(x, "shapeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ShapeActivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ShapeActivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

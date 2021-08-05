@@ -28,37 +28,27 @@ trait ThingTypeDefinition extends StObject {
 }
 object ThingTypeDefinition {
   
-  @scala.inline
-  def apply(): ThingTypeDefinition = {
+  inline def apply(): ThingTypeDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThingTypeDefinition]
   }
   
-  @scala.inline
-  implicit class ThingTypeDefinitionMutableBuilder[Self <: ThingTypeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ThingTypeDefinition](x: Self) {
     
-    @scala.inline
-    def setThingTypeArn(value: ThingTypeArn): Self = StObject.set(x, "thingTypeArn", value.asInstanceOf[js.Any])
+    inline def setThingTypeArn(value: ThingTypeArn): Self = StObject.set(x, "thingTypeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeArnUndefined: Self = StObject.set(x, "thingTypeArn", js.undefined)
+    inline def setThingTypeArnUndefined: Self = StObject.set(x, "thingTypeArn", js.undefined)
     
-    @scala.inline
-    def setThingTypeMetadata(value: ThingTypeMetadata): Self = StObject.set(x, "thingTypeMetadata", value.asInstanceOf[js.Any])
+    inline def setThingTypeMetadata(value: ThingTypeMetadata): Self = StObject.set(x, "thingTypeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeMetadataUndefined: Self = StObject.set(x, "thingTypeMetadata", js.undefined)
+    inline def setThingTypeMetadataUndefined: Self = StObject.set(x, "thingTypeMetadata", js.undefined)
     
-    @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
+    inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
+    inline def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
     
-    @scala.inline
-    def setThingTypeProperties(value: ThingTypeProperties): Self = StObject.set(x, "thingTypeProperties", value.asInstanceOf[js.Any])
+    inline def setThingTypeProperties(value: ThingTypeProperties): Self = StObject.set(x, "thingTypeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingTypePropertiesUndefined: Self = StObject.set(x, "thingTypeProperties", js.undefined)
+    inline def setThingTypePropertiesUndefined: Self = StObject.set(x, "thingTypeProperties", js.undefined)
   }
 }

@@ -27,29 +27,22 @@ object typesAttributeDimensionMod {
   }
   object AttributeDimension {
     
-    @scala.inline
-    def apply(): AttributeDimension = {
+    inline def apply(): AttributeDimension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributeDimension]
     }
     
-    @scala.inline
-    implicit class AttributeDimensionMutableBuilder[Self <: AttributeDimension] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeDimension](x: Self) {
       
-      @scala.inline
-      def setAttributeType(value: INCLUSIVE | EXCLUSIVE | String): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+      inline def setAttributeType(value: INCLUSIVE | EXCLUSIVE | String): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
+      inline def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
     }
   }
   
@@ -65,23 +58,18 @@ object typesAttributeDimensionMod {
   }
   object UnmarshalledAttributeDimension {
     
-    @scala.inline
-    def apply(): UnmarshalledAttributeDimension = {
+    inline def apply(): UnmarshalledAttributeDimension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledAttributeDimension]
     }
     
-    @scala.inline
-    implicit class UnmarshalledAttributeDimensionMutableBuilder[Self <: UnmarshalledAttributeDimension] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledAttributeDimension](x: Self) {
       
-      @scala.inline
-      def setValues(value: js.Array[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+      inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
     }
   }
 }

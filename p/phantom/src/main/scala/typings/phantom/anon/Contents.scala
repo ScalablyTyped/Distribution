@@ -13,19 +13,15 @@ trait Contents extends StObject {
 }
 object Contents {
   
-  @scala.inline
-  def apply(contents: IPhantomCallback, height: String): Contents = {
+  inline def apply(contents: IPhantomCallback, height: String): Contents = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contents]
   }
   
-  @scala.inline
-  implicit class ContentsMutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
+  extension [Self <: Contents](x: Self) {
     
-    @scala.inline
-    def setContents(value: IPhantomCallback): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: IPhantomCallback): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

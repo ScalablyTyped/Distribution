@@ -137,97 +137,67 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
 }
 object PlotNetworkgraphLayoutAlgorithmOptions {
   
-  @scala.inline
-  def apply(): PlotNetworkgraphLayoutAlgorithmOptions = {
+  inline def apply(): PlotNetworkgraphLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotNetworkgraphLayoutAlgorithmOptions]
   }
   
-  @scala.inline
-  implicit class PlotNetworkgraphLayoutAlgorithmOptionsMutableBuilder[Self <: PlotNetworkgraphLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotNetworkgraphLayoutAlgorithmOptions](x: Self) {
     
-    @scala.inline
-    def setApproximation(value: OptionsApproximationValue): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
+    inline def setApproximation(value: OptionsApproximationValue): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
+    inline def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
     
-    @scala.inline
-    def setAttractiveForce(value: js.Function): Self = StObject.set(x, "attractiveForce", value.asInstanceOf[js.Any])
+    inline def setAttractiveForce(value: js.Function): Self = StObject.set(x, "attractiveForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttractiveForceUndefined: Self = StObject.set(x, "attractiveForce", js.undefined)
+    inline def setAttractiveForceUndefined: Self = StObject.set(x, "attractiveForce", js.undefined)
     
-    @scala.inline
-    def setEnableSimulation(value: Boolean): Self = StObject.set(x, "enableSimulation", value.asInstanceOf[js.Any])
+    inline def setEnableSimulation(value: Boolean): Self = StObject.set(x, "enableSimulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSimulationUndefined: Self = StObject.set(x, "enableSimulation", js.undefined)
+    inline def setEnableSimulationUndefined: Self = StObject.set(x, "enableSimulation", js.undefined)
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+    inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
-    @scala.inline
-    def setGravitationalConstant(value: Double): Self = StObject.set(x, "gravitationalConstant", value.asInstanceOf[js.Any])
+    inline def setGravitationalConstant(value: Double): Self = StObject.set(x, "gravitationalConstant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravitationalConstantUndefined: Self = StObject.set(x, "gravitationalConstant", js.undefined)
+    inline def setGravitationalConstantUndefined: Self = StObject.set(x, "gravitationalConstant", js.undefined)
     
-    @scala.inline
-    def setInitialPositionRadius(value: Double): Self = StObject.set(x, "initialPositionRadius", value.asInstanceOf[js.Any])
+    inline def setInitialPositionRadius(value: Double): Self = StObject.set(x, "initialPositionRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPositionRadiusUndefined: Self = StObject.set(x, "initialPositionRadius", js.undefined)
+    inline def setInitialPositionRadiusUndefined: Self = StObject.set(x, "initialPositionRadius", js.undefined)
     
-    @scala.inline
-    def setInitialPositions(value: circle | random | js.Function): Self = StObject.set(x, "initialPositions", value.asInstanceOf[js.Any])
+    inline def setInitialPositions(value: circle | random | js.Function): Self = StObject.set(x, "initialPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
+    inline def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
     
-    @scala.inline
-    def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    inline def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
+    inline def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
     
-    @scala.inline
-    def setLinkLength(value: Double): Self = StObject.set(x, "linkLength", value.asInstanceOf[js.Any])
+    inline def setLinkLength(value: Double): Self = StObject.set(x, "linkLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkLengthUndefined: Self = StObject.set(x, "linkLength", js.undefined)
+    inline def setLinkLengthUndefined: Self = StObject.set(x, "linkLength", js.undefined)
     
-    @scala.inline
-    def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
+    inline def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
+    inline def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
     
-    @scala.inline
-    def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
+    inline def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
+    inline def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
     
-    @scala.inline
-    def setRepulsiveForce(value: js.Function): Self = StObject.set(x, "repulsiveForce", value.asInstanceOf[js.Any])
+    inline def setRepulsiveForce(value: js.Function): Self = StObject.set(x, "repulsiveForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepulsiveForceUndefined: Self = StObject.set(x, "repulsiveForce", js.undefined)
+    inline def setRepulsiveForceUndefined: Self = StObject.set(x, "repulsiveForce", js.undefined)
     
-    @scala.inline
-    def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+    inline def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
+    inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
-    @scala.inline
-    def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

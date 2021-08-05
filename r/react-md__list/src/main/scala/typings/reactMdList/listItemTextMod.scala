@@ -10,8 +10,7 @@ object listItemTextMod {
   
   object ListItemText {
     
-    @scala.inline
-    def apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/list/types/ListItemText", "ListItemText")
     @js.native
@@ -26,14 +25,12 @@ object listItemTextMod {
       @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.className")
       @js.native
       def className: js.Any = js.native
-      @scala.inline
-      def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.secondaryText")
       @js.native
@@ -42,11 +39,9 @@ object listItemTextMod {
       @JSImport("@react-md/list/types/ListItemText", "ListItemText.propTypes.secondaryTextClassName")
       @js.native
       def secondaryTextClassName: js.Any = js.native
-      @scala.inline
-      def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
+      inline def secondaryTextClassName_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryTextClassName")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
+      inline def secondaryText_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondaryText")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -78,38 +73,28 @@ object listItemTextMod {
   }
   object ListItemTextProps {
     
-    @scala.inline
-    def apply(): ListItemTextProps = {
+    inline def apply(): ListItemTextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListItemTextProps]
     }
     
-    @scala.inline
-    implicit class ListItemTextPropsMutableBuilder[Self <: ListItemTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemTextProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setSecondaryText(value: ReactNode): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
+      inline def setSecondaryText(value: ReactNode): Self = StObject.set(x, "secondaryText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryTextClassName(value: String): Self = StObject.set(x, "secondaryTextClassName", value.asInstanceOf[js.Any])
+      inline def setSecondaryTextClassName(value: String): Self = StObject.set(x, "secondaryTextClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryTextClassNameUndefined: Self = StObject.set(x, "secondaryTextClassName", js.undefined)
+      inline def setSecondaryTextClassNameUndefined: Self = StObject.set(x, "secondaryTextClassName", js.undefined)
       
-      @scala.inline
-      def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
+      inline def setSecondaryTextUndefined: Self = StObject.set(x, "secondaryText", js.undefined)
     }
   }
 }

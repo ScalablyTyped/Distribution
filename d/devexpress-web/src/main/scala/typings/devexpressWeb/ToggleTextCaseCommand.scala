@@ -18,16 +18,13 @@ trait ToggleTextCaseCommand
 }
 object ToggleTextCaseCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): ToggleTextCaseCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): ToggleTextCaseCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ToggleTextCaseCommand]
   }
   
-  @scala.inline
-  implicit class ToggleTextCaseCommandMutableBuilder[Self <: ToggleTextCaseCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ToggleTextCaseCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

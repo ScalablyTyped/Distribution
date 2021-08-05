@@ -18,19 +18,15 @@ trait ActivityTypeDetail extends StObject {
 }
 object ActivityTypeDetail {
   
-  @scala.inline
-  def apply(configuration: ActivityTypeConfiguration, typeInfo: ActivityTypeInfo): ActivityTypeDetail = {
+  inline def apply(configuration: ActivityTypeConfiguration, typeInfo: ActivityTypeInfo): ActivityTypeDetail = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], typeInfo = typeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTypeDetail]
   }
   
-  @scala.inline
-  implicit class ActivityTypeDetailMutableBuilder[Self <: ActivityTypeDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTypeDetail](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ActivityTypeConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ActivityTypeConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeInfo(value: ActivityTypeInfo): Self = StObject.set(x, "typeInfo", value.asInstanceOf[js.Any])
+    inline def setTypeInfo(value: ActivityTypeInfo): Self = StObject.set(x, "typeInfo", value.asInstanceOf[js.Any])
   }
 }

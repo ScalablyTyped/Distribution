@@ -17,16 +17,13 @@ trait CodeAuthorizeOptions
 }
 object CodeAuthorizeOptions {
   
-  @scala.inline
-  def apply(scope: AuthorizeScope): CodeAuthorizeOptions = {
+  inline def apply(scope: AuthorizeScope): CodeAuthorizeOptions = {
     val __obj = js.Dynamic.literal(response_type = "code", scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAuthorizeOptions]
   }
   
-  @scala.inline
-  implicit class CodeAuthorizeOptionsMutableBuilder[Self <: CodeAuthorizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CodeAuthorizeOptions](x: Self) {
     
-    @scala.inline
-    def setResponse_type(value: code): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: code): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
   }
 }

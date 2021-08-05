@@ -14,28 +14,21 @@ trait GoogleCloudDatalabelingV1beta1Row extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1Row {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1Row = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1Row = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Row]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1RowMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Row] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1Row](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpec(value: GoogleCloudDatalabelingV1beta1AnnotationSpec): Self = StObject.set(x, "annotationSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
+    inline def setAnnotationSpecUndefined: Self = StObject.set(x, "annotationSpec", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfusionMatrixEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

@@ -78,8 +78,7 @@ object inputAreaUniDriverMod {
   }
   object InputAreaUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       enterText: String => js.Promise[String],
@@ -117,95 +116,65 @@ object inputAreaUniDriverMod {
       __obj.asInstanceOf[InputAreaUniDriver]
     }
     
-    @scala.inline
-    implicit class InputAreaUniDriverMutableBuilder[Self <: InputAreaUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: InputAreaUniDriver](x: Self) {
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[String]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[String]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => js.Promise[Unit]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaControls(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getAriaControls", js.Any.fromFunction0(value))
+      inline def setGetAriaControls(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getAriaControls", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaDescribedby(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getAriaDescribedby", js.Any.fromFunction0(value))
+      inline def setGetAriaDescribedby(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getAriaDescribedby", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaLabel(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction0(value))
+      inline def setGetAriaLabel(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCounterValue(value: () => js.Promise[String]): Self = StObject.set(x, "getCounterValue", js.Any.fromFunction0(value))
+      inline def setGetCounterValue(value: () => js.Promise[String]): Self = StObject.set(x, "getCounterValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultValue(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
+      inline def setGetDefaultValue(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
+      inline def setGetDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHasCounter(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getHasCounter", js.Any.fromFunction0(value))
+      inline def setGetHasCounter(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getHasCounter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxLength(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
+      inline def setGetMaxLength(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPlaceholder(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
+      inline def setGetPlaceholder(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetReadOnly(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getReadOnly", js.Any.fromFunction0(value))
+      inline def setGetReadOnly(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getReadOnly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getRequired", js.Any.fromFunction0(value))
+      inline def setGetRequired(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getRequired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResizable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getResizable", js.Any.fromFunction0(value))
+      inline def setGetResizable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "getResizable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRowsCount(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getRowsCount", js.Any.fromFunction0(value))
+      inline def setGetRowsCount(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getRowsCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStyle(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+      inline def setGetStyle(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTabIndex(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
+      inline def setGetTabIndex(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipDataHook(value: () => String): Self = StObject.set(x, "getTooltipDataHook", js.Any.fromFunction0(value))
+      inline def setGetTooltipDataHook(value: () => String): Self = StObject.set(x, "getTooltipDataHook", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getTooltipElement", js.Any.fromFunction0(value))
+      inline def setGetTooltipElement(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getTooltipElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasExclamation(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasExclamation", js.Any.fromFunction0(value))
+      inline def setHasExclamation(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasExclamation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
+      inline def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFocus(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocus", js.Any.fromFunction0(value))
+      inline def setIsFocus(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocusedStyle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocusedStyle", js.Any.fromFunction0(value))
+      inline def setIsFocusedStyle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isFocusedStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHoveredStyle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHoveredStyle", js.Any.fromFunction0(value))
+      inline def setIsHoveredStyle(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHoveredStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSizeSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSizeSmall", js.Any.fromFunction0(value))
+      inline def setIsSizeSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSizeSmall", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrigger(
+      inline def setTrigger(
         value: (/* keyof wix-style-react.anon.TypeofSimulate */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any, SyntheticEventData) => js.Promise[Unit]
       ): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
     }

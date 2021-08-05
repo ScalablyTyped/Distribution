@@ -12,19 +12,15 @@ trait Typeofpayload extends StObject {
 }
 object Typeofpayload {
   
-  @scala.inline
-  def apply(output: String, parse: Boolean): Typeofpayload = {
+  inline def apply(output: String, parse: Boolean): Typeofpayload = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofpayload]
   }
   
-  @scala.inline
-  implicit class TypeofpayloadMutableBuilder[Self <: Typeofpayload] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofpayload](x: Self) {
     
-    @scala.inline
-    def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
   }
 }

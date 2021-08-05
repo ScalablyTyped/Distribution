@@ -21,8 +21,7 @@ trait LayerFilter
      with XInitialization
 object LayerFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,

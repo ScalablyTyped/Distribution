@@ -28,34 +28,25 @@ trait SchemaAccountTax extends StObject {
 }
 object SchemaAccountTax {
   
-  @scala.inline
-  def apply(): SchemaAccountTax = {
+  inline def apply(): SchemaAccountTax = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountTax]
   }
   
-  @scala.inline
-  implicit class SchemaAccountTaxMutableBuilder[Self <: SchemaAccountTax] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountTax](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRules(value: js.Array[SchemaAccountTaxTaxRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[SchemaAccountTaxTaxRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: SchemaAccountTaxTaxRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaAccountTaxTaxRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

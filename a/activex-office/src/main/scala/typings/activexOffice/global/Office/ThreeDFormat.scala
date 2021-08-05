@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ThreeDFormat")
 @js.native
-class ThreeDFormat protected ()
+/* private */ class ThreeDFormat ()
   extends StObject
      with typings.activexOffice.Office.ThreeDFormat {
   
@@ -80,7 +80,7 @@ class ThreeDFormat protected ()
   /* CompleteClass */
   var LightAngle: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ThreeDFormat_typekey")
   var OfficeDotThreeDFormat_typekey: typings.activexOffice.Office.ThreeDFormat = js.native
   

@@ -12,19 +12,15 @@ trait A11y extends StObject {
 }
 object A11y {
   
-  @scala.inline
-  def apply(a11y: Disable, actions: Disable): A11y = {
+  inline def apply(a11y: Disable, actions: Disable): A11y = {
     val __obj = js.Dynamic.literal(a11y = a11y.asInstanceOf[js.Any], actions = actions.asInstanceOf[js.Any])
     __obj.asInstanceOf[A11y]
   }
   
-  @scala.inline
-  implicit class A11yMutableBuilder[Self <: A11y] (val x: Self) extends AnyVal {
+  extension [Self <: A11y](x: Self) {
     
-    @scala.inline
-    def setA11y(value: Disable): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
+    inline def setA11y(value: Disable): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActions(value: Disable): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: Disable): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
   }
 }

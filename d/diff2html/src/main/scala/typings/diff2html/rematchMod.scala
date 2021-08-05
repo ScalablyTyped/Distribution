@@ -11,14 +11,11 @@ object rematchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def levenshtein(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def levenshtein(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("levenshtein")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def newDistanceFn[T](str: js.Function1[/* value */ T, String]): DistanceFn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("newDistanceFn")(str.asInstanceOf[js.Any]).asInstanceOf[DistanceFn[T]]
+  inline def newDistanceFn[T](str: js.Function1[/* value */ T, String]): DistanceFn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("newDistanceFn")(str.asInstanceOf[js.Any]).asInstanceOf[DistanceFn[T]]
   
-  @scala.inline
-  def newMatcherFn[T](distance: js.Function2[/* x */ T, /* y */ T, Double]): MatcherFn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("newMatcherFn")(distance.asInstanceOf[js.Any]).asInstanceOf[MatcherFn[T]]
+  inline def newMatcherFn[T](distance: js.Function2[/* x */ T, /* y */ T, Double]): MatcherFn[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("newMatcherFn")(distance.asInstanceOf[js.Any]).asInstanceOf[MatcherFn[T]]
   
   trait BestMatch extends StObject {
     
@@ -30,23 +27,18 @@ object rematchMod {
   }
   object BestMatch {
     
-    @scala.inline
-    def apply(indexA: Double, indexB: Double, score: Double): BestMatch = {
+    inline def apply(indexA: Double, indexB: Double, score: Double): BestMatch = {
       val __obj = js.Dynamic.literal(indexA = indexA.asInstanceOf[js.Any], indexB = indexB.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[BestMatch]
     }
     
-    @scala.inline
-    implicit class BestMatchMutableBuilder[Self <: BestMatch] (val x: Self) extends AnyVal {
+    extension [Self <: BestMatch](x: Self) {
       
-      @scala.inline
-      def setIndexA(value: Double): Self = StObject.set(x, "indexA", value.asInstanceOf[js.Any])
+      inline def setIndexA(value: Double): Self = StObject.set(x, "indexA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexB(value: Double): Self = StObject.set(x, "indexB", value.asInstanceOf[js.Any])
+      inline def setIndexB(value: Double): Self = StObject.set(x, "indexB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   

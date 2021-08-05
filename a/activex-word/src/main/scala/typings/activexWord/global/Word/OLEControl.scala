@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OLEControl")
 @js.native
-class OLEControl protected ()
+/* private */ class OLEControl ()
   extends StObject
      with typings.activexWord.Word.OLEControl {
   
@@ -46,7 +46,7 @@ class OLEControl protected ()
   /* CompleteClass */
   var Width: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OLEControl_typekey")
   var WordDotOLEControl_typekey: typings.activexWord.Word.OLEControl = js.native
 }

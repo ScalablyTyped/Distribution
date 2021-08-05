@@ -13,16 +13,13 @@ trait UpdatePullRequestApprovalRuleContentOutput extends StObject {
 }
 object UpdatePullRequestApprovalRuleContentOutput {
   
-  @scala.inline
-  def apply(approvalRule: ApprovalRule): UpdatePullRequestApprovalRuleContentOutput = {
+  inline def apply(approvalRule: ApprovalRule): UpdatePullRequestApprovalRuleContentOutput = {
     val __obj = js.Dynamic.literal(approvalRule = approvalRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePullRequestApprovalRuleContentOutput]
   }
   
-  @scala.inline
-  implicit class UpdatePullRequestApprovalRuleContentOutputMutableBuilder[Self <: UpdatePullRequestApprovalRuleContentOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePullRequestApprovalRuleContentOutput](x: Self) {
     
-    @scala.inline
-    def setApprovalRule(value: ApprovalRule): Self = StObject.set(x, "approvalRule", value.asInstanceOf[js.Any])
+    inline def setApprovalRule(value: ApprovalRule): Self = StObject.set(x, "approvalRule", value.asInstanceOf[js.Any])
   }
 }

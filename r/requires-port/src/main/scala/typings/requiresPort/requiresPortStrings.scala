@@ -11,48 +11,41 @@ object requiresPortStrings {
   sealed trait file
     extends StObject
        with Protocol
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait ftp
     extends StObject
        with Protocol
-  @scala.inline
-  def ftp: ftp = "ftp".asInstanceOf[ftp]
+  inline def ftp: ftp = "ftp".asInstanceOf[ftp]
   
   @js.native
   sealed trait gopher
     extends StObject
        with Protocol
-  @scala.inline
-  def gopher: gopher = "gopher".asInstanceOf[gopher]
+  inline def gopher: gopher = "gopher".asInstanceOf[gopher]
   
   @js.native
   sealed trait http
     extends StObject
        with Protocol
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
   sealed trait https
     extends StObject
        with Protocol
-  @scala.inline
-  def https: https = "https".asInstanceOf[https]
+  inline def https: https = "https".asInstanceOf[https]
   
   @js.native
   sealed trait ws
     extends StObject
        with Protocol
-  @scala.inline
-  def ws: ws = "ws".asInstanceOf[ws]
+  inline def ws: ws = "ws".asInstanceOf[ws]
   
   @js.native
   sealed trait wss
     extends StObject
        with Protocol
-  @scala.inline
-  def wss: wss = "wss".asInstanceOf[wss]
+  inline def wss: wss = "wss".asInstanceOf[wss]
 }

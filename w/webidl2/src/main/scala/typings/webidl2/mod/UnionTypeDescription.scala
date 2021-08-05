@@ -27,8 +27,7 @@ trait UnionTypeDescription
 }
 object UnionTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -39,19 +38,14 @@ object UnionTypeDescription {
     __obj.asInstanceOf[UnionTypeDescription]
   }
   
-  @scala.inline
-  implicit class UnionTypeDescriptionMutableBuilder[Self <: UnionTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: UnionTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: js.Array[IDLTypeDescription]): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
+    inline def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
     
-    @scala.inline
-    def setUnion(value: `true`): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
+    inline def setUnion(value: `true`): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
   }
 }

@@ -8,11 +8,9 @@ object hapiVisionStrings {
   
   @js.native
   sealed trait async extends StObject
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
   sealed trait sync extends StObject
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
+  inline def sync: sync = "sync".asInstanceOf[sync]
 }

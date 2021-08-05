@@ -22,15 +22,15 @@ object lazyIteratorMod {
     def this(iterators: LazyIterator[LazyIterator[T]]) = this()
     def this(iterators: LazyIterator[LazyIterator[T]], baseErrorHandler: js.Function1[/* e */ Error, Boolean]) = this()
     
-    val baseErrorHandler: js.Any = js.native
+    /* private */ val baseErrorHandler: js.Any = js.native
     
-    var iterator: js.Any = js.native
+    /* private */ var iterator: js.Any = js.native
     
-    var lastRead: js.Any = js.native
+    /* private */ var lastRead: js.Any = js.native
     
-    var moreIterators: js.Any = js.native
+    /* private */ var moreIterators: js.Any = js.native
     
-    var readFromChain: js.Any = js.native
+    /* private */ var readFromChain: js.Any = js.native
   }
   
   @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "LazyIterator")
@@ -299,9 +299,9 @@ object lazyIteratorMod {
   @js.native
   abstract class OneToManyIterator[T] () extends LazyIterator[T] {
     
-    var lastRead: js.Any = js.native
+    /* private */ var lastRead: js.Any = js.native
     
-    var outputQueue: RingBuffer[T] = js.native
+    /* protected */ var outputQueue: RingBuffer[T] = js.native
     
     /**
       * Read one or more chunks from upstream and process them, possibly
@@ -325,9 +325,9 @@ object lazyIteratorMod {
   class PrefetchIterator[T] protected () extends LazyIterator[T] {
     def this(upstream: LazyIterator[T], bufferSize: Double) = this()
     
-    var buffer: RingBuffer[js.Promise[IteratorResult[T, js.Any]]] = js.native
+    /* protected */ var buffer: RingBuffer[js.Promise[IteratorResult[T, js.Any]]] = js.native
     
-    var bufferSize: Double = js.native
+    /* protected */ var bufferSize: Double = js.native
     
     /**
       * Refill the prefetch buffer.  Returns only after the buffer is full, or
@@ -335,7 +335,7 @@ object lazyIteratorMod {
       */
     /* protected */ def refill(): Unit = js.native
     
-    var upstream: LazyIterator[T] = js.native
+    /* protected */ var upstream: LazyIterator[T] = js.native
   }
   
   @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "ShuffleIterator")
@@ -346,17 +346,17 @@ object lazyIteratorMod {
     
     /* protected */ def chooseIndex(): Double = js.native
     
-    var lastRead: js.Any = js.native
+    /* private */ var lastRead: js.Any = js.native
     
-    val random: js.Any = js.native
+    /* private */ val random: js.Any = js.native
     
-    var randomInt: js.Any = js.native
+    /* private */ var randomInt: js.Any = js.native
     
     def serialNext(): js.Promise[IteratorResult[T, js.Any]] = js.native
     
-    var upstreamExhausted: js.Any = js.native
+    /* private */ var upstreamExhausted: js.Any = js.native
     
-    var windowSize: Double = js.native
+    /* protected */ var windowSize: Double = js.native
   }
   
   @js.native
@@ -387,36 +387,27 @@ object lazyIteratorMod {
     /* 1 */ val SHORTEST: typings.tensorflowTfjsData.lazyIteratorMod.ZipMismatchMode.SHORTEST & Double = js.native
   }
   
-  @scala.inline
-  def iteratorFromConcatenated[T](baseIterators: LazyIterator[LazyIterator[T]]): LazyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromConcatenated")(baseIterators.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[T]]
-  @scala.inline
-  def iteratorFromConcatenated[T](
+  inline def iteratorFromConcatenated[T](baseIterators: LazyIterator[LazyIterator[T]]): LazyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromConcatenated")(baseIterators.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[T]]
+  inline def iteratorFromConcatenated[T](
     baseIterators: LazyIterator[LazyIterator[T]],
     baseErrorHandler: js.Function1[/* e */ Error, Boolean]
   ): LazyIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromConcatenated")(baseIterators.asInstanceOf[js.Any], baseErrorHandler.asInstanceOf[js.Any])).asInstanceOf[LazyIterator[T]]
   
-  @scala.inline
-  def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], js.Any]], count: Double): LazyIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromConcatenatedFunction")(iteratorFunc.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[LazyIterator[T]]
-  @scala.inline
-  def iteratorFromConcatenatedFunction[T](
+  inline def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], js.Any]], count: Double): LazyIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromConcatenatedFunction")(iteratorFunc.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[LazyIterator[T]]
+  inline def iteratorFromConcatenatedFunction[T](
     iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], js.Any]],
     count: Double,
     baseErrorHandler: js.Function1[/* e */ Error, Boolean]
   ): LazyIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromConcatenatedFunction")(iteratorFunc.asInstanceOf[js.Any], count.asInstanceOf[js.Any], baseErrorHandler.asInstanceOf[js.Any])).asInstanceOf[LazyIterator[T]]
   
-  @scala.inline
-  def iteratorFromFunction[T](func: js.Function0[(IteratorResult[T, js.Any]) | (js.Promise[IteratorResult[T, js.Any]])]): LazyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromFunction")(func.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[T]]
+  inline def iteratorFromFunction[T](func: js.Function0[(IteratorResult[T, js.Any]) | (js.Promise[IteratorResult[T, js.Any]])]): LazyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromFunction")(func.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[T]]
   
-  @scala.inline
-  def iteratorFromIncrementing(start: Double): LazyIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromIncrementing")(start.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[Double]]
+  inline def iteratorFromIncrementing(start: Double): LazyIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromIncrementing")(start.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[Double]]
   
-  @scala.inline
-  def iteratorFromItems[T](items: js.Array[T]): LazyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromItems")(items.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[T]]
+  inline def iteratorFromItems[T](items: js.Array[T]): LazyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromItems")(items.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[T]]
   
-  @scala.inline
-  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer): LazyIterator[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromZipped")(iterators.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[O]]
-  @scala.inline
-  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer, mismatchMode: ZipMismatchMode): LazyIterator[O] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromZipped")(iterators.asInstanceOf[js.Any], mismatchMode.asInstanceOf[js.Any])).asInstanceOf[LazyIterator[O]]
+  inline def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer): LazyIterator[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromZipped")(iterators.asInstanceOf[js.Any]).asInstanceOf[LazyIterator[O]]
+  inline def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer, mismatchMode: ZipMismatchMode): LazyIterator[O] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorFromZipped")(iterators.asInstanceOf[js.Any], mismatchMode.asInstanceOf[js.Any])).asInstanceOf[LazyIterator[O]]
   
   type IteratorContainer = Container[LazyIterator[TensorContainer]]
 }

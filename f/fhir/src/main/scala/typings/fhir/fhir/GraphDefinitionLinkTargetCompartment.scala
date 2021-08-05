@@ -53,55 +53,39 @@ trait GraphDefinitionLinkTargetCompartment
 }
 object GraphDefinitionLinkTargetCompartment {
   
-  @scala.inline
-  def apply(code: code, rule: code): GraphDefinitionLinkTargetCompartment = {
+  inline def apply(code: code, rule: code): GraphDefinitionLinkTargetCompartment = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphDefinitionLinkTargetCompartment]
   }
   
-  @scala.inline
-  implicit class GraphDefinitionLinkTargetCompartmentMutableBuilder[Self <: GraphDefinitionLinkTargetCompartment] (val x: Self) extends AnyVal {
+  extension [Self <: GraphDefinitionLinkTargetCompartment](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setRule(value: code): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: code): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
+    inline def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
+    inline def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
     
-    @scala.inline
-    def set_rule(value: Element): Self = StObject.set(x, "_rule", value.asInstanceOf[js.Any])
+    inline def set_rule(value: Element): Self = StObject.set(x, "_rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_ruleUndefined: Self = StObject.set(x, "_rule", js.undefined)
+    inline def set_ruleUndefined: Self = StObject.set(x, "_rule", js.undefined)
   }
 }

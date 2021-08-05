@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlDefaultExpandCollapseSetting extends StObject
 object OlDefaultExpandCollapseSetting {
   
-  @scala.inline
-  def olAllCollapsed: `1` = 1.asInstanceOf[`1`]
+  inline def olAllCollapsed: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olAllExpanded: `0` = 0.asInstanceOf[`0`]
+  inline def olAllExpanded: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olLastViewed: `2` = 2.asInstanceOf[`2`]
+  inline def olLastViewed: `2` = 2.asInstanceOf[`2`]
 }

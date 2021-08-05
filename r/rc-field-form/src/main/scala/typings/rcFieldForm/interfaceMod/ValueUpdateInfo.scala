@@ -17,20 +17,16 @@ trait ValueUpdateInfo
 }
 object ValueUpdateInfo {
   
-  @scala.inline
-  def apply(source: internal | external): ValueUpdateInfo = {
+  inline def apply(source: internal | external): ValueUpdateInfo = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("valueUpdate")
     __obj.asInstanceOf[ValueUpdateInfo]
   }
   
-  @scala.inline
-  implicit class ValueUpdateInfoMutableBuilder[Self <: ValueUpdateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ValueUpdateInfo](x: Self) {
     
-    @scala.inline
-    def setSource(value: internal | external): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: internal | external): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: valueUpdate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: valueUpdate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

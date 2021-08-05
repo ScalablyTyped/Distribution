@@ -80,17 +80,14 @@ object messageMod extends Shortcut {
     }
     object Static {
       
-      @scala.inline
-      def apply(loadMessages: js.Object => Unit): typings.globalize.messageMod.globalizeDistGlobalizeAugmentingMod.Static = {
+      inline def apply(loadMessages: js.Object => Unit): typings.globalize.messageMod.globalizeDistGlobalizeAugmentingMod.Static = {
         val __obj = js.Dynamic.literal(loadMessages = js.Any.fromFunction1(loadMessages))
         __obj.asInstanceOf[typings.globalize.messageMod.globalizeDistGlobalizeAugmentingMod.Static]
       }
       
-      @scala.inline
-      implicit class StaticMutableBuilder[Self <: typings.globalize.messageMod.globalizeDistGlobalizeAugmentingMod.Static] (val x: Self) extends AnyVal {
+      extension [Self <: typings.globalize.messageMod.globalizeDistGlobalizeAugmentingMod.Static](x: Self) {
         
-        @scala.inline
-        def setLoadMessages(value: js.Object => Unit): Self = StObject.set(x, "loadMessages", js.Any.fromFunction1(value))
+        inline def setLoadMessages(value: js.Object => Unit): Self = StObject.set(x, "loadMessages", js.Any.fromFunction1(value))
       }
     }
   }

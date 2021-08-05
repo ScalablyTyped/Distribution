@@ -14,22 +14,17 @@ trait TextTrackListEventMap extends StObject {
 }
 object TextTrackListEventMap {
   
-  @scala.inline
-  def apply(addtrack: TrackEvent, change: Event, removetrack: TrackEvent): TextTrackListEventMap = {
+  inline def apply(addtrack: TrackEvent, change: Event, removetrack: TrackEvent): TextTrackListEventMap = {
     val __obj = js.Dynamic.literal(addtrack = addtrack.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], removetrack = removetrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackListEventMap]
   }
   
-  @scala.inline
-  implicit class TextTrackListEventMapMutableBuilder[Self <: TextTrackListEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: TextTrackListEventMap](x: Self) {
     
-    @scala.inline
-    def setAddtrack(value: TrackEvent): Self = StObject.set(x, "addtrack", value.asInstanceOf[js.Any])
+    inline def setAddtrack(value: TrackEvent): Self = StObject.set(x, "addtrack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovetrack(value: TrackEvent): Self = StObject.set(x, "removetrack", value.asInstanceOf[js.Any])
+    inline def setRemovetrack(value: TrackEvent): Self = StObject.set(x, "removetrack", value.asInstanceOf[js.Any])
   }
 }

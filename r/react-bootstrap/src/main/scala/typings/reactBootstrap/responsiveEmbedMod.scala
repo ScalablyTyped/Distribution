@@ -29,32 +29,24 @@ object responsiveEmbedMod {
   }
   object ResponsiveEmbedProps {
     
-    @scala.inline
-    def apply(): ResponsiveEmbedProps = {
+    inline def apply(): ResponsiveEmbedProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponsiveEmbedProps]
     }
     
-    @scala.inline
-    implicit class ResponsiveEmbedPropsMutableBuilder[Self <: ResponsiveEmbedProps] (val x: Self) extends AnyVal {
+    extension [Self <: ResponsiveEmbedProps](x: Self) {
       
-      @scala.inline
-      def setA16by9(value: Boolean): Self = StObject.set(x, "a16by9", value.asInstanceOf[js.Any])
+      inline def setA16by9(value: Boolean): Self = StObject.set(x, "a16by9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA16by9Undefined: Self = StObject.set(x, "a16by9", js.undefined)
+      inline def setA16by9Undefined: Self = StObject.set(x, "a16by9", js.undefined)
       
-      @scala.inline
-      def setA4by3(value: Boolean): Self = StObject.set(x, "a4by3", value.asInstanceOf[js.Any])
+      inline def setA4by3(value: Boolean): Self = StObject.set(x, "a4by3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA4by3Undefined: Self = StObject.set(x, "a4by3", js.undefined)
+      inline def setA4by3Undefined: Self = StObject.set(x, "a4by3", js.undefined)
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
     }
   }
 }

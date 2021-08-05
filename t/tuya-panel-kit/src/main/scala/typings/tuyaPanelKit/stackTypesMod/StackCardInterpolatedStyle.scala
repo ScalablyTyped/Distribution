@@ -28,37 +28,27 @@ trait StackCardInterpolatedStyle extends StObject {
 }
 object StackCardInterpolatedStyle {
   
-  @scala.inline
-  def apply(): StackCardInterpolatedStyle = {
+  inline def apply(): StackCardInterpolatedStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackCardInterpolatedStyle]
   }
   
-  @scala.inline
-  implicit class StackCardInterpolatedStyleMutableBuilder[Self <: StackCardInterpolatedStyle] (val x: Self) extends AnyVal {
+  extension [Self <: StackCardInterpolatedStyle](x: Self) {
     
-    @scala.inline
-    def setCardStyle(value: js.Any): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
+    inline def setCardStyle(value: js.Any): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
+    inline def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
     
-    @scala.inline
-    def setContainerStyle(value: js.Any): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    inline def setContainerStyle(value: js.Any): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
-    @scala.inline
-    def setOverlayStyle(value: js.Any): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayStyle(value: js.Any): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+    inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     
-    @scala.inline
-    def setShadowStyle(value: js.Any): Self = StObject.set(x, "shadowStyle", value.asInstanceOf[js.Any])
+    inline def setShadowStyle(value: js.Any): Self = StObject.set(x, "shadowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowStyleUndefined: Self = StObject.set(x, "shadowStyle", js.undefined)
+    inline def setShadowStyleUndefined: Self = StObject.set(x, "shadowStyle", js.undefined)
   }
 }

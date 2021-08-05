@@ -24,13 +24,10 @@ object Uuid {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromString(value: String): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[Uuid]
+  inline def fromString(value: String): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[Uuid]
   
   /* static member */
-  @scala.inline
-  def random(): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Uuid]
+  inline def random(): Uuid = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Uuid]
   /* static member */
-  @scala.inline
-  def random(callback: ValueCallback[Uuid]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def random(callback: ValueCallback[Uuid]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

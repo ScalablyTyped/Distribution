@@ -33,49 +33,35 @@ trait LongDateFormatSpec extends StObject {
 }
 object LongDateFormatSpec {
   
-  @scala.inline
-  def apply(L: String, LL: String, LLL: String, LLLL: String, LT: String, LTS: String): LongDateFormatSpec = {
+  inline def apply(L: String, LL: String, LLL: String, LLLL: String, LT: String, LTS: String): LongDateFormatSpec = {
     val __obj = js.Dynamic.literal(L = L.asInstanceOf[js.Any], LL = LL.asInstanceOf[js.Any], LLL = LLL.asInstanceOf[js.Any], LLLL = LLLL.asInstanceOf[js.Any], LT = LT.asInstanceOf[js.Any], LTS = LTS.asInstanceOf[js.Any])
     __obj.asInstanceOf[LongDateFormatSpec]
   }
   
-  @scala.inline
-  implicit class LongDateFormatSpecMutableBuilder[Self <: LongDateFormatSpec] (val x: Self) extends AnyVal {
+  extension [Self <: LongDateFormatSpec](x: Self) {
     
-    @scala.inline
-    def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
+    inline def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLL(value: String): Self = StObject.set(x, "LL", value.asInstanceOf[js.Any])
+    inline def setLL(value: String): Self = StObject.set(x, "LL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLLL(value: String): Self = StObject.set(x, "LLL", value.asInstanceOf[js.Any])
+    inline def setLLL(value: String): Self = StObject.set(x, "LLL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLLLL(value: String): Self = StObject.set(x, "LLLL", value.asInstanceOf[js.Any])
+    inline def setLLLL(value: String): Self = StObject.set(x, "LLLL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLT(value: String): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
+    inline def setLT(value: String): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLTS(value: String): Self = StObject.set(x, "LTS", value.asInstanceOf[js.Any])
+    inline def setLTS(value: String): Self = StObject.set(x, "LTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+    inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
-    @scala.inline
-    def setLlUndefined: Self = StObject.set(x, "ll", js.undefined)
+    inline def setLlUndefined: Self = StObject.set(x, "ll", js.undefined)
     
-    @scala.inline
-    def setLllUndefined: Self = StObject.set(x, "lll", js.undefined)
+    inline def setLllUndefined: Self = StObject.set(x, "lll", js.undefined)
     
-    @scala.inline
-    def setLlllUndefined: Self = StObject.set(x, "llll", js.undefined)
+    inline def setLlllUndefined: Self = StObject.set(x, "llll", js.undefined)
     
-    @scala.inline
-    def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
+    inline def setLtUndefined: Self = StObject.set(x, "lt", js.undefined)
     
-    @scala.inline
-    def setLtsUndefined: Self = StObject.set(x, "lts", js.undefined)
+    inline def setLtsUndefined: Self = StObject.set(x, "lts", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait ImageBuilder[Media]
 }
 object ImageBuilder {
   
-  @scala.inline
-  def apply[Media](
+  inline def apply[Media](
     build: () => AdWordsOperation[Media],
     withData: Blob => ImageBuilder[Media],
     withName: String => ImageBuilder[Media]
@@ -25,13 +24,10 @@ object ImageBuilder {
     __obj.asInstanceOf[ImageBuilder[Media]]
   }
   
-  @scala.inline
-  implicit class ImageBuilderMutableBuilder[Self <: ImageBuilder[?], Media] (val x: Self & ImageBuilder[Media]) extends AnyVal {
+  extension [Self <: ImageBuilder[?], Media](x: Self & ImageBuilder[Media]) {
     
-    @scala.inline
-    def setWithData(value: Blob => ImageBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
+    inline def setWithData(value: Blob => ImageBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithName(value: String => ImageBuilder[Media]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => ImageBuilder[Media]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

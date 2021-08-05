@@ -18,43 +18,31 @@ trait Requester extends StObject {
 }
 object Requester {
   
-  @scala.inline
-  def apply(): Requester = {
+  inline def apply(): Requester = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Requester]
   }
   
-  @scala.inline
-  implicit class RequesterMutableBuilder[Self <: Requester] (val x: Self) extends AnyVal {
+  extension [Self <: Requester](x: Self) {
     
-    @scala.inline
-    def setCancel(value: /* next */ js.Function => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* next */ js.Function => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setGetPeer(value: /* next */ js.Function => String): Self = StObject.set(x, "getPeer", js.Any.fromFunction1(value))
+    inline def setGetPeer(value: /* next */ js.Function => String): Self = StObject.set(x, "getPeer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPeerUndefined: Self = StObject.set(x, "getPeer", js.undefined)
+    inline def setGetPeerUndefined: Self = StObject.set(x, "getPeer", js.undefined)
     
-    @scala.inline
-    def setHalfClose(value: /* next */ js.Function => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
+    inline def setHalfClose(value: /* next */ js.Function => Unit): Self = StObject.set(x, "halfClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHalfCloseUndefined: Self = StObject.set(x, "halfClose", js.undefined)
+    inline def setHalfCloseUndefined: Self = StObject.set(x, "halfClose", js.undefined)
     
-    @scala.inline
-    def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
+    inline def setSendMessage(value: (/* message */ js.Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
+    inline def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
     
-    @scala.inline
-    def setStart(value: (/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+    inline def setStart(value: (/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

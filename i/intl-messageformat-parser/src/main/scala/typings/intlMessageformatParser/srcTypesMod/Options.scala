@@ -35,37 +35,27 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setCaptureLocation(value: Boolean): Self = StObject.set(x, "captureLocation", value.asInstanceOf[js.Any])
+    inline def setCaptureLocation(value: Boolean): Self = StObject.set(x, "captureLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureLocationUndefined: Self = StObject.set(x, "captureLocation", js.undefined)
+    inline def setCaptureLocationUndefined: Self = StObject.set(x, "captureLocation", js.undefined)
     
-    @scala.inline
-    def setIgnoreTag(value: Boolean): Self = StObject.set(x, "ignoreTag", value.asInstanceOf[js.Any])
+    inline def setIgnoreTag(value: Boolean): Self = StObject.set(x, "ignoreTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreTagUndefined: Self = StObject.set(x, "ignoreTag", js.undefined)
+    inline def setIgnoreTagUndefined: Self = StObject.set(x, "ignoreTag", js.undefined)
     
-    @scala.inline
-    def setNormalizeHashtagInPlural(value: Boolean): Self = StObject.set(x, "normalizeHashtagInPlural", value.asInstanceOf[js.Any])
+    inline def setNormalizeHashtagInPlural(value: Boolean): Self = StObject.set(x, "normalizeHashtagInPlural", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeHashtagInPluralUndefined: Self = StObject.set(x, "normalizeHashtagInPlural", js.undefined)
+    inline def setNormalizeHashtagInPluralUndefined: Self = StObject.set(x, "normalizeHashtagInPlural", js.undefined)
     
-    @scala.inline
-    def setShouldParseSkeletons(value: Boolean): Self = StObject.set(x, "shouldParseSkeletons", value.asInstanceOf[js.Any])
+    inline def setShouldParseSkeletons(value: Boolean): Self = StObject.set(x, "shouldParseSkeletons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldParseSkeletonsUndefined: Self = StObject.set(x, "shouldParseSkeletons", js.undefined)
+    inline def setShouldParseSkeletonsUndefined: Self = StObject.set(x, "shouldParseSkeletons", js.undefined)
   }
 }

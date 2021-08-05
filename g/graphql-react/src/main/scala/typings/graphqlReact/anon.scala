@@ -18,20 +18,16 @@ object anon {
   }
   object Cache {
     
-    @scala.inline
-    def apply(): Cache = {
+    inline def apply(): Cache = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cache]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+    extension [Self <: Cache](x: Self) {
       
-      @scala.inline
-      def setCache(value: GraphQLCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: GraphQLCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
   
@@ -43,20 +39,16 @@ object anon {
   }
   object CacheKey {
     
-    @scala.inline
-    def apply(cacheKey: GraphQLCacheKey, cacheValue: GraphQLCacheValue[js.Any]): CacheKey = {
+    inline def apply(cacheKey: GraphQLCacheKey, cacheValue: GraphQLCacheValue[js.Any]): CacheKey = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValue = cacheValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheKey]
     }
     
-    @scala.inline
-    implicit class CacheKeyMutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
+    extension [Self <: CacheKey](x: Self) {
       
-      @scala.inline
-      def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheValue(value: GraphQLCacheValue[js.Any]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
+      inline def setCacheValue(value: GraphQLCacheValue[js.Any]): Self = StObject.set(x, "cacheValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,20 +60,16 @@ object anon {
   }
   object CacheValuePromise {
     
-    @scala.inline
-    def apply(cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[js.Any]]): CacheValuePromise = {
+    inline def apply(cacheKey: GraphQLCacheKey, cacheValuePromise: js.Promise[GraphQLCacheValue[js.Any]]): CacheValuePromise = {
       val __obj = js.Dynamic.literal(cacheKey = cacheKey.asInstanceOf[js.Any], cacheValuePromise = cacheValuePromise.asInstanceOf[js.Any])
       __obj.asInstanceOf[CacheValuePromise]
     }
     
-    @scala.inline
-    implicit class CacheValuePromiseMutableBuilder[Self <: CacheValuePromise] (val x: Self) extends AnyVal {
+    extension [Self <: CacheValuePromise](x: Self) {
       
-      @scala.inline
-      def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[js.Any]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
+      inline def setCacheValuePromise(value: js.Promise[GraphQLCacheValue[js.Any]]): Self = StObject.set(x, "cacheValuePromise", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,20 +81,16 @@ object anon {
   }
   object Column {
     
-    @scala.inline
-    def apply(column: Double, line: Double): Column = {
+    inline def apply(column: Double, line: Double): Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,17 +100,14 @@ object anon {
   }
   object ExceptCacheKey {
     
-    @scala.inline
-    def apply(exceptCacheKey: GraphQLCacheKey): ExceptCacheKey = {
+    inline def apply(exceptCacheKey: GraphQLCacheKey): ExceptCacheKey = {
       val __obj = js.Dynamic.literal(exceptCacheKey = exceptCacheKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExceptCacheKey]
     }
     
-    @scala.inline
-    implicit class ExceptCacheKeyMutableBuilder[Self <: ExceptCacheKey] (val x: Self) extends AnyVal {
+    extension [Self <: ExceptCacheKey](x: Self) {
       
-      @scala.inline
-      def setExceptCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "exceptCacheKey", value.asInstanceOf[js.Any])
+      inline def setExceptCacheKey(value: GraphQLCacheKey): Self = StObject.set(x, "exceptCacheKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,35 +123,26 @@ object anon {
   }
   object FetchOptionsOverride {
     
-    @scala.inline
-    def apply[V](operation: GraphQLOperation[V]): FetchOptionsOverride[V] = {
+    inline def apply[V](operation: GraphQLOperation[V]): FetchOptionsOverride[V] = {
       val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchOptionsOverride[V]]
     }
     
-    @scala.inline
-    implicit class FetchOptionsOverrideMutableBuilder[Self <: FetchOptionsOverride[?], V] (val x: Self & FetchOptionsOverride[V]) extends AnyVal {
+    extension [Self <: FetchOptionsOverride[?], V](x: Self & FetchOptionsOverride[V]) {
       
-      @scala.inline
-      def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
+      inline def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFetchOptionsOverrideUndefined: Self = StObject.set(x, "fetchOptionsOverride", js.undefined)
+      inline def setFetchOptionsOverrideUndefined: Self = StObject.set(x, "fetchOptionsOverride", js.undefined)
       
-      @scala.inline
-      def setOperation(value: GraphQLOperation[V]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: GraphQLOperation[V]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadOnLoad(value: Boolean): Self = StObject.set(x, "reloadOnLoad", value.asInstanceOf[js.Any])
+      inline def setReloadOnLoad(value: Boolean): Self = StObject.set(x, "reloadOnLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadOnLoadUndefined: Self = StObject.set(x, "reloadOnLoad", js.undefined)
+      inline def setReloadOnLoadUndefined: Self = StObject.set(x, "reloadOnLoad", js.undefined)
       
-      @scala.inline
-      def setResetOnLoad(value: Boolean): Self = StObject.set(x, "resetOnLoad", value.asInstanceOf[js.Any])
+      inline def setResetOnLoad(value: Boolean): Self = StObject.set(x, "resetOnLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetOnLoadUndefined: Self = StObject.set(x, "resetOnLoad", js.undefined)
+      inline def setResetOnLoadUndefined: Self = StObject.set(x, "resetOnLoad", js.undefined)
     }
   }
   
@@ -192,53 +164,38 @@ object anon {
   }
   object LoadOnMount {
     
-    @scala.inline
-    def apply[V](operation: GraphQLOperation[V]): LoadOnMount[V] = {
+    inline def apply[V](operation: GraphQLOperation[V]): LoadOnMount[V] = {
       val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadOnMount[V]]
     }
     
-    @scala.inline
-    implicit class LoadOnMountMutableBuilder[Self <: LoadOnMount[?], V] (val x: Self & LoadOnMount[V]) extends AnyVal {
+    extension [Self <: LoadOnMount[?], V](x: Self & LoadOnMount[V]) {
       
-      @scala.inline
-      def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
+      inline def setFetchOptionsOverride(value: /* options */ GraphQLFetchOptions => Unit): Self = StObject.set(x, "fetchOptionsOverride", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFetchOptionsOverrideUndefined: Self = StObject.set(x, "fetchOptionsOverride", js.undefined)
+      inline def setFetchOptionsOverrideUndefined: Self = StObject.set(x, "fetchOptionsOverride", js.undefined)
       
-      @scala.inline
-      def setLoadOnMount(value: Boolean): Self = StObject.set(x, "loadOnMount", value.asInstanceOf[js.Any])
+      inline def setLoadOnMount(value: Boolean): Self = StObject.set(x, "loadOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadOnMountUndefined: Self = StObject.set(x, "loadOnMount", js.undefined)
+      inline def setLoadOnMountUndefined: Self = StObject.set(x, "loadOnMount", js.undefined)
       
-      @scala.inline
-      def setLoadOnReload(value: Boolean): Self = StObject.set(x, "loadOnReload", value.asInstanceOf[js.Any])
+      inline def setLoadOnReload(value: Boolean): Self = StObject.set(x, "loadOnReload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadOnReloadUndefined: Self = StObject.set(x, "loadOnReload", js.undefined)
+      inline def setLoadOnReloadUndefined: Self = StObject.set(x, "loadOnReload", js.undefined)
       
-      @scala.inline
-      def setLoadOnReset(value: Boolean): Self = StObject.set(x, "loadOnReset", value.asInstanceOf[js.Any])
+      inline def setLoadOnReset(value: Boolean): Self = StObject.set(x, "loadOnReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadOnResetUndefined: Self = StObject.set(x, "loadOnReset", js.undefined)
+      inline def setLoadOnResetUndefined: Self = StObject.set(x, "loadOnReset", js.undefined)
       
-      @scala.inline
-      def setOperation(value: GraphQLOperation[V]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: GraphQLOperation[V]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadOnLoad(value: Boolean): Self = StObject.set(x, "reloadOnLoad", value.asInstanceOf[js.Any])
+      inline def setReloadOnLoad(value: Boolean): Self = StObject.set(x, "reloadOnLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadOnLoadUndefined: Self = StObject.set(x, "reloadOnLoad", js.undefined)
+      inline def setReloadOnLoadUndefined: Self = StObject.set(x, "reloadOnLoad", js.undefined)
       
-      @scala.inline
-      def setResetOnLoad(value: Boolean): Self = StObject.set(x, "resetOnLoad", value.asInstanceOf[js.Any])
+      inline def setResetOnLoad(value: Boolean): Self = StObject.set(x, "resetOnLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetOnLoadUndefined: Self = StObject.set(x, "resetOnLoad", js.undefined)
+      inline def setResetOnLoadUndefined: Self = StObject.set(x, "resetOnLoad", js.undefined)
     }
   }
   
@@ -252,29 +209,22 @@ object anon {
   }
   object Locations {
     
-    @scala.inline
-    def apply(locations: js.Array[Column], message: String, path: js.Array[String]): Locations = {
+    inline def apply(locations: js.Array[Column], message: String, path: js.Array[String]): Locations = {
       val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locations]
     }
     
-    @scala.inline
-    implicit class LocationsMutableBuilder[Self <: Locations] (val x: Self) extends AnyVal {
+    extension [Self <: Locations](x: Self) {
       
-      @scala.inline
-      def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
   
@@ -284,17 +234,14 @@ object anon {
   }
   object Query {
     
-    @scala.inline
-    def apply(query: String): Query = {
+    inline def apply(query: String): Query = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,17 +251,14 @@ object anon {
   }
   object Variables {
     
-    @scala.inline
-    def apply[V](variables: V): Variables[V] = {
+    inline def apply[V](variables: V): Variables[V] = {
       val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[Variables[V]]
     }
     
-    @scala.inline
-    implicit class VariablesMutableBuilder[Self <: Variables[?], V] (val x: Self & Variables[V]) extends AnyVal {
+    extension [Self <: Variables[?], V](x: Self & Variables[V]) {
       
-      @scala.inline
-      def setVariables(value: V): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: V): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
 }

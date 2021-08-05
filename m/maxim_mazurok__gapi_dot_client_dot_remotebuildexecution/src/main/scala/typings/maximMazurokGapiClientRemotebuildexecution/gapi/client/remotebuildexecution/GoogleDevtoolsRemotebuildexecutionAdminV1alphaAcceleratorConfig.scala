@@ -14,25 +14,19 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig extends St
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfigMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig](x: Self) {
     
-    @scala.inline
-    def setAcceleratorCount(value: String): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
+    inline def setAcceleratorCount(value: String): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorCountUndefined: Self = StObject.set(x, "acceleratorCount", js.undefined)
+    inline def setAcceleratorCountUndefined: Self = StObject.set(x, "acceleratorCount", js.undefined)
     
-    @scala.inline
-    def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
+    inline def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
+    inline def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
   }
 }

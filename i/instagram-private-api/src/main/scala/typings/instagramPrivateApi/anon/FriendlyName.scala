@@ -14,22 +14,17 @@ trait FriendlyName extends StObject {
 }
 object FriendlyName {
   
-  @scala.inline
-  def apply(friendlyName: InsightsFriendlyName): FriendlyName = {
+  inline def apply(friendlyName: InsightsFriendlyName): FriendlyName = {
     val __obj = js.Dynamic.literal(friendlyName = friendlyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FriendlyName]
   }
   
-  @scala.inline
-  implicit class FriendlyNameMutableBuilder[Self <: FriendlyName] (val x: Self) extends AnyVal {
+  extension [Self <: FriendlyName](x: Self) {
     
-    @scala.inline
-    def setFriendlyName(value: InsightsFriendlyName): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: InsightsFriendlyName): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: InsightsSurface): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: InsightsSurface): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

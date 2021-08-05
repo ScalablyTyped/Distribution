@@ -13,8 +13,7 @@ object splitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](separator: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[Stream[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(separator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[Stream[T]]]]
+  inline def default[T](separator: Stream[js.Any]): js.Function1[/* ins */ Stream[T], Stream[Stream[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(separator.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[Stream[T]]]]
   
   @JSImport("xstream/extra/split", "SplitOperator")
   @js.native
@@ -51,7 +50,7 @@ object splitMod {
     
     var s: Stream[js.Any] = js.native
     
-    var sil: js.Any = js.native
+    /* private */ var sil: js.Any = js.native
     
     /* CompleteClass */
     var `type`: String = js.native

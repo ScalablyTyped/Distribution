@@ -70,49 +70,35 @@ trait IgGridSortingColumnSetting
 }
 object IgGridSortingColumnSetting {
   
-  @scala.inline
-  def apply(): IgGridSortingColumnSetting = {
+  inline def apply(): IgGridSortingColumnSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridSortingColumnSetting]
   }
   
-  @scala.inline
-  implicit class IgGridSortingColumnSettingMutableBuilder[Self <: IgGridSortingColumnSetting] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridSortingColumnSetting](x: Self) {
     
-    @scala.inline
-    def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
+    inline def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
+    inline def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setCompareFunc(value: String | js.Function): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
+    inline def setCompareFunc(value: String | js.Function): Self = StObject.set(x, "compareFunc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
+    inline def setCompareFuncUndefined: Self = StObject.set(x, "compareFunc", js.undefined)
     
-    @scala.inline
-    def setCurrentSortDirection(value: String): Self = StObject.set(x, "currentSortDirection", value.asInstanceOf[js.Any])
+    inline def setCurrentSortDirection(value: String): Self = StObject.set(x, "currentSortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSortDirectionUndefined: Self = StObject.set(x, "currentSortDirection", js.undefined)
+    inline def setCurrentSortDirectionUndefined: Self = StObject.set(x, "currentSortDirection", js.undefined)
     
-    @scala.inline
-    def setFirstSortDirection(value: String): Self = StObject.set(x, "firstSortDirection", value.asInstanceOf[js.Any])
+    inline def setFirstSortDirection(value: String): Self = StObject.set(x, "firstSortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstSortDirectionUndefined: Self = StObject.set(x, "firstSortDirection", js.undefined)
+    inline def setFirstSortDirectionUndefined: Self = StObject.set(x, "firstSortDirection", js.undefined)
   }
 }

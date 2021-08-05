@@ -15,31 +15,23 @@ trait IStepDefinitionPattern extends StObject {
 }
 object IStepDefinitionPattern {
   
-  @scala.inline
-  def apply(): IStepDefinitionPattern = {
+  inline def apply(): IStepDefinitionPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStepDefinitionPattern]
   }
   
-  @scala.inline
-  implicit class IStepDefinitionPatternMutableBuilder[Self <: IStepDefinitionPattern] (val x: Self) extends AnyVal {
+  extension [Self <: IStepDefinitionPattern](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNull: Self = StObject.set(x, "source", null)
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setType(value: StepDefinitionPatternType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StepDefinitionPatternType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

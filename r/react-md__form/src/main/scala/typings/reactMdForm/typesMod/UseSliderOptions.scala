@@ -24,34 +24,25 @@ trait UseSliderOptions
 }
 object UseSliderOptions {
   
-  @scala.inline
-  def apply(): UseSliderOptions = {
+  inline def apply(): UseSliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseSliderOptions]
   }
   
-  @scala.inline
-  implicit class UseSliderOptionsMutableBuilder[Self <: UseSliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UseSliderOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: SliderDefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: SliderDefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueFunction0(value: () => Double): Self = StObject.set(x, "defaultValue", js.Any.fromFunction0(value))
+    inline def setDefaultValueFunction0(value: () => Double): Self = StObject.set(x, "defaultValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setRef(value: Ref[HTMLSpanElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Ref[HTMLSpanElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefFunction1(value: /* instance */ HTMLSpanElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ HTMLSpanElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

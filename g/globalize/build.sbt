@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "globalize"
-version := "1.5-dt-20201002Z-4d292a"
+version := "1.5-dt-20201002Z-4dcdbd"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cldrjs" % "0.4.4-dt-20200923Z-06a062",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "cldrjs" % "0.4.4-dt-20200923Z-757caa",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -13,22 +13,17 @@ trait `101` extends StObject {
 }
 object `101` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[EmulateTouchFromMouseEventRequest], returnType: Unit): `101` = {
+  inline def apply(paramsType: js.Array[EmulateTouchFromMouseEventRequest], returnType: Unit): `101` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`101`]
   }
   
-  @scala.inline
-  implicit class `101MutableBuilder`[Self <: `101`] (val x: Self) extends AnyVal {
+  extension [Self <: `101`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[EmulateTouchFromMouseEventRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[EmulateTouchFromMouseEventRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: EmulateTouchFromMouseEventRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: EmulateTouchFromMouseEventRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

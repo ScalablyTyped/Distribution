@@ -14,25 +14,19 @@ trait RenameLocation
 }
 object RenameLocation {
   
-  @scala.inline
-  def apply(fileName: java.lang.String, textSpan: TextSpan): RenameLocation = {
+  inline def apply(fileName: java.lang.String, textSpan: TextSpan): RenameLocation = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], textSpan = textSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameLocation]
   }
   
-  @scala.inline
-  implicit class RenameLocationMutableBuilder[Self <: RenameLocation] (val x: Self) extends AnyVal {
+  extension [Self <: RenameLocation](x: Self) {
     
-    @scala.inline
-    def setPrefixText(value: java.lang.String): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
+    inline def setPrefixText(value: java.lang.String): Self = StObject.set(x, "prefixText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
+    inline def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
     
-    @scala.inline
-    def setSuffixText(value: java.lang.String): Self = StObject.set(x, "suffixText", value.asInstanceOf[js.Any])
+    inline def setSuffixText(value: java.lang.String): Self = StObject.set(x, "suffixText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixTextUndefined: Self = StObject.set(x, "suffixText", js.undefined)
+    inline def setSuffixTextUndefined: Self = StObject.set(x, "suffixText", js.undefined)
   }
 }

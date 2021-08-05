@@ -18,25 +18,19 @@ trait Bucket extends StObject {
 }
 object Bucket {
   
-  @scala.inline
-  def apply(): Bucket = {
+  inline def apply(): Bucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bucket]
   }
   
-  @scala.inline
-  implicit class BucketMutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
+  extension [Self <: Bucket](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setName(value: BucketName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: BucketName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

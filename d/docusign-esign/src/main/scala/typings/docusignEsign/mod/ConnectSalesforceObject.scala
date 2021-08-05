@@ -62,84 +62,62 @@ trait ConnectSalesforceObject extends StObject {
 }
 object ConnectSalesforceObject {
   
-  @scala.inline
-  def apply(): ConnectSalesforceObject = {
+  inline def apply(): ConnectSalesforceObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectSalesforceObject]
   }
   
-  @scala.inline
-  implicit class ConnectSalesforceObjectMutableBuilder[Self <: ConnectSalesforceObject] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectSalesforceObject](x: Self) {
     
-    @scala.inline
-    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInsert(value: String): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: String): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    @scala.inline
-    def setOnCompleteOnly(value: String): Self = StObject.set(x, "onCompleteOnly", value.asInstanceOf[js.Any])
+    inline def setOnCompleteOnly(value: String): Self = StObject.set(x, "onCompleteOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCompleteOnlyUndefined: Self = StObject.set(x, "onCompleteOnly", js.undefined)
+    inline def setOnCompleteOnlyUndefined: Self = StObject.set(x, "onCompleteOnly", js.undefined)
     
-    @scala.inline
-    def setSelectFields(
+    inline def setSelectFields(
       value: js.Array[
           /* This object is used to match a DocuSign field to a Salesforce field so that Docusign can send information to your Salesforce account. */ ConnectSalesforceField
         ]
     ): Self = StObject.set(x, "selectFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectFieldsUndefined: Self = StObject.set(x, "selectFields", js.undefined)
+    inline def setSelectFieldsUndefined: Self = StObject.set(x, "selectFields", js.undefined)
     
-    @scala.inline
-    def setSelectFieldsVarargs(
+    inline def setSelectFieldsVarargs(
       value: (/* This object is used to match a DocuSign field to a Salesforce field so that Docusign can send information to your Salesforce account. */ ConnectSalesforceField)*
     ): Self = StObject.set(x, "selectFields", js.Array(value :_*))
     
-    @scala.inline
-    def setSfObject(value: String): Self = StObject.set(x, "sfObject", value.asInstanceOf[js.Any])
+    inline def setSfObject(value: String): Self = StObject.set(x, "sfObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSfObjectName(value: String): Self = StObject.set(x, "sfObjectName", value.asInstanceOf[js.Any])
+    inline def setSfObjectName(value: String): Self = StObject.set(x, "sfObjectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSfObjectNameUndefined: Self = StObject.set(x, "sfObjectName", js.undefined)
+    inline def setSfObjectNameUndefined: Self = StObject.set(x, "sfObjectName", js.undefined)
     
-    @scala.inline
-    def setSfObjectUndefined: Self = StObject.set(x, "sfObject", js.undefined)
+    inline def setSfObjectUndefined: Self = StObject.set(x, "sfObject", js.undefined)
     
-    @scala.inline
-    def setUpdateFields(
+    inline def setUpdateFields(
       value: js.Array[
           /* This object is used to match a DocuSign field to a Salesforce field so that Docusign can send information to your Salesforce account. */ ConnectSalesforceField
         ]
     ): Self = StObject.set(x, "updateFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateFieldsUndefined: Self = StObject.set(x, "updateFields", js.undefined)
+    inline def setUpdateFieldsUndefined: Self = StObject.set(x, "updateFields", js.undefined)
     
-    @scala.inline
-    def setUpdateFieldsVarargs(
+    inline def setUpdateFieldsVarargs(
       value: (/* This object is used to match a DocuSign field to a Salesforce field so that Docusign can send information to your Salesforce account. */ ConnectSalesforceField)*
     ): Self = StObject.set(x, "updateFields", js.Array(value :_*))
   }

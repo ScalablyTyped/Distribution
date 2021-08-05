@@ -12,8 +12,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDocumentsDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentsDirectory")().asInstanceOf[String]
+    inline def getDocumentsDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentsDirectory")().asInstanceOf[String]
   }
   
   @JSImport("react-native-pdf-lib", "PDFDocument")
@@ -32,8 +31,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(path: String): PDFDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(path.asInstanceOf[js.Any]).asInstanceOf[PDFDocument]
+    inline def create(path: String): PDFDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(path.asInstanceOf[js.Any]).asInstanceOf[PDFDocument]
   }
   
   @JSImport("react-native-pdf-lib", "PDFPage")
@@ -59,8 +57,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): PDFPage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PDFPage]
+    inline def create(): PDFPage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PDFPage]
   }
   
   trait ImageDrawingOptions extends StObject {
@@ -75,38 +72,28 @@ object mod {
   }
   object ImageDrawingOptions {
     
-    @scala.inline
-    def apply(): ImageDrawingOptions = {
+    inline def apply(): ImageDrawingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageDrawingOptions]
     }
     
-    @scala.inline
-    implicit class ImageDrawingOptionsMutableBuilder[Self <: ImageDrawingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDrawingOptions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -124,44 +111,32 @@ object mod {
   }
   object RectangleDrawingOptions {
     
-    @scala.inline
-    def apply(): RectangleDrawingOptions = {
+    inline def apply(): RectangleDrawingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RectangleDrawingOptions]
     }
     
-    @scala.inline
-    implicit class RectangleDrawingOptionsMutableBuilder[Self <: RectangleDrawingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RectangleDrawingOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -173,26 +148,20 @@ object mod {
   }
   object SetMediaBoxOptions {
     
-    @scala.inline
-    def apply(): SetMediaBoxOptions = {
+    inline def apply(): SetMediaBoxOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetMediaBoxOptions]
     }
     
-    @scala.inline
-    implicit class SetMediaBoxOptionsMutableBuilder[Self <: SetMediaBoxOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetMediaBoxOptions](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -210,44 +179,32 @@ object mod {
   }
   object TextDrawingOptions {
     
-    @scala.inline
-    def apply(): TextDrawingOptions = {
+    inline def apply(): TextDrawingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextDrawingOptions]
     }
     
-    @scala.inline
-    implicit class TextDrawingOptionsMutableBuilder[Self <: TextDrawingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextDrawingOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+      inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
+      inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
 }

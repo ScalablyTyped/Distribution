@@ -35,7 +35,7 @@ trait SmartArtNode extends StObject {
   @JSName("Nodes")
   val Nodes_Original: SmartArtNodes = js.native
   
-  @JSName("Office.SmartArtNode_typekey")
+  /* private */ @JSName("Office.SmartArtNode_typekey")
   var OfficeDotSmartArtNode_typekey: SmartArtNode = js.native
   
   var OrgChartLayout: MsoOrgChartLayoutType = js.native

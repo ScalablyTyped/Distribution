@@ -12,6 +12,5 @@ object global {
   @JSGlobal("UAirship")
   @js.native
   def UAirship: UrbanAirshipStatic = js.native
-  @scala.inline
-  def UAirship_=(x: UrbanAirshipStatic): Unit = js.Dynamic.global.updateDynamic("UAirship")(x.asInstanceOf[js.Any])
+  inline def UAirship_=(x: UrbanAirshipStatic): Unit = js.Dynamic.global.updateDynamic("UAirship")(x.asInstanceOf[js.Any])
 }

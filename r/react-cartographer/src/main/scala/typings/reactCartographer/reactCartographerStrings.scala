@@ -8,16 +8,13 @@ object reactCartographerStrings {
   
   @js.native
   sealed trait bing extends StObject
-  @scala.inline
-  def bing: bing = "bing".asInstanceOf[bing]
+  inline def bing: bing = "bing".asInstanceOf[bing]
   
   @js.native
   sealed trait google extends StObject
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
+  inline def google: google = "google".asInstanceOf[google]
   
   @js.native
   sealed trait yahoo extends StObject
-  @scala.inline
-  def yahoo: yahoo = "yahoo".asInstanceOf[yahoo]
+  inline def yahoo: yahoo = "yahoo".asInstanceOf[yahoo]
 }

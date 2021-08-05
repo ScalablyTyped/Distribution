@@ -265,11 +265,8 @@ object lightState {
     def xy_inc(value: Double): State = js.native
   }
   
-  @scala.inline
-  def create(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[State]
-  @scala.inline
-  def create(values: js.Object): State = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(values.asInstanceOf[js.Any]).asInstanceOf[State]
+  inline def create(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[State]
+  inline def create(values: js.Object): State = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(values.asInstanceOf[js.Any]).asInstanceOf[State]
   
-  @scala.inline
-  def isLightState(obj: js.Object): /* is node-hue-api.node-hue-api.lightState.State */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLightState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is node-hue-api.node-hue-api.lightState.State */ Boolean]
+  inline def isLightState(obj: js.Object): /* is node-hue-api.node-hue-api.lightState.State */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLightState")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is node-hue-api.node-hue-api.lightState.State */ Boolean]
 }

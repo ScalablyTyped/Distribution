@@ -16,7 +16,6 @@ object platformMod {
     @js.native
     val OS: String = js.native
     
-    @scala.inline
-    def select(spec: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def select(spec: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

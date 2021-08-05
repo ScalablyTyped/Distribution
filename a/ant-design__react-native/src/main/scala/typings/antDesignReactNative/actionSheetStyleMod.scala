@@ -13,8 +13,7 @@ object actionSheetStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): ActionSheetStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ActionSheetStyle]
+  inline def default(theme: Theme): ActionSheetStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ActionSheetStyle]
   
   trait ActionSheetStyle extends StObject {
     
@@ -42,8 +41,7 @@ object actionSheetStyleMod {
   }
   object ActionSheetStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       btn: ViewStyle,
       cancelBtn: ViewStyle,
       cancelBtnMask: ViewStyle,
@@ -60,41 +58,29 @@ object actionSheetStyleMod {
       __obj.asInstanceOf[ActionSheetStyle]
     }
     
-    @scala.inline
-    implicit class ActionSheetStyleMutableBuilder[Self <: ActionSheetStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ActionSheetStyle](x: Self) {
       
-      @scala.inline
-      def setBtn(value: ViewStyle): Self = StObject.set(x, "btn", value.asInstanceOf[js.Any])
+      inline def setBtn(value: ViewStyle): Self = StObject.set(x, "btn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelBtn(value: ViewStyle): Self = StObject.set(x, "cancelBtn", value.asInstanceOf[js.Any])
+      inline def setCancelBtn(value: ViewStyle): Self = StObject.set(x, "cancelBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelBtnMask(value: ViewStyle): Self = StObject.set(x, "cancelBtnMask", value.asInstanceOf[js.Any])
+      inline def setCancelBtnMask(value: ViewStyle): Self = StObject.set(x, "cancelBtnMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructiveBtn(value: TextStyle): Self = StObject.set(x, "destructiveBtn", value.asInstanceOf[js.Any])
+      inline def setDestructiveBtn(value: TextStyle): Self = StObject.set(x, "destructiveBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMask(value: ViewStyle): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: ViewStyle): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ViewStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ViewStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleText(value: TextStyle): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+      inline def setTitleText(value: TextStyle): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     }
   }
 }

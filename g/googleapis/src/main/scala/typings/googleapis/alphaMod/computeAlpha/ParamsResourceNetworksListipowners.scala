@@ -100,85 +100,59 @@ trait ParamsResourceNetworksListipowners
 }
 object ParamsResourceNetworksListipowners {
   
-  @scala.inline
-  def apply(): ParamsResourceNetworksListipowners = {
+  inline def apply(): ParamsResourceNetworksListipowners = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceNetworksListipowners]
   }
   
-  @scala.inline
-  implicit class ParamsResourceNetworksListipownersMutableBuilder[Self <: ParamsResourceNetworksListipowners] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceNetworksListipowners](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
+    inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
+    inline def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setOwnerProjects(value: String): Self = StObject.set(x, "ownerProjects", value.asInstanceOf[js.Any])
+    inline def setOwnerProjects(value: String): Self = StObject.set(x, "ownerProjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerProjectsUndefined: Self = StObject.set(x, "ownerProjects", js.undefined)
+    inline def setOwnerProjectsUndefined: Self = StObject.set(x, "ownerProjects", js.undefined)
     
-    @scala.inline
-    def setOwnerTypes(value: String): Self = StObject.set(x, "ownerTypes", value.asInstanceOf[js.Any])
+    inline def setOwnerTypes(value: String): Self = StObject.set(x, "ownerTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerTypesUndefined: Self = StObject.set(x, "ownerTypes", js.undefined)
+    inline def setOwnerTypesUndefined: Self = StObject.set(x, "ownerTypes", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setSubnetName(value: String): Self = StObject.set(x, "subnetName", value.asInstanceOf[js.Any])
+    inline def setSubnetName(value: String): Self = StObject.set(x, "subnetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetNameUndefined: Self = StObject.set(x, "subnetName", js.undefined)
+    inline def setSubnetNameUndefined: Self = StObject.set(x, "subnetName", js.undefined)
     
-    @scala.inline
-    def setSubnetRegion(value: String): Self = StObject.set(x, "subnetRegion", value.asInstanceOf[js.Any])
+    inline def setSubnetRegion(value: String): Self = StObject.set(x, "subnetRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetRegionUndefined: Self = StObject.set(x, "subnetRegion", js.undefined)
+    inline def setSubnetRegionUndefined: Self = StObject.set(x, "subnetRegion", js.undefined)
   }
 }

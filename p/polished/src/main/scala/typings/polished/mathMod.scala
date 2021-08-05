@@ -10,8 +10,6 @@ object mathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(formula: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(formula.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(formula: String, additionalSymbols: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formula.asInstanceOf[js.Any], additionalSymbols.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(formula: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(formula.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(formula: String, additionalSymbols: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formula.asInstanceOf[js.Any], additionalSymbols.asInstanceOf[js.Any])).asInstanceOf[String]
 }

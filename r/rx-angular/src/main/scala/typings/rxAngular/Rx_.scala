@@ -17,17 +17,14 @@ object Rx_ {
   }
   object IObservable {
     
-    @scala.inline
-    def apply[T](safeApply: (IScope, js.Function1[/* data */ T, Unit]) => Observable[T]): IObservable[T] = {
+    inline def apply[T](safeApply: (IScope, js.Function1[/* data */ T, Unit]) => Observable[T]): IObservable[T] = {
       val __obj = js.Dynamic.literal(safeApply = js.Any.fromFunction2(safeApply))
       __obj.asInstanceOf[IObservable[T]]
     }
     
-    @scala.inline
-    implicit class IObservableMutableBuilder[Self <: IObservable[?], T] (val x: Self & IObservable[T]) extends AnyVal {
+    extension [Self <: IObservable[?], T](x: Self & IObservable[T]) {
       
-      @scala.inline
-      def setSafeApply(value: (IScope, js.Function1[/* data */ T, Unit]) => Observable[T]): Self = StObject.set(x, "safeApply", js.Any.fromFunction2(value))
+      inline def setSafeApply(value: (IScope, js.Function1[/* data */ T, Unit]) => Observable[T]): Self = StObject.set(x, "safeApply", js.Any.fromFunction2(value))
     }
   }
   

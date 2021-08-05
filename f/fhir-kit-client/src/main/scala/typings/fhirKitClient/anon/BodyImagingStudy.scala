@@ -17,31 +17,23 @@ trait BodyImagingStudy extends StObject {
 }
 object BodyImagingStudy {
   
-  @scala.inline
-  def apply(body: ImagingStudy): BodyImagingStudy = {
+  inline def apply(body: ImagingStudy): BodyImagingStudy = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ImagingStudy")
     __obj.asInstanceOf[BodyImagingStudy]
   }
   
-  @scala.inline
-  implicit class BodyImagingStudyMutableBuilder[Self <: BodyImagingStudy] (val x: Self) extends AnyVal {
+  extension [Self <: BodyImagingStudy](x: Self) {
     
-    @scala.inline
-    def setBody(value: ImagingStudy): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: ImagingStudy): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.ImagingStudy): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.fhirKitClientStrings.ImagingStudy): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

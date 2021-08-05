@@ -14,13 +14,13 @@ object mod {
     def this(config: Double) = this()
     def this(config: Config) = this()
     
-    var _dutyCycle: js.Any = js.native
+    /* private */ var _dutyCycle: js.Any = js.native
     
-    var _frequency: js.Any = js.native
+    /* private */ var _frequency: js.Any = js.native
     
-    var _pwm: js.Any = js.native
+    /* private */ var _pwm: js.Any = js.native
     
-    var _range: js.Any = js.native
+    /* private */ var _range: js.Any = js.native
     
     val dutyCycle: Double = js.native
     
@@ -41,29 +41,22 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(pin: Double | String): Config = {
+    inline def apply(pin: Double | String): Config = {
       val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+      inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+      inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
       
-      @scala.inline
-      def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
 }

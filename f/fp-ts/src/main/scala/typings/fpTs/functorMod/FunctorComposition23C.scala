@@ -13,19 +13,16 @@ trait FunctorComposition23C[F /* <: /* import warning: transforms.QualifyReferen
 }
 object FunctorComposition23C {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
   ): FunctorComposition23C[F, G, E] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
     __obj.asInstanceOf[FunctorComposition23C[F, G, E]]
   }
   
-  @scala.inline
-  implicit class FunctorComposition23CMutableBuilder[Self <: FunctorComposition23C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (FunctorComposition23C[F, G, E])) extends AnyVal {
+  extension [Self <: FunctorComposition23C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (FunctorComposition23C[F, G, E])) {
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
   }

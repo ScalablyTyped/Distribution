@@ -39,6 +39,5 @@ object Convex {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def triangleArea(a: js.Array[Double], b: js.Array[Double], c: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("triangleArea")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def triangleArea(a: js.Array[Double], b: js.Array[Double], c: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("triangleArea")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

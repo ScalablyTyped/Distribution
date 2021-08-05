@@ -30,83 +30,58 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAmpmNames(value: js.Array[String]): Self = StObject.set(x, "ampmNames", value.asInstanceOf[js.Any])
+      inline def setAmpmNames(value: js.Array[String]): Self = StObject.set(x, "ampmNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmpmNamesUndefined: Self = StObject.set(x, "ampmNames", js.undefined)
+      inline def setAmpmNamesUndefined: Self = StObject.set(x, "ampmNames", js.undefined)
       
-      @scala.inline
-      def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value :_*))
+      inline def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value :_*))
       
-      @scala.inline
-      def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
+      inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayNamesShort(value: js.Array[String]): Self = StObject.set(x, "dayNamesShort", value.asInstanceOf[js.Any])
+      inline def setDayNamesShort(value: js.Array[String]): Self = StObject.set(x, "dayNamesShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
+      inline def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
       
-      @scala.inline
-      def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
+      inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
       
-      @scala.inline
-      def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
+      inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
       
-      @scala.inline
-      def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
       
-      @scala.inline
-      def setFormatAttribute(value: String): Self = StObject.set(x, "formatAttribute", value.asInstanceOf[js.Any])
+      inline def setFormatAttribute(value: String): Self = StObject.set(x, "formatAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatAttributeUndefined: Self = StObject.set(x, "formatAttribute", js.undefined)
+      inline def setFormatAttributeUndefined: Self = StObject.set(x, "formatAttribute", js.undefined)
       
-      @scala.inline
-      def setGetSuffix(value: /* num */ Double => String): Self = StObject.set(x, "getSuffix", js.Any.fromFunction1(value))
+      inline def setGetSuffix(value: /* num */ Double => String): Self = StObject.set(x, "getSuffix", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSuffixUndefined: Self = StObject.set(x, "getSuffix", js.undefined)
+      inline def setGetSuffixUndefined: Self = StObject.set(x, "getSuffix", js.undefined)
       
-      @scala.inline
-      def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
+      inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNamesShort(value: js.Array[String]): Self = StObject.set(x, "monthNamesShort", value.asInstanceOf[js.Any])
+      inline def setMonthNamesShort(value: js.Array[String]): Self = StObject.set(x, "monthNamesShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
+      inline def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
       
-      @scala.inline
-      def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
+      inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
+      inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
       
-      @scala.inline
-      def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
       
-      @scala.inline
-      def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
     }
   }
   

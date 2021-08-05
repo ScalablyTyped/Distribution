@@ -18,43 +18,31 @@ trait DatePicker extends StObject {
 }
 object DatePicker {
   
-  @scala.inline
-  def apply(): DatePicker = {
+  inline def apply(): DatePicker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatePicker]
   }
   
-  @scala.inline
-  implicit class DatePickerMutableBuilder[Self <: DatePicker] (val x: Self) extends AnyVal {
+  extension [Self <: DatePicker](x: Self) {
     
-    @scala.inline
-    def setDatePicker(value: js.Object): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
+    inline def setDatePicker(value: js.Object): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatePickerUndefined: Self = StObject.set(x, "DatePicker", js.undefined)
+    inline def setDatePickerUndefined: Self = StObject.set(x, "DatePicker", js.undefined)
     
-    @scala.inline
-    def setDatePickerView(value: js.Object): Self = StObject.set(x, "DatePickerView", value.asInstanceOf[js.Any])
+    inline def setDatePickerView(value: js.Object): Self = StObject.set(x, "DatePickerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatePickerViewUndefined: Self = StObject.set(x, "DatePickerView", js.undefined)
+    inline def setDatePickerViewUndefined: Self = StObject.set(x, "DatePickerView", js.undefined)
     
-    @scala.inline
-    def setInputItem(value: js.Object): Self = StObject.set(x, "InputItem", value.asInstanceOf[js.Any])
+    inline def setInputItem(value: js.Object): Self = StObject.set(x, "InputItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputItemUndefined: Self = StObject.set(x, "InputItem", js.undefined)
+    inline def setInputItemUndefined: Self = StObject.set(x, "InputItem", js.undefined)
     
-    @scala.inline
-    def setModal(value: js.Object): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: js.Object): Self = StObject.set(x, "Modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalUndefined: Self = StObject.set(x, "Modal", js.undefined)
+    inline def setModalUndefined: Self = StObject.set(x, "Modal", js.undefined)
     
-    @scala.inline
-    def setPagination(value: js.Object): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: js.Object): Self = StObject.set(x, "Pagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
+    inline def setPaginationUndefined: Self = StObject.set(x, "Pagination", js.undefined)
   }
 }

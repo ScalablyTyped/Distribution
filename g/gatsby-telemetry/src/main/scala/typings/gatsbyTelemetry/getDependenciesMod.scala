@@ -11,6 +11,5 @@ object getDependenciesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDependencies(): Dependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependencies")().asInstanceOf[Dependencies]
+  inline def getDependencies(): Dependencies = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependencies")().asInstanceOf[Dependencies]
 }

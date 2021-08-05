@@ -19,43 +19,31 @@ trait Partialjqlstringheaderstr extends StObject {
 }
 object Partialjqlstringheaderstr {
   
-  @scala.inline
-  def apply(): Partialjqlstringheaderstr = {
+  inline def apply(): Partialjqlstringheaderstr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialjqlstringheaderstr]
   }
   
-  @scala.inline
-  implicit class PartialjqlstringheaderstrMutableBuilder[Self <: Partialjqlstringheaderstr] (val x: Self) extends AnyVal {
+  extension [Self <: Partialjqlstringheaderstr](x: Self) {
     
-    @scala.inline
-    def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
+    inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
+    inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
-    @scala.inline
-    def setDescriptionText(value: String): Self = StObject.set(x, "descriptionText", value.asInstanceOf[js.Any])
+    inline def setDescriptionText(value: String): Self = StObject.set(x, "descriptionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionTextUndefined: Self = StObject.set(x, "descriptionText", js.undefined)
+    inline def setDescriptionTextUndefined: Self = StObject.set(x, "descriptionText", js.undefined)
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setJql(value: String): Self = StObject.set(x, "jql", value.asInstanceOf[js.Any])
+    inline def setJql(value: String): Self = StObject.set(x, "jql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJqlUndefined: Self = StObject.set(x, "jql", js.undefined)
+    inline def setJqlUndefined: Self = StObject.set(x, "jql", js.undefined)
     
-    @scala.inline
-    def setSubmitText(value: String): Self = StObject.set(x, "submitText", value.asInstanceOf[js.Any])
+    inline def setSubmitText(value: String): Self = StObject.set(x, "submitText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTextUndefined: Self = StObject.set(x, "submitText", js.undefined)
+    inline def setSubmitTextUndefined: Self = StObject.set(x, "submitText", js.undefined)
   }
 }

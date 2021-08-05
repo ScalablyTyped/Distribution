@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkCheckBox")
 @js.native
-class OlkCheckBox protected ()
+/* private */ class OlkCheckBox ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkCheckBox {
   
@@ -46,7 +46,7 @@ class OlkCheckBox protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkCheckBox_typekey")
   var OutlookDotOlkCheckBox_typekey: typings.activexOutlook.Outlook.OlkCheckBox = js.native
   

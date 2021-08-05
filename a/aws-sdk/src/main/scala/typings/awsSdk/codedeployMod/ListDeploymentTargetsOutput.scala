@@ -18,28 +18,21 @@ trait ListDeploymentTargetsOutput extends StObject {
 }
 object ListDeploymentTargetsOutput {
   
-  @scala.inline
-  def apply(): ListDeploymentTargetsOutput = {
+  inline def apply(): ListDeploymentTargetsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeploymentTargetsOutput]
   }
   
-  @scala.inline
-  implicit class ListDeploymentTargetsOutputMutableBuilder[Self <: ListDeploymentTargetsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeploymentTargetsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTargetIds(value: TargetIdList): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
+    inline def setTargetIds(value: TargetIdList): Self = StObject.set(x, "targetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
+    inline def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
-    @scala.inline
-    def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
   }
 }

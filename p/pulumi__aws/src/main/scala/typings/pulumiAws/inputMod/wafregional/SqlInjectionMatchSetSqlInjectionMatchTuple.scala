@@ -23,8 +23,7 @@ trait SqlInjectionMatchSetSqlInjectionMatchTuple extends StObject {
 }
 object SqlInjectionMatchSetSqlInjectionMatchTuple {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldToMatch: Input[SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch],
     textTransformation: Input[String]
   ): SqlInjectionMatchSetSqlInjectionMatchTuple = {
@@ -32,13 +31,10 @@ object SqlInjectionMatchSetSqlInjectionMatchTuple {
     __obj.asInstanceOf[SqlInjectionMatchSetSqlInjectionMatchTuple]
   }
   
-  @scala.inline
-  implicit class SqlInjectionMatchSetSqlInjectionMatchTupleMutableBuilder[Self <: SqlInjectionMatchSetSqlInjectionMatchTuple] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInjectionMatchSetSqlInjectionMatchTuple](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: Input[SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: Input[SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformation(value: Input[String]): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
+    inline def setTextTransformation(value: Input[String]): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
   }
 }

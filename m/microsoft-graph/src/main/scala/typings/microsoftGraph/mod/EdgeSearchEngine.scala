@@ -16,19 +16,15 @@ trait EdgeSearchEngine
 }
 object EdgeSearchEngine {
   
-  @scala.inline
-  def apply(): EdgeSearchEngine = {
+  inline def apply(): EdgeSearchEngine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EdgeSearchEngine]
   }
   
-  @scala.inline
-  implicit class EdgeSearchEngineMutableBuilder[Self <: EdgeSearchEngine] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeSearchEngine](x: Self) {
     
-    @scala.inline
-    def setEdgeSearchEngineType(value: EdgeSearchEngineType): Self = StObject.set(x, "edgeSearchEngineType", value.asInstanceOf[js.Any])
+    inline def setEdgeSearchEngineType(value: EdgeSearchEngineType): Self = StObject.set(x, "edgeSearchEngineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeSearchEngineTypeUndefined: Self = StObject.set(x, "edgeSearchEngineType", js.undefined)
+    inline def setEdgeSearchEngineTypeUndefined: Self = StObject.set(x, "edgeSearchEngineType", js.undefined)
   }
 }

@@ -30,7 +30,7 @@ object mongodbMongoDriverMod {
       */
     /* protected */ def buildConnectionUrl(options: StringDictionary[js.Any]): String = js.native
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Loads all driver dependencies.
@@ -64,7 +64,7 @@ object mongodbMongoDriverMod {
       * NOTE: Keep sync with MongoConnectionOptions
       * Sync with http://mongodb.github.io/node-mongodb-native/3.5/api/MongoClient.html
       */
-    var validOptionNames: js.Array[String] = js.native
+    /* protected */ var validOptionNames: js.Array[String] = js.native
     
     /**
       * Validate driver options to make sure everything is correct and driver will be able to establish connection.

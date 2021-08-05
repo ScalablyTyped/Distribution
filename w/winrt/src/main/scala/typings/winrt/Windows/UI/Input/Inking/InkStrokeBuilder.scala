@@ -12,8 +12,7 @@ trait InkStrokeBuilder
      with IInkStrokeBuilder
 object InkStrokeBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendToStroke: PointerPoint => PointerPoint,
     beginStroke: PointerPoint => Unit,
     createStroke: IIterable[Point] => InkStroke,

@@ -13,6 +13,5 @@ class CounterSignature ()
   extends typings.xadesjs.xmlMod.CounterSignature
 object CounterSignature {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.CounterSignature] = ^.asInstanceOf[js.Dynamic].selectDynamic("CounterSignature").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CounterSignature]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.CounterSignature] = ^.asInstanceOf[js.Dynamic].selectDynamic("CounterSignature").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.CounterSignature]]
 }

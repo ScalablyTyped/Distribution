@@ -47,8 +47,7 @@ object rendererMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getCompatibilityErrors(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompatibilityErrors")().asInstanceOf[String | Null]
+    inline def getCompatibilityErrors(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCompatibilityErrors")().asInstanceOf[String | Null]
   }
   
   trait Renderer extends StObject {
@@ -71,8 +70,7 @@ object rendererMod {
   }
   object Renderer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjust: () => Unit,
       destroy: () => Unit,
       getRenderedPages: () => js.Any,
@@ -85,35 +83,25 @@ object rendererMod {
       __obj.asInstanceOf[Renderer]
     }
     
-    @scala.inline
-    implicit class RendererMutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
+    extension [Self <: Renderer](x: Self) {
       
-      @scala.inline
-      def setAdjust(value: () => Unit): Self = StObject.set(x, "adjust", js.Any.fromFunction0(value))
+      inline def setAdjust(value: () => Unit): Self = StObject.set(x, "adjust", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRenderedPages(value: () => js.Any): Self = StObject.set(x, "getRenderedPages", js.Any.fromFunction0(value))
+      inline def setGetRenderedPages(value: () => js.Any): Self = StObject.set(x, "getRenderedPages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGoto(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "goto", js.Any.fromFunction3(value))
+      inline def setGoto(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "goto", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIsPageVisible(value: Double => Boolean): Self = StObject.set(x, "isPageVisible", js.Any.fromFunction1(value))
+      inline def setIsPageVisible(value: Double => Boolean): Self = StObject.set(x, "isPageVisible", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLayout(value: typings.divaJs.documentLayoutMod.default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: typings.divaJs.documentLayoutMod.default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutNull: Self = StObject.set(x, "layout", null)
+      inline def setLayoutNull: Self = StObject.set(x, "layout", null)
       
-      @scala.inline
-      def setLoad(value: (js.Object, ViewportPosition, SourceProvider) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
+      inline def setLoad(value: (js.Object, ViewportPosition, SourceProvider) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransitionViewportPosition(value: js.Object => Unit): Self = StObject.set(x, "transitionViewportPosition", js.Any.fromFunction1(value))
+      inline def setTransitionViewportPosition(value: js.Object => Unit): Self = StObject.set(x, "transitionViewportPosition", js.Any.fromFunction1(value))
     }
   }
 }

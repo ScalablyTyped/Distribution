@@ -12,10 +12,8 @@ object toArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(children: ReactNode): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
-  @scala.inline
-  def default(children: ReactNode, option: Option): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
+  inline def default(children: ReactNode): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
+  inline def default(children: ReactNode, option: Option): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
   
   trait Option extends StObject {
     
@@ -23,20 +21,16 @@ object toArrayMod {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setKeepEmpty(value: Boolean): Self = StObject.set(x, "keepEmpty", value.asInstanceOf[js.Any])
+      inline def setKeepEmpty(value: Boolean): Self = StObject.set(x, "keepEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepEmptyUndefined: Self = StObject.set(x, "keepEmpty", js.undefined)
+      inline def setKeepEmptyUndefined: Self = StObject.set(x, "keepEmpty", js.undefined)
     }
   }
 }

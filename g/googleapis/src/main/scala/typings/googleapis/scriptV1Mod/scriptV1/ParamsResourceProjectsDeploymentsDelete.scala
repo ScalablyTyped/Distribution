@@ -29,31 +29,23 @@ trait ParamsResourceProjectsDeploymentsDelete
 }
 object ParamsResourceProjectsDeploymentsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsDeploymentsDelete = {
+  inline def apply(): ParamsResourceProjectsDeploymentsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsDeploymentsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsDeploymentsDeleteMutableBuilder[Self <: ParamsResourceProjectsDeploymentsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsDeploymentsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    @scala.inline
-    def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
+    inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
   }
 }

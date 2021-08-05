@@ -38,9 +38,9 @@ object duplexMockMod {
   - typings.streamMock.iwritablemockMod.IWritableMock because Inheritance from two classes. Inlined data, flatData */ @js.native
   trait DuplexMock extends Duplex {
     
-    var _readableState: js.Any = js.native
+    /* private */ var _readableState: js.Any = js.native
     
-    var _writableState: js.Any = js.native
+    /* private */ var _writableState: js.Any = js.native
     
     var data: js.Array[js.Any] | Buffer = js.native
     

@@ -21,38 +21,28 @@ object paramsMod {
   }
   object A11yParameters {
     
-    @scala.inline
-    def apply(): A11yParameters = {
+    inline def apply(): A11yParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[A11yParameters]
     }
     
-    @scala.inline
-    implicit class A11yParametersMutableBuilder[Self <: A11yParameters] (val x: Self) extends AnyVal {
+    extension [Self <: A11yParameters](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Spec): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Spec): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setElement(value: ElementContext): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: ElementContext): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setManual(value: Boolean): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
+      inline def setManual(value: Boolean): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
+      inline def setManualUndefined: Self = StObject.set(x, "manual", js.undefined)
       
-      @scala.inline
-      def setOptions(value: RunOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RunOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -66,26 +56,20 @@ object paramsMod {
   }
   object Setup {
     
-    @scala.inline
-    def apply(config: Spec, options: RunOptions): Setup = {
+    inline def apply(config: Spec, options: RunOptions): Setup = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Setup]
     }
     
-    @scala.inline
-    implicit class SetupMutableBuilder[Self <: Setup] (val x: Self) extends AnyVal {
+    extension [Self <: Setup](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Spec): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Spec): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: ElementContext): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: ElementContext): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setOptions(value: RunOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RunOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

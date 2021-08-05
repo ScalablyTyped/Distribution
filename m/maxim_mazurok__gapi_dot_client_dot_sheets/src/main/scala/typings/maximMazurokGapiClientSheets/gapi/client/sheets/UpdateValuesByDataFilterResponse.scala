@@ -26,49 +26,35 @@ trait UpdateValuesByDataFilterResponse extends StObject {
 }
 object UpdateValuesByDataFilterResponse {
   
-  @scala.inline
-  def apply(): UpdateValuesByDataFilterResponse = {
+  inline def apply(): UpdateValuesByDataFilterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateValuesByDataFilterResponse]
   }
   
-  @scala.inline
-  implicit class UpdateValuesByDataFilterResponseMutableBuilder[Self <: UpdateValuesByDataFilterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateValuesByDataFilterResponse](x: Self) {
     
-    @scala.inline
-    def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
+    inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
+    inline def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
     
-    @scala.inline
-    def setUpdatedCells(value: Double): Self = StObject.set(x, "updatedCells", value.asInstanceOf[js.Any])
+    inline def setUpdatedCells(value: Double): Self = StObject.set(x, "updatedCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedCellsUndefined: Self = StObject.set(x, "updatedCells", js.undefined)
+    inline def setUpdatedCellsUndefined: Self = StObject.set(x, "updatedCells", js.undefined)
     
-    @scala.inline
-    def setUpdatedColumns(value: Double): Self = StObject.set(x, "updatedColumns", value.asInstanceOf[js.Any])
+    inline def setUpdatedColumns(value: Double): Self = StObject.set(x, "updatedColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedColumnsUndefined: Self = StObject.set(x, "updatedColumns", js.undefined)
+    inline def setUpdatedColumnsUndefined: Self = StObject.set(x, "updatedColumns", js.undefined)
     
-    @scala.inline
-    def setUpdatedData(value: ValueRange): Self = StObject.set(x, "updatedData", value.asInstanceOf[js.Any])
+    inline def setUpdatedData(value: ValueRange): Self = StObject.set(x, "updatedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedDataUndefined: Self = StObject.set(x, "updatedData", js.undefined)
+    inline def setUpdatedDataUndefined: Self = StObject.set(x, "updatedData", js.undefined)
     
-    @scala.inline
-    def setUpdatedRange(value: String): Self = StObject.set(x, "updatedRange", value.asInstanceOf[js.Any])
+    inline def setUpdatedRange(value: String): Self = StObject.set(x, "updatedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedRangeUndefined: Self = StObject.set(x, "updatedRange", js.undefined)
+    inline def setUpdatedRangeUndefined: Self = StObject.set(x, "updatedRange", js.undefined)
     
-    @scala.inline
-    def setUpdatedRows(value: Double): Self = StObject.set(x, "updatedRows", value.asInstanceOf[js.Any])
+    inline def setUpdatedRows(value: Double): Self = StObject.set(x, "updatedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedRowsUndefined: Self = StObject.set(x, "updatedRows", js.undefined)
+    inline def setUpdatedRowsUndefined: Self = StObject.set(x, "updatedRows", js.undefined)
   }
 }

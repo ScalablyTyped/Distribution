@@ -15,25 +15,19 @@ trait LayoutShowEvent
 }
 object LayoutShowEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Layout): LayoutShowEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Layout): LayoutShowEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutShowEvent]
   }
   
-  @scala.inline
-  implicit class LayoutShowEventMutableBuilder[Self <: LayoutShowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutShowEvent](x: Self) {
     
-    @scala.inline
-    def setLayout(value: JQuery): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: JQuery): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setView(value: JQuery): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: JQuery): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

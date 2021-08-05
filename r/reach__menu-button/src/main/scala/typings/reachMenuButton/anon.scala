@@ -40,74 +40,52 @@ object anon {
   }
   object As {
     
-    @scala.inline
-    def apply[T /* <: SupportedMenuLinkComponent */](): As[T] = {
+    inline def apply[T /* <: SupportedMenuLinkComponent */](): As[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[As[T]]
     }
     
-    @scala.inline
-    implicit class AsMutableBuilder[Self <: As[?], T /* <: SupportedMenuLinkComponent */] (val x: Self & As[T]) extends AnyVal {
+    extension [Self <: As[?], T /* <: SupportedMenuLinkComponent */](x: Self & As[T]) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setComponent(value: ResolvedMenuLinkComponent[T]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ResolvedMenuLinkComponent[T]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setSetState(value: /* s */ State => PartialState): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: /* s */ State => PartialState): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStateUndefined: Self = StObject.set(x, "setState", js.undefined)
+      inline def setSetStateUndefined: Self = StObject.set(x, "setState", js.undefined)
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def set_ref(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "_ref", js.Any.fromFunction1(value))
+      inline def set_ref(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "_ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_refUndefined: Self = StObject.set(x, "_ref", js.undefined)
+      inline def set_refUndefined: Self = StObject.set(x, "_ref", js.undefined)
     }
   }
   
@@ -117,20 +95,16 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(): Children = {
+    inline def apply(): Children = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -149,44 +123,32 @@ object anon {
   }
   object PartialState {
     
-    @scala.inline
-    def apply(): PartialState = {
+    inline def apply(): PartialState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialState]
     }
     
-    @scala.inline
-    implicit class PartialStateMutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
+    extension [Self <: PartialState](x: Self) {
       
-      @scala.inline
-      def setButtonId(value: String): Self = StObject.set(x, "buttonId", value.asInstanceOf[js.Any])
+      inline def setButtonId(value: String): Self = StObject.set(x, "buttonId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonIdUndefined: Self = StObject.set(x, "buttonId", js.undefined)
+      inline def setButtonIdUndefined: Self = StObject.set(x, "buttonId", js.undefined)
       
-      @scala.inline
-      def setButtonRect(value: ButtonRect): Self = StObject.set(x, "buttonRect", value.asInstanceOf[js.Any])
+      inline def setButtonRect(value: ButtonRect): Self = StObject.set(x, "buttonRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonRectUndefined: Self = StObject.set(x, "buttonRect", js.undefined)
+      inline def setButtonRectUndefined: Self = StObject.set(x, "buttonRect", js.undefined)
       
-      @scala.inline
-      def setClosingWithClick(value: Boolean): Self = StObject.set(x, "closingWithClick", value.asInstanceOf[js.Any])
+      inline def setClosingWithClick(value: Boolean): Self = StObject.set(x, "closingWithClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosingWithClickUndefined: Self = StObject.set(x, "closingWithClick", js.undefined)
+      inline def setClosingWithClickUndefined: Self = StObject.set(x, "closingWithClick", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setSelectionIndex(value: Double): Self = StObject.set(x, "selectionIndex", value.asInstanceOf[js.Any])
+      inline def setSelectionIndex(value: Double): Self = StObject.set(x, "selectionIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionIndexUndefined: Self = StObject.set(x, "selectionIndex", js.undefined)
+      inline def setSelectionIndexUndefined: Self = StObject.set(x, "selectionIndex", js.undefined)
     }
   }
 }

@@ -13,22 +13,17 @@ trait NewValueInvisibles extends StObject {
 }
 object NewValueInvisibles {
   
-  @scala.inline
-  def apply(newValue: Invisibles): NewValueInvisibles = {
+  inline def apply(newValue: Invisibles): NewValueInvisibles = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewValueInvisibles]
   }
   
-  @scala.inline
-  implicit class NewValueInvisiblesMutableBuilder[Self <: NewValueInvisibles] (val x: Self) extends AnyVal {
+  extension [Self <: NewValueInvisibles](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: Invisibles): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Invisibles): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: Invisibles): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Invisibles): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

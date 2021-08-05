@@ -52,8 +52,7 @@ object newsFeedResponseMod {
   }
   object NewsFeedResponseArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       links: js.Array[NewsFeedResponseLinksItem],
       profile_id: Double,
       profile_image: String,
@@ -65,71 +64,49 @@ object newsFeedResponseMod {
       __obj.asInstanceOf[NewsFeedResponseArgs]
     }
     
-    @scala.inline
-    implicit class NewsFeedResponseArgsMutableBuilder[Self <: NewsFeedResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NewsFeedResponseArgs](x: Self) {
       
-      @scala.inline
-      def setComment_id(value: String): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
+      inline def setComment_id(value: String): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_idUndefined: Self = StObject.set(x, "comment_id", js.undefined)
+      inline def setComment_idUndefined: Self = StObject.set(x, "comment_id", js.undefined)
       
-      @scala.inline
-      def setComment_ids(value: js.Array[String]): Self = StObject.set(x, "comment_ids", value.asInstanceOf[js.Any])
+      inline def setComment_ids(value: js.Array[String]): Self = StObject.set(x, "comment_ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_idsUndefined: Self = StObject.set(x, "comment_ids", js.undefined)
+      inline def setComment_idsUndefined: Self = StObject.set(x, "comment_ids", js.undefined)
       
-      @scala.inline
-      def setComment_idsVarargs(value: String*): Self = StObject.set(x, "comment_ids", js.Array(value :_*))
+      inline def setComment_idsVarargs(value: String*): Self = StObject.set(x, "comment_ids", js.Array(value :_*))
       
-      @scala.inline
-      def setLinks(value: js.Array[NewsFeedResponseLinksItem]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[NewsFeedResponseLinksItem]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: NewsFeedResponseLinksItem*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: NewsFeedResponseLinksItem*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setMedia(value: js.Array[NewsFeedResponseMediaItem]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: js.Array[NewsFeedResponseMediaItem]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setMediaVarargs(value: NewsFeedResponseMediaItem*): Self = StObject.set(x, "media", js.Array(value :_*))
+      inline def setMediaVarargs(value: NewsFeedResponseMediaItem*): Self = StObject.set(x, "media", js.Array(value :_*))
       
-      @scala.inline
-      def setProfile_id(value: Double): Self = StObject.set(x, "profile_id", value.asInstanceOf[js.Any])
+      inline def setProfile_id(value: Double): Self = StObject.set(x, "profile_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_image(value: String): Self = StObject.set(x, "profile_image", value.asInstanceOf[js.Any])
+      inline def setProfile_image(value: String): Self = StObject.set(x, "profile_image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_image_destination(value: String): Self = StObject.set(x, "profile_image_destination", value.asInstanceOf[js.Any])
+      inline def setProfile_image_destination(value: String): Self = StObject.set(x, "profile_image_destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_image_destinationUndefined: Self = StObject.set(x, "profile_image_destination", js.undefined)
+      inline def setProfile_image_destinationUndefined: Self = StObject.set(x, "profile_image_destination", js.undefined)
       
-      @scala.inline
-      def setSecond_profile_id(value: Double): Self = StObject.set(x, "second_profile_id", value.asInstanceOf[js.Any])
+      inline def setSecond_profile_id(value: Double): Self = StObject.set(x, "second_profile_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond_profile_idUndefined: Self = StObject.set(x, "second_profile_id", js.undefined)
+      inline def setSecond_profile_idUndefined: Self = StObject.set(x, "second_profile_id", js.undefined)
       
-      @scala.inline
-      def setSecond_profile_image(value: String): Self = StObject.set(x, "second_profile_image", value.asInstanceOf[js.Any])
+      inline def setSecond_profile_image(value: String): Self = StObject.set(x, "second_profile_image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecond_profile_imageUndefined: Self = StObject.set(x, "second_profile_image", js.undefined)
+      inline def setSecond_profile_imageUndefined: Self = StObject.set(x, "second_profile_image", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTuuid(value: String): Self = StObject.set(x, "tuuid", value.asInstanceOf[js.Any])
+      inline def setTuuid(value: String): Self = StObject.set(x, "tuuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,27 +124,21 @@ object newsFeedResponseMod {
   }
   object NewsFeedResponseLinksItem {
     
-    @scala.inline
-    def apply(end: Double, id: String, start: Double, `type`: String): NewsFeedResponseLinksItem = {
+    inline def apply(end: Double, id: String, start: Double, `type`: String): NewsFeedResponseLinksItem = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewsFeedResponseLinksItem]
     }
     
-    @scala.inline
-    implicit class NewsFeedResponseLinksItemMutableBuilder[Self <: NewsFeedResponseLinksItem] (val x: Self) extends AnyVal {
+    extension [Self <: NewsFeedResponseLinksItem](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,26 +152,20 @@ object newsFeedResponseMod {
   }
   object NewsFeedResponseMediaItem {
     
-    @scala.inline
-    def apply(id: String, image: String): NewsFeedResponseMediaItem = {
+    inline def apply(id: String, image: String): NewsFeedResponseMediaItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewsFeedResponseMediaItem]
     }
     
-    @scala.inline
-    implicit class NewsFeedResponseMediaItemMutableBuilder[Self <: NewsFeedResponseMediaItem] (val x: Self) extends AnyVal {
+    extension [Self <: NewsFeedResponseMediaItem](x: Self) {
       
-      @scala.inline
-      def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
+      inline def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_threading_enabledUndefined: Self = StObject.set(x, "comment_threading_enabled", js.undefined)
+      inline def setComment_threading_enabledUndefined: Self = StObject.set(x, "comment_threading_enabled", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,8 +181,7 @@ object newsFeedResponseMod {
   }
   object NewsFeedResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auto_load_more_enabled: Boolean,
       next_max_id: Double,
       status: String,
@@ -227,23 +191,17 @@ object newsFeedResponseMod {
       __obj.asInstanceOf[NewsFeedResponseRootObject]
     }
     
-    @scala.inline
-    implicit class NewsFeedResponseRootObjectMutableBuilder[Self <: NewsFeedResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: NewsFeedResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
+      inline def setAuto_load_more_enabled(value: Boolean): Self = StObject.set(x, "auto_load_more_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_max_id(value: Double): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+      inline def setNext_max_id(value: Double): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStories(value: js.Array[NewsFeedResponseStoriesItem]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: js.Array[NewsFeedResponseStoriesItem]): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoriesVarargs(value: NewsFeedResponseStoriesItem*): Self = StObject.set(x, "stories", js.Array(value :_*))
+      inline def setStoriesVarargs(value: NewsFeedResponseStoriesItem*): Self = StObject.set(x, "stories", js.Array(value :_*))
     }
   }
 }

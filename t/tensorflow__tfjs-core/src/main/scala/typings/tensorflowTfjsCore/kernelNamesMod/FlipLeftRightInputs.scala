@@ -11,19 +11,15 @@ trait FlipLeftRightInputs extends StObject {
 }
 object FlipLeftRightInputs {
   
-  @scala.inline
-  def apply(): FlipLeftRightInputs = {
+  inline def apply(): FlipLeftRightInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlipLeftRightInputs]
   }
   
-  @scala.inline
-  implicit class FlipLeftRightInputsMutableBuilder[Self <: FlipLeftRightInputs] (val x: Self) extends AnyVal {
+  extension [Self <: FlipLeftRightInputs](x: Self) {
     
-    @scala.inline
-    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

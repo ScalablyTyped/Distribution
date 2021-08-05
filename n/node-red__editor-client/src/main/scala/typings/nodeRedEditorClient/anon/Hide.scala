@@ -12,19 +12,15 @@ trait Hide extends StObject {
 }
 object Hide {
   
-  @scala.inline
-  def apply(hide: Double, show: Double): Hide = {
+  inline def apply(hide: Double, show: Double): Hide = {
     val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hide]
   }
   
-  @scala.inline
-  implicit class HideMutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
+  extension [Self <: Hide](x: Self) {
     
-    @scala.inline
-    def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

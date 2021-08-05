@@ -25,23 +25,18 @@ object ses {
   }
   object EventDestinationCloudwatchDestination {
     
-    @scala.inline
-    def apply(defaultValue: String, dimensionName: String, valueSource: String): EventDestinationCloudwatchDestination = {
+    inline def apply(defaultValue: String, dimensionName: String, valueSource: String): EventDestinationCloudwatchDestination = {
       val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], dimensionName = dimensionName.asInstanceOf[js.Any], valueSource = valueSource.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventDestinationCloudwatchDestination]
     }
     
-    @scala.inline
-    implicit class EventDestinationCloudwatchDestinationMutableBuilder[Self <: EventDestinationCloudwatchDestination] (val x: Self) extends AnyVal {
+    extension [Self <: EventDestinationCloudwatchDestination](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
+      inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueSource(value: String): Self = StObject.set(x, "valueSource", value.asInstanceOf[js.Any])
+      inline def setValueSource(value: String): Self = StObject.set(x, "valueSource", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,20 +54,16 @@ object ses {
   }
   object EventDestinationKinesisDestination {
     
-    @scala.inline
-    def apply(roleArn: String, streamArn: String): EventDestinationKinesisDestination = {
+    inline def apply(roleArn: String, streamArn: String): EventDestinationKinesisDestination = {
       val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], streamArn = streamArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventDestinationKinesisDestination]
     }
     
-    @scala.inline
-    implicit class EventDestinationKinesisDestinationMutableBuilder[Self <: EventDestinationKinesisDestination] (val x: Self) extends AnyVal {
+    extension [Self <: EventDestinationKinesisDestination](x: Self) {
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamArn(value: String): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
+      inline def setStreamArn(value: String): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,17 +76,14 @@ object ses {
   }
   object EventDestinationSnsDestination {
     
-    @scala.inline
-    def apply(topicArn: String): EventDestinationSnsDestination = {
+    inline def apply(topicArn: String): EventDestinationSnsDestination = {
       val __obj = js.Dynamic.literal(topicArn = topicArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventDestinationSnsDestination]
     }
     
-    @scala.inline
-    implicit class EventDestinationSnsDestinationMutableBuilder[Self <: EventDestinationSnsDestination] (val x: Self) extends AnyVal {
+    extension [Self <: EventDestinationSnsDestination](x: Self) {
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,23 +106,18 @@ object ses {
   }
   object ReceiptRuleAddHeaderAction {
     
-    @scala.inline
-    def apply(headerName: String, headerValue: String, position: Double): ReceiptRuleAddHeaderAction = {
+    inline def apply(headerName: String, headerValue: String, position: Double): ReceiptRuleAddHeaderAction = {
       val __obj = js.Dynamic.literal(headerName = headerName.asInstanceOf[js.Any], headerValue = headerValue.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleAddHeaderAction]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleAddHeaderActionMutableBuilder[Self <: ReceiptRuleAddHeaderAction] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleAddHeaderAction](x: Self) {
       
-      @scala.inline
-      def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+      inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderValue(value: String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
+      inline def setHeaderValue(value: String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,38 +155,28 @@ object ses {
   }
   object ReceiptRuleBounceAction {
     
-    @scala.inline
-    def apply(message: String, position: Double, sender: String, smtpReplyCode: String): ReceiptRuleBounceAction = {
+    inline def apply(message: String, position: Double, sender: String, smtpReplyCode: String): ReceiptRuleBounceAction = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], smtpReplyCode = smtpReplyCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleBounceAction]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleBounceActionMutableBuilder[Self <: ReceiptRuleBounceAction] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleBounceAction](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmtpReplyCode(value: String): Self = StObject.set(x, "smtpReplyCode", value.asInstanceOf[js.Any])
+      inline def setSmtpReplyCode(value: String): Self = StObject.set(x, "smtpReplyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
   
@@ -231,29 +204,22 @@ object ses {
   }
   object ReceiptRuleLambdaAction {
     
-    @scala.inline
-    def apply(functionArn: String, invocationType: String, position: Double): ReceiptRuleLambdaAction = {
+    inline def apply(functionArn: String, invocationType: String, position: Double): ReceiptRuleLambdaAction = {
       val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any], invocationType = invocationType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleLambdaAction]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleLambdaActionMutableBuilder[Self <: ReceiptRuleLambdaAction] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleLambdaAction](x: Self) {
       
-      @scala.inline
-      def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
+      inline def setFunctionArn(value: String): Self = StObject.set(x, "functionArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationType(value: String): Self = StObject.set(x, "invocationType", value.asInstanceOf[js.Any])
+      inline def setInvocationType(value: String): Self = StObject.set(x, "invocationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
   
@@ -286,38 +252,28 @@ object ses {
   }
   object ReceiptRuleS3Action {
     
-    @scala.inline
-    def apply(bucketName: String, position: Double): ReceiptRuleS3Action = {
+    inline def apply(bucketName: String, position: Double): ReceiptRuleS3Action = {
       val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleS3Action]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleS3ActionMutableBuilder[Self <: ReceiptRuleS3Action] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleS3Action](x: Self) {
       
-      @scala.inline
-      def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
       
-      @scala.inline
-      def setObjectKeyPrefix(value: String): Self = StObject.set(x, "objectKeyPrefix", value.asInstanceOf[js.Any])
+      inline def setObjectKeyPrefix(value: String): Self = StObject.set(x, "objectKeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectKeyPrefixUndefined: Self = StObject.set(x, "objectKeyPrefix", js.undefined)
+      inline def setObjectKeyPrefixUndefined: Self = StObject.set(x, "objectKeyPrefix", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
   
@@ -335,20 +291,16 @@ object ses {
   }
   object ReceiptRuleSnsAction {
     
-    @scala.inline
-    def apply(position: Double, topicArn: String): ReceiptRuleSnsAction = {
+    inline def apply(position: Double, topicArn: String): ReceiptRuleSnsAction = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleSnsAction]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleSnsActionMutableBuilder[Self <: ReceiptRuleSnsAction] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleSnsAction](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -371,26 +323,20 @@ object ses {
   }
   object ReceiptRuleStopAction {
     
-    @scala.inline
-    def apply(position: Double, scope: String): ReceiptRuleStopAction = {
+    inline def apply(position: Double, scope: String): ReceiptRuleStopAction = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleStopAction]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleStopActionMutableBuilder[Self <: ReceiptRuleStopAction] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleStopAction](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
   
@@ -413,26 +359,20 @@ object ses {
   }
   object ReceiptRuleWorkmailAction {
     
-    @scala.inline
-    def apply(organizationArn: String, position: Double): ReceiptRuleWorkmailAction = {
+    inline def apply(organizationArn: String, position: Double): ReceiptRuleWorkmailAction = {
       val __obj = js.Dynamic.literal(organizationArn = organizationArn.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiptRuleWorkmailAction]
     }
     
-    @scala.inline
-    implicit class ReceiptRuleWorkmailActionMutableBuilder[Self <: ReceiptRuleWorkmailAction] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiptRuleWorkmailAction](x: Self) {
       
-      @scala.inline
-      def setOrganizationArn(value: String): Self = StObject.set(x, "organizationArn", value.asInstanceOf[js.Any])
+      inline def setOrganizationArn(value: String): Self = StObject.set(x, "organizationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
+      inline def setTopicArn(value: String): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
+      inline def setTopicArnUndefined: Self = StObject.set(x, "topicArn", js.undefined)
     }
   }
 }

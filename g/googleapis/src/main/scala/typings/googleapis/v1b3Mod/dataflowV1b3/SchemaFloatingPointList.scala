@@ -16,22 +16,17 @@ trait SchemaFloatingPointList extends StObject {
 }
 object SchemaFloatingPointList {
   
-  @scala.inline
-  def apply(): SchemaFloatingPointList = {
+  inline def apply(): SchemaFloatingPointList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFloatingPointList]
   }
   
-  @scala.inline
-  implicit class SchemaFloatingPointListMutableBuilder[Self <: SchemaFloatingPointList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFloatingPointList](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Double*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

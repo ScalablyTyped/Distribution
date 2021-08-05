@@ -20,8 +20,7 @@ object jsxelementMod {
   @js.native
   val mappings: MappingMethods = js.native
   
-  @scala.inline
-  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+  inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   
@@ -43,20 +42,16 @@ object jsxelementMod {
   }
   object FilterMethods {
     
-    @scala.inline
-    def apply(hasAttributes: StringDictionary[js.Any] => Filter, hasChildren: String => Filter): FilterMethods = {
+    inline def apply(hasAttributes: StringDictionary[js.Any] => Filter, hasChildren: String => Filter): FilterMethods = {
       val __obj = js.Dynamic.literal(hasAttributes = js.Any.fromFunction1(hasAttributes), hasChildren = js.Any.fromFunction1(hasChildren))
       __obj.asInstanceOf[FilterMethods]
     }
     
-    @scala.inline
-    implicit class FilterMethodsMutableBuilder[Self <: FilterMethods] (val x: Self) extends AnyVal {
+    extension [Self <: FilterMethods](x: Self) {
       
-      @scala.inline
-      def setHasAttributes(value: StringDictionary[js.Any] => Filter): Self = StObject.set(x, "hasAttributes", js.Any.fromFunction1(value))
+      inline def setHasAttributes(value: StringDictionary[js.Any] => Filter): Self = StObject.set(x, "hasAttributes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasChildren(value: String => Filter): Self = StObject.set(x, "hasChildren", js.Any.fromFunction1(value))
+      inline def setHasChildren(value: String => Filter): Self = StObject.set(x, "hasChildren", js.Any.fromFunction1(value))
     }
   }
   
@@ -95,17 +90,14 @@ object jsxelementMod {
   }
   object MappingMethods {
     
-    @scala.inline
-    def apply(getRootName: ASTPath[js.Any] => String): MappingMethods = {
+    inline def apply(getRootName: ASTPath[js.Any] => String): MappingMethods = {
       val __obj = js.Dynamic.literal(getRootName = js.Any.fromFunction1(getRootName))
       __obj.asInstanceOf[MappingMethods]
     }
     
-    @scala.inline
-    implicit class MappingMethodsMutableBuilder[Self <: MappingMethods] (val x: Self) extends AnyVal {
+    extension [Self <: MappingMethods](x: Self) {
       
-      @scala.inline
-      def setGetRootName(value: ASTPath[js.Any] => String): Self = StObject.set(x, "getRootName", js.Any.fromFunction1(value))
+      inline def setGetRootName(value: ASTPath[js.Any] => String): Self = StObject.set(x, "getRootName", js.Any.fromFunction1(value))
     }
   }
   
@@ -125,20 +117,16 @@ object jsxelementMod {
   }
   object TraversalMethods {
     
-    @scala.inline
-    def apply(childElements: () => Collection[JSXElement], childNodes: () => Collection[JSXElementChild]): TraversalMethods = {
+    inline def apply(childElements: () => Collection[JSXElement], childNodes: () => Collection[JSXElementChild]): TraversalMethods = {
       val __obj = js.Dynamic.literal(childElements = js.Any.fromFunction0(childElements), childNodes = js.Any.fromFunction0(childNodes))
       __obj.asInstanceOf[TraversalMethods]
     }
     
-    @scala.inline
-    implicit class TraversalMethodsMutableBuilder[Self <: TraversalMethods] (val x: Self) extends AnyVal {
+    extension [Self <: TraversalMethods](x: Self) {
       
-      @scala.inline
-      def setChildElements(value: () => Collection[JSXElement]): Self = StObject.set(x, "childElements", js.Any.fromFunction0(value))
+      inline def setChildElements(value: () => Collection[JSXElement]): Self = StObject.set(x, "childElements", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setChildNodes(value: () => Collection[JSXElementChild]): Self = StObject.set(x, "childNodes", js.Any.fromFunction0(value))
+      inline def setChildNodes(value: () => Collection[JSXElementChild]): Self = StObject.set(x, "childNodes", js.Any.fromFunction0(value))
     }
   }
 }

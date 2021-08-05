@@ -81,83 +81,50 @@ object mod {
     def test(str: String): Boolean = js.native
   }
   
-  @scala.inline
-  def camelCaseKeys(obj: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def camelCaseKeys(obj: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("camelCaseKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
-  @scala.inline
-  def escapeDiacritic(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeDiacritic")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeDiacritic(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeDiacritic")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def escapeHTML(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeHTML(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def escapeRegExp(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeRegExp(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hash(str: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def hash(str: ArrayBufferView): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def hash(str: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def hash(str: ArrayBufferView): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def highlight(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def highlight(str: String, options: AutoDetect): String = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def highlight(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def highlight(str: String, options: AutoDetect): String = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def htmlTag(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def htmlTag(tag: String, attrs: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def htmlTag(tag: String, attrs: js.Array[String], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def htmlTag(tag: String, attrs: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def htmlTag(tag: String, attrs: StringDictionary[js.Any], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def htmlTag(tag: String, attrs: Unit, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def htmlTag(tag: String, attrs: ArrayLike[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def htmlTag(tag: String, attrs: ArrayLike[String], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: js.Array[String], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: StringDictionary[js.Any], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: Unit, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: ArrayLike[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def htmlTag(tag: String, attrs: ArrayLike[String], text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlTag")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def slugize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def slugize(str: String, options: Separator): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugize")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def slugize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def slugize(str: String, options: Separator): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugize")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def spawn(command: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def spawn(command: String, args: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def spawn(command: String, args: js.Array[String], options: hexoSpawnDisableEncodingAndOverrideStdioOptions): js.Promise[js.UndefOr[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[Buffer]]]
-  @scala.inline
-  def spawn(command: String, args: js.Array[String], options: hexoSpawnDisableEncodingOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def spawn(command: String, args: js.Array[String], options: hexoSpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def spawn(command: String, args: js.Array[String], options: hexoSpawnOverrideStdioOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
-  @scala.inline
-  def spawn(command: String, options: hexoSpawnDisableEncodingAndOverrideStdioOptions): js.Promise[js.UndefOr[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[Buffer]]]
-  @scala.inline
-  def spawn(command: String, options: hexoSpawnDisableEncodingOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def spawn(command: String, options: hexoSpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def spawn(command: String, options: hexoSpawnOverrideStdioOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def spawn(command: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def spawn(command: String, args: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def spawn(command: String, args: js.Array[String], options: hexoSpawnDisableEncodingAndOverrideStdioOptions): js.Promise[js.UndefOr[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[Buffer]]]
+  inline def spawn(command: String, args: js.Array[String], options: hexoSpawnDisableEncodingOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def spawn(command: String, args: js.Array[String], options: hexoSpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def spawn(command: String, args: js.Array[String], options: hexoSpawnOverrideStdioOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def spawn(command: String, options: hexoSpawnDisableEncodingAndOverrideStdioOptions): js.Promise[js.UndefOr[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[Buffer]]]
+  inline def spawn(command: String, options: hexoSpawnDisableEncodingOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def spawn(command: String, options: hexoSpawnOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def spawn(command: String, options: hexoSpawnOverrideStdioOptions): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  @scala.inline
-  def stripHTML(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripHTML")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripHTML(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripHTML")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def truncate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def truncate(str: String, options: Length): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def truncate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def truncate(str: String, options: Length): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def wordWrap(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def wordWrap(str: String, options: Width): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def wordWrap(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def wordWrap(str: String, options: Width): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wordWrap")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Pattern[T] extends StObject {
     
@@ -167,21 +134,17 @@ object mod {
   }
   object Pattern {
     
-    @scala.inline
-    def apply[T](`match`: String => T, test: String => Boolean): Pattern[T] = {
+    inline def apply[T](`match`: String => T, test: String => Boolean): Pattern[T] = {
       val __obj = js.Dynamic.literal(test = js.Any.fromFunction1(test))
       __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
       __obj.asInstanceOf[Pattern[T]]
     }
     
-    @scala.inline
-    implicit class PatternMutableBuilder[Self <: Pattern[?], T] (val x: Self & Pattern[T]) extends AnyVal {
+    extension [Self <: Pattern[?], T](x: Self & Pattern[T]) {
       
-      @scala.inline
-      def setMatch(value: String => T): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: String => T): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTest(value: String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }
   }
   
@@ -194,20 +157,16 @@ object mod {
   }
   object hexoSpawnDisableEncodingAndOverrideStdioOptions {
     
-    @scala.inline
-    def apply(stdio: StdioOptions): hexoSpawnDisableEncodingAndOverrideStdioOptions = {
+    inline def apply(stdio: StdioOptions): hexoSpawnDisableEncodingAndOverrideStdioOptions = {
       val __obj = js.Dynamic.literal(stdio = stdio.asInstanceOf[js.Any], encoding = null)
       __obj.asInstanceOf[hexoSpawnDisableEncodingAndOverrideStdioOptions]
     }
     
-    @scala.inline
-    implicit class hexoSpawnDisableEncodingAndOverrideStdioOptionsMutableBuilder[Self <: hexoSpawnDisableEncodingAndOverrideStdioOptions] (val x: Self) extends AnyVal {
+    extension [Self <: hexoSpawnDisableEncodingAndOverrideStdioOptions](x: Self) {
       
-      @scala.inline
-      def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+      inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
     }
   }
   
@@ -221,26 +180,20 @@ object mod {
   }
   object hexoSpawnDisableEncodingOptions {
     
-    @scala.inline
-    def apply(): hexoSpawnDisableEncodingOptions = {
+    inline def apply(): hexoSpawnDisableEncodingOptions = {
       val __obj = js.Dynamic.literal(encoding = null)
       __obj.asInstanceOf[hexoSpawnDisableEncodingOptions]
     }
     
-    @scala.inline
-    implicit class hexoSpawnDisableEncodingOptionsMutableBuilder[Self <: hexoSpawnDisableEncodingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: hexoSpawnDisableEncodingOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: _empty | `false`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: _empty | `false`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -254,26 +207,20 @@ object mod {
   }
   object hexoSpawnOptions {
     
-    @scala.inline
-    def apply(): hexoSpawnOptions = {
+    inline def apply(): hexoSpawnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[hexoSpawnOptions]
     }
     
-    @scala.inline
-    implicit class hexoSpawnOptionsMutableBuilder[Self <: hexoSpawnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: hexoSpawnOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -286,20 +233,16 @@ object mod {
   }
   object hexoSpawnOverrideStdioOptions {
     
-    @scala.inline
-    def apply(stdio: StdioOptions): hexoSpawnOverrideStdioOptions = {
+    inline def apply(stdio: StdioOptions): hexoSpawnOverrideStdioOptions = {
       val __obj = js.Dynamic.literal(stdio = stdio.asInstanceOf[js.Any])
       __obj.asInstanceOf[hexoSpawnOverrideStdioOptions]
     }
     
-    @scala.inline
-    implicit class hexoSpawnOverrideStdioOptionsMutableBuilder[Self <: hexoSpawnOverrideStdioOptions] (val x: Self) extends AnyVal {
+    extension [Self <: hexoSpawnOverrideStdioOptions](x: Self) {
       
-      @scala.inline
-      def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+      inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
     }
   }
 }

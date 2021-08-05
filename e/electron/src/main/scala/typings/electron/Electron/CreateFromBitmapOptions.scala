@@ -17,25 +17,19 @@ trait CreateFromBitmapOptions extends StObject {
 }
 object CreateFromBitmapOptions {
   
-  @scala.inline
-  def apply(height: Double, width: Double): CreateFromBitmapOptions = {
+  inline def apply(height: Double, width: Double): CreateFromBitmapOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFromBitmapOptions]
   }
   
-  @scala.inline
-  implicit class CreateFromBitmapOptionsMutableBuilder[Self <: CreateFromBitmapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFromBitmapOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -23,41 +23,30 @@ trait CustomPropertyInteger
 }
 object CustomPropertyInteger {
   
-  @scala.inline
-  def apply(): CustomPropertyInteger = {
+  inline def apply(): CustomPropertyInteger = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[CustomPropertyInteger]
   }
   
-  @scala.inline
-  implicit class CustomPropertyIntegerMutableBuilder[Self <: CustomPropertyInteger] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyInteger](x: Self) {
     
-    @scala.inline
-    def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

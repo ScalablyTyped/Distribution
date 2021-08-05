@@ -15,31 +15,23 @@ trait IDeadLetterPolicy extends StObject {
 }
 object IDeadLetterPolicy {
   
-  @scala.inline
-  def apply(): IDeadLetterPolicy = {
+  inline def apply(): IDeadLetterPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDeadLetterPolicy]
   }
   
-  @scala.inline
-  implicit class IDeadLetterPolicyMutableBuilder[Self <: IDeadLetterPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IDeadLetterPolicy](x: Self) {
     
-    @scala.inline
-    def setDeadLetterTopic(value: String): Self = StObject.set(x, "deadLetterTopic", value.asInstanceOf[js.Any])
+    inline def setDeadLetterTopic(value: String): Self = StObject.set(x, "deadLetterTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadLetterTopicNull: Self = StObject.set(x, "deadLetterTopic", null)
+    inline def setDeadLetterTopicNull: Self = StObject.set(x, "deadLetterTopic", null)
     
-    @scala.inline
-    def setDeadLetterTopicUndefined: Self = StObject.set(x, "deadLetterTopic", js.undefined)
+    inline def setDeadLetterTopicUndefined: Self = StObject.set(x, "deadLetterTopic", js.undefined)
     
-    @scala.inline
-    def setMaxDeliveryAttempts(value: Double): Self = StObject.set(x, "maxDeliveryAttempts", value.asInstanceOf[js.Any])
+    inline def setMaxDeliveryAttempts(value: Double): Self = StObject.set(x, "maxDeliveryAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDeliveryAttemptsNull: Self = StObject.set(x, "maxDeliveryAttempts", null)
+    inline def setMaxDeliveryAttemptsNull: Self = StObject.set(x, "maxDeliveryAttempts", null)
     
-    @scala.inline
-    def setMaxDeliveryAttemptsUndefined: Self = StObject.set(x, "maxDeliveryAttempts", js.undefined)
+    inline def setMaxDeliveryAttemptsUndefined: Self = StObject.set(x, "maxDeliveryAttempts", js.undefined)
   }
 }

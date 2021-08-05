@@ -24,8 +24,7 @@ trait SmsEncodedLength extends StObject {
 }
 object SmsEncodedLength {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     byteCountLastSegment: Double,
     bytesPerSegment: Double,
     characterCountLastSegment: Double,
@@ -36,22 +35,16 @@ object SmsEncodedLength {
     __obj.asInstanceOf[SmsEncodedLength]
   }
   
-  @scala.inline
-  implicit class SmsEncodedLengthMutableBuilder[Self <: SmsEncodedLength] (val x: Self) extends AnyVal {
+  extension [Self <: SmsEncodedLength](x: Self) {
     
-    @scala.inline
-    def setByteCountLastSegment(value: Double): Self = StObject.set(x, "byteCountLastSegment", value.asInstanceOf[js.Any])
+    inline def setByteCountLastSegment(value: Double): Self = StObject.set(x, "byteCountLastSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesPerSegment(value: Double): Self = StObject.set(x, "bytesPerSegment", value.asInstanceOf[js.Any])
+    inline def setBytesPerSegment(value: Double): Self = StObject.set(x, "bytesPerSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterCountLastSegment(value: Double): Self = StObject.set(x, "characterCountLastSegment", value.asInstanceOf[js.Any])
+    inline def setCharacterCountLastSegment(value: Double): Self = StObject.set(x, "characterCountLastSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharactersPerSegment(value: Double): Self = StObject.set(x, "charactersPerSegment", value.asInstanceOf[js.Any])
+    inline def setCharactersPerSegment(value: Double): Self = StObject.set(x, "charactersPerSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentCount(value: Double): Self = StObject.set(x, "segmentCount", value.asInstanceOf[js.Any])
+    inline def setSegmentCount(value: Double): Self = StObject.set(x, "segmentCount", value.asInstanceOf[js.Any])
   }
 }

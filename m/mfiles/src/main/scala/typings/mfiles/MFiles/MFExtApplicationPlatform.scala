@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFExtApplicationPlatform extends StObject
 object MFExtApplicationPlatform {
   
-  @scala.inline
-  def Desktop: `1` = 1.asInstanceOf[`1`]
+  inline def Desktop: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Web: `2` = 2.asInstanceOf[`2`]
+  inline def Web: `2` = 2.asInstanceOf[`2`]
 }

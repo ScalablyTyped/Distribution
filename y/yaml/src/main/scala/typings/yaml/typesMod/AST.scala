@@ -103,50 +103,36 @@ object AST {
   }
   object NodeToJsonContext {
     
-    @scala.inline
-    def apply(doc: Document): NodeToJsonContext = {
+    inline def apply(doc: Document): NodeToJsonContext = {
       val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeToJsonContext]
     }
     
-    @scala.inline
-    implicit class NodeToJsonContextMutableBuilder[Self <: NodeToJsonContext] (val x: Self) extends AnyVal {
+    extension [Self <: NodeToJsonContext](x: Self) {
       
-      @scala.inline
-      def setAnchors(value: js.Array[js.Any]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
+      inline def setAnchors(value: js.Array[js.Any]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)
+      inline def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)
       
-      @scala.inline
-      def setAnchorsVarargs(value: js.Any*): Self = StObject.set(x, "anchors", js.Array(value :_*))
+      inline def setAnchorsVarargs(value: js.Any*): Self = StObject.set(x, "anchors", js.Array(value :_*))
       
-      @scala.inline
-      def setDoc(value: Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+      inline def setDoc(value: Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
+      inline def setKeep(value: Boolean): Self = StObject.set(x, "keep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
+      inline def setKeepUndefined: Self = StObject.set(x, "keep", js.undefined)
       
-      @scala.inline
-      def setMapAsMap(value: Boolean): Self = StObject.set(x, "mapAsMap", value.asInstanceOf[js.Any])
+      inline def setMapAsMap(value: Boolean): Self = StObject.set(x, "mapAsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapAsMapUndefined: Self = StObject.set(x, "mapAsMap", js.undefined)
+      inline def setMapAsMapUndefined: Self = StObject.set(x, "mapAsMap", js.undefined)
       
-      @scala.inline
-      def setMaxAliasCount(value: Double): Self = StObject.set(x, "maxAliasCount", value.asInstanceOf[js.Any])
+      inline def setMaxAliasCount(value: Double): Self = StObject.set(x, "maxAliasCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAliasCountUndefined: Self = StObject.set(x, "maxAliasCount", js.undefined)
+      inline def setMaxAliasCountUndefined: Self = StObject.set(x, "maxAliasCount", js.undefined)
       
-      @scala.inline
-      def setOnCreate(value: /* node */ Node => Unit): Self = StObject.set(x, "onCreate", js.Any.fromFunction1(value))
+      inline def setOnCreate(value: /* node */ Node => Unit): Self = StObject.set(x, "onCreate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
+      inline def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
     }
   }
   

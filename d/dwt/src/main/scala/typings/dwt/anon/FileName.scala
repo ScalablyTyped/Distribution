@@ -48,55 +48,39 @@ trait FileName extends StObject {
 }
 object FileName {
   
-  @scala.inline
-  def apply(): FileName = {
+  inline def apply(): FileName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileName]
   }
   
-  @scala.inline
-  implicit class FileNameMutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
+  extension [Self <: FileName](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFormFields(value: js.Any): Self = StObject.set(x, "formFields", value.asInstanceOf[js.Any])
+    inline def setFormFields(value: js.Any): Self = StObject.set(x, "formFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormFieldsUndefined: Self = StObject.set(x, "formFields", js.undefined)
+    inline def setFormFieldsUndefined: Self = StObject.set(x, "formFields", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMaxSizeLimit(value: Double): Self = StObject.set(x, "maxSizeLimit", value.asInstanceOf[js.Any])
+    inline def setMaxSizeLimit(value: Double): Self = StObject.set(x, "maxSizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeLimitUndefined: Self = StObject.set(x, "maxSizeLimit", js.undefined)
+    inline def setMaxSizeLimitUndefined: Self = StObject.set(x, "maxSizeLimit", js.undefined)
     
-    @scala.inline
-    def setRemoteName(value: String): Self = StObject.set(x, "remoteName", value.asInstanceOf[js.Any])
+    inline def setRemoteName(value: String): Self = StObject.set(x, "remoteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteNameUndefined: Self = StObject.set(x, "remoteName", js.undefined)
+    inline def setRemoteNameUndefined: Self = StObject.set(x, "remoteName", js.undefined)
     
-    @scala.inline
-    def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+    inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+    inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

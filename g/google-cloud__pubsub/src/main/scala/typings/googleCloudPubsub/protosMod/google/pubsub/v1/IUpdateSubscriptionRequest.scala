@@ -16,31 +16,23 @@ trait IUpdateSubscriptionRequest extends StObject {
 }
 object IUpdateSubscriptionRequest {
   
-  @scala.inline
-  def apply(): IUpdateSubscriptionRequest = {
+  inline def apply(): IUpdateSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpdateSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class IUpdateSubscriptionRequestMutableBuilder[Self <: IUpdateSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setSubscription(value: ISubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: ISubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    inline def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

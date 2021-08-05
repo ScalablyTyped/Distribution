@@ -12,8 +12,7 @@ trait BatchNotificationOperation extends StObject {
 }
 object BatchNotificationOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     notificationOperation: NotificationOperation,
     notificationQueryConditions: js.Array[NotificationQueryCondition]
   ): BatchNotificationOperation = {
@@ -21,16 +20,12 @@ object BatchNotificationOperation {
     __obj.asInstanceOf[BatchNotificationOperation]
   }
   
-  @scala.inline
-  implicit class BatchNotificationOperationMutableBuilder[Self <: BatchNotificationOperation] (val x: Self) extends AnyVal {
+  extension [Self <: BatchNotificationOperation](x: Self) {
     
-    @scala.inline
-    def setNotificationOperation(value: NotificationOperation): Self = StObject.set(x, "notificationOperation", value.asInstanceOf[js.Any])
+    inline def setNotificationOperation(value: NotificationOperation): Self = StObject.set(x, "notificationOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationQueryConditions(value: js.Array[NotificationQueryCondition]): Self = StObject.set(x, "notificationQueryConditions", value.asInstanceOf[js.Any])
+    inline def setNotificationQueryConditions(value: js.Array[NotificationQueryCondition]): Self = StObject.set(x, "notificationQueryConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationQueryConditionsVarargs(value: NotificationQueryCondition*): Self = StObject.set(x, "notificationQueryConditions", js.Array(value :_*))
+    inline def setNotificationQueryConditionsVarargs(value: NotificationQueryCondition*): Self = StObject.set(x, "notificationQueryConditions", js.Array(value :_*))
   }
 }

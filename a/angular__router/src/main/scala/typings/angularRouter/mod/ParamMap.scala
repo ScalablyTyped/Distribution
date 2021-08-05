@@ -36,8 +36,7 @@ trait ParamMap extends StObject {
 }
 object ParamMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: String => String | Null,
     getAll: String => js.Array[String],
     has: String => Boolean,
@@ -47,22 +46,16 @@ object ParamMap {
     __obj.asInstanceOf[ParamMap]
   }
   
-  @scala.inline
-  implicit class ParamMapMutableBuilder[Self <: ParamMap] (val x: Self) extends AnyVal {
+  extension [Self <: ParamMap](x: Self) {
     
-    @scala.inline
-    def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAll(value: String => js.Array[String]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
+    inline def setGetAll(value: String => js.Array[String]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

@@ -67,21 +67,16 @@ object deploymentConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeploymentConfigState): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeploymentConfigState, opts: CustomResourceOptions): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
+    inline def get(name: String, id: Input[ID]): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
+    inline def get(name: String, id: Input[ID], state: DeploymentConfigState): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
+    inline def get(name: String, id: Input[ID], state: DeploymentConfigState, opts: CustomResourceOptions): DeploymentConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentConfig]
     
     /**
       * Returns true if the given object is an instance of DeploymentConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ Boolean]
   }
   
   trait DeploymentConfigArgs extends StObject {
@@ -110,35 +105,26 @@ object deploymentConfigMod {
   }
   object DeploymentConfigArgs {
     
-    @scala.inline
-    def apply(deploymentConfigName: Input[String]): DeploymentConfigArgs = {
+    inline def apply(deploymentConfigName: Input[String]): DeploymentConfigArgs = {
       val __obj = js.Dynamic.literal(deploymentConfigName = deploymentConfigName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeploymentConfigArgs]
     }
     
-    @scala.inline
-    implicit class DeploymentConfigArgsMutableBuilder[Self <: DeploymentConfigArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentConfigArgs](x: Self) {
       
-      @scala.inline
-      def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+      inline def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+      inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
       
-      @scala.inline
-      def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
+      inline def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumHealthyHosts(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]): Self = StObject.set(x, "minimumHealthyHosts", value.asInstanceOf[js.Any])
+      inline def setMinimumHealthyHosts(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]): Self = StObject.set(x, "minimumHealthyHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumHealthyHostsUndefined: Self = StObject.set(x, "minimumHealthyHosts", js.undefined)
+      inline def setMinimumHealthyHostsUndefined: Self = StObject.set(x, "minimumHealthyHosts", js.undefined)
       
-      @scala.inline
-      def setTrafficRoutingConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigTrafficRoutingConfig]): Self = StObject.set(x, "trafficRoutingConfig", value.asInstanceOf[js.Any])
+      inline def setTrafficRoutingConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigTrafficRoutingConfig]): Self = StObject.set(x, "trafficRoutingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrafficRoutingConfigUndefined: Self = StObject.set(x, "trafficRoutingConfig", js.undefined)
+      inline def setTrafficRoutingConfigUndefined: Self = StObject.set(x, "trafficRoutingConfig", js.undefined)
     }
   }
   
@@ -173,44 +159,32 @@ object deploymentConfigMod {
   }
   object DeploymentConfigState {
     
-    @scala.inline
-    def apply(): DeploymentConfigState = {
+    inline def apply(): DeploymentConfigState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeploymentConfigState]
     }
     
-    @scala.inline
-    implicit class DeploymentConfigStateMutableBuilder[Self <: DeploymentConfigState] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentConfigState](x: Self) {
       
-      @scala.inline
-      def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
+      inline def setComputePlatform(value: Input[String]): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
+      inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
       
-      @scala.inline
-      def setDeploymentConfigId(value: Input[String]): Self = StObject.set(x, "deploymentConfigId", value.asInstanceOf[js.Any])
+      inline def setDeploymentConfigId(value: Input[String]): Self = StObject.set(x, "deploymentConfigId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentConfigIdUndefined: Self = StObject.set(x, "deploymentConfigId", js.undefined)
+      inline def setDeploymentConfigIdUndefined: Self = StObject.set(x, "deploymentConfigId", js.undefined)
       
-      @scala.inline
-      def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
+      inline def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
+      inline def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
       
-      @scala.inline
-      def setMinimumHealthyHosts(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]): Self = StObject.set(x, "minimumHealthyHosts", value.asInstanceOf[js.Any])
+      inline def setMinimumHealthyHosts(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigMinimumHealthyHosts]): Self = StObject.set(x, "minimumHealthyHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumHealthyHostsUndefined: Self = StObject.set(x, "minimumHealthyHosts", js.undefined)
+      inline def setMinimumHealthyHostsUndefined: Self = StObject.set(x, "minimumHealthyHosts", js.undefined)
       
-      @scala.inline
-      def setTrafficRoutingConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigTrafficRoutingConfig]): Self = StObject.set(x, "trafficRoutingConfig", value.asInstanceOf[js.Any])
+      inline def setTrafficRoutingConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentConfigTrafficRoutingConfig]): Self = StObject.set(x, "trafficRoutingConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrafficRoutingConfigUndefined: Self = StObject.set(x, "trafficRoutingConfig", js.undefined)
+      inline def setTrafficRoutingConfigUndefined: Self = StObject.set(x, "trafficRoutingConfig", js.undefined)
     }
   }
 }

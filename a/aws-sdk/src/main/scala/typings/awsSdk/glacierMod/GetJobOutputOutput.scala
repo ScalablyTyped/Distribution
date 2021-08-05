@@ -43,55 +43,39 @@ trait GetJobOutputOutput extends StObject {
 }
 object GetJobOutputOutput {
   
-  @scala.inline
-  def apply(): GetJobOutputOutput = {
+  inline def apply(): GetJobOutputOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetJobOutputOutput]
   }
   
-  @scala.inline
-  implicit class GetJobOutputOutputMutableBuilder[Self <: GetJobOutputOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobOutputOutput](x: Self) {
     
-    @scala.inline
-    def setAcceptRanges(value: String): Self = StObject.set(x, "acceptRanges", value.asInstanceOf[js.Any])
+    inline def setAcceptRanges(value: String): Self = StObject.set(x, "acceptRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptRangesUndefined: Self = StObject.set(x, "acceptRanges", js.undefined)
+    inline def setAcceptRangesUndefined: Self = StObject.set(x, "acceptRanges", js.undefined)
     
-    @scala.inline
-    def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
+    inline def setArchiveDescription(value: String): Self = StObject.set(x, "archiveDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
+    inline def setArchiveDescriptionUndefined: Self = StObject.set(x, "archiveDescription", js.undefined)
     
-    @scala.inline
-    def setBody(value: Stream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Stream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setContentRange(value: String): Self = StObject.set(x, "contentRange", value.asInstanceOf[js.Any])
+    inline def setContentRange(value: String): Self = StObject.set(x, "contentRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentRangeUndefined: Self = StObject.set(x, "contentRange", js.undefined)
+    inline def setContentRangeUndefined: Self = StObject.set(x, "contentRange", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: httpstatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: httpstatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -16,22 +16,17 @@ trait SchemaListContainersResponse extends StObject {
 }
 object SchemaListContainersResponse {
   
-  @scala.inline
-  def apply(): SchemaListContainersResponse = {
+  inline def apply(): SchemaListContainersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListContainersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListContainersResponseMutableBuilder[Self <: SchemaListContainersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListContainersResponse](x: Self) {
     
-    @scala.inline
-    def setContainers(value: js.Array[SchemaContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+    inline def setContainers(value: js.Array[SchemaContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
+    inline def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
-    @scala.inline
-    def setContainersVarargs(value: SchemaContainer*): Self = StObject.set(x, "containers", js.Array(value :_*))
+    inline def setContainersVarargs(value: SchemaContainer*): Self = StObject.set(x, "containers", js.Array(value :_*))
   }
 }

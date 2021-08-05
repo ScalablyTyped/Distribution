@@ -15,34 +15,25 @@ trait IsOpen extends StObject {
 }
 object IsOpen {
   
-  @scala.inline
-  def apply(): IsOpen = {
+  inline def apply(): IsOpen = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsOpen]
   }
   
-  @scala.inline
-  implicit class IsOpenMutableBuilder[Self <: IsOpen] (val x: Self) extends AnyVal {
+  extension [Self <: IsOpen](x: Self) {
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+    inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
-    @scala.inline
-    def setTileLayer(value: js.Array[TileLayer]): Self = StObject.set(x, "tileLayer", value.asInstanceOf[js.Any])
+    inline def setTileLayer(value: js.Array[TileLayer]): Self = StObject.set(x, "tileLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileLayerUndefined: Self = StObject.set(x, "tileLayer", js.undefined)
+    inline def setTileLayerUndefined: Self = StObject.set(x, "tileLayer", js.undefined)
     
-    @scala.inline
-    def setTileLayerVarargs(value: TileLayer*): Self = StObject.set(x, "tileLayer", js.Array(value :_*))
+    inline def setTileLayerVarargs(value: TileLayer*): Self = StObject.set(x, "tileLayer", js.Array(value :_*))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

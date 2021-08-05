@@ -23,25 +23,19 @@ trait DNISEmergencyCallingConfiguration extends StObject {
 }
 object DNISEmergencyCallingConfiguration {
   
-  @scala.inline
-  def apply(CallingCountry: Alpha2CountryCode, EmergencyPhoneNumber: E164PhoneNumber): DNISEmergencyCallingConfiguration = {
+  inline def apply(CallingCountry: Alpha2CountryCode, EmergencyPhoneNumber: E164PhoneNumber): DNISEmergencyCallingConfiguration = {
     val __obj = js.Dynamic.literal(CallingCountry = CallingCountry.asInstanceOf[js.Any], EmergencyPhoneNumber = EmergencyPhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DNISEmergencyCallingConfiguration]
   }
   
-  @scala.inline
-  implicit class DNISEmergencyCallingConfigurationMutableBuilder[Self <: DNISEmergencyCallingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DNISEmergencyCallingConfiguration](x: Self) {
     
-    @scala.inline
-    def setCallingCountry(value: Alpha2CountryCode): Self = StObject.set(x, "CallingCountry", value.asInstanceOf[js.Any])
+    inline def setCallingCountry(value: Alpha2CountryCode): Self = StObject.set(x, "CallingCountry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmergencyPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "EmergencyPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setEmergencyPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "EmergencyPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "TestPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setTestPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "TestPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPhoneNumberUndefined: Self = StObject.set(x, "TestPhoneNumber", js.undefined)
+    inline def setTestPhoneNumberUndefined: Self = StObject.set(x, "TestPhoneNumber", js.undefined)
   }
 }

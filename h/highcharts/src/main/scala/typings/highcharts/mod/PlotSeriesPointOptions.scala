@@ -13,19 +13,15 @@ trait PlotSeriesPointOptions extends StObject {
 }
 object PlotSeriesPointOptions {
   
-  @scala.inline
-  def apply(): PlotSeriesPointOptions = {
+  inline def apply(): PlotSeriesPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSeriesPointOptions]
   }
   
-  @scala.inline
-  implicit class PlotSeriesPointOptionsMutableBuilder[Self <: PlotSeriesPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSeriesPointOptions](x: Self) {
     
-    @scala.inline
-    def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

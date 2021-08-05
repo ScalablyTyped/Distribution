@@ -46,43 +46,31 @@ trait WebviewOptions extends StObject {
 }
 object WebviewOptions {
   
-  @scala.inline
-  def apply(): WebviewOptions = {
+  inline def apply(): WebviewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebviewOptions]
   }
   
-  @scala.inline
-  implicit class WebviewOptionsMutableBuilder[Self <: WebviewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebviewOptions](x: Self) {
     
-    @scala.inline
-    def setEnableCommandUris(value: Boolean): Self = StObject.set(x, "enableCommandUris", value.asInstanceOf[js.Any])
+    inline def setEnableCommandUris(value: Boolean): Self = StObject.set(x, "enableCommandUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableCommandUrisUndefined: Self = StObject.set(x, "enableCommandUris", js.undefined)
+    inline def setEnableCommandUrisUndefined: Self = StObject.set(x, "enableCommandUris", js.undefined)
     
-    @scala.inline
-    def setEnableScripts(value: Boolean): Self = StObject.set(x, "enableScripts", value.asInstanceOf[js.Any])
+    inline def setEnableScripts(value: Boolean): Self = StObject.set(x, "enableScripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableScriptsUndefined: Self = StObject.set(x, "enableScripts", js.undefined)
+    inline def setEnableScriptsUndefined: Self = StObject.set(x, "enableScripts", js.undefined)
     
-    @scala.inline
-    def setLocalResourceRoots(value: js.Array[Uri]): Self = StObject.set(x, "localResourceRoots", value.asInstanceOf[js.Any])
+    inline def setLocalResourceRoots(value: js.Array[Uri]): Self = StObject.set(x, "localResourceRoots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalResourceRootsUndefined: Self = StObject.set(x, "localResourceRoots", js.undefined)
+    inline def setLocalResourceRootsUndefined: Self = StObject.set(x, "localResourceRoots", js.undefined)
     
-    @scala.inline
-    def setLocalResourceRootsVarargs(value: Uri*): Self = StObject.set(x, "localResourceRoots", js.Array(value :_*))
+    inline def setLocalResourceRootsVarargs(value: Uri*): Self = StObject.set(x, "localResourceRoots", js.Array(value :_*))
     
-    @scala.inline
-    def setPortMapping(value: js.Array[WebviewPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
+    inline def setPortMapping(value: js.Array[WebviewPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortMappingUndefined: Self = StObject.set(x, "portMapping", js.undefined)
+    inline def setPortMappingUndefined: Self = StObject.set(x, "portMapping", js.undefined)
     
-    @scala.inline
-    def setPortMappingVarargs(value: WebviewPortMapping*): Self = StObject.set(x, "portMapping", js.Array(value :_*))
+    inline def setPortMappingVarargs(value: WebviewPortMapping*): Self = StObject.set(x, "portMapping", js.Array(value :_*))
   }
 }

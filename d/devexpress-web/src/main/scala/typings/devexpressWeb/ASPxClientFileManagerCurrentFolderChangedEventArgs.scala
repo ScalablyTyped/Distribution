@@ -23,19 +23,15 @@ trait ASPxClientFileManagerCurrentFolderChangedEventArgs
 }
 object ASPxClientFileManagerCurrentFolderChangedEventArgs {
   
-  @scala.inline
-  def apply(fullName: String, name: String): ASPxClientFileManagerCurrentFolderChangedEventArgs = {
+  inline def apply(fullName: String, name: String): ASPxClientFileManagerCurrentFolderChangedEventArgs = {
     val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerCurrentFolderChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerCurrentFolderChangedEventArgsMutableBuilder[Self <: ASPxClientFileManagerCurrentFolderChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerCurrentFolderChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

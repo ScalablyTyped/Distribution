@@ -30,8 +30,7 @@ object pluginToObjectMod extends Shortcut {
   }
   object DayjsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: Double,
       hours: Double,
       milliseconds: Double,
@@ -44,29 +43,21 @@ object pluginToObjectMod extends Shortcut {
       __obj.asInstanceOf[DayjsObject]
     }
     
-    @scala.inline
-    implicit class DayjsObjectMutableBuilder[Self <: DayjsObject] (val x: Self) extends AnyVal {
+    extension [Self <: DayjsObject](x: Self) {
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+      inline def setYears(value: Double): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,17 +75,14 @@ object pluginToObjectMod extends Shortcut {
     }
     object Dayjs {
       
-      @scala.inline
-      def apply(toObject: () => DayjsObject): Dayjs = {
+      inline def apply(toObject: () => DayjsObject): Dayjs = {
         val __obj = js.Dynamic.literal(toObject = js.Any.fromFunction0(toObject))
         __obj.asInstanceOf[Dayjs]
       }
       
-      @scala.inline
-      implicit class DayjsMutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
+      extension [Self <: Dayjs](x: Self) {
         
-        @scala.inline
-        def setToObject(value: () => DayjsObject): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+        inline def setToObject(value: () => DayjsObject): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
       }
     }
   }

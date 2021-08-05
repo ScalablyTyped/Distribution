@@ -36,40 +36,29 @@ trait SchemaAuthenticationRule extends StObject {
 }
 object SchemaAuthenticationRule {
   
-  @scala.inline
-  def apply(): SchemaAuthenticationRule = {
+  inline def apply(): SchemaAuthenticationRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthenticationRule]
   }
   
-  @scala.inline
-  implicit class SchemaAuthenticationRuleMutableBuilder[Self <: SchemaAuthenticationRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthenticationRule](x: Self) {
     
-    @scala.inline
-    def setAllowWithoutCredential(value: Boolean): Self = StObject.set(x, "allowWithoutCredential", value.asInstanceOf[js.Any])
+    inline def setAllowWithoutCredential(value: Boolean): Self = StObject.set(x, "allowWithoutCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowWithoutCredentialUndefined: Self = StObject.set(x, "allowWithoutCredential", js.undefined)
+    inline def setAllowWithoutCredentialUndefined: Self = StObject.set(x, "allowWithoutCredential", js.undefined)
     
-    @scala.inline
-    def setOauth(value: SchemaOAuthRequirements): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
+    inline def setOauth(value: SchemaOAuthRequirements): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
+    inline def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
     
-    @scala.inline
-    def setRequirements(value: js.Array[SchemaAuthRequirement]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
+    inline def setRequirements(value: js.Array[SchemaAuthRequirement]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
+    inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
-    @scala.inline
-    def setRequirementsVarargs(value: SchemaAuthRequirement*): Self = StObject.set(x, "requirements", js.Array(value :_*))
+    inline def setRequirementsVarargs(value: SchemaAuthRequirement*): Self = StObject.set(x, "requirements", js.Array(value :_*))
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

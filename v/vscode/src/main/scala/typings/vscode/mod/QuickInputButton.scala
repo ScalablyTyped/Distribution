@@ -19,22 +19,17 @@ trait QuickInputButton extends StObject {
 }
 object QuickInputButton {
   
-  @scala.inline
-  def apply(iconPath: Uri | Dark | ThemeIcon): QuickInputButton = {
+  inline def apply(iconPath: Uri | Dark | ThemeIcon): QuickInputButton = {
     val __obj = js.Dynamic.literal(iconPath = iconPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuickInputButton]
   }
   
-  @scala.inline
-  implicit class QuickInputButtonMutableBuilder[Self <: QuickInputButton] (val x: Self) extends AnyVal {
+  extension [Self <: QuickInputButton](x: Self) {
     
-    @scala.inline
-    def setIconPath(value: Uri | Dark | ThemeIcon): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: Uri | Dark | ThemeIcon): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

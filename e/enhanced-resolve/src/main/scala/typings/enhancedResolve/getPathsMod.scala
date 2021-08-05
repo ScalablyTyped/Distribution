@@ -11,9 +11,7 @@ object getPathsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: String): Paths = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Paths]
+  inline def default(path: String): Paths = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Paths]
   
-  @scala.inline
-  def basename(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def basename(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("basename")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

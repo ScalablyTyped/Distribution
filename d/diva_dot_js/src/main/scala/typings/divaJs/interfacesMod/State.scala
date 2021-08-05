@@ -24,8 +24,7 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     f: Boolean,
     i: Boolean | String,
     n: Double,
@@ -39,31 +38,22 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setF(value: Boolean): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: Boolean): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI(value: Boolean | String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+    inline def setI(value: Boolean | String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: Boolean | Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Boolean | Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Boolean | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Boolean | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Boolean | Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Boolean | Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

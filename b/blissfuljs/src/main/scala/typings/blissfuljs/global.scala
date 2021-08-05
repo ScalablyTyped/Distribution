@@ -12,19 +12,16 @@ object global {
   @js.native
   def $: BlissStaticCollection = js.native
   
-  @scala.inline
-  def $_=(x: BlissStaticCollection): Unit = js.Dynamic.global.updateDynamic("$$")(x.asInstanceOf[js.Any])
+  inline def $_=(x: BlissStaticCollection): Unit = js.Dynamic.global.updateDynamic("$$")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Bliss")
   @js.native
   def Bliss: BlissStatic = js.native
-  @scala.inline
-  def Bliss_=(x: BlissStatic): Unit = js.Dynamic.global.updateDynamic("Bliss")(x.asInstanceOf[js.Any])
+  inline def Bliss_=(x: BlissStatic): Unit = js.Dynamic.global.updateDynamic("Bliss")(x.asInstanceOf[js.Any])
   
   @JSGlobal("$")
   @js.native
   def _empty: BlissStatic = js.native
   
-  @scala.inline
-  def _empty_=(x: BlissStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
+  inline def _empty_=(x: BlissStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
 }

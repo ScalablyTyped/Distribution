@@ -33,8 +33,7 @@ trait Script
 }
 object Script {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -66,16 +65,12 @@ object Script {
     __obj.asInstanceOf[Script]
   }
   
-  @scala.inline
-  implicit class ScriptMutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
+  extension [Self <: Script](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptType(value: String): Self = StObject.set(x, "ScriptType", value.asInstanceOf[js.Any])
+    inline def setScriptType(value: String): Self = StObject.set(x, "ScriptType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURLContent(value: Boolean): Self = StObject.set(x, "URLContent", value.asInstanceOf[js.Any])
+    inline def setURLContent(value: Boolean): Self = StObject.set(x, "URLContent", value.asInstanceOf[js.Any])
   }
 }

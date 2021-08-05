@@ -18,8 +18,7 @@ trait ImportDeclaration
 }
 object ImportDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     source: Literal,
     specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]
   ): ImportDeclaration = {
@@ -28,19 +27,14 @@ object ImportDeclaration {
     __obj.asInstanceOf[ImportDeclaration]
   }
   
-  @scala.inline
-  implicit class ImportDeclarationMutableBuilder[Self <: ImportDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: ImportDeclaration](x: Self) {
     
-    @scala.inline
-    def setSource(value: Literal): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Literal): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecifiers(value: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
+    inline def setSpecifiers(value: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecifiersVarargs(value: (ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+    inline def setSpecifiersVarargs(value: (ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ImportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ImportDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

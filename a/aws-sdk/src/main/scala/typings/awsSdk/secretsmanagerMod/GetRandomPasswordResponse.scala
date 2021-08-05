@@ -13,19 +13,15 @@ trait GetRandomPasswordResponse extends StObject {
 }
 object GetRandomPasswordResponse {
   
-  @scala.inline
-  def apply(): GetRandomPasswordResponse = {
+  inline def apply(): GetRandomPasswordResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRandomPasswordResponse]
   }
   
-  @scala.inline
-  implicit class GetRandomPasswordResponseMutableBuilder[Self <: GetRandomPasswordResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRandomPasswordResponse](x: Self) {
     
-    @scala.inline
-    def setRandomPassword(value: RandomPasswordType): Self = StObject.set(x, "RandomPassword", value.asInstanceOf[js.Any])
+    inline def setRandomPassword(value: RandomPasswordType): Self = StObject.set(x, "RandomPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomPasswordUndefined: Self = StObject.set(x, "RandomPassword", js.undefined)
+    inline def setRandomPasswordUndefined: Self = StObject.set(x, "RandomPassword", js.undefined)
   }
 }

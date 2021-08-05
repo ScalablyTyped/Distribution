@@ -13,19 +13,15 @@ trait IdCheckSecurityStep extends StObject {
 }
 object IdCheckSecurityStep {
   
-  @scala.inline
-  def apply(): IdCheckSecurityStep = {
+  inline def apply(): IdCheckSecurityStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdCheckSecurityStep]
   }
   
-  @scala.inline
-  implicit class IdCheckSecurityStepMutableBuilder[Self <: IdCheckSecurityStep] (val x: Self) extends AnyVal {
+  extension [Self <: IdCheckSecurityStep](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
+    inline def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
   }
 }

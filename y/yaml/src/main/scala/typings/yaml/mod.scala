@@ -167,60 +167,43 @@ object mod {
     }
     object TagPrefix {
       
-      @scala.inline
-      def apply(handle: String, prefix: String): TagPrefix = {
+      inline def apply(handle: String, prefix: String): TagPrefix = {
         val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
         __obj.asInstanceOf[TagPrefix]
       }
       
-      @scala.inline
-      implicit class TagPrefixMutableBuilder[Self <: TagPrefix] (val x: Self) extends AnyVal {
+      extension [Self <: TagPrefix](x: Self) {
         
-        @scala.inline
-        def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+        inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @scala.inline
-  def createNode(value: js.Any): YAMLMap | YAMLSeq | Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any]).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
-  @scala.inline
-  def createNode(value: js.Any, wrapScalars: Unit, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
+  inline def createNode(value: js.Any): YAMLMap | YAMLSeq | Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any]).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
+  inline def createNode(value: js.Any, wrapScalars: Unit, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
   
-  @scala.inline
-  def createNode_false(value: js.Any, wrapScalars: `false`): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
-  @scala.inline
-  def createNode_false(value: js.Any, wrapScalars: `false`, tag: String): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
+  inline def createNode_false(value: js.Any, wrapScalars: `false`): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
+  inline def createNode_false(value: js.Any, wrapScalars: `false`, tag: String): YAMLMap | YAMLSeq | String | Double | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | String | Double | Boolean | Null]
   
-  @scala.inline
-  def createNode_true(value: js.Any, wrapScalars: `true`): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
-  @scala.inline
-  def createNode_true(value: js.Any, wrapScalars: `true`, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
+  inline def createNode_true(value: js.Any, wrapScalars: `true`): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
+  inline def createNode_true(value: js.Any, wrapScalars: `true`, tag: String): YAMLMap | YAMLSeq | Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("createNode")(value.asInstanceOf[js.Any], wrapScalars.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[YAMLMap | YAMLSeq | Scalar]
   
   @JSImport("yaml", "defaultOptions")
   @js.native
   val defaultOptions: Options = js.native
   
-  @scala.inline
-  def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def parse(str: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parse(str: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseAllDocuments(str: String): js.Array[Parsed] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Parsed]]
-  @scala.inline
-  def parseAllDocuments(str: String, options: Options): js.Array[Parsed] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Parsed]]
+  inline def parseAllDocuments(str: String): js.Array[Parsed] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Parsed]]
+  inline def parseAllDocuments(str: String, options: Options): js.Array[Parsed] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllDocuments")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Parsed]]
   
-  @scala.inline
-  def parseCST(str: String): ParsedCST = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCST")(str.asInstanceOf[js.Any]).asInstanceOf[ParsedCST]
+  inline def parseCST(str: String): ParsedCST = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCST")(str.asInstanceOf[js.Any]).asInstanceOf[ParsedCST]
   
-  @scala.inline
-  def parseDocument(str: String): Parsed = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any]).asInstanceOf[Parsed]
-  @scala.inline
-  def parseDocument(str: String, options: Options): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parsed]
+  inline def parseDocument(str: String): Parsed = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any]).asInstanceOf[Parsed]
+  inline def parseDocument(str: String, options: Options): Parsed = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parsed]
   
   object scalarOptions {
     
@@ -231,20 +214,17 @@ object mod {
     @JSImport("yaml", "scalarOptions.binary")
     @js.native
     def binary: Binary = js.native
-    @scala.inline
-    def binary_=(x: Binary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("binary")(x.asInstanceOf[js.Any])
+    inline def binary_=(x: Binary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("binary")(x.asInstanceOf[js.Any])
     
     @JSImport("yaml", "scalarOptions.bool")
     @js.native
     def bool: Bool = js.native
-    @scala.inline
-    def bool_=(x: Bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
+    inline def bool_=(x: Bool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
     
     @JSImport("yaml", "scalarOptions.int")
     @js.native
     def int: Int = js.native
-    @scala.inline
-    def int_=(x: Int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
+    inline def int_=(x: Int): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
     
     @JSImport("yaml", "scalarOptions.null")
     @js.native
@@ -253,8 +233,7 @@ object mod {
     @JSImport("yaml", "scalarOptions.str")
     @js.native
     def str: Str = js.native
-    @scala.inline
-    def str_=(x: Str): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("str")(x.asInstanceOf[js.Any])
+    inline def str_=(x: Str): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("str")(x.asInstanceOf[js.Any])
     
     trait Binary extends StObject {
       
@@ -274,20 +253,16 @@ object mod {
     }
     object Binary {
       
-      @scala.inline
-      def apply(defaultType: Type, lineWidth: Double): Binary = {
+      inline def apply(defaultType: Type, lineWidth: Double): Binary = {
         val __obj = js.Dynamic.literal(defaultType = defaultType.asInstanceOf[js.Any], lineWidth = lineWidth.asInstanceOf[js.Any])
         __obj.asInstanceOf[Binary]
       }
       
-      @scala.inline
-      implicit class BinaryMutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
+      extension [Self <: Binary](x: Self) {
         
-        @scala.inline
-        def setDefaultType(value: Type): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
+        inline def setDefaultType(value: Type): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+        inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       }
     }
     
@@ -309,20 +284,16 @@ object mod {
     }
     object Bool {
       
-      @scala.inline
-      def apply(falseStr: String, trueStr: String): Bool = {
+      inline def apply(falseStr: String, trueStr: String): Bool = {
         val __obj = js.Dynamic.literal(falseStr = falseStr.asInstanceOf[js.Any], trueStr = trueStr.asInstanceOf[js.Any])
         __obj.asInstanceOf[Bool]
       }
       
-      @scala.inline
-      implicit class BoolMutableBuilder[Self <: Bool] (val x: Self) extends AnyVal {
+      extension [Self <: Bool](x: Self) {
         
-        @scala.inline
-        def setFalseStr(value: String): Self = StObject.set(x, "falseStr", value.asInstanceOf[js.Any])
+        inline def setFalseStr(value: String): Self = StObject.set(x, "falseStr", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrueStr(value: String): Self = StObject.set(x, "trueStr", value.asInstanceOf[js.Any])
+        inline def setTrueStr(value: String): Self = StObject.set(x, "trueStr", value.asInstanceOf[js.Any])
       }
     }
     
@@ -337,17 +308,14 @@ object mod {
     }
     object Int {
       
-      @scala.inline
-      def apply(): Int = {
+      inline def apply(): Int = {
         val __obj = js.Dynamic.literal(asBigInt = false)
         __obj.asInstanceOf[Int]
       }
       
-      @scala.inline
-      implicit class IntMutableBuilder[Self <: Int] (val x: Self) extends AnyVal {
+      extension [Self <: Int](x: Self) {
         
-        @scala.inline
-        def setAsBigInt(value: `false`): Self = StObject.set(x, "asBigInt", value.asInstanceOf[js.Any])
+        inline def setAsBigInt(value: `false`): Self = StObject.set(x, "asBigInt", value.asInstanceOf[js.Any])
       }
     }
     
@@ -362,17 +330,14 @@ object mod {
     }
     object Null {
       
-      @scala.inline
-      def apply(nullStr: String): typings.yaml.mod.scalarOptions.Null = {
+      inline def apply(nullStr: String): typings.yaml.mod.scalarOptions.Null = {
         val __obj = js.Dynamic.literal(nullStr = nullStr.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.yaml.mod.scalarOptions.Null]
       }
       
-      @scala.inline
-      implicit class NullMutableBuilder[Self <: typings.yaml.mod.scalarOptions.Null] (val x: Self) extends AnyVal {
+      extension [Self <: typings.yaml.mod.scalarOptions.Null](x: Self) {
         
-        @scala.inline
-        def setNullStr(value: String): Self = StObject.set(x, "nullStr", value.asInstanceOf[js.Any])
+        inline def setNullStr(value: String): Self = StObject.set(x, "nullStr", value.asInstanceOf[js.Any])
       }
     }
     
@@ -391,31 +356,24 @@ object mod {
     }
     object Str {
       
-      @scala.inline
-      def apply(defaultType: Type, doubleQuoted: JsonEncoding, fold: LineWidth): Str = {
+      inline def apply(defaultType: Type, doubleQuoted: JsonEncoding, fold: LineWidth): Str = {
         val __obj = js.Dynamic.literal(defaultType = defaultType.asInstanceOf[js.Any], doubleQuoted = doubleQuoted.asInstanceOf[js.Any], fold = fold.asInstanceOf[js.Any])
         __obj.asInstanceOf[Str]
       }
       
-      @scala.inline
-      implicit class StrMutableBuilder[Self <: Str] (val x: Self) extends AnyVal {
+      extension [Self <: Str](x: Self) {
         
-        @scala.inline
-        def setDefaultType(value: Type): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
+        inline def setDefaultType(value: Type): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDoubleQuoted(value: JsonEncoding): Self = StObject.set(x, "doubleQuoted", value.asInstanceOf[js.Any])
+        inline def setDoubleQuoted(value: JsonEncoding): Self = StObject.set(x, "doubleQuoted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFold(value: LineWidth): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
+        inline def setFold(value: LineWidth): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @scala.inline
-  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: js.Any, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait Options
     extends StObject
@@ -502,80 +460,56 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnchorPrefix(value: String): Self = StObject.set(x, "anchorPrefix", value.asInstanceOf[js.Any])
+      inline def setAnchorPrefix(value: String): Self = StObject.set(x, "anchorPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorPrefixUndefined: Self = StObject.set(x, "anchorPrefix", js.undefined)
+      inline def setAnchorPrefixUndefined: Self = StObject.set(x, "anchorPrefix", js.undefined)
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentSeq(value: Boolean): Self = StObject.set(x, "indentSeq", value.asInstanceOf[js.Any])
+      inline def setIndentSeq(value: Boolean): Self = StObject.set(x, "indentSeq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentSeqUndefined: Self = StObject.set(x, "indentSeq", js.undefined)
+      inline def setIndentSeqUndefined: Self = StObject.set(x, "indentSeq", js.undefined)
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setKeepBlobsInJSON(value: Boolean): Self = StObject.set(x, "keepBlobsInJSON", value.asInstanceOf[js.Any])
+      inline def setKeepBlobsInJSON(value: Boolean): Self = StObject.set(x, "keepBlobsInJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepBlobsInJSONUndefined: Self = StObject.set(x, "keepBlobsInJSON", js.undefined)
+      inline def setKeepBlobsInJSONUndefined: Self = StObject.set(x, "keepBlobsInJSON", js.undefined)
       
-      @scala.inline
-      def setKeepCstNodes(value: Boolean): Self = StObject.set(x, "keepCstNodes", value.asInstanceOf[js.Any])
+      inline def setKeepCstNodes(value: Boolean): Self = StObject.set(x, "keepCstNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepCstNodesUndefined: Self = StObject.set(x, "keepCstNodes", js.undefined)
+      inline def setKeepCstNodesUndefined: Self = StObject.set(x, "keepCstNodes", js.undefined)
       
-      @scala.inline
-      def setKeepNodeTypes(value: Boolean): Self = StObject.set(x, "keepNodeTypes", value.asInstanceOf[js.Any])
+      inline def setKeepNodeTypes(value: Boolean): Self = StObject.set(x, "keepNodeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepNodeTypesUndefined: Self = StObject.set(x, "keepNodeTypes", js.undefined)
+      inline def setKeepNodeTypesUndefined: Self = StObject.set(x, "keepNodeTypes", js.undefined)
       
-      @scala.inline
-      def setMapAsMap(value: Boolean): Self = StObject.set(x, "mapAsMap", value.asInstanceOf[js.Any])
+      inline def setMapAsMap(value: Boolean): Self = StObject.set(x, "mapAsMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapAsMapUndefined: Self = StObject.set(x, "mapAsMap", js.undefined)
+      inline def setMapAsMapUndefined: Self = StObject.set(x, "mapAsMap", js.undefined)
       
-      @scala.inline
-      def setMaxAliasCount(value: Double): Self = StObject.set(x, "maxAliasCount", value.asInstanceOf[js.Any])
+      inline def setMaxAliasCount(value: Double): Self = StObject.set(x, "maxAliasCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAliasCountUndefined: Self = StObject.set(x, "maxAliasCount", js.undefined)
+      inline def setMaxAliasCountUndefined: Self = StObject.set(x, "maxAliasCount", js.undefined)
       
-      @scala.inline
-      def setPrettyErrors(value: Boolean): Self = StObject.set(x, "prettyErrors", value.asInstanceOf[js.Any])
+      inline def setPrettyErrors(value: Boolean): Self = StObject.set(x, "prettyErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrettyErrorsUndefined: Self = StObject.set(x, "prettyErrors", js.undefined)
+      inline def setPrettyErrorsUndefined: Self = StObject.set(x, "prettyErrors", js.undefined)
       
-      @scala.inline
-      def setSimpleKeys(value: Boolean): Self = StObject.set(x, "simpleKeys", value.asInstanceOf[js.Any])
+      inline def setSimpleKeys(value: Boolean): Self = StObject.set(x, "simpleKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpleKeysUndefined: Self = StObject.set(x, "simpleKeys", js.undefined)
+      inline def setSimpleKeysUndefined: Self = StObject.set(x, "simpleKeys", js.undefined)
       
-      @scala.inline
-      def setVersion(value: `1Dot0` | `1Dot1` | `1Dot2`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: `1Dot0` | `1Dot1` | `1Dot2`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

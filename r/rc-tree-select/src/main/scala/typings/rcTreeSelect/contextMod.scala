@@ -52,8 +52,7 @@ object contextMod {
   }
   object ContextProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       checkedKeys: js.Array[Key],
       halfCheckedKeys: js.Array[Key],
       loadData: LegacyDataNode => js.Promise[js.Any],
@@ -72,86 +71,59 @@ object contextMod {
       __obj.asInstanceOf[ContextProps]
     }
     
-    @scala.inline
-    implicit class ContextPropsMutableBuilder[Self <: ContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContextProps](x: Self) {
       
-      @scala.inline
-      def setCheckable(value: Boolean | ReactNode): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
+      inline def setCheckable(value: Boolean | ReactNode): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckableUndefined: Self = StObject.set(x, "checkable", js.undefined)
+      inline def setCheckableUndefined: Self = StObject.set(x, "checkable", js.undefined)
       
-      @scala.inline
-      def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
+      inline def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
+      inline def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setHalfCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
+      inline def setHalfCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
+      inline def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadData(value: LegacyDataNode => js.Promise[js.Any]): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
+      inline def setLoadData(value: LegacyDataNode => js.Promise[js.Any]): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTreeExpand(value: js.Array[Key] => Unit): Self = StObject.set(x, "onTreeExpand", js.Any.fromFunction1(value))
+      inline def setOnTreeExpand(value: js.Array[Key] => Unit): Self = StObject.set(x, "onTreeExpand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTreeLoad(value: js.Array[Key] => Unit): Self = StObject.set(x, "onTreeLoad", js.Any.fromFunction1(value))
+      inline def setOnTreeLoad(value: js.Array[Key] => Unit): Self = StObject.set(x, "onTreeLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowTreeIcon(value: Boolean): Self = StObject.set(x, "showTreeIcon", value.asInstanceOf[js.Any])
+      inline def setShowTreeIcon(value: Boolean): Self = StObject.set(x, "showTreeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
+      inline def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitcherIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
+      inline def setSwitcherIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
+      inline def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
       
-      @scala.inline
-      def setTreeDefaultExpandAll(value: Boolean): Self = StObject.set(x, "treeDefaultExpandAll", value.asInstanceOf[js.Any])
+      inline def setTreeDefaultExpandAll(value: Boolean): Self = StObject.set(x, "treeDefaultExpandAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeDefaultExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "treeDefaultExpandedKeys", value.asInstanceOf[js.Any])
+      inline def setTreeDefaultExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "treeDefaultExpandedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeDefaultExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeDefaultExpandedKeys", js.Array(value :_*))
+      inline def setTreeDefaultExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeDefaultExpandedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setTreeExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "treeExpandedKeys", value.asInstanceOf[js.Any])
+      inline def setTreeExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "treeExpandedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeExpandedKeys", js.Array(value :_*))
+      inline def setTreeExpandedKeysVarargs(value: Key*): Self = StObject.set(x, "treeExpandedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setTreeIcon(value: IconType): Self = StObject.set(x, "treeIcon", value.asInstanceOf[js.Any])
+      inline def setTreeIcon(value: IconType): Self = StObject.set(x, "treeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "treeIcon", js.Any.fromFunction1(value))
+      inline def setTreeIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "treeIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTreeIconUndefined: Self = StObject.set(x, "treeIcon", js.undefined)
+      inline def setTreeIconUndefined: Self = StObject.set(x, "treeIcon", js.undefined)
       
-      @scala.inline
-      def setTreeLine(value: Boolean): Self = StObject.set(x, "treeLine", value.asInstanceOf[js.Any])
+      inline def setTreeLine(value: Boolean): Self = StObject.set(x, "treeLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeLoadedKeys(value: js.Array[Key]): Self = StObject.set(x, "treeLoadedKeys", value.asInstanceOf[js.Any])
+      inline def setTreeLoadedKeys(value: js.Array[Key]): Self = StObject.set(x, "treeLoadedKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "treeLoadedKeys", js.Array(value :_*))
+      inline def setTreeLoadedKeysVarargs(value: Key*): Self = StObject.set(x, "treeLoadedKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setTreeMotion(value: js.Any): Self = StObject.set(x, "treeMotion", value.asInstanceOf[js.Any])
+      inline def setTreeMotion(value: js.Any): Self = StObject.set(x, "treeMotion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeNodeFilterProp(value: String): Self = StObject.set(x, "treeNodeFilterProp", value.asInstanceOf[js.Any])
+      inline def setTreeNodeFilterProp(value: String): Self = StObject.set(x, "treeNodeFilterProp", value.asInstanceOf[js.Any])
     }
   }
 }

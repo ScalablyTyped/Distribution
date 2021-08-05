@@ -12,6 +12,5 @@ object printDiagnosticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def printDiagnostics(context: IContext, diagnostics: js.Array[IDiagnostics], pretty: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printDiagnostics")(context.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], pretty.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def printDiagnostics(context: IContext, diagnostics: js.Array[IDiagnostics], pretty: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printDiagnostics")(context.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], pretty.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

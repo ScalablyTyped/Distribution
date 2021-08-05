@@ -18,8 +18,7 @@ trait OutputFile extends StObject {
 }
 object OutputFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fileType: OutputFileType,
     name: String,
     sourceMapEntries: js.Array[SourceMapEntry],
@@ -30,25 +29,18 @@ object OutputFile {
     __obj.asInstanceOf[OutputFile]
   }
   
-  @scala.inline
-  implicit class OutputFileMutableBuilder[Self <: OutputFile] (val x: Self) extends AnyVal {
+  extension [Self <: OutputFile](x: Self) {
     
-    @scala.inline
-    def setFileType(value: OutputFileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: OutputFileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapEntries(value: js.Array[SourceMapEntry]): Self = StObject.set(x, "sourceMapEntries", value.asInstanceOf[js.Any])
+    inline def setSourceMapEntries(value: js.Array[SourceMapEntry]): Self = StObject.set(x, "sourceMapEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapEntriesVarargs(value: SourceMapEntry*): Self = StObject.set(x, "sourceMapEntries", js.Array(value :_*))
+    inline def setSourceMapEntriesVarargs(value: SourceMapEntry*): Self = StObject.set(x, "sourceMapEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteByteOrderMark(value: Boolean): Self = StObject.set(x, "writeByteOrderMark", value.asInstanceOf[js.Any])
+    inline def setWriteByteOrderMark(value: Boolean): Self = StObject.set(x, "writeByteOrderMark", value.asInstanceOf[js.Any])
   }
 }

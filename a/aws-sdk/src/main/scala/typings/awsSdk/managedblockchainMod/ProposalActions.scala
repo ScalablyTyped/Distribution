@@ -18,31 +18,23 @@ trait ProposalActions extends StObject {
 }
 object ProposalActions {
   
-  @scala.inline
-  def apply(): ProposalActions = {
+  inline def apply(): ProposalActions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProposalActions]
   }
   
-  @scala.inline
-  implicit class ProposalActionsMutableBuilder[Self <: ProposalActions] (val x: Self) extends AnyVal {
+  extension [Self <: ProposalActions](x: Self) {
     
-    @scala.inline
-    def setInvitations(value: InviteActionList): Self = StObject.set(x, "Invitations", value.asInstanceOf[js.Any])
+    inline def setInvitations(value: InviteActionList): Self = StObject.set(x, "Invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationsUndefined: Self = StObject.set(x, "Invitations", js.undefined)
+    inline def setInvitationsUndefined: Self = StObject.set(x, "Invitations", js.undefined)
     
-    @scala.inline
-    def setInvitationsVarargs(value: InviteAction*): Self = StObject.set(x, "Invitations", js.Array(value :_*))
+    inline def setInvitationsVarargs(value: InviteAction*): Self = StObject.set(x, "Invitations", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovals(value: RemoveActionList): Self = StObject.set(x, "Removals", value.asInstanceOf[js.Any])
+    inline def setRemovals(value: RemoveActionList): Self = StObject.set(x, "Removals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovalsUndefined: Self = StObject.set(x, "Removals", js.undefined)
+    inline def setRemovalsUndefined: Self = StObject.set(x, "Removals", js.undefined)
     
-    @scala.inline
-    def setRemovalsVarargs(value: RemoveAction*): Self = StObject.set(x, "Removals", js.Array(value :_*))
+    inline def setRemovalsVarargs(value: RemoveAction*): Self = StObject.set(x, "Removals", js.Array(value :_*))
   }
 }

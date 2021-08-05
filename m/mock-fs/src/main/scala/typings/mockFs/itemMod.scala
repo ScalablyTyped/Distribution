@@ -101,8 +101,7 @@ object itemMod {
   }
   object ExtendedStats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       atime: Date,
       birthtime: Date,
       blksize: Double,
@@ -122,17 +121,13 @@ object itemMod {
       __obj.asInstanceOf[ExtendedStats]
     }
     
-    @scala.inline
-    implicit class ExtendedStatsMutableBuilder[Self <: ExtendedStats] (val x: Self) extends AnyVal {
+    extension [Self <: ExtendedStats](x: Self) {
       
-      @scala.inline
-      def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,8 +192,7 @@ object itemMod {
   }
   object Item {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canExecute: () => Boolean,
       canRead: () => Boolean,
       canWrite: () => Boolean,
@@ -222,62 +216,43 @@ object itemMod {
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setCanExecute(value: () => Boolean): Self = StObject.set(x, "canExecute", js.Any.fromFunction0(value))
+      inline def setCanExecute(value: () => Boolean): Self = StObject.set(x, "canExecute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCanRead(value: () => Boolean): Self = StObject.set(x, "canRead", js.Any.fromFunction0(value))
+      inline def setCanRead(value: () => Boolean): Self = StObject.set(x, "canRead", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCanWrite(value: () => Boolean): Self = StObject.set(x, "canWrite", js.Any.fromFunction0(value))
+      inline def setCanWrite(value: () => Boolean): Self = StObject.set(x, "canWrite", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetATime(value: () => Date): Self = StObject.set(x, "getATime", js.Any.fromFunction0(value))
+      inline def setGetATime(value: () => Date): Self = StObject.set(x, "getATime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBirthtime(value: () => Date): Self = StObject.set(x, "getBirthtime", js.Any.fromFunction0(value))
+      inline def setGetBirthtime(value: () => Date): Self = StObject.set(x, "getBirthtime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCTime(value: () => Date): Self = StObject.set(x, "getCTime", js.Any.fromFunction0(value))
+      inline def setGetCTime(value: () => Date): Self = StObject.set(x, "getCTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGid(value: () => Double): Self = StObject.set(x, "getGid", js.Any.fromFunction0(value))
+      inline def setGetGid(value: () => Double): Self = StObject.set(x, "getGid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMTime(value: () => Date): Self = StObject.set(x, "getMTime", js.Any.fromFunction0(value))
+      inline def setGetMTime(value: () => Date): Self = StObject.set(x, "getMTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMode(value: () => Double): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
+      inline def setGetMode(value: () => Double): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStats(value: () => Stats): Self = StObject.set(x, "getStats", js.Any.fromFunction0(value))
+      inline def setGetStats(value: () => Stats): Self = StObject.set(x, "getStats", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUid(value: () => Double): Self = StObject.set(x, "getUid", js.Any.fromFunction0(value))
+      inline def setGetUid(value: () => Double): Self = StObject.set(x, "getUid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetATime(value: Date => Unit): Self = StObject.set(x, "setATime", js.Any.fromFunction1(value))
+      inline def setSetATime(value: Date => Unit): Self = StObject.set(x, "setATime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBirthtime(value: Date => Unit): Self = StObject.set(x, "setBirthtime", js.Any.fromFunction1(value))
+      inline def setSetBirthtime(value: Date => Unit): Self = StObject.set(x, "setBirthtime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCTime(value: Date => Unit): Self = StObject.set(x, "setCTime", js.Any.fromFunction1(value))
+      inline def setSetCTime(value: Date => Unit): Self = StObject.set(x, "setCTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetGid(value: Double => Unit): Self = StObject.set(x, "setGid", js.Any.fromFunction1(value))
+      inline def setSetGid(value: Double => Unit): Self = StObject.set(x, "setGid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMTime(value: Date => Unit): Self = StObject.set(x, "setMTime", js.Any.fromFunction1(value))
+      inline def setSetMTime(value: Date => Unit): Self = StObject.set(x, "setMTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMode(value: Double => Unit): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
+      inline def setSetMode(value: Double => Unit): Self = StObject.set(x, "setMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetUid(value: Double => Unit): Self = StObject.set(x, "setUid", js.Any.fromFunction1(value))
+      inline def setSetUid(value: Double => Unit): Self = StObject.set(x, "setUid", js.Any.fromFunction1(value))
     }
   }
   
@@ -307,8 +282,7 @@ object itemMod {
   }
   object Stats {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       atime: Date,
       birthtime: Date,
       blksize: Double,
@@ -325,41 +299,29 @@ object itemMod {
       __obj.asInstanceOf[Stats]
     }
     
-    @scala.inline
-    implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+    extension [Self <: Stats](x: Self) {
       
-      @scala.inline
-      def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
+      inline def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
+      inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
+      inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
+      inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
+      inline def setRdev(value: Double): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
 }

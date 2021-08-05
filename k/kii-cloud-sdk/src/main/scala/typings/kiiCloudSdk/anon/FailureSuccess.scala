@@ -20,8 +20,7 @@ trait FailureSuccess extends StObject {
 }
 object FailureSuccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     failure: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any,
     success: KiiAppAdminContext => js.Any
   ): FailureSuccess = {
@@ -29,13 +28,10 @@ object FailureSuccess {
     __obj.asInstanceOf[FailureSuccess]
   }
   
-  @scala.inline
-  implicit class FailureSuccessMutableBuilder[Self <: FailureSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: FailureSuccess](x: Self) {
     
-    @scala.inline
-    def setFailure(value: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
+    inline def setFailure(value: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSuccess(value: KiiAppAdminContext => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: KiiAppAdminContext => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

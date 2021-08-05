@@ -21,25 +21,19 @@ trait FoldingRules extends StObject {
 }
 object FoldingRules {
   
-  @scala.inline
-  def apply(): FoldingRules = {
+  inline def apply(): FoldingRules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FoldingRules]
   }
   
-  @scala.inline
-  implicit class FoldingRulesMutableBuilder[Self <: FoldingRules] (val x: Self) extends AnyVal {
+  extension [Self <: FoldingRules](x: Self) {
     
-    @scala.inline
-    def setMarkers(value: FoldingMarkers): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: FoldingMarkers): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
+    inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
     
-    @scala.inline
-    def setOffSide(value: Boolean): Self = StObject.set(x, "offSide", value.asInstanceOf[js.Any])
+    inline def setOffSide(value: Boolean): Self = StObject.set(x, "offSide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffSideUndefined: Self = StObject.set(x, "offSide", js.undefined)
+    inline def setOffSideUndefined: Self = StObject.set(x, "offSide", js.undefined)
   }
 }

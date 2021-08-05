@@ -21,31 +21,25 @@ trait GridAutoFlowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
 }
 object GridAutoFlowProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridAutoFlowProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): GridAutoFlowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridAutoFlowProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class GridAutoFlowPropsMutableBuilder[Self <: GridAutoFlowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridAutoFlowProps[ThemeType]) extends AnyVal {
+  extension [Self <: GridAutoFlowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridAutoFlowProps[ThemeType]) {
     
-    @scala.inline
-    def setGridAutoFlow(
+    inline def setGridAutoFlow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoFlowNull: Self = StObject.set(x, "gridAutoFlow", null)
+    inline def setGridAutoFlowNull: Self = StObject.set(x, "gridAutoFlow", null)
     
-    @scala.inline
-    def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
+    inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
-    @scala.inline
-    def setGridAutoFlowVarargs(
+    inline def setGridAutoFlowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any) | Null)*
     ): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
   }

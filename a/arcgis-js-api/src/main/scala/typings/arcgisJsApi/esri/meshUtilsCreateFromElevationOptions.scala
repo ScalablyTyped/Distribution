@@ -19,8 +19,7 @@ trait meshUtilsCreateFromElevationOptions
 }
 object meshUtilsCreateFromElevationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object meshUtilsCreateFromElevationOptions {
     __obj.asInstanceOf[meshUtilsCreateFromElevationOptions]
   }
   
-  @scala.inline
-  implicit class meshUtilsCreateFromElevationOptionsMutableBuilder[Self <: meshUtilsCreateFromElevationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: meshUtilsCreateFromElevationOptions](x: Self) {
     
-    @scala.inline
-    def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
+    inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
+    inline def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
   }
 }

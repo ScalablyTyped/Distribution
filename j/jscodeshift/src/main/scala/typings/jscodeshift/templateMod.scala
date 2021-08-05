@@ -27,8 +27,7 @@ object templateMod extends Shortcut {
   }
   object Template {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expression: /* repeated */ js.Any => js.Any,
       statement: /* repeated */ js.Any => js.Any,
       statements: /* repeated */ js.Any => js.Any
@@ -37,17 +36,13 @@ object templateMod extends Shortcut {
       __obj.asInstanceOf[Template]
     }
     
-    @scala.inline
-    implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+    extension [Self <: Template](x: Self) {
       
-      @scala.inline
-      def setExpression(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "expression", js.Any.fromFunction1(value))
+      inline def setExpression(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "expression", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatement(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "statement", js.Any.fromFunction1(value))
+      inline def setStatement(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "statement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatements(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "statements", js.Any.fromFunction1(value))
+      inline def setStatements(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "statements", js.Any.fromFunction1(value))
     }
   }
   

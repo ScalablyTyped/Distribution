@@ -60,7 +60,7 @@ trait Bob extends StObject {
     * The frame that the Bob uses to render with.
     * To change the frame use the `Bob.setFrame` method.
     */
-  var frame: Frame = js.native
+  /* protected */ var frame: Frame = js.native
   
   /**
     * The Blitter object that this Bob belongs to.

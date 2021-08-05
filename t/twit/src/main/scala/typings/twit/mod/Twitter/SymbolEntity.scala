@@ -12,19 +12,15 @@ trait SymbolEntity extends StObject {
 }
 object SymbolEntity {
   
-  @scala.inline
-  def apply(indices: js.Tuple2[Double, Double], text: String): SymbolEntity = {
+  inline def apply(indices: js.Tuple2[Double, Double], text: String): SymbolEntity = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolEntity]
   }
   
-  @scala.inline
-  implicit class SymbolEntityMutableBuilder[Self <: SymbolEntity] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolEntity](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

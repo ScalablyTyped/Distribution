@@ -86,38 +86,28 @@ object labelMod {
   }
   object TagConfig {
     
-    @scala.inline
-    def apply(): TagConfig = {
+    inline def apply(): TagConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagConfig]
     }
     
-    @scala.inline
-    implicit class TagConfigMutableBuilder[Self <: TagConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TagConfig](x: Self) {
       
-      @scala.inline
-      def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+      inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+      inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
       
-      @scala.inline
-      def setPointerDirection(value: String): Self = StObject.set(x, "pointerDirection", value.asInstanceOf[js.Any])
+      inline def setPointerDirection(value: String): Self = StObject.set(x, "pointerDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerDirectionUndefined: Self = StObject.set(x, "pointerDirection", js.undefined)
+      inline def setPointerDirectionUndefined: Self = StObject.set(x, "pointerDirection", js.undefined)
       
-      @scala.inline
-      def setPointerHeight(value: Double): Self = StObject.set(x, "pointerHeight", value.asInstanceOf[js.Any])
+      inline def setPointerHeight(value: Double): Self = StObject.set(x, "pointerHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerHeightUndefined: Self = StObject.set(x, "pointerHeight", js.undefined)
+      inline def setPointerHeightUndefined: Self = StObject.set(x, "pointerHeight", js.undefined)
       
-      @scala.inline
-      def setPointerWidth(value: Double): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
+      inline def setPointerWidth(value: Double): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerWidthUndefined: Self = StObject.set(x, "pointerWidth", js.undefined)
+      inline def setPointerWidthUndefined: Self = StObject.set(x, "pointerWidth", js.undefined)
     }
   }
 }

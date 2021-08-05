@@ -36,8 +36,7 @@ object GridSortItem {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem]
+  inline def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem]
   
   /**
     * Creates and returns a new GridSortItem instance in the SDK and on the server.
@@ -45,20 +44,17 @@ object GridSortItem {
     * of the parent GridSortBar element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortBar): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem]
+  inline def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortBar): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem]
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.GridSortItem.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.GridSortItem.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

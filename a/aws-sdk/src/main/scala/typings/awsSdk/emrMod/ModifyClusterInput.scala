@@ -18,22 +18,17 @@ trait ModifyClusterInput extends StObject {
 }
 object ModifyClusterInput {
   
-  @scala.inline
-  def apply(ClusterId: String): ModifyClusterInput = {
+  inline def apply(ClusterId: String): ModifyClusterInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterInput]
   }
   
-  @scala.inline
-  implicit class ModifyClusterInputMutableBuilder[Self <: ModifyClusterInput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepConcurrencyLevel(value: Integer): Self = StObject.set(x, "StepConcurrencyLevel", value.asInstanceOf[js.Any])
+    inline def setStepConcurrencyLevel(value: Integer): Self = StObject.set(x, "StepConcurrencyLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepConcurrencyLevelUndefined: Self = StObject.set(x, "StepConcurrencyLevel", js.undefined)
+    inline def setStepConcurrencyLevelUndefined: Self = StObject.set(x, "StepConcurrencyLevel", js.undefined)
   }
 }

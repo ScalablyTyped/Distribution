@@ -9,18 +9,15 @@ object esfxTypeModelStrings {
   
   @js.native
   sealed trait Conjoin extends StObject
-  @scala.inline
-  def Conjoin: Conjoin = "Conjoin".asInstanceOf[Conjoin]
+  inline def Conjoin: Conjoin = "Conjoin".asInstanceOf[Conjoin]
   
   @js.native
   sealed trait Mutable extends StObject
-  @scala.inline
-  def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
+  inline def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
   
   @js.native
   sealed trait _empty
     extends StObject
        with _Falsey
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
 }

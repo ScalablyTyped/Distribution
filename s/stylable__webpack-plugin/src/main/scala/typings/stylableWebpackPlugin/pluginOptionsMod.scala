@@ -12,8 +12,7 @@ object pluginOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalizeOptions_mode(
+  inline def normalizeOptions_mode(
     options: ShallowPartialStylableWeb,
     mode: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration * / any['mode'] */ js.Any
   ): StylableWebpackPluginOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOptions")(options.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[StylableWebpackPluginOptions]

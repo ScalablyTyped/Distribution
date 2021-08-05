@@ -25,21 +25,21 @@ trait GLFramebuffer extends StObject {
     * @member {number} PIXI.GLFramebuffer#dirtyFormat
     * @protected
     */
-  var dirtyFormat: Double
+  /* protected */ var dirtyFormat: Double
   
   /**
     * latest known version of framebuffer
     * @member {number} PIXI.GLFramebuffer#dirtyId
     * @protected
     */
-  var dirtyId: Double
+  /* protected */ var dirtyId: Double
   
   /**
     * latest known version of framebuffer size
     * @member {number} PIXI.GLFramebuffer#dirtySize
     * @protected
     */
-  var dirtySize: Double
+  /* protected */ var dirtySize: Double
   
   /**
     * The WebGL framebuffer
@@ -67,8 +67,7 @@ trait GLFramebuffer extends StObject {
 }
 object GLFramebuffer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blitFramebuffer: Framebuffer,
     dirtyFormat: Double,
     dirtyId: Double,
@@ -82,31 +81,22 @@ object GLFramebuffer {
     __obj.asInstanceOf[GLFramebuffer]
   }
   
-  @scala.inline
-  implicit class GLFramebufferMutableBuilder[Self <: GLFramebuffer] (val x: Self) extends AnyVal {
+  extension [Self <: GLFramebuffer](x: Self) {
     
-    @scala.inline
-    def setBlitFramebuffer(value: Framebuffer): Self = StObject.set(x, "blitFramebuffer", value.asInstanceOf[js.Any])
+    inline def setBlitFramebuffer(value: Framebuffer): Self = StObject.set(x, "blitFramebuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyFormat(value: Double): Self = StObject.set(x, "dirtyFormat", value.asInstanceOf[js.Any])
+    inline def setDirtyFormat(value: Double): Self = StObject.set(x, "dirtyFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyId(value: Double): Self = StObject.set(x, "dirtyId", value.asInstanceOf[js.Any])
+    inline def setDirtyId(value: Double): Self = StObject.set(x, "dirtyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtySize(value: Double): Self = StObject.set(x, "dirtySize", value.asInstanceOf[js.Any])
+    inline def setDirtySize(value: Double): Self = StObject.set(x, "dirtySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramebuffer(value: WebGLFramebuffer): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
+    inline def setFramebuffer(value: WebGLFramebuffer): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsaaBuffer(value: WebGLRenderbuffer): Self = StObject.set(x, "msaaBuffer", value.asInstanceOf[js.Any])
+    inline def setMsaaBuffer(value: WebGLRenderbuffer): Self = StObject.set(x, "msaaBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultisample(value: MSAA_QUALITY): Self = StObject.set(x, "multisample", value.asInstanceOf[js.Any])
+    inline def setMultisample(value: MSAA_QUALITY): Self = StObject.set(x, "multisample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStencil(value: WebGLRenderbuffer): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+    inline def setStencil(value: WebGLRenderbuffer): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
   }
 }

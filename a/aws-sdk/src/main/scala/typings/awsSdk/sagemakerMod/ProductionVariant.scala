@@ -38,8 +38,7 @@ trait ProductionVariant extends StObject {
 }
 object ProductionVariant {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InitialInstanceCount: TaskCount,
     InstanceType: ProductionVariantInstanceType,
     ModelName: ModelName,
@@ -49,31 +48,22 @@ object ProductionVariant {
     __obj.asInstanceOf[ProductionVariant]
   }
   
-  @scala.inline
-  implicit class ProductionVariantMutableBuilder[Self <: ProductionVariant] (val x: Self) extends AnyVal {
+  extension [Self <: ProductionVariant](x: Self) {
     
-    @scala.inline
-    def setAcceleratorType(value: ProductionVariantAcceleratorType): Self = StObject.set(x, "AcceleratorType", value.asInstanceOf[js.Any])
+    inline def setAcceleratorType(value: ProductionVariantAcceleratorType): Self = StObject.set(x, "AcceleratorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypeUndefined: Self = StObject.set(x, "AcceleratorType", js.undefined)
+    inline def setAcceleratorTypeUndefined: Self = StObject.set(x, "AcceleratorType", js.undefined)
     
-    @scala.inline
-    def setInitialInstanceCount(value: TaskCount): Self = StObject.set(x, "InitialInstanceCount", value.asInstanceOf[js.Any])
+    inline def setInitialInstanceCount(value: TaskCount): Self = StObject.set(x, "InitialInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialVariantWeight(value: VariantWeight): Self = StObject.set(x, "InitialVariantWeight", value.asInstanceOf[js.Any])
+    inline def setInitialVariantWeight(value: VariantWeight): Self = StObject.set(x, "InitialVariantWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialVariantWeightUndefined: Self = StObject.set(x, "InitialVariantWeight", js.undefined)
+    inline def setInitialVariantWeightUndefined: Self = StObject.set(x, "InitialVariantWeight", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: ProductionVariantInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: ProductionVariantInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
+    inline def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
   }
 }

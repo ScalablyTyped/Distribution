@@ -16,20 +16,19 @@ trait AlignmentPattern extends StObject {
   
   def aboutEquals(moduleSize: Double, i: Double, j: Double): Boolean
   
-  var count: Double
+  /* private */ var count: Double
   
-  var estimatedModuleSize: Double
+  /* private */ var estimatedModuleSize: Double
   
   def incrementCount(): Unit
   
-  var x: Double
+  /* private */ var x: Double
   
-  var y: Double
+  /* private */ var y: Double
 }
 object AlignmentPattern {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     EstimatedModuleSize: Double,
     X: Double,
@@ -45,25 +44,18 @@ object AlignmentPattern {
     __obj.asInstanceOf[AlignmentPattern]
   }
   
-  @scala.inline
-  implicit class AlignmentPatternMutableBuilder[Self <: AlignmentPattern] (val x: Self) extends AnyVal {
+  extension [Self <: AlignmentPattern](x: Self) {
     
-    @scala.inline
-    def setAboutEquals(value: (Double, Double, Double) => Boolean): Self = StObject.set(x, "aboutEquals", js.Any.fromFunction3(value))
+    inline def setAboutEquals(value: (Double, Double, Double) => Boolean): Self = StObject.set(x, "aboutEquals", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedModuleSize(value: Double): Self = StObject.set(x, "EstimatedModuleSize", value.asInstanceOf[js.Any])
+    inline def setEstimatedModuleSize(value: Double): Self = StObject.set(x, "EstimatedModuleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementCount(value: () => Unit): Self = StObject.set(x, "incrementCount", js.Any.fromFunction0(value))
+    inline def setIncrementCount(value: () => Unit): Self = StObject.set(x, "incrementCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

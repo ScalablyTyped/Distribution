@@ -33,17 +33,14 @@ object connectFailoverMod {
   }
   object ConnectError {
     
-    @scala.inline
-    def apply(connectArgs: ConnectOptions, message: String, name: String): ConnectError = {
+    inline def apply(connectArgs: ConnectOptions, message: String, name: String): ConnectError = {
       val __obj = js.Dynamic.literal(connectArgs = connectArgs.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectError]
     }
     
-    @scala.inline
-    implicit class ConnectErrorMutableBuilder[Self <: ConnectError] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectError](x: Self) {
       
-      @scala.inline
-      def setConnectArgs(value: ConnectOptions): Self = StObject.set(x, "connectArgs", value.asInstanceOf[js.Any])
+      inline def setConnectArgs(value: ConnectOptions): Self = StObject.set(x, "connectArgs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,58 +101,42 @@ object connectFailoverMod {
   }
   object ConnectFailoverOptions {
     
-    @scala.inline
-    def apply(): ConnectFailoverOptions = {
+    inline def apply(): ConnectFailoverOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectFailoverOptions]
     }
     
-    @scala.inline
-    implicit class ConnectFailoverOptionsMutableBuilder[Self <: ConnectFailoverOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectFailoverOptions](x: Self) {
       
-      @scala.inline
-      def setConnectFunction(
+      inline def setConnectFunction(
         value: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[ConnectionListener]) => typings.stompit.clientMod.^
       ): Self = StObject.set(x, "connectFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConnectFunctionUndefined: Self = StObject.set(x, "connectFunction", js.undefined)
+      inline def setConnectFunctionUndefined: Self = StObject.set(x, "connectFunction", js.undefined)
       
-      @scala.inline
-      def setInitialReconnectDelay(value: Double): Self = StObject.set(x, "initialReconnectDelay", value.asInstanceOf[js.Any])
+      inline def setInitialReconnectDelay(value: Double): Self = StObject.set(x, "initialReconnectDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialReconnectDelayUndefined: Self = StObject.set(x, "initialReconnectDelay", js.undefined)
+      inline def setInitialReconnectDelayUndefined: Self = StObject.set(x, "initialReconnectDelay", js.undefined)
       
-      @scala.inline
-      def setMaxReconnectDelay(value: Double): Self = StObject.set(x, "maxReconnectDelay", value.asInstanceOf[js.Any])
+      inline def setMaxReconnectDelay(value: Double): Self = StObject.set(x, "maxReconnectDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReconnectDelayUndefined: Self = StObject.set(x, "maxReconnectDelay", js.undefined)
+      inline def setMaxReconnectDelayUndefined: Self = StObject.set(x, "maxReconnectDelay", js.undefined)
       
-      @scala.inline
-      def setMaxReconnects(value: Double): Self = StObject.set(x, "maxReconnects", value.asInstanceOf[js.Any])
+      inline def setMaxReconnects(value: Double): Self = StObject.set(x, "maxReconnects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReconnectsUndefined: Self = StObject.set(x, "maxReconnects", js.undefined)
+      inline def setMaxReconnectsUndefined: Self = StObject.set(x, "maxReconnects", js.undefined)
       
-      @scala.inline
-      def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+      inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
+      inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
       
-      @scala.inline
-      def setReconnectDelayExponent(value: Double): Self = StObject.set(x, "reconnectDelayExponent", value.asInstanceOf[js.Any])
+      inline def setReconnectDelayExponent(value: Double): Self = StObject.set(x, "reconnectDelayExponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectDelayExponentUndefined: Self = StObject.set(x, "reconnectDelayExponent", js.undefined)
+      inline def setReconnectDelayExponentUndefined: Self = StObject.set(x, "reconnectDelayExponent", js.undefined)
       
-      @scala.inline
-      def setUseExponentialBackOff(value: Boolean): Self = StObject.set(x, "useExponentialBackOff", value.asInstanceOf[js.Any])
+      inline def setUseExponentialBackOff(value: Boolean): Self = StObject.set(x, "useExponentialBackOff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseExponentialBackOffUndefined: Self = StObject.set(x, "useExponentialBackOff", js.undefined)
+      inline def setUseExponentialBackOffUndefined: Self = StObject.set(x, "useExponentialBackOff", js.undefined)
     }
   }
   
@@ -168,20 +149,16 @@ object connectFailoverMod {
   }
   object ConnectState {
     
-    @scala.inline
-    def apply(failedConnects: Double, serverProperties: Server): ConnectState = {
+    inline def apply(failedConnects: Double, serverProperties: Server): ConnectState = {
       val __obj = js.Dynamic.literal(failedConnects = failedConnects.asInstanceOf[js.Any], serverProperties = serverProperties.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectState]
     }
     
-    @scala.inline
-    implicit class ConnectStateMutableBuilder[Self <: ConnectState] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectState](x: Self) {
       
-      @scala.inline
-      def setFailedConnects(value: Double): Self = StObject.set(x, "failedConnects", value.asInstanceOf[js.Any])
+      inline def setFailedConnects(value: Double): Self = StObject.set(x, "failedConnects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerProperties(value: Server): Self = StObject.set(x, "serverProperties", value.asInstanceOf[js.Any])
+      inline def setServerProperties(value: Server): Self = StObject.set(x, "serverProperties", value.asInstanceOf[js.Any])
     }
   }
   

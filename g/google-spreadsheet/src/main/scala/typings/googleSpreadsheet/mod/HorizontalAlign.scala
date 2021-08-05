@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HorizontalAlign extends StObject
 object HorizontalAlign {
   
-  @scala.inline
-  def CENTER: typings.googleSpreadsheet.googleSpreadsheetStrings.CENTER = "CENTER".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.CENTER]
+  inline def CENTER: typings.googleSpreadsheet.googleSpreadsheetStrings.CENTER = "CENTER".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.CENTER]
   
-  @scala.inline
-  def LEFT: typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT = "LEFT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT]
+  inline def LEFT: typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT = "LEFT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.LEFT]
   
-  @scala.inline
-  def RIGHT: typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT = "RIGHT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT]
+  inline def RIGHT: typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT = "RIGHT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT]
 }

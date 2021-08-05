@@ -18,19 +18,15 @@ trait DescribeDeviceRequest extends StObject {
 }
 object DescribeDeviceRequest {
   
-  @scala.inline
-  def apply(DeviceId: Id, FleetArn: FleetArn): DescribeDeviceRequest = {
+  inline def apply(DeviceId: Id, FleetArn: FleetArn): DescribeDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], FleetArn = FleetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDeviceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDeviceRequestMutableBuilder[Self <: DescribeDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: Id): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: Id): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait Display extends StObject {
 }
 object Display {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     height: integer,
     iconLink: String,
     link: String,
@@ -41,34 +40,24 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  @scala.inline
-  implicit class DisplayMutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
+  extension [Self <: Display](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: GadgetDisplayMode): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: GadgetDisplayMode): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconLink(value: String): Self = StObject.set(x, "iconLink", value.asInstanceOf[js.Any])
+    inline def setIconLink(value: String): Self = StObject.set(x, "iconLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferences(value: String => String): Self = StObject.set(x, "preferences", js.Any.fromFunction1(value))
+    inline def setPreferences(value: String => String): Self = StObject.set(x, "preferences", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

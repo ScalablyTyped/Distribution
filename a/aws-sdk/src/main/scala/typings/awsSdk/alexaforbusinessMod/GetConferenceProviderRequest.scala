@@ -13,16 +13,13 @@ trait GetConferenceProviderRequest extends StObject {
 }
 object GetConferenceProviderRequest {
   
-  @scala.inline
-  def apply(ConferenceProviderArn: Arn): GetConferenceProviderRequest = {
+  inline def apply(ConferenceProviderArn: Arn): GetConferenceProviderRequest = {
     val __obj = js.Dynamic.literal(ConferenceProviderArn = ConferenceProviderArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConferenceProviderRequest]
   }
   
-  @scala.inline
-  implicit class GetConferenceProviderRequestMutableBuilder[Self <: GetConferenceProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConferenceProviderRequest](x: Self) {
     
-    @scala.inline
-    def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
+    inline def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
   }
 }

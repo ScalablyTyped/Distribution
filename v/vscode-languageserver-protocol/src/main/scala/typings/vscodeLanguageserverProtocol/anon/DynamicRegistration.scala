@@ -15,19 +15,15 @@ trait DynamicRegistration extends StObject {
 }
 object DynamicRegistration {
   
-  @scala.inline
-  def apply(): DynamicRegistration = {
+  inline def apply(): DynamicRegistration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicRegistration]
   }
   
-  @scala.inline
-  implicit class DynamicRegistrationMutableBuilder[Self <: DynamicRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicRegistration](x: Self) {
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

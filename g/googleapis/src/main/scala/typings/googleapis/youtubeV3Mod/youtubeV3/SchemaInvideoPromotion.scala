@@ -38,40 +38,29 @@ trait SchemaInvideoPromotion extends StObject {
 }
 object SchemaInvideoPromotion {
   
-  @scala.inline
-  def apply(): SchemaInvideoPromotion = {
+  inline def apply(): SchemaInvideoPromotion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInvideoPromotion]
   }
   
-  @scala.inline
-  implicit class SchemaInvideoPromotionMutableBuilder[Self <: SchemaInvideoPromotion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInvideoPromotion](x: Self) {
     
-    @scala.inline
-    def setDefaultTiming(value: SchemaInvideoTiming): Self = StObject.set(x, "defaultTiming", value.asInstanceOf[js.Any])
+    inline def setDefaultTiming(value: SchemaInvideoTiming): Self = StObject.set(x, "defaultTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTimingUndefined: Self = StObject.set(x, "defaultTiming", js.undefined)
+    inline def setDefaultTimingUndefined: Self = StObject.set(x, "defaultTiming", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaPromotedItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaPromotedItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaPromotedItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaPromotedItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: SchemaInvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: SchemaInvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setUseSmartTiming(value: Boolean): Self = StObject.set(x, "useSmartTiming", value.asInstanceOf[js.Any])
+    inline def setUseSmartTiming(value: Boolean): Self = StObject.set(x, "useSmartTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSmartTimingUndefined: Self = StObject.set(x, "useSmartTiming", js.undefined)
+    inline def setUseSmartTimingUndefined: Self = StObject.set(x, "useSmartTiming", js.undefined)
   }
 }

@@ -17,22 +17,17 @@ trait SchemaSourceInfo extends StObject {
 }
 object SchemaSourceInfo {
   
-  @scala.inline
-  def apply(): SchemaSourceInfo = {
+  inline def apply(): SchemaSourceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceInfo]
   }
   
-  @scala.inline
-  implicit class SchemaSourceInfoMutableBuilder[Self <: SchemaSourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceInfo](x: Self) {
     
-    @scala.inline
-    def setSourceFiles(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
+    inline def setSourceFiles(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFilesUndefined: Self = StObject.set(x, "sourceFiles", js.undefined)
+    inline def setSourceFilesUndefined: Self = StObject.set(x, "sourceFiles", js.undefined)
     
-    @scala.inline
-    def setSourceFilesVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "sourceFiles", js.Array(value :_*))
+    inline def setSourceFilesVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "sourceFiles", js.Array(value :_*))
   }
 }

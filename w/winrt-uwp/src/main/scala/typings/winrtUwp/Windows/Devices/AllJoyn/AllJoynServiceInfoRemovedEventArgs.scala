@@ -12,16 +12,13 @@ trait AllJoynServiceInfoRemovedEventArgs extends StObject {
 }
 object AllJoynServiceInfoRemovedEventArgs {
   
-  @scala.inline
-  def apply(uniqueName: String): AllJoynServiceInfoRemovedEventArgs = {
+  inline def apply(uniqueName: String): AllJoynServiceInfoRemovedEventArgs = {
     val __obj = js.Dynamic.literal(uniqueName = uniqueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynServiceInfoRemovedEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynServiceInfoRemovedEventArgsMutableBuilder[Self <: AllJoynServiceInfoRemovedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynServiceInfoRemovedEventArgs](x: Self) {
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
   }
 }

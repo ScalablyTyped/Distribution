@@ -29,34 +29,25 @@ trait IFillOptions extends StObject {
 }
 object IFillOptions {
   
-  @scala.inline
-  def apply(source: String | HTMLImageElement): IFillOptions = {
+  inline def apply(source: String | HTMLImageElement): IFillOptions = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFillOptions]
   }
   
-  @scala.inline
-  implicit class IFillOptionsMutableBuilder[Self <: IFillOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFillOptions](x: Self) {
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
-    @scala.inline
-    def setSource(value: String | HTMLImageElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | HTMLImageElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

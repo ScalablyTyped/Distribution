@@ -32,7 +32,7 @@ trait NavigationHelpersParamLis extends StObject {
     * Adding private keyword works, but the annotation is stripped away in declaration.
     * Turns out if we use an empty string, it doesn't show up in intelliSense.
     */
-  @JSName("")
+  /* protected */ @JSName("")
   var _empty: js.UndefOr[C] = js.native
   
   var addListener: js.UndefOr[

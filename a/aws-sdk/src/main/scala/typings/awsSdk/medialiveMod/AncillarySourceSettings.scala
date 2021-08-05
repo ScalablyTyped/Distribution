@@ -13,19 +13,15 @@ trait AncillarySourceSettings extends StObject {
 }
 object AncillarySourceSettings {
   
-  @scala.inline
-  def apply(): AncillarySourceSettings = {
+  inline def apply(): AncillarySourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AncillarySourceSettings]
   }
   
-  @scala.inline
-  implicit class AncillarySourceSettingsMutableBuilder[Self <: AncillarySourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AncillarySourceSettings](x: Self) {
     
-    @scala.inline
-    def setSourceAncillaryChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "SourceAncillaryChannelNumber", value.asInstanceOf[js.Any])
+    inline def setSourceAncillaryChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "SourceAncillaryChannelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAncillaryChannelNumberUndefined: Self = StObject.set(x, "SourceAncillaryChannelNumber", js.undefined)
+    inline def setSourceAncillaryChannelNumberUndefined: Self = StObject.set(x, "SourceAncillaryChannelNumber", js.undefined)
   }
 }

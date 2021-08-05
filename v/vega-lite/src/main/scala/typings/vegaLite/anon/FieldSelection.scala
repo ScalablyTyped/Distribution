@@ -23,22 +23,17 @@ trait FieldSelection
 }
 object FieldSelection {
   
-  @scala.inline
-  def apply(selection: String): FieldSelection = {
+  inline def apply(selection: String): FieldSelection = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldSelection]
   }
   
-  @scala.inline
-  implicit class FieldSelectionMutableBuilder[Self <: FieldSelection] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSelection](x: Self) {
     
-    @scala.inline
-    def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

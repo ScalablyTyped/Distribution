@@ -23,8 +23,7 @@ trait XDefaultsSupplier
 }
 object XDefaultsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Defaults: XPropertySet,
     acquire: () => Unit,
     getDefaults: () => XPropertySet,
@@ -35,13 +34,10 @@ object XDefaultsSupplier {
     __obj.asInstanceOf[XDefaultsSupplier]
   }
   
-  @scala.inline
-  implicit class XDefaultsSupplierMutableBuilder[Self <: XDefaultsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDefaultsSupplier](x: Self) {
     
-    @scala.inline
-    def setDefaults(value: XPropertySet): Self = StObject.set(x, "Defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: XPropertySet): Self = StObject.set(x, "Defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaults(value: () => XPropertySet): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
+    inline def setGetDefaults(value: () => XPropertySet): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
   }
 }

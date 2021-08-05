@@ -38,7 +38,7 @@ object externalSystemMod {
     /**
       * @hidden
       */
-    var _Handle_close: js.Any = js.native
+    /* private */ var _Handle_close: js.Any = js.native
     
     /* InferMemberOverrides */
     override def addEventListener(
@@ -62,12 +62,12 @@ object externalSystemMod {
     /**
       * @hidden
       */
-    var communicator: ICommunicator = js.native
+    /* protected */ var communicator: ICommunicator = js.native
     
     /**
       * @hidden
       */
-    var communicator_ : js.Any = js.native
+    /* private */ var communicator_ : js.Any = js.native
     
     /**
       * Default Destructor.
@@ -129,7 +129,7 @@ object externalSystemMod {
     /**
       * The name represents external system have connected.
       */
-    var name: String = js.native
+    /* protected */ var name: String = js.native
     
     /* InferMemberOverrides */
     override def removeEventListener(
@@ -165,6 +165,6 @@ object externalSystemMod {
     /**
       * @hidden
       */
-    var system_array_ : js.Any = js.native
+    /* private */ var system_array_ : js.Any = js.native
   }
 }

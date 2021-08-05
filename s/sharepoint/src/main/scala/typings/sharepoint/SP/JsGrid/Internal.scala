@@ -21,8 +21,7 @@ object Internal {
   }
   object DiffTracker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Clear: () => Unit,
       ExternalAPI: AnyChanges,
       NotifyRollbackChange: IChangeKey => Unit,
@@ -33,23 +32,17 @@ object Internal {
       __obj.asInstanceOf[DiffTracker]
     }
     
-    @scala.inline
-    implicit class DiffTrackerMutableBuilder[Self <: DiffTracker] (val x: Self) extends AnyVal {
+    extension [Self <: DiffTracker](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExternalAPI(value: AnyChanges): Self = StObject.set(x, "ExternalAPI", value.asInstanceOf[js.Any])
+      inline def setExternalAPI(value: AnyChanges): Self = StObject.set(x, "ExternalAPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifyRollbackChange(value: IChangeKey => Unit): Self = StObject.set(x, "NotifyRollbackChange", js.Any.fromFunction1(value))
+      inline def setNotifyRollbackChange(value: IChangeKey => Unit): Self = StObject.set(x, "NotifyRollbackChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifySynchronizeToChange(value: IChangeKey => Unit): Self = StObject.set(x, "NotifySynchronizeToChange", js.Any.fromFunction1(value))
+      inline def setNotifySynchronizeToChange(value: IChangeKey => Unit): Self = StObject.set(x, "NotifySynchronizeToChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyVacateChange(value: IChangeKey => Unit): Self = StObject.set(x, "NotifyVacateChange", js.Any.fromFunction1(value))
+      inline def setNotifyVacateChange(value: IChangeKey => Unit): Self = StObject.set(x, "NotifyVacateChange", js.Any.fromFunction1(value))
     }
   }
   
@@ -62,17 +55,14 @@ object Internal {
   }
   object PropertyUpdate {
     
-    @scala.inline
-    def apply(localized: String): PropertyUpdate = {
+    inline def apply(localized: String): PropertyUpdate = {
       val __obj = js.Dynamic.literal(localized = localized.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropertyUpdate]
     }
     
-    @scala.inline
-    implicit class PropertyUpdateMutableBuilder[Self <: PropertyUpdate] (val x: Self) extends AnyVal {
+    extension [Self <: PropertyUpdate](x: Self) {
       
-      @scala.inline
-      def setLocalized(value: String): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
+      inline def setLocalized(value: String): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     }
   }
 }

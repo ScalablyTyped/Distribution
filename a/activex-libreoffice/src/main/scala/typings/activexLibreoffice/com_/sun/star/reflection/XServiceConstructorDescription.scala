@@ -55,8 +55,7 @@ trait XServiceConstructorDescription extends StObject {
 }
 object XServiceConstructorDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Exceptions: SafeArray[XCompoundTypeDescription],
     Name: String,
     Parameters: SafeArray[XParameter],
@@ -69,28 +68,20 @@ object XServiceConstructorDescription {
     __obj.asInstanceOf[XServiceConstructorDescription]
   }
   
-  @scala.inline
-  implicit class XServiceConstructorDescriptionMutableBuilder[Self <: XServiceConstructorDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XServiceConstructorDescription](x: Self) {
     
-    @scala.inline
-    def setExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
+    inline def setExceptions(value: SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getExceptions", js.Any.fromFunction0(value))
+    inline def setGetExceptions(value: () => SafeArray[XCompoundTypeDescription]): Self = StObject.set(x, "getExceptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => SafeArray[XParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => SafeArray[XParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDefaultConstructor(value: () => Boolean): Self = StObject.set(x, "isDefaultConstructor", js.Any.fromFunction0(value))
+    inline def setIsDefaultConstructor(value: () => Boolean): Self = StObject.set(x, "isDefaultConstructor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: SafeArray[XParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SafeArray[XParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

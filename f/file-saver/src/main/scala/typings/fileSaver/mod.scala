@@ -23,37 +23,28 @@ object mod {
     }
     object Window {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         saveAs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FileSaver.saveAs */ js.Any
       ): Window = {
         val __obj = js.Dynamic.literal(saveAs = saveAs.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setSaveAs(
+        inline def setSaveAs(
           value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FileSaver.saveAs */ js.Any
         ): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @scala.inline
-  def saveAs(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: String, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: String, filename: String, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: String, filename: String, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: String, filename: Unit, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: String, filename: Unit, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def saveAs(data: String, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: String, filename: String, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: String, filename: String, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: String, filename: Unit, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: String, filename: Unit, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * FileSaver.js implements the saveAs() FileSaver interface in browsers that do not natively support it.
     * @param data - The actual file data blob or URL.
@@ -68,18 +59,12 @@ object mod {
     * @deprecated use `{ autoBom: false }` as the third argument
     */
   // tslint:disable-next-line:unified-signatures
-  @scala.inline
-  def saveAs(data: Blob): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: Blob, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: Blob, filename: String, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: Blob, filename: String, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: Blob, filename: Unit, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def saveAs(data: Blob, filename: Unit, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: Blob): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def saveAs(data: Blob, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: Blob, filename: String, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: Blob, filename: String, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: Blob, filename: Unit, disableAutoBOM: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], disableAutoBOM.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveAs(data: Blob, filename: Unit, options: FileSaverOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveAs")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait FileSaverOptions extends StObject {
     
@@ -91,17 +76,14 @@ object mod {
   }
   object FileSaverOptions {
     
-    @scala.inline
-    def apply(autoBom: Boolean): FileSaverOptions = {
+    inline def apply(autoBom: Boolean): FileSaverOptions = {
       val __obj = js.Dynamic.literal(autoBom = autoBom.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileSaverOptions]
     }
     
-    @scala.inline
-    implicit class FileSaverOptionsMutableBuilder[Self <: FileSaverOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FileSaverOptions](x: Self) {
       
-      @scala.inline
-      def setAutoBom(value: Boolean): Self = StObject.set(x, "autoBom", value.asInstanceOf[js.Any])
+      inline def setAutoBom(value: Boolean): Self = StObject.set(x, "autoBom", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,19 +18,15 @@ trait SetDocumentContentRequest extends StObject {
 }
 object SetDocumentContentRequest {
   
-  @scala.inline
-  def apply(frameId: FrameId, html: String): SetDocumentContentRequest = {
+  inline def apply(frameId: FrameId, html: String): SetDocumentContentRequest = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDocumentContentRequest]
   }
   
-  @scala.inline
-  implicit class SetDocumentContentRequestMutableBuilder[Self <: SetDocumentContentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDocumentContentRequest](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }
 }

@@ -21,15 +21,13 @@ trait UnaryLike
      with _Node
 object UnaryLike {
   
-  @scala.inline
-  def SpreadElement_(argument: Expression): typings.babelTypes.indexTs37Mod.SpreadElement_ = {
+  inline def SpreadElement_(argument: Expression): typings.babelTypes.indexTs37Mod.SpreadElement_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("SpreadElement")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.SpreadElement_]
   }
   
-  @scala.inline
-  def UnaryExpression_(
+  inline def UnaryExpression_(
     argument: Expression,
     operator: void | `throw` | delete | Exclamationmark | Plussign | `-_` | Tilde | typeof,
     prefix: Boolean

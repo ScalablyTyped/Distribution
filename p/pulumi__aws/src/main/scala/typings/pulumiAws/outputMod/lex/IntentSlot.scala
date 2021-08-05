@@ -62,61 +62,43 @@ trait IntentSlot extends StObject {
 }
 object IntentSlot {
   
-  @scala.inline
-  def apply(name: String, slotConstraint: String, slotType: String): IntentSlot = {
+  inline def apply(name: String, slotConstraint: String, slotType: String): IntentSlot = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], slotConstraint = slotConstraint.asInstanceOf[js.Any], slotType = slotType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentSlot]
   }
   
-  @scala.inline
-  implicit class IntentSlotMutableBuilder[Self <: IntentSlot] (val x: Self) extends AnyVal {
+  extension [Self <: IntentSlot](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setResponseCard(value: String): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+    inline def setResponseCard(value: String): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+    inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
     
-    @scala.inline
-    def setSampleUtterances(value: js.Array[String]): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
+    inline def setSampleUtterances(value: js.Array[String]): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
+    inline def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
     
-    @scala.inline
-    def setSampleUtterancesVarargs(value: String*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
+    inline def setSampleUtterancesVarargs(value: String*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
     
-    @scala.inline
-    def setSlotConstraint(value: String): Self = StObject.set(x, "slotConstraint", value.asInstanceOf[js.Any])
+    inline def setSlotConstraint(value: String): Self = StObject.set(x, "slotConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotType(value: String): Self = StObject.set(x, "slotType", value.asInstanceOf[js.Any])
+    inline def setSlotType(value: String): Self = StObject.set(x, "slotType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotTypeVersion(value: String): Self = StObject.set(x, "slotTypeVersion", value.asInstanceOf[js.Any])
+    inline def setSlotTypeVersion(value: String): Self = StObject.set(x, "slotTypeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotTypeVersionUndefined: Self = StObject.set(x, "slotTypeVersion", js.undefined)
+    inline def setSlotTypeVersionUndefined: Self = StObject.set(x, "slotTypeVersion", js.undefined)
     
-    @scala.inline
-    def setValueElicitationPrompt(value: IntentSlotValueElicitationPrompt): Self = StObject.set(x, "valueElicitationPrompt", value.asInstanceOf[js.Any])
+    inline def setValueElicitationPrompt(value: IntentSlotValueElicitationPrompt): Self = StObject.set(x, "valueElicitationPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueElicitationPromptUndefined: Self = StObject.set(x, "valueElicitationPrompt", js.undefined)
+    inline def setValueElicitationPromptUndefined: Self = StObject.set(x, "valueElicitationPrompt", js.undefined)
   }
 }

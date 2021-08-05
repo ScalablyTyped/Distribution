@@ -86,29 +86,19 @@ object mod {
     def walkEntries(callback: js.Function1[/* entry */ Entry, js.Promise[Unit] | Unit], numEntries: Double): js.Promise[Unit] = js.native
   }
   
-  @scala.inline
-  def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @scala.inline
-  def fromBuffer(buffer: Buffer): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
-  @scala.inline
-  def fromBuffer(buffer: Buffer, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
+  inline def fromBuffer(buffer: Buffer): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
+  inline def fromBuffer(buffer: Buffer, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @scala.inline
-  def fromFd(fd: Double): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
-  @scala.inline
-  def fromFd(fd: Double, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
+  inline def fromFd(fd: Double): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
+  inline def fromFd(fd: Double, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFd")(fd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @scala.inline
-  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
-  @scala.inline
-  def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
+  inline def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
+  inline def fromRandomAccessReader(reader: typings.yauzl.mod.RandomAccessReader, totalSize: Double, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandomAccessReader")(reader.asInstanceOf[js.Any], totalSize.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @scala.inline
-  def open(path: String): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
-  @scala.inline
-  def open(path: String, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
+  inline def open(path: String): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
+  inline def open(path: String, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]
   
-  @scala.inline
-  def validateFileName(fileName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFileName")(fileName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def validateFileName(fileName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateFileName")(fileName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

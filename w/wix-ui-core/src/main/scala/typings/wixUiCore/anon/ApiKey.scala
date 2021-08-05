@@ -14,28 +14,21 @@ trait ApiKey extends StObject {
 }
 object ApiKey {
   
-  @scala.inline
-  def apply(lang: String): ApiKey = {
+  inline def apply(lang: String): ApiKey = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKey]
   }
   
-  @scala.inline
-  implicit class ApiKeyMutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
+  extension [Self <: ApiKey](x: Self) {
     
-    @scala.inline
-    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+    inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
   }
 }

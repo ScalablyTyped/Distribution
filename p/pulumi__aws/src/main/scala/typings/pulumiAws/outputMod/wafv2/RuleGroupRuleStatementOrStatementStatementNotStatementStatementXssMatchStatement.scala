@@ -22,8 +22,7 @@ trait RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchSta
 }
 object RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: js.Array[
       RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatementTextTransformation
     ]
@@ -32,26 +31,21 @@ object RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchSt
     __obj.asInstanceOf[RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(
+    inline def setFieldToMatch(
       value: RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatementFieldToMatch
     ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: js.Array[
           RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatementTextTransformation
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(
+    inline def setTextTransformationsVarargs(
       value: RuleGroupRuleStatementOrStatementStatementNotStatementStatementXssMatchStatementTextTransformation*
     ): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }

@@ -12,19 +12,15 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(as: String, expr: ColumnRef | AggrFunc): Column = {
+  inline def apply(as: String, expr: ColumnRef | AggrFunc): Column = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpr(value: ColumnRef | AggrFunc): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: ColumnRef | AggrFunc): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
   }
 }

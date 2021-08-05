@@ -12,19 +12,15 @@ trait SpeechModels extends StObject {
 }
 object SpeechModels {
   
-  @scala.inline
-  def apply(models: js.Array[SpeechModel]): SpeechModels = {
+  inline def apply(models: js.Array[SpeechModel]): SpeechModels = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechModels]
   }
   
-  @scala.inline
-  implicit class SpeechModelsMutableBuilder[Self <: SpeechModels] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechModels](x: Self) {
     
-    @scala.inline
-    def setModels(value: js.Array[SpeechModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: js.Array[SpeechModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsVarargs(value: SpeechModel*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: SpeechModel*): Self = StObject.set(x, "models", js.Array(value :_*))
   }
 }

@@ -111,17 +111,14 @@ object anon {
   }
   object StackTraceLimit {
     
-    @scala.inline
-    def apply(stackTraceLimit: Double): StackTraceLimit = {
+    inline def apply(stackTraceLimit: Double): StackTraceLimit = {
       val __obj = js.Dynamic.literal(stackTraceLimit = stackTraceLimit.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackTraceLimit]
     }
     
-    @scala.inline
-    implicit class StackTraceLimitMutableBuilder[Self <: StackTraceLimit] (val x: Self) extends AnyVal {
+    extension [Self <: StackTraceLimit](x: Self) {
       
-      @scala.inline
-      def setStackTraceLimit(value: Double): Self = StObject.set(x, "stackTraceLimit", value.asInstanceOf[js.Any])
+      inline def setStackTraceLimit(value: Double): Self = StObject.set(x, "stackTraceLimit", value.asInstanceOf[js.Any])
     }
   }
 }

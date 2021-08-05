@@ -12,16 +12,13 @@ trait SignKeyObjectInput
 }
 object SignKeyObjectInput {
   
-  @scala.inline
-  def apply(key: KeyObject): SignKeyObjectInput = {
+  inline def apply(key: KeyObject): SignKeyObjectInput = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignKeyObjectInput]
   }
   
-  @scala.inline
-  implicit class SignKeyObjectInputMutableBuilder[Self <: SignKeyObjectInput] (val x: Self) extends AnyVal {
+  extension [Self <: SignKeyObjectInput](x: Self) {
     
-    @scala.inline
-    def setKey(value: KeyObject): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: KeyObject): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

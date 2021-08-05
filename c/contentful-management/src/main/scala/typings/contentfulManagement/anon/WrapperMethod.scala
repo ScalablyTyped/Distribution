@@ -23,22 +23,17 @@ trait WrapperMethod[T] extends StObject {
 }
 object WrapperMethod {
   
-  @scala.inline
-  def apply[T](entityPath: String, http: AxiosInstance, wrapperMethod: (AxiosInstance, /* data */ js.Any) => T): WrapperMethod[T] = {
+  inline def apply[T](entityPath: String, http: AxiosInstance, wrapperMethod: (AxiosInstance, /* data */ js.Any) => T): WrapperMethod[T] = {
     val __obj = js.Dynamic.literal(entityPath = entityPath.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], wrapperMethod = js.Any.fromFunction2(wrapperMethod))
     __obj.asInstanceOf[WrapperMethod[T]]
   }
   
-  @scala.inline
-  implicit class WrapperMethodMutableBuilder[Self <: WrapperMethod[?], T] (val x: Self & WrapperMethod[T]) extends AnyVal {
+  extension [Self <: WrapperMethod[?], T](x: Self & WrapperMethod[T]) {
     
-    @scala.inline
-    def setEntityPath(value: String): Self = StObject.set(x, "entityPath", value.asInstanceOf[js.Any])
+    inline def setEntityPath(value: String): Self = StObject.set(x, "entityPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: AxiosInstance): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapperMethod(value: (AxiosInstance, /* data */ js.Any) => T): Self = StObject.set(x, "wrapperMethod", js.Any.fromFunction2(value))
+    inline def setWrapperMethod(value: (AxiosInstance, /* data */ js.Any) => T): Self = StObject.set(x, "wrapperMethod", js.Any.fromFunction2(value))
   }
 }

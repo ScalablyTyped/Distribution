@@ -16,23 +16,19 @@ trait DroppedLabels extends StObject {
 }
 object DroppedLabels {
   
-  @scala.inline
-  def apply(): DroppedLabels = {
+  inline def apply(): DroppedLabels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DroppedLabels]
   }
   
-  @scala.inline
-  implicit class DroppedLabelsMutableBuilder[Self <: DroppedLabels] (val x: Self) extends AnyVal {
+  extension [Self <: DroppedLabels](x: Self) {
     
-    @scala.inline
-    def setLabel(
+    inline def setLabel(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.DroppedLabels & TopLevel[js.Any]
     ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

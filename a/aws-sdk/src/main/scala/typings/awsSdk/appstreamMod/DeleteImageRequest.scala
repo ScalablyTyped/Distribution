@@ -13,16 +13,13 @@ trait DeleteImageRequest extends StObject {
 }
 object DeleteImageRequest {
   
-  @scala.inline
-  def apply(Name: Name): DeleteImageRequest = {
+  inline def apply(Name: Name): DeleteImageRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteImageRequest]
   }
   
-  @scala.inline
-  implicit class DeleteImageRequestMutableBuilder[Self <: DeleteImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteImageRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

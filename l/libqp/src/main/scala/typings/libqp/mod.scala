@@ -25,18 +25,13 @@ object mod {
     def this(opts: EncoderOptions) = this()
   }
   
-  @scala.inline
-  def decode(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def decode(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def encode(buffer: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(buffer: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def wrap(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def wrap(str: String, lineLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def wrap(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def wrap(str: String, lineLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait EncoderOptions
     extends StObject
@@ -46,20 +41,16 @@ object mod {
   }
   object EncoderOptions {
     
-    @scala.inline
-    def apply(): EncoderOptions = {
+    inline def apply(): EncoderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncoderOptions]
     }
     
-    @scala.inline
-    implicit class EncoderOptionsMutableBuilder[Self <: EncoderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EncoderOptions](x: Self) {
       
-      @scala.inline
-      def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
+      inline def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineLengthUndefined: Self = StObject.set(x, "lineLength", js.undefined)
+      inline def setLineLengthUndefined: Self = StObject.set(x, "lineLength", js.undefined)
     }
   }
 }

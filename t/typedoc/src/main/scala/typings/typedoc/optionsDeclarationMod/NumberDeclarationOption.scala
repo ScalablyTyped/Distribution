@@ -22,35 +22,26 @@ trait NumberDeclarationOption
 }
 object NumberDeclarationOption {
   
-  @scala.inline
-  def apply(help: String, name: String, `type`: Number): NumberDeclarationOption = {
+  inline def apply(help: String, name: String, `type`: Number): NumberDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberDeclarationOption]
   }
   
-  @scala.inline
-  implicit class NumberDeclarationOptionMutableBuilder[Self <: NumberDeclarationOption] (val x: Self) extends AnyVal {
+  extension [Self <: NumberDeclarationOption](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,43 +18,31 @@ trait Duration extends StObject {
 }
 object Duration {
   
-  @scala.inline
-  def apply(): Duration = {
+  inline def apply(): Duration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
+    inline def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+    inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
-    @scala.inline
-    def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
+    inline def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
+    inline def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
   }
 }

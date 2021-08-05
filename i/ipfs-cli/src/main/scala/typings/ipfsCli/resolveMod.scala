@@ -36,6 +36,5 @@ object resolveMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintRefTimeout: Ref): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintRefTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def handler(hasHasIpfsPrintRefTimeout: Ref): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintRefTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

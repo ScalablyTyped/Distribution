@@ -12,19 +12,15 @@ trait DeleteResponse extends StObject {
 }
 object DeleteResponse {
   
-  @scala.inline
-  def apply(address: String, message: String): DeleteResponse = {
+  inline def apply(address: String, message: String): DeleteResponse = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResponse]
   }
   
-  @scala.inline
-  implicit class DeleteResponseMutableBuilder[Self <: DeleteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResponse](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

@@ -10,17 +10,12 @@ object scrollbarSizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @scala.inline
-  def scrollbarSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")().asInstanceOf[Double]
-  @scala.inline
-  def scrollbarSize(`type`: Unit, forced: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any], forced.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def scrollbarSize(`type`: SizingType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def scrollbarSize(`type`: SizingType, forced: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any], forced.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def scrollbarSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")().asInstanceOf[Double]
+  inline def scrollbarSize(`type`: Unit, forced: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any], forced.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def scrollbarSize(`type`: SizingType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def scrollbarSize(`type`: SizingType, forced: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any], forced.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdUtils.reactMdUtilsStrings.height
@@ -29,10 +24,8 @@ object scrollbarSizeMod {
   trait SizingType extends StObject
   object SizingType {
     
-    @scala.inline
-    def height: typings.reactMdUtils.reactMdUtilsStrings.height = "height".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.height]
+    inline def height: typings.reactMdUtils.reactMdUtilsStrings.height = "height".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.height]
     
-    @scala.inline
-    def width: typings.reactMdUtils.reactMdUtilsStrings.width = "width".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.width]
+    inline def width: typings.reactMdUtils.reactMdUtilsStrings.width = "width".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.width]
   }
 }

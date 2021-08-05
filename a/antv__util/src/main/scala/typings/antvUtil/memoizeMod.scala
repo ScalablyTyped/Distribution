@@ -11,8 +11,6 @@ object memoizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(f: js.Function): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Call]
-  @scala.inline
-  def default(f: js.Function, resolver: js.Function1[/* repeated */ js.Any, String]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def default(f: js.Function): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Call]
+  inline def default(f: js.Function, resolver: js.Function1[/* repeated */ js.Any, String]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Call]
 }

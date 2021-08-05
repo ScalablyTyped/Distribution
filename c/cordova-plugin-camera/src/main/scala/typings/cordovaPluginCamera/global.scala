@@ -22,39 +22,33 @@ object global {
     @JSGlobal("Camera.DestinationType")
     @js.native
     def DestinationType: DATAURL = js.native
-    @scala.inline
-    def DestinationType_=(x: DATAURL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DestinationType")(x.asInstanceOf[js.Any])
+    inline def DestinationType_=(x: DATAURL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DestinationType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Camera.Direction")
     @js.native
     def Direction: BACK = js.native
-    @scala.inline
-    def Direction_=(x: BACK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Direction")(x.asInstanceOf[js.Any])
+    inline def Direction_=(x: BACK): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Direction")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Camera.EncodingType")
     @js.native
     def EncodingType: JPEG = js.native
-    @scala.inline
-    def EncodingType_=(x: JPEG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EncodingType")(x.asInstanceOf[js.Any])
+    inline def EncodingType_=(x: JPEG): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EncodingType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Camera.MediaType")
     @js.native
     def MediaType: ALLMEDIA = js.native
-    @scala.inline
-    def MediaType_=(x: ALLMEDIA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MediaType")(x.asInstanceOf[js.Any])
+    inline def MediaType_=(x: ALLMEDIA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MediaType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Camera.PictureSourceType")
     @js.native
     def PictureSourceType: CAMERA = js.native
-    @scala.inline
-    def PictureSourceType_=(x: CAMERA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PictureSourceType")(x.asInstanceOf[js.Any])
+    inline def PictureSourceType_=(x: CAMERA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PictureSourceType")(x.asInstanceOf[js.Any])
     
     // Used only on iOS
     @JSGlobal("Camera.PopoverArrowDirection")
     @js.native
     def PopoverArrowDirection: ARROWANY = js.native
-    @scala.inline
-    def PopoverArrowDirection_=(x: ARROWANY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PopoverArrowDirection")(x.asInstanceOf[js.Any])
+    inline def PopoverArrowDirection_=(x: ARROWANY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PopoverArrowDirection")(x.asInstanceOf[js.Any])
   }
   
   /**

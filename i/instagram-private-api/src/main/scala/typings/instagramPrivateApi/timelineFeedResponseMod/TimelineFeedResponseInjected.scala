@@ -46,8 +46,7 @@ trait TimelineFeedResponseInjected extends StObject {
 }
 object TimelineFeedResponseInjected {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     about_ad_params: String,
     ad_id: String,
     ad_title: String,
@@ -72,73 +71,50 @@ object TimelineFeedResponseInjected {
     __obj.asInstanceOf[TimelineFeedResponseInjected]
   }
   
-  @scala.inline
-  implicit class TimelineFeedResponseInjectedMutableBuilder[Self <: TimelineFeedResponseInjected] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineFeedResponseInjected](x: Self) {
     
-    @scala.inline
-    def setAbout_ad_params(value: String): Self = StObject.set(x, "about_ad_params", value.asInstanceOf[js.Any])
+    inline def setAbout_ad_params(value: String): Self = StObject.set(x, "about_ad_params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAd_id(value: String): Self = StObject.set(x, "ad_id", value.asInstanceOf[js.Any])
+    inline def setAd_id(value: String): Self = StObject.set(x, "ad_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAd_title(value: String): Self = StObject.set(x, "ad_title", value.asInstanceOf[js.Any])
+    inline def setAd_title(value: String): Self = StObject.set(x, "ad_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
     
-    @scala.inline
-    def setDirect_share(value: Boolean): Self = StObject.set(x, "direct_share", value.asInstanceOf[js.Any])
+    inline def setDirect_share(value: Boolean): Self = StObject.set(x, "direct_share", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_viewability_eligible(value: Boolean): Self = StObject.set(x, "display_viewability_eligible", value.asInstanceOf[js.Any])
+    inline def setDisplay_viewability_eligible(value: Boolean): Self = StObject.set(x, "display_viewability_eligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide_flow_type(value: Double): Self = StObject.set(x, "hide_flow_type", value.asInstanceOf[js.Any])
+    inline def setHide_flow_type(value: Double): Self = StObject.set(x, "hide_flow_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide_label(value: String): Self = StObject.set(x, "hide_label", value.asInstanceOf[js.Any])
+    inline def setHide_label(value: String): Self = StObject.set(x, "hide_label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide_reasons_v2(value: js.Array[TimelineFeedResponseHideReasonsV2Item]): Self = StObject.set(x, "hide_reasons_v2", value.asInstanceOf[js.Any])
+    inline def setHide_reasons_v2(value: js.Array[TimelineFeedResponseHideReasonsV2Item]): Self = StObject.set(x, "hide_reasons_v2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide_reasons_v2Varargs(value: TimelineFeedResponseHideReasonsV2Item*): Self = StObject.set(x, "hide_reasons_v2", js.Array(value :_*))
+    inline def setHide_reasons_v2Varargs(value: TimelineFeedResponseHideReasonsV2Item*): Self = StObject.set(x, "hide_reasons_v2", js.Array(value :_*))
     
-    @scala.inline
-    def setInvalidation(value: Null): Self = StObject.set(x, "invalidation", value.asInstanceOf[js.Any])
+    inline def setInvalidation(value: Null): Self = StObject.set(x, "invalidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_demo(value: Boolean): Self = StObject.set(x, "is_demo", value.asInstanceOf[js.Any])
+    inline def setIs_demo(value: Boolean): Self = StObject.set(x, "is_demo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_holdout(value: Boolean): Self = StObject.set(x, "is_holdout", value.asInstanceOf[js.Any])
+    inline def setIs_holdout(value: Boolean): Self = StObject.set(x, "is_holdout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_leadgen_native_eligible(value: Boolean): Self = StObject.set(x, "is_leadgen_native_eligible", value.asInstanceOf[js.Any])
+    inline def setIs_leadgen_native_eligible(value: Boolean): Self = StObject.set(x, "is_leadgen_native_eligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLead_gen_form_id(value: String | Double): Self = StObject.set(x, "lead_gen_form_id", value.asInstanceOf[js.Any])
+    inline def setLead_gen_form_id(value: String | Double): Self = StObject.set(x, "lead_gen_form_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_ad_choices(value: Boolean): Self = StObject.set(x, "show_ad_choices", value.asInstanceOf[js.Any])
+    inline def setShow_ad_choices(value: Boolean): Self = StObject.set(x, "show_ad_choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow_icon(value: Boolean): Self = StObject.set(x, "show_icon", value.asInstanceOf[js.Any])
+    inline def setShow_icon(value: Boolean): Self = StObject.set(x, "show_icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracking_token(value: String): Self = StObject.set(x, "tracking_token", value.asInstanceOf[js.Any])
+    inline def setTracking_token(value: String): Self = StObject.set(x, "tracking_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_tags(value: js.Array[js.Any]): Self = StObject.set(x, "view_tags", value.asInstanceOf[js.Any])
+    inline def setView_tags(value: js.Array[js.Any]): Self = StObject.set(x, "view_tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView_tagsVarargs(value: js.Any*): Self = StObject.set(x, "view_tags", js.Array(value :_*))
+    inline def setView_tagsVarargs(value: js.Any*): Self = StObject.set(x, "view_tags", js.Array(value :_*))
   }
 }

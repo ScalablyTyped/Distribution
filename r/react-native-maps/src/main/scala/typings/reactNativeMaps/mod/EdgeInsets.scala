@@ -17,25 +17,19 @@ trait EdgeInsets extends StObject {
 }
 object EdgeInsets {
   
-  @scala.inline
-  def apply(bottom: Number, left: Number, right: Number, top: Number): EdgeInsets = {
+  inline def apply(bottom: Number, left: Number, right: Number, top: Number): EdgeInsets = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeInsets]
   }
   
-  @scala.inline
-  implicit class EdgeInsetsMutableBuilder[Self <: EdgeInsets] (val x: Self) extends AnyVal {
+  extension [Self <: EdgeInsets](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Number): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Number): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Number): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Number): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Number): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Number): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Number): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Number): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait MediaPlaybackItemFailedEventArgs extends StObject {
 }
 object MediaPlaybackItemFailedEventArgs {
   
-  @scala.inline
-  def apply(error: MediaPlaybackItemError, item: MediaPlaybackItem): MediaPlaybackItemFailedEventArgs = {
+  inline def apply(error: MediaPlaybackItemError, item: MediaPlaybackItem): MediaPlaybackItemFailedEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlaybackItemFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaPlaybackItemFailedEventArgsMutableBuilder[Self <: MediaPlaybackItemFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaPlaybackItemFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: MediaPlaybackItemError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: MediaPlaybackItemError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: MediaPlaybackItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: MediaPlaybackItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

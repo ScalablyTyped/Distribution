@@ -11,16 +11,13 @@ trait DirectionsService extends StObject {
 }
 object DirectionsService {
   
-  @scala.inline
-  def apply(getDirections: DirectionsRequest => MapiRequest): DirectionsService = {
+  inline def apply(getDirections: DirectionsRequest => MapiRequest): DirectionsService = {
     val __obj = js.Dynamic.literal(getDirections = js.Any.fromFunction1(getDirections))
     __obj.asInstanceOf[DirectionsService]
   }
   
-  @scala.inline
-  implicit class DirectionsServiceMutableBuilder[Self <: DirectionsService] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsService](x: Self) {
     
-    @scala.inline
-    def setGetDirections(value: DirectionsRequest => MapiRequest): Self = StObject.set(x, "getDirections", js.Any.fromFunction1(value))
+    inline def setGetDirections(value: DirectionsRequest => MapiRequest): Self = StObject.set(x, "getDirections", js.Any.fromFunction1(value))
   }
 }

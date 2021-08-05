@@ -15,16 +15,13 @@ trait Oval
 }
 object Oval {
   
-  @scala.inline
-  def apply(paths: IPathMap): Oval = {
+  inline def apply(paths: IPathMap): Oval = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oval]
   }
   
-  @scala.inline
-  implicit class OvalMutableBuilder[Self <: Oval] (val x: Self) extends AnyVal {
+  extension [Self <: Oval](x: Self) {
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

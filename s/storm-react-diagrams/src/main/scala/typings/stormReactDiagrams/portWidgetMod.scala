@@ -25,20 +25,16 @@ object portWidgetMod {
   }
   object PortProps {
     
-    @scala.inline
-    def apply(name: String, node: NodeModel): PortProps = {
+    inline def apply(name: String, node: NodeModel): PortProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortProps]
     }
     
-    @scala.inline
-    implicit class PortPropsMutableBuilder[Self <: PortProps] (val x: Self) extends AnyVal {
+    extension [Self <: PortProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: NodeModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: NodeModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,17 +44,14 @@ object portWidgetMod {
   }
   object PortState {
     
-    @scala.inline
-    def apply(selected: Boolean): PortState = {
+    inline def apply(selected: Boolean): PortState = {
       val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[PortState]
     }
     
-    @scala.inline
-    implicit class PortStateMutableBuilder[Self <: PortState] (val x: Self) extends AnyVal {
+    extension [Self <: PortState](x: Self) {
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

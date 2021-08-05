@@ -23,31 +23,23 @@ trait ICD10CMConcept extends StObject {
 }
 object ICD10CMConcept {
   
-  @scala.inline
-  def apply(): ICD10CMConcept = {
+  inline def apply(): ICD10CMConcept = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICD10CMConcept]
   }
   
-  @scala.inline
-  implicit class ICD10CMConceptMutableBuilder[Self <: ICD10CMConcept] (val x: Self) extends AnyVal {
+  extension [Self <: ICD10CMConcept](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
   }
 }

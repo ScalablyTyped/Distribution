@@ -32,19 +32,15 @@ trait TraceCategoriesAndOptions extends StObject {
 }
 object TraceCategoriesAndOptions {
   
-  @scala.inline
-  def apply(categoryFilter: String, traceOptions: String): TraceCategoriesAndOptions = {
+  inline def apply(categoryFilter: String, traceOptions: String): TraceCategoriesAndOptions = {
     val __obj = js.Dynamic.literal(categoryFilter = categoryFilter.asInstanceOf[js.Any], traceOptions = traceOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceCategoriesAndOptions]
   }
   
-  @scala.inline
-  implicit class TraceCategoriesAndOptionsMutableBuilder[Self <: TraceCategoriesAndOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TraceCategoriesAndOptions](x: Self) {
     
-    @scala.inline
-    def setCategoryFilter(value: String): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
+    inline def setCategoryFilter(value: String): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceOptions(value: String): Self = StObject.set(x, "traceOptions", value.asInstanceOf[js.Any])
+    inline def setTraceOptions(value: String): Self = StObject.set(x, "traceOptions", value.asInstanceOf[js.Any])
   }
 }

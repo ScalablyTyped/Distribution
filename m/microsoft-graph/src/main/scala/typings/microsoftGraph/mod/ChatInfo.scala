@@ -17,40 +17,29 @@ trait ChatInfo extends StObject {
 }
 object ChatInfo {
   
-  @scala.inline
-  def apply(): ChatInfo = {
+  inline def apply(): ChatInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatInfo]
   }
   
-  @scala.inline
-  implicit class ChatInfoMutableBuilder[Self <: ChatInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ChatInfo](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: NullableOption[String]): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: NullableOption[String]): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdNull: Self = StObject.set(x, "messageId", null)
+    inline def setMessageIdNull: Self = StObject.set(x, "messageId", null)
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setReplyChainMessageId(value: NullableOption[String]): Self = StObject.set(x, "replyChainMessageId", value.asInstanceOf[js.Any])
+    inline def setReplyChainMessageId(value: NullableOption[String]): Self = StObject.set(x, "replyChainMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyChainMessageIdNull: Self = StObject.set(x, "replyChainMessageId", null)
+    inline def setReplyChainMessageIdNull: Self = StObject.set(x, "replyChainMessageId", null)
     
-    @scala.inline
-    def setReplyChainMessageIdUndefined: Self = StObject.set(x, "replyChainMessageId", js.undefined)
+    inline def setReplyChainMessageIdUndefined: Self = StObject.set(x, "replyChainMessageId", js.undefined)
     
-    @scala.inline
-    def setThreadId(value: NullableOption[String]): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+    inline def setThreadId(value: NullableOption[String]): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadIdNull: Self = StObject.set(x, "threadId", null)
+    inline def setThreadIdNull: Self = StObject.set(x, "threadId", null)
     
-    @scala.inline
-    def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
+    inline def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
   }
 }

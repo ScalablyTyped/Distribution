@@ -21,9 +21,7 @@ object RTCPeerConnection {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateCertificate(keygenAlgorithm: AlgorithmIdentifier): js.Promise[typings.std.RTCCertificate] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCertificate")(keygenAlgorithm.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.RTCCertificate]]
+  inline def generateCertificate(keygenAlgorithm: AlgorithmIdentifier): js.Promise[typings.std.RTCCertificate] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCertificate")(keygenAlgorithm.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.std.RTCCertificate]]
   
-  @scala.inline
-  def getDefaultIceServers(): js.Array[RTCIceServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultIceServers")().asInstanceOf[js.Array[RTCIceServer]]
+  inline def getDefaultIceServers(): js.Array[RTCIceServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultIceServers")().asInstanceOf[js.Array[RTCIceServer]]
 }

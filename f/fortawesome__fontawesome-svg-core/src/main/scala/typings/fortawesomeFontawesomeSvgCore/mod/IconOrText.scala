@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IconOrText extends StObject
 object IconOrText {
   
-  @scala.inline
-  def Text_(`abstract`: js.Array[AbstractElement], html: js.Array[String], node: HTMLCollection): typings.fortawesomeFontawesomeSvgCore.mod.Text_ = {
+  inline def Text_(`abstract`: js.Array[AbstractElement], html: js.Array[String], node: HTMLCollection): typings.fortawesomeFontawesomeSvgCore.mod.Text_ = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.updateDynamic("abstract")(`abstract`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("text")

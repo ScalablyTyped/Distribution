@@ -13,19 +13,15 @@ trait DomainClusterConfigZoneAwarenessConfig extends StObject {
 }
 object DomainClusterConfigZoneAwarenessConfig {
   
-  @scala.inline
-  def apply(): DomainClusterConfigZoneAwarenessConfig = {
+  inline def apply(): DomainClusterConfigZoneAwarenessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainClusterConfigZoneAwarenessConfig]
   }
   
-  @scala.inline
-  implicit class DomainClusterConfigZoneAwarenessConfigMutableBuilder[Self <: DomainClusterConfigZoneAwarenessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DomainClusterConfigZoneAwarenessConfig](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZoneCount(value: Double): Self = StObject.set(x, "availabilityZoneCount", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZoneCount(value: Double): Self = StObject.set(x, "availabilityZoneCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneCountUndefined: Self = StObject.set(x, "availabilityZoneCount", js.undefined)
+    inline def setAvailabilityZoneCountUndefined: Self = StObject.set(x, "availabilityZoneCount", js.undefined)
   }
 }

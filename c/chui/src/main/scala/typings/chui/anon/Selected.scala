@@ -12,25 +12,19 @@ trait Selected extends StObject {
 }
 object Selected {
   
-  @scala.inline
-  def apply(): Selected = {
+  inline def apply(): Selected = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Selected]
   }
   
-  @scala.inline
-  implicit class SelectedMutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
+  extension [Self <: Selected](x: Self) {
     
-    @scala.inline
-    def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

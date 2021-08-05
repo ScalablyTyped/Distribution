@@ -43,8 +43,7 @@ object connectorParamsMod {
   }
   object ConnectorParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       GeoJSON: js.Tuple2[js.Any, js.Object],
       HexJSON: js.Tuple2[js.Array[js.Any], Options],
       TopoJSON: js.Tuple2[js.Any, typings.antvDataSet.topojsonMod.Options],
@@ -67,47 +66,33 @@ object connectorParamsMod {
       __obj.asInstanceOf[ConnectorParams]
     }
     
-    @scala.inline
-    implicit class ConnectorParamsMutableBuilder[Self <: ConnectorParams] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectorParams](x: Self) {
       
-      @scala.inline
-      def setCsv(value: js.Tuple2[String, js.Object]): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+      inline def setCsv(value: js.Tuple2[String, js.Object]): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagram(value: js.Tuple2[js.Any, typings.antvDataSet.graphMod.Options]): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
+      inline def setDiagram(value: js.Tuple2[js.Any, typings.antvDataSet.graphMod.Options]): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDsv(value: js.Tuple2[String, typings.antvDataSet.dsvMod.Options]): Self = StObject.set(x, "dsv", value.asInstanceOf[js.Any])
+      inline def setDsv(value: js.Tuple2[String, typings.antvDataSet.dsvMod.Options]): Self = StObject.set(x, "dsv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo(value: js.Tuple2[js.Any, js.Object]): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+      inline def setGeo(value: js.Tuple2[js.Any, js.Object]): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoJSON(value: js.Tuple2[js.Any, js.Object]): Self = StObject.set(x, "GeoJSON", value.asInstanceOf[js.Any])
+      inline def setGeoJSON(value: js.Tuple2[js.Any, js.Object]): Self = StObject.set(x, "GeoJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraph(value: js.Tuple2[js.Any, typings.antvDataSet.graphMod.Options]): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: js.Tuple2[js.Any, typings.antvDataSet.graphMod.Options]): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: js.Tuple2[js.Array[js.Any], Options]): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: js.Tuple2[js.Array[js.Any], Options]): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setHex-json`(value: js.Tuple2[js.Array[js.Any], Options]): Self = StObject.set(x, "hex-json", value.asInstanceOf[js.Any])
+      inline def `setHex-json`(value: js.Tuple2[js.Array[js.Any], Options]): Self = StObject.set(x, "hex-json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHexJSON(value: js.Tuple2[js.Array[js.Any], Options]): Self = StObject.set(x, "HexJSON", value.asInstanceOf[js.Any])
+      inline def setHexJSON(value: js.Tuple2[js.Array[js.Any], Options]): Self = StObject.set(x, "HexJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHierarchy(value: js.Tuple2[js.Any, typings.antvDataSet.connectorHierarchyMod.Options]): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
+      inline def setHierarchy(value: js.Tuple2[js.Any, typings.antvDataSet.connectorHierarchyMod.Options]): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopoJSON(value: js.Tuple2[js.Any, typings.antvDataSet.topojsonMod.Options]): Self = StObject.set(x, "TopoJSON", value.asInstanceOf[js.Any])
+      inline def setTopoJSON(value: js.Tuple2[js.Any, typings.antvDataSet.topojsonMod.Options]): Self = StObject.set(x, "TopoJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTree(value: js.Tuple2[js.Any, typings.antvDataSet.connectorHierarchyMod.Options]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: js.Tuple2[js.Any, typings.antvDataSet.connectorHierarchyMod.Options]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsv(value: js.Tuple2[String, js.Object]): Self = StObject.set(x, "tsv", value.asInstanceOf[js.Any])
+      inline def setTsv(value: js.Tuple2[String, js.Object]): Self = StObject.set(x, "tsv", value.asInstanceOf[js.Any])
     }
   }
 }

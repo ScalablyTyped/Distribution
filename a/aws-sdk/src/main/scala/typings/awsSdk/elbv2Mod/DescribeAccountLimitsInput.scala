@@ -18,25 +18,19 @@ trait DescribeAccountLimitsInput extends StObject {
 }
 object DescribeAccountLimitsInput {
   
-  @scala.inline
-  def apply(): DescribeAccountLimitsInput = {
+  inline def apply(): DescribeAccountLimitsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountLimitsInput]
   }
   
-  @scala.inline
-  implicit class DescribeAccountLimitsInputMutableBuilder[Self <: DescribeAccountLimitsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountLimitsInput](x: Self) {
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
   }
 }

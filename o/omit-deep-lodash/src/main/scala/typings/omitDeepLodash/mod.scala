@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: js.Object, props: String): js.Object = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def apply(input: js.Object, props: String): js.Object = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   @JSImport("omit-deep-lodash", JSImport.Namespace)
   @js.native

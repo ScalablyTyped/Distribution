@@ -14,31 +14,23 @@ trait CreateItem extends StObject {
 }
 object CreateItem {
   
-  @scala.inline
-  def apply(included: js.Array[CreateItemIncluded]): CreateItem = {
+  inline def apply(included: js.Array[CreateItemIncluded]): CreateItem = {
     val __obj = js.Dynamic.literal(included = included.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItem]
   }
   
-  @scala.inline
-  implicit class CreateItemMutableBuilder[Self <: CreateItem] (val x: Self) extends AnyVal {
+  extension [Self <: CreateItem](x: Self) {
     
-    @scala.inline
-    def setData(value: CreateItemData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CreateItemData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setIncluded(value: js.Array[CreateItemIncluded]): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+    inline def setIncluded(value: js.Array[CreateItemIncluded]): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedVarargs(value: CreateItemIncluded*): Self = StObject.set(x, "included", js.Array(value :_*))
+    inline def setIncludedVarargs(value: CreateItemIncluded*): Self = StObject.set(x, "included", js.Array(value :_*))
     
-    @scala.inline
-    def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
+    inline def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
   }
 }

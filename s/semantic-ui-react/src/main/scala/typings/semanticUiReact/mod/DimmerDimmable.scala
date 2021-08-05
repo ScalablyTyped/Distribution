@@ -19,6 +19,5 @@ class DimmerDimmable protected ()
 }
 object DimmerDimmable {
   
-  @scala.inline
-  def apply: ComponentClass[DimmerDimmableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DimmerDimmable").asInstanceOf[ComponentClass[DimmerDimmableProps, ComponentState]]
+  inline def apply: ComponentClass[DimmerDimmableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DimmerDimmable").asInstanceOf[ComponentClass[DimmerDimmableProps, ComponentState]]
 }

@@ -11,8 +11,7 @@ trait SecureClientSessionOptions
      with ConnectionOptions
 object SecureClientSessionOptions {
   
-  @scala.inline
-  def apply(): SecureClientSessionOptions = {
+  inline def apply(): SecureClientSessionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecureClientSessionOptions]
   }

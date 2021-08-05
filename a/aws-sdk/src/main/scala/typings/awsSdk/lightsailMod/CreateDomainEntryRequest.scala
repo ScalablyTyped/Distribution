@@ -18,19 +18,15 @@ trait CreateDomainEntryRequest extends StObject {
 }
 object CreateDomainEntryRequest {
   
-  @scala.inline
-  def apply(domainEntry: DomainEntry, domainName: DomainName): CreateDomainEntryRequest = {
+  inline def apply(domainEntry: DomainEntry, domainName: DomainName): CreateDomainEntryRequest = {
     val __obj = js.Dynamic.literal(domainEntry = domainEntry.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDomainEntryRequest]
   }
   
-  @scala.inline
-  implicit class CreateDomainEntryRequestMutableBuilder[Self <: CreateDomainEntryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDomainEntryRequest](x: Self) {
     
-    @scala.inline
-    def setDomainEntry(value: DomainEntry): Self = StObject.set(x, "domainEntry", value.asInstanceOf[js.Any])
+    inline def setDomainEntry(value: DomainEntry): Self = StObject.set(x, "domainEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
   }
 }

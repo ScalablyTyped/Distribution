@@ -12,8 +12,7 @@ trait CSSMathProduct
 }
 object CSSMathProduct {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: /* repeated */ CSSNumberish => CSSNumericValue,
     div: /* repeated */ CSSNumberish => CSSNumericValue,
     equals_ : /* repeated */ CSSNumberish => Boolean,
@@ -33,10 +32,8 @@ object CSSMathProduct {
     __obj.asInstanceOf[CSSMathProduct]
   }
   
-  @scala.inline
-  implicit class CSSMathProductMutableBuilder[Self <: CSSMathProduct] (val x: Self) extends AnyVal {
+  extension [Self <: CSSMathProduct](x: Self) {
     
-    @scala.inline
-    def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

@@ -52,61 +52,43 @@ trait Date extends StObject {
 }
 object Date {
   
-  @scala.inline
-  def apply(): Date = {
+  inline def apply(): Date = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Date]
   }
   
-  @scala.inline
-  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+  extension [Self <: Date](x: Self) {
     
-    @scala.inline
-    def setDate(value: now | typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: now | typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setMaxDate(value: typings.std.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: typings.std.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+    inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    @scala.inline
-    def setMinDate(value: typings.std.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: typings.std.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+    inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
-    @scala.inline
-    def setTitleFormat(value: String): Self = StObject.set(x, "titleFormat", value.asInstanceOf[js.Any])
+    inline def setTitleFormat(value: String): Self = StObject.set(x, "titleFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFormatUndefined: Self = StObject.set(x, "titleFormat", js.undefined)
+    inline def setTitleFormatUndefined: Self = StObject.set(x, "titleFormat", js.undefined)
     
-    @scala.inline
-    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     
-    @scala.inline
-    def setType(value: daily | monthly | yearly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: daily | monthly | yearly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

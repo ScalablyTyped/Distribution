@@ -21,29 +21,22 @@ trait JSONSchemaObjectType extends StObject {
 }
 object JSONSchemaObjectType {
   
-  @scala.inline
-  def apply(): JSONSchemaObjectType = {
+  inline def apply(): JSONSchemaObjectType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[JSONSchemaObjectType]
   }
   
-  @scala.inline
-  implicit class JSONSchemaObjectTypeMutableBuilder[Self <: JSONSchemaObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: JSONSchemaObjectType](x: Self) {
     
-    @scala.inline
-    def setAdditionalProperties(value: JSONSchemaObjectType): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperties(value: JSONSchemaObjectType): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+    inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[JSONSchemaBasicType | JSONSchemaRefType]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[JSONSchemaBasicType | JSONSchemaRefType]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

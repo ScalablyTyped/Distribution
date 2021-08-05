@@ -20,8 +20,7 @@ trait KmlDocument
 }
 object KmlDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -78,13 +77,10 @@ object KmlDocument {
     __obj.asInstanceOf[KmlDocument]
   }
   
-  @scala.inline
-  implicit class KmlDocumentMutableBuilder[Self <: KmlDocument] (val x: Self) extends AnyVal {
+  extension [Self <: KmlDocument](x: Self) {
     
-    @scala.inline
-    def setGetElementsByStyleUrl(value: String => KmlObjectList[KmlObject]): Self = StObject.set(x, "getElementsByStyleUrl", js.Any.fromFunction1(value))
+    inline def setGetElementsByStyleUrl(value: String => KmlObjectList[KmlObject]): Self = StObject.set(x, "getElementsByStyleUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStyleSelectors(value: () => GEStyleSelectorContainer): Self = StObject.set(x, "getStyleSelectors", js.Any.fromFunction0(value))
+    inline def setGetStyleSelectors(value: () => GEStyleSelectorContainer): Self = StObject.set(x, "getStyleSelectors", js.Any.fromFunction0(value))
   }
 }

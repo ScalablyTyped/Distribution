@@ -23,8 +23,7 @@ trait ModuleImportPayload extends StObject {
 }
 object ModuleImportPayload {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: PayloadData,
     dataID: DataID,
     operationReference: js.Any,
@@ -36,28 +35,20 @@ object ModuleImportPayload {
     __obj.asInstanceOf[ModuleImportPayload]
   }
   
-  @scala.inline
-  implicit class ModuleImportPayloadMutableBuilder[Self <: ModuleImportPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleImportPayload](x: Self) {
     
-    @scala.inline
-    def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
+    inline def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationReference(value: js.Any): Self = StObject.set(x, "operationReference", value.asInstanceOf[js.Any])
+    inline def setOperationReference(value: js.Any): Self = StObject.set(x, "operationReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

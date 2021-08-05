@@ -61,64 +61,45 @@ trait SchemaRoomLeaveDiagnostics extends StObject {
 }
 object SchemaRoomLeaveDiagnostics {
   
-  @scala.inline
-  def apply(): SchemaRoomLeaveDiagnostics = {
+  inline def apply(): SchemaRoomLeaveDiagnostics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoomLeaveDiagnostics]
   }
   
-  @scala.inline
-  implicit class SchemaRoomLeaveDiagnosticsMutableBuilder[Self <: SchemaRoomLeaveDiagnostics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoomLeaveDiagnostics](x: Self) {
     
-    @scala.inline
-    def setAndroidNetworkSubtype(value: Double): Self = StObject.set(x, "androidNetworkSubtype", value.asInstanceOf[js.Any])
+    inline def setAndroidNetworkSubtype(value: Double): Self = StObject.set(x, "androidNetworkSubtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidNetworkSubtypeUndefined: Self = StObject.set(x, "androidNetworkSubtype", js.undefined)
+    inline def setAndroidNetworkSubtypeUndefined: Self = StObject.set(x, "androidNetworkSubtype", js.undefined)
     
-    @scala.inline
-    def setAndroidNetworkType(value: Double): Self = StObject.set(x, "androidNetworkType", value.asInstanceOf[js.Any])
+    inline def setAndroidNetworkType(value: Double): Self = StObject.set(x, "androidNetworkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidNetworkTypeUndefined: Self = StObject.set(x, "androidNetworkType", js.undefined)
+    inline def setAndroidNetworkTypeUndefined: Self = StObject.set(x, "androidNetworkType", js.undefined)
     
-    @scala.inline
-    def setIosNetworkType(value: Double): Self = StObject.set(x, "iosNetworkType", value.asInstanceOf[js.Any])
+    inline def setIosNetworkType(value: Double): Self = StObject.set(x, "iosNetworkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosNetworkTypeUndefined: Self = StObject.set(x, "iosNetworkType", js.undefined)
+    inline def setIosNetworkTypeUndefined: Self = StObject.set(x, "iosNetworkType", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNetworkOperatorCode(value: String): Self = StObject.set(x, "networkOperatorCode", value.asInstanceOf[js.Any])
+    inline def setNetworkOperatorCode(value: String): Self = StObject.set(x, "networkOperatorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkOperatorCodeUndefined: Self = StObject.set(x, "networkOperatorCode", js.undefined)
+    inline def setNetworkOperatorCodeUndefined: Self = StObject.set(x, "networkOperatorCode", js.undefined)
     
-    @scala.inline
-    def setNetworkOperatorName(value: String): Self = StObject.set(x, "networkOperatorName", value.asInstanceOf[js.Any])
+    inline def setNetworkOperatorName(value: String): Self = StObject.set(x, "networkOperatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkOperatorNameUndefined: Self = StObject.set(x, "networkOperatorName", js.undefined)
+    inline def setNetworkOperatorNameUndefined: Self = StObject.set(x, "networkOperatorName", js.undefined)
     
-    @scala.inline
-    def setPeerSession(value: js.Array[SchemaPeerSessionDiagnostics]): Self = StObject.set(x, "peerSession", value.asInstanceOf[js.Any])
+    inline def setPeerSession(value: js.Array[SchemaPeerSessionDiagnostics]): Self = StObject.set(x, "peerSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerSessionUndefined: Self = StObject.set(x, "peerSession", js.undefined)
+    inline def setPeerSessionUndefined: Self = StObject.set(x, "peerSession", js.undefined)
     
-    @scala.inline
-    def setPeerSessionVarargs(value: SchemaPeerSessionDiagnostics*): Self = StObject.set(x, "peerSession", js.Array(value :_*))
+    inline def setPeerSessionVarargs(value: SchemaPeerSessionDiagnostics*): Self = StObject.set(x, "peerSession", js.Array(value :_*))
     
-    @scala.inline
-    def setSocketsUsed(value: Boolean): Self = StObject.set(x, "socketsUsed", value.asInstanceOf[js.Any])
+    inline def setSocketsUsed(value: Boolean): Self = StObject.set(x, "socketsUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketsUsedUndefined: Self = StObject.set(x, "socketsUsed", js.undefined)
+    inline def setSocketsUsedUndefined: Self = StObject.set(x, "socketsUsed", js.undefined)
   }
 }

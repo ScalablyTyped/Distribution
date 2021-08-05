@@ -139,6 +139,5 @@ object JsonObjectProperty {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getItemValuesDefaultValue(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValuesDefaultValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getItemValuesDefaultValue(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValuesDefaultValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

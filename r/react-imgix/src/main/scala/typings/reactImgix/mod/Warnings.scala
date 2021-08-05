@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Warnings extends StObject
 object Warnings {
   
-  @scala.inline
-  def fallbackImage: typings.reactImgix.reactImgixStrings.fallbackImage = "fallbackImage".asInstanceOf[typings.reactImgix.reactImgixStrings.fallbackImage]
+  inline def fallbackImage: typings.reactImgix.reactImgixStrings.fallbackImage = "fallbackImage".asInstanceOf[typings.reactImgix.reactImgixStrings.fallbackImage]
   
-  @scala.inline
-  def invalidARFormat: typings.reactImgix.reactImgixStrings.invalidARFormat = "invalidARFormat".asInstanceOf[typings.reactImgix.reactImgixStrings.invalidARFormat]
+  inline def invalidARFormat: typings.reactImgix.reactImgixStrings.invalidARFormat = "invalidARFormat".asInstanceOf[typings.reactImgix.reactImgixStrings.invalidARFormat]
   
-  @scala.inline
-  def sizesAttribute: typings.reactImgix.reactImgixStrings.sizesAttribute = "sizesAttribute".asInstanceOf[typings.reactImgix.reactImgixStrings.sizesAttribute]
+  inline def sizesAttribute: typings.reactImgix.reactImgixStrings.sizesAttribute = "sizesAttribute".asInstanceOf[typings.reactImgix.reactImgixStrings.sizesAttribute]
 }

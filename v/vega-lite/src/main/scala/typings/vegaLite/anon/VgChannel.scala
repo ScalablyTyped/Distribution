@@ -11,19 +11,15 @@ trait VgChannel extends StObject {
 }
 object VgChannel {
   
-  @scala.inline
-  def apply(): VgChannel = {
+  inline def apply(): VgChannel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VgChannel]
   }
   
-  @scala.inline
-  implicit class VgChannelMutableBuilder[Self <: VgChannel] (val x: Self) extends AnyVal {
+  extension [Self <: VgChannel](x: Self) {
     
-    @scala.inline
-    def setVgChannel(value: VgEncodeChannel): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
+    inline def setVgChannel(value: VgEncodeChannel): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
+    inline def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
   }
 }

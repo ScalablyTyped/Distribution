@@ -14,20 +14,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setJunitReporter(value: JUnitReporterConfiguration): Self = StObject.set(x, "junitReporter", value.asInstanceOf[js.Any])
+      inline def setJunitReporter(value: JUnitReporterConfiguration): Self = StObject.set(x, "junitReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJunitReporterUndefined: Self = StObject.set(x, "junitReporter", js.undefined)
+      inline def setJunitReporterUndefined: Self = StObject.set(x, "junitReporter", js.undefined)
     }
   }
   
@@ -59,65 +55,46 @@ object mod {
   }
   object JUnitReporterConfiguration {
     
-    @scala.inline
-    def apply(): JUnitReporterConfiguration = {
+    inline def apply(): JUnitReporterConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JUnitReporterConfiguration]
     }
     
-    @scala.inline
-    implicit class JUnitReporterConfigurationMutableBuilder[Self <: JUnitReporterConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: JUnitReporterConfiguration](x: Self) {
       
-      @scala.inline
-      def setClassNameFormatter(value: (/* browser */ js.Any, /* result */ js.Any) => String): Self = StObject.set(x, "classNameFormatter", js.Any.fromFunction2(value))
+      inline def setClassNameFormatter(value: (/* browser */ js.Any, /* result */ js.Any) => String): Self = StObject.set(x, "classNameFormatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClassNameFormatterUndefined: Self = StObject.set(x, "classNameFormatter", js.undefined)
+      inline def setClassNameFormatterUndefined: Self = StObject.set(x, "classNameFormatter", js.undefined)
       
-      @scala.inline
-      def setNameFormatter(value: (/* browser */ js.Any, /* result */ js.Any) => String): Self = StObject.set(x, "nameFormatter", js.Any.fromFunction2(value))
+      inline def setNameFormatter(value: (/* browser */ js.Any, /* result */ js.Any) => String): Self = StObject.set(x, "nameFormatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameFormatterUndefined: Self = StObject.set(x, "nameFormatter", js.undefined)
+      inline def setNameFormatterUndefined: Self = StObject.set(x, "nameFormatter", js.undefined)
       
-      @scala.inline
-      def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
+      inline def setOutputDir(value: String): Self = StObject.set(x, "outputDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputDirUndefined: Self = StObject.set(x, "outputDir", js.undefined)
+      inline def setOutputDirUndefined: Self = StObject.set(x, "outputDir", js.undefined)
       
-      @scala.inline
-      def setOutputFile(value: String): Self = StObject.set(x, "outputFile", value.asInstanceOf[js.Any])
+      inline def setOutputFile(value: String): Self = StObject.set(x, "outputFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFileUndefined: Self = StObject.set(x, "outputFile", js.undefined)
+      inline def setOutputFileUndefined: Self = StObject.set(x, "outputFile", js.undefined)
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setSuite(value: String): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+      inline def setSuite(value: String): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
+      inline def setSuiteUndefined: Self = StObject.set(x, "suite", js.undefined)
       
-      @scala.inline
-      def setUseBrowserName(value: Boolean): Self = StObject.set(x, "useBrowserName", value.asInstanceOf[js.Any])
+      inline def setUseBrowserName(value: Boolean): Self = StObject.set(x, "useBrowserName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBrowserNameUndefined: Self = StObject.set(x, "useBrowserName", js.undefined)
+      inline def setUseBrowserNameUndefined: Self = StObject.set(x, "useBrowserName", js.undefined)
       
-      @scala.inline
-      def setXmlVersion(value: Double): Self = StObject.set(x, "xmlVersion", value.asInstanceOf[js.Any])
+      inline def setXmlVersion(value: Double): Self = StObject.set(x, "xmlVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlVersionNull: Self = StObject.set(x, "xmlVersion", null)
+      inline def setXmlVersionNull: Self = StObject.set(x, "xmlVersion", null)
       
-      @scala.inline
-      def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
+      inline def setXmlVersionUndefined: Self = StObject.set(x, "xmlVersion", js.undefined)
     }
   }
 }

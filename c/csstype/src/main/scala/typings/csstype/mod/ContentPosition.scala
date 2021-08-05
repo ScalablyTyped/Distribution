@@ -20,18 +20,13 @@ trait ContentPosition
      with _PlaceContentProperty
 object ContentPosition {
   
-  @scala.inline
-  def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
+  inline def center: typings.csstype.csstypeStrings.center = "center".asInstanceOf[typings.csstype.csstypeStrings.center]
   
-  @scala.inline
-  def end: typings.csstype.csstypeStrings.end = "end".asInstanceOf[typings.csstype.csstypeStrings.end]
+  inline def end: typings.csstype.csstypeStrings.end = "end".asInstanceOf[typings.csstype.csstypeStrings.end]
   
-  @scala.inline
-  def `flex-end`: typings.csstype.csstypeStrings.`flex-end` = "flex-end".asInstanceOf[typings.csstype.csstypeStrings.`flex-end`]
+  inline def `flex-end`: typings.csstype.csstypeStrings.`flex-end` = "flex-end".asInstanceOf[typings.csstype.csstypeStrings.`flex-end`]
   
-  @scala.inline
-  def `flex-start`: typings.csstype.csstypeStrings.`flex-start` = "flex-start".asInstanceOf[typings.csstype.csstypeStrings.`flex-start`]
+  inline def `flex-start`: typings.csstype.csstypeStrings.`flex-start` = "flex-start".asInstanceOf[typings.csstype.csstypeStrings.`flex-start`]
   
-  @scala.inline
-  def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
+  inline def start: typings.csstype.csstypeStrings.start = "start".asInstanceOf[typings.csstype.csstypeStrings.start]
 }

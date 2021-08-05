@@ -23,19 +23,15 @@ trait ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs
 }
 object ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs {
   
-  @scala.inline
-  def apply(handled: Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs = {
+  inline def apply(handled: Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgsMutableBuilder[Self <: ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs](x: Self) {
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

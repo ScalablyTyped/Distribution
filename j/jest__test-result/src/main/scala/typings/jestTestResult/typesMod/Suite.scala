@@ -14,28 +14,21 @@ trait Suite extends StObject {
 }
 object Suite {
   
-  @scala.inline
-  def apply(suites: js.Array[Suite], tests: js.Array[AssertionResult], title: String): Suite = {
+  inline def apply(suites: js.Array[Suite], tests: js.Array[AssertionResult], title: String): Suite = {
     val __obj = js.Dynamic.literal(suites = suites.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suite]
   }
   
-  @scala.inline
-  implicit class SuiteMutableBuilder[Self <: Suite] (val x: Self) extends AnyVal {
+  extension [Self <: Suite](x: Self) {
     
-    @scala.inline
-    def setSuites(value: js.Array[Suite]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
+    inline def setSuites(value: js.Array[Suite]): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuitesVarargs(value: Suite*): Self = StObject.set(x, "suites", js.Array(value :_*))
+    inline def setSuitesVarargs(value: Suite*): Self = StObject.set(x, "suites", js.Array(value :_*))
     
-    @scala.inline
-    def setTests(value: js.Array[AssertionResult]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    inline def setTests(value: js.Array[AssertionResult]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsVarargs(value: AssertionResult*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: AssertionResult*): Self = StObject.set(x, "tests", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

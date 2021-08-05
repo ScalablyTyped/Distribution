@@ -13,19 +13,15 @@ trait NonArraySchemaObject
 }
 object NonArraySchemaObject {
   
-  @scala.inline
-  def apply(): NonArraySchemaObject = {
+  inline def apply(): NonArraySchemaObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonArraySchemaObject]
   }
   
-  @scala.inline
-  implicit class NonArraySchemaObjectMutableBuilder[Self <: NonArraySchemaObject] (val x: Self) extends AnyVal {
+  extension [Self <: NonArraySchemaObject](x: Self) {
     
-    @scala.inline
-    def setType(value: NonArraySchemaObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NonArraySchemaObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait Latitude extends StObject {
 }
 object Latitude {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double): Latitude = {
+  inline def apply(latitude: Double, longitude: Double): Latitude = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[Latitude]
   }
   
-  @scala.inline
-  implicit class LatitudeMutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
+  extension [Self <: Latitude](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

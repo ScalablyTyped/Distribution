@@ -23,31 +23,23 @@ trait ResendContactReachabilityEmailResponse extends StObject {
 }
 object ResendContactReachabilityEmailResponse {
   
-  @scala.inline
-  def apply(): ResendContactReachabilityEmailResponse = {
+  inline def apply(): ResendContactReachabilityEmailResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResendContactReachabilityEmailResponse]
   }
   
-  @scala.inline
-  implicit class ResendContactReachabilityEmailResponseMutableBuilder[Self <: ResendContactReachabilityEmailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResendContactReachabilityEmailResponse](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: Email): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: Email): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setIsAlreadyVerified(value: Boolean): Self = StObject.set(x, "isAlreadyVerified", value.asInstanceOf[js.Any])
+    inline def setIsAlreadyVerified(value: Boolean): Self = StObject.set(x, "isAlreadyVerified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAlreadyVerifiedUndefined: Self = StObject.set(x, "isAlreadyVerified", js.undefined)
+    inline def setIsAlreadyVerifiedUndefined: Self = StObject.set(x, "isAlreadyVerified", js.undefined)
   }
 }

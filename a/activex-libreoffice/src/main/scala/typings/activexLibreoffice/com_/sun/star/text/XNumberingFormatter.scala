@@ -25,8 +25,7 @@ trait XNumberingFormatter
 }
 object XNumberingFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     makeNumberingString: (SeqEquiv[PropertyValue], Locale) => String,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XNumberingFormatter {
     __obj.asInstanceOf[XNumberingFormatter]
   }
   
-  @scala.inline
-  implicit class XNumberingFormatterMutableBuilder[Self <: XNumberingFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberingFormatter](x: Self) {
     
-    @scala.inline
-    def setMakeNumberingString(value: (SeqEquiv[PropertyValue], Locale) => String): Self = StObject.set(x, "makeNumberingString", js.Any.fromFunction2(value))
+    inline def setMakeNumberingString(value: (SeqEquiv[PropertyValue], Locale) => String): Self = StObject.set(x, "makeNumberingString", js.Any.fromFunction2(value))
   }
 }

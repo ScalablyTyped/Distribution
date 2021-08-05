@@ -30,43 +30,31 @@ trait EventAttachment extends StObject {
 }
 object EventAttachment {
   
-  @scala.inline
-  def apply(): EventAttachment = {
+  inline def apply(): EventAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventAttachment]
   }
   
-  @scala.inline
-  implicit class EventAttachmentMutableBuilder[Self <: EventAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: EventAttachment](x: Self) {
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setFileUrl(value: String): Self = StObject.set(x, "fileUrl", value.asInstanceOf[js.Any])
+    inline def setFileUrl(value: String): Self = StObject.set(x, "fileUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUrlUndefined: Self = StObject.set(x, "fileUrl", js.undefined)
+    inline def setFileUrlUndefined: Self = StObject.set(x, "fileUrl", js.undefined)
     
-    @scala.inline
-    def setIconLink(value: String): Self = StObject.set(x, "iconLink", value.asInstanceOf[js.Any])
+    inline def setIconLink(value: String): Self = StObject.set(x, "iconLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconLinkUndefined: Self = StObject.set(x, "iconLink", js.undefined)
+    inline def setIconLinkUndefined: Self = StObject.set(x, "iconLink", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

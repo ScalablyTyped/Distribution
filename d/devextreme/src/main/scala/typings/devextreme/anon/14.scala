@@ -14,25 +14,19 @@ trait `14` extends StObject {
 }
 object `14` {
   
-  @scala.inline
-  def apply(): `14` = {
+  inline def apply(): `14` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`14`]
   }
   
-  @scala.inline
-  implicit class `14MutableBuilder`[Self <: `14`] (val x: Self) extends AnyVal {
+  extension [Self <: `14`](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxTreeList): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxTreeList): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setRow(value: dxTreeListRowObject): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: dxTreeListRowObject): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

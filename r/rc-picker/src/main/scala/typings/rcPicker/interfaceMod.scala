@@ -26,26 +26,20 @@ object interfaceMod {
   }
   object Components {
     
-    @scala.inline
-    def apply(): Components = {
+    inline def apply(): Components = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Components]
     }
     
-    @scala.inline
-    implicit class ComponentsMutableBuilder[Self <: Components] (val x: Self) extends AnyVal {
+    extension [Self <: Components](x: Self) {
       
-      @scala.inline
-      def setButton(value: ComponentType[js.Object] | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: ComponentType[js.Object] | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setRangeItem(value: ComponentType[js.Object] | String): Self = StObject.set(x, "rangeItem", value.asInstanceOf[js.Any])
+      inline def setRangeItem(value: ComponentType[js.Object] | String): Self = StObject.set(x, "rangeItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeItemUndefined: Self = StObject.set(x, "rangeItem", js.undefined)
+      inline def setRangeItemUndefined: Self = StObject.set(x, "rangeItem", js.undefined)
     }
   }
   
@@ -63,32 +57,24 @@ object interfaceMod {
   }
   object DisabledTimes {
     
-    @scala.inline
-    def apply(): DisabledTimes = {
+    inline def apply(): DisabledTimes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DisabledTimes]
     }
     
-    @scala.inline
-    implicit class DisabledTimesMutableBuilder[Self <: DisabledTimes] (val x: Self) extends AnyVal {
+    extension [Self <: DisabledTimes](x: Self) {
       
-      @scala.inline
-      def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
+      inline def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
+      inline def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
       
-      @scala.inline
-      def setDisabledMinutes(value: /* hour */ Double => js.Array[Double]): Self = StObject.set(x, "disabledMinutes", js.Any.fromFunction1(value))
+      inline def setDisabledMinutes(value: /* hour */ Double => js.Array[Double]): Self = StObject.set(x, "disabledMinutes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabledMinutesUndefined: Self = StObject.set(x, "disabledMinutes", js.undefined)
+      inline def setDisabledMinutesUndefined: Self = StObject.set(x, "disabledMinutes", js.undefined)
       
-      @scala.inline
-      def setDisabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): Self = StObject.set(x, "disabledSeconds", js.Any.fromFunction2(value))
+      inline def setDisabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): Self = StObject.set(x, "disabledSeconds", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
+      inline def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
     }
   }
   
@@ -161,8 +147,7 @@ object interfaceMod {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backToToday: String,
       clear: String,
       dateFormat: String,
@@ -193,125 +178,85 @@ object interfaceMod {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setBackToToday(value: String): Self = StObject.set(x, "backToToday", value.asInstanceOf[js.Any])
+      inline def setBackToToday(value: String): Self = StObject.set(x, "backToToday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateSelect(value: String): Self = StObject.set(x, "dateSelect", value.asInstanceOf[js.Any])
+      inline def setDateSelect(value: String): Self = StObject.set(x, "dateSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeFormat(value: String): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
+      inline def setDateTimeFormat(value: String): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayFormat(value: String): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
+      inline def setDayFormat(value: String): Self = StObject.set(x, "dayFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecadeSelect(value: String): Self = StObject.set(x, "decadeSelect", value.asInstanceOf[js.Any])
+      inline def setDecadeSelect(value: String): Self = StObject.set(x, "decadeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthBeforeYear(value: Boolean): Self = StObject.set(x, "monthBeforeYear", value.asInstanceOf[js.Any])
+      inline def setMonthBeforeYear(value: Boolean): Self = StObject.set(x, "monthBeforeYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthBeforeYearUndefined: Self = StObject.set(x, "monthBeforeYear", js.undefined)
+      inline def setMonthBeforeYearUndefined: Self = StObject.set(x, "monthBeforeYear", js.undefined)
       
-      @scala.inline
-      def setMonthFormat(value: String): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
+      inline def setMonthFormat(value: String): Self = StObject.set(x, "monthFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
+      inline def setMonthFormatUndefined: Self = StObject.set(x, "monthFormat", js.undefined)
       
-      @scala.inline
-      def setMonthSelect(value: String): Self = StObject.set(x, "monthSelect", value.asInstanceOf[js.Any])
+      inline def setMonthSelect(value: String): Self = StObject.set(x, "monthSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextCentury(value: String): Self = StObject.set(x, "nextCentury", value.asInstanceOf[js.Any])
+      inline def setNextCentury(value: String): Self = StObject.set(x, "nextCentury", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextDecade(value: String): Self = StObject.set(x, "nextDecade", value.asInstanceOf[js.Any])
+      inline def setNextDecade(value: String): Self = StObject.set(x, "nextDecade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextMonth(value: String): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
+      inline def setNextMonth(value: String): Self = StObject.set(x, "nextMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextYear(value: String): Self = StObject.set(x, "nextYear", value.asInstanceOf[js.Any])
+      inline def setNextYear(value: String): Self = StObject.set(x, "nextYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNow(value: String): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: String): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+      inline def setOk(value: String): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousCentury(value: String): Self = StObject.set(x, "previousCentury", value.asInstanceOf[js.Any])
+      inline def setPreviousCentury(value: String): Self = StObject.set(x, "previousCentury", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousDecade(value: String): Self = StObject.set(x, "previousDecade", value.asInstanceOf[js.Any])
+      inline def setPreviousDecade(value: String): Self = StObject.set(x, "previousDecade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousMonth(value: String): Self = StObject.set(x, "previousMonth", value.asInstanceOf[js.Any])
+      inline def setPreviousMonth(value: String): Self = StObject.set(x, "previousMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousYear(value: String): Self = StObject.set(x, "previousYear", value.asInstanceOf[js.Any])
+      inline def setPreviousYear(value: String): Self = StObject.set(x, "previousYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterFormat(value: String): Self = StObject.set(x, "quarterFormat", value.asInstanceOf[js.Any])
+      inline def setQuarterFormat(value: String): Self = StObject.set(x, "quarterFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuarterFormatUndefined: Self = StObject.set(x, "quarterFormat", js.undefined)
+      inline def setQuarterFormatUndefined: Self = StObject.set(x, "quarterFormat", js.undefined)
       
-      @scala.inline
-      def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
+      inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
+      inline def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
       
-      @scala.inline
-      def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
       
-      @scala.inline
-      def setShortWeekDays(value: js.Array[String]): Self = StObject.set(x, "shortWeekDays", value.asInstanceOf[js.Any])
+      inline def setShortWeekDays(value: js.Array[String]): Self = StObject.set(x, "shortWeekDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortWeekDaysUndefined: Self = StObject.set(x, "shortWeekDays", js.undefined)
+      inline def setShortWeekDaysUndefined: Self = StObject.set(x, "shortWeekDays", js.undefined)
       
-      @scala.inline
-      def setShortWeekDaysVarargs(value: String*): Self = StObject.set(x, "shortWeekDays", js.Array(value :_*))
+      inline def setShortWeekDaysVarargs(value: String*): Self = StObject.set(x, "shortWeekDays", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeSelect(value: String): Self = StObject.set(x, "timeSelect", value.asInstanceOf[js.Any])
+      inline def setTimeSelect(value: String): Self = StObject.set(x, "timeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: String): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekSelect(value: String): Self = StObject.set(x, "weekSelect", value.asInstanceOf[js.Any])
+      inline def setWeekSelect(value: String): Self = StObject.set(x, "weekSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekSelectUndefined: Self = StObject.set(x, "weekSelect", js.undefined)
+      inline def setWeekSelectUndefined: Self = StObject.set(x, "weekSelect", js.undefined)
       
-      @scala.inline
-      def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearFormat(value: String): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
+      inline def setYearFormat(value: String): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearSelect(value: String): Self = StObject.set(x, "yearSelect", value.asInstanceOf[js.Any])
+      inline def setYearSelect(value: String): Self = StObject.set(x, "yearSelect", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,26 +278,19 @@ object interfaceMod {
   trait PanelMode extends StObject
   object PanelMode {
     
-    @scala.inline
-    def date: typings.rcPicker.rcPickerStrings.date = "date".asInstanceOf[typings.rcPicker.rcPickerStrings.date]
+    inline def date: typings.rcPicker.rcPickerStrings.date = "date".asInstanceOf[typings.rcPicker.rcPickerStrings.date]
     
-    @scala.inline
-    def decade: typings.rcPicker.rcPickerStrings.decade = "decade".asInstanceOf[typings.rcPicker.rcPickerStrings.decade]
+    inline def decade: typings.rcPicker.rcPickerStrings.decade = "decade".asInstanceOf[typings.rcPicker.rcPickerStrings.decade]
     
-    @scala.inline
-    def month: typings.rcPicker.rcPickerStrings.month = "month".asInstanceOf[typings.rcPicker.rcPickerStrings.month]
+    inline def month: typings.rcPicker.rcPickerStrings.month = "month".asInstanceOf[typings.rcPicker.rcPickerStrings.month]
     
-    @scala.inline
-    def quarter: typings.rcPicker.rcPickerStrings.quarter = "quarter".asInstanceOf[typings.rcPicker.rcPickerStrings.quarter]
+    inline def quarter: typings.rcPicker.rcPickerStrings.quarter = "quarter".asInstanceOf[typings.rcPicker.rcPickerStrings.quarter]
     
-    @scala.inline
-    def time: typings.rcPicker.rcPickerStrings.time = "time".asInstanceOf[typings.rcPicker.rcPickerStrings.time]
+    inline def time: typings.rcPicker.rcPickerStrings.time = "time".asInstanceOf[typings.rcPicker.rcPickerStrings.time]
     
-    @scala.inline
-    def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
+    inline def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
     
-    @scala.inline
-    def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
+    inline def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
   }
   
   trait PanelRefProps extends StObject {
@@ -365,32 +303,24 @@ object interfaceMod {
   }
   object PanelRefProps {
     
-    @scala.inline
-    def apply(): PanelRefProps = {
+    inline def apply(): PanelRefProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PanelRefProps]
     }
     
-    @scala.inline
-    implicit class PanelRefPropsMutableBuilder[Self <: PanelRefProps] (val x: Self) extends AnyVal {
+    extension [Self <: PanelRefProps](x: Self) {
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Boolean): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -447,23 +377,17 @@ object interfaceMod {
   trait PickerMode extends StObject
   object PickerMode {
     
-    @scala.inline
-    def date: typings.rcPicker.rcPickerStrings.date = "date".asInstanceOf[typings.rcPicker.rcPickerStrings.date]
+    inline def date: typings.rcPicker.rcPickerStrings.date = "date".asInstanceOf[typings.rcPicker.rcPickerStrings.date]
     
-    @scala.inline
-    def month: typings.rcPicker.rcPickerStrings.month = "month".asInstanceOf[typings.rcPicker.rcPickerStrings.month]
+    inline def month: typings.rcPicker.rcPickerStrings.month = "month".asInstanceOf[typings.rcPicker.rcPickerStrings.month]
     
-    @scala.inline
-    def quarter: typings.rcPicker.rcPickerStrings.quarter = "quarter".asInstanceOf[typings.rcPicker.rcPickerStrings.quarter]
+    inline def quarter: typings.rcPicker.rcPickerStrings.quarter = "quarter".asInstanceOf[typings.rcPicker.rcPickerStrings.quarter]
     
-    @scala.inline
-    def time: typings.rcPicker.rcPickerStrings.time = "time".asInstanceOf[typings.rcPicker.rcPickerStrings.time]
+    inline def time: typings.rcPicker.rcPickerStrings.time = "time".asInstanceOf[typings.rcPicker.rcPickerStrings.time]
     
-    @scala.inline
-    def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
+    inline def week: typings.rcPicker.rcPickerStrings.week = "week".asInstanceOf[typings.rcPicker.rcPickerStrings.week]
     
-    @scala.inline
-    def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
+    inline def year: typings.rcPicker.rcPickerStrings.year = "year".asInstanceOf[typings.rcPicker.rcPickerStrings.year]
   }
   
   type RangeList = js.Array[Label]

@@ -14,22 +14,17 @@ trait InventorySourceFilter extends StObject {
 }
 object InventorySourceFilter {
   
-  @scala.inline
-  def apply(): InventorySourceFilter = {
+  inline def apply(): InventorySourceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventorySourceFilter]
   }
   
-  @scala.inline
-  implicit class InventorySourceFilterMutableBuilder[Self <: InventorySourceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: InventorySourceFilter](x: Self) {
     
-    @scala.inline
-    def setInventorySourceIds(value: js.Array[String]): Self = StObject.set(x, "inventorySourceIds", value.asInstanceOf[js.Any])
+    inline def setInventorySourceIds(value: js.Array[String]): Self = StObject.set(x, "inventorySourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceIdsUndefined: Self = StObject.set(x, "inventorySourceIds", js.undefined)
+    inline def setInventorySourceIdsUndefined: Self = StObject.set(x, "inventorySourceIds", js.undefined)
     
-    @scala.inline
-    def setInventorySourceIdsVarargs(value: String*): Self = StObject.set(x, "inventorySourceIds", js.Array(value :_*))
+    inline def setInventorySourceIdsVarargs(value: String*): Self = StObject.set(x, "inventorySourceIds", js.Array(value :_*))
   }
 }

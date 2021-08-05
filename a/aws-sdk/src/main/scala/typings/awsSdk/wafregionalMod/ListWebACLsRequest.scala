@@ -18,25 +18,19 @@ trait ListWebACLsRequest extends StObject {
 }
 object ListWebACLsRequest {
   
-  @scala.inline
-  def apply(): ListWebACLsRequest = {
+  inline def apply(): ListWebACLsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWebACLsRequest]
   }
   
-  @scala.inline
-  implicit class ListWebACLsRequestMutableBuilder[Self <: ListWebACLsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListWebACLsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

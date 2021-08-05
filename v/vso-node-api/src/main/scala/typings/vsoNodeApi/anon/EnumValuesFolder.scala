@@ -10,16 +10,13 @@ trait EnumValuesFolder extends StObject {
 }
 object EnumValuesFolder {
   
-  @scala.inline
-  def apply(enumValues: Folder): EnumValuesFolder = {
+  inline def apply(enumValues: Folder): EnumValuesFolder = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFolder]
   }
   
-  @scala.inline
-  implicit class EnumValuesFolderMutableBuilder[Self <: EnumValuesFolder] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFolder](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Folder): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Folder): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

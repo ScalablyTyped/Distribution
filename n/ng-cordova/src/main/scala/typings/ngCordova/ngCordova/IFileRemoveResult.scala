@@ -12,19 +12,15 @@ trait IFileRemoveResult[TEntry] extends StObject {
 }
 object IFileRemoveResult {
   
-  @scala.inline
-  def apply[TEntry](fileRemoved: TEntry, success: Boolean): IFileRemoveResult[TEntry] = {
+  inline def apply[TEntry](fileRemoved: TEntry, success: Boolean): IFileRemoveResult[TEntry] = {
     val __obj = js.Dynamic.literal(fileRemoved = fileRemoved.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileRemoveResult[TEntry]]
   }
   
-  @scala.inline
-  implicit class IFileRemoveResultMutableBuilder[Self <: IFileRemoveResult[?], TEntry] (val x: Self & IFileRemoveResult[TEntry]) extends AnyVal {
+  extension [Self <: IFileRemoveResult[?], TEntry](x: Self & IFileRemoveResult[TEntry]) {
     
-    @scala.inline
-    def setFileRemoved(value: TEntry): Self = StObject.set(x, "fileRemoved", value.asInstanceOf[js.Any])
+    inline def setFileRemoved(value: TEntry): Self = StObject.set(x, "fileRemoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

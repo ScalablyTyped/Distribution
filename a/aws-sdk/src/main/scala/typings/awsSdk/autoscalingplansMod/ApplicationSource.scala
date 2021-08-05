@@ -18,28 +18,21 @@ trait ApplicationSource extends StObject {
 }
 object ApplicationSource {
   
-  @scala.inline
-  def apply(): ApplicationSource = {
+  inline def apply(): ApplicationSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationSource]
   }
   
-  @scala.inline
-  implicit class ApplicationSourceMutableBuilder[Self <: ApplicationSource] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationSource](x: Self) {
     
-    @scala.inline
-    def setCloudFormationStackARN(value: XmlString): Self = StObject.set(x, "CloudFormationStackARN", value.asInstanceOf[js.Any])
+    inline def setCloudFormationStackARN(value: XmlString): Self = StObject.set(x, "CloudFormationStackARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFormationStackARNUndefined: Self = StObject.set(x, "CloudFormationStackARN", js.undefined)
+    inline def setCloudFormationStackARNUndefined: Self = StObject.set(x, "CloudFormationStackARN", js.undefined)
     
-    @scala.inline
-    def setTagFilters(value: TagFilters): Self = StObject.set(x, "TagFilters", value.asInstanceOf[js.Any])
+    inline def setTagFilters(value: TagFilters): Self = StObject.set(x, "TagFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFiltersUndefined: Self = StObject.set(x, "TagFilters", js.undefined)
+    inline def setTagFiltersUndefined: Self = StObject.set(x, "TagFilters", js.undefined)
     
-    @scala.inline
-    def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value :_*))
   }
 }

@@ -37,19 +37,15 @@ trait Format_ extends StObject {
 }
 object Format_ {
   
-  @scala.inline
-  def apply(parse: String => CipherParams, stringify: CipherParams => String): Format_ = {
+  inline def apply(parse: String => CipherParams, stringify: CipherParams => String): Format_ = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
     __obj.asInstanceOf[Format_]
   }
   
-  @scala.inline
-  implicit class Format_MutableBuilder[Self <: Format_] (val x: Self) extends AnyVal {
+  extension [Self <: Format_](x: Self) {
     
-    @scala.inline
-    def setParse(value: String => CipherParams): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => CipherParams): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringify(value: CipherParams => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    inline def setStringify(value: CipherParams => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
   }
 }

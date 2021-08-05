@@ -34,8 +34,7 @@ trait CommandMetrics extends StObject {
 }
 object CommandMetrics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addExecutionTime: Double => Unit,
     decrementExecutionCount: () => Unit,
     getCurrentExecutionCount: () => Double,
@@ -54,46 +53,32 @@ object CommandMetrics {
     __obj.asInstanceOf[CommandMetrics]
   }
   
-  @scala.inline
-  implicit class CommandMetricsMutableBuilder[Self <: CommandMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: CommandMetrics](x: Self) {
     
-    @scala.inline
-    def setAddExecutionTime(value: Double => Unit): Self = StObject.set(x, "addExecutionTime", js.Any.fromFunction1(value))
+    inline def setAddExecutionTime(value: Double => Unit): Self = StObject.set(x, "addExecutionTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecrementExecutionCount(value: () => Unit): Self = StObject.set(x, "decrementExecutionCount", js.Any.fromFunction0(value))
+    inline def setDecrementExecutionCount(value: () => Unit): Self = StObject.set(x, "decrementExecutionCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentExecutionCount(value: () => Double): Self = StObject.set(x, "getCurrentExecutionCount", js.Any.fromFunction0(value))
+    inline def setGetCurrentExecutionCount(value: () => Double): Self = StObject.set(x, "getCurrentExecutionCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExecutionTime(value: js.Any => Double): Self = StObject.set(x, "getExecutionTime", js.Any.fromFunction1(value))
+    inline def setGetExecutionTime(value: js.Any => Double): Self = StObject.set(x, "getExecutionTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHealthCounts(value: () => HealthCounts): Self = StObject.set(x, "getHealthCounts", js.Any.fromFunction0(value))
+    inline def setGetHealthCounts(value: () => HealthCounts): Self = StObject.set(x, "getHealthCounts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRollingCount(value: js.Any => Double): Self = StObject.set(x, "getRollingCount", js.Any.fromFunction1(value))
+    inline def setGetRollingCount(value: js.Any => Double): Self = StObject.set(x, "getRollingCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncrementExecutionCount(value: () => Unit): Self = StObject.set(x, "incrementExecutionCount", js.Any.fromFunction0(value))
+    inline def setIncrementExecutionCount(value: () => Unit): Self = StObject.set(x, "incrementExecutionCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkFailure(value: () => Unit): Self = StObject.set(x, "markFailure", js.Any.fromFunction0(value))
+    inline def setMarkFailure(value: () => Unit): Self = StObject.set(x, "markFailure", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkRejected(value: () => Unit): Self = StObject.set(x, "markRejected", js.Any.fromFunction0(value))
+    inline def setMarkRejected(value: () => Unit): Self = StObject.set(x, "markRejected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkShortCircuited(value: () => Unit): Self = StObject.set(x, "markShortCircuited", js.Any.fromFunction0(value))
+    inline def setMarkShortCircuited(value: () => Unit): Self = StObject.set(x, "markShortCircuited", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkSuccess(value: () => Unit): Self = StObject.set(x, "markSuccess", js.Any.fromFunction0(value))
+    inline def setMarkSuccess(value: () => Unit): Self = StObject.set(x, "markSuccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMarkTimeout(value: () => Unit): Self = StObject.set(x, "markTimeout", js.Any.fromFunction0(value))
+    inline def setMarkTimeout(value: () => Unit): Self = StObject.set(x, "markTimeout", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

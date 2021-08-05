@@ -64,11 +64,11 @@ object rowNodeMod {
     
     def clearRowTop(): Unit = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createDaemonNode(): js.Any = js.native
     
@@ -107,7 +107,7 @@ object rowNodeMod {
     /** True if this row is getting dragged */
     var dragging: Boolean = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     /** Groups only - True if group is expanded, otherwise false */
     var expanded: Boolean = js.native
@@ -128,9 +128,9 @@ object rowNodeMod {
     
     def getRowIndexString(): String = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /** True if this node is a group node (ie has children) */
     var group: Boolean = js.native
@@ -168,7 +168,7 @@ object rowNodeMod {
     /** How many levels this node is from the top */
     var level: Double = js.native
     
-    var mainEventService: js.Any = js.native
+    /* private */ var mainEventService: js.Any = js.native
     
     /** True if this row is a master row, part of master / detail (ie row can be expanded to show detail) */
     var master: Boolean = js.native
@@ -202,7 +202,7 @@ object rowNodeMod {
     /** The index of this node in the grid, only valid if node is displayed in the grid, otherwise it should be ignored as old index may be present */
     var rowIndex: Double = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
     /** Either 'top' or 'bottom' if row pinned, otherwise undefined or null */
     var rowPinned: String = js.native
@@ -217,9 +217,9 @@ object rowNodeMod {
     /** True by default - can be overridden via gridOptions.isRowSelectable(rowNode) */
     var selectable: Boolean = js.native
     
-    var selected: js.Any = js.native
+    /* private */ var selected: js.Any = js.native
     
-    var selectionController: js.Any = js.native
+    /* private */ var selectionController: js.Any = js.native
     
     def setAggData(newAggData: js.Any): Unit = js.native
     
@@ -279,9 +279,9 @@ object rowNodeMod {
     
     /* private */ def updateDataOnDetailNode(): js.Any = js.native
     
-    var valueCache: js.Any = js.native
+    /* private */ var valueCache: js.Any = js.native
     
-    var valueService: js.Any = js.native
+    /* private */ var valueService: js.Any = js.native
   }
   /* static members */
   object RowNode {
@@ -293,98 +293,82 @@ object rowNodeMod {
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_ALL_CHILDREN_COUNT_CHANGED")
     @js.native
     def EVENT_ALL_CHILDREN_COUNT_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_ALL_CHILDREN_COUNT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ALL_CHILDREN_COUNT_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_ALL_CHILDREN_COUNT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ALL_CHILDREN_COUNT_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_CELL_CHANGED")
     @js.native
     def EVENT_CELL_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_CELL_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CELL_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_CELL_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CELL_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_CHILD_INDEX_CHANGED")
     @js.native
     def EVENT_CHILD_INDEX_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_CHILD_INDEX_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CHILD_INDEX_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_CHILD_INDEX_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CHILD_INDEX_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_DATA_CHANGED")
     @js.native
     def EVENT_DATA_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_DATA_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DATA_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_DATA_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DATA_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_DRAGGING_CHANGED")
     @js.native
     def EVENT_DRAGGING_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_DRAGGING_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DRAGGING_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_DRAGGING_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DRAGGING_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_EXPANDED_CHANGED")
     @js.native
     def EVENT_EXPANDED_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_EXPANDED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDED_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_EXPANDED_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_EXPANDED_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_FIRST_CHILD_CHANGED")
     @js.native
     def EVENT_FIRST_CHILD_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_FIRST_CHILD_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FIRST_CHILD_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_FIRST_CHILD_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_FIRST_CHILD_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_HEIGHT_CHANGED")
     @js.native
     def EVENT_HEIGHT_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_HEIGHT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_HEIGHT_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_HEIGHT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_HEIGHT_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_LAST_CHILD_CHANGED")
     @js.native
     def EVENT_LAST_CHILD_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_LAST_CHILD_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LAST_CHILD_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_LAST_CHILD_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_LAST_CHILD_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_MOUSE_ENTER")
     @js.native
     def EVENT_MOUSE_ENTER: String = js.native
-    @scala.inline
-    def EVENT_MOUSE_ENTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MOUSE_ENTER")(x.asInstanceOf[js.Any])
+    inline def EVENT_MOUSE_ENTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MOUSE_ENTER")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_MOUSE_LEAVE")
     @js.native
     def EVENT_MOUSE_LEAVE: String = js.native
-    @scala.inline
-    def EVENT_MOUSE_LEAVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MOUSE_LEAVE")(x.asInstanceOf[js.Any])
+    inline def EVENT_MOUSE_LEAVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_MOUSE_LEAVE")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_ROW_INDEX_CHANGED")
     @js.native
     def EVENT_ROW_INDEX_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_ROW_INDEX_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ROW_INDEX_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_ROW_INDEX_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ROW_INDEX_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_ROW_SELECTED")
     @js.native
     def EVENT_ROW_SELECTED: String = js.native
-    @scala.inline
-    def EVENT_ROW_SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ROW_SELECTED")(x.asInstanceOf[js.Any])
+    inline def EVENT_ROW_SELECTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_ROW_SELECTED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_SELECTABLE_CHANGED")
     @js.native
     def EVENT_SELECTABLE_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_SELECTABLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_SELECTABLE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_SELECTABLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_SELECTABLE_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_TOP_CHANGED")
     @js.native
     def EVENT_TOP_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_TOP_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_TOP_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_TOP_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_TOP_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/entities/rowNode", "RowNode.EVENT_UI_LEVEL_CHANGED")
     @js.native
     def EVENT_UI_LEVEL_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_UI_LEVEL_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_UI_LEVEL_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_UI_LEVEL_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_UI_LEVEL_CHANGED")(x.asInstanceOf[js.Any])
   }
   
   trait CellChangedEvent
@@ -397,21 +381,17 @@ object rowNodeMod {
   }
   object CellChangedEvent {
     
-    @scala.inline
-    def apply(column: Column, newValue: js.Any, node: RowNode, `type`: String): CellChangedEvent = {
+    inline def apply(column: Column, newValue: js.Any, node: RowNode, `type`: String): CellChangedEvent = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CellChangedEvent]
     }
     
-    @scala.inline
-    implicit class CellChangedEventMutableBuilder[Self <: CellChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CellChangedEvent](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -427,24 +407,19 @@ object rowNodeMod {
   }
   object DataChangedEvent {
     
-    @scala.inline
-    def apply(newData: js.Any, node: RowNode, oldData: js.Any, `type`: String, update: Boolean): DataChangedEvent = {
+    inline def apply(newData: js.Any, node: RowNode, oldData: js.Any, `type`: String, update: Boolean): DataChangedEvent = {
       val __obj = js.Dynamic.literal(newData = newData.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], oldData = oldData.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataChangedEvent]
     }
     
-    @scala.inline
-    implicit class DataChangedEventMutableBuilder[Self <: DataChangedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DataChangedEvent](x: Self) {
       
-      @scala.inline
-      def setNewData(value: js.Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
+      inline def setNewData(value: js.Any): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldData(value: js.Any): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
+      inline def setOldData(value: js.Any): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     }
   }
   
@@ -456,18 +431,15 @@ object rowNodeMod {
   }
   object RowNodeEvent {
     
-    @scala.inline
-    def apply(node: RowNode, `type`: String): RowNodeEvent = {
+    inline def apply(node: RowNode, `type`: String): RowNodeEvent = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowNodeEvent]
     }
     
-    @scala.inline
-    implicit class RowNodeEventMutableBuilder[Self <: RowNodeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RowNodeEvent](x: Self) {
       
-      @scala.inline
-      def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: RowNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -485,41 +457,30 @@ object rowNodeMod {
   }
   object SetSelectedParams {
     
-    @scala.inline
-    def apply(newValue: Boolean): SetSelectedParams = {
+    inline def apply(newValue: Boolean): SetSelectedParams = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetSelectedParams]
     }
     
-    @scala.inline
-    implicit class SetSelectedParamsMutableBuilder[Self <: SetSelectedParams] (val x: Self) extends AnyVal {
+    extension [Self <: SetSelectedParams](x: Self) {
       
-      @scala.inline
-      def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
+      inline def setClearSelection(value: Boolean): Self = StObject.set(x, "clearSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearSelectionUndefined: Self = StObject.set(x, "clearSelection", js.undefined)
+      inline def setClearSelectionUndefined: Self = StObject.set(x, "clearSelection", js.undefined)
       
-      @scala.inline
-      def setGroupSelectsFiltered(value: Boolean): Self = StObject.set(x, "groupSelectsFiltered", value.asInstanceOf[js.Any])
+      inline def setGroupSelectsFiltered(value: Boolean): Self = StObject.set(x, "groupSelectsFiltered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupSelectsFilteredUndefined: Self = StObject.set(x, "groupSelectsFiltered", js.undefined)
+      inline def setGroupSelectsFilteredUndefined: Self = StObject.set(x, "groupSelectsFiltered", js.undefined)
       
-      @scala.inline
-      def setNewValue(value: Boolean): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Boolean): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeSelect(value: Boolean): Self = StObject.set(x, "rangeSelect", value.asInstanceOf[js.Any])
+      inline def setRangeSelect(value: Boolean): Self = StObject.set(x, "rangeSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeSelectUndefined: Self = StObject.set(x, "rangeSelect", js.undefined)
+      inline def setRangeSelectUndefined: Self = StObject.set(x, "rangeSelect", js.undefined)
       
-      @scala.inline
-      def setSuppressFinishActions(value: Boolean): Self = StObject.set(x, "suppressFinishActions", value.asInstanceOf[js.Any])
+      inline def setSuppressFinishActions(value: Boolean): Self = StObject.set(x, "suppressFinishActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressFinishActionsUndefined: Self = StObject.set(x, "suppressFinishActions", js.undefined)
+      inline def setSuppressFinishActionsUndefined: Self = StObject.set(x, "suppressFinishActions", js.undefined)
     }
   }
 }

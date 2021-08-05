@@ -181,8 +181,7 @@ object storageMod {
   }
   object Storage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createProxy: () => js.Object,
       createStorage: String => Storage,
       defaults: Record[String, js.Any] => Record[String, js.Any],
@@ -198,38 +197,27 @@ object storageMod {
       __obj.asInstanceOf[Storage]
     }
     
-    @scala.inline
-    implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+    extension [Self <: Storage](x: Self) {
       
-      @scala.inline
-      def setCreateProxy(value: () => js.Object): Self = StObject.set(x, "createProxy", js.Any.fromFunction0(value))
+      inline def setCreateProxy(value: () => js.Object): Self = StObject.set(x, "createProxy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateStorage(value: String => Storage): Self = StObject.set(x, "createStorage", js.Any.fromFunction1(value))
+      inline def setCreateStorage(value: String => Storage): Self = StObject.set(x, "createStorage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaults(value: Record[String, js.Any] => Record[String, js.Any]): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
+      inline def setDefaults(value: Record[String, js.Any] => Record[String, js.Any]): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAll(value: () => Record[String, js.Any]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+      inline def setGetAll(value: () => Record[String, js.Any]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPath(value: String => js.Any): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
+      inline def setGetPath(value: String => js.Any): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+      inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetPath(value: (String, js.Any) => js.Any): Self = StObject.set(x, "setPath", js.Any.fromFunction2(value))
+      inline def setSetPath(value: (String, js.Any) => js.Any): Self = StObject.set(x, "setPath", js.Any.fromFunction2(value))
     }
   }
   
@@ -255,23 +243,18 @@ object storageMod {
   }
   object StorageOptions {
     
-    @scala.inline
-    def apply(disableCache: Boolean, disableCacheByFile: Boolean, lodashPath: Boolean): StorageOptions = {
+    inline def apply(disableCache: Boolean, disableCacheByFile: Boolean, lodashPath: Boolean): StorageOptions = {
       val __obj = js.Dynamic.literal(disableCache = disableCache.asInstanceOf[js.Any], disableCacheByFile = disableCacheByFile.asInstanceOf[js.Any], lodashPath = lodashPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageOptions]
     }
     
-    @scala.inline
-    implicit class StorageOptionsMutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StorageOptions](x: Self) {
       
-      @scala.inline
-      def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
+      inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCacheByFile(value: Boolean): Self = StObject.set(x, "disableCacheByFile", value.asInstanceOf[js.Any])
+      inline def setDisableCacheByFile(value: Boolean): Self = StObject.set(x, "disableCacheByFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLodashPath(value: Boolean): Self = StObject.set(x, "lodashPath", value.asInstanceOf[js.Any])
+      inline def setLodashPath(value: Boolean): Self = StObject.set(x, "lodashPath", value.asInstanceOf[js.Any])
     }
   }
 }

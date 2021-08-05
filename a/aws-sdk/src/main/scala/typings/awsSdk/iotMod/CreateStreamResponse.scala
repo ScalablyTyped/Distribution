@@ -28,37 +28,27 @@ trait CreateStreamResponse extends StObject {
 }
 object CreateStreamResponse {
   
-  @scala.inline
-  def apply(): CreateStreamResponse = {
+  inline def apply(): CreateStreamResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStreamResponse]
   }
   
-  @scala.inline
-  implicit class CreateStreamResponseMutableBuilder[Self <: CreateStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: StreamDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: StreamDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setStreamArn(value: StreamArn): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
+    inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamArnUndefined: Self = StObject.set(x, "streamArn", js.undefined)
+    inline def setStreamArnUndefined: Self = StObject.set(x, "streamArn", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: StreamId): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: StreamId): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
-    @scala.inline
-    def setStreamVersion(value: StreamVersion): Self = StObject.set(x, "streamVersion", value.asInstanceOf[js.Any])
+    inline def setStreamVersion(value: StreamVersion): Self = StObject.set(x, "streamVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamVersionUndefined: Self = StObject.set(x, "streamVersion", js.undefined)
+    inline def setStreamVersionUndefined: Self = StObject.set(x, "streamVersion", js.undefined)
   }
 }

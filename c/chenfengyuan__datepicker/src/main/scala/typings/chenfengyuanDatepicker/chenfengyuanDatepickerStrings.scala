@@ -8,21 +8,17 @@ object chenfengyuanDatepickerStrings {
   
   @js.native
   sealed trait datepicker extends StObject
-  @scala.inline
-  def datepicker: datepicker = "datepicker".asInstanceOf[datepicker]
+  inline def datepicker: datepicker = "datepicker".asInstanceOf[datepicker]
   
   @js.native
   sealed trait day extends StObject
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait month extends StObject
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
   sealed trait year extends StObject
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  inline def year: year = "year".asInstanceOf[year]
 }

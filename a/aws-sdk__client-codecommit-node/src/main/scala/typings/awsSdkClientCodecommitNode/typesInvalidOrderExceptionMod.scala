@@ -16,17 +16,14 @@ object typesInvalidOrderExceptionMod {
   }
   object InvalidOrderException {
     
-    @scala.inline
-    def apply(): InvalidOrderException = {
+    inline def apply(): InvalidOrderException = {
       val __obj = js.Dynamic.literal(name = "InvalidOrderException")
       __obj.asInstanceOf[InvalidOrderException]
     }
     
-    @scala.inline
-    implicit class InvalidOrderExceptionMutableBuilder[Self <: InvalidOrderException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidOrderException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidOrderException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidOrderException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

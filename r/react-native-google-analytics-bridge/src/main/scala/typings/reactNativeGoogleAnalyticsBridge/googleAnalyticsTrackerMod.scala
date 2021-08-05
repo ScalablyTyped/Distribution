@@ -285,8 +285,8 @@ object googleAnalyticsTrackerMod {
       * @param {{fieldName: value}} customDimensions
       * @returns {{fieldIndex: value}}
       */
-    var transformCustomDimensionsFieldsToIndexes: js.Any = js.native
+    /* private */ var transformCustomDimensionsFieldsToIndexes: js.Any = js.native
     
-    var transformPayload: js.Any = js.native
+    /* private */ var transformPayload: js.Any = js.native
   }
 }

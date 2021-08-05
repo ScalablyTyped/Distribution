@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceGatheringState extends StObject
 object RTCIceGatheringState {
   
-  @scala.inline
-  def complete: typings.std.stdStrings.complete = "complete".asInstanceOf[typings.std.stdStrings.complete]
+  inline def complete: typings.std.stdStrings.complete = "complete".asInstanceOf[typings.std.stdStrings.complete]
   
-  @scala.inline
-  def gathering: typings.std.stdStrings.gathering = "gathering".asInstanceOf[typings.std.stdStrings.gathering]
+  inline def gathering: typings.std.stdStrings.gathering = "gathering".asInstanceOf[typings.std.stdStrings.gathering]
   
-  @scala.inline
-  def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
+  inline def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
 }

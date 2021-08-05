@@ -15,8 +15,7 @@ trait ParametersPullsListRequestedReviewersEndpoint extends StObject {
 }
 object ParametersPullsListRequestedReviewersEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: PullsListRequestedReviewersEndpoint,
     response: OctokitResponse[PullsListRequestedReviewersResponseData] & `15`
   ): ParametersPullsListRequestedReviewersEndpoint = {
@@ -24,13 +23,10 @@ object ParametersPullsListRequestedReviewersEndpoint {
     __obj.asInstanceOf[ParametersPullsListRequestedReviewersEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersPullsListRequestedReviewersEndpointMutableBuilder[Self <: ParametersPullsListRequestedReviewersEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersPullsListRequestedReviewersEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PullsListRequestedReviewersEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PullsListRequestedReviewersEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[PullsListRequestedReviewersResponseData] & `15`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[PullsListRequestedReviewersResponseData] & `15`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

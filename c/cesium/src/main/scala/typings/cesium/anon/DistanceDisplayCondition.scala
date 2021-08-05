@@ -24,55 +24,39 @@ trait DistanceDisplayCondition extends StObject {
 }
 object DistanceDisplayCondition {
   
-  @scala.inline
-  def apply(): DistanceDisplayCondition = {
+  inline def apply(): DistanceDisplayCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistanceDisplayCondition]
   }
   
-  @scala.inline
-  implicit class DistanceDisplayConditionMutableBuilder[Self <: DistanceDisplayCondition] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceDisplayCondition](x: Self) {
     
-    @scala.inline
-    def setDistanceDisplayCondition(value: Property): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
+    inline def setDistanceDisplayCondition(value: Property): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
+    inline def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
     
-    @scala.inline
-    def setLeadTime(value: Property | Double): Self = StObject.set(x, "leadTime", value.asInstanceOf[js.Any])
+    inline def setLeadTime(value: Property | Double): Self = StObject.set(x, "leadTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadTimeUndefined: Self = StObject.set(x, "leadTime", js.undefined)
+    inline def setLeadTimeUndefined: Self = StObject.set(x, "leadTime", js.undefined)
     
-    @scala.inline
-    def setMaterial(value: MaterialProperty): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: MaterialProperty): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
-    @scala.inline
-    def setResolution(value: Property | Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Property | Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
-    @scala.inline
-    def setShow(value: Property | Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Property | Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setTrailTime(value: Property | Double): Self = StObject.set(x, "trailTime", value.asInstanceOf[js.Any])
+    inline def setTrailTime(value: Property | Double): Self = StObject.set(x, "trailTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailTimeUndefined: Self = StObject.set(x, "trailTime", js.undefined)
+    inline def setTrailTimeUndefined: Self = StObject.set(x, "trailTime", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Property | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Property | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

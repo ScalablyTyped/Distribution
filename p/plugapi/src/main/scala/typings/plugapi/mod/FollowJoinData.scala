@@ -14,22 +14,17 @@ trait FollowJoinData extends StObject {
 }
 object FollowJoinData {
   
-  @scala.inline
-  def apply(id: String, r: Double, un: String): FollowJoinData = {
+  inline def apply(id: String, r: Double, un: String): FollowJoinData = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], un = un.asInstanceOf[js.Any])
     __obj.asInstanceOf[FollowJoinData]
   }
   
-  @scala.inline
-  implicit class FollowJoinDataMutableBuilder[Self <: FollowJoinData] (val x: Self) extends AnyVal {
+  extension [Self <: FollowJoinData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUn(value: String): Self = StObject.set(x, "un", value.asInstanceOf[js.Any])
+    inline def setUn(value: String): Self = StObject.set(x, "un", value.asInstanceOf[js.Any])
   }
 }

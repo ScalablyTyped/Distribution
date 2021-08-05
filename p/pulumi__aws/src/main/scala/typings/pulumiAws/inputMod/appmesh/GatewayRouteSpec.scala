@@ -24,31 +24,23 @@ trait GatewayRouteSpec extends StObject {
 }
 object GatewayRouteSpec {
   
-  @scala.inline
-  def apply(): GatewayRouteSpec = {
+  inline def apply(): GatewayRouteSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GatewayRouteSpec]
   }
   
-  @scala.inline
-  implicit class GatewayRouteSpecMutableBuilder[Self <: GatewayRouteSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayRouteSpec](x: Self) {
     
-    @scala.inline
-    def setGrpcRoute(value: Input[GatewayRouteSpecGrpcRoute]): Self = StObject.set(x, "grpcRoute", value.asInstanceOf[js.Any])
+    inline def setGrpcRoute(value: Input[GatewayRouteSpecGrpcRoute]): Self = StObject.set(x, "grpcRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrpcRouteUndefined: Self = StObject.set(x, "grpcRoute", js.undefined)
+    inline def setGrpcRouteUndefined: Self = StObject.set(x, "grpcRoute", js.undefined)
     
-    @scala.inline
-    def setHttp2Route(value: Input[GatewayRouteSpecHttp2Route]): Self = StObject.set(x, "http2Route", value.asInstanceOf[js.Any])
+    inline def setHttp2Route(value: Input[GatewayRouteSpecHttp2Route]): Self = StObject.set(x, "http2Route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp2RouteUndefined: Self = StObject.set(x, "http2Route", js.undefined)
+    inline def setHttp2RouteUndefined: Self = StObject.set(x, "http2Route", js.undefined)
     
-    @scala.inline
-    def setHttpRoute(value: Input[GatewayRouteSpecHttpRoute]): Self = StObject.set(x, "httpRoute", value.asInstanceOf[js.Any])
+    inline def setHttpRoute(value: Input[GatewayRouteSpecHttpRoute]): Self = StObject.set(x, "httpRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRouteUndefined: Self = StObject.set(x, "httpRoute", js.undefined)
+    inline def setHttpRouteUndefined: Self = StObject.set(x, "httpRoute", js.undefined)
   }
 }

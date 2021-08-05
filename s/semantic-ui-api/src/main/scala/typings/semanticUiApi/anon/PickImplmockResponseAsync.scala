@@ -17,8 +17,7 @@ trait PickImplmockResponseAsync extends StObject {
 }
 object PickImplmockResponseAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mockResponseAsync: (js.Function2[
       /* settings */ ApiSettings, 
       /* callback */ js.Function1[/* response */ js.Any, Unit], 
@@ -29,11 +28,9 @@ object PickImplmockResponseAsync {
     __obj.asInstanceOf[PickImplmockResponseAsync]
   }
   
-  @scala.inline
-  implicit class PickImplmockResponseAsyncMutableBuilder[Self <: PickImplmockResponseAsync] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmockResponseAsync](x: Self) {
     
-    @scala.inline
-    def setMockResponseAsync(
+    inline def setMockResponseAsync(
       value: (js.Function2[
           /* settings */ ApiSettings, 
           /* callback */ js.Function1[/* response */ js.Any, Unit], 
@@ -41,8 +38,7 @@ object PickImplmockResponseAsync {
         ]) | `false`
     ): Self = StObject.set(x, "mockResponseAsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMockResponseAsyncFunction2(
+    inline def setMockResponseAsyncFunction2(
       value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ js.Any, Unit]) => Unit
     ): Self = StObject.set(x, "mockResponseAsync", js.Any.fromFunction2(value))
   }

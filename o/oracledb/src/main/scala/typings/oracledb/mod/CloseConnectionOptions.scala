@@ -17,16 +17,13 @@ trait CloseConnectionOptions extends StObject {
 }
 object CloseConnectionOptions {
   
-  @scala.inline
-  def apply(drop: Boolean): CloseConnectionOptions = {
+  inline def apply(drop: Boolean): CloseConnectionOptions = {
     val __obj = js.Dynamic.literal(drop = drop.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseConnectionOptions]
   }
   
-  @scala.inline
-  implicit class CloseConnectionOptionsMutableBuilder[Self <: CloseConnectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CloseConnectionOptions](x: Self) {
     
-    @scala.inline
-    def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
   }
 }

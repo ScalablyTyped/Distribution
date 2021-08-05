@@ -18,22 +18,17 @@ trait BatchGetApplicationRevisionsInput extends StObject {
 }
 object BatchGetApplicationRevisionsInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName, revisions: RevisionLocationList): BatchGetApplicationRevisionsInput = {
+  inline def apply(applicationName: ApplicationName, revisions: RevisionLocationList): BatchGetApplicationRevisionsInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], revisions = revisions.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetApplicationRevisionsInput]
   }
   
-  @scala.inline
-  implicit class BatchGetApplicationRevisionsInputMutableBuilder[Self <: BatchGetApplicationRevisionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetApplicationRevisionsInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisions(value: RevisionLocationList): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
+    inline def setRevisions(value: RevisionLocationList): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionsVarargs(value: RevisionLocation*): Self = StObject.set(x, "revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: RevisionLocation*): Self = StObject.set(x, "revisions", js.Array(value :_*))
   }
 }

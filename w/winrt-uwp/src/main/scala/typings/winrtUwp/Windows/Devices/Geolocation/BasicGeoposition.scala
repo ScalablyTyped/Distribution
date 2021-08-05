@@ -18,22 +18,17 @@ trait BasicGeoposition extends StObject {
 }
 object BasicGeoposition {
   
-  @scala.inline
-  def apply(altitude: Double, latitude: Double, longitude: Double): BasicGeoposition = {
+  inline def apply(altitude: Double, latitude: Double, longitude: Double): BasicGeoposition = {
     val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicGeoposition]
   }
   
-  @scala.inline
-  implicit class BasicGeopositionMutableBuilder[Self <: BasicGeoposition] (val x: Self) extends AnyVal {
+  extension [Self <: BasicGeoposition](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

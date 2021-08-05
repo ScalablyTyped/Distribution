@@ -18,25 +18,19 @@ trait OfferingPromotion extends StObject {
 }
 object OfferingPromotion {
   
-  @scala.inline
-  def apply(): OfferingPromotion = {
+  inline def apply(): OfferingPromotion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OfferingPromotion]
   }
   
-  @scala.inline
-  implicit class OfferingPromotionMutableBuilder[Self <: OfferingPromotion] (val x: Self) extends AnyVal {
+  extension [Self <: OfferingPromotion](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: OfferingPromotionIdentifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: OfferingPromotionIdentifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

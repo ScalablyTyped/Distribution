@@ -13,19 +13,15 @@ trait defaultMetrics extends StObject {
 }
 object defaultMetrics {
   
-  @scala.inline
-  def apply(metricsList: js.Array[String]): defaultMetrics = {
+  inline def apply(metricsList: js.Array[String]): defaultMetrics = {
     val __obj = js.Dynamic.literal(metricsList = metricsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[defaultMetrics]
   }
   
-  @scala.inline
-  implicit class defaultMetricsMutableBuilder[Self <: defaultMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: defaultMetrics](x: Self) {
     
-    @scala.inline
-    def setMetricsList(value: js.Array[String]): Self = StObject.set(x, "metricsList", value.asInstanceOf[js.Any])
+    inline def setMetricsList(value: js.Array[String]): Self = StObject.set(x, "metricsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsListVarargs(value: String*): Self = StObject.set(x, "metricsList", js.Array(value :_*))
+    inline def setMetricsListVarargs(value: String*): Self = StObject.set(x, "metricsList", js.Array(value :_*))
   }
 }

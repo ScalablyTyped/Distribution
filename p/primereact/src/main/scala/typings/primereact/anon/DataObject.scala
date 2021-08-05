@@ -12,19 +12,15 @@ trait DataObject extends StObject {
 }
 object DataObject {
   
-  @scala.inline
-  def apply(data: js.Object, originalEvent: typings.std.Event): DataObject = {
+  inline def apply(data: js.Object, originalEvent: typings.std.Event): DataObject = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
   
-  @scala.inline
-  implicit class DataObjectMutableBuilder[Self <: DataObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataObject](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: typings.std.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

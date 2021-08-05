@@ -24,8 +24,7 @@ trait IkConstraintTimeline
 }
 object IkConstraintTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     curves: js.Any,
     frames: ArrayLike[Double],
@@ -43,16 +42,12 @@ object IkConstraintTimeline {
     __obj.asInstanceOf[IkConstraintTimeline]
   }
   
-  @scala.inline
-  implicit class IkConstraintTimelineMutableBuilder[Self <: IkConstraintTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: IkConstraintTimeline](x: Self) {
     
-    @scala.inline
-    def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIkConstraintIndex(value: Double): Self = StObject.set(x, "ikConstraintIndex", value.asInstanceOf[js.Any])
+    inline def setIkConstraintIndex(value: Double): Self = StObject.set(x, "ikConstraintIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFrame(value: (Double, Double, Double, Double, Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction7(value))
+    inline def setSetFrame(value: (Double, Double, Double, Double, Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "setFrame", js.Any.fromFunction7(value))
   }
 }

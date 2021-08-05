@@ -16,31 +16,23 @@ trait AddOptions
 }
 object AddOptions {
   
-  @scala.inline
-  def apply(): AddOptions = {
+  inline def apply(): AddOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddOptions]
   }
   
-  @scala.inline
-  implicit class AddOptionsMutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AddOptions](x: Self) {
     
-    @scala.inline
-    def setAt(value: Double): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: Double): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
+    inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
-    @scala.inline
-    def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

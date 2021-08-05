@@ -17,20 +17,16 @@ object anon {
   }
   object MediaType {
     
-    @scala.inline
-    def apply(mediaType: String, onVDOMEvent: () => Unit): MediaType = {
+    inline def apply(mediaType: String, onVDOMEvent: () => Unit): MediaType = {
       val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], onVDOMEvent = js.Any.fromFunction0(onVDOMEvent))
       __obj.asInstanceOf[MediaType]
     }
     
-    @scala.inline
-    implicit class MediaTypeMutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
+    extension [Self <: MediaType](x: Self) {
       
-      @scala.inline
-      def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnVDOMEvent(value: () => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction0(value))
+      inline def setOnVDOMEvent(value: () => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction0(value))
     }
   }
   
@@ -45,32 +41,24 @@ object anon {
   }
   object PartialProps {
     
-    @scala.inline
-    def apply(): PartialProps = {
+    inline def apply(): PartialProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialProps]
     }
     
-    @scala.inline
-    implicit class PartialPropsMutableBuilder[Self <: PartialProps] (val x: Self) extends AnyVal {
+    extension [Self <: PartialProps](x: Self) {
       
-      @scala.inline
-      def setData(value: VDOMEl): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: VDOMEl): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setMediaType(value: applicationSlashvdomDotv1Plussignjson): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: applicationSlashvdomDotv1Plussignjson): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      @scala.inline
-      def setOnVDOMEvent(value: (/* targetName */ String, /* event */ SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
+      inline def setOnVDOMEvent(value: (/* targetName */ String, /* event */ SerializedEvent[js.Any]) => Unit): Self = StObject.set(x, "onVDOMEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnVDOMEventUndefined: Self = StObject.set(x, "onVDOMEvent", js.undefined)
+      inline def setOnVDOMEventUndefined: Self = StObject.set(x, "onVDOMEvent", js.undefined)
     }
   }
 }

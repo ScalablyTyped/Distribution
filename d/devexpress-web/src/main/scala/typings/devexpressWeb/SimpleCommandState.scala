@@ -21,19 +21,15 @@ trait SimpleCommandState extends StObject {
 }
 object SimpleCommandState {
   
-  @scala.inline
-  def apply(enabled: Boolean, visible: Boolean): SimpleCommandState = {
+  inline def apply(enabled: Boolean, visible: Boolean): SimpleCommandState = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleCommandState]
   }
   
-  @scala.inline
-  implicit class SimpleCommandStateMutableBuilder[Self <: SimpleCommandState] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleCommandState](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait Flex extends StObject {
 }
 object Flex {
   
-  @scala.inline
-  def apply(alignItems: String, flex: Double, flexDirection: String): Flex = {
+  inline def apply(alignItems: String, flex: Double, flexDirection: String): Flex = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], flexDirection = flexDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flex]
   }
   
-  @scala.inline
-  implicit class FlexMutableBuilder[Self <: Flex] (val x: Self) extends AnyVal {
+  extension [Self <: Flex](x: Self) {
     
-    @scala.inline
-    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
   }
 }

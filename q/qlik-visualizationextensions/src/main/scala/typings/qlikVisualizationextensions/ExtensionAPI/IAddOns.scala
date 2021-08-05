@@ -11,16 +11,13 @@ trait IAddOns extends StObject {
 }
 object IAddOns {
   
-  @scala.inline
-  def apply(): IAddOns = {
+  inline def apply(): IAddOns = {
     val __obj = js.Dynamic.literal(uses = "addons")
     __obj.asInstanceOf[IAddOns]
   }
   
-  @scala.inline
-  implicit class IAddOnsMutableBuilder[Self <: IAddOns] (val x: Self) extends AnyVal {
+  extension [Self <: IAddOns](x: Self) {
     
-    @scala.inline
-    def setUses(value: addons): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+    inline def setUses(value: addons): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsStartMenuAppListVisibilityType extends StObject
 object WindowsStartMenuAppListVisibilityType {
   
-  @scala.inline
-  def collapse: typings.microsoftGraph.microsoftGraphStrings.collapse = "collapse".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.collapse]
+  inline def collapse: typings.microsoftGraph.microsoftGraphStrings.collapse = "collapse".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.collapse]
   
-  @scala.inline
-  def disableSettingsApp: typings.microsoftGraph.microsoftGraphStrings.disableSettingsApp = "disableSettingsApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disableSettingsApp]
+  inline def disableSettingsApp: typings.microsoftGraph.microsoftGraphStrings.disableSettingsApp = "disableSettingsApp".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disableSettingsApp]
   
-  @scala.inline
-  def remove: typings.microsoftGraph.microsoftGraphStrings.remove = "remove".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.remove]
+  inline def remove: typings.microsoftGraph.microsoftGraphStrings.remove = "remove".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.remove]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

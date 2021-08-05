@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFacetFilterStatusFlags extends StObject
 object MFFacetFilterStatusFlags {
   
-  @scala.inline
-  def Applied: `2` = 2.asInstanceOf[`2`]
+  inline def Applied: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Available: `1` = 1.asInstanceOf[`1`]
+  inline def Available: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
 }

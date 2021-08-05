@@ -71,8 +71,7 @@ trait X500Name
 }
 object X500Name {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -90,16 +89,12 @@ object X500Name {
     __obj.asInstanceOf[X500Name]
   }
   
-  @scala.inline
-  implicit class X500NameMutableBuilder[Self <: X500Name] (val x: Self) extends AnyVal {
+  extension [Self <: X500Name](x: Self) {
     
-    @scala.inline
-    def setSetByLdapString(value: String => Unit): Self = StObject.set(x, "setByLdapString", js.Any.fromFunction1(value))
+    inline def setSetByLdapString(value: String => Unit): Self = StObject.set(x, "setByLdapString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetByObject(value: X500NameParam => Unit): Self = StObject.set(x, "setByObject", js.Any.fromFunction1(value))
+    inline def setSetByObject(value: X500NameParam => Unit): Self = StObject.set(x, "setByObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetByString(value: String => Unit): Self = StObject.set(x, "setByString", js.Any.fromFunction1(value))
+    inline def setSetByString(value: String => Unit): Self = StObject.set(x, "setByString", js.Any.fromFunction1(value))
   }
 }

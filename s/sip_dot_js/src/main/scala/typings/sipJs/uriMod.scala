@@ -32,7 +32,7 @@ object uriMod {
     
     /* private */ def _raw: js.Any = js.native
     
-    var _toString: js.Any = js.native
+    /* private */ var _toString: js.Any = js.native
     
     def aor: String = js.native
     
@@ -40,25 +40,25 @@ object uriMod {
     
     def deleteHeader(header: String): js.Any = js.native
     
-    var escapeUser: js.Any = js.native
+    /* private */ var escapeUser: js.Any = js.native
     
     def getHeader(name: String): js.UndefOr[String] = js.native
     
     def hasHeader(name: String): Boolean = js.native
     
-    var headerize: js.Any = js.native
+    /* private */ var headerize: js.Any = js.native
     
-    var headers: js.Any = js.native
+    /* private */ var headers: js.Any = js.native
     
     def host: String = js.native
     def host_=(value: String): Unit = js.native
     
-    var normal: js.Any = js.native
+    /* private */ var normal: js.Any = js.native
     
     def port: js.UndefOr[Double] = js.native
     def port_=(value: js.UndefOr[Double]): Unit = js.native
     
-    var raw: js.Any = js.native
+    /* private */ var raw: js.Any = js.native
     
     def scheme: String = js.native
     def scheme_=(value: String): Unit = js.native

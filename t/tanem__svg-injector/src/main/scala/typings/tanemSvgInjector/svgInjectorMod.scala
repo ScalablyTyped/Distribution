@@ -19,10 +19,8 @@ object svgInjectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(elements: Elements): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(
+  inline def default(elements: Elements): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(
     elements: Elements,
     hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsRenumerateIRIElements: OptionalArgs
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsRenumerateIRIElements.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -45,50 +43,36 @@ object svgInjectorMod {
   }
   object OptionalArgs {
     
-    @scala.inline
-    def apply(): OptionalArgs = {
+    inline def apply(): OptionalArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionalArgs]
     }
     
-    @scala.inline
-    implicit class OptionalArgsMutableBuilder[Self <: OptionalArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OptionalArgs](x: Self) {
       
-      @scala.inline
-      def setAfterAll(value: /* elementsLoaded */ Double => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction1(value))
+      inline def setAfterAll(value: /* elementsLoaded */ Double => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterAllUndefined: Self = StObject.set(x, "afterAll", js.undefined)
+      inline def setAfterAllUndefined: Self = StObject.set(x, "afterAll", js.undefined)
       
-      @scala.inline
-      def setAfterEach(value: (/* error */ Error | Null, /* svg */ js.UndefOr[SVGElement]) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
+      inline def setAfterEach(value: (/* error */ Error | Null, /* svg */ js.UndefOr[SVGElement]) => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
+      inline def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
       
-      @scala.inline
-      def setBeforeEach(value: /* svg */ SVGElement => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
+      inline def setBeforeEach(value: /* svg */ SVGElement => Unit): Self = StObject.set(x, "beforeEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
+      inline def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
       
-      @scala.inline
-      def setCacheRequests(value: Boolean): Self = StObject.set(x, "cacheRequests", value.asInstanceOf[js.Any])
+      inline def setCacheRequests(value: Boolean): Self = StObject.set(x, "cacheRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheRequestsUndefined: Self = StObject.set(x, "cacheRequests", js.undefined)
+      inline def setCacheRequestsUndefined: Self = StObject.set(x, "cacheRequests", js.undefined)
       
-      @scala.inline
-      def setEvalScripts(value: EvalScripts): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
+      inline def setEvalScripts(value: EvalScripts): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalScriptsUndefined: Self = StObject.set(x, "evalScripts", js.undefined)
+      inline def setEvalScriptsUndefined: Self = StObject.set(x, "evalScripts", js.undefined)
       
-      @scala.inline
-      def setRenumerateIRIElements(value: Boolean): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
+      inline def setRenumerateIRIElements(value: Boolean): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenumerateIRIElementsUndefined: Self = StObject.set(x, "renumerateIRIElements", js.undefined)
+      inline def setRenumerateIRIElementsUndefined: Self = StObject.set(x, "renumerateIRIElements", js.undefined)
     }
   }
 }

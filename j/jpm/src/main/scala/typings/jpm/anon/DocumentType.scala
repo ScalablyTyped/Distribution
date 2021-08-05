@@ -26,55 +26,39 @@ trait DocumentType extends StObject {
 }
 object DocumentType {
   
-  @scala.inline
-  def apply(documentType: String, documentURL: String, isEditable: Boolean, targetName: String): DocumentType = {
+  inline def apply(documentType: String, documentURL: String, isEditable: Boolean, targetName: String): DocumentType = {
     val __obj = js.Dynamic.literal(documentType = documentType.asInstanceOf[js.Any], documentURL = documentURL.asInstanceOf[js.Any], isEditable = isEditable.asInstanceOf[js.Any], targetName = targetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentType]
   }
   
-  @scala.inline
-  implicit class DocumentTypeMutableBuilder[Self <: DocumentType] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentType](x: Self) {
     
-    @scala.inline
-    def setDocumentType(value: String): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
+    inline def setDocumentType(value: String): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
+    inline def setDocumentURL(value: String): Self = StObject.set(x, "documentURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
+    inline def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
+    inline def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkURLUndefined: Self = StObject.set(x, "linkURL", js.undefined)
+    inline def setLinkURLUndefined: Self = StObject.set(x, "linkURL", js.undefined)
     
-    @scala.inline
-    def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
+    inline def setSelectionText(value: String): Self = StObject.set(x, "selectionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionTextUndefined: Self = StObject.set(x, "selectionText", js.undefined)
+    inline def setSelectionTextUndefined: Self = StObject.set(x, "selectionText", js.undefined)
     
-    @scala.inline
-    def setSrcURL(value: String): Self = StObject.set(x, "srcURL", value.asInstanceOf[js.Any])
+    inline def setSrcURL(value: String): Self = StObject.set(x, "srcURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcURLUndefined: Self = StObject.set(x, "srcURL", js.undefined)
+    inline def setSrcURLUndefined: Self = StObject.set(x, "srcURL", js.undefined)
     
-    @scala.inline
-    def setTargetID(value: String): Self = StObject.set(x, "targetID", value.asInstanceOf[js.Any])
+    inline def setTargetID(value: String): Self = StObject.set(x, "targetID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIDUndefined: Self = StObject.set(x, "targetID", js.undefined)
+    inline def setTargetIDUndefined: Self = StObject.set(x, "targetID", js.undefined)
     
-    @scala.inline
-    def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+    inline def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

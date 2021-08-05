@@ -11,8 +11,7 @@ trait GetApnsVoipSandboxChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesGetApnsVoipSandboxChannelOutputMod.GetApnsVoipSandboxChannelOutput
 object GetApnsVoipSandboxChannelOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $metadata: ResponseMetadata,
     APNSVoipSandboxChannelResponse: UnmarshalledAPNSVoipSandboxChannelResponse
   ): GetApnsVoipSandboxChannelOutput = {

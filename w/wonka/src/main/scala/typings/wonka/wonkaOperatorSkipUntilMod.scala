@@ -12,6 +12,5 @@ object wonkaOperatorSkipUntilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def skipUntil[A](signal: Source[js.Any]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipUntil")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def skipUntil[A](signal: Source[js.Any]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("skipUntil")(signal.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

@@ -16,34 +16,25 @@ trait AddItemButton extends StObject {
 }
 object AddItemButton {
   
-  @scala.inline
-  def apply(AddItemButton: Image): AddItemButton = {
+  inline def apply(AddItemButton: Image): AddItemButton = {
     val __obj = js.Dynamic.literal(AddItemButton = AddItemButton.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddItemButton]
   }
   
-  @scala.inline
-  implicit class AddItemButtonMutableBuilder[Self <: AddItemButton] (val x: Self) extends AnyVal {
+  extension [Self <: AddItemButton](x: Self) {
     
-    @scala.inline
-    def setAddItemButton(value: Image): Self = StObject.set(x, "AddItemButton", value.asInstanceOf[js.Any])
+    inline def setAddItemButton(value: Image): Self = StObject.set(x, "AddItemButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseModalLayout(value: HeloButton): Self = StObject.set(x, "BaseModalLayout", value.asInstanceOf[js.Any])
+    inline def setBaseModalLayout(value: HeloButton): Self = StObject.set(x, "BaseModalLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseModalLayoutUndefined: Self = StObject.set(x, "BaseModalLayout", js.undefined)
+    inline def setBaseModalLayoutUndefined: Self = StObject.set(x, "BaseModalLayout", js.undefined)
     
-    @scala.inline
-    def setCircularProgressBar(value: Large): Self = StObject.set(x, "CircularProgressBar", value.asInstanceOf[js.Any])
+    inline def setCircularProgressBar(value: Large): Self = StObject.set(x, "CircularProgressBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircularProgressBarUndefined: Self = StObject.set(x, "CircularProgressBar", js.undefined)
+    inline def setCircularProgressBarUndefined: Self = StObject.set(x, "CircularProgressBar", js.undefined)
     
-    @scala.inline
-    def setCloseButton(value: Large): Self = StObject.set(x, "CloseButton", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: Large): Self = StObject.set(x, "CloseButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonUndefined: Self = StObject.set(x, "CloseButton", js.undefined)
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "CloseButton", js.undefined)
   }
 }

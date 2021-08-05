@@ -40,8 +40,7 @@ object d3pie {
   }
   object ID3PieChart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closeSegment: Unit => Unit,
       destroy: () => Unit,
       getOpenSegment: () => js.Any,
@@ -53,26 +52,19 @@ object d3pie {
       __obj.asInstanceOf[ID3PieChart]
     }
     
-    @scala.inline
-    implicit class ID3PieChartMutableBuilder[Self <: ID3PieChart] (val x: Self) extends AnyVal {
+    extension [Self <: ID3PieChart](x: Self) {
       
-      @scala.inline
-      def setCloseSegment(value: Unit => Unit): Self = StObject.set(x, "closeSegment", js.Any.fromFunction1(value))
+      inline def setCloseSegment(value: Unit => Unit): Self = StObject.set(x, "closeSegment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOpenSegment(value: () => js.Any): Self = StObject.set(x, "getOpenSegment", js.Any.fromFunction0(value))
+      inline def setGetOpenSegment(value: () => js.Any): Self = StObject.set(x, "getOpenSegment", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenSegment(value: Double => Unit): Self = StObject.set(x, "openSegment", js.Any.fromFunction1(value))
+      inline def setOpenSegment(value: Double => Unit): Self = StObject.set(x, "openSegment", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRedraw(value: () => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
+      inline def setRedraw(value: () => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateProp(value: (String, js.Any) => Unit): Self = StObject.set(x, "updateProp", js.Any.fromFunction2(value))
+      inline def setUpdateProp(value: (String, js.Any) => Unit): Self = StObject.set(x, "updateProp", js.Any.fromFunction2(value))
     }
   }
   
@@ -91,28 +83,22 @@ object d3pie {
   }
   object ID3PieLabelsOptions {
     
-    @scala.inline
-    def apply(): ID3PieLabelsOptions = {
+    inline def apply(): ID3PieLabelsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ID3PieLabelsOptions]
     }
     
-    @scala.inline
-    implicit class ID3PieLabelsOptionsMutableBuilder[Self <: ID3PieLabelsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ID3PieLabelsOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(
+      inline def setFormat(
         value: label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
       ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHideWhenLessThanPercentage(value: Double): Self = StObject.set(x, "hideWhenLessThanPercentage", value.asInstanceOf[js.Any])
+      inline def setHideWhenLessThanPercentage(value: Double): Self = StObject.set(x, "hideWhenLessThanPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideWhenLessThanPercentageUndefined: Self = StObject.set(x, "hideWhenLessThanPercentage", js.undefined)
+      inline def setHideWhenLessThanPercentageUndefined: Self = StObject.set(x, "hideWhenLessThanPercentage", js.undefined)
     }
   }
   
@@ -138,65 +124,46 @@ object d3pie {
   }
   object ID3PieOptions {
     
-    @scala.inline
-    def apply(data: Content): ID3PieOptions = {
+    inline def apply(data: Content): ID3PieOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[ID3PieOptions]
     }
     
-    @scala.inline
-    implicit class ID3PieOptionsMutableBuilder[Self <: ID3PieOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ID3PieOptions](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: OnClickSegment): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: OnClickSegment): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+      inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      @scala.inline
-      def setData(value: Content): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Content): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffects(value: HighlightLuminosity): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+      inline def setEffects(value: HighlightLuminosity): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
+      inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
       
-      @scala.inline
-      def setFooter(value: locationleftundefinedID3P): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: locationleftundefinedID3P): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Location): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Location): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setLabels(value: Formatter): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Formatter): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setMisc(value: CanvasPadding): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
+      inline def setMisc(value: CanvasPadding): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiscUndefined: Self = StObject.set(x, "misc", js.undefined)
+      inline def setMiscUndefined: Self = StObject.set(x, "misc", js.undefined)
       
-      @scala.inline
-      def setSize(value: CanvasHeight): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: CanvasHeight): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTooltips(value: PlaceholderParser): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+      inline def setTooltips(value: PlaceholderParser): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
+      inline def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
     }
   }
   
@@ -210,32 +177,24 @@ object d3pie {
   }
   object ID3PieStyleOptions {
     
-    @scala.inline
-    def apply(): ID3PieStyleOptions = {
+    inline def apply(): ID3PieStyleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ID3PieStyleOptions]
     }
     
-    @scala.inline
-    implicit class ID3PieStyleOptionsMutableBuilder[Self <: ID3PieStyleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ID3PieStyleOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     }
   }
   
@@ -247,20 +206,16 @@ object d3pie {
   }
   object ID3PieTextOptions {
     
-    @scala.inline
-    def apply(): ID3PieTextOptions = {
+    inline def apply(): ID3PieTextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ID3PieTextOptions]
     }
     
-    @scala.inline
-    implicit class ID3PieTextOptionsMutableBuilder[Self <: ID3PieTextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ID3PieTextOptions](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

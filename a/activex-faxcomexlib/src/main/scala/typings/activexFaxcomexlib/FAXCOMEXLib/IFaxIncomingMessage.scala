@@ -49,8 +49,7 @@ trait IFaxIncomingMessage extends StObject {
 }
 object IFaxIncomingMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CSID: String,
     CallerId: String,
     CopyTiff: String => Unit,
@@ -69,46 +68,32 @@ object IFaxIncomingMessage {
     __obj.asInstanceOf[IFaxIncomingMessage]
   }
   
-  @scala.inline
-  implicit class IFaxIncomingMessageMutableBuilder[Self <: IFaxIncomingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IFaxIncomingMessage](x: Self) {
     
-    @scala.inline
-    def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
+    inline def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
+    inline def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyTiff(value: String => Unit): Self = StObject.set(x, "CopyTiff", js.Any.fromFunction1(value))
+    inline def setCopyTiff(value: String => Unit): Self = StObject.set(x, "CopyTiff", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingInformation(value: String): Self = StObject.set(x, "RoutingInformation", value.asInstanceOf[js.Any])
+    inline def setRoutingInformation(value: String): Self = StObject.set(x, "RoutingInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
+    inline def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
+    inline def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
+    inline def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
   }
 }

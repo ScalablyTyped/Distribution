@@ -30,46 +30,33 @@ trait RemediationExecutionStatus extends StObject {
 }
 object RemediationExecutionStatus {
   
-  @scala.inline
-  def apply(): RemediationExecutionStatus = {
+  inline def apply(): RemediationExecutionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemediationExecutionStatus]
   }
   
-  @scala.inline
-  implicit class RemediationExecutionStatusMutableBuilder[Self <: RemediationExecutionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: RemediationExecutionStatus](x: Self) {
     
-    @scala.inline
-    def setInvocationTime(value: Date): Self = StObject.set(x, "InvocationTime", value.asInstanceOf[js.Any])
+    inline def setInvocationTime(value: Date): Self = StObject.set(x, "InvocationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationTimeUndefined: Self = StObject.set(x, "InvocationTime", js.undefined)
+    inline def setInvocationTimeUndefined: Self = StObject.set(x, "InvocationTime", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setResourceKey(value: ResourceKey): Self = StObject.set(x, "ResourceKey", value.asInstanceOf[js.Any])
+    inline def setResourceKey(value: ResourceKey): Self = StObject.set(x, "ResourceKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceKeyUndefined: Self = StObject.set(x, "ResourceKey", js.undefined)
+    inline def setResourceKeyUndefined: Self = StObject.set(x, "ResourceKey", js.undefined)
     
-    @scala.inline
-    def setState(value: RemediationExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: RemediationExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setStepDetails(value: RemediationExecutionSteps): Self = StObject.set(x, "StepDetails", value.asInstanceOf[js.Any])
+    inline def setStepDetails(value: RemediationExecutionSteps): Self = StObject.set(x, "StepDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepDetailsUndefined: Self = StObject.set(x, "StepDetails", js.undefined)
+    inline def setStepDetailsUndefined: Self = StObject.set(x, "StepDetails", js.undefined)
     
-    @scala.inline
-    def setStepDetailsVarargs(value: RemediationExecutionStep*): Self = StObject.set(x, "StepDetails", js.Array(value :_*))
+    inline def setStepDetailsVarargs(value: RemediationExecutionStep*): Self = StObject.set(x, "StepDetails", js.Array(value :_*))
   }
 }

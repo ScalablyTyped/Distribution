@@ -26,17 +26,17 @@ class SerialPortPrinter protected ()
   @JSName("Id")
   var Id_SerialPortPrinter: String = js.native
   
-  var _serialPortBaudRate: js.Any = js.native
+  /* private */ var _serialPortBaudRate: js.Any = js.native
   
-  var _serialPortDataBits: js.Any = js.native
+  /* private */ var _serialPortDataBits: js.Any = js.native
   
-  var _serialPortFlowControl: js.Any = js.native
+  /* private */ var _serialPortFlowControl: js.Any = js.native
   
-  var _serialPortName: js.Any = js.native
+  /* private */ var _serialPortName: js.Any = js.native
   
-  var _serialPortParity: js.Any = js.native
+  /* private */ var _serialPortParity: js.Any = js.native
   
-  var _serialPortStopBits: js.Any = js.native
+  /* private */ var _serialPortStopBits: js.Any = js.native
   
   var baudRate: Double = js.native
   

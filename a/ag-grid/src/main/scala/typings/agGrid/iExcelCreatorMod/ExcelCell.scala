@@ -14,25 +14,19 @@ trait ExcelCell extends StObject {
 }
 object ExcelCell {
   
-  @scala.inline
-  def apply(data: ExcelData, styleId: String): ExcelCell = {
+  inline def apply(data: ExcelData, styleId: String): ExcelCell = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelCell]
   }
   
-  @scala.inline
-  implicit class ExcelCellMutableBuilder[Self <: ExcelCell] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelCell](x: Self) {
     
-    @scala.inline
-    def setData(value: ExcelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ExcelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeAcross(value: Double): Self = StObject.set(x, "mergeAcross", value.asInstanceOf[js.Any])
+    inline def setMergeAcross(value: Double): Self = StObject.set(x, "mergeAcross", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeAcrossUndefined: Self = StObject.set(x, "mergeAcross", js.undefined)
+    inline def setMergeAcrossUndefined: Self = StObject.set(x, "mergeAcross", js.undefined)
     
-    @scala.inline
-    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

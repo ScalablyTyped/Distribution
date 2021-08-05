@@ -18,43 +18,31 @@ trait SparklineValueAxisItemNotesDataItemIcon extends StObject {
 }
 object SparklineValueAxisItemNotesDataItemIcon {
   
-  @scala.inline
-  def apply(): SparklineValueAxisItemNotesDataItemIcon = {
+  inline def apply(): SparklineValueAxisItemNotesDataItemIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineValueAxisItemNotesDataItemIcon]
   }
   
-  @scala.inline
-  implicit class SparklineValueAxisItemNotesDataItemIconMutableBuilder[Self <: SparklineValueAxisItemNotesDataItemIcon] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineValueAxisItemNotesDataItemIcon](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBorder(value: SparklineValueAxisItemNotesDataItemIconBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: SparklineValueAxisItemNotesDataItemIconBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

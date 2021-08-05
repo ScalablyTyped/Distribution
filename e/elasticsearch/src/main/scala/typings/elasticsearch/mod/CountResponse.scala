@@ -12,19 +12,15 @@ trait CountResponse extends StObject {
 }
 object CountResponse {
   
-  @scala.inline
-  def apply(_shards: ShardsResponse, count: Double): CountResponse = {
+  inline def apply(_shards: ShardsResponse, count: Double): CountResponse = {
     val __obj = js.Dynamic.literal(_shards = _shards.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountResponse]
   }
   
-  @scala.inline
-  implicit class CountResponseMutableBuilder[Self <: CountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CountResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
+    inline def set_shards(value: ShardsResponse): Self = StObject.set(x, "_shards", value.asInstanceOf[js.Any])
   }
 }

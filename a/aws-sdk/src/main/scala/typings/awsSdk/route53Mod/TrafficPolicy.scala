@@ -38,8 +38,7 @@ trait TrafficPolicy extends StObject {
 }
 object TrafficPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Document: TrafficPolicyDocument,
     Id: TrafficPolicyId,
     Name: TrafficPolicyName,
@@ -50,28 +49,20 @@ object TrafficPolicy {
     __obj.asInstanceOf[TrafficPolicy]
   }
   
-  @scala.inline
-  implicit class TrafficPolicyMutableBuilder[Self <: TrafficPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficPolicy](x: Self) {
     
-    @scala.inline
-    def setComment(value: TrafficPolicyComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: TrafficPolicyComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setDocument(value: TrafficPolicyDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: TrafficPolicyDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: TrafficPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TrafficPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait SliderVisibleElements
 }
 object SliderVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object SliderVisibleElements {
     __obj.asInstanceOf[SliderVisibleElements]
   }
   
-  @scala.inline
-  implicit class SliderVisibleElementsMutableBuilder[Self <: SliderVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: SliderVisibleElements](x: Self) {
     
-    @scala.inline
-    def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setRangeLabels(value: Boolean): Self = StObject.set(x, "rangeLabels", value.asInstanceOf[js.Any])
+    inline def setRangeLabels(value: Boolean): Self = StObject.set(x, "rangeLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeLabelsUndefined: Self = StObject.set(x, "rangeLabels", js.undefined)
+    inline def setRangeLabelsUndefined: Self = StObject.set(x, "rangeLabels", js.undefined)
   }
 }

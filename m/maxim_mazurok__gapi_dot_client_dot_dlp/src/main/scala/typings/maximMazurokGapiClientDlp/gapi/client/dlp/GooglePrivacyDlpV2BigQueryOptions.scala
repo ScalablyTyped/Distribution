@@ -34,55 +34,39 @@ trait GooglePrivacyDlpV2BigQueryOptions extends StObject {
 }
 object GooglePrivacyDlpV2BigQueryOptions {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2BigQueryOptions = {
+  inline def apply(): GooglePrivacyDlpV2BigQueryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2BigQueryOptions]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2BigQueryOptionsMutableBuilder[Self <: GooglePrivacyDlpV2BigQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2BigQueryOptions](x: Self) {
     
-    @scala.inline
-    def setExcludedFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "excludedFields", value.asInstanceOf[js.Any])
+    inline def setExcludedFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "excludedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedFieldsUndefined: Self = StObject.set(x, "excludedFields", js.undefined)
+    inline def setExcludedFieldsUndefined: Self = StObject.set(x, "excludedFields", js.undefined)
     
-    @scala.inline
-    def setExcludedFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "excludedFields", js.Array(value :_*))
+    inline def setExcludedFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "excludedFields", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifyingFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "identifyingFields", value.asInstanceOf[js.Any])
+    inline def setIdentifyingFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "identifyingFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifyingFieldsUndefined: Self = StObject.set(x, "identifyingFields", js.undefined)
+    inline def setIdentifyingFieldsUndefined: Self = StObject.set(x, "identifyingFields", js.undefined)
     
-    @scala.inline
-    def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value :_*))
+    inline def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value :_*))
     
-    @scala.inline
-    def setRowsLimit(value: String): Self = StObject.set(x, "rowsLimit", value.asInstanceOf[js.Any])
+    inline def setRowsLimit(value: String): Self = StObject.set(x, "rowsLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsLimitPercent(value: Double): Self = StObject.set(x, "rowsLimitPercent", value.asInstanceOf[js.Any])
+    inline def setRowsLimitPercent(value: Double): Self = StObject.set(x, "rowsLimitPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsLimitPercentUndefined: Self = StObject.set(x, "rowsLimitPercent", js.undefined)
+    inline def setRowsLimitPercentUndefined: Self = StObject.set(x, "rowsLimitPercent", js.undefined)
     
-    @scala.inline
-    def setRowsLimitUndefined: Self = StObject.set(x, "rowsLimit", js.undefined)
+    inline def setRowsLimitUndefined: Self = StObject.set(x, "rowsLimit", js.undefined)
     
-    @scala.inline
-    def setSampleMethod(value: String): Self = StObject.set(x, "sampleMethod", value.asInstanceOf[js.Any])
+    inline def setSampleMethod(value: String): Self = StObject.set(x, "sampleMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleMethodUndefined: Self = StObject.set(x, "sampleMethod", js.undefined)
+    inline def setSampleMethodUndefined: Self = StObject.set(x, "sampleMethod", js.undefined)
     
-    @scala.inline
-    def setTableReference(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
+    inline def setTableReference(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableReferenceUndefined: Self = StObject.set(x, "tableReference", js.undefined)
+    inline def setTableReferenceUndefined: Self = StObject.set(x, "tableReference", js.undefined)
   }
 }

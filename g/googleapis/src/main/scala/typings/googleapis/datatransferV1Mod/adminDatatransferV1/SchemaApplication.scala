@@ -38,46 +38,33 @@ trait SchemaApplication extends StObject {
 }
 object SchemaApplication {
   
-  @scala.inline
-  def apply(): SchemaApplication = {
+  inline def apply(): SchemaApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaApplication]
   }
   
-  @scala.inline
-  implicit class SchemaApplicationMutableBuilder[Self <: SchemaApplication] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaApplication](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTransferParams(value: js.Array[SchemaApplicationTransferParam]): Self = StObject.set(x, "transferParams", value.asInstanceOf[js.Any])
+    inline def setTransferParams(value: js.Array[SchemaApplicationTransferParam]): Self = StObject.set(x, "transferParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferParamsUndefined: Self = StObject.set(x, "transferParams", js.undefined)
+    inline def setTransferParamsUndefined: Self = StObject.set(x, "transferParams", js.undefined)
     
-    @scala.inline
-    def setTransferParamsVarargs(value: SchemaApplicationTransferParam*): Self = StObject.set(x, "transferParams", js.Array(value :_*))
+    inline def setTransferParamsVarargs(value: SchemaApplicationTransferParam*): Self = StObject.set(x, "transferParams", js.Array(value :_*))
   }
 }

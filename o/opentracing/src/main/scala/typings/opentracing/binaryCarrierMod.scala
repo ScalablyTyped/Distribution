@@ -24,17 +24,14 @@ object binaryCarrierMod {
   }
   object BinaryCarrier {
     
-    @scala.inline
-    def apply(buffer: ArrayLike[Double]): BinaryCarrier = {
+    inline def apply(buffer: ArrayLike[Double]): BinaryCarrier = {
       val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any])
       __obj.asInstanceOf[BinaryCarrier]
     }
     
-    @scala.inline
-    implicit class BinaryCarrierMutableBuilder[Self <: BinaryCarrier] (val x: Self) extends AnyVal {
+    extension [Self <: BinaryCarrier](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: ArrayLike[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: ArrayLike[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }
   }
 }

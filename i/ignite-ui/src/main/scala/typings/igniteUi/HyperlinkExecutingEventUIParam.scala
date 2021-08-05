@@ -18,25 +18,19 @@ trait HyperlinkExecutingEventUIParam extends StObject {
 }
 object HyperlinkExecutingEventUIParam {
   
-  @scala.inline
-  def apply(): HyperlinkExecutingEventUIParam = {
+  inline def apply(): HyperlinkExecutingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HyperlinkExecutingEventUIParam]
   }
   
-  @scala.inline
-  implicit class HyperlinkExecutingEventUIParamMutableBuilder[Self <: HyperlinkExecutingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: HyperlinkExecutingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setHyperlink(value: js.Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: js.Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+    inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

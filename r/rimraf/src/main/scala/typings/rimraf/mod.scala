@@ -21,10 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(path: String, options: Options, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(path: String, options: Options, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("rimraf", JSImport.Namespace)
   @js.native
@@ -35,10 +33,8 @@ object mod {
     * But that's not so good. Use the async API.
     * It's better.
     */
-  @scala.inline
-  def sync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def sync(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sync(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * see {@link https://github.com/isaacs/rimraf/blob/79b933fb362b2c51bedfa448be848e1d7ed32d7e/README.md#options}
@@ -80,110 +76,76 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChmod(value: Typeofchmod): Self = StObject.set(x, "chmod", value.asInstanceOf[js.Any])
+      inline def setChmod(value: Typeofchmod): Self = StObject.set(x, "chmod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChmodSync(value: (/* path */ PathLike, /* mode */ Mode) => Unit): Self = StObject.set(x, "chmodSync", js.Any.fromFunction2(value))
+      inline def setChmodSync(value: (/* path */ PathLike, /* mode */ Mode) => Unit): Self = StObject.set(x, "chmodSync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChmodSyncUndefined: Self = StObject.set(x, "chmodSync", js.undefined)
+      inline def setChmodSyncUndefined: Self = StObject.set(x, "chmodSync", js.undefined)
       
-      @scala.inline
-      def setChmodUndefined: Self = StObject.set(x, "chmod", js.undefined)
+      inline def setChmodUndefined: Self = StObject.set(x, "chmod", js.undefined)
       
-      @scala.inline
-      def setDisableGlob(value: Boolean): Self = StObject.set(x, "disableGlob", value.asInstanceOf[js.Any])
+      inline def setDisableGlob(value: Boolean): Self = StObject.set(x, "disableGlob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableGlobUndefined: Self = StObject.set(x, "disableGlob", js.undefined)
+      inline def setDisableGlobUndefined: Self = StObject.set(x, "disableGlob", js.undefined)
       
-      @scala.inline
-      def setEmfileWait(value: Double): Self = StObject.set(x, "emfileWait", value.asInstanceOf[js.Any])
+      inline def setEmfileWait(value: Double): Self = StObject.set(x, "emfileWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmfileWaitUndefined: Self = StObject.set(x, "emfileWait", js.undefined)
+      inline def setEmfileWaitUndefined: Self = StObject.set(x, "emfileWait", js.undefined)
       
-      @scala.inline
-      def setGlob(value: IOptions | `false`): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: IOptions | `false`): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+      inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      @scala.inline
-      def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
+      inline def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
+      inline def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLstatSyncUndefined: Self = StObject.set(x, "lstatSync", js.undefined)
+      inline def setLstatSyncUndefined: Self = StObject.set(x, "lstatSync", js.undefined)
       
-      @scala.inline
-      def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
+      inline def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
       
-      @scala.inline
-      def setMaxBusyTries(value: Double): Self = StObject.set(x, "maxBusyTries", value.asInstanceOf[js.Any])
+      inline def setMaxBusyTries(value: Double): Self = StObject.set(x, "maxBusyTries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBusyTriesUndefined: Self = StObject.set(x, "maxBusyTries", js.undefined)
+      inline def setMaxBusyTriesUndefined: Self = StObject.set(x, "maxBusyTries", js.undefined)
       
-      @scala.inline
-      def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
+      inline def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReaddirSync(value: Fn0): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
+      inline def setReaddirSync(value: Fn0): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReaddirSyncUndefined: Self = StObject.set(x, "readdirSync", js.undefined)
+      inline def setReaddirSyncUndefined: Self = StObject.set(x, "readdirSync", js.undefined)
       
-      @scala.inline
-      def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
+      inline def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
       
-      @scala.inline
-      def setRmdir(value: Typeofrmdir): Self = StObject.set(x, "rmdir", value.asInstanceOf[js.Any])
+      inline def setRmdir(value: Typeofrmdir): Self = StObject.set(x, "rmdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmdirSync(value: FnCallPathOptions): Self = StObject.set(x, "rmdirSync", value.asInstanceOf[js.Any])
+      inline def setRmdirSync(value: FnCallPathOptions): Self = StObject.set(x, "rmdirSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmdirSyncUndefined: Self = StObject.set(x, "rmdirSync", js.undefined)
+      inline def setRmdirSyncUndefined: Self = StObject.set(x, "rmdirSync", js.undefined)
       
-      @scala.inline
-      def setRmdirUndefined: Self = StObject.set(x, "rmdir", js.undefined)
+      inline def setRmdirUndefined: Self = StObject.set(x, "rmdir", js.undefined)
       
-      @scala.inline
-      def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
+      inline def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatSync(value: FnCall): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
+      inline def setStatSync(value: FnCall): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatSyncUndefined: Self = StObject.set(x, "statSync", js.undefined)
+      inline def setStatSyncUndefined: Self = StObject.set(x, "statSync", js.undefined)
       
-      @scala.inline
-      def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
+      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
       
-      @scala.inline
-      def setUnlink(value: Typeofunlink): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
+      inline def setUnlink(value: Typeofunlink): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnlinkSync(value: /* path */ PathLike => Unit): Self = StObject.set(x, "unlinkSync", js.Any.fromFunction1(value))
+      inline def setUnlinkSync(value: /* path */ PathLike => Unit): Self = StObject.set(x, "unlinkSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnlinkSyncUndefined: Self = StObject.set(x, "unlinkSync", js.undefined)
+      inline def setUnlinkSyncUndefined: Self = StObject.set(x, "unlinkSync", js.undefined)
       
-      @scala.inline
-      def setUnlinkUndefined: Self = StObject.set(x, "unlink", js.undefined)
+      inline def setUnlinkUndefined: Self = StObject.set(x, "unlink", js.undefined)
     }
   }
 }

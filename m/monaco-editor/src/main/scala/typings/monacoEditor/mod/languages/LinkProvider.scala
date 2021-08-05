@@ -16,22 +16,17 @@ trait LinkProvider extends StObject {
 }
 object LinkProvider {
   
-  @scala.inline
-  def apply(provideLinks: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): LinkProvider = {
+  inline def apply(provideLinks: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): LinkProvider = {
     val __obj = js.Dynamic.literal(provideLinks = js.Any.fromFunction2(provideLinks))
     __obj.asInstanceOf[LinkProvider]
   }
   
-  @scala.inline
-  implicit class LinkProviderMutableBuilder[Self <: LinkProvider] (val x: Self) extends AnyVal {
+  extension [Self <: LinkProvider](x: Self) {
     
-    @scala.inline
-    def setProvideLinks(value: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
+    inline def setProvideLinks(value: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveLink(value: (/* link */ ILink, /* token */ CancellationToken) => ProviderResult[ILink]): Self = StObject.set(x, "resolveLink", js.Any.fromFunction2(value))
+    inline def setResolveLink(value: (/* link */ ILink, /* token */ CancellationToken) => ProviderResult[ILink]): Self = StObject.set(x, "resolveLink", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveLinkUndefined: Self = StObject.set(x, "resolveLink", js.undefined)
+    inline def setResolveLinkUndefined: Self = StObject.set(x, "resolveLink", js.undefined)
   }
 }

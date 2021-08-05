@@ -18,8 +18,7 @@ object pluginMod {
     @js.native
     val pkg: Record[String, js.Any] = js.native
     
-    @scala.inline
-    def register(server: Server_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(server: Server_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@hapi/hawk/lib/plugin", "plugin.requirements")
     @js.native

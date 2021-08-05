@@ -44,43 +44,31 @@ trait ParamsResourceEventsDelete
 }
 object ParamsResourceEventsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceEventsDelete = {
+  inline def apply(): ParamsResourceEventsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEventsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEventsDeleteMutableBuilder[Self <: ParamsResourceEventsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEventsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
+    inline def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
+    inline def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
+    inline def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
     
-    @scala.inline
-    def setSendUpdates(value: String): Self = StObject.set(x, "sendUpdates", value.asInstanceOf[js.Any])
+    inline def setSendUpdates(value: String): Self = StObject.set(x, "sendUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendUpdatesUndefined: Self = StObject.set(x, "sendUpdates", js.undefined)
+    inline def setSendUpdatesUndefined: Self = StObject.set(x, "sendUpdates", js.undefined)
   }
 }

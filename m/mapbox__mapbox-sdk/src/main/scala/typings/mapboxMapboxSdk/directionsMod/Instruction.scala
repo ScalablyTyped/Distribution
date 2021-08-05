@@ -41,43 +41,31 @@ trait Instruction extends StObject {
 }
 object Instruction {
   
-  @scala.inline
-  def apply(components: js.Array[Component], driving_side: DirectionsSide, text: String): Instruction = {
+  inline def apply(components: js.Array[Component], driving_side: DirectionsSide, text: String): Instruction = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], driving_side = driving_side.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instruction]
   }
   
-  @scala.inline
-  implicit class InstructionMutableBuilder[Self <: Instruction] (val x: Self) extends AnyVal {
+  extension [Self <: Instruction](x: Self) {
     
-    @scala.inline
-    def setComponents(value: js.Array[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Component*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
+    inline def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDegreesUndefined: Self = StObject.set(x, "degrees", js.undefined)
+    inline def setDegreesUndefined: Self = StObject.set(x, "degrees", js.undefined)
     
-    @scala.inline
-    def setDriving_side(value: DirectionsSide): Self = StObject.set(x, "driving_side", value.asInstanceOf[js.Any])
+    inline def setDriving_side(value: DirectionsSide): Self = StObject.set(x, "driving_side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifier(value: ManeuverModifier): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: ManeuverModifier): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

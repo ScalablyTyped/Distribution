@@ -18,37 +18,27 @@ trait LeafletContext extends StObject {
 }
 object LeafletContext {
   
-  @scala.inline
-  def apply(): LeafletContext = {
+  inline def apply(): LeafletContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeafletContext]
   }
   
-  @scala.inline
-  implicit class LeafletContextMutableBuilder[Self <: LeafletContext] (val x: Self) extends AnyVal {
+  extension [Self <: LeafletContext](x: Self) {
     
-    @scala.inline
-    def setLayerContainer(value: LayerContainer): Self = StObject.set(x, "layerContainer", value.asInstanceOf[js.Any])
+    inline def setLayerContainer(value: LayerContainer): Self = StObject.set(x, "layerContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerContainerUndefined: Self = StObject.set(x, "layerContainer", js.undefined)
+    inline def setLayerContainerUndefined: Self = StObject.set(x, "layerContainer", js.undefined)
     
-    @scala.inline
-    def setMap(value: Map_): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Map_): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
-    @scala.inline
-    def setPopupContainer(value: Layer): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
+    inline def setPopupContainer(value: Layer): Self = StObject.set(x, "popupContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupContainerUndefined: Self = StObject.set(x, "popupContainer", js.undefined)
+    inline def setPopupContainerUndefined: Self = StObject.set(x, "popupContainer", js.undefined)
   }
 }

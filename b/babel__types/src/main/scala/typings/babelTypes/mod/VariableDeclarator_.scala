@@ -21,32 +21,24 @@ trait VariableDeclarator_
 }
 object VariableDeclarator_ {
   
-  @scala.inline
-  def apply(id: LVal): VariableDeclarator_ = {
+  inline def apply(id: LVal): VariableDeclarator_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], definite = null, end = null, init = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("VariableDeclarator")
     __obj.asInstanceOf[VariableDeclarator_]
   }
   
-  @scala.inline
-  implicit class VariableDeclarator_MutableBuilder[Self <: VariableDeclarator_] (val x: Self) extends AnyVal {
+  extension [Self <: VariableDeclarator_](x: Self) {
     
-    @scala.inline
-    def setDefinite(value: Boolean): Self = StObject.set(x, "definite", value.asInstanceOf[js.Any])
+    inline def setDefinite(value: Boolean): Self = StObject.set(x, "definite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefiniteNull: Self = StObject.set(x, "definite", null)
+    inline def setDefiniteNull: Self = StObject.set(x, "definite", null)
     
-    @scala.inline
-    def setId(value: LVal): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: LVal): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitNull: Self = StObject.set(x, "init", null)
+    inline def setInitNull: Self = StObject.set(x, "init", null)
     
-    @scala.inline
-    def setType(value: VariableDeclarator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: VariableDeclarator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

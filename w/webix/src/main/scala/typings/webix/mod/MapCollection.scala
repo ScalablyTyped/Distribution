@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MapCollection extends StObject
 object MapCollection {
   
-  @scala.inline
-  def apply: MapCollection = ^.asInstanceOf[js.Dynamic].selectDynamic("MapCollection").asInstanceOf[MapCollection]
+  inline def apply: MapCollection = ^.asInstanceOf[js.Dynamic].selectDynamic("MapCollection").asInstanceOf[MapCollection]
 }

@@ -37,14 +37,12 @@ object esInfiniteLoaderMod {
     @JSImport("react-virtualized/dist/es/InfiniteLoader", "InfiniteLoader.defaultProps")
     @js.native
     def defaultProps: MinimumBatchSize = js.native
-    @scala.inline
-    def defaultProps_=(x: MinimumBatchSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: MinimumBatchSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-virtualized/dist/es/InfiniteLoader", "InfiniteLoader.propTypes")
     @js.native
     def propTypes: IsRowLoaded = js.native
-    @scala.inline
-    def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait InfiniteLoaderChildProps extends StObject {
@@ -55,20 +53,16 @@ object esInfiniteLoaderMod {
   }
   object InfiniteLoaderChildProps {
     
-    @scala.inline
-    def apply(onRowsRendered: IndexRange => Unit, registerChild: js.Any => Unit): InfiniteLoaderChildProps = {
+    inline def apply(onRowsRendered: IndexRange => Unit, registerChild: js.Any => Unit): InfiniteLoaderChildProps = {
       val __obj = js.Dynamic.literal(onRowsRendered = js.Any.fromFunction1(onRowsRendered), registerChild = js.Any.fromFunction1(registerChild))
       __obj.asInstanceOf[InfiniteLoaderChildProps]
     }
     
-    @scala.inline
-    implicit class InfiniteLoaderChildPropsMutableBuilder[Self <: InfiniteLoaderChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: InfiniteLoaderChildProps](x: Self) {
       
-      @scala.inline
-      def setOnRowsRendered(value: IndexRange => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
+      inline def setOnRowsRendered(value: IndexRange => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterChild(value: js.Any => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
+      inline def setRegisterChild(value: js.Any => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
     }
   }
   
@@ -128,8 +122,7 @@ object esInfiniteLoaderMod {
   }
   object InfiniteLoaderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: InfiniteLoaderChildProps => ReactNode,
       isRowLoaded: Index => Boolean,
       loadMoreRows: IndexRange => js.Promise[js.Any]
@@ -138,35 +131,25 @@ object esInfiniteLoaderMod {
       __obj.asInstanceOf[InfiniteLoaderProps]
     }
     
-    @scala.inline
-    implicit class InfiniteLoaderPropsMutableBuilder[Self <: InfiniteLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: InfiniteLoaderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: InfiniteLoaderChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: InfiniteLoaderChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRowLoaded(value: Index => Boolean): Self = StObject.set(x, "isRowLoaded", js.Any.fromFunction1(value))
+      inline def setIsRowLoaded(value: Index => Boolean): Self = StObject.set(x, "isRowLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadMoreRows(value: IndexRange => js.Promise[js.Any]): Self = StObject.set(x, "loadMoreRows", js.Any.fromFunction1(value))
+      inline def setLoadMoreRows(value: IndexRange => js.Promise[js.Any]): Self = StObject.set(x, "loadMoreRows", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMinimumBatchSize(value: Double): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
+      inline def setMinimumBatchSize(value: Double): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumBatchSizeUndefined: Self = StObject.set(x, "minimumBatchSize", js.undefined)
+      inline def setMinimumBatchSizeUndefined: Self = StObject.set(x, "minimumBatchSize", js.undefined)
       
-      @scala.inline
-      def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+      inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+      inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

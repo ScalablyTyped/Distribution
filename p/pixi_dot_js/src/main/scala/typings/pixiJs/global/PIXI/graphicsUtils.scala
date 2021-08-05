@@ -25,8 +25,7 @@ object graphicsUtils {
   @JSGlobal("PIXI.graphicsUtils.BATCH_POOL")
   @js.native
   def BATCH_POOL: js.Array[typings.pixiJs.PIXI.graphicsUtils.BatchPart] = js.native
-  @scala.inline
-  def BATCH_POOL_=(x: js.Array[typings.pixiJs.PIXI.graphicsUtils.BatchPart]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_POOL")(x.asInstanceOf[js.Any])
+  inline def BATCH_POOL_=(x: js.Array[typings.pixiJs.PIXI.graphicsUtils.BatchPart]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_POOL")(x.asInstanceOf[js.Any])
   
   /**
     * A structure to hold interim batch objects for Graphics.
@@ -48,8 +47,7 @@ object graphicsUtils {
   @JSGlobal("PIXI.graphicsUtils.DRAW_CALL_POOL")
   @js.native
   def DRAW_CALL_POOL: js.Array[typings.pixiJs.PIXI.BatchDrawCall] = js.native
-  @scala.inline
-  def DRAW_CALL_POOL_=(x: js.Array[typings.pixiJs.PIXI.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAW_CALL_POOL")(x.asInstanceOf[js.Any])
+  inline def DRAW_CALL_POOL_=(x: js.Array[typings.pixiJs.PIXI.BatchDrawCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAW_CALL_POOL")(x.asInstanceOf[js.Any])
   
   /**
     * Map of fill commands for each shape type.
@@ -60,8 +58,7 @@ object graphicsUtils {
   @JSGlobal("PIXI.graphicsUtils.FILL_COMMANDS")
   @js.native
   def FILL_COMMANDS: js.Any = js.native
-  @scala.inline
-  def FILL_COMMANDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILL_COMMANDS")(x.asInstanceOf[js.Any])
+  inline def FILL_COMMANDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FILL_COMMANDS")(x.asInstanceOf[js.Any])
   
   /**
     * Draw a star shape with an arbitrary number of points.

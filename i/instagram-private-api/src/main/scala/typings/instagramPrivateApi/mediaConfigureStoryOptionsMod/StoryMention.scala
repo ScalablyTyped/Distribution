@@ -12,16 +12,13 @@ trait StoryMention
 }
 object StoryMention {
   
-  @scala.inline
-  def apply(height: Double, rotation: Double, user_id: String | Double, width: Double, x: Double, y: Double): StoryMention = {
+  inline def apply(height: Double, rotation: Double, user_id: String | Double, width: Double, x: Double, y: Double): StoryMention = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoryMention]
   }
   
-  @scala.inline
-  implicit class StoryMentionMutableBuilder[Self <: StoryMention] (val x: Self) extends AnyVal {
+  extension [Self <: StoryMention](x: Self) {
     
-    @scala.inline
-    def setUser_id(value: String | Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String | Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

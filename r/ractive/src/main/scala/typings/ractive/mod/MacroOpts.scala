@@ -22,67 +22,47 @@ trait MacroOpts extends StObject {
 }
 object MacroOpts {
   
-  @scala.inline
-  def apply(): MacroOpts = {
+  inline def apply(): MacroOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MacroOpts]
   }
   
-  @scala.inline
-  implicit class MacroOptsMutableBuilder[Self <: MacroOpts] (val x: Self) extends AnyVal {
+  extension [Self <: MacroOpts](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setCss(value: String | CssFn): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: String | CssFn): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssData(value: ValueMap): Self = StObject.set(x, "cssData", value.asInstanceOf[js.Any])
+    inline def setCssData(value: ValueMap): Self = StObject.set(x, "cssData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssDataUndefined: Self = StObject.set(x, "cssData", js.undefined)
+    inline def setCssDataUndefined: Self = StObject.set(x, "cssData", js.undefined)
     
-    @scala.inline
-    def setCssFunction1(value: /* data */ DataGetFn => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+    inline def setCssFunction1(value: /* data */ DataGetFn => String): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
+    inline def setCssId(value: String): Self = StObject.set(x, "cssId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
+    inline def setCssIdUndefined: Self = StObject.set(x, "cssId", js.undefined)
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setNoCssTransform(value: Boolean): Self = StObject.set(x, "noCssTransform", value.asInstanceOf[js.Any])
+    inline def setNoCssTransform(value: Boolean): Self = StObject.set(x, "noCssTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCssTransformUndefined: Self = StObject.set(x, "noCssTransform", js.undefined)
+    inline def setNoCssTransformUndefined: Self = StObject.set(x, "noCssTransform", js.undefined)
     
-    @scala.inline
-    def setPartials(value: PartialMap): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+    inline def setPartials(value: PartialMap): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
+    inline def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Template): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateFunction1(value: /* helper */ ParseHelper => String | (js.Array[js.Object | String]) | ParsedTemplate): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplateFunction1(value: /* helper */ ParseHelper => String | (js.Array[js.Object | String]) | ParsedTemplate): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTemplateVarargs(value: js.Any*): Self = StObject.set(x, "template", js.Array(value :_*))
+    inline def setTemplateVarargs(value: js.Any*): Self = StObject.set(x, "template", js.Array(value :_*))
   }
 }

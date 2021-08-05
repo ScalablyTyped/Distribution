@@ -26,20 +26,16 @@ object mediaBodyMod {
   }
   object MediaBodyProps {
     
-    @scala.inline
-    def apply(): MediaBodyProps = {
+    inline def apply(): MediaBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaBodyProps]
     }
     
-    @scala.inline
-    implicit class MediaBodyPropsMutableBuilder[Self <: MediaBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaBodyProps](x: Self) {
       
-      @scala.inline
-      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
+      inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
     }
   }
 }

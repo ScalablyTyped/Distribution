@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedAppAvailability extends StObject
 object ManagedAppAvailability {
   
-  @scala.inline
-  def global: typings.microsoftGraph.microsoftGraphStrings.global = "global".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.global]
+  inline def global: typings.microsoftGraph.microsoftGraphStrings.global = "global".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.global]
   
-  @scala.inline
-  def lineOfBusiness: typings.microsoftGraph.microsoftGraphStrings.lineOfBusiness = "lineOfBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lineOfBusiness]
+  inline def lineOfBusiness: typings.microsoftGraph.microsoftGraphStrings.lineOfBusiness = "lineOfBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lineOfBusiness]
 }

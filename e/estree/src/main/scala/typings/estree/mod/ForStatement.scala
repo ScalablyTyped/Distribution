@@ -22,47 +22,34 @@ trait ForStatement
 }
 object ForStatement {
   
-  @scala.inline
-  def apply(body: Statement): ForStatement = {
+  inline def apply(body: Statement): ForStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ForStatement")
     __obj.asInstanceOf[ForStatement]
   }
   
-  @scala.inline
-  implicit class ForStatementMutableBuilder[Self <: ForStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ForStatement](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: VariableDeclaration | Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: VariableDeclaration | Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitNull: Self = StObject.set(x, "init", null)
+    inline def setInitNull: Self = StObject.set(x, "init", null)
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestNull: Self = StObject.set(x, "test", null)
+    inline def setTestNull: Self = StObject.set(x, "test", null)
     
-    @scala.inline
-    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateNull: Self = StObject.set(x, "update", null)
+    inline def setUpdateNull: Self = StObject.set(x, "update", null)
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

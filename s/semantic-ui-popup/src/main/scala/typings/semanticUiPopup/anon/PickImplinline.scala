@@ -11,17 +11,14 @@ trait PickImplinline extends StObject {
 }
 object PickImplinline {
   
-  @scala.inline
-  def apply(`inline`: Boolean): PickImplinline = {
+  inline def apply(`inline`: Boolean): PickImplinline = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinline]
   }
   
-  @scala.inline
-  implicit class PickImplinlineMutableBuilder[Self <: PickImplinline] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplinline](x: Self) {
     
-    @scala.inline
-    def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
   }
 }

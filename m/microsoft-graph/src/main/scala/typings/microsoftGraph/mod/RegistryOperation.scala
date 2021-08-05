@@ -16,18 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegistryOperation extends StObject
 object RegistryOperation {
   
-  @scala.inline
-  def create: typings.microsoftGraph.microsoftGraphStrings.create = "create".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.create]
+  inline def create: typings.microsoftGraph.microsoftGraphStrings.create = "create".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.create]
   
-  @scala.inline
-  def delete: delete_ = "delete".asInstanceOf[delete_]
+  inline def delete: delete_ = "delete".asInstanceOf[delete_]
   
-  @scala.inline
-  def modify: typings.microsoftGraph.microsoftGraphStrings.modify = "modify".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modify]
+  inline def modify: typings.microsoftGraph.microsoftGraphStrings.modify = "modify".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.modify]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

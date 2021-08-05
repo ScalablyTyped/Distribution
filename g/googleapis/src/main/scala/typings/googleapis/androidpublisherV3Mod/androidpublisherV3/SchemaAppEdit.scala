@@ -23,25 +23,19 @@ trait SchemaAppEdit extends StObject {
 }
 object SchemaAppEdit {
   
-  @scala.inline
-  def apply(): SchemaAppEdit = {
+  inline def apply(): SchemaAppEdit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppEdit]
   }
   
-  @scala.inline
-  implicit class SchemaAppEditMutableBuilder[Self <: SchemaAppEdit] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAppEdit](x: Self) {
     
-    @scala.inline
-    def setExpiryTimeSeconds(value: String): Self = StObject.set(x, "expiryTimeSeconds", value.asInstanceOf[js.Any])
+    inline def setExpiryTimeSeconds(value: String): Self = StObject.set(x, "expiryTimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryTimeSecondsUndefined: Self = StObject.set(x, "expiryTimeSeconds", js.undefined)
+    inline def setExpiryTimeSecondsUndefined: Self = StObject.set(x, "expiryTimeSeconds", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

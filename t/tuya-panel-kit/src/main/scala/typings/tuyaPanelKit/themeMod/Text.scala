@@ -14,22 +14,17 @@ trait Text extends StObject {
 }
 object Text {
   
-  @scala.inline
-  def apply(heading: TextThemeMap, paragraph: TextThemeMap, title: TextThemeMap): Text = {
+  inline def apply(heading: TextThemeMap, paragraph: TextThemeMap, title: TextThemeMap): Text = {
     val __obj = js.Dynamic.literal(heading = heading.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setHeading(value: TextThemeMap): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: TextThemeMap): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraph(value: TextThemeMap): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: TextThemeMap): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: TextThemeMap): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: TextThemeMap): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -11,10 +11,8 @@ object getTopicMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTopic(args: GetTopicArgs): js.Promise[GetTopicResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTopicResult]]
-  @scala.inline
-  def getTopic(args: GetTopicArgs, opts: InvokeOptions): js.Promise[GetTopicResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTopicResult]]
+  inline def getTopic(args: GetTopicArgs): js.Promise[GetTopicResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTopicResult]]
+  inline def getTopic(args: GetTopicArgs, opts: InvokeOptions): js.Promise[GetTopicResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTopicResult]]
   
   trait GetTopicArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getTopicMod {
   }
   object GetTopicArgs {
     
-    @scala.inline
-    def apply(name: String): GetTopicArgs = {
+    inline def apply(name: String): GetTopicArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTopicArgs]
     }
     
-    @scala.inline
-    implicit class GetTopicArgsMutableBuilder[Self <: GetTopicArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetTopicArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,23 +50,18 @@ object getTopicMod {
   }
   object GetTopicResult {
     
-    @scala.inline
-    def apply(arn: String, id: String, name: String): GetTopicResult = {
+    inline def apply(arn: String, id: String, name: String): GetTopicResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTopicResult]
     }
     
-    @scala.inline
-    implicit class GetTopicResultMutableBuilder[Self <: GetTopicResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetTopicResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,8 +10,7 @@ trait MacAlgorithmProvider
      with IMacAlgorithmProvider
 object MacAlgorithmProvider {
   
-  @scala.inline
-  def apply(algorithmName: String, createKey: IBuffer => CryptographicKey, macLength: Double): MacAlgorithmProvider = {
+  inline def apply(algorithmName: String, createKey: IBuffer => CryptographicKey, macLength: Double): MacAlgorithmProvider = {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createKey = js.Any.fromFunction1(createKey), macLength = macLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacAlgorithmProvider]
   }

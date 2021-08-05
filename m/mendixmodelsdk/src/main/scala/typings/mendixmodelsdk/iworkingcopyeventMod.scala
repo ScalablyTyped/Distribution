@@ -17,11 +17,9 @@ object iworkingcopyeventMod {
   trait BuildResultStatus extends StObject
   object BuildResultStatus {
     
-    @scala.inline
-    def Failure: typings.mendixmodelsdk.mendixmodelsdkStrings.Failure = "Failure".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.Failure]
+    inline def Failure: typings.mendixmodelsdk.mendixmodelsdkStrings.Failure = "Failure".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.Failure]
     
-    @scala.inline
-    def Success: typings.mendixmodelsdk.mendixmodelsdkStrings.Success = "Success".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.Success]
+    inline def Success: typings.mendixmodelsdk.mendixmodelsdkStrings.Success = "Success".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.Success]
   }
   
   trait IBuildResultEvent
@@ -34,21 +32,17 @@ object iworkingcopyeventMod {
   }
   object IBuildResultEvent {
     
-    @scala.inline
-    def apply(data: EventId): IBuildResultEvent = {
+    inline def apply(data: EventId): IBuildResultEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("buildResult")
       __obj.asInstanceOf[IBuildResultEvent]
     }
     
-    @scala.inline
-    implicit class IBuildResultEventMutableBuilder[Self <: IBuildResultEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IBuildResultEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: EventId): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: EventId): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: buildResult): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: buildResult): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,21 +56,17 @@ object iworkingcopyeventMod {
   }
   object IWorkingCopyDataEvent {
     
-    @scala.inline
-    def apply(data: IWorkingCopy): IWorkingCopyDataEvent = {
+    inline def apply(data: IWorkingCopy): IWorkingCopyDataEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("workingCopyData")
       __obj.asInstanceOf[IWorkingCopyDataEvent]
     }
     
-    @scala.inline
-    implicit class IWorkingCopyDataEventMutableBuilder[Self <: IWorkingCopyDataEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IWorkingCopyDataEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: IWorkingCopy): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: IWorkingCopy): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: workingCopyData): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: workingCopyData): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,15 +77,13 @@ object iworkingcopyeventMod {
   trait IWorkingCopyEvent extends StObject
   object IWorkingCopyEvent {
     
-    @scala.inline
-    def IBuildResultEvent(data: EventId): typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent = {
+    inline def IBuildResultEvent(data: EventId): typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("buildResult")
       __obj.asInstanceOf[typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent]
     }
     
-    @scala.inline
-    def IWorkingCopyDataEvent(data: IWorkingCopy): typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent = {
+    inline def IWorkingCopyDataEvent(data: IWorkingCopy): typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("workingCopyData")
       __obj.asInstanceOf[typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent]

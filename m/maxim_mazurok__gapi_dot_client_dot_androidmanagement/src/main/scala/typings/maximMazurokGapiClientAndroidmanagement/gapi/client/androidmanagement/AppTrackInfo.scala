@@ -14,25 +14,19 @@ trait AppTrackInfo extends StObject {
 }
 object AppTrackInfo {
   
-  @scala.inline
-  def apply(): AppTrackInfo = {
+  inline def apply(): AppTrackInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppTrackInfo]
   }
   
-  @scala.inline
-  implicit class AppTrackInfoMutableBuilder[Self <: AppTrackInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AppTrackInfo](x: Self) {
     
-    @scala.inline
-    def setTrackAlias(value: String): Self = StObject.set(x, "trackAlias", value.asInstanceOf[js.Any])
+    inline def setTrackAlias(value: String): Self = StObject.set(x, "trackAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackAliasUndefined: Self = StObject.set(x, "trackAlias", js.undefined)
+    inline def setTrackAliasUndefined: Self = StObject.set(x, "trackAlias", js.undefined)
     
-    @scala.inline
-    def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
+    inline def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
+    inline def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
   }
 }

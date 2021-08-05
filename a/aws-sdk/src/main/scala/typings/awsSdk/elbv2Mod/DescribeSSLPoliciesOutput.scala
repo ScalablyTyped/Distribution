@@ -18,28 +18,21 @@ trait DescribeSSLPoliciesOutput extends StObject {
 }
 object DescribeSSLPoliciesOutput {
   
-  @scala.inline
-  def apply(): DescribeSSLPoliciesOutput = {
+  inline def apply(): DescribeSSLPoliciesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSSLPoliciesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeSSLPoliciesOutputMutableBuilder[Self <: DescribeSSLPoliciesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSSLPoliciesOutput](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setSslPolicies(value: SslPolicies): Self = StObject.set(x, "SslPolicies", value.asInstanceOf[js.Any])
+    inline def setSslPolicies(value: SslPolicies): Self = StObject.set(x, "SslPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslPoliciesUndefined: Self = StObject.set(x, "SslPolicies", js.undefined)
+    inline def setSslPoliciesUndefined: Self = StObject.set(x, "SslPolicies", js.undefined)
     
-    @scala.inline
-    def setSslPoliciesVarargs(value: SslPolicy*): Self = StObject.set(x, "SslPolicies", js.Array(value :_*))
+    inline def setSslPoliciesVarargs(value: SslPolicy*): Self = StObject.set(x, "SslPolicies", js.Array(value :_*))
   }
 }

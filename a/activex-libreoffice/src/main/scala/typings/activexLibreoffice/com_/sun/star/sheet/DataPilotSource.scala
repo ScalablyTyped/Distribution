@@ -52,8 +52,7 @@ trait DataPilotSource
 }
 object DataPilotSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnFieldCount: Double,
     ColumnGrand: Boolean,
     DataFieldCount: Double,
@@ -83,22 +82,16 @@ object DataPilotSource {
     __obj.asInstanceOf[DataPilotSource]
   }
   
-  @scala.inline
-  implicit class DataPilotSourceMutableBuilder[Self <: DataPilotSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotSource](x: Self) {
     
-    @scala.inline
-    def setColumnFieldCount(value: Double): Self = StObject.set(x, "ColumnFieldCount", value.asInstanceOf[js.Any])
+    inline def setColumnFieldCount(value: Double): Self = StObject.set(x, "ColumnFieldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGrand(value: Boolean): Self = StObject.set(x, "ColumnGrand", value.asInstanceOf[js.Any])
+    inline def setColumnGrand(value: Boolean): Self = StObject.set(x, "ColumnGrand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFieldCount(value: Double): Self = StObject.set(x, "DataFieldCount", value.asInstanceOf[js.Any])
+    inline def setDataFieldCount(value: Double): Self = StObject.set(x, "DataFieldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowFieldCount(value: Double): Self = StObject.set(x, "RowFieldCount", value.asInstanceOf[js.Any])
+    inline def setRowFieldCount(value: Double): Self = StObject.set(x, "RowFieldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowGrand(value: Boolean): Self = StObject.set(x, "RowGrand", value.asInstanceOf[js.Any])
+    inline def setRowGrand(value: Boolean): Self = StObject.set(x, "RowGrand", value.asInstanceOf[js.Any])
   }
 }

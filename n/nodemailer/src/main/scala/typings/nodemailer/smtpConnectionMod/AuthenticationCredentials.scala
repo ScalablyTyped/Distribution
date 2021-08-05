@@ -11,16 +11,13 @@ trait AuthenticationCredentials extends StObject {
 }
 object AuthenticationCredentials {
   
-  @scala.inline
-  def apply(credentials: Credentials): AuthenticationCredentials = {
+  inline def apply(credentials: Credentials): AuthenticationCredentials = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationCredentials]
   }
   
-  @scala.inline
-  implicit class AuthenticationCredentialsMutableBuilder[Self <: AuthenticationCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationCredentials](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
   }
 }

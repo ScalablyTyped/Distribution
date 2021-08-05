@@ -14,28 +14,21 @@ trait QueryGrantableRolesResponse extends StObject {
 }
 object QueryGrantableRolesResponse {
   
-  @scala.inline
-  def apply(): QueryGrantableRolesResponse = {
+  inline def apply(): QueryGrantableRolesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryGrantableRolesResponse]
   }
   
-  @scala.inline
-  implicit class QueryGrantableRolesResponseMutableBuilder[Self <: QueryGrantableRolesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryGrantableRolesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRoles(value: js.Array[Role]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[Role]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: Role*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

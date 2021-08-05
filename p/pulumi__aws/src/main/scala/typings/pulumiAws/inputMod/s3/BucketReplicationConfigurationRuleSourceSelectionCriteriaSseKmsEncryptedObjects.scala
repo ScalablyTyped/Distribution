@@ -14,16 +14,13 @@ trait BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedOb
 }
 object BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects {
   
-  @scala.inline
-  def apply(enabled: Input[Boolean]): BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects = {
+  inline def apply(enabled: Input[Boolean]): BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]
   }
   
-  @scala.inline
-  implicit class BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsMutableBuilder[Self <: BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects] (val x: Self) extends AnyVal {
+  extension [Self <: BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

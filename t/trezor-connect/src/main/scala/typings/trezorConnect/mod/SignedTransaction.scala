@@ -14,28 +14,21 @@ trait SignedTransaction extends StObject {
 }
 object SignedTransaction {
   
-  @scala.inline
-  def apply(serializedTx: String, signatures: js.Array[String]): SignedTransaction = {
+  inline def apply(serializedTx: String, signatures: js.Array[String]): SignedTransaction = {
     val __obj = js.Dynamic.literal(serializedTx = serializedTx.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedTransaction]
   }
   
-  @scala.inline
-  implicit class SignedTransactionMutableBuilder[Self <: SignedTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: SignedTransaction](x: Self) {
     
-    @scala.inline
-    def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
+    inline def setSerializedTx(value: String): Self = StObject.set(x, "serializedTx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[String]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: String*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
-    @scala.inline
-    def setTxId(value: String): Self = StObject.set(x, "txId", value.asInstanceOf[js.Any])
+    inline def setTxId(value: String): Self = StObject.set(x, "txId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTxIdUndefined: Self = StObject.set(x, "txId", js.undefined)
+    inline def setTxIdUndefined: Self = StObject.set(x, "txId", js.undefined)
   }
 }

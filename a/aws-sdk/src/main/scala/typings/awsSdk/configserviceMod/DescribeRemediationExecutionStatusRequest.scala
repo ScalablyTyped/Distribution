@@ -28,37 +28,27 @@ trait DescribeRemediationExecutionStatusRequest extends StObject {
 }
 object DescribeRemediationExecutionStatusRequest {
   
-  @scala.inline
-  def apply(ConfigRuleName: ConfigRuleName): DescribeRemediationExecutionStatusRequest = {
+  inline def apply(ConfigRuleName: ConfigRuleName): DescribeRemediationExecutionStatusRequest = {
     val __obj = js.Dynamic.literal(ConfigRuleName = ConfigRuleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRemediationExecutionStatusRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRemediationExecutionStatusRequestMutableBuilder[Self <: DescribeRemediationExecutionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRemediationExecutionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "ResourceKeys", value.asInstanceOf[js.Any])
+    inline def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "ResourceKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceKeysUndefined: Self = StObject.set(x, "ResourceKeys", js.undefined)
+    inline def setResourceKeysUndefined: Self = StObject.set(x, "ResourceKeys", js.undefined)
     
-    @scala.inline
-    def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "ResourceKeys", js.Array(value :_*))
   }
 }

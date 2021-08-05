@@ -12,19 +12,15 @@ trait ColumnValue extends StObject {
 }
 object ColumnValue {
   
-  @scala.inline
-  def apply(metadata: ColumnMetaData, value: js.Any): ColumnValue = {
+  inline def apply(metadata: ColumnMetaData, value: js.Any): ColumnValue = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnValue]
   }
   
-  @scala.inline
-  implicit class ColumnValueMutableBuilder[Self <: ColumnValue] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnValue](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: ColumnMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ColumnMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Config | Null]]
+  inline def apply(): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Config | Null]]
   /**
     * Asynchronously parse a `.git/config` file. If only the callback is passed,
     * the `.git/config` file relative to `process.cwd()` is used.
@@ -31,16 +30,11 @@ object mod {
     * @param options Options with `cwd` or `path`, the cwd to use, or the callback function.
     * @param callback callback function if the first argument is options or cwd.
     */
-  @scala.inline
-  def apply(cb: ParseCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: String): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
-  @scala.inline
-  def apply(options: String, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: Options): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
-  @scala.inline
-  def apply(options: Options, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(cb: ParseCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(options: String): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
+  inline def apply(options: String, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(options: Options): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
+  inline def apply(options: Options, cb: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("parse-git-config", JSImport.Namespace)
   @js.native
@@ -56,28 +50,22 @@ object mod {
     * ```
     * @param config The parsed git config object.
     */
-  @scala.inline
-  def expandKeys(config: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("expandKeys")(config.asInstanceOf[js.Any]).asInstanceOf[Config]
+  inline def expandKeys(config: Config): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("expandKeys")(config.asInstanceOf[js.Any]).asInstanceOf[Config]
   
   /**
     * Asynchronously parse a .git/config file. Returns a promise.
     * Resolves with `null` if unable to resolve path to the git config file.
     * If no arguments are passed, the .git/config file relative to process.cwd() is used.
     */
-  @scala.inline
-  def promise(): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")().asInstanceOf[js.Promise[Config | Null]]
-  @scala.inline
-  def promise(options: String): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
-  @scala.inline
-  def promise(options: Options): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
+  inline def promise(): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")().asInstanceOf[js.Promise[Config | Null]]
+  inline def promise(options: String): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
+  inline def promise(options: Options): js.Promise[Config | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config | Null]]
   
   /**
     * Resolve the git config path
     */
-  @scala.inline
-  def resolveConfigPath(options: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPath")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  @scala.inline
-  def resolveConfigPath(options: ResolveConfigOptions): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPath")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def resolveConfigPath(options: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPath")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def resolveConfigPath(options: ResolveConfigOptions): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveConfigPath")(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /**
     * Synchronously parse a `.git/config` file. If no arguments are passed,
@@ -90,12 +78,9 @@ object mod {
     * ```
     * @param options Options with `cwd` or `path`, or the cwd to use.
     */
-  @scala.inline
-  def sync(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Config]
-  @scala.inline
-  def sync(options: String): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Config]
-  @scala.inline
-  def sync(options: Options): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Config]
+  inline def sync(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Config]
+  inline def sync(options: String): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Config]
+  inline def sync(options: Options): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[Config]
   
   // TODO: Can this be defined more precisely?
   type Config = StringDictionary[js.Any]
@@ -110,26 +95,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExpandKeys(value: Boolean): Self = StObject.set(x, "expandKeys", value.asInstanceOf[js.Any])
+      inline def setExpandKeys(value: Boolean): Self = StObject.set(x, "expandKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandKeysUndefined: Self = StObject.set(x, "expandKeys", js.undefined)
+      inline def setExpandKeysUndefined: Self = StObject.set(x, "expandKeys", js.undefined)
       
-      @scala.inline
-      def setInclude(value: Boolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: Boolean): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     }
   }
   
@@ -145,32 +124,24 @@ object mod {
   }
   object ResolveConfigOptions {
     
-    @scala.inline
-    def apply(): ResolveConfigOptions = {
+    inline def apply(): ResolveConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolveConfigOptions]
     }
     
-    @scala.inline
-    implicit class ResolveConfigOptionsMutableBuilder[Self <: ResolveConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveConfigOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setType(value: global): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: global): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

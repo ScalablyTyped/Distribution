@@ -24,7 +24,7 @@ trait AxisTitle extends StObject {
   
   def Delete(): js.Any = js.native
   
-  @JSName("Excel.AxisTitle_typekey")
+  /* private */ @JSName("Excel.AxisTitle_typekey")
   var ExcelDotAxisTitle_typekey: AxisTitle = js.native
   
   val Fill: ChartFillFormat = js.native

@@ -14,60 +14,48 @@ object huberLossMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Unit, delta: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Unit, delta: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     weights: Unit,
     delta: Double,
     reduction: Reduction
   ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     weights: Unit,
     delta: Unit,
     reduction: Reduction
   ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Tensor[Rank], delta: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: Tensor[Rank], delta: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     weights: Tensor[Rank],
     delta: Double,
     reduction: Reduction
   ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     weights: Tensor[Rank],
     delta: Unit,
     reduction: Reduction
   ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: TensorLike, delta: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, weights: TensorLike, delta: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[O]
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     weights: TensorLike,
     delta: Double,
     reduction: Reduction
   ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
-  @scala.inline
-  def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+  inline def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
     labels: T | TensorLike,
     predictions: T | TensorLike,
     weights: TensorLike,

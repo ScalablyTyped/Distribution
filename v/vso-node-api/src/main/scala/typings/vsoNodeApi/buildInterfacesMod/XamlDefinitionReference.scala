@@ -23,22 +23,17 @@ trait XamlDefinitionReference extends StObject {
 }
 object XamlDefinitionReference {
   
-  @scala.inline
-  def apply(id: Double, name: String, url: String): XamlDefinitionReference = {
+  inline def apply(id: Double, name: String, url: String): XamlDefinitionReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[XamlDefinitionReference]
   }
   
-  @scala.inline
-  implicit class XamlDefinitionReferenceMutableBuilder[Self <: XamlDefinitionReference] (val x: Self) extends AnyVal {
+  extension [Self <: XamlDefinitionReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

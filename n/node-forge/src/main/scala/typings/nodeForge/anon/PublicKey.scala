@@ -13,19 +13,15 @@ trait PublicKey extends StObject {
 }
 object PublicKey {
   
-  @scala.inline
-  def apply(publicKey: BinaryBuffer, signature: BinaryBuffer): PublicKey = {
+  inline def apply(publicKey: BinaryBuffer, signature: BinaryBuffer): PublicKey = {
     val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKey]
   }
   
-  @scala.inline
-  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKey](x: Self) {
     
-    @scala.inline
-    def setPublicKey(value: BinaryBuffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: BinaryBuffer): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: BinaryBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: BinaryBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

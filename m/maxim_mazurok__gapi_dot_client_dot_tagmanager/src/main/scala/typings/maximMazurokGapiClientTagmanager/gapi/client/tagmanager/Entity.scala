@@ -26,49 +26,35 @@ trait Entity extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply(): Entity = {
+  inline def apply(): Entity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Entity]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+  extension [Self <: Entity](x: Self) {
     
-    @scala.inline
-    def setChangeStatus(value: String): Self = StObject.set(x, "changeStatus", value.asInstanceOf[js.Any])
+    inline def setChangeStatus(value: String): Self = StObject.set(x, "changeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeStatusUndefined: Self = StObject.set(x, "changeStatus", js.undefined)
+    inline def setChangeStatusUndefined: Self = StObject.set(x, "changeStatus", js.undefined)
     
-    @scala.inline
-    def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
-    @scala.inline
-    def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
+    inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
-    @scala.inline
-    def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    @scala.inline
-    def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

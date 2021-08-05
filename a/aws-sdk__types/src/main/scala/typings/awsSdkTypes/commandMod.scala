@@ -23,8 +23,7 @@ object commandMod {
   }
   object Command {
     
-    @scala.inline
-    def apply[ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration](
+    inline def apply[ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration](
       input: InputType,
       middlewareStack: MiddlewareStack[InputType, OutputType],
       resolveMiddleware: (MiddlewareStack[ClientInput, ClientOutput], ResolvedConfiguration, js.Any) => Handler[InputType, OutputType]
@@ -33,17 +32,13 @@ object commandMod {
       __obj.asInstanceOf[Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration]]
     }
     
-    @scala.inline
-    implicit class CommandMutableBuilder[Self <: Command[?, ?, ?, ?, ?], ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration] (val x: Self & (Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration])) extends AnyVal {
+    extension [Self <: Command[?, ?, ?, ?, ?], ClientInput /* <: js.Object */, InputType /* <: ClientInput */, ClientOutput /* <: MetadataBearer */, OutputType /* <: ClientOutput */, ResolvedConfiguration](x: Self & (Command[ClientInput, InputType, ClientOutput, OutputType, ResolvedConfiguration])) {
       
-      @scala.inline
-      def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewareStack(value: MiddlewareStack[InputType, OutputType]): Self = StObject.set(x, "middlewareStack", value.asInstanceOf[js.Any])
+      inline def setMiddlewareStack(value: MiddlewareStack[InputType, OutputType]): Self = StObject.set(x, "middlewareStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveMiddleware(
+      inline def setResolveMiddleware(
         value: (MiddlewareStack[ClientInput, ClientOutput], ResolvedConfiguration, js.Any) => Handler[InputType, OutputType]
       ): Self = StObject.set(x, "resolveMiddleware", js.Any.fromFunction3(value))
     }

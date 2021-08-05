@@ -20,8 +20,7 @@ object anon {
   }
   object Appear {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appear: () => Unit,
       appeared: () => Unit,
       enter: () => Unit,
@@ -32,23 +31,17 @@ object anon {
       __obj.asInstanceOf[Appear]
     }
     
-    @scala.inline
-    implicit class AppearMutableBuilder[Self <: Appear] (val x: Self) extends AnyVal {
+    extension [Self <: Appear](x: Self) {
       
-      @scala.inline
-      def setAppear(value: () => Unit): Self = StObject.set(x, "appear", js.Any.fromFunction0(value))
+      inline def setAppear(value: () => Unit): Self = StObject.set(x, "appear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAppeared(value: () => Unit): Self = StObject.set(x, "appeared", js.Any.fromFunction0(value))
+      inline def setAppeared(value: () => Unit): Self = StObject.set(x, "appeared", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnter(value: () => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
+      inline def setEnter(value: () => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEntered(value: () => Unit): Self = StObject.set(x, "entered", js.Any.fromFunction0(value))
+      inline def setEntered(value: () => Unit): Self = StObject.set(x, "entered", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLeaved(value: () => Unit): Self = StObject.set(x, "leaved", js.Any.fromFunction0(value))
+      inline def setLeaved(value: () => Unit): Self = StObject.set(x, "leaved", js.Any.fromFunction0(value))
     }
   }
 }

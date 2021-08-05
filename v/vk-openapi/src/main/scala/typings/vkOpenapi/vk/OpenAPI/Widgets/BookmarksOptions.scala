@@ -17,25 +17,19 @@ trait BookmarksOptions extends StObject {
 }
 object BookmarksOptions {
   
-  @scala.inline
-  def apply(): BookmarksOptions = {
+  inline def apply(): BookmarksOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BookmarksOptions]
   }
   
-  @scala.inline
-  implicit class BookmarksOptionsMutableBuilder[Self <: BookmarksOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BookmarksOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

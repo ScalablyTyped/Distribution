@@ -12,19 +12,15 @@ trait AddSider extends StObject {
 }
 object AddSider {
   
-  @scala.inline
-  def apply(addSider: String => Unit, removeSider: String => Unit): AddSider = {
+  inline def apply(addSider: String => Unit, removeSider: String => Unit): AddSider = {
     val __obj = js.Dynamic.literal(addSider = js.Any.fromFunction1(addSider), removeSider = js.Any.fromFunction1(removeSider))
     __obj.asInstanceOf[AddSider]
   }
   
-  @scala.inline
-  implicit class AddSiderMutableBuilder[Self <: AddSider] (val x: Self) extends AnyVal {
+  extension [Self <: AddSider](x: Self) {
     
-    @scala.inline
-    def setAddSider(value: String => Unit): Self = StObject.set(x, "addSider", js.Any.fromFunction1(value))
+    inline def setAddSider(value: String => Unit): Self = StObject.set(x, "addSider", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSider(value: String => Unit): Self = StObject.set(x, "removeSider", js.Any.fromFunction1(value))
+    inline def setRemoveSider(value: String => Unit): Self = StObject.set(x, "removeSider", js.Any.fromFunction1(value))
   }
 }

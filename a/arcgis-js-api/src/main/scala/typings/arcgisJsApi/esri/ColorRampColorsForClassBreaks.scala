@@ -26,8 +26,7 @@ trait ColorRampColorsForClassBreaks
 }
 object ColorRampColorsForClassBreaks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colors: js.Array[Color_],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,16 +37,12 @@ object ColorRampColorsForClassBreaks {
     __obj.asInstanceOf[ColorRampColorsForClassBreaks]
   }
   
-  @scala.inline
-  implicit class ColorRampColorsForClassBreaksMutableBuilder[Self <: ColorRampColorsForClassBreaks] (val x: Self) extends AnyVal {
+  extension [Self <: ColorRampColorsForClassBreaks](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
+    inline def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
   }
 }

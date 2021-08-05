@@ -21,8 +21,7 @@ object commitMod {
   }
   object Commit {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: UserSummary,
       comments_url: String,
       commit: GitCommitSummary,
@@ -38,17 +37,13 @@ object commitMod {
       __obj.asInstanceOf[Commit]
     }
     
-    @scala.inline
-    implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
+    extension [Self <: Commit](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: Bloburl*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setStats(value: Additions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Additions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,17 +55,14 @@ object commitMod {
   }
   object CommitRef {
     
-    @scala.inline
-    def apply(html_url: String, sha: String, url: String): CommitRef = {
+    inline def apply(html_url: String, sha: String, url: String): CommitRef = {
       val __obj = js.Dynamic.literal(html_url = html_url.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommitRef]
     }
     
-    @scala.inline
-    implicit class CommitRefMutableBuilder[Self <: CommitRef] (val x: Self) extends AnyVal {
+    extension [Self <: CommitRef](x: Self) {
       
-      @scala.inline
-      def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+      inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +86,7 @@ object commitMod {
   }
   object CommitSummary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: UserSummary,
       comments_url: String,
       commit: GitCommitSummary,
@@ -109,35 +100,25 @@ object commitMod {
       __obj.asInstanceOf[CommitSummary]
     }
     
-    @scala.inline
-    implicit class CommitSummaryMutableBuilder[Self <: CommitSummary] (val x: Self) extends AnyVal {
+    extension [Self <: CommitSummary](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: UserSummary): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: UserSummary): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
+      inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommit(value: GitCommitSummary): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: GitCommitSummary): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitter(value: UserSummary): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+      inline def setCommitter(value: UserSummary): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+      inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
       
-      @scala.inline
-      def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+      inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,23 +132,18 @@ object commitMod {
   }
   object GitActor {
     
-    @scala.inline
-    def apply(date: Date, email: String, name: String): GitActor = {
+    inline def apply(date: Date, email: String, name: String): GitActor = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GitActor]
     }
     
-    @scala.inline
-    implicit class GitActorMutableBuilder[Self <: GitActor] (val x: Self) extends AnyVal {
+    extension [Self <: GitActor](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,8 +159,7 @@ object commitMod {
   }
   object GitCommit {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: GitActor,
       comment_count: Double,
       committer: GitActor,
@@ -199,20 +174,15 @@ object commitMod {
       __obj.asInstanceOf[GitCommit]
     }
     
-    @scala.inline
-    implicit class GitCommitMutableBuilder[Self <: GitCommit] (val x: Self) extends AnyVal {
+    extension [Self <: GitCommit](x: Self) {
       
-      @scala.inline
-      def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+      inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[CommitRef]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitRef*): Self = StObject.set(x, "parents", js.Array(value :_*))
       
-      @scala.inline
-      def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+      inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,8 +204,7 @@ object commitMod {
   }
   object GitCommitSummary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author: GitActor,
       comment_count: Double,
       committer: GitActor,
@@ -247,32 +216,23 @@ object commitMod {
       __obj.asInstanceOf[GitCommitSummary]
     }
     
-    @scala.inline
-    implicit class GitCommitSummaryMutableBuilder[Self <: GitCommitSummary] (val x: Self) extends AnyVal {
+    extension [Self <: GitCommitSummary](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: GitActor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: GitActor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+      inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitter(value: GitActor): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+      inline def setCommitter(value: GitActor): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTree(value: GitRef): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: GitRef): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+      inline def setVerification(value: Payload): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
+      inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
     }
   }
   
@@ -284,20 +244,16 @@ object commitMod {
   }
   object GitRef {
     
-    @scala.inline
-    def apply(sha: String, url: String): GitRef = {
+    inline def apply(sha: String, url: String): GitRef = {
       val __obj = js.Dynamic.literal(sha = sha.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GitRef]
     }
     
-    @scala.inline
-    implicit class GitRefMutableBuilder[Self <: GitRef] (val x: Self) extends AnyVal {
+    extension [Self <: GitRef](x: Self) {
       
-      @scala.inline
-      def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+      inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

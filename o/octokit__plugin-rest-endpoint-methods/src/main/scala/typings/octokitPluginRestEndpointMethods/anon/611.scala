@@ -23,8 +23,7 @@ trait `611` extends StObject {
 }
 object `611` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[
       ActivityListWatchedReposForAuthenticatedUserEndpoint, 
       baseUrl | headers | mediaType
@@ -35,18 +34,15 @@ object `611` {
     __obj.asInstanceOf[`611`]
   }
   
-  @scala.inline
-  implicit class `611MutableBuilder`[Self <: `611`] (val x: Self) extends AnyVal {
+  extension [Self <: `611`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[
           ActivityListWatchedReposForAuthenticatedUserEndpoint, 
           baseUrl | headers | mediaType
         ])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

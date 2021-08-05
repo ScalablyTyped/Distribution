@@ -13,16 +13,13 @@ trait DescribeScheduleRequest extends StObject {
 }
 object DescribeScheduleRequest {
   
-  @scala.inline
-  def apply(Name: ScheduleName): DescribeScheduleRequest = {
+  inline def apply(Name: ScheduleName): DescribeScheduleRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScheduleRequest]
   }
   
-  @scala.inline
-  implicit class DescribeScheduleRequestMutableBuilder[Self <: DescribeScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

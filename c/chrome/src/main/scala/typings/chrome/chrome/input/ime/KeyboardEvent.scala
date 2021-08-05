@@ -74,71 +74,50 @@ trait KeyboardEvent extends StObject {
 }
 object KeyboardEvent {
   
-  @scala.inline
-  def apply(code: String, key: String, `type`: String): KeyboardEvent = {
+  inline def apply(code: String, key: String, `type`: String): KeyboardEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyboardEvent]
   }
   
-  @scala.inline
-  implicit class KeyboardEventMutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardEvent](x: Self) {
     
-    @scala.inline
-    def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+    inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
     
-    @scala.inline
-    def setAltgrKey(value: Boolean): Self = StObject.set(x, "altgrKey", value.asInstanceOf[js.Any])
+    inline def setAltgrKey(value: Boolean): Self = StObject.set(x, "altgrKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltgrKeyUndefined: Self = StObject.set(x, "altgrKey", js.undefined)
+    inline def setAltgrKeyUndefined: Self = StObject.set(x, "altgrKey", js.undefined)
     
-    @scala.inline
-    def setCapsLock(value: Boolean): Self = StObject.set(x, "capsLock", value.asInstanceOf[js.Any])
+    inline def setCapsLock(value: Boolean): Self = StObject.set(x, "capsLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapsLockUndefined: Self = StObject.set(x, "capsLock", js.undefined)
+    inline def setCapsLockUndefined: Self = StObject.set(x, "capsLock", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+    inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
     
-    @scala.inline
-    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+    inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
+    inline def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+    inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
+    inline def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+    inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

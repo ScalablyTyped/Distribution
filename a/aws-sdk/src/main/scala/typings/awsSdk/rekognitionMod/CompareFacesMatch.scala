@@ -18,25 +18,19 @@ trait CompareFacesMatch extends StObject {
 }
 object CompareFacesMatch {
   
-  @scala.inline
-  def apply(): CompareFacesMatch = {
+  inline def apply(): CompareFacesMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompareFacesMatch]
   }
   
-  @scala.inline
-  implicit class CompareFacesMatchMutableBuilder[Self <: CompareFacesMatch] (val x: Self) extends AnyVal {
+  extension [Self <: CompareFacesMatch](x: Self) {
     
-    @scala.inline
-    def setFace(value: ComparedFace): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
+    inline def setFace(value: ComparedFace): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
+    inline def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
     
-    @scala.inline
-    def setSimilarity(value: Percent): Self = StObject.set(x, "Similarity", value.asInstanceOf[js.Any])
+    inline def setSimilarity(value: Percent): Self = StObject.set(x, "Similarity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimilarityUndefined: Self = StObject.set(x, "Similarity", js.undefined)
+    inline def setSimilarityUndefined: Self = StObject.set(x, "Similarity", js.undefined)
   }
 }

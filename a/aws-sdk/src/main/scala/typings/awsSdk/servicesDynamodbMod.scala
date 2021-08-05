@@ -37,8 +37,7 @@ object servicesDynamodbMod {
         /* options */ js.UndefOr[DocumentClientOptions & ClientConfiguration], 
         typings.awsSdk.documentClientMod.DocumentClient
       ] = js.native
-    @scala.inline
-    def DocumentClient_=(
+    inline def DocumentClient_=(
       x: Instantiable1[
           /* options */ js.UndefOr[DocumentClientOptions & ClientConfiguration], 
           DocumentClient

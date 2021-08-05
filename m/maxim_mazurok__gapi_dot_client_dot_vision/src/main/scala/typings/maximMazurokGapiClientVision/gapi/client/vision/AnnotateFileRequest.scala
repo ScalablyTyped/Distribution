@@ -24,43 +24,31 @@ trait AnnotateFileRequest extends StObject {
 }
 object AnnotateFileRequest {
   
-  @scala.inline
-  def apply(): AnnotateFileRequest = {
+  inline def apply(): AnnotateFileRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotateFileRequest]
   }
   
-  @scala.inline
-  implicit class AnnotateFileRequestMutableBuilder[Self <: AnnotateFileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotateFileRequest](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setImageContext(value: ImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
+    inline def setImageContext(value: ImageContext): Self = StObject.set(x, "imageContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
+    inline def setImageContextUndefined: Self = StObject.set(x, "imageContext", js.undefined)
     
-    @scala.inline
-    def setInputConfig(value: InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setPages(value: js.Array[Double]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[Double]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
   }
 }

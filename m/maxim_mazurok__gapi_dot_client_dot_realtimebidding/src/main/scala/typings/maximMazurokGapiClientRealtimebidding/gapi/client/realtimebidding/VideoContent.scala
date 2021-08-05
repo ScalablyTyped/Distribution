@@ -17,31 +17,23 @@ trait VideoContent extends StObject {
 }
 object VideoContent {
   
-  @scala.inline
-  def apply(): VideoContent = {
+  inline def apply(): VideoContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoContent]
   }
   
-  @scala.inline
-  implicit class VideoContentMutableBuilder[Self <: VideoContent] (val x: Self) extends AnyVal {
+  extension [Self <: VideoContent](x: Self) {
     
-    @scala.inline
-    def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "videoMetadata", value.asInstanceOf[js.Any])
+    inline def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "videoMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoMetadataUndefined: Self = StObject.set(x, "videoMetadata", js.undefined)
+    inline def setVideoMetadataUndefined: Self = StObject.set(x, "videoMetadata", js.undefined)
     
-    @scala.inline
-    def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
+    inline def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
+    inline def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
     
-    @scala.inline
-    def setVideoVastXml(value: String): Self = StObject.set(x, "videoVastXml", value.asInstanceOf[js.Any])
+    inline def setVideoVastXml(value: String): Self = StObject.set(x, "videoVastXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoVastXmlUndefined: Self = StObject.set(x, "videoVastXml", js.undefined)
+    inline def setVideoVastXmlUndefined: Self = StObject.set(x, "videoVastXml", js.undefined)
   }
 }

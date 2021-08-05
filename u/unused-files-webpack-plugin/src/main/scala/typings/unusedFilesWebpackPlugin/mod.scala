@@ -30,47 +30,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(failOnUnused: Boolean): Options = {
+    inline def apply(failOnUnused: Boolean): Options = {
       val __obj = js.Dynamic.literal(failOnUnused = failOnUnused.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setFailOnUnused(value: Boolean): Self = StObject.set(x, "failOnUnused", value.asInstanceOf[js.Any])
+      inline def setFailOnUnused(value: Boolean): Self = StObject.set(x, "failOnUnused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobOptions(value: Ignore): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+      inline def setGlobOptions(value: Ignore): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
+      inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
+      inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      @scala.inline
-      def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     }
   }
 }

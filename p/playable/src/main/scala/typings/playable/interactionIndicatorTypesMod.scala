@@ -35,8 +35,7 @@ object interactionIndicatorTypesMod {
   }
   object IInteractionIndicator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -54,44 +53,31 @@ object interactionIndicatorTypesMod {
       __obj.asInstanceOf[IInteractionIndicator]
     }
     
-    @scala.inline
-    implicit class IInteractionIndicatorMutableBuilder[Self <: IInteractionIndicator] (val x: Self) extends AnyVal {
+    extension [Self <: IInteractionIndicator](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHideIcons(value: () => Unit): Self = StObject.set(x, "hideIcons", js.Any.fromFunction0(value))
+      inline def setHideIcons(value: () => Unit): Self = StObject.set(x, "hideIcons", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowDecreaseVolume(value: () => Unit): Self = StObject.set(x, "showDecreaseVolume", js.Any.fromFunction0(value))
+      inline def setShowDecreaseVolume(value: () => Unit): Self = StObject.set(x, "showDecreaseVolume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowForward(value: () => Unit): Self = StObject.set(x, "showForward", js.Any.fromFunction0(value))
+      inline def setShowForward(value: () => Unit): Self = StObject.set(x, "showForward", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowIncreaseVolume(value: () => Unit): Self = StObject.set(x, "showIncreaseVolume", js.Any.fromFunction0(value))
+      inline def setShowIncreaseVolume(value: () => Unit): Self = StObject.set(x, "showIncreaseVolume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowMute(value: () => Unit): Self = StObject.set(x, "showMute", js.Any.fromFunction0(value))
+      inline def setShowMute(value: () => Unit): Self = StObject.set(x, "showMute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowPause(value: () => Unit): Self = StObject.set(x, "showPause", js.Any.fromFunction0(value))
+      inline def setShowPause(value: () => Unit): Self = StObject.set(x, "showPause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowPlay(value: () => Unit): Self = StObject.set(x, "showPlay", js.Any.fromFunction0(value))
+      inline def setShowPlay(value: () => Unit): Self = StObject.set(x, "showPlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowRewind(value: () => Unit): Self = StObject.set(x, "showRewind", js.Any.fromFunction0(value))
+      inline def setShowRewind(value: () => Unit): Self = StObject.set(x, "showRewind", js.Any.fromFunction0(value))
     }
   }
   
@@ -113,8 +99,7 @@ object interactionIndicatorTypesMod {
   }
   object IInteractionIndicatorViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animatedIcon: String,
       hidden: String,
       icon: String,
@@ -127,29 +112,21 @@ object interactionIndicatorTypesMod {
       __obj.asInstanceOf[IInteractionIndicatorViewStyles]
     }
     
-    @scala.inline
-    implicit class IInteractionIndicatorViewStylesMutableBuilder[Self <: IInteractionIndicatorViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IInteractionIndicatorViewStyles](x: Self) {
       
-      @scala.inline
-      def setAnimatedIcon(value: String): Self = StObject.set(x, "animatedIcon", value.asInstanceOf[js.Any])
+      inline def setAnimatedIcon(value: String): Self = StObject.set(x, "animatedIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainer(value: String): Self = StObject.set(x, "iconContainer", value.asInstanceOf[js.Any])
+      inline def setIconContainer(value: String): Self = StObject.set(x, "iconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseIcon(value: String): Self = StObject.set(x, "pauseIcon", value.asInstanceOf[js.Any])
+      inline def setPauseIcon(value: String): Self = StObject.set(x, "pauseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayIcon(value: String): Self = StObject.set(x, "playIcon", value.asInstanceOf[js.Any])
+      inline def setPlayIcon(value: String): Self = StObject.set(x, "playIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,31 +23,23 @@ trait InstanceTypeOffering extends StObject {
 }
 object InstanceTypeOffering {
   
-  @scala.inline
-  def apply(): InstanceTypeOffering = {
+  inline def apply(): InstanceTypeOffering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceTypeOffering]
   }
   
-  @scala.inline
-  implicit class InstanceTypeOfferingMutableBuilder[Self <: InstanceTypeOffering] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceTypeOffering](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationType(value: LocationType): Self = StObject.set(x, "LocationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: LocationType): Self = StObject.set(x, "LocationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "LocationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "LocationType", js.undefined)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

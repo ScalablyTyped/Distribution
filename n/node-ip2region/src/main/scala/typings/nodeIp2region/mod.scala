@@ -79,17 +79,14 @@ object mod {
   //#region Static Functions
   // Single Instance
   /* static member */
-  @scala.inline
-  def create(): IP2Region = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IP2Region]
-  @scala.inline
-  def create(dbPath: String): IP2Region = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dbPath.asInstanceOf[js.Any]).asInstanceOf[IP2Region]
+  inline def create(): IP2Region = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IP2Region]
+  inline def create(dbPath: String): IP2Region = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dbPath.asInstanceOf[js.Any]).asInstanceOf[IP2Region]
   
   /**
     * For backward compatibility
     */
   /* static member */
-  @scala.inline
-  def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
+  inline def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
   
   trait IP2Region extends StObject {
     
@@ -143,8 +140,7 @@ object mod {
   }
   object IP2Region {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       binarySearch: (String, SearchCallback) => Unit,
       binarySearchSync: String => SearchResult,
       btreeSearch: (String, SearchCallback) => Unit,
@@ -157,29 +153,21 @@ object mod {
       __obj.asInstanceOf[IP2Region]
     }
     
-    @scala.inline
-    implicit class IP2RegionMutableBuilder[Self <: IP2Region] (val x: Self) extends AnyVal {
+    extension [Self <: IP2Region](x: Self) {
       
-      @scala.inline
-      def setBinarySearch(value: (String, SearchCallback) => Unit): Self = StObject.set(x, "binarySearch", js.Any.fromFunction2(value))
+      inline def setBinarySearch(value: (String, SearchCallback) => Unit): Self = StObject.set(x, "binarySearch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBinarySearchSync(value: String => SearchResult): Self = StObject.set(x, "binarySearchSync", js.Any.fromFunction1(value))
+      inline def setBinarySearchSync(value: String => SearchResult): Self = StObject.set(x, "binarySearchSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBtreeSearch(value: (String, SearchCallback) => Unit): Self = StObject.set(x, "btreeSearch", js.Any.fromFunction2(value))
+      inline def setBtreeSearch(value: (String, SearchCallback) => Unit): Self = StObject.set(x, "btreeSearch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBtreeSearchSync(value: String => SearchResult): Self = StObject.set(x, "btreeSearchSync", js.Any.fromFunction1(value))
+      inline def setBtreeSearchSync(value: String => SearchResult): Self = StObject.set(x, "btreeSearchSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMemorySearch(value: (String, SearchCallback) => Unit): Self = StObject.set(x, "memorySearch", js.Any.fromFunction2(value))
+      inline def setMemorySearch(value: (String, SearchCallback) => Unit): Self = StObject.set(x, "memorySearch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMemorySearchSync(value: String => SearchResult): Self = StObject.set(x, "memorySearchSync", js.Any.fromFunction1(value))
+      inline def setMemorySearchSync(value: String => SearchResult): Self = StObject.set(x, "memorySearchSync", js.Any.fromFunction1(value))
     }
   }
   

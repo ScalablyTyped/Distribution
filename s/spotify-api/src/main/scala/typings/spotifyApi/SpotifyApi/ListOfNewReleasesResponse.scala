@@ -18,22 +18,17 @@ trait ListOfNewReleasesResponse extends StObject {
 }
 object ListOfNewReleasesResponse {
   
-  @scala.inline
-  def apply(albums: PagingObject[AlbumObjectSimplified]): ListOfNewReleasesResponse = {
+  inline def apply(albums: PagingObject[AlbumObjectSimplified]): ListOfNewReleasesResponse = {
     val __obj = js.Dynamic.literal(albums = albums.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOfNewReleasesResponse]
   }
   
-  @scala.inline
-  implicit class ListOfNewReleasesResponseMutableBuilder[Self <: ListOfNewReleasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListOfNewReleasesResponse](x: Self) {
     
-    @scala.inline
-    def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
+    inline def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

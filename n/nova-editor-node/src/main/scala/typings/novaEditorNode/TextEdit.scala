@@ -13,19 +13,15 @@ trait TextEdit extends StObject {
 }
 object TextEdit {
   
-  @scala.inline
-  def apply(newText: String, range: Range): TextEdit = {
+  inline def apply(newText: String, range: Range): TextEdit = {
     val __obj = js.Dynamic.literal(newText = newText.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEdit]
   }
   
-  @scala.inline
-  implicit class TextEditMutableBuilder[Self <: TextEdit] (val x: Self) extends AnyVal {
+  extension [Self <: TextEdit](x: Self) {
     
-    @scala.inline
-    def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+    inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

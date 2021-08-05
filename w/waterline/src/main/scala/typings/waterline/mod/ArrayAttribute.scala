@@ -15,17 +15,14 @@ trait ArrayAttribute
 }
 object ArrayAttribute {
   
-  @scala.inline
-  def apply(): ArrayAttribute = {
+  inline def apply(): ArrayAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[ArrayAttribute]
   }
   
-  @scala.inline
-  implicit class ArrayAttributeMutableBuilder[Self <: ArrayAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayAttribute](x: Self) {
     
-    @scala.inline
-    def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

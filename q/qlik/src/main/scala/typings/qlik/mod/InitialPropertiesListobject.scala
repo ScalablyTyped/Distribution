@@ -14,16 +14,13 @@ trait InitialPropertiesListobject
 }
 object InitialPropertiesListobject {
   
-  @scala.inline
-  def apply(qListobjectDef: ListobjectDef): InitialPropertiesListobject = {
+  inline def apply(qListobjectDef: ListobjectDef): InitialPropertiesListobject = {
     val __obj = js.Dynamic.literal(qListobjectDef = qListobjectDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitialPropertiesListobject]
   }
   
-  @scala.inline
-  implicit class InitialPropertiesListobjectMutableBuilder[Self <: InitialPropertiesListobject] (val x: Self) extends AnyVal {
+  extension [Self <: InitialPropertiesListobject](x: Self) {
     
-    @scala.inline
-    def setQListobjectDef(value: ListobjectDef): Self = StObject.set(x, "qListobjectDef", value.asInstanceOf[js.Any])
+    inline def setQListobjectDef(value: ListobjectDef): Self = StObject.set(x, "qListobjectDef", value.asInstanceOf[js.Any])
   }
 }

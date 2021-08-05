@@ -13,22 +13,17 @@ trait SchemaDetail extends StObject {
 }
 object SchemaDetail {
   
-  @scala.inline
-  def apply(): SchemaDetail = {
+  inline def apply(): SchemaDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDetail]
   }
   
-  @scala.inline
-  implicit class SchemaDetailMutableBuilder[Self <: SchemaDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDetail](x: Self) {
     
-    @scala.inline
-    def setFindings(value: js.Array[SchemaFinding]): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
+    inline def setFindings(value: js.Array[SchemaFinding]): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
+    inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    @scala.inline
-    def setFindingsVarargs(value: SchemaFinding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: SchemaFinding*): Self = StObject.set(x, "findings", js.Array(value :_*))
   }
 }

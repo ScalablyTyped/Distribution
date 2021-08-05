@@ -14,32 +14,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Distribution extends StObject
 object Distribution {
   
-  @scala.inline
-  def DistributionKDE(field: String | TransformField): typings.vegaTypings.transformMod.DistributionKDE = {
+  inline def DistributionKDE(field: String | TransformField): typings.vegaTypings.transformMod.DistributionKDE = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = "kde")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.DistributionKDE]
   }
   
-  @scala.inline
-  def DistributionLogNormal(): typings.vegaTypings.transformMod.DistributionLogNormal = {
+  inline def DistributionLogNormal(): typings.vegaTypings.transformMod.DistributionLogNormal = {
     val __obj = js.Dynamic.literal(function = "lognormal")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.DistributionLogNormal]
   }
   
-  @scala.inline
-  def DistributionMixture(field: String | TransformField): typings.vegaTypings.transformMod.DistributionMixture = {
+  inline def DistributionMixture(field: String | TransformField): typings.vegaTypings.transformMod.DistributionMixture = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = "mixture")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.DistributionMixture]
   }
   
-  @scala.inline
-  def DistributionNormal(): typings.vegaTypings.transformMod.DistributionNormal = {
+  inline def DistributionNormal(): typings.vegaTypings.transformMod.DistributionNormal = {
     val __obj = js.Dynamic.literal(function = "normal")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.DistributionNormal]
   }
   
-  @scala.inline
-  def DistributionUniform(): typings.vegaTypings.transformMod.DistributionUniform = {
+  inline def DistributionUniform(): typings.vegaTypings.transformMod.DistributionUniform = {
     val __obj = js.Dynamic.literal(function = "uniform")
     __obj.asInstanceOf[typings.vegaTypings.transformMod.DistributionUniform]
   }

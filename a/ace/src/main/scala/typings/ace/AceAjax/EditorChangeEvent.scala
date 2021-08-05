@@ -17,28 +17,21 @@ trait EditorChangeEvent extends StObject {
 }
 object EditorChangeEvent {
   
-  @scala.inline
-  def apply(action: String, end: Position, lines: js.Array[js.Any], start: Position): EditorChangeEvent = {
+  inline def apply(action: String, end: Position, lines: js.Array[js.Any], start: Position): EditorChangeEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorChangeEvent]
   }
   
-  @scala.inline
-  implicit class EditorChangeEventMutableBuilder[Self <: EditorChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EditorChangeEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: js.Array[js.Any]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[js.Any]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: js.Any*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: js.Any*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

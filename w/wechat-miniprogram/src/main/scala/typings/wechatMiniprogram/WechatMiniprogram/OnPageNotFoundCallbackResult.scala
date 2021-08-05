@@ -17,22 +17,17 @@ trait OnPageNotFoundCallbackResult extends StObject {
 }
 object OnPageNotFoundCallbackResult {
   
-  @scala.inline
-  def apply(isEntryPage: Boolean, path: String, query: IAnyObject): OnPageNotFoundCallbackResult = {
+  inline def apply(isEntryPage: Boolean, path: String, query: IAnyObject): OnPageNotFoundCallbackResult = {
     val __obj = js.Dynamic.literal(isEntryPage = isEntryPage.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPageNotFoundCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnPageNotFoundCallbackResultMutableBuilder[Self <: OnPageNotFoundCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnPageNotFoundCallbackResult](x: Self) {
     
-    @scala.inline
-    def setIsEntryPage(value: Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
+    inline def setIsEntryPage(value: Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: IAnyObject): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

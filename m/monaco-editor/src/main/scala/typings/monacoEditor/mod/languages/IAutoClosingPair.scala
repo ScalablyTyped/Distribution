@@ -12,19 +12,15 @@ trait IAutoClosingPair extends StObject {
 }
 object IAutoClosingPair {
   
-  @scala.inline
-  def apply(close: String, open: String): IAutoClosingPair = {
+  inline def apply(close: String, open: String): IAutoClosingPair = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutoClosingPair]
   }
   
-  @scala.inline
-  implicit class IAutoClosingPairMutableBuilder[Self <: IAutoClosingPair] (val x: Self) extends AnyVal {
+  extension [Self <: IAutoClosingPair](x: Self) {
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait ApprovalSnapshots extends StObject {
 }
 object ApprovalSnapshots {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     approvalSnapshots: scala.Double,
     automatedApprovals: scala.Double,
@@ -30,22 +29,16 @@ object ApprovalSnapshots {
     __obj.asInstanceOf[ApprovalSnapshots]
   }
   
-  @scala.inline
-  implicit class ApprovalSnapshotsMutableBuilder[Self <: ApprovalSnapshots] (val x: Self) extends AnyVal {
+  extension [Self <: ApprovalSnapshots](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalSnapshots(value: scala.Double): Self = StObject.set(x, "approvalSnapshots", value.asInstanceOf[js.Any])
+    inline def setApprovalSnapshots(value: scala.Double): Self = StObject.set(x, "approvalSnapshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedApprovals(value: scala.Double): Self = StObject.set(x, "automatedApprovals", value.asInstanceOf[js.Any])
+    inline def setAutomatedApprovals(value: scala.Double): Self = StObject.set(x, "automatedApprovals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualApprovals(value: scala.Double): Self = StObject.set(x, "manualApprovals", value.asInstanceOf[js.Any])
+    inline def setManualApprovals(value: scala.Double): Self = StObject.set(x, "manualApprovals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

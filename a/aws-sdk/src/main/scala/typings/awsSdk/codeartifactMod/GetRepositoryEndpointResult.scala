@@ -13,19 +13,15 @@ trait GetRepositoryEndpointResult extends StObject {
 }
 object GetRepositoryEndpointResult {
   
-  @scala.inline
-  def apply(): GetRepositoryEndpointResult = {
+  inline def apply(): GetRepositoryEndpointResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRepositoryEndpointResult]
   }
   
-  @scala.inline
-  implicit class GetRepositoryEndpointResultMutableBuilder[Self <: GetRepositoryEndpointResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRepositoryEndpointResult](x: Self) {
     
-    @scala.inline
-    def setRepositoryEndpoint(value: String): Self = StObject.set(x, "repositoryEndpoint", value.asInstanceOf[js.Any])
+    inline def setRepositoryEndpoint(value: String): Self = StObject.set(x, "repositoryEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryEndpointUndefined: Self = StObject.set(x, "repositoryEndpoint", js.undefined)
+    inline def setRepositoryEndpointUndefined: Self = StObject.set(x, "repositoryEndpoint", js.undefined)
   }
 }

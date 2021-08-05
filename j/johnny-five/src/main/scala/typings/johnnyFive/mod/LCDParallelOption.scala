@@ -14,25 +14,19 @@ trait LCDParallelOption
 }
 object LCDParallelOption {
   
-  @scala.inline
-  def apply(pins: js.Array[js.Any]): LCDParallelOption = {
+  inline def apply(pins: js.Array[js.Any]): LCDParallelOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCDParallelOption]
   }
   
-  @scala.inline
-  implicit class LCDParallelOptionMutableBuilder[Self <: LCDParallelOption] (val x: Self) extends AnyVal {
+  extension [Self <: LCDParallelOption](x: Self) {
     
-    @scala.inline
-    def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
+    inline def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBacklightUndefined: Self = StObject.set(x, "backlight", js.undefined)
+    inline def setBacklightUndefined: Self = StObject.set(x, "backlight", js.undefined)
     
-    @scala.inline
-    def setPins(value: js.Array[js.Any]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    inline def setPins(value: js.Array[js.Any]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinsVarargs(value: js.Any*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: js.Any*): Self = StObject.set(x, "pins", js.Array(value :_*))
   }
 }

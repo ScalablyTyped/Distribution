@@ -22,25 +22,19 @@ trait ArcGISCachedServiceProperties extends StObject {
 }
 object ArcGISCachedServiceProperties {
   
-  @scala.inline
-  def apply(): ArcGISCachedServiceProperties = {
+  inline def apply(): ArcGISCachedServiceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArcGISCachedServiceProperties]
   }
   
-  @scala.inline
-  implicit class ArcGISCachedServicePropertiesMutableBuilder[Self <: ArcGISCachedServiceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISCachedServiceProperties](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
   }
 }

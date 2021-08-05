@@ -23,8 +23,6 @@ object mod {
     *
     * @param controls - Object of control handlers.
     */
-  @scala.inline
-  def default(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def default(controls: Record[String, js.Function1[/* action */ AnyAction, js.Any]]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(controls.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def default(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def default(controls: Record[String, js.Function1[/* action */ AnyAction, js.Any]]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(controls.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
 }

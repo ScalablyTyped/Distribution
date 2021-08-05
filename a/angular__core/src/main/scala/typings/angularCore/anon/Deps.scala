@@ -12,22 +12,17 @@ trait Deps extends StObject {
 }
 object Deps {
   
-  @scala.inline
-  def apply(deps: js.Array[js.Any], useFactory: js.Function): Deps = {
+  inline def apply(deps: js.Array[js.Any], useFactory: js.Function): Deps = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useFactory = useFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deps]
   }
   
-  @scala.inline
-  implicit class DepsMutableBuilder[Self <: Deps] (val x: Self) extends AnyVal {
+  extension [Self <: Deps](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: js.Any*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+    inline def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
   }
 }

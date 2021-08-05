@@ -56,44 +56,32 @@ object mod {
   }
   object ILogMonitorProps {
     
-    @scala.inline
-    def apply(): ILogMonitorProps = {
+    inline def apply(): ILogMonitorProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILogMonitorProps]
     }
     
-    @scala.inline
-    implicit class ILogMonitorPropsMutableBuilder[Self <: ILogMonitorProps] (val x: Self) extends AnyVal {
+    extension [Self <: ILogMonitorProps](x: Self) {
       
-      @scala.inline
-      def setExpandActionRoot(value: Boolean): Self = StObject.set(x, "expandActionRoot", value.asInstanceOf[js.Any])
+      inline def setExpandActionRoot(value: Boolean): Self = StObject.set(x, "expandActionRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandActionRootUndefined: Self = StObject.set(x, "expandActionRoot", js.undefined)
+      inline def setExpandActionRootUndefined: Self = StObject.set(x, "expandActionRoot", js.undefined)
       
-      @scala.inline
-      def setExpandStateRoot(value: Boolean): Self = StObject.set(x, "expandStateRoot", value.asInstanceOf[js.Any])
+      inline def setExpandStateRoot(value: Boolean): Self = StObject.set(x, "expandStateRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandStateRootUndefined: Self = StObject.set(x, "expandStateRoot", js.undefined)
+      inline def setExpandStateRootUndefined: Self = StObject.set(x, "expandStateRoot", js.undefined)
       
-      @scala.inline
-      def setPreserveScrollTop(value: Boolean): Self = StObject.set(x, "preserveScrollTop", value.asInstanceOf[js.Any])
+      inline def setPreserveScrollTop(value: Boolean): Self = StObject.set(x, "preserveScrollTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveScrollTopUndefined: Self = StObject.set(x, "preserveScrollTop", js.undefined)
+      inline def setPreserveScrollTopUndefined: Self = StObject.set(x, "preserveScrollTop", js.undefined)
       
-      @scala.inline
-      def setSelect(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String | Base16Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String | Base16Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   

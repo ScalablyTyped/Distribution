@@ -24,25 +24,19 @@ trait SchemaIterativeCalculationSettings extends StObject {
 }
 object SchemaIterativeCalculationSettings {
   
-  @scala.inline
-  def apply(): SchemaIterativeCalculationSettings = {
+  inline def apply(): SchemaIterativeCalculationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIterativeCalculationSettings]
   }
   
-  @scala.inline
-  implicit class SchemaIterativeCalculationSettingsMutableBuilder[Self <: SchemaIterativeCalculationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIterativeCalculationSettings](x: Self) {
     
-    @scala.inline
-    def setConvergenceThreshold(value: Double): Self = StObject.set(x, "convergenceThreshold", value.asInstanceOf[js.Any])
+    inline def setConvergenceThreshold(value: Double): Self = StObject.set(x, "convergenceThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvergenceThresholdUndefined: Self = StObject.set(x, "convergenceThreshold", js.undefined)
+    inline def setConvergenceThresholdUndefined: Self = StObject.set(x, "convergenceThreshold", js.undefined)
     
-    @scala.inline
-    def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
+    inline def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
+    inline def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
   }
 }

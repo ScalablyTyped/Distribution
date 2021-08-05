@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
+  inline def apply(input: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
   
   @JSImport("is-regexp", JSImport.Namespace)
   @js.native

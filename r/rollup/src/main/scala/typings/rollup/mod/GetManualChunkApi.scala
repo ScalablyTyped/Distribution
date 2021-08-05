@@ -15,8 +15,7 @@ trait GetManualChunkApi extends StObject {
 }
 object GetManualChunkApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getModuleIds: () => IterableIterator[String],
     getModuleInfo: /* moduleId */ String => ModuleInfo | Null
   ): GetManualChunkApi = {
@@ -24,13 +23,10 @@ object GetManualChunkApi {
     __obj.asInstanceOf[GetManualChunkApi]
   }
   
-  @scala.inline
-  implicit class GetManualChunkApiMutableBuilder[Self <: GetManualChunkApi] (val x: Self) extends AnyVal {
+  extension [Self <: GetManualChunkApi](x: Self) {
     
-    @scala.inline
-    def setGetModuleIds(value: () => IterableIterator[String]): Self = StObject.set(x, "getModuleIds", js.Any.fromFunction0(value))
+    inline def setGetModuleIds(value: () => IterableIterator[String]): Self = StObject.set(x, "getModuleIds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModuleInfo(value: /* moduleId */ String => ModuleInfo | Null): Self = StObject.set(x, "getModuleInfo", js.Any.fromFunction1(value))
+    inline def setGetModuleInfo(value: /* moduleId */ String => ModuleInfo | Null): Self = StObject.set(x, "getModuleInfo", js.Any.fromFunction1(value))
   }
 }

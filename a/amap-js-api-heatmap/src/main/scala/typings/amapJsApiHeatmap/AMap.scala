@@ -96,23 +96,18 @@ object AMap {
     }
     object Data {
       
-      @scala.inline
-      def apply(count: Double, lat: Double, lng: Double): typings.amapJsApiHeatmap.AMap.Heatmap.Data = {
+      inline def apply(count: Double, lat: Double, lng: Double): typings.amapJsApiHeatmap.AMap.Heatmap.Data = {
         val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.amapJsApiHeatmap.AMap.Heatmap.Data]
       }
       
-      @scala.inline
-      implicit class DataMutableBuilder[Self <: typings.amapJsApiHeatmap.AMap.Heatmap.Data] (val x: Self) extends AnyVal {
+      extension [Self <: typings.amapJsApiHeatmap.AMap.Heatmap.Data](x: Self) {
         
-        @scala.inline
-        def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+        inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+        inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
       }
     }
     
@@ -130,26 +125,20 @@ object AMap {
     }
     object DataSet {
       
-      @scala.inline
-      def apply(data: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data]): DataSet = {
+      inline def apply(data: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data]): DataSet = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
         __obj.asInstanceOf[DataSet]
       }
       
-      @scala.inline
-      implicit class DataSetMutableBuilder[Self <: DataSet] (val x: Self) extends AnyVal {
+      extension [Self <: DataSet](x: Self) {
         
-        @scala.inline
-        def setData(value: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataVarargs(value: typings.amapJsApiHeatmap.AMap.Heatmap.Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: typings.amapJsApiHeatmap.AMap.Heatmap.Data*): Self = StObject.set(x, "data", js.Array(value :_*))
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       }
     }
     
@@ -193,80 +182,56 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def set3d(value: DrawGridLine): Self = StObject.set(x, "3d", value.asInstanceOf[js.Any])
+        inline def set3d(value: DrawGridLine): Self = StObject.set(x, "3d", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set3dUndefined: Self = StObject.set(x, "3d", js.undefined)
+        inline def set3dUndefined: Self = StObject.set(x, "3d", js.undefined)
         
-        @scala.inline
-        def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+        inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+        inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
         
-        @scala.inline
-        def setGradient(value: StringDictionary[String]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+        inline def setGradient(value: StringDictionary[String]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+        inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
         
-        @scala.inline
-        def setOpacity(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+        inline def setOpacity(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+        inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
         
-        @scala.inline
-        def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+        inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+        inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
         
-        @scala.inline
-        def setRadiusUnit(value: String): Self = StObject.set(x, "radiusUnit", value.asInstanceOf[js.Any])
+        inline def setRadiusUnit(value: String): Self = StObject.set(x, "radiusUnit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRadiusUnitUndefined: Self = StObject.set(x, "radiusUnit", js.undefined)
+        inline def setRadiusUnitUndefined: Self = StObject.set(x, "radiusUnit", js.undefined)
         
-        @scala.inline
-        def setRejectMapMask(value: Boolean): Self = StObject.set(x, "rejectMapMask", value.asInstanceOf[js.Any])
+        inline def setRejectMapMask(value: Boolean): Self = StObject.set(x, "rejectMapMask", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRejectMapMaskUndefined: Self = StObject.set(x, "rejectMapMask", js.undefined)
+        inline def setRejectMapMaskUndefined: Self = StObject.set(x, "rejectMapMask", js.undefined)
         
-        @scala.inline
-        def setRenderOnZooming(value: Boolean): Self = StObject.set(x, "renderOnZooming", value.asInstanceOf[js.Any])
+        inline def setRenderOnZooming(value: Boolean): Self = StObject.set(x, "renderOnZooming", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderOnZoomingUndefined: Self = StObject.set(x, "renderOnZooming", js.undefined)
+        inline def setRenderOnZoomingUndefined: Self = StObject.set(x, "renderOnZooming", js.undefined)
         
-        @scala.inline
-        def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+        inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
         
-        @scala.inline
-        def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+        inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+        inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
         
-        @scala.inline
-        def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+        inline def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
+        inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
       }
     }
   }

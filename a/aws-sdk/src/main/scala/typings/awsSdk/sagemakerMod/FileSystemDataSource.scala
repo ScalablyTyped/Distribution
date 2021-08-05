@@ -28,8 +28,7 @@ trait FileSystemDataSource extends StObject {
 }
 object FileSystemDataSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DirectoryPath: DirectoryPath,
     FileSystemAccessMode: FileSystemAccessMode,
     FileSystemId: FileSystemId,
@@ -39,19 +38,14 @@ object FileSystemDataSource {
     __obj.asInstanceOf[FileSystemDataSource]
   }
   
-  @scala.inline
-  implicit class FileSystemDataSourceMutableBuilder[Self <: FileSystemDataSource] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemDataSource](x: Self) {
     
-    @scala.inline
-    def setDirectoryPath(value: DirectoryPath): Self = StObject.set(x, "DirectoryPath", value.asInstanceOf[js.Any])
+    inline def setDirectoryPath(value: DirectoryPath): Self = StObject.set(x, "DirectoryPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemAccessMode(value: FileSystemAccessMode): Self = StObject.set(x, "FileSystemAccessMode", value.asInstanceOf[js.Any])
+    inline def setFileSystemAccessMode(value: FileSystemAccessMode): Self = StObject.set(x, "FileSystemAccessMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemType(value: FileSystemType): Self = StObject.set(x, "FileSystemType", value.asInstanceOf[js.Any])
+    inline def setFileSystemType(value: FileSystemType): Self = StObject.set(x, "FileSystemType", value.asInstanceOf[js.Any])
   }
 }

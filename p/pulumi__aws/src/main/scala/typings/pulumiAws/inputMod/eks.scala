@@ -17,20 +17,16 @@ object eks {
   }
   object ClusterCertificateAuthority {
     
-    @scala.inline
-    def apply(): ClusterCertificateAuthority = {
+    inline def apply(): ClusterCertificateAuthority = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterCertificateAuthority]
     }
     
-    @scala.inline
-    implicit class ClusterCertificateAuthorityMutableBuilder[Self <: ClusterCertificateAuthority] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterCertificateAuthority](x: Self) {
       
-      @scala.inline
-      def setData(value: Input[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Input[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
   }
   
@@ -48,23 +44,18 @@ object eks {
   }
   object ClusterEncryptionConfig {
     
-    @scala.inline
-    def apply(provider: Input[ClusterEncryptionConfigProvider], resources: Input[js.Array[Input[String]]]): ClusterEncryptionConfig = {
+    inline def apply(provider: Input[ClusterEncryptionConfigProvider], resources: Input[js.Array[Input[String]]]): ClusterEncryptionConfig = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterEncryptionConfig]
     }
     
-    @scala.inline
-    implicit class ClusterEncryptionConfigMutableBuilder[Self <: ClusterEncryptionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterEncryptionConfig](x: Self) {
       
-      @scala.inline
-      def setProvider(value: Input[ClusterEncryptionConfigProvider]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: Input[ClusterEncryptionConfigProvider]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
     }
   }
   
@@ -77,17 +68,14 @@ object eks {
   }
   object ClusterEncryptionConfigProvider {
     
-    @scala.inline
-    def apply(keyArn: Input[String]): ClusterEncryptionConfigProvider = {
+    inline def apply(keyArn: Input[String]): ClusterEncryptionConfigProvider = {
       val __obj = js.Dynamic.literal(keyArn = keyArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterEncryptionConfigProvider]
     }
     
-    @scala.inline
-    implicit class ClusterEncryptionConfigProviderMutableBuilder[Self <: ClusterEncryptionConfigProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterEncryptionConfigProvider](x: Self) {
       
-      @scala.inline
-      def setKeyArn(value: Input[String]): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
+      inline def setKeyArn(value: Input[String]): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,23 +88,18 @@ object eks {
   }
   object ClusterIdentity {
     
-    @scala.inline
-    def apply(): ClusterIdentity = {
+    inline def apply(): ClusterIdentity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterIdentity]
     }
     
-    @scala.inline
-    implicit class ClusterIdentityMutableBuilder[Self <: ClusterIdentity] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterIdentity](x: Self) {
       
-      @scala.inline
-      def setOidcs(value: Input[js.Array[Input[ClusterIdentityOidc]]]): Self = StObject.set(x, "oidcs", value.asInstanceOf[js.Any])
+      inline def setOidcs(value: Input[js.Array[Input[ClusterIdentityOidc]]]): Self = StObject.set(x, "oidcs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOidcsUndefined: Self = StObject.set(x, "oidcs", js.undefined)
+      inline def setOidcsUndefined: Self = StObject.set(x, "oidcs", js.undefined)
       
-      @scala.inline
-      def setOidcsVarargs(value: Input[ClusterIdentityOidc]*): Self = StObject.set(x, "oidcs", js.Array(value :_*))
+      inline def setOidcsVarargs(value: Input[ClusterIdentityOidc]*): Self = StObject.set(x, "oidcs", js.Array(value :_*))
     }
   }
   
@@ -129,20 +112,16 @@ object eks {
   }
   object ClusterIdentityOidc {
     
-    @scala.inline
-    def apply(): ClusterIdentityOidc = {
+    inline def apply(): ClusterIdentityOidc = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClusterIdentityOidc]
     }
     
-    @scala.inline
-    implicit class ClusterIdentityOidcMutableBuilder[Self <: ClusterIdentityOidc] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterIdentityOidc](x: Self) {
       
-      @scala.inline
-      def setIssuer(value: Input[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: Input[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     }
   }
   
@@ -185,62 +164,44 @@ object eks {
   }
   object ClusterVpcConfig {
     
-    @scala.inline
-    def apply(subnetIds: Input[js.Array[Input[String]]]): ClusterVpcConfig = {
+    inline def apply(subnetIds: Input[js.Array[Input[String]]]): ClusterVpcConfig = {
       val __obj = js.Dynamic.literal(subnetIds = subnetIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterVpcConfig]
     }
     
-    @scala.inline
-    implicit class ClusterVpcConfigMutableBuilder[Self <: ClusterVpcConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterVpcConfig](x: Self) {
       
-      @scala.inline
-      def setClusterSecurityGroupId(value: Input[String]): Self = StObject.set(x, "clusterSecurityGroupId", value.asInstanceOf[js.Any])
+      inline def setClusterSecurityGroupId(value: Input[String]): Self = StObject.set(x, "clusterSecurityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterSecurityGroupIdUndefined: Self = StObject.set(x, "clusterSecurityGroupId", js.undefined)
+      inline def setClusterSecurityGroupIdUndefined: Self = StObject.set(x, "clusterSecurityGroupId", js.undefined)
       
-      @scala.inline
-      def setEndpointPrivateAccess(value: Input[Boolean]): Self = StObject.set(x, "endpointPrivateAccess", value.asInstanceOf[js.Any])
+      inline def setEndpointPrivateAccess(value: Input[Boolean]): Self = StObject.set(x, "endpointPrivateAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointPrivateAccessUndefined: Self = StObject.set(x, "endpointPrivateAccess", js.undefined)
+      inline def setEndpointPrivateAccessUndefined: Self = StObject.set(x, "endpointPrivateAccess", js.undefined)
       
-      @scala.inline
-      def setEndpointPublicAccess(value: Input[Boolean]): Self = StObject.set(x, "endpointPublicAccess", value.asInstanceOf[js.Any])
+      inline def setEndpointPublicAccess(value: Input[Boolean]): Self = StObject.set(x, "endpointPublicAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointPublicAccessUndefined: Self = StObject.set(x, "endpointPublicAccess", js.undefined)
+      inline def setEndpointPublicAccessUndefined: Self = StObject.set(x, "endpointPublicAccess", js.undefined)
       
-      @scala.inline
-      def setPublicAccessCidrs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "publicAccessCidrs", value.asInstanceOf[js.Any])
+      inline def setPublicAccessCidrs(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "publicAccessCidrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicAccessCidrsUndefined: Self = StObject.set(x, "publicAccessCidrs", js.undefined)
+      inline def setPublicAccessCidrsUndefined: Self = StObject.set(x, "publicAccessCidrs", js.undefined)
       
-      @scala.inline
-      def setPublicAccessCidrsVarargs(value: Input[String]*): Self = StObject.set(x, "publicAccessCidrs", js.Array(value :_*))
+      inline def setPublicAccessCidrsVarargs(value: Input[String]*): Self = StObject.set(x, "publicAccessCidrs", js.Array(value :_*))
       
-      @scala.inline
-      def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
+      inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
   
@@ -258,23 +219,18 @@ object eks {
   }
   object FargateProfileSelector {
     
-    @scala.inline
-    def apply(namespace: Input[String]): FargateProfileSelector = {
+    inline def apply(namespace: Input[String]): FargateProfileSelector = {
       val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[FargateProfileSelector]
     }
     
-    @scala.inline
-    implicit class FargateProfileSelectorMutableBuilder[Self <: FargateProfileSelector] (val x: Self) extends AnyVal {
+    extension [Self <: FargateProfileSelector](x: Self) {
       
-      @scala.inline
-      def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,29 +250,22 @@ object eks {
   }
   object NodeGroupLaunchTemplate {
     
-    @scala.inline
-    def apply(version: Input[String]): NodeGroupLaunchTemplate = {
+    inline def apply(version: Input[String]): NodeGroupLaunchTemplate = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeGroupLaunchTemplate]
     }
     
-    @scala.inline
-    implicit class NodeGroupLaunchTemplateMutableBuilder[Self <: NodeGroupLaunchTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: NodeGroupLaunchTemplate](x: Self) {
       
-      @scala.inline
-      def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Input[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -334,29 +283,22 @@ object eks {
   }
   object NodeGroupRemoteAccess {
     
-    @scala.inline
-    def apply(): NodeGroupRemoteAccess = {
+    inline def apply(): NodeGroupRemoteAccess = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeGroupRemoteAccess]
     }
     
-    @scala.inline
-    implicit class NodeGroupRemoteAccessMutableBuilder[Self <: NodeGroupRemoteAccess] (val x: Self) extends AnyVal {
+    extension [Self <: NodeGroupRemoteAccess](x: Self) {
       
-      @scala.inline
-      def setEc2SshKey(value: Input[String]): Self = StObject.set(x, "ec2SshKey", value.asInstanceOf[js.Any])
+      inline def setEc2SshKey(value: Input[String]): Self = StObject.set(x, "ec2SshKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2SshKeyUndefined: Self = StObject.set(x, "ec2SshKey", js.undefined)
+      inline def setEc2SshKeyUndefined: Self = StObject.set(x, "ec2SshKey", js.undefined)
       
-      @scala.inline
-      def setSourceSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sourceSecurityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSourceSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sourceSecurityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceSecurityGroupIdsUndefined: Self = StObject.set(x, "sourceSecurityGroupIds", js.undefined)
+      inline def setSourceSecurityGroupIdsUndefined: Self = StObject.set(x, "sourceSecurityGroupIds", js.undefined)
       
-      @scala.inline
-      def setSourceSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "sourceSecurityGroupIds", js.Array(value :_*))
+      inline def setSourceSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "sourceSecurityGroupIds", js.Array(value :_*))
     }
   }
   
@@ -374,29 +316,22 @@ object eks {
   }
   object NodeGroupResource {
     
-    @scala.inline
-    def apply(): NodeGroupResource = {
+    inline def apply(): NodeGroupResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeGroupResource]
     }
     
-    @scala.inline
-    implicit class NodeGroupResourceMutableBuilder[Self <: NodeGroupResource] (val x: Self) extends AnyVal {
+    extension [Self <: NodeGroupResource](x: Self) {
       
-      @scala.inline
-      def setAutoscalingGroups(value: Input[js.Array[Input[NodeGroupResourceAutoscalingGroup]]]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroups(value: Input[js.Array[Input[NodeGroupResourceAutoscalingGroup]]]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingGroupsUndefined: Self = StObject.set(x, "autoscalingGroups", js.undefined)
+      inline def setAutoscalingGroupsUndefined: Self = StObject.set(x, "autoscalingGroups", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroupsVarargs(value: Input[NodeGroupResourceAutoscalingGroup]*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
+      inline def setAutoscalingGroupsVarargs(value: Input[NodeGroupResourceAutoscalingGroup]*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setRemoteAccessSecurityGroupId(value: Input[String]): Self = StObject.set(x, "remoteAccessSecurityGroupId", value.asInstanceOf[js.Any])
+      inline def setRemoteAccessSecurityGroupId(value: Input[String]): Self = StObject.set(x, "remoteAccessSecurityGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteAccessSecurityGroupIdUndefined: Self = StObject.set(x, "remoteAccessSecurityGroupId", js.undefined)
+      inline def setRemoteAccessSecurityGroupIdUndefined: Self = StObject.set(x, "remoteAccessSecurityGroupId", js.undefined)
     }
   }
   
@@ -409,20 +344,16 @@ object eks {
   }
   object NodeGroupResourceAutoscalingGroup {
     
-    @scala.inline
-    def apply(): NodeGroupResourceAutoscalingGroup = {
+    inline def apply(): NodeGroupResourceAutoscalingGroup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeGroupResourceAutoscalingGroup]
     }
     
-    @scala.inline
-    implicit class NodeGroupResourceAutoscalingGroupMutableBuilder[Self <: NodeGroupResourceAutoscalingGroup] (val x: Self) extends AnyVal {
+    extension [Self <: NodeGroupResourceAutoscalingGroup](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -445,23 +376,18 @@ object eks {
   }
   object NodeGroupScalingConfig {
     
-    @scala.inline
-    def apply(desiredSize: Input[Double], maxSize: Input[Double], minSize: Input[Double]): NodeGroupScalingConfig = {
+    inline def apply(desiredSize: Input[Double], maxSize: Input[Double], minSize: Input[Double]): NodeGroupScalingConfig = {
       val __obj = js.Dynamic.literal(desiredSize = desiredSize.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeGroupScalingConfig]
     }
     
-    @scala.inline
-    implicit class NodeGroupScalingConfigMutableBuilder[Self <: NodeGroupScalingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NodeGroupScalingConfig](x: Self) {
       
-      @scala.inline
-      def setDesiredSize(value: Input[Double]): Self = StObject.set(x, "desiredSize", value.asInstanceOf[js.Any])
+      inline def setDesiredSize(value: Input[Double]): Self = StObject.set(x, "desiredSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSize(value: Input[Double]): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Input[Double]): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSize(value: Input[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Input[Double]): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     }
   }
 }

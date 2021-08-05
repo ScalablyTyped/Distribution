@@ -10,22 +10,17 @@ trait GoogleCloudDatacatalogV1beta1FieldTypeEnumType extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1FieldTypeEnumType {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1FieldTypeEnumType = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1FieldTypeEnumType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1FieldTypeEnumType]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1FieldTypeEnumType] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1FieldTypeEnumType](x: Self) {
     
-    @scala.inline
-    def setAllowedValues(value: js.Array[GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: js.Array[GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
+    inline def setAllowedValuesUndefined: Self = StObject.set(x, "allowedValues", js.undefined)
     
-    @scala.inline
-    def setAllowedValuesVarargs(value: GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
   }
 }

@@ -17,19 +17,15 @@ trait PivotHierarchyUpdateData extends StObject {
 }
 object PivotHierarchyUpdateData {
   
-  @scala.inline
-  def apply(): PivotHierarchyUpdateData = {
+  inline def apply(): PivotHierarchyUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotHierarchyUpdateData]
   }
   
-  @scala.inline
-  implicit class PivotHierarchyUpdateDataMutableBuilder[Self <: PivotHierarchyUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: PivotHierarchyUpdateData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

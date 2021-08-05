@@ -13,19 +13,15 @@ trait Handled extends StObject {
 }
 object Handled {
   
-  @scala.inline
-  def apply(Doc: Document, Handled: Boolean): Handled = {
+  inline def apply(Doc: Document, Handled: Boolean): Handled = {
     val __obj = js.Dynamic.literal(Doc = Doc.asInstanceOf[js.Any], Handled = Handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handled]
   }
   
-  @scala.inline
-  implicit class HandledMutableBuilder[Self <: Handled] (val x: Self) extends AnyVal {
+  extension [Self <: Handled](x: Self) {
     
-    @scala.inline
-    def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: Document): Self = StObject.set(x, "Doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "Handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "Handled", value.asInstanceOf[js.Any])
   }
 }

@@ -17,8 +17,7 @@ trait ClientApiAddon[StoryFnReturnType]
 }
 object ClientApiAddon {
   
-  @scala.inline
-  def apply[StoryFnReturnType](
+  inline def apply[StoryFnReturnType](
     apply: (StoryApi[StoryFnReturnType], js.Array[js.Any]) => js.Any,
     render: RenderOptions => ReactElement,
     title: js.Function0[String] | String
@@ -27,10 +26,8 @@ object ClientApiAddon {
     __obj.asInstanceOf[ClientApiAddon[StoryFnReturnType]]
   }
   
-  @scala.inline
-  implicit class ClientApiAddonMutableBuilder[Self <: ClientApiAddon[?], StoryFnReturnType] (val x: Self & ClientApiAddon[StoryFnReturnType]) extends AnyVal {
+  extension [Self <: ClientApiAddon[?], StoryFnReturnType](x: Self & ClientApiAddon[StoryFnReturnType]) {
     
-    @scala.inline
-    def setApply(value: (StoryApi[StoryFnReturnType], js.Array[js.Any]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (StoryApi[StoryFnReturnType], js.Array[js.Any]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
   }
 }

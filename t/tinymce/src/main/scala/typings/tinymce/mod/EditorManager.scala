@@ -59,6 +59,5 @@ trait EditorManager extends Observable {
 }
 object EditorManager {
   
-  @scala.inline
-  def apply: EditorManager = ^.asInstanceOf[js.Dynamic].selectDynamic("EditorManager").asInstanceOf[EditorManager]
+  inline def apply: EditorManager = ^.asInstanceOf[js.Dynamic].selectDynamic("EditorManager").asInstanceOf[EditorManager]
 }

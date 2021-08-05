@@ -53,8 +53,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ConcentricLayoutOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     concentric: Degree => Double,
     fit: Boolean,
     height: Unit,
@@ -68,46 +67,32 @@ object ConcentricLayoutOptions {
     __obj.asInstanceOf[ConcentricLayoutOptions]
   }
   
-  @scala.inline
-  implicit class ConcentricLayoutOptionsMutableBuilder[Self <: ConcentricLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConcentricLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
+    inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
+    inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
     
-    @scala.inline
-    def setConcentric(value: Degree => Double): Self = StObject.set(x, "concentric", js.Any.fromFunction1(value))
+    inline def setConcentric(value: Degree => Double): Self = StObject.set(x, "concentric", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEquidistant(value: `false`): Self = StObject.set(x, "equidistant", value.asInstanceOf[js.Any])
+    inline def setEquidistant(value: `false`): Self = StObject.set(x, "equidistant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelWidth(value: MaxDegree => Double): Self = StObject.set(x, "levelWidth", js.Any.fromFunction1(value))
+    inline def setLevelWidth(value: MaxDegree => Double): Self = StObject.set(x, "levelWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinNodeSpacing(value: `10`): Self = StObject.set(x, "minNodeSpacing", value.asInstanceOf[js.Any])
+    inline def setMinNodeSpacing(value: `10`): Self = StObject.set(x, "minNodeSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: concentric): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: concentric): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingFactor(value: Unit): Self = StObject.set(x, "spacingFactor", value.asInstanceOf[js.Any])
+    inline def setSpacingFactor(value: Unit): Self = StObject.set(x, "spacingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSweep(value: Double): Self = StObject.set(x, "sweep", value.asInstanceOf[js.Any])
+    inline def setSweep(value: Double): Self = StObject.set(x, "sweep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSweepUndefined: Self = StObject.set(x, "sweep", js.undefined)
+    inline def setSweepUndefined: Self = StObject.set(x, "sweep", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Unit): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Unit): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

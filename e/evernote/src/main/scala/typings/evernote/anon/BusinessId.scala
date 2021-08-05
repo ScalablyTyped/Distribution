@@ -26,55 +26,39 @@ trait BusinessId extends StObject {
 }
 object BusinessId {
   
-  @scala.inline
-  def apply(): BusinessId = {
+  inline def apply(): BusinessId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BusinessId]
   }
   
-  @scala.inline
-  implicit class BusinessIdMutableBuilder[Self <: BusinessId] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessId](x: Self) {
     
-    @scala.inline
-    def setBusinessId(value: Double): Self = StObject.set(x, "businessId", value.asInstanceOf[js.Any])
+    inline def setBusinessId(value: Double): Self = StObject.set(x, "businessId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusinessIdUndefined: Self = StObject.set(x, "businessId", js.undefined)
+    inline def setBusinessIdUndefined: Self = StObject.set(x, "businessId", js.undefined)
     
-    @scala.inline
-    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFromWorkChat(value: Boolean): Self = StObject.set(x, "fromWorkChat", value.asInstanceOf[js.Any])
+    inline def setFromWorkChat(value: Boolean): Self = StObject.set(x, "fromWorkChat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromWorkChatUndefined: Self = StObject.set(x, "fromWorkChat", js.undefined)
+    inline def setFromWorkChatUndefined: Self = StObject.set(x, "fromWorkChat", js.undefined)
     
-    @scala.inline
-    def setRequesterId(value: UserID): Self = StObject.set(x, "requesterId", value.asInstanceOf[js.Any])
+    inline def setRequesterId(value: UserID): Self = StObject.set(x, "requesterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterIdUndefined: Self = StObject.set(x, "requesterId", js.undefined)
+    inline def setRequesterIdUndefined: Self = StObject.set(x, "requesterId", js.undefined)
     
-    @scala.inline
-    def setRole(value: BusinessUserRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: BusinessUserRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setStatus(value: BusinessInvitationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BusinessInvitationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

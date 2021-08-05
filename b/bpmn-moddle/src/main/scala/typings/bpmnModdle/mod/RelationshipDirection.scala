@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationshipDirection extends StObject
 object RelationshipDirection {
   
-  @scala.inline
-  def Backward: typings.bpmnModdle.bpmnModdleStrings.Backward = "Backward".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Backward]
+  inline def Backward: typings.bpmnModdle.bpmnModdleStrings.Backward = "Backward".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Backward]
   
-  @scala.inline
-  def Both: typings.bpmnModdle.bpmnModdleStrings.Both = "Both".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Both]
+  inline def Both: typings.bpmnModdle.bpmnModdleStrings.Both = "Both".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Both]
   
-  @scala.inline
-  def Forward: typings.bpmnModdle.bpmnModdleStrings.Forward = "Forward".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Forward]
+  inline def Forward: typings.bpmnModdle.bpmnModdleStrings.Forward = "Forward".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.Forward]
   
-  @scala.inline
-  def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
+  inline def None: typings.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typings.bpmnModdle.bpmnModdleStrings.None]
 }

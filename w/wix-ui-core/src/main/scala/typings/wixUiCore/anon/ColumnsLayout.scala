@@ -16,25 +16,19 @@ trait ColumnsLayout extends StObject {
 }
 object ColumnsLayout {
   
-  @scala.inline
-  def apply(columnsLayout: String, gridLayout: String, item: String, menu: String): ColumnsLayout = {
+  inline def apply(columnsLayout: String, gridLayout: String, item: String, menu: String): ColumnsLayout = {
     val __obj = js.Dynamic.literal(columnsLayout = columnsLayout.asInstanceOf[js.Any], gridLayout = gridLayout.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnsLayout]
   }
   
-  @scala.inline
-  implicit class ColumnsLayoutMutableBuilder[Self <: ColumnsLayout] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnsLayout](x: Self) {
     
-    @scala.inline
-    def setColumnsLayout(value: String): Self = StObject.set(x, "columnsLayout", value.asInstanceOf[js.Any])
+    inline def setColumnsLayout(value: String): Self = StObject.set(x, "columnsLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridLayout(value: String): Self = StObject.set(x, "gridLayout", value.asInstanceOf[js.Any])
+    inline def setGridLayout(value: String): Self = StObject.set(x, "gridLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
   }
 }

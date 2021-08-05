@@ -83,109 +83,75 @@ trait ReservedInstancesOffering extends StObject {
 }
 object ReservedInstancesOffering {
   
-  @scala.inline
-  def apply(): ReservedInstancesOffering = {
+  inline def apply(): ReservedInstancesOffering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedInstancesOffering]
   }
   
-  @scala.inline
-  implicit class ReservedInstancesOfferingMutableBuilder[Self <: ReservedInstancesOffering] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedInstancesOffering](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Long): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Long): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setFixedPrice(value: Float): Self = StObject.set(x, "FixedPrice", value.asInstanceOf[js.Any])
+    inline def setFixedPrice(value: Float): Self = StObject.set(x, "FixedPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedPriceUndefined: Self = StObject.set(x, "FixedPrice", js.undefined)
+    inline def setFixedPriceUndefined: Self = StObject.set(x, "FixedPrice", js.undefined)
     
-    @scala.inline
-    def setInstanceTenancy(value: Tenancy): Self = StObject.set(x, "InstanceTenancy", value.asInstanceOf[js.Any])
+    inline def setInstanceTenancy(value: Tenancy): Self = StObject.set(x, "InstanceTenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTenancyUndefined: Self = StObject.set(x, "InstanceTenancy", js.undefined)
+    inline def setInstanceTenancyUndefined: Self = StObject.set(x, "InstanceTenancy", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setMarketplace(value: Boolean): Self = StObject.set(x, "Marketplace", value.asInstanceOf[js.Any])
+    inline def setMarketplace(value: Boolean): Self = StObject.set(x, "Marketplace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarketplaceUndefined: Self = StObject.set(x, "Marketplace", js.undefined)
+    inline def setMarketplaceUndefined: Self = StObject.set(x, "Marketplace", js.undefined)
     
-    @scala.inline
-    def setOfferingClass(value: OfferingClassType): Self = StObject.set(x, "OfferingClass", value.asInstanceOf[js.Any])
+    inline def setOfferingClass(value: OfferingClassType): Self = StObject.set(x, "OfferingClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingClassUndefined: Self = StObject.set(x, "OfferingClass", js.undefined)
+    inline def setOfferingClassUndefined: Self = StObject.set(x, "OfferingClass", js.undefined)
     
-    @scala.inline
-    def setOfferingType(value: OfferingTypeValues): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
+    inline def setOfferingType(value: OfferingTypeValues): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
+    inline def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
     
-    @scala.inline
-    def setPricingDetails(value: PricingDetailsList): Self = StObject.set(x, "PricingDetails", value.asInstanceOf[js.Any])
+    inline def setPricingDetails(value: PricingDetailsList): Self = StObject.set(x, "PricingDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingDetailsUndefined: Self = StObject.set(x, "PricingDetails", js.undefined)
+    inline def setPricingDetailsUndefined: Self = StObject.set(x, "PricingDetails", js.undefined)
     
-    @scala.inline
-    def setPricingDetailsVarargs(value: PricingDetail*): Self = StObject.set(x, "PricingDetails", js.Array(value :_*))
+    inline def setPricingDetailsVarargs(value: PricingDetail*): Self = StObject.set(x, "PricingDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setProductDescription(value: RIProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
+    inline def setProductDescription(value: RIProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
+    inline def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
     
-    @scala.inline
-    def setRecurringCharges(value: RecurringChargesList): Self = StObject.set(x, "RecurringCharges", value.asInstanceOf[js.Any])
+    inline def setRecurringCharges(value: RecurringChargesList): Self = StObject.set(x, "RecurringCharges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
+    inline def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
     
-    @scala.inline
-    def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
     
-    @scala.inline
-    def setReservedInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedInstancesOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedInstancesOfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesOfferingIdUndefined: Self = StObject.set(x, "ReservedInstancesOfferingId", js.undefined)
+    inline def setReservedInstancesOfferingIdUndefined: Self = StObject.set(x, "ReservedInstancesOfferingId", js.undefined)
     
-    @scala.inline
-    def setScope(value: scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
     
-    @scala.inline
-    def setUsagePrice(value: Float): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
+    inline def setUsagePrice(value: Float): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePriceUndefined: Self = StObject.set(x, "UsagePrice", js.undefined)
+    inline def setUsagePriceUndefined: Self = StObject.set(x, "UsagePrice", js.undefined)
   }
 }

@@ -33,37 +33,27 @@ trait SubscribeInput extends StObject {
 }
 object SubscribeInput {
   
-  @scala.inline
-  def apply(Protocol: protocol, TopicArn: topicARN): SubscribeInput = {
+  inline def apply(Protocol: protocol, TopicArn: topicARN): SubscribeInput = {
     val __obj = js.Dynamic.literal(Protocol = Protocol.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeInput]
   }
   
-  @scala.inline
-  implicit class SubscribeInputMutableBuilder[Self <: SubscribeInput] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeInput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: SubscriptionAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: SubscriptionAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnSubscriptionArn(value: Boolean): Self = StObject.set(x, "ReturnSubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setReturnSubscriptionArn(value: Boolean): Self = StObject.set(x, "ReturnSubscriptionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnSubscriptionArnUndefined: Self = StObject.set(x, "ReturnSubscriptionArn", js.undefined)
+    inline def setReturnSubscriptionArnUndefined: Self = StObject.set(x, "ReturnSubscriptionArn", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

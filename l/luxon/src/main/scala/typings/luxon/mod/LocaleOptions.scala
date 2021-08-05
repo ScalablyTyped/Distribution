@@ -14,31 +14,23 @@ trait LocaleOptions extends StObject {
 }
 object LocaleOptions {
   
-  @scala.inline
-  def apply(): LocaleOptions = {
+  inline def apply(): LocaleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocaleOptions]
   }
   
-  @scala.inline
-  implicit class LocaleOptionsMutableBuilder[Self <: LocaleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleOptions](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+    inline def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
+    inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
     
-    @scala.inline
-    def setOutputCalendar(value: CalendarSystem): Self = StObject.set(x, "outputCalendar", value.asInstanceOf[js.Any])
+    inline def setOutputCalendar(value: CalendarSystem): Self = StObject.set(x, "outputCalendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputCalendarUndefined: Self = StObject.set(x, "outputCalendar", js.undefined)
+    inline def setOutputCalendarUndefined: Self = StObject.set(x, "outputCalendar", js.undefined)
   }
 }

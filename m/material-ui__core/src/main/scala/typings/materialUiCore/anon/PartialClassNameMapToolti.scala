@@ -25,61 +25,43 @@ trait PartialClassNameMapToolti extends StObject {
 }
 object PartialClassNameMapToolti {
   
-  @scala.inline
-  def apply(): PartialClassNameMapToolti = {
+  inline def apply(): PartialClassNameMapToolti = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapToolti]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTooltiMutableBuilder[Self <: PartialClassNameMapToolti] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapToolti](x: Self) {
     
-    @scala.inline
-    def setPopper(value: String): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: String): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopperInteractive(value: String): Self = StObject.set(x, "popperInteractive", value.asInstanceOf[js.Any])
+    inline def setPopperInteractive(value: String): Self = StObject.set(x, "popperInteractive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopperInteractiveUndefined: Self = StObject.set(x, "popperInteractive", js.undefined)
+    inline def setPopperInteractiveUndefined: Self = StObject.set(x, "popperInteractive", js.undefined)
     
-    @scala.inline
-    def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
+    inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPlacementBottom(value: String): Self = StObject.set(x, "tooltipPlacementBottom", value.asInstanceOf[js.Any])
+    inline def setTooltipPlacementBottom(value: String): Self = StObject.set(x, "tooltipPlacementBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPlacementBottomUndefined: Self = StObject.set(x, "tooltipPlacementBottom", js.undefined)
+    inline def setTooltipPlacementBottomUndefined: Self = StObject.set(x, "tooltipPlacementBottom", js.undefined)
     
-    @scala.inline
-    def setTooltipPlacementLeft(value: String): Self = StObject.set(x, "tooltipPlacementLeft", value.asInstanceOf[js.Any])
+    inline def setTooltipPlacementLeft(value: String): Self = StObject.set(x, "tooltipPlacementLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPlacementLeftUndefined: Self = StObject.set(x, "tooltipPlacementLeft", js.undefined)
+    inline def setTooltipPlacementLeftUndefined: Self = StObject.set(x, "tooltipPlacementLeft", js.undefined)
     
-    @scala.inline
-    def setTooltipPlacementRight(value: String): Self = StObject.set(x, "tooltipPlacementRight", value.asInstanceOf[js.Any])
+    inline def setTooltipPlacementRight(value: String): Self = StObject.set(x, "tooltipPlacementRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPlacementRightUndefined: Self = StObject.set(x, "tooltipPlacementRight", js.undefined)
+    inline def setTooltipPlacementRightUndefined: Self = StObject.set(x, "tooltipPlacementRight", js.undefined)
     
-    @scala.inline
-    def setTooltipPlacementTop(value: String): Self = StObject.set(x, "tooltipPlacementTop", value.asInstanceOf[js.Any])
+    inline def setTooltipPlacementTop(value: String): Self = StObject.set(x, "tooltipPlacementTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPlacementTopUndefined: Self = StObject.set(x, "tooltipPlacementTop", js.undefined)
+    inline def setTooltipPlacementTopUndefined: Self = StObject.set(x, "tooltipPlacementTop", js.undefined)
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setTouch(value: String): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: String): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+    inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
   }
 }

@@ -72,97 +72,67 @@ trait AssigningCategoryMarkerStyleEventUIParam extends StObject {
 }
 object AssigningCategoryMarkerStyleEventUIParam {
   
-  @scala.inline
-  def apply(): AssigningCategoryMarkerStyleEventUIParam = {
+  inline def apply(): AssigningCategoryMarkerStyleEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssigningCategoryMarkerStyleEventUIParam]
   }
   
-  @scala.inline
-  implicit class AssigningCategoryMarkerStyleEventUIParamMutableBuilder[Self <: AssigningCategoryMarkerStyleEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: AssigningCategoryMarkerStyleEventUIParam](x: Self) {
     
-    @scala.inline
-    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
-    @scala.inline
-    def setEndDate(value: js.Any): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Any): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setEndIndex(value: js.Any): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: js.Any): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
-    @scala.inline
-    def setFill(value: js.Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: js.Any): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setGetItems(value: js.Any): Self = StObject.set(x, "getItems", value.asInstanceOf[js.Any])
+    inline def setGetItems(value: js.Any): Self = StObject.set(x, "getItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
+    inline def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
-    @scala.inline
-    def setHasDateRange(value: js.Any): Self = StObject.set(x, "hasDateRange", value.asInstanceOf[js.Any])
+    inline def setHasDateRange(value: js.Any): Self = StObject.set(x, "hasDateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDateRangeUndefined: Self = StObject.set(x, "hasDateRange", js.undefined)
+    inline def setHasDateRangeUndefined: Self = StObject.set(x, "hasDateRange", js.undefined)
     
-    @scala.inline
-    def setHighlightingHandled(value: js.Any): Self = StObject.set(x, "highlightingHandled", value.asInstanceOf[js.Any])
+    inline def setHighlightingHandled(value: js.Any): Self = StObject.set(x, "highlightingHandled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightingHandledUndefined: Self = StObject.set(x, "highlightingHandled", js.undefined)
+    inline def setHighlightingHandledUndefined: Self = StObject.set(x, "highlightingHandled", js.undefined)
     
-    @scala.inline
-    def setMaxAllSeriesHighlightingProgress(value: js.Any): Self = StObject.set(x, "maxAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
+    inline def setMaxAllSeriesHighlightingProgress(value: js.Any): Self = StObject.set(x, "maxAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAllSeriesHighlightingProgressUndefined: Self = StObject.set(x, "maxAllSeriesHighlightingProgress", js.undefined)
+    inline def setMaxAllSeriesHighlightingProgressUndefined: Self = StObject.set(x, "maxAllSeriesHighlightingProgress", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: js.Any): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: js.Any): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: js.Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Any): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: js.Any): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: js.Any): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
-    @scala.inline
-    def setStroke(value: js.Any): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: js.Any): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setSumAllSeriesHighlightingProgress(value: js.Any): Self = StObject.set(x, "sumAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
+    inline def setSumAllSeriesHighlightingProgress(value: js.Any): Self = StObject.set(x, "sumAllSeriesHighlightingProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumAllSeriesHighlightingProgressUndefined: Self = StObject.set(x, "sumAllSeriesHighlightingProgress", js.undefined)
+    inline def setSumAllSeriesHighlightingProgressUndefined: Self = StObject.set(x, "sumAllSeriesHighlightingProgress", js.undefined)
   }
 }

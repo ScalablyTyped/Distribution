@@ -25,26 +25,20 @@ object codestarnotifications {
   }
   object NotificationRuleTarget {
     
-    @scala.inline
-    def apply(address: String, status: String): NotificationRuleTarget = {
+    inline def apply(address: String, status: String): NotificationRuleTarget = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationRuleTarget]
     }
     
-    @scala.inline
-    implicit class NotificationRuleTargetMutableBuilder[Self <: NotificationRuleTarget] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationRuleTarget](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

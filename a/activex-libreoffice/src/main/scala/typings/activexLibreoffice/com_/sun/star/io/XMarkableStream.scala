@@ -43,8 +43,7 @@ trait XMarkableStream
 }
 object XMarkableStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createMark: () => Double,
     deleteMark: Double => Unit,
@@ -58,22 +57,16 @@ object XMarkableStream {
     __obj.asInstanceOf[XMarkableStream]
   }
   
-  @scala.inline
-  implicit class XMarkableStreamMutableBuilder[Self <: XMarkableStream] (val x: Self) extends AnyVal {
+  extension [Self <: XMarkableStream](x: Self) {
     
-    @scala.inline
-    def setCreateMark(value: () => Double): Self = StObject.set(x, "createMark", js.Any.fromFunction0(value))
+    inline def setCreateMark(value: () => Double): Self = StObject.set(x, "createMark", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteMark(value: Double => Unit): Self = StObject.set(x, "deleteMark", js.Any.fromFunction1(value))
+    inline def setDeleteMark(value: Double => Unit): Self = StObject.set(x, "deleteMark", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJumpToFurthest(value: () => Unit): Self = StObject.set(x, "jumpToFurthest", js.Any.fromFunction0(value))
+    inline def setJumpToFurthest(value: () => Unit): Self = StObject.set(x, "jumpToFurthest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpToMark(value: Double => Unit): Self = StObject.set(x, "jumpToMark", js.Any.fromFunction1(value))
+    inline def setJumpToMark(value: Double => Unit): Self = StObject.set(x, "jumpToMark", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOffsetToMark(value: Double => Double): Self = StObject.set(x, "offsetToMark", js.Any.fromFunction1(value))
+    inline def setOffsetToMark(value: Double => Double): Self = StObject.set(x, "offsetToMark", js.Any.fromFunction1(value))
   }
 }

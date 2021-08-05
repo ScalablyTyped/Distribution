@@ -10,12 +10,9 @@ object flagsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isAutoDiscoveryCodeSignIdentity(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAutoDiscoveryCodeSignIdentity")().asInstanceOf[Boolean]
+  inline def isAutoDiscoveryCodeSignIdentity(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAutoDiscoveryCodeSignIdentity")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isBuildCacheEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuildCacheEnabled")().asInstanceOf[Boolean]
+  inline def isBuildCacheEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuildCacheEnabled")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isUseSystemSigncode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUseSystemSigncode")().asInstanceOf[Boolean]
+  inline def isUseSystemSigncode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUseSystemSigncode")().asInstanceOf[Boolean]
 }

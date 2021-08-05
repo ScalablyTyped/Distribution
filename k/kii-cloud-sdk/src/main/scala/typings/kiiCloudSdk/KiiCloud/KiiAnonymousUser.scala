@@ -20,16 +20,13 @@ trait KiiAnonymousUser
 }
 object KiiAnonymousUser {
   
-  @scala.inline
-  def apply(getID: () => String): KiiAnonymousUser = {
+  inline def apply(getID: () => String): KiiAnonymousUser = {
     val __obj = js.Dynamic.literal(getID = js.Any.fromFunction0(getID))
     __obj.asInstanceOf[KiiAnonymousUser]
   }
   
-  @scala.inline
-  implicit class KiiAnonymousUserMutableBuilder[Self <: KiiAnonymousUser] (val x: Self) extends AnyVal {
+  extension [Self <: KiiAnonymousUser](x: Self) {
     
-    @scala.inline
-    def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
+    inline def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
   }
 }

@@ -11,16 +11,13 @@ trait GitPathToItemsCollection extends StObject {
 }
 object GitPathToItemsCollection {
   
-  @scala.inline
-  def apply(items: StringDictionary[js.Array[GitItem]]): GitPathToItemsCollection = {
+  inline def apply(items: StringDictionary[js.Array[GitItem]]): GitPathToItemsCollection = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitPathToItemsCollection]
   }
   
-  @scala.inline
-  implicit class GitPathToItemsCollectionMutableBuilder[Self <: GitPathToItemsCollection] (val x: Self) extends AnyVal {
+  extension [Self <: GitPathToItemsCollection](x: Self) {
     
-    @scala.inline
-    def setItems(value: StringDictionary[js.Array[GitItem]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: StringDictionary[js.Array[GitItem]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

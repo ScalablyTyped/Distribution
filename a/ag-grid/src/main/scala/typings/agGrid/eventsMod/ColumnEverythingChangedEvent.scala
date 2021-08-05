@@ -14,17 +14,14 @@ trait ColumnEverythingChangedEvent
 }
 object ColumnEverythingChangedEvent {
   
-  @scala.inline
-  def apply(api: GridApi, columnApi: ColumnApi, source: String, `type`: String): ColumnEverythingChangedEvent = {
+  inline def apply(api: GridApi, columnApi: ColumnApi, source: String, `type`: String): ColumnEverythingChangedEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnEverythingChangedEvent]
   }
   
-  @scala.inline
-  implicit class ColumnEverythingChangedEventMutableBuilder[Self <: ColumnEverythingChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnEverythingChangedEvent](x: Self) {
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

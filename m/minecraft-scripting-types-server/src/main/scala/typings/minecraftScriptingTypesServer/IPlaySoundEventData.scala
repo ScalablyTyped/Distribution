@@ -35,25 +35,19 @@ trait IPlaySoundEventData extends StObject {
 }
 object IPlaySoundEventData {
   
-  @scala.inline
-  def apply(pitch: Double, position: VectorArray, sound: String, volume: Double): IPlaySoundEventData = {
+  inline def apply(pitch: Double, position: VectorArray, sound: String, volume: Double): IPlaySoundEventData = {
     val __obj = js.Dynamic.literal(pitch = pitch.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlaySoundEventData]
   }
   
-  @scala.inline
-  implicit class IPlaySoundEventDataMutableBuilder[Self <: IPlaySoundEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IPlaySoundEventData](x: Self) {
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: VectorArray): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: VectorArray): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

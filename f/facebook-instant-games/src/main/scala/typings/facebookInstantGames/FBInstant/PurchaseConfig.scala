@@ -21,22 +21,17 @@ trait PurchaseConfig extends StObject {
 }
 object PurchaseConfig {
   
-  @scala.inline
-  def apply(productID: String): PurchaseConfig = {
+  inline def apply(productID: String): PurchaseConfig = {
     val __obj = js.Dynamic.literal(productID = productID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseConfig]
   }
   
-  @scala.inline
-  implicit class PurchaseConfigMutableBuilder[Self <: PurchaseConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseConfig](x: Self) {
     
-    @scala.inline
-    def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
+    inline def setDeveloperPayload(value: String): Self = StObject.set(x, "developerPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
+    inline def setDeveloperPayloadUndefined: Self = StObject.set(x, "developerPayload", js.undefined)
     
-    @scala.inline
-    def setProductID(value: String): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
+    inline def setProductID(value: String): Self = StObject.set(x, "productID", value.asInstanceOf[js.Any])
   }
 }

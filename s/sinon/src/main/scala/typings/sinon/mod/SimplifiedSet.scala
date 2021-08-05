@@ -10,16 +10,13 @@ trait SimplifiedSet extends StObject {
 }
 object SimplifiedSet {
   
-  @scala.inline
-  def apply(has: js.Any => Boolean): SimplifiedSet = {
+  inline def apply(has: js.Any => Boolean): SimplifiedSet = {
     val __obj = js.Dynamic.literal(has = js.Any.fromFunction1(has))
     __obj.asInstanceOf[SimplifiedSet]
   }
   
-  @scala.inline
-  implicit class SimplifiedSetMutableBuilder[Self <: SimplifiedSet] (val x: Self) extends AnyVal {
+  extension [Self <: SimplifiedSet](x: Self) {
     
-    @scala.inline
-    def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
   }
 }

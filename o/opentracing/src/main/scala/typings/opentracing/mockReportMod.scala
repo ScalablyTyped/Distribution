@@ -18,16 +18,16 @@ object mockReportMod {
   class MockReport protected () extends StObject {
     def this(spans: js.Array[MockSpan]) = this()
     
-    var debugSpans: js.Any = js.native
+    /* private */ var debugSpans: js.Any = js.native
     
     def firstSpanWithTagValue(key: String, `val`: js.Any): MockSpan | Null = js.native
     
     var spans: js.Array[MockSpan] = js.native
     
-    var spansByTag: js.Any = js.native
+    /* private */ var spansByTag: js.Any = js.native
     
-    var spansByUUID: js.Any = js.native
+    /* private */ var spansByUUID: js.Any = js.native
     
-    var unfinishedSpans: js.Any = js.native
+    /* private */ var unfinishedSpans: js.Any = js.native
   }
 }

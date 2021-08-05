@@ -13,16 +13,13 @@ trait DisassociateVPCFromHostedZoneResponse extends StObject {
 }
 object DisassociateVPCFromHostedZoneResponse {
   
-  @scala.inline
-  def apply(ChangeInfo: ChangeInfo): DisassociateVPCFromHostedZoneResponse = {
+  inline def apply(ChangeInfo: ChangeInfo): DisassociateVPCFromHostedZoneResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateVPCFromHostedZoneResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateVPCFromHostedZoneResponseMutableBuilder[Self <: DisassociateVPCFromHostedZoneResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateVPCFromHostedZoneResponse](x: Self) {
     
-    @scala.inline
-    def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
+    inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }
 }

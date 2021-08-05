@@ -23,28 +23,21 @@ trait StartSoterAuthenticationSuccessCallbackResult extends StObject {
 }
 object StartSoterAuthenticationSuccessCallbackResult {
   
-  @scala.inline
-  def apply(authMode: String, errCode: Double, errMsg: String, resultJSON: String, resultJSONSignature: String): StartSoterAuthenticationSuccessCallbackResult = {
+  inline def apply(authMode: String, errCode: Double, errMsg: String, resultJSON: String, resultJSONSignature: String): StartSoterAuthenticationSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], resultJSON = resultJSON.asInstanceOf[js.Any], resultJSONSignature = resultJSONSignature.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSoterAuthenticationSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class StartSoterAuthenticationSuccessCallbackResultMutableBuilder[Self <: StartSoterAuthenticationSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartSoterAuthenticationSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAuthMode(value: String): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
+    inline def setAuthMode(value: String): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultJSON(value: String): Self = StObject.set(x, "resultJSON", value.asInstanceOf[js.Any])
+    inline def setResultJSON(value: String): Self = StObject.set(x, "resultJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultJSONSignature(value: String): Self = StObject.set(x, "resultJSONSignature", value.asInstanceOf[js.Any])
+    inline def setResultJSONSignature(value: String): Self = StObject.set(x, "resultJSONSignature", value.asInstanceOf[js.Any])
   }
 }

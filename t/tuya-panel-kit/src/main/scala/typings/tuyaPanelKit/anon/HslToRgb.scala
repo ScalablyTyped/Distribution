@@ -18,8 +18,7 @@ trait HslToRgb extends StObject {
 }
 object HslToRgb {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Bright2Opacity,
     hslToRgb: (Double, Double, Double) => G,
     hsvToRgb: (Double, Double, Double) => G,
@@ -30,22 +29,16 @@ object HslToRgb {
     __obj.asInstanceOf[HslToRgb]
   }
   
-  @scala.inline
-  implicit class HslToRgbMutableBuilder[Self <: HslToRgb] (val x: Self) extends AnyVal {
+  extension [Self <: HslToRgb](x: Self) {
     
-    @scala.inline
-    def setColor(value: Bright2Opacity): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Bright2Opacity): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHslToRgb(value: (Double, Double, Double) => G): Self = StObject.set(x, "hslToRgb", js.Any.fromFunction3(value))
+    inline def setHslToRgb(value: (Double, Double, Double) => G): Self = StObject.set(x, "hslToRgb", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHsvToRgb(value: (Double, Double, Double) => G): Self = StObject.set(x, "hsvToRgb", js.Any.fromFunction3(value))
+    inline def setHsvToRgb(value: (Double, Double, Double) => G): Self = StObject.set(x, "hsvToRgb", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRgbToHsl(value: (Double, Double, Double) => H): Self = StObject.set(x, "rgbToHsl", js.Any.fromFunction3(value))
+    inline def setRgbToHsl(value: (Double, Double, Double) => H): Self = StObject.set(x, "rgbToHsl", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRgbToHsv(value: (Double, Double, Double) => H): Self = StObject.set(x, "rgbToHsv", js.Any.fromFunction3(value))
+    inline def setRgbToHsv(value: (Double, Double, Double) => H): Self = StObject.set(x, "rgbToHsv", js.Any.fromFunction3(value))
   }
 }

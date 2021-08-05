@@ -21,26 +21,20 @@ trait FragmentLoadingCompletedEvent
 }
 object FragmentLoadingCompletedEvent {
   
-  @scala.inline
-  def apply(request: FragmentRequest, response: ArrayBuffer, sender: js.Object): FragmentLoadingCompletedEvent = {
+  inline def apply(request: FragmentRequest, response: ArrayBuffer, sender: js.Object): FragmentLoadingCompletedEvent = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fragmentLoadingCompleted")
     __obj.asInstanceOf[FragmentLoadingCompletedEvent]
   }
   
-  @scala.inline
-  implicit class FragmentLoadingCompletedEventMutableBuilder[Self <: FragmentLoadingCompletedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentLoadingCompletedEvent](x: Self) {
     
-    @scala.inline
-    def setRequest(value: FragmentRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: FragmentRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: ArrayBuffer): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: ArrayBuffer): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: js.Object): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: js.Object): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: fragmentLoadingCompleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: fragmentLoadingCompleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

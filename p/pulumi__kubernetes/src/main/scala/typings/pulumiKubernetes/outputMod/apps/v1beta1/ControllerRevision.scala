@@ -38,28 +38,21 @@ trait ControllerRevision extends StObject {
 }
 object ControllerRevision {
   
-  @scala.inline
-  def apply(data: js.Any, metadata: ObjectMeta, revision: Double): ControllerRevision = {
+  inline def apply(data: js.Any, metadata: ObjectMeta, revision: Double): ControllerRevision = {
     val __obj = js.Dynamic.literal(apiVersion = "apps/v1beta1", data = data.asInstanceOf[js.Any], kind = "ControllerRevision", metadata = metadata.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControllerRevision]
   }
   
-  @scala.inline
-  implicit class ControllerRevisionMutableBuilder[Self <: ControllerRevision] (val x: Self) extends AnyVal {
+  extension [Self <: ControllerRevision](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: appsSlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: appsSlashv1beta1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

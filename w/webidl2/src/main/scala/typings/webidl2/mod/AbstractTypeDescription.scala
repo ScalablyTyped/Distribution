@@ -17,8 +17,7 @@ trait AbstractTypeDescription
 }
 object AbstractTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     nullable: Boolean,
     parent: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription
@@ -28,14 +27,11 @@ object AbstractTypeDescription {
     __obj.asInstanceOf[AbstractTypeDescription]
   }
   
-  @scala.inline
-  implicit class AbstractTypeDescriptionMutableBuilder[Self <: AbstractTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractTypeDescription](x: Self) {
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(
+    inline def setParent(
       value: Argument | AttributeMemberType | CallbackType | ConstantMemberType | DeclarationMemberType | FieldType | OperationMemberType | TypedefType | UnionTypeDescription
     ): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }

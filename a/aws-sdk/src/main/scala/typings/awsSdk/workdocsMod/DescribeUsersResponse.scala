@@ -23,34 +23,25 @@ trait DescribeUsersResponse extends StObject {
 }
 object DescribeUsersResponse {
   
-  @scala.inline
-  def apply(): DescribeUsersResponse = {
+  inline def apply(): DescribeUsersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUsersResponse]
   }
   
-  @scala.inline
-  implicit class DescribeUsersResponseMutableBuilder[Self <: DescribeUsersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUsersResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTotalNumberOfUsers(value: SizeType): Self = StObject.set(x, "TotalNumberOfUsers", value.asInstanceOf[js.Any])
+    inline def setTotalNumberOfUsers(value: SizeType): Self = StObject.set(x, "TotalNumberOfUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalNumberOfUsersUndefined: Self = StObject.set(x, "TotalNumberOfUsers", js.undefined)
+    inline def setTotalNumberOfUsersUndefined: Self = StObject.set(x, "TotalNumberOfUsers", js.undefined)
     
-    @scala.inline
-    def setUsers(value: OrganizationUserList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: OrganizationUserList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

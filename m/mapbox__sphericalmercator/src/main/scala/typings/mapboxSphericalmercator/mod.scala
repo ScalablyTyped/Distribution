@@ -26,11 +26,9 @@ object mod {
   trait Projection extends StObject
   object Projection {
     
-    @scala.inline
-    def `900913`: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.`900913` = "900913".asInstanceOf[typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.`900913`]
+    inline def `900913`: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.`900913` = "900913".asInstanceOf[typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.`900913`]
     
-    @scala.inline
-    def WGS84: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.WGS84 = "WGS84".asInstanceOf[typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.WGS84]
+    inline def WGS84: typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.WGS84 = "WGS84".asInstanceOf[typings.mapboxSphericalmercator.mapboxSphericalmercatorStrings.WGS84]
   }
   
   @js.native
@@ -70,26 +68,20 @@ object mod {
   }
   object XYBounds {
     
-    @scala.inline
-    def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): XYBounds = {
+    inline def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): XYBounds = {
       val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
       __obj.asInstanceOf[XYBounds]
     }
     
-    @scala.inline
-    implicit class XYBoundsMutableBuilder[Self <: XYBounds] (val x: Self) extends AnyVal {
+    extension [Self <: XYBounds](x: Self) {
       
-      @scala.inline
-      def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+      inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+      inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+      inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     }
   }
   

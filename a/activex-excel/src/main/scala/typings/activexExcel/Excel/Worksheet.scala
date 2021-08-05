@@ -140,7 +140,7 @@ trait Worksheet
   
   def Evaluate(Name: String): js.Any = js.native
   
-  @JSName("Excel.Worksheet_typekey")
+  /* private */ @JSName("Excel.Worksheet_typekey")
   var ExcelDotWorksheet_typekey: Worksheet = js.native
   
   def ExportAsFixedFormat(

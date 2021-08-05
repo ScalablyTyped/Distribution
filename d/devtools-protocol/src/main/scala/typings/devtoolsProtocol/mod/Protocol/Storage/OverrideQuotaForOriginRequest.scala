@@ -24,22 +24,17 @@ trait OverrideQuotaForOriginRequest extends StObject {
 }
 object OverrideQuotaForOriginRequest {
   
-  @scala.inline
-  def apply(origin: String): OverrideQuotaForOriginRequest = {
+  inline def apply(origin: String): OverrideQuotaForOriginRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverrideQuotaForOriginRequest]
   }
   
-  @scala.inline
-  implicit class OverrideQuotaForOriginRequestMutableBuilder[Self <: OverrideQuotaForOriginRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OverrideQuotaForOriginRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaSize(value: Double): Self = StObject.set(x, "quotaSize", value.asInstanceOf[js.Any])
+    inline def setQuotaSize(value: Double): Self = StObject.set(x, "quotaSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaSizeUndefined: Self = StObject.set(x, "quotaSize", js.undefined)
+    inline def setQuotaSizeUndefined: Self = StObject.set(x, "quotaSize", js.undefined)
   }
 }

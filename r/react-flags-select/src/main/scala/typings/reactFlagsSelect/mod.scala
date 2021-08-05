@@ -44,101 +44,70 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setAlignOptions(value: String): Self = StObject.set(x, "alignOptions", value.asInstanceOf[js.Any])
+      inline def setAlignOptions(value: String): Self = StObject.set(x, "alignOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignOptionsUndefined: Self = StObject.set(x, "alignOptions", js.undefined)
+      inline def setAlignOptionsUndefined: Self = StObject.set(x, "alignOptions", js.undefined)
       
-      @scala.inline
-      def setBlackList(value: Boolean): Self = StObject.set(x, "blackList", value.asInstanceOf[js.Any])
+      inline def setBlackList(value: Boolean): Self = StObject.set(x, "blackList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackListUndefined: Self = StObject.set(x, "blackList", js.undefined)
+      inline def setBlackListUndefined: Self = StObject.set(x, "blackList", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+      inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
       
-      @scala.inline
-      def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomLabels(value: StringDictionary[String]): Self = StObject.set(x, "customLabels", value.asInstanceOf[js.Any])
+      inline def setCustomLabels(value: StringDictionary[String]): Self = StObject.set(x, "customLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomLabelsUndefined: Self = StObject.set(x, "customLabels", js.undefined)
+      inline def setCustomLabelsUndefined: Self = StObject.set(x, "customLabels", js.undefined)
       
-      @scala.inline
-      def setDefaultCountry(value: String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      inline def setDefaultCountry(value: String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* countryCode */ String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* countryCode */ String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOptionsSize(value: Double): Self = StObject.set(x, "optionsSize", value.asInstanceOf[js.Any])
+      inline def setOptionsSize(value: Double): Self = StObject.set(x, "optionsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsSizeUndefined: Self = StObject.set(x, "optionsSize", js.undefined)
+      inline def setOptionsSizeUndefined: Self = StObject.set(x, "optionsSize", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+      inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
       
-      @scala.inline
-      def setSelectedSize(value: Double): Self = StObject.set(x, "selectedSize", value.asInstanceOf[js.Any])
+      inline def setSelectedSize(value: Double): Self = StObject.set(x, "selectedSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedSizeUndefined: Self = StObject.set(x, "selectedSize", js.undefined)
+      inline def setSelectedSizeUndefined: Self = StObject.set(x, "selectedSize", js.undefined)
       
-      @scala.inline
-      def setShowOptionLabel(value: Boolean): Self = StObject.set(x, "showOptionLabel", value.asInstanceOf[js.Any])
+      inline def setShowOptionLabel(value: Boolean): Self = StObject.set(x, "showOptionLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowOptionLabelUndefined: Self = StObject.set(x, "showOptionLabel", js.undefined)
+      inline def setShowOptionLabelUndefined: Self = StObject.set(x, "showOptionLabel", js.undefined)
       
-      @scala.inline
-      def setShowSelectedLabel(value: Boolean): Self = StObject.set(x, "showSelectedLabel", value.asInstanceOf[js.Any])
+      inline def setShowSelectedLabel(value: Boolean): Self = StObject.set(x, "showSelectedLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSelectedLabelUndefined: Self = StObject.set(x, "showSelectedLabel", js.undefined)
+      inline def setShowSelectedLabelUndefined: Self = StObject.set(x, "showSelectedLabel", js.undefined)
     }
   }
   

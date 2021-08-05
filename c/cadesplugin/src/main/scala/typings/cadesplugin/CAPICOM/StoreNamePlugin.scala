@@ -11,16 +11,13 @@ trait StoreNamePlugin extends StObject {
 }
 object StoreNamePlugin {
   
-  @scala.inline
-  def apply(): StoreNamePlugin = {
+  inline def apply(): StoreNamePlugin = {
     val __obj = js.Dynamic.literal(CAPICOM_MY_STORE = "My")
     __obj.asInstanceOf[StoreNamePlugin]
   }
   
-  @scala.inline
-  implicit class StoreNamePluginMutableBuilder[Self <: StoreNamePlugin] (val x: Self) extends AnyVal {
+  extension [Self <: StoreNamePlugin](x: Self) {
     
-    @scala.inline
-    def setCAPICOM_MY_STORE(value: My): Self = StObject.set(x, "CAPICOM_MY_STORE", value.asInstanceOf[js.Any])
+    inline def setCAPICOM_MY_STORE(value: My): Self = StObject.set(x, "CAPICOM_MY_STORE", value.asInstanceOf[js.Any])
   }
 }

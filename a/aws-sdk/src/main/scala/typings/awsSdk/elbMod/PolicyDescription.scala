@@ -23,34 +23,25 @@ trait PolicyDescription extends StObject {
 }
 object PolicyDescription {
   
-  @scala.inline
-  def apply(): PolicyDescription = {
+  inline def apply(): PolicyDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyDescription]
   }
   
-  @scala.inline
-  implicit class PolicyDescriptionMutableBuilder[Self <: PolicyDescription] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyDescription](x: Self) {
     
-    @scala.inline
-    def setPolicyAttributeDescriptions(value: PolicyAttributeDescriptions): Self = StObject.set(x, "PolicyAttributeDescriptions", value.asInstanceOf[js.Any])
+    inline def setPolicyAttributeDescriptions(value: PolicyAttributeDescriptions): Self = StObject.set(x, "PolicyAttributeDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyAttributeDescriptionsUndefined: Self = StObject.set(x, "PolicyAttributeDescriptions", js.undefined)
+    inline def setPolicyAttributeDescriptionsUndefined: Self = StObject.set(x, "PolicyAttributeDescriptions", js.undefined)
     
-    @scala.inline
-    def setPolicyAttributeDescriptionsVarargs(value: PolicyAttributeDescription*): Self = StObject.set(x, "PolicyAttributeDescriptions", js.Array(value :_*))
+    inline def setPolicyAttributeDescriptionsVarargs(value: PolicyAttributeDescription*): Self = StObject.set(x, "PolicyAttributeDescriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
     
-    @scala.inline
-    def setPolicyTypeName(value: PolicyTypeName): Self = StObject.set(x, "PolicyTypeName", value.asInstanceOf[js.Any])
+    inline def setPolicyTypeName(value: PolicyTypeName): Self = StObject.set(x, "PolicyTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypeNameUndefined: Self = StObject.set(x, "PolicyTypeName", js.undefined)
+    inline def setPolicyTypeNameUndefined: Self = StObject.set(x, "PolicyTypeName", js.undefined)
   }
 }

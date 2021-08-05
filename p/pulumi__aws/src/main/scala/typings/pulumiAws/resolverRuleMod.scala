@@ -90,21 +90,16 @@ object resolverRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResolverRuleState): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResolverRuleState, opts: CustomResourceOptions): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
+    inline def get(name: String, id: Input[ID]): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
+    inline def get(name: String, id: Input[ID], state: ResolverRuleState): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
+    inline def get(name: String, id: Input[ID], state: ResolverRuleState, opts: CustomResourceOptions): ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverRule]
     
     /**
       * Returns true if the given object is an instance of ResolverRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean]
   }
   
   trait ResolverRuleArgs extends StObject {
@@ -143,47 +138,34 @@ object resolverRuleMod {
   }
   object ResolverRuleArgs {
     
-    @scala.inline
-    def apply(domainName: Input[String], ruleType: Input[String]): ResolverRuleArgs = {
+    inline def apply(domainName: Input[String], ruleType: Input[String]): ResolverRuleArgs = {
       val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], ruleType = ruleType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolverRuleArgs]
     }
     
-    @scala.inline
-    implicit class ResolverRuleArgsMutableBuilder[Self <: ResolverRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverRuleArgs](x: Self) {
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setResolverEndpointId(value: Input[String]): Self = StObject.set(x, "resolverEndpointId", value.asInstanceOf[js.Any])
+      inline def setResolverEndpointId(value: Input[String]): Self = StObject.set(x, "resolverEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolverEndpointIdUndefined: Self = StObject.set(x, "resolverEndpointId", js.undefined)
+      inline def setResolverEndpointIdUndefined: Self = StObject.set(x, "resolverEndpointId", js.undefined)
       
-      @scala.inline
-      def setRuleType(value: Input[String]): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
+      inline def setRuleType(value: Input[String]): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetIps(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]]]): Self = StObject.set(x, "targetIps", value.asInstanceOf[js.Any])
+      inline def setTargetIps(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]]]): Self = StObject.set(x, "targetIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIpsUndefined: Self = StObject.set(x, "targetIps", js.undefined)
+      inline def setTargetIpsUndefined: Self = StObject.set(x, "targetIps", js.undefined)
       
-      @scala.inline
-      def setTargetIpsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]*): Self = StObject.set(x, "targetIps", js.Array(value :_*))
+      inline def setTargetIpsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]*): Self = StObject.set(x, "targetIps", js.Array(value :_*))
     }
   }
   
@@ -239,71 +221,50 @@ object resolverRuleMod {
   }
   object ResolverRuleState {
     
-    @scala.inline
-    def apply(): ResolverRuleState = {
+    inline def apply(): ResolverRuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolverRuleState]
     }
     
-    @scala.inline
-    implicit class ResolverRuleStateMutableBuilder[Self <: ResolverRuleState] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverRuleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: Input[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
       
-      @scala.inline
-      def setResolverEndpointId(value: Input[String]): Self = StObject.set(x, "resolverEndpointId", value.asInstanceOf[js.Any])
+      inline def setResolverEndpointId(value: Input[String]): Self = StObject.set(x, "resolverEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolverEndpointIdUndefined: Self = StObject.set(x, "resolverEndpointId", js.undefined)
+      inline def setResolverEndpointIdUndefined: Self = StObject.set(x, "resolverEndpointId", js.undefined)
       
-      @scala.inline
-      def setRuleType(value: Input[String]): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
+      inline def setRuleType(value: Input[String]): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleTypeUndefined: Self = StObject.set(x, "ruleType", js.undefined)
+      inline def setRuleTypeUndefined: Self = StObject.set(x, "ruleType", js.undefined)
       
-      @scala.inline
-      def setShareStatus(value: Input[String]): Self = StObject.set(x, "shareStatus", value.asInstanceOf[js.Any])
+      inline def setShareStatus(value: Input[String]): Self = StObject.set(x, "shareStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareStatusUndefined: Self = StObject.set(x, "shareStatus", js.undefined)
+      inline def setShareStatusUndefined: Self = StObject.set(x, "shareStatus", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetIps(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]]]): Self = StObject.set(x, "targetIps", value.asInstanceOf[js.Any])
+      inline def setTargetIps(value: Input[js.Array[Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]]]): Self = StObject.set(x, "targetIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIpsUndefined: Self = StObject.set(x, "targetIps", js.undefined)
+      inline def setTargetIpsUndefined: Self = StObject.set(x, "targetIps", js.undefined)
       
-      @scala.inline
-      def setTargetIpsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]*): Self = StObject.set(x, "targetIps", js.Array(value :_*))
+      inline def setTargetIpsVarargs(value: Input[typings.pulumiAws.inputMod.route53.ResolverRuleTargetIp]*): Self = StObject.set(x, "targetIps", js.Array(value :_*))
     }
   }
 }

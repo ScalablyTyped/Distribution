@@ -22,43 +22,31 @@ trait CryptoPricing extends StObject {
 }
 object CryptoPricing {
   
-  @scala.inline
-  def apply(): CryptoPricing = {
+  inline def apply(): CryptoPricing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CryptoPricing]
   }
   
-  @scala.inline
-  implicit class CryptoPricingMutableBuilder[Self <: CryptoPricing] (val x: Self) extends AnyVal {
+  extension [Self <: CryptoPricing](x: Self) {
     
-    @scala.inline
-    def setBitcoin(value: Price[CryptoCurrency]): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
+    inline def setBitcoin(value: Price[CryptoCurrency]): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitcoinUndefined: Self = StObject.set(x, "bitcoin", js.undefined)
+    inline def setBitcoinUndefined: Self = StObject.set(x, "bitcoin", js.undefined)
     
-    @scala.inline
-    def setBitcoincash(value: Price[CryptoCurrency]): Self = StObject.set(x, "bitcoincash", value.asInstanceOf[js.Any])
+    inline def setBitcoincash(value: Price[CryptoCurrency]): Self = StObject.set(x, "bitcoincash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitcoincashUndefined: Self = StObject.set(x, "bitcoincash", js.undefined)
+    inline def setBitcoincashUndefined: Self = StObject.set(x, "bitcoincash", js.undefined)
     
-    @scala.inline
-    def setEthereum(value: Price[CryptoCurrency]): Self = StObject.set(x, "ethereum", value.asInstanceOf[js.Any])
+    inline def setEthereum(value: Price[CryptoCurrency]): Self = StObject.set(x, "ethereum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEthereumUndefined: Self = StObject.set(x, "ethereum", js.undefined)
+    inline def setEthereumUndefined: Self = StObject.set(x, "ethereum", js.undefined)
     
-    @scala.inline
-    def setLitecoin(value: Price[CryptoCurrency]): Self = StObject.set(x, "litecoin", value.asInstanceOf[js.Any])
+    inline def setLitecoin(value: Price[CryptoCurrency]): Self = StObject.set(x, "litecoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLitecoinUndefined: Self = StObject.set(x, "litecoin", js.undefined)
+    inline def setLitecoinUndefined: Self = StObject.set(x, "litecoin", js.undefined)
     
-    @scala.inline
-    def setUsdc(value: Price[CryptoCurrency]): Self = StObject.set(x, "usdc", value.asInstanceOf[js.Any])
+    inline def setUsdc(value: Price[CryptoCurrency]): Self = StObject.set(x, "usdc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsdcUndefined: Self = StObject.set(x, "usdc", js.undefined)
+    inline def setUsdcUndefined: Self = StObject.set(x, "usdc", js.undefined)
   }
 }

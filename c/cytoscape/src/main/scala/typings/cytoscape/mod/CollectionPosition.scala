@@ -28,8 +28,7 @@ trait CollectionPosition extends StObject {
 }
 object CollectionPosition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingBox: BoundingBoxOptions => BoundingBox12 & BoundingBoxWH,
     boundingbox: BoundingBoxOptions => BoundingBox12 & BoundingBoxWH,
     renderedBoundingBox: BoundingBoxOptions => BoundingBox12 & BoundingBoxWH,
@@ -39,13 +38,10 @@ object CollectionPosition {
     __obj.asInstanceOf[CollectionPosition]
   }
   
-  @scala.inline
-  implicit class CollectionPositionMutableBuilder[Self <: CollectionPosition] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionPosition](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBoxOptions => BoundingBox12 & BoundingBoxWH): Self = StObject.set(x, "boundingBox", js.Any.fromFunction1(value))
+    inline def setBoundingBox(value: BoundingBoxOptions => BoundingBox12 & BoundingBoxWH): Self = StObject.set(x, "boundingBox", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderedBoundingBox(value: BoundingBoxOptions => BoundingBox12 & BoundingBoxWH): Self = StObject.set(x, "renderedBoundingBox", js.Any.fromFunction1(value))
+    inline def setRenderedBoundingBox(value: BoundingBoxOptions => BoundingBox12 & BoundingBoxWH): Self = StObject.set(x, "renderedBoundingBox", js.Any.fromFunction1(value))
   }
 }

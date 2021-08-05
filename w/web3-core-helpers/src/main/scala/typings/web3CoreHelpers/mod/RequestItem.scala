@@ -12,19 +12,15 @@ trait RequestItem extends StObject {
 }
 object RequestItem {
   
-  @scala.inline
-  def apply(callback: (js.Any, js.Any) => Unit, payload: JsonRpcPayload): RequestItem = {
+  inline def apply(callback: (js.Any, js.Any) => Unit, payload: JsonRpcPayload): RequestItem = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestItem]
   }
   
-  @scala.inline
-  implicit class RequestItemMutableBuilder[Self <: RequestItem] (val x: Self) extends AnyVal {
+  extension [Self <: RequestItem](x: Self) {
     
-    @scala.inline
-    def setCallback(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPayload(value: JsonRpcPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: JsonRpcPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

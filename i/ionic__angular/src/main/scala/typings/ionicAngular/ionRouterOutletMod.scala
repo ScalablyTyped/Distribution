@@ -61,16 +61,16 @@ object ionRouterOutletMod {
       parentOutlet: IonRouterOutlet
     ) = this()
     
-    var _activatedRoute: js.Any = js.native
+    /* private */ var _activatedRoute: js.Any = js.native
     
-    var _swipeGesture: js.Any = js.native
+    /* private */ var _swipeGesture: js.Any = js.native
     
     var activateEvents: EventEmitter[js.Any] = js.native
     
     def activateWith(activatedRoute: ActivatedRoute): Unit = js.native
     def activateWith(activatedRoute: ActivatedRoute, resolver: ComponentFactoryResolver): Unit = js.native
     
-    var activated: js.Any = js.native
+    /* private */ var activated: js.Any = js.native
     
     val activatedRoute: ActivatedRoute = js.native
     
@@ -100,15 +100,15 @@ object ionRouterOutletMod {
     
     val component: js.Object = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
     /**
       * Since the activated route can change over the life time of a component in an ion router outlet, we create
       * a proxy so that we can update the values over time as a user navigates back to components already in the stack.
       */
-    var createActivatedRouteProxy: js.Any = js.native
+    /* private */ var createActivatedRouteProxy: js.Any = js.native
     
-    @JSName("currentActivatedRoute$")
+    /* private */ @JSName("currentActivatedRoute$")
     var currentActivatedRoute$: js.Any = js.native
     
     def deactivate(): Unit = js.native
@@ -149,13 +149,13 @@ object ionRouterOutletMod {
     
     val isActivated: Boolean = js.native
     
-    var location: js.Any = js.native
+    /* private */ var location: js.Any = js.native
     
-    var name: js.Any = js.native
+    /* private */ var name: js.Any = js.native
     
     var nativeEl: HTMLIonRouterOutletElement = js.native
     
-    var navCtrl: js.Any = js.native
+    /* private */ var navCtrl: js.Any = js.native
     
     /**
       * A callback method that performs custom clean-up, invoked immediately
@@ -174,7 +174,7 @@ object ionRouterOutletMod {
     /* CompleteClass */
     override def ngOnInit(): Unit = js.native
     
-    var parentContexts: js.Any = js.native
+    /* private */ var parentContexts: js.Any = js.native
     
     val parentOutlet: js.UndefOr[IonRouterOutlet] = js.native
     
@@ -186,16 +186,16 @@ object ionRouterOutletMod {
     def pop(deep: Double, stackId: String): js.Promise[Boolean] = js.native
     def pop(deep: Unit, stackId: String): js.Promise[Boolean] = js.native
     
-    var proxyMap: js.Any = js.native
+    /* private */ var proxyMap: js.Any = js.native
     
     /**
       * Create a wrapped observable that will switch to the latest activated route matched by the given component
       */
-    var proxyObservable: js.Any = js.native
+    /* private */ var proxyObservable: js.Any = js.native
     
-    var resolver: js.Any = js.native
+    /* private */ var resolver: js.Any = js.native
     
-    var stackCtrl: js.Any = js.native
+    /* private */ var stackCtrl: js.Any = js.native
     
     var stackEvents: EventEmitter[js.Any] = js.native
     
@@ -206,6 +206,6 @@ object ionRouterOutletMod {
     /**
       * Updates the activated route proxy for the given component to the new incoming router state
       */
-    var updateActivatedRouteProxy: js.Any = js.native
+    /* private */ var updateActivatedRouteProxy: js.Any = js.native
   }
 }

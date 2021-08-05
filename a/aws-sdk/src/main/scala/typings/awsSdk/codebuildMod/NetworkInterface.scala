@@ -18,25 +18,19 @@ trait NetworkInterface extends StObject {
 }
 object NetworkInterface {
   
-  @scala.inline
-  def apply(): NetworkInterface = {
+  inline def apply(): NetworkInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkInterface]
   }
   
-  @scala.inline
-  implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterface](x: Self) {
     
-    @scala.inline
-    def setNetworkInterfaceId(value: NonEmptyString): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NonEmptyString): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
     
-    @scala.inline
-    def setSubnetId(value: NonEmptyString): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: NonEmptyString): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+    inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
   }
 }

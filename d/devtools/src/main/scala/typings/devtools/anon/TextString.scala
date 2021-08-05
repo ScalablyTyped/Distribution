@@ -10,16 +10,13 @@ trait TextString extends StObject {
 }
 object TextString {
   
-  @scala.inline
-  def apply(text: String): TextString = {
+  inline def apply(text: String): TextString = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextString]
   }
   
-  @scala.inline
-  implicit class TextStringMutableBuilder[Self <: TextString] (val x: Self) extends AnyVal {
+  extension [Self <: TextString](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

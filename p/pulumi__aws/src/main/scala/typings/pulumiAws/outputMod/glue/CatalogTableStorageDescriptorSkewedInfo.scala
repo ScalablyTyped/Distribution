@@ -24,37 +24,27 @@ trait CatalogTableStorageDescriptorSkewedInfo extends StObject {
 }
 object CatalogTableStorageDescriptorSkewedInfo {
   
-  @scala.inline
-  def apply(): CatalogTableStorageDescriptorSkewedInfo = {
+  inline def apply(): CatalogTableStorageDescriptorSkewedInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatalogTableStorageDescriptorSkewedInfo]
   }
   
-  @scala.inline
-  implicit class CatalogTableStorageDescriptorSkewedInfoMutableBuilder[Self <: CatalogTableStorageDescriptorSkewedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CatalogTableStorageDescriptorSkewedInfo](x: Self) {
     
-    @scala.inline
-    def setSkewedColumnNames(value: js.Array[String]): Self = StObject.set(x, "skewedColumnNames", value.asInstanceOf[js.Any])
+    inline def setSkewedColumnNames(value: js.Array[String]): Self = StObject.set(x, "skewedColumnNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewedColumnNamesUndefined: Self = StObject.set(x, "skewedColumnNames", js.undefined)
+    inline def setSkewedColumnNamesUndefined: Self = StObject.set(x, "skewedColumnNames", js.undefined)
     
-    @scala.inline
-    def setSkewedColumnNamesVarargs(value: String*): Self = StObject.set(x, "skewedColumnNames", js.Array(value :_*))
+    inline def setSkewedColumnNamesVarargs(value: String*): Self = StObject.set(x, "skewedColumnNames", js.Array(value :_*))
     
-    @scala.inline
-    def setSkewedColumnValueLocationMaps(value: StringDictionary[String]): Self = StObject.set(x, "skewedColumnValueLocationMaps", value.asInstanceOf[js.Any])
+    inline def setSkewedColumnValueLocationMaps(value: StringDictionary[String]): Self = StObject.set(x, "skewedColumnValueLocationMaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewedColumnValueLocationMapsUndefined: Self = StObject.set(x, "skewedColumnValueLocationMaps", js.undefined)
+    inline def setSkewedColumnValueLocationMapsUndefined: Self = StObject.set(x, "skewedColumnValueLocationMaps", js.undefined)
     
-    @scala.inline
-    def setSkewedColumnValues(value: js.Array[String]): Self = StObject.set(x, "skewedColumnValues", value.asInstanceOf[js.Any])
+    inline def setSkewedColumnValues(value: js.Array[String]): Self = StObject.set(x, "skewedColumnValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewedColumnValuesUndefined: Self = StObject.set(x, "skewedColumnValues", js.undefined)
+    inline def setSkewedColumnValuesUndefined: Self = StObject.set(x, "skewedColumnValues", js.undefined)
     
-    @scala.inline
-    def setSkewedColumnValuesVarargs(value: String*): Self = StObject.set(x, "skewedColumnValues", js.Array(value :_*))
+    inline def setSkewedColumnValuesVarargs(value: String*): Self = StObject.set(x, "skewedColumnValues", js.Array(value :_*))
   }
 }

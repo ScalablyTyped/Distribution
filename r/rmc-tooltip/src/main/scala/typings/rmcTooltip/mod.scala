@@ -22,26 +22,22 @@ object mod {
       @JSImport("rmc-tooltip", "default.defaultProps.arrowContent")
       @js.native
       def arrowContent: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-      @scala.inline
-      def arrowContent_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrowContent")(x.asInstanceOf[js.Any])
+      inline def arrowContent_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrowContent")(x.asInstanceOf[js.Any])
       
       @JSImport("rmc-tooltip", "default.defaultProps.destroyTooltipOnHide")
       @js.native
       def destroyTooltipOnHide: Boolean = js.native
-      @scala.inline
-      def destroyTooltipOnHide_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destroyTooltipOnHide")(x.asInstanceOf[js.Any])
+      inline def destroyTooltipOnHide_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("destroyTooltipOnHide")(x.asInstanceOf[js.Any])
       
       @JSImport("rmc-tooltip", "default.defaultProps.placement")
       @js.native
       def placement: String = js.native
-      @scala.inline
-      def placement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placement")(x.asInstanceOf[js.Any])
+      inline def placement_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placement")(x.asInstanceOf[js.Any])
       
       @JSImport("rmc-tooltip", "default.defaultProps.prefixCls")
       @js.native
       def prefixCls: String = js.native
-      @scala.inline
-      def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
+      inline def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
     }
   }
 }

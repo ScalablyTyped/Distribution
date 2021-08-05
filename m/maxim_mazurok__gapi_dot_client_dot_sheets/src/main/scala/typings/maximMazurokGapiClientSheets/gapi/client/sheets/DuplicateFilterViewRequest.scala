@@ -11,19 +11,15 @@ trait DuplicateFilterViewRequest extends StObject {
 }
 object DuplicateFilterViewRequest {
   
-  @scala.inline
-  def apply(): DuplicateFilterViewRequest = {
+  inline def apply(): DuplicateFilterViewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DuplicateFilterViewRequest]
   }
   
-  @scala.inline
-  implicit class DuplicateFilterViewRequestMutableBuilder[Self <: DuplicateFilterViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DuplicateFilterViewRequest](x: Self) {
     
-    @scala.inline
-    def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+    inline def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
+    inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
   }
 }

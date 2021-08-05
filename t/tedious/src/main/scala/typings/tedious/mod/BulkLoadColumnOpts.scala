@@ -16,22 +16,17 @@ trait BulkLoadColumnOpts
 }
 object BulkLoadColumnOpts {
   
-  @scala.inline
-  def apply(nullable: Boolean): BulkLoadColumnOpts = {
+  inline def apply(nullable: Boolean): BulkLoadColumnOpts = {
     val __obj = js.Dynamic.literal(nullable = nullable.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkLoadColumnOpts]
   }
   
-  @scala.inline
-  implicit class BulkLoadColumnOptsMutableBuilder[Self <: BulkLoadColumnOpts] (val x: Self) extends AnyVal {
+  extension [Self <: BulkLoadColumnOpts](x: Self) {
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjName(value: String): Self = StObject.set(x, "objName", value.asInstanceOf[js.Any])
+    inline def setObjName(value: String): Self = StObject.set(x, "objName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjNameUndefined: Self = StObject.set(x, "objName", js.undefined)
+    inline def setObjNameUndefined: Self = StObject.set(x, "objName", js.undefined)
   }
 }

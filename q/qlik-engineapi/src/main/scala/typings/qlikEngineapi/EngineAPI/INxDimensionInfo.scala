@@ -172,8 +172,7 @@ trait INxDimensionInfo extends StObject {
 }
 object INxDimensionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qApprMaxGlyphCount: Double,
     qAttrDimInfo: INxAttrDimInfo,
     qAttrExprInfo: INxAttrExprInfo,
@@ -200,97 +199,66 @@ object INxDimensionInfo {
     __obj.asInstanceOf[INxDimensionInfo]
   }
   
-  @scala.inline
-  implicit class INxDimensionInfoMutableBuilder[Self <: INxDimensionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: INxDimensionInfo](x: Self) {
     
-    @scala.inline
-    def setQApprMaxGlyphCount(value: Double): Self = StObject.set(x, "qApprMaxGlyphCount", value.asInstanceOf[js.Any])
+    inline def setQApprMaxGlyphCount(value: Double): Self = StObject.set(x, "qApprMaxGlyphCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrDimInfo(value: INxAttrDimInfo): Self = StObject.set(x, "qAttrDimInfo", value.asInstanceOf[js.Any])
+    inline def setQAttrDimInfo(value: INxAttrDimInfo): Self = StObject.set(x, "qAttrDimInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrExprInfo(value: INxAttrExprInfo): Self = StObject.set(x, "qAttrExprInfo", value.asInstanceOf[js.Any])
+    inline def setQAttrExprInfo(value: INxAttrExprInfo): Self = StObject.set(x, "qAttrExprInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
+    inline def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQContinuousAxes(value: Boolean): Self = StObject.set(x, "qContinuousAxes", value.asInstanceOf[js.Any])
+    inline def setQContinuousAxes(value: Boolean): Self = StObject.set(x, "qContinuousAxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDerivedField(value: Boolean): Self = StObject.set(x, "qDerivedField", value.asInstanceOf[js.Any])
+    inline def setQDerivedField(value: Boolean): Self = StObject.set(x, "qDerivedField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDimensionType(value: DimensionType): Self = StObject.set(x, "qDimensionType", value.asInstanceOf[js.Any])
+    inline def setQDimensionType(value: DimensionType): Self = StObject.set(x, "qDimensionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQError(value: INxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
+    inline def setQError(value: INxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
+    inline def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
     
-    @scala.inline
-    def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
+    inline def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupFallbackTitles(value: js.Array[String]): Self = StObject.set(x, "qGroupFallbackTitles", value.asInstanceOf[js.Any])
+    inline def setQGroupFallbackTitles(value: js.Array[String]): Self = StObject.set(x, "qGroupFallbackTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupFallbackTitlesVarargs(value: String*): Self = StObject.set(x, "qGroupFallbackTitles", js.Array(value :_*))
+    inline def setQGroupFallbackTitlesVarargs(value: String*): Self = StObject.set(x, "qGroupFallbackTitles", js.Array(value :_*))
     
-    @scala.inline
-    def setQGroupFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qGroupFieldDefs", value.asInstanceOf[js.Any])
+    inline def setQGroupFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qGroupFieldDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupFieldDefsVarargs(value: String*): Self = StObject.set(x, "qGroupFieldDefs", js.Array(value :_*))
+    inline def setQGroupFieldDefsVarargs(value: String*): Self = StObject.set(x, "qGroupFieldDefs", js.Array(value :_*))
     
-    @scala.inline
-    def setQGroupPos(value: Double): Self = StObject.set(x, "qGroupPos", value.asInstanceOf[js.Any])
+    inline def setQGroupPos(value: Double): Self = StObject.set(x, "qGroupPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
+    inline def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsAutoFormat(value: Boolean): Self = StObject.set(x, "qIsAutoFormat", value.asInstanceOf[js.Any])
+    inline def setQIsAutoFormat(value: Boolean): Self = StObject.set(x, "qIsAutoFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsCyclic(value: Boolean): Self = StObject.set(x, "qIsCyclic", value.asInstanceOf[js.Any])
+    inline def setQIsCyclic(value: Boolean): Self = StObject.set(x, "qIsCyclic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsSemantic(value: Boolean): Self = StObject.set(x, "qIsSemantic", value.asInstanceOf[js.Any])
+    inline def setQIsSemantic(value: Boolean): Self = StObject.set(x, "qIsSemantic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
+    inline def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
+    inline def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMin(value: Double): Self = StObject.set(x, "qMin", value.asInstanceOf[js.Any])
+    inline def setQMin(value: Double): Self = StObject.set(x, "qMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumFormat(value: FieldAttributesType): Self = StObject.set(x, "qNumFormat", value.asInstanceOf[js.Any])
+    inline def setQNumFormat(value: FieldAttributesType): Self = StObject.set(x, "qNumFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumFormatUndefined: Self = StObject.set(x, "qNumFormat", js.undefined)
+    inline def setQNumFormatUndefined: Self = StObject.set(x, "qNumFormat", js.undefined)
     
-    @scala.inline
-    def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
+    inline def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortIndicator(value: SortIndicatorType): Self = StObject.set(x, "qSortIndicator", value.asInstanceOf[js.Any])
+    inline def setQSortIndicator(value: SortIndicatorType): Self = StObject.set(x, "qSortIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortIndicatorUndefined: Self = StObject.set(x, "qSortIndicator", js.undefined)
+    inline def setQSortIndicatorUndefined: Self = StObject.set(x, "qSortIndicator", js.undefined)
     
-    @scala.inline
-    def setQStateCounts(value: INxStateCounts): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
+    inline def setQStateCounts(value: INxStateCounts): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

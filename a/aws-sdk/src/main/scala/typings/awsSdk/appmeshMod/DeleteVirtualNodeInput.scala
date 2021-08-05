@@ -23,25 +23,19 @@ trait DeleteVirtualNodeInput extends StObject {
 }
 object DeleteVirtualNodeInput {
   
-  @scala.inline
-  def apply(meshName: ResourceName, virtualNodeName: ResourceName): DeleteVirtualNodeInput = {
+  inline def apply(meshName: ResourceName, virtualNodeName: ResourceName): DeleteVirtualNodeInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], virtualNodeName = virtualNodeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualNodeInput]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualNodeInputMutableBuilder[Self <: DeleteVirtualNodeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualNodeInput](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
+    inline def setMeshOwner(value: AccountId): Self = StObject.set(x, "meshOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
+    inline def setMeshOwnerUndefined: Self = StObject.set(x, "meshOwner", js.undefined)
     
-    @scala.inline
-    def setVirtualNodeName(value: ResourceName): Self = StObject.set(x, "virtualNodeName", value.asInstanceOf[js.Any])
+    inline def setVirtualNodeName(value: ResourceName): Self = StObject.set(x, "virtualNodeName", value.asInstanceOf[js.Any])
   }
 }

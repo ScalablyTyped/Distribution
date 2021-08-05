@@ -28,34 +28,25 @@ trait QueryResponse extends StObject {
 }
 object QueryResponse {
   
-  @scala.inline
-  def apply(ColumnInfo: ColumnInfoList, QueryId: QueryId, Rows: RowList): QueryResponse = {
+  inline def apply(ColumnInfo: ColumnInfoList, QueryId: QueryId, Rows: RowList): QueryResponse = {
     val __obj = js.Dynamic.literal(ColumnInfo = ColumnInfo.asInstanceOf[js.Any], QueryId = QueryId.asInstanceOf[js.Any], Rows = Rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResponse]
   }
   
-  @scala.inline
-  implicit class QueryResponseMutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResponse](x: Self) {
     
-    @scala.inline
-    def setColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "ColumnInfo", value.asInstanceOf[js.Any])
+    inline def setColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "ColumnInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value :_*))
+    inline def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
+    inline def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: RowList): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: RowList): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value :_*))
   }
 }

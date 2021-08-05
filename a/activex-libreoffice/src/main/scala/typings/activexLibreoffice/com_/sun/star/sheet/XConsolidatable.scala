@@ -32,8 +32,7 @@ trait XConsolidatable
 }
 object XConsolidatable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     consolidate: XConsolidationDescriptor => Unit,
     createConsolidationDescriptor: Boolean => XConsolidationDescriptor,
@@ -44,13 +43,10 @@ object XConsolidatable {
     __obj.asInstanceOf[XConsolidatable]
   }
   
-  @scala.inline
-  implicit class XConsolidatableMutableBuilder[Self <: XConsolidatable] (val x: Self) extends AnyVal {
+  extension [Self <: XConsolidatable](x: Self) {
     
-    @scala.inline
-    def setConsolidate(value: XConsolidationDescriptor => Unit): Self = StObject.set(x, "consolidate", js.Any.fromFunction1(value))
+    inline def setConsolidate(value: XConsolidationDescriptor => Unit): Self = StObject.set(x, "consolidate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateConsolidationDescriptor(value: Boolean => XConsolidationDescriptor): Self = StObject.set(x, "createConsolidationDescriptor", js.Any.fromFunction1(value))
+    inline def setCreateConsolidationDescriptor(value: Boolean => XConsolidationDescriptor): Self = StObject.set(x, "createConsolidationDescriptor", js.Any.fromFunction1(value))
   }
 }

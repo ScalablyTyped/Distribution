@@ -28,37 +28,27 @@ trait DescribeDomainControllersRequest extends StObject {
 }
 object DescribeDomainControllersRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId): DescribeDomainControllersRequest = {
+  inline def apply(DirectoryId: DirectoryId): DescribeDomainControllersRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDomainControllersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDomainControllersRequestMutableBuilder[Self <: DescribeDomainControllersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDomainControllersRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainControllerIds(value: DomainControllerIds): Self = StObject.set(x, "DomainControllerIds", value.asInstanceOf[js.Any])
+    inline def setDomainControllerIds(value: DomainControllerIds): Self = StObject.set(x, "DomainControllerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainControllerIdsUndefined: Self = StObject.set(x, "DomainControllerIds", js.undefined)
+    inline def setDomainControllerIdsUndefined: Self = StObject.set(x, "DomainControllerIds", js.undefined)
     
-    @scala.inline
-    def setDomainControllerIdsVarargs(value: DomainControllerId*): Self = StObject.set(x, "DomainControllerIds", js.Array(value :_*))
+    inline def setDomainControllerIdsVarargs(value: DomainControllerId*): Self = StObject.set(x, "DomainControllerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait keyType extends StObject
 object keyType {
   
-  @scala.inline
-  def EC: typings.jose.joseStrings.EC = "EC".asInstanceOf[typings.jose.joseStrings.EC]
+  inline def EC: typings.jose.joseStrings.EC = "EC".asInstanceOf[typings.jose.joseStrings.EC]
   
-  @scala.inline
-  def OKP: typings.jose.joseStrings.OKP = "OKP".asInstanceOf[typings.jose.joseStrings.OKP]
+  inline def OKP: typings.jose.joseStrings.OKP = "OKP".asInstanceOf[typings.jose.joseStrings.OKP]
   
-  @scala.inline
-  def RSA: typings.jose.joseStrings.RSA = "RSA".asInstanceOf[typings.jose.joseStrings.RSA]
+  inline def RSA: typings.jose.joseStrings.RSA = "RSA".asInstanceOf[typings.jose.joseStrings.RSA]
   
-  @scala.inline
-  def oct: typings.jose.joseStrings.oct = "oct".asInstanceOf[typings.jose.joseStrings.oct]
+  inline def oct: typings.jose.joseStrings.oct = "oct".asInstanceOf[typings.jose.joseStrings.oct]
 }

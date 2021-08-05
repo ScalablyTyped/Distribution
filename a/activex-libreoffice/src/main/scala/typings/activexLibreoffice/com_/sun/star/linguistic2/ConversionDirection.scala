@@ -18,10 +18,8 @@ trait ConversionDirection extends StObject
 object ConversionDirection {
   
   /** the text to be looked for should match the left part of a dictionary entry. */
-  @scala.inline
-  def FROM_LEFT: `0` = 0.asInstanceOf[`0`]
+  inline def FROM_LEFT: `0` = 0.asInstanceOf[`0`]
   
   /** the text to be looked for should match the right part of a dictionary entry. */
-  @scala.inline
-  def FROM_RIGHT: `1` = 1.asInstanceOf[`1`]
+  inline def FROM_RIGHT: `1` = 1.asInstanceOf[`1`]
 }

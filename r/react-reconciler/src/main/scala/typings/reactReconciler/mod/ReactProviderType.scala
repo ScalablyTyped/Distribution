@@ -13,20 +13,16 @@ trait ReactProviderType[T] extends StObject {
 }
 object ReactProviderType {
   
-  @scala.inline
-  def apply[T](DollarDollartypeof: js.Symbol | Double, _context: ReactContext[T]): ReactProviderType[T] = {
+  inline def apply[T](DollarDollartypeof: js.Symbol | Double, _context: ReactContext[T]): ReactProviderType[T] = {
     val __obj = js.Dynamic.literal(_context = _context.asInstanceOf[js.Any])
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactProviderType[T]]
   }
   
-  @scala.inline
-  implicit class ReactProviderTypeMutableBuilder[Self <: ReactProviderType[?], T] (val x: Self & ReactProviderType[T]) extends AnyVal {
+  extension [Self <: ReactProviderType[?], T](x: Self & ReactProviderType[T]) {
     
-    @scala.inline
-    def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
+    inline def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_context(value: ReactContext[T]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
+    inline def set_context(value: ReactContext[T]): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
   }
 }

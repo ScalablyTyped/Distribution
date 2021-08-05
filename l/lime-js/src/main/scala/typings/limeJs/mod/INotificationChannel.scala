@@ -12,19 +12,15 @@ trait INotificationChannel extends StObject {
 }
 object INotificationChannel {
   
-  @scala.inline
-  def apply(onNotification: Notification => js.Any, sendNotification: Notification => Unit): INotificationChannel = {
+  inline def apply(onNotification: Notification => js.Any, sendNotification: Notification => Unit): INotificationChannel = {
     val __obj = js.Dynamic.literal(onNotification = js.Any.fromFunction1(onNotification), sendNotification = js.Any.fromFunction1(sendNotification))
     __obj.asInstanceOf[INotificationChannel]
   }
   
-  @scala.inline
-  implicit class INotificationChannelMutableBuilder[Self <: INotificationChannel] (val x: Self) extends AnyVal {
+  extension [Self <: INotificationChannel](x: Self) {
     
-    @scala.inline
-    def setOnNotification(value: Notification => js.Any): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
+    inline def setOnNotification(value: Notification => js.Any): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendNotification(value: Notification => Unit): Self = StObject.set(x, "sendNotification", js.Any.fromFunction1(value))
+    inline def setSendNotification(value: Notification => Unit): Self = StObject.set(x, "sendNotification", js.Any.fromFunction1(value))
   }
 }

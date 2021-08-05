@@ -15,22 +15,17 @@ trait FailureMessage extends StObject {
 }
 object FailureMessage {
   
-  @scala.inline
-  def apply(node: CallExpression): FailureMessage = {
+  inline def apply(node: CallExpression): FailureMessage = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], failureMessage = null)
     __obj.asInstanceOf[FailureMessage]
   }
   
-  @scala.inline
-  implicit class FailureMessageMutableBuilder[Self <: FailureMessage] (val x: Self) extends AnyVal {
+  extension [Self <: FailureMessage](x: Self) {
     
-    @scala.inline
-    def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
+    inline def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureMessageNull: Self = StObject.set(x, "failureMessage", null)
+    inline def setFailureMessageNull: Self = StObject.set(x, "failureMessage", null)
     
-    @scala.inline
-    def setNode(value: CallExpression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: CallExpression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

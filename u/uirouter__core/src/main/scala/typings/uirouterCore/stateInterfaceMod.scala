@@ -45,38 +45,28 @@ object stateInterfaceMod {
   }
   object HrefOptions {
     
-    @scala.inline
-    def apply(): HrefOptions = {
+    inline def apply(): HrefOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HrefOptions]
     }
     
-    @scala.inline
-    implicit class HrefOptionsMutableBuilder[Self <: HrefOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HrefOptions](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+      inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+      inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
       
-      @scala.inline
-      def setLossy(value: Boolean): Self = StObject.set(x, "lossy", value.asInstanceOf[js.Any])
+      inline def setLossy(value: Boolean): Self = StObject.set(x, "lossy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLossyUndefined: Self = StObject.set(x, "lossy", js.undefined)
+      inline def setLossyUndefined: Self = StObject.set(x, "lossy", js.undefined)
       
-      @scala.inline
-      def setRelative(value: StateOrName): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: StateOrName): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
+      inline def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
     }
   }
   
@@ -86,23 +76,18 @@ object stateInterfaceMod {
   }
   object LazyLoadResult {
     
-    @scala.inline
-    def apply(): LazyLoadResult = {
+    inline def apply(): LazyLoadResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LazyLoadResult]
     }
     
-    @scala.inline
-    implicit class LazyLoadResultMutableBuilder[Self <: LazyLoadResult] (val x: Self) extends AnyVal {
+    extension [Self <: LazyLoadResult](x: Self) {
       
-      @scala.inline
-      def setStates(value: js.Array[StateDeclaration]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      inline def setStates(value: js.Array[StateDeclaration]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+      inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
       
-      @scala.inline
-      def setStatesVarargs(value: StateDeclaration*): Self = StObject.set(x, "states", js.Array(value :_*))
+      inline def setStatesVarargs(value: StateDeclaration*): Self = StObject.set(x, "states", js.Array(value :_*))
     }
   }
   
@@ -714,124 +699,86 @@ object stateInterfaceMod {
   }
   object StateDeclaration {
     
-    @scala.inline
-    def apply(): StateDeclaration = {
+    inline def apply(): StateDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StateDeclaration]
     }
     
-    @scala.inline
-    implicit class StateDeclarationMutableBuilder[Self <: StateDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: StateDeclaration](x: Self) {
       
-      @scala.inline
-      def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
+      inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
+      inline def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDollarDollarstate(value: () => StateObject): Self = StObject.set(x, "$$state", js.Any.fromFunction0(value))
+      inline def setDollarDollarstate(value: () => StateObject): Self = StObject.set(x, "$$state", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDollarDollarstateUndefined: Self = StObject.set(x, "$$state", js.undefined)
+      inline def setDollarDollarstateUndefined: Self = StObject.set(x, "$$state", js.undefined)
       
-      @scala.inline
-      def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
+      inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
+      inline def setDynamicUndefined: Self = StObject.set(x, "dynamic", js.undefined)
       
-      @scala.inline
-      def setLazyLoad(value: (/* transition */ Transition, StateDeclaration) => js.Promise[LazyLoadResult]): Self = StObject.set(x, "lazyLoad", js.Any.fromFunction2(value))
+      inline def setLazyLoad(value: (/* transition */ Transition, StateDeclaration) => js.Promise[LazyLoadResult]): Self = StObject.set(x, "lazyLoad", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
+      inline def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnEnter(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = StObject.set(x, "onEnter", js.Any.fromFunction2(value))
+      inline def setOnEnter(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = StObject.set(x, "onEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnExit(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = StObject.set(x, "onExit", js.Any.fromFunction2(value))
+      inline def setOnExit(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = StObject.set(x, "onExit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+      inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      @scala.inline
-      def setOnRetain(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = StObject.set(x, "onRetain", js.Any.fromFunction2(value))
+      inline def setOnRetain(value: (/* transition */ Transition, /* state */ StateDeclaration) => HookResult): Self = StObject.set(x, "onRetain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
+      inline def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
       
-      @scala.inline
-      def setParams(value: StringDictionary[ParamDeclaration | js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[ParamDeclaration | js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParent(value: String | StateDeclaration): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String | StateDeclaration): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setRedirectTo(
+      inline def setRedirectTo(
         value: RedirectToResult | (js.Function1[/* transition */ Transition, js.Promise[RedirectToResult] | RedirectToResult])
       ): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectToFunction1(value: /* transition */ Transition => js.Promise[RedirectToResult] | RedirectToResult): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
+      inline def setRedirectToFunction1(value: /* transition */ Transition => js.Promise[RedirectToResult] | RedirectToResult): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
+      inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
-      @scala.inline
-      def setReloadOnSearch(value: Boolean): Self = StObject.set(x, "reloadOnSearch", value.asInstanceOf[js.Any])
+      inline def setReloadOnSearch(value: Boolean): Self = StObject.set(x, "reloadOnSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadOnSearchUndefined: Self = StObject.set(x, "reloadOnSearch", js.undefined)
+      inline def setReloadOnSearchUndefined: Self = StObject.set(x, "reloadOnSearch", js.undefined)
       
-      @scala.inline
-      def setResolve(value: js.Array[ResolveTypes] | StringDictionary[IInjectable]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: js.Array[ResolveTypes] | StringDictionary[IInjectable]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvePolicy(value: ResolvePolicy): Self = StObject.set(x, "resolvePolicy", value.asInstanceOf[js.Any])
+      inline def setResolvePolicy(value: ResolvePolicy): Self = StObject.set(x, "resolvePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvePolicyUndefined: Self = StObject.set(x, "resolvePolicy", js.undefined)
+      inline def setResolvePolicyUndefined: Self = StObject.set(x, "resolvePolicy", js.undefined)
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      @scala.inline
-      def setResolveVarargs(value: ResolveTypes*): Self = StObject.set(x, "resolve", js.Array(value :_*))
+      inline def setResolveVarargs(value: ResolveTypes*): Self = StObject.set(x, "resolve", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setViews(value: StringDictionary[ViewDeclaration]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: StringDictionary[ViewDeclaration]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
   }
   
@@ -852,29 +799,22 @@ object stateInterfaceMod {
   }
   object TargetStateDef {
     
-    @scala.inline
-    def apply(state: StateOrName): TargetStateDef = {
+    inline def apply(state: StateOrName): TargetStateDef = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TargetStateDef]
     }
     
-    @scala.inline
-    implicit class TargetStateDefMutableBuilder[Self <: TargetStateDef] (val x: Self) extends AnyVal {
+    extension [Self <: TargetStateDef](x: Self) {
       
-      @scala.inline
-      def setOptions(value: TransitionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: TransitionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setParams(value: RawParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: RawParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setState(value: StateOrName): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StateOrName): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -931,44 +871,32 @@ object stateInterfaceMod {
   }
   object ViewDeclaration {
     
-    @scala.inline
-    def apply(): ViewDeclaration = {
+    inline def apply(): ViewDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewDeclaration]
     }
     
-    @scala.inline
-    implicit class ViewDeclarationMutableBuilder[Self <: ViewDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: ViewDeclaration](x: Self) {
       
-      @scala.inline
-      def set$context(value: ViewContext): Self = StObject.set(x, "$context", value.asInstanceOf[js.Any])
+      inline def set$context(value: ViewContext): Self = StObject.set(x, "$context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$contextUndefined: Self = StObject.set(x, "$context", js.undefined)
+      inline def set$contextUndefined: Self = StObject.set(x, "$context", js.undefined)
       
-      @scala.inline
-      def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
+      inline def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$nameUndefined: Self = StObject.set(x, "$name", js.undefined)
+      inline def set$nameUndefined: Self = StObject.set(x, "$name", js.undefined)
       
-      @scala.inline
-      def set$type(value: String): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
+      inline def set$type(value: String): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
+      inline def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
       
-      @scala.inline
-      def set$uiViewContextAnchor(value: String): Self = StObject.set(x, "$uiViewContextAnchor", value.asInstanceOf[js.Any])
+      inline def set$uiViewContextAnchor(value: String): Self = StObject.set(x, "$uiViewContextAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$uiViewContextAnchorUndefined: Self = StObject.set(x, "$uiViewContextAnchor", js.undefined)
+      inline def set$uiViewContextAnchorUndefined: Self = StObject.set(x, "$uiViewContextAnchor", js.undefined)
       
-      @scala.inline
-      def set$uiViewName(value: String): Self = StObject.set(x, "$uiViewName", value.asInstanceOf[js.Any])
+      inline def set$uiViewName(value: String): Self = StObject.set(x, "$uiViewName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$uiViewNameUndefined: Self = StObject.set(x, "$uiViewName", js.undefined)
+      inline def set$uiViewNameUndefined: Self = StObject.set(x, "$uiViewName", js.undefined)
     }
   }
   

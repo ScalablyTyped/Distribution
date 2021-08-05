@@ -18,8 +18,7 @@ trait ParametersPullsCreateReviewEndpoint extends StObject {
 }
 object ParametersPullsCreateReviewEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: PullsCreateReviewEndpoint,
     request: PullsCreateReviewRequestOptions,
     response: OctokitResponse[PullsCreateReviewResponseData]
@@ -28,16 +27,12 @@ object ParametersPullsCreateReviewEndpoint {
     __obj.asInstanceOf[ParametersPullsCreateReviewEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersPullsCreateReviewEndpointMutableBuilder[Self <: ParametersPullsCreateReviewEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersPullsCreateReviewEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PullsCreateReviewEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PullsCreateReviewEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: PullsCreateReviewRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: PullsCreateReviewRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[PullsCreateReviewResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[PullsCreateReviewResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

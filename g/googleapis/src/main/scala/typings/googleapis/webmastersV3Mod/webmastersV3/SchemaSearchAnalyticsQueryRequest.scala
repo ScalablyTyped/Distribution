@@ -70,67 +70,47 @@ trait SchemaSearchAnalyticsQueryRequest extends StObject {
 }
 object SchemaSearchAnalyticsQueryRequest {
   
-  @scala.inline
-  def apply(): SchemaSearchAnalyticsQueryRequest = {
+  inline def apply(): SchemaSearchAnalyticsQueryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSearchAnalyticsQueryRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSearchAnalyticsQueryRequestMutableBuilder[Self <: SchemaSearchAnalyticsQueryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSearchAnalyticsQueryRequest](x: Self) {
     
-    @scala.inline
-    def setAggregationType(value: String): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
+    inline def setAggregationType(value: String): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
+    inline def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
     
-    @scala.inline
-    def setDimensionFilterGroups(value: js.Array[SchemaApiDimensionFilterGroup]): Self = StObject.set(x, "dimensionFilterGroups", value.asInstanceOf[js.Any])
+    inline def setDimensionFilterGroups(value: js.Array[SchemaApiDimensionFilterGroup]): Self = StObject.set(x, "dimensionFilterGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFilterGroupsUndefined: Self = StObject.set(x, "dimensionFilterGroups", js.undefined)
+    inline def setDimensionFilterGroupsUndefined: Self = StObject.set(x, "dimensionFilterGroups", js.undefined)
     
-    @scala.inline
-    def setDimensionFilterGroupsVarargs(value: SchemaApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value :_*))
+    inline def setDimensionFilterGroupsVarargs(value: SchemaApiDimensionFilterGroup*): Self = StObject.set(x, "dimensionFilterGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
+    inline def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
+    inline def setRowLimitUndefined: Self = StObject.set(x, "rowLimit", js.undefined)
     
-    @scala.inline
-    def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
+    inline def setSearchType(value: String): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
+    inline def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
+    inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
+    inline def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
   }
 }

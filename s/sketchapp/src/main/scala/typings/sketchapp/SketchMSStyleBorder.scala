@@ -25,8 +25,7 @@ trait SketchMSStyleBorder extends StObject {
 }
 object SketchMSStyleBorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: SketchMSColor,
     contextSettings: SketchMSGraphicsContextSettings,
     fillType: Double,
@@ -39,31 +38,22 @@ object SketchMSStyleBorder {
     __obj.asInstanceOf[SketchMSStyleBorder]
   }
   
-  @scala.inline
-  implicit class SketchMSStyleBorderMutableBuilder[Self <: SketchMSStyleBorder] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSStyleBorder](x: Self) {
     
-    @scala.inline
-    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
+    inline def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillType(value: Double): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
+    inline def setFillType(value: Double): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradient(value: SketchMSGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: SketchMSGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: styleBorder): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: styleBorder): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

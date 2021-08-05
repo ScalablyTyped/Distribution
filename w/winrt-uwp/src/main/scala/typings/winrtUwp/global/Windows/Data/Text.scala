@@ -224,8 +224,7 @@ object Text {
       * @return The supplementary Unicode character.
       */
     /* static member */
-    @scala.inline
-    def getCodepointFromSurrogatePair(highSurrogate: Double, lowSurrogate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getCodepointFromSurrogatePair")(highSurrogate.asInstanceOf[js.Any], lowSurrogate.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def getCodepointFromSurrogatePair(highSurrogate: Double, lowSurrogate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getCodepointFromSurrogatePair")(highSurrogate.asInstanceOf[js.Any], lowSurrogate.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Returns the UnicodeGeneralCategory of the specified Unicode character.
@@ -233,8 +232,7 @@ object Text {
       * @return The Unicode general category for codepoint.
       */
     /* static member */
-    @scala.inline
-    def getGeneralCategory(codepoint: Double): UnicodeGeneralCategory = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneralCategory")(codepoint.asInstanceOf[js.Any]).asInstanceOf[UnicodeGeneralCategory]
+    inline def getGeneralCategory(codepoint: Double): UnicodeGeneralCategory = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeneralCategory")(codepoint.asInstanceOf[js.Any]).asInstanceOf[UnicodeGeneralCategory]
     
     /**
       * Returns the UnicodeNumericType of the specified Unicode character.
@@ -242,16 +240,14 @@ object Text {
       * @return The Unicode numeric type for codepoint.
       */
     /* static member */
-    @scala.inline
-    def getNumericType(codepoint: Double): UnicodeNumericType = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumericType")(codepoint.asInstanceOf[js.Any]).asInstanceOf[UnicodeNumericType]
+    inline def getNumericType(codepoint: Double): UnicodeNumericType = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumericType")(codepoint.asInstanceOf[js.Any]).asInstanceOf[UnicodeNumericType]
     
     /**
       * Returns the high and low surrogate pair values for the specified supplementary Unicode character.
       * @param codepoint A Unicode character. This must be in the proper range: 0 <= codepoint <= 0x10FFFF.
       */
     /* static member */
-    @scala.inline
-    def getSurrogatePairFromCodepoint(codepoint: Double): HighSurrogate = ^.asInstanceOf[js.Dynamic].applyDynamic("getSurrogatePairFromCodepoint")(codepoint.asInstanceOf[js.Any]).asInstanceOf[HighSurrogate]
+    inline def getSurrogatePairFromCodepoint(codepoint: Double): HighSurrogate = ^.asInstanceOf[js.Dynamic].applyDynamic("getSurrogatePairFromCodepoint")(codepoint.asInstanceOf[js.Any]).asInstanceOf[HighSurrogate]
     
     /**
       * Determines if a specified Unicode character can be considered alphabetic.
@@ -259,8 +255,7 @@ object Text {
       * @return TRUE if codepoint is alphabetic; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isAlphabetic(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isAlphabetic(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered cased (uppercase, lowercase or titlecase).
@@ -268,8 +263,7 @@ object Text {
       * @return TRUE if codepoint is cased; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isCased(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCased")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isCased(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCased")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered the beginning of a grapheme.
@@ -277,8 +271,7 @@ object Text {
       * @return TRUE if codepoint is the beginning of a grapheme; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isGraphemeBase(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGraphemeBase")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isGraphemeBase(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGraphemeBase")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered to continue a previous grapheme.
@@ -286,8 +279,7 @@ object Text {
       * @return TRUE if codepoint continues the previous grapheme; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isGraphemeExtend(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGraphemeExtend")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isGraphemeExtend(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGraphemeExtend")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character is a high surrogate.
@@ -295,8 +287,7 @@ object Text {
       * @return TRUE if codepoint is a high surrogate; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isHighSurrogate(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHighSurrogate")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isHighSurrogate(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHighSurrogate")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered a continuation character of an identifier in programming.
@@ -304,8 +295,7 @@ object Text {
       * @return TRUE if codepoint is a continuation character of an identifier in programming; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isIdContinue(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdContinue")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isIdContinue(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdContinue")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered the start character of an identifier in programming.
@@ -313,8 +303,7 @@ object Text {
       * @return TRUE if codepoint is the start character of an identifier in programming; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isIdStart(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdStart")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isIdStart(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdStart")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character is a low surrogate.
@@ -322,8 +311,7 @@ object Text {
       * @return TRUE if codepoint is a low surrogate; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isLowSurrogate(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowSurrogate")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLowSurrogate(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowSurrogate")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered a lower case character.
@@ -331,8 +319,7 @@ object Text {
       * @return TRUE if codepoint is a lower case character; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isLowercase(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowercase")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLowercase(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowercase")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified codepoint is a non-character.
@@ -340,8 +327,7 @@ object Text {
       * @return TRUE if codepoint is a non-character; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isNoncharacter(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoncharacter")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNoncharacter(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoncharacter")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character is a supplementary character.
@@ -349,8 +335,7 @@ object Text {
       * @return TRUE if codepoint is a supplementary character; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isSupplementary(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupplementary")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSupplementary(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupplementary")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered an upper case character.
@@ -358,8 +343,7 @@ object Text {
       * @return TRUE if codepoint is an upper case character; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isUppercase(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUppercase")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isUppercase(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUppercase")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a specified Unicode character can be considered whitespace.
@@ -367,8 +351,7 @@ object Text {
       * @return TRUE if codepoint is whitespace; otherwise FALSE.
       */
     /* static member */
-    @scala.inline
-    def isWhitespace(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWhitespace")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isWhitespace(codepoint: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWhitespace")(codepoint.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /** Defines the Unicode general category of a character. */

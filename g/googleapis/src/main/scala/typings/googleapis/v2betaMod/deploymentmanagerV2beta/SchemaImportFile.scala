@@ -18,25 +18,19 @@ trait SchemaImportFile extends StObject {
 }
 object SchemaImportFile {
   
-  @scala.inline
-  def apply(): SchemaImportFile = {
+  inline def apply(): SchemaImportFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImportFile]
   }
   
-  @scala.inline
-  implicit class SchemaImportFileMutableBuilder[Self <: SchemaImportFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImportFile](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

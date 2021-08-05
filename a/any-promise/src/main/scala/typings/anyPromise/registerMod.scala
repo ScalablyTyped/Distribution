@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object registerMod {
   
-  @scala.inline
-  def apply(): Register = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Register]
-  @scala.inline
-  def apply(module: String): Register = ^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any]).asInstanceOf[Register]
-  @scala.inline
-  def apply(module: String, options: Options): Register = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Register]
-  @scala.inline
-  def apply(module: Unit, options: Options): Register = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Register]
+  inline def apply(): Register = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Register]
+  inline def apply(module: String): Register = ^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any]).asInstanceOf[Register]
+  inline def apply(module: String, options: Options): Register = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Register]
+  inline def apply(module: Unit, options: Options): Register = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Register]
   
   @JSImport("any-promise/register", JSImport.Namespace)
   @js.native
@@ -44,23 +40,18 @@ object registerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setPromise(
+      inline def setPromise(
         value: TypeofPromise & (Instantiable1[
               /* callback */ js.Function2[
                 /* resolve */ js.Function1[
@@ -76,8 +67,7 @@ object registerMod {
             ])
       ): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
     }
   }
   
@@ -101,8 +91,7 @@ object registerMod {
   }
   object Register {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Promise: TypeofPromise & (Instantiable1[
           /* callback */ js.Function2[
             /* resolve */ js.Function1[
@@ -122,14 +111,11 @@ object registerMod {
       __obj.asInstanceOf[Register]
     }
     
-    @scala.inline
-    implicit class RegisterMutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
+    extension [Self <: Register](x: Self) {
       
-      @scala.inline
-      def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+      inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(
+      inline def setPromise(
         value: TypeofPromise & (Instantiable1[
               /* callback */ js.Function2[
                 /* resolve */ js.Function1[

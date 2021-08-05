@@ -65,21 +65,16 @@ object authorizationRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AuthorizationRuleState): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AuthorizationRuleState, opts: CustomResourceOptions): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
+    inline def get(name: String, id: Input[ID]): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
+    inline def get(name: String, id: Input[ID], state: AuthorizationRuleState): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
+    inline def get(name: String, id: Input[ID], state: AuthorizationRuleState, opts: CustomResourceOptions): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
     
     /**
       * Returns true if the given object is an instance of AuthorizationRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean]
   }
   
   trait AuthorizationRuleArgs extends StObject {
@@ -111,38 +106,28 @@ object authorizationRuleMod {
   }
   object AuthorizationRuleArgs {
     
-    @scala.inline
-    def apply(clientVpnEndpointId: Input[String], targetNetworkCidr: Input[String]): AuthorizationRuleArgs = {
+    inline def apply(clientVpnEndpointId: Input[String], targetNetworkCidr: Input[String]): AuthorizationRuleArgs = {
       val __obj = js.Dynamic.literal(clientVpnEndpointId = clientVpnEndpointId.asInstanceOf[js.Any], targetNetworkCidr = targetNetworkCidr.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizationRuleArgs]
     }
     
-    @scala.inline
-    implicit class AuthorizationRuleArgsMutableBuilder[Self <: AuthorizationRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationRuleArgs](x: Self) {
       
-      @scala.inline
-      def setAccessGroupId(value: Input[String]): Self = StObject.set(x, "accessGroupId", value.asInstanceOf[js.Any])
+      inline def setAccessGroupId(value: Input[String]): Self = StObject.set(x, "accessGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessGroupIdUndefined: Self = StObject.set(x, "accessGroupId", js.undefined)
+      inline def setAccessGroupIdUndefined: Self = StObject.set(x, "accessGroupId", js.undefined)
       
-      @scala.inline
-      def setAuthorizeAllGroups(value: Input[Boolean]): Self = StObject.set(x, "authorizeAllGroups", value.asInstanceOf[js.Any])
+      inline def setAuthorizeAllGroups(value: Input[Boolean]): Self = StObject.set(x, "authorizeAllGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizeAllGroupsUndefined: Self = StObject.set(x, "authorizeAllGroups", js.undefined)
+      inline def setAuthorizeAllGroupsUndefined: Self = StObject.set(x, "authorizeAllGroups", js.undefined)
       
-      @scala.inline
-      def setClientVpnEndpointId(value: Input[String]): Self = StObject.set(x, "clientVpnEndpointId", value.asInstanceOf[js.Any])
+      inline def setClientVpnEndpointId(value: Input[String]): Self = StObject.set(x, "clientVpnEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setTargetNetworkCidr(value: Input[String]): Self = StObject.set(x, "targetNetworkCidr", value.asInstanceOf[js.Any])
+      inline def setTargetNetworkCidr(value: Input[String]): Self = StObject.set(x, "targetNetworkCidr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,44 +160,32 @@ object authorizationRuleMod {
   }
   object AuthorizationRuleState {
     
-    @scala.inline
-    def apply(): AuthorizationRuleState = {
+    inline def apply(): AuthorizationRuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthorizationRuleState]
     }
     
-    @scala.inline
-    implicit class AuthorizationRuleStateMutableBuilder[Self <: AuthorizationRuleState] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationRuleState](x: Self) {
       
-      @scala.inline
-      def setAccessGroupId(value: Input[String]): Self = StObject.set(x, "accessGroupId", value.asInstanceOf[js.Any])
+      inline def setAccessGroupId(value: Input[String]): Self = StObject.set(x, "accessGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessGroupIdUndefined: Self = StObject.set(x, "accessGroupId", js.undefined)
+      inline def setAccessGroupIdUndefined: Self = StObject.set(x, "accessGroupId", js.undefined)
       
-      @scala.inline
-      def setAuthorizeAllGroups(value: Input[Boolean]): Self = StObject.set(x, "authorizeAllGroups", value.asInstanceOf[js.Any])
+      inline def setAuthorizeAllGroups(value: Input[Boolean]): Self = StObject.set(x, "authorizeAllGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizeAllGroupsUndefined: Self = StObject.set(x, "authorizeAllGroups", js.undefined)
+      inline def setAuthorizeAllGroupsUndefined: Self = StObject.set(x, "authorizeAllGroups", js.undefined)
       
-      @scala.inline
-      def setClientVpnEndpointId(value: Input[String]): Self = StObject.set(x, "clientVpnEndpointId", value.asInstanceOf[js.Any])
+      inline def setClientVpnEndpointId(value: Input[String]): Self = StObject.set(x, "clientVpnEndpointId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "clientVpnEndpointId", js.undefined)
+      inline def setClientVpnEndpointIdUndefined: Self = StObject.set(x, "clientVpnEndpointId", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setTargetNetworkCidr(value: Input[String]): Self = StObject.set(x, "targetNetworkCidr", value.asInstanceOf[js.Any])
+      inline def setTargetNetworkCidr(value: Input[String]): Self = StObject.set(x, "targetNetworkCidr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNetworkCidrUndefined: Self = StObject.set(x, "targetNetworkCidr", js.undefined)
+      inline def setTargetNetworkCidrUndefined: Self = StObject.set(x, "targetNetworkCidr", js.undefined)
     }
   }
 }

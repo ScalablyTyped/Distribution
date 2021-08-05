@@ -13,25 +13,19 @@ trait MaxTimeMSSession extends StObject {
 }
 object MaxTimeMSSession {
   
-  @scala.inline
-  def apply(): MaxTimeMSSession = {
+  inline def apply(): MaxTimeMSSession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxTimeMSSession]
   }
   
-  @scala.inline
-  implicit class MaxTimeMSSessionMutableBuilder[Self <: MaxTimeMSSession] (val x: Self) extends AnyVal {
+  extension [Self <: MaxTimeMSSession](x: Self) {
     
-    @scala.inline
-    def setMaxTimeMS(value: Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxTimeMS(value: Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
+    inline def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

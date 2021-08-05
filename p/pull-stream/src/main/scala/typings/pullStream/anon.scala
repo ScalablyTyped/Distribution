@@ -12,17 +12,14 @@ object anon {
   }
   object Last {
     
-    @scala.inline
-    def apply(last: Boolean): Last = {
+    inline def apply(last: Boolean): Last = {
       val __obj = js.Dynamic.literal(last = last.asInstanceOf[js.Any])
       __obj.asInstanceOf[Last]
     }
     
-    @scala.inline
-    implicit class LastMutableBuilder[Self <: Last] (val x: Self) extends AnyVal {
+    extension [Self <: Last](x: Self) {
       
-      @scala.inline
-      def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     }
   }
 }

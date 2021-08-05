@@ -15,8 +15,7 @@ trait ParametersMigrationsListForAuthenticatedUserEndpoint extends StObject {
 }
 object ParametersMigrationsListForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsListForAuthenticatedUserEndpoint,
     response: OctokitResponse[MigrationsListForAuthenticatedUserResponseData]
   ): ParametersMigrationsListForAuthenticatedUserEndpoint = {
@@ -24,13 +23,10 @@ object ParametersMigrationsListForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersMigrationsListForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsListForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersMigrationsListForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsListForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsListForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsListForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

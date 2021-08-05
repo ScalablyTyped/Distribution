@@ -21,8 +21,7 @@ trait PadApi extends StObject {
 }
 object PadApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputId: js.Any,
     padApi: js.Any,
     setInputId: String => Unit,
@@ -34,25 +33,18 @@ object PadApi {
     __obj.asInstanceOf[PadApi]
   }
   
-  @scala.inline
-  implicit class PadApiMutableBuilder[Self <: PadApi] (val x: Self) extends AnyVal {
+  extension [Self <: PadApi](x: Self) {
     
-    @scala.inline
-    def setInputId(value: js.Any): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: js.Any): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadApi(value: js.Any): Self = StObject.set(x, "padApi", value.asInstanceOf[js.Any])
+    inline def setPadApi(value: js.Any): Self = StObject.set(x, "padApi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetInputId(value: String => Unit): Self = StObject.set(x, "setInputId", js.Any.fromFunction1(value))
+    inline def setSetInputId(value: String => Unit): Self = StObject.set(x, "setInputId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSignaturePadContext(value: SignaturePadApiContext => Unit): Self = StObject.set(x, "setSignaturePadContext", js.Any.fromFunction1(value))
+    inline def setSetSignaturePadContext(value: SignaturePadApiContext => Unit): Self = StObject.set(x, "setSignaturePadContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSignatureTitleId(value: String => Unit): Self = StObject.set(x, "setSignatureTitleId", js.Any.fromFunction1(value))
+    inline def setSetSignatureTitleId(value: String => Unit): Self = StObject.set(x, "setSignatureTitleId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitleId(value: js.Any): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
+    inline def setTitleId(value: js.Any): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait BeginValue extends StObject {
 }
 object BeginValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginValue: js.Any,
     delay: js.Any,
     duration: js.Any,
@@ -36,28 +35,20 @@ object BeginValue {
     __obj.asInstanceOf[BeginValue]
   }
   
-  @scala.inline
-  implicit class BeginValueMutableBuilder[Self <: BeginValue] (val x: Self) extends AnyVal {
+  extension [Self <: BeginValue](x: Self) {
     
-    @scala.inline
-    def setBeginValue(value: js.Any): Self = StObject.set(x, "beginValue", value.asInstanceOf[js.Any])
+    inline def setBeginValue(value: js.Any): Self = StObject.set(x, "beginValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: js.Any): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: js.Any): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(value: js.Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: js.Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndValue(value: js.Any): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    inline def setEndValue(value: js.Any): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEnd(value: js.Any): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    inline def setOnEnd(value: js.Any): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackBehavior(value: js.Any): Self = StObject.set(x, "stackBehavior", value.asInstanceOf[js.Any])
+    inline def setStackBehavior(value: js.Any): Self = StObject.set(x, "stackBehavior", value.asInstanceOf[js.Any])
   }
 }

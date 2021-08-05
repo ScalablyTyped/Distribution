@@ -20,34 +20,25 @@ trait Pass extends StObject {
 }
 object Pass {
   
-  @scala.inline
-  def apply(pass: js.Array[Hit], reject: js.Array[js.Any], review: js.Array[js.Any], spam: Double): Pass = {
+  inline def apply(pass: js.Array[Hit], reject: js.Array[js.Any], review: js.Array[js.Any], spam: Double): Pass = {
     val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any], reject = reject.asInstanceOf[js.Any], review = review.asInstanceOf[js.Any], spam = spam.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pass]
   }
   
-  @scala.inline
-  implicit class PassMutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
+  extension [Self <: Pass](x: Self) {
     
-    @scala.inline
-    def setPass(value: js.Array[Hit]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+    inline def setPass(value: js.Array[Hit]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassVarargs(value: Hit*): Self = StObject.set(x, "pass", js.Array(value :_*))
+    inline def setPassVarargs(value: Hit*): Self = StObject.set(x, "pass", js.Array(value :_*))
     
-    @scala.inline
-    def setReject(value: js.Array[js.Any]): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
+    inline def setReject(value: js.Array[js.Any]): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectVarargs(value: js.Any*): Self = StObject.set(x, "reject", js.Array(value :_*))
+    inline def setRejectVarargs(value: js.Any*): Self = StObject.set(x, "reject", js.Array(value :_*))
     
-    @scala.inline
-    def setReview(value: js.Array[js.Any]): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
+    inline def setReview(value: js.Array[js.Any]): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReviewVarargs(value: js.Any*): Self = StObject.set(x, "review", js.Array(value :_*))
+    inline def setReviewVarargs(value: js.Any*): Self = StObject.set(x, "review", js.Array(value :_*))
     
-    @scala.inline
-    def setSpam(value: Double): Self = StObject.set(x, "spam", value.asInstanceOf[js.Any])
+    inline def setSpam(value: Double): Self = StObject.set(x, "spam", value.asInstanceOf[js.Any])
   }
 }

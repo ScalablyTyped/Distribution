@@ -17,26 +17,20 @@ object anon {
   }
   object Base16Themes {
     
-    @scala.inline
-    def apply(): Base16Themes = {
+    inline def apply(): Base16Themes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Base16Themes]
     }
     
-    @scala.inline
-    implicit class Base16ThemesMutableBuilder[Self <: Base16Themes] (val x: Self) extends AnyVal {
+    extension [Self <: Base16Themes](x: Self) {
       
-      @scala.inline
-      def setBase16Themes(value: StringDictionary[Base16Theme]): Self = StObject.set(x, "base16Themes", value.asInstanceOf[js.Any])
+      inline def setBase16Themes(value: StringDictionary[Base16Theme]): Self = StObject.set(x, "base16Themes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase16ThemesUndefined: Self = StObject.set(x, "base16Themes", js.undefined)
+      inline def setBase16ThemesUndefined: Self = StObject.set(x, "base16Themes", js.undefined)
       
-      @scala.inline
-      def setDefaultBase16(value: Base16Theme): Self = StObject.set(x, "defaultBase16", value.asInstanceOf[js.Any])
+      inline def setDefaultBase16(value: Base16Theme): Self = StObject.set(x, "defaultBase16", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultBase16Undefined: Self = StObject.set(x, "defaultBase16", js.undefined)
+      inline def setDefaultBase16Undefined: Self = StObject.set(x, "defaultBase16", js.undefined)
     }
   }
   
@@ -49,26 +43,20 @@ object anon {
   }
   object PartialStyling {
     
-    @scala.inline
-    def apply(): PartialStyling = {
+    inline def apply(): PartialStyling = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialStyling]
     }
     
-    @scala.inline
-    implicit class PartialStylingMutableBuilder[Self <: PartialStyling] (val x: Self) extends AnyVal {
+    extension [Self <: PartialStyling](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Properties[String | Double]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Properties[String | Double]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

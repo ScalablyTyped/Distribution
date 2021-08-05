@@ -20,8 +20,7 @@ trait R3DependencyMetadataFacade extends StObject {
 }
 object R3DependencyMetadataFacade {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     host: Boolean,
     optional: Boolean,
     resolved: R3ResolvedDependencyType,
@@ -33,25 +32,18 @@ object R3DependencyMetadataFacade {
     __obj.asInstanceOf[R3DependencyMetadataFacade]
   }
   
-  @scala.inline
-  implicit class R3DependencyMetadataFacadeMutableBuilder[Self <: R3DependencyMetadataFacade] (val x: Self) extends AnyVal {
+  extension [Self <: R3DependencyMetadataFacade](x: Self) {
     
-    @scala.inline
-    def setHost(value: Boolean): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Boolean): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolved(value: R3ResolvedDependencyType): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+    inline def setResolved(value: R3ResolvedDependencyType): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipSelf(value: Boolean): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
+    inline def setSkipSelf(value: Boolean): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

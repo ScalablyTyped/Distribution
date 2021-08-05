@@ -33,40 +33,29 @@ trait JobReport extends StObject {
 }
 object JobReport {
   
-  @scala.inline
-  def apply(Enabled: Boolean): JobReport = {
+  inline def apply(Enabled: Boolean): JobReport = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobReport]
   }
   
-  @scala.inline
-  implicit class JobReportMutableBuilder[Self <: JobReport] (val x: Self) extends AnyVal {
+  extension [Self <: JobReport](x: Self) {
     
-    @scala.inline
-    def setBucket(value: S3BucketArnString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: S3BucketArnString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: JobReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: JobReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: ReportPrefixString): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: ReportPrefixString): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setReportScope(value: JobReportScope): Self = StObject.set(x, "ReportScope", value.asInstanceOf[js.Any])
+    inline def setReportScope(value: JobReportScope): Self = StObject.set(x, "ReportScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportScopeUndefined: Self = StObject.set(x, "ReportScope", js.undefined)
+    inline def setReportScopeUndefined: Self = StObject.set(x, "ReportScope", js.undefined)
   }
 }

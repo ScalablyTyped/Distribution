@@ -29,8 +29,7 @@ object anon {
   }
   object RecordKeynumber {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       block: Double,
       blockEmpty: Double,
       comment: Double,
@@ -45,35 +44,25 @@ object anon {
       __obj.asInstanceOf[RecordKeynumber]
     }
     
-    @scala.inline
-    implicit class RecordKeynumberMutableBuilder[Self <: RecordKeynumber] (val x: Self) extends AnyVal {
+    extension [Self <: RecordKeynumber](x: Self) {
       
-      @scala.inline
-      def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockEmpty(value: Double): Self = StObject.set(x, "blockEmpty", value.asInstanceOf[js.Any])
+      inline def setBlockEmpty(value: Double): Self = StObject.set(x, "blockEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Double): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmpty(value: Double): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: Double): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixed(value: Double): Self = StObject.set(x, "mixed", value.asInstanceOf[js.Any])
+      inline def setMixed(value: Double): Self = StObject.set(x, "mixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingle(value: Double): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      inline def setSingle(value: Double): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodo(value: Double): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
+      inline def setTodo(value: Double): Self = StObject.set(x, "todo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

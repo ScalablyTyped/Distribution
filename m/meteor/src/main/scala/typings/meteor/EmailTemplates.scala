@@ -20,8 +20,7 @@ trait EmailTemplates extends StObject {
 }
 object EmailTemplates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enrollAccount: EmailFields,
     from: String,
     resetPassword: EmailFields,
@@ -32,28 +31,20 @@ object EmailTemplates {
     __obj.asInstanceOf[EmailTemplates]
   }
   
-  @scala.inline
-  implicit class EmailTemplatesMutableBuilder[Self <: EmailTemplates] (val x: Self) extends AnyVal {
+  extension [Self <: EmailTemplates](x: Self) {
     
-    @scala.inline
-    def setEnrollAccount(value: EmailFields): Self = StObject.set(x, "enrollAccount", value.asInstanceOf[js.Any])
+    inline def setEnrollAccount(value: EmailFields): Self = StObject.set(x, "enrollAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Header): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Header): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setResetPassword(value: EmailFields): Self = StObject.set(x, "resetPassword", value.asInstanceOf[js.Any])
+    inline def setResetPassword(value: EmailFields): Self = StObject.set(x, "resetPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
+    inline def setSiteName(value: String): Self = StObject.set(x, "siteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyEmail(value: EmailFields): Self = StObject.set(x, "verifyEmail", value.asInstanceOf[js.Any])
+    inline def setVerifyEmail(value: EmailFields): Self = StObject.set(x, "verifyEmail", value.asInstanceOf[js.Any])
   }
 }

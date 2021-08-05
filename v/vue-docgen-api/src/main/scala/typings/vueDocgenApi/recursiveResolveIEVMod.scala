@@ -11,15 +11,13 @@ object recursiveResolveIEVMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     pathResolver: js.Function2[/* path */ String, /* originalDirNameOverride */ js.UndefOr[String], String | Null],
     varToFilePath: ImportedVariableSet,
     validExtends: js.Function1[/* fullFilePath */ String, Boolean]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathResolver.asInstanceOf[js.Any], varToFilePath.asInstanceOf[js.Any], validExtends.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def resolveIEV(
+  inline def resolveIEV(
     pathResolver: js.Function2[/* path */ String, /* originalDirNameOverride */ js.UndefOr[String], String | Null],
     varToFilePath: ImportedVariableSet,
     validExtends: js.Function1[/* fullFilePath */ String, Boolean]

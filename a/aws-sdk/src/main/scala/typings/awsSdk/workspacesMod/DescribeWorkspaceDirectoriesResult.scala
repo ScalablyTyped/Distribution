@@ -18,28 +18,21 @@ trait DescribeWorkspaceDirectoriesResult extends StObject {
 }
 object DescribeWorkspaceDirectoriesResult {
   
-  @scala.inline
-  def apply(): DescribeWorkspaceDirectoriesResult = {
+  inline def apply(): DescribeWorkspaceDirectoriesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspaceDirectoriesResult]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceDirectoriesResultMutableBuilder[Self <: DescribeWorkspaceDirectoriesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceDirectoriesResult](x: Self) {
     
-    @scala.inline
-    def setDirectories(value: DirectoryList): Self = StObject.set(x, "Directories", value.asInstanceOf[js.Any])
+    inline def setDirectories(value: DirectoryList): Self = StObject.set(x, "Directories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesUndefined: Self = StObject.set(x, "Directories", js.undefined)
+    inline def setDirectoriesUndefined: Self = StObject.set(x, "Directories", js.undefined)
     
-    @scala.inline
-    def setDirectoriesVarargs(value: WorkspaceDirectory*): Self = StObject.set(x, "Directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: WorkspaceDirectory*): Self = StObject.set(x, "Directories", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

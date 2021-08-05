@@ -36,70 +36,49 @@ trait LineDatasetConfig
 }
 object LineDatasetConfig {
   
-  @scala.inline
-  def apply(): LineDatasetConfig = {
+  inline def apply(): LineDatasetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineDatasetConfig]
   }
   
-  @scala.inline
-  implicit class LineDatasetConfigMutableBuilder[Self <: LineDatasetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LineDatasetConfig](x: Self) {
     
-    @scala.inline
-    def setCircleColor(value: Color): Self = StObject.set(x, "circleColor", value.asInstanceOf[js.Any])
+    inline def setCircleColor(value: Color): Self = StObject.set(x, "circleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleColorUndefined: Self = StObject.set(x, "circleColor", js.undefined)
+    inline def setCircleColorUndefined: Self = StObject.set(x, "circleColor", js.undefined)
     
-    @scala.inline
-    def setCircleColors(value: js.Array[Color]): Self = StObject.set(x, "circleColors", value.asInstanceOf[js.Any])
+    inline def setCircleColors(value: js.Array[Color]): Self = StObject.set(x, "circleColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleColorsUndefined: Self = StObject.set(x, "circleColors", js.undefined)
+    inline def setCircleColorsUndefined: Self = StObject.set(x, "circleColors", js.undefined)
     
-    @scala.inline
-    def setCircleColorsVarargs(value: Color*): Self = StObject.set(x, "circleColors", js.Array(value :_*))
+    inline def setCircleColorsVarargs(value: Color*): Self = StObject.set(x, "circleColors", js.Array(value :_*))
     
-    @scala.inline
-    def setCircleHoleColor(value: Color): Self = StObject.set(x, "circleHoleColor", value.asInstanceOf[js.Any])
+    inline def setCircleHoleColor(value: Color): Self = StObject.set(x, "circleHoleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleHoleColorUndefined: Self = StObject.set(x, "circleHoleColor", js.undefined)
+    inline def setCircleHoleColorUndefined: Self = StObject.set(x, "circleHoleColor", js.undefined)
     
-    @scala.inline
-    def setCircleRadius(value: Double): Self = StObject.set(x, "circleRadius", value.asInstanceOf[js.Any])
+    inline def setCircleRadius(value: Double): Self = StObject.set(x, "circleRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleRadiusUndefined: Self = StObject.set(x, "circleRadius", js.undefined)
+    inline def setCircleRadiusUndefined: Self = StObject.set(x, "circleRadius", js.undefined)
     
-    @scala.inline
-    def setDashedLine(value: Phase): Self = StObject.set(x, "dashedLine", value.asInstanceOf[js.Any])
+    inline def setDashedLine(value: Phase): Self = StObject.set(x, "dashedLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashedLineUndefined: Self = StObject.set(x, "dashedLine", js.undefined)
+    inline def setDashedLineUndefined: Self = StObject.set(x, "dashedLine", js.undefined)
     
-    @scala.inline
-    def setDrawCircleHole(value: Boolean): Self = StObject.set(x, "drawCircleHole", value.asInstanceOf[js.Any])
+    inline def setDrawCircleHole(value: Boolean): Self = StObject.set(x, "drawCircleHole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawCircleHoleUndefined: Self = StObject.set(x, "drawCircleHole", js.undefined)
+    inline def setDrawCircleHoleUndefined: Self = StObject.set(x, "drawCircleHole", js.undefined)
     
-    @scala.inline
-    def setDrawCircles(value: Boolean): Self = StObject.set(x, "drawCircles", value.asInstanceOf[js.Any])
+    inline def setDrawCircles(value: Boolean): Self = StObject.set(x, "drawCircles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawCirclesUndefined: Self = StObject.set(x, "drawCircles", js.undefined)
+    inline def setDrawCirclesUndefined: Self = StObject.set(x, "drawCircles", js.undefined)
     
-    @scala.inline
-    def setDrawCubicIntensity(value: Double): Self = StObject.set(x, "drawCubicIntensity", value.asInstanceOf[js.Any])
+    inline def setDrawCubicIntensity(value: Double): Self = StObject.set(x, "drawCubicIntensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawCubicIntensityUndefined: Self = StObject.set(x, "drawCubicIntensity", js.undefined)
+    inline def setDrawCubicIntensityUndefined: Self = StObject.set(x, "drawCubicIntensity", js.undefined)
     
-    @scala.inline
-    def setMode(value: LINEAR | STEPPED | CUBIC_BEZIER | HORIZONTAL_BEZIER): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: LINEAR | STEPPED | CUBIC_BEZIER | HORIZONTAL_BEZIER): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

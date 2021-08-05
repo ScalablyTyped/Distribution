@@ -33,8 +33,7 @@ object typesMod {
   }
   object EventListenerOptions {
     
-    @scala.inline
-    def apply[T /* <: EventTypes */](
+    inline def apply[T /* <: EventTypes */](
       listener: /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentEventMap[T] */ /* e */ js.Any => Unit,
       `type`: T
     ): EventListenerOptions[T] = {
@@ -43,34 +42,25 @@ object typesMod {
       __obj.asInstanceOf[EventListenerOptions[T]]
     }
     
-    @scala.inline
-    implicit class EventListenerOptionsMutableBuilder[Self <: EventListenerOptions[?], T /* <: EventTypes */] (val x: Self & EventListenerOptions[T]) extends AnyVal {
+    extension [Self <: EventListenerOptions[?], T /* <: EventTypes */](x: Self & EventListenerOptions[T]) {
       
-      @scala.inline
-      def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setListener(
+      inline def setListener(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.DocumentEventMap[T] */ /* e */ js.Any => Unit
       ): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRef(value: TargetRef): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+      inline def setTargetRef(value: TargetRef): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
+      inline def setTargetRefUndefined: Self = StObject.set(x, "targetRef", js.undefined)
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

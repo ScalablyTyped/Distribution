@@ -92,18 +92,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def AddEvent(htmlElement: HTMLElement, eventName: String, eventFunction: js.Function1[/* e */ Event, Unit]): Unit = (js.Dynamic.global.applyDynamic("AddEvent")(htmlElement.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AddEvent(htmlElement: HTMLElement, eventName: String, eventFunction: js.Function1[/* e */ Event, Unit]): Unit = (js.Dynamic.global.applyDynamic("AddEvent")(htmlElement.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Beautifies a number
     * @param val The number to beautify
     * @param floats The amount of decimals to show
     */
-  @scala.inline
-  def Beautify(`val`: Double): String = js.Dynamic.global.applyDynamic("Beautify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def Beautify(`val`: Double, floats: Double): String = (js.Dynamic.global.applyDynamic("Beautify")(`val`.asInstanceOf[js.Any], floats.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Beautify(`val`: Double): String = js.Dynamic.global.applyDynamic("Beautify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def Beautify(`val`: Double, floats: Double): String = (js.Dynamic.global.applyDynamic("Beautify")(`val`.asInstanceOf[js.Any], floats.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object Game {
     
@@ -187,65 +184,53 @@ object global {
     @JSGlobal("Game.AchievementsById")
     @js.native
     def AchievementsById: js.Array[typings.cookieclicker.Game.Achievement] = js.native
-    @scala.inline
-    def AchievementsById_=(x: js.Array[typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsById")(x.asInstanceOf[js.Any])
+    inline def AchievementsById_=(x: js.Array[typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsById")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AchievementsN")
     @js.native
     def AchievementsN: Double = js.native
-    @scala.inline
-    def AchievementsN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsN")(x.asInstanceOf[js.Any])
+    inline def AchievementsN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AchievementsOwned")
     @js.native
     def AchievementsOwned: Double = js.native
-    @scala.inline
-    def AchievementsOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsOwned")(x.asInstanceOf[js.Any])
+    inline def AchievementsOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsOwned")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Achievements_=(x: js.Array[typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Achievements")(x.asInstanceOf[js.Any])
+    inline def Achievements_=(x: js.Array[typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Achievements")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def AddToLog(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddToLog")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def AddToLog(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddToLog")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def Ascend(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Ascend")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Ascend(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Ascend")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.AscendBreakpoint")
     @js.native
     def AscendBreakpoint: Double = js.native
-    @scala.inline
-    def AscendBreakpoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendBreakpoint")(x.asInstanceOf[js.Any])
+    inline def AscendBreakpoint_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendBreakpoint")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendDragX")
     @js.native
     def AscendDragX: Double = js.native
-    @scala.inline
-    def AscendDragX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDragX")(x.asInstanceOf[js.Any])
+    inline def AscendDragX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDragX")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendDragY")
     @js.native
     def AscendDragY: Double = js.native
-    @scala.inline
-    def AscendDragY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDragY")(x.asInstanceOf[js.Any])
+    inline def AscendDragY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDragY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendDragging")
     @js.native
     def AscendDragging: Double = js.native
-    @scala.inline
-    def AscendDragging_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDragging")(x.asInstanceOf[js.Any])
+    inline def AscendDragging_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDragging")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendDuration")
     @js.native
     def AscendDuration: Double = js.native
-    @scala.inline
-    def AscendDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDuration")(x.asInstanceOf[js.Any])
+    inline def AscendDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendDuration")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendGridSnap")
     @js.native
     def AscendGridSnap: Double = js.native
-    @scala.inline
-    def AscendGridSnap_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendGridSnap")(x.asInstanceOf[js.Any])
+    inline def AscendGridSnap_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendGridSnap")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendOffX")
     @js.native
@@ -254,11 +239,9 @@ object global {
     @JSGlobal("Game.AscendOffXT")
     @js.native
     def AscendOffXT: Double = js.native
-    @scala.inline
-    def AscendOffXT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffXT")(x.asInstanceOf[js.Any])
+    inline def AscendOffXT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffXT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def AscendOffX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffX")(x.asInstanceOf[js.Any])
+    inline def AscendOffX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffX")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendOffY")
     @js.native
@@ -267,20 +250,16 @@ object global {
     @JSGlobal("Game.AscendOffYT")
     @js.native
     def AscendOffYT: Double = js.native
-    @scala.inline
-    def AscendOffYT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffYT")(x.asInstanceOf[js.Any])
+    inline def AscendOffYT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffYT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def AscendOffY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffY")(x.asInstanceOf[js.Any])
+    inline def AscendOffY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendOffY")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def AscendRefocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AscendRefocus")().asInstanceOf[Unit]
+    inline def AscendRefocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AscendRefocus")().asInstanceOf[Unit]
     
     @JSGlobal("Game.AscendTimer")
     @js.native
     def AscendTimer: Double = js.native
-    @scala.inline
-    def AscendTimer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendTimer")(x.asInstanceOf[js.Any])
+    inline def AscendTimer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendTimer")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AscendZoom")
     @js.native
@@ -289,37 +268,29 @@ object global {
     @JSGlobal("Game.AscendZoomT")
     @js.native
     def AscendZoomT: Double = js.native
-    @scala.inline
-    def AscendZoomT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendZoomT")(x.asInstanceOf[js.Any])
+    inline def AscendZoomT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendZoomT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def AscendZoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendZoom")(x.asInstanceOf[js.Any])
+    inline def AscendZoom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AscendZoom")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def AssignPermanentSlot(slot: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AssignPermanentSlot")(slot.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def AssignPermanentSlot(slot: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AssignPermanentSlot")(slot.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.BGsByChoice")
     @js.native
     def BGsByChoice: Record[Double, ChoiceCosmetics] = js.native
-    @scala.inline
-    def BGsByChoice_=(x: Record[Double, ChoiceCosmetics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BGsByChoice")(x.asInstanceOf[js.Any])
+    inline def BGsByChoice_=(x: Record[Double, ChoiceCosmetics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BGsByChoice")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.Background")
     @js.native
     def Background: CanvasRenderingContext2D = js.native
-    @scala.inline
-    def Background_=(x: CanvasRenderingContext2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Background")(x.asInstanceOf[js.Any])
+    inline def Background_=(x: CanvasRenderingContext2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Background")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def BankAchievement(name: String): BankAchievementClass = ^.asInstanceOf[js.Dynamic].applyDynamic("BankAchievement")(name.asInstanceOf[js.Any]).asInstanceOf[BankAchievementClass]
-    @scala.inline
-    def BankAchievement(name: String, q: String): BankAchievementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("BankAchievement")(name.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[BankAchievementClass]
+    inline def BankAchievement(name: String): BankAchievementClass = ^.asInstanceOf[js.Dynamic].applyDynamic("BankAchievement")(name.asInstanceOf[js.Any]).asInstanceOf[BankAchievementClass]
+    inline def BankAchievement(name: String, q: String): BankAchievementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("BankAchievement")(name.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[BankAchievementClass]
     
     @JSGlobal("Game.BankAchievements")
     @js.native
     def BankAchievements: js.Array[BankAchievementClass] = js.native
-    @scala.inline
-    def BankAchievements_=(x: js.Array[BankAchievementClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BankAchievements")(x.asInstanceOf[js.Any])
+    inline def BankAchievements_=(x: js.Array[BankAchievementClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BankAchievements")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.BigCookieSize")
     @js.native
@@ -328,161 +299,116 @@ object global {
     @JSGlobal("Game.BigCookieSizeD")
     @js.native
     def BigCookieSizeD: Double = js.native
-    @scala.inline
-    def BigCookieSizeD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieSizeD")(x.asInstanceOf[js.Any])
+    inline def BigCookieSizeD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieSizeD")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.BigCookieSizeT")
     @js.native
     def BigCookieSizeT: Double = js.native
-    @scala.inline
-    def BigCookieSizeT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieSizeT")(x.asInstanceOf[js.Any])
+    inline def BigCookieSizeT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieSizeT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def BigCookieSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieSize")(x.asInstanceOf[js.Any])
+    inline def BigCookieSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieSize")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.BigCookieState")
     @js.native
     def BigCookieState: Double = js.native
-    @scala.inline
-    def BigCookieState_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieState")(x.asInstanceOf[js.Any])
+    inline def BigCookieState_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieState")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def BuildAscendTree(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildAscendTree")().asInstanceOf[Unit]
+    inline def BuildAscendTree(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildAscendTree")().asInstanceOf[Unit]
     
-    @scala.inline
-    def BuildStore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildStore")().asInstanceOf[Unit]
+    inline def BuildStore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildStore")().asInstanceOf[Unit]
     
     @JSGlobal("Game.BuildingsOwned")
     @js.native
     def BuildingsOwned: Double = js.native
-    @scala.inline
-    def BuildingsOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BuildingsOwned")(x.asInstanceOf[js.Any])
+    inline def BuildingsOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BuildingsOwned")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def CalculateGains(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CalculateGains")().asInstanceOf[Unit]
+    inline def CalculateGains(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CalculateGains")().asInstanceOf[Unit]
     
     @JSGlobal("Game.CanClick")
     @js.native
     def CanClick: Double = js.native
-    @scala.inline
-    def CanClick_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CanClick")(x.asInstanceOf[js.Any])
+    inline def CanClick_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CanClick")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def CheckUpdates(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CheckUpdates")().asInstanceOf[Unit]
+    inline def CheckUpdates(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CheckUpdates")().asInstanceOf[Unit]
     
-    @scala.inline
-    def CheckUpdatesResponse(response: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CheckUpdatesResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def CheckUpdatesResponse(response: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CheckUpdatesResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.Click")
     @js.native
     def Click: Double = js.native
     
-    @scala.inline
-    def ClickCookie(e: MouseEvent, amount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClickCookie")(e.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ClickCookie(e: MouseEvent, amount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClickCookie")(e.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def ClickProduct(what: typings.cookieclicker.Game.GameObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickProduct")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ClickProduct(what: typings.cookieclicker.Game.GameObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickProduct")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def ClickSpecialPic(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickSpecialPic")().asInstanceOf[Unit]
+    inline def ClickSpecialPic(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickSpecialPic")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ClickTinyCookie(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickTinyCookie")().asInstanceOf[Unit]
+    inline def ClickTinyCookie(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickTinyCookie")().asInstanceOf[Unit]
     
-    @scala.inline
-    def Click_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Click")(x.asInstanceOf[js.Any])
+    inline def Click_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Click")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def CloseNote(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseNote")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def CloseNote(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseNote")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def CloseNotes(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseNotes")().asInstanceOf[Unit]
+    inline def CloseNotes(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseNotes")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ClosePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClosePrompt")().asInstanceOf[Unit]
+    inline def ClosePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClosePrompt")().asInstanceOf[Unit]
     
-    @scala.inline
-    def CollectWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectWrinklers")().asInstanceOf[Unit]
+    inline def CollectWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CollectWrinklers")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ComputeCps(base: Double, mult: Double, bonus: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeCps")(base.asInstanceOf[js.Any], mult.asInstanceOf[js.Any], bonus.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def ComputeCps(base: Double, mult: Double, bonus: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("ComputeCps")(base.asInstanceOf[js.Any], mult.asInstanceOf[js.Any], bonus.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def ConfirmPrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfirmPrompt")().asInstanceOf[Unit]
+    inline def ConfirmPrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ConfirmPrompt")().asInstanceOf[Unit]
     
-    @scala.inline
-    def CountsAsAchievementOwned(pool: AchievementPool): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("CountsAsAchievementOwned")(pool.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def CountsAsAchievementOwned(pool: AchievementPool): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("CountsAsAchievementOwned")(pool.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def CountsAsUpgradeOwned(pool: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("CountsAsUpgradeOwned")(pool.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def CountsAsUpgradeOwned(pool: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("CountsAsUpgradeOwned")(pool.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def CpsAchievement(name: String): CpsAchievementClass = ^.asInstanceOf[js.Dynamic].applyDynamic("CpsAchievement")(name.asInstanceOf[js.Any]).asInstanceOf[CpsAchievementClass]
-    @scala.inline
-    def CpsAchievement(name: String, q: String): CpsAchievementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("CpsAchievement")(name.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[CpsAchievementClass]
+    inline def CpsAchievement(name: String): CpsAchievementClass = ^.asInstanceOf[js.Dynamic].applyDynamic("CpsAchievement")(name.asInstanceOf[js.Any]).asInstanceOf[CpsAchievementClass]
+    inline def CpsAchievement(name: String, q: String): CpsAchievementClass = (^.asInstanceOf[js.Dynamic].applyDynamic("CpsAchievement")(name.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[CpsAchievementClass]
     
     @JSGlobal("Game.CpsAchievements")
     @js.native
     def CpsAchievements: js.Array[CpsAchievementClass] = js.native
-    @scala.inline
-    def CpsAchievements_=(x: js.Array[CpsAchievementClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CpsAchievements")(x.asInstanceOf[js.Any])
+    inline def CpsAchievements_=(x: js.Array[CpsAchievementClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CpsAchievements")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def DebugUpgradeCpS(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DebugUpgradeCpS")().asInstanceOf[Unit]
+    inline def DebugUpgradeCpS(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DebugUpgradeCpS")().asInstanceOf[Unit]
     
     @JSGlobal("Game.DebuggingPrestige")
     @js.native
     def DebuggingPrestige: Double = js.native
-    @scala.inline
-    def DebuggingPrestige_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DebuggingPrestige")(x.asInstanceOf[js.Any])
+    inline def DebuggingPrestige_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DebuggingPrestige")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def DefaultPrefs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultPrefs")().asInstanceOf[Unit]
+    inline def DefaultPrefs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultPrefs")().asInstanceOf[Unit]
     
-    @scala.inline
-    def DescribeDragonAura(aura: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DescribeDragonAura")(aura.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def DescribeDragonAura(aura: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DescribeDragonAura")(aura.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def Dissolve(howmuch: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Dissolve")(howmuch.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Dissolve(howmuch: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Dissolve")(howmuch.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def Draw(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Draw")().asInstanceOf[Unit]
+    inline def Draw(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Draw")().asInstanceOf[Unit]
     
-    @scala.inline
-    def DrawBackground(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawBackground")().asInstanceOf[Unit]
+    inline def DrawBackground(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawBackground")().asInstanceOf[Unit]
     
-    @scala.inline
-    def DrawBuildings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawBuildings")().asInstanceOf[Unit]
+    inline def DrawBuildings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawBuildings")().asInstanceOf[Unit]
     
-    @scala.inline
-    def DrawSpecial(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawSpecial")().asInstanceOf[Unit]
+    inline def DrawSpecial(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawSpecial")().asInstanceOf[Unit]
     
-    @scala.inline
-    def DrawWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawWrinklers")().asInstanceOf[Unit]
+    inline def DrawWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawWrinklers")().asInstanceOf[Unit]
     
-    @scala.inline
-    def DropEgg(failRate: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DropEgg")(failRate.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def DropEgg(failRate: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DropEgg")(failRate.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def Earn(howmuch: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Earn")(howmuch.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Earn(howmuch: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Earn")(howmuch.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def EarnHeavenlyChips(cookiesForfeited: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EarnHeavenlyChips")(cookiesForfeited.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def EarnHeavenlyChips(cookiesForfeited: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EarnHeavenlyChips")(cookiesForfeited.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def EditAscend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EditAscend")().asInstanceOf[Unit]
+    inline def EditAscend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EditAscend")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ErrorFrame(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ErrorFrame")().asInstanceOf[Unit]
+    inline def ErrorFrame(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ErrorFrame")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ExportSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportSave")().asInstanceOf[Unit]
+    inline def ExportSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ExportSave")().asInstanceOf[Unit]
     
-    @scala.inline
-    def FileLoad(e: InputEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FileLoad")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def FileLoad(e: InputEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FileLoad")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def FileSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FileSave")().asInstanceOf[Unit]
+    inline def FileSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FileSave")().asInstanceOf[Unit]
     
     @JSGlobal("Game.GameObject")
     @js.native
@@ -868,160 +794,113 @@ object global {
       var vanilla: PseudoBoolean = js.native
     }
     
-    @scala.inline
-    def GetAllDebugs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAllDebugs")().asInstanceOf[Unit]
+    inline def GetAllDebugs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAllDebugs")().asInstanceOf[Unit]
     
-    @scala.inline
-    def GetBakeryName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBakeryName")().asInstanceOf[String]
+    inline def GetBakeryName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBakeryName")().asInstanceOf[String]
     
-    @scala.inline
-    def GetHeavenlyMultiplier(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHeavenlyMultiplier")().asInstanceOf[Double]
+    inline def GetHeavenlyMultiplier(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHeavenlyMultiplier")().asInstanceOf[Double]
     
-    @scala.inline
-    def GetHowManyEggs(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyEggs")().asInstanceOf[Double]
+    inline def GetHowManyEggs(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyEggs")().asInstanceOf[Double]
     
-    @scala.inline
-    def GetHowManyHalloweenDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyHalloweenDrops")().asInstanceOf[Double]
+    inline def GetHowManyHalloweenDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyHalloweenDrops")().asInstanceOf[Double]
     
-    @scala.inline
-    def GetHowManyHeartDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyHeartDrops")().asInstanceOf[Double]
+    inline def GetHowManyHeartDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyHeartDrops")().asInstanceOf[Double]
     
-    @scala.inline
-    def GetHowManyReindeerDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyReindeerDrops")().asInstanceOf[Double]
+    inline def GetHowManyReindeerDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManyReindeerDrops")().asInstanceOf[Double]
     
-    @scala.inline
-    def GetHowManySantaDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManySantaDrops")().asInstanceOf[Double]
+    inline def GetHowManySantaDrops(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHowManySantaDrops")().asInstanceOf[Double]
     
-    @scala.inline
-    def GetIcon(`type`: String, tier: String): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("GetIcon")(`type`.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Icon]
-    @scala.inline
-    def GetIcon(`type`: String, tier: Double): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("GetIcon")(`type`.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Icon]
+    inline def GetIcon(`type`: String, tier: String): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("GetIcon")(`type`.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Icon]
+    inline def GetIcon(`type`: String, tier: Double): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("GetIcon")(`type`.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Icon]
     
-    @scala.inline
-    def GetMouseCoords(e: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMouseCoords")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def GetMouseCoords(e: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetMouseCoords")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def GetTieredCpsMult(me: typings.cookieclicker.Game.GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTieredCpsMult")(me.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def GetTieredCpsMult(me: typings.cookieclicker.Game.GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTieredCpsMult")(me.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def GiveUpAscend(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GiveUpAscend")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def GiveUpAscend(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GiveUpAscend")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def GrabData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GrabData")().asInstanceOf[Unit]
+    inline def GrabData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GrabData")().asInstanceOf[Unit]
     
-    @scala.inline
-    def GrabDataResponse(response: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GrabDataResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def GrabDataResponse(response: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GrabDataResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.GrandmaSynergies")
     @js.native
     def GrandmaSynergies: js.Array[String] = js.native
-    @scala.inline
-    def GrandmaSynergies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrandmaSynergies")(x.asInstanceOf[js.Any])
+    inline def GrandmaSynergies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrandmaSynergies")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def GrandmaSynergy(name: String, desc: String, building: String): GrandmaSynergyClass = (^.asInstanceOf[js.Dynamic].applyDynamic("GrandmaSynergy")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any])).asInstanceOf[GrandmaSynergyClass]
+    inline def GrandmaSynergy(name: String, desc: String, building: String): GrandmaSynergyClass = (^.asInstanceOf[js.Dynamic].applyDynamic("GrandmaSynergy")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any])).asInstanceOf[GrandmaSynergyClass]
     
     @JSGlobal("Game.HCfactor")
     @js.native
     def HCfactor: Double = js.native
-    @scala.inline
-    def HCfactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HCfactor")(x.asInstanceOf[js.Any])
+    inline def HCfactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HCfactor")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def HardReset_0(bypass: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def HardReset_0(bypass: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def HardReset_1(bypass: `1`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def HardReset_1(bypass: `1`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def HardReset_2(bypass: `2`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def HardReset_2(bypass: `2`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def Has(what: String): PseudoBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Has")(what.asInstanceOf[js.Any]).asInstanceOf[PseudoBoolean]
+    inline def Has(what: String): PseudoBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Has")(what.asInstanceOf[js.Any]).asInstanceOf[PseudoBoolean]
     
-    @scala.inline
-    def HasAchiev(what: String): PseudoBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("HasAchiev")(what.asInstanceOf[js.Any]).asInstanceOf[PseudoBoolean]
+    inline def HasAchiev(what: String): PseudoBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("HasAchiev")(what.asInstanceOf[js.Any]).asInstanceOf[PseudoBoolean]
     
-    @scala.inline
-    def HasUnlocked(what: String): PseudoBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("HasUnlocked")(what.asInstanceOf[js.Any]).asInstanceOf[PseudoBoolean]
+    inline def HasUnlocked(what: String): PseudoBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("HasUnlocked")(what.asInstanceOf[js.Any]).asInstanceOf[PseudoBoolean]
     
-    @scala.inline
-    def HowManyCookiesReset(chips: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("HowManyCookiesReset")(chips.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def HowManyCookiesReset(chips: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("HowManyCookiesReset")(chips.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def HowMuchPrestige(cookies: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("HowMuchPrestige")(cookies.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def HowMuchPrestige(cookies: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("HowMuchPrestige")(cookies.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def ImportSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ImportSave")().asInstanceOf[Unit]
+    inline def ImportSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ImportSave")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ImportSaveCode(save: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ImportSaveCode")(save.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ImportSaveCode(save: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ImportSaveCode")(save.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def Init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Init")().asInstanceOf[Unit]
+    inline def Init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Init")().asInstanceOf[Unit]
     
-    @scala.inline
-    def Launch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Launch")().asInstanceOf[Unit]
+    inline def Launch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Launch")().asInstanceOf[Unit]
     
     @JSGlobal("Game.LeftBackground")
     @js.native
     def LeftBackground: CanvasRenderingContext2D = js.native
-    @scala.inline
-    def LeftBackground_=(x: CanvasRenderingContext2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftBackground")(x.asInstanceOf[js.Any])
+    inline def LeftBackground_=(x: CanvasRenderingContext2D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftBackground")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Load(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Load")().asInstanceOf[Unit]
+    inline def Load(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Load")().asInstanceOf[Unit]
     
-    @scala.inline
-    def LoadMinigames(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadMinigames")().asInstanceOf[Unit]
+    inline def LoadMinigames(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadMinigames")().asInstanceOf[Unit]
     
-    @scala.inline
-    def LoadMod(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadMod")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def LoadMod(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadMod")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def LoadSave(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadSave")().asInstanceOf[Boolean]
-    @scala.inline
-    def LoadSave(data: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadSave")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def LoadSave(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadSave")().asInstanceOf[Boolean]
+    inline def LoadSave(data: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadSave")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def LoadWrinklers(amount: Double, number: Double, shinies: Double, amountShinies: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadWrinklers")(amount.asInstanceOf[js.Any], number.asInstanceOf[js.Any], shinies.asInstanceOf[js.Any], amountShinies.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def LoadWrinklers(amount: Double, number: Double, shinies: Double, amountShinies: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadWrinklers")(amount.asInstanceOf[js.Any], number.asInstanceOf[js.Any], shinies.asInstanceOf[js.Any], amountShinies.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.Loader")
     @js.native
     def Loader: typings.cookieclicker.Loader = js.native
-    @scala.inline
-    def Loader_=(x: typings.cookieclicker.Loader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Loader")(x.asInstanceOf[js.Any])
+    inline def Loader_=(x: typings.cookieclicker.Loader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Loader")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Lock(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Lock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def Lock(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Lock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Lock(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Lock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Lock(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Lock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.Log")
     @js.native
     def Log: js.Array[String] = js.native
-    @scala.inline
-    def Log_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Log")(x.asInstanceOf[js.Any])
+    inline def Log_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Log")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Logic(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Logic")().asInstanceOf[Unit]
+    inline def Logic(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Logic")().asInstanceOf[Unit]
     
-    @scala.inline
-    def Loop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Loop")().asInstanceOf[Unit]
+    inline def Loop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Loop")().asInstanceOf[Unit]
     
-    @scala.inline
-    def MakeTiered(upgrade: typings.cookieclicker.Game.Upgrade, tier: String, col: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeTiered")(upgrade.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def MakeTiered(upgrade: typings.cookieclicker.Game.Upgrade, tier: Double, col: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeTiered")(upgrade.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def MakeTiered(upgrade: typings.cookieclicker.Game.Upgrade, tier: String, col: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeTiered")(upgrade.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def MakeTiered(upgrade: typings.cookieclicker.Game.Upgrade, tier: Double, col: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeTiered")(upgrade.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def MaxSpecials(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxSpecials")().asInstanceOf[Unit]
+    inline def MaxSpecials(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxSpecials")().asInstanceOf[Unit]
     
     @JSGlobal("Game.Milk")
     @js.native
     def Milk: typings.cookieclicker.Game.Milk = js.native
-    @scala.inline
-    def Milk_=(x: Milk): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Milk")(x.asInstanceOf[js.Any])
+    inline def Milk_=(x: Milk): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Milk")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.Milks")
     @js.native
@@ -1030,23 +909,18 @@ object global {
     @JSGlobal("Game.MilksByChoice")
     @js.native
     def MilksByChoice: Record[Double, ChoiceCosmetics] = js.native
-    @scala.inline
-    def MilksByChoice_=(x: Record[Double, ChoiceCosmetics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MilksByChoice")(x.asInstanceOf[js.Any])
+    inline def MilksByChoice_=(x: Record[Double, ChoiceCosmetics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MilksByChoice")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Milks_=(x: js.Array[Milk]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Milks")(x.asInstanceOf[js.Any])
+    inline def Milks_=(x: js.Array[Milk]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Milks")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Mobile_(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Mobile")().asInstanceOf[Unit]
+    inline def Mobile_(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Mobile")().asInstanceOf[Unit]
     
     @JSGlobal("Game.Mods")
     @js.native
     def Mods: Record[String, Mod] = js.native
-    @scala.inline
-    def Mods_=(x: Record[String, Mod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mods")(x.asInstanceOf[js.Any])
+    inline def Mods_=(x: Record[String, Mod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mods")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def NewUpgradeCookie(obj: CookieUpgradeParameter): CookieUpgrade = ^.asInstanceOf[js.Dynamic].applyDynamic("NewUpgradeCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[CookieUpgrade]
+    inline def NewUpgradeCookie(obj: CookieUpgradeParameter): CookieUpgrade = ^.asInstanceOf[js.Dynamic].applyDynamic("NewUpgradeCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[CookieUpgrade]
     
     @JSGlobal("Game.Note")
     @js.native
@@ -1097,50 +971,30 @@ object global {
     @JSGlobal("Game.NotesById")
     @js.native
     def NotesById: js.Array[typings.cookieclicker.Game.Note] = js.native
-    @scala.inline
-    def NotesById_=(x: js.Array[typings.cookieclicker.Game.Note]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotesById")(x.asInstanceOf[js.Any])
+    inline def NotesById_=(x: js.Array[typings.cookieclicker.Game.Note]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotesById")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def NotesDraw(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NotesDraw")().asInstanceOf[Unit]
+    inline def NotesDraw(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NotesDraw")().asInstanceOf[Unit]
     
-    @scala.inline
-    def NotesLogic(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NotesLogic")().asInstanceOf[Unit]
+    inline def NotesLogic(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NotesLogic")().asInstanceOf[Unit]
     
-    @scala.inline
-    def Notes_=(x: js.Array[typings.cookieclicker.Game.Note]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Notes")(x.asInstanceOf[js.Any])
+    inline def Notes_=(x: js.Array[typings.cookieclicker.Game.Note]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Notes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Notify(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String, pic: Unit, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String, pic: Unit, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String, pic: Unit, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String, pic: Icon): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String, pic: Icon, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String, pic: Icon, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: String, pic: Icon, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: Unit, pic: Unit, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: Unit, pic: Unit, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: Unit, pic: Unit, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: Unit, pic: Icon): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: Unit, pic: Icon, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: Unit, pic: Icon, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Notify(title: String, desc: Unit, pic: Icon, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String, pic: Unit, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String, pic: Unit, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String, pic: Unit, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String, pic: Icon): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String, pic: Icon, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String, pic: Icon, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: String, pic: Icon, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: Unit, pic: Unit, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: Unit, pic: Unit, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: Unit, pic: Unit, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: Unit, pic: Icon): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: Unit, pic: Icon, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: Unit, pic: Icon, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Notify(title: String, desc: Unit, pic: Icon, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.Objects")
     @js.native
@@ -1149,182 +1003,135 @@ object global {
     @JSGlobal("Game.ObjectsById")
     @js.native
     def ObjectsById: js.Array[typings.cookieclicker.Game.GameObject] = js.native
-    @scala.inline
-    def ObjectsById_=(x: js.Array[typings.cookieclicker.Game.GameObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectsById")(x.asInstanceOf[js.Any])
+    inline def ObjectsById_=(x: js.Array[typings.cookieclicker.Game.GameObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectsById")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ObjectsN")
     @js.native
     def ObjectsN: Double = js.native
-    @scala.inline
-    def ObjectsN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectsN")(x.asInstanceOf[js.Any])
+    inline def ObjectsN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectsN")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Objects_=(x: (Record[String, typings.cookieclicker.Game.GameObject]) & Bank): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Objects")(x.asInstanceOf[js.Any])
+    inline def Objects_=(x: (Record[String, typings.cookieclicker.Game.GameObject]) & Bank): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Objects")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.OnAscend")
     @js.native
     def OnAscend: Double = js.native
-    @scala.inline
-    def OnAscend_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnAscend")(x.asInstanceOf[js.Any])
+    inline def OnAscend_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnAscend")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def OpenSesame(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("OpenSesame")().asInstanceOf[Unit]
+    inline def OpenSesame(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("OpenSesame")().asInstanceOf[Unit]
     
-    @scala.inline
-    def PermanentSlotIcon(slot: Double): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("PermanentSlotIcon")(slot.asInstanceOf[js.Any]).asInstanceOf[Icon]
+    inline def PermanentSlotIcon(slot: Double): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("PermanentSlotIcon")(slot.asInstanceOf[js.Any]).asInstanceOf[Icon]
     
-    @scala.inline
-    def PickAscensionMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PickAscensionMode")().asInstanceOf[Unit]
+    inline def PickAscensionMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PickAscensionMode")().asInstanceOf[Unit]
     
-    @scala.inline
-    def PopRandomWrinkler(): Wrinkler | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("PopRandomWrinkler")().asInstanceOf[Wrinkler | Boolean]
+    inline def PopRandomWrinkler(): Wrinkler | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("PopRandomWrinkler")().asInstanceOf[Wrinkler | Boolean]
     
-    @scala.inline
-    def Popup(text: String, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Popup")(text.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Popup(text: String, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Popup")(text.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.PrestigeUpgrades")
     @js.native
     def PrestigeUpgrades: js.Array[HeavenlyUpgrade] = js.native
-    @scala.inline
-    def PrestigeUpgrades_=(x: js.Array[HeavenlyUpgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrestigeUpgrades")(x.asInstanceOf[js.Any])
+    inline def PrestigeUpgrades_=(x: js.Array[HeavenlyUpgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PrestigeUpgrades")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ProductionAchievement(name: String, building: String, tier: Double): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
-    @scala.inline
-    def ProductionAchievement(name: String, building: String, tier: Double, q: String): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
-    @scala.inline
-    def ProductionAchievement(name: String, building: String, tier: Double, q: String, mult: Double): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], q.asInstanceOf[js.Any], mult.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
-    @scala.inline
-    def ProductionAchievement(name: String, building: String, tier: Double, q: Unit, mult: Double): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], q.asInstanceOf[js.Any], mult.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
+    inline def ProductionAchievement(name: String, building: String, tier: Double): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
+    inline def ProductionAchievement(name: String, building: String, tier: Double, q: String): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
+    inline def ProductionAchievement(name: String, building: String, tier: Double, q: String, mult: Double): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], q.asInstanceOf[js.Any], mult.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
+    inline def ProductionAchievement(name: String, building: String, tier: Double, q: Unit, mult: Double): typings.cookieclicker.Game.Achievement = (^.asInstanceOf[js.Dynamic].applyDynamic("ProductionAchievement")(name.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any], q.asInstanceOf[js.Any], mult.asInstanceOf[js.Any])).asInstanceOf[typings.cookieclicker.Game.Achievement]
     
-    @scala.inline
-    def Prompt(content: String, options: js.Array[String | (js.Tuple2[String, String])]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Prompt")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Prompt(
+    inline def Prompt(content: String, options: js.Array[String | (js.Tuple2[String, String])]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Prompt")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Prompt(
       content: String,
       options: js.Array[String | (js.Tuple2[String, String])],
       updateFunc: js.Function0[Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Prompt")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], updateFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Prompt(
+    inline def Prompt(
       content: String,
       options: js.Array[String | (js.Tuple2[String, String])],
       updateFunc: js.Function0[Unit],
       style: String
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Prompt")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], updateFunc.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Prompt(
+    inline def Prompt(
       content: String,
       options: js.Array[String | (js.Tuple2[String, String])],
       updateFunc: Unit,
       style: String
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Prompt")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], updateFunc.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def PurchaseHeavenlyUpgrade(what: typings.cookieclicker.Game.Upgrade): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PurchaseHeavenlyUpgrade")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def PurchaseHeavenlyUpgrade(what: typings.cookieclicker.Game.Upgrade): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PurchaseHeavenlyUpgrade")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def PutUpgradeInPermanentSlot(upgrade: typings.cookieclicker.Game.Upgrade, slot: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PutUpgradeInPermanentSlot")(upgrade.asInstanceOf[js.Any], slot.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def PutUpgradeInPermanentSlot(upgrade: typings.cookieclicker.Game.Upgrade, slot: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PutUpgradeInPermanentSlot")(upgrade.asInstanceOf[js.Any], slot.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def RandomBakeryName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomBakeryName")().asInstanceOf[String]
+    inline def RandomBakeryName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomBakeryName")().asInstanceOf[String]
     
-    @scala.inline
-    def RebuildUpgrades(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RebuildUpgrades")().asInstanceOf[Unit]
+    inline def RebuildUpgrades(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RebuildUpgrades")().asInstanceOf[Unit]
     
-    @scala.inline
-    def RefreshStore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RefreshStore")().asInstanceOf[Unit]
+    inline def RefreshStore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RefreshStore")().asInstanceOf[Unit]
     
-    @scala.inline
-    def Reincarnate(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Reincarnate")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Reincarnate(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Reincarnate")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.ReincarnateDuration")
     @js.native
     def ReincarnateDuration: Double = js.native
-    @scala.inline
-    def ReincarnateDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReincarnateDuration")(x.asInstanceOf[js.Any])
+    inline def ReincarnateDuration_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReincarnateDuration")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ReincarnateTimer")
     @js.native
     def ReincarnateTimer: Double = js.native
-    @scala.inline
-    def ReincarnateTimer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReincarnateTimer")(x.asInstanceOf[js.Any])
+    inline def ReincarnateTimer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReincarnateTimer")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def RemoveAchiev(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAchiev")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def RemoveAchiev(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAchiev")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def RequiresConfirmation(upgrade: typings.cookieclicker.Game.Upgrade, prompt: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RequiresConfirmation")(upgrade.asInstanceOf[js.Any], prompt.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RequiresConfirmation(upgrade: typings.cookieclicker.Game.Upgrade, prompt: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RequiresConfirmation")(upgrade.asInstanceOf[js.Any], prompt.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Reset(hard: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Reset")(hard.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Reset(hard: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Reset")(hard.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def ResetWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ResetWrinklers")().asInstanceOf[Unit]
+    inline def ResetWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ResetWrinklers")().asInstanceOf[Unit]
     
-    @scala.inline
-    def Resume(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Resume")().asInstanceOf[Unit]
+    inline def Resume(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Resume")().asInstanceOf[Unit]
     
-    @scala.inline
-    def RuinTheFun(silent: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RuinTheFun")(silent.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def RuinTheFun(silent: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RuinTheFun")(silent.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("Game.SaveTo")
     @js.native
     def SaveTo: String = js.native
-    @scala.inline
-    def SaveTo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaveTo")(x.asInstanceOf[js.Any])
+    inline def SaveTo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SaveTo")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def SaveWrinklers(): WrinklerSave = ^.asInstanceOf[js.Dynamic].applyDynamic("SaveWrinklers")().asInstanceOf[WrinklerSave]
+    inline def SaveWrinklers(): WrinklerSave = ^.asInstanceOf[js.Dynamic].applyDynamic("SaveWrinklers")().asInstanceOf[WrinklerSave]
     
     @JSGlobal("Game.Scroll")
     @js.native
     def Scroll: Double = js.native
-    @scala.inline
-    def Scroll_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scroll")(x.asInstanceOf[js.Any])
+    inline def Scroll_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scroll")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def SelectDragonAura(slot: Double, update: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SelectDragonAura")(slot.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def SelectDragonAura(slot: Double, update: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SelectDragonAura")(slot.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.SelectedHeavenlyUpgrade")
     @js.native
     def SelectedHeavenlyUpgrade: Double = js.native
-    @scala.inline
-    def SelectedHeavenlyUpgrade_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectedHeavenlyUpgrade")(x.asInstanceOf[js.Any])
+    inline def SelectedHeavenlyUpgrade_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectedHeavenlyUpgrade")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.SelectingDragonAura")
     @js.native
     def SelectingDragonAura: PseudoBoolean = js.native
-    @scala.inline
-    def SelectingDragonAura_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectingDragonAura")(x.asInstanceOf[js.Any])
+    inline def SelectingDragonAura_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectingDragonAura")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.SelectingPermanentUpgrade")
     @js.native
     def SelectingPermanentUpgrade: Double = js.native
-    @scala.inline
-    def SelectingPermanentUpgrade_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectingPermanentUpgrade")(x.asInstanceOf[js.Any])
+    inline def SelectingPermanentUpgrade_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectingPermanentUpgrade")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def SesameReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SesameReset")().asInstanceOf[Unit]
+    inline def SesameReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SesameReset")().asInstanceOf[Unit]
     
-    @scala.inline
-    def SetAllAchievs(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetAllAchievs")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def SetAllAchievs(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetAllAchievs")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def SetAllUpgrades(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetAllUpgrades")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def SetAllUpgrades(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetAllUpgrades")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def SetDragonAura(aura: Double, slot: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDragonAura")(aura.asInstanceOf[js.Any], slot.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def SetDragonAura(aura: Double, slot: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetDragonAura")(aura.asInstanceOf[js.Any], slot.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def SetResearch(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetResearch")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def SetResearch(what: String, time: scala.Nothing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetResearch")(what.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def SetResearch(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetResearch")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def SetResearch(what: String, time: scala.Nothing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetResearch")(what.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def SetTier(building: String, tier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTier")(building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def SetTier(building: String, tier: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTier")(building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def SetTier(building: String, tier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTier")(building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def SetTier(building: String, tier: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTier")(building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.Shimmer")
     @js.native
@@ -1379,42 +1186,31 @@ object global {
       var y: Double = js.native
     }
     
-    @scala.inline
-    def ShowMenu(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ShowMenu")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ShowMenu(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ShowMenu")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def ShowPanel(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ShowPanel")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ShowPanel(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ShowPanel")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def SparkleAt(x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SparkleAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def SparkleAt(x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SparkleAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def SparkleOn(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SparkleOn")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def SparkleOn(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SparkleOn")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def SpawnWrinkler(): Wrinkler | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("SpawnWrinkler")().asInstanceOf[Wrinkler | Boolean]
-    @scala.inline
-    def SpawnWrinkler(me: Wrinkler): Wrinkler | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("SpawnWrinkler")(me.asInstanceOf[js.Any]).asInstanceOf[Wrinkler | Boolean]
+    inline def SpawnWrinkler(): Wrinkler | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("SpawnWrinkler")().asInstanceOf[Wrinkler | Boolean]
+    inline def SpawnWrinkler(me: Wrinkler): Wrinkler | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("SpawnWrinkler")(me.asInstanceOf[js.Any]).asInstanceOf[Wrinkler | Boolean]
     
     @JSGlobal("Game.SpecialGrandmaUnlock")
     @js.native
     def SpecialGrandmaUnlock: Double = js.native
-    @scala.inline
-    def SpecialGrandmaUnlock_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpecialGrandmaUnlock")(x.asInstanceOf[js.Any])
+    inline def SpecialGrandmaUnlock_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpecialGrandmaUnlock")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Spend(howmuch: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Spend")(howmuch.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Spend(howmuch: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Spend")(howmuch.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def SynergyUpgrade(name: String, desc: String, building1: String, building2: String, tier: String): SynergyUpgradeClass[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("SynergyUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building1.asInstanceOf[js.Any], building2.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[SynergyUpgradeClass[String]]
-    @scala.inline
-    def SynergyUpgrade(name: String, desc: String, building1: String, building2: String, tier: Double): SynergyUpgradeClass[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SynergyUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building1.asInstanceOf[js.Any], building2.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[SynergyUpgradeClass[Double]]
+    inline def SynergyUpgrade(name: String, desc: String, building1: String, building2: String, tier: String): SynergyUpgradeClass[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("SynergyUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building1.asInstanceOf[js.Any], building2.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[SynergyUpgradeClass[String]]
+    inline def SynergyUpgrade(name: String, desc: String, building1: String, building2: String, tier: Double): SynergyUpgradeClass[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SynergyUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building1.asInstanceOf[js.Any], building2.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[SynergyUpgradeClass[Double]]
     
     @JSGlobal("Game.T")
     @js.native
     def T: Double = js.native
-    @scala.inline
-    def T_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
+    inline def T_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.Ticker")
     @js.native
@@ -1423,223 +1219,147 @@ object global {
     @JSGlobal("Game.TickerAge")
     @js.native
     def TickerAge: Double = js.native
-    @scala.inline
-    def TickerAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerAge")(x.asInstanceOf[js.Any])
+    inline def TickerAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerAge")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.TickerClicks")
     @js.native
     def TickerClicks: Double = js.native
-    @scala.inline
-    def TickerClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerClicks")(x.asInstanceOf[js.Any])
+    inline def TickerClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerClicks")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def TickerDraw(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("TickerDraw")().asInstanceOf[Unit]
+    inline def TickerDraw(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("TickerDraw")().asInstanceOf[Unit]
     
     @JSGlobal("Game.TickerEffect")
     @js.native
     def TickerEffect: Double = js.native
-    @scala.inline
-    def TickerEffect_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerEffect")(x.asInstanceOf[js.Any])
+    inline def TickerEffect_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerEffect")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.TickerN")
     @js.native
     def TickerN: Double = js.native
-    @scala.inline
-    def TickerN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerN")(x.asInstanceOf[js.Any])
+    inline def TickerN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerN")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Ticker_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ticker")(x.asInstanceOf[js.Any])
+    inline def Ticker_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ticker")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def TieredAchievement(name: String, desc: String, building: String, tier: String): TieredAchievementClass[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredAchievement")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredAchievementClass[String]]
-    @scala.inline
-    def TieredAchievement(name: String, desc: String, building: String, tier: Double): TieredAchievementClass[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredAchievement")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredAchievementClass[Double]]
+    inline def TieredAchievement(name: String, desc: String, building: String, tier: String): TieredAchievementClass[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredAchievement")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredAchievementClass[String]]
+    inline def TieredAchievement(name: String, desc: String, building: String, tier: Double): TieredAchievementClass[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredAchievement")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredAchievementClass[Double]]
     
-    @scala.inline
-    def TieredUpgrade(name: String, desc: String, building: String, tier: String): TieredUpgradeClass[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredUpgradeClass[String]]
-    @scala.inline
-    def TieredUpgrade(name: String, desc: String, building: String, tier: Double): TieredUpgradeClass[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredUpgradeClass[Double]]
+    inline def TieredUpgrade(name: String, desc: String, building: String, tier: String): TieredUpgradeClass[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredUpgradeClass[String]]
+    inline def TieredUpgrade(name: String, desc: String, building: String, tier: Double): TieredUpgradeClass[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TieredUpgrade")(name.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[TieredUpgradeClass[Double]]
     
     @JSGlobal("Game.Tiers")
     @js.native
     def Tiers: Record[String, Tier] = js.native
-    @scala.inline
-    def Tiers_=(x: Record[String, Tier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tiers")(x.asInstanceOf[js.Any])
+    inline def Tiers_=(x: Record[String, Tier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tiers")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Timeout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Timeout")().asInstanceOf[Unit]
+    inline def Timeout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Timeout")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ToggleExtraButtons(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleExtraButtons")().asInstanceOf[Unit]
+    inline def ToggleExtraButtons(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleExtraButtons")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ToggleFancy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleFancy")().asInstanceOf[Unit]
+    inline def ToggleFancy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleFancy")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ToggleFilters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleFilters")().asInstanceOf[Unit]
+    inline def ToggleFilters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleFilters")().asInstanceOf[Unit]
     
-    @scala.inline
-    def ToggleSpecialMenu(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleSpecialMenu")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def ToggleSpecialMenu(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleSpecialMenu")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_altDraw(prefName: altDraw, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_altDraw(prefName: altDraw, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_altDraw(prefName: altDraw, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_altDraw(prefName: altDraw, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_animate(prefName: animate, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_animate(prefName: animate, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_animate(prefName: animate, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_animate(prefName: animate, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_askLumps(prefName: askLumps, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_askLumps(prefName: askLumps, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_askLumps(prefName: askLumps, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_askLumps(prefName: askLumps, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_autosave(prefName: autosave, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_autosave(prefName: autosave, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_autosave(prefName: autosave, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_autosave(prefName: autosave, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_autoupdate(prefName: autoupdate, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_autoupdate(prefName: autoupdate, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_autoupdate(prefName: autoupdate, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_autoupdate(prefName: autoupdate, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_cursors(prefName: cursors, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_cursors(prefName: cursors, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_cursors(prefName: cursors, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_cursors(prefName: cursors, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_extraButtons(prefName: extraButtons, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_extraButtons(prefName: extraButtons, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_extraButtons(prefName: extraButtons, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_extraButtons(prefName: extraButtons, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_fancy(prefName: fancy, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_fancy(prefName: fancy, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_fancy(prefName: fancy, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_fancy(prefName: fancy, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_filters(prefName: filters, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_filters(prefName: filters, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_filters(prefName: filters, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_filters(prefName: filters, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_focus(prefName: focus, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_focus(prefName: focus, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_focus(prefName: focus, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_focus(prefName: focus, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_format(prefName: format, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_format(prefName: format, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_format(prefName: format, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_format(prefName: format, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_milk(prefName: milk, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_milk(prefName: milk, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_milk(prefName: milk, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_milk(prefName: milk, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_monospace(prefName: monospace, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_monospace(prefName: monospace, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_monospace(prefName: monospace, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_monospace(prefName: monospace, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_notifs(prefName: notifs, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_notifs(prefName: notifs, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_notifs(prefName: notifs, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_notifs(prefName: notifs, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_numbers(prefName: numbers, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_numbers(prefName: numbers, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_numbers(prefName: numbers, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_numbers(prefName: numbers, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_particles(prefName: particles, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_particles(prefName: particles, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_particles(prefName: particles, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_particles(prefName: particles, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_popups(prefName: popups, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_popups(prefName: popups, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_popups(prefName: popups, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_popups(prefName: popups, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_timeout(prefName: timeout, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_timeout(prefName: timeout, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_timeout(prefName: timeout, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_timeout(prefName: timeout, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_warn(prefName: warn, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_warn(prefName: warn, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_warn(prefName: warn, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_warn(prefName: warn, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Toggle_wobbly(prefName: wobbly, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def Toggle_wobbly(prefName: wobbly, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_wobbly(prefName: wobbly, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle_wobbly(prefName: wobbly, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def Unlock(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Unlock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def Unlock(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Unlock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Unlock(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Unlock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Unlock(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Unlock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.UnlockAt")
     @js.native
     def UnlockAt: js.Array[UnlockRequirement] = js.native
-    @scala.inline
-    def UnlockAt_=(x: js.Array[UnlockRequirement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnlockAt")(x.asInstanceOf[js.Any])
+    inline def UnlockAt_=(x: js.Array[UnlockRequirement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnlockAt")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def UnlockTiered(me: typings.cookieclicker.Game.Upgrade): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UnlockTiered")(me.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def UnlockTiered(me: typings.cookieclicker.Game.Upgrade): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UnlockTiered")(me.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateAscend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscend")().asInstanceOf[Unit]
+    inline def UpdateAscend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscend")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateAscendIntro(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscendIntro")().asInstanceOf[Unit]
+    inline def UpdateAscendIntro(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscendIntro")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateAscensionModePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscensionModePrompt")().asInstanceOf[Unit]
+    inline def UpdateAscensionModePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscensionModePrompt")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateGrandmapocalypse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateGrandmapocalypse")().asInstanceOf[Unit]
+    inline def UpdateGrandmapocalypse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateGrandmapocalypse")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateLegacyPrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateLegacyPrompt")().asInstanceOf[Unit]
+    inline def UpdateLegacyPrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateLegacyPrompt")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateMenu")().asInstanceOf[Unit]
+    inline def UpdateMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateMenu")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateNotes(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateNotes")().asInstanceOf[Unit]
+    inline def UpdateNotes(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateNotes")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdatePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdatePrompt")().asInstanceOf[Unit]
+    inline def UpdatePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdatePrompt")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateReincarnateIntro(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateReincarnateIntro")().asInstanceOf[Unit]
+    inline def UpdateReincarnateIntro(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateReincarnateIntro")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateSpecial(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateSpecial")().asInstanceOf[Unit]
+    inline def UpdateSpecial(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateSpecial")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateTicker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateTicker")().asInstanceOf[Unit]
+    inline def UpdateTicker(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateTicker")().asInstanceOf[Unit]
     
-    @scala.inline
-    def UpdateWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateWrinklers")().asInstanceOf[Unit]
+    inline def UpdateWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateWrinklers")().asInstanceOf[Unit]
     
     @JSGlobal("Game.Upgrade")
     @js.native
@@ -1658,17 +1378,14 @@ object global {
       def this(name: String, desc: String, price: Double, icon: Icon, buyFunction: js.Function0[Unit]) = this()
     }
     
-    @scala.inline
-    def UpgradeDragon(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpgradeDragon")().asInstanceOf[Unit]
+    inline def UpgradeDragon(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpgradeDragon")().asInstanceOf[Unit]
     
     @JSGlobal("Game.UpgradePositions")
     @js.native
     def UpgradePositions: js.Object = js.native
-    @scala.inline
-    def UpgradePositions_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradePositions")(x.asInstanceOf[js.Any])
+    inline def UpgradePositions_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradePositions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def UpgradeSanta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpgradeSanta")().asInstanceOf[Unit]
+    inline def UpgradeSanta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpgradeSanta")().asInstanceOf[Unit]
     
     @JSGlobal("Game.Upgrades")
     @js.native
@@ -1677,8 +1394,7 @@ object global {
     @JSGlobal("Game.UpgradesById")
     @js.native
     def UpgradesById: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-    @scala.inline
-    def UpgradesById_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesById")(x.asInstanceOf[js.Any])
+    inline def UpgradesById_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesById")(x.asInstanceOf[js.Any])
     
     /* Inlined std.Record<cookieclicker.Game.UpgradePool, std.Array<cookieclicker.Game.Upgrade>> */
     object UpgradesByPool {
@@ -1691,20 +1407,17 @@ object global {
       @js.native
       def _empty: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
       
-      @scala.inline
-      def _empty_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("")(x.asInstanceOf[js.Any])
+      inline def _empty_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Game.UpgradesByPool.cookie")
       @js.native
       def cookie: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-      @scala.inline
-      def cookie_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookie")(x.asInstanceOf[js.Any])
+      inline def cookie_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookie")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Game.UpgradesByPool.debug")
       @js.native
       def debug: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-      @scala.inline
-      def debug_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+      inline def debug_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Game.UpgradesByPool.prestige")
       @js.native
@@ -1713,61 +1426,48 @@ object global {
       @JSGlobal("Game.UpgradesByPool.prestigeDecor")
       @js.native
       def prestigeDecor: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-      @scala.inline
-      def prestigeDecor_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prestigeDecor")(x.asInstanceOf[js.Any])
+      inline def prestigeDecor_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prestigeDecor")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def prestige_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prestige")(x.asInstanceOf[js.Any])
+      inline def prestige_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prestige")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Game.UpgradesByPool.tech")
       @js.native
       def tech: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-      @scala.inline
-      def tech_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tech")(x.asInstanceOf[js.Any])
+      inline def tech_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tech")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Game.UpgradesByPool.toggle")
       @js.native
       def toggle: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-      @scala.inline
-      def toggle_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toggle")(x.asInstanceOf[js.Any])
+      inline def toggle_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toggle")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Game.UpgradesByPool.unused")
       @js.native
       def unused: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-      @scala.inline
-      def unused_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unused")(x.asInstanceOf[js.Any])
+      inline def unused_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unused")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Game.UpgradesInStore")
     @js.native
     def UpgradesInStore: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-    @scala.inline
-    def UpgradesInStore_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesInStore")(x.asInstanceOf[js.Any])
+    inline def UpgradesInStore_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesInStore")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.UpgradesN")
     @js.native
     def UpgradesN: Double = js.native
-    @scala.inline
-    def UpgradesN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesN")(x.asInstanceOf[js.Any])
+    inline def UpgradesN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.UpgradesOwned")
     @js.native
     def UpgradesOwned: Double = js.native
-    @scala.inline
-    def UpgradesOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesOwned")(x.asInstanceOf[js.Any])
+    inline def UpgradesOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesOwned")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Upgrades_=(x: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.Upgrade])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upgrades")(x.asInstanceOf[js.Any])
+    inline def Upgrades_=(x: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.Upgrade])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upgrades")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def Win(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Win")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def Win(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Win")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Win(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Win")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Win(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Win")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def WriteButton_altDraw(prefName: altDraw, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_altDraw(
+    inline def WriteButton_altDraw(prefName: altDraw, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_altDraw(
       prefName: altDraw,
       button: String,
       on: String,
@@ -1776,10 +1476,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_animate(prefName: animate, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_animate(
+    inline def WriteButton_animate(prefName: animate, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_animate(
       prefName: animate,
       button: String,
       on: String,
@@ -1788,10 +1486,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_askLumps(prefName: askLumps, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_askLumps(
+    inline def WriteButton_askLumps(prefName: askLumps, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_askLumps(
       prefName: askLumps,
       button: String,
       on: String,
@@ -1800,10 +1496,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_autosave(prefName: autosave, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_autosave(
+    inline def WriteButton_autosave(prefName: autosave, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_autosave(
       prefName: autosave,
       button: String,
       on: String,
@@ -1812,10 +1506,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_autoupdate(prefName: autoupdate, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_autoupdate(
+    inline def WriteButton_autoupdate(prefName: autoupdate, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_autoupdate(
       prefName: autoupdate,
       button: String,
       on: String,
@@ -1824,10 +1516,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_cursors(prefName: cursors, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_cursors(
+    inline def WriteButton_cursors(prefName: cursors, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_cursors(
       prefName: cursors,
       button: String,
       on: String,
@@ -1836,10 +1526,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_customGrandmas(
+    inline def WriteButton_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_customGrandmas(
       prefName: customGrandmas,
       button: String,
       on: String,
@@ -1848,10 +1536,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_extraButtons(prefName: extraButtons, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_extraButtons(
+    inline def WriteButton_extraButtons(prefName: extraButtons, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_extraButtons(
       prefName: extraButtons,
       button: String,
       on: String,
@@ -1860,15 +1546,11 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_fancy(prefName: fancy, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_fancy(prefName: fancy, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_fancy(prefName: fancy, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_fancy(prefName: fancy, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_filters(prefName: filters, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_filters(
+    inline def WriteButton_filters(prefName: filters, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_filters(
       prefName: filters,
       button: String,
       on: String,
@@ -1877,25 +1559,17 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_focus(prefName: focus, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_focus(prefName: focus, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_focus(prefName: focus, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_focus(prefName: focus, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_format(prefName: format, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_format(prefName: format, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_format(prefName: format, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_format(prefName: format, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_milk(prefName: milk, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_milk(prefName: milk, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_milk(prefName: milk, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_milk(prefName: milk, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_monospace(prefName: monospace, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_monospace(
+    inline def WriteButton_monospace(prefName: monospace, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_monospace(
       prefName: monospace,
       button: String,
       on: String,
@@ -1904,15 +1578,11 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_notifs(prefName: notifs, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_notifs(prefName: notifs, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_notifs(prefName: notifs, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_notifs(prefName: notifs, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_numbers(prefName: numbers, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_numbers(
+    inline def WriteButton_numbers(prefName: numbers, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_numbers(
       prefName: numbers,
       button: String,
       on: String,
@@ -1921,10 +1591,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_particles(prefName: particles, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_particles(
+    inline def WriteButton_particles(prefName: particles, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_particles(
       prefName: particles,
       button: String,
       on: String,
@@ -1933,15 +1601,11 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_popups(prefName: popups, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_popups(prefName: popups, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_popups(prefName: popups, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_popups(prefName: popups, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_showBackupWarning(
+    inline def WriteButton_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_showBackupWarning(
       prefName: showBackupWarning,
       button: String,
       on: String,
@@ -1950,10 +1614,8 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_timeout(prefName: timeout, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_timeout(
+    inline def WriteButton_timeout(prefName: timeout, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_timeout(
       prefName: timeout,
       button: String,
       on: String,
@@ -1962,23 +1624,16 @@ object global {
       invert: PseudoBoolean
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_warn(prefName: warn, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_warn(prefName: warn, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_warn(prefName: warn, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_warn(prefName: warn, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteButton_wobbly(prefName: wobbly, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def WriteButton_wobbly(prefName: wobbly, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_wobbly(prefName: wobbly, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WriteButton_wobbly(prefName: wobbly, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def WriteSave(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteSave")().asInstanceOf[String]
-    @scala.inline
-    def WriteSave(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteSave")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def WriteSave(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteSave")().asInstanceOf[String]
+    inline def WriteSave(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteSave")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def WriteSlider(
+    inline def WriteSlider(
       slider: String,
       leftText: String,
       rightText: String,
@@ -1989,17 +1644,14 @@ object global {
     @JSGlobal("Game.accumulatedDelay")
     @js.native
     def accumulatedDelay: Double = js.native
-    @scala.inline
-    def accumulatedDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accumulatedDelay")(x.asInstanceOf[js.Any])
+    inline def accumulatedDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accumulatedDelay")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def addClass(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addClass(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.ascendContentl")
     @js.native
     def ascendContentl: js.Object = js.native
-    @scala.inline
-    def ascendContentl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendContentl")(x.asInstanceOf[js.Any])
+    inline def ascendContentl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendContentl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendMeter")
     @js.native
@@ -2008,8 +1660,7 @@ object global {
     @JSGlobal("Game.ascendMeterLevel")
     @js.native
     def ascendMeterLevel: Double = js.native
-    @scala.inline
-    def ascendMeterLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeterLevel")(x.asInstanceOf[js.Any])
+    inline def ascendMeterLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeterLevel")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendMeterPercent")
     @js.native
@@ -2018,64 +1669,51 @@ object global {
     @JSGlobal("Game.ascendMeterPercentT")
     @js.native
     def ascendMeterPercentT: Double = js.native
-    @scala.inline
-    def ascendMeterPercentT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeterPercentT")(x.asInstanceOf[js.Any])
+    inline def ascendMeterPercentT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeterPercentT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ascendMeterPercent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeterPercent")(x.asInstanceOf[js.Any])
+    inline def ascendMeterPercent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeterPercent")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def ascendMeter_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeter")(x.asInstanceOf[js.Any])
+    inline def ascendMeter_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeter")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendNumber")
     @js.native
     def ascendNumber: js.Object = js.native
-    @scala.inline
-    def ascendNumber_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendNumber")(x.asInstanceOf[js.Any])
+    inline def ascendNumber_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendNumber")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendUpgradesl")
     @js.native
     def ascendUpgradesl: js.Object = js.native
-    @scala.inline
-    def ascendUpgradesl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendUpgradesl")(x.asInstanceOf[js.Any])
+    inline def ascendUpgradesl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendUpgradesl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendZoomablel")
     @js.native
     def ascendZoomablel: js.Object = js.native
-    @scala.inline
-    def ascendZoomablel_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendZoomablel")(x.asInstanceOf[js.Any])
+    inline def ascendZoomablel_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendZoomablel")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendl")
     @js.native
     def ascendl: js.Object = js.native
-    @scala.inline
-    def ascendl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendl")(x.asInstanceOf[js.Any])
+    inline def ascendl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascensionMode")
     @js.native
     def ascensionMode: Double = js.native
-    @scala.inline
-    def ascensionMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascensionMode")(x.asInstanceOf[js.Any])
+    inline def ascensionMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascensionMode")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascensionModes")
     @js.native
     def ascensionModes: js.Object = js.native
-    @scala.inline
-    def ascensionModes_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascensionModes")(x.asInstanceOf[js.Any])
+    inline def ascensionModes_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascensionModes")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def attachTooltip(el: HTMLElement, func: String, origin: TooltipOrigins): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTooltip")(el.asInstanceOf[js.Any], func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def attachTooltip(el: HTMLElement, func: js.Function0[String], origin: TooltipOrigins): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTooltip")(el.asInstanceOf[js.Any], func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def attachTooltip(el: HTMLElement, func: String, origin: TooltipOrigins): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTooltip")(el.asInstanceOf[js.Any], func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def attachTooltip(el: HTMLElement, func: js.Function0[String], origin: TooltipOrigins): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTooltip")(el.asInstanceOf[js.Any], func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def auraMult(what: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("auraMult")(what.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def auraMult(what: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("auraMult")(what.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     @JSGlobal("Game.autoclickerDetected")
     @js.native
     def autoclickerDetected: Double = js.native
-    @scala.inline
-    def autoclickerDetected_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoclickerDetected")(x.asInstanceOf[js.Any])
+    inline def autoclickerDetected_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoclickerDetected")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.bakeryName")
     @js.native
@@ -2084,41 +1722,32 @@ object global {
     @JSGlobal("Game.bakeryNameL")
     @js.native
     def bakeryNameL: HTMLDivElement = js.native
-    @scala.inline
-    def bakeryNameL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bakeryNameL")(x.asInstanceOf[js.Any])
+    inline def bakeryNameL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bakeryNameL")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def bakeryNamePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNamePrompt")().asInstanceOf[Unit]
+    inline def bakeryNamePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNamePrompt")().asInstanceOf[Unit]
     
-    @scala.inline
-    def bakeryNamePromptRandom(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNamePromptRandom")().asInstanceOf[String]
+    inline def bakeryNamePromptRandom(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNamePromptRandom")().asInstanceOf[String]
     
-    @scala.inline
-    def bakeryNameRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNameRefresh")().asInstanceOf[Unit]
+    inline def bakeryNameRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNameRefresh")().asInstanceOf[Unit]
     
-    @scala.inline
-    def bakeryNameSet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNameSet")().asInstanceOf[Unit]
+    inline def bakeryNameSet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bakeryNameSet")().asInstanceOf[Unit]
     
-    @scala.inline
-    def bakeryName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bakeryName")(x.asInstanceOf[js.Any])
+    inline def bakeryName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bakeryName")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.baseResearchTime")
     @js.native
     def baseResearchTime: Double = js.native
-    @scala.inline
-    def baseResearchTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseResearchTime")(x.asInstanceOf[js.Any])
+    inline def baseResearchTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseResearchTime")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.baseSeason")
     @js.native
     def baseSeason: String = js.native
-    @scala.inline
-    def baseSeason_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseSeason")(x.asInstanceOf[js.Any])
+    inline def baseSeason_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseSeason")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.beta")
     @js.native
     def beta: PseudoBoolean = js.native
-    @scala.inline
-    def beta_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beta")(x.asInstanceOf[js.Any])
+    inline def beta_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beta")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.bg")
     @js.native
@@ -2127,41 +1756,34 @@ object global {
     @JSGlobal("Game.bgFade")
     @js.native
     def bgFade: String = js.native
-    @scala.inline
-    def bgFade_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgFade")(x.asInstanceOf[js.Any])
+    inline def bgFade_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgFade")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.bgR")
     @js.native
     def bgR: Double = js.native
-    @scala.inline
-    def bgR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgR")(x.asInstanceOf[js.Any])
+    inline def bgR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.bgRd")
     @js.native
     def bgRd: Double = js.native
-    @scala.inline
-    def bgRd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgRd")(x.asInstanceOf[js.Any])
+    inline def bgRd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgRd")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.bgType")
     @js.native
     def bgType: Double = js.native
-    @scala.inline
-    def bgType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgType")(x.asInstanceOf[js.Any])
+    inline def bgType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bgType")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def bg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bg")(x.asInstanceOf[js.Any])
+    inline def bg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bg")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.blendModesOn")
     @js.native
     def blendModesOn: Boolean = js.native
-    @scala.inline
-    def blendModesOn_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blendModesOn")(x.asInstanceOf[js.Any])
+    inline def blendModesOn_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blendModesOn")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.bounds")
     @js.native
     def bounds: DOMRect = js.native
-    @scala.inline
-    def bounds_=(x: DOMRect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounds")(x.asInstanceOf[js.Any])
+    inline def bounds_=(x: DOMRect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounds")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.buffType")
     @js.native
@@ -2187,17 +1809,14 @@ object global {
     @JSGlobal("Game.buffTypesByName")
     @js.native
     def buffTypesByName: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.buffType]) = js.native
-    @scala.inline
-    def buffTypesByName_=(x: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.buffType])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffTypesByName")(x.asInstanceOf[js.Any])
+    inline def buffTypesByName_=(x: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.buffType])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffTypesByName")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.buffTypesN")
     @js.native
     def buffTypesN: Double = js.native
-    @scala.inline
-    def buffTypesN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffTypesN")(x.asInstanceOf[js.Any])
+    inline def buffTypesN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffTypesN")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def buffTypes_=(x: js.Array[typings.cookieclicker.Game.buffType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffTypes")(x.asInstanceOf[js.Any])
+    inline def buffTypes_=(x: js.Array[typings.cookieclicker.Game.buffType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffTypes")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.buffs")
     @js.native
@@ -2206,17 +1825,14 @@ object global {
     @JSGlobal("Game.buffsL")
     @js.native
     def buffsL: HTMLDivElement = js.native
-    @scala.inline
-    def buffsL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffsL")(x.asInstanceOf[js.Any])
+    inline def buffsL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffsL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.buffsN")
     @js.native
     def buffsN: Double = js.native
-    @scala.inline
-    def buffsN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffsN")(x.asInstanceOf[js.Any])
+    inline def buffsN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffsN")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def buffs_=(x: js.Array[Buff]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffs")(x.asInstanceOf[js.Any])
+    inline def buffs_=(x: js.Array[Buff]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffs")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.buyBulk")
     @js.native
@@ -2225,122 +1841,98 @@ object global {
     @JSGlobal("Game.buyBulkOld")
     @js.native
     def buyBulkOld: Double = js.native
-    @scala.inline
-    def buyBulkOld_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyBulkOld")(x.asInstanceOf[js.Any])
+    inline def buyBulkOld_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyBulkOld")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.buyBulkShortcut")
     @js.native
     def buyBulkShortcut: Double = js.native
-    @scala.inline
-    def buyBulkShortcut_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyBulkShortcut")(x.asInstanceOf[js.Any])
+    inline def buyBulkShortcut_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyBulkShortcut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def buyBulk_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyBulk")(x.asInstanceOf[js.Any])
+    inline def buyBulk_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyBulk")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.buyMode")
     @js.native
     def buyMode: Double = js.native
-    @scala.inline
-    def buyMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyMode")(x.asInstanceOf[js.Any])
+    inline def buyMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buyMode")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def canLumps(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canLumps")().asInstanceOf[Boolean]
+    inline def canLumps(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canLumps")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def canRefillLump(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canRefillLump")().asInstanceOf[Boolean]
+    inline def canRefillLump(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canRefillLump")().asInstanceOf[Boolean]
     
     @JSGlobal("Game.catchupLogic")
     @js.native
     def catchupLogic: Double = js.native
-    @scala.inline
-    def catchupLogic_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("catchupLogic")(x.asInstanceOf[js.Any])
+    inline def catchupLogic_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("catchupLogic")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.chimeType")
     @js.native
     def chimeType: Double = js.native
-    @scala.inline
-    def chimeType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chimeType")(x.asInstanceOf[js.Any])
+    inline def chimeType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chimeType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.choiceSelectorChoices")
     @js.native
     def choiceSelectorChoices: js.Array[SelectorSwitchChoice] = js.native
-    @scala.inline
-    def choiceSelectorChoices_=(x: js.Array[SelectorSwitchChoice]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("choiceSelectorChoices")(x.asInstanceOf[js.Any])
+    inline def choiceSelectorChoices_=(x: js.Array[SelectorSwitchChoice]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("choiceSelectorChoices")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.choiceSelectorOn")
     @js.native
     def choiceSelectorOn: Double = js.native
-    @scala.inline
-    def choiceSelectorOn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("choiceSelectorOn")(x.asInstanceOf[js.Any])
+    inline def choiceSelectorOn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("choiceSelectorOn")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.choiceSelectorSelected")
     @js.native
     def choiceSelectorSelected: Double = js.native
-    @scala.inline
-    def choiceSelectorSelected_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("choiceSelectorSelected")(x.asInstanceOf[js.Any])
+    inline def choiceSelectorSelected_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("choiceSelectorSelected")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.clickFrom")
     @js.native
     def clickFrom: Double = js.native
-    @scala.inline
-    def clickFrom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clickFrom")(x.asInstanceOf[js.Any])
+    inline def clickFrom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clickFrom")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def clickLump(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickLump")().asInstanceOf[Unit]
+    inline def clickLump(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickLump")().asInstanceOf[Unit]
     
     @JSGlobal("Game.clickStr")
     @js.native
     def clickStr: String = js.native
-    @scala.inline
-    def clickStr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clickStr")(x.asInstanceOf[js.Any])
+    inline def clickStr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clickStr")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def computeLumpTimes(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLumpTimes")().asInstanceOf[Unit]
+    inline def computeLumpTimes(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLumpTimes")().asInstanceOf[Unit]
     
-    @scala.inline
-    def computeLumpType(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLumpType")().asInstanceOf[Boolean]
+    inline def computeLumpType(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLumpType")().asInstanceOf[Boolean]
     
-    @scala.inline
-    def computeSeasonPrices(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeSeasonPrices")().asInstanceOf[Double]
+    inline def computeSeasonPrices(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeSeasonPrices")().asInstanceOf[Double]
     
-    @scala.inline
-    def computeSeasons(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("computeSeasons")().asInstanceOf[Unit]
+    inline def computeSeasons(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("computeSeasons")().asInstanceOf[Unit]
     
     @JSGlobal("Game.computedMouseCps")
     @js.native
     def computedMouseCps: Double = js.native
-    @scala.inline
-    def computedMouseCps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("computedMouseCps")(x.asInstanceOf[js.Any])
+    inline def computedMouseCps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("computedMouseCps")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookieClickSound")
     @js.native
     def cookieClickSound: Double = js.native
-    @scala.inline
-    def cookieClickSound_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieClickSound")(x.asInstanceOf[js.Any])
+    inline def cookieClickSound_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieClickSound")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookieClicks")
     @js.native
     def cookieClicks: Double = js.native
-    @scala.inline
-    def cookieClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieClicks")(x.asInstanceOf[js.Any])
+    inline def cookieClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieClicks")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookieOriginX")
     @js.native
     def cookieOriginX: Double = js.native
-    @scala.inline
-    def cookieOriginX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieOriginX")(x.asInstanceOf[js.Any])
+    inline def cookieOriginX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieOriginX")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookieOriginY")
     @js.native
     def cookieOriginY: Double = js.native
-    @scala.inline
-    def cookieOriginY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieOriginY")(x.asInstanceOf[js.Any])
+    inline def cookieOriginY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieOriginY")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookieUpgrades")
     @js.native
     def cookieUpgrades: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-    @scala.inline
-    def cookieUpgrades_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieUpgrades")(x.asInstanceOf[js.Any])
+    inline def cookieUpgrades_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookieUpgrades")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookies")
     @js.native
@@ -2349,14 +1941,12 @@ object global {
     @JSGlobal("Game.cookiesEarned")
     @js.native
     def cookiesEarned: Double = js.native
-    @scala.inline
-    def cookiesEarned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesEarned")(x.asInstanceOf[js.Any])
+    inline def cookiesEarned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesEarned")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookiesMultByType")
     @js.native
     def cookiesMultByType: js.Object = js.native
-    @scala.inline
-    def cookiesMultByType_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesMultByType")(x.asInstanceOf[js.Any])
+    inline def cookiesMultByType_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesMultByType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookiesPs")
     @js.native
@@ -2365,144 +1955,109 @@ object global {
     @JSGlobal("Game.cookiesPsByType")
     @js.native
     def cookiesPsByType: js.Object = js.native
-    @scala.inline
-    def cookiesPsByType_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPsByType")(x.asInstanceOf[js.Any])
+    inline def cookiesPsByType_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPsByType")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def cookiesPs_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPs")(x.asInstanceOf[js.Any])
+    inline def cookiesPs_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPs")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookiesReset")
     @js.native
     def cookiesReset: Double = js.native
-    @scala.inline
-    def cookiesReset_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesReset")(x.asInstanceOf[js.Any])
+    inline def cookiesReset_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesReset")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookiesSucked")
     @js.native
     def cookiesSucked: Double = js.native
-    @scala.inline
-    def cookiesSucked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesSucked")(x.asInstanceOf[js.Any])
+    inline def cookiesSucked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesSucked")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def cookies_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookies")(x.asInstanceOf[js.Any])
+    inline def cookies_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookies")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookiesd")
     @js.native
     def cookiesd: Double = js.native
-    @scala.inline
-    def cookiesd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesd")(x.asInstanceOf[js.Any])
+    inline def cookiesd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesd")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def costDetails(cost: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("costDetails")(cost.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def costDetails(cost: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("costDetails")(cost.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.cpsSucked")
     @js.native
     def cpsSucked: Double = js.native
-    @scala.inline
-    def cpsSucked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cpsSucked")(x.asInstanceOf[js.Any])
+    inline def cpsSucked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cpsSucked")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def crate(me: typings.cookieclicker.Game.Achievement, context: Unit, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def crate(me: typings.cookieclicker.Game.Upgrade, context: Unit, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Achievement, context: Unit, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Upgrade, context: Unit, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def crateTooltip(me: typings.cookieclicker.Game.Achievement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def crateTooltip(me: typings.cookieclicker.Game.Upgrade): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def crateTooltip(me: typings.cookieclicker.Game.Achievement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def crateTooltip(me: typings.cookieclicker.Game.Upgrade): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def crateTooltip_ascend(me: typings.cookieclicker.Game.Achievement, context: ascend): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def crateTooltip_ascend(me: typings.cookieclicker.Game.Upgrade, context: ascend): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crateTooltip_ascend(me: typings.cookieclicker.Game.Achievement, context: ascend): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crateTooltip_ascend(me: typings.cookieclicker.Game.Upgrade, context: ascend): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def crateTooltip_stats(me: typings.cookieclicker.Game.Achievement, context: stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def crateTooltip_stats(me: typings.cookieclicker.Game.Upgrade, context: stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crateTooltip_stats(me: typings.cookieclicker.Game.Achievement, context: stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crateTooltip_stats(me: typings.cookieclicker.Game.Upgrade, context: stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def crateTooltip_store(me: typings.cookieclicker.Game.Achievement, context: store): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def crateTooltip_store(me: typings.cookieclicker.Game.Upgrade, context: store): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crateTooltip_store(me: typings.cookieclicker.Game.Achievement, context: store): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crateTooltip_store(me: typings.cookieclicker.Game.Upgrade, context: store): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def crate_ascend(me: typings.cookieclicker.Game.Achievement, context: ascend, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def crate_ascend(me: typings.cookieclicker.Game.Upgrade, context: ascend, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate_ascend(me: typings.cookieclicker.Game.Achievement, context: ascend, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate_ascend(me: typings.cookieclicker.Game.Upgrade, context: ascend, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def crate_stats(me: typings.cookieclicker.Game.Achievement, context: stats, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def crate_stats(me: typings.cookieclicker.Game.Upgrade, context: stats, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate_stats(me: typings.cookieclicker.Game.Achievement, context: stats, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate_stats(me: typings.cookieclicker.Game.Upgrade, context: stats, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def crate_store(me: typings.cookieclicker.Game.Achievement, context: store, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def crate_store(me: typings.cookieclicker.Game.Upgrade, context: store, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate_store(me: typings.cookieclicker.Game.Achievement, context: store, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate_store(me: typings.cookieclicker.Game.Upgrade, context: store, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSGlobal("Game.cssClasses")
     @js.native
     def cssClasses: js.Array[String] = js.native
-    @scala.inline
-    def cssClasses_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cssClasses")(x.asInstanceOf[js.Any])
+    inline def cssClasses_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cssClasses")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.currentFps")
     @js.native
     def currentFps: Double = js.native
-    @scala.inline
-    def currentFps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentFps")(x.asInstanceOf[js.Any])
+    inline def currentFps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentFps")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.customGrandmaNames")
     @js.native
     def customGrandmaNames: js.Array[String] = js.native
-    @scala.inline
-    def customGrandmaNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customGrandmaNames")(x.asInstanceOf[js.Any])
+    inline def customGrandmaNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("customGrandmaNames")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.darkenL")
     @js.native
     def darkenL: js.Object = js.native
-    @scala.inline
-    def darkenL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkenL")(x.asInstanceOf[js.Any])
+    inline def darkenL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkenL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.debugColors")
     @js.native
     def debugColors: js.Array[String] = js.native
-    @scala.inline
-    def debugColors_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugColors")(x.asInstanceOf[js.Any])
+    inline def debugColors_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugColors")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.debugTimersOn")
     @js.native
     def debugTimersOn: Double = js.native
-    @scala.inline
-    def debugTimersOn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugTimersOn")(x.asInstanceOf[js.Any])
+    inline def debugTimersOn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugTimersOn")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.debuggedUpgradeCpClick")
     @js.native
     def debuggedUpgradeCpClick: js.Array[Double] = js.native
-    @scala.inline
-    def debuggedUpgradeCpClick_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debuggedUpgradeCpClick")(x.asInstanceOf[js.Any])
+    inline def debuggedUpgradeCpClick_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debuggedUpgradeCpClick")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.debuggedUpgradeCpS")
     @js.native
     def debuggedUpgradeCpS: js.Array[Double] = js.native
-    @scala.inline
-    def debuggedUpgradeCpS_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debuggedUpgradeCpS")(x.asInstanceOf[js.Any])
+    inline def debuggedUpgradeCpS_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debuggedUpgradeCpS")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.defaultBg")
     @js.native
     def defaultBg: String = js.native
-    @scala.inline
-    def defaultBg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBg")(x.asInstanceOf[js.Any])
+    inline def defaultBg_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBg")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.delayTimeouts")
     @js.native
     def delayTimeouts: Double = js.native
-    @scala.inline
-    def delayTimeouts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delayTimeouts")(x.asInstanceOf[js.Any])
+    inline def delayTimeouts_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delayTimeouts")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def doLumps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doLumps")().asInstanceOf[Unit]
+    inline def doLumps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doLumps")().asInstanceOf[Unit]
     
     @JSGlobal("Game.dragonAura")
     @js.native
@@ -2511,59 +2066,48 @@ object global {
     @JSGlobal("Game.dragonAura2")
     @js.native
     def dragonAura2: Double = js.native
-    @scala.inline
-    def dragonAura2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAura2")(x.asInstanceOf[js.Any])
+    inline def dragonAura2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAura2")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def dragonAura_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAura")(x.asInstanceOf[js.Any])
+    inline def dragonAura_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAura")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.dragonAuras")
     @js.native
     def dragonAuras: Record[Double, DragonAura] = js.native
-    @scala.inline
-    def dragonAuras_=(x: Record[Double, DragonAura]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAuras")(x.asInstanceOf[js.Any])
+    inline def dragonAuras_=(x: Record[Double, DragonAura]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAuras")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.dragonLevel")
     @js.native
     def dragonLevel: Double = js.native
-    @scala.inline
-    def dragonLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonLevel")(x.asInstanceOf[js.Any])
+    inline def dragonLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonLevel")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.dragonLevels")
     @js.native
     def dragonLevels: js.Array[DragonLevel] = js.native
-    @scala.inline
-    def dragonLevels_=(x: js.Array[DragonLevel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonLevels")(x.asInstanceOf[js.Any])
+    inline def dragonLevels_=(x: js.Array[DragonLevel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonLevels")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.drawT")
     @js.native
     def drawT: Double = js.native
-    @scala.inline
-    def drawT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawT")(x.asInstanceOf[js.Any])
+    inline def drawT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def dropRateMult(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dropRateMult")().asInstanceOf[Double]
+    inline def dropRateMult(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dropRateMult")().asInstanceOf[Double]
     
     @JSGlobal("Game.easterEggs")
     @js.native
     def easterEggs: js.Array[String] = js.native
-    @scala.inline
-    def easterEggs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easterEggs")(x.asInstanceOf[js.Any])
+    inline def easterEggs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easterEggs")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def eff(name: String, `def`: String): Effects = (^.asInstanceOf[js.Dynamic].applyDynamic("eff")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Effects]
+    inline def eff(name: String, `def`: String): Effects = (^.asInstanceOf[js.Dynamic].applyDynamic("eff")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Effects]
     
     @JSGlobal("Game.effs")
     @js.native
     def effs: Effects = js.native
-    @scala.inline
-    def effs_=(x: Effects): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("effs")(x.asInstanceOf[js.Any])
+    inline def effs_=(x: Effects): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("effs")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.eggDrops")
     @js.native
     def eggDrops: js.Array[String] = js.native
-    @scala.inline
-    def eggDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eggDrops")(x.asInstanceOf[js.Any])
+    inline def eggDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eggDrops")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.elderWrath")
     @js.native
@@ -2572,47 +2116,39 @@ object global {
     @JSGlobal("Game.elderWrathD")
     @js.native
     def elderWrathD: Double = js.native
-    @scala.inline
-    def elderWrathD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elderWrathD")(x.asInstanceOf[js.Any])
+    inline def elderWrathD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elderWrathD")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.elderWrathOld")
     @js.native
     def elderWrathOld: Double = js.native
-    @scala.inline
-    def elderWrathOld_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elderWrathOld")(x.asInstanceOf[js.Any])
+    inline def elderWrathOld_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elderWrathOld")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def elderWrath_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elderWrath")(x.asInstanceOf[js.Any])
+    inline def elderWrath_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elderWrath")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.externalDataLoaded")
     @js.native
     def externalDataLoaded: Boolean = js.native
-    @scala.inline
-    def externalDataLoaded_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("externalDataLoaded")(x.asInstanceOf[js.Any])
+    inline def externalDataLoaded_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("externalDataLoaded")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.foolObjects")
     @js.native
     def foolObjects: js.Array[FoolBuilding] = js.native
-    @scala.inline
-    def foolObjects_=(x: js.Array[FoolBuilding]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foolObjects")(x.asInstanceOf[js.Any])
+    inline def foolObjects_=(x: js.Array[FoolBuilding]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foolObjects")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.forceUnslotGod")
     @js.native
     def forceUnslotGod: js.UndefOr[js.Function1[/* god */ String, Boolean]] = js.native
-    @scala.inline
-    def forceUnslotGod_=(x: js.UndefOr[js.Function1[/* god */ String, Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceUnslotGod")(x.asInstanceOf[js.Any])
+    inline def forceUnslotGod_=(x: js.UndefOr[js.Function1[/* god */ String, Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forceUnslotGod")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.fortuneCPS")
     @js.native
     def fortuneCPS: PseudoBoolean = js.native
-    @scala.inline
-    def fortuneCPS_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fortuneCPS")(x.asInstanceOf[js.Any])
+    inline def fortuneCPS_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fortuneCPS")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.fortuneGC")
     @js.native
     def fortuneGC: PseudoBoolean = js.native
-    @scala.inline
-    def fortuneGC_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fortuneGC")(x.asInstanceOf[js.Any])
+    inline def fortuneGC_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fortuneGC")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.fps")
     @js.native
@@ -2621,88 +2157,61 @@ object global {
     @JSGlobal("Game.fpsStartTime")
     @js.native
     def fpsStartTime: Double = js.native
-    @scala.inline
-    def fpsStartTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fpsStartTime")(x.asInstanceOf[js.Any])
+    inline def fpsStartTime_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fpsStartTime")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def fps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fps")(x.asInstanceOf[js.Any])
+    inline def fps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fps")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.frameNumber")
     @js.native
     def frameNumber: Double = js.native
-    @scala.inline
-    def frameNumber_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameNumber")(x.asInstanceOf[js.Any])
+    inline def frameNumber_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("frameNumber")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.fullDate")
     @js.native
     def fullDate: Double = js.native
-    @scala.inline
-    def fullDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullDate")(x.asInstanceOf[js.Any])
+    inline def fullDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullDate")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def gainBuff(`type`: String, time: Double, arg1: Double, arg2: Double, arg3: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Buff]
+    inline def gainBuff(`type`: String, time: Double, arg1: Double, arg2: Double, arg3: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Buff]
     
-    @scala.inline
-    def gainLumps(total: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gainLumps")(total.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def gainLumps(total: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gainLumps")(total.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.gainedPrestige")
     @js.native
     def gainedPrestige: Double = js.native
-    @scala.inline
-    def gainedPrestige_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gainedPrestige")(x.asInstanceOf[js.Any])
+    inline def gainedPrestige_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gainedPrestige")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDynamicTooltip(func: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def getDynamicTooltip(func: String, origin: Unit, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getDynamicTooltip(func: String, origin: Unit, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getDynamicTooltip(func: String, origin: TooltipOrigins): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getDynamicTooltip(func: String, origin: TooltipOrigins, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getDynamicTooltip(func: String, origin: TooltipOrigins, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDynamicTooltip(func: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDynamicTooltip(func: String, origin: Unit, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDynamicTooltip(func: String, origin: Unit, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDynamicTooltip(func: String, origin: TooltipOrigins): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDynamicTooltip(func: String, origin: TooltipOrigins, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getDynamicTooltip(func: String, origin: TooltipOrigins, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDynamicTooltip")(func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def getFps(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFps")().asInstanceOf[Double]
+    inline def getFps(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFps")().asInstanceOf[Double]
     
-    @scala.inline
-    def getLumpRefillMax(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLumpRefillMax")().asInstanceOf[Double]
+    inline def getLumpRefillMax(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLumpRefillMax")().asInstanceOf[Double]
     
-    @scala.inline
-    def getLumpRefillRemaining(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLumpRefillRemaining")().asInstanceOf[Double]
+    inline def getLumpRefillRemaining(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLumpRefillRemaining")().asInstanceOf[Double]
     
-    @scala.inline
-    def getNewTicker(manual: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNewTicker")(manual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getNewTicker(manual: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNewTicker")(manual.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getPledgeDuration(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPledgeDuration")().asInstanceOf[Double]
+    inline def getPledgeDuration(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPledgeDuration")().asInstanceOf[Double]
     
-    @scala.inline
-    def getSeasonDuration(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeasonDuration")().asInstanceOf[Double]
+    inline def getSeasonDuration(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeasonDuration")().asInstanceOf[Double]
     
-    @scala.inline
-    def getTooltip(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def getTooltip(text: String, origin: Unit, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getTooltip(text: String, origin: Unit, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getTooltip(text: String, origin: TooltipOrigins): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getTooltip(text: String, origin: TooltipOrigins, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def getTooltip(text: String, origin: TooltipOrigins, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getTooltip(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getTooltip(text: String, origin: Unit, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getTooltip(text: String, origin: Unit, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getTooltip(text: String, origin: TooltipOrigins): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getTooltip(text: String, origin: TooltipOrigins, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getTooltip(text: String, origin: TooltipOrigins, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def getWrinklersMax(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWrinklersMax")().asInstanceOf[Double]
+    inline def getWrinklersMax(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWrinklersMax")().asInstanceOf[Double]
     
     @JSGlobal("Game.globalCpsMult")
     @js.native
     def globalCpsMult: Double = js.native
-    @scala.inline
-    def globalCpsMult_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalCpsMult")(x.asInstanceOf[js.Any])
+    inline def globalCpsMult_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalCpsMult")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.goldenClicks")
     @js.native
@@ -2711,11 +2220,9 @@ object global {
     @JSGlobal("Game.goldenClicksLocal")
     @js.native
     def goldenClicksLocal: Double = js.native
-    @scala.inline
-    def goldenClicksLocal_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenClicksLocal")(x.asInstanceOf[js.Any])
+    inline def goldenClicksLocal_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenClicksLocal")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def goldenClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenClicks")(x.asInstanceOf[js.Any])
+    inline def goldenClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenClicks")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.goldenCookieBuildingBuffs")
     @js.native
@@ -2723,8 +2230,7 @@ object global {
         /* keyof std.Record<string, cookieclicker.Game.GameObject> & cookieclicker.anon.Bank */ Farm | Temple | (`Wizard tower`) | typings.cookieclicker.cookieclickerStrings.Bank, 
         js.Tuple2[String, String]
       ] = js.native
-    @scala.inline
-    def goldenCookieBuildingBuffs_=(
+    inline def goldenCookieBuildingBuffs_=(
       x: Record[
           /* keyof std.Record<string, cookieclicker.Game.GameObject> & cookieclicker.anon.Bank */ Farm | Temple | (`Wizard tower`) | typings.cookieclicker.cookieclickerStrings.Bank, 
           js.Tuple2[String, String]
@@ -2734,62 +2240,50 @@ object global {
     @JSGlobal("Game.goldenCookieChoices")
     @js.native
     def goldenCookieChoices: js.Array[String] = js.native
-    @scala.inline
-    def goldenCookieChoices_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenCookieChoices")(x.asInstanceOf[js.Any])
+    inline def goldenCookieChoices_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenCookieChoices")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.goldenCookieUpgrades")
     @js.native
     def goldenCookieUpgrades: js.Array[String] = js.native
-    @scala.inline
-    def goldenCookieUpgrades_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenCookieUpgrades")(x.asInstanceOf[js.Any])
+    inline def goldenCookieUpgrades_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goldenCookieUpgrades")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.grandmaNames")
     @js.native
     def grandmaNames: js.Array[String] = js.native
-    @scala.inline
-    def grandmaNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grandmaNames")(x.asInstanceOf[js.Any])
+    inline def grandmaNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("grandmaNames")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.halloweenDrops")
     @js.native
     def halloweenDrops: js.Array[String] = js.native
-    @scala.inline
-    def halloweenDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("halloweenDrops")(x.asInstanceOf[js.Any])
+    inline def halloweenDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("halloweenDrops")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def handleScroll(e: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleScroll")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def handleScroll(e: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handleScroll")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.handmadeCookies")
     @js.native
     def handmadeCookies: Double = js.native
-    @scala.inline
-    def handmadeCookies_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handmadeCookies")(x.asInstanceOf[js.Any])
+    inline def handmadeCookies_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handmadeCookies")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def harvestLumps(amount: Double, silent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("harvestLumps")(amount.asInstanceOf[js.Any], silent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def harvestLumps(amount: Double, silent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("harvestLumps")(amount.asInstanceOf[js.Any], silent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def hasAura(what: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasAura")(what.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasAura(what: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasAura")(what.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def hasBuff(what: String): Double | Buff = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBuff")(what.asInstanceOf[js.Any]).asInstanceOf[Double | Buff]
+    inline def hasBuff(what: String): Double | Buff = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBuff")(what.asInstanceOf[js.Any]).asInstanceOf[Double | Buff]
     
     @JSGlobal("Game.hasGod")
     @js.native
     def hasGod: js.UndefOr[js.Function1[/* what */ String, `1` | `2` | `3` | `false`]] = js.native
-    @scala.inline
-    def hasGod_=(x: js.UndefOr[js.Function1[/* what */ String, `1` | `2` | `3` | `false`]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasGod")(x.asInstanceOf[js.Any])
+    inline def hasGod_=(x: js.UndefOr[js.Function1[/* what */ String, `1` | `2` | `3` | `false`]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasGod")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.heartDrops")
     @js.native
     def heartDrops: js.Array[String] = js.native
-    @scala.inline
-    def heartDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heartDrops")(x.asInstanceOf[js.Any])
+    inline def heartDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heartDrops")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.heavenlyBounds")
     @js.native
     def heavenlyBounds: js.Object = js.native
-    @scala.inline
-    def heavenlyBounds_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyBounds")(x.asInstanceOf[js.Any])
+    inline def heavenlyBounds_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyBounds")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.heavenlyChips")
     @js.native
@@ -2798,65 +2292,52 @@ object global {
     @JSGlobal("Game.heavenlyChipsDisplayed")
     @js.native
     def heavenlyChipsDisplayed: Double = js.native
-    @scala.inline
-    def heavenlyChipsDisplayed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyChipsDisplayed")(x.asInstanceOf[js.Any])
+    inline def heavenlyChipsDisplayed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyChipsDisplayed")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.heavenlyChipsSpent")
     @js.native
     def heavenlyChipsSpent: Double = js.native
-    @scala.inline
-    def heavenlyChipsSpent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyChipsSpent")(x.asInstanceOf[js.Any])
+    inline def heavenlyChipsSpent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyChipsSpent")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def heavenlyChips_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyChips")(x.asInstanceOf[js.Any])
+    inline def heavenlyChips_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyChips")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.heavenlyCookies")
     @js.native
     def heavenlyCookies: Double = js.native
-    @scala.inline
-    def heavenlyCookies_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyCookies")(x.asInstanceOf[js.Any])
+    inline def heavenlyCookies_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyCookies")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.heavenlyPower")
     @js.native
     def heavenlyPower: Double = js.native
-    @scala.inline
-    def heavenlyPower_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyPower")(x.asInstanceOf[js.Any])
+    inline def heavenlyPower_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyPower")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.heralds")
     @js.native
     def heralds: Double = js.native
-    @scala.inline
-    def heralds_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heralds")(x.asInstanceOf[js.Any])
+    inline def heralds_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heralds")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.https")
     @js.native
     def https: Boolean = js.native
-    @scala.inline
-    def https_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("https")(x.asInstanceOf[js.Any])
+    inline def https_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("https")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isMinigameReady(me: typings.cookieclicker.Game.GameObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isMinigameReady")(me.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def isMinigameReady(me: typings.cookieclicker.Game.GameObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isMinigameReady")(me.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.keys")
     @js.native
     def keys: js.Array[Double] = js.native
-    @scala.inline
-    def keys_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keys")(x.asInstanceOf[js.Any])
+    inline def keys_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keys")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def killBuff(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("killBuff")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def killBuff(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("killBuff")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def killBuffs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("killBuffs")().asInstanceOf[Unit]
+    inline def killBuffs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("killBuffs")().asInstanceOf[Unit]
     
-    @scala.inline
-    def killShimmers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("killShimmers")().asInstanceOf[Unit]
+    inline def killShimmers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("killShimmers")().asInstanceOf[Unit]
     
     @JSGlobal("Game.l")
     @js.native
     def l: HTMLDivElement = js.native
-    @scala.inline
-    def l_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("l")(x.asInstanceOf[js.Any])
+    inline def l_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("l")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.last")
     @js.native
@@ -2865,99 +2346,79 @@ object global {
     @JSGlobal("Game.lastActivity")
     @js.native
     def lastActivity: Double = js.native
-    @scala.inline
-    def lastActivity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastActivity")(x.asInstanceOf[js.Any])
+    inline def lastActivity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastActivity")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lastClick")
     @js.native
     def lastClick: Double = js.native
-    @scala.inline
-    def lastClick_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastClick")(x.asInstanceOf[js.Any])
+    inline def lastClick_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastClick")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lastClickedEl")
     @js.native
     def lastClickedEl: js.Object = js.native
-    @scala.inline
-    def lastClickedEl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastClickedEl")(x.asInstanceOf[js.Any])
+    inline def lastClickedEl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastClickedEl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lastDate")
     @js.native
     def lastDate: Double = js.native
-    @scala.inline
-    def lastDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastDate")(x.asInstanceOf[js.Any])
+    inline def lastDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastDate")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lastPanel")
     @js.native
     def lastPanel: String = js.native
-    @scala.inline
-    def lastPanel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastPanel")(x.asInstanceOf[js.Any])
+    inline def lastPanel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastPanel")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def last_=(
+    inline def last_=(
       x: typings.cookieclicker.Game.GameObject | typings.cookieclicker.Game.Upgrade | typings.cookieclicker.Game.Achievement
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("last")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def listTinyOwnedUpgrades(arr: js.Array[typings.cookieclicker.Game.Upgrade]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("listTinyOwnedUpgrades")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def listTinyOwnedUpgrades(arr: js.Array[typings.cookieclicker.Game.Upgrade]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("listTinyOwnedUpgrades")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def loadLumps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")().asInstanceOf[Unit]
-    @scala.inline
-    def loadLumps(time: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")(time.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def loadLumps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")().asInstanceOf[Unit]
+    inline def loadLumps(time: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")(time.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def localStorageGet(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorageGet")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def localStorageGet(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorageGet")(key.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def localStorageSet(key: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("localStorageSet")(key.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def localStorageSet(key: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("localStorageSet")(key.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.loopT")
     @js.native
     def loopT: Double = js.native
-    @scala.inline
-    def loopT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loopT")(x.asInstanceOf[js.Any])
+    inline def loopT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loopT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def loseShimmeringVeil(context: String): Unit | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("loseShimmeringVeil")(context.asInstanceOf[js.Any]).asInstanceOf[Unit | `false`]
+    inline def loseShimmeringVeil(context: String): Unit | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("loseShimmeringVeil")(context.asInstanceOf[js.Any]).asInstanceOf[Unit | `false`]
     
     @JSGlobal("Game.lumpCurrentType")
     @js.native
     def lumpCurrentType: Double = js.native
-    @scala.inline
-    def lumpCurrentType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpCurrentType")(x.asInstanceOf[js.Any])
+    inline def lumpCurrentType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpCurrentType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lumpMatureAge")
     @js.native
     def lumpMatureAge: Double = js.native
-    @scala.inline
-    def lumpMatureAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpMatureAge")(x.asInstanceOf[js.Any])
+    inline def lumpMatureAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpMatureAge")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lumpOverripeAge")
     @js.native
     def lumpOverripeAge: Double = js.native
-    @scala.inline
-    def lumpOverripeAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpOverripeAge")(x.asInstanceOf[js.Any])
+    inline def lumpOverripeAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpOverripeAge")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lumpRefill")
     @js.native
     def lumpRefill: Double = js.native
-    @scala.inline
-    def lumpRefill_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpRefill")(x.asInstanceOf[js.Any])
+    inline def lumpRefill_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpRefill")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lumpRipeAge")
     @js.native
     def lumpRipeAge: Double = js.native
-    @scala.inline
-    def lumpRipeAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpRipeAge")(x.asInstanceOf[js.Any])
+    inline def lumpRipeAge_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpRipeAge")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lumpT")
     @js.native
     def lumpT: Double = js.native
-    @scala.inline
-    def lumpT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpT")(x.asInstanceOf[js.Any])
+    inline def lumpT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def lumpTooltip(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lumpTooltip")().asInstanceOf[String]
+    inline def lumpTooltip(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lumpTooltip")().asInstanceOf[String]
     
     @JSGlobal("Game.lumps")
     @js.native
@@ -2966,95 +2427,77 @@ object global {
     @JSGlobal("Game.lumpsTotal")
     @js.native
     def lumpsTotal: Double = js.native
-    @scala.inline
-    def lumpsTotal_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpsTotal")(x.asInstanceOf[js.Any])
+    inline def lumpsTotal_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumpsTotal")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def lumps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumps")(x.asInstanceOf[js.Any])
+    inline def lumps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def magicCpS(what: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magicCpS")(what.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def magicCpS(what: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magicCpS")(what.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def makeSeed(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSeed")().asInstanceOf[String]
+    inline def makeSeed(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSeed")().asInstanceOf[String]
     
     @JSGlobal("Game.milkH")
     @js.native
     def milkH: Double = js.native
-    @scala.inline
-    def milkH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkH")(x.asInstanceOf[js.Any])
+    inline def milkH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkH")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.milkHd")
     @js.native
     def milkHd: Double = js.native
-    @scala.inline
-    def milkHd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkHd")(x.asInstanceOf[js.Any])
+    inline def milkHd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkHd")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.milkProgress")
     @js.native
     def milkProgress: Double = js.native
-    @scala.inline
-    def milkProgress_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkProgress")(x.asInstanceOf[js.Any])
+    inline def milkProgress_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkProgress")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.milkType")
     @js.native
     def milkType: Double = js.native
-    @scala.inline
-    def milkType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkType")(x.asInstanceOf[js.Any])
+    inline def milkType_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("milkType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.missedGoldenClicks")
     @js.native
     def missedGoldenClicks: Double = js.native
-    @scala.inline
-    def missedGoldenClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("missedGoldenClicks")(x.asInstanceOf[js.Any])
+    inline def missedGoldenClicks_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("missedGoldenClicks")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.mobile")
     @js.native
     def mobile: PseudoBoolean = js.native
-    @scala.inline
-    def mobile_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mobile")(x.asInstanceOf[js.Any])
+    inline def mobile_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mobile")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.modHookNames")
     @js.native
     def modHookNames: js.Array[String] = js.native
-    @scala.inline
-    def modHookNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modHookNames")(x.asInstanceOf[js.Any])
+    inline def modHookNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modHookNames")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.modHooks")
     @js.native
     def modHooks: Record[String, js.Array[js.Function0[js.Any]]] = js.native
-    @scala.inline
-    def modHooks_=(x: Record[String, js.Array[js.Function0[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modHooks")(x.asInstanceOf[js.Any])
+    inline def modHooks_=(x: Record[String, js.Array[js.Function0[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modHooks")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.modSaveData")
     @js.native
     def modSaveData: Record[String, String] = js.native
-    @scala.inline
-    def modSaveData_=(x: Record[String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modSaveData")(x.asInstanceOf[js.Any])
+    inline def modSaveData_=(x: Record[String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modSaveData")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def modifyBuildingPrice(building: String, price: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyBuildingPrice")(building.asInstanceOf[js.Any], price.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def modifyBuildingPrice(building: String, price: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyBuildingPrice")(building.asInstanceOf[js.Any], price.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def mouseCps(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseCps")().asInstanceOf[Double]
+    inline def mouseCps(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseCps")().asInstanceOf[Double]
     
     @JSGlobal("Game.mouseDown")
     @js.native
     def mouseDown: Double = js.native
-    @scala.inline
-    def mouseDown_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseDown")(x.asInstanceOf[js.Any])
+    inline def mouseDown_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseDown")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.mouseMoved")
     @js.native
     def mouseMoved: Double = js.native
-    @scala.inline
-    def mouseMoved_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseMoved")(x.asInstanceOf[js.Any])
+    inline def mouseMoved_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseMoved")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.mousePointer")
     @js.native
     def mousePointer: Double = js.native
-    @scala.inline
-    def mousePointer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mousePointer")(x.asInstanceOf[js.Any])
+    inline def mousePointer_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mousePointer")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.mouseX")
     @js.native
@@ -3063,11 +2506,9 @@ object global {
     @JSGlobal("Game.mouseX2")
     @js.native
     def mouseX2: Double = js.native
-    @scala.inline
-    def mouseX2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseX2")(x.asInstanceOf[js.Any])
+    inline def mouseX2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseX2")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def mouseX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseX")(x.asInstanceOf[js.Any])
+    inline def mouseX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseX")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.mouseY")
     @js.native
@@ -3076,59 +2517,48 @@ object global {
     @JSGlobal("Game.mouseY2")
     @js.native
     def mouseY2: Double = js.native
-    @scala.inline
-    def mouseY2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseY2")(x.asInstanceOf[js.Any])
+    inline def mouseY2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseY2")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def mouseY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseY")(x.asInstanceOf[js.Any])
+    inline def mouseY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseY")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def mutedBuildingTooltip(id: Double): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutedBuildingTooltip")(id.asInstanceOf[js.Any]).asInstanceOf[js.Function0[String]]
+    inline def mutedBuildingTooltip(id: Double): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mutedBuildingTooltip")(id.asInstanceOf[js.Any]).asInstanceOf[js.Function0[String]]
     
     @JSGlobal("Game.nextAscensionMode")
     @js.native
     def nextAscensionMode: Double = js.native
-    @scala.inline
-    def nextAscensionMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextAscensionMode")(x.asInstanceOf[js.Any])
+    inline def nextAscensionMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextAscensionMode")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.nextResearch")
     @js.native
     def nextResearch: Double = js.native
-    @scala.inline
-    def nextResearch_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextResearch")(x.asInstanceOf[js.Any])
+    inline def nextResearch_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextResearch")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.noteId")
     @js.native
     def noteId: Double = js.native
-    @scala.inline
-    def noteId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noteId")(x.asInstanceOf[js.Any])
+    inline def noteId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noteId")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.noteL")
     @js.native
     def noteL: HTMLDivElement = js.native
-    @scala.inline
-    def noteL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noteL")(x.asInstanceOf[js.Any])
+    inline def noteL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noteL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.onCrate")
     @js.native
     def onCrate: Double = js.native
-    @scala.inline
-    def onCrate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCrate")(x.asInstanceOf[js.Any])
+    inline def onCrate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCrate")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.onMenu")
     @js.native
     def onMenu: String = js.native
-    @scala.inline
-    def onMenu_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onMenu")(x.asInstanceOf[js.Any])
+    inline def onMenu_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onMenu")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.onPanel")
     @js.native
     def onPanel: String = js.native
-    @scala.inline
-    def onPanel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPanel")(x.asInstanceOf[js.Any])
+    inline def onPanel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPanel")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def particleAdd(
+    inline def particleAdd(
       x: Double,
       y: Double,
       xd: Double,
@@ -3144,222 +2574,173 @@ object global {
     @js.native
     def particles: js.Array[Particle] = js.native
     
-    @scala.inline
-    def particlesDraw(z: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("particlesDraw")(z.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def particlesDraw(z: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("particlesDraw")(z.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def particlesUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("particlesUpdate")().asInstanceOf[Unit]
+    inline def particlesUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("particlesUpdate")().asInstanceOf[Unit]
     
-    @scala.inline
-    def particles_=(x: js.Array[Particle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("particles")(x.asInstanceOf[js.Any])
+    inline def particles_=(x: js.Array[Particle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("particles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.permanentUpgrades")
     @js.native
     def permanentUpgrades: js.Array[Double] = js.native
-    @scala.inline
-    def permanentUpgrades_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("permanentUpgrades")(x.asInstanceOf[js.Any])
+    inline def permanentUpgrades_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("permanentUpgrades")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def playCookieClickSound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playCookieClickSound")().asInstanceOf[Unit]
+    inline def playCookieClickSound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playCookieClickSound")().asInstanceOf[Unit]
     
-    @scala.inline
-    def playWrinklerSquishSound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playWrinklerSquishSound")().asInstanceOf[Unit]
+    inline def playWrinklerSquishSound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playWrinklerSquishSound")().asInstanceOf[Unit]
     
     @JSGlobal("Game.pledgeT")
     @js.native
     def pledgeT: Double = js.native
-    @scala.inline
-    def pledgeT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pledgeT")(x.asInstanceOf[js.Any])
+    inline def pledgeT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pledgeT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.pledges")
     @js.native
     def pledges: Double = js.native
-    @scala.inline
-    def pledges_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pledges")(x.asInstanceOf[js.Any])
+    inline def pledges_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pledges")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.popups")
     @js.native
     def popups: Double = js.native
-    @scala.inline
-    def popups_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popups")(x.asInstanceOf[js.Any])
+    inline def popups_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popups")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.prefs")
     @js.native
     def prefs: js.Array[Unit] & Prefs = js.native
-    @scala.inline
-    def prefs_=(x: js.Array[Unit] & Prefs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefs")(x.asInstanceOf[js.Any])
+    inline def prefs_=(x: js.Array[Unit] & Prefs): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefs")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.prestige")
     @js.native
     def prestige: Double = js.native
-    @scala.inline
-    def prestige_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prestige")(x.asInstanceOf[js.Any])
+    inline def prestige_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prestige")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.previousFps")
     @js.native
     def previousFps: Double = js.native
-    @scala.inline
-    def previousFps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("previousFps")(x.asInstanceOf[js.Any])
+    inline def previousFps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("previousFps")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.priceIncrease")
     @js.native
     def priceIncrease: Double = js.native
-    @scala.inline
-    def priceIncrease_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("priceIncrease")(x.asInstanceOf[js.Any])
+    inline def priceIncrease_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("priceIncrease")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptAnchorL")
     @js.native
     def promptAnchorL: js.Object = js.native
-    @scala.inline
-    def promptAnchorL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptAnchorL")(x.asInstanceOf[js.Any])
+    inline def promptAnchorL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptAnchorL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptConfirm")
     @js.native
     def promptConfirm: String = js.native
-    @scala.inline
-    def promptConfirm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptConfirm")(x.asInstanceOf[js.Any])
+    inline def promptConfirm_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptConfirm")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptL")
     @js.native
     def promptL: js.Object = js.native
-    @scala.inline
-    def promptL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptL")(x.asInstanceOf[js.Any])
+    inline def promptL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptOn")
     @js.native
     def promptOn: Double = js.native
-    @scala.inline
-    def promptOn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptOn")(x.asInstanceOf[js.Any])
+    inline def promptOn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptOn")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptUpdateFunc")
     @js.native
     def promptUpdateFunc: Double = js.native
-    @scala.inline
-    def promptUpdateFunc_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptUpdateFunc")(x.asInstanceOf[js.Any])
+    inline def promptUpdateFunc_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptUpdateFunc")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptWrapL")
     @js.native
     def promptWrapL: js.Object = js.native
-    @scala.inline
-    def promptWrapL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptWrapL")(x.asInstanceOf[js.Any])
+    inline def promptWrapL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptWrapL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.rareEggDrops")
     @js.native
     def rareEggDrops: js.Array[String] = js.native
-    @scala.inline
-    def rareEggDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rareEggDrops")(x.asInstanceOf[js.Any])
+    inline def rareEggDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rareEggDrops")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ready")
     @js.native
     def ready: PseudoBoolean = js.native
-    @scala.inline
-    def ready_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ready")(x.asInstanceOf[js.Any])
+    inline def ready_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ready")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.recalculateGains")
     @js.native
     def recalculateGains: Double = js.native
-    @scala.inline
-    def recalculateGains_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recalculateGains")(x.asInstanceOf[js.Any])
+    inline def recalculateGains_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("recalculateGains")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def refillLump(n: Double, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refillLump")(n.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def refillLump(n: Double, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refillLump")(n.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerHook(hook: String, func: js.Array[js.Function0[Unit]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def registerHook(hook: String, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook(hook: String, func: js.Array[js.Function0[Unit]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook(hook: String, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerHook_cookiesPerClick(hook: cookiesPerClick, func: js.Array[js.Function0[Double]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def registerHook_cookiesPerClick(hook: cookiesPerClick, func: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_cookiesPerClick(hook: cookiesPerClick, func: js.Array[js.Function0[Double]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_cookiesPerClick(hook: cookiesPerClick, func: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerHook_cps(hook: cps, func: js.Array[js.Function0[Double]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def registerHook_cps(hook: cps, func: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_cps(hook: cps, func: js.Array[js.Function0[Double]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_cps(hook: cps, func: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerHook_ticker(hook: ticker, func: js.Array[js.Function0[js.Array[String]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def registerHook_ticker(hook: ticker, func: js.Function0[js.Array[String]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_ticker(hook: ticker, func: js.Array[js.Function0[js.Array[String]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_ticker(hook: ticker, func: js.Function0[js.Array[String]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def registerMod(id: String, obj: Mod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMod")(id.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerMod(id: String, obj: Mod): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMod")(id.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.reindeerClicked")
     @js.native
     def reindeerClicked: Double = js.native
-    @scala.inline
-    def reindeerClicked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reindeerClicked")(x.asInstanceOf[js.Any])
+    inline def reindeerClicked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reindeerClicked")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.reindeerDrops")
     @js.native
     def reindeerDrops: js.Array[String] = js.native
-    @scala.inline
-    def reindeerDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reindeerDrops")(x.asInstanceOf[js.Any])
+    inline def reindeerDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reindeerDrops")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def removeClass(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeClass(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.researchT")
     @js.native
     def researchT: Double = js.native
-    @scala.inline
-    def researchT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("researchT")(x.asInstanceOf[js.Any])
+    inline def researchT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("researchT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.resets")
     @js.native
     def resets: Double = js.native
-    @scala.inline
-    def resets_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resets")(x.asInstanceOf[js.Any])
+    inline def resets_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resets")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def salvageSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("salvageSave")().asInstanceOf[Unit]
+    inline def salvageSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("salvageSave")().asInstanceOf[Unit]
     
     @JSGlobal("Game.santaDrops")
     @js.native
     def santaDrops: js.Array[String] = js.native
-    @scala.inline
-    def santaDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("santaDrops")(x.asInstanceOf[js.Any])
+    inline def santaDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("santaDrops")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.santaLevel")
     @js.native
     def santaLevel: Double = js.native
-    @scala.inline
-    def santaLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("santaLevel")(x.asInstanceOf[js.Any])
+    inline def santaLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("santaLevel")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.santaLevels")
     @js.native
     def santaLevels: js.Array[String] = js.native
-    @scala.inline
-    def santaLevels_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("santaLevels")(x.asInstanceOf[js.Any])
+    inline def santaLevels_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("santaLevels")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def saySeasonSwitchUses(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("saySeasonSwitchUses")().asInstanceOf[String]
+    inline def saySeasonSwitchUses(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("saySeasonSwitchUses")().asInstanceOf[String]
     
-    @scala.inline
-    def sayTime_1(time: Double, detail: `-1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sayTime_1(time: Double, detail: `1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sayTime_1(time: Double, detail: `-1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sayTime_1(time: Double, detail: `1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def sayTime_2(time: Double, detail: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sayTime_2(time: Double, detail: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def sayTime_3(time: Double, detail: `3`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sayTime_3(time: Double, detail: `3`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def sayTime_4(time: Double, detail: `4`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sayTime_4(time: Double, detail: `4`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSGlobal("Game.scriptBindings")
     @js.native
     def scriptBindings: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.GameObject]) = js.native
-    @scala.inline
-    def scriptBindings_=(x: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.GameObject])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scriptBindings")(x.asInstanceOf[js.Any])
+    inline def scriptBindings_=(x: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.GameObject])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scriptBindings")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def scriptLoaded(who: typings.cookieclicker.Game.GameObject, script: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scriptLoaded")(who.asInstanceOf[js.Any], script.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def scriptLoaded(who: typings.cookieclicker.Game.GameObject, script: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scriptLoaded")(who.asInstanceOf[js.Any], script.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("Game.season")
     @js.native
@@ -3368,59 +2749,48 @@ object global {
     @JSGlobal("Game.seasonDrops")
     @js.native
     def seasonDrops: js.Array[String] = js.native
-    @scala.inline
-    def seasonDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonDrops")(x.asInstanceOf[js.Any])
+    inline def seasonDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonDrops")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.seasonT")
     @js.native
     def seasonT: Double = js.native
-    @scala.inline
-    def seasonT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonT")(x.asInstanceOf[js.Any])
+    inline def seasonT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonT")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.seasonTriggerBasePrice")
     @js.native
     def seasonTriggerBasePrice: Double = js.native
-    @scala.inline
-    def seasonTriggerBasePrice_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonTriggerBasePrice")(x.asInstanceOf[js.Any])
+    inline def seasonTriggerBasePrice_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonTriggerBasePrice")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.seasonUses")
     @js.native
     def seasonUses: Double = js.native
-    @scala.inline
-    def seasonUses_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonUses")(x.asInstanceOf[js.Any])
+    inline def seasonUses_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasonUses")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def season_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("season")(x.asInstanceOf[js.Any])
+    inline def season_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("season")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.seasons")
     @js.native
     def seasons: Record[String, Season] = js.native
-    @scala.inline
-    def seasons_=(x: Record[String, Season]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasons")(x.asInstanceOf[js.Any])
+    inline def seasons_=(x: Record[String, Season]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seasons")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.seed")
     @js.native
     def seed: String = js.native
-    @scala.inline
-    def seed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seed")(x.asInstanceOf[js.Any])
+    inline def seed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("seed")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.sesame")
     @js.native
     def sesame: Double = js.native
-    @scala.inline
-    def sesame_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sesame")(x.asInstanceOf[js.Any])
+    inline def sesame_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sesame")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCrate(what: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnCrate")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setOnCrate(what: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnCrate")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setVolume(what: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setVolume(what: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.shimmerTypes")
     @js.native
     def shimmerTypes: Record[String, ShimmerType] = js.native
-    @scala.inline
-    def shimmerTypes_=(x: Record[String, ShimmerType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmerTypes")(x.asInstanceOf[js.Any])
+    inline def shimmerTypes_=(x: Record[String, ShimmerType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmerTypes")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.shimmers")
     @js.native
@@ -3431,36 +2801,29 @@ object global {
     @JSGlobal("Game.shimmersL")
     @js.native
     def shimmersL: HTMLDivElement = js.native
-    @scala.inline
-    def shimmersL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmersL")(x.asInstanceOf[js.Any])
+    inline def shimmersL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmersL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.shimmersN")
     @js.native
     def shimmersN: Double = js.native
-    @scala.inline
-    def shimmersN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmersN")(x.asInstanceOf[js.Any])
+    inline def shimmersN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmersN")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def shimmers_=(
+    inline def shimmers_=(
       x: js.Array[
           typings.cookieclicker.Game.Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmers")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def showBackupWarning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBackupWarning")().asInstanceOf[Unit]
+    inline def showBackupWarning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBackupWarning")().asInstanceOf[Unit]
     
-    @scala.inline
-    def sortSprites(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSprites")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def sortSprites(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSprites")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def sortSpritesById(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSpritesById")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def sortSpritesById(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSpritesById")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSGlobal("Game.sortedMods")
     @js.native
     def sortedMods: js.Array[Mod] = js.native
-    @scala.inline
-    def sortedMods_=(x: js.Array[Mod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sortedMods")(x.asInstanceOf[js.Any])
+    inline def sortedMods_=(x: js.Array[Mod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sortedMods")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.sparkles")
     @js.native
@@ -3469,17 +2832,14 @@ object global {
     @JSGlobal("Game.sparklesFrames")
     @js.native
     def sparklesFrames: Double = js.native
-    @scala.inline
-    def sparklesFrames_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparklesFrames")(x.asInstanceOf[js.Any])
+    inline def sparklesFrames_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparklesFrames")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.sparklesT")
     @js.native
     def sparklesT: Double = js.native
-    @scala.inline
-    def sparklesT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparklesT")(x.asInstanceOf[js.Any])
+    inline def sparklesT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparklesT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def sparkles_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparkles")(x.asInstanceOf[js.Any])
+    inline def sparkles_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparkles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.specialTab")
     @js.native
@@ -3488,204 +2848,165 @@ object global {
     @JSGlobal("Game.specialTabHovered")
     @js.native
     def specialTabHovered: String = js.native
-    @scala.inline
-    def specialTabHovered_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specialTabHovered")(x.asInstanceOf[js.Any])
+    inline def specialTabHovered_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specialTabHovered")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def specialTab_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specialTab")(x.asInstanceOf[js.Any])
+    inline def specialTab_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specialTab")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.specialTabs")
     @js.native
     def specialTabs: js.Array[String] = js.native
-    @scala.inline
-    def specialTabs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specialTabs")(x.asInstanceOf[js.Any])
+    inline def specialTabs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specialTabs")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def spendLump(n: Double, str: String, func: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("spendLump")(n.asInstanceOf[js.Any], str.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def spendLump(n: Double, str: String, func: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("spendLump")(n.asInstanceOf[js.Any], str.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
     @JSGlobal("Game.startDate")
     @js.native
     def startDate: Double = js.native
-    @scala.inline
-    def startDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startDate")(x.asInstanceOf[js.Any])
+    inline def startDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("startDate")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def storeBulkButton(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("storeBulkButton")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def storeBulkButton(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("storeBulkButton")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def storeBuyAll(): Unit | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("storeBuyAll")().asInstanceOf[Unit | `false`]
+    inline def storeBuyAll(): Unit | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("storeBuyAll")().asInstanceOf[Unit | `false`]
     
     @JSGlobal("Game.storeToRefresh")
     @js.native
     def storeToRefresh: Double = js.native
-    @scala.inline
-    def storeToRefresh_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeToRefresh")(x.asInstanceOf[js.Any])
+    inline def storeToRefresh_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeToRefresh")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.textParticles")
     @js.native
     def textParticles: js.Array[Particle] = js.native
     
-    @scala.inline
-    def textParticlesAdd(text: String, el: Unit, posX: Double, posY: Double): Particle = (^.asInstanceOf[js.Dynamic].applyDynamic("textParticlesAdd")(text.asInstanceOf[js.Any], el.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any])).asInstanceOf[Particle]
+    inline def textParticlesAdd(text: String, el: Unit, posX: Double, posY: Double): Particle = (^.asInstanceOf[js.Dynamic].applyDynamic("textParticlesAdd")(text.asInstanceOf[js.Any], el.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any])).asInstanceOf[Particle]
     
-    @scala.inline
-    def textParticlesAdd_0(text: String, el: `0`, posX: Double, posY: Double): Particle = (^.asInstanceOf[js.Dynamic].applyDynamic("textParticlesAdd")(text.asInstanceOf[js.Any], el.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any])).asInstanceOf[Particle]
+    inline def textParticlesAdd_0(text: String, el: `0`, posX: Double, posY: Double): Particle = (^.asInstanceOf[js.Dynamic].applyDynamic("textParticlesAdd")(text.asInstanceOf[js.Any], el.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any])).asInstanceOf[Particle]
     
-    @scala.inline
-    def textParticlesUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textParticlesUpdate")().asInstanceOf[Unit]
+    inline def textParticlesUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textParticlesUpdate")().asInstanceOf[Unit]
     
     @JSGlobal("Game.textParticlesY")
     @js.native
     def textParticlesY: Double = js.native
-    @scala.inline
-    def textParticlesY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textParticlesY")(x.asInstanceOf[js.Any])
+    inline def textParticlesY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textParticlesY")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def textParticles_=(x: js.Array[Particle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textParticles")(x.asInstanceOf[js.Any])
+    inline def textParticles_=(x: js.Array[Particle]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textParticles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.thresholdIcons")
     @js.native
     def thresholdIcons: js.Array[Double] = js.native
-    @scala.inline
-    def thresholdIcons_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thresholdIcons")(x.asInstanceOf[js.Any])
+    inline def thresholdIcons_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thresholdIcons")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.tickerBelowL")
     @js.native
     def tickerBelowL: js.Object = js.native
-    @scala.inline
-    def tickerBelowL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerBelowL")(x.asInstanceOf[js.Any])
+    inline def tickerBelowL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerBelowL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.tickerCompactL")
     @js.native
     def tickerCompactL: js.Object = js.native
-    @scala.inline
-    def tickerCompactL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerCompactL")(x.asInstanceOf[js.Any])
+    inline def tickerCompactL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerCompactL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.tickerL")
     @js.native
     def tickerL: js.Object = js.native
-    @scala.inline
-    def tickerL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerL")(x.asInstanceOf[js.Any])
+    inline def tickerL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.time")
     @js.native
     def time: Double = js.native
-    @scala.inline
-    def time_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
+    inline def time_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.timedout")
     @js.native
     def timedout: Boolean = js.native
-    @scala.inline
-    def timedout_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timedout")(x.asInstanceOf[js.Any])
+    inline def timedout_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timedout")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def tinyCookie(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tinyCookie")().asInstanceOf[String]
+    inline def tinyCookie(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tinyCookie")().asInstanceOf[String]
     
     @JSGlobal("Game.toSave")
     @js.native
     def toSave: Boolean = js.native
-    @scala.inline
-    def toSave_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toSave")(x.asInstanceOf[js.Any])
+    inline def toSave_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toSave")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.tooltip")
     @js.native
     def tooltip: Tooltip = js.native
-    @scala.inline
-    def tooltip_=(x: Tooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltip")(x.asInstanceOf[js.Any])
+    inline def tooltip_=(x: Tooltip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltip")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.touchEvents")
     @js.native
     def touchEvents: PseudoBoolean = js.native
-    @scala.inline
-    def touchEvents_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touchEvents")(x.asInstanceOf[js.Any])
+    inline def touchEvents_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touchEvents")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.unbuffedCps")
     @js.native
     def unbuffedCps: Double = js.native
-    @scala.inline
-    def unbuffedCps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbuffedCps")(x.asInstanceOf[js.Any])
+    inline def unbuffedCps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unbuffedCps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def updateBuffs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateBuffs")().asInstanceOf[Unit]
+    inline def updateBuffs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateBuffs")().asInstanceOf[Unit]
     
-    @scala.inline
-    def updateClasses(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateClasses")().asInstanceOf[Unit]
+    inline def updateClasses(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateClasses")().asInstanceOf[Unit]
     
     @JSGlobal("Game.updateLog")
     @js.native
     def updateLog: String = js.native
-    @scala.inline
-    def updateLog_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateLog")(x.asInstanceOf[js.Any])
+    inline def updateLog_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updateLog")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def updateShimmers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateShimmers")().asInstanceOf[Unit]
+    inline def updateShimmers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateShimmers")().asInstanceOf[Unit]
     
     @JSGlobal("Game.upgradesToRebuild")
     @js.native
     def upgradesToRebuild: Double = js.native
-    @scala.inline
-    def upgradesToRebuild_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("upgradesToRebuild")(x.asInstanceOf[js.Any])
+    inline def upgradesToRebuild_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("upgradesToRebuild")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.useLocalStorage")
     @js.native
     def useLocalStorage: Double = js.native
-    @scala.inline
-    def useLocalStorage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useLocalStorage")(x.asInstanceOf[js.Any])
+    inline def useLocalStorage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useLocalStorage")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.useSwap")
     @js.native
     def useSwap: js.UndefOr[js.Function1[/* n */ Double, Unit]] = js.native
-    @scala.inline
-    def useSwap_=(x: js.UndefOr[js.Function1[/* n */ Double, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useSwap")(x.asInstanceOf[js.Any])
+    inline def useSwap_=(x: js.UndefOr[js.Function1[/* n */ Double, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useSwap")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.vanilla")
     @js.native
     def vanilla: PseudoBoolean = js.native
-    @scala.inline
-    def vanilla_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vanilla")(x.asInstanceOf[js.Any])
+    inline def vanilla_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vanilla")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.vault")
     @js.native
     def vault: js.Array[Double] = js.native
-    @scala.inline
-    def vault_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vault")(x.asInstanceOf[js.Any])
+    inline def vault_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vault")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.version")
     @js.native
     def version: Double = js.native
-    @scala.inline
-    def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    inline def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.volume")
     @js.native
     def volume: Double = js.native
-    @scala.inline
-    def volume_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("volume")(x.asInstanceOf[js.Any])
+    inline def volume_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("volume")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.windowH")
     @js.native
     def windowH: Double = js.native
-    @scala.inline
-    def windowH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowH")(x.asInstanceOf[js.Any])
+    inline def windowH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowH")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.windowW")
     @js.native
     def windowW: Double = js.native
-    @scala.inline
-    def windowW_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowW")(x.asInstanceOf[js.Any])
+    inline def windowW_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowW")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.wrinklerHP")
     @js.native
     def wrinklerHP: Double = js.native
-    @scala.inline
-    def wrinklerHP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklerHP")(x.asInstanceOf[js.Any])
+    inline def wrinklerHP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklerHP")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.wrinklerSquishSound")
     @js.native
     def wrinklerSquishSound: Double = js.native
-    @scala.inline
-    def wrinklerSquishSound_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklerSquishSound")(x.asInstanceOf[js.Any])
+    inline def wrinklerSquishSound_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklerSquishSound")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.wrinklers")
     @js.native
@@ -3694,11 +3015,9 @@ object global {
     @JSGlobal("Game.wrinklersPopped")
     @js.native
     def wrinklersPopped: Double = js.native
-    @scala.inline
-    def wrinklersPopped_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklersPopped")(x.asInstanceOf[js.Any])
+    inline def wrinklersPopped_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklersPopped")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def wrinklers_=(x: js.Array[Wrinkler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklers")(x.asInstanceOf[js.Any])
+    inline def wrinklers_=(x: js.Array[Wrinkler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklers")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Loader")
@@ -3792,37 +3111,28 @@ object global {
     override def onLoadReplace(): Unit = js.native
   }
   
-  @scala.inline
-  def PlaySound(url: String): Unit = js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def PlaySound(url: String, volume: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def PlaySound(url: String, volume: Double, pitch: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def PlaySound(url: String, volume: Unit, pitch: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PlaySound(url: String): Unit = js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def PlaySound(url: String, volume: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PlaySound(url: String, volume: Double, pitch: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PlaySound(url: String, volume: Unit, pitch: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a random member of an array, has a very slight chance to return `undefined` (When the seeded Math.random() is 1)
     * @param array The array to pick a member of
     */
-  @scala.inline
-  def choose[T](array: js.Array[T]): T = js.Dynamic.global.applyDynamic("choose")(array.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def choose[T](array: js.Array[T]): T = js.Dynamic.global.applyDynamic("choose")(array.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def l(name: String): HTMLElement = js.Dynamic.global.applyDynamic("l")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def l(name: String): HTMLElement = js.Dynamic.global.applyDynamic("l")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /**
     * Floors or ceils randomly, biased by the decimal value
     */
-  @scala.inline
-  def randomFloor(x: Double): Double = js.Dynamic.global.applyDynamic("randomFloor")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def randomFloor(x: Double): Double = js.Dynamic.global.applyDynamic("randomFloor")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def shuffle[T](array: js.Array[T]): js.Array[T] = js.Dynamic.global.applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def shuffle[T](array: js.Array[T]): js.Array[T] = js.Dynamic.global.applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
   /**
     * An extended toFixed, which converts any number to an e-less string
     */
-  @scala.inline
-  def toFixed(x: Double): String = js.Dynamic.global.applyDynamic("toFixed")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toFixed(x: Double): String = js.Dynamic.global.applyDynamic("toFixed")(x.asInstanceOf[js.Any]).asInstanceOf[String]
 }

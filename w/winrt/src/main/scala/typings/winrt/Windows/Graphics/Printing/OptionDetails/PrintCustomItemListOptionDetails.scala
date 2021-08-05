@@ -10,8 +10,7 @@ trait PrintCustomItemListOptionDetails
      with IPrintCustomItemListOptionDetails
 object PrintCustomItemListOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addItem: (String, String) => Unit,
     displayName: String,
     errorText: String,

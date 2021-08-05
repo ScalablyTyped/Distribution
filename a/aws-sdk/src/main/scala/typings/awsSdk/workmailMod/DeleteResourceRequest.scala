@@ -18,19 +18,15 @@ trait DeleteResourceRequest extends StObject {
 }
 object DeleteResourceRequest {
   
-  @scala.inline
-  def apply(OrganizationId: OrganizationId, ResourceId: ResourceId): DeleteResourceRequest = {
+  inline def apply(OrganizationId: OrganizationId, ResourceId: ResourceId): DeleteResourceRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResourceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResourceRequestMutableBuilder[Self <: DeleteResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourceRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

@@ -63,8 +63,7 @@ object mod extends Shortcut {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoRename: Boolean,
       autoRenameStrict: Boolean,
       blacklist: js.Object,
@@ -78,35 +77,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setAutoRename(value: Boolean): Self = StObject.set(x, "autoRename", value.asInstanceOf[js.Any])
+      inline def setAutoRename(value: Boolean): Self = StObject.set(x, "autoRename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRenameStrict(value: Boolean): Self = StObject.set(x, "autoRenameStrict", value.asInstanceOf[js.Any])
+      inline def setAutoRenameStrict(value: Boolean): Self = StObject.set(x, "autoRenameStrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklist(value: js.Object): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: js.Object): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+      inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
+      inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessUrls(value: Boolean | js.Object): Self = StObject.set(x, "processUrls", value.asInstanceOf[js.Any])
+      inline def setProcessUrls(value: Boolean | js.Object): Self = StObject.set(x, "processUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringMap(value: js.Array[StringMap]): Self = StObject.set(x, "stringMap", value.asInstanceOf[js.Any])
+      inline def setStringMap(value: js.Array[StringMap]): Self = StObject.set(x, "stringMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringMapVarargs(value: StringMap*): Self = StObject.set(x, "stringMap", js.Array(value :_*))
+      inline def setStringMapVarargs(value: StringMap*): Self = StObject.set(x, "stringMap", js.Array(value :_*))
       
-      @scala.inline
-      def setUseCalc(value: Boolean): Self = StObject.set(x, "useCalc", value.asInstanceOf[js.Any])
+      inline def setUseCalc(value: Boolean): Self = StObject.set(x, "useCalc", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,20 +138,16 @@ object mod extends Shortcut {
   }
   object HookOptions {
     
-    @scala.inline
-    def apply(post: () => Unit, pre: () => Unit): HookOptions = {
+    inline def apply(post: () => Unit, pre: () => Unit): HookOptions = {
       val __obj = js.Dynamic.literal(post = js.Any.fromFunction0(post), pre = js.Any.fromFunction0(pre))
       __obj.asInstanceOf[HookOptions]
     }
     
-    @scala.inline
-    implicit class HookOptionsMutableBuilder[Self <: HookOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HookOptions](x: Self) {
       
-      @scala.inline
-      def setPost(value: () => Unit): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
+      inline def setPost(value: () => Unit): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPre(value: () => Unit): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
+      inline def setPre(value: () => Unit): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
     }
   }
   
@@ -176,26 +161,20 @@ object mod extends Shortcut {
   }
   object MapOptions {
     
-    @scala.inline
-    def apply(ignoreCase: Boolean, scope: String): MapOptions = {
+    inline def apply(ignoreCase: Boolean, scope: String): MapOptions = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapOptions]
     }
     
-    @scala.inline
-    implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptions](x: Self) {
       
-      @scala.inline
-      def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
+      inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
+      inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +209,7 @@ object mod extends Shortcut {
   }
   object StringMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       options: MapOptions,
       priority: Double,
@@ -242,35 +220,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StringMap]
     }
     
-    @scala.inline
-    implicit class StringMapMutableBuilder[Self <: StringMap] (val x: Self) extends AnyVal {
+    extension [Self <: StringMap](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: MapOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: MapOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplace(value: String | js.Array[String]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: String | js.Array[String]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceVarargs(value: String*): Self = StObject.set(x, "replace", js.Array(value :_*))
+      inline def setReplaceVarargs(value: String*): Self = StObject.set(x, "replace", js.Array(value :_*))
       
-      @scala.inline
-      def setSearch(value: String | js.Array[String]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String | js.Array[String]): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchVarargs(value: String*): Self = StObject.set(x, "search", js.Array(value :_*))
+      inline def setSearchVarargs(value: String*): Self = StObject.set(x, "search", js.Array(value :_*))
     }
   }
   

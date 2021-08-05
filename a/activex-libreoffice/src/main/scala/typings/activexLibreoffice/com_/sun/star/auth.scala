@@ -102,8 +102,7 @@ object auth {
   }
   object XSSOAcceptorContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Mechanism: String,
       Mutual: Boolean,
       Source: String,
@@ -121,11 +120,9 @@ object auth {
       __obj.asInstanceOf[XSSOAcceptorContext]
     }
     
-    @scala.inline
-    implicit class XSSOAcceptorContextMutableBuilder[Self <: XSSOAcceptorContext] (val x: Self) extends AnyVal {
+    extension [Self <: XSSOAcceptorContext](x: Self) {
       
-      @scala.inline
-      def setAccept(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+      inline def setAccept(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     }
   }
   
@@ -191,8 +188,7 @@ object auth {
   }
   object XSSOContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Mechanism: String,
       Mutual: Boolean,
       Source: String,
@@ -209,32 +205,23 @@ object auth {
       __obj.asInstanceOf[XSSOContext]
     }
     
-    @scala.inline
-    implicit class XSSOContextMutableBuilder[Self <: XSSOContext] (val x: Self) extends AnyVal {
+    extension [Self <: XSSOContext](x: Self) {
       
-      @scala.inline
-      def setGetMechanism(value: () => String): Self = StObject.set(x, "getMechanism", js.Any.fromFunction0(value))
+      inline def setGetMechanism(value: () => String): Self = StObject.set(x, "getMechanism", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMutual(value: () => Boolean): Self = StObject.set(x, "getMutual", js.Any.fromFunction0(value))
+      inline def setGetMutual(value: () => Boolean): Self = StObject.set(x, "getMutual", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+      inline def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTarget(value: () => String): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+      inline def setGetTarget(value: () => String): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMechanism(value: String): Self = StObject.set(x, "Mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: String): Self = StObject.set(x, "Mechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutual(value: Boolean): Self = StObject.set(x, "Mutual", value.asInstanceOf[js.Any])
+      inline def setMutual(value: Boolean): Self = StObject.set(x, "Mutual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,8 +248,7 @@ object auth {
   }
   object XSSOInitiatorContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Mechanism: String,
       Mutual: Boolean,
       Source: String,
@@ -280,11 +266,9 @@ object auth {
       __obj.asInstanceOf[XSSOInitiatorContext]
     }
     
-    @scala.inline
-    implicit class XSSOInitiatorContextMutableBuilder[Self <: XSSOInitiatorContext] (val x: Self) extends AnyVal {
+    extension [Self <: XSSOInitiatorContext](x: Self) {
       
-      @scala.inline
-      def setInit(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: SeqEquiv[Double] => SafeArray[Double]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
   
@@ -326,8 +310,7 @@ object auth {
   }
   object XSSOManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Mechanism: String,
       acquire: () => Unit,
       createAcceptorContext: String => XSSOAcceptorContext,
@@ -340,20 +323,15 @@ object auth {
       __obj.asInstanceOf[XSSOManager]
     }
     
-    @scala.inline
-    implicit class XSSOManagerMutableBuilder[Self <: XSSOManager] (val x: Self) extends AnyVal {
+    extension [Self <: XSSOManager](x: Self) {
       
-      @scala.inline
-      def setCreateAcceptorContext(value: String => XSSOAcceptorContext): Self = StObject.set(x, "createAcceptorContext", js.Any.fromFunction1(value))
+      inline def setCreateAcceptorContext(value: String => XSSOAcceptorContext): Self = StObject.set(x, "createAcceptorContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateInitiatorContext(value: (String, String, String) => XSSOInitiatorContext): Self = StObject.set(x, "createInitiatorContext", js.Any.fromFunction3(value))
+      inline def setCreateInitiatorContext(value: (String, String, String) => XSSOInitiatorContext): Self = StObject.set(x, "createInitiatorContext", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetMechanism(value: () => String): Self = StObject.set(x, "getMechanism", js.Any.fromFunction0(value))
+      inline def setGetMechanism(value: () => String): Self = StObject.set(x, "getMechanism", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMechanism(value: String): Self = StObject.set(x, "Mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: String): Self = StObject.set(x, "Mechanism", value.asInstanceOf[js.Any])
     }
   }
   
@@ -379,8 +357,7 @@ object auth {
   }
   object XSSOManagerFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SSOManager: XSSOManager,
       acquire: () => Unit,
       getSSOManager: () => XSSOManager,
@@ -391,14 +368,11 @@ object auth {
       __obj.asInstanceOf[XSSOManagerFactory]
     }
     
-    @scala.inline
-    implicit class XSSOManagerFactoryMutableBuilder[Self <: XSSOManagerFactory] (val x: Self) extends AnyVal {
+    extension [Self <: XSSOManagerFactory](x: Self) {
       
-      @scala.inline
-      def setGetSSOManager(value: () => XSSOManager): Self = StObject.set(x, "getSSOManager", js.Any.fromFunction0(value))
+      inline def setGetSSOManager(value: () => XSSOManager): Self = StObject.set(x, "getSSOManager", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSSOManager(value: XSSOManager): Self = StObject.set(x, "SSOManager", value.asInstanceOf[js.Any])
+      inline def setSSOManager(value: XSSOManager): Self = StObject.set(x, "SSOManager", value.asInstanceOf[js.Any])
     }
   }
   
@@ -440,8 +414,7 @@ object auth {
   }
   object XSSOPasswordCache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addPassword: (String, String, Boolean) => Unit,
       getPassword: (String, js.Array[Boolean]) => String,
@@ -453,17 +426,13 @@ object auth {
       __obj.asInstanceOf[XSSOPasswordCache]
     }
     
-    @scala.inline
-    implicit class XSSOPasswordCacheMutableBuilder[Self <: XSSOPasswordCache] (val x: Self) extends AnyVal {
+    extension [Self <: XSSOPasswordCache](x: Self) {
       
-      @scala.inline
-      def setAddPassword(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "addPassword", js.Any.fromFunction3(value))
+      inline def setAddPassword(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "addPassword", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetPassword(value: (String, js.Array[Boolean]) => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction2(value))
+      inline def setGetPassword(value: (String, js.Array[Boolean]) => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemovePassword(value: (String, Boolean) => Unit): Self = StObject.set(x, "removePassword", js.Any.fromFunction2(value))
+      inline def setRemovePassword(value: (String, Boolean) => Unit): Self = StObject.set(x, "removePassword", js.Any.fromFunction2(value))
     }
   }
 }

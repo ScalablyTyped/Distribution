@@ -22,20 +22,16 @@ object confirmMod extends Shortcut {
   }
   object ConfirmProps {
     
-    @scala.inline
-    def apply(): ConfirmProps = {
+    inline def apply(): ConfirmProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfirmProps]
     }
     
-    @scala.inline
-    implicit class ConfirmPropsMutableBuilder[Self <: ConfirmProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConfirmProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

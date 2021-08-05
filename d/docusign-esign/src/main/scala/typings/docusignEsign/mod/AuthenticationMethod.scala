@@ -36,37 +36,27 @@ trait AuthenticationMethod extends StObject {
 }
 object AuthenticationMethod {
   
-  @scala.inline
-  def apply(): AuthenticationMethod = {
+  inline def apply(): AuthenticationMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationMethod]
   }
   
-  @scala.inline
-  implicit class AuthenticationMethodMutableBuilder[Self <: AuthenticationMethod] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationMethod](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
-    @scala.inline
-    def setLastProvider(value: String): Self = StObject.set(x, "lastProvider", value.asInstanceOf[js.Any])
+    inline def setLastProvider(value: String): Self = StObject.set(x, "lastProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastProviderUndefined: Self = StObject.set(x, "lastProvider", js.undefined)
+    inline def setLastProviderUndefined: Self = StObject.set(x, "lastProvider", js.undefined)
     
-    @scala.inline
-    def setLastTimestamp(value: String): Self = StObject.set(x, "lastTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastTimestamp(value: String): Self = StObject.set(x, "lastTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTimestampUndefined: Self = StObject.set(x, "lastTimestamp", js.undefined)
+    inline def setLastTimestampUndefined: Self = StObject.set(x, "lastTimestamp", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

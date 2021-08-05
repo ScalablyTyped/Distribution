@@ -19,25 +19,19 @@ trait SessionOptions extends StObject {
 }
 object SessionOptions {
   
-  @scala.inline
-  def apply(): SessionOptions = {
+  inline def apply(): SessionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionOptions]
   }
   
-  @scala.inline
-  implicit class SessionOptionsMutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SessionOptions](x: Self) {
     
-    @scala.inline
-    def setCausalConsistency(value: Boolean): Self = StObject.set(x, "causalConsistency", value.asInstanceOf[js.Any])
+    inline def setCausalConsistency(value: Boolean): Self = StObject.set(x, "causalConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCausalConsistencyUndefined: Self = StObject.set(x, "causalConsistency", js.undefined)
+    inline def setCausalConsistencyUndefined: Self = StObject.set(x, "causalConsistency", js.undefined)
     
-    @scala.inline
-    def setDefaultTransactionOptions(value: TransactionOptions): Self = StObject.set(x, "defaultTransactionOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultTransactionOptions(value: TransactionOptions): Self = StObject.set(x, "defaultTransactionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTransactionOptionsUndefined: Self = StObject.set(x, "defaultTransactionOptions", js.undefined)
+    inline def setDefaultTransactionOptionsUndefined: Self = StObject.set(x, "defaultTransactionOptions", js.undefined)
   }
 }

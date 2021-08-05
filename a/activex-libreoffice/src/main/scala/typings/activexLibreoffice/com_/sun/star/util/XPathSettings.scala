@@ -101,8 +101,7 @@ trait XPathSettings
 }
 object XPathSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Addin: String,
     AutoCorrect: String,
     AutoText: String,
@@ -145,85 +144,58 @@ object XPathSettings {
     __obj.asInstanceOf[XPathSettings]
   }
   
-  @scala.inline
-  implicit class XPathSettingsMutableBuilder[Self <: XPathSettings] (val x: Self) extends AnyVal {
+  extension [Self <: XPathSettings](x: Self) {
     
-    @scala.inline
-    def setAddin(value: String): Self = StObject.set(x, "Addin", value.asInstanceOf[js.Any])
+    inline def setAddin(value: String): Self = StObject.set(x, "Addin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCorrect(value: String): Self = StObject.set(x, "AutoCorrect", value.asInstanceOf[js.Any])
+    inline def setAutoCorrect(value: String): Self = StObject.set(x, "AutoCorrect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoText(value: String): Self = StObject.set(x, "AutoText", value.asInstanceOf[js.Any])
+    inline def setAutoText(value: String): Self = StObject.set(x, "AutoText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackup(value: String): Self = StObject.set(x, "Backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: String): Self = StObject.set(x, "Backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathShareLayer(value: String): Self = StObject.set(x, "BasePathShareLayer", value.asInstanceOf[js.Any])
+    inline def setBasePathShareLayer(value: String): Self = StObject.set(x, "BasePathShareLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasePathUserLayer(value: String): Self = StObject.set(x, "BasePathUserLayer", value.asInstanceOf[js.Any])
+    inline def setBasePathUserLayer(value: String): Self = StObject.set(x, "BasePathUserLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasic(value: String): Self = StObject.set(x, "Basic", value.asInstanceOf[js.Any])
+    inline def setBasic(value: String): Self = StObject.set(x, "Basic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmap(value: String): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
+    inline def setBitmap(value: String): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDictionary(value: String): Self = StObject.set(x, "Dictionary", value.asInstanceOf[js.Any])
+    inline def setDictionary(value: String): Self = StObject.set(x, "Dictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFavorite(value: String): Self = StObject.set(x, "Favorite", value.asInstanceOf[js.Any])
+    inline def setFavorite(value: String): Self = StObject.set(x, "Favorite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGallery(value: String): Self = StObject.set(x, "Gallery", value.asInstanceOf[js.Any])
+    inline def setGallery(value: String): Self = StObject.set(x, "Gallery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphic(value: String): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: String): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelp(value: String): Self = StObject.set(x, "Help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: String): Self = StObject.set(x, "Help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinguistic(value: String): Self = StObject.set(x, "Linguistic", value.asInstanceOf[js.Any])
+    inline def setLinguistic(value: String): Self = StObject.set(x, "Linguistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "Module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "Module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPalette(value: String): Self = StObject.set(x, "Palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: String): Self = StObject.set(x, "Palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugin(value: String): Self = StObject.set(x, "Plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: String): Self = StObject.set(x, "Plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorage(value: String): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: String): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemp(value: String): Self = StObject.set(x, "Temp", value.asInstanceOf[js.Any])
+    inline def setTemp(value: String): Self = StObject.set(x, "Temp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "Template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUIConfig(value: String): Self = StObject.set(x, "UIConfig", value.asInstanceOf[js.Any])
+    inline def setUIConfig(value: String): Self = StObject.set(x, "UIConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserConfig(value: String): Self = StObject.set(x, "UserConfig", value.asInstanceOf[js.Any])
+    inline def setUserConfig(value: String): Self = StObject.set(x, "UserConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDictionary(value: String): Self = StObject.set(x, "UserDictionary", value.asInstanceOf[js.Any])
+    inline def setUserDictionary(value: String): Self = StObject.set(x, "UserDictionary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWork(value: String): Self = StObject.set(x, "Work", value.asInstanceOf[js.Any])
+    inline def setWork(value: String): Self = StObject.set(x, "Work", value.asInstanceOf[js.Any])
   }
 }

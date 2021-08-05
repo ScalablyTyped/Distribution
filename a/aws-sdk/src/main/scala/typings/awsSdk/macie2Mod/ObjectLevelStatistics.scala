@@ -23,31 +23,23 @@ trait ObjectLevelStatistics extends StObject {
 }
 object ObjectLevelStatistics {
   
-  @scala.inline
-  def apply(): ObjectLevelStatistics = {
+  inline def apply(): ObjectLevelStatistics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectLevelStatistics]
   }
   
-  @scala.inline
-  implicit class ObjectLevelStatisticsMutableBuilder[Self <: ObjectLevelStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectLevelStatistics](x: Self) {
     
-    @scala.inline
-    def setFileType(value: long): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: long): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: long): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: long): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
     
-    @scala.inline
-    def setTotal(value: long): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: long): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

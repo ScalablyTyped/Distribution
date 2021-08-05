@@ -13,22 +13,17 @@ trait SchemaVpnGatewayStatus extends StObject {
 }
 object SchemaVpnGatewayStatus {
   
-  @scala.inline
-  def apply(): SchemaVpnGatewayStatus = {
+  inline def apply(): SchemaVpnGatewayStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVpnGatewayStatus]
   }
   
-  @scala.inline
-  implicit class SchemaVpnGatewayStatusMutableBuilder[Self <: SchemaVpnGatewayStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVpnGatewayStatus](x: Self) {
     
-    @scala.inline
-    def setVpnConnections(value: js.Array[SchemaVpnGatewayStatusVpnConnection]): Self = StObject.set(x, "vpnConnections", value.asInstanceOf[js.Any])
+    inline def setVpnConnections(value: js.Array[SchemaVpnGatewayStatusVpnConnection]): Self = StObject.set(x, "vpnConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnConnectionsUndefined: Self = StObject.set(x, "vpnConnections", js.undefined)
+    inline def setVpnConnectionsUndefined: Self = StObject.set(x, "vpnConnections", js.undefined)
     
-    @scala.inline
-    def setVpnConnectionsVarargs(value: SchemaVpnGatewayStatusVpnConnection*): Self = StObject.set(x, "vpnConnections", js.Array(value :_*))
+    inline def setVpnConnectionsVarargs(value: SchemaVpnGatewayStatusVpnConnection*): Self = StObject.set(x, "vpnConnections", js.Array(value :_*))
   }
 }

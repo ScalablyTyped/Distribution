@@ -26,26 +26,20 @@ object sidebarMod {
   }
   object SidebarProps {
     
-    @scala.inline
-    def apply(): SidebarProps = {
+    inline def apply(): SidebarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarProps]
     }
     
-    @scala.inline
-    implicit class SidebarPropsMutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarProps](x: Self) {
       
-      @scala.inline
-      def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
 }

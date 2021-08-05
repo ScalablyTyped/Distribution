@@ -13,22 +13,17 @@ trait SourceIpConditionConfig extends StObject {
 }
 object SourceIpConditionConfig {
   
-  @scala.inline
-  def apply(): SourceIpConditionConfig = {
+  inline def apply(): SourceIpConditionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceIpConditionConfig]
   }
   
-  @scala.inline
-  implicit class SourceIpConditionConfigMutableBuilder[Self <: SourceIpConditionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SourceIpConditionConfig](x: Self) {
     
-    @scala.inline
-    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

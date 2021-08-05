@@ -18,28 +18,21 @@ trait ListVaultsOutput extends StObject {
 }
 object ListVaultsOutput {
   
-  @scala.inline
-  def apply(): ListVaultsOutput = {
+  inline def apply(): ListVaultsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVaultsOutput]
   }
   
-  @scala.inline
-  implicit class ListVaultsOutputMutableBuilder[Self <: ListVaultsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVaultsOutput](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setVaultList(value: VaultList): Self = StObject.set(x, "VaultList", value.asInstanceOf[js.Any])
+    inline def setVaultList(value: VaultList): Self = StObject.set(x, "VaultList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultListUndefined: Self = StObject.set(x, "VaultList", js.undefined)
+    inline def setVaultListUndefined: Self = StObject.set(x, "VaultList", js.undefined)
     
-    @scala.inline
-    def setVaultListVarargs(value: DescribeVaultOutput*): Self = StObject.set(x, "VaultList", js.Array(value :_*))
+    inline def setVaultListVarargs(value: DescribeVaultOutput*): Self = StObject.set(x, "VaultList", js.Array(value :_*))
   }
 }

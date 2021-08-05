@@ -13,8 +13,7 @@ object asyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def read(path: String, settings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def read(path: String, settings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AsyncCallback = js.Function2[/* err */ ErrnoException, /* stats */ Stats, Unit]
 }

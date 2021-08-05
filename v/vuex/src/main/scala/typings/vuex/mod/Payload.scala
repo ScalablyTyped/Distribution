@@ -10,17 +10,14 @@ trait Payload extends StObject {
 }
 object Payload {
   
-  @scala.inline
-  def apply(`type`: String): Payload = {
+  inline def apply(`type`: String): Payload = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Payload]
   }
   
-  @scala.inline
-  implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+  extension [Self <: Payload](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

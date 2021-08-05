@@ -12,19 +12,15 @@ trait Ca extends StObject {
 }
 object Ca {
   
-  @scala.inline
-  def apply(ca: Boolean, critical: Boolean): Ca = {
+  inline def apply(ca: Boolean, critical: Boolean): Ca = {
     val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ca]
   }
   
-  @scala.inline
-  implicit class CaMutableBuilder[Self <: Ca] (val x: Self) extends AnyVal {
+  extension [Self <: Ca](x: Self) {
     
-    @scala.inline
-    def setCa(value: Boolean): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+    inline def setCa(value: Boolean): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+    inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
   }
 }

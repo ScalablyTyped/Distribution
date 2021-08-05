@@ -12,14 +12,10 @@ object mod {
     * Create an attachment `Content-Disposition` header value using the given file name, if supplied.
     * The `filename` is optional and if no file name is desired, but you want to specify options, set `filename` to undefined.
     */
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(filename: String): String = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(filename: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(filename: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(filename: String): String = ^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(filename: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(filename: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("content-disposition", JSImport.Namespace)
   @js.native
@@ -28,8 +24,7 @@ object mod {
   /**
     * Parse a Content-Disposition header string
     */
-  @scala.inline
-  def parse(contentDispositionHeader: String): ContentDisposition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contentDispositionHeader.asInstanceOf[js.Any]).asInstanceOf[ContentDisposition]
+  inline def parse(contentDispositionHeader: String): ContentDisposition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contentDispositionHeader.asInstanceOf[js.Any]).asInstanceOf[ContentDisposition]
   
   /**
     * Class for parsed Content-Disposition header for v8 optimization
@@ -49,21 +44,17 @@ object mod {
   }
   object ContentDisposition {
     
-    @scala.inline
-    def apply(parameters: js.Any, `type`: attachment | `inline` | String): ContentDisposition = {
+    inline def apply(parameters: js.Any, `type`: attachment | `inline` | String): ContentDisposition = {
       val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentDisposition]
     }
     
-    @scala.inline
-    implicit class ContentDispositionMutableBuilder[Self <: ContentDisposition] (val x: Self) extends AnyVal {
+    extension [Self <: ContentDisposition](x: Self) {
       
-      @scala.inline
-      def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: attachment | `inline` | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: attachment | `inline` | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,26 +79,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFallback(value: String | Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: String | Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setType(value: attachment | `inline` | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: attachment | `inline` | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

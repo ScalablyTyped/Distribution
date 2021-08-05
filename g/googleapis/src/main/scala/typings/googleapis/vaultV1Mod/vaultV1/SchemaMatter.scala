@@ -38,46 +38,33 @@ trait SchemaMatter extends StObject {
 }
 object SchemaMatter {
   
-  @scala.inline
-  def apply(): SchemaMatter = {
+  inline def apply(): SchemaMatter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMatter]
   }
   
-  @scala.inline
-  implicit class SchemaMatterMutableBuilder[Self <: SchemaMatter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMatter](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
+    inline def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
+    inline def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
-    @scala.inline
-    def setMatterPermissions(value: js.Array[SchemaMatterPermission]): Self = StObject.set(x, "matterPermissions", value.asInstanceOf[js.Any])
+    inline def setMatterPermissions(value: js.Array[SchemaMatterPermission]): Self = StObject.set(x, "matterPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterPermissionsUndefined: Self = StObject.set(x, "matterPermissions", js.undefined)
+    inline def setMatterPermissionsUndefined: Self = StObject.set(x, "matterPermissions", js.undefined)
     
-    @scala.inline
-    def setMatterPermissionsVarargs(value: SchemaMatterPermission*): Self = StObject.set(x, "matterPermissions", js.Array(value :_*))
+    inline def setMatterPermissionsVarargs(value: SchemaMatterPermission*): Self = StObject.set(x, "matterPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

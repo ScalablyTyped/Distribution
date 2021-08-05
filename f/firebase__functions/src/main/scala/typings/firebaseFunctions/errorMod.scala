@@ -39,8 +39,6 @@ object errorMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def errorForResponse(status: Double, bodyJSON: Null, serializer: Serializer): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_errorForResponse")(status.asInstanceOf[js.Any], bodyJSON.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
-  @scala.inline
-  def errorForResponse(status: Double, bodyJSON: HttpResponseBody, serializer: Serializer): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_errorForResponse")(status.asInstanceOf[js.Any], bodyJSON.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
+  inline def errorForResponse(status: Double, bodyJSON: Null, serializer: Serializer): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_errorForResponse")(status.asInstanceOf[js.Any], bodyJSON.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
+  inline def errorForResponse(status: Double, bodyJSON: HttpResponseBody, serializer: Serializer): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_errorForResponse")(status.asInstanceOf[js.Any], bodyJSON.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
 }

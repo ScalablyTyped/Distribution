@@ -18,34 +18,25 @@ trait MetricAggregation extends StObject {
 }
 object MetricAggregation {
   
-  @scala.inline
-  def apply(): MetricAggregation = {
+  inline def apply(): MetricAggregation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricAggregation]
   }
   
-  @scala.inline
-  implicit class MetricAggregationMutableBuilder[Self <: MetricAggregation] (val x: Self) extends AnyVal {
+  extension [Self <: MetricAggregation](x: Self) {
     
-    @scala.inline
-    def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
+    inline def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
+    inline def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
     
-    @scala.inline
-    def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[MetricAggregationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[MetricAggregationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: MetricAggregationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: MetricAggregationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

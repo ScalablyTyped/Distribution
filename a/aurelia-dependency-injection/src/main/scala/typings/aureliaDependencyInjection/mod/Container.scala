@@ -94,6 +94,5 @@ object Container {
   @JSImport("aurelia-dependency-injection", "Container.instance")
   @js.native
   def instance: Container = js.native
-  @scala.inline
-  def instance_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+  inline def instance_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

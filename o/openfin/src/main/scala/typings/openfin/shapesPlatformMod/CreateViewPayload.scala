@@ -14,19 +14,15 @@ trait CreateViewPayload extends StObject {
 }
 object CreateViewPayload {
   
-  @scala.inline
-  def apply(opts: ViewCreationOptions, target: Identity): CreateViewPayload = {
+  inline def apply(opts: ViewCreationOptions, target: Identity): CreateViewPayload = {
     val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateViewPayload]
   }
   
-  @scala.inline
-  implicit class CreateViewPayloadMutableBuilder[Self <: CreateViewPayload] (val x: Self) extends AnyVal {
+  extension [Self <: CreateViewPayload](x: Self) {
     
-    @scala.inline
-    def setOpts(value: ViewCreationOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+    inline def setOpts(value: ViewCreationOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Identity): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

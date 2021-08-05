@@ -38,8 +38,7 @@ object paneMod {
     @JSImport("react-sortable-pane/lib/pane", "Pane.defaultProps")
     @js.native
     def defaultProps: ClassName = js.native
-    @scala.inline
-    def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IsPaneResizable extends StObject {
@@ -52,32 +51,24 @@ object paneMod {
   }
   object IsPaneResizable {
     
-    @scala.inline
-    def apply(): IsPaneResizable = {
+    inline def apply(): IsPaneResizable = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsPaneResizable]
     }
     
-    @scala.inline
-    implicit class IsPaneResizableMutableBuilder[Self <: IsPaneResizable] (val x: Self) extends AnyVal {
+    extension [Self <: IsPaneResizable](x: Self) {
       
-      @scala.inline
-      def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setXy(value: Boolean): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
+      inline def setXy(value: Boolean): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
+      inline def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
       
-      @scala.inline
-      def setY(value: Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -111,86 +102,60 @@ object paneMod {
   }
   object PaneProps {
     
-    @scala.inline
-    def apply(): PaneProps = {
+    inline def apply(): PaneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PaneProps]
     }
     
-    @scala.inline
-    implicit class PanePropsMutableBuilder[Self <: PaneProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaneProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultSize(value: Height): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+      inline def setDefaultSize(value: Height): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
+      inline def setDefaultSizeUndefined: Self = StObject.set(x, "defaultSize", js.undefined)
       
-      @scala.inline
-      def setGrid(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: PaneSize): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: PaneSize): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: PaneSize): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: PaneSize): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: PaneSize): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: PaneSize): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: PaneSize): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: PaneSize): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setOnSizeChange(value: () => Unit): Self = StObject.set(x, "onSizeChange", js.Any.fromFunction0(value))
+      inline def setOnSizeChange(value: () => Unit): Self = StObject.set(x, "onSizeChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSizeChangeUndefined: Self = StObject.set(x, "onSizeChange", js.undefined)
+      inline def setOnSizeChangeUndefined: Self = StObject.set(x, "onSizeChange", js.undefined)
       
-      @scala.inline
-      def setResizable(value: IsPaneResizable): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: IsPaneResizable): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+      inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
-      @scala.inline
-      def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

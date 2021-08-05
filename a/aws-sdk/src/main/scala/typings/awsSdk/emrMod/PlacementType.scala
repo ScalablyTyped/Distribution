@@ -18,28 +18,21 @@ trait PlacementType extends StObject {
 }
 object PlacementType {
   
-  @scala.inline
-  def apply(): PlacementType = {
+  inline def apply(): PlacementType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementType]
   }
   
-  @scala.inline
-  implicit class PlacementTypeMutableBuilder[Self <: PlacementType] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementType](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: XmlString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: XmlString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZones(value: XmlStringMaxLen256List): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: XmlStringMaxLen256List): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
   }
 }

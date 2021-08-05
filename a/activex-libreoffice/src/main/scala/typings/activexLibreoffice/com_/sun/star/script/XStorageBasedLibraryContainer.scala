@@ -45,8 +45,7 @@ trait XStorageBasedLibraryContainer
 }
 object XStorageBasedLibraryContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContainerLocationName: String,
     ElementNames: SafeArray[String],
     ElementType: `type`,
@@ -81,13 +80,10 @@ object XStorageBasedLibraryContainer {
     __obj.asInstanceOf[XStorageBasedLibraryContainer]
   }
   
-  @scala.inline
-  implicit class XStorageBasedLibraryContainerMutableBuilder[Self <: XStorageBasedLibraryContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XStorageBasedLibraryContainer](x: Self) {
     
-    @scala.inline
-    def setRootStorage(value: XStorage): Self = StObject.set(x, "RootStorage", value.asInstanceOf[js.Any])
+    inline def setRootStorage(value: XStorage): Self = StObject.set(x, "RootStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreLibrariesToStorage(value: XStorage => Unit): Self = StObject.set(x, "storeLibrariesToStorage", js.Any.fromFunction1(value))
+    inline def setStoreLibrariesToStorage(value: XStorage => Unit): Self = StObject.set(x, "storeLibrariesToStorage", js.Any.fromFunction1(value))
   }
 }

@@ -35,8 +35,7 @@ trait InstanceLocker
 }
 object InstanceLocker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InstanceLockerCtor1: (XInterface, Double) => Unit,
     InstanceLockerCtor2: (XInterface, Double, XActionsApproval) => Unit,
     acquire: () => Unit,
@@ -50,13 +49,10 @@ object InstanceLocker {
     __obj.asInstanceOf[InstanceLocker]
   }
   
-  @scala.inline
-  implicit class InstanceLockerMutableBuilder[Self <: InstanceLocker] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceLocker](x: Self) {
     
-    @scala.inline
-    def setInstanceLockerCtor1(value: (XInterface, Double) => Unit): Self = StObject.set(x, "InstanceLockerCtor1", js.Any.fromFunction2(value))
+    inline def setInstanceLockerCtor1(value: (XInterface, Double) => Unit): Self = StObject.set(x, "InstanceLockerCtor1", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInstanceLockerCtor2(value: (XInterface, Double, XActionsApproval) => Unit): Self = StObject.set(x, "InstanceLockerCtor2", js.Any.fromFunction3(value))
+    inline def setInstanceLockerCtor2(value: (XInterface, Double, XActionsApproval) => Unit): Self = StObject.set(x, "InstanceLockerCtor2", js.Any.fromFunction3(value))
   }
 }

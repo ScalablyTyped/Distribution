@@ -11,8 +11,7 @@ object useImageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasSrcListImgPromiseUseSuspense: useImageProps): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSrcListImgPromiseUseSuspense.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def default(hasSrcListImgPromiseUseSuspense: useImageProps): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasSrcListImgPromiseUseSuspense.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   trait useImageProps extends StObject {
     
@@ -24,32 +23,24 @@ object useImageMod {
   }
   object useImageProps {
     
-    @scala.inline
-    def apply(srcList: String | js.Array[String]): useImageProps = {
+    inline def apply(srcList: String | js.Array[String]): useImageProps = {
       val __obj = js.Dynamic.literal(srcList = srcList.asInstanceOf[js.Any])
       __obj.asInstanceOf[useImageProps]
     }
     
-    @scala.inline
-    implicit class useImagePropsMutableBuilder[Self <: useImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: useImageProps](x: Self) {
       
-      @scala.inline
-      def setImgPromise(value: /* repeated */ js.Any => js.Promise[Unit]): Self = StObject.set(x, "imgPromise", js.Any.fromFunction1(value))
+      inline def setImgPromise(value: /* repeated */ js.Any => js.Promise[Unit]): Self = StObject.set(x, "imgPromise", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImgPromiseUndefined: Self = StObject.set(x, "imgPromise", js.undefined)
+      inline def setImgPromiseUndefined: Self = StObject.set(x, "imgPromise", js.undefined)
       
-      @scala.inline
-      def setSrcList(value: String | js.Array[String]): Self = StObject.set(x, "srcList", value.asInstanceOf[js.Any])
+      inline def setSrcList(value: String | js.Array[String]): Self = StObject.set(x, "srcList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcListVarargs(value: String*): Self = StObject.set(x, "srcList", js.Array(value :_*))
+      inline def setSrcListVarargs(value: String*): Self = StObject.set(x, "srcList", js.Array(value :_*))
       
-      @scala.inline
-      def setUseSuspense(value: Boolean): Self = StObject.set(x, "useSuspense", value.asInstanceOf[js.Any])
+      inline def setUseSuspense(value: Boolean): Self = StObject.set(x, "useSuspense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSuspenseUndefined: Self = StObject.set(x, "useSuspense", js.undefined)
+      inline def setUseSuspenseUndefined: Self = StObject.set(x, "useSuspense", js.undefined)
     }
   }
 }

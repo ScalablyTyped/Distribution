@@ -23,8 +23,7 @@ trait PerformanceNavigation extends StObject {
 }
 object PerformanceNavigation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TYPE_BACK_FORWARD: Double,
     TYPE_NAVIGATE: Double,
     TYPE_RELOAD: Double,
@@ -38,28 +37,20 @@ object PerformanceNavigation {
     __obj.asInstanceOf[PerformanceNavigation]
   }
   
-  @scala.inline
-  implicit class PerformanceNavigationMutableBuilder[Self <: PerformanceNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceNavigation](x: Self) {
     
-    @scala.inline
-    def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
+    inline def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTYPE_BACK_FORWARD(value: Double): Self = StObject.set(x, "TYPE_BACK_FORWARD", value.asInstanceOf[js.Any])
+    inline def setTYPE_BACK_FORWARD(value: Double): Self = StObject.set(x, "TYPE_BACK_FORWARD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTYPE_NAVIGATE(value: Double): Self = StObject.set(x, "TYPE_NAVIGATE", value.asInstanceOf[js.Any])
+    inline def setTYPE_NAVIGATE(value: Double): Self = StObject.set(x, "TYPE_NAVIGATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTYPE_RELOAD(value: Double): Self = StObject.set(x, "TYPE_RELOAD", value.asInstanceOf[js.Any])
+    inline def setTYPE_RELOAD(value: Double): Self = StObject.set(x, "TYPE_RELOAD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTYPE_RESERVED(value: Double): Self = StObject.set(x, "TYPE_RESERVED", value.asInstanceOf[js.Any])
+    inline def setTYPE_RESERVED(value: Double): Self = StObject.set(x, "TYPE_RESERVED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ trait SyndicationFeed
      with ISyndicationFeed
 object SyndicationFeed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeExtensions: IVector[SyndicationAttribute],
     authors: IVector[SyndicationPerson],
     baseUri: Uri,

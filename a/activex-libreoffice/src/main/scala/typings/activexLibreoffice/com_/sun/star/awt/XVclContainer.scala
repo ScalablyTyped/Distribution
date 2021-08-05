@@ -29,8 +29,7 @@ trait XVclContainer
 }
 object XVclContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Windows: SafeArray[XWindow],
     acquire: () => Unit,
     addVclContainerListener: XVclContainerListener => Unit,
@@ -43,19 +42,14 @@ object XVclContainer {
     __obj.asInstanceOf[XVclContainer]
   }
   
-  @scala.inline
-  implicit class XVclContainerMutableBuilder[Self <: XVclContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XVclContainer](x: Self) {
     
-    @scala.inline
-    def setAddVclContainerListener(value: XVclContainerListener => Unit): Self = StObject.set(x, "addVclContainerListener", js.Any.fromFunction1(value))
+    inline def setAddVclContainerListener(value: XVclContainerListener => Unit): Self = StObject.set(x, "addVclContainerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWindows(value: () => SafeArray[XWindow]): Self = StObject.set(x, "getWindows", js.Any.fromFunction0(value))
+    inline def setGetWindows(value: () => SafeArray[XWindow]): Self = StObject.set(x, "getWindows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveVclContainerListener(value: XVclContainerListener => Unit): Self = StObject.set(x, "removeVclContainerListener", js.Any.fromFunction1(value))
+    inline def setRemoveVclContainerListener(value: XVclContainerListener => Unit): Self = StObject.set(x, "removeVclContainerListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWindows(value: SafeArray[XWindow]): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: SafeArray[XWindow]): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
   }
 }

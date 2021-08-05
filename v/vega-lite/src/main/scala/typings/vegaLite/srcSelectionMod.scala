@@ -36,11 +36,9 @@ object srcSelectionMod {
   @js.native
   val defaultConfig: SelectionConfig = js.native
   
-  @scala.inline
-  def isLegendBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegendBinding")(bind.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.LegendBinding */ Boolean]
+  inline def isLegendBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegendBinding")(bind.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.LegendBinding */ Boolean]
   
-  @scala.inline
-  def isLegendStreamBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendStreamBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegendStreamBinding")(bind.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.LegendStreamBinding */ Boolean]
+  inline def isLegendStreamBinding(bind: js.Any): /* is vega-lite.vega-lite/build/src/selection.LegendStreamBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegendStreamBinding")(bind.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.LegendStreamBinding */ Boolean]
   
   trait BaseSelectionConfig extends StObject {
     
@@ -93,56 +91,40 @@ object srcSelectionMod {
   }
   object BaseSelectionConfig {
     
-    @scala.inline
-    def apply(): BaseSelectionConfig = {
+    inline def apply(): BaseSelectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseSelectionConfig]
     }
     
-    @scala.inline
-    implicit class BaseSelectionConfigMutableBuilder[Self <: BaseSelectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BaseSelectionConfig](x: Self) {
       
-      @scala.inline
-      def setClear(value: Stream | String | Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: Stream | String | Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setEmpty(value: all | none): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: all | none): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      @scala.inline
-      def setEncodings(value: js.Array[SingleDefUnitChannel]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
+      inline def setEncodings(value: js.Array[SingleDefUnitChannel]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingsUndefined: Self = StObject.set(x, "encodings", js.undefined)
+      inline def setEncodingsUndefined: Self = StObject.set(x, "encodings", js.undefined)
       
-      @scala.inline
-      def setEncodingsVarargs(value: SingleDefUnitChannel*): Self = StObject.set(x, "encodings", js.Array(value :_*))
+      inline def setEncodingsVarargs(value: SingleDefUnitChannel*): Self = StObject.set(x, "encodings", js.Array(value :_*))
       
-      @scala.inline
-      def setFields(value: js.Array[FieldName]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[FieldName]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFieldsVarargs(value: FieldName*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: FieldName*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setOn(value: Stream | String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: Stream | String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      @scala.inline
-      def setResolve(value: SelectionResolution): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: SelectionResolution): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
   
@@ -159,18 +141,15 @@ object srcSelectionMod {
   }
   object BaseSelectionDef {
     
-    @scala.inline
-    def apply[T /* <: single | multi | interval */](`type`: T): BaseSelectionDef[T] = {
+    inline def apply[T /* <: single | multi | interval */](`type`: T): BaseSelectionDef[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseSelectionDef[T]]
     }
     
-    @scala.inline
-    implicit class BaseSelectionDefMutableBuilder[Self <: BaseSelectionDef[?], T /* <: single | multi | interval */] (val x: Self & BaseSelectionDef[T]) extends AnyVal {
+    extension [Self <: BaseSelectionDef[?], T /* <: single | multi | interval */](x: Self & BaseSelectionDef[T]) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,65 +204,46 @@ object srcSelectionMod {
   }
   object BrushConfig {
     
-    @scala.inline
-    def apply(): BrushConfig = {
+    inline def apply(): BrushConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrushConfig]
     }
     
-    @scala.inline
-    implicit class BrushConfigMutableBuilder[Self <: BrushConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BrushConfig](x: Self) {
       
-      @scala.inline
-      def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setFill(value: Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: Color): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setStroke(value: Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: Color): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDash(value: js.Array[Double]): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
+      inline def setStrokeDash(value: js.Array[Double]): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDashOffset(value: Double): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
+      inline def setStrokeDashOffset(value: Double): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
+      inline def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
       
-      @scala.inline
-      def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
+      inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
       
-      @scala.inline
-      def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+      inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
       
-      @scala.inline
-      def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     }
   }
   
@@ -294,8 +254,7 @@ object srcSelectionMod {
        with SelectionDef
   object IntervalSelection {
     
-    @scala.inline
-    def apply(): IntervalSelection = {
+    inline def apply(): IntervalSelection = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("interval")
       __obj.asInstanceOf[IntervalSelection]
@@ -360,44 +319,32 @@ object srcSelectionMod {
   }
   object IntervalSelectionConfig {
     
-    @scala.inline
-    def apply(): IntervalSelectionConfig = {
+    inline def apply(): IntervalSelectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntervalSelectionConfig]
     }
     
-    @scala.inline
-    implicit class IntervalSelectionConfigMutableBuilder[Self <: IntervalSelectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IntervalSelectionConfig](x: Self) {
       
-      @scala.inline
-      def setBind(value: scales): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: scales): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+      inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
-      @scala.inline
-      def setInit(value: SelectionInitIntervalMapping): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: SelectionInitIntervalMapping): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setMark(value: BrushConfig): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: BrushConfig): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: String | Boolean): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: String | Boolean): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setZoom(value: String | Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: String | Boolean): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -415,17 +362,14 @@ object srcSelectionMod {
   }
   object LegendStreamBinding {
     
-    @scala.inline
-    def apply(legend: String | Stream): LegendStreamBinding = {
+    inline def apply(legend: String | Stream): LegendStreamBinding = {
       val __obj = js.Dynamic.literal(legend = legend.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegendStreamBinding]
     }
     
-    @scala.inline
-    implicit class LegendStreamBindingMutableBuilder[Self <: LegendStreamBinding] (val x: Self) extends AnyVal {
+    extension [Self <: LegendStreamBinding](x: Self) {
       
-      @scala.inline
-      def setLegend(value: String | Stream): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+      inline def setLegend(value: String | Stream): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     }
   }
   
@@ -436,8 +380,7 @@ object srcSelectionMod {
        with SelectionDef
   object MultiSelection {
     
-    @scala.inline
-    def apply(): MultiSelection = {
+    inline def apply(): MultiSelection = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("multi")
       __obj.asInstanceOf[MultiSelection]
@@ -489,41 +432,30 @@ object srcSelectionMod {
   }
   object MultiSelectionConfig {
     
-    @scala.inline
-    def apply(): MultiSelectionConfig = {
+    inline def apply(): MultiSelectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MultiSelectionConfig]
     }
     
-    @scala.inline
-    implicit class MultiSelectionConfigMutableBuilder[Self <: MultiSelectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MultiSelectionConfig](x: Self) {
       
-      @scala.inline
-      def setBind(value: LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+      inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
-      @scala.inline
-      def setInit(value: js.Array[SelectionInitMapping]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: js.Array[SelectionInitMapping]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setInitVarargs(value: SelectionInitMapping*): Self = StObject.set(x, "init", js.Array(value :_*))
+      inline def setInitVarargs(value: SelectionInitMapping*): Self = StObject.set(x, "init", js.Array(value :_*))
       
-      @scala.inline
-      def setNearest(value: Boolean): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
+      inline def setNearest(value: Boolean): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearestUndefined: Self = StObject.set(x, "nearest", js.undefined)
+      inline def setNearestUndefined: Self = StObject.set(x, "nearest", js.undefined)
       
-      @scala.inline
-      def setToggle(value: String | Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+      inline def setToggle(value: String | Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
   }
   
@@ -557,32 +489,24 @@ object srcSelectionMod {
   }
   object SelectionConfig {
     
-    @scala.inline
-    def apply(): SelectionConfig = {
+    inline def apply(): SelectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectionConfig]
     }
     
-    @scala.inline
-    implicit class SelectionConfigMutableBuilder[Self <: SelectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionConfig](x: Self) {
       
-      @scala.inline
-      def setInterval(value: IntervalSelectionConfig): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: IntervalSelectionConfig): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMulti(value: MultiSelectionConfig): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: MultiSelectionConfig): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setSingle(value: SingleSelectionConfig): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+      inline def setSingle(value: SingleSelectionConfig): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+      inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
     }
   }
   
@@ -594,22 +518,19 @@ object srcSelectionMod {
   trait SelectionDef extends StObject
   object SelectionDef {
     
-    @scala.inline
-    def IntervalSelection(): typings.vegaLite.srcSelectionMod.IntervalSelection = {
+    inline def IntervalSelection(): typings.vegaLite.srcSelectionMod.IntervalSelection = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("interval")
       __obj.asInstanceOf[typings.vegaLite.srcSelectionMod.IntervalSelection]
     }
     
-    @scala.inline
-    def MultiSelection(): typings.vegaLite.srcSelectionMod.MultiSelection = {
+    inline def MultiSelection(): typings.vegaLite.srcSelectionMod.MultiSelection = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("multi")
       __obj.asInstanceOf[typings.vegaLite.srcSelectionMod.MultiSelection]
     }
     
-    @scala.inline
-    def SingleSelection(): typings.vegaLite.srcSelectionMod.SingleSelection = {
+    inline def SingleSelection(): typings.vegaLite.srcSelectionMod.SingleSelection = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("single")
       __obj.asInstanceOf[typings.vegaLite.srcSelectionMod.SingleSelection]
@@ -625,14 +546,12 @@ object srcSelectionMod {
        with _Domain
   object SelectionExtent {
     
-    @scala.inline
-    def EncodingSelection(selection: String): typings.vegaLite.anon.EncodingSelection = {
+    inline def EncodingSelection(selection: String): typings.vegaLite.anon.EncodingSelection = {
       val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.EncodingSelection]
     }
     
-    @scala.inline
-    def FieldSelection(selection: String): typings.vegaLite.anon.FieldSelection = {
+    inline def FieldSelection(selection: String): typings.vegaLite.anon.FieldSelection = {
       val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.anon.FieldSelection]
     }
@@ -654,14 +573,11 @@ object srcSelectionMod {
   trait SelectionResolution extends StObject
   object SelectionResolution {
     
-    @scala.inline
-    def global: typings.vegaLite.vegaLiteStrings.global = "global".asInstanceOf[typings.vegaLite.vegaLiteStrings.global]
+    inline def global: typings.vegaLite.vegaLiteStrings.global = "global".asInstanceOf[typings.vegaLite.vegaLiteStrings.global]
     
-    @scala.inline
-    def intersect: typings.vegaLite.vegaLiteStrings.intersect = "intersect".asInstanceOf[typings.vegaLite.vegaLiteStrings.intersect]
+    inline def intersect: typings.vegaLite.vegaLiteStrings.intersect = "intersect".asInstanceOf[typings.vegaLite.vegaLiteStrings.intersect]
     
-    @scala.inline
-    def union: typings.vegaLite.vegaLiteStrings.union = "union".asInstanceOf[typings.vegaLite.vegaLiteStrings.union]
+    inline def union: typings.vegaLite.vegaLiteStrings.union = "union".asInstanceOf[typings.vegaLite.vegaLiteStrings.union]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -672,14 +588,11 @@ object srcSelectionMod {
   trait SelectionType extends StObject
   object SelectionType {
     
-    @scala.inline
-    def interval: typings.vegaLite.vegaLiteStrings.interval = "interval".asInstanceOf[typings.vegaLite.vegaLiteStrings.interval]
+    inline def interval: typings.vegaLite.vegaLiteStrings.interval = "interval".asInstanceOf[typings.vegaLite.vegaLiteStrings.interval]
     
-    @scala.inline
-    def multi: typings.vegaLite.vegaLiteStrings.multi = "multi".asInstanceOf[typings.vegaLite.vegaLiteStrings.multi]
+    inline def multi: typings.vegaLite.vegaLiteStrings.multi = "multi".asInstanceOf[typings.vegaLite.vegaLiteStrings.multi]
     
-    @scala.inline
-    def single: typings.vegaLite.vegaLiteStrings.single = "single".asInstanceOf[typings.vegaLite.vegaLiteStrings.single]
+    inline def single: typings.vegaLite.vegaLiteStrings.single = "single".asInstanceOf[typings.vegaLite.vegaLiteStrings.single]
   }
   
   trait SingleSelection
@@ -689,8 +602,7 @@ object srcSelectionMod {
        with SelectionDef
   object SingleSelection {
     
-    @scala.inline
-    def apply(): SingleSelection = {
+    inline def apply(): SingleSelection = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("single")
       __obj.asInstanceOf[SingleSelection]
@@ -732,32 +644,24 @@ object srcSelectionMod {
   }
   object SingleSelectionConfig {
     
-    @scala.inline
-    def apply(): SingleSelectionConfig = {
+    inline def apply(): SingleSelectionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SingleSelectionConfig]
     }
     
-    @scala.inline
-    implicit class SingleSelectionConfigMutableBuilder[Self <: SingleSelectionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SingleSelectionConfig](x: Self) {
       
-      @scala.inline
-      def setBind(value: Binding | (Record[String, Binding]) | LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: Binding | (Record[String, Binding]) | LegendBinding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
+      inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
-      @scala.inline
-      def setInit(value: SelectionInitMapping): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: SelectionInitMapping): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setNearest(value: Boolean): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
+      inline def setNearest(value: Boolean): Self = StObject.set(x, "nearest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearestUndefined: Self = StObject.set(x, "nearest", js.undefined)
+      inline def setNearestUndefined: Self = StObject.set(x, "nearest", js.undefined)
     }
   }
 }

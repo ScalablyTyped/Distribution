@@ -20,37 +20,27 @@ trait SFCTemplateCompileResults extends StObject {
 }
 object SFCTemplateCompileResults {
   
-  @scala.inline
-  def apply(code: String, errors: js.Array[String | CompilerError], source: String, tips: js.Array[String]): SFCTemplateCompileResults = {
+  inline def apply(code: String, errors: js.Array[String | CompilerError], source: String, tips: js.Array[String]): SFCTemplateCompileResults = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], tips = tips.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCTemplateCompileResults]
   }
   
-  @scala.inline
-  implicit class SFCTemplateCompileResultsMutableBuilder[Self <: SFCTemplateCompileResults] (val x: Self) extends AnyVal {
+  extension [Self <: SFCTemplateCompileResults](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: js.Array[String | CompilerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[String | CompilerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: (String | CompilerError)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: (String | CompilerError)*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: RawSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTips(value: js.Array[String]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+    inline def setTips(value: js.Array[String]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTipsVarargs(value: String*): Self = StObject.set(x, "tips", js.Array(value :_*))
+    inline def setTipsVarargs(value: String*): Self = StObject.set(x, "tips", js.Array(value :_*))
   }
 }

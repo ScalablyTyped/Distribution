@@ -18,19 +18,15 @@ trait GetModelTemplateRequest extends StObject {
 }
 object GetModelTemplateRequest {
   
-  @scala.inline
-  def apply(ApiId: string, ModelId: string): GetModelTemplateRequest = {
+  inline def apply(ApiId: string, ModelId: string): GetModelTemplateRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], ModelId = ModelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetModelTemplateRequest]
   }
   
-  @scala.inline
-  implicit class GetModelTemplateRequestMutableBuilder[Self <: GetModelTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetModelTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelId(value: string): Self = StObject.set(x, "ModelId", value.asInstanceOf[js.Any])
+    inline def setModelId(value: string): Self = StObject.set(x, "ModelId", value.asInstanceOf[js.Any])
   }
 }

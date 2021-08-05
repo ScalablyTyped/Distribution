@@ -98,8 +98,7 @@ trait XAccessibleMultiLineText
 }
 object XAccessibleMultiLineText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaretPosition: Double,
     CharacterCount: Double,
     NumberOfLineWithCaret: Double,
@@ -137,25 +136,18 @@ object XAccessibleMultiLineText {
     __obj.asInstanceOf[XAccessibleMultiLineText]
   }
   
-  @scala.inline
-  implicit class XAccessibleMultiLineTextMutableBuilder[Self <: XAccessibleMultiLineText] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleMultiLineText](x: Self) {
     
-    @scala.inline
-    def setGetLineNumberAtIndex(value: Double => Double): Self = StObject.set(x, "getLineNumberAtIndex", js.Any.fromFunction1(value))
+    inline def setGetLineNumberAtIndex(value: Double => Double): Self = StObject.set(x, "getLineNumberAtIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumberOfLineWithCaret(value: () => Double): Self = StObject.set(x, "getNumberOfLineWithCaret", js.Any.fromFunction0(value))
+    inline def setGetNumberOfLineWithCaret(value: () => Double): Self = StObject.set(x, "getNumberOfLineWithCaret", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextAtLineNumber(value: Double => TextSegment): Self = StObject.set(x, "getTextAtLineNumber", js.Any.fromFunction1(value))
+    inline def setGetTextAtLineNumber(value: Double => TextSegment): Self = StObject.set(x, "getTextAtLineNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTextAtLineWithCaret(value: () => TextSegment): Self = StObject.set(x, "getTextAtLineWithCaret", js.Any.fromFunction0(value))
+    inline def setGetTextAtLineWithCaret(value: () => TextSegment): Self = StObject.set(x, "getTextAtLineWithCaret", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberOfLineWithCaret(value: Double): Self = StObject.set(x, "NumberOfLineWithCaret", value.asInstanceOf[js.Any])
+    inline def setNumberOfLineWithCaret(value: Double): Self = StObject.set(x, "NumberOfLineWithCaret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAtLineWithCaret(value: TextSegment): Self = StObject.set(x, "TextAtLineWithCaret", value.asInstanceOf[js.Any])
+    inline def setTextAtLineWithCaret(value: TextSegment): Self = StObject.set(x, "TextAtLineWithCaret", value.asInstanceOf[js.Any])
   }
 }

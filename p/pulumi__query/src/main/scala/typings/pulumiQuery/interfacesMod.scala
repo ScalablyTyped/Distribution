@@ -13,11 +13,9 @@ object interfacesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isAsyncIterable[T](o: js.Any): /* is @pulumi/query.@pulumi/query/interfaces.AsyncIterable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncIterable")(o.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/query.@pulumi/query/interfaces.AsyncIterable<T> */ Boolean]
+  inline def isAsyncIterable[T](o: js.Any): /* is @pulumi/query.@pulumi/query/interfaces.AsyncIterable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncIterable")(o.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/query.@pulumi/query/interfaces.AsyncIterable<T> */ Boolean]
   
-  @scala.inline
-  def isIterable[T](o: js.Any): /* is std.Iterable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(o.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<T> */ Boolean]
+  inline def isIterable[T](o: js.Any): /* is std.Iterable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(o.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<T> */ Boolean]
   
   @js.native
   trait AsyncIterable[T] extends StObject
@@ -861,17 +859,14 @@ object interfacesMod {
     }
     object SymbolConstructor {
       
-      @scala.inline
-      def apply(asyncIterator: js.Symbol): SymbolConstructor = {
+      inline def apply(asyncIterator: js.Symbol): SymbolConstructor = {
         val __obj = js.Dynamic.literal(asyncIterator = asyncIterator.asInstanceOf[js.Any])
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      @scala.inline
-      implicit class SymbolConstructorMutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
+      extension [Self <: SymbolConstructor](x: Self) {
         
-        @scala.inline
-        def setAsyncIterator(value: js.Symbol): Self = StObject.set(x, "asyncIterator", value.asInstanceOf[js.Any])
+        inline def setAsyncIterator(value: js.Symbol): Self = StObject.set(x, "asyncIterator", value.asInstanceOf[js.Any])
       }
     }
   }

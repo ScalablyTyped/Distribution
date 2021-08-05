@@ -33,46 +33,33 @@ trait QueryOutput extends StObject {
 }
 object QueryOutput {
   
-  @scala.inline
-  def apply(): QueryOutput = {
+  inline def apply(): QueryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryOutput]
   }
   
-  @scala.inline
-  implicit class QueryOutputMutableBuilder[Self <: QueryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: QueryOutput](x: Self) {
     
-    @scala.inline
-    def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+    inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+    inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
     
-    @scala.inline
-    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: ItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: AttributeMap*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedKey(value: Key): Self = StObject.set(x, "LastEvaluatedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
+    inline def setLastEvaluatedKeyUndefined: Self = StObject.set(x, "LastEvaluatedKey", js.undefined)
     
-    @scala.inline
-    def setScannedCount(value: Integer): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
+    inline def setScannedCount(value: Integer): Self = StObject.set(x, "ScannedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
+    inline def setScannedCountUndefined: Self = StObject.set(x, "ScannedCount", js.undefined)
   }
 }

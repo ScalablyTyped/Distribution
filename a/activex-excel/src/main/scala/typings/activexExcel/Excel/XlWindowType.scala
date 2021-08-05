@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlWindowType extends StObject
 object XlWindowType {
   
-  @scala.inline
-  def xlChartAsWindow: `5` = 5.asInstanceOf[`5`]
+  inline def xlChartAsWindow: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlChartInPlace: `4` = 4.asInstanceOf[`4`]
+  inline def xlChartInPlace: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlClipboard: `3` = 3.asInstanceOf[`3`]
+  inline def xlClipboard: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlInfo: `-4129` = -4129.asInstanceOf[`-4129`]
+  inline def xlInfo: `-4129` = -4129.asInstanceOf[`-4129`]
   
-  @scala.inline
-  def xlWorkbook: `1` = 1.asInstanceOf[`1`]
+  inline def xlWorkbook: `1` = 1.asInstanceOf[`1`]
 }

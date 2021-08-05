@@ -81,49 +81,35 @@ trait SchemaQueue extends StObject {
 }
 object SchemaQueue {
   
-  @scala.inline
-  def apply(): SchemaQueue = {
+  inline def apply(): SchemaQueue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueue]
   }
   
-  @scala.inline
-  implicit class SchemaQueueMutableBuilder[Self <: SchemaQueue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueue](x: Self) {
     
-    @scala.inline
-    def setAppEngineHttpQueue(value: SchemaAppEngineHttpQueue): Self = StObject.set(x, "appEngineHttpQueue", value.asInstanceOf[js.Any])
+    inline def setAppEngineHttpQueue(value: SchemaAppEngineHttpQueue): Self = StObject.set(x, "appEngineHttpQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppEngineHttpQueueUndefined: Self = StObject.set(x, "appEngineHttpQueue", js.undefined)
+    inline def setAppEngineHttpQueueUndefined: Self = StObject.set(x, "appEngineHttpQueue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPurgeTime(value: String): Self = StObject.set(x, "purgeTime", value.asInstanceOf[js.Any])
+    inline def setPurgeTime(value: String): Self = StObject.set(x, "purgeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurgeTimeUndefined: Self = StObject.set(x, "purgeTime", js.undefined)
+    inline def setPurgeTimeUndefined: Self = StObject.set(x, "purgeTime", js.undefined)
     
-    @scala.inline
-    def setRateLimits(value: SchemaRateLimits): Self = StObject.set(x, "rateLimits", value.asInstanceOf[js.Any])
+    inline def setRateLimits(value: SchemaRateLimits): Self = StObject.set(x, "rateLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateLimitsUndefined: Self = StObject.set(x, "rateLimits", js.undefined)
+    inline def setRateLimitsUndefined: Self = StObject.set(x, "rateLimits", js.undefined)
     
-    @scala.inline
-    def setRetryConfig(value: SchemaRetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
+    inline def setRetryConfig(value: SchemaRetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
+    inline def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

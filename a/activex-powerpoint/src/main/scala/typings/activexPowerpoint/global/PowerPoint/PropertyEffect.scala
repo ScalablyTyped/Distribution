@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PropertyEffect")
 @js.native
-class PropertyEffect protected ()
+/* private */ class PropertyEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PropertyEffect {
   
@@ -23,7 +23,7 @@ class PropertyEffect protected ()
   /* CompleteClass */
   override val Points: typings.activexPowerpoint.PowerPoint.AnimationPoints = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.PropertyEffect_typekey")
   var PowerPointDotPropertyEffect_typekey: typings.activexPowerpoint.PowerPoint.PropertyEffect = js.native
   

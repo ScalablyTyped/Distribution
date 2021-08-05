@@ -79,8 +79,7 @@ object diggerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       corridorLength: js.Tuple2[Double, Double],
       dugPercentage: Double,
       roomHeight: js.Tuple2[Double, Double],
@@ -91,23 +90,17 @@ object diggerMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
+      inline def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDugPercentage(value: Double): Self = StObject.set(x, "dugPercentage", value.asInstanceOf[js.Any])
+      inline def setDugPercentage(value: Double): Self = StObject.set(x, "dugPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
+      inline def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
+      inline def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+      inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,17 +15,14 @@ trait NavigationBackAction
 }
 object NavigationBackAction {
   
-  @scala.inline
-  def apply(): NavigationBackAction = {
+  inline def apply(): NavigationBackAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Navigation/BACK")
     __obj.asInstanceOf[NavigationBackAction]
   }
   
-  @scala.inline
-  implicit class NavigationBackActionMutableBuilder[Self <: NavigationBackAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBackAction](x: Self) {
     
-    @scala.inline
-    def setType(value: NavigationSlashBACK): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashBACK): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

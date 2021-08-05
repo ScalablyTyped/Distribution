@@ -30,8 +30,7 @@ trait GitTreeRef extends StObject {
 }
 object GitTreeRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     objectId: String,
     size: Double,
@@ -42,25 +41,18 @@ object GitTreeRef {
     __obj.asInstanceOf[GitTreeRef]
   }
   
-  @scala.inline
-  implicit class GitTreeRefMutableBuilder[Self <: GitTreeRef] (val x: Self) extends AnyVal {
+  extension [Self <: GitTreeRef](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeEntries(value: js.Array[GitTreeEntryRef]): Self = StObject.set(x, "treeEntries", value.asInstanceOf[js.Any])
+    inline def setTreeEntries(value: js.Array[GitTreeEntryRef]): Self = StObject.set(x, "treeEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeEntriesVarargs(value: GitTreeEntryRef*): Self = StObject.set(x, "treeEntries", js.Array(value :_*))
+    inline def setTreeEntriesVarargs(value: GitTreeEntryRef*): Self = StObject.set(x, "treeEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -69,8 +69,7 @@ object WebParts {
   }
   object TileData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -93,44 +92,31 @@ object WebParts {
       __obj.asInstanceOf[TileData]
     }
     
-    @scala.inline
-    implicit class TileDataMutableBuilder[Self <: TileData] (val x: Self) extends AnyVal {
+    extension [Self <: TileData](x: Self) {
       
-      @scala.inline
-      def setGet_backgroundImageLocation(value: () => String): Self = StObject.set(x, "get_backgroundImageLocation", js.Any.fromFunction0(value))
+      inline def setGet_backgroundImageLocation(value: () => String): Self = StObject.set(x, "get_backgroundImageLocation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
+      inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_iD(value: () => Double): Self = StObject.set(x, "get_iD", js.Any.fromFunction0(value))
+      inline def setGet_iD(value: () => Double): Self = StObject.set(x, "get_iD", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_linkLocation(value: () => String): Self = StObject.set(x, "get_linkLocation", js.Any.fromFunction0(value))
+      inline def setGet_linkLocation(value: () => String): Self = StObject.set(x, "get_linkLocation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_tileOrder(value: () => Double): Self = StObject.set(x, "get_tileOrder", js.Any.fromFunction0(value))
+      inline def setGet_tileOrder(value: () => Double): Self = StObject.set(x, "get_tileOrder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+      inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_backgroundImageLocation(value: String => Unit): Self = StObject.set(x, "set_backgroundImageLocation", js.Any.fromFunction1(value))
+      inline def setSet_backgroundImageLocation(value: String => Unit): Self = StObject.set(x, "set_backgroundImageLocation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
+      inline def setSet_description(value: String => Unit): Self = StObject.set(x, "set_description", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_iD(value: Double => Unit): Self = StObject.set(x, "set_iD", js.Any.fromFunction1(value))
+      inline def setSet_iD(value: Double => Unit): Self = StObject.set(x, "set_iD", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_linkLocation(value: String => Unit): Self = StObject.set(x, "set_linkLocation", js.Any.fromFunction1(value))
+      inline def setSet_linkLocation(value: String => Unit): Self = StObject.set(x, "set_linkLocation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_tileOrder(value: Double => Unit): Self = StObject.set(x, "set_tileOrder", js.Any.fromFunction1(value))
+      inline def setSet_tileOrder(value: Double => Unit): Self = StObject.set(x, "set_tileOrder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+      inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     }
   }
   

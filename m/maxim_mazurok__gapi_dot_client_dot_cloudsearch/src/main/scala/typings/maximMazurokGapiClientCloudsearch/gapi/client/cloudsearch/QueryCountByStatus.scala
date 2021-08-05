@@ -13,25 +13,19 @@ trait QueryCountByStatus extends StObject {
 }
 object QueryCountByStatus {
   
-  @scala.inline
-  def apply(): QueryCountByStatus = {
+  inline def apply(): QueryCountByStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryCountByStatus]
   }
   
-  @scala.inline
-  implicit class QueryCountByStatusMutableBuilder[Self <: QueryCountByStatus] (val x: Self) extends AnyVal {
+  extension [Self <: QueryCountByStatus](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

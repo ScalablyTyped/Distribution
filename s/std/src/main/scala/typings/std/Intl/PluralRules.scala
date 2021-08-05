@@ -12,19 +12,15 @@ trait PluralRules extends StObject {
 }
 object PluralRules {
   
-  @scala.inline
-  def apply(resolvedOptions: () => ResolvedPluralRulesOptions, select: Double => LDMLPluralRule): PluralRules = {
+  inline def apply(resolvedOptions: () => ResolvedPluralRulesOptions, select: Double => LDMLPluralRule): PluralRules = {
     val __obj = js.Dynamic.literal(resolvedOptions = js.Any.fromFunction0(resolvedOptions), select = js.Any.fromFunction1(select))
     __obj.asInstanceOf[PluralRules]
   }
   
-  @scala.inline
-  implicit class PluralRulesMutableBuilder[Self <: PluralRules] (val x: Self) extends AnyVal {
+  extension [Self <: PluralRules](x: Self) {
     
-    @scala.inline
-    def setResolvedOptions(value: () => ResolvedPluralRulesOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
+    inline def setResolvedOptions(value: () => ResolvedPluralRulesOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelect(value: Double => LDMLPluralRule): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: Double => LDMLPluralRule): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
   }
 }

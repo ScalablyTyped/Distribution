@@ -54,65 +54,46 @@ trait ProjectSecondarySource extends StObject {
 }
 object ProjectSecondarySource {
   
-  @scala.inline
-  def apply(sourceIdentifier: Input[String], `type`: Input[String]): ProjectSecondarySource = {
+  inline def apply(sourceIdentifier: Input[String], `type`: Input[String]): ProjectSecondarySource = {
     val __obj = js.Dynamic.literal(sourceIdentifier = sourceIdentifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSecondarySource]
   }
   
-  @scala.inline
-  implicit class ProjectSecondarySourceMutableBuilder[Self <: ProjectSecondarySource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectSecondarySource](x: Self) {
     
-    @scala.inline
-    def setAuths(value: Input[js.Array[Input[ProjectSecondarySourceAuth]]]): Self = StObject.set(x, "auths", value.asInstanceOf[js.Any])
+    inline def setAuths(value: Input[js.Array[Input[ProjectSecondarySourceAuth]]]): Self = StObject.set(x, "auths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthsUndefined: Self = StObject.set(x, "auths", js.undefined)
+    inline def setAuthsUndefined: Self = StObject.set(x, "auths", js.undefined)
     
-    @scala.inline
-    def setAuthsVarargs(value: Input[ProjectSecondarySourceAuth]*): Self = StObject.set(x, "auths", js.Array(value :_*))
+    inline def setAuthsVarargs(value: Input[ProjectSecondarySourceAuth]*): Self = StObject.set(x, "auths", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildspec(value: Input[String]): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
+    inline def setBuildspec(value: Input[String]): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildspecUndefined: Self = StObject.set(x, "buildspec", js.undefined)
+    inline def setBuildspecUndefined: Self = StObject.set(x, "buildspec", js.undefined)
     
-    @scala.inline
-    def setGitCloneDepth(value: Input[Double]): Self = StObject.set(x, "gitCloneDepth", value.asInstanceOf[js.Any])
+    inline def setGitCloneDepth(value: Input[Double]): Self = StObject.set(x, "gitCloneDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitCloneDepthUndefined: Self = StObject.set(x, "gitCloneDepth", js.undefined)
+    inline def setGitCloneDepthUndefined: Self = StObject.set(x, "gitCloneDepth", js.undefined)
     
-    @scala.inline
-    def setGitSubmodulesConfig(value: Input[ProjectSecondarySourceGitSubmodulesConfig]): Self = StObject.set(x, "gitSubmodulesConfig", value.asInstanceOf[js.Any])
+    inline def setGitSubmodulesConfig(value: Input[ProjectSecondarySourceGitSubmodulesConfig]): Self = StObject.set(x, "gitSubmodulesConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitSubmodulesConfigUndefined: Self = StObject.set(x, "gitSubmodulesConfig", js.undefined)
+    inline def setGitSubmodulesConfigUndefined: Self = StObject.set(x, "gitSubmodulesConfig", js.undefined)
     
-    @scala.inline
-    def setInsecureSsl(value: Input[Boolean]): Self = StObject.set(x, "insecureSsl", value.asInstanceOf[js.Any])
+    inline def setInsecureSsl(value: Input[Boolean]): Self = StObject.set(x, "insecureSsl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsecureSslUndefined: Self = StObject.set(x, "insecureSsl", js.undefined)
+    inline def setInsecureSslUndefined: Self = StObject.set(x, "insecureSsl", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setReportBuildStatus(value: Input[Boolean]): Self = StObject.set(x, "reportBuildStatus", value.asInstanceOf[js.Any])
+    inline def setReportBuildStatus(value: Input[Boolean]): Self = StObject.set(x, "reportBuildStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportBuildStatusUndefined: Self = StObject.set(x, "reportBuildStatus", js.undefined)
+    inline def setReportBuildStatusUndefined: Self = StObject.set(x, "reportBuildStatus", js.undefined)
     
-    @scala.inline
-    def setSourceIdentifier(value: Input[String]): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceIdentifier(value: Input[String]): Self = StObject.set(x, "sourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

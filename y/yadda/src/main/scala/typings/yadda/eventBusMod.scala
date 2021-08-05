@@ -84,8 +84,7 @@ object eventBusMod {
   @js.native
   val ON_STEP: __ON_STEP__ = js.native
   
-  @scala.inline
-  def instance(): EventBus = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[EventBus]
+  inline def instance(): EventBus = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[EventBus]
   
   trait DefineEvent extends StObject {
     
@@ -95,20 +94,16 @@ object eventBusMod {
   }
   object DefineEvent {
     
-    @scala.inline
-    def apply(data: DefineEventData): DefineEvent = {
+    inline def apply(data: DefineEventData): DefineEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_DEFINE__")
       __obj.asInstanceOf[DefineEvent]
     }
     
-    @scala.inline
-    implicit class DefineEventMutableBuilder[Self <: DefineEvent] (val x: Self) extends AnyVal {
+    extension [Self <: DefineEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: DefineEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: DefineEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: __ON_DEFINE__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: __ON_DEFINE__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,20 +115,16 @@ object eventBusMod {
   }
   object DefineEventData {
     
-    @scala.inline
-    def apply(pattern: String, signature: String): DefineEventData = {
+    inline def apply(pattern: String, signature: String): DefineEventData = {
       val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefineEventData]
     }
     
-    @scala.inline
-    implicit class DefineEventDataMutableBuilder[Self <: DefineEventData] (val x: Self) extends AnyVal {
+    extension [Self <: DefineEventData](x: Self) {
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,20 +136,16 @@ object eventBusMod {
   }
   object ExecuteEvent {
     
-    @scala.inline
-    def apply(data: ExecuteEventData): ExecuteEvent = {
+    inline def apply(data: ExecuteEventData): ExecuteEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_EXECUTE__")
       __obj.asInstanceOf[ExecuteEvent]
     }
     
-    @scala.inline
-    implicit class ExecuteEventMutableBuilder[Self <: ExecuteEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ExecuteEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: ExecuteEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ExecuteEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: __ON_EXECUTE__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: __ON_EXECUTE__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,29 +161,22 @@ object eventBusMod {
   }
   object ExecuteEventData {
     
-    @scala.inline
-    def apply(args: js.Array[String], ctx: Properties, pattern: String, step: String): ExecuteEventData = {
+    inline def apply(args: js.Array[String], ctx: Properties, pattern: String, step: String): ExecuteEventData = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecuteEventData]
     }
     
-    @scala.inline
-    implicit class ExecuteEventDataMutableBuilder[Self <: ExecuteEventData] (val x: Self) extends AnyVal {
+    extension [Self <: ExecuteEventData](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
   
@@ -208,20 +188,16 @@ object eventBusMod {
   }
   object ScenarioEvent {
     
-    @scala.inline
-    def apply(data: ScenarioEventData): ScenarioEvent = {
+    inline def apply(data: ScenarioEventData): ScenarioEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_SCENARIO__")
       __obj.asInstanceOf[ScenarioEvent]
     }
     
-    @scala.inline
-    implicit class ScenarioEventMutableBuilder[Self <: ScenarioEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ScenarioEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: ScenarioEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ScenarioEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: __ON_SCENARIO__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: __ON_SCENARIO__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,23 +209,18 @@ object eventBusMod {
   }
   object ScenarioEventData {
     
-    @scala.inline
-    def apply(ctx: Properties, scenario: js.Array[String]): ScenarioEventData = {
+    inline def apply(ctx: Properties, scenario: js.Array[String]): ScenarioEventData = {
       val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScenarioEventData]
     }
     
-    @scala.inline
-    implicit class ScenarioEventDataMutableBuilder[Self <: ScenarioEventData] (val x: Self) extends AnyVal {
+    extension [Self <: ScenarioEventData](x: Self) {
       
-      @scala.inline
-      def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenario(value: js.Array[String]): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
+      inline def setScenario(value: js.Array[String]): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenarioVarargs(value: String*): Self = StObject.set(x, "scenario", js.Array(value :_*))
+      inline def setScenarioVarargs(value: String*): Self = StObject.set(x, "scenario", js.Array(value :_*))
     }
   }
   
@@ -261,20 +232,16 @@ object eventBusMod {
   }
   object StepEvent {
     
-    @scala.inline
-    def apply(data: StepEventData): StepEvent = {
+    inline def apply(data: StepEventData): StepEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_STEP__")
       __obj.asInstanceOf[StepEvent]
     }
     
-    @scala.inline
-    implicit class StepEventMutableBuilder[Self <: StepEvent] (val x: Self) extends AnyVal {
+    extension [Self <: StepEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: StepEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StepEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: __ON_STEP__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: __ON_STEP__): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,20 +253,16 @@ object eventBusMod {
   }
   object StepEventData {
     
-    @scala.inline
-    def apply(ctx: Properties, step: String): StepEventData = {
+    inline def apply(ctx: Properties, step: String): StepEventData = {
       val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepEventData]
     }
     
-    @scala.inline
-    implicit class StepEventDataMutableBuilder[Self <: StepEventData] (val x: Self) extends AnyVal {
+    extension [Self <: StepEventData](x: Self) {
       
-      @scala.inline
-      def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: Properties): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     }
   }
 }

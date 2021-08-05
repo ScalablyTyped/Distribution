@@ -13,25 +13,19 @@ trait SurfaceTooltip extends StObject {
 }
 object SurfaceTooltip {
   
-  @scala.inline
-  def apply(): SurfaceTooltip = {
+  inline def apply(): SurfaceTooltip = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SurfaceTooltip]
   }
   
-  @scala.inline
-  implicit class SurfaceTooltipMutableBuilder[Self <: SurfaceTooltip] (val x: Self) extends AnyVal {
+  extension [Self <: SurfaceTooltip](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | SurfaceTooltipAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | SurfaceTooltipAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
   }
 }

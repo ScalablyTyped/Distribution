@@ -53,70 +53,49 @@ trait DescribeReservedDBInstancesOfferingsMessage extends StObject {
 }
 object DescribeReservedDBInstancesOfferingsMessage {
   
-  @scala.inline
-  def apply(): DescribeReservedDBInstancesOfferingsMessage = {
+  inline def apply(): DescribeReservedDBInstancesOfferingsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedDBInstancesOfferingsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeReservedDBInstancesOfferingsMessageMutableBuilder[Self <: DescribeReservedDBInstancesOfferingsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedDBInstancesOfferingsMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
+    inline def setDBInstanceClass(value: String): Self = StObject.set(x, "DBInstanceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceClassUndefined: Self = StObject.set(x, "DBInstanceClass", js.undefined)
+    inline def setDBInstanceClassUndefined: Self = StObject.set(x, "DBInstanceClass", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setMultiAZ(value: BooleanOptional): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
+    inline def setMultiAZ(value: BooleanOptional): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
+    inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
     
-    @scala.inline
-    def setOfferingType(value: String): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
+    inline def setOfferingType(value: String): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
+    inline def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
     
-    @scala.inline
-    def setProductDescription(value: String): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
+    inline def setProductDescription(value: String): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
+    inline def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
     
-    @scala.inline
-    def setReservedDBInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedDBInstancesOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedDBInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedDBInstancesOfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedDBInstancesOfferingIdUndefined: Self = StObject.set(x, "ReservedDBInstancesOfferingId", js.undefined)
+    inline def setReservedDBInstancesOfferingIdUndefined: Self = StObject.set(x, "ReservedDBInstancesOfferingId", js.undefined)
   }
 }

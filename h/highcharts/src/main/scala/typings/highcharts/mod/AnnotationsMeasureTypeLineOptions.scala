@@ -10,19 +10,15 @@ trait AnnotationsMeasureTypeLineOptions extends StObject {
 }
 object AnnotationsMeasureTypeLineOptions {
   
-  @scala.inline
-  def apply(): AnnotationsMeasureTypeLineOptions = {
+  inline def apply(): AnnotationsMeasureTypeLineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsMeasureTypeLineOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsMeasureTypeLineOptionsMutableBuilder[Self <: AnnotationsMeasureTypeLineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsMeasureTypeLineOptions](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

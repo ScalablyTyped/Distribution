@@ -82,8 +82,7 @@ trait HPIds extends StObject {
 }
 object HPIds {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: String,
     arrow: String,
     arrowBorder: String,
@@ -126,118 +125,80 @@ object HPIds {
     __obj.asInstanceOf[HPIds]
   }
   
-  @scala.inline
-  implicit class HPIdsMutableBuilder[Self <: HPIds] (val x: Self) extends AnyVal {
+  extension [Self <: HPIds](x: Self) {
     
-    @scala.inline
-    def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowBorder(value: String): Self = StObject.set(x, "arrowBorder", value.asInstanceOf[js.Any])
+    inline def setArrowBorder(value: String): Self = StObject.set(x, "arrowBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: String): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollow(value: String): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    inline def setFollow(value: String): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInner(value: String): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
+    inline def setInner(value: String): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: String): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+    inline def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenClient(value: String): Self = StObject.set(x, "openClient", value.asInstanceOf[js.Any])
+    inline def setOpenClient(value: String): Self = StObject.set(x, "openClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLink(value: String): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    inline def setParentLink(value: String): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleInterests(value: String): Self = StObject.set(x, "peopleInterests", value.asInstanceOf[js.Any])
+    inline def setPeopleInterests(value: String): Self = StObject.set(x, "peopleInterests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleMemberships(value: String): Self = StObject.set(x, "peopleMemberships", value.asInstanceOf[js.Any])
+    inline def setPeopleMemberships(value: String): Self = StObject.set(x, "peopleMemberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeoplePastProjects(value: String): Self = StObject.set(x, "peoplePastProjects", value.asInstanceOf[js.Any])
+    inline def setPeoplePastProjects(value: String): Self = StObject.set(x, "peoplePastProjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleSchools(value: String): Self = StObject.set(x, "peopleSchools", value.asInstanceOf[js.Any])
+    inline def setPeopleSchools(value: String): Self = StObject.set(x, "peopleSchools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleSkills(value: String): Self = StObject.set(x, "peopleSkills", value.asInstanceOf[js.Any])
+    inline def setPeopleSkills(value: String): Self = StObject.set(x, "peopleSkills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleSummary(value: String): Self = StObject.set(x, "peopleSummary", value.asInstanceOf[js.Any])
+    inline def setPeopleSummary(value: String): Self = StObject.set(x, "peopleSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: String): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionName(value: String): Self = StObject.set(x, "sectionName", value.asInstanceOf[js.Any])
+    inline def setSectionName(value: String): Self = StObject.set(x, "sectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteDescription(value: String): Self = StObject.set(x, "siteDescription", value.asInstanceOf[js.Any])
+    inline def setSiteDescription(value: String): Self = StObject.set(x, "siteDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteLogo(value: String): Self = StObject.set(x, "siteLogo", value.asInstanceOf[js.Any])
+    inline def setSiteLogo(value: String): Self = StObject.set(x, "siteLogo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewDuplicates(value: String): Self = StObject.set(x, "viewDuplicates", value.asInstanceOf[js.Any])
+    inline def setViewDuplicates(value: String): Self = StObject.set(x, "viewDuplicates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer(value: String): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
+    inline def setViewer(value: String): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsLifeTime(value: String): Self = StObject.set(x, "viewsLifeTime", value.asInstanceOf[js.Any])
+    inline def setViewsLifeTime(value: String): Self = StObject.set(x, "viewsLifeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsRecent(value: String): Self = StObject.set(x, "viewsRecent", value.asInstanceOf[js.Any])
+    inline def setViewsRecent(value: String): Self = StObject.set(x, "viewsRecent", value.asInstanceOf[js.Any])
   }
 }

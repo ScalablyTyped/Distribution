@@ -20,22 +20,17 @@ trait NotificationMessage
 }
 object NotificationMessage {
   
-  @scala.inline
-  def apply(jsonrpc: String, method: String): NotificationMessage = {
+  inline def apply(jsonrpc: String, method: String): NotificationMessage = {
     val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessage]
   }
   
-  @scala.inline
-  implicit class NotificationMessageMutableBuilder[Self <: NotificationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationMessage](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

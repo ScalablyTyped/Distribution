@@ -18,25 +18,19 @@ trait ListJobsSortCriteria extends StObject {
 }
 object ListJobsSortCriteria {
   
-  @scala.inline
-  def apply(): ListJobsSortCriteria = {
+  inline def apply(): ListJobsSortCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListJobsSortCriteria]
   }
   
-  @scala.inline
-  implicit class ListJobsSortCriteriaMutableBuilder[Self <: ListJobsSortCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: ListJobsSortCriteria](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: ListJobsSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: ListJobsSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
   }
 }

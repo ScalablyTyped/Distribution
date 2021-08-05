@@ -62,8 +62,7 @@ trait Payments extends StObject {
 }
 object Payments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     consumePurchaseAsync: String => js.Promise[Unit],
     getCatalogAsync: () => js.Promise[js.Array[Product]],
     getPurchasesAsync: () => js.Promise[js.Array[Purchase]],
@@ -74,22 +73,16 @@ object Payments {
     __obj.asInstanceOf[Payments]
   }
   
-  @scala.inline
-  implicit class PaymentsMutableBuilder[Self <: Payments] (val x: Self) extends AnyVal {
+  extension [Self <: Payments](x: Self) {
     
-    @scala.inline
-    def setConsumePurchaseAsync(value: String => js.Promise[Unit]): Self = StObject.set(x, "consumePurchaseAsync", js.Any.fromFunction1(value))
+    inline def setConsumePurchaseAsync(value: String => js.Promise[Unit]): Self = StObject.set(x, "consumePurchaseAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCatalogAsync(value: () => js.Promise[js.Array[Product]]): Self = StObject.set(x, "getCatalogAsync", js.Any.fromFunction0(value))
+    inline def setGetCatalogAsync(value: () => js.Promise[js.Array[Product]]): Self = StObject.set(x, "getCatalogAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPurchasesAsync(value: () => js.Promise[js.Array[Purchase]]): Self = StObject.set(x, "getPurchasesAsync", js.Any.fromFunction0(value))
+    inline def setGetPurchasesAsync(value: () => js.Promise[js.Array[Purchase]]): Self = StObject.set(x, "getPurchasesAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReady(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+    inline def setOnReady(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPurchaseAsync(value: PurchaseConfig => js.Promise[Purchase]): Self = StObject.set(x, "purchaseAsync", js.Any.fromFunction1(value))
+    inline def setPurchaseAsync(value: PurchaseConfig => js.Promise[Purchase]): Self = StObject.set(x, "purchaseAsync", js.Any.fromFunction1(value))
   }
 }

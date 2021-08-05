@@ -12,8 +12,7 @@ trait DoPost
 }
 object DoPost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentLength: Double,
     contextPath: String,
     parameter: js.Object,
@@ -25,10 +24,8 @@ object DoPost {
     __obj.asInstanceOf[DoPost]
   }
   
-  @scala.inline
-  implicit class DoPostMutableBuilder[Self <: DoPost] (val x: Self) extends AnyVal {
+  extension [Self <: DoPost](x: Self) {
     
-    @scala.inline
-    def setPostData(value: AppsScriptHttpRequestEventPostData): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: AppsScriptHttpRequestEventPostData): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
   }
 }

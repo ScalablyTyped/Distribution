@@ -12,25 +12,19 @@ trait Volume extends StObject {
 }
 object Volume {
   
-  @scala.inline
-  def apply(): Volume = {
+  inline def apply(): Volume = {
     val __obj = js.Dynamic.literal(level = null, muted = null)
     __obj.asInstanceOf[Volume]
   }
   
-  @scala.inline
-  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
+  extension [Self <: Volume](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelNull: Self = StObject.set(x, "level", null)
+    inline def setLevelNull: Self = StObject.set(x, "level", null)
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutedNull: Self = StObject.set(x, "muted", null)
+    inline def setMutedNull: Self = StObject.set(x, "muted", null)
   }
 }

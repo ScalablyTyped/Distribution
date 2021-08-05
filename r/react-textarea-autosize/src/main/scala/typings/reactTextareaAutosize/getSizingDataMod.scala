@@ -34,8 +34,7 @@ object getSizingDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: HTMLElement): SizingData | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[SizingData | Null]
+  inline def default(node: HTMLElement): SizingData | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[SizingData | Null]
   
   trait SizingData extends StObject {
     
@@ -47,23 +46,18 @@ object getSizingDataMod {
   }
   object SizingData {
     
-    @scala.inline
-    def apply(borderSize: Double, paddingSize: Double, sizingStyle: SizingStyle): SizingData = {
+    inline def apply(borderSize: Double, paddingSize: Double, sizingStyle: SizingStyle): SizingData = {
       val __obj = js.Dynamic.literal(borderSize = borderSize.asInstanceOf[js.Any], paddingSize = paddingSize.asInstanceOf[js.Any], sizingStyle = sizingStyle.asInstanceOf[js.Any])
       __obj.asInstanceOf[SizingData]
     }
     
-    @scala.inline
-    implicit class SizingDataMutableBuilder[Self <: SizingData] (val x: Self) extends AnyVal {
+    extension [Self <: SizingData](x: Self) {
       
-      @scala.inline
-      def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
+      inline def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingSize(value: Double): Self = StObject.set(x, "paddingSize", value.asInstanceOf[js.Any])
+      inline def setPaddingSize(value: Double): Self = StObject.set(x, "paddingSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizingStyle(value: SizingStyle): Self = StObject.set(x, "sizingStyle", value.asInstanceOf[js.Any])
+      inline def setSizingStyle(value: SizingStyle): Self = StObject.set(x, "sizingStyle", value.asInstanceOf[js.Any])
     }
   }
   

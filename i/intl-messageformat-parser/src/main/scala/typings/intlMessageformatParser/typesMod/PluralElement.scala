@@ -20,8 +20,7 @@ trait PluralElement
 }
 object PluralElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     offset: Double,
     options: Record[ValidPluralRule, PluralOrSelectOption],
     `type`: plural,
@@ -32,19 +31,14 @@ object PluralElement {
     __obj.asInstanceOf[PluralElement]
   }
   
-  @scala.inline
-  implicit class PluralElementMutableBuilder[Self <: PluralElement] (val x: Self) extends AnyVal {
+  extension [Self <: PluralElement](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Record[ValidPluralRule, PluralOrSelectOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Record[ValidPluralRule, PluralOrSelectOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluralType(value: PluralRuleType): Self = StObject.set(x, "pluralType", value.asInstanceOf[js.Any])
+    inline def setPluralType(value: PluralRuleType): Self = StObject.set(x, "pluralType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluralTypeUndefined: Self = StObject.set(x, "pluralType", js.undefined)
+    inline def setPluralTypeUndefined: Self = StObject.set(x, "pluralType", js.undefined)
   }
 }

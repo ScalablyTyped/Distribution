@@ -18,16 +18,13 @@ trait ASPxClientRibbonMinimizationStateEventArgs
 }
 object ASPxClientRibbonMinimizationStateEventArgs {
   
-  @scala.inline
-  def apply(ribbonState: Double): ASPxClientRibbonMinimizationStateEventArgs = {
+  inline def apply(ribbonState: Double): ASPxClientRibbonMinimizationStateEventArgs = {
     val __obj = js.Dynamic.literal(ribbonState = ribbonState.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRibbonMinimizationStateEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRibbonMinimizationStateEventArgsMutableBuilder[Self <: ASPxClientRibbonMinimizationStateEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRibbonMinimizationStateEventArgs](x: Self) {
     
-    @scala.inline
-    def setRibbonState(value: Double): Self = StObject.set(x, "ribbonState", value.asInstanceOf[js.Any])
+    inline def setRibbonState(value: Double): Self = StObject.set(x, "ribbonState", value.asInstanceOf[js.Any])
   }
 }

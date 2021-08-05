@@ -13,19 +13,15 @@ trait GetTestGridProjectResult extends StObject {
 }
 object GetTestGridProjectResult {
   
-  @scala.inline
-  def apply(): GetTestGridProjectResult = {
+  inline def apply(): GetTestGridProjectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTestGridProjectResult]
   }
   
-  @scala.inline
-  implicit class GetTestGridProjectResultMutableBuilder[Self <: GetTestGridProjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetTestGridProjectResult](x: Self) {
     
-    @scala.inline
-    def setTestGridProject(value: TestGridProject): Self = StObject.set(x, "testGridProject", value.asInstanceOf[js.Any])
+    inline def setTestGridProject(value: TestGridProject): Self = StObject.set(x, "testGridProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestGridProjectUndefined: Self = StObject.set(x, "testGridProject", js.undefined)
+    inline def setTestGridProjectUndefined: Self = StObject.set(x, "testGridProject", js.undefined)
   }
 }

@@ -19,19 +19,15 @@ trait SchemaIosTestSetup extends StObject {
 }
 object SchemaIosTestSetup {
   
-  @scala.inline
-  def apply(): SchemaIosTestSetup = {
+  inline def apply(): SchemaIosTestSetup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIosTestSetup]
   }
   
-  @scala.inline
-  implicit class SchemaIosTestSetupMutableBuilder[Self <: SchemaIosTestSetup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIosTestSetup](x: Self) {
     
-    @scala.inline
-    def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
+    inline def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
+    inline def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
   }
 }

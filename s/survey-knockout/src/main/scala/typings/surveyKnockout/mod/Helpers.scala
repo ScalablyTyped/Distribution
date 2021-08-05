@@ -14,50 +14,35 @@ object Helpers {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createCopy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getMaxLength(maxLength: Double, surveyLength: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxLength")(maxLength.asInstanceOf[js.Any], surveyLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getMaxLength(maxLength: Double, surveyLength: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxLength")(maxLength.asInstanceOf[js.Any], surveyLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getNumberByIndex(index: Double, startIndexStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberByIndex")(index.asInstanceOf[js.Any], startIndexStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getNumberByIndex(index: Double, startIndexStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberByIndex")(index.asInstanceOf[js.Any], startIndexStr.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getUnbindValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnbindValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getUnbindValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnbindValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isArrayContainsEqual(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArrayContainsEqual")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isArrayContainsEqual(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArrayContainsEqual")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isArraysEqual(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArraysEqual")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isArraysEqual(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArraysEqual")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreOrder.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isArraysEqual(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArraysEqual")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isArraysEqual(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArraysEqual")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreOrder.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isCharDigit(ch: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCharDigit")(ch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCharDigit(ch: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCharDigit")(ch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isCharNotLetterAndDigit(ch: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCharNotLetterAndDigit")(ch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCharNotLetterAndDigit(ch: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCharNotLetterAndDigit")(ch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isConvertibleToNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvertibleToNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isConvertibleToNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvertibleToNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isTwoValueEquals(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTwoValueEquals")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isTwoValueEquals(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTwoValueEquals")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreOrder.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTwoValueEquals(x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTwoValueEquals")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTwoValueEquals(x: js.Any, y: js.Any, ignoreOrder: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTwoValueEquals")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ignoreOrder.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * A static methods that returns true if a value underfined, null, empty string or empty array.
     * @param value
     */
-  @scala.inline
-  def isValueEmpty(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValueEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValueEmpty(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValueEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def randomizeArray[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def randomizeArray[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomizeArray")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

@@ -43,7 +43,7 @@ object livequeryMod {
       */
     def this(params: js.Any) = this()
     
-    var generateQueryUri: js.Any = js.native
+    /* private */ var generateQueryUri: js.Any = js.native
     
     /**
       * @returns {LiveQuery#ItemsSnapshot} A snapshot of items matching current query expression.
@@ -51,19 +51,19 @@ object livequeryMod {
       */
     def getItems(): ItemsSnapshot = js.native
     
-    var indexName: js.Any = js.native
+    /* private */ var indexName: js.Any = js.native
     
-    val insightsUri: js.Any = js.native
+    /* private */ val insightsUri: js.Any = js.native
     
-    var items: js.Any = js.native
+    /* private */ var items: js.Any = js.native
     
-    val liveQueryCreator: js.Any = js.native
+    /* private */ val liveQueryCreator: js.Any = js.native
     
-    val network: js.Any = js.native
+    /* private */ val network: js.Any = js.native
     
-    var queryExpression: js.Any = js.native
+    /* private */ var queryExpression: js.Any = js.native
     
-    var queryUri: js.Any = js.native
+    /* private */ var queryUri: js.Any = js.native
     
     /**
       * Spawns a new search request. The result will be provided asynchronously via the {@link InstantQuery#event:searchResult}
@@ -111,7 +111,7 @@ object livequeryMod {
     
     def lastEventId: Double = js.native
     
-    val liveQueryImpl: js.Any = js.native
+    /* private */ val liveQueryImpl: js.Any = js.native
     
     def sid: String = js.native
     
@@ -129,17 +129,17 @@ object livequeryMod {
       items: js.Any
     ) = this()
     
-    val cache: js.Any = js.native
+    /* private */ val cache: js.Any = js.native
     
-    val descriptor: js.Any = js.native
+    /* private */ val descriptor: js.Any = js.native
     
     def getItems(): ItemsSnapshot = js.native
     
-    var handleBatchUpdate: js.Any = js.native
+    /* private */ var handleBatchUpdate: js.Any = js.native
     
-    var handleItemMutated: js.Any = js.native
+    /* private */ var handleItemMutated: js.Any = js.native
     
-    var handleItemRemoved: js.Any = js.native
+    /* private */ var handleItemRemoved: js.Any = js.native
     
     def liveQueryDescriptor: LiveQueryDescriptor = js.native
     
@@ -147,11 +147,10 @@ object livequeryMod {
     
     def queryUri: String = js.native
     
-    var shouldIgnoreEvent: js.Any = js.native
+    /* private */ var shouldIgnoreEvent: js.Any = js.native
   }
   
-  @scala.inline
-  def queryItems(params: js.Any): js.Promise[InsightsQueryResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryItems")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InsightsQueryResponse]]
+  inline def queryItems(params: js.Any): js.Promise[InsightsQueryResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryItems")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InsightsQueryResponse]]
   
   trait InsightsQueryResponse extends StObject {
     
@@ -163,29 +162,22 @@ object livequeryMod {
   }
   object InsightsQueryResponse {
     
-    @scala.inline
-    def apply(last_event_id: Double, query_id: String): InsightsQueryResponse = {
+    inline def apply(last_event_id: Double, query_id: String): InsightsQueryResponse = {
       val __obj = js.Dynamic.literal(last_event_id = last_event_id.asInstanceOf[js.Any], query_id = query_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InsightsQueryResponse]
     }
     
-    @scala.inline
-    implicit class InsightsQueryResponseMutableBuilder[Self <: InsightsQueryResponse] (val x: Self) extends AnyVal {
+    extension [Self <: InsightsQueryResponse](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[Data]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Data]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: Data*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Data*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
+      inline def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
+      inline def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,29 +201,22 @@ object livequeryMod {
   }
   object LiveQueryDescriptor {
     
-    @scala.inline
-    def apply(indexName: String, last_event_id: Double, queryExpression: String, queryUri: String, sid: String): LiveQueryDescriptor = {
+    inline def apply(indexName: String, last_event_id: Double, queryExpression: String, queryUri: String, sid: String): LiveQueryDescriptor = {
       val __obj = js.Dynamic.literal(indexName = indexName.asInstanceOf[js.Any], last_event_id = last_event_id.asInstanceOf[js.Any], queryExpression = queryExpression.asInstanceOf[js.Any], queryUri = queryUri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiveQueryDescriptor]
     }
     
-    @scala.inline
-    implicit class LiveQueryDescriptorMutableBuilder[Self <: LiveQueryDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: LiveQueryDescriptor](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: String): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
+      inline def setLast_event_id(value: Double): Self = StObject.set(x, "last_event_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryExpression(value: String): Self = StObject.set(x, "queryExpression", value.asInstanceOf[js.Any])
+      inline def setQueryExpression(value: String): Self = StObject.set(x, "queryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUri(value: String): Self = StObject.set(x, "queryUri", value.asInstanceOf[js.Any])
+      inline def setQueryUri(value: String): Self = StObject.set(x, "queryUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
     }
   }
 }

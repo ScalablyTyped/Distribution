@@ -12,19 +12,15 @@ trait RowHeaderTextsNormalized extends StObject {
 }
 object RowHeaderTextsNormalized {
   
-  @scala.inline
-  def apply(): RowHeaderTextsNormalized = {
+  inline def apply(): RowHeaderTextsNormalized = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowHeaderTextsNormalized]
   }
   
-  @scala.inline
-  implicit class RowHeaderTextsNormalizedMutableBuilder[Self <: RowHeaderTextsNormalized] (val x: Self) extends AnyVal {
+  extension [Self <: RowHeaderTextsNormalized](x: Self) {
     
-    @scala.inline
-    def setText_normalized(value: String): Self = StObject.set(x, "text_normalized", value.asInstanceOf[js.Any])
+    inline def setText_normalized(value: String): Self = StObject.set(x, "text_normalized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_normalizedUndefined: Self = StObject.set(x, "text_normalized", js.undefined)
+    inline def setText_normalizedUndefined: Self = StObject.set(x, "text_normalized", js.undefined)
   }
 }

@@ -17,19 +17,15 @@ trait CancelTarget extends StObject {
 }
 object CancelTarget {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Target: Range): CancelTarget = {
+  inline def apply(Cancel: Boolean, Target: Range): CancelTarget = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelTarget]
   }
   
-  @scala.inline
-  implicit class CancelTargetMutableBuilder[Self <: CancelTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CancelTarget](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Range): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

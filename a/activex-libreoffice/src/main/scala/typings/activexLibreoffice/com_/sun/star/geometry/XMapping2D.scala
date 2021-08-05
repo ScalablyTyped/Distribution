@@ -31,8 +31,7 @@ trait XMapping2D
 }
 object XMapping2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     map: RealPoint2D => RealPoint2D,
     mapInverse: RealPoint2D => RealPoint2D,
@@ -43,13 +42,10 @@ object XMapping2D {
     __obj.asInstanceOf[XMapping2D]
   }
   
-  @scala.inline
-  implicit class XMapping2DMutableBuilder[Self <: XMapping2D] (val x: Self) extends AnyVal {
+  extension [Self <: XMapping2D](x: Self) {
     
-    @scala.inline
-    def setMap(value: RealPoint2D => RealPoint2D): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+    inline def setMap(value: RealPoint2D => RealPoint2D): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMapInverse(value: RealPoint2D => RealPoint2D): Self = StObject.set(x, "mapInverse", js.Any.fromFunction1(value))
+    inline def setMapInverse(value: RealPoint2D => RealPoint2D): Self = StObject.set(x, "mapInverse", js.Any.fromFunction1(value))
   }
 }

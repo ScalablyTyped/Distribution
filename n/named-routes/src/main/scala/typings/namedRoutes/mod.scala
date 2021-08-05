@@ -80,26 +80,20 @@ object mod {
   }
   object RouteOptions {
     
-    @scala.inline
-    def apply(caseSensitive: Boolean, name: String, recursiveWildcard: Boolean, wildcardInPairs: Boolean): RouteOptions = {
+    inline def apply(caseSensitive: Boolean, name: String, recursiveWildcard: Boolean, wildcardInPairs: Boolean): RouteOptions = {
       val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], recursiveWildcard = recursiveWildcard.asInstanceOf[js.Any], wildcardInPairs = wildcardInPairs.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteOptions]
     }
     
-    @scala.inline
-    implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouteOptions](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveWildcard(value: Boolean): Self = StObject.set(x, "recursiveWildcard", value.asInstanceOf[js.Any])
+      inline def setRecursiveWildcard(value: Boolean): Self = StObject.set(x, "recursiveWildcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWildcardInPairs(value: Boolean): Self = StObject.set(x, "wildcardInPairs", value.asInstanceOf[js.Any])
+      inline def setWildcardInPairs(value: Boolean): Self = StObject.set(x, "wildcardInPairs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,17 +105,14 @@ object mod {
   }
   object RouterOptions {
     
-    @scala.inline
-    def apply(caseSensitive: Boolean): RouterOptions = {
+    inline def apply(caseSensitive: Boolean): RouterOptions = {
       val __obj = js.Dynamic.literal(caseSensitive = caseSensitive.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterOptions]
     }
     
-    @scala.inline
-    implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouterOptions](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,17 +124,14 @@ object mod {
     }
     object Application {
       
-      @scala.inline
-      def apply(namedRoutes: NamedRouter): Application = {
+      inline def apply(namedRoutes: NamedRouter): Application = {
         val __obj = js.Dynamic.literal(namedRoutes = namedRoutes.asInstanceOf[js.Any])
         __obj.asInstanceOf[Application]
       }
       
-      @scala.inline
-      implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+      extension [Self <: Application](x: Self) {
         
-        @scala.inline
-        def setNamedRoutes(value: NamedRouter): Self = StObject.set(x, "namedRoutes", value.asInstanceOf[js.Any])
+        inline def setNamedRoutes(value: NamedRouter): Self = StObject.set(x, "namedRoutes", value.asInstanceOf[js.Any])
       }
     }
     

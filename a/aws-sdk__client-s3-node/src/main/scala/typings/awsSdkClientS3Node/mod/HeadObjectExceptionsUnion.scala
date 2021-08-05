@@ -10,8 +10,7 @@ trait HeadObjectExceptionsUnion
      with NoSuchKey
 object HeadObjectExceptionsUnion {
   
-  @scala.inline
-  def apply(): HeadObjectExceptionsUnion = {
+  inline def apply(): HeadObjectExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "NoSuchKey")
     __obj.asInstanceOf[HeadObjectExceptionsUnion]
   }

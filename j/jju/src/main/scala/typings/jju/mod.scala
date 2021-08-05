@@ -24,52 +24,31 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def analyze(text: String): JsonStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(text.asInstanceOf[js.Any]).asInstanceOf[JsonStyle]
-  @scala.inline
-  def analyze(text: String, options: ParseOptions): JsonStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonStyle]
+  inline def analyze(text: String): JsonStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(text.asInstanceOf[js.Any]).asInstanceOf[JsonStyle]
+  inline def analyze(text: String, options: ParseOptions): JsonStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("analyze")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JsonStyle]
   
-  @scala.inline
-  def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def parse(text: String, options: ParseOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def parse(text: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parse(text: String, options: ParseOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parse(text: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: js.Array[Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: Null, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: Null, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: js.Any, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: js.Array[Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: Null, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: Null, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def tokenize(text: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-  @scala.inline
-  def tokenize(text: String, options: ParseOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+  inline def tokenize(text: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def tokenize(text: String, options: ParseOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
-  @scala.inline
-  def update(text: String, new_value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(text.asInstanceOf[js.Any], new_value.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def update(text: String, new_value: js.Any, options: ParseOptions & StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(text.asInstanceOf[js.Any], new_value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def update(text: String, new_value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(text.asInstanceOf[js.Any], new_value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def update(text: String, new_value: js.Any, options: ParseOptions & StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(text.asInstanceOf[js.Any], new_value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait JsonStyle extends StObject {
     
@@ -99,8 +78,7 @@ object mod {
   }
   object JsonStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       has_comments: Boolean,
       has_newlines: Boolean,
       has_trailing_comma: Boolean,
@@ -114,32 +92,23 @@ object mod {
       __obj.asInstanceOf[JsonStyle]
     }
     
-    @scala.inline
-    implicit class JsonStyleMutableBuilder[Self <: JsonStyle] (val x: Self) extends AnyVal {
+    extension [Self <: JsonStyle](x: Self) {
       
-      @scala.inline
-      def setHas_comments(value: Boolean): Self = StObject.set(x, "has_comments", value.asInstanceOf[js.Any])
+      inline def setHas_comments(value: Boolean): Self = StObject.set(x, "has_comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_newlines(value: Boolean): Self = StObject.set(x, "has_newlines", value.asInstanceOf[js.Any])
+      inline def setHas_newlines(value: Boolean): Self = StObject.set(x, "has_newlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_trailing_comma(value: Boolean): Self = StObject.set(x, "has_trailing_comma", value.asInstanceOf[js.Any])
+      inline def setHas_trailing_comma(value: Boolean): Self = StObject.set(x, "has_trailing_comma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_whitespace(value: Boolean): Self = StObject.set(x, "has_whitespace", value.asInstanceOf[js.Any])
+      inline def setHas_whitespace(value: Boolean): Self = StObject.set(x, "has_whitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
+      inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuote_keys(value: Boolean): Self = StObject.set(x, "quote_keys", value.asInstanceOf[js.Any])
+      inline def setQuote_keys(value: Boolean): Self = StObject.set(x, "quote_keys", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,38 +144,28 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setMode(value: json5 | json | cjson): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: json5 | json | cjson): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setNull_prototype(value: Boolean): Self = StObject.set(x, "null_prototype", value.asInstanceOf[js.Any])
+      inline def setNull_prototype(value: Boolean): Self = StObject.set(x, "null_prototype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNull_prototypeUndefined: Self = StObject.set(x, "null_prototype", js.undefined)
+      inline def setNull_prototypeUndefined: Self = StObject.set(x, "null_prototype", js.undefined)
       
-      @scala.inline
-      def setReserved_keys(value: ignore | `throw` | replace): Self = StObject.set(x, "reserved_keys", value.asInstanceOf[js.Any])
+      inline def setReserved_keys(value: ignore | `throw` | replace): Self = StObject.set(x, "reserved_keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReserved_keysUndefined: Self = StObject.set(x, "reserved_keys", js.undefined)
+      inline def setReserved_keysUndefined: Self = StObject.set(x, "reserved_keys", js.undefined)
       
-      @scala.inline
-      def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      inline def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+      inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
     }
   }
   
@@ -277,71 +236,50 @@ object mod {
   }
   object StringifyOptions {
     
-    @scala.inline
-    def apply(): StringifyOptions = {
+    inline def apply(): StringifyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    @scala.inline
-    implicit class StringifyOptionsMutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StringifyOptions](x: Self) {
       
-      @scala.inline
-      def setAscii(value: Boolean): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
+      inline def setAscii(value: Boolean): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsciiUndefined: Self = StObject.set(x, "ascii", js.undefined)
+      inline def setAsciiUndefined: Self = StObject.set(x, "ascii", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String | Double | Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String | Double | Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setMode(value: json | json5 | cjson): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: json | json5 | cjson): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setNo_trailing_comma(value: Boolean): Self = StObject.set(x, "no_trailing_comma", value.asInstanceOf[js.Any])
+      inline def setNo_trailing_comma(value: Boolean): Self = StObject.set(x, "no_trailing_comma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_trailing_commaUndefined: Self = StObject.set(x, "no_trailing_comma", js.undefined)
+      inline def setNo_trailing_commaUndefined: Self = StObject.set(x, "no_trailing_comma", js.undefined)
       
-      @scala.inline
-      def setQuote(value: Quotationmark | Apostrophe): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      inline def setQuote(value: Quotationmark | Apostrophe): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
       
-      @scala.inline
-      def setQuote_keys(value: Boolean): Self = StObject.set(x, "quote_keys", value.asInstanceOf[js.Any])
+      inline def setQuote_keys(value: Boolean): Self = StObject.set(x, "quote_keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuote_keysUndefined: Self = StObject.set(x, "quote_keys", js.undefined)
+      inline def setQuote_keysUndefined: Self = StObject.set(x, "quote_keys", js.undefined)
       
-      @scala.inline
-      def setReplacer(value: (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String])): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+      inline def setReplacer(value: (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String])): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      @scala.inline
-      def setReplacerVarargs(value: (Double | String)*): Self = StObject.set(x, "replacer", js.Array(value :_*))
+      inline def setReplacerVarargs(value: (Double | String)*): Self = StObject.set(x, "replacer", js.Array(value :_*))
       
-      @scala.inline
-      def setSort_keys(value: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])): Self = StObject.set(x, "sort_keys", value.asInstanceOf[js.Any])
+      inline def setSort_keys(value: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])): Self = StObject.set(x, "sort_keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSort_keysFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sort_keys", js.Any.fromFunction2(value))
+      inline def setSort_keysFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sort_keys", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSort_keysUndefined: Self = StObject.set(x, "sort_keys", js.undefined)
+      inline def setSort_keysUndefined: Self = StObject.set(x, "sort_keys", js.undefined)
     }
   }
   
@@ -361,8 +299,7 @@ object mod {
   }
   object Token {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       raw: String,
       stack: js.Array[String],
       `type`: whitespace | comment | key | literal | separator | newline
@@ -372,26 +309,19 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: String*): Self = StObject.set(x, "stack", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: whitespace | comment | key | literal | separator | newline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: whitespace | comment | key | literal | separator | newline): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

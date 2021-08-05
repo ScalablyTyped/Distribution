@@ -11,16 +11,13 @@ trait IMediaExtension extends StObject {
 }
 object IMediaExtension {
   
-  @scala.inline
-  def apply(setProperties: IPropertySet => Unit): IMediaExtension = {
+  inline def apply(setProperties: IPropertySet => Unit): IMediaExtension = {
     val __obj = js.Dynamic.literal(setProperties = js.Any.fromFunction1(setProperties))
     __obj.asInstanceOf[IMediaExtension]
   }
   
-  @scala.inline
-  implicit class IMediaExtensionMutableBuilder[Self <: IMediaExtension] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaExtension](x: Self) {
     
-    @scala.inline
-    def setSetProperties(value: IPropertySet => Unit): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
+    inline def setSetProperties(value: IPropertySet => Unit): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
   }
 }

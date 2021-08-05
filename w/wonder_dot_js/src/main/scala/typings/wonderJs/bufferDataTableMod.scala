@@ -17,7 +17,6 @@ object bufferDataTableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getGeometryDataName(`type`: EBufferDataType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryDataName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getGeometryDataName(`type`: EBufferDataType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryDataName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

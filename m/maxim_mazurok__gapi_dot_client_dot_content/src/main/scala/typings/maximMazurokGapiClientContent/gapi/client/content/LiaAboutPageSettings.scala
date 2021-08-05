@@ -14,25 +14,19 @@ trait LiaAboutPageSettings extends StObject {
 }
 object LiaAboutPageSettings {
   
-  @scala.inline
-  def apply(): LiaAboutPageSettings = {
+  inline def apply(): LiaAboutPageSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiaAboutPageSettings]
   }
   
-  @scala.inline
-  implicit class LiaAboutPageSettingsMutableBuilder[Self <: LiaAboutPageSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LiaAboutPageSettings](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

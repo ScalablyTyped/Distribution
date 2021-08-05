@@ -10,19 +10,15 @@ trait CountryOptions extends StObject {
 }
 object CountryOptions {
   
-  @scala.inline
-  def apply(): CountryOptions = {
+  inline def apply(): CountryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountryOptions]
   }
   
-  @scala.inline
-  implicit class CountryOptionsMutableBuilder[Self <: CountryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CountryOptions](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
   }
 }

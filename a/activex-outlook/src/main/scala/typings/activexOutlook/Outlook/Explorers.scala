@@ -16,7 +16,7 @@ trait Explorers extends StObject {
   
   def Item(Index: js.Any): Explorer
   
-  @JSName("Outlook.Explorers_typekey")
+  /* private */ @JSName("Outlook.Explorers_typekey")
   var OutlookDotExplorers_typekey: Explorers
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait Explorers extends StObject {
 }
 object Explorers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (js.Any, OlFolderDisplayMode) => Explorer,
     Application: Application,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object Explorers {
     __obj.asInstanceOf[Explorers]
   }
   
-  @scala.inline
-  implicit class ExplorersMutableBuilder[Self <: Explorers] (val x: Self) extends AnyVal {
+  extension [Self <: Explorers](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (js.Any, OlFolderDisplayMode) => Explorer): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (js.Any, OlFolderDisplayMode) => Explorer): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Explorer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Explorer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotExplorers_typekey(value: Explorers): Self = StObject.set(x, "Outlook.Explorers_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotExplorers_typekey(value: Explorers): Self = StObject.set(x, "Outlook.Explorers_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait SceneServiceVersion
 }
 object SceneServiceVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     major: Double,
@@ -46,16 +45,12 @@ object SceneServiceVersion {
     __obj.asInstanceOf[SceneServiceVersion]
   }
   
-  @scala.inline
-  implicit class SceneServiceVersionMutableBuilder[Self <: SceneServiceVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SceneServiceVersion](x: Self) {
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
+    inline def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
   }
 }

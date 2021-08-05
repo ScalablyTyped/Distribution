@@ -178,217 +178,147 @@ trait Observation extends StObject {
 }
 object Observation {
   
-  @scala.inline
-  def apply(): Observation = {
+  inline def apply(): Observation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Observation]
   }
   
-  @scala.inline
-  implicit class ObservationMutableBuilder[Self <: Observation] (val x: Self) extends AnyVal {
+  extension [Self <: Observation](x: Self) {
     
-    @scala.inline
-    def setCloudWatchEventDetailType(value: CloudWatchEventDetailType): Self = StObject.set(x, "CloudWatchEventDetailType", value.asInstanceOf[js.Any])
+    inline def setCloudWatchEventDetailType(value: CloudWatchEventDetailType): Self = StObject.set(x, "CloudWatchEventDetailType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchEventDetailTypeUndefined: Self = StObject.set(x, "CloudWatchEventDetailType", js.undefined)
+    inline def setCloudWatchEventDetailTypeUndefined: Self = StObject.set(x, "CloudWatchEventDetailType", js.undefined)
     
-    @scala.inline
-    def setCloudWatchEventId(value: CloudWatchEventId): Self = StObject.set(x, "CloudWatchEventId", value.asInstanceOf[js.Any])
+    inline def setCloudWatchEventId(value: CloudWatchEventId): Self = StObject.set(x, "CloudWatchEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchEventIdUndefined: Self = StObject.set(x, "CloudWatchEventId", js.undefined)
+    inline def setCloudWatchEventIdUndefined: Self = StObject.set(x, "CloudWatchEventId", js.undefined)
     
-    @scala.inline
-    def setCloudWatchEventSource(value: CloudWatchEventSource): Self = StObject.set(x, "CloudWatchEventSource", value.asInstanceOf[js.Any])
+    inline def setCloudWatchEventSource(value: CloudWatchEventSource): Self = StObject.set(x, "CloudWatchEventSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchEventSourceUndefined: Self = StObject.set(x, "CloudWatchEventSource", js.undefined)
+    inline def setCloudWatchEventSourceUndefined: Self = StObject.set(x, "CloudWatchEventSource", js.undefined)
     
-    @scala.inline
-    def setCodeDeployApplication(value: CodeDeployApplication): Self = StObject.set(x, "CodeDeployApplication", value.asInstanceOf[js.Any])
+    inline def setCodeDeployApplication(value: CodeDeployApplication): Self = StObject.set(x, "CodeDeployApplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeployApplicationUndefined: Self = StObject.set(x, "CodeDeployApplication", js.undefined)
+    inline def setCodeDeployApplicationUndefined: Self = StObject.set(x, "CodeDeployApplication", js.undefined)
     
-    @scala.inline
-    def setCodeDeployDeploymentGroup(value: CodeDeployDeploymentGroup): Self = StObject.set(x, "CodeDeployDeploymentGroup", value.asInstanceOf[js.Any])
+    inline def setCodeDeployDeploymentGroup(value: CodeDeployDeploymentGroup): Self = StObject.set(x, "CodeDeployDeploymentGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeployDeploymentGroupUndefined: Self = StObject.set(x, "CodeDeployDeploymentGroup", js.undefined)
+    inline def setCodeDeployDeploymentGroupUndefined: Self = StObject.set(x, "CodeDeployDeploymentGroup", js.undefined)
     
-    @scala.inline
-    def setCodeDeployDeploymentId(value: CodeDeployDeploymentId): Self = StObject.set(x, "CodeDeployDeploymentId", value.asInstanceOf[js.Any])
+    inline def setCodeDeployDeploymentId(value: CodeDeployDeploymentId): Self = StObject.set(x, "CodeDeployDeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeployDeploymentIdUndefined: Self = StObject.set(x, "CodeDeployDeploymentId", js.undefined)
+    inline def setCodeDeployDeploymentIdUndefined: Self = StObject.set(x, "CodeDeployDeploymentId", js.undefined)
     
-    @scala.inline
-    def setCodeDeployInstanceGroupId(value: CodeDeployInstanceGroupId): Self = StObject.set(x, "CodeDeployInstanceGroupId", value.asInstanceOf[js.Any])
+    inline def setCodeDeployInstanceGroupId(value: CodeDeployInstanceGroupId): Self = StObject.set(x, "CodeDeployInstanceGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeployInstanceGroupIdUndefined: Self = StObject.set(x, "CodeDeployInstanceGroupId", js.undefined)
+    inline def setCodeDeployInstanceGroupIdUndefined: Self = StObject.set(x, "CodeDeployInstanceGroupId", js.undefined)
     
-    @scala.inline
-    def setCodeDeployState(value: CodeDeployState): Self = StObject.set(x, "CodeDeployState", value.asInstanceOf[js.Any])
+    inline def setCodeDeployState(value: CodeDeployState): Self = StObject.set(x, "CodeDeployState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeDeployStateUndefined: Self = StObject.set(x, "CodeDeployState", js.undefined)
+    inline def setCodeDeployStateUndefined: Self = StObject.set(x, "CodeDeployState", js.undefined)
     
-    @scala.inline
-    def setEc2State(value: Ec2State): Self = StObject.set(x, "Ec2State", value.asInstanceOf[js.Any])
+    inline def setEc2State(value: Ec2State): Self = StObject.set(x, "Ec2State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2StateUndefined: Self = StObject.set(x, "Ec2State", js.undefined)
+    inline def setEc2StateUndefined: Self = StObject.set(x, "Ec2State", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: EndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setHealthEventArn(value: HealthEventArn): Self = StObject.set(x, "HealthEventArn", value.asInstanceOf[js.Any])
+    inline def setHealthEventArn(value: HealthEventArn): Self = StObject.set(x, "HealthEventArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthEventArnUndefined: Self = StObject.set(x, "HealthEventArn", js.undefined)
+    inline def setHealthEventArnUndefined: Self = StObject.set(x, "HealthEventArn", js.undefined)
     
-    @scala.inline
-    def setHealthEventDescription(value: HealthEventDescription): Self = StObject.set(x, "HealthEventDescription", value.asInstanceOf[js.Any])
+    inline def setHealthEventDescription(value: HealthEventDescription): Self = StObject.set(x, "HealthEventDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthEventDescriptionUndefined: Self = StObject.set(x, "HealthEventDescription", js.undefined)
+    inline def setHealthEventDescriptionUndefined: Self = StObject.set(x, "HealthEventDescription", js.undefined)
     
-    @scala.inline
-    def setHealthEventTypeCategory(value: HealthEventTypeCategory): Self = StObject.set(x, "HealthEventTypeCategory", value.asInstanceOf[js.Any])
+    inline def setHealthEventTypeCategory(value: HealthEventTypeCategory): Self = StObject.set(x, "HealthEventTypeCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthEventTypeCategoryUndefined: Self = StObject.set(x, "HealthEventTypeCategory", js.undefined)
+    inline def setHealthEventTypeCategoryUndefined: Self = StObject.set(x, "HealthEventTypeCategory", js.undefined)
     
-    @scala.inline
-    def setHealthEventTypeCode(value: HealthEventTypeCode): Self = StObject.set(x, "HealthEventTypeCode", value.asInstanceOf[js.Any])
+    inline def setHealthEventTypeCode(value: HealthEventTypeCode): Self = StObject.set(x, "HealthEventTypeCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthEventTypeCodeUndefined: Self = StObject.set(x, "HealthEventTypeCode", js.undefined)
+    inline def setHealthEventTypeCodeUndefined: Self = StObject.set(x, "HealthEventTypeCode", js.undefined)
     
-    @scala.inline
-    def setHealthService(value: HealthService): Self = StObject.set(x, "HealthService", value.asInstanceOf[js.Any])
+    inline def setHealthService(value: HealthService): Self = StObject.set(x, "HealthService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthServiceUndefined: Self = StObject.set(x, "HealthService", js.undefined)
+    inline def setHealthServiceUndefined: Self = StObject.set(x, "HealthService", js.undefined)
     
-    @scala.inline
-    def setId(value: ObservationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ObservationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setLineTime(value: LineTime): Self = StObject.set(x, "LineTime", value.asInstanceOf[js.Any])
+    inline def setLineTime(value: LineTime): Self = StObject.set(x, "LineTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineTimeUndefined: Self = StObject.set(x, "LineTime", js.undefined)
+    inline def setLineTimeUndefined: Self = StObject.set(x, "LineTime", js.undefined)
     
-    @scala.inline
-    def setLogFilter(value: LogFilter): Self = StObject.set(x, "LogFilter", value.asInstanceOf[js.Any])
+    inline def setLogFilter(value: LogFilter): Self = StObject.set(x, "LogFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogFilterUndefined: Self = StObject.set(x, "LogFilter", js.undefined)
+    inline def setLogFilterUndefined: Self = StObject.set(x, "LogFilter", js.undefined)
     
-    @scala.inline
-    def setLogGroup(value: LogGroup): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
+    inline def setLogGroup(value: LogGroup): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
+    inline def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
     
-    @scala.inline
-    def setLogText(value: LogText): Self = StObject.set(x, "LogText", value.asInstanceOf[js.Any])
+    inline def setLogText(value: LogText): Self = StObject.set(x, "LogText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTextUndefined: Self = StObject.set(x, "LogText", js.undefined)
+    inline def setLogTextUndefined: Self = StObject.set(x, "LogText", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setMetricNamespace(value: MetricNamespace): Self = StObject.set(x, "MetricNamespace", value.asInstanceOf[js.Any])
+    inline def setMetricNamespace(value: MetricNamespace): Self = StObject.set(x, "MetricNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamespaceUndefined: Self = StObject.set(x, "MetricNamespace", js.undefined)
+    inline def setMetricNamespaceUndefined: Self = StObject.set(x, "MetricNamespace", js.undefined)
     
-    @scala.inline
-    def setSourceARN(value: SourceARN): Self = StObject.set(x, "SourceARN", value.asInstanceOf[js.Any])
+    inline def setSourceARN(value: SourceARN): Self = StObject.set(x, "SourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceARNUndefined: Self = StObject.set(x, "SourceARN", js.undefined)
+    inline def setSourceARNUndefined: Self = StObject.set(x, "SourceARN", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: StartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    @scala.inline
-    def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     
-    @scala.inline
-    def setXRayErrorPercent(value: XRayErrorPercent): Self = StObject.set(x, "XRayErrorPercent", value.asInstanceOf[js.Any])
+    inline def setXRayErrorPercent(value: XRayErrorPercent): Self = StObject.set(x, "XRayErrorPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXRayErrorPercentUndefined: Self = StObject.set(x, "XRayErrorPercent", js.undefined)
+    inline def setXRayErrorPercentUndefined: Self = StObject.set(x, "XRayErrorPercent", js.undefined)
     
-    @scala.inline
-    def setXRayFaultPercent(value: XRayFaultPercent): Self = StObject.set(x, "XRayFaultPercent", value.asInstanceOf[js.Any])
+    inline def setXRayFaultPercent(value: XRayFaultPercent): Self = StObject.set(x, "XRayFaultPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXRayFaultPercentUndefined: Self = StObject.set(x, "XRayFaultPercent", js.undefined)
+    inline def setXRayFaultPercentUndefined: Self = StObject.set(x, "XRayFaultPercent", js.undefined)
     
-    @scala.inline
-    def setXRayNodeName(value: XRayNodeName): Self = StObject.set(x, "XRayNodeName", value.asInstanceOf[js.Any])
+    inline def setXRayNodeName(value: XRayNodeName): Self = StObject.set(x, "XRayNodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXRayNodeNameUndefined: Self = StObject.set(x, "XRayNodeName", js.undefined)
+    inline def setXRayNodeNameUndefined: Self = StObject.set(x, "XRayNodeName", js.undefined)
     
-    @scala.inline
-    def setXRayNodeType(value: XRayNodeType): Self = StObject.set(x, "XRayNodeType", value.asInstanceOf[js.Any])
+    inline def setXRayNodeType(value: XRayNodeType): Self = StObject.set(x, "XRayNodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXRayNodeTypeUndefined: Self = StObject.set(x, "XRayNodeType", js.undefined)
+    inline def setXRayNodeTypeUndefined: Self = StObject.set(x, "XRayNodeType", js.undefined)
     
-    @scala.inline
-    def setXRayRequestAverageLatency(value: XRayRequestAverageLatency): Self = StObject.set(x, "XRayRequestAverageLatency", value.asInstanceOf[js.Any])
+    inline def setXRayRequestAverageLatency(value: XRayRequestAverageLatency): Self = StObject.set(x, "XRayRequestAverageLatency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXRayRequestAverageLatencyUndefined: Self = StObject.set(x, "XRayRequestAverageLatency", js.undefined)
+    inline def setXRayRequestAverageLatencyUndefined: Self = StObject.set(x, "XRayRequestAverageLatency", js.undefined)
     
-    @scala.inline
-    def setXRayRequestCount(value: XRayRequestCount): Self = StObject.set(x, "XRayRequestCount", value.asInstanceOf[js.Any])
+    inline def setXRayRequestCount(value: XRayRequestCount): Self = StObject.set(x, "XRayRequestCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXRayRequestCountUndefined: Self = StObject.set(x, "XRayRequestCount", js.undefined)
+    inline def setXRayRequestCountUndefined: Self = StObject.set(x, "XRayRequestCount", js.undefined)
     
-    @scala.inline
-    def setXRayThrottlePercent(value: XRayThrottlePercent): Self = StObject.set(x, "XRayThrottlePercent", value.asInstanceOf[js.Any])
+    inline def setXRayThrottlePercent(value: XRayThrottlePercent): Self = StObject.set(x, "XRayThrottlePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXRayThrottlePercentUndefined: Self = StObject.set(x, "XRayThrottlePercent", js.undefined)
+    inline def setXRayThrottlePercentUndefined: Self = StObject.set(x, "XRayThrottlePercent", js.undefined)
   }
 }

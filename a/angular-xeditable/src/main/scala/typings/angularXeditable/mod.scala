@@ -109,8 +109,7 @@ object mod {
     }
     object IEditableOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         activate: String,
         activationEvent: String,
         blurElem: String,
@@ -124,32 +123,23 @@ object mod {
         __obj.asInstanceOf[IEditableOptions]
       }
       
-      @scala.inline
-      implicit class IEditableOptionsMutableBuilder[Self <: IEditableOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IEditableOptions](x: Self) {
         
-        @scala.inline
-        def setActivate(value: String): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
+        inline def setActivate(value: String): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setActivationEvent(value: String): Self = StObject.set(x, "activationEvent", value.asInstanceOf[js.Any])
+        inline def setActivationEvent(value: String): Self = StObject.set(x, "activationEvent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlurElem(value: String): Self = StObject.set(x, "blurElem", value.asInstanceOf[js.Any])
+        inline def setBlurElem(value: String): Self = StObject.set(x, "blurElem", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlurForm(value: String): Self = StObject.set(x, "blurForm", value.asInstanceOf[js.Any])
+        inline def setBlurForm(value: String): Self = StObject.set(x, "blurForm", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtons(value: String): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+        inline def setButtons(value: String): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIcon_set(value: String): Self = StObject.set(x, "icon_set", value.asInstanceOf[js.Any])
+        inline def setIcon_set(value: String): Self = StObject.set(x, "icon_set", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+        inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+        inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       }
     }
   }

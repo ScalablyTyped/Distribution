@@ -22,9 +22,9 @@ object commonTypesMod {
     def this(provider: js.Any, abi: js.Array[AbiItem], address: String, options: js.Any) = this()
     def this(provider: js.Any, abi: js.Array[AbiItem], address: Unit, options: js.Any) = this()
     
-    var _address: String = js.native
+    /* private */ var _address: String = js.native
     
-    var _jsonInterface: js.Array[AbiItem] = js.native
+    /* private */ var _jsonInterface: js.Array[AbiItem] = js.native
     
     var defaultAccount: String | Null = js.native
     
@@ -98,8 +98,7 @@ object commonTypesMod {
     @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Web3.modules")
     @js.native
     def modules: js.Any = js.native
-    @scala.inline
-    def modules_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
+    inline def modules_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
     
     @JSImport("@keep-network/tbtc.js/src/CommonTypes", "Web3.providers")
     @js.native
@@ -128,42 +127,31 @@ object commonTypesMod {
   }
   object AbiInput {
     
-    @scala.inline
-    def apply(name: String, `type`: String): AbiInput = {
+    inline def apply(name: String, `type`: String): AbiInput = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbiInput]
     }
     
-    @scala.inline
-    implicit class AbiInputMutableBuilder[Self <: AbiInput] (val x: Self) extends AnyVal {
+    extension [Self <: AbiInput](x: Self) {
       
-      @scala.inline
-      def setComponents(value: js.Array[AbiInput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Array[AbiInput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiInput*): Self = StObject.set(x, "components", js.Array(value :_*))
       
-      @scala.inline
-      def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+      inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+      inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
       
-      @scala.inline
-      def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
+      inline def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,72 +177,51 @@ object commonTypesMod {
   }
   object AbiItem {
     
-    @scala.inline
-    def apply(`type`: AbiType): AbiItem = {
+    inline def apply(`type`: AbiType): AbiItem = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbiItem]
     }
     
-    @scala.inline
-    implicit class AbiItemMutableBuilder[Self <: AbiItem] (val x: Self) extends AnyVal {
+    extension [Self <: AbiItem](x: Self) {
       
-      @scala.inline
-      def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
+      inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
+      inline def setAnonymousUndefined: Self = StObject.set(x, "anonymous", js.undefined)
       
-      @scala.inline
-      def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+      inline def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
+      inline def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
       
-      @scala.inline
-      def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
       
-      @scala.inline
-      def setInputs(value: js.Array[AbiInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: js.Array[AbiInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+      inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      @scala.inline
-      def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: AbiInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputs(value: js.Array[AbiOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: js.Array[AbiOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+      inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      @scala.inline
-      def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: AbiOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
       
-      @scala.inline
-      def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
+      inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayableUndefined: Self = StObject.set(x, "payable", js.undefined)
+      inline def setPayableUndefined: Self = StObject.set(x, "payable", js.undefined)
       
-      @scala.inline
-      def setStateMutability(value: StateMutabilityType): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
+      inline def setStateMutability(value: StateMutabilityType): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateMutabilityUndefined: Self = StObject.set(x, "stateMutability", js.undefined)
+      inline def setStateMutabilityUndefined: Self = StObject.set(x, "stateMutability", js.undefined)
       
-      @scala.inline
-      def setType(value: AbiType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AbiType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,36 +237,27 @@ object commonTypesMod {
   }
   object AbiOutput {
     
-    @scala.inline
-    def apply(name: String, `type`: String): AbiOutput = {
+    inline def apply(name: String, `type`: String): AbiOutput = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbiOutput]
     }
     
-    @scala.inline
-    implicit class AbiOutputMutableBuilder[Self <: AbiOutput] (val x: Self) extends AnyVal {
+    extension [Self <: AbiOutput](x: Self) {
       
-      @scala.inline
-      def setComponents(value: js.Array[AbiOutput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Array[AbiOutput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: AbiOutput*): Self = StObject.set(x, "components", js.Array(value :_*))
       
-      @scala.inline
-      def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      inline def setInternalType(value: String): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
+      inline def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,17 +270,13 @@ object commonTypesMod {
   trait AbiType extends StObject
   object AbiType {
     
-    @scala.inline
-    def constructor: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.constructor = "constructor".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.constructor]
+    inline def constructor: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.constructor = "constructor".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.constructor]
     
-    @scala.inline
-    def event: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.event = "event".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.event]
+    inline def event: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.event = "event".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.event]
     
-    @scala.inline
-    def fallback: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.fallback = "fallback".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.fallback]
+    inline def fallback: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.fallback = "fallback".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.fallback]
     
-    @scala.inline
-    def function: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.function = "function".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.function]
+    inline def function: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.function = "function".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.function]
   }
   
   trait DepositBaseClass extends StObject {
@@ -345,8 +299,7 @@ object commonTypesMod {
   }
   object DepositBaseClass {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       constructFundingProof: (OmitFoundTransactionvalue, Double) => js.Promise[js.Tuple8[Buffer, Buffer, Buffer, Buffer, Double, Buffer, String, Buffer]],
       contract: Contract,
@@ -360,34 +313,25 @@ object commonTypesMod {
       __obj.asInstanceOf[DepositBaseClass]
     }
     
-    @scala.inline
-    implicit class DepositBaseClassMutableBuilder[Self <: DepositBaseClass] (val x: Self) extends AnyVal {
+    extension [Self <: DepositBaseClass](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructFundingProof(
+      inline def setConstructFundingProof(
         value: (OmitFoundTransactionvalue, Double) => js.Promise[js.Tuple8[Buffer, Buffer, Buffer, Buffer, Double, Buffer, String, Buffer]]
       ): Self = StObject.set(x, "constructFundingProof", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContract(value: Contract): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
+      inline def setContract(value: Contract): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactory(value: js.Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: js.Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCurrentState(value: () => js.Promise[Double]): Self = StObject.set(x, "getCurrentState", js.Any.fromFunction0(value))
+      inline def setGetCurrentState(value: () => js.Promise[Double]): Self = StObject.set(x, "getCurrentState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLatestRedemptionDetails(value: () => js.Promise[Null | RedemptionDetails]): Self = StObject.set(x, "getLatestRedemptionDetails", js.Any.fromFunction0(value))
+      inline def setGetLatestRedemptionDetails(value: () => js.Promise[Null | RedemptionDetails]): Self = StObject.set(x, "getLatestRedemptionDetails", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKeepContract(value: Contract): Self = StObject.set(x, "keepContract", value.asInstanceOf[js.Any])
+      inline def setKeepContract(value: Contract): Self = StObject.set(x, "keepContract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKeyPoint(value: js.Promise[KeyPoint]): Self = StObject.set(x, "publicKeyPoint", value.asInstanceOf[js.Any])
+      inline def setPublicKeyPoint(value: js.Promise[KeyPoint]): Self = StObject.set(x, "publicKeyPoint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -399,20 +343,16 @@ object commonTypesMod {
   }
   object KeyPoint {
     
-    @scala.inline
-    def apply(x: String, y: String): KeyPoint = {
+    inline def apply(x: String, y: String): KeyPoint = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyPoint]
     }
     
-    @scala.inline
-    implicit class KeyPointMutableBuilder[Self <: KeyPoint] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPoint](x: Self) {
       
-      @scala.inline
-      def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -430,8 +370,7 @@ object commonTypesMod {
   }
   object RedemptionDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       digest: String,
       outpoint: String,
       redeemerOutputScript: String,
@@ -442,25 +381,19 @@ object commonTypesMod {
       __obj.asInstanceOf[RedemptionDetails]
     }
     
-    @scala.inline
-    implicit class RedemptionDetailsMutableBuilder[Self <: RedemptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RedemptionDetails](x: Self) {
       
-      @scala.inline
-      def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+      inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpoint(value: String): Self = StObject.set(x, "outpoint", value.asInstanceOf[js.Any])
+      inline def setOutpoint(value: String): Self = StObject.set(x, "outpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedeemerOutputScript(value: String): Self = StObject.set(x, "redeemerOutputScript", value.asInstanceOf[js.Any])
+      inline def setRedeemerOutputScript(value: String): Self = StObject.set(x, "redeemerOutputScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestedFee(
+      inline def setRequestedFee(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ): Self = StObject.set(x, "requestedFee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtxoValue(
+      inline def setUtxoValue(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ): Self = StObject.set(x, "utxoValue", value.asInstanceOf[js.Any])
     }
@@ -475,17 +408,13 @@ object commonTypesMod {
   trait StateMutabilityType extends StObject
   object StateMutabilityType {
     
-    @scala.inline
-    def nonpayable: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.nonpayable = "nonpayable".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.nonpayable]
+    inline def nonpayable: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.nonpayable = "nonpayable".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.nonpayable]
     
-    @scala.inline
-    def payable: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.payable = "payable".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.payable]
+    inline def payable: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.payable = "payable".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.payable]
     
-    @scala.inline
-    def pure: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.pure = "pure".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.pure]
+    inline def pure: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.pure = "pure".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.pure]
     
-    @scala.inline
-    def view: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.view = "view".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.view]
+    inline def view: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.view = "view".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.view]
   }
   
   trait TBTCConfig extends StObject {
@@ -498,23 +427,18 @@ object commonTypesMod {
   }
   object TBTCConfig {
     
-    @scala.inline
-    def apply(bitcoinNetwork: BitcoinNetworkType, electrum: StringDictionary[Config], web3: Web3): TBTCConfig = {
+    inline def apply(bitcoinNetwork: BitcoinNetworkType, electrum: StringDictionary[Config], web3: Web3): TBTCConfig = {
       val __obj = js.Dynamic.literal(bitcoinNetwork = bitcoinNetwork.asInstanceOf[js.Any], electrum = electrum.asInstanceOf[js.Any], web3 = web3.asInstanceOf[js.Any])
       __obj.asInstanceOf[TBTCConfig]
     }
     
-    @scala.inline
-    implicit class TBTCConfigMutableBuilder[Self <: TBTCConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TBTCConfig](x: Self) {
       
-      @scala.inline
-      def setBitcoinNetwork(value: BitcoinNetworkType): Self = StObject.set(x, "bitcoinNetwork", value.asInstanceOf[js.Any])
+      inline def setBitcoinNetwork(value: BitcoinNetworkType): Self = StObject.set(x, "bitcoinNetwork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectrum(value: StringDictionary[Config]): Self = StObject.set(x, "electrum", value.asInstanceOf[js.Any])
+      inline def setElectrum(value: StringDictionary[Config]): Self = StObject.set(x, "electrum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeb3(value: Web3): Self = StObject.set(x, "web3", value.asInstanceOf[js.Any])
+      inline def setWeb3(value: Web3): Self = StObject.set(x, "web3", value.asInstanceOf[js.Any])
     }
   }
 }

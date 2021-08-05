@@ -28,16 +28,12 @@ object Injectable {
   @js.native
   val ^ : InjectableDecorator = js.native
   
-  @scala.inline
-  implicit class InjectableMutableBuilder[Self <: Injectable] (val x: Self) extends AnyVal {
+  extension [Self <: Injectable](x: Self) {
     
-    @scala.inline
-    def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    inline def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
+    inline def setProvidedInNull: Self = StObject.set(x, "providedIn", null)
     
-    @scala.inline
-    def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
+    inline def setProvidedInUndefined: Self = StObject.set(x, "providedIn", js.undefined)
   }
 }

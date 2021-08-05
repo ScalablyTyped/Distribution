@@ -18,22 +18,17 @@ trait AnalysisSourceTemplate extends StObject {
 }
 object AnalysisSourceTemplate {
   
-  @scala.inline
-  def apply(Arn: Arn, DataSetReferences: DataSetReferenceList): AnalysisSourceTemplate = {
+  inline def apply(Arn: Arn, DataSetReferences: DataSetReferenceList): AnalysisSourceTemplate = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], DataSetReferences = DataSetReferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalysisSourceTemplate]
   }
   
-  @scala.inline
-  implicit class AnalysisSourceTemplateMutableBuilder[Self <: AnalysisSourceTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: AnalysisSourceTemplate](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetReferences(value: DataSetReferenceList): Self = StObject.set(x, "DataSetReferences", value.asInstanceOf[js.Any])
+    inline def setDataSetReferences(value: DataSetReferenceList): Self = StObject.set(x, "DataSetReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetReferencesVarargs(value: DataSetReference*): Self = StObject.set(x, "DataSetReferences", js.Array(value :_*))
+    inline def setDataSetReferencesVarargs(value: DataSetReference*): Self = StObject.set(x, "DataSetReferences", js.Array(value :_*))
   }
 }

@@ -14,20 +14,16 @@ object anon {
   }
   object Alpha {
     
-    @scala.inline
-    def apply(alpha: Double, hex: String): Alpha = {
+    inline def apply(alpha: Double, hex: String): Alpha = {
       val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alpha]
     }
     
-    @scala.inline
-    implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+    extension [Self <: Alpha](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     }
   }
 }

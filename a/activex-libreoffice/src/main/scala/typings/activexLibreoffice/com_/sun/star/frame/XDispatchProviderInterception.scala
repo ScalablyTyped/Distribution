@@ -37,8 +37,7 @@ trait XDispatchProviderInterception
 }
 object XDispatchProviderInterception {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     registerDispatchProviderInterceptor: XDispatchProviderInterceptor => Unit,
@@ -49,13 +48,10 @@ object XDispatchProviderInterception {
     __obj.asInstanceOf[XDispatchProviderInterception]
   }
   
-  @scala.inline
-  implicit class XDispatchProviderInterceptionMutableBuilder[Self <: XDispatchProviderInterception] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchProviderInterception](x: Self) {
     
-    @scala.inline
-    def setRegisterDispatchProviderInterceptor(value: XDispatchProviderInterceptor => Unit): Self = StObject.set(x, "registerDispatchProviderInterceptor", js.Any.fromFunction1(value))
+    inline def setRegisterDispatchProviderInterceptor(value: XDispatchProviderInterceptor => Unit): Self = StObject.set(x, "registerDispatchProviderInterceptor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReleaseDispatchProviderInterceptor(value: XDispatchProviderInterceptor => Unit): Self = StObject.set(x, "releaseDispatchProviderInterceptor", js.Any.fromFunction1(value))
+    inline def setReleaseDispatchProviderInterceptor(value: XDispatchProviderInterceptor => Unit): Self = StObject.set(x, "releaseDispatchProviderInterceptor", js.Any.fromFunction1(value))
   }
 }

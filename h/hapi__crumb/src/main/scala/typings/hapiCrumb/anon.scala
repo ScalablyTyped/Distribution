@@ -29,32 +29,24 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(): Key = {
+    inline def apply(): Key = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setRestful(value: Boolean): Self = StObject.set(x, "restful", value.asInstanceOf[js.Any])
+      inline def setRestful(value: Boolean): Self = StObject.set(x, "restful", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestfulUndefined: Self = StObject.set(x, "restful", js.undefined)
+      inline def setRestfulUndefined: Self = StObject.set(x, "restful", js.undefined)
       
-      @scala.inline
-      def setSource(value: payload | query): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: payload | query): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
 }

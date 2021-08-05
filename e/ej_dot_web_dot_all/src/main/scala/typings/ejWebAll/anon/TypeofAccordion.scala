@@ -15,19 +15,15 @@ trait TypeofAccordion extends StObject {
 }
 object TypeofAccordion {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Accordion): TypeofAccordion = {
+  inline def apply(Locale: js.Any, fn: Accordion): TypeofAccordion = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAccordion]
   }
   
-  @scala.inline
-  implicit class TypeofAccordionMutableBuilder[Self <: TypeofAccordion] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAccordion](x: Self) {
     
-    @scala.inline
-    def setFn(value: Accordion): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Accordion): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

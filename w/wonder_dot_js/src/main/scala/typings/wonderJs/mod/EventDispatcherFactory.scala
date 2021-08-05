@@ -15,6 +15,5 @@ object EventDispatcherFactory {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createEventDispatcher(event: typings.wonderJs.eventMod.Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventDispatcher")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createEventDispatcher(event: typings.wonderJs.eventMod.Event): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventDispatcher")(event.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

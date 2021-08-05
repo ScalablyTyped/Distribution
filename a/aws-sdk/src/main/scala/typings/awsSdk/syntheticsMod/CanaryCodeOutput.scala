@@ -18,25 +18,19 @@ trait CanaryCodeOutput extends StObject {
 }
 object CanaryCodeOutput {
   
-  @scala.inline
-  def apply(): CanaryCodeOutput = {
+  inline def apply(): CanaryCodeOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanaryCodeOutput]
   }
   
-  @scala.inline
-  implicit class CanaryCodeOutputMutableBuilder[Self <: CanaryCodeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CanaryCodeOutput](x: Self) {
     
-    @scala.inline
-    def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: String): Self = StObject.set(x, "Handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "Handler", js.undefined)
     
-    @scala.inline
-    def setSourceLocationArn(value: String): Self = StObject.set(x, "SourceLocationArn", value.asInstanceOf[js.Any])
+    inline def setSourceLocationArn(value: String): Self = StObject.set(x, "SourceLocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLocationArnUndefined: Self = StObject.set(x, "SourceLocationArn", js.undefined)
+    inline def setSourceLocationArnUndefined: Self = StObject.set(x, "SourceLocationArn", js.undefined)
   }
 }

@@ -35,40 +35,29 @@ trait SchemaWriteResponse extends StObject {
 }
 object SchemaWriteResponse {
   
-  @scala.inline
-  def apply(): SchemaWriteResponse = {
+  inline def apply(): SchemaWriteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWriteResponse]
   }
   
-  @scala.inline
-  implicit class SchemaWriteResponseMutableBuilder[Self <: SchemaWriteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWriteResponse](x: Self) {
     
-    @scala.inline
-    def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
+    inline def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
+    inline def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
-    @scala.inline
-    def setStreamToken(value: String): Self = StObject.set(x, "streamToken", value.asInstanceOf[js.Any])
+    inline def setStreamToken(value: String): Self = StObject.set(x, "streamToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamTokenUndefined: Self = StObject.set(x, "streamToken", js.undefined)
+    inline def setStreamTokenUndefined: Self = StObject.set(x, "streamToken", js.undefined)
     
-    @scala.inline
-    def setWriteResults(value: js.Array[SchemaWriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
+    inline def setWriteResults(value: js.Array[SchemaWriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
+    inline def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
     
-    @scala.inline
-    def setWriteResultsVarargs(value: SchemaWriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
+    inline def setWriteResultsVarargs(value: SchemaWriteResult*): Self = StObject.set(x, "writeResults", js.Array(value :_*))
   }
 }

@@ -18,22 +18,17 @@ trait SetPausedRequest extends StObject {
 }
 object SetPausedRequest {
   
-  @scala.inline
-  def apply(animations: js.Array[String], paused: Boolean): SetPausedRequest = {
+  inline def apply(animations: js.Array[String], paused: Boolean): SetPausedRequest = {
     val __obj = js.Dynamic.literal(animations = animations.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPausedRequest]
   }
   
-  @scala.inline
-  implicit class SetPausedRequestMutableBuilder[Self <: SetPausedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetPausedRequest](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: String*): Self = StObject.set(x, "animations", js.Array(value :_*))
     
-    @scala.inline
-    def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
   }
 }

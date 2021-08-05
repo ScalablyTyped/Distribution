@@ -10,19 +10,15 @@ trait EventActionEvent extends StObject {
 }
 object EventActionEvent {
   
-  @scala.inline
-  def apply(): EventActionEvent = {
+  inline def apply(): EventActionEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventActionEvent]
   }
   
-  @scala.inline
-  implicit class EventActionEventMutableBuilder[Self <: EventActionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EventActionEvent](x: Self) {
     
-    @scala.inline
-    def setEmit(value: String): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
+    inline def setEmit(value: String): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmitUndefined: Self = StObject.set(x, "emit", js.undefined)
+    inline def setEmitUndefined: Self = StObject.set(x, "emit", js.undefined)
   }
 }

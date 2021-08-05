@@ -14,8 +14,7 @@ trait ActionMeta[TContext, TEvent /* <: EventObject */]
 }
 object ActionMeta {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     action: ActionObject[TContext, TEvent],
     state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
@@ -24,10 +23,8 @@ object ActionMeta {
     __obj.asInstanceOf[ActionMeta[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class ActionMetaMutableBuilder[Self <: ActionMeta[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActionMeta[TContext, TEvent])) extends AnyVal {
+  extension [Self <: ActionMeta[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (ActionMeta[TContext, TEvent])) {
     
-    @scala.inline
-    def setAction(value: ActionObject[TContext, TEvent]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionObject[TContext, TEvent]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

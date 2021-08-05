@@ -13,19 +13,15 @@ trait ZoneAwarenessConfig extends StObject {
 }
 object ZoneAwarenessConfig {
   
-  @scala.inline
-  def apply(): ZoneAwarenessConfig = {
+  inline def apply(): ZoneAwarenessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoneAwarenessConfig]
   }
   
-  @scala.inline
-  implicit class ZoneAwarenessConfigMutableBuilder[Self <: ZoneAwarenessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneAwarenessConfig](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZoneCount(value: IntegerClass): Self = StObject.set(x, "AvailabilityZoneCount", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZoneCount(value: IntegerClass): Self = StObject.set(x, "AvailabilityZoneCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneCountUndefined: Self = StObject.set(x, "AvailabilityZoneCount", js.undefined)
+    inline def setAvailabilityZoneCountUndefined: Self = StObject.set(x, "AvailabilityZoneCount", js.undefined)
   }
 }

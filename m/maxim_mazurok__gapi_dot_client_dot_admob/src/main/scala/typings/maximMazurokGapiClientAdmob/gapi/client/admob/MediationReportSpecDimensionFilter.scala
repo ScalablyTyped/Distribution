@@ -14,25 +14,19 @@ trait MediationReportSpecDimensionFilter extends StObject {
 }
 object MediationReportSpecDimensionFilter {
   
-  @scala.inline
-  def apply(): MediationReportSpecDimensionFilter = {
+  inline def apply(): MediationReportSpecDimensionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediationReportSpecDimensionFilter]
   }
   
-  @scala.inline
-  implicit class MediationReportSpecDimensionFilterMutableBuilder[Self <: MediationReportSpecDimensionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: MediationReportSpecDimensionFilter](x: Self) {
     
-    @scala.inline
-    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setMatchesAny(value: StringList): Self = StObject.set(x, "matchesAny", value.asInstanceOf[js.Any])
+    inline def setMatchesAny(value: StringList): Self = StObject.set(x, "matchesAny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesAnyUndefined: Self = StObject.set(x, "matchesAny", js.undefined)
+    inline def setMatchesAnyUndefined: Self = StObject.set(x, "matchesAny", js.undefined)
   }
 }

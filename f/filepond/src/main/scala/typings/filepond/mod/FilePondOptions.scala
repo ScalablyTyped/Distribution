@@ -16,8 +16,7 @@ trait FilePondOptions
      with FilePondBaseProps
 object FilePondOptions {
   
-  @scala.inline
-  def apply(): FilePondOptions = {
+  inline def apply(): FilePondOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilePondOptions]
   }

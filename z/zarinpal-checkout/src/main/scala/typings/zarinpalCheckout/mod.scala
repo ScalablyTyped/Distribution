@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(merchantID: String, sandbox: Boolean): ZarinPalInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(merchantID.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any])).asInstanceOf[ZarinPalInstance]
+  inline def create(merchantID: String, sandbox: Boolean): ZarinPalInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(merchantID.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any])).asInstanceOf[ZarinPalInstance]
   
   trait Authority extends StObject {
     
@@ -25,26 +24,20 @@ object mod {
   }
   object Authority {
     
-    @scala.inline
-    def apply(Amount: String, Authority: String, Channel: String, Date: String): Authority = {
+    inline def apply(Amount: String, Authority: String, Channel: String, Date: String): Authority = {
       val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Authority = Authority.asInstanceOf[js.Any], Channel = Channel.asInstanceOf[js.Any], Date = Date.asInstanceOf[js.Any])
       __obj.asInstanceOf[Authority]
     }
     
-    @scala.inline
-    implicit class AuthorityMutableBuilder[Self <: Authority] (val x: Self) extends AnyVal {
+    extension [Self <: Authority](x: Self) {
       
-      @scala.inline
-      def setAmount(value: String): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: String): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,35 +55,26 @@ object mod {
   }
   object PaymentRequestInput {
     
-    @scala.inline
-    def apply(Amount: Double, CallbackURL: String, Description: String): PaymentRequestInput = {
+    inline def apply(Amount: Double, CallbackURL: String, Description: String): PaymentRequestInput = {
       val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], CallbackURL = CallbackURL.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaymentRequestInput]
     }
     
-    @scala.inline
-    implicit class PaymentRequestInputMutableBuilder[Self <: PaymentRequestInput] (val x: Self) extends AnyVal {
+    extension [Self <: PaymentRequestInput](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackURL(value: String): Self = StObject.set(x, "CallbackURL", value.asInstanceOf[js.Any])
+      inline def setCallbackURL(value: String): Self = StObject.set(x, "CallbackURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
       
-      @scala.inline
-      def setMobile(value: String): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: String): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "Mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "Mobile", js.undefined)
     }
   }
   
@@ -104,23 +88,18 @@ object mod {
   }
   object PaymentRequestOutput {
     
-    @scala.inline
-    def apply(authority: String, status: Double, url: String): PaymentRequestOutput = {
+    inline def apply(authority: String, status: Double, url: String): PaymentRequestOutput = {
       val __obj = js.Dynamic.literal(authority = authority.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaymentRequestOutput]
     }
     
-    @scala.inline
-    implicit class PaymentRequestOutputMutableBuilder[Self <: PaymentRequestOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PaymentRequestOutput](x: Self) {
       
-      @scala.inline
-      def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,20 +111,16 @@ object mod {
   }
   object PaymentVerificationInput {
     
-    @scala.inline
-    def apply(Amount: Double, Authority: String): PaymentVerificationInput = {
+    inline def apply(Amount: Double, Authority: String): PaymentVerificationInput = {
       val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Authority = Authority.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaymentVerificationInput]
     }
     
-    @scala.inline
-    implicit class PaymentVerificationInputMutableBuilder[Self <: PaymentVerificationInput] (val x: Self) extends AnyVal {
+    extension [Self <: PaymentVerificationInput](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,20 +132,16 @@ object mod {
   }
   object PaymentVerificationOutput {
     
-    @scala.inline
-    def apply(RefID: Double, status: Double): PaymentVerificationOutput = {
+    inline def apply(RefID: Double, status: Double): PaymentVerificationOutput = {
       val __obj = js.Dynamic.literal(RefID = RefID.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaymentVerificationOutput]
     }
     
-    @scala.inline
-    implicit class PaymentVerificationOutputMutableBuilder[Self <: PaymentVerificationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PaymentVerificationOutput](x: Self) {
       
-      @scala.inline
-      def setRefID(value: Double): Self = StObject.set(x, "RefID", value.asInstanceOf[js.Any])
+      inline def setRefID(value: Double): Self = StObject.set(x, "RefID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,20 +153,16 @@ object mod {
   }
   object RefreshAuthorityInput {
     
-    @scala.inline
-    def apply(Authority: String, Expire: Double): RefreshAuthorityInput = {
+    inline def apply(Authority: String, Expire: Double): RefreshAuthorityInput = {
       val __obj = js.Dynamic.literal(Authority = Authority.asInstanceOf[js.Any], Expire = Expire.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefreshAuthorityInput]
     }
     
-    @scala.inline
-    implicit class RefreshAuthorityInputMutableBuilder[Self <: RefreshAuthorityInput] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshAuthorityInput](x: Self) {
       
-      @scala.inline
-      def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpire(value: Double): Self = StObject.set(x, "Expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: Double): Self = StObject.set(x, "Expire", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,17 +172,14 @@ object mod {
   }
   object RefreshAuthorityOutput {
     
-    @scala.inline
-    def apply(status: Double): RefreshAuthorityOutput = {
+    inline def apply(status: Double): RefreshAuthorityOutput = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefreshAuthorityOutput]
     }
     
-    @scala.inline
-    implicit class RefreshAuthorityOutputMutableBuilder[Self <: RefreshAuthorityOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshAuthorityOutput](x: Self) {
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,23 +191,18 @@ object mod {
   }
   object UnverifiedTransactionsOutput {
     
-    @scala.inline
-    def apply(authorities: js.Array[Authority], status: Double): UnverifiedTransactionsOutput = {
+    inline def apply(authorities: js.Array[Authority], status: Double): UnverifiedTransactionsOutput = {
       val __obj = js.Dynamic.literal(authorities = authorities.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnverifiedTransactionsOutput]
     }
     
-    @scala.inline
-    implicit class UnverifiedTransactionsOutputMutableBuilder[Self <: UnverifiedTransactionsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UnverifiedTransactionsOutput](x: Self) {
       
-      @scala.inline
-      def setAuthorities(value: js.Array[Authority]): Self = StObject.set(x, "authorities", value.asInstanceOf[js.Any])
+      inline def setAuthorities(value: js.Array[Authority]): Self = StObject.set(x, "authorities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthoritiesVarargs(value: Authority*): Self = StObject.set(x, "authorities", js.Array(value :_*))
+      inline def setAuthoritiesVarargs(value: Authority*): Self = StObject.set(x, "authorities", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,8 +218,7 @@ object mod {
   }
   object ZarinPalInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       PaymentRequest: PaymentRequestInput => js.Promise[PaymentRequestOutput],
       PaymentVerification: PaymentVerificationInput => js.Promise[PaymentVerificationOutput],
       RefreshAuthority: RefreshAuthorityInput => js.Promise[RefreshAuthorityOutput],
@@ -270,20 +228,15 @@ object mod {
       __obj.asInstanceOf[ZarinPalInstance]
     }
     
-    @scala.inline
-    implicit class ZarinPalInstanceMutableBuilder[Self <: ZarinPalInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ZarinPalInstance](x: Self) {
       
-      @scala.inline
-      def setPaymentRequest(value: PaymentRequestInput => js.Promise[PaymentRequestOutput]): Self = StObject.set(x, "PaymentRequest", js.Any.fromFunction1(value))
+      inline def setPaymentRequest(value: PaymentRequestInput => js.Promise[PaymentRequestOutput]): Self = StObject.set(x, "PaymentRequest", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPaymentVerification(value: PaymentVerificationInput => js.Promise[PaymentVerificationOutput]): Self = StObject.set(x, "PaymentVerification", js.Any.fromFunction1(value))
+      inline def setPaymentVerification(value: PaymentVerificationInput => js.Promise[PaymentVerificationOutput]): Self = StObject.set(x, "PaymentVerification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshAuthority(value: RefreshAuthorityInput => js.Promise[RefreshAuthorityOutput]): Self = StObject.set(x, "RefreshAuthority", js.Any.fromFunction1(value))
+      inline def setRefreshAuthority(value: RefreshAuthorityInput => js.Promise[RefreshAuthorityOutput]): Self = StObject.set(x, "RefreshAuthority", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnverifiedTransactions(value: () => js.Promise[UnverifiedTransactionsOutput]): Self = StObject.set(x, "UnverifiedTransactions", js.Any.fromFunction0(value))
+      inline def setUnverifiedTransactions(value: () => js.Promise[UnverifiedTransactionsOutput]): Self = StObject.set(x, "UnverifiedTransactions", js.Any.fromFunction0(value))
     }
   }
 }

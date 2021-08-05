@@ -24,43 +24,31 @@ trait Pagination extends StObject {
 }
 object Pagination {
   
-  @scala.inline
-  def apply(): Pagination = {
+  inline def apply(): Pagination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pagination]
   }
   
-  @scala.inline
-  implicit class PaginationMutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
+  extension [Self <: Pagination](x: Self) {
     
-    @scala.inline
-    def setNext_cursor(value: String): Self = StObject.set(x, "next_cursor", value.asInstanceOf[js.Any])
+    inline def setNext_cursor(value: String): Self = StObject.set(x, "next_cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_cursorUndefined: Self = StObject.set(x, "next_cursor", js.undefined)
+    inline def setNext_cursorUndefined: Self = StObject.set(x, "next_cursor", js.undefined)
     
-    @scala.inline
-    def setNext_url(value: String): Self = StObject.set(x, "next_url", value.asInstanceOf[js.Any])
+    inline def setNext_url(value: String): Self = StObject.set(x, "next_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_urlUndefined: Self = StObject.set(x, "next_url", js.undefined)
+    inline def setNext_urlUndefined: Self = StObject.set(x, "next_url", js.undefined)
     
-    @scala.inline
-    def setRefresh_cursor(value: String): Self = StObject.set(x, "refresh_cursor", value.asInstanceOf[js.Any])
+    inline def setRefresh_cursor(value: String): Self = StObject.set(x, "refresh_cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh_cursorUndefined: Self = StObject.set(x, "refresh_cursor", js.undefined)
+    inline def setRefresh_cursorUndefined: Self = StObject.set(x, "refresh_cursor", js.undefined)
     
-    @scala.inline
-    def setRefresh_url(value: String): Self = StObject.set(x, "refresh_url", value.asInstanceOf[js.Any])
+    inline def setRefresh_url(value: String): Self = StObject.set(x, "refresh_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh_urlUndefined: Self = StObject.set(x, "refresh_url", js.undefined)
+    inline def setRefresh_urlUndefined: Self = StObject.set(x, "refresh_url", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

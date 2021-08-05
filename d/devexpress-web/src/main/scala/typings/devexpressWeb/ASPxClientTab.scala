@@ -92,8 +92,7 @@ trait ASPxClientTab extends StObject {
 }
 object ASPxClientTab {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetActiveImageUrl: () => String,
     GetEnabled: () => Boolean,
     GetImageUrl: () => String,
@@ -114,52 +113,36 @@ object ASPxClientTab {
     __obj.asInstanceOf[ASPxClientTab]
   }
   
-  @scala.inline
-  implicit class ASPxClientTabMutableBuilder[Self <: ASPxClientTab] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTab](x: Self) {
     
-    @scala.inline
-    def setGetActiveImageUrl(value: () => String): Self = StObject.set(x, "GetActiveImageUrl", js.Any.fromFunction0(value))
+    inline def setGetActiveImageUrl(value: () => String): Self = StObject.set(x, "GetActiveImageUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
+    inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
+    inline def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
+    inline def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetActiveImageUrl(value: String => Unit): Self = StObject.set(x, "SetActiveImageUrl", js.Any.fromFunction1(value))
+    inline def setSetActiveImageUrl(value: String => Unit): Self = StObject.set(x, "SetActiveImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
+    inline def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetNavigateUrl", js.Any.fromFunction1(value))
+    inline def setSetNavigateUrl(value: String => Unit): Self = StObject.set(x, "SetNavigateUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTabControl(value: ASPxClientTabControlBase): Self = StObject.set(x, "tabControl", value.asInstanceOf[js.Any])
+    inline def setTabControl(value: ASPxClientTabControlBase): Self = StObject.set(x, "tabControl", value.asInstanceOf[js.Any])
   }
 }

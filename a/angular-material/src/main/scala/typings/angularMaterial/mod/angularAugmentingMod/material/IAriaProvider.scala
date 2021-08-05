@@ -10,16 +10,13 @@ trait IAriaProvider extends StObject {
 }
 object IAriaProvider {
   
-  @scala.inline
-  def apply(disableWarnings: () => Unit): IAriaProvider = {
+  inline def apply(disableWarnings: () => Unit): IAriaProvider = {
     val __obj = js.Dynamic.literal(disableWarnings = js.Any.fromFunction0(disableWarnings))
     __obj.asInstanceOf[IAriaProvider]
   }
   
-  @scala.inline
-  implicit class IAriaProviderMutableBuilder[Self <: IAriaProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IAriaProvider](x: Self) {
     
-    @scala.inline
-    def setDisableWarnings(value: () => Unit): Self = StObject.set(x, "disableWarnings", js.Any.fromFunction0(value))
+    inline def setDisableWarnings(value: () => Unit): Self = StObject.set(x, "disableWarnings", js.Any.fromFunction0(value))
   }
 }

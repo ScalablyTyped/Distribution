@@ -15,7 +15,7 @@ object savedFeedMod {
   class SavedFeed protected () extends Feed[SavedFeedResponseRootObject, SavedFeedResponseMedia] {
     def this(client: IgApiClient) = this()
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[SavedFeedResponseRootObject] = js.native
   }

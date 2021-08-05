@@ -29,31 +29,23 @@ trait SchemaBatchOperationMetadata extends StObject {
 }
 object SchemaBatchOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaBatchOperationMetadata = {
+  inline def apply(): SchemaBatchOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaBatchOperationMetadataMutableBuilder[Self <: SchemaBatchOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSubmitTime(value: String): Self = StObject.set(x, "submitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: String): Self = StObject.set(x, "submitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeUndefined: Self = StObject.set(x, "submitTime", js.undefined)
+    inline def setSubmitTimeUndefined: Self = StObject.set(x, "submitTime", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait OpsItemDataValue extends StObject {
 }
 object OpsItemDataValue {
   
-  @scala.inline
-  def apply(): OpsItemDataValue = {
+  inline def apply(): OpsItemDataValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpsItemDataValue]
   }
   
-  @scala.inline
-  implicit class OpsItemDataValueMutableBuilder[Self <: OpsItemDataValue] (val x: Self) extends AnyVal {
+  extension [Self <: OpsItemDataValue](x: Self) {
     
-    @scala.inline
-    def setType(value: OpsItemDataType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: OpsItemDataType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: OpsItemDataValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: OpsItemDataValueString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

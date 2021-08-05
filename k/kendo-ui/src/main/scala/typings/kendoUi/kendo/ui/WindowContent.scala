@@ -10,19 +10,15 @@ trait WindowContent extends StObject {
 }
 object WindowContent {
   
-  @scala.inline
-  def apply(): WindowContent = {
+  inline def apply(): WindowContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowContent]
   }
   
-  @scala.inline
-  implicit class WindowContentMutableBuilder[Self <: WindowContent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowContent](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

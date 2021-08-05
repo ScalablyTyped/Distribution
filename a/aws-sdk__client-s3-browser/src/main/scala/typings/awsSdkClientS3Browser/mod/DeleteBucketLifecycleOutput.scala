@@ -10,8 +10,7 @@ trait DeleteBucketLifecycleOutput
      with typings.awsSdkClientS3Browser.typesDeleteBucketLifecycleOutputMod.DeleteBucketLifecycleOutput
 object DeleteBucketLifecycleOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DeleteBucketLifecycleOutput = {
+  inline def apply($metadata: ResponseMetadata): DeleteBucketLifecycleOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBucketLifecycleOutput]
   }

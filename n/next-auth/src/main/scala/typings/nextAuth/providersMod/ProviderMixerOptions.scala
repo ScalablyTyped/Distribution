@@ -12,19 +12,15 @@ trait ProviderMixerOptions extends StObject {
 }
 object ProviderMixerOptions {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String): ProviderMixerOptions = {
+  inline def apply(clientId: String, clientSecret: String): ProviderMixerOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderMixerOptions]
   }
   
-  @scala.inline
-  implicit class ProviderMixerOptionsMutableBuilder[Self <: ProviderMixerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderMixerOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
   }
 }

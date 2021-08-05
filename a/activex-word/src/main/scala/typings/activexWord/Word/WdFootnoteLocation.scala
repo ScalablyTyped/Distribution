@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFootnoteLocation extends StObject
 object WdFootnoteLocation {
   
-  @scala.inline
-  def wdBeneathText: `1` = 1.asInstanceOf[`1`]
+  inline def wdBeneathText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdBottomOfPage: `0` = 0.asInstanceOf[`0`]
+  inline def wdBottomOfPage: `0` = 0.asInstanceOf[`0`]
 }

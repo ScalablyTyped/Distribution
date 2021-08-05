@@ -18,23 +18,18 @@ trait ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint extends StObject 
 }
 object ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, repository_id: Double, runner_group_id: Double): ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint = {
+  inline def apply(org_ : String, repository_id: Double, runner_group_id: Double): ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint = {
     val __obj = js.Dynamic.literal(repository_id = repository_id.asInstanceOf[js.Any], runner_group_id = runner_group_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpointMutableBuilder[Self <: ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
   }
 }

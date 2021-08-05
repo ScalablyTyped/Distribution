@@ -28,34 +28,25 @@ trait RegisterDomainInput extends StObject {
 }
 object RegisterDomainInput {
   
-  @scala.inline
-  def apply(name: DomainName, workflowExecutionRetentionPeriodInDays: DurationInDays): RegisterDomainInput = {
+  inline def apply(name: DomainName, workflowExecutionRetentionPeriodInDays: DurationInDays): RegisterDomainInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], workflowExecutionRetentionPeriodInDays = workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDomainInput]
   }
   
-  @scala.inline
-  implicit class RegisterDomainInputMutableBuilder[Self <: RegisterDomainInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDomainInput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: DomainName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: ResourceTagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: ResourceTagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: ResourceTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: ResourceTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = StObject.set(x, "workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setWorkflowExecutionRetentionPeriodInDays(value: DurationInDays): Self = StObject.set(x, "workflowExecutionRetentionPeriodInDays", value.asInstanceOf[js.Any])
   }
 }

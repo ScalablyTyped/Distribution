@@ -13,16 +13,13 @@ trait CancelTaskExecutionRequest extends StObject {
 }
 object CancelTaskExecutionRequest {
   
-  @scala.inline
-  def apply(TaskExecutionArn: TaskExecutionArn): CancelTaskExecutionRequest = {
+  inline def apply(TaskExecutionArn: TaskExecutionArn): CancelTaskExecutionRequest = {
     val __obj = js.Dynamic.literal(TaskExecutionArn = TaskExecutionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelTaskExecutionRequest]
   }
   
-  @scala.inline
-  implicit class CancelTaskExecutionRequestMutableBuilder[Self <: CancelTaskExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelTaskExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
+    inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
   }
 }

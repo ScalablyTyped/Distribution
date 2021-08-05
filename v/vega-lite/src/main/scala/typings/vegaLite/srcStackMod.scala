@@ -49,17 +49,12 @@ object srcStackMod {
     square | area | circle | image | line | rect | text | point | arc | rule | trail | geoshape | bar | tick
   ] = js.native
   
-  @scala.inline
-  def isStackOffset(s: String): /* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStackOffset")(s.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean]
+  inline def isStackOffset(s: String): /* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStackOffset")(s.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/stack.StackOffset */ Boolean]
   
-  @scala.inline
-  def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
-  @scala.inline
-  def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
-  @scala.inline
-  def stack(m: Mark, encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
-  @scala.inline
-  def stack(m: Mark, encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
+  inline def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
+  inline def stack(m: MarkDef[Mark, ExprRef | SignalRef], encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
+  inline def stack(m: Mark, encoding: Encoding[String]): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
+  inline def stack(m: Mark, encoding: Encoding[String], opt: DisallowNonLinearStack): StackProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(m.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[StackProperties]
   
   /* keyof vega-lite.anon.Center */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.zero
@@ -94,8 +89,7 @@ object srcStackMod {
   }
   object StackProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fieldChannel: x | y | theta | radius,
       impute: Boolean,
       offset: StackOffset,
@@ -105,35 +99,25 @@ object srcStackMod {
       __obj.asInstanceOf[StackProperties]
     }
     
-    @scala.inline
-    implicit class StackPropertiesMutableBuilder[Self <: StackProperties] (val x: Self) extends AnyVal {
+    extension [Self <: StackProperties](x: Self) {
       
-      @scala.inline
-      def setFieldChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "fieldChannel", value.asInstanceOf[js.Any])
+      inline def setFieldChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "fieldChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupbyChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "groupbyChannel", value.asInstanceOf[js.Any])
+      inline def setGroupbyChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "groupbyChannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupbyChannelUndefined: Self = StObject.set(x, "groupbyChannel", js.undefined)
+      inline def setGroupbyChannelUndefined: Self = StObject.set(x, "groupbyChannel", js.undefined)
       
-      @scala.inline
-      def setGroupbyField(value: FieldName): Self = StObject.set(x, "groupbyField", value.asInstanceOf[js.Any])
+      inline def setGroupbyField(value: FieldName): Self = StObject.set(x, "groupbyField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupbyFieldUndefined: Self = StObject.set(x, "groupbyField", js.undefined)
+      inline def setGroupbyFieldUndefined: Self = StObject.set(x, "groupbyField", js.undefined)
       
-      @scala.inline
-      def setImpute(value: Boolean): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
+      inline def setImpute(value: Boolean): Self = StObject.set(x, "impute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: StackOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: StackOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackBy(value: js.Array[ChannelFieldDef]): Self = StObject.set(x, "stackBy", value.asInstanceOf[js.Any])
+      inline def setStackBy(value: js.Array[ChannelFieldDef]): Self = StObject.set(x, "stackBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackByVarargs(value: ChannelFieldDef*): Self = StObject.set(x, "stackBy", js.Array(value :_*))
+      inline def setStackByVarargs(value: ChannelFieldDef*): Self = StObject.set(x, "stackBy", js.Array(value :_*))
     }
   }
 }

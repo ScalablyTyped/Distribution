@@ -21,19 +21,15 @@ trait CustomResourceSubresources extends StObject {
 }
 object CustomResourceSubresources {
   
-  @scala.inline
-  def apply(scale: CustomResourceSubresourceScale, status: js.Any): CustomResourceSubresources = {
+  inline def apply(scale: CustomResourceSubresourceScale, status: js.Any): CustomResourceSubresources = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceSubresources]
   }
   
-  @scala.inline
-  implicit class CustomResourceSubresourcesMutableBuilder[Self <: CustomResourceSubresources] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceSubresources](x: Self) {
     
-    @scala.inline
-    def setScale(value: CustomResourceSubresourceScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: CustomResourceSubresourceScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedBrowserType extends StObject
 object ManagedBrowserType {
   
-  @scala.inline
-  def microsoftEdge: typings.microsoftGraph.microsoftGraphStrings.microsoftEdge = "microsoftEdge".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoftEdge]
+  inline def microsoftEdge: typings.microsoftGraph.microsoftGraphStrings.microsoftEdge = "microsoftEdge".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.microsoftEdge]
   
-  @scala.inline
-  def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
+  inline def notConfigured: typings.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notConfigured]
 }

@@ -23,16 +23,12 @@ object EnumStringMember {
   @js.native
   val ^ : Type[EnumStringMember] = js.native
   
-  @scala.inline
-  implicit class EnumStringMemberMutableBuilder[Self <: EnumStringMember] (val x: Self) extends AnyVal {
+  extension [Self <: EnumStringMember](x: Self) {
     
-    @scala.inline
-    def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdentifierKind): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: LiteralKind): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: LiteralKind): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.EnumStringMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.EnumStringMember): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

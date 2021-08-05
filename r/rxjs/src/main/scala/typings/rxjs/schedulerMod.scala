@@ -36,7 +36,7 @@ object schedulerMod {
       now: js.Function0[Double]
     ) = this()
     
-    var SchedulerAction: js.Any = js.native
+    /* private */ var SchedulerAction: js.Any = js.native
   }
   /* static members */
   object Scheduler {
@@ -50,7 +50,6 @@ object schedulerMod {
       * Date.now easier.
       * @nocollapse
       */
-    @scala.inline
-    def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+    inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   }
 }

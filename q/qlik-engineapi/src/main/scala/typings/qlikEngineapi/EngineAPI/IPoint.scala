@@ -23,19 +23,15 @@ trait IPoint extends StObject {
 }
 object IPoint {
   
-  @scala.inline
-  def apply(qx: Double, qy: Double): IPoint = {
+  inline def apply(qx: Double, qy: Double): IPoint = {
     val __obj = js.Dynamic.literal(qx = qx.asInstanceOf[js.Any], qy = qy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPoint]
   }
   
-  @scala.inline
-  implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
+  extension [Self <: IPoint](x: Self) {
     
-    @scala.inline
-    def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
+    inline def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQy(value: Double): Self = StObject.set(x, "qy", value.asInstanceOf[js.Any])
+    inline def setQy(value: Double): Self = StObject.set(x, "qy", value.asInstanceOf[js.Any])
   }
 }

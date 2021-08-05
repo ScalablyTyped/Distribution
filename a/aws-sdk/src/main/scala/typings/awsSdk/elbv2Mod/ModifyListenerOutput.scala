@@ -13,22 +13,17 @@ trait ModifyListenerOutput extends StObject {
 }
 object ModifyListenerOutput {
   
-  @scala.inline
-  def apply(): ModifyListenerOutput = {
+  inline def apply(): ModifyListenerOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyListenerOutput]
   }
   
-  @scala.inline
-  implicit class ModifyListenerOutputMutableBuilder[Self <: ModifyListenerOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyListenerOutput](x: Self) {
     
-    @scala.inline
-    def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
+    inline def setListenersUndefined: Self = StObject.set(x, "Listeners", js.undefined)
     
-    @scala.inline
-    def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
   }
 }

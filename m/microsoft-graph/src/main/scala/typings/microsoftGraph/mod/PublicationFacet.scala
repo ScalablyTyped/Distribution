@@ -14,31 +14,23 @@ trait PublicationFacet extends StObject {
 }
 object PublicationFacet {
   
-  @scala.inline
-  def apply(): PublicationFacet = {
+  inline def apply(): PublicationFacet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicationFacet]
   }
   
-  @scala.inline
-  implicit class PublicationFacetMutableBuilder[Self <: PublicationFacet] (val x: Self) extends AnyVal {
+  extension [Self <: PublicationFacet](x: Self) {
     
-    @scala.inline
-    def setLevel(value: NullableOption[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: NullableOption[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelNull: Self = StObject.set(x, "level", null)
+    inline def setLevelNull: Self = StObject.set(x, "level", null)
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: NullableOption[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: NullableOption[String]): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdNull: Self = StObject.set(x, "versionId", null)
+    inline def setVersionIdNull: Self = StObject.set(x, "versionId", null)
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
   }
 }

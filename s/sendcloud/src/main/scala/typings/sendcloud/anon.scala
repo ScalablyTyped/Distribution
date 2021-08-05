@@ -22,8 +22,7 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       created_at: String,
       description: String,
@@ -35,26 +34,19 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
+      inline def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
+      inline def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,29 +64,22 @@ object anon {
   }
   object Createdat {
     
-    @scala.inline
-    def apply(address: String, created_at: String, description: String, members_count: Double, name: String): Createdat = {
+    inline def apply(address: String, created_at: String, description: String, members_count: Double, name: String): Createdat = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], members_count = members_count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Createdat]
     }
     
-    @scala.inline
-    implicit class CreatedatMutableBuilder[Self <: Createdat] (val x: Self) extends AnyVal {
+    extension [Self <: Createdat](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
+      inline def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,29 +97,22 @@ object anon {
   }
   object Description {
     
-    @scala.inline
-    def apply(address: String, description: String, members_count: Double, modify_at: String, name: String): Description = {
+    inline def apply(address: String, description: String, members_count: Double, modify_at: String, name: String): Description = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], members_count = members_count.asInstanceOf[js.Any], modify_at = modify_at.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
+      inline def setMembers_count(value: Double): Self = StObject.set(x, "members_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
+      inline def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,8 +132,7 @@ object anon {
   }
   object Modifyat {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       created_at: String,
       modify_at: String,
@@ -167,26 +144,19 @@ object anon {
       __obj.asInstanceOf[Modifyat]
     }
     
-    @scala.inline
-    implicit class ModifyatMutableBuilder[Self <: Modifyat] (val x: Self) extends AnyVal {
+    extension [Self <: Modifyat](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
+      inline def setModify_at(value: String): Self = StObject.set(x, "modify_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribed(value: String): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
+      inline def setSubscribed(value: String): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: js.Object): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     }
   }
 }

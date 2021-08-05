@@ -14,19 +14,15 @@ trait SchemaDistributionPolicyZoneConfiguration extends StObject {
 }
 object SchemaDistributionPolicyZoneConfiguration {
   
-  @scala.inline
-  def apply(): SchemaDistributionPolicyZoneConfiguration = {
+  inline def apply(): SchemaDistributionPolicyZoneConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDistributionPolicyZoneConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaDistributionPolicyZoneConfigurationMutableBuilder[Self <: SchemaDistributionPolicyZoneConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDistributionPolicyZoneConfiguration](x: Self) {
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

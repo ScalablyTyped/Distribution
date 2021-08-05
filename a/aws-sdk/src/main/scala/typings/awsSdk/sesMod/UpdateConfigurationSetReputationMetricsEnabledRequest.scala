@@ -18,19 +18,15 @@ trait UpdateConfigurationSetReputationMetricsEnabledRequest extends StObject {
 }
 object UpdateConfigurationSetReputationMetricsEnabledRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName, Enabled: Enabled): UpdateConfigurationSetReputationMetricsEnabledRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName, Enabled: Enabled): UpdateConfigurationSetReputationMetricsEnabledRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationSetReputationMetricsEnabledRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConfigurationSetReputationMetricsEnabledRequestMutableBuilder[Self <: UpdateConfigurationSetReputationMetricsEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConfigurationSetReputationMetricsEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }
 }

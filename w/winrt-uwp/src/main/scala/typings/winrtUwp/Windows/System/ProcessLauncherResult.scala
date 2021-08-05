@@ -10,16 +10,13 @@ trait ProcessLauncherResult extends StObject {
 }
 object ProcessLauncherResult {
   
-  @scala.inline
-  def apply(exitCode: js.Any): ProcessLauncherResult = {
+  inline def apply(exitCode: js.Any): ProcessLauncherResult = {
     val __obj = js.Dynamic.literal(exitCode = exitCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessLauncherResult]
   }
   
-  @scala.inline
-  implicit class ProcessLauncherResultMutableBuilder[Self <: ProcessLauncherResult] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessLauncherResult](x: Self) {
     
-    @scala.inline
-    def setExitCode(value: js.Any): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: js.Any): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
   }
 }

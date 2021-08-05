@@ -17,34 +17,25 @@ trait CreateShortDynamicLinkResponse extends StObject {
 }
 object CreateShortDynamicLinkResponse {
   
-  @scala.inline
-  def apply(): CreateShortDynamicLinkResponse = {
+  inline def apply(): CreateShortDynamicLinkResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateShortDynamicLinkResponse]
   }
   
-  @scala.inline
-  implicit class CreateShortDynamicLinkResponseMutableBuilder[Self <: CreateShortDynamicLinkResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateShortDynamicLinkResponse](x: Self) {
     
-    @scala.inline
-    def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
+    inline def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
+    inline def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
     
-    @scala.inline
-    def setShortLink(value: String): Self = StObject.set(x, "shortLink", value.asInstanceOf[js.Any])
+    inline def setShortLink(value: String): Self = StObject.set(x, "shortLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortLinkUndefined: Self = StObject.set(x, "shortLink", js.undefined)
+    inline def setShortLinkUndefined: Self = StObject.set(x, "shortLink", js.undefined)
     
-    @scala.inline
-    def setWarning(value: js.Array[DynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: js.Array[DynamicLinkWarning]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
-    @scala.inline
-    def setWarningVarargs(value: DynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
+    inline def setWarningVarargs(value: DynamicLinkWarning*): Self = StObject.set(x, "warning", js.Array(value :_*))
   }
 }

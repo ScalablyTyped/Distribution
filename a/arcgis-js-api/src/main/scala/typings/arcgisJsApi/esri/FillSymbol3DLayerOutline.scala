@@ -26,8 +26,7 @@ trait FillSymbol3DLayerOutline
 }
 object FillSymbol3DLayerOutline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -41,13 +40,10 @@ object FillSymbol3DLayerOutline {
     __obj.asInstanceOf[FillSymbol3DLayerOutline]
   }
   
-  @scala.inline
-  implicit class FillSymbol3DLayerOutlineMutableBuilder[Self <: FillSymbol3DLayerOutline] (val x: Self) extends AnyVal {
+  extension [Self <: FillSymbol3DLayerOutline](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

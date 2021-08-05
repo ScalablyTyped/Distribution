@@ -65,8 +65,7 @@ trait XAtomServer
 }
 object XAtomServer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getAtom: (Double, String, Boolean) => Double,
     getAtomDescriptions: SeqEquiv[AtomClassRequest] => SafeArray[String],
@@ -81,22 +80,16 @@ object XAtomServer {
     __obj.asInstanceOf[XAtomServer]
   }
   
-  @scala.inline
-  implicit class XAtomServerMutableBuilder[Self <: XAtomServer] (val x: Self) extends AnyVal {
+  extension [Self <: XAtomServer](x: Self) {
     
-    @scala.inline
-    def setGetAtom(value: (Double, String, Boolean) => Double): Self = StObject.set(x, "getAtom", js.Any.fromFunction3(value))
+    inline def setGetAtom(value: (Double, String, Boolean) => Double): Self = StObject.set(x, "getAtom", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetAtomDescriptions(value: SeqEquiv[AtomClassRequest] => SafeArray[String]): Self = StObject.set(x, "getAtomDescriptions", js.Any.fromFunction1(value))
+    inline def setGetAtomDescriptions(value: SeqEquiv[AtomClassRequest] => SafeArray[String]): Self = StObject.set(x, "getAtomDescriptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClass_(value: Double => SafeArray[AtomDescription]): Self = StObject.set(x, "getClass", js.Any.fromFunction1(value))
+    inline def setGetClass_(value: Double => SafeArray[AtomDescription]): Self = StObject.set(x, "getClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetClasses(value: SeqEquiv[Double] => SafeArray[SafeArray[AtomDescription]]): Self = StObject.set(x, "getClasses", js.Any.fromFunction1(value))
+    inline def setGetClasses(value: SeqEquiv[Double] => SafeArray[SafeArray[AtomDescription]]): Self = StObject.set(x, "getClasses", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRecentAtoms(value: (Double, Double) => SafeArray[AtomDescription]): Self = StObject.set(x, "getRecentAtoms", js.Any.fromFunction2(value))
+    inline def setGetRecentAtoms(value: (Double, Double) => SafeArray[AtomDescription]): Self = StObject.set(x, "getRecentAtoms", js.Any.fromFunction2(value))
   }
 }

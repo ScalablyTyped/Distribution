@@ -12,17 +12,14 @@ object anon {
   }
   object ControllerId {
     
-    @scala.inline
-    def apply(controllerId: Double): ControllerId = {
+    inline def apply(controllerId: Double): ControllerId = {
       val __obj = js.Dynamic.literal(controllerId = controllerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControllerId]
     }
     
-    @scala.inline
-    implicit class ControllerIdMutableBuilder[Self <: ControllerId] (val x: Self) extends AnyVal {
+    extension [Self <: ControllerId](x: Self) {
       
-      @scala.inline
-      def setControllerId(value: Double): Self = StObject.set(x, "controllerId", value.asInstanceOf[js.Any])
+      inline def setControllerId(value: Double): Self = StObject.set(x, "controllerId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,23 +33,18 @@ object anon {
   }
   object Host {
     
-    @scala.inline
-    def apply(host: String, nodeId: Double, port: Double): Host = {
+    inline def apply(host: String, nodeId: Double, port: Double): Host = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeId(value: Double): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+      inline def setNodeId(value: Double): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,8 +62,7 @@ object anon {
   }
   object Isr {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isr: js.Array[Double],
       leader: Double,
       partition: Double,
@@ -82,29 +73,21 @@ object anon {
       __obj.asInstanceOf[Isr]
     }
     
-    @scala.inline
-    implicit class IsrMutableBuilder[Self <: Isr] (val x: Self) extends AnyVal {
+    extension [Self <: Isr](x: Self) {
       
-      @scala.inline
-      def setIsr(value: js.Array[Double]): Self = StObject.set(x, "isr", value.asInstanceOf[js.Any])
+      inline def setIsr(value: js.Array[Double]): Self = StObject.set(x, "isr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsrVarargs(value: Double*): Self = StObject.set(x, "isr", js.Array(value :_*))
+      inline def setIsrVarargs(value: Double*): Self = StObject.set(x, "isr", js.Array(value :_*))
       
-      @scala.inline
-      def setLeader(value: Double): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
+      inline def setLeader(value: Double): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicas(value: js.Array[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: js.Array[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value :_*))
       
-      @scala.inline
-      def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+      inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,20 +99,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, value: String): Name = {
+    inline def apply(name: String, value: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,23 +120,18 @@ object anon {
   }
   object Partition {
     
-    @scala.inline
-    def apply(partition: Double, replicas: js.Array[Double]): Partition = {
+    inline def apply(partition: Double, replicas: js.Array[Double]): Partition = {
       val __obj = js.Dynamic.literal(partition = partition.asInstanceOf[js.Any], replicas = replicas.asInstanceOf[js.Any])
       __obj.asInstanceOf[Partition]
     }
     
-    @scala.inline
-    implicit class PartitionMutableBuilder[Self <: Partition] (val x: Self) extends AnyVal {
+    extension [Self <: Partition](x: Self) {
       
-      @scala.inline
-      def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicas(value: js.Array[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: js.Array[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: Double*): Self = StObject.set(x, "replicas", js.Array(value :_*))
     }
   }
 }

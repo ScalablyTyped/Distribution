@@ -12,25 +12,19 @@ trait Basic extends StObject {
 }
 object Basic {
   
-  @scala.inline
-  def apply(): Basic = {
+  inline def apply(): Basic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Basic]
   }
   
-  @scala.inline
-  implicit class BasicMutableBuilder[Self <: Basic] (val x: Self) extends AnyVal {
+  extension [Self <: Basic](x: Self) {
     
-    @scala.inline
-    def setBasic(value: Username): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    inline def setBasic(value: Username): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+    inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
     
-    @scala.inline
-    def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
+    inline def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
+    inline def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
   }
 }

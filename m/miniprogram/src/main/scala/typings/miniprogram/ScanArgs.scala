@@ -27,25 +27,19 @@ trait ScanArgs
 }
 object ScanArgs {
   
-  @scala.inline
-  def apply(): ScanArgs = {
+  inline def apply(): ScanArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScanArgs]
   }
   
-  @scala.inline
-  implicit class ScanArgsMutableBuilder[Self <: ScanArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ScanArgs](x: Self) {
     
-    @scala.inline
-    def setHideAlbum(value: Boolean): Self = StObject.set(x, "hideAlbum", value.asInstanceOf[js.Any])
+    inline def setHideAlbum(value: Boolean): Self = StObject.set(x, "hideAlbum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideAlbumUndefined: Self = StObject.set(x, "hideAlbum", js.undefined)
+    inline def setHideAlbumUndefined: Self = StObject.set(x, "hideAlbum", js.undefined)
     
-    @scala.inline
-    def setType(value: qr | bar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: qr | bar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

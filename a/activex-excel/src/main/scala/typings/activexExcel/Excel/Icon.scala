@@ -10,7 +10,7 @@ trait Icon extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Icon_typekey")
+  /* private */ @JSName("Excel.Icon_typekey")
   var ExcelDotIcon_typekey: Icon
   
   val Index: Double
@@ -21,8 +21,7 @@ trait Icon extends StObject {
 }
 object Icon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotIcon_typekey: Icon,
@@ -34,22 +33,16 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  @scala.inline
-  implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+  extension [Self <: Icon](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotIcon_typekey(value: Icon): Self = StObject.set(x, "Excel.Icon_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotIcon_typekey(value: Icon): Self = StObject.set(x, "Excel.Icon_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: IconSet): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: IconSet): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

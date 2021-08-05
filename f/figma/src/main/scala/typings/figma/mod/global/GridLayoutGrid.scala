@@ -19,31 +19,23 @@ trait GridLayoutGrid
 }
 object GridLayoutGrid {
   
-  @scala.inline
-  def apply(sectionSize: Double): GridLayoutGrid = {
+  inline def apply(sectionSize: Double): GridLayoutGrid = {
     val __obj = js.Dynamic.literal(pattern = "GRID", sectionSize = sectionSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLayoutGrid]
   }
   
-  @scala.inline
-  implicit class GridLayoutGridMutableBuilder[Self <: GridLayoutGrid] (val x: Self) extends AnyVal {
+  extension [Self <: GridLayoutGrid](x: Self) {
     
-    @scala.inline
-    def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setPattern(value: GRID): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: GRID): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionSize(value: Double): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
+    inline def setSectionSize(value: Double): Self = StObject.set(x, "sectionSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

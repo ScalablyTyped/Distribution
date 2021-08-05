@@ -13,19 +13,15 @@ trait GetComplianceSummaryByConfigRuleResponse extends StObject {
 }
 object GetComplianceSummaryByConfigRuleResponse {
   
-  @scala.inline
-  def apply(): GetComplianceSummaryByConfigRuleResponse = {
+  inline def apply(): GetComplianceSummaryByConfigRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComplianceSummaryByConfigRuleResponse]
   }
   
-  @scala.inline
-  implicit class GetComplianceSummaryByConfigRuleResponseMutableBuilder[Self <: GetComplianceSummaryByConfigRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetComplianceSummaryByConfigRuleResponse](x: Self) {
     
-    @scala.inline
-    def setComplianceSummary(value: ComplianceSummary): Self = StObject.set(x, "ComplianceSummary", value.asInstanceOf[js.Any])
+    inline def setComplianceSummary(value: ComplianceSummary): Self = StObject.set(x, "ComplianceSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceSummaryUndefined: Self = StObject.set(x, "ComplianceSummary", js.undefined)
+    inline def setComplianceSummaryUndefined: Self = StObject.set(x, "ComplianceSummary", js.undefined)
   }
 }

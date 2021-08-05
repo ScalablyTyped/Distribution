@@ -13,19 +13,15 @@ trait ClassificationExportConfiguration extends StObject {
 }
 object ClassificationExportConfiguration {
   
-  @scala.inline
-  def apply(): ClassificationExportConfiguration = {
+  inline def apply(): ClassificationExportConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassificationExportConfiguration]
   }
   
-  @scala.inline
-  implicit class ClassificationExportConfigurationMutableBuilder[Self <: ClassificationExportConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationExportConfiguration](x: Self) {
     
-    @scala.inline
-    def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
+    inline def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
+    inline def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
   }
 }

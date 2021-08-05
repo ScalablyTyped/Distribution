@@ -18,19 +18,15 @@ trait EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint extends StObj
 }
 object EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String, runner_group_id: Double): EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint = {
+  inline def apply(enterprise: String, runner_group_id: Double): EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any], runner_group_id = runner_group_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
+    inline def setRunner_group_id(value: Double): Self = StObject.set(x, "runner_group_id", value.asInstanceOf[js.Any])
   }
 }

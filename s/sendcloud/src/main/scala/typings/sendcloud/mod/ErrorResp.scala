@@ -13,22 +13,17 @@ trait ErrorResp extends StObject {
 }
 object ErrorResp {
   
-  @scala.inline
-  def apply(errors: js.Array[String]): ErrorResp = {
+  inline def apply(errors: js.Array[String]): ErrorResp = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = "error")
     __obj.asInstanceOf[ErrorResp]
   }
   
-  @scala.inline
-  implicit class ErrorRespMutableBuilder[Self <: ErrorResp] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorResp](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

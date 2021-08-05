@@ -14,31 +14,23 @@ trait IAssetFileDef extends StObject {
 }
 object IAssetFileDef {
   
-  @scala.inline
-  def apply(): IAssetFileDef = {
+  inline def apply(): IAssetFileDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAssetFileDef]
   }
   
-  @scala.inline
-  implicit class IAssetFileDefMutableBuilder[Self <: IAssetFileDef] (val x: Self) extends AnyVal {
+  extension [Self <: IAssetFileDef](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameNull: Self = StObject.set(x, "filename", null)
+    inline def setFilenameNull: Self = StObject.set(x, "filename", null)
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setTensorInfo(value: ITensorInfo): Self = StObject.set(x, "tensorInfo", value.asInstanceOf[js.Any])
+    inline def setTensorInfo(value: ITensorInfo): Self = StObject.set(x, "tensorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensorInfoNull: Self = StObject.set(x, "tensorInfo", null)
+    inline def setTensorInfoNull: Self = StObject.set(x, "tensorInfo", null)
     
-    @scala.inline
-    def setTensorInfoUndefined: Self = StObject.set(x, "tensorInfo", js.undefined)
+    inline def setTensorInfoUndefined: Self = StObject.set(x, "tensorInfo", js.undefined)
   }
 }

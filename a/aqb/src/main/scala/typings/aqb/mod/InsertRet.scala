@@ -20,8 +20,7 @@ trait InsertRet extends StObject {
 }
 object InsertRet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     in: /* collection */ js.Any => InsertExpression,
     in_ : /* collection */ js.Any => InsertExpression,
     into: js.Any => InsertExpression
@@ -30,16 +29,12 @@ object InsertRet {
     __obj.asInstanceOf[InsertRet]
   }
   
-  @scala.inline
-  implicit class InsertRetMutableBuilder[Self <: InsertRet] (val x: Self) extends AnyVal {
+  extension [Self <: InsertRet](x: Self) {
     
-    @scala.inline
-    def setIn(value: /* collection */ js.Any => InsertExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: /* collection */ js.Any => InsertExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn_(value: /* collection */ js.Any => InsertExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
+    inline def setIn_(value: /* collection */ js.Any => InsertExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInto(value: js.Any => InsertExpression): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
+    inline def setInto(value: js.Any => InsertExpression): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
   }
 }

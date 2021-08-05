@@ -33,34 +33,25 @@ trait Listener extends StObject {
 }
 object Listener {
   
-  @scala.inline
-  def apply(InstancePort: InstancePort, LoadBalancerPort: AccessPointPort, Protocol: Protocol): Listener = {
+  inline def apply(InstancePort: InstancePort, LoadBalancerPort: AccessPointPort, Protocol: Protocol): Listener = {
     val __obj = js.Dynamic.literal(InstancePort = InstancePort.asInstanceOf[js.Any], LoadBalancerPort = LoadBalancerPort.asInstanceOf[js.Any], Protocol = Protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[Listener]
   }
   
-  @scala.inline
-  implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+  extension [Self <: Listener](x: Self) {
     
-    @scala.inline
-    def setInstancePort(value: InstancePort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
+    inline def setInstancePort(value: InstancePort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProtocol(value: Protocol): Self = StObject.set(x, "InstanceProtocol", value.asInstanceOf[js.Any])
+    inline def setInstanceProtocol(value: Protocol): Self = StObject.set(x, "InstanceProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceProtocolUndefined: Self = StObject.set(x, "InstanceProtocol", js.undefined)
+    inline def setInstanceProtocolUndefined: Self = StObject.set(x, "InstanceProtocol", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerPort(value: AccessPointPort): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerPort(value: AccessPointPort): Self = StObject.set(x, "LoadBalancerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSLCertificateId(value: SSLCertificateId): Self = StObject.set(x, "SSLCertificateId", value.asInstanceOf[js.Any])
+    inline def setSSLCertificateId(value: SSLCertificateId): Self = StObject.set(x, "SSLCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSLCertificateIdUndefined: Self = StObject.set(x, "SSLCertificateId", js.undefined)
+    inline def setSSLCertificateIdUndefined: Self = StObject.set(x, "SSLCertificateId", js.undefined)
   }
 }

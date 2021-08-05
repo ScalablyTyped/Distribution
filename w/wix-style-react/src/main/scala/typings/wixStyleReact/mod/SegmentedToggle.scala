@@ -21,12 +21,10 @@ object SegmentedToggle {
   @JSImport("wix-style-react", "SegmentedToggle.Button")
   @js.native
   def Button: SFC[SegmentedToggleButtonProps] = js.native
-  @scala.inline
-  def Button_=(x: SFC[SegmentedToggleButtonProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
+  inline def Button_=(x: SFC[SegmentedToggleButtonProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "SegmentedToggle.Icon")
   @js.native
   def Icon: Instantiable0[typings.wixStyleReact.segmentedToggleMod.SegmentedToggleIcon] = js.native
-  @scala.inline
-  def Icon_=(x: Instantiable0[typings.wixStyleReact.segmentedToggleMod.SegmentedToggleIcon]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Icon")(x.asInstanceOf[js.Any])
+  inline def Icon_=(x: Instantiable0[typings.wixStyleReact.segmentedToggleMod.SegmentedToggleIcon]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Icon")(x.asInstanceOf[js.Any])
 }

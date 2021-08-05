@@ -79,8 +79,7 @@ trait ISessionInfo extends StObject {
 }
 object ISessionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ACLMode: MFACLMode,
     AccountName: String,
     AuthenticationType: MFAuthType,
@@ -118,103 +117,70 @@ object ISessionInfo {
     __obj.asInstanceOf[ISessionInfo]
   }
   
-  @scala.inline
-  implicit class ISessionInfoMutableBuilder[Self <: ISessionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ISessionInfo](x: Self) {
     
-    @scala.inline
-    def setACLMode(value: MFACLMode): Self = StObject.set(x, "ACLMode", value.asInstanceOf[js.Any])
+    inline def setACLMode(value: MFACLMode): Self = StObject.set(x, "ACLMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationType(value: MFAuthType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: MFAuthType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCreateObjects(value: Boolean): Self = StObject.set(x, "CanCreateObjects", value.asInstanceOf[js.Any])
+    inline def setCanCreateObjects(value: Boolean): Self = StObject.set(x, "CanCreateObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanForceUndoCheckout(value: Boolean): Self = StObject.set(x, "CanForceUndoCheckout", value.asInstanceOf[js.Any])
+    inline def setCanForceUndoCheckout(value: Boolean): Self = StObject.set(x, "CanForceUndoCheckout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanManageCommonUISettings(value: Boolean): Self = StObject.set(x, "CanManageCommonUISettings", value.asInstanceOf[js.Any])
+    inline def setCanManageCommonUISettings(value: Boolean): Self = StObject.set(x, "CanManageCommonUISettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanManageCommonViews(value: Boolean): Self = StObject.set(x, "CanManageCommonViews", value.asInstanceOf[js.Any])
+    inline def setCanManageCommonViews(value: Boolean): Self = StObject.set(x, "CanManageCommonViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanManageTraditionalFolders(value: Boolean): Self = StObject.set(x, "CanManageTraditionalFolders", value.asInstanceOf[js.Any])
+    inline def setCanManageTraditionalFolders(value: Boolean): Self = StObject.set(x, "CanManageTraditionalFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanMaterializeViews(value: Boolean): Self = StObject.set(x, "CanMaterializeViews", value.asInstanceOf[js.Any])
+    inline def setCanMaterializeViews(value: Boolean): Self = StObject.set(x, "CanMaterializeViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSeeAllObjects(value: Boolean): Self = StObject.set(x, "CanSeeAllObjects", value.asInstanceOf[js.Any])
+    inline def setCanSeeAllObjects(value: Boolean): Self = StObject.set(x, "CanSeeAllObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSeeDeletedObjects(value: Boolean): Self = StObject.set(x, "CanSeeDeletedObjects", value.asInstanceOf[js.Any])
+    inline def setCanSeeDeletedObjects(value: Boolean): Self = StObject.set(x, "CanSeeDeletedObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckObjectAccess(value: (IAccessControlList, MFObjectAccess) => Boolean): Self = StObject.set(x, "CheckObjectAccess", js.Any.fromFunction2(value))
+    inline def setCheckObjectAccess(value: (IAccessControlList, MFObjectAccess) => Boolean): Self = StObject.set(x, "CheckObjectAccess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckObjectTypeAccess(value: (IAccessControlList, MFObjectTypeAccess) => Boolean): Self = StObject.set(x, "CheckObjectTypeAccess", js.Any.fromFunction2(value))
+    inline def setCheckObjectTypeAccess(value: (IAccessControlList, MFObjectTypeAccess) => Boolean): Self = StObject.set(x, "CheckObjectTypeAccess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckPropertyDefAccess(value: (IAccessControlList, MFPropertyDefAccess) => Boolean): Self = StObject.set(x, "CheckPropertyDefAccess", js.Any.fromFunction2(value))
+    inline def setCheckPropertyDefAccess(value: (IAccessControlList, MFPropertyDefAccess) => Boolean): Self = StObject.set(x, "CheckPropertyDefAccess", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheckVaultAccess(value: MFVaultAccess => Boolean): Self = StObject.set(x, "CheckVaultAccess", js.Any.fromFunction1(value))
+    inline def setCheckVaultAccess(value: MFVaultAccess => Boolean): Self = StObject.set(x, "CheckVaultAccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClientCulture(value: String): Self = StObject.set(x, "ClientCulture", value.asInstanceOf[js.Any])
+    inline def setClientCulture(value: String): Self = StObject.set(x, "ClientCulture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloneFrom(value: ISessionInfo => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: ISessionInfo => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInternalUser(value: Boolean): Self = StObject.set(x, "InternalUser", value.asInstanceOf[js.Any])
+    inline def setInternalUser(value: Boolean): Self = StObject.set(x, "InternalUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLoggedOnUserSubstituteOfUser(value: Double => Boolean): Self = StObject.set(x, "IsLoggedOnUserSubstituteOfUser", js.Any.fromFunction1(value))
+    inline def setIsLoggedOnUserSubstituteOfUser(value: Double => Boolean): Self = StObject.set(x, "IsLoggedOnUserSubstituteOfUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsSharingPublicLinksAllowed(value: Boolean): Self = StObject.set(x, "IsSharingPublicLinksAllowed", value.asInstanceOf[js.Any])
+    inline def setIsSharingPublicLinksAllowed(value: Boolean): Self = StObject.set(x, "IsSharingPublicLinksAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSharingPublicLinksToLatestVersionAllowed(value: Boolean): Self = StObject.set(x, "IsSharingPublicLinksToLatestVersionAllowed", value.asInstanceOf[js.Any])
+    inline def setIsSharingPublicLinksToLatestVersionAllowed(value: Boolean): Self = StObject.set(x, "IsSharingPublicLinksToLatestVersionAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepAliveIntervalInSeconds(value: Double): Self = StObject.set(x, "KeepAliveIntervalInSeconds", value.asInstanceOf[js.Any])
+    inline def setKeepAliveIntervalInSeconds(value: Double): Self = StObject.set(x, "KeepAliveIntervalInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: Double): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Double): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseAllowsModifications(value: Boolean): Self = StObject.set(x, "LicenseAllowsModifications", value.asInstanceOf[js.Any])
+    inline def setLicenseAllowsModifications(value: Boolean): Self = StObject.set(x, "LicenseAllowsModifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalComputerName(value: String): Self = StObject.set(x, "LocalComputerName", value.asInstanceOf[js.Any])
+    inline def setLocalComputerName(value: String): Self = StObject.set(x, "LocalComputerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductMode(value: MFProductMode): Self = StObject.set(x, "ProductMode", value.asInstanceOf[js.Any])
+    inline def setProductMode(value: MFProductMode): Self = StObject.set(x, "ProductMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerVersion(value: Double): Self = StObject.set(x, "ServerVersion", value.asInstanceOf[js.Any])
+    inline def setServerVersion(value: Double): Self = StObject.set(x, "ServerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneInfo(value: ITimeZoneInformation): Self = StObject.set(x, "TimeZoneInfo", value.asInstanceOf[js.Any])
+    inline def setTimeZoneInfo(value: ITimeZoneInformation): Self = StObject.set(x, "TimeZoneInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAndGroupMemberships(value: IUserOrUserGroupIDs): Self = StObject.set(x, "UserAndGroupMemberships", value.asInstanceOf[js.Any])
+    inline def setUserAndGroupMemberships(value: IUserOrUserGroupIDs): Self = StObject.set(x, "UserAndGroupMemberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAndSubstitutedByMe(value: IUserOrUserGroupIDs): Self = StObject.set(x, "UserAndSubstitutedByMe", value.asInstanceOf[js.Any])
+    inline def setUserAndSubstitutedByMe(value: IUserOrUserGroupIDs): Self = StObject.set(x, "UserAndSubstitutedByMe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserID(value: Double): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
+    inline def setUserID(value: Double): Self = StObject.set(x, "UserID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
+    inline def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
   }
 }

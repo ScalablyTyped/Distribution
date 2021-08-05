@@ -63,7 +63,7 @@ object openfinLayoutMod {
     
     var dragProxy: js.Any = js.native
     
-    var fin: js.Any = js.native
+    /* private */ var fin: js.Any = js.native
     
     def getOfViewFromComponentState(componentState: NameAny): View = js.native
     

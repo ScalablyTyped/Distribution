@@ -18,19 +18,15 @@ trait Versions extends StObject {
 }
 object Versions {
   
-  @scala.inline
-  def apply(protocol: String, software: String): Versions = {
+  inline def apply(protocol: String, software: String): Versions = {
     val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], software = software.asInstanceOf[js.Any])
     __obj.asInstanceOf[Versions]
   }
   
-  @scala.inline
-  implicit class VersionsMutableBuilder[Self <: Versions] (val x: Self) extends AnyVal {
+  extension [Self <: Versions](x: Self) {
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftware(value: String): Self = StObject.set(x, "software", value.asInstanceOf[js.Any])
+    inline def setSoftware(value: String): Self = StObject.set(x, "software", value.asInstanceOf[js.Any])
   }
 }

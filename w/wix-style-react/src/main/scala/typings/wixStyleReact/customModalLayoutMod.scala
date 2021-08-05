@@ -66,128 +66,88 @@ object customModalLayoutMod extends Shortcut {
   }
   object CustomModalLayoutProps {
     
-    @scala.inline
-    def apply(): CustomModalLayoutProps = {
+    inline def apply(): CustomModalLayoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomModalLayoutProps]
     }
     
-    @scala.inline
-    implicit class CustomModalLayoutPropsMutableBuilder[Self <: CustomModalLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: CustomModalLayoutProps](x: Self) {
       
-      @scala.inline
-      def setActionsSize(value: ButtonSize): Self = StObject.set(x, "actionsSize", value.asInstanceOf[js.Any])
+      inline def setActionsSize(value: ButtonSize): Self = StObject.set(x, "actionsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsSizeUndefined: Self = StObject.set(x, "actionsSize", js.undefined)
+      inline def setActionsSizeUndefined: Self = StObject.set(x, "actionsSize", js.undefined)
       
-      @scala.inline
-      def setContent(value: String | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setFootnote(value: ReactNode): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
+      inline def setFootnote(value: ReactNode): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFootnoteUndefined: Self = StObject.set(x, "footnote", js.undefined)
+      inline def setFootnoteUndefined: Self = StObject.set(x, "footnote", js.undefined)
       
-      @scala.inline
-      def setHeight(value: HeightProperty[String | Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: HeightProperty[String | Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHideContentDividers(value: Boolean): Self = StObject.set(x, "hideContentDividers", value.asInstanceOf[js.Any])
+      inline def setHideContentDividers(value: Boolean): Self = StObject.set(x, "hideContentDividers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideContentDividersUndefined: Self = StObject.set(x, "hideContentDividers", js.undefined)
+      inline def setHideContentDividersUndefined: Self = StObject.set(x, "hideContentDividers", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: MaxHeightProperty[String | Double]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: MaxHeightProperty[String | Double]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setPrimaryButtonOnClick(value: () => Unit): Self = StObject.set(x, "primaryButtonOnClick", js.Any.fromFunction0(value))
+      inline def setPrimaryButtonOnClick(value: () => Unit): Self = StObject.set(x, "primaryButtonOnClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrimaryButtonOnClickUndefined: Self = StObject.set(x, "primaryButtonOnClick", js.undefined)
+      inline def setPrimaryButtonOnClickUndefined: Self = StObject.set(x, "primaryButtonOnClick", js.undefined)
       
-      @scala.inline
-      def setPrimaryButtonProps(value: OmitPolyfill[ButtonProps, dataHook]): Self = StObject.set(x, "primaryButtonProps", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonProps(value: OmitPolyfill[ButtonProps, dataHook]): Self = StObject.set(x, "primaryButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonPropsUndefined: Self = StObject.set(x, "primaryButtonProps", js.undefined)
+      inline def setPrimaryButtonPropsUndefined: Self = StObject.set(x, "primaryButtonProps", js.undefined)
       
-      @scala.inline
-      def setPrimaryButtonText(value: String): Self = StObject.set(x, "primaryButtonText", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonText(value: String): Self = StObject.set(x, "primaryButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonTextUndefined: Self = StObject.set(x, "primaryButtonText", js.undefined)
+      inline def setPrimaryButtonTextUndefined: Self = StObject.set(x, "primaryButtonText", js.undefined)
       
-      @scala.inline
-      def setRemoveContentPadding(value: Boolean): Self = StObject.set(x, "removeContentPadding", value.asInstanceOf[js.Any])
+      inline def setRemoveContentPadding(value: Boolean): Self = StObject.set(x, "removeContentPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveContentPaddingUndefined: Self = StObject.set(x, "removeContentPadding", js.undefined)
+      inline def setRemoveContentPaddingUndefined: Self = StObject.set(x, "removeContentPadding", js.undefined)
       
-      @scala.inline
-      def setSecondaryButtonOnClick(value: () => Unit): Self = StObject.set(x, "secondaryButtonOnClick", js.Any.fromFunction0(value))
+      inline def setSecondaryButtonOnClick(value: () => Unit): Self = StObject.set(x, "secondaryButtonOnClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSecondaryButtonOnClickUndefined: Self = StObject.set(x, "secondaryButtonOnClick", js.undefined)
+      inline def setSecondaryButtonOnClickUndefined: Self = StObject.set(x, "secondaryButtonOnClick", js.undefined)
       
-      @scala.inline
-      def setSecondaryButtonProps(value: OmitPolyfill[ButtonProps, dataHook]): Self = StObject.set(x, "secondaryButtonProps", value.asInstanceOf[js.Any])
+      inline def setSecondaryButtonProps(value: OmitPolyfill[ButtonProps, dataHook]): Self = StObject.set(x, "secondaryButtonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryButtonPropsUndefined: Self = StObject.set(x, "secondaryButtonProps", js.undefined)
+      inline def setSecondaryButtonPropsUndefined: Self = StObject.set(x, "secondaryButtonProps", js.undefined)
       
-      @scala.inline
-      def setSecondaryButtonText(value: String): Self = StObject.set(x, "secondaryButtonText", value.asInstanceOf[js.Any])
+      inline def setSecondaryButtonText(value: String): Self = StObject.set(x, "secondaryButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryButtonTextUndefined: Self = StObject.set(x, "secondaryButtonText", js.undefined)
+      inline def setSecondaryButtonTextUndefined: Self = StObject.set(x, "secondaryButtonText", js.undefined)
       
-      @scala.inline
-      def setShowFooterDivider(value: auto | Boolean): Self = StObject.set(x, "showFooterDivider", value.asInstanceOf[js.Any])
+      inline def setShowFooterDivider(value: auto | Boolean): Self = StObject.set(x, "showFooterDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFooterDividerUndefined: Self = StObject.set(x, "showFooterDivider", js.undefined)
+      inline def setShowFooterDividerUndefined: Self = StObject.set(x, "showFooterDivider", js.undefined)
       
-      @scala.inline
-      def setShowHeaderDivider(value: auto | Boolean): Self = StObject.set(x, "showHeaderDivider", value.asInstanceOf[js.Any])
+      inline def setShowHeaderDivider(value: auto | Boolean): Self = StObject.set(x, "showHeaderDivider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowHeaderDividerUndefined: Self = StObject.set(x, "showHeaderDivider", js.undefined)
+      inline def setShowHeaderDividerUndefined: Self = StObject.set(x, "showHeaderDivider", js.undefined)
       
-      @scala.inline
-      def setSideActions(value: ReactNode): Self = StObject.set(x, "sideActions", value.asInstanceOf[js.Any])
+      inline def setSideActions(value: ReactNode): Self = StObject.set(x, "sideActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideActionsUndefined: Self = StObject.set(x, "sideActions", js.undefined)
+      inline def setSideActionsUndefined: Self = StObject.set(x, "sideActions", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setWidth(value: WidthProperty[String | Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: WidthProperty[String | Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

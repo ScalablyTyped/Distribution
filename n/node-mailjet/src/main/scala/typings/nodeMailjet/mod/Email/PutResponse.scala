@@ -10,16 +10,13 @@ trait PutResponse extends StObject {
 }
 object PutResponse {
   
-  @scala.inline
-  def apply(body: PutResponseData): PutResponse = {
+  inline def apply(body: PutResponseData): PutResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResponse]
   }
   
-  @scala.inline
-  implicit class PutResponseMutableBuilder[Self <: PutResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: PutResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: PutResponseData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

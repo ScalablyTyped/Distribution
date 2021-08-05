@@ -13,16 +13,13 @@ trait RequestDatabaseResponse extends StObject {
 }
 object RequestDatabaseResponse {
   
-  @scala.inline
-  def apply(databaseWithObjectStores: DatabaseWithObjectStores): RequestDatabaseResponse = {
+  inline def apply(databaseWithObjectStores: DatabaseWithObjectStores): RequestDatabaseResponse = {
     val __obj = js.Dynamic.literal(databaseWithObjectStores = databaseWithObjectStores.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestDatabaseResponse]
   }
   
-  @scala.inline
-  implicit class RequestDatabaseResponseMutableBuilder[Self <: RequestDatabaseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RequestDatabaseResponse](x: Self) {
     
-    @scala.inline
-    def setDatabaseWithObjectStores(value: DatabaseWithObjectStores): Self = StObject.set(x, "databaseWithObjectStores", value.asInstanceOf[js.Any])
+    inline def setDatabaseWithObjectStores(value: DatabaseWithObjectStores): Self = StObject.set(x, "databaseWithObjectStores", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait PurchaseReservedInstancesOfferingResult extends StObject {
 }
 object PurchaseReservedInstancesOfferingResult {
   
-  @scala.inline
-  def apply(): PurchaseReservedInstancesOfferingResult = {
+  inline def apply(): PurchaseReservedInstancesOfferingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurchaseReservedInstancesOfferingResult]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedInstancesOfferingResultMutableBuilder[Self <: PurchaseReservedInstancesOfferingResult] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedInstancesOfferingResult](x: Self) {
     
-    @scala.inline
-    def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
+    inline def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
   }
 }

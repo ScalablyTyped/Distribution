@@ -19,19 +19,15 @@ trait CounterInfo extends StObject {
 }
 object CounterInfo {
   
-  @scala.inline
-  def apply(name: String, value: integer): CounterInfo = {
+  inline def apply(name: String, value: integer): CounterInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CounterInfo]
   }
   
-  @scala.inline
-  implicit class CounterInfoMutableBuilder[Self <: CounterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CounterInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: integer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: integer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

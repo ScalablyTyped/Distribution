@@ -12,22 +12,17 @@ trait EditSubsetResult extends StObject {
 }
 object EditSubsetResult {
   
-  @scala.inline
-  def apply(rowCount: Double, subset: js.Array[EditRow]): EditSubsetResult = {
+  inline def apply(rowCount: Double, subset: js.Array[EditRow]): EditSubsetResult = {
     val __obj = js.Dynamic.literal(rowCount = rowCount.asInstanceOf[js.Any], subset = subset.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditSubsetResult]
   }
   
-  @scala.inline
-  implicit class EditSubsetResultMutableBuilder[Self <: EditSubsetResult] (val x: Self) extends AnyVal {
+  extension [Self <: EditSubsetResult](x: Self) {
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubset(value: js.Array[EditRow]): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
+    inline def setSubset(value: js.Array[EditRow]): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubsetVarargs(value: EditRow*): Self = StObject.set(x, "subset", js.Array(value :_*))
+    inline def setSubsetVarargs(value: EditRow*): Self = StObject.set(x, "subset", js.Array(value :_*))
   }
 }

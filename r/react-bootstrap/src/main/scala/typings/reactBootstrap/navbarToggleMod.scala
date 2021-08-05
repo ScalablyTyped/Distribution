@@ -29,20 +29,16 @@ object navbarToggleMod {
   }
   object NavbarToggleProps {
     
-    @scala.inline
-    def apply(): NavbarToggleProps = {
+    inline def apply(): NavbarToggleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavbarToggleProps]
     }
     
-    @scala.inline
-    implicit class NavbarTogglePropsMutableBuilder[Self <: NavbarToggleProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavbarToggleProps](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
 }

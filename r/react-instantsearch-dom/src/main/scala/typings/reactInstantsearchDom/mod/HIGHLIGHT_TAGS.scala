@@ -13,12 +13,10 @@ object HIGHLIGHT_TAGS {
   @JSImport("react-instantsearch-dom", "HIGHLIGHT_TAGS.highlightPostTag")
   @js.native
   def highlightPostTag: String = js.native
-  @scala.inline
-  def highlightPostTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlightPostTag")(x.asInstanceOf[js.Any])
+  inline def highlightPostTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlightPostTag")(x.asInstanceOf[js.Any])
   
   @JSImport("react-instantsearch-dom", "HIGHLIGHT_TAGS.highlightPreTag")
   @js.native
   def highlightPreTag: String = js.native
-  @scala.inline
-  def highlightPreTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlightPreTag")(x.asInstanceOf[js.Any])
+  inline def highlightPreTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlightPreTag")(x.asInstanceOf[js.Any])
 }

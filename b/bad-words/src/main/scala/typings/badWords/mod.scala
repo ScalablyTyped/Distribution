@@ -44,8 +44,7 @@ object mod {
   }
   object BadWordsFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addWords: /* repeated */ String => Unit,
       clean: String => String,
       isProfane: String => Boolean,
@@ -56,23 +55,17 @@ object mod {
       __obj.asInstanceOf[BadWordsFilter]
     }
     
-    @scala.inline
-    implicit class BadWordsFilterMutableBuilder[Self <: BadWordsFilter] (val x: Self) extends AnyVal {
+    extension [Self <: BadWordsFilter](x: Self) {
       
-      @scala.inline
-      def setAddWords(value: /* repeated */ String => Unit): Self = StObject.set(x, "addWords", js.Any.fromFunction1(value))
+      inline def setAddWords(value: /* repeated */ String => Unit): Self = StObject.set(x, "addWords", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClean(value: String => String): Self = StObject.set(x, "clean", js.Any.fromFunction1(value))
+      inline def setClean(value: String => String): Self = StObject.set(x, "clean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsProfane(value: String => Boolean): Self = StObject.set(x, "isProfane", js.Any.fromFunction1(value))
+      inline def setIsProfane(value: String => Boolean): Self = StObject.set(x, "isProfane", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveWords(value: /* repeated */ String => Unit): Self = StObject.set(x, "removeWords", js.Any.fromFunction1(value))
+      inline def setRemoveWords(value: /* repeated */ String => Unit): Self = StObject.set(x, "removeWords", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReplaceWord(value: String => String): Self = StObject.set(x, "replaceWord", js.Any.fromFunction1(value))
+      inline def setReplaceWord(value: String => String): Self = StObject.set(x, "replaceWord", js.Any.fromFunction1(value))
     }
   }
   
@@ -94,62 +87,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEmptyList(value: Boolean): Self = StObject.set(x, "emptyList", value.asInstanceOf[js.Any])
+      inline def setEmptyList(value: Boolean): Self = StObject.set(x, "emptyList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyListUndefined: Self = StObject.set(x, "emptyList", js.undefined)
+      inline def setEmptyListUndefined: Self = StObject.set(x, "emptyList", js.undefined)
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: String*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+      inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+      inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
-      @scala.inline
-      def setReplaceRegex(value: RegExp): Self = StObject.set(x, "replaceRegex", value.asInstanceOf[js.Any])
+      inline def setReplaceRegex(value: RegExp): Self = StObject.set(x, "replaceRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceRegexUndefined: Self = StObject.set(x, "replaceRegex", js.undefined)
+      inline def setReplaceRegexUndefined: Self = StObject.set(x, "replaceRegex", js.undefined)
       
-      @scala.inline
-      def setSplitRegex(value: RegExp): Self = StObject.set(x, "splitRegex", value.asInstanceOf[js.Any])
+      inline def setSplitRegex(value: RegExp): Self = StObject.set(x, "splitRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitRegexUndefined: Self = StObject.set(x, "splitRegex", js.undefined)
+      inline def setSplitRegexUndefined: Self = StObject.set(x, "splitRegex", js.undefined)
     }
   }
 }

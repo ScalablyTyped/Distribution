@@ -11,19 +11,15 @@ trait RefreshSheetsChartRequest extends StObject {
 }
 object RefreshSheetsChartRequest {
   
-  @scala.inline
-  def apply(): RefreshSheetsChartRequest = {
+  inline def apply(): RefreshSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshSheetsChartRequest]
   }
   
-  @scala.inline
-  implicit class RefreshSheetsChartRequestMutableBuilder[Self <: RefreshSheetsChartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshSheetsChartRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

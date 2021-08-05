@@ -23,22 +23,17 @@ trait WebAclVisibilityConfig extends StObject {
 }
 object WebAclVisibilityConfig {
   
-  @scala.inline
-  def apply(cloudwatchMetricsEnabled: Boolean, metricName: String, sampledRequestsEnabled: Boolean): WebAclVisibilityConfig = {
+  inline def apply(cloudwatchMetricsEnabled: Boolean, metricName: String, sampledRequestsEnabled: Boolean): WebAclVisibilityConfig = {
     val __obj = js.Dynamic.literal(cloudwatchMetricsEnabled = cloudwatchMetricsEnabled.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any], sampledRequestsEnabled = sampledRequestsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclVisibilityConfig]
   }
   
-  @scala.inline
-  implicit class WebAclVisibilityConfigMutableBuilder[Self <: WebAclVisibilityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclVisibilityConfig](x: Self) {
     
-    @scala.inline
-    def setCloudwatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
+    inline def setCloudwatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampledRequestsEnabled(value: Boolean): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
+    inline def setSampledRequestsEnabled(value: Boolean): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
   }
 }

@@ -23,25 +23,19 @@ trait ISyncTreeArgs extends StObject {
 }
 object ISyncTreeArgs {
   
-  @scala.inline
-  def apply(activate: Boolean, forceReload: Boolean, path: String, tree: String): ISyncTreeArgs = {
+  inline def apply(activate: Boolean, forceReload: Boolean, path: String, tree: String): ISyncTreeArgs = {
     val __obj = js.Dynamic.literal(activate = activate.asInstanceOf[js.Any], forceReload = forceReload.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISyncTreeArgs]
   }
   
-  @scala.inline
-  implicit class ISyncTreeArgsMutableBuilder[Self <: ISyncTreeArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ISyncTreeArgs](x: Self) {
     
-    @scala.inline
-    def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
+    inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceReload(value: Boolean): Self = StObject.set(x, "forceReload", value.asInstanceOf[js.Any])
+    inline def setForceReload(value: Boolean): Self = StObject.set(x, "forceReload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
   }
 }

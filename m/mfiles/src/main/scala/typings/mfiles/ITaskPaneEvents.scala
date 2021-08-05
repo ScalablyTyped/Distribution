@@ -19,37 +19,27 @@ trait ITaskPaneEvents
 }
 object ITaskPaneEvents {
   
-  @scala.inline
-  def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): ITaskPaneEvents = {
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): ITaskPaneEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
     __obj.asInstanceOf[ITaskPaneEvents]
   }
   
-  @scala.inline
-  implicit class ITaskPaneEventsMutableBuilder[Self <: ITaskPaneEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ITaskPaneEvents](x: Self) {
     
-    @scala.inline
-    def setOnHidePane(value: () => Unit): Self = StObject.set(x, "OnHidePane", js.Any.fromFunction0(value))
+    inline def setOnHidePane(value: () => Unit): Self = StObject.set(x, "OnHidePane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHidePaneUndefined: Self = StObject.set(x, "OnHidePane", js.undefined)
+    inline def setOnHidePaneUndefined: Self = StObject.set(x, "OnHidePane", js.undefined)
     
-    @scala.inline
-    def setOnShowPane(value: () => Unit): Self = StObject.set(x, "OnShowPane", js.Any.fromFunction0(value))
+    inline def setOnShowPane(value: () => Unit): Self = StObject.set(x, "OnShowPane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowPaneUndefined: Self = StObject.set(x, "OnShowPane", js.undefined)
+    inline def setOnShowPaneUndefined: Self = StObject.set(x, "OnShowPane", js.undefined)
     
-    @scala.inline
-    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
+    inline def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
+    inline def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
-    @scala.inline
-    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
+    inline def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
+    inline def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait Small extends StObject {
 }
 object Small {
   
-  @scala.inline
-  def apply(): Small = {
+  inline def apply(): Small = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Small]
   }
   
-  @scala.inline
-  implicit class SmallMutableBuilder[Self <: Small] (val x: Self) extends AnyVal {
+  extension [Self <: Small](x: Self) {
     
-    @scala.inline
-    def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
-    @scala.inline
-    def setTheme(value: BaseFontSizeSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: BaseFontSizeSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

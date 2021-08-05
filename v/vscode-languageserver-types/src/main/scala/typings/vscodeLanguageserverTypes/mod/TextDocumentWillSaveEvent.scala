@@ -21,19 +21,15 @@ trait TextDocumentWillSaveEvent extends StObject {
 }
 object TextDocumentWillSaveEvent {
   
-  @scala.inline
-  def apply(document: TextDocument, reason: `1` | `2` | `3`): TextDocumentWillSaveEvent = {
+  inline def apply(document: TextDocument, reason: `1` | `2` | `3`): TextDocumentWillSaveEvent = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDocumentWillSaveEvent]
   }
   
-  @scala.inline
-  implicit class TextDocumentWillSaveEventMutableBuilder[Self <: TextDocumentWillSaveEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentWillSaveEvent](x: Self) {
     
-    @scala.inline
-    def setDocument(value: TextDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: TextDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: `1` | `2` | `3`): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: `1` | `2` | `3`): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

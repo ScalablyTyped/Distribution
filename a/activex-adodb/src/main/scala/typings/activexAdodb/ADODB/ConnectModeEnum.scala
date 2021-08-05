@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectModeEnum extends StObject
 object ConnectModeEnum {
   
-  @scala.inline
-  def adModeRead: `1` = 1.asInstanceOf[`1`]
+  inline def adModeRead: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adModeReadWrite: `3` = 3.asInstanceOf[`3`]
+  inline def adModeReadWrite: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def adModeRecursive: `4194304` = 4194304.asInstanceOf[`4194304`]
+  inline def adModeRecursive: `4194304` = 4194304.asInstanceOf[`4194304`]
   
-  @scala.inline
-  def adModeShareDenyNone: `16` = 16.asInstanceOf[`16`]
+  inline def adModeShareDenyNone: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def adModeShareDenyRead: `4` = 4.asInstanceOf[`4`]
+  inline def adModeShareDenyRead: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adModeShareDenyWrite: `8` = 8.asInstanceOf[`8`]
+  inline def adModeShareDenyWrite: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def adModeShareExclusive: `12` = 12.asInstanceOf[`12`]
+  inline def adModeShareExclusive: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def adModeUnknown: `0` = 0.asInstanceOf[`0`]
+  inline def adModeUnknown: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adModeWrite: `2` = 2.asInstanceOf[`2`]
+  inline def adModeWrite: `2` = 2.asInstanceOf[`2`]
 }

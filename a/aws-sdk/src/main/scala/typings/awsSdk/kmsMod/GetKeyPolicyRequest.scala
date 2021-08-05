@@ -18,19 +18,15 @@ trait GetKeyPolicyRequest extends StObject {
 }
 object GetKeyPolicyRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType, PolicyName: PolicyNameType): GetKeyPolicyRequest = {
+  inline def apply(KeyId: KeyIdType, PolicyName: PolicyNameType): GetKeyPolicyRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetKeyPolicyRequestMutableBuilder[Self <: GetKeyPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetKeyPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: PolicyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

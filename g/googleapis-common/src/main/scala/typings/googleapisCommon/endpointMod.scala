@@ -33,7 +33,7 @@ object endpointMod {
       * @param {object} schema The current schema from which to extract methods.
       * @param {object} context The context to add to each method.
       */
-    var applyMethodsFromSchema: js.Any = js.native
+    /* private */ var applyMethodsFromSchema: js.Any = js.native
     
     /**
       * Given a schema, add methods and resources to a target.
@@ -47,7 +47,7 @@ object endpointMod {
       */
     def applySchema(target: Target, rootSchema: Schema, schema: SchemaResource, context: APIRequestContext): Unit = js.native
     
-    var getPathParams: js.Any = js.native
+    /* private */ var getPathParams: js.Any = js.native
     
     /**
       * Given a method schema, add a method to a target.
@@ -57,7 +57,7 @@ object endpointMod {
       * @param method The method schema from which to generate the method.
       * @param context The context to add to the method.
       */
-    var makeMethod: js.Any = js.native
+    /* private */ var makeMethod: js.Any = js.native
   }
   
   type Target = StringDictionary[js.Object]

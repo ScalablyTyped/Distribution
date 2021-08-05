@@ -19,16 +19,13 @@ trait IOnDestroy extends StObject {
 }
 object IOnDestroy {
   
-  @scala.inline
-  def apply($onDestroy: () => Unit): IOnDestroy = {
+  inline def apply($onDestroy: () => Unit): IOnDestroy = {
     val __obj = js.Dynamic.literal($onDestroy = js.Any.fromFunction0($onDestroy))
     __obj.asInstanceOf[IOnDestroy]
   }
   
-  @scala.inline
-  implicit class IOnDestroyMutableBuilder[Self <: IOnDestroy] (val x: Self) extends AnyVal {
+  extension [Self <: IOnDestroy](x: Self) {
     
-    @scala.inline
-    def set$onDestroy(value: () => Unit): Self = StObject.set(x, "$onDestroy", js.Any.fromFunction0(value))
+    inline def set$onDestroy(value: () => Unit): Self = StObject.set(x, "$onDestroy", js.Any.fromFunction0(value))
   }
 }

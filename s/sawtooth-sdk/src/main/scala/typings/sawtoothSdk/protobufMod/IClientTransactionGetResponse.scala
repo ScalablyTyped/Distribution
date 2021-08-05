@@ -15,31 +15,23 @@ trait IClientTransactionGetResponse extends StObject {
 }
 object IClientTransactionGetResponse {
   
-  @scala.inline
-  def apply(): IClientTransactionGetResponse = {
+  inline def apply(): IClientTransactionGetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientTransactionGetResponse]
   }
   
-  @scala.inline
-  implicit class IClientTransactionGetResponseMutableBuilder[Self <: IClientTransactionGetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IClientTransactionGetResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: ITransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: ITransaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionNull: Self = StObject.set(x, "transaction", null)
+    inline def setTransactionNull: Self = StObject.set(x, "transaction", null)
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

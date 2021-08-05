@@ -17,10 +17,10 @@ object previewServiceMod {
        with PreviewService {
     def this(hasEngine: EngineIPlaybackEngine) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _framesMap: js.Any = js.native
     
     /* CompleteClass */
@@ -42,29 +42,26 @@ object previewServiceMod {
     @JSImport("playable/dist/src/modules/ui/preview-service/preview-service", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/preview-service/preview-service", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait PreviewService
     extends StObject
        with IPreviewService {
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _framesMap: js.Any
+    /* private */ var _framesMap: js.Any
   }
   object PreviewService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _engine: js.Any,
       _framesMap: js.Any,
       destroy: () => Unit,
@@ -75,14 +72,11 @@ object previewServiceMod {
       __obj.asInstanceOf[PreviewService]
     }
     
-    @scala.inline
-    implicit class PreviewServiceMutableBuilder[Self <: PreviewService] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewService](x: Self) {
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_framesMap(value: js.Any): Self = StObject.set(x, "_framesMap", value.asInstanceOf[js.Any])
+      inline def set_framesMap(value: js.Any): Self = StObject.set(x, "_framesMap", value.asInstanceOf[js.Any])
     }
   }
 }

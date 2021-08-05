@@ -51,23 +51,18 @@ object provider {
   }
   object ScriptErrorRaisedException {
     
-    @scala.inline
-    def apply(Context: XInterface, Message: String, language: String, lineNum: Double, scriptName: String): ScriptErrorRaisedException = {
+    inline def apply(Context: XInterface, Message: String, language: String, lineNum: Double, scriptName: String): ScriptErrorRaisedException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], lineNum = lineNum.asInstanceOf[js.Any], scriptName = scriptName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScriptErrorRaisedException]
     }
     
-    @scala.inline
-    implicit class ScriptErrorRaisedExceptionMutableBuilder[Self <: ScriptErrorRaisedException] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptErrorRaisedException](x: Self) {
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNum(value: Double): Self = StObject.set(x, "lineNum", value.asInstanceOf[js.Any])
+      inline def setLineNum(value: Double): Self = StObject.set(x, "lineNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
+      inline def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +76,7 @@ object provider {
   }
   object ScriptExceptionRaisedException {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Context: XInterface,
       Message: String,
       exceptionType: String,
@@ -94,11 +88,9 @@ object provider {
       __obj.asInstanceOf[ScriptExceptionRaisedException]
     }
     
-    @scala.inline
-    implicit class ScriptExceptionRaisedExceptionMutableBuilder[Self <: ScriptExceptionRaisedException] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptExceptionRaisedException](x: Self) {
       
-      @scala.inline
-      def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
+      inline def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,23 +110,18 @@ object provider {
   }
   object ScriptFrameworkErrorException {
     
-    @scala.inline
-    def apply(Context: XInterface, Message: String, errorType: Double, language: String, scriptName: String): ScriptFrameworkErrorException = {
+    inline def apply(Context: XInterface, Message: String, errorType: Double, language: String, scriptName: String): ScriptFrameworkErrorException = {
       val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], errorType = errorType.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], scriptName = scriptName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScriptFrameworkErrorException]
     }
     
-    @scala.inline
-    implicit class ScriptFrameworkErrorExceptionMutableBuilder[Self <: ScriptFrameworkErrorException] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptFrameworkErrorException](x: Self) {
       
-      @scala.inline
-      def setErrorType(value: Double): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+      inline def setErrorType(value: Double): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
+      inline def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,17 +136,13 @@ object provider {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def MALFORMED_URL: `3` = 3.asInstanceOf[`3`]
+      inline def MALFORMED_URL: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def NOTSUPPORTED: `1` = 1.asInstanceOf[`1`]
+      inline def NOTSUPPORTED: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def NO_SUCH_SCRIPT: `2` = 2.asInstanceOf[`2`]
+      inline def NO_SUCH_SCRIPT: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def UNKNOWN: `0` = 0.asInstanceOf[`0`]
+      inline def UNKNOWN: `0` = 0.asInstanceOf[`0`]
     }
   }
   
@@ -170,8 +153,7 @@ object provider {
        with XScriptProvider
   object ScriptProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ChildNodes: SafeArray[XBrowseNode],
       Introspection: XIntrospectionAccess,
       Name: String,
@@ -223,8 +205,7 @@ object provider {
   }
   object ScriptURIHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RootStorageURI: String,
       acquire: () => Unit,
       create: (String, String) => Unit,
@@ -238,11 +219,9 @@ object provider {
       __obj.asInstanceOf[ScriptURIHelper]
     }
     
-    @scala.inline
-    implicit class ScriptURIHelperMutableBuilder[Self <: ScriptURIHelper] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptURIHelper](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     }
   }
   
@@ -267,8 +246,7 @@ object provider {
   }
   object XScript {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       invoke: (SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
       queryInterface: `type` => js.Any,
@@ -278,11 +256,9 @@ object provider {
       __obj.asInstanceOf[XScript]
     }
     
-    @scala.inline
-    implicit class XScriptMutableBuilder[Self <: XScript] (val x: Self) extends AnyVal {
+    extension [Self <: XScript](x: Self) {
       
-      @scala.inline
-      def setInvoke(value: (SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
+      inline def setInvoke(value: (SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
     }
   }
   
@@ -358,8 +334,7 @@ object provider {
   }
   object XScriptContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ComponentContext: XComponentContext,
       Desktop: XDesktop,
       Document: XModel,
@@ -376,32 +351,23 @@ object provider {
       __obj.asInstanceOf[XScriptContext]
     }
     
-    @scala.inline
-    implicit class XScriptContextMutableBuilder[Self <: XScriptContext] (val x: Self) extends AnyVal {
+    extension [Self <: XScriptContext](x: Self) {
       
-      @scala.inline
-      def setComponentContext(value: XComponentContext): Self = StObject.set(x, "ComponentContext", value.asInstanceOf[js.Any])
+      inline def setComponentContext(value: XComponentContext): Self = StObject.set(x, "ComponentContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDesktop(value: XDesktop): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
+      inline def setDesktop(value: XDesktop): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocument(value: XModel): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: XModel): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetComponentContext(value: () => XComponentContext): Self = StObject.set(x, "getComponentContext", js.Any.fromFunction0(value))
+      inline def setGetComponentContext(value: () => XComponentContext): Self = StObject.set(x, "getComponentContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDesktop(value: () => XDesktop): Self = StObject.set(x, "getDesktop", js.Any.fromFunction0(value))
+      inline def setGetDesktop(value: () => XDesktop): Self = StObject.set(x, "getDesktop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDocument(value: () => XModel): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
+      inline def setGetDocument(value: () => XModel): Self = StObject.set(x, "getDocument", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInvocationContext(value: () => XScriptInvocationContext): Self = StObject.set(x, "getInvocationContext", js.Any.fromFunction0(value))
+      inline def setGetInvocationContext(value: () => XScriptInvocationContext): Self = StObject.set(x, "getInvocationContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvocationContext(value: XScriptInvocationContext): Self = StObject.set(x, "InvocationContext", value.asInstanceOf[js.Any])
+      inline def setInvocationContext(value: XScriptInvocationContext): Self = StObject.set(x, "InvocationContext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -420,8 +386,7 @@ object provider {
   }
   object XScriptProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       getScript: String => XScript,
       queryInterface: `type` => js.Any,
@@ -431,11 +396,9 @@ object provider {
       __obj.asInstanceOf[XScriptProvider]
     }
     
-    @scala.inline
-    implicit class XScriptProviderMutableBuilder[Self <: XScriptProvider] (val x: Self) extends AnyVal {
+    extension [Self <: XScriptProvider](x: Self) {
       
-      @scala.inline
-      def setGetScript(value: String => XScript): Self = StObject.set(x, "getScript", js.Any.fromFunction1(value))
+      inline def setGetScript(value: String => XScript): Self = StObject.set(x, "getScript", js.Any.fromFunction1(value))
     }
   }
   
@@ -454,8 +417,7 @@ object provider {
   }
   object XScriptProviderFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       createScriptProvider: js.Any => XScriptProvider,
       queryInterface: `type` => js.Any,
@@ -465,11 +427,9 @@ object provider {
       __obj.asInstanceOf[XScriptProviderFactory]
     }
     
-    @scala.inline
-    implicit class XScriptProviderFactoryMutableBuilder[Self <: XScriptProviderFactory] (val x: Self) extends AnyVal {
+    extension [Self <: XScriptProviderFactory](x: Self) {
       
-      @scala.inline
-      def setCreateScriptProvider(value: js.Any => XScriptProvider): Self = StObject.set(x, "createScriptProvider", js.Any.fromFunction1(value))
+      inline def setCreateScriptProvider(value: js.Any => XScriptProvider): Self = StObject.set(x, "createScriptProvider", js.Any.fromFunction1(value))
     }
   }
   
@@ -492,8 +452,7 @@ object provider {
   }
   object XScriptProviderSupplier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ScriptProvider: XScriptProvider,
       acquire: () => Unit,
       getScriptProvider: () => XScriptProvider,
@@ -504,14 +463,11 @@ object provider {
       __obj.asInstanceOf[XScriptProviderSupplier]
     }
     
-    @scala.inline
-    implicit class XScriptProviderSupplierMutableBuilder[Self <: XScriptProviderSupplier] (val x: Self) extends AnyVal {
+    extension [Self <: XScriptProviderSupplier](x: Self) {
       
-      @scala.inline
-      def setGetScriptProvider(value: () => XScriptProvider): Self = StObject.set(x, "getScriptProvider", js.Any.fromFunction0(value))
+      inline def setGetScriptProvider(value: () => XScriptProvider): Self = StObject.set(x, "getScriptProvider", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScriptProvider(value: XScriptProvider): Self = StObject.set(x, "ScriptProvider", value.asInstanceOf[js.Any])
+      inline def setScriptProvider(value: XScriptProvider): Self = StObject.set(x, "ScriptProvider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -550,8 +506,7 @@ object provider {
   }
   object XScriptURIHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RootStorageURI: String,
       acquire: () => Unit,
       getRootStorageURI: () => String,
@@ -564,20 +519,15 @@ object provider {
       __obj.asInstanceOf[XScriptURIHelper]
     }
     
-    @scala.inline
-    implicit class XScriptURIHelperMutableBuilder[Self <: XScriptURIHelper] (val x: Self) extends AnyVal {
+    extension [Self <: XScriptURIHelper](x: Self) {
       
-      @scala.inline
-      def setGetRootStorageURI(value: () => String): Self = StObject.set(x, "getRootStorageURI", js.Any.fromFunction0(value))
+      inline def setGetRootStorageURI(value: () => String): Self = StObject.set(x, "getRootStorageURI", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScriptURI(value: String => String): Self = StObject.set(x, "getScriptURI", js.Any.fromFunction1(value))
+      inline def setGetScriptURI(value: String => String): Self = StObject.set(x, "getScriptURI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStorageURI(value: String => String): Self = StObject.set(x, "getStorageURI", js.Any.fromFunction1(value))
+      inline def setGetStorageURI(value: String => String): Self = StObject.set(x, "getStorageURI", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRootStorageURI(value: String): Self = StObject.set(x, "RootStorageURI", value.asInstanceOf[js.Any])
+      inline def setRootStorageURI(value: String): Self = StObject.set(x, "RootStorageURI", value.asInstanceOf[js.Any])
     }
   }
   

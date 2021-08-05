@@ -13,17 +13,14 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(encoding: BufferEncoding): Encoding = {
+    inline def apply(encoding: BufferEncoding): Encoding = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -35,20 +32,16 @@ object anon {
   }
   object Pw {
     
-    @scala.inline
-    def apply(pw: String, un: String): Pw = {
+    inline def apply(pw: String, un: String): Pw = {
       val __obj = js.Dynamic.literal(pw = pw.asInstanceOf[js.Any], un = un.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pw]
     }
     
-    @scala.inline
-    implicit class PwMutableBuilder[Self <: Pw] (val x: Self) extends AnyVal {
+    extension [Self <: Pw](x: Self) {
       
-      @scala.inline
-      def setPw(value: String): Self = StObject.set(x, "pw", value.asInstanceOf[js.Any])
+      inline def setPw(value: String): Self = StObject.set(x, "pw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUn(value: String): Self = StObject.set(x, "un", value.asInstanceOf[js.Any])
+      inline def setUn(value: String): Self = StObject.set(x, "un", value.asInstanceOf[js.Any])
     }
   }
 }

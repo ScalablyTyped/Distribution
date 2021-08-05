@@ -38,7 +38,7 @@ trait SkeletonBounds extends StObject {
   
   var minY: Double
   
-  var polygonPool: js.Any
+  /* private */ var polygonPool: js.Any
   
   var polygons: js.Array[ArrayLike[Double]]
   
@@ -46,8 +46,7 @@ trait SkeletonBounds extends StObject {
 }
 object SkeletonBounds {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aabbCompute: () => Unit,
     aabbContainsPoint: (Double, Double) => Boolean,
     aabbIntersectsSegment: (Double, Double, Double, Double) => Boolean,
@@ -72,70 +71,48 @@ object SkeletonBounds {
     __obj.asInstanceOf[SkeletonBounds]
   }
   
-  @scala.inline
-  implicit class SkeletonBoundsMutableBuilder[Self <: SkeletonBounds] (val x: Self) extends AnyVal {
+  extension [Self <: SkeletonBounds](x: Self) {
     
-    @scala.inline
-    def setAabbCompute(value: () => Unit): Self = StObject.set(x, "aabbCompute", js.Any.fromFunction0(value))
+    inline def setAabbCompute(value: () => Unit): Self = StObject.set(x, "aabbCompute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAabbContainsPoint(value: (Double, Double) => Boolean): Self = StObject.set(x, "aabbContainsPoint", js.Any.fromFunction2(value))
+    inline def setAabbContainsPoint(value: (Double, Double) => Boolean): Self = StObject.set(x, "aabbContainsPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAabbIntersectsSegment(value: (Double, Double, Double, Double) => Boolean): Self = StObject.set(x, "aabbIntersectsSegment", js.Any.fromFunction4(value))
+    inline def setAabbIntersectsSegment(value: (Double, Double, Double, Double) => Boolean): Self = StObject.set(x, "aabbIntersectsSegment", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAabbIntersectsSkeleton(value: SkeletonBounds => Boolean): Self = StObject.set(x, "aabbIntersectsSkeleton", js.Any.fromFunction1(value))
+    inline def setAabbIntersectsSkeleton(value: SkeletonBounds => Boolean): Self = StObject.set(x, "aabbIntersectsSkeleton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBoundingBoxes(value: js.Array[BoundingBoxAttachment]): Self = StObject.set(x, "boundingBoxes", value.asInstanceOf[js.Any])
+    inline def setBoundingBoxes(value: js.Array[BoundingBoxAttachment]): Self = StObject.set(x, "boundingBoxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxesVarargs(value: BoundingBoxAttachment*): Self = StObject.set(x, "boundingBoxes", js.Array(value :_*))
+    inline def setBoundingBoxesVarargs(value: BoundingBoxAttachment*): Self = StObject.set(x, "boundingBoxes", js.Array(value :_*))
     
-    @scala.inline
-    def setContainsPoint(value: (Double, Double) => BoundingBoxAttachment): Self = StObject.set(x, "containsPoint", js.Any.fromFunction2(value))
+    inline def setContainsPoint(value: (Double, Double) => BoundingBoxAttachment): Self = StObject.set(x, "containsPoint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContainsPointPolygon(value: (ArrayLike[Double], Double, Double) => Boolean): Self = StObject.set(x, "containsPointPolygon", js.Any.fromFunction3(value))
+    inline def setContainsPointPolygon(value: (ArrayLike[Double], Double, Double) => Boolean): Self = StObject.set(x, "containsPointPolygon", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+    inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPolygon(value: BoundingBoxAttachment => ArrayLike[Double]): Self = StObject.set(x, "getPolygon", js.Any.fromFunction1(value))
+    inline def setGetPolygon(value: BoundingBoxAttachment => ArrayLike[Double]): Self = StObject.set(x, "getPolygon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIntersectsSegment(value: (Double, Double, Double, Double) => BoundingBoxAttachment): Self = StObject.set(x, "intersectsSegment", js.Any.fromFunction4(value))
+    inline def setIntersectsSegment(value: (Double, Double, Double, Double) => BoundingBoxAttachment): Self = StObject.set(x, "intersectsSegment", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setIntersectsSegmentPolygon(value: (ArrayLike[Double], Double, Double, Double, Double) => Boolean): Self = StObject.set(x, "intersectsSegmentPolygon", js.Any.fromFunction5(value))
+    inline def setIntersectsSegmentPolygon(value: (ArrayLike[Double], Double, Double, Double, Double) => Boolean): Self = StObject.set(x, "intersectsSegmentPolygon", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+    inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+    inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+    inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+    inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonPool(value: js.Any): Self = StObject.set(x, "polygonPool", value.asInstanceOf[js.Any])
+    inline def setPolygonPool(value: js.Any): Self = StObject.set(x, "polygonPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygons(value: js.Array[ArrayLike[Double]]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
+    inline def setPolygons(value: js.Array[ArrayLike[Double]]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonsVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "polygons", js.Array(value :_*))
+    inline def setPolygonsVarargs(value: ArrayLike[Double]*): Self = StObject.set(x, "polygons", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdate(value: (Skeleton, Boolean) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (Skeleton, Boolean) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

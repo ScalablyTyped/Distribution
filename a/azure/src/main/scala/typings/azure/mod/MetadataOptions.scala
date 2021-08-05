@@ -12,19 +12,15 @@ trait MetadataOptions
 }
 object MetadataOptions {
   
-  @scala.inline
-  def apply(): MetadataOptions = {
+  inline def apply(): MetadataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetadataOptions]
   }
   
-  @scala.inline
-  implicit class MetadataOptionsMutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataOptions](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: StorageMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StorageMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

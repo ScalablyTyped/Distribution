@@ -116,45 +116,38 @@ object requestObjectsMod {
     @JSImport("vexdb/out/constants/RequestObjects", "passableParams.awards")
     @js.native
     def awards: js.Array[String] = js.native
-    @scala.inline
-    def awards_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("awards")(x.asInstanceOf[js.Any])
+    inline def awards_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("awards")(x.asInstanceOf[js.Any])
     
     @JSImport("vexdb/out/constants/RequestObjects", "passableParams.events")
     @js.native
     def events: js.Array[String] = js.native
-    @scala.inline
-    def events_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+    inline def events_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
     
     @JSImport("vexdb/out/constants/RequestObjects", "passableParams.matches")
     @js.native
     def matches: js.Array[String] = js.native
-    @scala.inline
-    def matches_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matches")(x.asInstanceOf[js.Any])
+    inline def matches_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matches")(x.asInstanceOf[js.Any])
     
     @JSImport("vexdb/out/constants/RequestObjects", "passableParams.rankings")
     @js.native
     def rankings: js.Array[String] = js.native
-    @scala.inline
-    def rankings_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rankings")(x.asInstanceOf[js.Any])
+    inline def rankings_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rankings")(x.asInstanceOf[js.Any])
     
     @JSImport("vexdb/out/constants/RequestObjects", "passableParams.season_rankings")
     @js.native
     def seasonRankings: js.Array[String] = js.native
     
-    @scala.inline
-    def seasonRankings_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("season_rankings")(x.asInstanceOf[js.Any])
+    inline def seasonRankings_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("season_rankings")(x.asInstanceOf[js.Any])
     
     @JSImport("vexdb/out/constants/RequestObjects", "passableParams.skills")
     @js.native
     def skills: js.Array[String] = js.native
-    @scala.inline
-    def skills_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skills")(x.asInstanceOf[js.Any])
+    inline def skills_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skills")(x.asInstanceOf[js.Any])
     
     @JSImport("vexdb/out/constants/RequestObjects", "passableParams.teams")
     @js.native
     def teams: js.Array[String] = js.native
-    @scala.inline
-    def teams_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teams")(x.asInstanceOf[js.Any])
+    inline def teams_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("teams")(x.asInstanceOf[js.Any])
   }
   
   trait AwardsRequestObject
@@ -177,76 +170,56 @@ object requestObjectsMod {
   }
   object AwardsRequestObject {
     
-    @scala.inline
-    def apply(): AwardsRequestObject = {
+    inline def apply(): AwardsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AwardsRequestObject]
     }
     
-    @scala.inline
-    implicit class AwardsRequestObjectMutableBuilder[Self <: AwardsRequestObject] (val x: Self) extends AnyVal {
+    extension [Self <: AwardsRequestObject](x: Self) {
       
-      @scala.inline
-      def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
+      inline def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
+      inline def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
       
-      @scala.inline
-      def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+      inline def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
+      inline def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
       
-      @scala.inline
-      def setName(value: Filter[AwardsResponseObject, name, String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Filter[AwardsResponseObject, name, String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFunction2(
+      inline def setNameFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "name", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOrder(value: Filter[AwardsResponseObject, order, Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Filter[AwardsResponseObject, order, Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderFunction2(
+      inline def setOrderFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
+      inline def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
       
-      @scala.inline
-      def setSku(value: Filter[AwardsResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: Filter[AwardsResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkuFunction2(
+      inline def setSkuFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "sku", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+      inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
       
-      @scala.inline
-      def setTeam(value: Filter[AwardsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: Filter[AwardsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamFunction2(
+      inline def setTeamFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, AwardsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "team", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
     }
   }
   
@@ -262,26 +235,19 @@ object requestObjectsMod {
   trait Endpoint extends StObject
   object Endpoint {
     
-    @scala.inline
-    def awards: typings.vexdb.vexdbStrings.awards = "awards".asInstanceOf[typings.vexdb.vexdbStrings.awards]
+    inline def awards: typings.vexdb.vexdbStrings.awards = "awards".asInstanceOf[typings.vexdb.vexdbStrings.awards]
     
-    @scala.inline
-    def events: typings.vexdb.vexdbStrings.events = "events".asInstanceOf[typings.vexdb.vexdbStrings.events]
+    inline def events: typings.vexdb.vexdbStrings.events = "events".asInstanceOf[typings.vexdb.vexdbStrings.events]
     
-    @scala.inline
-    def matches: typings.vexdb.vexdbStrings.matches = "matches".asInstanceOf[typings.vexdb.vexdbStrings.matches]
+    inline def matches: typings.vexdb.vexdbStrings.matches = "matches".asInstanceOf[typings.vexdb.vexdbStrings.matches]
     
-    @scala.inline
-    def rankings: typings.vexdb.vexdbStrings.rankings = "rankings".asInstanceOf[typings.vexdb.vexdbStrings.rankings]
+    inline def rankings: typings.vexdb.vexdbStrings.rankings = "rankings".asInstanceOf[typings.vexdb.vexdbStrings.rankings]
     
-    @scala.inline
-    def season_rankings: typings.vexdb.vexdbStrings.season_rankings = "season_rankings".asInstanceOf[typings.vexdb.vexdbStrings.season_rankings]
+    inline def season_rankings: typings.vexdb.vexdbStrings.season_rankings = "season_rankings".asInstanceOf[typings.vexdb.vexdbStrings.season_rankings]
     
-    @scala.inline
-    def skills: typings.vexdb.vexdbStrings.skills = "skills".asInstanceOf[typings.vexdb.vexdbStrings.skills]
+    inline def skills: typings.vexdb.vexdbStrings.skills = "skills".asInstanceOf[typings.vexdb.vexdbStrings.skills]
     
-    @scala.inline
-    def teams: typings.vexdb.vexdbStrings.teams = "teams".asInstanceOf[typings.vexdb.vexdbStrings.teams]
+    inline def teams: typings.vexdb.vexdbStrings.teams = "teams".asInstanceOf[typings.vexdb.vexdbStrings.teams]
   }
   
   trait EventsRequestObject
@@ -334,211 +300,152 @@ object requestObjectsMod {
   }
   object EventsRequestObject {
     
-    @scala.inline
-    def apply(): EventsRequestObject = {
+    inline def apply(): EventsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventsRequestObject]
     }
     
-    @scala.inline
-    implicit class EventsRequestObjectMutableBuilder[Self <: EventsRequestObject] (val x: Self) extends AnyVal {
+    extension [Self <: EventsRequestObject](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+      inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Filter[EventsResponseObject, end, String]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Filter[EventsResponseObject, end, String]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndFunction2(
+      inline def setEndFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "end", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setKey(value: Filter[EventsResponseObject, key, String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Filter[EventsResponseObject, key, String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFunction2(
+      inline def setKeyFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "key", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
+      inline def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
+      inline def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
       
-      @scala.inline
-      def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+      inline def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
+      inline def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
       
-      @scala.inline
-      def setLoc_address1(value: Filter[EventsResponseObject, loc_address1, String]): Self = StObject.set(x, "loc_address1", value.asInstanceOf[js.Any])
+      inline def setLoc_address1(value: Filter[EventsResponseObject, loc_address1, String]): Self = StObject.set(x, "loc_address1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_address1Function2(
+      inline def setLoc_address1Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "loc_address1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoc_address1Undefined: Self = StObject.set(x, "loc_address1", js.undefined)
+      inline def setLoc_address1Undefined: Self = StObject.set(x, "loc_address1", js.undefined)
       
-      @scala.inline
-      def setLoc_address2(value: Filter[EventsResponseObject, loc_address2, String]): Self = StObject.set(x, "loc_address2", value.asInstanceOf[js.Any])
+      inline def setLoc_address2(value: Filter[EventsResponseObject, loc_address2, String]): Self = StObject.set(x, "loc_address2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_address2Function2(
+      inline def setLoc_address2Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "loc_address2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoc_address2Undefined: Self = StObject.set(x, "loc_address2", js.undefined)
+      inline def setLoc_address2Undefined: Self = StObject.set(x, "loc_address2", js.undefined)
       
-      @scala.inline
-      def setLoc_city(value: Filter[EventsResponseObject, loc_city, String]): Self = StObject.set(x, "loc_city", value.asInstanceOf[js.Any])
+      inline def setLoc_city(value: Filter[EventsResponseObject, loc_city, String]): Self = StObject.set(x, "loc_city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_cityFunction2(
+      inline def setLoc_cityFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "loc_city", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoc_cityUndefined: Self = StObject.set(x, "loc_city", js.undefined)
+      inline def setLoc_cityUndefined: Self = StObject.set(x, "loc_city", js.undefined)
       
-      @scala.inline
-      def setLoc_country(value: Filter[EventsResponseObject, loc_country, String]): Self = StObject.set(x, "loc_country", value.asInstanceOf[js.Any])
+      inline def setLoc_country(value: Filter[EventsResponseObject, loc_country, String]): Self = StObject.set(x, "loc_country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_countryFunction2(
+      inline def setLoc_countryFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "loc_country", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoc_countryUndefined: Self = StObject.set(x, "loc_country", js.undefined)
+      inline def setLoc_countryUndefined: Self = StObject.set(x, "loc_country", js.undefined)
       
-      @scala.inline
-      def setLoc_postcode(value: Filter[EventsResponseObject, loc_postcode, String]): Self = StObject.set(x, "loc_postcode", value.asInstanceOf[js.Any])
+      inline def setLoc_postcode(value: Filter[EventsResponseObject, loc_postcode, String]): Self = StObject.set(x, "loc_postcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_postcodeFunction2(
+      inline def setLoc_postcodeFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "loc_postcode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoc_postcodeUndefined: Self = StObject.set(x, "loc_postcode", js.undefined)
+      inline def setLoc_postcodeUndefined: Self = StObject.set(x, "loc_postcode", js.undefined)
       
-      @scala.inline
-      def setLoc_region(value: Filter[EventsResponseObject, loc_region, String]): Self = StObject.set(x, "loc_region", value.asInstanceOf[js.Any])
+      inline def setLoc_region(value: Filter[EventsResponseObject, loc_region, String]): Self = StObject.set(x, "loc_region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_regionFunction2(
+      inline def setLoc_regionFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "loc_region", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoc_regionUndefined: Self = StObject.set(x, "loc_region", js.undefined)
+      inline def setLoc_regionUndefined: Self = StObject.set(x, "loc_region", js.undefined)
       
-      @scala.inline
-      def setLoc_venue(value: Filter[EventsResponseObject, loc_venue, String]): Self = StObject.set(x, "loc_venue", value.asInstanceOf[js.Any])
+      inline def setLoc_venue(value: Filter[EventsResponseObject, loc_venue, String]): Self = StObject.set(x, "loc_venue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc_venueFunction2(
+      inline def setLoc_venueFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "loc_venue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoc_venueUndefined: Self = StObject.set(x, "loc_venue", js.undefined)
+      inline def setLoc_venueUndefined: Self = StObject.set(x, "loc_venue", js.undefined)
       
-      @scala.inline
-      def setName(value: Filter[EventsResponseObject, name, String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Filter[EventsResponseObject, name, String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameFunction2(
+      inline def setNameFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "name", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProgram(value: Filter[EventsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Filter[EventsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramFunction2(
+      inline def setProgramFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "program", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setSeason(value: Filter[EventsResponseObject, season, Seasons]): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Filter[EventsResponseObject, season, Seasons]): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeasonFunction2(
+      inline def setSeasonFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "season", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
+      inline def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
       
-      @scala.inline
-      def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+      inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
       
-      @scala.inline
-      def setStart(value: Filter[EventsResponseObject, start, String]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Filter[EventsResponseObject, start, String]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartFunction2(
+      inline def setStartFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, EventsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
     }
   }
   
@@ -556,14 +463,11 @@ object requestObjectsMod {
   trait Grades extends StObject
   object Grades {
     
-    @scala.inline
-    def Collge: typings.vexdb.vexdbStrings.Collge = "Collge".asInstanceOf[typings.vexdb.vexdbStrings.Collge]
+    inline def Collge: typings.vexdb.vexdbStrings.Collge = "Collge".asInstanceOf[typings.vexdb.vexdbStrings.Collge]
     
-    @scala.inline
-    def `High School`: typings.vexdb.vexdbStrings.`High School` = ("High School").asInstanceOf[typings.vexdb.vexdbStrings.`High School`]
+    inline def `High School`: typings.vexdb.vexdbStrings.`High School` = ("High School").asInstanceOf[typings.vexdb.vexdbStrings.`High School`]
     
-    @scala.inline
-    def `Middle School`: typings.vexdb.vexdbStrings.`Middle School` = ("Middle School").asInstanceOf[typings.vexdb.vexdbStrings.`Middle School`]
+    inline def `Middle School`: typings.vexdb.vexdbStrings.`Middle School` = ("Middle School").asInstanceOf[typings.vexdb.vexdbStrings.`Middle School`]
   }
   
   trait MatchesRequestObject
@@ -616,226 +520,164 @@ object requestObjectsMod {
   }
   object MatchesRequestObject {
     
-    @scala.inline
-    def apply(): MatchesRequestObject = {
+    inline def apply(): MatchesRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MatchesRequestObject]
     }
     
-    @scala.inline
-    implicit class MatchesRequestObjectMutableBuilder[Self <: MatchesRequestObject] (val x: Self) extends AnyVal {
+    extension [Self <: MatchesRequestObject](x: Self) {
       
-      @scala.inline
-      def setBlue1(value: Filter[MatchesResponseObject, blue1, String]): Self = StObject.set(x, "blue1", value.asInstanceOf[js.Any])
+      inline def setBlue1(value: Filter[MatchesResponseObject, blue1, String]): Self = StObject.set(x, "blue1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue1Function2(
+      inline def setBlue1Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "blue1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlue1Undefined: Self = StObject.set(x, "blue1", js.undefined)
+      inline def setBlue1Undefined: Self = StObject.set(x, "blue1", js.undefined)
       
-      @scala.inline
-      def setBlue2(value: Filter[MatchesResponseObject, blue2, String]): Self = StObject.set(x, "blue2", value.asInstanceOf[js.Any])
+      inline def setBlue2(value: Filter[MatchesResponseObject, blue2, String]): Self = StObject.set(x, "blue2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue2Function2(
+      inline def setBlue2Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "blue2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlue2Undefined: Self = StObject.set(x, "blue2", js.undefined)
+      inline def setBlue2Undefined: Self = StObject.set(x, "blue2", js.undefined)
       
-      @scala.inline
-      def setBlue3(value: Filter[MatchesResponseObject, blue3, String]): Self = StObject.set(x, "blue3", value.asInstanceOf[js.Any])
+      inline def setBlue3(value: Filter[MatchesResponseObject, blue3, String]): Self = StObject.set(x, "blue3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue3Function2(
+      inline def setBlue3Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "blue3", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBlue3Undefined: Self = StObject.set(x, "blue3", js.undefined)
+      inline def setBlue3Undefined: Self = StObject.set(x, "blue3", js.undefined)
       
-      @scala.inline
-      def setBluescore(value: Filter[MatchesResponseObject, bluescore, Double]): Self = StObject.set(x, "bluescore", value.asInstanceOf[js.Any])
+      inline def setBluescore(value: Filter[MatchesResponseObject, bluescore, Double]): Self = StObject.set(x, "bluescore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBluescoreFunction2(
+      inline def setBluescoreFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "bluescore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBluescoreUndefined: Self = StObject.set(x, "bluescore", js.undefined)
+      inline def setBluescoreUndefined: Self = StObject.set(x, "bluescore", js.undefined)
       
-      @scala.inline
-      def setBluesit(value: Filter[MatchesResponseObject, bluesit, String]): Self = StObject.set(x, "bluesit", value.asInstanceOf[js.Any])
+      inline def setBluesit(value: Filter[MatchesResponseObject, bluesit, String]): Self = StObject.set(x, "bluesit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBluesitFunction2(
+      inline def setBluesitFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "bluesit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBluesitUndefined: Self = StObject.set(x, "bluesit", js.undefined)
+      inline def setBluesitUndefined: Self = StObject.set(x, "bluesit", js.undefined)
       
-      @scala.inline
-      def setDivision(value: Filter[MatchesResponseObject, division, String]): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
+      inline def setDivision(value: Filter[MatchesResponseObject, division, String]): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivisionFunction2(
+      inline def setDivisionFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "division", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDivisionUndefined: Self = StObject.set(x, "division", js.undefined)
+      inline def setDivisionUndefined: Self = StObject.set(x, "division", js.undefined)
       
-      @scala.inline
-      def setField(value: Filter[MatchesResponseObject, field, String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: Filter[MatchesResponseObject, field, String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldFunction2(
+      inline def setFieldFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "field", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      @scala.inline
-      def setInstance(value: Filter[MatchesResponseObject, instance, Double]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Filter[MatchesResponseObject, instance, Double]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceFunction2(
+      inline def setInstanceFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "instance", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
-      @scala.inline
-      def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
+      inline def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
+      inline def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
       
-      @scala.inline
-      def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+      inline def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
+      inline def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
       
-      @scala.inline
-      def setMatchnum(value: Filter[MatchesResponseObject, matchnum, Double]): Self = StObject.set(x, "matchnum", value.asInstanceOf[js.Any])
+      inline def setMatchnum(value: Filter[MatchesResponseObject, matchnum, Double]): Self = StObject.set(x, "matchnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchnumFunction2(
+      inline def setMatchnumFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "matchnum", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMatchnumUndefined: Self = StObject.set(x, "matchnum", js.undefined)
+      inline def setMatchnumUndefined: Self = StObject.set(x, "matchnum", js.undefined)
       
-      @scala.inline
-      def setRed1(value: Filter[MatchesResponseObject, red1, String]): Self = StObject.set(x, "red1", value.asInstanceOf[js.Any])
+      inline def setRed1(value: Filter[MatchesResponseObject, red1, String]): Self = StObject.set(x, "red1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed1Function2(
+      inline def setRed1Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "red1", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRed1Undefined: Self = StObject.set(x, "red1", js.undefined)
+      inline def setRed1Undefined: Self = StObject.set(x, "red1", js.undefined)
       
-      @scala.inline
-      def setRed2(value: Filter[MatchesResponseObject, red2, String]): Self = StObject.set(x, "red2", value.asInstanceOf[js.Any])
+      inline def setRed2(value: Filter[MatchesResponseObject, red2, String]): Self = StObject.set(x, "red2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed2Function2(
+      inline def setRed2Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "red2", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRed2Undefined: Self = StObject.set(x, "red2", js.undefined)
+      inline def setRed2Undefined: Self = StObject.set(x, "red2", js.undefined)
       
-      @scala.inline
-      def setRed3(value: Filter[MatchesResponseObject, red3, String]): Self = StObject.set(x, "red3", value.asInstanceOf[js.Any])
+      inline def setRed3(value: Filter[MatchesResponseObject, red3, String]): Self = StObject.set(x, "red3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed3Function2(
+      inline def setRed3Function2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "red3", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRed3Undefined: Self = StObject.set(x, "red3", js.undefined)
+      inline def setRed3Undefined: Self = StObject.set(x, "red3", js.undefined)
       
-      @scala.inline
-      def setRedscore(value: Filter[MatchesResponseObject, redscore, Double]): Self = StObject.set(x, "redscore", value.asInstanceOf[js.Any])
+      inline def setRedscore(value: Filter[MatchesResponseObject, redscore, Double]): Self = StObject.set(x, "redscore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedscoreFunction2(
+      inline def setRedscoreFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "redscore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRedscoreUndefined: Self = StObject.set(x, "redscore", js.undefined)
+      inline def setRedscoreUndefined: Self = StObject.set(x, "redscore", js.undefined)
       
-      @scala.inline
-      def setRedsit(value: Filter[MatchesResponseObject, redsit, String]): Self = StObject.set(x, "redsit", value.asInstanceOf[js.Any])
+      inline def setRedsit(value: Filter[MatchesResponseObject, redsit, String]): Self = StObject.set(x, "redsit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedsitFunction2(
+      inline def setRedsitFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "redsit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRedsitUndefined: Self = StObject.set(x, "redsit", js.undefined)
+      inline def setRedsitUndefined: Self = StObject.set(x, "redsit", js.undefined)
       
-      @scala.inline
-      def setRound(value: `1` | `2` | `3` | `4` | `5` | `16`): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: `1` | `2` | `3` | `4` | `5` | `16`): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setScheduled(value: Filter[MatchesResponseObject, scheduled, String]): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
+      inline def setScheduled(value: Filter[MatchesResponseObject, scheduled, String]): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduledFunction2(
+      inline def setScheduledFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "scheduled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScheduledUndefined: Self = StObject.set(x, "scheduled", js.undefined)
+      inline def setScheduledUndefined: Self = StObject.set(x, "scheduled", js.undefined)
       
-      @scala.inline
-      def setScored(value: `0` | `1`): Self = StObject.set(x, "scored", value.asInstanceOf[js.Any])
+      inline def setScored(value: `0` | `1`): Self = StObject.set(x, "scored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoredUndefined: Self = StObject.set(x, "scored", js.undefined)
+      inline def setScoredUndefined: Self = StObject.set(x, "scored", js.undefined)
       
-      @scala.inline
-      def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
+      inline def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
       
-      @scala.inline
-      def setSku(value: Filter[MatchesResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: Filter[MatchesResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkuFunction2(
+      inline def setSkuFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, MatchesResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "sku", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+      inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
       
-      @scala.inline
-      def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
     }
   }
   
@@ -846,11 +688,9 @@ object requestObjectsMod {
   trait Programs extends StObject
   object Programs {
     
-    @scala.inline
-    def VEXU: typings.vexdb.vexdbStrings.VEXU = "VEXU".asInstanceOf[typings.vexdb.vexdbStrings.VEXU]
+    inline def VEXU: typings.vexdb.vexdbStrings.VEXU = "VEXU".asInstanceOf[typings.vexdb.vexdbStrings.VEXU]
     
-    @scala.inline
-    def VRC: typings.vexdb.vexdbStrings.VRC = "VRC".asInstanceOf[typings.vexdb.vexdbStrings.VRC]
+    inline def VRC: typings.vexdb.vexdbStrings.VRC = "VRC".asInstanceOf[typings.vexdb.vexdbStrings.VRC]
   }
   
   trait RankingsRequestObject
@@ -895,197 +735,144 @@ object requestObjectsMod {
   }
   object RankingsRequestObject {
     
-    @scala.inline
-    def apply(): RankingsRequestObject = {
+    inline def apply(): RankingsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RankingsRequestObject]
     }
     
-    @scala.inline
-    implicit class RankingsRequestObjectMutableBuilder[Self <: RankingsRequestObject] (val x: Self) extends AnyVal {
+    extension [Self <: RankingsRequestObject](x: Self) {
       
-      @scala.inline
-      def setAp(value: Filter[RankingsResponseObject, ap, Double]): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
+      inline def setAp(value: Filter[RankingsResponseObject, ap, Double]): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApFunction2(
+      inline def setApFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setApUndefined: Self = StObject.set(x, "ap", js.undefined)
+      inline def setApUndefined: Self = StObject.set(x, "ap", js.undefined)
       
-      @scala.inline
-      def setCcwm(value: Filter[RankingsResponseObject, ccwm, Double]): Self = StObject.set(x, "ccwm", value.asInstanceOf[js.Any])
+      inline def setCcwm(value: Filter[RankingsResponseObject, ccwm, Double]): Self = StObject.set(x, "ccwm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcwmFunction2(
+      inline def setCcwmFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "ccwm", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCcwmUndefined: Self = StObject.set(x, "ccwm", js.undefined)
+      inline def setCcwmUndefined: Self = StObject.set(x, "ccwm", js.undefined)
       
-      @scala.inline
-      def setDivision(value: Filter[RankingsResponseObject, division, String]): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
+      inline def setDivision(value: Filter[RankingsResponseObject, division, String]): Self = StObject.set(x, "division", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDivisionFunction2(
+      inline def setDivisionFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "division", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDivisionUndefined: Self = StObject.set(x, "division", js.undefined)
+      inline def setDivisionUndefined: Self = StObject.set(x, "division", js.undefined)
       
-      @scala.inline
-      def setDpr(value: Filter[RankingsResponseObject, dpr, Double]): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
+      inline def setDpr(value: Filter[RankingsResponseObject, dpr, Double]): Self = StObject.set(x, "dpr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDprFunction2(
+      inline def setDprFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "dpr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDprUndefined: Self = StObject.set(x, "dpr", js.undefined)
+      inline def setDprUndefined: Self = StObject.set(x, "dpr", js.undefined)
       
-      @scala.inline
-      def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
+      inline def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
+      inline def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
       
-      @scala.inline
-      def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+      inline def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
+      inline def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
       
-      @scala.inline
-      def setLosses(value: Filter[RankingsResponseObject, losses, Double]): Self = StObject.set(x, "losses", value.asInstanceOf[js.Any])
+      inline def setLosses(value: Filter[RankingsResponseObject, losses, Double]): Self = StObject.set(x, "losses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLossesFunction2(
+      inline def setLossesFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "losses", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLossesUndefined: Self = StObject.set(x, "losses", js.undefined)
+      inline def setLossesUndefined: Self = StObject.set(x, "losses", js.undefined)
       
-      @scala.inline
-      def setMax_score(value: Filter[RankingsResponseObject, max_score, Double]): Self = StObject.set(x, "max_score", value.asInstanceOf[js.Any])
+      inline def setMax_score(value: Filter[RankingsResponseObject, max_score, Double]): Self = StObject.set(x, "max_score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_scoreFunction2(
+      inline def setMax_scoreFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "max_score", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMax_scoreUndefined: Self = StObject.set(x, "max_score", js.undefined)
+      inline def setMax_scoreUndefined: Self = StObject.set(x, "max_score", js.undefined)
       
-      @scala.inline
-      def setOpr(value: Filter[RankingsResponseObject, opr, Double]): Self = StObject.set(x, "opr", value.asInstanceOf[js.Any])
+      inline def setOpr(value: Filter[RankingsResponseObject, opr, Double]): Self = StObject.set(x, "opr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOprFunction2(
+      inline def setOprFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "opr", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOprUndefined: Self = StObject.set(x, "opr", js.undefined)
+      inline def setOprUndefined: Self = StObject.set(x, "opr", js.undefined)
       
-      @scala.inline
-      def setRank(value: Filter[RankingsResponseObject, rank, Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: Filter[RankingsResponseObject, rank, Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankFunction2(
+      inline def setRankFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "rank", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+      inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       
-      @scala.inline
-      def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
+      inline def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
       
-      @scala.inline
-      def setSku(value: Filter[RankingsResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: Filter[RankingsResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkuFunction2(
+      inline def setSkuFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "sku", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+      inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
       
-      @scala.inline
-      def setSp(value: Filter[RankingsResponseObject, sp, Double]): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
+      inline def setSp(value: Filter[RankingsResponseObject, sp, Double]): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpFunction2(
+      inline def setSpFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "sp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSpUndefined: Self = StObject.set(x, "sp", js.undefined)
+      inline def setSpUndefined: Self = StObject.set(x, "sp", js.undefined)
       
-      @scala.inline
-      def setTeam(value: Filter[RankingsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: Filter[RankingsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamFunction2(
+      inline def setTeamFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "team", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
       
-      @scala.inline
-      def setTies(value: Filter[RankingsResponseObject, ties, Double]): Self = StObject.set(x, "ties", value.asInstanceOf[js.Any])
+      inline def setTies(value: Filter[RankingsResponseObject, ties, Double]): Self = StObject.set(x, "ties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiesFunction2(
+      inline def setTiesFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "ties", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTiesUndefined: Self = StObject.set(x, "ties", js.undefined)
+      inline def setTiesUndefined: Self = StObject.set(x, "ties", js.undefined)
       
-      @scala.inline
-      def setTrsp(value: Filter[RankingsResponseObject, trsp, Double]): Self = StObject.set(x, "trsp", value.asInstanceOf[js.Any])
+      inline def setTrsp(value: Filter[RankingsResponseObject, trsp, Double]): Self = StObject.set(x, "trsp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrspFunction2(
+      inline def setTrspFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "trsp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTrspUndefined: Self = StObject.set(x, "trsp", js.undefined)
+      inline def setTrspUndefined: Self = StObject.set(x, "trsp", js.undefined)
       
-      @scala.inline
-      def setWins(value: Filter[RankingsResponseObject, wins, Double]): Self = StObject.set(x, "wins", value.asInstanceOf[js.Any])
+      inline def setWins(value: Filter[RankingsResponseObject, wins, Double]): Self = StObject.set(x, "wins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWinsFunction2(
+      inline def setWinsFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "wins", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWinsUndefined: Self = StObject.set(x, "wins", js.undefined)
+      inline def setWinsUndefined: Self = StObject.set(x, "wins", js.undefined)
       
-      @scala.inline
-      def setWp(value: Filter[RankingsResponseObject, wp, Double]): Self = StObject.set(x, "wp", value.asInstanceOf[js.Any])
+      inline def setWp(value: Filter[RankingsResponseObject, wp, Double]): Self = StObject.set(x, "wp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWpFunction2(
+      inline def setWpFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, RankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "wp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWpUndefined: Self = StObject.set(x, "wp", js.undefined)
+      inline def setWpUndefined: Self = StObject.set(x, "wp", js.undefined)
     }
   }
   
@@ -1101,44 +888,37 @@ object requestObjectsMod {
   trait RequestObject extends StObject
   object RequestObject {
     
-    @scala.inline
-    def AwardsRequestObject(): typings.vexdb.requestObjectsMod.AwardsRequestObject = {
+    inline def AwardsRequestObject(): typings.vexdb.requestObjectsMod.AwardsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vexdb.requestObjectsMod.AwardsRequestObject]
     }
     
-    @scala.inline
-    def EventsRequestObject(): typings.vexdb.requestObjectsMod.EventsRequestObject = {
+    inline def EventsRequestObject(): typings.vexdb.requestObjectsMod.EventsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vexdb.requestObjectsMod.EventsRequestObject]
     }
     
-    @scala.inline
-    def MatchesRequestObject(): typings.vexdb.requestObjectsMod.MatchesRequestObject = {
+    inline def MatchesRequestObject(): typings.vexdb.requestObjectsMod.MatchesRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vexdb.requestObjectsMod.MatchesRequestObject]
     }
     
-    @scala.inline
-    def RankingsRequestObject(): typings.vexdb.requestObjectsMod.RankingsRequestObject = {
+    inline def RankingsRequestObject(): typings.vexdb.requestObjectsMod.RankingsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vexdb.requestObjectsMod.RankingsRequestObject]
     }
     
-    @scala.inline
-    def SeasonRankingsRequestObject(): typings.vexdb.requestObjectsMod.SeasonRankingsRequestObject = {
+    inline def SeasonRankingsRequestObject(): typings.vexdb.requestObjectsMod.SeasonRankingsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vexdb.requestObjectsMod.SeasonRankingsRequestObject]
     }
     
-    @scala.inline
-    def SkillsRequestObject(): typings.vexdb.requestObjectsMod.SkillsRequestObject = {
+    inline def SkillsRequestObject(): typings.vexdb.requestObjectsMod.SkillsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vexdb.requestObjectsMod.SkillsRequestObject]
     }
     
-    @scala.inline
-    def TeamsRequestObject(): typings.vexdb.requestObjectsMod.TeamsRequestObject = {
+    inline def TeamsRequestObject(): typings.vexdb.requestObjectsMod.TeamsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vexdb.requestObjectsMod.TeamsRequestObject]
     }
@@ -1168,81 +948,60 @@ object requestObjectsMod {
   }
   object SeasonRankingsRequestObject {
     
-    @scala.inline
-    def apply(): SeasonRankingsRequestObject = {
+    inline def apply(): SeasonRankingsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SeasonRankingsRequestObject]
     }
     
-    @scala.inline
-    implicit class SeasonRankingsRequestObjectMutableBuilder[Self <: SeasonRankingsRequestObject] (val x: Self) extends AnyVal {
+    extension [Self <: SeasonRankingsRequestObject](x: Self) {
       
-      @scala.inline
-      def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
+      inline def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
+      inline def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
       
-      @scala.inline
-      def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+      inline def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
+      inline def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
       
-      @scala.inline
-      def setProgram(value: Filter[SeasonRankingsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Filter[SeasonRankingsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramFunction2(
+      inline def setProgramFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SeasonRankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "program", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setSeason(value: Filter[SeasonRankingsResponseObject, season, Seasons]): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Filter[SeasonRankingsResponseObject, season, Seasons]): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeasonFunction2(
+      inline def setSeasonFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SeasonRankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "season", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
+      inline def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
       
-      @scala.inline
-      def setTeam(value: Filter[SeasonRankingsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: Filter[SeasonRankingsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamFunction2(
+      inline def setTeamFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SeasonRankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "team", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
       
-      @scala.inline
-      def setVrating(value: Filter[SeasonRankingsResponseObject, vrating, Double]): Self = StObject.set(x, "vrating", value.asInstanceOf[js.Any])
+      inline def setVrating(value: Filter[SeasonRankingsResponseObject, vrating, Double]): Self = StObject.set(x, "vrating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVratingFunction2(
+      inline def setVratingFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SeasonRankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "vrating", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVratingUndefined: Self = StObject.set(x, "vrating", js.undefined)
+      inline def setVratingUndefined: Self = StObject.set(x, "vrating", js.undefined)
       
-      @scala.inline
-      def setVrating_rank(value: Filter[SeasonRankingsResponseObject, vrating_rank, Double]): Self = StObject.set(x, "vrating_rank", value.asInstanceOf[js.Any])
+      inline def setVrating_rank(value: Filter[SeasonRankingsResponseObject, vrating_rank, Double]): Self = StObject.set(x, "vrating_rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVrating_rankFunction2(
+      inline def setVrating_rankFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SeasonRankingsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "vrating_rank", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVrating_rankUndefined: Self = StObject.set(x, "vrating_rank", js.undefined)
+      inline def setVrating_rankUndefined: Self = StObject.set(x, "vrating_rank", js.undefined)
     }
   }
   
@@ -1266,50 +1025,35 @@ object requestObjectsMod {
   trait Seasons extends StObject
   object Seasons {
     
-    @scala.inline
-    def `Bridge Battle`: typings.vexdb.vexdbStrings.`Bridge Battle` = ("Bridge Battle").asInstanceOf[typings.vexdb.vexdbStrings.`Bridge Battle`]
+    inline def `Bridge Battle`: typings.vexdb.vexdbStrings.`Bridge Battle` = ("Bridge Battle").asInstanceOf[typings.vexdb.vexdbStrings.`Bridge Battle`]
     
-    @scala.inline
-    def `Change Up`: typings.vexdb.vexdbStrings.`Change Up` = ("Change Up").asInstanceOf[typings.vexdb.vexdbStrings.`Change Up`]
+    inline def `Change Up`: typings.vexdb.vexdbStrings.`Change Up` = ("Change Up").asInstanceOf[typings.vexdb.vexdbStrings.`Change Up`]
     
-    @scala.inline
-    def `Clean Sweep`: typings.vexdb.vexdbStrings.`Clean Sweep` = ("Clean Sweep").asInstanceOf[typings.vexdb.vexdbStrings.`Clean Sweep`]
+    inline def `Clean Sweep`: typings.vexdb.vexdbStrings.`Clean Sweep` = ("Clean Sweep").asInstanceOf[typings.vexdb.vexdbStrings.`Clean Sweep`]
     
-    @scala.inline
-    def Elevation: typings.vexdb.vexdbStrings.Elevation = "Elevation".asInstanceOf[typings.vexdb.vexdbStrings.Elevation]
+    inline def Elevation: typings.vexdb.vexdbStrings.Elevation = "Elevation".asInstanceOf[typings.vexdb.vexdbStrings.Elevation]
     
-    @scala.inline
-    def Gateway: typings.vexdb.vexdbStrings.Gateway = "Gateway".asInstanceOf[typings.vexdb.vexdbStrings.Gateway]
+    inline def Gateway: typings.vexdb.vexdbStrings.Gateway = "Gateway".asInstanceOf[typings.vexdb.vexdbStrings.Gateway]
     
-    @scala.inline
-    def `In The Zone`: typings.vexdb.vexdbStrings.`In The Zone` = ("In The Zone").asInstanceOf[typings.vexdb.vexdbStrings.`In The Zone`]
+    inline def `In The Zone`: typings.vexdb.vexdbStrings.`In The Zone` = ("In The Zone").asInstanceOf[typings.vexdb.vexdbStrings.`In The Zone`]
     
-    @scala.inline
-    def `Nothing But Net`: typings.vexdb.vexdbStrings.`Nothing But Net` = ("Nothing But Net").asInstanceOf[typings.vexdb.vexdbStrings.`Nothing But Net`]
+    inline def `Nothing But Net`: typings.vexdb.vexdbStrings.`Nothing But Net` = ("Nothing But Net").asInstanceOf[typings.vexdb.vexdbStrings.`Nothing But Net`]
     
-    @scala.inline
-    def `Round Up`: typings.vexdb.vexdbStrings.`Round Up` = ("Round Up").asInstanceOf[typings.vexdb.vexdbStrings.`Round Up`]
+    inline def `Round Up`: typings.vexdb.vexdbStrings.`Round Up` = ("Round Up").asInstanceOf[typings.vexdb.vexdbStrings.`Round Up`]
     
-    @scala.inline
-    def `Sack Attack`: typings.vexdb.vexdbStrings.`Sack Attack` = ("Sack Attack").asInstanceOf[typings.vexdb.vexdbStrings.`Sack Attack`]
+    inline def `Sack Attack`: typings.vexdb.vexdbStrings.`Sack Attack` = ("Sack Attack").asInstanceOf[typings.vexdb.vexdbStrings.`Sack Attack`]
     
-    @scala.inline
-    def Skyrise: typings.vexdb.vexdbStrings.Skyrise = "Skyrise".asInstanceOf[typings.vexdb.vexdbStrings.Skyrise]
+    inline def Skyrise: typings.vexdb.vexdbStrings.Skyrise = "Skyrise".asInstanceOf[typings.vexdb.vexdbStrings.Skyrise]
     
-    @scala.inline
-    def StarStruck: typings.vexdb.vexdbStrings.StarStruck = "StarStruck".asInstanceOf[typings.vexdb.vexdbStrings.StarStruck]
+    inline def StarStruck: typings.vexdb.vexdbStrings.StarStruck = "StarStruck".asInstanceOf[typings.vexdb.vexdbStrings.StarStruck]
     
-    @scala.inline
-    def `Toss Up`: typings.vexdb.vexdbStrings.`Toss Up` = ("Toss Up").asInstanceOf[typings.vexdb.vexdbStrings.`Toss Up`]
+    inline def `Toss Up`: typings.vexdb.vexdbStrings.`Toss Up` = ("Toss Up").asInstanceOf[typings.vexdb.vexdbStrings.`Toss Up`]
     
-    @scala.inline
-    def `Tower Takeover`: typings.vexdb.vexdbStrings.`Tower Takeover` = ("Tower Takeover").asInstanceOf[typings.vexdb.vexdbStrings.`Tower Takeover`]
+    inline def `Tower Takeover`: typings.vexdb.vexdbStrings.`Tower Takeover` = ("Tower Takeover").asInstanceOf[typings.vexdb.vexdbStrings.`Tower Takeover`]
     
-    @scala.inline
-    def `Turning Point`: typings.vexdb.vexdbStrings.`Turning Point` = ("Turning Point").asInstanceOf[typings.vexdb.vexdbStrings.`Turning Point`]
+    inline def `Turning Point`: typings.vexdb.vexdbStrings.`Turning Point` = ("Turning Point").asInstanceOf[typings.vexdb.vexdbStrings.`Turning Point`]
     
-    @scala.inline
-    def current: typings.vexdb.vexdbStrings.current = "current".asInstanceOf[typings.vexdb.vexdbStrings.current]
+    inline def current: typings.vexdb.vexdbStrings.current = "current".asInstanceOf[typings.vexdb.vexdbStrings.current]
   }
   
   trait SkillsRequestObject
@@ -1340,115 +1084,84 @@ object requestObjectsMod {
   }
   object SkillsRequestObject {
     
-    @scala.inline
-    def apply(): SkillsRequestObject = {
+    inline def apply(): SkillsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkillsRequestObject]
     }
     
-    @scala.inline
-    implicit class SkillsRequestObjectMutableBuilder[Self <: SkillsRequestObject] (val x: Self) extends AnyVal {
+    extension [Self <: SkillsRequestObject](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Filter[SkillsResponseObject, attempts, Double]): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Filter[SkillsResponseObject, attempts, Double]): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsFunction2(
+      inline def setAttemptsFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "attempts", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+      inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
       
-      @scala.inline
-      def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
+      inline def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
+      inline def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
       
-      @scala.inline
-      def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+      inline def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
+      inline def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
       
-      @scala.inline
-      def setProgram(value: Filter[SkillsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Filter[SkillsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramFunction2(
+      inline def setProgramFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "program", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setRank(value: Filter[SkillsResponseObject, rank, Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+      inline def setRank(value: Filter[SkillsResponseObject, rank, Double]): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankFunction2(
+      inline def setRankFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "rank", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+      inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       
-      @scala.inline
-      def setScore(value: Filter[SkillsResponseObject, score, Double]): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Filter[SkillsResponseObject, score, Double]): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoreFunction2(
+      inline def setScoreFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "score", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+      inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
       
-      @scala.inline
-      def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
+      inline def setSeason(value: Seasons): Self = StObject.set(x, "season", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
+      inline def setSeasonUndefined: Self = StObject.set(x, "season", js.undefined)
       
-      @scala.inline
-      def setSeason_rank(value: Double): Self = StObject.set(x, "season_rank", value.asInstanceOf[js.Any])
+      inline def setSeason_rank(value: Double): Self = StObject.set(x, "season_rank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeason_rankUndefined: Self = StObject.set(x, "season_rank", js.undefined)
+      inline def setSeason_rankUndefined: Self = StObject.set(x, "season_rank", js.undefined)
       
-      @scala.inline
-      def setSku(value: Filter[SkillsResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: Filter[SkillsResponseObject, sku, String]): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkuFunction2(
+      inline def setSkuFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "sku", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+      inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
       
-      @scala.inline
-      def setTeam(value: Filter[SkillsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: Filter[SkillsResponseObject, team, String]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamFunction2(
+      inline def setTeamFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "team", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
       
-      @scala.inline
-      def setType(value: Filter[SkillsResponseObject, `type`, SkillsType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Filter[SkillsResponseObject, `type`, SkillsType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction2(
+      inline def setTypeFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, SkillsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -1486,143 +1199,104 @@ object requestObjectsMod {
   }
   object TeamsRequestObject {
     
-    @scala.inline
-    def apply(): TeamsRequestObject = {
+    inline def apply(): TeamsRequestObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TeamsRequestObject]
     }
     
-    @scala.inline
-    implicit class TeamsRequestObjectMutableBuilder[Self <: TeamsRequestObject] (val x: Self) extends AnyVal {
+    extension [Self <: TeamsRequestObject](x: Self) {
       
-      @scala.inline
-      def setCity(value: Filter[TeamsResponseObject, city, String]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: Filter[TeamsResponseObject, city, String]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCityFunction2(
+      inline def setCityFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "city", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+      inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
       
-      @scala.inline
-      def setCountry(value: Filter[TeamsResponseObject, country, String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: Filter[TeamsResponseObject, country, String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryFunction2(
+      inline def setCountryFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "country", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setGrade(value: Filter[TeamsResponseObject, country, Grades]): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
+      inline def setGrade(value: Filter[TeamsResponseObject, country, Grades]): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradeFunction2(
+      inline def setGradeFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "grade", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
+      inline def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
       
-      @scala.inline
-      def setIs_registered(value: `0` | `1`): Self = StObject.set(x, "is_registered", value.asInstanceOf[js.Any])
+      inline def setIs_registered(value: `0` | `1`): Self = StObject.set(x, "is_registered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_registeredUndefined: Self = StObject.set(x, "is_registered", js.undefined)
+      inline def setIs_registeredUndefined: Self = StObject.set(x, "is_registered", js.undefined)
       
-      @scala.inline
-      def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
+      inline def setLimit_number(value: Double): Self = StObject.set(x, "limit_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
+      inline def setLimit_numberUndefined: Self = StObject.set(x, "limit_number", js.undefined)
       
-      @scala.inline
-      def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
+      inline def setLimit_start(value: Double): Self = StObject.set(x, "limit_start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
+      inline def setLimit_startUndefined: Self = StObject.set(x, "limit_start", js.undefined)
       
-      @scala.inline
-      def setNumber(value: Filter[TeamsResponseObject, number, String]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Filter[TeamsResponseObject, number, String]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFunction2(
+      inline def setNumberFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "number", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setOrganisation(value: Filter[TeamsResponseObject, organisation, String]): Self = StObject.set(x, "organisation", value.asInstanceOf[js.Any])
+      inline def setOrganisation(value: Filter[TeamsResponseObject, organisation, String]): Self = StObject.set(x, "organisation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganisationFunction2(
+      inline def setOrganisationFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "organisation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOrganisationUndefined: Self = StObject.set(x, "organisation", js.undefined)
+      inline def setOrganisationUndefined: Self = StObject.set(x, "organisation", js.undefined)
       
-      @scala.inline
-      def setProgram(value: Filter[TeamsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Filter[TeamsResponseObject, program, Programs]): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramFunction2(
+      inline def setProgramFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "program", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setRegion(value: Filter[TeamsResponseObject, region, String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Filter[TeamsResponseObject, region, String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFunction2(
+      inline def setRegionFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "region", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRobot_name(value: Filter[TeamsResponseObject, robot_name, String]): Self = StObject.set(x, "robot_name", value.asInstanceOf[js.Any])
+      inline def setRobot_name(value: Filter[TeamsResponseObject, robot_name, String]): Self = StObject.set(x, "robot_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRobot_nameFunction2(
+      inline def setRobot_nameFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "robot_name", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRobot_nameUndefined: Self = StObject.set(x, "robot_name", js.undefined)
+      inline def setRobot_nameUndefined: Self = StObject.set(x, "robot_name", js.undefined)
       
-      @scala.inline
-      def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+      inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+      inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
       
-      @scala.inline
-      def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
+      inline def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
       
-      @scala.inline
-      def setTeam_name(value: Filter[TeamsResponseObject, team_name, String]): Self = StObject.set(x, "team_name", value.asInstanceOf[js.Any])
+      inline def setTeam_name(value: Filter[TeamsResponseObject, team_name, String]): Self = StObject.set(x, "team_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam_nameFunction2(
+      inline def setTeam_nameFunction2(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: ResponseObject[Key] */ /* key */ js.Any, TeamsResponseObject) => js.Promise[Boolean] | Boolean
       ): Self = StObject.set(x, "team_name", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTeam_nameUndefined: Self = StObject.set(x, "team_name", js.undefined)
+      inline def setTeam_nameUndefined: Self = StObject.set(x, "team_name", js.undefined)
     }
   }
 }

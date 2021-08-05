@@ -18,19 +18,15 @@ trait MapObj extends StObject {
 }
 object MapObj {
   
-  @scala.inline
-  def apply(geoJson: js.Object, specialAreas: js.Object): MapObj = {
+  inline def apply(geoJson: js.Object, specialAreas: js.Object): MapObj = {
     val __obj = js.Dynamic.literal(geoJson = geoJson.asInstanceOf[js.Any], specialAreas = specialAreas.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapObj]
   }
   
-  @scala.inline
-  implicit class MapObjMutableBuilder[Self <: MapObj] (val x: Self) extends AnyVal {
+  extension [Self <: MapObj](x: Self) {
     
-    @scala.inline
-    def setGeoJson(value: js.Object): Self = StObject.set(x, "geoJson", value.asInstanceOf[js.Any])
+    inline def setGeoJson(value: js.Object): Self = StObject.set(x, "geoJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialAreas(value: js.Object): Self = StObject.set(x, "specialAreas", value.asInstanceOf[js.Any])
+    inline def setSpecialAreas(value: js.Object): Self = StObject.set(x, "specialAreas", value.asInstanceOf[js.Any])
   }
 }

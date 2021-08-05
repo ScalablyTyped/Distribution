@@ -23,22 +23,17 @@ trait ASPxClientParametersResetEventArgs
 }
 object ASPxClientParametersResetEventArgs {
   
-  @scala.inline
-  def apply(Parameters: js.Array[ASPxClientWebDocumentViewerParameter], ParametersViewModel: js.Any): ASPxClientParametersResetEventArgs = {
+  inline def apply(Parameters: js.Array[ASPxClientWebDocumentViewerParameter], ParametersViewModel: js.Any): ASPxClientParametersResetEventArgs = {
     val __obj = js.Dynamic.literal(Parameters = Parameters.asInstanceOf[js.Any], ParametersViewModel = ParametersViewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientParametersResetEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientParametersResetEventArgsMutableBuilder[Self <: ASPxClientParametersResetEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientParametersResetEventArgs](x: Self) {
     
-    @scala.inline
-    def setParameters(value: js.Array[ASPxClientWebDocumentViewerParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[ASPxClientWebDocumentViewerParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: ASPxClientWebDocumentViewerParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ASPxClientWebDocumentViewerParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setParametersViewModel(value: js.Any): Self = StObject.set(x, "ParametersViewModel", value.asInstanceOf[js.Any])
+    inline def setParametersViewModel(value: js.Any): Self = StObject.set(x, "ParametersViewModel", value.asInstanceOf[js.Any])
   }
 }

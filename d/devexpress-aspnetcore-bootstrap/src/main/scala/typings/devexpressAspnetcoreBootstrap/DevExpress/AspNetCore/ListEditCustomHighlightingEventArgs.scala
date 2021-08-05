@@ -14,19 +14,15 @@ trait ListEditCustomHighlightingEventArgs
 }
 object ListEditCustomHighlightingEventArgs {
   
-  @scala.inline
-  def apply(filter: String, highlighting: js.Any, sender: Control): ListEditCustomHighlightingEventArgs = {
+  inline def apply(filter: String, highlighting: js.Any, sender: Control): ListEditCustomHighlightingEventArgs = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], highlighting = highlighting.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEditCustomHighlightingEventArgs]
   }
   
-  @scala.inline
-  implicit class ListEditCustomHighlightingEventArgsMutableBuilder[Self <: ListEditCustomHighlightingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ListEditCustomHighlightingEventArgs](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlighting(value: js.Any): Self = StObject.set(x, "highlighting", value.asInstanceOf[js.Any])
+    inline def setHighlighting(value: js.Any): Self = StObject.set(x, "highlighting", value.asInstanceOf[js.Any])
   }
 }

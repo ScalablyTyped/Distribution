@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HighPrecisionDistanceScalesInput extends StObject
 object HighPrecisionDistanceScalesInput {
   
-  @scala.inline
-  def BaseHighPrecisionDistance(latitude: Double, longitude: Double, zoom: Double): typings.viewportMercatorProject.anon.BaseHighPrecisionDistance = {
+  inline def BaseHighPrecisionDistance(latitude: Double, longitude: Double, zoom: Double): typings.viewportMercatorProject.anon.BaseHighPrecisionDistance = {
     val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.viewportMercatorProject.anon.BaseHighPrecisionDistance]
   }
   
-  @scala.inline
-  def BaseHighPrecisionDistanceHighPrecision(latitude: Double, longitude: Double, scale: Double): typings.viewportMercatorProject.anon.BaseHighPrecisionDistanceHighPrecision = {
+  inline def BaseHighPrecisionDistanceHighPrecision(latitude: Double, longitude: Double, scale: Double): typings.viewportMercatorProject.anon.BaseHighPrecisionDistanceHighPrecision = {
     val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.viewportMercatorProject.anon.BaseHighPrecisionDistanceHighPrecision]
   }

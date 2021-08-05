@@ -82,37 +82,27 @@ trait SchemaPipelineParameter extends StObject {
 }
 object SchemaPipelineParameter {
   
-  @scala.inline
-  def apply(): SchemaPipelineParameter = {
+  inline def apply(): SchemaPipelineParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPipelineParameter]
   }
   
-  @scala.inline
-  implicit class SchemaPipelineParameterMutableBuilder[Self <: SchemaPipelineParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPipelineParameter](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLocalCopy(value: SchemaLocalCopy): Self = StObject.set(x, "localCopy", value.asInstanceOf[js.Any])
+    inline def setLocalCopy(value: SchemaLocalCopy): Self = StObject.set(x, "localCopy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalCopyUndefined: Self = StObject.set(x, "localCopy", js.undefined)
+    inline def setLocalCopyUndefined: Self = StObject.set(x, "localCopy", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

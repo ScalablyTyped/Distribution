@@ -33,8 +33,7 @@ object withViewportMatchMod {
     * ```
     */
   // prettier-ignore
-  @scala.inline
-  def default[T /* <: Record[String, String] */](queries: T): js.Function1[
+  inline def default[T /* <: Record[String, String] */](queries: T): js.Function1[
     /* component */ ComponentType[js.Any], 
     ComponentType[Omit[js.Any, /* keyof T */ String]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(queries.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

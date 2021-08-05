@@ -19,13 +19,13 @@ object transactionManagerMod {
   class Transaction protected () extends StObject {
     def this(transactionType: TransactionType, transactionManager: TransactionManager) = this()
     
-    var checkTransaction: js.Any = js.native
+    /* private */ var checkTransaction: js.Any = js.native
     
     def commit(): Unit = js.native
     
     def rollback(): Unit = js.native
     
-    var transactionManager: js.Any = js.native
+    /* private */ var transactionManager: js.Any = js.native
     
     val transactionType: TransactionType = js.native
   }
@@ -35,12 +35,12 @@ object transactionManagerMod {
   class TransactionManager protected () extends StObject {
     def this(model: AbstractModel, errorCallback: IErrorCallback) = this()
     
-    var beginImplicitTransaction: js.Any = js.native
+    /* private */ var beginImplicitTransaction: js.Any = js.native
     
     def beginTransaction(): Transaction = js.native
     def beginTransaction(commitCurrentImplicitTransaction: Boolean): Transaction = js.native
     
-    var checkModel: js.Any = js.native
+    /* private */ var checkModel: js.Any = js.native
     
     def commit(): Unit = js.native
     
@@ -48,13 +48,13 @@ object transactionManagerMod {
     
     def deltaReceived(delta: Delta): Unit = js.native
     
-    var detachedRequiredProperties: js.Any = js.native
+    /* private */ var detachedRequiredProperties: js.Any = js.native
     
-    var errorCallback: js.Any = js.native
+    /* private */ var errorCallback: js.Any = js.native
     
-    var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: js.Any = js.native
     
-    var model: js.Any = js.native
+    /* private */ var model: js.Any = js.native
     
     def onCommitted(callback: js.Function0[Unit]): Unit = js.native
     
@@ -63,20 +63,14 @@ object transactionManagerMod {
     def rollback(): Unit = js.native
   }
   
-  @scala.inline
-  def beginTransaction(model: IAbstractModel): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("beginTransaction")(model.asInstanceOf[js.Any]).asInstanceOf[Transaction]
-  @scala.inline
-  def beginTransaction(model: IAbstractModel, options: ITransactionOptions): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("beginTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
+  inline def beginTransaction(model: IAbstractModel): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("beginTransaction")(model.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+  inline def beginTransaction(model: IAbstractModel, options: ITransactionOptions): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("beginTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   
-  @scala.inline
-  def runInTransaction[T](model: IAbstractModel, action: js.Function0[js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def runInTransaction[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def runInTransaction[T](model: IAbstractModel, action: js.Function0[js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def runInTransaction[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def runInTransaction_T_T[T](model: IAbstractModel, action: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def runInTransaction_T_T[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def runInTransaction_T_T[T](model: IAbstractModel, action: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def runInTransaction_T_T[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait ITransactionOptions extends StObject {
     
@@ -84,17 +78,14 @@ object transactionManagerMod {
   }
   object ITransactionOptions {
     
-    @scala.inline
-    def apply(commitCurrentImplicitTransaction: Boolean): ITransactionOptions = {
+    inline def apply(commitCurrentImplicitTransaction: Boolean): ITransactionOptions = {
       val __obj = js.Dynamic.literal(commitCurrentImplicitTransaction = commitCurrentImplicitTransaction.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITransactionOptions]
     }
     
-    @scala.inline
-    implicit class ITransactionOptionsMutableBuilder[Self <: ITransactionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITransactionOptions](x: Self) {
       
-      @scala.inline
-      def setCommitCurrentImplicitTransaction(value: Boolean): Self = StObject.set(x, "commitCurrentImplicitTransaction", value.asInstanceOf[js.Any])
+      inline def setCommitCurrentImplicitTransaction(value: Boolean): Self = StObject.set(x, "commitCurrentImplicitTransaction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,10 +96,8 @@ object transactionManagerMod {
   trait TransactionType extends StObject
   object TransactionType {
     
-    @scala.inline
-    def explicit: typings.mendixmodelsdk.mendixmodelsdkStrings.explicit = "explicit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.explicit]
+    inline def explicit: typings.mendixmodelsdk.mendixmodelsdkStrings.explicit = "explicit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.explicit]
     
-    @scala.inline
-    def `implicit`: typings.mendixmodelsdk.mendixmodelsdkStrings.`implicit` = "implicit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.`implicit`]
+    inline def `implicit`: typings.mendixmodelsdk.mendixmodelsdkStrings.`implicit` = "implicit".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.`implicit`]
   }
 }

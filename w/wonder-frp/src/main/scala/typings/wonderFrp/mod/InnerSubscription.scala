@@ -21,11 +21,9 @@ object InnerSubscription {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     subject: typings.wonderFrp.generatorSubjectMod.GeneratorSubject,
     observer: typings.wonderFrp.observerMod.Observer
   ): typings.wonderFrp.innerSubscriptionMod.InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.innerSubscriptionMod.InnerSubscription]
-  @scala.inline
-  def create(subject: typings.wonderFrp.subjectMod.Subject, observer: typings.wonderFrp.observerMod.Observer): typings.wonderFrp.innerSubscriptionMod.InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.innerSubscriptionMod.InnerSubscription]
+  inline def create(subject: typings.wonderFrp.subjectMod.Subject, observer: typings.wonderFrp.observerMod.Observer): typings.wonderFrp.innerSubscriptionMod.InnerSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subject.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.innerSubscriptionMod.InnerSubscription]
 }

@@ -10,8 +10,7 @@ trait ScopeOptions
      with UseMasterKeyOption
 object ScopeOptions {
   
-  @scala.inline
-  def apply(): ScopeOptions = {
+  inline def apply(): ScopeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScopeOptions]
   }

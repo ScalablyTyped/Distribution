@@ -12,8 +12,7 @@ trait Store extends StObject {
 }
 object Store {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     Store: typings.activexOutlook.Outlook.Store
   ): Store = {
@@ -21,15 +20,12 @@ object Store {
     __obj.asInstanceOf[Store]
   }
   
-  @scala.inline
-  implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+  extension [Self <: Store](x: Self) {
     
-    @scala.inline
-    def setCommandBar(
+    inline def setCommandBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
     ): Self = StObject.set(x, "CommandBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: typings.activexOutlook.Outlook.Store): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
+    inline def setStore(value: typings.activexOutlook.Outlook.Store): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
   }
 }

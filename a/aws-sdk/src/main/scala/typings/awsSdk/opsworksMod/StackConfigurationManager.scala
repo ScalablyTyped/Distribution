@@ -18,25 +18,19 @@ trait StackConfigurationManager extends StObject {
 }
 object StackConfigurationManager {
   
-  @scala.inline
-  def apply(): StackConfigurationManager = {
+  inline def apply(): StackConfigurationManager = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackConfigurationManager]
   }
   
-  @scala.inline
-  implicit class StackConfigurationManagerMutableBuilder[Self <: StackConfigurationManager] (val x: Self) extends AnyVal {
+  extension [Self <: StackConfigurationManager](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

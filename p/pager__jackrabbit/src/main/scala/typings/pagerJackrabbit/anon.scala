@@ -15,20 +15,16 @@ object anon {
   }
   object Amqp {
     
-    @scala.inline
-    def apply(amqp: js.Any, connection: Connection): Amqp = {
+    inline def apply(amqp: js.Any, connection: Connection): Amqp = {
       val __obj = js.Dynamic.literal(amqp = amqp.asInstanceOf[js.Any], connection = connection.asInstanceOf[js.Any])
       __obj.asInstanceOf[Amqp]
     }
     
-    @scala.inline
-    implicit class AmqpMutableBuilder[Self <: Amqp] (val x: Self) extends AnyVal {
+    extension [Self <: Amqp](x: Self) {
       
-      @scala.inline
-      def setAmqp(value: js.Any): Self = StObject.set(x, "amqp", value.asInstanceOf[js.Any])
+      inline def setAmqp(value: js.Any): Self = StObject.set(x, "amqp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     }
   }
 }

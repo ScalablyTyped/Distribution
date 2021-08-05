@@ -42,17 +42,14 @@ object implementationMod {
   }
   object ImplementationMiddleware {
     
-    @scala.inline
-    def apply(): ImplementationMiddleware = {
+    inline def apply(): ImplementationMiddleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImplementationMiddleware]
     }
     
-    @scala.inline
-    implicit class ImplementationMiddlewareMutableBuilder[Self <: ImplementationMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: ImplementationMiddleware](x: Self) {
       
-      @scala.inline
-      def setProvideImplementation(
+      inline def setProvideImplementation(
         value: js.ThisFunction4[
               /* this */ Unit, 
               /* document */ TextDocument, 
@@ -63,8 +60,7 @@ object implementationMod {
             ]
       ): Self = StObject.set(x, "provideImplementation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvideImplementationUndefined: Self = StObject.set(x, "provideImplementation", js.undefined)
+      inline def setProvideImplementationUndefined: Self = StObject.set(x, "provideImplementation", js.undefined)
     }
   }
   

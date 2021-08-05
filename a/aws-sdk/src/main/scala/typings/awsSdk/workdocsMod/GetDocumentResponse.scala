@@ -18,25 +18,19 @@ trait GetDocumentResponse extends StObject {
 }
 object GetDocumentResponse {
   
-  @scala.inline
-  def apply(): GetDocumentResponse = {
+  inline def apply(): GetDocumentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDocumentResponse]
   }
   
-  @scala.inline
-  implicit class GetDocumentResponseMutableBuilder[Self <: GetDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setCustomMetadata(value: CustomMetadataMap): Self = StObject.set(x, "CustomMetadata", value.asInstanceOf[js.Any])
+    inline def setCustomMetadata(value: CustomMetadataMap): Self = StObject.set(x, "CustomMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMetadataUndefined: Self = StObject.set(x, "CustomMetadata", js.undefined)
+    inline def setCustomMetadataUndefined: Self = StObject.set(x, "CustomMetadata", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: DocumentMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: DocumentMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
   }
 }

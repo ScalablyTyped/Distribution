@@ -10,19 +10,16 @@ trait Cookie extends StObject {
 }
 object Cookie {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cookie: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Cookie */ js.Any
   ): Cookie = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cookie]
   }
   
-  @scala.inline
-  implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+  extension [Self <: Cookie](x: Self) {
     
-    @scala.inline
-    def setCookie(
+    inline def setCookie(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.Cookie */ js.Any
     ): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
   }

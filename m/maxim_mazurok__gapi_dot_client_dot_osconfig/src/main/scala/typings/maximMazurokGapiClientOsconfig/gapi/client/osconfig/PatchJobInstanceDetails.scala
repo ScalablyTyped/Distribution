@@ -23,43 +23,31 @@ trait PatchJobInstanceDetails extends StObject {
 }
 object PatchJobInstanceDetails {
   
-  @scala.inline
-  def apply(): PatchJobInstanceDetails = {
+  inline def apply(): PatchJobInstanceDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchJobInstanceDetails]
   }
   
-  @scala.inline
-  implicit class PatchJobInstanceDetailsMutableBuilder[Self <: PatchJobInstanceDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PatchJobInstanceDetails](x: Self) {
     
-    @scala.inline
-    def setAttemptCount(value: String): Self = StObject.set(x, "attemptCount", value.asInstanceOf[js.Any])
+    inline def setAttemptCount(value: String): Self = StObject.set(x, "attemptCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptCountUndefined: Self = StObject.set(x, "attemptCount", js.undefined)
+    inline def setAttemptCountUndefined: Self = StObject.set(x, "attemptCount", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setInstanceSystemId(value: String): Self = StObject.set(x, "instanceSystemId", value.asInstanceOf[js.Any])
+    inline def setInstanceSystemId(value: String): Self = StObject.set(x, "instanceSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceSystemIdUndefined: Self = StObject.set(x, "instanceSystemId", js.undefined)
+    inline def setInstanceSystemIdUndefined: Self = StObject.set(x, "instanceSystemId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

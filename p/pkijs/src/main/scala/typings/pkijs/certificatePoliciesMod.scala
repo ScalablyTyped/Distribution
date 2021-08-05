@@ -32,13 +32,10 @@ object certificatePoliciesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait CertificatePolicies extends StObject {
@@ -53,8 +50,7 @@ object certificatePoliciesMod {
   }
   object CertificatePolicies {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       certificatePolicies: js.Array[typings.pkijs.policyInformationMod.default],
       fromSchema: js.Any => Unit,
       toJSON: () => js.Any,
@@ -64,23 +60,17 @@ object certificatePoliciesMod {
       __obj.asInstanceOf[CertificatePolicies]
     }
     
-    @scala.inline
-    implicit class CertificatePoliciesMutableBuilder[Self <: CertificatePolicies] (val x: Self) extends AnyVal {
+    extension [Self <: CertificatePolicies](x: Self) {
       
-      @scala.inline
-      def setCertificatePolicies(value: js.Array[typings.pkijs.policyInformationMod.default]): Self = StObject.set(x, "certificatePolicies", value.asInstanceOf[js.Any])
+      inline def setCertificatePolicies(value: js.Array[typings.pkijs.policyInformationMod.default]): Self = StObject.set(x, "certificatePolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificatePoliciesVarargs(value: typings.pkijs.policyInformationMod.default*): Self = StObject.set(x, "certificatePolicies", js.Array(value :_*))
+      inline def setCertificatePoliciesVarargs(value: typings.pkijs.policyInformationMod.default*): Self = StObject.set(x, "certificatePolicies", js.Array(value :_*))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

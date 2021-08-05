@@ -16,8 +16,7 @@ trait ITransports extends StObject {
 }
 object ITransports {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: TransportType => ITransportFactoryFactory,
     isRegistered: TransportType => Boolean,
     list: () => js.Array[TransportType],
@@ -27,19 +26,14 @@ object ITransports {
     __obj.asInstanceOf[ITransports]
   }
   
-  @scala.inline
-  implicit class ITransportsMutableBuilder[Self <: ITransports] (val x: Self) extends AnyVal {
+  extension [Self <: ITransports](x: Self) {
     
-    @scala.inline
-    def setGet(value: TransportType => ITransportFactoryFactory): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: TransportType => ITransportFactoryFactory): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsRegistered(value: TransportType => Boolean): Self = StObject.set(x, "isRegistered", js.Any.fromFunction1(value))
+    inline def setIsRegistered(value: TransportType => Boolean): Self = StObject.set(x, "isRegistered", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setList(value: () => js.Array[TransportType]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => js.Array[TransportType]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegister(value: (TransportType, ITransportFactoryFactory) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (TransportType, ITransportFactoryFactory) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
   }
 }

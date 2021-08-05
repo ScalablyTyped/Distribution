@@ -16,7 +16,7 @@ trait Filter extends StObject {
   
   val Criteria2: js.Any
   
-  @JSName("Excel.Filter_typekey")
+  /* private */ @JSName("Excel.Filter_typekey")
   var ExcelDotFilter_typekey: Filter
   
   val On: Boolean
@@ -29,8 +29,7 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: XlCreator,
@@ -47,37 +46,26 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteria1(value: js.Any): Self = StObject.set(x, "Criteria1", value.asInstanceOf[js.Any])
+    inline def setCriteria1(value: js.Any): Self = StObject.set(x, "Criteria1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteria2(value: js.Any): Self = StObject.set(x, "Criteria2", value.asInstanceOf[js.Any])
+    inline def setCriteria2(value: js.Any): Self = StObject.set(x, "Criteria2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotFilter_typekey(value: Filter): Self = StObject.set(x, "Excel.Filter_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotFilter_typekey(value: Filter): Self = StObject.set(x, "Excel.Filter_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn(value: Boolean): Self = StObject.set(x, "On", value.asInstanceOf[js.Any])
+    inline def setOn(value: Boolean): Self = StObject.set(x, "On", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: XlAutoFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: XlAutoFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Operator(value: XlAutoFilterOperator): Self = StObject.set(x, "_Operator", value.asInstanceOf[js.Any])
+    inline def set_Operator(value: XlAutoFilterOperator): Self = StObject.set(x, "_Operator", value.asInstanceOf[js.Any])
   }
 }

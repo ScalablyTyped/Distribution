@@ -11,6 +11,5 @@ object renderLatexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(text: String, delimiters: js.Array[Delimiter], strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], delimiters.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(text: String, delimiters: js.Array[Delimiter], strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], delimiters.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
 }

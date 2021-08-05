@@ -14,8 +14,7 @@ trait IBaseGeometry
 }
 object IBaseGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: IEventManager[js.Object],
     getBounds: () => js.Array[js.Array[Double]] | Null,
     getType: () => String
@@ -24,13 +23,10 @@ object IBaseGeometry {
     __obj.asInstanceOf[IBaseGeometry]
   }
   
-  @scala.inline
-  implicit class IBaseGeometryMutableBuilder[Self <: IBaseGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: IBaseGeometry](x: Self) {
     
-    @scala.inline
-    def setGetBounds(value: () => js.Array[js.Array[Double]] | Null): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
+    inline def setGetBounds(value: () => js.Array[js.Array[Double]] | Null): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
   }
 }

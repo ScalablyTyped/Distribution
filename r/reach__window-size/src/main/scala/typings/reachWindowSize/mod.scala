@@ -20,17 +20,14 @@ object mod extends Shortcut {
   }
   object WindowSizeProps {
     
-    @scala.inline
-    def apply(children: Height => ReactNode): WindowSizeProps = {
+    inline def apply(children: Height => ReactNode): WindowSizeProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[WindowSizeProps]
     }
     
-    @scala.inline
-    implicit class WindowSizePropsMutableBuilder[Self <: WindowSizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: WindowSizeProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Height => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: Height => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   

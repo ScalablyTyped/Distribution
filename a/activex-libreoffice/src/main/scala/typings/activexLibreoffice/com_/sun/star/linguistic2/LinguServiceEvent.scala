@@ -31,16 +31,13 @@ trait LinguServiceEvent
 }
 object LinguServiceEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, nEvent: Double): LinguServiceEvent = {
+  inline def apply(Source: XInterface, nEvent: Double): LinguServiceEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], nEvent = nEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinguServiceEvent]
   }
   
-  @scala.inline
-  implicit class LinguServiceEventMutableBuilder[Self <: LinguServiceEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LinguServiceEvent](x: Self) {
     
-    @scala.inline
-    def setNEvent(value: Double): Self = StObject.set(x, "nEvent", value.asInstanceOf[js.Any])
+    inline def setNEvent(value: Double): Self = StObject.set(x, "nEvent", value.asInstanceOf[js.Any])
   }
 }

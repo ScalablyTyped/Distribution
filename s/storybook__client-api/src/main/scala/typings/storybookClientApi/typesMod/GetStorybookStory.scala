@@ -15,25 +15,19 @@ trait GetStorybookStory extends StObject {
 }
 object GetStorybookStory {
   
-  @scala.inline
-  def apply(name: String, render: StoryFn[js.Any]): GetStorybookStory = {
+  inline def apply(name: String, render: StoryFn[js.Any]): GetStorybookStory = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorybookStory]
   }
   
-  @scala.inline
-  implicit class GetStorybookStoryMutableBuilder[Self <: GetStorybookStory] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorybookStory](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: StoryFn[js.Any]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: StoryFn[js.Any]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRenderFunction1(value: /* p */ js.UndefOr[StoryContext] => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRenderFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
   }
 }

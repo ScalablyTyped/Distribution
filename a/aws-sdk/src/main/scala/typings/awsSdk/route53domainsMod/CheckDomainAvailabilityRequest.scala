@@ -18,22 +18,17 @@ trait CheckDomainAvailabilityRequest extends StObject {
 }
 object CheckDomainAvailabilityRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): CheckDomainAvailabilityRequest = {
+  inline def apply(DomainName: DomainName): CheckDomainAvailabilityRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckDomainAvailabilityRequest]
   }
   
-  @scala.inline
-  implicit class CheckDomainAvailabilityRequestMutableBuilder[Self <: CheckDomainAvailabilityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CheckDomainAvailabilityRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdnLangCode(value: LangCode): Self = StObject.set(x, "IdnLangCode", value.asInstanceOf[js.Any])
+    inline def setIdnLangCode(value: LangCode): Self = StObject.set(x, "IdnLangCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdnLangCodeUndefined: Self = StObject.set(x, "IdnLangCode", js.undefined)
+    inline def setIdnLangCodeUndefined: Self = StObject.set(x, "IdnLangCode", js.undefined)
   }
 }

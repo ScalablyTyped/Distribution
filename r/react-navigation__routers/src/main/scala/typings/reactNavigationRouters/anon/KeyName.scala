@@ -18,19 +18,15 @@ trait KeyName[RouteName /* <: String */] extends StObject {
 }
 object KeyName {
   
-  @scala.inline
-  def apply[RouteName /* <: String */](key: String, name: RouteName): KeyName[RouteName] = {
+  inline def apply[RouteName /* <: String */](key: String, name: RouteName): KeyName[RouteName] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyName[RouteName]]
   }
   
-  @scala.inline
-  implicit class KeyNameMutableBuilder[Self <: KeyName[?], RouteName /* <: String */] (val x: Self & KeyName[RouteName]) extends AnyVal {
+  extension [Self <: KeyName[?], RouteName /* <: String */](x: Self & KeyName[RouteName]) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait DeleteTransitGatewayPrefixListReferenceResult extends StObject {
 }
 object DeleteTransitGatewayPrefixListReferenceResult {
   
-  @scala.inline
-  def apply(): DeleteTransitGatewayPrefixListReferenceResult = {
+  inline def apply(): DeleteTransitGatewayPrefixListReferenceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTransitGatewayPrefixListReferenceResult]
   }
   
-  @scala.inline
-  implicit class DeleteTransitGatewayPrefixListReferenceResultMutableBuilder[Self <: DeleteTransitGatewayPrefixListReferenceResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTransitGatewayPrefixListReferenceResult](x: Self) {
     
-    @scala.inline
-    def setTransitGatewayPrefixListReference(value: TransitGatewayPrefixListReference): Self = StObject.set(x, "TransitGatewayPrefixListReference", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayPrefixListReference(value: TransitGatewayPrefixListReference): Self = StObject.set(x, "TransitGatewayPrefixListReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayPrefixListReferenceUndefined: Self = StObject.set(x, "TransitGatewayPrefixListReference", js.undefined)
+    inline def setTransitGatewayPrefixListReferenceUndefined: Self = StObject.set(x, "TransitGatewayPrefixListReference", js.undefined)
   }
 }

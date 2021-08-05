@@ -42,8 +42,7 @@ trait ServiceAccount extends StObject {
 }
 object ServiceAccount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automountServiceAccountToken: Boolean,
     imagePullSecrets: js.Array[LocalObjectReference],
     metadata: ObjectMeta,
@@ -53,31 +52,22 @@ object ServiceAccount {
     __obj.asInstanceOf[ServiceAccount]
   }
   
-  @scala.inline
-  implicit class ServiceAccountMutableBuilder[Self <: ServiceAccount] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccount](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomountServiceAccountToken(value: Boolean): Self = StObject.set(x, "automountServiceAccountToken", value.asInstanceOf[js.Any])
+    inline def setAutomountServiceAccountToken(value: Boolean): Self = StObject.set(x, "automountServiceAccountToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePullSecrets(value: js.Array[LocalObjectReference]): Self = StObject.set(x, "imagePullSecrets", value.asInstanceOf[js.Any])
+    inline def setImagePullSecrets(value: js.Array[LocalObjectReference]): Self = StObject.set(x, "imagePullSecrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePullSecretsVarargs(value: LocalObjectReference*): Self = StObject.set(x, "imagePullSecrets", js.Array(value :_*))
+    inline def setImagePullSecretsVarargs(value: LocalObjectReference*): Self = StObject.set(x, "imagePullSecrets", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ServiceAccount): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.ServiceAccount): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecrets(value: js.Array[ObjectReference]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setSecrets(value: js.Array[ObjectReference]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsVarargs(value: ObjectReference*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: ObjectReference*): Self = StObject.set(x, "secrets", js.Array(value :_*))
   }
 }

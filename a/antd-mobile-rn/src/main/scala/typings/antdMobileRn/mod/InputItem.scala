@@ -19,6 +19,5 @@ object InputItem {
   @JSImport("antd-mobile-rn", "InputItem.defaultProps")
   @js.native
   def defaultProps: Clear = js.native
-  @scala.inline
-  def defaultProps_=(x: Clear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Clear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

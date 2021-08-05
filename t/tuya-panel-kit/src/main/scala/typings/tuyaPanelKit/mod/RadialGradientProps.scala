@@ -17,28 +17,21 @@ trait RadialGradientProps
 }
 object RadialGradientProps {
   
-  @scala.inline
-  def apply(): RadialGradientProps = {
+  inline def apply(): RadialGradientProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadialGradientProps]
   }
   
-  @scala.inline
-  implicit class RadialGradientPropsMutableBuilder[Self <: RadialGradientProps] (val x: Self) extends AnyVal {
+  extension [Self <: RadialGradientProps](x: Self) {
     
-    @scala.inline
-    def setGradientId(value: String): Self = StObject.set(x, "gradientId", value.asInstanceOf[js.Any])
+    inline def setGradientId(value: String): Self = StObject.set(x, "gradientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientIdUndefined: Self = StObject.set(x, "gradientId", js.undefined)
+    inline def setGradientIdUndefined: Self = StObject.set(x, "gradientId", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

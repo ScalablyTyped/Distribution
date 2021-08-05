@@ -16,13 +16,12 @@ trait OMathFunc extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.OMathFunc_typekey")
+  /* private */ @JSName("Word.OMathFunc_typekey")
   var WordDotOMathFunc_typekey: OMathFunc
 }
 object OMathFunc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     E: OMath,
@@ -35,25 +34,18 @@ object OMathFunc {
     __obj.asInstanceOf[OMathFunc]
   }
   
-  @scala.inline
-  implicit class OMathFuncMutableBuilder[Self <: OMathFunc] (val x: Self) extends AnyVal {
+  extension [Self <: OMathFunc](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+    inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFName(value: OMath): Self = StObject.set(x, "FName", value.asInstanceOf[js.Any])
+    inline def setFName(value: OMath): Self = StObject.set(x, "FName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathFunc_typekey(value: OMathFunc): Self = StObject.set(x, "Word.OMathFunc_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathFunc_typekey(value: OMathFunc): Self = StObject.set(x, "Word.OMathFunc_typekey", value.asInstanceOf[js.Any])
   }
 }

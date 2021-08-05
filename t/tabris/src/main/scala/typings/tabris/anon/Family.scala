@@ -16,37 +16,27 @@ trait Family extends StObject {
 }
 object Family {
   
-  @scala.inline
-  def apply(size: Double): Family = {
+  inline def apply(size: Double): Family = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Family]
   }
   
-  @scala.inline
-  implicit class FamilyMutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
+  extension [Self <: Family](x: Self) {
     
-    @scala.inline
-    def setFamily(value: js.Array[String]): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: js.Array[String]): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setFamilyVarargs(value: String*): Self = StObject.set(x, "family", js.Array(value :_*))
+    inline def setFamilyVarargs(value: String*): Self = StObject.set(x, "family", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

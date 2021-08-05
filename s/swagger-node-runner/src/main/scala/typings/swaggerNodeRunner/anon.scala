@@ -35,20 +35,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, version: String): Name = {
+    inline def apply(name: String, version: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,17 +54,14 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(path: js.Any): Path = {
+    inline def apply(path: js.Any): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,17 +88,14 @@ object anon {
   }
   object Register {
     
-    @scala.inline
-    def apply(register: Call): Register = {
+    inline def apply(register: Call): Register = {
       val __obj = js.Dynamic.literal(register = register.asInstanceOf[js.Any])
       __obj.asInstanceOf[Register]
     }
     
-    @scala.inline
-    implicit class RegisterMutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
+    extension [Self <: Register](x: Self) {
       
-      @scala.inline
-      def setRegister(value: Call): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      inline def setRegister(value: Call): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,17 +105,14 @@ object anon {
   }
   object Swagger {
     
-    @scala.inline
-    def apply(swagger: Path): Swagger = {
+    inline def apply(swagger: Path): Swagger = {
       val __obj = js.Dynamic.literal(swagger = swagger.asInstanceOf[js.Any])
       __obj.asInstanceOf[Swagger]
     }
     
-    @scala.inline
-    implicit class SwaggerMutableBuilder[Self <: Swagger] (val x: Self) extends AnyVal {
+    extension [Self <: Swagger](x: Self) {
       
-      @scala.inline
-      def setSwagger(value: Path): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
+      inline def setSwagger(value: Path): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
     }
   }
   

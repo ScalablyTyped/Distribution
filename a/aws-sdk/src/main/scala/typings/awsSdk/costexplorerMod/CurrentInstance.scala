@@ -63,82 +63,57 @@ trait CurrentInstance extends StObject {
 }
 object CurrentInstance {
   
-  @scala.inline
-  def apply(): CurrentInstance = {
+  inline def apply(): CurrentInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrentInstance]
   }
   
-  @scala.inline
-  implicit class CurrentInstanceMutableBuilder[Self <: CurrentInstance] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentInstance](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: GenericString): Self = StObject.set(x, "InstanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: GenericString): Self = StObject.set(x, "InstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "InstanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "InstanceName", js.undefined)
     
-    @scala.inline
-    def setMonthlyCost(value: GenericString): Self = StObject.set(x, "MonthlyCost", value.asInstanceOf[js.Any])
+    inline def setMonthlyCost(value: GenericString): Self = StObject.set(x, "MonthlyCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthlyCostUndefined: Self = StObject.set(x, "MonthlyCost", js.undefined)
+    inline def setMonthlyCostUndefined: Self = StObject.set(x, "MonthlyCost", js.undefined)
     
-    @scala.inline
-    def setOnDemandHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "OnDemandHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    inline def setOnDemandHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "OnDemandHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandHoursInLookbackPeriodUndefined: Self = StObject.set(x, "OnDemandHoursInLookbackPeriod", js.undefined)
+    inline def setOnDemandHoursInLookbackPeriodUndefined: Self = StObject.set(x, "OnDemandHoursInLookbackPeriod", js.undefined)
     
-    @scala.inline
-    def setReservationCoveredHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "ReservationCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    inline def setReservationCoveredHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "ReservationCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationCoveredHoursInLookbackPeriodUndefined: Self = StObject.set(x, "ReservationCoveredHoursInLookbackPeriod", js.undefined)
+    inline def setReservationCoveredHoursInLookbackPeriodUndefined: Self = StObject.set(x, "ReservationCoveredHoursInLookbackPeriod", js.undefined)
     
-    @scala.inline
-    def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
+    inline def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
+    inline def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: GenericString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: GenericString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "ResourceUtilization", value.asInstanceOf[js.Any])
+    inline def setResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "ResourceUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUtilizationUndefined: Self = StObject.set(x, "ResourceUtilization", js.undefined)
+    inline def setResourceUtilizationUndefined: Self = StObject.set(x, "ResourceUtilization", js.undefined)
     
-    @scala.inline
-    def setSavingsPlansCoveredHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "SavingsPlansCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    inline def setSavingsPlansCoveredHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "SavingsPlansCoveredHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavingsPlansCoveredHoursInLookbackPeriodUndefined: Self = StObject.set(x, "SavingsPlansCoveredHoursInLookbackPeriod", js.undefined)
+    inline def setSavingsPlansCoveredHoursInLookbackPeriodUndefined: Self = StObject.set(x, "SavingsPlansCoveredHoursInLookbackPeriod", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagValuesList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagValuesList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagValues*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagValues*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalRunningHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "TotalRunningHoursInLookbackPeriod", value.asInstanceOf[js.Any])
+    inline def setTotalRunningHoursInLookbackPeriod(value: GenericString): Self = StObject.set(x, "TotalRunningHoursInLookbackPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRunningHoursInLookbackPeriodUndefined: Self = StObject.set(x, "TotalRunningHoursInLookbackPeriod", js.undefined)
+    inline def setTotalRunningHoursInLookbackPeriodUndefined: Self = StObject.set(x, "TotalRunningHoursInLookbackPeriod", js.undefined)
   }
 }

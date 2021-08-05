@@ -12,19 +12,15 @@ trait ProviderRedditOptions extends StObject {
 }
 object ProviderRedditOptions {
   
-  @scala.inline
-  def apply(clientId: String, clientSecret: String): ProviderRedditOptions = {
+  inline def apply(clientId: String, clientSecret: String): ProviderRedditOptions = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderRedditOptions]
   }
   
-  @scala.inline
-  implicit class ProviderRedditOptionsMutableBuilder[Self <: ProviderRedditOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderRedditOptions](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
   }
 }

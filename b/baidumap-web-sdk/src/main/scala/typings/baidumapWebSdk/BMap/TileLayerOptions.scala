@@ -16,37 +16,27 @@ trait TileLayerOptions extends StObject {
 }
 object TileLayerOptions {
   
-  @scala.inline
-  def apply(): TileLayerOptions = {
+  inline def apply(): TileLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayerOptions]
   }
   
-  @scala.inline
-  implicit class TileLayerOptionsMutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayerOptions](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: Copyright): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: Copyright): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setTileUrlTemplate(value: String): Self = StObject.set(x, "tileUrlTemplate", value.asInstanceOf[js.Any])
+    inline def setTileUrlTemplate(value: String): Self = StObject.set(x, "tileUrlTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileUrlTemplateUndefined: Self = StObject.set(x, "tileUrlTemplate", js.undefined)
+    inline def setTileUrlTemplateUndefined: Self = StObject.set(x, "tileUrlTemplate", js.undefined)
     
-    @scala.inline
-    def setTransparentPng(value: Boolean): Self = StObject.set(x, "transparentPng", value.asInstanceOf[js.Any])
+    inline def setTransparentPng(value: Boolean): Self = StObject.set(x, "transparentPng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparentPngUndefined: Self = StObject.set(x, "transparentPng", js.undefined)
+    inline def setTransparentPngUndefined: Self = StObject.set(x, "transparentPng", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

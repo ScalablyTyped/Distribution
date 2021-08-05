@@ -12,16 +12,13 @@ trait XYZ
 }
 object XYZ {
   
-  @scala.inline
-  def apply(x: Double, y: Double, z: Double): XYZ = {
+  inline def apply(x: Double, y: Double, z: Double): XYZ = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[XYZ]
   }
   
-  @scala.inline
-  implicit class XYZMutableBuilder[Self <: XYZ] (val x: Self) extends AnyVal {
+  extension [Self <: XYZ](x: Self) {
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

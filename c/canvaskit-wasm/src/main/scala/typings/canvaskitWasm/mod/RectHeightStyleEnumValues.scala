@@ -20,8 +20,7 @@ trait RectHeightStyleEnumValues
 }
 object RectHeightStyleEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IncludeLineSpacingBottom: RectHeightStyle,
     IncludeLineSpacingMiddle: RectHeightStyle,
     IncludeLineSpacingTop: RectHeightStyle,
@@ -33,22 +32,16 @@ object RectHeightStyleEnumValues {
     __obj.asInstanceOf[RectHeightStyleEnumValues]
   }
   
-  @scala.inline
-  implicit class RectHeightStyleEnumValuesMutableBuilder[Self <: RectHeightStyleEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: RectHeightStyleEnumValues](x: Self) {
     
-    @scala.inline
-    def setIncludeLineSpacingBottom(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingBottom", value.asInstanceOf[js.Any])
+    inline def setIncludeLineSpacingBottom(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLineSpacingMiddle(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingMiddle", value.asInstanceOf[js.Any])
+    inline def setIncludeLineSpacingMiddle(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingMiddle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLineSpacingTop(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingTop", value.asInstanceOf[js.Any])
+    inline def setIncludeLineSpacingTop(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: RectHeightStyle): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: RectHeightStyle): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTight(value: RectHeightStyle): Self = StObject.set(x, "Tight", value.asInstanceOf[js.Any])
+    inline def setTight(value: RectHeightStyle): Self = StObject.set(x, "Tight", value.asInstanceOf[js.Any])
   }
 }

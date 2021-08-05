@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LegendLayoutType extends StObject
 object LegendLayoutType {
   
-  @scala.inline
-  def horizontal: typings.bizcharts.bizchartsStrings.horizontal = "horizontal".asInstanceOf[typings.bizcharts.bizchartsStrings.horizontal]
+  inline def horizontal: typings.bizcharts.bizchartsStrings.horizontal = "horizontal".asInstanceOf[typings.bizcharts.bizchartsStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.bizcharts.bizchartsStrings.vertical = "vertical".asInstanceOf[typings.bizcharts.bizchartsStrings.vertical]
+  inline def vertical: typings.bizcharts.bizchartsStrings.vertical = "vertical".asInstanceOf[typings.bizcharts.bizchartsStrings.vertical]
 }

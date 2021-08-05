@@ -23,7 +23,6 @@ object domEventDispatcherMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
   }
 }

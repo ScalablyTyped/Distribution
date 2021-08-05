@@ -8,11 +8,9 @@ object nanomsgStrings {
   
   @js.native
   sealed trait binary extends StObject
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

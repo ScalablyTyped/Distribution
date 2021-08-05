@@ -26,67 +26,47 @@ trait DeploymentBucket extends StObject {
 }
 object DeploymentBucket {
   
-  @scala.inline
-  def apply(): DeploymentBucket = {
+  inline def apply(): DeploymentBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentBucket]
   }
   
-  @scala.inline
-  implicit class DeploymentBucketMutableBuilder[Self <: DeploymentBucket] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentBucket](x: Self) {
     
-    @scala.inline
-    def setBlockPublicAccess(value: Boolean): Self = StObject.set(x, "blockPublicAccess", value.asInstanceOf[js.Any])
+    inline def setBlockPublicAccess(value: Boolean): Self = StObject.set(x, "blockPublicAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockPublicAccessUndefined: Self = StObject.set(x, "blockPublicAccess", js.undefined)
+    inline def setBlockPublicAccessUndefined: Self = StObject.set(x, "blockPublicAccess", js.undefined)
     
-    @scala.inline
-    def setMaxPreviousDeploymentArtifacts(value: Double | String): Self = StObject.set(x, "maxPreviousDeploymentArtifacts", value.asInstanceOf[js.Any])
+    inline def setMaxPreviousDeploymentArtifacts(value: Double | String): Self = StObject.set(x, "maxPreviousDeploymentArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPreviousDeploymentArtifactsUndefined: Self = StObject.set(x, "maxPreviousDeploymentArtifacts", js.undefined)
+    inline def setMaxPreviousDeploymentArtifactsUndefined: Self = StObject.set(x, "maxPreviousDeploymentArtifacts", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setServerSideEncryption(value: String): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+    inline def setServerSideEncryption(value: String): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+    inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
     
-    @scala.inline
-    def setSseCustomerAlgorithim(value: String): Self = StObject.set(x, "sseCustomerAlgorithim", value.asInstanceOf[js.Any])
+    inline def setSseCustomerAlgorithim(value: String): Self = StObject.set(x, "sseCustomerAlgorithim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseCustomerAlgorithimUndefined: Self = StObject.set(x, "sseCustomerAlgorithim", js.undefined)
+    inline def setSseCustomerAlgorithimUndefined: Self = StObject.set(x, "sseCustomerAlgorithim", js.undefined)
     
-    @scala.inline
-    def setSseCustomerKey(value: String): Self = StObject.set(x, "sseCustomerKey", value.asInstanceOf[js.Any])
+    inline def setSseCustomerKey(value: String): Self = StObject.set(x, "sseCustomerKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseCustomerKeyMD5(value: String): Self = StObject.set(x, "sseCustomerKeyMD5", value.asInstanceOf[js.Any])
+    inline def setSseCustomerKeyMD5(value: String): Self = StObject.set(x, "sseCustomerKeyMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseCustomerKeyMD5Undefined: Self = StObject.set(x, "sseCustomerKeyMD5", js.undefined)
+    inline def setSseCustomerKeyMD5Undefined: Self = StObject.set(x, "sseCustomerKeyMD5", js.undefined)
     
-    @scala.inline
-    def setSseCustomerKeyUndefined: Self = StObject.set(x, "sseCustomerKey", js.undefined)
+    inline def setSseCustomerKeyUndefined: Self = StObject.set(x, "sseCustomerKey", js.undefined)
     
-    @scala.inline
-    def setSseKMSKeyId(value: String): Self = StObject.set(x, "sseKMSKeyId", value.asInstanceOf[js.Any])
+    inline def setSseKMSKeyId(value: String): Self = StObject.set(x, "sseKMSKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseKMSKeyIdUndefined: Self = StObject.set(x, "sseKMSKeyId", js.undefined)
+    inline def setSseKMSKeyIdUndefined: Self = StObject.set(x, "sseKMSKeyId", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

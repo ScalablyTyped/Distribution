@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Normalize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Normalize]
+  inline def default(): Normalize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Normalize]
   
   @js.native
   trait Normalize extends StObject {

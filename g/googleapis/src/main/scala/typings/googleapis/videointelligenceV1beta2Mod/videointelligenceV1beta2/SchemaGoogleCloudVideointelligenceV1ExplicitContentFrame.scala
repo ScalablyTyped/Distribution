@@ -22,25 +22,19 @@ trait SchemaGoogleCloudVideointelligenceV1ExplicitContentFrame extends StObject 
 }
 object SchemaGoogleCloudVideointelligenceV1ExplicitContentFrame {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1ExplicitContentFrame = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1ExplicitContentFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1ExplicitContentFrame]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1ExplicitContentFrameMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1ExplicitContentFrame] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1ExplicitContentFrame](x: Self) {
     
-    @scala.inline
-    def setPornographyLikelihood(value: String): Self = StObject.set(x, "pornographyLikelihood", value.asInstanceOf[js.Any])
+    inline def setPornographyLikelihood(value: String): Self = StObject.set(x, "pornographyLikelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPornographyLikelihoodUndefined: Self = StObject.set(x, "pornographyLikelihood", js.undefined)
+    inline def setPornographyLikelihoodUndefined: Self = StObject.set(x, "pornographyLikelihood", js.undefined)
     
-    @scala.inline
-    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

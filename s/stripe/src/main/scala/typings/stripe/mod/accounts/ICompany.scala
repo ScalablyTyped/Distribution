@@ -20,25 +20,19 @@ trait ICompany
 }
 object ICompany {
   
-  @scala.inline
-  def apply(): ICompany = {
+  inline def apply(): ICompany = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICompany]
   }
   
-  @scala.inline
-  implicit class ICompanyMutableBuilder[Self <: ICompany] (val x: Self) extends AnyVal {
+  extension [Self <: ICompany](x: Self) {
     
-    @scala.inline
-    def setTax_id_provided(value: Boolean): Self = StObject.set(x, "tax_id_provided", value.asInstanceOf[js.Any])
+    inline def setTax_id_provided(value: Boolean): Self = StObject.set(x, "tax_id_provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTax_id_providedUndefined: Self = StObject.set(x, "tax_id_provided", js.undefined)
+    inline def setTax_id_providedUndefined: Self = StObject.set(x, "tax_id_provided", js.undefined)
     
-    @scala.inline
-    def setVat_id_provided(value: Boolean): Self = StObject.set(x, "vat_id_provided", value.asInstanceOf[js.Any])
+    inline def setVat_id_provided(value: Boolean): Self = StObject.set(x, "vat_id_provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVat_id_providedUndefined: Self = StObject.set(x, "vat_id_provided", js.undefined)
+    inline def setVat_id_providedUndefined: Self = StObject.set(x, "vat_id_provided", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait UniqueOptions[T]
 }
 object UniqueOptions {
   
-  @scala.inline
-  def apply[T](): UniqueOptions[T] = {
+  inline def apply[T](): UniqueOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UniqueOptions[T]]
   }
   
-  @scala.inline
-  implicit class UniqueOptionsMutableBuilder[Self <: UniqueOptions[?], T] (val x: Self & UniqueOptions[T]) extends AnyVal {
+  extension [Self <: UniqueOptions[?], T](x: Self & UniqueOptions[T]) {
     
-    @scala.inline
-    def setComparator(value: (/* array */ js.Array[T], /* value */ T) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
+    inline def setComparator(value: (/* array */ js.Array[T], /* value */ T) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
+    inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
   }
 }

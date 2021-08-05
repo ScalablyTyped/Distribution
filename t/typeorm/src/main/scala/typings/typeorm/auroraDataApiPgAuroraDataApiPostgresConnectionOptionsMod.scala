@@ -46,54 +46,39 @@ object auroraDataApiPgAuroraDataApiPostgresConnectionOptionsMod {
   }
   object AuroraDataApiPostgresConnectionOptions {
     
-    @scala.inline
-    def apply(database: String, region: String, resourceArn: String, secretArn: String): AuroraDataApiPostgresConnectionOptions = {
+    inline def apply(database: String, region: String, resourceArn: String, secretArn: String): AuroraDataApiPostgresConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("aurora-data-api-pg")
       __obj.asInstanceOf[AuroraDataApiPostgresConnectionOptions]
     }
     
-    @scala.inline
-    implicit class AuroraDataApiPostgresConnectionOptionsMutableBuilder[Self <: AuroraDataApiPostgresConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuroraDataApiPostgresConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
+      inline def setFormatOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatOptionsUndefined: Self = StObject.set(x, "formatOptions", js.undefined)
+      inline def setFormatOptionsUndefined: Self = StObject.set(x, "formatOptions", js.undefined)
       
-      @scala.inline
-      def setPoolErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
+      inline def setPoolErrorHandler(value: /* err */ js.Any => js.Any): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)
+      inline def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretArn(value: String): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+      inline def setSecretArn(value: String): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceConfigOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "serviceConfigOptions", value.asInstanceOf[js.Any])
+      inline def setServiceConfigOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "serviceConfigOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceConfigOptionsUndefined: Self = StObject.set(x, "serviceConfigOptions", js.undefined)
+      inline def setServiceConfigOptionsUndefined: Self = StObject.set(x, "serviceConfigOptions", js.undefined)
       
-      @scala.inline
-      def setType(value: `aurora-data-api-pg`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: `aurora-data-api-pg`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidExtension(value: pgcrypto | `uuid-ossp`): Self = StObject.set(x, "uuidExtension", value.asInstanceOf[js.Any])
+      inline def setUuidExtension(value: pgcrypto | `uuid-ossp`): Self = StObject.set(x, "uuidExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidExtensionUndefined: Self = StObject.set(x, "uuidExtension", js.undefined)
+      inline def setUuidExtensionUndefined: Self = StObject.set(x, "uuidExtension", js.undefined)
     }
   }
 }

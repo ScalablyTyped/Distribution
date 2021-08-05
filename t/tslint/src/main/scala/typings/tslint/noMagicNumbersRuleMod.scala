@@ -26,22 +26,18 @@ object noMagicNumbersRuleMod {
     @JSImport("tslint/lib/rules/noMagicNumbersRule", "Rule.ALLOWED_NODES")
     @js.native
     def ALLOWED_NODES: Set[SyntaxKind] = js.native
-    @scala.inline
-    def ALLOWED_NODES_=(x: Set[SyntaxKind]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALLOWED_NODES")(x.asInstanceOf[js.Any])
+    inline def ALLOWED_NODES_=(x: Set[SyntaxKind]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALLOWED_NODES")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/noMagicNumbersRule", "Rule.DEFAULT_ALLOWED")
     @js.native
     def DEFAULT_ALLOWED: js.Array[Double] = js.native
-    @scala.inline
-    def DEFAULT_ALLOWED_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALLOWED")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_ALLOWED_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALLOWED")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def FAILURE_STRING(num: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def FAILURE_STRING(num: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(num.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noMagicNumbersRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

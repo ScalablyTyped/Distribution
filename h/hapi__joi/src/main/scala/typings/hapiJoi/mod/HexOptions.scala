@@ -14,19 +14,15 @@ trait HexOptions extends StObject {
 }
 object HexOptions {
   
-  @scala.inline
-  def apply(): HexOptions = {
+  inline def apply(): HexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HexOptions]
   }
   
-  @scala.inline
-  implicit class HexOptionsMutableBuilder[Self <: HexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HexOptions](x: Self) {
     
-    @scala.inline
-    def setByteAligned(value: Boolean): Self = StObject.set(x, "byteAligned", value.asInstanceOf[js.Any])
+    inline def setByteAligned(value: Boolean): Self = StObject.set(x, "byteAligned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteAlignedUndefined: Self = StObject.set(x, "byteAligned", js.undefined)
+    inline def setByteAlignedUndefined: Self = StObject.set(x, "byteAligned", js.undefined)
   }
 }

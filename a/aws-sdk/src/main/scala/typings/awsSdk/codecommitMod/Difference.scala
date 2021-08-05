@@ -23,31 +23,23 @@ trait Difference extends StObject {
 }
 object Difference {
   
-  @scala.inline
-  def apply(): Difference = {
+  inline def apply(): Difference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Difference]
   }
   
-  @scala.inline
-  implicit class DifferenceMutableBuilder[Self <: Difference] (val x: Self) extends AnyVal {
+  extension [Self <: Difference](x: Self) {
     
-    @scala.inline
-    def setAfterBlob(value: BlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
+    inline def setAfterBlob(value: BlobMetadata): Self = StObject.set(x, "afterBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterBlobUndefined: Self = StObject.set(x, "afterBlob", js.undefined)
+    inline def setAfterBlobUndefined: Self = StObject.set(x, "afterBlob", js.undefined)
     
-    @scala.inline
-    def setBeforeBlob(value: BlobMetadata): Self = StObject.set(x, "beforeBlob", value.asInstanceOf[js.Any])
+    inline def setBeforeBlob(value: BlobMetadata): Self = StObject.set(x, "beforeBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeBlobUndefined: Self = StObject.set(x, "beforeBlob", js.undefined)
+    inline def setBeforeBlobUndefined: Self = StObject.set(x, "beforeBlob", js.undefined)
     
-    @scala.inline
-    def setChangeType(value: ChangeTypeEnum): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: ChangeTypeEnum): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
+    inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
   }
 }

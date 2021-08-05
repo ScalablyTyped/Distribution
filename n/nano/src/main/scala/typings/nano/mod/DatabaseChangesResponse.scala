@@ -18,25 +18,19 @@ trait DatabaseChangesResponse extends StObject {
 }
 object DatabaseChangesResponse {
   
-  @scala.inline
-  def apply(last_seq: js.Any, pending: Double, results: js.Array[DatabaseChangesResultItem]): DatabaseChangesResponse = {
+  inline def apply(last_seq: js.Any, pending: Double, results: js.Array[DatabaseChangesResultItem]): DatabaseChangesResponse = {
     val __obj = js.Dynamic.literal(last_seq = last_seq.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseChangesResponse]
   }
   
-  @scala.inline
-  implicit class DatabaseChangesResponseMutableBuilder[Self <: DatabaseChangesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseChangesResponse](x: Self) {
     
-    @scala.inline
-    def setLast_seq(value: js.Any): Self = StObject.set(x, "last_seq", value.asInstanceOf[js.Any])
+    inline def setLast_seq(value: js.Any): Self = StObject.set(x, "last_seq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[DatabaseChangesResultItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[DatabaseChangesResultItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: DatabaseChangesResultItem*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: DatabaseChangesResultItem*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

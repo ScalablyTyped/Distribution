@@ -28,37 +28,27 @@ trait LoadBalancer extends StObject {
 }
 object LoadBalancer {
   
-  @scala.inline
-  def apply(): LoadBalancer = {
+  inline def apply(): LoadBalancer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadBalancer]
   }
   
-  @scala.inline
-  implicit class LoadBalancerMutableBuilder[Self <: LoadBalancer] (val x: Self) extends AnyVal {
+  extension [Self <: LoadBalancer](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setContainerPort(value: BoxedInteger): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
+    inline def setContainerPort(value: BoxedInteger): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
+    inline def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerName(value: String): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: String): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
+    inline def setLoadBalancerNameUndefined: Self = StObject.set(x, "loadBalancerName", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
+    inline def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
   }
 }

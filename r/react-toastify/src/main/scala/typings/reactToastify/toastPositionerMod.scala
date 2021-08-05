@@ -23,32 +23,24 @@ object toastPositionerMod {
   }
   object ToastPositionerProps {
     
-    @scala.inline
-    def apply(): ToastPositionerProps = {
+    inline def apply(): ToastPositionerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToastPositionerProps]
     }
     
-    @scala.inline
-    implicit class ToastPositionerPropsMutableBuilder[Self <: ToastPositionerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToastPositionerProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+      inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

@@ -24,7 +24,7 @@ object lightingMod {
     /**
       * Prepare a list of emitters for next pass
       */
-    var _computeEmitters: js.Any = js.native
+    /* private */ var _computeEmitters: js.Any = js.native
     
     /**
       * Compute one iteration from all emitting cells
@@ -32,29 +32,29 @@ object lightingMod {
       * @param litCells Add projected light to these
       * @param doneCells These already emitted, forbid them from further calculations
       */
-    var _emitLight: js.Any = js.native
+    /* private */ var _emitLight: js.Any = js.native
     
     /**
       * Compute one iteration from one cell
       */
-    var _emitLightFromCell: js.Any = js.native
+    /* private */ var _emitLightFromCell: js.Any = js.native
     
-    var _fov: js.Any = js.native
+    /* private */ var _fov: js.Any = js.native
     
-    var _fovCache: js.Any = js.native
+    /* private */ var _fovCache: js.Any = js.native
     
-    var _lights: js.Any = js.native
+    /* private */ var _lights: js.Any = js.native
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
-    var _reflectivityCache: js.Any = js.native
+    /* private */ var _reflectivityCache: js.Any = js.native
     
-    var _reflectivityCallback: js.Any = js.native
+    /* private */ var _reflectivityCallback: js.Any = js.native
     
     /**
       * Compute FOV ("form factor") for a potential light source at [x,y]
       */
-    var _updateFOV: js.Any = js.native
+    /* private */ var _updateFOV: js.Any = js.native
     
     /**
       * Remove all light sources
@@ -105,23 +105,18 @@ object lightingMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(emissionThreshold: Double, passes: Double, range: Double): Options = {
+    inline def apply(emissionThreshold: Double, passes: Double, range: Double): Options = {
       val __obj = js.Dynamic.literal(emissionThreshold = emissionThreshold.asInstanceOf[js.Any], passes = passes.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEmissionThreshold(value: Double): Self = StObject.set(x, "emissionThreshold", value.asInstanceOf[js.Any])
+      inline def setEmissionThreshold(value: Double): Self = StObject.set(x, "emissionThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasses(value: Double): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
+      inline def setPasses(value: Double): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
   }
   

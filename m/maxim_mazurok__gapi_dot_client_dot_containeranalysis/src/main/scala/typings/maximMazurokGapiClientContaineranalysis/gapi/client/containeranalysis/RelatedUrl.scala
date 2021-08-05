@@ -14,25 +14,19 @@ trait RelatedUrl extends StObject {
 }
 object RelatedUrl {
   
-  @scala.inline
-  def apply(): RelatedUrl = {
+  inline def apply(): RelatedUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelatedUrl]
   }
   
-  @scala.inline
-  implicit class RelatedUrlMutableBuilder[Self <: RelatedUrl] (val x: Self) extends AnyVal {
+  extension [Self <: RelatedUrl](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

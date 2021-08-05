@@ -14,22 +14,17 @@ trait ListProperties extends StObject {
 }
 object ListProperties {
   
-  @scala.inline
-  def apply(): ListProperties = {
+  inline def apply(): ListProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProperties]
   }
   
-  @scala.inline
-  implicit class ListPropertiesMutableBuilder[Self <: ListProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ListProperties](x: Self) {
     
-    @scala.inline
-    def setNestingLevels(value: js.Array[NestingLevel]): Self = StObject.set(x, "nestingLevels", value.asInstanceOf[js.Any])
+    inline def setNestingLevels(value: js.Array[NestingLevel]): Self = StObject.set(x, "nestingLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelsUndefined: Self = StObject.set(x, "nestingLevels", js.undefined)
+    inline def setNestingLevelsUndefined: Self = StObject.set(x, "nestingLevels", js.undefined)
     
-    @scala.inline
-    def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value :_*))
+    inline def setNestingLevelsVarargs(value: NestingLevel*): Self = StObject.set(x, "nestingLevels", js.Array(value :_*))
   }
 }

@@ -11,55 +11,47 @@ object sentryUtilsStrings {
   sealed trait console
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def console: console = "console".asInstanceOf[console]
+  inline def console: console = "console".asInstanceOf[console]
   
   @js.native
   sealed trait dom
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def dom: dom = "dom".asInstanceOf[dom]
+  inline def dom: dom = "dom".asInstanceOf[dom]
   
   @js.native
   sealed trait error
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait fetch
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def fetch: fetch = "fetch".asInstanceOf[fetch]
+  inline def fetch: fetch = "fetch".asInstanceOf[fetch]
   
   @js.native
   sealed trait history
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def history: history = "history".asInstanceOf[history]
+  inline def history: history = "history".asInstanceOf[history]
   
   @js.native
   sealed trait sentry
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def sentry: sentry = "sentry".asInstanceOf[sentry]
+  inline def sentry: sentry = "sentry".asInstanceOf[sentry]
   
   @js.native
   sealed trait unhandledrejection
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def unhandledrejection: unhandledrejection = "unhandledrejection".asInstanceOf[unhandledrejection]
+  inline def unhandledrejection: unhandledrejection = "unhandledrejection".asInstanceOf[unhandledrejection]
   
   @js.native
   sealed trait xhr
     extends StObject
        with InstrumentHandlerType
-  @scala.inline
-  def xhr: xhr = "xhr".asInstanceOf[xhr]
+  inline def xhr: xhr = "xhr".asInstanceOf[xhr]
 }

@@ -16,17 +16,14 @@ object typesManualMergeRequiredExceptionMod {
   }
   object ManualMergeRequiredException {
     
-    @scala.inline
-    def apply(): ManualMergeRequiredException = {
+    inline def apply(): ManualMergeRequiredException = {
       val __obj = js.Dynamic.literal(name = "ManualMergeRequiredException")
       __obj.asInstanceOf[ManualMergeRequiredException]
     }
     
-    @scala.inline
-    implicit class ManualMergeRequiredExceptionMutableBuilder[Self <: ManualMergeRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: ManualMergeRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ManualMergeRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -16,10 +16,10 @@ object okNegotiatedContentResultMod {
        with OkNegotiatedContentResult[T] {
     def this(content: T, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var content: js.Any = js.native
     
     /* CompleteClass */
@@ -30,26 +30,22 @@ object okNegotiatedContentResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
-    var content: js.Any
+    /* private */ var content: js.Any
   }
   object OkNegotiatedContentResult {
     
-    @scala.inline
-    def apply[T](apiController: js.Any, content: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): OkNegotiatedContentResult[T] = {
+    inline def apply[T](apiController: js.Any, content: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): OkNegotiatedContentResult[T] = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
       __obj.asInstanceOf[OkNegotiatedContentResult[T]]
     }
     
-    @scala.inline
-    implicit class OkNegotiatedContentResultMutableBuilder[Self <: OkNegotiatedContentResult[?], T] (val x: Self & OkNegotiatedContentResult[T]) extends AnyVal {
+    extension [Self <: OkNegotiatedContentResult[?], T](x: Self & OkNegotiatedContentResult[T]) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientFileManagerFileDownloadingEventArgs
 }
 object ASPxClientFileManagerFileDownloadingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, file: ASPxClientFileManagerFile): ASPxClientFileManagerFileDownloadingEventArgs = {
+  inline def apply(cancel: Boolean, file: ASPxClientFileManagerFile): ASPxClientFileManagerFileDownloadingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerFileDownloadingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerFileDownloadingEventArgsMutableBuilder[Self <: ASPxClientFileManagerFileDownloadingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerFileDownloadingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

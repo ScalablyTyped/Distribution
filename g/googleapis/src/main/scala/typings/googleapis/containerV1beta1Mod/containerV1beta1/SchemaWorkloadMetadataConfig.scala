@@ -18,19 +18,15 @@ trait SchemaWorkloadMetadataConfig extends StObject {
 }
 object SchemaWorkloadMetadataConfig {
   
-  @scala.inline
-  def apply(): SchemaWorkloadMetadataConfig = {
+  inline def apply(): SchemaWorkloadMetadataConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkloadMetadataConfig]
   }
   
-  @scala.inline
-  implicit class SchemaWorkloadMetadataConfigMutableBuilder[Self <: SchemaWorkloadMetadataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkloadMetadataConfig](x: Self) {
     
-    @scala.inline
-    def setNodeMetadata(value: String): Self = StObject.set(x, "nodeMetadata", value.asInstanceOf[js.Any])
+    inline def setNodeMetadata(value: String): Self = StObject.set(x, "nodeMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeMetadataUndefined: Self = StObject.set(x, "nodeMetadata", js.undefined)
+    inline def setNodeMetadataUndefined: Self = StObject.set(x, "nodeMetadata", js.undefined)
   }
 }

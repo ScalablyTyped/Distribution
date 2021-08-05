@@ -19,18 +19,15 @@ trait DocumentFormattingEditProvider extends StObject {
 }
 object DocumentFormattingEditProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideDocumentFormattingEdits: (TextDocument, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): DocumentFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideDocumentFormattingEdits = js.Any.fromFunction3(provideDocumentFormattingEdits))
     __obj.asInstanceOf[DocumentFormattingEditProvider]
   }
   
-  @scala.inline
-  implicit class DocumentFormattingEditProviderMutableBuilder[Self <: DocumentFormattingEditProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentFormattingEditProvider](x: Self) {
     
-    @scala.inline
-    def setProvideDocumentFormattingEdits(value: (TextDocument, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]): Self = StObject.set(x, "provideDocumentFormattingEdits", js.Any.fromFunction3(value))
+    inline def setProvideDocumentFormattingEdits(value: (TextDocument, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]): Self = StObject.set(x, "provideDocumentFormattingEdits", js.Any.fromFunction3(value))
   }
 }

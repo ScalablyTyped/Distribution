@@ -21,25 +21,19 @@ trait SchemaWaterfallChartDomain extends StObject {
 }
 object SchemaWaterfallChartDomain {
   
-  @scala.inline
-  def apply(): SchemaWaterfallChartDomain = {
+  inline def apply(): SchemaWaterfallChartDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWaterfallChartDomain]
   }
   
-  @scala.inline
-  implicit class SchemaWaterfallChartDomainMutableBuilder[Self <: SchemaWaterfallChartDomain] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWaterfallChartDomain](x: Self) {
     
-    @scala.inline
-    def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

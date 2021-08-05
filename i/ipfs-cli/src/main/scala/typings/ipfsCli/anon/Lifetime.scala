@@ -22,8 +22,7 @@ trait Lifetime extends StObject {
 }
 object Lifetime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ctx: Print,
     ipfsPath: js.Any,
     key: js.Any,
@@ -36,28 +35,20 @@ object Lifetime {
     __obj.asInstanceOf[Lifetime]
   }
   
-  @scala.inline
-  implicit class LifetimeMutableBuilder[Self <: Lifetime] (val x: Self) extends AnyVal {
+  extension [Self <: Lifetime](x: Self) {
     
-    @scala.inline
-    def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Print): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpfsPath(value: js.Any): Self = StObject.set(x, "ipfsPath", value.asInstanceOf[js.Any])
+    inline def setIpfsPath(value: js.Any): Self = StObject.set(x, "ipfsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifetime(value: js.Any): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+    inline def setLifetime(value: js.Any): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolve(value: js.Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+    inline def setResolve(value: js.Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtl(value: js.Any): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: js.Any): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

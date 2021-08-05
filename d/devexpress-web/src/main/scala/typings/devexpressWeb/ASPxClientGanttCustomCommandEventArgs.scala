@@ -23,19 +23,15 @@ trait ASPxClientGanttCustomCommandEventArgs
 }
 object ASPxClientGanttCustomCommandEventArgs {
   
-  @scala.inline
-  def apply(commandName: String, parameter: js.Any): ASPxClientGanttCustomCommandEventArgs = {
+  inline def apply(commandName: String, parameter: js.Any): ASPxClientGanttCustomCommandEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGanttCustomCommandEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGanttCustomCommandEventArgsMutableBuilder[Self <: ASPxClientGanttCustomCommandEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGanttCustomCommandEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

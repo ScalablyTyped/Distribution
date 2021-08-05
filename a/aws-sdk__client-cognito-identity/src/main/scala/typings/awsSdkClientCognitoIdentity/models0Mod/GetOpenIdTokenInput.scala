@@ -22,8 +22,7 @@ trait GetOpenIdTokenInput extends StObject {
 }
 object GetOpenIdTokenInput {
   
-  @scala.inline
-  def apply(): GetOpenIdTokenInput = {
+  inline def apply(): GetOpenIdTokenInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOpenIdTokenInput]
   }
@@ -32,22 +31,16 @@ object GetOpenIdTokenInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: GetOpenIdTokenInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: GetOpenIdTokenInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class GetOpenIdTokenInputMutableBuilder[Self <: GetOpenIdTokenInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetOpenIdTokenInput](x: Self) {
     
-    @scala.inline
-    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }
 }

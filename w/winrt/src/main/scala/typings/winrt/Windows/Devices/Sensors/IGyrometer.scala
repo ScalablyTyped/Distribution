@@ -16,8 +16,7 @@ trait IGyrometer extends StObject {
 }
 object IGyrometer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => GyrometerReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,
@@ -27,19 +26,14 @@ object IGyrometer {
     __obj.asInstanceOf[IGyrometer]
   }
   
-  @scala.inline
-  implicit class IGyrometerMutableBuilder[Self <: IGyrometer] (val x: Self) extends AnyVal {
+  extension [Self <: IGyrometer](x: Self) {
     
-    @scala.inline
-    def setGetCurrentReading(value: () => GyrometerReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
+    inline def setGetCurrentReading(value: () => GyrometerReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
+    inline def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
+    inline def setOnreadingchanged(value: js.Any): Self = StObject.set(x, "onreadingchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
+    inline def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
   }
 }

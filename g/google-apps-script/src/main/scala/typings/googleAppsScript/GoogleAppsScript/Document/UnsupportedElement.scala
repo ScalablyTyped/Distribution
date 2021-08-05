@@ -13,8 +13,7 @@ trait UnsupportedElement
      with Element
 object UnsupportedElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,

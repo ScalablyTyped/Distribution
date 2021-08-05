@@ -18,37 +18,27 @@ trait PartialStyleRulesGridList extends StObject {
 }
 object PartialStyleRulesGridList {
   
-  @scala.inline
-  def apply(): PartialStyleRulesGridList = {
+  inline def apply(): PartialStyleRulesGridList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesGridList]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesGridListMutableBuilder[Self <: PartialStyleRulesGridList] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesGridList](x: Self) {
     
-    @scala.inline
-    def setImgFullHeight(value: CSSProperties): Self = StObject.set(x, "imgFullHeight", value.asInstanceOf[js.Any])
+    inline def setImgFullHeight(value: CSSProperties): Self = StObject.set(x, "imgFullHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgFullHeightUndefined: Self = StObject.set(x, "imgFullHeight", js.undefined)
+    inline def setImgFullHeightUndefined: Self = StObject.set(x, "imgFullHeight", js.undefined)
     
-    @scala.inline
-    def setImgFullWidth(value: CSSProperties): Self = StObject.set(x, "imgFullWidth", value.asInstanceOf[js.Any])
+    inline def setImgFullWidth(value: CSSProperties): Self = StObject.set(x, "imgFullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgFullWidthUndefined: Self = StObject.set(x, "imgFullWidth", js.undefined)
+    inline def setImgFullWidthUndefined: Self = StObject.set(x, "imgFullWidth", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTile(value: CSSProperties): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: CSSProperties): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

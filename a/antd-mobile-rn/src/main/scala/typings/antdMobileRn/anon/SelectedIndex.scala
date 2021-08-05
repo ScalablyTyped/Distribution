@@ -12,19 +12,15 @@ trait SelectedIndex extends StObject {
 }
 object SelectedIndex {
   
-  @scala.inline
-  def apply(selectedIndex: Double, tintColor: String): SelectedIndex = {
+  inline def apply(selectedIndex: Double, tintColor: String): SelectedIndex = {
     val __obj = js.Dynamic.literal(selectedIndex = selectedIndex.asInstanceOf[js.Any], tintColor = tintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectedIndex]
   }
   
-  @scala.inline
-  implicit class SelectedIndexMutableBuilder[Self <: SelectedIndex] (val x: Self) extends AnyVal {
+  extension [Self <: SelectedIndex](x: Self) {
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
   }
 }

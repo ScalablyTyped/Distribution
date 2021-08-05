@@ -18,25 +18,19 @@ trait DescribeFindingsRequest extends StObject {
 }
 object DescribeFindingsRequest {
   
-  @scala.inline
-  def apply(findingArns: BatchDescribeArnList): DescribeFindingsRequest = {
+  inline def apply(findingArns: BatchDescribeArnList): DescribeFindingsRequest = {
     val __obj = js.Dynamic.literal(findingArns = findingArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFindingsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFindingsRequestMutableBuilder[Self <: DescribeFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setFindingArns(value: BatchDescribeArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
+    inline def setFindingArns(value: BatchDescribeArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value :_*))
+    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

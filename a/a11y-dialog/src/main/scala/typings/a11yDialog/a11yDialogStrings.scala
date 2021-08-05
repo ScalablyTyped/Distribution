@@ -11,27 +11,23 @@ object a11yDialogStrings {
   sealed trait create
     extends StObject
        with EventType
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
   sealed trait destroy
     extends StObject
        with EventType
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait hide
     extends StObject
        with EventType
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait show
     extends StObject
        with EventType
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
+  inline def show: show = "show".asInstanceOf[show]
 }

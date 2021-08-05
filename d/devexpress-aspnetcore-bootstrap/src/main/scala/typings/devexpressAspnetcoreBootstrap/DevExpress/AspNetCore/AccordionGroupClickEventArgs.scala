@@ -14,8 +14,7 @@ trait AccordionGroupClickEventArgs
 }
 object AccordionGroupClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     group: BootstrapAccordionGroup,
     htmlElement: js.Object,
@@ -27,13 +26,10 @@ object AccordionGroupClickEventArgs {
     __obj.asInstanceOf[AccordionGroupClickEventArgs]
   }
   
-  @scala.inline
-  implicit class AccordionGroupClickEventArgsMutableBuilder[Self <: AccordionGroupClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AccordionGroupClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Object): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

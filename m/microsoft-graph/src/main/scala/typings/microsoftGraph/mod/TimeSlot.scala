@@ -14,25 +14,19 @@ trait TimeSlot extends StObject {
 }
 object TimeSlot {
   
-  @scala.inline
-  def apply(): TimeSlot = {
+  inline def apply(): TimeSlot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeSlot]
   }
   
-  @scala.inline
-  implicit class TimeSlotMutableBuilder[Self <: TimeSlot] (val x: Self) extends AnyVal {
+  extension [Self <: TimeSlot](x: Self) {
     
-    @scala.inline
-    def setEnd(value: DateTimeTimeZone): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: DateTimeTimeZone): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: DateTimeTimeZone): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: DateTimeTimeZone): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

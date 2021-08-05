@@ -29,8 +29,8 @@ object mapIteratorMod {
     
     var position: Double = js.native
     
-    var sparseIntervals: js.Any = js.native
+    /* private */ var sparseIntervals: js.Any = js.native
     
-    var valMap: js.Any = js.native
+    /* private */ var valMap: js.Any = js.native
   }
 }

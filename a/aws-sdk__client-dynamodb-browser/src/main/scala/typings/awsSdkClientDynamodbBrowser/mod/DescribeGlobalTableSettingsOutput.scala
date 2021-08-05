@@ -10,8 +10,7 @@ trait DescribeGlobalTableSettingsOutput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeGlobalTableSettingsOutputMod.DescribeGlobalTableSettingsOutput
 object DescribeGlobalTableSettingsOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DescribeGlobalTableSettingsOutput = {
+  inline def apply($metadata: ResponseMetadata): DescribeGlobalTableSettingsOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGlobalTableSettingsOutput]
   }

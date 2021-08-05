@@ -33,46 +33,33 @@ trait Communication extends StObject {
 }
 object Communication {
   
-  @scala.inline
-  def apply(): Communication = {
+  inline def apply(): Communication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Communication]
   }
   
-  @scala.inline
-  implicit class CommunicationMutableBuilder[Self <: Communication] (val x: Self) extends AnyVal {
+  extension [Self <: Communication](x: Self) {
     
-    @scala.inline
-    def setAttachmentSet(value: AttachmentSet): Self = StObject.set(x, "attachmentSet", value.asInstanceOf[js.Any])
+    inline def setAttachmentSet(value: AttachmentSet): Self = StObject.set(x, "attachmentSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentSetUndefined: Self = StObject.set(x, "attachmentSet", js.undefined)
+    inline def setAttachmentSetUndefined: Self = StObject.set(x, "attachmentSet", js.undefined)
     
-    @scala.inline
-    def setAttachmentSetVarargs(value: AttachmentDetails*): Self = StObject.set(x, "attachmentSet", js.Array(value :_*))
+    inline def setAttachmentSetVarargs(value: AttachmentDetails*): Self = StObject.set(x, "attachmentSet", js.Array(value :_*))
     
-    @scala.inline
-    def setBody(value: CommunicationBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: CommunicationBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
+    inline def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
+    inline def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
     
-    @scala.inline
-    def setSubmittedBy(value: SubmittedBy): Self = StObject.set(x, "submittedBy", value.asInstanceOf[js.Any])
+    inline def setSubmittedBy(value: SubmittedBy): Self = StObject.set(x, "submittedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedByUndefined: Self = StObject.set(x, "submittedBy", js.undefined)
+    inline def setSubmittedByUndefined: Self = StObject.set(x, "submittedBy", js.undefined)
     
-    @scala.inline
-    def setTimeCreated(value: TimeCreated): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+    inline def setTimeCreated(value: TimeCreated): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
+    inline def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
   }
 }

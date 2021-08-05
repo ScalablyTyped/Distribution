@@ -15,11 +15,11 @@ object callCredentialsFilterMod {
   class CallCredentialsFilter protected () extends BaseFilter {
     def this(channel: Channel, stream: Call) = this()
     
-    val channel: js.Any = js.native
+    /* private */ val channel: js.Any = js.native
     
-    var serviceUrl: js.Any = js.native
+    /* private */ var serviceUrl: js.Any = js.native
     
-    val stream: js.Any = js.native
+    /* private */ val stream: js.Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/call-credentials-filter", "CallCredentialsFilterFactory")
@@ -29,7 +29,7 @@ object callCredentialsFilterMod {
        with FilterFactory[CallCredentialsFilter] {
     def this(channel: Channel) = this()
     
-    val channel: js.Any = js.native
+    /* private */ val channel: js.Any = js.native
     
     /* CompleteClass */
     override def createFilter(callStream: Call): CallCredentialsFilter = js.native

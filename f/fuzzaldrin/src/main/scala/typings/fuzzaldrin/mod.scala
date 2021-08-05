@@ -12,20 +12,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filter(candidates: js.Array[String], query: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(candidates.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def filter(candidates: js.Array[String], query: String, options: MaxResults): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(candidates.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def filter[T, K /* <: /* keyof T */ String */](
+  inline def filter(candidates: js.Array[String], query: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(candidates.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def filter(candidates: js.Array[String], query: String, options: MaxResults): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(candidates.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def filter[T, K /* <: /* keyof T */ String */](
     candidates: js.Array[T],
     query: String & (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any),
     options: Key[K, T]
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(candidates.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def `match`(string: String, query: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(string.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def `match`(string: String, query: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(string.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def score(string: String, query: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("score")(string.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def score(string: String, query: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("score")(string.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

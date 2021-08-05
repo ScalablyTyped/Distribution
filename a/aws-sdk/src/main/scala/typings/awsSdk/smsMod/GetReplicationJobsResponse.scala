@@ -18,28 +18,21 @@ trait GetReplicationJobsResponse extends StObject {
 }
 object GetReplicationJobsResponse {
   
-  @scala.inline
-  def apply(): GetReplicationJobsResponse = {
+  inline def apply(): GetReplicationJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetReplicationJobsResponse]
   }
   
-  @scala.inline
-  implicit class GetReplicationJobsResponseMutableBuilder[Self <: GetReplicationJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetReplicationJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReplicationJobList(value: ReplicationJobList): Self = StObject.set(x, "replicationJobList", value.asInstanceOf[js.Any])
+    inline def setReplicationJobList(value: ReplicationJobList): Self = StObject.set(x, "replicationJobList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationJobListUndefined: Self = StObject.set(x, "replicationJobList", js.undefined)
+    inline def setReplicationJobListUndefined: Self = StObject.set(x, "replicationJobList", js.undefined)
     
-    @scala.inline
-    def setReplicationJobListVarargs(value: ReplicationJob*): Self = StObject.set(x, "replicationJobList", js.Array(value :_*))
+    inline def setReplicationJobListVarargs(value: ReplicationJob*): Self = StObject.set(x, "replicationJobList", js.Array(value :_*))
   }
 }

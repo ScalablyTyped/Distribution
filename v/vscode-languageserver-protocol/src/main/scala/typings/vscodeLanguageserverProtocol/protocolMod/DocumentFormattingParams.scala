@@ -22,19 +22,15 @@ trait DocumentFormattingParams
 }
 object DocumentFormattingParams {
   
-  @scala.inline
-  def apply(options: FormattingOptions, textDocument: TextDocumentIdentifier): DocumentFormattingParams = {
+  inline def apply(options: FormattingOptions, textDocument: TextDocumentIdentifier): DocumentFormattingParams = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentFormattingParams]
   }
   
-  @scala.inline
-  implicit class DocumentFormattingParamsMutableBuilder[Self <: DocumentFormattingParams] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentFormattingParams](x: Self) {
     
-    @scala.inline
-    def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+    inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

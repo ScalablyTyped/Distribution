@@ -34,8 +34,7 @@ trait b2DistanceInput extends StObject {
 }
 object b2DistanceInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     proxyA: b2DistanceProxy,
     proxyB: b2DistanceProxy,
     transformA: b2Transform,
@@ -46,22 +45,16 @@ object b2DistanceInput {
     __obj.asInstanceOf[b2DistanceInput]
   }
   
-  @scala.inline
-  implicit class b2DistanceInputMutableBuilder[Self <: b2DistanceInput] (val x: Self) extends AnyVal {
+  extension [Self <: b2DistanceInput](x: Self) {
     
-    @scala.inline
-    def setProxyA(value: b2DistanceProxy): Self = StObject.set(x, "proxyA", value.asInstanceOf[js.Any])
+    inline def setProxyA(value: b2DistanceProxy): Self = StObject.set(x, "proxyA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyB(value: b2DistanceProxy): Self = StObject.set(x, "proxyB", value.asInstanceOf[js.Any])
+    inline def setProxyB(value: b2DistanceProxy): Self = StObject.set(x, "proxyB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformA(value: b2Transform): Self = StObject.set(x, "transformA", value.asInstanceOf[js.Any])
+    inline def setTransformA(value: b2Transform): Self = StObject.set(x, "transformA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformB(value: b2Transform): Self = StObject.set(x, "transformB", value.asInstanceOf[js.Any])
+    inline def setTransformB(value: b2Transform): Self = StObject.set(x, "transformB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseRadii(value: Boolean): Self = StObject.set(x, "useRadii", value.asInstanceOf[js.Any])
+    inline def setUseRadii(value: Boolean): Self = StObject.set(x, "useRadii", value.asInstanceOf[js.Any])
   }
 }

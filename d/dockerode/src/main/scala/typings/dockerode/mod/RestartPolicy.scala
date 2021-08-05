@@ -20,46 +20,33 @@ trait RestartPolicy extends StObject {
 }
 object RestartPolicy {
   
-  @scala.inline
-  def apply(Name: String): RestartPolicy = {
+  inline def apply(Name: String): RestartPolicy = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestartPolicy]
   }
   
-  @scala.inline
-  implicit class RestartPolicyMutableBuilder[Self <: RestartPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RestartPolicy](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "Delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "Delay", js.undefined)
     
-    @scala.inline
-    def setMaxAttempts(value: Double): Self = StObject.set(x, "MaxAttempts", value.asInstanceOf[js.Any])
+    inline def setMaxAttempts(value: Double): Self = StObject.set(x, "MaxAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAttemptsUndefined: Self = StObject.set(x, "MaxAttempts", js.undefined)
+    inline def setMaxAttemptsUndefined: Self = StObject.set(x, "MaxAttempts", js.undefined)
     
-    @scala.inline
-    def setMaximumRetryCount(value: Double): Self = StObject.set(x, "MaximumRetryCount", value.asInstanceOf[js.Any])
+    inline def setMaximumRetryCount(value: Double): Self = StObject.set(x, "MaximumRetryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumRetryCountUndefined: Self = StObject.set(x, "MaximumRetryCount", js.undefined)
+    inline def setMaximumRetryCountUndefined: Self = StObject.set(x, "MaximumRetryCount", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: Double): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Double): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "Window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "Window", js.undefined)
   }
 }

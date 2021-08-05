@@ -10,16 +10,13 @@ trait AppenderModule extends StObject {
 }
 object AppenderModule {
   
-  @scala.inline
-  def apply(configure: js.Function): AppenderModule = {
+  inline def apply(configure: js.Function): AppenderModule = {
     val __obj = js.Dynamic.literal(configure = configure.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppenderModule]
   }
   
-  @scala.inline
-  implicit class AppenderModuleMutableBuilder[Self <: AppenderModule] (val x: Self) extends AnyVal {
+  extension [Self <: AppenderModule](x: Self) {
     
-    @scala.inline
-    def setConfigure(value: js.Function): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
+    inline def setConfigure(value: js.Function): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
   }
 }

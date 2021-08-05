@@ -12,25 +12,19 @@ trait BaseFontSizeSpacing extends StObject {
 }
 object BaseFontSizeSpacing {
   
-  @scala.inline
-  def apply(): BaseFontSizeSpacing = {
+  inline def apply(): BaseFontSizeSpacing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseFontSizeSpacing]
   }
   
-  @scala.inline
-  implicit class BaseFontSizeSpacingMutableBuilder[Self <: BaseFontSizeSpacing] (val x: Self) extends AnyVal {
+  extension [Self <: BaseFontSizeSpacing](x: Self) {
     
-    @scala.inline
-    def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+    inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
+    inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

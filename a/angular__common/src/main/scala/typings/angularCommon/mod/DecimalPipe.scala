@@ -12,7 +12,7 @@ class DecimalPipe protected ()
      with PipeTransform {
   def this(_locale: String) = this()
   
-  var _locale: js.Any = js.native
+  /* private */ var _locale: js.Any = js.native
   
   def transform(): Null = js.native
   def transform(value: String): String | Null = js.native

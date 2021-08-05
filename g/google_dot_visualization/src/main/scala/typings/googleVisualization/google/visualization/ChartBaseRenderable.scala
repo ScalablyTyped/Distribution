@@ -13,8 +13,7 @@ trait ChartBaseRenderable
 }
 object ChartBaseRenderable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearChart: () => Unit,
     getContainer: () => Element,
     getImageURI: () => String,
@@ -25,10 +24,8 @@ object ChartBaseRenderable {
     __obj.asInstanceOf[ChartBaseRenderable]
   }
   
-  @scala.inline
-  implicit class ChartBaseRenderableMutableBuilder[Self <: ChartBaseRenderable] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBaseRenderable](x: Self) {
     
-    @scala.inline
-    def setGetImageURI(value: () => String): Self = StObject.set(x, "getImageURI", js.Any.fromFunction0(value))
+    inline def setGetImageURI(value: () => String): Self = StObject.set(x, "getImageURI", js.Any.fromFunction0(value))
   }
 }

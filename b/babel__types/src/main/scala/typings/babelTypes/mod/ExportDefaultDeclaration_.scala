@@ -21,20 +21,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ExportDefaultDeclaration_ {
   
-  @scala.inline
-  def apply(declaration: FunctionDeclaration_ | TSDeclareFunction_ | ClassDeclaration_ | Expression): ExportDefaultDeclaration_ = {
+  inline def apply(declaration: FunctionDeclaration_ | TSDeclareFunction_ | ClassDeclaration_ | Expression): ExportDefaultDeclaration_ = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[ExportDefaultDeclaration_]
   }
   
-  @scala.inline
-  implicit class ExportDefaultDeclaration_MutableBuilder[Self <: ExportDefaultDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: ExportDefaultDeclaration_](x: Self) {
     
-    @scala.inline
-    def setDeclaration(value: FunctionDeclaration_ | TSDeclareFunction_ | ClassDeclaration_ | Expression): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    inline def setDeclaration(value: FunctionDeclaration_ | TSDeclareFunction_ | ClassDeclaration_ | Expression): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExportDefaultDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExportDefaultDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

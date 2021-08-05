@@ -28,73 +28,51 @@ trait Jurisdiction extends StObject {
 }
 object Jurisdiction {
   
-  @scala.inline
-  def apply(): Jurisdiction = {
+  inline def apply(): Jurisdiction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Jurisdiction]
   }
   
-  @scala.inline
-  implicit class JurisdictionMutableBuilder[Self <: Jurisdiction] (val x: Self) extends AnyVal {
+  extension [Self <: Jurisdiction](x: Self) {
     
-    @scala.inline
-    def setAllowSystemCreatedSeal(value: String): Self = StObject.set(x, "allowSystemCreatedSeal", value.asInstanceOf[js.Any])
+    inline def setAllowSystemCreatedSeal(value: String): Self = StObject.set(x, "allowSystemCreatedSeal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSystemCreatedSealUndefined: Self = StObject.set(x, "allowSystemCreatedSeal", js.undefined)
+    inline def setAllowSystemCreatedSealUndefined: Self = StObject.set(x, "allowSystemCreatedSeal", js.undefined)
     
-    @scala.inline
-    def setAllowUserUploadedSeal(value: String): Self = StObject.set(x, "allowUserUploadedSeal", value.asInstanceOf[js.Any])
+    inline def setAllowUserUploadedSeal(value: String): Self = StObject.set(x, "allowUserUploadedSeal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUserUploadedSealUndefined: Self = StObject.set(x, "allowUserUploadedSeal", js.undefined)
+    inline def setAllowUserUploadedSealUndefined: Self = StObject.set(x, "allowUserUploadedSeal", js.undefined)
     
-    @scala.inline
-    def setCommissionIdInSeal(value: String): Self = StObject.set(x, "commissionIdInSeal", value.asInstanceOf[js.Any])
+    inline def setCommissionIdInSeal(value: String): Self = StObject.set(x, "commissionIdInSeal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommissionIdInSealUndefined: Self = StObject.set(x, "commissionIdInSeal", js.undefined)
+    inline def setCommissionIdInSealUndefined: Self = StObject.set(x, "commissionIdInSeal", js.undefined)
     
-    @scala.inline
-    def setCounty(value: String): Self = StObject.set(x, "county", value.asInstanceOf[js.Any])
+    inline def setCounty(value: String): Self = StObject.set(x, "county", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountyInSeal(value: String): Self = StObject.set(x, "countyInSeal", value.asInstanceOf[js.Any])
+    inline def setCountyInSeal(value: String): Self = StObject.set(x, "countyInSeal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountyInSealUndefined: Self = StObject.set(x, "countyInSeal", js.undefined)
+    inline def setCountyInSealUndefined: Self = StObject.set(x, "countyInSeal", js.undefined)
     
-    @scala.inline
-    def setCountyUndefined: Self = StObject.set(x, "county", js.undefined)
+    inline def setCountyUndefined: Self = StObject.set(x, "county", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setJurisdictionId(value: String): Self = StObject.set(x, "jurisdictionId", value.asInstanceOf[js.Any])
+    inline def setJurisdictionId(value: String): Self = StObject.set(x, "jurisdictionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJurisdictionIdUndefined: Self = StObject.set(x, "jurisdictionId", js.undefined)
+    inline def setJurisdictionIdUndefined: Self = StObject.set(x, "jurisdictionId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotaryPublicInSeal(value: String): Self = StObject.set(x, "notaryPublicInSeal", value.asInstanceOf[js.Any])
+    inline def setNotaryPublicInSeal(value: String): Self = StObject.set(x, "notaryPublicInSeal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotaryPublicInSealUndefined: Self = StObject.set(x, "notaryPublicInSeal", js.undefined)
+    inline def setNotaryPublicInSealUndefined: Self = StObject.set(x, "notaryPublicInSeal", js.undefined)
     
-    @scala.inline
-    def setStateNameInSeal(value: String): Self = StObject.set(x, "stateNameInSeal", value.asInstanceOf[js.Any])
+    inline def setStateNameInSeal(value: String): Self = StObject.set(x, "stateNameInSeal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNameInSealUndefined: Self = StObject.set(x, "stateNameInSeal", js.undefined)
+    inline def setStateNameInSealUndefined: Self = StObject.set(x, "stateNameInSeal", js.undefined)
   }
 }

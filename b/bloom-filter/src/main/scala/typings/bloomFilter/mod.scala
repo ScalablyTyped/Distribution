@@ -60,18 +60,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def MurmurHash3(seed: Double, data: Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MurmurHash3")(seed.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def MurmurHash3(seed: Double, data: Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("MurmurHash3")(seed.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def create(elements: Double, falsePositiveRate: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any])).asInstanceOf[Filter]
-  @scala.inline
-  def create(elements: Double, falsePositiveRate: Double, nTweak: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any])).asInstanceOf[Filter]
-  @scala.inline
-  def create(elements: Double, falsePositiveRate: Double, nTweak: Double, nFlags: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any], nFlags.asInstanceOf[js.Any])).asInstanceOf[Filter]
-  @scala.inline
-  def create(elements: Double, falsePositiveRate: Double, nTweak: Unit, nFlags: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any], nFlags.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  inline def create(elements: Double, falsePositiveRate: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  inline def create(elements: Double, falsePositiveRate: Double, nTweak: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  inline def create(elements: Double, falsePositiveRate: Double, nTweak: Double, nFlags: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any], nFlags.asInstanceOf[js.Any])).asInstanceOf[Filter]
+  inline def create(elements: Double, falsePositiveRate: Double, nTweak: Unit, nFlags: Double): Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elements.asInstanceOf[js.Any], falsePositiveRate.asInstanceOf[js.Any], nTweak.asInstanceOf[js.Any], nFlags.asInstanceOf[js.Any])).asInstanceOf[Filter]
   
   trait Filter extends StObject {
     
@@ -105,8 +100,7 @@ object mod {
   }
   object Filter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BLOOM_UPDATE_ALL: Double,
       BLOOM_UPDATE_NONE: Double,
       BLOOM_UPDATE_P2PUBKEY_ONLY: Double,
@@ -126,50 +120,35 @@ object mod {
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setBLOOM_UPDATE_ALL(value: Double): Self = StObject.set(x, "BLOOM_UPDATE_ALL", value.asInstanceOf[js.Any])
+      inline def setBLOOM_UPDATE_ALL(value: Double): Self = StObject.set(x, "BLOOM_UPDATE_ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLOOM_UPDATE_NONE(value: Double): Self = StObject.set(x, "BLOOM_UPDATE_NONE", value.asInstanceOf[js.Any])
+      inline def setBLOOM_UPDATE_NONE(value: Double): Self = StObject.set(x, "BLOOM_UPDATE_NONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLOOM_UPDATE_P2PUBKEY_ONLY(value: Double): Self = StObject.set(x, "BLOOM_UPDATE_P2PUBKEY_ONLY", value.asInstanceOf[js.Any])
+      inline def setBLOOM_UPDATE_P2PUBKEY_ONLY(value: Double): Self = StObject.set(x, "BLOOM_UPDATE_P2PUBKEY_ONLY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContains(value: Buffer => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: Buffer => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHash(value: (Double, Buffer) => Double): Self = StObject.set(x, "hash", js.Any.fromFunction2(value))
+      inline def setHash(value: (Double, Buffer) => Double): Self = StObject.set(x, "hash", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInsert(value: Buffer => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: Buffer => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLN2(value: Double): Self = StObject.set(x, "LN2", value.asInstanceOf[js.Any])
+      inline def setLN2(value: Double): Self = StObject.set(x, "LN2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLN2SQUARED(value: Double): Self = StObject.set(x, "LN2SQUARED", value.asInstanceOf[js.Any])
+      inline def setLN2SQUARED(value: Double): Self = StObject.set(x, "LN2SQUARED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAX_BLOOM_FILTER_SIZE(value: Double): Self = StObject.set(x, "MAX_BLOOM_FILTER_SIZE", value.asInstanceOf[js.Any])
+      inline def setMAX_BLOOM_FILTER_SIZE(value: Double): Self = StObject.set(x, "MAX_BLOOM_FILTER_SIZE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAX_HASH_FUNCS(value: Double): Self = StObject.set(x, "MAX_HASH_FUNCS", value.asInstanceOf[js.Any])
+      inline def setMAX_HASH_FUNCS(value: Double): Self = StObject.set(x, "MAX_HASH_FUNCS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMIN_HASH_FUNCS(value: Double): Self = StObject.set(x, "MIN_HASH_FUNCS", value.asInstanceOf[js.Any])
+      inline def setMIN_HASH_FUNCS(value: Double): Self = StObject.set(x, "MIN_HASH_FUNCS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToObject(value: () => FilterOptions): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+      inline def setToObject(value: () => FilterOptions): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
     }
   }
   
@@ -185,32 +164,24 @@ object mod {
   }
   object FilterOptions {
     
-    @scala.inline
-    def apply(nHashFuncs: Double, vData: Buffer): FilterOptions = {
+    inline def apply(nHashFuncs: Double, vData: Buffer): FilterOptions = {
       val __obj = js.Dynamic.literal(nHashFuncs = nHashFuncs.asInstanceOf[js.Any], vData = vData.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterOptions]
     }
     
-    @scala.inline
-    implicit class FilterOptionsMutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FilterOptions](x: Self) {
       
-      @scala.inline
-      def setNFlags(value: Double): Self = StObject.set(x, "nFlags", value.asInstanceOf[js.Any])
+      inline def setNFlags(value: Double): Self = StObject.set(x, "nFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNFlagsUndefined: Self = StObject.set(x, "nFlags", js.undefined)
+      inline def setNFlagsUndefined: Self = StObject.set(x, "nFlags", js.undefined)
       
-      @scala.inline
-      def setNHashFuncs(value: Double): Self = StObject.set(x, "nHashFuncs", value.asInstanceOf[js.Any])
+      inline def setNHashFuncs(value: Double): Self = StObject.set(x, "nHashFuncs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNTweak(value: Double): Self = StObject.set(x, "nTweak", value.asInstanceOf[js.Any])
+      inline def setNTweak(value: Double): Self = StObject.set(x, "nTweak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNTweakUndefined: Self = StObject.set(x, "nTweak", js.undefined)
+      inline def setNTweakUndefined: Self = StObject.set(x, "nTweak", js.undefined)
       
-      @scala.inline
-      def setVData(value: Buffer): Self = StObject.set(x, "vData", value.asInstanceOf[js.Any])
+      inline def setVData(value: Buffer): Self = StObject.set(x, "vData", value.asInstanceOf[js.Any])
     }
   }
 }

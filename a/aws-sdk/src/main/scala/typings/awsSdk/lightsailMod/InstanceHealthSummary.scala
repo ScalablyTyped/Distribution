@@ -23,31 +23,23 @@ trait InstanceHealthSummary extends StObject {
 }
 object InstanceHealthSummary {
   
-  @scala.inline
-  def apply(): InstanceHealthSummary = {
+  inline def apply(): InstanceHealthSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceHealthSummary]
   }
   
-  @scala.inline
-  implicit class InstanceHealthSummaryMutableBuilder[Self <: InstanceHealthSummary] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceHealthSummary](x: Self) {
     
-    @scala.inline
-    def setInstanceHealth(value: InstanceHealthState): Self = StObject.set(x, "instanceHealth", value.asInstanceOf[js.Any])
+    inline def setInstanceHealth(value: InstanceHealthState): Self = StObject.set(x, "instanceHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceHealthReason(value: InstanceHealthReason): Self = StObject.set(x, "instanceHealthReason", value.asInstanceOf[js.Any])
+    inline def setInstanceHealthReason(value: InstanceHealthReason): Self = StObject.set(x, "instanceHealthReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceHealthReasonUndefined: Self = StObject.set(x, "instanceHealthReason", js.undefined)
+    inline def setInstanceHealthReasonUndefined: Self = StObject.set(x, "instanceHealthReason", js.undefined)
     
-    @scala.inline
-    def setInstanceHealthUndefined: Self = StObject.set(x, "instanceHealth", js.undefined)
+    inline def setInstanceHealthUndefined: Self = StObject.set(x, "instanceHealth", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
+    inline def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
   }
 }

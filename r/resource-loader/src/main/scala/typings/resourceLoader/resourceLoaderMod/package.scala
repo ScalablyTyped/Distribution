@@ -12,5 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {string} input The input data to encode.
   * @returns {string} The encoded base64 string
   */
-@scala.inline
-def encodeBinary(input: java.lang.String): java.lang.String = typings.resourceLoader.resourceLoaderMod.^.asInstanceOf[js.Dynamic].applyDynamic("encodeBinary")(input.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def encodeBinary(input: java.lang.String): java.lang.String = typings.resourceLoader.resourceLoaderMod.^.asInstanceOf[js.Dynamic].applyDynamic("encodeBinary")(input.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]

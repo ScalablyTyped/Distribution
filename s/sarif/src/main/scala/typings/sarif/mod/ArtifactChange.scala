@@ -24,28 +24,21 @@ trait ArtifactChange extends StObject {
 }
 object ArtifactChange {
   
-  @scala.inline
-  def apply(artifactLocation: ArtifactLocation, replacements: js.Array[Replacement]): ArtifactChange = {
+  inline def apply(artifactLocation: ArtifactLocation, replacements: js.Array[Replacement]): ArtifactChange = {
     val __obj = js.Dynamic.literal(artifactLocation = artifactLocation.asInstanceOf[js.Any], replacements = replacements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactChange]
   }
   
-  @scala.inline
-  implicit class ArtifactChangeMutableBuilder[Self <: ArtifactChange] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactChange](x: Self) {
     
-    @scala.inline
-    def setArtifactLocation(value: ArtifactLocation): Self = StObject.set(x, "artifactLocation", value.asInstanceOf[js.Any])
+    inline def setArtifactLocation(value: ArtifactLocation): Self = StObject.set(x, "artifactLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setReplacements(value: js.Array[Replacement]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
+    inline def setReplacements(value: js.Array[Replacement]): Self = StObject.set(x, "replacements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementsVarargs(value: Replacement*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+    inline def setReplacementsVarargs(value: Replacement*): Self = StObject.set(x, "replacements", js.Array(value :_*))
   }
 }

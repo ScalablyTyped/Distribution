@@ -12,16 +12,13 @@ trait ClientResult[T] extends StObject {
 }
 object ClientResult {
   
-  @scala.inline
-  def apply[T](value: T): ClientResult[T] = {
+  inline def apply[T](value: T): ClientResult[T] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientResult[T]]
   }
   
-  @scala.inline
-  implicit class ClientResultMutableBuilder[Self <: ClientResult[?], T] (val x: Self & ClientResult[T]) extends AnyVal {
+  extension [Self <: ClientResult[?], T](x: Self & ClientResult[T]) {
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

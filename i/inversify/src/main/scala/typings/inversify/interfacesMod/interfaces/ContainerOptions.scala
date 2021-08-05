@@ -14,31 +14,23 @@ trait ContainerOptions extends StObject {
 }
 object ContainerOptions {
   
-  @scala.inline
-  def apply(): ContainerOptions = {
+  inline def apply(): ContainerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerOptions]
   }
   
-  @scala.inline
-  implicit class ContainerOptionsMutableBuilder[Self <: ContainerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerOptions](x: Self) {
     
-    @scala.inline
-    def setAutoBindInjectable(value: Boolean): Self = StObject.set(x, "autoBindInjectable", value.asInstanceOf[js.Any])
+    inline def setAutoBindInjectable(value: Boolean): Self = StObject.set(x, "autoBindInjectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoBindInjectableUndefined: Self = StObject.set(x, "autoBindInjectable", js.undefined)
+    inline def setAutoBindInjectableUndefined: Self = StObject.set(x, "autoBindInjectable", js.undefined)
     
-    @scala.inline
-    def setDefaultScope(value: BindingScope): Self = StObject.set(x, "defaultScope", value.asInstanceOf[js.Any])
+    inline def setDefaultScope(value: BindingScope): Self = StObject.set(x, "defaultScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultScopeUndefined: Self = StObject.set(x, "defaultScope", js.undefined)
+    inline def setDefaultScopeUndefined: Self = StObject.set(x, "defaultScope", js.undefined)
     
-    @scala.inline
-    def setSkipBaseClassChecks(value: Boolean): Self = StObject.set(x, "skipBaseClassChecks", value.asInstanceOf[js.Any])
+    inline def setSkipBaseClassChecks(value: Boolean): Self = StObject.set(x, "skipBaseClassChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipBaseClassChecksUndefined: Self = StObject.set(x, "skipBaseClassChecks", js.undefined)
+    inline def setSkipBaseClassChecksUndefined: Self = StObject.set(x, "skipBaseClassChecks", js.undefined)
   }
 }

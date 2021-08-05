@@ -13,16 +13,13 @@ trait FileSystemUploadResult
 }
 object FileSystemUploadResult {
   
-  @scala.inline
-  def apply(body: String, headers: Record[String, String], status: Double): FileSystemUploadResult = {
+  inline def apply(body: String, headers: Record[String, String], status: Double): FileSystemUploadResult = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], mimeType = null)
     __obj.asInstanceOf[FileSystemUploadResult]
   }
   
-  @scala.inline
-  implicit class FileSystemUploadResultMutableBuilder[Self <: FileSystemUploadResult] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemUploadResult](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

@@ -25,25 +25,19 @@ trait SchemaObbFile extends StObject {
 }
 object SchemaObbFile {
   
-  @scala.inline
-  def apply(): SchemaObbFile = {
+  inline def apply(): SchemaObbFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaObbFile]
   }
   
-  @scala.inline
-  implicit class SchemaObbFileMutableBuilder[Self <: SchemaObbFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaObbFile](x: Self) {
     
-    @scala.inline
-    def setObb(value: SchemaFileReference): Self = StObject.set(x, "obb", value.asInstanceOf[js.Any])
+    inline def setObb(value: SchemaFileReference): Self = StObject.set(x, "obb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObbFileName(value: String): Self = StObject.set(x, "obbFileName", value.asInstanceOf[js.Any])
+    inline def setObbFileName(value: String): Self = StObject.set(x, "obbFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObbFileNameUndefined: Self = StObject.set(x, "obbFileName", js.undefined)
+    inline def setObbFileNameUndefined: Self = StObject.set(x, "obbFileName", js.undefined)
     
-    @scala.inline
-    def setObbUndefined: Self = StObject.set(x, "obb", js.undefined)
+    inline def setObbUndefined: Self = StObject.set(x, "obb", js.undefined)
   }
 }

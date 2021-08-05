@@ -31,15 +31,12 @@ object Polygon {
     * @param element Element to parse
     * @param [options] Options object
     */
-  @scala.inline
-  def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
-  @scala.inline
-  def fromElement(element: SVGElement, options: IPolylineOptions): typings.fabric.fabricImplMod.Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
+  inline def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
+  inline def fromElement(element: SVGElement, options: IPolylineOptions): typings.fabric.fabricImplMod.Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
   
   /**
     * Returns fabric.Polygon instance from an object representation
     * @param object Object to create an instance from
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
+  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Polygon]
 }

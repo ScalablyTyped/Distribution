@@ -16,19 +16,15 @@ trait SchemaLinkedContentReference extends StObject {
 }
 object SchemaLinkedContentReference {
   
-  @scala.inline
-  def apply(): SchemaLinkedContentReference = {
+  inline def apply(): SchemaLinkedContentReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLinkedContentReference]
   }
   
-  @scala.inline
-  implicit class SchemaLinkedContentReferenceMutableBuilder[Self <: SchemaLinkedContentReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLinkedContentReference](x: Self) {
     
-    @scala.inline
-    def setSheetsChartReference(value: SchemaSheetsChartReference): Self = StObject.set(x, "sheetsChartReference", value.asInstanceOf[js.Any])
+    inline def setSheetsChartReference(value: SchemaSheetsChartReference): Self = StObject.set(x, "sheetsChartReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsChartReferenceUndefined: Self = StObject.set(x, "sheetsChartReference", js.undefined)
+    inline def setSheetsChartReferenceUndefined: Self = StObject.set(x, "sheetsChartReference", js.undefined)
   }
 }

@@ -12,8 +12,7 @@ trait FieldCalculatedErrorValue
 }
 object FieldCalculatedErrorValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -25,10 +24,8 @@ object FieldCalculatedErrorValue {
     __obj.asInstanceOf[FieldCalculatedErrorValue]
   }
   
-  @scala.inline
-  implicit class FieldCalculatedErrorValueMutableBuilder[Self <: FieldCalculatedErrorValue] (val x: Self) extends AnyVal {
+  extension [Self <: FieldCalculatedErrorValue](x: Self) {
     
-    @scala.inline
-    def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
+    inline def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
   }
 }

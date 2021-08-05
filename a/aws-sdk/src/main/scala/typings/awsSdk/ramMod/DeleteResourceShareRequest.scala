@@ -18,22 +18,17 @@ trait DeleteResourceShareRequest extends StObject {
 }
 object DeleteResourceShareRequest {
   
-  @scala.inline
-  def apply(resourceShareArn: String): DeleteResourceShareRequest = {
+  inline def apply(resourceShareArn: String): DeleteResourceShareRequest = {
     val __obj = js.Dynamic.literal(resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResourceShareRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResourceShareRequestMutableBuilder[Self <: DeleteResourceShareRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourceShareRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }
 }

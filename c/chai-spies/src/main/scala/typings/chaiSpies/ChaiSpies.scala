@@ -37,18 +37,15 @@ object ChaiSpies {
   }
   object Always {
     
-    @scala.inline
-    def apply(`with`: AlwaysWith): Always = {
+    inline def apply(`with`: AlwaysWith): Always = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("with")(`with`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Always]
     }
     
-    @scala.inline
-    implicit class AlwaysMutableBuilder[Self <: Always] (val x: Self) extends AnyVal {
+    extension [Self <: Always](x: Self) {
       
-      @scala.inline
-      def setWith(value: AlwaysWith): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
+      inline def setWith(value: AlwaysWith): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,20 +128,16 @@ object ChaiSpies {
   }
   object At {
     
-    @scala.inline
-    def apply(least: Double => Assertion, most: Double => Assertion): At = {
+    inline def apply(least: Double => Assertion, most: Double => Assertion): At = {
       val __obj = js.Dynamic.literal(least = js.Any.fromFunction1(least), most = js.Any.fromFunction1(most))
       __obj.asInstanceOf[At]
     }
     
-    @scala.inline
-    implicit class AtMutableBuilder[Self <: At] (val x: Self) extends AnyVal {
+    extension [Self <: At](x: Self) {
       
-      @scala.inline
-      def setLeast(value: Double => Assertion): Self = StObject.set(x, "least", js.Any.fromFunction1(value))
+      inline def setLeast(value: Double => Assertion): Self = StObject.set(x, "least", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMost(value: Double => Assertion): Self = StObject.set(x, "most", js.Any.fromFunction1(value))
+      inline def setMost(value: Double => Assertion): Self = StObject.set(x, "most", js.Any.fromFunction1(value))
     }
   }
   
@@ -345,17 +338,14 @@ object ChaiSpies {
   }
   object Resetable {
     
-    @scala.inline
-    def apply(reset: () => Resetable): Resetable = {
+    inline def apply(reset: () => Resetable): Resetable = {
       val __obj = js.Dynamic.literal(reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[Resetable]
     }
     
-    @scala.inline
-    implicit class ResetableMutableBuilder[Self <: Resetable] (val x: Self) extends AnyVal {
+    extension [Self <: Resetable](x: Self) {
       
-      @scala.inline
-      def setReset(value: () => Resetable): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Resetable): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   

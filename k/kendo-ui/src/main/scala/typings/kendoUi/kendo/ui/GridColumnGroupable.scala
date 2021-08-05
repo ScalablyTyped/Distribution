@@ -12,25 +12,19 @@ trait GridColumnGroupable extends StObject {
 }
 object GridColumnGroupable {
   
-  @scala.inline
-  def apply(): GridColumnGroupable = {
+  inline def apply(): GridColumnGroupable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridColumnGroupable]
   }
   
-  @scala.inline
-  implicit class GridColumnGroupableMutableBuilder[Self <: GridColumnGroupable] (val x: Self) extends AnyVal {
+  extension [Self <: GridColumnGroupable](x: Self) {
     
-    @scala.inline
-    def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
   }
 }

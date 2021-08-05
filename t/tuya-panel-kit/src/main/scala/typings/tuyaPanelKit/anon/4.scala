@@ -14,21 +14,17 @@ trait `4`[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof Event
 }
 object `4` {
   
-  @scala.inline
-  def apply[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](): `4`[EventMap, EventName] = {
+  inline def apply[EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](): `4`[EventMap, EventName] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`4`[EventMap, EventName]]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`[?, ?], EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */] (val x: Self & (`4`[EventMap, EventName])) extends AnyVal {
+  extension [Self <: `4`[?, ?], EventMap /* <: EventMapBase */, EventName /* <: Extract[/* keyof EventMap */ String, String] */](x: Self & (`4`[EventMap, EventName])) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

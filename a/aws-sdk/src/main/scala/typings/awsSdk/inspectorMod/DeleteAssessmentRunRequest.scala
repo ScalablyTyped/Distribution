@@ -13,16 +13,13 @@ trait DeleteAssessmentRunRequest extends StObject {
 }
 object DeleteAssessmentRunRequest {
   
-  @scala.inline
-  def apply(assessmentRunArn: Arn): DeleteAssessmentRunRequest = {
+  inline def apply(assessmentRunArn: Arn): DeleteAssessmentRunRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAssessmentRunRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAssessmentRunRequestMutableBuilder[Self <: DeleteAssessmentRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAssessmentRunRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
   }
 }

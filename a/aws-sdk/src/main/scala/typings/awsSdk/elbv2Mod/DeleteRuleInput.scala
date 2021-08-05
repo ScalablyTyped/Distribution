@@ -13,16 +13,13 @@ trait DeleteRuleInput extends StObject {
 }
 object DeleteRuleInput {
   
-  @scala.inline
-  def apply(RuleArn: RuleArn): DeleteRuleInput = {
+  inline def apply(RuleArn: RuleArn): DeleteRuleInput = {
     val __obj = js.Dynamic.literal(RuleArn = RuleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRuleInput]
   }
   
-  @scala.inline
-  implicit class DeleteRuleInputMutableBuilder[Self <: DeleteRuleInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRuleInput](x: Self) {
     
-    @scala.inline
-    def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
+    inline def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
   }
 }

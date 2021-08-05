@@ -40,15 +40,15 @@ object diff2htmlUiBaseMod {
     
     def fileListToggle(startVisible: Boolean): Unit = js.native
     
-    var getHashTag: js.Any = js.native
+    /* private */ var getHashTag: js.Any = js.native
     
     def highlightCode(): Unit = js.native
     
     val hljs: HLJSApi | Null = js.native
     
-    var instanceOfHighlightResult: js.Any = js.native
+    /* private */ var instanceOfHighlightResult: js.Any = js.native
     
-    var isElement: js.Any = js.native
+    /* private */ var isElement: js.Any = js.native
     
     def smartSelection(): Unit = js.native
     
@@ -66,38 +66,32 @@ object diff2htmlUiBaseMod {
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.diffStyle")
     @js.native
     def diffStyle: DiffStyleType = js.native
-    @scala.inline
-    def diffStyle_=(x: DiffStyleType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diffStyle")(x.asInstanceOf[js.Any])
+    inline def diffStyle_=(x: DiffStyleType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("diffStyle")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.drawFileList")
     @js.native
     def drawFileList: Boolean = js.native
-    @scala.inline
-    def drawFileList_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawFileList")(x.asInstanceOf[js.Any])
+    inline def drawFileList_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("drawFileList")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.fileListStartVisible")
     @js.native
     def fileListStartVisible: Boolean = js.native
-    @scala.inline
-    def fileListStartVisible_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileListStartVisible")(x.asInstanceOf[js.Any])
+    inline def fileListStartVisible_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileListStartVisible")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.fileListToggle")
     @js.native
     def fileListToggle: Boolean = js.native
-    @scala.inline
-    def fileListToggle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileListToggle")(x.asInstanceOf[js.Any])
+    inline def fileListToggle_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fileListToggle")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.highlight")
     @js.native
     def highlight: Boolean = js.native
-    @scala.inline
-    def highlight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlight")(x.asInstanceOf[js.Any])
+    inline def highlight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlight")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.matchWordsThreshold")
     @js.native
     def matchWordsThreshold: Double = js.native
-    @scala.inline
-    def matchWordsThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchWordsThreshold")(x.asInstanceOf[js.Any])
+    inline def matchWordsThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchWordsThreshold")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.matching")
     @js.native
@@ -106,47 +100,39 @@ object diff2htmlUiBaseMod {
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.matchingMaxComparisons")
     @js.native
     def matchingMaxComparisons: Double = js.native
-    @scala.inline
-    def matchingMaxComparisons_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchingMaxComparisons")(x.asInstanceOf[js.Any])
+    inline def matchingMaxComparisons_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchingMaxComparisons")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def matching_=(x: LineMatchingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matching")(x.asInstanceOf[js.Any])
+    inline def matching_=(x: LineMatchingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matching")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.maxLineLengthHighlight")
     @js.native
     def maxLineLengthHighlight: Double = js.native
-    @scala.inline
-    def maxLineLengthHighlight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineLengthHighlight")(x.asInstanceOf[js.Any])
+    inline def maxLineLengthHighlight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineLengthHighlight")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.maxLineSizeInBlockForComparison")
     @js.native
     def maxLineSizeInBlockForComparison: Double = js.native
-    @scala.inline
-    def maxLineSizeInBlockForComparison_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineSizeInBlockForComparison")(x.asInstanceOf[js.Any])
+    inline def maxLineSizeInBlockForComparison_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLineSizeInBlockForComparison")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.outputFormat")
     @js.native
     def outputFormat: OutputFormatType = js.native
-    @scala.inline
-    def outputFormat_=(x: OutputFormatType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputFormat")(x.asInstanceOf[js.Any])
+    inline def outputFormat_=(x: OutputFormatType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outputFormat")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.renderNothingWhenEmpty")
     @js.native
     def renderNothingWhenEmpty: Boolean = js.native
-    @scala.inline
-    def renderNothingWhenEmpty_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderNothingWhenEmpty")(x.asInstanceOf[js.Any])
+    inline def renderNothingWhenEmpty_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderNothingWhenEmpty")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.smartSelection")
     @js.native
     def smartSelection: Boolean = js.native
-    @scala.inline
-    def smartSelection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartSelection")(x.asInstanceOf[js.Any])
+    inline def smartSelection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartSelection")(x.asInstanceOf[js.Any])
     
     @JSImport("diff2html/lib/ui/js/diff2html-ui-base", "defaultDiff2HtmlUIConfig.synchronisedScroll")
     @js.native
     def synchronisedScroll: Boolean = js.native
-    @scala.inline
-    def synchronisedScroll_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("synchronisedScroll")(x.asInstanceOf[js.Any])
+    inline def synchronisedScroll_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("synchronisedScroll")(x.asInstanceOf[js.Any])
   }
   
   trait Diff2HtmlUIConfig
@@ -165,44 +151,32 @@ object diff2htmlUiBaseMod {
   }
   object Diff2HtmlUIConfig {
     
-    @scala.inline
-    def apply(): Diff2HtmlUIConfig = {
+    inline def apply(): Diff2HtmlUIConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Diff2HtmlUIConfig]
     }
     
-    @scala.inline
-    implicit class Diff2HtmlUIConfigMutableBuilder[Self <: Diff2HtmlUIConfig] (val x: Self) extends AnyVal {
+    extension [Self <: Diff2HtmlUIConfig](x: Self) {
       
-      @scala.inline
-      def setFileListStartVisible(value: Boolean): Self = StObject.set(x, "fileListStartVisible", value.asInstanceOf[js.Any])
+      inline def setFileListStartVisible(value: Boolean): Self = StObject.set(x, "fileListStartVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileListStartVisibleUndefined: Self = StObject.set(x, "fileListStartVisible", js.undefined)
+      inline def setFileListStartVisibleUndefined: Self = StObject.set(x, "fileListStartVisible", js.undefined)
       
-      @scala.inline
-      def setFileListToggle(value: Boolean): Self = StObject.set(x, "fileListToggle", value.asInstanceOf[js.Any])
+      inline def setFileListToggle(value: Boolean): Self = StObject.set(x, "fileListToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileListToggleUndefined: Self = StObject.set(x, "fileListToggle", js.undefined)
+      inline def setFileListToggleUndefined: Self = StObject.set(x, "fileListToggle", js.undefined)
       
-      @scala.inline
-      def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setSmartSelection(value: Boolean): Self = StObject.set(x, "smartSelection", value.asInstanceOf[js.Any])
+      inline def setSmartSelection(value: Boolean): Self = StObject.set(x, "smartSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartSelectionUndefined: Self = StObject.set(x, "smartSelection", js.undefined)
+      inline def setSmartSelectionUndefined: Self = StObject.set(x, "smartSelection", js.undefined)
       
-      @scala.inline
-      def setSynchronisedScroll(value: Boolean): Self = StObject.set(x, "synchronisedScroll", value.asInstanceOf[js.Any])
+      inline def setSynchronisedScroll(value: Boolean): Self = StObject.set(x, "synchronisedScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSynchronisedScrollUndefined: Self = StObject.set(x, "synchronisedScroll", js.undefined)
+      inline def setSynchronisedScrollUndefined: Self = StObject.set(x, "synchronisedScroll", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait CallbackResponse extends StObject {
 }
 object CallbackResponse {
   
-  @scala.inline
-  def apply(data: Record[String, js.Any], ignoreMatch: () => Unit): CallbackResponse = {
+  inline def apply(data: Record[String, js.Any], ignoreMatch: () => Unit): CallbackResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], ignoreMatch = js.Any.fromFunction0(ignoreMatch))
     __obj.asInstanceOf[CallbackResponse]
   }
   
-  @scala.inline
-  implicit class CallbackResponseMutableBuilder[Self <: CallbackResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreMatch(value: () => Unit): Self = StObject.set(x, "ignoreMatch", js.Any.fromFunction0(value))
+    inline def setIgnoreMatch(value: () => Unit): Self = StObject.set(x, "ignoreMatch", js.Any.fromFunction0(value))
   }
 }

@@ -61,8 +61,7 @@ trait IWebElementFinders extends StObject {
 }
 object IWebElementFinders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findElement: Locator => WebElementPromise,
     findElements: Locator => js.Promise[js.Array[WebElement]]
   ): IWebElementFinders = {
@@ -70,13 +69,10 @@ object IWebElementFinders {
     __obj.asInstanceOf[IWebElementFinders]
   }
   
-  @scala.inline
-  implicit class IWebElementFindersMutableBuilder[Self <: IWebElementFinders] (val x: Self) extends AnyVal {
+  extension [Self <: IWebElementFinders](x: Self) {
     
-    @scala.inline
-    def setFindElement(value: Locator => WebElementPromise): Self = StObject.set(x, "findElement", js.Any.fromFunction1(value))
+    inline def setFindElement(value: Locator => WebElementPromise): Self = StObject.set(x, "findElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindElements(value: Locator => js.Promise[js.Array[WebElement]]): Self = StObject.set(x, "findElements", js.Any.fromFunction1(value))
+    inline def setFindElements(value: Locator => js.Promise[js.Array[WebElement]]): Self = StObject.set(x, "findElements", js.Any.fromFunction1(value))
   }
 }

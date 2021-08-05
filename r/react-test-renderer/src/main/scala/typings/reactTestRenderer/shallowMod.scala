@@ -12,8 +12,7 @@ object shallowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
+  inline def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
   
   @js.native
   trait ShallowRenderer extends StObject {

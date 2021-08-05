@@ -38,32 +38,24 @@ object cardMod {
   }
   object CardProps {
     
-    @scala.inline
-    def apply(): CardProps = {
+    inline def apply(): CardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardProps]
     }
     
-    @scala.inline
-    implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardProps](x: Self) {
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
       
-      @scala.inline
-      def setRaiseable(value: Boolean): Self = StObject.set(x, "raiseable", value.asInstanceOf[js.Any])
+      inline def setRaiseable(value: Boolean): Self = StObject.set(x, "raiseable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaiseableUndefined: Self = StObject.set(x, "raiseable", js.undefined)
+      inline def setRaiseableUndefined: Self = StObject.set(x, "raiseable", js.undefined)
     }
   }
 }

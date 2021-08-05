@@ -18,25 +18,19 @@ trait QuotaPeriod extends StObject {
 }
 object QuotaPeriod {
   
-  @scala.inline
-  def apply(): QuotaPeriod = {
+  inline def apply(): QuotaPeriod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QuotaPeriod]
   }
   
-  @scala.inline
-  implicit class QuotaPeriodMutableBuilder[Self <: QuotaPeriod] (val x: Self) extends AnyVal {
+  extension [Self <: QuotaPeriod](x: Self) {
     
-    @scala.inline
-    def setPeriodUnit(value: PeriodUnit): Self = StObject.set(x, "PeriodUnit", value.asInstanceOf[js.Any])
+    inline def setPeriodUnit(value: PeriodUnit): Self = StObject.set(x, "PeriodUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUnitUndefined: Self = StObject.set(x, "PeriodUnit", js.undefined)
+    inline def setPeriodUnitUndefined: Self = StObject.set(x, "PeriodUnit", js.undefined)
     
-    @scala.inline
-    def setPeriodValue(value: PeriodValue): Self = StObject.set(x, "PeriodValue", value.asInstanceOf[js.Any])
+    inline def setPeriodValue(value: PeriodValue): Self = StObject.set(x, "PeriodValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodValueUndefined: Self = StObject.set(x, "PeriodValue", js.undefined)
+    inline def setPeriodValueUndefined: Self = StObject.set(x, "PeriodValue", js.undefined)
   }
 }

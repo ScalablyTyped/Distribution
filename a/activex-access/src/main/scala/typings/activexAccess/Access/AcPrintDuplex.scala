@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcPrintDuplex extends StObject
 object AcPrintDuplex {
   
-  @scala.inline
-  def acPRDPHorizontal: `2` = 2.asInstanceOf[`2`]
+  inline def acPRDPHorizontal: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acPRDPSimplex: `1` = 1.asInstanceOf[`1`]
+  inline def acPRDPSimplex: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acPRDPVertical: `3` = 3.asInstanceOf[`3`]
+  inline def acPRDPVertical: `3` = 3.asInstanceOf[`3`]
 }

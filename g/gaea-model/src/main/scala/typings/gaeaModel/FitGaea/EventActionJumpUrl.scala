@@ -10,19 +10,15 @@ trait EventActionJumpUrl extends StObject {
 }
 object EventActionJumpUrl {
   
-  @scala.inline
-  def apply(): EventActionJumpUrl = {
+  inline def apply(): EventActionJumpUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventActionJumpUrl]
   }
   
-  @scala.inline
-  implicit class EventActionJumpUrlMutableBuilder[Self <: EventActionJumpUrl] (val x: Self) extends AnyVal {
+  extension [Self <: EventActionJumpUrl](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -48,43 +48,31 @@ trait SchemaBasicChartSeries extends StObject {
 }
 object SchemaBasicChartSeries {
   
-  @scala.inline
-  def apply(): SchemaBasicChartSeries = {
+  inline def apply(): SchemaBasicChartSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasicChartSeries]
   }
   
-  @scala.inline
-  implicit class SchemaBasicChartSeriesMutableBuilder[Self <: SchemaBasicChartSeries] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasicChartSeries](x: Self) {
     
-    @scala.inline
-    def setColor(value: SchemaColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: SchemaColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: SchemaLineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: SchemaLineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setSeries(value: SchemaChartData): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: SchemaChartData): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setTargetAxis(value: String): Self = StObject.set(x, "targetAxis", value.asInstanceOf[js.Any])
+    inline def setTargetAxis(value: String): Self = StObject.set(x, "targetAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAxisUndefined: Self = StObject.set(x, "targetAxis", js.undefined)
+    inline def setTargetAxisUndefined: Self = StObject.set(x, "targetAxis", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

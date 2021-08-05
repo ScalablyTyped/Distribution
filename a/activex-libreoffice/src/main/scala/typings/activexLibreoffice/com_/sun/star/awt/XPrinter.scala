@@ -51,8 +51,7 @@ trait XPrinter
 }
 object XPrinter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BinarySetup: SafeArray[Double],
     FormDescriptions: SafeArray[String],
     PropertySetInfo: XPropertySetInfo,
@@ -81,22 +80,16 @@ object XPrinter {
     __obj.asInstanceOf[XPrinter]
   }
   
-  @scala.inline
-  implicit class XPrinterMutableBuilder[Self <: XPrinter] (val x: Self) extends AnyVal {
+  extension [Self <: XPrinter](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndPage(value: () => Unit): Self = StObject.set(x, "endPage", js.Any.fromFunction0(value))
+    inline def setEndPage(value: () => Unit): Self = StObject.set(x, "endPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: (String, Double, Boolean) => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+    inline def setStart(value: (String, Double, Boolean) => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStartPage(value: () => XDevice): Self = StObject.set(x, "startPage", js.Any.fromFunction0(value))
+    inline def setStartPage(value: () => XDevice): Self = StObject.set(x, "startPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    inline def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

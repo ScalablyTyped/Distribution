@@ -22,12 +22,12 @@ object mod {
     def this(nextState: String, fieldsObject: FormFields) = this()
     
     // if  private members aren't defined, typescript allows assigning anything to InputForm
-    var members: js.Any = js.native
+    /* private */ var members: js.Any = js.native
   }
   
   @JSImport("webprogbase-console-view", "Request")
   @js.native
-  class Request protected () extends StObject {
+  /* private */ class Request () extends StObject {
     
     var data: BasicObject[js.Any] | Null = js.native
     
@@ -36,7 +36,7 @@ object mod {
   
   @JSImport("webprogbase-console-view", "Response")
   @js.native
-  class Response protected () extends StObject {
+  /* private */ class Response () extends StObject {
     
     def redirect(toState: String): Unit = js.native
     def redirect(toState: String, data: BasicObject[js.Any]): Unit = js.native
@@ -76,29 +76,22 @@ object mod {
   }
   object FormFieldDescriptor {
     
-    @scala.inline
-    def apply(description: String): FormFieldDescriptor = {
+    inline def apply(description: String): FormFieldDescriptor = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormFieldDescriptor]
     }
     
-    @scala.inline
-    implicit class FormFieldDescriptorMutableBuilder[Self <: FormFieldDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: FormFieldDescriptor](x: Self) {
       
-      @scala.inline
-      def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: String): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+      inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
       
-      @scala.inline
-      def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,20 +107,16 @@ object mod {
   }
   object StateLinkDescriptor {
     
-    @scala.inline
-    def apply(data: BasicObject[js.Any], description: String): StateLinkDescriptor = {
+    inline def apply(data: BasicObject[js.Any], description: String): StateLinkDescriptor = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateLinkDescriptor]
     }
     
-    @scala.inline
-    implicit class StateLinkDescriptorMutableBuilder[Self <: StateLinkDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: StateLinkDescriptor](x: Self) {
       
-      @scala.inline
-      def setData(value: BasicObject[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: BasicObject[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
   

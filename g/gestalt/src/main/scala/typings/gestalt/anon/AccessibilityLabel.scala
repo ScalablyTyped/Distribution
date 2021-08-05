@@ -12,19 +12,15 @@ trait AccessibilityLabel extends StObject {
 }
 object AccessibilityLabel {
   
-  @scala.inline
-  def apply(accessibilityLabel: String, onDismiss: () => Unit): AccessibilityLabel = {
+  inline def apply(accessibilityLabel: String, onDismiss: () => Unit): AccessibilityLabel = {
     val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
     __obj.asInstanceOf[AccessibilityLabel]
   }
   
-  @scala.inline
-  implicit class AccessibilityLabelMutableBuilder[Self <: AccessibilityLabel] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityLabel](x: Self) {
     
-    @scala.inline
-    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+    inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
   }
 }

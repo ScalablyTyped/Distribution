@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OMathGroupChar")
 @js.native
-class OMathGroupChar protected ()
+/* private */ class OMathGroupChar ()
   extends StObject
      with typings.activexWord.Word.OMathGroupChar {
   
@@ -31,7 +31,7 @@ class OMathGroupChar protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OMathGroupChar_typekey")
   var WordDotOMathGroupChar_typekey: typings.activexWord.Word.OMathGroupChar = js.native
 }

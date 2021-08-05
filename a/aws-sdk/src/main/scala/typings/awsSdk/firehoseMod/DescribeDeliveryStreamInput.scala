@@ -23,28 +23,21 @@ trait DescribeDeliveryStreamInput extends StObject {
 }
 object DescribeDeliveryStreamInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName): DescribeDeliveryStreamInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName): DescribeDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDeliveryStreamInput]
   }
   
-  @scala.inline
-  implicit class DescribeDeliveryStreamInputMutableBuilder[Self <: DescribeDeliveryStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDeliveryStreamInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartDestinationId(value: DestinationId): Self = StObject.set(x, "ExclusiveStartDestinationId", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartDestinationId(value: DestinationId): Self = StObject.set(x, "ExclusiveStartDestinationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartDestinationIdUndefined: Self = StObject.set(x, "ExclusiveStartDestinationId", js.undefined)
+    inline def setExclusiveStartDestinationIdUndefined: Self = StObject.set(x, "ExclusiveStartDestinationId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: DescribeDeliveryStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: DescribeDeliveryStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

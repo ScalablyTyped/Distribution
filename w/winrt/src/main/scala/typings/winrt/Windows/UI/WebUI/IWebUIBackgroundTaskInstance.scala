@@ -10,16 +10,13 @@ trait IWebUIBackgroundTaskInstance extends StObject {
 }
 object IWebUIBackgroundTaskInstance {
   
-  @scala.inline
-  def apply(succeeded: Boolean): IWebUIBackgroundTaskInstance = {
+  inline def apply(succeeded: Boolean): IWebUIBackgroundTaskInstance = {
     val __obj = js.Dynamic.literal(succeeded = succeeded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebUIBackgroundTaskInstance]
   }
   
-  @scala.inline
-  implicit class IWebUIBackgroundTaskInstanceMutableBuilder[Self <: IWebUIBackgroundTaskInstance] (val x: Self) extends AnyVal {
+  extension [Self <: IWebUIBackgroundTaskInstance](x: Self) {
     
-    @scala.inline
-    def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

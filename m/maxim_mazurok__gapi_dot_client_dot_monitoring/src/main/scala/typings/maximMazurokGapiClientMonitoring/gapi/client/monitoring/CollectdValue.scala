@@ -17,31 +17,23 @@ trait CollectdValue extends StObject {
 }
 object CollectdValue {
   
-  @scala.inline
-  def apply(): CollectdValue = {
+  inline def apply(): CollectdValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectdValue]
   }
   
-  @scala.inline
-  implicit class CollectdValueMutableBuilder[Self <: CollectdValue] (val x: Self) extends AnyVal {
+  extension [Self <: CollectdValue](x: Self) {
     
-    @scala.inline
-    def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
+    inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
+    inline def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
     
-    @scala.inline
-    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
+    inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
+    inline def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
-    @scala.inline
-    def setValue(value: TypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

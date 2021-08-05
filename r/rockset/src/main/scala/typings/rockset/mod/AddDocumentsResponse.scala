@@ -11,22 +11,17 @@ trait AddDocumentsResponse extends StObject {
 }
 object AddDocumentsResponse {
   
-  @scala.inline
-  def apply(): AddDocumentsResponse = {
+  inline def apply(): AddDocumentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddDocumentsResponse]
   }
   
-  @scala.inline
-  implicit class AddDocumentsResponseMutableBuilder[Self <: AddDocumentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddDocumentsResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[DocumentStatus]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[DocumentStatus]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: DocumentStatus*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: DocumentStatus*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

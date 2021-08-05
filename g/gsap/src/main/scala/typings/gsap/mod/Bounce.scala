@@ -29,16 +29,13 @@ object Bounce {
   @JSImport("gsap", "Bounce.easeInOut")
   @js.native
   def easeInOut: typings.gsap.gsap.Bounce = js.native
-  @scala.inline
-  def easeInOut_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
+  inline def easeInOut_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def easeIn_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
+  inline def easeIn_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("gsap", "Bounce.easeOut")
   @js.native
   def easeOut: typings.gsap.gsap.Bounce = js.native
-  @scala.inline
-  def easeOut_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
+  inline def easeOut_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
 }

@@ -13,16 +13,13 @@ trait DescribeEventSourceRequest extends StObject {
 }
 object DescribeEventSourceRequest {
   
-  @scala.inline
-  def apply(Name: EventSourceName): DescribeEventSourceRequest = {
+  inline def apply(Name: EventSourceName): DescribeEventSourceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventSourceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEventSourceRequestMutableBuilder[Self <: DescribeEventSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventSourceRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

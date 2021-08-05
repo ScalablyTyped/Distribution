@@ -13,19 +13,15 @@ trait GetFlattenedDocumentResponse extends StObject {
 }
 object GetFlattenedDocumentResponse {
   
-  @scala.inline
-  def apply(nodes: js.Array[Node]): GetFlattenedDocumentResponse = {
+  inline def apply(nodes: js.Array[Node]): GetFlattenedDocumentResponse = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFlattenedDocumentResponse]
   }
   
-  @scala.inline
-  implicit class GetFlattenedDocumentResponseMutableBuilder[Self <: GetFlattenedDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFlattenedDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

@@ -24,8 +24,7 @@ trait ISyntaxTrivia extends StObject {
 }
 object ISyntaxTrivia {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fullText: () => String,
     fullWidth: () => Double,
     isComment: () => Boolean,
@@ -39,31 +38,22 @@ object ISyntaxTrivia {
     __obj.asInstanceOf[ISyntaxTrivia]
   }
   
-  @scala.inline
-  implicit class ISyntaxTriviaMutableBuilder[Self <: ISyntaxTrivia] (val x: Self) extends AnyVal {
+  extension [Self <: ISyntaxTrivia](x: Self) {
     
-    @scala.inline
-    def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
+    inline def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
+    inline def setFullWidth(value: () => Double): Self = StObject.set(x, "fullWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsComment(value: () => Boolean): Self = StObject.set(x, "isComment", js.Any.fromFunction0(value))
+    inline def setIsComment(value: () => Boolean): Self = StObject.set(x, "isComment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNewLine(value: () => Boolean): Self = StObject.set(x, "isNewLine", js.Any.fromFunction0(value))
+    inline def setIsNewLine(value: () => Boolean): Self = StObject.set(x, "isNewLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSkippedToken(value: () => Boolean): Self = StObject.set(x, "isSkippedToken", js.Any.fromFunction0(value))
+    inline def setIsSkippedToken(value: () => Boolean): Self = StObject.set(x, "isSkippedToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsWhitespace(value: () => Boolean): Self = StObject.set(x, "isWhitespace", js.Any.fromFunction0(value))
+    inline def setIsWhitespace(value: () => Boolean): Self = StObject.set(x, "isWhitespace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
+    inline def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSkippedToken(value: () => ISyntaxToken): Self = StObject.set(x, "skippedToken", js.Any.fromFunction0(value))
+    inline def setSkippedToken(value: () => ISyntaxToken): Self = StObject.set(x, "skippedToken", js.Any.fromFunction0(value))
   }
 }

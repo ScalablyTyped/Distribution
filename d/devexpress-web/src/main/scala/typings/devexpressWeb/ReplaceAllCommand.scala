@@ -21,16 +21,13 @@ trait ReplaceAllCommand
 }
 object ReplaceAllCommand {
   
-  @scala.inline
-  def apply(execute: (String, String, Boolean) => Boolean, getState: () => SimpleCommandState): ReplaceAllCommand = {
+  inline def apply(execute: (String, String, Boolean) => Boolean, getState: () => SimpleCommandState): ReplaceAllCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction3(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ReplaceAllCommand]
   }
   
-  @scala.inline
-  implicit class ReplaceAllCommandMutableBuilder[Self <: ReplaceAllCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceAllCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
+    inline def setExecute(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }
 }

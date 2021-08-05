@@ -12,19 +12,15 @@ trait UserAgentConnectingEvent extends StObject {
 }
 object UserAgentConnectingEvent {
   
-  @scala.inline
-  def apply(attempts: Double, socket: Socket): UserAgentConnectingEvent = {
+  inline def apply(attempts: Double, socket: Socket): UserAgentConnectingEvent = {
     val __obj = js.Dynamic.literal(attempts = attempts.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentConnectingEvent]
   }
   
-  @scala.inline
-  implicit class UserAgentConnectingEventMutableBuilder[Self <: UserAgentConnectingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentConnectingEvent](x: Self) {
     
-    @scala.inline
-    def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+    inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }
 }

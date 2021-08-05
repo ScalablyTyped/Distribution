@@ -14,28 +14,21 @@ trait AchievementResetMultipleForAllRequest extends StObject {
 }
 object AchievementResetMultipleForAllRequest {
   
-  @scala.inline
-  def apply(): AchievementResetMultipleForAllRequest = {
+  inline def apply(): AchievementResetMultipleForAllRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AchievementResetMultipleForAllRequest]
   }
   
-  @scala.inline
-  implicit class AchievementResetMultipleForAllRequestMutableBuilder[Self <: AchievementResetMultipleForAllRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AchievementResetMultipleForAllRequest](x: Self) {
     
-    @scala.inline
-    def setAchievement_ids(value: js.Array[String]): Self = StObject.set(x, "achievement_ids", value.asInstanceOf[js.Any])
+    inline def setAchievement_ids(value: js.Array[String]): Self = StObject.set(x, "achievement_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievement_idsUndefined: Self = StObject.set(x, "achievement_ids", js.undefined)
+    inline def setAchievement_idsUndefined: Self = StObject.set(x, "achievement_ids", js.undefined)
     
-    @scala.inline
-    def setAchievement_idsVarargs(value: String*): Self = StObject.set(x, "achievement_ids", js.Array(value :_*))
+    inline def setAchievement_idsVarargs(value: String*): Self = StObject.set(x, "achievement_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

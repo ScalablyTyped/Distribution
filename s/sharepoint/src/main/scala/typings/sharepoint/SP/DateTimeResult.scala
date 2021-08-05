@@ -11,16 +11,13 @@ trait DateTimeResult extends StObject {
 }
 object DateTimeResult {
   
-  @scala.inline
-  def apply(get_value: () => Date): DateTimeResult = {
+  inline def apply(get_value: () => Date): DateTimeResult = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
     __obj.asInstanceOf[DateTimeResult]
   }
   
-  @scala.inline
-  implicit class DateTimeResultMutableBuilder[Self <: DateTimeResult] (val x: Self) extends AnyVal {
+  extension [Self <: DateTimeResult](x: Self) {
     
-    @scala.inline
-    def setGet_value(value: () => Date): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => Date): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }
 }

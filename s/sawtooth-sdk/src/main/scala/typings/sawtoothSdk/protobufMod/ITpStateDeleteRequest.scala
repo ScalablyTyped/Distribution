@@ -14,34 +14,25 @@ trait ITpStateDeleteRequest extends StObject {
 }
 object ITpStateDeleteRequest {
   
-  @scala.inline
-  def apply(): ITpStateDeleteRequest = {
+  inline def apply(): ITpStateDeleteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpStateDeleteRequest]
   }
   
-  @scala.inline
-  implicit class ITpStateDeleteRequestMutableBuilder[Self <: ITpStateDeleteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITpStateDeleteRequest](x: Self) {
     
-    @scala.inline
-    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressesNull: Self = StObject.set(x, "addresses", null)
+    inline def setAddressesNull: Self = StObject.set(x, "addresses", null)
     
-    @scala.inline
-    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
+    inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    @scala.inline
-    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextIdNull: Self = StObject.set(x, "contextId", null)
+    inline def setContextIdNull: Self = StObject.set(x, "contextId", null)
     
-    @scala.inline
-    def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
+    inline def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
   }
 }

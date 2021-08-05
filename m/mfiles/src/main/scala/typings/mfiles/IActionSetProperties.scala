@@ -12,19 +12,15 @@ trait IActionSetProperties extends StObject {
 }
 object IActionSetProperties {
   
-  @scala.inline
-  def apply(Clone: () => IActionSetProperties, Properties: IDefaultProperties): IActionSetProperties = {
+  inline def apply(Clone: () => IActionSetProperties, Properties: IDefaultProperties): IActionSetProperties = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), Properties = Properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IActionSetProperties]
   }
   
-  @scala.inline
-  implicit class IActionSetPropertiesMutableBuilder[Self <: IActionSetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IActionSetProperties](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IActionSetProperties): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IActionSetProperties): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProperties(value: IDefaultProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IDefaultProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
   }
 }

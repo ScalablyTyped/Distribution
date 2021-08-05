@@ -11,22 +11,17 @@ trait EnterprisesListResponse extends StObject {
 }
 object EnterprisesListResponse {
   
-  @scala.inline
-  def apply(): EnterprisesListResponse = {
+  inline def apply(): EnterprisesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnterprisesListResponse]
   }
   
-  @scala.inline
-  implicit class EnterprisesListResponseMutableBuilder[Self <: EnterprisesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EnterprisesListResponse](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: js.Array[Enterprise]): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: js.Array[Enterprise]): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
+    inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
     
-    @scala.inline
-    def setEnterpriseVarargs(value: Enterprise*): Self = StObject.set(x, "enterprise", js.Array(value :_*))
+    inline def setEnterpriseVarargs(value: Enterprise*): Self = StObject.set(x, "enterprise", js.Array(value :_*))
   }
 }

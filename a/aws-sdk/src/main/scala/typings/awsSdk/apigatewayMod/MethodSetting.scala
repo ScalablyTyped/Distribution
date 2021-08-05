@@ -58,73 +58,51 @@ trait MethodSetting extends StObject {
 }
 object MethodSetting {
   
-  @scala.inline
-  def apply(): MethodSetting = {
+  inline def apply(): MethodSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MethodSetting]
   }
   
-  @scala.inline
-  implicit class MethodSettingMutableBuilder[Self <: MethodSetting] (val x: Self) extends AnyVal {
+  extension [Self <: MethodSetting](x: Self) {
     
-    @scala.inline
-    def setCacheDataEncrypted(value: Boolean): Self = StObject.set(x, "cacheDataEncrypted", value.asInstanceOf[js.Any])
+    inline def setCacheDataEncrypted(value: Boolean): Self = StObject.set(x, "cacheDataEncrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheDataEncryptedUndefined: Self = StObject.set(x, "cacheDataEncrypted", js.undefined)
+    inline def setCacheDataEncryptedUndefined: Self = StObject.set(x, "cacheDataEncrypted", js.undefined)
     
-    @scala.inline
-    def setCacheTtlInSeconds(value: Integer): Self = StObject.set(x, "cacheTtlInSeconds", value.asInstanceOf[js.Any])
+    inline def setCacheTtlInSeconds(value: Integer): Self = StObject.set(x, "cacheTtlInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheTtlInSecondsUndefined: Self = StObject.set(x, "cacheTtlInSeconds", js.undefined)
+    inline def setCacheTtlInSecondsUndefined: Self = StObject.set(x, "cacheTtlInSeconds", js.undefined)
     
-    @scala.inline
-    def setCachingEnabled(value: Boolean): Self = StObject.set(x, "cachingEnabled", value.asInstanceOf[js.Any])
+    inline def setCachingEnabled(value: Boolean): Self = StObject.set(x, "cachingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachingEnabledUndefined: Self = StObject.set(x, "cachingEnabled", js.undefined)
+    inline def setCachingEnabledUndefined: Self = StObject.set(x, "cachingEnabled", js.undefined)
     
-    @scala.inline
-    def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
+    inline def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "dataTraceEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTraceEnabledUndefined: Self = StObject.set(x, "dataTraceEnabled", js.undefined)
+    inline def setDataTraceEnabledUndefined: Self = StObject.set(x, "dataTraceEnabled", js.undefined)
     
-    @scala.inline
-    def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
+    inline def setLoggingLevel(value: String): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingLevelUndefined: Self = StObject.set(x, "loggingLevel", js.undefined)
+    inline def setLoggingLevelUndefined: Self = StObject.set(x, "loggingLevel", js.undefined)
     
-    @scala.inline
-    def setMetricsEnabled(value: Boolean): Self = StObject.set(x, "metricsEnabled", value.asInstanceOf[js.Any])
+    inline def setMetricsEnabled(value: Boolean): Self = StObject.set(x, "metricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsEnabledUndefined: Self = StObject.set(x, "metricsEnabled", js.undefined)
+    inline def setMetricsEnabledUndefined: Self = StObject.set(x, "metricsEnabled", js.undefined)
     
-    @scala.inline
-    def setRequireAuthorizationForCacheControl(value: Boolean): Self = StObject.set(x, "requireAuthorizationForCacheControl", value.asInstanceOf[js.Any])
+    inline def setRequireAuthorizationForCacheControl(value: Boolean): Self = StObject.set(x, "requireAuthorizationForCacheControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireAuthorizationForCacheControlUndefined: Self = StObject.set(x, "requireAuthorizationForCacheControl", js.undefined)
+    inline def setRequireAuthorizationForCacheControlUndefined: Self = StObject.set(x, "requireAuthorizationForCacheControl", js.undefined)
     
-    @scala.inline
-    def setThrottlingBurstLimit(value: Integer): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
+    inline def setThrottlingBurstLimit(value: Integer): Self = StObject.set(x, "throttlingBurstLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
+    inline def setThrottlingBurstLimitUndefined: Self = StObject.set(x, "throttlingBurstLimit", js.undefined)
     
-    @scala.inline
-    def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
+    inline def setThrottlingRateLimit(value: Double): Self = StObject.set(x, "throttlingRateLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
+    inline def setThrottlingRateLimitUndefined: Self = StObject.set(x, "throttlingRateLimit", js.undefined)
     
-    @scala.inline
-    def setUnauthorizedCacheControlHeaderStrategy(value: UnauthorizedCacheControlHeaderStrategy): Self = StObject.set(x, "unauthorizedCacheControlHeaderStrategy", value.asInstanceOf[js.Any])
+    inline def setUnauthorizedCacheControlHeaderStrategy(value: UnauthorizedCacheControlHeaderStrategy): Self = StObject.set(x, "unauthorizedCacheControlHeaderStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnauthorizedCacheControlHeaderStrategyUndefined: Self = StObject.set(x, "unauthorizedCacheControlHeaderStrategy", js.undefined)
+    inline def setUnauthorizedCacheControlHeaderStrategyUndefined: Self = StObject.set(x, "unauthorizedCacheControlHeaderStrategy", js.undefined)
   }
 }

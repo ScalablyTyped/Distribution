@@ -20,8 +20,7 @@ trait IKnownContactFieldStatics extends StObject {
 }
 object IKnownContactFieldStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     convertNameToType: String => ContactFieldType,
     convertTypeToName: ContactFieldType => String,
     email: String,
@@ -33,25 +32,18 @@ object IKnownContactFieldStatics {
     __obj.asInstanceOf[IKnownContactFieldStatics]
   }
   
-  @scala.inline
-  implicit class IKnownContactFieldStaticsMutableBuilder[Self <: IKnownContactFieldStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IKnownContactFieldStatics](x: Self) {
     
-    @scala.inline
-    def setConvertNameToType(value: String => ContactFieldType): Self = StObject.set(x, "convertNameToType", js.Any.fromFunction1(value))
+    inline def setConvertNameToType(value: String => ContactFieldType): Self = StObject.set(x, "convertNameToType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertTypeToName(value: ContactFieldType => String): Self = StObject.set(x, "convertTypeToName", js.Any.fromFunction1(value))
+    inline def setConvertTypeToName(value: ContactFieldType => String): Self = StObject.set(x, "convertTypeToName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstantMessage(value: String): Self = StObject.set(x, "instantMessage", value.asInstanceOf[js.Any])
+    inline def setInstantMessage(value: String): Self = StObject.set(x, "instantMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

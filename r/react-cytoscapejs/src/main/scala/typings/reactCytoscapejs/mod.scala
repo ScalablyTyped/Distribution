@@ -24,11 +24,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def normalizeElements(data: js.Array[ElementDefinition]): js.Array[ElementDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeElements")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[ElementDefinition]]
+    inline def normalizeElements(data: js.Array[ElementDefinition]): js.Array[ElementDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeElements")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[ElementDefinition]]
     /* static member */
-    @scala.inline
-    def normalizeElements(data: Edges): js.Array[ElementDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeElements")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[ElementDefinition]]
+    inline def normalizeElements(data: Edges): js.Array[ElementDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeElements")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[ElementDefinition]]
   }
   
   type CytoscapeComponent = Component[CytoscapeComponentProps, js.Object, js.Any]
@@ -71,119 +69,82 @@ object mod {
   }
   object CytoscapeComponentProps {
     
-    @scala.inline
-    def apply(elements: js.Array[ElementDefinition]): CytoscapeComponentProps = {
+    inline def apply(elements: js.Array[ElementDefinition]): CytoscapeComponentProps = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
       __obj.asInstanceOf[CytoscapeComponentProps]
     }
     
-    @scala.inline
-    implicit class CytoscapeComponentPropsMutableBuilder[Self <: CytoscapeComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: CytoscapeComponentProps](x: Self) {
       
-      @scala.inline
-      def setAutoungrabify(value: Boolean): Self = StObject.set(x, "autoungrabify", value.asInstanceOf[js.Any])
+      inline def setAutoungrabify(value: Boolean): Self = StObject.set(x, "autoungrabify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoungrabifyUndefined: Self = StObject.set(x, "autoungrabify", js.undefined)
+      inline def setAutoungrabifyUndefined: Self = StObject.set(x, "autoungrabify", js.undefined)
       
-      @scala.inline
-      def setAutounselectify(value: Boolean): Self = StObject.set(x, "autounselectify", value.asInstanceOf[js.Any])
+      inline def setAutounselectify(value: Boolean): Self = StObject.set(x, "autounselectify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutounselectifyUndefined: Self = StObject.set(x, "autounselectify", js.undefined)
+      inline def setAutounselectifyUndefined: Self = StObject.set(x, "autounselectify", js.undefined)
       
-      @scala.inline
-      def setBoxSelectionEnabled(value: Boolean): Self = StObject.set(x, "boxSelectionEnabled", value.asInstanceOf[js.Any])
+      inline def setBoxSelectionEnabled(value: Boolean): Self = StObject.set(x, "boxSelectionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxSelectionEnabledUndefined: Self = StObject.set(x, "boxSelectionEnabled", js.undefined)
+      inline def setBoxSelectionEnabledUndefined: Self = StObject.set(x, "boxSelectionEnabled", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCy(value: /* cy */ Core => Unit): Self = StObject.set(x, "cy", js.Any.fromFunction1(value))
+      inline def setCy(value: /* cy */ Core => Unit): Self = StObject.set(x, "cy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+      inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
       
-      @scala.inline
-      def setElements(value: js.Array[ElementDefinition]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[ElementDefinition]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: ElementDefinition*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: ElementDefinition*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLayout(value: LayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: LayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
       
-      @scala.inline
-      def setPan(value: Position): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+      inline def setPan(value: Position): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+      inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStylesheet(value: Stylesheet | js.Array[Stylesheet] | String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+      inline def setStylesheet(value: Stylesheet | js.Array[Stylesheet] | String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
+      inline def setStylesheetUndefined: Self = StObject.set(x, "stylesheet", js.undefined)
       
-      @scala.inline
-      def setStylesheetVarargs(value: Stylesheet*): Self = StObject.set(x, "stylesheet", js.Array(value :_*))
+      inline def setStylesheetVarargs(value: Stylesheet*): Self = StObject.set(x, "stylesheet", js.Array(value :_*))
       
-      @scala.inline
-      def setUserZoomingEnabled(value: Boolean): Self = StObject.set(x, "userZoomingEnabled", value.asInstanceOf[js.Any])
+      inline def setUserZoomingEnabled(value: Boolean): Self = StObject.set(x, "userZoomingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserZoomingEnabledUndefined: Self = StObject.set(x, "userZoomingEnabled", js.undefined)
+      inline def setUserZoomingEnabledUndefined: Self = StObject.set(x, "userZoomingEnabled", js.undefined)
       
-      @scala.inline
-      def setWheelSensitivity(value: Double): Self = StObject.set(x, "wheelSensitivity", value.asInstanceOf[js.Any])
+      inline def setWheelSensitivity(value: Double): Self = StObject.set(x, "wheelSensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWheelSensitivityUndefined: Self = StObject.set(x, "wheelSensitivity", js.undefined)
+      inline def setWheelSensitivityUndefined: Self = StObject.set(x, "wheelSensitivity", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
       
-      @scala.inline
-      def setZoomingEnabled(value: Boolean): Self = StObject.set(x, "zoomingEnabled", value.asInstanceOf[js.Any])
+      inline def setZoomingEnabled(value: Boolean): Self = StObject.set(x, "zoomingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomingEnabledUndefined: Self = StObject.set(x, "zoomingEnabled", js.undefined)
+      inline def setZoomingEnabledUndefined: Self = StObject.set(x, "zoomingEnabled", js.undefined)
     }
   }
 }

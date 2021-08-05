@@ -13,16 +13,13 @@ trait DeleteParameterGroupRequest extends StObject {
 }
 object DeleteParameterGroupRequest {
   
-  @scala.inline
-  def apply(ParameterGroupName: String): DeleteParameterGroupRequest = {
+  inline def apply(ParameterGroupName: String): DeleteParameterGroupRequest = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParameterGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteParameterGroupRequestMutableBuilder[Self <: DeleteParameterGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteParameterGroupRequest](x: Self) {
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
   }
 }

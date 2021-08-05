@@ -11,6 +11,5 @@ object messageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def onmessage(e: MessageEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onmessage")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onmessage(e: MessageEvent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onmessage")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

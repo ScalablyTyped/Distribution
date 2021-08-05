@@ -18,8 +18,7 @@ trait IPixelGeometry
 }
 object IPixelGeometry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     equals_ : IPixelGeometry => Boolean,
     events: IEventManager[js.Object],
     getBounds: () => js.Array[js.Array[Double]] | Null,
@@ -33,19 +32,14 @@ object IPixelGeometry {
     __obj.asInstanceOf[IPixelGeometry]
   }
   
-  @scala.inline
-  implicit class IPixelGeometryMutableBuilder[Self <: IPixelGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: IPixelGeometry](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: IPixelGeometry => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: IPixelGeometry => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMetaData(value: () => js.Object): Self = StObject.set(x, "getMetaData", js.Any.fromFunction0(value))
+    inline def setGetMetaData(value: () => js.Object): Self = StObject.set(x, "getMetaData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScale(value: Double => IPixelGeometry): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+    inline def setScale(value: Double => IPixelGeometry): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShift(value: js.Array[Double] => IPixelGeometry): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
+    inline def setShift(value: js.Array[Double] => IPixelGeometry): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
   }
 }

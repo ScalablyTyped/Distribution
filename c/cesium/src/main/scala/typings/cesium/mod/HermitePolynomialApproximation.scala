@@ -14,8 +14,6 @@ object HermitePolynomialApproximation {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getRequiredDataPoints(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredDataPoints")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getRequiredDataPoints(degree: Double, inputOrder: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredDataPoints")(degree.asInstanceOf[js.Any], inputOrder.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRequiredDataPoints(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredDataPoints")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getRequiredDataPoints(degree: Double, inputOrder: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequiredDataPoints")(degree.asInstanceOf[js.Any], inputOrder.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -17,31 +17,23 @@ trait GoogleCloudDatacatalogV1beta1GcsFileSpec extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1GcsFileSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1GcsFileSpec = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1GcsFileSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1GcsFileSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1GcsFileSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1GcsFileSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1GcsFileSpec](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setGcsTimestamps(value: GoogleCloudDatacatalogV1beta1SystemTimestamps): Self = StObject.set(x, "gcsTimestamps", value.asInstanceOf[js.Any])
+    inline def setGcsTimestamps(value: GoogleCloudDatacatalogV1beta1SystemTimestamps): Self = StObject.set(x, "gcsTimestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsTimestampsUndefined: Self = StObject.set(x, "gcsTimestamps", js.undefined)
+    inline def setGcsTimestampsUndefined: Self = StObject.set(x, "gcsTimestamps", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: String): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "sizeBytes", js.undefined)
   }
 }

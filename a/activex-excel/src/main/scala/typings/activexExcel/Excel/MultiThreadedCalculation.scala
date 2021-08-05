@@ -12,7 +12,7 @@ trait MultiThreadedCalculation extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Excel.MultiThreadedCalculation_typekey")
+  /* private */ @JSName("Excel.MultiThreadedCalculation_typekey")
   var ExcelDotMultiThreadedCalculation_typekey: MultiThreadedCalculation
   
   val Parent: js.Any
@@ -23,8 +23,7 @@ trait MultiThreadedCalculation extends StObject {
 }
 object MultiThreadedCalculation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Enabled: Boolean,
@@ -38,28 +37,20 @@ object MultiThreadedCalculation {
     __obj.asInstanceOf[MultiThreadedCalculation]
   }
   
-  @scala.inline
-  implicit class MultiThreadedCalculationMutableBuilder[Self <: MultiThreadedCalculation] (val x: Self) extends AnyVal {
+  extension [Self <: MultiThreadedCalculation](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotMultiThreadedCalculation_typekey(value: MultiThreadedCalculation): Self = StObject.set(x, "Excel.MultiThreadedCalculation_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotMultiThreadedCalculation_typekey(value: MultiThreadedCalculation): Self = StObject.set(x, "Excel.MultiThreadedCalculation_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadCount(value: Double): Self = StObject.set(x, "ThreadCount", value.asInstanceOf[js.Any])
+    inline def setThreadCount(value: Double): Self = StObject.set(x, "ThreadCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadMode(value: XlThreadMode): Self = StObject.set(x, "ThreadMode", value.asInstanceOf[js.Any])
+    inline def setThreadMode(value: XlThreadMode): Self = StObject.set(x, "ThreadMode", value.asInstanceOf[js.Any])
   }
 }

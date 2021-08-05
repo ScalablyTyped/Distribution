@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DisplayFormat")
 @js.native
-class DisplayFormat protected ()
+/* private */ class DisplayFormat ()
   extends StObject
      with typings.activexExcel.Excel.DisplayFormat

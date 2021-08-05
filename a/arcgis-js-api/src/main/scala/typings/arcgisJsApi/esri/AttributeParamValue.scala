@@ -33,8 +33,7 @@ trait AttributeParamValue
 }
 object AttributeParamValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeName: String,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object AttributeParamValue {
     __obj.asInstanceOf[AttributeParamValue]
   }
   
-  @scala.inline
-  implicit class AttributeParamValueMutableBuilder[Self <: AttributeParamValue] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeParamValue](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

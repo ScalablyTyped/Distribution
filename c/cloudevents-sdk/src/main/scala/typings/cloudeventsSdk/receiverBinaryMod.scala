@@ -88,8 +88,7 @@ object receiverBinaryMod {
   }
   object BinaryHTTPReceiver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       check: (js.Object, js.Object) => Boolean,
       parse: (js.Object, js.Object) => CloudEvent,
       receiver: typings.cloudeventsSdk.receiverBinary1Mod.^ | typings.cloudeventsSdk.receiverBinary03Mod.^
@@ -98,17 +97,13 @@ object receiverBinaryMod {
       __obj.asInstanceOf[BinaryHTTPReceiver]
     }
     
-    @scala.inline
-    implicit class BinaryHTTPReceiverMutableBuilder[Self <: BinaryHTTPReceiver] (val x: Self) extends AnyVal {
+    extension [Self <: BinaryHTTPReceiver](x: Self) {
       
-      @scala.inline
-      def setCheck(value: (js.Object, js.Object) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
+      inline def setCheck(value: (js.Object, js.Object) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParse(value: (js.Object, js.Object) => CloudEvent): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (js.Object, js.Object) => CloudEvent): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReceiver(value: typings.cloudeventsSdk.receiverBinary1Mod.^ | typings.cloudeventsSdk.receiverBinary03Mod.^): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+      inline def setReceiver(value: typings.cloudeventsSdk.receiverBinary1Mod.^ | typings.cloudeventsSdk.receiverBinary03Mod.^): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,17 +113,14 @@ object receiverBinaryMod {
   }
   object CloudEvent {
     
-    @scala.inline
-    def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
+    inline def apply(CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): CloudEvent = {
       val __obj = js.Dynamic.literal(CloudEvent = CloudEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudEvent]
     }
     
-    @scala.inline
-    implicit class CloudEventMutableBuilder[Self <: CloudEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudEvent](x: Self) {
       
-      @scala.inline
-      def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
+      inline def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
     }
   }
 }

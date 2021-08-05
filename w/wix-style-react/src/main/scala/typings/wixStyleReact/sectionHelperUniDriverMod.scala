@@ -39,8 +39,7 @@ object sectionHelperUniDriverMod {
   }
   object SectionHelperUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actionText: () => js.Promise[String],
       click: () => js.Promise[Unit],
       clickAction: () => js.Promise[Unit],
@@ -62,47 +61,33 @@ object sectionHelperUniDriverMod {
       __obj.asInstanceOf[SectionHelperUniDriver]
     }
     
-    @scala.inline
-    implicit class SectionHelperUniDriverMutableBuilder[Self <: SectionHelperUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SectionHelperUniDriver](x: Self) {
       
-      @scala.inline
-      def setActionText(value: () => js.Promise[String]): Self = StObject.set(x, "actionText", js.Any.fromFunction0(value))
+      inline def setActionText(value: () => js.Promise[String]): Self = StObject.set(x, "actionText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickAction(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickAction", js.Any.fromFunction0(value))
+      inline def setClickAction(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
+      inline def setClickClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCloseButtonDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonDisplayed", js.Any.fromFunction0(value))
+      inline def setIsCloseButtonDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDanger(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDanger", js.Any.fromFunction0(value))
+      inline def setIsDanger(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDanger", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsExperimentalDark(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isExperimentalDark", js.Any.fromFunction0(value))
+      inline def setIsExperimentalDark(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isExperimentalDark", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPremium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPremium", js.Any.fromFunction0(value))
+      inline def setIsPremium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPremium", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPreview(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPreview", js.Any.fromFunction0(value))
+      inline def setIsPreview(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPreview", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsStandard(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStandard", js.Any.fromFunction0(value))
+      inline def setIsStandard(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStandard", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccess(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccess", js.Any.fromFunction0(value))
+      inline def setIsSuccess(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsWarning(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isWarning", js.Any.fromFunction0(value))
+      inline def setIsWarning(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isWarning", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "textContent", js.Any.fromFunction0(value))
+      inline def setTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "textContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "titleText", js.Any.fromFunction0(value))
+      inline def setTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "titleText", js.Any.fromFunction0(value))
     }
   }
 }

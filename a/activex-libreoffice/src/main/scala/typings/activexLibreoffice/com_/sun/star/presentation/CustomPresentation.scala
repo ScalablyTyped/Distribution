@@ -18,8 +18,7 @@ trait CustomPresentation
      with XNamed
 object CustomPresentation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     Name: String,

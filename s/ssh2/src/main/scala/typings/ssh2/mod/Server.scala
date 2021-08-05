@@ -188,20 +188,17 @@ object Server {
   @JSImport("ssh2", "Server.KEEPALIVE_CLIENT_COUNT_MAX")
   @js.native
   def KEEPALIVE_CLIENT_COUNT_MAX: Double = js.native
-  @scala.inline
-  def KEEPALIVE_CLIENT_COUNT_MAX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE_CLIENT_COUNT_MAX")(x.asInstanceOf[js.Any])
+  inline def KEEPALIVE_CLIENT_COUNT_MAX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE_CLIENT_COUNT_MAX")(x.asInstanceOf[js.Any])
   
   @JSImport("ssh2", "Server.KEEPALIVE_CLIENT_INTERVAL")
   @js.native
   def KEEPALIVE_CLIENT_INTERVAL: Double = js.native
-  @scala.inline
-  def KEEPALIVE_CLIENT_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE_CLIENT_INTERVAL")(x.asInstanceOf[js.Any])
+  inline def KEEPALIVE_CLIENT_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE_CLIENT_INTERVAL")(x.asInstanceOf[js.Any])
   
   @JSImport("ssh2", "Server.KEEPALIVE_INTERVAL")
   @js.native
   def KEEPALIVE_INTERVAL: Double = js.native
-  @scala.inline
-  def KEEPALIVE_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE_INTERVAL")(x.asInstanceOf[js.Any])
+  inline def KEEPALIVE_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEEPALIVE_INTERVAL")(x.asInstanceOf[js.Any])
   
   /**
     * Creates and returns a new Server instance.
@@ -209,10 +206,8 @@ object Server {
     * @param config Server configuration properties.
     * @param connectionListener if supplied, is added as a connection listener.
     */
-  @scala.inline
-  def createServer(config: ServerConfig): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(config.asInstanceOf[js.Any]).asInstanceOf[Server]
-  @scala.inline
-  def createServer(
+  inline def createServer(config: ServerConfig): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(config.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def createServer(
     config: ServerConfig,
     connectionListener: js.Function2[/* client */ Connection, /* info */ ClientInfo, Unit]
   ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(config.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]

@@ -82,38 +82,28 @@ object tableCellMod {
   }
   object TableCellOptions {
     
-    @scala.inline
-    def apply(): TableCellOptions = {
+    inline def apply(): TableCellOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableCellOptions]
     }
     
-    @scala.inline
-    implicit class TableCellOptionsMutableBuilder[Self <: TableCellOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TableCellOptions](x: Self) {
       
-      @scala.inline
-      def setColSpan(value: Double | `100Percentsign`): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double | `100Percentsign`): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setGrow(value: Boolean): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
+      inline def setGrow(value: Boolean): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
+      inline def setGrowUndefined: Self = StObject.set(x, "grow", js.undefined)
       
-      @scala.inline
-      def setScope(value: row | col | rowgroup | colgroup): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: row | col | rowgroup | colgroup): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSticky(value: Boolean | header | cell | `header-cell`): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+      inline def setSticky(value: Boolean | header | cell | `header-cell`): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+      inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
     }
   }
   
@@ -170,44 +160,32 @@ object tableCellMod {
   }
   object TableCellProps {
     
-    @scala.inline
-    def apply(): TableCellProps = {
+    inline def apply(): TableCellProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableCellProps]
     }
     
-    @scala.inline
-    implicit class TableCellPropsMutableBuilder[Self <: TableCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableCellProps](x: Self) {
       
-      @scala.inline
-      def `setAria-sort`(value: SortOrder): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      inline def `setAria-sort`(value: SortOrder): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
       
-      @scala.inline
-      def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
+      inline def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
+      inline def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
       
-      @scala.inline
-      def setSortIcon(value: ReactNode): Self = StObject.set(x, "sortIcon", value.asInstanceOf[js.Any])
+      inline def setSortIcon(value: ReactNode): Self = StObject.set(x, "sortIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortIconAfter(value: Boolean): Self = StObject.set(x, "sortIconAfter", value.asInstanceOf[js.Any])
+      inline def setSortIconAfter(value: Boolean): Self = StObject.set(x, "sortIconAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortIconAfterUndefined: Self = StObject.set(x, "sortIconAfter", js.undefined)
+      inline def setSortIconAfterUndefined: Self = StObject.set(x, "sortIconAfter", js.undefined)
       
-      @scala.inline
-      def setSortIconRotated(value: Boolean): Self = StObject.set(x, "sortIconRotated", value.asInstanceOf[js.Any])
+      inline def setSortIconRotated(value: Boolean): Self = StObject.set(x, "sortIconRotated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortIconRotatedUndefined: Self = StObject.set(x, "sortIconRotated", js.undefined)
+      inline def setSortIconRotatedUndefined: Self = StObject.set(x, "sortIconRotated", js.undefined)
       
-      @scala.inline
-      def setSortIconUndefined: Self = StObject.set(x, "sortIcon", js.undefined)
+      inline def setSortIconUndefined: Self = StObject.set(x, "sortIcon", js.undefined)
     }
   }
 }

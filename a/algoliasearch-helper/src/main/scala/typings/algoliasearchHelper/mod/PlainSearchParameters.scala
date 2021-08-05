@@ -116,103 +116,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object PlainSearchParameters {
   
-  @scala.inline
-  def apply(): PlainSearchParameters = {
+  inline def apply(): PlainSearchParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlainSearchParameters]
   }
   
-  @scala.inline
-  implicit class PlainSearchParametersMutableBuilder[Self <: PlainSearchParameters] (val x: Self) extends AnyVal {
+  extension [Self <: PlainSearchParameters](x: Self) {
     
-    @scala.inline
-    def setDisjunctiveFacets(value: js.Array[String]): Self = StObject.set(x, "disjunctiveFacets", value.asInstanceOf[js.Any])
+    inline def setDisjunctiveFacets(value: js.Array[String]): Self = StObject.set(x, "disjunctiveFacets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisjunctiveFacetsRefinements(value: StringDictionary[FacetList]): Self = StObject.set(x, "disjunctiveFacetsRefinements", value.asInstanceOf[js.Any])
+    inline def setDisjunctiveFacetsRefinements(value: StringDictionary[FacetList]): Self = StObject.set(x, "disjunctiveFacetsRefinements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisjunctiveFacetsRefinementsUndefined: Self = StObject.set(x, "disjunctiveFacetsRefinements", js.undefined)
+    inline def setDisjunctiveFacetsRefinementsUndefined: Self = StObject.set(x, "disjunctiveFacetsRefinements", js.undefined)
     
-    @scala.inline
-    def setDisjunctiveFacetsUndefined: Self = StObject.set(x, "disjunctiveFacets", js.undefined)
+    inline def setDisjunctiveFacetsUndefined: Self = StObject.set(x, "disjunctiveFacets", js.undefined)
     
-    @scala.inline
-    def setDisjunctiveFacetsVarargs(value: String*): Self = StObject.set(x, "disjunctiveFacets", js.Array(value :_*))
+    inline def setDisjunctiveFacetsVarargs(value: String*): Self = StObject.set(x, "disjunctiveFacets", js.Array(value :_*))
     
-    @scala.inline
-    def setFacetsExcludes(value: StringDictionary[FacetList]): Self = StObject.set(x, "facetsExcludes", value.asInstanceOf[js.Any])
+    inline def setFacetsExcludes(value: StringDictionary[FacetList]): Self = StObject.set(x, "facetsExcludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetsExcludesUndefined: Self = StObject.set(x, "facetsExcludes", js.undefined)
+    inline def setFacetsExcludesUndefined: Self = StObject.set(x, "facetsExcludes", js.undefined)
     
-    @scala.inline
-    def setFacetsRefinements(value: StringDictionary[FacetList]): Self = StObject.set(x, "facetsRefinements", value.asInstanceOf[js.Any])
+    inline def setFacetsRefinements(value: StringDictionary[FacetList]): Self = StObject.set(x, "facetsRefinements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetsRefinementsUndefined: Self = StObject.set(x, "facetsRefinements", js.undefined)
+    inline def setFacetsRefinementsUndefined: Self = StObject.set(x, "facetsRefinements", js.undefined)
     
-    @scala.inline
-    def setHierarchicalFacets(value: js.Array[HierarchicalFacet]): Self = StObject.set(x, "hierarchicalFacets", value.asInstanceOf[js.Any])
+    inline def setHierarchicalFacets(value: js.Array[HierarchicalFacet]): Self = StObject.set(x, "hierarchicalFacets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchicalFacetsRefinements(value: StringDictionary[FacetList]): Self = StObject.set(x, "hierarchicalFacetsRefinements", value.asInstanceOf[js.Any])
+    inline def setHierarchicalFacetsRefinements(value: StringDictionary[FacetList]): Self = StObject.set(x, "hierarchicalFacetsRefinements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchicalFacetsRefinementsUndefined: Self = StObject.set(x, "hierarchicalFacetsRefinements", js.undefined)
+    inline def setHierarchicalFacetsRefinementsUndefined: Self = StObject.set(x, "hierarchicalFacetsRefinements", js.undefined)
     
-    @scala.inline
-    def setHierarchicalFacetsUndefined: Self = StObject.set(x, "hierarchicalFacets", js.undefined)
+    inline def setHierarchicalFacetsUndefined: Self = StObject.set(x, "hierarchicalFacets", js.undefined)
     
-    @scala.inline
-    def setHierarchicalFacetsVarargs(value: HierarchicalFacet*): Self = StObject.set(x, "hierarchicalFacets", js.Array(value :_*))
+    inline def setHierarchicalFacetsVarargs(value: HierarchicalFacet*): Self = StObject.set(x, "hierarchicalFacets", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setNumericRefinements(value: StringDictionary[OperatorList]): Self = StObject.set(x, "numericRefinements", value.asInstanceOf[js.Any])
+    inline def setNumericRefinements(value: StringDictionary[OperatorList]): Self = StObject.set(x, "numericRefinements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericRefinementsUndefined: Self = StObject.set(x, "numericRefinements", js.undefined)
+    inline def setNumericRefinementsUndefined: Self = StObject.set(x, "numericRefinements", js.undefined)
     
-    @scala.inline
-    def setOptionalFilters(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "optionalFilters", value.asInstanceOf[js.Any])
+    inline def setOptionalFilters(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "optionalFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalFiltersUndefined: Self = StObject.set(x, "optionalFilters", js.undefined)
+    inline def setOptionalFiltersUndefined: Self = StObject.set(x, "optionalFilters", js.undefined)
     
-    @scala.inline
-    def setOptionalFiltersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "optionalFilters", js.Array(value :_*))
+    inline def setOptionalFiltersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "optionalFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryLanguages(value: js.Array[String]): Self = StObject.set(x, "queryLanguages", value.asInstanceOf[js.Any])
+    inline def setQueryLanguages(value: js.Array[String]): Self = StObject.set(x, "queryLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryLanguagesUndefined: Self = StObject.set(x, "queryLanguages", js.undefined)
+    inline def setQueryLanguagesUndefined: Self = StObject.set(x, "queryLanguages", js.undefined)
     
-    @scala.inline
-    def setQueryLanguagesVarargs(value: String*): Self = StObject.set(x, "queryLanguages", js.Array(value :_*))
+    inline def setQueryLanguagesVarargs(value: String*): Self = StObject.set(x, "queryLanguages", js.Array(value :_*))
     
-    @scala.inline
-    def setRuleContexts(value: js.Array[String]): Self = StObject.set(x, "ruleContexts", value.asInstanceOf[js.Any])
+    inline def setRuleContexts(value: js.Array[String]): Self = StObject.set(x, "ruleContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleContextsUndefined: Self = StObject.set(x, "ruleContexts", js.undefined)
+    inline def setRuleContextsUndefined: Self = StObject.set(x, "ruleContexts", js.undefined)
     
-    @scala.inline
-    def setRuleContextsVarargs(value: String*): Self = StObject.set(x, "ruleContexts", js.Array(value :_*))
+    inline def setRuleContextsVarargs(value: String*): Self = StObject.set(x, "ruleContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setTagRefinements(value: js.Array[String]): Self = StObject.set(x, "tagRefinements", value.asInstanceOf[js.Any])
+    inline def setTagRefinements(value: js.Array[String]): Self = StObject.set(x, "tagRefinements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagRefinementsUndefined: Self = StObject.set(x, "tagRefinements", js.undefined)
+    inline def setTagRefinementsUndefined: Self = StObject.set(x, "tagRefinements", js.undefined)
     
-    @scala.inline
-    def setTagRefinementsVarargs(value: String*): Self = StObject.set(x, "tagRefinements", js.Array(value :_*))
+    inline def setTagRefinementsVarargs(value: String*): Self = StObject.set(x, "tagRefinements", js.Array(value :_*))
   }
 }

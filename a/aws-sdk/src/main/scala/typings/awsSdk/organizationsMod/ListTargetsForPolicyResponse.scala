@@ -18,28 +18,21 @@ trait ListTargetsForPolicyResponse extends StObject {
 }
 object ListTargetsForPolicyResponse {
   
-  @scala.inline
-  def apply(): ListTargetsForPolicyResponse = {
+  inline def apply(): ListTargetsForPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTargetsForPolicyResponse]
   }
   
-  @scala.inline
-  implicit class ListTargetsForPolicyResponseMutableBuilder[Self <: ListTargetsForPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTargetsForPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTargets(value: PolicyTargets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: PolicyTargets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
+    inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    @scala.inline
-    def setTargetsVarargs(value: PolicyTargetSummary*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: PolicyTargetSummary*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

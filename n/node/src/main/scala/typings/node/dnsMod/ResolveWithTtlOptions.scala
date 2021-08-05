@@ -14,16 +14,13 @@ trait ResolveWithTtlOptions
 }
 object ResolveWithTtlOptions {
   
-  @scala.inline
-  def apply(): ResolveWithTtlOptions = {
+  inline def apply(): ResolveWithTtlOptions = {
     val __obj = js.Dynamic.literal(ttl = true)
     __obj.asInstanceOf[ResolveWithTtlOptions]
   }
   
-  @scala.inline
-  implicit class ResolveWithTtlOptionsMutableBuilder[Self <: ResolveWithTtlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveWithTtlOptions](x: Self) {
     
-    @scala.inline
-    def setTtl(value: `true`): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: `true`): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

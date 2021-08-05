@@ -26,25 +26,19 @@ trait SchemaCloudRunRewrite extends StObject {
 }
 object SchemaCloudRunRewrite {
   
-  @scala.inline
-  def apply(): SchemaCloudRunRewrite = {
+  inline def apply(): SchemaCloudRunRewrite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCloudRunRewrite]
   }
   
-  @scala.inline
-  implicit class SchemaCloudRunRewriteMutableBuilder[Self <: SchemaCloudRunRewrite] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCloudRunRewrite](x: Self) {
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
   }
 }

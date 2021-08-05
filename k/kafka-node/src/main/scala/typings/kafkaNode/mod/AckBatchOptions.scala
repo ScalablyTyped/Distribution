@@ -12,25 +12,19 @@ trait AckBatchOptions extends StObject {
 }
 object AckBatchOptions {
   
-  @scala.inline
-  def apply(): AckBatchOptions = {
+  inline def apply(): AckBatchOptions = {
     val __obj = js.Dynamic.literal(noAckBatchAge = null, noAckBatchSize = null)
     __obj.asInstanceOf[AckBatchOptions]
   }
   
-  @scala.inline
-  implicit class AckBatchOptionsMutableBuilder[Self <: AckBatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AckBatchOptions](x: Self) {
     
-    @scala.inline
-    def setNoAckBatchAge(value: Double): Self = StObject.set(x, "noAckBatchAge", value.asInstanceOf[js.Any])
+    inline def setNoAckBatchAge(value: Double): Self = StObject.set(x, "noAckBatchAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAckBatchAgeNull: Self = StObject.set(x, "noAckBatchAge", null)
+    inline def setNoAckBatchAgeNull: Self = StObject.set(x, "noAckBatchAge", null)
     
-    @scala.inline
-    def setNoAckBatchSize(value: Double): Self = StObject.set(x, "noAckBatchSize", value.asInstanceOf[js.Any])
+    inline def setNoAckBatchSize(value: Double): Self = StObject.set(x, "noAckBatchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAckBatchSizeNull: Self = StObject.set(x, "noAckBatchSize", null)
+    inline def setNoAckBatchSizeNull: Self = StObject.set(x, "noAckBatchSize", null)
   }
 }

@@ -72,18 +72,15 @@ object Bus {
   @JSImport("gl-react", "Bus.childContextTypes")
   @js.native
   def childContextTypes: GlParentAny = js.native
-  @scala.inline
-  def childContextTypes_=(x: GlParentAny): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+  inline def childContextTypes_=(x: GlParentAny): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("gl-react", "Bus.contextTypes")
   @js.native
   def contextTypes: GlSurface = js.native
-  @scala.inline
-  def contextTypes_=(x: GlSurface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: GlSurface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("gl-react", "Bus.defaultProps")
   @js.native
   def defaultProps: BusProps = js.native
-  @scala.inline
-  def defaultProps_=(x: BusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: BusProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -61,55 +61,39 @@ trait SchemaOrgPolicy extends StObject {
 }
 object SchemaOrgPolicy {
   
-  @scala.inline
-  def apply(): SchemaOrgPolicy = {
+  inline def apply(): SchemaOrgPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrgPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaOrgPolicyMutableBuilder[Self <: SchemaOrgPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrgPolicy](x: Self) {
     
-    @scala.inline
-    def setBooleanPolicy(value: SchemaBooleanPolicy): Self = StObject.set(x, "booleanPolicy", value.asInstanceOf[js.Any])
+    inline def setBooleanPolicy(value: SchemaBooleanPolicy): Self = StObject.set(x, "booleanPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanPolicyUndefined: Self = StObject.set(x, "booleanPolicy", js.undefined)
+    inline def setBooleanPolicyUndefined: Self = StObject.set(x, "booleanPolicy", js.undefined)
     
-    @scala.inline
-    def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setListPolicy(value: SchemaListPolicy): Self = StObject.set(x, "listPolicy", value.asInstanceOf[js.Any])
+    inline def setListPolicy(value: SchemaListPolicy): Self = StObject.set(x, "listPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPolicyUndefined: Self = StObject.set(x, "listPolicy", js.undefined)
+    inline def setListPolicyUndefined: Self = StObject.set(x, "listPolicy", js.undefined)
     
-    @scala.inline
-    def setRestoreDefault(value: SchemaRestoreDefault): Self = StObject.set(x, "restoreDefault", value.asInstanceOf[js.Any])
+    inline def setRestoreDefault(value: SchemaRestoreDefault): Self = StObject.set(x, "restoreDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreDefaultUndefined: Self = StObject.set(x, "restoreDefault", js.undefined)
+    inline def setRestoreDefaultUndefined: Self = StObject.set(x, "restoreDefault", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

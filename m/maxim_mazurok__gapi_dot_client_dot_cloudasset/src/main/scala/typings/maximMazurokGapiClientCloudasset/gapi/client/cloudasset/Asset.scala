@@ -56,85 +56,59 @@ trait Asset extends StObject {
 }
 object Asset {
   
-  @scala.inline
-  def apply(): Asset = {
+  inline def apply(): Asset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Asset]
   }
   
-  @scala.inline
-  implicit class AssetMutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
+  extension [Self <: Asset](x: Self) {
     
-    @scala.inline
-    def setAccessLevel(value: GoogleIdentityAccesscontextmanagerV1AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
+    inline def setAccessLevel(value: GoogleIdentityAccesscontextmanagerV1AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelUndefined: Self = StObject.set(x, "accessLevel", js.undefined)
+    inline def setAccessLevelUndefined: Self = StObject.set(x, "accessLevel", js.undefined)
     
-    @scala.inline
-    def setAccessPolicy(value: GoogleIdentityAccesscontextmanagerV1AccessPolicy): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
+    inline def setAccessPolicy(value: GoogleIdentityAccesscontextmanagerV1AccessPolicy): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
+    inline def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
     
-    @scala.inline
-    def setAncestors(value: js.Array[String]): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
+    inline def setAncestors(value: js.Array[String]): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestorsUndefined: Self = StObject.set(x, "ancestors", js.undefined)
+    inline def setAncestorsUndefined: Self = StObject.set(x, "ancestors", js.undefined)
     
-    @scala.inline
-    def setAncestorsVarargs(value: String*): Self = StObject.set(x, "ancestors", js.Array(value :_*))
+    inline def setAncestorsVarargs(value: String*): Self = StObject.set(x, "ancestors", js.Array(value :_*))
     
-    @scala.inline
-    def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+    inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
     
-    @scala.inline
-    def setIamPolicy(value: Policy): Self = StObject.set(x, "iamPolicy", value.asInstanceOf[js.Any])
+    inline def setIamPolicy(value: Policy): Self = StObject.set(x, "iamPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamPolicyUndefined: Self = StObject.set(x, "iamPolicy", js.undefined)
+    inline def setIamPolicyUndefined: Self = StObject.set(x, "iamPolicy", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrgPolicy(value: js.Array[GoogleCloudOrgpolicyV1Policy]): Self = StObject.set(x, "orgPolicy", value.asInstanceOf[js.Any])
+    inline def setOrgPolicy(value: js.Array[GoogleCloudOrgpolicyV1Policy]): Self = StObject.set(x, "orgPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgPolicyUndefined: Self = StObject.set(x, "orgPolicy", js.undefined)
+    inline def setOrgPolicyUndefined: Self = StObject.set(x, "orgPolicy", js.undefined)
     
-    @scala.inline
-    def setOrgPolicyVarargs(value: GoogleCloudOrgpolicyV1Policy*): Self = StObject.set(x, "orgPolicy", js.Array(value :_*))
+    inline def setOrgPolicyVarargs(value: GoogleCloudOrgpolicyV1Policy*): Self = StObject.set(x, "orgPolicy", js.Array(value :_*))
     
-    @scala.inline
-    def setOsInventory(value: Inventory): Self = StObject.set(x, "osInventory", value.asInstanceOf[js.Any])
+    inline def setOsInventory(value: Inventory): Self = StObject.set(x, "osInventory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsInventoryUndefined: Self = StObject.set(x, "osInventory", js.undefined)
+    inline def setOsInventoryUndefined: Self = StObject.set(x, "osInventory", js.undefined)
     
-    @scala.inline
-    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setServicePerimeter(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeter): Self = StObject.set(x, "servicePerimeter", value.asInstanceOf[js.Any])
+    inline def setServicePerimeter(value: GoogleIdentityAccesscontextmanagerV1ServicePerimeter): Self = StObject.set(x, "servicePerimeter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePerimeterUndefined: Self = StObject.set(x, "servicePerimeter", js.undefined)
+    inline def setServicePerimeterUndefined: Self = StObject.set(x, "servicePerimeter", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

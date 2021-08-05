@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "license-key-gen"
-version := "0.1-dt-20200806Z-af82d9"
+version := "0.1-dt-20200806Z-f98ec9"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -37,13 +37,11 @@ object iconConstantsMod {
     @JSImport("@material/select/icon/constants", "strings.ICON_EVENT")
     @js.native
     def ICON_EVENT: String = js.native
-    @scala.inline
-    def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
+    inline def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/select/icon/constants", "strings.ICON_ROLE")
     @js.native
     def ICON_ROLE: String = js.native
-    @scala.inline
-    def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
+    inline def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
   }
 }

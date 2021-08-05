@@ -23,31 +23,23 @@ trait EC2TagFilter extends StObject {
 }
 object EC2TagFilter {
   
-  @scala.inline
-  def apply(): EC2TagFilter = {
+  inline def apply(): EC2TagFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EC2TagFilter]
   }
   
-  @scala.inline
-  implicit class EC2TagFilterMutableBuilder[Self <: EC2TagFilter] (val x: Self) extends AnyVal {
+  extension [Self <: EC2TagFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setType(value: EC2TagFilterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: EC2TagFilterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

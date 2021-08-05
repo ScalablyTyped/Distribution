@@ -47,8 +47,7 @@ trait XPathResult extends StObject {
 }
 object XPathResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ANY_TYPE: Double,
     ANY_UNORDERED_NODE_TYPE: Double,
     BOOLEAN_TYPE: Double,
@@ -72,67 +71,46 @@ object XPathResult {
     __obj.asInstanceOf[XPathResult]
   }
   
-  @scala.inline
-  implicit class XPathResultMutableBuilder[Self <: XPathResult] (val x: Self) extends AnyVal {
+  extension [Self <: XPathResult](x: Self) {
     
-    @scala.inline
-    def setANY_TYPE(value: Double): Self = StObject.set(x, "ANY_TYPE", value.asInstanceOf[js.Any])
+    inline def setANY_TYPE(value: Double): Self = StObject.set(x, "ANY_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setANY_UNORDERED_NODE_TYPE(value: Double): Self = StObject.set(x, "ANY_UNORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
+    inline def setANY_UNORDERED_NODE_TYPE(value: Double): Self = StObject.set(x, "ANY_UNORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBOOLEAN_TYPE(value: Double): Self = StObject.set(x, "BOOLEAN_TYPE", value.asInstanceOf[js.Any])
+    inline def setBOOLEAN_TYPE(value: Double): Self = StObject.set(x, "BOOLEAN_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanValue(value: scala.Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
+    inline def setBooleanValue(value: scala.Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFIRST_ORDERED_NODE_TYPE(value: Double): Self = StObject.set(x, "FIRST_ORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
+    inline def setFIRST_ORDERED_NODE_TYPE(value: Double): Self = StObject.set(x, "FIRST_ORDERED_NODE_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidIteratorState(value: scala.Boolean): Self = StObject.set(x, "invalidIteratorState", value.asInstanceOf[js.Any])
+    inline def setInvalidIteratorState(value: scala.Boolean): Self = StObject.set(x, "invalidIteratorState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterateNext(value: () => Node | Null): Self = StObject.set(x, "iterateNext", js.Any.fromFunction0(value))
+    inline def setIterateNext(value: () => Node | Null): Self = StObject.set(x, "iterateNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNUMBER_TYPE(value: Double): Self = StObject.set(x, "NUMBER_TYPE", value.asInstanceOf[js.Any])
+    inline def setNUMBER_TYPE(value: Double): Self = StObject.set(x, "NUMBER_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
+    inline def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setORDERED_NODE_ITERATOR_TYPE(value: Double): Self = StObject.set(x, "ORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
+    inline def setORDERED_NODE_ITERATOR_TYPE(value: Double): Self = StObject.set(x, "ORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setORDERED_NODE_SNAPSHOT_TYPE(value: Double): Self = StObject.set(x, "ORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
+    inline def setORDERED_NODE_SNAPSHOT_TYPE(value: Double): Self = StObject.set(x, "ORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultType(value: Double): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+    inline def setResultType(value: Double): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTRING_TYPE(value: Double): Self = StObject.set(x, "STRING_TYPE", value.asInstanceOf[js.Any])
+    inline def setSTRING_TYPE(value: Double): Self = StObject.set(x, "STRING_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleNodeValue(value: Node): Self = StObject.set(x, "singleNodeValue", value.asInstanceOf[js.Any])
+    inline def setSingleNodeValue(value: Node): Self = StObject.set(x, "singleNodeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleNodeValueNull: Self = StObject.set(x, "singleNodeValue", null)
+    inline def setSingleNodeValueNull: Self = StObject.set(x, "singleNodeValue", null)
     
-    @scala.inline
-    def setSnapshotItem(value: Double => Node | Null): Self = StObject.set(x, "snapshotItem", js.Any.fromFunction1(value))
+    inline def setSnapshotItem(value: Double => Node | Null): Self = StObject.set(x, "snapshotItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSnapshotLength(value: Double): Self = StObject.set(x, "snapshotLength", value.asInstanceOf[js.Any])
+    inline def setSnapshotLength(value: Double): Self = StObject.set(x, "snapshotLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValue(value: java.lang.String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: java.lang.String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNORDERED_NODE_ITERATOR_TYPE(value: Double): Self = StObject.set(x, "UNORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
+    inline def setUNORDERED_NODE_ITERATOR_TYPE(value: Double): Self = StObject.set(x, "UNORDERED_NODE_ITERATOR_TYPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNORDERED_NODE_SNAPSHOT_TYPE(value: Double): Self = StObject.set(x, "UNORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
+    inline def setUNORDERED_NODE_SNAPSHOT_TYPE(value: Double): Self = StObject.set(x, "UNORDERED_NODE_SNAPSHOT_TYPE", value.asInstanceOf[js.Any])
   }
 }

@@ -16,28 +16,21 @@ trait NameParams[RouteName_1 /* <: String */] extends StObject {
 }
 object NameParams {
   
-  @scala.inline
-  def apply[RouteName_1 /* <: String */](name: RouteName_1): NameParams[RouteName_1] = {
+  inline def apply[RouteName_1 /* <: String */](name: RouteName_1): NameParams[RouteName_1] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameParams[RouteName_1]]
   }
   
-  @scala.inline
-  implicit class NameParamsMutableBuilder[Self <: NameParams[?], RouteName_1 /* <: String */] (val x: Self & NameParams[RouteName_1]) extends AnyVal {
+  extension [Self <: NameParams[?], RouteName_1 /* <: String */](x: Self & NameParams[RouteName_1]) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: RouteName_1): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RouteName_1): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

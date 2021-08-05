@@ -13,16 +13,13 @@ trait RemoveTagsFromResourceResponse extends StObject {
 }
 object RemoveTagsFromResourceResponse {
   
-  @scala.inline
-  def apply(Status: String): RemoveTagsFromResourceResponse = {
+  inline def apply(Status: String): RemoveTagsFromResourceResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveTagsFromResourceResponse]
   }
   
-  @scala.inline
-  implicit class RemoveTagsFromResourceResponseMutableBuilder[Self <: RemoveTagsFromResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveTagsFromResourceResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

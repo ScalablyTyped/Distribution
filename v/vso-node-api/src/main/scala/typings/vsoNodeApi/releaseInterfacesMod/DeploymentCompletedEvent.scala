@@ -19,8 +19,7 @@ trait DeploymentCompletedEvent extends StObject {
 }
 object DeploymentCompletedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comment: String,
     data: StringDictionary[js.Any],
     deployment: Deployment,
@@ -31,22 +30,16 @@ object DeploymentCompletedEvent {
     __obj.asInstanceOf[DeploymentCompletedEvent]
   }
   
-  @scala.inline
-  implicit class DeploymentCompletedEventMutableBuilder[Self <: DeploymentCompletedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentCompletedEvent](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
   }
 }

@@ -107,8 +107,7 @@ trait FontDescriptor extends StObject {
 }
 object FontDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharSet: Double,
     CharacterWidth: Double,
     Family: Double,
@@ -130,55 +129,38 @@ object FontDescriptor {
     __obj.asInstanceOf[FontDescriptor]
   }
   
-  @scala.inline
-  implicit class FontDescriptorMutableBuilder[Self <: FontDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: FontDescriptor](x: Self) {
     
-    @scala.inline
-    def setCharSet(value: Double): Self = StObject.set(x, "CharSet", value.asInstanceOf[js.Any])
+    inline def setCharSet(value: Double): Self = StObject.set(x, "CharSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacterWidth(value: Double): Self = StObject.set(x, "CharacterWidth", value.asInstanceOf[js.Any])
+    inline def setCharacterWidth(value: Double): Self = StObject.set(x, "CharacterWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamily(value: Double): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: Double): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKerning(value: Boolean): Self = StObject.set(x, "Kerning", value.asInstanceOf[js.Any])
+    inline def setKerning(value: Boolean): Self = StObject.set(x, "Kerning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "Pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "Pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlant(value: FontSlant): Self = StObject.set(x, "Slant", value.asInstanceOf[js.Any])
+    inline def setSlant(value: FontSlant): Self = StObject.set(x, "Slant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeout(value: Double): Self = StObject.set(x, "Strikeout", value.asInstanceOf[js.Any])
+    inline def setStrikeout(value: Double): Self = StObject.set(x, "Strikeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: Double): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: Double): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordLineMode(value: Boolean): Self = StObject.set(x, "WordLineMode", value.asInstanceOf[js.Any])
+    inline def setWordLineMode(value: Boolean): Self = StObject.set(x, "WordLineMode", value.asInstanceOf[js.Any])
   }
 }

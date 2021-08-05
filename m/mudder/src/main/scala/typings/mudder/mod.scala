@@ -75,6 +75,5 @@ object mod {
   @js.native
   val base62: SymbolTable = js.native
   
-  @scala.inline
-  def longLinspace(a: js.Array[Double], b: js.Array[Double], base: Double, N: Double, M: Double): js.Array[Carry] = (^.asInstanceOf[js.Dynamic].applyDynamic("longLinspace")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], base.asInstanceOf[js.Any], N.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Array[Carry]]
+  inline def longLinspace(a: js.Array[Double], b: js.Array[Double], base: Double, N: Double, M: Double): js.Array[Carry] = (^.asInstanceOf[js.Dynamic].applyDynamic("longLinspace")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], base.asInstanceOf[js.Any], N.asInstanceOf[js.Any], M.asInstanceOf[js.Any])).asInstanceOf[js.Array[Carry]]
 }
